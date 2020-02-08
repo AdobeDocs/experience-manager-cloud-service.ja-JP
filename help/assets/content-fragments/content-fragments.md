@@ -1,0 +1,284 @@
+---
+title: コンテンツフラグメントの操作
+description: コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用がいかに可能になるか、学習します。
+translation-type: tm+mt
+source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+
+---
+
+
+# コンテンツフラグメントの操作{#working-with-content-fragments}
+
+Adobe Experience Manager（AEM）コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、[公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md)が可能になります。複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
+
+コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
+
+* コンポーネントを使用して、配信するフラグメントの要素を管理できます。
+* API 配信に使用されるページで複数のコンテンツフラグメントコアコンポーネントを追加して、一括配信できます。
+
+以降のページでは、次のような、コンテンツフラグメントを作成、構成、管理するためのタスクについて説明します。
+
+* [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)- コンテンツフラグメントを作成し、編集、公開および参照します。
+* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md) - モデルを有効化、作成および定義します。
+* [バリエーション - フラグメントコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md) - フラグメントコンテンツをオーサリングし、マスターのバリエーションを作成します。
+* [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - フラグメントに Markdown 構文を使用します。
+* [関連コンテンツの使用](/help/assets/content-fragments/content-fragments-assoc-content.md) - 関連コンテンツを追加します。
+* [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md) - フラグメントのプロパティを表示および編集します。
+
+>[!NOTE]
+>
+>以降のページは、[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)と合わせてお読みください。
+
+通信チャネルの数は年々増加しています。通常、チャネルは配信メカニズムを指します。次のいずれかを指します。
+
+* 物理チャネル（デスクトップ、モバイルなど）
+* 物理チャネルでの配信方法（デスクトップ用の「製品詳細ページ」や「製品カテゴリーページ」、モバイル用の「モバイル Web」や「モバイルアプリ」など）
+
+しかしながら、すべてのチャネルでのまったく同じコンテンツの使用はお勧めしません。特定のチャネルに合わせてコンテンツを最適化する必要があります。
+
+コンテンツフラグメントを使用すると、次のことが可能になります。
+
+* 複数のチャネルでいかにターゲットオーディエンスに効率よく伝えるかを考慮する。
+* チャネルに依存しない編集コンテンツを作成、管理する
+* 多様なチャネル向けのコンテンツプールを構築する。
+* 特定のチャネル向けにコンテンツのバリエーションをデザインする。
+* アセットを挿入することでテキストに画像を追加する（混在メディアフラグメント）
+
+さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
+
+## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
+
+AEM コンテンツサービスは、Web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。
+
+AEM コンテンツサービスにより、あらゆるクライアントで使用できる標準化された方法で、従来の AEM Web ページとは異なるチャネルにコンテンツを配信できます。そうしたチャネルの例を次に示します。
+
+* 単一ページアプリケーション
+* ネイティブモバイルアプリケーション
+* aemの外部にある他のチャネルおよびタッチポイント
+
+配信は JSON 形式でおこなわれます。
+
+AEM コンテンツフラグメントを使用して構造化コンテンツを記述し、管理できます。構造化コンテンツは、テキスト、数値データ、ブール値、日付と時刻など、様々なコンテンツタイプを含めることができるモデルを使用して定義します。
+
+AEM コアコンポーネントの JSON 書き出し機能と共にこの構造化コンテンツを使用して、AEM コンテンツを AEM ページ以外のチャネルに配信できます。
+
+>[!NOTE]
+>
+>**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**は、AEM 内の異なる機能です。
+>* **コンテンツフラグメント**&#x200B;は、主にテキストや関連画像などの編集コンテンツです。これは、デザインやレイアウトを含まない純粋なコンテンツです。
+>* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+>
+>
+エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
+>
+>詳細については、](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
+
+>[!CAUTION]
+>
+>コンテンツフラグメントは、クラシック UI では利用できません。
+>
+>コンテンツフラグメントコンポーネントは、クラシック UI のサイドキックに表示されますが、機能を使用することはできません。
+
+>[!NOTE]
+>
+>AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、コンテンツフラグメント用の翻訳プロジェクトの作成を参照してください。
+
+<!--
+>[!NOTE]
+>
+>AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
+-->
+
+## コンテンツフラグメントのタイプ {#types-of-content-fragment}
+
+コンテンツフラグメントは次のどちらかになります。
+
+* 単純なフラグメント 事前定義済みの構造がありません。テキストと画像のみが含まれています。これらは単純なフラグメントテンプレートに基づいています。
+
+* 構造化コンテンツが含まれるフラグメント作成されるフラグメントの構造を事前定義する[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)に基づいています。また、JSONエクスポーターを使用してContent Servicesを実現するためにも使用できます。
+
+## コンテンツタイプ {#content-type}
+
+コンテンツフラグメントとは、次のようなものです。
+
+* **アセット**&#x200B;として格納されます。
+
+   * コンテンツフラグメント（とバリエーション）は、**Assets** コンソールで作成および管理できます。
+   * コンテンツフラグメントエディターでオーサリングおよび編集されます。
+
+* [コンテンツフラグメントコンポーネント（参照コンポーネント）を介してページエディター内で](/help/sites-cloud/authoring/fundamentals/content-fragments.md)使用されます。
+
+   * **コンテンツフラグメント**&#x200B;コンポーネントを使用できるのはページの作成者です。作成者は、コンテンツフラグメントコンポーネントを使用して、必要なコンテンツフラグメントを HTML または JSON 形式で参照し、配信できます。
+
+コンテンツフラグメントは、次のようなコンテンツ構造です。
+
+* レイアウトやデザインを伴いません（リッチテキストモードでは多少のテキストの書式設定が可能です）。
+* 1 つ以上の[構成要素](#constituent-parts-of-a-content-fragment)を含みます。
+* [画像を含めたり、関連付けたりする](#fragments-with-visual-assets)ことができます。
+* ページで参照される場合、[中間コンテンツ](#in-between-content-when-page-authoring-with-content-fragments)を使用できます。
+
+* 配信メカニズム（ページやチャネル）に依存しません。
+
+### ビジュアルアセットを含むフラグメント {#fragments-with-visual-assets}
+
+作成者がより柔軟にコンテンツをコントロールできるように、画像をコンテンツフラグメントに追加したり、コンテンツフラグメントと統合したりできます。
+
+アセットとコンテンツフラグメントの組み合わせには、様々な使用法があります。どの方法にもそれぞれの利点があります。
+
+* **フラグメント** （混在メディアフラグメント）へのアセットの挿入
+
+   * フラグメントの不可欠な構成要素です（[コンテンツフラグメントの構成要素](#constituent-parts-of-a-content-fragment)を参照してください）。
+   * アセットの位置を定義します。
+   * 詳しくは、フラグメントエディターでの[フラグメントへのアセットの挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)を参照してください。
+   >[!NOTE]
+   >
+   >コンテンツフラグメントに挿入されたビジュアルアセットは、前の段落に添付されます。 このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
+
+* **関連コンテンツ**
+
+   * フラグメントに接続されます。ただし、フラグメントの固定構成要素ではありません（[コンテンツフラグメントの構成要素](#constituent-parts-of-a-content-fragment)を参照してください）。
+   * 位置決めには、ある程度の柔軟性があります。
+   * ページでフラグメントを使用する場合に、（中間コンテンツのように）手軽に利用できます。
+   * 詳細については、[関連コンテンツ](/help/assets/content-fragments/content-fragments-assoc-content.md)を参照してください。
+
+* ページエディターの&#x200B;**アセットブラウザー**&#x200B;で利用できるアセット
+
+   * アセットの選択には、完全な柔軟性があります。
+   * 位置決めには、ある程度の柔軟性があります。
+   * 特定のフラグメント向けに承認されるという概念は提供しません。
+   * 詳細については、[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)を参照してください。
+
+### コンテンツフラグメントの構成要素 {#constituent-parts-of-a-content-fragment}
+
+コンテンツフラグメントアセットは、（直接的または間接的に）次の構成要素からなります。
+
+* **フラグメントの要素**
+
+   * 要素は、コンテンツを含むデータフィールドと相関関係にあります。
+   * 構造化コンテンツを含むフラグメントの場合、コンテンツモデルを使用してコンテンツフラグメントを作成できます。モデルで指定された要素（フィールド）は、フラグメントの構造を定義します。このような要素（フィールド）には様々なデータタイプがあります。
+   * 単純なフラグメントの場合：
+
+      * コンテンツは、1 つ以上の複数行テキストフィールドまたは要素に含まれます。
+      * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see Content Fragment Templates). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+
+* **フラグメントの段落**
+
+   * 次のようなテキストブロックです。
+
+      * 縦方向のスペース（キャリッジリターン）で区切られます。
+      * 複数行テキスト要素内にあります。単純なフラグメントまたは構造化フラグメント内にあります。
+   * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[ Markdown ](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
+
+   * ページ作成中にコンテンツを制御できます。
+
+
+* **フラグメントに挿入したアセット（混在メディアフラグメント）**
+
+   * アセット（画像）が実際のフラグメントに挿入され、フラグメントの内部コンテンツとして使用されます。
+   * フラグメントの段落システムに埋め込まれます。
+   * [フラグメントをページ上で使用または参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するときに書式設定できます。
+   * フラグメントへの追加、フラグメントからの削除、フラグメント内での移動は、フラグメントエディターのみでおこなえます。これらのアクションは、ページエディターではおこなえません。
+   * フラグメントへの追加、フラグメントからの削除、フラグメント内での移動は、[フラグメントエディターのみで、リッチテキストフォーマットを使用して](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)おこなえます。
+   * 複数行テキスト要素（任意のフラグメントタイプ）にのみ追加できます。
+   * 前のテキスト（段落）に添付されます。
+   >[!CAUTION]
+   >
+   >プレーンテキスト形式に切り替えることで、（誤って）フラグメントから削除する恐れがあります。
+
+   >[!NOTE]
+   >
+   >ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、またはアセットブラウザー内のアセットを使用します。
+
+* **関連コンテンツ**
+
+   * これはフラグメント外部のコンテンツですが、編集に関連します。通常は、画像、ビデオ、または他のフラグメントです。
+   * コレクション内の個々のアセットは、ページエディターでページにフラグメントを追加するときに、フラグメントと共に使用できます。つまり、コレクション内の個々のアセットは任意であり、特定のチャネルの要件に応じて使用します。
+   * The assets are [associated to fragments via collections](/help/assets/content-fragments/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
+
+      * コレクションは、テンプレートを介してフラグメントにデフォルトコンテンツとして関連付けることができます。または、フラグメントの作成時に作成者が関連付けることができます。
+      * [Assets（DAM）コレクション](/help/assets/manage-collections.md)は、フラグメントの関連コンテンツの基礎です。
+   * オプションで、追跡しやすいように、コレクションにフラグメント自体を追加することもできます。
+
+* **フラグメントのメタデータ**
+
+   * [アセットメタデータスキーマ](/help/assets/metadata-schemas.md)を使用します。
+   * タグは、次のことをおこなうときに作成できます。
+
+      * フラグメントを作成してオーサリングするとき
+      * または、その後、次の方法でも作成できます。
+
+         * コンソールでフラグメントの&#x200B;**プロパティ**&#x200B;を表示または編集することによって
+         * フラグメントエディターで&#x200B;**メタデータ**&#x200B;を編集することによって
+   >[!CAUTION]
+   >
+   >メタデータ処理プロファイルは、コンテンツフラグメントには適用されません。
+
+* **マスター**
+
+   * フラグメントの不可欠な構成要素。
+
+      * どのコンテンツフラグメントにもマスターインスタンスが 1 つあります。
+      * マスターは削除できません。
+   * Master is accessible in the fragment editor under **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * マスター自体はバリエーションではありませんが、すべてのバリエーションの基礎となります。
+
+
+* **バリエーション**
+
+   * 編集目的に合わせたフラグメントテキストのレンディション。チャネルに関連付けることができますが必須ではありません。ローカルで臨時に変更する場合にも使用できます。
+   * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
+   * フラグメントの作成時に定義できます。またはフラグメントテンプレート内に事前に定義できます。
+   * コンテンツコピーの分散を避けるために、フラグメントに格納されます。
+   * マスター側のコンテンツが更新されている場合は、バリエーションをマスターと[同期](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)することができます。
+   * Can be [Summarized](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
+   * Available under the [Variations](/help/assets/content-fragments/content-fragments-variations.md) tab of the fragment editor.
+
+### コンテンツフラグメントを使用したページのオーサリング時の中間コンテンツ {#in-between-content-when-page-authoring-with-content-fragments}
+
+中間コンテンツの特徴は次のとおりです。
+
+* コンテンツフラグメントを操作するときにページエディターで使用できます。
+* ページ上で使用または参照されたことのある[フラグメントのフローの中に追加する、追加のコンテンツです。](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-in-between-content)
+* [コンテンツフラグメントを操作するときにページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で使用できます。
+* 中間コンテンツは、1 つの要素のみが表示される任意のフラグメントに追加できます。
+* 該当するブラウザーで使用できるアセットやコンポーネントと同様に、関連コンテンツを使用できます。
+
+>[!CAUTION]
+>
+>中間コンテンツは、ページコンテンツです。中間コンテンツはコンテンツフラグメントに保存されません。
+
+### フラグメントを利用するための要件 {#required-by-fragments}
+
+コンテンツフラグメントを作成、編集、使用するためには、次のものが必要です。
+
+* **コンテンツモデル**
+
+   * [有効化されてから、ツールを使用して作成されます](/help/assets/content-fragments/content-fragments-models.md)。
+   * [構造化フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
+   * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
+   * コンテンツモデル定義にはタイトルと 1 つのデータ要素が必要です。その他すべてはオプションです。モデルによって、フラグメントおよびデフォルトコンテンツ（該当する場合）の最小範囲が定義されます。作成者は、フラグメントコンテンツのオーサリング時に、定義された構造を変更することはできません。
+
+* **フラグメントのテンプレート**
+
+   * [単純なフラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
+   * 通常、プロジェクトの実装時に開発されます。オーサリング時には作成できません。<!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * 単純なフラグメントの基本プロパティ（タイトル、テキスト要素の数、タグ定義）を定義します。
+   * テンプレート定義にはタイトルと 1 つのテキスト要素が必要です。その他すべてはオプションです。テンプレートによって、フラグメントおよびデフォルトコンテンツ（該当する場合）の最小範囲が定義されます。作成者は後から、テンプレートに定義されている内容を超えてフラグメントを拡張できます。
+
+* **コンテンツフラグメントコンポーネント**
+
+   * フラグメントを HTML 形式や JSON 形式で配信するのに役立ちます。
+   * [ページ上でフラグメントを参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)するために必要です。
+   * フラグメントのレイアウトと配信（チャネル）に対応します。
+   * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
+   * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
+
+## 使用例 {#example-usage}
+
+フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応する明解なコンテンツを作成できます。フラグメントをデザインする際は、どのような場所で使用するかを考慮する必要があります。
+
+### WKNDサンプル {#wknd-sample}
+
+AEMをクラウドサービスとして学ぶのに役立つ [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKNDサイトサンプルが用意されています。 サンプルフラグメントは次の場所で確認できます。
+
+`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
