@@ -1,0 +1,143 @@
+---
+title: プロジェクトの管理
+description: プロジェクトを使用すると、リソースを1つのエンティティにグループ化して、プロジェクトコンソールでアクセスし管理できるようにし、プロジェクトを整理できます
+translation-type: tm+mt
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+
+---
+
+
+# プロジェクトの管理 {#managing-projects}
+
+プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化して整理できます。
+
+**プロジェクト**&#x200B;コンソールで、プロジェクトにアクセスし、アクションを実行することができます。
+
+![プロジェクトコンソール](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+
+プロジェクトコンソールでは、プロジェクトを作成し、リソースとプロジェクトを関連付け、プロジェクトまたはリソースリンクを削除することもできます。タイルを開いてその内容を表示したり、アイテムをタイルに追加したりできます。このトピックで詳しい手順を説明します。
+
+## プロジェクトの作成 {#creating-a-project}
+
+AEM には次の既製のテンプレートが用意されていて、プロジェクトの作成時に選択できます。
+
+* シンプルなプロジェクト
+* メディアプロジェクト
+* 製品撮影プロジェクト
+* 翻訳プロジェクト
+
+プロジェクトの作成手順は、どのプロジェクトでも同じです。プロジェクトのタイプによって異なるものとしては、使用可能な[ユーザーの役割](/help/sites-cloud/authoring/projects/overview.md)と[ワークフロー](/help/sites-cloud/authoring/projects/workflows.md)があります。新しいプロジェクトを作成するには：
+
+1. **プロジェクト**&#x200B;で「**作成**」をタップまたはクリックして「**プロジェクトを作成**」ウィザードを開きます。
+1. Select a template and click **Next**.
+
+   ![プロジェクトの作成](/help/sites-cloud/authoring/assets/projects-create.png)
+
+1. Define the **Title** and **Description** and add a **Thumbnail** image if required. ユーザーおよびユーザーが属するグループを追加または削除することもできます。さらに、「**詳細**」をクリックして、URL で使用する名前を追加します。
+
+   ![プロジェクトの詳細の追加](/help/sites-cloud/authoring/assets/projects-title.png)
+
+1. 「**作成**」をタップまたはクリックします。新しいプロジェクトを開くか、コンソールに戻るかを確認するメッセージが表示されます。
+
+### リソースとプロジェクトの関連付け {#associating-resources-with-your-project}
+
+プロジェクトではリソースを 1 つのエンティティにグループ化できるので、リソースをプロジェクトに関連付けできます。これらのリソースは「**タイル**」と呼ばれます。追加できるリソースのタイプについては、[プロジェクトタイル](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。
+
+リソースとプロジェクトを関連付けるには：
+
+1. **プロジェクト**&#x200B;コンソールからプロジェクトを開きます。
+1. 「**タイルを追加**」をタップまたはクリックして、プロジェクトにリンクするタイルを選択します。複数のタイプのタイルを選択できます。
+
+   ![プロジェクトへのタイルの追加](/help/sites-cloud/authoring/assets/projects-add-tile.png)
+
+   >[!NOTE]
+   >
+   >プロジェクトに関連付けることができるプロジェクトタイルの詳細については、[プロジェクトタイル](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。
+
+1. 「**作成**」をタップまたはクリックします。リソースはプロジェクトにリンクされ、今後はプロジェクトからアクセスできます。
+
+### プロジェクトまたはリソースリンクの削除 {#deleting-a-project-or-resource-link}
+
+同じ方法を使用して、プロジェクトをコンソールから削除したり、リンクされたリソースをプロジェクトから削除したりすることができます。
+
+1. 該当する場所に移動します。
+
+   * プロジェクトを削除するには、**プロジェクト**&#x200B;コンソールの最上位レベルに移動します。
+   * プロジェクト内のリソースリンクを削除するには、**プロジェクト**&#x200B;コンソールでプロジェクトを開きます。
+
+1. 「**選択**」をクリックし、プロジェクトまたはリソースリンクを選択して、選択モードに入ります。
+1. 「**削除**」をタップまたはクリックします。
+
+1. 削除を確定するかどうかを確認するダイアログが表示されます。確定すると、プロジェクトまたはリソースリンクが削除されます。「**選択を解除**」をタップまたはクリックし、選択モードを終了します。
+
+>[!NOTE]
+>
+>プロジェクトを作成してユーザーを各種役割に追加すると、関連する権限を管理するために、プロジェクトに関連付けられたグループが自動的に作成されます。例えば、Myproject というプロジェクトには **Myproject Owners**、**Myproject Editors**、**Myproject Observers** という 3 つのグループがあります。ただし、プロジェクトを削除しても、これらのグループは自動的には削除されません。**ツール**／**セキュリティ**／**グループ**&#x200B;で、管理者が手動でグループを削除する必要があります。
+
+### タイルへの項目の追加 {#adding-items-to-a-tile}
+
+タイルによっては、複数の項目を追加できます。例えば、一度に複数のワークフローを実行したり、複数のエクスペリエンスを持ったりすることができます。
+
+タイルに項目を追加するには：
+
+1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+
+   ![タイルへの項目の追加](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+
+1. 新しいタイルの作成時と同様にして、タイルに項目を追加します。プロジェクトタイルについては、[こちら](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。この例では、別のワークフローが 1 つ追加されました。
+
+   ![別の項目がタイルに追加されました](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
+
+### タイルを開く {#opening-a-tile}
+
+現在のタイルにどのような項目が含まれているかを表示したり、タイル内の項目を変更または削除したりできます。
+
+項目を表示または変更するためにタイルを開くには：
+
+1. プロジェクトコンソールで、省略記号（...）をタップまたはクリックします。
+
+   ![タイルを開く](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+
+1. そのタイル内の項目が表示されます。選択モードに入って、項目を変更または削除できます。
+
+   ![タイルを開く](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+
+## プロジェクト統計の表示 {#viewing-project-statistics}
+
+プロジェクト統計を表示するには、**プロジェクト**&#x200B;コンソールで「**統計ビューを表示**」をクリックします。各プロジェクトの完了レベルが表示されます。Click **Show Statistics View** again to go to the **Projects** console.
+
+![プロジェクト統計](/help/sites-cloud/authoring/assets/projects-stats.png)
+
+### プロジェクトタイムラインの表示 {#viewing-a-project-timeline}
+
+プロジェクトタイムラインは、プロジェクト内のアセットが最後にいつ使用されたかを示します。To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. アセットが左パネルに表示されます。Click/tap **Timeline** to return to the **Projects** console.
+
+![プロジェクトのタイムライン](/help/sites-cloud/authoring/assets/projects-timeline.png)
+
+### アクティブ／非アクティブなプロジェクトの表示 {#viewing-active-inactive-projects}
+
+To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. アイコンの横にチェックマークが付いている場合は、アクティブなプロジェクトが表示されます。
+
+![アクティブなプロジェクトを切り替えボタン](/help/sites-cloud/authoring/assets/projects-active.png)
+
+アイコンの横に「x」がある場合は、非アクティブなプロジェクトが表示されています。
+
+![非アクティブなプロジェクトの切り替えボタン](/help/sites-cloud/authoring/assets/projects-inactive.png)
+
+## プロジェクトの非アクティブ化またはアクティブ化 {#making-projects-inactive-or-active}
+
+プロジェクトが完了しても、そのプロジェクトに関する情報をまだ保持する必要がある場合は、プロジェクトを非アクティブにすることができます。
+
+プロジェクトを非アクティブ（またはアクティブ）にするには：
+
+1. **プロジェクト**&#x200B;コンソールで、プロジェクトを開き、**プロジェクト情報**&#x200B;タイルを探します。
+
+   >[!NOTE]
+   このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
+
+1. 「**編集**」をタップまたはクリックします。
+1. セレクターを「**アクティブ**」から「**非アクティブ**」（またはその逆）に変更します。
+
+   ![プロジェクトのアクティブ化](/help/sites-cloud/authoring/assets/projects-activate.png)
+
+1. 「**完了**」をタップまたはクリックして、変更内容を保存します。
