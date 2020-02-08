@@ -1,0 +1,47 @@
+---
+title: ダイナミックメディア画像プリセットの適用
+description: ダイナミックメディアで画像プリセットを適用する方法について説明します。
+translation-type: tm+mt
+source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+
+---
+
+
+# ダイナミックメディア画像プリセットの適用 {#applying-image-presets}
+
+画像プリセットを使用すると、異なるサイズや異なる形式の画像、または動的に生成された他の画像プロパティを設定した画像を動的に配信できます。画像を書き出すときにプリセットを選択できます。また、この操作によって、管理者が指定した仕様に合わせて画像が再フォーマットされます。
+
+さらに、レスポンシブな画像プリセットを選択することもできます（画像プリセットを選択した後に「**[!UICONTROL RESS]**」ボタンを使用して指定します）。
+
+ここでは、画像プリセットの使用方法を説明します。[画像プリセットの作成と設定は管理者がおこなうことができます](managing-image-presets.md)。
+
+>[!NOTE]
+>
+>スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。See [Smart Imaging](imaging-faq.md) for more information.
+
+作成者は画像をプレビューするときに、いつでも画像プリセットを適用できます。
+
+**ダイナミックメディア画像プリセットを適用するには**
+
+1. アセットを開き、左のレールでドロップダウンメニューをタップし、「レンディション」をタッ **[!UICONTROL プします]**。
+
+   >[!NOTE]
+   >
+   >* 静的レンディションは、ペインの上半分に表示されます。 動的レンディションは下半分に表示されます。 動的レンディションのみでは、URLを使用して画像を表示できます。 「 **[!UICONTROL URL]** 」ボタンは、動的レンディションを選択した場合にのみ表示されます。 「 **[!UICONTROL RESS]** 」ボタンは、レスポンシブ画像プリセットを選択した場合にのみ表示されます。
+      >
+      >
+   * アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択すると、多数のレンディションがシステムによって表示されます。表示されるプリセットの数を増やすことができます。[表示される画像プリセット数の引き上げ](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)を参照してください。
+
+
+   ![chlimage_1-208](assets/chlimage_1-208.png)
+
+1. 次のいずれかの操作をおこないます。
+
+   * 動的レンディションを選択して画像プリセットをプレビューします。
+   * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+   >[!NOTE]
+   >
+   >If the asset *and* the image preset are not yet published, the **[!UICONTROL URL]** button (or **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons, if applicable) are not available.
+   >
+   >また、Dynamic Media S7 サーバーでは画像プリセットが自動的に公開されることにも注意してください。
+
