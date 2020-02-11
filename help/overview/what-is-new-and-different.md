@@ -2,7 +2,7 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
 
 ---
 
@@ -118,27 +118,10 @@ AEMオンプレミスおよび管理サービスの下のAEMは、サービス�
 
 >[!NOTE]
 >
->これは、 [Cloud Managerを使用して行います](#cloud-manager)。
+>詳しくは、「デプロイメントアーキテクチャ [」を参照してくださ](/help/core-concepts/architecture.md#deployment-architecture)い。
 
 ## Cloud Manager {#cloud-manager}
 
->[!NOTE]
->
->詳しくは、「デプロイメントアーキテクチャ [」を参照してくださ](/help/core-concepts/architecture.md#deployment-architecture)い。
-
-### 以前のバージョン {#previous-versions-cloud-manager}
-
-Cloud Managerは、AEMのマネージドサービスインスタンスのデプロイメントツールとして使用されました。
-
-AMS版Cloud Managerとクラウドサービスの主な違いは、テナントを作成すると、顧客が購入したSKUに基づいてクレジットが設定される点です。
-
->[!NOTE]
->運用面では重要ですが、クレジットの概念 *は* 、Cloud Manager UIに直接表示されません。
-
-通常のプログラムを作成してもクレジットは消費されませんが、クレジットを作成するにはコアクレジットが存在する必要があります。
-様々なプログラムの作成方法の詳細については、「プログラムの作成」を参 [照してください](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)。
-
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-cloud-manager}
 
 Adobe Cloud Managerは、クラウドサービスとしてのAEMの継続的なアップグレードアプローチに不可欠です。インスタンスへのすべてのアップデートを制御します。これは必須です。
 
