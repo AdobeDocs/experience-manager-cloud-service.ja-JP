@@ -2,7 +2,7 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 27a16045ff0c22d65e61468036e6ee0b9ab1d826
+source-git-commit: b9a32b3ac4c296f4bb02e9a590c1b3e22d53f562
 
 ---
 
@@ -136,7 +136,7 @@ Cloud Managerの機能：
 
 特に、Cloud Managerから作成できるAEMプログラムの数と種類は、次のいずれかに基づいて決定されます。
 
-* お客様のライセンス契約に基づき、クレジットのプールとして
+* 顧客ライセンス契約(Shankari) [からは、クレジットは言及できません。]
 
 * クラウドサービスとしてのAEMを使用して有効化やトレーニングを行う場合は、内部主導型アクターから
 
