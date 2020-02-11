@@ -2,7 +2,7 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 1548efb4c63c3c5dbd47b1b92a9e8bb998c42267
+source-git-commit: 27a16045ff0c22d65e61468036e6ee0b9ab1d826
 
 ---
 
@@ -121,7 +121,6 @@ AEMオンプレミスおよび管理サービスの下のAEMは、サービス�
 >詳しくは、「デプロイメントアーキテクチャ [」を参照してくださ](/help/core-concepts/architecture.md#deployment-architecture)い。
 
 ## Cloud Manager {#cloud-manager}
-
 
 Adobe Cloud Managerは、クラウドサービスとしてのAEMの継続的なアップグレードアプローチに不可欠です。インスタンスへのすべてのアップデートを制御します。これは必須です。
 
@@ -347,36 +346,4 @@ AEMをクラウドサービスとして使用すると、サービスの中断�
 
 詳しくは、「クラウドサ [ービスとしてのアセットの概要と概要」を参照してください](/help/assets/overview.md)。
 
-<!--
 
-#### Previous Versions {#previous-versions-aem-sites}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-sites}
-
-tbc
-
--->
-
-<!--
-
-#### Previous Versions* {#previous-versions-aem-assets}
-
-tbc
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-aem-assets}
-
-tbc 
-
--->
-
-<!--
-
-### Miscellaneous {#miscellaneous}
-
-#### AEM as a Cloud Service {#aem-as-a-cloud-service-miscellaneous}
-
-Additionally???
-
--->
