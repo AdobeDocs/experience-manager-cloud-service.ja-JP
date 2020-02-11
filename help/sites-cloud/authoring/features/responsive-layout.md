@@ -104,7 +104,7 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
 
    * デバイスを選択アイコンを使用して、ドロップダウンセレクターから選択します。
    * エミュレーターツールバーのデバイスのインジケーターをタップまたはクリックする。
-   ![[デバイスの選択]ドロップダウン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+   ![&#91;デバイスの選択&#93;ドロップダウン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
 1. 特定のデバイスを選択すると、次のことができます。
 
