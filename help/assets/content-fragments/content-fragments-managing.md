@@ -142,11 +142,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >[!NOTE]
    >
    >1. フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。
-      >
-      >
-      >
-
-   2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
+   >
+   >
+   >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
 
 
 3. サイドパネルのアイコンを使用して、3 つのモデル間を移動します。
