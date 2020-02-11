@@ -238,7 +238,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 * 注釈の一覧表示や削除をおこなうには、フラグメントエディターで「**注釈**」タブを選択します。
 
-   ![注釈[ちゅうしゃく]](assets/cfm-variations-08.png)
+   ![注釈&#91;ちゅうしゃく&#93;](assets/cfm-variations-08.png)
 
 * 選択されたフラグメントの[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)で、注釈の表示や削除をおこなえます。
 
