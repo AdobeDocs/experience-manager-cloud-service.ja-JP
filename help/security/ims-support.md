@@ -2,7 +2,7 @@
 title: クラウドサービスとしてのAdobe Experience ManagerのIMSサポート
 description: 'クラウドサービスとしてのAdobe Experience ManagerのIMSサポート '
 translation-type: tm+mt
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+source-git-commit: bef17376f0b7de79511f9ad6ceb00e9f084f45d2
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
 
 ## アーキテクチャ {#architecture}
 
-IMS認証は、AEMとAdobe IMSエンドポイント間でOAuthプロトコルを使用して機能します。 ユーザーが IMS に追加され、Adobe Identity を持つようになると、IMS 資格情報を使用して AEM Managed Services インスタンスにログインできます。
+IMS認証は、AEMとAdobe IMSエンドポイント間でOAuthプロトコルを使用して機能します。 ユーザーは、IMSに追加され、Adobe IDを持つと、IMS資格情報を使用してAEMオーサーサービスにログインできます。
 
 ユーザーログインフローを以下に示します。ユーザーはIMSにリダイレクトされ、オプションでSSO用の顧客IDPにリダイレクトされ、AEMにリダイレクトされます。
 
