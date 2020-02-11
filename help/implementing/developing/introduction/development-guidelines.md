@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service Development Guidelines
 description: '完了予定 '
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 13c0a670330532f574c2b38823b8a924c609e8e4
 
 ---
 
@@ -58,7 +58,7 @@ Cloud環境のスレッドダンプは継続的に収集されますが、現時
 
 AEMをクラウドサービス開発者環境としてデバッグするためのツールのセットは、開発、ステージ、実稼働環境について、デベロッパーコンソールで利用できます。 URLは、次のように作成者URLまたは発行サービスURLを調整することで決定できます。
 
-`https://dev-console>-<namespace>.<cluster>.dev.adobeaemcloud.com`
+`https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
 ショートカットとして、以下に示す環境パラメーターに基づいて、Cloud Manager CLIの次のコマンドを使用して、デベロッパーコンソールを起動できます。
 
