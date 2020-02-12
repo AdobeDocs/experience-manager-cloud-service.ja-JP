@@ -2,7 +2,7 @@
 title: クラウドサービスとしてのAEMへのデプロイ
 description: 'クラウドサービスとしてのAEMへのデプロイ '
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 6bf4d9d106a35ead10be235237986a60f2bf1148
 
 ---
 
@@ -48,7 +48,7 @@ AEMは頻繁に（場合によっては1日に1回も）更新され、バグ修
 > [!注意}
 >ローカルマシン上でのアプリケーションの動作とAdobe cloudとの間には、操作上のわずかな違いがあります。 これらのアーキテクチャの違いは、ローカル開発時に考慮する必要があり、クラウドインフラストラクチャに展開する際には、動作が異なる可能性があります。 これらの違いにより、実稼働環境で新しいカスタムコードを展開する前に、開発環境とステージ環境で完全なテストを実行することが重要です。
 
-以下に、開発者がAEMアーティファクトの関連バージョンにアクセスするプロセスを示します。これを、内部リリースのカスタムコードの開発に必要なクラウドサービスSDKと呼びます。 ディスパッチャーに関する情報は、このペ [ージにあります](/help/implementing/dispatcher/overview.md)。
+内部リリースのカスタムコードを開発するには、クラウドサービスSDKとしての [AEMの関連バージョンをダウンロードし](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 、インストールする必要があります。 クラウドサービスディスパッチャーツールとしての使用に関する詳細は、このページを参 [照してくださ](/help/implementing/dispatcher/overview.md)い。
 
 ## Cloud ManagerとPackage Managerを使用したコンテンツパッケージの展開 {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
