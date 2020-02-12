@@ -2,7 +2,7 @@
 title: クラウドサービスとしてのAdobe Experience Managerの運用と保守
 description: クラウドサービスの運用と保守のセルフヘルプリソースおよびドキュメントのリンクとしてのAdobe Experience Manager
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -16,7 +16,6 @@ source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
 * [コンテンツ複製](replication.md)
 * [メンテナンスタスク](maintenance.md)
 * [バックアップと復元](backup.md)
-* [インデックス作成](indexing.md)
 
 ## クラウドサービスガイドとしてのExperience Manager {#aem-guides}
 
