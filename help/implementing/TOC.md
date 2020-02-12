@@ -2,7 +2,7 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
+source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: 44df22ace403c962ffbabac5eec9302d98fc94f2
    + [AEMプロジェクトパッケージ構造](developing/introduction/aem-project-content-package-structure.md)
    + [リポジトリ構造パッケージの作成](developing/introduction/repository-structure-package.md)
    + [クラウドサービスSDKとしてのAEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)
    + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
    + [クラウドサービスAPIとしてのAEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
