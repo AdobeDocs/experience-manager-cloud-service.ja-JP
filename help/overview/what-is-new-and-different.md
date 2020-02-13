@@ -2,7 +2,7 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 38503961d0d7437511533d122ac1f4e7c8f9f042
+source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
 
 ---
 
@@ -46,22 +46,24 @@ AEMは、長い間、次の両方の機能を利用できます。
 >
 >詳しくは、アーキテクチャを参照し [てください](/help/core-concepts/architecture.md)。
 
-### 以前のバージョン {#previous-versions-architecture}
+<!--
+### Previous Versions {#previous-versions-architecture}
 
-AEMオンプレミスとマネージドサービスのAEMの両方で、固定数のマシンとインスタンスで構成された静的アーキテクチャが使用されていました。
+Both AEM on-premise, and AEM under Managed Services used a static architecture comprised of a fixed number of machines and instances. 
 
-![静的アーキテクチャ](assets/introduction-01.png "静的アーキテクチャ")
+![Static architecture](assets/introduction-01.png "Static architecture")
 
-次の情報：
+These:
 
-* ピークトラフィ *ック* （インターネット）とピークアクティビティ ** （マーケティング）に合わせてサイズ設定されたため、アイドル状態が長く続いていました。
-   ![静的構造は様々な使用パターンに対応する必要があ](assets/introduction-02.png "ります静的構造は様々な使用パターンに対応する必要があります")
+* Were sized for *peak* traffic (internet) and *peak* activity (marketing), which resulted in them being idle for significant periods of time:
+![Static structure must cater for varying usage patterns](assets/introduction-02.png "Static structure must cater for varying usage patterns")
 
-* モノリシックなアプリケーション（クイックスタート）。
+* Were monolithic applications (the quickstart).
 
-* 1つの作成者インスタンスがあり、メンテナンス期間中にダウンタイムが発生する可能性がある
+* Had a single author instance; which was subject to downtime during maintenance windows.
 
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-architecture}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-architecture}
+-->
 
 クラウドサービスとしてのAEMには、次の機能が追加されました。
 
@@ -92,13 +94,15 @@ AEMオンプレミスとマネージドサービスのAEMの両方で、固定�
 >For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
 -->
 
-### 以前のバージョン {#previous-versions-upgrades}
+<!--
+### Previous Versions {#previous-versions-upgrades}
 
-AEMオンプレミスおよび管理サービスの下のAEMは、サービスパック、機能パック、およびホットフィックスによって拡張された年別メジャーリリースの固定パターンの対象となりました。 多くの場合、インスタンスでは2年以上メジャーバージョンが実行されます。
+Both AEM on-premise, and AEM under Managed Services were subject to a fixed pattern of a yearly major release augmented by service packs, feature packs and hot-fixes. Often instances would run a major version for two or more years. 
 
-アップグレードのタイプに応じて、分析、開発、テストから成る重要な準備を行い、実際のアップグレードに伴うダウンタイムを伴うことが必要になる場合があります。
+Depending on the upgrade type, the process could require significant preparation consisting of analysis, development and testing, followed with a window of downtime for the actual upgrade.
 
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-upgrades}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-upgrades}
+-->
 
 クラウドサービスとしてのAEMで、継続的な統合と継続的な配信(CI/CD)を使用して、プロジェクトが完全に最新の状態に保たれるようになりました。 これは、すべてのアップグレード操作が完全に自動化され、ユーザーに対するサービスの中断を必要としないことを意味します。
 
@@ -168,13 +172,17 @@ Cloud Managerは、クラウドサービスとしてのAEMの主要コンポー�
 >For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
 -->
 
-### 以前のバージョン {#previous-versions-onboarding}
+<!--
+### Previous Versions {#previous-versions-onboarding}
 
-AEMプロジェクトの実装は、基本的に従来のプロジェクト管理方法に従って行われます。
+Implementing an AEM project basically followed traditional project management methods.  
 
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-onboarding}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-onboarding}
 
-AEMプロジェクトの開始と管理は、アドビが様々な側面を担当するので、AEMをクラウドサービスとして使用する場合に大幅に簡単になります。
+Starting and managing an AEM project is significantly easier when using AEM as a Cloud service as Adobe is responsible for many aspects:
+-->
+
+AEMプロジェクトの開始と管理は、AEMをクラウドサービスとして使用する場合に簡単です。アドビは次のような様々な側面を担当しています。
 
 * ベースラインAEM画像は、特定の用途向けに最適化されています。
 
@@ -208,17 +216,24 @@ AEMプロジェクトの開始と管理は、アドビが様々な側面を担�
 >For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
 -->
 
-### 以前のバージョン {#previous-versions-developing}
+<!--
+### Previous Versions {#previous-versions-developing}
+-->
 
 <!-- needs more detail -->
-開発は、ローカルで実行され、その後実稼働インスタンスにデプロイされるという大量のタスクでした。
 
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-developing}
+<!-- 
+Development was an intensive task performed locally, followed by deployment to the production instance. 
+
+### AEM as a Cloud Service {#aem-as-a-cloud-service-developing}
+-->
 
 <!-- Will need information for new customers -->
 AEMをクラウドサービスとしてサポートする新しいアーキテクチャには、開発者エクスペリエンス全体に対する重要な変更が含まれます。 クラウドサービスとしてのAEMの主な目標の1つは、経験豊富なお客様（オンプレミスまたはアドビ管理サービスのコンテキストでAEMを使用しているお客様）が、カスタマイズしたコードを大量に書き直すことなく、できるだけ迅速にAEMに移行できるようにすることです。 ただし、一部の調整が必要な場合もあります。
 
-#### クラウド開発 {#aem-as-a-cloud-service-developing-cloud-development}
+<!-- adjusting title level -->
+
+### クラウド開発 {#aem-as-a-cloud-service-developing-cloud-development}
 
 既存のAEMアプリケーションをクラウドサービスとしてAEM上で実行するには、次の手順が必要です。
 
@@ -246,7 +261,9 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 
 * サービスユーザーとユーザーグループ
 
-#### 地域開発 {#aem-as-a-cloud-service-developing-local-development}
+<!-- adjusting title level -->
+
+### 地域開発 {#aem-as-a-cloud-service-developing-local-development}
 
 迅速な繰り返しと開発をサポートするために、AEMの外部でAEMアプリケーションをクラウドサービスのコンテキストとして開発することもできます。 この目的で、開発者は次のアーティファクトを使用できるようになります。
 
@@ -264,11 +281,13 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 >
 >詳細は、「バックアップ」、「インデック [ス作成](/help/operations/backup.md)」、「その他のメンテナ [ンスタスク」から始めます](/help/operations/indexing.md)[](/help/operations/maintenance.md)。
 
-### 以前のバージョン {#previous-versions-operations-and-performance}
+<!--
+### Previous Versions {#previous-versions-operations-and-performance}
 
-以前は、特に著者側では、定期的にインスタンスを停止する必要がありました。定期的なメンテナンス操作、アップグレードや更新に使用します。 この結果、一部のお客様は、週単位で予定されたダウンタイムが数時間に及ぶことがありました。
+In the past, especially on the author side, there was a need to periodically stop an instance; for routine maintenance operations, as well as upgrades and updates. For some customers, this resulted in hours of scheduled downtime on a weekly basis. 
 
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-operatioms-and-performance}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-operatioms-and-performance}
+-->
 
 AEMをクラウドサービスとして使用すると、サービスの中断が不要になるように、このような操作が自動化されます。
 
@@ -290,19 +309,20 @@ AEMをクラウドサービスとして使用すると、サービスの中断�
 >For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
 -->
 
-### 以前のバージョン {#previous-versions-identity-management}
+<!--
+### Previous Versions {#previous-versions-identity-management}
 
-デフォルトでは、ID管理はAEMの内部にありました。
+By default, identity management was internal to AEM.
 
 >[!NOTE]
 >
->AEM 6.4.3.0で導入された機能：
+>AEM 6.4.3.0 introduced:
 >
->* AEMインスタンスの管理コンソールのサポート。
->* AEM Managed Servicesのお客様向けのAdobe IMS(Identity Management System)ベースの認証。
+>* Admin Console support for AEM instances. 
+>* Adobe IMS (Identity Management System) based authentication for AEM Managed Services customers.
 
-
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-identity-management}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-identity-management}
+-->
 
 クラウドサービスとしてのAEMの大きな変更点は、作成者層へのアクセスにAdobe IDを完全に統合して使用することです。
 
@@ -322,11 +342,13 @@ AEMをクラウドサービスとして使用すると、サービスの中断�
 >For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
 -->
 
-### 以前のバージョン {#previous-versions-authoring}
+<!--
+### Previous Versions {#previous-versions-authoring}
 
-オーサーインスタンス(UI)のユーザーインターフェイスは、SitesとAssetsの両方に対して、プログレッシブに開発され、タッチ対応UIとクラシックUIの両方を使用して、すべてのユースケースに対応するように最適化されました。
+The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
 
-### クラウドサービスとしてのAEM {#aem-as-a-cloud-service-authoring}
+### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
+-->
 
 オーサリングユーザーインターフェイス(UI)の基本原則は、サイトとアセットの両方に関して、以前にAEMを使用したことのあるユーザーにとって非常になじみ深いものです。
 
@@ -345,5 +367,3 @@ AEMをクラウドサービスとして使用すると、サービスの中断�
 アセットの提供には、次世代のアセット処理をクラウドで実行し、高パフォーマンスのアセットの取り込みと検索を行う機能が含まれます。
 
 詳しくは、「クラウドサ [ービスとしてのアセットの概要と概要」を参照してください](/help/assets/overview.md)。
-
-
