@@ -2,7 +2,7 @@
 title: テスト結果の把握 — クラウドサービス
 description: テスト結果の理解 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: a0630410d281913f35caa5ba33807496e612ef3d
 
 ---
 
@@ -117,7 +117,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 例えば、という名前のクラスは実 `com.myco.tests.aem.ExampleIT` 行されますが、という名前のクラスは実 `com.myco.tests.aem.ExampleTest` 行されません。
 
-テストクラスは、通常のJUnitテストである必要があります。 テストインフラストラクチャは、aem-testing-clientsテストライブラリで使用される規則との互換性を持つように設計および設定されています。 開発者は、このライブラリを使用し、ベストプラクティスに従うことを強くお勧めします。
+テストクラスは、通常のJUnitテストである必要があります。 テストインフラストラクチャは、aem-testing-clientsテストライブラリで使用される規則との互換性を持つように設計および設定されています。 開発者は、このライブラリを使用し、ベストプラクティスに従うことを強くお勧めします。 Refer to [Git Link](https://github.com/adobe/aem-testing-clients) for more details.
 
 ## カスタム機能テスト {#custom-functional-test}
 
@@ -126,7 +126,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 ただし、ビルドによってテストJARが生成されない場合、テストはデフォルトで成功します。 この手順は、現在、ステージのデプロイメントの直後に実行されます。
 
 > 注意：
->「 **Download Log** 」ボタンを使用すると、テスト実行の詳細フォームのログを含むZIPファイルにアクセスできます。 これらのログには、実際のAEMランタイムプロセスのログは含まれません。上記の通常のダウンロードログまたはテールログ機能を使用してアクセスできます。
+>「 **Download Log** 」ボタンを使用すると、テスト実行の詳細フォームのログを含むZIPファイルにアクセスできます。 これらのログには、実際のAEMランタイムプロセスのログは含まれません。通常のダウンロードログまたはテールログ機能を使用してアクセスできます。 詳細は、「ロ [グへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) 」を参照してください。
 
 ## ローカルテストの実行 {#local-test-execution}
 
