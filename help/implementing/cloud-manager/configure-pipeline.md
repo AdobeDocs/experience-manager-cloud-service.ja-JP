@@ -2,7 +2,7 @@
 title: CI/CDパイプラインの設定 — クラウドサービス
 description: CI/CDパイプラインの設定 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -88,7 +88,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    さらに、パイプラインオプションから「デプロイメントトリガー」と「重要なエラー時の動作」も設定できます。
 
-   ![](assets/set-up-pipeline7.png)
+   ![](assets/non-prod-pipe1.png)
 
 1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
 
@@ -97,8 +97,6 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    * **編集** - パイプライン設定を編集できます
    * **ビルド** - 実行ページに移動し、そこからパイプラインを実行できるようになります
    * **Gitの管理** - Cloud Manager Gitリポジトリへのアクセスに必要な情報をユーザーが取得できるようにします
-
-
 
 ## 次の手順 {#the-next-steps}
 
