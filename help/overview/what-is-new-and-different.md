@@ -2,7 +2,7 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 78c48e3a669a3142661436f8b996dcbc5c9730d6
+source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
 
 ---
 
@@ -37,8 +37,6 @@ AEMは、長い間、次の両方の機能を利用できます。
 >[!NOTE]
 >
 >オンプレミスバージョンとマネージドサービスバージョンの詳細については、 [AEM 6.5のドキュメントセットを参照してください](https://helpx.adobe.com/support/experience-manager/6-5.html)。
-
-<!-- * [Miscellaneous](#miscellaneous) -->
 
 ## アーキテクチャ {#architecture}
 
@@ -88,11 +86,9 @@ These:
 
 ## アップグレード {#upgrades}
 
-<!--
 >[!NOTE]
 >
->For further details see the [Deploying Introduction](/help/sites/deploying/introduction.md).
--->
+>詳しくは、「導入のデプロイ」を [参照してください](/help/implementing/deploying/overview.md)。
 
 <!--
 ### Previous Versions {#previous-versions-upgrades}
@@ -166,11 +162,9 @@ Cloud Managerは、クラウドサービスとしてのAEMの主要コンポー�
 
 ## 使用開始 {#onboarding}
 
-<!--
 >[!NOTE]
 >
->For further details see [Onboarding - An Overview](/help/onboarding/overview.md).
--->
+>詳しくは、オンボーディングを参 [照してくださ](/help/onboarding/home.md)い。
 
 <!--
 ### Previous Versions {#previous-versions-onboarding}
@@ -208,13 +202,7 @@ AEMプロジェクトの開始と管理は、AEMをクラウドサービスと�
 
 >[!NOTE]
 >
->詳しくは、『開発ガイドライン』のドキュメ [ントを参照して](/help/implementing/developing/introduction/development-guidelines.md) ください。
-
-<!--
->[!NOTE]
->
->For further details start with [The Developing Experience](/help/sites/developing/introduction/developer-experience.md, [Developing - The Basics](/help/sites/developing/introduction/the-basics.md) and [Developing Best Practices](/help/sites/best-practices/developing.md).
--->
+>詳細については、『開発ガイドライン [&amp;開発 — WKNDチュ](/help/implementing/developing/introduction/development-guidelines.md) ートリアル』から始めます [](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
 <!--
 ### Previous Versions {#previous-versions-developing}
@@ -303,11 +291,9 @@ AEMをクラウドサービスとして使用すると、サービスの中断�
 
 ## ID 管理 {#identity-management}
 
-<!--
 >[!NOTE]
 >
->For further details see [Security - Single Sign-On](/help/sites/security/single-sign-on.md).
--->
+>詳しくは、セキュリティ — IMS [のサポートを参照してください](/help/security/ims-support.md)。
 
 <!--
 ### Previous Versions {#previous-versions-identity-management}
@@ -336,11 +322,9 @@ By default, identity management was internal to AEM.
 
 ## オーサリングユーザーインターフェイス {#authoring-user-interface}
 
-<!--
 >[!NOTE]
 >
->For further details, the [Basic Handling](/help/sites/authoring/getting-started/basic-handling.md) and [Best Practices](/help/sites/best-practices/authoring.md) are good starting points.
--->
+>詳しくは、基本処理 [を参照](/help/sites-cloud/authoring/getting-started/basic-handling.md) 。
 
 <!--
 ### Previous Versions {#previous-versions-authoring}
