@@ -2,7 +2,7 @@
 title: リリース2020.2.0のリリースノート
 description: リリース2020.2.0のリリースノート
 translation-type: tm+mt
-source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
+source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 157809fb4aacf45358db6412dea04398a7f12495
 
 次の節では、Experience Managerのクラウドサービス2020.2.0向けの一般的なリリースノートの概要を説明します。
 
-リリース日は2020年2月13日です。
-
 ## Cloud Manager {#cloud-manager}
+
+Cloud Managerリリース2020.2.0のリリース日は2020年2月14日です。
 
 この節では、Cloud Managerリリース2020.2.0の新機能と更新点について説明します。
 
