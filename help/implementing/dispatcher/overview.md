@@ -2,7 +2,7 @@
 title: クラウドのディスパッチャー
 description: 'クラウドのディスパッチャー '
 translation-type: tm+mt
-source-git-commit: b7f3122db5b55d515965b638c2b4aa4bc2a67fe6
+source-git-commit: 2ab8a4fb492b85c1a9b42442d868cdbc329756cf
 
 ---
 
@@ -806,9 +806,9 @@ AEMをクラウドサービスとして使用する前は、ディスパッチ�
 クラウドサービスとしてのAEMは、個々のノードレベルではなくサービスレベルで動作するので、 [Dispatcherヘルプドキュメントの無効化手順は](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) 、正確ではなくなりました。
 代わりに、レプリケーション・フラッシュ・エージェントを使用する必要があります。これは、レプリケーションAPIを使用して実行できます。 Replication APIのドキュメントは [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) 、ここで入手できます。キャッシュのフラッシュの例については、 [APIの例のページを参照してください。使用可能なすべてのエージェントに対して、タイプ](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html)`CustomStep` ACTIVATEのレプリケーション・アクションを発行する例を参照してください。 フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行する発行サービスと一致する、ディスパッチャーを指すように事前設定されています。 通常、フラッシュエージェントはOSGiイベントまたはワークフローによってトリガーされます。
 
-次の図に、これを示します。
+<!--The diagram below illustrates this.
 
-![CDNCDN](assets/cdn.png "")
+![CDN](assets/cdn.png "CDN")-->
 
 ディスパッチャーキャッシュがクリアされない問題が発生した場合は、必要に応じてディスパッチャーキャッシュをフラッシュできるカスタマーサポートにお問い合わせください。
 
