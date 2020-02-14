@@ -2,7 +2,7 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: b8eed5bd68d961a95d0ed15a4e88cee327a82594
+source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
 
 ---
 
@@ -32,8 +32,6 @@ AEMは、長い間、次の両方の機能を利用できます。
 >
 >これらの概要は完全なものではありませんが、紹介を目的としています。
 
-<!-- change link when 6.5 hub page migrated -->
-
 >[!NOTE]
 >
 >オンプレミスバージョンとマネージドサービスバージョンの詳細については、 [AEM 6.5のドキュメントセットを参照してください](https://helpx.adobe.com/support/experience-manager/6-5.html)。
@@ -43,25 +41,6 @@ AEMは、長い間、次の両方の機能を利用できます。
 >[!NOTE]
 >
 >詳しくは、アーキテクチャを参照し [てください](/help/core-concepts/architecture.md)。
-
-<!--
-### Previous Versions {#previous-versions-architecture}
-
-Both AEM on-premise, and AEM under Managed Services used a static architecture comprised of a fixed number of machines and instances. 
-
-![Static architecture](assets/introduction-01.png "Static architecture")
-
-These:
-
-* Were sized for *peak* traffic (internet) and *peak* activity (marketing), which resulted in them being idle for significant periods of time:
-![Static structure must cater for varying usage patterns](assets/introduction-02.png "Static structure must cater for varying usage patterns")
-
-* Were monolithic applications (the quickstart).
-
-* Had a single author instance; which was subject to downtime during maintenance windows.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-architecture}
--->
 
 クラウドサービスとしてのAEMには、次の機能が追加されました。
 
@@ -89,16 +68,6 @@ These:
 >[!NOTE]
 >
 >詳しくは、「導入のデプロイ」を [参照してください](/help/implementing/deploying/overview.md)。
-
-<!--
-### Previous Versions {#previous-versions-upgrades}
-
-Both AEM on-premise, and AEM under Managed Services were subject to a fixed pattern of a yearly major release augmented by service packs, feature packs and hot-fixes. Often instances would run a major version for two or more years. 
-
-Depending on the upgrade type, the process could require significant preparation consisting of analysis, development and testing, followed with a window of downtime for the actual upgrade.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-upgrades}
--->
 
 クラウドサービスとしてのAEMで、継続的な統合と継続的な配信(CI/CD)を使用して、プロジェクトが完全に最新の状態に保たれるようになりました。 これは、すべてのアップグレード操作が完全に自動化され、ユーザーに対するサービスの中断を必要としないことを意味します。
 
@@ -166,16 +135,6 @@ Cloud Managerは、クラウドサービスとしてのAEMの主要コンポー�
 >
 >詳しくは、オンボーディングを参 [照してくださ](/help/onboarding/home.md)い。
 
-<!--
-### Previous Versions {#previous-versions-onboarding}
-
-Implementing an AEM project basically followed traditional project management methods.  
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-onboarding}
-
-Starting and managing an AEM project is significantly easier when using AEM as a Cloud service as Adobe is responsible for many aspects:
--->
-
 AEMプロジェクトの開始と管理は、AEMをクラウドサービスとして使用する場合に簡単です。アドビは次のような様々な側面を担当しています。
 
 * ベースラインAEM画像は、特定の用途向けに最適化されています。
@@ -204,22 +163,7 @@ AEMプロジェクトの開始と管理は、AEMをクラウドサービスと�
 >
 >詳細については、『開発ガイドライン [&amp;開発 — WKNDチュ](/help/implementing/developing/introduction/development-guidelines.md) ートリアル』から始めます [](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
 
-<!--
-### Previous Versions {#previous-versions-developing}
--->
-
-<!-- needs more detail -->
-
-<!-- 
-Development was an intensive task performed locally, followed by deployment to the production instance. 
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-developing}
--->
-
-<!-- Will need information for new customers -->
 AEMをクラウドサービスとしてサポートする新しいアーキテクチャには、開発者エクスペリエンス全体に対する重要な変更が含まれます。 クラウドサービスとしてのAEMの主な目標の1つは、経験豊富なお客様（オンプレミスまたはアドビ管理サービスのコンテキストでAEMを使用しているお客様）が、カスタマイズしたコードを大量に書き直すことなく、できるだけ迅速にAEMに移行できるようにすることです。 ただし、一部の調整が必要な場合もあります。
-
-<!-- adjusting title level -->
 
 ### クラウド開発 {#aem-as-a-cloud-service-developing-cloud-development}
 
@@ -231,10 +175,8 @@ AEMをクラウドサービスとしてサポートする新しいアーキテ�
 * お客様のアプリケーションは、パイプライン内で実施されるすべてのコード品質、セキュリティ、パフォーマンスのゲートを渡す必要があります。
 * お客様のアプリケーション用に作成した画像は、Cloud Managerパイプラインでデプロイする必要があります。
 
-<!-- duration of what? -->
 このプロセスは、一般にクラウドファースト開発と呼ばれます。 エンドツーエンドの期間は数分かかると予想されるので（アプリケーションの複雑さに応じて20 ～ 50）、保留中のコードと設定の変更がクラウドで試行される前に、迅速な開発手法を採用する必要があります。
 
-<!-- is this really relevant at this point? -->
 OSGIバンドルとその関連設定が管理されるWebコンソール、およびAEM quickStartの以前の部分は、クラウドサービス環境としてAEMのユーザーが直接アクセスできなくなりました。 このインターフェイスは、新しい開発者コンソールを使用して読み取り専用モードで引き続きアクセスできます。 このコンソールを使用すると、開発者は作成者または発行サービスの特定のノードを直接選択してログインし、デフォルトでブロックされている領域にアクセスできます。
 
 開発者にとっては、様々な環境のログファイルにすばやくアクセスする必要があるもう1つの一般的な要件です。 AEMをクラウドサービスとして使用すると、作成者ノードと発行ノードに含まれる各ノードのログファイルが、ダウンロード可能なファイルの形式またはAPI経由でCloud Managerから利用できるようになります。
@@ -248,8 +190,6 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 * ACLと権限
 
 * サービスユーザーとユーザーグループ
-
-<!-- adjusting title level -->
 
 ### 地域開発 {#aem-as-a-cloud-service-developing-local-development}
 
@@ -269,14 +209,6 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 >
 >詳細は、「バックアップ」、「インデック [ス作成](/help/operations/backup.md)」、「その他のメンテナ [ンスタスク」から始めます](/help/operations/indexing.md)[](/help/operations/maintenance.md)。
 
-<!--
-### Previous Versions {#previous-versions-operations-and-performance}
-
-In the past, especially on the author side, there was a need to periodically stop an instance; for routine maintenance operations, as well as upgrades and updates. For some customers, this resulted in hours of scheduled downtime on a weekly basis. 
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-operatioms-and-performance}
--->
-
 AEMをクラウドサービスとして使用すると、サービスの中断が不要になるように、このような操作が自動化されます。
 
 次の領域では、
@@ -295,21 +227,6 @@ AEMをクラウドサービスとして使用すると、サービスの中断�
 >
 >詳しくは、セキュリティ — IMS [のサポートを参照してください](/help/security/ims-support.md)。
 
-<!--
-### Previous Versions {#previous-versions-identity-management}
-
-By default, identity management was internal to AEM.
-
->[!NOTE]
->
->AEM 6.4.3.0 introduced:
->
->* Admin Console support for AEM instances. 
->* Adobe IMS (Identity Management System) based authentication for AEM Managed Services customers.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-identity-management}
--->
-
 クラウドサービスとしてのAEMの大きな変更点は、作成者層へのアクセスにAdobe IDを完全に統合して使用することです。
 
 これには、ユーザーとユーザーグ [ループを管理するため](https://helpx.adobe.com/enterprise/using/admin-console.html) 、Adobe Admin Consoleを使用する必要があります。 ユーザーアカウントを使用すると、ユーザープロファイル情報がAdobe Identity Management System(IMS)に一元化され、すべてのクラウドサービスで共有されるので、ユーザーはアドビの製品やサービスにアクセスできます。 AEMへのアクセスを割り当てると、そのユーザーアカウントをクラウドサービスとしてAEMで（以前と同様に）参照できます。例えば、AEMセキュリティユーザーインターフェイスからロールと権限を定義する場合などです。
@@ -325,14 +242,6 @@ By default, identity management was internal to AEM.
 >[!NOTE]
 >
 >詳しくは、基本処理 [を参照](/help/sites-cloud/authoring/getting-started/basic-handling.md) 。
-
-<!--
-### Previous Versions {#previous-versions-authoring}
-
-The user interface of the author instance (UI), for both Sites and Assets, was progressively developed and optimized to cater for all use-cases, using both the touch-enabled and classic UIs.
-
-### AEM as a Cloud Service {#aem-as-a-cloud-service-authoring}
--->
 
 オーサリングユーザーインターフェイス(UI)の基本原則は、サイトとアセットの両方に関して、以前にAEMを使用したことのあるユーザーにとって非常になじみ深いものです。
 
