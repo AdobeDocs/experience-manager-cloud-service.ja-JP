@@ -2,7 +2,7 @@
 title: テスト結果の把握 — クラウドサービス
 description: テスト結果の理解 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: e1504c73e443d449f8fc9d5fbad433ea1a298843
 
 ---
 
@@ -125,7 +125,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ただし、ビルドによってテストJARが生成されない場合、テストはデフォルトで成功します。 この手順は、現在、ステージのデプロイメントの直後に実行されます。
 
-> 注意：
+>[!NOTE]
 >「 **Download Log** 」ボタンを使用すると、テスト実行の詳細フォームのログを含むZIPファイルにアクセスできます。 これらのログには、実際のAEMランタイムプロセスのログは含まれません。通常のダウンロードログまたはテールログ機能を使用してアクセスできます。 詳細は、「ロ [グへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md) 」を参照してください。
 
 ## ローカルテストの実行 {#local-test-execution}
