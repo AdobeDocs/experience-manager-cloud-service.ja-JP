@@ -2,7 +2,7 @@
 title: コードの導入 — クラウドサービス
 description: コードの導入 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
 
 ---
 
@@ -39,15 +39,15 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 
    * 検証：この手順では、現在使用できるリソース（設定済みのブランチが存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
    * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境について詳しくは、[AEM アプリケーションプロジェクトの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md)を参照してください。
-   * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスについて詳しくは、「[テスト結果の理解](understand-test-results.md)」を参照してください。
+   * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスについて詳しくは、「[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)」を参照してください。
    * ビルドイメージ：この手順には、イメージの作成に使用するプロセスのログファイルが含まれます。 このプロセスは、ビルド手順で作成されたコンテンツおよびディスパッチャーパッケージをDocker画像とKubernetes設定に変換する必要があります。
    * ステージへのデプロイ
 
       ![](assets/stage-deployment.png)
    The **Stage testing**, involves the following steps:
 
-   * 製品の機能テスト：Cloud Managerのパイプライン実行は、ステージ環境に対して実行するテストの実行をサポートします。 テストプロセスについて詳しくは、「[テスト結果の理解](understand-test-results.md)」を参照してください。
-   * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。 ただし、ビルドによってテストJARが生成されない場合、テストはデフォルトで成功します。 テストプロセスについて詳しくは、「[テスト結果の理解](understand-test-results.md)」を参照してください。
+   * 製品の機能テスト：Cloud Managerのパイプライン実行は、ステージ環境に対して実行するテストの実行をサポートします。 テストプロセスについて詳しくは、「[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)」を参照してください。
+   * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。 ただし、ビルドによってテストJARが生成されない場合、テストはデフォルトで成功します。 テストプロセスについて詳しくは、「[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)」を参照してください。
 
       ![](assets/stage-testing.png)
 
