@@ -3,7 +3,7 @@ title: Adobe Experience Manager AssetsのDigital Rights Management
 description: AEM でライセンスされているアセットの状態と有効期限の情報を管理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -32,9 +32,9 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 検索パネルで、有効期限切れのアセット（有効期限切れのサブアセットを含む）を検索できます。
 
-1. アセットコンソールで、ツールバーの検索アイコンをクリックして、全方向検索ボックスを表示します。
+1. アセットコンソールで、ツールバーの検索アイコンをクリックして、Omnisearchフィールドを表示します。
 
-1. オムニサーチボックスのカーソルで、Return キーを押して検索結果ページを表示します。
+1. 「Omnisearch」ボックスにカーソルを置き、Enterキーを押して検索結果ページを表示します。
 
 1. グローバルナビゲーションアイコンをクリックして、検索パネルを表示します。
 
@@ -42,13 +42,13 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 1. 「**[!UICONTROL 期限切れ]**」を選択します。有効期限切れのアセットが検索結果に表示されます。
 
-When you choose the **Expired** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. 有効期限切れのサブアセットを参照する複合アセットは、サブアセットの有効期限切れの直後には表示されません。代わりに、それらは次回スケジューラーが実行され、有効期限切れのサブアセットを参照していることを AEM Assets が検出した後に表示されます。
+When you choose the **[!UICONTROL Expired]** option, the Assets console only displays the expired assets and subassets that are referenced by compound assets. 有効期限切れのサブアセットを参照する複合アセットは、サブアセットの有効期限切れの直後には表示されません。代わりに、それらは次回スケジューラーが実行され、有効期限切れのサブアセットを参照していることを AEM Assets が検出した後に表示されます。
 
 公開済みアセットの有効期限をスケジューラーの現在のサイクルより前の日付に変更する場合、スケジューラーは次回の実行時にも引き続きこのアセットを有効期限切れのアセットとして検出し、ステータスにそれを反映させます。
 
 さらに、何らかの誤作動やエラーによりスケジューラーが現在のサイクルの有効期限切れアセットを検出できない場合、スケジューラーはこれらのアセットを次回のサイクルで再確認し、有効期限切れのステータスを検出します。
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in AEM Configuration Manager.
+To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in AEM Configuration Manager.
 
 1. AEM Configuration Manager を開きます。
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. ジョブが完了すると、期限切れのサブアセットと参照アセットを含むアセットが検索結果に期限切れとして表示されます。
@@ -90,7 +90,7 @@ Adobe Experience Manager（AEM）Assets のアセットコンソールには、�
 
 1. To search for assets based on their status, click/tap the **[!UICONTROL Search]** icon to display the Omnisearch bar.
 
-1. Hit the Return key and then click/tap the **[!UICONTROL GlobalNav]** icon to display the Search panel.
+1. Enterキーを押し、AEMアイコンをクリックまたはタップして、検索パネルを表示します。
 1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
 1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
