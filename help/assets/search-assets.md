@@ -4,7 +4,7 @@ description: AEM のフィルターパネルを使用した必要なアセット
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
@@ -221,7 +221,7 @@ AEM検索機能は、コレクションの検索とコレクション内のア�
 
 アセットセレクターを使用すると、DAMアセットを特別な方法で検索、フィルターおよび参照できます。 アセットセレクターは、で使用できま `https://[aem_server]:[port]/aem/assetpicker.html`す。 選択したアセットのメタデータは、アセットセレクターを使用して取得できます。 アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一または複数の選択）など、サポートされているリクエストパラメーターを使用して、このファイルを起動できます。 これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択範囲全体を通じてそのまま残ります。
 
-アセットセレクターは、HTML5 Window.postMessageメッセージを使用して、選択したアセットのデータを受信者に送信します。 アセットセレクターは、Granite の基盤ピッカーのボキャブラリに基づいています。デフォルトでは、アセットセレクターは、参照モードで動作します。
+The asset selector uses the HTML5 `Window.postMessage` message to send data for the selected asset to the recipient. アセットセレクターは、Granite の基盤ピッカーのボキャブラリに基づいています。デフォルトでは、アセットセレクターは、参照モードで動作します。
 
 次のリクエストパラメーターを URL で渡して、特定のコンテキストでアセットセレクターを起動できます。
 
