@@ -4,12 +4,12 @@ description: AEM Assets におけるコレクションの概念について理�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3291f4f5de8c5333013850dad71630689cae7565
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage collections {#manage-collections}
+# コレクションの管理 {#manage-collections}
 
 コレクションとは、Adobe Experience Manager（AEM） Assets 内の一連のアセットです。コレクションを使用して、ユーザー間でアセットを共有します。
 
@@ -102,7 +102,7 @@ The label of the **[!UICONTROL Create Smart Selection]** button changes to **[!U
 Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. In the Assets user interface, tap/click the **[!UICONTROL Search]** icon from the toolbar.
-1. 「Omnisearch」ボックスにカーソルを置き、Returnキーを押します。
+1. 「Omnisearch」ボックスにカーソルを置き、Enterキーを押します。
 1. グローバルナビゲーションアイコンをタップまたはクリックして、フィルターパネルを表示します。
 1. 「**[!UICONTROL 保存済みの検索結果]**」リストから、変更するスマートコレクションを選択します。検索パネルに、該当する保存済みの検索用に設定されているフィルターが表示されます。
 1. 「**[!UICONTROL ファイルとフォルダー]**」リストから「**[!UICONTROL ファイル]**」を選択します。
@@ -225,7 +225,7 @@ To customize the metadata [!UICONTROL Properties] page, including adding, modify
 
 アセットユーザーインターフェイスでは、特定のルール、検索条件またはカスタム検索ファセットに基づいて、アセットを検索またはフィルタリングできます。 If you save these as **[!UICONTROL Saved Searches]**, you can access them later from the **[!UICONTROL Saved Searches]** list in the Filter panel. 保存済みの検索結果を作成すると、スマートコレクションも作成されます。
 
-保存済みの検索結果は、スマートコレクションの作成時に作成されます。スマートコレクションは、保存済みの検索結果リスト **[!UICONTROL に自動的に追加され]** ます。 The Saved Searches query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`.
+保存済みの検索結果は、スマートコレクションの作成時に作成されます。スマートコレクションは、保存済みの検索結果リスト **[!UICONTROL に自動的に追加され]** ます。 The Saved Searches query for the collection is saved in the `dam:query` property in CRX at the relative location `/content/dam/collections/`.
 
 >[!NOTE]
 >
