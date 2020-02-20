@@ -2,7 +2,7 @@
 title: ダイナミックメディアビデオビューアまたは画像ビューアのWebページへの埋め込み
 description: ダイナミックメディアビデオまたは画像をWebページに埋め込む方法について説明します。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -49,4 +49,4 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。HTTP/2 上で Dynamic Media アセットの配信が可能になり、応答時間と読み込み時間が短縮されました。
 
-Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](http2.md)を参照してください。
+Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](http2faq.md)を参照してください。
