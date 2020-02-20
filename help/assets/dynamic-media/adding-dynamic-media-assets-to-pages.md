@@ -2,7 +2,7 @@
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
@@ -301,7 +301,7 @@ You can edit the following setting by tapping **[!UICONTROL Configure]** in the 
 
 HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。HTTP/2 上で Dynamic Media アセットの配信が可能になり、応答時間と読み込み時間が短縮されました。
 
-Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](/help/assets/dynamic-media/http2.md)を参照してください。
+Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](/help/assets/dynamic-media/http2faq.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
