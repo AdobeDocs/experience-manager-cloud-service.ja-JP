@@ -4,12 +4,12 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 ---
 
 
-# Manage assets {#manag-assets}
+# Manage assets {#manage-assets}
 
 この記事では、Adobe Experience Manager(AEM)Assetsでアセットを管理および編集する方法について説明します。 コンテンツフラグメントを管理するには、「コンテンツフラグメ [ントアセット](content-fragments/content-fragments.md) 」を参照してください。
 
@@ -32,32 +32,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 ## Upload assets {#uploading-assets}
 
-Experience Managerへのデ [ジタルアセットの追加を参照してください](add-assets.md)。
-
-### ストリーミングアップロード {#streamed-uploads}
-
-AEMに多数のアセットをアップロードする場合、サーバーへのI/O要求が大幅に増加するので、アップロードの効率が低下し、一部のアップロードタスクがタイムアウトする場合もあります。 AEM Assets はアセットのストリーミングアップロードをサポートします。ストリームアップロードは、リポジトリにコピーする前にサーバ上の一時フォルダにアセットを保存するのを避け、アップロード操作中のディスクI/Oを削減します。 代わりに、データはリポジトリに直接転送されます。これにより、サイズの大きいアセットのアップロードにかかる時間を抑え、タイムアウトが発生する可能性を減少することができます。AEM Assets では、ストリーミングアップロードはデフォルトで有効になっています。
-
->[!NOTE]
->
->バージョン3.1より前のservlet-apiを持つJEEサーバー上で実行しているAEMでは、ストリーミングアップロードが無効になっています。
-
-### アセットが含まれている ZIP アーカイブの抽出 {#extractzip}
-
-ZIP アーカイブは、サポートされているその他のアセットと同じようにアップロードできます。ファイル名についても、同様のルールが ZIP ファイルに適用されます。AEM を使用すると、ZIP アーカイブを DAM の場所に抽出できます。アーカイブファイルに拡張子として ZIP が含まれていない場合、コンテンツを使用してファイルタイプの検出を有効にします。
-
-一度に 1 つの ZIP アーカイブを選択し、「**[!UICONTROL アーカイブの抽出]**」をクリックして、抽出先フォルダーを選択します。ファイルの重複に対処するためのオプションを選択します（該当する場合）。ZIP ファイル内のアセットが抽出先フォルダー内に既に存在する場合は、抽出をスキップする、既存のファイルを置き換える、名前を変更して両方のアセットを保持する、または新しいバージョンを作成する、のいずれかを選択できます。
-
-抽出が完了すると、AEM は通知領域にメッセージを表示します。AEM が ZIP を抽出している間、抽出を中断することなく作業に戻ることができます。
-
-![zip 抽出の通知](assets/zip_extract_notification.png)
-
-この機能には、いくつかの制限があります。
-
-* 抽出先に同じ名前のフォルダーが存在する場合、ZIP ファイル内のアセットは既存のフォルダーに抽出されます。
-* 抽出をキャンセルしても、既に抽出されたアセットは削除されません。
-* 2 つの ZIP ファイルを同時に選択して抽出することはできません。一度に抽出できる ZIP アーカイブは 1 つだけです。
-* ZIP アーカイブをアップロードするときに、アップロードダイアログに 500 サーバーエラーが表示される場合は、最新のサービスパックをインストールしてから再試行してください。
+詳しくは [、Experience Managerへのデジタルアセットの追加](add-assets.md)（英語のみ）を参照してください。
 
 ## アセットのプレビュー {#previewing-assets}
 
@@ -94,19 +69,13 @@ ZIP アーカイブは、サポートされているその他のアセットと�
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、Enter キーを押します。新しいタグが AEM に保存されます。
+1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、Enterキーを押します。 新しいタグが AEM に保存されます。
 
    YouTube で公開して YouTube へのリンクを張る（適切なリンクがある場合）には、タグが必要です。
 
    >[!NOTE]
    >
-   >タグを作成するには、CRXリポジトリでの `/content/cq:tags/default` 書き込み権限が必要です。
-
-1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
-
-   ![評価](assets/ratings.png)
-
-   アセットに割り当てた評価スコアは、「**[!UICONTROL あなたの評価]**」の下に表示されます。ユーザーによるアセットの評価の平均スコアは、「**[!UICONTROL 評価]**」の下に表示されます。さらに、平均評価スコアの評価スコアの内訳は、「**[!UICONTROL 評価分類]**」の下に表示されます。平均評価スコアに基づいてアセットを検索できます。
+   >タグを作成するには、CRXリポジトリのパスでの書き込み権 `/content/cq:tags/default` 限が必要です。
 
 1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
 
@@ -118,7 +87,8 @@ ZIP アーカイブは、サポートされているその他のアセットと�
    詳しくは、[アセットインサイト](assets-insights.md)を参照してください。
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
-1. アセットユーザーインターフェイスに移動します。 編集済みのメタデータのプロパティ（タイトル、説明、評価など）は、カード表示のアセットカードまたはリスト表示の関連する列に表示されます。
+
+1. アセットユーザーインターフェイスに移動します。 タイトル、説明、タグなど、編集されたメタデータプロパティは、カード表示のアセットカードと、リスト表示の関連する列の下に表示されます。
 
 ## アセットのコピー {#copying-assets}
 
@@ -238,28 +208,6 @@ ZIP アーカイブは、サポートされているその他のアセットと�
    >[!NOTE]
    >
    >ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。また、ブラウザーによってサポートされるビデオ形式が異なります。
-
-### View subassets {#viewing-subassets}
-
-AEM では、PDF、AI、PowerPoint／Apple Keynote、InDesign など複数ページの形式をサポートするアセットにサブアセットを生成できます。これらのサブタスクは通常のアセットと似ていますが、親アセットにリンクされており、タッチ UI で複数ページのビューを可能にします。
-
-サブアセットの生成はデフォルトでは無効になっています。To enable subasset generation, add the **[!UICONTROL Create Sub Asset]** step to the DAM Update Asset workflow.
-
-For Word documents, the DAM Parse Word Documents workflow generates a `cq:Page` component from the contents of the Word document. The images extracted from the document are referenced from the `cq:Page` component. これらの画像は、サブアセットの生成が無効な場合も抽出されます。
-
-1. サブアセットを表示するには、アセットの場所に移動して、そのアセットのページを開きます。
-
-1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Subassets]** from the list
-
-   ![chlimage_1-223](assets/chlimage_1-223.png)
-
-   >[!NOTE]
-   >
-   >「**サブアセット**」オプションが表示されるのは、アセットに対してサブアセットが使用可能であるか生成されている場合のみです。
-
-   リストから「**サブアセット**」を選択すると、**サブアセット**&#x200B;ページに親アセットにリンクされたサブアセットが表示されます。
-
-   ![chlimage_1-224](assets/chlimage_1-224.png)
 
 ## アセットを削除する {#delete-assets}
 
@@ -564,43 +512,11 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   >[!NOTE]
-   >
-   >アセットにサブアセットがある場合、特定のページに関する注釈と共にすべてのサブアセットを印刷できます。
-
    レンダリングされた PDF ファイルの外観を変更するには、Configuration Manager から&#x200B;**[!UICONTROL 注釈 PDF の設定]**&#x200B;を開き、必要なオプションを変更します。例えば、コメントとステータスのフォントカラー、サイズ、スタイル、背景色を変更できます。例えば、承認済みステータスの表示色を変更したり、対応フィールドのカラーコードを変更したりします。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
    レンダリングされた PDF ファイルに戻り、更新します。更新された PDF に、変更が反映されています。
-
-アセットに外国語（特に非ラテン言語）の注釈が含まれる場合、これらの注釈を印刷するには、まず AEM サーバーで CQ-DAM-Handler-Gibson Font Manager サービスを設定する必要があります。CQ-DAM-Handler-Gibson Font Manager サービスの設定では、必要な言語のフォントがある場所を指定します。
-
-1. Open the CQ-DAM-Handler-Gibson Font Manager Service configuration page from the URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
-1. CQ-DAM-Handler-Gibson Font Manager サービスを設定するには、以下のいずれかをおこないます。
-
-   * 「システムフォントディレクトリ」オプションで、システムのフォントディレクトリの完全パスを指定する。例えば Mac ユーザーの場合、「システムフォントディレクトリ」オプションで */Library/Fonts* と指定します。AEM はこのディレクトリからフォントを取得します。
-   * Create a directory named `fonts` inside the ``crx-quickstart`` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. 「Adobe サーバーフォントディレクトリ」オプション内でデフォルトパスを上書きすることができます。
-
-   * システムにフォント用の新しいフォルダーを作成し、必要なフォントをこのフォルダーに保存する。次に、「カスタマフォントディレクトリ」オプションにこのフォルダーへの完全パスを指定します。
-
-1. Access the Annotation PDF configuration from the URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
-1. 以下のように、正しいフォントファミリのセットを使用して注釈 PDF を設定します。
-
-   * 文字列をfont-family `<font_family_name_of_custom_font, sans-serif>` オプション内に含めます。 For example, if you want to print annotations in CJK (Chinese, Japanese and Korean), include the string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in the font-family option. ヒンディー語で注釈を印刷する場合は、適切なフォントをダウンロードし、フォントファミリーをArial Unicode MS、Not Sans、Not Sans CJK JP、Not Sans Devanagari、sans-serifとして設定します。
-
-1. AEM インスタンスを再起動します。
-
-以下の例は、注釈を CJK（中国語、日本語、韓国語）で印刷する場合の AEM の設定方法を示しています。
-
-1. 以下のリンクから Google Noto CJK フォントをダウンロードし、Font Manager サービスで設定したフォントディレクトリに保存します。
-
-   * All In One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (for European languages): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Noto fonts for a language of your choice: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-
-1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. この設定はデフォルトで使用でき、すべての欧文および CJK 言語で機能します。
-1. 選択した言語が手順 2 の言語と異なる場合は、デフォルトフォントファミリに適切なエントリを（コンマで区切って）追加してください。
 
 ## Asset versioning {#asset-versioning}
 
