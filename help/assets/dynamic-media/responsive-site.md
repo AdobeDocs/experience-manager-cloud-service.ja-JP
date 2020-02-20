@@ -2,12 +2,12 @@
 title: レスポンシブサイト用に最適化された画像の配信
 description: レスポンシブコード機能を使用して、最適化された画像を配信する方法
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# レスポンシブサイト用に最適化された画像の配信 {#delivering-optimized-images-for-a-responsive-site}
 
 レスポンシブサービング用のコードを Web 開発者と共有する場合は、レスポンシブコード機能を使用します。You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
@@ -44,4 +44,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。Dynamic Media アセットの配信は HTTP/2 を使用しておこなうことができ、応答時間と読み込み時間を短縮できます。
 
-Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](http2.md)を参照してください。
+Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](http2faq.md)を参照してください。
