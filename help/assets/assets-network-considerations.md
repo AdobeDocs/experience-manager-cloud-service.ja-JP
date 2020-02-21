@@ -3,7 +3,7 @@ title: アセットネットワークに関する考慮事項
 description: AEM Assets のデプロイメントを設計する際のネットワークの考慮事項について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -87,11 +87,9 @@ AEM インスタンスでは、1 Gbps の接続が複数のサービスで共有
 
 * XMP メタデータの読み／書き戻し
 * 自動アクティベートおよびレプリケート
-* 透かし処理
 * サブアセットの取り込み／ページの抽出
 * ワークフローのオーバーラップ
 
 アセットワークフローの定義に関するお客様の例は次のとおりです。
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
-
