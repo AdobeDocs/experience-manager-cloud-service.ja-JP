@@ -2,17 +2,17 @@
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
+source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
 
 
-# 導入 {#implementing}
+# 実装 {#implementing}
 
-+ [AEM用アプリケーションをクラウドサービスとして実装する](/help/implementing/home.md)
++ [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
 + Cloud Manager の使用 {#using-cloud-manager}
    + [環境の管理](cloud-manager/manage-environments.md)
-   + [CI/CDパイプラインの設定](cloud-manager/configure-pipeline.md)
+   + [CI/CD パイプラインの設定](cloud-manager/configure-pipeline.md)
    + [コードのデプロイ](cloud-manager/deploy-code.md)
    + [カスタムコード品質ルールについて](cloud-manager/custom-code-quality-rules.md)
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
@@ -20,19 +20,19 @@ source-git-commit: c34137ba6f49785304ab21355eaad75798f26267
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
-   + [GitとAdobe Cloud Managerの統合](cloud-manager/integrating-with-git.md)
-+ クラウドサービスとしてのAEM向け開発 {#developing}
-   + [AEMプロジェクトパッケージ構造](developing/introduction/aem-project-content-package-structure.md)
+   + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
++ AEM as a Cloud Service 向けの開発{#developing}
+   + [AEM プロジェクトのパッケージ構造](developing/introduction/aem-project-content-package-structure.md)
    + [リポジトリ構造パッケージの作成](developing/introduction/repository-structure-package.md)
    + [クラウドサービスSDKとしてのAEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)
-   + [AEM as a Cloud Service Development Guidelines](developing/introduction/development-guidelines.md)
+   + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
-   + [クラウドサービスAPIとしてのAEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
-+ AEMをクラウドサービスとして拡張する {#extending}
-   + [エクスペリエンスフラグメント](developing/extending/experience-fragments.md)
-+ クラウドサービスとしてのAEMへのデプロイ {#deploying}
-   + [クラウドサービスとしてのAEMへのデプロイ](deploying/overview.md)
-+ クラウドのディスパッチャー {#dispatcher}
-   + [クラウドのディスパッチャー](dispatcher/overview.md)
++ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
+   + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
++ AEM as a Cloud Service へのデプロイ{#deploying}
+   + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
++ クラウド内の Dispatcher {#dispatcher}
+   + [クラウド内の Dispatcher ](dispatcher/overview.md)
