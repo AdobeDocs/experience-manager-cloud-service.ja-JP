@@ -3,14 +3,14 @@ title: アセットへのワークフローの適用
 description: Adobe Experience Manager Assetsのアセット、フォルダーおよびコレクションにワークフローを適用する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
 
 # アセットへのワークフローの適用 {#applying-workflows-to-assets}
 
-デジタルアセットのワークフローを使用して、アセットをアクティブ化したり、透かしを作成したりします。 アセットのワークフローの一部は、特定の条件に基づいて自動的に実行されるように設定されています。 例えば、レンディションを自動的に作成するワークフローは、画像の編集後に自動的に実行されます。
+デジタルアセットのワークフローを使用して、アセットをアクティブ化します。 アセットのワークフローの一部は、特定の条件に基づいて自動的に実行されるように設定されています。 例えば、レンディションを自動的に作成するワークフローは、画像の編集後に自動的に実行されます。
 
 ## Apply a workflow to an AEM asset {#apply-a-workflow-to-an-aem-asset}
 
