@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
 
 ---
 
@@ -36,7 +36,6 @@ source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
    + [メタデータスキーマ](metadata-schemas.md)
    + [ビデオアセットの管理](manage-video-assets.md)
    + [AEM からのアセットのダウンロード](download-assets-from-aem.md)
-   + [アセットへの透かしの追加](add-watermark-to-assets.md)
    + [編集するアセットのチェックアウトとチェックイン](check-out-and-submit-assets.md)
    + [アセットの Digital Rights Management](drm.md)
 + アセットの設定、管理、拡張 {#admin}
