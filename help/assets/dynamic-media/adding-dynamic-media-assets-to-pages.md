@@ -2,7 +2,7 @@
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
 
 ---
 
@@ -199,6 +199,8 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
    このオプションは、画像セット、スピンセットまたは混在メディアセットを表示している場合には使用できません。
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
+
+* **[!UICONTROL 「縦横比の一致を有効にする]**」 — スマート切り抜きレンディションを選択した場合に、元の画像の縦横比と一致させます。
 
 * **[!UICONTROL 「タイトル]**」(Title) — スマート切り抜き画像のタイトルを変更します。
 
