@@ -2,18 +2,32 @@
 title: 検索フォームの設定
 description: クラウドサービスとしてのAdobe Experience Manager用のSearch Formsの設定を参照してください。
 translation-type: tm+mt
-source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
+source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ---
 
 
 # 検索フォームの設定 {#configuring-search-forms}
 
-「検索フ **ォーム** 」を使用して、作成者環境内の様々な検索パネルで使用できる検索ファセットとフィルターをカスタマイズします。 これらのパネルをカスタマイズすると、検索機能が用途に合わせて使用できます。
+クラウドサービスとしてのAdobe Experience Managerには、強力な検索メカニズムが付属 [してい](/help/sites-cloud/authoring/getting-started/search.md) ます。
 
-一連 [の予](#predicates-and-their-settings)測を標準で使用できます。
+これと組み合わせて、コンテンツのフィルタリングに役立つ定義済みのオプションのセットも用意されています。 これらのファセットには、変更日、公開ステ **ータス**、 **Livecopyステータスなどの事前定義されたファセットが含まれており****** 、必要なリソースをすばやく掘り下げることができます。
 
-様々なコンソール内およびアセットブラウザー（ページ編集時）で使用する[検索フォームを設定](#configuring-your-search-forms)できます。[これらのフォームを設定するためのダイアログ](#configuring-your-search-forms)には、次の手順でアクセスできます。
+![検索とフィルターの使用](assets/csf-usage.png)
+
+これらを組み合わせると、次の情報からすばやく簡単にコンテンツを見つけることができます。
+
+* [検索とフィルター](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
+* [レールセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* アセット [ブラウザ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （ページ編集時）
+
+>[!NOTE]
+>
+>基になる [Content Search and Indexingサービスを設定できます](/help/operations/indexing.md) 。
+
+検索フ **ォームを使用すると**、これらのパネルを特定のニーズに合わせてカスタマイズしたり、拡張したりできます。
+
+「検 **索フォーム** 」では、組み合わせて定義できる述語をあらかじめ [選択](#predicates-and-their-settings) できます。 [これらのフォームを設定するためのダイアログ](#configuring-your-search-forms)には、次の手順でアクセスできます。
 
 * **ツール**
 
@@ -21,73 +35,48 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
       * **検索フォーム**
 
-このコンソールに初めてアクセスすると、すべての設定に鍵アイコンが表示されます。これは、該当する設定はデフォルト（標準）の設定であり、削除できないことを示します。設定をカスタマイズすると、鍵アイコンは非表示になります。ただし、[カスタマイズした設定を削除](#deleting-a-configuration-to-reinstate-the-default)した場合は、デフォルトの設定（および鍵アイコン）が復帰します。
+## デフォルトフォーム {#default-forms}
+
+最初に **Search Forms** Consoleにアクセスすると、すべての設定にパドロック記号が表示されます。 これは、対応する設定がデフォルトの（そのまま使用できる）設定であり、削除できないことを示します。 カスタマイズして保存すると、ロックが消えます。 カスタマイズした設定を削 [除すると](#deleting-a-configuration-to-reinstate-the-default)、再び表示されます。削除すると、デフォルト（およびパドロックインジケータ）が復元されます。
 
 ![検索フォームの設定の概要](assets/csf-overview.png)
-
-## 設定 {#configurations}
 
 デフォルトの設定（アルファベット順に表示）は次のとおりです。
 
 * **アセット管理者の検索レール:**
 
-   この設定は、アセットコンソールを使用する際にユーザーが使用できる検索オプションを定義します。
-
 * **ページエディター (ドキュメント検索):**
-
-   この設定は、（ページの編集時に）アセットブラウザーでドキュメントを検索する際に使用できるオプションを定義します。
 
 * **ページエディター (エクスペリエンスフラグメント検索):**
 
-   この設定は、（ページの編集時に）アセットブラウザーでエクスペリエンスフラグメントを検索する際に使用できるオプションを定義します。
-
 * **ページエディター (画像検索):**
-
-   この設定は、（ページの編集時に）アセットブラウザーで画像を検索する際に使用できるオプションを定義します。
 
 * **ページエディター (原稿検索):**
 
-   この設定は、（ページの編集時に）アセットブラウザーで原稿を検索する際に使用できるオプションを定義します。
-
 * **ページエディター (ページ検索):**
-
-   この設定は、（ページの編集時に）アセットブラウザーでページを検索する際に使用できるオプションを定義します。
 
 * **ページエディター (段落検索):**
 
-   この設定は、（ページの編集時に）アセットブラウザーで段落を検索する際に使用できるオプションを定義します。
-
 * **ページエディター (製品検索):**
-
-   この設定は、（ページの編集時に）アセットブラウザーで製品を検索する際に使用できるオプションを定義します。
 
 * **ページエディター (Scene7 検索)**:
 
-   この設定は、（ページの編集時に）アセットブラウザでScene7リソースを検索する際に使用できるオプションを定義します。
-
 * **ページエディター (ビデオ検索)**:
-
-   この設定は、（ページの編集時に）アセットブラウザーでビデオを検索する際に使用できるオプションを定義します。
 
 * **プロジェクト管理者の検索レール:**
 
-   この設定は、プロジェクトの検索時にユーザーが使用できる検索オプションを定義します。
-
 * **プロジェクト翻訳の検索レール:**
-
-   この設定は、プロジェクトの翻訳を検索する際にユーザーが使用できる検索オプションを定義します。
 
 * **サイト管理者の検索レール**:
 
-   この設定は、サイトコンソールの検索レールを使用する際にユーザーが使用できる検索オプションを定義します。
-
 * **スニペット管理者の検索レール**:
-
-   この設定は、スニペットの検索時にユーザが使用できる検索オプションを定義します。
 
 * **Stock 管理者の検索レール**:
 
-   この設定は、ユーザーが在庫を検索する際に使用できる検索オプションを定義します。
+>[!NOTE]
+>
+> アセット関連の検索フォームについて詳しくは、「アセット — 検索ファセ [ット」を参照してください。](/help/assets/search-facets.md)
+
 
 ## Predicates and Their Settings {#predicates-and-their-settings}
 
@@ -168,7 +157,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>日付 範囲</td>
-   <td>日付プロパティに指定した範囲内に作成されたアセットを検索します。検索パネルで、開始日と終了日を指定できます。</td>
+   <td>指定した範囲内に作成されたリソースで日付プロパティを検索します。 検索パネルで、開始日と終了日を指定できます。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -181,7 +170,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>有効期限ステータス</td>
-   <td>有効期限ステータスに基づいてアセットを検索します。</td>
+   <td>有効期限ステータスに基づいてリソースを検索します。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -191,7 +180,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>ファイルサイズ</td>
-   <td>サイズに基づいてアセットを検索します。</td>
+   <td>サイズに基づいてリソースをフィルタリングします。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -205,7 +194,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
    <td>ファイル/MIMEタイプに基づいてアセットを検索します。</td>
    <td>
     <ul>
-     <li>フィールドラベル</li>
+     <li>フィールドラベル</li> 
      <li>プロパティ名*</li>
      <li>MIME タイプのパス</li>
      <li>説明</li>
@@ -214,7 +203,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>フルテキスト</td>
-   <td>フルテキスト検索用の検索述語。</td>
+   <td>フルテキスト検索用の検索述語。jcr:contains´演算子を使用してマッピングされます。</td>
    <td>
     <ul>
      <li>プレースホルダー</li>
@@ -304,7 +293,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>ページステータス</td>
-   <td>ステータスに従ってページを検索します。</td>
+   <td>ステータスに従ってページをフィルタリングします。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -315,7 +304,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>パス</td>
-   <td>特定のパスに配置されているアセットを検索します。</td>
+   <td>特定のパスに基づいてフィルタリングします。 複数のパスをオプションとして指定できます。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -325,7 +314,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>パス ブラウザー</td>
-   <td>検索するパスブラウザーを指定します。</td>
+   <td>事前定義されたルートパスの下で検索するパスブラウザーを提供します。</td>
    <td>
     <ul>
      <li>プレースホルダー</li>
@@ -360,7 +349,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>公開ステータス</td>
-   <td>公開ステータスに基づいてアセットを検索します。</td>
+   <td>発行ステータスに基づいてリソースをフィルターします。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -380,7 +369,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>評価</td>
-   <td>評価に従ってアセットを検索します。<br /> </td>
+   <td>平均評価に従ってリソースを検索します。<br /> </td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -391,7 +380,7 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
   <tr>
    <td>相対的な日付</td>
-   <td>相対的な作成日に基づいてアセットを検索します。<br /> </td>
+   <td>作成日の相対的な日付に基づいてリソースをフィルターします。 例えば、1週間前、1か月前などです。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -497,23 +486,24 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
   </tr>
 -->
 
-<!--
 >[!NOTE]
 >
->* The common search predicates are defined in:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>* 一般的な検索述語は、次の場所で定義されます。
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >
+This information is for reference only, you must not make changes to `/libs`.
+
+<!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
 > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
->This information is for reference only, you must not make changes to `/libs`.
 -->
 
 ### 述語の設定 {#predicate-settings}
 
-述語によって、以下のような設定が可能です。
+述語に応じて、次のような設定を構成できます。
 
 * **フィールドラベル**
 
@@ -661,22 +651,19 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
 
    * `jcr:title` - 検索レールに表示されるフィールドラベル
    * `value` - 検索対象のプロパティ値
+   ![述語の定義](assets/csf-options-predicate-01.png)
 
-<!--
-   ![chlimage_1-379](assets/chlimage_1-379.png)
--->
-
->[!NOTE]
->
->You ***must*** not change anything in the `/libs` path.
->
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
->
->設定およびその他の変更に推奨される方法は次のとおりです。
->
->1. Recreate the required item, as it exists in `/libs`, under `/apps`. この場合、次の場所から選択します。
->1. `/libs/cq/gui/content/common/options/predicates`
->1. Make any changes within `/apps.`
+   >[!NOTE]
+   >
+   >You ***must*** not change anything in the `/libs` path.
+   >
+   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >
+   >設定およびその他の変更に推奨される方法は次のとおりです。
+   >
+   >1. Recreate the required item, as it exists in `/libs`, under `/apps`. この場合、次の場所から選択します。
+   >1. `/libs/cq/gui/content/common/options/predicates`
+   >1. Make any changes within `/apps.`
 
 
 1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**サイト管理者の検索レール**」を選択します。
@@ -697,16 +684,13 @@ source-git-commit: c0298d81462138187b04407ba9cfd5041b08873f
       オプションを保持するパスを選択します。 次に例を示します。
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-
-<!--
-   ![chlimage_1-380](assets/chlimage_1-380.png)
--->
+   ![オプション述語](assets/csf-options-predicate-02.png)
 
 1. 「**完了**」を選択して設定を保存します。
-1. 該当するコンソール（この例では&#x200B;**サイト**）に移動し、**検索**&#x200B;レールを開きます。新しく定義された検索フォームと各種オプションが表示されます。必要なオプションを選択して検索結果を確認します。
+1. 該当するコンソール（この例では&#x200B;**サイト**）に移動し、**検索**&#x200B;レールを開きます。新しく定義された検索フォームと各種オプションが表示されます。検索結果を表示するには、必要なオプションを選択します。
 
 <!--
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![options being used](assets/csf-options-usage.png)
 -->
 
 ## ユーザーの権限 {#user-permissions}
