@@ -2,7 +2,7 @@
 title: プログラムとプログラムの種類について
 description: プログラムとプログラムの種類について — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
+source-git-commit: 14da491cf09ed46ea425a8d65670d8b851aef388
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 1129188c06d893bbeb8f8861b6fae25052605f12
 # プログラムとプログラムの種類について {#understanding-programs}
 
 Cloud Managerでは、最上部にテナントエンティティがあり、中に複数のプログラムを含めることができます。  各プログラムには、1つの実稼働環境と複数の実稼働以外の環境を含めることができます。
+
+次の図に、Cloud Managerのエンティティの階層を示します。
+
+![画像](assets/program-types1.png)
 
 ## プログラムの種類 {#program-types}
 
