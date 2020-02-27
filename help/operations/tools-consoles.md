@@ -29,7 +29,7 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE Lite</td>
+   <td>CRXDE LITE</td>
   </tr>
   <tr>
    <td> </td>
