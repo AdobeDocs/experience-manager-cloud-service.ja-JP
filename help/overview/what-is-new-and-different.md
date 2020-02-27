@@ -2,12 +2,12 @@
 title: 新機能 — クラウドサービスとしてのAdobe Experience Manager
 description: '新機能 — クラウドサービスとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: e6465e018ff45638865f9ca2172a8e72e12612a9
+source-git-commit: 160db0dabc99eccdef5bd579f8ccc26a861b1380
 
 ---
 
 
-# 新機能と機能の違い {#what-is-new-and-what-is-different}
+# 新機能と相違点 {#what-is-new-and-what-is-different}
 
 AEMは、長い間、次の両方の機能を利用できます。
 
@@ -20,7 +20,7 @@ AEMは、長い間、次の両方の機能を利用できます。
 * [アーキテクチャ](#architecture)
 * [アップグレード](#upgrades)
 * [Cloud Manager](#cloud-manager)
-* [使用開始](#onboarding)
+* [オンボーディング](#onboarding)
 * [開発](#developing)
 * [運用とパフォーマンス](#operations-and-performance)
 * [ID 管理](#identity-management)
@@ -129,7 +129,7 @@ Cloud Managerは、クラウドサービスとしてのAEMの主要コンポー�
 
 * APAC（オーストラリア）
 
-## 使用開始 {#onboarding}
+## オンボーディング {#onboarding}
 
 >[!NOTE]
 >
@@ -179,6 +179,10 @@ AEMをクラウドサービスとしてサポートする新しいアーキテ�
 
 OSGIバンドルとその関連設定が管理されるWebコンソール、およびAEM quickStartの以前の部分は、クラウドサービス環境としてAEMのユーザーが直接アクセスできなくなりました。 このインターフェイスは、新しい開発者コンソールを使用して読み取り専用モードで引き続きアクセスできます。 このコンソールを使用すると、開発者は作成者または発行サービスの特定のノードを直接選択してログインし、デフォルトでブロックされている領域にアクセスできます。
 
+>[!NOTE]
+>
+>「 [OSGi設定」も参照](/help/implementing/deploying/overview.md#osgi-configuration)
+
 開発者にとっては、様々な環境のログファイルにすばやくアクセスする必要があるもう1つの一般的な要件です。 AEMをクラウドサービスとして使用すると、作成者ノードと発行ノードに含まれる各ノードのログファイルが、ダウンロード可能なファイルの形式またはAPI経由でCloud Managerから利用できるようになります。
 
 コードとコンテンツが明確に分離されているので、開発者は、デプロイメントの一部として、特定のプロセスを使用してコンテンツを更新できます。 可変コンテンツの一般的な使用例を次に示します。
@@ -207,7 +211,7 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 
 >[!NOTE]
 >
->詳細は、「バックアップ」、「インデック [ス作成](/help/operations/backup.md)」、「その他のメンテナ [ンスタスク」から始めます](/help/operations/indexing.md)[](/help/operations/maintenance.md)。
+>詳細については、最初に「[バックアップ](/help/operations/backup.md)」、「[インデックス作成](/help/operations/indexing.md)」、「[その他のメンテナンスタスク](/help/operations/maintenance.md)」を参照してください。
 
 AEMをクラウドサービスとして使用すると、サービスの中断が不要になるように、このような操作が自動化されます。
 
