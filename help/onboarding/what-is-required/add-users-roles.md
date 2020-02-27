@@ -2,12 +2,12 @@
 title: ユーザーと役割の追加 — 必要なもの
 description: ユーザーと役割の追加 — 必要なもの
 translation-type: tm+mt
-source-git-commit: 1d2d39ba3dd84b79420da94c985b00aa1bb5b806
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
 
-# ユーザーと役割の追加 — 必要なもの {#add-users-roles}
+# ユーザーとロールの追加 {#add-users-roles}
 
 
 [!UICONTROL Cloud Manager] の多くの機能には、使用するための特定の権限が必要です。例えば、プログラムの主要業績評価指標（KPI）を設定できるのは、特定のユーザーだけです。これらの権限は、論理的にグループ化されてロールになります。
