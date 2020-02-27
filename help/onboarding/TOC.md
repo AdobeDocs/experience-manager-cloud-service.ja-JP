@@ -1,8 +1,8 @@
 ---
 sub-product: Onboarding to AEM as a Cloud Service
 user-guide-title: Onboarding to AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+translation-type: tm+mt
+source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 + 要件 {#what-is-required}
    + [アクセス権の付与](what-is-required/access-rights-granted.md)
    + [ユーザーとロールの追加](what-is-required/add-users-roles.md)
+   + [役割に基づく権限](what-is-required/role-based-permissions.md)
    + [ソースコードリポジトリ](what-is-required/source-code-repository.md)
 + クラウド内の AEM へのアクセス {#getting-access}
    + [Adobe Experience Manager as a Cloud Service へのアクセス](getting-access-to-aem-in-cloud/navigation.md)
@@ -24,3 +25,4 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
    + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Sites の対応](data-privacy-and-protection-readiness/sites-readiness.md)
++ [ツールコンソールの概要](tools-consoles.md)
