@@ -666,9 +666,7 @@ This information is for reference only, you must not make changes to `/libs`.
    >1. Make any changes within `/apps.`
 
 
-1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**サイト管理者の検索レール**」を選択します。
-
-   次に、「**検索フォームを編集**」アイコンをクリック／タップします。
+1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**サイト管理者の検索レール**」を選択します。「編集」を選 **択します**。
 
 1. 設定により、**オプション**&#x200B;または&#x200B;**オプションプロパティ**&#x200B;を設定に追加します。
 1. フィールドを更新します。具体的には次のフィールドです。
@@ -687,11 +685,10 @@ This information is for reference only, you must not make changes to `/libs`.
    ![オプション述語](assets/csf-options-predicate-02.png)
 
 1. 「**完了**」を選択して設定を保存します。
-1. 該当するコンソール（この例では&#x200B;**サイト**）に移動し、**検索**&#x200B;レールを開きます。新しく定義された検索フォームと各種オプションが表示されます。検索結果を表示するには、必要なオプションを選択します。
+1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. 新しく定義された検索フォームと各種オプションが表示されます。検索結果を表示するには、必要なオプションを選択します。
 
-<!--
-   ![options being used](assets/csf-options-usage.png)
--->
+   ![使用中のオプション](assets/csf-options-usage.png)
+
 
 ## ユーザーの権限 {#user-permissions}
 
