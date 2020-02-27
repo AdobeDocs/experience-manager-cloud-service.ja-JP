@@ -15,7 +15,7 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 
 >[!NOTE]
 >
->As the cards in the UI provide details about the purpose of each option, this table simply provides quick reference as to the location of features in the Tools panel.
+>UIのカードには各オプションの目的に関する詳細が表示されるので、この表には、ツールパネルの機能の場所に関するクイックリファレンスが記載されています。
 
 <table>
  <tbody>
