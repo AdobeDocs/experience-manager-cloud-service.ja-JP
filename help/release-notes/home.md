@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: 'Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。 '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 
 ---
@@ -42,10 +42,10 @@ source-git-commit: 3cf5d17eab937c99c8bcaeb0ed8074672e71650f
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
-* [HTL のドキュメント](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [コアコンポーネントのドキュメント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager のドキュメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [HTL のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)
+* [コアコンポーネントのドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
