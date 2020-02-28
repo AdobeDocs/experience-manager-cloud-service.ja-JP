@@ -3,7 +3,7 @@ title: 接続されたアセットを使用してAdobe Experience Manager Sites�
 description: 別のExperience Manager siteデプロイメントでWebページを作成する場合は、リモートのAdobe Experience Manager Assetsデプロイメントで使用できるアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 45371da5617a0d87105dbf2f574de15bf0698d98
+source-git-commit: 70ac4bdc284f14012f2e0730f52fb932d04e2a0e
 
 ---
 
@@ -27,9 +27,9 @@ AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイ�
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
 * Adobe Experience Managerの展開タイプでは、サポートされている条件の1つが満たされます。
 
-   |  | クラウドサービスとしてのAEMサイト | AMS上のAEM 6.5サイト | AEM 6.5オンプレミスサイト |
+   |  | AEM Sites as a Cloud Service | AMS上のAEM 6.5サイト | AEM 6.5オンプレミスサイト |
    |---|---|---|---|
-   | **クラウドサービスとしてのAEM Assets** | サポート対象 | サポート対象 | サポート対象 |
+   | **AEM Assets as a Cloud Service** | サポート対象 | サポート対象 | サポート対象 |
    | **AMS上のAEM 6.5アセット** | サポートなし | サポート対象 | サポート対象 |
    | **AEM 6.5アセットオンプレミス** | サポートなし | サポートなし | サポートなし |
 
@@ -37,14 +37,10 @@ AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイ�
 
 作成者は、コンテンツファインダーで画像や次の種類のドキュメントを検索し、検索したアセットをページエディターで使用できます。 Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
 
-* Microsoft Word（DOC および DOCX）
-* Microsoft Excel（XLS および XLSX）
-* Microsoft powerPoint（PPTおよびPPTX）
-* Adobe PDF（PDF）
-* OpenDocument テキスト（ODT）
-* リッチテキスト形式（RTF）
-* プレーンテキスト（TXT）
-* Web ページ（HTML）
+サポートされる形式のリストを次に示します。
+
+* **画像形式**:画像コンポーネントでサポートされてい [る画像形式](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) がサポートされます。 ダイナミックメディアコンポーネントはサポートされていません。
+* **ドキュメントの形式**:詳しくは、接続さ [れたアセットでサポートされるドキュメント形式を参照してくださ](file-format-support.md#supported-document-formats)い。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
 
