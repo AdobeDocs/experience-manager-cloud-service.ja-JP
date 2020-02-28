@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の実装
 description: Adobe Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 
 # AEM as a Cloud Service のアプリケーションの実装 {#aem-implementation-guide}
 
-このページには、Experience Managerをクラウドサービスとして実装する際のセルフヘルプリソースの一覧を示します。 Experience Managerをクラウドサービスとしてカスタマイズする方法を説明します。
+ここでは、Adobe Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースの一覧を示します。Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
 
 ## 実装に関する主要な記事 {#key-articles}
 
@@ -36,10 +36,10 @@ source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
-* [HTL のドキュメント](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [コアコンポーネントのドキュメント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager のドキュメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [HTL のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)
+* [コアコンポーネントのドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
