@@ -1,7 +1,7 @@
 ---
 sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: Implementing for AEM as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
 
 ---
@@ -24,13 +24,13 @@ source-git-commit: 080508907f27533a6e749c9ab7b493f13b5bd99f
 + AEM as a Cloud Service 向けの開発{#developing}
    + [AEM プロジェクトのパッケージ構造](developing/introduction/aem-project-content-package-structure.md)
    + [リポジトリ構造パッケージの作成](developing/introduction/repository-structure-package.md)
-   + [クラウドサービスSDKとしてのAEM](developing/introduction/aem-as-a-cloud-service-sdk.md)
+   + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
-+ Configuring and Extending AEM as a Cloud Service {#configuring-and-extending}
++ AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [検索フォームの設定](developing/extending/search-forms.md)
 + AEM as a Cloud Service へのデプロイ{#deploying}
