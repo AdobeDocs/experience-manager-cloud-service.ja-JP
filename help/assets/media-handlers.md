@@ -3,7 +3,7 @@ title: メディアハンドラーとワークフローを使用したアセッ�
 description: 様々なハンドラーの概要と、ワークフローでハンドラーを使用してアセットに対してタスクを実行する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -116,7 +116,7 @@ AEM には、アセットを処理するデフォルトのワークフローが�
 
 特定の要件に従って、既存のワークフローを拡張し、新しいワークフローを作成してアセットを処理できます。
 
-The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
+以下の例は、**[!UICONTROL AEM Assets 同期]**&#x200B;ワークフローを拡張して、PDF ドキュメント以外のすべてのアセットについてサブアセットを生成するための方法を示しています。
 
 ### メディアハンドラーの無効化／有効化 {#disabling-enabling-a-media-handler}
 
@@ -151,10 +151,10 @@ The best way to start an implementation is to inherit from a provided abstract i
 
 インターフェイスとクラスには以下が含まれます。
 
-* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：このインターフェイスは、特定のMIMEタイプのサポートを追加するサービスを記述します。 新しい MIME タイプを追加するには、このインターフェイスを実装する必要があります。このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
+* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：このインターフェイスは、特定のMIME型のサポートを追加するサービスを説明します。 新しいMIME型を追加するには、このインターフェイスを実装する必要があります。 このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
 * `com.day.cq.dam.core.AbstractAssetHandler` クラス：このクラスは、他のすべてのアセットハンドラー実装の基礎となり、共通の使用機能を提供します。
-* `com.day.cq.dam.core.AbstractSubAssetHandler` class:
-   * このクラスは、他のすべてのアセットハンドラー実装の基礎となり、共通の使用機能に加え、サブアセット抽出に使用される共通の機能を提供します。
+* `com.day.cq.dam.core.AbstractSubAssetHandler` クラス：
+   * このクラスは、その他すべてのアセットハンドラー実装の基礎として機能し、よく使用される機能を提供します。さらに、サブアセットの抽出についてよく使用される機能も提供します。
    * 実装を開始するための最適な方法は、最も多くの点について対応し、適切なデフォルト動作を提供している付属の抽象実装から継承することです。それが com.day.cq.dam.core.AbstractAssetHandler クラスです。
    * このクラスには、抽象的なサービス記述子が用意されています。そのため、このクラスから継承し、maven-sling-plugin を使用する場合、inherit フラグを true に設定する必要があります。
 
@@ -170,7 +170,7 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
 
 インターフェイスとクラスには以下が含まれます。
 
-* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：このインターフェイスは、特定のMIMEタイプのサポートを追加するサービスを記述します。 新しい MIME タイプを追加するには、このインターフェイスを実装する必要があります。このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
+* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：このインターフェイスは、特定のMIME型のサポートを追加するサービスを説明します。 新しいMIME型を追加するには、このインターフェイスを実装する必要があります。 このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
 * `com.day.cq.dam.core.AbstractAssetHandler` クラス：このクラスは、他のすべてのアセットハンドラー実装の基礎となり、共通の使用機能を提供します。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` クラス：このクラスは、他のすべてのアセットハンドラー実装の基礎となり、共通の使用機能に加え、サブアセット抽出に使用される共通の機能を提供します。
 
@@ -391,7 +391,7 @@ AEMでは、ワークフロー内の任意のコマンドラインツールを�
 
 The `CommandLineProcess` process performs the following operations in the order they are listed:
 
-* MIME タイプを指定した場合、そのタイプに従ってファイルをフィルターします。
+* 特定のMIMEタイプを指定した場合は、そのMIMEタイプに従ってファイルをフィルタします。
 * AEM サーバーをホストするディスクに一時ディレクトリを作成します。
 * 元のファイルを一時ディレクトリにストリーミングします。
 * ステップの引数で定義されたコマンドを実行します。このコマンドは、AEMを実行するユーザーの権限で一時ディレクトリ内で実行されています。
@@ -421,7 +421,7 @@ The `CommandLineProcess` process performs the following operations in the order 
 
    反転画像がディレクトリに追加されます。
 
-Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
+次に、コマンドラインの処理手順を **[!UICONTROL DAM Update Asset]** ワークフローに追加します。
 
 1. **[!UICONTROL ワークフロー]**&#x200B;コンソールを開きます。
 1. In the **[!UICONTROL Models]** tab, edit the **[!UICONTROL DAM Update Asset]** model.
@@ -453,7 +453,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>オプション引数。アセットの MIME タイプが引数の MIME タイプと同じ場合にプロセスが適用されます。</p> <p>複数の MIME タイプを定義できます。</p> </td>
+   <td><p>オプション引数。アセットのMIMEタイプが引数の1つと同じ場合、プロセスが適用されます。</p> <p>複数の MIME タイプを定義できます。</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;幅&gt;:&lt;高さ&gt;</td>
@@ -461,7 +461,7 @@ The values of the **Process Arguments** must be separated by a comma and must no
   </tr>
   <tr>
    <td> cmd: &lt;command&gt;</td>
-   <td><p>実行されるコマンドを定義します。この構文はコマンドラインツールによって異なります。</p> <p>1 つのコマンドのみを定義できます。</p> <p>以下の変数を使用してコマンドを作成できます。<br/></p> <p><code>${filename}</code>: name of the input file, e.g. original.jpg<br/><code>${file}</code>: full path name of the input file, e.g. /tmp/cqdam0816.tmp/original.jpg<br/><code>${directory}</code>: directory of the input file, e.g. /tmp/cqdam0816.tmp.<br/><code>${basename}</code>:拡張子を含まない入力ファイルの名前。例： original<br/><code>${extension}</code>:入力ファイルの拡張子（jpgなど）<br/></p></td>
+   <td><p>実行されるコマンドを定義します。この構文はコマンドラインツールによって異なります。</p> <p>1 つのコマンドのみを定義できます。</p> <p>以下の変数を使用してコマンドを作成できます。<br/></p> <p><code>${filename}</code>: name of the input file, for example `original.jpg`<br/><code>${file}</code>: full path name of the input file, for example, `/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: directory of the input file, for example `/tmp/cqdam0816.tmp`.<br/><code>${basename}</code>:拡張子を含まない入力ファイルの名前。例： original<br/><code>${extension}</code>:入力ファイルの拡張子（JPGなど）<br/></p></td>
   </tr>
  </tbody>
 </table>
