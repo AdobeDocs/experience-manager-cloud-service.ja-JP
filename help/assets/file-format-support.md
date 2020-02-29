@@ -3,7 +3,7 @@ title: Experience Manager Assetsでクラウドサービスとしてサポート
 description: Experience Manager Assetsでクラウドサービスとしてサポートされるファイル形式とMIMEタイプ。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
+source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
 
 ---
 
@@ -171,19 +171,19 @@ source-git-commit: 55dd497caaa25cf7c0d8da1c1400b74f7d265d29
 
 アセット管理機能でサポートされるドキュメント形式は次のとおりです。
 
-| ファイル形式 | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|---|
-| DOC | ✓ |
-| DOCX | ✓ |
-| ODT | ✓ |
-| PDF | ✓ |
-| HTML | ✓ |
-| RTF | ✓ |
-| TXT | ✓ |
-| XLS | ✓ |
-| XLSX | ✓ |
-| PPT | ✓ |
-| PPTX | ✓ |
+| ファイル形式 | ストレージ | メタデータの管理 | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+|---|---|---|---|
+| DOC | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ |
+| ODT | ✓ | ✓ | ✓ |
+| PDF | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |
+| RTF | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | ✓ |
+| XLS | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ |
+| PPT | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ |
 
 >[!MORELIKETHIS]
 >
