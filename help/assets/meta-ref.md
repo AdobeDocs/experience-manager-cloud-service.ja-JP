@@ -3,7 +3,7 @@ title: メタデータのスキーマに関する参照情報
 description: 'Dublin Core、IPTC などのメタデータのスキーマを含め、アセットメタデータを記述する際の標準規約を学習します。 '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -48,7 +48,7 @@ DCMES 以外にも、Dublin Core Metadata Initiative によって作成された
   </tr>
   <tr>
    <td>format</td> 
-   <td>アセットのファイル形式、物理的な媒体またはサイズ。AEM uses <code>dc:format</code> to denote the mime-type of the asset.<br /> </td> 
+   <td>アセットのファイル形式、物理的な媒体またはサイズ。AEMは、を使 <code>dc:format</code> 用してアセットのMIMEタイプを示します。<br /> </td> 
   </tr>
   <tr>
    <td>identifier</td> 
