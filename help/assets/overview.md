@@ -1,14 +1,14 @@
 ---
-title: クラウドサービスとしてのアセットの概要
+title: AEM Assets as a Cloud Service の概要
 description: クラウドサービスとしてのアセットの新機能を参照してください。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
 
-# アセットをクラウドサービスとしてご紹介 {#assets-cloud-service-introduction}
+# Introducing Assets as a Cloud Service {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -18,7 +18,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 企業では、マルチデバイス、地域間、多言語の使用例に対して、様々なファイル形式とコンテンツ解像度のサポートが必要です。 資産の処理とストレージの要件には、従来のソリューションに負担をかける可能性のあるリソースと機能が必要です。 時には、資産処理の技術的な制限が望ましい結果を生み出さず、また、保存のコストが利益率の低下を招くこともあります。
 
-まず、クラウドのネイテ [ィブ製品のメリットを理解します](#solution-benefits)。 AEMに対するクラウドサー [ビスとしての注目すべき変更を確認します](/help/release-notes/aem-cloud-changes.md) 。この変更は、アセットに対する注目すべき変更に続 [いて行われます](/help/assets/assets-cloud-changes.md)。
+まず、クラウドのネイテ [ィブ製品のメリットを理解します](#solution-benefits)。 Experience Manager Assetsにも影響を与え [るクラウドサービスとしてのAEMの注目すべき変更点を確認し](/help/release-notes/aem-cloud-changes.md) 、その後アセットに対する注目すべき変更 [点を確認します](/help/assets/assets-cloud-changes.md)。
 
 新しいアセット機能の詳 [細と既知の問題について](#whats-new-assets) 、以下を [参照します](/help/release-notes/known-issues.md)。 このリリースで削除さ [れた機能のリストを確認し](/help/release-notes/deprecated-removed-features.md) 、近い将来の機能を確認するには [](/help/release-notes/known-issues.md#upcoming-assets-capabilities) 、今後の機能のリストを参照してください。 最後に、この用語集の助けを借りてAEMの用語を理解し [ます](/help/overview/terminology.md)。
 
