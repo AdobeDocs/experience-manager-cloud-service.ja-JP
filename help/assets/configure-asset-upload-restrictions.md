@@ -3,7 +3,7 @@ title: アセットのアップロード制限の設定
 description: Adobe Experience Manager（AEM）Assets の設定でユーザーがアップロードできるアセット（ファイル）のタイプを制限する方法を学習します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ---
 
@@ -17,9 +17,8 @@ Adobe Experience Manager（AEM）Assets の設定で、ユーザーがアップ�
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. To restrict users to upload files of certain MIME types only, unselect the **[!UICONTROL llow all MIME]** option and specify allowed MIME types in the **[!UICONTROL Allowed Asset MIMEs (regex)]** fields using regular expressions.
+1. アップロードを特定の MIME タイプのファイルのみに制限するには、「**[!UICONTROL すべての MIME を許可]**」オプションをオフにして、「**[!UICONTROL 許可されている Asset MIME (regex)]**」フィールドに許可する MIME タイプを正規表現で指定します。
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
-1. Click/tap **[!UICONTROL Save]** to save the changes. 許可されているMIMEタイプにMIME文字列を指定した場合、これらのフィールドで設定されているMIME文字列と一致しないMIMEタイプを持つアセットに対するアップロード操作は失敗します。
-
+1. 「**[!UICONTROL 保存]**」をクリックし、キャンペーンを保存します。許可する MIME タイプに MIME 文字列を指定した場合、これらのフィールドに設定した MIME 文字列と一致しないすべての MIME タイプのアセットでは、アップロード操作が失敗します。
