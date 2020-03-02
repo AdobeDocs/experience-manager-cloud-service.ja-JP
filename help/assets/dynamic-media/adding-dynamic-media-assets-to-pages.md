@@ -2,16 +2,16 @@
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
 translation-type: tm+mt
-source-git-commit: 454f4c9585b575ae0d904292ddd659148393db0b
+source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
 
 ---
 
 
 # ページへの Dynamic Media アセットの追加{#adding-dynamic-media-assets-to-pages}
 
-Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。これをおこなうには、レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加します。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
+Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。これをおこなうには、レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加できます。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
 
-You add Dynamic Media assets directly to the page if you are using AEM as your WCM. If you are using a third-party for your WCM, either [link](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) or [embed](/help/assets/dynamic-media/embed-code.md) your assets. For a responsive third-party web site, see [delivering optimized images to a responsive site](/help/assets/dynamic-media/responsive-site.md).
+AEM を WCM として使用している場合は、Dynamic Media アセットを直接ページに追加します。サードパーティの製品を WCM として使用している場合は、アセットの[リンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)または[埋め込み](/help/assets/dynamic-media/embed-code.md)をおこないます。サードパーティのレスポンシブ Web サイトの場合は、[レスポンシブサイトへの最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Dynamic Media、インタラクティブメディア、パノラマメディア�
 
 Dynamic Media コンポーネントのローカライズの方法は 2 つあります。
 
-* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. ローカライズに使用したい言語を選択します。
+* Sites の Web ページ内で、**[!UICONTROL プロパティ]**&#x200B;を開き、「**[!UICONTROL 詳細]**」タブを選択します。ローカライズに使用したい言語を選択します。
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -70,7 +70,7 @@ Dynamic Media コンポーネントのローカライズの方法は 2 つあり
 
 利用可能な Dynamic Media コンポーネントは次のとおりです。
 
-* **** Dynamic Media - 画像、ビデオ、eCatalog、スピンセットなどのアセットに使用します。
+* **[!UICONTROL Dynamic Media]** - 画像、ビデオ、eCatalog、スピンセットなどのアセットに使用します。
 * **[!UICONTROL インタラクティブメディア]** — インタラクティブビデオ、インタラクティブ画像、カルーセルセットなどのインタラクティブアセットに使用します。
 * **[!UICONTROL パノラマメディア]** — パノラマ画像またはパノラマVR画像アセットに使用します。
 * **[!UICONTROL ビデオ360メディア]** - 360ビデオおよび360 VRビデオアセットに使用します。
@@ -200,7 +200,7 @@ You can edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]
 
    You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL 「縦横比の一致を有効にする]**」 — スマート切り抜きレンディションを選択した場合に、元の画像の縦横比と一致させます。
+* **[!UICONTROL 縦横比の一致を有効にする]**— 元の画像の縦横比に最も適した縦横比を持つスマート切り抜きレンディションをダイナミックメディアに選択させる場合は、このオプションを選択します。
 
 * **[!UICONTROL 「タイトル]**」(Title) — スマート切り抜き画像のタイトルを変更します。
 
@@ -261,7 +261,7 @@ You can edit the following **[!UICONTROL General]** settings by tapping **[!UICO
 * 縦横比が 2:1 である必要があります。
 * キーワードまたは( `equirectangular` +)または(`spherical` + `panorama`)でタグ付けし`spherical``panoramic`ます。 [タグの使用](/help/sites-cloud/authoring/features/tags.md)を参照してください。
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
+縦横比とキーワードの両方の条件が、アセットの詳細ページと「**[!UICONTROL パノラマメディア]**」WCM コンポーネントのパノラマアセットに適用されます。
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ Both the aspect ratio and keyword criteria apply to panoramic assets for the ass
 >* 各インスタンスが同じアセットタイプを使用している。
 >
 >
-Be aware that assigning a different viewer preset to each **[!UICONTROL Panoramic Media]** component on that page is not supported.
+そのページの各&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
 >
 >一方、ページ内で、同じタイプのアセットを使用するすべてのパノラマメディアコンポーネントで同じビューアプリセットを使用することは可能です。
 
