@@ -1,9 +1,9 @@
 ---
-title: 接続されたアセットを使用してAdobe Experience Manager SitesオーサリングワークフローでDAMアセットを共有
-description: 別のExperience Manager siteデプロイメントでWebページを作成する場合は、リモートのAdobe Experience Manager Assetsデプロイメントで使用できるアセットを使用します。
+title: 接続されたアセットを使用して、Adobe Experience Manager SitesオーサリングワークフローでDAMアセットを共有する
+description: 別のExperience Manager SiteデプロイメントでWebページを作成する場合、リモートのAdobe Experience Manager Assetsデプロイメントで使用できるアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b638539dcaee3df8676176c22e1dd0c900b9b65
+source-git-commit: 1bf3f14b5ef1f971997ec8b19ea7bb300dbaaf24
 
 ---
 
@@ -20,22 +20,22 @@ AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイ�
 
 サイト作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、一括でのリモートアセットの移行を検討します。[Assets 移行ガイド](/help/assets/assets-migration-guide.md)を参照してください。
 
-### 前提条件とサポートされるデプロイ {#prerequisites}
+### 前提条件とサポートされている導入 {#prerequisites}
 
 この機能を使用または設定する前に、以下を確認してください。
 
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
-* Adobe Experience Managerの展開タイプでは、サポートされている条件の1つが満たされます。
+* Adobe Experience Managerのデプロイメントタイプでは、サポートされている条件の1つが満たされます。
 
    |  | AEM Sites as a Cloud Service | AMS上のAEM 6.5サイト | AEM 6.5オンプレミスサイト |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | サポート対象 | サポート対象 | サポート対象 |
-   | **AMS上のAEM 6.5アセット** | サポートなし | サポート対象 | サポート対象 |
+   | **AMS上のAEM 6.5アセット** | サポート対象 | サポート対象 | サポート対象 |
    | **AEM 6.5アセットオンプレミス** | サポートなし | サポートなし | サポートなし |
 
 ### サポートされているファイル形式 {#mimetypes}
 
-作成者は、コンテンツファインダーで画像や次の種類のドキュメントを検索し、検索したアセットをページエディターで使用できます。 Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. サポートされる形式のリストを次に示します。
+作成者は、コンテンツファインダーで画像や次の種類のドキュメントを検索し、検索したアセットをページエディターで使用できます。 Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. 次に、サポートされる形式のリストを示します。
 
 * **画像形式**:画像コンポーネントでサポートされてい [る画像形式](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) がサポートされます。 ダイナミックメディアコンポーネントはサポートされていません。
 * **ドキュメントの形式**:詳しくは、接続さ [れたアセットでサポートされるドキュメント形式を参照してくださ](file-format-support.md#supported-document-formats)い。
@@ -44,14 +44,14 @@ AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイ�
 
 この機能の設定や使用に関係する様々な役割と対応するユーザーグループについて、以下で説明します。ローカルスコープは、作成者によって Web ページが作成される使用例のために使用されます。リモートスコープは、必要なアセットをホストするDAMデプロイメントに使用されます。 Sites 作成者は、これらのリモートアセットを取得します。
 
-| ロール | 対象範囲 | ユーザーグループ | ウォークスルーでのユーザー名 | 要件 |
+| ロール | 対象範囲 | ユーザーグループ | ウォークスルーでのユーザ名 | 要件 |
 |----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AEMサイト管理者 | ローカル | AEM管理者 | `admin` | AEM を設定し、リモート Assets デプロイメントとの統合を設定します。 |
 | DAM ユーザー | ローカル | 作成者 | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
-| AEM Sites 作成者 | ローカル | 作成者（リモート DAM での読み取りアクセス権とローカル Sites での作成者アクセス権を持つ） | `ksaner` | エンドユーザーは、この統合を使用してコンテンツの速度を向上させる Sites 作成者です。作成者は、リモートDAMでコンテンツファインダーを使用し、ローカルWebページで必要な画像を使用して、アセットを検索および参照します。 The credentials of `ksaner` DAM user are used. |
-| AEM Assets 管理者 | リモート | AEM 管理者 | `admin` リモートAEM上 | クロスオリジンリソース共有（CORS）を設定します。 |
-| DAM ユーザー | リモート | 作成者 | `ksaner` リモートAEM上 | リモート AEM デプロイメントでの作成者の役割。コンテンツファインダーを使用して Connected Assets 内のアセットを検索／参照します。 |
-| DAM ディストリビューター（テクニカルユーザー） | リモート | パッケージビルダーおよびサイト作成者 | `ksaner` リモートAEM上 | リモートデプロイメント上に存在するこのユーザーは、（Site 作成者役割ではなく）AEM ローカルサーバーによって、Sites 作成者.の代わりにリモートアセットを取得するために使用されます。この役割は、上の 2 つの `ksaner` の役割とは異なり、別のユーザーグループに属しています。 |
+| AEM Sites 作成者 | ローカル | 作成者（リモート DAM での読み取りアクセス権とローカル Sites での作成者アクセス権を持つ） | `ksaner` | エンドユーザーは、この統合を使用してコンテンツの速度を向上させる Sites 作成者です。作成者は、コンテンツファインダーを使用し、ローカルWebページで必要な画像を使用して、リモートDAM内のアセットを検索および参照します。 The credentials of `ksaner` DAM user are used. |
+| AEM Assets 管理者 | リモート | AEM 管理者 | `admin` リモートAEMで | クロスオリジンリソース共有（CORS）を設定します。 |
+| DAM ユーザー | リモート | 作成者 | `ksaner` リモートAEMで | リモート AEM デプロイメントでの作成者の役割。コンテンツファインダーを使用して Connected Assets 内のアセットを検索／参照します。 |
+| DAM ディストリビューター（テクニカルユーザー） | リモート | パッケージビルダーおよびサイト作成者 | `ksaner` リモートAEMで | リモートデプロイメント上に存在するこのユーザーは、（Site 作成者役割ではなく）AEM ローカルサーバーによって、Sites 作成者.の代わりにリモートアセットを取得するために使用されます。この役割は、上の 2 つの `ksaner` の役割とは異なり、別のユーザーグループに属しています。 |
 
 ## Sites デプロイメントと Assets デプロイメント間の接続の設定 {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -75,7 +75,7 @@ Connected Assets とローカル Sites の接続を構成するには、次の�
    1. 「**[!UICONTROL マウントポイント]**」フィールドに、AEM が取得したアセットの格納先となるローカル AEM パスを入力します。For example, `remoteassets` folder.
 
    1. Adjust the values of **[!UICONTROL Original Binary transfer optimization Threshold]** depending on your network. このしきい値より大きいサイズのアセットレンディションは、非同期で転送されます。
-   1. データストアを使用してアセットを保存し、データストアが両方の AEM デプロイメント間に共通のストレージである場合は、「**[!UICONTROL Connected Assets と共有されるデータストア]**」を選択します。この場合、実際のアセットバイナリがデータストアに存在し、転送されないので、しきい値の制限は関係ありません。
+   1. データストアを使用してアセットを保存し、データストアが両方の AEM デプロイメント間に共通のストレージである場合は、「**[!UICONTROL Connected Assets と共有されるデータストア]**」を選択します。この場合、実際のアセットバイナリはデータストアに存在し、転送されないので、しきい値の制限は関係ありません。
    ![Connected Assets の典型的な設定](assets/connected-assets-typical-config.png)
 
    *図：接続されたアセットの一般的な設定*
@@ -113,13 +113,13 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 作成者は、ローカル DAM インスタンスで利用可能なアセットとリモート DAM インスタンスで利用可能なアセットの両方を、単一の Web ページ内で使用できます。コンテンツファインダーを使用すれば、ローカル DAM の検索とリモート DAM の検索を切り替えることができます。
 
-ローカルのサイトインスタンスで使用できる、完全に対応するタグ（同じ分類階層を持つ）を持つリモートアセットのタグのみが取得されます。 その他のタグは破棄されます。 AEMは全文検索を提供するので、作成者はリモートAEMデプロイメントに存在するすべてのタグを使用してリモートアセットを検索できます。
+ローカルのSitesインスタンスで使用できる、完全に対応するタグ（同じ分類階層を持つ）を持つリモートアセットのタグのみが取得されます。 その他のタグは破棄されます。 AEMは全文検索を提供するので、作成者はリモートAEMデプロイメントに存在するすべてのタグを使用してリモートアセットを検索できます。
 
 ### 使用手順 {#walk-through-of-usage}
 
 上記のセットアップを使用してオーサリングエクスペリエンスを試し、機能を理解してください。リモート DAM デプロイメントで、選択したドキュメントまたは画像を使用します。
 
-1. リモートデプロイメントの Assets UI に移動するため、AEM Workspace から&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;にアクセスします。または、ブラウザー `https://[assets_servername_ams]:[port]/assets.html/content/dam` でアクセスします。 選択したアセットをアップロードします。
+1. リモートデプロイメントの Assets UI に移動するため、AEM Workspace から&#x200B;**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;にアクセスします。または、ブラウザーで `https://[assets_servername_ams]:[port]/assets.html/content/dam` アクセスします。 選択したアセットをアップロードします。
 1. Sites インスタンスの右上隅にあるプロファイルアクティベーターで、「**[!UICONTROL 次のユーザーとして操作]**」をクリックします。ユーザー名として `ksaner` を入力し、提供されたオプションを選択し、「**[!UICONTROL OK]**」をクリックします。
 1. **[!UICONTROL サイト]**／**[!UICONTROL We.Retail]**／**[!UICONTROL us]**／**[!UICONTROL en]** で、We.Retail Web サイトページを開きます。ページを編集します。または、ブラウザー `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` でアクセスしてページを編集します。
 
@@ -133,7 +133,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
    ![リモート DAM でアセットを検索するときにドキュメントタイプと画像をフィルタリングするオプション](assets/filetypes_filter_connected_assets.png)
 
-   *図：リモートDAMでアセットを検索する際に、ドキュメントタイプと画像をフィルターするオプション*
+   *図：リモートDAMでアセットを検索する際に、ドキュメントの種類と画像をフィルターするオプション*
 
 1. アセットが非同期で取得され、取得タスクが失敗した場合、サイト作成者に通知されます。オーサリング中またはオーサリング後でも、作成者は[非同期ジョブ](/help/assets/asynchronous-jobs.md)ユーザーインターフェースで取得タスクやエラーについての詳細情報を確認できます。
 
@@ -160,12 +160,12 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * ローカルアセットは、リモートデプロイメントの元のアセットと同期されません。DAM デプロイメント上での編集、削除または権限の失効は、ローカル側には一切伝播されません。
 * ローカルアセットは読み取り専用のコピーです。AEM コンポーネントは、アセットに対して非破壊編集をおこないます。その他のいかなる編集もできません。
 * ローカルで取得されたアセットは、オーサリング用途でのみ使用できます。アセット更新ワークフローの適用やメタデータの編集はおこなえません。
-* 画像とリストされているドキュメント形式のみがサポートされています。 ダイナミックメディアアセット、コンテンツフラグメント、エクスペリエンスフラグメントはサポートされていません。
+* 画像と一覧に表示されるドキュメント形式のみがサポートされます。 ダイナミックメディアアセット、コンテンツフラグメント、エクスペリエンスフラグメントはサポートされていません。
 * メタデータスキーマは取得されません。
 * Sites 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズするための API サポートはありません。
 * この機能は、リモートアセットのシームレスな検索および使用をサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。[Assets 移行ガイド](assets-migration-guide.md)を参照してください。
-* 「画像を選択」をクリックして、ページのプロパティの「サムネール」タブでWebページのサムネ [!UICONTROL ール] としてリモ [!UICONTROL ートアセットを使用] できません 。
+* 「画像を選択」をクリックして、ページのプロパティの「サムネール」タブでWebページのサムネ [!UICONTROL ールと] してリモ [!UICONTROL ートアセットを使用] できません 。
 
 **セットアップとライセンス**
 
@@ -176,7 +176,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 **使用方法**
 
-* サポートされる機能は、リモートアセットを検索し、ローカルページ上のリモートアセットをコンテンツをオーサリングする場合のみです。
+* リモートアセットを検索し、ローカルページ上のリモートアセットをコンテンツを作成するためにドラッグする機能のみがサポートされています。
 * 取得操作は 5 秒でタイムアウトします。アセット取得時、問題が発生する場合があります（ネットワークに問題がある場合など）。Authors can re-attempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Simple edits that are non-destructive and the edit supported via the AEM `Image` component, can be done on fetched assets. アセットは読み取り専用です。
 
