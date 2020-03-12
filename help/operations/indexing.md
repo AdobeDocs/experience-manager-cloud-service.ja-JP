@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: 'コンテンツの検索とインデックス作成 '
 translation-type: tm+mt
-source-git-commit: cec331a8737d8807062046b20f792b1c73e6b22e
+source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 ---
 
@@ -68,6 +68,10 @@ AS NOTE: the above is internal for now.
 上記のサンプルのパッケージは、として構築されま `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`す。
 
 ### 索引定義の配置 {#deploying-index-definitions}
+
+> [!NOTE]
+>
+> Jackrabbit Filevault Mavenパッケージプラグインのバージョン **1.1.0には既知の問題があり** 、のモジュールに追加できな `oak:index` い問題があります `<packageType>application</packageType>`。 この問題に対処するには、バージョン1.0.4 **を使用してください**。
 
 インデックス定義は、カスタムおよびバージョン管理としてマークされるようになりました。
 
