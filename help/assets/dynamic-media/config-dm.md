@@ -2,7 +2,7 @@
 title: ダイナミックメディアクラウドサービスの設定
 description: Adobe Experience Manager Cloud Serviceでダイナミックメディアを設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: ad621c24e58fba6bcc873e36544505cc50385509
+source-git-commit: 91f1a7c89b3c3122a0d1cd3fde4a45c16bcff317
 
 ---
 
@@ -72,7 +72,7 @@ Dynamic Media クラウドサービスを設定するには：
    * **[!UICONTROL すべてのコンテンツを同期]** — デフォルトで選択されています。 ダイナミックメディアとの同期にアセットを選択的に含めるか除外する場合は、このオプションの選択を解除します。 このオプションの選択を解除すると、次の2つのダイナミックメディア同期モードから選択できます。
 
    * **[!UICONTROL ダイナミックメディア同期モード]**
-      * **[!UICONTROL 有効(デフォルト]** ) — フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL デフォルトで有効]** — フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL デフォルトで無効]** — 選択したフォルダーをダイナミックメディアと同期するように明示的にマークするまで、設定はどのフォルダーにも適用されません。
 選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーの「プロパティ」ページを開きます。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
          * **[!UICONTROL 継承]** — フォルダーに明示的な同期値がありません。代わりに、フォルダーは、上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された番組の詳細なステータスは、ツールヒントを通じて表示されます。
