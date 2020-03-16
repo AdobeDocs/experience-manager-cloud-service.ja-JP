@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: '完了予定 '
 translation-type: tm+mt
-source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
+source-git-commit: a95944055d74a14b2b35649105f284df6afc7e7b
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 9777dd5772ab443b5b3dabbc74ed0d362e52df60
 
 AEMでクラウドサービスとして実行するコードは、常にクラスター内で実行されていることを認識している必要があります。 つまり、常に複数のインスタンスが実行されています。 コードは、特にインスタンスがいつでも停止する可能性があるので、回復力が必要です。
 
-AEMをクラウドサービスとして更新する際に、古いコードと新しいコードが並行して実行されるインスタンスが発生します。 したがって、古いコードは新しいコードで作成されたコンテンツと区別できず、新しいコードは古いコンテンツを処理できる必要があります。
+AEMをクラウドサービスとして更新する際に、古いコードと新しいコードが並行して実行されるインスタンスがあります。 したがって、古いコードは新しいコードで作成されたコンテンツと区別できず、新しいコードは古いコンテンツを処理できる必要があります。
 <!--
 
 >[!NOTE]
@@ -47,7 +47,7 @@ Sling Commons Schedulerは、実行を保証できないので、スケジュー
 
 ## 送信HTTP接続 {#outgoing-http-connections}
 
-発信HTTP接続では、適切な接続と読み取りのタイムアウトを設定することを強くお勧めします。 これらのタイムアウトを適用しないコードの場合、AEM上でクラウドサービスとして実行されるAEMインスタンスは、グローバルタイムアウトを強制します。 これらのタイムアウト値は、接続呼び出しの場合は10秒、次の一般的なJavaライブラリで使用される接続の場合は60秒です。
+発信HTTP接続では、適切な接続と読み取りのタイムアウトを設定することを強くお勧めします。 これらのタイムアウトを適用しないコードの場合、AEM上でクラウドサービスとして実行されているAEMインスタンスは、グローバルタイムアウトを強制します。 これらのタイムアウト値は、接続呼び出しの場合は10秒、次の一般的なJavaライブラリで使用される接続の場合は60秒です。
 
 HTTP接続を行う場合は、提供されている [Apache HttpComponents Client 4.xライブラリを使用する](https://hc.apache.org/httpcomponents-client-ga/) ことをお勧めします。
 
@@ -83,10 +83,31 @@ HTTP接続を行う場合は、提供されている [Apache HttpComponents Clie
 
 ### ログ {#logs}
 
-* ローカル開発の場合、ログエントリはローカルファイルに書き込まれます
-   * `./crx-quickstart/logs`
-* Cloud環境では、開発者はCloud Managerを使用してログをダウンロードするか、コマンドラインツールを使用してログの末尾に配置することができます。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
-* Cloud環境のログレベルを変更するには、Sling Logging OSGIの設定を変更し、その後完全な再デプロイを行う必要があります。 これは即座に行われるわけではないので、大量のトラフィックを受け取る実稼働環境で詳細なログを有効にする場合は注意が必要です。 今後、ログレベルをより迅速に変更するメカニズムが生じる可能性があります。
+ローカル開発の場合、ログエントリはフォルダー内のローカルファイルに書き込ま `/crx-quickstart/logs` れます。
+
+Cloud環境では、開発者はCloud Managerを使用してログをダウンロードするか、コマンドラインツールを使用してログの末尾に配置することができます。 <!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**ログレベルの設定**
+
+Cloud環境のログレベルを変更するには、Sling Logging OSGIの設定を変更し、その後完全な再デプロイを行う必要があります。 これは即座に行われるわけではないので、大量のトラフィックを受け取る実稼働環境で詳細なログを有効にする場合は注意が必要です。 今後、ログレベルをより迅速に変更するメカニズムが生じる可能性があります。
+
+**デバッグログレベルのアクティベート**
+
+デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。デバッグログレベルをアクティベートするには、CRX Explorer を使用して次のプロパティを設定します。
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+このプロパティを debug に設定してください。多くのログが生成されるので、デバッグログレベルのログを不必要に長く残さないでください。デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+ログレベルは次のとおりです。
+
+| 0 | 重大なエラー | アクションが失敗し、インストーラーの処理を続行できません。 |
+|---|---|---|
+| 1 | エラー | アクションが失敗しました。インストールは続行しますが、CRX の一部が正常にインストールされなかったので、機能しません。 |
+| 2 | 警告 | アクションは成功しましたが、問題が発生しました。CRX が正常に機能するかどうかは不明です。 |
+| 3 | 情報 | アクションが成功しました。 |
 
 ### Thread Dumps {#thread-dumps}
 
