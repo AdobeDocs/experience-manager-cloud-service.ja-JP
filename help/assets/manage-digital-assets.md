@@ -4,14 +4,14 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
 # Manage assets {#manage-assets}
 
-この記事では、Adobe Experience Manager(AEM)Assetsでアセットを管理および編集する方法について説明します。 コンテンツフラグメントを管理するには、「コンテンツフラグメ [ントアセット](content-fragments/content-fragments.md) 」を参照してください。
+この記事では、Adobe Experience Manager(AEM)Assetsでアセットを管理および編集する方法について説明します。 コンテンツフラグメントを管理する方法については、「コンテ [ンツフラグメント](content-fragments/content-fragments.md) 」アセットを参照してください。
 
 ## フォルダーの作成 {#creating-folders}
 
@@ -65,7 +65,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. アクティベートを解除する日付は、アセットに設定されたアクティベート日より後の日付にしてください。オフ時間の後 [!UICONTROL は]、アセットとそのレンディションは、アセットWebインターフェイスまたはHTTP API経由では使用できません。
+1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. アクティベートを解除する日付は、アセットに設定されたアクティベート日より後の日付にしてください。「オフ」の [!UICONTROL 後は]、アセットとそのレンディションは、アセットWebインターフェイスまたはHTTP API経由では使用できなくなります。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -75,7 +75,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
    >[!NOTE]
    >
-   >タグを作成するには、CRXリポジトリのパスでの書き込み権 `/content/cq:tags/default` 限が必要です。
+   >タグを作成するには、CRXリポジトリのパスでの書き込み `/content/cq:tags/default` 権限が必要です。
 
 1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
 
@@ -96,7 +96,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 アセットの特定のコピーに一意に関連付けられる属性は継承されません。例えば、以下のものが該当します。
 
-* アセットID、作成日時、バージョンおよびバージョン履歴。 Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
+* アセットID、作成日時、バージョンとバージョン履歴。 Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * 作成時間と参照パスは、各アセットとその各レンディションに対して一意です。
 
@@ -230,7 +230,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
       * アセットに参照がある場合は、「**1 つ以上のアセットが参照されています。**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
    >[!NOTE]
    >
-   >アセットを削除するには、dam/assetに対する削除権限が必要です。 変更権限のみ付与されている場合、アセットのメタデータの編集とアセットへの注釈の追加のみが可能で、アセットやそのメタデータの削除は実行できません。
+   >アセットを削除するには、dam/assetの削除権限が必要です。 変更権限のみ付与されている場合、アセットのメタデータの編集とアセットへの注釈の追加のみが可能で、アセットやそのメタデータの削除は実行できません。
 
    >[!NOTE]
    >
@@ -251,7 +251,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 >For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 -->
 
-1. 公開するアセットまたはフォルダーの場所に移動します。
+1. 公開するアセットまたはフォルダの場所に移動します。
 
 1. アセットカードで&#x200B;**[!UICONTROL 公開]**&#x200B;クイックアクションを選択するか、アセットを選択し、ツールバーの「**[!UICONTROL クイック公開]**」アイコンをタップまたはクリックします。
 1. アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。表示されるのは、非公開の参照か、最後に公開または非公開にされた後に変更された参照だけです。公開する参照を選択します。
@@ -286,10 +286,10 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 1. 確認ダイアログで、次のいずれかをタップまたはクリックします。
 
    * **[!UICONTROL キャンセル]**：アクションを停止します。
-   * **[!UICONTROL 「非公開]** 」を選択すると、指定した日にアセットが非公開（公開環境で使用できなくなった）になることを確認できます。
+   * **[!UICONTROL 非公開]** ：指定した日にアセットが非公開（公開環境で使用できなくなった）であることを確認します。
    >[!NOTE]
    >
-   >複雑なアセットの公開を取り消す場合は、アセットのみ公開を取り消します。 参照は、他の公開済みアセットによって参照される可能性があるので、公開を取り消さないでください。
+   >複雑なアセットの公開を取り消す場合は、アセットのみの公開を取り消します。 参照は、他の公開済みアセットによって参照される可能性があるので、公開の取り消しは避けてください。
 
 ## Closed user group {#closed-user-group}
 
@@ -396,9 +396,9 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 ## 注釈 {#annotating}
 
-注釈とは、画像やビデオに追加するコメントまたは注記です。注釈を使用すると、マーケターはアセットに関する共同作業やフィードバックの送信を行うことができます。
+注釈とは、画像やビデオに追加するコメントまたは注記です。注釈を使用すると、マーケターはアセットに関する共同作業やフィードバックを残すことができます。
 
-ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。AEM Assetsがサポートするビデオ形式は、ブラウザーによって異なります。
+ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。AEM Assetsでサポートされるビデオ形式は、ブラウザーによって異なります。
 
 >[!NOTE]
 >
@@ -415,130 +415,131 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-1. 注釈についてユーザーに通知するには、ユーザーの電子メールアドレスを指定して、コメントを追加します。例えば、注釈について Aaron MacDonald というユーザーに通知するには、@aa と入力します。一致するすべてのユーザーに関するヒントがリストに表示されます。Aaron の電子メールアドレスをリストから選択し、コメントを使用してタグ付けします。同様に、注釈内の任意の場所、またはコメントの前後で追加のユーザーにタグ付けできます。
+<!--
+1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
    >[!NOTE]
    >
-   >For a non-administrator user, suggestions appear only if the user has Read permissions at */home* in Crx-de.
+   >For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
-1. 注釈を追加したら、「**[!UICONTROL 追加]**」をクリックして注釈を保存します。注釈に関する通知が Aaron に送信されます。
+1. After adding the annotation, click **[!UICONTROL Add]** to save it. A notification for the annotation is sent to Aaron.
 
    ![chlimage_1-236](assets/chlimage_1-236.png)
 
    >[!NOTE]
    >
-   >複数の注釈を追加してから、それらを保存できます。
+   >You can add multiple annotations, before you save them.
 
-1. 「**[!UICONTROL 閉じる]**」をタップまたはクリックして注釈モードを終了します。
-1. To view the notification, log in to AEM Assets with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. Tap/click **[!UICONTROL Close]** to exit from the Annotation mode.
+1. To view the notification, log in to AEM Assets with Aaron MacDonald's credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
-   >注釈はビデオアセットにも追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。For details, see [managing video assets](manage-video-assets.md).
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](manage-video-assets.md).
 
-1. 別の色を選択してユーザーを区別できるようにするには、プロフィールアイコンをクリックまたはタップし、「**[!UICONTROL 環境設定]**」をクリックまたはタップします。
+1. To choose a different color so you can differentiate between users, click/tap the Profile icon and click/tap **[!UICONTROL My Preferences]**.
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   **[!UICONTROL 注釈カラー]**&#x200B;ボックスに必要な色を指定し、「**[!UICONTROL 確定]**」をクリックまたはタップします。
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
 >[!NOTE]
 >
->コレクションにも注釈を追加できます。ただし、コレクションに子コレクションが含まれる場合、親コレクションに対してのみ注釈／コメントを追加できます。「注釈」オプションは子コレクションでは使用できません。
+>You can also add annotations to a collection. However, if a collection contains child collections, you can add annotations/comments to the parent collection only. The Annotate option is not available for child collections.
 
-### 保存された注釈の表示 {#viewing-saved-annotations}
+### View saved annotations {#viewing-saved-annotations}
 
-1. アセットに対して保存された注釈を表示するには、アセットの場所に移動して、そのアセットのアセットページを開きます。
+1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
 
 1. Tap/click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
    ![chlimage_1-239](assets/chlimage_1-239.png)
 
-1. タイムラインの「**[!UICONTROL すべて表示]**」のリストから「**[!UICONTROL コメント]**」を選択し、注釈に基づいて結果にフィルターを適用します。
+1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
-   **[!UICONTROL タイムライン]**&#x200B;パネルでコメントをタップまたはクリックし、対応する画像の注釈を表示します。
+   Tap/click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
-   特定のコメントを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
+   Tap/click **[!UICONTROL Delete]**, to delete a particular comment.
 
-### 注釈の印刷 {#printing-annotations}
+### Print annotations {#printing-annotations}
 
-アセットに注釈が含まれている場合や、アセットがレビューワークフローの対象となっている場合は、注釈と共にアセットを印刷し、オフラインレビュー用のPDFファイルとしてステータスをレビューできます。
+If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
-注釈またはレビューステータスのみ印刷することも選択できます。
+You can also choose to print only the annotations or review status.
 
-注釈とレビューステータスを印刷するには、**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックし、ウィザードの指示に従ってください。The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+To print the annotations and review status, tap/click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
-1. Assets UI から、アセットのプレビューページを開きます。
-1. 次のいずれかの操作をおこないます。
+1. From the Assets UI, open the preview page for an asset.
+1. Do one of the following:
 
-   * すべての注釈とレビューステータスを印刷するには、手順 3 をスキップして手順 4 に直接進みます。
-   * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
+    * To print all the annotations and the review status, skip step 3 and directly go to step 4.
+    * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
 
-1. 特定の注釈を印刷するには、タイムラインから注釈を選択します。
+1. To print specific annotations, select the annotations from the timeline.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   レビューステータスのみを印刷するには、タイムラインからレビューステータスを選択します。
+   To print the review status only, select it from the timeline.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
-1. ツールバーの&#x200B;**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックします。
+1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. 印刷ダイアログから、「注釈／レビューステータス」を PDF のどこに表示したいかを選択します。For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. デフォルトで選択されています。
+1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
-   印刷する PDF のどこに注釈／ステータスを表示するかに応じて、別の設定も選択できます。印刷されるアセットとは別のページに注釈／ステータスを表示したい場合、「**[!UICONTROL 次のページ]**」を選択します。
+   You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
    >[!NOTE]
    >
-   >長い注釈は PDF ファイルに適切にレンダリングされない可能性があります。最適なレンダリングのために、注釈を 50 語以内に制限することをお勧めします。
+   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
 
-1. 「**[!UICONTROL 印刷]**」をタップまたはクリックします。手順 2 で選択したオプションに応じて、生成される PDF の特定の位置に注釈／ステータスが表示されます。例えば、注釈とレビューステータスの両方を「**左上**」設定を使用して印刷することを選択した場合、生成される PDF ファイルは次のようになります。
+1. Tap/click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. 右上のオプションを使用して PDF をダウンロードまたは印刷します。
+1. Download or print the PDF using the options at the top-right.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   レンダリングされた PDF ファイルの外観を変更するには、Configuration Manager から&#x200B;**[!UICONTROL 注釈 PDF の設定]**&#x200B;を開き、必要なオプションを変更します。例えば、コメントとステータスのフォントカラー、サイズ、スタイル、背景色を変更できます。例えば、承認済みステータスの表示色を変更したり、対応フィールドのカラーコードを変更したりします。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
+   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-digital-assets.md#annotating).
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
-   レンダリングされた PDF ファイルに戻り、更新します。更新された PDF に、変更が反映されています。
+   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
 
 ## Asset versioning {#asset-versioning}
 
-バージョン管理では、特定の時点でのデジタルアセットのスナップショットが作成されます。バージョン管理を使用すると、後で、以前の状態にアセットを復元できます。例えば、アセットに対しておこなった変更を取り消したい場合、バージョン管理を使用して未編集のバージョンにアセットを復元できます。
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset.
 
-バージョンを作成するシナリオは次のとおりです。
+The following are scenarios where you create versions:
 
-* 別のアプリケーションで画像を変更し、AEM Assets にアップロードします。元の画像が上書きされないように画像のバージョンが作成されます。
-* アセットのメタデータを編集します。
-* AEMデスクトップアプリを使用して、既存のアセットをチェックアウトし、変更を保存します。 アセットが保存されるたびに、新しいバージョンが作成されます。
+* You modify an image in a different application and upload to AEM Assets. A version of the image is created so your original image is not overwritten.
+* You edit the metadata of an asset.
+* You use AEM desktop app to checkout an existing asset and save your changes. A new version is created everytime the asset is saved.
 
-また、ワークフローを使用して、自動バージョン管理を有効にすることもできます。アセットのバージョンを作成すると、メタデータとレンディションがバージョンと共に保存されます。 レンディションによって、同じ画像の代替となる画像が表示されます（例えば、アップロードされた JPEG ファイルの PNG レンディション）。
+You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
-バージョン管理機能を使用すると、次の操作を実行できます。
+The versioning functionality lets you do the following:
 
-* アセットのバージョンを作成する。
-* アセットの現在のリビジョンを表示する。
-* 以前のバージョンにアセットを復元する。
+* Create a version of an asset.
+* View the current revision for an asset.
+* Restore the asset to a previous version.
 
-1. バージョンを作成するアセットの場所に移動し、アセットをタップまたはクリックしてそのアセットのページを開きます。
+1. Navigate to the location of the asset for which you want to create a version, and tap/click it to open its asset page.
 
-1. グローバルナビゲーションアイコンをタップまたはクリックし、メニューから「**[!UICONTROL タイムライン]**」を選択します。
+1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu.
 
    ![timeline](assets/timeline.png)
 
@@ -546,7 +547,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
-1. 「**[!UICONTROL 保存するバージョン]**」をタップまたはクリックして、アセットのバージョンを作成します。
+1. Tap/click **[!UICONTROL Save as Version]** to create a version for the asset.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
@@ -554,31 +555,31 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. 新しいバージョンを表示するには、アセットの詳細ページまたは Assets UI からタイムラインの「**[!UICONTROL すべて表示]**」リストを開き、「**[!UICONTROL バージョン]**」を選択します。アセット用に作成したすべてのバージョンが「タイムライン」タブに表示されます。リストにフィルターを適用して「バージョン」表示できます。そのためには、下向きの矢印をクリックして、リストから「**[!UICONTROL バージョン]**」を選択します。
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. All versions created for an asset are listed under the timeline tab. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
    ![versions_option](assets/versions_option.png)
 
-1. アセットの特定のバージョンを選択してプレビューするか、Assets UI に表示されるように設定します。
+1. Select a specific version for the asset to preview it or enable it to appear in the Assets UI.
 
    ![select_version](assets/select_version.png)
 
-1. Assets UI で特定のバージョンに戻すバージョンに、ラベルとコメントを追加します。
+1. Add a label and comment for the version to revert to the particular version in the Assets UI.
 
    ![save_version](assets/save_version.png)
 
-1. バージョンのプレビューを生成するには、「**[!UICONTROL バージョンをプレビュー]**」をタップまたはクリックします。
+1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
 1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
-1. 2 つのバージョンを比較するには、アセットのアセットページに移動し、現在のバージョンと比較するバージョンをタップまたはクリックします。
+1. To compare between two versions, go to asset page of the asset and tap/click the version to be compared with the current version.
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
 
-1. タイムラインで、比較するバージョンを選択し、スライダーを左にドラッグして、現在のバージョンの上にこのバージョンを重ねて表示して比較します。
+1. From the timeline, select the version you want to compare and drag the slider to the left to superimpose this version over the current version and compare.
 
    ![compare_versions](assets/compare_versions.png)
 
 ### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-1. ワークフローを開始するアセットの場所に移動し、アセットをタップまたはクリックしてそのアセットのページを開きます。
+1. Navigate to the location of the asset for which you want to start a workflow, and tap/click the asset to open the asset page.
 1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
 
    ![timeline-1](assets/timeline-1.png)
@@ -591,23 +592,23 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
-1. **[!UICONTROL ワークフローを開始]**&#x200B;ダイアログで、リストからワークフローモデルを選択します。
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. （オプション）ワークフローインスタンスを参照するために使用するワークフローのタイトルを指定します。
+1. (Optional) Specify a title for the workflow, which can be used to reference the workflow instance.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. ダイアログで、「**[!UICONTROL 開始]**」をタップまたはクリックし、次に「**[!UICONTROL 続行]**」をタップまたはクリックして確定します。ワークフローの各ステップは、タイムラインにイベントとして表示されます。
+1. Tap/click **[!UICONTROL Start]** and then tap/click **[!UICONTROL Proceed]** in the dialog to confirm. Each step of workflow is displayed in the timeline as an event.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-## コレクション {#collections}
+## Collections {#collections}
 
-コレクションとは、一連のアセットを順序よく並べたものです。コレクションを使用して、ユーザー間でアセットを共有します。
+A collection is an ordered set of assets. Use collections to share assets between users.
 
-* 1 つのコレクションにはアセットへの参照のみが含まれるので、様々な場所のアセットを含めることができます。各コレクションは、アセットの参照整合性を維持します。
-* コレクションは、権限レベル（編集、表示など）の異なる複数のユーザー間で共有できます。
+* A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
+* You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
 See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
