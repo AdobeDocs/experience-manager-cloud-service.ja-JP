@@ -3,16 +3,14 @@ title: アセットインサイト
 description: アセットインサイト機能を使用して、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザーのレーティングと使用状況統計を追跡する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
-# アセットインサイト{#asset-insights}
+# アセットインサイト {#asset-insights}
 
-<!-- TBD: Add uicontrol tags  -->
-
-アセットインサイト機能を使用すると、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザーのレーティングと使用状況統計を追跡できます。画像のパフォーマンスと人気に関するインサイトを導き出せます。
+Asset Insightsは、サードパーティWebサイト、マーケティングキャンペーンおよびアドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況の統計を追跡します。 これは、画像のパフォーマンスと人気に関する洞察を提供します。
 
 アセットインサイトでは、画像の評価回数、クリック数、インプレッション数（画像が Web サイトに読み込まれた回数）など、ユーザーのアクティビティの詳細を取得します。これらの統計に基づいて画像にスコアを割り当てます。 スコアとパフォーマンス統計を使用して、人気のある画像を選択し、カタログやマーケティングキャンペーンなどに含めることができます。 このような統計に基づいて、アーカイブやライセンス更新のポリシーを策定することさえできます。
 
@@ -38,17 +36,17 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 1. Review the **[!UICONTROL Usage Statistics]** section to know which entities the asset was part of and which creative solutions recently used it. 使用率が高いほど、ユーザーの間で人気のあるアセットであることを意味します。使用状況データは、次の見出しの下に表示されます。
 
-   * **アセット**：アセットが、コレクションまたは複合アセットに含まれた回数
-   * **Webおよびモバイル**:アセットがWebサイトやアプリの一部であった回数
-   * **ソーシャル**：アセットが Adobe Social や Adobe Campaign などのソリューションで使用された回数
-   * **電子メール**：アセットが電子メールキャンペーンで使用された回数
+   * **[!UICONTROL アセット]**：アセットが、コレクションまたは複合アセットに含まれた回数.
+   * **[!UICONTROL Webおよびモバイル]**:アセットがWebサイトやアプリの一部であった回数。
+   * **[!UICONTROL ソーシャル]**：アセットが Adobe Social や Adobe Campaign などのソリューションで使用された回数.
+   * **[!UICONTROL 電子メール]**：アセットが電子メールキャンペーンで使用された回数.
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
    >通常、アセットインサイト機能は、Adobe Analyticsからソリューションデータを定期的に取得するので、「ソリューション」セクションには最新のデータが表示されない場合があります。 表示されるデータが対応する期間は、アセットインサイトが Analytics のデータを取得するために実行するフェッチ操作のスケジュールによって決まります。
 
-1. 特定の期間のアセットのパフォーマンス統計をグラフィカルに表示するには、「**[!UICONTROL パフォーマンス統計]**」セクションで期間を選択します。クリック数やインプレッション数を含む詳細は、グラフのトレンドラインとして表示されます。
+1. 特定の期間のアセットのパフォーマンス統計をグラフィカルに表示するには、「**[!UICONTROL パフォーマンス統計]**」セクションで期間を選択します。クリック数やインプレッション数などの詳細がグラフの傾向線として表示されます。
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -72,7 +70,7 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 アセットインサイトは、Adobe Analytics レポートスイートから定期的にアセットの使用状況データをフェッチします。デフォルトでは、アセットインサイトはデータをフェッチするためのバックグラウンドジョブを 24 時間おきに午前 2 時に実行します。この間隔と時刻は、「**[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]**」サービスを Web コンソールで設定して変更できます。
 
-1. Tap the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -95,6 +93,7 @@ Adobe Experience Manager（AEM）Assets は、サードパーティの Web サ�
 1. ウィザードで、データセンターを選択し、会社名、ユーザー名、共有暗号鍵などの資格情報を指定します。
 
    ![AEM のアセットインサイト用に Adobe Analytics を設定する](assets/insights_config2.png)
+
    *図：AEMでのアセットインサイト用のAdobe Analyticsの設定*
 
 1. 「**[!UICONTROL 認証]**」をクリックまたはタップします。AEM によって資格情報が認証されたら、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータをフェッチする Adobe Analytics レポートスイートを選択します。「**[!UICONTROL 追加]**」をクリックします。
@@ -108,7 +107,7 @@ Adobe Analyticsアカウントを設定すると、ページトラッカーコ�
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. From the **[!UICONTROL Navigation]** page, click the **[!UICONTROL Insights Page Tracker]** card.
+1. **[!UICONTROL ナビゲーション]**&#x200B;ページで、「**[!UICONTROL インサイトページトラッカー]**」カードをクリックします。
 1. Click **[!UICONTROL Download]** to download the page tracker code.
 
 <!--
