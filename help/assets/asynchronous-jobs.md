@@ -3,7 +3,7 @@ title: 非同期操作
 description: AEM Assets では、リソースを集中的に消費する一部のタスクを非同期的に処理することでパフォーマンスを最適化します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manger（AEM）Assets では、パフォーマンスを悪化�
 * 多数のアセットの削除
 * 多数の参照を含む複数のアセットまたはアセットの移動
 * アセットメタデータの一括での書き出しまたは読み込み
-* リモートAEMデプロイメントから、設定されたしきい値を超えるアセットを取得しています。
+* リモートAEMデプロイメントから、設定されたしきい値を超えるアセットを取得します。
 
 非同期処理では複数のジョブがエンキューされ、システムリソースの可用性に応じた順序でジョブが実行されます。
 
@@ -29,7 +29,7 @@ You can view the status of asynchronous jobs from the **[!UICONTROL Async Job St
 
 ## 非同期操作のステータスの監視 {#monitoring-the-status-of-asynchronous-operations}
 
-AEM Assets で非同期的に操作がおこなわれると、インボックスと電子メールに通知が届きます。
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 To view the status of the asynchronous operations in detail, navigate to the **[!UICONTROL Async Job Status]** page.
 
@@ -44,7 +44,7 @@ To view the status of the asynchronous operations in detail, navigate to the **[
 
    **[!UICONTROL 成功]**：操作は完了しました。
 
-   **[!UICONTROL 失敗**[!UICONTROL &#x200B;または&#x200B;]**エラー]**：操作を処理できませんでした。
+   **[!UICONTROL 失敗]**&#x200B;または&#x200B;**[!UICONTROL エラー]**：操作を処理できませんでした。
 
    **[!UICONTROL スケジュール済み]**：操作は後で処理するためにスケジュールされています。
 
@@ -72,9 +72,9 @@ AEM Assets は、毎日午前 1 時にパージジョブを実行して、1 日�
 
 パージジョブのスケジュールと、完了済みジョブの詳細を削除するまでの保持期間を変更できます。また、任意の時点での詳細を保持する、完了済みジョブの最大数を設定することもできます。
 
-1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 運営]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
+1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** job.
-1. 完了したジョブが削除されてからのしきい値と、詳細が履歴に保持されるジョブの最大数を指定します。
+1. 完了したジョブが削除されてからの日数と、履歴に詳細が保持されるジョブの最大数を指定します。
 
    ![非同期ジョブのパージをスケジュールするための設定](assets/configmgr_purge_asyncjobs.png)
    *図：非同期ジョブの削除をスケジュールする設定*
@@ -89,7 +89,7 @@ AEM Assets が特定の操作を非同期的に処理する際の、アセット
 
 削除するアセットまたはフォルダーの数がしきい値を超えると、削除操作が非同期的に実行されます。
 
-1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 運営]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
+1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 1. From the web console, open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets]** box, specify the threshold number of assets/folders for asynchronous processing of delete operations.
 
@@ -101,7 +101,7 @@ AEM Assets が特定の操作を非同期的に処理する際の、アセット
 
 移動するアセットやフォルダーまたは参照の数がしきい値を超えると、移動操作が非同期的に実行されます。
 
-1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 運営]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
+1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 操作]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 1. From the web console, open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
 1. In the **[!UICONTROL Threshold number of assets/references]** box, specify the threshold number of assets/folders or references for asynchronous processing of move operations.
 
