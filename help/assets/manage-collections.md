@@ -4,14 +4,14 @@ description: Adobe Experience Manager Assetsでのコレクションの概念を
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
 # コレクションの管理 {#manage-collections}
 
-コレクションは、Adobe Experience Manager Assets内のアセットのセットです。 コレクションを使用して、ユーザー間でアセットを共有します。セットは、静的コレクションまたは検索結果に基づく動的コレクションにすることができます。
+コレクションとは、Adobe Experience Manager Assets内のアセットのセットです。 コレクションを使用して、ユーザー間でアセットを共有します。セットは、静的コレクションまたは検索結果に基づく動的コレクションにすることができます。
 
 フォルダーとは異なり、コレクションには異なる場所のアセットを含めることができます。 異なるレベルの権限（表示、編集など）が割り当てられている様々なユーザーとコレクションを共有できます。
 
@@ -19,7 +19,7 @@ source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
 
 コレクションは、アセットを照合する方法に基づいて次のタイプに分かれます。
 
-* アセット、フォルダーおよび他のコレクションの静的参照リストを含むコレクションです。
+* アセット、フォルダー、その他のコレクションの静的参照リストを含むコレクションです。
 
 * 検索条件に基づいてアセットを動的に含めるスマートコレクション。
 
@@ -51,7 +51,7 @@ You can create a collection either with [static references](#create-a-collection
 
    >[!NOTE]
    >
-   >Experience Manager Assetsでは、アセットフォルダーのレビュータスクを作成するのと同じ方法で、コレクションのレビュータスクを作成できます。
+   >Experience Manager Assetsでは、アセットフォルダーのレビュータスクを作成する方法と同様に、コレクションのレビュータスクを作成できます。
 
    コレクションにアセットを追加するには、Assets ユーザーインターフェイスに移動します。For details, see [Add assets to a collection](#add-assets-to-a-collection).
 
@@ -157,7 +157,7 @@ The Search feature within Collections supports both [Search for collections](#se
 
 ## コレクションの削除 {#delete-a-collection}
 
-1. コレクションコンソールから、1つ以上のコレクションを選択し、ツールバーの削除アイコンをタップまたはクリックします。
+1. コレクションコンソールで、1つ以上のコレクションを選択し、ツールバーの削除アイコンをタップまたはクリックします。
 1. In the dialog, tap/click **[!UICONTROL Delete]** to confirm the delete action.
 
    >[!NOTE]
@@ -170,19 +170,19 @@ The Search feature within Collections supports both [Search for collections](#se
 
 1. コレクションコンソールから、ダウンロードする 1 つ以上のコレクションを選択します。
 1. ツールバーで、ダウンロードアイコンをタップまたはクリックします。
-1. **[!UICONTROL ダウンロード]**&#x200B;ダイアログで、「**[!UICONTROL ダウンロード]**」をタップまたはクリックします。コレクション内のアセットのレンディションをダウンロードする場合は、「**[!UICONTROL レンディション]**」を選択します。コレクションの所有者に電子メールで通知を送信するには、「**[!UICONTROL 電子メール]**」オプションを選択します。
+1. **[!UICONTROL ダウンロード]**&#x200B;ダイアログで、「**[!UICONTROL ダウンロード]**」をタップまたはクリックします。コレクション内のアセットのレンディションをダウンロードする場合は、「**[!UICONTROL レンディション]**」を選択します。<!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    ダウンロードするコレクションを選択すると、そのコレクションの下位のフォルダーの階層全体がダウンロードされます。To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
 
 ## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
 
-Adobe Enterprise Manager (AEM) Assetsを使用すると、多くのコレクションのメタデータを一括で編集できます。 プロパティペ [!UICONTROL ージを使用して] 、複数のコレクションに対してメタデータの変更を実行します。例えば、メタデータのプロパティを共通の値に変更したり、タグを追加または変更したりします。
+Adobe Enterprise Manager (AEM) Assetsを使用すると、多数のコレクションのメタデータを一括で編集できます。 プロパティペ [!UICONTROL ージを使用して] 、複数のコレクションに対してメタデータの変更を実行します。例えば、メタデータのプロパティを共通の値に変更したり、タグを追加または変更したりします。
 
 To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
 
 >[!NOTE]
 >
->バルク編集方法は、コレクションで使用可能なアセットに対して機能します。 フォルダー全体で使用可能なアセットまたは共通の基準に一致するアセットについては、[検索後にメタデータを一括更新する](/help/assets/search-assets.md#metadataupdates)ことが可能です。
+>バルク編集方法は、コレクションで使用できるアセットに対して機能します。 フォルダー全体で使用可能なアセットまたは共通の基準に一致するアセットについては、[検索後にメタデータを一括更新する](/help/assets/search-assets.md#metadataupdates)ことが可能です。
 
 1. コレクションコンソールから、編集するコレクションを選択します。
 1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected collections.
