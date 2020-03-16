@@ -3,7 +3,7 @@ title: Adobe Experience Manager AssetsのDigital Rights Management
 description: AEM でライセンスされているアセットの状態と有効期限の情報を管理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
@@ -16,12 +16,12 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 アセットの有効期限は、アセットのライセンス要件を徹底する有効な方法です。公開済みアセットの有効期限が切れたらアセットを非公開にすることで、ライセンス違反が発生する可能性を回避します。管理者権限のないユーザーは、有効期限切れのアセットを編集、コピー、移動、公開、ダウンロードできません。
 
-アセットの有効期限ステータスは、次の場所で確認できます。
+アセットの有効期限ステータスは、次の場所で表示できます。
 
-* **カード表示**:期限切れアセットの場合、カードのフラグは有効期限切れであることを示します。
-* **リスト表示**:期限切れのアセットの場合、「 **[!UICONTROL Status]** 」列に期限切れのバナーが表 **[!UICONTROL 示されます]** 。
+* **カード表示**:期限切れのアセットの場合、カード上のフラグは有効期限切れであることを示します。
+* **リスト表示**:期限切れのアセットの場合、「ステ **[!UICONTROL ータス]** 」列に期限切れのバナーが表 **[!UICONTROL 示されます]** 。
 * **タイムライン**:タイムラインでアセットの有効期限ステータスを表示できます。 アセットを選択し、「タイムライン」を選択します。
-* **参照レール**:参照レールでアセットの有効期限ステータスを表示することも **[!UICONTROL できます]** 。 アセットの有効期限のステータスと、複合アセットと参照先のサブアセット、コレクション、プロジェクト間の関係を管理します。
+* **参照レール**:また、参照レールでアセットの有効期限ステータスを表示することも **[!UICONTROL できます]** 。 アセットの有効期限のステータスと、複合アセットと、参照されるサブアセット、コレクション、プロジェクトとの関係を管理します。
 
 1. 参照元の Web ページと複合アセットを表示するアセットに移動します。
 1. アセットを選択し、グローバルナビゲーションアイコンをクリックまたはタップします。
@@ -32,7 +32,7 @@ source-git-commit: 7141e42f53c556c0ac21def6085182ef400f5a71
 
 検索パネルで、有効期限切れのアセット（有効期限切れのサブアセットを含む）を検索できます。
 
-1. アセットコンソールで、ツールバーの検索アイコンをクリックして、Omnisearchフィールドを表示します。
+1. アセットコンソールで、ツールバーの検索アイコンをクリックし、Omnisearchフィールドを表示します。
 
 1. 「Omnisearch」ボックスにカーソルを置き、Enterキーを押して検索結果ページを表示します。
 
@@ -48,17 +48,19 @@ When you choose the **[!UICONTROL Expired]** option, the Assets console only dis
 
 さらに、何らかの誤作動やエラーによりスケジューラーが現在のサイクルの有効期限切れアセットを検出できない場合、スケジューラーはこれらのアセットを次回のサイクルで再確認し、有効期限切れのステータスを検出します。
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in AEM Configuration Manager.
+アセットコンソールに有効期限切れのサブアセットとともに参照元の複合アセットを表示するには、AEM Configuration Manager で **[!UICONTROL Adobe CQ DAM Expiry Notification]** ワークフローを設定します。
 
 1. AEM Configuration Manager を開きます。
-1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. ジョブが完了すると、期限切れのサブアセットと参照アセットを含むアセットが検索結果に期限切れとして表示されます。
+1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. ジョブが完了すると、期限切れのサブアセットと参照アセットを含むアセットが、検索結果に期限切れとして表示されます。
 
-1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. 例えば、式&#39;0 0 0 &amp;ast；の例&amp;ast;?」 ジョブが 00 時間でトリガーされます。
-1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
+1. ジョブを定期的に実行するには、「**[!UICONTROL 時間ベースのスケジューラールール]**」フィールドをクリアして、「**[!UICONTROL 定期的なスケジューラー]**」フィールドの時間（秒数）を変更します。例えば、式「0 0 0 &amp;ast; &amp;ast; ?」の場合、ジョブが 00 時間でトリガーされます。
+
+<!-- 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
    >
-   >アセットの有効期限が切れると、アセットの作成者（AEM Assets に特定のアセットをアップロードしたユーザー）のみが電子メールを受け取ります。AEMレベル全体での電子メール通知の設定に関する詳細については、電子メール通知の設定方法を参照してください。
+   >Only the asset creator (the person who uploads a particular asset to AEM Assets) receives an email when the asset expires. See how to configure email notification for additional details around configuring email notifications at the overall AEM level.
+-->
 
 1. 「**[!UICONTROL Prior notification in seconds]**」フィールドで、アセットの有効期限が切れる何秒前に有効期限切れに関する通知を受け取るかを指定します。管理者かアセットの作成者の場合、アセットの有効期限が切れる前に、指定の時間が経過した後にアセットの有効期限が切れることを知らせるメッセージを受け取ります。
 
@@ -72,7 +74,7 @@ Adobe Experience Manager（AEM）Assets のアセットコンソールには、�
 
 1. Assets ユーザーインターフェイスでアセットを選択します。
 
-1. Tap/click the **[!UICONTROL Publish]** icon from the toolbar. If you can&#39;t see the **Publish** icon on the toolbar, tap/click **[!UICONTROL More]** on the toolbar and locate the **[!UICONTROL Publish]** icon.
+1. ツールバーの「**[!UICONTROL 公開]**」アイコンをタップまたはクリックします。ツールバーに「**公開**」アイコンが表示されていない場合は、ツールバーの「**[!UICONTROL 詳細]**」をタップまたはクリックして「**[!UICONTROL 公開]**」アイコンを見つけます。
 
 1. Choose **[!UICONTROL Publish]** from the menu, and then close the confirmation dialog.
 1. 選択モードを終了します。アセットの公開ステータスは、カード表示のアセットのサムネールの下部に表示されます。リスト表示では、「公開」列にアセットが公開された時間が表示されます。
@@ -91,11 +93,11 @@ Adobe Experience Manager（AEM）Assets のアセットコンソールには、�
 1. To search for assets based on their status, click/tap the **[!UICONTROL Search]** icon to display the Omnisearch bar.
 
 1. Enterキーを押し、AEMアイコンをクリックまたはタップして、検索パネルを表示します。
-1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. 検索パネルで、「**[!UICONTROL 公開ステータス]**」をタップまたはクリックして「**[!UICONTROL 公開済み]**」を選択し、AEM Assets で公開済みのアセットを検索します。
 
-1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
+1. 「**[!UICONTROL 承認ステータス]**」をタップまたはクリックし、適切なアイコンをクリックして承認済みまたは却下されたアセットを検索します。
 
-1. To search for assets based on their expiration status, select **[!UICONTROL Expiry Status]** in the Search panel and choose the appropriate option.
+1. 有効期限切れのステータスに基づいてアセットを検索するには、検索パネルで「**[!UICONTROL 有効期限ステータス]**」を選択して適切なオプションを選択します。
 
 1. 各種検索ファセットで、ステータスの組み合わせに基づいてアセットを検索することもできます。検索ファセットで適切なオプションを選択することで、例えば、レビュータスクで承認されており、まだ有効期限が切れていない公開済みのアセットを検索することもできます。
 
@@ -116,7 +118,7 @@ Adobe Experience Manager（AEM）Assets のアセットコンソールには、�
 >
 >The location `/etc/dam/drm/licences` used for storing licenses in earlier releases of AEM is deprecated.
 >
->ライセンスページを作成または変更する場合、または以前のAEMリリースからライセンスページを移植する場合は、またはにページを保存することをお勧 `/apps/settings/dam/drm/licenses` めしま `/conf/*/settings/dam/drm/licenses`す。
+>ライセンスページを作成または変更する場合、または以前のAEMリリースからライセンスページを移植する場合は、またはにページを保存することをお勧め `/apps/settings/dam/drm/licenses` しま `/conf/*/settings/dam/drm/licenses`す。
 
 ### DRMアセットのダウンロード {#downloading-drm-assets}
 
@@ -126,6 +128,6 @@ Adobe Experience Manager（AEM）Assets のアセットコンソールには、�
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Download]** button is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the left pane and the **[!UICONTROL Download]** button is enabled to download the unprotected assets. To simultaneously accept license agreements for multiple protected assets, select the assets from the list and then choose **[!UICONTROL Agree]**.
+   >「**[!UICONTROL ダウンロード]**」ボタンは、保護されたアセットの使用許諾契約に同意した場合にのみ有効になります。ただし、選択範囲が保護されたアセットと保護されていないアセットの両方で構成されている場合は、保護されたアセットのみが左パネルに表示され、「**[!UICONTROL ダウンロード]**」ボタンが有効になって保護されていないアセットをダウンロードのダウンロードが可能になります。保護された複数のアセットの使用許諾契約に同時に承諾するには、リストからアセットを選択して「**[!UICONTROL 同意する]**」を選択します。
 
 1. In the dialog, tap/click **[!UICONTROL Download]** to download the asset or its renditions.
