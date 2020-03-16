@@ -1,18 +1,19 @@
 ---
 title: Adobe Experience Manager Assetsをクラウドサービスとして設定および管理する
-description: アセットをクラウドサービスとして使用する場合に必要な設定と管理のタスクについての知識
+description: アセットをクラウドサービスとして使用する場合に必要な設定および管理タスクについての知識
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
 
 ---
 
 
-# アセットをクラウドサービスとして設定および管理する {#config-administer-assets-cloud-service}
+# クラウドサービスとしてのアセットの設定と管理 {#config-administer-assets-cloud-service}
 
-この記事では、Adobe Experience Manager Assetsをクラウドサービスとして使用し始めるのに必要な最上位の設定または管理タスクを示します。
+この記事では、Adobe Experience Manager Assetsをクラウドサービスとして使用し始めるのに必要な、最上位レベルの設定または管理タスクを示します。
 
-<!-- 
+<!-- SCOPE 
+
 Top-level page for all administrative tasks specific to Assets as a Cloud Service.
 Backlink to Sites administering content where required.
 Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/assets.html though not complete and not so accurate.
@@ -25,7 +26,9 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 * Configure search index and visual search's separate index.
 * Cloud Manager usage, if any that’s relevant here.
 * Steps to integrate with Adobe and third-party solutions. Analytics, Launch, Creative Cloud, etc.
+-->
 
+<!-- 
 ## Work with search indices {#search-index-for-assets-cloud-service}
 
 * Link to this topic for information about Experience Manager's common index https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service-prerelease.en/blob/master/help/sites/operations/indexing.html
