@@ -2,7 +2,7 @@
 title: AEMプロジェクト構造
 description: Adobe Experience Manager Cloud Serviceに展開するパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: a6efcbb85949e65167ebab0e2a8dae06eaeaa07f
+source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
 
 ---
 
@@ -138,7 +138,7 @@ Repo Initスクリプトは `scripts``RepositoryInitializer` OSGiファクトリ
 
 >[!TIP]
 >
->Repo Initスクリプトは ** 、インラインフィールドで `scripts` 定義する必要があり `references` 、設定は機能しません。
+>Repo Initスクリプト *は* 、インラインフィールドで `scripts` 定義する必要があり `references` 、設定は機能しません。
 
 Repo Initスクリプトの全語彙は、 [Apache Sling Repo Initドキュメントで入手できます](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
 
@@ -394,7 +394,7 @@ OSGiプロ `scripts` パティには、 [Apache SlingのRepo Init言語で定義
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
