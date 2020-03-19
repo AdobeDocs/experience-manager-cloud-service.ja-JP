@@ -2,7 +2,7 @@
 title: ログの管理 — クラウドサービス
 description: ログの管理 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
 
 ---
 
@@ -20,14 +20,14 @@ source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 ![](assets/manage-logs2.png)
 
 >[!N注]
->開いている場所に関係なく、同じダイアログが表示され、個々のログファイルをダウンロードできます。
+>開いた場所に関係なく、同じダイアログが表示され、個々のログファイルをダウンロードできます。
 
 ![](assets/manage-logs3.png)
 
 
 ## APIを使用したログ {#logs-thorugh-api}
 
-UIからログをダウンロードする以外に、APIとコマンドラインインターフェイスからもログを使用できます。
+UIからログをダウンロードする以外に、APIとコマンドラインインターフェイスからログを使用できます。
 
 例えば、特定の環境用のログファイルをダウンロードする場合、このコマンドは
 
@@ -35,13 +35,13 @@ UIからログをダウンロードする以外に、APIとコマンドライン
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-次のコマンドを使用すると、ログのテーリングが可能になります。
+次のコマンドを使用すると、ログのテーリングが可能です。
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-環境ID（この場合1884）と使用可能なサービスまたはログ名のオプションを取得するには、次を使用します。
+環境ID（この場合1884）と、使用可能なサービスまたはログ名のオプションを取得するには、次の手順を実行します。
 
 ```java
 $ aio cloudmanager:list-environments
@@ -65,4 +65,11 @@ Environment Id Service    Name
 ```
 
 >[!N注]
->ログダ **ウンロードは** 、UIとAPIの両方から利用できますが、ロ **グテーリングは** API/CLIのみです。
+>**ログダウンロード**&#x200B;は、UI と API の両方から利用できますが、**ログテーリング**&#x200B;は API/CLI のみです。
+
+### その他のリソース {#resources}
+
+Cloud Manager APIとAdobe I/O CLIについて詳しくは、次の追加のリソースを参照してください。
+
+* [Cloud Manager APIドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
