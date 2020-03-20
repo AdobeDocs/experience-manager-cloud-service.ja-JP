@@ -2,14 +2,14 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
 
 ---
 
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud に含まれている [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) を使用すると、あらゆるチャネルにわたってターゲット設定と測定を行い、コンテンツの関連性を高めることができます。Adobe Target はマーケター向けのツールで、オンラインテストを設計および実行し、その場で（行動に基づいた）オーディエンスセグメントを作成し、コンテンツとオンラインエクスペリエンスのターゲット設定を自動化するために使用されます。クラウドサービスとしてのAEMでは、Adobe Target Standardで使用されるターゲット設定ワークフローが採用されています。 Targetを使用する場合は、クラウドサービスとしてのAEMのターゲット設定編集環境について理解している必要があります。
+Adobe Marketing Cloud に含まれている [Adobe Target](http://www.adobe.com/solutions/testing-targeting/testandtarget.html) を使用すると、あらゆるチャネルにわたってターゲット設定と測定を行い、コンテンツの関連性を高めることができます。Adobe Target はマーケター向けのツールで、オンラインテストを設計および実行し、その場で（行動に基づいた）オーディエンスセグメントを作成し、コンテンツとオンラインエクスペリエンスのターゲット設定を自動化するために使用されます。クラウドサービスとしてのAEMでは、Adobe Target Standardで使用されるターゲット設定ワークフローが採用されています。 Targetを使用する場合は、AEMのクラウドサービスとしてのターゲット設定の編集環境について理解している必要があります。
 
 AEM サイトを Adobe Target に統合して、ページ内のコンテンツを次のようにパーソナライズできます。
 
@@ -20,25 +20,29 @@ AEM サイトを Adobe Target に統合して、ページ内のコンテンツ�
 
 >[!NOTE]
 >
->既存のTargetアカウントを持っていないクラウドサービスのお客様は、Adobe Experience Managerを使用して、Target Foundation Pack for Experience cloudへのアクセスをリクエストできます。  Foundation packでは、Targetのボリュームの使用が制限されています。
+>既存のTargetアカウントを持っていないクラウドサービスのお客様は、Adobe Experience Managerを使用して、Experience Cloud用Target Foundation Packへのアクセスをリクエストできます。  Foundation Packでは、Targetのボリュームの使用が制限されています。
 
 
 Target に統合するには、次のタスクを実行します。
 
 * [前提条件のタスクを実行する](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html)：Adobe Target に登録して AEM オーサーインスタンスの特定の側面を設定します。Your Adobe Target account must have **approver** level permissions at a minimum. さらに、ユーザーがアクセスできないように、パブリッシュノードのアクティビティ設定を保護する必要があります。
 
-* Launch by Adobeは、AEMサイトにTarget機能（JSライブラリ）を実装するデフォクトのツールです。 したがって、AEMをクラウドサービスとしてLaunchと統合すると、Adobe targetがすぐに使用できるようになります（以下のリンクを参照）。
+* アドビによる起動は、AEMサイトにTarget機能（JSライブラリ）を実装するデファクトのツールです。 したがって、AEMをクラウドサービスとしてLaunchと統合し、Adobe Targetを入手できます（以下のリンクを参照）。
 
-   * [Adobe I/Oを使用したAdobe targetとの統合](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
+   * [Adobe I/Oを使用したAdobe Targetとの統合](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
    * [Integrate Launch by Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-   * [Adobe I/Oを使用したAEMとAdobe launchの統合](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
-   * [AEMとAdobe、Analytics、およびTargetのLaunchとの統合について](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
-
-1. [アクティビティを設定する](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)：アクティビティを Target のクラウド設定に関連付けます。
+   * [Adobe I/Oを使用したAEMとAdobe Launchの統合](https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html)
+   * [Adobe、Analytics、およびTargetによるAEMのLaunchとの統合について](https://helpx.adobe.com/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
 >[!NOTE]
 >
->アドビが起動するIMS設定（技術アカウント）は、クラウドサービスとしてAEMに事前に設定されています。 ユーザーはこの設定を作成する必要はありません。
+>アドビが起動するIMS設定（技術アカウント）は、AEMでクラウドサービスとして事前に設定されています。 ユーザーは、この設定を作成する必要はありません。
+
+1. [アクティビティを設定する](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)：アクティビティを Target のクラウド設定に関連付けます。
+
+>[!CAUTION]
+>
+>「AEMをクラウドサービスとして使用する場合、AEMからAdobe Targetにオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。 複製エージェントを再 [度有効にする必要がある場合は](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) 、アドビサポートにお問い合わせください。」
 
 >[!NOTE]
 >
@@ -56,7 +60,7 @@ Target に統合するには、次のタスクを実行します。
 >
 >詳しくは、[Adobe Target との統合の前提条件](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node)を参照してください。
 
-When the integration is complete, you can [author targeted content](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. ページコンポーネントでは、コンテンツのターゲット設定を有効にするために特定のコードが必要になることに注意してください。 (See [Developing for Targeted Content](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html).
+When the integration is complete, you can [author targeted content](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/content-targeting-touch.html) that sends visitor data to Adobe Target. ページコンポーネントでは、コンテンツのターゲット設定を有効にするために特定のコードが必要です。 (See [Developing for Targeted Content](https://docs.adobe.com/content/help/en/experience-manager-65/developing/personlization/target.html).
 
 >[!NOTE]
 >
@@ -64,7 +68,7 @@ When the integration is complete, you can [author targeted content](https://docs
 
 ## 背景情報ソース {#background-information-sources}
 
-AEMをクラウドサービスとしてAdobe targetに統合するには、Adobe Target、AEM Activitys ManagementおよびAEM Audiences Managementの知識が必要です。 次の情報に精通している必要があります。
+AEMをクラウドサービスとしてAdobe Targetと統合するには、Adobe Target、AEM Activities管理およびAEM Audiences管理に関する知識が必要です。 次の情報に精通している必要があります。
 
 * Adobe Target (See the [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/)).
 * AEM Activities console (See [Managing Activities](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html).
