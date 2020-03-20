@@ -2,7 +2,7 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 5a7f2d603952b2c5f92363888efedb482d8efea3
+source-git-commit: 94ba99acf2d14219d63485e3443b7080b8ba32bd
 
 ---
 
@@ -42,7 +42,7 @@ Target に統合するには、次のタスクを実行します。
 
 >[!CAUTION]
 >
->「AEMをクラウドサービスとして使用する場合、AEMからAdobe Targetにオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。 複製エージェントを再 [度有効にする必要がある場合は](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) 、アドビサポートにお問い合わせください。」
+>AEMのクラウドサービスとしての機能では、AEMからAdobe Targetにオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。 複製エージェントを再 [度有効にする必要がある場合は](https://helpx.adobe.com/contact/enterprise-support.ec.html#target) 、アドビサポートにお問い合わせください。
 
 >[!NOTE]
 >
