@@ -2,7 +2,7 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ページに必要なプロパティを定義できます。これらはページの特性に応じて異なることがあります。例えば、ページによってはライブコピーに接続されていたり、接続されずにライブコピー情報が必要に応じて利用可能な場合があります。
 
-## ページプロパティ {#page-properties}
+## ページのプロパティ {#page-properties}
 
 プロパティは次のタブに分散しています。
 
@@ -24,7 +24,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * **タグ**
 
-   * ここでは、選択ボックスのリストを更新して、ページにタグを追加したり、ページからタグを削除したりできます。
+   * ここでは、選択ボックス内のリストを更新することで、ページにタグを追加または削除できます。
    * タグを選択すると、選択ボックスの下のリストに表示されます。このリストからタグを削除するには、x を使用します。
    * 空の選択ボックスに名前を入力して、新しいタグを入力できます。
       * Enter キーを押すと、新しいタグが作成されます。
@@ -99,9 +99,9 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * このページで使用されるエイリアスを指定します。
    >[!NOTE]
    >
-   >「Alias」は、プロパ `sling:alias` ティーを設定して、リソースのエイリアス名を定義します（これはリソースにのみ影響し、パスには影響しません）。
+   >「Alias」は、リソ `sling:alias` ースのエイリアス名を定義するプロパティーを設定します（これは、パスではなく、リソースにのみ影響します）。
    >
-   >例：ノードノードのエイリアスを定義 `latin-lang` した場合、こ `/content/we-retail/spanish` のページは、 `/content/we-retail/latin-language`
+   >例：ノードノードのエイリアスを `latin-lang` 定義した場合 `/content/we-retail/spanish` 、このページは、 `/content/we-retail/latin-language`
    >
    >詳しくは、「SEOとURL管理のベストプラクティス」の「ローカライズされたページ名」を参照してください。
    <!--
@@ -164,7 +164,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **Facebook に対してユーザー共有を有効にする**
    * **Pinterest に対してユーザー共有を有効にする**
    * **優先 XF バリエーション**
-      * ページのメタデータの生成に使用するエクスペリエンスフラグメントのバリエーションを定義
+      * ページのメタデータの生成に使用するエクスペリエンスフラグメントのバリエーションの定義
 
 ### クラウドサービス {#cloud-services}
 
@@ -181,6 +181,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **ターゲティング設定**
 
    * [ブランドを選択してターゲット設定の範囲を指定](/help/sites-cloud/authoring/personalization/targeted-content.md)します。
+   >[!NOTE]
+   >このオプションを使用するには、ユーザーアカウントがグループに属している必要 `Target Adminstrators`があります。
 
 ### 権限 {#permissions}
 
@@ -215,8 +217,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * Clicking or tapping **Properties**
       * 単一のページ
       * 複数のページ（まとめて編集する場合は、プロパティのサブセットのみを使用できます）
-* ページエディターから：
-   * Using **Page Information** (then **Open Properties**)
+* ページエディターから、次の操作をおこないます。
+   * 「**ページ情報**」を使用します（その後、「**プロパティを開く**」をクリック）
 
 ### サイトコンソールから - 単一のページ {#from-the-sites-console-single-page}
 
@@ -236,14 +238,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. プロパティを編集するページを開きます。
 1. **ページ情報**&#x200B;アイコンを選択して選択メニューを開きます。
-1. Select **Open Properties** and a dialog will open allowing you to edit the properties, sorted by the appropriate tab. ツールバーの右側にある次のボタンも使用できます。
+1. 「**プロパティを開く**」を選択すると、プロパティを編集するためのダイアログが開きます。プロパティは適切なタブに分類されています。ツールバーの右側にある次のボタンも使用できます。
    * **キャンセル**
    * **保存して閉じる**
 1. 「**保存して閉じる**」ボタンを使用して、変更を保存します。
 
 ### サイトコンソールから - 複数のページ {#from-the-sites-console-multiple-pages}
 
-**サイト**&#x200B;コンソールから、複数のページを選択し、「**プロパティを表示**」を使用してページのプロパティを表示および編集することができます。この操作は、ページのプロパティの一括編集と呼ばれます。
+**Sites** コンソールから、複数のページを選択し、「**プロパティを表示**」を使用してページのプロパティを表示および編集することができます。これは、ページプロパティの一括編集と呼ばれます。
 
 >[!NOTE]
 >
@@ -261,7 +263,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * **サイト**&#x200B;コンソールの参照時
 * **検索**&#x200B;によって複数のページを特定した後
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+ページを選択して「**プロパティ**」オプションをクリックまたはタップすると、一括プロパティが表示されます。
 
 ![ページプロパティの一括編集](/help/sites-cloud/authoring/assets/page-properties-bulk-edit.png)
 
