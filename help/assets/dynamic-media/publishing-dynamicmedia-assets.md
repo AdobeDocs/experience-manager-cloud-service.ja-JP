@@ -2,24 +2,24 @@
 title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: c8f8598e3e476af529a87b056e66ddb619a2da0a
 
 ---
 
 
 # Dynamic Media アセットの公開 {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. 動的メディアアセットは、公開後、URL経由でWebページに含めたり、埋め込みを使用してWebページに含めたりできます。
+You publish your Dynamic Media assets by selecting the assets and tapping **[!UICONTROL Publish]**. ダイナミックメディアアセットは、公開後、URL経由でWebページに含めたり、埋め込んだりすることができます。
 
-また、ユーザの介入なしで、アップロードしたアセットを即座に公開することもできます。 See [Configuring Dynamic Media](config-dm.md).
+また、ユーザの介入なしで、アップロードしたアセットを即座に公開することもできます。 または、選択してアセットを公開することもできます。 See [Configuring Dynamic Media](config-dm.md).
 
-In the **[!UICONTROL Card View]**, a small globe icon appears directly below an asset&#39;s name to indicate that it is published. In the **[!UICONTROL List View]**, a **[!UICONTROL Published]** column indicates which assets are published or which are not.
+**[!UICONTROL カード表示]**&#x200B;では、小さい地球のアイコンがアセット名のすぐ下に表示され、アセットが公開されていることを示します。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットを「**[!UICONTROL 公開]**」列で確認できます。
 
 >[!NOTE]
 >
->アセットが既に公開されている場合は、AEMを使用してアセットを別のフォルダに移動し、新しい場所から再公開すると、元の公開済みアセットの場所と新しく再公開したアセットを引き続き使用できます。ただし、元の公開済みアセットはAEMに対して「失われる」ので、非公開にすることはできません。したがって、ベストプラクティスとして、アセットを別のフォルダーに移動する前に、アセットの公開を取り消す必要があります。
+>アセットが既に公開済みの場合は、AEMを使用してアセットを別のフォルダーに移動し、新しい場所から再公開すると、元の公開済みアセットの場所と新しく再公開したアセットが引き続き使用できます。ただし、元の公開済みアセットはAEMに対して「失われる」ので、非公開にすることはできません。したがって、ベストプラクティスとして、アセットを別のフォルダに移動する前に、まずアセットの公開を取り消すことをお勧めします。
 
-ビデオアセットをエンコードした直後に公開する場合は、エンコードが完全に完了していることを確認します。ビデオがエンコードされている間は、ビデオ処理ワークフローが進行中であることが通知されます。ビデオのエンコーディングが完了すると、ビデオのレンディションをプレビューできるようになります。この時点で、公開エラーが発生することなくビデオを公開しても安全です。
+ビデオアセットをエンコードした直後に公開する場合は、エンコードが完了していることを確認します。ビデオのエンコードが進行中の場合、ビデオ処理ワークフローが進行中であることがシステムから通知されます。ビデオのエンコーディングが完了したら、ビデオのレンディションをプレビューできる必要があります。この時点で、投稿エラーを発生させずにビデオを投稿しても問題はありません。
 
 [Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)も参照してください。
 
