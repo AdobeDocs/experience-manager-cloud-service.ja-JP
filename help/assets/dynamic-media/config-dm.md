@@ -2,7 +2,7 @@
 title: ダイナミックメディアクラウドサービスの設定
 description: Adobe Experience Manager Cloud Serviceでダイナミックメディアを設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 4b9630dfdc8dfc3a621f307f53c48dec415618e5
+source-git-commit: 50ebc2187cff4d35c93e25da9d2f62f6a86f12ad
 
 ---
 
@@ -68,29 +68,26 @@ Dynamic Media クラウドサービスを設定するには：
    * **[!UICONTROL アセットの公開]** — 次の3つのオプションから選択できます。
       * **[!UICONTROL 即座に]** 、アセットがアップロードされると、アセットが取り込まれ、URL/埋め込みが即座に提供されます。 アセットを公開するためにユーザーが操作する必要はありません。
       * **[!UICONTROL 「アクティブ化]** 」は、URL/埋め込みリンクを指定する前に、アセットを明示的に発行する必要があることを意味します。
-<!--       * **[!UICONTROL Selective Publish]** means that assets are auto published for secure preview only and can be explicitly published to AEM without publishing to DMS7 for delivery in the public domain. In the future, Adobe will enhance this option to publish assets to AEM and publish assets to Dynamic Media, mutually exclusive of each other. That is, you can publish assets to DMS7 so you can use features such a Smart Crop or dynamic renditions. Or, you can publish assets exclusively in AEM for previewing; those same assets are not published in DMS7 for delivery in the public domain. -->
+      * **[!UICONTROL 一部のみの公開]** (Selective Publish)とは、アセットがセキュリティで保護されたプレビューのためにのみ自動公開され、DMS7に公開せずに明示的にAEMに公開して、公開ドメインで配信できることを意味します。 今後、アドビは、相互に排他的なアセットをAEMに公開し、ダイナミックメディアに公開するこのオプションを拡張します。 つまり、アセットをDMS7に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。 または、プレビュー用にAEMでのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信用にDMS7で公開されません。
+   * **[!UICONTROL プレビューサーバーを保護]** - セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM は、リモートのDynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。 自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない 限り、この設定を指定されたとおりにしておくことをお勧めします。
 
-    * **セキュアプ[!UICONTROL レビューサーバ]** — セキュアレンディションプレビューサーバへのURLパスを指定できます。 つまり、レンディションが生成されると、AEM は、リモートのDynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。
-     自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない 限り、この設定を指定されたとおりにしておくことをお勧めします。
-    
-    * **すべてのコ[!UICONTROL ンテンツを同期]** — デフォルトで選択されています。 ダイナミックメディアとの同期にアセットを選択的に含めるか除外する場合は、このオプションの選択を解除します。 このオプションの選択を解除すると、次の2つのダイナミックメディア同期モードから選択できます。
-    
-    * **[!UICONTROL Dynamic Media同期モード*******]
-    **デフォルトで有効** — フォルダーを特別に除外するマークを付けない限り、設定はすべてのフォルダーに適用されます。 &lt;! — その後、設定を適用しないフォルダの選択を解除できます。—>
-    * **デフォルトで無効** — ダイナミックメディアと同期するために選択したフォルダーを明示的にマークするまで、設定はどのフォルダーにも適用されません。
-    選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーの「プロパティ」ページを開きます。「**[!UICONTROL 詳細]**」タブをタップし、「**[!UICONTROL Dynamic Media] 同期モード**」ドロップダウンリストから次の3つのオプションを選択して、「**[!UICONTROL 保存]**」をタップします。
-    * **継承[!UICONTROL *]* — フォルダーに明示的な同期値がありません。代わりに、フォルダーは、上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された番組の詳細なステータスは、ツールヒントを通じて表示されます。
-    * **サブフ[!UICONTROL ォルダーを有効にする]** — ダイナミックメディアと同期するために、このサブツリー内のすべての項目を含めます。 フォルダー固有の設定は、クラウド設定のデフォルトのモードより優先されます。
-    * **サブフ[!UICONTROL ォルダーに対して無効]** — このサブツリー内のすべての項目をダイナミックメディアとの同期から除外します。
+   * **[!UICONTROL すべてのコンテンツを同期]** — デフォルトで選択されています。 ダイナミックメディアとの同期にアセットを選択的に含めるか除外する場合は、このオプションの選択を解除します。 このオプションの選択を解除すると、次の2つのダイナミックメディア同期モードから選択できます。
 
->[!NOTE]
->
->Dynamic Media ではバージョン管理はサポートされていません。また、遅延アクティベーションは、Dynamic Media 設定を編集ページの「**[!UICONTROL アセットを公開]**」が「**[!UICONTROL アクティベーション時]**」に設定されている場合にのみ、アセットが最初にアクティベートされるまでの間に限って適用されます。
->
->
->アセットがアクティベートされるとすぐに、すべての更新が S7 配信にライブ公開されます。
+   * **[!UICONTROL ダイナミックメディア同期モード]**
+      * **[!UICONTROL デフォルトで有効]** — フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL デフォルトで無効]** — 選択したフォルダーをダイナミックメディアと同期するように明示的にマークするまで、設定はどのフォルダーにも適用されません。
+選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーの「プロパティ」ページを開きます。Tap the **[!UICONTROL Details]** tab, then from the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options, then save tap **[!UICONTROL Save]**.
+         * **[!UICONTROL 継承]** — フォルダーに明示的な同期値がありません。代わりに、フォルダーは、上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された番組の詳細なステータスは、ツールヒントを通じて表示されます。
+         * **[!UICONTROL サブフォルダーを有効にする]** — ダイナミックメディアと同期するために、このサブツリー内のすべてを含めます。 フォルダー固有の設定は、クラウド設定のデフォルトのモードより優先されます。
+         * **[!UICONTROL サブフォルダーに対して無効]** — このサブツリー内のすべての項目をダイナミックメディアとの同期から除外します。
+   >[!NOTE]
+   >
+   >Dynamic Media ではバージョン管理はサポートされていません。また、遅延アクティベーションは、Dynamic Media 設定を編集ページの「**[!UICONTROL アセットを公開]**」が「**[!UICONTROL アクティベーション時]**」に設定されている場合にのみ、アセットが最初にアクティベートされるまでの間に限って適用されます。
+   >
+   >
+   >アセットがアクティベートされるとすぐに、すべての更新が S7 配信にライブ公開されます。
 
-![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 「**[!UICONTROL 保存]**」をタップします。
 1. Dynamic Media コンテンツを公開する前に安全にプレビューするには、AEM オーサーインスタンスを「ホワイトリストに登録」して、Dynamic Media に接続する必要があります。
