@@ -3,7 +3,7 @@ title: Assets HTTP API
 description: Assets HTTP API の実装、データモデルおよび機能を学習します。Assets HTTP API を使用して、アセットに関する様々なタスクを実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 ## 概要 {#overview}
 
-アセットHTTP APIを使用すると、バイナリ、メタデータ、レンディション、コメントなどのアセットに対して、AEMコンテンツフラグメントを使用して構造化されたコンテンツと共に、create-read-update-delete(CRUD)操作を実行できます。 これはで公開され、REST API `/api/assets` として実装されています。 [コンテンツフラグメントをサポート](content-fragments/content-fragments.md)しています。
+Assets HTTP APIを使用すると、バイナリ、メタデータ、レンディション、コメントなどのアセットに対して、AEMコンテンツフラグメントを使用して構造化されたコンテンツと共に、作成/読み取り/更新/削除(CRUD)操作を実行できます。 REST APIとして実装さ `/api/assets` れ、で公開されています。 [コンテンツフラグメントをサポート](content-fragments/content-fragments.md)しています。
 
 この API にアクセスするには、次の手順を実行します。
 
@@ -21,11 +21,11 @@ source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
 
 API応答は、一部のMIMEタイプのJSONファイルで、すべてのMIMEタイプの応答コードです。 JSON 応答はオプションであり、PDF ファイルなどでは利用できない場合があります。詳細な分析やアクションをおこなう場合は、応答コードを利用します。
 
-オフ時間の後 [!UICONTROL は]、アセットとそのレンディションは、アセットWebインターフェイスまたはHTTP API経由では使用できません。 オン時間が未来の場合、またはオフ時間が過去 [!UICONTROL の場合] 、APIは404エ [!UICONTROL ラーメッセージを返します] 。
+「オフ」の [!UICONTROL 後は]、アセットとそのレンディションは、アセットWebインターフェイスまたはHTTP API経由では使用できなくなります。 オン時間が未来の場合、またはオ [!UICONTROL フ時間が過去の場合] 、APIは404 [!UICONTROL エラーメッセージを返します] 。
 
 >[!NOTE]
 >
->アセットやバイナリの一般的なアップロードまたは更新（レンディションなど）に関連するすべてのAPI呼び出しは、AEM用にクラウドサービスのデプロイメントとして展開されます。 バイナリをアップロードする場合は、代わりに直接バ [イナリアップロードAPIを使用し](developer-reference-material-apis.md#asset-upload-technical) 、
+>アセットやバイナリの一般的なアップロードまたは更新（レンディションなど）に関連するすべてのAPI呼び出しは、AEMのクラウドサービスのデプロイメント用に展開されます。 バイナリをアップロードする場合は、代わ [りに直接バイナリアップロードAPI](developer-reference-material-apis.md#asset-upload-technical) 。
 
 ## コンテンツフラグメント {#content-fragments}
 
@@ -43,7 +43,7 @@ Assets HTTP API は、フォルダーとアセット（標準アセット用）�
 
 フォルダは、従来のファイルシステムのディレクトリに似ています。 フォルダーは、他のフォルダーまたはアセットのコンテナです。フォルダーには、以下のコンポーネントがあります。
 
-**エンティティ**:フォルダーのエンティティは子要素で、フォルダーやアセットを指定できます。
+**エンティティ**:フォルダのエンティティは子要素で、フォルダやアセットを指定できます。
 
 **プロパティ**:
 * `name`   — フォルダの名前。 これは、URLパス内の最後のセグメント（拡張子なし）と同じです。
@@ -51,10 +51,10 @@ Assets HTTP API は、フォルダーとアセット（標準アセット用）�
 
 >[!NOTE]
 >
->フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。のプレ `jcr` フィックス、、お `jcr:title`よびはプ `jcr:description`レフィッ `jcr:language` クスに置き換 `dc` えられます。 Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
+>フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。のプレフ `jcr` ィックス、およびは、プレフィックスに置き `jcr:title`換えられるプレフィックスに `jcr:description``jcr:language``dc` 置き換えられます。 Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
 
 **Links** Foldersは、次の3つのリンクを公開します。
-* `self`:自身へのリンク
+* `self`:自身にリンク
 * `parent`:親フォルダーへのリンク
 * `thumbnail`:（オプション）フォルダーのサムネール画像へのリンク
 
@@ -68,13 +68,13 @@ AEMでは、アセットに次の要素が含まれます。
 
 コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/content-fragments.md)を参照してください。
 
-AEMでは、フォルダーには次のコンポーネントが含まれます。
+AEMのフォルダーには、次のコンポーネントが含まれます。
 
 * エンティティ：アセットの子はレンディションです。
 * プロパティ
 * リンク
 
-アセットHTTP APIには次の機能が用意されています。
+Assets HTTP APIには次の機能があります。
 
 * フォルダーの一覧の取得
 * フォルダーの作成
@@ -141,7 +141,7 @@ The operation will fail with a `500` response code if the parent node of the giv
 POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'
 ```
 
-「」または「」
+ か  のどちらかにする必要があります。
 
 ```
 POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
@@ -158,11 +158,11 @@ POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
 
 ## アセットの作成 {#create-an-asset}
 
-APIを使用し [たアセットの作成方法について詳しくは](developer-reference-material-apis.md) 、アセットのアップロードを参照してください。 HTTP APIを使用したアセットの作成は推奨されません。
+APIを使用し [てアセットを作成する方法については](developer-reference-material-apis.md) 、アセットのアップロードを参照してください。 HTTP APIを使用したアセットの作成は非推奨です。
 
 ## アセットバイナリの更新 {#update-asset-binary}
 
-APIを使用し [てアセットバイナリを更新する方法については](developer-reference-material-apis.md) 、「アセットのアップロード」を参照してください。 HTTP APIを使用したアセットバイナリの更新は推奨されません。
+APIを使用し [てアセットバイナリを更新する方法については](developer-reference-material-apis.md) 、アセットのアップロードを参照してください。 HTTP APIを使用したアセットバイナリの更新は推奨されません。
 
 ## アセットのメタデータの更新 {#update-asset-metadata}
 
@@ -185,7 +185,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"cl
 
 ## アセットレンディションの作成 {#create-an-asset-rendition}
 
-アセットの新しいアセットレンディションを作成します。要求パラメーター名を指定しない場合、ファイル名がレンディション名として使用されます。
+アセットの新しいアセットレンディションを作成します。要求パラメーター名が指定されていない場合、ファイル名がレンディション名として使用されます。
 
 **パラメーター**
 
@@ -198,7 +198,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"cl
 POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"
 ```
 
-「」または「」
+ か  のどちらかにする必要があります。
 
 ```
 POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"
@@ -320,13 +320,13 @@ MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
 DELETE /api/assets/myFolder
 ```
 
-「」または「」
+ か  のどちらかにする必要があります。
 
 ```
 DELETE /api/assets/myFolder/myAsset.png
 ```
 
-「」または「」
+ か  のどちらかにする必要があります。
 
 ```xml
 DELETE /api/assets/myFolder/myAsset.png/renditions/original
