@@ -3,7 +3,7 @@ title: 'クラウドサービスとしてのAdobe Experience Managerでのデジ
 description: アセットAPIを使用すると、基本的なcreate-read-update-delete(CRUD)操作で、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
@@ -55,9 +55,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 * `(string) fileName`: 必須. インスタンスに表示されるアセットの名前。
 * `(number) fileSize`: 必須. アップロードするバイナリの合計の長さ（バイト単位）。
 
-各バイナリに必須フィールドが含まれている限り、単一の要求を使用して複数のバイナリのアップロードを開始できます。
-
-成功した場合、リクエストは201ステータスコードと、次の形式のJSONデータを含む本文で応答します。
+各バイナリに必須フィールドが含まれている限り、単一の要求を使用して複数のバイナリのアップロードを開始できます。 成功した場合、リクエストはステータスコ `201` ードとJSONデータを含む本文を次の形式で応答します。
 
 ```
 {
@@ -74,17 +72,17 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`:バイナリのアップロードが完了したときに呼び出されるURIです。 これは絶対URIまたは相対URIで、クライアントはどちらも処理できる必要があります。 値は、またはの場合があります(アップロ `"https://author.acme.com/content/dam.completeUpload.json"` ードの完 `"/content/dam.completeUpload.json"` 了を [参照してください](#complete-upload))。
-* `(string) folderPath`:バイナリがアップロードされるフォルダのフルパス。
-* `(array) (files)`:リストの長さと順序が、開始要求で提供されるバイナリ情報のリストの長さと順序と一致する要素の要素です。
-* `(string) fileName`:開始要求で指定された、対応するバイナリの名前。 この値は、完了リクエストに含める必要があります。
-* `(string) mimeType`:in initiateリクエストで指定された、対応するバイナリのMIMEタイプ。 この値は、完了リクエストに含める必要があります。
-* `(string) uploadToken`:対応するバイナリのアップロードトークン。 この値は、完了リクエストに含める必要があります。
-* `(array) uploadURIs`:値がバイナリのコンテンツのアップロード先の完全なURIである文字列のリストです(バイナリのアップロードを [参照](#upload-binary))。
-* `(number) minPartSize`:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最小長（バイト単位）です。
-* `(number) maxPartSize`:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最大長（バイト単位）。
+* `completeURI` （文字列）:バイナリのアップロードが完了したら、このURIを呼び出します。 URIは、絶対URIまたは相対URIで指定でき、クライアントはどちらも処理できる必要があります。 つまり、値は「アップロード完了」または「完 `"https://author.acme.com/content/dam.completeUpload.json"` 了」を `"/content/dam.completeUpload.json"` 表示す [ることができます](#complete-upload)。
+* `folderPath` （文字列）:バイナリがアップロードされるフォルダのフルパス。
+* `(files)` （配列）:リストの長さと順序が、開始要求で提供されるバイナリ情報のリストの長さと順序と一致する要素の要素です。
+* `fileName` （文字列）:開始要求で指定された、対応するバイナリの名前。 この値は、完了リクエストに含める必要があります。
+* `mimeType` （文字列）:in initiateリクエストで指定された、対応するバイナリのMIMEタイプ。 この値は、完了リクエストに含める必要があります。
+* `uploadToken` （文字列）:対応するバイナリのアップロードトークン。 この値は、完了リクエストに含める必要があります。
+* `uploadURIs` （配列）:値がバイナリのコンテンツのアップロード先の完全なURIである文字列のリストです(バイナリのアップロードを [参照](#upload-binary))。
+* `minPartSize` （数値）:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最小長（バイト単位）です。
+* `maxPartSize` （数値）:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最大長（バイト単位）。
 
 ### バイナリのアップロード {#upload-binary}
 
