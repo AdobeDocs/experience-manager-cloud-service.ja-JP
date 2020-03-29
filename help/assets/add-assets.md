@@ -2,14 +2,14 @@
 title: デジ追加タルアセットをAdobe Experience Managerに送信
 description: クラウ追加ドサービスとしてのデジタルアセットのAdobe Experience Managerへの移行
 translation-type: tm+mt
-source-git-commit: 068195919c4bf73c41b1156eadb47544e4c41e65
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Adobe Experience Manager追加へのデジタルアセット {#add-assets-to-experience-manager}
 
-デジタルファイルをAdobe Experience Managerにアップロードすると、リッチメタデータ、スマートタグ、レンディション、その他のDigital Asset Management(DAM)サービスを使用して、ファイルのバイナリコンテンツを強化できます。 様々な種類のファイル（画像、PDFファイル、RAWファイルなど）をローカルフォルダーまたはネットワークドライブからExperience Manager Assetsにアップロードできます。
+Adobe Experience Managerは、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のDigital Asset Management(DAM)サービスで強化します。 画像、ドキュメント、生画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブからExperience Manager Assetsにアップロードできます。
 
 多数のアップロード方法が用意されています。 最も一般的に使用されるブラウザーのアップロードに加えて、Adobe Asset LinkやExperience Managerデスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードスクリプトや取り込みスクリプト、AEM拡張機能として追加された自動取り込み統合など、Experience Managerリポジトリへのアセットの追加方法もあります。
 
