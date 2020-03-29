@@ -3,20 +3,20 @@ title: アセット、フォルダー、コレクションをリンクとして�
 description: この記事では、Experience Manager Assets内のアセット、フォルダーおよびコレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
 
 ---
 
 
 # Experience Managerで管理されるアセットの共有と配布 {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM)Assetsを使用すると、アセット、フォルダーおよびコレクションを組織のメンバーや外部エンティティ（パートナーやベンダーを含む）と共有できます。 次の方法を使用して、Experience Manager Assetsのアセットをクラウドサービスとして共有できます。
+Adobe Experience Manager (AEM)Assetsを使用すると、アセット、フォルダーおよびコレクションを組織のメンバーや外部エンティティ（パートナーやベンダーを含む）と共有できます。 次の方法を使用して、Experience Manager Assetsのアセットをクラウドサービスとして共有します。
 
-* リンクとして共有
-* アセットのダウンロード
-* AEMデスクトップアプリで共有
-* Adobe Assetリンクを使用して共有
-* （今後の機能）Brand Portalを使用した共有
+* リンクとして共有。
+* アセットをダウンロードし、個別に共有します。
+* AEMデスクトップアプリで共有します。
+* Adobe Assetリンクを使用して共有します。
+* （今後の機能）Brand Portalを使用した共有。
 
 ## アセットをリンクとして共有 {#sharelink}
 
@@ -110,11 +110,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケターや基幹業務ユーザーは、承認されたアセットをクリエイティブプロフェッショナルと簡単に共有できます。
 
-* **AEMデスクトップアプリ**:アプリケーションはWindowsとMacで機能します。 デスクトップア [プリの概要を参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)い。 権限を持つデスクトップユーザーが共有アセットに簡単にアクセスできる方法については、アセットの参照、 [検索およびプレビューを参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)い。 デスクトップユーザーは、新しいアセットを作成し、例えば、新しい画像をアップロードすることで、AEMユーザーである対応するユーザーとアセットを共有できます。 詳しくは、デスク [トップアプリを使用したアセットのアップロードを参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)い。
+* **AEMデスクトップアプリ**:アプリケーションはWindowsとMacで機能します。 デスクトップア [プリの概要を参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)い。 承認されたデスクトップユーザーが共有アセットに簡単にアクセスできる方法については、「参照、検索、 [プレビューアセット](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)」を参照します。 デスクトップユーザーは、例えば、新しい画像をアップロードすることで、アセットを作成し、AEMユーザーである対応するユーザーとアセットを共有できます。 詳しくは、デスク [トップアプリを使用したアセットのアップロードを参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)い。
 
 * **Adobe Asset Link**:クリエイティブプロフェッショナルは、Adobe InDesign、Adobe IllustratorおよびAdobe Photoshop内から直接アセットを検索して使用できます。
 
 ## アセット共有の設定 {#configure-sharing}
+
+アセットを共有する様々なオプションには、特定の設定が必要で、特定の前提条件があります。
 
 ### アセットリンクの共有の設定 {#asset-link-sharing}
 
@@ -162,7 +164,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### デスクトップアクションをデスクトップアプリで使用できるようにする {#desktop-actions}
 
-ブラウザーの Assets ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開くことができます。これらのオプションは「Desktop Actions」と呼ばれ、有効になっていない場合は、AEM Webインターフェイスでのデ [スクトップアクションの有効化を参照してくださ](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)い。
+ブラウザーの Assets ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開くことができます。これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、AEM Webインターフェイス [でデスクトップアクションを有効にするを参照してくださ](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)い。
 
 ![デスクトップアプリで作業する際に、デスクトップアクションをショートカットとして使用できるようにする](assets/enable_desktop_actions.png)
 
