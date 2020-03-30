@@ -2,7 +2,7 @@
 title: コンテンツ配信
 description: 'コンテンツ配信 '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
 
 ---
 
@@ -221,7 +221,7 @@ HTMLページのデフォルトのclientlibインクルードは、次の例の�
 
 ローカルSDKクイックスタートで厳密なclientlibのバージョン管理を有効にするには、次の操作を実行します。
 
-1. OSGi Configuration Managerに移動します。 <host>/system/console/configMgr
+1. Navigate to the OSGi Configuration manager `<host>/system/console/configMgr`
 1. Adobe Granite HTML Library ManagerのOSGi Configを探します。
    * 「厳密なバージョン管理」を有効にする場合は、チェックボックスをオンにします
    * 「Long term client side cache key」というラベルの付いたフィールドに、/の値を入力します。*；ハッシュ
