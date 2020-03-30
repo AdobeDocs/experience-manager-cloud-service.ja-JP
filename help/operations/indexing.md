@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: 'コンテンツの検索とインデックス作成 '
 translation-type: tm+mt
-source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
+source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 687d85287769a4b9f6324822efcc7662c3e6c213
 
 ## クラウドサービスとしてのAEMの変更点 {#changes-in-aem-as-a-cloud-service}
 
-AEMをクラウドサービスとして使用する場合、アドビはAEMインスタンス中心モデルから、Cloud ManagerのCI/CDパイプラインによって駆動されるn-xのAEMコンテナを含むサービスベースのビューに移行します。 単一のAEMインスタンスでインデックスを設定および管理する代わりに、デプロイメントの前にインデックスの設定を指定する必要があります。 本番環境での設定の変更により、CI/CDのポリシーが明らかに崩れています。 インデックスの変更も同様です。システムの安定性とパフォーマンスに影響を与える可能性があるので、実稼働環境に移行する前にテストおよび再インデックスを行っておく必要があります。
+AEMをクラウドサービスとして使用する場合、アドビはAEMインスタンス中心モデルから、AEMコンテナをn個使用するサービスベースの表示に移行します。このモデルは、Cloud ManagerのCI/CDパイプラインによって駆動されます。 単一のAEMインスタンスでインデックスを設定および管理する代わりに、デプロイメントの前にインデックスの設定を指定する必要があります。 本番環境での設定の変更により、CI/CDのポリシーが明らかに崩れています。 インデックスの変更も同様です。システムの安定性とパフォーマンスに影響を与える可能性があるので、実稼働環境に移行する前にテストおよび再インデックスを行っておく必要があります。
 
-AEM 6.5以前のバージョンと比較した主な変更点を以下に示します。
+AEM 6.5以前のリストと比較した主な変更点を次に示します。
 
 1. ユーザーは、単一のAEMインスタンスのインデックスマネージャーにアクセスして、インデックスのデバッグ、設定または維持を行うことができなくなります。 ローカル開発およびオンプレミンのデプロイメントにのみ使用されます。
 
@@ -21,7 +21,7 @@ AEM 6.5以前のバージョンと比較した主な変更点を以下に示し�
 
 1. 一般に、Cloud Manager CI/CDパイプラインの品質の高いゲートウェイを迂回し、実稼働環境のビジネスKPIに影響を与えないように、実稼働環境に移行する前にインデックスの変更が開始されます。
 
-1. 検索とインデックス作成のトピックの全体像を把握するため、実稼働環境での検索パフォーマンスを含むすべての関連指標が、実行時に顧客に提供されます。
+1. 検索とインデックスのトピックの全体的な表示を提供するため、実稼働環境での検索のパフォーマンスを含むすべての関連指標が、実行時に顧客に提供されます。
 
 1. お客様は、ニーズに応じてアラートを設定できます。
 
@@ -31,7 +31,7 @@ AEM 6.5以前のバージョンと比較した主な変更点を以下に示し�
 
 1. クラウドサービスとしてのAEMの概要レベルでは、 [Blue-Greenデプロイメントモデルの導入に伴い](#index-management-using-blue-green-deployments) 、次の2組のインデックスが存在します。1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
 
-使用されるインデックスのバージョンは、フラグを介してインデックス定義のフラグを使用して設定さ `useIfExist` れます。 インデックスは、1つのバージョンのアプリケーション（例えば、青または緑のみ）、または両方のバージョンでのみ使用できます。 詳細なドキュメントは、「 [Index Management Using Blue-Green Deployments」で入手できます](#index-management-using-blue-green-deployments)。
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. お客様は、Cloud Managerのビルドページでインデックス作成ジョブが完了したかどうかを確認でき、新しいバージョンでトラフィックを受け取る準備ができたら通知を受け取ります。
 
@@ -124,9 +124,9 @@ AS NOTE: the above is internal for now.
 | 索引 | 既製のインデックス | バージョン1で使用 | バージョン2で使用 |
 |---|---|---|---|
 | /oak:index/damAssetLucene | 可 | 可 | いいえ |
-| /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | いいえ | はい |
-| /oak:index/acmeProduct-custom-1 | いいえ | はい | いいえ |
-| /oak:index/acmeProduct-custom-2 | いいえ | いいえ | はい |
+| /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | 非対応 | 対応 |
+| /oak:index/acmeProduct-custom-1 | 非対応 | 対応 | いいえ |
+| /oak:index/acmeProduct-custom-2 | いいえ | 非対応 | 対応 |
 | /oak:index/cqPageLucene | 可 | 可 | 可 |
 
 バージョン番号は、インデックスが変更されるたびに増分されます。 製品自体のインデックス名と衝突するカスタムインデックス名を避けるには、カスタムインデックスと、あらかじめ用意されているインデックスの変更を最後に記述する必要がありま `-custom-<number>`す。
@@ -138,9 +138,9 @@ AS NOTE: the above is internal for now.
 | 索引 | 既製のインデックス | バージョン2で使用 | バージョン3で使用 |
 |---|---|---|---|
 | /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | はい | いいえ |
-| /oak:index/damAssetLucene-2-custom-1 | はい（damAssetLucene-custom-1およびdamAssetLucene-2から自動的に結合） | いいえ | はい |
+| /oak:index/damAssetLucene-2-custom-1 | はい（damAssetLucene-custom-1およびdamAssetLucene-2から自動的に結合） | 非対応 | 対応 |
 | /oak:index/cqPageLucene | 可 | 可 | いいえ |
-| /oak:index/cqPageLucene-2 | はい | いいえ | はい |
+| /oak:index/cqPageLucene-2 | はい | 非対応 | 対応 |
 
 ### 制限事項 {#limitations}
 
