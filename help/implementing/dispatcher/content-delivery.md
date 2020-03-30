@@ -2,7 +2,7 @@
 title: コンテンツ配信
 description: 'コンテンツ配信 '
 translation-type: tm+mt
-source-git-commit: 149b7dd07ff06a0053eae3c9b6c22ea612fdb4e3
+source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
 
 ---
 
@@ -187,7 +187,7 @@ The dispatcher&#39;s `invalidate.cache` API approach will no longer be supported
 
 次の図に、この点を示します。
 
-![CDNCDN](assets/cdnc.png "")
+![CDNCDN](assets/cdnd.png "")
 
 ディスパッチャーキャッシュがクリアされないという問題が発生した場合は、必要に応じてディスパッチャーキャッ [シュをフラッシュできる](https://helpx.adobe.com/support.ec.html) 、カスタマーサポートにお問い合わせください。
 
