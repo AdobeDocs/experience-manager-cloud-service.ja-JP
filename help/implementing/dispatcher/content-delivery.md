@@ -2,7 +2,7 @@
 title: コンテンツ配信
 description: 'コンテンツ配信 '
 translation-type: tm+mt
-source-git-commit: 663d3c35f9b7f01d5036e852a5afb61a032bd964
+source-git-commit: b1666e7715e8f5715be7a88001869c1042c6c994
 
 ---
 
@@ -101,14 +101,6 @@ CDNでのキャッシュは、ディスパッチャールールを使用して�
 
 * デフォルトでは、Apacheレイヤーによって生成されるキャッシュ制御ヘッダーに基づいて、ブラウザーによって5分間キャッシュされます。 CDNはこの値も順守します。
 * は、AEMをクラウドサービスSDKディスパッチャーツールとして使用して変数を定 `EXPIRATION_TIME` 義することによ `global.vars` り、すべてのHTML/テキストコンテンツに対して上書きできます。
-
-の下のファイルに次の規則が適用されてい `src/conf.dispatcher.d/cache` ることを確認する必要があります。
-
-```
-/0000
-{ /glob "*" /type "allow" }
-```
-
 * は、次のapache mod_headersディレクティブを使用して、より詳細なレベルで上書きできます。
 
 ```
@@ -217,7 +209,7 @@ HTMLページのデフォルトのclientlibインクルードは、次の例の�
 <link rel="stylesheet" href="/etc.clientlibs/wkndapp/clientlibs/clientlib-base.lc-7c8c5d228445ff48ab49a8e3c865c562-lc.css" type="text/css">
 ```
 
-厳密なclientlibのバージョン管理は、すべてのAEMでクラウドサービスのバージョンとしてデフォルトで有効になっています。環境
+完全なclientlibバージョン管理は、すべてのAEMでクラウドサービスのバージョンとしてデフォルトで有効になっています。環境
 
 ローカルSDKクイックスタートで厳密なclientlibのバージョン管理を有効にするには、次の操作を実行します。
 
