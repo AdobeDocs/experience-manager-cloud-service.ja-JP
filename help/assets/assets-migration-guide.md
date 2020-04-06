@@ -3,7 +3,7 @@ title: アセット移行ガイド
 description: アセットを AEM に移行してメタデータを適用し、レンディションを生成してそれらをパブリッシュインスタンスでアクティベートする方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
+source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 
 ## 前提条件 {#prerequisites}
 
-移行手順を実際に実行する前に、パフォーマンス調整のガイダンスを確認し、実装します。 ここで紹介する手順の多くは、同時に実行可能なジョブの最大数の設定など、負荷時のサーバーの安定性とパフォーマンスを大幅に改善します。システムにアセットが読み込まれた後だと、その他の手順（ファイルデータストアの設定など）を実行するのがより困難になります。
+この方法に従って実際に手順を実行する前に、パフォーマンスチューニングガイダンスを確認して実践してください。ここで紹介する手順の多くは、同時に実行可能なジョブの最大数の設定など、負荷時のサーバーの安定性とパフォーマンスを大幅に改善します。システムにアセットが読み込まれた後だと、その他の手順（ファイルデータストアの設定など）を実行するのがより困難になります。
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ source-git-commit: ab79c3dabb658e242df08ed065ce99499c9b7357
 >* 合成ワークフロー
 >
 >
-These software are open source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+このソフトウェアはオープンソースで、[Apache v2 License](https://adobe-consulting-services.github.io/pages/license.html) が適用されます。質問や問題を報告するには、それぞれ [ACS AEM ツール](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues)と [ACS AEM Commons に関する GitHub の問題](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)を利用してください。
 
-## AEMへの移行 {#migrating-to-aem}
+## AEM への移行 {#migrating-to-aem}
 
 AEM にアセットを移行するにはいくつかの手順を経る必要があるので、フェーズ別に処理することをお勧めします。移行のフェーズは次のとおりです。
 
@@ -42,21 +42,21 @@ AEM にアセットを移行するにはいくつかの手順を経る必要が�
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Disable Workflows {#disabling-workflows}
+### ワークフローの無効化 {#disabling-workflows}
 
 移行を開始する前に、DAM アセットの更新ワークフローのランチャーを無効化します。すべてのアセットを取り込んでからワークフローをバッチで実行する方法が最適です。移行が実行されるときに既にライブである場合は、これらのアクティビティを営業時間外に実行するようにスケジュールを設定できます。
 
-### Load tags {#loading-tags}
+### タグの読み込み  {#loading-tags}
 
 画像に適用するタグ分類は既に用意されていることがあります。CSV Asset Importer などのツールや AEM のメタデータプロファイルのサポートにより、タグをアセットに適用する処理は自動化できますが、タグをシステムに読み込む必要があります。[ACS AEM ツールの Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) 機能を使用すると、システムに読み込まれた Microsoft Excel のスプレッドシートを使用してタグを入力できます。
 
-### Ingest assets {#ingesting-assets}
+### アセットの取り込み {#ingesting-assets}
 
 アセットをシステムに取り込む際に重要なのは、パフォーマンスと安定性です。システムに大量のデータを読み込むので、特に既に実稼動環境にあるシステムでは、システムがパフォーマンスを可能な限り発揮できるようにする一方で、処理に必要な時間を短縮し、システムのオーバーロードによりシステムがクラッシュしないように注意する必要があります。
 
 システムにアセットを読み込むには、HTTP を使用したプッシュベースのアプローチと JCR の API を使用したプルベースのアプローチがあります。
 
-#### HTTP経由でプッシュ {#pushing-through-http}
+#### HTTP を介したプッシュ {#pushing-through-http}
 
 アドビの Managed Services チームは Glutton というツールを使用してお客様の環境にデータを読み込みます。Glutton は小さな Java アプリケーションで、AEM インスタンスのあるディレクトリから別のディレクトリにすべてのアセットを読み込みます。Glutton の代わりに、Perl スクリプトなどのツールを使用してアセットをリポジトリに投稿することもできます。
 
@@ -67,22 +67,22 @@ HTTPS を通じたプッシュのアプローチには、主に次の 2 つの�
 
 アセットを取り込むもう一方のアプローチでは、ローカルファイルシステムからアセットを引っ張ってきます。ただし、プルベースのアプローチを実行する外部ドライブやネットワーク共有がサーバーにマウントされていない場合は、HTTP を通じたアセットの投稿が最適なオプションです。
 
-#### Pull from the local filesystem {#pulling-from-the-local-filesystem}
+#### ローカルファイルシステムからのプル {#pulling-from-the-local-filesystem}
 
-[ACS AEMツールのCSVアセットインポーターは](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) 、アセットをファイルシステムから取り出し、アセットを読み込むためのCSVファイルからアセットメタデータを取り出します。 AEM Asset Manager API はアセットをシステムに取り込み、設定したメタデータプロパティを適用します。アセットはネットワークファイルマウントまたは外部ドライブを介してサーバーにマウントされているのが理想です。
+[ACS AEM ツールの CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) は、アセットをファイルシステムから、アセットメタデータをアセット読み込みの CSV ファイルから、それぞれ取り込みます。AEM Asset Manager API はアセットをシステムに取り込み、設定したメタデータプロパティを適用します。アセットはネットワークファイルマウントまたは外部ドライブを介してサーバーにマウントされているのが理想です。
 
 アセットをネットワーク上で送信する必要がないので、全体的なパフォーマンスが劇的に向上します。このため、一般的にはこの方法がアセットをリポジトリに読み込む最も効率的な方法と見なされています。さらに、ツールがメタデータの取り込みをサポートし、すべてのアセットとメタデータを 1 つの手順で取り込むことができるので、別のツールを使用してメタデータを適用する 2 つ目の手順が不要になります。
 
-### Process renditions {#processing-renditions}
+### レンディションの処理 {#processing-renditions}
 
 アセットをシステムに読み込んだ後、メタデータを抽出してレンディションを生成するには、DAM アセットの更新ワークフローを通じてアセットを処理する必要があります。この手順を実行する前に、DAM アセットの更新ワークフローをニーズに合わせて複製および変更する必要があります。既製のワークフローには、Scene7 PTIFF の生成や InDesign サーバーの統合など、ユーザーによっては必要でない手順が多く含まれています。
 
 ニーズに合わせてワークフローを設定したら、次の 2 つの方法のいずれかで実行できます。
 
 1. 最も簡単なアプローチは、[ACS Commons の Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html) です。このツールを使用すると、クエリを実行し、クエリの結果をワークフローを通じて処理します。バッチサイズを設定するオプションも用意されています。
-1. [ACS Commons の Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) は[合成ワークフロー](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)と組み合わせて使用できます。このアプローチはより複雑ですが、AEM ワークフローエンジンのオーバーヘッドを削除し、サーバーリソースの使用を最適化します。さらに、Fast Action Manager はサーバーリソースを動的に監視し、システムに配置された読み込みをスロットリングすることでパフォーマンスを大幅に向上します。サンプルスクリプトは ACS Commons の機能ページに記載されています。
+1. [ACS Commons の Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) は[合成ワークフロー](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)と組み合わせて使用できます。このアプローチはより複雑ですが、AEM ワークフローエンジンのオーバーヘッドを削除し、サーバーリソースの使用を最適化します。さらに、Fast Action Manager はサーバーリソースを動的に監視し、システムに配置された読み込みをスロットリングすることでパフォーマンスを大幅に向上します。サンプルスクリプトは ACS Commons の機能ページに用意されています。
 
-### Activate assets {#activating-assets}
+### アセットのアクティベート {#activating-assets}
 
 パブリッシュ層のあるデプロイメントでは、アセットをパブリッシュファームにアクティベートする必要があります。アドビは 1 つ以上のパブリッシュインスタンスを実行することを推奨していますが、すべてのアセットを 1 つのパブリッシュインスタンスにレプリケートして、そのインスタンスをクローンする方法が最も効率的です。多数のアセットをアクティベートするときは、ツリーのアクティベートを実行した後に、干渉する必要が生じる場合があります。理由は、アクティベートをトリガーするときに、Sling のジョブやイベントキューに項目が追加されるからです。このキューのサイズがだいたい 40,000 項目を超えると、処理速度が劇的に低下します。このキューのサイズが 100,000 項目を超えると、システムの安定性に影響を及ぼします。
 
@@ -96,39 +96,52 @@ HTTPS を通じたプッシュのアプローチには、主に次の 2 つの�
 >
 >アドビは Grabbit を管理およびサポートしません。
 
-### Clone publish {#cloning-publish}
+### パブリッシュインスタンスのクローン {#cloning-publish}
 
 アセットがアクティベートされたら、パブリッシュインスタンスをクローンしてデプロイメントに必要なコピーを必要な分だけ作成できます。サーバーのクローンは比較的簡単ですが、いくつか重要な手順があります。パブリッシュをクローンするには：
 
 1. ソースインスタンスとデータストアをバックアップします。
 1. インスタンスとデータストアのバックアップを対象の場所に復元します。続く手順はすべてこの新しいインスタンスを参照します。
-1. Perform a filesystem search under `crx-quickstart/launchpad/felix` for `sling.id`. このファイルを削除します。
-1. データストアのルートパスで、`repository-XXX` ファイルを探してすべて削除します。
-1. を編集 `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` し、 `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` 新しいデータストア上のデータストアの場所を指すように環境します。
+1. **crx-quickstart/launchpad/felix** でファイルシステムの検索を実行し、**sling.id** を探します。このファイルを削除します。
+1. データストアのルートパスで、**repository-XXX** ファイルを探してすべて削除します。
+1. **crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config** と **crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config** を編集して、新しい環境のデータストアの場所を指定します。
 1. 環境を開始します。
 1. オーサー環境にあるすべてのレプリケーションエージェントが正しいパブリッシュインスタンスを指す、または新しいインスタンスのディスパッチャーのフラッシュエージェントが新しい環境の正しいディスパッチャーを参照するように設定を更新します。
 
-### Enable Workflows {#enabling-workflows}
+### ワークフローの有効化 {#enabling-workflows}
 
 移行が完了したら、レンディションの生成とメタデータの抽出をサポートするように DAM の更新アセットワークフローのランチャーを再度有効化し、稼動中のシステムが日常的に使用できるようにします。
 
-## AEMインスタンス間の移行 {#migrating-between-aem-instances}
+## AEM インスタンス間の移行 {#migrating-between-aem-instances}
 
 それほど一般的ではありませんが、ある AEM インスタンスからもう一方のインスタンスに大量のデータを移行する必要があることもあります。例えば、AEM やお使いのハードウェアをアップグレードする場合や、AMS の移行などに伴い新しいデータセンターに移行する場合などです。
 
 このケースでは、移行するアセットには既にメタデータが入力されており、レンディションは既に生成されています。インスタンス間の移動に集中することができます。AEM インスタンス間で移行するには、次の手順を実行します。
 
-1. アセットと共にレンディションを移行するので、DAM アセットの更新のワークフローランチャーを無効化する必要があります。
+1. ワークフローを無効化する。
 
-1. タグは既に移動元の AEM インスタンスに読み込まれているので、それらをコンテンツパッケージにビルドしてそのパッケージをターゲットインスタンスにインストールできます。
+   アセットと共にレンディションを移行するので、DAM アセットの更新のワークフローランチャーを無効化する必要があります。
 
-1. AEM インスタンス間でのアセットの移動に推奨されるツールは次の 2 つです。
+1. タグを移行する。
+
+   タグは既に移動元の AEM インスタンスに読み込まれているので、それらをコンテンツパッケージにビルドしてそのパッケージをターゲットインスタンスにインストールできます。
+
+1. アセットを移行する。
+
+   AEM インスタンス間でのアセットの移動に推奨されるツールは次の 2 つです。
 
    * **Vault Remote Copy**（vlt rcp）。ネットワーク全体に対して vit を使用できます。移動元と移動先のディレクトリを指定すると、vit がすべてのリポジトリデータを一方のインスタンスからダウンロードし、もう一方に読み込みます。vt rcp については、[https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html) に記載されています。
    * **Grabbit**。Time Warner Cable が AEM の実装のために開発した、オープンソースのコンテンツ同期ツールです。継続的なデータストリームを使用するので、vlt rcp と比較して待ち時間が少なく、vlt rcp の 2 倍から 10 倍高速であると言われています。また、Grabbit はデルタコンテンツのみの同期をサポートし、最初の移行パスが完了した後に加えられた変更を同期できます。
 
-1. Follow the instructions to [activate assets](#activating-assets) documented for the initial migration to AEM.
+1. アセットをアクティベートする。
 
-1. 新規移行と同様に、コンテンツを両方のノードでアクティベートするよりも、1 つのパブリッシュインスタンスを読み込んでクローンする方法のほうが効率的です。[パブリッシュインスタンスのクローン](#cloning-publish)を参照してください。
+   AEM への最初の移行については、[アセットのアクティベート](#activating-assets)の手順に従って進めてください。
 
-1. 移行が完了したら、レンディションの生成とメタデータの抽出をサポートするように DAM の更新アセットワークフローのランチャーを再度有効化し、稼動中のシステムが日常的に使用できるようにします。
+1. パブリッシュインスタンスをクローンする。
+
+   新規移行と同様に、コンテンツを両方のノードでアクティベートするよりも、1 つのパブリッシュインスタンスを読み込んでクローンする方法のほうが効率的です。[パブリッシュインスタンスのクローン](#cloning-publish)を参照してください。
+
+1. ワークフローを有効化する。
+
+   移行が完了したら、レンディションの生成とメタデータの抽出をサポートするように DAM の更新アセットワークフローのランチャーを再度有効化し、稼動中のシステムが日常的に使用できるようにします。
+
