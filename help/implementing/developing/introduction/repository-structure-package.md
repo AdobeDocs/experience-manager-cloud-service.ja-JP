@@ -1,37 +1,37 @@
 ---
-title: 'AEMプロジェクトリポジトリ構造パッケージ  '
-description: Adobe Experience ManagerをクラウドサービスMavenプロジェクトとして使用するには、リポジトリ構造サブパッケージ定義が必要です。この定義の唯一の目的は、プロジェクトのコードサブパッケージがデプロイされるJCRリポジトリルートを定義することです。
+title: 'リポジトリ構造パッケージの作成   '
+description: Adobe Experience Manager as a Cloud Service の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトのコードサブパッケージがデプロイされる JCR リポジトリルートを定義することです。
 translation-type: tm+mt
-source-git-commit: fb398147c5a2635f58250b8de886159b4ace2943
+source-git-commit: 46d556fdf28267a08e5021f613fbbea75872ef21
 
 ---
 
 
-# AEMプロジェクトリポジトリ構造パッケージ
+# リポジトリ構造パッケージの作成
 
-クラウドサービスとしてのAdobe Experience Manager用のMavenプロジェクトには、リポジトリ構造のサブパッケージ定義が必要です。このサブパッケージ定義の唯一の目的は、プロジェクトのコードサブパッケージのデプロイ先のJCRリポジトリルートを定義することです。 これにより、Experience Managerでのクラウドサービスとしてのパッケージのインストールが、JCRリソースの依存関係によって自動的に順序付けられます。 依存関係が見つからないと、親構造の前にサブ構造がインストールされ、予期せず削除され、配置が中断される場合があります。
+Adobe Experience Manager as a Cloud Service の Maven プロジェクトには、リポジトリ構造サブパッケージ定義が必要です。この定義の目的は、プロジェクトのコードサブパッケージがデプロイされる JCR リポジトリルートを定義することです。これにより、Adobe Experience Manager as a Cloud Service でのパッケージのインストールが、JCR リソースの依存関係に基づいて自動的に順序付けられます。依存関係が見つからないと、サブ構造が親構造より先にインストールされた結果、予期せず削除されて、デプロイメントが機能しなくなる場合があります。
 
-コードパッケージで&#x200B;**カバーされていない**&#x200B;場所にコードパッケージをデプロイする場合、これらの依存関係を確立するには、リポジトリ構造パッケージで上位のリソース（JCR ルートに近い JCR リソース）を列挙する必要があります。
+コードパッケージで&#x200B;**対応していない**&#x200B;場所にコードパッケージがデプロイされた場合、これらの依存関係を確立するには、あらゆる上位リソース（JCR ルートに近い JCR リソース）をリポジトリ構造パッケージで列挙する必要があります。
 
 ![リポジトリ構造パッケージ](./assets/repository-structure-packages.png)
 
-リポジトリ構造パッケージは、パッケージバリデーターが、標準的なルートとして「 `/apps` 競合の可能性がない」領域を判断する際に使用する、期待される共通の状態を定義します。
+リポジトリ構造パッケージでは、`/apps` の想定される一般的な状態を定義します。この状態は、標準的なルートになっても「潜在的な競合のおそれがない」領域を決定するためにパッケージバリデーターで使用されるものです。
 
-リポジトリ構造パッケージに含める最も一般的なパスは、次のとおりです。
+リポジトリ構造パッケージに含める最も典型的なパスは次のとおりです。
 
-+ `/apps` システムが提供するノード
-+ `/apps/cq/...`、、 `/apps/dam/...`、お `/apps/wcm/...`よびの共通の `/apps/sling/...` オーバーレイを提供しま `/libs`す。
-+ `/apps/settings` 共有コンテキスト対応設定のルートパス
++ `/apps`（システム提供のノード）
++ `/apps/cq/...`、`/apps/dam/...`、`/apps/wcm/...`、`/apps/sling/...`（`/libs` の一般的なオーバーレイを提供）
++ `/apps/settings`（コンテキスト対応の共有の設定ルートパス）
 
-このサブパッケージにはコンテ **ンツは含まれず** 、フィルターのルートを定義するだけのもので `pom.xml` 構成されています。
+このサブパッケージはコンテンツを&#x200B;**含んでおらず**、フィルタールートを定義する `pom.xml` だけで構成されていることに注意してください。
 
 ## リポジトリ構造パッケージの作成
 
-Mavenプロジェクト用のリポジトリ構造パッケージを作成するには、新しい空のMavenサブプロジェクトを作成し、次の手順で、親Mavenプロジェクトに適合するよ `pom.xml`うにプロジェクトのメタデータを更新します。
+Maven プロジェクトのリポジトリ構造パッケージを作成するには、以下の `pom.xml` を使用して空の Maven サブプロジェクトを新しく作成し、親 Maven プロジェクトに準拠するようにプロジェクトメタデータを更新します。
 
-コードパッケ `<filters>` ージのデプロイ先のすべてのJCRリポジトリパスを含めるように、を更新します。
+`<filters>` を更新して、コードパッケージのデプロイ先となるすべての JCR リポジトリパスルートを含めます。
 
-この新しいMavenサブプロジェクトを親プロジェクトリストに追加してく `<modules>` ださい。
+この新しい Maven サブプロジェクトを、必ず親プロジェクトの `<modules>` リストに追加してください。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -51,9 +51,9 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>ui.apps.structure</artifactId>
+    <artifactId>my-app.repository-structure</artifactId>
     <packaging>content-package</packaging>
-    <name>UI Apps Structure - Repository Structure Package for /apps</name>
+    <name>My App - Adobe Experience Manager Repository Structure Package</name>
 
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the code packages in this project deploy into.
@@ -66,10 +66,6 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
-                <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
-                    <cloudManagerTarget>none</cloudManagerTarget>
-                </properties>
                 <configuration>
                     <properties>
                         <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
@@ -80,29 +76,14 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
                         <!-- /apps root -->
                         <filter><root>/apps</root></filter>
 
-                        <!--
-                        Examples of complex roots
-
-
-                        Overlays of /libs typically require defining the overlayed structure, at each level here.
-
-                        For example, adding a new section to the main AEM Tools navigation, necessitates the following rules:
-
+                        <!-- Common overlay roots -->
+                        <filter><root>/apps/sling</root></filter>
                         <filter><root>/apps/cq</root></filter>
-                        <filter><root>/apps/cq/core</root></filter>
-                        <filter><root>/apps/cq/core/content</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/</root></filter>
-                        <filter><root>/apps/cq/core/content/nav/tools</root></filter>
+                        <filter><root>/apps/dam</root></filter>
+                        <filter><root>/apps/wcm</root></filter>
 
-
-                        Any /apps level Context-aware configurations need to enumerated here. 
-                        
-                        For example, providing email templates under `/apps/settings/notification-templates/com.day.cq.replication` necessitates the following rules:
-
+                        <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
-                        <filter><root>/apps/settings/notification-templates</root></filter>
-                        <filter><root>/apps/settings/notification-templates/com.day.cq.replication</root></filter>
-                        -->
 
                     </filters>
                 </configuration>
@@ -114,9 +95,9 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
 
 ## リポジトリ構造パッケージの参照
 
-リポジトリ構造パッケージを使用するには、FileVaultコンテンツパッケージMavenプラグイン設定を介して、すべてのコードパッケージ(デプロイ先のサブパッケージ `/apps`)Mavenプロジェクトを介して参照 `<repositoryStructurePackage>` します。
+リポジトリ構造パッケージを使用するには、すべてのコードパッケージ（`/apps` にデプロイされるサブパッケージ）でリポジトリ構造パッケージを参照します。また、FileVault コンテンツパッケージ Maven プラグインの `<repositoryStructurePackage>` 設定で Maven プロジェクトを参照します。
 
-およびそ `ui.apps/pom.xml`の他のコード `pom.xml`パッケージで、プロジェクトのリポジトリ構造パッケージ(#repository-structure-package)設定への参照をFileVaultパッケージMavenプラグインに追加します。
+`ui.apps/pom.xml` と、その他のあらゆるコードパッケージの `pom.xml` で、プロジェクトのリポジトリ構造パッケージ（#repository-structure-package）設定への参照を FileVault パッケージ Maven プラグインに追加します。
 
 ```xml
 ...
@@ -131,7 +112,7 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>my-app.repository-structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -143,7 +124,7 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
     <!-- Add the dependency for the repository structure package so it resolves -->
     <dependency>
         <groupId>${project.groupId}</groupId>
-        <artifactId>ui.apps.structure</artifactId>
+        <artifactId>my-app.repository-structure</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
     </dependency>
@@ -151,33 +132,33 @@ Mavenプロジェクト用のリポジトリ構造パッケージを作成する
 </dependencies>
 ```
 
-## マルチコードパッケージの使用例
+## 複数コードパッケージの使用例
 
-一般的でなく複雑な使用例は、JCRリポジトリの同じ領域にインストールする複数のコードパッケージのデプロイをサポートしています。
+JCR リポジトリの同じ領域にインストールされる複数のコードパッケージのデプロイメントをサポートしている使用例もありますが、これは一般的ではありません。また、一般的な使用例よりも複雑です。
 
-次に例を示します。
+例えば、次のような場合です。
 
-+ コードパッケージAは、 `/apps/a`
-+ コードパッケージBは、 `/apps/a/b`
++ コードパッケージ A が `/apps/a` にデプロイされる
++ コードパッケージ B が `/apps/a/b` にデプロイされる
 
-コードパッケージAのコードパッケージBからパッケージレベルの依存関係が確立されない場合、コードパッケージBは最初ににに展開し、次にコードパッケージBに展開してから、に展開して、以前にインストールさ `/apps/a`れたコードを削除しま `/apps/a``/apps/a/b`す。
+コードパッケージ B からのパッケージレベルの依存関係がコードパッケージ A 上で確立されていない場合は、まずコードパッケージ B が `/apps/a` にデプロイされ、続いてコードパッケージ A が `/apps/a` にデプロイされます。この場合、先にインストールされた `/apps/a/b` が削除されます。
 
-この場合、次のようになります。
+この場合の解決策は、次のとおりです。
 
-+ コードパッケージAは、プロジェク `<repositoryStructurePackage>` トのリポジトリ構造パッケージ(フィルタを含む必要があ `/apps`る)でを定義します。
-+ コードパッケージBはコードパッケージA `<repositoryStructurePackage>` で共有されるスペースに展開されるので、コードパッケージBはコードパッケージAを定義する必要があります。
++ コードパッケージ A は、プロジェクトのリポジトリ構造パッケージ（`/apps` のフィルターが必要）上で `<repositoryStructurePackage>` を定義する必要があります。
++ コードパッケージ B はコードパッケージ A 上で `<repositoryStructurePackage>` を定義する必要があります。コードパッケージ A で共有される領域にコードパッケージ B がデプロイされるからです。
 
 ## エラーとデバッグ
 
-リポジトリ構造パッケージが正しく設定されていない場合、Mavenの構築時に次のエラーが報告されます。
+リポジトリ構造パッケージが正しくセットアップされていない場合は、Maven のビルド時に次のようなエラーが報告されます。
 
 ```
 1 error(s) detected during dependency analysis.
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-これは、改行コードパッケージに、フィルターリストに含まれ `<repositoryStructurePackage>` る改行コードが含ま `/apps/some/path` れていないことを示します。
+これは、フィルターリストに `/apps/some/path` が含まれている `<repositoryStructurePackage>` がコードパッケージにないことが原因で、エラーが発生していることを示しています。
 
 ## その他のリソース
 
-+ [FileVault Content Package Mavenプラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [FileVault コンテンツパッケージ Maven プラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
