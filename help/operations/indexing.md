@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: 'コンテンツの検索とインデックス作成 '
 translation-type: tm+mt
-source-git-commit: 7bcd55570cb6996315046865264b39d1a4dc671a
+source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ---
 
@@ -31,7 +31,7 @@ AEM 6.5以前のリストと比較した主な変更点を次に示します。
 
 1. クラウドサービスとしてのAEMの概要レベルでは、 [Blue-Greenデプロイメントモデルの導入に伴い](#index-management-using-blue-green-deployments) 、次の2組のインデックスが存在します。1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
 
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+使用されるインデックスのバージョンは、フラグを介してインデックス定義のフラグを使用して設定さ `useIfExist` れます。 インデックスは、1つのバージョンのアプリケーション（例えば、青または緑のみ）、または両方のバージョンでのみ使用できます。 詳細なドキュメントは、「 [Index Management Using Blue-Green Deployments」で入手できます](#index-management-using-blue-green-deployments)。
 
 1. お客様は、Cloud Managerのビルドページでインデックス作成ジョブが完了したかどうかを確認でき、新しいバージョンでトラフィックを受け取る準備ができたら通知を受け取ります。
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-その下に潜らなければならな `ui.apps/src/main/content/jcr_root`い 現時点では、サブルートフォルダーはサポートされていません。
+その下に潜らなければならな `ui.content/src/main/content/jcr_root`い 現時点では、サブルートフォルダーはサポートされていません。
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,15 +69,11 @@ AS NOTE: the above is internal for now.
 
 ### 索引定義の配置 {#deploying-index-definitions}
 
-> [!NOTE]
->
-> Jackrabbit Filevault Mavenパッケージプラグインのバージョン **1.1.0には既知の問題があり** 、のモジュールに追加できな `oak:index` い問題があります `<packageType>application</packageType>`。 この問題に対処するには、バージョン1.0.4 **を使用してください**。
-
 インデックス定義は、カスタムおよびバージョン管理としてマークされるようになりました。
 
-* インデックス定義自体(例 `/oak:index/ntBaseLucene-custom-1`)
+* MUTABLEコンテンツであるインデックス定 `/oak:index/ntBaseLucene-custom-1`義自体（例えば）
 
-したがって、インデックスを展開するには、インデックス定義(`/oak:index/definitionname`)をGitおよびCloud Managerの展開プロセス `ui.apps` 経由で配信する必要があります。
+したがって、インデックスを展開するには、インデックス定義(`/oak:index/definitionname`)を可変パッケージ(通常はGitとCloud Managerの展開プロセ ****`ui.content` スを介して)経由で配信する必要があります。
 
 新しいインデックス定義を追加したら、新しいアプリケーションをCloud Managerを使用してデプロイする必要があります。 配置時に2つのジョブが開始され、作成者と発行用のインデックス定義をMongoDBとAzureセグメントストアに追加（および必要に応じて結合）します。 Blue-Greenスイッチが発生する前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されています。
 
@@ -85,7 +81,7 @@ AS NOTE: the above is internal for now.
 
 ### インデックス管理とは {#what-is-index-management}
 
-インデックス管理は、インデックスの追加、削除、変更に関するものです。 インデックス *の定義の変更は* 、すばやく行えますが、変更を適用する（「インデックスの作成」と呼ばれることが多く、既存のインデックスの場合は「インデックスの再作成」と呼ばれる）には時間が必要です。 即時ではありません。インデックスを作成するデータをリポジトリでスキャンする必要があります。
+インデックス管理とは、インデックスの追加、削除、変更に関するものです。 インデックス *の定義の変更は* 、すばやく行えますが、変更を適用する（「インデックスの作成」と呼ばれることが多く、既存のインデックスの場合は「インデックスの再作成」と呼ばれる）には時間が必要です。 即時ではありません。インデックスを作成するデータをリポジトリでスキャンする必要があります。
 
 ### 青緑の導入とは {#what-is-blue-green-deployment}
 
@@ -123,11 +119,11 @@ AS NOTE: the above is internal for now.
 
 | 索引 | 既製のインデックス | バージョン1で使用 | バージョン2で使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene | 可 | 可 | いいえ |
-| /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | 非対応 | 対応 |
-| /oak:index/acmeProduct-custom-1 | 非対応 | 対応 | いいえ |
-| /oak:index/acmeProduct-custom-2 | いいえ | 非対応 | 対応 |
-| /oak:index/cqPageLucene | 可 | 可 | 可 |
+| /oak:index/damAssetLucene | はい | はい | 不可 |
+| /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | 不可 | 可 |
+| /oak:index/acmeProduct-custom-1 | 不可 | 可 | 不可 |
+| /oak:index/acmeProduct-custom-2 | 不可 | 不可 | 可 |
+| /oak:index/cqPageLucene | はい | 可 | はい |
 
 バージョン番号は、インデックスが変更されるたびに増分されます。 製品自体のインデックス名と衝突するカスタムインデックス名を避けるには、カスタムインデックスと、あらかじめ用意されているインデックスの変更を最後に記述する必要がありま `-custom-<number>`す。
 
@@ -137,10 +133,10 @@ AS NOTE: the above is internal for now.
 
 | 索引 | 既製のインデックス | バージョン2で使用 | バージョン3で使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | はい | いいえ |
-| /oak:index/damAssetLucene-2-custom-1 | はい（damAssetLucene-custom-1およびdamAssetLucene-2から自動的に結合） | 非対応 | 対応 |
-| /oak:index/cqPageLucene | 可 | 可 | いいえ |
-| /oak:index/cqPageLucene-2 | はい | 非対応 | 対応 |
+| /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | はい | 不可 |
+| /oak:index/damAssetLucene-2-custom-1 | はい（damAssetLucene-custom-1およびdamAssetLucene-2から自動的に結合） | 不可 | 可 |
+| /oak:index/cqPageLucene | はい | はい | 不可 |
+| /oak:index/cqPageLucene-2 | はい | 不可 | 可 |
 
 ### 制限事項 {#limitations}
 
