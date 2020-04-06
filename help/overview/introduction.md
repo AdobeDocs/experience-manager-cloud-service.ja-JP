@@ -1,78 +1,76 @@
 ---
-title: クラウドサービスとしてのAdobe Experience Managerの概要
-description: 'クラウドサービスとしてのAdobe Experience Manager(AEM)の概要を説明します。 '
+title: Adobe Experience Manager as a Cloud Service の概要
+description: 'Adobe Experience Manager (AEM) as a Cloud Service の概要。 '
 translation-type: tm+mt
-source-git-commit: bdda0ab15fa2cac40aefa5f60809ca96302fcabb
+source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
 
 ---
 
 
-# An Introduction to Adobe Experience Manager as a Cloud Service {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
+# Adobe Experience Manager as a Cloud Service の概要 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM)がクラウドサービスとして利用できるようになりました。
+[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html)（AEM）はクラウドサービスとして利用可能になりました。
 
-Adobe Experience Manager as a Cloud Service:
+Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 
-* AEMアプリケーションを活用するクラウドネイティブの方法です。
+* AEM アプリケーションのクラウドネイティブな利用手段です。
 
-* AEMコンテンツ管理システムの機能とAEM Digital Asset Managementを組み合わせて、コンテンツ主導のパーソナライズされたエクスペリエンスを顧客に提供できます。
+* AEM コンテンツ管理システムの機能と AEM デジタルアセット管理を組み合わせて、コンテンツ主導のパーソナライズされたエクスペリエンスをユーザーに提供できます。
 
-* ダウンタイムを必要としない配信と継続的な統合を提供します。
+* ダウンタイムなしのアップデートを実現する継続的配信と継続的統合を提供します。
 
-* 組み込みのコンテンツ配信ネットワーク(CDN)や他のネットワーク層のベストプラクティスを活用し、コンテンツを迅速かつ効率的に配信します。
+* 規模を自動的に拡大／縮小できる動的アーキテクチャに基づいているので、インフラストラクチャに関する考慮が不要になります。
 
-* 自動拡張によりインフラストラクチャの考慮事項を排除する、動的なアーキテクチャに基づいています。
+* セキュリティに重点を置き、自動テストを使用して一般的な脆弱性をスキャンします。
 
-* セキュリティに重点を置き、自動化されたテストを使用して、一般的な脆弱性をスキャンします。
+* 自動テストを使用してユーザーコードを検証します。
 
-* 自動テストを使用して顧客コードを検証します。
+* 耐障害性と効率性を最大限に高めるために、パフォーマンストポロジーが最適化されています。
 
-* パフォーマンストポロジーを最適化し、最大限の耐障害性と効率性を実現。
+* 必要な手動設定が大幅に削減されます。
 
-* 必要な手動設定を大幅に削減。
+* Adobe Experience Cloud と密接に統合されています。
 
-* Adobe Experience Cloudとの緊密な統合。
+* 次世代の Adobe Experience Manager 製品ラインを導入しており、これまでの投資と技術革新に基づき、あらゆる使用例と機能を維持および拡張します。
 
-* 次世代のAdobe Experience Manager製品ラインを紹介します。これまでの投資と革新性に基づいて構築され、すべての使用事例と機能を保持し、拡張します。
+これにより、次のようなメリットがあります。
 
-以下のヘルプ：
+* 開発者は、これまで AEM を成功に導いてきたパターンと新しいクラウドベース開発パターンに従って、AEM の設定と拡張に専念できます。
 
-* 開発者は、AEMを設定および拡張することに重点を置いています。これまでAEMを成功に導いたのと同じパターンを、クラウドベースの新しい開発パターンで拡張してきました。
+* 作成者は、定期的に提供される最新のイノベーションを活用できます。
 
-* 作者は、定期的に提供される最新のイノベーションを楽しみます。
+* システム管理者向けの設定とインフラストラクチャが簡素化されます。
 
-* システム管理者向けの構成とインフラストラクチャの簡素化。
-
-* マーケティング担当者は、より迅速な価値の創出を実現できます。
+* マーケティング担当者は、価値創出までの時間を短縮できます。
 
 >[!NOTE]
 >
->AEMでクラウド [サービスとして](terminology.md) 「」と共に導入された新しい用語については、「用語」を参照してください。
+>AEM as a Cloud Service で導入された新しい用語の一部については、[用語](terminology.md)を参照してください。
 
-## クラウドサービスとして追加された値 {#value-added-as-a-cloud-service}
+## クラウドサービスとして追加された価値 {#value-added-as-a-cloud-service}
 
-AEMは、最新のクラウドサービスの主な特徴を取り入れることで、次の目標を達成します。
+AEM は、最新のクラウドサービスの主な特徴を取り入れることで、次の目標を達成します。
 
-* 常にオンになります。
+* 常に稼動：
 
-   * ダウンタイムが発生しないように、サービスアーキテクチャ全体を再訪問しました。には、コンテンツ管理機能もコンテンツ配信機能もありません。
+   * コンテンツ管理機能でもコンテンツ配信機能でもダウンタイムが発生しないように、サービスアーキテクチャ全体が見直されました。
 
-* 常に拡大・縮小されます。
+* 常に適切な規模に設定：
 
-   * クラウドサービスとしてのAEMのすべてのインスタンスは同じように作成されます。したがって、サービスアーキテクチャは、ニーズに応じて自動的に拡大/縮小されます。
+   * AEM as a Cloud Service のインスタンスはすべて同じように作成されるので、サービスアーキテクチャは、ニーズに応じて規模を自動的に拡大／縮小できます。
 
-* 常に最新の状態です。
+* 常に最新の状態を維持：
 
-   * クラウドサービスとしてのAEMは、AEMコードベースの新しい継続的な配信パイプラインを実装し、毎月最大数回の自動更新を行います。 これにより、最新バージョンを使用し続けることで、AEMアプリケーションの主な課題の1つを解決できます。
+   * AEM as a Cloud Service には、AEM コードベースの新しい継続的配信パイプラインと、1 ヶ月に数回までの自動更新が実装されています。これにより、常に最新のバージョンに保つことで、AEM アプリケーションの主な課題の 1 つを解決できます。
 
-* それは常に進化しています。
+* 常に進化：
 
-   * クラウドサービスとしてのAEMは、お客様が実装したプロジェクトに基づいて日々展開されます。 コンテンツ、コード、設定は常に見直され、ベストプラクティスに反して検証され、お客様のビジネス目標を達成する方法についてのガイドが提供されます。
+   * AEM as a Cloud Service は、ユーザーが実装したプロジェクトに基づいて日々進化します。コンテンツ、コード、設定が、ベストプラクティスに照らして常に見直され検証されるので、ユーザーのビジネス目標の達成方法に関して適切にガイドできます。
 
-## Adobe Experience Managerをクラウドサービスとして知る {#getting-to-know-aem-as-cloud-service}
+## Adobe Experience Manager as a Cloud Service の理解 {#getting-to-know-aem-as-cloud-service}
 
-* [クラウドサービスとしてのAdobe Experience Managerと](/help/overview/what-is-new-and-different.md) 以前のバージョンとの新機能と違い
-* The [Architecture](/help/core-concepts/architecture.md) of Adobe Experience Manager as a Cloud Service
-* [クラウドサービスとしてのAEMのAEMサイトに対する注目すべき変更](/help/sites-cloud/sites-cloud-changes.md)
-* [クラウドサービスとしてのアセットの概要](/help/assets/overview.md)
+* Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
+* [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
