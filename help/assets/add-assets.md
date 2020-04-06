@@ -1,42 +1,42 @@
 ---
-title: デジ追加タルアセットをAdobe Experience Managerに送信
-description: クラウ追加ドサービスとしてのデジタルアセットのAdobe Experience Managerへの移行
+title: Adobe Experience Manager へのデジタルアセットの追加
+description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
 
 ---
 
 
-# Adobe Experience Manager追加へのデジタルアセット {#add-assets-to-experience-manager}
+# Adobe Experience Manager へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
-Adobe Experience Managerは、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のDigital Asset Management(DAM)サービスで強化します。 画像、ドキュメント、生画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブからExperience Manager Assetsにアップロードできます。
+デジタルファイルを Adobe Experience Manager にアップロードすると、豊富なメタデータ、スマートタグ、レンディション、その他のデジタルアセット管理（DAM）サービスでファイルのバイナリコンテンツを強化できます。ローカルフォルダーまたはネットワークドライブから Adobe Experience Manager Assets に様々な種類のファイル（画像、PDF ファイル、RAW ファイルなど）をアップロードできます。
 
-多数のアップロード方法が用意されています。 最も一般的に使用されるブラウザーのアップロードに加えて、Adobe Asset LinkやExperience Managerデスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードスクリプトや取り込みスクリプト、AEM拡張機能として追加された自動取り込み統合など、Experience Managerリポジトリへのアセットの追加方法もあります。
+アップロード方法は多数用意されています。最もよく使用されるブラウザーアップロードに加えて、他の方法でも Adobe Experience Manager リポジトリにアセットを追加することができます。Adobe Asset Link や Adobe Experience Manager デスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードおよび取り込みスクリプト、AEM 拡張機能として追加されている自動取り込み統合などです。
 
-ここでは、エンドユーザー向けのアップロード方法に焦点を当て、Experience Manager APIおよびSDKを使用したアセットのアップロードと取り込みの技術的な側面を説明する記事へのリンクを提供します。
+ここでは、エンドユーザー向けのアップロード方法に焦点を当て、Adobe Experience Manager API および SDK を使用したアセットアップロードおよび取り込みの技術的側面について説明する記事へのリンクを示します。
 
-Experience Managerで任意のバイナリファイルをアップロードおよび管理できますが、一般的に使用されるファイル形式では、メタデータの抽出やプレビュー/レンディションの生成など、追加のサービスがサポートされています。 詳しくは、サポ [ートされるファイル形式](file-format-support.md) を参照してください。
+Adobe Experience Manager では任意のバイナリファイルをアップロードおよび管理できますが、最もよく使用されるファイル形式については、メタデータ抽出やプレビュー／レンディション生成などの追加サービスもサポートされています。詳しくは、[サポートされているファイル形式](file-format-support.md)を参照してください。
 
-アップロードしたアセットに対して追加の処理を行うように選択することもできます。 アセットのアップロード先のフォルダに、特定のメタデータ、レンディションまたは画像処理サービスを追加するために、複数のアセット処理プロファイルを設定できます。 詳しくは [、以下の「追加処理](#additional-processing) 」を参照してください。
+アップロードしたアセットに対して追加の処理をおこなうように選択することもできます。アセットのアップロード先のフォルダーに様々なアセット処理プロファイルを設定して、特定のメタデータ、レンディションまたは画像処理サービスを追加することができます。詳しくは、この後の[追加処理](#additional-processing)を参照してください。
 
 > [!NOTE]
 >
-> クラウドサービスとしてのExperience Managerは、アセットを直接バイナリでアップロードする新しい方法を利用します。 デフォルトでは、AEMユーザーインターフェイス、Adobe Asset Link、AEMデスクトップアプリケーションなど、初期設定の製品機能とクライアントによってサポートされ、エンドユーザーに対しては透明になります。
+> Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。この方法は、AEM ユーザーインターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションなどの標準の製品機能やクライアントでデフォルトでサポートされているので、エンドユーザーがそれを意識することはありません。
 >
-> お客様のテクニカルチームがカスタマイズまたは拡張するコードをアップロードする場合は、新しいアップロードAPIとプロトコルを使用する必要があります。
+> ユーザー側の技術チームでカスタマイズまたは拡張されるアップロードコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
-## Upload assets {#upload-assets}
+## アセットのアップロード {#upload-assets}
 
-ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択し、ユーザーインターフェイス（Webブラウザー）にドラッグ&amp;ドロップしてアップロード先フォルダーに移動します。 または、ユーザインターフェイスからアップロードを開始できます。
+ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（Web ブラウザー）内の目的のフォルダーにドラッグ＆ドロップします。または、ユーザーインターフェイスからアップロードを開始することもできます。
 
-1. アセットユーザーインターフェイスで、デジタルアセットを追加する場所に移動します。
+1. Assets ユーザーインターフェイスで、デジタルアセットを追加する場所に移動します。
 1. アセットをアップロードするには、以下のいずれかの操作をおこないます。
 
-   * On the toolbar, tap the **[!UICONTROL Create]** icon. 次に、メニューで「**[!UICONTROL ファイル]**」をタップします。表示されたダイアログで、必要に応じてファイル名を変更できます。
-   * HTML5をサポートするブラウザーで、アセットをアセットユーザーインターフェイスに直接ドラッグします。 ファイル名を変更するためのダイアログは表示されません。
+   * ツールバーの「**[!UICONTROL 作成]**」アイコンをタップします。次に、メニューで「**[!UICONTROL ファイル]**」をタップします。表示されたダイアログで、必要に応じてファイル名を変更できます。
+   * HTML5 をサポートするブラウザーで、アセットを Assets ユーザーインターフェイスに直接ドラッグします。ファイル名を変更するためのダイアログは表示されません。
    ![create_menu](assets/create_menu.png)
 
-   複数のファイルを選択するには、CtrlキーまたはCommandキーを押し、ファイル選択ダイアログでアセットを選択します。 iPadを使用する場合は、一度に1つのファイルのみを選択できます。
+   複数のファイルを選択するには、ファイル選択ダイアログで、Ctrl キーまたは Command キーを押しながらアセットを選択します。iPad を使用している場合、一度に選択できるファイルは 1 つだけです。
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -55,7 +55,7 @@ Experience Managerで任意のバイナリファイルをアップロードお�
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. To cancel an ongoing upload, click close (`X`) next to the progress bar. アップロード操作をキャンセルすると、AEM Assetsはアセットの一部がアップロードされた部分を削除します。
+1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。アップロード処理をキャンセルすると、AEM Assets はアセットのアップロード済みの部分を削除します。
 
    ファイルがアップロードされる前にアップロード操作をキャンセルすると、AEM Assets が現在のファイルのアップロードを停止し、コンテンツを更新します。ただし、既にアップロードされているファイルは削除されません。
 
@@ -64,7 +64,7 @@ Experience Managerで任意のバイナリファイルをアップロードお�
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Experience Managerで任意のバイナリファイルをアップロードお�
 
 > [!NOTE]
 >
-> ネストされたフォルダ階層をAEMにアップロードする方法については、アセットの [一括アップロードを参照してくださ](#bulk-upload)い。
+> ネストされたフォルダー階層を AEM にアップロードする必要がある場合は、[アセットの一括アップロード](#bulk-upload)を参照してください。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -102,75 +102,75 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 
 アセットのアップロード先に既に存在するアセットと同じ名前のアセットをアップロードすると、警告ダイアログが表示されます。
 
-既存のアセットを置き換えるか、別のバージョンを作成するか、アップロードする新しいアセットの名前を変更して両方のアセットを残すかを選択できます。既存のアセットを置き換えると、アセットのメタデータと、既存のアセットに対して行った以前の変更（注釈、切り抜きなど）がすべて削除されます。 If you choose to keep both assets, the new asset is renamed with the number `1` appended to its name.
+既存のアセットを置き換えるか、別のバージョンを作成するか、アップロードする新しいアセットの名前を変更して両方のアセットを残すかを選択できます。既存のアセットを置き換えると、アセットのメタデータと、既存のアセットに対して以前におこなった変更内容（注釈、切り抜きなど）は削除されます。両方のアセットを保持することを選択した場合は、新しいアセットの名前に数字の `1` が付きます。
 
 >[!NOTE]
 >
->When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. この ID は以前のアセットの ID とは異なります。
+>[!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。
 >
->Adobe Analyticsでアセットインサイトがインプレッション数/クリック数の追跡を有効にしている場合、再生成されたアセットIDは、Analyticsでアセットに対して取り込まれたデータを無効にします。
+>アセットインサイトによる Adobe Analytics でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、Analytics から取得したアセットのデータが無効になります。
 
-AEM Assetsで重複アセットを保持するには、「保持」をタップまたはクリッ **[!UICONTROL クします]**。 アップロードした重複アセットを削除するには、「削除」をタップまたはクリ **[!UICONTROL ックしま]**&#x200B;す。
+重複したアセットを AEM Assets で保持するには、「**[!UICONTROL 保持]**」をタップまたはクリックします。アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
 
 ### ファイル名の処理と禁止文字 {#filename-handling}
 
-AEM Assetsでは、ファイル名に使用できない文字を使用してアセットをアップロードすることはできません。 許可されていない文字以上を含むファイル名のアセットをアップロードしようとすると、AEM Assetsは警告メッセージを表示し、これらの文字を削除するか、許可されている名前のアップロードを行うまで、アップロードを停止します。
+AEM Assets では、ファイル名に禁止文字が含まれるアセットをアップロードできません。ファイル名に禁止文字が含まれるアセットをアップロードしようとすると、AEM Assets に警告メッセージが表示され、これらの文字を削除するか使用可能な名前でアップロードするまでアップロードが停止されます。
 
-To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload.
+組織固有のファイル命名規則に合うように、[!UICONTROL アセットをアップロード]ダイアログでは、アップロードするファイルに長い名前を指定できます。
 
-ただし、以下の文字（スペース区切りリスト）はサポートされません。
+ただし、以下の文字（スペース区切りリスト）はサポートされていません。
 
-* asset file name must not contain `* / : [ \\ ] | # % { } ? &`
-* asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* アセットファイル名に含めてはいけない文字：`* / : [ \\ ] | # % { } ? &`
+* アセットフォルダー名に含めてはいけない文字：`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Bulk upload of assets {#bulk-upload}
+## アセットの一括アップロード {#bulk-upload}
 
-多数のファイルをアップロードする場合（特にディスク上のネストされたフォルダ階層に存在する場合）は、次の方法を使用できます。
+多数のファイルをアップロードする場合、特に、ディスク上のネストされたフォルダー階層にファイルが存在する場合は、次の方法を使用できます。
 
-* アセットアップロードAPIを利用するカスタムのアップロードスクリプ [トまたはツールを使用](developer-reference-material-apis.md#asset-upload-technical)。 このようなカスタムツールを使用すると、必要に応じて、アセットの処理（メタデータの翻訳やファイルの名前変更など）を追加できます。
-* ネストされた [フォルダー階層をアップロードするには](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 、Experience Managerデスクトップアプリケーションを使用します。
+* [アセットアップロード API](developer-reference-material-apis.md#asset-upload-technical) を利用するカスタムアップロードスクリプトまたはツールを使用する。このようなカスタムツールでは、必要に応じて、アセットの処理（メタデータの翻訳やファイル名の変更など）を追加できます。
+* [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html)を使用して、ネストされたフォルダー階層をアップロードする。
 
 > [!NOTE]
 >
-> Experience Managerを設定してデプロイする際に、他のシステムからのコンテンツ移行の一環として一括アップロードを行う場合は、ツールの入念な計画、検討、選択が必要です。 コンテンツ移行 [方法のガイダンスは](/help/implementing/deploying/overview.md) 、『導入ガイド』を参照してください。
+> セットアップした Adobe Experience Manager にデプロイする際に、他のシステムからのコンテンツ移行の一環として一括アップロードをおこなう場合は、使用するツールの入念な計画、検討、選択が必要です。コンテンツ移行方法のガイダンスについては、[デプロイメントガイド](/help/implementing/deploying/overview.md)を参照してください。
 
 ## デスクトップクライアントを使用したアセットのアップロード {#upload-assets-desktop-clients}
 
-Experience Managerは、Webブラウザーのユーザーインターフェイスに加えて、デスクトップ上の他のクライアントもサポートします。 また、Webブラウザーにアクセスしなくても、アップロード操作を行うことができます。
+Adobe Experience Manager では、Web ブラウザーユーザーインターフェイスに加えて、デスクトップ上の他のクライアントもサポートしています。Web ブラウザーを使用しなくても、これらのクライアントでアップロード操作をおこなうことができます。
 
-* [Adobe Asset Linkを使用すると](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 、Adobe Photoshop、Adobe IllustratorおよびAdobe InDesignデスクトップアプリケーションでAEMのアセットにアクセスできます。 現在開いているドキュメントは、これらのデスクトップアプリケーション内からAdobe Asset Linkユーザーインターフェイスから直接AEMにアップロードできます。
-* [Experience Managerデスクトップアプリケーションは](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 、ファイルの種類や処理するネイティブアプリケーションに依存せず、デスクトップ上でアセットを簡単に操作できるようにします。 ブラウザーのアップロードではフラットなファイルのアップロードのみがサポートされるので、ローカルファイルシステムからネストされたフォルダ階層のファイルをアップロードすると特に便利です。リスト
+* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで AEM 内のアセットにアクセスできます。これらのデスクトップアプリケーション内から、現在開いているドキュメントを Adobe Asset Link ユーザーインターフェイスを通じて直接 AEM にアップロードできます。
+* [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html)を利用すると、アセットのファイルタイプやアセットを操作するネイティブアプリケーションによらず、デスクトップ上でアセットを簡単に操作できます。ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードできると非常に便利です。
 
 ## 追加処理 {#additional-processing}
 
-アップロードされたアセットに対して追加の処理を行うには、アセットがアップロードされるフォルダ上のアセット処理プロファイルプロファイルを使用します。 これらは、フォルダのプロパティダイアログ **[!UICONTROL で使用できます]** 。
+アップロードしたアセットに対して追加の処理をおこなうには、アセットのアップロード先のフォルダーに対するアセット処理プロファイルを使用できます。これらは、**[!UICONTROL フォルダーのプロパティ]**&#x200B;ダイアログで使用できます。
 
 ![assets-folder-properties](assets/assets-folder-properties.png)
 
-次のプロファイルを使用できます。
+次のプロファイルがあります。
 
-* [メタデータプロファイル](metadata-profiles.md) (Metadata Folder)を使用すると、そのフォルダにアップロードされたアセットに初期設定のメタデータプロパティを適用できます
-* [処理プロファイル](asset-microservices-configure-and-use.md#processing-profiles) ：デフォルトのレンディションに加えて、レンディション処理を適用し、レンディションを生成できます。
+* [メタデータプロファイル](metadata-profiles.md)：フォルダーにアップロードされたアセットにデフォルトのメタデータプロパティを適用できます。
+* [処理プロファイル](asset-microservices-configure-and-use.md#processing-profiles)：レンディション処理を適用したり、デフォルトレンディション以外にレンディションを生成したりできます。
 
-また、ダイナミックメディアが有効になっている場合は、次の環境を実行します。
+また、現在の環境で Dynamic Media が有効になっている場合は、次のプロファイルも使用できます。
 
-* [画像プロファイル](dynamic-media/image-profiles.md) を使用すると、アップロードしたアセットに、特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;およびピクセル切り抜き）やシャープの設定を適用できます
-* [ビデオプロファイル](dynamic-media/video-profiles.md) ：特定のビデオエンコーディングプロファイル（解像度、形式、パラメータ）を適用できます。
+* [画像プロファイル](dynamic-media/image-profiles.md)：アップロードしたアセットに特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;とピクセル切り抜き）設定やシャープ設定を適用できます。
+* [ビデオプロファイル](dynamic-media/video-profiles.md)：特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
 
 > [!NOTE]
 >
-> ダイナミックメディアの切り抜きや、アセットに対するその他の操作は、アップロードされた元の内容を変更せず、アセットの配信時に行う切り抜きやメディア変換のパラメーターを提供し、非破壊的に行われます
+> アセットに対する Dynamic Media の切り抜きなどの操作は非破壊的です。つまり、アップロードした元の内容は変更されず、代わりに、アセットの配信時におこなわれる切り抜きやメディア変換のパラメーターが提供されます。
 
 処理プロファイルが割り当てられているフォルダーの場合、プロファイル名がカード表示のサムネールに表示されます。リスト表示では、プロファイル名が「**[!UICONTROL 処理プロファイル]**」に表示されます。
 
-## APIを使用したアセットのアップロードまたは取り込み {#upload-using-apis}
+## API を使用したアセットのアップロードまたは取り込み {#upload-using-apis}
 
-アップロードAPIとプロトコルの技術的な詳細、およびオープンソースSDKとサンプルクライアントへのリンクは、開発者向けリファレ [ンスの](developer-reference-material-apis.md#asset-upload-technical) 「アセットのアップロード」セクションに記載されています。
+アップロード API およびプロトコルの技術的詳細、およびオープンソース SDK とサンプルクライアントへのリンクについては、開発者向けリファレンスの[アセットアップロード](developer-reference-material-apis.md#asset-upload-technical)に関する節に記載されています。
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)
->* [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Adobe Asset Linkドキュメント](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Asset Link](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Adobe Asset Link のドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
 >* [アセットのアップロードに関するテクニカルリファレンス](developer-reference-material-apis.md#asset-upload-technical)
 
