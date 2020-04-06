@@ -1,15 +1,14 @@
 ---
-sub-product: Onboarding to AEM as a Cloud Service
-user-guide-title: Onboarding to AEM as a Cloud Service
+sub-product: AEM as a Cloud Service のオンボーディング
+user-guide-title: AEM as a Cloud Service のオンボーディング
 translation-type: tm+mt
-source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
-# オンボーディング {#onboarding}
+# 使用開始 {#onboarding}
 
-+ [AEM as a Cloud Service のオンボーディング](/help/onboarding/home.md)
 + 要件 {#what-is-required}
    + [アクセス権の付与](what-is-required/access-rights-granted.md)
    + [ユーザーとロールの追加](what-is-required/add-users-roles.md)
