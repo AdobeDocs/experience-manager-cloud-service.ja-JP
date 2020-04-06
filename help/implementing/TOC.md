@@ -1,15 +1,14 @@
 ---
-sub-product: Implementing for AEM as a Cloud Service
-user-guide-title: Implementing for AEM as a Cloud Service
+sub-product: AEMをクラウドサービスとして実装する
+user-guide-title: AEMをクラウドサービスとして実装する
 translation-type: tm+mt
-source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # 実装 {#implementing}
 
-+ [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
 + Cloud Manager の使用 {#using-cloud-manager}
    + [環境の管理](cloud-manager/manage-environments.md)
    + [CI/CD パイプラインの設定](cloud-manager/configure-pipeline.md)
@@ -22,11 +21,12 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
 + AEM as a Cloud Service 向けの開発{#developing}
-   + [AEMプロジェクト構造](developing/introduction/aem-project-content-package-structure.md)
-   + [AEMプロジェクトリポジトリ構造パッケージ](developing/introduction/repository-structure-package.md)
+   + [AEM プロジェクトのパッケージ構造](developing/introduction/aem-project-content-package-structure.md)
+   + [リポジトリ構造パッケージの作成](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [コンテンツの検索とインデックス作成](/help/operations/indexing.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
+   + [ログ](/help/implementing/developing/introduction/logging.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
@@ -37,4 +37,3 @@ source-git-commit: 2e092f80aef985afa7541a9fe1573b3ee9b55346
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
 + クラウド内の Dispatcher {#dispatcher}
    + [クラウド内の Dispatcher ](dispatcher/overview.md)
-   + [AEMのクラウドサービスとしてのコンテンツ配信](dispatcher/content-delivery.md)
