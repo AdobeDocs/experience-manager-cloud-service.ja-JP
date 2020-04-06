@@ -2,7 +2,7 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
+source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ページに必要なプロパティを定義できます。これらはページの特性に応じて異なることがあります。例えば、ページによってはライブコピーに接続されていたり、接続されずにライブコピー情報が必要に応じて利用可能な場合があります。
 
-## ページのプロパティ {#page-properties}
+## ページプロパティ {#page-properties}
 
 プロパティは次のタブに分散しています。
 
@@ -24,7 +24,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 * **タグ**
 
-   * ここでは、選択ボックス内のリストを更新することで、ページにタグを追加または削除できます。
+   * この場所で、選択ボックスのリストを更新して、ページのタグの追加や削除をおこなうことができます。
    * タグを選択すると、選択ボックスの下のリストに表示されます。このリストからタグを削除するには、x を使用します。
    * 空の選択ボックスに名前を入力して、新しいタグを入力できます。
       * Enter キーを押すと、新しいタグが作成されます。
@@ -61,19 +61,19 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 * **オフタイム**
 
    * 公開されたページのアクティベートが解除される時間です。
-   * すぐにアクションを実行するには、これらのフィールドを空のままにします。
+   * アクションがすぐに実行されるようにするには、これらのフィールドを空白のままにします。
 
 * **バニティ URL**
 
    * このページのバニティ URL を入力でき、短くより表現力のある URL にすることができます。
-   * For example, if the Vanity URL is set to `welcome` to the page identified by the path `/v1.0/startpage` for the website `http://example.com`, then `http://example.com/welcome` would be the vanity URL of `http://example.com/content/v1.0/startpage`
+   * 例えば、Web サイト `http://example.com` のパス `/v1.0/startpage` で特定されるページに対して、バニティ URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティ URL は `http://example.com/welcome` となります。
    >[!CAUTION]
    >
    >バニティ URL は次のような特性があります。
    >
    >* 一意である必要があるので、別のページで同じ値が使用されないように注意してください。
    >* regex パターンはサポートされていません。
-   >* 既存のページに設定しないでください。
+   >* 既存のページには設定しないでください。
 
 
 * **バニティ URL をリダイレクト**
@@ -82,7 +82,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 ### アドバンス {#advanced}
 
-* **言葉遣い**
+* **言語**
 
    * ページの言語です。
 
@@ -99,11 +99,11 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
    * このページで使用されるエイリアスを指定します。
    >[!NOTE]
    >
-   >「Alias」は、リソ `sling:alias` ースのエイリアス名を定義するプロパティーを設定します（これは、パスではなく、リソースにのみ影響します）。
+   >「エイリアス」は、リソースのエイリアス名を定義する `sling:alias` プロパティを設定します（これはリソースにのみ影響を及ぼし、パスには影響しません）。
    >
-   >例：ノードノードのエイリアスを `latin-lang` 定義した場合 `/content/we-retail/spanish` 、このページは、 `/content/we-retail/latin-language`
+   >例えば、`/content/we-retail/spanish` ノードに `latin-lang` というエイリアスを定義した場合、このページは `/content/we-retail/latin-language` でアクセスできます。
    >
-   >詳しくは、「SEOとURL管理のベストプラクティス」の「ローカライズされたページ名」を参照してください。
+   >詳しくは、「SEO と URL 管理のベストプラクティス」の「ページ名のローカライズ」を参照してください。
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -135,23 +135,23 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
    * 書き出し設定を指定します。
 
-### サムネイル {#thumbnail}
+### サムネール {#thumbnail}
 
-ページサムネイル画像が表示されます。以下の操作を実行できます。
+ページサムネール画像が表示されます。以下の操作を実行できます。
 
 * **プレビューを生成**
 
-   * サムネイルとして使用するページのプレビューを生成します。
+   * サムネールとして使用するページのプレビューを生成します。
 
 * **画像をアップロード**
 
-   * サムネイルとして使用する画像をアップロードします。
+   * サムネールとして使用する画像をアップロードします。
 
 * **画像を選択**
 
    * サムネールとして使用する既存のアセットを選択します。
 
-* **revert**
+* **元に戻す**
 
    * このオプションは、サムネールを変更した後で使用できるようになります。変更を維持しない場合は、保存前にその変更を元に戻すことができます。
 
@@ -164,25 +164,23 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
    * **Facebook に対してユーザー共有を有効にする**
    * **Pinterest に対してユーザー共有を有効にする**
    * **優先 XF バリエーション**
-      * ページのメタデータの生成に使用するエクスペリエンスフラグメントのバリエーションの定義
+      * ページのメタデータの生成に使用されるエクスペリエンスフラグメントのバリエーションを定義します
 
 ### クラウドサービス {#cloud-services}
 
 * **クラウドサービス**
 
-   * Define properties for cloud services. <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * クラウドサービスのプロパティを定義します。<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
 
 ### パーソナライゼーション {#personalization}
 
 * **ContextHub 設定**
 
-   * Select the ContextHub Configuration and Segments Path. <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * 「ContextHub 設定」と「セグメントのパス」を選択します。<!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
 
 * **ターゲティング設定**
 
    * [ブランドを選択してターゲット設定の範囲を指定](/help/sites-cloud/authoring/personalization/targeted-content.md)します。
-   >[!NOTE]
-   >このオプションを使用するには、ユーザーアカウントがグループに属している必要 `Target Adminstrators`があります。
 
 ### 権限 {#permissions}
 
@@ -190,20 +188,20 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
    * 権限を追加 <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
    * 閉じられたユーザーグループを編集 <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * 有効な権限<!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->を表示 
+   * 有効な権限を表示 <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### ブループリント {#blueprint}
 
 * **ブループリント**
 
-   * Define properties for a Blueprint page within multi-site management. <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * マルチサイト管理でのブループリントページのプロパティを定義します。<!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
    * 変更がライブコピーに適用される条件を制御します。
 
 ### ライブコピー {#live-copy}
 
-* **Livecopy**
+* **ライブコピー**
 
-   * Define properties for a Live Copy page within multi-site management. <!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
+   * マルチサイト管理でのライブコピーページのプロパティを定義します。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * ブループリントからの変更が適用される条件を制御します。
 
 ### サイト構造 {#site-structure}
@@ -214,18 +212,18 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
 
 * **サイト**&#x200B;コンソールから：
    * [新しいページを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)します（プロパティのサブセット）
-   * Clicking or tapping **Properties**
+   * 「**プロパティ**」をクリックまたはタップします
       * 単一のページ
       * 複数のページ（まとめて編集する場合は、プロパティのサブセットのみを使用できます）
 * ページエディターから、次の操作をおこないます。
-   * 「**ページ情報**」を使用します（その後、「**プロパティを開く**」をクリック）
+   * 「**ページ情報**」（その後、「**プロパティを開く**」）を使用します
 
 ### サイトコンソールから - 単一のページ {#from-the-sites-console-single-page}
 
 「**プロパティ**」をクリックまたはタップして、ページのプロパティを定義します。
 
 1. **サイト**&#x200B;コンソールを使用して、プロパティを表示および編集するページの場所に移動します。
-1. Select the **Properties** option for the required page using either:
+1. 次のいずれかを使用して、目的のページで「**プロパティ**」オプションを選択します。
    * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)
    * ページのプロパティが該当するタブに表示されます。
@@ -294,7 +292,7 @@ source-git-commit: 0dc1e8d2d9e26473f97ce2606f26e97445501136
    * 利用可能なフィールドの値を更新できます。
       * 新しい値は、「**完了**」を選択したときに、選択したすべてのページに適用されます。
       * フィールドが複数値（タグなど）の場合は、新しい値を追加するか、共通の値を削除できます。
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. そのようなフィールドを編集する際は、データが失われないように、慎重におこなう必要があります。
+   * 共通のフィールドに、ページによって異なる値が設定されている場合、それらのフィールドは特別な値（「`<Mixed Entries>`」というテキストなど）で示されます。そのようなフィールドを編集する際は、データが失われないように、慎重におこなう必要があります。
 
 >[!NOTE]
 >
