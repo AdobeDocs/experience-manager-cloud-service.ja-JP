@@ -1,14 +1,14 @@
 ---
-title: 'クラウドサービスとしてのAdobe Experience Managerでのデジタルアセット管理のためのアセットAPI '
-description: アセットAPIを使用すると、基本的なcreate-read-update-delete(CRUD)操作で、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理できます。
+title: 'Adobe Experience Manager as a Cloud Service におけるデジタルアセット管理のための Assets API '
+description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68b2214a4c8941365120bdef670e89b4c9058966
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# Assets as a Cloud Service APIs {#assets-cloud-service-apis}
+# AEM Assets as a Cloud Service の API {#assets-cloud-service-apis}
 
 <!-- 
 Give a list of and overview of all reference information available.
@@ -20,42 +20,44 @@ Give a list of and overview of all reference information available.
 
 ## アセットのアップロード {#asset-upload-technical}
 
-クラウドサービスとしてのExperience Managerは、アセットをリポジトリにアップロードする新しい方法を提供します。バイナリアップロードはバイナリクラウドストレージに直接アップロードされます。 ここでは、技術概要を説明します。
+Adobe Experience Manager as a Cloud Service では、アセットをリポジトリにアップロードする新しい方法を提供します。つまり、バイナリクラウドストレージへの直接バイナリアップロードです。ここでは、技術的概要を説明します。
 
 ### 直接バイナリアップロードの概要 {#overview-binary-upload}
 
-バイナリをアップロードする高レベルのアルゴリズムは、次のとおりです。
+バイナリをアップロードするアルゴリズムの概要は、次のとおりです。
 
-1. 新しいバイナリをアップロードする意図をAEMに通知するHTTPリクエストを送信します。
-1. 開始要求で提供される1つ以上のURIにバイナリの内容をPOSTします。
-1. HTTP要求を送信して、バイナリの内容が正常にアップロードされたことをサーバーに通知します。
+1. 新しいバイナリをアップロードするためのインテントを AEM に通知する HTTP リクエストを送信します。
+1. 開始リクエストで提供される 1 つ以上の URI にバイナリのコンテンツを POST 送信します。
+1. HTTP リクエストを送信して、バイナリのコンテンツが正常にアップロードされたことをサーバーに通知します。
 
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
 
-以前のバージョンのAEMとの重要な違いを次に示します。
+以前のバージョンの AEM との重要な違いは、次のとおりです。
 
-* バイナリはAEMを通過しません。これは、単に、デプロイメント用に設定されたバイナリクラウドストレージとアップロードプロセスを調整するだけです
-* バイナリクラウドストレージは、コンテンツ配信ネットワーク(CDN、Edge Network)によって前面に配置され、アップロードエンドポイントがクライアントに近づくので、特に分散チームのアセットをアップロードする場合に、アップロードのパフォーマンスとユーザーエクスペリエンスが向上します
+* バイナリは AEM を経由しません。AEM は、デプロイメント用に設定されたバイナリクラウドストレージを使用するアップロードプロセスを調整するだけです。
+* バイナリクラウドストレージの前面には、コンテンツ配信ネットワーク（CDN、Edge ネットワーク）が配置されます。これにより、アップロードエンドポイントがクライアントに近づくので、特に分散チームによるアセットのアップロードの際に、アップロードパフォーマンスとユーザーエクスペリエンスが向上します。
 
-このアプローチは、アセットのアップロードをより拡張性が高く、パフォーマンスの高い処理を提供する必要があります。
+このアプローチで、アセットのアップロードをよりスケーラブルかつ効率的に処理できます。
 
 > !![NOTE]
-この方法を実装するクライアントコードを確認するには、オープンソースの [aemアップロードライブラリを参照してください](https://github.com/adobe/aem-upload)
+この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
 
 ### アップロードの開始 {#initiate-upload}
 
-最初の手順は、アセットの作成または更新が必要なフォルダーにHTTP POSTリクエストを送信することです。セレクターを含め `.initiateUpload.json` て、リクエストがバイナリのアップロードを開始することを示します。 例えば、アセットを作成するフォルダーのパスは次のようになりま `/assets/folder`す。
+最初の手順として、アセットが作成または更新されるフォルダーに HTTP POST リクエストを送信します。その際、バイナリアップロードを開始するためのリクエストであることを示す `.initiateUpload.json` セレクターを含めます。例えば、アセットが作成されるフォルダーのパスが `/assets/folder` の場合、リクエストは次のようになります。
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 ````
 
-要求本文のコンテンツタイプは、次のフィールドを含む `application/x-www-form-urlencoded` フォームデータである必要があります。
+リクエスト本文のコンテンツタイプは、次のフィールドを含んだ `application/x-www-form-urlencoded` 形式のデータにする必要があります。
 
-* `(string) fileName`: 必須. インスタンスに表示されるアセットの名前。
-* `(number) fileSize`: 必須. アップロードするバイナリの合計の長さ（バイト単位）。
+* `(string) fileName`：必須。インスタンスに表示されるアセットの名前。
+* `(number) fileSize`：必須。アップロードするバイナリの合計長（バイト単位）。
 
-各バイナリに必須フィールドが含まれている限り、単一の要求を使用して複数のバイナリのアップロードを開始できます。 成功した場合、リクエストはステータスコ `201` ードとJSONデータを含む本文を次の形式で応答します。
+各バイナリに必須フィールドが含まれている限り、単一のリクエストを使用して複数のバイナリのアップロードを開始できることに注意してください。
+
+成功した場合は、リクエストへの応答として、201 ステータスコードと、次の形式の JSON データを含んだ本文が返されます。
 
 ```
 {
@@ -72,94 +74,94 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
         }
     ]
 }
-```
+````
 
-* `completeURI` （文字列）:バイナリのアップロードが完了したら、このURIを呼び出します。 URIは、絶対URIまたは相対URIで指定でき、クライアントはどちらも処理できる必要があります。 つまり、値は「アップロード完了」または「完 `"https://author.acme.com/content/dam.completeUpload.json"` 了」を `"/content/dam.completeUpload.json"` 表示す [ることができます](#complete-upload)。
-* `folderPath` （文字列）:バイナリがアップロードされるフォルダのフルパス。
-* `(files)` （配列）:リストの長さと順序が、開始要求で提供されるバイナリ情報のリストの長さと順序と一致する要素の要素です。
-* `fileName` （文字列）:開始要求で指定された、対応するバイナリの名前。 この値は、完了リクエストに含める必要があります。
-* `mimeType` （文字列）:in initiateリクエストで指定された、対応するバイナリのMIMEタイプ。 この値は、完了リクエストに含める必要があります。
-* `uploadToken` （文字列）:対応するバイナリのアップロードトークン。 この値は、完了リクエストに含める必要があります。
-* `uploadURIs` （配列）:値がバイナリのコンテンツのアップロード先の完全なURIである文字列のリストです(バイナリのアップロードを [参照](#upload-binary))。
-* `minPartSize` （数値）:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最小長（バイト単位）です。
-* `maxPartSize` （数値）:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最大長（バイト単位）。
+* `(string) completeURI`：バイナリのアップロードが完了したときに呼び出される URI。これは絶対 URI でも相対 URI でもかまいません。クライアントはどちらでも処理できるはずです。つまり、URI 値は例えば、`"https://author.acme.com/content/dam.completeUpload.json"` または `"/content/dam.completeUpload.json"` のようになります（[アップロードの完了](#complete-upload)を参照）。
+* `(string) folderPath`：バイナリがアップロードされるフォルダーの完全なパス。
+* `(array) (files)`：開始リクエストで提供されるバイナリ情報のリストの長さと順序に一致する要素のリスト。
+* `(string) fileName`：対応するバイナリの名前（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
+* `(string) mimeType`：対応するバイナリの MIME タイプ（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
+* `(string) uploadToken`：対応するバイナリのアップロードトークン。この値は、完了リクエストに含まれます。
+* `(array) uploadURIs`：バイナリコンテンツのアップロード先となる完全な URI を表す文字列のリストです（[バイナリのアップロード](#upload-binary)を参照）。
+* `(number) minPartSize`：複数の URI がある場合に各アップロード URI に提供されるデータの最小長（バイト単位）。
+* `(number) maxPartSize`：複数の URI がある場合に各アップロード URI に提供されるデータの最大長（バイト単位）。
 
 ### バイナリのアップロード {#upload-binary}
 
-アップロードを開始した場合の出力には、1つ以上のアップロードURI値が含まれます。 複数のURIを指定する場合、バイナリを各URIに順に「分割」し、各部分を各URIに順にPOSTするのは、クライアントの責任です。 すべてのURIを使用し、各部分は、開始応答で指定された最小サイズより大きく、最大サイズより小さい必要があります。 バイナリのアップロードを高速化するため、これらのリクエストはCDNエッジノードによって前面に配置されます。
+アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数の URI を指定する場合は、クライアント側でバイナリを「分割」し、各部分を各 URI に順に POST 送信します。すべての URI を使用する必要があり、各部分は、開始応答で指定された最小サイズより大きく最大サイズより小さくなっている必要があります。これらのリクエストは、バイナリのアップロードを高速化するために、CDN エッジノードで受信されます。
 
-これを行う可能性のある方法の1つは、APIが提供するアップロードURIの数に基づいてパーツサイズを計算することです。 バイナリの合計サイズが20,000バイトで、アップロードURIの数が2であると仮定します。
+これを実現するには、API で提供されるアップロード URI の数に基づいて各部分のサイズを計算する方法が考えられます。例えば、バイナリの合計サイズが 20,000 バイトで、アップロード URI の数が 2 の場合は次のようになります。
 
-* 合計サイズをURI数で割ってパーツサイズを計算します。20,000 / 2 = 10,000
-* アップロードURIのリストの最初のURIに対するバイナリの0 ～ 9,999のPOSTバイト範囲
-* アップロードURIのリストで、2番目のURIに対するバイナリの10,000 ～ 19,999のPOSTバイト範囲
+* 合計サイズを URI 数で除算して計算した各部分のサイズ：20,000 / 2 = 10,000
+* アップロード URI リストの最初の URI にバイナリの 0～9,999 バイトを POST 送信
+* アップロード URI リストの 2 番目の URI にバイナリの 10,000～19,999 バイトを POST 送信
 
-成功した場合、サーバーは各要求にステータスコードで応 `201` 答します。
+成功した場合、サーバーは各要求への応答として `201` ステータスコードを返します。
 
 ### アップロードの完了 {#complete-upload}
 
-バイナリのすべての部分がアップロードされたら、最後の手順は、開始データによって提供される完全なURIにHTTP POSTリクエストを送信することです。 リクエスト本文のコンテンツタイプは、次のフィールドを含む申込み`x-www-form-urlencoded` /フォームデータである必要があります。
+バイナリのすべての部分がアップロードされたら、最後の手順として、開始データで提供された完了時 URI に HTTP POST リクエストを送信します。リクエスト本文のコンテンツタイプは、次のフィールドを含んだ application/`x-www-form-urlencoded` 形式のデータにする必要があります。
 
-* `(string) fileName`: 必須. 開始データによって提供された、アセットの名前。
-* `(string) mimeType`: 必須. 開始データによって提供されたバイナリのHTTPコンテンツタイプ。
-* `(string) uploadToken`: 必須. 開始データによって提供されたバイナリのアップロードトークン。
-* `(bool) createVersion`: 任意. trueで、指定した名前のアセットが既に存在する場合、インスタンスはアセットの新しいバージョンを作成します。
-* `(string) versionLabel`: 任意. 新しいバージョンが作成された場合、そのバージョンに関連付けられるラベル。
-* `(string) versionComment`: 任意. 新しいバージョンが作成されると、そのバージョンに関連付けられるコメントが作成されます。
-* `(bool) replace`:オプション：trueで指定した名前のアセットが既に存在する場合、インスタンスはアセットを削除し、再作成します。
+* `(string) fileName`：必須。アセットの名前（開始データで提供されたもの）。
+* `(string) mimeType`：必須。バイナリの HTTP コンテンツタイプ（開始データで提供されたもの）。
+* `(string) uploadToken`：必須。バイナリのアップロードトークン（開始データで提供されたもの）。
+* `(bool) createVersion`：任意。これが true で、指定した名前のアセットが既に存在する場合、アセットの新しいバージョンが作成されます。
+* `(string) versionLabel`：任意。新しいバージョンが作成された場合にそのバージョンに関連付けられるラベル。
+* `(string) versionComment`：任意。新しいバージョンが作成される場合にそのバージョンに関連付けられるコメント。
+* `(bool) replace`：任意。これが true で、指定した名前のアセットが既に存在する場合、そのアセットが削除され、再作成されます。
 
 >!![NOTE]
 >
-> アセットが既に存在し、createVersionもreplaceも指定されていない場合、インスタンスは、アセットの現在のバージョンを新しいバイナリで更新します。
+> アセットが既に存在し、createVersion も replace も指定されていない場合、アセットの現在のバージョンが新しいバイナリで更新されます。
 
-開始プロセスと同様に、完全な要求データには複数のファイルに関する情報が含まれる場合があります。
+開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
-バイナリのアップロード処理は、ファイルの完全なURLが呼び出されるまで行われません。 ファイルのバイナリ全体がアップロードされた場合でも、アセットのアップロード処理が完了するまで、アセットはインスタンスによって処理されません。
+バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。ファイルのバイナリ全体がアップロードされても、アセットのアップロードプロセスが完了するまで、アセットは処理されません。
 
-成功した場合、サーバーはステータスコードで応 `200` 答します。
+成功した場合、サーバーは応答として `200` ステータスコードを返します。
 
 ### オープンソースアップロードライブラリ {#open-source-upload-library}
 
-アップロードアルゴリズムの詳細や、独自のアップロードスクリプトやツールを作成するために、アドビはオープンソースのライブラリやツールを基礎として提供しています。
+アップロードアルゴリズムの詳細を調べたり、独自のアップロードスクリプトやツールを作成する場合に役立つように、アドビでは、次のオープンソースライブラリおよびツールを出発点として提供しています。
 
-* [ソースAEMアップロードライブラリを開く](https://github.com/adobe/aem-upload)
-* [ソースのコマンドラインツールを開く](https://github.com/adobe/aio-cli-plugin-aem)
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
 
-### 非推奨のアセットアップロードAPI {#deprecated-asset-upload-api}
+### 非推奨（廃止予定）のアセットアップロード API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
 
 >[!NOTE]
-クラウドサービスとしてのExperience Managerの場合、新しいアップロードAPIのみがサポートされます。 Experience Manager 6.5のAPIは非推奨です。
+Adobe Experience Manager as a Cloud Service では、新しいアップロード API のみサポートされています。Adobe Experience Manager 6.5 の API は非推奨（廃止予定）となりました。
 
-アセットやレンディション（バイナリアップロード）のアップロードまたは更新に関連するメソッドは、次のAPIで非推奨となりました。
+アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連する手段は、次の API で非推奨（廃止予定）となりました。
 
 * [AEM Assets HTTP API](mac-api-assets.md)
-* `AssetManager` Java API( `AssetManager.createAsset(..)`
+* `AssetManager`Java API（`AssetManager.createAsset(..)` など）
 
 >[!MORELIKETHIS]
-* [ソースAEMアップロードライブラリを開く](https://github.com/adobe/aem-upload)
-* [ソースのコマンドラインツールを開く](https://github.com/adobe/aio-cli-plugin-aem)
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
 
 
-## アセット処理と後処理のワークフロー {#post-processing-workflows}
+## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
 
-ほとんどのアセット処理は、アセットマイクロサービ **[!UICONTROL スによる処理プロファイル]**[の設定に基づ](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)いて実行され、開発者用の拡張機能は不要です。
+アセット処理のほとんどは、[アセットマイクロサービス](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)による&#x200B;**[!UICONTROL 処理プロファイル]**&#x200B;設定に基づいて実行され、開発者用の拡張機能は必要ありません。
 
-後処理ワークフローの設定では、拡張機能を持つ標準のAEMワークフロー（カスタム手順を使用できます）。 次のサブセクションを確認し、アセットの後処理ワークフローで使用できるワークフロー手順を理解してください。ワークフロー
+後処理ワークフロー設定のために、標準の AEM ワークフローに拡張機能（カスタムステップを使用できるなど）を付加したワークフローが用意されています。次の節では、アセット後処理ワークフローで使用できるワークフローステップについて説明します。
 
-### 後処理ワークフローのワークフロー手順 {#post-processing-workflows-steps}
+### 後処理ワークフローのワークフローステップ {#post-processing-workflows-steps}
 
 >[!NOTE]
-この節は、主に、以前のバージョンのAEMからクラウドサービスとしてAEMにアップデートするお客様に適用されます。
+この節のトピックは、主に、以前のバージョンの AEM から AEM as a Cloud Service にアップデートする場合に当てはまるものです。
 
-Experience Managerをクラウドサービスとして導入した新しい導入モデルにより、アセットマイクロサービスの導入前にワークフローで使用された特定のワークフロー手順が、後処理ワークフローでサポートされなくなる場合があります。 `DAM Update Asset` ほとんどは、アセットのマイクロサービスをより簡単に設定し、使用できる形で置き換えられます。
+Adobe Experience Manager as a Cloud Service で新しいデプロイメントモデルが導入された結果、アセットマイクロサービスの導入以前に `DAM Update Asset` ワークフローで使用されていた特定のワークフローステップは、後処理ワークフローでサポートされなくなる可能性があります。それらのほとんどに代わって、より設定しやすく使いやすいアセットマイクロサービスを使用できるようになっています。
 
-次に、技術ワークフローモデルのリストと、クラウドサービスとしてのAEMでのそれらのサポートレベルを示します。
+以下に、AEM as a Cloud Service で提供される技術的ワークフローモデルとそのサポートレベルのリストを示します。
 
-### サポートされるワークフロー手順 {#supported-workflow-steps}
+### サポートされているワークフローステップ {#supported-workflow-steps}
 
-クラウドサービスでは、次のワークフロー手順がサポートされています。
+AEM as a Cloud Service では、次のワークフローステップがサポートされています。
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -171,9 +173,9 @@ Experience Managerをクラウドサービスとして導入した新しい導�
 * `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
 * `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
 
-### サポートされていない、または置き換えられたモデル {#unsupported-replaced-models}
+### サポートされていないモデルまたは置き換えられたモデル {#unsupported-replaced-models}
 
-次の技術ワークフローモデルは、アセットマイクロサービスに置き換えられるか、サポートが利用できません。
+次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 
 * `com.day.cq.dam.core.impl.process.DamMetadataWritebackWorkflowCompletedProcess`
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
