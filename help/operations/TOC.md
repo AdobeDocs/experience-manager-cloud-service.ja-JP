@@ -1,15 +1,14 @@
 ---
-sub-product: Operations and Maintenance on AEM as a Cloud Service
-user-guide-title: Operations and Maintenance on AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+sub-product: 'AEM as a Cloud Service の運用と保守 '
+user-guide-title: 'AEM as a Cloud Service の運用と保守 '
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # 運用 {#operations}
 
-+ [AEM as a Cloud Service の運用と保守 ](/help/operations/home.md)
 + [コンテンツレプリケーションサービス](replication.md)
 + [メンテナンスタスク](maintenance.md)
 + [バックアップと復元](backup.md)
