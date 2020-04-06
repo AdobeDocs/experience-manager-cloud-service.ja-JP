@@ -3,22 +3,22 @@ title: アセットレポート
 description: この記事では、AEM Assets 内のアセットに関する様々なレポートとレポートの生成方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6998ee5f3c1c1563427e8739998effe0eba867fc
+source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
 # アセットレポート {#asset-reports}
 
-アセットレポートは、Adobe Experience Manager（AEM）Assets デプロイメントのユーティリティを評価するための重要なツールです。AEM Assets では、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、ダウンロードされたアセットや共有されているアセットなどに関する有用な情報が提供されます。
+アセットレポートは、Adobe Experience Manager (AEM) Assets デプロイメントのユーティリティを評価するための重要なツールです。AEM Assets では、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、ダウンロードされたアセットや共有されているアセットなどに関する有用な情報が提供されます。
 
-レポートの情報を使用して、主要な成功指標を導き出し、企業内および顧客によるAEM Assetsの採用を測定します。
+レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における AEM Assets の採用状況を測定することができます。
 
 AEM Assets のレポートフレームワークでは、Sling ジョブを利用して、レポートの要求が順序立てて非同期的に処理されます。このフレームワークは大規模なリポジトリに合わせて拡張することができます。レポートの非同期処理により、レポートを生成する際の効率性とスピードが向上します。
 
 直観的なレポート管理インターフェイスに備わっているきめ細かなオプションやコントロールを使用すれば、アーカイブされたレポートにアクセスしたり、レポートの実行ステータス（成功、失敗および待機中）を表示したりすることができます。
 
-レポートが生成されると、インボックス通知 <!-- through an email (optional) and --> で通知されます。 それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除をおこなうことができます。
+レポートが生成されると、電子メール（オプション）とインボックスで通知を受け取ります。それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除をおこなうことができます。
 
 ## レポートの生成 {#generate-reports}
 
@@ -40,20 +40,20 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    ![ナビゲーション](assets/navigation.png)
 
-1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
+1. アセットレポートページで、ツールバーの「**[!UICONTROL 作成]**」をタップまたはクリックします。
 1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をタップまたはクリックします。
 
    ![choose_report](assets/choose_report.png)
 
    >[!NOTE]
    >
-   >「**[!UICONTROL ダウンロードされたアセット]**」レポートを生成する前に、Asset Download サービスが有効になっていることを確認してください。Web コンソール（`https://[aem_server]:[port]/system/console/configMgr`）で、「**[!UICONTROL Day CQ DAM Event Recorder]**」設定を開き、「イベントタイプ」で「**[!UICONTROL ダウンロードされたアセット（ダウンロード済み）]**」オプションを選択します（まだ選択されていなかった場合）。
+   >「**[!UICONTROL ダウンロードされたアセット]**」レポートを生成する前に、Asset Download サービスが有効になっていることを確認してください。Web コンソール（`https://[aem_server]:[port]/system/console/configMgr`）で、「**[!UICONTROL Day CQ DAM Event Recorder]**」設定を開き、「イベントタイプ」で「**[!UICONTROL ダウンロードされたアセット（ダウンロード済み）]**」オプションを選択します（まだ選択されていない場合）。
 
    >[!NOTE]
    >
    >デフォルトで、「ダウンロードされたアセット」レポートにはコンテンツフラグメントとリンク共有が含まれています。適切なオプションを選択して、リンク共有のレポートを作成するか、ダウンロードレポートからコンテンツフラグメントを除外します。
 
-1. タイトル、説明、サムネール、CRX リポジトリ内のフォルダーパス（レポートの保存場所）など、レポートの詳細を設定します。By default, the folder path is */content/dam*. 別のパスを指定することもできます。
+1. タイトル、説明、サムネール、CRX リポジトリ内のフォルダーパス（レポートの保存場所）など、レポートの詳細を設定します。デフォルトでは、フォルダーパスは */content/dam* ですが、別のパスを指定することもできます。
 
    ![report_configuration](assets/report_configuration.png)
 
@@ -67,7 +67,7 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    設定フィールドは、作成するレポートのタイプによって異なることがあります。
 
-   例えば、「**[!UICONTROL ディスク使用量]**」レポートには、アセットが使用しているディスク領域を計算する際にアセットレンディションを含めるオプションが用意されています。ディスク使用量を計算するために、サブフォルダー内のアセットを含めるか除外するかを選択できます。
+   例えば、「**[!UICONTROL ディスク使用量]**」レポートには、アセットが使用しているディスク領域を計算する際にアセットレンディションを含めるオプションが用意されています。ディスク使用量を計算する際にサブフォルダー内のアセットを含めるか除外するかを選択することもできます。
 
    >[!NOTE]
    >
@@ -79,7 +79,7 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    ![files_report](assets/files_report.png)
 
-   「**[!UICONTROL リンク共有]**」レポートには、AEM Assets 内から外部ユーザーと共有されているアセットへの URL が表示されます。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->列をカスタマイズすることはできません。
+   「**[!UICONTROL リンク共有]**」レポートには、AEM Assets 内から外部ユーザーと共有されているアセットへの URL が表示されます。アセットを共有したユーザーの電子メール ID、アセットを共有しているユーザーの電子メール ID、共有の日付、リンクの有効期限なども表示されます。列をカスタマイズすることはできません。
 
    「**[!UICONTROL リンク共有]**」レポートでは、*/var/dam/share* に表示される共有 URL が公開されるだけです。そのため、サブフォルダーやレンディションに関するオプションは用意されていません。
 
@@ -91,12 +91,12 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    ![configure_columns](assets/configure_columns.png)
 
-   カスタム列の名前またはプロパティパスを表示するには、CRXのjcr:contentノードの下で、アセットバイナリのプロパティを設定します。 または、プロパティパスピッカーを使用して追加します。
+   カスタムの列名やプロパティパスを表示するには、CRX の jcr:content ノード下のアセットバイナリのプロパティを設定します。または、プロパティパスピッカーを使用してパスを追加します。
 
    ![custom_columns](assets/custom_columns.png)
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. レポートの生成が開始されたことを通知するメッセージが表示されます。
-1. アセットレポートページでのレポート生成ステータスは、成功、失敗、キュー、スケジュール済みなど、レポートジョブの現在の状態に基づきます。 同じステータスが通知インボックスにも表示されます。
+1. ツールバーの「**[!UICONTROL 作成]**」をタップまたはクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
+1. アセットレポートページのレポート生成ステータスは、レポートジョブの現在の状態（「成功」、「失敗」、「待機中」、「スケジュール済み」など）に基づきます。同じステータスが通知インボックスにも表示されます。
 
    レポートページを表示するには、レポートのリンクをタップまたはクリックします。または、レポートを選択し、ツールバーの「表示」アイコンをタップまたはクリックします。
 
@@ -117,7 +117,7 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 * ファイル
 
 1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL レポート]**&#x200B;に移動します。
-1. In the Asset Reports page, tap/click **[!UICONTROL Create]** from the toolbar.
+1. アセットレポートページで、ツールバーの「**[!UICONTROL 作成]**」をタップまたはクリックします。
 
 1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をタップまたはクリックします。
 1. タイトル、説明、サムネール、フォルダーパス、日付範囲など、該当するレポートの詳細を設定します。
@@ -126,7 +126,7 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    ![custom_columns-1](assets/custom_columns-1.png)
 
-1. Add the property path under the `jcr:content` node in CRXDE using the property path picker.
+1. プロパティパスピッカーを使用して、CRXDE の `jcr:content` ノード下にプロパティパスを追加します。
 
    ![property_picker](assets/property_picker.png)
 
@@ -136,13 +136,13 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    カスタム列をさらに追加するには、「**[!UICONTROL 追加]**」をタップまたはクリックし、手順 5 および 6 を繰り返します。
 
-1. Tap/click **[!UICONTROL Create]** from the toolbar. レポートの生成が開始されたことを通知するメッセージが表示されます。
+1. ツールバーの「**[!UICONTROL 作成]**」をタップまたはクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
 
 ## パージサービスの設定 {#configure-purging-service}
 
 不要になったレポートを削除するには、数量や経過日数に基づいて既存のレポートをパージするように、Web コンソールで DAM レポートパージサービスを設定します。
 
-1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
-1. **[!UICONTROL DAM Report Purge Service設定を開きます]** 。
-1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. レポートの経過日数および数量のしきい値を設定することもできます。
+1. `https://[aem_server]:[port]/system/console/configMgr` で Web コンソール（設定マネージャー）にアクセスします。
+1. 「**[!UICONTROL DAM Report Purge Service]**」設定を開きます。
+1. `scheduler.expression.name` フィールドでパージサービスの頻度（時間間隔）を指定します。レポートの経過日数および数量のしきい値を設定することもできます。
 1. 変更内容を保存します。
