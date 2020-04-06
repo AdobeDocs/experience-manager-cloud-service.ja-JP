@@ -3,14 +3,14 @@ title: 接続されたアセットを使用して、Adobe Experience Manager Sit
 description: 別のExperience Manager SiteデプロイメントでWebページを作成する場合、リモートのAdobe Experience Manager Assetsデプロイメントで使用できるアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b197a318e696df5b3502de5ce634e9990ab1032
+source-git-commit: 188917fe677a88142c702b9637600db872853974
 
 ---
 
 
 # Connected Assets を使用した AEM Sites での DAM アセットの共有 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。親会社が一緒に使用したい異種インフラストラクチャにつながる、連携または買収に必要な既存の導入環境が、地理的に分散する理由がいくつか考えられます。
+大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。理由として、連携する必要のあるデプロイメントが地理的に分散している、企業買収によって異種混合インフラストラクチャとなった（親企業は統合を望んでいる）、成長によりアセット管理専用のインスタンスが必要な規模になった、などが挙げられます。
 
 AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイトに必要なアセットを提供するデジタルアセット管理（DAM）システムです。AEM では、AEM Sites と AEM Assets の統合により、上記の使用事例をサポートできるようになりました。
 
@@ -18,7 +18,7 @@ AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイ�
 
 作成者は、ページエディターでページを編集しながら、別の AEM Assets デプロイメント上のアセットをシームレスに検索、参照および埋め込むことができます。AEM 管理者が実行する場合は、AEM Sites の様々なローカルデプロイメントと AEM Assets の別の（リモート）デプロイメントを一度だけ統合します。
 
-サイト作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、一括でのリモートアセットの移行を検討します。
+サイト作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、一括でのリモートアセットの移行を検討します。[Assets 移行ガイド](/help/assets/assets-migration-guide.md)を参照してください。
 
 ### 前提条件とサポートされている導入 {#prerequisites}
 
@@ -37,7 +37,7 @@ AEM Sites は Web ページの作成機能を備え、AEM Assets は Web サイ�
 
 作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターで使用できます。 Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. サポートされるリストは次のとおりです。
 
-* **画像形式**:画像コンポーネントでサポートされてい [る画像形式](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) がサポートされます。 ダイナミックメディア画像はサポートされていません。
+* **画像形式**:画像コンポーネントでサポートされてい [る画像形式](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/image.html) がサポートされます。 ダイナミックメディア画像はサポートされていません。
 * **ドキュメント形式**:詳しくは、接続さ [れたアセットでサポートされるドキュメント形式を参照してくださ](file-format-support.md#doc-formats)い。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
@@ -164,7 +164,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * メタデータスキーマは取得されません。
 * Sites 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズするための API サポートはありません。
-* この機能は、リモートアセットのシームレスな検索および使用をサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。
+* この機能は、リモートアセットのシームレスな検索および使用をサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。[Assets 移行ガイド](assets-migration-guide.md)を参照してください。
 * 「画像を選択」をクリックして、ページのプロパティの「サムネール」タブでWebページのサムネ [!UICONTROL ールと] してリモ [!UICONTROL ートアセットを使用] できません 。
 
 **セットアップとライセンス**
