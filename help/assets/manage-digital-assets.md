@@ -1,38 +1,36 @@
 ---
-title: Experience Managerでのデジタルアセットの管理
+title: Adobe Experience Manager でのデジタルアセット管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a5853626d61e6e7ea34514f4a5797ae47ce121bf
+source-git-commit: fb0a04fac1715d8077e1e69b1dc24bda4d3a667f
 
 ---
 
 
-# Manage assets {#manage-assets}
+# アセットの管理 {#manage-assets}
 
-この記事では、Adobe Experience Manager(AEM)Assetsでアセットを管理および編集する方法について説明します。 コンテンツフラグメントを管理する方法については、「コンテ [ンツフラグメント](content-fragments/content-fragments.md) 」アセットを参照してください。
+ここでは、Adobe Experience Manager (AEM) Assets でアセットを管理および編集する方法について説明します。コンテンツフラグメントを管理するには、[コンテンツフラグメント](content-fragments/content-fragments.md)アセットを参照してください。
 
 ## フォルダーの作成 {#creating-folders}
 
-When organizing a collection of assets, for example, all `Nature` images, you can create folders to keep them together. フォルダーを使用すると、アセットを分類および整理できます。ただし、効率向上のためには必ずアセットをフォルダーで整理しなければならないということではありません。
+`Nature` に関するすべての画像などの、アセットのコレクションを構成する場合に、それらを保存するフォルダーを作成できます。フォルダーを使用すると、アセットを分類および整理できます。ただし、効率向上のためには必ずアセットをフォルダーで整理しなければならないということではありません。
 
 >[!NOTE]
 >
->* `sling:OrderedFolder` タイプの Assets フォルダーの共有は、Marketing Cloud との共有時はサポートされません。If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* Experience Managerでは、単語をフォルダーの名 `subassets` 前として使用することはできません。 これは、複合アセットのサブアセットを含むノード用に予約されたキーワードです
+>`sling:OrderedFolder` タイプの Assets フォルダーの共有は、Marketing Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
 
-
-1. 新しいフォルダーを作成するデジタルアセットフォルダーの場所に移動します。メニューで、「**[!UICONTROL 作成]**」をクリックします。Select **[!UICONTROL New Folder]**.
-1. In the **[!UICONTROL Title]** field, provide a folder name. デフォルトでは、フォルダー名として指定したタイトルが使用されます。フォルダーが作成されると、デフォルトのフォルダー名を上書きして、別のフォルダー名を指定できます。
+1. 新しいフォルダーを作成するデジタルアセットフォルダーの場所に移動します。メニューで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL 新規フォルダ]**」を選択します。
+1. 「**[!UICONTROL タイトル]**」フィールドにフォルダー名を入力します。デフォルトでは、フォルダー名として指定したタイトルが使用されます。フォルダーが作成されると、デフォルトのフォルダー名を上書きして、別のフォルダー名を指定できます。
 1. 「**[!UICONTROL 作成]**」をクリックします。作成したフォルダーがデジタルアセットフォルダーに表示されます。
 
 以下の文字（スペース区切りリスト）はサポートされません。
 
-* アセットファイル名に次の文字を含めることはできません。 `* / : [ \\ ] | # % { } ? &`
-* アセットフォルダ名には、次の文字を含めることはできません。 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* アセットファイル名に次の文字を含めることはできません。`* / : [ \\ ] | # % { } ? &`
+* アセットフォルダー名に次の文字を含めることはできません。`* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Upload assets {#uploading-assets}
+## アセットのアップロード {#uploading-assets}
 
 詳しくは [、Experience Managerへのデジタルアセットの追加](add-assets.md)（英語のみ）を参照してください。
 
@@ -40,34 +38,34 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 アセットをプレビューするには、次の手順に従います。
 
-1. アセットユーザーインターフェイスから、プレビューするアセットの場所に移動します。
+1. Assets ユーザーインターフェイスで、プレビューするアセットの場所に移動します。
 1. 目的のアセットをタップして開きます。
 
 1. プレビューモードでは、[サポートされている画像タイプ](/help/assets/file-format-support.md)で（インタラクティブ編集中に）ズームオプションを使用できます。
 
-   To zoom into an asset, tap/click `+` (or tap/click the magnifying glass on the asset). To zoom out, tap/click `-`. ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。ズームのリセット矢印を使用すると、元のビューに戻ります。
+   アセットにズームインするには、`+` をタップまたはクリック（またはアセット上の虫眼鏡アイコンをタップまたはクリック）します。ズームアウトするには、`-` をタップまたはクリックします。ズームインすると、パンニングによって画像の任意の場所を詳細に確認できます。「ズームをリセット」矢印をクリックすると、元の表示に戻ります。
 
-   Tap **[!UICONTROL Reset]** to reset the view to the original size.
+   **[!UICONTROL リセット]**&#x200B;をタップすると、表示を元のサイズに戻すことができます。
 
-## プロパティを編集 {#editing-properties}
+## プロパティの編集 {#editing-properties}
 
 1. メタデータを編集するアセットの場所に移動します。
 
-1. Select the asset, and tap/click **[!UICONTROL Properties]** from the toolbar to view asset properties. または、アセットカードで&#x200B;**[!UICONTROL プロパティ]**&#x200B;クイックアクションを選択します。
+1. アセットを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をタップまたはクリックして、アセットのプロパティを表示します。または、アセットカードで&#x200B;**[!UICONTROL プロパティ]**&#x200B;クイックアクションを選択します。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. 例えば、「**[!UICONTROL 基本]**」タブでは、タイトルや説明などを編集します。
+1. [!UICONTROL プロパティ]ページの様々なタブで、メタデータのプロパティを編集します。例えば、「**[!UICONTROL 基本]**」タブでは、タイトルや説明などを編集します。
 
    >[!NOTE]
    >
-   >The layout of the [!UICONTROL Properties] page and the metadata properties available depend on the underlying metadata schema. To learn how to modify the layout of the [!UICONTROL Properties] page, see [Metadata Schemas](/help/assets/metadata-schemas.md).
+   >[!UICONTROL プロパティ]ページのレイアウトと編集できるメタデータのプロパティは、基になるメタデータスキーマによって変わります。[!UICONTROL プロパティ]ページのレイアウトを変更する方法については、[メタデータスキーマ](/help/assets/metadata-schemas.md)を参照してください。
 
 1. アセットをアクティベートする特定の日付と時間をスケジュールするには、「**[!UICONTROL オンタイム]**」フィールドの横にある日付選択を使用します。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. アクティベートを解除する日付は、アセットに設定されたアクティベート日より後の日付にしてください。「オフ」の [!UICONTROL 後は]、アセットとそのレンディションは、アセットWebインターフェイスまたはHTTP API経由では使用できなくなります。
+1. 特定の期間の後にアセットのアクティベートを解除するには、「**[!UICONTROL オフタイム]**」フィールドの横にある日付選択を使用して、アクティベートを解除する日付と時間を選択します。アクティベートを解除する日付は、アセットに設定されたアクティベート日より後の日付にしてください。[!UICONTROL オフタイム]の経過後、アセットとそのレンディションは、Assets Web インターフェイスでも HTTP API でも使用できません。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
@@ -79,7 +77,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
    >
    >タグを作成するには、CRXリポジトリのパスでの書き込み `/content/cq:tags/default` 権限が必要です。
 
-1. To view usage usage statistics for the asset, click/tap the **[!UICONTROL Insights]** tab.
+1. アセットの使用状況の統計を確認するには、「**[!UICONTROL インサイト]**」タブをタップまたはクリックします。
 
    使用状況の統計には、次の情報が含まれています。
 
@@ -90,7 +88,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
 
-1. アセットユーザーインターフェイスに移動します。 タイトル、説明、タグなど、編集されたメタデータプロパティは、カード表示のアセットカードと、リスト表示の関連する列の下に表示されます。
+1. アセットユーザーインターフェイスに移動します。タイトル、説明、タグなど、編集したメタデータプロパティは、カード表示のアセットカードと、リスト表示の関連する列の下に表示されます。
 
 ## アセットのコピー {#copying-assets}
 
@@ -104,60 +102,60 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 その他のプロパティとメタデータ情報は保持されます。アセットをコピーするときに、部分的なコピーが作成されることはありません。
 
-1. From the Assets UI, select one or more assets, and then tap/click the **[!UICONTROL Copy]** icon from the toolbar. または、アセットカ **[!UICONTROL ードから]** Copy ![](assets/copy_icon.png) copy_iconクイックアクションを選択します。
+1. Assets UI から 1 つ以上のアセットを選択し、ツールバーの「**[!UICONTROL コピー]**」アイコンをタップまたはクリックします。または、アセットカードから&#x200B;**[!UICONTROL コピー]** ![copy_icon](assets/copy_icon.png) クイックアクションを選択します。
 
    >[!NOTE]
    >
-   >If you use the [!UICONTROL Copy] quick action, you can only copy one asset at a time.
+   >[!UICONTROL コピー]クイックアクションを使用した場合、一度にコピーできるアセットは 1 つだけです。
 
 1. アセットをコピーする場所に移動します。
 
    >[!NOTE]
    >
-   >同じ場所でアセットをコピーすると、AEM は自動的に名前のバリエーションを生成します。For example, if you copy an asset titled `Square`, AEM automatically generates the title for its copy as `Square1`.
+   >同じ場所でアセットをコピーすると、AEM は自動的に名前のバリエーションを生成します。例えば、「`Square`」というタイトルのアセットをコピーすると、AEM は自動的にそのコピーのタイトルを「`Square1`」として生成します。
 
-1. Click the **[!UICONTROL Paste]** asset icon from the toolbar. アセットはこの場所にコピーされます。
+1. ツールバーの&#x200B;**[!UICONTROL 貼り付け]**&#x200B;アセットアイコンをクリックします。アセットがこの場所にコピーされます。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
+   >ツールバーの&#x200B;**[!UICONTROL 貼り付け]**&#x200B;アイコンが使用できるのは、貼り付け操作が完了するまでです。
 
-### アセットの移動または名前の変更 {#moving-or-renaming-assets}
+### アセットの移動または名前変更 {#moving-or-renaming-assets}
 
 1. 移動するアセットの場所に移動します。
 
-1. Select the asset, and tap/click the **[!UICONTROL Move]** icon ![move_icon](assets/move_icon.png) from the toolbar.
+1. アセットを選択し、ツールバーの&#x200B;**[!UICONTROL 移動]**&#x200B;アイコン ![move_icon](assets/move_icon.png) をタップまたはクリックします。
 
 1. アセットを移動ウィザードで、次のいずれかの操作をおこないます。
 
-   * 移動後のアセットの名前を指定します。Then tap/click **[!UICONTROL Next]** to proceed.
+   * 移動後のアセットの名前を指定します。その後、「**[!UICONTROL 次へ]**」をタップまたはクリックして先に進みます。
 
-   * Tap/click **[!UICONTROL Cancel]** to stop the process.
+   * 「**[!UICONTROL キャンセル]**」をタップまたはクリックして、プロセスを停止します。
    >[!NOTE]
    >
    >* 新しい場所に同じ名前のアセットがない場合は、同じ名前を指定できます。ただし、アセットの移動先に同じ名前のアセットが既に存在する場合は、別の名前を使用する必要があります。同じ名前を使用すると、その名前のバリエーションが自動的に生成されます。例えば、「Square」という名前のアセットの場合、自動的にそのコピーの名前が「Square1」として生成されます。
    >* 名前の変更時に、ファイル名に空白は使用できません。
 
 
-1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:
+1. **[!UICONTROL 宛先を選択]**&#x200B;ダイアログで、次のいずれかの操作をおこないます。
 
-   * Navigate to the new location for the assets, and then tap/click **[!UICONTROL Next]** to proceed.
+   * アセットの移動先に移動し、「**[!UICONTROL 次へ]**」をタップまたはクリックして次に進みます。
 
-   * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
+   * 「**[!UICONTROL 戻る]**」をタップまたはクリックして、**[!UICONTROL 名前を変更]**&#x200B;画面に戻ります。
 
-1. If the assets being moved have any referencing pages, assets, or collections, the **[!UICONTROL Adjust References]** tab appears beside the **[!UICONTROL Select Destination]** tab.
+1. 移動されるアセットに参照ページ、アセット、コレクションがある場合は、「**[!UICONTROL 宛先を選択]**」タブの横に「**[!UICONTROL 参照を調整]**」タブが表示されます。
 
-   Do one of the following in the **[!UICONTROL Adjust References]** screen:
+   **[!UICONTROL 参照を調整]**&#x200B;画面で次のいずれかの操作を実行します。
 
-   * Specify the references to be adjusted based on the new details, and then tap/click **[!UICONTROL Move]** to proceed.
+   * 新しい情報に基づいて調整する参照を指定し、「**[!UICONTROL 移動]**」をタップまたはクリックして次に進みます。
 
    * 「**[!UICONTROL 調整]**」列で、アセットへの参照を選択／選択解除します。
-   * Tap/click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
+   * 「**[!UICONTROL 戻る]**」をタップまたはクリックして、**[!UICONTROL 宛先を選択]**&#x200B;画面に戻ります。
 
-   * Tap/click **[!UICONTROL Cancel]** to stop the move operation.
-   参照を更新しない場合、参照は引き続きアセットの前のパスを指します。 参照を調整すると、更新され、アセットの新しいパスが反映されます。
+   * 「**[!UICONTROL キャンセル]**」をタップまたはクリックして、移動操作を停止します。
+   参照を更新しなければ、引き続きアセットの以前のパスが示されます。参照を調整すると、更新され、アセットの新しいパスが反映されます。
 
 ### レンディションの管理 {#managing-renditions}
 
@@ -167,7 +165,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Tap/click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
+1. グローバルナビゲーションアイコンをタップまたはクリックし、リストから「**[!UICONTROL レンディション]**」を選択します。
 
    ![renditions_menu](assets/renditions_menu.png)
 
@@ -183,7 +181,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
    **レンディションの削除**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then tap/click the **[!UICONTROL Delete Rendition]** icon from the toolbar.
+   **[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択し、ツールバーの「**[!UICONTROL レンディションを削除]**」アイコンをタップまたはクリックします。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
@@ -195,31 +193,31 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
    >[!NOTE]
    >
-   >**[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択する場合、ツールバーのコンテキストが変わり、レンディションに関連するアクションのみが表示されます。「レンディションをアップロード」アイコンなどのオプションは表示されません。これらのオプションをツールバーに表示するには、アセットの詳細ページに移動します。
+   >**[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択する場合、ツールバーのコンテキストが変わり、レンディションに関連するアクションのみが表示されます。レンディションをアップロードアイコンなどのオプションは表示されません。これらのオプションをツールバーに表示するには、アセットの詳細ページに移動します。
 
    画像またはビデオアセットの詳細ページに表示するレンディションのサイズを設定できます。指定するサイズに基づいて、AEM Assets はレンディションを正確なサイズまたは最も近いサイズで表示します。
 
-   画像のレンディションサイズをアセットの詳細レベルで設定するには、`renditionpicker`ノード（`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`）をオーバーレイし、width プロパティの値を設定します。画像サイズに基づいてアセットの詳細ページでレンディションをカスタマイズするには、幅の代わりに **[!UICONTROL size (Long) in KB]** プロパティを設定します。サイズベースのカスタマイズの場合、`preferOriginal` プロパティを使用すると、一致するレンディションのサイズがオリジナルより大きい場合でも、オリジナルが優先されます。
+   アセットの詳細レベルで画像のレンディションのサイズを設定するには、`renditionpicker` ノード（`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`）をオーバーレイして、幅のプロパティの値を設定します。画像サイズに基づいてアセットの詳細ページでレンディションをカスタマイズするには、幅の代わりに **[!UICONTROL size (Long) in KB]** プロパティを設定します。サイズベースのカスタマイズの場合、`preferOriginal` プロパティを使用すると、一致するレンディションのサイズがオリジナルより大きい場合でも、オリジナルが優先されます。
 
-   同様に、Annotationページの画像をオーバーレイしてカスタマイズできま `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`す。
+   同様に、`libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` をオーバーレイして注釈ページの画像をカスタマイズできます。
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
+   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリ内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
 
    >[!NOTE]
    >
    >ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。また、ブラウザーによってサポートされるビデオ形式が異なります。
 
-## アセットを削除する {#delete-assets}
+## アセットの削除 {#delete-assets}
 
 他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。
 
-また、オーバーレイを使用して「削除を強制」ボタンを無効にすることで、参照されているアセットの削除と壊れたリンクの放置を禁止します。
+また、オーバーレイを使用して「削除を強制」ボタンを無効にすることで、参照元のアセットの削除と壊れたリンクの放置を禁止します。
 
 1. 削除するアセットの場所に移動します。
 
-1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
+1. アセットを選択し、ツールバーの「**[!UICONTROL 削除]**」アイコンをタップまたはクリックします。
 
    ![delete_icon](assets/delete_icon.png)
 
@@ -232,20 +230,20 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
       * アセットに参照がある場合は、「**1 つ以上のアセットが参照されています。**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
    >[!NOTE]
    >
-   >アセットを削除するには、dam/assetの削除権限が必要です。 変更権限のみ付与されている場合、アセットのメタデータの編集とアセットへの注釈の追加のみが可能で、アセットやそのメタデータの削除は実行できません。
+   >アセットを削除するには、dam/asset で削除権限が必要です。変更権限のみ付与されている場合、アセットのメタデータの編集とアセットへの注釈の追加のみが可能で、アセットやそのメタデータの削除は実行できません。
 
    >[!NOTE]
    >
    >他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。
    >
    >
-   >また、オーバーレイを使用して「削除を強制」ボタンを無効にすることで、参照されているアセットの削除と壊れたリンクの放置を禁止します。
+   >また、オーバーレイを使用して「削除を強制」ボタンを無効にすることで、参照元のアセットの削除と壊れたリンクの放置を禁止します。
 
 ## アセットのダウンロード {#download-assets}
 
 [AEM からのアセットのダウンロード](/help/assets/download-assets-from-aem.md)を参照してください。
 
-## Publish assets {#publish-assets}
+## アセットの公開 {#publish-assets}
 
 <!--
 >[!NOTE]
@@ -253,7 +251,7 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 >For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 -->
 
-1. 公開するアセットまたはフォルダの場所に移動します。
+1. 公開するアセットまたはフォルダーの場所に移動します。
 
 1. アセットカードで&#x200B;**[!UICONTROL 公開]**&#x200B;クイックアクションを選択するか、アセットを選択し、ツールバーの「**[!UICONTROL クイック公開]**」アイコンをタップまたはクリックします。
 1. アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。表示されるのは、非公開の参照か、最後に公開または非公開にされた後に変更された参照だけです。公開する参照を選択します。
@@ -274,26 +272,26 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 1. パブリッシュ環境から削除する（非公開にする）アセットまたはアセットフォルダーの場所に移動します。
 
-1. Select the asset/folder to unpublish, and tap/click the **[!UICONTROL Manage Publication]** icon from the toolbar.
+1. 非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**」アイコンをタップまたはクリックします。
 
    ![manage_publication](assets/manage_publication.png)
 
-1. Select the **[!UICONTROL Unpublish]** action from the list.
+1. リストから「**[!UICONTROL 非公開]**」アクションを選択します。
 
    ![unpublish_action](assets/unpublish_action.png)
 
 1. 後でアセットを非公開にするには、「**[!UICONTROL 後で非公開にする]**」を選択して、アセットを非公開にする日付を選択します。
 1. パブリッシュ環境でアセットを非公開にする日付をスケジュールします。
-1. アセットが他のアセットを参照する場合は、非公開にする参照を選択します。Tap/click **[!UICONTROL Unpublish]**.
+1. アセットが他のアセットを参照する場合は、非公開にする参照を選択します。「**[!UICONTROL 非公開]**」をタップまたはクリックします。
 1. 確認ダイアログで、次のいずれかをタップまたはクリックします。
 
    * **[!UICONTROL キャンセル]**：アクションを停止します。
-   * **[!UICONTROL 非公開]** ：指定した日にアセットが非公開（公開環境で使用できなくなった）であることを確認します。
+   * **[!UICONTROL 非公開]**：指定された日付にアセットを非公開にします（パブリッシュ環境では使用できません）。
    >[!NOTE]
    >
-   >複雑なアセットの公開を取り消す場合は、アセットのみの公開を取り消します。 参照は、他の公開済みアセットによって参照される可能性があるので、公開の取り消しは避けてください。
+   >複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
 
-## Closed user group {#closed-user-group}
+## 閉じられたユーザーグループ {#closed-user-group}
 
 閉じられたユーザーグループ（CUG）は、AEM から公開された特定のアセットフォルダーへのアクセスを制限するために使用します。フォルダーに対して CUG を作成すると、そのフォルダー（フォルダーのアセットとサブフォルダーを含む）へのアクセスは、割り当てられたメンバーまたはグループのみに制限されます。フォルダーにアクセスするには、セキュリティ資格情報を使用してログインする必要があります。
 
@@ -325,8 +323,8 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 クイックアクションのアイコンは、一度に 1 つのアセットに対してのみ利用できます。デバイスに応じて、次の操作を実行してクイックアクションアイコンを表示します。
 
-* タッチデバイス：タッチ＆ホールド。例えば、iPadでは、アセットをタップ&amp;ホールドして、クイックアクションを表示することができます。
-* 非タッチデバイス：マウスポインターで指す。例えば、デスクトップデバイスで、アセットのサムネールにポインターを合わせると、クイックアクションバーが表示されます。
+* タッチデバイス：タッチ＆ホールド。例えば iPad では、アセットをタップ＆ホールドするとクイックアクションが表示されます。
+* 非タッチデバイス：マウスポインターで指す。例えばデスクトップデバイスでは、アセットのサムネールをマウスポインターで指すとクイックアクションバーが表示されます。
 
 ## 画像の編集 {#editing-images}
 
@@ -334,16 +332,16 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 >[!NOTE]
 >
->一部のコンポーネントでは、フルスクリーンモードで追加のオプションも使用できます。
+>一部のコンポーネントでは、全画面表示モードで追加のオプションも使用できます。
 
 1. 編集モードでアセットを開くには、次のいずれかの操作をおこないます。
 
-   * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-   * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
-   * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+   * アセットを選択し、ツールバーの「**[!UICONTROL 編集]**」アイコンをクリックまたはタップします。
+   * カード表示で、アセットに表示される「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
+   * アセットページで、ツールバーの「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
    ![edit_icon](assets/edit_icon.png)
 
-1. To crop the image, tap/click the **Crop** icon.
+1. 画像を切り抜くには、**切り抜き**&#x200B;アイコンをタップまたはクリックします。
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -352,7 +350,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. 切り抜く領域を選択し、画像上でそのサイズまたは位置を変更します。
-1. **完了**&#x200B;アイコン（右上隅）を使用して、画像を切り抜きます。「**完了**」アイコンをクリックすると、レンディションの再生成もおこなわれます。
+1. **完了**&#x200B;アイコン（右上隅）を使用して、画像を切り抜きます。**完了**&#x200B;アイコンをクリックすると、レンディションの再生成もおこなわれます。
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -368,7 +366,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. Tap/click the **Finish** icon to save the changes.
+1. **完了**&#x200B;アイコンをタップまたはクリックして変更を保存します。
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
@@ -380,13 +378,14 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 >[!NOTE]
 >
->To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+>TXT ファイルを編集するには、Configuration Manager で **Day CQ Link Externalizer** を設定します。
 
 ## タイムライン {#timeline}
 
 タイムラインを使用すると、アセットのアクティブなワークフロー、コメントや注釈、アクティビティログ、バージョンなど、選択した項目の様々なイベントを表示できます。
 
-![アセット図のタイムラインエントリを並べ替](assets/sort_timeline.gif)*えます。アセットのタイムラインエントリの並べ替え*
+![アセットのタイムラインエントリの並べ替え](assets/sort_timeline.gif)
+**&#x200B;図：アセットのタイムラインエントリの並べ替え
 
 >[!NOTE]
 >
@@ -398,16 +397,16 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 ## 注釈 {#annotating}
 
-注釈とは、画像やビデオに追加するコメントまたは注記です。注釈を使用すると、マーケターはアセットに関する共同作業やフィードバックを残すことができます。
+注釈とは、画像やビデオに追加するコメントまたは注記です。マーケティング担当者は、注釈により、アセットについてコラボレーションし、フィードバックを残すことができます。
 
-ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。AEM Assetsでサポートされるビデオ形式は、ブラウザーによって異なります。
+ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。AEM Assets がサポートするビデオの形式は、ブラウザーによって異なります。
 
 >[!NOTE]
 >
 >コンテンツフラグメントの場合、[注釈はフラグメントエディターで作成されます](content-fragments/content-fragments.md)。
 
 1. 注釈を追加するアセットの場所に移動します。
-1. Tap/click the **[!UICONTROL Annotate]** icon from one of the following:
+1. 以下のいずれかから&#x200B;**[!UICONTROL 注釈]**&#x200B;アイコンをタップまたはクリックします。
 
    * [クイックアクション](#quick-actions)
    * アセットを選択した後またはアセットページに移動した後に、ツールバーから
@@ -417,15 +416,13 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
-<!--
-1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
--->
+1. 注釈についてユーザーに通知するには、ユーザーの電子メールアドレスを指定して、コメントを追加します。例えば、注釈について Aaron MacDonald というユーザーに通知するには、@aa と入力します。一致するすべてのユーザーに関するヒントがリストに表示されます。Aaron の電子メールアドレスをリストから選択し、コメントを使用してタグ付けします。同様に、注釈内の任意の場所、またはコメントの前後で追加のユーザーにタグ付けできます。
 
->[!NOTE]
->
->For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+   >[!NOTE]
+   >
+   >管理者以外のユーザーには、Crx-de で */home* に読み取り権限がある場合にのみ候補が表示されます。
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+   ![chlimage_1-235](assets/chlimage_1-235.png)
 
 1. 注釈を追加したら、「**[!UICONTROL 追加]**」をクリックして注釈を保存します。注釈に関する通知が Aaron に送信されます。
 
@@ -436,17 +433,17 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
    >複数の注釈を追加してから、それらを保存できます。
 
 1. 「**[!UICONTROL 閉じる]**」をタップまたはクリックして注釈モードを終了します。
-1. To view the notification, log in to AEM Assets with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
+1. 通知を表示するには、Aaron MacDonald の資格情報を使用して AEM Assets にログインし、「**[!UICONTROL 通知]**」アイコンをクリックします。
 
    >[!NOTE]
    >
-   >注釈はビデオアセットにも追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。For details, see [managing video assets](manage-video-assets.md).
+   >注釈はビデオアセットにも追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。詳しくは、[ビデオアセットの管理](manage-video-assets.md)を参照してください。
 
-1. 別の色を選択してユーザーを区別できるようにするには、プロフィールアイコンをクリックまたはタップし、「**[!UICONTROL 環境設定]**」をクリックまたはタップします。
+1. 別の色を選択してユーザーを区別できるようにするには、プロファイルアイコンをクリックまたはタップし、「**[!UICONTROL 環境設定]**」をクリックまたはタップします。
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
 
-   **[!UICONTROL 注釈カラー]**&#x200B;ボックスに必要な色を指定し、「**[!UICONTROL 確定]**」をクリックまたはタップします。
+   **[!UICONTROL 注釈カラー]**&#x200B;ボックスに必要な色を指定し、**[!UICONTROL 確定]**&#x200B;をクリックまたはタップします。
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -474,17 +471,17 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 ### 注釈の印刷 {#printing-annotations}
 
-アセットに注釈が含まれている場合や、アセットがレビューワークフローの対象になっている場合は、アセットを注釈と共に印刷し、オフラインレビュー用のPDFファイルとしてステータスを確認できます。
+アセットに注釈がある場合や、レビューワークフローの対象になっている場合は、オフラインでのレビュー用に注釈とレビューステータス付きでアセットを PDF ファイルとして印刷できます。
 
 注釈またはレビューステータスのみ印刷することも選択できます。
 
-注釈とレビューステータスを印刷するには、**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックし、ウィザードの指示に従ってください。The **[!UICONTROL Print]** icon appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
+注釈とレビューステータスを印刷するには、**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックし、ウィザードの指示に従ってください。**[!UICONTROL 印刷]**&#x200B;アイコンは、アセットに注釈またはレビューステータスが少なくとも 1 つ割り当てられている場合にのみ、ツールバーに表示されます。
 
 1. Assets UI から、アセットのプレビューページを開きます。
 1. 次のいずれかの操作をおこないます。
 
    * すべての注釈とレビューステータスを印刷するには、手順 3 をスキップして手順 4 に直接進みます。
-   * To print specific annotations and review status, open the [timeline](/help/assets/manage-digital-assets.md#timeline) and then go to step 3.
+   * 特定の注釈やレビューステータスを印刷するには、[タイムライン](/help/assets/manage-digital-assets.md#timeline)を開き、手順 3 に進みます。
 
 1. 特定の注釈を印刷するには、タイムラインから注釈を選択します。
 
@@ -498,7 +495,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. 印刷ダイアログから、「注釈／レビューステータス」を PDF のどこに表示したいかを選択します。For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. デフォルトで選択されています。
+1. 印刷ダイアログから、注釈／レビューステータスを PDF のどこに表示したいかを選択します。例えば、印刷する画像が含まれるページの右上に注釈／ステータスを印刷したい場合は、「**左上**」設定を使用します。デフォルトで選択されています。
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -522,7 +519,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    レンダリングされた PDF ファイルに戻り、更新します。更新された PDF に、変更が反映されています。
 
-## Asset versioning {#asset-versioning}
+## アセットのバージョン管理 {#asset-versioning}
 
 バージョン管理では、特定の時点でのデジタルアセットのスナップショットが作成されます。バージョン管理を使用すると、後で、以前の状態にアセットを復元できます。例えば、アセットに対しておこなった変更を取り消したい場合、バージョン管理を使用して未編集のバージョンにアセットを復元できます。
 
@@ -530,9 +527,9 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 * 別のアプリケーションで画像を変更し、AEM Assets にアップロードします。元の画像が上書きされないように画像のバージョンが作成されます。
 * アセットのメタデータを編集します。
-* AEMデスクトップアプリを使用して、既存のアセットをチェックアウトし、変更を保存します。 アセットが保存されるたびに、新しいバージョンが作成されます。
+* 既存のアセットをチェックアウトしたり変更を保存したりするには、AEM デスクトップアプリケーションを使用します。アセットが保存されるたびに、新しいバージョンが作成されます。
 
-また、ワークフローを使用して、自動バージョン管理を有効にすることもできます。アセットのバージョンを作成すると、メタデータとレンディションがバージョンと共に保存されます。 レンディションによって、同じ画像の代替となる画像が表示されます（例えば、アップロードされた JPEG ファイルの PNG レンディション）。
+また、ワークフローを使用して、自動バージョン管理を有効にすることもできます。アセットのバージョンを作成すると、バージョンと共にメタデータとレンディションが保存されます。レンディションによって、同じ画像の代替となる画像が表示されます（例えば、アップロードされた JPEG ファイルの PNG レンディション）。
 
 バージョン管理機能を使用すると、次の操作を実行できます。
 
@@ -544,9 +541,9 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 1. グローバルナビゲーションアイコンをタップまたはクリックし、メニューから「**[!UICONTROL タイムライン]**」を選択します。
 
-   ![timeline](assets/timeline.png)
+   ![タイムライン](assets/timeline.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to view the available actions you can perform on the asset.
+1. 下にある&#x200B;**[!UICONTROL アクション]**（矢印）アイコンをタップまたはクリックして、アセットで実行できるアクションを表示します。
 
    ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -554,7 +551,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Add a label and comment, and then click **[!UICONTROL Create]** to create a version. Alternatively, tap/click **Cancel** to exit the operation.
+1. ラベルとコメントを追加し、「**[!UICONTROL 作成]**」をクリックしてバージョンを作成します。または、「**キャンセル**」をタップまたはクリックして操作を終了します。
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -571,7 +568,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
    ![save_version](assets/save_version.png)
 
 1. バージョンのプレビューを生成するには、「**[!UICONTROL バージョンをプレビュー]**」をタップまたはクリックします。
-1. To display this version in the Assets UI, select **[!UICONTROL Revert to this Version]**.
+1. Assets UI でこのバージョンを表示するには、「**[!UICONTROL このバージョンに戻す]**」を選択します。
 1. 2 つのバージョンを比較するには、アセットのアセットページに移動し、現在のバージョンと比較するバージョンをタップまたはクリックします。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
@@ -580,18 +577,18 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    ![compare_versions](assets/compare_versions.png)
 
-### Starte a workflow on an asset {#starting-a-workflow-on-an-asset}
+### アセットでのワークフローの開始 {#starting-a-workflow-on-an-asset}
 
 1. ワークフローを開始するアセットの場所に移動し、アセットをタップまたはクリックしてそのアセットのページを開きます。
-1. Tap/click the GlobalNav icon, and the choose **[!UICONTROL Timeline]** from the menu to display the timeline.
+1. グローバルナビゲーションアイコンをタップまたはクリックし、メニューから「**[!UICONTROL タイムライン]**」を選択してタイムラインを表示します。
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Tap/click the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
+1. 下にある&#x200B;**[!UICONTROL アクション]**（矢印）アイコンをタップまたはクリックして、アセットで使用可能なアクションのリストを表示します。
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
-1. Tap/click **[!UICONTROL Start Workflow]** from the list.
+1. リストの「**[!UICONTROL ワークフローを開始]**」をタップまたはクリックします。
 
    ![chlimage_1-253](assets/chlimage_1-253.png)
 
@@ -612,6 +609,6 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 コレクションとは、一連のアセットを順序よく並べたものです。コレクションを使用して、ユーザー間でアセットを共有します。
 
 * 1 つのコレクションにはアセットへの参照のみが含まれるので、様々な場所のアセットを含めることができます。各コレクションは、アセットの参照整合性を維持します。
-* コレクションは、権限レベル（編集、表示など）の異なる複数のユーザー間で共有できます。
+* コレクションは、特権レベル（編集、表示など）の異なる複数のユーザー間で共有できます。
 
-See [Managing Collections](/help/assets/manage-collections.md) for details on collection management.
+コレクションの管理について詳しくは、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
