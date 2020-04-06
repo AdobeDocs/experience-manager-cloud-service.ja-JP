@@ -1,13 +1,12 @@
 ---
-sub-product: Security for AEM as a Cloud Service
-user-guide-title: Security for AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 7ece752a5f59966e0c6be638c37bcaaf238b629a
+sub-product: AEM as a Cloud Service のセキュリティ
+user-guide-title: AEM as a Cloud Service のセキュリティ
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # セキュリティ {#security}
 
-+ [AEM as a Cloud Service のセキュリティ](/help/security/home.md)
 + [AEM as a Cloud Service の IMS サポート ](ims-support.md)
