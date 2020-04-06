@@ -1,15 +1,14 @@
 ---
-sub-product: Authoring Content in AEM as a Cloud Service
-user-guide-title: Authoring Content in AEM as a Cloud Service
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+sub-product: AEMでのクラウドサービスとしてのコンテンツのオーサリング
+user-guide-title: AEMでのクラウドサービスとしてのコンテンツのオーサリング
+translation-type: tm+mt
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # Sites {#sites}
 
-+ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [AEM Cloud Service における AEM Sites の主要な変更点](sites-cloud-changes.md)
 + オーサリング {#authoring}
    + 概要 {#getting-started}
@@ -60,7 +59,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       + [ワークフローへの参加](authoring/workflows/participating.md)
    + パーソナライゼーション {#personalization}
       + [パーソナライゼーションの概要](authoring/personalization/overview.md)
-      + [ContextHub データを使用したページのプレビュー](authoring/personalization/contexthub.md)
+      + [ContextHub データを使用したページのプレビュー ](authoring/personalization/contexthub.md)
       + [ターゲットモードを使用したターゲットコンテンツのオーサリング](authoring/personalization/targeted-content.md)
       + [マルチサイトでのターゲットコンテンツの操作](authoring/personalization/multisite-targeted-content.md)
       + [ターゲットコンテンツ用マルチサイト管理の構造](authoring/personalization/multisite-structure.md)
