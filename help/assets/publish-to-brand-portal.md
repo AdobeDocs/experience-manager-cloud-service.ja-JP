@@ -10,7 +10,7 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
+source-git-commit: 7a98b0f77177612bf81d904e8b0fb3645baf1435
 
 ---
 
