@@ -2,7 +2,7 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
+source-git-commit: a56198a4ca7764d146cb064dd346403c7a5a2c65
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 00912ea1085da2c50ec79ac35bd53d36fd8a9509
 
 ## Apache および Dispatcher の設定とテスト {#apache-and-dispatcher-configuration-and-testing}
 
-ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。Dispatcher について詳しくは、[AEM Dispatcher のドキュメント](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
+ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。Dispatcher について詳しくは、[AEM Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
 
 >[!NOTE]
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
@@ -468,7 +468,7 @@ Dispatcher 設定の構造は、Managed Services と AEM as a Cloud Service と�
 
 ## AMS を AEM as a Cloud service の Dispatcher 設定に変換する方法
 
-AMS 設定を変換する方法を順を追って説明します。ここでは、[Cloud Manager の Dispatcher 設定](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同様な構造のアーカイブがあることを前提としています。
+AMS 設定を変換する方法を順を追って説明します。ここでは、[Cloud Manager の Dispatcher 設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同様な構造のアーカイブがあることを前提としています。
 
 ### アーカイブを抽出し、最終的なプレフィックスを削除する
 
@@ -694,3 +694,135 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 バリデーターが問題を報告しなくなり、Docker コンテナがエラーや警告を出さずに起動した場合、設定を git リポジトリのサブディレクトリ `dispatcher/src` に移動する準備が整いました。
 
 **AMS Dispatcher 設定のバージョン 1 を使用しているお客様は、カスタマーサポートにお問い合わせください。上記の手順が実施できるように、バージョン 1 からバージョン 2 へ移行できるように支援いたします。**
+
+## Dispatcher と CDN {#dispatcher-cdn}
+
+Publishサービスのコンテンツ配信には、次のものが含まれます。
+
+* CDN（通常はアドビが管理）
+* AEMディスパッチャー
+* AEM公開
+
+データフローは次のとおりです。
+
+1. URLがブラウザーに追加されます。
+1. そのドメインへの DNS にマッピングされた CDN に対してリクエストがおこなわれる
+1. コンテンツが CDN 上で完全にキャッシュされている場合、CDN はコンテンツをブラウザーに提供する
+1. コンテンツが完全にキャッシュされていない場合、CDN は Dispatcher を呼び出す（リバースプロキシ）
+1. コンテンツが Dispatcher 上で完全にキャッシュされている場合、Dispatcher はそのコンテンツを CDN に提供する
+1. コンテンツが完全にキャッシュされていない場合、Dispatcher は AEM パブリッシュを呼び出す（リバースプロキシ）
+1. コンテンツはブラウザーによってレンダリングされ、ヘッダーに応じてキャッシュされる場合もあります
+
+ほとんどのコンテンツは、5分後に有効期限切れになるように設定されます。これは、ディスパッチャーキャッシュとCDNの両方が考慮するしきい値です。 発行サービスの再デプロイメント中に、ディスパッチャーのキャッシュがクリアされ、その後、新しい発行ノードがトラフィックを受け入れる前にウォームアップされます。
+
+以下の節では、CDN設定やディスパッチャーの配信を含む、コンテンツのキャッシュに関する詳細を説明します。
+
+作成者サービスから発行サービスへの複製に関する情報は、こちらを参照して [ください](/help/operations/replication.md)。
+
+>[!NOTE]
+>トラフィックは、ディスパッチャーを含むモジュールをサポートするApache Webサーバーを経由します。 ディスパッチャーは、主に、パフォーマンスを向上させるために、パブリッシュノードでの処理を制限するキャッシュとして使用されます。
+
+### CDN {#cdn}
+
+AEMオファーには次の3つのオプションがあります。
+
+1. アドビが管理するCDN - AEMのCDN（標準搭載）。 これは完全に統合されているので、推奨されるオプションです。
+1. お客様管理CDN — お客様は独自のCDNを提供し、その管理を全面的に担当します。
+1. アドビが管理するCDNを指定 — お客様はCDNをAEMの標準搭載CDNに指定します。
+
+>[!CAUTION]
+>最初のオプションを強くお勧めします。 2つ目のオプションを選択した場合、設定ミスの結果に対してアドビは責任を負えません。
+
+2つ目と3つ目のオプションは、ケースバイケースで許可されます。 これには、取り消しが困難なCDNベンダーとのレガシー統合を持つお客様を含む、特定の前提条件を満たすことが含まれます。
+
+#### アドビ管理CDN {#adobe-managed-cdn}
+
+アドビの標準搭載CDNを使用してコンテンツ配信を準備する方法は簡単です。以下に説明します。
+
+1. この情報を含む安全なフォームへのリンクを共有することで、署名済みのSSL証明書と秘密鍵をアドビに提供します。 このタスクでは
+注意：クラウドサービスとしてのAemは、ドメイン検証(DV)証明書をサポートしていません。
+1. カスタマーサポートは、CNAME DNSレコードのタイミングを調整し、FQDNを示します `adobe-aem.map.fastly.net`。
+1. SSL証明書の有効期限が切れると、新しいSSL証明書を再送信できるように通知されます。
+
+アドビが管理するCDNの設定では、デフォルトで、すべてのパブリックトラフィックが、実稼働版と非実稼働版（開発版とステージ版）の両方の環境用に、公開サービスに到達できます。 特定の環境の公開サービスへのトラフィックを制限する場合（IPアドレスの範囲でステージングを制限する場合など）、カスタマーサポートと協力してこれらの制限を設定する必要があります。
+
+#### お客様管理CDN {#customer-managed-cdn}
+
+以下の場合は、お客様が独自で CDN を管理することができます。
+
+1. 既存の CDN がある。
+1. サポートされているCDNである必要があります。 現在、Akamaiがサポートされています。 現在サポートされていないCDNを管理したい場合は、カスタマーサポートにご連絡ください。
+1. お客様がその CDN を管理する。
+1. CDNをクラウドサービスとしてAemと連携するように設定する必要があります。設定手順を以下に示します。
+1. 関連する問題が発生した場合に備えて通話中のエンジニアリングCDNエキスパートがいます。
+1. 設定手順の説明に従って、CDNノードのホワイトリストをCloud Managerに提供する必要があります。
+1. 実稼働環境に移行する前に、ロードテストを実行し、成功させる必要があります。
+
+設定手順：
+
+1. CDNベンダーのホワイトリストをアドビに提供します。環境の作成/更新APIをCIDRのリストで呼び出して、ホワイトリストを作成します。
+1. ヘッダーをド `X-Forwarded-Host` メイン名で設定します。
+1. ホストヘッダーを、接触チャネルドメイン（クラウドサービスの入力としてのAem）で設定します。 この値はAdobeから取得されます。
+1. SNIヘッダーを接触チャネルに送信 sniヘッダーは、ドメイン接触チャネルです。
+1. AEMサーバーにトラ `X-Edge-Key` フィックを正しくルーティングするために必要なを設定します。 この値はAdobeから取得されます。
+
+ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
+
+#### アドビが管理するCDNを参照 {#point-to-point-CDN}
+
+既存のCDNを使用したいが、顧客が管理するCDNの要件を満たしていない場合にサポートされます。 この場合は、独自のCDNを管理し、アドビの管理対象CDNを参照します。
+
+お客様は、実稼働環境に移行する前に、ロードテストを実行し、成功させる必要があります。
+
+設定手順：
+
+1. ヘッダーをド `X-Forwarded-Host` メイン名で設定します。
+1. ホストヘッダーを、接触チャネルドメイン（アドビのCDNの入力）に設定します。 この値はAdobeから取得されます。
+1. SNIヘッダーを接触チャネルに送信 ホストヘッダーと同様に、sniヘッダーはドメイン接触チャネルです。
+1. トラフィック `X-Edge-Key`をAEMサーバーに正しくルーティングするために必要なを設定します。 この値はAdobeから取得されます。
+
+#### CDN キャッシュの無効化 {#CDN-cache-invalidation}
+
+キャッシュの無効化は、次のルールに従います。
+
+* 一般に、HTML コンテンツは、Dispatcher から送出される cache-control ヘッダーに基づいて、5 分間 CDN にキャッシュされます。
+* クライアントライブラリ（JavaScript および CSS）は、不変の値を考慮しない古いブラウザーでは、cache-control が不変または 30 日に設定され、無期限にキャッシュされます。クライアントライブラリは一意のパスで提供され、クライアントライブラリが変更されると、パスも変更されます。つまり、クライアントライブラリを参照する HTML は必要に応じて作成されるので、公開時に新しいコンテンツを体験できます。
+* 初期設定では、画像はキャッシュされません。
+
+ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
+
+## 明示的な Dispatcher キャッシュの無効化 {#explicit-invalidation}
+
+前述のとおり、トラフィックはApache Webサーバーを経由し、ディスパッチャーを含むモジュールをサポートします。 ディスパッチャーは、主に、パフォーマンスを向上させるために、パブリッシュノードでの処理を制限するキャッシュとして使用されます。
+
+一般に、ディスパッチャー内のコンテンツを手動で無効にする必要はありませんが、以下に説明するように、必要に応じて無効にすることができます。
+
+AEMをクラウドサービスとして使用する前は、ディスパッチャーキャッシュを無効にする方法が2つありました。
+
+1. 発行ディスパッチャーフラッシュエージェントを指定して、複製エージェントを呼び出します
+2. `invalidate.cache` API を直接呼び出す（例：POST /dispatcher/invalidate.cache）
+
+`invalidate.cache` アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。
+AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、[Dispatcher ヘルプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html)ドキュメントの無効化手順は、正確ではなくなりました。
+代わりに、レプリケーションフラッシュエージェントを使用する必要があります。これは、レプリケーションAPIを使用して行うことができます。 The Replication API documentation is available [here](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html) and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/jp/experience-manager/using/aem64_replication_api.html) specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents. フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行する発行サービスと一致する、ディスパッチャーを指すように事前設定されています。 フラッシュエージェントは、通常、OSGiのエージェントまたはイベントによってトリガーされます。
+
+次の図に示します。
+
+![CDNCDN](assets/cdnb.png "")
+
+ディスパッチャーキャッシュがクリアされないという問題が発生した場合は、必要に応じてディスパッチャーキャッシュをフラッシュできるカスタマーサポートにお問い合わせください。
+
+アドビが管理するCDNはTTLに従うので、フラッシュする必要はありません。 問題の疑いがある場合は、必要に応じてアドビが管理するCDNキャッシュをフラッシュできるカスタマーサポートにお問い合わせください。
+
+### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
+
+以前のバージョンのAEMと同様に、ページの公開または非公開では、ディスパッチャーのキャッシュからコンテンツがクリアされます。 キャッシュの問題の疑いがある場合は、該当するページを再公開する必要があります。
+
+発行インスタンスは、作成者から新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用してディスパッチャー上の適切なパスを無効にします。 The updated path is removed from the dispatcher cache, together with its parents, up to a level (you can configure this with the [statfileslevel](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+
+### コンテンツの鮮度とバージョンの一貫性 {#content-consistency}
+
+* ページは、HTML、JavaScript、CSS および画像で構成されます。
+* JS ライブラリ間の依存関係を考慮して、clientlibs フレームワークを活用し、JavaScript および CSS リソースを HTML ページに読み込むことをお勧めします。
+* 自動バージョン管理が提供されるので、開発者がソース管理で JS ライブラリに対する変更をチェックインし、リリースがプッシュされると、最新バージョンが利用できるようになります。この機能がないと、開発者は新しいバージョンのライブラリを参照して HTML を手動で変更する必要があります。同じライブラリを共有する HTML テンプレートが多い場合は特に負担がかかります。
+* 新しいバージョンのライブラリが実稼動環境にリリースされると、参照する HTML ページは、更新されたライブラリバージョンへの新しいリンクで更新されます。特定の HTML ページのブラウザーキャッシュの有効期限が切れると、（AEM から）更新されたページが新しいバージョンのライブラリを参照することが保証されるので、古いライブラリがブラウザーキャッシュから読み込まれる心配はありません。更新された HTML ページには、最新のライブラリバージョンがすべて含まれます。
