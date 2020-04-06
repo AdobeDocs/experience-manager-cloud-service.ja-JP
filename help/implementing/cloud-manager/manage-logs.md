@@ -1,47 +1,47 @@
 ---
-title: ログの管理 — クラウドサービス
-description: ログの管理 — クラウドサービス
+title: ログの管理 - クラウドサービス
+description: ログの管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 5913151c4e2bebb84bd68377d64f43e07caaf2dd
+source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
 
 ---
 
 
 # ログへのアクセスと管理 {#manage-logs}
 
-ユーザーは、環境カードを使用して、選択した環境で使用可能なログファイルのリストにアクセスできます。  ユーザーは、選択した環境で使用可能なログファイルのリストにアクセスできます。
+ユーザーは、環境カードを使用して、選択した環境の使用可能なログファイルのリストにアクセスできます。ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-これらのファイルは、概要ページからUIからダウンロードで **きます** 。
+これらのファイルは、UI の&#x200B;**概要**&#x200B;ページからダウンロードできます。
 
 ![](assets/manage-logs1.png)
 
-または、環境ペ **ージ** :
+また、**環境**&#x200B;ページからもダウンロードできます。
 
 ![](assets/manage-logs2.png)
 
->[!N注]
->開いた場所に関係なく、同じダイアログが表示され、個々のログファイルをダウンロードできます。
+>[!Note]
+>開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
 
 ![](assets/manage-logs3.png)
 
 
-## APIを使用したログ {#logs-thorugh-api}
+## API を介したログの入手 {#logs-thorugh-api}
 
-UIからログをダウンロードする以外に、APIとコマンドラインインターフェイスからログを使用できます。
+UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
 
-例えば、特定の環境用のログファイルをダウンロードする場合、このコマンドは
+例えば、特定の環境のログファイルをダウンロードする場合は、次のようなコマンドになります。
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-次のコマンドを使用すると、ログのテーリングが可能です。
+次のコマンドを使用すると、ログの追跡が可能になります。
 
 ```java
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-環境ID（この場合1884）と、使用可能なサービスまたはログ名のオプションを取得するには、次の手順を実行します。
+環境 ID（この例の場合は 1884）と使用可能なサービス名またはログ名のオプションを取得するには、次のコマンドを使用します。
 
 ```java
 $ aio cloudmanager:list-environments
@@ -64,12 +64,5 @@ Environment Id Service    Name
 1884           dispatcher httpdaccess
 ```
 
->[!N注]
->**ログダウンロード**&#x200B;は、UI と API の両方から利用できますが、**ログテーリング**&#x200B;は API/CLI のみです。
-
-### その他のリソース {#resources}
-
-Cloud Manager APIとAdobe I/O CLIについて詳しくは、次の追加のリソースを参照してください。
-
-* [Cloud Manager APIドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>[!Note]
+>**ログのダウンロードは** UI でも API でも可能ですが、**ログの追跡**&#x200B;は API または CLI でのみ可能です。
