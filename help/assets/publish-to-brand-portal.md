@@ -10,12 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: null
 translation-type: tm+mt
-source-git-commit: 7e0375b6ebdf0959dbe50ad3ae2cd0b77709b4c1
+source-git-commit: abc98974f5507c71e75cdd864a98281f7cdba7f3
 
 ---
 
 
-# Publish AEM Assets to Brand Portal {#publish-aem-assets-to-brand-portal}
+# Brand Portalへのアセット、フォルダーおよびコレクションの公開 {#publish-aem-assets-to-brand-portal}
 
 Adobe Experience Manager(AEM)Assets管理者は、AEM Assets Brand Portalインスタンスにアセット、フォルダーおよびコレクションを公開できます。 また、アセットまたはフォルダの公開ワークフローを後日にスケジュールすることもできます。 公開すると、Brand Portalユーザーはアセット、フォルダーおよびコレクションにアクセスし、他のユーザーにさらに配布できます。
 
