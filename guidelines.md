@@ -1,5 +1,5 @@
 ---
-source-git-commit: b5380858e0887da017657c653b05529066d95fd8
+source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
 translation-type: tm+mt
 
 ---
@@ -33,23 +33,23 @@ AEM ドキュメントでは標準的な使用例を扱っています。その�
 
 ### ドキュメントへの貢献は、技術的な質問に回答するためのものではありません。
 
-AEM ドキュメントの改善に役立つアイデアは、貢献として歓迎します。ただし、コメント、問題報告および変更修正依頼は、*貢献*&#x200B;のみを目的としています。これらを、AEM の使用方法、AEM プロジェクトの実装方法、技術的な問題の解決方法についての質問に回答するために使用することはできません。
+AEM ドキュメントの改善に役立つアイデアは、貢献として歓迎します。ただし、コメント、問題報告および変更修正依頼は、*貢献*&#x200B;のみを目的としています。これらを、AEM の使用方法や技術的な問題の解決方法についての質問に回答するために使用することはできません。
 
-Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
+Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Cloud Enterprise Support portal](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html) or discussed in the [Experience Manager community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager).
 
 ***AEMドキュメントの寄稿はアドビカスタマーケアの代わりではありません*** 。サポートに関する質問に対する回答を求める寄稿は拒否されます。
 
 ### 貢献では、影響を受けるドキュメントページを明確に参照する必要があります。
 
-ドキュメントの改善を提案する問題を作成する場合は、影響を受けるページへのリンクを含める必要があります。 ドキュメントページで「**Edit this page**」リンクを使用して問題報告を作成すると、その問題報告は自動的に該当ページへのリンク付きで作成されます。
+ドキュメントの改善を提案する問題を作成する場合は、影響を受けるページへのリンクを含める必要があります。 ドキュメントページで「**このページを編集**」リンクを使用して問題報告を作成すると、その問題報告は自動的に該当ページへのリンク付きで作成されます。
 
-なお、これはプル要求には当てはまりません。プル要求ではもともと、影響を受けるページを参照するからです。
+これは変更修正依頼には当てはまりません。変更修正依頼には、そもそも、影響を受けるページが記載されているからです。
 
 ## ドキュメントガイドライン
 
 アドビのドキュメントに貢献いただく場合は、特定のスタイルガイドラインに従ってください。
 
-これらのガイドラインに従っていただくと、貢献のレビューが容易になり、貢献がアドビのドキュメントにすばやく統合されるようになります。
+これらのガイドラインに従っていただくと、貢献のレビューが容易になり、貢献がアドビのドキュメントにすばやく統合されるようになります。ただし、これらのガイドラインに準拠しない場合や準拠が不十分な場合でも、貢献が拒否されるわけではありません。
 
 ### 言葉遣いとスタイル
 
