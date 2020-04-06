@@ -1,18 +1,14 @@
 ---
-sub-product: Release Notes for AEM as a Cloud Service
-user-guide-title: Release Notes for AEM as a Cloud Service
+sub-product: クラウドサービスとしてのAEMのリリースノート
+user-guide-title: クラウドサービスとしてのAEMのリリースノート
 translation-type: tm+mt
-source-git-commit: bcbb50f467a0e3b3047e2bb872a8fe39a9f02a1a
+source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
 
 ---
 
 
 # リリースノート {#release-notes}
 
-+ [リリース情報](/help/release-notes/home.md)
-+ リリースノート {#release-notes}
-   + [最新のリリースノート（2020.3.0）](/help/release-notes/release-notes-cloud/release-notes-current.md)
-   + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/release-notes-2020-2-0.md)
 + [新機能](what-is-new.md)
 + [AEM Cloud Service の主要な変更点](aem-cloud-changes.md)
 + [既知の問題](known-issues.md)
