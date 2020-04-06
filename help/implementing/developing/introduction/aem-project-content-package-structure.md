@@ -1,289 +1,255 @@
 ---
-title: AEMプロジェクト構造
-description: Adobe Experience Manager Cloud Serviceに展開するパッケージ構造を定義する方法について説明します。
+title: プロジェクトのコンテンツパッケージ構造について
+description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を適切に定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 36860ba390b1ba695188746ba9659b920191026b
+source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
 
 ---
 
 
-# AEMプロジェクト構造
+# Adobe Experience Manager as a Cloud Service のプロジェクトコンテンツパッケージの構造について {#understand-cloud-service-package-structure}
 
 >[!TIP]
 >
->基本的な [AEM Project Archetypeの使用と](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)、この記事がこれらの学習と概念に基づいて構築される [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html) FileVault Content Mavenプラグインについてよく理解してください。
+>[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)の基本的な使用法と、[FileVault コンテンツパッケージ Maven プラグイン](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)について説明します。この記事では、これらの概念の理解を前提としています。
 
-この記事では、Adobe Experience Manager MavenプロジェクトでAEMクラウドサービスとの互換性を維持するために必要な変更について、可変コンテンツと不変コンテンツの分割を確実に尊重するように説明します。矛盾しない決定的なデプロイメントを作成するために必要な依存関係が確立され、展開可能な構造でパッケージ化されていることを確認します。
+この記事では、AEM as a Cloud Service との互換性を保つために Adobe Experience Manager Maven プロジェクトに必要な変更について説明します。互換性を保つには、プロジェクトが可変コンテンツと不変コンテンツの分離に従っていること、矛盾のない決定論的なデプロイメントの作成に必要な依存関係が設定されていること、デプロイ可能な構造にプロジェクトがパッケージ化されていることが必要です。
 
-AEMアプリケーションのデプロイメントは、単一のAEMパッケージで構成される必要があります。 次に、このパッケージには、コード、設定、サポートするベースラインコンテンツなど、アプリケーションが機能するのに必要なすべてを構成するサブパッケージが含まれている必要があります。
+AEM アプリケーションのデプロイメントは、単一の AEM パッケージで構成する必要があります。次に、そのパッケージには、コード、設定、補助的なベースラインコンテンツなど、アプリケーションが機能するのに必要なあらゆるもので構成されるサブパッケージが含まれている必要があります。
 
-AEM では&#x200B;**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分離する必要があります。つまり、`/apps` とリポジトリのランタイム書き込み可能領域（例：`/content`、`/conf`、`/home`、または `/apps` 以外）の&#x200B;**両方**&#x200B;に 1 つのコンテンツパッケージをデプロイすることは&#x200B;**できません**。代わりに、アプリケーションは、AEM にデプロイするために、コードとコンテンツを個別のパッケージに分割する必要があります。
+AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分離する必要があります。つまり、リポジトリの `/apps` と実行時に書き込み可能な領域（例：`/content`、`/conf`、`/home`、その他 `/apps` 以外のすべて）の&#x200B;**両方**&#x200B;に 1 つのコンテンツパッケージをデプロイすることは&#x200B;**できません**。代わりに、アプリケーションを AEM にデプロイするには、コードとコンテンツを別々のパッケージに分離する必要があります。
 
-このドキュメントで説明したパッケージ構造は、ローカル開発デプロイメントおよび AEM Cloud サービスデプロイメントの&#x200B;**両方**&#x200B;と互換性があります。
+このドキュメントで概要を説明しているパッケージ構造は、ローカル開発デプロイメントと AEM as a Cloud Service デプロイメントの&#x200B;**両方**&#x200B;に対応しています。
 
 >[!TIP]
 >
->このドキュメントで概要を説明する設定は、 [AEM Project Maven Archetype 21以降で提供されます](https://github.com/adobe/aem-project-archetype/releases)。
+>このドキュメントで概要を説明している設定は、[AEM プロジェクト Maven アーキタイプ 21 以降](https://github.com/adobe/aem-project-archetype/releases)で提供されます。
 
 ## リポジトリの可変領域と不変領域 {#mutable-vs-immutable}
 
-`/apps` と `/libs` は AEM の開始後（例：実行時）に変更（作成、更新、削除）できないため、AEM の&#x200B;**不変**&#x200B;領域と見なされます。実行時に不変領域を変更しようとすると失敗します。
+`/apps` と `/libs` は AEM の&#x200B;**不変**&#x200B;領域と見なされます。AEM の起動後（例：実行時）に変更（作成、更新、削除）できないからです。実行時に不変領域を変更しようとすると失敗します。
 
-リポジトリ内のその他す `/content`べて、、、、、、、、、、、 `/conf`、、、、、、、な `/var`ど `/etc``/oak:index``/system``/tmp`が、 はすべて可変 **領域で** 、実行時に変更できます。
+リポジトリ内のそれ以外の領域（`/content`、`/conf`、`/var`、`/home`、`/etc`、`/oak:index`、`/system`、`/tmp` など）はすべて&#x200B;**可変**&#x200B;領域です。つまり、実行時に変更できます。
 
 >[!WARNING]
 >
-> 以前のバージョンのAEMと同様、変更 `/libs` しないでください。 にデプロイできるのは、AEM製品コードのみで `/libs`す。
+> 以前のバージョンの AEM と同様に、`/libs` は変更しないでください。`/libs` にデプロイできるのは、AEM 製品コードだけです。
 
 ## 推奨されるパッケージ構造 {#recommended-package-structure}
 
-![Experience Managerプロジェクトのパッケージ構造](assets/content-package-organization.png)
+![Adobe Experience Manager プロジェクトのパッケージ構造](assets/content-package-organization.png)
 
-次の図は、推奨されるプロジェクト構造とパッケージの展開アーティファクトの概要を示しています。
+この図は、推奨されるプロジェクト構造とパッケージデプロイメントアーティファクトの概要を示しています。
 
-推奨されるアプリケーションのデプロイメント構造は次のとおりです。
+推奨されるアプリケーションデプロイメント構造は次のとおりです。
 
-+ パッケ `ui.apps` ージ（コードパッケージ）には、展開するすべてのコードが含まれ、展開先のみが含まれま `/apps`す。 パッケージの一般的な要素 `ui.apps` には、次のものが含まれます。
-   + OSGiバンドル
++ `ui.apps` パッケージ（コンテンツパッケージ）は、デプロイされるすべてのコードを含んでおり、`/apps` にのみデプロイされます。`ui.apps` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
+   + OSGi バンドル
       + `/apps/my-app/install`
-   + OSGi設定
+   + OSGi 設定
       + `/apps/my-app/config`
-   + HTLスクリプト
+   + HTL スクリプト
       + `/apps/my-app/components`
-   + JavaScriptとCSS（クライアントライブラリを使用）
+   + JavaScript と CSS（クライアントライブラリ経由）
       + `/apps/my-app/clientlibs`
-   + /libsのオーバーレイ
-      + `/apps/cq`, `/apps/dam/`, etc.
-   + 代替のコンテキスト対応設定
+   + /libs のオーバーレイ
+      + `/apps/cq`、`/apps/dam/` など
+   + コンテキスト対応のフォールバック設定
       + `/apps/settings`
    + ACL（権限）
-      + 任意の `rep:policy` パス( `/apps`
-   + Repo Init OSGi設定ディレクティブ（および付属のスクリプト）
-      + [AEMアプリケーションの論理的な一部であるコンテンツをデプロイ（可変）する方法として、Repo Initを使用することをお勧めします。](#repo-init) 次を定義するには、Repo Initを使用する必要があります。
-         + ベースラインコンテンツ構造
-            + `/conf/my-app`
-            + `/content/my-app`
-            + `/content/dam/my-app`
-         + ユーザー
-         + サービスユーザ
-         + グループ
-         + ACL（権限）
-            + 任意のパ `rep:policy` ス（ミュート可能または不変）
-+ パッケージ `ui.content` （コンテンツパッケージ）には、すべてのコンテンツと設定が含まれます。 パッケージの一般的な要素 `ui.content` には、次のものが含まれます。
-   + コンテキストに応じた設定
+      + `/apps` の配下にある任意のパスの任意の `rep:policy`
++ `ui.content` パッケージ（コードパッケージ）には、すべてのコンテンツと設定が含まれています。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
+   + コンテキスト対応の設定
       + `/conf`
-   + 必須で複雑なコンテンツ構造( Repo Initで定義された過去のベースラインコンテンツ構造に基づいて構築され、拡張されるコンテンツの構築。
-      + `/content`, `/content/dam`, etc.
-   + 管理されるタグ分類
+   + ベースラインコンテンツ構造（アセットフォルダー、サイトルートページ）
+      + `/content`、`/content/dam` など
+   + 管理されるタグ付け分類
       + `/content/cq:tags`
-   + Oakインデックス
-      + `/oak:index`
-   + Etcレガシーノード
+   + サービスユーザー
+      + `/home/users`
+   + ユーザーグループ
+      + `/home/groups`
+   + Oak インデックス
+      + `/oak:indexes`
+   + etc レガシーノード
       + `/etc`
-+ `all` パッケージは、`ui.apps` および `ui.content` パッケージを埋め込んだコンテナパッケージです。`all` パッケージに独自の&#x200B;**コンテンツ**&#x200B;を含めることはできませんが、リポジトリのすべてのデプロイメントをそのサブパッケージに委任します。
+   + ACL（権限）
+      + `/apps` の配下に&#x200B;**ない**&#x200B;任意のパスの任意の `rep:policy`
++ `all` パッケージは、`ui.apps` および `ui.content` 埋め込みパッケージのみを含んだコンテナパッケージです。`all` パッケージにはそれ自体の&#x200B;**コンテンツ**&#x200B;を含めることはできず、リポジトリへのあらゆるデプロイメントをサブパッケージに委任します。
 
-   パッケージは、Maven [FileVaultパッケージMavenプラグインの埋め込み設定を使用して](#embeddeds)、設定ではなく含まれるようになり `<subPackages>` ました。
+   `<subPackages>` 設定ではなく、[FileVault パッケージ Maven プラグインの埋め込み設定](#embeddeds)を使用して、パッケージが組み込まれるようになりました。
 
-   複雑なExperience Managerのデプロイメントの場合は、AEMの特定のサイトまたはテナントを表す複数の `ui.apps` プロジェ `ui.content` クト/パッケージを作成することが望ましい場合があります。 これを行う場合は、可変コンテンツと不変コンテンツの分割が考慮され、必要なコンテンツパッケージがコンテナコンテンツパッケージのサブパッケージとして追 `all` 加されます。
+   Adobe Experience Manager の複雑なデプロイメントの場合は、AEM 内の具体的なサイトまたはテナントを表す複数の `ui.apps` および `ui.content` プロジェクト／パッケージを作成するほうが望ましいことがあります。その場合は、必ず、可変コンテンツと不変コンテンツの分割に従い、必要なコンテンツパッケージを `all` コンテナコンテンツパッケージにサブパッケージとして追加します。
 
-   例えば、複雑な展開コンテンツパッケージ構造は次のようになります。
+   複雑なデプロイメントコンテンツパッケージ構造は、例えば、次のようになります。
 
-   + `all` コンテンツパッケージには、以下のパッケージが埋め込まれ、単数の展開アーティファクトを作成します。
-      + `ui.apps.common` サイトAとサイトBの両方で **必要な** 、コードを導入します。
-      + `ui.apps.site-a` サイトAに必要なコードをデプロイします。
-      + `ui.content.site-a` サイトAに必要なコンテンツと設定をデプロイします。
-      + `ui.apps.site-b` サイトBに必要なコードを導入
-      + `ui.content.site-b` サイトBに必要なコンテンツと設定をデプロイします。
+   + `all` コンテンツパッケージに次のパッケージが埋め込まれて、単一のデプロイメントアーティファクトが作成されます。
+      + `ui.apps.common`：サイト A とサイト B の&#x200B;**両方**&#x200B;に必要なコードをデプロイします
+      + `ui.apps.site-a`：サイト A に必要なコードをデプロイします
+      + `ui.content.site-a`：サイト A に必要なコンテンツと設定をデプロイします
+      + `ui.apps.site-b`：サイト B に必要なコードをデプロイします
+      + `ui.content.site-b`：サイト B に必要なコンテンツと設定をデプロイします
 
 ## パッケージタイプ {#package-types}
 
-パッケージは、宣言されたパッケージタイプでマークされます。
+パッケージは、宣言済みのパッケージタイプでマークされる必要があります。
 
-+ コンテナパッケージにはセットを含めることはで `packageType` きません。
-+ コード（不変）パッケージは、をに設定する必要が `packageType` ありま `application`す。
-+ コンテンツ（可変）パッケージは、に設定する必要が `packageType` ありま `content`す。
++ コンテナパッケージには `packageType` を設定できません。
++ コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
++ コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
 
-詳しくは、 [Apache Jackrabbit FileVault - Package Maven Pluginのドキュメント](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) 、および以下の [FileVault Maven設定スニペットを参照してください](#marking-packages-for-deployment-by-adoube-cloud-manager) 。
-
->[!TIP]
->
->完全なスニペットについては、 [以下の「POM XMLスニペット](#xml-package-types) 」の節を参照してください。
-
-## Adobe Cloud Managerによる展開用のパッケージのマーク {#marking-packages-for-deployment-by-adoube-cloud-manager}
-
-デフォルトでは、Adobe Cloud Manager は Maven ビルドで作成されたすべてのパッケージを収集しますが、コンテナ（`all`）パッケージはすべてのコードおよびコンテンツパッケージを含む 1 つのデプロイメントアーティファクトなので、必ずコンテナ（`all`）パッケージ&#x200B;**のみ**&#x200B;をデプロイするようにします。これを確実におこなうには、Maven ビルドで生成される他のパッケージに、FileVault コンテンツパッケージ Maven プラグイン設定 `<properties><cloudManagerTarget>none</cloudManageTarget></properties>` でマークする必要があります。
+詳しくは、[Apache Jackrabbit FileVault - Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) のドキュメントと、以下の [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager)を参照してください。
 
 >[!TIP]
 >
->完全なスニペットについては、 [以下の「POM XMLスニペット](#pom-xml-snippets) 」の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-package-types)の節を参照してください。
 
-## リポジトリの初期化{#repo-init}
+## Adobe Cloud Manager によるデプロイメント用のパッケージのマーク {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-Repo Initは、フォルダーツリーなどの一般的なノード構造から、ユーザー、サービスユーザー、グループ、ACL定義まで、JCR構造を定義する命令（スクリプト）を提供します。
-
-リポジトリ初期化の主な利点は、スクリプトで定義されたすべてのアクションを実行する暗黙の権限があり、デプロイのライフサイクルの早い段階で呼び出され、必要なJCR構造がすべて実行されることです。
-
-Repo Initスクリプト自体はスクリプトとしてプロジェ `ui.apps` クト内に存在しますが、スクリプトは次の可変構造を定義するために使用でき、また使用する必要があります。
-
-+ ベースラインコンテンツ構造
-   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
-+ サービスユーザ
-+ ユーザー
-+ グループ
-+ ACL
-
-Repo Initスクリプトは `scripts``RepositoryInitializer` OSGiファクトリ設定のエントリとして保存されるので、実行モードで暗黙的にターゲット化でき、AEM AuthorとAEM Publish ServicesのRepo Initスクリプトの違いや、Envs（開発、ステージ、実行）との違いが生じます。
-
-ユーザーとグループを定義する場合、グループのみがアプリケーションの一部と見なされ、関数に不可欠な要素がここで定義される必要があります。 組織のユーザーとグループは、実行時にAEMで定義する必要があります。例えば、カスタムワークフローが名前付きのグループに作業を割り当てる場合、そのグループはAEMアプリケーションのRepo Initを介して定義する必要がありますが、グループ化が単なる組織（「Wendy&#39;s Team」や「Sean&#39;s Team」など）の場合、これらは最適な定義で、実行時に管理されます。
+デフォルトでは、Adobe Cloud Manager は Maven ビルドで生成されたすべてのパッケージを組み込みますが、コンテナ（`all`）パッケージはすべてのコードパッケージおよびコンテンツパッケージを含んだ単一のデプロイメントアーティファクトなので、必ず、コンテナ（`all`）パッケージ&#x200B;**のみ**&#x200B;をデプロイします。これを確実におこなうには、Maven ビルドで生成される他のパッケージを、`<properties><cloudManagerTarget>none</cloudManageTarget></properties>` という FileVault コンテンツパッケージ Maven プラグイン設定でマークする必要があります。
 
 >[!TIP]
 >
->Repo Initスクリプト *は* 、インラインフィールドで `scripts` 定義する必要があり `references` 、設定は機能しません。
-
-Repo Initスクリプトの全語彙は、 [Apache Sling Repo Initドキュメントで入手できます](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
-
->[!TIP]
->
->完全なスニペット [については、下の「初期化レポート](#snippet-repo-init) 」のセクションを参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#pom-xml-snippets)の節を参照してください。
 
 ## リポジトリ構造パッケージ {#repository-structure-package}
 
-コードパッケージは、（あるコードパッケージが別のコードパッケージにインストールされないように）構造的依存関係の正確性を強制する構造を参照するように、FileVault Mavenプラグインの設定を構成する必要があります。 `<repositoryStructurePackage>` プロジェクト [用に独自のリポジトリ構造パッケージを作成できます](repository-structure-package.md)。
+コードパッケージでは、（あるコードパッケージが別のコードパッケージをオーバーライドしないように）正しい構造的依存関係を確保する `<repositoryStructurePackage>` を参照するように、FileVault Maven プラグインの設定を指定する必要があります。[プロジェクト用に独自のリポジトリ構造パッケージを作成](repository-structure-package.md)することができます。
 
-これは、コードパッケージ （`<packageType>application</packageType>` でマークされたパッケージ）に対して&#x200B;**のみ必要**&#x200B;です。
+これは、コードパッケージ（`<packageType>application</packageType>` でマークされた任意のパッケージ）に&#x200B;**のみ必要**&#x200B;です。
 
-アプリケーション用のリポジトリ構造パッケージの作成方法については、「リポジトリ構造パッケージ [の作成」を参照してくださ](repository-structure-package.md)い。
+アプリケーション用のリポジトリ構造パッケージの作成方法については、[リポジトリ構造パッケージの作成](repository-structure-package.md)を参照してください。
 
-コンテンツパッケージ(`<packageType>content</packageType>`)には、こ **のリポジトリ構造パッケージ** は必要ありません。
+なお、コンテンツパッケージ（`<packageType>content</packageType>`）には、このリポジトリ構造パッケージは必要&#x200B;**ありません**。
 
 >[!TIP]
 >
->完全なスニペットについては、 [以下の「POM XMLスニペット](#xml-repository-structure-package) 」の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-repository-structure-package)の節を参照してください。
 
-## コンテナパッケージへのサブパッケージの埋め込み{#embeddeds}
+## コンテナパッケージへのサブパッケージの埋め込み {#embeddeds}
 
-コンテンツまたはコードパッケージは、特別な「サイドカー」フォルダに配置され、FileVault Mavenプラグインの設定を使用して、AEM作成者、AEM発行、またはその両方にインストールする対象となり `<embeddeds>` ます。 設定は使用しな `<subPackages>` いでください。
+コンテンツパッケージまたはコードパッケージは、特別な「サイドカー」フォルダーに格納され、FileVault Maven プラグインの `<embeddeds>` 設定を使用して、AEM オーサーと AEM パブリッシュのどちらか一方または両方へのインストールの対象とすることができます。`<subPackages>` 設定は使用しないでください。
 
-一般的な使用例を次に示します。
+一般的な使用例は次のとおりです。
 
-+ AEM作成者ユーザーとAEM発行ユーザーとで異なるACL/権限
-+ AEM作成者でのみアクティビティをサポートするために使用される設定
-+ バックオフィスシステムとの統合など、AEM作成者でのみ実行する必要のあるコード
++ AEM オーサーユーザーと AEM パブリッシュユーザーで異なる ACL／権限
++ AEM オーサーでのみアクティビティをサポートするために使用される設定
++ AEM オーサーでのみ実行する必要があるコード（バックオフィスシステムとの統合など）
 
 ![パッケージの埋め込み](assets/embeddeds.png)
 
-AEM作成者、AEM発行またはその両方をターゲットにするには、パッケージを次の形式で、特別なフォルダーの場所にあるコンテ `all` ナパッケージに埋め込みます。
+AEM オーサーか AEM パブリッシュまたはその両方をターゲットにするには、パッケージを次の形式で `all` コンテナパッケージ内の特別なフォルダー位置に埋め込みます。
 
 `/apps/<app-name>-packages/(content|application)/install(.author|.publish)?`
 
-このフォルダー構造を分類する：
+このフォルダー構造の詳細は次のとおりです。
 
-+ 第1レベルのフォルダーが必要 **です**`/apps`。
-+ 第2レベルのフォルダーは、フォルダー名にポストフィッ `-packages` クスされたアプリケーションを表します。 多くの場合、すべてのサブパッケージが埋め込まれる2番目のフォルダは1つだけですが、2番目のフォルダはいくつでも作成でき、アプリケーションの論理構造を表すのに最適です。
++ 第 1 レベルのフォルダーは `/apps` に&#x200B;**する必要があります**。
++ 第 2 レベルのフォルダーは、フォルダー名の末尾に `-packages` が付いたアプリケーションを表します。多くの場合、すべてのサブパッケージが配下に埋め込まれる第 2 レベルのフォルダーは 1 つだけですが、アプリケーションの論理構造を最も適切に表すために、第 2 レベルのフォルダーをいくつでも作成できます。
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
    >[!WARNING]
    >
-   >慣例により、サブパッケージの埋め込みフォルダーの名前には、サフィックス `-packages` が付きます。これにより、サブパッケージ `/apps/<app-name>/...` の対象フォルダーにデプロイメントコードとコンテンツパッケージがデプロイされるのを&#x200B;**防ぎ**、インストールが破壊的かつ周期的におこなわれないようにします。
+   >慣例により、サブパッケージが埋め込まれるフォルダーの名前には、`-packages` というサフィックスが付けられます。これにより、デプロイメントコードパッケージとコンテンツパッケージが任意のサブパッケージの対象フォルダー `/apps/<app-name>/...` にデプロイ&#x200B;**されなくなり**、破壊的な循環インストール動作を避けることができます。
 
-+ 3番目のフォルダは、
-   「`application`」または「`content`」
-   + このフォルダー `application` には、コードパッケージが格納されます
-   + フォルダ `content` ーにはコンテンツパッケージが格納されます。このフォルダー名は、含まれ [るパッケージ](#package-types) のパッケージタイプに対応している必要があります。
-+ 第 4 レベルのフォルダーにはサブパッケージが含まれ、次のいずれに該当する必要があります。
-   + `install`：AEM オーサーと AEM 公開の&#x200B;**両方**&#x200B;でインストールする場合
-   + `install.author`：AEM オーサーで&#x200B;**のみ**&#x200B;インストールする場合
-   + `install.publish` をAEM publishNoteにの **みインストールします** 。ターゲットは、およびのみサ `install.author` ポートさ `install.publish` れています。 その他の実行モードはサポートされて&#x200B;**いません**。
++ 第 3 レベルのフォルダーは、
+   `application` か `content` のどちらかにする必要があります。
+   + `application` フォルダーにはコードパッケージが格納されます。
+   + `content` フォルダーにはコンテンツパッケージが格納されます。このフォルダー名は、その中に含まれているパッケージの[パッケージタイプ](#package-types)に対応している必要があります。
++ 第 4 レベルのフォルダーはサブパッケージを格納するもので、次のいずれかにする必要があります。
+   + `install`：AEM オーサーと AEM パブリッシュの&#x200B;**両方**&#x200B;にインストールする場合
+   + `install.author`：AEM オーサーに&#x200B;**のみ**&#x200B;インストールする場合
+   + `install.publish`：AEM パブリッシュに&#x200B;**のみ**&#x200B;インストールする場合。なお、サポートされているターゲットは `install.author` と `install.publish` のみです。その他の実行モードはサポートされて&#x200B;**いません**。
 
-例えば、AEM作成者を含む展開と、特定のパッケージを発行する展開は、次のようになります。
+例えば、AEM オーサーおよびパブリッシュに固有のパッケージを含んだデプロイメントは、次のようになります。
 
-+ `all` コンテナパッケージは、単数の展開アーティファクトを作成するために、次のパッケージを埋め込みます
-   + `ui.apps` 埋め込み：AEM `/apps/my-app-packages/application/install` 作成者とAEM発行の両方にコードをデプロイします。
-   + `ui.apps.author` 埋め込み：AEMオー `/apps/my-app-packages/application/install.author` サーのみにコードをデプロイします
-   + `ui.content` 埋め込み：AEM作 `/apps/my-app-packages/content/install` 成者とAEM発行の両方にコンテンツと設定をデプロイします。
-   + `ui.content.publish` 埋め込み：AEM公 `/apps/my-app-packages/content/install.publish` 開のみにコンテンツと設定をデプロイします
++ `all` コンテナパッケージに次のパッケージが埋め込まれて、単一のデプロイメントアーティファクトが作成されます。
+   + `ui.apps` が `/apps/my-app-packages/application/install` に埋め込まれると、AEM オーサーと AEM パブリッシュの両方にコードがデプロイされます
+   + `ui.apps.author` が `/apps/my-app-packages/application/install.author` に埋め込まれると、AEM オーサーにのみコードがデプロイされます
+   + `ui.content` が `/apps/my-app-packages/content/install` に埋め込まれると、AEM オーサーと AEM パブリッシュの両方にコンテンツと設定がデプロイされます
+   + `ui.content.publish` が `/apps/my-app-packages/content/install.publish` に埋め込まれると、AEM パブリッシュにのみコンテンツと設定がデプロイされます
 
 >[!TIP]
 >
->完全なスニペットについては、 [以下の「POM XMLスニペット](#xml-embeddeds) 」の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-embeddeds)の節を参照してください。
 
 ### コンテナパッケージのフィルター定義 {#container-package-filter-definition}
 
-コードとコンテンツのサブパッケージがコンテナパッケージに埋め込まれるので、埋め込みターゲットパスをコンテナプロジェクトのに追加して、埋め込みパッケージがコンテナパッケージの構築時に確実に含まれるようにする必要があります。 `filter.xml`
+コンテナパッケージにコードおよびコンテンツ用のサブパッケージが埋め込まれるので、埋め込まれるターゲットのパスをコンテナプロジェクトの `filter.xml` に追加して、埋め込まれたパッケージがビルド時にコンテナパッケージに確実に組み込まれるようにする必要があります。
 
-展開するサブパッ `<filter root="/apps/<my-app>-packages"/>` ケージを含む2番目のフォルダーのエントリを追加するだけです。
+デプロイするサブパッケージを格納した第 2 レベルのフォルダーに対応する `<filter root="/apps/<my-app>-packages"/>` エントリを追加するだけです。
 
 >[!TIP]
 >
->完全なスニペットについては、 [以下の「POM XMLスニペット](#xml-container-package-filters) 」の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-container-package-filters)の節を参照してください。
 
 ## サードパーティパッケージの埋め込み {#embedding-3rd-party-packages}
 
-すべてのパッケージは、 [AdobeのパブリックMavenアーティファクトリポジトリまたはアクセス可能なパブリックの](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) 、参照可能なサードパーティのMavenアーティファクトリポジトリを介して使用できる必要があります。
+すべてのパッケージは、[アドビが公開している Maven アーティファクトリポジトリ](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)または公開されている参照可能なサードパーティ Maven アーティファクトリポジトリを通じて入手できる必要があります。
 
-サードパーティパッケージが&#x200B;**アドビのパブリック Maven アーティファクトリポジトリ**&#x200B;にある場合は、それ以上の設定をおこなわなくても、Adobe Cloud Manager でアーティファクトを解決できます。
+**アドビが公開している Maven アーティファクトリポジトリ**&#x200B;にサードパーティパッケージがある場合、Adobe Cloud Manager でアーティファクトを解決するための設定は、それ以上必要ありません。
 
-サードパーティパッケージが&#x200B;**パブリックサードパーティ Maven アーティファクトリポジトリ**&#x200B;にある場合は、このリポジトリをプロジェクトの `pom.xml` に登録し、[上記の方法](#embeddeds)に従って埋め込む必要があります。サードパーティのアプリケーション/コネクタでコードパッケージとコンテンツパッケージの両方が必要な場合は、それぞれをコンテナ（`all`）パッケージ内の正しい場所に埋め込む必要があります。
+**公開されているサードパーティ Maven アーティファクトリポジトリ**&#x200B;にサードパーティパッケージがある場合は、このリポジトリをプロジェクトの `pom.xml` に登録し、[上記](#embeddeds)の方法に従って埋め込む必要があります。サードパーティのアプリケーション／コネクタにコードパッケージとコンテンツパッケージの両方が必要な場合は、それぞれをコンテナ（`all`）パッケージ内の正しい場所に埋め込む必要があります。
 
-Maven依存関係の追加は、標準的なMavenの慣行に従い、サードパーティのアーティファクト（コードおよびコンテンツパッケージ）の埋め込みを前述 [していま](#embedding-3rd-party-packages)す。
-
->[!TIP]
->
->完全なスニペットについては、 [以下の「POM XMLスニペット](#xml-3rd-party-maven-repositories) 」の節を参照してください。
-
-## fromパッケージ間のパッ `ui.apps` ケージの `ui.content` 依存 {#package-dependencies}
-
-パッケージを適切にインストールするために、パッケージ間の依存関係を確立することをお勧めします。
-
-一般的なルールは、可変コンテンツ(`ui.content`)を含むパッケージで、可変コンテンツ(`ui.apps`)がレンダリングされ、可変コンテンツの使用をサポートする不変コンテンツ()に依存する必要があります。
+Maven の依存関係を追加する場合は、Maven の標準的な手法に従います。サードパーティアーティファクト（コードパッケージとコンテンツパッケージ）の埋め込みについては、[上記](#embedding-3rd-party-packages)のとおりです。
 
 >[!TIP]
 >
->完全なスニペットについては、 [以下の「POM XMLスニペット](#xml-package-dependencies) 」の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-3rd-party-maven-repositories)の節を参照してください。
 
-コンテンツパッケージの依存関係の一般的なパターンは次のとおりです。
+## `ui.apps` パッケージと `ui.content` パッケージの依存関係 {#package-dependencies}
 
-### シンプルな展開パッケージの依存関係 {#simple-deployment-package-dependencies}
+パッケージの適切なインストールを確実におこなうために、パッケージ間の依存関係を設定することをお勧めします。
 
-簡易ケースは、可変コンテン `ui.content` ツパッケージを、不変コードパッケージに依存す `ui.apps` るように設定する。
+一般的なルールとしては、可変コンテンツを格納したパッケージ（`ui.content`）は、可変コンテンツのレンダリングと使用をサポートする不変コンテンツ（`ui.apps`）に依存します。
 
-+ `all` 依存関係がありません
-   + `ui.apps` 依存関係がありません
-   + `ui.content` ～に依存する `ui.apps`
+>[!TIP]
+>
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-package-dependencies)の節を参照してください。
 
-### 複雑な展開パッケージの依存関係 {#complex-deploxment-package-dependencies}
+コンテンツパッケージの依存関係の一般的なパターンは以下のとおりです。
 
-複雑な導入は、単純なケースに対して拡張され、対応する可変コンテンツと不変コードパッケージの間の依存関係を設定します。 必要に応じて、不変コードパッケージ間の依存関係も確立できます。
+### デプロイメントパッケージ間のシンプルな依存関係 {#simple-deployment-package-dependencies}
 
-+ `all` 依存関係がありません
-   + `ui.apps.common` 依存関係がありません
-   + `ui.apps.site-a` ～に依存する `ui.apps.common`
-   + `ui.content.site-a` ～に依存する `ui.apps.site-a`
-   + `ui.apps.site-b` ～に依存する `ui.apps.common`
-   + `ui.content.site-b` ～に依存する `ui.apps.site-b`
+シンプルな依存関係は、可変コンテンツパッケージ `ui.content` が不変コードパッケージ `ui.apps` に依存するように設定する場合です。
 
-## ローカル開発と導入 {#local-development-and-deployment}
++ `all` には依存関係がありません
+   + `ui.apps` には依存関係がありません
+   + `ui.content` は `ui.apps` に依存しています
 
-この記事で概要を説明するプロジェクト構造と組織は、ローカル開発 **用AEMインスタンス** と完全に互換性があります。
+### デプロイメントパッケージ間の複雑な依存関係 {#complex-deploxment-package-dependencies}
 
-## POM XMLスニペット {#pom-xml-snippets}
+複雑なデプロイメントは、シンプルなケースをさらに拡張したもので、対応する可変コンテンツパッケージと不変コードパッケージの間に依存関係を設定します。必要に応じて、不変コードパッケージ間にも依存関係を設定できます。
 
-以下は、Mavenプロジェ `pom.xml` クトに追加して、上記のレコメンデーションに合わせることができるMaven設定スニペットです。
++ `all` には依存関係がありません
+   + `ui.apps.common` には依存関係がありません
+   + `ui.apps.site-a` は `ui.apps.common` に依存しています
+   + `ui.content.site-a` は `ui.apps.site-a` に依存しています
+   + `ui.apps.site-b` は `ui.apps.common` に依存しています
+   + `ui.content.site-b` は `ui.apps.site-b` に依存しています
+
+## ローカル開発とデプロイメント {#local-development-and-deployment}
+
+この記事で概要を説明しているプロジェクト構造および編成は、ローカル開発 AEM インスタンスに&#x200B;**完全に対応**&#x200B;しています。
+
+## POM XML スニペット {#pom-xml-snippets}
+
+上記の推奨事項に合わせて Maven プロジェクトに追加できる Maven `pom.xml` 設定スニペットを以下に示します。
 
 ### パッケージタイプ {#xml-package-types}
 
-サブパッケージとして展開されるコードおよびコンテンツパッケージでは、パッケージに含まれる内容に応じて、**アプリケーション**&#x200B;または&#x200B;**コンテンツ**&#x200B;のパッケージタイプを宣言する必要があります。
+サブパッケージとしてデプロイされるコードパッケージとコンテンツパッケージでは、パッケージに含まれる内容に応じて、**アプリケーション**&#x200B;か&#x200B;**コンテンツ**&#x200B;のパッケージタイプを宣言する必要があります。
 
 #### コンテナパッケージタイプ {#container-package-types}
 
-コンテナプロジ `all/pom.xml` ェクト **では** 、を宣言しませ `<packageType>`ん。
+コンテナ `all/pom.xml` プロジェクトでは `<packageType>` を宣言&#x200B;**しません**。
 
 #### コード（不変）パッケージタイプ {#immutable-package-types}
 
-コードパッケージでは、をに設定する必要 `packageType` がありま `application`す。
+コードパッケージでは、`packageType` を `application` に設定する必要があります。
 
-では、プラ `ui.apps/pom.xml`グイン宣 `<packageType>application</packageType>` 言のビルド設定ディレク `filevault-package-maven-plugin` ティブがパッケージ型を宣言します。
+`ui.apps/pom.xml` では、プラグイン宣言 `filevault-package-maven-plugin` のビルド設定ディレクティブ `<packageType>application</packageType>` でパッケージタイプを宣言します。
 
 ```xml
 ...
@@ -308,9 +274,9 @@ Maven依存関係の追加は、標準的なMavenの慣行に従い、サード�
 
 #### コンテンツ（可変）パッケージタイプ {#mutable-package-types}
 
-コンテンツパッケージでは、をに設定する必要 `packageType` がありま `content`す。
+コンテンツパッケージでは、`packageType` を `content` に設定する必要があります。
 
-では、プラ `ui.content/pom.xml`グイン宣 `<packageType>content</packageType>` 言のビルド設定ディレクティブがパッ `filevault-package-maven-plugin` ケージの種類を宣言します。
+`ui.content/pom.xml` では、プラグイン宣言 `filevault-package-maven-plugin` のビルド設定ディレクティブ `<packageType>content</packageType>` でパッケージタイプを宣言します。
 
 ```xml
 ...
@@ -333,9 +299,9 @@ Maven依存関係の追加は、標準的なMavenの慣行に従い、サード�
     ...
 ```
 
-### Adobe Cloud Manager展開用のパッケージのマーク {#cloud-manager-target}
+### Adobe Cloud Manager によるデプロイメント用のパッケージのマーク {#cloud-manager-target}
 
-コンテナ（`all`）プロジェクトを&#x200B;**除き**、パッケージを生成するすべてのプロジェクトで、`filevault-package-maven-plugin` プラグイン宣言の `<properties>` 設定に `<cloudManagerTarget>none</cloudManagerTarget>` を追加し、Adobe Cloud Manager によってデプロイされるのを&#x200B;**防ぎます**。コンテナ（`all`）パッケージは、Cloud Manager でデプロイした 1 つのパッケージで、必要なすべてのコードとコンテンツパッケージが埋め込まれます。
+コンテナ（`all`）プロジェクトを&#x200B;**除き**、パッケージを生成するすべてのプロジェクトでは、プラグイン宣言 `filevault-package-maven-plugin` の `<properties>` 設定に `<cloudManagerTarget>none</cloudManagerTarget>` を追加して、プロジェクトが Adobe Cloud Manager でデプロイ&#x200B;**されない**&#x200B;ようにします。コンテナ（`all`）パッケージは、Cloud Manager を通じてデプロイされる単一のパッケージでなければなりません。このパッケージに、必要なすべてのコードパッケージとコンテンツパッケージが埋め込まれます。
 
 ```xml
 ...
@@ -355,31 +321,9 @@ Maven依存関係の追加は、標準的なMavenの慣行に従い、サード�
     ...
 ```
 
-### リポジトリの初期化{#snippet-repo-init}
-
-Repo Initスクリプトを含むRepo Initスクリプトは、プロパティを介して `RepositoryInitializer` OSGiファクトリ設定で定義さ `scripts` れます。 OSGi設定内で定義されるこれらのスクリプトは、通常のフォルダーセマンティクスを使用して実行モードで簡単にスコープでき `../config.<runmode>` ることに注意してください。
-
-スクリプトは通常複数行の宣言なので、XMLベースの形式よりもファイル内で定義し `.config` やすいことに注意してくだ `sling:OsgiConfig` さい。
-
-`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
-
-```plain
-scripts=["
-    create service user my-data-reader-service
-
-    set ACL on /var/my-data
-        allow jcr:read for my-data-reader-service
-    end
-
-    create path (sling:Folder) /conf/my-app/settings
-"]
-```
-
-OSGiプロ `scripts` パティには、 [Apache SlingのRepo Init言語で定義されたディレクティブが含まれます](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
-
 ### リポジトリ構造パッケージ {#xml-repository-structure-package}
 
-およびコード `ui.apps/pom.xml` パッケ `pom.xml` ージ(`<packageType>application</packageType>`)を宣言するその他のすべてので、次のリポジトリ構造パッケージ設定をFileVault Mavenプラグインに追加します。 プロジェクト [用に独自のリポジトリ構造パッケージを作成できます](repository-structure-package.md)。
+`ui.apps/pom.xml` と、コードパッケージ（`<packageType>application</packageType>`）を宣言する他の任意の `pom.xml` で、次のリポジトリ構造パッケージ設定を FileVault Maven プラグインに追加します。[プロジェクト用に独自のリポジトリ構造パッケージを作成](repository-structure-package.md)することができます。
 
 ```xml
 ...
@@ -394,7 +338,7 @@ OSGiプロ `scripts` パティには、 [Apache SlingのRepo Init言語で定義
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>ui.apps.structure</artifactId>
+              <artifactId>repository-structure-pkg</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -405,7 +349,7 @@ OSGiプロ `scripts` パティには、 [Apache SlingのRepo Init言語で定義
 
 ### コンテナパッケージへのサブパッケージの埋め込み {#xml-embeddeds}
 
-で、次のデ `all/pom.xml`ィレクティブをプラ `<embeddeds>` グイン宣言に `filevault-package-maven-plugin` 追加します。 設定は使 **用しないでください** 。こ `<subPackages>` れはではなくにサブパッケージが含まれるので、この設定を使用 `/etc/packages` しないでくださ `/apps/my-app-packages/<application|content>/install(.author|.publish)?`い。
+`all/pom.xml` で、次の `<embeddeds>` ディレクティブをプラグイン宣言 `filevault-package-maven-plugin` に追加します。なお、`<subPackages>` 設定は&#x200B;**使用しない**&#x200B;でください。この設定では、`/apps/my-app-packages/<application|content>/install(.author|.publish)?` ではなく `/etc/packages` 内のサブパッケージを組み込むことになるからです。
 
 ```xml
 ...
@@ -476,20 +420,17 @@ OSGiプロ `scripts` パティには、 [Apache SlingのRepo Init言語で定義
 
 ### コンテナパッケージのフィルター定義 {#xml-container-package-filters}
 
-`all` プロジェクトの `filter.xml`（`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`）に、デプロイするサブパッケージを&#x200B;**含む**`-packages` フォルダーを含めます。
+`all` プロジェクトの `filter.xml`（`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`）に、デプロイするサブパッケージを格納したすべての `-packages` フォルダーを&#x200B;**含めます**。
 
 ```xml
 <filter root="/apps/my-app-packages"/>
 ```
 
-埋め込みターゲ `/apps/*-packages` ットで複数を使用する場合は、すべてここで列挙する必要があります。
+埋め込まれるターゲットで複数の `/apps/*-packages` が使用されている場合は、それらをすべてここに列挙する必要があります。
 
-### サードパーティMavenリポジトリ {#xml-3rd-party-maven-repositories}
+### サードパーティ Maven リポジトリ {#xml-3rd-party-maven-repositories}
 
->[!WARNING]
-> Mavenリポジトリをさらに追加すると、Mavenリポジトリの依存関係がチェックされるので、Mavenリポジトリのビルド時間が延長される場合があります。
-
-reactorプロジェクトの中で、必要なサ `pom.xml`ードパーティのパブリックMavenリポジトリディレクティブを追加します。 完全な設定は、サ `<repository>` ードパーティのリポジトリプロバイダーから利用できる必要があります。
+公開されているサードパーティ Maven リポジトリで必要なものがあれば、それらのリポジトリディレクティブをリアクタープロジェクトの `pom.xml` に追加します。完全な `<repository>` 設定は、サードパーティリポジトリプロバイダーから入手できるはずです。
 
 ```xml
 <repositories>
@@ -510,9 +451,9 @@ reactorプロジェクトの中で、必要なサ `pom.xml`ードパーティの
 </repositories>
 ```
 
-### fromパッケージ間のパッ `ui.apps` ケージの `ui.content` 依存 {#xml-package-dependencies}
+### `ui.apps` パッケージと `ui.content` パッケージの依存関係 {#xml-package-dependencies}
 
-で、次のデ `ui.content/pom.xml`ィレクティブをプラ `<dependencies>` グイン宣言に `filevault-package-maven-plugin` 追加します。
+`ui.content/pom.xml` で、次の `<dependencies>` ディレクティブをプラグイン宣言 `filevault-package-maven-plugin` に追加します。
 
 ```xml
 ...
@@ -536,9 +477,9 @@ reactorプロジェクトの中で、必要なサ `pom.xml`ードパーティの
 ...
 ```
 
-### コンテナプロジェクトのターゲットフォルダのクリーニング {#xml-clean-container-package}
+### コンテナプロジェクトのターゲットフォルダーのクリーンアップ {#xml-clean-container-package}
 
-Mavenビルド `all/pom.xml` の前に `maven-clean-plugin` ターゲットディレクトリをクリーンアップするプラグインを追加します。
+Maven ビルドの前にターゲットディレクトリをクリーンアップする `maven-clean-plugin` プラグインを `all/pom.xml` に追加します。
 
 ```xml
 <plugins>
@@ -562,5 +503,5 @@ Mavenビルド `all/pom.xml` の前に `maven-clean-plugin` ターゲットデ�
 
 ## その他のリソース {#additional-resources}
 
-+ [Maven を使用したパッケージの管理](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
-+ [FileVault Content Package Mavenプラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
++ [Maven を使用したパッケージの管理](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [FileVault コンテンツパッケージ Maven プラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
