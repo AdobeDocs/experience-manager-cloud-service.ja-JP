@@ -3,7 +3,7 @@ title: メディアハンドラーとワークフローを使用したアセッ�
 description: 様々なハンドラーの概要と、ワークフローでハンドラーを使用してアセットに対してタスクを実行する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager (AEM) Assets には、アセットを処理するため
 
 >[!NOTE]
 >
->AEM Assets でサポートされるすべての形式と、各形式でサポートされる機能の説明については、[Assets でサポートされる形式](file-format-support.md)を参照してください。
+>See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
 
 ## デフォルトのメディアハンドラー {#default-media-handlers}
 
@@ -407,7 +407,7 @@ AEM を使用すると、ワークフロー内で任意のコマンドライン�
 
 まず、AEM サーバーをホストするディスクに ImageMagick をインストールします。
 
-1. ImageMagick をインストールします。[ImageMagick のマニュアル](https://www.imagemagick.org/script/download.php)を参照してください。
+1. ImageMagickのインストール：ImageMagickのドキュメ [ントを参照してくださ](https://www.imagemagick.org/script/download.php)い。
 1. コマンドラインで convert を実行できるようにツールを設定します。
 1. ツールが適切にインストールされているかどうかを確認するには、コマンド `convert -h` をコマンドラインで実行します。
 
