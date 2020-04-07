@@ -19,10 +19,10 @@ AEM ドキュメントを改善するためのあらゆる投稿を歓迎しま�
 
 ## 投稿の方法
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADeは、貢献度をできるだけ簡単に送信できるようにしたいと考えています。 投稿するには、次の 2 つの方法があります。
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEADeは、貢献度をできるだけ簡単に送信できるようにします。 投稿するには、次の 2 つの方法があります。
 =======
 =======
->>>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をステージングにマージする貢献方法は、自分がどのような人で、どのような変更を貢献したいかによって異なります。
+>>>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;を190577cの親にマージ…ブランチ&#39;master&#39;をステージングにマージする貢献方法は、自分がどのような人で、どのような変更を貢献したいかによって異なります。
 
 
 
@@ -55,10 +55,10 @@ AEM ドキュメントを改善するためのあらゆる投稿を歓迎しま�
 
 ### 変更修正依頼の作成 {#create-a-pull-request}
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ID問題が発生した場合、問題の修正方法を正確に理解している場合は、プル要求を作成することを検討してください。 変更修正依頼を使用すると、ドキュメントに編集を加えることができ、AEM Docs チームメンバーによってその変更をドキュメントに含めるかのレビューがおこなわれます。どのページにも右側のナビゲーションパネル上部に「**Edit this page**」リンクがあるので、それをクリックするだけで変更を提案し、変更修正依頼が作成できます。
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD ID問題が発生し、問題の修正方法を正確に理解している場合は、プルリクエストを作成することを検討します。 変更修正依頼を使用すると、ドキュメントに編集を加えることができ、AEM Docs チームメンバーによってその変更をドキュメントに含めるかのレビューがおこなわれます。どのページにも右側のナビゲーションパネル上部に「**Edit this page**」リンクがあるので、それをクリックするだけで変更を提案し、変更修正依頼が作成できます。
 =======
 >=======>
->>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をステージングに統合
+>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;を190577cの親にマージ…ブランチ&#39;master&#39;をステージングに統合
 
 
 
@@ -87,17 +87,18 @@ AEM ドキュメントを改善するためのあらゆる投稿を歓迎しま�
 
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
 
 もちろん、公開リポジトリへ投稿しても問題なく、レビューもおこなわれますが、アドビの従業員からの変更修正依頼は処理が容易で、会社のレポジトリで迅速に承認できます。機密情報は、会社のレポジトリでのみ議論します。
 =======
-=======
->>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をステージングに統合
+>=======>
+>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;を190577cの親にマージ…ブランチ&#39;master&#39;をステージングに統合
 
 
 
 
-
+>> 
 
 ## ツールとセットアップ
 
