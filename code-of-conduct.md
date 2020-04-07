@@ -50,7 +50,9 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://contribu
 =======
 This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
->>>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をステージングに統合
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;を190577cの親にマージ…ブランチ&#39;master&#39;をステージングに統合
 
 
 
