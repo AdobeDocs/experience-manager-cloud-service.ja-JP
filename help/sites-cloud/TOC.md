@@ -2,13 +2,14 @@
 sub-product: AEMでのクラウドサービスとしてのコンテンツのオーサリング
 user-guide-title: AEMでのクラウドサービスとしてのコンテンツのオーサリング
 translation-type: tm+mt
-source-git-commit: 8a298cdeee23806e1e8cba90add1ac1dbcbabe12
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Sites {#sites}
 
++ [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
 + [AEM Cloud Service における AEM Sites の主要な変更点](sites-cloud-changes.md)
 + オーサリング {#authoring}
    + 概要 {#getting-started}
