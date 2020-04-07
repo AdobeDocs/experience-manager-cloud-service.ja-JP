@@ -1,13 +1,13 @@
 ---
-title: プロジェクトのコンテンツパッケージ構造について
-description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を適切に定義する方法について説明します。
+title: AEMプロジェクト構造
+description: Adobe Experience Manager Cloud Serviceに展開するパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: cedc14b0d71431988238d6cb4256936a5ceb759b
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service のプロジェクトコンテンツパッケージの構造について {#understand-cloud-service-package-structure}
+# AEMプロジェクト構造
 
 >[!TIP]
 >
@@ -29,7 +29,7 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 
 `/apps` と `/libs` は AEM の&#x200B;**不変**&#x200B;領域と見なされます。AEM の起動後（例：実行時）に変更（作成、更新、削除）できないからです。実行時に不変領域を変更しようとすると失敗します。
 
-リポジトリ内のそれ以外の領域（`/content`、`/conf`、`/var`、`/home`、`/etc`、`/oak:index`、`/system`、`/tmp` など）はすべて&#x200B;**可変**&#x200B;領域です。つまり、実行時に変更できます。
+Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc. はすべて&#x200B;**可変**&#x200B;領域です。つまり、実行時に変更できます。
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 
 推奨されるアプリケーションデプロイメント構造は次のとおりです。
 
-+ `ui.apps` パッケージ（コンテンツパッケージ）は、デプロイされるすべてのコードを含んでおり、`/apps` にのみデプロイされます。`ui.apps` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
++ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. `ui.apps` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + OSGi バンドル
       + `/apps/my-app/install`
    + OSGi 設定
@@ -58,23 +58,28 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
       + `/apps/settings`
    + ACL（権限）
       + `/apps` の配下にある任意のパスの任意の `rep:policy`
-+ `ui.content` パッケージ（コードパッケージ）には、すべてのコンテンツと設定が含まれています。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
+   + Repo Init OSGi設定ディレクティブ（および付属のスクリプト）
+      + [AEMアプリケーションの論理的な一部であるコンテンツをデプロイ（可変）する方法として、Repo Initを使用することをお勧めします。](#repo-init) 次を定義するには、Repo Initを使用する必要があります。
+         + ベースラインコンテンツ構造
+            + `/conf/my-app`
+            + `/content/my-app`
+            + `/content/dam/my-app`
+         + ユーザー
+         + サービスユーザ
+         + グループ
+         + ACL（権限）
+            + 任意のパ `rep:policy` ス（ミュート可能または不変）
++ The `ui.content` package, or Content Package, contains all content and configuration. `ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + コンテキスト対応の設定
       + `/conf`
-   + ベースラインコンテンツ構造（アセットフォルダー、サイトルートページ）
+   + 必須で複雑なコンテンツ構造( Repo Initで定義された過去のベースラインコンテンツ構造に基づいて構築され、拡張されるコンテンツの構築。
       + `/content`、`/content/dam` など
    + 管理されるタグ付け分類
       + `/content/cq:tags`
-   + サービスユーザー
-      + `/home/users`
-   + ユーザーグループ
-      + `/home/groups`
    + Oak インデックス
-      + `/oak:indexes`
+      + `/oak:index`
    + etc レガシーノード
       + `/etc`
-   + ACL（権限）
-      + `/apps` の配下に&#x200B;**ない**&#x200B;任意のパスの任意の `rep:policy`
 + `all` パッケージは、`ui.apps` および `ui.content` 埋め込みパッケージのみを含んだコンテナパッケージです。`all` パッケージにはそれ自体の&#x200B;**コンテンツ**&#x200B;を含めることはできず、リポジトリへのあらゆるデプロイメントをサブパッケージに委任します。
 
    `<subPackages>` 設定ではなく、[FileVault パッケージ Maven プラグインの埋め込み設定](#embeddeds)を使用して、パッケージが組み込まれるようになりました。
@@ -111,6 +116,35 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 >[!TIP]
 >
 >完全なスニペットについては、この後の [POM XML スニペット](#pom-xml-snippets)の節を参照してください。
+
+## リポジトリの初期化{#repo-init}
+
+Repo Initは、フォルダーツリーなどの一般的なノード構造から、ユーザー、サービスユーザー、グループ、ACL定義まで、JCR構造を定義する命令（スクリプト）を提供します。
+
+リポジトリ初期化の主な利点は、スクリプトで定義されたすべてのアクションを実行する暗黙の権限があり、デプロイのライフサイクルの早い段階で呼び出され、必要なJCR構造がすべて実行されることです。
+
+Repo Initスクリプト自体はスクリプトとしてプロジェ `ui.apps` クト内に存在しますが、スクリプトは次の可変構造を定義するために使用でき、また使用する必要があります。
+
++ ベースラインコンテンツ構造
+   + Examples: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
++ サービスユーザ
++ ユーザー
++ グループ
++ ACL
+
+Repo Initスクリプトは `scripts``RepositoryInitializer` OSGiファクトリ設定のエントリとして保存されるので、実行モードで暗黙的にターゲット化でき、AEM AuthorとAEM Publish ServicesのRepo Initスクリプトの違いや、Envs（開発、ステージ、実行）との違いが生じます。
+
+ユーザーとグループを定義する場合、グループのみがアプリケーションの一部と見なされ、関数に不可欠な要素がここで定義される必要があります。 組織のユーザーとグループは、実行時にAEMで定義する必要があります。例えば、カスタムワークフローが名前付きのグループに作業を割り当てる場合、そのグループはAEMアプリケーションのRepo Initを介して定義する必要がありますが、グループ化が単なる組織（「Wendy&#39;s Team」や「Sean&#39;s Team」など）の場合、これらは最適な定義で、実行時に管理されます。
+
+>[!TIP]
+>
+>Repo Initスクリプト *は* 、インラインフィールドで `scripts` 定義する必要があり `references` 、設定は機能しません。
+
+Repo Initスクリプトの全語彙は、 [Apache Sling Repo Initドキュメントで入手できます](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
+
+>[!TIP]
+>
+>See the [Repo Init Snippets](#snippet-repo-init) section below for a complete snippet.
 
 ## リポジトリ構造パッケージ {#repository-structure-package}
 
@@ -321,6 +355,28 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
     ...
 ```
 
+### リポジトリの初期化{#snippet-repo-init}
+
+Repo Initスクリプトを含むRepo Initスクリプトは、プロパティを介して `RepositoryInitializer` OSGiファクトリ設定で定義さ `scripts` れます。 OSGi設定内で定義されるこれらのスクリプトは、通常のフォルダーセマンティクスを使用して実行モードで簡単にスコープでき `../config.<runmode>` ることに注意してください。
+
+スクリプトは通常複数行の宣言なので、XMLベースの形式よりもファイル内で定義し `.config` やすいことに注意してくだ `sling:OsgiConfig` さい。
+
+`/apps/my-app/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-author.config`
+
+```plain
+scripts=["
+    create service user my-data-reader-service
+
+    set ACL on /var/my-data
+        allow jcr:read for my-data-reader-service
+    end
+
+    create path (sling:Folder) /conf/my-app/settings
+"]
+```
+
+OSGiプロ `scripts` パティには、 [Apache SlingのRepo Init言語で定義されたディレクティブが含まれます](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)。
+
 ### リポジトリ構造パッケージ {#xml-repository-structure-package}
 
 `ui.apps/pom.xml` と、コードパッケージ（`<packageType>application</packageType>`）を宣言する他の任意の `pom.xml` で、次のリポジトリ構造パッケージ設定を FileVault Maven プラグインに追加します。[プロジェクト用に独自のリポジトリ構造パッケージを作成](repository-structure-package.md)することができます。
@@ -338,7 +394,7 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
         <repositoryStructurePackages>
           <repositoryStructurePackage>
               <groupId>${project.groupId}</groupId>
-              <artifactId>repository-structure-pkg</artifactId>
+              <artifactId>ui.apps.structure</artifactId>
               <version>${project.version}</version>
           </repositoryStructurePackage>
         </repositoryStructurePackages>
@@ -429,6 +485,9 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 埋め込まれるターゲットで複数の `/apps/*-packages` が使用されている場合は、それらをすべてここに列挙する必要があります。
 
 ### サードパーティ Maven リポジトリ {#xml-3rd-party-maven-repositories}
+
+>[!WARNING]
+> Mavenリポジトリをさらに追加すると、Mavenリポジトリの依存関係がチェックされるので、Mavenリポジトリのビルド時間が延長される場合があります。
 
 公開されているサードパーティ Maven リポジトリで必要なものがあれば、それらのリポジトリディレクティブをリアクタープロジェクトの `pom.xml` に追加します。完全な `<repository>` 設定は、サードパーティリポジトリプロバイダーから入手できるはずです。
 
