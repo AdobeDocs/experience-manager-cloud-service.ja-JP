@@ -3,7 +3,7 @@ title: 非同期操作
 description: AEM Assets では、リソースを集中的に消費する一部のタスクを非同期的に処理することでパフォーマンスを最適化します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager (AEM) Assets では、パフォーマンスを悪化さ
 
 ## 非同期操作のステータスの監視 {#monitoring-the-status-of-asynchronous-operations}
 
-AEM Assets で非同期的に操作がおこなわれると、インボックスと電子メールに通知が届きます。
+Whenever AEM Assets processes an operation asynchronously, you receive a notification at your inbox <!-- and through email -->.
 
 非同期操作のステータスの詳細を表示するには、**[!UICONTROL 非同期ジョブステータス]**&#x200B;ページに移動します。
 
