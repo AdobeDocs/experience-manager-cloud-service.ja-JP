@@ -2,14 +2,14 @@
 title: Adobe Experience Manager へのデジタルアセットの追加
 description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
 translation-type: tm+mt
-source-git-commit: 776b089a322cc4f86fdcb9ddf1c3cc207fc85d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # Adobe Experience Manager へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
-デジタルファイルを Adobe Experience Manager にアップロードすると、豊富なメタデータ、スマートタグ、レンディション、その他のデジタルアセット管理（DAM）サービスでファイルのバイナリコンテンツを強化できます。ローカルフォルダーまたはネットワークドライブから Adobe Experience Manager Assets に様々な種類のファイル（画像、PDF ファイル、RAW ファイルなど）をアップロードできます。
+Adobe Experience Managerは、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のDigital Asset Management(DAM)サービスで強化します。 画像、ドキュメント、生画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブからExperience Manager Assetsにアップロードできます。
 
 アップロード方法は多数用意されています。最もよく使用されるブラウザーアップロードに加えて、他の方法でも Adobe Experience Manager リポジトリにアセットを追加することができます。Adobe Asset Link や Adobe Experience Manager デスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードおよび取り込みスクリプト、AEM 拡張機能として追加されている自動取り込み統合などです。
 
@@ -64,7 +64,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
 
-<!-- #ENGCHECK assuming this is not relevant? please remove after confirming#
+<!-- #ENGCHECK assuming this is not relevant? remove after confirming#
    During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
@@ -77,7 +77,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 > [!NOTE]
 >
-> ネストされたフォルダー階層を AEM にアップロードする必要がある場合は、[アセットの一括アップロード](#bulk-upload)を参照してください。
+> ネストされたフォルダ階層をAEMにアップロードする方法については、アセットの [一括アップロードを参照してくださ](#bulk-upload)い。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
