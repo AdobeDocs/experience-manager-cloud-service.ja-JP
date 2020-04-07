@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service の概要
 description: 'Adobe Experience Manager (AEM) as a Cloud Service の概要。 '
 translation-type: tm+mt
-source-git-commit: eb28fedae5b87a67460f4cac97959f65972e652a
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,6 +18,8 @@ Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 * AEM コンテンツ管理システムの機能と AEM デジタルアセット管理を組み合わせて、コンテンツ主導のパーソナライズされたエクスペリエンスをユーザーに提供できます。
 
 * ダウンタイムなしのアップデートを実現する継続的配信と継続的統合を提供します。
+
+* 組み込みのコンテンツ配信ネットワーク(CDN)や他のネットワーク層のベストプラクティスを活用し、コンテンツを迅速かつ効率的に配信します。
 
 * 規模を自動的に拡大／縮小できる動的アーキテクチャに基づいているので、インフラストラクチャに関する考慮が不要になります。
 
