@@ -3,14 +3,14 @@ title: Adobe Experience Manager Assets as a Cloud Service でサポートされ�
 description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9a7d2cff969a7920eb4fa3597846c11aa16392d9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
 # AEM Assets as a Cloud Service でサポートされているファイル形式 {#supported-file-formats}
 
-クラウドサービスとしてのAdobe Experience Managerは、基本的なコンテンツ管理機能をサポート — ストレージ，メタデータのオンライン管理，バージョン管理，アップロードとダウンロードなど — 形式に関係なく、任意のバイナリファイルの場合。 Adobe Experience Manager Assetsは様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
+クラウドサービスとしてのAdobe Experience Managerは、基本的なコンテンツ管理機能をサポート — ストレージ、メタデータのオンライン管理、バージョン管理、アップロードとダウンロードなど — 形式に関係なく、任意のバイナリファイルの場合。 Adobe Experience Manager Assetsは様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
 
 さらに、Experience Manager Assetsは、プレビューとレンディションの生成、およびフルテキストインデックス用のメタデータとテキストの抽出をサポートする拡張機能を提供します。 この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
 
