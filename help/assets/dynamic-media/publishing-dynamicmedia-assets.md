@@ -2,7 +2,7 @@
 title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 アセットを選択して「**[!UICONTROL 公開]**」をタップすることで、Dynamic Media アセットを公開できます。Dynamic Media アセットを公開した後は、URL または埋め込みによってそのアセットを Web ページに追加できるようになります。
 
-また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。[Dynamic Media の設定](config-dm.md)を参照してください。
+また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。 [Dynamic Media の設定](config-dm.md)を参照してください。
 
 **[!UICONTROL カード表示]**&#x200B;では、小さい地球のアイコンがアセット名のすぐ下に表示され、アセットが公開されていることを示します。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
