@@ -2,7 +2,7 @@
 title: 環境の管理 - クラウドサービス
 description: 環境の管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
+source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 
 ---
 
@@ -37,9 +37,6 @@ source-git-commit: 81c5112cd72ff3713690a49978f1b6e991d15c3b
 
 
 1. ユーザーは「**環境を追加**」ボタンをクリックして、環境を追加します。
-
-   >[!NOTE]
-   >このボタンは、環境ページまたは環境カードからアクセスできます。 ユーザーには、必要な権限がある場合にのみ、このオプションが表示されます。 ご質問がある場合は、Adobe 担当者にお問い合わせください。
 
    ![](assets/add-environment.png)
 
