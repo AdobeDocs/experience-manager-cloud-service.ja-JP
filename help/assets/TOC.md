@@ -2,13 +2,14 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# アセット {#assets}
+# Assets {#assets}
 
++ [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [概要と新機能](overview.md)
 + [AEM Assets as a Cloud Service の主要な変更点](assets-cloud-changes.md)
 + [アーキテクチャ](architecture.md)
@@ -39,8 +40,8 @@ source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
    + [アセットの Digital Rights Management](drm.md)
 + アセットの設定、管理、拡張 {#admin}
    + [API とリファレンス資料](developer-reference-material-apis.md)
-   + [アセット共有の設定](configure-asset-sharing.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
+   + [処理プロファイル](/help/assets/dynamic-media/processing-profiles.md)
    + [多言語アセットとアセット翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
    + [アセットエディターの拡張](extend-asset-editor.md)
@@ -51,9 +52,6 @@ source-git-commit: 4206534b0f3020b2136729d866eb753eb06d95b1
    + [XMP メタデータ](xmp-metadata.md)
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
-+ アセットの共有と配布 {#brandportal}
-   + [AEM Assets と Brand Portal の連携の設定](configure-aem-assets-with-brand-portal.md)
-   + [Brand Portal へのアセットの公開](publish-to-brand-portal.md)
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
