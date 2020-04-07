@@ -4,7 +4,7 @@ description: Adobe Experience Manager Assetsでのコレクションの概念を
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8aa693387183e65434da300ccf08f394b48ed9ba
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -169,7 +169,7 @@ Assets UI からコレクションに、アセットをドラッグできます�
 
 1. コレクションコンソールから、ダウンロードする 1 つ以上のコレクションを選択します。
 1. ツールバーの「ダウンロード」アイコンをタップまたはクリックします。
-1. **[!UICONTROL ダウンロード]**&#x200B;ダイアログで、「**[!UICONTROL ダウンロード]**」をタップまたはクリックします。コレクション内のアセットのレンディションをダウンロードする場合は、「**[!UICONTROL レンディション]**」を選択します。コレクションの所有者に電子メールで通知を送信するには、「**[!UICONTROL 電子メール]**」オプションを選択します。
+1. **[!UICONTROL ダウンロード]**&#x200B;ダイアログで、「**[!UICONTROL ダウンロード]**」をタップまたはクリックします。コレクション内のアセットのレンディションをダウンロードする場合は、「**[!UICONTROL レンディション]**」を選択します。<!-- Select the **[!UICONTROL Email]** option to send an email notification to the owner of the collection. -->
 
    ダウンロードするコレクションを選択すると、そのコレクションの下位のフォルダーの階層全体がダウンロードされます。ダウンロードする各コレクション（親コレクションの下にネストされている子コレクションのアセットを含む）を個々のフォルダーに格納するには、「**[!UICONTROL アセットごとに別のフォルダーを作成]**」を選択します。
 
