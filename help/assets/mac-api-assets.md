@@ -3,7 +3,7 @@ title: Assets HTTP API
 description: Assets HTTP API の実装、データモデルおよび機能を学習します。Assets HTTP API を使用して、アセットに関する様々なタスクを実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f2e257ff880ca2009c3ad6c8aadd055f28309289
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -25,7 +25,7 @@ API応答は、一部のMIMEタイプのJSONファイルで、すべてのMIME�
 
 >[!NOTE]
 >
->アセットやバイナリ一般（レンディションなど）のアップロードまたは更新に関連する API 呼び出しはすべて、AEM as a Cloud Service デプロイメントでは廃止されます。バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload-technical) を使用してください。
+>アセットやバイナリ一般（レンディションなど）のアップロードまたは更新に関連する API 呼び出しはすべて、AEM as a Cloud Service デプロイメントでは廃止されます。For uploading binaries, use [direct binary upload APIs](developer-reference-material-apis.md#asset-upload-technical) instead.
 
 ## コンテンツフラグメント {#content-fragments}
 
