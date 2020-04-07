@@ -2,7 +2,7 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 518c3156b2ee1f6431ea11333c57548a42133aa9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -34,11 +34,15 @@ Target に統合するには、次のタスクを実行します。
    * [Adobe I/O を使用した AEM と Adobe Launch の統合](https://helpx.adobe.com/jp/experience-manager/using/aem_launch_adobeio_integration.html)
    * [AEM と Launch by Adobe、Analytics、Target の統合について](https://helpx.adobe.com/jp/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
-1. [アクティビティを設定する](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)：アクティビティを Target のクラウド設定に関連付けます。
-
 >[!NOTE]
 >
 >Launch by Adobe の IMS 設定（技術アカウント）は、AEM as a Cloud Service に事前に設定されています。ユーザーはこの設定を作成する必要はありません。
+
+1. [アクティビティを設定する](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)：アクティビティを Target のクラウド設定に関連付けます。
+
+>[!CAUTION]
+>
+>AEMのクラウドサービスでは、AEMからAdobeターゲットにオファーとアクティビティを同期するレプリケーションエージェントは、デフォルトで無効になっています。 複製エージェントを再 [度有効にする必要がある場合は](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html#experience-manager) 、アドビサポートチームにお問い合わせください。
 
 >[!NOTE]
 >
