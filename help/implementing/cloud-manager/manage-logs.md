@@ -2,7 +2,7 @@
 title: ログの管理 - クラウドサービス
 description: ログの管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 81f993325b80c0de17d6032a45ebd61c22169d39
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -66,3 +66,10 @@ Environment Id Service    Name
 
 >[!Note]
 >**ログのダウンロードは** UI でも API でも可能ですが、**ログの追跡**&#x200B;は API または CLI でのみ可能です。
+
+### その他のリソース {#resources}
+
+Cloud Manager APIとAdobe I/O CLIについて詳しくは、次の追加のリソースを参照してください。
+
+* [Cloud Manager APIドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
