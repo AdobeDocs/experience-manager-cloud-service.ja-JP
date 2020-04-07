@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: 'コンテンツの検索とインデックス作成 '
 translation-type: tm+mt
-source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 99dce041a6d7554785fd43eb82c671643e903f23
 
 ## クラウドサービスとしてのAEMの変更点 {#changes-in-aem-as-a-cloud-service}
 
-AEMをクラウドサービスとして使用する場合、アドビはAEMインスタンス中心モデルから、AEMコンテナをn個使用するサービスベースの表示に移行します。このモデルは、Cloud ManagerのCI/CDパイプラインによって駆動されます。 単一のAEMインスタンスでインデックスを設定および管理する代わりに、デプロイメントの前にインデックスの設定を指定する必要があります。 本番環境での設定の変更により、CI/CDのポリシーが明らかに崩れています。 インデックスの変更も同様です。システムの安定性とパフォーマンスに影響を与える可能性があるので、実稼働環境に移行する前にテストおよび再インデックスを行っておく必要があります。
+AEMをクラウドサービスとして使用する場合、アドビはAEMインスタンス中心モデルから、AEMコンテナをn個使用するサービスベースの表示に移行します。このモデルは、Cloud ManagerのCI/CDパイプラインによって駆動されます。 単一のAEMインスタンスでインデックスを設定および管理する代わりに、インデックス設定を指定してからデプロイを行う必要があります。 本番環境での設定の変更により、CI/CDのポリシーが明らかに崩れています。 インデックスの変更も同様です。システムの安定性とパフォーマンスに影響を与える可能性があるので、実稼働環境に移行する前にテストおよび再インデックスを行っておく必要があります。
 
 AEM 6.5以前のリストと比較した主な変更点を次に示します。
 
@@ -31,7 +31,7 @@ AEM 6.5以前のリストと比較した主な変更点を次に示します。
 
 1. クラウドサービスとしてのAEMの概要レベルでは、 [Blue-Greenデプロイメントモデルの導入に伴い](#index-management-using-blue-green-deployments) 、次の2組のインデックスが存在します。1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
 
-使用されるインデックスのバージョンは、フラグを介してインデックス定義のフラグを使用して設定さ `useIfExist` れます。 インデックスは、1つのバージョンのアプリケーション（例えば、青または緑のみ）、または両方のバージョンでのみ使用できます。 詳細なドキュメントは、「 [Index Management Using Blue-Green Deployments」で入手できます](#index-management-using-blue-green-deployments)。
+<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
 
 1. お客様は、Cloud Managerのビルドページでインデックス作成ジョブが完了したかどうかを確認でき、新しいバージョンでトラフィックを受け取る準備ができたら通知を受け取ります。
 
@@ -61,7 +61,7 @@ AS NOTE: the above is internal for now.
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-その下に潜らなければならな `ui.content/src/main/content/jcr_root`い 現時点では、サブルートフォルダーはサポートされていません。
+その下に潜らなければならな `ui.apps/src/main/content/jcr_root`い 現時点では、サブルートフォルダーはサポートされていません。
 
 <!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
@@ -69,11 +69,15 @@ AS NOTE: the above is internal for now.
 
 ### 索引定義の配置 {#deploying-index-definitions}
 
+> [!NOTE]
+>
+> Jackrabbit Filevault Mavenパッケージプラグインのバージョン **1.1.0には既知の問題があり** 、のモジュールに追加できな `oak:index` い問題があります `<packageType>application</packageType>`。 この問題に対処するには、バージョン1.0.4 **を使用してください**。
+
 インデックス定義は、カスタムおよびバージョン管理としてマークされるようになりました。
 
-* MUTABLEコンテンツであるインデックス定 `/oak:index/ntBaseLucene-custom-1`義自体（例えば）
+* インデックス定義自体(例 `/oak:index/ntBaseLucene-custom-1`)
 
-したがって、インデックスを展開するには、インデックス定義(`/oak:index/definitionname`)を可変パッケージ(通常はGitとCloud Managerの展開プロセ ****`ui.content` スを介して)経由で配信する必要があります。
+したがって、インデックスを展開するには、インデックス定義(`/oak:index/definitionname`)をGitおよびCloud Managerの展開プロセス `ui.apps` 経由で配信する必要があります。
 
 新しいインデックス定義を追加したら、新しいアプリケーションをCloud Managerを使用してデプロイする必要があります。 配置時に2つのジョブが開始され、作成者と発行用のインデックス定義をMongoDBとAzureセグメントストアに追加（および必要に応じて結合）します。 Blue-Greenスイッチが発生する前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されています。
 
@@ -81,7 +85,7 @@ AS NOTE: the above is internal for now.
 
 ### インデックス管理とは {#what-is-index-management}
 
-インデックス管理とは、インデックスの追加、削除、変更に関するものです。 インデックス *の定義の変更は* 、すばやく行えますが、変更を適用する（「インデックスの作成」と呼ばれることが多く、既存のインデックスの場合は「インデックスの再作成」と呼ばれる）には時間が必要です。 即時ではありません。インデックスを作成するデータをリポジトリでスキャンする必要があります。
+インデックス管理は、インデックスの追加、削除、変更に関するものです。 インデックス *の定義の変更は* 、すばやく行えますが、変更を適用する（「インデックスの作成」と呼ばれることが多く、既存のインデックスの場合は「インデックスの再作成」と呼ばれる）には時間が必要です。 即時ではありません。インデックスを作成するデータをリポジトリでスキャンする必要があります。
 
 ### 青緑の導入とは {#what-is-blue-green-deployment}
 
