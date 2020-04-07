@@ -1,5 +1,5 @@
 ---
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 8bdcc1798b2b788c5252e89750ad6ccb86cda333
 translation-type: tm+mt
 
 ---
@@ -45,4 +45,15 @@ translation-type: tm+mt
 
 ## 帰属
 
-この行動規範は、[/version/](https://contributor-covenant.org)/1/4/ にある [Contributor Covenant](https://contributor-covenant.org/version/1/4/)https://contributor-covenant.org バージョン 1.4 を基に作成されています。
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4, available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+=======
+This Code of Conduct is adapted from the [Contributor Covenant](https://contributor-covenant.org), version 1.4,available at [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+>>>>>>>>>>f6e5291の親…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をstaging=====f6e5291の親にマージ…https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.enのブランチ&#39;staging&#39;をステージングに統合
+
+
+
+
+
+> 
