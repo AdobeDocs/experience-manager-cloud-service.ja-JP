@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager as a Cloud Service におけるデジタルア�
 description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -55,9 +55,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 * `(string) fileName`：必須。インスタンスに表示されるアセットの名前。
 * `(number) fileSize`：必須。アップロードするバイナリの合計長（バイト単位）。
 
-各バイナリに必須フィールドが含まれている限り、単一のリクエストを使用して複数のバイナリのアップロードを開始できることに注意してください。
-
-成功した場合は、リクエストへの応答として、201 ステータスコードと、次の形式の JSON データを含んだ本文が返されます。
+各バイナリに必須フィールドが含まれている限り、単一の要求を使用して複数のバイナリのアップロードを開始できます。 If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
 
 ```
 {
@@ -74,17 +72,17 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
         }
     ]
 }
-````
+```
 
-* `(string) completeURI`：バイナリのアップロードが完了したときに呼び出される URI。これは絶対 URI でも相対 URI でもかまいません。クライアントはどちらでも処理できるはずです。つまり、URI 値は例えば、`"https://author.acme.com/content/dam.completeUpload.json"` または `"/content/dam.completeUpload.json"` のようになります（[アップロードの完了](#complete-upload)を参照）。
-* `(string) folderPath`：バイナリがアップロードされるフォルダーの完全なパス。
-* `(array) (files)`：開始リクエストで提供されるバイナリ情報のリストの長さと順序に一致する要素のリスト。
-* `(string) fileName`：対応するバイナリの名前（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
-* `(string) mimeType`：対応するバイナリの MIME タイプ（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
-* `(string) uploadToken`：対応するバイナリのアップロードトークン。この値は、完了リクエストに含まれます。
-* `(array) uploadURIs`：バイナリコンテンツのアップロード先となる完全な URI を表す文字列のリストです（[バイナリのアップロード](#upload-binary)を参照）。
-* `(number) minPartSize`：複数の URI がある場合に各アップロード URI に提供されるデータの最小長（バイト単位）。
-* `(number) maxPartSize`：複数の URI がある場合に各アップロード URI に提供されるデータの最大長（バイト単位）。
+* `completeURI` （文字列）:バイナリのアップロードが完了したら、このURIを呼び出します。 URIは、絶対URIまたは相対URIで指定でき、クライアントはどちらも処理できる必要があります。 つまり、値は「アップロード完了」または「完 `"https://author.acme.com/content/dam.completeUpload.json"` 了」を `"/content/dam.completeUpload.json"` 表示す [ることができます](#complete-upload)。
+* `folderPath` （文字列）:バイナリがアップロードされるフォルダのフルパス。
+* `(files)` （配列）:リストの長さと順序が、開始要求で提供されるバイナリ情報のリストの長さと順序と一致する要素の要素です。
+* `fileName` （文字列）:開始要求で指定された、対応するバイナリの名前。 この値は、完了リクエストに含まれます。
+* `mimeType` （文字列）:in initiateリクエストで指定された、対応するバイナリのMIMEタイプ。 この値は、完了リクエストに含まれます。
+* `uploadToken` （文字列）:対応するバイナリのアップロードトークン。 この値は、完了リクエストに含まれます。
+* `uploadURIs` （配列）:値がバイナリのコンテンツのアップロード先の完全なURIである文字列のリストです(バイナリのアップロードを [参照](#upload-binary))。
+* `minPartSize` （数値）:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最小長（バイト単位）です。
+* `maxPartSize` （数値）:複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最大長（バイト単位）。
 
 ### バイナリのアップロード {#upload-binary}
 
@@ -129,7 +127,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### 非推奨（廃止予定）のアセットアップロード API {#deprecated-asset-upload-api}
 
-<!-- #ENGCHECK please review / update the list of deprecated APIs below -->
+<!-- #ENGCHECK review / update the list of deprecated APIs below -->
 
 >[!NOTE]
 Adobe Experience Manager as a Cloud Service では、新しいアップロード API のみサポートされています。Adobe Experience Manager 6.5 の API は非推奨（廃止予定）となりました。
