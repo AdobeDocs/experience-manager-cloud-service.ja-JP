@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
+source-git-commit: 5fe598192f80496bd176804796dbce96c35fc67e
 
 ---
 
@@ -52,17 +52,24 @@ source-git-commit: c56df26fc1bb1da36d268b08276a555a7c0d03ac
    + [XMP メタデータ](xmp-metadata.md)
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
-&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD======
-+ アセットの共有と配布 {#brandportal}
-   + [AEM Assets と Brand Portal の連携の設定](configure-aem-assets-with-brand-portal.md)
-   + [AEM Assetsをブランドポータルに公開](publish-to-brand-portal.md)
->>>>>>>>>>733b637の親…update toc======da6a8aeの親…CloudでAEM Assetsを使用してBrand Portalを設定（da6a8ae...の親）CloudでのAEM Assetsを使用したBrand Portalの設定
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD============
+>>>>>>>>>>733b637の親…目次を更新
 
 
 
 
 
 > 
++ アセットの共有と配布 {#brandportal}
+   + [AEM Assets と Brand Portal の連携の設定](configure-aem-assets-with-brand-portal.md)
+   + [AEM Assetsをブランドポータルに公開](publish-to-brand-portal.md)
+>>>>>>>733b637の親…update toc======da6a8aeの親…CloudでAEM Assetsを使用してBrand Portalを設定（da6a8ae...の親）CloudでのAEM Assetsを使用したBrand Portalの設定
+
+
+
+
+
+
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
