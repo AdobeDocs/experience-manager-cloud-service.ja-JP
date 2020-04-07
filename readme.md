@@ -1,11 +1,11 @@
 ---
-source-git-commit: 06351c5fa81d9841f47c086cdbc66c0c1d1cb5cc
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 translation-type: tm+mt
 
 ---
 # Adobe Experience Managerクラウドサービスドキュメント
 
-This is the repository for [!UICONTROL Adobe Experience Manager] Cloud Service documentation. このドキュメントでは、インストール、管理、オーサリングの使用、およびクラウドサービスを使用したAEMのカスタマイズ方法について説明します。
+これは、Adobe Experience Manager Cloud Serviceドキュメントのリポジトリです。 このドキュメントでは、インストール、管理、オーサリングの使用、およびクラウドサービスを使用したAEMのカスタマイズ方法について説明します。
 
 ドキュメントに対する貢献を歓迎します。次のリソースを参照してください。
 
