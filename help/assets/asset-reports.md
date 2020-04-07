@@ -3,7 +3,7 @@ title: アセットレポート
 description: この記事では、AEM Assets 内のアセットに関する様々なレポートとレポートの生成方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -18,7 +18,7 @@ AEM Assets のレポートフレームワークでは、Sling ジョブを利用
 
 直観的なレポート管理インターフェイスに備わっているきめ細かなオプションやコントロールを使用すれば、アーカイブされたレポートにアクセスしたり、レポートの実行ステータス（成功、失敗および待機中）を表示したりすることができます。
 
-レポートが生成されると、電子メール（オプション）とインボックスで通知を受け取ります。それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除をおこなうことができます。
+レポートが生成されると、インボックス通知 <!-- through an email (optional) and --> で通知されます。 それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除をおこなうことができます。
 
 ## レポートの生成 {#generate-reports}
 
@@ -79,7 +79,7 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    ![files_report](assets/files_report.png)
 
-   「**[!UICONTROL リンク共有]**」レポートには、AEM Assets 内から外部ユーザーと共有されているアセットへの URL が表示されます。アセットを共有したユーザーの電子メール ID、アセットを共有しているユーザーの電子メール ID、共有の日付、リンクの有効期限なども表示されます。列をカスタマイズすることはできません。
+   「**[!UICONTROL リンク共有]**」レポートには、AEM Assets 内から外部ユーザーと共有されているアセットへの URL が表示されます。<!-- It includes email ids of the user who shared the assets, emails ids of users with which the assets are shared, share date, and expiration date for the link. -->列をカスタマイズすることはできません。
 
    「**[!UICONTROL リンク共有]**」レポートでは、*/var/dam/share* に表示される共有 URL が公開されるだけです。そのため、サブフォルダーやレンディションに関するオプションは用意されていません。
 
