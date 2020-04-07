@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 0e4de19f4ae53414d90f6979980f3ce79f49394d
+source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
 
 ---
 
@@ -311,4 +311,4 @@ For local development, logs entries are written to local files in the `/crx-quic
 
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
 
-The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.
+The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.draf
