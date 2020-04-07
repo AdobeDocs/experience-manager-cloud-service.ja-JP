@@ -2,34 +2,34 @@
 title: Adobe Experience Manager Assets as a Cloud Service
 description: Adobe Experience Manager Assets as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# AEM Assets as a Cloud Service {#aem-assets-guide}
+# Adobe Experience Manager Assets as a Cloud Service {#aem-assets-guide}
 
-ここでは、AEM Assets as a Cloud Service に関するセルフヘルプリソースの一覧を示します。
+以下に、クラウドサービスとしてのExperience Manager Assetsのセルフヘルプリソースを示します。
 
-## AEM Assets as a Cloud Service に関する主要な記事{#key-articles}
+## 主要なアセットの記事 {#key-articles}
 
 * [AEM Assets as a Cloud Service の概要](overview.md)
 * [AEM Assets as a Cloud Service のアーキテクチャ](architecture.md)
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience Managerガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service のホーム](/help/landing/home.md) | Adobe Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。 |
-| [概要](/help/overview/home.md) | このガイドでは、ソリューションの紹介、用語など、Adobe Experience Manager as a Cloud Service の概要を説明します。 |
-| [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。 |
+| [Adobe Experience Manager as a Cloud Service のホーム](/help/landing/home.md) | クラウドサービスとしてのExperience Managerの完全なドキュメント。 |
+| [概要](/help/overview/home.md) | クラウドサービスとしてのExperience Managerの概要と用語集です。 |
+| [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止および削除された機能、および既知の問題について説明します。 |
 | [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe Experience Manager as a Cloud Service の中心概念について紹介します。 |
-| [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
-| [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
-| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service の管理方法について説明します。 |
-| [実装ユーザーガイド](/help/implementing/home.md) | 開発のデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
-| [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にソリューションを統合する方法を説明します。 |
-| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
+| [セキュリティユーザーガイド](/help/security/home.md) | Experience Managerをクラウドサービスとして使用する場合のセキュリティトピックです。 |
+| [オンボーディング](/help/onboarding/home.md) | クラウドサービスとしてExperience Managerを使い始める — 重要なデータにアクセスし、保護します。 |
+| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Experience Managerサイトのクラウドサービスとしての管理を参照してください。 |
+| [導入ユーザガイド](/help/implementing/home.md) | Experience Managerをクラウドサービスとしてカスタマイズ、開発およびデプロイします。 |
+| [コネクタユーザーガイド](/help/connectors/home.md) | ソリューションをクラウドサービスとしてExperience Managerと統合します。 |
+| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスの操作など、Experience Managerをクラウドサービスとして使用するバックエンドタスク。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
