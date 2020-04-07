@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: '作成中 '
 translation-type: tm+mt
-source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 3d2705262d9c82a1486e460247b468259d5ed600
 
 AEMでクラウドサービスとして実行するコードは、常にクラスター内で実行されていることを認識している必要があります。 つまり、常に複数のインスタンスが実行されています。 コードは、特にインスタンスがいつでも停止する可能性があるので、回復力が必要です。
 
-AEMをクラウドサービスとして更新する際に、古いコードと新しいコードが並行して実行されるインスタンスが発生します。 したがって、古いコードは新しいコードで作成されたコンテンツと区別できず、新しいコードは古いコンテンツを処理できる必要があります。
+AEMをクラウドサービスとして更新する間、古いコードと新しいコードが並行して実行されるインスタンスが存在します。 したがって、古いコードは新しいコードで作成されたコンテンツと区別できず、新しいコードは古いコンテンツを処理できる必要があります。
 <!--
 
 >[!NOTE]
@@ -83,7 +83,35 @@ HTTP 接続をおこなう場合は、提供されている [Apache HttpComponen
 
 ### ログ {#logs}
 
-For more information on how to work with logs, see the [Logging documentation](/help/implementing/developing/introduction/logging.md).
+ローカル開発の場合、ログエントリはローカルファイルに書き込まれます。 をフォルダーに追 `/crx-quickstart/logs` 加します。
+
+クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
+
+**ログレベルの設定**
+
+クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座にはおこなわれないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
+
+> [!NOTE]
+> 
+> 以下に示す設定の変更を実行するには、ローカルの開発環境で設定の変更を作成し、それらをクラウドサービスインスタンスとしてAEMにプッシュする必要があります。 この方法について詳しくは、「クラウドサービスとしてのAEM [へのデプロイ」を参照してください](/help/implementing/deploying/overview.md)。
+
+**デバッグログレベルのアクティベート**
+
+デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。DEBUGログレベルをアクティブにするには、
+
+``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+
+このプロパティを debug に設定してください。多くのログが生成されるので、デバッグログレベルのログを不必要に長く残さないでください。デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
+
+``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+
+ログレベルは次のとおりです。
+
+| 0 | 重大なエラー | アクションが失敗し、インストーラーの処理を続行できません。 |
+|---|---|---|
+| 1 | エラー | アクションが失敗しました。インストールは続行しますが、CRX の一部が正常にインストールされなかったので、機能しません。 |
+| 2 | 警告 | アクションは成功しましたが、問題が発生しました。CRX が正常に機能するかどうかは不明です。 |
+| 3 | 情報 | アクションが成功しました。 |
 
 ### スレッドダンプ {#thread-dumps}
 
