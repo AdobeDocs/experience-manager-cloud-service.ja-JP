@@ -1,85 +1,59 @@
 ---
-source-git-commit: 190577c9143b02e0c3184231de50fb461156c2d9
+source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 translation-type: tm+mt
 
 ---
 # Adobe Experience Manager Cloud Service ドキュメントへの貢献
 
-[!UICONTROL Adobe Experience Manager] Cloud Serviceドキュメントにご参加いただき、ありがとうございます。 アドビでは、コミュニティおよびドキュメントチーム以外のアドビ従業員からのコンテンツの投稿を歓迎します。
+Adobe Experience Manager Cloud Service ドキュメントへの貢献にご協力いただきありがとうございます。アドビの読者コミュニティ全体およびアドビの従業員からのコンテンツ貢献を歓迎します。
 
-このファイルでは、投稿方法と、投稿をおこなう際に従うべきガイドラインを説明します。
+このファイルでは、投稿方法と、投稿時のガイドラインを説明します。
 
 ## アドビオープンソース行動規範
 
 このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md)を採用しています。AEM ドキュメントに貢献すると、この行動規範の順守に同意したことになります。許容できない行為は [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com) までご報告ください。
 
-## AEM ドキュメントへの投稿に関するガイドライン
+## 投稿のガイドライン
 
-AEMクラウドサービスのドキュメント改善に役立つ貢献を歓迎しますが、貢献は特定のガイドラインと標準に従うよう求めます。 詳しくは、[AEMド キュメントへの貢献に関するガイドライン](guidelines.md)を参照してください。
+AEM ドキュメントを改善するためのあらゆる投稿を歓迎しますが、可能な場合は所定のガイドラインや標準に準拠した投稿をお願いします。詳しくは、[AEM ドキュメントへの投稿に関するガイドライン](guidelines.md)を参照してください。
 
 ## 投稿の方法
 
-投稿方法は、投稿者と、投稿したい変更の種類によって異なります。
+投稿の方法はできるだけ簡単なものにしました。投稿するには次の 2 つの方法があります。
 
-<!--
-We want to make it as easy as possible to submit your contributions. You can contribute in two ways:
---- master
--->
+* [問題報告の作成](#create-an-issue)
+* [変更修正依頼の作成](#create-a-pull-request)
 
-### イシューの作成
+どちらの方法を選択するかは、GitHub ドキュメントの編集にどの程度慣れているかによって異なります。
 
-提案がある場合や、現在のドキュメントに関する意見がある場合、または説明されている方法に質問がある場合は、イシューを申請します。また、イシューは、投稿することがあるものの、ドキュメントを編集したり自分でプル要求をおこなったりすることに不安がある場合に適しています。
+>[!NOTE]
+>
+>お客様が提出する投稿は、[アドビ利用条件](https://www.adobe.com/jp/legal/terms.html)の適用を受けます。
 
-### 軽微な変更
+### 問題報告の作成 {#create-an-issue}
 
-軽微な更新を投稿するには、記事の&#x200B;**編集**&#x200B;リンクをクリックして、GitHub のソース記事を開きます。GitHub UI を使用して更新をおこないます。詳しくは、一般的な[アドビドキュメント寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)（英語）を参照してください。
+提案がある場合や、現在のドキュメントに関する意見がある場合、または説明されている方法に質問がある場合は、問題報告を作成してください。また、問題報告は、寄稿したい内容があるものの、ドキュメントを編集したり自分で変更修正依頼をおこなったりすることに不安がある場合に適しています。
 
-このリポジトリ内のドキュメントおよびコード例について投稿した軽微な修正または説明には、アドビの利用条件が適用されます。
+問題報告を使用すると、ドキュメントに対する改善案を簡単に説明でき、AEM Docs チームメンバーはレビューを実施できます。どのページにも右側のナビゲーションパネル上部に「**Log an issue**」リンクがあるので、それをクリックするだけで問題報告が作成できます。
 
-### コミュニティメンバーから投稿される重大な変更や新しい記事
+### 変更修正依頼の作成 {#create-a-pull-request}
 
-アドビコミュニティのメンバーが記事を作成したり大規模な変更を投稿をおこなったりする場合は、GitHub リポジトリの「**Issues**」タブをクリックして問題を送信します。この投稿により、ドキュメントチームとの会話が始まります。新しいコンテンツを公開するには、ライター（またはアドビの他の従業員）と連携する必要があります。
+問題が見つかり、その修正方法が正確にわかっている場合は、変更修正依頼の作成を検討してください。変更修正依頼を使用すると、ドキュメントに編集を加えることができ、それを AEM Docs チームメンバーがドキュメントに含めるかどうかをレビューします。どのページにも右側のナビゲーションパネル上部に「**Edit this page**」リンクがあるので、それをクリックするだけで変更を提案し、変更修正依頼が作成できます。
 
-ドキュメントやコード例の大幅な変更を含んだプル要求を投稿すると、オンライン投稿使用許諾契約（CLA）の送信を求めるメッセージがプル要求に表示されます。プル要求をアドビでレビューできるようにするには、オンラインフォームに必要事項をすべて記入する必要があります。
+すべての変更修正依頼には、署名付きの[寄稿者ライセンス同意書（CLA）が添付されている必要があります。](https://opensource.adobe.com/cla.html)これにより、アドビはお客様の投稿をプロジェクトの一部として再配布できるようになります。アドビの CLA は一度提出するだけでよいので、以前に提出したことがある場合は、次へ進むことができます。
 
-<!--
-If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click on the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
---master
--->
+### 概要ビデオ
 
-### アドビ従業員から投稿される重大な変更
+以下のビデオで、問題報告と変更修正依頼の作成方法についての概要を簡単に確認できます。
 
-Adobe Experience Cloud ソリューションの製品チームに所属するテクニカルライター、プログラムマネージャー、開発者が業務の一環として技術的記事に投稿したり、技術的記事を作成したりする場合は、`https://git.corp.adobe.com/AdobeDocs` のプライベートリポジトリを使用してください。
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-アドビの他の部署に所属する従業員は、軽微なアップデートには公開リポジトリを使用する必要があります。
+### アドビ従業員による投稿
 
-## 投稿者使用許諾契約
+アドビの従業員で貢献したいことがある場合は、会社用 Git の `AdobeDocs` org を使用します。
 
-このプロジェクトへの第三者によるすべての投稿には、署名済みの投稿者使用許諾契約が含まれている必要があります。これにより、アドビはお客様の投稿をプロジェクトの一部として再配布できるようになります。[アドビの CLA に署名します。](https://opensource.adobe.com/cla.html)アドビの CLA は一度提出するだけでよいので、以前に提出したことがある場合は、次へ進むことができます。
+もちろん、公開リポジトリへ投稿しても問題なく、レビューもおこなわれますが、アドビの従業員からの変更修正依頼は処理が容易で、会社のレポジトリで迅速に承認できます。機密情報は、会社のレポジトリでのみ議論します。
 
+## その他の情報
 
-## ツールとセットアップ
-
-コミュニティ投稿者は、GitHub UI を使用して簡単な編集をおこなったり、リポジトリをフォークして大規模な投稿をおこなったりできます。
-
-<!--
-If you are an Adobe employee and have a contribution, please use the `AdobeDocs` org in the corporate git.
-We of course are happy for any contribution and will review your contribution if it is made on the public repository, however pull requests from Adobe employees are easier to process and can be approved faster on the corporate repo. Please make sure that any proprietary information is only discussed on the corporate repo.
----master
--->
-
-See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html) for an overview of how to use the GitHub authoring platform.
-
-## Markdown を使用してトピックを書式設定する方法
-
-このリポジトリ内のすべての記事は、GitHub フレーバーな Markdown を使用しています。Markdown に馴染みがない場合は、以下を参照してください。
-
-* [マークダウンの基礎知識](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [印刷可能なマークダウンチートシート](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## ラベル
-
-公開リポジトリでは、アドビがプル要求のワークフローを管理したり、プル要求の状況を寄稿者が把握できるようにしたりするために、プル要求に自動ラベルが割り当てられます。
-
-* **Change sent to author**：保留中のプル要求について作成者に通知されました。
-* **ready-to-merge**：プル要求レビューチームによるレビューの準備ができました。
+GitHub オーサリングプラットフォームの使用方法の詳細については、[アドビドキュメント寄稿者ガイド](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)を参照してください。
