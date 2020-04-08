@@ -2,7 +2,7 @@
 title: リリース2020.3.0のリリースノート
 description: リリース2020.3.0のリリースノート
 translation-type: tm+mt
-source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
+source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
 
 ---
 
@@ -11,11 +11,14 @@ source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 次の節では、Experience Managerのクラウドサービス2020.3.0の一般的なリリースノートの概要を説明します。
 
+
+## リリース日 {#release-date}
+
+Experience Managerのクラウドサービス2020.3.0のリリース日は2020年3月6日です。
+
 ## Cloud Manager {#cloud-manager}
 
-Cloud Managerリリース2020.3.0のリリース日は2020年3月6日です。
-
-この節では、Cloud Managerリリース2020.3.0の新機能と更新点について説明します。
+この節では、AEMのクラウドサービスリリース2020.3.0としてのCloud Managerの新機能と更新点について説明します。
 
 ### 最新情報 {#what-is-new}
 
