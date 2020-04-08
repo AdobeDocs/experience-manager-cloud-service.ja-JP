@@ -3,7 +3,7 @@ title: Brand Portalへのアセット、フォルダーおよびコレクショ�
 description: アセット、フォルダーおよびコレクションをBrand Portalに公開します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4194f089f87deeb62095703614947a295235edbf
+source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
 
 ---
 
@@ -21,7 +21,9 @@ AEM Assetsで元のアセット、フォルダーまたはコレクションに�
 * [Brand Portal へのコレクションの公開](#publish-collections-to-brand-portal)
 
 >[!NOTE]
->>アドビでは、AEMの作成者が余分なリソースを占有しないように、なるべくピークでない時間帯に、段階的なパブリッシングを推奨します。>
+>
+>AEM オーサーが過剰なリソースを占有しないように、できればピーク時を避け、時間をずらして公開することをお勧めします。
+
 
 ## Brand Portal へのアセットの公開 {#publish-assets-to-bp}
 
