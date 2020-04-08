@@ -2,14 +2,14 @@
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
 # ページへのワークフローの適用 {#applying-workflows-to-pages}
 
-オーサリング時に、ワークフローを呼び出して、ページ上でアクションを実行できます。複数のワークフローを適用することもできます。
+オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
 
 ワークフローを適用する際には、次の情報を指定します。
 
@@ -25,12 +25,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->関連トピック:
+>関連トピック：
 >
->* DAM アセットにワークフローを適用する方法.
+>* DAM アセットにワークフローを適用する方法
 >* [プロジェクトワークフローの操作](/help/sites-cloud/authoring/projects/workflows.md)
 
-<!--
+
+<!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
 >* [Working with Project Workflows](/help/sites-cloud/authoring/projects/workflows.md).
 -->
@@ -38,7 +39,8 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >[!NOTE]
 >
 >AEM 管理者は他のいくつかの方法を使用してワークフローを開始できます。
-<!--
+
+<!-- 
 >AEM administrators can [start workflows using several other methods](/help/sites-administering/workflows-starting.md).
 -->
 
@@ -55,13 +57,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### サイトツールバーからのワークフローの開始 {#starting-a-workflow-from-the-sites-toolbar}
 
-You can start a workflow from the toolbar of the **Sites** console:
+**サイト**&#x200B;コンソールのツールバーからワークフローを開始できます。
 
 1. 必要なページに移動して選択します。
 
-1. From the **Create** option in the toolbar you can now select **Workflow**.
+1. これでツールバーの「**作成**」オプションで「**ワークフロー**」を選択できます。
 
-   ![ツールバーからワークフローを作成する](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
+   ![ツールバーからのワークフローの作成](/help/sites-cloud/authoring/assets/workflows-create-from-toolbar.png)
 
 1. **ワークフローの作成**&#x200B;ウィザードは、[ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard)するために役立ちます。
 
@@ -69,8 +71,8 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 **タイムライン**&#x200B;から、選択したリソースに適用されるワークフローを開始できます。
 
-1. [リソースを選択し](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) 、「 [Timeline](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 」を開きます（または、「Timeline」を開いて、リソースを選択します）。
-1. コメントフィールドの横にある矢印を使用すると、**「ワークフローを開始」**&#x200B;が表示されます。
+1. [リソースを選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)し、[タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)を開きます（またはタイムラインを開いてからリソースを選択します）。
+1. コメントフィールドの横にある矢印を使用すると、「**ワークフローを開始**」が表示されます。
 
    ![タイムラインからのワークフローの作成](/help/sites-cloud/authoring/assets/workflows-create-from-timeline.png)
 
@@ -102,17 +104,18 @@ You can start a workflow from the toolbar of the **Sites** console:
    >[!NOTE]
    >
    >ワークフローがマルチリソースサポートのために設定されており、複数のリソースが選択されている場合は、**ワークフローパッケージを維持**&#x200B;オプションが使用できます。
+
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
    -->
 
    完了したら、「**次へ**」を使用して続行します。
 
-   ![ワークフローのプロパティの指定](/help/sites-cloud/authoring/assets/workflows-properties.png)
+   ![ワークフロープロパティの指定](/help/sites-cloud/authoring/assets/workflows-properties.png)
 
 1. **スコープ**&#x200B;ステップで、以下のものを選択できます。
 
-   * **「コンテンツを追加** 」をクリックしてパ [スブラウザーを開き](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) 、追加のリソースを選択します。ブラウザーで「選択」をクリックまたはタップし **て** 、コンテンツをワークフローインスタンスに追加します。
+   * 「**コンテンツを追加**」で[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)を開き、追加リソースを選択します。ブラウザーでは、「**選択**」をクリックまたはタップして、コンテンツをワークフローインスタンスに追加します。
 
    * 追加のアクションを表示するための既存のリソース
 
@@ -130,7 +133,7 @@ You can start a workflow from the toolbar of the **Sites** console:
    >
    >追加リソースを追加する場合は、「**戻る**」を使用して、**プロパティ**&#x200B;ステップで「**ワークフローパッケージを維持**」の設定を調整できます。
 
-1. Use **Create** to close the wizard and create the workflow instance. 通知はサイトコンソールに表示されます。
+1. 「**作成**」を使用して、ウィザードを閉じ、ワークフローインスタンスを作成します。通知はサイトコンソールに表示されます。
 
 ## ページエディターからのワークフローの開始 {#starting-a-workflow-from-the-page-editor}
 
