@@ -1,8 +1,8 @@
 ---
 title: コンテンツの検索とインデックス作成
-description: 'コンテンツの検索とインデックス作成 '
+description: コンテンツの検索とインデックス作成
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -39,7 +39,7 @@ AEM 6.5以前のリストと比較した主な変更点を次に示します。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings. 
+AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
 
 AS NOTE: the above is internal for now.
 
@@ -69,7 +69,7 @@ AS NOTE: the above is internal for now.
 
 ### 索引定義の配置 {#deploying-index-definitions}
 
-> [!NOTE]
+>[!NOTE]
 >
 > Jackrabbit Filevault Mavenパッケージプラグインのバージョン **1.1.0には既知の問題があり** 、のモジュールに追加できな `oak:index` い問題があります `<packageType>application</packageType>`。 この問題に対処するには、バージョン1.0.4 **を使用してください**。
 
@@ -118,7 +118,8 @@ AS NOTE: the above is internal for now.
 次の表に、5つのインデックス定義を示します。indexは両方 `cqPageLucene` のバージョンで使用され、indexはバ `damAssetLucene-custom-1` ージョン2でのみ使用されます。
 
 
-> [!NOTE]
+>[!NOTE]
+>
 > `<indexName>-custom-<customerVersionNumber>` が必要です。
 
 | 索引 | 既製のインデックス | バージョン1で使用 | バージョン2で使用 |
