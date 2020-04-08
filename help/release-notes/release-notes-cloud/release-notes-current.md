@@ -1,38 +1,45 @@
 ---
-title: リリース2020.4.0のリリースノート
-description: リリース2020.4.0のリリースノート
+title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
+description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
+source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
 
 ---
 
 
-# Release Notes for AEM as a Cloud Service 2020.4.0 {#release-notes}
+# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
 
-次の節では、Experience Managerのクラウドサービス2020.4.0の一般的なリリースノートの概要を説明します。
+次の節では、クラウドサービス2020.4.0 [!DNL Experience Manager] の一般的なリリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
-Experience Managerのクラウドサービス2020.4.0のリリース日は2020年4月10日です。
+クラウドサー [!DNL Experience Manager] ビス2020.4.0のリリース日は2020年4月9日です。
 
-## アセット {#assets}
+## What&#39;s New in Assets {#assets}
 
-この節では、AEMのクラウドサービスリリース2020.4.0としてのExperience Manager Assetsとダイナミックメディアの新機能および更新点について説明します。
+および現在のリリースの新機能、機能強化、バグ修正に [!DNL Experience Manager Assets] つい [!DNL Dynamic Media] て詳しく説明します。
 
-### 最新情報 {#assets-what-is-new}
+* [Brand Portalは](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 、Experience Manager Assetsのアセット配布の使用例をサポートします。 [!DNL Brand Portal] は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などに安全に配布してマーケティングニーズに応えるうえで役に立ちます。
+   * [!DNL Brand Portal] 設定は、コンソールを通じて行 [!DNL Adobe I/O] われます。
+   * でのアセットソーシ [!DNL Brand Portal] ングは、Experience Managerをクラウドサ [!DNLEービスとして使用する場合] 、まだサポートされていません。
 
-* [Brand Portalは](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 、AEMのクラウドサービスアセットとして利用でき、アセットの配布の使用例をサポートします。 Brand Portal は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などにダウンロードで安全に配布してマーケティングニーズに応えるうえで役に立ちます。
-   * Brand Portalの設定は、Adobe I/Oコンソールを通じて行われます。
-   * Brand Portalでのアセットソーシングは、AEMをクラウドサービスとして使用する場合はまだサポートされていません
-* Adobe Asset Link [](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) 2.0の新しいリリースは、AEMをクラウドサービスとして使用できます。 Adobe Asset Linkは、AEM Assetsをアプリ内アセットリンクパネルを使用してPhotoshop、IllustratorおよびInDesignのCreative Cloudデスクトップアプリケーションと接続することで、コンテンツ作成プロセスのクリエイティブとマーケティング担当者とのコラボレーションを効率化します。
-   * クラウドサービスとしてのAEMは、Adobe Asset Link用に事前に設定されているので、設定がシンプル [になります](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)。
-   * アセットリンクで [AEM環境切り替え機能がサポートされ](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)、クリエイティブユーザーが様々なAEM環境（例：AEM Assetsを使用して複数のクライアントを使用するエージェンシーデザイナーの場合）に簡単に接続できるようになりました。
-* 後処理ワークフロー [の自動開始は](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) 、特定のフォルダ階層のフォルダプロパティUIで設定できます。
-   * フォルダのプロパティUIがシンプル化され、新しい「アセット処理」タブにメタデータプロファイル、処理プロファイル、新しい自動開始ワークフローの設定が追加されました。
-* アセットの再処理ダイアログでは、特定の処理プロファイルを選択し、サブフォルダーで再処理を決定できます。
-* ダイナミックメディア：一部のみの発行の設定が追加され、アセットは安全なプレビューのためにのみ自動公開され、パブリックドメインの配信用にDMS7に公開することなく、AEMに明示的に公開できるようになりました。
+* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v2.0は、クラウドサービスと [!DNL Experience Manager] して機能します。 [!DNL Adobe Asset Link] デスクトップアプリ、アプリ内パネルを使用して、コンテンツ作成プロセスでのクリエイティブとマーケ [!DNL Experience Manager Assets] ターのコラボレ [!DNL Creative Cloud] ーションを [!DNL Adobe Photoshop]効率化し、デス [!DNL Adobe Illustrator]クトップアプリとの連携を [!DNL Adobe InDesign] 実現し [!DNL Asset Link] ます。
+   * [!DNL Experience Manager] はに事前設定されており、 [!DNL Adobe Asset Link]設定が簡単で、ク [リエイティブな](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) 専門家に対する展開が速くなります。
+   * [!DNL Asset Link] クリエイティブユーザーが [別の環境に簡単に接続できる](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 、 [!DNL Experience Manager] Experience Managerの環境切り替えボタンをサポートするようになりました。 この機能が役立つのは、異なるデプロイメントを使用して複数のクライアントを扱うエージェンシーデザイナーの [!DNL Experience Manager Assets] 場合です。
 
-### バグ修正  {#assets-bug-fixes}
+* ユーザーは、特定のフ [ォルダー階層のフォルダー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) Propertiesユーザーインターフェイスで、後処理ワークフローを自動 [!UICONTROL 開始に設定できます] 。
+   * フォルダのプロ [!UICONTROL パティ] (Properties  )のユーザーインターフェイスがシンプルになり、新しい「アセット処理」タブにメタデータプロファイル、処理プロファイル、新しい自動開始ワークフローの設定が追加されました。
+   * アセットの再処理ダイアログでは、特定の処理プロファイルを選択し、サブフォルダーで再処理を決定できます。
+   * [!DNL Dynamic Media]:アセットをセキュリティで保護されたプレビューのみのために自動公開するように、選択的公開設定を追加。 また、パブリックドメイン内の配信用にDMS7に公開することなく、アセットをExperience Managerに明示的に公開できます。
 
-* アセット処理の修正点
-* ダイナミックメディアの設定とダイナミックメディア配信サービスへのアセットの公開に関する修正
+* 次の問題に対処しました。
+   * アセットの処理に関する問題を修正しました。
+   * アセットの設定 [!DNL Dynamic Media] と公開に関する修正を [!DNL Dynamic Media] 配信サービスに
+
+>[!MORELIKETHIS]
+>
+>* [Adobe Assetリンクについて](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [ブランドポータルの設定](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Experience Managerを設定して、アセットリンクを使用する](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [アセットのマイクロサービスを使用して、Experience Managerでワークフローを作成する](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+
