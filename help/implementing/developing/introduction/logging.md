@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 73813dd87e3eebfe26673640125ea64916e14789
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -122,13 +122,13 @@ For local development, logs entries are written to local files in the `/crx-quic
 
 クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座にはおこなわれないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
 
-> [!NOTE]
-> 
+>[!NOTE]
+>
 > 以下に示す設定の変更を実行するには、ローカルの開発環境で設定の変更を作成し、それらをクラウドサービスインスタンスとしてAEMにプッシュする必要があります。 この方法について詳しくは、「クラウドサービスとしてのAEM [へのデプロイ」を参照してください](/help/implementing/deploying/overview.md)。
 
 ### デバッグログレベルのアクティベート {#activating-the-debug-log-level}
 
-> [!WARNING]
+>[!WARNING]
 >
 > DEBUGログレベルをグローバルにアクティブ化すると、大量の情報が生成され、情報の切り替えが難しくなります。 デバッグが必要なサービスに対してのみ有効にすることをお勧めします。 詳しくは、個々のサービスのロ [ガーとライターを参照してください](logging.md#loggers-and-writers-for-individual-services)。
 
