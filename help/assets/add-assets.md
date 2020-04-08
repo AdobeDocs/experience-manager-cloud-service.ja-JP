@@ -2,7 +2,7 @@
 title: Adobe Experience Manager へのデジタルアセットの追加
 description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 アップロードしたアセットに対して追加の処理をおこなうように選択することもできます。アセットのアップロード先のフォルダーに様々なアセット処理プロファイルを設定して、特定のメタデータ、レンディションまたは画像処理サービスを追加することができます。詳しくは、この後の[追加処理](#additional-processing)を参照してください。
 
-> [!NOTE]
+>[!NOTE]
 >
 > Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。この方法は、AEM ユーザーインターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションなどの標準の製品機能やクライアントでデフォルトでサポートされているので、エンドユーザーがそれを意識することはありません。
 >
@@ -75,7 +75,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 さらに、Assets ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
 
-> [!NOTE]
+>[!NOTE]
 >
 > ネストされたフォルダ階層をAEMにアップロードする方法については、アセットの [一括アップロードを参照してくださ](#bulk-upload)い。
 
@@ -130,7 +130,7 @@ AEM Assets では、ファイル名に禁止文字が含まれるアセットを
 * [アセットアップロード API](developer-reference-material-apis.md#asset-upload-technical) を利用するカスタムアップロードスクリプトまたはツールを使用する。このようなカスタムツールでは、必要に応じて、アセットの処理（メタデータの翻訳やファイル名の変更など）を追加できます。
 * [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html)を使用して、ネストされたフォルダー階層をアップロードする。
 
-> [!NOTE]
+>[!NOTE]
 >
 > セットアップした Adobe Experience Manager にデプロイする際に、他のシステムからのコンテンツ移行の一環として一括アップロードをおこなう場合は、使用するツールの入念な計画、検討、選択が必要です。コンテンツ移行方法のガイダンスについては、[デプロイメントガイド](/help/implementing/deploying/overview.md)を参照してください。
 
@@ -157,7 +157,7 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 * [画像プロファイル](dynamic-media/image-profiles.md)：アップロードしたアセットに特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;とピクセル切り抜き）設定やシャープ設定を適用できます。
 * [ビデオプロファイル](dynamic-media/video-profiles.md)：特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
 
-> [!NOTE]
+>[!NOTE]
 >
 > アセットに対する Dynamic Media の切り抜きなどの操作は非破壊的です。つまり、アップロードした元の内容は変更されず、代わりに、アセットの配信時におこなわれる切り抜きやメディア変換のパラメーターが提供されます。
 
