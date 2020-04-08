@@ -2,7 +2,7 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
@@ -104,6 +104,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    >例えば、`/content/we-retail/spanish` ノードに `latin-lang` というエイリアスを定義した場合、このページは `/content/we-retail/latin-language` でアクセスできます。
    >
    >詳しくは、「SEO と URL 管理のベストプラクティス」の「ページ名のローカライズ」を参照してください。
+
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
@@ -170,13 +171,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **クラウドサービス**
 
-   * クラウドサービスのプロパティを定義します。<!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).-->
+   * クラウドサービスのプロパティを定義します。
+   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
+  -->
 
 ### パーソナライゼーション {#personalization}
 
 * **ContextHub 設定**
 
-   * 「ContextHub 設定」と「セグメントのパス」を選択します。<!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).-->
+   * 「ContextHub 設定」と「セグメントのパス」を選択します。
+   <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
+  -->
 
 * **ターゲティング設定**
 
@@ -188,16 +193,24 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 * **権限**
 
-   * 権限を追加 <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-   * 閉じられたユーザーグループを編集 <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-   * 有効な権限を表示 <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * 権限を追加
+   * 閉じられたユーザーグループを編集
+   * 有効な権限を表示
+   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
+
+   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
+
+   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
 
 ### ブループリント {#blueprint}
 
 * **ブループリント**
 
-   * マルチサイト管理でのブループリントページのプロパティを定義します。<!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+   * マルチサイト管理でのブループリントページのプロパティを定義します。
+   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
+
    * 変更がライブコピーに適用される条件を制御します。
+
 
 ### ライブコピー {#live-copy}
 
@@ -252,6 +265,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >プロパティの一括編集はアセットに対しても使用できます。操作はよく似ていますが、次の点が異なります。詳しくは、複数のアセットのプロパティの編集を参照してください。
 >
 >また、バルクエディターも用意されています。このエディターでは、GQL（Google Query Language）を使用して、複数のページからコンテンツを検索できます。コンテンツをバルクエディターで直接編集してから、変更を元のページに保存できます。
+
 <!--
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
 >
@@ -299,6 +313,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >
 >ページコンポーネントを設定して、一括編集が可能なフィールドを指定できます。ページプロパティの一括編集のためのページの設定を参照してください。
+
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
 -->
