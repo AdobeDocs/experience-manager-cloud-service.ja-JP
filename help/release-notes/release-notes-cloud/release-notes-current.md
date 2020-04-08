@@ -2,7 +2,7 @@
 title: リリース2020.4.0のリリースノート
 description: リリース2020.4.0のリリースノート
 translation-type: tm+mt
-source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
+source-git-commit: c6c0e93d881762a2b501abb3d8c8356046a5f082
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 77163877bea36f854ac8ea6fbc78cbcf4d58ccc0
 # Release Notes for AEM as a Cloud Service 2020.4.0 {#release-notes}
 
 次の節では、Experience Managerのクラウドサービス2020.4.0の一般的なリリースノートの概要を説明します。
+
+## リリース日 {#release-date}
+
+Experience Managerのクラウドサービス2020.4.0のリリース日は2020年4月10日です。
 
 ## アセット {#assets}
 
