@@ -2,7 +2,7 @@
 title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
 description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: b05fe7e9150649b49fc5dae2e33955afc6a1acab
+source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 
 ---
 
