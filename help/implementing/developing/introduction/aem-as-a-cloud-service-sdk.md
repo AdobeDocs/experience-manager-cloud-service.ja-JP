@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の SDK
 description: 作成中
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
 
 ---
 
@@ -56,7 +56,7 @@ AEM as a Cloud Service SDK は、次のアーティファクトで構成され�
 </repository>
 ```
 
-## 新しい SDK バージョンでのローカルプロジェクトの更新 {#refreshing-a-local-prokect-with-a-new-skd-version}
+## 新しい SDK バージョンでのローカルプロジェクトの更新 {#refreshing-a-local-project-with-a-new-skd-version}
 
 新しい SDK でローカルプロジェクトを更新するとよいのはいつでしょうか。
 
@@ -92,5 +92,5 @@ SDK を頻繁に（例えば、隔週など）更新し、完全なローカル�
 
 * ローカルの quickstart.jar を初めて起動する場合は、「`-Dcom.adobe.granite.crypto.file.disable=true`」というパラメーターを必ず追加します。常に追加することをお勧めしますが、あくまでオプションです。
 * インスタンスを初めて起動したときに、ルート「`/etc/key`」のフィルターを含んだパッケージを作成します。ここには、対象となるすべての環境で再利用される秘密鍵が格納されます。
-* 秘密鍵を含んだ可変コンテンツを書き出すか、暗号化された値を `/crx/de` から参照して、すべてのインストールで再利用されるパッケージに追加します。
+* Export any mutable content containing secrets, or look up the encrypted values via `/crx/de` to add it to the package that will be reused across installations
 * （新しいバージョンに置き換えるために、または複数の開発環境でテスト用の認証情報を共有する必要があるので）新しいインスタンスをセットアップする場合は、手動で再設定しなくてもコンテンツを再利用できるように、手順 2 および 3 で生成したパッケージをインストールします。これは、暗号鍵が同期するようになったからです。
