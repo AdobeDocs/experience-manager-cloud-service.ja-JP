@@ -2,7 +2,7 @@
 title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
 description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
+source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 ---
 
@@ -32,9 +32,10 @@ source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
    * アセットの再処理ダイアログでは、特定の処理プロファイルを選択し、サブフォルダーで再処理を決定できます。
    * [!DNL Dynamic Media]:アセットをセキュリティで保護されたプレビューのみのために自動公開するように、選択的公開設定を追加。 また、パブリックドメイン内の配信用にDMS7に公開することなく、アセットをExperience Managerに明示的に公開できます。
 
-* 次の問題に対処しました。
-   * アセットの処理に関する問題を修正しました。
-   * アセットの設定 [!DNL Dynamic Media] と公開に関する修正を [!DNL Dynamic Media] 配信サービスに
+### バグ修正 {#assets-bug-fixes}
+
+* アセットの処理に関する問題を修正しました。
+* アセットの設定 [!DNL Dynamic Media] と公開に関する修正を [!DNL Dynamic Media] 配信サービスに
 
 >[!MORELIKETHIS]
 >
