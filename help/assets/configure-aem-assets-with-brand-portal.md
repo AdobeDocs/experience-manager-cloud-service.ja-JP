@@ -3,7 +3,7 @@ title: Brand PortalでのAEM Assetsクラウドサービスの設定
 description: Brand PortalでAEM Assetsクラウドサービスを設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
+source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
 
 ---
 
@@ -48,7 +48,7 @@ IMS設定には、次の2つの手順が含まれます。
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. ツー **ル** / ![Security](assets/tools.png) / **[!UICONTROL Adobe]** IMS Configurationsに移動し ****&#x200B;ます。
+1. ツー **ル**![/](assets/tools.png)**[!UICONTROL Security/]****[!UICONTROL Adobe IMS Configurations]**&#x200B;に移動します。
 
    ![Adobe IMSアカウント設定UI](assets/ims-configuration1.png)
 
@@ -163,7 +163,7 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. ツール **ツー** ル ![](assets/tools.png) ・パネルで、 **[!UICONTROL Cloud Services/AEM Brand Portalに移動します]**。
+1. **Cloud** ![Services](assets/tools.png) / **** AA Brand Portal Tools( **** AEMブランドポータルツール)に移動します。
 
    ブランドポータル設定ページが開きます。
 
@@ -217,7 +217,7 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
    >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
 
 
-AEM AssetsクラウドインスタンスでBrand Portalが正常に設定されると、次のことができます。
+AEM AssetsクラウドインスタンスがBrand Portalで正常に設定され、次の操作が可能になりました。
 
 * [AEM AssetsからBrand Portalへのアセットの公開](publish-to-brand-portal.md)
 * [AEM AssetsからBrand Portalへのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
@@ -262,7 +262,9 @@ See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experie
 上記の例では、追加のリクエストと応答がトリガーされます。 アセットが初めて発行されたので、Brand Portalで親フォルダ(追加「パス」)が見つかりませんでした。そのため、アセットが発行されたBrand Portalで同じ名前の親フォルダを作成する追加の要求をトリガーします。
 
 >[!NOTE]
->>親フォルダーがBrand Portalに存在しない場合（上の例）、または親フォルダーがAEM Assetsで変更された場合に、追加のリクエストが生成されます。>
+>
+>親フォルダーがBrand Portalに存在しない場合（上の例）、または親フォルダーがAEM Assetsで変更された場合に、追加のリクエストが生成されます。
+
 
 ## 追加情報 {#additional-information}
 
