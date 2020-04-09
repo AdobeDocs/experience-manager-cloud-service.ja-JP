@@ -2,7 +2,7 @@
 title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
 description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
+source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 49137535f4f6a6b62e697de6a7a9934f5b861bbc
 
 * [Brand Portalは](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 、Experience Manager Assetsのアセット配布の使用例をサポートします。 [!DNL Brand Portal] は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などに安全に配布してマーケティングニーズに応えるうえで役に立ちます。
    * [!DNL Brand Portal] 設定は、コンソールを通じて行 [!DNL Adobe I/O] われます。
-   * でのアセットソーシ [!DNL Brand Portal] ングは、Experience Managerをクラウドサ [!DNLEービスとして使用する場合] 、まだサポートされていません。
+   * でのアセットソーシ [!DNL Brand Portal] ングは、クラウドサービスとし [!DNL Experience Manager] てまだサポートされていません。
 
 * [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v2.0は、クラウドサービスと [!DNL Experience Manager] して機能します。 [!DNL Adobe Asset Link] デスクトップアプリ、アプリ内パネルを使用して、コンテンツ作成プロセスでのクリエイティブとマーケ [!DNL Experience Manager Assets] ターのコラボレ [!DNL Creative Cloud] ーションを [!DNL Adobe Photoshop]効率化し、デス [!DNL Adobe Illustrator]クトップアプリとの連携を [!DNL Adobe InDesign] 実現し [!DNL Asset Link] ます。
    * [!DNL Experience Manager] はに事前設定されており、 [!DNL Adobe Asset Link]設定が簡単で、ク [リエイティブな](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) 専門家に対する展開が速くなります。
