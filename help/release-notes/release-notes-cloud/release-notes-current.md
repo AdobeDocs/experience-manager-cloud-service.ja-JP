@@ -2,7 +2,7 @@
 title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
 description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
+source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 
 ---
 
@@ -43,3 +43,25 @@ source-git-commit: 57df03fe198564a6c02e54e19ef059e46064d163
 >* [Experience Managerを設定して、アセットリンクを使用する](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [アセットのマイクロサービスを使用して、Experience Managerでワークフローを作成する](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
+
+## Cloud Managerのアップデート {#cloud-manager}
+
+## Cloud Managerの新機能 {#whats-new-cloud-manager}
+
+* 投稿者のURLが、Cloud Manager UIの環境ページから利用できるようになりました。
+* ナビゲーションが変更され、Cloud Managerの概要ページでユーザーがプログラムを編集、切り替えまたは追加できるようになりました。
+* ユーザーがCloud Managerプログラムのプログラムカードからユーザーを編集できるように変更しました。
+* 関連付けられたパイプラ **インに対して** 、新しいパイプラインステータス「実行中」(Pipeline Running)が表示されます。
+* パイプライン実行ページの可読性を改善。 これには、パイプライン名（非実稼動パイプラインのみ）とタイプの表示、およびパイプラインのステータスが「処理中」、「キャンセル」、「失敗」のいずれであるかを示すバッジが含まれます。
+* ユーザーエクスペリエンスを向上させ、プログラム/環境ボタンが無効にな追加る理由を理解しやすくするためのツールヒント。
+* 失敗した環境は、UIとAPIを使用して削除できるようになりました。
+* gitパスワードの生成に使用されるプロセスは、基盤となるサービス層の問題に対してより柔軟に対処できるようになりました。
+
+## バグ修正 {#bug-fixes-cloud-manager}
+
+* パイプライン実行の詳細ページのステージ環境へのリンクが、一貫して正しい場所に移動していなかった問題を修正しました。
+* 環境作成プロセス内の個々のステップが、必要な時間より早くタイムアウトし、プロセスが失敗する。
+* アーティファクトのメタデータをダウンロードする際のデッドロックを回避するため、ビルドコンテナで使用されるMavenの設定が更新されました。
+* 場合によっては、イメージのビルド手順で顧客パッケージを正常にダウンロードできないことがあります。
+* 発生頻度の低い状況によっては、環境の削除が妨げられる場合があります。
+* Experience Cloudの通知が一貫して受信されなかった問題を修正しました。
