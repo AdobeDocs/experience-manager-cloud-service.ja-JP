@@ -2,7 +2,7 @@
 title: クラウドサービスとしてのAdobe Experience ManagerとWebアクセシビリティのガイドライン
 seo-title: クラウドサービスとしてのAdobe Experience ManagerとWebアクセシビリティのガイドライン
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -27,7 +27,7 @@ AEMをクラウドサービスとして使用して、アクセシブルなWeb�
 
 [World Wide Web Consortium（W3C）](https://www.w3.org/)は、Web 標準の策定を専門とする国際コミュニティです。Their [Web Accessibility Initiative(WAI)は、Webコンテンツのアクセシビリティ](https://www.w3.org/WAI/) に関するガイドラ [インを公開しています](#wcag-accessibility-guidelines)。
 
-## WCAG 2.1 Webコンテンツのアクセシビリティガイドライン {#wcag-accessibility-guideslines}
+## Webコンテンツアクセシビリティガイドライン(WCAG) 2.1 {#wcag-accessibility-guideslines}
 
 Webデザイナーや開発者がアクセシブルなWebサイトを作成できるように、 [Web Accessibility Initiative](https://www.w3.org/WAI/) (WAI)は [2018年6月にWeb Content Accessibility Guidelines(WCAG)2.1](https://www.w3.org/TR/WCAG/) （英語のみ）を発行しました。
 
