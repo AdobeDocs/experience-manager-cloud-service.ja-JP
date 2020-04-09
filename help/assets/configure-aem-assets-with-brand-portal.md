@@ -3,7 +3,7 @@ title: Brand PortalでのAEM Assetsクラウドサービスの設定
 description: Brand PortalでAEM Assetsクラウドサービスを設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -204,8 +204,6 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
    配布エージェントには、次の2つのキューが含まれます。
    * Brand Portalにアセットを配布するための処理キュー。
    * 配布が失敗したアセットのエラーキュー。
-   個々のキューまたは設定全体をテストできます。
-
    ![](assets/test-bpconfig3.png)
 
 1. AEM AssetsとBrand Portalの間の接続を確認するには、「接続をテスト」をク **[!UICONTROL リックします]**。
@@ -218,11 +216,20 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
    >
    >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
 
-Brand Portalは、AEM Assetsクラウドインスタンスで正常に設定されました。 次の操作が可能になりました。
+
+AEM AssetsクラウドインスタンスでBrand Portalが正常に設定されると、次のことができます。
 
 * [AEM AssetsからBrand Portalへのアセットの公開](publish-to-brand-portal.md)
 * [AEM AssetsからBrand Portalへのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assetsからブランドポータルにコレクションを公開する](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+
+上記に加えて、AEM Assetsのメタデータスキーマ、画像プリセット、検索ファセット、タグをBrand Portalに公開することもできます。
+
+* [Brand Portalへのプリセット、スキーマおよびファセットの公開](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 ## 配布ログ {#distribution-logs}
@@ -233,7 +240,7 @@ Brand Portalは、AEM Assetsクラウドインスタンスで正常に設定さ�
 
 1. 「接続のテスト」に示す手順（手順1 ～ 4）に従 **[!UICONTROL い]** 、配布エージェントページに移動します。
 
-1. 配布キュー **[!UICONTROL queue-bpdistributionagent0を選択し、]** 「 **[!UICONTROL Logs]** 」をクリックして配布ログを表示します。
+1. [ログ **** ]をクリックして、配布ログを表示します。 処理ログとエラーログは、ここで確認できます。
 
    ![](assets/test-bpconfig5.png)
 
@@ -254,12 +261,8 @@ Brand Portalは、AEM Assetsクラウドインスタンスで正常に設定さ�
 
 上記の例では、追加のリクエストと応答がトリガーされます。 アセットが初めて発行されたので、Brand Portalで親フォルダ(追加「パス」)が見つかりませんでした。そのため、アセットが発行されたBrand Portalで同じ名前の親フォルダを作成する追加の要求をトリガーします。
 
-同じ名前の親フォルダーが存在する場合(パ追加ス)がBrand Portalで表示され、追加のリクエストはトリガーされません。
-
 >[!NOTE]
->
->エラーログを表示するには、配布キュー **[!UICONTROL error-queue-bpdistributionagent0を選択し]** 、「 **[!UICONTROL Logs]**」をクリックします。
-
+>>親フォルダーがBrand Portalに存在しない場合（上の例）、または親フォルダーがAEM Assetsで変更された場合に、追加のリクエストが生成されます。>
 
 ## 追加情報 {#additional-information}
 
@@ -274,6 +277,7 @@ Brand Portalは、AEM Assetsクラウドインスタンスで正常に設定さ�
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
+
 
 
 <!--
