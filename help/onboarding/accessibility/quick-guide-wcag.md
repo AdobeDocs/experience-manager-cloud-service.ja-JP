@@ -2,7 +2,7 @@
 title: WCAG 2.1のクイックガイド
 seo-title: WCAG 2.1のクイックガイド
 translation-type: tm+mt
-source-git-commit: 11f0509334ebe4456612789fd415a3099687dc64
+source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 ---
 
@@ -87,7 +87,7 @@ WCAG 2.1 は不変のドキュメントであり、変更されることはあ�
 
 [WCAG 2.1の新機能は](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 、WCAGと2.0およびWCAG 2.1の差に関する貴重な情報を提供します。
 
-[WCAG 2.0および2.1は](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 、関係の状況をさらに明確にします。
+WCAG 2.0お [よび2.1の節では](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 、関係の状況をさらに明確にします。
 
 ### WCAG 2.1 の各種テクニック {#techniques-for-wcag}
 
