@@ -3,7 +3,7 @@ title: Brand Portalへのアセット、フォルダーおよびコレクショ�
 description: アセット、フォルダーおよびコレクションをBrand Portalに公開します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: c2088896eacfc1f0e4c5b7a1f566ce3c8f99388b
+source-git-commit: 9d37fdae4445d0ccbdd6f800fc3ad4cbeec971fe
 
 ---
 
@@ -221,8 +221,13 @@ AEM Assetsインスタンスから公開を取り消すことで、Brand Portal�
 1. In the dialog, click **[!UICONTROL Unpublish]**.
 1. 確認メッセージを閉じます。コレクションがBrand Portalインターフェイスから削除されます。
 
-エンドユーザ [ーへのアセット、フォルダ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 、コレクションの配布について詳しくは、Brand Portalのドキュメントを参照してください。
+上記に加えて、AEM Assetsのメタデータスキーマ、画像プリセット、検索ファセット、タグをBrand Portalに公開することもできます。
 
+* [Brand Portalへのプリセット、スキーマおよびファセットの公開](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+
+See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
 
 <!--
