@@ -2,7 +2,7 @@
 title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
 description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
+source-git-commit: 85079ad7ef660a3282540e2cad744fc6d65ad512
 
 ---
 
@@ -44,8 +44,6 @@ source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 >* [アセットのマイクロサービスを使用して、Experience Managerでワークフローを作成する](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Managerのアップデート {#cloud-manager}
-
 ## Cloud Managerの新機能 {#whats-new-cloud-manager}
 
 * 投稿者のURLが、Cloud Manager UIの環境ページから利用できるようになりました。
@@ -57,7 +55,7 @@ source-git-commit: 031e2de3b3e1d7a5d57dbdaf16a96800927e98f2
 * 失敗した環境は、UIとAPIを使用して削除できるようになりました。
 * gitパスワードの生成に使用されるプロセスは、基盤となるサービス層の問題に対してより柔軟に対処できるようになりました。
 
-## バグ修正 {#bug-fixes-cloud-manager}
+### バグ修正 {#bug-fixes-cloud-manager}
 
 * パイプライン実行の詳細ページのステージ環境へのリンクが、一貫して正しい場所に移動していなかった問題を修正しました。
 * 環境作成プロセス内の個々のステップが、必要な時間より早くタイムアウトし、プロセスが失敗する。
