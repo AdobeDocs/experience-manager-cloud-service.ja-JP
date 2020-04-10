@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
 
 ---
 
@@ -23,25 +23,22 @@ For local development, logs entries are written to local files in the `/crx-quic
 >
 >AEMにクラウドサービスとしてログインする方法は、Slingの原則に基づいています。 詳しくは [Sling Logging](https://sling.apache.org/site/logging.html) を参照してください。
 
-## グローバルログ {#global-logging}
+<!-- ## Global Logging {#global-logging}
 
-[Apache Sling Logging Configurationは](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) 、ルートロガーの設定に使用します。 これは、AEMにクラウドサービスとしてログインするためのグローバル設定を定義します。
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
 
-* ログレベル
-* 主要なログファイルの場所
-* 保存するバージョンの数
-* バージョンのローテーション（最大サイズまたは期間）
-* ログメッセージを書き込むときに使用する形式
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
 
 ## 個々のサービス用のロガーとライター {#loggers-and-writers-for-individual-services}
 
 グローバルログの設定に加え、AEMをクラウドサービスとして使用すると、個々のサービスに対して次のような特定の設定を行うことができます。
 
 * 具体的なログレベル
-* 個々のログファイルの場所
-* 保存するバージョンの数
-* バージョンのローテーション（最大サイズまたは期間）
-* ログメッセージを書き込むときに使用する形式
 * ロガー（ログメッセージを提供する OSGi サービス）
 
 これにより、単一のサービスに関するログメッセージを別個のファイルに送ることができます。これは、開発やテストの際、例えば特定のサービスのログレベルを上げる必要がある場合などに特に便利です。
@@ -156,14 +153,13 @@ For local development, logs entries are written to local files in the `/crx-quic
 
    1. ログファイルを指定します。
    1. ロガーを指定します。
-   1. 必要に応じてその他のパラメーターを設定します。
 
-1. ファクトリ設定の [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) の新しいインスタンスを作成します。
+<!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
 
-   1. ログファイルを指定します。ロガーに指定したものと同じファイルを指定する必要があります。
-   1. 必要に応じてその他のパラメーターを設定します。
+    1. Specify the Log File - this must match that specified for the Logger.
+    1. Configure the other parameters as required. -->
 
-### カスタムログファイルの作成 {#create-a-custom-log-file}
+### ログの設定 {#configure-logging}
 
 >[!NOTE]
 >
@@ -185,130 +181,172 @@ For local development, logs entries are written to local files in the `/crx-quic
    >
    >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
-1. このノードで次のプロパティを設定します。
+<!-- 1. Set the following properties on this node:
 
-   * 名前: `org.apache.sling.commons.log.file`
+    * Name: `org.apache.sling.commons.log.file`
 
-      タイプ：String
+      Type: String
 
-      値：ログファイルの指定例えば、 `logs/myLogFile.log`
+      Value: specify the Log File; for example, `logs/myLogFile.log`
 
-   * 名前: `org.apache.sling.commons.log.names`
+    * Name: `org.apache.sling.commons.log.names`
 
-      タイプ：文字列[] （文字列+複数）
+      Type: String[] (String + Multi)
 
-      値：ロガーがメッセージをログに記録するOSGiサービスを指定する。例えば、次のすべての例を示します。
+      Value: specify the OSGi services for which the Logger is to log messages; for example, all of the following:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
-   * 名前: `org.apache.sling.commons.log.level`
+        * `org.apache.sling`
+        * `org.apache.felix`
+        * `com.day`
 
-      タイプ：String
+    * Name: `org.apache.sling.commons.log.level`
 
-      値：必要なログレベル(、、ま `debug`たは `info``warn` )を指 `error`定します。例えば `debug`
+      Type: String
 
-   * 必要に応じてその他のパラメーターを設定します。
+      Value: specify the log level required ( `debug`, `info`, `warn` or `error`); for example `debug`
 
-      * 名前: `org.apache.sling.commons.log.pattern`
+    * Configure the other parameters as required:
 
-         タイプ: `String`
+        * Name: `org.apache.sling.commons.log.pattern`
 
-         値：必要に応じて、ログメッセージのパターンを指定します。例えば、
+          Type: `String`
 
-         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
-   >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.pattern` では、最大 6 個の引数がサポートされています。
+          Value: specify the pattern of the log message as required; for example,
 
-   >{0}タイプのタイムスタンプ `java.util.Date`
-   >
-   >ログマーカー{1}{2}現在のスレッドの名前{3}ログレベル{4}のロガー名{5}ログメッセージ
-
-   >ログ呼び出しに `Throwable` が含まれている場合は、スタックトレースがメッセージに付加されます。
-
-   >[!CAUTION]
-   org.apache.sling.commons.log.names には値が必要です。
+          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
-   ログライターのパスは、`crx-quickstart` の場所と相対的です。
-   したがって、ログファイルが
-   `logs/thelog.log`
+   >
+   >`org.apache.sling.commons.log.pattern` supports up to six arguments.
 
-   >と指定されている場合、書き込み先は以下となります。
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
-   また、ログファイルが
-   `../logs/thelog.log`
+   >
+   >
+   >{0} The timestamp of type `java.util.Date`
+   >{1} the log marker
+   >{2} the name of the current thread
+   >{3} the name of the logger
+   >{4} the log level
+   >{5} the log message
 
-   >と指定されている場合、書き込み先は以下のディレクトリとなります。
-   ` <*cq-installation-dir*>/logs/`
-&quot;(例： ` `&lt;*cq-installation-dir*>/の横`crx-quickstart/`)
-
-1. この手順は、新しいライターが必要な場合（つまり、デフォルトのライターとは異なる設定の場合）にのみ必要です。
+   >
+   >
+   >If the log call includes a `Throwable` the stacktrace is appended to the message.
 
    >[!CAUTION]
-   新しい Logging Writer Configuration は、既存のデフォルトが適切でない場合にのみ必要です。
+   >
+   >org.apache.sling.commons.log.names must have a value.
 
-   >明示的なライターが設定されていない場合は、デフォルトに基づいて暗黙のライターが自動的に生成されます。
+   >[!NOTE]
+   >
+   >Log writer paths are relative to the `crx-quickstart` location.
+   >
+   >
+   >Therefore, a log file specified as:
+   >
+   >
+   >`logs/thelog.log`
+
+   >
+   >
+   >writes to:
+   >
+   >
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log`.
+   >
+   >
+   >And a log file specified as:
+   >
+   >
+   >`../logs/thelog.log`
+
+   >
+   >
+   >writes to a directory:
+   >
+   >
+   >` <*cq-installation-dir*>/logs/`
+   >``(i.e. next to ` `<*cq-installation-dir*>/`crx-quickstart/`)
+ -->
+
+<!-- open question: see if we need to leave the above warning note in place, but adjust it so that it doesn't mention filenames -->
+
+<!-- 1. This step is only necessary when a new Writer is required (i.e. with a configuration that is different to the default Writer).
+
+   >[!CAUTION]
+   >
+   >A new Logging Writer Configuration is only required when the existing default is not suitable.
+
+   >
+   >
+   >If no explicit Writer is configured the system will automatically generate an implicit Writer based on the default.
 
    Under `/apps/<*project-name*>/config`, create a node for the new `Apache Sling Logging Writer` Configuration:
 
-   * 名前：(こ `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` れは作家なので)
+    * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
 
-      ロガーと同様、は、イン `<*identifier*>` スタンスを識別するために（必須の）入力する自由なテキストに置き換えられます（この情報は省略できません）。 例：`org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). For example, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
-   * タイプ: `sling:OsgiConfig`
+    * Type: `sling:OsgiConfig`
+
    >[!NOTE]
-   Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
+   >
+   >Although not a technical requirement, it is advisable to make `<*identifier*>` unique.
 
-   このノードで次のプロパティを設定します。
+   Set the following properties on this node:
 
-   * 名前: `org.apache.sling.commons.log.file`
+    * Name: `org.apache.sling.commons.log.file`
 
-      タイプ: `String`
+      Type: `String`
 
-      値：ログファイルを指定して、ロガーで指定されたファイルと一致するようにします。
+      Value: specify the Log File so that it matches the file specified in the Logger;
 
-      例えば、 `../logs/myLogFile.log`「
+      for this example, `../logs/myLogFile.log`.
 
-   * 必要に応じてその他のパラメーターを設定します。
+    * Configure the other parameters as required:
 
-      * 名前: `org.apache.sling.commons.log.file.number`
+        * Name: `org.apache.sling.commons.log.file.number`
 
-         タイプ: `Long`
+          Type: `Long`
 
-         Value: specify the number of log files you want kept; for example, `5`
+          Value: specify the number of log files you want kept; for example, `5`
 
-      * 名前: `org.apache.sling.commons.log.file.size`
+        * Name: `org.apache.sling.commons.log.file.size`
 
-         タイプ: `String`
+          Type: `String`
 
-         Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
+          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
+
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` は、次のいずれかを設定することによって、ログファイルのローテーションを制御します。
-   * 最大ファイルサイズ
-   * 時刻／日付のスケジュール
-   これにより、新しいファイルを作成する（また、名前のパターンに従って既存のファイルを名前変更する）条件を示します。
-   * サイズ制限は数値で指定できます。 サイズインジケーターを指定しない場合は、バイト数と見なされるか、サイズインジケーター(、、または、大文字と小文字の区別な `KB`し) `MB`の1つ `GB` を追加できます。
-   * 日時スケジュールは、パターンとして指定で `java.util.SimpleDateFormat` きます。 これは、ファイルの回転が終わるまでの期間を定義します。また、回転されたファイルに追加されるサフィックスも表します（識別用）。
-   デフォルトは「。」です。yyyy-MM-dd（日別ログのローテーション用）。
-   例えば、2010年1月20日の真夜中（またはこの後の最初のログメッセージが正確である場合）、../logs/error.logの名前は../logs/error.log.2010-01-20に変更されます。 1月21日のログは、次の日の変更時にロールオーバーされるまで、（新しい空の）../logs/error.logに出力されます。
-       | `&#39;.&#39;yyyy-MM` |Rotation at the beginning of each month |
-       |---|---|
-       | `&#39;.&#39;yyyy-ww`|各週の最初の日のローテーション（ロケールによって異なります）。 |
-       | `&#39;.&#39;yyyy-MM-dd`|毎日午前0時にローテーション。 |
-       | `&#39;.&#39;yyyy-MM-dd-a`|毎日午前0時と午後のローテーション。 |
-       | `&#39;.&#39;yyyy-MM-dd-HH`|毎時の最初のローテーション。 |
-       | `&#39;.&#39;yyyy-MM-dd-HH-mm`|毎分の最初の回転。 |
-    
-    注意：日時を指定する場合：
-      1.一重引用符(&#39; &#39;)のペア内で、リテラルテキストを「エスケープ」する必要があります。
-  これは、     特定の文字がパターン文字として解釈されるのを防ぐためです。
-       1. オプションの任意の場所で、有効なファイル名に使用できる文字のみを使用します。
-   
+   >
+   >`org.apache.sling.commons.log.file.size` controls the rotation of the log file by setting either:
+   >
+   >* a maximum file size
+   >* a time/date schedule
+   >
+   >to indicate when a new file will be created (and the existing file renamed according to the name pattern).
+   >
+   >* A size limit can be specified with a number. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* A time/date schedule can be specified as a `java.util.SimpleDateFormat` pattern. This defines the time period after which the file will be rotated; also the suffix appended to the rotated file (for identification).
+   >
+   >The default is '.'yyyy-MM-dd (for daily log rotation).
+   >
+   >So for example, at midnight of January 20th 2010 (or when the first log message after this occurs to be precise), ../logs/error.log will be renamed to ../logs/error.log.2010-01-20. Logging for the 21st of January will be output to (a new and empty) ../logs/error.log until it is rolled over at the next change of day.
+   >
+   >      | `'.'yyyy-MM` |Rotation at the beginning of each month |
+   >      |---|---|
+   >      | `'.'yyyy-ww` |Rotation at the first day of each week (depends on the locale). |
+   >      | `'.'yyyy-MM-dd` |Rotation at midnight each day. |
+   >      | `'.'yyyy-MM-dd-a` |Rotation at midnight and midday of each day. |
+   >      | `'.'yyyy-MM-dd-HH` |Rotation at the top of every hour. |
+   >      | `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
+   >
+   >      Note: When specifying a time/date:
+   >      1. You should "escape" literal text within a pair of single quotes (' ');
+   >      this is to avoid certain characters being interpreted as pattern letters.
+   >      1. Only use characters allowed for a valid file name anywhere in the option.
 
-1. 任意のツールで新しいログファイルを読み取ります。
+1. Read your new log file with your chosen tool.
 
-   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
+   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.draf
