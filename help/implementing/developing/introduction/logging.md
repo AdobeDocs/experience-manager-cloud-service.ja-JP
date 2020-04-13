@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 1b10561af9349059aaee97e4f42d2e339f629700
+source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
 
 ---
 
@@ -13,7 +13,7 @@ AEMをクラウドサービスオファーとして設定できます。
 
 * 中央のログサービスのグローバルパラメーター
 * 要求データのログ（要求情報用の特殊なログ設定）
-* 個々のサービスに特有の設定（個々のログファイルおよびログメッセージの書式など）
+* 個々のサービスの特定の設定
 
 For local development, logs entries are written to local files in the `/crx-quickstart/logs` folder.
 
@@ -55,23 +55,27 @@ For local development, logs entries are written to local files in the `/crx-quic
 
    メッセージを生成するサービスを定義します。
 
-* **ログファイル(Logging Logger)**
+<!-- * **Log File (Logging Logger)**
 
-   ログメッセージを保存する物理ファイルを定義します。
+  Define the physical file for storing the log messages.
 
-   これは、ロギング・ロガーとロギング・ライターをリンクするために使用されます。 接続を行うには、ログライター設定の同じパラメータと値が同じである必要があります。
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
 
-* **ログファイル（ログライター）**
+* **Log File (Logging Writer)**
 
-   ログメッセージの書き込み先の物理ファイルを定義します。
+  Define the physical file that the log messages will be written to.
 
-   これは、ログ・ライター構成の同じパラメータと同じである必要があります。同じでない場合、一致は行われません。 一致がない場合は、暗黙的なWriterがデフォルト設定（日次ログローテーション）で作成されます。
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ### 標準のロガーおよびライター {#standard-loggers-and-writers}
 
+> [!IMPORTANT]
+> これらは必要に応じてカスタマイズできますが、ほとんどのインストールには標準設定が適しています。ただし、標準のログ設定をカスタマイズする必要がある場合は、必ず `dev` 環境で行います。
+
 一部のロガーおよびライターは、クラウドサービスの標準インストールとしてAEMに含まれています。
 
-1 つ目は特殊なケースで、`request.log` ファイルと `access.log` ファイルの両方を制御します。
+The first is a special case as it controls both the `request` and `access` logs:
 
 * ロガー：
 
@@ -88,8 +92,6 @@ For local development, logs entries are written to local files in the `/crx-quic
       (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Writes the messages to either `request.log` or `access.log`.
-
-これらは必要に応じてカスタマイズできますが、ほとんどのインストールには標準設定が適しています。
 
 その他のペアは、標準設定に従います。
 
@@ -114,6 +116,56 @@ For local development, logs entries are written to local files in the `/crx-quic
    * サービス `Warning` のメッセージ `../logs/error.log` をに書き込みま `org.apache.pdfbox`す。
 
 * 特定のライターにリンクしないので、デフォルト設定で暗黙のライターを作成して使用します（毎日のログローテーション）。
+
+AEM上にクラウドサービスインスタンスとして存在する3種類のログ（およびログ）の他に、ディスパッチャーの問題のデ`request`バッグに `access``error` 使用する別のログも存在します。 詳しくは、「Apacheおよびディスパッ [チャーの設定のデバッグ」を参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)い。
+
+基本的な実践に関しては、AEMに現在クラウドサービスMavenのアーキタイプとして存在する設定に合わせて調整することをお勧めします。 次に、特定の環境タイプに対して異なるログ設定とレベルを設定します。
+
+* と `local dev``dev` 環境の場合、ロガーを **DEBUG** レベルに設定し、 `error.log`
+* の場 `stage`合、ロガーを **WARN** レベルに設定し、 `error.log`
+* の場 `prod`合、ロガーを **ERROR** レベルに設定し、 `error.log`
+
+各設定の例を以下に示します。
+
+* `dev` 環境:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="debug"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+
+* `stage` 環境:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="warn"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
+
+* `prod` 環境:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
+    org.apache.sling.commons.log.file="logs/error.log"
+    org.apache.sling.commons.log.level="error"
+    org.apache.sling.commons.log.names="[${package}]"
+    org.apache.sling.commons.log.additiv="true"
+    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+```
 
 ## ログレベルの設定 {#setting-the-log-level}
 
@@ -151,7 +203,6 @@ For local development, logs entries are written to local files in the `/crx-quic
 
 1. ファクトリ設定の [Apache Sling Logging Logger Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) の新しいインスタンスを作成します。
 
-   1. ログファイルを指定します。
    1. ロガーを指定します。
 
 <!-- 1. Create a new instance of the Factory Configuration [Apache Sling Logging Writer Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based).
@@ -165,7 +216,7 @@ For local development, logs entries are written to local files in the `/crx-quic
 >
 >Adobe Experience Managerを使用する場合、このようなサービスの設定を管理する方法がいくつかあります。
 
-状況によっては、別のログレベルでカスタムログファイルを作成する必要があります。これをおこなうには、リポジトリで次の手順を実行します。
+状況によっては、異なるログレベルでカスタムログを作成する必要があります。 リポジトリでは、次の方法でこれを実行できます。
 
 1. If not already existing, create a new configuration folder ( `sling:Folder`) for your project `/apps/<*project-name*>/config`.
 1. Under `/apps/<*project-name*>/config`, create a node for the new Apache Sling Logging Logger Configuration:
