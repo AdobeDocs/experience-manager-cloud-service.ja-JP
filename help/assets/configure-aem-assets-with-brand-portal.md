@@ -3,7 +3,7 @@ title: Brand PortalでのAEM Assetsクラウドサービスの設定
 description: Brand PortalでAEM Assetsクラウドサービスを設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
 
 ---
 
@@ -152,7 +152,7 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
 
 >[!CAUTION]
 >
->有効なIMS設定を1つだけ作成します。 複数のIMS設定を作成しないでください。
+>有効なIMS設定を1つだけ作成します。
 >
 > 構成が正常であることを確認します。 構成が正常でない場合は、構成を削除し、新しい正常な構成を作成します。
 
