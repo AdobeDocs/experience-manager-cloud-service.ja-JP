@@ -2,7 +2,7 @@
 title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
 description: 2020.4.0向けExperience Managerリリースノート
 translation-type: tm+mt
-source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
+source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 および現在のリリースの新機能、機能強化、バグ修正に [!DNL Experience Manager Assets] つい [!DNL Dynamic Media] て詳しく説明します。
 
 * [Brand Portalは](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 、Experience Manager Assetsのアセット配布の使用例をサポートします。 [!DNL Brand Portal] は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などに安全に配布してマーケティングニーズに応えるうえで役に立ちます。
-   * [!DNL Brand Portal] 設定は、コンソールを通じて行 [!DNL Adobe I/O] われます。
+   * [!DNL Brand Portal] 設定は、コンソールを通じて行 [!DNL Adobe I/O] われます。 Brand Portalの設 [定を参照してください](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
    * でのアセットソーシ [!DNL Brand Portal] ングは、クラウドサービスとし [!DNL Experience Manager] てまだサポートされていません。
 
 * [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v2.0は、クラウドサービスと [!DNL Experience Manager] して機能します。 [!DNL Adobe Asset Link] デスクトップアプリ、アプリ内パネルを使用して、コンテンツ作成プロセスでのクリエイティブとマーケ [!DNL Experience Manager Assets] ターのコラボレ [!DNL Creative Cloud] ーションを [!DNL Adobe Photoshop]効率化し、デス [!DNL Adobe Illustrator]クトップアプリとの連携を [!DNL Adobe InDesign] 実現し [!DNL Asset Link] ます。
@@ -29,7 +29,13 @@ source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 * ユーザーは、特定のフ [ォルダー階層のフォルダー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) Propertiesユーザーインターフェイスで、後処理ワークフローを自動 [!UICONTROL 開始に設定できます] 。
    * フォルダのプロ [!UICONTROL パティ] (Properties  )のユーザーインターフェイスがシンプルになり、新しい「アセット処理」タブにメタデータプロファイル、処理プロファイル、新しい自動開始ワークフローの設定が追加されました。
-   * アセットの再処理ダイアログでは、特定の処理プロファイルを選択し、サブフォルダーで再処理を決定できます。
+
+      ![処理プロファイルは、フォルダに簡単に適用でき、フォルダにアップロードされたすべてのアセットは、これらのフォルダを使用して処理されますプロファイル](/help/assets/assets/asset-processing-folder-properties.png)
+
+   * アセットの再処理オプションを使用すると、特定の処理プロファイルを選択して、サブフォルダー内のユーザーが選択したアセットを再処理できます。
+
+      ![特定の処理オプションを使用して、選択したアセットを再処理するプロファイル](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+
    * [!DNL Dynamic Media]:アセットをセキュリティで保護されたプレビューのみのために自動公開するように、選択的公開設定を追加。 また、パブリックドメイン内の配信用にDMS7に公開することなく、アセットをExperience Managerに明示的に公開できます。
 
 ### バグ修正 {#assets-bug-fixes}
@@ -49,18 +55,18 @@ source-git-commit: 2258cc72d10fa85d89832b63016ccb393f453bff
 
 * 投稿者のURLが、Cloud Manager UIの環境ページから利用できるようになりました。
 * ナビゲーションが変更され、Cloud Managerの概要ページでユーザーがプログラムを編集、切り替えまたは追加できるようになりました。
-* ユーザーがCloud Managerプログラムのプログラムカードからユーザーを編集できるように変更しました。
-* 関連付けられたパイプラ **インに対して** 、新しいパイプラインステータス「実行中」(Pipeline Running)が表示されます。
-* パイプライン実行ページの可読性を改善。 これには、パイプライン名（非実稼動パイプラインのみ）とタイプの表示、およびパイプラインのステータスが「処理中」、「キャンセル」、「失敗」のいずれであるかを示すバッジが含まれます。
+* ユーザーが Cloud Manager ランディングページのプログラムカードからプログラムを編集できるように変更しました。
+* 関連付けられた環境に対して、新しいパイプラインステータス「**パイプライン実行中**」が表示されます。
+* パイプライン実行ページをわかりやすく改善しました。これには、パイプライン名（非実稼動パイプラインのみ）とタイプの表示、およびパイプラインのステータスが「処理中」、「キャンセル」、「失敗」のいずれであるかを示すバッジが含まれます。
 * ユーザーエクスペリエンスを向上させ、プログラム/環境ボタンが無効にな追加る理由を理解しやすくするためのツールヒント。
 * 失敗した環境は、UIとAPIを使用して削除できるようになりました。
-* gitパスワードの生成に使用されるプロセスは、基盤となるサービス層の問題に対してより柔軟に対処できるようになりました。
+* git パスワードの生成に使用されるプロセスは、基盤となるサービス層の問題に対してより柔軟に対処できるようになりました。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
 * パイプライン実行の詳細ページのステージ環境へのリンクが、一貫して正しい場所に移動していなかった問題を修正しました。
 * 環境作成プロセス内の個々のステップが、必要な時間より早くタイムアウトし、プロセスが失敗する。
-* アーティファクトのメタデータをダウンロードする際のデッドロックを回避するため、ビルドコンテナで使用されるMavenの設定が更新されました。
+* アーティファクトのメタデータをダウンロードする際のデッドロックを回避するため、ビルドコンテナで使用される Maven の設定を更新しました。
 * 場合によっては、イメージのビルド手順で顧客パッケージを正常にダウンロードできないことがあります。
 * 発生頻度の低い状況によっては、環境の削除が妨げられる場合があります。
-* Experience Cloudの通知が一貫して受信されなかった問題を修正しました。
+* Experience Cloud の通知が一貫して受信されませんでした。
