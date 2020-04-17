@@ -1,28 +1,28 @@
 ---
 title: アカウント環境の設定
 description: AEM では、アカウントおよびオーサー環境の特定項目を設定できます
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# アカウント環境の設定 {#configuring-your-account-environment}
+# アカウント環境の設定{#configuring-your-account-environment}
 
-AEM では、アカウントおよび作成者オーサー環境の特定項目を設定できます。
+AEM では、アカウントおよびオーサー環境の特定項目を設定できます。
 
 [ヘッダー](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)および関連する[環境設定](#my-preferences)ダイアログの「[ユーザー](#user-settings)」オプションを使用すると、ユーザーオプションを変更できます。
 
-Begin by accessing the [User](#user-settings) option in the header.
+まず、ヘッダーの「[ユーザー](#user-settings)」オプションにアクセスします。
 
 ## ユーザー設定 {#user-settings}
 
 **ユーザー**&#x200B;設定ダイアログでは、次の機能にアクセスできます。
 
 * 次のユーザーとして動作
-   * With the Impersonate as functionality, a user can work on behalf of another user. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
-* Profile
-   * Offers a convenient link to your user settings <!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
+   * 「次のユーザーとして動作」機能を使用すると、ユーザーは別のユーザーに成り代わって作業をおこなうことができます。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+* プロファイル
+   * ユーザー設定への便利なリンクを提供します。<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [環境設定](#my-preferences)
    * ユーザー独自の様々な環境設定を指定します。
 
@@ -36,7 +36,7 @@ Begin by accessing the [User](#user-settings) option in the header.
 
 ![環境設定](/help/sites-cloud/authoring/assets/user-preferences.png)
 
-* **言葉遣い**
+* **言語**
 
    オーサリング環境の UI で使用する言語を定義します。使用できるリストから必要な言語を選択します。
 
@@ -54,7 +54,7 @@ Begin by accessing the [User](#user-settings) option in the header.
 
 * **アセットのデスクトップアクションを表示**
 
-   このオプションを使用するには、AEM デスクトップアプリが必要です。
+   このオプションを使用するには、AEM デスクトップアプリケーションが必要です。
 
 * **注釈カラー**
 
@@ -90,4 +90,4 @@ Begin by accessing the [User](#user-settings) option in the header.
 
 * **Stock 設定**
 
-   This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled Adobe Stock integration. <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   このオプションを使用すると、Adobe Stock の優先設定を指定できます。システム管理者が Adobe Stock との連携を有効にしている場合にのみ使用できます。 <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
