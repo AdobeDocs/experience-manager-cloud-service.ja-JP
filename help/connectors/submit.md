@@ -1,27 +1,27 @@
 ---
-title: AEM Connectorの送信
-description: AEM Connectorの送信
-translation-type: tm+mt
+title: AEM コネクタの登録
+description: AEM コネクタの登録
+translation-type: ht
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 
 ---
 
 
-AEM Connectorの送信
+AEM コネクタの登録
 ===========================
 
-以下に、AEM Connectorsの送信に役立つ情報を示します。コネクタの実装と管理に関する記事と共に参照 [し](implement.md) て [ください](maintain.md) 。
+AEM コネクタの登録に役立つ情報を以下に示します。コネクタの[実装](implement.md)と[管理](maintain.md)に関する記事と共に参照してください。
 
-AEM Connectorsは [Adobe Exchangeに表示されます](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html)。
+AEM コネクタは [Adobe Exchange](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html) に一覧表示されています。
 
-以前のAEMソリューションでは、Package Managerを使用して様々なAEMインスタンスにコネクターをインストールしていました。 ただし、AEMをクラウドサービスとして使用する場合、Cloud ManagerのCI/CDプロセス中にコネクターがデプロイされます。 コネクタをデプロイするには、Mavenプロジェクトのpom.xmlでコネクタを参照する必要があります。
+これまでの AEM ソリューションでは、パッケージマネージャーを使用して様々な AEM インスタンスにコネクタをインストールしていました。しかし、AEM as a Cloud Service では、Cloud Manager の CI/CD プロセスでコネクタがデプロイされます。コネクタをデプロイするには、Maven プロジェクトの pom.xml でコネクタを参照する必要があります。
 
-プロジェクトにパッケージを含める方法には、様々なオプションがあります。
+パッケージをプロジェクトに組み込む方法には、様々な選択肢があります。
 
-1. パートナーのパブリック・リポジトリ — パートナーは、公開アクセス可能なMavenリポジトリでコンテンツ・パッケージをホストします。
-1. バンドルされたアーティファクト — この場合、コネクタパッケージは、お客様のMavenプロジェクトにローカルに含まれます。
+1. パートナーの公開リポジトリ - 公にアクセス可能な Maven リポジトリでパートナーがコンテンツパッケージをホストします。
+1. アーティファクトのバンドル - ユーザーの Maven プロジェクトにコネクタパッケージがローカルに含まれます。
 
-パッケージは、ホストされている場所に関係なく、ベンダーが提供するpom.xmlの依存関係として参照する必要があります。
+パッケージは、ホストされている場所に関係なく、ベンダーから提供されるとおりに、パッケージを依存関係として pom.xml で参照する必要があります。
 
 ```xml
 <!-- UberJAR Dependency to be added to the project's Reactor pom.xml -->
@@ -34,7 +34,7 @@ AEM Connectorsは [Adobe Exchangeに表示されます](https://marketing.adobe.
 </dependency>
 ```
 
-ISVパートナーがインターネットにアクセス可能なMavenリポジトリ（Cloud Managerにアクセス可能ななど）でコネクタをホストしている場合、ISVはpom.xmlを配置できるリポジトリ設定を提供し、上記のコネクタの依存関係をビルド時（ローカルでもCloud Managerでも解決できます）。
+インターネットでアクセス可能な Maven リポジトリ（Cloud Manager を通じてアクセス可能な場合など）で ISV パートナーがコネクタをホストする場合、ISV は、pom.xml を配置できるリポジトリ設定を提供して、上記のコネクタ依存関係をビルド時に（ローカルでも Cloud Manager でも）解決できるようにする必要があります。
 
 ```xml
 <repository>
@@ -51,4 +51,4 @@ ISVパートナーがインターネットにアクセス可能なMavenリポジ
 </repository>
 ```
 
-ISVパートナーがConnectorをダウンロード可能ファイルとして配布する場合、ISVは、AEMプロジェクトの一部としてGitにチェックインする必要があるローカルファイルシステムMavenリポジトリにファイルを展開する方法を指示する必要があります。
+ISV パートナーがコネクタをダウンロード可能なファイルとして配布する場合、ISV は、Cloud Manager がこれらの依存関係を解決できるように、AEM プロジェクトの一部として Git にチェックインする必要があるローカルファイルシステム Maven リポジトリにファイルをデプロイする方法を指示する必要があります。
