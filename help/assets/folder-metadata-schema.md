@@ -1,8 +1,8 @@
 ---
 title: フォルダーメタデータスキーマ
-description: AEM Assetsでアセットフォルダーのメタデータスキーマを作成する方法について説明します。
+description: AEM Assets でアセットフォルダーのメタデータスキーマを作成する方法について説明します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -10,17 +10,17 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 # フォルダーメタデータスキーマ {#folder-metadata-schema}
 
-Adobe Experience Manager（AEM）Assets では、フォルダープロパティページに表示されるレイアウトとメタデータを定義する、アセットフォルダーのメタデータスキーマを作成できます。
+Adobe Experience Manager (AEM) Assets では、フォルダープロパティページに表示されるレイアウトとメタデータを定義する、アセットフォルダーのメタデータスキーマを作成できます。
 
-## フォルダーメタデータスキーマフォームの追加 {#add-a-folder-metadata-schema-form}
+## フォルダーメタデータスキーマフォームの追加{#add-a-folder-metadata-schema-form}
 
 フォルダーメタデータスキーマフォームエディターを使用して、フォルダーのメタデータスキーマを作成および編集します。
 
 1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
-1. In the Folder Metadata Schema Forms page, tap/click **[!UICONTROL Create]**.
+1. フォルダーメタデータスキーマフォームページで、「**[!UICONTROL 作成]**」をタップまたはクリックします。
 1. フォームの名前を指定し、「**[!UICONTROL 作成]**」をタップまたはクリックします。新しいスキーマフォームがスキーマフォームページにリストされます。
 
-## フォルダーメタデータスキーマフォームの編集 {#edit-folder-metadata-schema-forms}
+## フォルダーメタデータスキーマフォームの編集{#edit-folder-metadata-schema-forms}
 
 以下を含む、新しく追加された、または既存のメタデータスキーマフォームを編集できます。
 
@@ -29,14 +29,14 @@ Adobe Experience Manager（AEM）Assets では、フォルダープロパティ�
 
 これらのフォーム項目を CRX リポジトリのメタデータノード内のフィールドにマップしたり、フォーム項目を設定したりできます。新しいタブまたはフォーム項目をメタデータスキーマフォームに追加できます。
 
-1. In the Schema Forms page, select the form you created, and then tap/click the **[!UICONTROL Edit]** icon from the toolbar.
-1. In the Folder Metadata Schema Editor page, tap/click the **[!UICONTROL +]** icon to add a tab to the form. タブの名前を変更するには、デフォルト名をタップまたはクリックし、「**[!UICONTROL 設定]**」に新しい名前を指定します。
+1. スキーマフォームページで、作成したフォームを選択し、ツールバーの「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
+1. フォルダーメタデータスキーマエディターページで、**[!UICONTROL +]** アイコンをタップまたはクリックして、フォームにタブを追加します。タブの名前を変更するには、デフォルト名をタップまたはクリックし、「**[!UICONTROL 設定]**」に新しい名前を指定します。
 
    ![custom_tab](assets/custom_tab.png)
 
-   タブを追加するには、**[!UICONTROL +]** アイコンをタップまたはクリックします。Tap/click **[!UICONTROL X]** to delete a tab.
+   タブを追加するには、**[!UICONTROL +]** アイコンをタップまたはクリックします。タブを削除するには、「**[!UICONTROL X]**」をタップまたはクリックします。
 
-1. In the active tab, add one or more components from the **[!UICONTROL Build Form]** tab.
+1. アクティブになっているタブで、「**[!UICONTROL フォームを作成]**」タブから 1 つ以上のコンポーネントを追加します。
 
    ![adding_components](assets/adding_components.png)
 
@@ -50,9 +50,9 @@ Adobe Experience Manager（AEM）Assets では、フォルダープロパティ�
 
 1. ツールバーの「**[!UICONTROL 保存]**」をタップまたはクリックして変更内容を保存します。
 
-### フォームを作成するコンポーネント {#components-to-build-forms}
+### フォームを作成するコンポーネント{#components-to-build-forms}
 
-The **[!UICONTROL Build Form]** tab lists form items that you use in your folder metadata schema form. The **[!UICONTROL Settings]** tab displays the attributes for each item that you select in the **[!UICONTROL Build Form]** tab. Here is a list the form items available in the **[!UICONTROL Build Form]** tab:
+「**[!UICONTROL フォームを作成]**」タブには、フォルダーメタデータスキーマフォーム内で使用するフォーム項目が一覧表示されます。「**[!UICONTROL 設定]**」タブには、「**[!UICONTROL フォームを作成]**」タブで選択した各項目の属性が表示されます。以下は、「**[!UICONTROL フォームを作成]**」タブで使用可能なフォーム項目のリストです。
 
 <table>
  <tbody>
@@ -66,14 +66,14 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your folder
   </tr>
   <tr>
    <td><p>1 行のテキスト</p> </td>
-   <td><p> 1行テキストプロパティを追加します。 これは文字列として保存されます。</p> </td>
+   <td><p> 1 行のテキストのプロパティを追加します。これは文字列として保存されます。</p> </td>
   </tr>
   <tr>
    <td><p>複数値テキスト</p> </td>
    <td><p> 複数値テキストプロパティを追加します。これは文字列の配列として保存されます。</p> </td>
   </tr>
   <tr>
-   <td><p>番号</p> </td>
+   <td><p>数値</p> </td>
    <td><p> 数値コンポーネントを追加します。</p> </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your folder
   </tr>
   <tr>
    <td><p>ドロップダウン</p> </td>
-   <td><p> コンボボックスを追加します。</p> </td>
+   <td><p> ドロップダウンリストを追加します。</p> </td>
   </tr>
   <tr>
    <td><p>標準タグ</p> </td>
@@ -97,21 +97,21 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your folder
 
 ### フォーム項目の編集 {#editing-form-items}
 
-To edit the properties of form items, tap/click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
+フォーム項目のプロパティを編集するには、コンポーネントをタップまたはクリックし、「**[!UICONTROL 設定]**」タブで次のプロパティのすべてまたは一部を編集します。
 
-**[!UICONTROL フィールドラベル]**:フォルダーのプロパティページに表示されるメタデータプロパティの名前。
+**[!UICONTROL フィールドラベル]**：フォルダーのプロパティページに表示されるメタデータプロパティの名前。
 
 **[!UICONTROL プロパティにマッピング]**：このプロパティは、フォルダーノードが保存されている CRX リポジトリ内でのフォルダーノードの相対パスを指定します。この値は、パスがフォルダーのノードの下にあることを示す「**./**」で始まります。
 
 このプロパティの有効な値は次のとおりです。
 
-* `./jcr:content/metadata/dc:title`:フォルダーのメタデータノードにプロパティとして値を格納しま `dc:title`す。
+* `./jcr:content/metadata/dc:title`：フォルダーのメタデータノードにある値を、プロパティ `dc:title` として格納します。
 
-* `./jcr:created`：フォルダーのノードにある JCR プロパティを表示します。CRXDEでこれらのプロパティを設定する場合、アドビでは、プロパティが保護されているので、プロパティを「編集を無効にする」とマークすることをお勧めします。 それ以外の場合は、アセ `Asset(s) failed to modify`ットのプロパティを保存するとエラー「」が発生します。
+* `./jcr:created`：フォルダーのノードにある JCR プロパティを表示します。これらのプロパティを CRXDE で設定する場合、これらのプロパティは保護されているので、「編集を無効にする」としてマークすることをお勧めします。そうしない場合は、アセットのプロパティを保存するときに、「`Asset(s) failed to modify`」というエラーが発生します。
 
 プロパティパスにスペースを含めないでください。コンポーネントがメタデータスキーマフォームに適切に表示されなくなります。
 
-**[!UICONTROL JSON Path]**:これを使用して、オプションのキーと値のペアを指定するJSONファイルのパスを指定します。
+**[!UICONTROL JSON パス]**：オプションのキーと値のペアを指定する JSON ファイルのパスを指定します。
 
 **[!UICONTROL プレースホルダー]**：このプロパティを使用して、メタデータプロパティに関連するプレースホルダーテキストを指定します。
 
@@ -121,30 +121,30 @@ To edit the properties of form items, tap/click the component and edit all or a 
 
 **[!UICONTROL クラス]**：プロパティに関連付けられているオブジェクトクラス。
 
-## フォルダーメタデータスキーマフォームの削除 {#delete-folder-metadata-schema-forms}
+## フォルダーメタデータスキーマフォームの削除{#delete-folder-metadata-schema-forms}
 
-フォルダメタデータスキーマフォームは、フォルダメタデータスキーマフォームページから削除できます。 フォームを削除するには、フォームを選択し、ツールバーの「削除」アイコンをタップまたはクリックします。
+フォルダーメタデータスキーマフォームページから、フォルダーメタデータスキーマフォームを削除できます。フォームを削除するには、フォームを選択し、ツールバーの「削除」アイコンをタップまたはクリックします。
 
 ![delete_form](assets/delete_form.png)
 
 ## フォルダーメタデータスキーマの割り当て {#assign-a-folder-metadata-schema}
 
-フォルダメタデータスキーマをフォルダに割り当てるには、フォルダメタデータスキーマフォームページを使用するか、フォルダを作成する際に使用します。
+フォルダーメタデータスキーマフォームページから、またはフォルダーの作成時に、フォルダーにフォルダーメタデータスキーマを割り当てることができます。
 
 フォルダーのメタデータスキーマを設定すると、スキーマフォームのパスは、フォルダーノードの `folderMetadataSchema` プロパティ（.*/jcr:content* 下）に保存されます。
 
-### フォルダーメタデータスキーマページからのスキーマへの割り当て {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### フォルダーメタデータスキーマページからのスキーマへの割り当て{#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
-1. フォルダメタデータスキーマフォームページで、フォルダに適用するスキーマフォームを選択します。
-1. From the toolbar, tap/click **[!UICONTROL Apply to Folder(s)]**.
+1. フォルダーメタデータスキーマフォームページから、フォルダーに適用するスキーマフォームを選択します。
+1. ツールバーの「**[!UICONTROL フォルダーに適用]**」をタップまたはクリックします。
 
-1. Select the folder on which to apply the schema and then click/tap **[!UICONTROL Apply]**. メタデータスキーマが既にフォルダに適用されている場合は、既存のメタデータスキーマを上書きしようとしていることを示す警告メッセージが表示されます。 Tap/click **[!UICONTROL Overwrite]**.
+1. スキーマを適用するフォルダーを選択し、「**[!UICONTROL 適用]**」をクリックまたはタップします。既にフォルダーにメタデータスキーマが適用されている場合は、既存のメタデータスキーマを上書きするかどうかを確認する警告メッセージが表示されます。「**[!UICONTROL 上書き]**」をタップまたはクリックします。
 1. メタデータスキーマを適用したフォルダーのメタデータプロパティを開きます。
 
    ![folder_properties](assets/folder_properties.png)
 
-   To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab.
+   フォルダーメタデータフィールドを表示するには、「**[!UICONTROL フォルダーメタデータ]**」タブをタップまたはクリックします。
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
@@ -159,11 +159,11 @@ To edit the properties of form items, tap/click the component and edit all or a 
    ![select_schema](assets/select_schema.png)
 
 1. メタデータスキーマを適用したフォルダーのメタデータプロパティを開きます。
-1. To view the folder metadata fields, tap/click the **[!UICONTROL Folder Metadata]** tab.
+1. フォルダーメタデータフィールドを表示するには、「**[!UICONTROL フォルダーメタデータ]**」タブをタップまたはクリックします。
 
 ## フォルダーメタデータスキーマの使用 {#use-the-folder-metadata-schema}
 
-フォルダーメタデータスキーマが設定されたフォルダーのプロパティを開きます。A **[!UICONTROL Folder Metadata]** tab is displayed in the folder properties page. フォルダーメタデータスキーマフォームを表示するには、このタブを選択します。
+フォルダーメタデータスキーマが設定されたフォルダーのプロパティを開きます。フォルダープロパティページに「**[!UICONTROL フォルダーメタデータ]**」タブが表示されます。フォルダーメタデータスキーマフォームを表示するには、このタブを選択します。
 
 各種フィールドにメタデータ値を入力し、「**[!UICONTROL 保存]**」をタップまたはクリックして値を保存します。指定した値は、CRX リポジトリ内のフォルダーノードに保存されます。
 
