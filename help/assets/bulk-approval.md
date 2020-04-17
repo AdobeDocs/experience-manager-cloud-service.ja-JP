@@ -1,29 +1,29 @@
 ---
-title: フォルダーとコレクション内のアセットの確認
-description: フォルダーまたはコレクション内のアセットに対してレビューワークフローを設定し、それをレビュー担当者またはクリエイティブパートナーと共有してフィードバックを得ることができます。
+title: フォルダー内およびコレクション内のアセットの確認
+description: フォルダー内またはコレクション内のアセットに対してレビューワークフローを設定し、それをレビュー担当者またはクリエイティブパートナーと共有してフィードバックを得ることができます。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# フォルダーとコレクション内のアセットの確認 {#review-folder-assets-and-collections}
+# フォルダー内およびコレクション内のアセットの確認 {#review-folder-assets-and-collections}
 
-Adobe Experience Manager (AEM) Assetsを使用して、フォルダーまたはコレクション内のアセットに対してアドホックレビューワークフローを設定できます。 レビュー担当者やクリエイティブパートナーと共有して、フィードバックを求めることができます。 レビューワークフローをプロジェクトに関連付けるか、独立したレビュータスクを作成できます。
+Adobe Experience Manager (AEM) Assets では、フォルダー内またはコレクション内のアセットに対してアドホックレビューワークフローを設定できます。それをレビュー担当者やクリエイティブパートナーと共有して、フィードバックを得ることができます。レビューワークフローをプロジェクトと関連付けることも、独立したレビュータスクを作成することもできます。
 
 ユーザーがアセットを共有した後で、レビュー担当者がアセットを承認または拒否できます。ワークフローの様々なステージで、様々なタスクの完了に関する通知が対象の受信者に送られます。例えば、ユーザーがフォルダーまたはコレクションを共有すると、レビュー担当者は、フォルダーまたはコレクションがレビューのために共有されたという通知を受け取ります。
 
 レビュー担当者がレビューを終了（アセットを承認または拒否）すると、ユーザーはレビューが完了したという通知を受け取ります。
 
-## フォルダー用レビュータスクの作成 {#creating-a-review-task-for-folders}
+## フォルダー用レビュータスクの作成{#creating-a-review-task-for-folders}
 
 1. Assets ユーザーインターフェイスで、レビュータスクを作成するフォルダーを選択します。
-1. From the toolbar, tap/click the **[!UICONTROL Create Review Task]** icon to open the **[!UICONTROL Review Task]** page. ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
+1. ツールバーで「**[!UICONTROL レビュータスクを作成]**」アイコンをタップまたはクリックして、**[!UICONTROL レビュータスク]**&#x200B;ページを開きます。ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. If you do not want to associate any project with the review task, retain this selection.
+1. （オプション）「**[!UICONTROL プロジェクト]**」リストから、レビュータスクを関連付けるプロジェクトを選択します。デフォルトでは、「**[!UICONTROL なし]**」オプションが選択されています。レビュータスクにプロジェクトを関連付けない場合は、この選択状態のままにします。
 
    >[!NOTE]
    >
@@ -43,17 +43,17 @@ Adobe Experience Manager (AEM) Assetsを使用して、フォルダーまたは�
 
    ![review_name](assets/review_name.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. 新しいタスクに関する通知が承認者に送信されます。
+1. 「**[!UICONTROL 送信]**」、「**[!UICONTROL 完了]**」の順にタップまたはクリックし、確認メッセージを閉じます。新しいタスクに関する通知が承認者に送信されます。
 1. 承認者として AEM Assets にログインし、Assets UI に移動します。アセットを承認するには、**[!UICONTROL 通知]**&#x200B;アイコンをクリックまたはタップし、リストからレビュータスクを選択します。
 
    ![通知](assets/notification.png)
 
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
-1. **[!UICONTROL レビュータスク]**&#x200B;ページでアセットを選択し、必要に応じて「**[!UICONTROL 承認」または「非承認]**」アイコンをタップまたはクリックして、承認するか非承認にします。
+1. **[!UICONTROL レビュータスク]**&#x200B;ページでレビュータスクの詳細を確認し、「**[!UICONTROL レビュー]**」をタップまたはクリックします。
+1. **[!UICONTROL レビュータスク]**&#x200B;ページでアセットを選択し、必要に応じて&#x200B;**[!UICONTROL 「承認」または「非承認」]**&#x200B;アイコンをタップまたはクリックして、承認するか拒否します。
 
    ![review_task](assets/review_task.png)
 
-1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
+1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。ダイアログでコメントを入力し、「**[!UICONTROL 完了]**」をタップまたはクリックして確認します。
 1. Assets UI に移動し、フォルダーを開きます。アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
 
    **カード表示**
@@ -67,11 +67,11 @@ Adobe Experience Manager (AEM) Assetsを使用して、フォルダーまたは�
 ## コレクション用レビュータスクの作成 {#creating-a-review-task-for-collections}
 
 1. コレクションページで、レビュータスクを作成するコレクションを選択します。
-1. From the toolbar, tap/click the **[!UICONTROL Create Review Task]** icon to open the **[!UICONTROL Review Task]** page. ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
+1. ツールバーで「**[!UICONTROL レビュータスクを作成]**」アイコンをタップまたはクリックして、**[!UICONTROL レビュータスク]**&#x200B;ページを開きます。ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Optional) From the **[!UICONTROL Project]** list, select the project to which you want to associate the review task. By default, the **[!UICONTROL None]** option is selected. If you do not want to associate any project with the review task, retain this selection.
+1. （オプション）「**[!UICONTROL プロジェクト]**」リストから、レビュータスクを関連付けるプロジェクトを選択します。デフォルトでは、「**[!UICONTROL なし]**」オプションが選択されています。レビュータスクにプロジェクトを関連付けない場合は、この選択状態のままにします。
 
    >[!NOTE]
    >
@@ -87,14 +87,14 @@ Adobe Experience Manager (AEM) Assetsを使用して、フォルダーまたは�
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. 新しいタスクに関する通知が承認者に送信されます。
-1. 承認者として AEM Assets にログインし、アセットコンソールに移動します。To approve assets, tap/click the **[!UICONTROL Notifications]** icon and then select the review task from the list.
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
-1. コレクションのすべてのアセットがレビューページに表示されます。Select the assets and tap/click the **[!UICONTROL Approve/Reject]** icon to approve or reject assets, as appropriate.
+1. 「**[!UICONTROL 送信]**」、「**[!UICONTROL 完了]**」の順にタップまたはクリックし、確認メッセージを閉じます。新しいタスクに関する通知が承認者に送信されます。
+1. 承認者として AEM Assets にログインし、アセットコンソールに移動します。アセットを承認するには、**[!UICONTROL 通知]**&#x200B;アイコンをタップまたはクリックし、リストからレビュータスクを選択します。
+1. **[!UICONTROL レビュータスク]**&#x200B;ページでレビュータスクの詳細を確認し、「**[!UICONTROL レビュー]**」をタップまたはクリックします。
+1. コレクションのすべてのアセットがレビューページに表示されます。アセットを選択し、必要に応じて&#x200B;**[!UICONTROL 「承認」または「非承認」]**&#x200B;アイコンをタップまたはクリックして、アセットを承認するか拒否します。
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。In the dialog, enter a comment and tap/click **[!UICONTROL Complete]** to confirm.
+1. ツールバーの「**[!UICONTROL 完了]**」アイコンをタップまたはクリックします。ダイアログでコメントを入力し、「**[!UICONTROL 完了]**」をタップまたはクリックして確認します。
 1. コレクションコンソールに移動して、コレクションを開きます。アセットの承認ステータスアイコンは、カード表示とリスト表示の両方に表示されます。
 
    **カード表示**
