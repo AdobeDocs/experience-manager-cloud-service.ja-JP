@@ -1,13 +1,13 @@
 ---
 title: ContextHub データを使用したページのプレビュー
 description: ContextHub ツールバーは、ContextHub ストアからのデータを表示し、ストアデータを変更することができ、コンテンツのプレビューに役立ちます。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# ContextHub データを使用したページのプレビュー  {#previewing-pages-using-contexthub-data}
+# ContextHub データを使用したページのプレビュー {#previewing-pages-using-contexthub-data}
 
 ContextHub ツールバーには、ContextHub ストアのデータが表示され、このツールバーを使用してストアデータを変更することができます。ContextHub ツールバーは、ContextHub ストア内のデータによって決定されるコンテンツのプレビューに役立ちます。<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
 
@@ -22,7 +22,7 @@ ContextHub によって、いくつかの UI モードと UI モジュールが�
 
 ContextHub ツールバーはプレビューモードで使用できます。このツールバーは、オーサーインスタンス上で、管理者が有効にしている場合にのみ使用できます。
 
-![ContextHubツールバー](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
+![ContextHub ツールバー](/help/sites-cloud/authoring/assets/contexthub-toolbar.png)
 
 1. 編集用にページを開いた状態で、ツールバーの「プレビュー」をクリックまたはタップします。
 
@@ -30,30 +30,30 @@ ContextHub ツールバーはプレビューモードで使用できます。こ
 
 1. ツールバーを表示するには、ContextHub アイコンをクリックまたはタップします。
 
-   ![ContextHubボタン](/help/sites-cloud/authoring/assets/contexthub-button.png)
+   ![ContextHub ボタン](/help/sites-cloud/authoring/assets/contexthub-button.png)
 
 ## UI モジュールの機能 {#ui-module-features}
 
 提供する機能セットは UI モジュールごとに異なりますが、以下のタイプの機能は共通です。UI モジュールは拡張可能なので、開発者は必要に応じて他の機能を実装できます。
 
-### ツールバーコンテンツ {#toolbar-content}
+### ツールバーコンテンツ{#toolbar-content}
 
-UI モジュールは、1 つ以上の ContextHub ストアのデータをツールバーに表示できます。UIモジュールは、アイコンとタイトルを使用して自分自身を識別します。
+UI モジュールは、1 つ以上の ContextHub ストアのデータをツールバーに表示できます。UI モジュールは、アイコンとタイトルで識別されます。
 
-![ContextHubペルソナ](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
+![ContextHub ペルソナ](/help/sites-cloud/authoring/assets/contexthub-persona-button.png)
 
 ### ポップアップコンテンツ {#popup-content}
 
-一部のUIモジュールは、クリックまたはタップされたときにポップアップオーバーレイを表示します。 一般的に、ポップアップには、ツールバーに表示されている以外の追加情報が含まれています。
+一部の UI モジュールは、クリックまたはタップされるとポップアップオーバーレイを表示します。一般的に、ポップアップには、ツールバーに表示されている以外の追加情報が含まれています。
 
-![ContextHubプロファイル情報](/help/sites-cloud/authoring/assets/contexthub-profile.png)
+![ContextHub プロファイル情報](/help/sites-cloud/authoring/assets/contexthub-profile.png)
 
 ### ポップアップフォーム {#popup-forms}
 
 モジュールのポップアップオーバーレイには、ContextHub ストア内のデータを変更するためのフォーム要素を含めることができます。ページコンテンツがストアデータによって決定される場合は、このフォームを使用してページコンテンツの変更を監視できます。
 
-### 全画面表示モード {#fullscreen-mode}
+### 全画面表示モード{#fullscreen-mode}
 
 ポップアップオーバーレイには、クリックまたはタップするとポップアップコンテンツを拡張してブラウザーウィンドウまたは画面全体に表示するアイコンを含めることができます。
 
-![フルスクリーンボタン](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)
+![全画面表示ボタン](/help/sites-cloud/authoring/assets/contexthub-fullscreen.png)
