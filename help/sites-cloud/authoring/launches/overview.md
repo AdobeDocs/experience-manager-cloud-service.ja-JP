@@ -1,7 +1,7 @@
 ---
 title: ローンチ
-description: ローンチ 将来のリリースでコンテンツを効率的に開発できるようにします。 現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
-translation-type: tm+mt
+description: ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * ローンチを複数のルートブランチに対して作成します。サイト全体のローンチを作成（してそこで変更を加えることが）できますが、サイト全体をコピーする必要があるので、これは実用的ではありません。何百何千ものページが関与すると、コピーアクションや後の昇格タスクで必要な比較により、システム要件とパフォーマンスの両方が影響を受けます。
 * ローンチをネスト（ローンチをローンチ内に作成）して、既存のローンチからローンチを作成できます。これにより、作成者は各ローンチで同じ変更を複数回加えることなく、既に加えられた変更を利用できます。
 
-This section describes how to create, edit and promote (and if necessary [delete](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) launch pages from within the Sites console or [the Launches console](#the-launches-console):
+ここでは、サイトコンソール内または[ローンチコンソール](#the-launches-console)内からローンチページを作成、編集、昇格（必要に応じて[削除](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)）する方法について説明します。
 
 * [ローンチの作成](/help/sites-cloud/authoring/launches/creating.md)
 * [ローンチの編集](/help/sites-cloud/authoring/launches/editing.md)
@@ -41,7 +41,7 @@ This section describes how to create, edit and promote (and if necessary [delete
    * コピーがローンチになります。
    * トップレベルのソースページは、**実稼動**&#x200B;と呼ばれます。
       * ソースページは複数の（別個の）ブランチから取得できます。
-   ![起動の操作順序](/help/sites-cloud/authoring/assets/launches-order.png)
+   ![ローンチの操作の順序](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * ローンチの設定を編集できます。
    * ローンチに対してページやブランチを追加または削除できます。
@@ -59,12 +59,12 @@ This section describes how to create, edit and promote (and if necessary [delete
 * ソースの更新とページのローンチを並行しておこなうことができます。
    * ソースページに対する変更は、ローンチコピーに自動的に反映されます（ライブコピーなど、継承するように設定されている場合）。
    * ローンチコピーに対する変更は、ソースコピーの自動更新を中断することなくおこなうことができます。
-   ![並行した操作](/help/sites-cloud/authoring/assets/launches-parallel.png)
+   ![並行実行されるアクション](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [ネストされたローンチ（ローンチ内にローンチ）を作成](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch)できます。
    * ソースは既存のローンチです。
    * 任意のターゲットに[ネストされたローンチを昇格](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch)させることができます。親ローンチやトップレベルのソースページ（実稼動）も指定できます。
-   ![ネストされた起動](/help/sites-cloud/authoring/assets/launches-nested.png)
+   ![ネストされたローンチ](/help/sites-cloud/authoring/assets/launches-nested.png)
 
    >[!CAUTION]
    >
@@ -72,7 +72,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>ローンチを作成および編集するには、デフォルトグループ `content-authors` と同様に、`/content/launches` へのアクセス権限が必要です。
 >
 >問題が発生している場合は、システム管理者にお問い合わせください。
 
@@ -82,7 +82,7 @@ This section describes how to create, edit and promote (and if necessary [delete
 
 * **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
 
-* または直接 `https://<host>:<port>/libs/launches/content/launches.html`
+* または、`https://<host>:<port>/libs/launches/content/launches.html` に直接アクセスします。
 
 ## 「参照」のローンチ（サイトコンソール）{#launches-in-references-sites-console}
 
@@ -90,8 +90,8 @@ This section describes how to create, edit and promote (and if necessary [delete
 1. **参照**&#x200B;レールを開き、ソースページを選択します。
 1. 「**ローンチ**」を選択すると、既存のローンチのリストが表示されます。
 
-   ![サイトコンソールでの起動のリファレンス](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![サイトコンソールでのローンチの参照](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 適切なローンチをタップまたはクリックすると、使用可能なアクションのリストが表示されます。
 
-   ![サイトコンソールで起動時に実行するアクション](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+   ![サイトコンソールでローンチに対して実行可能なアクション](/help/sites-cloud/authoring/assets/launches-references-actions.png)
