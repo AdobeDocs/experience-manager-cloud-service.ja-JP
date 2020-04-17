@@ -2,7 +2,7 @@
 title: 画像マップの追加
 description: ハイパーリンクが指定された画像マップを画像アセットに追加する方法を学習します。
 contentOwner: asgupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
