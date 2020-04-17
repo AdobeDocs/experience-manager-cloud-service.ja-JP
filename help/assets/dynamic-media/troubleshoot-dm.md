@@ -1,21 +1,21 @@
 ---
-title: ダイナミックメディアのトラブルシューティング
-description: ダイナミックメディアのトラブルシューティング
-translation-type: tm+mt
+title: Dynamic Media のトラブルシューティング
+description: Dynamic Media のトラブルシューティング。
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# ダイナミックメディアのトラブルシューティング {#troubleshooting-dynamic-media-scene-mode}
+# Dynamic Media のトラブルシューティング {#troubleshooting-dynamic-media-scene-mode}
 
-次のドキュメントでは、ダイナミックメディアのトラブルシューティングについて説明します。
+以下では、Dynamic Media のトラブルシューティングについて説明します。
 
-## General (All Assets) {#general-all-assets}
+## 一般（すべてのアセット）{#general-all-assets}
 
 次に全般的なヒントやテクニックを示します。
 
-### アセット同期ステータスプロパティ {#asset-synchronization-status-properties}
+### アセット同期ステータスプロパティ{#asset-synchronization-status-properties}
 
 CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dynamic Media へのアセットの同期に成功したことが確認できます。
 
@@ -24,47 +24,47 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | ノードが Dynamic Media にリンクされていることを示す全般的インジケーター。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** またはエラーテキスト | Dynamic Media へのアセットアップロードのステータス。 |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media のリモートアセットへの URL を生成するには、これを入力する必要があります。 |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **success** or **failed:`<error text>`** | セット（スピンセット、画像セットなど）、画像プリセット、ビューアプリセット、アセットの画像マップの更新、編集された画像などの同期ステータス。 |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **success** または **failed:`<error text>`** | セット（スピンセット、画像セットなど）、画像プリセット、ビューアプリセット、アセットの画像マップの更新、編集された画像などの同期ステータス。 |
 
-### 同期のログ {#synchronization-logging}
+### 同期のログ{#synchronization-logging}
 
-Synchronization errors and issues are logged in `error.log` (AEM server directory `/crx-quickstart/logs/`). Sufficient logging is available to determine the root cause of most issues, however you can increase the logging to DEBUG on the `com.adobe.cq.dam.ips` package through the Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) to gather more information.
+同期のエラーと問題は `error.log`（AEM サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
 ### 移動、コピー、削除 {#move-copy-delete}
 
 移動、コピーまたは削除の処理を実行する前に次をおこなってください。
 
-* For images and videos, confirm that a `<object_node>/jcr:content/metadata/dam:scene7ID` value exists before performing move, copy, or delete operations.
-* For image and viewer presets, confirm that an `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` value exists before performing move, copy, or delete operations.
+* 画像やビデオの移動、コピーまたは削除操作の前に `<object_node>/jcr:content/metadata/dam:scene7ID` の値が存在することを確認します。
+* 画像やビューアプリセットの移動、コピーまたは削除操作の前に `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` の値が存在することを確認します。
 * 上記のメタデータ値がない場合、移動、コピーまたは削除処理の前にアセットを再度アップロードする必要があります。
 
 ### バージョン管理 {#version-control}
 
-既存の Dynamic Media アセット（同じ名称、同じ場所）を置換する際、双方のアセットを保持またはバージョンを置換・作成の選択が可能です。
+既存の Dynamic Media アセット（同じ名称、同じ場所）を置換する際、両方のアセットを保持するか、バージョンを置換／作成するかの選択が可能です。
 
-* 両方を保持すると、公開済みアセットURLに対して一意の名前を持つ新しいアセットが作成されます。 例えば、は元のア `image.jpg` セットで、は新しくアッ `image1.jpg` プロードされたアセットです。
+* 両方を保持すると、公開済みアセット URL の名前が一意な新しいアセットが作成されます。例えば、`image.jpg` は元のアセットで、`image1.jpg` は新しくアップロードされたアセットです。
 
-* バージョンの作成はダイナミックメディアではサポートされていません。 配信で新しいバージョンが既存のアセットを置換します。
+* Dynamic Media ではバージョンの作成はサポートされていません。配信で新しいバージョンが既存のアセットを置換します。
 
-## 画像とセット {#images-and-sets}
+## 画像とセット{#images-and-sets}
 
 画像とセットで問題が発生している場合、次のトラブルシューティングガイドに従ってください。
 
 <table>
  <tbody>
   <tr>
-   <td><strong>OS クリップボードと内部 AEM クリップボードを使用した</strong></td>
+   <td><strong>問題</strong></td>
    <td><strong>デバッグの方法</strong></td>
    <td><strong>解決策</strong></td>
   </tr>
   <tr>
-   <td>アセットの詳細表示で URL をコピー／埋め込みボタンにアクセスできない</td>
+   <td>アセットの詳細表示で URL／埋め込みコードのコピーボタンにアクセスできない</td>
    <td>
     <ol>
      <li><p>CRX/DE に移動します。</p>
       <ul>
-       <li>JCR内のプリセットが定義されているかどうかを確認 <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> します。 この場所は、AEM 6.x から 6.4 にアップグレードし、移行をオプトアウトした場合に適用されます。それ以外の場所はです <code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
-       <li>Check to make sure that the asset in the JCR has <code>dam:scene7FileStatus</code><strong> </strong>under Metadata shows as <code>PublishComplete</code>.</li>
+       <li>JCR 内のプリセット <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> が定義されているかどうかを確認します。この場所は、AEM 6.x から 6.4 にアップグレードし、移行をオプトアウトした場合に適用されます。それ以外の場合、場所は <code>/conf/global/settings/dam/dm/presets/viewer</code> になります。</li>
+       <li>JCR のアセットに <code>dam:scene7FileStatus</code><strong></strong> があり、それが「メタデータ」で <code>PublishComplete</code> と表示されていることを確認します。</li>
       </ul> </li>
     </ol> </td>
    <td><p>ページを更新するか、別のページに移動してから戻ります（サイドレール JSP を再コンパイルする必要があります）。</p> <p>それでも解決しない場合：</p>
@@ -90,23 +90,23 @@ Synchronization errors and issues are logged in `error.log` (AEM server director
   </tr>
   <tr>
    <td>Dynamic Media ビューアで画像がプレビューされない</td>
-   <td><p>Check that the asset contains <code>dam:scene7File</code> in the Metadata properties (CRXDE Lite)</p> </td>
+   <td><p>アセットのメタデータプロパティに <code>dam:scene7File</code> が含まれていることを確認します（CRXDE Lite）。</p> </td>
    <td><p>すべてのアセットの処理が終わるまで待ちます。</p> </td>
   </tr>
   <tr>
    <td>アップロードしたアセットがアセットセレクターに表示されない</td>
-   <td><p>Check asset has property <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
+   <td><p>アセットのプロパティ <code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> が <code>processed</code> であることを確認します（CRXDE Lite）。</p> </td>
    <td><p>すべてのアセットの処理が終わるまで待ちます。</p> </td>
   </tr>
   <tr>
    <td>アセットの処理がまだ開始していないときに、カード表示のバナーに「<strong>新規</strong>」と表示される</td>
-   <td>Check asset <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> it was not picked up by the workflow.</td>
+   <td>アセットの <code>jcr:content</code> &gt; <code>dam:assetState</code> を確認します。<code>unprocessed</code> の場合は、アセットの処理がワークフローで開始されていません。</td>
    <td>ワークフローがアセットの処理を始めるまで待ちます。</td>
   </tr>
   <tr>
    <td>画像やセットでビューア URL や埋め込みコードが表示されない</td>
    <td>ビューアプリセットが公開されているかどうかを確認します。</td>
-   <td><p>Go to <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer Presets</strong> and publish the viewer preset.</p> </td>
+   <td><p><strong>ツール</strong>／<strong>アセット</strong>／<strong>ビューアプリセット</strong>に移動し、ビューアプリセットを公開します。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -118,7 +118,7 @@ Synchronization errors and issues are logged in `error.log` (AEM server director
 <table>
  <tbody>
   <tr>
-   <td><strong>OS クリップボードと内部 AEM クリップボードを使用した</strong></td>
+   <td><strong>問題</strong></td>
    <td><strong>デバッグの方法</strong></td>
    <td><strong>解決策</strong></td>
   </tr>
@@ -128,7 +128,7 @@ Synchronization errors and issues are logged in `error.log` (AEM server director
     <ul>
      <li>フォルダーにビデオプロファイルが割り当てられていることを確認します（サポートされていないファイル形式の場合）。サポートされていない場合、画像だけが表示されます。</li>
      <li>ビデオプロファイルには AVS セットを生成するためのエンコーディングプリセットが 2 つ以上含まれている必要があります（MP4 ファイルでは 1 つのエンコーディングがビデオコンテンツとして扱われます。サポートされていないファイルでは、処理されていないものと同じ扱いになります）。</li>
-     <li>Check that the video has finished processing by confirming <code>dam:scene7FileAvs</code> of <code>dam:scene7File</code> in metadata.</li>
+     <li>メタデータで <code>dam:scene7File</code> の <code>dam:scene7FileAvs</code> を確認して、ビデオの処理が終了したことを確かめます。</li>
     </ul> </td>
    <td>
     <ol>
@@ -156,8 +156,8 @@ Synchronization errors and issues are logged in `error.log` (AEM server director
    <td>ビデオの処理に時間がかかりすぎる</td>
    <td><p>ビデオのエンコーディングがまだ進行中か、エラー状態になっているかを判断するには：</p>
     <ul>
-     <li>ビデオの状態を確認しま <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> す。 <code>dam:assetState</code></li>
-     <li>Monitor the video from the workflow console <code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; Instances, Archive, Failures tabs.</li>
+     <li>ビデオのステータスを確認します。<code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
+     <li>ワークフローコンソールでビデオを監視します。<code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; 「インスタンス」タブ、「アーカイブ」タブ、「エラー」タブ。</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -166,7 +166,7 @@ Synchronization errors and issues are logged in `error.log` (AEM server director
    <td><p>ビデオがアップロードされても、エンコードされたレンディションがない場合：</p>
     <ul>
      <li>フォルダーにビデオプロファイルが割り当てられていることを確認します。</li>
-     <li>Check that the video has finished processing by confirming <code>dam:scene7FileAvs</code> in metadata.</li>
+     <li>メタデータで <code>dam:scene7FileAvs</code> を確認して、ビデオの処理が終了したことを確かめます。</li>
     </ul> </td>
    <td>
     <ol>
@@ -184,44 +184,44 @@ Synchronization errors and issues are logged in `error.log` (AEM server director
 <table>
  <tbody>
   <tr>
-   <td><strong>OS クリップボードと内部 AEM クリップボードを使用した</strong></td>
+   <td><strong>問題</strong></td>
    <td><strong>デバッグの方法</strong></td>
    <td><strong>解決策</strong></td>
   </tr>
   <tr>
    <td>ビューアプリセットが公開されていない</td>
-   <td><p>サンプルマネージャーの診断ページに進みます。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>計算された値を確認します。正常に動作している場合は、次のようになります。</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>次のサンプルマネージャー診断ページに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>計算された値を確認します。正常に動作している場合は、次のようになります。</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>：Dynamic Media クラウドの設定後、ビューアアセットが同期するまで 10 分ほどかかることがあります。</p> <p>アクティブでないアセットが残る場合は、「<strong>アクティブでないアセットをすべて表示</strong>」ボタンのどちらかをクリックして詳細を確認してください。</p> </td>
    <td>
     <ol>
-     <li>管理ツールでビューアプリセットリストに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
+     <li>管理ツールのビューアプリセットリストに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
      <li>すべてのビューアプリセットを選択し、「<strong>公開</strong>」をクリックします。</li>
      <li>サンプルマネージャーに戻り、アクティブでないアセット数がゼロになったことを確認します。</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>ビューアプリセットのアートワークが、アセット詳細のプレビューまたはコピー URL／埋め込みコードで 404 を返す場合</td>
+   <td>ビューアプリセットのアートワークが、アセット詳細のプレビューまたは URL／埋め込みコードのコピーで 404 を返す場合</td>
    <td><p>CRXDE Lite で以下をおこないます。</p>
     <ol>
-     <li>Navigate to <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> folder within your Dynamic Media sync folder (for example, <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Find the metadata node of the problematic asset (for example, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Check for the presence of <code>dam:scene7*</code> properties. If the asset was successfully synced and published you see the <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li>
+     <li>Dynamic Media 同期フォルダー内の <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> フォルダー（例えば <code>/content/dam/_CSS/_OOTB</code>）に移動します。</li>
+     <li>問題のあるアセットのメタデータノードを見つけます（例えば <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>）。</li>
+     <li><code>dam:scene7*</code> プロパティがあることを確認します。アセットの同期と公開に成功した場合は <code>dam:scene7FileStatus</code> が <strong>PublishComplete</strong> に設定されています。</li>
      <li>次のプロパティと文字列リテラルの値を連結して Dynamic Media に直接アートワークを要求します。
       <ul>
        <li><code>dam:scene7Domain</code></li>
        <li><code>"is/content"</code></li>
        <li><code>dam:scene7Folder</code></li>
        <li><code>&lt;asset-name&gt;</code></li>
-       <li>例: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
+       <li>例： <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>サンプルアセットまたはビュープリセットのアートワークが同期されていないか、公開されてない場合は、コピー／同期処理全体をやり直します。</p>
+   <td><p>サンプルアセットまたはビューアプリセットのアートワークが同期されていないか、公開されてない場合は、コピー／同期処理全体をやり直します。</p>
     <ol>
      <li>CRXDE Lite に移動します。
       <ul>
-       <li>削除 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
+       <li><code>&lt;sync-folder&gt;/_CSS/_OOTB</code> を削除します。</li>
       </ul> </li>
-     <li>Navigate to the CRX package manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>CRX パッケージマネージャー（<code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>）に移動します。
       <ol>
        <li>リストでビューアパッケージを検索します（<code>cq-dam-scene7-viewers-content</code> で始まります）。</li>
        <li>「<strong>再インストール</strong>」をクリックします。</li>
