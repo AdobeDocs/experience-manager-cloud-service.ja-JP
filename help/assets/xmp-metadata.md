@@ -1,8 +1,8 @@
 ---
 title: XMP メタデータ
-description: メタデータ管理用のXMP(Extensible Metadata Platform)メタデータ標準について説明します。 AEMでは、メタデータの作成、処理および交換のための標準化された形式として使用されます。
+description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 XMP（Extensible Metadata Platform）は、AEM Assets であらゆるメタデータ管理に使用されるメタデータ規格です。XMP で提供される標準形式によって、多様なアプリケーションに対応したメタデータの作成、処理およびやり取りができます。
 
-Aside from offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich [content model](#xmp-core-concepts) and is [supported by Adobe](#advantages-of-xmp) and other companies, so that users of XMP in combination with AEM Assets have a powerful platform to build upon.
+XMP では、すべてのファイル形式に埋め込むことができる共通のメタデータエンコーディングのほか、リッチ[コンテンツモデル](#xmp-core-concepts)も提供され、[アドビによるサポート](#advantages-of-xmp)やその他各社のサポートがあるので、XMP を AEM Assets と組み合わせて使用すると強力なプラットフォームを構築できます。
 
-## XMPの概要とエコシステム {#xmp-ecosystem}
+## XMP の概要とエコシステム {#xmp-ecosystem}
 
-AEM Assetsは、XMPメタデータ標準をネイティブにサポートします。 XMP は、デジタルアセット内の標準化されたメタデータと独自メタデータを処理および格納するための規格です。XMP は、複数のアプリケーションでメタデータを効率的に使用するための共通規格となるよう設計されています。
+AEM Assets は、XMP メタデータ標準をネイティブにサポートしています。XMP は、デジタルアセット内の標準化されたメタデータと独自メタデータを処理および格納するための規格です。XMP は、複数のアプリケーションでメタデータを効率的に使用するための共通規格となるよう設計されています。
 
 例えば制作のプロフェッショナルは、アドビのアプリケーションに組み込まれた XMP サポートを使用して、複数のファイル形式に情報を渡します。AEM Assets リポジトリでは、XMP メタデータを抽出し、そのデータをコンテンツのライフサイクルの管理に使用します。自動化ワークフローを作成することもできます。
 
@@ -24,28 +24,28 @@ XMP が提供するデータモデル、ストレージモデルおよびスキ�
 
 EXIF、ID3、Microsoft Office などの従来のメタデータは、すべて自動的に XMP に解釈され、製品カタログなどの顧客固有のメタデータスキーマをサポートするよう拡張することができます。
 
-XMP のメタデータは、一連のプロパティで構成されます。これらのプロパティは、常に 資源という特定の事業者つまり、プロパティはリソースに関する「概要」です。 XMP の場合、リソースとなるのは常にアセットです。
+XMP のメタデータは、一連のプロパティで構成されます。これらのプロパティは、常にリソースと呼ばれる特定のエンティティに関連付けられます。つまり、プロパティはリソースの「説明」です。XMP の場合、リソースとなるのは常にアセットです。
 
-XMP によって定義される[メタデータ](https://en.wikipedia.org/wiki/Metadata)モデルは、任意の定義済みメタデータ項目のセットと併用できます。また、XMP によって、リソースで複数の処理手順がおこなわれる際にその履歴を記録する上で便利な基本的なプロパティに対して、特定の[スキーマ](https://en.wikipedia.org/wiki/XML_schema)も定義されます。処理手順は、撮影、[スキャン](https://en.wikipedia.org/wiki/Image_scanner)またはテキスト作成から、画像編集手順（[切り抜き](https://en.wikipedia.org/wiki/Cropping_%28image%29)やカラー調整など）を経て、最終的な画像へのアセンブリまでです。XMP の処理中に、各ソフトウェアプログラムまたはデバイスでデジタルリソースに独自の情報を付加できます。この情報は、最終的なデジタルファイルで保持されます。
+XMP によって定義される[メタデータ](https://en.wikipedia.org/wiki/Metadata)モデルは、任意の定義済みメタデータ項目のセットと併用できます。また、XMP によって、リソースで複数の処理手順がおこなわれる際にその履歴を記録するうえで便利な基本的なプロパティに対して、特定の[スキーマ](https://en.wikipedia.org/wiki/XML_schema)も定義されます。処理手順は、撮影、[スキャン](https://en.wikipedia.org/wiki/Image_scanner)またはテキスト作成から、画像編集手順（[切り抜き](https://en.wikipedia.org/wiki/Cropping_%28image%29)やカラー調整など）を経て、最終的な画像へのアセンブリまでです。XMP の処理中に、各ソフトウェアプログラムまたはデバイスでデジタルリソースに独自の情報を付加できます。この情報は、最終的なデジタルファイルで保持されます。
 
-XMP のシリアライズおよび格納は、通常 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)（RDF）のサブセットを使用して実行され、[XML](https://en.wikipedia.org/wiki/XML) で表記されます。
+XMP のシリアライズおよび格納は、通常 [W3C](https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)（RDF）のサブセットを使用して実行され、[XML](https://ja.wikipedia.org/wiki/XML) で表記されます。
 
 ### XMP の利点 {#advantages-of-xmp}
 
 XMP には、他のエンコーディング規格およびエンコーディングスキーマに比べて次の利点があります。
 
-* XMP ベースのメタデータは利便性が高く、細かく分類されています。   
+* XMP ベースのメタデータは利便性が高く、細かく分類されています。  
 * XMP では 1 つのプロパティに複数の値を指定できます。
 * XMP の規格化されたエンコーディングによって、メタデータを簡単にやり取りできます。
-* XMP は拡張可能です。アセットに追加情報を追加できます。
+* XMP は拡張可能です。アセットに詳細情報を追加できます。
 
 XMP 規格は拡張できるように設計されていて、カスタムタイプのメタデータを XMP データに追加できます。一方、EXIF は拡張できません。EXIF のプロパティのリストは固定されていて、拡張することはできません。
 
 >[!NOTE]
 >
->XMP では通常、バイナリデータタイプを埋め込むことはできません。To carry binary data in XMP, for example, thumbnail images, they must be encoded in an XML-friendly format such as `Base64`.
+>XMP では通常、バイナリデータタイプを埋め込むことはできません。XMP でバイナリデータ（サムネール画像など）を扱う場合、XML に対応するフォーマット（`Base64` など）でエンコーディングする必要があります。
 
-### XMP core concepts {#xmp-core-concepts}
+### XMP の中心概念 {#xmp-core-concepts}
 
 **名前空間とスキーマ**
 
@@ -54,28 +54,28 @@ XMP スキーマは、一連のプロパティ名を共通の XML 名前空間�
 
 例えば、別個に設計された 2 つのスキーマにある **Creator** プロパティは、アセットを作成した個人を意味する場合と、アセットの作成元アプリケーション（Adobe Photoshop など）を意味する場合があります。
 
-**XMPのプロパティと値**
+**XMP のプロパティと値**
 
 XMP には、1 つ以上のスキーマからプロパティを選択し含めることができます。多くのアドビアプリケーションで使用される一般的なサブセットに含まれるプロパティの例を示します。
 
-* ダブリンコアスキーマ： `dc:title`, `dc:creator`, `dc:subject`, `dc:format`,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, `dc:rights`
-* XMP基本スキーマ： `xmp:CreateDate`、 `xmp:CreatorTool`、 `xmp:ModifyDate`、 `xmp:metadataDate`
-* XMP rights management schema: `xmpRights:WebStatement``xmpRights:Marked`
-* XMP media management schema: `xmpMM:DocumentID`
+* Dublin Core スキーマ：`dc:title`、`dc:creator`、`dc:subject`、`dc:format`、`dc:rights`
+* XMP 基本スキーマ：`xmp:CreateDate`、`xmp:CreatorTool`、`xmp:ModifyDate`、`xmp:metadataDate`
+* XMP Rights Management スキーマ：`xmpRights:WebStatement`、`xmpRights:Marked`
+* XMP Media Management スキーマ：`xmpMM:DocumentID`
 
-**言語の代替**
+**代替言語**
 
 XMP には、`xml:lang` プロパティをテキストプロパティに追加して、テキストの言語を指定する機能があります。
 
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
-Adobe Experience Manager(AEM)AssetsのこのXMP書き戻し機能は、アセットのメタデータの変更をアセットのレンディションに複製します。
+Adobe Experience Manager (AEM) Assets のこの XMP の書き戻し機能は、アセットメタデータの変更をアセットのレンディションにレプリケートします。
 
-AEM Assets内から、またはアセットのアップロード中に、アセットのメタデータを変更すると、変更は最初にCRXDEのアセットノード内に保存されます。
+AEM Assets 内からアセットのメタデータを変更した場合、またはアセットをアップロードした場合、変更は最初に CRXDE のアセットノードに保存されます。
 
-XMPのライトバック機能は、アセットのすべてのレンディションまたは特定のレンディションにメタデータの変更を反映します。
+XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。
 
-Consider a scenario where you modify the [!UICONTROL Title] property of the asset titled `Classic Leather` to `Nylon`.
+「`Classic Leather`」というタイトルのアセットの「[!UICONTROL タイトル]」プロパティを「`Nylon`」に変更するシナリオについて考えます。
 
 ![メタデータ](assets/metadata.png)
 
@@ -85,39 +85,39 @@ Consider a scenario where you modify the [!UICONTROL Title] property of the asse
 
 ただし、AEM Assets では、メタデータの変更はアセットのレンディションに自動的に反映されません。
 
-XMPのライトバック機能を使用すると、メタデータの変更をアセットのすべてのレンディションまたは特定のレンディションに反映できます。 ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイル内に変更内容が埋め込まれます。
+XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイル内に変更内容が埋め込まれます。
 
-### XMP書き戻しの有効化 {#enable-xmp-writeback}
+### XMP 書き戻しの有効化 {#enable-xmp-writeback}
 
 <!-- asgupta, Engg: Need attention here to update the configuration manager changes.
 -->
 
-To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
+アセットのアップロード時にメタデータの変更をアセットのレンディションに反映させるには、設定マネージャーで「**[!UICONTROL Adobe CQ DAM Rendition Maker]**」の設定を変更します。
 
-1. Configuration Managerを開くには、にアクセスしま `https://[aem_server]:[port]/system/console/configMgr`す。
-1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
-1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
+1. Configuration Manager を開くには、`https://[aem_server]:[port]/system/console/configMgr` にアクセスします。
+1. 「**[!UICONTROL Adobe CQ DAM Rendition Maker]**」設定を開きます。
+1. 「**[!UICONTROL Propagate XMP]**」オプションを選択し、変更を保存します。
 
-### 特定のレンディションに対するXMP書き戻しの有効化 {#enable-xmp-writeback-for-specific-renditions}
+### 特定のレンディションに対する XMP 書き戻しの有効化 {#enable-xmp-writeback-for-specific-renditions}
 
-To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. デフォルトでは、このステップには元のレンディションが設定されています。
+XMP の書き戻し機能によって、選択されたレンディションにメタデータの変更が反映されるようにするには、これらのレンディションを DAM メタデータ書き戻しワークフローの「[!UICONTROL XMP の書き戻しプロセス]」ワークフローステップに指定します。デフォルトでは、このステップには元のレンディションが設定されています。
 
-XMPの書き戻し機能で、レンディションのサムネール140.100.pngおよび319.319.pngにメタデータを反映するには、次の手順を実行します。
+XMP の書き戻し機能でメタデータを thumbnail.140.100.png および thumbnail.319.319.png のレンディションに反映するには、次の手順を実行します。
 
-1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
-1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
-1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
-1. 「 **[!UICONTROL Arguments]** 」ボックスにを追加 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`し、「 **[!UICONTROL OK]**」をタップまたはクリックします。
+1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**&#x200B;に移動します。
+1. モデルページで、「**[!UICONTROL DAM メタデータの書き戻し]**」ワークフローモデルを開きます。
+1. **[!UICONTROL DAM メタデータの書き戻し]**&#x200B;ページで、「**[!UICONTROL XMP の書き戻しプロセス]**」ステップを開きます。
+1. **[!UICONTROL ステップのプロパティ]**&#x200B;ダイアログボックスで、「**[!UICONTROL プロセス]**」タブをタップまたはクリックします。
+1. 「**[!UICONTROL 引数]**」ボックスに「`rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`」を追加し、「**[!UICONTROL OK]**」をタップまたはクリックします。
 
    ![step_properties](assets/step_properties.png)
 
 1. 変更内容を保存します。
-1. To regenerate the Pyramid TIFF (PTIFF) renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata write-back workflow. PTIFF レンディションは、Dynamic Media ハイブリッド実装でのみ、ローカルで作成および格納されます。
+1. 新しい属性で Dynamic Media 画像の PTIFF（Pyramid TIFF）レンディションを再生成するには、「**[!UICONTROL Dynamic Media プロセスの画像アセット]**」ステップを DAM メタデータ書き戻しワークフローに追加します。PTIFF レンディションは、Dynamic Media Hybrid 実装でのみ、ローカルで作成および格納されます。
 
 1. ワークフローを保存します。
 
-メタデータの変更は、アセットのレンディションレンディションthumbnail.140.100.pngおよびthumbnail.319.319.pngに反映され、他のレンディションレンディションレンディションには反映されません。
+メタデータの変更がアセットのレンディション thumbnail.140.100.png と thumbnail.319.319.png のみに反映され、他のレンディションには反映されなくなります。
 
 <!--
 >[!NOTE]
@@ -127,9 +127,9 @@ XMPの書き戻し機能で、レンディションのサムネール140.100.png
 >For more information about supported platforms, see [XMP metadata write-back prerequisites](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 -->
 
-### XMPメタデータのフィルター {#filtering-xmp-metadata}
+### XMP メタデータのフィルタリング {#filtering-xmp-metadata}
 
-AEM Assetsは、アセットバイナリから読み取られ、アセットの取り込み時にJCRに保存されるXMPメタデータのプロパティ/ノードのブラックリストフィルターとホワイトリストフィルターの両方をサポートしています。
+AEM Assets は、アセットの取得時にアセットバイナリから読み取られて JCR に保存される XMP メタデータのプロパティ／ノードのブラックリストフィルターとホワイトリストフィルターの両方をサポートしています。
 
 ブラックリストフィルターは、除外するよう指定されたプロパティを除く、すべての XMP メタデータプロパティを読み込みます。ただし、膨大な量の XMP メタデータ（例えば、10,000 個のプロパティを持つ 1,000 個のノード）を含む INDD ファイルなどのアセットタイプの場合、フィルタリングするノードの名前が必ずしも事前にわかるわけではありません。ブラックリストフィルターで、大量の XMP メタデータを含む膨大な量のアセットを読み込むと、監視キューの遅滞など、安定性に関する問題が、AEM インスタンス／クラスターで発生する可能性があります。
 
@@ -137,20 +137,20 @@ AEM Assetsは、アセットバイナリから読み取られ、アセットの�
 
 >[!NOTE]
 >
->フィルタリングは、アセットバイナリの XMP ソースから派生したプロパティに対してのみ機能します。EXIF 形式や IPTC 形式などの XMP 以外のソースから派生したプロパティについては、フィルタリングは機能しません。例えば、アセットの作成日は、`CreateDate` という名前のプロパティに EXIF TIFF 形式で格納されています。AEM では、この値を `exif:DateTimeOriginal`.という名前のメタデータフィールドに格納します。この場合は XMP 以外のソースなので、このプロパティにはフィルタリングは機能しません。
+>フィルタリングは、アセットバイナリの XMP ソースから派生したプロパティに対してのみ機能します。EXIF 形式や IPTC 形式などの XMP 以外のソースから派生したプロパティについては、フィルタリングは機能しません。例えば、アセットの作成日は、`CreateDate` という名前のプロパティに EXIF TIFF 形式で格納されています。AEM では、この値を `exif:DateTimeOriginal` という名前のメタデータフィールドに格納します。この場合は XMP 以外のソースなので、このプロパティにはフィルタリングは機能しません。
 
-1. Configuration Managerを開くには、にアクセスしま `https://[aem_server]:[port]/system/console/configMgr`す。
-1. Open the **[!UICONTROL Adobe CQ DAM XmpFilter]** configuration.
-1. To apply whitelist filtering, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. Configuration Manager を開くには、`https://[aem_server]:[port]/system/console/configMgr` にアクセスします。
+1. 「**[!UICONTROL Adobe CQ DAM XmpFilter]**」設定を開きます。
+1. ホワイトリストフィルターを適用するには、「**[!UICONTROL Apply Whitelist to XMP Properties]**」を選択し、「**[!UICONTROL Whitelisted XML Names for XMP filtering]**」ボックスで読み込むプロパティを指定します。
 
-1. To filter out blacklisted XMP properties after applying whitelist filtering, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
+1. ホワイトリストフィルターを適用した後、ブラックリストに登録された XMP プロパティを除外するには、それらのプロパティを「**[!UICONTROL Blacklisted XML Names for XMP filtering]**」ボックスに指定します。
 
    >[!NOTE]
    >
-   >「**[!UICONTROL Apply Blacklist to XMP Properties]**」チェックボックスは、デフォルトでオンになっています。つまり、ブラックリストフィルターは、デフォルトで有効になっています。To disable blacklist filtering, unselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
+   >「**[!UICONTROL Apply Blacklist to XMP Properties]**」チェックボックスは、デフォルトでオンになっています。つまり、ブラックリストフィルターは、デフォルトで有効になっています。ブラックリストフィルターを無効にするには、「**[!UICONTROL Apply Blacklist to XMP Properties]**」オプションをオフにします。
 
 1. 変更内容を保存します。
 
 >[!MORELIKETHIS]
 >
->* [アドビのXMP仕様](https://www.adobe.com/devnet/xmp.html)
+>* [アドビの XMP 仕様](https://www.adobe.com/devnet/xmp.html)
