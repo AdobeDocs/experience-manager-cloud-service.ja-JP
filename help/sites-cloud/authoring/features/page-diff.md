@@ -1,13 +1,13 @@
 ---
 title: ページの差分
 description: ページの差分表示を使用すると、2 つのページを並べて比較し、差分を強調表示できます。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# ページの差分 {#page-diff}
+# ページの差分{#page-diff}
 
 ## 概要 {#introduction}
 
@@ -17,22 +17,22 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->The user must have the **Modify/Create/Delete** permission on the node `/content/versionhistory` in order to use the feature.
+>この機能を使用するには、ノード `/content/versionhistory` に対する&#x200B;**変更／作成／削除**&#x200B;権限が必要です。
 >
->この機能の技術的詳細については、開発とページの差分を参照してください。<!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>この機能の技術的詳細については、「開発とページの差分」を参照してください。<!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
 
 ## 使用方法 {#use}
 
 並列比較による差分表示では、次のものを比較できます。
 
-* [バージョン](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) — 現在の状態を持つページの以前のバージョン
-* Live Copies - Live Copy with its Blueprint <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
-* [起動回数](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) — ソースで起動
-* Language Copies - A page before and after (re-)translation <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [バージョン](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - ページの以前のバージョンとその現在の状態
+* ライブコピー - ライブコピーとそのブループリント <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [ローンチ](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - ローンチとそのソース
+* 言語コピー - （再）翻訳前と（再）翻訳後のページ <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
 
 それらのコンテキスト内で差分の確認を開始する方法については、それぞれのトピックを参照してください。
 
-### 差分の表示 {#presentation-of-differences}
+### 差分の表示{#presentation-of-differences}
 
 比較対象のコンテンツにかかわらず、差分の表示は同じです。
 
@@ -43,7 +43,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 両方のページのソースは、ブラウザーウィンドウ上部のヘッダーバーに明瞭に表示されます。
 
-![バージョンを並べて表示](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
+![バージョンの並列表示](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
 差分によりコンポーネントおよび HTML レベルの変更が検出されます。変更された項目は、異なる色で強調表示されます。
 
@@ -59,27 +59,27 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 **HTML の変更**
 
 * ダークグリーン - 追加された HTML
-* 赤 — HTML削除
+* 赤 - 削除された HTML
 
 >[!NOTE]
 >
->言語コピーを比較する場合は、翻訳ですべてが変更され、強調表示をしても意味がないため、強調表示は無効になります。
+>言語コピーを比較する場合は、翻訳ですべてが変更され、強調表示をしても意味がないので、強調表示は無効になります。
 
-### フルスクリーンおよび終了 {#fullscreen-and-exiting}
+### 全画面表示および終了{#fullscreen-and-exiting}
 
 特定のコンテンツに集中するために、並列比較による差分表示のいずれかの「側」の全画面表示アイコンをクリックして、それをフルブラウザーウィンドウに拡大することができます。
 
-![フルスクリーンボタン](/help/sites-cloud/authoring/assets/versions-full-screen.png)
+![全画面表示ボタン](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 
-選択された側がウィンドウ全体に表示されますが、バーは上部に残るため、2 枚のページを切り替えることができます。
+選択された側がウィンドウ全体に表示されますが、バーは上部に残るので、2 枚のページを切り替えることができます。
 
-![フルスクリーンモード](/help/sites-cloud/authoring/assets/versions-full-screen-mode.png)
+![全画面表示モード](/help/sites-cloud/authoring/assets/versions-full-screen-mode.png)
 
 >[!NOTE]
 >
->ブラウザーの幅で両方のページ名をフルスクリーン表示で表示できない場合は、表示中のページの名前のみが表示され、省略記号の後ろに他方のページが表示されます。
+>全画面表示で両方のページ名がブラウザーの幅に収まらない場合は、表示中のページの名前のみ表示され、もう一方のページは省略記号の後ろに隠されます。
 
-またフルスクリーン終了アイコンをクリックして、全画面表示を閉じることができます。
+また全画面表示終了アイコンをクリックして、全画面表示を閉じることができます。
 
 ![全画面モードを終了](/help/sites-cloud/authoring/assets/versions-exit-full-screen.png)
 
@@ -91,15 +91,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * バージョンおよびローンチが異なるとき、差分は、パンくずリスト、メニュー、製品リスト、ロゴなどのダイナミックコンポーネント（コンテンツを表示する際にサイト構造に依存するコンポーネント）を考慮しません。
 * バージョンの差分表示では、アクセスコントロールポリシーおよびライブコピー関係は再現されません。
-* alt、title、srcの属性の変更など、イメージに変更が加えられると、変更されたときに青でハイライト表示されます。 ただし、イメージにsrc属性のBase64表現が含まれ、両方のイメージが同じように見える場合でも、src属性が異なるので、diffによってマークされることがあります。
+* alt、title、src 属性の変更など、画像を変更する場合、差分は青色で強調表示されます。たとえ両方の画像が同じに見える場合でも、画像に src 属性の Base64 による表示があるときに src 属性が異なれば、それが差分としてマークされます。
 * 差分表示では、画像の回転を検出できません。
 * ページを移動すると、移動前に作成したバージョンとの差分を実行できなくなります。
    * 差分で問題が発生した場合は、ページの[タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)を調べて、ページを移動したかどうかを確認します。
 
 >[!NOTE]
 >
->バージョンは互いに比較できません。現在のバージョンのみ、ページの他のバージョンと比較できます。 必ず変更が強調表示されるのは、現在のバージョンです。
+>古いバージョン同士を比較することはできません。比較できるのは、現在のバージョンと古いバージョンの組み合わせだけです。変更の強調表示は、必ず現在のバージョンに対しておこなわれます。
 
 >[!NOTE]
 >
->For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the developer documentation of this feature. <!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>ページの差分操作の仕組みおよびページの差分に影響を与える可能性のある制限事項について詳しくは、この機能の開発者向けドキュメントを参照してください。<!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
