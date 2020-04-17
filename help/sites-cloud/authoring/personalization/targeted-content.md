@@ -1,13 +1,13 @@
 ---
 title: ターゲットモードを使用したターゲットコンテンツのオーサリング
 description: ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# ターゲットモードを使用したターゲットコンテンツのオーサリング {#authoring-targeted-content-using-targeting-mode}
+# ターゲットモードを使用したターゲットコンテンツのオーサリング{#authoring-targeted-content-using-targeting-mode}
 
 AEM のターゲットモードを使用してターゲットコンテンツをオーサリングします。ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。次のことができます。
 
@@ -20,18 +20,18 @@ AEM のターゲットモードを使用してターゲットコンテンツを�
 * 訪問者のエクスペリエンスをシミュレート
 * ターゲットコンポーネントの設定をカスタマイズ
 
-AEM または Adobe Target をターゲティングエンジンとして使用できます（Adobe Target を使用するには有効な Adobe Target アカウントが必要です）。Adobe Target を使用する場合は、まず統合を設定する必要があります。See the instructions for integrating with Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+AEM または Adobe Target をターゲティングエンジンとして使用できます（Adobe Target を使用するには有効な Adobe Target アカウントが必要です）。Adobe Target を使用する場合は、まず統合を設定する必要があります。Adobe Target との統合手順を参照してください。<!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
 
-![コンテンツのターゲット設定](/help/sites-cloud/authoring/assets/targeted-content.png)
+![ターゲットコンテンツ](/help/sites-cloud/authoring/assets/targeted-content.png)
 
-The activities and experiences that you see in Target mode reflect the [Activities console](/help/sites-cloud/authoring/personalization/activities.md):
+ターゲットモードに表示されるアクティビティとエクスペリエンスは、[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md)を反映しています。
 
 * ターゲットモードを使用してアクティビティとエクスペリエンスに加えた変更は、アクティビティコンソールに反映されます。
 * アクティビティコンソールで加えた変更は、ターゲットモードに反映されます。
 
 >[!NOTE]
 >
->Adobe Target でキャンペーンを作成すると、`thirdPartyId` というプロパティが各キャンペーンに割り当てられます。Adobe Target でキャンペーンを削除しても、thirdPartyId は削除されません。`thirdPartyId` を異なるタイプ（AB、XT）のキャンペーンに再利用することはできません。また、手動で削除することはできません。この問題を回避するには、各キャンペーンに一意の名前を付けます。したがって、キャンペーン名を別のキャンペーンタイプで再使用することはできません。
+>Adobe Target でキャンペーンを作成すると、`thirdPartyId` というプロパティが各キャンペーンに割り当てられます。Adobe Target でキャンペーンを削除しても、thirdPartyId は削除されません。`thirdPartyId` を異なるタイプ（AB、XT）のキャンペーンに再利用することはできません。また、手動で削除することはできません。この問題を回避するには、各キャンペーンに一意の名前を付けてください。そうすれば、キャンペーン名を異なるキャンペーンタイプで再利用できなくなります。
 >
 >同じキャンペーンタイプで同じ名前を使用する場合は、既存のキャンペーンが上書きされます。
 >
@@ -41,18 +41,18 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 >
 >ターゲティングをおこなうとき、ブランディングとアクティビティの組み合わせは、チャネルレベルではなくユーザーレベルで保持されます。
 
-## ターゲットモードへの切り替え {#switching-to-targeting-mode}
+## ターゲットモードへの切り替え{#switching-to-targeting-mode}
 
 ターゲットモードに切り替えて、ターゲットコンテンツをオーサリングするためのツールにアクセスします。
 
 ターゲットモードに切り替えるには：
 
 1. ターゲットコンテンツを作成するページを開きます。
-1. ページ上部のツールバーで、モードドロップダウンメニューをクリックまたはタップして、使用可能なモードの種類を表示します。
+1. ページ上部のツールバーで、モードのドロップダウンメニューをクリックまたはタップして、使用可能なモードタイプを表示します。
 
    ![ターゲットモード](/help/sites-cloud/authoring/assets/targeted-mode.png)
 
-1. Click or tap **Targeting**. ページの上部に「ターゲット設定」オプションが表示されます。
+1. 「**ターゲット設定**」をクリックまたはタップします。ページの上部に「ターゲット設定」オプションが表示されます。
 
    ![ターゲットツールバー](/help/sites-cloud/authoring/assets/targeted-toolbar.png)
 
@@ -75,7 +75,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
    >[アクティビティコンソールを使用してブランドを作成する](/help/sites-cloud/authoring/personalization/activities.md#creating-a-brand-using-the-activities-console)ことをお勧めします。
    >
    >
-   >If you create a brand in any other way, make certain that the node `/campaigns/<brand>/master` exists or an error will result when you attempt to create an activity.
+   >他の方法でブランドを作成する場合は、ノード `/campaigns/<brand>/master` が存在することを確認してください。ノードがなければ、アクティビティを作成しようとするとエラーが発生します。
 
 1. **アクティビティ**&#x200B;ドロップダウンメニューの横の「+」をクリックまたはタップします。
 1. アクティビティ名を入力します。
@@ -86,16 +86,16 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 1. **ターゲティングエンジン**&#x200B;ドロップダウンメニューで、ターゲティングエンジンを選択します。
 
-   * If you select **ContextHub AEM**, the remaining fields are dimmed and not available. 「**作成**」をクリックまたはタップします。
+   * 「**ContextHub AEM**」を選択した場合は、残りのフィールドが灰色表示になり、使用できなくなります。「**作成**」をクリックまたはタップします。
 
-   * If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you configured the account) and Activity Type. <!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
+   * 「**Adobe Target**」を選択した場合は、設定（デフォルトでは、アカウントを設定するときに指定した設定）とアクティビティタイプを選択できます。<!--If you select **Adobe Target**, you can select a configuration (by default, it is the configuration you provided when you [configured the account](/help/sites-administering/opt-in.md)) and Activity Type.-->
 
 1. アクティビティメニューで、「**エクスペリエンスターゲット設定**」または「**A/B テスト**」を選択します。
 
    * エクスペリエンスターゲット設定 - Adobe Target アクティビティを AEM から管理します。
    * A/B テスト - Adobe Target の A/B テストアクティビティを AEM から作成および管理します。
 
-## ターゲット設定プロセス：作成、ターゲット、目標と設定 {#the-targeting-process-create-target-and-goals-settings}
+## ターゲット設定プロセス：作成、ターゲット、目標と設定{#the-targeting-process-create-target-and-goals-settings}
 
 ターゲットモードを使用して、アクティビティのいくつかの要素を設定できます。次の 3 ステップのプロセスを使用して、ブランドアクティビティ用のターゲットコンテンツを作成します。
 
@@ -107,7 +107,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 >[!NOTE]
 >
->ターゲット設定プロセスを使用するには、Targetアクティビティ作成者ユーザーグループのメンバーである必要があります。
+>ターゲット設定プロセスを使用するには、ターゲットアクティビティ作成者ユーザーグループのメンバーである必要があります。
 
 アクティビティを追加するには：
 
@@ -115,29 +115,29 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 1. **アクティビティ**&#x200B;ドロップダウンメニューで、ターゲットコンテンツを作成するアクティビティを選択します。
 1. ターゲット設定プロセスの手順を示すコントロールを表示するには、「**ターゲット設定を開始**」をクリックまたはタップします。
 
-   ![ターゲット設定の開始](/help/sites-cloud/authoring/assets/targeted-start-targeting.png)
+   ![ターゲット設定を開始](/help/sites-cloud/authoring/assets/targeted-start-targeting.png)
 
    >[!NOTE]
    >
    >作業するアクティビティを変更するには、「**戻る**」をクリックまたはタップします。
 
-## 作成：エクスペリエンスのオーサリング {#create-authoring-the-experiences}
+## 作成：エクスペリエンスのオーサリング{#create-authoring-the-experiences}
 
 コンテンツターゲット設定の作成ステップでは、エクスペリエンスを作成します。このステップでは、アクティビティのエクスペリエンスを作成または削除したり、各エクスペリエンスにオファーを追加したりできます。
 
-### ターゲットモードでのエクスペリエンスのオファーの表示 {#seeing-experience-offers-in-targeting-mode}
+### ターゲットモードでのエクスペリエンスのオファーの表示{#seeing-experience-offers-in-targeting-mode}
 
 [ターゲット設定プロセスを開始](#the-targeting-process-create-target-and-goals-settings)した後、エクスペリエンスを選択して、そのエクスペリエンスに提供されているオファーを表示します。エクスペリエンスを選択すると、ページ上のターゲットコンポーネントが変更されて、そのエクスペリエンスのオファーが表示されます。
 
 >[!CAUTION]
 >
->オーサーインスタンスで既にターゲティングされているコンポーネントのターゲティングを無効にする場合は、注意してください。各アクティビティも発行インスタンスから自動的に削除されます。
+>オーサーインスタンスで既にターゲティングされているコンポーネントのターゲティングを無効にする場合は、注意してください。パブリッシュインスタンスからも、それぞれのアクティビティが自動的に削除されます。
 
 >[!NOTE]
 >
 >オファーはターゲットコンポーネントのコンテンツです。
 
-エクスペリエンスはオーディエンスウィンドウに表示されます。In the following example, experiences include **Default**, **Female**, **Female over 30**, and **Female under 30**. This example shows the Default offer of a targeted **Image** component.
+エクスペリエンスはオーディエンスウィンドウに表示されます。次の例では、エクスペリエンスに、**デフォルト**、**女性**、**30 歳以上の女性**、**30 歳未満の女性**&#x200B;が含まれます。ここで表示されているのは、ターゲット設定された&#x200B;**画像**&#x200B;コンポーネントのデフォルトオファーです。
 
 ![ターゲット画像コンポーネント](/help/sites-cloud/authoring/assets/targeted-image-component.png)
 
@@ -149,7 +149,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 ![オファーを追加](/help/sites-cloud/authoring/assets/targeted-add-offer.png)
 
-訪問者プロパティがエクスペリエンスにマッピングされているどのセグメントとも一致しない場合は、デフォルトエクスペリエンスが表示されます。See [Adding Experiences using Targeting Mode](#adding-and-removing-experiences-using-targeting-mode).
+訪問者プロパティがエクスペリエンスにマッピングされているどのセグメントとも一致しない場合は、デフォルトエクスペリエンスが表示されます。[ターゲットモードを使用したエクスペリエンスの追加](#adding-and-removing-experiences-using-targeting-mode)を参照してください。
 
 ### カスタムオファーとライブラリオファー {#custom-offers-and-library-offers}
 
@@ -167,53 +167,53 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 [ターゲット設定プロセス](#the-targeting-process-create-target-and-goals-settings)の作成ステップを使用して、エクスペリエンスを追加および削除できます。さらに、エクスペリエンスを複製して、名前を変更することもできます。
 
-#### ターゲットモードを使用したエクスペリエンスの追加 {#adding-experiences-using-targeting-mode}
+#### ターゲットモードを使用したエクスペリエンスの追加{#adding-experiences-using-targeting-mode}
 
 エクスペリエンスを追加するには：
 
-1. To add an experience, click or tap **+** **Add Experience Targeting **that appears below existing experiences in the **Audiences** pane.
+1. エクスペリエンスを追加するには、**オーディエンス**&#x200B;ウィンドウで既存のエクスペリエンスの下に表示される「**+** エクスペリエンスターゲット設定を追加」をクリックまたはタップします。
 1. オーディエンスを選択します。デフォルトでは、オーディエンス名はエクスペリエンス名になります。必要に応じて、別の名前を入力できます。「**OK**」をクリックまたはタップします。
 
-#### ターゲットモードを使用したエクスペリエンスの削除 {#removing-experiences-using-targeting-mode}
+#### ターゲットモードを使用したエクスペリエンスの削除{#removing-experiences-using-targeting-mode}
 
 エクスペリエンスを削除するには：
 
-1. エクスペリエンス名の横にある矢印をクリックまたはタップします。
+1. エクスペリエンス名の横の矢印をクリックまたはタップします。
 
    ![削除とエクスペリエンス](/help/sites-cloud/authoring/assets/targeted-delete-experiene.png)
 
 1. 「**削除**」をクリックします。
 
-#### ターゲットモードを使用したエクスペリエンス名の変更 {#renaming-experiences-using-targeting-mode}
+#### ターゲットモードを使用したエクスペリエンス名の変更{#renaming-experiences-using-targeting-mode}
 
 ターゲットモードを使用してエクスペリエンス名を変更するには：
 
-1. エクスペリエンス名の横にある矢印をクリックまたはタップします。
-1. Click **Rename Experience** and type in the new name.
-1. 画面上の別の場所をクリックまたはタップして、変更を保存します。
+1. エクスペリエンス名の横の矢印をクリックまたはタップします。
+1. 「**エクスペリエンス名を変更**」をクリックし、新しい名前を入力します。
+1. 画面上のそれ以外の場所をクリックまたはタップして、変更を保存します。
 
 #### ターゲットモードを使用したオーディエンスの編集 {#editing-audiences-using-targeting-mode}
 
 ターゲットモードを使用してオーディエンスを編集するには：
 
-1. エクスペリエンス名の横にある矢印をクリックまたはタップします。
-1. Click **Edit Audience** and select a new audience.
+1. エクスペリエンス名の横の矢印をクリックまたはタップします。
+1. 「**オーディエンスを編集**」をクリックし、新しいオーディエンスを選択します。
 1. 「**OK**」をクリックします。
 
-#### ターゲットモードを使用したエクスペリエンスの複製 {#duplicating-experiences-using-targeting-mode}
+#### ターゲットモードを使用したエクスペリエンスの複製{#duplicating-experiences-using-targeting-mode}
 
 ターゲットモードを使用してエクスペリエンスをコピーするには：
 
-1. エクスペリエンス名の横にある矢印をクリックまたはタップします。
+1. エクスペリエンス名の横の矢印をクリックまたはタップします。
 1. 「**複製**」をクリックして、オーディエンスを選択します。
 1. 必要に応じてエクスペリエンス名を変更し、「**OK**」をクリックします。
 
-### ターゲットモードを使用したオファーの作成 {#creating-offers-using-targeting-mode}
+### ターゲットモードを使用したオファーの作成{#creating-offers-using-targeting-mode}
 
 エクスペリエンス用のオファーを作成するには、コンポーネントのターゲット設定をおこないます。ターゲット設定されたコンポーネントは、エクスペリエンス用のオファーとして使用されるコンテンツを提供します。
 
 * [既存のコンポーネントをターゲット設定](#creating-a-default-offer-by-targeting-an-existing-component)（コンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります）
-* [Targetコンポーネントを追加し](#creating-an-offer-by-adding-a-target-component)、コンポーネントにコンテンツを追加します。
+* [ターゲットコンポーネントを追加](#creating-an-offer-by-adding-a-target-component)（その後、このコンポーネントにコンテンツを追加します）
 
 コンポーネントのターゲット設定をしたら、各エクスペリエンス用のオファーを追加します。
 
@@ -226,7 +226,7 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 * [ライブラリオファーをカスタムオファーに変換](#converting-a-library-offer-to-a-custom-library)
 * [ライブラリオファーを開いてコンテンツを編集](#editing-a-library-offer)
 
-#### 既存のコンポーネントをターゲット設定してデフォルトオファーを作成 {#creating-a-default-offer-by-targeting-an-existing-component}
+#### 既存のコンポーネントをターゲット設定してデフォルトオファーを作成{#creating-a-default-offer-by-targeting-an-existing-component}
 
 ページ上のコンポーネントをアクティビティのデフォルトエクスペリエンス用のオファーとして使用するには、そのコンポーネントをターゲット設定します。ターゲット設定すると、そのコンポーネントがターゲットコンポーネントに包含され、そのコンテンツがデフォルトエクスペリエンス用のオファーになります。
 
@@ -236,23 +236,23 @@ The activities and experiences that you see in Target mode reflect the [Activiti
 
 1. ターゲット設定するコンポーネントをクリックまたはタップします。次の例のように、コンポーネント用のツールバーが表示されます。
 
-   ![対象コンポーネント](/help/sites-cloud/authoring/assets/targeted-component.png)
+   ![ターゲットコンポーネント](/help/sites-cloud/authoring/assets/targeted-component.png)
 
 1. ターゲットアイコンをクリックまたはタップします。
 
    ![ターゲットボタン](/help/sites-cloud/authoring/assets/targeted-target-button.png)
 
-   このコンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります。コンポーネントをターゲットにすると、そのデフォルトのノードがエクスペリエンスごとに複製されます。 これは、特定のオーサリングエクスペリエンスで、正しいコンテンツノードを編集するために必要です。For these non-default experiences, either [add a custom offer](#adding-a-custom-offer) or [add a library offer](#adding-an-offer-from-an-offer-library).
+   このコンポーネントのコンテンツが、デフォルトエクスペリエンス用のオファーになります。コンポーネントをターゲット設定すると、各エクスペリエンスについてデフォルトノードが置き換えられます。これは、特定のオーサリングエクスペリエンスで、正しいコンテンツノードを編集するために必要です。このようなデフォルト以外のエクスペリエンスに対して、[カスタムオファーを追加](#adding-a-custom-offer)するか、[ライブラリオファーを追加](#adding-an-offer-from-an-offer-library)します。
 
 #### ターゲットコンポーネントを追加してオファーを作成 {#creating-an-offer-by-adding-a-target-component}
 
-ターゲットコンポーネントを追加して、デフォルトエクスペリエンスのオファーを作成します。Targetコンポーネントは、他のコンポーネントのコンテナで、その中に配置されたコンポーネントがターゲットになります。 ターゲットコンポーネントを使用すると、複数のコンポーネントを追加して 1 つのオファーを作成することができます。また、エクスペリエンスごとに異なるコンポーネントを使用して、異なるオファーを作成することもできます。
+ターゲットコンポーネントを追加して、デフォルトエクスペリエンスのオファーを作成します。ターゲットコンポーネントは他のコンポーネントのコンテナであり、この中に配置されるコンポーネントがターゲットになります。ターゲットコンポーネントを使用すると、複数のコンポーネントを追加して 1 つのオファーを作成することができます。また、エクスペリエンスごとに異なるコンポーネントを使用して、異なるオファーを作成することもできます。
 
-See [Configuring Target component options](#configuring-target-component-options) for information on customizing this component.
+このコンポーネントのカスタマイズについては、[ターゲットコンポーネントオプションの設定](#configuring-target-component-options)を参照してください。
 
 >[!NOTE]
 >
->Offers that you create using the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) can also contain several components. このようなオファーはオファーライブラリに所属し、複数のエクスペリエンスに使用できます。
+>[オファーコンソール](/help/sites-cloud/authoring/personalization/offers.md)を使用して作成するオファーにも、複数のコンポーネントを含めることができます。このようなオファーはオファーライブラリに所属し、複数のエクスペリエンスに使用できます。
 
 ターゲットコンポーネントはコンテナなので、他のコンポーネントのドロップ先として表示されます。
 
@@ -272,30 +272,30 @@ See [Configuring Target component options](#configuring-target-component-options
 
 ターゲットコンポーネントは、編集モードまたはターゲットモードでページに追加できます。ターゲットコンポーネントにコンポーネントを追加できるのは、ターゲットモードのときだけです。ターゲットコンポーネントは、パーソナライゼーションコンポーネントグループに所属します。
 
-ターゲットコンテンツを編集する場合は、「**ターゲット設定を開始**」をクリックまたはタップしてから、編集する必要があります。
+ターゲットコンテンツを編集する場合は、「ターゲット設定を開始」をクリックまたはタップする必要があります。
 
 1. オファーを表示するページにターゲットコンポーネントをドラッグします。
 1. デフォルトでは、場所 ID は設定されていません。場所を設定するには、設定の歯車アイコンをクリックまたはタップします。
 
    >[!NOTE]
    >
-   >管理者が設定する場合は、場所を明示的に設定する必要がある場合があります。
+   >管理者の方針により、場所を明示的に設定するよう定められている場合があります。
    >
-   >Administrators can decide whether setting this configuration is required at `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
+   >管理者は、この設定を必須にするかどうかを `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet` で決定できます。
    >
    >ユーザーに場所の入力を求めるには、「**場所を強制**」チェックボックスをオンにします。
 
 1. オファーを作成するエクスペリエンスを選択します。
 1. オファーを作成します。
 
-   * デフォルトエクスペリエンスの場合は、コンポーネントをターゲットのドロップ領域にドラッグし、通常どおりコンポーネントのプロパティを編集して、オファーのコンテンツを作成します。
+   * デフォルトエクスペリエンスの場合は、コンポーネントをターゲットドロップ領域にドラッグし、通常どおりにコンポーネントのプロパティを編集して、オファーのコンテンツを作成します。
    * デフォルト以外のエクスペリエンスの場合は、[カスタムオファーを追加](#adding-a-custom-offer)するか、[ライブラリオファーを追加](#adding-an-offer-from-an-offer-library)します。
 
-#### カスタムオファーの追加 {#adding-a-custom-offer}
+#### カスタムオファーの追加{#adding-a-custom-offer}
 
 ターゲットコンポーネントのコンテンツをターゲットモードで作成して、オファーを作成します。カスタムオファーを作成したら、単一エクスペリエンス用のオファーとして使用します。
 
-If you decide that the offer can be used for other experiences, you can create a custom offer and [add it to the library](#adding-a-custom-offer-to-a-library). For information about using the Offers console to create a reusable offer, see [Add an Offer to an Offer Library](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
+オファーを他のエクスペリエンスにも使用できるようにする場合は、カスタムオファーを作成して、[ライブラリに追加](#adding-a-custom-offer-to-a-library)できます。オファーコンソールを使用して再利用可能なオファーを作成する方法については、[オファーをオファーライブラリに追加](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)を参照してください。
 
 1. オファーを追加するエクスペリエンスを選択します。
 1. コンポーネントメニューを表示するには、オファーを追加するターゲットコンポーネントをクリックまたはタップします。
@@ -312,9 +312,9 @@ If you decide that the offer can be used for other experiences, you can create a
 
 1. コンポーネントのコンテンツを編集します。
 
-#### オファーライブラリからのオファーの追加 {#adding-an-offer-from-an-offer-library}
+#### オファーライブラリからのオファーの追加{#adding-an-offer-from-an-offer-library}
 
-Add an offer from the [offer library](/help/sites-cloud/authoring/personalization/offers.md) to an experience. 現在ターゲットにしているブランドのライブラリからオファーを追加できます。
+[オファーライブラリ](/help/sites-cloud/authoring/personalization/offers.md)からエクスペリエンスにオファーを追加します。現在ターゲット設定しているブランドのライブラリから、任意のオファーを追加できます。
 
 ライブラリオファーをデフォルトエクスペリエンスに追加することはできません。
 
@@ -325,7 +325,7 @@ Add an offer from the [offer library](/help/sites-cloud/authoring/personalizatio
 
 1. フォルダーアイコンをクリックまたはタップします。
 
-   ![フォルダアイコン](/help/sites-cloud/authoring/assets/targeted-folder-button.png)
+   ![フォルダーアイコン](/help/sites-cloud/authoring/assets/targeted-folder-button.png)
 
 1. ライブラリからオファーを選択し、チェックマークアイコンをクリックまたはタップします。
 
@@ -333,24 +333,24 @@ Add an offer from the [offer library](/help/sites-cloud/authoring/personalizatio
 
    オファーピッカーを使用して、オファーを参照またはフィルタリングできます。参照またはフィルタリング時に、オファーを並べ替えて、オファーの表示方法を変更することもできます。右上の数字は、現在のライブラリで使用可能なオファーの数を示します。
 
-   * Click or tap **Browse** to navigate to another folder. ナビゲーションウィンドウが開いたら、矢印をクリックしてフォルダーにドリルダウンします。Click or tap **Browse** again to close the navigation pane.
+   * 別のフォルダーに移動するには、「**参照**」をクリックまたはタップします。ナビゲーションウィンドウが開いたら、矢印をクリックしてフォルダーにドリルダウンします。ナビゲーションウィンドウを閉じるには、「**参照**」を再度クリックまたはタップします。
    ![コンテンツの参照](/help/sites-cloud/authoring/assets/targeted-select-content-browse.png)
 
    * キーワードまたはタグでオファーをフィルタリングするには、「**フィルター**」をクリックまたはタップします。キーワードを入力し、ドロップダウンメニューからタグを選択します。フィルタリングウィンドウを閉じるには、「**フィルター**」を再度クリックまたはタップします。
-   ![コンテンツのフィルタ](/help/sites-cloud/authoring/assets/targeted-filter.png)
+   ![コンテンツのフィルター](/help/sites-cloud/authoring/assets/targeted-filter.png)
 
-   * オファーの並べ替え方法を変更するには、「**新しいものから順に表示**」の横の矢印をクリックまたはタップします。オファーは、新しいものから順に、または古いものから順に並べ替えることができます。
+   * オファーの並べ替え方法を変更するには、「**新しいものから順に表示**」の横の矢印をクリックまたはタップします。オファーは新しい順または古い順に並べることができます。
    ![フィルターの並べ替え順](/help/sites-cloud/authoring/assets/targeted-filter-sort.png)
 
    オファーをタイル形式またはリスト形式で表示するには、「**表示形式**」の横のアイコンをクリックまたはタップします。
 
    ![ボタンとして表示](/help/sites-cloud/authoring/assets/targeted-view-as-button.png)
 
-#### Adding a Custom Offer to a Library {#adding-a-custom-offer-to-a-library}
+#### カスタムオファーをライブラリに追加 {#adding-a-custom-offer-to-a-library}
 
 カスタムオファーを複数のエクスペリエンス用のオファーとして再利用する場合は、[オファーライブラリ](/help/sites-cloud/authoring/personalization/offers.md)に追加します。現在ターゲット設定しているブランドのライブラリにオファーを追加できます。
 
-For information about using the Offers console to create a reusable offer, see [Add an Offer to an Offer Library](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
+オファーコンソールを使用して再利用可能なオファーを作成する方法については、[オファーをオファーライブラリに追加](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library)を参照してください。
 
 1. カスタムオファーを表示するエクスペリエンスを選択します。
 1. カスタムオファーをクリックまたはタップしてオファーメニューを表示し、**オファーをオファーライブラリに保存**&#x200B;アイコンをクリックまたはタップします。
@@ -359,7 +359,7 @@ For information about using the Offers console to create a reusable offer, see [
 
 1. オファー名を入力し、オファーを追加するライブラリを選択して、チェックマークアイコンをクリックまたはタップします。
 
-#### ライブラリオファーからカスタムライブラリへの変換 {#converting-a-library-offer-to-a-custom-library}
+#### ライブラリオファーからカスタムライブラリへの変換{#converting-a-library-offer-to-a-custom-library}
 
 他のエクスペリエンスで表示するオファーはそのままにして、現在のエクスペリエンス用のオファーだけを変更したい場合は、ライブラリオファーをカスタムオファーに変換します。
 
@@ -373,22 +373,22 @@ For information about using the Offers console to create a reusable offer, see [
 オファーを編集するには、ターゲットモードでエクスペリエンスからライブラリオファーを開きます。ここで加えた変更は、そのオファーを使用しているすべてのエクスペリエンスに反映されます。
 
 1. ライブラリオファーを表示するエクスペリエンスを選択します。
-1. ライブラリオファーをローカルまたはカスタムオファーに変換します。See [Converting a Library Offer to a Custom Library](#converting-a-library-offer-to-a-custom-library).
+1. ライブラリオファーをローカルまたはカスタムオファーに変換します。[ライブラリオファーからカスタムライブラリへの変換](#converting-a-library-offer-to-a-custom-library)を参照してください。
 1. オファーのコンテンツを編集します。
 
-1. ライブラリに再度保存します。See [Adding a Custom Offer to a Library](#adding-a-custom-offer-to-a-library).
+1. ライブラリに再度保存します。[カスタムオファーをライブラリに追加](#adding-a-custom-offer-to-a-library)を参照してください。
 
 ## ターゲット設定：オーディエンスの設定 {#target-configuring-the-audiences}
 
 [ターゲット設定プロセス](#the-targeting-process-create-target-and-goals-settings)のターゲットステップでは、作成ステップで使用したエクスペリエンスとオーディエンスをマッピングします。ターゲットページには、各エクスペリエンスのターゲットとなるオーディエンスが表示されます。各エクスペリエンスのオーディエンスを指定または変更できます。Adobe Target を使用する場合は、A/B テストを作成して、オーディエンスの一定割合のトラフィックを特定のエクスペリエンスにターゲット設定することもできます。
 
-### AEM ターゲティングまたは Adobe Target（エクスペリエンスターゲット設定）を使用する場合 {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### AEM ターゲティングまたは Adobe Target（エクスペリエンスターゲット設定）を使用する場合{#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 マッピング図の左側にオーディエンスが、右側にエクスペリエンスが表示されます。
 
 ![オーディエンスのマッピング](/help/sites-cloud/authoring/assets/targeted-diagram.png)
 
-セグメントに基づいてオーディエンスを定義します。ページのクラウド設定によって、利用可能なセグメントが決まります。 ページが Adobe Target クラウド設定と関連付けられていない場合は、AEM セグメントをオーディエンスの定義に使用できます。ページが Adobe Target クラウド設定と関連付けられている場合は、Target セグメントを使用します。
+セグメントに基づいてオーディエンスを定義します。使用できるセグメントは、ページのクラウド設定によって決まります。ページが Adobe Target クラウド設定と関連付けられていない場合は、AEM セグメントをオーディエンスの定義に使用できます。ページが Adobe Target クラウド設定と関連付けられている場合は、Target セグメントを使用します。
 
 ターゲティングエンジンについては、[ターゲティングエンジン](/help/sites-cloud/authoring/personalization/overview.md#targeting-engine)を参照してください。
 
@@ -396,45 +396,45 @@ For information about using the Offers console to create a reusable offer, see [
 
 ![警告アイコン](/help/sites-cloud/authoring/assets/targeted-warn.png)
 
-### Associating experiences with audiences (AEM or Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
+### エクスペリエンスとオーディエンスの関連付け（AEM または Adobe Target）{#associating-experiences-with-audiences-aem-or-adobe-target}
 
 AEM ターゲティング（または Adobe Target エクスペリエンスターゲット設定）を使用する場合は、以下の手順を使用してエクスペリエンスとオーディエンスを関連付けます。
 
 1. エクスペリエンスにマッピングされているオーディエンスボックスの横のドロップダウン矢印をクリックまたはタップします。
-1. (Optional) Click or tap **Edit** and then type a keyword to search for the desired segment.
+1. （オプション）「**編集**」をクリックまたはタップし、キーワードを入力して目的のセグメントを検索します。
 1. オーディエンスのリストからオーディエンスを選択し、「**OK**」をクリックまたはタップします。
 
-### A/B テストを使用する場合（Adobe Target） {#if-you-are-using-a-b-testing-adobe-target}
+### A/B テストを使用する場合（Adobe Target）{#if-you-are-using-a-b-testing-adobe-target}
 
 A/B テストアクティビティがある場合は、オーディエンスが左側に、各エクスペリエンスを表示する割合が中央に、エクスペリエンスが右側に表示されます。
 
-合計が 100 ％になるように割合を変更できます。A/B テストでは、1 つのオーディエンスを複数のエクスペリエンスで使用できます。
+合計が 100％になるように割合を変更できます。A/B テストでは、1 つのオーディエンスを複数のエクスペリエンスで使用できます。
 
-![A/Bターゲット設定](/help/sites-cloud/authoring/assets/targeted-ab.png)
+![A/B ターゲティング](/help/sites-cloud/authoring/assets/targeted-ab.png)
 
 ### A/B テストを使用したオーディエンスとトラフィックの割合の関連付け {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
 1. エクスペリエンスにマッピングされているオーディエンスの横のドロップダウンボックスをクリックまたはタップします。
 1. （オプション）「**編集**」をクリックし、キーワードを入力して目的のセグメントを検索します。
-1. Click or tap **OK.**
+1. 「**OK**」をクリックまたはタップします。
 1. パーセント単位で入力し、オーディエンスのトラフィックを各エクスペリエンスにどのようにルーティングするかを設定します。合計が 100 になるようにしてください。
 1. （オプション）エクスペリエンス名の横のドロップダウンメニューをクリックして、エクスペリエンス名を編集します。
 
-## 目標と設定：アクティビティの設定と目標の設定 {#goals-settings-configuring-the-activity-and-setting-goals}
+## 目標と設定：アクティビティの設定と目標の設定{#goals-settings-configuring-the-activity-and-setting-goals}
 
-The Goals &amp; Settings step of [the targeting process](#the-targeting-process-create-target-and-goals-settings) involves configuring the behavior of the brand activity. アクティビティの優先度や、開始と終了のタイミングを指定します。さらに、目標も追跡します。アクティビティに関して何を測定するかを具体的に決定できます。
+[ターゲット設定プロセス](#the-targeting-process-create-target-and-goals-settings)の目標と設定ステップでは、ブランドアクティビティの動作を設定します。アクティビティの優先度や、開始と終了のタイミングを指定します。さらに、目標も追跡します。アクティビティに関して何を測定するかを具体的に決定できます。
 
-目標指標は、ターゲティングエンジンに Adobe Target を使用する場合にのみ利用できます。1 つ以上の目標を定義する必要があります。Adobe Analytics を設定済みで、A4T Analytics クラウド設定がある場合は、レポートソースを Adobe Target にするか Adobe Analytics にするかを選択できます。
+目標指標は、ターゲティングエンジンに Adobe Target を使用する場合にのみ利用できます。1 つ以上の目標指標を定義する必要があります。Adobe Analytics を設定済みで、A4T Analytics クラウド設定がある場合は、レポートソースを Adobe Target にするか Adobe Analytics にするかを選択できます。
 
 目標指標は、公開済みのキャンペーンに対してのみ測定されます。
 
 AEM をターゲティングエンジンとして使用する場合：
 
-![ターゲットエンジンとしてのAEM](/help/sites-cloud/authoring/assets/targeted-goals.png)
+![ターゲットエンジンとしての AEM](/help/sites-cloud/authoring/assets/targeted-goals.png)
 
 Adobe Target をターゲティングエンジンとして使用する場合：
 
-![ターゲットエンジンとしてのAdobe Target](/help/sites-cloud/authoring/assets/targeted-engine.png)
+![ターゲットエンジンとしての Adobe Target](/help/sites-cloud/authoring/assets/targeted-engine.png)
 
 Adobe Target をターゲティングエンジンとして使用し、アカウントに対して A4T Analytics を設定済みの場合は、**レポートソース**&#x200B;ドロップダウンメニューが追加で表示されます。
 
@@ -444,9 +444,9 @@ Adobe Target をターゲティングエンジンとして使用し、アカウ�
 
 | 指標 | 説明 | オプション |
 |---|---|---|
-| コンバージョン | テスト対象エクスペリエンスのどこかをクリックした訪問者の割合。コンバージョンは訪問者ごとに 1 回としてカウントすることも、訪問者がコンバージョンを達成するたびにカウントすることもできます。コンバージョン指標は次のいずれかに設定されます | ページの表示 — URLを選択してURLまたは複数のURLを定義するか、「URLに含む」を選択してパスまたはキーワードを追加することで、オーディエンスが表示したページを定義できます。 mbox が表示された - mbox 名を入力して、オーディエンスが表示した mbox を定義できます。「Mbox を追加」をクリックして、複数の mbox を入力できます。 |
-| 売上高 | 訪問によって生成された売上高。 表示された売上高指標から選択できます。 これらのオプションでは、mbox が表示されたかどうかで、目標に到達したかどうかを判断します。1 つまたは複数の mbox を定義できます。 | 訪問者あたりの売上高(RPV)、平均注文額(AOV)、合計販売額、注文件数 |
-| エンゲージメント | 3種類のエンゲージメントを測定できます | ページビュー数、カスタムスコア、サイト滞在時間 |
+| コンバージョン | テスト対象エクスペリエンスのどこかをクリックした訪問者の割合。コンバージョンは訪問者ごとに 1 回としてカウントすることも、訪問者がコンバージョンを達成するたびにカウントすることもできます。コンバージョン指標は次のいずれかに設定します。 | ページが表示された - 「URL が以下である」を選択して 1 つ以上の URL を定義するか、「URL に以下を含む」を選択してパスまたはキーワードを追加することによって、オーディエンスが表示したページを定義できます。mbox が表示された - mbox 名を入力して、オーディエンスが表示した mbox を定義できます。「Mbox を追加」をクリックして、複数の mbox を入力できます。 |
+| 売上高 | 訪問によって生成された売上高。表示された売上高指標から選択できます。これらのオプションでは、mbox が表示されたかどうかで、目標に到達したかどうかを判断します。1 つまたは複数の mbox を定義できます。 | 訪問者あたりの売上高（RPV）、平均注文額（AOV）、合計販売額、購入回数 |
+| エンゲージメント | 次の 3 種類のエンゲージメントを測定できます。 | ページビュー数、カスタムスコア、サイト滞在時間 |
 
 さらに、詳細設定で成功指標のカウント方法を決定できます。インプレッションごとや訪問者ごとに指標をカウントする、アクティビティにユーザーを保持するか、ユーザーの再入場を許可しないかを選択する、などのオプションがあります。
 
@@ -454,13 +454,13 @@ Adobe Target をターゲティングエンジンとして使用し、アカウ�
 
 | ユーザーがこの目標指標に達した後... | 次の動作を選択... |
 |---|---|
-| カウントを増分、アクティビティでユーザーを保持 | カウントの増分方法を指定します。参加者ごとに1回、ページ更新を除くすべてのインプレッションで、すべてのインプレッションで |
-| カウントを増分、ユーザーをリリース、再入場を許可 | 訪問者がアクティビティに再度入った場合に表示されるエクスペリエンスを選択します。同じエクスペリエンス、ランダムエクスペリエンス、未表示エクスペリエンス |
-| カウントを増分、ユーザーをリリース、再入場を許可しない | アクティビティコンテンツの代わりにユーザーに表示する内容を決定します。同じエクスペリエンス（追跡なし）、デフォルトコンテンツまたは他のアクティビティコンテンツ |
+| カウントを増分、アクティビティでユーザーを保持 | カウントの増分方法を指定します：参加者ごとに 1 回、すべてのインプレッション（ページの更新を除く）、すべてのインプレッション |
+| カウントを増分、ユーザーをリリース、再入場を許可 | 訪問者がアクティビティに再入場した場合に表示されるエクスペリエンスを選択します：同じエクスペリエンス、ランダムエクスペリエンス、未表示エクスペリエンス |
+| カウントを増分、ユーザーをリリース、再入場を許可しない | アクティビティのコンテンツの代わりにユーザーに表示する内容を指定します：同じエクスペリエンス（トラッキングなし）、デフォルト／他のアクティビティのコンテンツ |
 
-成功指標について詳しくは、[Adobe Target ドキュメント](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html)を参照してください。
+成功指標について詳しくは、[Adobe Target ドキュメント](https://marketing.adobe.com/resources/help/ja_JP/target/target/r_success_metrics.html)を参照してください。
 
-### 設定の構成（AEM ターゲティング） {#configuring-settings-aem-targeting}
+### 設定の構成（AEM ターゲティング）{#configuring-settings-aem-targeting}
 
 AEM ターゲティングを使用する場合に設定を構成するには：
 
@@ -476,7 +476,7 @@ AEM ターゲティングを使用する場合に設定を構成するには：
 
 1. アクティビティの優先度を指定するには、スライダーを使用して「**低**」、「**標準**」または「**高**」を選択します。
 
-### 目標と設定の構成（Adobe Target） {#configuring-goals-settings-adobe-target}
+### 目標と設定の構成（Adobe Target）{#configuring-goals-settings-adobe-target}
 
 Adobe Target を使用する場合に目標と設定を構成するには：
 
@@ -491,19 +491,19 @@ Adobe Target を使用する場合に目標と設定を構成するには：
    * **指定された日時**：特定の時間。このオプションを選択した場合は、カレンダーアイコンをクリックまたはタップし、日付を選択して、アクティビティを終了する時刻を指定します。
 
 1. アクティビティの優先度を指定するには、スライダーを使用して「**低**」、「**標準**」または「**高**」を選択します。
-1. If you have configured Adobe Analytics with your Adobe Target Account, then you see the **Reporting Source** drop-down menu. ソースとして「**Adobe Target**」または「**Adobe Analytics**」を選択します。
+1. Adobe Target アカウントを使用して Adobe Analytics を設定している場合は、**レポートソース**&#x200B;ドロップダウンメニューが表示されます。ソースとして「**Adobe Target**」または「**Adobe Analytics**」を選択します。
 
    「**Adobe Analytics**」を選択した場合は、会社とレポートスイートを選択します。「**Adobe Target**」を選択した場合、アクションは不要です。
 
    ![レポートソース](/help/sites-cloud/authoring/assets/targeted-reporting-source.png)
 
-1. 「**目標指標**」領域の「**主な目標**」で、コンバージョン、売上高、エンゲージメントなど追跡する成功指標を選択し、その指標の測定方法（または目標に達したことを示すためにオーディエンスが取るアクション）を入力します。成功指標については、前の表の成功指標の定義および[Adobe Target のドキュメント](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html)を参照してください。
+1. 「**目標指標**」領域の「**主な目標**」で、コンバージョン、売上高、エンゲージメントなど追跡する成功指標を選択し、その指標の測定方法（または目標に達したことを示すためにオーディエンスが取るアクション）を入力します。成功指標については、前の表の目標指標の定義および [Adobe Target のドキュメント](https://marketing.adobe.com/resources/help/ja_JP/target/target/r_success_metrics.html)を参照してください。
 
-   You can rename the goal by clicking the three dots in the upper right corner and selecting **Rename**.
+   右上隅の 3 つのドットをクリックし、「**名前を変更**」を選択して、目標の名前を変更できます。
 
    すべてのフィールドをクリアする必要がある場合は、右上隅の 3 つのドットをクリックし、「**すべてのフィールドをクリア**」を選択します。
 
-   どの指標にも定義可能な詳細設定があります。この設定にアクセスするには、「**詳細設定**」を選択します。See definition of how success metrics are counted in previous table and see [Adobe Target documentation](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+   どの指標にも定義可能な詳細設定があります。この設定にアクセスするには、「**詳細設定**」を選択します。前の表の成功指標のカウント方法の定義と [Adobe Target のドキュメント](https://marketing.adobe.com/resources/help/ja_JP/target/target/r_success_metrics.html)を参照してください。
 
    >[!NOTE]
    >
@@ -517,18 +517,18 @@ Adobe Target を使用する場合に目標と設定を構成するには：
 
 1. 「**新しい指標を追加**」をクリックして、追加の成功指標を設定します。
 
-   ![その他の指標](/help/sites-cloud/authoring/assets/targeted-additional-metrics.png)
+   ![追加の指標](/help/sites-cloud/authoring/assets/targeted-additional-metrics.png)
 
    >[!NOTE]
    >
    >追加の目標を削除するには、3 つのドットをクリックまたはタップし、「**削除**」をクリックまたはタップします。AEM では、1 つ以上の目標を定義する必要があります。
 
-1. If you want more control over how success metrics are counted, click or tap **Advanced Settings** to access those.
+1. 成功指標のカウント方法をさらに詳細に制御する場合は、「**詳細設定**」をクリックまたはタップして、この設定にアクセスします。
 1. 「**保存**」をクリックします。
 
 設定後に、Adobe Target（エクスペリエンスまたは A/B テストのターゲット設定）を使用する[アクティビティのパフォーマンスを表示](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)できます。さらに、A/B テストのターゲット設定を使用して、[勝者を採用](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)することができます。
 
-## エクスペリエンスのシミュレーション {#simulating-an-experience}
+## エクスペリエンスのシミュレーション{#simulating-an-experience}
 
 訪問者のエクスペリエンスをシミュレートし、ターゲットコンテンツのデザインに従って期待されるとおりにページコンテンツが表示されることを確認します。シミュレートの際は、様々なユーザープロファイルを読み込んで、そのユーザー向けのターゲットコンテンツを表示してみます。
 
@@ -551,24 +551,24 @@ Adobe Target を使用する場合に目標と設定を構成するには：
 * ターゲットモードでのシミュレーションアクティビティ：ページには、ContextHub で現在選択されているユーザー向けのオファーが表示されます。このユーザーをターゲットとするオファーを編集できます。
 * プレビューモード：ContextHub を使用して、エクスペリエンスのベースとなるセグメントの条件を満たすユーザーと場所を選択します。ContextHub での選択を変更すると、ターゲットコンテンツもそれに従って変更されます。
 
-1. To switch to Preview mode, on the toolbar click or tap **Preview**.
+1. プレビューモードに切り替えるには、ツールバーで「**プレビュー**」をクリックまたはタップします。
 1. ツールバーで、ContextHub アイコンをクリックまたはタップします。
 
-   ![ContextHubボタン](/help/sites-cloud/authoring/assets/targeted-contexthub-button.png)
+   ![ContextHub ボタン](/help/sites-cloud/authoring/assets/targeted-contexthub-button.png)
 
 1. ContextHub を使用して、コンテキストプロパティを変更します。例えば、「ペルソナ」プロパティをクリックまたはタップして、別のユーザーを選択します。
 
-   ![ContextHubツールバー](/help/sites-cloud/authoring/assets/targeted-contexthub-toolbar.png)
+   ![ContextHub ツールバー](/help/sites-cloud/authoring/assets/targeted-contexthub-toolbar.png)
 
    ページが切り替わり、現在のコンテキストをターゲットとするコンテンツが表示されます。
 
 1. 表示されているオファーを編集するには、ターゲットモードに切り替えます。シミュレーションアクティビティが選択されている状態で、プレビューモードで設定したコンテキストのオファーを編集します。
 
-## ターゲットコンポーネントオプションの設定 {#configuring-target-component-options}
+## ターゲットコンポーネントオプションの設定{#configuring-target-component-options}
 
 ターゲットコンポーネントをカスタマイズするには、次の 2 つの方法のどちらかでコンポーネントのオプションにアクセスします。
 
-1. コンポーネントをターゲットにした後、ターゲットコンポーネントでそのコンポーネントをクリックまたはタップし、設定アイコン（歯車）をクリックします。
+1. ターゲットコンポーネント内のコンポーネントをターゲット設定した後に、コンポーネント、設定アイコン（歯車アイコン）の順にクリックまたはタップします。
 
    ![コンポーネント設定](/help/sites-cloud/authoring/assets/targeted-component-settings.png)
 
@@ -578,37 +578,37 @@ Adobe Target を使用する場合に目標と設定を構成するには：
 
 1. または、全画面表示モードでこの設定にアクセスするには、ターゲットコンポーネントオプションウィンドウで、全画面表示アイコンをクリックまたはタップします。
 
-   ![フルスクリーンボタン](/help/sites-cloud/authoring/assets/targeted-fullscreen.png)
+   ![全画面表示ボタン](/help/sites-cloud/authoring/assets/targeted-fullscreen.png)
 
    ターゲットコンポーネントオプションウィンドウが全画面表示されます。
 
-   ![フルスクリーンのコンポーネント](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+   ![全画面表示のコンポーネント](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
 
 1. 下の表の説明に従って、ターゲットコンポーネントを設定します。
 
-| Option | 説明 |
+| オプション | 説明 |
 |---|---|
 | 場所 | 場所は、ターゲットコンテンツの場所を識別する文字列であり、オファーを配置するページ上の場所（または位置またはコンポーネント）とオファーとを関連付けるために使用されます。このフィールドは汎用値です。オファーをコンポーネント内に配置すると、オファーが場所 ID を記憶します。ページが実行されると、エンジンがユーザーのセグメントを評価し、その評価に基づいて、アクティブなキャンペーンから表示すべきエクスペリエンスを選択します。そして、ページ上の場所 ID を確認して、この場所 ID を持つオファーを場所に関連付けようとします。 |
-| エンジン | 使用するエンジンに応じて、クライアント側のルール（追跡なし）、Adobe Target、ContextHub、Adobe Campaignのいずれかを選択します。 |
+| エンジン | 使用したいエンジンに応じて、「クライアント側のルール（追跡なし）」、「Adobe Target」、「ContextHub」、「Adobe Campaign」から選択します。 |
 
 エンジンとして Adobe Target を選択した場合：
 
-![エンジンとしてのターゲット設定](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
+![エンジンとしての Target](/help/sites-cloud/authoring/assets/targeted-target-as-enging.png)
 
-| Option | 説明 |
+| オプション | 説明 |
 |---|---|
-| 正確なターゲット設定 | 正確なターゲット設定を有効にすると、コンポーネントは ClientContext または ContextHub のデータが利用可能になるまで待ってから Adobe Target にリクエストを送信します。これによって、読み込み時間が長くなる場合があります。オーサリング時は、正確なターゲット設定は常に有効になっています。「正確なターゲット設定」チェックボックスをオンにした場合、mbox はまず mboxDefine を実行し、後で mboxUpdate を実行するので、データが利用可能になった時点で Ajax リクエストがおこなわれます。「正確なターゲット設定」チェックボックスを選択しない場合、mboxは直ちにmboxCreateを実行し、結果として同期リクエストを生成します（この場合、すべてのコンテキストデータがまだ使用できるとは限りません）。 注意：特定のコンポーネントで「正確なターゲット設定」を有効または無効にしても、グローバル設定には影響しません。コンポーネントで「正確なターゲット設定」を有効にすれば、その設定が常にグローバル設定よりも優先されます。 |
+| 正確なターゲット設定 | 正確なターゲット設定を有効にすると、コンポーネントは ClientContext または ContextHub のデータが利用可能になるまで待ってから Adobe Target にリクエストを送信します。これによって、読み込み時間が長くなる場合があります。オーサリング時は、正確なターゲット設定は常に有効になっています。「正確なターゲット設定」チェックボックスをオンにした場合、mbox はまず mboxDefine を実行し、後で mboxUpdate を実行するので、データが利用可能になった時点で Ajax リクエストがおこなわれます。「正確なターゲット設定」チェックボックスをオフにした場合、mbox は mboxCreate を実行するので、直ちに同期リクエストがおこなわれます（この場合、必ずしもすべてのコンテキストデータがまだ利用可能になっていないことがあります）。注意：特定のコンポーネントで「正確なターゲット設定」を有効または無効にしても、グローバル設定には影響しません。コンポーネントで「正確なターゲット設定」を有効にすれば、その設定が常にグローバル設定よりも優先されます。 |
 | 解決されたセグメントを含める | このチェックボックスをオンにすると、mbox 呼び出しにすべての解決されたセグメントが含められ、すべての設定済みパラメーターがページおよびフレームワークに含められます。この機能は、XML API を使用して AEM セグメントを同期している状況でのみ有効になります。Adobe Target が扱っていないセグメント（スクリプトセグメントなど）が AEM にある場合は、このオプションを使用して、AEM でセグメントを解決し、セグメントがアクティブな Adobe Target に情報を送信できます。 |
-| 継承されたコンテキストパラメーター | 選択したページに関連付けられている、Adobe Target フレームワークから継承されたコンテクストパラメーターがあれば、一覧表示します。 |
-| コンテクストパラメーター | 「フィールドを追加」をクリックまたはタップして、追加のコンテキストパラメーターを設定します（Targetフレームワークで使用できるものと同じ）。 コンポーネントに追加されたコンテクストパラメーターは、そのコンポーネントにのみ適用されます。フレームワークに直接コンテクストパラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。 |
-| 静的パラメーター | 「フィールドを追加」をクリックまたはタップして、追加の静的パラメーターを設定します（Targetフレームワークで使用できるパラメーターと同じ）。 コンポーネントに追加された静的パラメーターは、フレームワークに直接静的パラメーターを追加した場合と同様に、コンポーネントにのみ適用され、他のコンポーネントには適用されません。 静的パラメーターは、コンテクスト（ContextHub の ClientContext）からは得られません。 |
+| 継承されたコンテキストパラメーター | 選択したページに関連付けられている、Adobe Target フレームワークから継承されたコンテキストパラメーターがあれば、一覧表示します。 |
+| コンテキストパラメーター | 追加のコンテキストパラメーター（Target フレームワークで使用可能なものと同じ）を設定するには、「フィールドを追加」をクリックまたはタップします。コンポーネントに追加されたコンテキストパラメーターは、そのコンポーネントにのみ適用されます。フレームワークに直接コンテキストパラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。 |
+| 静的パラメーター | 追加の静的パラメーター（Target フレームワークで使用可能なものと同じ）を設定するには、「フィールドを追加」をクリックまたはタップします。コンポーネントに追加された静的パラメーターは、そのコンポーネントにのみ適用されます。フレームワークに直接静的パラメーターを追加した場合とは異なり、他のコンポーネントには適用されません。静的パラメーターは、コンテキスト（ContextHub または ClientContext）からは得られません。 |
 
 >[!NOTE]
 >
 >コンポーネントを選択してターゲット設定可能にすると、AEM はそのコンポーネントの置き換えと Adobe Target コンポーネントの挿入もおこないます（Adobe Target コンポーネントは、ページに手動で追加できるだけでなく、既存コンポーネントをターゲット設定する場合にも使用できます）。
 >
->AEM と Adobe Campaign を統合している場合は、**Adobe Campaign** をエンジンとして選択します。詳しくは、AEM と Adobe Campaign の統合を参照してください。
+>AEM と Adobe Campaign を統合している場合は、**Adobe Campaign** をエンジンとして選択します。詳しくは、「AEM と Adobe Campaign の統合」を参照してください。
 >
->ターゲット設定に ContextHub を使用する場合は、**ContextHub** をエンジンとして選択します。詳しくは、ContextHubの設定を参照してください。
+>ターゲット設定に ContextHub を使用する場合は、**ContextHub** をエンジンとして選択します。詳しくは、ContextHub の設定を参照してください。
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
