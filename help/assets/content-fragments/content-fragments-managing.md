@@ -1,7 +1,7 @@
 ---
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントはアセットとして保存されるので、主にアセットコンソールから管理します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 >
 >コンテンツフラグメントは、ページのオーサリングで使用します。[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
-## コンテンツフラグメントの作成 {#creating-content-fragments}
+## コンテンツフラグメントの作成{#creating-content-fragments}
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 
@@ -24,7 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->単純なコンテンツフラグメントに使用されるテンプレートについて詳しくは、コンテンツフラグメントの開発を参照してください。
+>単純なコンテンツフラグメントに使用されるテンプレートについて詳しくは、「コンテンツフラグメントの開発」を参照してください。
 
 <!--
 >[!NOTE]
@@ -44,13 +44,13 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
       * テンプレート - **単純なフラグメント**&#x200B;など <!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
 
-      * [モデル](/help/assets/content-fragments/content-fragments-models.md) — 構造化コンテンツを必要とするフラグメントの作成に使用します。例えば、 **Airports** モデル
+      * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **空港**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
    * 使用可能なテンプレートとモデルがすべて表示されます。
    選択した後、「**次へ**」を使用して続けます。
 
-   ![断片基準](assets/cfm-managing-01.png)
+   ![フラグメントの基盤](assets/cfm-managing-01.png)
 
-4. In the **Properties** step specify:
+4. 「**プロパティ**」の手順で次を指定します。
 
    * **基本**
 
@@ -67,7 +67,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
       * **名前**
 
-         名前がURLの形成に使用されます。
+         URL の作成に使用される名前です。
 
           必須。タイトルから自動的に派生しますが、変更が可能です。
 
@@ -81,7 +81,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 * ツールバーから。フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
 * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
 
-![actions](assets/cfm-managing-02.png)
+![アクション](assets/cfm-managing-02.png)
 
 フラグメントを選択して、次の適用可能なアクションを含むツールバーを表示します。
 
@@ -97,7 +97,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 * **編集**
 
-   * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+   * フラグメントの要素、バリエーション、および関連付けられているコンテンツやメタデータと共に[コンテンツを編集するためにフラグメントを開く](/help/assets/content-fragments/content-fragments-variations.md)ことができます。
 
 * **タグを管理**
 * **コレクションに追加**
@@ -114,7 +114,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>これらの多くは、[アセット](/help/assets/manage-digital-assets.md)や [AEM デスクトップアプリケーション](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)に対する標準的なアクションです。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
@@ -130,11 +130,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 >
 >コンテンツフラグメントを編集するには、適切な権限が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
-1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
+1. **アセット**&#x200B;コンソールを使用して、コンテンツフラグメントの場所に移動します。
 2. フラグメントを開いて編集するには、以下のいずれかを実行します。
 
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
-   * Selecting the fragment, then **Edit** from the toolbar.
+   * フラグメントを選択してから、ツールバーの「**編集**」を選択。
    フラグメントエディターが開きます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
@@ -142,9 +142,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >[!NOTE]
    >
    >1. フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。
-   >
-   >
-   >2. The side panel can be hidden/shown using the **Toggle Side Panel** icon.
+      >
+      >
+      >
+
+   2. **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
 
 3. サイドパネルのアイコンを使用して、3 つのモデル間を移動します。
@@ -162,7 +164,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >
    >「**保存**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
+## 保存、キャンセルおよびバージョン{#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -201,40 +203,40 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 コンテンツフラグメントを編集する際には、AEM によって自動的にバージョンが作成されます。これにより、変更内容を&#x200B;**キャンセル**&#x200B;しても以前のコンテンツを復元できるようになります。
 
-1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
+1. コンテンツフラグメントを開いて編集しようとすると、AEM は&#x200B;*編集セッション*&#x200B;が存在しているかどうかを示す cookie ベースのトークンの存在を確認します。
 
-   1. トークンが見つかると、そのフラグメントは既存の編集セッションの一部であるとみなされます。
+   1. トークンが見つかると、そのフラグメントは既存の編集セッションの一部であると見なされます。
    2. トークンが&#x200B;**&#x200B;ないときにユーザーが編集を開始すると、バージョンが作成され、この新しい編集セッションのトークンがクライアントに送られ、cookie に保存されます。
 
 2. **&#x200B;アクティブな編集セッションがあるとき、編集中のコンテンツは自動的に 600 秒ごとに保存されます（デフォルト）。
 
    >[!NOTE]
    >
-   >The auto save interval is configurable using the `/conf` mechanism.
+   >自動保存間隔は `/conf` メカニズムを使用して設定できます。
    >
    >デフォルト値については、以下を参照してください。
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
-4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
+3. ユーザーが「**キャンセル**」を選択して編集をキャンセルすると、編集セッションの開始時に作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
+4. ユーザーが編集内容の「**保存**」を選択すると、更新された要素とバリエーションが保存され、トークンが削除されて編集セッションが終了します。
 
 ## フラグメントのコンテンツの編集 {#editing-the-content-of-your-fragment}
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理{#creating-and-managing-variations-within-your-fragment}
 
 マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
+## コンテンツをフラグメントと関連付ける{#associating-content-with-your-fragment}
 
 フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
-## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## フラグメントのメタデータ（プロパティ）の表示と編集{#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 「[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)」タブを使用し、フラグメントのプロパティを表示して編集できます。
 
-## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
+## コンテンツフラグメントのタイムライン{#timeline-for-content-fragments}
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
@@ -267,7 +269,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 次に例を示します。
 
-![timeline](assets/cfm-managing-05.png)
+![タイムライン](assets/cfm-managing-05.png)
 
 ## フラグメントのバージョンの比較 {#comparing-fragment-versions}
 
@@ -287,7 +289,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    * 挿入されたテキスト - 緑
    * 置き換えられたテキスト - 青
 
-* フルスクリーンアイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
+* 全画面表示アイコンを使用すれば、どちらかのバージョンで開いた後で、並列表示に切り替えることができます
 * 特定のバージョンに&#x200B;**戻す**&#x200B;ことができます
 * 「**完了**」を選択すると、コンソールに戻ります
 
@@ -314,7 +316,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 コンテンツフラグメントを使用するには、パブリッシュ環境で公開する必要があります。次の方法で公開できます。
 
-* 作成後に **Assets** コンソールから。
+* 作成後に **アセット**&#x200B;コンソールから。
 * [フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
@@ -324,7 +326,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 フラグメントを削除するには：
 
-1. **Assets** コンソールで、コンテンツフラグメントの場所に移動します。
+1. **アセット**&#x200B;コンソールで、コンテンツフラグメントの場所に移動します。
 2. フラグメントを選択します。
 
    >[!NOTE]
@@ -334,4 +336,4 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
