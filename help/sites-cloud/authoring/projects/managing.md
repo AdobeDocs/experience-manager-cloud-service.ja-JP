@@ -1,7 +1,7 @@
 ---
 title: プロジェクトの管理
-description: プロジェクトを使用すると、リソースを1つのエンティティにグループ化して、プロジェクトコンソールでアクセスし管理できるようにし、プロジェクトを整理できます
-translation-type: tm+mt
+description: プロジェクトを使用すると、リソースをプロジェクトコンソールでアクセスして管理できる 1 つのエンティティにグループ化して整理できます。
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -29,17 +29,17 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 プロジェクトの作成手順は、どのプロジェクトでも同じです。プロジェクトのタイプによって異なるものとしては、使用可能な[ユーザーの役割](/help/sites-cloud/authoring/projects/overview.md)と[ワークフロー](/help/sites-cloud/authoring/projects/workflows.md)があります。新しいプロジェクトを作成するには：
 
 1. **プロジェクト**&#x200B;で「**作成**」をタップまたはクリックして「**プロジェクトを作成**」ウィザードを開きます。
-1. Select a template and click **Next**.
+1. テンプレートを選択して、「**次へ**」をクリックします。
 
    ![プロジェクトの作成](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. ユーザーおよびユーザーが属するグループを追加または削除することもできます。さらに、「**詳細**」をクリックして、URL で使用する名前を追加します。
+1. 「**タイトル**」と「**説明**」を定義し、必要に応じて「**サムネール**」画像を追加します。ユーザーおよびユーザーが属するグループを追加または削除することもできます。さらに、「**詳細**」をクリックして、URL で使用する名前を追加します。
 
    ![プロジェクトの詳細の追加](/help/sites-cloud/authoring/assets/projects-title.png)
 
 1. 「**作成**」をタップまたはクリックします。新しいプロジェクトを開くか、コンソールに戻るかを確認するメッセージが表示されます。
 
-### リソースとプロジェクトの関連付け {#associating-resources-with-your-project}
+### リソースとプロジェクトの関連付け{#associating-resources-with-your-project}
 
 プロジェクトではリソースを 1 つのエンティティにグループ化できるので、リソースをプロジェクトに関連付けできます。これらのリソースは「**タイル**」と呼ばれます。追加できるリソースのタイプについては、[プロジェクトタイル](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。
 
@@ -54,7 +54,7 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
    >
    >プロジェクトに関連付けることができるプロジェクトタイルの詳細については、[プロジェクトタイル](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。
 
-1. 「**作成**」をタップまたはクリックします。リソースはプロジェクトにリンクされ、今後はプロジェクトからアクセスできます。
+1. 「**作成**」をタップまたはクリックします。リソースがプロジェクトにリンクされ、今後はそのプロジェクトからアクセスできるようになります。
 
 ### プロジェクトまたはリソースリンクの削除 {#deleting-a-project-or-resource-link}
 
@@ -80,13 +80,13 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 タイルに項目を追加するには：
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. **プロジェクト**&#x200B;で、プロジェクトに移動し、項目を追加するタイル上の追加（+）アイコンをクリックします。
 
    ![タイルへの項目の追加](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
 
 1. 新しいタイルの作成時と同様にして、タイルに項目を追加します。プロジェクトタイルについては、[こちら](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。この例では、別のワークフローが 1 つ追加されました。
 
-   ![別の項目がタイルに追加されました](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
+   ![別の項目がタイルに追加された状態](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### タイルを開く {#opening-a-tile}
 
@@ -100,29 +100,29 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 1. そのタイル内の項目が表示されます。選択モードに入って、項目を変更または削除できます。
 
-   ![タイルを開く](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![開かれたタイル](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
 
 ## プロジェクト統計の表示 {#viewing-project-statistics}
 
-プロジェクト統計を表示するには、**プロジェクト**&#x200B;コンソールで「**統計ビューを表示**」をクリックします。各プロジェクトの完了レベルが表示されます。Click **Show Statistics View** again to go to the **Projects** console.
+プロジェクト統計を表示するには、**プロジェクト**&#x200B;コンソールで「**統計ビューを表示**」をクリックします。各プロジェクトの完了レベルが表示されます。「**統計ビューを表示**」を再度クリックして、**プロジェクト**&#x200B;コンソールに移動します。
 
-![プロジェクト統計](/help/sites-cloud/authoring/assets/projects-stats.png)
+![プロジェクトの統計情報](/help/sites-cloud/authoring/assets/projects-stats.png)
 
 ### プロジェクトタイムラインの表示 {#viewing-a-project-timeline}
 
-プロジェクトタイムラインは、プロジェクト内のアセットが最後にいつ使用されたかを示します。To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. アセットが左パネルに表示されます。Click/tap **Timeline** to return to the **Projects** console.
+プロジェクトタイムラインは、プロジェクト内のアセットが最後にいつ使用されたかを示します。プロジェクトタイムラインを表示するには、「**タイムライン**」をクリックまたはタップしてから、選択モードに入ってプロジェクトを選択します。アセットが左パネルに表示されます。「**タイムライン**」をクリックまたはタップして、**プロジェクト**&#x200B;コンソールに戻ります。
 
 ![プロジェクトのタイムライン](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
 ### アクティブ／非アクティブなプロジェクトの表示 {#viewing-active-inactive-projects}
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. アイコンの横にチェックマークが付いている場合は、アクティブなプロジェクトが表示されます。
+アクティブなプロジェクトと非アクティブなプロジェクトを切り替えるには、**プロジェクト**&#x200B;コンソールで「**アクティブなプロジェクトを切り替え**」をクリックします。アイコンの横にチェックチェックマークがある場合は、アクティブなプロジェクトが表示されています。
 
-![アクティブなプロジェクトを切り替えボタン](/help/sites-cloud/authoring/assets/projects-active.png)
+![「アクティブなプロジェクトを切り替え」ボタン](/help/sites-cloud/authoring/assets/projects-active.png)
 
 アイコンの横に「x」がある場合は、非アクティブなプロジェクトが表示されています。
 
-![非アクティブなプロジェクトの切り替えボタン](/help/sites-cloud/authoring/assets/projects-inactive.png)
+![「アクティブなプロジェクトを切り替え」ボタン（非アクティブ時）](/help/sites-cloud/authoring/assets/projects-inactive.png)
 
 ## プロジェクトの非アクティブ化またはアクティブ化 {#making-projects-inactive-or-active}
 
