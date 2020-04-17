@@ -1,53 +1,53 @@
 ---
 title: セレクターの操作
 description: インタラクティブ画像、インタラクティブビデオ、カルーセルバナーのアセットの選択
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# セレクターの操作 ダイナミックメディア {#working-with-selectors}
+# Dynamic Media でのセレクターの操作 {#working-with-selectors}
 
-インタラクティブ画像、インタラクティブビデオまたはカルーセルバナーを使用する場合は、アセットを選択し、ホットスポットと画像マップにリンクするサイトと製品を選択します。 画像セット、スピンセットおよびマルチメディアセットを操作する場合は、アセットセレクターを使用してアセットを選択することもできます。
+インタラクティブ画像、インタラクティブビデオ、カルーセルバナーを操作するときは、アセットを選択し、ホットスポットや画像マップのリンク先となるサイトや商品を選択します。画像セット、スピンセット、マルチメディアセットを操作するときは、アセットセレクターでアセットも選択します。
 
-ここでは、商品、サイト、およびアセットのセレクターの使用方法について説明し、セレクターでの参照、フィルター処理、ソートの機能についても説明します。
+ここでは、商品、サイト、アセットのセレクターの使用方法について説明し、セレクターでの参照、フィルター処理、ソートの機能についても説明します。
 
 セレクターを使用するのは、カルーセルセットを作成し、ホットスポットと画像マップを追加し、インタラクティブビデオとインタラクティブ画像を作成するときです。
 
-例えば、このカルーセルバナーで、ホットスポットまたは画像マップをクイックビューページにリンクする場合は、製品セレクターを使用します。ホットスポットまたは画像マップをハイパーリンクにリンクする場合は、サイトセレクターを使用します。新しいスライドを作成する場合は、アセットセレクターを使用します。
+例えば、このカルーセルバナーでは、商品セレクターを使用するのは、ホットスポットまたは画像マップをクイックビューページにリンクする場合です。サイトセレクターを使用するのは、ホットスポットまたは画像マップをハイパーリンクにリンクする場合です。アセットセレクターを使用するのは新しいスライドを作成する場合です。
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-ホットスポットまたは画像マップのリンク先を（手動で入力せずに）選択するときに、セレクターを使用します。サイト選択機能は、AEMサイトのお客様の場合にのみ機能します。 また、商品セレクターには AEM コマースが必要です。
+ホットスポットまたは画像マップのリンク先を（手動で入力せずに）選択するときに、セレクターを使用します。サイトセレクターを使用できるのは AEM Sites ユーザーのみです。商品セレクターには AEM Commerce も必要です。
 
-## ダイナミックメディアでの製品の選択 {#selecting-products}
+## Dynamic Media での商品の選択 {#selecting-products}
 
-製品セレクターを使用して、製品カタログ内の特定の製品に対してクイックビューを提供するホットスポットまたは画像マップを選択します。
+商品セレクターを使用して商品を選択するのは、ホットスポットまたは画像マップで商品カタログの特定の商品のクイックビューを提供しようとするときです。
 
-1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
+1. カルーセルセット、インタラクティブ画像、インタラクティブビデオのいずれかに移動し、「**[!UICONTROL アクション]**」タブ（ホットスポットまたは画像マップを定義した場合のみ選択できる）をタップします。
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   商品セレクターは、「**アクションタイプ**」領域にあります。
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Tap the **[!UICONTROL Product Selector]** icon (magnifying glass) and navigate to a product in the catalog.
+1. **[!UICONTROL 商品セレクター]**&#x200B;アイコン（虫眼鏡）をタップし、カタログの商品に移動します。
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   You can also filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or selecting tags, or both.
+   「**[!UICONTROL フィルター]**」をタップして、キーワードを入力したりタグを選択したりすると、キーワードまたはタグでフィルター処理することもできます。
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   You can change where AEM browses for product data by tapping **[!UICONTROL Browse]** and navigating to another folder.
+   「**[!UICONTROL 参照]**」をタップして別のフォルダーに移動することで、AEM が商品データを参照する場所を変更できます。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tap **[!UICONTROL Sort]** by to change whether AEM sorts by newest to oldest or oldest to newest.
+   「**[!UICONTROL ソート順]**」をタップして、AEM で新しい順に表示するか古い順に表示するかを変更します。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Tap **[!UICONTROL View as]** to change how you view products – either **[!UICONTROL List View]** or **[!UICONTROL Card View]**.
+   「**[!UICONTROL 表示形式]**」をタップして、商品の表示形式（**[!UICONTROL リスト表示]**&#x200B;または&#x200B;**[!UICONTROL カード表示]**）を変更します。
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -55,21 +55,21 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. When in **[!UICONTROL Preview]** mode, you can tap the hotspot or image map, and see what the Quickview looks like.
+1. **[!UICONTROL プレビュー]**&#x200B;モードでは、ホットスポットか画像マップをタップして、クイックビューの表示内容を確認できます。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## ダイナミックメディアでのサイトの選択 {#selecting-sites}
+## Dynamic Media でのサイトの選択 {#selecting-sites}
 
 サイトセレクターを使用して Web ページを選択するのは、ホットスポットまたは画像マップを、AEM Sites で管理される Web ページにリンクしようとするときです。
 
-1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
+1. カルーセルセット、インタラクティブ画像、インタラクティブビデオのいずれかに移動し、「**[!UICONTROL アクション]**」タブ（ホットスポットまたは画像マップを定義した場合のみ選択できる）をタップします。
 
-   The Site Selector is in the **[!UICONTROL Action Type]** area.
+   サイトセレクターは、「**[!UICONTROL アクションタイプ]**」領域にあります。
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tap the **[!UICONTROL Site Selector]** icon (folder with magnifying glass) and navigate to a page in your AEM sites that you want to link the hotspot or image map to.
+1. **[!UICONTROL サイトセレクター]**&#x200B;アイコン（フォルダーと虫眼鏡）をタップし、ホットスポットまたは画像マップのリンク先となる AEM Sites 内のページに移動します。
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -77,34 +77,34 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the AEM site page you specified.
+1. **[!UICONTROL プレビュー]**&#x200B;モードでは、ホットスポットまたは画像マップをタップすると、指定した AEM サイトページに移動します。
 
-## ダイナミックメディアでのアセットの選択 {#selecting-assets}
+## Dynamic Media でのアセットの選択 {#selecting-assets}
 
-このセレクターを使用して、カルーセルバナー、インタラクティブビデオ、画像セット、混在メディアセットおよびスピンセットで使用する画像を選択します。 In interactive Video, the asset selector is available when you tap **[!UICONTROL Select Assets]** in the **[!UICONTROL Content]** tab. カルーセルセットでは、新しいスライドを作成する際にアセットセレクターを使用できます。 画像セット、混在メディアセットおよびスピンセットでは、アセットセレクターは、それぞれ新しい画像セットの作成時に使用できます。
+このセレクターで、カルーセルバナー、インタラクティブビデオ、画像セット、混在メディアセット、スピンセットで使用する画像を選択します。インタラクティブビデオでは、「**[!UICONTROL コンテンツ]**」タブの「**[!UICONTROL アセットを選択]**」をタップすると、アセットセレクターを使用できます。カルーセルセットでは、新しいスライドを作成するときにアセットセレクターを使用できます。画像セット、混在メディアセット、スピンセットでは、新しい画像セット、混在メディアセット、スピンセットをそれぞれ作成するときに、アセットセレクターを使用できます。
 
-See also [Asset Picker](/help/assets/search-assets.md#assetselector) for more information.
+詳しくは、[アセットピッカー](/help/assets/search-assets.md#assetselector)を参照してください。
 
-1. カルーセルセットに移動し、新しいスライドを作成します。 Or, navigate to the Interactive Video, go the **[!UICONTROL Content]** tab and select assets. または、混在メディアセット、画像セット、スピンセットを作成します。
-1. Tap the **[!UICONTROL Asset Selector]** icon (folder with magnifying glass) and navigate to an asset.
+1. カルーセルセットに移動して、新しいスライドを作成します。または、インタラクティブビデオに移動して、「**[!UICONTROL コンテンツ]**」タブでアセットを選択します。あるいは、混在メディアセット、画像セット、スピンセットのいずれかを作成します。
+1. **[!UICONTROL アセットセレクター]**&#x200B;アイコン（フォルダーと虫眼鏡）をタップし、アセットに移動します。
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   You can also filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or adding criteria, or both.
+   「**[!UICONTROL フィルター]**」をタップして、キーワードを入力したり条件を追加したりすると、キーワードまたはタグでフィルター処理することもできます。
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
    「**[!UICONTROL パス]**」フィールドで別のフォルダーに移動して、アセットを参照する場所を変更できます。
 
-   Tap **[!UICONTROL Collection]** to only search for assets within collections.
+   コレクション内のアセットのみを検索するには、「**[!UICONTROL コレクション]**」をタップします。
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Tap **[!UICONTROL View as]** to change how you view products - either **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
+   「**[!UICONTROL 表示形式]**」をタップして、商品の表示形式（**[!UICONTROL リスト表示]**、**[!UICONTROL 列表示]**、**[!UICONTROL カード表示]**&#x200B;のいずれか）を変更します。
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. チェックマークをタップして、アセットを選択します。 アセットが表示されます。
+1. チェックマークをタップしてアセットを選択します。アセットが表示されます。
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 -->
