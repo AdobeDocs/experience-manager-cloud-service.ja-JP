@@ -1,7 +1,7 @@
 ---
 title: 関連コンテンツ
 description: 関連コンテンツによって関連性がわかり、フラグメントをページに追加するときに、（オプションで）アセットをフラグメントと一緒に使用できるようになります。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -15,11 +15,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するための様々な方法があります。
+>[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
 
-関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。その後、次の操作を行うことができます。
+関連付けを作成するには、最初に[メディアアセットをコレクションに追加](/help/assets/manage-collections.md)する必要があります。それが完了した後で以下を実行できます。
 
-1. Open your fragment and select **Associated Content** from the side panel.
+1. フラグメントを開き、サイドパネルから「**関連コンテンツ**」を選択します。
 
    ![関連コンテンツ](assets/cfm-assoc-content-01.png)
 
