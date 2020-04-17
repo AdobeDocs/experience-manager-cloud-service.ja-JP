@@ -3,7 +3,7 @@ title: Brand PortalでのAEM Assetsクラウドサービスの設定
 description: Brand PortalでAEM Assetsクラウドサービスを設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f57731e4ab30af1bfcd93a12b2cf80e63efdac79
+source-git-commit: d644fc348ff6d62c03100941b96c03049f345763
 
 ---
 
@@ -22,9 +22,9 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 
 **詳細なクエリは** 、Supportにお問い合わせください。
 
-##  設定の作成{#create-new-configuration}
+## 設定の作成 {#create-new-configuration}
 
-Adobe I/Oで新しい設定を作成し、AEM AssetsクラウドインスタンスをBrand Portalで設定できます。
+Adobe I/Oで設定を作成し、AEM AssetsクラウドインスタンスをBrand Portalで設定できます。
 
 リストに表示されたシーケンスで次の手順を実行します。
 1. [公開証明書の取得](#public-certificate)
@@ -48,7 +48,7 @@ IMS設定には、次の2つの手順が含まれます。
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. ツー **ル**![/](assets/tools.png)**[!UICONTROL Security/]****[!UICONTROL Adobe IMS Configurations]**&#x200B;に移動します。
+1. ツー **ル**![ツール](assets/tools.png)**[!UICONTROL ・パネルで、セキュリティ/]** Adobe IMS ****&#x200B;構成に移動します。
 
    ![Adobe IMSアカウント設定UI](assets/ims-configuration1.png)
 
@@ -56,7 +56,7 @@ IMS設定には、次の2つの手順が含まれます。
 
    「**[!UICONTROL 作成]**」をクリックします。
 
-   これにより、 **[!UICONTROL Adobe IMS Technical Account Configurationページが表示されます]** 。
+   「 **[!UICONTROL Adobe IMS Technical Account Configuration」ページが表示されます]** 。
 
 1. デフォルトでは、「証 **明書** 」タブが開きます。
 
@@ -152,9 +152,10 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
 
 >[!CAUTION]
 >
->有効なIMS設定を1つだけ作成します。
+>ヘルスチェックに合格するIMS設定は1つだけにする必要があります。 複数のIMS設定を作成しないでください。
 >
-> 構成が正常であることを確認します。 構成が正常でない場合は、構成を削除し、新しい正常な構成を作成します。
+>設定がヘルスチェックに合格しない場合は無効です。 削除して、新しい有効な設定を作成する必要があります。
+
 
 
 ### Configure cloud service {#configure-the-cloud-service}
@@ -163,7 +164,7 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. **Cloud** ![Services](assets/tools.png) / **** AA Brand Portal Tools( **** AEMブランドポータルツール)に移動します。
+1. ツー **ルツ**![ールパネルで](assets/tools.png) 、Cloud Services **[!UICONTROL /]** AEM Brand Portal **[!UICONTROL EMに移]**&#x200B;動します。
 
    ブランドポータル設定ページが開きます。
 
@@ -183,7 +184,7 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. **Deployment** Tools ![(配布ツール](assets/tools.png) )/ **** Distribution Tools(配布ツール **[!UICONTROL )に移]**&#x200B;動します。
+1. ツー **ル**![](assets/tools.png) Toolsパネルで、Deployment **[!UICONTROL /]** Distribution **[!UICONTROL Tools]**&#x200B;に移動します。
 
    ![](assets/test-bpconfig1.png)
 
@@ -202,8 +203,13 @@ Adobe I/O統合により、IMSアカウント設定の設定で必要なAPIキ�
 1. 配布エージェントページが開きます。 デフォルトでは、「 **[!UICONTROL Status]** 」タブが開き、配布キューが設定されます。
 
    配布エージェントには、次の2つのキューが含まれます。
-   * Brand Portalにアセットを配布するための処理キュー。
-   * 配布が失敗したアセットのエラーキュー。
+   * **processing-queue**:を参照してください。
+
+   * **error-queue**:を返します。
+   >[!NOTE]
+   >
+   >エラーを確認し、エラーキューを定期的にクリアす **ることをお勧めし** ます。
+
    ![](assets/test-bpconfig3.png)
 
 1. AEM AssetsとBrand Portalの間の接続を確認するには、「接続をテスト」をク **[!UICONTROL リックします]**。
@@ -238,7 +244,7 @@ See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experie
 
 例えば、AEM AssetsからBrand Portalにアセットを発行し、設定を確認したとします。
 
-1. 「接続のテスト」に示す手順（手順1 ～ 4）に従 **[!UICONTROL い]** 、配布エージェントページに移動します。
+1. 「接続のテスト」に示す手順(手順1 **** ～4)に従い、配布エージェントページに移動します。
 
 1. [ログ **** ]をクリックして、配布ログを表示します。 処理ログとエラーログは、ここで確認できます。
 
@@ -246,8 +252,8 @@ See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experie
 
 配布エージェントは次のログを生成します。
 
-* 情報：これは、構成が正常に完了した場合にトリガーされるシステム生成ログで、配布エージェントを有効にします。
-* DSTRQ1 （リクエスト1）:テスト接続時にトリガーされました。
+* 情報：これは、構成が正常に完了したときにトリガーされる、システム生成ログで、配布エージェントを有効にします。
+* DSTRQ1 （リクエスト1）:テスト接続時にトリガーされます。
 
 アセットの公開時に、次の要求および応答ログが生成されます。
 
@@ -259,28 +265,31 @@ See, [Brand Portal documentation](https://docs.adobe.com/content/help/en/experie
 * queue-bpdistributionagent0 (DSTRQ2):アセットがBrand Portalに公開されます。
 * queue-bpdistributionagent0 (DSTRQ3):システムは、Brand Portal内のアセットを含むフォルダーを複製します。
 
-上記の例では、追加のリクエストと応答がトリガーされます。 アセットが初めて発行されたので、Brand Portalで親フォルダ(追加「パス」)が見つかりませんでした。そのため、アセットが発行されたBrand Portalで同じ名前の親フォルダを作成する追加の要求をトリガーします。
+上記の例では、追加のリクエストと応答がトリガーされます。 アセットが初めて発行されたので、Brand Portalで親フォルダ(追加「パス」)が見つからなかったため、アセットが発行されたBrand Portalで同じ名前の親フォルダを作成する追加の要求をトリガーします。
 
 >[!NOTE]
 >
 >親フォルダーがBrand Portalに存在しない場合（上の例）、または親フォルダーがAEM Assetsで変更された場合に、追加のリクエストが生成されます。
 
 
-## 追加情報 {#additional-information}
 
-に移動して、配 `/system/console/slingmetrics` 布されたコンテンツに関する統計を確認します。
+<!--
 
-1. **カウンター指標**
+## Additional information {#additional-information}
+
+Go to `/system/console/slingmetrics` for statistics related to the distributed content:
+
+1. **Counter metrics**
    * sling: `mac_sync_request_failure`
    * sling: `mac_sync_request_received`
    * sling: `mac_sync_request_success`
 
-1. **時間指標**
+1. **Time metrics**
    * sling: `mac_sync_distribution_duration`
    * sling: `mac_sync_enqueue_package_duration`
    * sling: `mac_sync_setup_request_duration`
 
-
+-->
 
 <!--
    Comment Type: draft
