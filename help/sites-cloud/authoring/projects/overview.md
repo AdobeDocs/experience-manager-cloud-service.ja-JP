@@ -1,19 +1,19 @@
 ---
 title: プロジェクト
 description: プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化でき、共通の共有環境でプロジェクトを簡単に管理できます
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# プロジェクト {#projects}
+# プロジェクト{#projects}
 
-プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化できます。共通の共有環境で、プロジェクトを簡単に管理できます。プロジェクトに関連付けることができるリソースのタイプは、AEM ではタイルと呼ばれます。Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化できます。共通の共有環境で、プロジェクトを簡単に管理できます。プロジェクトに関連付けることができるリソースのタイプは、AEM ではタイルと呼ばれます。タイルには、プロジェクトとチームの情報、アセット、ワークフローおよびその他のタイプの情報を含めることができます。詳しくは、[プロジェクトタイル](#project-tiles)を参照してください。
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on `/home/users` and `/home/groups`. The easiest way to implement this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
+>プロジェクト内のユーザーが、プロジェクトの作成、タスクまたはワークフローの作成、チームの表示と管理などのプロジェクト機能を使用中に他のユーザーまたはグループを表示するには、`/home/users` および `/home/groups` に対する読み取りアクセス権が必要です。これを実現する最も簡単な方法は、**projects-users** グループに `/home/users` および `/home/groups` に対する読み取りアクセス権を付与することです。
 
 次の操作をおこなうことができます。
 
@@ -25,7 +25,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 次の追加トピックを参照してください。
 
 * [プロジェクトの管理](/help/sites-cloud/authoring/projects/managing.md)
-* [タスクの使用](/help/sites-cloud/authoring/projects/tasks.md)
+* [タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
 * [プロジェクトワークフローの操作](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## プロジェクトコンソール {#projects-console}
@@ -40,11 +40,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * 「**アクティブなプロジェクトを切り替え**」を使用して、すべてのプロジェクトとアクティブなプロジェクトのみを切り替えることができます。
 * 「**統計ビューを表示**」を使用して、タスクの完了に関するプロジェクト統計を表示できます。
 
-## プロジェクトタイル {#project-tiles}
+## プロジェクトタイル{#project-tiles}
 
-プロジェクトを使用して、様々なタイプの情報とプロジェクトを関連付けることができます。このような情報は&#x200B;**タイル**&#x200B;と呼ばれます。各タイルと含まれる情報の種類について、このセクションで説明します。
+プロジェクトを使用して、様々なタイプの情報とプロジェクトを関連付けることができます。このような情報は&#x200B;**タイル**&#x200B;と呼ばれます。各タイルと含まれる情報の種類について、この節で説明します。
 
-以下のタイルをプロジェクトと関連付けることができます。それぞれについては、以降のセクションで説明します。
+以下のタイルをプロジェクトと関連付けることができます。それぞれについては、以降の節で説明します。
 
 * アセットおよびアセットコレクション
 * エクスペリエンス
@@ -57,25 +57,25 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * ローンチ
 * タスク
 
-### アセット {#assets}
+### アセット{#assets}
 
 **アセット**&#x200B;タイルでは、特定のプロジェクトに使用するすべてのアセットを集めることができます。
 
 ![アセットタイル](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
-タイル内でアセットを直接アップロードします。さらに、ダイナミックメディアのアドオンがある場合は、画像セット、スピンセットまたは混在メディアセットを作成できます。
+タイル内でアセットを直接アップロードします。さらに、Dynamic Media のアドオンがある場合は、画像セット、スピンセットまたは混在メディアセットを作成できます。
 
 ![画像セット](/help/sites-cloud/authoring/assets/projects-image-sets.png)
 
 ### アセットコレクション {#asset-collections}
 
-アセットと同様に、アセットコレクションをプロジェクトに直接追加できます。You define collections in Assets. <!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+アセットと同様に、アセットコレクションをプロジェクトに直接追加できます。アセット内にコレクションを定義します。<!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
 
-![アセットの収集](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
+![アセットコレクション](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
 コレクションを追加するには、「**コレクションを追加**」をクリックし、適切なコレクションをリストから選択します。
 
-### エクスペリエンス {#experiences}
+### エクスペリエンス{#experiences}
 
 **エクスペリエンス**&#x200B;タイルでは、モバイルアプリ、Web サイトまたは公開物をプロジェクトに追加できます。
 
@@ -85,7 +85,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ![エクスペリエンスの追加](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
-サムネイルのパスを選択し、必要に応じてエクスペリエンスのサムネイルを変更します。Experiences are grouped together in the **Experiences** tile.
+サムネールのパスを選択し、必要に応じてエクスペリエンスのサムネールを変更します。エクスペリエンスは、**エクスペリエンス**&#x200B;タイル内にグループ化されます。
 
 ### リンク {#links}
 
@@ -93,13 +93,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ![リンク](/help/sites-cloud/authoring/assets/project-links.png)
 
-リンクにわかりやすい名前を付けたり、サムネイルを変更したりできます。
+リンクにわかりやすい名前を付けたり、サムネールを変更したりできます。
 
-![リンクを追加](/help/sites-cloud/authoring/assets/projects-add-link.png)
+![リンクの追加](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ### プロジェクト情報 {#project-info}
 
-プロジェクト情報タイルには、説明、プロジェクトステータス（非アクティブまたはアクティブ）、期限、メンバーなどプロジェクトに関する一般的な情報が表示されます。さらに、メインのプロジェクトページに表示されるプロジェクトサムネイルを追加できます。
+プロジェクト情報タイルには、説明、プロジェクトステータス（非アクティブまたはアクティブ）、期限、メンバーなどプロジェクトに関する一般的な情報が表示されます。さらに、メインのプロジェクトページに表示されるプロジェクトサムネールを追加できます。
 
 ![プロジェクト情報](/help/sites-cloud/authoring/assets/project-info.png)
 
@@ -109,11 +109,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### 翻訳ジョブ {#translation-job}
 
-翻訳ジョブタイルでは、翻訳を開始したり、翻訳のステータスを表示したりもできます。To set up your translation, see Creating Translation Projects. <!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+翻訳ジョブタイルでは、翻訳を開始したり、翻訳のステータスを表示したりもできます。翻訳を設定するには、「翻訳プロジェクトの作成」を参照してください。<!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
 
 ![翻訳ジョブ](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. 翻訳ジョブリストには、アセットのメタデータとタグのエントリも表示されます。これらのエントリは、アセットのメタデータとタグも翻訳されることを意味します。
+翻訳ワークフロー内のアセットを表示するには、**翻訳ジョブ**&#x200B;カードの下部にある省略記号をクリックします。翻訳ジョブリストには、アセットのメタデータとタグのエントリも表示されます。これらのエントリは、アセットのメタデータとタグも翻訳されることを意味します。
 
 ![翻訳ジョブの詳細](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
@@ -123,9 +123,9 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ![チームタイル](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
-チームメンバーをチームに追加したり、チームから削除したりできます。In addition, you can edit the [user role](#user-roles-in-a-project) assigned to the team member.
+チームメンバーをチームに追加したり、チームから削除したりできます。さらに、チームメンバーに割り当てられている[ユーザーの役割](#user-roles-in-a-project)を編集できます。
 
-![リストからチームを追加](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
+![リストからのチームの追加](/help/sites-cloud/authoring/assets/projects-add-team-list.png)
 
 ### ワークフロー {#workflows}
 
@@ -145,34 +145,34 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ### タスク {#tasks}
 
-タスクを使用して、ワークフローを含む、すべてのプロジェクト関連タスクのステータスを監視できます。Tasks are covered in detail at [Working with Tasks](/help/sites-cloud/authoring/projects/tasks.md).
+タスクを使用して、ワークフローを含む、すべてのプロジェクト関連タスクのステータスを監視できます。タスクについて詳しくは、[タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)を参照してください。
 
 ![タスク](/help/sites-cloud/authoring/assets/projects-tasks.png)
 
 ## プロジェクトテンプレート {#project-templates}
 
-AEMには、次の3種類のテンプレートがあらかじめ用意されています。
+AEM には、次の 3 種類の既製のテンプレートが付属しています。
 
-* 単純なプロジェクト — 他のカテゴリ（包括的）に適合しないプロジェクトのリファレンスサンプル。 3 つの基本的な役割（所有者、エディター、監視者）と 4 つのワークフロー（プロジェクト承認、ローンチをリクエスト、ランディングページをリクエスト、電子メールをリクエスト）が含まれます。
-* メディアプロジェクト — メディア関連のアクティビティの参照サンプルプロジェクト。 いくつかのメディア関連プロジェクトの役割（フォトグラファー、エディター、コピーライター、デザイナー、所有者、監視者）が含まれます。また、メディアコンテンツに関連する2つのワークフロー(コピーのリクエスト（テキストのリクエストと確認）と製品撮影（製品関連の写真を管理するため）も含まれます。
-* 翻訳プロジェクト - 翻訳関連アクティビティを管理するためのリファレンスサンプルです。3 つの基本的な役割（所有者、エディター、監視者）が含まれます。It includes two workflows that are accessed in the Workflows user interface. <!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* シンプルなプロジェクト - 他のカテゴリに適合しない、あらゆるプロジェクト用のリファレンスサンプルです（キャッチオール）。3 つの基本的な役割（所有者、エディター、監視者）と 4 つのワークフロー（プロジェクト承認、ローンチをリクエスト、ランディングページをリクエスト、電子メールをリクエスト）が含まれます。
+* メディアプロジェクト - メディア関連アクティビティ用のリファレンスサンプルプロジェクトです。いくつかのメディア関連プロジェクトの役割（フォトグラファー、エディター、コピーライター、デザイナー、所有者、監視者）が含まれます。メディアコンテンツに関連する 2 つのワークフロー（コピーをリクエスト（テキストのリクエストおよびレビュー用）と撮影した製品写真（製品に関連する写真の管理用））も含まれます。
+* 翻訳プロジェクト - 翻訳関連アクティビティを管理するためのリファレンスサンプルです。3 つの基本的な役割（所有者、エディター、監視者）が含まれます。ワークフローユーザーインターフェイスでアクセスする 2 つのワークフローが含まれます。<!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
 
 選択したテンプレートに基づいて、特にユーザーの役割とワークフローに関して使用可能なオプションは異なります。
 
-## プロジェクト内のユーザーの役割 {#user-roles-in-a-project}
+## プロジェクト内のユーザーの役割{#user-roles-in-a-project}
 
 プロジェクトテンプレートでは様々なユーザーの役割を設定します。これらの役割は、主に次の目的に使用されます。
 
-1. 権限。ユーザーの役割は、監視者、エディター、所有者という 3 つのカテゴリのいずれかに分類されます。例えば、写真家やコピーライターは編集者と同じ権限を持ちます。 権限によって、ユーザーがプロジェクト内のコンテンツに何をおこなえるかが決定されます。
-1. ワークフロー管理。ワークフローによって、プロジェクト内のタスクに誰を割り当てるかが決定されます。タスクは、プロジェクトの役割に関連付けることができます。 例えば、タスクをフォトグラファーに割り当てると、フォトグラファーの役割を持つすべてのチームメンバーがそのタスクを取得します。
+1. 権限。ユーザーの役割は、監視者、エディター、所有者という 3 つのカテゴリのいずれかに分類されます。例えば、フォトグラファーまたはコピーライターは、エディターと同じ特権を持ちます。権限によって、ユーザーがプロジェクト内のコンテンツに何をおこなえるかが決定されます。
+1. ワークフロー管理。ワークフローによって、プロジェクト内のタスクに誰を割り当てるかが決定されます。タスクは、プロジェクトの役割と関連付けることができます。例えば、タスクをフォトグラファーに割り当てると、フォトグラファーの役割を持つすべてのチームメンバーがそのタスクを取得します。
 
 セキュリティと権限を管理するために、すべてのプロジェクトが以下のデフォルトの役割をサポートしています。
 
-| ロール | 説明 | 権限 | グループのメンバーシップ |
+| 役割 | 説明 | 権限 | グループのメンバーシップ |
 |---|---|---|---|
 | 監視者 | この役割のユーザーは、プロジェクトステータスなどプロジェクトの詳細を表示できます。 | プロジェクトに対する読み取り専用権限 | `workflow-users` group |
-| 編集者 | この役割のユーザーは、プロジェクトのコンテンツをアップロードおよび編集できます。 | プロジェクト、関連するメタデータ、および関連アセットに対する読み取りと書き込みのアクセス権撮影リスト、写真撮影、レビューおよび承認の権限/etc/commerceに対する書き込み許可特定のプロジェクトの権限を変更する | workflow-users グループ |
-| 所有者 | この役割のユーザーは、プロジェクトを開始できます。所有者は、プロジェクトを作成し、プロジェクトで作業を開始し、承認済みのアセットを実稼働フォルダに移動することもできます。 所有者は、プロジェクト内のその他すべてのタスクも表示および実行できます。 | Write permission on `/etc/commerce` | `dam-users` グループ（プロジェクトを作成できるようにする）プロジェクト管理者グループ（アセットを移動できるようにする） |
+| 編集者 | この役割のユーザーは、プロジェクトのコンテンツをアップロードおよび編集できます。 | プロジェクト、関連メタデータ、関連アセットに対する読み取りおよび書き込みアクセス権。撮影リストや撮影した写真をアップロードし、アセットをレビューおよび承認するための特権。etc/commerce に対する書き込み権限。特定のプロジェクトに対する変更権限 | workflow-users グループ |
+| 所有者 | この役割のユーザーは、プロジェクトを開始できます。所有者は、プロジェクトを開始し、プロジェクト内で作業を開始し、承認済みのアセットを Production フォルダーに移動することもできます。所有者は、プロジェクト内のその他すべてのタスクも表示および実行できます。 | `/etc/commerce` に対する書き込み権限 | `dam-users` グループ（プロジェクトを作成可能）、プロジェクト管理者グループ（アセットを移動可能） |
 
 >[!NOTE]
 >
