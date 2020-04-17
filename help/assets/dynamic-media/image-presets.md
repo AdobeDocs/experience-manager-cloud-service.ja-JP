@@ -1,13 +1,13 @@
 ---
-title: ダイナミックメディア画像プリセットの適用
-description: ダイナミックメディアで画像プリセットを適用する方法について説明します。
-translation-type: tm+mt
+title: Dynamic Media 画像プリセットの適用
+description: Dynamic Media での画像プリセットの適用方法を説明します。
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
 
 
-# ダイナミックメディア画像プリセットの適用 {#applying-image-presets}
+# Dynamic Media 画像プリセットの適用 {#applying-image-presets}
 
 画像プリセットを使用すると、異なるサイズや異なる形式の画像、または動的に生成された他の画像プロパティを設定した画像を動的に配信できます。画像を書き出すときにプリセットを選択できます。また、この操作によって、管理者が指定した仕様に合わせて画像が再フォーマットされます。
 
@@ -17,17 +17,17 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。See [Smart Imaging](imaging-faq.md) for more information.
+>スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。詳しくは、[スマートイメージング](imaging-faq.md)を参照してください。
 
 作成者は画像をプレビューするときに、いつでも画像プリセットを適用できます。
 
-**ダイナミックメディア画像プリセットを適用するには**
+**Dynamic Media 画像プリセットを適用するには**
 
-1. アセットを開き、左のレールでドロップダウンメニューをタップし、「レンディション」をタッ **[!UICONTROL プします]**。
+1. アセットを開き、左側のレールでドロップダウンメニューをタップして、「**[!UICONTROL レンディション]**」をタップします。
 
    >[!NOTE]
    >
-   >* 静的レンディションは、ペインの上半分に表示されます。 動的レンディションは下半分に表示されます。 動的レンディションのみでは、URLを使用して画像を表示できます。 「 **[!UICONTROL URL]** 」ボタンは、動的レンディションを選択した場合にのみ表示されます。 「 **[!UICONTROL RESS]** 」ボタンは、レスポンシブ画像プリセットを選択した場合にのみ表示されます。
+   >* 静的レンディションはウィンドウの上半分に表示されます。動的レンディションは下半分に表示されます。動的レンディションのみの場合は、URL を使用して画像を表示できます。「**[!UICONTROL URL]**」ボタンは、動的レンディションを選択した場合にのみ表示されます。「**[!UICONTROL RESS]**」ボタンは、レスポンシブ画像プリセットを選択した場合にのみ表示されます。
       >
       >
    * アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択すると、多数のレンディションがシステムによって表示されます。表示されるプリセットの数を増やすことができます。[表示される画像プリセット数の引き上げ](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)を参照してください。
@@ -38,10 +38,10 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 1. 次のいずれかの操作をおこないます。
 
    * 動的レンディションを選択して画像プリセットをプレビューします。
-   * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+   * 「**[!UICONTROL URL]**」、「**[!UICONTROL 埋め込み]**」または「**[!UICONTROL RESS]**」をタップして、ポップアップを表示します。
    >[!NOTE]
    >
-   >If the asset *and* the image preset are not yet published, the **[!UICONTROL URL]** button (or **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons, if applicable) are not available.
+   >アセット&#x200B;*と*&#x200B;画像プリセットがまだ公開されていない場合、「**[!UICONTROL URL]**」ボタン（または該当する場合は「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL RESS]**」ボタン）は使用できません。
    >
    >また、Dynamic Media S7 サーバーでは画像プリセットが自動的に公開されることにも注意してください。
 
