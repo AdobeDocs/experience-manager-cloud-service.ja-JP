@@ -1,87 +1,87 @@
 ---
-title: AEM Connectorの実装
-description: AEM Connectorの実装
-translation-type: tm+mt
+title: AEM コネクタの実装
+description: AEM コネクタの実装
+translation-type: ht
 source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
 
 ---
 
 
-AEM Connectorの実装
+AEM コネクタの実装
 =============================
 
-以下に、 [AEM Connectorsの構築に役立つリファレンスを示します](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) 。コネクタの送信と保守に関するガイダンスと共に [お読](submit.md) みく [ださい](maintain.md) 。
+[AEM コネクタ](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html)の作成に役立つリファレンス情報を以下に示します。コネクタの[登録](submit.md)と[管理](maintain.md)に関するガイダンスと共に参照してください。
 
-AEMの開発者用ライセンスは、 [Adobe Exchange Programを通じて取得できます](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)。
+AEM の開発者用ライセンスは、[Adobe Exchange プログラム](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)を通じて取得できます。
 
 一般的な統合パターン
 ---------------------------
 
-AEMは最先端のWebエクスペリエンス管理ソリューションで、統合の可能性が高い多数の領域を提供します。 一般的な統合パターンは次のとおりです。
+AEM は最先端の Web エクスペリエンス管理ソリューションで、様々な領域で統合をおこなえる可能性があります。一般的な統合パターンは次のとおりです。
 
-* 外部システムからAEMにデータを取り込みます。 例えば、AEMを利用するWebサイトを訪問する広範な閲覧者が連絡先情報を利用できるように、CRMから連絡先情報を書き出します。  実装では、Slingのスケジュール済みジョブ [を使用する必要があります](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)。コンテナがダウンした場合でも、ジョブが確実に実行されます。 ジョブが複数回トリガーされる可能性があることを前提としてコードを設計する必要があります。
-* AEMから外部システムへのデータの書き出し 例えば、AEMを利用するWebサイトでCRMに送信されるニュースレター購読の設定などです。
-* AEMからのアセットの取得を参照してください。 例えば、AEM Assetsに保存されたアセットを参照する外部コンテンツ管理システム(CMS)などです。 別の例として、AEM Assets内の画像にリンクするPIMシステムがあります。
-* AEMインフラストラクチャへのアセットの保存。 例えば、承認されたアセットをAEM Assetsに保存するマーケティングリソース管理(MRM)システムなどです。
-* カスタムUIコンポーネントの設定とレンダリング 例えば、作成者がビデオコンポーネントをドラッグ&amp;ドロップし、ライブサイトで再生する特定のビデオを設定できるようにします。
-* パートナーサービスを持つアセットに対する操作。 例えば、ページが公開されたときにビデオプラットフォームにアセットを送信する場合などです。
-* AEM管理コンソールでのサイト、ページまたはアセットの分析。 例えば、既存のページまたは未公開のページに対するSEOレコメンデーションの作成など。
-* 外部サービスによって保持されるユーザーデータへのページレベルのアクセス。 例えば、人口統計情報を利用してサイトのエクスペリエンスをパーソナライズできます。 コンテキストデータの保存、操作、および表示のためのフレームワークであるContextHubについて説明します。
-* サイトコピーまたはアセットメタデータの変換。 AEM Translation Frameworkを使用したサンプルコードについては、 [](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) AEM Translation Framework Bootstrap Connectorを参照してください。これは、Translation Connectorsの推奨される実装です。
+* 外部システムから AEM にデータを取り込む。例えば、CRM から連絡先情報を書き出して、AEM を利用した Web サイトを訪問する広範なオーディエンスに公開するような場合です。実装では、Sling の[スケジュール済みジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#scheduled-jobs)を使用する必要があります。これにより、コンテナが停止してもジョブの実行が保証されます。ジョブが複数回トリガーされる可能性があることを前提として、コードを設計する必要があります。
+* AEM から外部システムにデータを書き出す。例えば、AEM を利用した Web サイトでニュースレターの購読設定を CRM に送信するような場合です。
+* AEM からアセットを取得する。例えば、AEM Assets に保存されているアセットを外部のコンテンツ管理システム（CMS）で参照するような場合です。別の例としては、PIM システムから AEM Assets 内の画像にリンクする場合もあります。
+* アセットを AEM インフラストラクチャに保存する。例えば、マーケティングリソース管理（MRM）システムで承認済みアセットを AEM Assets に保存するような場合です。
+* カスタム UI コンポーネントを設定およびレンダリングする。例えば、作成者がビデオコンポーネントをドラッグ＆ドロップして、ライブサイトで特定のビデオを再生できるように設定するような場合です。
+* パートナーサービスを使用してアセットに対する操作をおこなう。例えば、ページが公開されたときにアセットをビデオプラットフォームに送信するような場合です。
+* AEM Admin Console でサイト、ページ、アセットを分析する。例えば、既存ページまたは未公開ページの SEO の推奨を提示するような場合です。
+* 外部サービスで管理されているユーザーデータにページレベルでアクセスする。例えば、人口統計情報を利用してサイトのエクスペリエンスをパーソナライズするような場合です。詳しくは、ContextHub に関する情報を参照してください。ContextHub は、コンテキストデータを保存、操作、表示するためのフレームワークです。
+* サイトコピーまたはアセットメタデータを翻訳する。AEM 翻訳フレームワークを使用したサンプルコード（翻訳コネクタの推奨される実装）については、[AEM 翻訳フレームワークブートストラップコネクタ](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector)を参照してください。
 
 
-役立つドキュメント
+有用なドキュメント
 --------------------
 
-クラウドサービスドキュメントとしてのExperience Manager [は](../overview/introduction.md) 、AEMでの開発に関する貴重なインサイトを提供します。 AEM Connectorの実装時に役立つ、次に示す特定の技術トピックおよびリファレンスを示します。
+Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/introduction.md)では、AEM での開発に関する有益なインサイトを提供します。また、以下に示す特定の技術トピックおよびリファレンスは、AEM コネクタの実装時に役に立つ可能性があります。
 
-* アドビコンサルティングサービス(ACS) [AEMサンプル](http://adobe-consulting-services.github.io/acs-aem-samples/) （AEM開発者の教育に役立つコメント付きコード）
-* この記事の「共通の統合パターン」の節にある様々なドキュメントのリンク
+* アドビコンサルティングサービス（ACS）の [AEM サンプル](http://adobe-consulting-services.github.io/acs-aem-samples/)：AEM 開発者の参考になるコメント付きコードを参照できます
+* この記事の「一般的な統合パターン」の節で示した様々なドキュメントリンク
 
 コミュニティリソース
 --------------------
 
-上記の静的ドキュメントに加えて、アドビおよびAEMコミュニティでは、コネクターを市場に導くのに役立つリソースを提供しています。
+上記の静的ドキュメントに加えて、アドビおよび AEM コミュニティでは、コネクタの市場投入に役立つ以下のリソースを提供しています。
 
-* アドビコミュニティの [AEMフォーラムは](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) 、仲間が質問をし、質問に答えるアクティブなサイトです。
-* アドビのその他のテクニカルリソースは、特定のパートナーレベルで利用できます。 詳しくは、 [Adobe Exchange Programを参照してください](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)。
-* 導入の支援を希望する場合は、アドビのプロフェッショナルサービスチームを検討するか [、](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html)[](https://solutionpartners.adobe.com/home/partnerFinder.html) Solution Partner Finderで世界中のアドビのパートナーのリストを確認してください
+* アドビコミュニティの [AEM フォーラム](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)は、同業者が質問をしたり質問に答えたりする活発なサイトです。
+* アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://marketing.adobe.com/resources/content/resources/exchange-partner-program.html)を参照してください。
+* 組織が実装の支援を希望する場合は、アドビの [Professional Services](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
 
-パッケージ構造ルール
+パッケージ構成ルール
 -----------------------
 
-ローリングデプロイメントをサポートするために、AEMは、例えばコネクターを含むクラウドサービスパッケージで、「不変」コンテンツと「可変」コンテンツを厳密に区切っています。 パッケージは、次のものを含むものの間で明確に区切る必要があります。
+順調なデプロイメントをサポートするために、AEM as a Cloud Service パッケージ（コネクタもその一例）では、「不変」コンテンツと「可変」コンテンツを厳密に区別しています。パッケージでは、以下を含むもの同士を明確に区別する必要があります。
 
 * `/apps`
 * `/content` および `/conf`
 
-コネクタは、この記事で説明するパッケージ化のガイドラインに従う [必要があります](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。 既存のコネクタも同様にリファクタリングする必要があります。
+コネクタは、パッケージ化に関するこれらのガイドラインに従う必要があります。ガイドラインについては、[こちらの記事](/help/implementing/developing/introduction/aem-project-content-package-structure.md)を参照してください。既存のコネクタは、ガイドラインに準拠するためにリファクタリングも必要になります。
 
-さらに、アドビのみがにコードを書き込み、お客様とパ `/libs`ートナーがにコードを書き込む必要がありま `/apps`す。
+さらに、`/libs` にコードを書き込むのはアドビだけで、ユーザーとパートナーは `/apps` にコードを書き込みます。
 
-既存のコネクタをリファクタリングして、一度配置した設定を他の最上位フォルダ（など）に移動する `/etc` 必要がある場合もありま `/conf`す。 これは、 [AEMのドキュメントで説明されています](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)。
+既存のコネクタの場合、一度 `/etc` に配置した設定を他の最上位フォルダー（`/conf` など）に移動するには、コネクタのリファクタリングも必要になる可能性があります。これについては、[AEM のドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)を参照してください。
 
-複数のコネクタを持つお客様向けに、クリーンなリポジトリ構造を推進するた `/apps/connectors/<vendor>` めに、コネクタコードの大部分をの下に置くことをお勧めします。
+複数のコネクタを持つユーザー向けにクリーンなリポジトリ構造を推進するには、コネクタコードの大部分を `/apps/connectors/<vendor>` の配下に格納することをお勧めします。
 
-クラウドサービス設定
+クラウドサービスの設定
 -----------------------------
 
-コネクタ実装の1つの側面は、コネクタの設定を裏付けるコードです。 このコードを使用すると、ツール/操作/クラウドサービスの下に、コネクタ名の付いたカードが表示されます。 クリックすると、設定ブラウザーがポップアップ表示され、顧客がコネクタ設定を含む親フォルダーを選択します。 コネクタのコードによって、設定する必要があるすべてのプロパティを持つフォームが生成され、最終的には、の設定フォルダーに値が格納されま `/conf`す。 このフォルダは、後で「サイトのプロパティ」タブまたは「アセットのプロパティ」タブで選択できます。
+コネクタ実装の 1 つの側面として、コネクタ設定の補助コードがあります。このコードにより、ツール／操作／クラウド／クラウドサービスで、コネクタ名の付いたカードが表示されるようになります。カードをクリックすると、設定ブラウザーがポップアップ表示され、コネクタ設定を含んだ親フォルダーをユーザーが選択できます。コネクタのコードによって、設定が必要なすべてのプロパティを含んだフォームが生成され、最終的に、`/conf` の配下の設定フォルダーにプロパティ値が格納されます。このフォルダーは、後ほど「サイトのプロパティ」タブまたは「アセットのプロパティ」タブで選択できます。
 
 
-コンテキスト対応設定
+コンテキスト対応の設定
 -----------------------------
 
-[コンテキスト対応設定では](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) 、、、およびのサブフォルダーを含む異なるフォルダー間で `/libs`レイ `/apps`ヤー設 `/conf` 定を行うことがで `/conf`きます。 継承をサポートし、顧客が各マイクロサイトに特定の変更を加えながらグローバル設定を行えるようにします。 この機能をクラウドサービス設定で利用できるので、コネクタコードは、特定の設定ノードを参照する代わりに、Context-Aware Configuration APIを使用して設定を参照する必要があります。
+[コンテキスト対応の設定](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)により、`/libs`、`/apps`、`/conf`および `/conf` 配下のサブフォルダーなど、異なるフォルダーにわたって設定を階層化できます。継承をサポートしているので、ユーザーがグローバル設定をおこないながら、マイクロサイトごとに個別に変更を加えることができます。この機能をクラウドサービスの設定に利用できるので、コネクタコードでは、特定の設定ノードを参照するのではなく、コンテキスト対応設定 API を使用して設定を参照する必要があります。
 
-変更した設定がコネクタで使用されている場合、コネクタを設計して、コネクタが提供するデフォルト設定に対する今後の更新を任意の顧客設定に含めたり、マージしたりします。 カスタマイズされた（お客様が変更したように）コンテンツや設定を、お客様の警告や同意なしに変更すると、Connectorで破損(または予期しない動作を引き起こす可能性があります。
+変更した設定がコネクタで使用される場合は、コネクタ提供のデフォルト設定に対する今後の更新をユーザー側のあらゆる設定と結合できるようにコネクタを設計します。（ユーザーによる変更と同様に）カスタマイズされたコンテンツや設定を、ユーザーへの警告やユーザーの同意なしに変更すると、コネクタが機能しなくなる（または、予期しない動作を引き起こす）可能性があります。
 
 コーディングのベストプラクティス
 ----------------------
 
-クラウドサービスとしてのAEMはクラウドネイティブのソリューションであるため、コネクタのコード戦略に影響を与える可能性のあるガイドラインがいくつかあります。 詳しくは [、「AEM as a Cloud Service Development Guidelines](/help/implementing/developing/introduction/development-guidelines.md) 」を参照してください。
+AEM as a Cloud Service はクラウドネイティブなソリューションなので、コネクタのコード戦略に影響を与える可能性のあるガイドラインがいくつかあります。詳しくは、[AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)を参照してください。
 
-AEM Connectorのテスト
+AEM コネクタのテスト
 -------------------------
 
-新しいコネクタは、ローカル環境開発テクニックを使用して作成（または既存のコネクタを変更）する必要があります。 パートナーチームは、ISVパートナーにサンドボックス環境を提供し、AEM Connectorをバニラアプリケーションにデプロイして、確実に機能するようにします。
+ローカル環境の開発テクニックを使用して新しいコネクタを作成（または既存のコネクタを変更）する必要があります。パートナーチームが ISV パートナーにサンドボックス環境を提供するので、その環境でパートナーは AEM コネクタをバニラアプリケーションにデプロイして動作を確認できます。
