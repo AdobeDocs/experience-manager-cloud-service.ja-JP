@@ -1,7 +1,7 @@
 ---
 title: バリエーション - フラグメントコンテンツのオーサリング
 description: バリエーションでは、フラグメントのコンテンツをオーサリングし、目的に応じてそのコンテンツのバリエーションを作成できます（必要な場合）。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 ---
@@ -39,7 +39,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 コンテンツフラグメントを編集用に開くと、デフォルトで「**バリエーション**」タブが開きます。このタブで、マスターまたはバリエーション（ある場合）のコンテンツをオーサリングできます。以下の操作を実行できます。
 
 * 「**バリエーション**」タブで直接編集します。
-* [フルスクリーンエディター](#full-screen-editor)を開いて次のことをおこないます。
+* [全画面表示エディター](#full-screen-editor)を開いて次のことをおこないます。
 
    * [形式](#formats)の選択
    * その他の編集オプションの表示（[リッチテキスト](#rich-text)形式の場合）
@@ -50,30 +50,30 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 
 * 単純なフラグメントの編集
 
-   単純なフラグメントは 1 つの複数行テキストフィールドで構成されます（フルスクリーンエディターからビジュアルアセットを追加できます）。
+   単純なフラグメントは 1 つの複数行テキストフィールドで構成されます（全画面表示エディターからビジュアルアセットを追加できます）。
 
-   ![単純断片](assets/cfm-variations-01.png)
+   ![単純なフラグメント](assets/cfm-variations-01.png)
 
 * 構造化コンテンツを含むフラグメントの編集
 
-   構造化されたフラグメントには、コンテンツモデルで定義された、様々なデータタイプの各種のフィールドが含まれています。複数行フィールドについては、[フルスクリーンエディター](#full-screen-editor)を使用できます。
+   構造化されたフラグメントには、コンテンツモデルで定義された、様々なデータタイプの各種のフィールドが含まれています。複数行フィールドについては、[全画面表示エディター](#full-screen-editor)を使用できます。
 
-   ![フルスクリーンエディタ](assets/cfm-variations-02.png)
+   ![全画面表示エディター](assets/cfm-variations-02.png)
 
-### フルスクリーンエディター {#full-screen-editor}
+### 全画面表示エディター {#full-screen-editor}
 
-複数行のテキストフィールドを編集する場合は、フルスクリーンエディターを開くことができます。実際のテキスト内でをタップまたはクリックし、次のアクションアイコンを選択します。
+複数行テキストフィールドの編集時には、全画面表示エディターを開くことができます。実際のテキスト内でタップまたはクリックしてから、次のアクションアイコンを選択します。
 
-![フルスクリーンエディターアイコン](assets/cfm-variations-03.png)
+![全画面表示エディターアイコン](assets/cfm-variations-03.png)
 
-フルスクリーンエディターでは次の情報が表示されます。
+全画面表示エディターでは次の情報が表示されます。
 
 * 様々な[アクション](#actions)へのアクセス
 * [形式](#formats)に応じた、その他の書式設定オプション（[リッチテキスト](#rich-text)）
 
-### アクション {#actions}
+### アクション{#actions}
 
-フルスクリーンエディター（複数行テキスト）を開いている場合は、次のアクションも（すべての[形式](#formats)で）使用できます。
+全画面表示エディター（複数行テキスト）を開いている場合は、次のアクションも（すべての[形式](#formats)で）使用できます。
 
 * [形式](#formats)（[リッチテキスト](#rich-text)、[プレーンテキスト](#plain-text)、[Markdown](#markdown)）の選択
 
@@ -97,7 +97,7 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 * [プレーンテキスト](#plain-text)
 * [Markdown](#markdown)
 
-フルスクリーンエディターでの作業時に形式を選択できます。
+全画面表示エディターでの作業時に形式を選択できます。
 
 ### リッチテキスト {#rich-text}
 
@@ -111,22 +111,22 @@ source-git-commit: bac825a45a9d915fd1828ff6adf90c073b52f967
 * 番号付きリスト
 * インデント：増、減
 * ハイパーリンクの作成および解除
-* フルスクリーンエディターを開く。次の書式設定オプションを使用できます。
+* 全画面表示エディターを開く。次の書式設定オプションを使用できます。
 
    * テキストを貼り付け／Word から貼り付け
    * 表を挿入
-   * 段落スタイル：段落、見出し 1／2／3
+   * 段落スタイル：段落、見出し 1/2/3
    * [ビジュアルアセットの挿入](#inserting-assets-into-your-fragment)
    * 検索
    * 検索と置換
    * スペルチェッカー
    * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 
-[アクション](#actions)は、フルスクリーンエディターからアクセスすることもできます。
+[アクション](#actions)は、全画面表示エディターからアクセスすることもできます。
 
 ### プレーンテキスト {#plain-text}
 
-プレーンテキストを使用すると、書式設定または Markdown 情報なしでコンテンツをすばやく入力できます。フルスクリーンエディターを開いて追加の[アクション](#actions)を使用することもできます。
+プレーンテキストを使用すると、書式設定または Markdown 情報なしでコンテンツをすばやく入力できます。全画面表示エディターを開いて追加の[アクション](#actions)を使用することもできます。
 
 >[!CAUTION]
 >
@@ -150,19 +150,19 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 * コードブロック
 * バックスラッシュエスケープ
 
-フルスクリーンエディターを開いて追加の[アクション](#actions)を使用することもできます。
+全画面表示エディターを開いて追加の[アクション](#actions)を使用することもできます。
 
 >[!CAUTION]
 >
->If you switch between **Rich Text** and **Markdown** you might experience unexpected effects with Block Quotes and Code Blocks, as these two formats can have differences in how they are handled.
+>**リッチテキスト**&#x200B;と **Markdown** を切り替えると、ブロック引用やコードブロックに予期しない影響が出ることがあります。ブロック引用とコードブロックの 2 つの形式は処理方法が異なる場合があるからです。
 
 ### 重要な統計の表示 {#viewing-key-statistics}
 
-フルスクリーンエディターを開くと、「**テキスト統計**」アクションには、テキストに関する様々な情報が表示されます。
+全画面表示エディターを開くと、「**テキスト統計**」アクションには、テキストに関する様々な情報が表示されます。
 
 次に例を示します。
 
-![statistics](assets/cfm-variations-04.png)
+![統計](assets/cfm-variations-04.png)
 
 ### コンテンツのアップロード {#uploading-content}
 
@@ -174,13 +174,13 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 >[!NOTE]
 >
->On a more technical level the system keeps the sentences which it rates as providing the *best ratio of information density and uniqueness* according to specific algorithms.
+>より技術的に説明すると、特定のアルゴリズムに従って&#x200B;*情報の密度と独自性が最適な比率*&#x200B;であると評価した文章をシステムが保持します。
 
 >[!CAUTION]
 >
->コンテンツフラグメントには、上位要素として有効な言語フォルダー（ISOコード）が必要です。これは、使用する言語モデルを決定するために使用されます。
+>コンテンツフラグメントには、親フォルダー（ISO コード）として有効な言語フォルダーが必要です。使用する言語モデルを決定するためにこれが使用されます。
 >
->For example, `en/` as in the following path:
+>例えば、次のパスの `en/` です。
 >
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
@@ -195,7 +195,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 
 1. 「**マスター**」または必要なバリエーションを選択します。
-2. フルスクリーンエディターを開きます。
+2. 全画面表示エディターを開きます。
 
 3. ツールバーの「**テキストを要約**」を選択します。
 
@@ -207,29 +207,29 @@ Markdown を使用してテキストの形式を設定できます。次を定�
    * 削除される文には取り消し線が付けられ、赤く表示されます。
    * 強調表示された文をクリックすると、その文書はコンテンツの要約に保持されます。
    * 強調表示されていない文をクリックすると、削除されます。
-   ![要約比較](assets/cfm-variations-06.png)
+   ![要約とオリジナルの比較](assets/cfm-variations-06.png)
 
-6. Select **Summarize** to confirm the changes.
+6. 変更を確定するには、「**要約**」を選択します。
 
 ### コンテンツフラグメントへの注釈の追加 {#annotating-a-content-fragment}
 
 フラグメントに注釈を追加するには：
 
 1. 「**マスター**」または必要なバリエーションを選択します。
-1. フルスクリーンエディターを開きます。
+1. 全画面表示エディターを開きます。
 1. テキストをどれか選択します。「**注釈**」アイコンが利用可能になります。
 
    ![注釈](assets/cfm-variations-07.png)
 
 1. ダイアログが開きます。ここで注釈を入力できます。
 
-1. フルスクリーンエディターを閉じ、フラグメントを&#x200B;**保存**&#x200B;します。
+1. 全画面表示エディターを閉じ、フラグメントを&#x200B;**保存**&#x200B;します。
 
 ### 注釈の表示、編集、削除 {#viewing-editing-deleting-annotations}
 
 注釈について以下で説明します。
 
-* エディターのフルスクリーンモードと通常モードのどちらの場合も、注釈はテキストのハイライトとして示されます。注釈の完全な詳細を表示、編集および削除するには、ハイライト表示されたテキストをクリックします。するとダイアログが再度開きます。
+* エディターの全画面表示モードと通常モードのどちらの場合も、注釈はテキストのハイライトとして示されます。注釈の完全な詳細を表示、編集および削除するには、ハイライト表示されたテキストをクリックします。するとダイアログが再度開きます。
 
    >[!NOTE]
    1 つのテキストに複数の注釈が適用されている場合は、ドロップダウンセレクターが表示されます。
@@ -238,13 +238,13 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 * 注釈の一覧表示や削除をおこなうには、フラグメントエディターで「**注釈**」タブを選択します。
 
-   ![注釈&#91;ちゅうしゃく&#93;](assets/cfm-variations-08.png)
+   ![注釈](assets/cfm-variations-08.png)
 
 * 選択されたフラグメントの[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)で、注釈の表示や削除をおこなえます。
 
 ### フラグメントへのアセットの挿入 {#inserting-assets-into-your-fragment}
 
-To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-digital-assets.md) (images) directly to the fragment.
+コンテンツフラグメントのオーサリングプロセスを容易にするには、[アセット](/help/assets/manage-digital-assets.md)（画像）をフラグメントに直接追加します。
 
 アセットは書式設定なしでフラグメントの段落シーケンスに追加されます。[ページでフラグメントを利用、参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)する際に書式を設定できます。
 
@@ -256,9 +256,9 @@ To ease the process of authoring content fragments you can add [Assets](/help/as
 [画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
 
 1. 画像を追加したい位置にカーソルを置きます。
-2. Use the **Insert Asset** icon to open the search dialog.
+2. **アセットを挿入**&#x200B;アイコンを使用して、検索ダイアログを開きます。
 
-   ![アセットの挿入アイコン](assets/cfm-variations-09.png)
+   ![アセット挿入アイコン](assets/cfm-variations-09.png)
 
 3. ダイアログでは以下が可能です。
 
@@ -274,7 +274,7 @@ To ease the process of authoring content fragments you can add [Assets](/help/as
    * **Markdown**：アセットは表示されなくなりますが、**リッチテキスト**&#x200B;に戻すとアセットがまた表示されます。
 
 
-## バリエーションの管理 {#managing-variations}
+## バリエーションの管理{#managing-variations}
 
 ### バリエーションの作成 {#creating-a-variation}
 
@@ -283,15 +283,15 @@ To ease the process of authoring content fragments you can add [Assets](/help/as
 新しいバリエーションを作成するには：
 
 1. フラグメントを開き、サイドパネルが表示されていることを確認します。
-1. Select **Variations** from the icon bar in the side panel.
+1. サイドパネルのアイコンバーから「**バリエーション**」を選択します。
 1. 「**バリエーションを作成**」を選択します。
 1. ダイアログが開きます。新しいバリエーションの&#x200B;**タイトル**&#x200B;と&#x200B;**説明**&#x200B;を指定します。
-1. Select **Add**; the fragment **Master** will be copied to the new variation, which is now open for [editing](#editing-a-variation).
+1. 「**追加**」を選択します。フラグメントの&#x200B;**マスター**&#x200B;が新しいバリエーションにコピーされ、[編集](#editing-a-variation)用に開かれます。
 
    >[!NOTE]
    新しいバリエーションを作成すると、常に&#x200B;**マスター**&#x200B;がコピーされます（現在開いているバリエーションではありません）。
 
-### バリエーションの編集 {#editing-a-variation}
+### バリエーションの編集{#editing-a-variation}
 
 以下のいずれかを実行した後に、バリエーションコンテンツを変更できます。
 
@@ -304,11 +304,11 @@ To ease the process of authoring content fragments you can add [Assets](/help/as
 
 既存のバリエーションの名前を変更するには：
 
-1. Open your fragment and select **Variations** from the side panel.
+1. フラグメントを開き、サイドパネルから「**バリエーション**」を選択します。
 1. 必要なバリエーションを選択します。
-1. Select **Rename** from the **Actions** drop down.
+1. 「**アクション**」ドロップダウンから「**名前を変更**」を選択します。
 
-1. Enter the new **Title** and/or **Description** in the resulting dialog box.
+1. 表示されたダイアログボックスで新しい「**タイトル**」や「**説明**」を入力します。
 
 1. 「**名前を変更**」アクションを確認します。
 
@@ -319,14 +319,14 @@ To ease the process of authoring content fragments you can add [Assets](/help/as
 
 既存のバリエーションを削除するには：
 
-1. Open your fragment and select **Variations** from the side panel.
+1. フラグメントを開き、サイドパネルから「**バリエーション**」を選択します。
 1. 必要なバリエーションを選択します。
-1. Select **Delete** from the **Actions** drop down.
+1. 「**アクション**」ドロップダウンから「**削除**」を選択します。
 
 1. ダイアログで「**削除**」アクションを確認します。
 
 >[!NOTE]
-You cannot delete **Master**.
+**マスター**&#x200B;は削除できません。
 
 ### マスターとの同期 {#synchronizing-with-master}
 
@@ -337,21 +337,21 @@ You cannot delete **Master**.
 >[!CAUTION]
 同期を使用できるのは、変更内容を&#x200B;***マスター**からバリエーションに*&#x200B;コピーする場合のみです。
 バリエーションの現在の要素のみが同期されます。
-同期は、複数行のテキスト **データタイプでの** み機能します。
+同期は、**複数行テキスト**&#x200B;データタイプに対してのみ機能します。
 *バリエーションから&#x200B;**マスター&#x200B;***へ変更内容を転送することはできません。
 
 1. フラグメントエディターでコンテンツフラグメントを開きます。**マスター**&#x200B;が編集されていることを確認します。
 1. 特定のバリエーションを選択し、次のいずれかから適切な同期アクションを選択します。
 
-   * the **Actions** drop down selector - **Sync current element with master**
+   * 「**アクション**」ドロップダウンセレクター - **現在の要素をマスターと同期**
 
-   * フルスクリーンエディターのツールバー - **マスターと同期**
+   * 全画面表示エディターのツールバー - **マスターと同期**
 
 1. マスターとバリエーションが横並びに表示されます。
 
    * 緑は追加されたコンテンツを示します（バリエーションへの追加）
    * 赤は削除されたコンテンツを示します（バリエーションからの削除）
-   * 青は置換テキストを示します
+   * 青は置換されたテキストを示します
    ![マスターとの同期](assets/cfm-variations-11.png)
 
-1. Select **Synchronize**, the variation will updated and shown.
+1. 「**同期**」を選択すると、バリエーションが更新され、表示されます。
