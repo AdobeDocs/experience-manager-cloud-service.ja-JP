@@ -1,13 +1,13 @@
 ---
 title: CSV に書き出し
 description: ページの情報をローカルシステムの CSV ファイルに書き出します
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# CSV に書き出し {#export-to-csv}
+# CSV に書き出し{#export-to-csv}
 
 **CSV レポートの作成**&#x200B;では、ページの情報をローカルシステムの CSV ファイルに書き出すことができます。
 
@@ -30,7 +30,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * ワークフロー
    * 翻訳
       * 翻訳済み
-   * Analytics
+   * 分析
       * ページ表示
       * 個別訪問者数
       * ページ滞在時間
@@ -45,15 +45,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 CSV の書き出しファイルを作成するには、次の手順を実行します。
 
 1. **サイト**&#x200B;コンソールを開き、必要に応じて必要な場所まで移動します。
-   * 「 **CSVレポートを作成** 」オプションは、サイトコンソール(リ **スト表示** )の閲覧時に使用できます。
-   * これは、「作成」ドロップダウンメニ **ューの** 「オプション」です。
+   * （リスト表示で）**サイト**&#x200B;コンソールを参照すると、「**CSV レポート**」オプションを使用できます。
+   * これは、「**作成**」ドロップダウンメニューのオプションです。
 
-      ![CSVの作成オプション](/help/sites-cloud/authoring/assets/csv-create.png)
+      ![CSV 作成オプション](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. ツールバーの「**作成**」をクリックし、「**CSV レポート**」を選択してウィザードを開きます。
 
-   ![CSVエクスポートオプション](/help/sites-cloud/authoring/assets/csv-options.png)
+   ![CSV 書き出しオプション](/help/sites-cloud/authoring/assets/csv-options.png)
 
 1. 書き出す必要があるプロパティを選択します。
 1. 「**作成**」を選択します。
-   ![ExcelでのCSVエクスポートの結果](/help/sites-cloud/authoring/assets/csv-example.png)
+   ![CSV への書き出しで生成された Excel ファイル](/help/sites-cloud/authoring/assets/csv-example.png)
