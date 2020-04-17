@@ -1,7 +1,7 @@
 ---
 title: 新機能
-description: 'クラウドサービスとしてのAdobe Experience Manager(AEM)の新機能を紹介します。 '
-translation-type: tm+mt
+description: 'Adobe Experience Manager (AEM) as a Cloud Service の新機能。 '
+translation-type: ht
 source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
 
 ---
@@ -11,16 +11,16 @@ source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
 
 <!-- For the pre-release of Adobe Experience Manager (AEM) as a Cloud Service everything is new. -->
 
-AEMクラウドサービスは、Webコンテンツやデジタルアセット管理機能を含む、コンテンツのライフサイクル全体にわたってマーケティング担当者と開発者のワークフローを最適化する、クラウドネイティブのプラットフォームです。 クラウドネイティブでは、拡張性の高いパフォーマンスを実現し、インフラストラクチャのセキュリティを確保し、最新の状態を維持するための迅速な更新を実現し、手間のかからない導入と管理を実現します。
+AEM Cloud Service は、Web コンテンツおよびデジタルアセット管理機能を含め、コンテンツのライフサイクル全体にわたってマーケティング担当者と開発者のワークフローを最適化するクラウドネイティブなプラットフォームです。クラウドネイティブなので、拡張性の高いパフォーマンスを実現し、インフラストラクチャのセキュリティが確保され、俊敏な更新で常に最新の状態に保たれ、手間のかからないデプロイメントと管理を可能にします。
 
-クラウドサービスの概要については、「クラウドサ [ービスとしてのAEMの概要」を参照してください](/help/overview/introduction.md)。
+AEM as a Cloud Service の概要については、[AEM as a Cloud Service の概要](/help/overview/introduction.md)を参照してください。
 
 <!-- Please link to introduction or what's new of Sites. -->
 
-アセットの概要については、「クラウドサー [ビスとしてのアセットの概要」を参照してください。](/help/assets/overview.md)
+AEM Assets as a Cloud Service の概要については、[AEM Assets as a Cloud Service の概要](/help/assets/overview.md)を参照してください
 
-AEMの以前のバージョンに詳しい場合は、クラウドサービスとしてのAEMの主な変更点の概要を以下に示します。
+AEM の以前のバージョンに習熟している場合は、以下で AEM as a Cloud Service の主な変更点の概要を参照してください。
 
-* [クラウドサービスとしてのExperience Managerに対する注目すべき変更](/help/release-notes/aem-cloud-changes.md)
-* [AEMクラウドサービスとしてのAEMサイトに対する注目すべき変更](/help/sites-cloud/sites-cloud-changes.md)
-* [クラウドサービスとしてのAEM Assetsに対する注目すべき変更](/help/assets/assets-cloud-changes.md)
+* [Adobe Experience Manager (AEM) as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)
+* [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
