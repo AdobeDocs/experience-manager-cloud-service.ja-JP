@@ -1,7 +1,7 @@
 ---
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -24,17 +24,17 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-cloud/authoring/features/responsive-layout.md) when editing.
+>ページやテンプレートが適切に設定されていると、編集中に[レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)を使用できます。
 
 >[!TIP]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+>**編集**&#x200B;モードでは、コンテンツのリンクは表示されますが、**アクセスできません**。コンテンツのリンクを使用して移動する場合は、[プレビューモード](#previewing-pages)を使用します。
 
 ## ページツールバー {#page-toolbar}
 
 ページツールバーを使用すると、ページ設定に応じた適切な機能にアクセスできます。
 
-![ページのツールバー](/help/sites-cloud/authoring/assets/editing-page-toolbar.png)
+![ページツールバー](/help/sites-cloud/authoring/assets/editing-page-toolbar.png)
 
 ツールバーを使用すると、様々なオプションにアクセスできます。現在のコンテキストと設定によっては、一部のオプションを使用できないことがあります。
 
@@ -42,7 +42,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    サイドパネルが開きます（または閉じます）。このパネルには、[アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)および[コンテンツツリー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree)が含まれています。
 
-   ![サイドパネル切り替え](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+   ![サイドパネルの切り替え](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **ページ情報**
 
@@ -54,13 +54,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    別のデバイスでのページのルックアンドフィールをエミュレートするために使用する[エミュレーターツールバー](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate)を切り替えます。レイアウトモードでは自動的に切り替わります。
 
-   ![エミュレータボタン](/help/sites-cloud/authoring/assets/emulator.png)
+   ![エミュレーターボタン](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   ContextHubを開き [ます](/help/sites-cloud/authoring/personalization/contexthub.md)。 プレビューモードでのみ使用できます。
+   [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md) を開きます。プレビューモードでのみ使用できます。
 
-   ![コンテキストハブボタン](/help/sites-cloud/authoring/assets/context-hub.png)
+   ![ContextHub ボタン](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **ページタイトル**
 
@@ -72,7 +72,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    現在の[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)が表示され、別のモード（編集、レイアウト、タイムワープ、ターゲット設定など）を選択できます。
 
-   ![モード選択ボタン](/help/sites-cloud/authoring/assets/mode-selector.png)
+   ![モードセレクターボタン](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **プレビュー**
 
@@ -88,21 +88,21 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ### ステータスの通知 {#status-notification}
 
-If a page is part of a [workflow](/help/sites-cloud/authoring/workflows/overview.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+ページが 1 つまたは複数の[ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)の一部である場合、この情報はページの編集時に画面の上部にある通知バーに表示されます。
 
 ![ワークフロー通知](/help/sites-cloud/authoring/assets/editing-workflow-notification.png)
 
 >[!NOTE]
 >
->ステータスバーは、適切な権限を持つユーザーアカウントにのみ表示されます。
+>ステータスバーは、適切な特権を持つユーザーアカウントにのみ表示されます。
 
 通知には、ページに対して実行されているワークフローが一覧表示されます。ユーザーが現在のワークフローステップに関係している場合は、[ワークフローのステータスに影響する](/help/sites-cloud/authoring/workflows/participating.md)オプションや、ワークフローの詳細を取得するオプションを使用できます。例えば、次のようなものがあります。
 
-* **完了** - 「作業項目の完 **了」ダイアログを開きます** 。
-* **委任** - [作業項目の **完了]ダイアログ**
-* **詳細の表示** — ワークフローの **詳細** ・ウィンドウを開きます。
+* **完了** - **作業項目を完了**&#x200B;ダイアログを開きます
+* **委任** - **作業項目を完了**&#x200B;ダイアログを開きます
+* **詳細を表示** - ワークフローの&#x200B;**詳細**&#x200B;ウィンドウを開きます
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-cloud/authoring/workflows/participating.md) from the Notification inbox.
+通知バーからのワークフローステップの完了および委任は、通知インボックスから[ワークフローに参加](/help/sites-cloud/authoring/workflows/participating.md)している場合に動作します。
 
 ページが複数のワークフローの対象である場合は、ワークフローの数がワークフローをスクロールできる矢印ボタンと共に通知の右端に表示されます。
 
@@ -146,7 +146,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
       ![コンポーネントの挿入](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * デスクトップデバイスを使用している場合は、「**コンポーネントをここにドラッグ**」ボックスをダブルクリックします。
 
    * **新規コンポーネントを挿入**&#x200B;ダイアログが表示され、必要なコンポーネントを選択できるようになります。
 
@@ -154,11 +154,11 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 1. 選択したコンポーネントがページの下部に追加されます。必要に応じてコンポーネントを[編集](#edit-content)します。
 
-### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
+### アセットブラウザーを使用したコンポーネントの挿入{#inserting-a-component-using-the-assets-browser}
 
 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、ページに新しいコンポーネントを追加することもできます。この操作により、適切なタイプの新しいコンポーネント（アセットが格納される）が自動的に作成されます。
 
-この動作は使用しているインストール環境で設定できます。See Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance for further details. <!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
+この動作は使用しているインストール環境で設定できます。詳しくは、「アセットをドラッグするとコンポーネントインスタンスが作成されるように段落システムを設定」を参照してください。<!--This behavior can be configured for your installation. See [Configuring a Paragraph System so that Dragging an Asset Creates a Component Instance](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) for further details.-->
 
 前述のいずれかのアセットタイプをドラッグしてコンポーネントを作成するには：
 
@@ -174,7 +174,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 >
 >モバイルデバイスでは、アセットブラウザーは画面全体に表示されます。アセットをドラッグすると、ブラウザーが閉じて、アセットを配置できるようにページが再び表示されます。
 
-If when browsing the assets you find that you need to make a quick change to an asset, you can start the asset editor directly from the browser by clicking the edit icon next to the asset&#39;s name. <!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+アセットを参照したとき、アセットをすぐに変更する必要があることに気づいた場合は、アセット名の横にある編集アイコンをクリックすると、ブラウザーから直接アセットエディターを開始できます。<!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
 
 ![アセット編集ボタン](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -188,13 +188,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 * **編集**
 
-   [コンポーネントのタイプに応じて](/help/sites-cloud/authoring/fundamentals/components.md) 、コンポーネントのコ [ンテンツを編集できます](#edit-content)。 多くの場合、ツールバーが提供されます。
+   [コンポーネントの種類に応じて](/help/sites-cloud/authoring/fundamentals/components.md)[コンポーネントのコンテンツを編集](#edit-content)できます。多くの場合、ツールバーが提供されます。
 
-   「![編集」ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+   ![「編集」ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **設定**
 
-   [コンポーネントのタイプに応じて](/help/sites-cloud/authoring/fundamentals/components.md) 、コンポーネントのプロパティを編集および設定できます。 多くの場合、ダイアログが開きます。
+   [コンポーネントの種類に応じて](/help/sites-cloud/authoring/fundamentals/components.md)、コンポーネントのプロパティを編集および設定できます。多くの場合、ダイアログが開きます。
 
    ![設定ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
@@ -237,13 +237,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 * **グループ**
 
-   複数のコンポーネントを一度に選択できます。デスクトップデバイスで同じ操作をおこなうには、**Control キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
+   複数のコンポーネントを一度に選択できます。デスクトップデバイスで同じ操作をおこなうには、**Ctrl キーを押しながらクリック**&#x200B;するか、または **Command キーを押しながらクリック**&#x200B;します。
 
    ![グループボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **親**
 
-   これにより、選択したコンポーネントの親コンポーネントを選択できます。
+   選択したコンポーネントの親コンポーネントを選択できます。
 
    ![親ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
@@ -257,7 +257,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
    これを使用すると、選択したコンポーネントから新しい[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を作成したり、既存のエクスペリエンスフラグメントに追加したりできます。
 
-   ![エクスペリエンスフラグメントに変換ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+   ![エクスペリエンスフラグメントへの変換ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## コンテンツの編集 {#edit-content}
 
@@ -266,11 +266,11 @@ If when browsing the assets you find that you need to make a quick change to an 
 * [編集用のコンポーネントのダイアログ](#component-edit-dialog)を開きます。
 * アセットブラウザーから[アセットをドラッグ＆ドロップ](#drag-and-drop-assets-into-component)して、コンテンツを直接追加します。
 
-### コンポーネントの編集ダイアログ {#component-edit-dialog}
+### コンポーネントの編集ダイアログ{#component-edit-dialog}
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
-正確な編集オプションは、コンポーネントによって異なります。一部のコンポーネントでは[フルスクリーンモードでのみすべてのアクションを使用できます](#edit-content-full-screen-mode)。次に例を示します。
+正確な編集オプションは、コンポーネントによって異なります。一部のコンポーネントでは[全画面表示モードでのみすべてのアクションを使用できます](#edit-content-full-screen-mode)。次に例を示します。
 
 * テキストコンポーネント
 
@@ -284,33 +284,33 @@ If when browsing the assets you find that you need to make a quick change to an 
    >
    >編集は、空の画像コンポーネントでは動作しません。
    >
-   >コンポーネントの編集を開始する前に、コンポーネントに画像をドラッグまたはアップロードする必要があります。
+   >画像を編集するには、まず、画像をコンポーネントにドラッグまたはアップロードする必要があります。
 
 * 画像コンポーネント - 全画面
 
-   画像コンポーネント[のフルスクリーンモードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面では切り抜きプリセットを選択できます。
+   画像コンポーネント[の全画面表示モードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面では切り抜きプリセットを選択できます。
 
-   ![画像コンポーネントのフルスクリーンモード](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+   ![画像コンポーネントの全画面表示モード](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
-* 複数の基本コンポーネントから構成されるコンポーネントは、まず、必要な編集オプションのセットを確認するように求められます。
+* 複数の基本コンポーネントで構成されるコンポーネントでは、最初に、必要な編集オプションセットを確認するメッセージが表示されます。
 
 ### アセットのコンポーネントへのドラッグ＆ドロップ {#drag-and-drop-assets-into-component}
 
-特定のコンポーネントタイプ（画像など）に対して、アセットブラウザからコンポーネントに直接アセットをドラッグ&amp;ドロップして、コンテンツを更新できます。
+特定のコンポーネントタイプ（画像など）では、アセットをアセットブラウザーから直接コンポーネントにドラッグ＆ドロップして、コンテンツを更新することができます。
 
-## Edit Content in Full Screen Mode {#edit-content-full-screen-mode}
+## 全画面表示モードでのコンテンツの編集 {#edit-content-full-screen-mode}
 
 次のアイコンを使用して、すべてのコンポーネントで全画面表示モードにアクセス（または終了）できます。
 
-![フルスクリーンボタン](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+![全画面表示ボタン](/help/sites-cloud/authoring/assets/editing-full-screen.png)
 
 例えば、**テキスト**&#x200B;コンポーネントの場合は、次のように表示されます。
 
-![フルスクリーンのテキストコンポーネント](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
+![全画面表示のテキストコンポーネント](/help/sites-cloud/authoring/assets/editing-text-full-screen.png)
 
 >[!NOTE]
 >
->一部のコンポーネントでは、フルスクリーンモードに基本のインプレイスエディターよりも多くのオプションを使用できます。
+>一部のコンポーネントでは、全画面表示モードにすると、基本のインプレースエディターより多くのオプションが表示されます。
 
 ## コンポーネントの移動 {#moving-a-component}
 
@@ -331,13 +331,13 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 コンポーネントを調整するために編集モードから[レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md)に繰り返し切り替える代わりに、コンポーネントの&#x200B;**レイアウト**&#x200B;アクションを選択してそのコンポーネントのレイアウトを変更すると、編集モードから切り替える必要がなくなり、時間を節約できます。
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. サイトコンソールの&#x200B;**編集**&#x200B;モードでコンポーネントを選択すると、コンポーネントのツールバーが表示されます。
 
    ![ページコンポーネントのコンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   コンポーネントのレイアウトを調整するには、**レイアウト**&#x200B;アクションをクリックまたはタップします。
 
-   ![コンポーネントツールバーの「レイアウト」ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+   ![コンポーネントツールバーのレイアウトボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 1. レイアウトアクションを選択すると、
 
@@ -346,26 +346,26 @@ If when browsing the assets you find that you need to make a quick change to an 
    * 標準の編集アクションの代わりにレイアウトアクションが、コンポーネントツールバーに表示されます。
    ![レイアウトモードのコンポーネント](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode).
+   [レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)と同様に、コンポーネントのレイアウトを変更できるようになりました。
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. コンポーネントのツールバーは通常の編集状態に戻ります。
+1. 必要なレイアウトの変更を加えて、コンポーネントのアクションメニューの「**閉じる**」ボタンをクリックすると、コンポーネントのレイアウトの変更が終わります。コンポーネントのツールバーは通常の編集状態に戻ります。
 
    ![ページコンポーネントのコンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-layout-exit.png)
 
 >[!TIP]
 >
->レイアウトアクションは、選択したコンポーネントの範囲に限定されます。例えば、あるコンポーネントのレイアウトを編集し、別のコンポーネントをクリックすると、新しく選択したコンポーネントの標準編集ツールバー（レイアウトツールバーではなく）が表示され、サイズ変更ハンドルとエミュレータツールバーが非表示になります。
+>レイアウトアクションは、選択したコンポーネントの範囲に限定されます。例えば、あるコンポーネントのレイアウトを編集してから別のコンポーネントをクリックすると、新しく選択したコンポーネントに（レイアウトツールバーではなく）標準の編集ツールバーが表示され、サイズ変更ハンドルとエミュレーターツールバーが表示されなくなります。
 >
 >複数のコンポーネントに影響するページの全体のレイアウトを編集する必要がある場合は、[レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md)に切り替えます。
 
 ## 継承されたコンポーネント {#inherited-components}
 
-継承とは、コンテンツをコンポーネント間で自動的にプッシュできるメカニズムです。 継承されたコンポーネントは、次のような様々なシナリオによって生成されます。
+継承とは、コンポーネントからコンポーネントへコンテンツを自動的にプッシュできるメカニズムです。継承されたコンポーネントは、次のような様々なシナリオによって生成されます。
 
 * マルチサイト管理 <!--[Multi site management](/help/sites-administering/msm.md)-->
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)（ライブコピーをベースとしている場合）
 
-継承はキャンセル（その後再度有効化）できます。コンポーネントに応じて、コンポーネントがライブコピーまたは（ライブコピーに基づく）起動の一部であるページ上にある場合は、コンポーネントツールバーから使用できます。
+継承はキャンセル（その後再度有効化）できます。ライブコピーまたは（ライブコピーに基づいた）ローンチの一部であるページにコンポーネントがある場合は、コンポーネントに応じて、コンポーネントツールバーからこの機能を使用できます。
 
 ![継承関係を示すコンポーネントツールバー](/help/sites-cloud/authoring/assets/editing-component-toolbar-inheritance.png)
 
@@ -375,17 +375,17 @@ If when browsing the assets you find that you need to make a quick change to an 
 
    ![継承のキャンセルボタン](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
-* 継承を再有効化（既に継承がキャンセルされている場合）
+* 継承を再度有効にする（既に継承がキャンセルされている場合）
 
-   ![継承を再有効化ボタン](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+   ![継承再有効化ボタン](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
-* ロールアウトアクションは、Blueprintまたはライブコピーソースでも使用できます
+* ブループリントまたはライブコピーのソースでは、ロールアウトアクションも使用できます。
 
    ![ロールアウトボタン](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## ページテンプレートの編集 {#editing-the-page-template}
 
-ページ情報メニューで「テンプレートの編集」 [を選択すると](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors) 、テンプ **レートエディターに簡単** に切り替えることができま [](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)す。
+[ページ情報メニュー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)で「**テンプレートを編集**」を選択すると、[テンプレートエディター](/help/sites-cloud/authoring/features/templates.md#editing-templates-template-authors)に容易に切り替えることができます。
 
 [列表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)または[リスト表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view)でページを選択するときに、ページが基にしているテンプレートを簡単に確認できます。
 
@@ -404,7 +404,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を使用すると、レビュー担当者や他の作成者がコンテンツに関するフィードバックを提供できます。注釈は、レビューや検証の目的でよく使用されます。
 
-## ページのプレビュー {#previewing-pages}
+## ページのプレビュー{#previewing-pages}
 
 ページをプレビューするには、以下の 2 つの方法があります。
 
@@ -415,12 +415,12 @@ If when browsing the assets you find that you need to make a quick change to an 
 >
 >* コンテンツ内のリンクは表示されますが、編集モードでアクセスすることはできません。
 >* リンクを使用して移動する場合には、いずれかのプレビューオプションを使用してください。
->* Use the [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` to switch between preview and the last selected mode.
+>* プレビューと最後に選択したモードを切り替えるには、[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` を使用します。
 
 
 >[!NOTE]
 >
->WCMモードCookieは、両方のプレビューオプションに対して設定されます。
+>両方のプレビューオプションに WCM Mode Cookie が設定されています。
 
 ### プレビューモード {#preview-mode}
 
@@ -438,7 +438,7 @@ If when browsing the assets you find that you need to make a quick change to an 
 
 「**公開済みとして表示**」オプションは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューで使用できます。これによりページが新しいタブで開き、コンテンツが更新され、ページがパブリッシュ環境で表示されるとおりに表示されます。
 
-## ページのロック {#locking-a-page}
+## ページのロック{#locking-a-page}
 
 AEM では、他のユーザーによるコンテンツの変更を防ぐためにページをロックすることができます。ページのロックは、1 つの特定のページで大量の編集作業をおこなう場合や、短期間ページを凍結する必要がある場合に便利です。
 
@@ -449,7 +449,7 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
    1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
    1. ロックアイコンを選択します。
 
-      ![ロックボタン](/help/sites-cloud/authoring/assets/lock.png)
+      ![「ロック」ボタン](/help/sites-cloud/authoring/assets/lock.png)
 
 * **ページエディター**
 
@@ -471,7 +471,7 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 
 ## ページのロック解除 {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+ページのロック解除は、[ページのロック](#locking-a-page)とよく似ています。ページがロックされると、ロックオプションはロック解除アクションに置き換えられます。
 
 ページ情報メニューには「**ロック解除**」がオプションとして表示され、サイトコンソールのロックアイコンは「**ロック解除**」アイコンに置き換えられます。
 
@@ -486,16 +486,16 @@ Unlocking a page is very similar to [locking the page](#locking-a-page). Once th
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## ページ編集の取り消しとやり直し {#undoing-and-redoing-page-edits}
 
-次のアイコンを使用して、アクションの取り消しまたはやり直しを行うことができます。これらのアイコンは、ツールバーに適宜表示されます。
+次のアイコンを使用して、アクションの取り消しまたはやり直しをおこなうことができます。これらのアイコンは、ツールバーに適宜表示されます。
 
-![「取り消し」ボタンと「やり直し」ボタン](/help/sites-cloud/authoring/assets/redo.png)
+![取り消しボタンとやり直しボタン](/help/sites-cloud/authoring/assets/redo.png)
 
 >[!TIP]
 >
->* The [keyboard shortcut](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` is also available to undo page edit actions.
->* The keyboard shortcut `Ctrl-Y` is also available to redo page edit actions.
+>* [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` を使用して、ページの編集アクションを取り消すこともできます。
+>* キーボードショートカット `Ctrl-Y` を使用して、ページの編集アクションをやり直すこともできます。
 
 
 >[!NOTE]
@@ -508,9 +508,9 @@ AEM では、ユーザーが実行するアクションの履歴と、それら�
 
 コンテンツページで要素（テキストコンポーネントなど）が選択されている場合、取り消しコマンドとやり直しコマンドは選択した項目に適用されます。
 
-元に戻すコマンドとやり直しコマンドの動作は、他のソフトウェアの動作と似ています。コンテンツに関する意思決定を行う際に、Webページの最新の状態を復元するには、次のコマンドを使用します。 例えば、テキスト段落をページ上の別の場所に移動した場合に、取り消しコマンドを使用して、その段落を元の場所に戻すことができます。前の場所のほうがいい場合は、やり直しコマンドを使用して「取り消しを取り消し」ます。
+取り消しコマンドとやり直しコマンドの動作は、他のソフトウェアの場合と同様です。これらのコマンドを使用すると、コンテンツに関する決定をおこなう中で、Web ページの最新の状態に復元できます。例えば、テキスト段落をページ上の別の場所に移動した場合に、取り消しコマンドを使用して、その段落を元の場所に戻すことができます。前の場所のほうがいい場合は、やり直しコマンドを使用して「取り消しを取り消し」ます。
 
-例えば、次の操作を実行できます。
+例えば、次のことができます。
 
 * 取り消しを使用してからページの編集をおこなっていない限り、アクションをやり直すことができます。
 * 最大 20 回の編集アクションを取り消すことができます（デフォルト設定）。
