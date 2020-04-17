@@ -1,23 +1,23 @@
 ---
 title: インボックス
 description: インボックスを使用したタスクの管理
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# インボックス {#your-inbox}
+# インボックス{#your-inbox}
 
-ワークフローやプロジェクトなど、AEMの様々な領域から通知を受け取ることができます。 例えば、次の通知を受け取ることができます。
+ワークフローやプロジェクトなど、AEM の様々な領域から通知を受け取ることができます。例えば、以下に関する通知を受け取る場合があります。
 
 * タスク：
-   * These can also be created at various points within the AEM UI, for example, under **Projects**.
-   * These can be the product of a workflow **Create Task** or **Create Project Task** step.
+   * AEM UI 内の様々な場所で作成することもできます（例えば、**プロジェクト**）。
+   * **タスクを作成**&#x200B;または&#x200B;**プロジェクトタスクを作成**&#x200B;ワークフローのステップから通知することができます。
 * ワークフロー：
-   * ページコンテンツに対して実行する必要があるアクションを表す作業項目
-      * These are the product of workflow **Participant** steps.
-   * 管理者が失敗したステップを再試行できる失敗項目
+   * ページのコンテンツに対して実行する必要があるアクションを表す作業項目
+      * **参加者**&#x200B;ワークフローのステップから通知されます。
+   * 失敗した項目（管理者が失敗したステップを再試行できるようにするため）
 
 これらの通知は、自分のインボックスで受け取り、それらを表示して対処できます。
 
@@ -40,43 +40,43 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >特定のアクションは、[適切なリソースのカード表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)にも表示されます。
 
-## インボックスを開く {#opening-the-inbox}
+## インボックスを開く{#opening-the-inbox}
 
 AEM 通知インボックスを開くには：
 
 1. ツールバーのインジケーターをクリックまたはタップします。
 
-1. 「**すべて表示**」を選択します。**AEM インボックス**&#x200B;が開きます。インボックスには、ワークフロー、プロジェクトおよびタスクの項目が表示されます。
+1. 「**すべて表示**」を選択します。**AEM インボックス**&#x200B;が開きます。インボックスには、ワークフロー、プロジェクトおよびタスクからの項目が表示されます。
 1. デフォルトの表示は[リスト表示](#inbox-list-view)ですが、[カレンダー表示](#inbox-calendar-view)に切り替えることもできます。これは、表示セレクター（ツールバーの右上部分）を使用しておこないます。
 
-   For both views you can also define [View Settings](#inbox-view-settings). The options available are dependent on the current view.
+   両方の表示について、[表示設定](#inbox-view-settings)を定義することもできます。使用可能なオプションは現在の表示によって異なります。
 
-   ![インボックス表示の設定](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
+   ![インボックスの表示設定](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) or [Search](/help/sites-cloud/authoring/getting-started/search.md) to navigate to another location when you are finished.
+>インボックスはコンソールとして機能するので、完了したら[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)または[検索](/help/sites-cloud/authoring/getting-started/search.md)を使用して、別の場所に移動します。
 
 ### インボックス - リスト表示 {#inbox-list-view}
 
-このビューには、すべての項目と関連情報が一覧表示されます。
+この表示では、すべての項目が関連情報と共に表示されます。
 
-![インボックスリスト表示](/help/sites-cloud/authoring/assets/inbox-list-view.png)
+![インボックスのリスト表示](/help/sites-cloud/authoring/assets/inbox-list-view.png)
 
 ### インボックス - カレンダー表示 {#inbox-calendar-view}
 
-このビューでは、カレンダー内のアイテムの位置に従ってアイテムが表示されます。
+この表示では、カレンダー内の位置に従って項目が表示されます。
 
-![受信トレイのカレンダー表示](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
+![インボックスのカレンダー表示](/help/sites-cloud/authoring/assets/inbox-calendar-view.png)
 
 以下の操作を実行できます。
 
-* Select a specific view: **Timeline**, **Column**, **List**
-* Specify the tasks to display according to **Schedule**: **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
-* 品目の詳細情報のドリルダウン
-* 日付範囲を選択してビューにフォーカスします。
+* 特定の表示（**タイムライン**、**列**、**リスト**）の選択
+* **スケジュール**&#x200B;に応じて表示するタスク（**すべて**、**計画済み**、**処理中**、**まもなく期限**、**期限切れ**）の指定
+* 項目の詳細情報へのドリルダウン
+* 表示を絞り込むための日付範囲の選択
 
-![受信トレイカレンダーの表示日付範囲](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
+![インボックスのカレンダー表示の日付範囲](/help/sites-cloud/authoring/assets/inbox-calendar-range.png)
 
 ### インボックス - 表示設定 {#inbox-view-settings}
 
@@ -97,30 +97,30 @@ AEM 通知インボックスを開くには：
 
    * **並べ替えの基準**
    * **並べ替え順序**
-   ![インボックスリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+   ![インボックスのリスト表示の設定](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
    カレンダーを他のユーザーに委任したり、他のユーザーに委任を依頼したり、委任を管理したりすることもできます。
 
-   ![インボックスリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+   ![インボックスのリスト表示の委任設定](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## 項目に対するアクションの実行 {#taking-action-on-an-item}
 
-1. 項目に対してアクションを実行するには、該当する項目のサムネイルを選択します。その項目に適用可能なアクションのアイコンがツールバーに表示されます。
+1. 項目に対してアクションを実行するには、該当する項目のサムネールを選択します。その項目に適用可能なアクションのアイコンがツールバーに表示されます。
 
-   ![受信トレイ項目の選択](/help/sites-cloud/authoring/assets/inbox-select-item.png)
+   ![インボックス項目の選択](/help/sites-cloud/authoring/assets/inbox-select-item.png)
 
    アクションは項目に対応しており、次のアクションがあります。
 
-   * **完了アクション**
-   * **項目の** 委任
-   * **アイテムを開く** （アイテムのタイプに応じて、このアクションで実行できる操作は次のとおりです）。
+   * アクションを&#x200B;**完了**&#x200B;する
+   * 項目を&#x200B;**委任**&#x200B;する
+   * 項目を&#x200B;**開く**。項目タイプに応じて、次の操作がおこなわれます。
 
-      * 項目のプロパティを表示
-      * 適切なダッシュボードまたはウィザードを開いて、その他のアクションを実行します
-      * 関連ドキュメントを開く
-   * **前のステップ** に戻る
-   * ワークフローのペイロードの表示
-   * アイテムからプロジェクトを作成する
+      * 項目のプロパティを表示する
+      * さらなるアクションに適したダッシュボードやウィザードを開く
+      * 関連するドキュメントを開く
+   * 前のステップに&#x200B;**戻す**
+   * ワークフローのペイロードを表示する
+   * 項目からプロジェクトを作成する
    >[!NOTE]
    >
    >詳しくは、次の節を参照してください。
@@ -128,20 +128,20 @@ AEM 通知インボックスを開くには：
    >* ワークフローの項目 - [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. 選択した項目に応じて、次のようにアクションが開始されます。
+1. 選択した項目に応じて、アクションが開始されます。例えば、次の操作がおこなわれます。
 
-   * アクションに適したダイアログが開きます
-   * アクションウィザードが起動します
+   * そのアクションに適したダイアログが開きます
+   * アクションウィザードが開始されます
    * ドキュメントページが開きます
-   For example, **Delegate** will open a dialog:
+   例えば、「**委任**」を選択するとダイアログが開きます。
 
-   ![受信トレイの委任タスク](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
+   ![インボックスの委任タスク](/help/sites-cloud/authoring/assets/inbox-assign-task.png)
 
    ダイアログ、ウィザード、ドキュメントページが開いているかどうかに応じて、次の操作をおこなうことができます。
 
-   * 適切なアクション（再割り当てなど）を確認します。
-   * アクションのキャンセル
-   * [戻る]矢印を選択してインボックスに戻ります。例えば、アクションウィザードやドキュメントページが開いている場合は、[インボックス]に戻ることができます。
+   * 適切なアクション（再割り当てなど）を確認する
+   * アクションをキャンセルする
+   * 戻る矢印を選択してインボックスに戻る（例えば、アクションウィザードやドキュメントページが開いている場合は、インボックスに戻ることができます）
 
 
 ## タスクの作成 {#creating-a-task}
@@ -149,24 +149,24 @@ AEM 通知インボックスを開くには：
 インボックスからタスクを作成できます。
 
 1. 「**作成**」、「**タスク**」の順に選択します。
-1. Complete the necessary fields in the **Basic** and **Advanced** tabs (only the **Title** is mandatory, all others are optional):
+1. 「**基本**」および「**詳細**」タブの必要なフィールドに入力します。「**タイトル**」のみが必須で、それ以外のフィールドはオプションです。
 
-   * **基本**:
+   * **基本**：
 
       * **タイトル**
       * **プロジェクト**
       * **割り当て先**
-      * **コンテンツ**（ペイロードと同様）は、タスクからリポジトリ内の場所への参照です
+      * **コンテンツ**（ペイロードと似ており、タスクからリポジトリ内の場所への参照です）
       * **説明**
       * **タスクの優先度**
       * **開始日**
       * **期限**
-   ![受信トレイのタスクの追加](/help/sites-cloud/authoring/assets/inbox-create-task.png)
+   ![インボックスのタスクの追加](/help/sites-cloud/authoring/assets/inbox-create-task.png)
 
    * **アドバンス**
 
-      * **名前**:URLを形成するために使用され、空白の場合はタイトルに基づき **ます**。
-   ![インボックス追加タスクの詳細オプション](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
+      * **名前**：URL を作成するために使用されます。空の場合は、**タイトル**&#x200B;に基づいて設定されます。
+   ![インボックスのタスク追加の詳細オプション](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
 1. 「**送信**」を選択します。
 
@@ -174,13 +174,13 @@ AEM 通知インボックスを開くには：
 
 特定のタスクでは、そのタスクに基づいて[プロジェクト](/help/sites-cloud/authoring/projects/overview.md)を作成できます。
 
-1. サムネイルをタップまたはクリックして、適切なタスクを選択します。
+1. サムネールをタップまたはクリックして、適切なタスクを選択します。
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >プロジェクトの作成に使用できるのは、**インボックス**&#x200B;の「**作成**」オプションを使用して作成されたタスクのみです。
    >
-   >（ワークフローの）作業項目を使用してプロジェクトを作成することはできません。
+   >（ワークフローからの）作業項目はプロジェクトの作成に使用できません。
 
 1. ツールバーの「**プロジェクトを作成**」を選択してウィザードを開きます。
 1. 適切なテンプレートを選択して、「**次へ**」を選択します。
@@ -210,11 +210,11 @@ AEM 通知インボックスを開くには：
 
 1. フィルターセレクターを開きます。
 
-   ![インボックス検索](/help/sites-cloud/authoring/assets/inbox-search.png)
+   ![インボックスでの検索](/help/sites-cloud/authoring/assets/inbox-search.png)
 
-1. 条件の範囲に従ってリストに表示された項目をフィルタリングでき、その多くを絞り込むことができます。例：
+1. 条件の範囲に従ってリストされる項目をフィルターできます。その多くは次のように絞り込むことができます。
 
-   ![インボックス検索フィルター](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
+   ![インボックスでの検索フィルター](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
    >
