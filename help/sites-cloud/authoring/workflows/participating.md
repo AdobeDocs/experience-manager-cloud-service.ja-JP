@@ -1,7 +1,7 @@
 ---
 title: ワークフローへの参加
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * [ワークフロー項目を開いて、詳細を表示（またはアクションを実行）](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [ワークロードペイロード（複数のリソース）を表示](#viewing-the-workflow-payload-multiple-resources)
 
-## 使用可能なワークフローアクションの通知 {#notifications-of-available-workflow-actions}
+## 使用可能なワークフローアクションの通知{#notifications-of-available-workflow-actions}
 
 作業項目（**コンテンツを承認**&#x200B;など）が割り当てられると、様々なアラートや通知が表示されます。
 
@@ -28,11 +28,11 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 通知[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)に項目がリストされます
 
-   ![受信トレイ内の通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+   ![インボックス内の通知](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * ページエディターを使用しているときは、ステータスバーに以下のものが表示されます。
-   * アクティベーションのリクエストなど、ページに適用されるワークフローの名前
-   * 完了、委任、詳細表示など、ワークフローの現在のステップで現在のユーザーが使用できる何らかのアクション
+   * アクティベーションのリクエストなど、ページに適用されるワークフローの名前。
+   * 完了、委任、詳細表示など、ワークフローの現在のステップで現在のユーザーが使用できる何らかのアクション。
    * ページが対象であるワークフローの数。以下の操作を実行できます。
       * 左／右の矢印を使用して、多様なワークフローのステータス情報を移動できます。
       * 実際の数字をクリック／タップして、すべての適用可能なワークフローのドロップダウンリストを開いてから、ステータスバーに表示するワークフローを選択します。
@@ -40,7 +40,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    >[!NOTE]
    >
-   >The status bar is only visible to users with workflow privileges; for example, members of the `workflow-users` group.
+   >ステータスバーは、例えば `workflow-users` グループのメンバーなど、ワークフロー特権のあるユーザーだけに表示されます。
    >
    >
    >現在のユーザーがワークフローの現在のステップに直接関与している場合に、アクションが表示されます。
@@ -60,37 +60,37 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 次のいずれかで参加者ステップを完了できます。
 
-* [受信トレイ](#completing-a-participant-step-inbox)
+* [インボックス](#completing-a-participant-step-inbox)
 * [ページエディター](#completing-a-participant-step-page-editor)
 * [タイムライン](#completing-a-participant-step-timeline)
-* When [opening a workflow item to view details](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき
 
 #### 参加者ステップの完了 - インボックス {#completing-a-participant-step-inbox}
 
 以下の手順を使用して作業項目を完了します。
 
 1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**を開きます。
-1. アクションを実行するワークフロー項目を選択します（サムネイルをタップまたはクリック）。
-1. Select **Complete** from the toolbar.
-1. 「**作業項目を完了**」ダイアログボックスが開きます。Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
+1. ツールバーの「**完了**」を選択します。
+1. 「**作業項目を完了**」ダイアログボックスが開きます。ドロップダウンセレクターで「**次のステップ**」を選択し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの完了 - ページエディター {#completing-a-participant-step-page-editor}
 
 以下の手順を使用して作業項目を完了します。
 
 1. 「[編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)」を開きます。
-1. Select **Complete** from the status bar at the top.
-1. 「**作業項目を完了**」ダイアログボックスが開きます。Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 上部のステータスバーの「**完了**」を選択します。
+1. 「**作業項目を完了**」ダイアログボックスが開きます。ドロップダウンセレクターで「**次のステップ**」を選択し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの完了 - タイムライン {#completing-a-participant-step-timeline}
 
 タイムラインを使用してステップを完了または進めることもできます。
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page):
+1. 必要なページを選択して&#x200B;**タイムライン**&#x200B;を開きます（または&#x200B;**タイムライン**&#x200B;を開いてからページを選択します）。
 
-   ![手順の完了](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
+   ![ステップの完了](/help/sites-cloud/authoring/assets/workflows-timeline-completing.png)
 
 1. アラートバナーをクリックまたはタップして使用できるアクションを表示します。「**次へ**」を選択します。
 
@@ -98,7 +98,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. ワークフローによっては、次のステップを選択できます。
 
-   ![次の手順の選択](/help/sites-cloud/authoring/assets/workflows-next-step.png)
+   ![次のステップの選択](/help/sites-cloud/authoring/assets/workflows-next-step.png)
 
 1. 「**次へ**」を選択してアクションを確定します。
 
@@ -119,44 +119,44 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 参加者ステップは次のいずれかから委任できます。
 
-* [受信トレイ](#delegating-a-participant-step-inbox)
+* [インボックス](#delegating-a-participant-step-inbox)
 * [ページエディター](#delegating-a-participant-step-page-editor)
 * [タイムライン](#delegating-a-participant-step-timeline)
-* When [opening a workflow item to view details](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき
 
 #### 参加者ステップの委任 - インボックス {#delegating-a-participant-step-inbox}
 
 以下の手順を使用して作業項目を委任します。
 
 1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**を開きます。
-1. アクションを実行するワークフロー項目を選択します（サムネイルをタップまたはクリック）。
-1. Select **Delegate** from the toolbar.
-1. ダイアログが開きます。Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
+1. ツールバーの「**委任**」を選択します。
+1. ダイアログが開きます。ドロップダウンセレクターから「**ユーザー**」（グループも可）を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの委任 - ページエディター {#delegating-a-participant-step-page-editor}
 
 以下の手順を使用して作業項目を委任します。
 
 1. 「[編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)」を開きます。
-1. Select **Delegate** from the status bar at the top.
-1. ダイアログが開きます。Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 上部のステータスバーの「**委任**」を選択します。
+1. ダイアログが開きます。ドロップダウンセレクターから「**ユーザー**」（グループも可）を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップの委任 - タイムライン {#delegating-a-participant-step-timeline}
 
 タイムラインを使用してステップを委任または割り当てることもできます。
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. 必要なページを選択して&#x200B;**タイムライン**&#x200B;を開きます（または&#x200B;**タイムライン**&#x200B;を開いてからページを選択します）。
 1. アラートバナーをクリックまたはタップして使用できるアクションを表示します。「**担当者を変更**」を選択します。
 
-   ![委任手順](/help/sites-cloud/authoring/assets/workflows-delegate.png)
+   ![ステップの委任](/help/sites-cloud/authoring/assets/workflows-delegate.png)
 
 1. 新しい担当者を指定します。
 
    ![担当者の変更](/help/sites-cloud/authoring/assets/workflows-assignee.png)
 
-1. Select **Assign** to confirm the action.
+1. 「**割り当て**」を選択して、アクションを確定します。
 
 ### 参加者ステップでの前のステップの実行 {#performing-step-back-on-a-participant-step}
 
@@ -169,35 +169,35 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 以下のいずれかから参加者ステップで前のステップを実行することができます。
 
-* [受信トレイ](#performing-step-back-on-a-participant-step-inbox)
+* [インボックス](#performing-step-back-on-a-participant-step-inbox)
 * [ページエディター](#performing-step-back-on-a-participant-step-page-editor)
 * [タイムライン](#performing-step-back-on-a-participant-step-timeline)
-* When [opening a workflow item to view details](#opening-a-workflow-item-to-view-details-and-take-actions).
+* [ワークフロー項目を開いて詳細を表示する](#opening-a-workflow-item-to-view-details-and-take-actions)とき
 
 #### 参加者ステップでの前のステップの実行 - インボックス {#performing-step-back-on-a-participant-step-inbox}
 
 以下の手順を使用して、前のステップを実行します。
 
 1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**を開きます。
-1. アクションを実行するワークフロー項目を選択します（サムネイルをタップまたはクリック）。
-1. Select **Step Back** to open the dialog.
-1. Specify the **Previous Step** and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
+1. 「**ステップバック**」を選択して、ダイアログを開きます。
+1. 「**前のステップ**」を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップでの前のステップの実行 - ページエディター {#performing-step-back-on-a-participant-step-page-editor}
 
 以下の手順を使用して、前のステップを実行します。
 
 1. 「[編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)」を開きます。
-1. Select **Step Back** from the status bar at the top.
-1. Specify the **Previous Step** and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. 上部のステータスバーの「**前のステップ**」を選択します。
+1. 「**前のステップ**」を指定し、必要に応じて&#x200B;**コメント**&#x200B;を追加します。
+1. 「**OK**」を使用してステップを完了します（または「**キャンセル**」を使用してアクションを中止します）。
 
 #### 参加者ステップでの前のステップの実行 - タイムライン {#performing-step-back-on-a-participant-step-timeline}
 
 タイムラインを使用して前のステップにロール（ステップ）バックすることもできます。
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. 必要なページを選択して&#x200B;**タイムライン**&#x200B;を開きます（または&#x200B;**タイムライン**&#x200B;を開いてからページを選択します）。
 1. アラートバナーをクリックまたはタップして使用できるアクションを表示します。「**ロールバック**」を選択します。
 
    ![ステップのロールバック](/help/sites-cloud/authoring/assets/workflows-roll-back.png)
@@ -206,33 +206,33 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![ステップの指定](/help/sites-cloud/authoring/assets/workflows-roll-back-step.png)
 
-1. Select **Roll back** to confirm the action.
+1. 「**ロールバック**」を選択して、アクションを確定します。
 
-### Opening a Workflow Item to View Details (and Take Actions) {#opening-a-workflow-item-to-view-details-and-take-actions}
+### ワークフロー項目を開いて詳細を表示（およびアクションを実行） {#opening-a-workflow-item-to-view-details-and-take-actions}
 
 ワークフロー作業項目の詳細を表示して、適切なアクションを実行します。
 
 ワークフロー詳細がタブに表示され、適切なアクションがツールバーに表示されます。
 
-* **「WORKITEM** 」タブ：
+* 「**作業項目**」タブ
 
-   ![「WORKITEM」タブ](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+   ![「作業項目」タブ](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
-* **「ワークフロー情報** 」タブ：
+* 「**ワークフロー情報**」タブ
 
-   ![「ワークフロー」タブ](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+   ![「ワークフロー情報」タブ](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   If Workflow Stages have been configured for the model, you can view the progress according to these: <!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+   ワークフローステージがモデルのために設定されている場合は、これらに従って進捗を表示できます。<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
    ![ワークフローステージ](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
-* **「コメント** 」タブ：
+* 「**コメント**」タブ
 
    ![「コメント」タブ](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 以下のいずれかから作業項目の詳細を開くことができます。
 
-* [受信トレイ](#performing-step-back-on-a-participant-step-inbox)
+* [インボックス](#performing-step-back-on-a-participant-step-inbox)
 * [ページエディター](#performing-step-back-on-a-participant-step-page-editor)
 
 #### ワークフロー詳細を開く - インボックス {#opening-workflow-details-inbox}
@@ -240,28 +240,28 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 ワークフロー項目を開き、詳細を表示するには
 
 1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**を開きます。
-1. アクションを実行するワークフロー項目を選択します（サムネイルをタップまたはクリック）。
-1. Select **Open** to open the information tabs.
+1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
+1. 「**開く**」を選択して、「情報」タブを開きます。
 1. 必要に応じて、適切なアクションを選択し、詳細を入力して「**OK**」（または「**キャンセル**」）で確認します。
-1. Use **Save** or **Cancel** to exit.
+1. 「**保存**」または「**キャンセル**」を使用して終了します。
 
 #### ワークフロー詳細を開く - ページエディター {#opening-workflow-details-page-editor}
 
 ワークフロー項目を開き、詳細を表示するには
 
 1. 「[編集するページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing)」を開きます。
-1. Select **View Details** from the status bar to open the information tabs.
+1. ステータスバーの「**詳細の表示**」を選択して、「情報」タブを開きます。
 1. 必要に応じて、適切なアクションを選択し、詳細を入力して「**OK**」（または「**キャンセル**」）で確認します。
-1. Use **Save** or **Cancel** to exit.
+1. 「**保存**」または「**キャンセル**」を使用して終了します。
 
-### Viewing the Workflow Payload (Multiple Resources) {#viewing-the-workflow-payload-multiple-resources}
+### ワークフローペイロード（複数リソース）の表示 {#viewing-the-workflow-payload-multiple-resources}
 
 ワークフローインスタンスに関連付けられたペイロードの詳細を表示できます。最初にパッケージの中のリソースが表示されるので、ドリルダウンして、個別のページを表示できます。
 
 ワークフローインスタンスのペイロードおよびリソースを表示するには
 
 1. **[AEM インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)**を開きます。
-1. アクションを実行するワークフロー項目を選択します（サムネイルをタップまたはクリック）。
-1. Select **View Payload** from the toolbar to open the dialog.
+1. アクションを実行するワークフロー項目を選択します（サムネールをタップまたはクリック）。
+1. ツールバーの「**ペイロードを表示**」を選択して、ダイアログを開きます。
    * ワークフローパッケージは単にリポジトリ内のパスへのポインターのコレクションなので、ここでエントリを追加／削除／変更して、ワークフローパッケージから参照されるものを調整できます。**リソース定義**&#x200B;を使用して新しいエントリを追加します。
 1. リンクは、個別のページを開くために使用できます。
