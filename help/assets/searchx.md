@@ -1,50 +1,50 @@
 ---
-title: Adobe Experience Manager Assetsの検索オプションと機能の拡張
-description: アセットの検索機能を拡張します。
+title: Adobe Experience Manager Assets の検索オプションおよび機能の拡張
+description: Assets の検索機能の拡張について説明します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# アセット検索の拡張 {#extend-assets-search}
+# Assets の検索機能の拡張 {#extend-assets-search}
 
-Adobe Experience Manager(AEM)Assets検索機能を拡張できます。 AEM Assets はデフォルトで、文字列によってアセットを検索します。
+Adobe Experience Manager (AEM) Assets の検索機能を拡張できます。AEM Assets は、デフォルトの設定では、文字列でアセットを検索します。
 
-検索は QueryBuilder インターフェイスを介して実行されるので、複数の述語を使用することで検索をカスタマイズできます。You can overlay the default set of predicates in the following directory: `/apps/dam/content/search/searchpanel/facets`.
+検索は QueryBuilder インターフェイスを介して実行されるので、複数の述語を使用して検索をカスタマイズできます。`/apps/dam/content/search/searchpanel/facets` ディレクトリにあるデフォルトの述語セットをオーバーレイできます。
 
-AEM Assetsの管理パネルにタブを追加することもできます。
+また、AEM Assets 管理パネルにタブを追加することもできます。
 
 ## オーバーレイ {#overlay}
 
-To overlay the preconfigured predicates, copy the `facets` node from `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` or specify another `facetURL` property in the searchpanel configuration (the default is to `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+事前設定済みの述語をオーバーレイするには、`facets` ノードを `/libs/dam/content/search/searchpanel` から `/apps/dam/content/search/searchpanel/` にコピーするか、searchpanel 設定に別の `facetURL` プロパティを指定します（デフォルトでは `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json` になります）。
 
 >[!NOTE]
 >
->By default, the directory structure under `/apps` does not exist and needs to be created. Ensure that the node types match those under `/libs`.
+>デフォルトでは、`/apps` 配下のディレクトリ構造は存在しないので、新たに作成する必要があります。ノードのタイプが、`/libs` 配下のノードのタイプと一致するようにしてください。
 
 ### タブの追加 {#add-tabs}
 
-追加の検索タブを追加するには、AEM Assets管理者で設定します。 追加のタブは以下の手順で作成します。
+AEM Assets 管理パネルで追加の「検索」タブを設定することで、タブを追加できます。追加のタブは以下の手順で作成します。
 
-1. Create the folder structure `/apps/wcm/core/content/damadmin/tabs,`if it does not already exist, and copy the `tabs` node from `/libs/wcm/core/content/damadmin` and paste it.
-1. 必要に応じて、2 つ目のタブを作成して設定します。
+1. フォルダー構造 `/apps/wcm/core/content/damadmin/tabs,` がまだ存在しない場合は作成し、`tabs` ノードを `/libs/wcm/core/content/damadmin` からコピーして貼り付けます。
+1. 必要に応じて、2 つ目のタブを作成し設定します。
 
    >[!NOTE]
    >
-   >When you create a second `siteadminsearchpanel`, be sure to set an `id` property in order to prevent form conflicts.
+   >2 つ目の `siteadminsearchpanel` を作成する場合は、フォームの競合を避けるために `id` プロパティを必ず設定してください。
 
 ### カスタム述語の作成 {#create-custom-predicates}
 
-AEM Assetsには、アセット共有ページのカスタマイズに使用できる事前定義済み述語のセットが付属しています。
+AEM Assets には、アセット共有ページのカスタマイズに使用できる、事前定義済みの一連の述語が付属しています。
 <!-- In addition to using pre-existing predicates, AEM developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md). -->
 
-カスタムの述語を作成するには、[ウィジェットフレームワーク](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)に関する基本的な知識が必要です。
+カスタム述語を作成するには、[ウィジェットフレームワーク](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)に関する基本的な知識が必要です。
 
-ベストプラクティスとしては、既存の述語をコピー後に変更することです。サンプルの述語は、**/libs/cq/search/components/predicates** にあります。
+ベストプラクティスは、既存の述語をコピー後に変更することです。サンプルの述語は、**/libs/cq/search/components/predicates** にあります。
 
-#### 例：シンプルなプロパティ述語の作成 {#example-build-a-simple-property-predicate}
+#### 例：シンプルなプロパティ述語の作成{#example-build-a-simple-property-predicate}
 
 プロパティ述語の作成手順
 
@@ -61,7 +61,7 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
        componentGroup="Search"/>
    ```
 
-1. ページの URL の末尾に `titlepredicate.jsp`.
+1. 次の `titlepredicate.jsp`.を追加します。
 
    ```xml
    <%--
@@ -128,16 +128,16 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
    </script>
    ```
 
-1. コンポーネントを使用できるようにするには、それを編集可能にする必要があります。コンポーネントを編集可能にするには、CRXDE で、**cq:EditConfig** プライマリ型の **cq:editConfig** ノードを追加します。段落を削除できるように、**DELETE** という 1 つの値を持つ複数値プロパティ **cq:actions** を追加します。
+1. コンポーネントを使用できるようにするには、コンポーネントを編集可能にする必要があります。コンポーネントを編集可能にするには、CRXDE で、**cq:EditConfig** プライマリ型の **cq:editConfig** ノードを追加します。段落を削除できるように、**DELETE** という 1 つの値を持つ複数値プロパティ **cq:actions** を追加します。
 1. ブラウザーを開き、サンプルページ（**press.html** など）でデザインモードに切り替えて、述語段落システムの新しいコンポーネント（「**左揃え**」など）を有効にします。
 
-1. **編集**&#x200B;モードで、新しいコンポーネントがサイドキック（**検索**&#x200B;グループ）で使用できるようになります。「**Predicates**」列にコンポーネントを挿入し、「**Diamond**」などの検索語句を入力して、虫眼鏡アイコンをクリックして検索を開始します。
+1. **編集**&#x200B;モードでは、新しいコンポーネントがサイドキックで使用できるようになります（**検索**&#x200B;グループ内）。「**Predicates**」列にコンポーネントを挿入し、「**Diamond**」などの検索語句を入力して、虫眼鏡アイコンをクリックして検索を開始します。
 
    >[!NOTE]
    >
    >検索時は、大文字と小文字の違いを含めて、語句を正確に入力してください。
 
-#### 例：シンプルなグループ述語の作成 {#example-build-a-simple-group-predicate}
+#### 例：シンプルなグループ述語の作成{#example-build-a-simple-group-predicate}
 
 グループ述語の作成手順
 
@@ -232,15 +232,15 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
        });
    ```
 
-1. コンポーネントを使用できるようにするには、それを編集可能にする必要があります。コンポーネントを編集可能にするには、CRXDE で、**cq:EditConfig** プライマリ型の **cq:editConfig** ノードを追加します。段落を削除できるように、**DELETE** という 1 つの値を持つ複数値プロパティ **cq:actions** を追加します。
+1. コンポーネントを使用できるようにするには、コンポーネントを編集可能にする必要があります。コンポーネントを編集可能にするには、CRXDE で、**cq:EditConfig** プライマリ型の **cq:editConfig** ノードを追加します。段落を削除できるように、**DELETE** という 1 つの値を持つ複数値プロパティ **cq:actions** を追加します。
 1. ブラウザーを開き、サンプルページ（**press.html** など）でデザインモードに切り替えて、述語段落システムの新しいコンポーネント（「**左揃え**」など）を有効にします。
-1. **編集**&#x200B;モードで、新しいコンポーネントがサイドキック（**検索**&#x200B;グループ）で使用できるようになります。「**Predicates**」列にコンポーネントを挿入します。
+1. **編集**&#x200B;モードでは、新しいコンポーネントがサイドキックで使用できるようになります（**検索**&#x200B;グループ内）。「**Predicates**」列にコンポーネントを挿入します。
 
 ### インストール済みの述語ウィジェット {#installed-predicate-widgets}
 
 事前設定済みの ExtJS ウィジェットでは次の述語が使用可能です。
 
-#### FulltextPredicate {#fulltextpredicate}
+#### FulltextPredicate{#fulltextpredicate}
 
 <table>
  <tbody>
@@ -251,7 +251,7 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
   </tr>
   <tr>
    <td>predicateName</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>述語の名前。デフォルトは 'fulltext' です</td>
   </tr>
   <tr>
@@ -262,7 +262,7 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
  </tbody>
 </table>
 
-#### PropertyPredicate {#propertypredicate}
+#### PropertyPredicate{#propertypredicate}
 
 <table>
  <tbody>
@@ -273,12 +273,12 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
   </tr>
   <tr>
    <td>predicateName</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>述語の名前。デフォルト値は 'property' です</td>
   </tr>
   <tr>
    <td>propertyName</td>
-   <td>文字列 </td>
+   <td>String </td>
    <td>JCR プロパティの名前。デフォルトは 'jcr:title' です</td>
   </tr>
   <tr>
@@ -300,17 +300,17 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
   </tr>
   <tr>
    <td>predicateName</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>述語の名前。デフォルトは 'path' です</td>
   </tr>
   <tr>
    <td>rootPath</td>
-   <td>文字列 </td>
+   <td>String </td>
    <td>述語のルートパス。デフォルトは '/content/dam' です</td>
   </tr>
   <tr>
    <td>pathFieldPredicateName</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>デフォルトは 'folder' です</td>
   </tr>
   <tr>
@@ -321,7 +321,7 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
  </tbody>
 </table>
 
-#### DatePredicate {#datepredicate}
+#### DatePredicate{#datepredicate}
 
 <table>
  <tbody>
@@ -332,23 +332,23 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
   </tr>
   <tr>
    <td>predicateName</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>述語の名前。デフォルトは 'daterange' です</td>
   </tr>
   <tr>
    <td>propertyname</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>JCR プロパティの名前。デフォルトは 'jcr:content/jcr:lastModified' です</td>
   </tr>
   <tr>
    <td>defaultValue </td>
-   <td>文字列 </td>
+   <td>String </td>
    <td>事前設定されるデフォルト値 </td>
   </tr>
  </tbody>
 </table>
 
-#### OptionsPredicate {#optionspredicate}
+#### OptionsPredicate{#optionspredicate}
 
 <table>
  <tbody>
@@ -359,22 +359,22 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
   </tr>
   <tr>
    <td>title </td>
-   <td>文字列 </td>
+   <td>String </td>
    <td>最上部のタイトルを追加します </td>
   </tr>
   <tr>
    <td>predicateName</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>述語の名前。デフォルトは 'daterange' です</td>
   </tr>
   <tr>
    <td>propertyname</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>JCR プロパティの名前。デフォルトは 'jcr:content/metadata/cq:tags' です</td>
   </tr>
   <tr>
    <td>collapse</td>
-   <td>文字列</td>
+   <td>String</td>
    <td>折りたたみのレベル。デフォルトは 'level1' です</td>
   </tr>
   <tr>
@@ -389,7 +389,7 @@ AEM Assetsには、アセット共有ページのカスタマイズに使用で�
   </tr>
   <tr>
    <td>searchTimeoutTime</td>
-   <td>番号</td>
+   <td>Number</td>
    <td>タイムアウト。この時間を過ぎると searchCallback が呼び出されます。デフォルトは 800ms です</td>
   </tr>
  </tbody>
