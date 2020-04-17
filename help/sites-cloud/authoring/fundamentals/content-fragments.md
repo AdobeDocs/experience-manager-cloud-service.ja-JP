@@ -1,7 +1,7 @@
 ---
 title: コンテンツフラグメント
-description: クラウドサービスコンテンツフラグメントとしてのAdobe Experience Managerを使用すると、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用できます
-translation-type: tm+mt
+description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -20,14 +20,14 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**は、AEM 内の異なる機能です。
 >
 >* **コンテンツフラグメント**&#x200B;は、主にテキストや関連画像などの編集コンテンツです。これは、デザインやレイアウトを含まない純粋なコンテンツです。
->* **エクスペリエンスフラグメント** は、コンテンツが完全にレイアウトされ、Webページのフラグメントです。
+>* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツなので、Web ページのフラグメントになります。
 >
 >
 エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>このページは、基本的な用語および概念をフラグメントの作成および管理と共に紹介している[コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)（および関連ページ）と併せて読む必要があります。
 
 コンテンツフラグメントでは、次のアクションを実行できます。
 
@@ -45,21 +45,21 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 * **プロデューサーおよびジャーニー管理者**
    * AEM のオーサリングで事前定義されたフラグメントとバリエーションから選択します。
    * コピーライターやクリエイティブが集中管理されたフラグメントやアセットを更新できるので、フラグメントと連携し関連付けられたコンテンツが常に最新の状態に維持されます。
-   * 関連性が高められた関連メディアコンテンツと連携できます。
+   * 適切にキュレーションされた関連メディアコンテンツと連携できます。
    * アドホックコンテンツのバリエーションをフラグメント内で集中管理したまま、それらのバリエーションをその場で作成できます。
 
-## ページへのコンテンツフラグメントの追加 {#adding-a-content-fragment-to-your-page}
+## ページへのコンテンツフラグメントの追加{#adding-a-content-fragment-to-your-page}
 
 1. 編集するページを開きます。
 2. **コンテンツフラグメント**&#x200B;コンポーネントを、**コンポーネント**&#x200B;ブラウザーまたは「**新規コンポーネントを挿入**」のいずれかから開きます。
 3. 次のいずれかを実行できます。
-   * Open the **Assets** browser and filter for **Content Fragments** (the default is Images). 次に、必要なフラグメントをコンポーネントインスタンスにドラッグします。
+   * **アセット**&#x200B;ブラウザーを開いて、**コンテンツフラグメント**&#x200B;をフィルタリングします（デフォルトは画像）。次に、必要なフラグメントをコンポーネントインスタンスにドラッグします。
    * コンテンツフラグメントコンポーネントを選択して、ツールバーの「**設定**」を選択します。ダイアログで、選択ダイアログを開き、必要な&#x200B;**コンテンツフラグメント**&#x200B;を参照して選択できます。
    >[!NOTE]
    >
    >特定のコンテンツフラグメントをページに直接ドラッグすることもできます。これにより、関連コンポーネントが自動的に作成されます（コンテンツフラグメント）。
 
-4. Initially the content from the **Main** Element and **Master** (variation) will be shown. 必要に応じて、[他のエレメントやバリエーションを選択](#selecting-the-element-or-variation)できます。
+4. 最初に、**メイン**&#x200B;要素および&#x200B;**マスター**（バリエーション）からのコンテンツが表示されます。必要に応じて、[他のエレメントやバリエーションを選択](#selecting-the-element-or-variation)できます。
 
    ![アセットブラウザーのコンテンツフラグメント](/help/sites-cloud/authoring/assets/content-fragments.png)
 
@@ -94,11 +94,11 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
    * フラグメントにバリエーションが作成されている場合に選択できます。
 * **段落**：含める段落の範囲を次の中から指定します。
    * **すべて**
-   * **範囲**:例えば、 `1`、 `3-5`、 `9-*`
+   * **範囲**：例えば、`1`、`3-5`、`9-*` のように指定します。
       * **見出しを独自の段落として処理**
 * **見出しを独自の段落として処理**
 
-### フラグメントエディターへのクイック接続 {#quick-connection-to-fragment-editor}
+### フラグメントエディターへのクイック接続{#quick-connection-to-fragment-editor}
 
 コンポーネントツールバーの&#x200B;**編集**&#x200B;アイコンを使用して、フラグメントのソースを開いて（アセットを）編集できます。この機能により、[コンテンツフラグメントを編集および管理できます](/help/assets/content-fragments/content-fragments.md)。
 
@@ -106,7 +106,7 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 >
 >フラグメントソースの編集は、そのコンテンツフラグメントを参照するすべてのページに影響します。
 
-### 中間コンテンツの追加 {#adding-in-between-content}
+### 中間コンテンツの追加{#adding-in-between-content}
 
 特定のコンテンツフラグメントをページに追加すると、フラグメントの各 HTML 段落間（および上部／下部）に&#x200B;**コンポーネントをここにドラッグ**&#x200B;プレースホルダーが表示されます。
 
@@ -116,13 +116,13 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 
 * [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)からコンポーネントを追加する。
 * [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットを追加する。
-* Use [Associated Content](#using-associated-content) as a source for in-between content.
+* [関連コンテンツ](#using-associated-content)を中間コンテンツのソースとして使用する。
 
 >[!CAUTION]
 >
 >中間コンテンツは、ページコンテンツです。中間コンテンツはコンテンツフラグメントに保存されません。
 
-![コンポーネントを挿入](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
+![コンポーネントの挿入](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
 >
@@ -134,14 +134,14 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 >
 >ページのコンテンツフラグメントに中間コンテンツを追加した後に、基になるコンテンツフラグメントの構造をコンテンツフラグメントエディターなどで変更すると、エラーや予期しない結果を引き起こすおそれがあります。
 >
->この場合、中間のコンテンツはそのまま保持されます。
+>これが発生した場合、中間コンテンツはそのまま維持されます。
 >
 >* 中間コンポーネントは、フラグメントフローのコンポーネントのシーケンス内に絶対位置を持ちます。この位置は、フラグメント内の段落のコンテンツが変更されても変更されません。
-   >  これにより、段落間に隣接する（フラグメント）段落とコンテキスト上の関係がないので、相対的な位置が変更されたように見える場合があります。
+   >  中間段落は隣に位置する（フラグメント）段落とコンテキスト関係を持たないので、これにより、相対位置が変更したかのように見せることができます。
 >* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
 
 
-### 関連コンテンツの使用 {#using-associated-content}
+### 関連コンテンツの使用{#using-associated-content}
 
 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。関連コンテンツは、事実上、[中間コンテンツ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースです。
 
@@ -157,13 +157,13 @@ Adobe Experience Manager（AEM）のコンテンツフラグメントは、[ペ�
 
 ここから、アセットを必要な場所（既存の位置または適切なコンポーネントが作成される必要がある位置）にドラッグできます。
 
-![イメージの挿入](/help/sites-cloud/authoring/assets/content-fragments-image.png)
+![画像の挿入](/help/sites-cloud/authoring/assets/content-fragments-image.png)
 
 ### フラグメントに挿入されたアセット {#assets-inserted-into-the-fragment}
 
 アセット（画像など）がフラグメント自体に挿入されている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
 
-例えば、画像の場合は、
+例えば、画像の場合、次のことができます。
 
 * 画像の切り抜き、回転または反転
 * タイトルまたは代替テキストの追加
