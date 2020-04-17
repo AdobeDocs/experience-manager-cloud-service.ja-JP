@@ -1,7 +1,7 @@
 ---
 title: ビューアプリセットの管理
 description: ビューアプリセットの作成方法と管理方法
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 # ビューアプリセットの管理{#managing-viewer-presets}
 
-ビューアプリセットは、ユーザがコンピュータ画面や携帯端末でリッチメディアアセットを表示する方法を決定する設定の集まりです。管理者は、ビューアプリセットを作成できます。一連のビューア設定オプションの設定を使用できます。例えば、ビューアの表示サイズやズーム動作を変更できます。
+ビューアプリセットは、ユーザーのコンピューター画面やモバイルデバイスでのリッチメディアアセットの表示方法を決定する様々な設定のコレクションです。管理者は、ビューアプリセットを作成できます。設定は、幅広いビューア設定オプションで使用できます。例えば、ビューアの表示サイズやズームの動作を変更できます。
 
 <!-- SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
 
@@ -26,9 +26,9 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 >[!NOTE]
 >
->**&#x200B;事前に定義された標準提供ビューアプリセットを編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集しようとすると、そのビューアプリセットを新しい名前で保存するように指示されます。
+>*事前に定義された標準提供ビューアプリセット*&#x200B;を編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集しようとすると、そのビューアプリセットを新しい名前で保存するように指示されます。
 
-## ビューアのキーボードアクセシビリティ {#keyboard-accessibility-for-viewers}
+## ビューアのキーボードアクセシビリティ{#keyboard-accessibility-for-viewers}
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
@@ -36,7 +36,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ## ビューアプリセットの管理 {#managing-viewer-presets-1}
 
-You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+AEM でビューアプリセットの追加、編集、削除、公開、非公開およびプレビューを実行できます。それには、**ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;を選択します。
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -46,7 +46,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 
 ### レスポンシブデザイン Web ページのビューアサポート {#viewer-support-for-responsive-designed-web-pages}
 
-Web ページごとに異なるニーズがあります。例えば、個別のブラウザーウィンドウで HTML5 ビューアを開くリンクを示す Web ページが必要な場合や、ホスティングページに直接 HTML5 ビューアを埋め込む必要がある場合があります。後者の場合、Web ページのレイアウトは静的なものになる場合と、「レスポンシブ」にして、デバイスやブラウザーウィンドウのサイズが異なれば、異なる表示をする場合もあります。これらのニーズに対応するために、Dynamic Media に付属する事前定義済みの標準提供 HTML5 ビューアはすべて、静的な Web ページとレスポンシブデザイン Web ページの両方をサポートしています。
+Web ページごとに異なるニーズがあります。例えば、個別のブラウザーウィンドウで HTML5 ビューアを開くリンクを示す Web ページが必要な場合や、ホスティングページに直接 HTML5 ビューアを埋め込む必要が生じる場合があります。後者の場合、Web ページのレイアウトは静的なものになる場合と、「レスポンシブ」にして、デバイスやブラウザーウィンドウのサイズが異なれば、異なる表示をする場合もあります。これらのニーズに対応するために、Dynamic Media に付属する事前定義済みの標準提供 HTML5 ビューアはすべて、静的な Web ページとレスポンシブデザイン Web ページの両方をサポートしています。
 
 レスポンシブビューアを Web ページに埋め込む方法について詳しくは、*Scene7 画像サービング API ヘルプ*&#x200B;の[レスポンシブ画像ライブラリ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)を参照してください。
 
@@ -66,7 +66,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 * Android Tablet
 * ビデオについては、[Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) と [Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx) で MP4 の再生が追加でサポートされています。
 
-### Rich media types for Viewer Presets {#rich-media-types-for-viewer-presets}
+### ビューアプリセットのリッチメディアタイプ {#rich-media-types-for-viewer-presets}
 
 管理者は、新しいビューアプリセットの作成時に次のリッチメディアタイプを追加してカスタマイズすることができます。
 
@@ -74,7 +74,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  <tbody>
   <tr>
    <td><strong>カルーセルセット</strong><br /> </td>
-   <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。ユーザーは、画像を左右にパンし、画像上のホットスポットをクリックして、詳細を確認したり、Webサイトのカテゴリ、ホームまたはランディングページから直接購入したりできます。</p> </td>
+   <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。お客様は画像を左右にパンし、画像のホットスポットをクリックして追加の詳細情報を入力したり、Web サイトのカテゴリ、ホームまたはランディングページから直接購入したりできます。</p> </td>
   </tr>
   <tr>
    <td><strong>フライアウトズーム</strong></td>
@@ -90,11 +90,11 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   </tr>
   <tr>
    <td><strong>インタラクティブ画像</strong></td>
-   <td>画像の一部にホットスポットが追加されます。このホットスポットをクリックすると、追加の詳細情報を表示したり、Webサイトのカテゴリ、ホームまたはランディングページから直接購入したりできます。</td>
+   <td>ユーザーがクリックして追加の詳細情報を入力したり、Web サイトのカテゴリ、ホームまたはランディングページから直接購入したりするためのホットスポットを画像の一部に追加します。</td>
   </tr>
   <tr>
    <td><strong>インタラクティブビデオ</strong></td>
-   <td>ビデオ内のタイムラインセグメントにサムネールが追加されます。このサムネールをクリックすると、追加の詳細情報を表示したり、Webサイトのカテゴリ、ホームまたはランディングページから直接購入したりできます。</td>
+   <td>ユーザーがクリックして追加の詳細情報を入力したり、Web サイトのカテゴリ、ホームまたはランディングページから直接購入したりするためのサムネールをビデオ内のタイムラインセグメントに追加します。</td>
   </tr>
   <tr>
    <td><strong>混在メディア</strong></td>
@@ -105,7 +105,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
    <td><p>パノラマ画像ビューアと PanoramicVR ビューアは、球パノラマ画像をレンダリングして、室内、物件、場所、風景などをあらゆる角度から見ることができる臨場感あふれる体験をユーザーに提供します。</p> <p>アップロードする画像が球パノラマとして適格となるには、以下の一方または両方の条件を満たしている必要があります。</p>
     <ul>
      <li>縦横比が 2:1 である必要があります。</li>
-     <li>Tagged with the keywords <code>equirectangular</code>, or <code>spherical</code> and <code>panorama</code>, or <code>spherical </code>and <code>panoramic</code>. <a href="/help/sites-cloud/authoring/features/tags.md">タグの使用</a>を参照してください。</li>
+     <li>キーワード <code>equirectangular</code>、または <code>spherical</code> および <code>panorama</code>、または <code>spherical </code> および <code>panoramic</code> でタグ付けされている必要があります。<a href="/help/sites-cloud/authoring/features/tags.md">タグの使用</a>を参照してください。</li>
     </ul> <p>縦横比とキーワードの両方の条件が、アセットの詳細ページと「パノラマメディア」WCM コンポーネントのパノラマアセットに適用されます。</p></td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   </tr>
   <tr>
    <td><strong>360 ビデオ</strong></td>
-   <td><p>360/VR ビデオビューアを使用すると、エクイレクタングラー（正距円筒図法）形式でビデオをレンダリングして、室内、物件、場所、風景、医療処置などの臨場感あふれる表示を実現することができます。</p> <p>フラットディスプレイでの再生時には、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイス組み込みのジャイロスコープ制御を利用します。</p> <p>ビューアでは、360 ビデオアセットの配信をネイティブサポートしています。デフォルトでは、表示または再生するための追加設定は不要です。360 ビデオは、.mp4、.mkv、.mov といった標準のビデオ拡張子を使用して配信されます。最も一般的なコーデックは H.264 です。</p> </td>
+   <td><p>360/VR ビデオビューアを使用すると、エクイレクタングラー形式でビデオをレンダリングして、室内、物件、場所、風景、医療処置などの臨場感あふれる表示を実現することができます。</p> <p>フラットディスプレイでの再生時には、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイス組み込みのジャイロスコープ制御を利用します。</p> <p>ビューアでは、360 ビデオアセットの配信をネイティブサポートしています。デフォルトでは、表示または再生するための追加設定は不要です。360 ビデオは、.mp4、.mkv、.mov といった標準のビデオ拡張子を使用して配信されます。最も一般的なコーデックは H.264 です。</p> </td>
   </tr>
   <tr>
    <td><strong>ビデオ</strong></td>
@@ -135,11 +135,11 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  </tbody>
 </table>
 
-### 標準提供ビューアプリセットのリスト {#list-of-out-of-the-box-viewer-presets}
+### 標準提供ビューアプリセットのリスト{#list-of-out-of-the-box-viewer-presets}
 
 次の表に、Dynamic Media に付属するすべての事前定義済みの標準提供ビューアプリセットについて示します。
 
-[ビューアリファレンスライブラリサンプル](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html)や[ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)も参照してください。
+[ビューアリファレンスライブラリサンプル](https://marketing.adobe.com/resources/help/ja_JP/s7/vlist/vlist.html)や[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)も参照してください。
 
 ビューアでサポートされている Web ブラウザーとオペレーティングシステムのバージョンについては、ビューアのリリースノートに記載されています。
 
@@ -150,7 +150,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 >Dynamic Media の標準提供のすべてのビューアプリセットは既にアクティベートされて（オンになって）いますが、それらを公開する必要があります。
 >[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 >
->作成して追加する新しいビューアプリセットは、アクティブ化する必要があります。*または*公開する必要があります。
+>作成および追加した新しいすべてのビューアプリセットは、アクティベートされ公開されている必要があります。
 > [ビューアプリセットのアクティベートとアクティベート解除](#activating-or-deactivating-viewer-presets)と[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
 <table>
@@ -256,18 +256,18 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
    <td><code>html5_spinviewer_light.css</code></td>
   </tr>
   <tr>
-   <td><p>ビデオ</p> <p>（字幕サポートを含む）</p> </td>
+   <td><p>Video</p> <p>（字幕サポートを含む）</p> </td>
    <td>ビデオ</td>
    <td><code>html5_videoviewer.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360_social</p> <p>（基本的なビデオ再生制御を含んでいます。ビデオレンダリングはステレオモードで行われます。手動の視点制御はオフですが、ジャイロ制御はオンです。ソーシャルメディア機能はありません）</p> </td>
-   <td>Video_360</td>
+   <td><p>Video360_social</p> <p>（基本的なビデオ再生制御を含んでいます。ビデオレンダリングはステレオモードでおこなわれます。手動の視点制御はオフですが、ジャイロスコープ制御はオンです。ソーシャルメディア機能はありません）</p> </td>
+   <td>ビデオ 360</td>
    <td><code>html5_video360viewersocial.css</code></td>
   </tr>
   <tr>
    <td><p>Video360VR</p> <p>（仮想現実メガネを使用するエンドユーザー向けに設計されています。基本的なビデオ再生制御とソーシャルメディア機能を含んでいます）</p> </td>
-   <td>Video_360</td>
+   <td>ビデオ 360</td>
    <td><code>html5_video360viewer.css</code></td>
   </tr>
   <tr>
@@ -298,14 +298,14 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  </tbody>
 </table>
 
-### サポートされているモバイルビューアのジェスチャに関する表 {#supported-mobile-viewers-gestures-matrix}
+### サポートされているモバイルビューアのジェスチャーに関する表 {#supported-mobile-viewers-gestures-matrix}
 
-次の表に、iOS、Android 2.x および Android 3.x デバイスでサポートされているモバイルビューアのジェスチャを示します。
+次の表に、iOS、Android 2.x および Android 3.x デバイスでサポートされているモバイルビューアのジェスチャーを示します。
 
 <table>
  <tbody>
   <tr>
-   <td><strong>ジェスチャ</strong></td>
+   <td><strong>ジェスチャー</strong></td>
    <td><strong>フライアウトズーム</strong></td>
    <td><strong>ズーム</strong></td>
    <td><strong>スピン</strong></td>
@@ -355,30 +355,30 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  </tbody>
 </table>
 
-## Increasing the number of Viewer Presets that display {#increasing-the-number-of-viewer-presets-that-display}
+## 表示されるビューアプリセットの数の増減 {#increasing-the-number-of-viewer-presets-that-display}
 
 **[!UICONTROL 詳細ビュー／ビューア]**&#x200B;でアセットを表示したとき、AEM には様々なビューアプリセットが表示されます。表示されるビューアの数を増減できます。
 
-**表示するビューアプリセットの数を増やすには**
+**表示されるビューアプリセットの数を増やすには**：
 
-1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
-1. 次の場所にあるビューアプリセットリストのノードに移動します。 `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
+1. CRXDE Lite（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）に移動します。
+1. ビューアプリセットリストノード（`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`）に移動します。
 
    ![chlimage_1-221](/help/assets/dynamic-media/assets/chlimage_1-221.png)
 
 1. 「**[!UICONTROL limit]**」プロパティで、「**[!UICONTROL Value]**」（デフォルトで 15 に設定されています）を目的の数に変更します。
-1. 次の場所でビューアプリセットデータソースに移動します。 `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist/datasource`
+1. ビューアプリセットデータソース（`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist/datasource`）に移動します。
 
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
-1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. 「limit」プロパティの数を、目的の数（例：`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`）に変更します。
 1. 「**[!UICONTROL すべて保存]**」をタップします。
 
-## Creating a Viewer Preset {#creating-a-new-viewer-preset}
+## ビューアプリセットの作成 {#creating-a-new-viewer-preset}
 
 ビューアプリセットを作成しておくと、アセットの表示やアセットとの対話のための様々な設定を適用できます。ただし、新しいビューアプリセットを作成する必要はありません。デフォルトの、すぐに使えるビューアプリセットが既に AEM Assets に付属していますので、これを使用できます。
 
-If you choose to create a new viewer preset, after you save it, the viewer&#39;s state is automatically activated (set to **[!UICONTROL On]**) in the Viewer Presets page. この状態は、画像やビデオをプレビューするときは常にダイナミックメディアコンポーネントとインタラクティブなメディアコンポーネントに表示されることを意味します。
+新しいビューアプリセットを作成することを選んだ場合、ビューアプリセットを保存すると、ビューアプリセットページのそのビューアの状態が自動的にアクティベート済みになります（「**[!UICONTROL オン]**」に設定されます）。この状態は、画像やビデオをプレビューするときは常にダイナミックメディアコンポーネントとインタラクティブメディアコンポーネントに表示されることを意味します。
 
 一部のビューアプリセットには、ビューアの全体的な動作に影響する専用の設定があります。作成するビューアプリセットによっては、これらの特別な考慮事項について注意する必要があります。
 
@@ -386,18 +386,18 @@ If you choose to create a new viewer preset, after you save it, the viewer&#39;s
 
 [カルーセルバナーのビューアプリセットの作成に関する考慮事項](#special-considerations-for-creating-a-carousel-banner-viewer-preset)を参照してください。
 
-**ビューアプリセットを作成するには**
+**ビューアプリセットを作成するには：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets**.
+1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**ツール**（ハンマーアイコン）／**アセット／ビューアプリセット**&#x200B;をタップします。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. ビューアプリセットページのツールバーで、「**[!UICONTROL 作成]**」をタップします。
-1. [!UICONTROL新規ビュ **ーアプリセット** ]ダイアログボックスの「プリセ **[!UICONTROL ット名]** 」フィールドに、新しいプリセットの名前を入力します。 名前は慎重に選択してください。「作成」をタップした後は編集でき **[!UICONTROL ません]**。
+1. **新規ビューアプリセット**&#x200B;ダイアログボックスで、「**[!UICONTROL プリセット名]**」フィールドに新しいプリセットの名前を入力します。名前は慎重に選択してください。「**[!UICONTROL 作成]**」をタップした後で編集することはできません。
 
    後述の手順でプリセットを保存すると、この名前がビューアプリセットページの「プリセットのタイトル」列ヘッダーの下に表示されます。
 
-1. On the Rich Media Type drop-down menu, select the type of viewer preset you want to create, then in the upper-right corner of the page, tap **[!UICONTROL Create]**.
+1. 「リッチメディアタイプ」ドロップダウンメニューで、作成するビューアプリセットのタイプを選択し、ページ右上隅の「**[!UICONTROL 作成]**」をタップします。
 
    [ビューアプリセットのリッチメディアタイプ](#rich-media-types-for-viewer-presets)を参照してください。
 
@@ -408,16 +408,16 @@ If you choose to create a new viewer preset, after you save it, the viewer&#39;s
 
         Visual Editor を使用すると、特定のプロパティがスタイルに与える効果を確認できます。プロパティを設定または調整するだけで、Visual Editor の左にあるサンプルを使用して、ビューア上での効果を瞬時に確認できます。
 
-      The CSS styling properties for each type of viewer preset are described in the any &quot;Customizing *`<viewer name>`* Viewer&quot; Help topic in the [Viewers Reference Guide](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/). For example, if you are creating a viewer preset of the type `Mixed_Media`, see [Customizing Mixed Media Viewer](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) for a list and description of each property.
+      ビューアプリセットタイプごとの CSS スタイル設定プロパティについては、『[ビューアリファレンスガイド](https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/)』の「*`<viewer name>`* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、`Mixed_Media` タイプのビューアプリセットを作成している場合、プロパティのリストと各プロパティの説明については、[混在メディアビューアのカスタマイズ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)を参照してください。
 
-   * スタイル設定を別個の CSS ファイルで定義している場合は、その CSS ファイルを AEM Assets にアップロードできます。「選択したタイプ」プルダウンメニュー（表示するには Visual Editor を上にスクロールする必要がある場合があります）の下の「**[!UICONTROL CSS を読み込み]**」をタップし、アップロードした CSS ファイルを探してビューアプリセットと関連付けます。****
+   * スタイル設定を別個の CSS ファイルで定義している場合は、その CSS ファイルを AEM Assets にアップロードできます。「選択したタイプ」プルダウンメニュー（表示するには Visual Editor を上にスクロールする必要が生じる場合があります）の下の「**[!UICONTROL CSS を読み込み]**」をタップし、アップロードした CSS ファイルを探してビューアプリセットと関連付けます。****
 
-        CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。For example, if you are creating a Zoom viewer, all the CSS rules you import must be defined using its viewer class name `.s7mixedmediaviewer` defined on a parent viewer element.
+        CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。例えば、ズームビューアを作成している場合、読み込むすべての CSS ルールが、親のビューアエレメントに定義されているズームビューアのクラス名 `.s7mixedmediaviewer` を使用して定義されている必要があります。
 
-      指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)』 の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについては、[ズームビューアのカスタマイズ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)を参照してください）。ただし、Visual Editor が一部の CSS 値を理解できないこともありえます。このような場合、CSSが引き続き機能するように、ビジュアルエディターがエラーをオーバーライドしようとします。
+      指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/)』の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについては、[ズームビューアのカスタマイズ](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)を参照してください）。ただし、Visual Editor が一部の CSS 値を理解できないこともありえます。そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
    >[!NOTE]
    >
-   >RAW 形式で CSS を直接編集する場合は、「選択したタイプ」プルダウンメニュー（表示するには Visual Editor を上にスクロールする必要がある場合があります）の下の「**[!UICONTROL CSS を表示／非表示]**」をタップします。
+   >RAW 形式で CSS を直接編集する場合は、「選択したタイプ」プルダウンメニュー（表示するには Visual Editor を上にスクロールする必要が生じる場合があります）の下の「**[!UICONTROL CSS を表示／非表示]**」をタップします。
    >Visual Editor と同様に、CSS でプロパティを直接変更すると、ビューアサンプルにその効果がすぐに反映されます。また、同時に、Visual Editor でもその同じプロパティが自動的に更新されます。このことから、RAW である CSS エディターと、Visual Editor のどちらを使用しても、また交互に使用してもかまいません。
 
    >[!NOTE]
@@ -430,7 +430,7 @@ If you choose to create a new viewer preset, after you save it, the viewer&#39;s
 
    Visual Editor 内の多くのコンポーネントには、詳しい説明が関連付けられています。この説明は、コンポーネントを展開して関連パラメーターを表示したときに、青いボックス内に示されます。
 
-   一部のビューアタイプには、「**[!UICONTROL IS コマンド]**」テキストフィールドに画像サービングコマンドを指定できるコンポーネントがあります。使用できるコマンドのリストについては、[画像サービング API リファレンス（英語）](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html)を参照してください。
+   一部のビューアタイプには、「**[!UICONTROL IS コマンド]**」テキストフィールドに画像サービングコマンドを指定できるコンポーネントがあります。使用できるコマンドのリストについては、[画像サービング API リファレンス（英語）](https://marketing.adobe.com/resources/help/ja_JP/s7/is_ir_api/image_serving_api_ref.html)を参照してください。
 
    >[!NOTE]
    >
@@ -444,11 +444,11 @@ If you choose to create a new viewer preset, after you save it, the viewer&#39;s
 
    [ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
-### インタラクティブビデオのビューアプリセットの作成に関する考慮事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
+### インタラクティブビデオのビューアプリセットの作成に関する考慮事項{#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **パネル内の画像サムネールのディスプレイモードについて**
 
-When you create or edit an Interactive Video viewer preset, you have the choice of which Display mode setting to use when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** pull-down menu under the **[!UICONTROL Behavior]** tab. 選択する表示モードは、ビデオの再生中にサムネールを表示する方法と表示するタイミングに影響します。 You can choose either a `segment`Display mode (default) or a `continuous` Display mode.
+インタラクティブビデオのビューアプリセットを作成または編集する場合、「**[!UICONTROL 動作]**」タブの「**[!UICONTROL 選択したコンポーネント]**」プルダウンメニューから `InteractiveSwatches` を選択するときに使用するディスプレイモード設定を選択できます。選択するディスプレイモードは、ビデオの再生中にサムネールを表示する方法とタイミングに影響します。`segment` ディスプレイモード（デフォルト）または `continuous` ディスプレイモードのいずれかを選択できます。
 
 <table>
  <tbody>
@@ -458,58 +458,58 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
   </tr>
   <tr>
    <td>セグメント</td>
-   <td><p><code>Segment </code>is the default display mode for the out-of-box Interactive Video Viewer presets <code>Shoppable_Video_light</code> and <code>Shoppable_Video_dark</code> and any Interactive Video Viewer presets that you create yourself.</p> <p>このモードでは、ビデオセグメントに割り当てられているサムネールの数がディスプレイパネル内に表示されるスポットの数よりも少ない場合、次または前のサブセグメントがパネル内の空のスポットを満たすように引っ張り込まれることはありません。<i></i>つまり、特定のビデオセグメントに割り当てられたスウォッチの表示を保持します。</p> </td>
+   <td><p><code>Segment </code>は、既製のインタラクティブビデオビューアプリセット <code>Shoppable_Video_light</code> と <code>Shoppable_Video_dark</code> および自身で作成するすべてのインタラクティブビデオビューアプリセットのデフォルトのディスプレイモードです。</p> <p>このモードでは、ビデオセグメントに割り当てられているサムネールの数がディスプレイパネル内に表示されるスポットの数よりも少ない場合、次または前のサブセグメントがパネル内の空のスポットを満たすように引っ張り込まれることはありません。<i></i>つまり、特定のビデオセグメントに割り当てられたスウォッチの表示を保持します。</p> </td>
   </tr>
   <tr>
    <td>連続</td>
-   <td><p>In <code>continuous </code>display mode, if the number of thumbnails in a segment is less than the number that are visible in the panel, the viewer automatically includes the display of thumbnails from the next segment, or the previous segment, in cases where the last thumbnail is displayed.</p> <p>The <a href="/help/assets/dynamic-media/interactive-videos.md">video in this topic</a> is an example of the <code>continuous </code>display mode.</p> </td>
+   <td><p><code>continuous </code> ディスプレイモードでは、セグメント内のサムネールの数がパネルに表示可能な数よりも少ない場合は、次のセグメント（最後のサムネールが表示されている場合は、前のセグメント）のサムネールが自動的に表示されます。</p> <p><a href="/help/assets/dynamic-media/interactive-videos.md">このトピックの</a>ビデオは <code>continuous </code> ディスプレイモードの一例です。</p> </td>
   </tr>
  </tbody>
 </table>
 
-**インタラクティブビデオビューアでの自動スクロールの動作について**
+**インタラクティブビデオビューアの自動スクロール動作について**
 
 インタラクティブビデオビューア内のサムネールの自動スクロール動作は、選択したディスプレイモードとは独立して機能します。
 
 インタラクティブビデオのビューアプリセットを作成または編集するときは、「ビヘイビアー」タブから自動スクロールにアクセスします。**[!UICONTROL 選択したコンポーネント]**&#x200B;ドロップダウンメニューの「ビヘイビアー」タブで、「**[!UICONTROL InteractiveSwatches]**」をタップします。「自動スクロール」チェックボックスは「IS コマンド」テキストフィールドの下にリストされます。
 
-If you disable **[!UICONTROL Auto Scroll]** (clear the check box) in the viewer preset, during video playback by the user, the panel only displays the first thumbnail image for the entire length of the video. ただし、ユーザーは必要に応じて上下の矢印アイコンを使用してサムネール間を手動でスクロールできます。
+ビューアプリセットで「**[!UICONTROL 自動スクロール」]**&#x200B;を無効（チェックボックスをオフ）にした場合、ユーザーによるビデオの再生中、パネルにはビデオの全長につき最初のサムネール画像のみが表示されます。ただし、ユーザーは必要に応じて上下の矢印アイコンを使用してサムネール間を手動でスクロールできます。
 
-When you enable (select) **[!UICONTROL Auto Scroll]** in the viewer preset, during video playback, thumbnail images assigned to a video segment scroll into view at the start of a segment. ただし、セグメントによっては特定のサムネールが前後のサムネールの 2 倍の時間表示されることもあります。この動作は、セグメント内のサムネールの数がパネルに表示される数よりも多く、均等に分割できないことが原因で発生します。
+ビューアプリセットで「**[!UICONTROL 自動スクロール]**」を有効（チェックボックスをオン）にすると、ビデオの再生中、セグメントの開始時に、ビデオセグメントに割り当てられたサムネール画像まで表示がスクロールされます。ただし、セグメントによっては特定のサムネールが前後のサムネールの 2 倍の時間表示されることもあります。この動作は、セグメント内のサムネールの数がパネルに表示される数よりも多く、均等に分割できないことが原因で発生します。
 
 図解してみましょう。30 秒のビデオセグメントが 1 つあるとします。30 秒の間に表示されるサムネールは合計で 9 個です。ブラウザーは 4 つのサムネールがディスプレイパネルに表示できるようにサイズ設定されています。30 秒のビデオの時間セグメントは 3 つのサブセグメントに分割されています。次の表に、指定の時間サブセグメントに表示されるサムネールの内訳を示します。
 
 | **ビデオのサブセグメント** | **サブセグメントの時間（秒単位）** | **パネルに表示されるサムネール** |
 |---|---|---|
-| 1 | 0 ～ 10 | 1、2、3、4 |
-| 2 | 10 ～ 20 | 4、5、6、7 |
-| 3 | 20 ～ 30 | 6、7、8、9 |
+| 1 | 0～10 | 1、2、3、4 |
+| 2 | 10～20 | 4、5、6、7 |
+| 3 | 20～30 | 6、7、8、9 |
 
-ビデオサブセグメントが、割り当てられているサムネールを超えて拡張されることはありません。また、サムネール 4、6、7 は、他のサムネールの 2 倍の時間パネルに表示されます。
+ビデオサブセグメント 3 が、割り当てられているサムネールを超えて拡張されることはありません。また、サムネール 4、6、7 は、他のサムネールの 2 倍の時間パネルに表示されます。
 
 ビューアでは次のロジックに従い、サイドパネルに表示できる数に基づいて表示するサムネールの数を決めています。
 
-* サブセグメントの数 = 次のサブセグメントに切り上げ（サムネールの数／サムネールパネル内に表示されるスロットの数（ブラウザー画面のサイズに基づく）） 前の表の例では、9 サムネール／4 スロット = 2.25 サブセグメント（ビューアのロジックにより 3 に切り上げ）になります。 
+* サブセグメントの数 = 次のサブセグメントに切り上げ（サムネールの数／サムネールパネル内に表示されるスロットの数（ブラウザー画面のサイズに基づく））前述の表の例では、「9 サムネール / 4 スロット = 2.25 サブセグメント」（ビューアのロジックにより 2.25 を 3 に切り上げ）になります。
 
-* サムネールの数 = 次のサムネールに切り上げ（サムネールの数／ビデオサブセグメントの数） 前の表の例では、9 サムネール／3 ビデオサブセグメント = 3 サムネールになります。 
+* サムネールの数 = 次のサムネールに切り上げ（サムネールの数／ビデオサブセグメントの数）前述の表の例では、「9 サムネール / 3 ビデオサブセグメント = 3 サムネール」になります。
 
-* サブセグメントの表示時間 = ビデオの合計再生時間／ビデオサブセグメントの数 前の表の例では、30 秒／3 ビデオサブセグメント = 各ビデオサブセグメントで 10 秒の再生時間になります。
+* サブセグメントの表示時間 = ビデオの合計再生時間／ビデオサブセグメントの数前述の表の例では、「30 秒 / 3 ビデオサブセグメント = 各ビデオサブセグメントで 10 秒」の再生時間になります。
 
-#### Special considerations for creating a Carousel Banner Viewer Presets {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+#### カルーセルバナーのビューアプリセットの作成に関する特別な考慮事項 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 カルーセルバナーのビューアプリセットを作成するときに、ホットスポットのスタイル変更は次のように実行できます。
 
 |  | **説明** | **アクション** |
 |---|---|---|
-| **[!UICONTROL ホットスポットアイコン]** | ホットスポットに使用するアイコンの変更 | To change the hotspot icon image, in the **[!UICONTROL Appearance]** tab, in **[!UICONTROL Selected Component]**, tap **[!UICONTROL ImageMapEffect]**. Under **[!UICONTROL Icon]**, select **[!UICONTROL Background]** and in the **[!UICONTROL Image]** field navigate to the background image you want. |
+| **[!UICONTROL ホットスポットアイコン]** | ホットスポットに使用するアイコンを変更する | ホットスポットアイコンの画像を変更するには、「**[!UICONTROL 外観]**」タブで、「**[!UICONTROL 選択したコンポーネント]**」の「**[!UICONTROL ImageMapEffect]**」をタップします。「**[!UICONTROL アイコン]**」で「**[!UICONTROL 背景]**」を選択し、「**[!UICONTROL 画像]**」フィールドで目的に背景画像に移動します。 |
 
-## Activating or deactivating Viewer Presets {#activating-or-deactivating-viewer-presets}
+## ビューアプリセットのアクティベートとアクティベート解除 {#activating-or-deactivating-viewer-presets}
 
 オーサーモードでビューアプリセットがアクティベートされているかどうかで、ユーザーインターフェイスに表示されるビューアプリセットが変わります。デフォルトでは、ビューアプリセットは作成後に「オン」になります。プリセットをオフにすると、オーサーモードでは表示されなくなります。プリセットを公開する場合は、オン／オフに関係なく、常に公開されます。リストの項目が多すぎる場合や、特定のビューアプリセットを使用できないようにする場合は、ビューアプリセットをアクティベート解除することもできます。
 
-**ビューアプリセットをアクティブ化/非アクティブ化するには**
+**ビューアプリセットをアクティベートまたはアクティベート解除するには：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
 1. ビューアプリセットページの「**[!UICONTROL 状態]**」列ヘッダーの下で、ビューアプリセットのアクティベートとアクティベート解除の切り替えアイコンをタップします。
 
    アクティベートされたビューアプリセットには、（青いボックスで）右側にトグルしたアイコンが示されます。アクティベート解除されたビューアプリセットには、（薄いグレーのボックスで）左側にトグルしたアイコンが示されます。
@@ -518,30 +518,30 @@ When you enable (select) **[!UICONTROL Auto Scroll]** in the viewer preset, duri
 
 ビューアプリセットの状態をアクティベートする（または「オン」に切り替える）と、Dynamic Media コンポーネントとインタラクティブメディアコンポーネント内、およびアセットを表示する際に表示されるようになります。
 
-ただし、ビューアプリセットを使用してアセットを配信するには、ビューアプリセットも公開する必要があります。 アセットのURLまたは埋め込みコードを取得するには、すべてのビューアプリセットをアクティブ化し、*公開する必要があります。 Dynamic Media に付属しているすべての既製ビューアプリセットをアクティベートして公開する必要があります。自分で作成して追加したカスタムビューアプリセットは自動的にアクティベートされますが、やはり手動で公開する必要があります。
+ただし、ビューアプリセットを使用してアセットを配信するには、ビューアプリセットも公開する必要があります。URL を取得したりアセットのコードを埋め込むには、すべてのビューアプリセットをアクティベートして公開する必要があります。Dynamic Media に付属しているすべての既製ビューアプリセットをアクティベートして公開する必要があります。自分で作成して追加したカスタムビューアプリセットは自動的にアクティベートされますが、やはり手動で公開する必要があります。
 
 [ビューアプリセットのアクティベートとアクティベート解除](#activating-or-deactivating-viewer-presets)を参照してください。
 
 [アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)も参照してください。
 
-**ビューアプリセットを公開するには**
+**ビューアプリセットを公開するには：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
 1. 公開するビューアプリセットを 1 つ以上選択します。
 1. ツールバーの&#x200B;**[!UICONTROL 公開]**&#x200B;アイコンをタップします。
 
-## ビューアプリセットの並べ替え {#sorting-viewer-presets}
+## ビューアプリセットの並べ替え{#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
+1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
 1. 「**[!UICONTROL プリセットのタイトル]**」、「**[!UICONTROL タイプ]**」、「**[!UICONTROL 公開]**」または「**[!UICONTROL 状態]**」をクリックして、その見出しの列でソートします。例えば、「**[!UICONTROL タイプ]**」をクリックすると、ビューアプリセットのタイプが、アルファベット順で、またはアルファベットの逆の順序でソートされます。
 
 ## ビューアプリセットの編集 {#editing-viewer-presets}
 
 **&#x200B;事前に定義された標準提供ビューアプリセットを編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集すると、新しい名前で保存するように指示されます。
 
-**ビューアプリセットを編集するには**
+**ビューアプリセットを編集するには：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets]**.
+1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
 1. ビューアプリセットのタイトルの左側にあるチェックボックスをオンにして、プリセットを選択します。
 1. ツールバーの「**[!UICONTROL 編集]**」をタップします。
 1. **[!UICONTROL ビューアプリセットエディター]**&#x200B;ページで、「**[!UICONTROL 外観]**」タブと「**[!UICONTROL ビヘイビアー]**」タブのオプションを使用して、必要な変更をビューアプリセットに加えます。
@@ -550,36 +550,36 @@ When you enable (select) **[!UICONTROL Auto Scroll]** in the viewer preset, duri
 
 1. ページの右上隅近くで、次のいずれかの操作をおこないます。
 
-   * Tap **[!UICONTROL Save]** to save your changes and return to the Viewer Preset page.
-   * Tap **[!UICONTROL Cancel]** to void any changes you made and return to the Viewer Preset page.
+   * 「**[!UICONTROL 保存]**」をタップして変更内容を保存し、ビューアプリセットページに戻ります。
+   * 「**[!UICONTROL キャンセル]**」をタップして変更内容をキャンセルし、ビューアプリセットページに戻ります。
 
 ## カスタムビューアプリセットの削除 {#deleting-custom-viewer-presets}
 
 作成して Dynamic Media に追加したビューアプリセットを削除できます。
 
-**カスタムビューアプリセットを削除するには**
+**カスタムビューアプリセットを削除するには：**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) **[!UICONTROL > Assets > Viewer Presets]**.
-1. On the Viewer Presets page, check a Preset Title, and then tap the **[!UICONTROL Trash]** icon.
+1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール]**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
+1. ビューアプリセットページで、「プリセットのタイトル」のチェックボックスをオンにして、**[!UICONTROL ごみ箱]**&#x200B;アイコンをタップします。
 1. 「**[!UICONTROL 削除]**」をタップします。
 
-## Applying a Viewer Presets to an asset {#applying-a-viewer-preset-to-an-asset}
+## アセットへのビューアプリセットの適用 {#applying-a-viewer-preset-to-an-asset}
 
-If you have already published both the asset and the selected viewer, the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons appear after you select a viewer preset.
+アセットと選択したビューアを既に公開している場合は、ビューアプリセットの選択後に「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL 埋め込み]**」ボタンが表示されます。
 
-**ビューアプリセットをアセットに適用するには**
+**アセットにビューアプリセットを適用するには：**
 
 1. アセットを開き、ページの左上隅付近にあるドロップダウンメニュータップして、「**[!UICONTROL ビューア]**」を選択します。
 
    >[!NOTE]
    >
-   >If you have already published both the asset and the selected viewer, the **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons appear after you select a viewer preset.
+   >アセットと選択したビューアを既に公開している場合は、ビューアプリセットの選択後に「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL 埋め込み]**」ボタンが表示されます。
 
 1. 左側のウィンドウからビューアプリセットを選択して、アセットに適用します。
 
    [この URL をコピー](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)して、他のユーザーと共有できます。
 
-## Delivering assets with Viewer Presets {#delivering-assets-with-viewer-presets}
+## ビューアプリセットを使用するアセットの配信 {#delivering-assets-with-viewer-presets}
 
 ビューアプリセットの URL を取得する方法については、[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。[Web ページへのビデオビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)も参照してください。
 
