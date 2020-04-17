@@ -1,7 +1,7 @@
 ---
 title: インタラクティブ画像
-description: ダイナミックメディアでインタラクティブな画像を使用する方法を説明します。
-translation-type: tm+mt
+description: Dynamic Media でのインタラクティブ画像の使用方法について説明します。
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -9,23 +9,23 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 # インタラクティブ画像{#interactive-images}
 
-「買い物可能な」ホットスポットを画像にドラッグ&amp;ドロップすることで、顧客の魅力的な魅力を引き出す静的な画像を簡単に作成できます。買い物可能なホットスポットは、製品やサービスに関する追加情報と、直接販売時点情報である「買い物かごに追加」または「購入」機能を組み合わせています。顧客は、これらのホットスポットをタップまたはクリックして、製品やサービスに直接リンクしたり、買い物かごに追加したり、Webページにリンクしたりできます。顧客関与やWebサイト上のコンバージョンの増加など、直接的なエクスペリエンス。
+画像に「ショッパブル」（購入可能）ホットスポットをドラッグ＆ドロップすることで、静的画像を顧客にとってリッチで魅力的なエクスペリエンスへと簡単に変えることができます。ショッパブルホットスポットは、製品またはサービスに関する追加情報と、「買い物かごに追加」、「購入」などのダイレクトな販売機能を結び付けます。ホットスポットをタップまたはクリックすると、製品またはサービスに直接リンクされ、その製品またはサービスが買い物かごに追加されるか、Web ページにリンクされます。これらのダイレクトなエクスペリエンスによって顧客のエンゲージメントが向上し、Web サイトでのコンバージョン率が上昇します。
 
 次に、クイックビューポップアップを含むショッパブルバナーを示します。モデルの上の円（「ホットスポット」）をタップすると、クイックビューがアクティブになります。
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-上の図 [に示すWebページ上のインタラクティブ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html) な画像を参照してください。
+上の図に示す Web ページの[実際のインタラクティブ画像](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)を参照してください。
 
 ## インタラクティブ画像バナーの作成方法 {#watch-how-interactive-image-banners-are-created}
 
-[インタラクティブ画像バナーの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)を示す 10 分 33 秒のガイドをご覧ください。ここでは、インタラクティブ画像バナーのプレビュー、編集、配信方法も説明します。
+[インタラクティブ画像バナーの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)を示す 10 分 33 秒のガイドをご覧ください。ここでは、インタラクティブ画像バナーのプレビュー、編集、配信方法も説明します。
 
 ## クイックスタート：インタラクティブ画像 {#quick-start-interactive-images}
 
 次のワークフローの手順説明は、AEM Assets 内のインタラクティブ画像をすぐに使い始めることを目的としたものです。
 
-一部のクイックスタートタスク内には「**例**」という見出しがあります。It contains a brief tutorial that is based on a [web page example that does not yet have Interactive Images added to it](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+一部のクイックスタートタスク内には「**例**」という見出しがあります。これには、[まだインタラクティブ画像が追加されていないサンプル Web ページ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)に基づいた簡単なチュートリアルが含まれています。
 
 
 
@@ -33,15 +33,16 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 インタラクティブ画像の手順：
 
-1. **（オプション）ホットスポット変数の識別** - AEM Assetsとダイナミックメディアスタンドアロンを使用する場合は、まず既存のQuickview実装で使用する動的変数を指定し、インタラクティブイメージの作成時にホットスポットデータを入力できるようにします。 [（オプション）ホットスポットの変数の識別](#optional-identifying-hotspot-variables)を参照してください。 ただし、AEM Sites または AEM eCommerce（あるいは両方）を使用している場合、この手順は必要ありません。
+1. **（オプション）ホットスポットの変数の識別** - AEM Assets と Dynamic Media をスタンドアロンで使用している場合は、まず、既存のクイックビュー実装で使用される動的変数を特定し、インタラクティブ画像を作成するときにホットスポットデータを入力できるようにします。[（オプション）ホットスポットの変数の識別](#optional-identifying-hotspot-variables)を参照してください。ただし、AEM Sites または AEM eCommerce（あるいは両方）を使用している場合、この手順は必要ありません。
 
-1. **（オプション）インタラクティブ画像ビューアプリセットの作成** — ホットスポットの表現に使用するグラフィック画像をカスタマイズします。 独自のインタラクティブ画像ビューアプリセットの作成は、標準提供のインタラクティブ画像ビューアプリセット `Shoppable_Banner` を使用する場合には必要ありません。 [（オプション）インタラクティブ画像ビューアプリセットの作成](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)を参照してください。
+1. **（オプション）インタラクティブ画像ビューアプリセットの作成** - ホットスポットを表すために使用するグラフィック画像をカスタマイズします。独自のインタラクティブ画像ビューアプリセットの作成は、標準提供のインタラクティブ画像ビューアプリセット `Shoppable_Banner` を使用する場合には必要ありません。[（オプション）インタラクティブ画像ビューアプリセットの作成](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)を参照してください。
 
-1. **画像バナーのアップロード** — インタラクティブにする画像バナーをアップロードします。詳しくは、画 [像バナーのアップロードを参照してくださ](#uploading-an-image-banner)い。
+1. **画像バナーのアップロード** - インタラクティブとして設定する画像バナーをアップロードします。
+[画像バナーのアップロード](#uploading-an-image-banner)を参照してください。
 
-1. **イメージバナーへのホットスポットの追加** - 1つ以上のホットスポットをイメージバナーに追加し、各ホットスポットをハイパーリンク、クイックビュー、エクスペリエンスフラグメントなどのアクションに関連付けます。 ホットスポットを追加した後は、インタラクティブ画像を公開するとタスクが終了します。 [画像バナーへのホットスポットの追加](#adding-hotspots-to-an-image-banner)を参照してください。 [（オプション）インタラクティブ画像のプレビュー](#optional-previewing-interactive-images)を参照してください。必要に応じて、ショッパブルバナーの表示を確認して、インタラクティビティをテストすることができます。インタラクティブ画像アセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+1. **画像バナーへのホットスポットの追加** - 1 つ以上のホットスポットを画像バナーに追加し、それぞれにアクション（ハイパーリンク、クイックビュー、エクスペリエンスフラグメントなど）を関連付けます。ホットスポットを追加した後は、インタラクティブ画像を公開するとタスクが終了します。[画像バナーへのホットスポットの追加](#adding-hotspots-to-an-image-banner)を参照してください。[（オプション）インタラクティブ画像のプレビュー](#optional-previewing-interactive-images)を参照してください。必要に応じて、ショッパブルバナーの表示を確認して、インタラクティビティをテストすることができます。インタラクティブ画像アセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
-1. **AEM でのインタラクティブ画像の Web サイトへの追加** AEM Sites または AEM eCommerce（あるいは両方）を使用している場合、AEM でインタラクティブメディアコンポーネントを Web ページにドラッグすることで、インタラクティブ画像を Web ページに直接追加できます。[ページへの Dynamic Media アセットの追加を参照してください。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。 AEM Assets と Dynamic Media をスタンドアロンで使用している場合は、埋め込みコードを Web サイトにコピーしてから、既存のクイックビューに統合する必要があります。[インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。 サードパーティの WCM（Web Content Manager）を使用している場合は、新しいインタラクティブビデオを、Web サイトで使用されている既存のクイックビュー実装に統合する必要があります。[インタラクティブ画像の既存のクイックビューへの統合](#integrating-an-interactive-image-with-an-existing-quickview)を参照してください。
+1. **AEM でのインタラクティブ画像の Web サイトへの追加** AEM Sites または AEM eCommerce（あるいは両方）を使用している場合、AEM でインタラクティブメディアコンポーネントを Web ページにドラッグすることで、インタラクティブ画像を Web ページに直接追加できます。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。AEM Assets と Dynamic Media をスタンドアロンで使用している場合は、埋め込みコードを Web サイトにコピーしてから、既存のクイックビューに統合する必要があります。[インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。サードパーティの WCM（Web Content Manager）を使用している場合は、新しいインタラクティブビデオを、Web サイトで使用されている既存のクイックビュー実装に統合する必要があります。[インタラクティブ画像の既存のクイックビューへの統合](#integrating-an-interactive-image-with-an-existing-quickview)を参照してください。
 
 ## （オプション）ホットスポットの変数の識別{#optional-identifying-hotspot-variables}
 
@@ -50,14 +51,14 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 >このタスクが必要になるのは次に該当する場合のみです。
 >
 >* クイックビューをトリガーして、画像にインタラクティブ機能を追加する。
->* eCommerce ソリューション（IBM Websphere Commerce、Elastic Path、hybris、Intershop など）から AEM に製品データを取り出すために、AEM の実装が&#x200B;** eCommerce 統合フレームワークを使用していない。
+>* eコマースソリューション（IBM Websphere Commerce、Elastic Path、hybris、Intershop など）から AEM に製品データを取り出すために、AEM の実装が&#x200B;** eコマース統合フレームワークを使用していない。
 >
 >
-AEM の実装が eCommerce を使用している場合は、このタスクをスキップして次のタスクに進みます。
+AEM の実装で AEM eCommerce を使用している場合は、このタスクをスキップして次のタスクに進みます。
 
 まず、既存のクイックビュー実装で使用されている動的変数を識別します。こうすることで、ホットスポットデータを入力してインタラクティブ画像を作成できます。
 
-AEM Assetsのバナー画像にホットスポットを追加する場合は、SKU（Stock Keeping Unit；在庫保管単位）を割り当てる必要があります提供する個々の製品またはサービスの一意の識別子)と、各ホットスポットに対するオプションの追加変数。 そのようなホットスポットの変数は、後でホットスポットとクイックビューコンテンツを対応付けるために使用されます。
+AEM Assets 内でバナー画像にホットスポットを追加する場合は、各ホットスポットに SKU（Stock Keeping Unit。提供される個々の異なる製品やサービス用の一意の識別子）とオプションの追加変数を割り当てる必要があります。そのようなホットスポットの変数は、後でホットスポットとクイックビューコンテンツを対応付けるために使用されます。
 
 重要なのは、ホットスポットデータに関連付けられる変数の数とタイプを正しく識別することです。バナー画像に追加するそれぞれのホットスポットに、既存のバックエンドシステム内で製品を一意に識別するための十分な情報がある必要があります。
 
@@ -82,13 +83,13 @@ AEM Assetsのバナー画像にホットスポットを追加する場合は、S
 
 ブラウザーでネットワーク監視をオンにして、ページ上でクイックビューをトリガーします。
 
-次に、ネットワークログ内でクイックビューの·Ajax·URL·を見つけ、記録された·URL·を今後の分析のためにコピーします。クイックビューをトリガーするとほとんどの場合、大量のリクエストがサーバーに送信されます。クイックビューの·Ajax·URL·は通常、そのリスト内の最初のほうにあります。It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
+次に、ネットワークログ内でクイックビューの·Ajax·URL·を見つけ、記録された·URL·を今後の分析のためにコピーします。クイックビューをトリガーするとほとんどの場合、大量のリクエストがサーバーに送信されます。クイックビューの·Ajax·URL·は通常、そのリスト内の最初のほうにあります。この URL には複雑なクエリ文字列部分またはパスが含まれ、その応答の MIME タイプは `text/html`、`text/xml`、`text/javascript` のいずれかになります。
 
-このプロセスの実行中は、様々な製品カテゴリーや製品タイプが含まれる Web サイトの様々な領域にアクセスすることが重要です。なぜなら、クイックビュー URL には、ある特定の Web サイトカテゴリーに共通するが、Web サイトの異なる領域にアクセスした場合にのみ変化する部分が存在する場合があるからです。
+このプロセスの実行中は、様々な製品カテゴリや製品タイプが含まれる Web サイトの様々な領域にアクセスすることが重要です。なぜなら、クイックビュー URL には、ある特定の Web サイトカテゴリに共通するが、Web サイトの異なる領域にアクセスした場合にのみ変化する部分が存在する場合があるからです。
 
 単純なケースでは、クイックビュー URL 内で変化する唯一の部分が製品 SKU となります。その場合、SKU の値が、ホットスポットをバナー画像に追加するために必要になる唯一のデータです。
 
-一方、複雑なケースでは、クイックビュー URL に SKU 以外の様々な要素が含まれます（カテゴリー ID、カラーコード、サイズコードなど）。その場合、各要素は AEM Assets のショッパブルインタラクティブ画像機能において、ホットスポットデータ定義内の個別の変数になります。
+一方、複雑なケースでは、クイックビュー URL に SKU 以外の様々な要素が含まれます（カテゴリ ID、カラーコード、サイズコードなど）。その場合、各要素は AEM Assets のショッパブルインタラクティブ画像機能において、ホットスポットデータ定義内の個別の変数になります。
 
 次のクイックビュー URL の例と、その結果となるホットスポットの変数について見てみましょう。
 
@@ -102,7 +103,7 @@ AEM Assetsのバナー画像にホットスポットを追加する場合は、S
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>The only variable part in the URL is the value of the productId= query string parameter, and it is clearly a SKU value. Therefore, our hotspots only need SKU fields populated with values like <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>この URL で変化する唯一の部分は productId= というクエリ文字列パラメーターの値であり、これが SKU 値であることは明白です。したがって、ホットスポットでは、<strong><code>866558</code></strong>、<strong><code>1196184</code></strong>、<strong><code>1081492</code></strong>、<strong><code>1898294</code></strong> などの値が入力された SKU フィールドのみが必要になります。</p> </td>
   </tr>
   <tr>
     <td><p>単一の SKU（URL パス内）</p> </td>
@@ -111,20 +112,20 @@ AEM Assetsのバナー画像にホットスポットを追加する場合は、S
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>The variable part is in the last portion of the path, and it becomes the SKU value of the hotspots: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>パスの最後の要素が変化する部分であり、これがホットスポットの SKU 値（<strong><code>6422350843</code></strong>、<strong><code>1607745002</code></strong>、<strong><code>0086724882</code></strong>）になります。</p> </td>
   </tr>
   <tr>
-    <td><p>SKU とカテゴリー ID（クエリ文字列内）</p> </td>
+    <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
     <td><p>記録されたクイックビューの URL：</p>
     <ul>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
       <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
-    </ul> <p>この場合、URLには2つの異なる部分があります。 The SKU is stored in the <code>prodId</code> parameter and the category ID<code></code> is stored in the <code>category=</code> parameter.</p> <p>そのため、ホットスポット定義はペアになります。つまり、SKU 値と、<code>categoryId</code> という追加の変数です。結果のペアは次のようになります。</p>
+    </ul> <p>この場合、URL には変化する部分が 2 つあります。SKU が <code>prodId</code> パラメーターに、カテゴリ ID<code></code> が <code>category=</code> パラメーターに格納されています。</p> <p>そのため、ホットスポット定義はペアになります。つまり、SKU 値と、<code>categoryId</code> という追加の変数です。結果のペアは次のようになります。</p>
     <ul>
-      <li><p>SKU is <strong><code>305466</code></strong> and <code>categoryId</code> is <code>1100004</code>.</p> </li>
-      <li><p>SKU is <strong><code>310181</code></strong> and <code>categoryId</code> is <strong><code>1100004</code></strong>.</p> </li>
-      <li><p>SKU is <strong><code>308706</code></strong> and <code>categoryId</code> is <strong><code>1740148</code></strong>.</p> </li>
+      <li><p>SKU が <strong><code>305466</code></strong>、<code>categoryId</code> が <code>1100004</code>。</p> </li>
+      <li><p>SKU が <strong><code>310181</code></strong>、<code>categoryId</code> が <strong><code>1100004</code></strong>。</p> </li>
+      <li><p>SKU が <strong><code>308706</code></strong>、<code>categoryId</code> が <strong><code>1740148</code></strong>。</p> </li>
     </ul> <p> </p> </td>
   </tr>
   </tbody>
@@ -132,7 +133,7 @@ AEM Assetsのバナー画像にホットスポットを追加する場合は、S
 
 **例**
 
-You can apply the same approach used in the three examples above to the [demo web page](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html).
+この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)に適用できます。
 
 このデモ Web ページにはいくつかの製品サムネールがあり、それぞれのサムネールには、「See More」というラベルの付いたクイックビューボタンが用意されています。Web ブラウザーのデバッグツールをアクティブにしたまま各ボタンをクリックし、記録されたクイックビュー URL に注目してください。そのページの 4 つの製品クイックビューのすべてをアクティベートすると、バックエンドに対して次のリストのクイックビューリクエストが作成されます。
 
@@ -143,7 +144,7 @@ You can apply the same approach used in the three examples above to the [demo we
 
 これらのサーバーコールを見ると、製品固有の情報がリクエストパスのみに含まれることがわかります。また、クエリ文字列がまったく使用されていないこと、2 つの異なるタイプのデータが含まれることもわかります。
 
-* 最初のタイプは Men または Women です。これは「製品カテゴリー」と呼ばれます。
+* 最初のタイプは Men または Women です。これは「製品カテゴリ」と呼ばれます。
 * 2 つ目のタイプは製品名（CamoPullover など）です。これは製品 SKU と考えることができます。
 
 この情報に基づいて、全体的なクイックビュー URL は次のようなパターンであることがわかります。
@@ -154,17 +155,17 @@ You can apply the same approach used in the three examples above to the [demo we
 
 これで、画像バナーをアップロードし、AEM Assets のショッパブルインタラクティブ画像機能を使用して画像バナーにホットスポットを追加する準備ができました。
 
-## （オプション）インタラクティブ画像ビューアプリセットの作成 {#optional-creating-an-interactive-image-viewer-preset}
+## （オプション）インタラクティブ画像ビューアプリセットの作成{#optional-creating-an-interactive-image-viewer-preset}
 
-You can choose to use the default, out-of-the-box Interactive Image viewer preset called `Shoppable_Banner` that comes with AEM Assets. また、インタラクティブ画像で使用するカスタムビューアプリセットを独自に作成することもできます。
+AEM Assets に含まれる、デフォルトの標準提供インタラクティブ画像ビューアプリセット（`Shoppable_Banner`）を使用するように選択できます。または、インタラクティブ画像で使用するために独自のカスタムビューアプリセットを作成できます。
 
-カスタムのインタラクティブ画像ビューアプリセットを作成する場合、画像バナー上のホットスポットの外観を指定できます。 ビューアプリセットの作成中に、事前定義済みの画像ギャラリーからホットスポットのグラフィックを選択して使用できます。
+カスタムインタラクティブ画像ビューアプリセットを作成する場合は、画像バナーのホットスポットの外観を決定できます。ビューアプリセットの作成中に、事前定義済みの画像ギャラリーからホットスポットのグラフィックを選択して使用できます。
 
-ビューアプリセットを保存すると、AEM Assetsのビューアプリセットリストページで、ビューアプリセットが自動的にアクティブ化（オンに）されます。 この機能は、インタラクティブメディアコンポーネントに表示され、アセットを表示するときに必ず表示されることを意味します。 ただし、このビューアプリセットを使用してインタラクティブバナーを*配信するには、ビューアプリセットも*公開*する必要があります（カスタムまたは初期設定のビューアプリセットの場合）。
+ビューアプリセットを保存すると、AEM Assets のビューアプリセットリストページで自動的にアクティベートされます（有効になります）。つまり、そのビューアプリセットは、インタラクティブメディアコンポーネントで、アセットを表示するときに常に表示されます。ただし、このビューアプリセットを含むインタラクティブバナーを配信するには、ビューアプリセットも公開する必要があります（カスタムと標準提供いずれのビューアプリセットでも同じです）。
 
-**インタラクティブ画像ビューアのプリセットを作成するには**
+**インタラクティブ画像ビューアプリセットを作成するには：**
 
-1. 左側のレールで、**[!UICONTROL ツール／アセット／ビューアプリセット]**&#x200B;をタップします。
+1. 左側のパネルで、**[!UICONTROL ツール／アセット／ビューアプリセット]**&#x200B;をタップします。
 1. ページの右上隅にある「**[!UICONTROL 作成]**」をタップします。
 1. 新規ビューアプリセットダイアログボックスで、インタラクティブバナービューアプリセットを表す名前を入力します。
 
@@ -186,11 +187,11 @@ You can choose to use the default, out-of-the-box Interactive Image viewer prese
 
    これで、画像バナーをアップロードできるようになりました。
 
-## 画像バナーのアップロード {#uploading-an-image-banner}
+## 画像バナーのアップロード{#uploading-an-image-banner}
 
-If you have already uploaded the images that you want to use, advance to the next step, [Adding hotspots to an image banner](#adding-hotspots-to-an-image-banner).
+使用する画像を既にアップロードしている場合は、次の手順（[画像バナーへのホットスポットの追加](#adding-hotspots-to-an-image-banner)）に進んでください。
 
-**イメージバナーをアップロードするには**
+**画像バナーをアップロードするには：**
 
 1. インタラクティブにする画像バナーをアップロードします。
 
@@ -198,7 +199,7 @@ If you have already uploaded the images that you want to use, advance to the nex
 
    これで、画像バナーにホットスポットを追加する準備が整いました。この後のタスクを参照してください。
 
-## 画像バナーへのホットスポットの追加 {#adding-hotspots-to-an-image-banner}
+## 画像バナーへのホットスポットの追加{#adding-hotspots-to-an-image-banner}
 
 ホットスポット管理ページのエディターを使用して、画像バナーにホットスポットを追加できます。
 
@@ -208,17 +209,17 @@ If you have already uploaded the images that you want to use, advance to the nex
 
 >[!NOTE]
 >
->ビューアをエクスペリエンスフラグメントに埋め込む場合、インタラクティブ画像のソーシャルメディア共有ツールはサポートされないことに注意してください。この問題を回避するには、ソーシャルメディア共有ツールを備えていないビューアプリセットを使用または作成します。 このようなビューアプリセットを使用すると、エクスペリエンスフラグメントに正常に埋め込むことができます。
+>ビューアをエクスペリエンスフラグメントに埋め込む場合、インタラクティブ画像のソーシャルメディア共有ツールはサポートされないことに注意してください。この問題を回避するには、ソーシャルメディア共有ツールのないビューアプリセットを使用または作成します。このようなビューアプリセットを使用すると、ビューアをエクスペリエンスフラグメントに正常に埋め込むことができます。
 
-現在の作成/編集セッションでは、ページの右上隅近くにある「取り消し」と「やり直し」のオプションがサポートされます。
+ページの右上隅にある「取り消し」および「やり直し」オプションは、現在の作成／編集セッションの間で有効です。
 
-インタラクティブ画像の作成が完了したら、「プレビュー」を使用して、インタラクティブ画像がユーザーにどのように表示されるかを確認できます。
+インタラクティブ画像の作成が完了したら、プレビューを使用して、インタラクティブ画像が顧客にどのように表示されるかを確認できます。
 
 [（オプション）インタラクティブ画像のプレビュー](#optional-previewing-interactive-images)を参照してください。
 
 >[!NOTE]
 >
->インタラクティブ画像またはカルーセルバナーの画像にホットスポットを追加すると、インタラクティブ画像かカルーセルバナーかに関わらず、ホットスポット情報が同じメタデータの場所（画像に対して相対的な場所）に格納されます。つまり、どちらのビューアでも、同じ画像を定義済みのホットスポットデータと一緒に簡単に再利用できます。
+>インタラクティブ画像またはカルーセルバナーの画像にホットスポットを追加すると、インタラクティブ画像かカルーセルバナーかにかかわらず、ホットスポット情報が同じメタデータの場所（画像に対して相対的な場所）に格納されます。つまり、どちらのビューアでも、同じ画像を定義済みのホットスポットデータと一緒に簡単に再利用できます。
 
 >  ただし、カルーセルバナーでは、画像上の画像マップ（ホットスポットを含むことができる）がサポートされることに注意してください。インタラクティブ画像ではサポートされません。同じ画像を使用するインタラクティブ画像またはカルーセルバナーを作成する場合には、このことに注意してください。同じ画像の別のコピーを使用してインタラクティブ画像とカルーセルバナーを作成することをお勧めします。
 >
@@ -228,14 +229,14 @@ If you have already uploaded the images that you want to use, advance to the nex
 >
 >ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
 
-**イメージバナーにホットスポットを追加するには**
+**画像バナーにホットスポットを追加するには：**
 
 1. Assets ビューで、インタラクティブにする画像バナーに移動します。
 1. 次のいずれかの操作をおこないます。
 
-   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). ツールバーの「**[!UICONTROL 編集]**」をタップします。
+   * 画像の上にマウスポインターを置き、**[!UICONTROL 選択]**（チェックマークアイコン）をタップします。ツールバーの「**[!UICONTROL 編集]**」をタップします。
 
-   * Hover on the image, then tap **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit]**.
+   * 画像の上にマウスポインターを置き、**[!UICONTROL その他のアクション]**（3 つのドットのアイコン）／**[!UICONTROL 編集]**&#x200B;をタップします。
 
    * 画像をタップして、詳細ビューページで画像を開きます。ツールバーの「**[!UICONTROL 編集]**」をタップします。
 
@@ -252,12 +253,12 @@ If you have already uploaded the images that you want to use, advance to the nex
 
    * 「**[!UICONTROL クイックビュー]**」をタップします。
 
-      * AEM Sites または eCommerce のユーザーである場合は、製品ピッカーアイコン（虫眼鏡）をタップまたはクリックして、製品を選択ページを開きます。使用する製品をタップまたはクリックし、ページの右上隅にある「**選択**」をタップして、「ホットスポット管理」ページに戻ります。
-      * If you are *not* an AEM Sites or eCommerce customer
+      * AEM Sites または AEM eCommerce のユーザーである場合は、製品ピッカーアイコン（虫眼鏡）をタップまたはクリックして、製品を選択ページを開きます。使用する製品をタップまたはクリックし、ページの右上隅にある「選択」をタップして、ホットスポット管理ページに戻ります。
+      * ** AEM Sites または AEM eCommerce のユーザーではない場合は次のようにします。
 
-         * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you will need to define these variables.
-         * 次に、SKU値を手動で入力します。 「SKU値」テキストフィールドに、製品のSKU（在庫保管単位）を入力します。これは、提供する個々の製品またはサービスの一意の識別子です。 入力したSKU値によってクイックビューテンプレートの可変部分が自動的に設定され、タップされたホットスポットを特定のSKUのクイックビューに関連付けることができます。
-         * (Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. テキストフィールドで、追加の変数を指定します。 例えば、追加の変数として `category=Mens` などと指定します。
+         * [ホットスポットの変数の識別](#optional-identifying-hotspot-variables)を参照してください。これらの変数を定義する必要があります。
+         * 次に、SKU 値を手動で入力します。「SKU 値」テキストフィールドに、製品の SKU（Stock Keeping Unit）を入力します。SKU は、提供している製品またはサービスごとの一意の識別子です。入力した SKU 値によってクイックビューテンプレートの変数部分が自動的に入力され、タップされたホットスポットが特定の SKU のクイックビューに関連付けられます。
+         * （オプション）クイックビュー内で製品をさらに識別するために必要になる他の変数がある場合は、「**[!UICONTROL 汎用変数を追加]**」をタップします。テキストフィールドに追加の変数を指定します。例えば、追加の変数として `category=Mens` などと指定します。
    * 「**[!UICONTROL ハイパーリンク]**」をタップします。
 
       * AEM Sites のユーザーである場合は、サイトセレクターアイコン（フォルダー）をタップまたはクリックして URL に移動します。インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。
@@ -274,7 +275,8 @@ If you have already uploaded the images that you want to use, advance to the nex
 
          >[!NOTE]
          >
-         >ビューアをエクスペリエンスフラグメントに埋め込む場合、インタラクティブ画像のソーシャルメディア共有ツールはサポートされないことに注意してください。この問題を回避するには、ソーシャルメディア共有ツールを備えていないビューアプリセットを使用または作成します。 このようなビューアプリセットを使用すると、エクスペリエンスフラグメントに正常に埋め込むことができます。
+         >ビューアをエクスペリエンスフラグメントに埋め込む場合、インタラクティブ画像のソーシャルメディア共有ツールはサポートされないことに注意してください。
+この問題を回避するには、ソーシャルメディア共有ツールのないビューアプリセットを使用または作成します。このようなビューアプリセットを使用すると、ビューアをエクスペリエンスフラグメントに正常に埋め込むことができます。
 
 
 
@@ -291,18 +293,18 @@ If you have already uploaded the images that you want to use, advance to the nex
    >
    >ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
 
-### （オプション）インタラクティブ画像のプレビュー {#optional-previewing-interactive-images}
+### （オプション）インタラクティブ画像のプレビュー{#optional-previewing-interactive-images}
 
-プレビューを使用して、インタラクティブイメージが顧客にどのように表示されるかを確認し、イメージのホットスポットをテストして、期待どおりの動作を示すことができます。
+プレビューを使用して、顧客に対して示されるインタラクティブ画像の表示方法を確認し、画像のホットスポットをテストして動作が期待どおりであるかを確認することができます。
 
-インタラクティブ画像の設定が完了したら、この画像を公開できます。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+インタラクティブ画像の設定が完了したら、この画像を公開できます。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
-**インタラクティブ画像をプレビューするには**
+**インタラクティブ画像をプレビューするには：**
 
 1. Assets ビューで、作成した既存のインタラクティブ画像の場所に移動し、タップしてプレビューで表示します。
-1. Near the upper-left corner of the Preview page, in the Content drop-down list, tap **[!UICONTROL Viewers]**.
+1. プレビューページの左上隅付近にある「コンテンツ」ドロップダウンリストで「**[!UICONTROL ビューア]**」をタップします。
 1. ビューアリストで「**[!UICONTROL Shoppable_Banner]**」または作成したインタラクティブ画像ビューアプリセットの名前をタップします。
-1. 画像上のホットスポットをタップして、関連するアクションをテストします。
+1. 画像上のホットスポットをタップし、関連付けられたアクションをテストします。
 
 ## インタラクティブ画像アセットの公開 {#publishing-interactive-image-assets}
 
@@ -312,23 +314,23 @@ If you have already uploaded the images that you want to use, advance to the nex
 
 バナー画像をアップロードし、ホットスポットを画像に追加してインタラクティブ画像を公開したら、次に Web サイトページにその画像を追加できます。
 
-AEM Sites のユーザーである場合は、インタラクティブメディアコンポーネントをページにドラッグすることによりインタラクティブ画像を追加できます。See [Adding Dynamic Media Assets to Pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+AEM Sites のユーザーである場合は、インタラクティブメディアコンポーネントをページにドラッグすることによりインタラクティブ画像を追加できます。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
 スタンドアロン AEM Assets のユーザーである場合は、この節で説明するようにインタラクティブ画像を手動で Web サイトに追加できます。
 
 1. 公開済みのインタラクティブ画像の埋め込みコードをコピーします。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
-1. コピーした埋め込みコードを、Web ページ内の必要な場所に追加します。コピーされた埋め込みコードは、割り当てられた領域に自動的に収まるようにレスポンシブ環境用に設定されます。
+1. コピーした埋め込みコードを、Web ページ内の必要な場所に追加します。コピーされた埋め込みコードはレスポンシブ環境向けに設定されているので、追加された場所に自動的に適応します。
 
 **例**
 
-デモの [Webサイトの例を見ると](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)、3人の男性の写真は静的タグで `IMG` す。
+[デモ Web サイトを例として](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)使用する際は、3 人の男性の写真が静的 `IMG` タグであることに注意してください。
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-統合は、タグを削除し、AEM Assetsか `IMG` らコピーした埋め込みコードに置き換えるだけで簡単です。 結果は、3つの円のホットスポ [ットを含むページ上で買い物が可能なインタラクティブ画像を示しています](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
+統合は、`IMG` タグを削除して AEM Assets からコピーした埋め込みコードに置き換えるだけで簡単にできます。結果は、[3 つの円のホットスポットを含んだページ上でショッパブルインタラクティブ画像を表示しています](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
 
 >[!NOTE]
 >
@@ -342,7 +344,7 @@ AEM Sites のユーザーである場合は、インタラクティブメディ�
 
 これで、インタラクティブ画像を Web サイト上の既存のクイックビューに統合できるようになりました。
 
-## インタラクティブ画像の既存のクイックビューへの統合 {#integrating-an-interactive-image-with-an-existing-quickview}
+## インタラクティブ画像の既存のクイックビューへの統合{#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -405,7 +407,7 @@ AEM Assets によって返される埋め込みコードには、次のハイラ
 <table>
  <tbody>
   <tr>
-   <td><p>単一の SKU（クエリー文字列内）</p> </td>
+   <td><p>単一の SKU（クエリ文字列内）</p> </td>
    <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
@@ -421,7 +423,7 @@ AEM Assets によって返される埋め込みコードには、次のハイラ
       });</code></td>
   </tr>
   <tr>
-   <td><p>SKU とカテゴリ ID（クエリー文字列内）</p> </td>
+   <td><p>SKU とカテゴリ ID（クエリ文字列内）</p> </td>
    <td><code class="code">s7interactiveimageviewer.setHandlers({
       "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
@@ -439,7 +441,7 @@ AEM Assets によって返される埋め込みコードには、次のハイラ
 /datafeed/$categoryId$-$SKU$.json
 ```
 
-この URL を `quickViewActivate` ハンドラー内で再構成するために、ビューアのコードからハンドラーに渡される `categoryId` オブジェクト内の `SKU` フィールドと `inData` フィールドを使用できます。
+この URL を `quickViewActivate` ハンドラー内で再構成するために、ビューアのコードからハンドラーに渡される `inData` オブジェクト内の `categoryId` フィールドと `SKU` フィールドを使用できます。
 
 ```xml
 var sku=inData.sku;
@@ -447,7 +449,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-The demo website is triggering the Quickview dialog box using a simple `loadQuickView()` function call. この関数は、1 つの引数（クイックビューデータの URL）のみを受け取ります。したがって、ショッパブルインタラクティブ画像を統合するために必要な最後の手順は、`quickViewActivate` ハンドラーに次のコード行を追加することです。
+このデモ Web サイトは、単純な `loadQuickView()` 関数呼び出しを使用してクイックビューダイアログボックスを起動しています。この関数は、1 つの引数（クイックビューデータの URL）のみを受け取ります。したがって、ショッパブルインタラクティブ画像を統合するために必要な最後の手順は、`quickViewActivate` ハンドラーに次のコード行を追加することです。
 
 ```xml
 loadQuickView(quickViewUrl);
@@ -475,7 +477,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-完全に統 [合されたインタラクティブ画像を含む最終的なデモWebサイト](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)。
+[完全に統合されたインタラクティブ画像を含んだ最終的なデモ Web サイト](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)です。
 
 ## クイックビューを使用したカスタムポップアップの作成 {#using-quickviews-to-create-custom-pop-ups}
 
