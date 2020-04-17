@@ -1,14 +1,14 @@
 ---
-title: Adobe Experience Manager 6.xからクラウドサービスへの移行
-description: Adobe Experience Manager 6.xからクラウドサービスへの移行
+title: Adobe Experience Manager 6.x から AEM Cloud Service への移行
+description: Adobe Experience Manager 6.x から AEM Cloud Service への移行
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
 
 
-# クラウドサービスとしてAdobe Experience Manager Assetsに移行 {#move-to-assets-cloud-service}
+# Adobe Experience Manager Assets as a Cloud Service への移行 {#move-to-assets-cloud-service}
 
 <!-- About the need to move from previous AEM deployment to a cloud service deployment. And how does Adobe help do it OOTB?
 -->
@@ -27,17 +27,17 @@ Link back to information about the tool in the Experience Manager as a Cloud Ser
 
 移行ツールを使用すると、次のことを実現できます。
 
-* 既存のワークフローモデルを、Assets Compute Serviceで動作する処理プロファイルに変換します。
-* ワークフローモデルからサポートされていない手順を削除します。
-* ワークフローランチャーを無効にします。
-* ユーザーの確認/検証後に、既存のソースコード内の設定を結合します。
+* 既存のワークフローモデルを、アセットコンピューティングサービスで動作する処理プロファイルに変換する。
+* サポートされていないステップをワークフローモデルから削除する。
+* ワークフローランチャーを無効にする。
+* ユーザーの確認／検証後に、既存のソースコード内の設定を結合する。
 
-移行ツールは、Mavenモジュールで処理プロファイルを作成し、次の2つの方法でユーザーが使用できるようにします。
+移行ツールは、Maven モジュールで処理プロファイルを作成し、次の 2 とおりの方法でユーザーが使用できるようにします。
 
-* 既存のプロジェクトの1つにマージします。
-* モジュールを新しいサブモジュールとして追加します。
+* 既存のプロジェクトの 1 つにマージする。
+* モジュールを新しいサブモジュールとして追加する。
 
-移行ツールは、行った変更のレポートと、変更に関する情報を提供します。
+移行ツールは、おこなった変更とそれらの変更に関する情報をレポートとして提供します。
 
 <!--  
 
@@ -52,4 +52,4 @@ Give details about reports and logs of the tool.
 
 -->
 
-## 新しい展開へのコンテンツの移行 {#content-migration-across-deployments}
+## 新しいデプロイメントへのコンテンツの移行 {#content-migration-across-deployments}
