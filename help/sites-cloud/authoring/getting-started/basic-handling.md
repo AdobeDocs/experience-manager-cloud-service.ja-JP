@@ -1,7 +1,7 @@
 ---
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # 基本操作 {#basic-handling}
 
-このドキュメントは、AEMオーサー環境を使用する際の基本的な処理の概要を説明するために作成されています。 これは&#x200B;**サイト**&#x200B;コンソールを基礎として使用します。
+このドキュメントでは、AEM オーサー環境を使用する際の基本操作の概要をまとめています。これは&#x200B;**サイト**&#x200B;コンソールを基礎として使用します。
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## タッチ対応 UI {#a-touch-enabled-ui}
 
-AEMのユーザーインターフェイスでタッチが有効になっています。 タッチ対応インターフェイスを使用すると、タップ、長押し、スワイプなどのタッチジェスチャを使用して、ソフトウェアを操作できます。AEM UIはタッチ対応なので、携帯電話やタブレットなどのタッチデバイスでタッチジェスチャを使用できます。 ただし、従来のデスクトップデバイスではマウス操作も可能で、コンテンツのオーサリング方法を柔軟に選択できます。
+AEM のユーザーインターフェイスは、タッチ操作に対応しています。タッチ対応インターフェイスを使用すると、タップ、長押し、スワイプなどのタッチジェスチャーを使用して、ソフトウェアを操作できます。AEM UI はタッチ対応なので、携帯電話やタブレットなどのタッチデバイスでタッチジェスチャーを使用できます。ただし、従来のデスクトップデバイスでのマウス操作も可能で、その場合はコンテンツのオーサリング方法を柔軟に選択できます。
 
 ## 最初の手順 {#first-steps}
 
@@ -35,44 +35,44 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ![ナビゲーションチュートリアル](/help/sites-cloud/authoring/assets/tutorial.png)
 
-「**次へ**」をクリックまたはタップして、概要の次のページに進みます。Click or tap **Close** or click or tap outside of the overview dialog to close.
+「**次へ**」をクリックまたはタップして、概要の次のページに進みます。「**閉じる**」をクリックまたはタップするか、概要ダイアログの外側をクリックまたはタップして閉じます。
 
-The overview will restart the next time you access a console unless you either view all slides or check the option **Don&#39;t show this again**.
+すべてのスライドを表示するか「**次回から表示しない**」オプションをオンにする場合を除き、概要は、次回コンソールにアクセスすると再び開始します。
 
 ## グローバルナビゲーション {#global-navigation}
 
-グローバルナビゲーションパネルを使用してコンソール間を移動できます。これは、画面の左上にある Adobe Experience Manager リンクをクリックまたはタップすると、フルスクリーンのドロップダウンとしてトリガーされます。
+グローバルナビゲーションパネルを使用してコンソール間を移動できます。これは、画面の左上にある Adobe Experience Manager リンクをクリックまたはタップすると、全画面表示のドロップダウンとしてトリガーされます。
 
-You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
+「**閉じる**」をクリックまたはタップすると、グローバルナビゲーションパネルが閉じて、前の場所に戻ることができます。
 
 ![ナビゲーションパネルの上部バー](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
 グローバルナビゲーションには、2 つのパネルがあり、画面の左余白にアイコンで表示されます。
 
-* **[ナビゲーション](#navigation-panel)**- コンパスで表される AEMにログインしたときのデフォルトのパネル
+* **[ナビゲーション](#navigation-panel)**- コンパスと、AEM にログインしたときのデフォルトパネルで表される
 * **[ツール](#tools-panel)**- ハンマーで表される
 
 次に、これらのパネルで使用できるオプションについて説明します。
 
-### ナビゲーションパネル {#navigation-panel}
+### ナビゲーションパネル{#navigation-panel}
 
 ナビゲーションパネル：
 
 ![ナビゲーションパネル](/help/sites-cloud/authoring/assets/navigation.png)
 
-ナビゲーションから利用可能なコンソールは次のとおりです。
+ナビゲーションでは、次のコンソールを使用できます。
 
-| console | 目的 |
+| コンソール | 目的 |
 |---|---|
-| プロジェクト | プロジェクトコンソールを使用すると、プロジェクトに直接アクセスできます。 [プロジェクトは](/help/sites-cloud/authoring/projects/overview.md) 、チームの構築に使用できる仮想ダッシュボードです。 その後、そのチームにリソース、ワークフロー、タスクへのアクセス権を与えて、ユーザーが共通の目標に向かって作業できるようにします。 |
-| Sites | The Sites consoles let you [create, view, and manage sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) running on your AEM instance. このコンソールを使用して、ページの作成、編集、コピー、移動および削除、ワークフローの開始、ページの公開を行うことができます。 |
-| エクスペリエンスフラグメント | An [Experience Fragment](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences. |
-| Assets | アセットコンソールでは、画像、ビデオ、ドキュメント、オーディオファイルなどのデジタルアセットの読み込みと管理を行うことができます。 These assets can then be used by any site running on the same AEM instance.<!--add some kind of assets link--> |
-| パーソナライゼーション | This console provides a framework of tools for [authoring targeted content and presenting personalized experiences.](/help/sites-cloud/authoring/personalization/overview.md) |
+| プロジェクト | プロジェクトコンソールでは、プロジェクトに直接アクセスできます。[プロジェクトは、チームの構築に使用できる仮想ダッシュボード](/help/sites-cloud/authoring/projects/overview.md)です。その後、そのチームがリソース、ワークフローおよびタスクにアクセスできるようになるので、チームメンバーが共通の目標に向かって作業できます。 |
+| サイト | サイトコンソールでは、AEM インスタンス上で実行される[サイトの作成、表示、管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)をおこなえます。このコンソールを通じて、ページの作成、編集、コピー、移動および削除や、ワークフローの開始、ページの公開をおこなうことができます。 |
+| エクスペリエンスフラグメント | [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)は、チャネル間で再利用でき、バリエーションのあるスタンドアロンエクスペリエンスです。エクスペリエンスやエクスペリエンスの一部を繰り返しコピー＆ペーストする手間を省きます。 |
+| アセット | アセットコンソールでは、画像、ビデオ、ドキュメント、オーディオファイルなどのデジタルアセットを読み込んで、それらのデジタルアセットを管理できます。同じ AEM インスタンス上で実行されているどのサイトでも、これらのアセットを使用できます。<!--add some kind of assets link--> |
+| パーソナライズ機能 | このコンソールには、[ターゲットとなるコンテンツをオーサリングして、パーソナライズされたエクスペリエンスを提供](/help/sites-cloud/authoring/personalization/overview.md)するためのツールのフレームワークが用意されています。 |
 
 ## ツールパネル {#tools-panel}
 
-ツールパネルには、様々なカテゴリを含むサイドパネルがあり、同様のツールコンソールをグループ化します。 The Tools consoles provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+ツールパネルには、同様のツールコンソールをグループ化した様々なカテゴリを含むサイドパネルがあります。ツールコンソールを使用して、Web サイト、デジタルアセット、およびコンテンツリポジトリのその他の要素の管理に役立つ、数多くの専用ツールおよびコンソールにアクセスできます。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![ツールパネル](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -84,7 +84,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * [グローバルナビゲーション](#global-navigation)
 
-   Select the **Adobe Experience Manager** link to navigate between consoles.
+   コンソール間を移動するには、**Adobe Experience Manager** リンクを選択します。
 
    ![グローバルナビゲーション](/help/sites-cloud/authoring/assets/global-navigation.png)
 
@@ -92,9 +92,9 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![検索ボタン](/help/sites-cloud/authoring/assets/search-button.png)
 
-   You can also use the [shortcut key](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
+   [ショートカットキー](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`（スラッシュ）を使用して、任意のコンソールから検索を呼び出すこともできます。
 
-* [ソリューション](https://www.adobe.com/experience-cloud.html)
+* [ソリューション](https://www.adobe.com/jp/experience-cloud.html)
 
    ![ソリューションボタン](/help/sites-cloud/authoring/assets/solutions.png)
 
@@ -112,27 +112,27 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ![ユーザープロパティボタン](/help/sites-cloud/authoring/assets/user-properties.png)
 
-* [レールセレクター](#rail-selector)
+* [パネルセレクター](#rail-selector)
 
-   ![パネルの選択ボタン](/help/sites-cloud/authoring/assets/rail-selector.png)
+   ![パネルセレクターボタン](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   現在のコンソールに応じて表示されるオプションです。For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
+   現在のコンソールに応じて表示されるオプションです。例えば、**サイト**&#x200B;では、コンテンツのみ（デフォルト）、タイムライン、参照またはフィルターのサイドパネルを選択できます。
 
-   ![レールセレクターの例](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+   ![パネルセレクターの例](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * パンくずリスト
 
    ![ナビゲーションバーのパンくずリスト](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   レールの中央に位置し、常に現在選択している項目の説明を表示するパンくずリストを使用すると、特定のコンソール内を移動できます。In the **Sites** console, you can navigate through the levels of your website.
+   パネルの中央に位置し、常に現在選択している項目の説明を表示するパンくずリストを使用すると、特定のコンソール内を移動できます。**サイト**&#x200B;コンソールでは、Web サイトのレベル間を移動できます。
 
    パンくずリストのテキストをクリックするだけで、現在選択している項目の階層のレベルをリストするドロップダウンが表示されます。エントリをクリックすると、その場所にジャンプします。
 
-   ![パンくずリストの例](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+   ![展開したパンくずリストの例](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
-* **作成ボタン**
+* 「**作成**」ボタン
 
-   ![作成ボタン](/help/sites-cloud/authoring/assets/create.png)
+   ![「作成」ボタン](/help/sites-cloud/authoring/assets/create.png)
 
    クリックすると、コンソール／コンテキストに適したオプションが表示されます。
 
@@ -140,15 +140,15 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    表示アイコンは AEM ツールバーの右端にあります。このアイコンは、そのときの表示に応じて随時変化します。例えば、デフォルト表示では、次のように&#x200B;**列表示**&#x200B;が表示されます。
 
-   ![ビューボタン](/help/sites-cloud/authoring/assets/views-button.png)
+   ![表示ボタン](/help/sites-cloud/authoring/assets/views-button.png)
 
-   列表示、カード表示、リスト表示を切り替えることができます。リストビューでは、ビュー設定も表示されます。
+   列表示、カード表示、リスト表示を切り替えることができます。リスト表示では、表示設定も表示されます。
 
    ![表示](/help/sites-cloud/authoring/assets/view.png)
 
    >[!NOTE]
    >
-   >「設定 **を表示** 」オプションは、リスト表示モード **でのみ使用できます** 。
+   >「**表示設定**」オプションは、**リスト表示**&#x200B;モードでのみ使用できます。
 
 ## ヘルプへのアクセス {#accessing-help}
 
@@ -170,7 +170,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    ページを初めて編集する場合は、ページエディターについて説明する一連のスライドが表示されます。
 
-   ![エディタのチュートリアル](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+   ![エディターのチュートリアル](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
    コンソールに最初にアクセスしたときの[製品ナビゲーションの概要](#product-navigation)と同様に、この概要をナビゲートします。
 
@@ -180,11 +180,11 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
    **ツール**&#x200B;コンソールから外部&#x200B;**リソース**&#x200B;にアクセスすることもできます。
 
-   * **ドキュメント** - Web Experience Managementのドキュメントを表示します。
-   * **開発者向けリソース** — 開発者向けリソースとダウンロード
+   * **文書** - Web Experience Management のドキュメントを表示します。
+   * **開発者向けリソース** - 開発者向けリソースおよびダウンロードです。
    >[!NOTE]
    >
-   >コンソールでは、ホットキー（疑問符）を使用して、いつでも使用でき `?` るショートカットキーの概要にアクセスできます。
+   >コンソールでは、ホットキー `?`（疑問符）を使用して、いつでもショートカットキーの概要を確認できます。
    >
    >すべてのキーボードショートカットの概要については、次のドキュメントを参照してください。
    >
@@ -198,11 +198,11 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 * 現在のコンソール
 * 現在のコンテキスト
-* Whether you are in [selection mode](#viewing-and-selecting-resources)
+* [選択モード](#viewing-and-selecting-resources)になっているかどうか
 
 ツールバーで使用できるアクションは、選択した特定の項目に対して取ることのできるアクションを反映して変化します。
 
-How you [select a resource](#viewing-and-selecting-resources) depends on the view.
+[リソースを選択する](#viewing-and-selecting-resources)方法は、表示によって異なります。
 
 一部のウィンドウではスペースが制限されるので、使用可能なスペースよりもツールバーのほうが長くなることがよくあります。この場合は、追加のオプションが表示されます。省略記号（三点リーダーまたは「**...**」）をクリックまたはタップすると、その他のすべてのアクションを含むドロップダウンセレクターが開きます。例えば、**サイト**&#x200B;コンソールでページを選択すると、次のように表示されます。
 
@@ -212,7 +212,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 >
 >利用可能な個々のアイコンについては、それぞれのコンソール、機能、シナリオに関連するページで説明しています。
 
-## クイックアクション {#quick-actions}
+## クイックアクション{#quick-actions}
 
 [カード表示](#card-view)では、特定のアクションがクイックアクションアイコンとして使用できます。クイックアクションアイコンはツールバーにも表示されます。クイックアクションのアイコンは、一度に 1 つの項目に対してのみ利用できます。このアイコンを使用すると、事前に選択する必要がありません。
 
@@ -234,38 +234,38 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 >
 >デフォルトでは、AEM Assets は、UI のどの表示でもアセットの元のレンディションをサムネールとして表示しません。管理者の場合、オーバーレイを使用して AEM Assets で元のレンディションをサムネールとして表示するように設定できます。
 
-### リソースの選択 {#selecting-resources}
+### リソースの選択{#selecting-resources}
 
 特定のリソースの選択方法は、表示とデバイスの組み合わせによって異なります。
 
-| 表示 | タッチを選択 | デスクトップの選択 | タッチの選択を解除 | デスクトップの選択を解除 |
+| 表示 | タッチの選択 | デスクトップの選択 | タッチの選択解除 | デスクトップの選択解除 |
 |---|---|---|---|---|
-| 列 | サムネールをタップします | サムネールをクリック | サムネールをタップします | サムネールをクリック |
-| カード | カードをタップして押し続ける | マウスを移動し、チェックマークのクイックアクションを使用します。 | カードをタップします | カードをクリックします |
-| リスト | サムネールをタップします | サムネールをクリック | サムネールをタップします | サムネールをクリック |
+| 列 | サムネールをタップ | サムネールをクリック | サムネールをタップ | サムネールをクリック |
+| カード | カードをタップ＆ホールド | 項目の上にマウスを移動しチェックマークのクイックアクションを使用 | カードをタップ | カードをクリック |
+| リスト | サムネールをタップ | サムネールをクリック | サムネールをタップ | サムネールをクリック |
 
 #### すべてを選択 {#select-all}
 
 コンソールの右上隅にある「**すべてを選択**」オプションをクリックすると、あらゆる表示のすべての項目を選択できます。
 
 * **カード表示**&#x200B;では、すべてのカードが選択されます。
-* In **List View** all items in the list are selected.
+* **リスト表示**&#x200B;では、リスト内のすべての項目が選択されます。
 * **列表示**&#x200B;では、一番左の列にあるすべての項目が選択されます。
 
-![すべて選択](/help/sites-cloud/authoring/assets/select-all.png)
+![すべてを選択](/help/sites-cloud/authoring/assets/select-all.png)
 
 #### すべて選択解除 {#deselecting-all}
 
 どのような場合でも、項目を選択すると、選択された項目の数がツールバーの右上に表示されます。
 
-すべての項目の選択を解除し、選択モードを終了するには、次の操作を行います。
+すべての項目の選択を解除して選択モードを終了するには、次の操作をおこないます。
 
-* Clicking or tapping the **X** next to the count
-* Escapeキー **の使** 用
+* カウントの横にある「**X**」をクリックまたはタップする
+* **Esc** キーを使用する
 
-![すべて選択解除](/help/sites-cloud/authoring/assets/deselect-all.png)
+![すべてを選択解除](/help/sites-cloud/authoring/assets/deselect-all.png)
 
-デスクトップデバイスを使用している場合は、すべてのビューで、キーボードのEscキーをタップして、すべての項目の選択を解除できます。
+デスクトップデバイスを使用している場合、すべての表示で、キーボードの Esc キーを押すことですべての項目を選択解除できます。
 
 #### 選択の例 {#selecting-example}
 
@@ -275,7 +275,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 1. リソースを選択すると、上部のヘッダーの上に[アクションツールバー](#actions-toolbar)が重なって表示され、選択したリソースで現在適用可能なアクションにアクセスできます。
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   選択モードを終了するには、右上の「**X**」を選択するか、**Esc** キーを使用します。
 
 ### 列表示 {#column-view}
 
@@ -293,7 +293,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 * サムネールをタップまたはクリックして、リソースを選択します。
 
-   * 選択すると、サムネールにチェックマークが重ねて表示され、リソース名もハイライト表示されます。
+   * 選択すると、チェックマークがサムネールにオーバーレイ表示され、リソース名もハイライト表示されます。
    * 選択されたリソースの詳細が最後の列に表示されます。
    * アクションツールバーが使用可能になります。
    列表示でページが選択されると、選択したページが次の詳細と共に最後の列に表示されます。
@@ -312,11 +312,11 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 
 * カード表示では、現在のレベルの各項目の情報カードを表示します。次のような情報が提供されます。
 
-   * ページコンテンツの視覚的表現
-   * ページタイトル
-   * 重要な日付（最終編集日、最終発行日など）
-   * ページがロック、非表示またはライブコピーの一部である場合
-   * 必要に応じて、ワークフローの一部としてアクションを実行する必要がある場合
+   * ページの内容を視覚的に表現したもの
+   * ページのタイトル
+   * 重要な日付（最終編集日、最終公開日など）。
+   * ページがロックされているかどうか、非表示になっているかどうか、またはライブコピーの一部であるかどうか
+   * 適切な場合、ワークフローの一部としてアクションを実行する必要があるタイミング。
       * 必要なアクションを示すマーカーは、[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)のエントリに関連している場合があります。
 
 * また、この表示では、選択などの[クイックアクション](#quick-actions)や編集などの共通アクションも使用できます。
@@ -333,7 +333,7 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
 * リソース名をタップまたはクリックしてツリーの下に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して上に戻ったりできます。
 * リストですべての項目を簡単に選択するには、リストの左上にあるチェックボックスを使用します。
 
-   ![リストビューですべて選択](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+   ![リスト表示：すべてを選択](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * リストのすべての項目が選択されると、このチェックボックスがオンになります。
 
@@ -356,33 +356,33 @@ How you [select a resource](#viewing-and-selecting-resources) depends on the vie
    * **ページ滞在時間**
 
       ![列の選択](/help/sites-cloud/authoring/assets/select-columns.png)
-   By default the **Name** column is shown, which makes up part of the URL for the page. 場合によっては、異なる言語のページにアクセスし、ページの名前を確認する必要があります（通常は変更されません）。作成者がページの言語を知らない場合は、非常に役立ちます。
+   デフォルトでは、ページの URL の一部を構成する「**名前**」列が表示されます。場合によっては、作成者は、異なる言語のページにアクセスする必要があることがあり、ページの名前（通常は変更なし）を確認することは、作成者がページの言語を知らない場合に非常に役立ちます。
 
 * リストの各項目の右端にある縦の点線マークを使用して項目の順序を変更します。
 
    >[!NOTE]
    >
-   >Changing the order works only within an ordered folder that has `jcr:primaryType` value as `sling:OrderedFolder`.
+   >順序を変更できるのは、`jcr:primaryType` 値が `sling:OrderedFolder` である順序付きフォルダーの内部のみです。
 
    ![列の順序](/help/sites-cloud/authoring/assets/column-order.png)
 
    縦の選択バーをクリックまたはタップして、項目をリストの新しい位置にドラッグします。
 
-   ![注文リスト](/help/sites-cloud/authoring/assets/order-list.png)
+   ![リストの順序変更](/help/sites-cloud/authoring/assets/order-list.png)
 
-## レールセレクター {#rail-selector}
+## パネルセレクター {#rail-selector}
 
-The **Rail Selector** is available at the top-left of the window and displays options depending on your current consoles.
+**パネルセレクター**&#x200B;は、ウィンドウの左上にあり、現在のコンソールに応じてオプションを表示します。
 
-![パネルセレクターを展開](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
+![展開されたパネルセレクター](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-For example, in **Sites** you can select content only (the default), content tree, the timeline, references, or filter side panel.
+例えば、**サイト**&#x200B;では、コンテンツのみ（デフォルト）、コンテンツツリー、タイムライン、参照またはフィルターのサイドパネルを選択できます。
 
-コンテンツのみが選択されている場合は、レールアイコンのみが表示されます。他のオプションが選択されている場合は、レールアイコンの隣にオプション名が表示されます。
+コンテンツのみが選択されている場合は、パネルアイコンのみが表示されます。他のオプションが選択されている場合は、パネルアイコンの隣にオプション名が表示されます。
 
 >[!NOTE]
 >
->[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を使用してレール表示オプションをすばやく切り替えることができます。
+>[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を使用してパネル表示オプションをすばやく切り替えることができます。
 
 ### コンテンツツリー {#content-tree}
 
@@ -400,7 +400,7 @@ For example, in **Sites** you can select content only (the default), content tre
 
 ### タイムライン {#timeline}
 
-タイムラインは、選択したリソースで発生したイベントを表示または開始するために使用できます。 「タイムライン」列を開くには、レールセレクターを使用します。
+タイムラインを使用して、選択したリソースで発生したイベントを表示または開始することができます。「タイムライン」列を開くには、パネルセレクターを使用します。
 
 ![タイムラインツリー](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -416,17 +416,17 @@ For example, in **Sites** you can select content only (the default), content tre
       * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)
       * [バージョン](/help/sites-cloud/authoring/features/page-versions.md)
       * [ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)
-         * With the exception of transient workflows as no history information is saved for these <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
+         * 履歴情報が保存されないので、一時的なワークフローは除きます <!--With the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these-->
       * すべて表示
 
-* 選択した項目に関するコメントを追加または表示します。イベントのリストの下部に「**コメント**」ボックスが表示されます。コメントを入力して Return キーを押すと、コメントが登録されます。コメントは「**コメント**」または「**すべて表示**」を選択すると表示されます。
+* 選択した項目に関するコメントを追加または表示します。イベントのリストの下部に「**コメント**」ボックスが表示されます。コメントを入力して Enter キーを押すと、コメントが登録されます。コメントは「**コメント**」または「**すべて表示**」を選択すると表示されます。
 
 * 特定のコンソールには追加機能が用意されています。例えば、サイトコンソールでは次のアクションを実行できます。
 
    * [バージョンの保存](/help/sites-cloud/authoring/features/page-versions.md)
    * [ワークフローを開始](/help/sites-cloud/authoring/workflows/applying.md)
 
-These options accessible via the chevron next to the **Comment** field.
+これらのオプションには、「**コメント**」フィールドの横にある山形記号からアクセスできます。
 
 ![コメントフィールド](/help/sites-cloud/authoring/assets/comments.png)
 
@@ -439,10 +439,10 @@ These options accessible via the chevron next to the **Comment** field.
 * 言語コピー<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
 * コンテンツ参照：
 
-   * 他のページから選択したページへのリンク
-   * 参照コンポーネントによって選択したページから借用または貸与されたコンテンツ
+   * 他のページから選択ページへのリンク
+   * 参照コンポーネントで選択したページから借りたコンテンツや、選択したページに貸したコンテンツ
 
-![リファレンスの例](/help/sites-cloud/authoring/assets/references-example.png)
+![参照の例](/help/sites-cloud/authoring/assets/references-example.png)
 
 ### フィルター {#filter}
 
