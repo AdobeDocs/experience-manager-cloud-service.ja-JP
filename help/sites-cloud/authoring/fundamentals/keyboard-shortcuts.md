@@ -1,7 +1,7 @@
 ---
 title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -19,21 +19,21 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 
 | 場所 | ショートカット | 説明 |
 |---|---|---|
-| 任意の編集ウィンドウモード | `Ctrl-Shift-m` | Toggle between **Preview** and the currently selected [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)* |
-| **編集**&#x200B;モード | `Ctrl-z` | [最後に行った変更操作を取り消す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
-|  | `Ctrl-y` | [最後に行った変更操作をやり直す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
-|  | `Ctrl-Click` | 複数の段落を選択 |
-|  | `Ctrl-c` | 選択した段落をコピー |
-|  | `Ctrl-x` | 選択した段落を切り取り（切り取った段落は貼り付けるまでUIに表示されません） |
-|  | `Ctrl-v` | 以前に切り取った段落またはコピーした段落を貼り付け |
-|  | `Ctrl-Backspace` | 選択した段落を削除 |
+| 任意の編集ウィンドウモード | `Ctrl-Shift-m` | **プレビュー**&#x200B;と、現在選択されている[モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a>（**編集**、**レイアウト**&#x200B;など）を切り替える * |
+| **編集**&#x200B;モード | `Ctrl-z` | [最後におこなった変更操作を取り消す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
+|  | `Ctrl-y` | [最後におこなった変更操作をやり直す](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
+|  | `Ctrl-Click` | 複数の段落を選択する |
+|  | `Ctrl-c` | 選択した段落をコピーする |
+|  | `Ctrl-x` | 選択した段落をカットする（カットされた段落は、貼り付けられるまで UI に保存されています） |
+|  | `Ctrl-v` | 以前にカットまたはコピーした段落を貼り付ける |
+|  | `Ctrl-Backspace` | 選択した段落を削除する |
 | **編集**&#x200B;モード - リッチテキストエディター | `Ctrl-b` | 太字 |
 |  | `Ctrl-I` | 斜体 |
 |  | `Ctrl-u` | 下線 |
 
 >[!NOTE]
 >
->Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. ショートカットをもう一度使用できるようにするには、エディターバーの上部をクリックするか、編集モードに戻る必要があります。
+>ユーザーがプレビューモードでページの操作を開始すると、`Ctrl-Shift-m` ショートカットは使用できなくなります。ショートカットをもう一度使用できるようにするには、エディターバーの上部をクリックするか、編集モードに戻る必要があります。
 
 [コンソール](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)の使用時には、デスクトップユーザー向けの様々なキーボードショートカットも利用できます。
 
@@ -43,7 +43,7 @@ AEM 全体で様々なキーボードショートカットを利用できます�
 
 ## OS 特有の修飾子キー {#os-specific-modifier-keys}
 
-キーボードショートカットに使用する修飾キーは、クライアントが使用するオペレーティングシステムによって異なります。
+キーボードショートカットに使用される修飾子キーは、クライアントが使用するオペレーティングシステムによって異なります。
 
 | Windows および Linux | macOS |
 |---|---|
