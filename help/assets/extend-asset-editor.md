@@ -1,8 +1,8 @@
 ---
-title: アセットエディタの拡張
-description: カスタムコンポーネントを使用してアセットエディターの機能を拡張する方法について説明します。
+title: アセットエディターの拡張
+description: カスタムコンポーネントを使用したアセットエディターの機能の拡張方法について説明します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 ---
@@ -12,62 +12,62 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 アセットエディターは、アセット共有を使用して見つけたアセットをクリックすると開くページです。アセットエディターでは、メタデータ、サムネール、タイトルおよびタグなどのアセットの特性を編集できます。
 
-Configuration of the editor using the predefined editing components is covered in [Creating and Configuring an Asset Editor Page](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-finder-editor.html).
+事前設定済みの編集コンポーネントを使用してエディターを設定する方法については、[アセットエディターページの作成および設定](https://helpx.adobe.com/jp/experience-manager/6-5/assets/using/assets-finder-editor.html)を参照してください。
 
-Adobe Enterprise Manager（AEM）開発者は、既存のエディターコンポーネントを使用するだけでなく、独自のコンポーネントを作成することもできます。
+Adobe Experience Manager（AEM）開発者は、既存のエディターコンポーネントを使用するだけでなく、独自のコンポーネントを作成することもできます。
 
-## アセットエディターテンプレートの作成 {#creating-an-asset-editor-template}
+## アセットエディターテンプレートの作成{#creating-an-asset-editor-template}
 
-geometrixx には次のサンプルページがあります。
+geometrixx には次のサンプルページが含まれています。
 
-* Geometrixxサンプルページ： `/content/geometrixx/en/press/asseteditor.html`
-* サンプルテンプレート： `/apps/geometrixx/templates/asseteditor`
-* サンプルページコンポーネント： `/apps/geometrixx/components/asseteditor`
+* Geometrixx サンプルページ：`/content/geometrixx/en/press/asseteditor.html`
+* サンプルテンプレート：`/apps/geometrixx/templates/asseteditor`
+* サンプルページコンポーネント：`/apps/geometrixx/components/asseteditor`
 
 ### clientlib の設定 {#configuring-clientlib}
 
-AEM Assets コンポーネントでは、WCM 編集 clientlib の拡張が使用されます。clientlib は通常、`init.jsp` に読み込まれます。
+AEM Assets コンポーネントでは、WCM 編集クライアントライブラリの拡張機能が使用されています。クライアントライブラリは通常、`init.jsp` で読み込まれます。
 
-デフォルトの（コアの `init.jsp` での）clientlib の読み込みとは異なり、AEM Assets テンプレートには以下が必要な条件となります。
+（コアの `init.jsp` での）デフォルトクライアントライブラリの読み込みとは異なり、AEM Assets テンプレートは次の条件を満たす必要があります。
 
-* The template must include the `cq.dam.edit` clientlib (instead of `cq.wcm.edit`).
+* テンプレートでは、（`cq.wcm.edit` ではなく）`cq.dam.edit` クライアントライブラリを組み込む必要があります。
 
-* clientlib は無効な WCM モード（例えば、「**公開**」での読み込み）でも、述語、アクション、レンズをレンダリングするために含める必要があります。
+* 無効な WCM モード（例：**パブリッシュ**&#x200B;への読み込み）でも、述語、アクション、レンズをレンダリングできるように、このクライアントライブラリを組み込む必要があります。
 
-In most cases, copying the existing sample `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) should meet these needs.
+通常は、既存のサンプル `init.jsp`（`/apps/geometrixx/components/asseteditor/init.jsp`）をコピーすればこの要件を満たします。
 
 ### JS アクションの設定 {#configuring-js-actions}
 
-Some of the AEM Assets components require JS functions defined in `component.js`. このファイルをコンポーネントディレクトリにコピーしてリンクします。
+一部の AEM Assets コンポーネントでは `component.js` で定義されている JS 関数が必要です。このファイルをコンポーネントディレクトリにコピーしてリンクします。
 
 ```xml
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-The sample loads this javascript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+このサンプルでは、この JavaScript ソースを `head.jsp`（`/apps/geometrixx/components/asseteditor/head.jsp`）で読み込んでいます。
 
 ### 追加のスタイルシート {#additional-style-sheets}
 
-一部のAEM AssetsコンポーネントはAEMウィジェットライブラリを使用します。 コンテンツコンテキストで正常にレンダリングするには、追加のスタイルシートを読み込む必要があります。タグアクションコンポーネントでは、さらにもう 1 つのスタイルシートが必要です。
+一部の AEM Assets コンポーネントでは、AEM ウィジェットライブラリを使用します。コンテンツコンテキストで正常にレンダリングするには、追加のスタイルシートを読み込む必要があります。タグアクションコンポーネントでは、さらにもう 1 つのスタイルシートが必要です。
 
 ```xml
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx スタイルシート {#geometrixx-style-sheet}
+### Geometrixx スタイルシート{#geometrixx-style-sheet}
 
-The sample page components require that all selectors start with `.asseteditor` of `static.css` (`/etc/designs/geometrixx/static.css`). Best practice: Copy all `.asseteditor` selectors to your style sheet and adjust the rules as desired.
+サンプルページコンポーネントでは、すべてのセレクターが `static.css`（`/etc/designs/geometrixx/static.css`）の `.asseteditor` で始まっている必要があります。ベストプラクティス：すべての `.asseteditor` セレクターをスタイルシートにコピーし、ルールを必要に応じて調整します。
 
-### FormChooser：最終的に読み込まれるリソースの適用 {#formchooser-adjustments-for-eventually-loaded-resources}
+### FormChooser：最終的に読み込まれるリソースの調整 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 アセットエディターは Form Chooser を使用しています。これにより、フォームセレクターとフォームのパスをアセットの URL に追加するだけで、同じフォームページでリソース（ここではアセット）を編集できるようになります。
 
 次に例を示します。
 
-* プレーンフォームページ：[http://localhost:4502/content/geometrixx/jp/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* フォームページに読み込まれるアセット：[](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/jp/press/asseteditor.html
+* プレーンフォームページ：[http://localhost:4502/content/geometrixx/jp/press/asseteditor.html](http://localhost:4502/content/geometrixx/jp/press/asseteditor.html)
+* フォームページに読み込まれるアセット：[](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/jp/press/asseteditor.html)http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/jp/press/asseteditor.html
 
-The sample handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) do the following:
+`head.jsp`（`/apps/geometrixx/components/asseteditor/head.jsp`）のサンプルハンドルは、次の処理をおこないます。
 
 * アセットが読み込まれるか、またはプレーンフォームが表示される必要があるかを検出します。
 * アセットが読み込まれると、parsys はプレーンフォームページでしか編集できないので、WCM モードを無効にします。
@@ -117,12 +117,12 @@ HTML 部分で、先頭のタイトルセット（アセットまたはページ
 <title><%= title %></title>
 ```
 
-## シンプルなフォームフィールドコンポーネントの作成 {#creating-a-simple-form-field-component}
+## シンプルなフォームフィールドコンポーネントの作成{#creating-a-simple-form-field-component}
 
 この例では、読み込んだアセットのメタデータを表示するコンポーネントを作成する方法を説明します。
 
-1. Create a component folder in your projects directory, for example, `/apps/geometrixx/components/samplemeta`.
-1. 次のスニ `content.xml` ペットを使用して追加します。
+1. プロジェクトディレクトリにコンポーネントフォルダー（`/apps/geometrixx/components/samplemeta` など）を作成します。
+1. 次のスニペットを使用して `content.xml` を追加します。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -134,7 +134,7 @@ HTML 部分で、先頭のタイトルセット（アセットまたはページ
        componentGroup="Asset Editor"/>
    ```
 
-1. 次のスニ `samplemeta.jsp` ペットを使用して追加します。
+1. 次のスニペットを使用して `samplemeta.jsp` を追加します。
 
    ```xml
    <%--
@@ -192,25 +192,25 @@ HTML 部分で、先頭のタイトルセット（アセットまたはページ
    </div>
    ```
 
-1. コンポーネントを使用できるようにするには、それを編集可能にする必要があります。To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. 段落を削除できるよう、値を複数設定できるプロパティ `cq:actions` を追加し、値として `DELETE` のみを設定します。
+1. コンポーネントを使用できるようにするには、コンポーネントを編集可能にする必要があります。コンポーネントを編集可能にするには、CRXDE Lite で、`cq:EditConfig` プライマリ型の `cq:editConfig` ノードを追加します。段落を削除できるよう、値を複数設定できるプロパティ `cq:actions` を追加し、値として `DELETE` のみを設定します。
 
 1. ブラウザーを開き、サンプルページ（`asseteditor.html` など）でデザインモードに切り替え、段落システム用の新しいコンポーネントを有効にします。
 
 1. **編集**&#x200B;モードで、新しいコンポーネント（**Sample Metadata** など）がサイドキック（**アセットエディター**&#x200B;グループ内）で使用できます。コンポーネントを挿入します。メタデータを格納できるようにするには、メタデータフォームに追加する必要があります。
 
-## メタデータオプションの変更 {#modifying-metadata-options}
+## メタデータオプションの変更{#modifying-metadata-options}
 
-[メタデータフォーム](https://helpx.adobe.com/experience-manager/6-5/assets/using/assets-finder-editor.html)で利用可能な名前空間を変更できます。
+[メタデータフォーム](https://helpx.adobe.com/jp/experience-manager/6-5/assets/using/assets-finder-editor.html)で利用可能な名前空間を変更できます。
 
-Currently available metadata are defined in `/libs/dam/options/metadata`:
+現在使用可能なメタデータは `/libs/dam/options/metadata` で定義されています。
 
 * このディレクトリの最初のレベルには名前空間が保存されています。
 * 各名前空間内のアイテムは、ローカルパーツアイテムの結果などのメタデータを表します。
 * メタデータの内容には、タイプと複数値の各オプションが含まれています。
 
-The options can be overwritten in `/apps/dam/options/metadata`:
+これらのオプションは `/apps/dam/options/metadata` で上書きできます。
 
-1. Copy the directory from `/libs` to `/apps`.
+1. `/libs` 配下のディレクトリを `/apps` の下にコピーします。
 
 1. アイテムを削除、変更、または追加します。
 
