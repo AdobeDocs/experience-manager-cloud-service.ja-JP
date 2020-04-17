@@ -1,7 +1,7 @@
 ---
 title: スピンセット
-description: ダイナミックメディアでスピンセットを操作する方法を説明します。
-translation-type: tm+mt
+description: Dynamic Media でのスピンセットの操作方法について説明します。
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 スピンセットは、360 度の閲覧エクスペリエンスをシミュレートします。Dynamic Media は、ビューアがアイテムを回転できる単一軸のスピンセットを提供します。さらに、ユーザーは「自由形式」のズームを実行し、マウスを数回クリックするだけで任意のビューをパンできます。このようにして、ユーザーは特定の視点からより詳しくアイテムを調べることができます。
 
-Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In addition, if the Spin Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+スピンセットのバナーには、「**[!UICONTROL SPINSET]**」と表示されます。また、スピンセットが公開されている場合、公開日が&#x200B;**[!UICONTROL 地球]**&#x200B;アイコン付きでバナーに表示され、最終変更日も&#x200B;**[!UICONTROL 鉛筆]**&#x200B;アイコン付きで表示されます。
 
 ![chlimage_1-](assets/chlimage_1-380.png)
 
@@ -21,55 +21,55 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：スピンセット {#quick-start-spin-sets}
+## クイックスタート：スピンセット{#quick-start-spin-sets}
 
 スピンセットをすぐに使い始めるには、次の手順を実行します。
 
 1. [複数ビュー用の画像をアップロードします。](#uploading-assets-for-spin-sets)
 
-   1次元スピンセットには少なくとも8 ～ 12枚の写真が必要で、2次元スピンセットには16 ～ 24枚の写真が必要です。アイテムが回転して反転しているように見せるには、一定の間隔でアイテムを撮影する必要があります。例えば、1次元スピンセットに12枚の写真が含まれる場合、アイテムを30°(360°/12)単位で回転させます。
+   アイテムの写真は最低でも、1 次元スピンセットで 8～12 個、2 次元スピンセットで 16～24 個必要になります。アイテムが回転および反転している印象を与えるためには、写真を一定の間隔で撮影する必要があります。例えば、1 次元スピンセットに 12 個の写真を含める場合、写真を撮影するごとに 30 度ずつ（360/12）アイテムを回転します。
 
 1. [スピンセットを作成します。](#creating-spin-sets)
 
-   To create a Spin Set, select **[!UICONTROL Create > Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
+   スピンセットを作成するには、**[!UICONTROL 作成／スピンセット]**&#x200B;を選択し、セットの名前を付け、アセットを選択し、画像の表示順を選択します。
 
    [セレクターの操作](/help/assets/dynamic-media/working-with-selectors.md)を参照してください。
 
    >[!NOTE]
    >
-   >[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用してスピンセットを自動的に作成することもできます。**** 重要：バッチセットは、アセットの取り込みの一部としてIPS(Image Production System)によって作成されます。
+   >[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用してスピンセットを自動的に作成することもできます。**重要：**&#x200B;バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
 1. 必要に応じて[スピンセットビューアプリセット](/help/assets/dynamic-media/managing-viewer-presets.md)を設定します。
 
-   管理者は、スピンセットビューアプリセットを作成または編集できます。To see your spin set with a viewer preset, select the spin set, and in the left-rail drop-down menu, select **Viewers**.
+   管理者は、スピンセットビューアプリセットを作成または編集できます。スピンセットを特定のビューアプリセットで表示するには、スピンセットを選択し、左側のレールのドロップダウンメニューで「**ビューア**」を選択します。
 
-   See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
+   **[!UICONTROL ツール／アセット／ビューアプリセット]**&#x200B;を選択して、ビューアプリセットを作成または編集します。
 
-   See [Adding and editing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
+   詳しくは、[ビューアプリセットの追加と編集](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 
-   バッチセットプリセットを使用して作成したセットを表示したり、それらのセットにアクセスしたりするには、3 つの方法があります(Sets created using batch set presets, do *not* appear in the user interface.)
+   バッチセットプリセットを使用して作成したセットを表示したり、それらのセットにアクセスしたりするには、3 つの方法があります（バッチセットプリセットを使用して作成したセットは、ユーザーインターフェイスに表示&#x200B;*されません*）。
 
 1. [スピンセットをプレビューします。](/help/assets/dynamic-media/previewing-assets.md)
 
-   スピンセットを選択すると、プレビューできます。スピンセットを回転します。You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
+   スピンセットを選択すると、プレビューできます。スピンセットを回転します。**[!UICONTROL ビューア]**&#x200B;メニューから様々なビューアを選択できます。このメニューは左側のレールのドロップダウンメニューにあります。
 
 1. [スピンセットを公開します。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
-   スピンセットを公開すると、URL と埋め込み文字列がアクティベートされます。In addition, you must [publish the viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md).
+   スピンセットを公開すると、URL と埋め込み文字列がアクティベートされます。また、[ビューアプリセットを公開](/help/assets/dynamic-media/managing-viewer-presets.md)する必要があります。
 
 1. [URL を Web アプリケーションにリンクする](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)か、[ビデオビューアまたは画像ビューアを埋め込みます](/help/assets/dynamic-media/embed-code.md)。
 
    スピンセットの URL コールが作成され、スピンセットの公開後にそれらの URL コールがアクティベートされます。アセットをプレビューする際に、これらの URL をコピーできます。または、URL を Web サイトに埋め込むこともできます。
 
-   Select the Spin Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   スピンセットを選択し、左側のレールのドロップダウンメニューで「**[!UICONTROL ビューア]**」を選択します。
 
-   See [Linking a Spin Set to a web page](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/dynamic-media/embed-code.md).
+   詳しくは、[Web ページへのスピンセットのリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)と[ビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
-If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/manage-digital-assets.md#editing-properties).
+必要に応じて、[スピンセットを編集](#editing-spin-sets)できます。また、[スピンセットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)の表示と変更もできます。
 
 ## スピンセット用のアセットのアップロード {#uploading-assets-for-spin-sets}
 
-1次元スピンセットには少なくとも8 ～ 12枚の写真が必要で、2次元スピンセットには16 ～ 24枚の写真が必要です。アイテムが回転して反転しているように見せるには、一定の間隔でアイテムを撮影する必要があります。例えば、1次元スピンセットに12枚の写真が含まれる場合、アイテムを30°(360°/12)単位で回転させます。
+アイテムの写真は最低でも、1 次元スピンセットで 8～12 個、2 次元スピンセットで 16～24 個必要になります。アイテムが回転および反転している印象を与えるためには、写真を一定の間隔で撮影する必要があります。例えば、1 次元スピンセットに 12 個の写真を含める場合、写真を撮影するごとに 30 度ずつ（360/12）アイテムを回転します。
 
 スピンセット用の画像のアップロードは、[AEM Assets での他のアセットのアップロード](/help/assets/manage-digital-assets.md)と同様に実行できます。
 
@@ -77,21 +77,21 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
 ここでは、スピンセット画像に関するベストプラクティスを説明します。一般に、スピンセット内の画像が多いほど、画像のスピン効果が向上します。ただし、セット内に多くの画像を追加すると、画像の読み込みにかかる時間も長くなります。AEM では、スピンセットで使用する画像の撮影について、次のガイドラインに従うことを推奨します。
 
-* 1次元スピンセットでは少なくとも8 ～ 12枚の画像を使用し、2次元スピンセットでは16 ～ 24枚の画像を使用します。360度回転するには、最低8枚の画像が必要です。2次元スピンセットの作成には労力が必要なので、1次元スピンセットの方が一般的です。
+* 最低でも、1 次元スピンセットで 8～12 個、2 次元スピンセットで 16～24 個の画像を使用するようにします。360 度回転できるようにするには、最小で 8 個の画像が必要になります。2 次元スピンセットの作成には多大な労力がかかるので、1 次元スピンセットのほうが一般的です。
 * 可逆圧縮形式を使用します。TIFF および PNG が推奨されます。
 * 真っ白または他の高コントラストの背景上にアイテムが表示されるように、すべての画像をマスクします。オプションで、シャドウを追加します。
 * 製品の細部に十分に光を当て、ピントを合わせるようにします。
 * ファッション衣料の場合は、マネキンやモデルに着せてスピン画像を撮影します。多くの場合、ガラス製のマネキンを使用してマネキンを完全にマスクするか、画像内に定型化されたマネキンを表示します。角度を定義することで、モデルによるスピンセットを作成できます。床にテープを貼って角度をマークし、モデルが撮影ごとに動いて向きを変えるための手助けをします。
 
-## スピンセットの作成 {#creating-spin-sets}
+## スピンセットの作成{#creating-spin-sets}
 
 ここでは、スピンセットを作成する方法について説明します。
 
 >[!NOTE]
 >
->[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md)を使用してスピンセットを自動的に作成することもできます。**** 重要：バッチセットは、アセットの取り込みの一部としてIPS(Image Production System)によって作成されます。
+>[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md)を使用してスピンセットを自動的に作成することもできます。**重要：**&#x200B;バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 >
->See &quot;Creating batch set presets to auto-generate Image Sets and Spin Sets&quot; in [Configuring Dynamic Media](/help/assets/dynamic-media/config-dm.md).
+>[Dynamic Media の設定](/help/assets/dynamic-media/config-dm.md)の「画像セットおよびスピンセットを自動生成するためのバッチセットプリセットの作成」を参照してください。
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
 **スピンセットを作成するには**
 
-1. In Assets, navigate to where you want to create a spin set, click **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. アセットを格納しているフォルダー内からセットを作成することもできます。スピンセットエディターが表示されます。
+1. アセットで、スピンセットを作成する場所に移動し、「**[!UICONTROL 作成]**」をクリックし、「**[!UICONTROL スピンセット]**」を選択します。アセットを格納しているフォルダー内からセットを作成することもできます。スピンセットエディターが表示されます。
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -109,7 +109,7 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
    >[!NOTE]
    >
-   >スピンセットを作成するときに、スピンセットのサムネールを変更したり、AEM でスピンセット内のアセットに基づいてサムネールを自動的に選択したりすることができます。To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   >スピンセットを作成するときに、スピンセットのサムネールを変更したり、AEM でスピンセット内のアセットに基づいてサムネールを自動的に選択したりすることができます。サムネールを選択するには、「**[!UICONTROL サムネールを変更]**」をクリックし、画像を選択します（他のフォルダーに移動して画像を探すこともできます）。サムネールを選択した状態で、スピンセットからサムネールを自動的に生成する場合は、「**[!UICONTROL 自動サムネールに切り替え]**」を選択します。
 
 1. 次のいずれかの操作をおこないます。
 
@@ -118,7 +118,7 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
    * スピンセットエディターページの中央付近にある「**[!UICONTROL タップしてアセットセレクターを開く]**」をタップします。
    スピンセットに含めるアセットをタップして選択しします。選択済みのアセットにはチェックマークアイコンが付いています。作業が完了したら、ページの右上隅付近にある「**[!UICONTROL 選択]**」をタップします。
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return**. フィルターを適用して、検索結果を絞り込むこともできます。パス、コレクション、ファイルタイプおよびタグでフィルタリングできます。Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. 表示アイコンをタップし、**[!UICONTROL 列表示]**、**[!UICONTROL カード表示]**、**[!UICONTROL リスト表示]**&#x200B;のいずれかを選択してビューを変更します。
+   アセットセレクターでは、キーワードを入力して **Enter** キーをタップすることで、アセットを検索することができます。フィルターを適用して、検索結果を絞り込むこともできます。パス、コレクション、ファイルタイプおよびタグでフィルタリングできます。フィルターを選択してから、ツールバーの&#x200B;**[!UICONTROL フィルター]**&#x200B;アイコンをタップします。表示アイコンをタップし、**[!UICONTROL 列表示]**、**[!UICONTROL カード表示]**、**[!UICONTROL リスト表示]**&#x200B;のいずれかを選択してビューを変更します。
 
    [セレクターの操作](/help/assets/dynamic-media/working-with-selectors.md)を参照してください。
 
@@ -140,13 +140,13 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成したスピンセットが、作成先のフォルダーに表示されます。
 
-## スピンセットの表示 {#viewing-spin-sets}
+## スピンセットの表示{#viewing-spin-sets}
 
-スピンセットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md)を使用して自動的に作成することもできます。However, sets created using batch set presets, do *not* appear in the user interface. バッチセットプリセットを使用して作成されたセットには、3つの方法でアクセスできます。 （これらの方法は、スピンセットをユーザーインターフェイスで作成した場合も使用できます）。
+スピンセットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md)を使用して自動的に作成することもできます。ただし、バッチセットプリセットを使用して作成したセットは、ユーザーインターフェイスに表示&#x200B;*されません*。バッチセットプリセットを使用して作成したセットには、3 つの方法でアクセスできます（これらの方法は、スピンセットをユーザーインターフェイスで作成した場合も使用できます）。
 
 >[!NOTE]
 >
->You can also view sets by way of the user interface as described in [Editing Spin Sets](#editing-spin-sets).
+>[スピンセットの編集](#editing-spin-sets)の説明に従って、ユーザーインターフェイスを使用してセットを表示することもできます。
 
 **スピンセットを表示するには**
 
@@ -154,13 +154,13 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
-1. 任意のセットのメンバー画像で、Select the **[!UICONTROL Sets]** menu to display the sets that the asset is a member of.
+1. 任意のセットのメンバー画像で、**[!UICONTROL セット]**&#x200B;メニューを選択して、アセットがメンバーとして含まれているセットを表示します。
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
 1. 検索で、「**[!UICONTROL フィルター]**」を選択し、「**[!UICONTROL Dynamic Media]**」を展開して「**[!UICONTROL セット]**」を選択します。
 
-   検索結果として、ユーザーインターフェイスで手動で作成した一致するセットか、バッチセットプリセットを使用して自動的に作成した一致するセットが返されます。For automated sets, the search query is conducted using `Starts with` search criteria which is different from AEM search which is based on using `Contains` search criteria. Setting the filter to **[!UICONTROL Sets]** is the only way to search automated sets.
+   検索結果として、UI で手動で作成した一致するセットか、バッチセットプリセットを使用して自動的に作成した一致するセットが返されます。自動セットの場合、検索クエリは、AEM での検索とは異なる「`Starts with`」検索条件を使用して実行されます。AEM での検索は、「`Contains`」検索条件に基づいて実行されます。フィルターを「**[!UICONTROL セット]**」に設定するのが、自動セットを検索する唯一の方法です。
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -187,8 +187,8 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
    * 画像を並べ替えるには、画像を新しい位置までドラッグします（並べ替えアイコンを選択して項目を移動します）。
    * 項目を昇順または降順に並べ替えるには、列の見出しをクリックします。
-   * To add an asset or update an existing asset, click **[!UICONTROL Add Asset]**. アセットに移動して選択し、右上隅の「]**選択**[!UICONTROL 」をタップします。AEMがサムネールに使用する画像を削除し、別の画像に置き換えても、元のアセットは表示されたままになります。
-   * To delete an asset, select it and click or tap **[!UICONTROL Delete Asset]**.
+   * アセットを追加するか既存のアセットを更新するには、「**[!UICONTROL アセットを追加]**」をクリックします。アセットに移動して選択し、右上隅の「]**選択**[!UICONTROL 」をタップします。AEM でサムネール用に使用されている画像を別の画像に置き換えて削除しても、元のアセットは表示されたままになります。
+   * アセットを削除するには、アセットを選択して、「**[!UICONTROL アセットを削除]**」をクリックまたはタップします。
    * プリセットを適用するには、「プリセット」アイコンをタップまたはクリックし、プリセットを選択します。
    * スピンセット全体を削除するには、スピンセットに移動して選択し、「**[!UICONTROL 削除]**」を選択します
    >[!NOTE]
@@ -197,10 +197,10 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). In addition, you c
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をクリックします。
 
-## スピンセットのプレビュー {#previewing-spin-sets}
+## スピンセットのプレビュー{#previewing-spin-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## スピンセットの公開 {#publishing-spin-sets}
+## スピンセットの公開{#publishing-spin-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
