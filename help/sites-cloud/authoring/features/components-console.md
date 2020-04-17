@@ -1,7 +1,7 @@
 ---
 title: コンポーネントコンソール
-description: コンポーネントコンソールを使用すると、インスタンスに対して定義されたすべてのコンポーネントを参照できます
-translation-type: tm+mt
+description: コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照できます。
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -9,15 +9,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 # コンポーネントコンソール {#components-console}
 
-コンポーネントコンソールでは、インスタンスに対して定義されたすべてのコンポーネントを参照し、各コンポーネントの主要な情報を表示できます。
+コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照し、各コンポーネントの主な情報を確認できます。
 
-It can be accessed from **Tools ->** **General ->** **Components**. コンポーネントにはツリー構造がないので、リストビューのみを使用できます。
+**ツール**／**一般**／**コンポーネント**&#x200B;からアクセスできます。コンポーネントのツリー構造がないので、リスト表示のみ使用できます。
 
 ![コンポーネントコンソール](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->コンポーネントコンソールには、システム内のすべてのコンポーネントが表示されます。 The [Component Browser](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
+>コンポーネントコンソールには、システムのすべてのコンポーネントが表示されます。[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)には、作成者が使用できるコンポーネントが表示され、ピリオド（`.`）で始まるすべてのコンポーネントグループは非表示になります。
 
 ## 検索 {#search-field}
 
@@ -36,21 +36,21 @@ It can be accessed from **Tools ->** **General ->** **Components**. コンポー
    「プロパティ」タブでは、次のことができます。
 
    * コンポーネントの一般的なプロパティの表示。
-      * View how the icon or abbreviation has been defined for the component. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
+      * コンポーネントのアイコンまたは省略形の定義方法の表示。<!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * アイコンのソースをクリックすると、そのコンポーネントが表示されます。
    * コンポーネントの&#x200B;**リソースタイプ**&#x200B;および&#x200B;**リソースのスーパータイプ**（定義されている場合）の表示。
       * リソースのスーパータイプをクリックすると、そのコンポーネントが表示されます。
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >`/apps` は実行時には編集できないので、コンポーネントコンソールは読み取り専用です。
 
 * **ポリシー**
 
-   ![コンポーネントコンソールポリシー](/help/sites-cloud/authoring/assets/components-console-policies.png)
+   ![コンポーネントコンソールのポリシー](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **ライブ使用状況**
 
-   ![コンポーネントのライブ使用](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
+   ![コンポーネントのライブ使用状況](/help/sites-cloud/authoring/assets/components-console-live-usage.png)
 
    >[!CAUTION]
    >
@@ -58,6 +58,6 @@ It can be accessed from **Tools ->** **General ->** **Components**. コンポー
 
 * **ドキュメント**
 
-   開発者がコンポーネント用ドキュメントを提供している場合、「**ドキュメント**」タブに表示されます。If there is no documentation available, the **Documentation** tab will not be shown. <!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
+   開発者がコンポーネント用ドキュメントを提供している場合、「**ドキュメント**」タブに表示されます。利用できるドキュメントがない場合は、「**ドキュメント**」タブは表示されません。<!-- If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.-->
 
-   ![コンポーネントドキュメント](/help/sites-cloud/authoring/assets/components-console-documentation.png)
+   ![コンポーネントのドキュメント](/help/sites-cloud/authoring/assets/components-console-documentation.png)
