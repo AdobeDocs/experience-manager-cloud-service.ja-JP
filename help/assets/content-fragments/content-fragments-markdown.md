@@ -1,7 +1,7 @@
 ---
 title: Markdown
 description: オーサリング中に、コンテンツフラグメントエディターは Markdown 構文を使用してユーザーがコンテンツを簡単に記述できるようにします。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -9,9 +9,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 # Markdown{#markdown}
 
-When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
+[オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)中に、コンテンツフラグメントエディターは *Markdown* 構文を使用してユーザーがコンテンツを簡単に記述できるようにします。
 
-![MarkDown Editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![Markdown エディター](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 次を定義できます。
 
@@ -47,7 +47,7 @@ When you are [authoring](/help/assets/content-fragments/content-fragments-variat
 
 ## 段落と改行 {#paragraphs-and-line-breaks}
 
-段落とは、1 つ以上の空白行によって区切られている、1 つ以上の連続したテキスト行です。空白行とは、スペースまたはタブしか含まれていない行です。通常の段落は、スペースやタブでインデントしないでください。
+段落とは、1 つ以上の空白行によって区切られている、1 つ以上の連続したテキスト行です。空白行とは、スペースまたはタブしか含まれていない行です。通常の段落はスペースまたはタブでインデントされません。
 
 改行するには、行の末尾に 2 つ以上のスペースを付けてからリターンします。
 
@@ -55,7 +55,7 @@ When you are [authoring](/help/assets/content-fragments/content-fragments-variat
 
 インラインリンクと参照リンクを作成できます。
 
-In both styles, the link text is delimited by square brackets `[]`.
+どちらのスタイルでも、リンクテキストはブラケット `[]` で囲みます。
 
 インラインリンクの例を次に示します。
 
@@ -87,15 +87,15 @@ In both styles, the link text is delimited by square brackets `[]`.
 
 構文の内容は次のとおりです。
 
-* 感嘆符：!;
-* 続いて角括弧が続き、画像のalt属性テキストが含まれます。
-* 括弧の後に続き、画像のURLまたはパス、および二重引用符または一重引用符で囲まれたオプションのtitle属性が含まれます。
+* 感嘆符：! 。
+* 1 組のブラケットが後に続き、その中に画像の alt 属性テキストが含まれています。
+* 1 組の丸括弧が後に続き、その中に画像の URL またはパスが含まれています。さらに、title 属性を二重引用符または一重引用符で囲んで指定することもできます。
 
 参照スタイルの画像の構文は次のとおりです。
 
     `![Alt text][id]`
 
-ここで「id」は、定義された画像参照の名前です。 画像参照は、次のようにリンク参照と同じ構文を使用して定義されます。
+「id」は、定義された画像参照の名前です。画像参照は、次のようにリンク参照と同じ構文を使用して定義されます。
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -125,7 +125,7 @@ In both styles, the link text is delimited by square brackets `[]`.
 
 順序付きと順序なし両方のリストを作成できます。
 
-順不同リストを作成するには、&amp;ast；を使用します。記号を追加します。 次に例を示します。
+順序なしリストを作成するには、&amp;ast; 記号をリストの項目の前に付けます。次に例を示します。
 
     `* item in list`
 
@@ -177,7 +177,7 @@ In both styles, the link text is delimited by square brackets `[]`.
 
 ## バックスラッシュエスケープ {#backslash-escapes}
 
-書式設定構文で特殊な意味を持つリテラル文字を表示するには、バックスラッシュエスケープを使用します。例えば、単語をリテラルアスタリスクで囲む場合（HTML &lt;em>タグの代わりに）、次のようにアスタリスクの前に円記号を使用できます。
+書式設定構文で特殊な意味を持つリテラル文字を表示するには、バックスラッシュエスケープを使用します。例えば、ある単語を（HTML の &lt;em> タグではなく）リテラルアスタリスクで囲みたい場合は、次のようにアスタリスクの前にバックスラッシュを使用します。
 
     `\\*literal asterisks\\*`
 
