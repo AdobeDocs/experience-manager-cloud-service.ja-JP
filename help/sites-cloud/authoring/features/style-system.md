@@ -1,7 +1,7 @@
 ---
 title: スタイルシステム
 description: スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
@@ -13,13 +13,13 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 このため、スタイルごとにカスタムコンポーネントを開発したり、スタイル機能を有効化するためにコンポーネントのダイアログをカスタマイズする必要がなくなりました。これにより、AEM のバックエンド開発をしなくてもそのまま再利用可能な、コンテンツ作成者のニーズにすばやく簡単に応えることができるコンポーネントの数が増加します。
 
-## 使用例 {#use-case}
+## 使用例{#use-case}
 
 テンプレート作成者には、コンテンツ作成者がコンポーネントを操作するときの動作を設定する能力だけでなく、1 つのコンポーネントに複数の別の視覚的バリエーションを設定するための能力も必要です。
 
 同様に、コンテンツ作成者には、コンテンツを構築して調整する能力だけでなく、コンテンツの視覚的な表示方法を選択する能力も必要です。
 
-スタイルシステムでは、テンプレート作成者とコンテンツ作成者の双方の要件に対応する統一ソリューションを提供します。
+スタイルシステムでは、テンプレート作成者とコンテンツ作成者の両方の要件に対応する統一ソリューションを提供します。
 
 * テンプレート作成者は、コンポーネントのコンテンツポリシーのスタイルクラスを定義できます。
 * 次にコンテンツ作成者は、ページでのコンポーネント編集時にドロップダウンからこれらのクラスを選択し、対応するスタイルを適用できます。
@@ -32,10 +32,10 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. Web デザイナーは 1 つのコンポーネントに対し様々な視覚的バリエーションを作成します。
 1. HTML 開発者にはコンポーネントの HTML 出力と、実装する必要な視覚的バリエーションが提供されます。
-1. HTML開発者は、各視覚的なバリエーションに対応し、コンポーネントをラップする要素に挿入されるCSSクラスを定義します。
-1. HTML開発者は、各ビジュアルバリエーションに対応するCSSコード（およびオプションでJSコード）を、定義どおりに表示されるように実装します。
+1. HTML 開発者は各視覚的バリエーションに対応する CSS クラスを定義します。その CSS クラスが、コンポーネントをラップする要素に挿入されます。
+1. HTML 開発者は視覚的バリエーションごとに対応する CSS コードを（オプションで JS コードも）実装し、それらは定義済みとなります。
 1. AEM 開発者は、提供された CSS を（オプションで JS も）クライアントライブラリに配置し、デプロイします。<!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
-1. AEM開発者またはテンプレート作成者は、ページテンプレートを設定し、各スタイルコンポーネントのポリシーを編集し、定義されたCSSクラスを追加し、各スタイルにわかりやすい名前を付け、結合できるスタイルを示します。
+1. AEM 開発者またはテンプレート作成者は、ページテンプレートを設定し、スタイル設定された各コンポーネントのポリシーを編集します。また、定義済みの CSS クラスを追加し、スタイルごとにわかりやすい名前を付け、組み合わせが可能なスタイルを示します。
 1. 次に AEM ページ作成者は、ページエディターでコンポーネントのツールバーのスタイルメニューからデザイン済みのスタイルを選択できます。
 
 最後の 3 つの手順のみが AEM で実際に実行されます。つまり、必要な CSS と Javascript のすべての開発は AEM なしでおこなうことができます。
@@ -48,7 +48,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ## 使用方法 {#use}
 
-機能を試してみるには、スタイルをコンポーネントに対して作成する必要があります。次の「コンテンツ作成者として [」と「テンプレート作成者として](#as-a-content-author)[](#as-a-template-author) 」では、コンポーネントに既にスタイルが設定されていると仮定して、スタイルシステムを使用するスタイルシステムの機能の使用方法について説明します。
+機能を試してみるには、スタイルをコンポーネントに対して作成する必要があります。この後の[コンテンツ作成者として](#as-a-content-author)と[テンプレート作成者として](#as-a-template-author)の節では、コンポーネントのスタイルが既に設定されていることを前提として、スタイルシステムの機能を使用する方法について説明します。
 
 スタイルシステムを独自のコンポーネントに使用する場合は、次の手順に従います。
 
@@ -56,30 +56,30 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. [テンプレート作成者として](#as-a-template-author)の節の説明に従って、コンテンツ作成者が使用できるようにする CSS クラスを設定します。
 1. この後、コンテンツ作成者は[コンテンツ作成者として](#as-a-content-author)の節の説明に従ってスタイルを使用できます。
 
-### コンテンツ作成者として {#as-a-content-author}
+### コンテンツ作成者として{#as-a-content-author}
 
-1. スタイルが設定されているコンポーネントを持つページを編集します。
-1. ここで示す例の **List** コンポーネントのように、スタイルが設定されたコンポーネントを選択します。
+1. スタイルが設定されているコンポーネントを含んだページを編集します。
+1. ここで例として示す&#x200B;**リスト**&#x200B;コンポーネントなど、スタイルが設定されたコンポーネントを選択します。
 
-   ![オーサリングスタイル](/help/sites-cloud/authoring/assets/style-system-author.png)
+   ![スタイルのオーサリング](/help/sites-cloud/authoring/assets/style-system-author.png)
 
 1. **リスト**&#x200B;コンポーネントのツールバーで「**スタイル**」ボタンをタップまたはクリックしてスタイルメニューを開き、コンポーネントの外観を変更します。
 
-   ![スタイルのオーサリング(](/help/sites-cloud/authoring/assets/style-system-author-select.png)
+   ![選択によるスタイルのオーサリング](/help/sites-cloud/authoring/assets/style-system-author-select.png)
 
    >[!NOTE]
    >
-   >In this example, the **Layout** styles (**Block** and **Grid**) are mutually exclusive, while the **Display** options (**Image** or **Date**) can be combined. これは、[テンプレート作成者としてテンプレートで設定可能](#as-a-template-author)です。
+   >この例では、**レイアウト**&#x200B;スタイル（**ブロック**&#x200B;と&#x200B;**グリッド**）が相互に排他的で、**表示**&#x200B;オプション（**画像**&#x200B;または&#x200B;**日付**）は組み合わせ可能です。これは、[テンプレート作成者としてテンプレートで設定可能](#as-a-template-author)です。
 
-### テンプレート作成者として {#as-a-template-author}
+### テンプレート作成者として{#as-a-template-author}
 
-1. スタイルを設定するコンテンツページを編集する際に、ページ情報/テンプレートの編集を使用して、ペ **ージのテンプレートを編集します**。
+1. スタイルを設定するコンテンツページを編集する際は、**ページ情報／テンプレートを編集**&#x200B;を使用して、ページのテンプレートを編集します。
 
    ![テンプレートの編集](/help/sites-cloud/authoring/assets/style-system-template.png)
 
-1. コンポーネントの「 **List** 」コンポーネントの「 **Policy** 」ボタンをタップまたはクリックして、スタイルを設定するコンポーネントのポリシーを編集します。
+1. スタイルを設定するコンポーネント（**リスト**&#x200B;コンポーネントなど）の「**ポリシー**」ボタンをタップまたはクリックして、そのコンポーネントのポリシーを編集します。
 
-   ![テンプレートコンポーネントポリシー](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
+   ![テンプレートコンポーネントのポリシー](/help/sites-cloud/authoring/assets/style-system-template-policy.png)
 
 1. プロパティの「スタイル」タブで、スタイルがどのように設定されているかを確認できます。
 
@@ -93,7 +93,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as Client Libraries in order to work. <!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>コンポーネントポリシーのスタイルプロパティとして設定されている CSS クラス（および必要な JavaScript）を動作可能にするには、クライアントライブラリとしてデプロイする必要があります。<!-- The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
 
 ## セットアップ {#setup}
 
@@ -103,18 +103,18 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >スタイルシステムを独自のカスタムコンポーネントで有効にする場合、またはコアコンポーネントのバージョン 1 を拡張して機能を使用する場合は、次の手順に従います。
 
-コンポーネントが AEM のスタイルシステムと連動し、デザインダイアログに「スタイル」タブが表示されるようにするには、コンポーネント開発者はコンポーネントに次の設定をおこなうことによって製品から「スタイル」タブを含める必要があります。
+コンポーネントが AEM のスタイルシステムと連動し、デザインダイアログに「スタイル」タブが表示されるようにするには、コンポーネント開発者はコンポーネントに次の設定をおこなうことによって、製品の「スタイル」タブを含める必要があります。
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが自動的に挿入されます。この他にコンポーネント自体でおこなう必要があることはありません。
 
-### 要素名を持つスタイル {#styles-with-element-names}
+### 要素名を持つスタイル{#styles-with-element-names}
 
 開発者は `cq:styleElements` 文字列配列プロパティを使用して、コンポーネントのスタイルに使用できる要素名のリストを設定することもできます。その後、テンプレート作成者はデザインダイアログのポリシーの「スタイル」タブで各スタイルに設定する要素名を選択することもできます。これにより、ラッパー要素の要素名が設定されます。
 
-This property is set on the `cq:Component` node. 次に例を示します。
+このプロパティは `cq:Component` ノードに設定されます。次に例を示します。
 
 * `/apps/wknd/components/content/contentfragment@cq:styleElements=[div,section,span]`
 
@@ -122,13 +122,13 @@ This property is set on the `cq:Component` node. 次に例を示します。
 >
 >組み合わせ可能なスタイルに要素名は定義しないでください。複数の要素名を定義した場合、優先順位は次のようになります。
 >
->1. HTLは、次のすべての要素よりも優先されます。 `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
+>1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
 >1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
->1. Finally, the component&#39;s `cq:htmlTag`/ `cq:tagName` will be considered as a fallback value.
+>1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
 >
 
 
 
 スタイル名を定義するこの機能は、レイアウトコンテナやコンテンツフラグメントコンポーネントなどの非常に一般的なコンポーネントに意味を追加できます。
 
-For instance it allows a Layout Container to be given semantics like `<main>`, `<aside>`, `<nav>`, etc.
+例えば、レイアウトコンテナに `<main>`、`<aside>`、`<nav>` のようなセマンティクスを指定できます。
