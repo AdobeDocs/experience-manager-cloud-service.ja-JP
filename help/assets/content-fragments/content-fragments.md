@@ -1,7 +1,7 @@
 ---
 title: コンテンツフラグメントの操作
 description: コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用がいかに可能になるか、学習します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 ---
@@ -29,10 +29,10 @@ Adobe Experience Manager（AEM）コンテンツフラグメントを使用す�
 >
 >以降のページは、[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)と合わせてお読みください。
 
-通信チャネルの数は年々増加しています。通常、チャネルは配信メカニズムを指します。次のいずれかを指します。
+通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
 
 * 物理チャネル（デスクトップ、モバイルなど）
-* 物理チャネルでの配信方法（デスクトップ用の「製品詳細ページ」や「製品カテゴリーページ」、モバイル用の「モバイル Web」や「モバイルアプリ」など）
+* 物理チャネルでの配信方法（デスクトップ用の「製品詳細ページ」や「製品カテゴリページ」、モバイル用の「モバイル Web」や「モバイルアプリ」など）
 
 しかしながら、すべてのチャネルでのまったく同じコンテンツの使用はお勧めしません。特定のチャネルに合わせてコンテンツを最適化する必要があります。
 
@@ -46,7 +46,7 @@ Adobe Experience Manager（AEM）コンテンツフラグメントを使用す�
 
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
 
-## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
+## コンテンツフラグメントとコンテンツサービス{#content-fragments-and-content-services}
 
 AEM コンテンツサービスは、Web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。
 
@@ -54,7 +54,7 @@ AEM コンテンツサービスにより、あらゆるクライアントで使�
 
 * 単一ページアプリケーション
 * ネイティブモバイルアプリケーション
-* aemの外部にある他のチャネルおよびタッチポイント
+* AEM の外部の他のチャネルおよびタッチポイント
 
 配信は JSON 形式でおこなわれます。
 
@@ -71,7 +71,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >
 エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
->詳細については、](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
+>詳細については、](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!NOTE]
 >
->AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、コンテンツフラグメント用の翻訳プロジェクトの作成を参照してください。
+>AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「コンテンツフラグメントの翻訳プロジェクトの作成」を参照してください。
 
 <!--
 >[!NOTE]
@@ -93,9 +93,11 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 コンテンツフラグメントは次のどちらかになります。
 
-* 単純なフラグメント 事前定義済みの構造がありません。テキストと画像のみが含まれています。これらは単純なフラグメントテンプレートに基づいています。
+* 単純なフラグメント。
+事前定義済みの構造がありません。テキストと画像のみが含まれています。これらは単純なフラグメントテンプレートに基づいています。
 
-* 構造化コンテンツが含まれるフラグメント作成されるフラグメントの構造を事前定義する[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)に基づいています。また、JSONエクスポーターを使用してContent Servicesを実現するためにも使用できます。
+* 構造化コンテンツが含まれるフラグメント。
+作成されるフラグメントの構造を事前定義する[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)に基づいています。JSON エクスポーターを使用したコンテンツサービスの実現にも使用できます。
 
 ## コンテンツタイプ {#content-type}
 
@@ -103,7 +105,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 * **アセット**&#x200B;として格納されます。
 
-   * コンテンツフラグメント（とバリエーション）は、**Assets** コンソールで作成および管理できます。
+   * コンテンツフラグメント（とバリエーション）は、**アセット**&#x200B;コンソールで作成および管理できます。
    * コンテンツフラグメントエディターでオーサリングおよび編集されます。
 
 * [コンテンツフラグメントコンポーネント（参照コンポーネント）を介してページエディター内で](/help/sites-cloud/authoring/fundamentals/content-fragments.md)使用されます。
@@ -125,14 +127,14 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 アセットとコンテンツフラグメントの組み合わせには、様々な使用法があります。どの方法にもそれぞれの利点があります。
 
-* **フラグメント** （混在メディアフラグメント）へのアセットの挿入
+* フラグメントに&#x200B;**アセットを挿入**（混在メディアフラグメント）
 
    * フラグメントの不可欠な構成要素です（[コンテンツフラグメントの構成要素](#constituent-parts-of-a-content-fragment)を参照してください）。
    * アセットの位置を定義します。
    * 詳しくは、フラグメントエディターでの[フラグメントへのアセットの挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)を参照してください。
    >[!NOTE]
    >
-   >コンテンツフラグメントに挿入されたビジュアルアセットは、前の段落に添付されます。 このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
+   >コンテンツフラグメント自体に挿入したビジュアルアセットは、前の段落に添付されます。このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
 
 * **関連コンテンツ**
 
@@ -159,7 +161,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * 単純なフラグメントの場合：
 
       * コンテンツは、1 つ以上の複数行テキストフィールドまたは要素に含まれます。
-      * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see Content Fragment Templates). <!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * 要素はフラグメントテンプレートで定義されます（フラグメントのオーサリング時には定義できません。「コンテンツフラグメントテンプレート」を参照してください）。<!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
 
 * **フラグメントの段落**
 
@@ -183,7 +185,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * 前のテキスト（段落）に添付されます。
    >[!CAUTION]
    >
-   >プレーンテキスト形式に切り替えることで、（誤って）フラグメントから削除する恐れがあります。
+   >プレーンテキスト形式に切り替えることで、（誤って）フラグメントから削除するおそれがあります。
 
    >[!NOTE]
    >
@@ -193,7 +195,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * これはフラグメント外部のコンテンツですが、編集に関連します。通常は、画像、ビデオ、または他のフラグメントです。
    * コレクション内の個々のアセットは、ページエディターでページにフラグメントを追加するときに、フラグメントと共に使用できます。つまり、コレクション内の個々のアセットは任意であり、特定のチャネルの要件に応じて使用します。
-   * The assets are [associated to fragments via collections](/help/assets/content-fragments/content-fragments-assoc-content.md); associated collections allow the author to decide which assets to use when they are authoring the page.
+   * アセットは、[コレクションを介してフラグメントに関連付け](/help/assets/content-fragments/content-fragments-assoc-content.md)ます。関連付けられたコレクションを使用することで、作成者は、ページ作成時に使用するアセットを決定できます。
 
       * コレクションは、テンプレートを介してフラグメントにデフォルトコンテンツとして関連付けることができます。または、フラグメントの作成時に作成者が関連付けることができます。
       * [Assets（DAM）コレクション](/help/assets/manage-collections.md)は、フラグメントの関連コンテンツの基礎です。
@@ -219,19 +221,19 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
       * どのコンテンツフラグメントにもマスターインスタンスが 1 つあります。
       * マスターは削除できません。
-   * Master is accessible in the fragment editor under **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * マスターには、フラグメントエディターの「**[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)**」の下でアクセスできます。
    * マスター自体はバリエーションではありませんが、すべてのバリエーションの基礎となります。
 
 
 * **バリエーション**
 
    * 編集目的に合わせたフラグメントテキストのレンディション。チャネルに関連付けることができますが必須ではありません。ローカルで臨時に変更する場合にも使用できます。
-   * Are created as copies of **Master**, but can then be edited as required; there is usually content overlap between the variations themselves.
+   * **マスター**&#x200B;のコピーとして作成しますが、その後、必要に応じて編集できます。通常、バリエーション同士にはコンテンツの重複があります。
    * フラグメントの作成時に定義できます。またはフラグメントテンプレート内に事前に定義できます。
    * コンテンツコピーの分散を避けるために、フラグメントに格納されます。
    * マスター側のコンテンツが更新されている場合は、バリエーションをマスターと[同期](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)することができます。
-   * Can be [Summarized](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) to quickly truncate the text to a predefined length.
-   * Available under the [Variations](/help/assets/content-fragments/content-fragments-variations.md) tab of the fragment editor.
+   * [要約](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)することで、あらかじめ定義した長さにテキストをすばやく切り詰めることができます。
+   * フラグメントエディターの「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブにあります。
 
 ### コンテンツフラグメントを使用したページのオーサリング時の中間コンテンツ {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -273,12 +275,12 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
 
-## 使用例 {#example-usage}
+## 使用例{#example-usage}
 
-フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応する明解なコンテンツを作成できます。フラグメントをデザインする際は、どのような場所で使用するかを考慮する必要があります。
+フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応する明解なコンテンツを作成できます。フラグメントを設計するときは、何をどこで使用するかを考慮する必要があります。
 
-### WKNDサンプル {#wknd-sample}
+### WKND サンプル {#wknd-sample}
 
-AEMをクラウドサービスとして学ぶのに役立つ [](/help/implementing/developing/introduction/develop-wknd-tutorial.md) WKNDサイトサンプルが用意されています。 サンプルフラグメントは次の場所で確認できます。
+AEM as a Cloud Service の習得に役立つ [WKND サイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サンプルが用意されています。サンプルフラグメントが含まれており、それらは次の場所で確認できます。
 
 `hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
