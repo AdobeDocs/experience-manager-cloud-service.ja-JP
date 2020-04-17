@@ -1,7 +1,7 @@
 ---
 title: 画質最適化のベストプラクティス
-description: ダイナミックメディアの画質を最適化するためのベストプラクティスを紹介します。
-translation-type: tm+mt
+description: Dynamic Media の画質を最適化するベストプラクティスについて説明します。
+translation-type: ht
 source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
 
 ---
@@ -11,9 +11,9 @@ source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
 
 許容できる結果のレンダリングには多くの要因が関係するので、画質の最適化には時間がかかることがあります。画質に対する個人の感覚は異なるので、結果は一部主観的なものです。構造化された実験をおこなうことが重要になります。
 
-AEMには、画像の調整と最適化、結果のレンダリングを行うための、100を超えるダイナミックメディア画像配信コマンドが含まれています。次のガイドラインは、いくつかの重要なコマンドとベストプラクティスを使用して、プロセスを合理化し、良い結果をすばやく得るのに役立ちます。
+AEM には、画像をチューニングおよび最適化して結果をレンダリングするための、100 を超える Dynamic Media 画像配信コマンドがあります。次のガイドラインは、一部の基本コマンドとベストプラクティスを使用してこのプロセスを効率化し、すぐに良好な結果を得るために活用できます。
 
-## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
+## 画像形式（`&fmt=`）のベストプラクティス {#best-practices-for-image-format-fmt}
 
 * JPG または PNG は、管理しやすいサイズと重さで良い画質の画像を配信するための最適な選択肢です。
 * URL に format コマンドが含まれていない場合、Dynamic Media 画像配信のデフォルトは JPG の配信になります。
@@ -22,83 +22,83 @@ AEMには、画像の調整と最適化、結果のレンダリングを行う�
 * JPG では多くの場合、写真画像が、エッジやコントラストがシャープな合成画像よりも高い忠実度で圧縮されます。
 * 画像に透明部が含まれている場合は PNG を使用します。JPG では透明化がサポートされていません。
 
-As a best practice for image format, start with the most common setting `&fmt=JPG`.
+画像形式のベストプラクティスとして、まずは最も一般的な設定である `&fmt=JPG` を使用します。
 
 ## 画像サイズのベストプラクティス {#best-practices-for-image-size}
 
 画像サイズを動的に縮小することは、ごく一般的なタスクの 1 つです。サイズを指定し、さらにオプションでどのダウンサンプリングモードを使用して画像をダウンスケールするかを指定します。
 
-* For image sizing, the best and most straightforward approach is to use `&wid=<value>` and `&hei=<value>,`or just `&hei=<value>`. これらのパラメーターによって、画像の幅が縦横比に合わせて自動的に設定されます。
-* `&resMode=<value>`ダウンサンプリングに使用するアルゴリズムを制御します。 で始めま `&resMode=sharp2`す。 この値によって最適な画質が設定されます。While using the downsampling `value =bilin` is faster, it often results in the aliasing of artifacts.
+* 画像のサイズ設定における最も簡単で最適なアプローチは、`&wid=<value>` と `&hei=<value>,` の両方、または `&hei=<value>` のみを使用することです。これらのパラメーターによって、画像の幅が縦横比に合わせて自動的に設定されます。
+* `&resMode=<value>` は、ダウンサンプリングに使用するアルゴリズムを制御します。まず手始めに `&resMode=sharp2` を使用します。この値によって最適な画質が設定されます。ダウンサンプリングを使用する場合は `value =bilin` のほうが速くなりますが、この設定では通常、アーティファクトのエイリアシングが実行されます。
 
-画像サイズ変更のベストプラクティスとして、 `&wid=<value>&hei=<value>&resMode=sharp2` または `&hei=<value>&resMode=sharp2`
+画像サイズ設定のベストプラクティスとしては、`&wid=<value>&hei=<value>&resMode=sharp2` または `&hei=<value>&resMode=sharp2` を使用します。
 
 ## 画像のシャープニングに関するベストプラクティス {#best-practices-for-image-sharpening}
 
 画像のシャープニングは、Web サイト上の画像を管理するうえで最も難しい操作であり、多くの誤りが発生するところです。次の補助的なリソースを参照して、AEM でのシャープニングおよびアンシャープニングマスクの仕組みについて詳しく確認してください。
 
-Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf) applies to AEM as well.
+ベストプラクティスに関するホワイトペーパー『[Adobe Scene7 Publishing System および Image Server での画像のシャープニング](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)』の内容は AEM にも適用されます。
 
-On Adobe TV, watch [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+Adobe TV で、[アンシャープマスクを使用した画像のシャープニング](https://helpx.adobe.com/jp/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)を参照してください。
 
 AEM を使用すれば、取り込み時、配信時またはその両方で画像をシャープにすることができます。ただし、ほとんどの場合は、両方ではなくどちらか一方の方法のみを使用して画像をシャープにしてください。一般に、配信時に URL 上で画像をシャープにすることで、最適な結果が得られます。
 
 画像のシャープニングでは、次の 2 つの方法を使用できます。
 
-* Simple sharpening ( `&op_sharpen`) – Similar to the sharpen filter used in Photoshop, simple sharpening applies basic sharpening to the final view of the image following dynamic resizing. ただし、この方法ではユーザーによる設定は不可能です。ベストプラクティスは、必要な場合以外は&amp;op_sharpenを使用しないことです。
-* Unsharp masking ( `&op_USM`) – Unsharp masking is an industry standard sharpening filter. ベストプラクティスは、以下のガイドラインに従ってアンシャープマスクを使用して画像をシャープニングすることです。アンシャープマスクによって、次の 3 つのパラメーターを制御できます。
+* シンプルシャープニング（`&op_sharpen`）- Photoshop で使用するシャープニングフィルターと同様に、シンプルシャープニングでは、動的なサイズ変更の後に、画像の最終表示形に対して基本的なシャープニングを適用します。ただし、この方法ではユーザーによる設定は不可能です。ベストプラクティスは、必要な場合を除いて &amp;op_sharpen を使用しないことです。
+* アンシャープマスク（`&op_USM`）- アンシャープマスクは、業界標準のシャープニングフィルターです。ベストプラクティスは、以下のガイドラインに従ってアンシャープマスクを使用して画像をシャープニングすることです。アンシャープマスクによって、次の 3 つのパラメーターを制御できます。
 
-   * `&op_sharpen=`量，半径，しきい値
+   * `&op_sharpen=`amount,radius,threshold
 
-      * **[!UICONTROL amount]** （0 ～ 5、効果の強さ）
-      * **[!UICONTROL radius]** (0 ～ 250、シャープを適用したオブジェクトの周囲に描画される「シャープの適用線」の幅（ピクセル単位）
+      * **[!UICONTROL amount]**（0～5、効果の強さ）
+      * **[!UICONTROL radius]**（0～250、シャープニングにされるオブジェクトの周囲に描かれる「シャープニングされた線」の幅、ピクセル単位）
 
-         radiusパラメーターとamountパラメーターは相互に作用することに注意してください。radiusを減らすにはamountを増やします。radiusを指定すると、端のピクセルのみがシャープになり、radiusを指定すると細かい制御が可能になります。高い値を指定すると、幅広い範囲のピクセルがシャープになります。
+         radius パラメーターと amount パラメーターは互いに反対に作用することに注意してください。radius 値の減少は、amount 値の増加によって補うことができます。radius によって、より細やかな制御が可能になります。値が小さいとエッジ部のピクセルのみがシャープニングされ、値が大きいとより幅広いピクセルがシャープニングされます。
 
-      * **[!UICONTROL しきい値]** （0 ～ 255、効果の感度）
+      * **[!UICONTROL threshold]**（0～255、効果の感度）
 
-         このパラメーターは、シャープにされるピクセルが周囲の領域とどの程度違えば、そのピクセルをエッジのピクセルと見なしてフィルターによりシャープにするかを決定するものです。The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. 例えば、threshold の値を 12 にした場合、肌のトーンの明るさにわずかな差があっても無視して「ノイズ」が加わるのを防ぎながら、まつげと肌が隣り合う場所など、コントラストの高い領域に対してエッジコントラストを追加することができます。
+         このパラメーターは、シャープにされるピクセルが周囲の領域とどの程度違えば、そのピクセルをエッジのピクセルと見なしてフィルターによりシャープにするかを決定するものです。この **[!UICONTROL threshold]** パラメーターによって、肌のトーンなど、同じような色の領域を過剰にシャープニングすることを防ぎます。例えば、threshold の値を 12 にした場合、肌のトーンの明るさにわずかな差があっても無視して「ノイズ」が加わるのを防ぎながら、まつげと肌が隣り合う場所など、コントラストの高い領域に対してエッジコントラストを追加することができます。
       フィルターを使用したベストプラクティスを含む、これら 3 つのパラメーターの設定方法について詳しくは、次のリソースを参照してください。
 
-      画像へのシャープの適用に関するAEMヘルプトピックです。
+      画像のシャープニングに関する AEM ヘルプトピック。
 
-      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf).
+      ベストプラクティスに関するホワイトペーパー『[Adobe Scene7 Publishing System および Image Server での画像のシャープニング](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)』。
 
-   * AEMでは、4番目のパラメーターを制御することもできます。モノクロ(0,1) このパラメーターは、各カラーコンポーネントにアンシャープマスクを、値0を使用して個別に適用するか、値1を使用して画像の明るさ/強さに適用するかを決定します。
+   * AEM では第 4 パラメーターの monochrome（0,1）も制御できます。このパラメーターでは、アンシャープマスクをそれぞれの色成分に個別に適用するか（値が 0 の場合）、または画像の明るさ／明度に対して適用するか（値が 1 の場合）を指定します。
 
 
 ベストプラクティスとして、まずはアンシャープマスクの radius パラメーターを使用します。手始めに使用できる radius 設定は次のとおりです。
 
-* **[!UICONTROL Webサイト]**:0.2-0.3ピクセル
-* **[!UICONTROL 写真印刷(250 ～ 300 ppi)]**:0.3-0.5ピクセル
-* **[!UICONTROL オフセット印刷(266 ～ 300 ppi)]**:0.7-1.0ピクセル
-* **[!UICONTROL カンバス印刷(150 ppi)]**:1.5 ～ 2.0ピクセル
+* **[!UICONTROL Web サイト]**：0.2～0.3 ピクセル
+* **[!UICONTROL 写真印刷（250～300 ppi）]**：0.3～0.5 ピクセル
+* **[!UICONTROL オフセット印刷（266～300 ppi）]**：0.7～1.0 ピクセル
+* **[!UICONTROL キャンバス印刷（150 ppi）]**：1.5～2.0 ピクセル
 
 amount を 1.75 から 4 まで少しずつ増やします。シャープニングの結果に満足できない場合は、radius を小数点以下の単位で増やして、再度 amount を 1.75 から 4 の範囲で実行します。必要に応じてこの手順を繰り返します。
 
 monochrome パラメーター設定は 0 のままにします。
 
-### Best practices for JPEF compression (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
+### JPEF 圧縮（`&qlt=`）のベストプラクティス {#best-practices-for-jpef-compression-qlt}
 
 * このパラメーターでは、JPG エンコーディング品質を制御します。値が大きいほど高画質になりますがファイルサイズも大きくなります。逆に、値が小さいほど低画質になりますがファイルサイズは小さくなります。このパラメーターの範囲は 0～100 です。
-* 画質を最適化するには、このパラメーターの値を 100 に設定しないでください。90 や 95 の設定と 100 の設定では、画質の差はほとんど感じられませんが、100 に設定することで画像ファイルのサイズが不必要に増加します。Therefore, to optimize for quality but avoid image files becoming too large, set the `qlt= value` to 90 or 95.
-* 小さい画像ファイルサイズに最適化し、画質を許容可能なレベルに保つには、を80 `qlt= value` に設定します。 70 ～ 75未満の値を指定すると、画質が大幅に低下します。
-* As a best practice, to stay in the middle, set the `qlt= value` to 85 to stay in the middle.
-* Using the chroma flag in `qlt=`
+* 画質を最適化するには、このパラメーターの値を 100 に設定しないでください。90 や 95 の設定と 100 の設定では、画質の差はほとんど感じられませんが、100 に設定することで画像ファイルのサイズが不必要に増加します。したがって、画質を最適化しながら画像ファイルが大きくなりすぎないようにするために、`qlt= value` を 90 または 95 に設定します。
+* 小さい画像ファイルサイズに最適化しつつ、画質を許容できるレベルに保つには、`qlt= value` を 80 に設定します。70～75 未満の値を指定すると、画質が大幅に低下します。
+* ベストプラクティスとしては、間を取って `qlt= value` を 85 に設定します。
+* `qlt=` での色度フラグの使用
 
-   * The `qlt=` parameter has a second setting that lets you turn on RGB chromaticity downsampling using the value `,1` or off using the value `,0`.
-   * To keep it simple, start with RGB chromaticity downsampling turned off (`,0`). This setting usually results in better image quality, especially for synthetic images with lots of sharp edges and contrast.
+   * `qlt=` パラメーターには、RGB 色度のダウンサンプルを有効にする第 2 の設定があります。この設定を有効にするには値 `,1` を使用し、無効にするには値 `,0` を使用します。
+   * 簡易な設定を維持するため、まずは RGB 色度のダウンサンプルを無効にします（`,0`）。この設定により、通常は高画質になります。特に、シャープなエッジやコントラストが多く含まれる合成画像で高画質になります。
 
-As a best practice for JPG compression use `&qlt=85,0`.
+JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用します。
 
-## Best practices for JPEG sizing (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## JPEG サイズ設定（`&jpegSize=`）のベストプラクティス {#best-practices-for-jpeg-sizing-jpegsize}
 
-jpegSizeは、メモリに制限があるデバイスに配信するために画像が特定のサイズを超えないようにする場合に便利なパラメータです。
+jpegSize は、メモリ容量が限られているデバイスに配信される画像が特定のサイズを超えないようにしたい場合に便利なパラメーターです。
 
-* This parameter is set in kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). It defines the maximum allowed size for image delivery.
-* `&jpegSize=` はJPG圧縮パラメーターと相互に作用しま `&qlt=`す。 If the JPG response with the specified JPG compression parameter (`&qlt=`) does not exceed thejpegSize value, the image is returned with `&qlt=` as defined. Otherwise, `&qlt=` is gradually decreased until the image fits in the maximum allowed size, or until the system determines it cannot fit and returns an error.
+* このパラメーターはキロバイト単位で設定します（`jpegSize=&lt;size_in_kilobytes&gt;`）。画像配信で許可される最大サイズを定義します。
+* `&jpegSize=` は、JPG 圧縮パラメーターである `&qlt=` と相互に作用します。指定された JPG 圧縮パラメーター（`&qlt=`）での JPG 応答が jpegSize の値を上回らない場合、画像は `&qlt=` で定義されたとおりに返されます。jpegSize の値を上回る場合は、`&qlt=` が少しずつ減らされ、画像のサイズが最大許容サイズ内に収められるか、またはシステムによってそのサイズ内に収まらないと判断された場合はエラーが返されます。
 
-As a best practice, set `&jpegSize=` and add the parameter `&qlt=` if you are delivering JPG images to devices with limited memory.
+ベストプラクティスとしては、`&jpegSize=` を設定し、メモリ容量が限られているデバイスに JPG 画像を配信する場合は `&qlt=` パラメーターを追加します。
 
 ## ベストプラクティスのまとめ {#best-practices-summary}
 
@@ -108,13 +108,13 @@ As a best practice, set `&jpegSize=` and add the parameter `&qlt=` if you are de
 
 この設定の組み合わせによって、ほとんどの状況で優れた結果になります。
 
-画像をさらに最適化する必要がある場合は、シャープニング（アンシャープマスク）のパラメーターを少しずつ微調整します。まずは、radius を 0.2 または 0.3 に設定します。また、amount を 1.75 から最大 4（Photoshop での 400 ％に相当）まで少しずつ増やします。この状態で、求めている結果が得られるかを確認します。
+画像をさらに最適化する必要がある場合は、シャープニング（アンシャープマスク）のパラメーターを少しずつ微調整します。まずは、radius を 0.2 または 0.3 に設定します。また、amount を 1.75 から最大 4（Photoshop での 400％に相当）まで少しずつ増やします。この状態で、求めている結果が得られるかを確認します。
 
 シャープニングの結果でも満足できない場合は、radius の小数点以下を増やします。小数点以下を増やすごとに、amount を 1.75 からやり直し、4 まで少しずつ増やします。求めている結果になるまで、このプロセスを繰り返します。これらの値は、制作スタジオで実際に検証した手法ではありますが、初期値として別の値を使用し、他の戦略に従っても問題ありません。結果が満足できるものであるかは主観的な問題ですので、構造化された実験をおこなうことが重要です。
 
 実験をおこなう際には、ワークフローを最適化するための次の一般的な推奨事項も役に立つでしょう。
 
-* 様々なパラメーターをリアルタイムで試し、URL上で直接テストするか、調整操作のリアルタイムプレビューを提供するScene7 Publishing systemの画像調整機能を使用してテストします。
-* ベストプラクティスとして、ダイナミックメディア画像サービングコマンドを画像プリセットにグループ化できます。 An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. URL パス内でカスタムプリセット名を指定すると、これらのプリセットがコールされます。この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
-* AEM では、取り込み時に画像のシャープニングを適用するなど、高度な画質調整機能を提供しています。For advanced use cases where this may be an option to further tune and optimize rendering results, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) can help you with customized insight and best practices.
+* 異なるパラメーターをリアルタイムでテストします。その際には、URL 上で直接使用するか、調整操作のリアルタイムプレビューが可能な Scene7 Publishing System の画像調整機能を使用します。
+* ベストプラクティスとしては、Dynamic Media 画像サービングコマンドを画像プリセット内にまとめることができます。画像プリセットは基本的に、`$thumb_low$` や `&product_high$` といったカスタムプリセット名が付けられた URL コマンドマクロです。URL パス内でカスタムプリセット名を指定すると、これらのプリセットがコールされます。この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
+* AEM では、取り込み時に画像のシャープニングを適用するなど、高度な画質調整機能を提供しています。レンダリング結果をさらに調整して最適化するためにこの機能を利用できるような高度な使用例については、[Adobe Professional Services](https://www.adobe.com/jp/experience-cloud/consulting-services.html) がお客様向けにカスタマイズした見識やベストプラクティスを提供して支援いたします。
 
