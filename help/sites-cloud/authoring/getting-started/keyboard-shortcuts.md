@@ -1,20 +1,20 @@
 ---
 title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用することで、オーサリング時の時間を節約できます
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# コンソールのキーボードショートカット {#keyboard-shortcuts-for-consoles}
+# コンソールのキーボードショートカット{#keyboard-shortcuts-for-consoles}
 
-サイト、アセット、ユーザー、グループ、プロジェクトおよびエクスペリエンスフラグメントコンソールでは、次のショートカットを使用できます。
+サイト、アセット、ユーザー、グループ、プロジェクト、エクスペリエンスフラグメントの各コンソールで、次のショートカットを使用できます。
 
 | 場所 | ショートカット | 説明 |
 |---|---|---|
 | 一般 | `Ctrl+Click` | 複数選択 |
-| コンソール — 列ビューとコンテンツビュー | `Right Arrow` | Web サイトの構造を下に移動／ツリーノードを展開 |
+| コンソール - 列表示およびコンテンツ表示 | `Right Arrow` | Web サイトの構造を下に移動／ツリーノードを展開 |
 |  | `Left Arrow` | ツリー構造を上に移動／ツリーノードを折りたたむ |
 |  | `Down Arrow` | ページのリストを（同じレベルで）下に移動 |
 |  | `Up Arrow` | ページのリストを（同じレベルで）上に移動 |
@@ -22,7 +22,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 |  | `Esc` | ページのリストを（同じレベルで）上に移動 |
 | コンソール | `?` | キーボードショートカットヘルプ |
 |  | `/` | [検索](/help/sites-cloud/authoring/getting-started/search.md)を呼び出す |
-|  | `Alt+`&lt;`Number`> | Toggle which [rail selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) option to view |
+|  | `Alt+`&lt;`Number`> | 表示する[レールセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)オプションを切り替える |
 |  | ` | レールを非表示 |
 |  | `e` | 編集 |
 |  | `p` | プロパティ |
@@ -36,14 +36,14 @@ Windows の[修飾子キー](#os-specific-modifier-keys)を使用したキーの
 
 ## OS 特有の修飾子キー {#os-specific-modifier-keys}
 
-キーボードショートカットに使用する修飾キーは、クライアントが使用するオペレーティングシステムによって異なります。
+キーボードショートカットに使用される修飾子キーは、クライアントが使用するオペレーティングシステムによって異なります。
 
-| Windows/Linux | macOS |
+| Windows／Linux | macOS |
 |---|---|
 | `Alt` | `Option` |
 | `Ctrl` | `Command` |
 
-## ブラウザーおよびキーボードショートカット {#browsers-and-keyboard-shortcuts}
+## ブラウザーとキーボードショートカット {#browsers-and-keyboard-shortcuts}
 
 デフォルトのブラウザー動作が、AEM ショートカットで上書きされることはありませんが、AEM では、人気のあるブラウザーで既に使用されている一般的なショートカットを使用しないようにしています。
 
@@ -59,7 +59,7 @@ Windows の[修飾子キー](#os-specific-modifier-keys)を使用したキーの
 >
 >AEM キーボードショートカットは、スクリーンリーダー、一部のブラウザー機能および他のアクセシビリティツールに干渉する可能性があります。
 >
->アドビでは、スクリーンリーダーを使用する場合、[AEM キーボードショートカットを無効にすること](#deactivating-keyboard-shortcuts)をお勧めします。
+>アドビでは、スクリーンリーダーを使用する場合、[AEM キーボードショートカットを無効にする](#deactivating-keyboard-shortcuts)ことをお勧めします。
 
 ## キーボードショートカットのアクティベート解除 {#deactivating-keyboard-shortcuts}
 
@@ -78,4 +78,4 @@ AEM には、一部の一般的に使用される機能（編集、プロパテ�
 
 ## ページエディターのキーボードショートカット {#keyboard-shortcuts-for-the-page-editor}
 
-AEM 全体で様々なキーボードショートカットを利用できます。コンソール使用に適用されるものや、[ページ編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)に適用されるものなどがあります。
+AEM 全体で様々なキーボードショートカットを利用できます。コンソールの使用時に適用されるものや、[ページ編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)に適用されるものなどがあります。
