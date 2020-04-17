@@ -1,13 +1,13 @@
 ---
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義し、テンプレートエディターにより、テンプレートの作成および維持は、もはや開発者のみのタスクではなくなります。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 ---
 
 
-# ページテンプレートの作成 {#creating-page-templates}
+# ページテンプレートの作成{#creating-page-templates}
 
 ページを作成するとき、テンプレートを選択する必要があります。これは新しいページを作成するための基本として使用されます。テンプレートは、作成されるページの構造、初期コンテンツ、および使用できるコンポーネントを定義します。
 
@@ -26,7 +26,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 このドキュメントでは、**テンプレート作成者**&#x200B;がテンプレートコンソールおよびエディターを使用して、編集可能なテンプレートを作成および管理する方法を説明します。
 
-For detailed information about how editable templates work at a technical level, please see the developer document Page Templates - Editable for more information. <!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+編集可能なテンプレートが技術レベルで機能する方法について詳しくは、開発者ドキュメント「ページテンプレート - 編集可能」を参照してください。<!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ For detailed information about how editable templates work at a technical level,
 >
 >管理者は、**設定ブラウザー**&#x200B;でテンプレートフォルダーを設定し、テンプレート作成者がそのフォルダーにテンプレートを作成できるように、適切な権限を適用する必要があります。
 
-作業を開始する前に、新しいテンプレートの作成にはコラボレーションが必要であることを考慮することが重要です。 この理由から、[役割](#roles)がそれぞれのタスクに示されます。これは、テンプレートを使用してページを実際に作成する方法には影響しませんが、ページとテンプレートとの関連には影響します。
+作業を開始する前に、新しいテンプレートの作成では共同作業が必要ということを考慮に入れておくことが重要です。この理由から、[役割](#roles)がそれぞれのタスクに示されます。これは、実際にテンプレートを使用してページを作成する方法に影響を与えませんが、ページがテンプレートに関係する方法には影響を与えます。
 
 ### 役割 {#roles}
 
@@ -47,12 +47,12 @@ For detailed information about how editable templates work at a technical level,
 * **管理者**：
    * `admin` 権限が必要なテンプレートのために新しいフォルダーを作成します。
    * こうしたタスクは、多くの場合開発者がおこなうことができます。
-* **開発者**:
+* **開発者**：
    * 技術的／内部的詳細に集中します。
    * 開発環境の経験が必要です。
    * テンプレート作成者に必要な情報を提供します。
 * **テンプレート作成者**：
-   * This is a specific author who is member of the group `template-authors`
+   * グループ `template-authors` のメンバーである特定の作成者です。
       * 必要な特権および権限を割り当てます。
    * コンポーネントおよび次のものを必要とするその他の高レベルの使用法を設定できます。
       * 一部の技術的知識
@@ -68,14 +68,14 @@ For detailed information about how editable templates work at a technical level,
 新しい編集可能テンプレートを作成する場合は、次の手順を実行します。
 
 * **テンプレート**&#x200B;コンソールを使用します。これは、**ツール**&#x200B;コンソールの&#x200B;**一般**&#x200B;セクションにあります。
-   * または直接次の場所： `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
+   * または直接アクセスします：`https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
+* 必要に応じて、[テンプレート用のフォルダーを作成](#creating-a-template-folder-admin)できます。
 * [新しいテンプレートを作成します](#creating-a-new-template-template-author)（最初は空の状態です）。
 * （必要に応じて）テンプレートの[追加プロパティを定義](#defining-template-properties-template-author)します。
 * [テンプレートを編集](#editing-templates-template-authors)して次の要素を定義します。
-   * [構造](#editing-a-template-structure-template-author) — テンプレートで作成されたページで変更できない定義済みコンテンツ。
-   * [初期コンテンツ](#editing-a-template-initial-content-author) — テンプレートで作成されたページで変更できる定義済みのコンテンツ。
-   * [レイアウト](#editing-a-template-layout-template-author) — 一連のデバイス用。
+   * [構造](#editing-a-template-structure-template-author) - テンプレートで作成されたページでは変更できない定義済みのコンテンツ。
+   * [初期コンテンツ](#editing-a-template-initial-content-author) - テンプレートで作成されたページで変更可能な定義済みのコンテンツ。
+   * [レイアウト](#editing-a-template-layout-template-author) - 広範なデバイスに対応させるために使用します。
    * [スタイル](/help/sites-cloud/authoring/features/style-system.md) - テンプレートおよびそのコンポーネントで使用されるスタイルを定義します。
 * ページ作成時に使用するために[テンプレートを有効化します](#enabling-a-template-template-author)。
 * Web サイトの必要なページまたはブランチのために[テンプレートを許可します。](#allowing-a-template-author)
@@ -87,23 +87,23 @@ For detailed information about how editable templates work at a technical level,
 
 >[!CAUTION]
 >
->Never enter any information that needs to be internationalized into a template. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>国際化する必要がある情報は、テンプレートに含めないでください。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->ローカライズが必要なヘッダーやフッターなどのテンプレート要素の場合は、コアコンポーネ [ントのローカリゼーション機能を利用します。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)
+>ローカライズが必要なヘッダーやフッターなどのテンプレート要素の場合は、[コアコンポーネントのローカライゼーション機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/get-started/localization.html)を利用します。
 
 ### テンプレートフォルダーの作成 - 管理者 {#creating-a-template-folder-admin}
 
-テンプレートフォルダーは、プロジェクト固有のテンプレートを保持するためプロジェクトで作成する必要があります。This is an admin task and is described in the document Page Templates - Editable. <!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+テンプレートフォルダーは、プロジェクト固有のテンプレートを保持するためプロジェクトで作成する必要があります。これは管理者タスクであり、ドキュメント「ページテンプレート - 編集可能」で説明しています。<!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 ### 新しいテンプレートの作成 - テンプレート作成者 {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools ->** **General**) then navigate to the required folder.
+1. **テンプレートコンソール**&#x200B;を（**ツール**／**一般**&#x200B;から）開き、必要なフォルダーに移動します。
 
    >[!NOTE]
    >
    >標準の AEM インスタンスでは、テンプレートコンソールに既に&#x200B;**グローバル**&#x200B;フォルダーが存在します。この中にデフォルトのテンプレートが格納されており、現在のフォルダーにポリシーやテンプレートタイプがない場合にはフォールバックとして機能します。
    >
-   >It is recommended best practice to use a template folder created for your project. <!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >プロジェクトで作成されたテンプレートフォルダーを使用することが推奨されるベストプラクティスです。<!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
 
 1. 「**作成**」、「**テンプレートを作成**」を選択し、ウィザードを開きます。
 
@@ -111,7 +111,7 @@ For detailed information about how editable templates work at a technical level,
 
    >[!NOTE]
    >
-   >テンプレートタイプは、定義済みのテンプレートレイアウトであり、テンプレートのためのテンプレートであると見なすことができます。これらは、開発者またはシステム管理者が事前定義します。More information can be found in the developer document Page Templates - Editable. <!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >テンプレートタイプは、定義済みのテンプレートレイアウトであり、テンプレートのためのテンプレートであると見なすことができます。これらは、開発者またはシステム管理者が事前定義します。詳しくは、開発者ドキュメント「ページテンプレート - 編集可能」を参照してください。<!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
 
 1. 次の「**テンプレート詳細**」を入力します。
 
@@ -124,22 +124,22 @@ For detailed information about how editable templates work at a technical level,
    >
    >新しく作成されたテンプレートは、コンソールで&#x200B;**ドラフト**&#x200B;とマークされます。これは、ページ作成者がまだテンプレートを使用できないことを示します。
 
-### テンプレートプロパティの定義 - テンプレート作成者 {#defining-template-properties-template-author}
+### テンプレートプロパティの定義 - テンプレート作成者{#defining-template-properties-template-author}
 
 テンプレートには、次のプロパティを指定できます。
 
 * 画像
-   * 画像は[テンプレートのサムネイル](#template-thumbnail-image)として「ページを作成」ウィザードなどで選択を容易にするために使用します。
+   * 画像は[テンプレートのサムネール](#template-thumbnail-image)として「ページを作成」ウィザードなどで選択を容易にするために使用します。
       * アップロード可能
       * テンプレートコンテンツに基づいて生成可能
 * タイトル
    * タイトルは「**ページを作成**」ウィザードなどでテンプレートを識別するために使用します。
 * 説明
-   * An optional description to provide more information about the template and its use, which can be seen for example in the **Create Page** wizard.
+   * 説明では「**ページの作成**」ウィザードなどで表示できるテンプレートとその用途に関する詳細情報を追加します。
 
 プロパティを表示または編集するには：
 
-1. In the **Templates Console**, select the template.
+1. **テンプレートコンソール**&#x200B;で、テンプレートを選択します。
 1. ツールバーまたはクイックオプションから「**プロパティを表示**」を選択してダイアログを開きます。
 1. これでテンプレートのプロパティを表示または編集できます。
 
@@ -147,24 +147,24 @@ For detailed information about how editable templates work at a technical level,
 >
 >テンプレートのステータス（ドラフト、有効、無効）は、コンソールに示されます。
 
-#### テンプレートサムネイルの画像 {#template-thumbnail-image}
+#### テンプレートサムネールの画像 {#template-thumbnail-image}
 
-テンプレートサムネイルを定義するには：
+テンプレートサムネールを定義するには：
 
 1. テンプレートのプロパティを編集します。
-1. サムネイルをアップロードするか、テンプレートコンテンツから生成するかを選びます。
-   * サムネイルをアップロードする場合は、「**画像をアップロード**」をクリックまたはタップします。
-   * サムネイルを生成する場合は、「**プレビューを生成**」をタップまたはクリックします。
-1. どちらの方法でも、サムネイルのプレビューが表示されます。
-   * このサムネイルで満足できない場合は、**クリア**&#x200B;をタップまたはクリックして、他の画像をアップロードするか、サムネイルを再生成します。
+1. サムネールをアップロードするか、テンプレートコンテンツから生成するかを選びます。
+   * サムネールをアップロードする場合は、「**画像をアップロード**」をクリックまたはタップします。
+   * サムネールを生成する場合は、「**プレビューを生成**」をタップまたはクリックします。
+1. どちらの方法でも、サムネールのプレビューが表示されます。
+   * このサムネールで満足できない場合は、**クリア**&#x200B;をタップまたはクリックして、他の画像をアップロードするか、サムネールを再生成します。
 1. 満足できる場合は、「**保存して閉じる**」をクリックまたはタップします。
 
-### テンプレートの有効化および許可 - テンプレート作成者 {#enabling-and-allowing-a-template-template-author}
+### テンプレートの有効化および許可 - テンプレート作成者{#enabling-and-allowing-a-template-template-author}
 
 ページを作成するときにテンプレートを使用するには、以下の作業が必要です。
 
-* [テンプレートを有効にし](#enabling-a-template-template-author) 、ページの作成時に使用できるようにします。
-* [テンプレートで](#allowing-a-template-author) 、テンプレートを使用できるコンテンツの分岐を指定できます。
+* [テンプレートの有効化](#enabling-a-template-template-author)で、ページを作成するときに使用できるようにします。
+* [テンプレートの許可](#allowing-a-template-author)でテンプレートを使用できるコンテンツブランチを指定します。
 
 #### テンプレートの有効化 - テンプレート作成者 {#enabling-a-template-template-author}
 
@@ -174,8 +174,8 @@ For detailed information about how editable templates work at a technical level,
 >
 >テンプレートを有効化すると、テンプレート作成者がテンプレートをさらに更新しようとするときに警告が表示されます。これは、テンプレートが参照されている可能性があること、変更するとテンプレートを参照しているページに影響が及ぶ可能性があることをユーザーに通知するためのものです。
 
-1. In the **Templates Console**, select the template.
-1. Select **Enable** or **Disable** from the toolbar, and again in the confirmation dialog.
+1. **テンプレートコンソール**&#x200B;で、テンプレートを選択します。
+1. ツールバーから「**有効**」または「**無効**」を選択して、確認ダイアログで再び選択します。
 1. これで[新しいページを作成する](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)ときにテンプレートを使用できます。ただし、ほとんどの場合は要件に従って[テンプレートを編集する](#editing-templates-template-authors)必要があります。
 
 >[!NOTE]
@@ -188,7 +188,7 @@ For detailed information about how editable templates work at a technical level,
 
 1. テンプレートを使用できるようにするブランチのルートページの[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)を開きます。
 1. 「**詳細**」タブを開きます。
-1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
+1. **テンプレート設定**&#x200B;で「**フィールドを追加**」を使用してテンプレートへのパスを指定します。
 
    パスは直接入力またはパターンを使用できます。例えば、次のように指定します。
 
@@ -201,7 +201,7 @@ For detailed information about how editable templates work at a technical level,
    >**許可されたテンプレート**&#x200B;のリストが空の場合、値／リストが見つかるまでツリーを上に移動します。
    >
    >
-   >See Template Availability - the principles for allowed templates remain the same. <!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >「使用可能なテンプレート」を参照してください。許可されたテンプレートの原則は保たれます。<!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
 
 1. 「**保存**」をクリックして、ページプロパティの変更を保存します。
 
@@ -213,12 +213,12 @@ For detailed information about how editable templates work at a technical level,
 
 ページが表示されるときにテンプレートが参照される場合、テンプレートをパブリッシュ環境で使用できるようにするには、（完全に設定された）テンプレートを公開する必要があります。
 
-1. In the **Templates Console**, select the template.
-1. Select **Publish** from the toolbar to open the wizard.
+1. **テンプレートコンソール**&#x200B;で、テンプレートを選択します。
+1. ツールバーから「**公開**」を選択してウィザードを開きます。
 1. 連携して公開される&#x200B;**コンテンツポリシー**&#x200B;を選択します。
 1. ツールバーから「**公開**」を選択してアクションを完了します。
 
-## テンプレートの編集- テンプレート作成者 {#editing-templates-template-authors}
+## テンプレートの編集- テンプレート作成者{#editing-templates-template-authors}
 
 テンプレートを作成（または編集）するときに、様々な側面を定義できます。テンプレートの編集は、ページのオーサリングに似ています。
 
@@ -230,7 +230,7 @@ For detailed information about how editable templates work at a technical level,
 
 ![テンプレートエディターモードセレクター](/help/sites-cloud/authoring/assets/templates-mode.png)
 
-**ページ情報**&#x200B;メニューの「**ページポリシー**」オプションを使用すると、[必要なページポリシーを選択](#page-policies)できます。 
+**ページ情報**&#x200B;メニューの「**ページポリシー**」オプションを使用すると、[必要なページポリシーを選択](#page-policies)できます。
 
 ![テンプレートエディターページ情報](/help/sites-cloud/authoring/assets/templates-page-information.png)
 
@@ -240,11 +240,11 @@ For detailed information about how editable templates work at a technical level,
 
 ### テンプレート属性 {#template-attributes}
 
-テンプレートの次の属性を編集できます。
+テンプレートの以下の属性を編集できます。
 
 #### 構造 {#template-structure}
 
-Components added to the [structure](#editing-a-template-structure-template-author) cannot be moved/removed from resultant pages by the page authors. ページ作成者がコンポーネントを結果ページに移動またはコンポーネントを削除するには、テンプレートに段落システムを追加する必要があります。
+ページ作成者は、[構造](#editing-a-template-structure-template-author)に追加されたコンポーネントを結果ページから移動および削除できません。ページ作成者がコンポーネントを結果ページに移動またはコンポーネントを削除するには、テンプレートに段落システムを追加する必要があります。
 
 コンポーネントがロックされているとコンテンツは追加できますが、ページ作成者はこれを編集できません。コンポーネントのロックを解除して、[初期コンテンツ](#editing-a-template-initial-content-author)を定義できます。
 
@@ -254,7 +254,7 @@ Components added to the [structure](#editing-a-template-structure-template-autho
 
 #### 初期コンテンツ {#template-initial-content}
 
-When a component has been unlocked you can define the [initial content](#editing-a-template-initial-content-author) that will be copied to the resultant page(s), created from the template. これらのロックが解除されたコンポーネントは結果ページで編集できます。
+コンポーネントのロックが解除されていると、結果ページにコピーされる、テンプレートから作成された[初期コンテンツ](#editing-a-template-initial-content-author)を定義できます。これらのロックが解除されたコンポーネントは結果ページで編集できます。
 
 >[!NOTE]
 >
@@ -262,37 +262,37 @@ When a component has been unlocked you can define the [initial content](#editing
 
 #### レイアウト {#template-layout}
 
-With the [layout](#editing-a-template-layout-template-author) you can predefine the template layout for the required device formats. テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードにはページオーサリングの[**レイアウト&#x200B;**モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードにはページオーサリングの[**レイアウト&#x200B;**モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### ページポリシー {#template-page-policies}
 
-[ページポリシーは](#page-policies) 、事前定義されたページポリシーをページに接続できます。 これらのページポリシーは、様々なデザイン設定を定義します。
+[ページポリシー](#page-policies)は、定義済みのページポリシーをページに接続できます。これらのページポリシーは、様々なデザイン設定を定義します。
 
 #### スタイル {#template-styles}
 
-The [Style System](/help/sites-cloud/authoring/features/style-system.md) allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
+[スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 
 詳しくは、[スタイルシステムのドキュメント](/help/sites-cloud/authoring/features/style-system.md)を参照してください。
 
 ### テンプレートの編集 - 構造 - テンプレート作成者 {#editing-a-template-structure-template-author}
 
-In **Structure** mode you define components and content for your template and define policy for the template and its components.
+**構造**&#x200B;モードで、テンプレートのコンポーネントおよびコンテンツを定義し、テンプレートおよびそのコンポーネントのポリシーを定義できます。
 
 * テンプレート構造で定義されたコンポーネントは、結果ページに移動することも、結果ページから削除することもできません。
 * ページ作成者がコンポーネントを追加または削除するには、テンプレートに段落システムを追加する必要があります。
 * コンポーネントのロックを解除（再度ロックできます）して、[初期コンテンツ](#editing-a-template-initial-content-author)を定義できます。
 * コンポーネントおよびページのデザインポリシーが定義されます。
 
-![テンプレートエディターのページ構造](/help/sites-cloud/authoring/assets/templates-page-structure.png)
+![テンプレートエディターページ構造](/help/sites-cloud/authoring/assets/templates-page-structure.png)
 
-テンプレートエディターの構造モードで実行できる **操作と** 、次のような機能があります。
+テンプレートエディターの&#x200B;**構造**&#x200B;モードで実行できるいくつかのアクションと支援機能があります。
 
-#### Add Components {#add-components}
+#### コンポーネントの追加 {#add-components}
 
 テンプレートにコンポーネントを追加する方法はいくつか用意されています。
 
 * サイドパネルの&#x200B;**コンポーネント**&#x200B;ブラウザーを使用します。
-* By using the **Insert Component** option available on the toolbar of components already on the template or the **Drag components here** box.
+* テンプレートに既に存在するコンポーネントのツールバーにある「**コンポーネントを挿入**」オプションまたは&#x200B;**コンポーネントをここにドラッグ**&#x200B;ボックスを使用します。
 * （サイドパネルの&#x200B;**アセット**&#x200B;ブラウザーから）アセットをテンプレートに直接ドラッグしてサイトに適切なコンポーネントを生成します。
 
 追加すると、各コンポーネントは次の要素でマーキングされます。
@@ -303,7 +303,7 @@ In **Structure** mode you define components and content for your template and de
 
 >[!NOTE]
 >
->When you add an out-of-the-box **Title** component to the template it will contain the default text **structure**.
+>テンプレートに（最初から用意されている）**タイトル**&#x200B;コンポーネントを追加すると、デフォルトのテキスト&#x200B;**構造**&#x200B;が含まれます。
 >
 >これを変更し、独自のテキストを追加すると、テンプレートからページが作成されるときにこの更新されたテキストが使用されます。
 >
@@ -311,7 +311,7 @@ In **Structure** mode you define components and content for your template and de
 
 >[!NOTE]
 >
->Although not identical, adding components and assets to a template has many similarities to similar actions when [page authoring](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+>まったく同じではありませんが、テンプレートにコンポーネントやアセットを追加する操作は、[ページをオーサリングする](/help/sites-cloud/authoring/fundamentals/editing-content.md)ときのアクションと数多くの類似点があります。
 
 #### コンポーネントのアクション {#component-actions}
 
@@ -325,7 +325,7 @@ In **Structure** mode you define components and content for your template and de
 
 これら 2 つのアクションにより、コンポーネントにコンテンツを追加できます。
 
-#### Border to Indicate Structure {#border-to-indicate-structure}
+#### 構造を示す境界線 {#border-to-indicate-structure}
 
 **構造**&#x200B;モードで、オレンジ色の境界線は現在選択されているコンポーネントを示します。また、点線は親コンポーネントを示します。
 
@@ -343,8 +343,8 @@ In **Structure** mode you define components and content for your template and de
 
 設定ウィンドウは 2 つに分割されます。
 
-* In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
-* In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
+* **ポリシー**&#x200B;の下のダイアログの左側では、既存のポリシーを選択したり、既存のものを選択したりすることができます。
+* **プロパティ**&#x200B;の下のダイアログの右側では、コンポーネントタイプ固有のプロパティを設定できます。
 
 利用できるプロパティは選択されたコンポーネントに依存します。例えば、テキストコンポーネントのプロパティでは、コピー＆ペーストのオプション、フォーマットのオプション、パラグラフスタイルなどが定義されます。
 
@@ -352,23 +352,23 @@ In **Structure** mode you define components and content for your template and de
 
 コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用可能なコンポーネントまたは最小／最大寸法です。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down.
+**ポリシー**&#x200B;の下で、既存のポリシーを選択して、ドロップダウンからコンポーネントに適用できます。
 
 ![ポリシーを選択](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-新しいポリシーは、**ポリシーの選択**&#x200B;ドロップダウンの横にある追加ボタンを選択して追加できます。A new title should then be given in the **Policy Title** field.
+新しいポリシーは、**ポリシーの選択**&#x200B;ドロップダウンの横にある追加ボタンを選択して追加できます。新しいタイトルを「**ポリシーのタイトル**」フィールドに入力します。
 
 ![ポリシーの追加ボタン](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-**ポリシーの選択**&#x200B;ドロップダウンで選択された既存のポリシーは、ドロップダウンの横にあるコピーボタンを使用して、新規ポリシーにコピーできます。A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+**ポリシーの選択**&#x200B;ドロップダウンで選択された既存のポリシーは、ドロップダウンの横にあるコピーボタンを使用して、新規ポリシーにコピーできます。新しいタイトルを「**ポリシーのタイトル**」フィールドに入力します。デフォルトで、コピーされたポリシーは「**X のコピー**」というタイトルになります。ここで X はコピーされたポリシーのタイトルです。
 
-![「Copy Policy」ボタン](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+![ポリシーをコピーボタン](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 ポリシーの説明は、「**ポリシーの説明**」フィールドにオプションで入力できます。
 
-In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+「**他のテンプレートも選択したポリシーを使用しています**」セクションでは、「**ポリシーの選択**」ドロップダウンで選択したポリシーを、他のどのテンプレートが使用しているかを簡単に確認できます。
 
-![既存のポリシーの使用](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+![既存ポリシーの使用](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 >[!NOTE]
 >
@@ -403,17 +403,17 @@ In the **Other templates also using the selected policy** section, you can easil
 
 例えば、画像コンポーネントでは、切り抜き比率、許容される画像の方向、およびアップロードを許可するかどうかを定義できます。
 
-![「機能」タブ](/help/sites-cloud/authoring/assets/templates-features-tab.png)
+![「機能」タブ ](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 
 >[!CAUTION]
 >
->Note that in AEM crop ratios are defined as **height/width**. これは従来の定義である「幅 / 高さ」とは異なり、レガシー互換性のための設定です。ページオーサリングユーザーは、**名前**&#x200B;を明確に定義していれば、これが UI に表示されるので、違いに気が付きません。
+>AEM のトリミング比率は、**高さ/幅**&#x200B;で定義されます。これは従来の定義である「幅/高さ」とは異なり、レガシー互換性のための設定です。ページオーサリングユーザーは、**名前**&#x200B;を明確に定義していれば、これが UI に表示されるので、違いに気が付きません。
 
 >[!NOTE]
 >
 >リッチテキストエディターを実装するコンポーネントのコンテンツポリシーは、UI 設定を通じて RTE で提供されるオプションに対してのみ定義できます。<!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
 
-#### Policy and Properties (Layout Container) {#policy-and-properties-layout-container}
+#### ポリシーおよびプロパティ（レイアウトコンテナ）{#policy-and-properties-layout-container}
 
 レイアウトコンテナのポリシーおよびプロパティ設定は、一般使用の場合と似ていますが、いくつか違いがあります。
 
@@ -427,7 +427,7 @@ In the **Other templates also using the selected policy** section, you can easil
 
 コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用可能なコンポーネントまたは最小／最大寸法です。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
 
-Under **Policy** you can select an existing policy to apply to the component via the drop-down. これは、ウィンドウの一般使用の場合と同じく機能します。
+**ポリシー**&#x200B;の下で、既存のポリシーを選択して、ドロップダウンからコンポーネントに適用できます。これは、ウィンドウの一般使用の場合と同じく機能します。
 
 ##### プロパティ {#properties-layout}
 
@@ -447,7 +447,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 * 名前でコンポーネントをフィルターするために、検索を使用できます。
 * コンポーネントグループ名の右側に示されるカウントは、フィルターに関係なく、そのグループで選択されているコンポーネントの総数を表します。
 
-![「許可されているコンポーネント」タブ](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
+![「許可されるコンポーネント」タブ ](/help/sites-cloud/authoring/assets/templates-allowed-components-tab.png)
 
 ###### デフォルトのコンポーネント {#default-components}
 
@@ -455,9 +455,9 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 「**マッピングの追加**」をクリックまたはタップして、完全に新しいコンポーネントおよび MIME タイプマッピングを追加します。
 
-リストの中のコンポーネントを選択し、「**タイプの追加**」をクリックまたはタップして、既にマップされているコンポーネントに追加の MIME タイプを追加します。Click the **Delete** icon to remove a MIME type.
+リストの中のコンポーネントを選択し、「**タイプの追加**」をクリックまたはタップして、既にマップされているコンポーネントに追加の MIME タイプを追加します。「**削除**」アイコンをクリックして、MIME タイプを削除します。
 
-![「デフォルトコンポーネント」タブ](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
+![「デフォルトコンポーネント」タブ ](/help/sites-cloud/authoring/assets/templates-default-components-tab.png)
 
 ###### レスポンシブ設定 {#responsive-settings}
 
@@ -472,7 +472,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 * 境界線に開いている鍵アイコンのインジケーターが表示されます。
 * コンポーネントツールバーが適宜調整されます。
 * 既に入力されているコンテンツは、**構造**&#x200B;モードではもはや表示されなくなります。
-   * Already entered content is considered initial content and is only visible in **Initial Content** mode.
+   * 既に入力されているコンテンツは、初期コンテンツと見なされて、**初期コンテンツ**&#x200B;モードだけで表示されます。
 * ロックが解除されたコンポーネントの親コンポーネントは移動、切り取り、削除できません。
 
 ![コンポーネントのロックボタン](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
@@ -481,7 +481,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 ![許可されたコンポーネント](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
-スペースを節約するために、許可されたコンポーネントのリストに合わせてレイアウトコンテナが拡大されません。 代わりにコンテナがスクロールできるリストになります。
+スペースを節約するため、レイアウトコンテナは、許可されたコンポーネントのリストが収まるように拡大されません。代わりにコンテナがスクロールできるリストになります。
 
 設定できるコンポーネントは、「**ポリシー**」アイコン付きで表示され、それをタップまたはクリックすると、そのコンポーネントのポリシーおよびプロパティを編集できます。
 
@@ -511,12 +511,12 @@ Under **Policy** you can select an existing policy to apply to the component via
 
    ![ロック解除済みコンポーネント](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
-* （**構造**&#x200B;モードで）コンテナコンポーネントのロックが解除されている場合、（**初期コンテンツ**&#x200B;モードで）新しいコンポーネントをコンテナに追加できます。Components added in **Initial Content** mode can be moved on or deleted from resulting pages.
+* （**構造**&#x200B;モードで）コンテナコンポーネントのロックが解除されている場合、（**初期コンテンツ**&#x200B;モードで）新しいコンポーネントをコンテナに追加できます。**初期コンテンツ**&#x200B;モードに追加されるコンポーネントは、結果ページに移動したり、そこから削除したりできます。
 
    コンポーネントは、**コンポーネントをここにドラッグ**&#x200B;領域を使用するか、適切なコンテナのツールバーから「**新規コンポーネントを挿入**」オプションを使用して追加できます。
 
-   ![コンポーネントの追加](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![コンポーネントの追加](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+   ![コンポーネントを追加](/help/sites-cloud/authoring/assets/templates-add-component.png)
+   ![コンポーネントを追加](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * テンプレートに基づいてページを作成した後に、テンプレートの初期コンテンツを更新しても、これらのページはテンプレートの初期コンテンツの変更により影響を受けません。
 
@@ -524,7 +524,7 @@ Under **Policy** you can select an existing policy to apply to the component via
 >
 >初期コンテンツは、コンテンツを作成するための出発点となるコンポーネントおよびページレイアウトを準備するためのものです。そのまま残す実際のコンテンツとなるものではありません。そのため、初期コンテンツは変換できません。
 >
->ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、コアコンポーネントのロ [ーカリゼーション機能を使用できます](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)。
+>ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/get-started/localization.html)を使用できます。
 
 ### テンプレートの編集 - レイアウト - テンプレート作成者 {#editing-a-template-layout-template-author}
 
@@ -536,14 +536,14 @@ Under **Policy** you can select an existing policy to apply to the component via
 
 ![テンプレートレイアウトの編集](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
-### Editing a Template - Page Policy - Template Author/Developer {#editing-a-template-page-policy-template-author-developer}
+### テンプレートの編集 - ページポリシー - テンプレート作成者／開発者 {#editing-a-template-page-policy-template-author-developer}
 
-必要なクライアント側ライブラリを含むページポリシーは、ページ情報メニューの **「ページポリシー** 」オプション **の下に維持されます** 。
+必要なクライアント側ライブラリを含むページポリシーは、**ページ情報**&#x200B;メニューの「**ページポリシー**」オプションの下に維持されます。
 
-To access the **Page Policy** dialog:
+**ページデザイン**&#x200B;ダイアログにアクセスするには
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Policy** to open the dialog.
-1. The **Page Policy** dialog opens and is divided into two sections:
+1. **テンプレートエディター**&#x200B;のツールバーで「**ページ情報**」、「**ページポリシー**」と選択してダイアログを開きます。
+1. **ページポリシー**&#x200B;ダイアログが開いて、次の 2 つのセクションに分割されます。
 
    * 左半分は、[ページポリシー](#page-policies)を定義します。
    * 右半分は、[ページプロパティ](#page-properties)を定義します。
@@ -559,26 +559,26 @@ To access the **Page Policy** dialog:
 
    ![ポリシーセレクター](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   新しいポリシーは、**ポリシーの選択**&#x200B;ドロップダウンの横にある追加ボタンを選択して追加できます。A new title should then be given in the **Policy Title** field.
+   新しいポリシーは、**ポリシーの選択**&#x200B;ドロップダウンの横にある追加ボタンを選択して追加できます。新しいタイトルを「**ポリシーのタイトル**」フィールドに入力します。
 
    ![ポリシーの追加ボタン](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   **ポリシーの選択**&#x200B;ドロップダウンで選択された既存のポリシーは、ドロップダウンの横にあるコピーボタンを使用して、新規ポリシーにコピーできます。A new title should then be given in the **Policy Title** field. By default the copied policy will be titled **Copy of X**, where X is the title of the copied policy.
+   **ポリシーの選択**&#x200B;ドロップダウンで選択された既存のポリシーは、ドロップダウンの横にあるコピーボタンを使用して、新規ポリシーにコピーできます。新しいタイトルを「**ポリシーのタイトル**」フィールドに入力します。デフォルトで、コピーされたポリシーは「**X のコピー**」というタイトルになります。ここで X はコピーされたポリシーのタイトルです。
 
-   ![「Copy Policy」ボタン](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+   ![ポリシーをコピーボタン](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * ポリシーのタイトルを「**ポリシーのタイトル**」フィールドで定義します。ポリシーにはタイトルを指定する必要がありますが、これは&#x200B;**ポリシーの選択**&#x200B;ドロップダウンから簡単に選択できます。
 
-   ![ポリシータイトル](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+   ![ポリシーのタイトル](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * ポリシーの説明は、「**ポリシーの説明**」フィールドにオプションで入力できます。
-* In the **Other templates also using the selected policy** section, you can easily see which other templates use the policy selected in the **Select policy** dropdown.
+* 「**他のテンプレートも選択したポリシーを使用しています**」セクションでは、「**ポリシーの選択**」ドロップダウンで選択したポリシーを、他のどのテンプレートが使用しているかを簡単に確認できます。
 
    ![ポリシーの使用](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### ページプロパティ {#page-properties}
 
-Using page properties, you can define the required client-side libraries by using the **Page Design** dialog. これらのクライアント側ライブラリには、テンプレートおよびそのテンプレートで作成されたページとともにロードされるスタイルシートおよび JavaScript が含まれます。
+ページのプロパティを使用し、「**ページデザイン**」ダイアログを使用して、必要なクライアント側ライブラリを定義できます。これらのクライアント側ライブラリには、テンプレートおよびそのテンプレートで作成されたページとともにロードされるスタイルシートおよび JavaScript が含まれます。
 
 ![ページプロパティ](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
@@ -638,7 +638,7 @@ Using page properties, you can define the required client-side libraries by usin
    以下の場合は特別に注意します。
 
    * 有効化されたテンプレートでのコンポーネントのロックまたはロック解除
-   * 既存のページが既にそれを使用している可能性があるため、これで副作用が起こる可能性があります。一般的に、以下のようになります。
+   * 既存のページが既にそれを使用している可能性があるので、これにより副作用が起こる可能性があります。一般的に、以下のようになります。
 
       * （ロックされていた）コンポーネントのロックを解除すると既存のページに表示されなくなります。
       * （編集可能だった）コンポーネントをロックするとそのコンテンツがページに表示されることを防ぎます。
