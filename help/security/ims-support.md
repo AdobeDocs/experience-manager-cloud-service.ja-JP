@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+source-git-commit: d51d0e8c57a4c3d3af3083c58a4c1510869c5604
 
 ---
 
@@ -138,7 +138,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 ![製品プロファイル](/help/security/assets/ims8.png)
 
-### Adobe Experience Manager as a Cloud Service へのログイン {#logging-in-to-aem}
+### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
 **ローカル管理者ログイン**
 
@@ -153,6 +153,10 @@ AEM では引き続き、管理者ユーザーのローカルログインをサ�
 他のユーザーの場合は、IMS がインスタンスに設定された後に、IMS ベースのログインを使用できます。ユーザーはまず、下に示すように、「Sign in with Adobe」ボタンをクリックします。
 
 ![IMS ベースのログイン](/help/security/assets/ims10.png)
+
+
+>[!NOTE]
+> IMSで作成された任意のユーザーは、Adobe IDまたはFederated IDを使用して作成できます。 ユーザーがAdobe IDを使用して設定されている場合は、ログインするために会社のIDプロバイダーを使用して認証されます。
 
 その後、ユーザーは IMS ログイン画面にリダイレクトされ、認証情報を入力する必要があります。
 
@@ -189,3 +193,54 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 下図に示すように、グループ **AEM-GRP_008** は **DAM ユーザー**&#x200B;の権限と特権を継承します。これは、同期したグループの権限を効果的に管理する方法で、LDAP ベースの認証方法でも一般的に使用されています。
 
 ![ACL3](/help/security/assets/ims18.png)
+
+
+### Cloud Manager{#accessing-cloud-manager}  へのアクセス
+
+Cloud ManagerまたはAEMにクラウドサービス環境としてアクセスするには、Cloud Manager製品のプロファイルに割り当てられている必要があります。
+
+Cloud Manager製品には次のプロファイルがあります。
+
+* ビジネスオーナー
+* デプロイメントマネージャー
+* プログラムマネージャー
+* デベロッパー
+* 統合
+
+>[!NOTE]
+>Cloud Manager には、適切な権限を持つ事前設定済みのロールが用意されています。特定の権限、事前設定済みのタスク、または各役割に関連付けられた権限を持つ各役割について詳しくは、「役割に基づく権限」を参 [照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
+
+**ユーザーの追加手順**
+
+1. 既追加存のプロファイル画面または新しいユーザ画面から特定のユーザに対するユーザ。
+
+1. または、次の図に示すように、概要画面 **から** 、ユーザを追加することもできます。
+
+   ![ACL3](/help/security/assets/ims23.png)
+
+   >[!NOTE]
+   >次の図に示すように、1人のプロファイルに複数のユーザーを割り当てることができます。
+
+   ![ACL3](/help/security/assets/ims22.png)
+
+
+1. 適切なプロファイルに追加したら、ユーザーインターフェイスの右上隅を使用して [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 、Cloud Managerの各テナントにアクセスできるようになります。
+
+
+### AEMのインスタンスへのクラウドサービスとしてのアクセス {#accessing-instance-cloud-service}
+
+>[!IMPORTANT]
+>前の節で説明した手順は、AEMのインスタンスにクラウドサービスとしてアクセスできるようになる前に、既に完了している必要があります。
+
+管理コンソール内のAEMインスタンスにアクセスするには **、管理コンソールの製品リストにCloud Managerプログラムと環境がプログラム内に表示さ**&#x200B;れます ****。
+
+例えば、下のスクリーンショットには、2つの利用可能な環境(開発者 *、発行)が表示さ* れます **。
+
+![ACL3](/help/security/assets/ims19.png)
+
+AEMインスタンスにアクセスするには、該当するクラウドサービス製品のグループにユーザーを追加する必要があります。
+
+すべての作成者インスタンスにはAEM管理者とAEMユーザーのプロファイルが割り当てられ、すべての発行インスタンスにはAEMユーザーのプロファイルが割り当てられます。 必要に応じて、他のプロファイルを追加できます。
+
+AEMインスタンスへの管理者レベルのアクセス権を取得するには、その製品のAEM管理者プロファイルにユーザーを追加します。
+
