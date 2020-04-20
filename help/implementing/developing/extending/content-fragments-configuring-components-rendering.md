@@ -2,7 +2,7 @@
 title: コンテンツフラグメントレンダリング用のコンポーネントの設定
 description: コンテンツフラグメントレンダリング用のコンポーネントの設定
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 * 独自のコンテンツフラグメントベースのコンポーネントを実装する必要があります。
 * 高度なサービスを利用する必要がある。
 
-ただし、コアコンポーネントを使用することをお勧めします。
+コアコンポーネントを使用することをお勧めします。
 
 >[!CAUTION]
 >
