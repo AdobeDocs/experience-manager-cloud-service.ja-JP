@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
+source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
 
 ---
 
@@ -40,6 +40,7 @@ source-git-commit: 8dc3270b355e9e855179f6b41602a3c28202a5b7
    + [アセットの Digital Rights Management](drm.md)
 + アセットの設定、管理、拡張 {#admin}
    + [API とリファレンス資料](developer-reference-material-apis.md)
+   + [AEM Assets HTTP API での コンテンツフラグメントのサポート](assets-api-content-fragments.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
    + [処理プロファイル](/help/assets/dynamic-media/processing-profiles.md)
    + [多言語アセットとアセット翻訳](translate-assets.md)
