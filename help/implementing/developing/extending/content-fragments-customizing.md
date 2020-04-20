@@ -2,7 +2,7 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 5f266358ed824d3783abb9ba591789ba47d7a521
 
 ---
 
@@ -293,11 +293,9 @@ Assetsコアと統合するには：
 
 * 次のタスクには、追加作業が必要な場合があります。
 
-   * Creating/removing new elements will not update the data structure of simple fragments (based on the **Simple Fragment** template).
-
    * データ構造を更新するには、 `ContentFragment` から新しいバリエーションを作成します。
 
-   * 既存のバリエーションを削除してもデータ構造は更新されません。
+   * を使用して、要素を介して既存のバリエーションを削除し `ContentElement.removeVariation()`ても、バリエーションに割り当てられたグローバルデータ構造は更新されません。 これらのデータ構造を確実に同期させるには、代わりにを使用し、バリエー `ContentFragment.removeVariation()` ションをグローバルに削除します。
 
 ## コンテンツフラグメント管理 API - クライアント側 {#the-content-fragment-management-api-client-side}
 
@@ -315,84 +313,18 @@ Assetsコアと統合するには：
 
 ## 編集セッション {#edit-sessions}
 
-編集セッションは、ユーザーがエディターのいずれかのページでコンテンツフラグメントを開くと開始されます。The editing session is finished when the user leaves the editor by selecting either **Save** or **Cancel**.
+>[!CAUTION]
+>
+>この背景情報を考慮して下さい。 ここでは(リポジトリ内の私的な領域としてマークされているので *)何も変更しないでくださいが* 、場合によっては、内部での動作を理解するのに役立ちます。
 
-### 要件 {#requirements}
+複数の表示（= HTMLページ）にまたがるコンテンツフラグメントの編集は、アトミックです。 このようなアトミックなマルチ表示編集機能は、一般的なAEMの概念ではないので、コンテンツフラグメントは、「編集セッション」と呼ばれるもの *を使用しま*&#x200B;す。
 
-編集セッションの制御には、次の要件があります。
+編集セッションは、ユーザーがエディターでコンテンツフラグメントを開いたときに開始されます。 The editing session is finished when the user leaves the editor by selecting either **Save** or **Cancel**.
 
-* 複数の表示（= HTMLページ）にまたがるコンテンツフラグメントの編集は、アトミックである必要があります。
+技術的には、すべての編集は、他のすべてのAEM *の編集と同様* 、ライブコンテンツで行われます。 編集セッションが開始されると、現在の未編集ステータスのバージョンが作成されます。 ユーザーが編集をキャンセルすると、そのバージョンが復元されます。 ユーザーが「保存」をクリッ **クした場合**、特定の操作は行われず、すべての編集がライブコンテンツで実行されたので ** 、すべての変更が既に保持されます。 また、「保存」をク **リックす** ると、一部のバックグラウンド処理（全文検索情報の作成や混在メディアアセットの処理など）がトリガされます。
 
-* さらに、編集はトランザクション単位&#x200B;**&#x200B;でおこなう必要があります。すなわち、編集セッションの終了時には、変更をコミット（保存）するか、ロールバック（キャンセル）します。
-
-* エッジケースを適切に処理する必要があります。例としては、ユーザーが手動で URL を入力したりグローバルナビゲーションを使用したりしてページから移動する場合などが考えられます。
-
-* データが失われないよう、定期的な自動保存（x 分ごと）をおこなう必要があります。
-
-* 2 人のユーザーが同時に 1 つのコンテンツフラグメントを編集する場合に、互いの変更を上書きしてはなりません。
-
-<!--
-#### Processes {#processes}
-
-The processes involved are:
-
-* Starting a session
-
-  * A new version of the content fragment is created.
-
-  * Auto save is started.
-
-  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
-
-* Finishing a session
-
-  * Auto save is stopped.
-
-  * Upon commit:
-
-    * The last modified information is updated.
-
-    * Cookies are removed.
-
-  * Upon rollback:
-
-    * The version of the content fragment that was created when the edit session was started is restored.
-
-    * Cookies are removed.
-
-* Editing
-
-  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-
-  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
-
-#### Actions {#actions}
-
-The possible actions are:
-
-* Entering a page
-
-  * Check if an editing session is already present; by checking the respective cookie.
-
-    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
-
-      * If the current fragment, reestablish the session.
-
-      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
-
-    * If no edit session exists, wait for the first change made by the user (see below).
-
-  * Check if the content fragment is already referenced on a page and display appropriate information if so.
-
-* Content change
-
-  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
-
--->
-
-* ページからの移動
-
-   * 編集セッションが存在していて、変更が保持されていない場合は、コンテンツが失われる可能性があることをユーザーに通知し、ページに留まるかどうかを尋ねるモーダル確認ダイアログが表示されます。
+エッジケースには、いくつかの安全対策があります。例えば、ユーザーが編集セッションを保存またはキャンセルせずにエディターを終了しようとした場合などです。 また、データの損失を防ぐために、定期的な自動保存を使用できます。
+2人のユーザーが同じコンテンツフラグメントを同時に編集できるので、他のユーザーが変更した内容が上書きされる場合があります。 これを防ぐには、フラグメントにDAM管理のチェックアウトアクションを適用して、コンテンツフラグメントをロ *ックする* 必要があります。
 
 ## 例 {#examples}
 
