@@ -3,7 +3,7 @@ title: Assets HTTP API
 description: Assets HTTP API の実装、データモデルおよび機能を学習します。Assets HTTP API を使用して、アセットに関する様々なタスクを実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 概要 {#overview}
 
-Assets HTTP API を使用すれば、アセットに対する作成、読み取り、更新、削除（CRUD）操作を実行できます。アセットにはバイナリ、メタデータ、レンディション、コメントが含まれるほか、AEM コンテンツフラグメントを使用した構造化コンテンツも含まれます。この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](content-fragments/content-fragments.md)しています。
+Assets HTTP API を使用すれば、アセットに対する作成、読み取り、更新、削除（CRUD）操作を実行できます。アセットにはバイナリ、メタデータ、レンディション、コメントが含まれるほか、AEM コンテンツフラグメントを使用した構造化コンテンツも含まれます。この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](assets-api-content-fragments.md)しています。
 
 この API にアクセスするには、次の手順を実行します。
 
@@ -31,13 +31,13 @@ API応答は、一部のMIMEタイプのJSONファイルで、すべてのMIME�
 
 [コンテンツフラグメント](content-fragments/content-fragments.md)は特殊なタイプのアセットです。テキスト、数値、日付などの構造化データにアクセスするために使用できます。`standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
-詳しくは、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/content-fragments.md)を参照してください。
+詳しくは、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](assets-api-content-fragments.md)を参照してください。
 
 ## データモデル {#data-model}
 
 Assets HTTP API は、フォルダーとアセット（標準アセット用）という 2 つの主要要素を公開します。
 
-さらに、コンテンツフラグメント内の構造化コンテンツを記述するカスタムデータモデルに対する詳細な要素が公開されます。詳しくは、[コンテンツフラグメントのデータモデル](content-fragments/content-fragments.md)を参照してください。
+さらに、コンテンツフラグメント内の構造化コンテンツを記述するカスタムデータモデルに対する詳細な要素が公開されます。詳しくは、[コンテンツフラグメントのデータモデル](assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
 
 ### フォルダー {#folders}
 
@@ -66,7 +66,7 @@ AEM では、アセットには次の要素が含まれています。
 * オリジナルのレンディション（最初にアップロードされたアセット）、サムネール、その他の各種レンディションなど複数のレンディション。追加レンディションは、サイズやビデオエンコーディングの異なる画像や、PDF または InDesign から抽出されたページの場合があります。
 * オプションのコメント
 
-コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/content-fragments.md)を参照してください。
+コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](assets-api-content-fragments.md)を参照してください。
 
 AEM では、フォルダーには次のコンポーネントが含まれています。
 
