@@ -1,8 +1,8 @@
 ---
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントはアセットとして保存されるので、主にアセットコンソールから管理します。
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 >
 >コンテンツフラグメントは、ページのオーサリングで使用します。[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
-## コンテンツフラグメントの作成{#creating-content-fragments}
+## コンテンツフラグメントの作成 {#creating-content-fragments}
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 
@@ -24,13 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 >[!NOTE]
 >
->単純なコンテンツフラグメントに使用されるテンプレートについて詳しくは、「コンテンツフラグメントの開発」を参照してください。
-
-<!--
->[!NOTE]
->
->See [Developing Content Fragments](/help/sites-developing/customizing-content-fragments.md) for further information on templates; used for simple content fragments.
--->
+>単純なコンテンツフラグメントに使用されるテンプレートについて詳しくは、[コンテンツフラグメントの開発](/help/implementing/developing/extending/content-fragments-customizing.md)を参照してください。
 
 ### コンテンツフラグメントの作成 {#creating-a-content-fragment}
 
@@ -42,7 +36,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 以下を指定します。
 
-      * テンプレート - **単純なフラグメント**&#x200B;など <!-- [Template](/help/sites-developing/content-fragment-templates.md) - for example **Simple Fragment** -->
+      * テンプレート - **単純なフラグメント**&#x200B;など
 
       * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **空港**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
    * 使用可能なテンプレートとモデルがすべて表示されます。
@@ -120,11 +114,9 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 編集するためにフラグメントを開くには：
 
-<!--
 >[!CAUTION]
 >
->To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues.
--->
+>コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
 >[!CAUTION]
 >
@@ -164,7 +156,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >
    >「**保存**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## 保存、キャンセルおよびバージョン{#save-cancel-and-versions}
+## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -178,13 +170,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    >[!CAUTION]
    >
-   >コンテンツフラグメントを編集するには、適切な権限が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
-
-   <!-- 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-  -->
+   >コンテンツフラグメントを編集するには、[適切な権限](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
    >[!NOTE]
    >
@@ -224,19 +210,19 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理{#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
 
 マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける{#associating-content-with-your-fragment}
+## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
 
 フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
-## フラグメントのメタデータ（プロパティ）の表示と編集{#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 「[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)」タブを使用し、フラグメントのプロパティを表示して編集できます。
 
-## コンテンツフラグメントのタイムライン{#timeline-for-content-fragments}
+## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
