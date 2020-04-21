@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
+source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 
 ---
 
@@ -40,13 +40,13 @@ source-git-commit: 7bd9c97d4e8c46aa8644560ecbddf24df96325e4
    + [アセットの Digital Rights Management](drm.md)
 + アセットの設定、管理、拡張 {#admin}
    + [API とリファレンス資料](developer-reference-material-apis.md)
-   + [AEM Assets HTTP API での コンテンツフラグメントのサポート](assets-api-content-fragments.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
    + [処理プロファイル](/help/assets/dynamic-media/processing-profiles.md)
    + [多言語アセットとアセット翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
    + [アセットエディターの拡張](extend-asset-editor.md)
    + [Assets HTTP API](mac-api-assets.md)
+   + [AEM Assets HTTP API での コンテンツフラグメントのサポート](assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
