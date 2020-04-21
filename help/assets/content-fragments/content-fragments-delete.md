@@ -1,8 +1,8 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項
 description: コンテンツフラグメント - 削除に関する考慮事項
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    コンテンツフラグメントエディターの基本操作を使用するには、そうした一時的なサブ要素を削除できる必要があります。例えば、バリエーションの操作、メタデータの編集、関連コンテンツの管理などをおこなう場合です。
 
    * **使用例**：コンテンツフラグメントの編集または更新を必要とするユーザーが&#x200B;**フラグメント全体を削除できない**&#x200B;場合。
-   * **権限**：「エディター機能のみに必要な権限」を参照してください。<!-- See [Permissions Required for Editor Functionality Only](/help/assets/content-fragments-delete.md#permissions-required-for-editor-functionality-only). -->
+   * **権限**：[エディター機能のみに必要な権限](#permissions-required-for-editor-functionality-only)を参照してください。
 
 >[!NOTE]
 >
