@@ -1,8 +1,8 @@
 ---
 title: コンテンツフラグメントの操作
 description: コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用がいかに可能になるか、学習します。
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager（AEM）コンテンツフラグメントを使用す�
 
 以降のページでは、次のような、コンテンツフラグメントを作成、構成、管理するためのタスクについて説明します。
 
-* [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)- コンテンツフラグメントを作成し、編集、公開および参照します。
+* [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md) — コンテンツフラグメントの作成、編集、パブリッシュ、参照
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md) - モデルを有効化、作成および定義します。
 * [バリエーション - フラグメントコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md) - フラグメントコンテンツをオーサリングし、マスターのバリエーションを作成します。
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - フラグメントに Markdown 構文を使用します。
@@ -46,7 +46,7 @@ Adobe Experience Manager（AEM）コンテンツフラグメントを使用す�
 
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
 
-## コンテンツフラグメントとコンテンツサービス{#content-fragments-and-content-services}
+## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 
 AEM コンテンツサービスは、Web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。
 
@@ -161,7 +161,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * 単純なフラグメントの場合：
 
       * コンテンツは、1 つ以上の複数行テキストフィールドまたは要素に含まれます。
-      * 要素はフラグメントテンプレートで定義されます（フラグメントのオーサリング時には定義できません。「コンテンツフラグメントテンプレート」を参照してください）。<!--    * The elements are defined in the fragment template (cannot be defined when authoring the fragment, see [Content Fragment Templates](/help/sites-developing/content-fragment-templates.md)). -->
+      * 要素はフラグメントテンプレートで定義されます（フラグメントの作成時には定義できません）。
 
 * **フラグメントの段落**
 
@@ -263,7 +263,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * **フラグメントのテンプレート**
 
    * [単純なフラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
-   * 通常、プロジェクトの実装時に開発されます。オーサリング時には作成できません。<!--  * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring. -->
+   * 通常、プロジェクトの実装時に開発されます。オーサリング時には作成できません。
    * 単純なフラグメントの基本プロパティ（タイトル、テキスト要素の数、タグ定義）を定義します。
    * テンプレート定義にはタイトルと 1 つのテキスト要素が必要です。その他すべてはオプションです。テンプレートによって、フラグメントおよびデフォルトコンテンツ（該当する場合）の最小範囲が定義されます。作成者は後から、テンプレートに定義されている内容を超えてフラグメントを拡張できます。
 
@@ -275,7 +275,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * フラグメントは、レイアウトを定義し、一部またはすべての要素／バリエーションと関連するコンテンツを配信するために、1 つ以上の専用コンポーネントを必要とします。
    * 作成時にフラグメントをページにドラッグすると、必須コンポーネントが自動的に関連付けられます。
 
-## 使用例{#example-usage}
+## 使用例 {#example-usage}
 
 フラグメントと、その要素およびバリエーションを一緒に使用して、複数のチャネルに対応する明解なコンテンツを作成できます。フラグメントを設計するときは、何をどこで使用するかを考慮する必要があります。
 
