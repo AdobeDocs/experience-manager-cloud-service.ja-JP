@@ -2,7 +2,7 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントはアセットとして保存されるので、主にアセットコンソールから管理します。
 translation-type: tm+mt
-source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
+source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ---
 
@@ -22,10 +22,6 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 
 構造化コンテンツを含むコンテンツフラグメントを作成する前に、[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)を有効にして作成できます。
 
->[!NOTE]
->
->単純なコンテンツフラグメントに使用されるテンプレートについて詳しくは、[コンテンツフラグメントの開発](/help/implementing/developing/extending/content-fragments-customizing.md)を参照してください。
-
 ### コンテンツフラグメントの作成 {#creating-a-content-fragment}
 
 コンテンツフラグメントの作成方法は基本的に単純なフラグメントと構造化フラグメントで同じです。
@@ -34,12 +30,13 @@ source-git-commit: 42271e25dc9f0a29962c4c9c587af29319f1f9df
 2. 「**作成**」を選択し、「**コンテンツフラグメント**」を選択して、ウィザードを開きます。
 3. ウィザードの最初の手順では、新しいフラグメントの基盤を指定することを求められます。
 
-   * 以下を指定します。
+   * 次のように指定できます。
 
-      * テンプレート - **単純なフラグメント**&#x200B;など
+      * 単純なフ **ラグメントテンプレート** 。
 
       * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **空港**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
-   * 使用可能なテンプレートとモデルがすべて表示されます。
+
+         * 使用可能なすべてのモデルが表示されます。
    選択した後、「**次へ**」を使用して続けます。
 
    ![フラグメントの基盤](assets/cfm-managing-01.png)
