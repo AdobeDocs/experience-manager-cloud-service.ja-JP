@@ -2,7 +2,7 @@
 title: コンテンツフラグメントの操作
 description: コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用がいかに可能になるか、学習します。
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
 
 ---
 
@@ -93,11 +93,19 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 コンテンツフラグメントは次のどちらかになります。
 
-* 単純なフラグメント。
-事前定義済みの構造がありません。テキストと画像のみが含まれています。These are based on the **Simple Fragment** template.
+* 単純なフラグメント
 
-* 構造化コンテンツが含まれるフラグメント。
-作成されるフラグメントの構造を事前定義する[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)に基づいています。JSON エクスポーターを使用したコンテンツサービスの実現にも使用できます。
+   * これらの構造は定義済みではありません。
+
+   * テキストと画像のみが含まれています。
+
+   * These are based on the **Simple Fragment** template.
+
+* 構造化コンテンツを含むフラグメント
+
+   * These are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
+
+   * JSON エクスポーターを使用したコンテンツサービスの実現にも使用できます。
 
 ## コンテンツタイプ {#content-type}
 
