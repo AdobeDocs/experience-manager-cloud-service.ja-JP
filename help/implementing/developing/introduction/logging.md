@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
+source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
 
 ---
 
@@ -90,21 +90,21 @@ The first is a special case as it controls both the `request` and `access` logs:
 
 * 特定のライターにリンクしないので、デフォルト設定で暗黙のライターを作成して使用します（毎日のログローテーション）。
 
-### AEM as a Cloud Service HTTPリクエストログ {#request-logging}
+**AEM as a Cloud Service HTTPリクエストログ**
 
 
 AEM WCM およびリポジトリに対するアクセス要求はすべてここに登録されます。
 
 出力例:
 
-### AEM HTTPリクエスト/応答アクセスログ {#access-logging}
+**AEM HTTPリクエスト/応答アクセスログ**
 
 
 各アクセス要求が、応答と共にここに登録されます。
 
 出力例:
 
-### Apache Webサーバー/ディスパッチャーログ {#dispatcher-logging}
+**Apache Webサーバー/ディスパッチャーログ**
 
 これは、ディスパッチャーの問題のデバッグに使用するログです。 詳しくは、「Apacheおよびディスパッ [チャーの設定のデバッグ」を参照してくださ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/)い。
 
