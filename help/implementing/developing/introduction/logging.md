@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
+source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
 
 ---
 
@@ -88,7 +88,7 @@ The first is a special case as it controls both the `request` and `access` logs:
 
    * サービス `Warning` のメッセージ `../logs/error.log` をに書き込みま `org.apache.pdfbox`す。
 
-* 特定のライターにリンクしないので、デフォルト設定で暗黙のライターを作成して使用します（毎日のログローテーション）。
+* 特定のWriterにリンクしないので、暗黙的なWriterを作成し、デフォルト設定で使用します。
 
 **AEM as a Cloud Service HTTPリクエストログ**
 
@@ -97,7 +97,7 @@ AEM WCM およびリポジトリに対するアクセス要求はすべてここ
 
 出力例:
 
-**AEM HTTPリクエスト/応答アクセスログ**
+**AEM as a Cloud Service HTTPリクエスト/応答アクセスログ**
 
 
 各アクセス要求が、応答と共にここに登録されます。
@@ -185,7 +185,7 @@ leftover text from the last breakaway chunk (re dispatcher) -->
   This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
 -->
 
-## ログレベルの設定 {#setting-the-log-level}
+### ログレベルの設定 {#setting-the-log-level}
 
 クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座にはおこなわれないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
 
@@ -193,7 +193,7 @@ leftover text from the last breakaway chunk (re dispatcher) -->
 >
 > 以下に示す設定の変更を実行するには、ローカルの開発環境で設定の変更を作成し、それらをクラウドサービスインスタンスとしてAEMにプッシュする必要があります。 この方法について詳しくは、「クラウドサービスとしてのAEM [へのデプロイ」を参照してください](/help/implementing/deploying/overview.md)。
 
-### デバッグログレベルのアクティベート {#activating-the-debug-log-level}
+**デバッグログレベルのアクティベート**
 
 >[!WARNING]
 >
