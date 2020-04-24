@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: f7c518d7af321052799888894c40d67e24c5abda
+source-git-commit: a99f6aba99b4f203b8458c69b98a88d4bd7ee4a2
 
 ---
 
