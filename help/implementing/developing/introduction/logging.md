@@ -2,12 +2,28 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 95511543b3393d422e2cfa23f9af246365d3a993
+source-git-commit: 75c36cf877501cbf0d97512fd56605348534b4a0
 
 ---
 
 
 # ログ{#logging}
+
+AEMのクラウドサービスは、顧客が独自のエクスペリエンスを作成するためのカスタムコードを含めるためのプラットフォームです。 このことを念頭に置いて、ログは、クラウド環境上のカスタムコードをデバッグするため、およびローカル開発環境向けに特に重要な機能です。
+
+
+<!-- ## Global Logging {#global-logging}
+
+[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
+
+* the logging level
+* the location of the central log file
+* the number of versions to be kept
+* version rotation; either maximum size or a time interval
+* the format to be used when writing the log messages
+-->
+
+## AEM as a Cloud Service Logging {#aem-as-a-cloud-service-logging}
 
 AEMをクラウドサービスオファーとして設定できます。
 
@@ -23,50 +39,7 @@ For local development, logs entries are written to local files in the `/crx-quic
 >
 >AEMにクラウドサービスとしてログインする方法は、Slingの原則に基づいています。 詳しくは [Sling Logging](https://sling.apache.org/site/logging.html) を参照してください。
 
-<!-- ## Global Logging {#global-logging}
-
-[Apache Sling Logging Configuration](https://sling.apache.org/documentation/development/logging.html#user-configuration---osgi-based) is used to configure the root logger. This defines the global settings for logging in AEM as a Cloud Service:
-
-* the logging level
-* the location of the central log file
-* the number of versions to be kept
-* version rotation; either maximum size or a time interval
-* the format to be used when writing the log messages
--->
-
-## 個々のサービス用のロガーとライター {#loggers-and-writers-for-individual-services}
-
-グローバルログの設定に加え、AEMをクラウドサービスとして使用すると、個々のサービスに対して次のような特定の設定を行うことができます。
-
-* 具体的なログレベル
-* ロガー（ログメッセージを提供する OSGi サービス）
-
-これにより、単一のサービスに関するログメッセージを別個のファイルに送ることができます。これは、開発やテストの際、例えば特定のサービスのログレベルを上げる必要がある場合などに特に便利です。
-
-クラウドサービスとしてのAEMでは、次の情報を使用してログメッセージをファイルに書き込みます。
-
-1. **OSGi サービス**（ロガー）がログメッセージを書き込みます。
-1. **Logging Logger** がこのメッセージを受け取り、仕様に従って書式設定します。
-1. **Logging Writer** が、これらすべてのメッセージを、定義済みの物理ファイルに書き込みます。
-
-これらの要素は、該当する要素の次のパラメーターによってリンクされます。
-
-* **Logger(Logging Logger)**
-
-   メッセージを生成するサービスを定義します。
-
-<!-- * **Log File (Logging Logger)**
-
-  Define the physical file for storing the log messages.
-
-  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
-
-* **Log File (Logging Writer)**
-
-  Define the physical file that the log messages will be written to.
-
-  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
--->
+## AEM as a Cloud Service Java Logging {#aem-as-a-cloud-service-java-logging}
 
 ### 標準のロガーおよびライター {#standard-loggers-and-writers}
 
@@ -117,7 +90,27 @@ The first is a special case as it controls both the `request` and `access` logs:
 
 * 特定のライターにリンクしないので、デフォルト設定で暗黙のライターを作成して使用します（毎日のログローテーション）。
 
-AEM上にクラウドサービスインスタンスとして存在する3種類のログ（およびログ）の他に、ディスパッチャーの問題のデ`request`バッグに `access``error` 使用する別のログも存在します。 詳しくは、「Apacheおよびディスパッ [チャーの設定のデバッグ」を参照してくださ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html#debugging-apache-and-dispatcher-configuration)い。
+### AEM as a Cloud Service HTTPリクエストログ {#request-logging}
+
+
+AEM WCM およびリポジトリに対するアクセス要求はすべてここに登録されます。
+
+出力例:
+
+### AEM HTTPリクエスト/応答アクセスログ {#access-logging}
+
+
+各アクセス要求が、応答と共にここに登録されます。
+
+出力例:
+
+### Apache Webサーバー/ディスパッチャーログ {#dispatcher-logging}
+
+これは、ディスパッチャーの問題のデバッグに使用するログです。 詳しくは、「Apacheおよびディスパッ [チャーの設定のデバッグ」を参照してくださ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/)い。
+
+<!-- Besides the three types of logs present on an AEM as a Cloud Service instance (`request`, `access` and `error` logs) there is another dispatcher/overview.html#debugging-apache-and-dispatcher-configuration.
+
+leftover text from the last breakaway chunk (re dispatcher) -->
 
 基本的な実践に関しては、AEMに現在クラウドサービスMavenのアーキタイプとして存在する設定に合わせて調整することをお勧めします。 次に、特定の環境タイプに対して異なるログ設定とレベルを設定します。
 
@@ -133,11 +126,8 @@ AEM上にクラウドサービスインスタンスとして存在する3種類�
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="debug"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 
@@ -147,11 +137,8 @@ AEM上にクラウドサービスインスタンスとして存在する3種類�
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="warn"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
 
 * `prod` 環境:
@@ -160,12 +147,43 @@ AEM上にクラウドサービスインスタンスとして存在する3種類�
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-    org.apache.sling.commons.log.file="logs/error.log"
     org.apache.sling.commons.log.level="error"
-    org.apache.sling.commons.log.names="[${package}]"
-    org.apache.sling.commons.log.additiv="true"
-    org.apache.sling.commons.log.pattern="${symbol_escape}{0,date,yyyy-MM-dd HH:mm:ss.SSS} {4} [{3}] {5}" />
+    org.apache.sling.commons.log.names="[com.mycompany.myapp]" />
 ```
+
+### 個々のサービス用のロガーとライター {#loggers-and-writers-for-individual-services}
+
+グローバルログの設定に加え、AEMをクラウドサービスとして使用すると、個々のサービスに対して次のような特定の設定を行うことができます。
+
+* 具体的なログレベル
+* ロガー（ログメッセージを提供する OSGi サービス）
+
+これにより、単一のサービスに関するログメッセージを別個のファイルに送ることができます。これは、開発やテストの際、例えば特定のサービスのログレベルを上げる必要がある場合などに特に便利です。
+
+クラウドサービスとしてのAEMでは、次の情報を使用してログメッセージをファイルに書き込みます。
+
+1. **OSGi サービス**（ロガー）がログメッセージを書き込みます。
+1. **Logging Logger** がこのメッセージを受け取り、仕様に従って書式設定します。
+1. **Logging Writer** が、これらすべてのメッセージを、定義済みの物理ファイルに書き込みます。
+
+これらの要素は、該当する要素の次のパラメーターによってリンクされます。
+
+* **Logger(Logging Logger)**
+
+   メッセージを生成するサービスを定義します。
+
+<!-- * **Log File (Logging Logger)**
+
+  Define the physical file for storing the log messages.
+
+  This is used to link a Logging Logger with a Logging Writer. The value must be identical to the same parameter in the Logging Writer configuration for the connection to be made.
+
+* **Log File (Logging Writer)**
+
+  Define the physical file that the log messages will be written to.
+
+  This must be identical to the same parameter in the Logging Writer configuration, or the match will not be made. If there is no match then an implicit Writer will be created with default configuration (daily log rotation).
+-->
 
 ## ログレベルの設定 {#setting-the-log-level}
 
@@ -401,3 +419,70 @@ AEM上にクラウドサービスインスタンスとして存在する3種類�
    The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`. -->
 
 The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.draf
+
+## ログへのアクセスと管理 {#manage-logs}
+
+ユーザーは、環境カードを使用して、選択した環境の使用可能なログファイルのリストにアクセスできます。ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
+
+これらのファイルは、UI の&#x200B;**概要**&#x200B;ページからダウンロードできます。
+
+![](assets/manage-logs1.png)
+
+また、**環境**&#x200B;ページからもダウンロードできます。
+
+![](assets/manage-logs2.png)
+
+>[!Note]
+>開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
+
+![](assets/manage-logs3.png)
+
+
+### API を介したログの入手 {#logs-thorugh-api}
+
+UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
+
+例えば、特定の環境のログファイルをダウンロードする場合は、次のようなコマンドになります。
+
+```java
+$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
+```
+
+次のコマンドを使用すると、ログの追跡が可能になります。
+
+```java
+$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
+```
+
+環境 ID（この例の場合は 1884）と使用可能なサービス名またはログ名のオプションを取得するには、次のコマンドを使用します。
+
+```java
+$ aio cloudmanager:list-environments
+Environment Id Name                     Type  Description                          
+1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
+1884           FoundationInternal_stage stage Foundation Internal STAGE environment
+1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
+ 
+ 
+$ aio cloudmanager:list-available-log-options 1884
+Environment Id Service    Name         
+1884           author     aemerror     
+1884           author     aemrequest   
+1884           author     aemaccess    
+1884           publish    aemerror     
+1884           publish    aemrequest   
+1884           publish    aemaccess    
+1884           dispatcher httpderror   
+1884           dispatcher aemdispatcher
+1884           dispatcher httpdaccess
+```
+
+>[!Note]
+>**ログのダウンロードは** UI でも API でも可能ですが、**ログの追跡**&#x200B;は API または CLI でのみ可能です。
+
+### その他のリソース {#resources}
+
+Cloud Manager APIとAdobe I/O CLIについて詳しくは、次の追加のリソースを参照してください。
+
+* [Cloud Manager APIドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
