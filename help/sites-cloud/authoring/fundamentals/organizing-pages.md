@@ -1,8 +1,8 @@
 ---
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 42b614a120a564e15ff0a9643ab1a0ca0148b3df
 
 ---
 
@@ -244,7 +244,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 >
 >ページエディターから他のページへの移動は、編集モードではリンクがアクティブにならないので、プレビューモードでのみ実行できます。
 
-### ページのコピーと貼り付け{#copying-and-pasting-a-page}
+### ページのコピーと貼り付け {#copying-and-pasting-a-page}
 
 ページとそのすべてのサブページを新しい場所にコピーできます。
 
@@ -255,19 +255,21 @@ AEM では、複数のテンプレートが標準提供されています。使�
    * [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)とツールバー
    「**コピー**」ページアイコンを選択します。
 
-   ![コピーボタン](/help/sites-cloud/authoring/assets/copy.png)
+   ![コピー](/help/sites-cloud/authoring/assets/copy.png)
 
    >[!NOTE]
    >
    >選択モードの場合は、ページのコピー後に選択モードが自動的に終了します。
 
 1. ページの新しいコピーを配置する場所に移動します。
-1. **貼り付け**&#x200B;ページアイコンを使用します。
+1. 貼り付 **け** (Paste)アイコンは、右側にドロップダウン矢印が付いています。
 
-   ![貼り付けボタン](/help/sites-cloud/authoring/assets/paste.png)
+   ![貼り付け](/help/sites-cloud/authoring/assets/paste.png)
 
-   この場所に元のページとサブページのコピーが作成されます。
+   次のいずれかを実行できます。
 
+   1. ページを貼り付け **アイコン** (Paste)を選択します。元のページと子ページのコピーがこの場所に作成されます。
+   1. ドロップダウン矢印を選択すると、「子なしで貼り付け」オ **プションが表示され** ます。 元のページのコピーがこの場所に作成されます。子ページはコピーされません。
    >[!NOTE]
    >
    >ページのコピー先に同名のページが既に存在する場合は、その名前のバリエーションが数字を付加して自動的に生成されます。例えば、`beach` が既に存在する場合は、`beach` という名前の新しいページは `beach1` になります。
