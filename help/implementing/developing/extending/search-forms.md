@@ -2,7 +2,7 @@
 title: 検索フォームの設定
 description: クラウドサービスとしてのAdobe Experience Manager用のSearch Formsの設定を参照してください。
 translation-type: tm+mt
-source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -11,23 +11,23 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 クラウドサービスとしてのAdobe Experience Managerには、強力な検索メカニズムが付属 [してい](/help/sites-cloud/authoring/getting-started/search.md) ます。
 
-これと組み合わせて、コンテンツのフィルタリングに役立つ定義済みのオプションのセットも用意されています。 これらのファセットには、変更日、公開ステ **ータス**、 **Livecopyステータスなどの事前定義されたファセットが含まれており****** 、必要なリソースをすばやく掘り下げることができます。
+これと組み合わせて、コンテンツのフィルタリングに役立つ定義済みのオプションのセットもあります。 これらのファセットには、変更日、公 **開ステータス**、 **Livecopyステータスなどの事前定義されたファセットが含まれており****** 、必要なリソースをすばやく掘り下げることができます。
 
 ![検索とフィルターの使用](assets/csf-usage.png)
 
-これらを組み合わせると、次の情報からすばやく簡単にコンテンツを見つけることができます。
+これらを組み合わせると、次の場所からすばやく簡単にコンテンツを見つけることができます。
 
 * [検索とフィルター](/help/sites-cloud/authoring/getting-started/search.md#search-and-filter)
-* [レールセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+* [パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 * アセット [ブラウザ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser) （ページ編集時）
 
 >[!NOTE]
 >
->基になる [Content Search and Indexingサービスを設定できます](/help/operations/indexing.md) 。
+>基になるコンテンツ検索およびインデッ [クスサービスを設定できます](/help/operations/indexing.md) 。
 
-検索フ **ォームを使用すると**、これらのパネルを特定のニーズに合わせてカスタマイズしたり、拡張したりできます。
+検索フ **ォームを使用する**、これらのパネルを特定のニーズに合わせてカスタマイズ、拡張できます。
 
-「検 **索フォーム** 」では、組み合わせて定義できる述語をあらかじめ [選択](#predicates-and-their-settings) できます。 [これらのフォームを設定するためのダイアログ](#configuring-your-search-forms)には、次の手順でアクセスできます。
+検索フ **ォーム** では、組み合わせて定義できる予測の標準選択 [機能](#predicates-and-their-settings) が提供されています。 [これらのフォームを設定するためのダイアログ](#configuring-your-search-forms)には、次の手順でアクセスできます。
 
 * **ツール**
 
@@ -37,11 +37,11 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
 
 ## デフォルトフォーム {#default-forms}
 
-最初に **Search Forms** Consoleにアクセスすると、すべての設定にパドロック記号が表示されます。 これは、対応する設定がデフォルトの（そのまま使用できる）設定であり、削除できないことを示します。 カスタマイズして保存すると、ロックが消えます。 カスタマイズした設定を削 [除すると](#deleting-a-configuration-to-reinstate-the-default)、再び表示されます。削除すると、デフォルト（およびパドロックインジケータ）が復元されます。
+最初に検索フォームコンソー **ルにアクセスすると** 、すべての設定にパドロックの記号が表示されます。 これは、対応する設定がデフォルトの（そのまま使用できる）設定であり、削除できないことを示します。 設定をカスタマイズし、保存すると、ロックが消えます。 カスタマイズした設定を削 [除すると](#deleting-a-configuration-to-reinstate-the-default)、再び表示されます。削除すると、デフォルト（およびパドロックインジケータ）が復元されます。
 
 ![検索フォームの設定の概要](assets/csf-overview.png)
 
-デフォルトの設定（アルファベット順に表示）は次のとおりです。
+デフォルトの設定（アルファベット順に一覧表示）は、次のとおりです。
 
 * **アセット管理者の検索レール:**
 
@@ -92,8 +92,8 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
    <th>設定</th>
   </tr>
   <tr>
-   <td>Analytics</td>
-   <td>Sitesブラウザーの検索/フィルター機能を使用して、解析用データを表示できます。Analytics検索フィルターは、マップされたカスタマイズされた分析列に合わせて読み込まれます。</td>
+   <td>分析</td>
+   <td>SitesブラウザーでAnalyticsのデータを表示する際の検索/フィルター機能。Analytics検索フィルターは、マッピングされたカスタマイズされた分析列に合わせて読み込まれます。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -135,7 +135,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>チェックアウトステータス</td>
-   <td>特定のチェックアウトステータスを持つアセットを検索します。</td>
+   <td>特定のチェックアウトステータスのアセットを検索します。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -156,8 +156,8 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
     </ul> </td>
   </tr>
   <tr>
-   <td>日付 範囲</td>
-   <td>指定した範囲内に作成されたリソースで日付プロパティを検索します。 検索パネルで、開始日と終了日を指定できます。</td>
+   <td>日付範囲</td>
+   <td>指定した範囲内で作成されたリソースの日付プロパティを検索します。 検索パネルで、開始日と終了日を指定できます。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -213,7 +213,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>グループ</td>
-   <td>グループの検索述語（「Insights Predicate」内でのみ使用）。</td>
+   <td>グループの検索述語（「インサイトの述語」内でのみ使用）。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -221,7 +221,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
     </ul> </td>
   </tr>
   <tr>
-   <td>非表示のフィルター</td>
+   <td>非表示 フィルター</td>
    <td>プロパティおよび値のフィルターで、ユーザーには表示されません。</td>
    <td>
     <ul>
@@ -233,7 +233,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   <tr>
    <td>インサイト</td>
    <td>選択したインサイトパラメーターに従って検索します。</td>
-   <td>これは、複数の述語から構成される複雑な述語です。
+   <td>複数の述語から構成される複雑な述語です。
     <ul>
      <li>グループ</li>
      <li>範囲</li>
@@ -252,7 +252,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>複数値プロパティ</td>
-   <td>指定したプロパティの複数の値で検索します。</td>
+   <td>指定したプロパティの複数の値を検索します。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -279,7 +279,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
     </ul> </td>
   </tr>
   <tr>
-   <td>オプションプロパティ</td>
+   <td>オプション プロパティ</td>
    <td>オプションの1つ以上のプロパティで検索します。</td>
    <td>
     <ul>
@@ -293,7 +293,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>ページステータス</td>
-   <td>ステータスに従ってページをフィルタリングします。</td>
+   <td>ステータスに従ってページをフィルタします。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -313,8 +313,8 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
     </ul> </td>
   </tr>
   <tr>
-   <td>パス ブラウザー</td>
-   <td>事前定義されたルートパスの下で検索するパスブラウザーを提供します。</td>
+   <td>パスブラウザー</td>
+   <td>事前に定義されたルートパスの下で検索するパスブラウザーを提供します。</td>
    <td>
     <ul>
      <li>プレースホルダー</li>
@@ -325,10 +325,10 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>パス 非表示</td>
-   <td>パスに対するフィルター。ユーザーには表示されません。</td>
+   <td>パスに対するフィルター（ユーザーには表示されません）。</td>
    <td>
     <ul>
-     <li>プロパティ名(`path`)</li>
+     <li>プロパティ名(`path')</li>
      <li>プロパティ値(`/content/dam`)</li>
     </ul> 
    </td>
@@ -349,7 +349,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>公開ステータス</td>
-   <td>発行ステータスに基づいてリソースをフィルターします。</td>
+   <td>公開ステータスに基づいてリソースをフィルターします。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -380,7 +380,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   </tr>
   <tr>
    <td>相対的な日付</td>
-   <td>作成日の相対的な日付に基づいてリソースをフィルターします。 例えば、1週間前、1か月前などです。</td>
+   <td>リソースの作成日の相対的な日付に基づいてリソースをフィルタリングします。 例えば、1週間前、1か月前などです。</td>
    <td>
     <ul>
      <li>フィールドラベル</li>
@@ -403,7 +403,7 @@ source-git-commit: c9a7eacaf2d811374299a36b4da0108b34318277
   <tr>
    <td>ステータス</td>
    <td>承認およびチェックアウトのステータスに従って検索します。</td>
-   <td>これは、複数の述語から構成される複雑な述語です。
+   <td>複数の述語から構成される複雑な述語です。
     <ul>
      <li>承認ステータス</li>
      <li>チェックアウトステータス</li>
@@ -503,7 +503,7 @@ This information is for reference only, you must not make changes to `/libs`.
 
 ### 述語の設定 {#predicate-settings}
 
-述語に応じて、次のような設定を構成できます。
+述語に応じて、次のような設定を選択できます。
 
 * **フィールドラベル**
 
@@ -515,23 +515,23 @@ This information is for reference only, you must not make changes to `/libs`.
 
 * **プレースホルダー**
 
-   フィルタリングテキストが入力されていない場合は、空のテキストまたは述語のプレースホルダー。
+   空のテキスト、またはフィルタリングテキストが入力されていない場合の述語のプレースホルダー。
 
 * **プロパティ名**
 
-   検索するプロパティです。 相対パスとワイルドカードを使用して、ノ `*/*/*` ードを基準としたプロパティの深さを指定します(各ア `jcr:content` スタリスクは1つのノードレベルを表します)。
+   検索するプロパティです。 相対パスとワイルドカードを使用して、ノ `*/*/*` ードを基準とするプロパティの深さを指定します(各ア `jcr:content` スタリスクは1つのノードレベルを表します)。
 
-   ノード上のプロパティを持つリソースの第1レベルの子ノードでのみ検索する場合は、次 `x` を使用し `jcr:content` ます。 `*/jcr:content/x`
+   ノード上のプロパティを持つリソースの第1レベルの子ノードでのみ検索する場合は、次を使 `x` 用してく `jcr:content` ださい。 `*/jcr:content/x`
 
 * **プロパティの深さ**
 
-   リソース内でそのプロパティを検索する最大の深さです。 そのため、子のレベルが指定した深さに等しくなるまで、そのプロパティの検索をリソースと再帰的な子に対して実行できます。
+   リソース内でそのプロパティを検索する最大の深さです。 そのため、子のレベルが指定の深さに等しくなるまで、そのプロパティの検索をリソースと再帰的な子に対して実行できます。
 
 * **プロパティの値**
 
-   絶対文字列または式言語としてのプロパティ値。例えば、 `cq:Page` または
+   プロパティ値は、絶対文字列または式言語です。例えば、 `cq:Page` または
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}` です。
+   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **範囲テキスト**
 
@@ -539,7 +539,7 @@ This information is for reference only, you must not make changes to `/libs`.
 
 * **オプションパス**
 
-   ユーザーは、述語設定タブの「パスブラウザー」を使用してパスを選択できます。 選択した後、 **+アイコンを使用し** て選択範囲を有効なオプションのリストに追加します(必要に応じて **-** アイコンを削除します)。
+   ユーザーは、「述語の設定」タブの「パスブラウザー」を使用してパスを選択できます。 選択した後、 **+アイコ** ンを使用して、有効なオプションのリストに選択を追加します(必要に応じて、 **** — アイコンを削除します)。
 
    オプションは、ユーザーが作成したコンテンツノードで、次の構造を持ちます。
 
@@ -606,7 +606,7 @@ This information is for reference only, you must not make changes to `/libs`.
 
 1. 検索フォームが、該当するコンソールの検索列に表示されるとおりに、すべて展開された状態で表示されます。
 
-   ![プレビューフォーム](assets/csf-preview-form.png)
+   ![プレビュー型](assets/csf-preview-form.png)
 
 1. プレビューを&#x200B;**閉じて**&#x200B;戻り、設定を完了します。
 
@@ -627,7 +627,7 @@ This information is for reference only, you must not make changes to `/libs`.
 
 >[!NOTE]
 >
->デフォルト設定は削除できません。
+>デフォルトの設定は削除できません。
 
 カスタマイズした設定の削除は、コンソールからおこないます。
 
@@ -673,16 +673,16 @@ This information is for reference only, you must not make changes to `/libs`.
 
    * **プロパティ名**
 
-      ターゲットノードで検索するノードプロパティを指定します。 次に例を示します。
+      ノードノードで検索するノードプロパティをターゲットします。 次に例を示します。
 
       `jcr:content/cq:template`
 
-   * **Optionノードのパス**
+   * **オプションノードのパス**
 
       オプションを保持するパスを選択します。 次に例を示します。
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![オプション述語](assets/csf-options-predicate-02.png)
+   ![オプション述部](assets/csf-options-predicate-02.png)
 
 1. 「**完了**」を選択して設定を保存します。
 1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search - Filters** rail. 新しく定義された検索フォームと各種オプションが表示されます。検索結果を表示するには、必要なオプションを選択します。
@@ -695,11 +695,13 @@ This information is for reference only, you must not make changes to `/libs`.
 次の表に、検索フォームで編集、削除およびプレビューのアクションを実行するために必要な権限を示します。
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td><strong>アクション</strong></td>
    <td><strong>権限</strong></td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>編集 </td>
    <td>Read, Write permissions on the <code>/apps </code>node.</td>
@@ -710,7 +712,7 @@ This information is for reference only, you must not make changes to `/libs`.
   </tr>
   <tr>
    <td>プレビュー</td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> ノードに対する読み取り権限、書き込み権限 <code>/apps</code> です。</td>
+   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> ノードに対する読み取り、書き込みの権 <code>/apps</code> 限です。</td>
   </tr>
  </tbody>
 </table>
