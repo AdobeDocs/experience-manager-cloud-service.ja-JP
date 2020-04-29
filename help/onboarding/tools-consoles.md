@@ -2,7 +2,7 @@
 title: ツールコンソール
 description: AEM の様々なツールコンソールについて説明します。
 translation-type: tm+mt
-source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
+source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 ---
 
@@ -18,11 +18,13 @@ source-git-commit: 0887a00566fc593745bb4df2dd411ae8ae0e01ae
 >UIのカードには各オプションの目的に関する詳細が表示されるので、この表には、ツールパネルの機能の場所に関するクイックリファレンスが記載されています。
 
 <table>
- <tbody>
+ <thead>
   <tr>
    <td>セクション</td>
    <td>オプション</td>
   </tr>
+ </thead>
+ <tbody>
   <tr>
    <td>一般</td>
    <td> </td>
