@@ -1,15 +1,15 @@
 ---
 title: コンテンツフラグメントの操作
-description: コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーションおよび使用がいかに可能になるか、学習します。
+description: クラウドサービスとしてのAdobe Experience Manager(AEM)のコンテンツフラグメントを使用して、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: ac071eb00660a06ee3e0502a381c35adece6c87a
+source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
 
 ---
 
 
 # コンテンツフラグメントの操作{#working-with-content-fragments}
 
-Adobe Experience Manager（AEM）コンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、[公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md)が可能になります。複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
+With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-cloud/authoring/fundamentals/content-fragments.md). 複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
 
 コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
 
