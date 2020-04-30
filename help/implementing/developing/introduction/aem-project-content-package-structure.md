@@ -2,7 +2,7 @@
 title: AEMプロジェクト構造
 description: Adobe Experience Manager Cloud Serviceに展開するパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -69,7 +69,7 @@ Everything else in the repository, `/content`, `/conf`, `/var`, `/etc`, `/oak:in
          + グループ
          + ACL（権限）
             + 任意のパ `rep:policy` ス（ミュート可能または不変）
-+ The `ui.content` package, or Content Package, contains all content and configuration. `ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
++ The `ui.apps` package, or Code Package, contains all the code to be deployed and only deploys to `/apps`. Common elements of the `ui.apps` package include, but are not limited to: <!-- GRANITE-29128 -->
    + コンテキスト対応の設定
       + `/conf`
    + 必須で複雑なコンテンツ構造( Repo Initで定義された過去のベースラインコンテンツ構造に基づいて構築され、拡張されるコンテンツの構築。
