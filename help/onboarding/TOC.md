@@ -2,7 +2,7 @@
 sub-product: AEM as a Cloud Service のオンボーディング
 user-guide-title: AEM as a Cloud Service のオンボーディング
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 720f45a50591ee9d1d0b95bce04f1bb73ef9cb31
 
 ---
 
@@ -25,4 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](data-privacy-and-protection-readiness/foundation-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Sites の対応](data-privacy-and-protection-readiness/sites-readiness.md)
++ アクセシビリティ {#accessibility}
+   + [AEM as a Cloud ServiceおよびWeb Accessibility Guidelines](accessibility/web-accessibility.md)
+   + [WCAG 2.1のクイックガイド](accessibility/quick-guide-wcag.md)
 + [ツールコンソールの概要](tools-consoles.md)
