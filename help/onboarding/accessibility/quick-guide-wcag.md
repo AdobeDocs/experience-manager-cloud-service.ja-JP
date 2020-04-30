@@ -2,7 +2,7 @@
 title: WCAG 2.1のクイックガイド
 seo-title: WCAG 2.1のクイックガイド
 translation-type: tm+mt
-source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
+source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 05643cf6498063c88a6d18f8e4acad5882714ba0
 
 クラウドサービスとしてのAdobe Experience Manager(AEM)は、Webコンテンツのアクセシビリティガイドラインへの準拠を最大限に高めるように開発されました。
 
-[Web Content Accessibility Guidelines バージョン 2.1（WCAG）](https://www.w3.org/TR/WCAG/)は、[World Wide Web Consortium（W3C）](https://www.w3.org/)が [Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)の下で開発した一連のガイドラインであり、国際的に認知されています。
+[Web Content Accessibility Guidelines(WCAG)バージョン2.1は](https://www.w3.org/TR/WCAG/) 、 [World Wide Web Consortium(W3C)が](https://www.w3.org/) Web Accessibility Initiative(WAI)の下で開発した、国際的に認められたガイドラインのセットです [](https://www.w3.org/WAI/)。
 
 WCAG 2.1 は、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようにするための、テクノロジーから独立した一連のガイドラインおよび達成基準で構成されます。これらのガイドラインでは、Web コンテンツの作成者、デザイナー、開発者を対象として、視覚障碍、難聴、学習障碍、加齢に伴う制限をはじめとする障碍の種類に関係なく、できるだけ多くの人ができるだけ容易にアクセスできるようなリソースを作成するようアドバイスしています。
 
