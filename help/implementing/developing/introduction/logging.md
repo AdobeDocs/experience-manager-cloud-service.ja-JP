@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 8a6207596c42c4e1cf85dcccdbd1a1e9501c9073
+source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
 
 ---
 
@@ -422,67 +422,4 @@ The Felix Console also provides information about Sling Log Support at `../syste
 
 ## ログへのアクセスと管理 {#manage-logs}
 
-ユーザーは、環境カードを使用して、選択した環境の使用可能なログファイルのリストにアクセスできます。ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
-
-これらのファイルは、UI の&#x200B;**概要**&#x200B;ページからダウンロードできます。
-
-![](assets/manage-logs1.png)
-
-また、**環境**&#x200B;ページからもダウンロードできます。
-
-![](assets/manage-logs2.png)
-
->[!Note]
->開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
-
-![](assets/manage-logs3.png)
-
-
-### API を介したログの入手 {#logs-thorugh-api}
-
-UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
-
-例えば、特定の環境のログファイルをダウンロードする場合は、次のようなコマンドになります。
-
-```java
-$ aio cloudmanager:download-logs --programId 5 1884 author aemerror
-```
-
-次のコマンドを使用すると、ログの追跡が可能になります。
-
-```java
-$ aio cloudmanager:tail-log --programId 5 1884 author aemerror
-```
-
-環境 ID（この例の場合は 1884）と使用可能なサービス名またはログ名のオプションを取得するには、次のコマンドを使用します。
-
-```java
-$ aio cloudmanager:list-environments
-Environment Id Name                     Type  Description                          
-1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
-1884           FoundationInternal_stage stage Foundation Internal STAGE environment
-1884           FoundationInternal_prod  prod  Foundation Internal Prod environment
- 
- 
-$ aio cloudmanager:list-available-log-options 1884
-Environment Id Service    Name         
-1884           author     aemerror     
-1884           author     aemrequest   
-1884           author     aemaccess    
-1884           publish    aemerror     
-1884           publish    aemrequest   
-1884           publish    aemaccess    
-1884           dispatcher httpderror   
-1884           dispatcher aemdispatcher
-1884           dispatcher httpdaccess
-```
-
->[!Note]
->**ログのダウンロードは** UI でも API でも可能ですが、**ログの追跡**&#x200B;は API または CLI でのみ可能です。
-
-### その他のリソース {#resources}
-
-Cloud Manager APIとAdobe I/O CLIについて詳しくは、次の追加のリソースを参照してください。
-
-* [Cloud Manager APIドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+ログへのアクセス方法と管理方法について詳しくは、 [Cloud Managerのドキュメントを参照してください](/help/implementing/cloud-manager/manage-logs.md)。
