@@ -3,7 +3,7 @@ title: アセットマイクロサービスでクラウド内のデジタルア�
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -15,9 +15,7 @@ First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/ma
 TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
 -->
 
-クラウドサービスとしてのAdobe Experience Managerは、Experience Managerのアプリケーションと機能をクラウドネイティブで活用する方法を提供します。 この新しいアーキテクチャの主要な要素の 1 つは、アセットの取り込みと処理で、これはアセットマイクロサービスを利用しておこなわれます。
-
-アセットマイクロサービスは、様々なアセットタイプや処理オプションを最適に処理するためにアドビが管理しているクラウドサービスを利用して、拡張性と耐障害性に優れたアセット処理をおこないます。主なメリットは次のとおりです。
+クラウドサービスとしてのAdobe Experience Managerは、Experience Managerのアプリケーションと機能を活用するためのクラウドネイティブの方法を提供します。 この新しいアーキテクチャの主要な要素の 1 つは、アセットの取り込みと処理で、これはアセットマイクロサービスを利用しておこなわれます。アセットマイクロサービスは、クラウドサービスを使用して、アセットの拡張性と回復性に優れた処理を提供します。 様々なアセットタイプや処理オプションを最適に処理できるように、アドビはクラウドサービスを管理します。 クラウド固有のアセットマイクロサービスの主な利点は次のとおりです。
 
 * リソースを大量に消費する操作をシームレスに処理できる、拡張性の高いアーキテクチャ。
 * Adobe Experience Manager 環境のパフォーマンスに影響を与えない、効率的なインデックス作成とテキスト抽出。
@@ -28,7 +26,7 @@ TBD: Post-GA we will provide detailed information at \help\assets\asset-microser
 * Native Adobe file processing services are used where applicable, providing high-fidelity output and [efficient handling of Adobe proprietary formats](file-format-support.md).
 * ユーザー固有のアクションおよび統合を追加するための後処理ワークフローを設定可能。
 
-アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツール（ImageMagick など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。
+Asset Microservicesを使用すると、サードパーティのレンダリングツールやメソッド（ImageMagickやFmpegトランスコードなど）が不要になり、設定が簡単になり、一般的なファイルタイプの機能をすぐに使用できます。
 
 ## アーキテクチャの概要 {#asset-microservices-architecture}
 
@@ -45,26 +43,26 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * Web ブラウザーや Adobe Asset Link などのクライアントが Adobe Experience Manager にアップロードリクエストを送信し、バイナリクラウドストレージへのバイナリの直接アップロードを開始します。
 * バイナリの直接アップロードが完了すると、クライアントが Adobe Experience Manager に通知します。
-* Adobe Experience Manager がアセットマイクロサービスに処理リクエストを送信します。リクエストの内容は、生成すべきレンディションを指定する Adobe Experience Manager 内の処理プロファイル設定によって異なります。
+* Adobe Experience Manager がアセットマイクロサービスに処理リクエストを送信します。リクエストの内容は、生成するレンディションを指定するExperience Managerの処理プロファイル設定によって異なります。
 * アセットマイクロサービスのバックエンドがリクエストを受け取り、リクエストに応じて 1 つ以上のマイクロサービスにリクエストをディスパッチします。各マイクロサービスは、バイナリクラウドストア内の元のバイナリに直接アクセスします。
 * レンディションなどの処理結果がバイナリクラウドストレージに保存されます。
-* 処理の完了が、生成されたバイナリ（レンディション）への直接ポインターと共に Adobe Experience Manager に通知されます。Adobe Experience Manager では、アップロードされたアセットに対してそのバイナリが使用可能です。
+* Experience Managerには、生成されたバイナリ（レンディション）への直接ポインターと共に処理が完了したことが通知されます。 生成されたレンディションは、アップロードされたアセットに対してExperience Managerで使用できます。
 
-これが、アセットの取り込みと処理の基本的なフローです。設定した場合、Experience Managerでは、開始の顧客のワークフローモデルを使用して、顧客の環境に固有のカスタマイズされた手順を実行するなど、アセットの後処理を行うこともできます。例えば、顧客の企業システムから情報を取得して、アセットのプロパティに追加します。
+これが、アセットの取り込みと処理の基本的なフローです。設定した場合、Experience Managerでは、カスタムワークフローモデルを開始して、アセットの後処理を実行することもできます。 例えば、エンタープライズシステムから情報を取得し、アセットプロパティに追加するなど、環境に固有のカスタマイズされた手順を実行します。
 
 取り込みと処理フローは、Experience Managerのアセットマイクロサービスアーキテクチャの主要な概念です。
 
-* **直接バイナリアクセス**:Experience Manager環境用に設定したアセットはCloud Binary Storeに転送（およびアップロード）され、AEM、アセットマイクロサービス、最後にクライアントが直接アクセスして作業を行えるようになります。 これにより、ネットワークの負荷と、保存されるバイナリの重複を最小限に抑えることができます。
-* **外部化処理**:アセットの処理はAEM環境の外部で行われ、主要なDigital Asset Management機能を提供し、エンドユーザー向けのシステムとの対話型作業をサポートするリソース（CPU、メモリ）を節約します。
+* **直接バイナリアクセス**: Experience Manager環境用に設定したアセットはCloud Binary Storeに転送（およびアップロード）され、AEM、アセットマイクロサービスに追加され、最終的にクライアントは直接アクセスして作業を実行できます。 これにより、ネットワークの負荷と、保存されるバイナリの重複を最小限に抑えることができます。
+* **外部化処理**: アセットの処理はAEM環境の外部で行われ、主要なDigital Asset Management機能を提供し、エンドユーザー向けのシステムとの対話型作業をサポートするためのリソース（CPU、メモリ）が節約されます
 
 ## 直接バイナリアクセスを使用したアセットのアップロード {#asset-upload-with-direct-binary-access}
 
-製品の一部であるExperience Managerクライアントは、デフォルトでは、すべてのアップロードを直接バイナリアクセスでサポートします。 これには、Web インターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションを使用したアップロードが含まれます。
+製品の提供に含まれるExperience Managerクライアントは、デフォルトで直接バイナリアクセスを使用するすべてのアップロードをサポートします。 これには、Web インターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションを使用したアップロードが含まれます。
 
-AEM HTTP API を直接使用するカスタムアップロードツールを使用できます。これらのAPIを直接使用するか、アップロードプロトコルを実装する次のオープンソースプロジェクトを使用して拡張できます。
+AEM HTTP API を直接使用するカスタムアップロードツールを使用できます。これらのAPIは直接使用することも、アップロードプロトコルを実装する以下のオープンソースプロジェクトを使用および拡張することもできます。
 
 * [オープンソースアップロードライブラリ](https://github.com/adobe/aem-upload)
-* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
+* [オープンソースのコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
 
 For more information, see [upload assets](add-assets.md).
 
