@@ -3,7 +3,7 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. 管理者は、オプションのカスタマイズを含む後処理ワークフローの設定を作成および管理できます。 ワークフローのカスタマイズでは、拡張性と完全なカスタマイズが可能です。
 
-Asset Microservicesを使用すると、以前のバージョンのExperience Managerで可能な限り多くの形式に対応した [様々なファイル形式を処理できます](/help/assets/file-format-support.md) 。例えば、以前はImageMagickなどのサードパーティ製ソリューションが必要だったPSD形式やPSB形式のサムネール抽出などです。
+Asset Microservicesを使用すると、 [様々なファイルタイプ](/help/assets/file-format-support.md) （追加設定なし）を処理できます。これは、以前のバージョンのExperience Managerでは実現できなかったフォーマットです。 例えば、PSD形式とPSB形式のサムネール抽出が、以前はImageMagickなどのサードパーティソリューションが必要だった可能性があります。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
