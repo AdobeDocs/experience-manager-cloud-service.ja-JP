@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
 description: AEMクラウドサービスのAdobe Experience Manager Assetsに対するAdobe Experience Manager 6.5と比較した顕著な変更点。
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
-アセットマイクロサービスは、クラウドサービスを使用して、アセットの拡張性と回復性に優れた処理を提供します。 様々なアセットタイプや処理オプションを最適に処理できるように、アドビはクラウドサービスを管理します。 Asset Microservicesを使用すると、サードパーティのレンダリングツールやメソッド（ImageMagickやFmpegトランスコードなど）が不要になり、設定が簡単になり、一般的なファイルタイプの機能をすぐに使用できます。 現在、ImageMagick統合とFFMpegトランスコードは、クラウドサービスでは使用できません。
+アセットマイクロサービスは、クラウドサービスを使用して、アセットの拡張性と回復性に優れた処理を提供します。 様々なアセットタイプや処理オプションを最適に処理できるように、アドビはクラウドサービスを管理します。 Asset Microservicesを使用すると、サードパーティのレンダリングツールやメソッド（ImageMagickなど）が不要になり、設定が簡単になり、一般的なファイルタイプに対してそのまま使用できる機能が提供されます。 以前のバージョンのExperience Managerで [可能だったよりも多くの形式をすぐに使用できる様々なファイルタイプを処理できるようになりました](/help/assets/file-format-support.md) 。 例えば、PSD形式とPSB形式のサムネール抽出が、以前はImageMagickなどのサードパーティソリューションが必要だった可能性があります。 ImageMagickの複雑な設定は、 [!UICONTROL 処理プロファイルの設定に使用できません] 。 また、ビデオのFmpegトランスコード [!DNL Dynamic Media] にも使用します。
 
 Asset Microservicesは、Cloud Managerで管理されるお客様のプログラムや環境で、Experience Managerに自動的にプロビジョニングされ、Experience Managerに有線で接続されるクラウドネイティブのサービスです。 Experience Managerを拡張またはカスタマイズするには、開発者は、クラウド環境で生成されたレンディションを含む既存のコンテンツまたはアセットを使用し、アセットの使用、表示、ダウンロードを使用したコードのテストと検証を行います。
 
