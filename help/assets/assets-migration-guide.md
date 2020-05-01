@@ -3,7 +3,7 @@ title: アセット移行ガイド
 description: アセットを AEM に移行してメタデータを適用し、レンディションを生成してそれらをパブリッシュインスタンスでアクティベートする方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 前提条件 {#prerequisites}
 
-移行手順を実際に実行する前に、パフォーマンス調整のガイダンスを確認し、実装します。 ここで紹介する手順の多くは、同時に実行可能なジョブの最大数の設定など、負荷時のサーバーの安定性とパフォーマンスを大幅に改善します。システムにアセットが読み込まれた後だと、その他の手順（ファイルデータストアの設定など）を実行するのがより困難になります。
+移行手順を実際に実行する前に、パフォーマンス調整ガイダンスを確認し、実装します。 ここで紹介する手順の多くは、同時に実行可能なジョブの最大数の設定など、負荷時のサーバーの安定性とパフォーマンスを大幅に改善します。システムにアセットが読み込まれた後だと、その他の手順（ファイルデータストアの設定など）を実行するのがより困難になります。
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >* 合成ワークフロー
 >
 >
-These software are open source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
+These software are open-source and covered by the [Apache v2 license](https://adobe-consulting-services.github.io/pages/license.html). To ask a question or report an issue, visit the respective [GitHub issues for ACS AEM tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) and [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
 ## AEMへの移行 {#migrating-to-aem}
 
@@ -56,7 +56,7 @@ AEM にアセットを移行するにはいくつかの手順を経る必要が�
 
 システムにアセットを読み込むには、HTTP を使用したプッシュベースのアプローチと JCR の API を使用したプルベースのアプローチがあります。
 
-#### HTTP経由でプッシュ {#pushing-through-http}
+#### プッシュスルーHTTP {#pushing-through-http}
 
 アドビの Managed Services チームは Glutton というツールを使用してお客様の環境にデータを読み込みます。Glutton は小さな Java アプリケーションで、AEM インスタンスのあるディレクトリから別のディレクトリにすべてのアセットを読み込みます。Glutton の代わりに、Perl スクリプトなどのツールを使用してアセットをリポジトリに投稿することもできます。
 
@@ -69,7 +69,7 @@ HTTPS を通じたプッシュのアプローチには、主に次の 2 つの�
 
 #### Pull from the local filesystem {#pulling-from-the-local-filesystem}
 
-[ACS AEMツールのCSVアセットインポーターは](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) 、アセットをファイルシステムから取り出し、アセットを読み込むためのCSVファイルからアセットメタデータを取り出します。 AEM Asset Manager API はアセットをシステムに取り込み、設定したメタデータプロパティを適用します。アセットはネットワークファイルマウントまたは外部ドライブを介してサーバーにマウントされているのが理想です。
+[ACS AEMツールのCSVアセットインポーター](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) は、ファイルシステムからアセットを取り込み、アセット読み込み用のCSVファイルからアセットメタデータを取り込みます。 AEM Asset Manager API はアセットをシステムに取り込み、設定したメタデータプロパティを適用します。アセットはネットワークファイルマウントまたは外部ドライブを介してサーバーにマウントされているのが理想です。
 
 アセットをネットワーク上で送信する必要がないので、全体的なパフォーマンスが劇的に向上します。このため、一般的にはこの方法がアセットをリポジトリに読み込む最も効率的な方法と見なされています。さらに、ツールがメタデータの取り込みをサポートし、すべてのアセットとメタデータを 1 つの手順で取り込むことができるので、別のツールを使用してメタデータを適用する 2 つ目の手順が不要になります。
 
@@ -104,7 +104,7 @@ HTTPS を通じたプッシュのアプローチには、主に次の 2 つの�
 1. インスタンスとデータストアのバックアップを対象の場所に復元します。続く手順はすべてこの新しいインスタンスを参照します。
 1. Perform a filesystem search under `crx-quickstart/launchpad/felix` for `sling.id`. このファイルを削除します。
 1. データストアのルートパスで、`repository-XXX` ファイルを探してすべて削除します。
-1. を編集 `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` し、 `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` 新しいデータストア上のデータストアの場所を指すように環境します。
+1. を編集 `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config``crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config` し、新しい環境上のデータストアの場所を指すようにします。
 1. 環境を開始します。
 1. オーサー環境にあるすべてのレプリケーションエージェントが正しいパブリッシュインスタンスを指す、または新しいインスタンスのディスパッチャーのフラッシュエージェントが新しい環境の正しいディスパッチャーを参照するように設定を更新します。
 
