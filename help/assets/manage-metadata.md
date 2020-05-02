@@ -4,7 +4,7 @@ description: メタデータの種類と、[!DNL Adobe Experience Manager Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 07ebe0588944fff40157119e658aca00eaed6ec3
 
 ---
 
@@ -161,7 +161,7 @@ DOS などの状況を防ぐため、AEM では Sling 要求でサポートさ�
 
 ### Standard metadata {#standard-metadata}
 
-* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
+* DC - [!DNL Dublin Core] は、重要で広く使用されているメタデータのセットです。
 * DICOM - Digital Imaging and Communications in Medicine.
 * Iptc4xmpCoreおよびiptc4xmpExt - International Press Communications Standardには、多くのサブジェクト固有のメタデータが含まれています。
 * rdf - Resource Description Framework - 汎用のセマンティック Web メタデータ用.
@@ -174,44 +174,44 @@ DOS などの状況を防ぐため、AEM では Sling 要求でサポートさ�
 
 * ACDSee - Metadata managed by the [!DNL ACDSee] program. www.acdsee.com/ [を参照してくだ](https://www.acdsee.com/)さい。
 * アルバム — [!DNL Adobe Photoshop Album].
-* cq - Used by [!DNL Experience Manager Assets].
-* dam - Used by [!DNL Experience Manager Assets].
-* dex - Optima SC Description Explorer.
-* crs - Adobe Photoshop Camera Raw.
-* lr - [!DNL Adobe Lightroom].
-* mediapro - iView MediaPro.
+* CQ - Used by [!DNL Experience Manager Assets].
+* DAM - Used by [!DNL Experience Manager Assets].
+* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) は、Windowsオペレーティングシステム向けのメタデータおよびファイル管理のためのツールの集まりです。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto、MP - Microsoft Photo.
-* pdf、pdfx.
-* photoshop &amp; psAux - [!DNL Adobe Photoshop].
+* PDF &amp; PDF/X
+* PhotoshopとpsAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* plus - [Picture Licensing Universal System](https://www.useplus.com).
-* prism - Publishing Requirements for Industry Standard Metadata（https://www.idealliance.org/prism-metadata）.
+* PLUS - [Picture Licensing Universal System](https://www.useplus.com).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language。
 * PUR - PRISM Usage Rights。
-* xmpPlus - PLUSとXMPの統合。
+* `xmpPlus` - PLUSとXMPの統合。
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
 * Exif - GPS位置など、カメラからの技術情報。
 * CRS - [!DNL Camera Raw] スキーマ。
-* Iptc4xmpCore、iptc4xmpExt.
+* `iptc4xmpCore` および `iptc4xmpExt`.
 * TIFF — 画像メタデータ（TIFF画像のみではありません）。
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf、pdfx - Adobe PDF およびサードパーティのアプリケーション.
-* prism - Publishing Requirements for Industry Standard Metadata（[www.prismstandard.org](https://www.prismstandard.org)）.
+* PDFおよびPDF/X - Adobe PDFおよびサードパーティアプリケーション。
+* PRISM - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
 * XMP.
-* xmpPG — ページテキストのXMPメタデータ。
+* `xmpPG`  — ページテキストのXMPメタデータ。
 
 ### マルチメディア固有のメタデータ {#multimedia-specific-metadata}
 
-* xmpDM - [!DNL Dynamic Media].
-* xmpMM - Media Management.
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM`  — メディア管理。
 
 ## メタデータ駆動型のワークフロー {#metadata-driven-workflows}
 
