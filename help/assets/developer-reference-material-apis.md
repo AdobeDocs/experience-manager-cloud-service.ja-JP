@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager as a Cloud Service におけるデジタルア�
 description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
 
 ---
 
@@ -48,14 +48,14 @@ To review client code that implements this approach, refer to the open-source [a
 
 ```
 POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-````
+```
 
 リクエスト本文のコンテンツタイプは、次のフィールドを含んだ `application/x-www-form-urlencoded` 形式のデータにする必要があります。
 
 * `(string) fileName`：必須。インスタンスに表示されるアセットの名前。
 * `(number) fileSize`：必須。アップロードするバイナリの合計長（バイト単位）。
 
-各バイナリに必須フィールドが含まれている限り、単一の要求を使用して複数のバイナリのアップロードを開始できます。 If successful, the request responds with a `201` status code and a body containing JSON data in the following format:
+各バイナリに必須フィールドが含まれている限り、単一のリクエストを使用して複数のバイナリのアップロードを開始できます。成功した場合は、リクエストへの応答として、`201` ステータスコードと、次の形式の JSON データを含んだ本文が返されます。
 
 ```
 {
@@ -74,15 +74,15 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 }
 ```
 
-* `completeURI` （文字列）: バイナリのアップロードが完了したら、このURIを呼び出します。 このURIは、絶対URIまたは相対URIのどちらでも指定でき、クライアントはどちらも処理できる必要があります。 つまり、値は「アップロードの完了」 `"https://author.acme.com/content/dam.completeUpload.json"` または「アップロードの `"/content/dam.completeUpload.json"` 完了を [確認](#complete-upload)」です。
-* `folderPath` （文字列）: バイナリをアップロードするフォルダーのフルパスです。
-* `(files)` （配列）: 長さと順序が、開始要求で提供されるバイナリリストの長さと順序と一致する要素のリスト。
-* `fileName` （文字列）: 開始要求で指定された、対応するバイナリの名前。 この値は、完了リクエストに含まれます。
-* `mimeType` （文字列）: in initiate要求で指定される、対応するバイナリのMIMEタイプ。 この値は、完了リクエストに含まれます。
-* `uploadToken` （文字列）: 対応するバイナリのアップロードトークン。 この値は、完了リクエストに含まれます。
-* `uploadURIs` （配列）: 値が、バイナリのコンテンツのアップロード先となる完全なURIである文字列のリストです( [バイナリのアップロードを参照](#upload-binary))。
-* `minPartSize` （数）: 複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最小長（バイト単位）です。
-* `maxPartSize` （数）: 複数のURIが存在する場合に、いずれかのuploadURIに提供されるデータの最大長（バイト単位）です。
+* `completeURI`（文字列）：バイナリのアップロードが完了したら、この URI を呼び出します。URI は絶対 URI でも相対 URI でも構いません。クライアントはどちらでも処理できるはずです。つまり、値は `"https://author.acme.com/content/dam.completeUpload.json"` または `"/content/dam.completeUpload.json"` でも構いません。[アップロードの完了](#complete-upload)を参照してください。
+* `folderPath`（文字列）：バイナリがアップロードされるフォルダーの完全なパス。
+* `(files)`（配列）：開始リクエストで提供されるバイナリ情報のリストの長さと順序に一致する要素のリスト。
+* `fileName`（文字列）：対応するバイナリの名前（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
+* `mimeType`（文字列）：対応するバイナリの MIME タイプ（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
+* `uploadToken`（文字列）：対応するバイナリのアップロードトークン。この値は、完了リクエストに含まれます。
+* `uploadURIs`（配列）：バイナリコンテンツのアップロード先となる完全な URI を表す文字列のリストです（[バイナリのアップロード](#upload-binary)を参照）。
+* `minPartSize`（数字）：複数の URI がある場合に各アップロード URI に提供されるデータの最小長（バイト単位）。
+* `maxPartSize`（数字）：複数の URI がある場合に各アップロード URI に提供されるデータの最大長（バイト単位）。
 
 ### バイナリのアップロード {#upload-binary}
 
@@ -125,7 +125,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 アップロードアルゴリズムの詳細や、独自のアップロードスクリプトやツールを作成するために、アドビはオープンソースのライブラリやツールを基礎として提供しています。
 
 * [オープンソースのaemアップロードライブラリ](https://github.com/adobe/aem-upload)
-* [オープンソースのコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### 非推奨（廃止予定）のアセットアップロード API {#deprecated-asset-upload-api}
 
@@ -138,7 +138,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 >[!MORELIKETHIS]
 * [aem-uploadライブラリをオープンソース](https://github.com/adobe/aem-upload)。
-* [オープンソースのコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
