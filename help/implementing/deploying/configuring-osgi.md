@@ -2,7 +2,7 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: 743a8b4c971bf1d3f22ef12b464c9bb0158d96c0
+source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
 
 ---
 
@@ -336,3 +336,204 @@ config.dev
 
 この目的は、OSGIプロパティの値がステージ、prod、および3つの開発環境 `my_var1` ごとに異なることです。 したがって、各開発環境の値を設定するには、Cloud Manager APIを呼び出す必要 `my_var1` があります。
 
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>myfile.cfg.jsonの内容</b>
+</td>
+</tr>
+<tr>
+<td>
+config.stage
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.prod
+</td>
+<td>
+<pre>
+{ "my_var1": "val2", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+**例3**
+
+この意図は、OSGiプロパティの値がステージ、実稼働、および開発環境の1つ `my_var1` に対して同じであることを前提としていますが、他の2つの開発環境に対しては異なる点が前提となっています。 この場合、Cloud Manager APIを呼び出して各開発環境の値を設定する必要があります。この値は、開発環境の場合を含め、ステージと実稼働と同じ値にする必要があります。 `my_var1` フォルダー **configに設定された値は継承されません**。
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>myfile.cfg.jsonの内容</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1" : "$[env:my_var1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+これを行う別の方法は、config.devフォルダーの置き換えトークンのデフォルト値を、config **** フォルダーと同じ値に設定することです。
+
+<table>
+<tr>
+<td>
+<b>Folder</b>
+</td>
+<td>
+<b>myfile.cfg.jsonの内容</b>
+</td>
+</tr>
+<tr>
+<td>
+config
+</td>
+<td>
+<pre>
+{ "my_var1": "val1", "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+config.dev
+</td>
+<td>
+<pre>
+{ "my_var1": "$[env:my_var1;default=val1]" "my_var2": "abc", "my_var3": 500}
+</pre>
+</td>
+</tr>
+</table>
+
+## プロパティ設定用のCloud Manager API形式 {#cloud-manager-api-format-for-setting-properties}
+
+### APIを使用した値の設定 {#setting-values-via-api}
+
+APIを呼び出すと、一般的なカスタマーコードの導入パイプラインと同様に、新しい変数と値がクラウド環境に導入されます。 作成者サービスと発行サービスは再起動され、新しい値が参照されます（通常、数分かかります）。
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+```
+]
+        {
+                "name" : "MY_VAR1",
+                "value" : "plaintext value",
+                "type" : "string"  <---default
+        },
+        {
+                "name" : "MY_VAR2",
+                "value" : "<secret value>",
+                "type" : "secretString"
+        }
+]
+```
+
+デフォルトの変数はAPI経由ではなく、OSGiプロパティ自体に設定されることに注意してください。
+
+詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)を参照してください。
+
+### APIを使用した値の取得 {#getting-values-via-api}
+
+```
+GET /program/{programId}/environment/{environmentId}/variables
+```
+
+詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/getEnvironmentVariables)を参照してください。
+
+### APIを使用した値の削除 {#deleting-values-via-api}
+
+```
+PATCH /program/{programId}/environment/{environmentId}/variables
+```
+
+変数を削除するには、空の値を含めます。
+
+詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)を参照してください。
+
+### コマンドラインから値を取得する {#getting-values-via-cli}
+
+```bash
+$ aio cloudmanager:list-environment-variables ENVIRONMENT_ID
+Name     Type         Value
+MY_VAR1  string       plaintext value 
+MY_VAR2  secretString ****
+```
+
+
+### コマンドラインを使用した値の設定 {#setting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable MY_VAR1 "plaintext value" --secret MY_VAR2 "some secret value"
+```
+
+### コマンドラインを使用した値の削除 {#deleting-values-via-cli}
+
+```bash
+$ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_VAR2
+```
+
+> [!NOTE]
+>
+> Adobe I/O CLI用 [のCloud Managerプラグインを使用した値の設定方法の詳細については、このページを参照してください](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) 。
+
+### 変数の数 {#number-of-variables}
+
+最大20個の変数を宣言できます。
+
+## シークレットおよび環境固有の設定値のデプロイメントに関する考慮事項 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
+
+秘密と環境に固有の設定値はGitの外部に存在するので、クラウドサービスの展開メカニズムとしての正式なAEMには含まれないので、お客様はクラウドサービスの展開プロセスとしてAEMに管理、管理および統合する必要があります。
+
+前述したように、APIを呼び出すと、一般的なカスタマーコードの導入パイプラインと同様に、新しい変数と値がクラウド環境に導入されます。 作成者サービスと発行サービスは再起動され、新しい値が参照されます（通常、数分かかります）。 通常のコードのデプロイメント中にCloud Managerによって実行される品質ゲートおよびテストは、このプロセス中は実行されません。
+
+通常、Cloud ManagerでAPIを使用するコードを導入する前に、APIを呼び出して環境変数を設定します。 場合によっては、コードが既に導入された後で既存の変数を変更する必要があります。
+
+パイプラインが使用中の場合、AEMの更新またはお客様向けのデプロイメントは、その時点でエンドツーエンドパイプラインのどの部分が実行されているかに応じて、APIが正常に動作しない可能性があります。 エラーの応答は、リクエストが成功しなかったことを示しますが、理由は示しません。
+
+予定されている顧客コードの導入が、新しい値を持つ既存の変数に依存している場合があります。これは、現在のコードでは適しません。 これが問題となる場合は、変数の変更を加える方法をお勧めします。 そのためには、古いコードが新しい値を参照しないように、古い変数の値を変更する代わりに、新しい変数名を作成します。 その後、新しいリリースの顧客が安定した状態になった場合は、古い値を削除することを選択できます。
+
+同様に、変数の値はバージョン管理されないので、コードのロールバックによって、問題を引き起こす新しい値が参照される場合があります。 上記の加算変数戦略もこの場合に役立ちます。
+
+この加算変数戦略は、数日前のコードを再展開する必要がある場合でも、そのコードが参照する変数名と値が変わらない場合の災害復旧シナリオにも役立ちます。 これは、お客様が古い変数を削除する数日前に待機する方法に依存しています。そうしないと、古いコードで参照する適切な変数がなくなります。
