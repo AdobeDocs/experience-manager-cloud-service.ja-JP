@@ -2,7 +2,7 @@
 sub-product: AEMでのクラウドサービスとしてのコンテンツのオーサリング
 user-guide-title: AEMでのクラウドサービスとしてのコンテンツのオーサリング
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
       + [CSV ファイルへの書き出し](authoring/fundamentals/csv-export.md)
       + [コンポーネント](authoring/fundamentals/components.md)
       + [モバイルデバイス向けのオーサリング](authoring/fundamentals/mobile.md)
-      + [アクセス可能なコンテンツ（WCAG 2.0 準拠）](authoring/fundamentals/accessible-content.md)
+      + [アクセス可能なコンテンツ（WCAG 2.1 適合）の作成 ](authoring/fundamentals/accessible-content.md)
       + [トラブルシューティング](authoring/fundamentals/troubleshooting.md)
       + [キーボードショートカット](authoring/fundamentals/keyboard-shortcuts.md)
    + オーサリング機能 {#features}
