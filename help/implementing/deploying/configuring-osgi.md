@@ -2,7 +2,7 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: c5339a74f948af4c05ecf29bddfe9c0b11722d61
+source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
 
 ---
 
@@ -291,7 +291,7 @@ export ENV_VAR_NAME=my_value
 OSGIプロパティで、作成者とパブリッシュで異なる値が必要な場合：
 
 * 「 `config.author` 実行モードの解決」の節で説明したように、個別の `config.publish` OSGiフォルダーとOSGiフォルダーを使用する必要があり [](#runmode-resolution)ます。
-* 独立変数名を使用する必要があります。 author_<variablename> およびpublish_<variablename> 変数名が同じ場合
+* 独立変数名を使用する必要があります。 変数名が同じである場合は、 `author_<variablename>` およびなどのプレフィックス `publish_<variablename>` を使用することをお勧めします。
 
 ### 設定例 {#configuration-examples}
 
