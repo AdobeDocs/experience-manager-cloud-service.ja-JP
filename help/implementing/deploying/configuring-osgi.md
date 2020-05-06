@@ -2,12 +2,15 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: e23813aa5d55a9ae6550ff473b030177e37ffffb
+source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# OSGi 設定 {#osgi-configurations}
+# AEM用のOSGiをクラウドサービスとして設定する {#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) はAdobe Experience Manager(AEM)の技術スタックの基本要素です。 AEMとその設定の複合バンドルを制御するために使用されます。
 
@@ -95,7 +98,7 @@ AEMでクラウドサービスとして使用できるOSGi設定値には3種類
 
 OSGiでは、インラインOSGi設定値を使用する場合が多くあります。 環境固有の設定は、開発環境間で値が異なる特定の使用例に対してのみ使用します。
 
-![](assets/choose-configuration-value-type.png)
+![](assets/choose-configuration-value-type_res1.png)
 
 環境固有の設定は、インライン値を含む、従来の静的に定義されたOSGi設定を拡張し、Cloud Manager APIを介してOSGi設定値を外部で管理できるようにします。 インライン値を定義してGitに保存する一般的で従来の方法を使用する必要がある場合、値を環境固有の設定に抽象化する必要がある場合を理解することが重要です。
 
@@ -165,50 +168,19 @@ AEM as a Cloud Serviceでは、セキュリティ上の理由から、パスワ�
 
 新しい設定をリポジトリに実際に追加するには：
 
-1. CRXDE Lite を使用して次の場所に移動します。
+1. ui.appsプロジェクトで、必要に応じて、使用している実行モードに基づいて `/apps/…/config.xxx` フォルダーを作成します
 
-   ` /apps/<yourProject>`
+1. PIDの名前で新しいJSONファイルを作成し、 `.cfg.json` 拡張子を追加します
 
-1. If not already existing, create the `config` folder ( `sling:Folder`):
 
-   * `config` - すべての実行モードに該当
-   * `config.<run-mode>`  — 特定の実行モードに固有
+1. JSONファイルにOSGi設定のキーと値のペアを入力する
 
-1. このフォルダーの下に、次の設定でノードを作成します。
-
-   * タイプ：`sling:OsgiConfig`
-   * 名前： 永続的なID(PID);
-
-      例えば、AEM WCM Version Managerで `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >When making a Factory Configuration append `-<identifier>` to the name.
-   >
-   >例： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
-   >
-   >Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information); for example:
-   >
-   >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
+   >初期設定のOSGiサービスを設定する場合、 `/system/console/configMgr`
 
-1. 設定するパラメーターごとに、このノードでプロパティを作成します。
 
-   * 名前： Webコンソールに表示されるパラメータ名 名前は、フィールドの説明の末尾に括弧で囲まれて表示されます。 例えば、 `Create Version on Activation` `versionmanager.createVersionOnActivation`
-   * タイプ：適宜。
-   * 値：必要に応じて。
-   プロパティを作成する必要があるのは、設定対象のパラメーターのみです。その他は、AEM で設定されているデフォルト値を引き続き使用します。
-
-1. すべての変更を保存します。
-
-   変更は、サービスを再起動することによってノードが更新されるとすぐに適用されます（Web コンソールでおこなった変更と同様）。
-
->[!CAUTION]
->
->`/libs` パス内の設定は一切変更しないでください。
-
->[!CAUTION]
->
->起動時に設定を読み込むには、設定のフルパスを正しく指定する必要があります。
-
+1. JSONファイルをプロジェクトに保存します。
 
 ## ソース管理の設定プロパティの形式 {#configuration-property-format-in-source-control}
 
