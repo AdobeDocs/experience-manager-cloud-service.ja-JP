@@ -2,10 +2,10 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
+source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 3%
+source-wordcount: '2317'
+ht-degree: 4%
 
 ---
 
@@ -162,29 +162,29 @@ To add a new configuration to the repository you need to know the following:
 
    `select * from sling:OsgiConfig`
 
-   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
+## リポジトリでの設定の作成 {#creating-the-configuration-in-the-repository}
 
-To actually add the new configuration to the repository:
+新しい設定をリポジトリに実際に追加するには：
 
-1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
+1. ui.appsプロジェクトで、必要に応じて、使用している実行モードに基づいて `/apps/…/config.xxx` フォルダーを作成します
 
-1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
+1. PIDの名前で新しいJSONファイルを作成し、 `.cfg.json` 拡張子を追加します
 
 
-1. Populate the JSON file with the OSGi configuration key value pairs
+1. JSONファイルにOSGi設定のキーと値のペアを入力する
 
    >[!NOTE]
    >
-   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
+   >初期設定のOSGiサービスを設定する場合、 `/system/console/configMgr`
 
 
-1. Save the JSON file to your project. -->
+1. JSONファイルをプロジェクトに保存します。 -->
 
 ## ソース管理の設定プロパティの形式 {#configuration-property-format-in-source-control}
 
-<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+新しいOSGI設定プロパティの作成については、上の「リポジトリへの新しい設定の [追加](#creating-the-configuration-in-the-repository) 」の節で説明しています。
 
 次の手順に従い、次のサブセクションで説明されている構文を変更します。
 
