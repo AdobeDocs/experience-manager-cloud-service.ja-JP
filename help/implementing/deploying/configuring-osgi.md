@@ -2,10 +2,10 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 48a19fb1bb7657d34f31605a3b4a85e656393918
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2214'
+ht-degree: 3%
 
 ---
 
@@ -127,64 +127,66 @@ AEM as a Cloud Serviceでは、セキュリティ上の理由から、パスワ�
 
 秘密の環境固有の設定を使用して、StageやProductionなどのクラウドサービス環境としてすべてのAEMに秘密の値を保存します。
 
-### リポジトリへの新しい設定の追加 {#adding-a-new-configuration-to-the-repository}
+<!-- ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
-#### 必要な知識 {#what-you-need-to-know}
+#### What You Need to Know {#what-you-need-to-know}
 
-新しい設定をリポジトリに追加するには、以下を知っておく必要があります。
+To add a new configuration to the repository you need to know the following:
 
-1. サービスの **永続的なID** (PID)。
+1. The **Persistent Identity** (PID) of the service.
 
-   Webコンソールの「 **Configurations** 」フィールドを参照します。 名前は、バンドル名の後ろに括弧で囲まれて表示されます(または、ページの下部にある **設定情報** )。
+   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
 
-   例えば、 `com.day.cq.wcm.core.impl.VersionManagerImpl.` AEM WCM Version Managerを設定するノード **を作成します**。
+   For example, create a node `com.day.cq.wcm.core.impl.VersionManagerImpl.` to configure **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. 特定の実行モードが必要かどうか。 フォルダーの作成：
+1. Whether a specific runmode is required. Create the folder:
 
-   * `config`  — すべての実行モード
-   * `config.author`  — 作成者環境用
-   * `config.publish`  — 公開環境用
-   * `config.<run-mode>`  — 適宜
+    * `config` - for all run modes
+    * `config.author` - for the author environment
+    * `config.publish` - for the publish environment
+    * `config.<run-mode>` - as appropriate
 
 1. Whether a **Configuration** or **Factory Configuration** is necessary.
-1. 設定する個々のパラメータ 再作成する必要がある既存のパラメーター定義を含めます。
+1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
 
-   Webコンソールの個々のパラメーターフィールドを参照します。 名前は、各パラメーターで括弧で囲まれて表示されます。
+   Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
-   例えば、プロパティを作成します。
-   `versionmanager.createVersionOnActivation` 」をクリックして、「アクティベーションでバージョンを **作成**」を設定します。
+   For example, create a property
+   `versionmanager.createVersionOnActivation` to configure **Create Version on Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. に既に設定が存在しま `/libs`すか？ インスタンス内のすべての設定をリストするには、CRXDE Liteの **クエリ** ツールを使用して次のSQLクエリを送信します。
+1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
-   その場合は、この設定をにコピーし、新しい場所でカスタマイズす ` /apps/<yourProject>/`ることができます。
+   If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location.
 
-## リポジトリでの設定の作成 {#creating-the-configuration-in-the-repository}
+## Creating the Configuration in the Repository {#creating-the-configuration-in-the-repository}
 
-新しい設定をリポジトリに実際に追加するには：
+To actually add the new configuration to the repository:
 
-1. ui.appsプロジェクトで、必要に応じて、使用している実行モードに基づいて `/apps/…/config.xxx` フォルダーを作成します
+1. In your ui.apps project, create a `/apps/…/config.xxx` folder as needed based on the runmode you are using
 
-1. PIDの名前で新しいJSONファイルを作成し、 `.cfg.json` 拡張子を追加します
+1. Create a new JSON file with the name of the PID and add the `.cfg.json` extension
 
 
-1. JSONファイルにOSGi設定のキーと値のペアを入力する
+1. Populate the JSON file with the OSGi configuration key value pairs
 
    >[!NOTE]
    >
-   >初期設定のOSGiサービスを設定する場合、 `/system/console/configMgr`
+   >If you are configuring an out of the box OSGi service, you can look up the OSGi property names via `/system/console/configMgr`
 
 
-1. JSONファイルをプロジェクトに保存します。
+1. Save the JSON file to your project. -->
 
 ## ソース管理の設定プロパティの形式 {#configuration-property-format-in-source-control}
 
-新しいOSGI設定プロパティの作成については、上の「リポジトリへの新しい設定の [追加](#creating-the-configuration-in-the-repository) 」の節で説明しています。 次の手順に従い、次のサブセクションで説明されている構文を変更します。
+<!-- Creating a new OSGI configuration property is described in the [Adding a new configuration to the repository](#creating-the-configuration-in-the-repository) section above. -->
+
+次の手順に従い、次のサブセクションで説明されている構文を変更します。
 
 ### インライン値 {#inline-values}
 
