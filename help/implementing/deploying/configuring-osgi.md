@@ -2,9 +2,9 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: 6643bc74dcf23e147f011fbe4f72a29bcd52ec18
+source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2311'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ OSGi設定ファイルは次の場所で定義されます。
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-次の [cfg.json OSGi設定形式]（cfg.json OSGi設定形式に従います）。
+cfg.json OSGi設定形式に従います。
 
 > [!NOTE]
 >
