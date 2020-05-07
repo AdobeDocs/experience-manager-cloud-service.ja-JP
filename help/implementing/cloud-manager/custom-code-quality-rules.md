@@ -1,8 +1,11 @@
 ---
 title: カスタムコード品質ルール - クラウドサービス
 description: カスタムコード品質ルール - クラウドサービス
-translation-type: ht
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+translation-type: tm+mt
+source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+workflow-type: tm+mt
+source-wordcount: '2254'
+ht-degree: 78%
 
 ---
 
@@ -549,6 +552,35 @@ public void doThis(Resource resource) {
 }
 ```
 
+### Slingスケジューラーは使用しない {#sonarqube-sling-scheduler}
+
+**キー**: CQRules:AMSCORE-554
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+Slingスケジューラーは、確実な実行を必要とするタスクには使用しないでください。 Slingスケジュールジョブは実行を保証し、クラスター化ジョブと非クラスター化環境の両方に適しています。
+
+Slingジョブがクラスター環境で処理される方法について詳しくは、 [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照してください。
+
+### AEMの非推奨APIは使用しないでください {#sonarqube-aem-deprecated}
+
+**キー**: AMSCORE-553
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+AEM APIの表面は絶え間ないリビジョンの下にあり、使用がお勧めされず、非推奨と見なされるAPIを識別します。
+
+多くの場合、これらのAPIは、標準のJava *@Deprecated* 注釈を使用して非推奨になります。この注釈は、で識別されるように使用されま `squid:CallToDeprecatedMethod`す。
+
+ただし、APIがAEMのコンテキストで非推奨となるが、他のコンテキストでは非推奨とならない場合があります。 このルールは、この2番目のクラスを識別します。
 
 ## OakPAL コンテンツルール {#oakpal-rules}
 
@@ -644,3 +676,62 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 **最初の対象バージョン**：バージョン 2019.6.0
 
 *パッケージには重複する OSGi 設定を含めない*&#x200B;と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
+
+### デフォルトのオーサリングモードをクラシックUIにしない {#oakpal-default-authoring}
+
+**キー**: ClassicUIAuthoringMode
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+OSGi設定は、AEM内でデフォルトのオーサリングモードを `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定義します。 AEM 6.4以降、Classic UIは非推奨となったので、デフォルトのオーサリングモードがクラシックUIに設定されている場合に問題が発生するようになりました。
+
+### タッチUIダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
+
+**キー**: ComponentWithOnlyClassicUIDalog
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+最適なオーサリングエクスペリエンスを提供し、クラシックUIがサポートされないクラウドサービスデプロイメントモデルとの互換性を維持するために、クラシックUIダイアログを含むAEMコンポーネントには、常にタッチUIダイアログが必要です。 このルールは、次のシナリオを検証します。
+
+* クラシックUIダイアログ（ダイアログの子ノード）を持つコンポーネントには、対応するタッチUIダイアログ（子ノード）が必要です。 `cq:dialog`
+* クラシックUIデザインダイアログ（design_dialogノード）を含むコンポーネントには、対応するタッチUIデザインダイアログ( `cq:design_dialog` 子ノード)が必要です。
+* クラシックUIダイアログとクラシックUIデザインダイアログの両方を持つコンポーネントには、対応するタッチUIダイアログと対応するタッチUIデザインダイアログの両方が必要です。
+
+AEM最新化ツールのドキュメントには、コンポーネントをクラシックUIからタッチUIに変換する方法に関するドキュメントとツールが記載されています。 詳しくは、「AEM最新化ツ [ール](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 」を参照してください。
+
+### 可変コンテンツと不変コンテンツがパッケージに混在してはならない {#oakpal-packages-immutable}
+
+**キー**: ImmutableMutableMixedPackage
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+クラウドサービスの展開モデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、顧客コードで変更しないで別の違反を引き起こす）または可変領域（その他すべて）のいずれかを含める必要があります。 `/apps and /libs, although /libs` 例えば、両方を含むパッケージ `/apps/myco/components/text and /etc/clientlibs/myco` はクラウドサービスと互換性がなく、問題が報告されます。
+
+詳しくは、 [AEMプロジェクト構造](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) （英語）を参照してください。
+
+### 逆複製エージェントは使用しない {#oakpal-reverse-replication}
+
+**キー**: 逆複製
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+リリースノートで説明されているように、逆複製のサポートはクラウドサービスのデプロイメントでは利用できません [。 レプリケーションエージェントの削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+
+逆複製を使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
+
