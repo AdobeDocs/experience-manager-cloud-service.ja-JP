@@ -1,7 +1,7 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：画像セット {#quick-start-image-sets}
+## クイックスタート：画像セット{#quick-start-image-sets}
 
 すぐに使い始めるには：
 
@@ -78,7 +78,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## 画像セット内のアセットのアップロード {#uploading-assets-in-image-sets}
 
-まずは画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最適なズームディテールを得るために、最大寸法の画像が少なくとも2000 pixelであることを確認します。 ダイナミックメディアでは、各画像を最大25メガピクセルまでレンダリングできます。 例えば、5000 x 5000メガピクセルの画像や、その他のサイズの組み合わせを25メガピクセルまで使用できます。
+まずは画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最適なズーム詳細には、最大サイズで 2,000 ピクセル以上の画像を使用してください。Dynamic Media では、各画像を最大 25 メガピクセルまでレンダリングできます。例えば、5,000 x 5,000 メガピクセルの画像や、その他のサイズの組み合わせを 25 メガピクセルまで使用できます。
 
 画像セットでは多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
 
@@ -102,7 +102,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >* ブラック、ブラウンおよびグリーンの色のサムネール。
 
 
-## 画像セットの作成 {#creating-image-sets}
+## 画像セットの作成{#creating-image-sets}
 
 画像セットは、ユーザーインターフェイスまたは API 経由で作成できます。ここでは、UI で画像セットを作成する方法について説明します。
 
@@ -161,7 +161,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した画像セットが、作成先のフォルダーに表示されます。
 
-## 画像セットの表示 {#viewing-image-sets}
+## 画像セットの表示{#viewing-image-sets}
 
 画像セットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して自動的に作成することもできます。
 
@@ -189,7 +189,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >
 >[画像セットの編集](#editing-image-sets)の説明に従って、ユーザーインターフェイスを通じて画像セットを表示できます。
 
-## 画像セットの編集 {#editing-image-sets}
+## 画像セットの編集{#editing-image-sets}
 
 画像セットには、次のような様々な編集タスクを実行できます。
 
@@ -225,10 +225,10 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
 
-## 画像セットのプレビュー {#previewing-image-sets}
+## 画像セットのプレビュー{#previewing-image-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## 画像セットの公開 {#publishing-image-sets}
+## 画像セットの公開{#publishing-image-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
