@@ -3,7 +3,7 @@ title: Adobe Experience Manager でのデジタルアセット管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -11,7 +11,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # アセットの管理 {#manage-assets}
 
-ここでは、Adobe Experience Manager (AEM) Assets でアセットを管理および編集する方法について説明します。コンテンツフラグメントを管理するには、[コンテンツフラグメント](content-fragments/content-fragments.md)アセットを参照してください。
+ここでは、Adobe Experience Manager（AEM）Assets でアセットを管理および編集する方法について説明します。コンテンツフラグメントを管理するには、[コンテンツフラグメント](content-fragments/content-fragments.md)アセットを参照してください。
 
 ## フォルダーの作成 {#creating-folders}
 
@@ -20,7 +20,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >
 >* `sling:OrderedFolder` タイプの Assets フォルダーの共有は、Marketing Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
->* Experience Managerでは、単語をフォルダーの名 `subassets` 前として使用することはできません。 これは、複合アセットのサブアセットを含むノード用に予約されたキーワードです
+>* Experience Manager では、`subassets` をフォルダーの名前として使用することはできません。これは、複合アセットのサブアセットを含むノード用に予約されているキーワードです
 
 
 1. 新しいフォルダーを作成するデジタルアセットフォルダーの場所に移動します。メニューで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL 新規フォルダ]**」を選択します。
@@ -34,7 +34,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## アセットのアップロード {#uploading-assets}
 
-詳しくは [、Experience Managerへのデジタルアセットの追加](add-assets.md)（英語のみ）を参照してください。
+詳しくは、[Experience Manager へのデジタルアセットの追加](add-assets.md)を参照してください。
 
 ## アセットのプレビュー {#previewing-assets}
 
@@ -71,13 +71,13 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、Enterキーを押します。 新しいタグが AEM に保存されます。
+1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、Enter キーを押します。新しいタグが AEM に保存されます。
 
    YouTube で公開して YouTube へのリンクを張る（適切なリンクがある場合）には、タグが必要です。
 
    >[!NOTE]
    >
-   >タグを作成するには、CRXリポジトリのパスでの書き込み `/content/cq:tags/default` 権限が必要です。
+   >タグを作成するには、CRX リポジトリの `/content/cq:tags/default` パスでの書き込み権限が必要です。
 
 1. アセットの使用状況の統計を確認するには、「**[!UICONTROL インサイト]**」タブをタップまたはクリックします。
 
@@ -90,7 +90,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
 
-1. アセットユーザーインターフェイスに移動します。タイトル、説明、タグなど、編集したメタデータプロパティは、カード表示のアセットカードと、リスト表示の関連する列の下に表示されます。
+1. アセットユーザーインターフェイスに移動します。編集済みのメタデータのプロパティ（タイトル、説明、タグなど）は、カード表示のアセットカードまたはリスト表示の関連する列に表示されます。
 
 ## アセットのコピー {#copying-assets}
 
@@ -98,7 +98,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 アセットの特定のコピーに一意に関連付けられる属性は継承されません。例えば、以下のものが該当します。
 
-* アセットID、作成日時、バージョンとバージョン履歴。 Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
+* アセット ID、作成日時、バージョン、バージョン履歴。これらのプロパティの一部は、`jcr:uuid`、`jcr:created`、`cq:name` プロパティによって示されます。
 
 * 作成時間と参照パスは、各アセットとその各レンディションに対して一意です。
 
@@ -424,7 +424,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
 >[!NOTE]
 >
->For a non-administrator user, suggestions appear only if the user has Read permissions at `/home` in CRXDE.
+>管理者以外のユーザーには、CRXDE で `/home` に読み取り権限がある場合にのみ候補が表示されます。
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
