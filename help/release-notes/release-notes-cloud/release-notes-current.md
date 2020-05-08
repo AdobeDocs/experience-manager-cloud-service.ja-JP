@@ -1,72 +1,72 @@
 ---
-title: 2020.4.0のクラウドサービスリリースノートとしてのAdobe Experience Manager
-description: 2020.4.0向けExperience Managerリリースノート
-translation-type: tm+mt
+title: Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート
+description: Experience Manager 2020.4.0 のリリースノート
+translation-type: ht
 source-git-commit: 98de3a6674aaef5228e96e0bf72e67de861f858e
 
 ---
 
 
-# Release Notes for Adobe Experience Manager as a Cloud Service 2020.4.0 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート {#release-notes}
 
-次の節では、クラウドサービス2020.4.0 [!DNL Experience Manager] の一般的なリリースノートの概要を説明します。
+[!DNL Experience Manager] as a Cloud Service 2020.4.0 の一般的なリリースノートの概要を次に説明します。
 
 ## リリース日 {#release-date}
 
-クラウドサー [!DNL Experience Manager] ビス2020.4.0のリリース日は2020年4月9日です。
+[!DNL Experience Manager] as a Cloud Service 2020.4.0 のリリース日は 2020 年 4 月 9 日です。
 
-## What&#39;s New in Assets {#assets}
+## Assets の新機能{#assets}
 
-および現在のリリースの新機能、機能強化、バグ修正に [!DNL Experience Manager Assets] つい [!DNL Dynamic Media] て詳しく説明します。
+現在のリリースの [!DNL Experience Manager Assets] および [!DNL Dynamic Media] の新機能、機能強化、バグ修正について詳しく説明します。
 
-* [Brand Portalは](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) 、Experience Manager Assetsのアセット配布の使用例をサポートします。 [!DNL Brand Portal] は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などに安全に配布してマーケティングニーズに応えるうえで役に立ちます。
-   * [!DNL Brand Portal] 設定は、コンソールを通じて行 [!DNL Adobe I/O] われます。 Brand Portalの設 [定を参照してください](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
-   * でのアセットソーシ [!DNL Brand Portal] ングは、クラウドサービスとし [!DNL Experience Manager] てまだサポートされていません。
+* [Brand Portal](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/home.html) は、Experience Manager Assets のアセット配布使用例をサポートします。[!DNL Brand Portal] は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などがダウンロードできるように安全に配布し、マーケティングニーズに応えるうえで役に立ちます。
+   * [!DNL Brand Portal] 設定は、[!DNL Adobe I/O] コンソールを通じておこなわれます。[Brand Portal の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)を参照してください。
+   * [!DNL Brand Portal] でのアセットソーシングは、[!DNL Experience Manager] as a Cloud Service ではまだサポートされていません。
 
-* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v2.0は、クラウドサービスと [!DNL Experience Manager] して機能します。 [!DNL Adobe Asset Link] デスクトップアプリ、アプリ内パネルを使用して、コンテンツ作成プロセスでのクリエイティブとマーケ [!DNL Experience Manager Assets] ターのコラボレ [!DNL Creative Cloud] ーションを [!DNL Adobe Photoshop]効率化し、デス [!DNL Adobe Illustrator]クトップアプリとの連携を [!DNL Adobe InDesign] 実現し [!DNL Asset Link] ます。
-   * [!DNL Experience Manager] はに事前設定されており、 [!DNL Adobe Asset Link]設定が簡単で、ク [リエイティブな](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html) 専門家に対する展開が速くなります。
-   * [!DNL Asset Link] クリエイティブユーザーが [別の環境に簡単に接続できる](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) 、 [!DNL Experience Manager] Experience Managerの環境切り替えボタンをサポートするようになりました。 この機能が役立つのは、異なるデプロイメントを使用して複数のクライアントを扱うエージェンシーデザイナーの [!DNL Experience Manager Assets] 場合です。
+* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v2.0 は、[!DNL Experience Manager] as a Cloud Service として機能します。[!DNL Adobe Asset Link] は、アプリ内パネル [!DNL Asset Link] を使用して、[!DNL Experience Manager Assets] と [!DNL Creative Cloud] デスクトップアプリの [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign] の連携を実現し、コンテンツ作成プロセスにおいてのクリエイティブとマーケターのコラボレーションを効率化します。
+   * [!DNL Experience Manager] は [!DNL Adobe Asset Link] 用に事前設定されているため、[設定が簡単](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)で、クリエイティブな専門家へのロールアウトが速くなります。
+   * [!DNL Asset Link] クリエイティブユーザーが別の [!DNL Experience Manager] 環境に簡単に接続できる、[Experience Manager 環境の切り替えボタン](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)がサポートされました。この機能が役立つのは、異なる [!DNL Experience Manager Assets] デプロイメントを使用して複数のクライアントを扱う、エージェンシーデザイナーの場合です。
 
-* ユーザーは、特定のフ [ォルダー階層のフォルダー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) Propertiesユーザーインターフェイスで、後処理ワークフローを自動 [!UICONTROL 開始に設定できます] 。
-   * フォルダのプロ [!UICONTROL パティ] (Properties  )のユーザーインターフェイスがシンプルになり、新しい「アセット処理」タブにメタデータプロファイル、処理プロファイル、新しい自動開始ワークフローの設定が追加されました。
+* ユーザーは、特定のフォルダー階層に対するフォルダーの「[!UICONTROL プロパティ]」ユーザーインターフェイスで、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を自動開始するように設定できます。
+   * フォルダーの「[!UICONTROL プロパティ]」ユーザーインターフェイスがシンプルになり、新しい「[!UICONTROL アセット処理]」タブに、メタデータプロファイル、処理プロファイル、新しく自動開始ワークフロー設定が追加されました。
 
-      ![処理プロファイルは、フォルダに簡単に適用でき、フォルダにアップロードされたすべてのアセットは、これらのフォルダを使用して処理されますプロファイル](/help/assets/assets/asset-processing-folder-properties.png)
+      ![処理プロファイルは、フォルダーに簡単に適用でき、フォルダーにアップロードされたすべてのアセットは、これらのプロファイルを使用して処理されます。](/help/assets/assets/asset-processing-folder-properties.png)
 
    * アセットの再処理オプションを使用すると、特定の処理プロファイルを選択して、サブフォルダー内のユーザーが選択したアセットを再処理できます。
 
-      ![特定の処理オプションを使用して、選択したアセットを再処理するプロファイル](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+      ![特定の処理プロファイルを使用して、選択したアセットを再処理する](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
-   * [!DNL Dynamic Media]:アセットをセキュリティで保護されたプレビューのみのために自動公開するように、選択的公開設定を追加。 また、パブリックドメイン内の配信用にDMS7に公開することなく、アセットをExperience Managerに明示的に公開できます。
+   * [!DNL Dynamic Media]：アセットをセキュリティで保護されたプレビューのみで自動公開するように、選択式の公開設定を追加。また、パブリックドメインの配信用に DMS7 に公開することなく、アセットを Experience Manager に明示的に公開できます。
 
 ### バグ修正 {#assets-bug-fixes}
 
-* アセットの処理に関する問題を修正しました。
-* アセットの設定 [!DNL Dynamic Media] と公開に関する修正を [!DNL Dynamic Media] 配信サービスに
+* アセット処理に関する問題を修正しました。
+* [!DNL Dynamic Media] の設定と [!DNL Dynamic Media] 配信サービスへのアセット公開を修正
 
 >[!MORELIKETHIS]
 >
->* [Adobe Assetリンクについて](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
->* [ブランドポータルの設定](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Experience Managerを設定して、アセットリンクを使用する](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [アセットのマイクロサービスを使用して、Experience Managerでワークフローを作成する](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [Adobe Asset Link について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
+>* [Brand Portal の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [Asset Link を使用するための Experience Manager の設定](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [アセットのマイクロサービスを使用した、Experience Manager でのワークフロー作成](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
-## Cloud Managerの新機能 {#whats-new-cloud-manager}
+## Cloud Manager の新機能 {#whats-new-cloud-manager}
 
-* 投稿者のURLが、Cloud Manager UIの環境ページから利用できるようになりました。
-* ナビゲーションが変更され、Cloud Managerの概要ページでユーザーがプログラムを編集、切り替えまたは追加できるようになりました。
+* 発行者の URL が、Cloud Manager UI の環境ページから利用できるようになりました。
+* ナビゲーションが変更され、Cloud Manager の概要ページでユーザーがプログラムの編集、切り替え、追加が可能になりました。
 * ユーザーが Cloud Manager ランディングページのプログラムカードからプログラムを編集できるように変更しました。
 * 関連付けられた環境に対して、新しいパイプラインステータス「**パイプライン実行中**」が表示されます。
 * パイプライン実行ページをわかりやすく改善しました。これには、パイプライン名（非実稼動パイプラインのみ）とタイプの表示、およびパイプラインのステータスが「処理中」、「キャンセル」、「失敗」のいずれであるかを示すバッジが含まれます。
-* ユーザーエクスペリエンスを向上させ、プログラム/環境ボタンが無効にな追加る理由を理解しやすくするためのツールヒント。
-* 失敗した環境は、UIとAPIを使用して削除できるようになりました。
+* ユーザーエクスペリエンスを向上させ、「プログラム／環境」ボタンが無効になる理由を理解しやすくするためのツールヒント。
+* 失敗した環境は、UI と API を使用して削除できるようになりました。
 * git パスワードの生成に使用されるプロセスは、基盤となるサービス層の問題に対してより柔軟に対処できるようになりました。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* パイプライン実行の詳細ページのステージ環境へのリンクが、一貫して正しい場所に移動していなかった問題を修正しました。
+* パイプライン実行の詳細ページのステージ環境へのリンクが、正しい場所に一貫してナビゲーションしていなかった。
 * 環境作成プロセス内の個々のステップが、必要な時間より早くタイムアウトし、プロセスが失敗する。
-* アーティファクトのメタデータをダウンロードする際のデッドロックを回避するため、ビルドコンテナで使用される Maven の設定を更新しました。
-* 場合によっては、イメージのビルド手順で顧客パッケージを正常にダウンロードできないことがあります。
-* 発生頻度の低い状況によっては、環境の削除が妨げられる場合があります。
-* Experience Cloud の通知が一貫して受信されませんでした。
+* アーティファクトのメタデータをダウンロードする際のデッドロックを回避するため、ビルドコンテナで使用される Maven の設定を更新。
+* 場合によっては、イメージのビルド手順で顧客パッケージを正常にダウンロードできない。
+* 発生頻度の低い状況によっては、環境の削除が妨げられる場合がある。
+* Experience Cloud の通知が一貫して受信されなかった。
