@@ -1,7 +1,7 @@
 ---
 title: 検索
 description: 包括的な検索を使用して、よりすばやくコンテンツを見つけます
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
