@@ -1,13 +1,13 @@
 ---
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
 
 
-# ページへのワークフローの適用 {#applying-workflows-to-pages}
+# ページへのワークフローの適用{#applying-workflows-to-pages}
 
 オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
 
@@ -67,7 +67,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 1. **ワークフローの作成**&#x200B;ウィザードは、[ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard)するために役立ちます。
 
-### タイムラインからのワークフローの開始 {#starting-a-workflow-from-the-timeline}
+### タイムラインからのワークフローの開始{#starting-a-workflow-from-the-timeline}
 
 **タイムライン**&#x200B;から、選択したリソースに適用されるワークフローを開始できます。
 
@@ -78,7 +78,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 1. **ワークフローの作成**&#x200B;ウィザードは、[ワークフローの詳細を指定](#specifying-workflow-details-in-the-create-workflow-wizard)するために役立ちます。
 
-### ワークフローの作成ウィザードでのワークフローの詳細の指定 {#specifying-workflow-details-in-the-create-workflow-wizard}
+### ワークフローの作成ウィザードでのワークフローの詳細の指定{#specifying-workflow-details-in-the-create-workflow-wizard}
 
 **ワークフローの作成**&#x200B;ウィザードは、ワークフローを選択し、必要な詳細を指定するために役立ちます。
 
