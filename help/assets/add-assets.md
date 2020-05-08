@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager へのデジタルアセットの追加
 description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
 
 # Adobe Experience Manager へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
-Adobe Experience Managerは、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のDigital Asset Management(DAM)サービスで強化します。 画像、ドキュメント、生画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブからExperience Manager Assetsにアップロードできます。
+Adobe Experience Manager は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。画像、ドキュメント、生の画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブから Experience Manager Assets にアップロードできます。
 
 アップロード方法は多数用意されています。最もよく使用されるブラウザーアップロードに加えて、他の方法でも Adobe Experience Manager リポジトリにアセットを追加することができます。Adobe Asset Link や Adobe Experience Manager デスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードおよび取り込みスクリプト、AEM 拡張機能として追加されている自動取り込み統合などです。
 
@@ -77,7 +77,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
-> ネストされたフォルダ階層をAEMにアップロードする方法については、アセットの [一括アップロードを参照してくださ](#bulk-upload)い。
+> ネストされたフォルダー階層を AEM にアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
