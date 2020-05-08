@@ -2,7 +2,10 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: b7bb84b026c9187cb633e9ccfdc17aa5ec930aff
+workflow-type: tm+mt
+source-wordcount: '3916'
+ht-degree: 99%
 
 ---
 
@@ -16,9 +19,12 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >[!NOTE]
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
 
+>[!WARNING]
+> Windowsユーザー： クラウドサービスのローカルディスパッチャーツール(v2.0.20)としてのAEMの現在のバージョンは、Windowsとの互換性がありません。 Windows互換性の更新を受け取るには、 [アドビサポート](https://daycare.day.com/home.html) にお問い合わせください。
+
 ## Dispatcher ツール {#dispatcher-sdk}
 
-Dispatcher ツールは、AEM as a Cloud Service SDK の一部で、以下を提供します。
+Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下を提供します。
 
 * Dispatcher 用の Maven プロジェクトにインクルードする設定ファイルを含むバニラファイル構造。
 * ローカルで Dispatcher 設定を検証するためのツール。
