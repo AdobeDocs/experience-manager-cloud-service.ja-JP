@@ -1,13 +1,13 @@
 ---
-title: CI/CDパイプラインの設定 — クラウドサービス
-description: CI/CDパイプラインの設定 — クラウドサービス
-translation-type: tm+mt
+title: CI/CD パイプラインの設定 - Cloud Services
+description: CI/CD パイプラインの設定 - Cloud Services
+translation-type: ht
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ---
 
 
-# CI-CDパイプラインの設定 {#configure-ci-cd-pipeline}
+# CI/CD パイプラインの設定 {#configure-ci-cd-pipeline}
 
 
 ## フローについて {#understanding-the-flow}
@@ -16,17 +16,17 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 パイプラインの設定はデプロイメントマネージャーが担当します。その際は、まず **Git リポジトリ**&#x200B;からブランチを選択します。
 
-パイプラインを設定するには、次の操作を行う必要があります。
+パイプラインを設定するには、以下をおこなう必要があります。
 
-* パイプラインを開始するトリガーを定義します。
-* 実稼働環境のデプロイメントを制御するパラメーターを定義します。
-* パフォーマンステストのパラメーターを設定します。
+* パイプラインを開始するトリガーの定義
+* 実稼動デプロイメントを制御するパラメーターの定義
+* パフォーマンステストパラメーターの設定
 
 ## パイプラインの設定 {#setting-up-the-pipeline}
 
 >[!CAUTION]
 >
->1つのプログラムの作成が完了し、Gitリポジトリに少なくとも1つのブランチがあるまで、パイプラインを設定できません。
+>1 つのプログラムの作成が完了し、Git リポジトリに少なくとも 1 つのブランチができるまで、パイプラインは設定できません。
 
 コードのデプロイを開始する前に、[!UICONTROL Cloud Manager] からパイプライン設定を指定する必要があります。
 
@@ -36,7 +36,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
 ## [!UICONTROL Cloud Manager] からパイプライン設定を指定する{#configuring-the-pipeline-settings-from-cloud-manager}
 
-プログラムを設定し、 [!UICONTROL Cloud Manager] UIを使用して少なくとも1つの環境を設定したら、デプロイメントパイプラインを設定する準備が整います。
+[!UICONTROL Cloud Manager] UI を使用してプログラムをセットアップし、少なくとも 1 つの環境ができたら、いつでもデプロイメントパイプラインをセットアップできます。
 
 パイプラインの動作と環境を設定するには、次の手順に従います。
 
@@ -44,19 +44,19 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
    ![](assets/set-up-pipeline1.png)
 
-1. **パイプラインを設定**&#x200B;画面が表示されます。Select the branch and click **Next**.
+1. **パイプラインを設定**&#x200B;画面が表示されます。ブランチを選択して、「**次へ**」をクリックします。
 
    ![](assets/set-up-pipeline2.png)
 
-1. 展開オプションを設定します。
+1. デプロイメントオプションを設定します。
 
    ![](assets/set-up-pipeline3.png)
 
    パイプラインを開始するトリガーを定義できます。
 
    * **手動** - UI を使用して、パイプラインを手動で開始します。
-   * **Git の変更時** - 設定された Git ブランチにコミットが追加されるたびに CI／CD パイプラインを開始します。このオプションを選択しても、常にパイプラインを手動で開始できます。
-   パイプラインの設定または編集中に、Deployment Managerには、品質ゲートで重要な障害が発生した場合のパイプラインの動作を定義するオプションがあります。
+   * **Git の変更時** - 設定された Git ブランチにコミットが追加されるたびに CI/CD パイプラインを開始します。このオプションを選択しても、常にパイプラインを手動で開始できます。
+   パイプラインのセットアップまたは編集中に、デプロイメントマネージャーは、品質ゲートのいずれかで重要なエラーが検出された場合のパイプラインの動作を定義できます。
 
    これは、より自動化されたプロセスを求めるお客様に役に立ちます。使用できるオプションは以下のとおりです。
 
@@ -65,11 +65,11 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
    * **直ちに続行** - 重要なエラーが検出されても、常にパイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. Click **Next** to access the **Testing** tab to define your testing criteria for your program.
+1. 「**次へ**」をクリックして「**テスト**」タブにアクセスし、プログラムのテスト条件を定義します。
 
    ![](assets/set-up-pipeline4.png)
 
-1. 「**保存**」をクリックします。概要ペー *ジに* 、プログラムカード **のデプロイが表示されます** 。 「 **Deploy** 」ボタンをクリックして、プログラムをデプロイします。
+1. 「**保存**」をクリックします。*概要*&#x200B;ページに、**プログラムをデプロイ**&#x200B;カードが表示されます。「**デプロイ**」ボタンをクリックして、プログラムをデプロイします。
 
    ![](assets/configure-pipeline5.png)
 
@@ -84,19 +84,19 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
    ![](assets/configure-pipeline6.png)
 
-1. Clicking on the **Add** button, to specify the Pipeline Name, Pipeline Type, and the Git Branch.
+1. 「**追加**」ボタンをクリックして、「パイプライン名」、「パイプラインタイプ」、「Git ブランチ」を指定します。
 
    さらに、パイプラインオプションから「デプロイメントトリガー」と「重要なエラー時の動作」も設定できます。
 
    ![](assets/non-prod-pipe1.png)
 
-1. Click **Save** and the pipeline is shown on the card on the home screen with three actions, as shown below:
+1. 「**保存**」をクリックすると、パイプラインがホーム画面上のカードに次の 3 つのアクションと共に表示されます（下図を参照）。
 
    ![](assets/configure-pipeline8.png)
 
    * **編集** - パイプライン設定を編集できます
    * **ビルド** - 実行ページに移動し、そこからパイプラインを実行できるようになります
-   * **Gitの管理** - Cloud Manager Gitリポジトリへのアクセスに必要な情報をユーザーが取得できるようにします
+   * **Git を管理** - Cloud Manager Git リポジトリへのアクセスに必要な情報をユーザーが取得できるようにします
 
 ## 次の手順 {#the-next-steps}
 
