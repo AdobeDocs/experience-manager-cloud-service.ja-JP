@@ -2,7 +2,7 @@
 title: アセット、フォルダー、コレクションをリンクとして共有
 description: ここでは、Adobe Experience Manager Assets 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -10,13 +10,13 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Adobe Experience Manager で管理されるアセットの共有と配布 {#share-assets-from-aem}
 
-Adobe Experience Manager (AEM) Assets では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。次の方法を使用して、Experience Manager Assetsのアセットをクラウドサービスとして共有します。
+Adobe Experience Manager（AEM）Assets では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。Adobe Experience Manager Assets as a Cloud Service のアセットを共有するには、次の方法を使用します。
 
-* リンクとして共有.
+* リンクとして共有。
 * アセットをダウンロードし、個別に共有します。
-* AEM デスクトップアプリケーションを使用して共有.
-* Adobe Asset Link を使用して共有.
-* （今後の機能）Brand Portalを使用した共有。
+* AEM デスクトップアプリケーションを使用して共有。
+* Adobe Asset Link を使用して共有。
+* （提供予定の機能）Brand Portal を使用して共有。
 
 ## アセットをリンクとして共有 {#sharelink}
 
@@ -110,7 +110,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **AEM デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/introduction.html)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、例えば、新しい画像をアップロードすることで、アセットを作成し、AEMユーザーである対応するユーザーとアセットを共有できます。 詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
+* **AEM デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/introduction.html)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
 
 * **Adobe Asset Link**：クリエイティブプロフェッショナルは、Adobe InDesign、Adobe Illustrator、Adobe Photoshop 内から直接アセットを検索および使用できます。
 
@@ -151,28 +151,28 @@ Before you can share assets as links, configure the email service.
 
 ### 最大データサイズの設定 {#maxdatasize}
 
-リンク共有機能を使用して共有されているリンクからアセットをダウンロードすると、AEM は、リポジトリのアセットの階層を圧縮して、ZIP ファイルにしてアセットを返します。ただし、ZIP ファイルとして圧縮できるデータ量に制限がないと、膨大なデータが圧縮の対象となり、JVM のメモリ不足エラーの原因となります。この状況によるサービス拒否攻撃からシステムを保護するには、ダウンロードするファイルの最大サイズを設定します。 アセットの未圧縮時のサイズが設定値を超えていると、アセットのダウンロード要求は拒否されます。デフォルト値は 100 MB です。
+リンク共有機能を使用して共有されているリンクからアセットをダウンロードすると、AEM は、リポジトリのアセットの階層を圧縮して、ZIP ファイルにしてアセットを返します。ただし、ZIP ファイルとして圧縮できるデータ量に制限がないと、膨大なデータが圧縮の対象となり、JVM のメモリ不足エラーの原因となります。この状況によるサービス妨害攻撃からシステムを保護するには、ダウンロードするファイルの最大サイズを設定します。アセットの未圧縮時のサイズが設定値を超えていると、アセットのダウンロード要求は拒否されます。デフォルト値は 100 MB です。
 
 1. AEM のロゴをクリックまたはタップし、**[!UICONTROL ツール]**／**[!UICONTROL 運営]**／**[!UICONTROL Web コンソール]**&#x200B;に移動します。
 1. Web コンソールで、「**[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]**」設定を見つけます。
-1. Open the configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. 設定を編集モードで開き、「**[!UICONTROL 最大コンテンツサイズ（非圧縮）]**」パラメーターの値を変更します。
 1. 変更内容を保存します。
 
 <!--
 Add content or link about how to configure sharing via BP, DA, AAL, etc.
 -->
 
-### デスクトップアクションをデスクトップアプリで使用できるようにする {#desktop-actions}
+### デスクトップアクションのデスクトップアプリでの有効化 {#desktop-actions}
 
-ブラウザーの Assets ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開くことができます。これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、AEM Webインターフェイス [でデスクトップアクションを有効にするを参照してくださ](https://docs.adobe.com/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)い。
+ブラウザーの Assets ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開くことができます。これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、[AEM Web インターフェイスでのデスクトップアクションの有効化](https://docs.adobe.com/help/ja-JP/experience-manager-desktop-app/using/using.html#desktopactions-v2)を参照してください。
 
-![デスクトップアプリで作業する際に、デスクトップアクションをショートカットとして使用できるようにする](assets/enable_desktop_actions.png)
+![デスクトップアプリで作業する際の、デスクトップアクションのショートカットとしての有効化](assets/enable_desktop_actions.png)
 
-### Adobe Asset Linkを使用する設定 {#configure-asset-link}
+### Adobe Asset Link の使用設定 {#configure-asset-link}
 
-Adobe Asset Linkを使用すると、コンテンツ作成プロセスでのクリエイティブとマーケティング担当者のコラボレーションが合理化されます。 Adobe Experience Manager(AEM)AssetsをCreative Cloudデスクトップアプリケーション、Adobe InDesign、Adobe PhotoshopおよびAdobe Illustratorに接続します。 Adobe Asset Linkパネルを使用すると、AEM Assetsに保存されたコンテンツに対して、クリエイティブが最もなじみのあるクリエイティブアプリケーションからアクセスし、変更を加えることができます。
+Adobe Asset Link を使用すると、コンテンツ作成プロセスでのクリエイティブ担当者とマーケティング担当者のコラボレーションを合理化できます。Adobe Experience Manager（AEM）Assets を、Creative Cloud デスクトップアプリケーションの Adobe InDesign、Adobe Photoshop および Adobe Illustrator に接続します。Adobe Asset Link パネルを使用すると、AEM Assets に保存されたコンテンツに対して、クリエイティブが最もなじみのあるクリエイティブアプリケーションからアクセスして、変更を加えることができます。
 
-Adobe Asset Link [で使用するAEMの設定方法を参照してください](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)。
+[AEM で Adobe Asset Link を使用する設定方法](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)を参照してください。
 
 ## ベストプラクティスとトラブルシューティング {#bestpractices}
 
