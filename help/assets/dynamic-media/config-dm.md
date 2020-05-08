@@ -1,7 +1,7 @@
 ---
-title: Dynamic Media クラウドサービスの設定
+title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Dynamic Media の設定 {#configuring-dynamic-media-scene-mode}
 
-開発用、ステージング用、実稼動用など、複数の異なる環境向けに Adobe Experience Manager をセットアップして使用する場合は、それぞれの環境向けに Dynamic Media クラウドサービスを設定する必要があります。
+開発用、ステージング用、実稼動用など、複数の異なる環境向けに Adobe Experience Manager をセットアップして使用する場合は、それぞれの環境向けに Dynamic Media Cloud Services を設定する必要があります。
 
 ## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media-scene-mode}
 
@@ -43,38 +43,38 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Dynamic Media クラウドサービスの設定 {#configuring-dynamic-media-cloud-services}
+## Dynamic Media Cloud Service の設定 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media クラウドサービスを設定する前**：Dynamic Media の資格情報を含んだプロビジョニング電子メールを受信したら、Dynamic Media Classic に[ログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)して、パスワードを変更する必要があります。プロビジョニング電子メールで提供されたパスワードは、システムが生成したもので、一時的なパスワードです。Dynamic Media クラウドサービスが正しい資格情報で設定されるように、パスワードを更新することが重要です。
+**Dynamic Media Cloud Service を設定する前**：Dynamic Media の資格情報を含んだプロビジョニング電子メールを受信したら、Dynamic Media Classic に[ログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)して、パスワードを変更する必要があります。プロビジョニング電子メールで提供されたパスワードは、システムが生成したもので、一時的なパスワードです。Dynamic Media Cloud Service が正しい資格情報で設定されるように、パスワードを更新することが重要です。
 
-Dynamic Media クラウドサービスを設定するには：
+Dynamic Media Cloud Services を設定するには：
 
 1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
-1. コンソールの左側の「**[!UICONTROL ツール]**」見出しの下で、**[!UICONTROL クラウドサービス／Dynamic Media 設定]**&#x200B;をタップします。
+1. コンソールの左側の「**[!UICONTROL ツール]**」見出しの下で、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;をタップします。
 1. Dynamic Media 設定ブラウザーページの左側のパネルで、「**[!UICONTROL グローバル]**」をタップし（「**[!UICONTROL グローバル]**」の左側にあるフォルダーアイコンをタップまたは選択しないでください）、次に、「**[!UICONTROL 作成]**」をタップします。
 1. Dynamic Media 設定を作成ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。これらは、プロビジョニング電子メールでアドビから提供されます。この電子メールを受信していない場合は、サポートにお問い合わせください。
 1. 「**[!UICONTROL Dynamic Media に接続]**」をクリックします。
 
    >[!NOTE]
    >
-   >Dynamic Media の資格情報を含むプロビジョニング電子メールを受信したら、Dynamic Media Classic に[ログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)して、パスワードを変更してください。プロビジョニング電子メールで提供されたパスワードは、システムが生成したもので、一時的なパスワードです。Dynamic Media クラウドサービスが正しい資格情報で設定されるように、パスワードを更新することが重要です。
+   >Dynamic Media の資格情報を含むプロビジョニング電子メールを受信したら、Dynamic Media Classic に[ログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)して、パスワードを変更してください。プロビジョニング電子メールで提供されたパスワードは、システムが生成したもので、一時的なパスワードです。Dynamic Media Cloud Service が正しい資格情報で設定されるように、パスワードを更新することが重要です。
 
-1. 接続が正常に完了したら、次を設定できます。
+1. 接続に成功したら、次のように設定できます。
 
    * **[!UICONTROL 会社]** - Dynamic Media アカウントの名前です。異なるサブブランドや事業部、または異なるステージング／実稼動環境のために、複数の Dynamic Media アカウントを持っていることがあります。
 
    * **[!UICONTROL 会社のルートフォルダーのパス]**
 
-   * **[!UICONTROL アセットの公開]** — 次の3つのオプションから選択できます。
-      * **[!UICONTROL 即座に]** 、アセットがアップロードされると、アセットが取り込まれ、URL/埋め込みが即座に提供されます。 アセットを公開するためにユーザーが操作する必要はありません。
-      * **[!UICONTROL アクティベーション時は]** 、URL/埋め込みリンクを指定する前に、アセットを明示的に公開する必要があることを意味します。
-      * **[!UICONTROL 一部のみの公開]** (Selective Publish)とは、アセットがセキュリティで保護されたプレビューのためにのみ自動公開され、DMS7に公開せずに明示的にAEMに公開して、パブリックドメインでの配信を可能にすることを意味します。 今後、アドビは、相互に排他的なアセットをAEMに公開し、ダイナミックメディアに公開するこのオプションを拡張します。 つまり、アセットをDMS7に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。 または、プレビュー用にAEMでのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のためにDMS7で公開されません。
+   * **[!UICONTROL アセットの公開]** - 次の 3 つのオプションから選択できます。
+      * **[!UICONTROL 即時公開]**&#x200B;とは、アセットがアップロードされると、システムがアセットを取り込み、URL／埋め込みをすぐに提供することを意味します。アセットを公開するためにユーザーが操作する必要はありません。
+      * **[!UICONTROL アクティベーション時]**&#x200B;とは、URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があることを意味します。
+      * **[!UICONTROL 一部のみの公開]**&#x200B;とは、アセットがセキュリティで保護されたプレビューのためにのみ自動公開され、DMS7 に公開せずに明示的に AEM に公開して、パブリックドメインでの配信を可能にすることを意味します。今後、アドビは、相互に排他的なアセットを AEM に公開し、Dynamic Media に公開するこのオプションを拡張します。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。
    * **[!UICONTROL プレビューサーバーを保護]** - セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、この設定を指定されたとおりにしておくことをお勧めします。
 
    * **[!UICONTROL すべてのコンテンツを同期]** - デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。
 
    * **[!UICONTROL Dynamic Media 同期モード]**
-      * **[!UICONTROL デフォルトで有効]** — フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。 <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL デフォルトで有効]** - フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。
 選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーのプロパティページを開きます。「**[!UICONTROL 詳細]**」タブをタップし、「**[!UICONTROL Dynamic Media 同期モード]**」ドロップダウンリストの次の 3 つのオプションから選択して、「**[!UICONTROL 保存]**」をタップします。
          * **[!UICONTROL 継承]** - フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つ、またはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップの要領で表示されます。
@@ -132,7 +132,7 @@ Dynamic Media Classic（Scene7）のユーザーインターフェイスを使�
 * [サポートされていない形式のカスタム MIME タイプの追加](#adding-custom-mime-types-for-unsupported-formats)
 * [画像セットおよびスピンセットを自動生成するためのバッチセットプリセットの作成](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Image Server の公開設定 {#publishing-setup-for-image-server}
+#### Image Server の公開設定{#publishing-setup-for-image-server}
 
 公開設定は、アセットがデフォルトで Dynamic Media からどのように配信されるかを決定します。設定が指定されていない場合、Dynamic Media は、公開設定で定義されたデフォルト設定に従ってアセットを配信します。例えば、解像度属性が含まれていない画像を配信するように要求した場合、画像は初期設定のオブジェクト解像度設定で配信されます。
 
