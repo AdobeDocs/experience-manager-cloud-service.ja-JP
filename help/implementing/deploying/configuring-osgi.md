@@ -2,10 +2,10 @@
 title: AEM用のOSGiをクラウドサービスとして設定する
 description: 'シークレット値と環境固有の値を使用するOSGi設定 '
 translation-type: tm+mt
-source-git-commit: 3647715c2c2356657dfb84b71e1447b3124c9923
+source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 4%
+source-wordcount: '2689'
+ht-degree: 3%
 
 ---
 
@@ -164,41 +164,56 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## リポジトリでの設定の作成 {#creating-the-configuration-in-the-repository}
+## OSGi設定の作成
 
-新しい設定をリポジトリに実際に追加するには：
+以下に説明するように、新しいOSGi設定を作成する方法は2つあります。 前者の方法は、通常、開発者によってよく知られているOSGiのプロパティと値を持つカスタムOSGiコンポーネントの設定に使用され、後者はAEMが提供するOSGiコンポーネントの設定に使用されます。
 
-1. ui.appsプロジェクトで、必要に応じて、使用している実行モードに基づいて `/apps/…/config.xxx` フォルダーを作成します
+### OSGi設定の作成
 
-1. PIDの名前で新しいJSONファイルを作成し、 `.cfg.json` 拡張子を追加します
+JSON形式のOSGi設定ファイルは、AEMプロジェクト内で直接手動で書き込むことができます。 これは、よく知られているOSGiコンポーネント、特に、設定を定義する同じ開発者が設計および開発したカスタムOSGiコンポーネントに対して、OSGi設定をすばやく作成する方法です。 この方法は、同じOSGiコンポーネントの設定を様々なrunmodeフォルダーにコピー/貼り付け、更新する場合にも利用できます。
+
+1. IDEで、 `ui.apps` プロジェクトを開き、新しいOSGi構成を実行モードで有効にするターゲットを実行するconfigフォルダ(`/apps/.../config.<runmode>`)を探すか、作成します
+1. このconfigフォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。 PIDはOSGiコンポーネントの永続的なIDです。通常、OSGiコンポーネントの実装の完全なクラス名です。 次に例を示します。
+   `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
+OSGi設定ファクトリのファイル名には、命名規則を使用します。 `<PID>-<factory-name>.cfg.json`
+1. 新しい `.cfg.json` ファイルを開き、 [JSON OSGi設定形式に従って、OSGiプロパティと値のペアのキー/値の組み合わせを定義します](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)。
+1. 変更を新しい `.cfg.json` ファイルに保存します
+1. 新しい追加OSGi構成ファイルをGitにコミットします
+
+### AEM SDK Quickstartを使用したOSGi設定の生成
+
+AEM SDK Quickstart JarのAEM Web Consoleは、OSGiコンポーネントの設定、OSGi設定のJSONとしてのエクスポートを行うために使用できます。 これは、OSGiプロパティとその値の形式がAEMプロジェクトでOSGi設定を定義する開発者には理解されない可能性のある、AEMが提供するOSGiコンポーネントを設定する場合に役立ちます。 AEM Web Consoleの設定UIを使用すると、リポジトリに `.cfg.json` ファイルが書き込まれるので、AEM Project定義のOSGi設定が生成される設定と異なる場合に、ローカル開発中の予期しない動作を回避するため、注意が必要です。
+
+1. AEM SDK Quickstart JarのAEM Webコンソールに管理者ユーザーとしてログインします
+1. OSGi/設定に移動します
+1. 設定するOSGiコンポーネントを探し、タイトルをタップして編集します
+   ![OSGi 設定](./assets/configuring-osgi/configuration.png)
+1. 必要に応じてWeb UIを使用してOSGi設定プロパティの値を編集します
+1. 安全な場所にPersistent Identity(PID)を記録します。これは後でOSGi設定JSONの生成に使用されます。
+1. 「保存」をタップします
+1. OSGi/OSGi Installer Configuration Printerに移動します。
+1. 手順5でコピーしたPIDに貼り付け、「Serialization Format」が「OSGi Configurator JSON」に設定されていることを確認します。
+1. 「印刷」をタップします。
+1. JSON形式のOSGi設定は、「シリアライズされた設定プロパティ」セクションに表示されます
+   ![OSGi Installer Configuration Printer](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
+1. IDEで、 `ui.apps` プロジェクトを開き、新しいOSGi構成を実行するターゲットが有効にするconfigフォルダ(`/apps/.../config.<runmode>`)を探すか、作成します。
+1. このconfigフォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。 PIDは、手順5と同じ値です。
+1. 手順10のシリアライズされた設定プロパティを `.cfg.json` ファイルに貼り付けます。
+1. 変更を新しい `.cfg.json` ファイルに保存します。
+1. 新しい追加OSGi設定ファイルをGitにコミットします。
 
 
-1. JSONファイルにOSGi設定のキーと値のペアを入力する
-
-   >[!NOTE]
-   >
-   >初期設定のOSGiサービスを設定する場合、 `/system/console/configMgr`
-
-
-1. JSONファイルをプロジェクトに保存します。 -->
-
-## ソース管理の設定プロパティの形式 {#configuration-property-format-in-source-control}
-
-新しいOSGI設定プロパティの作成については、上の「リポジトリへの新しい設定の [追加](#creating-the-configuration-in-the-repository) 」の節で説明しています。
-
-次の手順に従い、次のサブセクションで説明されている構文を変更します。
+## OSGi構成プロパティの形式
 
 ### インライン値 {#inline-values}
 
 予想通り、インライン値は、標準のJSON構文に従って、標準の名前と値のペアとして形式設定されます。 次に例を示します。
 
 ```json
- {
-
- "my_var1": "val",
- "my_var2": "abc",
- "my_var3": 500
-
+{
+   "my_var1": "val",
+   "my_var2": [ "abc", "def" ],
+   "my_var3": 500
 }
 ```
 
