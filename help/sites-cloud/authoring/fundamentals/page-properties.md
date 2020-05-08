@@ -1,7 +1,7 @@
 ---
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
 ---
@@ -136,7 +136,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
    * 書き出し設定を指定します。
 
-### サムネール {#thumbnail}
+### サムネール{#thumbnail}
 
 ページサムネール画像が表示されます。以下の操作を実行できます。
 
@@ -167,11 +167,11 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
    * **優先 XF バリエーション**
       * ページのメタデータの生成に使用されるエクスペリエンスフラグメントのバリエーションを定義します
 
-### クラウドサービス {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **クラウドサービス**
+* **Cloud Services**
 
-   * クラウドサービスのプロパティを定義します。
+   * Cloud Services のプロパティを定義します。
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -187,7 +187,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
    * [ブランドを選択してターゲット設定の範囲を指定](/help/sites-cloud/authoring/personalization/targeted-content.md)します。
    >[!NOTE]
-   >このオプションを使用するには、ユーザーアカウントがグループに属している必要 `Target Adminstrators`があります。
+   >このオプションを使用するには、ユーザーアカウントが `Target Adminstrators` グループに属している必要があります。
 
 ### 権限 {#permissions}
 
@@ -212,14 +212,14 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
    * 変更がライブコピーに適用される条件を制御します。
 
 
-### ライブコピー {#live-copy}
+### ライブコピー{#live-copy}
 
 * **ライブコピー**
 
    * マルチサイト管理でのライブコピーページのプロパティを定義します。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * ブループリントからの変更が適用される条件を制御します。
 
-### サイト構造 {#site-structure}
+### サイト構造{#site-structure}
 
 * **サインアップページ**、**オフラインページ**&#x200B;など、サイト全体にわたる機能を提供するページへのリンクを指定します。
 
