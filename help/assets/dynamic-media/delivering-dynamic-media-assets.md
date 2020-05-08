@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法を学習します
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
 
 ---
@@ -17,12 +17,12 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 * Web サイトが AEM 上にない場合は、次のいずれかの方法を選択します。
 
    * ビデオまたは画像を Web サイトに埋め込みます。
-   * WebアプリケーションへのURLのリンクリンクは、ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合に使用します。
+   * Web アプリケーションに URL をリンクします。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、リンク機能を使用します。
    * レスポンシブサイトの場合は、[最適化された画像を配信できます。](/help/assets/dynamic-media/responsive-site.md)
 
 >[!NOTE]
 >
->スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。See [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) for more information.
+>スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
 
 詳しくは、次のトピックを参照してください。
 
@@ -31,11 +31,11 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 * [Dynamic Media でのホットリンク保護の有効化](/help/assets/dynamic-media/hotlink-protection.md)
 * [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [レスポンシブサイト用に最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)
-* [コンテンツの HTTP/2 配信の](/help/assets/dynamic-media/http2faq.md)
+* [コンテンツの HTTP/2 配信](/help/assets/dynamic-media/http2faq.md)
 * [CDN にキャッシュされたコンテンツの無効化](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
 * [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media アセットの HTTP/2 配信{#http-delivery-of-dynamic-media-assets}
 
 AEM は現在、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートしています。つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
