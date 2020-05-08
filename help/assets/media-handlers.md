@@ -2,7 +2,7 @@
 title: メディアハンドラーとワークフローを使用したアセットの処理
 description: 様々なハンドラーの概要と、ワークフローでハンドラーを使用してアセットに対してタスクを実行する方法について説明します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # メディアハンドラーとワークフローを使用したアセットの処理 {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager (AEM) Assets には、アセットを処理するためのデフォルトのワークフローとメディアハンドラーのセットが付属しています。ワークフローでは、アセットに対して実行する全般的なタスクを定義し、特定のタスクをメディアハンドラーに委任します。例えば、サムネールの生成やメタデータの抽出などです。
+Adobe Experience Manager（AEM）Assets には、アセットを処理するためのデフォルトのワークフローとメディアハンドラーのセットが付属しています。ワークフローでは、アセットに対して実行する全般的なタスクを定義し、特定のタスクをメディアハンドラーに委任します。例えば、サムネールの生成やメタデータの抽出などです。
 
 ワークフローは、特定のタイプのアセットがサーバーにアップロードされたときに自動的に実行されるように定義できます。処理手順は、一連の AEM Assets メディアハンドラーに基づいて定義されます。AEM には、[組み込みのハンドラー](#default-media-handlers)がいくつか用意されています。さらに、追加のハンドラーを[カスタムで開発](#creating-a-new-media-handler)したり、処理を[コマンドラインツール](#command-line-based-media-handler)に委任して定義したりできます。
 
@@ -18,7 +18,7 @@ Adobe Experience Manager (AEM) Assets には、アセットを処理するため
 
 >[!NOTE]
 >
->See [Assets supported file formats](file-format-support.md) article for a description of all the formats supported by AEM Assets as well as the features supported for each format.
+>AEM Assets でサポートされるすべての形式と、各形式でサポートされる機能の説明については、[Assets でサポートされるファイル形式](file-format-support.md)を参照してください。
 
 ## デフォルトのメディアハンドラー {#default-media-handlers}
 
@@ -104,7 +104,7 @@ AEM Assets 内では以下のメディアハンドラーを使用できます。
 
 以下のようにアクティブなメディアハンドラーを表示できます。
 
-1. ブラウザーで、`http://localhost:4502/system/console/components` に移動します。
+1. ブラウザーで、`http://localhost:4502/system/console/components` です。
 1. リンク `com.day.cq.dam.core.impl.store.AssetStoreImpl` をクリックします。
 1. すべてのアクティブなメディアハンドラーリストが表示されます。
 
@@ -124,7 +124,7 @@ AEM には、アセットを処理するデフォルトのワークフローが�
 
 メディアハンドラーを有効または無効にするための手順
 
-1. ブラウザーで、`https://<host>:<port>/system/console/components` に移動します。
+1. ブラウザーで、`https://<host>:<port>/system/console/components` です。
 1. メディアハンドラーの名前の横にある「**[!UICONTROL Disable]**」をクリックします。例：`com.day.cq.dam.handler.standard.mp3.Mp3Handler`
 1. ページを更新します。メディアハンドラーの横に、無効であることを示すアイコンが表示されます。
 1. メディアハンドラーを有効にするには、メディアハンドラーの名前の横にある「**[!UICONTROL Enable]**」をクリックします。
@@ -133,7 +133,7 @@ AEM には、アセットを処理するデフォルトのワークフローが�
 
 新しいメディアタイプをサポートしたり、アセットで特定のタスクを実行したりするには、新しいメディアハンドラーを作成する必要があります。ここでは、その進め方について説明します。
 
-#### 重要なクラスおよびインターフェイス {#important-classes-and-interfaces}
+#### 重要なクラスおよびインターフェイス{#important-classes-and-interfaces}
 
 実装を開始するための最適な方法は、最も多くの点について対応し、適切なデフォルト動作を提供している付属の抽象実装から継承することです。それが `com.day.cq.dam.core.AbstractAssetHandler` クラスです。
 
@@ -151,7 +151,7 @@ AEM には、アセットを処理するデフォルトのワークフローが�
 
 インターフェイスとクラスには以下が含まれます。
 
-* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：このインターフェイスは、特定のMIMEタイプのサポートを追加するサービスを記述します。 新しいMIMEタイプを追加するには、このインターフェイスを実装する必要があります。 このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
+* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：特定の MIME タイプのサポートを追加するサービスを記述します。新しい MIME タイプを追加するには、このインターフェイスを実装する必要があります。このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
 * `com.day.cq.dam.core.AbstractAssetHandler` クラス：その他すべてのアセットハンドラー実装の基礎として機能し、よく使用される機能を提供します。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` クラス：
    * その他すべてのアセットハンドラー実装の基礎として機能し、よく使用される機能を提供します。さらに、サブアセットの抽出についてよく使用される機能も提供します。
@@ -162,7 +162,7 @@ AEM には、アセットを処理するデフォルトのワークフローが�
 
 * `extractMetadata()`：使用できるすべてのメタデータを抽出します。
 * `getThumbnailImage()`：渡されたアセットのサムネール画像を作成します。
-* `getMimeTypes()`:このメソッドは、アセットのMIMEタイプを返します。
+* `getMimeTypes()`：アセットの MIME タイプを返します。
 
 以下にテンプレートの例を示します。
 
@@ -170,7 +170,7 @@ package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot
 
 インターフェイスとクラスには以下が含まれます。
 
-* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：このインターフェイスは、特定のMIMEタイプのサポートを追加するサービスを記述します。 新しいMIMEタイプを追加するには、このインターフェイスを実装する必要があります。 このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
+* `com.day.cq.dam.api.handler.AssetHandler` インターフェイス：特定の MIME タイプのサポートを追加するサービスを記述します。新しい MIME タイプを追加するには、このインターフェイスを実装する必要があります。このインターフェイスには、特定のドキュメントの読み込みと書き出し、サムネールの作成およびメタデータの抽出をおこなうメソッドがあります。
 * `com.day.cq.dam.core.AbstractAssetHandler` クラス：その他すべてのアセットハンドラー実装の基礎として機能し、よく使用される機能を提供します。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` クラス：その他すべてのアセットハンドラー実装の基礎として機能し、よく使用される機能を提供します。さらに、サブアセットの抽出についてよく使用される機能も提供します。
 
@@ -391,7 +391,7 @@ AEM を使用すると、ワークフロー内で任意のコマンドライン�
 
 `CommandLineProcess` プロセスは、リストに表示されている順序で以下の操作を実行します。
 
-* 特定のMIMEタイプに従ってファイルをフィルターします（指定されている場合）。
+* MIME タイプを指定した場合、そのタイプに従ってファイルをフィルターします。
 * AEM サーバーをホストするディスクに一時ディレクトリを作成します。
 * 元のファイルを一時ディレクトリにストリーミングします。
 * ステップの引数で定義されたコマンドを実行します。AEM を実行しているユーザーの権限を使用して、一時ディレクトリ内でコマンドが実行されます。
@@ -399,7 +399,7 @@ AEM を使用すると、ワークフロー内で任意のコマンドライン�
 * 一時ディレクトリを削除します。
 * 指定した場合は、それらのレンディションに基づいてサムネールを作成します。サムネールの数とサイズは、ステップの引数で定義されます。
 
-### ImageMagick を使用した例 {#an-example-using-imagemagick}
+### ImageMagick を使用した例{#an-example-using-imagemagick}
 
 以下の例は、MIME タイプが gif または tiff のアセットが AEM サーバーの /content/dam に追加されるたびに、元の画像の反転画像と 3 つの追加サムネール（140 x 100、48 x 48 および 10 x 250）が作成されるように、コマンドラインプロセスのステップを設定する方法を示します。
 
@@ -407,7 +407,7 @@ AEM を使用すると、ワークフロー内で任意のコマンドライン�
 
 まず、AEM サーバーをホストするディスクに ImageMagick をインストールします。
 
-1. ImageMagickのインストール：ImageMagickのドキュメ [ントを参照してくださ](https://www.imagemagick.org/script/download.php)い。
+1. ImageMagick のインストール：[ImageMagick のドキュメント](https://www.imagemagick.org/script/download.php)を参照してください。
 1. コマンドラインで convert を実行できるようにツールを設定します。
 1. ツールが適切にインストールされているかどうかを確認するには、コマンド `convert -h` をコマンドラインで実行します。
 
@@ -453,7 +453,7 @@ AEM を使用すると、ワークフロー内で任意のコマンドライン�
   </tr>
   <tr>
    <td> mime:&lt;mime-type&gt;</td>
-   <td><p>オプション引数。アセットのMIMEタイプが引数の1つと同じ場合、プロセスが適用されます。</p> <p>複数の MIME タイプを定義できます。</p> </td>
+   <td><p>オプション引数。アセットの MIME タイプが引数の MIME タイプと同じ場合にプロセスが適用されます。</p> <p>複数の MIME タイプを定義できます。</p> </td>
   </tr>
   <tr>
    <td> tn:&lt;width&gt;:&lt;height&gt;</td>
@@ -461,7 +461,7 @@ AEM を使用すると、ワークフロー内で任意のコマンドライン�
   </tr>
   <tr>
    <td> cmd: &lt;command&gt;</td>
-   <td><p>実行されるコマンドを定義します。この構文はコマンドラインツールによって異なります。</p> <p>1 つのコマンドのみを定義できます。</p> <p>以下の変数を使用してコマンドを作成できます。<br/></p> <p><code>${filename}</code>: name of the input file, for example `original.jpg`<br/><code>${file}</code>: full path name of the input file, for example, `/tmp/cqdam0816.tmp/original.jpg`<br/><code>${directory}</code>: directory of the input file, for example `/tmp/cqdam0816.tmp`.<br/> <code>${basename}</code>:拡張子を含まない入力ファイルの名前(オリジナル<br/><code>${extension}</code>:入力ファイルの拡張子（JPGなど）<br/></p></td>
+   <td><p>実行されるコマンドを定義します。この構文はコマンドラインツールによって異なります。</p> <p>1 つのコマンドのみを定義できます。</p> <p>以下の変数を使用してコマンドを作成できます。<br/></p> <p><code>${filename}</code>：入力ファイル名（例：original.jpg）<br/><code>${file}</code>：入力ファイルの完全パス名（例：/tmp/cqdam0816.tmp/original.jpg）<br/><code>${directory}</code>：入力ファイルのディレクトリ（例：/tmp/cqdam0816.tmp）<br/> <code>${basename}</code>：拡張子なしの入力ファイル名（例：original）<br/> <code>${extension}</code>：入力ファイルの拡張子（例：jpg）<br/></p></td>
   </tr>
  </tbody>
 </table>
@@ -482,4 +482,4 @@ ImageMagick を使用して Web 対応レンディションを作成するには
 
 >[!NOTE]
 >
->**CommandLineProcess** ステップは、アセット（ノードタイプ ）またはアセットの子孫にのみ適用されます。`dam:Asset`
+>**CommandLineProcess** ステップは、アセット（ノードタイプ `dam:Asset`）またはアセットの子孫にのみ適用されます。
