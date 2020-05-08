@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
 
 ---
@@ -26,7 +26,7 @@ AEM as a Cloud Service では、作成者、管理者および開発者ユーザ
 
 ## アーキテクチャ {#architecture}
 
-IMS 認証は、AEM と Adobe IMS エンドポイントの間で OAuth プロトコルを使用して機能します。ユーザーは、IMSに追加され、Adobe IDを持つと、IMS資格情報を使用してAEMオーサーサービスにログインできます。
+IMS 認証は、AEM と Adobe IMS エンドポイントの間で OAuth プロトコルを使用して機能します。ユーザーが IMS に追加され、アドビの ID を持つようになると、IMS 資格情報を使用して AEM オーサーサービスにログインできます。
 
 ユーザーログインフローを以下に示します。ユーザーは IMS にリダイレクトされ、オプションで SSO のためにカスタマー IDP にリダイレクトされてから、AEM にリダイレクトされます。
 
@@ -62,7 +62,7 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 **Admin Console UI による手動追加**
 
-ユーザーとグループは、Admin Console の UI で手動で作成できます。この方法は、管理するユーザー数が多くない場合に使用できます。例えば、AEM ユーザーが 50 人未満の場合や、Analytics、Target、Creative Cloud などの他の Adobe 製品を管理するために既にこの方法を使用している場合などです。
+ユーザーとグループは、Admin Console の UI で手動で作成できます。この方法は、管理するユーザー数が多くない場合に使用できます。例えば、AEM ユーザーが 50 人未満の場合や、Analytics、Target、Creative Cloud アプリケーションなどの他の Adobe 製品を管理するために既にこの方法を使用している場合などです。
 
 ![ユーザーのオンボーディング](/help/security/assets/ims3.png)
 
@@ -138,7 +138,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 ![製品プロファイル](/help/security/assets/ims8.png)
 
-### Logging into Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
+### Adobe Experience Manager as a Cloud Service へのログイン {#logging-in-to-aem}
 
 **ローカル管理者ログイン**
 
@@ -152,25 +152,25 @@ AEM では引き続き、管理者ユーザーのローカルログインをサ�
 
 他のユーザーの場合は、IMS がインスタンスに設定された後に、IMS ベースのログインを使用できます。ユーザーはまず、下に示すように、「Sign in with Adobe」ボタンをクリックします。
 
-![IMS ベースのログイン](/help/security/assets/ims10.png)
+![IMS のログイン](/help/security/assets/ims10.png)
 
 
 >[!NOTE]
-> IMSで作成された任意のユーザーは、Adobe IDまたはFederated IDを使用して作成できます。 ユーザーがAdobe IDを使用して設定されている場合は、ログインするために会社のIDプロバイダーを使用して認証されます。
+> IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーが Adobe ID を使用して設定されている場合、ログインには会社の ID プロバイダーを使用して認証されます。
 
 その後、ユーザーは IMS ログイン画面にリダイレクトされ、認証情報を入力する必要があります。
 
-![IMS ベースのログイン 2](/help/security/assets/ims11.png)
+![IMS のログイン 2](/help/security/assets/ims11.png)
 
-![IMS ベースのログイン 3](/help/security/assets/ims12.png)
+![IMS のログイン 3](/help/security/assets/ims12.png)
 
 Admin Console の初期設定中にフェデレーテッド IDP が設定される場合、ユーザーは SSO 用のカスタマー IDP にリダイレクトされます。
 
-![IMS ベースのログイン 4](/help/security/assets/ims13.png)
+![IMS のログイン 4](/help/security/assets/ims13.png)
 
 認証が完了すると、ユーザーは AEM にリダイレクトされてログインします。
 
-![IMS ベースのログイン 5](/help/security/assets/ims14.png)
+![IMS のログイン 5](/help/security/assets/ims14.png)
 
 ### Adobe Experience Manager as a Cloud Service での権限と ACL の管理 {#managing-permissions-in-aem}
 
@@ -195,46 +195,46 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 ![ACL3](/help/security/assets/ims18.png)
 
 
-### Cloud Manager{#accessing-cloud-manager}  へのアクセス
+### Cloud Manager{#accessing-cloud-manager} へのアクセス
 
-Cloud ManagerまたはAEMにクラウドサービス環境としてアクセスするには、Cloud Manager製品のプロファイルに割り当てられている必要があります。
+Cloud Manager または AEM as a Cloud Service 環境としてアクセスするには、Cloud Manager 製品のプロファイルに割り当てられている必要があります。
 
-Cloud Managerの特定の機 [能の可用性を管理するユーザーの役割について詳しくは](/help/onboarding/what-is-required/add-users-roles.md#role-definitions) 、「役割の定義」を参照してください。
+Cloud Manager の特定の機能の可用性を管理するユーザーの役割について詳しくは、[役割の定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)を参照してください。
 
 >[!NOTE]
->Cloud Manager には、適切な権限を持つ事前設定済みのロールが用意されています。特定の権限、事前設定済みのタスク、または各役割に関連付けられた権限を持つ各役割について詳しくは、「役割に基づく権限」を参 [照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)。
+>Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。特定の権限、事前設定済みのタスク、または各役割に関連付けられた権限を持つ各役割について詳しくは、[役割に基づく権限](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.translate.html)を参照してください。
 
 **ユーザーの追加手順**
 
-1. 既追加存のプロファイル画面または新しいユーザ画面から特定のユーザに対するユーザ。
+1. 既存ユーザー画面または新規ユーザー画面から、ユーザーを特定のプロファイルに追加します。
 
-1. または、次の図に示すように、概要画面 **から** 、ユーザを追加することもできます。
+1. または、次の図に示すように、**概要**&#x200B;画面から、ユーザーを追加することもできます。
 
    ![ACL3](/help/security/assets/ims23.png)
 
    >[!NOTE]
-   >次の図に示すように、1人のプロファイルに複数のユーザーを割り当てることができます。
+   >次の図に示すように、1 人のプロファイルに複数のユーザーを割り当てることができます。
 
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. 適切なプロファイルに追加したら、ユーザーインターフェイスの右上隅を使用して [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) 、Cloud Managerの各テナントにアクセスできるようになります。
+1. 適切なプロファイルに追加したら、ユーザーインターフェイスの右上隅を使用して [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) を経由して、Cloud Manager の各テナントにアクセスできるようになります。
 
 
-### AEMのインスタンスへのクラウドサービスとしてのアクセス {#accessing-instance-cloud-service}
+### AEM as a Cloud Service のインスタンスへのアクセス {#accessing-instance-cloud-service}
 
 >[!IMPORTANT]
->前の節で説明した手順は、AEMのインスタンスにクラウドサービスとしてアクセスできるようになる前に、既に完了している必要があります。
+>前の節で説明した手順は、AEM as a Cloud Service のインスタンスにアクセス可能になる前に、既に完了している必要があります。
 
-管理コンソール内のAEMインスタンスにアクセスするには **、管理コンソールの製品リストにCloud Managerプログラムと環境がプログラム内に表示さ**&#x200B;れます ****。
+**Admin Console** 内の AEM インスタンスにアクセスするには、**Admin Console** の製品リストに Cloud Manager プログラムとプログラム内の環境が表示されている必要があります。
 
-例えば、下のスクリーンショットには、2つの利用可能な環境(開発者 *、発行)が表示さ* れます **。
+例えば、下のスクリーンショットには、2 つの利用可能な環境、すなわち *dev author* と *publish* が表示されます。
 
 ![ACL3](/help/security/assets/ims19.png)
 
-AEMインスタンスにアクセスするには、該当するクラウドサービス製品のグループにユーザーを追加する必要があります。
+AEM インスタンスにアクセスするには、適切な Cloud Service 製品のグループにユーザーを追加する必要があります。
 
-すべての作成者インスタンスにはAEM管理者とAEMユーザーのプロファイルが割り当てられ、すべての発行インスタンスにはAEMユーザーのプロファイルが割り当てられます。 必要に応じて、他のプロファイルを追加できます。
+すべてのオーサーインスタンスには AEM 管理者と AEM ユーザーのプロファイルが割り当てられ、すべてのパブリッシュインスタンスには AEM ユーザーのプロファイルが割り当てられます。必要に応じて、他のプロファイルを追加できます。
 
-AEMインスタンスへの管理者レベルのアクセス権を取得するには、その製品のAEM管理者プロファイルにユーザーを追加します。
+AEM インスタンスへの管理者レベルのアクセス権を取得するには、その製品の AEM 管理者プロファイルにユーザーを追加します。
 
