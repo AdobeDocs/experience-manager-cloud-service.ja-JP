@@ -1,7 +1,7 @@
 ---
 title: 既知の問題
 description: リリースノート（Adobe Experience Manager as a Cloud Service の既知の問題）
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: ce82d7c9ca1fd8fe3d6f61213cfee360fc6496fd
 
 既知の問題の一部は次のとおりです。
 
-* **メタデータスキーマ**:JSPコンパイルエラーの原因となるアセット評価ウィジェット。 メタデータスキーマから削除。 <!-- CQ-4282865, CQ-4284633 -->
+* **メタデータスキーマ**：アセット評価ウィジェットが JSP コンパイルエラーを引き起こしていました。メタデータスキーマから削除されました。 <!-- CQ-4282865, CQ-4284633 -->
 
 ### 今後予定されている Assets の機能 {#upcoming-assets-capabilities}
 
@@ -41,7 +41,7 @@ Adobe Experience Manager Assets の機能のうち、基盤機能をベースに
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager (AEM) as a Cloud Service の主な変更点](aem-cloud-changes.md)
->* [非推奨（廃止予定）の機能と削除された機能](deprecated-removed-features.md)
+>* [Adobe Experience Manager（AEM）as a Cloud Service の主な変更点](aem-cloud-changes.md)
+>* [廃止される機能および削除された機能](deprecated-removed-features.md)
 >* [リリースノート](home.md)
 
