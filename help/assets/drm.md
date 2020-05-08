@@ -2,15 +2,15 @@
 title: Adobe Experience Manager Assets のデジタル著作権管理
 description: AEM でライセンスされているアセットの状態と有効期限の情報を管理する方法について説明します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
 
 
-# Adobe Experience Manager Assets のデジタル著作権管理 {#digital-rights-management-in-assets}
+# Experience Manager Assets のデジタル著作権管理 {#digital-rights-management-in-assets}
 
-多くの場合、デジタルアセットはライセンスに関連付けられています。ライセンスは、利用条件とその期間を指定します。Adobe Experience Manager (AEM) Assets は AEM プラットフォームに完全に統合されているので、アセットの有効期限に関する情報やアセットの状態を効率的に管理できます。ライセンス情報をアセットに関連付けることもできます。
+多くの場合、デジタルアセットはライセンスに関連付けられています。ライセンスは、利用条件とその期間を指定します。Adobe Experience Manager（AEM）Assets は AEM プラットフォームに完全に統合されているので、アセットの有効期限に関する情報やアセットの状態を効率的に管理できます。ライセンス情報をアセットに関連付けることもできます。
 
 ## アセットの有効期限 {#asset-expiration}
 
@@ -32,9 +32,9 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 検索パネルで、有効期限切れのアセット（有効期限切れのサブアセットを含む）を検索できます。
 
-1. アセットコンソールで、ツールバーの検索アイコンをクリックし、Omnisearchフィールドを表示します。
+1. アセットコンソールで、ツールバーの検索アイコンをクリックしてオムニサーチフィールドを表示します。
 
-1. 「Omnisearch」ボックスにカーソルを置き、Enterキーを押して検索結果ページを表示します。
+1. オムニサーチボックスのカーソルで、Enter キーを押して検索結果ページを表示します。
 
 1. グローバルナビゲーションアイコンをクリックして、検索パネルを表示します。
 
@@ -70,7 +70,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ## アセットの状態 {#asset-states}
 
-Adobe Experience Manager (AEM) Assets のアセットコンソールには、アセットの様々な状態が表示されます。特定のアセットの現在の状態により、カード表示にその状態について記述されたラベル（期限切れ、公開済み、承認済み、拒否など）が表示されます。
+Adobe Experience Manager（AEM）Assets のアセットコンソールには、アセットの様々な状態が表示されます。特定のアセットの現在の状態により、カード表示にその状態について記述されたラベル（期限切れ、公開済み、承認済み、拒否など）が表示されます。
 
 1. Assets ユーザーインターフェイスでアセットを選択します。
 
@@ -92,7 +92,7 @@ Adobe Experience Manager (AEM) Assets のアセットコンソールには、ア
 
 1. アセットをステータスに基づいて検索するには、「**[!UICONTROL 検索]**」アイコンをクリックまたはタップしてオムニサーチバーを表示します。
 
-1. Enterキーを押し、AEMアイコンをクリックまたはタップして、検索パネルを表示します。
+1. Enter キーを押し、AEM アイコンをクリックまたはタップして検索パネルを表示します。
 1. 検索パネルで、「**[!UICONTROL 公開ステータス]**」をタップまたはクリックして「**[!UICONTROL 公開済み]**」を選択し、AEM Assets で公開済みのアセットを検索します。
 
 1. 「**[!UICONTROL 承認ステータス]**」をタップまたはクリックし、適切なアイコンをクリックして承認済みまたは拒否されたアセットを検索します。
@@ -101,9 +101,9 @@ Adobe Experience Manager (AEM) Assets のアセットコンソールには、ア
 
 1. 各種検索ファセットで、ステータスの組み合わせに基づいてアセットを検索することもできます。検索ファセットで適切なオプションを選択することで、例えば、レビュータスクで承認されており、まだ有効期限が切れていない公開済みのアセットを検索することもできます。
 
-## Adobe Experience Manager Assets のデジタル著作権管理 {#digital-rights-management-in-assets-1}
+## Experience Manager Assets のデジタル著作権管理 {#digital-rights-management-in-assets-1}
 
-この機能は、Adobe Experience Manager (AEM) Assets からライセンスの必要なアセットをダウンロードする前に、使用許諾契約書への同意をリクエストするものです。
+この機能は、Adobe Experience Manager（AEM）Assets からライセンスの必要なアセットをダウンロードする前に、使用許諾契約書への同意をリクエストするものです。
 
 保護されたアセットを選択して&#x200B;**[!UICONTROL ダウンロード]**&#x200B;アイコンをクリックすると、ライセンスページが表示され、このページで使用許諾契約書に同意します。使用許諾契約書に同意しない場合、「**[!UICONTROL ダウンロード]**」ボタンは無効になります。
 
