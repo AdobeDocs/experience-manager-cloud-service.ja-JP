@@ -7,7 +7,7 @@ source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の運用と保守 {#aem-operations-guide}
+# Experience Manager as a Cloud Service の運用と保守 {#aem-operations-guide}
 
 ここでは、Adobe Experience Manager as a Cloud Service の運用と保守に関するセルフヘルプリソースの一覧を示します。
 
