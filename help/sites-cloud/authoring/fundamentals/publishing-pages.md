@@ -1,7 +1,7 @@
 ---
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
 
 ---
@@ -85,7 +85,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 * [クイック公開](#quick-publish)
 * [公開を管理](#manage-publication)
 
-#### クイック公開 {#quick-publish}
+#### クイック公開{#quick-publish}
 
 **クイック公開**&#x200B;は、単純な場合のためのもので、選択したページが即座に公開されます。他に何か操作する必要はありません。このため、すべての非公開の参照も自動的に公開されます。
 
@@ -105,7 +105,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 >
 >クイック公開は、浅い公開です。つまり、選択したページだけが公開され、子ページは公開されません。
 
-#### 公開を管理 {#manage-publication}
+#### 公開を管理{#manage-publication}
 
 **公開を管理**&#x200B;には、クイック公開よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
 
@@ -199,11 +199,11 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 * [ページエディターから](#unpublishing-from-the-editor)
 * [サイトコンソールから](#unpublishing-from-the-console)
 
-### エディターから非公開にする {#unpublishing-from-the-editor}
+### エディターから非公開にする{#unpublishing-from-the-editor}
 
 ページを編集する際に、そのページを非公開にする場合、[ページを公開](#publishing-from-the-editor)するときと同じように、**ページ情報**&#x200B;メニューで「**ページを非公開にする**」を選択します。
 
-### コンソールから非公開にする {#unpublishing-from-the-console}
+### コンソールから非公開にする{#unpublishing-from-the-console}
 
 [「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 
