@@ -1,7 +1,7 @@
 ---
-sub-product: クラウドサービスとしてのAEMのリリースノート
-user-guide-title: クラウドサービスとしてのAEMのリリースノート
-translation-type: tm+mt
+sub-product: AEM as a Cloud Service のリリースノート
+user-guide-title: AEM as a Cloud Service のリリースノート
+translation-type: ht
 source-git-commit: 55abc080701134c5067598dd39fe825048e077d4
 
 ---
