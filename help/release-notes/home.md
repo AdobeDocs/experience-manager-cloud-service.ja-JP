@@ -1,7 +1,7 @@
 ---
-title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
-description: 'Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。 '
-translation-type: tm+mt
+title: Adobe Experience Manager (AEM) as a Cloud Service のリリースノート。
+description: 'Adobe Experience Manager (AEM) as a Cloud Service のリリースノート。 '
+translation-type: ht
 source-git-commit: 650f6dbc50934f2989a7b9ed51623e80a9202af2
 
 ---
