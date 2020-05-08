@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の概要
 description: 'Adobe Experience Manager (AEM) as a Cloud Service の概要。 '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 ---
@@ -9,7 +9,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 # Adobe Experience Manager as a Cloud Service の概要 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html)（AEM）はクラウドサービスとして利用可能になりました。
+[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) は Cloud Service として利用可能になりました。
 
 Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 
@@ -19,7 +19,7 @@ Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 
 * ダウンタイムなしのアップデートを実現する継続的配信と継続的統合を提供します。
 
-* 組み込みのコンテンツ配信ネットワーク(CDN)や他のネットワーク層のベストプラクティスを活用し、コンテンツを迅速かつ効率的に配信します。
+* 組み込みのコンテンツ配信ネットワーク（CDN）や他のネットワーク層のベストプラクティスを活用し、コンテンツを迅速かつ効率的に配信します。
 
 * 規模を自動的に拡大／縮小できる動的アーキテクチャに基づいているので、インフラストラクチャに関する考慮が不要になります。
 
@@ -49,7 +49,7 @@ Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 >
 >AEM as a Cloud Service で導入された新しい用語の一部については、[用語](terminology.md)を参照してください。
 
-## クラウドサービスとして追加された価値 {#value-added-as-a-cloud-service}
+## Cloud Service として追加された価値 {#value-added-as-a-cloud-service}
 
 AEM は、最新のクラウドサービスの主な特徴を取り入れることで、次の目標を達成します。
 
@@ -73,6 +73,6 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 
 * Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
 * Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
-* [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
-* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
+* [AEM as a Cloud Service の AEM Sites の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [Assets as a Cloud Service の概要](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
