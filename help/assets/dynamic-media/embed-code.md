@@ -1,21 +1,21 @@
 ---
-title: ダイナミックメディアビデオビューアまたは画像ビューアのWebページへの埋め込み
-description: ダイナミックメディアビデオまたは画像をWebページに埋め込む方法について説明します。
-translation-type: tm+mt
+title: Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み
+description: Web ページに Dynamic Media ビデオまたは画像を埋め込む方法を説明します。
+translation-type: ht
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
 
 ---
 
 
-# Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-Use the **[!UICONTROL Embed Code]** feature when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed Code]** dialog box.
+Web ページに埋め込んでビデオを再生したりアセットを表示したりする場合は、**[!UICONTROL 埋め込みコード]**&#x200B;機能を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
-You embed URLs only if you are _not_ using AEM as your WCM. If you are using AEM as your WCM, [you add the assets directly on your page.](adding-dynamic-media-assets-to-pages.md)
+AEM を WCM として使用&#x200B;_していない_&#x200B;場合に限り、URL の埋め込みを実行します。AEM を WCM として使用している場合は、[ページに直接アセットを追加](adding-dynamic-media-assets-to-pages.md)します。
 
-See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+[Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)を参照してください。
 
-See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 >
 >[画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-**ダイナミックメディアビデオビューアまたは画像ビューアをWebページに埋め込むには**
+**Dynamic Media ビデオビューアまたは画像ビューアを Web ページに埋め込むには**
 
-1. Navigate to the *published* video or image asset whose embed code you want to copy.
+1. 埋め込みコードをコピーする&#x200B;*公開済み*&#x200B;のビデオまたは画像アセットに移動します。
 
-   埋め込みコードを使用するには、その前にアセットを公開しておく必要があります。****&#x200B;また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
+   埋め込みコードを使用するには、その&#x200B;*前に*&#x200B;アセットを&#x200B;*公開*&#x200B;しておく必要があります。また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
 
    [アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
 
@@ -39,14 +39,14 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    [画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-1. In the left rail, select the drop-down menu and tap **[!UICONTROL Viewers]**.
+1. 左側のレールでドロップダウンメニューを選択して、「**[!UICONTROL ビューア]**」をタップします。
 1. 左側のレールで、ビューアプリセット名をタップします。ビューアプリセットがアセットに適用されます。
 1. 「**[!UICONTROL 埋め込み]**」をタップします。
-1. In the **[!UICONTROL Embed Code]** dialog box, copy the entire code to the clipboard, and then tap **[!UICONTROL Close]**.
+1. **[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスで、コード全体をクリップボードにコピーしてから、「**[!UICONTROL 閉じる]**」をタップします。
 1. 埋め込みコードを Web ページに貼り付けます。
 
 ## HTTP/2 を使用した Dynamic Media アセットの配信 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。HTTP/2 上で Dynamic Media アセットの配信が可能になり、応答時間と読み込み時間が短縮されました。
 
-Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP2 配信](http2faq.md)を参照してください。
+Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP/2 配信](http2faq.md)を参照してください。
