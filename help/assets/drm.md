@@ -3,10 +3,10 @@ title: Digital Rights Management [!DNL Adobe Experience Manager Assets] inas a C
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31b8db4403dff1934033e1ed93651a076dba7a1a
+source-git-commit: 45dd1e4e038f15840329fedc549f245360594e49
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 63%
+source-wordcount: '1351'
+ht-degree: 62%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 63%
 
 When you choose the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. 有効期限切れのサブアセットを参照する複合アセットは、サブアセットの有効期限切れの直後には表示されません。Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
-公開済みアセットの有効期限をスケジューラーの現在のサイクルより前の日付に変更する場合、スケジューラーは次回の実行時にも引き続きこのアセットを有効期限切れのアセットとして検出し、ステータスにそれを反映させます。
+公開済みアセットの有効期限をスケジューラーの現在のサイクルより前の日付に変更する場合、スケジューラーは次回の実行時にも引き続きこのアセットを有効期限切れのアセットとして検出し、ステータスにそれを反映させます。アセットの有効期限の表示方法は、タイムゾーンごとに異なります。
 
 さらに、何らかの誤作動やエラーによりスケジューラーが現在のサイクルの有効期限切れアセットを検出できない場合、スケジューラーはこれらのアセットを次回のサイクルで再確認し、有効期限切れのステータスを検出します。
 
