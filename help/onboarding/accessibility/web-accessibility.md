@@ -1,60 +1,56 @@
 ---
-title: クラウドサービスとしてのAdobe Experience ManagerとWebアクセシビリティのガイドライン
-seo-title: クラウドサービスとしてのAdobe Experience ManagerとWebアクセシビリティのガイドライン
+title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
+seo-title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 87%
 
 ---
 
 
-# クラウドサービスとしてのAdobe Experience ManagerとWebアクセシビリティのガイドライン{#aem-and-the-web-accessibility-guidelines}
+# Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン{#aem-and-the-web-accessibility-guidelines}
 
-Web コンテンツは、身体的障碍や制限の有無に関係なく、対象読者ができるだけアクセスしやすくなるように設計すべきとして、様々な社会的、経済的、法的動機が生まれています。したがって、Adobe Experience Manager(AEM)をクラウドサービスとして使用したWebアクセシビリティは、優れたWebデザインの重要性をますます高めています。
+様々な社会的、経済的、法的動機により、Web コンテンツを設計する際には、身体的障碍や制限の有無に関係なく、対象とするオーディエンスができるだけアクセスしやすくことが求められます。クラウドサービスとしてのAdobe Experience Manager(AEM)によるWebアクセシビリティは、優れたWebデザインのますます重要な側面となっています。
 
-AEMをクラウドサービスとして使用して、アクセシブルなWebサイトやコンテンツを作成すると、次のような影響が生じます。
+AEM as a Cloud Service でアクセシブルな Web サイトやコンテンツを作成すると、次のような影響があります。
 
-* アクセシビリティ機能が正しく有効になっていることを確認するために、AEMを設定する管理者。
+* アクセシビリティ機能が正しく有効になっていることを確認するために、AEMを設定する管理者です。
 
-* これらの機能を使用してアクセシブルなWebサイトを作成する作成者。
+* 作成者は、これらの機能を使用して、アクセシブルな Web サイトを作成する必要があります。
 
-   * アクセシブルなコンテンツの作成はプロセスです。 AEM には各種機能が用意されていますが、コンテンツ作成者は、アクセスしやすいコンテンツを作成するために必要な手法に従う必要があります。
+   アクセシブルなコンテンツの作成はプロセスです。AEM には各種機能が用意されていますが、コンテンツ作成者は、アクセスしやすいコンテンツを作成するために必要な手法に従う必要があります。
 
 * テンプレート開発者も同様に、Web サイトデザインを実装する際に、こうした問題を認識する必要があります。
 
-クラウドサービスとしてのAdobe Experience Managerは、 [World Wide Web Consortium](#wcag-accessibility-guideslines) ( [World Wide Web Consortium](#world-wide-web-consortium))が提供するガイドラインと連携します。
+Adobe Experience Manager as a Cloud Service は、[World Wide Web Consortium](#world-wide-web-consortium) が提供する[ガイドライン](#wcag-accessibility-guideslines)と連携します。
+
+>[!NOTE]
+>
+> 詳しくは、アドビのソリューションの [アクセシビリティ準拠レポートを参照してください](https://www.adobe.com/accessibility/compliance.html) 。
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 
-[World Wide Web Consortium（W3C）](https://www.w3.org/)は、Web 標準の策定を専門とする国際コミュニティです。Their [Web Accessibility Initiative(WAI)は、Webコンテンツのアクセシビリティ](https://www.w3.org/WAI/) に関するガイドラ [インを公開しています](#wcag-accessibility-guidelines)。
+[World Wide Web Consortium（W3C）](https://www.w3.org/)は、Web 標準の策定を専門とする国際コミュニティです。[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は、[Web コンテンツのアクセシビリティに関するガイドライン](#wcag-accessibility-guidelines)を公開しています。
 
-## Webコンテンツアクセシビリティガイドライン(WCAG) 2.1 {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines（WCAG）2.1 {#wcag-accessibility-guideslines}
 
-Webデザイナーや開発者がアクセシブルなWebサイトを作成できるように、 [Web Accessibility Initiative](https://www.w3.org/WAI/) (WAI)は [2018年6月にWeb Content Accessibility Guidelines(WCAG)2.1](https://www.w3.org/TR/WCAG/) （英語のみ）を発行しました。
+Web デザイナーや開発者がアクセシブルな Web サイトを作成できるように、[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は [2018 年 6 月に Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/) を発行しました。
 
->[!NOTE]
-> 
-> WCAG 2.1は、2008年の以前のバージョンWCAG 2.0を更新しました。 WCAG 2.1 - WCAG 2.0との比較を参照してください [](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+WCAG 2.1 では、[アクセシビリティレベルとそれらの準拠方法に関するガイドライン（および関連する成功基準）を提供](https://www.w3.org/TR/WCAG/#conformance)しています。
 
->[!NOTE]
-> 
->An [updated version of the guidelines, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is currently in development, but will not be considered at this point in time.
+## WCAG 2.1 と AEM as a Cloud Service {#wcag-aem-cloud-service}
 
-
-WCAG 2.1では、アクセシビリ [ティレベルとそれらの準拠方法に関するガイドライン（および関連する成功基準）を提供しています](https://www.w3.org/TR/WCAG/#conformance)。
-
-## WCAG 2.1およびクラウドサービスとしてのAEM {#wcag-aem-cloud-service}
-
-Adobe Experience Managerを使用して、コンテンツ作成者やWebサイトの所有者は、WCAG 2.1 Level AおよびLevel AAの成功基準を満たすWebコンテンツを作成できます。
+Adobe Experience Manager を使用すると、コンテンツ作成者や Web サイトの所有者は、WCAG 2.1 レベル A およびレベル AA の達成基準を満たす Web コンテンツを作成できます。
 
 * [WCAG 2.1 クイックガイド](/help/onboarding/accessibility/quick-guide-wcag.md)で WCAG 2.1 の特定の側面を取り上げています。
 
-* [アクセシブルなコンテンツの作成](/help/sites-cloud/authoring/fundamentals/accessible-content.md) （英語のみ）を参照してください。
+* AEM との関係について詳しくは、[アクセシブルなコンテンツの作成](/help/sites-cloud/authoring/fundamentals/accessible-content.md)を参照してください。
 
 >[!NOTE]
 > 
 >サイトを作成する際は、サイトの全体的なレベルを特定する必要があります。
->
->特定のタイプのコンテンツでは、レベル AAA のすべての達成基準を満たすことはできないので、適合すべきレベルとしてお勧めすることはできません。
 
 <!--
 * [Configuring the Rich Text Editor for Producing Accessible Sites](/help/sites-administering/rte-accessible-content.md)
@@ -68,6 +64,6 @@ Adobe Experience Managerを使用して、コンテンツ作成者やWebサイ�
 
 ## Adobe におけるアクセシビリティ {#accessibility-at-adobe}
 
-For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
+詳しくは、[アドビのアクセシビリティリソースセンター](https://www.adobe.com/accessibility/)にアクセスしてください。
 
 
