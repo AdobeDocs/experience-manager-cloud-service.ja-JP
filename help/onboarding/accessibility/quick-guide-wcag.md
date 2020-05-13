@@ -1,23 +1,34 @@
 ---
-title: WCAG 2.1のクイックガイド
-seo-title: WCAG 2.1のクイックガイド
+title: WCAG 2.1 クイックガイド
+seo-title: WCAG 2.1 クイックガイド
 translation-type: tm+mt
-source-git-commit: 921334705578626ac0ea75765496d4f379bb00fc
+source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 91%
 
 ---
 
 
-# A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
+# WCAG 2.1 クイックガイド{#quick-guide-to-wcag}
 
-クラウドサービスとしてのAdobe Experience Manager(AEM)は、Webコンテンツのアクセシビリティガイドラインへの準拠を最大限に高めるように開発されました。
+Adobe Experience Manager (AEM) as a Cloud Service は、Web コンテンツのアクセシビリティガイドラインへの準拠を最大限に高めるように開発されました。
 
-[Web Content Accessibility Guidelines(WCAG)バージョン2.1は](https://www.w3.org/TR/WCAG/) 、 [World Wide Web Consortium(W3C)が](https://www.w3.org/) Web Accessibility Initiative(WAI)の下で開発した、国際的に認められたガイドラインのセットです [](https://www.w3.org/WAI/)。
+The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+
+>[!NOTE]
+> 
+> WCAG 2.1 は、2008 年に発行した以前のバージョン WCAG 2.0 を更新したものです。[WCAG 2.1 - WCAG 2.0 との比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)を参照してください。
+
+>[!NOTE]
+> 
+>[更新版のガイドライン WCAG 2.2](https://www.w3.org/TR/WCAG22/) は現在作成中ですが、このポイントについては考慮されません。
 
 WCAG 2.1 は、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようにするための、テクノロジーから独立した一連のガイドラインおよび達成基準で構成されます。これらのガイドラインでは、Web コンテンツの作成者、デザイナー、開発者を対象として、視覚障碍、難聴、学習障碍、加齢に伴う制限をはじめとする障碍の種類に関係なく、できるだけ多くの人ができるだけ容易にアクセスできるようなリソースを作成するようアドバイスしています。
 
-例えば、HTML の `alt` 属性を使用して画像（またはその他のテキスト以外のコンテンツ）を説明すると、視覚障碍または弱視の人にとって大きな助けとなります。The textual description in the `alt` attribute can either be converted into speech output or transmitted to electronic refreshable braille displays.
+例えば、HTML の `alt` 属性を使用して画像（またはその他のテキスト以外のコンテンツ）を説明すると、視覚障碍または弱視の人にとって大きな助けとなります。`alt` 属性内のテキストの説明は、音声出力に変換したり、電子的に再生可能な点字ディスプレイに転送したりすることができます。
 
-また、WCAG 2.1 は、状況的問題&#x200B;**&#x200B;を抱える人などにも恩恵があります。ブラウズテクノロジー、ネットワーク接続速度、ブラウズ環境などの環境が原因で、障碍を抱える人と同じような障壁に直面することもあります。
+Additionally, WCAG 2.1 can result in advantages for other beneficiaries, including people who may be considered *situationally disabled*. ブラウズテクノロジー、ネットワーク接続速度、ブラウズ環境などの環境が原因で、障碍を抱える人と同じような障壁に直面することもあります。
 
 Adobe Experience Manager を使用すると、コンテンツ作成者や Web サイトの所有者は、関連する WCAG 2.1 レベル A およびレベル AA の達成基準を満たす Web コンテンツを作成できます。
 
@@ -29,7 +40,7 @@ WCAG 2.1 の目的は次のようなガイドラインを提供することで�
 
 * **テスト可能：**&#x200B;各ガイドラインは、客観的にテストできるように記述されており、アクセシビリティの専門家グループによるガイドライン準拠の同意が得られやすくなっています。アクセシビリティガイドラインの課題の 1 つは、技術的にテスト可能なものもあれば、ガイドラインに正しく準拠しているかどうかの判断が人間に委ねられる場合もあることです。<!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
 
-* 優先度の高 **いコンテキスト実装をサポート：**
+* **優先度の高いコンテキスト実装**&#x200B;をサポート
    <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
 
 これらの目的は、WCAG 2.1 の構造に大きく影響しています。
@@ -46,16 +57,16 @@ WCAG 2.1 の目的は次のようなガイドラインを提供することで�
 
 ## 構造 {#structure}
 
-WCAG 2.1 は、アクセスしやすい Web コンテンツの作成の概念を徐々に詳細に紹介するように構造化されています。この点から、WCAG 2.1 は非常に複雑な連結ドキュメントセットであるという印象を受けますが、詳細情報を 1 つの非常に大きなドキュメントでまとめて提供するのではなく、作成者が必要とするときに（徐々に）提供することを目的としています。
+WCAG 2.1 は、アクセスしやすい Web コンテンツの作成の概念について段階的に詳しく紹介するように構成されています。この点から、WCAG 2.1 は相互に接続された非常に複雑なドキュメントセットであるという印象を受けますが、詳細情報を 1 つの非常に大きなドキュメントでまとめて提供するのではなく、作成者が必要とするときに（段階的に）提供することを目的としています。
 
-WCAG 2.1は、アクセシブルなデザインの4つの主要な原則で構成されています。略語 **POURと呼ばれる場合もあります**。 これらは次のとおりです。
+WCAG 2.1 は、アクセシブルなデザインの 4 つの主要な原則（略して「**POUR**」）で構成されています。これらは次のとおりです。
 
 1. **知覚可能**：ユーザーが該当する Web コンテンツを感じ取ることが可能か。
 1. **操作可能**：ユーザーがナビゲートしたり、データを入力したり、Web コンテンツと対話したりすることが可能か。
 1. **理解可能**：ユーザーが提示された Web コンテンツを処理および理解することが可能か。
 1. **堅牢**：従来のブラウズ環境と新興のブラウズ環境の両方を含め、様々なブラウズ環境で Web コンテンツを意図したとおりに利用できるか。
 
-詳しくは、
+以下に詳述します。
 * 各&#x200B;**原則**&#x200B;は 1 つ以上の&#x200B;**ガイドライン**&#x200B;で構成されます。
 
 * ガイドラインは、肯定的表現（Do this...）または否定的表現（Do not do this...）の指示として記載されています。
@@ -63,31 +74,31 @@ WCAG 2.1は、アクセシブルなデザインの4つの主要な原則で構�
 * 各ガイドラインは 1 つ以上の&#x200B;**達成基準**&#x200B;で構成されます。
 * 達成基準は、特定の Web ページに対して `True` または `False` のいずれかの表現で記述されています。
 * 達成基準には、二者択一の選択肢が含まれているか、例外、つまり達成基準を満たす必要がない状況が示されています。
-* 達成基準には、親ガイドラインおよび親原則に従って、1.1.1 ～ 4.1.1 の番号が割り振られています。また、容易に参照できるように、基準の意図を要約した簡易名が割り当てられています。例えば、達成基準 1.1.1 は非テキストコンテンツです。
-* Success criteria include a list of related **techniques** (described in more detail below).
+* 達成基準には、親ガイドラインおよび親原則に従って、1.1.1 ～ 4.1.1 の番号が割り振られています。また、容易に参照できるように、基準の意図を要約した簡易名が割り当てられています。例えば、成功条件1.1.1は「非テキストコンテンツ」です。
+* 達成基準には、関連する&#x200B;**テクニック**&#x200B;のリストが含まれています（詳しくは、後述の説明を参照）。
 
 ## サポートリソース {#supporting-resources}
 
 WCAG 2.1 のコアコンポーネントである原則、ガイドライン、および達成基準とは別に、一連のサポートドキュメントが用意されています。これらの中には、ガイドラインの各側面に準拠する方法を具体的にアドバイスするものもあれば、様々な能力を持つ Web 作成者、デザイナー、および開発者が WCAG 2.1 を理解し、できるだけ効果的に使用するのに役立つ一般的な参考資料もあります。
 
-WCAG 2.1 は不変のドキュメントであり、変更されることはありませんが、これらのサポートリソースのほとんどは動的なドキュメントであり、今後、新興テクノロジーが登場したり、Web アクセシビリティの達成方法について新たな例が見つかったりした場合、内容が改訂および追加されていきます。
+WCAG 2.1自体は安定したドキュメントであり、変更はありませんが、これらのサポートリソースのほとんどは動的なドキュメントです。 新しいテクノロジーが登場するにつれ、アクセシビリティの向上に伴い、アクセシビリティは時間の経過とともに変化し、拡大していくでしょう。新しい例が見つかります。
 
 ### WCAG 2.1 リソース {#wcag-resources}
 
-このリストは、完全なものではなく、利用可能なリソースの紹介を提供しています。
-* [WCAG関連のすべてのドキュメント](https://www.w3.org/WAI/standards-guidelines/wcag/)
-* [様々なドキュメント](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
-* [Webコンテンツアクセシビリティガイドライン(WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
-* [WCAG 2.1の新機能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
-* [WCAG 2.1を満たす方法に関するクイックリファレンスガイド](https://www.w3.org/WAI/WCAG21/quickref/)
-* [WCAG 2よくある質問](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
+このリストは完全なものではなく、利用可能なリソースの紹介を提供しています。
+* [WCAG 関連のすべてのドキュメントの概要](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [様々なドキュメントの概要](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
+* [Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG21/)
+* [WCAG 2.1 の新機能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
+* [WCAG 2.1 に準拠する方法に関するクイックリファレンスガイド](https://www.w3.org/WAI/WCAG21/quickref/)
+* [WCAG 2 に関するよくある質問](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)
 
 
-### WCAG 2.1の新機能 {#what-is-new}
+### WCAG 2.1 の新機能 {#what-is-new}
 
-[WCAG 2.1の新機能は](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) 、WCAGと2.0およびWCAG 2.1の差に関する貴重な情報を提供します。
+[WCAG 2.1の新機能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) :WCAG 2.0とWCAG 2.1の差に関する貴重な情報を提供しています。
 
-WCAG 2.0お [よび2.1の節では](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) 、関係の状況をさらに明確にします。
+[WCAG 2.0 と 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) の節では、これらの関係のステータスをさらに明確にします。
 
 ### WCAG 2.1 の各種テクニック {#techniques-for-wcag}
 
@@ -99,7 +110,7 @@ WCAG 2.1 の各種テクニックを「[Techniques for WCAG 2.1](https://www.w3.
 
 テクニックには次の場所からアクセスします。
 
-* コレクション別（一般的な手法、またはHTML、CSS、クライアントサイドのスクリプティングなど特定の技術や形式に関する手法）、または
+* コレクションから（テクニックは一般的なものもあれば、HTML、CSS、クライアント側スクリプティングなど、特定のテクノロジーや形式に関連するものもあります）。
 * 関連する達成基準から。テクニックは複数の達成基準に適用することができます。
 
 各テクニックには、そのコレクションに関連する一意の番号が割り振られています。例えば、ARIA テクニックの 1 つは「*Technique ARIA2: Identifying required fields with the &quot;required&quot; property*」です。
@@ -129,14 +140,14 @@ WCAG 2.1 の各種テクニックを「[Techniques for WCAG 2.1](https://www.w3.
 * 達成基準の意図
 * 達成基準を満たす方法の一般的な例
 * 達成基準を満たす方法を示す関連リソース（W3C 以外）
-* 手法と失敗：成功基準を満たす方法の具体的で詳細な例（以下で詳しく説明）
-* 主要用語 — 成功基準を理解する上で重要な用語集。
+* テクニックと失敗：達成基準を満たす方法を具体的かつ詳細に示す例（詳しくは、後述の説明を参照）
+* 主要用語：達成基準を理解するうえで重要となる用語集
 
 「[Understanding Success Criterion 1.1.1 (&quot;Non-text content&quot;)](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content)」に例が紹介されています。
 
 ### WCAG 2.1 に準拠する方法 {#how-to-meet-wcag}
 
-「[How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)」ページには、ガイドラインに準拠するための方法を示す節があります。この節では、WCAG が別の形式で示されており、読者個人の関心や環境に合わせてガイドラインの内容を絞り込むことができます。読者は、カスケードスタイルシートやスクリプティングなどの特定の Web コンテンツテクノロジーを指定したり、特定の優先順位を指定したりすることによって、目的の達成基準テクニックをフィルタリングして表示できます。
+「[How To Meet WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)」ページには、ガイドラインに準拠するための方法を示す節があります。このセクションでは、読者が自分の興味や状況に最も関連のあるガイドラインの内容を絞り込むことができる、WCAGの代替プレゼンテーションを提供します。 読者は、カスケードスタイルシートやスクリプティングなどの特定の Web コンテンツテクノロジーを指定したり、特定の優先順位を指定したりすることによって、目的の達成基準テクニックをフィルタリングして表示できます。
 
 フィルタリングを使用しなかった場合、すべての達成基準がガイドライン別にグループ化されて表示されます。達成基準ごとに次のものが用意されています。
 
