@@ -2,10 +2,10 @@
 title: WCAG 2.1 クイックガイド
 seo-title: WCAG 2.1 クイックガイド
 translation-type: tm+mt
-source-git-commit: f12bbc1976d3db698ca62260c0bb7c7f43246ba0
+source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 91%
+source-wordcount: '1758'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 
 >[!NOTE]
 > 
-> WCAG 2.1 は、2008 年に発行した以前のバージョン WCAG 2.0 を更新したものです。[WCAG 2.1 - WCAG 2.0 との比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)を参照してください。
+> WCAG 2.1は、2008年から前のバージョンWCAG 2.0に更新されました。 [WCAG 2.1 - WCAG 2.0 との比較](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)を参照してください。
 
 >[!NOTE]
 > 
@@ -36,24 +36,18 @@ Adobe Experience Manager を使用すると、コンテンツ作成者や Web �
 
 WCAG 2.1 の目的は次のようなガイドラインを提供することです。
 
-* **テクノロジーに非依存：**&#x200B;言い換えると、これらのガイドラインは、HTML に限らず、様々な Web コンテンツ形式に適用できます。つまり、WCAG 2.1 では、PDF、Flash、JavaScript、およびその他の最新／将来の Web テクノロジーによって生成または提供されるコンテンツをカバーしています。<!-- This aims to address a recognized weakness of WCAG 1.0, in that it was focused on HTML at the expense of other web content formats. -->
+* **テクノロジーに非依存：**&#x200B;言い換えると、これらのガイドラインは、HTML に限らず、様々な Web コンテンツ形式に適用できます。つまり、WCAG 2.1 では、PDF、Flash、JavaScript、およびその他の最新／将来の Web テクノロジーによって生成または提供されるコンテンツをカバーしています。
 
-* **テスト可能：**&#x200B;各ガイドラインは、客観的にテストできるように記述されており、アクセシビリティの専門家グループによるガイドライン準拠の同意が得られやすくなっています。アクセシビリティガイドラインの課題の 1 つは、技術的にテスト可能なものもあれば、ガイドラインに正しく準拠しているかどうかの判断が人間に委ねられる場合もあることです。<!-- WCAG 2.1 has been written with the aim of reducing the subjectivity that was present in some of the WCAG 1.0 guidelines and checkpoints. -->
+* **テスト可能：**&#x200B;各ガイドラインは、客観的にテストできるように記述されており、アクセシビリティの専門家グループによるガイドライン準拠の同意が得られやすくなっています。アクセシビリティガイドラインの課題の 1 つは、技術的にテスト可能なものもあれば、ガイドラインに正しく準拠しているかどうかの判断が人間に委ねられる場合もあることです。
 
-* **優先度の高いコンテキスト実装**&#x200B;をサポート
-   <!-- As with WCAG 1.0, --> WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. This allows authors to make an informed decision on the most important guidelines for their particular situation. In addition, the concept of *accessibility supported* is introduced. This allows authors to make decisions on how best to use web technologies that may not have full accessibility support, or may require users to have specific assistive technologies and/or browsers in order to benefit from accessibility features.
+* Support **prioritized and contextual implementation:**
+WCAG 2.1 guidelines are given priorities, relating to the likely impact of not following a guideline on a particular group of users with disabilities. これにより、作成者は、特定の状況下で最も重要となるガイドラインを十分な情報から判断することができます。さらに、アクセシビリティサポート**&#x200B;の概念が導入されています。そのため、作成者は、アクセシビリティサポートが完全ではない Web テクノロジーを最大限に生かす方法を判断したり、アクセシビリティ機能の恩恵を受けられるように、特定の支援テクノロジーまたはブラウザーを使用するようユーザーに要求したりすることができます。
 
 これらの目的は、WCAG 2.1 の構造に大きく影響しています。
 
 >[!NOTE]
 >
 >考えられるあらゆる障碍、またはあらゆるタイプの人を考慮に入れた Web サイトを作成することは不可能です。WCAG 2.1 の目的は、Web 作成者が、特定の条件下かつ妥当な範囲内で可能な限り容易にアクセスできるサイトを作成できるようにすることです。
-
-<!--
->[!NOTE]
->
->If you are familiar with WCAG 1.0, you will notice some changes in WCAG 2.1. These relate to scope, organization and aim.
--->
 
 ## 構造 {#structure}
 
@@ -113,7 +107,7 @@ WCAG 2.1 の各種テクニックを「[Techniques for WCAG 2.1](https://www.w3.
 * コレクションから（テクニックは一般的なものもあれば、HTML、CSS、クライアント側スクリプティングなど、特定のテクノロジーや形式に関連するものもあります）。
 * 関連する達成基準から。テクニックは複数の達成基準に適用することができます。
 
-各テクニックには、そのコレクションに関連する一意の番号が割り振られています。例えば、ARIA テクニックの 1 つは「*Technique ARIA2: Identifying required fields with the &quot;required&quot; property*」です。
+各テクニックには、そのコレクションに関連する一意の番号が割り振られています。For example, one of the ARIA techniques is [Technique ARIA2: Identifying a required field with the aria-required property](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 
 テクニックは、「十分」（Sufficient）、「参考」（Advisory）、または「失敗」（Failure）に分類されます。
 
