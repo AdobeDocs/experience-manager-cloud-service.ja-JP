@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
 seo-title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
 translation-type: tm+mt
-source-git-commit: 710365f7934a63710a9158c010d6fac1ca390044
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 87%
@@ -24,7 +24,7 @@ AEM as a Cloud Service でアクセシブルな Web サイトやコンテンツ�
 
 * テンプレート開発者も同様に、Web サイトデザインを実装する際に、こうした問題を認識する必要があります。
 
-Adobe Experience Manager as a Cloud Service は、[World Wide Web Consortium](#world-wide-web-consortium) が提供する[ガイドライン](#wcag-accessibility-guideslines)と連携します。
+Adobe Experience Manager as a Cloud Service は、[World Wide Web Consortium](#world-wide-web-consortium) が提供する[ガイドライン](#wcag-accessibility-guidelines)と連携します。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Adobe Experience Manager as a Cloud Service は、[World Wide Web Consortium](#w
 
 [World Wide Web Consortium（W3C）](https://www.w3.org/)は、Web 標準の策定を専門とする国際コミュニティです。[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は、[Web コンテンツのアクセシビリティに関するガイドライン](#wcag-accessibility-guidelines)を公開しています。
 
-## Web Content Accessibility Guidelines（WCAG）2.1 {#wcag-accessibility-guideslines}
+## Web Content Accessibility Guidelines（WCAG）2.1 {#wcag-accessibility-guidelines}
 
 Web デザイナーや開発者がアクセシブルな Web サイトを作成できるように、[Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)は [2018 年 6 月に Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/) を発行しました。
 
