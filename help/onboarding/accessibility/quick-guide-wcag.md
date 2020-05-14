@@ -2,10 +2,10 @@
 title: WCAG 2.1 クイックガイド
 seo-title: WCAG 2.1 クイックガイド
 translation-type: tm+mt
-source-git-commit: d5023d8508f7d8c0955e7d741978ad8de073bc0d
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 88%
+source-wordcount: '1774'
+ht-degree: 87%
 
 ---
 
@@ -68,7 +68,7 @@ WCAG 2.1 は、アクセシブルなデザインの 4 つの主要な原則（�
 * 各ガイドラインは 1 つ以上の&#x200B;**達成基準**&#x200B;で構成されます。
 * 達成基準は、特定の Web ページに対して `True` または `False` のいずれかの表現で記述されています。
 * 達成基準には、二者択一の選択肢が含まれているか、例外、つまり達成基準を満たす必要がない状況が示されています。
-* 達成基準には、親ガイドラインおよび親原則に従って、1.1.1 ～ 4.1.1 の番号が割り振られています。また、容易に参照できるように、基準の意図を要約した簡易名が割り当てられています。例えば、成功条件1.1.1は「非テキストコンテンツ」です。
+* 達成基準には、親ガイドラインおよび親原則に従って、1.1.1 ～ 4.1.1 の番号が割り振られています。また、容易に参照できるように、基準の意図を要約した簡易名が割り当てられています。For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * 達成基準には、関連する&#x200B;**テクニック**&#x200B;のリストが含まれています（詳しくは、後述の説明を参照）。
 
 ## サポートリソース {#supporting-resources}
@@ -90,9 +90,11 @@ WCAG 2.1自体は安定したドキュメントであり、変更はありませ
 
 ### WCAG 2.1 の新機能 {#what-is-new}
 
-[WCAG 2.1の新機能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) :WCAG 2.0とWCAG 2.1の差に関する貴重な情報を提供しています。
+ガイドラインは、WCAG 2.1の新機能に関する情報を提供します。
 
-[WCAG 2.0 と 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) の節では、これらの関係のステータスをさらに明確にします。
+* [WCAG 2.1の新機能](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/) :WCAG 2.0とWCAG 2.1の差に関する貴重な情報を提供しています。
+
+* [WCAG 2.0 と 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/#versions) の節では、これらの関係のステータスをさらに明確にします。
 
 ### WCAG 2.1 の各種テクニック {#techniques-for-wcag}
 
