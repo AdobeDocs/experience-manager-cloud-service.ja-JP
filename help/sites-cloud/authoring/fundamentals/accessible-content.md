@@ -2,10 +2,10 @@
 title: クラウドサービスとしてのAdobe Experience Manager向けアクセシブルコンテンツの作成（WCAG 2.1準拠）
 description: 障碍のあるユーザーが Web コンテンツにアクセスして利用できるようにします。
 translation-type: tm+mt
-source-git-commit: 7d95cf4f25934ea52d4ef5410bbf349f004e5043
+source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
 workflow-type: tm+mt
-source-wordcount: '13874'
-ht-degree: 49%
+source-wordcount: '13873'
+ht-degree: 48%
 
 ---
 
@@ -38,14 +38,14 @@ World Wide Wec Consortium(WCAG)の [作業グループによって作成され�
 
 サイトを作成する際は、サイトの全体的なレベルを特定する必要があります。
 
-次の節では、[WCAG 2.1 のガイドライン](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)および[適合レベル](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A と AA の関連する達成基準を示します。
+The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
 
 >[!NOTE]
 >
 >このドキュメントでは、次の表記を使用しています。
 >
->* The short names for the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The numbering used in the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) to aid cross-referencing with the WCAG website.
+>* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
+>* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
 
 
 ## 原則 1：知覚可能 {#principle-perceivable}
@@ -129,7 +129,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 [ガイドライン 1.2 時間依存メディア：時間依存メディアには代替コンテンツを提供すること。](https://www.w3.org/TR/WCAG/#time-based-media)
 
-ここでは、時間依存&#x200B;**&#x200B;の Web コンテンツについて扱います。これには、ユーザーが再生可能なコンテンツ（映像、音声、アニメーションなど）や、収録済みのコンテンツ、ライブストリームなどが含まれます。
+This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
 
 ### Audio-only and Video-only (Prerecorded) (1.2.1) {#audio-only-and-video-only-prerecorded}
 
@@ -153,9 +153,9 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### How to Meet - Audio-only and Video-only (Prerecorded) (1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* 映像なしの収録済み音声コンテンツ（ポッドキャストなど）の場合：
+* コンテンツがビデオのない録音済みのオーディオ（ポッドキャストなど）の場合：
    * 音声コンテンツの字幕のリンクをコンテンツの直前または直後に提示します。字幕は、話の内容と、話されていない重要な内容のすべてに相当するテキストを含む HTML ページとし、話者を明記し、状況説明、声の表情、その他の重要な音声の説明を含める必要があります。
-* 音声なしのアニメーションまたは収録済み映像コンテンツの場合：
+* コンテンツがアニメーションの場合、またはオーディオのない事前に記録されたビデオの場合：
    * 映像で提供されている情報に相当するテキスト説明のリンクをコンテンツの直前または直後に提示します。
    * または、MP3 など一般的に使用されている音声形式で、相当する音声解説のリンクを提示します。
 
@@ -195,13 +195,13 @@ AEM Webページへのマルチメディアの挿入は、画像の挿入と似�
 
 可能な場合は、クローズドキャプションを使用して、キャプションの表示、非表示をユーザーが選択できるようにしてください。
 
-For closed captions, you will need to create and provide a synchronized caption file in an appropriate format (such as [SMIL](https://www.w3.org/AudioVideo/)) alongside the video file (details on how to do this are beyond the scope of this guide, but we have provided links to some tutorials under [More Information - Captions (Pre-Recorded) (1.2.2)](#more-information-captions-pre-recorded)). ビデオプレーヤーでキャプション機能を有効にして、そのビデオでキャプションが使用できることをユーザーに知らせるために、メモを提供するか、キャプション機能を有効にします。
+クローズドキャプションの場合、ビデオファイルと一緒に適切な形式( [SMIL](https://www.w3.org/AudioVideo/)など)で同期キャプションファイルを作成して提供する必要があります(方法の詳細はこのガイドの範囲外ですが、 [詳細情報 — キャプション（事前記録）(1.2.2)のチュートリアルへのリンクを用意しました](#more-information-captions-prerecorded)。 ビデオプレーヤーでキャプション機能を有効にして、そのビデオでキャプションが使用できることをユーザーに知らせるために、メモを提供するか、キャプション機能を有効にします。
 
 オープンキャプションを使用する必要がある場合は、映像トラック内にテキストを埋め込みます。これをおこなうには、映像にタイトルをオーバーレイできるビデオ編集アプリケーションを使用します。
 
-#### More Information - Captions (PreRecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
 
-* [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)：
+* [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [達成基準 1.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
 <!--
@@ -235,9 +235,12 @@ For closed captions, you will need to create and provide a synchronized caption 
 
 #### More Information - Audio Description or Media Alternative (Prerecorded) (1.2.3) {#more-information-audio-description-or-media-alternative-prerecorded}
 
-* [達成基準 1.2.3 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)：
+* [達成基準 1.2.3 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [達成基準 1.2.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
-* [Adobe Encore](https://www.adobe.com/products/encore.html)
+
+<!--
+* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+-->
 
 ### キャプション（ライブ）（1.2.4）    {#captions-live}
 
@@ -247,7 +250,7 @@ For closed captions, you will need to create and provide a synchronized caption 
 
 #### 目的 - キャプション（ライブ）（1.2.4） {#purpose-captions-live}
 
-この達成基準は、聴覚障碍のあるユーザーのアクセシビリティに関する問題に対応する点で、[キャプション（収録済み）](#captions-pre-recorded)と同じです。ただし、この達成基準では Web キャストなどライブのプレゼンテーションを扱う点が異なります。
+This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
 
 #### 達成方法 - キャプション（ライブ）（1.2.4）{#how-to-meet-captions-live}
 
@@ -358,44 +361,46 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
       >それぞれ実質的には同じですが、好ましいのは、意味的に正しい HTML である `<strong>` と `<em>` です。開発チームがプロジェクトインスタンスを作成する際に、`<strong>` と `<em>` ではなく `<b>` と `<i>` を使用するように RTE を設定できます。
 
 
-* **複雑なデータテーブル**：レベルが 2 つ以上あるヘッダーを含む複雑なテーブルがある場合など、場合によっては、基本的なテーブルのプロパティでは必要な構造情報を十分に指定できないことがあります。このような複雑なテーブルでは、**header** 属性と **id** 属性を使用して、ヘッダーとその関連セルの間に直接の関係を作成する必要があります。例えば、以下に示すテーブルでは、支援テクノロジーユーザーのためのプログラムによる関連付けを作成するために、header と id が照合されています。
+* **複雑なデータテーブル**：レベルが 2 つ以上あるヘッダーを含む複雑なテーブルがある場合など、場合によっては、基本的なテーブルのプロパティでは必要な構造情報を十分に指定できないことがあります。このような複雑なテーブルでは、**header** 属性と **id** 属性を使用して、ヘッダーとその関連セルの間に直接の関係を作成する必要があります。
 
    >[!NOTE]
    >
    >id 属性は、標準のインストールでは使用できません。RTE で HTML ルールとシリアライザーを設定することによって有効にできます。
 
-```xml
- <table>
-    <tr>
-      <th rowspan="2" id="h">Homework</th>
-      <th colspan="3" id="e">Exams</th>
-      <th colspan="3" id="p">Projects</th>
-    </tr>
-    <tr>
-      <th id="e1" headers="e">1</th>
-      <th id="e2" headers="e">2</th>
-      <th id="ef" headers="e">Final</th>
-      <th id="p1" headers="p">1</th>
-      <th id="p2" headers="p">2</th>
-      <th id="pf" headers="p">Final</th>
-    </tr>
-    <tr>
-     <td headers="h">15%</td>
-     <td headers="e e1">15%</td>
-     <td headers="e e2">15%</td>
-     <td headers="e ef">20%</td>
-     <td headers="p p1">10%</td>
-     <td headers="p p2">10%</td>
-     <td headers="p pf">15%</td>
-    </tr>
-   </table>
-```
+   例えば、以下に示すテーブルでは、支援テクノロジーユーザーのためのプログラムによる関連付けを作成するために、header と id が照合されています。
 
-AEM でこれを実現するには、ソース編集モードを使用してマークアップを直接追加する必要があります。
+   ```xml
+     <table>
+       <tr>
+         <th rowspan="2" id="h">Homework</th>
+         <th colspan="3" id="e">Exams</th>
+         <th colspan="3" id="p">Projects</th>
+       </tr>
+       <tr>
+         <th id="e1" headers="e">1</th>
+         <th id="e2" headers="e">2</th>
+         <th id="ef" headers="e">Final</th>
+         <th id="p1" headers="p">1</th>
+         <th id="p2" headers="p">2</th>
+         <th id="pf" headers="p">Final</th>
+       </tr>
+       <tr>
+         <td headers="h">15%</td>
+         <td headers="e e1">15%</td>
+         <td headers="e e2">15%</td>
+         <td headers="e ef">20%</td>
+         <td headers="p p1">10%</td>
+         <td headers="p p2">10%</td>
+         <td headers="p pf">15%</td>
+       </tr>
+     </table>
+   ```
 
->[!NOTE]
->
->この機能は、標準インストールでは、すぐには使用できません。RTE、HTML ルールおよびシリアライザーを設定する必要があります。
+   AEM でこれを実現するには、ソース編集モードを使用してマークアップを直接追加する必要があります。
+
+   >[!NOTE]
+   >
+   >この機能は、標準インストールでは、すぐには使用できません。RTE、HTML ルールおよびシリアライザーを設定する必要があります。
 
 #### 詳細情報 - 情報および関係性（1.3.1）{#more-information-info-and-relationships}
 
@@ -410,7 +415,7 @@ AEM でこれを実現するには、ソース編集モードを使用してマ�
 
 #### 目的 — 意味のあるシーケンス(1.3.2) {#purpose-meaningful-sequence}
 
-この成功条件の目的は、ユーザーエージェントが意味を理解するために必要な読み取り順序を維持しながら、コンテンツの代替表示を可能にすることです。 意味を持つコンテンツの少なくとも1つのシーケンスをプログラムで判断できることが重要です。 この成功基準を満たさないコンテンツは、支援テクノロジーがコンテンツを誤った順序で読み取った場合や、代替スタイルシートやその他の書式変更が適用された場合、ユーザーを混乱させたり、方向を狂わせたりする可能性があります。
+この成功条件の目的は、ユーザーエージェントが意味を理解するために必要な読み取り順序を維持しながら、コンテンツの代替表示を可能にすることです。 意味を持つコンテンツの少なくとも1つのシーケンスをプログラムで判断できることが重要です。 この成功基準を満たさないコンテンツは、支援テクノロジーがコンテンツを誤った順序で読み取った場合、または代替スタイルシートやその他の書式変更が適用された場合、ユーザーを混乱させたり、方向を狂わせたりする可能性があります。
 
 #### ミーティング方法 — 意味のあるシーケンス(1.3.2) {#how-to-meet-meaningful-sequence}
 
@@ -490,9 +495,6 @@ AEM でこれを実現するには、ソース編集モードを使用してマ�
 * [達成基準 1.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [達成基準 1.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-<!-- [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
--->
-
 ### オーディオコントロール(1.4.2)  {#audio-control}
 
 * 達成基準 1.4.2
@@ -501,7 +503,7 @@ AEM でこれを実現するには、ソース編集モードを使用してマ�
 
 #### 目的 — オーディオコントロール(1.4.2) {#purpose-audio-control}
 
-スクリーンリーディングソフトウェアを使用している人は、同時に他のオーディオが再生されている場合、音声出力を聞き取るのが難しい場合があります。 この問題は、スクリーンリーダーの音声出力が、（現在のほとんどの場合と同様に）ソフトウェアベースで、サウンドと同じボリュームコントロールを介して制御される場合に悪化します。 また、認知障害を持つ人や神経異性の人は、音に対する感受性を持つ人もいます。 オーディオコンテンツのボリュームレベルを変更できない場合もあります。
+スクリーンリーディングソフトウェアを使用している人は、同時に他のオーディオが再生されている場合、音声出力を聞き取るのが難しい場合があります。 この問題は、スクリーンリーダーの音声出力が、（現在のほとんどの場合と同様に）ソフトウェアベースで、サウンドと同じボリュームコントロールを介して制御される場合に悪化します。 また、認知障害を持つ人や神経異性の人は、音に対する感受性を持つ場合もあります。 オーディオコンテンツのボリュームレベルを変更できない場合もあります。
 
 したがって、ユーザが背景音をオフにできることが重要です。
 
@@ -557,7 +559,7 @@ AEM でこれを実現するには、ソース編集モードを使用してマ�
 
 >[!NOTE]
 >
->他のユニットへの変換に役立つ
+>次のサイトは、他のユニットへのコンバージョンに役立ちます。
 >
 >* [ピクセルからEmカルキュレータ — オムニ](https://www.omnicalculator.com/conversion/px-to-em)
 >* [フォントサイズの変換： pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
@@ -869,7 +871,7 @@ John Smith’s publications
 >
 >上記のスニペットは図です。**画像**&#x200B;コンポーネントを使用することをお勧めします。
 
-追加のコンテキストを必要とせずにリンクの目的を識別するリンクテキストを提供することが望ましいものの、これが常に可能とは限らないことがわかっています。コンテキストのないリンクは、次の場合に使用できます。HTML の例は、[達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)を参照してください。
+追加のコンテキストを必要とせずに、リンクの目的を識別するリンクテキストを提供することをお勧めしますが、これは常に可能とは限りません。 コンテキストのないリンクは、次の場合に使用できます。HTML の例は、[達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)を参照してください。
 
 * リンクテキストが、密接に関連するリンクのリストの一部であり、リンクを含むリスト項目で十分なコンテンツが提供されている場合。
 * リンクの目的が、前の&#x200B;**（後ろではない）段落テキストから明確に識別できる場合。
