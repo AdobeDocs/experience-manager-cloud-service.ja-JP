@@ -3,15 +3,18 @@ title: Adobe Experience Manager でのデジタルアセット管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '4284'
+ht-degree: 98%
 
 ---
 
 
 # アセットの管理 {#manage-assets}
 
-ここでは、Adobe Experience Manager（AEM）Assets でアセットを管理および編集する方法について説明します。コンテンツフラグメントを管理するには、[コンテンツフラグメント](content-fragments/content-fragments.md)アセットを参照してください。
+この記事では、Adobe Experience Manager Assetsでアセットを管理および編集する方法について説明します。 コンテンツフラグメントを管理するには、[コンテンツフラグメント](content-fragments/content-fragments.md)アセットを参照してください。
 
 ## フォルダーの作成 {#creating-folders}
 
@@ -183,7 +186,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
    **レンディションの削除**
 
-   **[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択し、ツールバーの「**[!UICONTROL レンディションを削除]**」アイコンをタップまたはクリックします。
+   **[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択し、ツールバーの「**[!UICONTROL レンディションを削除]**」アイコンをタップまたはクリックします。アセット処理の完了後、レンディションを一括で削除することはできません。 個々のアセットについて、レンディションをユーザインターフェイスから手動で削除できます。 複数のアセットについて、特定のレンディション [!DNL Experience Manager] を削除するか、アセットを削除して削除したアセットを再度アップロードするようにカスタマイズできます。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
