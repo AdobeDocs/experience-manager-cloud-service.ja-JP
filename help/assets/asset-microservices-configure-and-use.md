@@ -3,7 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+workflow-type: tm+mt
+source-wordcount: '1870'
+ht-degree: 92%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 -->
 
-アセットマイクロサービスは、クラウドサービスを使用して、アセットの拡張性と回復性に優れた処理を提供します。 様々なアセットタイプや処理オプションを最適に処理するためのサービスは、アドビが管理します。
+アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
-Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and allow an administrator to add more specific asset processing configuration. 管理者は、オプションのカスタマイズを含む後処理ワークフローの設定を作成および管理できます。 ワークフローのカスタマイズでは、拡張性と完全なカスタマイズが可能です。
+アセット処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に依存してします。処理プロファイルには、デフォルトの設定が用意されていますが、管理者がより具体的なアセット処理設定を追加することもできます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズでは、拡張機能と完全なカスタマイズが可能です。
 
 Asset Microservicesを使用すると、 [様々なファイルタイプ](/help/assets/file-format-support.md) （追加設定なし）を処理できます。これは、以前のバージョンのExperience Managerでは実現できなかったフォーマットです。 例えば、PSD形式とPSB形式のサムネール抽出が、以前はImageMagickなどのサードパーティソリューションが必要だった可能性があります。
 
@@ -35,7 +38,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
-> ここで説明するアセット処理は、Experience Managerの以前のバージョンに存在する `DAM Update Asset` ワークフローモデルに代わるものです。 標準的なレンディション生成とメタデータ関連のステップのほとんどは、アセットマイクロサービスの処理に置き換わり、残りのステップは後処理ワークフロー設定に置き換えることができます。
+> ここで説明するアセット処理は、以前のバージョンの Experience Manager に存在する `DAM Update Asset` ワークフローモデルに代わるものです。標準的なレンディション生成とメタデータ関連のステップのほとんどは、アセットマイクロサービスの処理に置き換わり、残りのステップは後処理ワークフロー設定に置き換えることができます。
 
 ## アセット処理の基本 {#get-started}
 
@@ -54,7 +57,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ### デフォルト設定 {#default-config}
 
-デフォルト設定では、標準の処理プロファイルのみ設定されています。標準の処理プロファイルはユーザーインターフェイスに表示されず、変更することはできません。 アップロードされたアセットは、常に実行されて処理されます。 標準の処理プロファイルを使用すると、Experience Managerに必要な基本的な処理をすべてのアセットに対して実行できます。
+デフォルト設定では、標準の処理プロファイルのみ設定されています。標準の処理プロファイルはユーザーインターフェイスに表示されず、変更することはできません。アップロードされたアセットは常に処理されます。標準の処理プロファイルを使用すると、Experience Manager で必要なあらゆる基本処理をすべてのアセットに対して実行できます。
 
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
 
@@ -75,15 +78,15 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 それぞれの処理プロファイル設定には、レンディションのリストが含まれています。レンディションごとに、以下を指定できます。
 
-* レンディション名.
-* JPEG、PNG、GIFなど、サポートされるレンディション形式。
-* レンディションの幅と高さ（ピクセル単位） 指定しなかった場合は、元の画像の最大ピクセルサイズが使用されます。
-* JPEGのレンディション画質（パーセント）
-* プロファイルの適用性を定義するために含まれるMIME型および除外されるMIME型。
+* レンディション名。
+* JPEG、PNG、GIF など、サポートされるレンディション形式。
+* レンディションの幅と高さをピクセル単位で指定します。指定しなかった場合は、元の画像の最大ピクセルサイズが使用されます。
+* JPEG のレンディションの画質（％単位）。
+* プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-新しい処理プロファイルを作成して保存すると、設定された処理プロファイルのリストに追加されます。 これらの処理プロファイルーをフォルダー階層のフォルダーに適用すると、アセットのアップロードやアセットの処理で効果的に使用できます。
+新しい処理プロファイルを作成して保存すると、設定済みの処理リストのプロファイルに追加されます。これらの処理プロファイルをフォルダー階層のフォルダーに適用して、アセットのアップロードやアセットの処理に対して有効にすることができます。
 
 <!-- Removed per cqdoc-15624 request by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) -->
@@ -96,19 +99,19 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 #### MIME タイプ包含ルール {#mime-type-inclusion-rules}
 
-特定のMIMEタイプを持つアセットが処理される場合、最初に、MIMEタイプがレンディション仕様の除外されたMIMEタイプ値と比較されます。 そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（「ブラックリストへの登録」）。
+特定の MIME タイプのアセットが処理される際は、まず、その MIME タイプがレンディション仕様の除外 MIME タイプの値と照合されます。そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（「ブラックリストへの登録」）。
 
-それ以外の場合は、MIMEタイプが含まれているMIMEタイプと比較され、それがリストと一致する場合は、レンディションが生成されます（「ホワイトリスト」）。
+それ以外の場合は、MIME タイプが包含 MIME タイプと照合され、リストと一致する場合は、そのレンディションが生成されます（「ホワイトリストへの登録」）。
 
 #### 特別な FPO レンディション {#special-fpo-rendition}
 
-AEMの大きいサイズのアセットをAdobe InDesignドキュメントに配置する場合、クリエイティブプロフェッショナルは、アセットを [配置した後、かなりの時間待つ必要があります](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)。 一方、ユーザーはInDesignの使用をブロックされます。 これによりクリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。 InDesignドキュメントでは、小さいサイズのレンディションを一時的に配置して、最初に使用するようにします。このレンディションは、後でフル解像度のアセットに置き換えることができます。 Experience Managerには、配置専用(FPO)のレンディションが用意されています。 これらのFPOレンディションは、ファイルサイズは小さいが縦横比が同じです。
+AEM の大きなサイズのアセットを Adobe InDesign ドキュメントに配置する場合、クリエイティブプロフェッショナルは、[アセットを配置](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)してからかなりの時間待つ必要があります。一方、ユーザーは InDesign の使用をブロックされます。これにより、クリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。InDesign ドキュメントでは、小さいサイズのレンディションを一時的に配置して、最初に配置することができます。この作業は、後でオンデマンドにより、フル解像度のアセットに置き換えることができます。Experience Manager には、配置専用（FPO）のレンディションが用意されています。これらの FPO レンディションは、ファイルサイズは小さいですが、縦横比は同じです。
 
-処理プロファイルには、FPO(For Placement Only)レンディションを含めることができます。 See Adobe Asset Link [documentation](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html) to understand if you need to turn it on for your processing profile. 詳しくは、「 [Adobe Asset Link完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)」を参照してください。
+処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、Adobe Asset Link の[ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
 
 ## アセットマイクロサービスを使用したアセットの処理 {#use-asset-microservices}
 
-カスタム処理プロファイルーを作成し、Experience Managerの特定のフォルダーに適用して、これらのフォルダーにアップロードまたは更新されたアセットを処理します。 デフォルトの組み込み標準処理プロファイルは常に実行されますが、ユーザーインターフェイスには表示されません。 カスタムプロファイルを追加する場合、両方のプロファイルを使用して、アップロードされたアセットが処理されます。
+追加のカスタム処理プロファイルを作成し、Experience Manager の特定のフォルダーに適用して、これらのフォルダーにアップロードまたは更新されたアセットを処理します。デフォルトの組み込み標準処理プロファイルは常に実行されますが、ユーザーインターフェイスには表示されません。カスタムアセットを追加する場合、プロファイルされたアセットは両方のプロファイルを使用して処理されます。
 
 処理プロファイルをフォルダーに適用する方法は次の 2 通りあります。
 
@@ -125,7 +128,7 @@ AEMの大きいサイズのアセットをAdobe InDesignドキュメントに配
 >
 >アセットがフォルダーにアップロードされると、Adobe Experience Manager は、そのフォルダーのプロパティで処理プロファイルを確認します。何も適用されていない場合は、適用された処理プロファイルが見つかるまでフォルダーツリー内を上に移動し、見つかった処理プロファイルをアセットに使用します。つまり、フォルダーに適用された処理プロファイルはツリー全体で機能しますが、サブフォルダーに適用された別のプロファイルでオーバーライドすることができます。
 
-ユーザーは、新しくアップロードされ処理が完了したアセットのプレビューを開き、左側のパネルの&#x200B;**[!UICONTROL レンディション]**&#x200B;表示をクリックして、処理が実際におこなわれたかどうかを確認できます。特定のアセットの種類がMIMEタイプ包含ルールと一致する処理プロファイルの特定のレンディションを表示し、アクセス可能にする必要があります。
+ユーザーは、新しくアップロードされ処理が完了したアセットのプレビューを開き、左側のパネルの&#x200B;**[!UICONTROL レンディション]**&#x200B;表示をクリックして、処理が実際におこなわれたかどうかを確認できます。特定のアセットのタイプが MIME タイプ包含ルールと一致する処理プロファイルの特定のレンディションが表示され、アクセス可能になります。
 
 ![additional-renditions](assets/renditions-additional-renditions.png)
 *図：親フォルダーに適用された処理プロファイルで生成された 2 つの追加レンディションの例*
@@ -145,7 +148,7 @@ AEMの大きいサイズのアセットをAdobe InDesignドキュメントに配
 後処理ワークフロー設定を Adobe Experience Manager に追加する作業は、次の手順で構成されます。
 
 * 1 つ以上のワークフローモデルの作成。これらは「後処理ワークフローモデル」と呼ばれますが、通常の AEM ワークフローモデルです。
-* これらのモデルへの特定のワークフローステップの追加。これらのステップは、ワークフローモデルの設定に基づいたアセットに対する処理の実行になります。
+* これらのモデルに特定のワークフローステップを追加する。これらのステップは、ワークフローモデルの設定に基づいたアセットに対する処理の実行になります。
 * このようなモデルの最後のステップは、`DAM Update Asset Workflow Completed Process` ステップでなければなりません。これは、処理が終了したことを AEM が把握し、アセットを処理済み（「新規」）としてマークできるようにするために必要になります。
 * Custom Workflow Runner サービスの設定の作成。パス（フォルダーの場所）または正規表現で後処理ワークフローモデルの実行を設定できます
 
@@ -153,9 +156,9 @@ AEMの大きいサイズのアセットをAdobe InDesignドキュメントに配
 
 後処理ワークフローモデルは、通常の AEM ワークフローモデルです。リポジトリの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
-処理ステップは、ニーズに応じて追加する必要があります。サポートされている任意の手順と、カスタムに実装された任意のワークフロー手順を使用できます。
+処理ステップは、ニーズに応じて追加する必要があります。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
 
-各後処理ワークフローの最後の手順がであることを確認し `DAM Update Asset Workflow Completed Process`ます。 最後の手順は、アセットの処理が完了した時点をExperience Managerに確実に知らせるのに役立ちます。
+各後処理ワークフローの最後の手順が `DAM Update Asset Workflow Completed Process` であることを確認します。最後の手順は、アセットの処理が完了したことを Experience Manager が確実に把握できるようにするのに役立ちます。
 
 ### 後処理ワークフローの実行の設定 {#configure-post-processing-workflow-execution}
 
@@ -169,6 +172,10 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 >[!NOTE]
 >
 >Custom Workflow Runner の設定は、OSGi サービスの設定になります。OSGi 設定のデプロイ方法については、[Adobe Experience Manager へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
-> OSGi Web コンソールは、AEM のオンプレミスデプロイメントや Managed Services でのデプロイメントとは異なり、クラウドサービスのデプロイメントでは直接使用できません。
+> OSGi Web コンソールは、AEM の On-Premise デプロイメントや Managed Services デプロイメントとは異なり、Cloud Service デプロイメントでは直接使用できません。
 
-For details about which standard workflow step can be used in the post-processing workflow, see [workflow steps in post-processing workflow](developer-reference-material-apis.md#post-processing-workflows-steps) in the developer reference.
+後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
+
+## Best practices and limitations {#best-practices-limitations-tips}
+
+* ワークフローをデザインする際は、あらゆる種類のレンディションに対するニーズを考慮します。 レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成手順を削除します。 レンディションは、その後一括で削除することはできません。 を長時間使用した後、不要なレンディションを使用すると、ストレージ領域が大量に消費される場合があり [!DNL Experience Manager]ます。 個々のアセットについて、レンディションをユーザインターフェイスから手動で削除できます。 複数のアセットの場合は、特定のレンディションを削除す [!DNL Experience Manager] るようにカスタマイズするか、アセットを削除して再びアップロードできます。
