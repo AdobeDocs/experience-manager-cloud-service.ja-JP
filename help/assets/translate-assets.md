@@ -2,8 +2,11 @@
 title: 複数言語でのデジタルアセットの作成および管理と翻訳ワークフローの実行
 description: バイナリ、メタデータ、タグなどのアセットを複数の言語に翻訳するワークフローを自動化する方法を学習します。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '2615'
+ht-degree: 100%
 
 ---
 
@@ -54,7 +57,7 @@ Adobe Experience Manager (AEM) Assets では、多言語アセットはフォル
 
 最初にアセットを追加した言語コピーが言語マスターです。言語マスターは、他の言語に翻訳されるソースです。サンプルフォルダー階層にはいくつかの言語ルートが含まれています。
 
-```
+```shell
 /content
 &nbsp; &nbsp; /- dam
 &nbsp; &nbsp; &nbsp; |- en
@@ -213,7 +216,7 @@ Adobe Experience Manager (AEM) Assets では、多言語アセットはフォル
 * 新しい翻訳プロジェクトを作成
 * 既存の翻訳プロジェクトに追加
 
-### 構造のみを作成{#create-structure-only}
+### 構造のみを作成 {#create-structure-only}
 
 「**構造のみを作成**」オプションを使用して、ソース言語ルート内のソースフォルダーの階層と一致するように、ターゲット言語ルート内にターゲットフォルダー階層を作成します。この場合、ソースアセットが宛先フォルダーにコピーされます。ただし、翻訳プロジェクトは生成されません。
 
