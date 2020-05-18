@@ -1,8 +1,11 @@
 ---
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
-translation-type: ht
-source-git-commit: 8464d5fa5dd1b8a8a2d5ce47321e1062b536408b
+translation-type: tm+mt
+source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+workflow-type: tm+mt
+source-wordcount: '3132'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +29,7 @@ Dynamic Media、インタラクティブメディア、パノラマメディア�
 1. AEM で、Dynamic Media コンポーネントを追加するページを開きます。
 1. 左側のウィンドウで、「**[!UICONTROL コンポーネント]**」アイコンをタップし、「Dynamic Media」でフィルタリングします。
 
-   使用可能な Dynamic Media コンポーネントがない場合は、Dynamic Media コンポーネントを有効（オン）にする必要があります。詳しくは、[テンプレートの編集 - テンプレートの作成者](/help/sites-cloud/authoring/features/templates.md)を参照してください。
+   使用可能なダイナミックメディアコンポーネントのリストがない場合は、使用するダイナミックメディアコンポーネントを有効にする必要がある可能性があります。 See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,6 +52,33 @@ Dynamic Media、インタラクティブメディア、パノラマメディア�
    Dynamic Media ビデオ 360 メディアコンポーネント。
 
 1. 完了したら、ダイアログボックスの右上隅近くにあるチェックマークをタップして、変更を保存します。
+
+### Enabling Dynamic Media components {#enabling-dynamic-media-components}
+
+ページに追加できるダイナミックメディアコンポーネントがない場合は、まず使用するコンポーネントを有効にする必要がある可能性があります。
+
+1. AEM で、Dynamic Media コンポーネントを追加するページを開きます。
+1. ツールバーの左側で、ページ上部近くにあります。ページ情報アイコンをタップし、ドロップダウンリストから「テンプレート **[!UICONTROL の編集]** 」をタップします。
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. ツールバーの右側で、ページの上部に近いドロップダウンリストから「 **[!UICONTROL 構造]**」をタップします。
+
+   ![ポリシー](/help/assets/assets-dm/structure-mode.png)
+
+1. ページ下部近くにある「 **[!UICONTROL レイアウトコンテナ]** 」をタップしてツールバーを開き、ポリシーアイコンをタップします。
+1. レイ **[!UICONTROL アウトコンテナ]** ページの「 **[!UICONTROL プロパティ]** 」見出しの下で、「 **[!UICONTROL 許可されているコンポーネント]** 」タブが選択されていることを確認します。
+
+   ![許可されているコンポーネント](/help/assets/assets-dm/allowed-components.png)
+
+1. ダイナミックメディアが表示されるまでスクロ **[!UICONTROL ールし]**&#x200B;ます。
+1. ダイナミックメディア **[!UICONTROL の左にある>アイコンをタップして]** リストを展開し、有効にするダイナミックメディアコンポーネントを選択します。
+
+   ![ダイナミックメディアコンポーネントリスト](/help/assets/assets-dm/dm-components-select.png)
+
+1. レイ **[!UICONTROL アウトコンテナ]** ページの右上隅近くにある「完了」（チェックマーク）アイコンをタップします。
+
+1. ツールバーの右側のページの上部付近にあるドロップダウンリストで、「 **[!UICONTROL 初期コンテンツ]**」をタップし、通常どおりにページにダイナミックメディアコンポーネントを [追加します](#adding-a-dynamic-media-component-to-a-page) 。
 
 ## Dynamic Media コンポーネントのローカライズ {#localizing-dynamic-media-components}
 
@@ -101,7 +131,7 @@ Dynamic Media コンポーネントを追加したときに、「**[!UICONTROL D
 
 * 画像が PTIFF（Pyramid TIFF）ファイルであること。Dynamic Media を有効にする前に読み込まれた画像には、pyramid tiff ファイルはありません。
 
-#### 画像を操作する場合{#when-working-with-images}
+#### 画像を操作する場合 {#when-working-with-images}
 
 Dynamic Media コンポーネントでは、画像セット、スピンセット、混在メディアセットなどの動的イメージを追加できます。ズームイン、ズームアウト、スピンセット内での画像の回転（該当する場合）または別のタイプのセットからの画像の選択をおこなうことができます。
 
