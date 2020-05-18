@@ -1,8 +1,11 @@
 ---
 title: 検索ファセット
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
-translation-type: ht
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '2387'
+ht-degree: 100%
 
 ---
 
@@ -80,7 +83,7 @@ CRXDE に見られるように、ファイルタイプの値プロパティは�
 
 CRX リポジトリのオプションでノード構造を手動で作成する代わりに、対応するキーと値のペアを指定することで JSON ファイルでオプションを定義することもできます。JSON ファイルのパスを「**[!UICONTROL プロパティ名]**」フィールドに指定します。例えば、キーと値のペア `image/bmp`、`image/gif`、`image/jpeg`、`image/png` を定義し、次の JSON ファイルのサンプルに示すように、それらの値を指定します。「**[!UICONTROL プロパティ名]**」フィールドで、このファイルの CRX パスを指定できます。
 
-```
+```json
 {
     "options" :
  [
