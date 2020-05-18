@@ -2,8 +2,11 @@
 title: アセットエディターの拡張
 description: カスタムコンポーネントを使用したアセットエディターの機能の拡張方法について説明します。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 100%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 
 事前設定済みの編集コンポーネントを使用してエディターを設定する方法については、[アセットエディターページの作成および設定](https://helpx.adobe.com/jp/experience-manager/6-5/assets/using/assets-finder-editor.html)を参照してください。
 
-Adobe Experience Manager（AEM）開発者は、既存のエディターコンポーネントを使用するだけでなく、独自のコンポーネントを作成することもできます。
+Adobe Enterprise Manager（AEM）開発者は、既存のエディターコンポーネントを使用するだけでなく、独自のコンポーネントを作成することもできます。
 
-## アセットエディターテンプレートの作成{#creating-an-asset-editor-template}
+## アセットエディターテンプレートの作成 {#creating-an-asset-editor-template}
 
 geometrixx には次のサンプルページが含まれています。
 
@@ -40,7 +43,7 @@ AEM Assets コンポーネントでは、WCM 編集クライアントライブ�
 
 一部の AEM Assets コンポーネントでは `component.js` で定義されている JS 関数が必要です。このファイルをコンポーネントディレクトリにコピーしてリンクします。
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,11 +53,11 @@ AEM Assets コンポーネントでは、WCM 編集クライアントライブ�
 
 一部の AEM Assets コンポーネントでは、AEM ウィジェットライブラリを使用します。コンテンツコンテキストで正常にレンダリングするには、追加のスタイルシートを読み込む必要があります。タグアクションコンポーネントでは、さらにもう 1 つのスタイルシートが必要です。
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx スタイルシート{#geometrixx-style-sheet}
+### Geometrixx スタイルシート {#geometrixx-style-sheet}
 
 サンプルページコンポーネントでは、すべてのセレクターが `static.css`（`/etc/designs/geometrixx/static.css`）の `.asseteditor` で始まっている必要があります。ベストプラクティス：すべての `.asseteditor` セレクターをスタイルシートにコピーし、ルールを必要に応じて調整します。
 
@@ -73,7 +76,7 @@ AEM Assets コンポーネントでは、WCM 編集クライアントライブ�
 * アセットが読み込まれると、parsys はプレーンフォームページでしか編集できないので、WCM モードを無効にします。
 * アセットが読み込まれると、フォームページのタイトルではなくアセットのタイトルを使用します。
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,11 +116,11 @@ AEM Assets コンポーネントでは、WCM 編集クライアントライブ�
 
 HTML 部分で、先頭のタイトルセット（アセットまたはページのタイトル）を使用します。
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
-## シンプルなフォームフィールドコンポーネントの作成{#creating-a-simple-form-field-component}
+## シンプルなフォームフィールドコンポーネントの作成 {#creating-a-simple-form-field-component}
 
 この例では、読み込んだアセットのメタデータを表示するコンポーネントを作成する方法を説明します。
 
@@ -136,7 +139,7 @@ HTML 部分で、先頭のタイトルセット（アセットまたはページ
 
 1. 次のスニペットを使用して `samplemeta.jsp` を追加します。
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field comopnent
@@ -198,7 +201,7 @@ HTML 部分で、先頭のタイトルセット（アセットまたはページ
 
 1. **編集**&#x200B;モードで、新しいコンポーネント（**Sample Metadata** など）がサイドキック（**アセットエディター**&#x200B;グループ内）で使用できます。コンポーネントを挿入します。メタデータを格納できるようにするには、メタデータフォームに追加する必要があります。
 
-## メタデータオプションの変更{#modifying-metadata-options}
+## メタデータオプションの変更 {#modifying-metadata-options}
 
 [メタデータフォーム](https://helpx.adobe.com/jp/experience-manager/6-5/assets/using/assets-finder-editor.html)で利用可能な名前空間を変更できます。
 
