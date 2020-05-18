@@ -2,8 +2,11 @@
 title: Adobe Experience Manager Assets as a Cloud Service のユーザーインターフェイスについて
 description: AEM Assets as a Cloud Service のワークスペース、インターフェイス、UI 要素について説明します。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+workflow-type: tm+mt
+source-wordcount: '37'
+ht-degree: 100%
 
 ---
 
@@ -14,13 +17,16 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 TBD: Removing this article for now from TOC.
 Need to rewrite this getting started content post-GA.
 
--->
-
-ホームページエクスペリエンスの概要。
-様々な機能にアクセスできる UI 部品。
-Assets 固有の UI にアクセスする方法と、DAM 固有のタスクを実行する場所。
-ナビゲーション方法、検索場所、ワークフローの検索、設定の実行、レポートの確認など。
-サポートおよびドキュメントのリンク、プロファイル情報などの検索方法。
+Topics to be covered:
+* Overview of the home page experience.
+* Parts of the UI that lead to different capabilities accessible from here.
+* How to reach Assets specific UI and where to look to do DAM specific tasks.
+* How to navigate, where to search, find workflows, do configurations, check reports, etc.
+* How to find support and docs links, profile info, etc.
+* Embed videos from Tech Mktg, if any.
+* Look for videos on YT and blog posts on the Internet for introductions to AEMaaCS Assets.
 
 >[!MORELIKETHIS]
-
+>
+>* [Basic handling for Sites]
+-->
