@@ -2,9 +2,9 @@
 title: クラウドサービスとしてのAdobe Experience Manager向けアクセシブルコンテンツの作成（WCAG 2.1準拠）
 description: 障碍のあるユーザーが Web コンテンツにアクセスして利用できるようにします。
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 0f1ef5ab6ebc929ced669e47c8737d7401d5ea35
 workflow-type: tm+mt
-source-wordcount: '13873'
+source-wordcount: '13935'
 ht-degree: 48%
 
 ---
@@ -70,14 +70,18 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 
 #### 達成方法 - テキスト以外のコンテンツ（1.1.1） {#how-to-meet-non-text-content}
 
-静的なグラフィックの場合、そのグラフィックと同等の代替テキストを指定することが基本的な要件です。そのためには、「**代替テキスト**」フィールドを使用します。
+静的なグラフィックの場合、そのグラフィックと同等の代替テキストを指定することが基本的な要件です。これは、 **代替テキスト** フィールドで実行できます。 例えば、コアコンポーネント **[画像](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/image.html)**。
 
 >[!NOTE]
 >
->**カルーセル**&#x200B;や&#x200B;**スライドショー**&#x200B;など、あらかじめ用意されている一部のコンポーネントには、代替テキストの説明を画像に追加する手段が用意されていません。AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（「追加の HTML 要素および属性のサポートの追加」を参照）。
+>標準搭載のコアコンポーネント( **[カルーセルなど](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**)には、個々の画像に代替テキスト記述を追加する**代替テキスト&#x200B;**フィールドを提供しないものもありますが、コンポーネント全体に「**Label ****[(](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** Accessibility)」フィールド(AccessibilityTab)があります。
+>
+>AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（「追加の HTML 要素および属性のサポートの追加」を参照）。
 
 <!--
->Some out-of-the-box components, such as **Carousel** and **Slideshow** do not provide a means for adding alternate text descriptions to images. When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
 AEM では、デフォルトで入力される「**代替テキスト**」フィールドが必要です。If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
@@ -415,7 +419,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 #### 目的 — 意味のあるシーケンス(1.3.2) {#purpose-meaningful-sequence}
 
-この成功条件の目的は、ユーザーエージェントが意味を理解するために必要な読み取り順序を維持しながら、コンテンツの代替表示を可能にすることです。 意味を持つコンテンツの少なくとも1つのシーケンスをプログラムで判断できることが重要です。 この成功基準を満たさないコンテンツは、支援テクノロジーがコンテンツを誤った順序で読み取った場合、または代替スタイルシートやその他の書式変更が適用された場合、ユーザーを混乱させたり、方向を狂わせたりする可能性があります。
+この成功条件の目的は、ユーザーエージェントが意味を理解するために必要な読み取り順序を維持しながら、コンテンツの代替表示を可能にすることです。 意味を持つコンテンツの少なくとも1つのシーケンスをプログラムで判断できることが重要です。 この成功基準を満たさないコンテンツは、支援テクノロジーがコンテンツを誤った順序で読み取った場合や、代替スタイルシートやその他の書式変更が適用された場合、ユーザーを混乱させたり、方向を狂わせたりする可能性があります。
 
 #### ミーティング方法 — 意味のあるシーケンス(1.3.2) {#how-to-meet-meaningful-sequence}
 
@@ -925,7 +929,7 @@ John Smith’s publications
 
 #### 会合方法 — 見出しとラベル(2.4.6) {#how-to-meet-headings-and-labels}
 
-「成功基準の [満たし方」のガイドラインに従い](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)ます。
+「成功基準の [満たし方」のガイドラインに従ってください](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)。
 
 #### 詳細 — 見出しとラベル(2.4.6) {#more-information-headings-and-labels}
 
@@ -1186,19 +1190,21 @@ webページで必要とされるがユーザーによって省略された情�
 
 フォームへの入力を支援する説明を提供することは、インターフェイスを使いやすくするための基本です。これをおこなうことは、視覚や認知の障碍のあるユーザーに特に役立ちます。この説明がないと、フォームのレイアウトや、フォームの特定のフィールドで提供されているデータの種類を理解することが困難になるからです。
 
-AEM では、「**テキストフィールド**」のようなフォームコンポーネントをページに追加すると、デフォルトのラベルがページに追加されます。このデフォルトのタイトルはコンポーネントのタイプによって異なります。そのフィールドの編集ダイアログの「**タイトルとテキスト**」タブに、独自のタイトルを追加できます。各フォームコンポーネントに関連付けられているデータをユーザーが理解できるようなラベルを指定することが重要です。
+##### Forms
+
+In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. このデフォルトのタイトルはコンポーネントのタイプによって異なります。そのフィールドの編集ダイアログの「**タイトルとテキスト**」タブに、独自のタイトルを追加できます。各フォームコンポーネントに関連付けられているデータをユーザーが理解できるようなラベルを指定することが重要です。
 
 この「**タイトル**」フィールドは、支援テクノロジーで使用できるラベルを提供するので、フィールド要素用に使用する必要があります。フィールドの横のテキストにラベルを書き込むだけでは不十分です。
 
 一部のフォームコンポーネントでは、「**タイトルを非表示にする**」チェックボックスを使用してラベルを非表示にすることもできます。この方法で非表示にしたラベルは、支援テクノロジーでは引き続き使用できますが、画面には表示されません。状況によっては、この方法で十分ですが、通常は、可能な限り目に見えるラベルを含めることをお勧めします。画面の非常に狭い部分（フィールド 1 つずつ）を見ていて、ラベルによってフィールドを正確に識別できることを必要としているユーザーがいる可能性もあるからです。
 
-#### 画像ボタン {#image-buttons}
+###### 画像ボタン {#image-buttons}
 
-画像ボタンが使用されている場合（**画像ボタン**&#x200B;コンポーネントなど）、編集ダイアログの「**タイトルとテキスト**」タブの「**タイトル**」フィールドには、ラベルではなく、画像の代替テキストが実際に表示されます。以下の例では、`Submit` というテキストを持つ画像に、`Submit` という代替テキストが、編集ダイアログの「**タイトル**」フィールドを使用して追加されています。
+Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. 以下の例では、`Submit` というテキストを持つ画像に、`Submit` という代替テキストが、編集ダイアログの「**タイトル**」フィールドを使用して追加されています。
 
-#### フォームフィールドのグループ {#groups-of-form-fields}
+###### フォームフィールドのグループ {#groups-of-form-fields}
 
-**ラジオグループ**&#x200B;など、関連するコントロールのグループがある場合は、個々のコントロールだけでなく、グループにもタイトルが必要な場合があります。AEM で一連のラジオボタンを追加する際には、「**タイトル**」フィールドでこのグループタイトルを指定し、個々のタイトルはラジオボタン（「**項目**」）を作成する際に指定します。
+In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. AEMでラジオボタンのセットを追加する場合、「**タイトル**」フィールドにはこのグループタイトルが表示されますが、個々のタイトルはラジオボタン（**項目**）の作成時に指定されます。
 
 ただし、グループタイトルとラジオボタン自体との間には、プログラム的な関連付けはありません。テンプレートエディターでは、必要な `fieldset` タグと `legend` タグでタイトルを囲んで、この関連付けを作成する必要があります。この処理は、ページのソースコードを編集することによってのみ可能です。また、システム管理者がこれらの要素のサポートを追加して、**フィールドのプロパティ**&#x200B;ダイアログに表示させることもできます（「追加の HTML 要素および属性のサポートの追加」を参照）。
 
@@ -1206,7 +1212,7 @@ AEM では、「**テキストフィールド**」のようなフォームコン
 However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 -->
 
-#### フォームに関するその他の考慮事項 {#additional-considerations-for-forms}
+###### フォームに関するその他の考慮事項 {#additional-considerations-for-forms}
 
 データを特定の形式で入力する必要がある場合は、ラベルテキストでそのことを明確に示します。例えば、日付を `DD-MM-YYYY` という形式で入力する場合は、ラベルの一部としてこのことを具体的に示します。つまり、スクリーンリーダーユーザーがフィールドに遭遇したとき、形式に関する追加情報も含めて、ラベルが自動的に読み上げられるということです。
 
