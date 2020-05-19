@@ -1,8 +1,11 @@
 ---
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
-translation-type: ht
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+translation-type: tm+mt
+source-git-commit: 73d14016beabfbdb127fe9e4d91fb20d4c17918e
+workflow-type: tm+mt
+source-wordcount: '5120'
+ht-degree: 97%
 
 ---
 
@@ -132,7 +135,7 @@ Dynamic Media Classic（Scene7）のユーザーインターフェイスを使�
 * [サポートされていない形式のカスタム MIME タイプの追加](#adding-custom-mime-types-for-unsupported-formats)
 * [画像セットおよびスピンセットを自動生成するためのバッチセットプリセットの作成](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Image Server の公開設定{#publishing-setup-for-image-server}
+#### Image Server の公開設定 {#publishing-setup-for-image-server}
 
 公開設定は、アセットがデフォルトで Dynamic Media からどのように配信されるかを決定します。設定が指定されていない場合、Dynamic Media は、公開設定で定義されたデフォルト設定に従ってアセットを配信します。例えば、解像度属性が含まれていない画像を配信するように要求した場合、画像は初期設定のオブジェクト解像度設定で配信されます。
 
@@ -457,9 +460,24 @@ spin-01-01
 
 Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> のスムーズな実行を維持するために、アドビでは、次の同期パフォーマンス／拡張性の微調整のヒントをお勧めします。
 
-* 事前定義済みの Granite のワークフロー（ビデオアセット）キューワーカースレッドを更新する。
-* 事前定義済みの Granite の一時的なワークフロー（画像および非ビデオアセット）キューワーカースレッドを更新する。
-* Dynamic Media Classic サーバーへの最大アップロード接続数を更新する。
+* 様々なファイル形式の処理用に、定義済みのジョブパラメーターを更新します。
+* 定義済みのGraniteワークフロー（ビデオアセット）キューワーカースレッドを更新しています。
+* 定義済みのGranite一時ワークフロー（画像および非ビデオアセット）キューワーカースレッドを更新しています。
+* Dynamic Media Classicサーバーへの最大アップロード接続数を更新しています。
+
+#### 様々なファイル形式の処理用に、定義済みのジョブパラメーターを更新する
+
+ジョブのパラメータを調整して、ファイルをアップロードする際の処理を高速化できます。 例えば、PSDファイルをアップロードしていて、テンプレートとして処理したくない場合は、レイヤーの抽出を「false」（オフ）に設定できます。 この場合、調整されたジョブパラメータは、と表示され `process=None&createTemplate=false`ます。
+
+PDF、PostscriptおよびPSDファイルには、次の「調整済み」ジョブパラメーターを使用することをお勧めします。
+
+| ファイルタイプ | 推奨されるジョブパラメーター |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+これらのパラメーターのいずれかを更新するには、MIMEタイプベースのアセットの [有効化/ダイナミックメディアクラシックアップロードジョブパラメーターのサポートの手順に従います](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
 
 #### Granite の一時的なワークフローキューの更新 {#updating-the-granite-transient-workflow-queue}
 
