@@ -1,8 +1,11 @@
 ---
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
-translation-type: ht
-source-git-commit: 7758c6df49583dafdf2bf262eae8db466bb3c504
+translation-type: tm+mt
+source-git-commit: c1301dbe9641a6a35b639628e3f2d3f0c6b3f0d3
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -98,7 +101,7 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 
    >[!NOTE]
    >
-   >開発およびステージデプロイメントでのロードバランサーの変更、つまり、非実稼動パイプライン（開発環境用）と実稼動パイプライン（ステージ環境用）の両方のデタッチとアタッチの手順をスキップできます。
+   >開発およびステージデプロイメントでのロードバランサーの変更をスキップできます。つまり、ステージ環境用の非実稼働パイプライン、開発環境用および実稼働パイプラインの両方で、ステップのデタッチとアタッチを行うことができます。
 
 ### 実稼動フェーズへのデプロイメント {#deployment-production-phase}
 
