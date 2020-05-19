@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
-seo-title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
+description: クラウドサービスとしてのAdobe Experience Managerの概要とWebアクセシビリティのガイドライン
 translation-type: tm+mt
-source-git-commit: 11e1a10d92a5023b60e4c2632cf76ca90ba5b68d
+source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 87%
+source-wordcount: '385'
+ht-degree: 83%
 
 ---
 
