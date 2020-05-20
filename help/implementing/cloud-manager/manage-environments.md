@@ -2,7 +2,10 @@
 title: 環境の管理 - クラウドサービス
 description: 環境の管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
+source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 78%
 
 ---
 
@@ -36,9 +39,16 @@ source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 ## 環境の追加 {#adding-environments}
 
 
-1. ユーザーは「**環境を追加**」ボタンをクリックして、環境を追加します。
+1. 環境を追加するには、 **環境** 追加をクリックします。 このボタンは、 **環境** 画面からアクセスできます。
+   ![](assets/no-environment-2.png)
 
-   ![](assets/add-environment.png)
+
+   プログラムに **環境がない場合は、** 環境 **(** )オプションも環境カードで使用できます。
+
+   ![](assets/no-environments.png)
+
+   >[!注意)
+   >権限がないか、 **環境の対象となる可能性があるため、** ・オプションは無効になります。
 
 1. **環境を追加**&#x200B;ダイアログボックスが表示されます。ユーザーは、「**環境タイプ**」、「**環境名**」、「**環境の説明**」などの詳細を指定する必要があります（必要な情報は、特定のテナントで使用できる範囲内で環境を作成する際のユーザーの目的によって異なります）。
 
@@ -71,3 +81,15 @@ source-git-commit: 1fe2fea86f933e7cffabf67fda09a2850a5d5730
 ドロップダウンメニューからこれを選択すると、この環境に関連付けられているパイプラインをデプロイメントマネージャーで最新のリリースに更新してから実行できます。
 
 パイプラインが既に更新されている場合は、パイプラインの実行を求めるプロンプトが表示されます。
+
+## 環境の削除 {#deleting-environment}
+
+必要な権限を持つユーザーは、開発環境を削除できます。
+
+Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+
+![](assets/deleting-environment1.png)
+
+>[!NOTE]
+この機能は、実稼動用に設定された通常のプログラムセットの実稼働/ステージ環境セットには使用できません。 ただし、この機能はSandboxプログラムの実稼働/ステージ環境で使用できます。
+
