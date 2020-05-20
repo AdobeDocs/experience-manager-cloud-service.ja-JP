@@ -2,9 +2,9 @@
 title: 環境の管理 - クラウドサービス
 description: 環境の管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 1b788b10ab8ea7c5e2aa0d628f10a42737752d34
+source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 78%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 78%
 
    ![](assets/no-environments.png)
 
-   >[!注意)
+   >[!NOTE]
    >権限がないか、 **環境の対象となる可能性があるため、** ・オプションは無効になります。
 
 1. **環境を追加**&#x200B;ダイアログボックスが表示されます。ユーザーは、「**環境タイプ**」、「**環境名**」、「**環境の説明**」などの詳細を指定する必要があります（必要な情報は、特定のテナントで使用できる範囲内で環境を作成する際のユーザーの目的によって異なります）。
