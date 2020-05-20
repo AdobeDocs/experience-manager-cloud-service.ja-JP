@@ -2,10 +2,10 @@
 title: 環境の管理 - クラウドサービス
 description: 環境の管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: a19ffdd0afa484343096cb09c47219e3fdb13fb7
+source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 78%
+source-wordcount: '629'
+ht-degree: 68%
 
 ---
 
@@ -64,7 +64,6 @@ ht-degree: 78%
    >[!NOTE]
    >実稼動以外のパイプラインをまだセットアップしていない場合は、*概要*&#x200B;画面に、実稼動以外のパイプラインの作成に使用できるカードが表示されます。
 
-
 ## 環境の更新 {#updating-dev-environment}
 
 ステージ環境と実稼動環境の更新は、アドビで自動的に管理されます。
@@ -72,11 +71,12 @@ ht-degree: 78%
 開発環境の更新は、プログラムのユーザーが管理します。ある環境で AEM の最新の公開リリースが動作していない場合、ホーム画面の環境カードのステータスには&#x200B;**更新可能**&#x200B;と表示されます。
 
 ![](assets/manage-environments2.png)
-)
 
-このステータスが表示されると、環境カードでも&#x200B;**管理**&#x200B;メニュー（**環境**&#x200B;カードの「**詳細**」をクリックした場合）でも、「**更新**」オプションがドロップダウンメニューから選択可能になります。
 
-![](assets/add-environment4.png)
+「 **更新** 」オプションは、 **** 環境カードのドロップダウンメニューから利用できます。
+このオプションは、 **環境カードで「** 詳細 **」をクリックした場合に** 、「 **管理** 」ボタンからも使用できます。
+
+![](assets/update-environment2.png)
 
 ドロップダウンメニューからこれを選択すると、この環境に関連付けられているパイプラインをデプロイメントマネージャーで最新のリリースに更新してから実行できます。
 
@@ -86,10 +86,19 @@ ht-degree: 78%
 
 必要な権限を持つユーザーは、開発環境を削除できます。
 
-Delete option will be available from the dropdown menu, both on the **Environments** Card and the **Manage** menu if you click on Details from the **ENVIRONMENTS** card.
+「 **削除** 」オプションは、 **環境** ・カードのドロップダウン・メニューから利用できます。
+このオプションは、 **環境カードで「** 詳細 **」をクリックした場合に** 、「 **管理** 」ボタンからも使用できます。
 
 ![](assets/deleting-environment1.png)
 
 >[!NOTE]
 この機能は、実稼動用に設定された通常のプログラムセットの実稼働/ステージ環境セットには使用できません。 ただし、この機能はSandboxプログラムの実稼働/ステージ環境で使用できます。
+
+## Developer Consoleへのアクセス {#accessing-developer-console}
+
+[ **環境****]カードのドロップダウンメニューから[** 開発者コンソール]を選択します。
+
+![](assets/dev-console1.png)
+
+「 **環境** 」カードで「 **詳細** 」をクリックすると、「 **管理** 」ボタンからこのオプションを選択することもできます。
 
