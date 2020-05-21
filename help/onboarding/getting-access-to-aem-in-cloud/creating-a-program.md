@@ -2,7 +2,7 @@
 title: プログラムの作成 — クラウドサービス
 description: プログラムの作成 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: ed421718a8287e693c7961cbc19ad36db912efb0
+source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -32,13 +32,13 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 ![](assets/create-program-add.png)
 
-## Sandboxプログラムの作成 {#create-demo-program}
+## Sandboxプログラムの作成 {#create-sandbox-program}
 
 サンドボックスプログラムを作成するには、次の手順に従います。
 
 1. プログラムの作成ウィザードで、「デモの **設定**」を選択します。 プログラム名は、「 **作成**」を選択する前に送信されます。
 
-   ![](assets/create-program-setupdemo.png)
+   ![](assets/create-sandbox.png)
 
 1. 新しいSandboxプログラムカードがランディングページに表示され、その上にマウスポインターを置いてCloud Managerアイコンを選択し、Cloud Managerの概要ページに移動できます。 カードは、新しく作成されたSandboxプログラムの自動セットアップの状態をユーザーに通知します。 進行状況が表示されます。
 
