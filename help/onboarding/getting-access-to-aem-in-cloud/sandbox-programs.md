@@ -2,10 +2,10 @@
 title: サンドボックスプログラム — クラウドサービス
 description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
+source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +41,7 @@ Sandboxプログラムには次の属性があります。
 
 プログラム作成ウィザードを使用すると、Sandboxプログラムを作成できます。
 
-Sandboxプログラムの作成方法については、「Sandboxプログラムの [作成](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-demo-program)」を参照してください。
+Sandboxプログラムの作成方法については、を参照してください。
 
 ### Sandbox環境の作成 {#creating-sandbox-environments}
 
@@ -51,7 +51,7 @@ Sandboxプログラムは、プログラムの作成時に開発環境を自動�
 
 環境を手動で作成する方法について詳しくは、「環境の [追加](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 」を参照してください。
 
-### Sandbox環境の削除  {#deleting-sandbox-environments}
+### Sandbox環境の削除 {#deleting-sandbox-environments}
 
 必要な権限を持つユーザーは、開発環境、実稼働/ステージ環境またはセットを削除できます。
 
@@ -87,9 +87,16 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 1. Navigate to the **Developer Console**.
 [環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
 
-1. 次の図に示すように、「休止状態」をクリックします
+1. Click **Hibernate**, as shown in the figure below:
 
    ![](assets/hibernate-1.png)
+
+   または、
+
+   次の図に示すように、 **Hibernate** （休止状態）を環境リストからクリックします。
+
+   ![](assets/hibernate-1b.png)
+
 1. 「 **Hibernate** 」をクリックして手順を確認します。
 
    ![](assets/hibernate-2.png)
@@ -97,14 +104,6 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 1. 休止状態が正常に終了すると、環境の休止処理完了通知が **開発者コンソール** 画面に表示されます。
 
    ![](assets/hibernate-4.png)
-
-#### 冬眠環境へのアクセス {#accessing-hibernated-environment}
-
-冬眠した環境の作成者層または発行層に対してブラウザーリクエストを行うと、次の図に示すように、環境ーの冬眠状態を説明するランディングページが発生します。
-
-Cloud Managerの開発者ロールを持つユーザーは、 **** Developer Consoleボタンをクリックして開発者コンソールにアクセスし、環境の休止を解除できます。 ロールの設定に関する情報は、Cloud Managerのドキュメントで確認できます。
-
-組織のユーザーがDeveloper Consoleに表示するDeveloper Consoleボタンをクリックできない場合は、「Cloud Manager - Developer Role」を割り当てる必要があります。
 
 
 ### 冬眠解除 {#de-hibernation-introduction}
@@ -119,6 +118,13 @@ Cloud Managerの開発者ロールを持つユーザーは、 **** Developer Con
 
    ![](assets/de-hibernation-img1.png)
 
+   または、
+
+   次の図に示すように、 **環境****(** De-hibernate)をクリックします。
+
+   ![](assets/de-hibernate-1b.png)
+
+
 1. 「 **休止状態を** 解除」をクリックして手順を確認します。
 
    ![](assets/de-hibernation-img2.png)
@@ -131,15 +137,25 @@ Cloud Managerの開発者ロールを持つユーザーは、 **** Developer Con
 
    ![](assets/de-hibernation-img4.png)
 
+#### 冬眠環境へのアクセス {#accessing-hibernated-environment}
+
+次の図に示すように、冬眠した環境の作成者層または発行層に対してブラウザリクエストを行うと、環境の冬眠状態を示すランディングページが発生します。
+
+![](assets/de-hibernation-img5.png)
+
+
+Cloud Managerの開発者ロールを持つユーザーは、 **Developer Consoleをクリックして** Developer Console **** （開発者コンソール）にアクセスし、環境の休止を解除できます。
+
+>[!NOTE]
+> Cloud Manager の多くの機能には、使用するための特定の権限が必要です。特定の機能の可用性を制御するユーザーの役割について詳しくは、「ユーザーと役割の追加[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)」を参照してください。
 
 ## Sandbox環境に対するAEMの更新 {#aem-updates-sandbox}
 
-
 詳しくは、 [AEMバージョンの更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) （英語）を参照してください。
 
-ユーザーは、Sandboxプログラム内の環境にAEMの更新を手動で適用できます（下図を参照）。 これは、表示されるステータスが **UPDATE AVAILABLEの場合に実行できます**。
+ユーザーは、Sandboxプログラム内の環境にAEMの更新を手動で適用できます。
 
-「更新」オプションは、 **環境** ・カードのドロップダウン・メニューから利用できます。 このオプションは、 **環境カードで「** 詳細 **」をクリックした場合に** 、「 **管理** 」ボタンからも使用できます。
+環境を更新する方法については、 [環境の更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) を参照してください。
 
 >[!NOTE]
 >手動更新パイプラインを開始するには、 *対象の開発環境に展開する* 非実稼動パイプラインを設定する必要があります。
