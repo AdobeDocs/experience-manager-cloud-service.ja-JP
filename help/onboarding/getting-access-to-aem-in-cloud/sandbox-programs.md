@@ -2,9 +2,9 @@
 title: サンドボックスプログラム — クラウドサービス
 description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
-source-git-commit: e25e22c5d61defb3402e51b97c1d5364465e1027
+source-git-commit: 17e0c4fb87e67b369cf465b65df973a170fb8ed6
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1045'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Sandboxプログラムは、AEMクラウドサービスで使用できる2種類
 
 通常、サンドボックスは、トレーニング、実行デモ、有効化、またはコンセプトの配達確認(POC)の目的を満たすために作成されます。 彼らは生きたトラフィックを運ぶつもりはない。
 
-SandboxプログラムにはSitesとAssetsが含まれ、サンプルコード、開発環境、非実稼働パイプラインを含むGitブランチが自動入力されます。
+SandboxプログラムにはSitesとAssetsが含まれ、Gitリポジトリ、開発環境、非実稼働パイプラインが自動入力されます。  Gitリポジトリには、AEMプロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
 
 プログラムタイプの詳細については、 [「プログラムとプログラムタイプについて](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) 」を参照してください。
 
@@ -41,7 +41,7 @@ Sandboxプログラムには次の属性があります。
 
 プログラム作成ウィザードを使用すると、Sandboxプログラムを作成できます。
 
-Sandboxプログラムの作成方法については、を参照してください。
+Sandboxプログラムの作成方法について詳しくは、「Sandboxプログラムの [作成](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 」を参照してください。
 
 ### Sandbox環境の作成 {#creating-sandbox-environments}
 
@@ -74,6 +74,9 @@ Sandboxプログラム環境は、特定の期間、アクティビティが検�
 * **Sandboxの自動プログラム環境は** 、8時間操作が実行されなかった場合に自動的に休止状態になります。つまり、作成者も発行サービスも要求を受け取りません。
 
 * **手動**: ユーザはSandboxプログラム環境を手動で休止できますが、休止状態が一定時間（8時間）続くと自動的に休止状態になるので、必要ありません。
+
+>[!CAUTION]
+>最新のリリースでは、Cloud ManagerのDeveloper Consoleにリンクすると、Sandboxプログラム環境を休止状態にできません。
 
 #### 手動ハイバーネーションの使用 {#using-manual-hibernation}
 
@@ -149,6 +152,17 @@ Cloud Managerの開発者ロールを持つユーザーは、 **Developer Consol
 >[!NOTE]
 > Cloud Manager の多くの機能には、使用するための特定の権限が必要です。特定の機能の可用性を制御するユーザーの役割について詳しくは、「ユーザーと役割の追加[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)」を参照してください。
 
+#### 重要な検討事項 {#important-considerations}
+
+冬眠状態と冬眠解除状態の環境に関する主な考慮事項は、次のとおりです。
+
+* ユーザーは、パイプラインを使用して、休止状態の環境にカスタムコードを導入できます。 環境は冬眠状態のままとなり、新しいコードは環境で非冬眠状態になった後に表示されます。
+
+* AEMのアップグレードは、冬眠状態の環境に適用でき、Cloud Managerから手動でトリガーできます。 環境は冬眠状態のままとなり、新しいリリースは、冬眠状態を解除すると環境に表示されます。
+
+>[!NOTE]
+>現在、Cloud Managerは、環境を休止状態にするかどうかを示しません。
+
 ## Sandbox環境に対するAEMの更新 {#aem-updates-sandbox}
 
 詳しくは、 [AEMバージョンの更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) （英語）を参照してください。
@@ -158,13 +172,9 @@ Cloud Managerの開発者ロールを持つユーザーは、 **Developer Consol
 環境を更新する方法については、 [環境の更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) を参照してください。
 
 >[!NOTE]
->手動更新パイプラインを開始するには、 *対象の開発環境に展開する* 非実稼動パイプラインを設定する必要があります。
+>* 手動更新は、対象環境に適切に設定されたパイプラインがある場合にのみ実行できます。
+>* 「 *Production* 」または「 *Stage* 」環境を手動で更新すると、もう一方が自動的に更新されます。 Production+Stage環境セットは、同じAEMリリースに存在する必要があります。
 
->[!NOTE]
->手動更新パイプラインからProduction+Stage環境セットへの *Production Pipeline* （実稼動パイプライン）を開始するには、Production Pipeline（実稼動パイプライン）を設定する必要があります。
-
->[!NOTE]
->「 *Production* 」または「 *Stage* 」環境に手動で更新すると、もう一方が自動的に更新されます。 Production+Stage環境セットは、同じAEMリリースに存在する必要があります。
 
 
 
