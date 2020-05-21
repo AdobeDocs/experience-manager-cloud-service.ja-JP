@@ -2,9 +2,9 @@
 title: サンドボックスプログラム — クラウドサービス
 description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
-source-git-commit: e7cad0cd67f04eac5627e72339ccb1c4f54cc8c8
+source-git-commit: 168b3d28a36e4ec5258b2d2f391af25c466be6c6
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Sandboxプログラムは、AEMクラウドサービスで使用できる2種類
 
 SandboxプログラムにはSitesとAssetsが含まれ、サンプルコード、開発環境、非実稼働パイプラインを含むGitブランチが自動入力されます。
 
-プログラムタイプの詳細については、「プログラムとプログラムタイプについて [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html)」を参照してください。
+プログラムタイプの詳細については、 [「プログラムとプログラムタイプについて](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) 」を参照してください。
 
 ### サンドボックスプログラムの属性 {#attributes-sandbox}
 
@@ -86,9 +86,17 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 1. Navigate to the **Developer Console**.
 [環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
-1. 次の図に示すように、「休止状態」をクリックします。
-1. 「 **Hibernate** 」をクリックして手順を確認します
-1. ハイバーネーションが正常に終了すると、次の画面が表示されます。
+
+1. 次の図に示すように、「休止状態」をクリックします
+
+   ![](assets/hibernate-1.png)
+1. 「 **Hibernate** 」をクリックして手順を確認します。
+
+   ![](assets/hibernate-2.png)
+
+1. 休止状態が正常に終了すると、環境の休止処理完了通知が **開発者コンソール** 画面に表示されます。
+
+   ![](assets/hibernate-4.png)
 
 #### 冬眠環境へのアクセス {#accessing-hibernated-environment}
 
