@@ -4,7 +4,7 @@ description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1228'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Sandboxプログラムは、AEMクラウドサービスで使用できる2種類のプログラムの1つで、もう1つは通常のプログラムです。
 
-通常、サンドボックスは、トレーニング、実行デモ、有効化、またはコンセプトの配達確認(POC)の目的を満たすために作成されます。 彼らは生きたトラフィックを運ぶつもりはない。 これらのサービスは、クラウドサービスサービスのコミットメントとしての [AEMの対象とはなりません](https://www.adobe.com/legal/service-commitments.html)。
+通常、サンドボックスは、トレーニング、実行デモ、有効化、またはコンセプトの配達確認(POC)の目的を満たすために作成されます。 彼らは生きたトラフィックを運ぶつもりはない。 これらのサービスは、クラウドサービスのコミットメントとしての [AEMの対象とはなりません](https://www.adobe.com/legal/service-commitments.html)。
 
 サンドボックスで作成された環境は、自動拡大/縮小用に構成されていません。 したがって、パフォーマンスや負荷テストには適していません。
 
