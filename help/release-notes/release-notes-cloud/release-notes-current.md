@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.5.0 のリリースノート
 description: Experience Manager 2020.5.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 94a732f56929ad4af23855152e258f82ad61ee2c
+source-git-commit: 8fe1f6f1c7c6a608ee1ca42836ee91e83487428d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 29%
+source-wordcount: '374'
+ht-degree: 18%
 
 ---
 
@@ -14,7 +14,22 @@ ht-degree: 29%
 
 Experience Manager as a Cloud Service 2020.5.0 の一般的なリリースノートの概要を次に説明します。
 
-## Cloud Manager {#cloud-manager}
+## リリース日 {#release-date}
+
+The release date for [!DNL Experience Manager] as a Cloud Service 2020.5.0 is May 07, 2020.
+
+## What&#39;s New in AEM Sites {#aem-sites}
+
+この節では、AEMのクラウドサービスリリース2020.5.0としてのAEMサイトの新機能と更新点について説明します。
+
+* 一括ページの移動およびロールアウトを非同期ジョブとして処理した後に、詳細なジョブ情報が利用できるようになりました。
+* ページツリーをコピー/貼り付ける場合、ルートページのみを貼り付けるか、ツリーのサブページも貼り付けるかを選択できるようになりました。
+* Adobeターゲットワークスペースに書き出されたAEMエクスペリエンスフラグメントは、ターゲット内で一意のオファータイプおよびオファーソースとして表示されるようになりました。
+* MSM - *publish* triggerを使用して、ライブコピーソース内のコンポーネントの削除イベント、つまりライブコピーソース内の削除されたライブコピー内のコンポーネントの削除を正常にロールアウトできるようになりました。
+* MSM — ライブコピーコンポーネントは、ライブコピーソースから同じコンポーネントをロールアウトした後、 *_msm_moved* に名前が変更されるようになりました。
+
+
+## Cloud Manager の新機能 {#cloud-manager}
 
 AEM as a Cloud Service リリース 2020.5.0 の Cloud Manager の新機能と更新点について説明します。
 
