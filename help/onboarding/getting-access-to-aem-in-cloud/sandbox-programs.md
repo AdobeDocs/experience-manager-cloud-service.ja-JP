@@ -4,7 +4,7 @@ description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
 source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1276'
 ht-degree: 1%
 
 ---
@@ -91,8 +91,8 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 1. Navigate to the **Developer Console**.
 [環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
-   >[!NOTE]
-   >Cloud ManagerからDeveloper Consoleに直接リンクしても、Sandboxプログラム環境を休止状態にするオプションは提供されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
+   >[!IMPORTANT]
+   >Cloud Managerから **Developer Console** （開発者コンソール）に直接リンクしても、Sandboxプログラム環境を休止するオプションは提供されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
 
 1. Click **Hibernate**, as shown in the figure below:
 
@@ -117,6 +117,9 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 1. Navigate to the **Developer Console**.
 [環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
+
+   >[!IMPORTANT]
+   >Cloud Managerから **Developer Console** （開発者コンソール）に直接リンクしても、Sandboxプログラム環境の休止状態を解除するオプションは表示されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
 
    >[!NOTE]
    >または、 **Developer Console** （開発者コンソール）に移動して非休止状態にするには、既に休止状態になっている環境の作成者または発行サービスにアクセスします。 この場合、ランディングページはDeveloper Consoleへのリンクと共に表示されます。 後述の「冬眠環境へのアクセス」の節を参照してください。
