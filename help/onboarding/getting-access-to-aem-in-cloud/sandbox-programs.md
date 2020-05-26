@@ -2,10 +2,10 @@
 title: サンドボックスプログラム — クラウドサービス
 description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
-source-git-commit: da965462eddae8b359a6d327a7fe3caf6bfe95ae
+source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 1%
+source-wordcount: '1269'
+ht-degree: 0%
 
 ---
 
@@ -150,17 +150,17 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
    ![](assets/de-hibernation-img4.png)
 
+#### 休止状態を解除する権限 {#permissions-de-hibernate}
+
+製品プロファイルからクラウドサービスとしてAEMへのアクセス権を付与されたユーザーは、 **Developer Console**(環境の休止を解除できる)にアクセスできる必要があります。
+
+ユーザー権限の設定については、 [Cloud Managerの「](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 追加ユーザーと役割」を参照してください。
+
 #### 冬眠環境へのアクセス {#accessing-hibernated-environment}
 
 次の図に示すように、冬眠した環境の作成者層または発行層に対してブラウザリクエストを行うと、環境の冬眠状態を示すランディングページが発生します。
 
 ![](assets/de-hibernation-img5.png)
-
-
-Cloud Managerの開発者ロールを持つユーザーは、 **Developer Consoleをクリックして** Developer Console **** （開発者コンソール）にアクセスし、環境の休止を解除できます。
-
->[!NOTE]
-> Cloud Manager の多くの機能には、使用するための特定の権限が必要です。特定の機能の可用性を制御するユーザーの役割について詳しくは、「ユーザーと役割の追加[](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html)」を参照してください。
 
 ### 重要な検討事項 {#important-considerations}
 
