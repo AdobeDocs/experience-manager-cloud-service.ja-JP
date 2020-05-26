@@ -1,13 +1,16 @@
 ---
 title: インボックス
 description: インボックスを使用したタスクの管理
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+translation-type: tm+mt
+source-git-commit: 672f1483c017d791365173c91b0bee5c44c33535
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 97%
 
 ---
 
 
-# インボックス{#your-inbox}
+# インボックス {#your-inbox}
 
 ワークフローやプロジェクトなど、AEM の様々な領域から通知を受け取ることができます。例えば、以下に関する通知を受け取る場合があります。
 
@@ -40,7 +43,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >特定のアクションは、[適切なリソースのカード表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)にも表示されます。
 
-## インボックスを開く{#opening-the-inbox}
+## インボックスを開く {#opening-the-inbox}
 
 AEM 通知インボックスを開くには：
 
@@ -105,6 +108,10 @@ AEM 通知インボックスを開くには：
 
 ## 項目に対するアクションの実行 {#taking-action-on-an-item}
 
+>[!NOTE]
+>
+>複数のアイテムを選択できますが、一度に1つのアイテムに対してのみアクションを実行できます。
+
 1. 項目に対してアクションを実行するには、該当する項目のサムネールを選択します。その項目に適用可能なアクションのアイコンがツールバーに表示されます。
 
    ![インボックス項目の選択](/help/sites-cloud/authoring/assets/inbox-select-item.png)
@@ -128,7 +135,7 @@ AEM 通知インボックスを開くには：
    >* ワークフローの項目 - [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 
 
-1. 選択した項目に応じて、アクションが開始されます。例えば、次の操作がおこなわれます。
+2. 選択した項目に応じて、アクションが開始されます。例えば、次の操作がおこなわれます。
 
    * そのアクションに適したダイアログが開きます
    * アクションウィザードが開始されます
