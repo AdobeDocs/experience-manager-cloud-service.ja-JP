@@ -1,21 +1,24 @@
 ---
 title: コンテンツフラグメントの管理
-description: コンテンツフラグメントはアセットとして保存されるので、主にアセットコンソールから管理します。
-translation-type: tm+mt
+description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
+translation-type: ht
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+workflow-type: ht
+source-wordcount: '1470'
+ht-degree: 100%
 
 ---
 
 
 # コンテンツフラグメントの管理{#managing-content-fragments}
 
-コンテンツフラグメントは&#x200B;**アセット**&#x200B;として保存されるので、主に&#x200B;**アセット**&#x200B;コンソールから管理します。
+コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
 >[!NOTE]
 >
 >コンテンツフラグメントは、ページのオーサリングで使用します。[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
-## コンテンツフラグメントの作成 {#creating-content-fragments}
+## コンテンツフラグメントの作成{#creating-content-fragments}
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 
@@ -26,13 +29,13 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 コンテンツフラグメントの作成方法は基本的に単純なフラグメントと構造化フラグメントで同じです。
 
-1. フラグメントを作成する&#x200B;**アセット**&#x200B;フォルダーに移動します。
+1. フラグメントを作成する **Assets** フォルダーに移動します。
 2. 「**作成**」を選択し、「**コンテンツフラグメント**」を選択して、ウィザードを開きます。
 3. ウィザードの最初の手順では、新しいフラグメントの基盤を指定することを求められます。
 
-   * 次のように指定できます。
+   * 次のことが考えられます。
 
-      * 単純なフ **ラグメントテンプレート** 。
+      * **単純なフラグメント**&#x200B;テンプレート
 
       * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **空港**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
 
@@ -67,7 +70,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 ## コンテンツフラグメントのアクション {#actions-for-a-content-fragment}
 
-**アセット**&#x200B;コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
+**Assets** コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
 
 * ツールバーから。フラグメントを選択すると、該当するすべてのアクションを使用できるようになります。
 * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)として。個別のフラグメントカードに使用可能なアクションのサブセット。
@@ -105,7 +108,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 >[!NOTE]
 >
->これらの多くは、[アセット](/help/assets/manage-digital-assets.md)や [AEM デスクトップアプリケーション](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)に対する標準的なアクションです。
+>これらの多くは、[Assets](/help/assets/manage-digital-assets.md) や [AEM デスクトップアプリケーション](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)に対する標準的なアクションです。
 
 ## フラグメントエディターを開く {#opening-the-fragment-editor}
 
@@ -119,7 +122,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 >
 >コンテンツフラグメントを編集するには、適切な権限が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
-1. **アセット**&#x200B;コンソールを使用して、コンテンツフラグメントの場所に移動します。
+1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
 2. フラグメントを開いて編集するには、以下のいずれかを実行します。
 
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
@@ -153,7 +156,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
    >
    >「**保存**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
+## 保存、キャンセルおよびバージョン{#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -207,19 +210,19 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理{#creating-and-managing-variations-within-your-fragment}
 
 マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
+## コンテンツをフラグメントと関連付ける{#associating-content-with-your-fragment}
 
 フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
-## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## フラグメントのメタデータ（プロパティ）の表示と編集{#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 「[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)」タブを使用し、フラグメントのプロパティを表示して編集できます。
 
-## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
+## コンテンツフラグメントのタイムライン{#timeline-for-content-fragments}
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
@@ -299,7 +302,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 コンテンツフラグメントを使用するには、パブリッシュ環境で公開する必要があります。次の方法で公開できます。
 
-* 作成後に **アセット**&#x200B;コンソールから。
+* 作成後に **Assets** コンソールから。
 * [フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
@@ -309,7 +312,7 @@ source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
 
 フラグメントを削除するには：
 
-1. **アセット**&#x200B;コンソールで、コンテンツフラグメントの場所に移動します。
+1. **Assets** コンソールで、コンテンツフラグメントの場所に移動します。
 2. フラグメントを選択します。
 
    >[!NOTE]
