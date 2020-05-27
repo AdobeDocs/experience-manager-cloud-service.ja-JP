@@ -2,7 +2,7 @@
 title: プログラムの作成 — クラウドサービス
 description: プログラムの作成 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 89da3b16c133a423f4c4aa630c8e1dd7d008fb17
+source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 特定の顧客/組織が使用できる範囲内でプログラムを作成するユーザーの目的に応じて、プログラム作成ウィザードが表示され、1つ以上の詳細をユーザーに送信するように求めます。
 
-![](assets/create-program-2.png)
+![](assets/create-sandbox.png)
 
 >[!NOTE]
 >If a program already exists, then you will see **Add Program** on the top right of the landing page, as shown in the figure below.
@@ -36,7 +36,7 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 サンドボックスプログラムを作成するには、次の手順に従います。
 
-1. プログラムの作成ウィザードで、「デモの **設定**」を選択します。 プログラム名は、「 **作成**」を選択する前に送信されます。
+1. プログラムの作成ウィザードで、「Sandboxを **設定する**」を選択します。 プログラム名は、「 **作成**」を選択する前に送信されます。
 
    ![](assets/create-sandbox.png)
 
