@@ -3,9 +3,9 @@ title: AEM Assets Cloud Service と Brand Portal の統合の設定
 description: Brand Portal で AEM Assets Cloud Service を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 6627f6454430d25f29bc743ad2f81e89f932219f
+source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1806'
 ht-degree: 38%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)Assetsは、Adobe Developer Consoleを介してBran
 
 **設定の仕組み**
 
-AEM AssetsクラウドインスタンスをBrand Portalテナント（組織）と共に設定するプロセスは、AEM AssetsクラウドインスタンスとAdobe Developer Consoleの両方の設定を必要とする複数の手順で構成します。
+AEM AssetsクラウドインスタンスをBrand Portalテナント（組織）と共に設定するには、AEM AssetsクラウドインスタンスとAdobe Developer Consoleの両方を設定する必要があります。
 
 1. AEM Assetsクラウドインスタンスで、IMSアカウントを作成し、公開証明書（公開鍵）を生成します。
 1. Adobe Developer Consoleで、Brand Portalテナント（組織）用のプロジェクトを作成します。
@@ -28,9 +28,11 @@ AEM AssetsクラウドインスタンスをBrand Portalテナント（組織）�
 1. AEM AssetsクラウドインスタンスからBrand Portalにアセットを公開して、設定をテストします。
 
 >[!NOTE]
->>Brand Portalテナントは、1つのAEM Assetsクラウドインスタンスでのみ設定する必要があります。
->>複数のAEM Assetsクラウドインスタンスを使用してBrand Portalテナントを設定しない。
 >
+>Brand Portalテナントは、1つのAEM Assetsクラウドインスタンスでのみ設定できます。
+>
+>複数のAEM Assetsクラウドインスタンスを持つBrand Portalテナントは設定しないでください。
+
 
 ## 前提条件 {#prerequisites}
 
