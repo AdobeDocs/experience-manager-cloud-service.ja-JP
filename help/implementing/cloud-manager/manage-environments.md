@@ -2,10 +2,10 @@
 title: 環境の管理 - クラウドサービス
 description: 環境の管理 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 1f72e8c935dc6cfe1124afd9f1a0fe37a97ded34
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 68%
+source-wordcount: '702'
+ht-degree: 61%
 
 ---
 
@@ -96,7 +96,12 @@ ht-degree: 68%
 
 ## Developer Consoleへのアクセス {#accessing-developer-console}
 
-[ **環境****]カードのドロップダウンメニューから[** 開発者コンソール]を選択します。
+[ **環境****]カードのドロップダウンメニューから[** 開発者コンソール]を選択します。 これにより、ブラウザに新しいタブが開き、 **Developer Consoleへのログインページが表示されます**。
+
+開発者ロールに割り当てられているユーザーのみが **開発者コンソールにアクセスできます**。 例外は、Sandboxプログラムに対して発生します。Cloud Manager Sandboxプログラムへのアクセス権を持つユーザーは、 **Developer Console**.
+
+詳しくは、「 [Sandbox環境の冬眠と非冬眠](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction) 」を参照してください。
+
 
 ![](assets/dev-console1.png)
 
