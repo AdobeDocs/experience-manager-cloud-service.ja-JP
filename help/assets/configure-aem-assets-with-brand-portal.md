@@ -3,10 +3,10 @@ title: AEM Assets Cloud Service と Brand Portal の統合の設定
 description: Brand Portal で AEM Assets Cloud Service を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: a67acc6b3204d0b590f5eec86e0a9476aeccb0b3
+source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 38%
+source-wordcount: '1762'
+ht-degree: 37%
 
 ---
 
@@ -69,7 +69,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. **ツール**![ツール](assets/tools.png)パネルより、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
+1. **ツール**![ツール](assets/tools.png) パネルで、 **[!UICONTROL セキュリティ/]****** Adobe IMS設定のに移動します。
 
    ![Adobe IMS アカウント設定 UI](assets/ims-configuration1.png)
 
@@ -134,9 +134,11 @@ Adobe Developer Consoleでは、プロジェクトとAPIは組織（Brand Portal
 
 1. 公開証明書を確認し、「 **[!UICONTROL 次へ]**」をクリックします。
 
-1. Brand Portalでは、組織ごとにデフォルトのプロファイルが作成されます。 製品プロファイルは、（ロールと権限に基づいて）グループにユーザーを割り当てるために、管理コンソールで作成されます。 Brand Portalを使用した設定の場合、OAuthトークンは組織レベルで作成されます。 したがって、組織のデフォルトの製品プロファイルを設定する必要があります。
+1. デフォルトの製品プロファイル「 **[!UICONTROL アセット」「ブランドポータル]** 」を選択し、「設定 **[!UICONTROL を保存]**」をクリックします。
 
-   デフォルトの製品プロファイル **[!UICONTROL アセットのブランドポータル]**&#x200B;を選択します。
+   <!-- 
+   In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
+   -->
 
    ![製品プロファイルの選択](assets/service-account4.png)
 
@@ -237,7 +239,7 @@ Adobe Developer Consoleでは、プロジェクトとAPIは組織（Brand Portal
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. **ツール**![ツール](assets/tools.png)パネルで、**[!UICONTROL Cloud Services]**／**[!UICONTROL AEM Brand Portal]** に移動します。
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
 1. Brand Portal Configurationsページで、「 **[!UICONTROL 作成]**」をクリックします。
 
@@ -257,7 +259,7 @@ Adobe Developer Consoleでは、プロジェクトとAPIは組織（Brand Portal
 
 1. AEM Assetsクラウドインスタンスにログインします。
 
-1. **ツール**![ツール](assets/tools.png)パネルで、**[!UICONTROL デプロイメント]**／**[!UICONTROL 配布]**&#x200B;に移動します。
+1. From the **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
    ![](assets/test-bpconfig1.png)
 
@@ -315,7 +317,7 @@ AEM Assets クラウドインスタンスが Brand Portal で正常に設定さ�
 
 例えば、AEM AssetsからBrand Portalにアセットを発行して設定を検証したとします。
 
-1. Follow the steps (from 1 to 4) as shown in **[!UICONTROL Test Connection]** and navigate to the distribution agent page.
+1. Follow the steps (from 1 to 4) as shown in the [test connection](#test-configuration) section and navigate to the distribution agent page.
 
 1. 「**[!UICONTROL ログ]**」をクリックして、配布ログを表示します。処理ログとエラーログは、ここで確認できます。
 
