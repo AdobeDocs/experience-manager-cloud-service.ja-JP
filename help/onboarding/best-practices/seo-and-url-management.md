@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 seo-title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
-translation-type: ht
-source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
+translation-type: tm+mt
+source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+workflow-type: tm+mt
+source-wordcount: '3124'
+ht-degree: 100%
 
 ---
 
@@ -13,17 +16,17 @@ source-git-commit: 70e76205e82b491fa77f65cd4257a79dda17b882
 
 このドキュメントでは、まず、AEM as a Cloud Service の実装でこうした目的を達成するための [SEO のベストプラクティス](#seo-best-practices)および推奨事項を説明します。その次に、最初の節で提示するより[複雑な実装手順](#aem-configurations)のいくつかについて詳しく説明していきます。
 
-## SEO のベストプラクティス{#seo-best-practices}
+## SEO のベストプラクティス {#seo-best-practices}
 
 ここでは、SEO の一般的なベストプラクティスを説明します。
 
-### URL{#urls}
+### URL {#urls}
 
 URL に関して一般的に認められているベストプラクティスがいくつかあります。
 
 AEM プロジェクトで URL を評価するときには、次のことを確認してください。
 
-「ユーザーが URL を目にしたときに、ページのコンテンツを見なくても、そのページの内容を説明できますか。」
+*「ユーザーが URL を目にしたときに、ページのコンテンツを見なくても、そのページの内容を説明できますか。」*
 
 答えが「はい」であれば、その URL は検索エンジンに効果があります。
 
@@ -103,9 +106,9 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
 
 * URL のわかりやすさが向上します。
 * Dispatcher でページをキャッシュでき、多くの場合、セキュリティが強化されます。
-* 汎用サーブレットを使用してコンテンツを取得する代わりに、コンテンツを直接アドレス指定できます。これにより、リポジトリに適用する ACL や、Dispatcher で適用するフィルターを活用できます。
+* 汎用サーブレットを使用してコンテンツを取得する代わりに、コンテンツを直接アドレス指定できます。これにより、リポジトリに適用する ACL や、ディスパッチャーで適用するフィルターを活用できます。
 
-#### サーブレットでのセレクターの使用{#using-selectors-for-servlets}
+#### サーブレットでのセレクターの使用 {#using-selectors-for-servlets}
 
 AEM では、サーブレットを作成するときに次の 2 つのオプションが用意されています。
 
@@ -114,7 +117,7 @@ AEM では、サーブレットを作成するときに次の 2 つのオプシ�
 
 次に示す各例では、この両方のパターンに準拠したサーブレットを登録する方法とともに、Sling サーブレットを使用することによって得られる利点を説明します。
 
-#### bin サーブレット（1 レベル下）{#bin-servlets-one-level-down}
+#### bin サーブレット（1 レベル下） {#bin-servlets-one-level-down}
 
 **bin** サーブレットは、多くの開発者が使い慣れている J2EE プログラミングのパターンに準拠しています。このサーブレットは、特定のパスに登録されます。AEM の場合は通常 `/bin` に登録され、必要な要求パラメーターをクエリー文字列から抽出します。
 
@@ -174,7 +177,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 ここでは、これらの URL を管理し、よりわかりやすく、SEO に適した方法で URL をユーザーに表示するために AEM で使用可能なオプションを検討します。
 
-#### バニティー URL{#vanity-urls}
+#### バニティー URL {#vanity-urls}
 
 作成者が、プロモーション目的で別の場所からアクセス可能なページを作成する場合、ページごとに定義される AEM のバニティー URL が役立つことがあります。ページのバニティー URL を追加するには、**Sites** コンソールで該当するページに移動し、ページのプロパティを編集します。「**基本**」タブの下部に、バニティー URL を追加できるセクションが表示されます。複数の URL を使用してページにアクセスできるようにすると、ページの SEO 値が分断されるので、正規 URL タグをページに追加して、この問題を回避する必要があることに留意してください。
 
@@ -186,7 +189,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
    `www.mydomain.com/es/home.html`
 
 * この場合、URL を次のように表示した方が効果的です。
-   `www.mydomain.com/es/casa.html`
+   `www.mydomain.com/es/casa.html`.
 
 ページ名のローカライズに伴う課題は、AEM プラットフォームで使用可能なローカリゼーションツールの多くでは、コンテンツを同期しておくためには、ロケール間でページ名を一致させる必要があるという点です。
 
@@ -248,7 +251,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
    Web コンソール（localhost:4502/system/console/configMgr など）を使用して、Sling Resource Resolver を設定できます。
 
    * **Apache Sling Resource Resolver Factory**
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`
+      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    URL を短縮するために必要なマッピングを正規表現として構築した後、ビルドに含まれている OsgiConfignode の `config.publish` でこれらの設定を定義することをお勧めします。
 
    `/etc/map`マッピングを定義する代わりに、プロパティ **URL Mappings**（`resource.resolver.mapping`）に直接割り当てることができます。
@@ -278,7 +281,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
    }
    ```
 
-#### Apache HTTP Server の mod_rewrite{#apache-http-server-mod-rewrite}
+#### Apache HTTP Server の mod_rewrite {#apache-http-server-mod-rewrite}
 
 これまでに、URL をページに出力するときに、定義したマッピングを使用するために、マッピングをロジックとともにコンポーネントに実装しました。
 
@@ -295,7 +298,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
 </VirtualHost>
 ```
 
-### 正規 URL タグ{#canonical-url-tags}
+### 正規 URL タグ {#canonical-url-tags}
 
 正規 URL タグは、コンテンツのインデックスを作成するときに検索エンジンでページをどのように処理する必要があるかを明確化するために、HTML ドキュメントの先頭に配置されるリンクタグです。このタグを使用すると、ページの URL に異なる部分が含まれていても、同じものとしてページ（の様々なバージョン）のインデックスが作成されるという利点があります。
 
@@ -347,7 +350,7 @@ Disallow: /
 
 ただし、`robots.txt` ファイルをサイトのルートに配置すると、Dispatcher フラッシュ要求によって、このファイルが除去されることがあり、URL マッピングによって、Apache HTTP Server の設定で定義された `DOCROOT` とは異なる場所にサイトのルートが置かれる可能性があります。こうした理由から、このファイルをオーサーインスタンスのサイトのルートに配置し、パブリッシュインスタンスにレプリケートするのが一般的です。
 
-### AEM での XML サイトマップの作成{#building-an-xml-sitemap-on-aem}
+### AEM での XML サイトマップの作成 {#building-an-xml-sitemap-on-aem}
 
 クローラーでは、Web サイトの構造をより的確に把握するために XML サイトマップが使用されます。サイトマップを提供すれば SEO ランキングが上がるという保証はありませんが、ベストプラクティスの 1 つとして認められています。サイトマップとして使用する XML ファイルを Web サーバーで手動で管理することもできますが、作成者が新しいコンテンツを作成すると、変更内容がサイトマップに自動的に反映されるように、プログラムによってサイトマップを生成することをお勧めします。
 
