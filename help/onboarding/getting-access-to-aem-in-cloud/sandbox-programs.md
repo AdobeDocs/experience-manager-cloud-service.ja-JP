@@ -2,9 +2,9 @@
 title: サンドボックスプログラム — クラウドサービス
 description: サンドボックスプログラム — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 22c6a79e68bbcd7329c7b1774d8445c216cdf8a8
+source-git-commit: a4d4e5fb1743d7fe8b7b16bac904dac51143d6f7
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,9 @@ SandboxプログラムをDeveloper Consoleから手動で休止状態にする�
 
 * 環境の詳細画面
 * 環境一覧画面
+
+>[!NOTE]
+>Sandboxプログラム用のDeveloper Consoleへのアクセスは、Cloud Managerの任意のユーザーが利用できます。
 
 Sandboxプログラム環境を手動で休止状態にするには、次の手順に従います。
 
@@ -175,7 +178,7 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 ## Sandbox環境に対するAEMの更新 {#aem-updates-sandbox}
 
-詳しくは、 [AEMバージョンの更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) （英語）を参照してください。
+Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
 
 ユーザーは、Sandboxプログラム内の環境にAEMの更新を手動で適用できます。
 
