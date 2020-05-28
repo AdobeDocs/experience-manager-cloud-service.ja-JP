@@ -1,8 +1,11 @@
 ---
 title: AEM as a Cloud Service の開発ガイドライン
 description: 作成中
-translation-type: ht
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+translation-type: tm+mt
+source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+workflow-type: tm+mt
+source-wordcount: '1588'
+ht-degree: 95%
 
 ---
 
@@ -154,6 +157,10 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 また、デバッグにも便利です。開発者コンソールには、次のように「クエリの説明を実行」ツールへのリンクがあります。
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
+
+正規プログラムの場合、Developer Consoleへのアクセスは管理コンソールの「Cloud Manager - Developer Role」で定義されますが、Sandboxプログラムの場合、Developer Consoleは、AEMへのアクセスをクラウドサービスとして提供する製品プロファイルを持つユーザー全員が利用できます。 ユーザー権限の設定について詳しくは、 [Cloud Managerドキュメントを参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+
+
 
 ### AEM のステージング環境および実稼動環境用サービス {#aem-staging-and-production-service}
 
