@@ -1,11 +1,11 @@
 ---
 sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '181'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 0%
    + [検索フォームの設定](developing/extending/search-forms.md)
 + AEM as a Cloud Service へのデプロイ {#deploying}
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
-   + [AEM用のOSGiをクラウドサービスとして設定する](deploying/configuring-osgi.md)
+   + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
 + クラウド内の Dispatcher {#dispatcher}
    + [クラウド内の Dispatcher](dispatcher/overview.md)
    + [AEM as a Cloud Service のコンテンツ配信](dispatcher/content-delivery.md)
