@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '3512'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM バージョンのアップデートは、常に、カスタムコードの�
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=jpn)
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service アプリケーション用に作成されたコンテン
 * AEM Web コンソールの Configuration Manager を使用して開発者のローカル AEM 環境に必要な変更を加えた後、その結果をローカルファイルシステム上の AEM プロジェクトに書き出す。
 * ローカルファイルシステム上の AEM プロジェクトに OSGi 設定を手動で作成した後、AEM コンソールの Configuration Manager でプロパティ名を参照する。
 
-OSGIの設定について詳しくは、「AEM用のOSGiをクラウドサービスとして [設定する](/help/implementing/deploying/configuring-osgi.md)」を参照してください。
+OSGI の設定について詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 
 ## 可変コンテンツ {#mutable-content}
 
@@ -284,7 +284,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 一方、AEM as a Cloud Service は、使用可能な実行モードと、それらへの OSGi バンドルおよび OSGi 設定のマッピング方法について、より保守的です。
 
-* OSGi 設定の実行モードでは、環境については dev（開発）、stage（ステージ）、prod（実稼動）のいずれかを、サービスについては author（オーサー）または publish（パブリッシュ）を参照する必要があります。A combination of `<service>.<environment_type>` is being supported whereas these have to be used in this particular order (for example `author.dev` or `publish.prod`). OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、「AEM用のOSGiをクラウドサービスとして [設定する](/help/implementing/deploying/configuring-osgi.md)」を参照してください。
+* OSGi 設定の実行モードでは、環境については dev（開発）、stage（ステージ）、prod（実稼動）のいずれかを、サービスについては author（オーサー）または publish（パブリッシュ）を参照する必要があります。`<service>.<environment_type>` の組み合わせはサポートされていますが、この特定の順序で使用する必要があります（例えば、`author.dev` や `publish.prod` など）。OSGi トークンは、`getRunModes` メソッドを使用するのではなく、コードから直接参照する必要があります。このメソッドは、実行時に `environment_type` を組み込まなくなりました。詳しくは、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md)を参照してください。
 * OSGi バンドルの実行モードは、サービス（author、publish）のみに制限されます。実行モードごとに、OSGi バンドルを `install/author` または `install/publish` の配下のコンテンツパッケージにインストールする必要があります。
 
 既存の AEM ソリューションと同様に、実行モードを使用して特定の環境やサービス用のコンテンツだけをインストールすることはできません。ステージ環境または実稼動環境にないデータや HTML を含んだ開発環境をシードする必要がある場合は、パッケージマネージャーを使用できます。
