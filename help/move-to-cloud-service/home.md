@@ -2,7 +2,7 @@
 title: クラウドサービスとしてAEMに移行
 description: クラウドサービスとしてのAdobe Experience Managerは、クラウドサービスのセルフサービスとしてAEMに移行します。これに関するリソースとドキュメントのリンクは次のとおりです。
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: d269ed7dbc99480fa15aff30304b1c58a589d2f6
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 57%
@@ -46,7 +46,7 @@ AEMをクラウドサービスとして使用すると、チームは製品の�
 | [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe Experience Manager as a Cloud Service の中心概念について紹介します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service の管理方法について説明します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の管理方法について説明します。 |
-| [クラウドサービスユーザーガイドとしてAEMに移行](/help/move-to-cloud-service/home.md) | クラウドサービスへのトランジションの遍歴を理解します。 |
+| [クラウドサービスユーザーガイドとしてのAEMへの移行](/help/move-to-cloud-service/home.md) | クラウドサービスへのトランジションの遍歴を理解します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | 開発のデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にソリューションを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
