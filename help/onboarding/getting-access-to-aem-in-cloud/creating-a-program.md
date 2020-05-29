@@ -2,7 +2,7 @@
 title: プログラムの作成 — クラウドサービス
 description: プログラムの作成 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 7c611cdedaba7f21b88fbafdb207160817e20320
+source-git-commit: 9dd6cd0661cceb680f36a382aec16fad7c281301
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 1. プログラムの作成ウィザードで **「実稼働用に** 設定」を選択して、正規プログラムを作成します。 ユーザーは、デフォルトのプログラム名を受け入れるか、「 **続行**」を選択する前に編集できます。
 
-   ![](assets/set-up-prod1.png)
+   ![](assets/create-prod1.png)
 
 1. 上の画面の後に表示される画面にプログラムに含めるソリューションを選択します。
 
