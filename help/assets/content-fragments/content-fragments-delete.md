@@ -1,8 +1,11 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項
 description: コンテンツフラグメント - 削除に関する考慮事項
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+workflow-type: ht
+source-wordcount: '408'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
 >
 >AEM でのユーザー管理操作を監査する方法も参照してください。<!-- See also [How to Audit User Management Operations in AEM](/help/sites-administering/audit-user-management-operations.md). -->
 
-## エディター機能のみに必要な権限  {#permissions-required-for-editor-functionality-only}
+## エディター機能のみに必要な権限 {#permissions-required-for-editor-functionality-only}
 
 コンテンツフラグメントを編集または更新する必要があっても&#x200B;**フラグメント全体を削除できない**&#x200B;ユーザーの場合は、特定の権限を割り当てる必要があります。コンテンツフラグメントエディターの基本操作を使用するには、一時的なサブ要素を削除できる必要があるからです。
 
