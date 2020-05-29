@@ -2,8 +2,11 @@
 title: 'Adobe Experience Manager as a Cloud Service におけるデジタルアセット管理のための Assets API '
 description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+workflow-type: ht
+source-wordcount: '1249'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Adobe Experience Manager as a Cloud Service では、アセットをリポジト
 このアプローチで、アセットのアップロードをよりスケーラブルかつ効率的に処理できます。
 
 > !![NOTE]
-To review client code that implements this approach, refer to the open-source [aem-upload library](https://github.com/adobe/aem-upload)
+この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
 
 ### アップロードの開始 {#initiate-upload}
 
@@ -98,21 +101,21 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### アップロードの完了 {#complete-upload}
 
-バイナリファイルのすべての部分がアップロードされたら、開始データから提供される完全なURIにHTTP POSTリクエストを送信します。 The content type of the request body should be `application/x-www-form-urlencoded` form data, containing the following fields.
+バイナリファイルのすべての部分がアップロードされたら、開始データから提供される完全な URI に HTTP POST リクエストを送信します。リクエスト本文のコンテンツタイプは、次のフィールドを含んだ `application/x-www-form-urlencoded` 形式のデータにする必要があります。
 
-| フィールド | タイプ | 必須/未指定 | 説明 |
+| フィールド | タイプ | 必須／未指定 | 説明 |
 |---|---|---|---|
 | `fileName` | String | 必須 | アセットの名前（開始データで提供されたもの）。 |
 | `mimeType` | String | 必須 | バイナリの HTTP コンテンツタイプ（開始データで提供されたもの）。 |
 | `uploadToken` | String | 必須 | バイナリのアップロードトークン（開始データで提供されたもの）。 |
-| `createVersion` | Boolean | オプション | If `True` and an asset with the specified name already exists, then Experience Manager creates a new version of the asset. |
-| `versionLabel` | String | オプション | 新しいバージョンが作成されると、アセットの新しいバージョンに関連付けられるラベル。 |
-| `versionComment` | String | オプション | 新しいバージョンが作成された場合、そのバージョンに関連付けられたコメントが表示されます。 |
-| `replace` | Boolean | オプション | 指定した名前 `True` のアセットが既に存在する場合、Experience Managerはそのアセットを削除し、再作成します。 |
+| `createVersion` | Boolean | オプション | これが `True` で、指定した名前のアセットが既に存在する場合、Experience Manager はアセットの新しいバージョンを作成します。 |
+| `versionLabel` | String | オプション | 新しいバージョンが作成される場合、アセットの新しいバージョンに関連付けられるラベル。 |
+| `versionComment` | String | オプション | 新しいバージョンが作成される場合、そのバージョンに関連付けられたコメント。 |
+| `replace` | Boolean | オプション | これが `True` で指定した名前のアセットが既に存在する場合、Experience Manager はそのアセットを削除し、再作成します。 |
 
 >!![NOTE]
 >
-> If the asset already exists and neither `createVersion` nor `replace` is specified, then Experience Manager updates the asset&#39;s current version with the new binary.
+> アセットが既に存在し、`createVersion` も `replace` も指定されていない場合、Experience Manager はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
@@ -122,36 +125,36 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 ### オープンソースアップロードライブラリ {#open-source-upload-library}
 
-アップロードアルゴリズムの詳細や、独自のアップロードスクリプトやツールを作成するために、アドビはオープンソースのライブラリやツールを基礎として提供しています。
+アップロードアルゴリズムの詳細を調べたり、独自のアップロードスクリプトやツールを作成する場合に役立つように、アドビでは、次のオープンソースライブラリおよびツールを出発点として提供しています。
 
-* [オープンソースのaemアップロードライブラリ](https://github.com/adobe/aem-upload)
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)
 * [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)
 
 ### 非推奨（廃止予定）のアセットアップロード API {#deprecated-asset-upload-api}
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-クラウドサービスとしてのAdobe Experience Managerでは、新しいアップロードAPIのみがサポートされます。 Adobe Experience Manager 6.5からのAPIは非推奨です。 アセットやレンディション（バイナリアップロード）のアップロードまたは更新に関連するメソッドは、次のAPIで非推奨になりました。
+Adobe Experience Manager as a Cloud Service では、新しいアップロード API のみサポートされています。Adobe Experience Manager 6.5 の API は非推奨（廃止予定）となりました。アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連するメソッドは、次の API で非推奨（廃止予定）となりました。
 
 * [AEM Assets HTTP API](mac-api-assets.md)
 * `AssetManager`Java API（`AssetManager.createAsset(..)` など）
 
 >[!MORELIKETHIS]
-* [aem-uploadライブラリをオープンソース](https://github.com/adobe/aem-upload)。
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
 * [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem).
 
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
 
-Experience Managerでのアセット処理は、ア **[!UICONTROL セットのマイクロサービスを使用する]** 処理プロファイル [設定に基づいて行われます](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)。 処理には、開発者用の拡張機能は必要ありません。
+Experience Manager でのアセット処理は、**[!UICONTROL アセットマイクロサービス]**&#x200B;を使用する[処理プロファイル](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)設定に基づいておこなわれます。処理には、開発者用の拡張機能は必要ありません。
 
 後処理ワークフローの設定には、カスタム手順を指定した標準ワークフローを使用します。
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-以前のバージョンのExperience ManagerからExperience Managerをクラウドサービスとしてアップグレードしたお客様は、アセットの処理にAsset Microservicesを使用できます。 クラウドネイティブのアセットマイクロサービスは、設定と使用が非常に簡単です。 以前のバージョンの [!UICONTROL DAM Update Asset] Workflowで使用されるワークフロー手順の一部はサポートされていません。
+以前のバージョンの Experience Manager から Experience Manager as a Cloud Service へアップグレードした顧客は、アセットの処理にアセットマイクロサービスを使用できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が非常に簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。
 
-以下のワークフロー手順は、Experience Managerでクラウドサービスとしてサポートされています。
+以下のワークフロー手順は、Experience Manager as a Cloud Service でサポートされています。
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
