@@ -1,8 +1,11 @@
 ---
 title: 非推奨（廃止予定）の機能と削除された機能
 description: リリースノート（Adobe Experience Manager as a Cloud Service の非推奨（廃止予定）の機能と削除された機能）
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+workflow-type: ht
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 現在のデプロイメントでその機能を利用しているかどうかを確認し、提示される代替手段を使用するために実装の変更を計画するようにお勧めします。
 
-| 機能 | 非推奨機能 | 代替手段 |
+| 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
-| Assets | `DAM Asset Update` 取り込んだ画像を処理するワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
-| Assets | Upload assets directly to AEM. See [deprecated asset upload APIs](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | バイナリの [直接アップロードを使用](/help/assets/add-assets.md)。 技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#overview-binary-upload) を参照してください。 |
-| Assets | ImageMagick などのコマンドラインツールの呼び出しを含め、[ ワークフローの](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)特定のワークフローステップ`DAM Asset Update`はサポートされていません。。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
-| Assets | ビデオのFMPEGトランスコード。 | FMPEGサムネールの生成には、 [Asset microservices](/help/assets/asset-microservices-overview.md). FMPEGトランスコードの場合は、 [ダイナミックメディア](/help/assets/manage-video-assets.md)を使用します。 |
+| Assets | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
+| Assets | AEM へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#overview-binary-upload) を参照してください。 |
+| Assets | ImageMagick などのコマンドラインツールの呼び出しを含め、[ ワークフローの](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)特定のワークフローステップ`DAM Asset Update`はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
+| Assets | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
 
 ## 削除された機能 {#removed-features}
 
@@ -37,7 +40,7 @@ source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
 
 | 領域 | 機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
-| UI | （リンクチェッカー、バージョンパージ、一部のクラウドサービス設定など）いくつかの選択機能については、一部のクラシック UI ダイアログが当面そのまま残りますが、一般的なクラシック UI へのアクセスは AEM 製品 UI から削除されました。 | 標準 UI |
+| UI | （リンクチェッカー、バージョンパージ、一部の Cloud Services 設定など）いくつかの選択機能については、一部のクラシック UI ダイアログが当面そのまま残りますが、一般的なクラシック UI へのアクセスは AEM 製品 UI から削除されました。 | 標準 UI |
 | Dynamic Media | [Dynamic Media Classic（Scene7）](https://helpx.adobe.com/jp/experience-manager/6-5/sites/administering/using/scene7.html)および [Dynamic Media Hybrid モード](https://helpx.adobe.com/jp/experience-manager/6-5/assets/using/config-dynamic.html)とのこれまでの統合は、AEM as a Cloud Service では使用できません。 | Adobe Experience Manager as a Cloud Service で提供される [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 |
 | Sites | Portal Director とポートレットコンポーネント | これらの機能は AEM 6.4 で非推奨（廃止予定）となり、現在は AEM から削除されています。 |
 | Sites | デザインインポーター | 実行時に AEM リポジトリの不変セクションにアクセスできないので、この機能は削除されました。 |
