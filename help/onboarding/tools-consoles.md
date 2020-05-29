@@ -1,8 +1,11 @@
 ---
 title: ツールコンソール
 description: AEM の様々なツールコンソールについて説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+workflow-type: ht
+source-wordcount: '189'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
 
 >[!NOTE]
 >
->UIのカードには各オプションの目的に関する詳細が表示されるので、この表には、ツールパネルの機能の場所に関するクイックリファレンスが記載されています。
+>UI のカードには各オプションの目的についての詳細が提供されているため、この表ではすぐに参照できるようにツールパネル内の機能の場所を示します。
 
 <table>
  <thead>
@@ -210,16 +213,16 @@ source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
    <td>Adobe IMS 設定</td>
   </tr>
   <tr>
-   <td>クラウドサービス<br /> </td>
+   <td>Cloud Services <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>従来のクラウドサービス</td>
+   <td>従来の Cloud Services</td>
   </tr>
   <tr>
    <td> </td>
-   <td>翻訳クラウドサービス</td>
+   <td>翻訳 Cloud Services</td>
   </tr>
   <tr>
    <td> </td>
@@ -227,7 +230,7 @@ source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
   </tr>
   <tr>
    <td> </td>
-   <td>ダイナミックメディア設定</td>
+   <td>Dynamic Media 設定</td>
   </tr>
   <tr>
    <td> </td>
