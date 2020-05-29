@@ -1,8 +1,11 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
+workflow-type: ht
+source-wordcount: '399'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
 + AEM を使用したデジタルアセットの管理 {#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
-   + [アセットマイクロサービスの概要](asset-microservices-configure-and-use.md)
+   + [アセットマイクロサービスの基本](asset-microservices-configure-and-use.md)
    + [アセットの追加とアップロード](add-assets.md)
    + [アセットの検索](search-assets.md)
    + [一般的なアセット管理タスク](manage-digital-assets.md)
@@ -46,7 +49,7 @@ source-git-commit: 7fe5761e14288349bbdce9d2c4e9e89e8d0a9e48
    + [検索ファセット](search-facets.md)
    + [アセットエディターの拡張](extend-asset-editor.md)
    + [Assets HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API での コンテンツフラグメントのサポート](assets-api-content-fragments.md)
+   + [AEM Assets HTTP API でのコンテンツフラグメントのサポート](assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
