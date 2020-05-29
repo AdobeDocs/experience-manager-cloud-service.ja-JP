@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service のユーザーガイド
 description: Adobe Experience Manager as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 2d6c91dac4fec04cb5f1a6d050f0464bc724a09b
+source-git-commit: 45e17deb7a08deaaf2af07ca6ab3b8ee80bcb21f
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 94%
@@ -24,7 +24,7 @@ ht-degree: 94%
 | [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service の管理方法について説明します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の管理方法について説明します。 |
-| [クラウドサービスユーザーガイドとしてAEMに移行](/help/move-to-cloud-service/home.md) | クラウドサービスへのトランジションの遍歴を理解します。 |
+| [クラウドサービスユーザーガイドとしてのAEMへの移行](/help/move-to-cloud-service/home.md) | クラウドサービスへのトランジションの遍歴を理解します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | 開発のデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にソリューションを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
