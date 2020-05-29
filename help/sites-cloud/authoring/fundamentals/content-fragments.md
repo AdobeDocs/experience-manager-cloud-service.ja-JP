@@ -1,15 +1,18 @@
 ---
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+workflow-type: ht
+source-wordcount: '1154'
+ht-degree: 100%
 
 ---
 
 
 # コンテンツフラグメント {#content-fragments}
 
-Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウドサービスとして作成し、ペ [ージに依存しないアセットとして管理します](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理されます](/help/assets/content-fragments/content-fragments.md)。
 
 これによりチャネルに依存しないコンテンツを、様々なバリエーション（チャネル固有）で作成できます。その後、コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
 
@@ -48,12 +51,12 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
    * 適切にキュレーションされた関連メディアコンテンツと連携できます。
    * アドホックコンテンツのバリエーションをフラグメント内で集中管理したまま、それらのバリエーションをその場で作成できます。
 
-## ページへのコンテンツフラグメントの追加 {#adding-a-content-fragment-to-your-page}
+## ページへのコンテンツフラグメントの追加{#adding-a-content-fragment-to-your-page}
 
 1. 編集するページを開きます。
 2. **コンテンツフラグメント**&#x200B;コンポーネントを、**コンポーネント**&#x200B;ブラウザーまたは「**新規コンポーネントを挿入**」のいずれかから開きます。
 3. 次のいずれかを実行できます。
-   * **アセット**&#x200B;ブラウザーを開いて、**コンテンツフラグメント**&#x200B;をフィルタリングします（デフォルトは画像）。次に、必要なフラグメントをコンポーネントインスタンスにドラッグします。
+   * **Assets** ブラウザーを開いて、**コンテンツフラグメント**&#x200B;をフィルタリングします（デフォルトは画像）。次に、必要なフラグメントをコンポーネントインスタンスにドラッグします。
    * コンテンツフラグメントコンポーネントを選択して、ツールバーの「**設定**」を選択します。ダイアログで、選択ダイアログを開き、必要な&#x200B;**コンテンツフラグメント**&#x200B;を参照して選択できます。
    >[!NOTE]
    >
@@ -61,7 +64,7 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
 
 4. 最初に、**メイン**&#x200B;要素および&#x200B;**マスター**（バリエーション）からのコンテンツが表示されます。必要に応じて、[他のエレメントやバリエーションを選択](#selecting-the-element-or-variation)できます。
 
-   ![アセットブラウザーのコンテンツフラグメント](/help/sites-cloud/authoring/assets/content-fragments.png)
+   ![Assets ブラウザーのコンテンツフラグメント](/help/sites-cloud/authoring/assets/content-fragments.png)
 
    >[!NOTE]
    >
@@ -98,7 +101,7 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
       * **見出しを独自の段落として処理**
 * **見出しを独自の段落として処理**
 
-### フラグメントエディターへのクイック接続 {#quick-connection-to-fragment-editor}
+### フラグメントエディターへのクイック接続{#quick-connection-to-fragment-editor}
 
 コンポーネントツールバーの&#x200B;**編集**&#x200B;アイコンを使用して、フラグメントのソースを開いて（アセットを）編集できます。この機能により、[コンテンツフラグメントを編集および管理できます](/help/assets/content-fragments/content-fragments.md)。
 
@@ -106,7 +109,7 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
 >
 >フラグメントソースの編集は、そのコンテンツフラグメントを参照するすべてのページに影響します。
 
-### 中間コンテンツの追加 {#adding-in-between-content}
+### 中間コンテンツの追加{#adding-in-between-content}
 
 特定のコンテンツフラグメントをページに追加すると、フラグメントの各 HTML 段落間（および上部／下部）に&#x200B;**コンポーネントをここにドラッグ**&#x200B;プレースホルダーが表示されます。
 
@@ -115,7 +118,7 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
 中間コンテンツでは、次のことができます。
 
 * [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)からコンポーネントを追加する。
-* [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットを追加する。
+* [Assets ブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットを追加する。
 * [関連コンテンツ](#using-associated-content)を中間コンテンツのソースとして使用する。
 
 >[!CAUTION]
@@ -141,7 +144,7 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
 >* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
 
 
-### 関連コンテンツの使用 {#using-associated-content}
+### 関連コンテンツの使用{#using-associated-content}
 
 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。関連コンテンツは、事実上、[中間コンテンツ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースです。
 
@@ -176,5 +179,5 @@ Adobe Experience Manager(AEM)のコンテンツフラグメントをクラウド
 
 フラグメントを公開済みの Web ページで使用するには、フラグメントを公開する必要があります。
 
-* フラグメントは、[フラグメントをアセットコンソールで作成](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment)した後に公開できます。
+* フラグメントは、[フラグメントを Assets コンソールで作成](/help/assets/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment)した後に公開できます。
 * 公開されるページに&#x200B;*非公開のフラグメント*&#x200B;が使用されると、そのタイミングでフラグメントも公開できます。
