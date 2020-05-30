@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1527'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 3%
 
 * Sandbox *環境を使用している場合は*、環境が2020年5月29日以降のリリースにアップグレードされていることを確認してください。 実 *稼働環境を使用している場合*、実稼働環境は自動的に更新されます。
 
+* コンテンツ転送ツールを使用するには、ソースインスタンスの管理者ユーザーで、コンテンツの転送先のクラウドサービスインスタンスの管理グループに属している必要があります。 権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
+
 * 抽出段階では、コンテンツ転送ツールはアクティブなAEMソースインスタンスで実行されます。
 
 * 作成者の *取り込みフェーズ* (Ingestion Phase)では、作成者のデプロイメント全体が縮小されます。 つまり、作成者のAEMは、取り込みプロセス全体で使用できなくなります。
@@ -29,7 +31,7 @@ ht-degree: 3%
 コンテンツ転送ツールは、ソフトウェア配布ポータルからzipファイルとしてダウンロードできます。 Package Managerを使用して、ソースAdobe Experience Manager(AEM)インスタンスにパッケージをインストールできます。
 
 >[!NOTE]
->詳しくは、「クラウドサービスSDKとしてのAEMへの [アクセス](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#accessing-the-aem-as-a-cloud-service-sdk) 」を参照してください。
+>Adobe Experience Cloud [からContent Transfer Toolをダウンロードします](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
@@ -115,12 +117,13 @@ ht-degree: 3%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
 
-   抽出が完了すると、移行セットのステータスが **FINISHED** に更新され、 *INFO***** フィールドの下に緑色のクラウドの実線のアイコンが表示されます。
+   抽出が完了すると、移行セットのステータスが **FINISHED** に更新され、 *INFO* フィールドの下に緑色の **** 塗りつぶしのアイコンが表示されます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
 
    >[!NOTE]
-   > 更新されたステータスを表示するには、ページを更新する必要があります。
+   >更新されたステータスを表示するには、ページを更新する必要があります。
+   >抽出フェーズが開始されると、60秒後に書き込みロックが作成され、解放され *ます*。 したがって、抽出が停止した場合は、ロックが解除されるまで1分待ってから、抽出を再開する必要があります。
 
 #### トップアップ抽出 {#top-up-extraction-process}
 
@@ -155,7 +158,7 @@ ht-degree: 3%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
 
-   デモ目的では、「コンテンツをオーサーインスタンスに **取り込む** 」オプションは無効です。 コンテンツを「作成者」に取り込むと同時に、「公開」に取り込むことができます。
+   デモ目的では、「コンテンツをオーサーインスタンスに **取り込む** 」オプションは無効になっています。 コンテンツを「作成者」に取り込むと同時に、「公開」に取り込むことができます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
 
@@ -250,10 +253,12 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 ユーザーの場合、コンテンツ転送ツールのユーザーインターフェイス(UI)に次のような動作の変更が表示されます。
 
-1. ユーザーは、作成者URL（開発/ステージ/実稼動）の移行セットを作成し、抽出と取り込みを正常に実行します。
+* ユーザーは、作成者URL（開発/ステージ/実稼動）の移行セットを作成し、抽出と取り込みを正常に実行します。
 
-1. 次に、同じ作成者URLに対して新しい移行セットを作成し、新しい移行セットに対して抽出と取り込みを実行します。 UIに、最初の移行セットの取り込み状態が **FAILEDに変更され** 、ログが使用できないことが示されます。
+* 次に、同じ作成者URLに対して新しい移行セットを作成し、新しい移行セットに対して抽出と取り込みを実行します。 UIに、最初の移行セットの取り込み状態が **FAILEDに変更され** 、ログが使用できないことが示されます。
 
-1. これは、最初の移行セットの取り込みが失敗したことを意味するわけではありません。 この動作は、新しい取り込みジョブが開始されると、以前の取り込みジョブが削除されるために表示されます。 したがって、最初の移行セットの変更ステータスは無視する必要があります。
+* これは、最初の移行セットの取り込みが失敗したことを意味するわけではありません。 この動作は、新しい取り込みジョブが開始されると、以前の取り込みジョブが削除されるために表示されます。 したがって、最初の移行セットの変更ステータスは無視する必要があります。
+
+* コンテンツ転送ツールUIのアイコンが、このガイドに示すスクリーンショットとは異なるように表示される場合や、ソースAEMインスタンスのバージョンによっては表示されない場合があります。
 
 
