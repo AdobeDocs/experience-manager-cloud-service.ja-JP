@@ -1,8 +1,11 @@
 ---
 title: 3D アセットのプレビュー
 description: 3D アセットのプレビュー方法について説明します。
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 100%
 
 ---
 
@@ -12,6 +15,8 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 Adobe Experience Manager では、オーサリングプロセスの一環として、3D アセットのアップロード、配信、インタラクティブプレビューをサポートしています。
 
 AEM のアセットの詳細ページから、インタラクティブ 3D ビューアを使用できます。このビューアには、3D アセットをオービット、ズームおよびパンできるインタラクティブなカメラコントロールのコレクションが含まれます。
+
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
 ## 3D プレビューでサポートされるファイル形式{#supported-3d-previewing-assets}
 
