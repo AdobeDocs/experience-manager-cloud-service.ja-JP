@@ -2,9 +2,9 @@
 title: Dynamic Media イメージプロファイル
 description: アンシャープマスクのほか、スマート切り抜きとスマートスウォッチのどちらか一方または両方の設定を含むイメージプロファイルを作成し、そのプロファイルを画像アセットのフォルダーに適用します。
 translation-type: tm+mt
-source-git-commit: 16fa9a9783f42d0a9dcf541613aedb890cb41158
+source-git-commit: 39c4bb1fe5af9746ee824677f3de018d8ec36641
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2663'
 ht-degree: 94%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 94%
 # Dynamic Media イメージプロファイル {#image-profiles}
 
 画像をアップロードするときに、フォルダーにイメージプロファイルを適用することで、アップロード時に自動的に画像を切り抜くことができます。
+
+>[!IMPORTANT]
+>
+>画像プロファイルはPDFファイルには適用されません。
 
 ## 切り抜きツールオプション {#crop-options}
 
