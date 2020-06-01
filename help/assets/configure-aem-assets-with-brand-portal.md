@@ -3,10 +3,10 @@ title: AEM Assets Cloud Service と Brand Portal の統合の設定
 description: Brand Portal で AEM Assets Cloud Service を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 3cb9ea561dbe55ac7ed43ff47e5b57563eaa3f67
+source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 37%
+ht-degree: 36%
 
 ---
 
@@ -56,7 +56,7 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 
 ### IMS 設定の作成 {#create-ims-configuration}
 
-IMS 設定は、AEM Assets オーサーインスタンスを使用して Brand Portal テナントを認証します。
+IMS設定は、AEM Assetsクラウドインスタンスを使用してBrand Portalテナントを認証します。
 
 IMS 設定には、次の 2 つの手順が含まれます。
 
