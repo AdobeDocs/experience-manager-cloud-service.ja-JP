@@ -2,10 +2,10 @@
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
 translation-type: tm+mt
-source-git-commit: 5bcde6d1ec97b159405416fa07953100cf7bf5a3
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '3132'
-ht-degree: 92%
+source-wordcount: '3137'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ AEM を WCM として使用している場合は、Dynamic Media アセットを
 
 ## ページへの Dynamic Media コンポーネントの追加 {#adding-a-dynamic-media-component-to-a-page}
 
-Dynamic Media、インタラクティブメディア、パノラマメディア、ビデオ 360 メディアのいずれかのコンポーネントを 1 つのページに追加することは、コンポーネントを任意のページに追加することと同じです。Dynamic Media コンポーネントについては、後の節で説明します。
+3Dメディア、ダイナミックメディア、インタラクティブメディア、パノラマメディア、スマート切り抜きビデオ、ビデオ360メディアの各コンポーネントをページに追加するのと同じです。 Dynamic Media コンポーネントについては、後の節で説明します。
 
 **ページへの Dynamic Media コンポーネントの追加**
 
@@ -51,7 +51,7 @@ Dynamic Media、インタラクティブメディア、パノラマメディア�
 
    Dynamic Media ビデオ 360 メディアコンポーネント。
 
-1. 完了したら、ダイアログボックスの右上隅近くにあるチェックマークをタップして、変更を保存します。
+1. 完了したら、ダイアログボックスの右上隅にあるチェックマークをタップして、変更を保存します。
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
