@@ -2,25 +2,25 @@
 title: 3D アセットのプレビュー
 description: 3D アセットのプレビュー方法について説明します。
 translation-type: tm+mt
-source-git-commit: e8b6f7e80c1a19c645e1c848a6bfe5c082935d21
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 90%
 
 ---
 
 
-# 3D アセットのプレビュー{#previewing-3d-assets}
+# AEMでの3Dアセットのプレビュー{#previewing-3d-assets}
 
-Adobe Experience Manager では、オーサリングプロセスの一環として、3D アセットのアップロード、配信、インタラクティブプレビューをサポートしています。
+Adobe Experience Managerでは、3Dアセットのアップロード、配信およびオーサリングプロセスの一環としてインタラクティブなプレビューをサポートしています。
 
 AEM のアセットの詳細ページから、インタラクティブ 3D ビューアを使用できます。このビューアには、3D アセットをオービット、ズームおよびパンできるインタラクティブなカメラコントロールのコレクションが含まれます。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## 3D プレビューでサポートされるファイル形式{#supported-3d-previewing-assets}
+## AEMでサポートされる3Dプレビューの形式{#supported-3d-previewing-assets}
 
-インタラクティブ 3D プレビューでは、次のファイル形式をサポートしています。
+AEMのインタラクティブ3Dプレビューは、次のファイル形式をサポートしています。
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
@@ -40,13 +40,13 @@ AEM のアセットの詳細ページから、インタラクティブ 3D ビュ
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## 3D アセットをプレビューする際のパフォーマンスに関する考慮事項{#performance-3d-previewing-assets}
+## Performance considerations when you preview 3D assets in AEM{#performance-3d-previewing-assets}
 
 アセットの詳細表示ページで 3D アセットを開くときにかかる時間は、帯域幅、画像の複雑さ、サーバーの待ち時間など、いくつかの要因によって異なります。
 
 さらに、カメラをインタラクティブに操作する際に、ワークステーション、ノートパソコン、モバイルタッチデバイスなどのクライアントコンピューターの性能を考慮することも重要です。グラフィック性能に優れ、ある程度パワフルなシステムなら、インタラクティブな 3D 表示をよりスムーズで満足なものにすることができます。
 
-**3D アセットをプレビューするには**
+**AEMで3Dアセットをプレビューするには**
 
 1. 3D アセットが AEM にアップロードされていることを確認します。詳しくは、[3D プレビューでサポートされるファイル形式](#supported-3d-previewing-assets)と[アセットのアップロード](/help/assets/manage-digital-assets.md#uploading-assets)を参照してください。
 1. AEM の&#x200B;**[!UICONTROL ナビゲーション]**&#x200B;ページで、**[!UICONTROL アセット／ファイル]**&#x200B;をタップします。
