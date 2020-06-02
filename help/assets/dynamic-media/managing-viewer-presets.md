@@ -1,8 +1,11 @@
 ---
 title: ビューアプリセットの管理
 description: ビューアプリセットの作成方法と管理方法
-translation-type: ht
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+translation-type: tm+mt
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
+source-wordcount: '4284'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +31,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >*事前に定義された標準提供ビューアプリセット*&#x200B;を編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集しようとすると、そのビューアプリセットを新しい名前で保存するように指示されます。
 
-## ビューアのキーボードアクセシビリティ{#keyboard-accessibility-for-viewers}
+## ビューアのキーボードアクセシビリティ {#keyboard-accessibility-for-viewers}
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
@@ -76,6 +79,10 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
    <td><strong>カルーセルセット</strong><br /> </td>
    <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。お客様は画像を左右にパンし、画像のホットスポットをクリックして追加の詳細情報を入力したり、Web サイトのカテゴリ、ホームまたはランディングページから直接購入したりできます。</p> </td>
   </tr>
+    <tr>
+   <td><strong>ディメンションの</strong><br /> </td>
+   <td><p>3Dシーンが表示され、カメラの回転、パン、ズーム、中心の変更が可能です。</p> </td>
+  </tr>
   <tr>
    <td><strong>フライアウトズーム</strong></td>
    <td><p>オリジナル画像の横に、第 2 のズームされた領域の画像を表示します。使用できるコントロールはありません。ユーザーは表示したい領域上に選択範囲を動かします。</p> <p>このビューアの全体的な帯域幅使用量を算出する場合は、メイン画像とフライアウト画像の両方がビューアに配信されることを考慮してください。メイン画像のサイズ（ステージの幅と高さ）とズーム率によってフライアウト画像のサイズが決まります。フライアウトファイルのサイズが大きくなりすぎないようにするには、これら 2 つの値のバランスを取る必要があります。つまり、メイン画像のサイズが大きい場合は、ズーム率の値を小さくします。（フライアウトの幅と高さによってフライアウトウィンドウのサイズが決まりますが、ビューアに配信されるフライアウト画像のサイズが決まるわけではありません）。</p> <p>例えば、メイン画像のサイズが 350 x 350 ピクセルで、ズーム率が 3 の場合、生成されるフライアウト画像は 1,050 x 1,050 ピクセルになります。メインの画像サイズが 300 x 300 ピクセルで、ズーム率が 4 の場合、フライアウト画像は 1,200 x 1,200 ピクセルになります。JPEG 画質の設定（推奨設定は 80～90）によっては、ファイルサイズを大幅に削減できます。推奨されるズーム率は、メイン画像のサイズに応じて 2.5～4 となります。</p> </td>
@@ -108,6 +115,10 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
      <li>キーワード <code>equirectangular</code>、または <code>spherical</code> および <code>panorama</code>、または <code>spherical </code> および <code>panoramic</code> でタグ付けされている必要があります。<a href="/help/sites-cloud/authoring/features/tags.md">タグの使用</a>を参照してください。</li>
     </ul> <p>縦横比とキーワードの両方の条件が、アセットの詳細ページと「パノラマメディア」WCM コンポーネントのパノラマアセットに適用されます。</p></td>
   </tr>
+    <tr>
+   <td><strong>スマート切り抜きビデオ</strong><br /> </td>
+   <td><p>このビューアを使用して、ビデオの焦点を自動的に検出し、切り抜きます。</p> </td>
+  </tr>
   <tr>
    <td><strong>スピンセット</strong></td>
    <td>ユーザーがオブジェクトを回転させて、様々な面や角度を確認できるように、複数の画像ビューを提供します。</td>
@@ -135,11 +146,11 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  </tbody>
 </table>
 
-### 標準提供ビューアプリセットのリスト{#list-of-out-of-the-box-viewer-presets}
+### 標準提供ビューアプリセットのリスト {#list-of-out-of-the-box-viewer-presets}
 
 次の表に、Dynamic Media に付属するすべての事前定義済みの標準提供ビューアプリセットについて示します。
 
-[ビューアリファレンスライブラリサンプル](https://marketing.adobe.com/resources/help/ja_JP/s7/vlist/vlist.html)や[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)も参照してください。
+[ビューアリファレンスライブラリサンプル](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html)や[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)も参照してください。
 
 ビューアでサポートされている Web ブラウザーとオペレーティングシステムのバージョンについては、ビューアのリリースノートに記載されています。
 
@@ -444,7 +455,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
    [ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
-### インタラクティブビデオのビューアプリセットの作成に関する考慮事項{#special-considerations-for-creating-an-interactive-viewer-preset}
+### インタラクティブビデオのビューアプリセットの作成に関する考慮事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **パネル内の画像サムネールのディスプレイモードについて**
 
@@ -530,14 +541,14 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 1. 公開するビューアプリセットを 1 つ以上選択します。
 1. ツールバーの&#x200B;**[!UICONTROL 公開]**&#x200B;アイコンをタップします。
 
-## ビューアプリセットの並べ替え{#sorting-viewer-presets}
+## ビューアプリセットの並べ替え {#sorting-viewer-presets}
 
 1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
 1. 「**[!UICONTROL プリセットのタイトル]**」、「**[!UICONTROL タイプ]**」、「**[!UICONTROL 公開]**」または「**[!UICONTROL 状態]**」をクリックして、その見出しの列でソートします。例えば、「**[!UICONTROL タイプ]**」をクリックすると、ビューアプリセットのタイプが、アルファベット順で、またはアルファベットの逆の順序でソートされます。
 
 ## ビューアプリセットの編集 {#editing-viewer-presets}
 
-**&#x200B;事前に定義された標準提供ビューアプリセットを編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集すると、新しい名前で保存するように指示されます。
+*事前に定義された標準提供ビューアプリセット*&#x200B;を編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集すると、新しい名前で保存するように指示されます。
 
 **ビューアプリセットを編集するには：**
 
