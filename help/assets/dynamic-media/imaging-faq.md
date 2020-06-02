@@ -1,11 +1,11 @@
 ---
 title: スマートイメージング
 description: スマートイメージングでは、各ユーザーに固有の閲覧特性を利用して、ユーザーのエクスペリエンス用に最適化された適切な画像を自動的に提供することで、より良いパフォーマンスとエンゲージメントをもたらします。
-translation-type: ht
-source-git-commit: a934f28f74f0ff9ae68d7507290851dc5ca907e5
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+workflow-type: tm+mt
 source-wordcount: '1720'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 また、スマートイメージングの前提条件を理解するには、[スマートイメージングを使用するための資格を私は満たしていますか？](#am-i-eligible-to-use-smart-imaging)を参照してください。
 
-## スマートイメージングは HTTPS で機能しますか？HTTP/2 ではどうですか？{#does-smart-imaging-working-with-https-how-about-http}
+## スマートイメージングはHTTPSで動作しますか？ HTTP/2 ではどうですか？{#does-smart-imaging-working-with-https-how-about-http}
 
 スマートイメージングは、HTTP または HTTPS で配信された画像に対して機能します。また、HTTP/2 上でも機能します。
 
