@@ -1,8 +1,11 @@
 ---
 title: AEM as a Cloud Service の SDK
 description: 作成中
-translation-type: ht
-source-git-commit: f15d5087a1bcb7691e159db1a595f6cc20f2b2c6
+translation-type: tm+mt
+source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 100%
 
 ---
 
@@ -39,22 +42,6 @@ AEM as a Cloud Service の SDK は、次のアーティファクトで構成さ�
 
 >[!NOTE] SDK のバージョンエントリは、AEM as a Cloud Service のバージョンと一致する必要があります。AEM にログインし、画面の右上隅にある疑問符アイコンに移動して、「**[!UICONTROL Adobe Experience Manager について]**」を選択すると、使用しているバージョンを確認できます。
 
-* パッケージがホストされている Maven リポジトリのリモート座標を POM ファイルに記述する必要があります。
-
-```
-<repository>
-    <id>adobe-aem-releases</id>
-    <name>Adobe AEM Repository</name>
-    <url>https://downloads.experiencecloud.adobe.com/content/maven/public</url>
-    <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-    </releases>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-</repository>
-```
 
 ## 新しい SDK バージョンでのローカルプロジェクトの更新 {#refreshing-a-local-project-with-a-new-skd-version}
 
