@@ -2,9 +2,9 @@
 title: プログラムの作成 — クラウドサービス
 description: プログラムの作成 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,19 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 Cloud Managerの *Business Owner* ( *Business Owner)または* Deployment Manager(Deployment Manager)のロールにあるSandboxプログラムユーザーは、Cloud Manager UIを使用して、設定された実稼働環境とステージ環境を削除できます。
 
-削除オプションは、 *概要* ページの環境カードと **環境** ページの両方から利用できます。 「実稼働」または「ステージ」で削除オプションを選択すると、セット内の他のものも削除されます。
+>[!NOTE]
+>「実稼働」または「ステージ」で削除オプションを選択すると、セット内の他のものも削除されます。
+
+次に示すように、削除ランディングページを使用できます。
+
+![](assets/delete-sandbox1.png)
+
+または、
+
+Sandboxプログラムを削除するには、 **概要** ページで「プログラムの *削除* 」を選択します。
+
+![](assets/delete-sandbox2.png)
+
 
 ## 正規プログラムの作成 {#create-regular-program}
 
