@@ -2,9 +2,9 @@
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3124'
 ht-degree: 91%
 
 ---
@@ -34,10 +34,6 @@ AEM を WCM として使用している場合は、Dynamic Media アセットを
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. **[!UICONTROL Dynamic Media]** コンポーネントをドラッグし、ページ上の目的の場所でドロップします。
-
-   以下の例では、**[!UICONTROL ビデオ 360 メディア]**&#x200B;コンポーネントが使用されています。
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. コンポーネントの上に直接マウスポインターを置きます。コンポーネントが青色のボックスで囲まれた時点で 1 回タップすると、コンポーネントのツールバーが表示されます。**[!UICONTROL 設定（レンチ）]** アイコンをタップします。
 
@@ -121,6 +117,7 @@ Dynamic Media コンポーネントはスマートであり、追加している
 >
 >* 同じページで使用されている Dynamic Media コンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
+
 >
 >
 そのページの各 Dynamic Media コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
@@ -200,6 +197,7 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 
    * ビデオにキャプションファイルを関連付ける：[キャプション](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+
    コンポーネントの「**[!UICONTROL 編集]**」をクリックして、次の詳細設定を編集できます。
 
 * **[!UICONTROL タイトル** - ビデオのタイトルを変更します。
@@ -258,6 +256,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 >
 >* 同じページで使用されているインタラクティブメディアコンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
+
 >
 >
 そのページの各インタラクティブメディアコンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
@@ -299,6 +298,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 >
 >* 同じページで使用されている&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
+
 >
 >
 そのページの各&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
