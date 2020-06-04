@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: a6731a1a5476b1d6697bb01e5311e9acfc5016df
+source-git-commit: b03fcba0dc2e03b6ca0d57aa804bddf0817f227e
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 99%
@@ -86,7 +86,7 @@ ht-degree: 99%
    + [スマートイメージング](dynamic-media/imaging-faq.md)
    + [Dynamic Media アセットの配信](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media でのホットリンク保護の有効化](dynamic-media/hotlink-protection.md)
-   + [3D画像](/help/assets/dynamic-media/assets-3d.md)
+   + [3D画像](dynamic-media/assets-3d.md)
    + [画像セット](dynamic-media/image-sets.md)
    + [パノラマ画像](dynamic-media/panoramic-images.md)
    + [混在メディアセット](dynamic-media/mixed-media-sets.md)
