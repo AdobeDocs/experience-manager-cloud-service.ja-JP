@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: bc0852120580065a93923e7fe730485012afba6e
+source-git-commit: 08736e38f9dde46997484ccd4807de0ba2f67b2f
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2107'
 ht-degree: 13%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 13%
 
 ダイナミックメディアでは、3Dアセットをイマーシブなエクスペリエンスとしてアップロード、管理、表示および配信できます。
 
-* 3D画像のワンクリック公開(ツールバーの **[!UICONTROL クイック公開を使用]** )によるURLの生成。
-* Adobe Dimensionを使用した高品質でインタラクティブなDimensionalビューアプリセットで、3Dアセットの表示のサポートを最適化しました。 ビューアプリセットには、オービット、ズーム、パンを行うことのできるインタラクティブカメラコントロールの集まりが含まれています。
+* 3Dアセットのワンクリックで公開(ツールバーの **[!UICONTROL クイック公開]** )してURLを生成
+* Adobe Dimensionを使用した高品質でインタラクティブなDimensionalビューアプリセットで、3Dアセットの表示のサポートを最適化しました。
 * 3D Media WCMコンポーネントを使用すると、3DアセットをAEMサイトのページに簡単に追加できます。
 
-ダイナミックメディアで3Dアセットを使用する場合、インストールや設定はありません。
+ダイナミックメディアで3Dアセットを使用する場合、追加のインストールは必要ありません。
 
-![3次元の靴](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![3次元の靴](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -36,10 +36,10 @@ ht-degree: 13%
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
-| GLB | バイナリ GL 伝送 | model/gltf-binary | テクスチャを外部イメージとして参照する代わりに、アセットと共にテクスチャを含めます。 |
+| GLB | バイナリ GL 伝送 | model/gltf-binary | マテリアルとテクスチャを単一のアセットとして含めます。 |
 | OBJ | WaveFront 3D オブジェクトファイル | application/x-tgif |  |
 | STL | ステレオリソグラフィ | application/vnd.ms-pki.stl |  |
-| USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | *取り込みのみのサポート 表示も操作もできません。* USDZはApple独自の3D形式で、SafariまたはiOSの表示のみ可能です。 |
+| USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | *取り込みのみのサポート 表示も操作もできません。* USDZは独自の3D形式で、SafariやiOSでネイティブに表示できます。 |
 
 ## クイック開始: ダイナミックメディア内の3Dアセット {#quick-start-three-d}
 
@@ -144,7 +144,8 @@ Webページが **[!UICONTROL 編集]** モードの場合、3Dアセットと�
 
    * ページ右上付近にある「 **[!UICONTROL プレビュー]** 」をクリックして **[!UICONTROL プレビュー]** モードに入ります。
    * ブラウザー `/editor.html` のページURLから削除します。
-   ![3D Mediaコンポーネント内に表示される3Dアセット](/help/assets/dynamic-media/assets/3d-asset-in-3d-media.png)完全にインタラクティブな3Dアセット **[!UICONTROL (]** プレビューモードで表示される)。
+
+完全にインタラクティブな3Dアセット(    ![3D Mediaコンポーネント内に表示される3Dアセット](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)完全にインタラクティブな3Dアセット **[!UICONTROL (]** プレビューモードで表示される)。
 
 1. **[!UICONTROL プレビュー]** ・モードの間に、次のいずれかの操作を行います。
 
@@ -180,7 +181,7 @@ Webページが **[!UICONTROL 編集]** モードの場合、3Dアセットと�
 1. Tap **[!UICONTROL Edit]** to open the template.
 1. ページの右上付近にあるドロップダウンメニューで、「 **[!UICONTROL 構造]** 」モードを選択します（まだアクティブでない場合）。
 
-   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structure.png)
+   ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
 1. 「 **[!UICONTROL レイアウトコンテナ]** 」領域の空の領域をタップして選択し、関連するツールバーを開きます。
 1. ツールバーで、 **[!UICONTROL ポリシー]** アイコンをタップし、 **[!UICONTROL ポリシーエディターを開きます]**。
@@ -198,13 +199,13 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 1. AEMサイトを開き、ダイナミックメディア3Dメディアコンポーネントを追加するWebページを選択します。
 1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. ページの右上付近で **[!UICONTROL 「編集]** 」モードが選択されていることを確認します。
 
-   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edit.png)
+   ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
 1. ツールバーで、サイドパネルアイコンをタップして、パネルの表示を切り替えるか、「オン」にします。
 
 1. サイドパネルで、プラス記号アイコンをタップし、 **[!UICONTROL コンポーネント]** リストを開きます。
 
-   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filter.png)
+   ![3d-media-component-drag-drop](/help/assets/dynamic-media/assets/3d-assets-filtera.png)
 
 1. **[!UICONTROL 3D Media]** コンポーネントをコンポーネント **** リストから、3Dビューアを表示するページ上の場所にドラッグします。
 
@@ -217,11 +218,11 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 1. In the AEM Sites page editor, select the **[!UICONTROL 3D Media Viewer]** component that you previously added to the page.
 1. Tap the **[!UICONTROL Configuration]** icon (wrench) to open the component configuration dialog box.
 
-   ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-config.png)
+   ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
 
 1. 3Dメディアダイアログボックスの「ビューアプリセット」ドロップダウンリストで、「 **[!UICONTROL 次元]** 」を選択して、次元ビューアプリセットをコンポーネントに割り当てます。
 
-   ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-config.png)
+   ![3d-media-component-edit-config](/help/assets/dynamic-media/assets/3d-media-component-edit-configa.png)
 
 1. 右上隅のチェックマークをタップして、変更を保存します。
 
@@ -236,7 +237,7 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 1. サイドパネルで、編集するページ上で表示する3Dアセットを検索またはスクロールします。
 1. 3Dアセットをアセットサイドパネルからドラッグし、前にページに追加した **[!UICONTROL 3D Media]** コンポーネントにドロップします。
 
-   ![3Dアセットを3Dメディアコンポーネントに割り当て](/help/assets/dynamic-media/assets/3d-asset-add.png)
+   ![3Dアセットを3Dメディアコンポーネントに割り当て](/help/assets/dynamic-media/assets/3d-asset-adda.png)
 
 >[!NOTE]
 >
@@ -263,17 +264,18 @@ See also [Publishing Dynamic Media assets](/help/assets/dynamic-media/publishing
 1. 3Dアセット（GLB、OBJ、またはSTLファイル形式）を開き、アセットの詳細ページに表示します。
 1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
 
-   ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publish.png)
+   ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
 1. 「 **[!UICONTROL 閉じる]** 」をタップしてダイアログボックスを終了し、アセットの詳細ページに戻ります。
 1. 3Dアセットのファイル名の左にあるドロップダウンリストから、「 **[!UICONTROL レンディション]**」をタップします。
 
-   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditions.png)
+   ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
 1. 「 **[!UICONTROL オリジナル]**」をタップします。 3Dアセットが公開（「アクティブ化」）されると、次の3Dアセットの条件がすべて満たされた場合、ページの左下隅近くにURLボタンが表示されます。
    * 3Dアセットはサポートされている形式(GLB、OBJ、STL、USDZ)です。
    * 3Dアセットがダイナミックメディアイメージ制作システム(IPS)に取り込まれました。
    * 3Dアセットが公開されます。
-   ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-url.png)
+
+   ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. 「 **[!UICONTROL URL]** 」をタップして、3Dアセットの実稼動URLを表示します。
