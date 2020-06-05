@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: a725e5729d1086aba64ec59ed909577f25219aa9
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1833'
 ht-degree: 6%
 
 ---
@@ -21,6 +21,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is Ju
 ## What&#39;s New in AEM Sites {#aem-sites}
 
 この節では、AEMのクラウドサービスリリース2020.6.0としてのAEMサイトの新機能と更新点について説明します。
+
+### 最新情報 {#whats-new-2020.6.0}
+
+コアコンポーネントのリリース2.9.0は [](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) 、以下を含むAEMサイトの一部として使用できるようになりました。
+
+* [Adobeクライアントデータレイヤー](https://github.com/adobe/adobe-client-data-layer) とコアコンポーネントの統合
+* すべてのコンポーネント用に設定可能なHTML ID属性
+* 新しいプログレスバーコンポーネント
+* 多くのバグ修正
 
 ### バグ修正 {#sites-bug-fixes}
 
@@ -53,19 +62,27 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Managerの *ビジネス所有者* (Business Owner)ロールのユーザーは、Sandboxプログラムをランディングページから(プログラムカードのクイックアクションボタンを使用して)またはプログラム内から削除できるようになりました。
 
-* Cloud Managerの *Business Owner* ( *ビジネス所有者* )またはDeployment Manager（デプロイメントマネージャー）のロールにあるSandboxプログラムユーザーが、Cloud Manager UIを使用して、設定された実稼働環境とステージ環境を削除できるようになりました。 削除オプションは、概要ページの環境カードと環境ページの両方から利用できるようになりました。 「実稼働」または「ステージ」で削除オプションを選択すると、セット内の他のものも削除されます。
+   詳細は、「Sandboxプログラムの [削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 」を参照してください。
+
+* Cloud Managerの *Business Owner* ( *ビジネス所有者* )またはDeployment Manager（デプロイメントマネージャー）のロールにあるSandboxプログラムユーザーが、Cloud Manager UIを使用して、設定された実稼働環境とステージ環境を削除できるようになりました。 削除オプションは、 **プログラムの概要ページの環境カードと** 環境 **** ページの両方から利用できるようになりました。 「実稼働」または「ステージ」で削除オプションを選択すると、セット内の他のものも削除されます。
+
+   詳細は、「Sandboxプログラムの [削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 」を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
-* 概要 ** ページにコーチマークを付けて、Cloud Manager内部の基本的なナビゲーションに関する情報をユーザーに伝え、基本的なナビゲーションを開始するように指示します。
+* プログラムの概要 **** ページにコーチマークを付けて、Cloud Manager内部の基本的なナビゲーションに関する情報を提供し、基本的なナビゲーションを開始するように指示します。
 
 * Cloud Managerで **LEARN** （学習）ページが利用できるようになり、トップナビゲーションからアクセスできます。 このページには、Cloud Managerで割り当てられた役割に関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
 
-* Sandboxのプログラムは、 **Sandbox** バッジによって識別されます。このバッジは、ランディングページのプログラムカードに表示され、 *概要* ページのプログラム名の横に表示されます。
+* Sandboxのプログラムは、 **Sandbox** バッジによって識別されます。このバッジは、ランディングページのプログラムカードに表示され、 **プログラムの概要** ページのプログラム名の横に表示されます。
 
-* SysAdmin *ロールのユーザーは、管理コンソールの* 場所に1回のクリックでアクセスできるようになりました。この場所から、Cloud Managerに対するユーザーのロールまたは権限を管理できます。 ロール **の** 管理 **ボタンは、「** プログラム」ボタンの横のランディングページで使用できます。
+* システム管理者ロールのユーザーは、管理コンソールで、Cloud Managerに対するユーザーの役割または権限を管理できる場所に1回のクリックでアクセスできるようになりました。 「 **Manage Access** (アクセス **を管理)** 」ボタンが、プログラムボタンの横のランディングページで使用できるようになりました。
 
-* システム管理者ロールのユーザーは、CMから直接作成者インスタンスに対して1回のクリックでアクセスできるようになりました。
+   詳細は、「 [SysAdminタスク](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) 」を参照してください。
+
+* システム管理者ロールのユーザーは、Cloud Managerから直接オーサーインスタンスに対して1回のクリックでアクセスできるようになりました。
+
+   詳細は、「作成者インスタンスへのアクセスの [管理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) 」を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
@@ -77,7 +94,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * 特定の状況で、[プログラムの **作成** ]ダイアログボックスのアイコンの表示がずれていました。
 
-* AEMリリースIDが *概要* ページに表示される問題は、一貫していませんでした。
+* AEMリリースIDが、 **プログラムの概要** ページに一貫して表示されなかった問題を修正しました。
 
 * 実稼動パイプラインを設定する際に、一部のお客様に対して **「Scheduled Deployment** 」オプションが表示されない問題を修正しました。
 
