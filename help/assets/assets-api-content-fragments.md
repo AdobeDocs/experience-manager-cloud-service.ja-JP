@@ -1,8 +1,11 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
-translation-type: ht
-source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
+translation-type: tm+mt
+source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+workflow-type: tm+mt
+source-wordcount: '1892'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +20,7 @@ source-git-commit: a5d6a072dfd8df887309f56ad4a61b6b38b32fa7
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
+
 >
 >
 現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
@@ -144,6 +148,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -214,9 +219,9 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。コンテンツフラグメントを使用すれば、テキスト、数値、日付など様々な要素を含む構造化データにアクセスできます。
 
-*標準*&#x200B;アセット（画像やオーディオなど）とはいくつかの異なる点があり、それらの処理には追加のルールが適用されます。
+標準アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。**
 
-#### 表現{#representation}
+#### 表現 {#representation}
 
 コンテンツフラグメント：
 
@@ -225,7 +230,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 * アトミックと見なされます。つまり、エレメントとバリエーションは、リンクまたは子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。これにより、フラグメントのペイロードに効率的にアクセスできます。
 
-#### コンテンツモデルとコンテンツフラグメント{#content-models-and-content-fragments}
+#### コンテンツモデルとコンテンツフラグメント {#content-models-and-content-fragments}
 
 現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、コンシューマーは（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなど&#x200B;**&#x200B;は定義の一部だからです。
 
@@ -310,7 +315,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 関連する状況で次のステータスコードが表示されることがあります。
 
-1. 200（OK）
+* **200**（OK）
 
    次の場合に返されます。
 
@@ -318,19 +323,19 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
    * `PUT` でコンテンツフラグメントを正常に更新する
 
-1. 201（Created）
+* **201** （作成）
 
    次の場合に返されます。
 
    * `POST` でコンテンツフラグメントを正常に作成する
 
-1. 404（Not Found）
+* **404** （見つかりません）
 
    次の場合に返されます。
 
    * 要求されたコンテンツフラグメントが存在しない
 
-1. 500（内部サーバーエラー）
+* **** 500（内部サーバーエラー）
 
    >[!NOTE]
    >
@@ -361,6 +366,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    通常、詳細なエラーメッセージは次のように返されます。
 
    ```xml
@@ -376,7 +382,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
    }
    ```
 
-## API リファレンス{#api-reference}
+## API リファレンス {#api-reference}
 
 詳細な API リファレンスについては、こちらを参照してください。
 <!--
