@@ -2,8 +2,11 @@
 title: AEM Assets での Adobe Stock デジタルアセットの使用
 description: Adobe Experience Manager で Adobe Stock アセットを検索、取得、ライセンス、管理します。ライセンスされたアセットをその他の Adobe Experience Manager アセットとして扱います。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+translation-type: tm+mt
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+workflow-type: tm+mt
+source-wordcount: '1132'
+ht-degree: 97%
 
 ---
 
@@ -20,17 +23,17 @@ AEM と Adobe Stock の間でやり取りができるようにするには、AEM
 
 >[!NOTE]
 >
->統合は、組織の AEM 管理者と Admin Console 管理者のみ実行できます。統合の実行には管理者特権が必要です。
+>統合は、組織の AEM 管理者と Admin Console 管理者のみ実行できます。統合の実行には管理者権限が必要です。
 
-### IMS 設定の作成{#create-an-ims-configuration}
+### IMS 設定の作成 {#create-an-ims-configuration}
 
 1. AEM のロゴをクリックします。**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。「**[!UICONTROL 作成]**」をクリックし、**[!UICONTROL クラウドソリューション]**／**[!UICONTROL Adobe Stock]** を選択します。
 1. 既存の証明書を再使用するか、「**[!UICONTROL 新しい証明書を作成]**」を選択します。
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。証明書を作成したら、公開鍵をダウンロードします。「**[!UICONTROL 次へ]**」をクリックします。
-1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL API キー]**」、「**[!UICONTROL クライアントの秘密鍵]**」および「**[!UICONTROL ペイロード]**」の各フィールドに適切な値を指定します。これらの値を Adobe I/O から取得する方法について詳しくは、[JWT 認証のクイックスタート](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)（英語）を参照してください。
-1. ダウンロードした公開鍵を Adobe I/O サービスアカウントに追加します。
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL API キー]**」、「**[!UICONTROL クライアントの秘密鍵]**」および「**[!UICONTROL ペイロード]**」の各フィールドに適切な値を指定します。See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
+1. ダウンロードし追加た公開鍵をAdobe Developer Consoleサービスアカウントにダウンロードします。
 
-### AEM での Adobe Stock 設定の作成{#create-adobe-stock-configuration-in-aem}
+### AEM での Adobe Stock 設定の作成 {#create-adobe-stock-configuration-in-aem}
 
 1. AEM ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Adobe Stock]** に移動します。
 1. 「**[!UICONTROL 作成]**」をクリックして設定を作成し、その設定を既存の IMS 設定に関連付けます。環境パラメーターとして「`PROD`」を選択します。
@@ -65,7 +68,7 @@ AEM と Adobe Stock の両方でアセットを検索できます。検索場所
 
 >[!NOTE]
 >
->Adobe Stock から検索されたアセットは AEM に表示されるだけです。[アセットを保存](/help/assets/aem-assets-adobe-stock.md#saveassets)するか、[アセットのライセンスを付与された](/help/assets/aem-assets-adobe-stock.md#licenseassets)後でないと、Adobe Stock アセットを取得して AEM リポジトリに保存することはできません。既に AEM に保存されているアセットが表示され、参照やアクセスが簡単にできるようにハイライトされます。また、これらのアセットは、ソースが Adobe Stock であることを示すいくつかの追加メタデータと共に保存されます。
+>Adobe Stock から検索されたアセットは AEM に表示されるだけです。[アセットを保存](/help/assets/aem-assets-adobe-stock.md#saveassets)するか、[アセットのライセンスを付与された](/help/assets/aem-assets-adobe-stock.md#licenseassets)後でないと、Adobe Stock アセットを取得して AEM リポジトリに保存することはできません。既に AEM に保存されているアセットが表示され、参照やアクセスが簡単にできるようにハイライトされます。また、これらのアセットは、ソースが Adobe Stock であることを示すいくつかの追加メタデータとともに保存されます。
 
 ![AEM の検索フィルターと、検索結果内でハイライトされている Adobe Stock アセット](assets/aem-search-filters2.jpg)*図：AEM の検索フィルターと、検索結果内でハイライトされている Adobe Stock アセット*
 
