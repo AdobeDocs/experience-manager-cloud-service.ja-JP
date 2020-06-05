@@ -2,7 +2,7 @@
 title: ナビゲーション
 description: ナビゲーション — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 289c0dc65b16b486d6ea75c5c78f999ec2f353c6
+source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
@@ -59,6 +59,8 @@ ht-degree: 1%
    ![](assets/sys-admin4.png)
 
 1. 「アクセスの **管理**」をクリックすると、 **環境の作成者インスタンスにアクセスできる** 管理コンソールに移動します。
+
+   ![](assets/sys-admin-2.png)
 
 ## 既存のAMSのお客様の場合 {#existing-aem}
 
