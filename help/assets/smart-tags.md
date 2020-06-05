@@ -3,15 +3,15 @@ title: 画像に、人工的にインテリジェントなサービスでタグ�
 description: Adobe Senseiサービスを使用して、状況依存や説明的なビジネスタグを適用する、人工的にインテリジェントなサービスで画像にタグ付けします。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2400'
 ht-degree: 35%
 
 ---
 
 
-# Smart Servicesを使用した画像のタグ付け {#smart-tag-assets}
+# スマートタグサービスをトレーニングし、画像にタグを付ける {#train-service-tag-assets}
 
 デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照し、検索する際によく使用するキーワードのリストが含まれます。 タクソノミ制御のボキャブラリでアセットをタグ付けすると、タグベースの検索でアセットを簡単に識別および取得できます。
 
@@ -25,7 +25,7 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 スマートタグを使用するには、次のタスクを実行します。
 
-* [Experience ManagerとAdobe I/Oの統合](#integrate-aem-with-aio)。
+* [Experience ManagerとAdobe Developer Consoleの統合](#integrate-aem-with-aio)。
 * [タグのモデルとガイドラインを理解します](#understand-tag-models-guidelines)。
 * [モデルをトレーニングします](#train-model)。
 * [デジタルアセットのタグ付け](#tag-assets)。
@@ -35,11 +35,11 @@ In the background, the Smart Tags uses an artificial intelligence framework of [
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
 
-## Adobe I/O [!DNL Experience Manager] との統合 {#integrate-aem-with-aio}
+## Adobe Developer Console [!DNL Experience Manager] との連携 {#integrate-aem-with-aio}
 
-Adobe I/O [!DNL Adobe Experience Manager] を使用してスマートタグと統合できます。 この設定は、からSmart Tagsサービスにアクセスする場合に使用し [!DNL Experience Manager]ます。
+Adobe Developer Consoleを使用 [!DNL Adobe Experience Manager] して、スマートタグと統合できます。 Use this configuration to access the Smart Tags service from within [!DNL Experience Manager].
 
-スマートタグを設定するタスク向けに、Experience Managerでアセットのスマートタグ付けを [設定する](smart-tags-configuration.md) （英語のみ）を参照してください。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
+スマートタグを設定するタスク向けに、Experience Managerでアセットのスマートタグ付けを [設定する](smart-tags-configuration.md) （英語のみ）を参照してください。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Tags service.
 
 ## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
 
@@ -78,7 +78,7 @@ Adobe I/O [!DNL Adobe Experience Manager] を使用してスマートタグと�
 
 **例の数**: 各タグに対して、少なくとも10個の例を追加します。 ただし、アドビでは約30例をお勧めします。 1つのタグにつき最大50個のサンプルがサポートされます。
 
-**偽陽性や競合を回避**: 単一の視覚的側面に対応した単一のタグモデルを作成することをお勧めします。 モデル間でタグが重なり合うのを避けるように、タグモデルを構築します。 例えば、との2つの異なるタグモデル名 `sneakers` でののような共通タグは使用しな `shoes` いでくだ `footwear`さい。 トレーニングプロセスは、共通のキーワードに関して、トレーニングを受けた1つのタグモデルをもう1つで上書きします。
+**偽陽性や競合を回避**: 単一の視覚的側面に対応した単一のタグモデルを作成することをお勧めします。 モデル間でタグが重なり合うのを避けるように、タグモデルを構成します。 例えば、との2つの異なるタグモデル名 `sneakers` でののような共通タグは使用しな `shoes` いでくだ `footwear`さい。 トレーニングプロセスは、共通のキーワードに関して、トレーニングを受けた1つのタグモデルをもう1つで上書きします。
 
 **例**: 手順説明の例を以下に示します。
 
