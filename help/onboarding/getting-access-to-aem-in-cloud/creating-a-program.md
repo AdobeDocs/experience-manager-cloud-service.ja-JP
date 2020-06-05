@@ -2,9 +2,9 @@
 title: プログラムの作成 — クラウドサービス
 description: プログラムの作成 — クラウドサービス
 translation-type: tm+mt
-source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
+source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Cloud Managerの *Business Owner* ( *Business Owner)または* Deployment Manage
 
 または、
 
-Sandboxプログラムを削除するには、 **概要** ページで「プログラムの *削除* 」を選択します。
+Sandboxプログラムを削除するには、 **プログラムの概要** ページで「プログラム **** を削除」を選択します。
 
 ![](assets/delete-sandbox2.png)
 
