@@ -2,10 +2,10 @@
 title: ナビゲーション
 description: ナビゲーション — クラウドサービス
 translation-type: tm+mt
-source-git-commit: b2549ac13f996449bc41ac18ba6afbf22e116597
+source-git-commit: 02160a9fa713b3758698aa3330a5ccaef8b830fb
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -18,20 +18,44 @@ ht-degree: 2%
 
 ![](assets/first_timelogin1.png)
 
-## SysAdminアクセス {#sysadmin-access}
+## SysAdminタスク {#sysadmin-tasks}
 
-システム管理者ロールのユーザーは、管理コンソールで、Cloud Managerに対するユーザーのロールまたは権限を管理する場所への1回のクリックでのアクセス権を持ちます。
+システム管理者ロールのユーザーは、管理コンソールに直接アクセスしてロールと権限を管理し、AEMインスタンスにアクセスできるようになりました。
 
 ### ロールの管理 {#manage-roles}
 
-SysAdminのユーザーは、 **プログラムの横のランディングページで「** Manage Roles **(ロールの**&#x200B;管理)」オプションを使用できます。 これにより、1回のクリックでCloud Managerに対するユーザーの役割や権限を管理できる管理コンソールの場所にアクセスできます。
+システム管理者ロールのユーザーは、 **管理コンソール** （Cloud Managerに対するユーザーの役割または権限を管理する場所）への1クリックでのアクセス権を持ちます。
 
-プロファイルにユーザーを追加する方法の詳細については、 [Cloud Managerへのアクセスを参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) 。Cloud Managerへのアクセスを参照してください
+プロファイルにユーザーを追加する方法の詳細については、 [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) （Cloud Managerへのアクセス）を参照してください。
 
-### AEMへのアクセスの管理 {#manage-access-aem}
+>[!NOTE]
+>2020年1月以前にクラウドサービスとしてAEMへのアクセス権を付与された組織によっては、それらの組織がAdobe Admin Consoleに移動し、製品と環境の製品プロファイルを選択する必要があります。
 
-システム管理者のユーザーは、Cloud Managerから直接、1回のクリックで作成者インスタンスにアクセスできます。
+1. Cloud Managerのランディングページーに移動し、「アクセスを **管理**」をクリックします。
+
+   ![](assets/sys-admin1.png)
+
+1. 「アクセス **を管理** 」をクリックすると、 **管理コンソールに移動します。** 管理コンソールから、Cloud Managerのユーザーの役割や権限を管理できます。
+
+   ![](assets/sys-admin2.png)
+
+### 作成者インスタンスへのアクセスの管理 {#manage-access-aem}
+
+システム管理者ロールのユーザーは、 **** 管理コンソールへの1クリックアクセス権を持ちます。ここから作成者インスタンスに直接移動し、アクセスを管理できます。
+
+>[!NOTE]
+>2020年1月以前にクラウドサービスとしてAEMへのアクセス権を付与された組織によっては、それらの組織がAdobe Admin Consoleに移動し、製品と環境の製品プロファイルを選択する必要があります。
+
 詳しくは、「AEM内のインスタンスへのクラウドサービスとしての [アクセス](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 」を参照してください。
+
+1. 次の図に示すように、 **環境** ・カード( *概要* ・ページ)または **環境・ページに移動して、「Accessの****** 管理」オプションを使用します。
+
+   ![](assets/manage-access1.png)
+
+1. 「アクセスの **管理** 」をクリックすると、 **環境の作成者インスタンスにアクセスできる管理コンソールに移動します** 。
+
+   ![](assets/sys-admin3.png)
+
 
 ## 既存のAMSのお客様の場合 {#existing-aem}
 
