@@ -1,13 +1,16 @@
 ---
-title: リッチテキストエディターを使用したコンテンツのオーサリング
-description: リッチテキストエディターを使用したコンテンツのオーサリング
-translation-type: ht
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+title: Adobe Experience Managerのリッチテキストエディターを使用して、コンテンツを作成します。
+description: Experience Managerリッチテキストエディターを使用して、コンテンツを作成します。
+translation-type: tm+mt
+source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 48%
 
 ---
 
 
-# リッチテキストエディターを使用したコンテンツのオーサリング {#use-rich-text-editor-to-author-content}
+# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
 
 リッチテキストエディター（RTE）は、AEM にテキストコンテンツを入力するための基本的な構成要素です。様々なコンポーネントの基礎となります。
 
@@ -23,19 +26,17 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 このツールバーには、次のオプションがあります。
 
-* **フォーマット**：太字、斜体および下線を設定できます。
-* **リスト**：箇条書きリストまたは番号付きリストを作成したり、インデントを設定したりすることができます。
-* **ハイパーリンク**
-* **リンク解除**
-* **全画面表示**
-* **閉じる**
-* **保存**
+* **形式**: テキストを太字または斜体にしたり、テキストに下線を引きます。
+* **リスト**: 箇条書き記号または番号付きリストを作成し、インデントを設定します。
+* **ハイパーリンク**: リンクを作成します。
+* **リンク解除**: ハイパーリンクを削除
+* **フルスクリーン**: エディターをフルスクリーンモードで開きます。
+* **閉じる**: 編集を停止します。
+* **保存**: 変更を保存します。
 
-## 全画面表示編集 {#full-screen-editing}
+## フルスクリーン編集 {#full-screen-editing}
 
-テキストベースのコンポーネントの場合は、[ツールバー](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)から全画面表示モードをタップすると、リッチテキストエディターが開き、残りのページコンテンツが非表示になります。
-
-![RTE の全画面表示ボタン](/help/sites-cloud/authoring/assets/editing-full-screen.png)
+テキストベースのコンポーネントの場合は、 ![ツールバーからフルスクリーンモードの](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTEフルスクリーンボタンをタップしてリッチテキストエディターを開き [](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 、ページコンテンツの残りを非表示にします。
 
 全画面表示モードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。使用できるオプションは、設定によって異なります。 <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
@@ -43,15 +44,15 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 その他のリッチテキストエディターオプションを次に示します。
 
-* **アンカー**：テキストにアンカーを作成し、後でそのアンカーへのリンクや参照を設定できます。
+* **アンカー**: 後でリンクしたり参照を作成したりできるテキストにアンカーを作成します。
 * **テキストを左揃え**
 * **テキストを中央揃え**
 * **テキストを右揃え**
 
-全画面表示モードを閉じるには、「最小化」アイコンをクリックします。
+「最小化」をクリックしてフルスクリーンモードを閉じます。
 
 ![RTE の最小化ボタン](/help/sites-cloud/authoring/assets/rte-minimize.png)
 
->[!NOTE]
+>[!Tip]
 >
->ネストされたリストを Microsoft Word から RTE にコピーすると、結果の一貫性が失われ、RTE にテキストを貼り付けた後で手動調整が必要になる可能性があります。
+>ネストされたリストをMicrosoft WordからRTEにコピーすると、結果が異なる場合があります。 代わりに、テキストとして貼り付け、手動で調整を行います。
