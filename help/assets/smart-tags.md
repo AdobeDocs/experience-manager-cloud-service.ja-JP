@@ -1,30 +1,165 @@
 ---
-title: 拡張スマートタグ
-description: Adobe Sensei の AI および ML サービスを利用して、状況に応じた説明的なビジネスタグを適用し、アセットの検出とコンテンツベロシティ（コンテンツ創出の高速化）を向上させます。
+title: 画像に、人工的にインテリジェントなサービスでタグ付けする。
+description: Adobe Senseiサービスを使用して、状況依存や説明的なビジネスタグを適用する、人工的にインテリジェントなサービスで画像にタグ付けします。
 contentOwner: AG
-translation-type: ht
-source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
+translation-type: tm+mt
+source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+workflow-type: tm+mt
+source-wordcount: '2398'
+ht-degree: 35%
 
 ---
 
 
-# アセットのスマートタグ付け {#smart-tag-assets}
+# Smart Servicesを使用した画像のタグ付け {#smart-tag-assets}
 
-## スマートタグの概要 {#overview-of-enhanced-smart-tags}
+デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照し、検索する際によく使用するキーワードのリストが含まれます。 タクソノミ制御のボキャブラリでアセットをタグ付けすると、タグベースの検索でアセットを簡単に識別および取得できます。
 
-デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客が特定のクラスのデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙によりアセットをタグ付けすると、タグベースの検索でアセットを特定し、取得することが容易になります。
+自然言語の語彙と比較して、ビジネスタクソノミに基づくタグ付けは、アセットを会社のビジネスと連携させ、最も関連のあるアセットを検索に表示するのに役立ちます。 例えば、車の製造元は車の画像にモデル名を付けて、プロモーションキャンペーンを設計するために検索した場合に関連する画像のみが表示されるようにすることができます。
 
-自然言語語彙と比較して、ビジネス上の分類に基づいたデジタルアセットのタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
+In the background, the Smart Tags uses an artificial intelligence framework of [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) to train its image recognition algorithm on your tag structure and business taxonomy. その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。
 
-スマートコンテンツサービスでは、バックグラウンドで [Adobe Sensei](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) の AI フレームワークを使用して、タグ構造およびビジネス上の分類に基づいてその画像認識アルゴリズムのトレーニングをおこないます。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。
+<!-- TBD: Create a similar flowchart for how training works in CS.
+![flowchart](assets/flowchart.gif) 
+-->
+
+スマートタグを使用するには、次のタスクを実行します。
+
+* [Experience ManagerとAdobe I/Oの統合](#integrate-aem-with-aio)。
+* [タグのモデルとガイドラインを理解します](#understand-tag-models-guidelines)。
+* [モデルをトレーニングします](#train-model)。
+* [デジタルアセットのタグ付け](#tag-assets)。
+* [タグと検索を管理します](#manage-smart-tags-and-searches)。
+
+スマートタグは、 [!DNL Adobe Experience Manager Assets] お客様にのみ適用できます。 The Smart Tags is available for purchase as an add-on to [!DNL Experience Manager].
+
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+
+## Adobe I/O [!DNL Experience Manager] との統合 {#integrate-aem-with-aio}
+
+Adobe I/O [!DNL Adobe Experience Manager] を使用してスマートタグと統合できます。 この設定は、からSmart Tagsサービスにアクセスする場合に使用し [!DNL Experience Manager]ます。
+
+スマートタグを設定するタスク向けに、Experience Managerでアセットのスマートタグ付けを [設定する](smart-tags-configuration.md) （英語のみ）を参照してください。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Tags service.
+
+## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
+
+タグモデルは、画像の視覚的な側面に基づく、関連するタグのグループです。 例えば、靴のコレクションは異なるタグを持つことができますが、すべてのタグは靴に関連し、同じタグモデルに属することができます。 タグは、画像の明確に異なる視覚要素にのみ関連付けることができます。 でトレーニングモデルのコンテンツ表現を理解するには、各タグに対して手動で追加されたタグのグループと例の画像から構成されるトップレベルのエンティティとして、トレーニングモデルを視覚化します。 [!DNL Experience Manager]各タグは、画像にのみ適用できます。
+
+現実的に処理できないタグは、次のものに関連しています。
+
+* 画像によって誘発される製品、ムード、感情の年や季節など、非視覚的で抽象的な要素。
+* 製品に埋め込まれたカラーや小さな製品ロゴのあるシャツや、ないシャツなどの製品の視覚的な違いが細かく表示されます。
+
+タグモデルを作成してサービスをトレーニングする前に、ビジネスのコンテキストでイメージ内のオブジェクトを最もよく説明する一意のタグのセットを特定します。 Ensure that the assets in your curated set conform to [the training guidelines](#training-guidelines).
+
+### トレーニングガイドライン {#training-guidelines}
+
+トレーニングセットの画像は、次のガイドラインに従う必要があります。
+
+**数量とサイズ：** 画像は最小10個、タグあたり最大50個。
+
+**一貫性**：タグの各画像は、似たような外観にする必要があります。同じ視覚的要素（画像内の同じタイプのオブジェクトなど）に関するタグを1つのタグモデルにまとめるのが最適です。 例えば、以下の画像は似ていないので、これらの画像すべてを `my-party`（トレーニング用）としてタグ付けするのは適切ではありません。
+
+![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coherence.png)
+
+**対象範囲**：トレーニングの画像には十分な多様性が必要です。AEM が適切に焦点を当てることを学習できるよう、数は少なくても多様性の高い例を提供します。見た目が大きく異なる画像に同じタグを適用する場合は、それぞれの種類に 5 つ以上の例を含めてください。例えば、model-down-pose ** というタグの場合、タグ付け時、類似する画像をより正確に識別できるよう、以下のハイライト表示された画像に似たトレーニング画像を増やします。
+
+![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/coverage_1.png)
+
+**妨害物と障害物**：サービスのトレーニングには、障害物（目立つ背景、メインとなる対象と一緒に含まれる物や人物などの関連性のない付随物）が少ない画像のほうが効果的です。例えば、casual-shoe ** というタグの場合、2 つ目の画像はトレーニングの候補として適切ではありません。
+
+![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/distraction.png)
+
+**完全性**：画像が複数のタグの対象となる場合は、適用可能なすべてのタグを追加してから、画像をトレーニングに含めます。例えば、*raincoat* と *model-side-view* などのタグの場合、対象となるアセットに両方のタグを追加してから、そのアセットをトレーニングに含めます。
+
+![トレーニングガイドラインの例を示すイラスト](assets/do-not-localize/completeness.png)
+
+**タグ数**: 各タグに少なくとも2つの異なるタグと少なくとも10の異なる画像を使用して、モデルのトレーニングを行うことをお勧めします。 単一のタグモデルでは、50個を超えるタグを追加しないでください。
+
+**例の数**: 各タグに対して、少なくとも10個の例を追加します。 ただし、アドビでは約30例をお勧めします。 1つのタグにつき最大50個のサンプルがサポートされます。
+
+**偽陽性や競合を回避**: 単一の視覚的側面に対応した単一のタグモデルを作成することをお勧めします。 モデル間でタグが重なり合うのを避けるように、タグモデルを構築します。 例えば、との2つの異なるタグモデル名 `sneakers` でののような共通タグは使用しな `shoes` いでくだ `footwear`さい。 トレーニングプロセスは、共通のキーワードに関して、トレーニングを受けた1つのタグモデルをもう1つで上書きします。
+
+**例**: 手順説明の例を以下に示します。
+
+* 次を含むタグモデルを作成します。
+   * 車種に関連するタグのみ。
+   * シャツの色に関連するタグのみ。
+   * 女性と男性のジャケットに関するタグのみ。
+* 作成しない、
+   * 2019年と2020年にリリースされた車種を含むタグモデル。
+   * 同じ車種を含む複数のタグモデル。
+
+**トレーニングに使用する画像**: 同じ画像を使用して、異なるタグモデルをトレーニングできます。 ただし、イメージをタグモデル内の複数のタグに関連付けることはできません。 したがって、同じ画像に異なるタグモデルに属する異なるタグをタグ付けすることが可能です。
+
+トレーニングを取り消すことはできません。 上記のガイドラインは、トレーニングに適した画像を選択する際に役立ちます。
+
+## カスタムタグに合わせてモデルをトレーニングする {#train-model}
+
+ビジネス固有のタグに合わせてモデルを作成し、トレーニングするには、次の手順に従います。
+
+1. 必要なタグと適切なタグ構造を作成します。 DAMリポジトリに関連する画像をアップロードします。
+1. ユー [!DNL Experience Manager] ザーインターフェイスで、 **[!UICONTROL アセット]** / **[!UICONTROL トレーニングモデルにアクセスします]**。
+1. 「**[!UICONTROL 作成]**」をクリックします。「 **[!UICONTROL タイトル]**」、「 **[!UICONTROL 説明]**」を入力します。
+1. モデルをトレーニングする既存のタグを参照して選択 `cq:tags` します。 「**[!UICONTROL 次へ]**」をクリックします。
+1. アセットを **[!UICONTROL 選択ダイアログで]** 、各タグに対して「アセット **** 」をクリックします。 DAMリポジトリ内を検索するか、リポジトリを参照して、少なくとも10個の画像と最大50個の画像を選択します。 フォルダーではなくアセットを選択します。 画像を選択したら、「 **[!UICONTROL 選択]**」をクリックします。
+1. 選択した画像のサムネールをプレビューするには、タグの前にあるアコーディオンをクリックします。 「 **[!UICONTROL 追加アセット]**」をクリックして、選択内容を変更できます。 選択が完了したら、「 **[!UICONTROL 送信]**」をクリックします。 ユーザーインターフェイスに、トレーニングが開始されたことを示す通知がページの下部に表示されます。
+1. 各タグモデルの「 **[!UICONTROL Status]** 」列で、トレーニングのステータスを確認します。 可能なステータスは、 [!UICONTROL 「]Pending [!UICONTROL 」、「]Trained [!UICONTROL 」、「]Failed」です。
+
+![スマートタグ付け用のタグ付けモデルをトレーニングするワークフロー](assets/smart-tag-model-training-flow.png)
+
+*図： タグ付けモデルをトレーニングするためのトレーニングワークフローの手順です。*
+
+### 表示トレーニングのステータスとレポート {#training-status}
+
+Smart Tagsサービスがアセットのトレーニングセット内のタグに関するトレーニングを受けているかどうかを確認するには、レポートコンソールからトレーニングワークフローレポートを確認します。
+
+1. インター [!DNL Experience Manager] フェイスで、 **[!UICONTROL ツール/アセット/レポートに移動します]**。
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. レポートのタイトルと説明を指定します。「**[!UICONTROL レポートをスケジュール]**」で、「**[!UICONTROL 今すぐ]**」オプションを選択したままにします。レポートを後で生成するようにスケジュールするには、「**[!UICONTROL 後で]**」を選択し、日時を指定します。Then, click **[!UICONTROL Create]** from the toolbar.
+1. **[!UICONTROL アセットレポート]**&#x200B;ページで、生成したレポートを選択します。To view the report, click **[!UICONTROL View]** from the toolbar.
+1. レポートの詳細をレビューします。レポートには、トレーニングしたタグのトレーニングステータスが表示されます。The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Tags service is trained for the tag. 黄色は、特定のタグに関するサービスのトレーニングが完全には実施されていないことを示します。この場合、特定のタグを含む画像をさらに追加し、トレーニングワークフローを実行して、そのタグに関するサービスのトレーニングを完全に実施します。このレポートにタグが表示されない場合は、これらのタグに対して、トレーニングワークフローを再実行します。タグ
+1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. レポートはMicrosoft Excelスプレッドシートとしてダウンロードされます。
+
+## アセットのタグ付け {#tag-assets}
+
+スマートタグサービスのトレーニングを終えたら、タグ付けワークフローをトリガーして、類似の別のアセットに適切なタグを自動的に適用できます。 タグ付けワークフローは、定期的に、または必要に応じて適用できます。 タグ付けワークフローは、アセットとフォルダの両方に適用されます。
+
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
+
+1. Experience Managerインターフェイスで、 **[!UICONTROL ツール/ワークフロー/モデルに移動します]**。
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+
+   ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
+
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. ワークフローのタイトルとオプションのコメントを指定します。「**[!UICONTROL 実行]**」をクリックします。
+
+   ![tagging_dialog](assets/tagging_dialog.png)
+
+   アセットフォルダーに移動し、タグを確認して、アセットが適切にタグ付けされているかどうかを確認します。 For details, see [manage smart tags](#manage-smart-tags-and-searches).
+
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
+
+1. Assets のユーザーインターフェイスで、スマートタグを適用するアセットが格納されているフォルダーまたは特定のアセットを選択します。
+1. 左上隅から、 **[!UICONTROL タイムラインを開きます]**。
+1. 左側のサイドバーの下部でアクションを開き、「 **[!UICONTROL 開始ワークフロー]**」をクリックします。
+
+   ![開始_ワークフロー](assets/start_workflow.png)
+
+1. 「**[!UICONTROL DAM スマートタグアセット]**」ワークフローを選択し、ワークフローのタイトルを指定します。
+1. 「**[!UICONTROL 開始]**」をクリックします。ワークフローによってアセットにタグが適用されます。アセットフォルダーに移動し、タグを確認して、アセットが適切にタグ付けされているかどうかを確認します。 For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->スマートコンテンツサービスは、Assets ユーザーのみ利用できます。スマートコンテンツサービスは、Adobe Experience Manager のアドオンとして購入できます。
+>後続のタグ付けサイクルでは、新しくトレーニングされたタグを使用して、変更したアセットのみが再度タグ付けされます。ただし、タグ付けワークフローの最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが24時間を超える場合は、変更されないアセットもタグ付けされます。 定期的なタグ付けワークフローの場合、タイムギャップが6か月を超えると、変更されていないアセットにタグが付けられます。
 
-<!-- ![flowchart](assets/flowchart.gif) -->
+### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
 
-## スマートタグと検索の管理 {#manage-smart-tags-and-searches}
+Experience Managerでは、ユーザーがDAMにアップロードするアセットに自動的にタグを付けることができます。 そのためには、管理者は、の使用可能な手順をスマートタグアセットに追加するワークフローを設定します。 アップロードしたアセットのスマートタグを有効にする [方法を参照してください](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)。
+
+## Manage smart tags and image searches {#manage-smart-tags-and-searches}
 
 関連性の高いタグのみが表示されるようにするために、スマートタグを整理し、ブランド画像に割り当てられた可能性のある不正確なタグを削除することができます。
 
@@ -34,13 +169,13 @@ source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
 
 1. オムニサーチボックスで、タグに基づいてアセットを検索します。
 1. 検索結果を調査し、検索に関連性のない画像を特定します。
-1. 画像を選択し、ツールバーの「**[!UICONTROL タグを管理]**」アイコンをクリックまたはタップします。
-1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいて画像が検索されないようにするには、タグを選択し、ツールバーの「削除」アイコンをクリックまたはタップします。または、ラベルの横に表示される `X` 記号をクリックまたはタップします。
-1. タグに高いランクを割り当てるには、タグを選択し、ツールバーの「昇格」アイコンをクリックまたはタップします。昇格したタグは、「**[!UICONTROL タグ]**」セクションに移動されます。
-1. 「**[!UICONTROL 保存]**」、「**[!UICONTROL OK]**」の順にクリックまたはタップして、成功ダイアログを閉じます。
+1. Select the image, and then click the **[!UICONTROL Manage Tags]** icon from the toolbar.
+1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいてイメージを検索しない場合は、タグを選択し、ツールバーの削除アイコンをクリックします。 Alternatively, click `X` symbol that appears beside the label.
+1. タグに上位のランクを割り当てるには、タグを選択し、ツールバーのプロモーションアイコンをクリックします。 昇格したタグは、「**[!UICONTROL タグ]**」セクションに移動されます。
+1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. 画像のプロパティページに移動します。昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
-### スマートタグ付き AEM 検索結果について{#understandsearch}
+### スマートタグ付き AEM 検索結果について {#understandsearch}
 
 デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索結果に表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
@@ -54,151 +189,23 @@ source-git-commit: dfa9b099eaf7f0d155986bbab7d56901876d98f6
 1. スマートタグ内の「`woman running`」に一致するもの。
 1. スマートタグ内の「`woman`」または「`running`」に一致するもの。
 
-<!-- 
+### タグの制限 {#limitations}
 
-## Training the Smart Content Service {#training-the-smart-content-service}
+拡張スマートタグは、ブランド画像とそのタグの学習モデルに基づいています。これらのモデルは、タグを識別するうえで常に完璧であるわけではありません。現在のバージョンのスマートタグには、次の制限があります。
 
-For the Smart Content Service to recognize your business taxonomy, run it on a set of assets that already include tags that are relevant to your business. After training, the service can apply the same taxonomy on a similar set of assets.
+* 画像内の細かい違いを認識することはできません。例えば、スリムとレギュラーのフィットシャツ。
+* 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、T シャツのロゴなどです。
+* タグ付けは、AEM がサポートされているロケールでサポートされています。For a list of languages, see [Smart Tags release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-You can train the service multiple times to improve its ability to apply relevant tags. After each training cycle, run a tagging workflow and check whether your assets are tagged appropriately.
-
-You can train the Smart Content Service periodically or on requirement basis.
-
->[!NOTE]
->
->The training workflow runs on folders only.
-
-### Periodic training {#periodic-training}
-
-You can enable the Smart Content Service to train periodically on the assets and associated tags within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-Once this option is selected for a folder, AEM runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. By default, the training workflow runs on a weekly basis at 12:30 AM on Saturdays.
-
-### On-demand training {#on-demand-training}
-
-You can train the Smart Content Service whenever required from the Workflow console.
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder that includes the tagged assets for training the service.
-1. Specify a title for the workflow and a add a comment. Then, tap/click **[!UICONTROL Run]**. The assets and tags are submitted for training.
+スマートタグを使用してアセットを検索（通常または拡張）するには、「アセットの検索」（フルテキスト検索）を使用します。 スマートタグには個別の検索用述語はありません。
 
 >[!NOTE]
 >
->Once the assets in a folder are processed for training, only the modified assets are processed in subsequent training cycles.
+>スマートタグでタグをトレーニングして他の画像に適用する機能は、トレーニングに使用する画像の質に応じて異なります。
+>最適な結果を得るには、視覚的に似ている画像を使用し、それぞれのタグについてサービスのトレーニングを実施することをお勧めします。
 
-### Viewing training reports {#viewing-training-reports}
-
-To check whether the Smart Content Service is trained on your tags in the training set of assets, review the training workflow report from the Reports console.
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets > Reports]**.
-1. In the **[!UICONTROL Asset Reports]** page, tap/click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then tap/click **[!UICONTROL Next]** from the toolbar.
-1. Specify a title and description for the report. Under **[!UICONTROL Schedule Report]**, leave the **[!UICONTROL Now]** option selected. If you want to schedule the report for later, select **[!UICONTROL Later]** and specify a date and time. Then, tap/click **[!UICONTROL Create]** from the toolbar.
-1. In the **[!UICONTROL Asset Reports]** page, select the report you generated. To view the report, tap/click the **[!UICONTROL View]** icon from the toolbar.
-1. Review the details of the report.
-
-   The report displays the training status for the tags you trained. The green color in the **[!UICONTROL Training Status]** column indicates that the Smart Content Service is trained for the tag. Yellow color indicates that the service is not completely trained for a particular tag. In this case, add more images with the particular tag and run the training workflow to train the service completely on the tag.
-
-   If you do not see your tags in this report, run the training workflow again for these tags.
-
-1. To download the report, select it from the list, and tap/click the **[!UICONTROL Download]** icon from the toolbar. The report downloads as an Excel file.
-
-## Tagging assets automatically {#tagging-assets-automatically}
-
-After you have trained the Smart Content Service, you can trigger the tagging workflow to automatically apply appropriate tags on a different set of similar assets.
-
-You can run the tagging workflow periodically or whenever required.
-
->[!NOTE]
+>[!MORELIKETHIS]
 >
->The tagging workflow runs on both assets and folders.
+>* [スマートタグを使用するためのExperience Managerの設定](smart-tags-configuration.md)
+>* [スマートタグによるアセット管理の仕組み](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 
-### Periodic tagging {#periodic-tagging}
-
-You can enable the Smart Content Service to periodically tag assets within a folder. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
-
-Once this option is selected for a folder, the Smart Content Service automatically tags the assets within the folder. By default, the tagging workflow runs every day at 12:00 AM.
-
-### On-demand tagging {#on-demand-tagging}
-
-You can trigger the tagging workflow from the following to instantly tag your assets:
-
-* Workflow console
-* Timeline
-
->[!NOTE]
->
->If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
-
-#### Tagging assets from the Workflow console {#tagging-assets-from-the-workflow-console}
-
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Workflow > Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then tap/click **[!UICONTROL Start Workflow]** from the toolbar.
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
-1. Specify a title for the workflow and an optional comment. Then, tap/click **[!UICONTROL Run]**.
-
-Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
-
-#### Tagging assets from the timeline {#tagging-assets-from-the-timeline}
-
-1. From the Assets user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
-1. Tap/click the GlobalNav icon and open the timeline.
-1. Tap/click the arrow at the bottom, and then tap/click **[!UICONTROL Start Workflow]**.
-1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
-1. Tap/click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify whether the Smart Content Service tagged your assets properly. For details, see [Managing Smart Tags](manage-smart-tags.md).
-
->[!NOTE]
->
->In the subsequent tagging cycles, only the modified assets are tagged again with newly-trained tags.
->
->However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours.
->
->For periodic tagging workflows, unaltered assets are tagged when the gap exceeds 6 months.
-
-
-## Smart Content Service Training Guidelines {#smart-content-service-training-guidelines}
-
-To be able to effectively tag your brand images, the Smart Content Service requires that the training images conform to certain guidelines. For best results, images in your training set should conform to the following guidelines:
-
-**Quantity and size:** Minimum 30 images per tag. Minimum of 500 pixels on the longer side.
-
-**Coherence**: Images for a tag should be visually similar.
-
-For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coherence.png)
-
-**Coverage**: There should be sufficient variety in the images in the training. The idea is to supply a few but reasonably diverse examples so that AEM learns to focus on the right things. If you're applying the same tag on visually dissimilar images, include at least five examples of each kind.
-
-For example, for the tag *model-down-pose*, include more training images similar to the highlighted image below for the service to identify similar images more accurately during tagging.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/coverage_1.png)
-
-**Distraction/obstruction**: The service trains better on images that have less distraction (prominent backgrounds, unrelated accompaniments, such as objects/persons with the main subject).
-
-For example, for the tag *casual-shoe*, the second image is not a good training candidate.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/distraction.png)
-
-**Completeness:** If an image qualifies for more than one tag, add all applicable tags before including the image for training. For example, for tags, such as *raincoat* and *model-side-view*, add both the tags on the eligible asset before including it for training.
-
-![Illustrative images to exemplify the guidelines for training](assets/do-not-localize/completeness.png)
-
-### Training limitations {#limitations}
-
-Enhanced smart tags are based on learning models of brand images and their tags. These models are not always perfect at identifying tags. The current version of the Smart Content Service has the following limitations:
-
-* Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
-* Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-* Tagging is supported in the locales that AEM is supported in. For a list of languages, see [Smart Content Services release notes](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
-
-To search for assets with smart tags (regular or enhanced), use the Assets Omnisearch (full-text search). There is no separate search predicate for smart tags. 
-
->[!NOTE]
->
->The ability of the Smart Content Service to train on your tags and apply them on other images depends on the quality of images you use for training. 
->
->For best results, Adobe recommends that you use visually similar images to train the service for each tag.
-
--->
