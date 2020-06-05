@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1843'
 ht-degree: 6%
 
 ---
@@ -120,17 +120,12 @@ PM/EM review required before publishing.
 
 **3Dコンテンツの取り込み、プレビュー、配信のサポート**
 
-3DファイルをAEM Assets内に格納して使用できるようになりました。 .obj、.stl、.gltf、.glbファイルなど、様々なコア3Dファイルをアップロード、プレビュー、活用できます。 また、3Dエクスペリエンス [!DNL Dynamic Media]は、任意のURLやビューアを使用して設定および配信できます。 これには、 [!DNL Dynamic Media] 3Dエクスペリエンスビューア、サイト3Dビューアコンポーネント、および3Dファイル配信機能( [!DNL Dynamic Media] AR/VR)が含まれます。
-
-<!-- TBD: Add link to the DM help article, if any. -->
+3DファイルをAEM Assets内に格納して使用できるようになりました。 .obj、.stl、.gltf、.glbファイルなど、様々なコア3Dファイルをアップロード、プレビュー、活用できます。 また、3Dエクスペリエンス [!DNL Dynamic Media]は、任意のURLやビューアを使用して設定および配信できます。 これには、 [!DNL Dynamic Media] 3Dエクスペリエンスビューア、サイト3Dビューアコンポーネント、および3Dファイル配信機能( [!DNL Dynamic Media] AR/VR)が含まれます。 詳しくは、ダイナミックメディアでの3Dアセットの [操作を参照してください](/help/assets/dynamic-media/assets-3d.md)。
 
 <!-- Hiding this as the GA is at a later date. 
-TBD: Add link to the AAL help article. 
-
 **Adobe Asset Link support for Adobe XD**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application.
-
+With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 -->
 
 **アクセシビリティの強化**
@@ -141,18 +136,15 @@ With the latest release, [!DNL Experience Manager Assets] provides support for a
 * ユーザーインターフェイスの要素、コントロールおよび入力フォームのフィールドには、キーボードを使用してアクセスできます。
 * 一部のインターフェイス要素の色やコントラストの変更。視覚や色の知覚が限られているユーザーにとって、見分けやすくなります。 例えば、 [!UICONTROL プロパティ] ページの星形評価アイコンとカード表示の星形評価アイコンのコントラストが適切に表示されるようになりました。
 
-<!-- TBD: Add link to the a11y help article if created. Else add it post-GA. -->
-
 **その他の機能強化**
 
 このリリースでは、次の機能強化が行われています。
 
-* アセットユーザーインターフェイスのアクセシビリティが向上しました。
 * アセット処理プロファイルを使用してアセットを再処理し、プロセスをフルコントロール(アセット処理を実行し、特定の処理プロファイルを適用し、後処理ワークフローを実行するかどうかを決定)できる。
 * 基になるクラスターインスタンスが背後で再起動された場合に、検索クエリがより高速に結果を返すようになりました（以前は、初期検索の実行がそれ以上続く可能性がありました）。
-* アセットインターフェイスのリスト表示でアセットを表示し、検索結果でアセットを表示する場合は、「名前」で並べ替えます。
-* アセットインターフェイスのリスト表示でアセットを表示し、検索結果でアセットを表示する場合は、「作成日」（日付）で並べ替えます。
-* EPSファイルの画像への変換をサポートします。
+* アセットインターフェイスのリスト表示でアセットを表示したり、検索結果でアセットを表示する場合は、「名前」で並べ替えます。 アセットの [検索を参照してください](/help/assets/search-assets.md#sort)。
+* アセットインターフェイスのリスト表示でアセットを表示し、検索結果でアセットを表示する場合は、「作成日」（日付）で並べ替えます。 アセットの [検索を参照してください](/help/assets/search-assets.md#sort)。
+* アセットマイクロサービスを使用したEPSファイルの画像への変換をサポートします。
 
 ### バグ修正 {#assets-bug-fixes}
 
