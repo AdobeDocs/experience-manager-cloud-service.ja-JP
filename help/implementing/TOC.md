@@ -2,10 +2,10 @@
 sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: 83c2b37f10b46c1a88e36e49b448b38137bda1c0
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 89%
+source-wordcount: '203'
+ht-degree: 85%
 
 ---
 
@@ -37,6 +37,9 @@ ht-degree: 89%
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
    + [レンダリングコンポーネントのコンテンツフラグメントの設定](developing/extending/content-fragments-configuring-components-rendering.md)
    + [検索フォームの設定](developing/extending/search-forms.md)
+   + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
+   + [RTEプラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [アクセス可能なサイトを作成するためのRTEの設定](/help/implementing/developing/extending/rte-accessible-content.md)
 + AEM as a Cloud Service へのデプロイ {#deploying}
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
    + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
