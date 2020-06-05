@@ -4,10 +4,10 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
 workflow-type: tm+mt
-source-wordcount: '4284'
-ht-degree: 98%
+source-wordcount: '4419'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,19 @@ ht-degree: 98%
 
 ## アセットのアップロード {#uploading-assets}
 
-詳しくは、[Experience Manager へのデジタルアセットの追加](add-assets.md)を参照してください。
+[Adobe Experience Manager へのデジタルアセットの追加](add-assets.md)を参照してください。
+
+## 重複アセットの検出 {#detect-duplicate-assets}
+
+<!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
+
+DAMユーザーがリポジトリに既に存在する1つ以上のアセットをアップロードした場合、は重複を検出し、ユーザーに通知します。 [!DNL Experience Manager] 重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。 この機能を有効にするには、 [!UICONTROL Adobe AEM Cloud Asset Duplication Detectorを設定します]。 OSGi設定 [の実行方法を参照](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製検出は、に保存された一意の `dam:sha1` 値に基づき `jcr:content/metadata/dam:sha1`ます。 つまり、ファイル名が異なる場合でも重複アセットが検出されます。
+
+![重複アセットのOSGi設定の検出](assets/duplicate-detection.png)
+
+有効にすると、Experience Managerは重複アセットの通知をインボックスに送信します。 複数の重複の集計結果です。 ユーザーは、結果に基づいてアセットを削除するよう選択できます。
+
+![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
 
 ## アセットのプレビュー {#previewing-assets}
 
@@ -89,6 +101,7 @@ ht-degree: 98%
    * アセットが表示またはダウンロードされた回数
    * アセットが使用されたチャネルまたはデバイス
    * アセットが最近使用されたクリエイティブソリューション
+
    詳しくは、[アセットインサイト](assets-insights.md)を参照してください。
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
@@ -160,6 +173,7 @@ ht-degree: 98%
    * 「**[!UICONTROL 戻る]**」をタップまたはクリックして、**[!UICONTROL 宛先を選択]**&#x200B;画面に戻ります。
 
    * 「**[!UICONTROL キャンセル]**」をタップまたはクリックして、移動操作を停止します。
+
    参照を更新しなければ、引き続きアセットの以前のパスが示されます。参照を調整すると、更新され、アセットの新しいパスが反映されます。
 
 ### レンディションの管理 {#managing-renditions}
@@ -233,6 +247,7 @@ ht-degree: 98%
 
       * アセットに参照がない場合は、アセットが削除されます。
       * アセットに参照がある場合は、「**1 つ以上のアセットが参照されています。**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
+
    >[!NOTE]
    >
    >アセットを削除するには、dam/asset で削除権限が必要です。変更権限のみ付与されている場合、アセットのメタデータの編集とアセットへの注釈の追加のみが可能で、アセットやそのメタデータの削除は実行できません。
@@ -292,6 +307,7 @@ ht-degree: 98%
 
    * **[!UICONTROL キャンセル]**：アクションを停止します。
    * **[!UICONTROL 非公開]**：指定された日付にアセットを非公開にします（パブリッシュ環境では使用できません）。
+
    >[!NOTE]
    >
    >複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
@@ -344,6 +360,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
    * アセットを選択し、ツールバーの「**[!UICONTROL 編集]**」アイコンをクリックまたはタップします。
    * カード表示で、アセットに表示される「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
    * アセットページで、ツールバーの「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
+
    ![edit_icon](assets/edit_icon.png)
 
 1. 画像を切り抜くには、**切り抜き**&#x200B;アイコンをタップまたはクリックします。
@@ -415,6 +432,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 
    * [クイックアクション](#quick-actions)
    * アセットを選択した後またはアセットページに移動した後に、ツールバーから
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 1. タイムラインの一番下の&#x200B;**[!UICONTROL コメント]**&#x200B;ボックスにコメントを追加します。または、画像内の任意の領域をマークアップし、**[!UICONTROL 注釈を追加]**&#x200B;ダイアログに注釈を追加します。
