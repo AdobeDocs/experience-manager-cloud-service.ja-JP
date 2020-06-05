@@ -3,10 +3,10 @@ title: 拡張スマートタグ
 description: Adobe Sensei の AI および ML サービスを利用して、状況に応じた説明的なビジネスタグを適用し、アセットの検出とコンテンツベロシティ（コンテンツ創出の高速化）を向上させます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 49%
+source-wordcount: '1005'
+ht-degree: 22%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 49%
 
 タクソノミ制御のボキャブラリでアセットをタグ付けすると、タグベースの検索でアセットを簡単に識別および取得できます。 アドビでは、人工知能と機械学習アルゴリズムを使用して画像をトレーニングするスマートタグを提供しています。 スマートタグは、 [Adobe Senseiの人工知能フレームワークを使用して](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) 、タグ構造とビジネス分類に対する画像認識アルゴリズムのトレーニングを行います。
 
-The Smart Tags functionality is available for purchase as an add-on to [!DNL Experience Manager]. 購入後、Adobe I/Oへのリンクを記載した電子メールが組織の管理者に送信されます。 管理者はリンクにアクセスし、スマートタグとAdobe I/Oを [!DNL Experience Manager] 使用して統合します。
+The Smart Tags functionality is available for purchase as an add-on to [!DNL Experience Manager]. 購入後、Adobe Developer Consoleへのリンクを記載した電子メールが組織の管理者に送信されます。 管理者は、Adobe Developer Consoleを [!DNL Experience Manager] 使用してスマートタグを統合するためのリンクにアクセスします。
 
 <!-- TBD: 
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
@@ -24,45 +24,35 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 4. Post-GA, if time permits, create a video.
 -->
 
-## Adobe I/Oとの統合 {#aio-integration}
+## Adobe Developer Consoleとの連携 {#aio-integration}
 
-SCSを使用して画像にタグ付けする前に、Adobe I/O [!DNL Adobe Experience Manager] を使用してSmart Tagsサービスと統合します。 バックエンドで、 [!DNL Experience Manager] サーバーは、要求をサービスに転送する前に、Adobe I/Oゲートウェイを使用してサービス資格情報を認証します。
+SCSを使用して画像にタグ付けする前に、Adobe Developer Console [!DNL Adobe Experience Manager] を使用してSmart Tagsサービスと統合します。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
 
 * 公開鍵を生成す [!DNL Experience Manager] る設定をに作成します。 OAuth 統合用の公開証明書を取得します。
-* Adobe I/O で統合を作成し、生成した公開鍵をアップロードします。
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe I/O.
+* Adobe Developer Consoleで統合を作成し、生成した公開鍵をアップロードします。
+* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
 * （オプション）アセットアップロード時の自動タグ付けを有効化します。
 
-### Adobe I/O統合の前提条件 {#prerequisite-for-aio-integration}
+### Adobe Developer Console統合の前提条件 {#prerequisite-for-aio-integration}
 
-スマートタグを使用する前に、次の手順を実行してAdobe I/O上で統合を作成します。
+スマートタグを使用する前に、次の手順に従ってAdobe Developer Consoleで統合を作成します。
 
 * 組織の管理者権限を持つ Adobe ID アカウントがあること。
 * 組織でスマートタグが有効になっています。
 
 ### Obtain a public certificate {#obtain-public-certificate}
 
-公開証明書により、Adobe I/O でプロファイルを認証できます。
+公開証明書を使用すると、Adobe Developer Consoleでプロファイルを認証できます。 証明書は、内から作成し [!DNL Experience Manager]ます。
 
-1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** クラウドサービス **[!UICONTROL /レガシーのクラウドサービスにアクセスします]******。
+1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** セキュリティ **[!UICONTROL /]** Adobe IMS設定にアクセスします ****。
 
-1. On the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+1. [!UICONTROL Adobe IMS設定] ページで、「 **[!UICONTROL 作成]**」をクリックします。 「 **[!UICONTROL Cloud Solution]** 」メニューで「 **[!UICONTROL スマートタグ]**」を選択します。
 
-1. **[!UICONTROL 設定を作成]**&#x200B;ダイアログで、スマートタグ設定のタイトルと名前を指定します。「**[!UICONTROL 作成]**」をクリックします。
+1. Select **[!UICONTROL Create new certificate]**. 名前を入力し、「証明書を **[!UICONTROL 作成]**」をクリックします。 「**[!UICONTROL OK]**」をクリックします。
 
-1. **[!UICONTROL AEM スマートコンテンツサービス]**&#x200B;ダイアログで、以下の値を使用します。
+1. Click **[!UICONTROL Download Public Key]**.
 
-   **[!UICONTROL サービス URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
-
-   **[!UICONTROL 認証サーバー]**: `https://ims-na1.adobelogin.com`
-
-   その他のフィールドは現時点では空白のままにします（後で指定します）。「**[!UICONTROL OK]**」をクリックします。
-
-   ![Experience ManagerのSmart Content ServiceダイアログでコンテンツサービスURLを指定](assets/aem_scs.png)
-
-1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
-
-   ![スマートタグサービス用に作成された設定](assets/download_link.png)
+   ![Experience Managerのスマートタグで公開鍵を作成](assets/aem_smarttags-config1.png)
 
 ### 証明書の有効期限が切れた場合に再設定する {#certrenew}
 
@@ -77,47 +67,43 @@ SCSを使用して画像にタグ付けする前に、Adobe I/O [!DNL Adobe Expe
 
    *図： キーストアの既存の`similaritysearch`エントリを削除して、新しいセキュリティ証明書を追加します。*
 
-1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL 従来のクラウドサービス]**&#x200B;に移動します。**[!UICONTROL アセットのスマートタグ]**／**[!UICONTROL 設定を表示]**／**[!UICONTROL 利用可能な設定]**&#x200B;をクリックします。必要な設定をクリックします。
+1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** セキュリティ **[!UICONTROL /]** Adobe IMS設定にアクセスします ****。 使用可能なスマートタグ設定を開きます。 To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
 
-1. 公開証明書をダウンロードするには、「**[!UICONTROL OAuth 統合用の公開証明書をダウンロード]**」をクリックします。
-
-1. https://console.adobe.io [にアクセスし](https://console.adobe.io) 、プロジェクト内の既存のサービスに移動します。 新しい証明書をアップロードします。詳細については、[Adobe I/O 統合の作成](#create-aio-integration)の手順を参照してください。
+1. https://console.adobe.io [にアクセスし](https://console.adobe.io) 、プロジェクト内の既存のサービスに移動します。 新しい証明書をアップロードし、設定します。 設定について詳しくは、Adobe Developer Console統合の [作成の手順を参照してください](#create-aio-integration)。
 
 ### 統合の作成 {#create-aio-integration}
 
-スマートタグAPIを使用するには、Adobe I/OでAPIキー、テクニカルアカウントID、組織IDおよびクライアントシークレットを生成する統合を作成します。
+スマートタグを使用するには、Adobe Developer ConsoleでAPIキー、テクニカルアカウントID、組織IDおよびクライアントシークレットを生成する統合を作成します。
 
-1. [https://console.adobe.io](https://console.adobe.io/) にアクセスします。
-1. 適切なアカウントを選択し、関連付けられた組織の役割がシステム管理者であることを確認します。 プロジェクトを作成するか、既存のプロジェクトを開きます。 プロジェクトページで、「 **[!UICONTROL API追加」をクリックします]**。
-1. API **[!UICONTROL 追加ページで、「]** Experience Cloud **[!UICONTROL 」を選択し、「]** Smart Content ****」を選択します。 「**[!UICONTROL 続行]**」をクリックします。
-1. 次のページで、「**[!UICONTROL New integration]**」を選択します。「**[!UICONTROL 続行]**」をクリックします。
-1. **[!UICONTROL Integration Details]** ページで、統合ゲートウェイの名前を指定し、説明を追加します。
-1. 「**[!UICONTROL Public keys certificates]**」で、上記でダウンロードした `AEM-SmartTags.crt` ファイルをアップロードします。
-1. 「**[!UICONTROL 統合を作成]**」をクリックします。
-1. To view the integration information, click **[!UICONTROL Continue to integration details]**.
+1. ブラウザ [ーでhttps://console.adobe.io](https://console.adobe.io/) にアクセスします。 適切なアカウントを選択し、関連付けられた組織の役割がシステム管理者であることを確認します。
+1. 任意の名前でプロジェクトを作成します。 「 **[!UICONTROL API追加」をクリックします]**。
+1. API **[!UICONTROL 追加ページで、「]** Experience Cloud **[!UICONTROL 」を選択し、「]** Smart Content ****」を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
+1. 「公開鍵を **[!UICONTROL アップロード]**」を選択します。 からダウンロードした証明書ファイルを指定し [!DNL Experience Manager]ます。 正常にアップロードされた [!UICONTROL 公開鍵] （複数可）というメッセージが表示されます。 「**[!UICONTROL 次へ]**」をクリックします。
+1. [!UICONTROL 新しいサービスアカウント(JWT)秘密鍵証明書を作成] (JWT)ページには、設定したサービスアカウントの公開鍵が表示されます。 「**[!UICONTROL 次へ]**」をクリックします。
+1. 製品プロファイルを **[!UICONTROL 選択]** ページで、「 **[!UICONTROL Smart Content Services]**」を選択します。 「設定済みAPI **[!UICONTROL を保存]**」をクリックします。 設定に関する詳細情報がページに表示されます。 でスマートタグをさらに設定する際は、このページを開いたままにして、Experience Managerでこれらの値をコピーして追加 [!DNL Experience Manager]します。
 
    ![「Overview」タブで、統合について指定した情報を確認できます。](assets/integration_details.png)
 
 ### スマートタグの設定 {#configure-smart-content-service}
 
-統合を設定するには、Adobe I/O 統合のテクニカルアカウント ID、組織 ID、クライアントの秘密鍵、認証サーバーおよび API キーのフィールドの値を使用します。Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] instance.
+統合を設定するには、Adobe Developer Console統合のペイロード、クライアントシークレット、認証サーバーおよびAPIキーフィールドの値を使用します。
 
-1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
-1. 「**[!UICONTROL アセットのスマートタグ]**」で、上記で作成した設定を開きます。サービスの設定ページで、「**[!UICONTROL 編集]**」をクリックします。
-1. **[!UICONTROL AEM スマートコンテンツサービス]**&#x200B;ダイアログで、「**[!UICONTROL サービス URL]**」および「**[!UICONTROL 認証サーバー]**」フィールドに事前入力された値を使用します。
-1. 「**[!UICONTROL API キー]**」、「**[!UICONTROL テクニカルアカウント ID]**」、「**[!UICONTROL 組織 ID]**」、「**[!UICONTROL クライアントの秘密鍵]**」の各フィールドでは、上記で生成された値を使用します。
+1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** セキュリティ **[!UICONTROL /]** Adobe IMS設定にアクセスします ****。
+1. 「 **[!UICONTROL Adobe IMSテクニカルアカウント設定]** 」ページにアクセスし、必要な **[!UICONTROL タイトルを入力します]**。
+1. 「 **[!UICONTROL 認証サーバー]** 」フィールドに `https://ims-na1.adobelogin.com` URLを入力します。
+1. 「 **[!UICONTROL APIキー]** 」フィールドに、 **[!UICONTROL から]**[!DNL Adobe Developer Console]クライアントIDを入力します。
+1. 「 **[!UICONTROL Client Secret]** ( **[!UICONTROL クライアントシークレット)]** 」フィールドに、 [!DNL Adobe Developer Console]から「Client Secret（クライアントシークレット）」を入力します。 「 **[!UICONTROL クライアントシークレットを]** 取得」オプションをクリックして表示します。
+1. プロジェクト [!DNL Adobe Developer Console]で、左側の余白から「 **[!UICONTROL サービスアカウント(JWT)]** 」をクリックします。 「JWT **[!UICONTROL を生成]** 」タブをクリックします。 「 **[!UICONTROL Copy]** 」をクリックして、表示された **[!UICONTROL JWT Payloadをコピーします]**。 この値は、の **[!UICONTROL Payload]** フィールドに指定し [!DNL Experience Manager]ます。 「**[!UICONTROL 作成]**」をクリックします。
 
 ### 設定の検証 {#validate-the-configuration}
 
-設定を完了したら、JMX MBean を使用して設定を検証できます。検証するには、次の手順に従います。
+設定が完了したら、次の手順に従って設定を検証します。
 
-1. で [!DNL Experience Manager] サーバーにアクセスし `https://[aem_server]:[port]`ます。
+1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** セキュリティ **[!UICONTROL /]** Adobe IMS設定にアクセスします ****。
 
-1. **[!UICONTROL ツール／操作／Web コンソール]**&#x200B;に移動して、OSGi コンソールを開きます。**[!UICONTROL メイン／JMX]** を選択します。
-1. 「**[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**」をクリックします。**[!UICONTROL SimilaritySearch Miscellaneous Tasks]** が開きます。。
-1. 「**[!UICONTROL validateConfigs()]**」をクリックします。In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
+1. スマートタグ設定を選択します。 ツールバーの「 **[!UICONTROL ヘルスをチェック]** 」をクリックします。 「**[!UICONTROL チェック]**」をクリック。「 [!UICONTROL Healthy configuration] 」というメッセージが表示されたダイアログで、設定が機能していることを確認します。
 
-   同じダイアログに検証結果が表示されます。
+![スマートタグ設定の検証](assets/smart-tag-config-validation.png)
 
 ## 新しくアップロードされたアセットに対するスマートタグの有効化（オプション） {#enable-smart-tagging-for-uploaded-assets}
 
