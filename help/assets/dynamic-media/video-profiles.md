@@ -1,9 +1,9 @@
 ---
 title: ビデオプロファイル
 description: Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。また、ビデオにスマート切り抜きを追加することもできます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 207f99b9b53188178c6137bb94a184f306b17f96
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3676'
 ht-degree: 100%
 
@@ -346,7 +346,7 @@ AEM でビデオプロファイルを作成または編集する際にはユー�
 1. ツールバーの「**[!UICONTROL 削除]**」をタップします。
 1. 「**[!UICONTROL OK]**」をタップします。
 
-## ビデオプロファイルのフォルダーへの適用{#applying-a-video-profile-to-folders}
+## ビデオプロファイルのフォルダーへの適用 {#applying-a-video-profile-to-folders}
 
 フォルダーにビデオプロファイルを割り当てると、サブフォルダーは自動的に親フォルダーのプロファイルを継承します。つまり、フォルダーに 1 つのビデオプロファイルのみを適用すればよいことになります。そのため、アセットをアップロード、保存、使用およびアーカイブする場所のフォルダー構造については入念に検討してください。
 
