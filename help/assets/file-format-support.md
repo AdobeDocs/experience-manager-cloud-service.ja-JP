@@ -2,9 +2,9 @@
 title: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ
 description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
 
