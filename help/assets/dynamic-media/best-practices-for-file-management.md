@@ -1,8 +1,11 @@
 ---
 title: プロファイルを使用するためのデジタルアセットの整理のベストプラクティス
 description: デジタルアセットファイルに関する命名、整理、メタデータ管理のヒントとベストプラクティスです。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 100%
 
 ---
 
