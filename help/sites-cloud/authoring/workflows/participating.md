@@ -1,8 +1,11 @@
 ---
 title: ワークフローへの参加
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 100%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * [ワークフロー項目を開いて、詳細を表示（またはアクションを実行）](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [ワークロードペイロード（複数のリソース）を表示](#viewing-the-workflow-payload-multiple-resources)
 
-## 使用可能なワークフローアクションの通知{#notifications-of-available-workflow-actions}
+## 使用可能なワークフローアクションの通知 {#notifications-of-available-workflow-actions}
 
 作業項目（**コンテンツを承認**&#x200B;など）が割り当てられると、様々なアラートや通知が表示されます。
 
@@ -36,6 +39,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * ページが対象であるワークフローの数。以下の操作を実行できます。
       * 左／右の矢印を使用して、多様なワークフローのステータス情報を移動できます。
       * 実際の数字をクリック／タップして、すべての適用可能なワークフローのドロップダウンリストを開いてから、ステータスバーに表示するワークフローを選択します。
+
    ![複数のワークフローを含むページ](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
    >[!NOTE]
