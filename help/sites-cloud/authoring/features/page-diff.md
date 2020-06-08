@@ -1,13 +1,16 @@
 ---
 title: ページの差分
 description: ページの差分表示を使用すると、2 つのページを並べて比較し、差分を強調表示できます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
 
 
-# ページの差分{#page-diff}
+# ページの差分 {#page-diff}
 
 ## 概要 {#introduction}
 
@@ -32,7 +35,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 それらのコンテキスト内で差分の確認を開始する方法については、それぞれのトピックを参照してください。
 
-### 差分の表示{#presentation-of-differences}
+### 差分の表示 {#presentation-of-differences}
 
 比較対象のコンテンツにかかわらず、差分の表示は同じです。
 
@@ -65,7 +68,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >言語コピーを比較する場合は、翻訳ですべてが変更され、強調表示をしても意味がないので、強調表示は無効になります。
 
-### 全画面表示および終了{#fullscreen-and-exiting}
+### 全画面表示および終了 {#fullscreen-and-exiting}
 
 特定のコンテンツに集中するために、並列比較による差分表示のいずれかの「側」の全画面表示アイコンをクリックして、それをフルブラウザーウィンドウに拡大することができます。
 
