@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 92%
 
 アセット処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に依存してします。処理プロファイルには、デフォルトの設定が用意されていますが、管理者がより具体的なアセット処理設定を追加することもできます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズでは、拡張機能と完全なカスタマイズが可能です。
 
-Asset Microservicesを使用すると、 [様々なファイルタイプ](/help/assets/file-format-support.md) （追加設定なし）を処理できます。これは、以前のバージョンのExperience Managerでは実現できなかったフォーマットです。 例えば、PSD形式とPSB形式のサムネール抽出が、以前はImageMagickなどのサードパーティソリューションが必要だった可能性があります。
+アセットマイクロサービスを使用すると、以前のバージョンの Experience Manager よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![アセット](assets/asset-microservices-flow.png "処理の高レベル表示アセット処理の高レベル表示")
+![アセット処理の高レベル表示](assets/asset-microservices-flow.png "アセット処理の高レベル表示")
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ AEM の大きなサイズのアセットを Adobe InDesign ドキュメントに
 
 処理プロファイルをフォルダーに適用する方法は次の 2 通りあります。
 
-* 管理者が、**[!UICONTROL ツール／アセット／処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
+* 管理者が、**[!UICONTROL ツール／Assets／処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
 * ユーザーが Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL 処理プロファイル]**」タブのドロップダウンでそのフォルダーに適した処理プロファイルを選択します。選択内容は、「**[!UICONTROL 保存して閉じる]**」アクションの実行時に保存されます。
 
 >[!NOTE]
