@@ -1,13 +1,16 @@
 ---
 title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用することで、オーサリング時の時間を節約できます
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
 
-# コンソールのキーボードショートカット{#keyboard-shortcuts-for-consoles}
+# コンソールのキーボードショートカット {#keyboard-shortcuts-for-consoles}
 
 サイト、アセット、ユーザー、グループ、プロジェクト、エクスペリエンスフラグメントの各コンソールで、次のショートカットを使用できます。
 
