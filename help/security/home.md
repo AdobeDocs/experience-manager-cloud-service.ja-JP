@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のセキュリティ
 description: Adobe Experience Manager as a Cloud Service のセキュリティに関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2312250505f47dc84acd1987b5ebae21fd232e2d
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 100%
 
 ---
 
