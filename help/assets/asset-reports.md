@@ -2,13 +2,16 @@
 title: アセットレポート
 description: この記事では、AEM Assets 内のアセットに関する様々なレポートとレポートの生成方法について説明します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 100%
 
 ---
 
 
-# アセットレポート{#asset-reports}
+# アセットレポート {#asset-reports}
 
 アセットレポートは、Adobe Experience Manager（AEM）Assets デプロイメントのユーティリティを評価するための重要なツールです。AEM Assets では、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、ダウンロードされたアセットや共有されているアセットなどに関する有用な情報が提供されます。
 
@@ -104,7 +107,7 @@ AEM 管理者は、これらのレポートを手軽に生成し、実装に合�
 
    ツールバーの「ダウンロード」アイコンをタップまたはクリックすると、レポートを CSV 形式でダウンロードできます。
 
-## カスタム列の追加{#add-custom-columns}
+## カスタム列の追加 {#add-custom-columns}
 
 次のレポートにカスタム列を追加し、独自の要件に応じてさらに多くのデータを表示することができます。
 
