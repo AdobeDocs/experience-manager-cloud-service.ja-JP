@@ -2,8 +2,11 @@
 title: デジタルアセットの整理
 description: Adobe Experience Manager Assets に用意されている様々な手段を使用して、デジタルアセットを整理します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +17,7 @@ Microsoft Office および PDF ドキュメントのすべてのデジタルア�
 
 AEM Assets では、コンテンツを整理するための方法が複数サポートされています。フォルダーを使用して階層的な方法で構成したり、タグなどを使用して、順序のないアドホックな方法で構成したりできます。ユーザーは DAM アセットエディターでタグを編集できます。このエディターでは、サブアセット、レンディションおよびメタデータが表示されます。
 
-## フォルダーの作成{#create-folders}
+## フォルダーの作成 {#create-folders}
 
 「自然」に関するすべての画像などの、アセットのコレクションを構成する場合に、それらを保存するフォルダーを作成できます。**&#x200B;フォルダーを使用すると、アセットを分類および整理できます。ただし、効率向上のためには必ずアセットをフォルダーで整理しなければならないということではありません。
 
