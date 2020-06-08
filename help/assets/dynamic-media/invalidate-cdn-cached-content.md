@@ -1,13 +1,16 @@
 ---
 title: CDN にキャッシュされたコンテンツの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 100%
 
 ---
 
 
-# CDN にキャッシュされたコンテンツの無効化{#invalidating-your-cdn-cached-content}
+# CDN にキャッシュされたコンテンツの無効化 {#invalidating-your-cdn-cached-content}
 
 CDN を使用して Dynamic Media アセットをキャッシュすることで、高速配信が可能になります。ただし、あるアセットを更新する場合に、変更をすぐに適用したいことがあります。コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 
