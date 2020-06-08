@@ -1,8 +1,11 @@
 ---
 title: Adobe Analytics との統合
 description: 'Adobe Analytics との統合 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6754693da488b0bc44a71aa9f0402fc1308b703a
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 100%
 
 ---
 
@@ -49,7 +52,7 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
 
 >[!NOTE]
 >
->Adobe Analytics をカスタムプロキシ設定で使用している場合、**Apache HTTP Client** プロキシ設定に必要な、[2 つの OSGi バンドルを設定](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html)する必要があります（例えば、Web コンソールで）。AEM の一部の機能で 3.x API を使用し、他の機能で 4.x API を使用するので、両方とも必要です。次の設定をおこないます。
+>Adobe Analytics をカスタムプロキシ設定で使用している場合、（例えば、Web コンソールで）**Apache HTTP Client** プロキシ設定に必要な [2 つの OSGi バンドルを設定](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/configuring-osgi.html)する必要があります。AEM の一部の機能では 3.x API を使用し、他の機能では 4.x API を使用するので、両方とも必要です。設定:
 >
 >* **Day Commons HTTP Client 3.1**（3.x API を設定）。
    >  例：[https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
@@ -57,6 +60,7 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
    >
 * **Apache HTTP コンポーネントプロキシ設定**（4.x API を設定）。
    >  例：[https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
