@@ -1,8 +1,11 @@
 ---
 title: ローンチの作成
 description: 今後のアクティベートのために既存の Web ページの新しいバージョンを更新できるように、ローンチを作成できます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 100%
 
 ---
 
@@ -30,18 +33,20 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 使用しているコンソールに応じて、次の操作をおこないます。
    * **ローンチ**：
       1. ツールバーの「**ローンチを作成**」を選択してウィザードを開きます。
-   * **サイト**：
+   * **Sites**:
       1. ツールバーの「**作成**」を選択して選択ボックスを開きます。
       1. ここから「**ローンチを作成**」を選択してウィザードを開きます。
+
    >[!NOTE]
    >
-   >**サイト**&#x200B;コンソールで、「[選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)」を使用して、「**作成**」を選択する前にページを選択できます。
+   >**Sites** コンソールで、「[選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)」を使用して、「**作成**」を選択する前にページを選択できます。
    >
    >こうすることで、最初のソースページとして選択されたページが使用されます。
 
 1. **ソースを選択**&#x200B;のステップでは、**ページを追加**&#x200B;する必要があります。複数のページを選択することもできます。それぞれにパスを指定します。
    * 必要な場所に移動します。
    * ソースページ（複数可）を選択し、確定します（チェックマークを付けます）。
+
    必要に応じて繰り返します。
 
    ![ローンチのソースの選択](/help/sites-cloud/authoring/assets/launches-select-source.png)
@@ -57,6 +62,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **サブページを含める**：
 
       * ローンチを子ページと共に作成するかどうかを指定します。デフォルトでは、このサブページが含まれます。
+
    「**次へ**」をクリックして次に進みます。
 
    ![ローンチのソースの選択](/help/sites-cloud/authoring/assets/launches-select-source-2.png)
@@ -68,6 +74,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * **新しいテンプレートを使用してページを置き換える**：詳しくは、[新しいテンプレートでのローンチの作成](#create-launch-with-new-template)を参照してください。
    * **ソースページのライブデータを継承**：ソースページに変更があったときにローンチページのコンテンツを自動的に更新する場合は、このオプションを選択します。このオプションでは、ローンチをライブコピーにすることでこれを実現します。デフォルトでは、このオプションが選択されています。<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
    * **ローンチ日**：ローンチコピーがアクティベートされる日付と時間（「**実稼動準備完了**」フラグによって変わります。[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください）。
+
    ![ローンチのプロパティ](/help/sites-cloud/authoring/assets/launches-properties.png)
 
 1. 「**作成**」を使用してプロセスを完了し、新しいローンチを作成します。ローンチをすぐに開くかどうかを確認するダイアログが表示されます。
@@ -100,7 +107,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >このメカニズムを使用して、[既存のページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)のテンプレートを変更できます。ただし、コンテンツが失われることは考慮する必要があります。
 
-### ネストされたローンチの作成{#creating-a-nested-launch}
+### ネストされたローンチの作成 {#creating-a-nested-launch}
 
 ネストされたローンチを作成（ローンチをローンチ内に作成）して、既存のローンチからローンチを作成できます。これにより、作成者は各ローンチで同じ変更を複数回加えることなく、既に加えられた変更を活用できます。
 
