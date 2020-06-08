@@ -33,6 +33,7 @@ See also [Embedding the Dynamic Media Video viewer or Image viewer on a web page
 >
 >* アセットの URL を使用するためには、そのアセットを公開する必要があります。アセットが公開されていない場合、URL をコピーして Web ブラウザーに貼り付けても機能しません。
 >* ライブ配信をするには、画像プリセットおよびビューアプリセットをアクティベートして公開する必要があります。
+
 >
 
 
