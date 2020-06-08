@@ -1,8 +1,11 @@
 ---
 title: Dynamic Media アセットの配信
 description: Dynamic Media を使用する場合、ビデオでも画像でも、Dynamic Media アセットを Web サイトに配信するオプションは複数あります。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 100%
 
 ---
 
