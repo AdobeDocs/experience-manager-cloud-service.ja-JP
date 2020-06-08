@@ -2,8 +2,11 @@
 title: メタデータの編集と追加
 description: AEM Assets のアセットメタデータを編集する様々な方法について説明します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 100%
 
 ---
 
@@ -23,6 +26,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
    * Assets UI でアセットを選択し、ツールバーの「**[!UICONTROL プロパティを表示]**」アイコンをクリックまたはタップします。
    * アセットのサムネールから、「**[!UICONTROL プロパティを表示]**」クイックアクションを選択します。
    * アセットページから、ツールバーの「**[!UICONTROL プロパティを表示]**」をクリックまたはタップします。
+
    アセットページに、アセットのメタデータがすべて表示されます。このメタデータは、AEM Assets にアップロードされた（取り込まれた）ときに、自動的に抽出されたものです。
 
 1. 様々なタブで必要に応じてメタデータを編集したら、ツールバーの「**[!UICONTROL 保存]**」をクリックまたはタップして、変更内容を保存します。「**[!UICONTROL 閉じる]**」をクリックまたはタップして、Assets Web インターフェイスに戻ります。
