@@ -1,9 +1,9 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項
 description: コンテンツフラグメント - 削除に関する考慮事項
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 
