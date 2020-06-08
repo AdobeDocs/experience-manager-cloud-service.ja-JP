@@ -1,8 +1,11 @@
 ---
-title: ユーザーと役割の追加 — 必要なもの
-description: ユーザーと役割の追加 — 必要なもの
+title: 追加ユーザーと役割 — 必要なもの
+description: 追加ユーザーと役割 — 必要なもの
 translation-type: tm+mt
 source-git-commit: 936e42f273b75f0ea7776c51f57af44ec9e6d96f
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 93%
 
 ---
 
