@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * プログラムの概要 **** ページにコーチマークを付けて、Cloud Manager内部の基本的なナビゲーションに関する情報を提供し、基本的なナビゲーションを開始するように指示します。
 
-* Cloud Managerで **LEARN** （学習）ページが利用できるようになり、トップナビゲーションからアクセスできます。 このページには、Cloud Managerで割り当てられた役割に関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
+* Cloud Manager で&#x200B;**学習**&#x200B;ページが利用できるようになり、トップナビゲーションからアクセスできます。このページには、Cloud Manager で割り当てられた役割に関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
 
 * Sandboxのプログラムは、 **Sandbox** バッジによって識別されます。このバッジは、ランディングページのプログラムカードに表示され、 **プログラムの概要** ページのプログラム名の横に表示されます。
 
@@ -96,7 +96,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * AEMリリースIDが、 **プログラムの概要** ページに一貫して表示されなかった問題を修正しました。
 
-* 実稼動パイプラインを設定する際に、一部のお客様に対して **「Scheduled Deployment** 」オプションが表示されない問題を修正しました。
+* When configuring the production pipeline, the **Scheduled Deployment** option was not visible for some customers.
 
 ### 既知の問題 {#known-issues-cm}
 
