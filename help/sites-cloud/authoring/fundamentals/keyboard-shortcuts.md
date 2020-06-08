@@ -1,8 +1,11 @@
 ---
 title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 100%
 
 ---
 
