@@ -1,13 +1,16 @@
 ---
 title: アクティビティの管理
 description: アクティビティコンソールでは、ブランドのマーケティングアクティビティを作成、整理、管理できます。次のことができます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 100%
 
 ---
 
 
-# アクティビティの管理{#managing-activities}
+# アクティビティの管理 {#managing-activities}
 
 アクティビティコンソールでは、ブランドのマーケティング[アクティビティ](/help/sites-cloud/authoring/personalization/overview.md#activities)を作成、整理、管理できます。次のことができます。
 
@@ -67,7 +70,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. アクティビティコンソールとオファーコンソールに表示するブランドのタイトルを入力します。オプションで、このブランドに関連付ける 1 つ以上のタグを入力または選択します。
 1. 「**作成**」をクリックまたはタップします。アクティビティコンソールにブランドが表示されます。
 
-## アクティビティコンソールを使用したアクティビティの追加または編集{#adding-editing-an-activity-using-the-activities-console}
+## アクティビティコンソールを使用したアクティビティの追加または編集 {#adding-editing-an-activity-using-the-activities-console}
 
 アクティビティを追加するか、既存アクティビティを編集して、マーケティング活動の焦点を特定のオーディエンスに合わせます。アクティビティを作成または編集する際は、以下の情報を指定します。
 
@@ -84,7 +87,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 >[!NOTE]
 >
->Adobe Target への同期が失敗するので、新しい Adobe Target アクティビティは、**アクティビティ**&#x200B;コンソールではなく、ターゲットコンテンツエディターで&#x200B;**&#x200B;作成する必要があります。
+>Adobe Target への同期が失敗するので、新しい Adobe Target アクティビティは、**アクティビティ**&#x200B;コンソールではなく、ターゲットコンテンツエディターで&#x200B;*作成*&#x200B;する必要があります。
 >
 >ただし、既存の Adobe Target アクティビティはアクティビティコンソールで編集できます。
 
@@ -137,14 +140,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 公開するには、「**公開**」をタップまたはクリックします。非公開にするには、「**非公開**」をタップまたはクリックします。アクティビティが公開または非公開され、アクティビティコンソールでステータスが変更されます（更新が必要な場合があります）。
 
-## オーサーインスタンスまたはパブリッシュインスタンス上のアクティビティ{#activities-on-author-and-publish-instances}
+## オーサーインスタンスまたはパブリッシュインスタンス上のアクティビティ {#activities-on-author-and-publish-instances}
 
 Adobe Target ターゲット設定エンジンを使用するアクティビティがアクティベートされると、パブリッシュインスタンス上に 2 つ目のアクティビティが作成されます。
 
 * オーサーインスタンス上のアクティビティは、オーサーインスタンス上のアクティビティを追跡します。これは、訪問者エクスペリエンスのシミュレートに有効です。このアクティビティに関して記録される分析は、オーサーインスタンス上で発生したことのみを反映します。
 * パブリッシュインスタンス上のアクティビティは、パブリッシュサーバー上のアクティビティを反映し、応答します。これは、公開 Web サイト上で実行されるアクティビティです。実際の公開サイトの使用状況の追跡と分析に関連するのは、公開アクティビティのみです。
 
-## パフォーマンスの表示と成功エクスペリエンスの採用（A/B テスト）{#viewing-performance-and-converting-winning-experiences-a-b-test}
+## パフォーマンスの表示と成功エクスペリエンスの採用（A/B テスト） {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Adobe Target アクティビティ（XT または A/B）のパフォーマンスを表示できます。A/B テストを使用する場合は、成功エクスペリエンスを採用して、これをデフォルトのエクスペリエンスにすることができます。
 
@@ -168,7 +171,7 @@ Adobe Target アクティビティ（XT または A/B）のパフォーマンス
 
 1. 「**はい**」をクリックまたはタップして勝者の採用を確認すると、現在のエクスペリエンスが無効になり、成功エクスペリエンスのコンテンツで置き換えられます。
 
-## アクティビティと Adobe Target の同期{#synchronizing-activities-with-adobe-target}
+## アクティビティと Adobe Target の同期 {#synchronizing-activities-with-adobe-target}
 
 Adobe Target ターゲティングエンジンを使用するアクティビティは、Adobe Target キャンペーンと同期されます。以下の条件を満たす場合、アクティビティは自動的に Adobe Target に同期されます。
 
@@ -189,7 +192,7 @@ Adobe Target ターゲティングエンジンを使用するアクティビテ�
 
 公開アクティビティは、アクティビティが AEM パブリッシュインスタンスに公開されると同期されます。
 
-## アクティビティの同期のトラブルシューティング{#troubleshooting-activity-synchronization}
+## アクティビティの同期のトラブルシューティング {#troubleshooting-activity-synchronization}
 
 AEM では、アクティビティを Adobe Target と同期するときに、`thirdPartyId` というアクティビティのプロパティを含めます。このプロパティの値は、AEM リポジトリ内のアクティビティのパスに基づいています。Adobe Target 内で、2 つのキャンペーンが `thirdPartyId` プロパティに同じ値を持つことはできません。したがって、Adobe Target 内の（AB、XT という異なるタイプの）既存キャンペーンが `thirdPartyId` に同じ値を使用している場合は、アクティビティの同期が失敗します。
 
