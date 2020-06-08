@@ -1,8 +1,11 @@
 ---
 title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1805'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：スピンセット{#quick-start-spin-sets}
+## クイックスタート：スピンセット {#quick-start-spin-sets}
 
 スピンセットをすぐに使い始めるには、次の手順を実行します。
 
@@ -83,7 +86,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 * 製品の細部に十分に光を当て、ピントを合わせるようにします。
 * ファッション衣料の場合は、マネキンやモデルに着せてスピン画像を撮影します。多くの場合、ガラス製のマネキンを使用してマネキンを完全にマスクするか、画像内に定型化されたマネキンを表示します。角度を定義することで、モデルによるスピンセットを作成できます。床にテープを貼って角度をマークし、モデルが撮影ごとに動いて向きを変えるための手助けをします。
 
-## スピンセットの作成{#creating-spin-sets}
+## スピンセットの作成 {#creating-spin-sets}
 
 ここでは、スピンセットを作成する方法について説明します。
 
@@ -140,7 +143,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成したスピンセットが、作成先のフォルダーに表示されます。
 
-## スピンセットの表示{#viewing-spin-sets}
+## スピンセットの表示 {#viewing-spin-sets}
 
 スピンセットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md)を使用して自動的に作成することもできます。ただし、バッチセットプリセットを使用して作成したセットは、ユーザーインターフェイスに表示&#x200B;*されません*。バッチセットプリセットを使用して作成したセットには、3 つの方法でアクセスできます（これらの方法は、スピンセットをユーザーインターフェイスで作成した場合も使用できます）。
 
@@ -191,16 +194,17 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    * アセットを削除するには、アセットを選択して、「**[!UICONTROL アセットを削除]**」をクリックまたはタップします。
    * プリセットを適用するには、「プリセット」アイコンをタップまたはクリックし、プリセットを選択します。
    * スピンセット全体を削除するには、スピンセットに移動して選択し、「**[!UICONTROL 削除]**」を選択します
+
    >[!NOTE]
    >
    >スピンセットの画像を編集するには、スピンセットに移動し、左側のレールの「**[!UICONTROL メンバーを設定]**」をタップしてから、個々のアセットの鉛筆アイコンをタップして編集ウィンドウを開きます。
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をクリックします。
 
-## スピンセットのプレビュー{#previewing-spin-sets}
+## スピンセットのプレビュー {#previewing-spin-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## スピンセットの公開{#publishing-spin-sets}
+## スピンセットの公開 {#publishing-spin-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
