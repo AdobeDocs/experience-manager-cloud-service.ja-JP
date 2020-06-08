@@ -1,8 +1,11 @@
 ---
 title: インタラクティブビデオ
 description: Dynamic Media でインタラクティブビデオとショッパブルビデオを使用する方法を説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '6010'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 [インタラクティブ画像](/help/assets/dynamic-media/interactive-images.md)も参照してください。
 
-## インタラクティブビデオの使用例{#interactive-video-in-action}
+## インタラクティブビデオの使用例 {#interactive-video-in-action}
 
 インタラクティブなショッパブルビデオの動作を確認するには、「[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)」をクリックし、ページの「**[!UICONTROL ショッパブルメディア]**」見出しまでスクロールして、ショッパブルビデオをクリックして再生を開始します。
 
@@ -42,7 +45,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >ユーザーがサムネール画像をクリックすると Web ページが開かれるようにインタラクティブビデオを作成した場合、一部のデバイスでは、ポップアップ Web ページがブロックされて開きません。そのようなケースでは、デバイスのポップアップブロック機能の設定を変更する必要があります。例えば、Apple iPhone 6 では&#x200B;**[!UICONTROL 設定／Safari／ポップアップブロック]**&#x200B;をタップして、コントロールを&#x200B;**[!UICONTROL オフ]**&#x200B;にスライドします。こうすると、インタラクティブビデオを再生してサムネールをクリックしたときに、ポップアップを開くかどうかを確認するメッセージが表示されます。同意すると Web ページが開きます。
 
-### インタラクティブビデオの作成方法を見る{#watch-how-interactive-videos-are-created}
+### インタラクティブビデオの作成方法を見る {#watch-how-interactive-videos-are-created}
 
 [インタラクティブビデオの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)[](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)を示す 7 分 30 秒のガイドをご覧ください（このビデオガイドの対象は Assets on Demand ですが、原則や手順は AEM Assets のインタラクティブビデオにも対応しています）。
 
@@ -205,7 +208,7 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
 
 これで、ビデオおよび関連するサムネールアセットをアップロードできます。
 
-## （オプション）インタラクティブビデオのビューアプリセットの作成{#optional-creating-an-interactive-video-viewer-preset}
+## （オプション）インタラクティブビデオのビューアプリセットの作成 {#optional-creating-an-interactive-video-viewer-preset}
 
 デフォルトの標準提供インタラクティブビデオビューアプリセットタイプ（`Shoppable_Video_dark` または `Shoppable_Video_light`）を使用する予定がある場合は、このタスクをスキップして次に進むことができます。
 
@@ -343,6 +346,7 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
       * セグメントの先頭に直接移動するには、先頭の青い楕円をタップします。
       * セグメントの末尾に直接移動するには、末尾の青い楕円をタップします。
       * セグメントの先頭からビデオを再生するには、セグメント全体をタップします。
+
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
    タイムラインセグメントの末尾の再配置
@@ -539,9 +543,9 @@ AEM Sites のユーザーである場合は、インタラクティブメディ�
 
 統合は、ビデオ埋め込みコードを削除して、AEM のインタラクティブビデオ埋め込みコードで置き換えるだけで簡単にできます。次の URL で結果を確認できます。ページに存在するインタラクティブビデオが表示されますが、既存のクイックビューにまだ統合されていません。
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
+[https://marketing.adobe.com/resources/help/ja_JP/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## インタラクティブビデオの既存のクイックビューへの統合{#integrating-an-interactive-video-with-an-existing-quickview}
+## インタラクティブビデオの既存のクイックビューへの統合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 このタスクはスタンドアロン AEM Assets のユーザーのみに適用されます。
@@ -740,7 +744,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-3.html)
 
-## クイックビューを使用したカスタムポップアップの作成{#using-quickviews-to-create-custom-pop-ups}
+## クイックビューを使用したカスタムポップアップの作成 {#using-quickviews-to-create-custom-pop-ups}
 
 [クイックビューを使用したカスタムポップアップの作成](/help/assets/dynamic-media/custom-pop-ups.md)を参照してください。
 -->
