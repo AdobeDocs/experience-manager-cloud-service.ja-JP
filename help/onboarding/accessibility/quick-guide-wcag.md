@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Adobe Experience Manager (AEM) as a Cloud Service は、Web コンテンツのアクセシビリティガイドラインへの準拠を最大限に高めるように開発されました。
 
-The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+[Web Content Accessibility Guidelines （WCAG）バージョン 2.1 ](https://www.w3.org/TR/WCAG/)は、[World Wide Web Consortium（W3C）](https://www.w3.org/)が [Web Accessibility Initiative（WAI）](https://www.w3.org/WAI/)の下で開発した一連のガイドラインであり、国際的に認知されています。
 
 >[!NOTE]
 > 
