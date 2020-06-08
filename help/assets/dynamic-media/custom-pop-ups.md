@@ -1,13 +1,16 @@
 ---
 title: クイックビューを使用したカスタムポップアップの作成
 description: eコマースエクスペリエンスではデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示されます。このようなポップアップにカスタムコンテンツが表示されるように設定できます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 100%
 
 ---
 
 
-# クイックビューを使用したカスタムポップアップの作成{#using-quickviews-to-create-custom-pop-ups}
+# クイックビューを使用したカスタムポップアップの作成 {#using-quickviews-to-create-custom-pop-ups}
 
 eコマースエクスペリエンスではデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示されます。ただし、このようなポップアップにカスタムコンテンツが表示されるように設定できます。使用しているビューアに応じて、この機能により、ユーザーがホットスポット、サムネール画像、画像マップのいずれかをクリックすると情報や関連するコンテンツが表示されるようになります。
 
@@ -37,7 +40,7 @@ eコマースエクスペリエンスではデフォルトのクイックビュ�
     </tr>
     <tr>
     <td>インタラクティブビデオ</td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">ビデオへのインタラクティビティの追加</a></td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">ビデオへのインタラクティブ機能の追加</a>.</td>
     </tr>
     <tr>
     <td>カルーセルバナー</td>
