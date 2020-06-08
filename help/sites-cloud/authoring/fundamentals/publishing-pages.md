@@ -1,8 +1,11 @@
 ---
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 100%
 
 ---
 
@@ -64,6 +67,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
    * 公開が必要な参照がページに含まれている場合は、それらのリストが&#x200B;**公開**&#x200B;ウィザードに表示され、ウィザードで次のいずれかを実行できます。
       * ページと一緒に公開するアセットやタグなどを指定し、「**公開**」を使用してプロセスを完了します。
       * 「**キャンセル**」を使用してアクションを中止します。
+
    ![ページでの参照の公開](/help/sites-cloud/authoring/assets/publishing-references.png)
 
 1. 「**公開**」を選択して、パブリッシュ環境にページをレプリケートします。ページエディターに、公開アクションを確認する情報バナーが表示されます。
@@ -85,7 +89,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 * [クイック公開](#quick-publish)
 * [公開を管理](#manage-publication)
 
-#### クイック公開{#quick-publish}
+#### クイック公開 {#quick-publish}
 
 **クイック公開**&#x200B;は、単純な場合のためのもので、選択したページが即座に公開されます。他に何か操作する必要はありません。このため、すべての非公開の参照も自動的に公開されます。
 
@@ -105,7 +109,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 >
 >クイック公開は、浅い公開です。つまり、選択したページだけが公開され、子ページは公開されません。
 
-#### 公開を管理{#manage-publication}
+#### 公開を管理 {#manage-publication}
 
 **公開を管理**&#x200B;には、クイック公開よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
 
@@ -119,6 +123,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 
    * 選択したページの公開または非公開を選択する。
    * そのアクションを今すぐ実行するか後日実行するかを選択する。
+
    後で公開することを選択すると、指定した時間に選択したページを公開するワークフローが開始されます。逆に、後で非公開にすることを選択すると、特定の時間に選択したページを非公開にするワークフローが開始されます。
 
    公開／非公開を後からキャンセルする場合は、ワークフローコンソールに移動して、対応するワークフローを終了します。<!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
@@ -142,6 +147,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
    * その子を含める。
    * 選択から削除する。
    * その公開済みの参照を管理する。
+
    ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
    「**子を含める**」をクリックすると、次のことができるダイアログが開きます。
@@ -149,6 +155,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
    * 直近の子のみを含める。
    * 変更されたページのみを含める。
    * 既に公開済みのページのみを含める。
+
    「**追加**」をクリックして、選択オプションに基づいて公開または非公開にするページのリストに子ページを追加します。「**キャンセル**」をクリックして選択をキャンセルし、ウィザードに戻ります。
 
    ![公開を管理での子の包含](/help/sites-cloud/authoring/assets/publishing-include-children.png)
@@ -184,10 +191,12 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 
    * ワークフローのタイトルを定義する。
    * ワークフローが複数のリソースをサポートする場合、ワークフローパッケージを維持する。
+
    <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
     -->
 
    * ワークフローパッケージを維持するオプションが選択されている場合、ワークフローパッケージのタイトルを定義する。
+
    「**公開**」または「**後で公開する**」をクリックして、公開を完了します。
 
 ## ページを非公開にする {#unpublishing-pages}
@@ -199,11 +208,11 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 * [ページエディターから](#unpublishing-from-the-editor)
 * [サイトコンソールから](#unpublishing-from-the-console)
 
-### エディターから非公開にする{#unpublishing-from-the-editor}
+### エディターから非公開にする {#unpublishing-from-the-editor}
 
 ページを編集する際に、そのページを非公開にする場合、[ページを公開](#publishing-from-the-editor)するときと同じように、**ページ情報**&#x200B;メニューで「**ページを非公開にする**」を選択します。
 
-### コンソールから非公開にする{#unpublishing-from-the-console}
+### コンソールから非公開にする {#unpublishing-from-the-console}
 
 [「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 
@@ -234,6 +243,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 
    * 直近の子のみを含める
    * 既に公開済みのページのみを含める
+
    これらのオプションは、デフォルトで選択されているので、忘れずに選択解除する必要があります。「**追加**」をクリックして、コンテンツを公開／非公開に追加します。
 
    ![非公開時の子の包含](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
