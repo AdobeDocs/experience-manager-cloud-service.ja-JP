@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の運用と保守
 description: Adobe Experience Manager as a Cloud Service の運用と保守に関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3e379236fb663160209ec973f299cf85f6e3d42e
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
 
