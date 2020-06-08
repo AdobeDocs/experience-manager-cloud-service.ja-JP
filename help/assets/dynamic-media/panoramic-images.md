@@ -1,8 +1,11 @@
 ---
 title: パノラマ画像
 description: Dynamic Media でのパノラマ画像の使用方法を学習します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 100%
 
 ---
 
@@ -20,6 +23,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 アップロードするアセットが、パノラマ画像ビューアで使用する球パノラマ画像として適格となるには、アセットが以下の一方または両方の条件を満たしている必要があります。
 
 * 縦横比が 2 である必要があります。
+
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
 * キーワード `equirectangular`、または `spherical` と `panorama`、または `spherical` と `panoramic` でタグ付けされている必要があります。[タグの使用](/help/sites-cloud/authoring/features/tags.md)を参照してください。
@@ -75,6 +79,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## パノラマ画像の公開{#publishing-panoramic-images}
+## パノラマ画像の公開 {#publishing-panoramic-images}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
