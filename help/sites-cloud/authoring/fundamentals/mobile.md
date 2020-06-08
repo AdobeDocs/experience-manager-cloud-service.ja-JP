@@ -1,8 +1,11 @@
 ---
 title: モバイルデバイス用のページのオーサリング
 description: モバイル用にオーサリングするときは、複数のエミュレーターを切り替えて、エンドユーザー向けの表示を見ることができます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
