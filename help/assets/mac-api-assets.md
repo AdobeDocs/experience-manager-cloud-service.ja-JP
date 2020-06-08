@@ -215,7 +215,7 @@ API を使用してアセットバイナリを更新する方法については�
 
 * `X-Destination` - APIソリューションスコープ内の、リソースのコピー先となる新しい宛先URI。
 * `X-Depth`  — または `infinity` のいずれか `0`。 を使用すると、リソースとそのプロパティのみがコピーされ、子はコピーされません。 `0`
-* `X-Overwrite`  — 既存の宛先 `F` でアセットが上書きされないようにする場合に使用します。
+* `X-Overwrite`  — 既存の宛先 `F` でアセットが上書きされないようにするために使用します。
 
 **リクエスト**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
