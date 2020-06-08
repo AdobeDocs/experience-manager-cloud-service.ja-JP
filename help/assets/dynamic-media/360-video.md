@@ -1,8 +1,11 @@
 ---
 title: 360/VR ビデオ
 description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを操作する方法を学びます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '961'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +24,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)も参照してください。
 
-## 360 ビデオの視聴{#video-in-action}
+## 360 ビデオの視聴 {#video-in-action}
 
 「[Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」をタップして、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中にマウスポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
@@ -59,6 +62,7 @@ AEM にアップロードされた 360 ビデオアセットには、通常の�
       * width=auto; height=1080; bitrate=5000 kbps
       * width=auto; height=1440; bitrate=6600 kbps
    * 360 ビデオアセット専用のフォルダー内の 360 ビデオコンテンツを処理します。
+
    このアプローチを使用する場合、エンドユーザーのネットワークや CPU の要件も高くなることに注意してください。
 
 1. [フォルダーにビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
@@ -110,6 +114,7 @@ Start by uploading 360 Videos.
 
    * ビデオの上でマウスポインターをドラッグして、静的なシーンの表示角度を変更します。
    * ビデオの&#x200B;**[!UICONTROL 再生]**&#x200B;ボタンをタップして再生を開始します。ビデオの再生中にビデオの上でマウスポインターをドラッグして、表示角度を変更します。
+
    ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*360 ビデオのスクリーンショット&#x200B;*
 
    * 「ビューア」リストから **[!UICONTROL Video360VR]** をタップします。
