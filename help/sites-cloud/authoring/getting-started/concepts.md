@@ -1,13 +1,16 @@
 ---
 title: オーサリングに関する概念
 description: AEM でのオーサリングの概念です
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 100%
 
 ---
 
 
-# オーサリング概念 {#authoring-concepts}
+# オーサリングに関する概念 {#authoring-concepts}
 
 AEM インストールは、通常、少なくとも次の 2 つの環境で構成されます。
 
