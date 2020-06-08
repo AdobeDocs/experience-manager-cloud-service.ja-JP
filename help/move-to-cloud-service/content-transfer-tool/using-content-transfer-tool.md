@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: f154ffacbeeee1993a9cc3bd3bd274be33dca7a7
+source-git-commit: 7a0fa12198c69791caf7e44bfbfe7d71e389a984
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1538'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 3%
    1. **アクセストークン**: アクセストークンを入力します。
 
       >[!NOTE]
-      >に移動して、オーサーインスタンスからアクセストークンを取得でき `/libs/granite/migration/token.json`ます。
+      >に移動して、オーサーインスタンスからアクセストークンを取得でき `/libs/granite/migration/token.json`ます。 アクセストークンは、クラウドサービスの作成者インスタンスから取得されます。
 
    1. **パラメータ**: 次のパラメータを選択して、移行セットを作成します。
 
