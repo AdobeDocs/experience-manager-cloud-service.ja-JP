@@ -3,6 +3,9 @@ title: ソースコードリポジトリ — クラウドサービス
 description: ソースコードリポジトリ — クラウドサービス
 translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 23%
 
 ---
 
@@ -13,9 +16,9 @@ Cloud Managerプログラムは、独自のgitリポジトリで自動プロビ�
 
 ユーザーがCloud Managerのgitリポジトリにアクセスするには、Gitクライアントとコマンドラインツール、スタンドアロンのビジュアルGitクライアント、またはEclipse、IntelliJ、NetBeansなどのユーザーのIDEを使用する必要があります。
 
-Gitクライアントを設定したら、Cloud Manager UIからgitリポジトリを管理できます。 Cloud Manager UIを使用してGitを管理する方法については、Gitへのアクセスを参照 [してください](/help/implementing/cloud-manager/accessing-git.md)。
+Gitクライアントを設定すると、Cloud Manager UIからgitリポジトリを管理できます。 Cloud Manager UIを使用してGitを管理する方法については、Gitへの [アクセスを参照してください](/help/implementing/cloud-manager/accessing-git.md)。
 
-AEM Cloudアプリケーションの開発を開始するには、アプリケーションコードのローカルコピーをCloud Managerリポジトリから、リポジトリを作成するローカルコンピューター上の場所にチェックアウトして作成する必要があります。
+AEM Cloudアプリケーションの開発を開始するには、Cloud Managerリポジトリから、リポジトリを作成するローカルコンピューター上の場所にアプリケーションコードのローカルコピーをチェックアウトして作成する必要があります。
 
 ```java
 $ git clone {URL}
