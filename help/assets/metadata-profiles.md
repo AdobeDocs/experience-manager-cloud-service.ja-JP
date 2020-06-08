@@ -2,8 +2,11 @@
 title: メタデータプロファイル
 description: アセットのメタデータプロファイルについて理解します。また、メタデータプロファイルを作成し、フォルダーのアセットに適用する方法も学習します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '1246'
+ht-degree: 100%
 
 ---
 
@@ -109,9 +112,9 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 フォルダーからメタデータプロファイルを削除すると、サブフォルダーは自動的に親フォルダーのプロファイルの削除状態を継承します。ただし、フォルダー内で実行されたファイルの処理はそのまま維持されます。
 
-**ツール**&#x200B;メニュー内で、またはフォルダー内にいる場合は「**プロパティ**」で、メタデータプロファイルをフォルダーから削除できます。この節では、メタデータプロファイルをフォルダーから削除する両方の方法について説明します。
+**ツール**&#x200B;メニュー内で、またはフォルダー内にいる場合は「**プロパティ**」で、メタデータプロファイルをフォルダーから削除できます。このセクションでは、メタデータプロファイルをフォルダーから削除する両方の方法について説明します。
 
-### プロファイルユーザーインターフェイスを使用したフォルダーからのメタデータプロファイルの削除{#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+### プロファイルユーザーインターフェイスを使用したフォルダーからのメタデータプロファイルの削除 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. AEM のロゴをクリックまたはタップし、**[!UICONTROL ツール／アセット／メタデータプロファイル]**&#x200B;の順に移動します。
 1. 1 つまたは複数のフォルダーから削除するメタデータプロファイルを選択します。
