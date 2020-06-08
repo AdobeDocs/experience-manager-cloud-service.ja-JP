@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の実装
 description: Adobe Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1ca6ab990e403e069d52c6a70d95a5ae31449463
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 100%
 
 ---
 
