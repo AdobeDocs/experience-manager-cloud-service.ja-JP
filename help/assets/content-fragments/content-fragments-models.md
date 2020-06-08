@@ -1,8 +1,11 @@
 ---
 title: コンテンツフラグメントモデル
 description: コンテンツフラグメントモデルは、構造化コンテンツを含むコンテンツフラグメントを作成するために使用します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 100%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 コンテンツフラグメントモデルは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)のコンテンツの構造を定義します。
 
-## コンテンツフラグメントモデルの有効化{#enable-content-fragment-models}
+## コンテンツフラグメントモデルの有効化 {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -22,7 +25,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 * Configuration Manager でのコンテンツフラグメントモデル使用の有効化
 * アセットフォルダーへの設定の適用
 
-### Configuration Manager でのコンテンツフラグメントモデルの有効化{#enable-content-fragment-models-in-configuration-manager}
+### Configuration Manager でのコンテンツフラグメントモデルの有効化 {#enable-content-fragment-models-in-configuration-manager}
 
 [新しいコンテンツフラグメントモデルを作成する](#creating-a-content-fragment-model)には、最初に設定マネージャーを使用してコンテンツフラグメントモデルを有効にする&#x200B;**必要があります**。
 
@@ -32,6 +35,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    1. 「**タイトル**」を指定します。
    2. 「**コンテンツフラグメントモデル**」を選択して、そのモデルを使用できるようにします。
+
    ![設定](assets/cfm-models-01.png)
 
 4. 「**作成**」を選択して、定義を保存します。
@@ -58,7 +62,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
 1. 「**作成**」を使用して空のモデルを保存します。操作の成功を示すメッセージが表示されます。「**開く**」を選択してモデルをすぐに編集するか、「**完了**」を選択してコンソールに戻ることができます。
 
-## コンテンツフラグメントモデルの定義{#defining-your-content-fragment-model}
+## コンテンツフラグメントモデルの定義 {#defining-your-content-fragment-model}
 
 コンテンツフラグメントモデルは、生成されるコンテンツフラグメントの構造を効果的に定義します。モデルエディターを使用して、必要なフィールドを追加および設定できます。
 
@@ -75,6 +79,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 左：既に定義されているフィールド
    * 右：フィールドの作成に使用できる&#x200B;**データタイプ**（およびフィールドの作成後に使用する&#x200B;**プロパティ**）
+
    >[!NOTE]
    >
    >あるフィールドを&#x200B;**必須**&#x200B;として指定した場合、左側のウィンドウに表示される&#x200B;**ラベル**&#x200B;にアスタリスク（*****）が付きます。
@@ -84,9 +89,11 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 1. **フィールドを追加するには**
 
    * 必要なデータタイプをフィールドの必要な場所にドラッグします。
+
    ![フィールドへのデータタイプのドラッグ](assets/cfm-models-04.png)
 
    * フィールドがモデルに追加されると、その特定のデータタイプに対して定義できる&#x200B;**プロパティ**&#x200B;が右側のパネルに表示されます。ここで、そのフィールドに必要な項目を定義することができます。次に例を示します。
+
    ![フィールドのプロパティ](assets/cfm-models-05.png)
 
    >[!NOTE]
@@ -94,6 +101,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    * **リッチテキスト**
    * **Markdown**
    * **プレーンテキスト**
+
    指定しなかった場合は、デフォルト値の&#x200B;**リッチテキスト**&#x200B;がこのフィールドで使用されます。
    コンテンツフラグメントモデルで「**デフォルトの種類**」を変更した場合、その影響が既存の関連コンテンツフラグメントに及ぶのは、そのフラグメントがエディターで開かれて保存された後です。
 
@@ -122,7 +130,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
    >[!NOTE]
    モデルが参照されている場合は、警告が表示されます。適切に対処します。
 
-## コンテンツフラグメントモデルの公開{#publishing-a-content-fragment-model}
+## コンテンツフラグメントモデルの公開 {#publishing-a-content-fragment-model}
 
 コンテンツフラグメントモデルは、依存するコンテンツフラグメントの公開時または公開前に公開する必要があります。
 
