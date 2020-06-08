@@ -2,8 +2,11 @@
 title: Brand Portal へのアセット、フォルダーおよびコレクションの公開
 description: アセット、フォルダーおよびコレクションを Brand Portal に公開します。
 contentOwner: Vishabh Gupta
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 100%
 
 ---
 
@@ -107,6 +110,7 @@ Brand Portal インターフェイスにログインして、公開されたア�
          「**次へ**」をクリックします。
 
       1. 「**[!UICONTROL 範囲]**」の選択を確認し、「**[!UICONTROL Brand Portal に公開]**」をクリックします。
+
    フォルダーが Brand Portal への公開用のキューに入れられたことを示すメッセージが表示されます。Brand Portal のインターフェイスにログインして、公開されたフォルダーを確認します。
 
 1. **フォルダーを後で公開**
