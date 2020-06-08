@@ -1,8 +1,11 @@
 ---
 title: AEM Sites as a Cloud Service の主な変更点
 description: 'AEM Sites as a Cloud Service の主な変更点 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 100%
 
 ---
 
