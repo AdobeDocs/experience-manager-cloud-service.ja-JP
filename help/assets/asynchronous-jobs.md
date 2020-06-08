@@ -2,8 +2,11 @@
 title: 非同期操作
 description: AEM Assets では、リソースを集中的に消費する一部のタスクを非同期的に処理することでパフォーマンスを最適化します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 100%
 
 ---
 
@@ -66,7 +69,7 @@ AEM Assets で非同期的に操作がおこなわれると、インボックス
    >
    >ステータスがアクティブまたは待機中のジョブは削除できません。
 
-## 完了済みジョブのパージ{#purging-completed-jobs}
+## 完了済みジョブのパージ {#purging-completed-jobs}
 
 AEM Assets は、毎日午前 1 時にパージジョブを実行して、1 日以上経過した完了済みの非同期ジョブを削除します。
 
@@ -81,7 +84,7 @@ AEM Assets は、毎日午前 1 時にパージジョブを実行して、1 日�
 
 1. 変更内容を保存します。
 
-## 非同期処理のしきい値の設定{#configuring-thresholds-for-asynchronous-processing}
+## 非同期処理のしきい値の設定 {#configuring-thresholds-for-asynchronous-processing}
 
 AEM Assets が特定の操作を非同期的に処理する際の、アセットまたは参照の数のしきい値を設定できます。
 
@@ -97,7 +100,7 @@ AEM Assets が特定の操作を非同期的に処理する際の、アセット
 
 1. 変更内容を保存します。
 
-### 非同期移動操作のしきい値の設定{#configuring-thresholds-for-asynchronous-move-operations}
+### 非同期移動操作のしきい値の設定 {#configuring-thresholds-for-asynchronous-move-operations}
 
 移動するアセットやフォルダーまたは参照の数がしきい値を超えると、移動操作が非同期的に実行されます。
 
