@@ -3,6 +3,9 @@ title: ロールに基づく権限
 description: ロールに基づく権限
 translation-type: tm+mt
 source-git-commit: 3c56d94f9922cb65b91912dd96eb8aa60efc2b53
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 60%
 
 ---
 
