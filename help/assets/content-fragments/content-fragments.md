@@ -1,9 +1,9 @@
 ---
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
 
-## コンテンツフラグメントとコンテンツサービス{#content-fragments-and-content-services}
+## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 
 AEM コンテンツサービスは、Web ページだけに焦点を置かずに AEM のコンテンツの記述と配信を一般化するように設計されています。
 
@@ -70,6 +70,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**は、AEM 内の異なる機能です。
 >* **コンテンツフラグメント**&#x200B;は、主にテキストや関連画像などの編集コンテンツです。これは、デザインやレイアウトを含まない純粋なコンテンツです。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+
 >
 >
 エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
@@ -143,6 +144,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * フラグメントの不可欠な構成要素です（[コンテンツフラグメントの構成要素](#constituent-parts-of-a-content-fragment)を参照してください）。
    * アセットの位置を定義します。
    * 詳しくは、フラグメントエディターでの[フラグメントへのアセットの挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)を参照してください。
+
    >[!NOTE]
    >
    >コンテンツフラグメント自体に挿入したビジュアルアセットは、前の段落に添付されます。このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
@@ -194,6 +196,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * フラグメントへの追加、フラグメントからの削除、フラグメント内での移動は、[フラグメントエディターのみで、リッチテキストフォーマットを使用して](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)おこなえます。
    * 複数行テキスト要素（任意のフラグメントタイプ）にのみ追加できます。
    * 前のテキスト（段落）に添付されます。
+
    >[!CAUTION]
    >
    >プレーンテキスト形式に切り替えることで、（誤って）フラグメントから削除するおそれがあります。
@@ -222,6 +225,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
          * コンソールでフラグメントの&#x200B;**プロパティ**&#x200B;を表示または編集することによって
          * フラグメントエディターで&#x200B;**メタデータ**&#x200B;を編集することによって
+
    >[!CAUTION]
    >
    >メタデータ処理プロファイルは、コンテンツフラグメントには適用されません。
