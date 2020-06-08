@@ -1,8 +1,11 @@
 ---
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+workflow-type: tm+mt
+source-wordcount: '1660'
+ht-degree: 100%
 
 ---
 
@@ -94,8 +97,9 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
 これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+[使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
-1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
+1. エクスペリエンスフラグメントのコンポーネント {#components-for-experience-fragments}](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)
 
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
@@ -106,11 +110,11 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
 
-## エクスペリエンスフラグメントのコンポーネント {#components-for-experience-fragments}
-
-エクスペリエンスフラグメントで使用するコンポーネントの開発は、標準的な方法に従っておこないます。
+## エクスペリエンスフラグメントで使用するコンポーネントの開発は、標準的な方法に従っておこないます。{#components-for-experience-fragments}
 
 後は、コンポーネントをテンプレートで使用できるように設定するだけです。それには、コンテンツポリシーを使用します。
+
+Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
 
 <!--
 [Developing components](/help/sites-developing/components.md) for use with/in Experience Fragments follow standard practices.
@@ -118,78 +122,79 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 The only additional configuration is to ensure that the components are [allowed on the template, this is achieved with the Content Policy](/help/sites-developing/page-templates-editable.md#content-policies).
 -->
 
-## Experience Fragment Link Rewriter Provider - HTML {#the-experience-fragment-link-rewriter-provider-html}
+## AEM では、エクスペリエンスフラグメントを作成できます。エクスペリエンスフラグメントは、{#the-experience-fragment-link-rewriter-provider-html}
 
-AEM では、エクスペリエンスフラグメントを作成できます。エクスペリエンスフラグメントは、
+コンポーネントグループとレイアウトで構成されます。
 
-* コンポーネントグループとレイアウトで構成されます。
 * AEM ページとは独立して存在できます。
+* このようなグループの使用例の 1 つは、Adobe Target などのサードパーティのタッチポイントにコンテンツを埋め込む場合です。
 
-このようなグループの使用例の 1 つは、Adobe Target などのサードパーティのタッチポイントにコンテンツを埋め込む場合です。
+デフォルトのリンク書き換え {#default-link-rewriting}
 
-### デフォルトのリンク書き換え {#default-link-rewriting}
+### 「Adobe Target に書き出し」機能を使用すると、次の操作が可能です。{#default-link-rewriting}
 
 <!--Using the [Export to Target](/help/sites-administering/experience-fragments-target.md) feature, you can:
 -->
 
-「Adobe Target に書き出し」機能を使用すると、次の操作が可能です。
+エクスペリエンスフラグメントを作成する
 
-* エクスペリエンスフラグメントを作成する
 * エクスペリエンスフラグメントにコンポーネントを追加する
 * エクスペリエンスフラグメントを HTML 形式または JSON 形式で Adobe Target オファーとして書き出す
+* この機能は、AEM のオーサーインスタンスで有効にすることができます。有効な Adobe Target 設定と、Link Externalizer の設定が必要です。
 
-この機能は、AEM のオーサーインスタンスで有効にすることができます。有効な Adobe Target 設定と、Link Externalizer の設定が必要です。
+Link Externalizer は、Target オファーの HTML バージョンを作成する際に必要な正しい URL を決定するために使用されます。オファーは、その後 Adobe Target に送信されます。これが必要なのは、Adobe Target では Target HTML オファー内のすべてのリンクに公にアクセスできる必要があるからです。つまり、リンクが参照するあらゆるリソースとエクスペリエンスフラグメントそのものを使用するには、まずそれらを公開する必要があります。
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-Link Externalizer は、Target オファーの HTML バージョンを作成する際に必要な正しい URL を決定するために使用されます。オファーは、その後 Adobe Target に送信されます。これが必要なのは、Adobe Target では Target HTML オファー内のすべてのリンクに公にアクセスできる必要があるからです。つまり、リンクが参照するあらゆるリソースとエクスペリエンスフラグメントそのものを使用するには、まずそれらを公開する必要があります。
-
 デフォルトでは、Target HTML オファーを作成すると、AEM のカスタム Sling セレクターにリクエストが送信されます。このセレクターの名前は `.nocloudconfigs.html` です。これはエクスペリエンスフラグメントのプレーン HTML レンダリングを作成しますが、その名前が示すとおり、クラウド設定を含んでいません（クラウド設定は余分な情報です）。
 
-HTML ページを生成すると、Sling Rewriter パイプラインは出力に次のような変更を加えます。
+HTML ページを生成すると、Sling Rewriter パイプラインは出力に次のような変更を加えます。`.nocloudconfigs.html`
 
-1. `html`、`head`、`body` の各要素が `div` 要素に置き換わります。`meta`、`noscript`、`title` の各要素が削除されます（これらは元の `head` 要素の子要素であり、親が `div` 要素に置き換わる場合は考慮されません）。
+`html`、`head`、`body` の各要素が `div` 要素に置き換わります。`meta`、`noscript`、`title` の各要素が削除されます（これらは元の `head` 要素の子要素であり、親が `div` 要素に置き換わる場合は考慮されません）。
 
-   このような変更がおこなわれるのは、HTML Target オファーを Target アクティビティに確実に含めることができるようにするためです。
+1. このような変更がおこなわれるのは、HTML Target オファーを Target アクティビティに確実に含めることができるようにするためです。`html``head``body``div``meta``noscript``title``head``div`
 
-2. AEM では、HTML に存在するすべての内部リンクを変更して、公開されたリソースを指すようにします。
+   AEM では、HTML に存在するすべての内部リンクを変更して、公開されたリソースを指すようにします。
 
-   変更するリンクを決定するために、AEM では HTML 要素の次の属性パターンに従います。
+2. 変更するリンクを決定するために、AEM では HTML 要素の次の属性パターンに従います。
 
-   1. `src` 属性
-   2. `href` 属性
-   3. `*-src` 属性（例：data-src、custom-src など）
-   4. `*-href` 属性（例：`data-href`、`custom-href`、`img-href` など）
-   >[!NOTE]
+   `src` 属性
+
+   1. `href` 属性
+   2. `*-src` 属性（例：data-src、custom-src など）
+   3. `*-href` 属性（例：`data-href`、`custom-href`、`img-href` など）
+   4. [!NOTE]`data-href``custom-href``img-href`
+
+   >[!NOTE]ほとんどの場合、HTML 内の内部リンクは相対リンクですが、カスタムコンポーネントの HTML で完全な URL が指定されている場合もあります。デフォルトでは、AEM はこれらの完全な URL を無視し、変更しません。
    >
-   >ほとんどの場合、HTML 内の内部リンクは相対リンクですが、カスタムコンポーネントの HTML で完全な URL が指定されている場合もあります。デフォルトでは、AEM はこれらの完全な URL を無視し、変更しません。
+   >公開済みのインスタンス上にある公開 URL であるかのように URL を再作成するために、これらの属性のリンクを AEM Link Externalizer `publishLink()` に通します。
 
-   公開済みのインスタンス上にある公開 URL であるかのように URL を再作成するために、これらの属性のリンクを AEM Link Externalizer `publishLink()` に通します。
+   そのまま使用できる標準実装を使用する場合、エクスペリエンスフラグメントから Target オファーを生成して Adobe Target に書き出すには、上記のプロセスで十分です。しかし、このプロセスでは対応していない使用例もいくつかあります。例えば、次のような場合です。`publishLink()`
 
-そのまま使用できる標準実装を使用する場合、エクスペリエンスフラグメントから Target オファーを生成して Adobe Target に書き出すには、上記のプロセスで十分です。しかし、このプロセスでは対応していない使用例もいくつかあります。例えば、次のような場合です。
+Sling マッピングがパブリッシュインスタンスでのみ使用可能
 
-* Sling マッピングがパブリッシュインスタンスでのみ使用可能
 * Dispatcher によるリダイレクト
+* これらの使用例のために、AEM には Link Rewriter Provider インターフェイスが用意されています。
 
-これらの使用例のために、AEM には Link Rewriter Provider インターフェイスが用意されています。
+Link Rewriter Provider インターフェイス {#link-rewriter-provider-interface}
 
-### Link Rewriter Provider インターフェイス {#link-rewriter-provider-interface}
+### （[デフォルトのリンク書き換え](#default-link-rewriting)では対応していない）より複雑な場合のために、AEM では Link Rewriter Provider インターフェイスを提供しています。これは、バンドルにサービスとして実装できる `ConsumerType` インターフェイスです。このインターフェイスは、エクスペリエンスフラグメントからレンダリングされる HTML オファーの内部リンクに対して AEM で実行される変更をバイパスします。このインターフェイスを使用すると、内部 HTML リンクの書き換えプロセスをビジネスニーズに合わせてカスタマイズできます。
 
-（[デフォルトのリンク書き換え](#default-link-rewriting)では対応していない）より複雑な場合のために、AEM では Link Rewriter Provider インターフェイスを提供しています。これは、バンドルにサービスとして実装できる `ConsumerType` インターフェイスです。このインターフェイスは、エクスペリエンスフラグメントからレンダリングされる HTML オファーの内部リンクに対して AEM で実行される変更をバイパスします。このインターフェイスを使用すると、内部 HTML リンクの書き換えプロセスをビジネスニーズに合わせてカスタマイズできます。
+このインターフェイスをサービスとして実装する使用例としては、例えば次のものがあります。[](#default-link-rewriting)`ConsumerType`
 
-このインターフェイスをサービスとして実装する使用例としては、例えば次のものがあります。
+Sling マッピングがパブリッシュインスタンスでは有効になっているが、オーサーインスタンスでは有効になっていない
 
-* Sling マッピングがパブリッシュインスタンスでは有効になっているが、オーサーインスタンスでは有効になっていない
 * Dispatcher または類似の技術を使用して URL を内部的にリダイレクトする
 * リソース用に `sling:alias mechanisms` が整備されている
+* [!NOTE]
 
->[!NOTE]
+>[!NOTE]このインターフェイスでは、生成された Target オファーからの内部 HTML リンクのみ処理します。
 >
->このインターフェイスでは、生成された Target オファーからの内部 HTML リンクのみ処理します。
+>Link Rewriter Provider インターフェイス（`ExperienceFragmentLinkRewriterProvider`）は次のとおりです。
 
-Link Rewriter Provider インターフェイス（`ExperienceFragmentLinkRewriterProvider`）は次のとおりです。
+Link Rewriter Provider インターフェイスの使用方法 {#how-to-use-the-link-rewriter-provider-interface}
 
 ```java
 public interface ExperienceFragmentLinkRewriterProvider {
@@ -203,13 +208,13 @@ public interface ExperienceFragmentLinkRewriterProvider {
 }
 ```
 
-### Link Rewriter Provider インターフェイスの使用方法 {#how-to-use-the-link-rewriter-provider-interface}
-
-このインターフェイスを使用するには、まず、Link Rewriter Provider インターフェイスを実装する新しいサービスコンポーネントを含んだバンドルを作成する必要があります。
+### このインターフェイスを使用するには、まず、Link Rewriter Provider インターフェイスを実装する新しいサービスコンポーネントを含んだバンドルを作成する必要があります。{#how-to-use-the-link-rewriter-provider-interface}
 
 このサービスは、様々なリンクにアクセスできるように、エクスペリエンスフラグメントの「Adobe Target に書き出し」機能でのリンク書き換えにプラグインするために使用されます。
 
 例えば、`ComponentService` の場合は次のようになります。
+
+このサービスが機能するには、次の 3 つのメソッドをサービス内に実装する必要があります。`ComponentService`
 
 ```java
 import com.adobe.cq.xf.ExperienceFragmentLinkRewriterProvider;
@@ -239,22 +244,22 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 }
 ```
 
-このサービスが機能するには、次の 3 つのメソッドをサービス内に実装する必要があります。
+` [shouldRewrite](#shouldrewrite)`
 
-* ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
+* `rewriteLinkExample2`
 
-   * `rewriteLinkExample2`
+   * ` [getPriority](#priorities-getpriority)`
 
-* ` [getPriority](#priorities-getpriority)`
+* shouldRewrite {#shouldrewrite}
 
-#### shouldRewrite {#shouldrewrite}
-
-エクスペリエンスフラグメントの特定のバリエーションに対して「Adobe Target に書き出し」機能が呼び出された場合に、リンクを書き換える必要があるかどうかをシステムに指定する必要があります。それには、次のメソッドを実装します。
+#### エクスペリエンスフラグメントの特定のバリエーションに対して「Adobe Target に書き出し」機能が呼び出された場合に、リンクを書き換える必要があるかどうかをシステムに指定する必要があります。それには、次のメソッドを実装します。{#shouldrewrite}
 
 `shouldRewrite(ExperienceFragmentVariation experienceFragment);`
 
-次に例を示します。
+`shouldRewrite(ExperienceFragmentVariation experienceFragment);`次に例を示します。
+
+このメソッドは、現在「Adobe Target に書き出し」システムによる書き換えの対象となっているエクスペリエンスフラグメントバリエーションをパラメーターとして受け取ります。
 
 ```java
 @Override
@@ -263,55 +268,56 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 }
 ```
 
-このメソッドは、現在「Adobe Target に書き出し」システムによる書き換えの対象となっているエクスペリエンスフラグメントバリエーションをパラメーターとして受け取ります。
-
 上の例では、次のものが書き換えの対象となります。
 
-* `src` に指定されているリンク
+`src` に指定されているリンク
 
 * `href` 属性のみ
 
-* 特定のエクスペリエンスフラグメントの場合：
-   `/content/experience-fragment/master`
+* `href`特定のエクスペリエンスフラグメントの場合：
 
-「Adobe Target に書き出し」システムに通す他のあらゆるエクスペリエンスフラグメントは無視され、本サービスに実装される変更の影響を受けません。
 
-#### rewriteLink {#rewritelink}
+* `/content/experience-fragment/master`   `/content/experience-fragment/master`「Adobe Target に書き出し」システムに通す他のあらゆるエクスペリエンスフラグメントは無視され、本サービスに実装される変更の影響を受けません。
 
-書き換えプロセスの影響を受けるエクスペリエンスフラグメントバリエーションの場合は、サービスでリンクの書き換えを処理するように作業を進めます。内部 HTML でリンクが検出されるたびに、次のメソッドが呼び出されます。
+rewriteLink {#rewritelink}
+
+#### 書き換えプロセスの影響を受けるエクスペリエンスフラグメントバリエーションの場合は、サービスでリンクの書き換えを処理するように作業を進めます。内部 HTML でリンクが検出されるたびに、次のメソッドが呼び出されます。{#rewritelink}
 
 `rewriteLink(String link, String tag, String attribute)`
 
-このメソッドは入力として次のパラメーターを受け取ります。
+`rewriteLink(String link, String tag, String attribute)`このメソッドは入力として次のパラメーターを受け取ります。
 
-* `link`：
+`link`：
 現在処理中のリンクの `String` 表現です。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`：
 現在処理中の HTML 要素の名前です。
-
-* `attribute`：
+`attribute`：
 正確な属性名です。
 
-例えば、「Adobe Target に書き出し」システムが現在この要素を処理している場合は、`CSSInclude` を次のように定義できます。
+* 例えば、「Adobe Target に書き出し」システムが現在この要素を処理している場合は、`CSSInclude` を次のように定義できます。
+
+* `rewriteLink()` メソッドの呼び出しは、次のパラメーターを使用しておこないます。
+
+サービスを作成する際は、指定された入力に基づいて判断し、それに応じてリンクを書き換えることができます。`CSSInclude`
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-`rewriteLink()` メソッドの呼び出しは、次のパラメーターを使用しておこないます。
+この例では、URL の `/etc.clientlibs` 部分を削除し、適切な外部ドメインを追加するとしましょう。話を簡単にするために、`rewriteLinkExample2` に示すように、サービスのリソースリゾルバーにアクセスできると考えます。
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-サービスを作成する際は、指定された入力に基づいて判断し、それに応じてリンクを書き換えることができます。
+[!NOTE]
 
-この例では、URL の `/etc.clientlibs` 部分を削除し、適切な外部ドメインを追加するとしましょう。話を簡単にするために、`rewriteLinkExample2` に示すように、サービスのリソースリゾルバーにアクセスできると考えます。
+サービスユーザーを通じてリソースリゾルバーを取得する方法について詳しくは、「AEM のサービスユーザー」を参照してください。`/etc.clientlibs``rewriteLinkExample2`
 
 >[!NOTE]
 >
->サービスユーザーを通じてリソースリゾルバーを取得する方法について詳しくは、「AEM のサービスユーザー」を参照してください。
+>上記のメソッドが `null` を返した場合、「Adobe Target に書き出し」システムは、リンクをそのままの状態（リソースへの相対リンク）にしておきます。
 
 <!--
 >For more information on how to get a resource resolver through a service user see [Service Users in AEM](/help/sites-administering/security-service-users.md).
@@ -342,16 +348,16 @@ public String rewriteLink(String link, String tag, String attribute) {
 }
 ```
 
->[!NOTE]
+>優先度 - getPriority {#priorities-getpriority}
 >
->上記のメソッドが `null` を返した場合、「Adobe Target に書き出し」システムは、リンクをそのままの状態（リソースへの相対リンク）にしておきます。
+>様々な種類のエクスペリエンスフラグメントに対応するためや、すべてのエクスペリエンスフラグメントの外部化とマッピングを処理する汎用サービスを用意するために、いくつかのサービスが必要になることは珍しくありません。このような場合、使用するサービスに関するの競合が発生する可能性があるので、AEM では、様々なサービスの&#x200B;**優先度**&#x200B;を定義できるようになっています。優先度は、次のメソッドを使用して指定します。
 
-#### 優先度 - getPriority {#priorities-getpriority}
-
-様々な種類のエクスペリエンスフラグメントに対応するためや、すべてのエクスペリエンスフラグメントの外部化とマッピングを処理する汎用サービスを用意するために、いくつかのサービスが必要になることは珍しくありません。このような場合、使用するサービスに関するの競合が発生する可能性があるので、AEM では、様々なサービスの&#x200B;**優先度**&#x200B;を定義できるようになっています。優先度は、次のメソッドを使用して指定します。
-
-* `getPriority()`
+#### `getPriority()`
 
 このメソッドを使用すると、複数のサービスを使用しても、同じエクスペリエンスフラグメントについては `shouldRewrite()` メソッドが true を返すようにすることができます。`getPriority()` メソッドから最高の優先度が返されるサービスが、対象となっているエクスペリエンスフラグメントバリエーションを処理するサービスになります。
 
-例えば、エクスペリエンスフラグメントのすべてのバリエーションについて `shouldRewrite()` メソッドが `true` を返す場合にすべてのエクスペリエンスフラグメントの基本マッピングを処理する `GenericLinkRewriterProvider` を用意することができます。一部の特定のエクスペリエンスフラグメントについては、特別な処理が必要になる場合があります。その場合は、一部のエクスペリエンスフラグメントバリエーションについてのみ `shouldRewrite()` メソッドが true を返すような `SpecificLinkRewriterProvider` を用意することができます。それらのエクスペリエンスフラグメントバリエーションを処理するために `SpecificLinkRewriterProvider` が必ず選択されるようにするには、そのプロバイダーの `getPriority()` メソッドで返される優先度が `GenericLinkRewriterProvider.` の場合より高くなるようにする必要があります。
+* 例えば、エクスペリエンスフラグメントのすべてのバリエーションについて `shouldRewrite()` メソッドが `true` を返す場合にすべてのエクスペリエンスフラグメントの基本マッピングを処理する `GenericLinkRewriterProvider` を用意することができます。一部の特定のエクスペリエンスフラグメントについては、特別な処理が必要になる場合があります。その場合は、一部のエクスペリエンスフラグメントバリエーションについてのみ `shouldRewrite()` メソッドが true を返すような `SpecificLinkRewriterProvider` を用意することができます。それらのエクスペリエンスフラグメントバリエーションを処理するために `SpecificLinkRewriterProvider` が必ず選択されるようにするには、そのプロバイダーの `getPriority()` メソッドで返される優先度が `GenericLinkRewriterProvider.` の場合より高くなるようにする必要があります。
+
+This method allows the use of several services where the `shouldRewrite()` method returns true for the same Experience Fragment. The service that returns the highest number from its `getPriority()`method is the service that handles the Experience Fragment Variation.
+
+As an example, you can have a `GenericLinkRewriterProvider` that handles the basic mapping for all Experience Fragments and when the `shouldRewrite()` method returns `true` for all Experience Fragment Variations. For several specific Experience Fragments, you may want special handling, so in this case, you can provide a `SpecificLinkRewriterProvider` for which the `shouldRewrite()` method returns true only for some Experience Fragment Variations. To make sure that `SpecificLinkRewriterProvider` is chosen to handle those Experience Fragment Variations, it must return in its `getPriority()` method a higher number than `GenericLinkRewriterProvider.`
