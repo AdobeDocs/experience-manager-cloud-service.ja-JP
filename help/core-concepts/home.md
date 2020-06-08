@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の中心概念
 description: Adobe Experience Manager as a Cloud Service の中心概念に関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7f0896adbfad31597ea8224f1daaa12a2f40180
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
