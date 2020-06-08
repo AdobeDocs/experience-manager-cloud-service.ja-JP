@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager へのデジタルアセットの追加
 description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 100%
 
 ---
 
