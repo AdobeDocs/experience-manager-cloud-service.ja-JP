@@ -1,8 +1,11 @@
 ---
 title: プロジェクトワークフローの操作
 description: すぐに使用可能な様々なプロジェクトワークフローが用意されています。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 100%
 
 ---
 
@@ -47,9 +50,9 @@ AEM でのワークフローの操作について詳しくは、以下を参照�
 * [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)
 * ワークフローの設定 <!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
 
-この節では、プロジェクトに使用可能なワークフローについて説明します。
+このセクションでは、プロジェクトに使用可能なワークフローについて説明します。
 
-## コピーをリクエストワークフロー{#request-copy-workflow}
+## コピーをリクエストワークフロー {#request-copy-workflow}
 
 このワークフローでは、ユーザーの原稿をリクエストし、承認することができます。コピーをリクエストワークフローを開始するには：
 
