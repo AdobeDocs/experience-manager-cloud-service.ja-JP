@@ -1,9 +1,9 @@
 ---
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 100%
 
