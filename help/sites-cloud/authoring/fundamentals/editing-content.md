@@ -1,8 +1,11 @@
 ---
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '2974'
+ht-degree: 100%
 
 ---
 
@@ -154,7 +157,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 選択したコンポーネントがページの下部に追加されます。必要に応じてコンポーネントを[編集](#edit-content)します。
 
-### アセットブラウザーを使用したコンポーネントの挿入{#inserting-a-component-using-the-assets-browser}
+### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
 
 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、ページに新しいコンポーネントを追加することもできます。この操作により、適切なタイプの新しいコンポーネント（アセットが格納される）が自動的に作成されます。
 
@@ -216,7 +219,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    ![削除ボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
-* **コンポーネントを挿入**
+* **コンポーネントの挿入**
 
    [新しいコンポーネントを追加](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system)するためのダイアログが開きます。
 
@@ -266,7 +269,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * [編集用のコンポーネントのダイアログ](#component-edit-dialog)を開きます。
 * アセットブラウザーから[アセットをドラッグ＆ドロップ](#drag-and-drop-assets-into-component)して、コンテンツを直接追加します。
 
-### コンポーネントの編集ダイアログ{#component-edit-dialog}
+### コンポーネントの編集ダイアログ {#component-edit-dialog}
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
@@ -288,7 +291,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 * 画像コンポーネント - 全画面
 
-   画像コンポーネント[の全画面表示モードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面では切り抜きプリセットを選択できます。
+   画像コンポーネント[の全画面表示モードに入ると](#edit-content-full-screen-mode)、画像を編集する領域が広くなり、追加の編集オプション（「**マップを起動**」や「**ズームをリセット**」など）が表示されます。また、全画面表示では切り抜きプリセットを選択できます。
 
    ![画像コンポーネントの全画面表示モード](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -404,7 +407,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を使用すると、レビュー担当者や他の作成者がコンテンツに関するフィードバックを提供できます。注釈は、レビューや検証の目的でよく使用されます。
 
-## ページのプレビュー{#previewing-pages}
+## ページのプレビュー {#previewing-pages}
 
 ページをプレビューするには、以下の 2 つの方法があります。
 
@@ -438,7 +441,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 「**公開済みとして表示**」オプションは、[ページ情報](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information)メニューで使用できます。これによりページが新しいタブで開き、コンテンツが更新され、ページがパブリッシュ環境で表示されるとおりに表示されます。
 
-## ページのロック{#locking-a-page}
+## ページのロック {#locking-a-page}
 
 AEM では、他のユーザーによるコンテンツの変更を防ぐためにページをロックすることができます。ページのロックは、1 つの特定のページで大量の編集作業をおこなう場合や、短期間ページを凍結する必要がある場合に便利です。
 
