@@ -1,8 +1,11 @@
 ---
 title: 検索
 description: 包括的な検索を使用して、よりすばやくコンテンツを見つけます
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ AEM のオーサー環境は、リソースタイプに応じて、コンテン�
    * 検索ディレクトリ
    * タグ
    * 検索条件（変更日、公開ステータス、ライブコピーのステータスなど）
+
    >[!NOTE]
    >
    >検索条件は、次の場合に変わる可能性があります。
