@@ -1,13 +1,16 @@
 ---
-title: AEMアプリケーションプロジェクト — クラウドサービス
-description: AEMアプリケーションプロジェクト — クラウドサービス
+title: AEM Application Project — クラウドサービス
+description: AEM Application Project — クラウドサービス
 translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '1184'
+ht-degree: 92%
 
 ---
 
 
-# Creating an AEM Application Project {#aem-application-project}
+# AEM アプリケーションプロジェクトの作成 {#aem-application-project}
 
 ## ウィザードを使用した AEM アプリケーションプロジェクトの作成 {#using-wizard-to-create-an-aem-application-project}
 
@@ -20,18 +23,18 @@ Cloud Manager で AEM アプリケーションプロジェクトを作成する�
 
    ![](assets/create-wizard1.png)
 
-1. 「作成 **」をクリッ** クして、分岐とプロジェクトの作成画面に移動します **** 。
+1. 「**作成**」をクリックして、**ブランチとプロジェクトの作成**&#x200B;画面に移動します。
 
    ![](assets/create-wizard2.png)
 
-1. プロジ **ェクトの作成中タイルが** 、プログラムの概要 *画面に表示されます* 。
+1. 「 **プログラムの概要** 」画面に、「 ** プロジェクトの作成中」タイルが表示されます。
 
    ![](assets/create-wizard3.png)
 
-1. プログラムの作成が完了すると、「 **Add Environment** 」タイルが「 *Program Overview* 」ページに表示されます。
+1. プログラムの作成が完了すると、「**環境を追加**」タイルが「*プログラムの概要*」ページに表示されます。
    ![](assets/create-wizard4.png)
 
-   環境を追加 [または管理する方法については](/help/implementing/cloud-manager/manage-environments.md) 、「環境の管理」を参照してください。
+   環境を追加または管理する方法については、 [環境の管理](/help/implementing/cloud-manager/manage-environments.md) を参照してください。
 
 ## プロジェクトの設定 {#setting-up-your-project}
 
@@ -95,7 +98,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 ### カスタム環境変数 {#custom-environ-variables}
 
-場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Managerでは、これらの変数を顧客ごとにアドビの担当者が設定できます。 これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する場合は、アドビの担当者に変数を設定する必要があります。
+場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Managerでは、これらの変数を顧客ごとにアドビの担当者が設定できます。 これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する場合は、アドビの担当者に変数の設定を依頼する必要があります。
 
 設定が完了すると、これらの変数は環境変数として使用可能になります。これらの変数を Maven プロパティとして使用するには、pom.xml ファイルを参照します（変数は、前述のようにプロファイル内にあるはずです）。
 
