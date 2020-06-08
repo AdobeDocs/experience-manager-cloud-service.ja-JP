@@ -1,9 +1,9 @@
 ---
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 100%
 
