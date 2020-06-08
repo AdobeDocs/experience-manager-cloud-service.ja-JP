@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3512'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ AEM バージョンのアップデートは、常に、カスタムコードの�
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
