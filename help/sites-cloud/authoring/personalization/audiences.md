@@ -1,8 +1,11 @@
 ---
 title: オーディエンスの管理
 description: オーディエンスコンソールを使用して、Adobe Target アカウント用のオーディエンスを作成、整理および管理したり、ContextHub 用のセグメントを管理したりできます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * CH - ContextHub セグメント
 * AT - Adobe Target オーディエンス
 
-## オーディエンスコンソールでの ContextHub セグメントの作成{#creating-a-contexthub-segment-in-the-audiences-console}
+## オーディエンスコンソールでの ContextHub セグメントの作成 {#creating-a-contexthub-segment-in-the-audiences-console}
 
 ContextHub セグメントは、オーディエンスコンソールまたはターゲット設定プロセスで作成できます。
 
@@ -73,7 +76,7 @@ Adobe Target オーディエンスを作成するには：
 1. オーディエンス名を入力し、「**保存**」をタップまたはクリックします。
 1. 「**保存**」をタップまたはクリックします。オーディエンスが「オーディエンス」リストに表示されます。
 
-### 属性とそのオプション{#attributes-and-their-options}
+### 属性とそのオプション {#attributes-and-their-options}
 
 以下の属性ごとに、ターゲット設定ルールを作成できます。
 
