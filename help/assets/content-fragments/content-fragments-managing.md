@@ -1,9 +1,9 @@
 ---
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 >
 >コンテンツフラグメントは、ページのオーサリングで使用します。[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
-## コンテンツフラグメントの作成{#creating-content-fragments}
+## コンテンツフラグメントの作成 {#creating-content-fragments}
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 
@@ -40,6 +40,7 @@ ht-degree: 100%
       * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **空港**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
 
          * 使用可能なすべてのモデルが表示されます。
+
    選択した後、「**次へ**」を使用して続けます。
 
    ![フラグメントの基盤](assets/cfm-managing-01.png)
@@ -127,6 +128,7 @@ ht-degree: 100%
 
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
+
    フラグメントエディターが開きます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
@@ -134,9 +136,11 @@ ht-degree: 100%
    >[!NOTE]
    >
    >1. フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。
-   >
-   >
-   >2. **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
+      >
+      >
+      >
+
+   2. **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
 
 3. サイドパネルのアイコンを使用して、3 つのモデル間を移動します。
@@ -146,6 +150,7 @@ ht-degree: 100%
    * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [関連コンテンツ](#associating-content-with-your-fragment)
    * [メタデータ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![モード](assets/cfm-managing-04.png)
 
 4. 変更を加えた後、必要に応じて「**保存**」または「**キャンセル**」をクリックします。
@@ -154,7 +159,7 @@ ht-degree: 100%
    >
    >「**保存**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## 保存、キャンセルおよびバージョン{#save-cancel-and-versions}
+## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -208,19 +213,19 @@ ht-degree: 100%
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理{#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
 
 マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける{#associating-content-with-your-fragment}
+## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
 
 フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
-## フラグメントのメタデータ（プロパティ）の表示と編集{#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 「[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)」タブを使用し、フラグメントのプロパティを表示して編集できます。
 
-## コンテンツフラグメントのタイムライン{#timeline-for-content-fragments}
+## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
