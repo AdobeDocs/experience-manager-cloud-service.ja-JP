@@ -1,8 +1,11 @@
 ---
 title: ページバージョンの処理
 description: ページのバージョンを作成、比較および復元します
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 * （例えば、ページに対しておこなった変更を取り消すために）ページを以前のバージョンに復元する。
 * ハイライト表示されたテキストおよび画像の違いについて、現在のページのバージョンを以前のバージョンと比較する。
 
-## 新しいバージョンの作成{#creating-a-new-version}
+## 新しいバージョンの作成 {#creating-a-new-version}
 
 リソースのバージョンは、次の場所から作成できます。
 
@@ -78,7 +81,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 「**このバージョンに戻る**」を選択します。選択したバージョンが復元され、タイムラインの情報が更新されます。
 
-## バージョンのプレビュー{#previewing-a-version}
+## バージョンのプレビュー {#previewing-a-version}
 
 次の手順で特定のバージョンをプレビューできます。
 
@@ -110,7 +113,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 「**現在のバージョンと比較**」を選択します。[ページの比較](/help/sites-cloud/authoring/features/page-diff.md)が開き、ページの違いが表示されます。
 
-## タイムワープ{#timewarp}
+## タイムワープ {#timewarp}
 
 タイムワープは、過去の特定の時間にページが&#x200B;*公開された*&#x200B;状態をシミュレートするために設計された機能です。
 
