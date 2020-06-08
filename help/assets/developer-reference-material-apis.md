@@ -2,9 +2,9 @@
 title: 'Adobe Experience Manager as a Cloud Service におけるデジタルアセット管理のための Assets API '
 description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 100%
 
