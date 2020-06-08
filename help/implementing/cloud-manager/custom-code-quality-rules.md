@@ -1,11 +1,11 @@
 ---
-title: カスタムコード品質ルール - クラウドサービス
-description: カスタムコード品質ルール - クラウドサービス
+title: カスタムコード品質ルール - Cloud Services
+description: カスタムコード品質ルール - Cloud Services
 translation-type: tm+mt
 source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
 workflow-type: tm+mt
 source-wordcount: '2254'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -552,23 +552,9 @@ public void doThis(Resource resource) {
 }
 ```
 
-### Slingスケジューラーは使用しない {#sonarqube-sling-scheduler}
+### Sling スケジューラーは使用しない {#sonarqube-sling-scheduler}
 
-**キー**: CQRules:AMSCORE-554
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2020.5.0
-
-Slingスケジューラーは、確実な実行を必要とするタスクには使用しないでください。 Slingスケジュールジョブは実行を保証し、クラスター化ジョブと非クラスター化環境の両方に適しています。
-
-Slingジョブがクラスター環境で処理される方法について詳しくは、 [Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照してください。
-
-### AEMの非推奨APIは使用しないでください {#sonarqube-aem-deprecated}
-
-**キー**: AMSCORE-553
+**キー**：CQRules:AMSCORE-554
 
 **タイプ**：コードスメル
 
@@ -576,11 +562,25 @@ Slingジョブがクラスター環境で処理される方法について詳し
 
 **最初の対象バージョン**：バージョン 2020.5.0
 
-AEM APIの表面は絶え間ないリビジョンの下にあり、使用がお勧めされず、非推奨と見なされるAPIを識別します。
+Sling スケジューラーは、確実な実行を必要とするタスクには使用しないでください。Sling スケジュールジョブは実行を保証し、クラスター化ジョブと非クラスター化環境の両方に適しています。
 
-多くの場合、これらのAPIは、標準のJava *@Deprecated* 注釈を使用して非推奨になります。この注釈は、で識別されるように使用されま `squid:CallToDeprecatedMethod`す。
+Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照してください。
 
-ただし、APIがAEMのコンテキストで非推奨となるが、他のコンテキストでは非推奨とならない場合があります。 このルールは、この2番目のクラスを識別します。
+### AEM の非推奨 API は使用しない {#sonarqube-aem-deprecated}
+
+**キー**：AMSCORE-553
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+AEM API の表面は、使用が推奨されず非推奨と見なされる API を識別するために継続的に見直しされます。
+
+多くの場合、これらの API は、標準の Java *@Deprecated* 注釈を使用して非推奨とされ、その結果、`squid:CallToDeprecatedMethod` によって識別されます。
+
+ただし、API が AEM のコンテキストで非推奨となるものの、他のコンテキストでは非推奨とならない場合があります。このルールは、この 2 番目のクラスを識別します。
 
 ## OakPAL コンテンツルール {#oakpal-rules}
 
@@ -677,21 +677,9 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 
 *パッケージには重複する OSGi 設定を含めない*&#x200B;と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
 
-### デフォルトのオーサリングモードをクラシックUIにしない {#oakpal-default-authoring}
+### デフォルトのオーサリングモードをクラシック UI にしない {#oakpal-default-authoring}
 
-**キー**: ClassicUIAuthoringMode
-
-**タイプ**：コードスメル
-
-**深刻度**：軽度
-
-**最初の対象バージョン**：バージョン 2020.5.0
-
-OSGi設定は、AEM内でデフォルトのオーサリングモードを `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 定義します。 AEM 6.4以降、Classic UIは非推奨となったので、デフォルトのオーサリングモードがクラシックUIに設定されている場合に問題が発生するようになりました。
-
-### タッチUIダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
-
-**キー**: ComponentWithOnlyClassicUIDalog
+**キー**：ClassicUIAuthoringMode
 
 **タイプ**：コードスメル
 
@@ -699,17 +687,11 @@ OSGi設定は、AEM内でデフォルトのオーサリングモードを `com.d
 
 **最初の対象バージョン**：バージョン 2020.5.0
 
-最適なオーサリングエクスペリエンスを提供し、クラシックUIがサポートされないクラウドサービスデプロイメントモデルとの互換性を維持するために、クラシックUIダイアログを含むAEMコンポーネントには、常にタッチUIダイアログが必要です。 このルールは、次のシナリオを検証します。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。AEM 6.4 以降、クラシック UI は非推奨となったため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
 
-* クラシックUIダイアログ（ダイアログの子ノード）を持つコンポーネントには、対応するタッチUIダイアログ（子ノード）が必要です。 `cq:dialog`
-* クラシックUIデザインダイアログ（design_dialogノード）を含むコンポーネントには、対応するタッチUIデザインダイアログ( `cq:design_dialog` 子ノード)が必要です。
-* クラシックUIダイアログとクラシックUIデザインダイアログの両方を持つコンポーネントには、対応するタッチUIダイアログと対応するタッチUIデザインダイアログの両方が必要です。
+### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
 
-AEM最新化ツールのドキュメントには、コンポーネントをクラシックUIからタッチUIに変換する方法に関するドキュメントとツールが記載されています。 詳しくは、「AEM最新化ツ [ール](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 」を参照してください。
-
-### 可変コンテンツと不変コンテンツがパッケージに混在してはならない {#oakpal-packages-immutable}
-
-**キー**: ImmutableMutableMixedPackage
+**キー**：ComponentWithOnlyClassicUIDalog
 
 **タイプ**：コードスメル
 
@@ -717,13 +699,17 @@ AEM最新化ツールのドキュメントには、コンポーネントをク�
 
 **最初の対象バージョン**：バージョン 2020.5.0
 
-クラウドサービスの展開モデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、顧客コードで変更しないで別の違反を引き起こす）または可変領域（その他すべて）のいずれかを含める必要があります。 `/apps and /libs, although /libs` 例えば、両方を含むパッケージ `/apps/myco/components/text and /etc/clientlibs/myco` はクラウドサービスと互換性がなく、問題が報告されます。
+最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされない Cloud Service デプロイメントモデルとの互換性を維持するために、クラシック UI ダイアログを含む AEM コンポーネントには、常にタッチ UI ダイアログが必要です。このルールは、次のシナリオを検証します。
 
-詳しくは、 [AEMプロジェクト構造](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) （英語）を参照してください。
+* クラシック UI ダイアログ（ダイアログの子ノード）を持つコンポーネントには、対応するタッチ UI ダイアログ（`cq:dialog` 子ノード）が必要です。
+* クラシック UI デザインダイアログ（design_dialog ノード）を含むコンポーネントには、対応するタッチ（`cq:design_dialog` 子ノード）が必要です。
+* クラシック UI ダイアログとクラシック UI デザインダイアログの両方を持つコンポーネントには、対応するタッチ UI ダイアログと対応するタッチ UI デザインダイアログの両方が必要です。
 
-### 逆複製エージェントは使用しない {#oakpal-reverse-replication}
+AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)を参照してください。
 
-**キー**: 逆複製
+### 可変コンテンツと不変コンテンツをパッケージに混在させない {#oakpal-packages-immutable}
+
+**キー**：ImmutableMutableMixedPackage
 
 **タイプ**：コードスメル
 
@@ -731,7 +717,21 @@ AEM最新化ツールのドキュメントには、コンポーネントをク�
 
 **最初の対象バージョン**：バージョン 2020.5.0
 
-リリースノートで説明されているように、逆複製のサポートはクラウドサービスのデプロイメントでは利用できません [。 レプリケーションエージェントの削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)。
+Cloud Service のデプロイメントモデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、`/apps and /libs, although /libs` を顧客コードで変更すると、別の違反を引き起こします）または可変領域（その他すべて）のいずれかを含める必要があります。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
-逆複製を使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
+詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html)を参照してください。
+
+### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
+
+**キー**：リバースレプリケーション
+
+**タイプ**：コードスメル
+
+**深刻度**：軽度
+
+**最初の対象バージョン**：バージョン 2020.5.0
+
+[リリースノート：レプリケーションエージェントの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)で説明されているように、リバースレプリケーションのサポートは Cloud Service のデプロイメントでは利用できません。
+
+リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
