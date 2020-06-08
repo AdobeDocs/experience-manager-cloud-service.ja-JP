@@ -2,8 +2,11 @@
 title: アセットインサイト
 description: アセットインサイト機能を使用して、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザーのレーティングと使用状況統計を追跡する方法について説明します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    * **[!UICONTROL Web およびモバイル]**：アセットが Web サイトまたはアプリに含まれた回数.
    * **[!UICONTROL ソーシャル]**：アセットが Adobe Social や Adobe Campaign などのソリューションで使用された回数.
    * **[!UICONTROL 電子メール]**：アセットが電子メールキャンペーンで使用された回数.
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
