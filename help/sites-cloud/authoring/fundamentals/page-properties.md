@@ -1,8 +1,11 @@
 ---
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 100%
 
 ---
 
@@ -67,6 +70,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
    * このページのバニティ URL を入力でき、短くより表現力のある URL にすることができます。
    * 例えば、Web サイト `http://example.com` のパス `/v1.0/startpage` で特定されるページに対して、バニティ URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティ URL は `http://example.com/welcome` となります。
+
    >[!CAUTION]
    >
    >バニティ URL は次のような特性があります。
@@ -136,7 +140,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 
    * 書き出し設定を指定します。
 
-### サムネール{#thumbnail}
+### サムネール {#thumbnail}
 
 ページサムネール画像が表示されます。以下の操作を実行できます。
 
@@ -172,6 +176,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 * **Cloud Services**
 
    * Cloud Services のプロパティを定義します。
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -180,6 +185,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 * **ContextHub 設定**
 
    * 「ContextHub 設定」と「セグメントのパス」を選択します。
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -196,6 +202,7 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
    * 権限を追加
    * 閉じられたユーザーグループを編集
    * 有効な権限を表示
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -207,19 +214,20 @@ source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
 * **ブループリント**
 
    * マルチサイト管理でのブループリントページのプロパティを定義します。
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * 変更がライブコピーに適用される条件を制御します。
 
 
-### ライブコピー{#live-copy}
+### ライブコピー {#live-copy}
 
 * **ライブコピー**
 
    * マルチサイト管理でのライブコピーページのプロパティを定義します。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * ブループリントからの変更が適用される条件を制御します。
 
-### サイト構造{#site-structure}
+### サイト構造 {#site-structure}
 
 * **サインアップページ**、**オフラインページ**&#x200B;など、サイト全体にわたる機能を提供するページへのリンクを指定します。
 
