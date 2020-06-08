@@ -1,8 +1,11 @@
 ---
 title: コンポーネント
 description: コンポーネントは、AEM におけるコンテンツページの基本的なオーサリング構成要素です。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 100%
 
 ---
 
@@ -19,7 +22,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 >
 >インスタンスによっては、要件に合わせて明示的に開発されたカスタマイズコンポーネントが存在する場合があります。これらは、ここで説明するいくつかのコンポーネントと同じ名前の場合があります。
 
-## 一般的な使用方法{#general-usage}
+## 一般的な使用方法 {#general-usage}
 
 コンポーネントは、[ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)時にページエディターのサイドパネルの「**コンポーネント**」タブで使用できます。
 
