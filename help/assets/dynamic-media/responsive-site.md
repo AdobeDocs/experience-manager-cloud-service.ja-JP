@@ -1,8 +1,11 @@
 ---
 title: レスポンシブサイト用に最適化された画像の配信
 description: レスポンシブコード機能を使用して、最適化された画像を配信する方法
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 100%
 
 ---
 
