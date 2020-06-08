@@ -1,8 +1,11 @@
 ---
 title: 通知 - クラウドサービス
 description: 通知 - クラウドサービス
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
 
@@ -16,6 +19,7 @@ source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
 >承認およびスケジュール済みの通知は、ビジネスオーナー、プログラムマネージャー、デプロイメントマネージャーの役割のユーザーにのみ送信されます。
 
 通知は、[!UICONTROL Cloud Manager] UI（ユーザーインターフェイス）のサイドバーおよび Adobe [!UICONTROL Experience Cloud] 中で表示されます。
+
 ![](assets/notify-1.png)
 
 下の図に示すように、ヘッダーのベルアイコンをクリックしてサイドバーを開き、通知を表示します。
