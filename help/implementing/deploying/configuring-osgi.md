@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 2ab998c7acedecbe0581afe869817a9a56ec5474
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 100%
 
