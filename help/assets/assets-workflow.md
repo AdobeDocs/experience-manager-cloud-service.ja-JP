@@ -2,8 +2,11 @@
 title: アセットへのワークフローの適用
 description: Adobe Experience Manager Assets でアセット、フォルダーおよびコレクションにワークフローを適用する方法について説明します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ccfb07b3aef2e357434993cdf87ea9962b3c3566
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 100%
 
 ---
 
