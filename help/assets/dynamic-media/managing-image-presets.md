@@ -1,8 +1,11 @@
 ---
 title: 画像プリセットの管理
 description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+workflow-type: tm+mt
+source-wordcount: '3657'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
 
 管理者が画像プリセットを作成できます。画像プリセットを作成する際に、最初から作業を始めることも、既存のプリセットから始めて新しい名前で保存することもできます。
 
-## 画像プリセットの管理{#managing-image-presets-1}
+## 画像プリセットの管理 {#managing-image-presets-1}
 
 AEM で画像プリセットを管理するには、AEM のロゴをタップまたはクリックしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして&#x200B;**[!UICONTROL アセット／画像プリセット]**&#x200B;の順に移動します。
 
@@ -74,7 +77,7 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。AEM As
 >
 >DAM アセットの更新ワークフローでは、**[!UICONTROL EPS サムネール]**&#x200B;のステップで EPS ファイルのサムネールが生成されます。
 
-#### PDF/AI/EPS アセットのメタデータプロパティ{#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS アセットのメタデータプロパティ {#pdf-ai-eps-asset-metadata-properties}
 
 | **メタデータプロパティ** | **説明** |
 |---|---|
@@ -127,7 +130,7 @@ PDF または AI ワークフローのラスタライズの引数
 
 `Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントには、メモリに過度に大きな画像が作成されないように、最大値が定義されています。このようなサイズの大きな画像は、JVM（Java Virtual Machine）で提供されているメモリをオーバーフローさせることがあります。それぞれ設定された最大サイズで画像を作成可能なワークフローを、設定した数だけ並行して管理するのに十分なメモリを JVM に提供する必要があります。
 
-### InDesign（INDD）ファイル形式{#indesign-indd-file-format}
+### InDesign（INDD）ファイル形式 {#indesign-indd-file-format}
 
 INDD 形式の取り込みをサポートし、これらのファイル形式の動的レンディションを生成する場合、画像プリセットを作成する前に次の情報を確認することをお勧めします。
 
@@ -182,6 +185,7 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
    >
    >
 * ビデオのサムネールサイズは「**[!UICONTROL 引数]**」の下にある「**[!UICONTROL 処理]**」タブの **[!UICONTROL FFmpeg サムネール]**&#x200B;のステップで設定します。
+
 >
 
 
@@ -201,7 +205,7 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 
 1. 「**[!UICONTROL 保存]**」をタップしてワークフローに対する変更を保存します。
 
-### 表示される画像プリセット数の増減{#increasing-or-decreasing-the-number-of-image-presets-that-display}
+### 表示される画像プリセット数の増減 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 作成した画像プリセットは、アセットをプレビューする際の動的レンディションとして使用できます。AEM で、**[!UICONTROL 詳細表示／レンディション]**&#x200B;からアセットを表示すると、様々な動的レンディションが表示されます。表示されるレンディション数の制限を増減させることができます。
 
@@ -243,7 +247,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
    >
    >この画像プリセットをレスポンシブにするには、「**[!UICONTROL 幅]**」フィールドと「**[!UICONTROL 高さ]**」フィールドの値を消去して空のままにします。
 
-1. 「**[!UICONTROL 基本]**」タブと「**[!UICONTROL 詳細]**」タブに、名前などの値を適宜入力します。オプションの概要については、[画像プリセットオプション](#image-preset-options)で説明しています。プリセットは左側のウィンドウに表示され、他のアセットと共にその場で使用できます。
+1. 「**[!UICONTROL 基本]**」タブと「**[!UICONTROL 詳細]**」タブに、名前などの値を適宜入力します。オプションの概要については、[画像プリセットオプション](#image-preset-options)で説明しています。プリセットは左側のウィンドウに表示され、他のアセットにすぐに使用できます。
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
@@ -302,7 +306,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
     <ul>
      <li><strong>タイプ</strong> - 「<strong>アダプティブ</strong>」（デフォルト）、「<strong>Web</strong>」、「<strong>Macintosh</strong>」のいずれかを選択します。「<strong>アルファ付き GIF</strong>」を選択した場合は、「Macintosh」オプションは選択できません。</li>
      <li><strong>ディザ</strong> - 「<strong>拡散</strong>」または「<strong>オフ</strong>」を選択します。</li>
-     <li><strong>色数</strong> - 2～256 の値を入力します。</li>
+     <li><strong>色数</strong> - 2 ～ 256 の値を入力します。</li>
      <li><strong>カラーリスト</strong> - コンマ区切りのリストを入力します。例えば、白、グレーおよび黒の場合は、"000000,888888,ffffff" と入力します。</li>
     </ul>
     <div>
@@ -462,7 +466,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 1. プリセットを選択し、「**[!UICONTROL 編集]**」をクリックします。**[!UICONTROL 画像プリセットを編集]**&#x200B;ウィンドウが開きます。
 1. 変更を加え、「**[!UICONTROL 保存]**」をクリックして変更を保存するか、「**[!UICONTROL キャンセル]**」をクリックして変更をキャンセルします。
 
-### 画像プリセットの公開{#publishing-image-presets}
+### 画像プリセットの公開 {#publishing-image-presets}
 
 画像プリセットは自動的に公開されます。
 
