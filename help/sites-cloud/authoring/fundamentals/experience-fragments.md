@@ -1,8 +1,11 @@
 ---
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+workflow-type: tm+mt
+source-wordcount: '1492'
+ht-degree: 100%
 
 ---
 
@@ -43,7 +46,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 問題が発生している場合は、システム管理者にお問い合わせください。
 
-## エクスペリエンスフラグメントを使用するタイミング  {#when-should-you-use-experience-fragments}
+## エクスペリエンスフラグメントを使用するタイミング   {#when-should-you-use-experience-fragments}
 
 エクスペリエンスフラグメントは次の場合に使用します。
 
@@ -226,6 +229,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
    * **名前**（空欄のままの場合、タイトルから派生される）
    * **説明**
    * **バリエーションのタグ**
+
    次に例を示します。
 
    ![バリエーションのプロパティ](/help/sites-cloud/authoring/assets/xf-07.png)
@@ -244,6 +248,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
    * アセットブラウザーから必要なフラグメントをドラッグして、コンポーネントにドロップします。
    * コンポーネントツールバーから&#x200B;**設定**&#x200B;を選択して、使用するフラグメントを指定し、「**完了**」で確定します。
+
    >[!NOTE]
    >
    >コンポーネントツールバーの「編集」は、フラグメントエディターでフラグメントを開くためのショートカットとして動作します。
@@ -328,7 +333,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
       * **Web バリアントの数** - 情報提供のみ
       * **非 Web バリアントの数** - 情報提供のみ
       * **このフラグメントを使用するページの数** - 情報提供のみ
-   * **クラウドサービス**
+   * **Cloud Services**
       * **クラウド設定**
       * **クラウドサービスの設定**
       * **Facebook ページ ID**
@@ -346,7 +351,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 >
 >ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
-## エクスペリエンスフラグメントの書き出し{#exporting-experience-fragments}
+## エクスペリエンスフラグメントの書き出し {#exporting-experience-fragments}
 
 デフォルトでは、エクスペリエンスフラグメントは HTML 形式で配信され、AEM とサードパーティチャネルのどちらでも同じように使用できます。
 
