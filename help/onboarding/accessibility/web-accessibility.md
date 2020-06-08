@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: 6f6038e6669d85230b38dc73cdddae164a01643b
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 83%
+ht-degree: 92%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン{#aem-and-the-web-accessibility-guidelines}
 
-様々な社会的、経済的、法的動機により、Web コンテンツを設計する際には、身体的障碍や制限の有無に関係なく、対象とするオーディエンスができるだけアクセスしやすくことが求められます。クラウドサービスとしてのAdobe Experience Manager(AEM)によるWebアクセシビリティは、優れたWebデザインのますます重要な側面となっています。
+様々な社会的、経済的、法的動機により、Web コンテンツを設計する際には、身体的障碍や制限の有無に関係なく、対象とするオーディエンスができるだけアクセスしやすくことが求められます。Adobe Experience Manager (AEM) as a Cloud Service による Web アクセシビリティは、優れた Web デザインの重要な側面となっています。
 
 AEM as a Cloud Service でアクセシブルな Web サイトやコンテンツを作成すると、次のような影響があります。
 
-* アクセシビリティ機能が正しく有効になっていることを確認するために、AEMを設定する管理者です。
+* 管理者は、アクセシビリティ機能が正しく有効化されるように AEM を設定する必要があります。
 
 * 作成者は、これらの機能を使用して、アクセシブルな Web サイトを作成する必要があります。
 
