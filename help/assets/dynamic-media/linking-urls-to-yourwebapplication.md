@@ -1,8 +1,11 @@
 ---
 title: Web アプリケーションへの URL のリンク
 description: Dynamic Media で Web アプリケーションに URL をリンクする方法
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+workflow-type: tm+mt
+source-wordcount: '1270'
+ht-degree: 100%
 
 ---
 
@@ -25,9 +28,9 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 
 [レスポンシブサイト用に最適化された画像の配信](responsive-site.md)も参照してください。
 
-[アセットのアップロード](/help/assets/manage-digital-assets.md#uploading-assets)も参照してください。
+[アセットのアップロード ](/help/assets/manage-digital-assets.md#uploading-assets)も参照してください。
 
-## アセットの URL の取得{#obtaining-a-url-for-an-asset}
+## アセットの URL の取得 {#obtaining-a-url-for-an-asset}
 
 画像プリセットまたはビューアプリセットによって生成された URL 文字列を取得できます。URL をコピーしたらクリップボードに配置されるので、必要に応じて Web サイトのページまたはアプリケーションに貼り付けることができます。
 
@@ -147,7 +150,7 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 
    これは、公開されたビデオレンディションの完全なビデオ URL です。
 
-## アダプティブストリーミング（HLS）用のビデオ URL の取得{#obtaining-a-video-url-for-adaptive-streaming-hls}
+## アダプティブストリーミング（HLS）用のビデオ URL の取得 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. AEM で、**[!UICONTROL ツール／導入／クラウド／Cloud Services]** に移動します。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
@@ -155,6 +158,7 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 1. **[!UICONTROL Dynamic Media Cloud Services を設定]**&#x200B;ページで、以下の作業をおこないます。
 
    * 「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーした URL パスは後の手順で必要になります。例えば、URL パスは、次のように表示されることがあります。
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    （このパスは説明のために便宜的に示しています。コピーする実際のパスではありません。）
