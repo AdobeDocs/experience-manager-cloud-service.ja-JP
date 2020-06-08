@@ -2,9 +2,9 @@
 title: Connected Assets を使用して、 [!DNL Adobe Experience Manager Sites]  オーサリングワークフローで DAM アセットを共有する.
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5e89a44cb727547af9db783662e035c4e2102a4e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2049'
 ht-degree: 100%
 
@@ -110,7 +110,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
    1. フィールド「**[!UICONTROL 許可されたオリジン]**」にローカル [!DNL Sites] の URL、つまり `https://[local_sites]:[port]` を入力します。設定を保存します。
 
-## リモートアセットの使用{#use-remote-assets}
+## リモートアセットの使用 {#use-remote-assets}
 
 Web サイト作成者は、コンテンツファインダーを使用して DAM インスタンスに接続します。Web サイト作成者は、コンポーネント内のリモートアセットを参照、検索、ドラッグできます。リモート DAM への認証をおこなえるよう、管理者から提供された DAM ユーザーの資格情報を手元に用意してください。
 
@@ -183,7 +183,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * 取得操作は 5 秒でタイムアウトします。アセット取得時、問題が発生する場合があります（ネットワークに問題がある場合など）。作成者は、再試行をおこない、リモートアセットを[!UICONTROL コンテンツファインダー]から[!UICONTROL ページエディター]にドラッグ＆ドロップできます。
 * 取得されたアセットに対しては、単純な非破壊編集と、 `Image` コンポーネント経由でサポートされている編集をおこなえます。アセットは読み取り専用です。
 
-## 問題のトラブルシューティング{#troubleshoot}
+## 問題のトラブルシューティング {#troubleshoot}
 
 一般的なエラーシナリオのトラブルシューティングをおこなうには、次の手順に従います。
 
