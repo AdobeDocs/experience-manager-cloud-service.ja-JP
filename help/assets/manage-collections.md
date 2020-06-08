@@ -3,8 +3,11 @@ title: デジタルアセットコレクションの管理
 description: Adobe Experience Manager Assets におけるコレクションの概念を理解します。コレクションや管理、編集の方法、および他のユーザーとコレクションを共有する方法について学習します。
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '2381'
+ht-degree: 100%
 
 ---
 
