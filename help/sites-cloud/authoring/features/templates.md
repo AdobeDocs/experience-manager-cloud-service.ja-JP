@@ -1,13 +1,16 @@
 ---
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義し、テンプレートエディターにより、テンプレートの作成および維持は、もはや開発者のみのタスクではなくなります。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '4554'
+ht-degree: 100%
 
 ---
 
 
-# ページテンプレートの作成{#creating-page-templates}
+# ページテンプレートの作成 {#creating-page-templates}
 
 ページを作成するとき、テンプレートを選択する必要があります。これは新しいページを作成するための基本として使用されます。テンプレートは、作成されるページの構造、初期コンテンツ、および使用できるコンポーネントを定義します。
 
@@ -124,7 +127,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    >
    >新しく作成されたテンプレートは、コンソールで&#x200B;**ドラフト**&#x200B;とマークされます。これは、ページ作成者がまだテンプレートを使用できないことを示します。
 
-### テンプレートプロパティの定義 - テンプレート作成者{#defining-template-properties-template-author}
+### テンプレートプロパティの定義 - テンプレート作成者 {#defining-template-properties-template-author}
 
 テンプレートには、次のプロパティを指定できます。
 
@@ -159,7 +162,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
    * このサムネールで満足できない場合は、**クリア**&#x200B;をタップまたはクリックして、他の画像をアップロードするか、サムネールを再生成します。
 1. 満足できる場合は、「**保存して閉じる**」をクリックまたはタップします。
 
-### テンプレートの有効化および許可 - テンプレート作成者{#enabling-and-allowing-a-template-template-author}
+### テンプレートの有効化および許可 - テンプレート作成者 {#enabling-and-allowing-a-template-template-author}
 
 ページを作成するときにテンプレートを使用するには、以下の作業が必要です。
 
@@ -218,7 +221,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 連携して公開される&#x200B;**コンテンツポリシー**&#x200B;を選択します。
 1. ツールバーから「**公開**」を選択してアクションを完了します。
 
-## テンプレートの編集- テンプレート作成者{#editing-templates-template-authors}
+## テンプレートの編集- テンプレート作成者 {#editing-templates-template-authors}
 
 テンプレートを作成（または編集）するときに、様々な側面を定義できます。テンプレートの編集は、ページのオーサリングに似ています。
 
@@ -547,6 +550,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
    * 左半分は、[ページポリシー](#page-policies)を定義します。
    * 右半分は、[ページプロパティ](#page-properties)を定義します。
+
    ![ページデザイン](/help/sites-cloud/authoring/assets/templates-page-design.png)
 
 #### ページポリシー {#page-policies}
@@ -635,6 +639,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * 構造のみ - すぐに適用されます
       * 初期コンテンツが含まれる - 変更後に作成されたページに対してのみ
+
    以下の場合は特別に注意します。
 
    * 有効化されたテンプレートでのコンポーネントのロックまたはロック解除
@@ -642,6 +647,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
       * （ロックされていた）コンポーネントのロックを解除すると既存のページに表示されなくなります。
       * （編集可能だった）コンポーネントをロックするとそのコンテンツがページに表示されることを防ぎます。
+
    >[!NOTE]
    >
    >ドラフトでなくなったテンプレートのコンポーネントのロック状態を変更すると、AEM は明示的に警告します。
