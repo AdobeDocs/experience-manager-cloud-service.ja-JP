@@ -1,9 +1,9 @@
 ---
 title: 非推奨（廃止予定）の機能と削除された機能
 description: リリースノート（Adobe Experience Manager as a Cloud Service の非推奨（廃止予定）の機能と削除された機能）
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
 
