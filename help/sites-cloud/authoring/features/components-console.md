@@ -1,8 +1,11 @@
 ---
 title: コンポーネントコンソール
 description: コンポーネントコンソールを使用すると、インスタンスに定義されたすべてのコンポーネントを参照できます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 100%
 
 ---
 
@@ -40,6 +43,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * アイコンのソースをクリックすると、そのコンポーネントが表示されます。
    * コンポーネントの&#x200B;**リソースタイプ**&#x200B;および&#x200B;**リソースのスーパータイプ**（定義されている場合）の表示。
       * リソースのスーパータイプをクリックすると、そのコンポーネントが表示されます。
+
    >[!NOTE]
    >
    >`/apps` は実行時には編集できないので、コンポーネントコンソールは読み取り専用です。
