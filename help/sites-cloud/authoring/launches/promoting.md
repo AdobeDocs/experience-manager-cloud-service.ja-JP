@@ -1,8 +1,11 @@
 ---
 title: ローンチの昇格
 description: 'コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 100%
 
 ---
 
@@ -36,6 +39,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >* 構造に複数のローンチがあるときは、[ネストされたローンチの昇格](#promoting-a-nested-launch)。
 >* 自動昇格および公開について詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)。
+
 >
 
 
@@ -59,6 +63,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * **変更したページを昇格**
       * **現在のページを昇格**
       * **現在のページとサブページを昇格**
+
       例えば、変更したページのみを昇格させるには、次のように選択します。
 
       ![ローンチの昇格](/help/sites-cloud/authoring/assets/launches-promote.png)
@@ -73,7 +78,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 1. 「**昇格**」を選択します。
 
-## 編集中のローンチページの昇格{#promoting-launch-pages-when-editing}
+## 編集中のローンチページの昇格 {#promoting-launch-pages-when-editing}
 
 ローンチページの編集中、**ローンチを昇格**&#x200B;アクションは「**ページ情報**」からも実行できます。これによりウィザードが開き、必要な情報が収集されます。
 
@@ -83,7 +88,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >これは単一および[ネストされたローンチ](#promoting-a-nested-launch)で使用できます。
 
-## ネストされたローンチの昇格{#promoting-a-nested-launch}
+## ネストされたローンチの昇格 {#promoting-a-nested-launch}
 
 ネストされたローンチを作成後、任意のソース（ルートソース（実稼動）を含む）に戻して昇格させることができます。
 
@@ -100,6 +105,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
       * **変更したページを昇格**
       * **現在のページを昇格**
       * **現在のページとサブページを昇格**
+
    ![ローンチ昇格の設定](/help/sites-cloud/authoring/assets/launches-promote-settings.png)
 
 1. 「**次へ**」を選択します。
