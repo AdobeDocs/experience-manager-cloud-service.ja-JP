@@ -1,8 +1,11 @@
 ---
 title: Dynamic Media 画像プリセットの適用
 description: Dynamic Media での画像プリセットの適用方法を説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 100%
 
 ---
 
@@ -39,6 +42,7 @@ source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
 
    * 動的レンディションを選択して画像プリセットをプレビューします。
    * 「**[!UICONTROL URL]**」、「**[!UICONTROL 埋め込み]**」または「**[!UICONTROL RESS]**」をタップして、ポップアップを表示します。
+
    >[!NOTE]
    >
    >アセット&#x200B;*と*&#x200B;画像プリセットがまだ公開されていない場合、「**[!UICONTROL URL]**」ボタン（または該当する場合は「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL RESS]**」ボタン）は使用できません。
