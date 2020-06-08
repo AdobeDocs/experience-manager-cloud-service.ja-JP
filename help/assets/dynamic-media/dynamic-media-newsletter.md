@@ -1,8 +1,11 @@
 ---
 description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。必要なものがすべて揃っているこのニュースレターでは、知識構築のための有益なリソースを利用できます。ハウツービデオやソリューション概要のほか、画像プリセット、ビューアプリセット、ビデオプロファイルといった主要な機能の紹介などです。 '
 title: Dynamic Media ニュースレター
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1ee8cd31a83850d0d6c90cb5452015a57ee728ef
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 100%
 
 ---
 
@@ -29,6 +32,7 @@ Experience League 提供の月刊の Dynamic Media ニュースレターは、Dy
    * Online Adobe Summit 2020 の Dynamic Media セッションを表示
    * 無料の Dynamic Media Classic 監査の詳細
    * John Monroe 氏（カスタマーサクセスサービス担当シニアプログラムマネージャー）へのインタビュー
+
    >[!IMPORTANT]
    >
    >Dynamic Media ニュースレターを希望する方のみに送信するようにしています。本号の後も引き続きニュースレターを受信するには、[こちら](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)から新規登録してください。
