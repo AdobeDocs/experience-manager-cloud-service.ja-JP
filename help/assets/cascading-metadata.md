@@ -2,8 +2,11 @@
 title: カスケードメタデータ
 description: この記事では、アセットのカスケードメタデータを定義する方法について説明します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
 * 別のフィールドに指定された値に基づいて、特定のフィールドに表示されるオプションを変更します。
 * 別のフィールドに指定された値に基づいて、特定のフィールドにデフォルトのメタデータ値を設定します。
 
-## AEM でのカスケードメタデータの設定{#configure-cascading-metadata-in-aem}
+## AEM でのカスケードメタデータの設定 {#configure-cascading-metadata-in-aem}
 
 選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。いくつかの例を示します。
 
@@ -52,6 +55,7 @@ source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
    * 値を手動で指定するには、「**[!UICONTROL 手動で追加]**」を選択し、「**[!UICONTROL 選択肢を追加]**」をタップまたはクリックした後、オプションのテキストと値を指定します。例えば、ビデオ、PDF、Word、画像などのアセットタイプを指定します。
 
    * JSON ファイルから値を動的に取得するには、「**[!UICONTROL JSON パスで追加]**」を選択し、JSON ファイルのパスを指定します。AEM は、フォームがユーザーに提供されたときに、キーと値のペアをリアルタイムで取得します。
+
    両方のオプションは同時には使用できません。オプションを JSON ファイルから読み込んで手動で編集することはできません。
 
    ![add_choice](assets/add_choice.png)
