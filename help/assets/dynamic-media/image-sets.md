@@ -1,8 +1,11 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '2049'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：画像セット{#quick-start-image-sets}
+## クイックスタート：画像セット {#quick-start-image-sets}
 
 すぐに使い始めるには：
 
@@ -102,7 +105,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >* ブラック、ブラウンおよびグリーンの色のサムネール。
 
 
-## 画像セットの作成{#creating-image-sets}
+## 画像セットの作成 {#creating-image-sets}
 
 画像セットは、ユーザーインターフェイスまたは API 経由で作成できます。ここでは、UI で画像セットを作成する方法について説明します。
 
@@ -161,7 +164,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した画像セットが、作成先のフォルダーに表示されます。
 
-## 画像セットの表示{#viewing-image-sets}
+## 画像セットの表示 {#viewing-image-sets}
 
 画像セットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して自動的に作成することもできます。
 
@@ -189,7 +192,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
 >
 >[画像セットの編集](#editing-image-sets)の説明に従って、ユーザーインターフェイスを通じて画像セットを表示できます。
 
-## 画像セットの編集{#editing-image-sets}
+## 画像セットの編集 {#editing-image-sets}
 
 画像セットには、次のような様々な編集タスクを実行できます。
 
@@ -212,6 +215,7 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    * アセットを並べ替えるには、画像を新しい位置までドラッグします（並べ替えアイコンを選択して項目を移動します）。
    * 項目を昇順または降順に並べ替えるには、列の見出しをクリックします。
    * アセットを追加するか既存のアセットを更新するには、「**[!UICONTROL アセットを追加]**」をクリックします。アセットに移動して選択し、ページの右上隅にある「]**選択**[!UICONTROL 」をタップしますページ。
+
       >[!NOTE]
       >
       >AEM でサムネール用に使用されている画像を別の画像に置き換えて削除しても、元のアセットは表示されたままになります。
@@ -219,16 +223,17 @@ source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
    * プリセットを適用するには、ページの右上隅付近にある「**[!UICONTROL プリセット]**」をタップし、ビューアプリセットを選択します。
    * サムネールを追加または変更するには、該当するアセットの右横にあるサムネールアイコンを選択します。新しいサムネールまたはスウォッチアセットに移動して選択し、「**[!UICONTROL 選択]**」をタップします。
    * 画像セット全体を削除するには、画像セットの場所に移動して画像セットを選択し、「**[!UICONTROL 削除]**」をタップします。
+
    >[!NOTE]
    >
    >画像セットの画像を編集するには画像セットに移動し、左側のレールの「**[!UICONTROL メンバーを設定]**」をタップしてから、個々のアセットの鉛筆アイコンをタップして編集ウィンドウを開きます。
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
 
-## 画像セットのプレビュー{#previewing-image-sets}
+## 画像セットのプレビュー {#previewing-image-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## 画像セットの公開{#publishing-image-sets}
+## 画像セットの公開 {#publishing-image-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
