@@ -1,9 +1,9 @@
 ---
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 100%
 
@@ -186,6 +186,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
    * 新しいページの作成時に使用するテンプレートを選択し、「**次へ**」をクリックまたはタップして次に進みます。
 
    * 「**キャンセル**」を使用してプロセスを中止します。
+
    ![新しいページのテンプレートの選択](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 
 1. ウィザードの最後のステージで、次のいずれかを実行できます。
@@ -193,6 +194,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
    * 3 つのタブを使用して、新しいページに割り当てる[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)を入力し、「**作成**」をクリックまたはタップしてページを実際に作成します。
 
    * 「**戻る**」を使用してテンプレートの選択に戻ります。
+
    主なフィールドは次のとおりです。
 
    * **タイトル**：
@@ -203,6 +205,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
       * これは URI の生成に使用されます。指定しない場合、名前はタイトルから派生します。
       * 新しいページを作成するときにページの「**名前**」を指定すると、AEM では AEM と JCR の規則に基づいてページ名が検証されます。<!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
       * 「**名前**」フィールドに&#x200B;**無効な文字は指定できません**。AEM で無効な文字が検出されると、そのフィールドは強調表示され、対象の文字を削除または置換する必要があることを示す説明メッセージが表示されます。
+
    >[!TIP]
    >
    >[ページ命名規則](#page-naming-conventions)を参照してください。
@@ -237,6 +240,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
    * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)とツールバー
+
    その後、「**編集**」アイコンを選択します。
 
    ![「編集」ボタン](/help/sites-cloud/authoring/assets/edit.png)
@@ -247,7 +251,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 >
 >ページエディターから他のページへの移動は、編集モードではリンクがアクティブにならないので、プレビューモードでのみ実行できます。
 
-### ページのコピーと貼り付け{#copying-and-pasting-a-page}
+### ページのコピーと貼り付け {#copying-and-pasting-a-page}
 
 ページとそのすべてのサブページを新しい場所にコピーできます。
 
@@ -256,6 +260,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
    * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)とツールバー
+
    「**コピー**」ページアイコンを選択します。
 
    ![コピー](/help/sites-cloud/authoring/assets/copy.png)
@@ -273,6 +278,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
    1. ページを&#x200B;**貼り付け**&#x200B;アイコン自体を選択します。元のページと子ページのコピーがこの場所に作成されます。
    1. ドロップダウン矢印を選択すると、「**子を含めずに貼り付け**」オプションが表示されます。オリジナルページのコピーがこの場所に作成されます。子ページはコピーされません。
+
    >[!NOTE]
    >
    >ページのコピー先に同名のページが既に存在する場合は、その名前のバリエーションが数字を付加して自動的に生成されます。例えば、`beach` が既に存在する場合は、`beach` という名前の新しいページは `beach1` になります。
@@ -292,6 +298,7 @@ AEM では、名前変更または移動がおこなわれるページへの内�
 
    * [クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources)とツールバー
+
    「**移動**」ページアイコンをクリックします。
 
    ![「移動」ボタン](/help/sites-cloud/authoring/assets/move.png)
@@ -302,6 +309,7 @@ AEM では、名前変更または移動がおこなわれるページへの内�
 
    * 移動後にページに付ける名前を指定し、「**次へ**」をクリックまたはタップして次に進みます。
    * 「**キャンセル**」を使用してプロセスを中止します。
+
    ![ページの移動と名前変更](/help/sites-cloud/authoring/assets/move-page-rename.png)
 
    ページを移動するだけの場合は、ページ名はそのままにできます。
@@ -317,6 +325,7 @@ AEM では、名前変更または移動がおこなわれるページへの内�
       * 移動先のサムネールをクリックして、移動先を選択します。
       * 「**次へ**」をクリックして次に進みます。
    * 「**戻る**」を使用してページ名の指定に戻ります。
+
    >[!NOTE]
    >
    >デフォルトでは、移動または名前変更するページの親が、移動先として選択されます。
