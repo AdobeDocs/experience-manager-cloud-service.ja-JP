@@ -1,13 +1,16 @@
 ---
 title: アカウント環境の設定
 description: AEM では、アカウントおよびオーサー環境の特定項目を設定できます
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 100%
 
 ---
 
 
-# アカウント環境の設定{#configuring-your-account-environment}
+# アカウント環境の設定 {#configuring-your-account-environment}
 
 AEM では、アカウントおよびオーサー環境の特定項目を設定できます。
 
