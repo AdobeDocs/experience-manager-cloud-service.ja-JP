@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
 description: Adobe Experience Manager 6.5 と比較した、AEM Cloud Service の Adobe Experience Manager Assets の主な変更点.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 100%
 
