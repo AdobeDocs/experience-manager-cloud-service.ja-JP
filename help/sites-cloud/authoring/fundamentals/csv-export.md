@@ -1,13 +1,16 @@
 ---
-title: CSV に書き出し
+title: CSV ファイルへの書き出し
 description: ページの情報をローカルシステムの CSV ファイルに書き出します
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 100%
 
 ---
 
 
-# CSV に書き出し{#export-to-csv}
+# CSV ファイルへの書き出し {#export-to-csv}
 
 **CSV レポートの作成**&#x200B;では、ページの情報をローカルシステムの CSV ファイルに書き出すことができます。
 
