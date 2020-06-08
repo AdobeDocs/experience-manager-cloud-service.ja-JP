@@ -1,8 +1,11 @@
 ---
 title: ローンチの編集
 description: 'ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '494'
+ht-degree: 100%
 
 ---
 
@@ -16,14 +19,14 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. [「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)にアクセスして使用可能なアクションを表示します。
 1. 「**このページに移動**」を選択して編集するページを開きます。
 
-### ライブコピーへのローンチページサブジェクトを編集{#editing-launch-pages-subject-to-a-live-copy}
+### ライブコピーへのローンチページサブジェクトを編集 {#editing-launch-pages-subject-to-a-live-copy}
 
 ローンチがライブコピーに基づく場合は、次のようになります。<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
 
 * コンポーネント（コンテンツやプロパティ）を編集するときにロック記号（小さな鍵アイコン）が表示されます。
 * 「**ライブコピー**」タブが&#x200B;**ページのプロパティ**&#x200B;に表示されます。
 
-ライブコピーは、コンテンツをソースブランチ&#x200B;*から*&#x200B;ローンチブランチ&#x200B;*に*&#x200B;同期するために使用します（ソースに加えられた変更によりローンチを最新に保ちます）。
+ライブコピーは、コンテンツをソースブランチ&#x200B;*から*&#x200B;ローンチブランチ&#x200B;*に*&#x200B;同期するために使用します（ローンチを、ソースに加えられた変更を含む最新の状態に保ちます）。
 
 標準のライブコピーを編集するのと同じ方法で変更することができます。例えば次のようにします。
 
@@ -62,7 +65,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 >
 >ローンチにページを追加するには、ページが共通の言語ルートの下（単一のサイト内）にある必要があります。
 
-## ローンチの設定の編集{#editing-a-launch-configuration}
+## ローンチの設定の編集 {#editing-a-launch-configuration}
 
 ローンチのプロパティは、任意のタイミングで編集できます。
 
@@ -75,7 +78,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 1. 必要な変更を加え、「**保存**」で確定します。
    * 「**ローンチ日**」フィールドと「**実稼動準備完了**」フィールドの目的とインタラクションについて詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください。
 
-## ページのローンチステータスの確認{#discovering-the-launch-status-of-a-page}
+## ページのローンチステータスの確認 {#discovering-the-launch-status-of-a-page}
 
 「参照」タブから特定のローンチを選択すると、ステータスが表示されます（[「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)を参照）。
 
