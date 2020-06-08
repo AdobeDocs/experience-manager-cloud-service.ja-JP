@@ -1,8 +1,11 @@
 ---
-title: データ保護とデータプライバシーに関する規制 — Adobe Experience Manager as a Cloud Service Foundation Readiness
-description: '様々なデータ保護およびデータプライバシー規制に対するクラウドサービス基盤のサポートとしてのAdobe Experience Managerについて説明します。EUのGDPR(General Data Protection Regulation)、カリフォルニア消費者プライバシー法、およびクラウドサービスとして新しいAEMを導入する際の準拠方法を含む。 '
+title: データ保護とデータのプライバシーに関する規制 — Cloud Service Foundation ReadinessとしてのAdobe Experience Manager
+description: '様々なデータ保護およびデータのプライバシーに関する規則に対するCloud Service FoundationのサポートとしてのAdobe Experience Managerについて説明します。 EU General Data Protection Regulation(GDPR)、California Consumer Privacy Act、およびクラウドサービスとして新しいAEMを導入する際の準拠方法を含む。 '
 translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
+workflow-type: tm+mt
+source-wordcount: '506'
+ht-degree: 32%
 
 ---
 
@@ -11,17 +14,17 @@ source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 
 >[!WARNING]
 >
->本書の内容は、法律上の助言とはならず、法律上の助言の代替としての意味も持たない。
+>このドキュメントの内容は法律上の助言とはならず、法律上の助言の代わりとしての意味も持たない。
 >
->データ保護およびデータプライバシー規制に関するアドバイスについては、貴社の法務部にお問い合わせください。
+>データ保護およびデータのプライバシーに関する規制に関するアドバイスについては、会社の法務部にお問い合わせください。
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するアドビの対応、およびアドビのお客様にとっての意味について詳しくは、アドビのプライバシーセ [ンターを参照してください](https://www.adobe.com/privacy.html)。
+>プライバシーに関する問題に対するアドビの対応、およびアドビのお客様にとっての意味について詳しくは、アドビのプライバシーセンター [を参照してください](https://www.adobe.com/privacy.html)。
 
 ## AEM Foundationデータのプライバシーと保護のサポート {#aem-foundation-data-privacy-and-protection-support}
 
-AEM Foundationレベルでは、保存される個人データはユーザープロファイルに保持されます。 したがって、この記事の情報は主に、アクセス要求と削除要求にそれぞれ対応するためのユーザープロファイルへのアクセス方法と削除方法について説明します。
+AEM Foundationレベルでは、保存される個人データはUserプロファイルーに保持されます。 したがって、この記事の内容は、主に、アクセス要求と削除要求に対応するために、ユーザープロファイルにアクセスする方法と削除する方法に関するものです。
 
 ## ユーザープロファイルへのアクセス {#accessing-a-user-profile}
 
@@ -62,7 +65,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **ユーザーデータを取得する:**
 
-上記のコマンドから返されたJSONペイロードのhomeプロパティからのノードパスを使用します。
+上記のコマンドから返されたJSONペイロードのホームプロパティのノードパスを使用する：
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -85,7 +88,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 4. 最後に、アクションを確認します。
 
-   次に、ユーザーインターフェイスは、ユーザーアカウントがログインし、プロファイルカードにロックを追加することで非アクティブ化されたことを示します。
+   次に、ユーザーインターフェイスは、ユーザーアカウントが次のようにグアウトし、プロファイルカードにロックを追加することで非アクティブ化されたことを示します。
 
    ![アカウントが無効](assets/dpp-foundation-04.png)
 
@@ -93,11 +96,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
-> AEMをクラウドサービスとして使用する場合、CRXDEにアクセスできないので、UIからユーザープロファイルを削除する手動の手順はありません。
+> AEMをクラウドサービスとして使用する場合、CRXDEにアクセスできないため、UIからユーザープロファイルを削除する手動の手順はありません。
 
 ### HTTP API {#http-api-1}
 
-The following procedures use the `curl` command line tool to illustrate how to disable the user with the **[!UICONTROL cavery]** `userId` and delete her profiles available at the default location.
+以下の手順では `curl`コマンドラインツールを使用して、**[!UICONTROL cavery]** `userId` を持つユーザーを無効化し、デフォルト位置にあるそのユーザーのプロファイルを削除する方法を示しています。
 
 **ユーザーホームの検索：**
 
@@ -108,7 +111,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **ユーザーの無効化:**
 
-上記のコマンドから返されたJSONペイロードのhomeプロパティからのノードパスを使用します。
+上記のコマンドから返されたJSONペイロードのホームプロパティのノードパスを使用する：
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -116,7 +119,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 **ユーザープロファイルの削除**
 
-アカウント検出コマンドから返されたJSONペイロードのホームプロパティからのノードパスと、既知の初期設定のプロファイルノードの場所を使用します。
+アカウント検出コマンドから返されたJSONペイロードのホームプロパティのノードパスと、既知のプロファイルノードの場所を使用します。
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
