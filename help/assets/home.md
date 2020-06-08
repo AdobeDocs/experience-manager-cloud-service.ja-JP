@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager Assets as a Cloud Service
 description: Adobe Experience Manager Assets as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 100%
 
 ---
 
