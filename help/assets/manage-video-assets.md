@@ -2,16 +2,16 @@
 title: ビデオアセットの管理
 description: ビデオアセットをアップロード、プレビュー、注釈付け、公開する方法について説明します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 100%
 
 ---
 
 
-# ビデオアセットの管理{#manage-video-assets}
+# ビデオアセットの管理 {#manage-video-assets}
 
 Adobe Experience Manager（AEM）Assets でビデオアセットを管理および編集する方法について説明します。ビデオのエンコーディングとトランスコード（例えば、Fmpeg トランスコード）は、Dynamic Media 統合でのみ可能です。Dynamic Media を使用しないと、ビデオの基本的なサポートを利用できます。例えば、サポートされているファイル形式のプレビューサムネールの抽出や、ブラウザーでの直接の再生に対応した形式のプレビューが可能です。
 
