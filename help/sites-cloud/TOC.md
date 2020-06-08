@@ -1,9 +1,9 @@
 ---
 sub-product: AEM as a Cloud Service のコンテンツのオーサリング
 user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 18d6079ca7ac3fe41f9126b3d0b6e42487076807
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 
