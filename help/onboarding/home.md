@@ -1,8 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 848601903cb83b930d8ec4523720a5c1287d720b
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 100%
 
 ---
 
