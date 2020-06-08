@@ -2,8 +2,11 @@
 title: Assets as a Cloud Service の概要
 description: Assets as a Cloud Service の新機能。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+workflow-type: tm+mt
+source-wordcount: '479'
+ht-degree: 100%
 
 ---
 
