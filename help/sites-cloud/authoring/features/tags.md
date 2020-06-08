@@ -1,8 +1,11 @@
 ---
 title: タグの使用
 description: タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 
 サイトのコンテンツ構造やアセットのメタデータスキーマを設計する際には、タグ付け機能が提供する軽量でアクセス可能なアプローチを検討してください。
 
-## タグの適用{#applying-tags}
+## タグの適用 {#applying-tags}
 
 オーサー環境では、作成者はページのプロパティにアクセスし、「**タグ／キーワード**」フィールドに 1 つ以上のタグを入力することでタグを適用できます。
 
