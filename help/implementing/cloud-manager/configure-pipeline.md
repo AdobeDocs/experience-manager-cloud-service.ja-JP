@@ -1,8 +1,11 @@
 ---
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 100%
 
 ---
 
@@ -56,6 +59,7 @@ source-git-commit: e9514d2ba625a7df8a8126f5b0ab74b975eeda51
 
    * **手動** - UI を使用して、パイプラインを手動で開始します。
    * **Git の変更時** - 設定された Git ブランチにコミットが追加されるたびに CI/CD パイプラインを開始します。このオプションを選択しても、常にパイプラインを手動で開始できます。
+
    パイプラインのセットアップまたは編集中に、デプロイメントマネージャーは、品質ゲートのいずれかで重要なエラーが検出された場合のパイプラインの動作を定義できます。
 
    これは、より自動化されたプロセスを求めるお客様に役に立ちます。使用できるオプションは以下のとおりです。
