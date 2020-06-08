@@ -100,6 +100,7 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
    * **スタイルは結合できません：**&#x200B;そのグループ内の複数のスタイルを一度に選択できます。
    * **スタイル名：**&#x200B;コンポーネントのスタイルの設定時にコンテンツ作成者に表示されるスタイルの説明。
    * **CSS クラス：**&#x200B;スタイルと関連付けられている CSS クラスの実際の名前。
+
    ドラッグハンドルを使用して、グループの順序やグループ内のスタイルを調整します。追加アイコンや削除アイコンを使用して、グループやグループ内のスタイルを追加したり削除したりします。
 
 >[!CAUTION]
@@ -151,6 +152,7 @@ The following sections [As a Content Author](#as-a-content-author) and [As a Tem
 >1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
 >1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
 >1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
+
 >
 
 
