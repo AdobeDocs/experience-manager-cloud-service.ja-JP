@@ -2,10 +2,10 @@
 title: Web アプリケーションへの URL のリンク
 description: Dynamic Media で Web アプリケーションに URL をリンクする方法
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 100%
+source-wordcount: '1272'
+ht-degree: 96%
 
 ---
 
@@ -24,11 +24,11 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 
 [Web ページへのビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
 
-[Web アプリケーションへの YouTube URL のリンク](video.md)も参照してください。
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)も参照してください。
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-[アセットのアップロード ](/help/assets/manage-digital-assets.md#uploading-assets)も参照してください。
+See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ## アセットの URL の取得 {#obtaining-a-url-for-an-asset}
 
@@ -84,6 +84,7 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
 Dynamic Media は静的アセットの配信をサポートします。静的アセットとは、画像やビデオに留まらない追加アセットです。配信がサポートされる静的アセットの形式は以下のとおりです。
 
+* 3Dファイル
 * アニメーション GIF
 * オーディオファイル
 * CSS
@@ -108,7 +109,7 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          例： `https://aem.com/is/content/adobe/image.gif`
-   * **[!UICONTROL アセット／動的レンディション]**&#x200B;をクリックし、静的アセットの動的レンディションをタップして URL をコピーします。
+   * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
 
       コピーした URL を変更して、`is/image/` の代わりにパスの `is/content` を使用します。
 
