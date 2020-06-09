@@ -2,15 +2,15 @@
 title: Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み
 description: Web ページに Dynamic Media ビデオまたは画像を埋め込む方法を説明します。
 translation-type: tm+mt
-source-git-commit: d6e92a433e61c2a959c62080fcd52fe0ebe67c4f
+source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '371'
+ht-degree: 96%
 
 ---
 
 
-# Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Web ページに埋め込んでビデオを再生したりアセットを表示したりする場合は、**[!UICONTROL 埋め込みコード]**&#x200B;機能を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
