@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: bc0852120580065a93923e7fe730485012afba6e
+source-git-commit: 668908770505b24eae4652106471925d1dcfc18b
 workflow-type: tm+mt
 source-wordcount: '5123'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -94,7 +94,7 @@ Dynamic Media Cloud Services を設定するには：
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 「**[!UICONTROL 保存]**」をタップします。
-1. Dynamic Media コンテンツを公開する前に安全にプレビューするには、AEM オーサーインスタンスを「ホワイトリストに登録」して、Dynamic Media に接続する必要があります。
+1. ダイナミックメディアコンテンツを公開する前に、安全にプレビューするには、AEM作成者インスタンスを「許可」して、ダイナミックメディアに接続する必要があります。
 
    * Dynamic Media Classic アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
    * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
