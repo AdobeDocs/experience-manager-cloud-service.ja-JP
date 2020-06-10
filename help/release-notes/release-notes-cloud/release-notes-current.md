@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
 workflow-type: tm+mt
 source-wordcount: '1843'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -18,11 +18,11 @@ Experience Manager as a Cloud Service 2020.6.0 の一般的なリリースノー
 
 The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
 
-## What&#39;s New in AEM Sites {#aem-sites}
+## AEM Sites の新機能 {#aem-sites}
 
-この節では、AEMのクラウドサービスリリース2020.6.0としてのAEMサイトの新機能と更新点について説明します。
+AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新点について説明します。
 
-### 最新情報 {#whats-new-2020.6.0}
+### 新機能 {#whats-new-2020.6.0}
 
 コアコンポーネントのリリース2.9.0は [](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) 、以下を含むAEMサイトの一部として使用できるようになりました。
 
@@ -58,7 +58,7 @@ AEMプロジェクトのpom.xml内のリモートリポジトリへの参照を�
 
 AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と更新点について説明します。
 
-### 最新情報 {#what-is-new-cloud-manager}
+### 新機能 {#what-is-new-cloud-manager}
 
 * Cloud Managerの *ビジネス所有者* (Business Owner)ロールのユーザーは、Sandboxプログラムをランディングページから(プログラムカードのクイックアクションボタンを使用して)またはプログラム内から削除できるようになりました。
 
