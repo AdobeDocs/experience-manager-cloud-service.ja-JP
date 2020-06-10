@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
+source-git-commit: 76cd37ae35360e68cca676de8eda53dff4819b41
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2272'
 ht-degree: 13%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 13%
 
 ![3次元の靴](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
-<!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
+<!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
 ## ダイナミックメディアでサポートされる3Dファイル形式 {#supported-three-d-file-formats-in-dm}
 
@@ -47,33 +47,34 @@ ht-degree: 13%
 
 ダイナミックメディアで3Dアセットを操作する前に、AEM管理者が既にDynamic Media Cloud Servicesを有効にし、設定していることを確認します。
 
-See [Configuring Dynamic Media Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+詳しくは、[ダイナミックメディアクラウドサービスの設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を参照してください。
 
 1. **3Dアセットのアップロード**
 
-   * [ダイナミックメディアで使用する3Dアセットのアップロード](/help/assets/add-assets.md#upload-assets)。
-   * [ダイナミックメディアでのアップロードでサポートされる3Dファイル形式](#supported-three-d-file-formats-in-dm)。
+   * [ダイナミックメディアで使用する3Dアセットのアップロード](/help/assets/add-assets.md#upload-assets)
+   * [ダイナミックメディアでのアップロードでサポートされる3Dファイル形式](#supported-three-d-file-formats-in-dm)
 
 1. **3Dアセットの管理**
 
    * 3Dアセットの整理と検索
 
-      * [デジタルアセットの整理](/help/assets/organize-assets.md)。
-      * [3Dアセットの検索](/help/assets/search-assets.md)。
+      * [デジタルアセットの整理](/help/assets/organize-assets.md)
+      * [3Dアセットの検索](/help/assets/search-assets.md)
    * 表示3Dアセット
 
-      * [3Dアセットの表示と操作](#viewing-three-d-assets)。
-      * [ディメンションビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)。
+      * [3Dアセットの表示と操作](#viewing-three-d-assets)
+      * [ディメンションビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)
    * 3Dアセットメタデータの操作
 
-      * [デジタルアセット用のメタデータの管理](/help/assets/manage-digital-assets.md#editing-properties).
-      * [メタデータスキーマ](/help/assets/metadata-schemas.md).
+      * [デジタルアセット用のメタデータの管理](/help/assets/manage-digital-assets.md#editing-properties)
+      * [メタデータスキーマ](/help/assets/metadata-schemas.md)
 
 
 
 1. **3Dアセットのパブリッシュ**
 
-   * [ダイナミックメディア3Dアセットの公開](#publishing-three-d-assets)
+   * [静的ダイナミックメディア3Dアセットの公開](#publishing-three-d-assets)
+   * [Dimensionalビューアを使用してダイナミックメディア3Dアセットを公開するための代替方法](#alternate-publish-methods)
 
 ## 3Dアセットの表示と操作について {#viewing-three-d-assets}
 
@@ -93,17 +94,17 @@ See [Configuring Dynamic Media Cloud Services](/help/assets/dynamic-media/config
 >
 >次元ビューアプリセットをビューアプリセットエディタで開いて、3Dファイルをアップロードしなくても3Dアセット内を移動する練習をすることができます。 Dimensionalビューアプリセットには、操作できる組み込みの3Dアセットがあります。
 >
->See [Managing viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md).
+>See [Managing viewer presets.](/help/assets/dynamic-media/managing-viewer-presets.md)
 
 ## アセットの詳細ページからの3Dアセットの表示と操作 {#viewing-three-d-assets-from-asset-details-page}
 
-ソフトウェアインターフェイスを使用したアセットの [プレビューも参照してください](/help/assets/dynamic-media/previewing-assets.md)。
+ソフトウェアインターフェイスを使用したアセットの [プレビューも参照してください。](/help/assets/dynamic-media/previewing-assets.md)
 
 **アセットの詳細ページから3Dアセットを表示し、操作するには**
 
 1. 3D アセットが AEM にアップロードされていることを確認します。
 
-   詳しくは、ダイナミックメディアで使用する3Dアセットの [アップロードを参照してください](/help/assets/add-assets.md#upload-assets)。
+   詳しくは、ダイナミックメディアで使用する3Dアセットの [アップロードを参照してください。](/help/assets/add-assets.md#upload-assets)
 
 1. AEM の&#x200B;**[!UICONTROL ナビゲーション]**&#x200B;ページで、**[!UICONTROL アセット／ファイル]**&#x200B;をタップします。
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
@@ -134,9 +135,9 @@ Webページが **[!UICONTROL 編集]** モードの場合、3Dアセットと�
 
 >[!IMPORTANT]
 >
->このタスクは、3DメディアコンポーネントをWebページに追加し、3Dアセットをコンポーネントに割り当てた後にのみ実行できます。 詳しくは、Webページへの3Dメディアコンポーネントの [追加](#adding-the-three-d-media-component-to-a-web-page) 、および3Dメディアコンポーネントへの3Dアセットの [割り当てを参照してください](#assigning-a-three-d-asset-to-the-component)。
+>このタスクは、3DメディアコンポーネントをWebページに追加し、3Dアセットをコンポーネントに割り当てた後にのみ実行できます。 詳しくは、Webページへの3Dメディアコンポーネントの [追加](#adding-the-three-d-media-component-to-a-web-page) および3Dメディアコンポーネントへの3Dアセットの [割り当てを参照してください。](#assigning-a-three-d-asset-to-the-component)
 
-ソフトウェアインターフェイスを使用したアセットの [プレビューも参照してください](/help/assets/dynamic-media/previewing-assets.md)。
+ソフトウェアインターフェイスを使用したアセットの [プレビューも参照してください。](/help/assets/dynamic-media/previewing-assets.md)
 
 **3D Mediaコンポーネント内の3Dアセットを表示し、操作するには**
 
@@ -194,7 +195,7 @@ Webページが **[!UICONTROL 編集]** モードの場合、3Dアセットと�
 
 Webコンテンツ管理ーシステムとしてAdobe Experience Managerを使用している場合は、3D Mediaコンポーネントを使用してWebページに3Dアセットを追加できます。
 
-See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+See also [Adding Dynamic Media assets to pages.](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 1. AEMサイトを開き、ダイナミックメディア3Dメディアコンポーネントを追加するWebページを選択します。
 1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. ページの右上付近で **[!UICONTROL 「編集]** 」モードが選択されていることを確認します。
@@ -211,7 +212,7 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 
 これで、3Dアセットをコンポーネントに割り当てる準備が整いました。
 
-詳しくは、3Dメディアコンポーネントへの3Dアセットの [割り当てを参照してください](#assigning-a-three-d-asset-to-the-component)。
+詳しくは、3Dメディアコンポーネントへの3Dアセットの [割り当てを参照してください。](#assigning-a-three-d-asset-to-the-component)
 
 ### オプション — 3Dメディアコンポーネントの設定 {#configuring-the-three-d-component}
 
@@ -230,7 +231,7 @@ See also [Adding Dynamic Media assets to pages](/help/assets/dynamic-media/addin
 
 Webページに3Dメディアコンポーネントを追加した後、3Dアセットを割り当てることができます。
 
-See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page).
+See [Adding the 3D Media component to a web page.](#adding-the-three-d-media-component-to-a-web-page)
 
 1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.
 1. ドロップダウンリストで、 **[!UICONTROL 3D]** を選択して3Dアセットファイルタイプのみを表示します。
@@ -247,17 +248,17 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 
 ダイナミックメディアには、ダイナミックメディアで *静的コンテンツとしてサポートされる様々な3Dファイル形式があり* 、 静的コンテンツとは、3Dアセットをアップロードして公開することはできますが、3Dアセットに関連付けられた *ダイナミック* イメージングや画像の再編集はサポートされていないことを意味します。 理由は、Dynamic Media Imaging Serverが3D形式を認識しないからです。 したがって、ダイナミックメディアで3Dアセットを公開すると、インスタントURLをコピーできます。 3DアセットのURLは、通常のダイナミックメディアのURL構造に従います。 ただし、ダイナミックメディアの従来の画像アセットとは異なり、アセットのURL内のパラメーターを編集することはできません。
 
-See also [Obtaining a URL for a static asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
+See also [Obtaining a URL for a static asset.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 カー **[!UICONTROL ド表示では]**、アセット名のすぐ下、アセットが公開されたことを示す日時の左側に、小さなグローブアイコンが表示されます。 **[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
 WCMとしてAEMを使用している場合は、この公開方法を使用してダイナミックメディア3DアセットをWebページに直接追加します。
 
-See also [Publishing Dynamic Media assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+See also [Publishing Dynamic Media assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 
-ページの [公開も参照してください](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)。
+ページの [公開も参照してください。](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
 
-**ダイナミックメディア3Dアセットを公開するには**
+**静的ダイナミックメディア3Dアセットを公開するには**
 
 1. 3Dアセット（GLB、OBJ、またはSTLファイル形式）を開き、アセットの詳細ページに表示します。
 1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
@@ -284,8 +285,8 @@ AEMをWCMとして使用していない場合は、ダイナミックメディ�
 
 * **[!UICONTROL URL]** — サードパーティのWebコンテンツ管理ーシステムを使用していて、Dimensional Viewerを使用してダイナミックメディア3DアセットをWebページにリンクする場合は、 **** URLを使用します。
 
-   [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)を参照してください。
+   See [Linking URLs to your web application.](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
 
 * **[!UICONTROL 埋め込み]** - Webページに埋め込まれたダイナミックメディア3Dアセットを、ディメンションビューアを使用して表示する場合に、「 **[!UICONTROL 埋め込み]** 」を使用します。 埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。Editing of the code is not permitted in the **[!UICONTROL Embed]** dialog box.
 
-   Webページへのダイナミックメディアビデオ、画像ビューアまたはディメンションビューアの [埋め込みを参照してください](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)。
+   詳しくは、ダイナミックメディアビデオ、画像ビューアまたはディメンションビューアのWebページへの埋め込みを参照してください。 [](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
