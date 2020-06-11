@@ -2,7 +2,7 @@
 title: AEMでのクラウドサービスとしてのキャッシュ
 description: 'AEMでのクラウドサービスとしてのキャッシュ '
 translation-type: tm+mt
-source-git-commit: 9d99a7513a3a912b37ceff327e58a962cc17c627
+source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 85%
@@ -83,7 +83,7 @@ src/conf.dispatcher.d/cache の下のファイルに、次のルール（デフ�
 
 ## ディスパッチャーキャッシュの無効化 {#disp}
 
-一般に、ディスパッチャーキャッシュを無効にする必要はありません。 代わりに、コンテンツが再公開される際にディスパッチャーがキャッシュを更新し、CDNはキャッシュの有効期限のヘッダーを考慮する必要があります。
+一般に、ディスパッチャーキャッシュを無効にする必要はありません。 代わりに、コンテンツが再公開される際にディスパッチャーがキャッシュを更新し、CDNがキャッシュの有効期限のヘッダーを考慮する必要があります。
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
