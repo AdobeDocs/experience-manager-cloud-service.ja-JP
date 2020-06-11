@@ -4,10 +4,10 @@ description: AEM インスタンスを Adobe Creative Cloud と統合して、�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 100%
+source-wordcount: '3302'
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ AEM Assets では、AEM Assets デプロイメントに対するアクセス権�
 
 #### DAM への直接アクセス権を持つクリエイティブユーザー {#creative-users-with-direct-access-to-dam}
 
-通常、社内のクリエイティブチームや、社内ネットワークにオンボーディングされたエージェンシー／クリエイティブプロフェッショナルは、（AEM ログインを含む）DAM インスタンスへのアクセス権を持っています。外部の関係者（通常はクライアントのために働く代理店などの信頼できる組織）に直接アクセスを許可するように、AEM とネットワークインフラストラクチャを設定できます。これにより、外部の関係者がネットワークを介して（例えば、VPN または IP ホワイトリスト経由で）AEM にアクセスできるようになります。
+通常、社内のクリエイティブチームや、社内ネットワークにオンボーディングされたエージェンシー／クリエイティブプロフェッショナルは、（AEM ログインを含む）DAM インスタンスへのアクセス権を持っています。AEMとネットワークインフラストラクチャは、外部の関係者（通常、クライアントで働くエージェンシーなどの信頼できる組織）に直接アクセスできるように設定できます。この場合、VPNやIPで許可されたリスト経由でAEMにアクセスできます。
 
 このような場合、Adobe Asset Link または AEM デスクトップアプリケーションを使用すると、最終／承認済みアセットに容易にアクセスしたり、クリエイティブレディアセットを DAM に保存したりできます。
 
@@ -184,7 +184,7 @@ DAM インスタンスへの直接アクセス権を持たない外部のエー�
 * Asset Link が機能しない場合は、デスクトップアプリケーションを使用します。
 * 外部パートナーに安全にアセットを配布するには、[AEM Assets Brand Portal](https://helpx.adobe.com/jp/experience-manager/brand-portal/user-guide.html) を使用します。
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) に基づいた、配布および調達用ポータルのカスタム実装を使用します。
-* AEM に設定されたアクセス制御と必要なネットワークインフラストラクチャ（VPN や IP ホワイトリストなど）を使用して、DAM 内の専用のコンテンツ領域に外部の関係者がアクセスできるようにします。AEM Web UI を使用してアセットを取得したり、新しいコンテンツを DAM にアップロードしたりできます。
+* AEMで設定されたアクセス制御と必要なネットワークインフラストラクチャ（VPNやIPの許可されたリストなど）を使用して、外部パーティにDAMのコンテンツの専用領域へのアクセスを与えます。 AEM Web UI を使用してアセットを取得したり、新しいコンテンツを DAM にアップロードしたりできます。
 
 #### AEM 内のアセットの更新 {#work-in-progress-on-assets-from-aem}
 
