@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: 972e6322a313c9e6afcf09262290992272406491
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1922'
 ht-degree: 12%
 
 ---
@@ -122,11 +122,11 @@ PM/EM review required before publishing.
 
 3DファイルをAEM Assets内に格納して使用できるようになりました。 .obj、.stl、.gltf、.glbファイルなど、様々なコア3Dファイルをアップロード、プレビュー、活用できます。 また、3Dエクスペリエンス [!DNL Dynamic Media]は、任意のURLやビューアを使用して設定および配信できます。 これには、 [!DNL Dynamic Media] 3Dエクスペリエンスビューア、サイト3Dビューアコンポーネント、および3Dファイル配信機能( [!DNL Dynamic Media] AR/VR)が含まれます。 詳しくは、ダイナミックメディアでの3Dアセットの [操作を参照してください](/help/assets/dynamic-media/assets-3d.md)。
 
-<!-- Hiding this as the GA is at a later date. 
-**Adobe Asset Link support for Adobe XD**
+**Adobe XDでのAdobe Asset Linkのサポート**
 
-With the latest release, [!DNL Experience Manager Assets] provides support for a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. See [Adobe Asset Link documentation](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
--->
+最新リリースでは、 [!DNL Experience Manager Assets] v29.3でリリースされた新しい [!DNL Adobe Asset Link] プラグインのサポートが提供されます。この統合により、デザイナーは、アプリケーションを終了することなく、デザインのアセットにアクセスし [!DNL Adobe XD][!DNL Experience Manager][!DNL Adobe XD] て使用できます。 Adobe XDドキュメントの [Adobe Asset Linkを参照してください](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)。
+
+このリリースでは、クリエイティブユーザーやクリエイティブデザイナーは、 [!DNL AEM Assets] 、 [!DNL Adobe Asset Link] 、 [!DNL Adobe XD]など様々なCreative Cloudデスクトップアプリケーション [!DNL Photoshop]を使用して管理されているアセットを操作できるようになり [!DNL Illustrator][!DNL InDesign]ました。
 
 **アクセシビリティの強化**
 
