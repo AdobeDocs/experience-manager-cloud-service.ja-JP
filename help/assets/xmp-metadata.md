@@ -3,10 +3,10 @@ title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 100%
+source-wordcount: '1483'
+ht-degree: 86%
 
 ---
 
@@ -132,11 +132,11 @@ XMP の書き戻し機能でメタデータを thumbnail.140.100.png および t
 
 ### XMP メタデータのフィルタリング {#filtering-xmp-metadata}
 
-AEM Assets は、アセットの取得時にアセットバイナリから読み取られて JCR に保存される XMP メタデータのプロパティ／ノードのブラックリストフィルターとホワイトリストフィルターの両方をサポートしています。
+AEM Assetsは、アセットバイナリから読み取られ、アセットが取り込まれる際にJCRに保存されるXMPメタデータのプロパティ/ノードのフィルタリングをサポートします。 フィルタリングは、ブロックされたリストと許可されたリストを介して可能です。
 
-ブラックリストフィルターは、除外するよう指定されたプロパティを除く、すべての XMP メタデータプロパティを読み込みます。ただし、膨大な量の XMP メタデータ（例えば、10,000 個のプロパティを持つ 1,000 個のノード）を含む INDD ファイルなどのアセットタイプの場合、フィルタリングするノードの名前が必ずしも事前にわかるわけではありません。ブラックリストフィルターで、大量の XMP メタデータを含む膨大な量のアセットを読み込むと、監視キューの遅滞など、安定性に関する問題が、AEM インスタンス／クラスターで発生する可能性があります。
+ブロックされたリストを使用してフィルタリングすると、除外用に指定されたプロパティを除く、すべてのXMPメタデータプロパティを読み込むことができます。 ただし、膨大な量の XMP メタデータ（例えば、10,000 個のプロパティを持つ 1,000 個のノード）を含む INDD ファイルなどのアセットタイプの場合、フィルタリングするノードの名前が必ずしも事前にわかるわけではありません。ブロックされたリストを使用してフィルタリングすると、多数のXMPメタデータを持つ大量のアセットを読み込める場合、AEMインスタンス/クラスターでは、ログに記録された監視キューなど、安定性の問題が発生する可能性があります。
 
-この問題は、XMP メタデータのホワイトリストフィルターで解決できます。このフィルターは、読み込む XMP プロパティを定義するので、そこに定義されていない XMP プロパティや不明な XMP プロパティは無視されます。これらのプロパティをいくつかブラックリストフィルターに追加することで、後方互換性を確保できます。
+許可されているリストを使用したXMPメタデータのフィルタリングにより、読み込むXMPプロパティを定義できるので、この問題は解決されます。 そこに定義されていない XMP プロパティや不明な XMP プロパティは無視されます。下位互換性を確保するために、これらのプロパティの一部を、ブロックされたリストを使用するフィルターに追加できます。
 
 >[!NOTE]
 >
@@ -144,16 +144,17 @@ AEM Assets は、アセットの取得時にアセットバイナリから読み
 
 1. Configuration Manager を開くには、`https://[aem_server]:[port]/system/console/configMgr` にアクセスします。
 1. 「**[!UICONTROL Adobe CQ DAM XmpFilter]**」設定を開きます。
-1. ホワイトリストフィルターを適用するには、「**[!UICONTROL Apply Whitelist to XMP Properties]**」を選択し、「**[!UICONTROL Whitelisted XML Names for XMP filtering]**」ボックスで読み込むプロパティを指定します。
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
-1. ホワイトリストフィルターを適用した後、ブラックリストに登録された XMP プロパティを除外するには、それらのプロパティを「**[!UICONTROL Blacklisted XML Names for XMP filtering]**」ボックスに指定します。
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify them in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box.
 
    >[!NOTE]
    >
-   >「**[!UICONTROL Apply Blacklist to XMP Properties]**」チェックボックスは、デフォルトでオンになっています。つまり、ブラックリストフィルターは、デフォルトで有効になっています。ブラックリストフィルターを無効にするには、「**[!UICONTROL Apply Blacklist to XMP Properties]**」オプションをオフにします。
+   >「**[!UICONTROL Apply Blacklist to XMP Properties]**」チェックボックスは、デフォルトでオンになっています。つまり、ブロックされたリストを使用したフィルタリングは、デフォルトで有効になっています。 To disable such filtering, deselect the **[!UICONTROL Apply Blacklist to XMP Properties]** option.
 
 1. 変更内容を保存します。
 
 >[!MORELIKETHIS]
 >
 >* [アドビの XMP 仕様](https://www.adobe.com/devnet/xmp.html)
+
