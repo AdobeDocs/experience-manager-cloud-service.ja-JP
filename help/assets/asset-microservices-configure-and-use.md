@@ -3,10 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 367456bfad25a83a36ffe45e2d6092367740cd92
+source-git-commit: 496ad0831d20eb7653a3c5727999a2abc5728ec7
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 95%
+source-wordcount: '1872'
+ht-degree: 97%
 
 ---
 
@@ -99,9 +99,9 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 #### MIME タイプ包含ルール {#mime-type-inclusion-rules}
 
-特定の MIME タイプのアセットが処理される際は、まず、その MIME タイプがレンディション仕様の除外 MIME タイプの値と照合されます。そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（「ブラックリストへの登録」）。
+特定の MIME タイプのアセットが処理される際は、まず、その MIME タイプがレンディション仕様の除外 MIME タイプの値と照合されます。そのリストと一致する場合、この特定のレンディションはアセット(ブロックされたリスト)に対して生成されません。
 
-それ以外の場合は、MIME タイプが包含 MIME タイプと照合され、リストと一致する場合は、そのレンディションが生成されます（「ホワイトリストへの登録」）。
+それ以外の場合は、MIMEタイプが、含まれるMIMEタイプと比較され、それがリストと一致する場合は、レンディションが生成されます(許可されているリスト)。
 
 #### 特別な FPO レンディション {#special-fpo-rendition}
 
@@ -176,6 +176,6 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 
 後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 
-* ワークフローをデザインする際は、あらゆる種類のレンディションに対するニーズを考慮します。 レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成手順を削除します。 レンディションは、その後一括で削除することはできません。 を長時間使用した後、不要なレンディションを使用すると、ストレージ領域が大量に消費される場合があり [!DNL Experience Manager]ます。 個々のアセットについて、レンディションをユーザインターフェイスから手動で削除できます。 複数のアセットの場合は、特定のレンディションを削除す [!DNL Experience Manager] るようにカスタマイズするか、アセットを削除して再びアップロードできます。
+* ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。[!DNL Experience Manager] を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。個々のアセットについては、ユーザインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
