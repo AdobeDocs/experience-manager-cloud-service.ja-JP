@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 82%
+source-wordcount: '626'
+ht-degree: 83%
 
 ---
 
@@ -57,8 +57,8 @@ ht-degree: 82%
 
 * コンテンツ転送ツールを実行する前に、ソースAEMインスタンスの `crx-quickstart` サブディレクトリに十分なディスク領域があることを確認する必要があります。 これは、コンテンツ転送ツールによってリポジトリのローカルコピーが作成され、後で移行セットにアップロードされるためです。
 必要な空きディスク容量を計算する一般的な式は次のとおりです。
-   *data store size + node store size * 1.5*
+   `data store size + node store size * 1.5`
 
-   * デー *タストアのサイズに対しては*、実際のデータストアのサイズが大きい場合でも、コンテンツ転送ツールで64 GBが使用されます。
-   * *ノードストアのサイズ* は、セグメントストアのディレクトリサイズまたはMongoDBデータベースのサイズです。
+   * *data store size*: 実際のデータストアのサイズが大きい場合でも、コンテンツ転送ツールは64 GBを使用します。
+   * *ノードストアのサイズ*: セグメントストアディレクトリのサイズまたはMongoDBデータベースのサイズ。
 したがって、セグメントストアのサイズが20 GBの場合、必要な空きディスク容量は94 GBになります。
