@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: d72f02f76f9be61ef4c3eefd790ff8abbb23a3d8
+source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1768'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Cloud Readiness Analyzer(CRA)の実行中の重要な考慮事項を理解する
 
 * CRAレポートは、Adobe Experience Manager(AEM) [パターンディテクターの出力を使用して作成されます](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRAが使用するパターンディテクターのバージョンは、CRAインストールパッケージに含まれています。
 
-* CRAは、ユーザーまたはグループ内の `admin` ユーザーのみが実行でき `Administrators` ます。
+* CRAは、 *管理者ユーザーまたは* Administrators **** グループ内のユーザーのみが実行できます。
 
 * CRAは、バージョン6.1以降を含むAEMインスタンスでサポートされます。
 
@@ -57,30 +57,48 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
 
 AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次のとおりです。
 
-1. Adobe Experience Managerユーザーインターフェイスを使用して、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
+1. Adobe Experience Managerインスタンスを選択し、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
 
    >[!NOTE]
    >CRAは、ツールが開かれ次第、レポートを生成するバックグラウンドプロセスを開始します。 レポートの準備が整うまで、レポートの生成が進行中であることを示すメッセージが表示されます。 ブラウザーのタブを閉じてから、後でレポートの完了時に表示に戻ることができます。
 
-CRAレポートが生成され、表示されたら、ツールページの右上隅にある「 **CSV** 」ボタンをクリックして、レポートをコンマ区切り値(CSV)形式でダウンロードするオプションがあります。
+1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 下の図に示すように、「 **CSV** 」をクリックして、完全なサマリレポートをコンマ区切り値(CSV)形式でダウンロードします。
 
-CRAのキャッシュをクリアし、左上隅の「レポートを更新」ボタンをクリックしてレポートを再生成するように強制できます。
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >CRAのキャッシュをクリアし、左上隅の「レポートの **更新** 」ボタンをクリックしてレポートを再生成するように強制できます。
 
 ### AEM 6.2および6.1 {#aem-specific-versions}
 
-CRAユーザーインターフェイスは、CSVレポートを生成およびダウンロードするリンクに限定されています。 AEM 6.1では、ユーザーインターフェイスは機能せず、HTTPインターフェイスのみを使用できます。
+Cloud Readiness Analyzerのユーザーインターフェイスは、AEM 6.2ではCSVレポートを生成およびダウンロードするためのリンクに制限されています。 AEM 6.1では、ユーザーインターフェイスは機能せず、HTTPインターフェイスのみを使用できます。
 
 すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
 
+次の手順に従って、Adobe Experience Manager (AEM) 6.1および6.2用のCSVレポートをダウンロードします。
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. 次の図に示すように、「 **Status** 」タブを選択し、ドロップダウンリストから「 **Pattern Detector** 」を検索します。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. サマリレポートはzipフォルダーまたはJSON形式でダウンロードできます。
+
 ## CRAサマリレポート {#cra-summary-report}
 
-CRAをAEMユーザーインターフェイスで実行すると、レポートは結果としてツールウィンドウに表示されます。 レポートの形式は次のとおりです。
+Cloud Readiness AnalyzerをAEMユーザーインターフェイスで実行すると、結果としてレポートがツールウィンドウに表示されます。
 
-* レポートの概要： レポートがいつ生成されたかなど、レポート自体に関する情報です。
-* システム概要： CRAが実行されたAEMシステムに関する情報です。
-* 検索カテゴリ: 各セクションが同じカテゴリの1つ以上の結果に対応する複数のセクション。 各セクションには、次の内容が含まれます。 カテゴリ名、サブタイプ、検索数と重要度、概要、カテゴリドキュメントへのリンク、個々の検索情報。
+レポートの形式は次のとおりです。
 
-行動の大まかな優先度を示すために、各発見に重要度レベルを割り当てる。 使用される重要度レベルは次のとおりです。
+* *レポートの概要*: レポートがいつ生成されたかなど、レポート自体に関する情報です。
+* *システム概要*: CRAが実行されたAEMシステムに関する情報です。
+* *検索カテゴリ*: 各セクションが同じカテゴリの1つ以上の結果に対応する複数のセクション。 各セクションには、次の内容が含まれます。 カテゴリ名、サブタイプ、検索数と重要度、概要、カテゴリドキュメントへのリンク、個々の検索情報。
+
+行動の大まかな優先度を示すために、各発見に重要度レベルを割り当てる。
+
+次の表に、重要度レベルを示します。
 
 | Importance | 説明 |
 |--- |--- |
@@ -91,16 +109,7 @@ CRAをAEMユーザーインターフェイスで実行すると、レポート�
 
 ## CRA CSVレポート {#crs-csv-report}
 
-「CSV」ボタンを押すと、CRAレポートのCSV形式が結果キャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。 キャッシュの有効期限が切れた場合は、CSVファイルを作成してダウンロードする前にレポートが再生成されます。
-
-次の手順に従って、AEMインスタンスからサマリレポートのCSV形式を生成します。
-
-1. 
-   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
-
-1. レポートが使用可能になったら、 **CSVをクリックして** 、以下の図に示すように、カンマ区切り値(CSV)形式の完全なサマリレポートをダウンロードします。
-
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+AEMインスタンスから **CSV** (CSV)オプションをクリックすると、Cloud Readiness AnalyzerレポートのCSV形式が結果キャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。 キャッシュの有効期限が切れた場合は、CSVファイルを作成してダウンロードする前にレポートが再生成されます。
 
 レポートのCSV形式には、パターンディテクターの出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。 この形式は、Microsoft Excelなどのアプリケーションでの表示や編集に適しています。 これは、進行状況を測定するために時間の経過と共にレポートを比較する際に役立つ、繰り返し可能な形式で検索情報をすべて提供することを目的としています。
 
@@ -133,8 +142,10 @@ HTTPインターフェイスは、様々な方法で使用できます。
 
 簡単な方法の1つは、管理者としてAEMに既にサインインしているブラウザーと同じブラウザーでブラウザータブを開くことです。 ブラウザータブにURLを入力して、結果をブラウザーで表示またはダウンロードすることができます。
 
-また、 `curl` やなどのコマンドラインツールや、HTTPクライアントアプリケーションを使用す `wget` ることもできます。 認証済みのセッションでブラウザータブを使用しない場合は、コメントの一部として管理ユーザー名とパスワードを指定する必要があります。 これを行う方法の例を次に示します。
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`
+また、 `curl` やなどのコマンドラインツールや、HTTPクライアントアプリケーションを使用す `wget` ることもできます。 認証済みのセッションでブラウザータブを使用しない場合は、コメントの一部として管理ユーザー名とパスワードを指定する必要があります。
+
+これを行う方法の例を次に示します。
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.csv' > result.csv`.
 
 ### ヘッダーとパラメーター {#http-headers-and-parameters}
 
@@ -151,7 +162,7 @@ HTTPインターフェイスは、様々な方法で使用できます。
 HTTPヘッダーと対応するクエリパラメーターの両方が存在する場合は、クエリパラメーターが優先されます。
 
 HTTPインターフェイスを使用してレポートの生成を開始する簡単な方法は、次のコマンドを使用することです。
-`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`
+`curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
 リクエストが行われた後は、クライアントはアクティブなままでレポートを生成する必要はありません。 レポートの生成は、HTTP GETリクエストを使用してあるクライアントで開始でき、レポートが生成されたら、別のクライアントのキャッシュまたはAEMユーザーインターフェイスのCSVツールから表示できます。
 
@@ -175,17 +186,7 @@ CRAキャッシュのデフォルトの有効期間は24時間です。 レポ�
 
 このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、AEMへのCRX/DE Liteインターフェイスを使用してキャッシュの有効期間を調整できます。
 
-## AEM 6.1インスタンスでのレポートの表示 {#aem-instances-report}
 
-次の手順に従って、Adobe Experience Manager (AEM) 6.1用のCSVレポートをダウンロードします。
 
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. 次の図に示すように、「 **Status** 」タブを選択し、ドロップダウンリストから「 **Pattern Detector** 」を検索します。
-
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. サマリレポートはzipフォルダーまたはJSON形式でダウンロードできます。
 
 
