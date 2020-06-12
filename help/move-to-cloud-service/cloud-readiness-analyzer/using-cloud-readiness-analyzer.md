@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
+source-git-commit: 1739f81d4894f3e04cc4119f344a3bea5bd042d8
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 4%
+source-wordcount: '556'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始が表示され、数分後には生成されたレポートが表示されます。
+1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始が発生し、数分後にはAEMインスタンスでサマリレポートが使用できるようになります。
 
    >[!NOTE]
    >完全なレポートを表示するには、ページを下にスクロールする必要があります。
@@ -77,12 +77,22 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
 1. 
    1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-1. レポートが生成されたら、 **CSVをクリックして** 、以下の図に示すように、カンマ区切り値(CSV)形式の完全なサマリレポートをダウンロードします。
+1. レポートが使用可能になったら、 **CSVをクリックして** 、以下の図に示すように、カンマ区切り値(CSV)形式の完全なサマリレポートをダウンロードします。
 
 ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
 
 #### AEM 6.1インスタンスでのレポートの表示 {#aem-instances-report}
 
-AEM 6.1のCSVレポートをダウンロードできます。これは保留中です。
+次の手順に従って、Adobe Experience Manager (AEM) 6.1用のCSVレポートをダウンロードします。
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. 次の図に示すように、「 **Status** 」タブを選択し、ドロップダウンリストから「 **Pattern Detector** 」を検索します。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. サマリレポートはzipフォルダーまたはJSON形式でダウンロードできます。
+
 
