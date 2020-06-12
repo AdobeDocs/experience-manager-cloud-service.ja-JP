@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 47773a56f8bb24342281068a8c4d03d6edfb9277
+source-git-commit: f0e69dba5d670d141c82e762069f4831c2527dbe
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 4%
 
 ---
 
@@ -35,42 +35,54 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
 
 1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
 
-### 結果の表示 {#viewing-the-results}
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
+
+1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始が表示され、数分後には生成されたレポートが表示されます。
+
+   >[!NOTE]
+   >完全なレポートを表示するには、ページを下にスクロールする必要があります。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
+
+### サマリレポートでの結果の表示 {#viewing-the-results}
 
 >[!IMPORTANT]
 >Cloud Readiness Analyzerから生成されるレポートは、パターンディテクターに基づいています。 詳しくは、「 [パターンディテクター](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html) 」を参照してください。
 
-Cloud Readiness Analyzerの出力を表示するには、2つの方法があります。
+ページを下にスクロールして完全なサマリレポートを表示すると、レポート内で強調表示されている各カテゴリの次の情報を確認できます。
 
-1. **整理レポートの使用**
+1. **重要度レベル**
 
-   >[!NOTE]
-   >整理されたレポートは、AEMバージョン6.3以降で利用できます。
+   次の表に、様々なPattern DetectorとCloud Readiness Analyzerの重要度レベルの意味を示します。
 
-   または、
+   | 重要度レベル | 説明 |
+   |--- |--- |
+   | 情報/0 | この検索結果は、情報を提供する目的で提供されます。 |
+   | アドバイザリ/1 | この結果、アップグレードに関する問題が発生する可能性があります。 さらに調査を行うことをお勧めします。 |
+   | メジャー/2 | この結果、アップグレードに関する問題に対処する必要がある可能性があります。 |
+   | 重大/3 | この結果、アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
 
-1. **CRAの出力の表示**
+1. **説明**：説明は、レポートされたカテゴリに関する情報を提供します。
 
-   次の手順に従って、Cloud Readiness Analyzerの出力を表示します。
+1. **ドキュメントURL**&#x200B;ドキュメントURLを使用すると、関連するタイプの技術ドキュメントを表示できます。
 
-   >[!NOTE]
-   >次の手順は、AEMバージョン6.1以降に適用されます。
+1. **メッセージ** 1つのメッセージ内の検索結果の説明。
 
-   1. を使用して **AEM Web Console** (AEM Web Console)に移動 `https://serveraddress:serverport/system/console/configMgr`します。
+### CSV形式での結果の表示 {#viewing-the-results-csv}
 
-   1. Select **Status - Pattern Detector** as shown in the figure below.
+サマリレポートはAEMユーザーインターフェイスで利用できます。 フルレポートは、リファクタリングプロセス中に役立つコンマ区切り値(CSV)形式でダウンロードできます。
+
+サマリレポートのCSV形式を生成するには、次の手順に従います。
+
+1. 
+   1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
+
+1. レポートが生成されたら、 **CSVをクリックして** 、以下の図に示すように、カンマ区切り値(CSV)形式の完全なサマリレポートをダウンロードします。
+
+![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
 
 #### AEM 6.1インスタンスでのレポートの表示 {#aem-instances-report}
 
 AEM 6.1のCSVレポートをダウンロードできます。これは保留中です。
 
-#### レポートの重要度レベルについて {#importance-levels}
-
-次の表に、様々なPattern DetectorとCloud Readiness Analyzerの重要度レベルの意味を示します。
-
-| 重要度レベル | 説明 |
-|--- |--- |
-| 情報/0 | この検索結果は、情報を提供する目的で提供されます。 |
-| アドバイザリ/1 | この結果、アップグレードに関する問題が発生する可能性があります。 さらに調査を行うことをお勧めします。 |
-| メジャー/2 | この結果、アップグレードに関する問題に対処する必要がある可能性があります。 |
-| 重大/3 | この結果、アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
