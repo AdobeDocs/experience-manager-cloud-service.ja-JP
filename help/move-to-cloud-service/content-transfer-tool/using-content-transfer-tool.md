@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: f2a6b67e3673bf6dfeb63d445074f6d1e05971cf
+source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 88%
+source-wordcount: '1582'
+ht-degree: 86%
 
 ---
 
@@ -18,13 +18,15 @@ ht-degree: 88%
 
 * コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
 
-* If you are using a *Sandbox Environment* , ensure that your environment is upgraded to June 10, 2020 Release or later. *実稼働環境*&#x200B;を使用している場合、環境は自動的に更新されます。
+* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. *実稼働環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
 * コンテンツ転送ツールを使用するには、ソースインスタンスの管理者ユーザーで、コンテンツの転送先のクラウドサービスインスタンスのAEM管理者グループに属している必要があります。 権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
 * オーサーの&#x200B;*インジェスト段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。
+
+* コンテンツ転送ツールで一度にサポートできるリポジトリサイズの推奨上限は20 GBです。
 
 ## 入手方法 {#availability}
 
@@ -207,6 +209,8 @@ ht-degree: 88%
    *概要*&#x200B;画面から移行セットのログを直接表示することもできます。移行セットを選択し、「**抽出**」フィールド内のステータスをクリックします。下図の場合は、「**完了**」をクリックすると、ログが新しいタブに表示されます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
+
+1. ユーザーインターフェイスを使用せずにログの末尾を表示するには、ソースAEM環境にSSHで接続し、末尾を表示 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`します。
 
 ### 移行セットの削除 {#deleting-migration-set}
 
