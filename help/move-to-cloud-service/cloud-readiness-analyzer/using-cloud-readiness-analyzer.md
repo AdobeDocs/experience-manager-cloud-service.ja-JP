@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: daa281745540e6446adecd2501e26135d6000844
+source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -46,14 +46,14 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始が発生し、数分後にはAEMインスタンスでサマリレポートが使用できるようになります。
+1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始が発生し、数分後にCRAレポートがAEMインスタンスで使用できるようになります。
 
    >[!NOTE]
    >完全なレポートを表示するには、ページを下にスクロールする必要があります。
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-## Cloud Readiness Analyzer整理レポートの解釈 {#organized-report}
+## Cloud Readiness Analyzerレポートの解釈 {#cra-report}
 
 Cloud Readiness AnalyzerをAEMインスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
 
@@ -83,7 +83,7 @@ AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次�
    >[!NOTE]
    >CRAは、ツールが開かれ次第、レポートを生成するバックグラウンドプロセスを開始します。 レポートの準備が整うまで、レポートの生成が進行中であることを示すメッセージが表示されます。 ブラウザーのタブを閉じてから、後でレポートの完了時に表示に戻ることができます。
 
-1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 下の図に示すように、「 **CSV** 」をクリックして、完全なサマリレポートをコンマ区切り値(CSV)形式でダウンロードします。
+1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 次の図に示すように、 **** CSVをクリックして、CRAの完全なレポートをコンマ区切り値(CSV)形式でダウンロードします。
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
@@ -92,30 +92,18 @@ AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次�
 
 ### Adobe Experience Manager6.2および6.1 {#aem-specific-versions}
 
-Cloud Readiness AnalyzerのAdobe Experience Manager(AEM)6.2では、CSVレポートを生成およびダウンロードするリンクに制限されています。
+Adobe Experience Manager6.2では、Cloud Readiness AnalyzerのCSVレポートを生成およびダウンロードするリンクに制限されています。
+
+Adobe Experience Manager6.1では、ツールは機能せず、HTTPインターフェイスのみを使用できます。
 
 >[!NOTE]
->
->* Adobe Experience Manager6.1では、ツールは機能せず、HTTPインターフェイスのみを使用できます。
-   >
-   >
-* すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
+>すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
 
+## Cloud Readiness AnalyzerのCSVレポートの解釈 {#cra-csv-report}
 
-次の手順に従って、Adobe Experience Manager(AEM)6.1および6.2用のCSVレポートをダウンロードします。
+AEMインスタンスから **CSV** (CSV)オプションをクリックすると、Cloud Readiness AnalyzerレポートのCSV形式が結果キャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。
 
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. 次の図に示すように、「 **Status** 」タブを選択し、ドロップダウンリストから「 **Pattern Detector** 」を検索します。
-
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. サマリレポートはzipフォルダーまたはJSON形式でダウンロードできます。
-
-## Cloud Readiness AnalyzerのCSVレポートの解釈 {#crs-csv-report}
-
-AEMインスタンスから **CSV** (CSV)オプションをクリックすると、Cloud Readiness AnalyzerレポートのCSV形式が結果キャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。 キャッシュの有効期限が切れた場合は、CSVファイルを作成してダウンロードする前にレポートが再生成されます。
+キャッシュの有効期限が切れた場合は、CSVファイルを作成してダウンロードする前にレポートが再生成されます。
 
 レポートのCSV形式には、パターンディテクターの出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。 この形式は、Microsoft Excelなどのアプリケーションでの表示や編集に適しています。 これは、進行状況を測定するために時間の経過と共にレポートを比較する際に役立つ、繰り返し可能な形式で検索情報をすべて提供することを目的としています。
 
@@ -190,7 +178,7 @@ CRAキャッシュのデフォルトの有効期間は24時間です。 レポ�
 キャッシュのライフタイム値は、次のリポジトリノードの `maxCacheAge` プロパティとして保存されます。
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、CRX/DE Liteを使用してキャッシュの有効期間を調整できます。
+このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、 **CRXDE Liteを使用してキャッシュの有効期間を調整できます**。
 
 
 
