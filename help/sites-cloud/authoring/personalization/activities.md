@@ -2,10 +2,10 @@
 title: アクティビティの管理
 description: アクティビティコンソールでは、ブランドのマーケティングアクティビティを作成、整理、管理できます。次のことができます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 100%
+source-wordcount: '2002'
+ht-degree: 99%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->アクティビティを非公開にする場合、
+>アクティビティの公開を取り消す場合、ページを更新しない限り、アクティビティのステータスは変更されません。
 
 アクティビティを公開または非公開にするには：
 
@@ -165,6 +165,7 @@ Adobe Target アクティビティ（XT または A/B）のパフォーマンス
 
    * 現在のアクティビティが無効になります。
    * すべてのページが変更され、ターゲットコンテンツが成功エクスペリエンスの実際のコンテンツで置き換えられます。ターゲット設定を&#x200B;**しなくても**、成功エクスペリエンスのコンテンツが標準ページの一部になります。
+
    ![勝者の採用](/help/sites-cloud/authoring/assets/activities-reports.png)
 
    成功エクスペリエンスとは、レポートのコンバージョン率を上昇させるエクスペリエンスです。
