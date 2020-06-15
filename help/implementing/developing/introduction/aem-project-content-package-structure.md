@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 60093232710426d919a45742b1775239944d266d
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 91%
+source-wordcount: '2522'
+ht-degree: 95%
 
 ---
 
@@ -37,6 +37,16 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 >[!WARNING]
 >
 > 以前のバージョンの AEM と同様に、`/libs` は変更しないでください。`/libs` にデプロイできるのは、AEM 製品コードだけです。
+
+### Oak Indexes {#oak-indexes}
+
+Oakインデックス(`/oak:index`)は、AEM Cloudサービスのデプロイメントプロセスによって特別に管理されます。 これは、新しいインデックスが展開されて完全に再識別されるまで、Cloud Managerは新しいコードイメージに切り替わる前に待機する必要があるからです。
+
+このため、Oakインデックスは実行時に可変ですが、可変パッケージがインストールされる前に、インストールできるように、コードとしてデプロイする必要があります。 したがって、 `/oak:index` 設定はコードパッケージの一部であり、以下に説明するコンテンツパッケージ [の一部ではありません。](#recommended-package-structure)
+
+>[!TIP]
+>
+>AEMでのクラウドサービスとしてのインデックス作成について詳しくは、ドキュメント [コンテンツの検索とインデックス作成を参照してください。](/help/operations/indexing.md)
 
 ## 推奨されるパッケージ構造 {#recommended-package-structure}
 
@@ -127,13 +137,13 @@ Repo Init の主な利点は、スクリプトで定義されたすべてのア�
 Repo Init スクリプト自体はスクリプトとして `ui.apps` プロジェクト内に存在しますが、スクリプトは次の可変構造を定義するために使用でき、また使用する必要があります。
 
 + ベースラインコンテンツの構造
-   + 例: `/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
+   + 例：`/content/my-app`, `/content/dam/my-app`, `/conf/my-app/settings`
 + サービスユーザー
 + ユーザー
 + グループ
 + ACL
 
-Repo Init scripts are stored as `scripts` entries of `RepositoryInitializer` OSGi factory configurations, and thus, can be implicitly targeted by runmode, allowing for differences between AEM Author and AEM Publish Services&#39; Repo Init scripts, or even between Envs (Dev, Stage and Prod).
+Repo Init スクリプトは `RepositoryInitializer` OSGi ファクトリ設定の `scripts` エントリとして保存されるので、実行モードで暗黙的にターゲット化でき、AEM オーサーと AEM パブリッシュサービス間の Repo Init スクリプトの違いや、Envs（開発、ステージ、実行）間の違いを可能にします。
 
 ユーザーとグループを定義する場合、グループのみがアプリケーションの一部と見なされ、またここで定義される必要がある機能に不可欠なものと見なされます。組織のユーザーとグループは、実行時に AEM で定義する必要があります。例えば、カスタムワークフローが名前付きのグループに作業を割り当てる場合、そのグループは AEM アプリケーションの Repo Init を介して定義する必要がありますが、グループ化が単なる組織（「Wendy のチーム」や「Sean のチーム」など）の場合、これらは最適な定義で、実行時に AEM で管理されます。
 
@@ -192,8 +202,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
 + 第 3 レベルのフォルダーは、
    `application` か `content` のどちらかにする必要があります。
    + `application` フォルダーにはコードパッケージが格納されます。
-   + The `content` folder holds content packages
-This folder name must correspond to the [package types](#package-types) of the packages it contains.
+   + `content` フォルダーにはコンテンツパッケージが格納されます。このフォルダー名は、その中に含まれているパッケージの[パッケージタイプ](#package-types)に対応している必要があります。
 + 第 4 レベルのフォルダーはサブパッケージを格納するもので、次のいずれかにする必要があります。
    + `install`：AEM オーサーと AEM パブリッシュの&#x200B;**両方**&#x200B;にインストールする場合
    + `install.author`：AEM オーサーに&#x200B;**のみ**&#x200B;インストールする場合
@@ -223,7 +232,7 @@ This folder name must correspond to the [package types](#package-types) of the p
 
 ## サードパーティパッケージの埋め込み {#embedding-3rd-party-packages}
 
-All packages must be available via the [Adobe&#39;s public Maven artifact repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/) or an accessible public, referenceable 3rd party Maven artifact repository.
+すべてのパッケージは、[アドビが公開している Maven アーティファクトリポジトリ](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)または公開されている参照可能なサードパーティ Maven アーティファクトリポジトリを通じて入手できる必要があります。
 
 **アドビが公開している Maven アーティファクトリポジトリ**&#x200B;にサードパーティパッケージがある場合、Adobe Cloud Manager でアーティファクトを解決するための設定は、それ以上必要ありません。
 
@@ -239,9 +248,9 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 
 パッケージの適切なインストールを確実におこなうために、パッケージ間の依存関係を設定することをお勧めします。
 
-The general rule is packages containing mutable content (`ui.content`) should depend on the immutable code (`ui.apps`) that supports the rendering and use of the mutable content.
+一般的なルールとしては、可変コンテンツを格納したパッケージ（`ui.content`）は、可変コンテンツのレンダリングと使用をサポートする不変コード（`ui.apps`）に依存します。
 
-この一般規則の顕著な例外は、不変コードパッケージ(`ui.apps` またはその他)がOSGiバンドル __の__ みを含む場合です。 依存関係がある場合、AEMパッケージで依存関係を宣言する必要はありません。 これは、OSGiバンドル __を含む不変コードパッケージ__ のみ、OSGiバンドルが登録されていないため、AEM Package Managerには登録されず、依存関係に依存するAEMパッケージの依存関係が満たされず、インストールに失敗するためです。
+この一般的なルールの例外として重要なのは、不変コードパッケージ（`ui.apps` など）に OSGi バンドル&#x200B;__のみ__&#x200B;含まれている場合です。この場合、AEM パッケージでは不変コードパッケージへの依存関係を宣言する必要はありません。その理由は、OSGi バンドル&#x200B;__のみ__&#x200B;を含んだ不変コードパッケージは AEM パッケージマネージャーには登録されていないので、そのコードパッケージに依存するあらゆる AEM パッケージは依存関係の設定が十分でなく、インストールに失敗するからです。
 
 >[!TIP]
 >
@@ -340,7 +349,7 @@ The general rule is packages containing mutable content (`ui.content`) should de
 
 ### Adobe Cloud Manager によるデプロイメント用のパッケージのマーク {#cloud-manager-target}
 
-コンテナ（`all`）プロジェクトを&#x200B;**除き**、パッケージを生成するすべてのプロジェクトでは、プラグイン宣言 `filevault-package-maven-plugin` の `<properties>` 設定に `<cloudManagerTarget>none</cloudManagerTarget>` を追加して、プロジェクトが Adobe Cloud Manager でデプロイ&#x200B;**されない**&#x200B;ようにします。The container (`all`) package should be the singular package deployed via Cloud Manager, which in turn embeds all required code and content packages.
+コンテナ（`all`）プロジェクトを&#x200B;**除き**、パッケージを生成するすべてのプロジェクトでは、プラグイン宣言 `filevault-package-maven-plugin` の `<properties>` 設定に `<cloudManagerTarget>none</cloudManagerTarget>` を追加して、プロジェクトが Adobe Cloud Manager でデプロイ&#x200B;**されない**&#x200B;ようにします。コンテナ（`all`）パッケージは、Cloud Manager を通じてデプロイされる単一のパッケージでなければなりません。このパッケージに、必要なすべてのコードパッケージとコンテンツパッケージが埋め込まれます。
 
 ```xml
 ...
@@ -492,7 +501,7 @@ scripts=["
 ### サードパーティ Maven リポジトリ {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
-> Mavenリポジトリをさらに追加すると、追加のMavenリポジトリが依存関係をチェックするので、MavenリポジトリがMavenビルド時間を延長する場合があります。
+> Maven リポジトリをさらに追加すると、Maven リポジトリの依存関係がチェックされるので、Maven のビルド時間が延長される場合があります。
 
 公開されているサードパーティ Maven リポジトリで必要なものがあれば、それらのリポジトリディレクティブをリアクタープロジェクトの `pom.xml` に追加します。完全な `<repository>` 設定は、サードパーティリポジトリプロバイダから入手できるはずです。
 
