@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: daa281745540e6446adecd2501e26135d6000844
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1775'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Cloud Readiness Analyzer(CRA)の実行中の重要な考慮事項を理解する
 * CRAはどの環境でも実行できますが、 *Stage* 環境で実行することをお勧めします。
 
    >[!NOTE]
-   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの各領域で、実稼働環境にできる限り近い *作成者* ステージング環境に対してCRAを実行することをお勧めします。 または、実稼働版の *作成者* 環境のクローンで実行することもできます。
+   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、実稼働環境にできる限り近い作成者ステージング環境でCRAを実行することをお勧めします。 または、実稼働版の作成者環境のコピーで実行することもできます。
 
 * CRAレポートの生成には、数分から数時間の間に相当な時間がかかる場合があります。 必要な時間は、AEMリポジトリコンテンツのサイズと特性、AEMバージョン、その他の要因に大きく左右されます。
 
@@ -53,42 +53,9 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
 
-### AEM 6.3以降 {#aem-older-version}
+## Cloud Readiness Analyzer整理レポートの解釈 {#organized-report}
 
-AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次のとおりです。
-
-1. Adobe Experience Managerインスタンスを選択し、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
-
-   >[!NOTE]
-   >CRAは、ツールが開かれ次第、レポートを生成するバックグラウンドプロセスを開始します。 レポートの準備が整うまで、レポートの生成が進行中であることを示すメッセージが表示されます。 ブラウザーのタブを閉じてから、後でレポートの完了時に表示に戻ることができます。
-
-1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 下の図に示すように、「 **CSV** 」をクリックして、完全なサマリレポートをコンマ区切り値(CSV)形式でダウンロードします。
-
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
-
-   >[!NOTE]
-   >CRAのキャッシュをクリアし、左上隅の「レポートの **更新** 」ボタンをクリックしてレポートを再生成するように強制できます。
-
-### AEM 6.2および6.1 {#aem-specific-versions}
-
-Cloud Readiness Analyzerのユーザーインターフェイスは、AEM 6.2ではCSVレポートを生成およびダウンロードするためのリンクに制限されています。 AEM 6.1では、ユーザーインターフェイスは機能せず、HTTPインターフェイスのみを使用できます。
-
-すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
-
-次の手順に従って、Adobe Experience Manager (AEM) 6.1および6.2用のCSVレポートをダウンロードします。
-
-1.Navigate to **Adobe Experience Manager Web Console
-Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
-
-1. 次の図に示すように、「 **Status** 」タブを選択し、ドロップダウンリストから「 **Pattern Detector** 」を検索します。
-
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
-
-1. サマリレポートはzipフォルダーまたはJSON形式でダウンロードできます。
-
-## CRAサマリレポート {#cra-summary-report}
-
-Cloud Readiness AnalyzerをAEMユーザーインターフェイスで実行すると、結果としてレポートがツールウィンドウに表示されます。
+Cloud Readiness AnalyzerをAEMインスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
 
 レポートの形式は次のとおりです。
 
@@ -107,7 +74,46 @@ Cloud Readiness AnalyzerをAEMユーザーインターフェイスで実行す�
 | メジャー | この結果、アップグレードに関する問題に対処する必要がある可能性があります。 |
 | 重要 | この結果、アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
 
-## CRA CSVレポート {#crs-csv-report}
+### Adobe Experience Manager6.3以降 {#aem-older-version}
+
+AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次のとおりです。
+
+1. Adobe Experience Managerインスタンスを選択し、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
+
+   >[!NOTE]
+   >CRAは、ツールが開かれ次第、レポートを生成するバックグラウンドプロセスを開始します。 レポートの準備が整うまで、レポートの生成が進行中であることを示すメッセージが表示されます。 ブラウザーのタブを閉じてから、後でレポートの完了時に表示に戻ることができます。
+
+1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 下の図に示すように、「 **CSV** 」をクリックして、完全なサマリレポートをコンマ区切り値(CSV)形式でダウンロードします。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+
+   >[!NOTE]
+   >CRAのキャッシュをクリアし、左上隅の「レポートの **更新** 」ボタンをクリックしてレポートを再生成するように強制できます。
+
+### Adobe Experience Manager6.2および6.1 {#aem-specific-versions}
+
+Cloud Readiness AnalyzerのAdobe Experience Manager(AEM)6.2では、CSVレポートを生成およびダウンロードするリンクに制限されています。
+
+>[!NOTE]
+>
+>* Adobe Experience Manager6.1では、ツールは機能せず、HTTPインターフェイスのみを使用できます。
+   >
+   >
+* すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
+
+
+次の手順に従って、Adobe Experience Manager(AEM)6.1および6.2用のCSVレポートをダウンロードします。
+
+1.Navigate to **Adobe Experience Manager Web Console
+Configuration** using `https://serveraddress:serverport/system/console/configMgr`.
+
+1. 次の図に示すように、「 **Status** 」タブを選択し、ドロップダウンリストから「 **Pattern Detector** 」を検索します。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-4.png)
+
+1. サマリレポートはzipフォルダーまたはJSON形式でダウンロードできます。
+
+## Cloud Readiness AnalyzerのCSVレポートの解釈 {#crs-csv-report}
 
 AEMインスタンスから **CSV** (CSV)オプションをクリックすると、Cloud Readiness AnalyzerレポートのCSV形式が結果キャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。 キャッシュの有効期限が切れた場合は、CSVファイルを作成してダウンロードする前にレポートが再生成されます。
 
@@ -129,7 +135,7 @@ CSV形式レポートの列は次のとおりです。
 
 ## HTTPインターフェイス {#http-interface}
 
-CRAはHTTPインターフェイスを提供し、AEMユーザーインターフェイスの代替として使用できます。 このインタフェースは、HEAD[ヘッド]コマンドとGET[GET]コマンドの両方をサポートしています。 CRAレポートを生成し、次の3つの形式のいずれかで返す場合に使用します。 JSON、CSV、タブ区切り値(TSV)。
+CRAはHTTPインターフェイスを提供し、AEMインスタンスの代替として使用できます。 このインタフェースは、HEAD[ヘッド]コマンドとGET[GET]コマンドの両方をサポートしています。 CRAレポートを生成し、次の3つの形式のいずれかで返す場合に使用します。 JSON、CSV、タブ区切り値(TSV)。
 
 CRAがインストールされているサーバーのHTTPアクセスには、次のURLを使用できます。 `<host>` は、ホスト名、必要に応じてポートです。
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` JSON形式の場合
@@ -164,7 +170,7 @@ HTTPヘッダーと対応するクエリパラメーターの両方が存在す�
 HTTPインターフェイスを使用してレポートの生成を開始する簡単な方法は、次のコマンドを使用することです。
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-リクエストが行われた後は、クライアントはアクティブなままでレポートを生成する必要はありません。 レポートの生成は、HTTP GETリクエストを使用してあるクライアントで開始でき、レポートが生成されたら、別のクライアントのキャッシュまたはAEMユーザーインターフェイスのCSVツールから表示できます。
+リクエストが行われた後は、クライアントはアクティブなままでレポートを生成する必要はありません。 レポートの生成は、HTTP GETリクエストを使用してあるクライアントで開始でき、レポートが生成されたら、別のクライアントのキャッシュまたはAEMインスタンスのCSVツールから表示できます。
 
 ### 応答(#http-responses)
 
@@ -179,12 +185,12 @@ HTTPインターフェイスを使用してレポートの生成を開始する�
 
 ## キャッシュのライフタイム調整 {#cache-adjustment}
 
-CRAキャッシュのデフォルトの有効期間は24時間です。 レポートを更新し、キャッシュを再生成するオプションを使用する場合、ユーザーインターフェイスとHTTPインターフェイスの両方で、このデフォルト値はCRAのほとんどの使用に適していると考えられます。 レポート生成時間がAEMインスタンスに特に長い場合は、レポートの再生成を最小限に抑えるためにキャッシュの有効期間を調整することをお勧めします。
+CRAキャッシュのデフォルトの有効期間は24時間です。 レポートを更新し、キャッシュを再生成するオプションを使用する場合、AEMインスタンスとHTTPインターフェイスの両方で、このデフォルト値は、ほとんどのCRAの使用に適していると考えられます。 レポート生成時間がAEMインスタンスに特に長い場合は、レポートの再生成を最小限に抑えるためにキャッシュの有効期間を調整することをお勧めします。
 
 キャッシュのライフタイム値は、次のリポジトリノードの `maxCacheAge` プロパティとして保存されます。
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、AEMへのCRX/DE Liteインターフェイスを使用してキャッシュの有効期間を調整できます。
+このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、CRX/DE Liteを使用してキャッシュの有効期間を調整できます。
 
 
 
