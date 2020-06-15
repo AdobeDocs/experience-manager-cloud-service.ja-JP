@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 668908770505b24eae4652106471925d1dcfc18b
+source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
 workflow-type: tm+mt
-source-wordcount: '5123'
-ht-degree: 96%
+source-wordcount: '5125'
+ht-degree: 98%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 96%
 
 以下のアーキテクチャ図に Dynamic Media の仕組みを示します。
 
-新しいアーキテクチャでは、AEM は、マスターアセットを担当し、アセットの処理および公開のための Dynamic Media と同期します。
+新しいアーキテクチャでは、AEMはプライマリソースアセットを管理し、アセットの処理と公開に関するDynamic Mediaと同期します。
 
-1. マスターアセットが AEM にアップロードされると、Dynamic Media にレプリケートされます。その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
+1. プライマリソースアセットがAEMにアップロードされると、Dynamic Mediaに複製されます。 その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
 1. レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスおよびプレビューできます（バイナリは AEM インスタンスに送り返されません）。
 1. コンテンツを公開および承認する準備ができると、Dynamic Media サービスがトリガーされ、コンテンツが配信サーバーにプッシュされて、CDN にコンテンツがキャッシュされます。
 
@@ -94,7 +94,7 @@ Dynamic Media Cloud Services を設定するには：
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 「**[!UICONTROL 保存]**」をタップします。
-1. ダイナミックメディアコンテンツを公開する前に、安全にプレビューするには、AEM作成者インスタンスを「許可」して、ダイナミックメディアに接続する必要があります。
+1. Dynamic Mediaのコンテンツが公開される前に、プレビューを安全に行うには、AEM作成者インスタンスを「許可リスト」してDynamic Mediaに接続する必要があります。
 
    * Dynamic Media Classic アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
    * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
@@ -129,14 +129,14 @@ Dynamic Media Classic（Scene7）のユーザーインターフェイスを使�
 
 セットアップおよび設定タスクには、次のものが含まれます。
 
-* [Image Server の公開設定](#publishing-setup-for-image-server)
+* [Image Server の公開設定 ](#publishing-setup-for-image-server)
 * [アプリケーションの一般設定の指定](#configuring-application-general-settings)
 * [カラーマネジメントの設定](#configuring-color-management)
 * [アセット処理の設定](#configuring-asset-processing)
 * [サポートされていない形式のカスタム MIME タイプの追加](#adding-custom-mime-types-for-unsupported-formats)
 * [画像セットおよびスピンセットを自動生成するためのバッチセットプリセットの作成](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Image Server の公開設定 {#publishing-setup-for-image-server}
+#### Image Server の公開設定  {#publishing-setup-for-image-server}
 
 公開設定は、アセットがデフォルトで Dynamic Media からどのように配信されるかを決定します。設定が指定されていない場合、Dynamic Media は、公開設定で定義されたデフォルト設定に従ってアセットを配信します。例えば、解像度属性が含まれていない画像を配信するように要求した場合、画像は初期設定のオブジェクト解像度設定で配信されます。
 
@@ -461,16 +461,16 @@ spin-01-01
 
 Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> のスムーズな実行を維持するために、アドビでは、次の同期パフォーマンス／拡張性の微調整のヒントをお勧めします。
 
-* 様々なファイル形式の処理用に、定義済みのジョブパラメーターを更新します。
-* 定義済みのGraniteワークフロー（ビデオアセット）キューワーカースレッドを更新しています。
-* 定義済みのGranite一時ワークフロー（画像および非ビデオアセット）キューワーカースレッドを更新しています。
-* Dynamic Media Classicサーバーへの最大アップロード接続数を更新しています。
+* 様々なファイル形式の処理に対応する定義済みのジョブパラメーターを更新する。
+* 事前定義済みの Granite のワークフロー（ビデオアセット）キューワーカースレッドを更新する。
+* Granite の事前定義済みの一時的なワークフロー（画像および非ビデオアセット）キューワーカースレッドを更新する。
+* Dynamic Media Classic サーバーへの最大アップロード接続数を更新する。
 
-#### 様々なファイル形式の処理用に、定義済みのジョブパラメーターを更新する
+#### 様々なファイル形式の処理に対応する定義済みのジョブパラメーターを更新する
 
-ジョブのパラメータを調整して、ファイルをアップロードする際の処理を高速化できます。 例えば、PSDファイルをアップロードしていて、テンプレートとして処理したくない場合は、レイヤーの抽出を「false」（オフ）に設定できます。 この場合、調整されたジョブパラメータは、と表示され `process=None&createTemplate=false`ます。
+ジョブパラメータを調整して、ファイルアップロード時の処理を高速化できます。例えば、PSD ファイルをアップロードするものの、テンプレートとして処理しない場合は、レイヤー抽出を false（オフ）に設定できます。このような場合、調整されたジョブパラメータは `process=None&createTemplate=false` と表示されます。
 
-PDF、PostscriptおよびPSDファイルには、次の「調整済み」ジョブパラメーターを使用することをお勧めします。
+PDF ファイル、Postscript ファイル、PSD ファイルには、以下の「調整済み」ジョブパラメーターを使用することをお勧めします。
 
 | ファイルタイプ | 推奨されるジョブパラメーター |
 | ---| ---|
@@ -478,7 +478,7 @@ PDF、PostscriptおよびPSDファイルには、次の「調整済み」ジョ�
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-これらのパラメーターのいずれかを更新するには、MIMEタイプベースのアセットの [有効化/ダイナミックメディアクラシックアップロードジョブパラメーターのサポートの手順に従います](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
+これらのパラメーターのいずれかを更新するには、[MIME タイプベースの Assets／Dynamic Media Classic アップロードジョブパラメーターサポートの有効化](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)の手順に従います。
 
 #### Granite の一時的なワークフローキューの更新 {#updating-the-granite-transient-workflow-queue}
 
