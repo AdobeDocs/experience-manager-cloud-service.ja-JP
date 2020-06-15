@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 translation-type: tm+mt
-source-git-commit: 0d83e1d956d65fe27b1cf7bce758fc7fa8adf6b2
+source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1450'
 ht-degree: 3%
 
 ---
@@ -83,6 +83,10 @@ AS NOTE: the above is internal for now.
 したがって、インデックスを展開するには、インデックス定義(`/oak:index/definitionname`)をGitおよびCloud Managerの展開プロセス `ui.apps` 経由で配信する必要があります。
 
 新しいインデックス定義を追加したら、新しいアプリケーションをCloud Managerを使用してデプロイする必要があります。 配置を開始すると、2つのジョブが開始され、それぞれMongoDBとAzure Segment Storeに作成者用と発行用のインデックス定義を追加（および必要に応じて結合）します。 Blue-Greenスイッチが発生する前に、基になるリポジトリのインデックスが新しいインデックス定義で再作成されています。
+
+>[!TIP]
+>
+>クラウドサービスとしてのAEMに必要なパッケージ構造について詳しくは、ドキュメントの [AEMプロジェクト構造を参照してください。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 青 — 緑の導入を使用したインデックス管理 {#index-management-using-blue-green-deployments}
 
