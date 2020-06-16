@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの概要
 description: Cloud Readiness Analyzerの概要
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ Cloud Readiness Analyzerを使用すると、既存のAdobe Experience Manager(A
 
 このツールにより、Cloud ServiceとしてAEMに到達するトランジションの最初の手順である、リファクタリングの可能性がある領域を識別するレポートが生成されます。
 
-## Cloud Readiness Analyzerの概要レポート {#summary-report}
+## Cloud Readiness Analyzerレポート {#cra-report}
 
-Cloud Readiness Analyzerの概要レポートは、アップグレードの準備状況の概要を把握するために使用します。 このレポートは、Cloud ServiceとしてAEMへの導入を成功させる前に対処する必要のある問題のカテゴリ内の結果で構成されます。
+Cloud Readiness Analyzerレポートは、一般的なアップグレードの準備状況を理解するために使用します。 このレポートは、Cloud ServiceとしてAEMへの導入を成功させる前に対処する必要のある問題のカテゴリ内の結果で構成されます。
 
-サマリレポートには次のカテゴリが含まれます。
+Cloud Readiness Analyzerレポートには、次のカテゴリが含まれます。
 
 * リファクタリングが必要なアプリケーション機能
 * サポートされている場所に移動する必要があるリポジトリアイテム
@@ -28,9 +28,9 @@ Cloud Readiness Analyzerの概要レポートは、アップグレードの準�
 * デプロイと設定に関する問題
 * 新しい機能に置き換えられた、またはCloud ServiceとしてAEMで現在サポートされていないAEM 6.xの機能
 
-カテゴリに関する追加情報、およびこれらのカテゴリに関連する考えられる示唆とソリューションは、サマリレポート内のリンクを通して提供されます。
+カテゴリに関する追加情報、およびこれらのカテゴリに関連する示唆と解決策に関する情報は、Cloud Readiness Analyzerレポート内からリンクを介して提供されます。
 
 >[!NOTE]
->Cloud Readiness Analyzerレポートは、手動で収集して評価する必要のあるトランジションを提供することで、Cloud ServiceとしてAEMに情報を提供するのに必要な時間とコストの見積もりプロセスを高速化します。
+>Cloud Readiness Analyzerレポートは、手動で収集して評価する必要のあるトランジションを提供することで、AEMへのCloud Serviceに必要な時間とコストの見積もりプロセスを高速化します。
 
 Cloud Readiness Analyzerレポートは、AEMインスタンスからダウンロードすることもできます。 保留中の詳細については、「CSV形式での結果の **表示** 」を参照してください。
