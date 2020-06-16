@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: ae38a1300ef2d8f2b344313195ec904fca48d86b
+source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1747'
 ht-degree: 1%
 
 ---
@@ -18,18 +18,18 @@ Cloud Readiness Analyzer(CRA)の実行中の重要な考慮事項を理解する
 
 * CRAレポートは、Adobe Experience Manager(AEM) [パターンディテクターの出力を使用して作成されます](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRAが使用するパターンディテクターのバージョンは、CRAインストールパッケージに含まれています。
 
-* CRAは、 *管理者ユーザーまたは* Administrators **** グループ内のユーザーのみが実行できます。
+* CRAは、 **管理者ユーザーまたは** 管理者のユーザーのみが実行できます ****。
 
 * CRAは、バージョン6.1以降を含むAEMインスタンスでサポートされます。
 
 * CRAはどの環境でも実行できますが、 *Stage* 環境で実行することをお勧めします。
 
    >[!NOTE]
-   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、実稼働環境にできる限り近い作成者ステージング環境でCRAを実行することをお勧めします。 または、実稼働版の作成者環境のコピーで実行することもできます。
+   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、 *実稼働* 環境にできる限り近い ** 作成者環境に対してCRAを実行することをお勧めします。 または、実稼働版の *作成者* 環境のクローンで実行することもできます。
 
-* CRAレポートの生成には、数分から数時間の間に相当な時間がかかる場合があります。 必要な時間は、AEMリポジトリコンテンツのサイズと特性、AEMバージョン、その他の要因に大きく左右されます。
+* CRAレポートのコンテンツの生成には、数分から数時間の間に相当な時間がかかる場合があります。 必要な時間は、AEMリポジトリコンテンツのサイズと特性、AEMバージョン、その他の要因に大きく左右されます。
 
-* レポートの生成に非常に長い時間がかかるので、結果はキャッシュに保持され、キャッシュの期限が切れるか、レポートが明示的に更新されるまで、以降の表示やダウンロードに使用できます。
+* レポートのコンテンツの生成に非常に時間がかかるので、コンテンツはバックグラウンドプロセスによって生成され、キャッシュに保持されます。 レポートの表示とダウンロードは、期限が切れるか、レポートが明示的に更新されるまでコンテンツキャッシュを利用するので、比較的高速で行う必要があります。 レポートコンテンツの生成中に、ブラウザータブを閉じてから、キャッシュでレポートのコンテンツが使用可能になったら表示に戻ることができます。
 
 ## 入手方法 {#availability}
 
@@ -42,11 +42,11 @@ Cloud Readiness Analyzerは、Software Distribution Portalからzipファイル�
 
 Cloud Readiness Analyzerの実行方法を学ぶには、次のセクションに従います。
 
-1. Select the Adobe Experience Manager and navigate to tools -> **Operations** -> **Cloud Readiness Analyzer**.
+1. 「Adobe Experience Manager」を選択し、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始が発生し、数分後にCRAレポートがAEMインスタンスで使用できるようになります。
+1. Cloud Readiness Analyzerをクリックすると ****、レポートを生成するツール開始がレポートを表示します。レポートが使用可能な場合は表示されます。
 
    >[!NOTE]
    >完全なレポートを表示するには、ページを下にスクロールする必要があります。
@@ -88,20 +88,20 @@ AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次�
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
 
    >[!NOTE]
-   >CRAのキャッシュをクリアし、左上隅の「レポートの **更新** 」ボタンをクリックしてレポートを再生成するように強制できます。
+   >CRAに対して「レポートの **更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
 ### Adobe Experience Manager6.2および6.1 {#aem-specific-versions}
 
 Adobe Experience Manager6.2では、Cloud Readiness AnalyzerのCSVレポートを生成およびダウンロードするリンクに制限されています。
 
-Adobe Experience Manager6.1では、ツールは機能せず、HTTPインターフェイスのみを使用できます。
+Adobe Experience Manager6.1では、このツールは機能せず、HTTPインターフェイスのみを使用できます。
 
 >[!NOTE]
 >すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
 
 ## Cloud Readiness AnalyzerのCSVレポートの解釈 {#cra-csv-report}
 
-AEMインスタンスから **CSV** (CSV)オプションをクリックすると、Cloud Readiness AnalyzerレポートのCSV形式が結果キャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。
+AEMインスタンスから **CSV** (CSV)オプションをクリックすると、Cloud Readiness AnalyzerレポートのCSV形式がコンテンツキャッシュから作成され、ブラウザーに返されます。 ブラウザの設定に応じて、このレポートは、デフォルト名がのファイルとして自動的にダウンロードされ `results.csv`ます。
 
 キャッシュの有効期限が切れた場合は、CSVファイルを作成してダウンロードする前にレポートが再生成されます。
 
@@ -123,7 +123,7 @@ CSV形式レポートの列は次のとおりです。
 
 ## HTTPインターフェイス {#http-interface}
 
-CRAはHTTPインターフェイスを提供し、AEMインスタンスの代替として使用できます。 このインタフェースは、HEAD[ヘッド]コマンドとGET[GET]コマンドの両方をサポートしています。 CRAレポートを生成し、次の3つの形式のいずれかで返す場合に使用します。 JSON、CSV、タブ区切り値(TSV)。
+CRAはHTTPインターフェイスを提供し、AEM内でのユーザーインターフェイスの代替として使用できます。 このインタフェースは、HEAD[ヘッド]コマンドとGET[GET]コマンドの両方をサポートしています。 CRAレポートを生成し、次の3つの形式のいずれかで返す場合に使用します。 JSON、CSV、タブ区切り値(TSV)。
 
 CRAがインストールされているサーバーのHTTPアクセスには、次のURLを使用できます。 `<host>` は、ホスト名、必要に応じてポートです。
 * `http://<host>/apps/readiness-analyzer/analysis/result.json` JSON形式の場合
@@ -178,7 +178,7 @@ CRAキャッシュのデフォルトの有効期間は24時間です。 レポ�
 キャッシュのライフタイム値は、次のリポジトリノードの `maxCacheAge` プロパティとして保存されます。
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、 **CRXDE Liteを使用してキャッシュの有効期間を調整できます**。
+このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、CRXDE Liteを使用してキャッシュの有効期間を調整できます。
 
 
 
