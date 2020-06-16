@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 translation-type: tm+mt
-source-git-commit: 1ca9b2091befbafad0878d83fc7963c779146b2a
+source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 83%
+ht-degree: 75%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 83%
 
 * 事前にリポジトリに対して圧縮とデータストアの整合性チェックを実行して、潜在的な問題を特定すると共に、リポジトリに存在するガベージ（ゴミ）を減らすことをお勧めします。
 
-* AEM as a Cloud Service オーサーのコンテンツ配信ネットワーク（CDN）に IP のホワイトリストが設定されている場合は、ソース環境と AEM as a Cloud Service 環境が相互に通信できるように、ソース環境の IP もホワイトリストに追加する必要があります。
+* AEM Cloud Author Content Network(CDN)の設定でIPのホワイトリストが設定されている場合は、ソース環境とAEM Cloud環境が相互に通信できるように、ソース環境IPも許可リストに追加する必要があります。
 
 * インジェスト段階では、*ワイプ*&#x200B;モードを有効にしてインジェストを実行することをお勧めします。このモードでは、ターゲット AEM as a Cloud Service 環境内の既存のリポジトリ（オーサーまたはパブリッシュ）が完全に削除された後、移行セットのデータで更新されます。このモードは、現在のコンテンツの上に移行セットが適用される非ワイプモードより、はるかに高速です。
 
