@@ -46,7 +46,7 @@ Oakインデックス(`/oak:index`)は、AEM Cloudサービスのデプロイメ
 
 >[!TIP]
 >
->AEMでのクラウドサービスとしてのインデックス作成について詳しくは、ドキュメント [コンテンツの検索とインデックス作成を参照してください。](/help/operations/indexing.md)
+>AEMでのCloud Serviceとしてのインデックス作成について詳しくは、ドキュメント [コンテンツの検索とインデックス作成を参照してください。](/help/operations/indexing.md)
 
 ## 推奨されるパッケージ構造 {#recommended-package-structure}
 
