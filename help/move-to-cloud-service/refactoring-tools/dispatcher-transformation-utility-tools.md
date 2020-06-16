@@ -2,10 +2,10 @@
 title: AEM Dispatcher コンバーターツール
 description: AEM Dispatcher コンバーターツール
 translation-type: tm+mt
-source-git-commit: d3593edcfee660d5ce0b0a8774fe3c61025cbe36
+source-git-commit: 66cf4fc7b5a336968dd3f8757cc56a11d6e4843e
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ Dispatcher によるキャッシュの実行、ドキュメントの返却、ロ
 
 ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。
 
-詳しくは、[クラウド内の Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/dispatcher/overview.html)を参照してください。
+詳しくは、[クラウド内の Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)を参照してください。
 
 ## AEM Dispatcher コンバーター {#aem-dispatcher-converter}
 
