@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1749'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ HTTPヘッダーと対応するクエリパラメーターの両方が存在す�
 HTTPインターフェイスを使用してレポートの生成を開始する簡単な方法は、次のコマンドを使用することです。
 `curl -u admin:admin 'http://localhost:4502/apps/readiness-analyzer/analysis/result.json?max-age=0&respond-async=true'`.
 
-リクエストが行われた後は、クライアントはアクティブなままでレポートを生成する必要はありません。 レポートの生成は、HTTP GETリクエストを使用してあるクライアントで開始でき、レポートが生成されたら、別のクライアントのキャッシュまたはAEMインスタンスのCSVツールから表示できます。
+リクエストが行われた後は、クライアントはアクティブなままでレポートを生成する必要はありません。 HTTP GETリクエストを使用して1つのクライアントでレポートの生成を開始し、レポートが生成されたら、別のクライアントのキャッシュまたはAEM内のユーザーインターフェイスのCSVツールから表示できます。
 
 ### 応答(#http-responses)
 
