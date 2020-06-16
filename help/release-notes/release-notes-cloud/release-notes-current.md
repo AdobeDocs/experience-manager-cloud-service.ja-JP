@@ -24,7 +24,7 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 
 ### 新機能 {#whats-new-2020.6.0}
 
-コアコンポーネントのリリース2.9.0は [](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) 、以下を含むAEMサイトの一部として使用できるようになりました。
+コアコンポーネントのリリース2.9.0は、次の [AEM Sitesの一部として使用できるようになりました](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) 。
 
 * [Adobeクライアントデータレイヤー](https://github.com/adobe/adobe-client-data-layer) とコアコンポーネントの統合
 * すべてのコンポーネント用に設定可能なHTML ID属性
@@ -48,11 +48,11 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 * スクリーンリーダーの機能強化。
 
 
-## クラウドサービスとしてのAEMの基盤の新機能 {#foundations}
+## Cloud ServiceとしてのAEMの基盤における新機能 {#foundations}
 
 AEMプロジェクトのpom.xml内のリモートリポジトリへの参照をすべて削除すると、AEMプロジェクトのビルド時間が短縮され `https://downloads.experiencecloud.adobe.com/content/maven/public`ます。
 
-以前はこの場所でホストされていたクラウドサービスSDK API JarとしてのAEMは、MavenのデフォルトのアーティファクトリポジトリであるMaven Centralに配置されています。
+以前はその場所でホストされていたCloud ServiceSDK API JarとしてのAEMは、MavenのデフォルトのアーティファクトリポジトリであるMaven Centralに配置されています。
 
 ## Cloud Manager の新機能 {#cloud-manager}
 
@@ -76,7 +76,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Sandboxのプログラムは、 **Sandbox** バッジによって識別されます。このバッジは、ランディングページのプログラムカードに表示され、 **プログラムの概要** ページのプログラム名の横に表示されます。
 
-* システム管理者ロールのユーザーは、管理コンソールで、Cloud Managerに対するユーザーの役割または権限を管理できる場所に1回のクリックでアクセスできるようになりました。 「 **Manage Access** (アクセス **を管理)** 」ボタンが、プログラムボタンの横のランディングページで使用できるようになりました。
+* SysAdminロールのユーザーは、Admin Console内の場所に1回のクリックでアクセスできるようになりました。この場所から、ユーザーのロールまたはCloud Managerへの権限を管理できます。 「 **Manage Access** (アクセス **を管理)** 」ボタンが、プログラムボタンの横のランディングページで使用できるようになりました。
 
    詳細は、「 [SysAdminタスク](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) 」を参照してください。
 
@@ -120,7 +120,7 @@ PM/EM review required before publishing.
 
 **3Dコンテンツの取り込み、プレビュー、配信のサポート**
 
-3DファイルをAEM Assets内に格納して使用できるようになりました。 .obj、.stl、.gltf、.glbファイルなど、様々なコア3Dファイルをアップロード、プレビュー、活用できます。 また、3Dエクスペリエンス [!DNL Dynamic Media]は、任意のURLやビューアを使用して設定および配信できます。 これには、 [!DNL Dynamic Media] 3Dエクスペリエンスビューア、サイト3Dビューアコンポーネント、および3Dファイル配信機能( [!DNL Dynamic Media] AR/VR)が含まれます。 詳しくは、ダイナミックメディアでの3Dアセットの [操作を参照してください](/help/assets/dynamic-media/assets-3d.md)。
+3DファイルをAEM Assets内に保存して使用できるようになりました。 .obj、.stl、.gltf、.glbファイルなど、様々なコア3Dファイルをアップロード、プレビュー、活用できます。 また、3Dエクスペリエンス [!DNL Dynamic Media]は、任意のURLやビューアを使用して設定および配信できます。 これには、 [!DNL Dynamic Media] 3Dエクスペリエンスビューア、サイト3Dビューアコンポーネント、および3Dファイル配信機能( [!DNL Dynamic Media] AR/VR)が含まれます。 詳しくは、Dynamic Mediaでの3Dアセットの [操作を参照してください](/help/assets/dynamic-media/assets-3d.md)。
 
 **Adobe XDでのAdobe Asset Linkのサポート**
 
