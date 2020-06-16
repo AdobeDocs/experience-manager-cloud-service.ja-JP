@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
 workflow-type: tm+mt
 source-wordcount: '3124'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -22,14 +22,14 @@ AEM を WCM として使用している場合は、Dynamic Media アセットを
 
 ## ページへの Dynamic Media コンポーネントの追加 {#adding-a-dynamic-media-component-to-a-page}
 
-3Dメディア、ダイナミックメディア、インタラクティブメディア、パノラマメディア、スマート切り抜きビデオ、ビデオ360メディアの各コンポーネントをページに追加するのと同じです。 Dynamic Media コンポーネントについては、後の節で説明します。
+ページに3Dメディア、Dynamic Media、インタラクティブメディア、パノラマメディア、スマート切り抜きビデオまたはビデオ360メディアの各コンポーネントを追加する方法は、ページにコンポーネントを追加する方法と同じです。 Dynamic Media コンポーネントについては、後の節で説明します。
 
 **ページへの Dynamic Media コンポーネントの追加**
 
 1. AEM で、Dynamic Media コンポーネントを追加するページを開きます。
 1. 左側のウィンドウで、「**[!UICONTROL コンポーネント]**」アイコンをタップし、「Dynamic Media」でフィルタリングします。
 
-   使用可能なダイナミックメディアコンポーネントのリストがない場合は、使用するダイナミックメディアコンポーネントを有効にする必要がある可能性があります。 See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
+   Dynamic Media コンポーネントのリストがない場合は、使用する Dynamic Media コンポーネントを有効にしなければならない可能性があります。詳しくは、[Dynamic Media コンポーネントの有効化](#enabling-dynamic-media-components)を参照してください。
 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
@@ -49,32 +49,32 @@ AEM を WCM として使用している場合は、Dynamic Media アセットを
 
 1. 完了したら、ダイアログボックスの右上隅にあるチェックマークをタップして、変更を保存します。
 
-### Enabling Dynamic Media components {#enabling-dynamic-media-components}
+### Dynamic Media コンポーネントの有効化 {#enabling-dynamic-media-components}
 
-ページに追加できるダイナミックメディアコンポーネントがない場合は、まず使用するコンポーネントを有効にする必要がある可能性があります。
+ページに追加できる Dynamic Media コンポーネントがない場合は、使用するコンポーネントをまず有効にしなければならない可能性があります。
 
 1. AEM で、Dynamic Media コンポーネントを追加するページを開きます。
-1. ツールバーの左側で、ページ上部近くにあります。ページ情報アイコンをタップし、ドロップダウンリストから「テンプレート **[!UICONTROL の編集]** 」をタップします。
+1. ページ上部付近のツールバーの左側にあるページ情報アイコンをタップした後、ドロップダウンリストから「**[!UICONTROL テンプレートを編集]**」をタップします。
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. ツールバーの右側で、ページの上部に近いドロップダウンリストから「 **[!UICONTROL 構造]**」をタップします。
+1. ページ上部付近のツールバーの右側で、ドロップダウンリストから「**[!UICONTROL 構造]**」をタップします。
 
    ![ポリシー](/help/assets/assets-dm/structure-mode.png)
 
-1. ページ下部近くにある「 **[!UICONTROL レイアウトコンテナ]** 」をタップしてツールバーを開き、ポリシーアイコンをタップします。
-1. レイ **[!UICONTROL アウトコンテナ]** ページの「 **[!UICONTROL プロパティ]** 」見出しの下で、「 **[!UICONTROL 許可されているコンポーネント]** 」タブが選択されていることを確認します。
+1. ページ下部付近の「**[!UICONTROL レイアウトコンテナ]**」をタップしてツールバーを開き、ポリシーアイコンをタップします。
+1. **[!UICONTROL レイアウトコンテナ]**&#x200B;ページの「**[!UICONTROL プロパティ]**」見出しの下で、「**[!UICONTROL 許可されたコンポーネント]**」タブが選択されていることを確認します。
 
-   ![許可されているコンポーネント](/help/assets/assets-dm/allowed-components.png)
+   ![許可されたコンポーネント](/help/assets/assets-dm/allowed-components.png)
 
-1. ダイナミックメディアが表示されるまでスクロ **[!UICONTROL ールし]**&#x200B;ます。
-1. ダイナミックメディア **[!UICONTROL の左にある>アイコンをタップして]** リストを展開し、有効にするダイナミックメディアコンポーネントを選択します。
+1. **[!UICONTROL Dynamic Media]** が表示されるまでスクロールします。
+1. **[!UICONTROL Dynamic Media]** の左側にある「>」アイコンをタップしてリストを展開し、有効にする Dynamic Media コンポーネントを選択します。
 
-   ![ダイナミックメディアコンポーネントリスト](/help/assets/assets-dm/dm-components-select.png)
+   ![Dynamic Media コンポーネントリスト](/help/assets/assets-dm/dm-components-select.png)
 
-1. レイ **[!UICONTROL アウトコンテナ]** ページの右上隅近くにある「完了」（チェックマーク）アイコンをタップします。
+1. **[!UICONTROL レイアウトコンテナ]**&#x200B;ページの右上隅付近にある「完了」（チェックマーク）アイコンをタップします。
 
-1. ツールバーの右側のページの上部付近にあるドロップダウンリストで、「 **[!UICONTROL 初期コンテンツ]**」をタップし、通常どおりにページにダイナミックメディアコンポーネントを [追加します](#adding-a-dynamic-media-component-to-a-page) 。
+1. ページ上部付近のツールバーの右側で、ドロップダウンリストから「**[!UICONTROL 初期コンテンツ]**」をタップした後、通常どおりに[ページに Dynamic Media コンポーネントを追加](#adding-a-dynamic-media-component-to-a-page)します。
 
 ## Dynamic Media コンポーネントのローカライズ {#localizing-dynamic-media-components}
 
