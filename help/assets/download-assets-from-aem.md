@@ -3,42 +3,49 @@ title: AEM からのアセットのダウンロード
 description: AEM からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 98%
+source-wordcount: '771'
+ht-degree: 56%
 
 ---
 
 
-# AEM からのアセットのダウンロード {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。ダウンロードされたアセットは、ZIP ファイルにバンドルされています。書き出しジョブ用に圧縮する ZIP ファイルの最大サイズは 1 GB です。1 つの書き出しジョブに許可されるアセットの合計数は最大 500 個です。
+静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. ダウンロードされたアセットは、ZIP ファイルにバンドルされています。書き出しジョブ用に圧縮する ZIP ファイルの最大サイズは 1 GB です。書き出しジョブあたり、最大で500個のアセットの合計を指定できます。
 
 >[!NOTE]
 >
->アセットをダウンロードするためには、アセットのダウンロードを実行するワークフローを開始する権限が必要です。
-
-アセットをダウンロードするには、アセットを見つけて選択し、ツールバーの&#x200B;**[!UICONTROL ダウンロード]**&#x200B;アイコンをタップまたはクリックします。表示されるダイアログで、ダウンロードオプションを指定します。
+>電子メールの受信者は、電子メールメッセージに含まれる ZIP ダウンロードリンクにアクセスするためには、`dam-users` グループのメンバーである必要があります。アセットをダウンロードするためには、アセットのダウンロードを起動するワークフローを開始する権限が必要です。
 
 画像セット、スピンセット、混在メディアセット、カルーセルセットの各アセットタイプはダウンロードできません。
 
-![AEM Assets からアセットをダウンロードする際に使用できるオプション](assets/asset_download_dialog.png)
+**アセットをダウンロードするには**
 
-*図： AEM Assetsからアセットをダウンロードする場合に使用できるオプションです。*
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
+1. ダウンロードするアセットを含むフォルダーに移動します。
+1. フォルダーを選択するか、フォルダー内の1つ以上のアセットを選択します。
+1. On the toolbar, tap **[!UICONTROL Download]**.
 
-次に、書き出し／ダウンロードのオプションを示します。動的レンディションは Dynamic Media 特有の機能であり、選択したアセットに加えてレンディションもその場で生成できます。このオプションは、Dynamic Media を有効にしている場合のみ利用できます。
+   ![Experience Managerアセットからアセットをダウンロードする場合に使用できるオプション](/help/assets/assets/asset-download.png)
 
-| 書き出しまたはダウンロードのオプション | 説明 |
-|---|---|
-| [!UICONTROL Assets] | レンディションを含めずに、元の形式でアセットをダウンロードする場合に選択します。 |
-| [!UICONTROL レンディション] | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
-| [!UICONTROL 動的レンディション] | 動的レンディションでは、他のレンディションをその場で生成します。また、このオプションを選択する場合は、動的に作成するレンディションを画像プリセットリストから選択します。さらに、サイズ、測定単位、形式、カラースペース、解像度および画像の修飾子（例：画像の反転用）を選択できます。 |
-| [!UICONTROL アセットごとに別のフォルダーを作成] | フォルダー階層を保持したままアセットをダウンロードするには、このオプションを選択します。デフォルトでは、フォルダー階層は無視され、すべてのアセットがローカルシステムの 1 つのフォルダーにダウンロードされます。 |
+   *ダウンロードダイアログボックスのオプション*
 
-アセットにレンディションがある場合は、レンディションオプションを使用できます。アセットにサブアセットが含まれている場合は、サブアセットオプションを使用できます。
+1. ダウンロードダイアログボックスで、目的のダウンロードオプションを選択します。
 
-ダウンロードするフォルダーを選択すると、そのフォルダーの下位のアセットの階層全体がダウンロードされます。ダウンロードする各アセット（親フォルダーの下にネストされている子フォルダーのアセットを含む）を個々のフォルダーに格納するには、「**[!UICONTROL アセットごとに別のフォルダーを作成]**」を選択します。
+   | ダウンロードオプション | 説明 |
+   |---|---|
+   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、ダウンロードした各アセット（アセットの親フォルダーの下にネストされた子フォルダー内のアセットを含む）が、ローカルコンピューター上の1つのフォルダーに含まれます。 このオプションを *選択しない場合* 、デフォルトでは、フォルダー階層は無視され、すべてのアセットがローカルコンピューターの1つのフォルダーにダウンロードされます。 |
+   | **[!UICONTROL 電子メール]** | 受信者に電子メール通知を送信する場合は、このオプションを選択します。 次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 展開時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL アセット]** | レンディションなしで元の形式でアセットをダウンロードする場合は、このオプションを選択します。<br>元のアセットにサブアセットが含まれている場合は、「サブアセット」オプションを使用できます。 |
+   | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
+   | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマートトリミングレンディションがAEM内からダウンロードされます。 スマート切り抜きレンディションを含むzipファイルが作成され、ローカルコンピューターにダウンロードされます。 |
+   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。 When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>また、測定のサイズと単位、形式、カラースペース、解像度、および画像の反転などのオプションの画像修飾子を選択できます。 このオプションは、有効にしている場合にのみ使用でき [!DNL Dynamic Media] ます。 |
+
+1. ダイアログボックスで、「 **[!UICONTROL ダウンロード]**」をタップします。
+
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
