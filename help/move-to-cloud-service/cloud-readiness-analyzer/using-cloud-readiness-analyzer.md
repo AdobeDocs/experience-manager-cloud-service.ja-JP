@@ -2,7 +2,7 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -167,7 +167,7 @@ HTTPインターフェイスを使用してレポートの生成を開始する�
 * `400 Bad Request`: 要求でエラーが発生したことを示します。 詳細については、Problem Details形式のメッセージ( [RFC 7807を参照](https://tools.ietf.org/html/rfc7807))を参照してください。
 * `401 Unauthorized`: 要求は承認されませんでした。
 * `500 Internal Server Error`: 内部サーバーエラーが発生したことを示します。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
-* `503 Service Unavailable`: サーバーが別の応答でビジー状態であり、この要求をタイムリーに処理できないことを示します。 これは、同期要求が行われた場合にのみ発生します。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
+* `503 Service Unavailable`: サーバーが別の応答でビジー状態であり、この要求をタイムリーに処理できないことを示します。 これは、同期要求が行われた場合にのみ発生する可能性があります。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
 
 ## キャッシュのライフタイム調整 {#cache-adjustment}
 
