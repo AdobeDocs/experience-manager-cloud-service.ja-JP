@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 36faf20506a6a3e1a428d1da462f530aaf84d6a6
+source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -158,7 +158,7 @@ HTTPインターフェイスを使用してレポートの生成を開始する�
 
 リクエストが行われた後は、クライアントはアクティブなままでレポートを生成する必要はありません。 HTTP GETリクエストを使用して1つのクライアントでレポートの生成を開始し、レポートが生成されたら、別のクライアントのキャッシュまたはAEM内のユーザーインターフェイスのCSVツールから表示できます。
 
-### 応答(#http-responses)
+### 回答 {#http-responses}
 
 次の応答値を指定できます。
 
