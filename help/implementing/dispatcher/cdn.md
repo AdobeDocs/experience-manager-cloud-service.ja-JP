@@ -1,16 +1,16 @@
 ---
-title: クラウドサービスとしてのAEMでのCDN
-description: クラウドサービスとしてのAEMでのCDN
+title: Cloud ServiceとしてのAEMでのCDN
+description: Cloud ServiceとしてのAEMでのCDN
 translation-type: tm+mt
-source-git-commit: a9bf697f65febcd9ba99539d8baa46f7a8d165e3
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 42%
+ht-degree: 40%
 
 ---
 
 
-# クラウドサービスとしてのAEMでのCDN {#cdn}
+# Cloud ServiceとしてのAEMでのCDN {#cdn}
 
 AEM as Cloud Service は、組み込みの CDN で出荷されます。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。
 
@@ -24,7 +24,7 @@ AEMが管理するCDNは、お客様のパフォーマンスとセキュリテ�
    **注意：** AEM as a Cloud Service は、ドメイン検証（DV）証明書をサポートしていません。
 1. カスタマーサポートに通知：
    * どのカスタムドメインを特定の環境に関連付けるか（プログラム ID と環境 ID で定義）。作成者側のカスタムドメインはサポートされていません。
-   * トラフィックを特定の環境に制限するために IP ホワイトリストが必要な場合。
+   * トラフィックを特定の環境に制限するためにIP許可リストが必要な場合。
 1. DNSレコードに必要な変更のタイミングについて、カスタマーサポートと連携します。 手順は、頂点レコードが必要かどうかに応じて異なります。
    * apexレコードが不要な場合は、FQDNが指すようにCNAME DNSレコードを設定する必要があり `cdn.adobeaemcloud.com`ます。
    * apexレコードが必要な場合は、次のIPを指すAレコードを作成します。 151.101.3.10、151.101.67.10、151.101.131.10、151.101.195.10。必要なFQDNがDNSと一致する場合、顧客にはエイペックスレコードが必要です。ゾーン。 これは、Unix digコマンドを使用して、出力のSOA値がドメインと一致するかどうかを確認することでテストできます。 例えば、APEXレコードではな `dig anything.dev.adobeaemcloud.com` くSOA(権限の開始、つまりゾーン)が戻され、SOAが戻され `dev.adobeaemcloud.com``dig dev.adobeaemcloud.com``dev.adobeaemcloud.com` て頂点レコードになります。
@@ -40,7 +40,7 @@ AEMが管理するCDNは、お客様のパフォーマンスとセキュリテ�
 
 * お客様は、既存のCDNを交換する必要がある場合に必要です。
 * お客様が管理する必要があります。
-* AEMをクラウドサービスとして利用できるようにCDNを設定する必要があります。以下の設定手順を参照してください。
+* AEMをCloud Serviceとして使用する場合は、CDNを設定する必要があります（以下の設定手順を参照）。
 * 関連する問題が発生した場合は、エンジニアリングCDNエキスパートが電話をかける必要があります。
 * お客様は、実稼働環境に移行する前に、ロードテストを実行し、成功させる必要があります。
 
