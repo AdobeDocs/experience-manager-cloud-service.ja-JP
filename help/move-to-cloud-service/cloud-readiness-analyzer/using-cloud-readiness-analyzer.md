@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: f65580a4608167a869669b03cec5d8ab730a848a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,13 @@ Cloud Readiness Analyzer(CRA)の実行中の重要な考慮事項を理解する
 Cloud Readiness Analyzerは、Software Distribution Portalからzipファイルとしてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
->Software Distribution Portal *保留中のCloud Readiness AnalyzerからCloud Readiness Analyzerをダウンロードします*。
+>Software Distribution PortalからCloud Readiness Analyzerをダウンロードします。
 
-## Cloud Readiness Analyzerの実行 {#running-tool}
+## Cloud Readiness Analyzerレポートの表示 {#viewing-report}
 
-Cloud Readiness Analyzerの実行方法を学ぶには、次のセクションに従います。
+### Adobe Experience Manager6.3以降 {#aem-later-versions}
+
+Cloud Readiness Analyzerレポートの表示方法を学ぶには、次のセクションに従います。
 
 1. 「Adobe Experience Manager」を選択し、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
 
@@ -51,41 +53,11 @@ Cloud Readiness Analyzerの実行方法を学ぶには、次のセクション�
    >[!NOTE]
    >完全なレポートを表示するには、ページを下にスクロールする必要があります。
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-2.png)
-
-## Cloud Readiness Analyzerレポートの解釈 {#cra-report}
-
-Cloud Readiness AnalyzerをAEMインスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
-
-レポートの形式は次のとおりです。
-
-* *レポートの概要*: レポートがいつ生成されたかなど、レポート自体に関する情報です。
-* *システム概要*: CRAが実行されたAEMシステムに関する情報です。
-* *検索カテゴリ*: 各セクションが同じカテゴリの1つ以上の結果に対応する複数のセクション。 各セクションには、次の内容が含まれます。 カテゴリ名、サブタイプ、検索数と重要度、概要、カテゴリドキュメントへのリンク、個々の検索情報。
-
-行動の大まかな優先度を示すために、各発見に重要度レベルを割り当てる。
-
-次の表に、重要度レベルを示します。
-
-| Importance | 説明 |
-|--- |--- |
-| INFO | この検索結果は、情報を提供する目的で提供されます。 |
-| 助言 | この結果、アップグレードに関する問題が発生する可能性があります。 さらに調査を行うことをお勧めします。 |
-| メジャー | この結果、アップグレードに関する問題に対処する必要がある可能性があります。 |
-| 重要 | この結果、アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
-
-### Adobe Experience Manager6.3以降 {#aem-older-version}
-
-AEM 6.3以降では、Cloud Readiness Analyzerを実行する主な方法は次のとおりです。
-
-1. Adobe Experience Managerインスタンスを選択し、ツール/ **操作** / **Cloud Readiness Analyzerに移動します**。
-
-   >[!NOTE]
-   >CRAは、ツールが開かれ次第、レポートを生成するバックグラウンドプロセスを開始します。 レポートの準備が整うまで、レポートの生成が進行中であることを示すメッセージが表示されます。 ブラウザーのタブを閉じてから、後でレポートの完了時に表示に戻ることができます。
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
 1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 次の図に示すように、 **** CSVをクリックして、CRAの完全なレポートをコンマ区切り値(CSV)形式でダウンロードします。
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-3.png)
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
    >[!NOTE]
    >CRAに対して「レポートの **更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
@@ -98,6 +70,32 @@ Adobe Experience Manager6.1では、このツールは機能せず、HTTPイン�
 
 >[!NOTE]
 >すべてのバージョンで、付属のパターンディテクターは独立して実行できます。
+
+## Cloud Readiness Analyzerレポートの解釈 {#cra-report}
+
+Cloud Readiness AnalyzerツールをAEMインスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
+
+レポートの形式は次のとおりです。
+
+* **レポートの概要**: レポート自体に関する情報と、次のような情報です。
+   * *レポート時間*: レポートの内容が生成され、最初に使用可能になった時。
+   * *有効期限*: レポートコンテンツのキャッシュが期限切れになる時期。
+   * *生成期間*: レポートコンテンツ生成プロセスに費やされた時間。
+   * *検索数*: レポートに含まれる結果の合計数。
+* **システム概要**: CRAが実行されたAEMシステムに関する情報です。
+* **検索カテゴリ**: 各セクションが同じカテゴリの1つ以上の結果に対応する複数のセクション。 各セクションには、次の内容が含まれます。 カテゴリ名、サブタイプ、検索数と重要度、概要、カテゴリドキュメントへのリンク、個々の検索情報。
+
+行動の大まかな優先度を示すために、各発見に重要度レベルを割り当てる。
+
+次の表に、重要度レベルを示します。
+
+| Importance | 説明 |
+|--- |--- |
+| INFO | この検索結果は、情報を提供する目的で提供されます。 |
+| 助言 | この結果、アップグレードに関する問題が発生する可能性があります。 さらに調査を行うことをお勧めします。 |
+| メジャー | この結果、アップグレードに関する問題に対処する必要がある可能性があります。 |
+| 重要 | この結果、アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
+
 
 ## Cloud Readiness AnalyzerのCSVレポートの解釈 {#cra-csv-report}
 
