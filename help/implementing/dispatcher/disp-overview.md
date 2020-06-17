@@ -2,10 +2,10 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 100%
+source-wordcount: '3913'
+ht-degree: 96%
 
 ---
 
@@ -197,7 +197,7 @@ Uncompressing DispatcherSDKv<version>  100%
 
 次のように呼び出します：`validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-ツールは Apache と Dispatcher の設定を検証します。`conf.d/enabled_vhosts/*.vhost` のパターンに合うすべてのファイルをスキャンし、ホワイトリストに登録されたディレクティブのみ使用されているかどうかを確認します。Apache の設定ファイルで許可されているディレクティブは、バリデーターの whitelist コマンドを実行すると表示できます。
+ツールは Apache と Dispatcher の設定を検証します。It scans all files with pattern `conf.d/enabled_vhosts/*.vhost` and checks that only allowlisted directives are used. Apache設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行することで一覧表示できます。
 
 ```
 $ validator whitelist
@@ -236,9 +236,9 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で製品に組み込まれる可能性があります。Dispatcher ツールドキュメントで説明しているように、SDK で「validator whitelist」を実行すると、特定の Dispatcher バージョンで使用できるディレクティブが表示されます。
+お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で製品に組み込まれる可能性があります。前述のように、SDKで「バリデーターホワイトリスト」を実行すると、特定のDispatcherバージョンで使用できるディレクティブのリストを確認できます。
 
-ホワイトリストには、お客様の設定で許可される Apache ディレクティブのリストが含まれています。ディレクティブがホワイトリストに登録されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。（ツール実行時の）コマンドラインにホワイトリストが設定されていない場合、デフォルトのホワイトリストが使用されます。これは、クラウド環境にデプロイする前に Cloud Manager が検証に使用するものです。
+許可リストには、お客様の設定で許可されるApacheディレクティブのリストが含まれています。 ディレクティブが許可されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。 コマンドラインに許可リストがない場合（この方法で呼び出す必要があります）、ツールは、Cloud ManagerがCloud環境にデプロイする前に検証に使用するデフォルトの許可リストを使用します。
 
 また、`conf.dispatcher.d/enabled_farms/*.farm` のパターンに合うすべてのファイルをさらにスキャンし、次の内容を確認します。
 
@@ -256,7 +256,7 @@ Cloud manager validator 1.0.4
  conf.dispatcher.d/enabled_farms/999_ams_publish_farm.any: filter allows access to CRXDE
 ```
 
-検証ツールは、ホワイトリストに登録されていない Apache ディレクティブの使用禁止を報告するのみということに注意してください。Apache 設定の構文や意味の問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
+検証ツールは、許可されていないApacheディレクティブの使用禁止のみを報告します。 Apache 設定の構文や意味の問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
 
 検証エラーが報告されなければ、設定のデプロイメント準備は完了です。
 
@@ -520,7 +520,7 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
 
-### ホワイトリストを削除する
+### 許可リストの削除
 
 `conf.d/whitelists` フォルダーを削除し、そのサブフォルダー内のファイルを参照する仮想ホストファイル内の `Include` ステートメントを削除します。
 
@@ -540,7 +540,7 @@ $ validator httpd .
 
 インクルードファイルが見つからないことに関するエラーが表示される場合は、それらのファイルの名前を正しく変更したかどうかを確認します。
 
-ホワイトリストに登録されていない Apache ディレクティブが表示された場合は、それらを削除します。
+許可されていないApacheディレクティブが表示された場合は、削除します。
 
 ### 非公開ファームをすべて削除する
 
