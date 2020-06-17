@@ -3,7 +3,7 @@ title: AEM Assets での Adobe Stock デジタルアセットの使用
 description: Adobe Experience Manager で Adobe Stock アセットを検索、取得、ライセンス、管理します。ライセンスされたアセットをその他の Adobe Experience Manager アセットとして扱います。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 97%
@@ -32,6 +32,10 @@ AEM と Adobe Stock の間でやり取りができるようにするには、AEM
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。証明書を作成したら、公開鍵をダウンロードします。「**[!UICONTROL 次へ]**」をクリックします。
 1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL API キー]**」、「**[!UICONTROL クライアントの秘密鍵]**」および「**[!UICONTROL ペイロード]**」の各フィールドに適切な値を指定します。See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
 1. ダウンロードし追加た公開鍵をAdobe Developer Consoleサービスアカウントにダウンロードします。
+
+<!--
+TBD: Update this instance when AIO updates their documentation publish URL.
+-->
 
 ### AEM での Adobe Stock 設定の作成 {#create-adobe-stock-configuration-in-aem}
 
