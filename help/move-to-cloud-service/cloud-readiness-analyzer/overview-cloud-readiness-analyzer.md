@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの概要
 description: Cloud Readiness Analyzerの概要
 translation-type: tm+mt
-source-git-commit: 2ba653988962ca7b9abf9dba3093d8c13720321a
+source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Cloud Readiness Analyzerレポートには、次のカテゴリが含まれま�
 >[!NOTE]
 >Cloud Readiness Analyzerレポートは、手動で収集して評価する必要のあるトランジションを提供することで、AEMへのCloud Serviceに必要な時間とコストの見積もりプロセスを高速化します。
 
-Cloud Readiness Analyzerレポートは、AEMインスタンスからダウンロードすることもできます。 保留中の詳細については、「CSV形式での結果の **表示** 」を参照してください。
+Cloud Readiness Analyzerレポートは、AEMインスタンスからダウンロードすることもできます。 詳細については、 [「Cloud Readiness Analyzerレポートの](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) 表示」を参照してください。
