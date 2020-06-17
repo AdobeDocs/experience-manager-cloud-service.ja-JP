@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: 作成中
 translation-type: tm+mt
-source-git-commit: 8e8863d390132ff8df943548b04e9d7c636c4248
+source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
 workflow-type: tm+mt
 source-wordcount: '1588'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 -->
 
-クラスター内のマスターを識別する必要がある場合は、Apache Sling Discovery API を使用して検出できます。
+クラスター内のプライマリを識別する必要がある場合は、Apache Sling Discovery APIを使用して検出できます。
 
 ## メモリ内の状態 {#state-in-memory}
 
@@ -158,7 +158,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-正規プログラムの場合、Developer Consoleへのアクセスは管理コンソールの「Cloud Manager - Developer Role」で定義されますが、Sandboxプログラムの場合、Developer Consoleは、AEMへのアクセスをクラウドサービスとして提供する製品プロファイルを持つユーザー全員が利用できます。 ユーザー権限の設定について詳しくは、 [Cloud Managerドキュメントを参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+通常のプログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
 
 
 
