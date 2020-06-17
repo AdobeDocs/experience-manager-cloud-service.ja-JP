@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
+source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 1%
 
 ## Cloud Readiness Analyzerを使用する際の重要な考慮事項 {#imp-considerations}
 
-Cloud Readiness Analyzer(CRA)の実行中の重要な考慮事項を理解するには、次の節に従ってください。
+次の節に従って、Cloud Readiness Analyzer(CRA)を実行する際の重要な考慮事項を理解してください。
 
 * CRAレポートは、Adobe Experience Manager(AEM) [パターンディテクターの出力を使用して作成されます](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRAが使用するパターンディテクターのバージョンは、CRAインストールパッケージに含まれています。
 
-* CRAは、 **管理者ユーザーまたは** 管理者のユーザーのみが実行できます ****。
+* CRAは、 **管理者ユーザーまたは** Administrators **** グループ内のユーザーのみが実行できます。
 
 * CRAは、バージョン6.1以降を含むAEMインスタンスでサポートされます。
 
 * CRAはどの環境でも実行できますが、 *Stage* 環境で実行することをお勧めします。
 
    >[!NOTE]
-   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、 *実稼働* 環境にできる限り近い ** 作成者環境に対してCRAを実行することをお勧めします。 または、実稼働版の *作成者* 環境のクローンで実行することもできます。
+   >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、 *実稼動*** 環境にできる限り近い作成者環境に対してCRAを実行することをお勧めします。 または、実稼働版の *作成者* 環境のクローンで実行することもできます。
 
 * CRAレポートのコンテンツの生成には、数分から数時間の間に相当な時間がかかる場合があります。 必要な時間は、AEMリポジトリコンテンツのサイズと特性、AEMバージョン、その他の要因に大きく左右されます。
 
@@ -55,7 +55,7 @@ Cloud Readiness Analyzerレポートの表示方法を学ぶには、次のセ�
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
 
-1. CRAレポートが生成され、表示されたら、コンマ区切り値(CSV)でレポートをダウンロードするオプションがあります。 次の図に示すように、 **** CSVをクリックして、CRAの完全なレポートをコンマ区切り値(CSV)形式でダウンロードします。
+1. CRAレポートが生成され、表示されたら、下の図に示すように、「 **CSV**」をクリックして、レポートをコンマ区切り値(CSV)形式でダウンロードするオプションがあります。
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
 
@@ -77,7 +77,7 @@ Cloud Readiness AnalyzerツールをAEMインスタンスで実行すると、�
 
 レポートの形式は次のとおりです。
 
-* **レポートの概要**: レポート自体に関する情報で、次の情報が含まれます。
+* **レポートの概要**: 次の情報を含む、レポート自体に関する情報です。
    * **レポート時間**: レポートの内容が生成され、最初に使用可能になった時。
    * **有効期限**: レポートコンテンツのキャッシュが期限切れになる時期。
    * **生成期間**: レポートコンテンツ生成プロセスに費やされた時間。
@@ -176,7 +176,7 @@ CRAキャッシュのデフォルトの有効期間は24時間です。 レポ�
 キャッシュのライフタイム値は、次のリポジトリノードの `maxCacheAge` プロパティとして保存されます。
 `/apps/readiness-analyzer/content/CloudReadinessReport/jcr:content`
 
-このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、CRXDE Liteを使用してキャッシュの有効期間を調整できます。
+このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、CRX/DE Liteを使用してキャッシュの有効期間を調整できます。
 
 
 
