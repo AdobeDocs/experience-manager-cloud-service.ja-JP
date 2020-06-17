@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: a53ab47fe954bd48dc34840968a9a47cdcc34556
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Cloud Readiness Analyzerは、Software Distribution Portalからzipファイル�
 
 ## Cloud Readiness Analyzerレポートの表示 {#viewing-report}
 
-### Adobe Experience Manager6.3以降 {#aem-later-versions}
+### Adobe Experience Manager6.3.0以降 {#aem-later-versions}
 
 Cloud Readiness Analyzerレポートの表示方法を学ぶには、次のセクションに従います。
 
@@ -64,7 +64,7 @@ Cloud Readiness Analyzerレポートの表示方法を学ぶには、次のセ�
 
 ### Adobe Experience Manager6.2および6.1 {#aem-specific-versions}
 
-Adobe Experience Manager6.2では、Cloud Readiness AnalyzerのCSVレポートを生成およびダウンロードするリンクに制限されています。
+Cloud Readiness Analyzerツールは、Adobe Experience Manager6.2ではCSVレポートを生成およびダウンロードするリンクに限定されています。
 
 Adobe Experience Manager6.1では、このツールは機能せず、HTTPインターフェイスのみを使用できます。
 
@@ -77,11 +77,11 @@ Cloud Readiness AnalyzerツールをAEMインスタンスで実行すると、�
 
 レポートの形式は次のとおりです。
 
-* **レポートの概要**: レポート自体に関する情報と、次のような情報です。
-   * *レポート時間*: レポートの内容が生成され、最初に使用可能になった時。
-   * *有効期限*: レポートコンテンツのキャッシュが期限切れになる時期。
-   * *生成期間*: レポートコンテンツ生成プロセスに費やされた時間。
-   * *検索数*: レポートに含まれる結果の合計数。
+* **レポートの概要**: レポート自体に関する情報で、次の情報が含まれます。
+   * **レポート時間**: レポートの内容が生成され、最初に使用可能になった時。
+   * **有効期限**: レポートコンテンツのキャッシュが期限切れになる時期。
+   * **生成期間**: レポートコンテンツ生成プロセスに費やされた時間。
+   * **検索数**: レポートに含まれる結果の合計数。
 * **システム概要**: CRAが実行されたAEMシステムに関する情報です。
 * **検索カテゴリ**: 各セクションが同じカテゴリの1つ以上の結果に対応する複数のセクション。 各セクションには、次の内容が含まれます。 カテゴリ名、サブタイプ、検索数と重要度、概要、カテゴリドキュメントへのリンク、個々の検索情報。
 
