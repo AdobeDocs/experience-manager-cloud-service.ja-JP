@@ -2,9 +2,9 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: dd32e9357bfbd8a9b23db1167cecc4e713cccd99
+source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
 workflow-type: tm+mt
-source-wordcount: '3913'
+source-wordcount: '3914'
 ht-degree: 96%
 
 ---
@@ -236,7 +236,7 @@ Whitelisted directives:
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
-お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で製品に組み込まれる可能性があります。前述のように、SDKで「バリデーターホワイトリスト」を実行すると、特定のDispatcherバージョンで使用できるディレクティブのリストを確認できます。
+お客様が任意のモジュールを追加することはできませんが、今後、上述の表にある以外のモジュールが追加で製品に組み込まれる可能性があります。前述のように、SDKでバリデーターの許可リストコマンドを実行すると、特定のDispatcherバージョンで使用できるディレクティブのリストを確認できます。
 
 許可リストには、お客様の設定で許可されるApacheディレクティブのリストが含まれています。 ディレクティブが許可されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。 コマンドラインに許可リストがない場合（この方法で呼び出す必要があります）、ツールは、Cloud ManagerがCloud環境にデプロイする前に検証に使用するデフォルトの許可リストを使用します。
 
