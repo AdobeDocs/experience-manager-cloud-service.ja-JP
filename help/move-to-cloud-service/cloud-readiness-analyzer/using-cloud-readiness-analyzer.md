@@ -2,7 +2,7 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 7e169ccc09aab9e1646ad324f5b80c8af18cd4af
+source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 1%
@@ -164,7 +164,7 @@ HTTPインターフェイスを使用してレポートの生成を開始する�
 
 * `200 OK`: 応答には、キャッシュのフレッシュネス有効期間内に生成されたパターンディテクターからの結果が含まれます。
 * `202 Accepted, processing cache`: キャッシュが古く、更新が進行中であることを示す非同期応答用に提供されます。
-* `400 Bad Request`: 要求でエラーが発生したことを示します。 詳細については、Problem Details形式のメッセージ( [RFC 7807を参照](https://tools.ietf.org/html/rfc7807))を参照してください。
+* `400 Bad Request`: 要求でエラーが発生したことを示します。 詳細については、Problem Details形式のメッセージ( [RFC 7807](https://tools.ietf.org/html/rfc7807)を参照)。
 * `401 Unauthorized`: 要求は承認されませんでした。
 * `500 Internal Server Error`: 内部サーバーエラーが発生したことを示します。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
 * `503 Service Unavailable`: サーバーが別の応答でビジー状態であり、この要求をタイムリーに処理できないことを示します。 これは、同期要求が行われた場合にのみ発生する可能性があります。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
