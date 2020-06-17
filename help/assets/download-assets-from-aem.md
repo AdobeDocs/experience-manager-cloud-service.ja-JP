@@ -3,7 +3,7 @@ title: AEM からのアセットのダウンロード
 description: AEM からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 748255ef2b3bae9ecca900cdfe7d3be594fb2552
+source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 56%
@@ -29,7 +29,7 @@ ht-degree: 56%
 1. フォルダーを選択するか、フォルダー内の1つ以上のアセットを選択します。
 1. On the toolbar, tap **[!UICONTROL Download]**.
 
-   ![Experience Managerアセットからアセットをダウンロードする場合に使用できるオプション](/help/assets/assets/asset-download.png)
+   ![Experience Managerアセットからアセットをダウンロードする場合に使用できるオプション](/help/assets/assets/asset-download1.png)
 
    *ダウンロードダイアログボックスのオプション*
 
