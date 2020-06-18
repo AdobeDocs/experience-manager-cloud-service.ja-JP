@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 translation-type: tm+mt
-source-git-commit: bb5cedab9bb3f7413d323e21bb6112364a38b2bb
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 75%
+source-wordcount: '639'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 75%
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
-* 事前にリポジトリに対して圧縮とデータストアの整合性チェックを実行して、潜在的な問題を特定すると共に、リポジトリに存在するガベージ（ゴミ）を減らすことをお勧めします。
+* リビジョンのクリーンアップ [と](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) データストアの整合性チェックを [](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)**** ソースリポジトリで実行して、潜在的な問題を特定し、リポジトリのサイズを小さくすることをお勧めします。
 
 * AEM Cloud Author Content Network(CDN)の設定でIPのホワイトリストが設定されている場合は、ソース環境とAEM Cloud環境が相互に通信できるように、ソース環境IPも許可リストに追加する必要があります。
 
