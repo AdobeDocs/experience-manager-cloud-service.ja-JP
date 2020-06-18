@@ -2,9 +2,9 @@
 title: 作成者層へのアクセス
 description: 作成者層へのアクセス
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: e772687c4034a364912aa426a133134571246db9
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '69'
 ht-degree: 0%
 
 ---
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # 作成者層へのアクセス {#accessing-the-author-tier}
 
-クラウドサービス環境としてAEMの作成者層にアクセスする操作は、標準の、カスタマイズ可能でないURLを使用して行います。
+Cloud Service環境としてAEMの作成者層にアクセスするには、標準のカスタマイズ可能なURLと、カスタマイズ不可能なURLを使用します。
 
 現在、URL形式は次のとおりです。
 
-`https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+* `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
 最終的に、この形式は、次の標準のAdobe Experience Cloud URL形式に置き換えられます。
 
-`https://experience.adobe.com/#/@[TenantId]/`
+* `https://experience.adobe.com/#/@[TenantId]/`
 
 したがって、AEM作成者層のカスタムドメイン名の設定はサポートされません。
