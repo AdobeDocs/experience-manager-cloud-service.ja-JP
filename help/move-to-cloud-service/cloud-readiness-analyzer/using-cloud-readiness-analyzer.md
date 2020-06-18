@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 1d5023e49288cfa922f8fff8264b857ac66ec97a
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 Cloud Readiness Analyzerは、Software Distribution Portalからzipファイルとしてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
->Software Distribution PortalからCloud Readiness Analyzerをダウンロードします。
+>Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) PortalからCloud Readiness Analyzerをダウンロードします。
 
 ## Cloud Readiness Analyzerレポートの表示 {#viewing-report}
 
