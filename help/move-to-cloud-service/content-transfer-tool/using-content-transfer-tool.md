@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 86%
@@ -36,6 +36,8 @@ ht-degree: 86%
 >Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) PortalからContent Transfer Toolをダウンロードします。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
+
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。
 
