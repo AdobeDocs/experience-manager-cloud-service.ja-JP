@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 translation-type: tm+mt
-source-git-commit: 10e12a8b15e6ea51e8b022deefaefed52780d48a
+source-git-commit: 6fee9a7abd17615c607f01b869a9c1eaed5793a3
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 100%
+source-wordcount: '3523'
+ht-degree: 99%
 
 ---
 
@@ -150,7 +150,7 @@ Cloud Manager がアプリケーションをデプロイすると、コンテン
 
 repoinit ステートメントを作成するには、次の手順に従います。
 
-1. PID の OSGi 設定 `org.apache.sling.jcr.repoinit.RepositoryInitializer` をプロジェクトの設定フォルダーに追加します。
+1. Add OSGi configuration for factory PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project. 設定には、 **org.apache.sling.jcr.repoint.RepositoryInitializer～initstructureなど、わかりやすい名前を付けます**。
 1. 設定のスクリプトプロパティに repoinit ステートメントを追加します。構文とオプションについては、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/repository-initialization.html)を参照してください。なお、子フォルダーの前に親フォルダーを明示的に作成する必要があります。例えば、`/content` を明示的に作成してから `/content/myfolder` を作成し、その後に `/content/myfolder/mysubfolder` を作成します。ACL を下位レベルの構造に設定する場合は、ACL を上位レベルに設定し、`rep:glob` 制限を適用することをお勧めします。例えば、`(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))` のように指定します。
 1. 実行時にローカル開発環境で検証します。
 
