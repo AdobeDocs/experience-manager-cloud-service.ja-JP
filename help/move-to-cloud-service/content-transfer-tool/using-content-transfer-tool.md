@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 0ab2631dc5ae67a50522b3a6b29d1cb4c674d193
+source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 86%
@@ -33,7 +33,7 @@ ht-degree: 86%
 コンテンツ転送ツールは、Software Distribution Portalからzipファイル(Content Transfer Tool v1.0.0)としてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
->Software Distribution PortalからContent Transfer Toolをダウンロードし [ます](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)。
+>Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) PortalからContent Transfer Toolをダウンロードします。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
