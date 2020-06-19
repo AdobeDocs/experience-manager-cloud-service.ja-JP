@@ -3,7 +3,7 @@ title: Adobe Experience Manager Assets as a Cloud Service の設定と管理
 description: AEM Assets as a Cloud Service に必要な設定および管理タスクについて説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
+source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 100%
@@ -34,7 +34,6 @@ Some idea is at https://helpx.adobe.com/experience-manager/6-5/assets/using/asse
 <!-- 
 ## Work with search indices {#search-index-for-assets-cloud-service}
 
-* Link to this topic for information about Experience Manager's common index https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service-prerelease.en/blob/master/help/sites/operations/indexing.html
 * Does Assets as a Cloud Service use a separate index for DAM? If yes, document it here.
 * How does indexing work for search-focused operations like searching via AAL, DA, etc.
 * What about the separate index required for Visual Search functionality? See https://helpx.adobe.com/experience-manager/6-5/assets/using/search-assets.html#configvisualsearch.
