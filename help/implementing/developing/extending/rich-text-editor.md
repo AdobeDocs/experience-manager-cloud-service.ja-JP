@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Managerでコンテンツをクラウドサービスとして作成するようにリッチテキストエディターを設定します。
-description: Adobe Experience Managerでコンテンツをクラウドサービスとして作成するようにリッチテキストエディターを設定します。
+title: Cloud ServiceとしてAdobe Experience Manager内のコンテンツを作成するようにリッチテキストエディタを設定します。
+description: Cloud ServiceとしてAdobe Experience Manager内のコンテンツを作成するようにリッチテキストエディタを設定します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6e0ba39fadcea5929f593bcb5077708656179f48
+source-git-commit: ba7209cbb78a112b85e4d28cdc30d40ae9083c66
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2045'
 ht-degree: 47%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 47%
 
 # リッチテキストエディターの設定 {#configure-the-rich-text-editor}
 
-リッチテキストエディター(RTE)は、テキストコンテンツを編集するための様々な機能を作成者に提供します。 アイコン、選択ボックス、ツールバーおよびメニューを使用して、テキストを WYSIWYG で編集できます。管理者は、オーサリングコンポーネントで使用可能な機能を有効、無効、拡張するようにRTEを設定します。 RTE 機能をオーサリングに使用する方法については、[リッチテキストエディターをオーサリングに使用](rich-text-editor.md)を参照してください。作成者がWebコンテンツのオーサリングにRTEを [使用する方法を確認します](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) 。
+リッチテキストエディター(RTE)は、テキストコンテンツを編集するための様々な機能を作成者に提供します。 アイコン、選択ボックス、ツールバーおよびメニューを使用して、テキストを WYSIWYG で編集できます。管理者は、オーサリングコンポーネントで使用可能な機能を有効、無効、拡張するようにRTEを設定します。 作成者がWebコンテンツのオーサリングにRTEを [使用する方法を確認します](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md) 。
 
 RTEの概念と設定に必要な手順を以下に示します。
 
@@ -31,11 +31,11 @@ RTEインターフェイスは、環境をオーサリングするための [レ
 
 *図： 使用可能なすべてのオプションが有効なリッチテキストエディタのツールバー*
 
-ツールバーには、WYSIWYGオーサリング環境で使用できるオプションが用意されています。 Experience Manager管理者は、インターフェイスのツールバーで使用できるオプションを設定できます。 包括的な一連の編集オプションは、デフォルトでExperience Managerで使用できます。 開発者はExperience Managerをカスタマイズして、さらに編集オプションを追加できます。
+ツールバーには、WYSIWYGオーサリング環境で使用できるオプションが用意されています。 Experience Manager管理者は、インターフェイスのツールバーで使用できるオプションを設定できます。 Experience Managerでは、包括的な編集オプションのセットをデフォルトで使用できます。 開発者はExperience Managerをカスタマイズして、さらに編集オプションを追加できます。
 
 ## 各種編集モード {#editingmodes}
 
-作成者は、Experience Managerで様々なコンポーネントモードを使用して、テキストコンテンツを作成および編集できます。 コンテンツを作成およびフォーマットするためのツールバーオプションと、各種編集モードにおける RTE 対応コンポーネントのユーザーエクスペリエンスは、RTE 設定によって異なります。
+作成者は、様々なコンポーネントモードを使用して、Experience Manager内のテキストコンテンツを作成および編集できます。 コンテンツを作成およびフォーマットするためのツールバーオプションと、各種編集モードにおける RTE 対応コンポーネントのユーザーエクスペリエンスは、RTE 設定によって異なります。
 
 | 編集モード | 編集領域 | 有効化が推奨される機能 |
 |--- |--- |--- |
@@ -58,7 +58,7 @@ RTEインターフェイスは、環境をオーサリングするための [レ
 
 ### Full-screen editing {#full-screen-editing}
 
-Experience Managerコンポーネントをフルスクリーン表示で開くと、ページコンテンツを非表示にし、利用可能な画面を占有します。 最も多くの編集オプションをオファーするので、インライン編集の詳細バージョンはフルスクリーン編集にすることを検討してください。 It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Experience Managerコンポーネントは、ページコンテンツを非表示にして利用可能な画面を占めるフルスクリーン表示で開くことができます。 最も多くの編集オプションをオファーするので、インライン編集の詳細バージョンはフルスクリーン編集にすることを検討してください。 It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
 ダイアログのフルスクリーンモードでは、詳細なRTEツールバーと共に、ダイアログで使用できるオプションとコンポーネントも使用できます。 このモードは、他のコンポーネントと共に RTE を含むダイアログにのみ適用されます。
 
@@ -170,7 +170,7 @@ The [Core Components text component](https://docs.adobe.com/content/help/ja-JP/e
 
 ## RTE ツールバーの設定 {#dialogfullscreen}
 
-Experience Managerでは、リッチテキストエディターのインターフェイスを、編集モードごとに異なる方法で設定できます。 デフォルト設定を以下に示します。これらの設定を必要に応じて上書きできます。作成者に提供するツールバー機能のみをカスタマイズします。 すべてのツールバー設定を指定する必要はありません。
+Experience Managerを使用すると、リッチテキストエディターのインターフェイスを、編集モードごとに異なる方法で設定できます。 デフォルト設定を以下に示します。これらの設定を必要に応じて上書きできます。作成者に提供するツールバー機能のみをカスタマイズします。 すべてのツールバー設定を指定する必要はありません。
 
 `dialogFullScreen` 用のツールバーを設定するには、次のサンプル設定を使用します。
 
@@ -268,7 +268,7 @@ Below is a sample snippet to map the command Bold to the Coral icon named `textI
 
 ## 既知の制限事項 {#known-limitations}
 
-Experience Manager RTE機能には次の制限があります。
+Experience ManagerRTE機能には次の制限があります。
 
 * RTE機能は、Experience Managerコンポーネントのダイアログでのみサポートされます。 RTEは、ウィザードまたはFoundation-formsではサポートされていません。
 
