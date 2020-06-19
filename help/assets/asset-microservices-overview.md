@@ -3,7 +3,7 @@ title: アセットマイクロサービスでクラウド内のデジタルア�
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 100%
@@ -12,11 +12,6 @@ ht-degree: 100%
 
 
 # アセットマイクロサービスを使用したアセットの取り込みと処理の概要 {#asset-microservices-overview}
-
-<!--
-First half of content at https://git.corp.adobe.com/aklimets/project-nui/blob/master/docs/Project-Nui-Asset-Compute-Service.md is useful for this article.
-TBD: Post-GA we will provide detailed information at \help\assets\asset-microservices-configure-and-use.md. However, for GA, all information is added, in short, in this article.
--->
 
 Adobe Experience Manager as a Cloud Service は、Adobe Experience Manager のアプリケーションと機能を利用するためのクラウドネイティブな方法です。この新しいアーキテクチャの主要な要素の 1 つは、アセットの取り込みと処理で、これはアセットマイクロサービスを利用しておこなわれます。アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。クラウドネイティブなアセットマイクロサービスの主な利点は次のとおりです。
 
