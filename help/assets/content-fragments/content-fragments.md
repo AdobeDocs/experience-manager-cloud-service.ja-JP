@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: aefa7d6493ade255e06eaaa7676f8e018f311994
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 100%
+source-wordcount: '1804'
+ht-degree: 97%
 
 ---
 
@@ -13,6 +13,10 @@ ht-degree: 100%
 # コンテンツフラグメントの操作{#working-with-content-fragments}
 
 [Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
+
+コンテンツフラグメントには、構造化されたコンテンツが含まれます。
+
+* They are based on a [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md), which predefines a structure for the resulting fragment.
 
 コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
 
@@ -59,7 +63,7 @@ AEM コンテンツサービスにより、あらゆるクライアントで使�
 * ネイティブモバイルアプリケーション
 * AEM の外部の他のチャネルおよびタッチポイント
 
-配信は JSON 形式でおこなわれます。
+配信は、JSONエクスポーターを使用してJSON形式で行われます。
 
 AEM コンテンツフラグメントを使用して構造化コンテンツを記述し、管理できます。構造化コンテンツは、テキスト、数値データ、ブール値、日付と時刻など、様々なコンテンツタイプを含めることができるモデルを使用して定義します。
 
@@ -77,12 +81,6 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >
 >詳細については、](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
->[!CAUTION]
->
->コンテンツフラグメントは、クラシック UI では利用できません。
->
->コンテンツフラグメントコンポーネントは、クラシック UI のサイドキックに表示されますが、機能を使用することはできません。
-
 >[!NOTE]
 >
 >AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「コンテンツフラグメントの翻訳プロジェクトの作成」を参照してください。
@@ -92,24 +90,6 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >
 >AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
 -->
-
-## コンテンツフラグメントのタイプ {#types-of-content-fragment}
-
-コンテンツフラグメントは次のどちらかになります。
-
-* 単純なフラグメント
-
-   * これらには事前定義された構造はありません。
-
-   * テキストと画像のみが含まれています。
-
-   * これらは&#x200B;**単純なフラグメント**&#x200B;テンプレートに基づいています。
-
-* 構造化コンテンツが含まれるフラグメント
-
-   * 作成されるフラグメントの構造を事前定義する[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)に基づいています。
-
-   * JSON エクスポーターを使用したコンテンツサービスの実現にも使用できます。
 
 ## コンテンツタイプ {#content-type}
 
@@ -170,18 +150,14 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * **フラグメントの要素**
 
    * 要素は、コンテンツを含むデータフィールドと相関関係にあります。
-   * 構造化コンテンツを含むフラグメントの場合、コンテンツモデルを使用してコンテンツフラグメントを作成できます。モデルで指定された要素（フィールド）は、フラグメントの構造を定義します。このような要素（フィールド）には様々なデータタイプがあります。
-   * 単純なフラグメントの場合：
-
-      * コンテンツは、1 つ以上の複数行テキストフィールドまたは要素に含まれます。
-      * 要素は、**単純なフラグメント**&#x200B;テンプレートで定義されます。
+   * コンテンツモデルを使用して、コンテンツフラグメントを作成します。 モデルで指定された要素（フィールド）は、フラグメントの構造を定義します。このような要素（フィールド）には様々なデータタイプがあります。
 
 * **フラグメントの段落**
 
    * 次のようなテキストブロックです。
 
       * 縦方向のスペース（キャリッジリターン）で区切られます。
-      * 複数行テキスト要素内にあります。単純なフラグメントまたは構造化フラグメント内にあります。
+      * 複数行テキスト要素内
    * [リッチテキスト](/help/assets/content-fragments/content-fragments-variations.md#rich-text)モードと[ Markdown ](/help/assets/content-fragments/content-fragments-variations.md#markdown)モードでは、段落をヘッダーとして書式設定することができます。その場合、ヘッダーとその後の段落が 1 つのユニットになります。
 
    * ページ作成中にコンテンツを制御できます。
@@ -274,11 +250,6 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * [構造化フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
    * コンテンツモデル定義にはタイトルと 1 つのデータ要素が必要です。その他すべてはオプションです。モデルによって、フラグメントおよびデフォルトコンテンツ（該当する場合）の最小範囲が定義されます。作成者は、フラグメントコンテンツのオーサリング時に、定義された構造を変更することはできません。
-
-* **フラグメントのテンプレート**
-
-   * **単純なフラグメント**&#x200B;を作成するには、[単純なフラグメント](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)テンプレートが必要です。
-   * 単純なフラグメントの基本プロパティ（タイトル、テキスト要素の数、タグ定義）を定義します。
 
 * **コンテンツフラグメントコンポーネント**
 
