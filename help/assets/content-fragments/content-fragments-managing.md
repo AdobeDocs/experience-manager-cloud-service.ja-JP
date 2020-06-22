@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
 translation-type: tm+mt
-source-git-commit: f5dd39bd7379d56c4f7b5e180d35892ba1dd4da1
+source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
 workflow-type: tm+mt
-source-wordcount: '1470'
-ht-degree: 100%
+source-wordcount: '1454'
+ht-degree: 98%
 
 ---
 
@@ -22,25 +22,19 @@ ht-degree: 100%
 
 ### コンテンツモデルの作成 {#creating-a-content-model}
 
-
 構造化コンテンツを含むコンテンツフラグメントを作成する前に、[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)を有効にして作成できます。
 
 ### コンテンツフラグメントの作成 {#creating-a-content-fragment}
 
-コンテンツフラグメントの作成方法は基本的に単純なフラグメントと構造化フラグメントで同じです。
+コンテンツフラグメントの作成方法は次のとおりです。
 
 1. フラグメントを作成する **Assets** フォルダーに移動します。
 2. 「**作成**」を選択し、「**コンテンツフラグメント**」を選択して、ウィザードを開きます。
 3. ウィザードの最初の手順では、新しいフラグメントの基盤を指定することを求められます。
 
-   * 次のことが考えられます。
+   * [モデル](/help/assets/content-fragments/content-fragments-models.md) — 構造化コンテンツを必要とするフラグメントの作成に使用します。 例えば、 **アドベンチャー** ・モデル
 
-      * **単純なフラグメント**&#x200B;テンプレート
-
-      * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **空港**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
-
-         * 使用可能なすべてのモデルが表示されます。
-
+      * 使用可能なすべてのモデルが表示されます。
    選択した後、「**次へ**」を使用して続けます。
 
    ![フラグメントの基盤](assets/cfm-managing-01.png)
@@ -128,7 +122,6 @@ ht-degree: 100%
 
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
-
    フラグメントエディターが開きます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
@@ -150,7 +143,6 @@ ht-degree: 100%
    * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [関連コンテンツ](#associating-content-with-your-fragment)
    * [メタデータ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-
    ![モード](assets/cfm-managing-04.png)
 
 4. 変更を加えた後、必要に応じて「**保存**」または「**キャンセル**」をクリックします。
