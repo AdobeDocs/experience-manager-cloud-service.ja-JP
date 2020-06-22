@@ -2,7 +2,7 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: bf7bb91dd488f39181a08adc592971d6314817de
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 98%
@@ -44,7 +44,7 @@ ht-degree: 98%
 + アセットの設定、管理、拡張 {#admin}
    + [API とリファレンス資料](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
-   + [処理プロファイル](/help/assets/dynamic-media/processing-profiles.md)
+   + [処理プロファイル](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [スマートタグの設定](smart-tags-configuration.md)
    + [多言語アセットとアセット翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
