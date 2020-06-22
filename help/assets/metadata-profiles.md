@@ -3,7 +3,7 @@ title: メタデータプロファイル
 description: アセットのメタデータプロファイルについて理解します。また、メタデータプロファイルを作成し、フォルダーのアセットに適用する方法も学習します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 100%
@@ -14,12 +14,6 @@ ht-degree: 100%
 # メタデータプロファイル {#metadata-profiles}
 
 メタデータプロファイルを使用すると、フォルダー内のアセットにデフォルトのメタデータを適用できます。メタデータプロファイルを作成し、フォルダーに適用します。後からフォルダーにアップロードしたすべてのアセットは、メタデータプロファイルで設定したデフォルトのメタデータを継承します。
-
-<!-- See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
-
-See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/best-practices-for-file-management.md).
-
--->
 
 ## メタデータプロファイルの追加 {#adding-a-metadata-profile}
 
