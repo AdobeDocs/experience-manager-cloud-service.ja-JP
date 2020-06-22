@@ -2,10 +2,10 @@
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
 translation-type: tm+mt
-source-git-commit: d4a377e963f088f72b34f01103a3877cd699ccb2
+source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
 workflow-type: tm+mt
-source-wordcount: '1892'
-ht-degree: 99%
+source-wordcount: '1891'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,6 @@ ht-degree: 99%
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
-
 >
 >
 現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
@@ -148,7 +147,6 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
@@ -348,11 +346,10 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
    このエラーステータスと生成されたエラーメッセージ（等幅テキスト）が返される一般的なシナリオの一覧を以下に示します。
 
    * 親フォルダーが存在しない（`POST` でコンテンツフラグメントを作成する場合）
-   * コンテンツフラグメントモデルが指定されていない（cq:model が見つからない）、読み取れない（パスが無効か権限の問題が原因）、または有効なフラグメントモデルやテンプレートがありません。
+   * コンテンツフラグメントモデルが指定されていないか（cq:modelが見つかりません）、読み取れません（パスが無効か、権限の問題が原因です）、または有効なフラグメントモデルがありません：
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
-      * `Cannot adapt the resource '/foo/bar/qux' to a content fragment template`
    * コンテンツフラグメントを作成できなかった（アクセス権限の問題が発生している可能性がある）。
 
       * `Could not create content fragment`
@@ -366,7 +363,6 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
       * `Could not update content element`
       * `Could not update fragment data of element`
-
    通常、詳細なエラーメッセージは次のように返されます。
 
    ```xml
