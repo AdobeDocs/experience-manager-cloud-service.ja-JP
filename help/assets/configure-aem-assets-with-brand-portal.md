@@ -3,10 +3,10 @@ title: AEM Assets Cloud Service と Brand Portal の統合の設定
 description: AEM Assets Cloud Service と Brand Portal の統合の設定について説明します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: f54f5bbd5de76c3507d86b92255f1d4713e717fc
+source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
 workflow-type: tm+mt
 source-wordcount: '1762'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -317,7 +317,7 @@ AEM Assets クラウドインスタンスが Brand Portal で正常に設定さ�
 
 例えば、AEM Assets から Brand Portal にアセットを発行し、設定を検証したとします。
 
-1. 「[設定のテスト](#test-configuration)」節で示したす手順（1 ～ 4）に従い、配布エージェントページに移動します。
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
 
 1. 「**[!UICONTROL ログ]**」をクリックして、配布ログを表示します。処理ログとエラーログは、ここで確認できます。
 
