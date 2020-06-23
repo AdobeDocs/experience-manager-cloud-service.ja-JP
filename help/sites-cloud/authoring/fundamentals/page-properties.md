@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 100%
+source-wordcount: '1538'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,10 @@ ht-degree: 100%
 
    * 使用されるサイトでページがページのナビゲーションに表示されるかどうかを示します。
 
+* **HTML ID**
+
+   * コンポーネントに適用するHTML ID。
+
 * **ページタイトル**
 
    * ページで使用されるタイトルです。通常はタイトルコンポーネントで使用されます。空にすると、「**タイトル**」が使用されます。
@@ -70,7 +74,6 @@ ht-degree: 100%
 
    * このページのバニティ URL を入力でき、短くより表現力のある URL にすることができます。
    * 例えば、Web サイト `http://example.com` のパス `/v1.0/startpage` で特定されるページに対して、バニティ URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティ URL は `http://example.com/welcome` となります。
-
    >[!CAUTION]
    >
    >バニティ URL は次のような特性があります。
@@ -98,6 +101,10 @@ ht-degree: 100%
 
    * このページが自動的にリダイレクトするページを示します。
 
+* **デザイン**
+
+   * 使用されるサイトでページがページのナビゲーションに表示されるかどうかを示します。
+
 * **エイリアス**
 
    * このページで使用されるエイリアスを指定します。
@@ -113,9 +120,11 @@ ht-degree: 100%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **&lt;*path*> から継承**
+<!--
+* **Inherited from &lt;*path*&gt;**
 
-   * ページが継承されるかどうか、およびどこから継承するかを示します。
+  * Indicates whether the page is inherited. and where from.
+-->
 
 * **クラウド設定**
 
@@ -173,10 +182,9 @@ ht-degree: 100%
 
 ### Cloud Services {#cloud-services}
 
-* **Cloud Services**
+* **クラウドサービスの設定**
 
    * Cloud Services のプロパティを定義します。
-
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -185,7 +193,6 @@ ht-degree: 100%
 * **ContextHub 設定**
 
    * 「ContextHub 設定」と「セグメントのパス」を選択します。
-
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -202,7 +209,6 @@ ht-degree: 100%
    * 権限を追加
    * 閉じられたユーザーグループを編集
    * 有効な権限を表示
-
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -214,7 +220,6 @@ ht-degree: 100%
 * **ブループリント**
 
    * マルチサイト管理でのブループリントページのプロパティを定義します。
-
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * 変更がライブコピーに適用される条件を制御します。
