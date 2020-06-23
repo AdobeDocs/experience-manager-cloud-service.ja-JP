@@ -2,10 +2,10 @@
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 98%
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
 + アセットの設定、管理、拡張 {#admin}
    + [API とリファレンス資料](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
-   + [処理プロファイル](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [画像プロファイルとビデオプロファイルの操作について](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [スマートタグの設定](smart-tags-configuration.md)
    + [多言語アセットとアセット翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
@@ -82,8 +82,8 @@ ht-degree: 98%
    + [Dynamic Media ビューアプリセットの適用](dynamic-media/viewer-presets.md)
    + [Dynamic Media 画像プリセットの管理](dynamic-media/managing-image-presets.md)
    + [Dynamic Media 画像プリセットの適用](dynamic-media/image-presets.md)
-   + [Dynamic Media のビデオプロファイル](dynamic-media/video-profiles.md)
-   + [Dynamic Media の画像プロファイル](dynamic-media/image-profiles.md)
+   + [イメージプロファイル](dynamic-media/image-profiles.md)
+   + [ビデオプロファイル](dynamic-media/video-profiles.md)
    + [スマートイメージング](dynamic-media/imaging-faq.md)
    + [Dynamic Media アセットの配信](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media でのホットリンク保護の有効化](dynamic-media/hotlink-protection.md)
