@@ -2,10 +2,10 @@
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 translation-type: tm+mt
-source-git-commit: c93dfd1ca50933416de1eee7d6d4f820c30afa49
+source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 98%
 
 ---
 
@@ -72,8 +72,8 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
    >
    >その他の編集機能について詳しくは、次を参照してください。
    >
-   >    * [レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)
-   >    * [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)
+   >* [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 要素またはバリエーションの選択 {#selecting-the-element-or-variation}
@@ -88,21 +88,19 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
    * **単一のテキスト要素**
    * **複数の要素**
 * **エレメント**
-   * デフォルトの「**メイン**」は常に利用できます。
-   * フラグメントが適切なテンプレートで作成されている場合に選択できます。
+   * 使用するモデルに応じて選択を使用できます。
 
    >[!NOTE]
    >
-   >使用できるエレメントは、使用するテンプレートによって異なります。
+   >使用できる要素は、使用するモデルによって異なります。
 
 * **バリエーション**
    * デフォルトの「**マスター**」は常に利用できます。
    * フラグメントにバリエーションが作成されている場合に選択できます。
-* **段落**：含める段落の範囲を次の中から指定します。
-   * **すべて**
-   * **範囲**：例えば、`1`、`3-5`、`9-*` のように指定します。
-      * **見出しを独自の段落として処理**
-* **見出しを独自の段落として処理**
+
+* **ID**
+
+   * **コンポーネントに適用する HTML ID 属性。**
 
 ### フラグメントエディターへのクイック接続 {#quick-connection-to-fragment-editor}
 
