@@ -2,10 +2,10 @@
 title: クイックビューを使用したカスタムポップアップの作成
 description: eコマースエクスペリエンスではデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示されます。このようなポップアップにカスタムコンテンツが表示されるように設定できます。
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 97%
+source-wordcount: '1023'
+ht-degree: 88%
 
 ---
 
@@ -129,9 +129,9 @@ eコマースエクスペリエンスではデフォルトのクイックビュ�
 
    `quickViewActivate` メソッドについて詳しくは、以下を参照してください。
 
-   * インタラクティブ画像ビューア：[https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_interactive_image_event_callbacks.html)
-   * インタラクティブビデオビューア：[https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_event_callbacks.html)
-   * インタラクティブビデオビューアでのインタラクティブデータサポート：[https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_aem_int_video_int_data_support.html)
+   * インタラクティブ画像ビューア — [イベントコールバック](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * インタラクティブビデオビューア — [イベントコールバック](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * インタラクティブビデオビューアでのインタラクティブデータのサポート — イン [タラクティブデータのサポート](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. 以下の操作を実行してください。
 
@@ -207,8 +207,8 @@ eコマースエクスペリエンスではデフォルトのクイックビュ�
 
    `init()` メソッドについて詳しくは、以下を参照してください。
 
-   * インタラクティブ画像ビューア：[https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_init.html)
-   * インタラクティブビデオビューア：[https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_init.html)
+   * インタラクティブ画像ビューア — [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * インタラクティブビデオビューア — [init](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. 前の手順で言及したように、ビューアにポップアップをアタッチするには、以下のコードを使用します。
 
