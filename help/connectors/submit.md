@@ -2,10 +2,10 @@
 title: AEM コネクタの登録
 description: AEM コネクタの登録
 translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ AEM コネクタの登録
 
 AEM コネクタの登録に役立つ情報を以下に示します。コネクタの[実装](implement.md)と[管理](maintain.md)に関する記事と共に参照してください。
 
-AEM コネクタは [Adobe Exchange](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace.html) に一覧表示されています。
+AEM コネクタは [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud) に一覧表示されています。
 
 これまでの AEM ソリューションでは、パッケージマネージャーを使用して様々な AEM インスタンスにコネクタをインストールしていました。しかし、AEM as a Cloud Service では、Cloud Manager の CI/CD プロセスでコネクタがデプロイされます。コネクタをデプロイするには、Maven プロジェクトの pom.xml でコネクタを参照する必要があります。
 
