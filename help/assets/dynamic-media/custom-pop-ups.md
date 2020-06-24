@@ -2,10 +2,10 @@
 title: クイックビューを使用したカスタムポップアップの作成
 description: eコマースエクスペリエンスではデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示されます。このようなポップアップにカスタムコンテンツが表示されるように設定できます。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
+source-wordcount: '1121'
+ht-degree: 97%
 
 ---
 
@@ -99,8 +99,8 @@ eコマースエクスペリエンスではデフォルトのクイックビュ�
 
    `setHandlers()` メソッドについて詳しくは、以下を参照してください。
 
-   * インタラクティブ画像ビューア：[https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/r_html5_aem_int_image_viewer_javascriptapiref_sethandlers.html)
-   * インタラクティブビデオビューア：[https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html](https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/r_html5_aem_int_video_javascriptapiref_sethandlers.html)
+   * インタラクティブ画像ビューア： [船尾](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * インタラクティブビデオビューア： [船尾](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
 1. 次に、`quickViewActivate` ハンドラーを設定する必要があります。
 
