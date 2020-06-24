@@ -2,10 +2,10 @@
 title: Dynamic Media イメージプロファイル
 description: Dynamic Mediaアンシャープマスク、スマート切り抜き、スマートスウォッチ、またはその両方の設定を含む画像プロファイルを作成し、プロファイルを画像アセットのフォルダーに適用します。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '2739'
-ht-degree: 74%
+source-wordcount: '2732'
+ht-degree: 73%
 
 ---
 
@@ -93,7 +93,7 @@ ht-degree: 74%
  </tbody>
 </table>
 
-シャープニングについては、[画像のシャープニング](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)を参照してください。
+Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
 ## Dynamic Media イメージプロファイルの作成 {#creating-image-profiles}
 
