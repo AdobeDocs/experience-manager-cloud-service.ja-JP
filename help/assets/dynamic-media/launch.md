@@ -2,10 +2,10 @@
 title: Dynamic Media ビューアと Adobe Analytics および Adobe Launch の統合
 description: Dynamic Media ビューア 5.13 のリリースと共に、Adobe Launch の Dynamic Media ビューア拡張機能を使用すると、Dynamic Media、Adobe Analytics、Adobe Launch のユーザーは、Adobe Launch 設定で Dynamic Media ビューア固有のイベントとデータを使用できます。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
-source-wordcount: '6642'
-ht-degree: 100%
+source-wordcount: '6647'
+ht-degree: 99%
 
 ---
 
@@ -190,7 +190,7 @@ Dynamic Media ビューア拡張機能で提供されるデータ要素タイプ
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-各ビューアタイプでサポートされるイベントのリストについては、[Dynamic Media ビューアリファレンスガイド](https://marketing.adobe.com/resources/help/ja_JP/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html)を参照し、特定のビューアセクションに移動して、サブセクションの Adobe Analytics トラッキングのサポートをクリックします。現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
+各ビューアタイプでサポートされるイベントのリストについては、[Dynamic Media ビューアリファレンスガイド](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html)を参照し、特定のビューアセクションに移動して、サブセクションの Adobe Analytics トラッキングのサポートをクリックします。現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
 
 次に、Dynamic Media ビューアの&#x200B;**&#x200B;データ要素のライフサイクルを考えてみましょう。このようなデータ要素の値は、対応する Dynamic Media ビューアイベントがページで発生した後に設定されます。例えば、データ要素が **[!UICONTROL LOAD]** イベントとその「asset」引数を指す場合、このようなデータ要素の値は、ビューアが初めて LOAD イベントを実行した後で有効なデータを受け取ります。データ要素が **[!UICONTROL ZOOM]** イベントとその「scale」引数を指す場合、このようなデータ要素の値は、ビューアが初めて **[!UICONTROL ZOOM]** イベントを送信するまで空のままです。
 
@@ -740,98 +740,99 @@ AEM 設定は、次の 2 つの主な手順で構成されます。
 
    * **[!UICONTROL タイトル]** - 説明的なアカウントのタイトルを入力します。
    * **[!UICONTROL 認証サーバー]** - 以前に開いた統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブをクリックします。次に示すように、サーバー名（パスを除く）をコピーします。
-**[!UICONTROL アカウント]**ページに戻り、その名前を各フィールドに貼り付けます。
-例：`https://ims-na1.adobelogin.com/`（サーバー名の例は説明用です）。   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
-]**`https://ims-na1.adobelogin.com/`
 
-   _統合の詳細ページ - 「JWT」タブ_   **[!UICONTROL API キー]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブをクリックし、「**[!UICONTROL API キー（クライアント ID）]**」フィールドの右にある「**[!UICONTROL コピー]**」をクリックします。_
+（サーバー名の例は、説明の目的でのみ使用します）。   **[!UICONTROL アカウント]**ページに戻り、その名前を各フィールドに貼り付けます。
+例：`https://ims-na1.adobelogin.com/`（サーバー名の例は説明用です）。
 
-1. **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。************
+   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
+   _統合の詳細ページ - 「JWT」タブ_
+
+1. **[!UICONTROL API キー]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブをクリックし、「**[!UICONTROL API キー（クライアント ID）]**」フィールドの右にある「**[!UICONTROL コピー]**」をクリックします。
+
+   **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
-]**
+   _統合の詳細ページ_
 
-   _統合の詳細ページ_   **[!UICONTROL クライアントシークレット]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブで、「**[!UICONTROL クライアントシークレットを取得]**」をクリックします。「**[!UICONTROL クライアントシークレット]**」フィールドの右側の「**[!UICONTROL コピー]**」をクリックします。_
+1. **[!UICONTROL クライアントシークレット]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブで、「**[!UICONTROL クライアントシークレットを取得]**」をクリックします。「**[!UICONTROL クライアントシークレット]**」フィールドの右側の「**[!UICONTROL コピー]**」をクリックします。
 
-1. **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。****************
+   **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。
 
-   **[!UICONTROL ペイロード]** - 統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブの「JWT ペイロード」フィールドで、JSON オブジェクトコード全体をコピーします。
+1. **[!UICONTROL ペイロード]** - 統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブの「JWT ペイロード」フィールドで、JSON オブジェクトコード全体をコピーします。
 
-1. **[!UICONTROL アカウント]**&#x200B;ページに戻り、コードを各フィールドに貼り付けます。****
+   **[!UICONTROL アカウント]**&#x200B;ページに戻り、コードを各フィールドに貼り付けます。
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
-]**
+   _統合の詳細ページ - 「JWT」タブ_
 
-   _統合の詳細ページ - 「JWT」タブ_   _すべてのフィールドに値が入力されたアカウントページは、次のようになります。_
+   すべてのフィールドに値が入力されたアカウントページは、次のようになります。
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-   ****&#x200B;アカウントページの右上隅にある「**[!UICONTROL 作成]**」をクリックします。](assets/2019-07-25_22-08-30.png)
+1. ****&#x200B;アカウントページの右上隅にある「**[!UICONTROL 作成]**」をクリックします。
 
-1. AEM IMS が設定され、**[!UICONTROL Adobe IMS 設定]**&#x200B;に新しい IMSAccount が表示されます。****
+   AEM IMS が設定され、**[!UICONTROL Adobe IMS 設定]**&#x200B;に新しい IMSAccount が表示されます。
 
-   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)]**
+   ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-   統合のための Adobe Launch クラウドの設定 {#configuring-adobe-launch-cloud-for-the-integration}](assets/image2019-7-15_14-17-54.png)
+## 統合のための Adobe Launch クラウドの設定 {#configuring-adobe-launch-cloud-for-the-integration}
 
-## AEM オーサーの左上隅近くにあるツールアイコン（ハンマー）をクリックし、**[!UICONTROL クラウドサービス／Adobe Launch 設定]**&#x200B;をクリックします。
+1. AEM オーサーの左上隅近くにあるツールアイコン（ハンマー）をクリックし、**[!UICONTROL クラウドサービス／Adobe Launch 設定]**&#x200B;をクリックします。
 
-1. ![2019/07/26_12-10-38](assets/2019-07-26_12-10-38.png)]**
+   ![2019/07/26_12-10-38](assets/2019-07-26_12-10-38.png)
 
-   Adobe Launch 設定&#x200B;**[!UICONTROL ページの左パネルで]**、Adobe Launch 設定を適用する AEM のサイトを選択します。](assets/2019-07-26_12-10-38.png)
+1. Adobe Launch 設定&#x200B;**[!UICONTROL ページの左パネルで]**、Adobe Launch 設定を適用する AEM のサイトを選択します。
 
-1. 以下のスクリーンショットでは、**[!UICONTROL We.Retail]** サイトが選択されています。
+   以下のスクリーンショットでは、**[!UICONTROL We.Retail]** サイトが選択されています。
 
-   ![2019/07/26_12-20-06](assets/2019-07-26_12-20-06.png)]**
+   ![2019/07/26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-   ページの左上隅近くにある「**[!UICONTROL 作成]**」をクリックします。](assets/2019-07-26_12-20-06.png)
-
+1. ページの左上隅近くにある「**[!UICONTROL 作成]**」をクリックします。
 1. **[!UICONTROL Adobe Launch 設定の作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL 一般]**&#x200B;ページ（1/3 ページ）で、次のフィールドに入力します。
-1. **[!UICONTROL タイトル]** - 説明的な設定のタイトルを入力します。例えば、次のように入力します。`We.Retail Launch cloud configuration`]**
+
+   * **[!UICONTROL タイトル]** - 説明的な設定のタイトルを入力します。例えば、次のように入力します。`We.Retail Launch cloud configuration`
 
    * **[!UICONTROL 関連付けられた Adobe IMS 設定]** - [AEM IMS の設定で前に作成した IMS 設定を選択します](#configuring-aem-ims)。
 
-   * **[!UICONTROL 会社]** - 「**[!UICONTROL 会社]**」ドロップダウンリストから、Experience Cloud の会社を選択します。リストが自動的に入力されます。](#configuring-aem-ims)
+   * **[!UICONTROL 会社]** - 「**[!UICONTROL 会社]**」ドロップダウンリストから、Experience Cloud の会社を選択します。リストが自動的に入力されます。
 
-   * **[!UICONTROL プロパティ]** - 「プロパティ」ドロップダウンリストから、以前に作成した Adobe Launch プロパティを選択します。リストが自動的に入力されます。****
+   * **[!UICONTROL プロパティ]** - 「プロパティ」ドロップダウンリストから、以前に作成した Adobe Launch プロパティを選択します。リストが自動的に入力されます。
+   すべてのフィールドに入力すると、**[!UICONTROL 一般]**&#x200B;ページは次のようになります。
 
-   * すべてのフィールドに入力すると、**[!UICONTROL 一般]**&#x200B;ページは次のようになります。
-   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)]**
+   ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-   左上隅近くにある「**[!UICONTROL 次へ]**」をクリックします。](assets/image2019-7-15_14-34-23.png)
-
+1. 左上隅近くにある「**[!UICONTROL 次へ]**」をクリックします。
 1. **[!UICONTROL Adobe Launch 設定の作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL ステージング]**&#x200B;ページ（2/3 ページ）で、次のフィールドに入力します。
-1. 「**[!UICONTROL ライブラリ URI]**」フィールドで、Adobe Launch ライブラリのステージングバージョンの場所を確認します。AEM はこのフィールドに自動的に入力します。****
 
-   説明用として、この手順では、Adobe CDN にデプロイされた Adobe Launch ライブラリを使用します。****
+   「**[!UICONTROL ライブラリ URI]**」フィールドで、Adobe Launch ライブラリのステージングバージョンの場所を確認します。AEM はこのフィールドに自動的に入力します。
 
-   [!NOTE]
+   説明用として、この手順では、Adobe CDN にデプロイされた Adobe Launch ライブラリを使用します。
 
-   >[!NOTE]自動入力されたライブラリ URI（Uniform Resource Identifier）の形式に誤りがないか確認します。必要に応じて、URI がプロトコル相対 URI を表すように修正します。つまり、ダブルスラッシュから始まります。
+   >[!NOTE]
+   >
+   >自動入力されたライブラリ URI（Uniform Resource Identifier）の形式に誤りがないか確認します。必要に応じて、URI がプロトコル相対 URI を表すように修正します。つまり、ダブルスラッシュから始まります。
+   >
    >
    >例えば、次のように入力します。`//assets.adobetm.com/launch-xxxx`
-   >
-   >
-   >**[!UICONTROL ステージング]**&#x200B;ページは次のようになります。「**[!UICONTROL アーカイブ]**」オプションと「**[!UICONTROL ライブラリを非同期にロード]**」オプションは設定されていません。******
 
-   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)]****************
+   **[!UICONTROL ステージング]**&#x200B;ページは次のようになります。「**[!UICONTROL アーカイブ]**」オプションと「**[!UICONTROL ライブラリを非同期にロード]**」オプションは設定されていません。******
 
-   右上隅近くにある「**[!UICONTROL 次へ]**」をクリックします。](assets/image2019-7-15_15-21-8.png)
+   ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
+1. 右上隅近くにある「**[!UICONTROL 次へ]**」をクリックします。
 1. 必要に応じて、**[!UICONTROL Adobe Launch 設定の作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL 実稼動]**&#x200B;ページ（3/3 ページ）で、前の&#x200B;**[!UICONTROL ステージング]**&#x200B;ページでおこなったのと同様に、自動入力された実稼動 URI を修正します。
-1. 右上隅近くにある「**[!UICONTROL 作成]**」をクリックします。********
-1. これで、新しい Adobe Launch クラウド設定が作成され、Web サイトの横に表示されます。****
+1. 右上隅近くにある「**[!UICONTROL 作成]**」をクリックします。
 
-   新しい Adobe Launch クラウド設定を選択します（設定タイトルを選択すると、設定タイトルの左側にチェックマークが表示されます）。ツールバーの「**[!UICONTROL 公開]**」をクリックします。
+   これで、新しい Adobe Launch クラウド設定が作成され、Web サイトの横に表示されます。
 
-1. ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)]**
+1. 新しい Adobe Launch クラウド設定を選択します（設定タイトルを選択すると、設定タイトルの左側にチェックマークが表示されます）。ツールバーの「**[!UICONTROL 公開]**」をクリックします。
 
-   ![現在、AEM オーサーは、Dynamic Media ビューアと Adobe Launch の統合をサポートしていません。](assets/image2019-7-15_15-47-6.png)
+   ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
+
+現在、AEM オーサーは、Dynamic Media ビューアと Adobe Launch の統合をサポートしていません。
 
 ただし、AEM パブリッシュノードではサポートされています。AEM パブリッシュは、Adobe Launch クラウド設定のデフォルト設定を使用して、Adobe Launch の実稼動環境を使用します。そのため、テスト中は毎回、開発環境から実稼動環境に Adobe Launch ライブラリの更新をプッシュする必要があります。
 
 上記の AEM パブリッシュ用の Adobe Launch クラウド設定で、Adobe Launch ライブラリの開発 URL またはステージング URL を指定することで、この制限を回避できます。これにより、AEM パブリッシュノードは Adobe Launch ライブラリの開発版またはステージング版を使用するようになります。
 
-Adobe Launch クラウドの設定について詳しくは、[Adobe I/O を使用した AEM と Adobe Launch の統合[#$tu398]を参照してください。
-
-See [Integrate AEM with Adobe Launch Via Adobe I/O-ERR:REF-NOT-FOUND- for more information about setting up Adobe Launch Cloud Configuration.
+Adobe Launch クラウドの設定について詳しくは、[Adobe I/O を使用した AEM と Adobe Launch の統合](https://helpx.adobe.com/jp/experience-manager/using/aem_launch_adobeio_integration.html)を参照してください。
