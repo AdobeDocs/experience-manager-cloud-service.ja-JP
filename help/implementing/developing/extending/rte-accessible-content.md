@@ -1,74 +1,74 @@
 ---
 title: アクセス可能なWebページとサイトを作成するようにRTEを設定します。
-description: Adobe Experience Managerでリッチテキストエディターを設定して、アクセシブルなサイトを作成する方法を説明します。
+description: でアクセシブルなサイトを作成するためのリッチテキストエディタの設定について説明します [!DNL Adobe Experience Manager]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78ec0ed2a1473797a07905baa346a83376779419
+source-git-commit: 96c59974a868779df6979818bea0d942060cf5bc
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 8%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
 
 # Configure RTE to create accessible sites {#configure-rte-accessible-sites}
 
-Adobe Experience Managerは、画像の代替テキストなどの標準的なアクセシビリティ機能や、コンテンツの作成時にアクセスできる追加機能をサポートしています。 コンテンツ作成者は、リッチテキストエディター(RTE)を使用するコンポーネントでこれらの機能を使用します。 これには、見出しや段落要素から代替テキストや構造情報を追加するなどが含まれます。
+[!DNL Adobe Experience Manager] は、画像の代替テキストなどの標準的なアクセシビリティ機能や、コンテンツの作成時にアクセスできる追加機能をサポートしています。 コンテンツ作成者は、リッチテキストエディター(RTE)を使用するコンポーネントでこれらの機能を使用します。 この機能には、代替テキスト、見出しや段落要素からの構造情報の追加などが含まれます。
 
 RTEの一般的な設定の詳細については、RTEの [設定と、特定の機能に対するRTEプラグインの](rich-text-editor.md) 設定を参照してください [](configure-rich-text-editor-plug-ins.md)。
 
-RTEプラグイン設定を使用して、アクセシビリティ関連機能を設定およびカスタマイズします。 例えば、基本要素を超えてサポートされ、デフォルトで提供される見出しレベルの数を拡張するなど、ブロックレベルのセマンティック要素を追加する場合に使用し `paraformat` ま `H1``H2``H3` す。 リッチテキストの編集は、オーサリングユーザーインターフェイスの多くのコンポーネントを使用して可能です。 一般的に使用されるコンポーネントは、テキスト、画像、ダウンロードなどです。
+RTEプラグイン設定を使用して、アクセシビリティ関連機能を設定およびカスタマイズします。 例えば、追加のブロックレベルセマンティック要素 `paraformat` を追加する場合に使用します。例えば、基本要素を超えてサポートされ、デフォルトで提供される見出しレベルの数を拡張するなど `H1`の要素 `H2``H3` が含まれます。 リッチテキストの編集は、オーサリングユーザーインターフェイスの多くのコンポーネントを使用して可能です。 一般的に使用されるコンポーネントは、テキスト、画像、ダウンロードなどです。
 
 RTE機能は、多くのコンポーネントで使用できます。 主要なコンポーネントは `Text` コンポーネントです。
 
-Experience Managerの `Text` コンポーネントの場合、次のスクリーンショットにリッチテキストエディターが表示され、以下を含む様々なプラグインが有効になってい `paraformat`ます。
+のコンポ `Text` ーネントの [!DNL Experience Manager]場合、次のスクリーンショットにリッチテキストエディターを示し、以下を含む様々なプラグインが有効になっています `paraformat`。
 
 ![フルスクリーンモードのRTEテキストコンポーネント](assets/rte-toolbar-full-screen-mode.png)
 
-## Configure the plugin features {#configuring-the-plugin-features}
+## プラグイン機能の設定 {#configuring-the-plugin-features}
 
 RTEの設定手順については、「リッチテキストエディターの [設定](rich-text-editor.md) 」ページを参照してください。 この記事は次の内容を扱っています。
 
 * [プラグインとその機能](rich-text-editor.md#aboutplugins)
 * [設定の場所](rich-text-editor.md#understand-the-configuration-paths-and-locations)
-* [プラグインをアクティブ化し、featuresプロパティを設定します](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
+* [プラグインのアクティベートと features プロパティの設定](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [RTEの他の機能の設定](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-プラグインの一部またはすべての機能をアクティブにするには、CRXDE Liteの適切な `rtePlugins` サブブランチ内にプラグインを設定します。
+プラグインの一部またはすべての機能をアクティブにするには、CRXDE Liteの適切な `rtePlugins` サブブランチ内でプラグインを設定します。
 
-![CRXDE Lite で rtePlugin の例を表示。](assets/chlimage_1-208.png)
+![CRXDE LiteでrtePluginの例を表示](assets/example-rteplugin-crxde-lite.png)
 
-### Example - Specify paragraph formats available in RTE selection field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Example to specify paragraph formats available in RTE selection field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-意味的ブロックの新しい書式を選択可能にするには、次の手順を実行します。
+新しいセマンティックブロック形式が選択可能になりました。
 
 1. 使用している RTE によって、[設定場所](rich-text-editor.md#understand-the-configuration-paths-and-locations)を特定し、移動します。
-1. [プラグインをアク](rich-text-editor.md) ティブ化して、段落選択フィールドを有効にします [](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
+1. [プラグインを](rich-text-editor.md) アクティブ化して、段落選択フィールドを有効にします [](rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
 1. [段落選択フィールドで、使用可能な書式を指定します](rich-text-editor.md)。
 1. 段落書式は、RTEの選択フィールドからコンテンツ作成者が使用できます。
 
-RTEで段落形式のオプションを使用して構造要素を利用できるExperience Managerは、アクセシブルなコンテンツの開発にとって有効な基盤となります。 コンテンツ作成者は、RTEを使用してフォントサイズや色などの関連属性の形式を設定できず、インライン形式を作成できません。 代わりに、見出しなどの適切な構造要素を選択し、[スタイル]オプションから選択したグローバルスタイルを使用する必要があります。 これにより、マークアップがきれいになり、独自のスタイルシートを使用して正しく構造化されたコンテンツを参照するユーザにとって、より多くのオプションが提供されます。
+RTEで段落形式のオプションを使用して構造要素を利用できる場合、はアクセシブルなコンテンツを開発するための良い基盤を提供し [!DNL Experience Manager] ます。 コンテンツ作成者は、RTEを使用してフォントサイズや色などの関連属性の形式を設定できず、インライン形式を作成できません。 代わりに、見出しや「スタイル」オプションから選択したグローバルスタイルを使用して、独自のスタイルシートを使用し、正しく構造化されたコンテンツを参照するユーザに対して、きれいにマークアップや高度なオプションを提供できます。
 
-## ソース編集機能の使用 {#use-of-the-source-edit-feature}
+## Use of the Source Edit feature {#use-of-the-source-edit-feature}
 
-In some cases, content authors will find it necessary to examine and adjust the HTML source code created using the RTE. For example, a piece of content created within the RTE may require additional markup to ensure compliance with WCAG 2.0. This can be done with the [source edit](rich-text-editor.md#aboutplugins) option of the RTE. この [`sourceedit` 機能はプラグインで指定でき `misctools` ます](rich-text-editor.md#aboutplugins)。
+場合によっては、コンテンツ作成者はRTEを使用して作成されたHTMLソースコードを調べ、調整する必要があると見なします。 例えば、RTE内で作成されるコンテンツの一部がWCAG 2.0に準拠するためには、より多くのマークアップが必要になる場合があります。これは、RTEの [ソース編集](rich-text-editor.md#aboutplugins) オプションを使用して行うことができます。 この [`sourceedit` 機能はプラグインで指定でき `misctools` ます](rich-text-editor.md#aboutplugins)。
 
 >[!CAUTION]
 >
->Use the `sourceedit` feature carefully. タイピングの誤りやサポート対象外の機能は、問題を大きくする可能性があります。
+>Use the `sourceedit` feature carefully. 入力エラーやサポートされていない機能によって問題が発生する場合があります。
 
 <!--
 TBD ENGREVIEW: Is this only applicable to Classic UI? 
 
-## Adding Support for Additional HTML Elements and Attributes {#adding-support-for-additional-html-elements-and-attributes}
+## Adding Support for further HTML Elements and Attributes {#adding-support-for-additional-html-elements-and-attributes}
 
-To further extend the accessibility features of Experience Manager, it is possible to extend the existing components based on the RTE (such as the `Text` and `Table` components) with additional elements and attributes.
+To further extend the accessibility features of [!DNL Experience Manager], it is possible to extend the existing components based on the RTE (such as the `Text` and `Table` components) with extra elements and attributes.
 
 The following procedure illustrates how to extend the `Table` component with a `Caption` element that provides information about a data table to assistive technology users:
 
 ### Example: Add a caption to a table properties dialog {#example-adding-the-caption-to-the-table-properties-dialog}
 
-In the constructor of the `TablePropertiesDialog`, add an additional text input field that is used for editing the caption. Set the `itemId` to `caption` (the DOM attribute’s name) to automatically handle its content.
+In the constructor of the `TablePropertiesDialog`, add an extra text input field that is used for editing the caption. Set the `itemId` to `caption` (the DOM attribute’s name) to automatically handle its content.
 
 In a `Table`, set the attribute to the DOM element or or remove it from the DOM element. The dialog in the `config` object passed the value. Set or remove the DOM attributes using the corresponding `CQ.form.rte.Common` methods (`com` is a shortcut for `CQ.form.rte.Common`). Using `CQ.form.rte.Common` methods avoids common pitfalls with browser implementations.
 
@@ -140,7 +140,7 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
 * A plain text field is not the only type of input allowed for the value of the caption element. You can use any ExtJS widget, that provides the caption’s value through its `getValue()` method.
-* To add editing capabilities for further additional elements and attributes, ensure that:
+* To add editing capabilities for more elements and attributes, ensure that:
 
   * The `itemId` property for each corresponding field is set to the name of the appropriate DOM attribute (`TablePropertiesDialog`).
   * The attribute is set and/or removed on the DOM element explicitly (`Table`).
@@ -149,5 +149,5 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 >[!MORELIKETHIS]
 >
 >* [WCAG基準のクイックガイド](/help/onboarding/accessibility/quick-guide-wcag.md)
->* [Experience Managerでのアクセシブルなコンテンツの作成](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
+>* [Experience Managerでアクセシブルなコンテンツを作成する方法](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
