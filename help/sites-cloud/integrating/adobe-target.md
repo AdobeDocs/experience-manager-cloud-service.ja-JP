@@ -2,10 +2,10 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 100%
+source-wordcount: '743'
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,7 @@ Target に統合するには、次のタスクを実行します。
 >
 >* 3.x は [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) のように設定します。
 >* 4.x は [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) のように設定します。
+
 >
 
 
@@ -73,7 +74,7 @@ Target に統合するには、次のタスクを実行します。
 
 AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、AEM アクティビティの管理、AEM オーディエンスの管理に関する知識が必要です。以下を十分理解している必要があります。
 
-* Adobe Target（[Adobe Target のドキュメント](https://marketing.adobe.com/resources/help/ja_JP/target/)を参照）
+* Adobe Target（[Adobe Target のドキュメント](https://docs.adobe.com/content/help/en/target/using/target-home.html)を参照）
 * AEM アクティビティコンソール（[アクティビティの管理](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)を参照）
 * AEM オーディエンス（[オーディエンスの管理](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html)を参照）
 
@@ -85,6 +86,7 @@ AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、A
 >* エクスペリエンス：2,000
 >* 指標：50
 >* レポートのセグメント：50
+
 >
 
 
