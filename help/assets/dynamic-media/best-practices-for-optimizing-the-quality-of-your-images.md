@@ -2,10 +2,10 @@
 title: 画質最適化のベストプラクティス
 description: Dynamic Media の画質を最適化するベストプラクティスについて説明します。
 translation-type: tm+mt
-source-git-commit: 21b2541b6a3c5011b6eca7edf85299291c361147
+source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '1490'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ AEM を使用すれば、取り込み時、配信時またはその両方で画�
 
       画像のシャープニングに関する AEM ヘルプトピック。
 
-      ベストプラクティスに関するホワイトペーパー『[Adobe Scene7 Publishing System および Image Server での画像のシャープニング](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)』。
+      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
 
    * AEM では第 4 パラメーターの monochrome（0,1）も制御できます。このパラメーターでは、アンシャープマスクをそれぞれの色成分に個別に適用するか（値が 0 の場合）、または画像の明るさ／明度に対して適用するか（値が 1 の場合）を指定します。
 
