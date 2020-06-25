@@ -3,10 +3,10 @@ title: Adobe Experience Manager Assets as a Cloud Service でサポートされ�
 description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2830c1cb2a9a0c06e6f8a4a765420706f5ceb093
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 100%
+source-wordcount: '821'
+ht-degree: 96%
 
 ---
 
@@ -86,6 +86,21 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 * 16 を超えるビット深度を持つ PSD ファイル。
 * 浮動小数点データを持つ TIFF ファイル。
 * Lab カラースペースを持つ TIFF ファイル。
+
+## サポートされる3D形式 {#support-3d-formats}
+
+次の3D形式のリストがサポートされています。
+
+詳しくは、Dynamic Mediaでの3Dアセットの [操作を参照してください。](/help/assets/dynamic-media/assets-3d.md)
+
+| 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3次元プレビュー | Dynamic Media配信 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## [!DNL Camera RAW] 形式 {#camera-raw-formats}
 
