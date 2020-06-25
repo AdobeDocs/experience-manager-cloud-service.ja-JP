@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 76cd37ae35360e68cca676de8eda53dff4819b41
+source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
-source-wordcount: '2264'
+source-wordcount: '2276'
 ht-degree: 13%
 
 ---
@@ -30,9 +30,11 @@ Dynamic Mediaで3Dアセットを使用する場合、追加のインストー�
 
 <!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
-## Dynamic Mediaでサポートされる3Dファイル形式 {#supported-three-d-file-formats-in-dm}
+## Dynamic Mediaでサポートされる3D形式 {#supported-three-d-file-formats-in-dm}
 
 Dynamic Mediaは、次の3Dファイル形式をサポートしています。
+
+サポートされる [3D形式も参照](/help/assets/file-format-support.md#supported-3d-formats)
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
@@ -145,7 +147,8 @@ Webページが **[!UICONTROL 編集]** モードの場合、3Dアセットと�
 
    * ページ右上付近にある「 **[!UICONTROL プレビュー]** 」をクリックして **[!UICONTROL プレビュー]** モードに入ります。
    * ブラウザー `/editor.html` のページURLから削除します。
-   ![3D Mediaコンポーネント内に表示される3Dアセット](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)完全にインタラクティブな3Dアセット **[!UICONTROL (]** プレビューモードで表示される)。
+
+完全にインタラクティブな3Dアセット(    ![3D Mediaコンポーネント内に表示される3Dアセット](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)完全にインタラクティブな3Dアセット **[!UICONTROL (]** プレビューモードで表示される)。
 
 1. **[!UICONTROL プレビュー]** ・モードの間に、次のいずれかの操作を行います。
 
@@ -273,6 +276,7 @@ See also [Publishing Dynamic Media assets.](/help/assets/dynamic-media/publishin
    * 3Dアセットはサポートされている形式(GLB、OBJ、STL、USDZ)です。
    * 3DアセットがDynamic Media画像制作システム(IPS)に取り込まれました。
    * 3Dアセットが公開されます。
+
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
 1. 「 **[!UICONTROL URL]** 」をタップして3Dアセットの直接実稼動URLを表示し、Webページにコピーして使用できます。
