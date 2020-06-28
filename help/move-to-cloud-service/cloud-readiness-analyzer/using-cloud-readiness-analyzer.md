@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzerの使用
 description: Cloud Readiness Analyzerの使用
 translation-type: tm+mt
-source-git-commit: 3da4c659893e55f5ffe104ea08ea89cc296050c1
+source-git-commit: a0e58c626f94b778017f700426e960428b657806
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1871'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,12 @@ ht-degree: 1%
 
 * CRAレポートは、Adobe Experience Manager(AEM) [パターンディテクターの出力を使用して作成されます](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/pattern-detector.html)。 CRAが使用するパターンディテクターのバージョンは、CRAインストールパッケージに含まれています。
 
-* CRAは、 **管理者ユーザーまたは** Administrators **** グループ内のユーザーのみが実行できます。
+* CRAは、 **admin** （管理者）ユーザーまたは **administrators** （管理者）グループ内のユーザーのみが実行できます。
 
 * CRAは、バージョン6.1以降を含むAEMインスタンスでサポートされます。
+
+   >[!NOTE]
+   > AEM 6.1にCRAをインストールするための特別な要件については、 [AEM 6.1へのインストールを参照してください](#installing-on-aem61) 。
 
 * CRAはどの環境でも実行できますが、 *Stage* 環境で実行することをお勧めします。
 
@@ -169,7 +172,9 @@ HTTPインターフェイスを使用してレポートの生成を開始する�
 * `500 Internal Server Error`: 内部サーバーエラーが発生したことを示します。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
 * `503 Service Unavailable`: サーバーが別の応答でビジー状態であり、この要求をタイムリーに処理できないことを示します。 これは、同期要求が行われた場合にのみ発生する可能性があります。 詳細については、「問題の詳細」の形式のメッセージを参照してください。
 
-## キャッシュのライフタイム調整 {#cache-adjustment}
+## 管理者情報
+
+### キャッシュのライフタイム調整 {#cache-adjustment}
 
 CRAキャッシュのデフォルトの有効期間は24時間です。 レポートを更新し、キャッシュを再生成するオプションを使用する場合、AEMインスタンスとHTTPインターフェイスの両方で、このデフォルト値は、ほとんどのCRAの使用に適していると考えられます。 レポート生成時間がAEMインスタンスに特に長い場合は、レポートの再生成を最小限に抑えるためにキャッシュの有効期間を調整することをお勧めします。
 
@@ -178,7 +183,12 @@ CRAキャッシュのデフォルトの有効期間は24時間です。 レポ�
 
 このプロパティの値は、キャッシュの有効期間（秒）です。 管理者は、CRX/DE Liteを使用してキャッシュの有効期間を調整できます。
 
+### AEM 6.1へのインストール {#installing-on-aem61}
 
+CRAは、パターンディテクターの実行に名前付けられたシステムサービスユーザーアカウント `repository-reader-service` を使用します。 このアカウントは、AEM 6.2以降で使用できます。 AEM 6.1では、CRAをインストールする *前に* 、次の手順でこのアカウントを作成する必要があります。
 
+1. 「新しいサービスユーザーの [作成](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) 」の手順に従って、ユーザーを作成します。 UserIDをに設定し、中間パスを空のままにし `repository-reader-service` て、緑のチェックマークをクリックします。
 
+2. 「ユーザーとグループの [管理」の手順に従います](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/security.html#managing-users-and-groups)。特に、ユーザーをグループに追加する手順については、ユー `repository-reader-service` ザーを `administrators` グループに追加します。
 
+3. Package Managerを介してCRAパッケージをソースAEMインスタンスにインストールします。 (これにより、 `repository-reader-service` システムサービスユーザーのServiceUserMapper構成に必要な構成の修正が追加されます)。
