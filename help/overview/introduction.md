@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の概要
 description: 'Adobe Experience Manager (AEM) as a Cloud Service の概要。 '
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 98%
 
 ---
 
@@ -76,6 +76,8 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 
 * Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
 * Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
-* [AEM as a Cloud Service の AEM Sites の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [Cloud ServiceとしてのAEMに対する注目すべき変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service の概要](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
