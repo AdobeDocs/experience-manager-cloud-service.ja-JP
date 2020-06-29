@@ -2,10 +2,10 @@
 description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。必要なものがすべて揃っているこのニュースレターでは、知識構築のための有益なリソースを利用できます。ハウツービデオやソリューション概要のほか、画像プリセット、ビューアプリセット、ビデオプロファイルといった主要な機能の紹介などです。 '
 title: Dynamic Media ニュースレター
 translation-type: tm+mt
-source-git-commit: 6eb9f2fd6f692df26e4bd1b56cbc18db84b2f53f
+source-git-commit: 26cc4778052ebcc520dc3ddeeca30c043eadf695
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,20 +22,20 @@ Experience League 提供の月刊の Dynamic Media ニュースレターは、Dy
 
 ## Dynamic Media ニュースレターを見逃した方のための各号の内容紹介
 
-* **[2020 年 5 月、第 4 号](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
-   この号の主な内容：
+    In this issue:
 
-   * 不確実な時期におけるビジネス継続性の意味
-   * 最初のデジタル版Adobe Summitの重要なポイントです。
-   * Experience Managerのブレークアウトセッションは視聴が必須です。
-   * サミットのお客様向けスポットライト： 鎧の下。
-   * エクスペリエンスインサイダーのウェビナーを見逃さないでください。
-   * 公共部門のスポットライト： デジタル登録の緊急の必要性
-   * Experience Manager Innovationの新機能を紹介します。
-   * アドビのプロフェッショナルスキル *を活用して* 、Experience Managerのスキルを習得します。
-   * Adobe Experience Managerコミュニティに接続します。
-   * Adobe Experience Leagueのアドビの専門知識を迅速に追跡できます。
+    * What business continuity means in uncertain times.
+    * Key takeaways from the first all-digital Adobe Summit.
+    * Must-watch Experience Manager breakout sessions.
+    * Summit customer spotlight: Under Armour.
+    * Never miss an Experience Insider webinar.
+    * Public sector spotlight: The urgent need for digital enrollment.
+    * Look what’s new in Experience Manager Innovation.
+    * Build your Experience Manager skills *live* with the Adobe pros.
+    * Connect with the Adobe Experience Manager Community.
+    * Fast-track your Adobe expertise with Adobe Experience League. -->
 
 * **[2020 年 4 月、第 3 号](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
@@ -47,7 +47,6 @@ Experience League 提供の月刊の Dynamic Media ニュースレターは、Dy
    * Online Adobe Summit 2020 の Dynamic Media セッションを表示
    * 無料の Dynamic Media Classic 監査の詳細
    * John Monroe 氏（カスタマーサクセスサービス担当シニアプログラムマネージャー）へのインタビュー
-
    >[!IMPORTANT]
    >
    >Dynamic Media ニュースレターを希望する方のみに送信するようにしています。本号の後も引き続きニュースレターを受信するには、[こちら](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)から新規登録してください。
