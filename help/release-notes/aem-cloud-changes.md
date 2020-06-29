@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 description: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 translation-type: tm+mt
-source-git-commit: e76de9b84931dced6383570e384ffdb6fb334daf
+source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -15,21 +15,31 @@ ht-degree: 100%
 AEM as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。ただし、AEM as a Cloud Service と、オンプレミスまたは Adobe Managed Services の AEM Sites を比較すると、両者には数々の違いがあります。ここでは、重要な相違点について重点的に説明します。
 
 >[!NOTE]
->このドキュメントでは、AEM as a Cloud Service 全体の主な変更点について重点的に説明します。ソリューションごとの変更点については、以下を参照してください。
+>このドキュメントでは、AEM as a Cloud Service 全体の主な変更点について重点的に説明します。詳細およびソリューション固有の変更点については、以下を参照してください。
 >
->* [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
+>* Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
+>* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 >* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 
 
 主な違いは次の点にあります。
 
 * [/apps と /libs が実行時に不変](#apps-libs-immutable)
+
 * [OSGi バンドルおよび設定はリポジトリベース](#osgi)
+
 * [パブリッシュリポジトリに対する変更は禁止](#changes-to-publish-repo)
+
 * [カスタム実行モードは禁止](#custom-runmodes)
+
 * [レプリケーションエージェントの削除](#replication-agents)
+
 * [クラシック UI の削除](#classic-ui)
+
 * [パブリッシュ側の配信](#publish-side-delivery)
+
 * [アセットの操作と配信](#asset-handling)
 
 ## /apps と /libs が実行時に不変 {#apps-libs-immutable}
