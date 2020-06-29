@@ -2,23 +2,34 @@
 title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
 description: Adobe Experience Manager 6.5 と比較した、AEM Cloud Service の Adobe Experience Manager Assets の主な変更点.
 translation-type: tm+mt
-source-git-commit: 37ff6912837ba78c90526e8f8322b9002e9a4304
+source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '619'
+ht-degree: 92%
 
 ---
 
 
 # Experience Manager Assets as a Cloud Service の主な変更点 {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。ただし、Adobe Experience Manager as a Cloud Service と、On-Premise や Adobe Managed Services の Adobe Experience Manager Assets を比較すると、両者には多くの違いがあります。このドキュメントでは、Assets 機能の重要な違いについて説明します。その他の変更点については、[Experience Manager as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)を参照してください。
+Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。ただし、Adobe Experience Manager as a Cloud Service と、On-Premise や Adobe Managed Services の Adobe Experience Manager Assets を比較すると、両者には多くの違いがあります。このドキュメントでは、Assets 機能の重要な違いについて説明します。
 
 Adobe Experience Manager 6.5 との主な違いは次の点です。
 
 * [アセットの取り込みとアップロード](#asset-ingestion)。
 * [クラウド処理用のアセットマイクロサービス](#asset-microservices)。
 * [クラシック UI の削除](#classic-ui).
+
+>[!NOTE]
+>このドキュメントでは、AEM Assetsに対する注目すべき変更点に焦点を当てます。 Cloud ServiceとしてのAEMおよびその他のモジュールに関する一般的な変更点については、以下を参照してください。
+>
+>* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
+>* AEMのCloud Serviceとしての [概要 — 新機能と違い](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
+>* [Cloud ServiceとしてのAEMに対する注目すべき変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+>* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+>* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+
 
 ## アセットの取り込みとアップロード {#asset-ingestion}
 
