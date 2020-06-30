@@ -2,10 +2,10 @@
 title: Adobe Experience ManagerでのSling Resource MangerのCloud Serviceとしての使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 translation-type: tm+mt
-source-git-commit: 987d2cd91e0d1ab604ea7de755c5568e0c0a4295
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '1245'
-ht-degree: 44%
+source-wordcount: '1241'
+ht-degree: 39%
 
 ---
 
@@ -30,9 +30,9 @@ Sling Resource Merger を使用すると、リソースやプロパティのオ�
 
 >[!CAUTION]
 >
->Sling Resource Merger および関連する手法は、[Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) に対してのみ使用できます。これはつまり、標準のタッチ操作対応 UI でのみ使用できるという意味です。特に、この方法で定義された特定のオーバーライドは、コンポーネントのタッチ操作対応ダイアログに対してのみ適用できます。
+>Sling Resource Merger および関連する手法は、[Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) に対してのみ使用できます。また、これは、タッチ対応の標準UIにのみ適切であることを意味します。 この方法で定義された特定のオーバーライドは、コンポーネントのタッチ対応ダイアログにのみ適用されます。
 >
->その他の領域（タッチ操作対応コンポーネントやクラシック UI の他の側面を含む）のオーバーレイ／オーバーライドでは、適切なノードと構造を元の場所からカスタマイズの定義先にコピーします。
+>他の領域（タッチ対応コンポーネントのその他の要素を含む）のオーバーレイ/オーバーライドでは、適切なノードと構造を元の要素からカスタマイズが定義される場所にコピーします。
 
 ### AEM の目的 {#goals-for-aem}
 
@@ -61,6 +61,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
    >
    >
 1. `/apps` 内で変更作業をおこないます。
+
 >
 
 
@@ -209,6 +210,7 @@ To create an overlay or override you need to recreate the original node, with th
 
       * type: `String[]`
       * value: a list of the child nodes (as defined in `/libs`) to hide/ignore
+
       ワイルドカード(&amp;ast;) は、すべての子ノードを非表示/無視するために使用できます。
 
 
