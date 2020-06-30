@@ -2,10 +2,10 @@
 sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 translation-type: tm+mt
-source-git-commit: cd35b7b4dbdd434f367871ae5d6584b1ad1de341
+source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 82%
+source-wordcount: '231'
+ht-degree: 75%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 82%
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
+   + [AEMのCloud Serviceとしてのオーバーレイ](developing/introduction/overlays.md)
+   + [AEMでのSling Resource MangerのCloud Serviceとしての使用](developing/introduction/sling-resource-merger.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
@@ -49,5 +51,5 @@ ht-degree: 82%
 + コンテンツ配信の概要 {#content-delivery}
    + [コンテンツ配信のフロー](dispatcher/overview.md)
    + [クラウド内の Dispatcher](dispatcher/disp-overview.md)
-   + [クラウドサービスとしてのAEMでのCDN](dispatcher/cdn.md)
-   + [AEMでのクラウドサービスとしてのキャッシュ](dispatcher/caching.md)
+   + [Cloud ServiceとしてのAEMでのCDN](dispatcher/cdn.md)
+   + [AEMでのCloud Serviceとしてのキャッシュ](dispatcher/caching.md)
