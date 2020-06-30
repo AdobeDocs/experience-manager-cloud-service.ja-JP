@@ -3,15 +3,15 @@ title: 拡張スマートタグ
 description: Adobe Sensei の AI および ML サービスを利用して、状況に応じた説明的なビジネスタグを適用し、アセットの検出とコンテンツベロシティ（コンテンツ創出の高速化）を向上させます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 41684858f1fe516046b9601c1d869fff180320e0
+source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 22%
+source-wordcount: '1009'
+ht-degree: 21%
 
 ---
 
 
-# アセットのスマートタグ付けを行うためのExperience Managerの設定 {#configure-aem-for-smart-tagging}
+# アセットのスマートタグ付けのExperience Managerの設定 {#configure-aem-for-smart-tagging}
 
 タクソノミ制御のボキャブラリでアセットをタグ付けすると、タグベースの検索でアセットを簡単に識別および取得できます。 アドビでは、人工知能と機械学習アルゴリズムを使用して画像をトレーニングするスマートタグを提供しています。 スマートタグは、 [Adobe Senseiの人工知能フレームワークを使用して](https://www.adobe.com/sensei/experience-cloud-artificial-intelligence.html) 、タグ構造とビジネス分類に対する画像認識アルゴリズムのトレーニングを行います。
 
@@ -21,17 +21,17 @@ The Smart Tags functionality is available for purchase as an add-on to [!DNL Exp
 1. Can a similar flowchart be created about how training works in CS? ![flowchart](assets/flowchart.gif)
 2. Is there a link to buy SCS or initiate a sales call.
 3. Keystroke all steps and check all screenshots.
-4. Post-GA, if time permits, create a video.
 -->
 
 ## Adobe Developer Consoleとの連携 {#aio-integration}
 
 SCSを使用して画像にタグ付けする前に、Adobe Developer Console [!DNL Adobe Experience Manager] を使用してSmart Tagsサービスと統合します。 At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the service.
 
-* 公開鍵を生成す [!DNL Experience Manager] る設定をに作成します。 OAuth 統合用の公開証明書を取得します。
-* Adobe Developer Consoleで統合を作成し、生成した公開鍵をアップロードします。
-* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe Developer Console.
-* （オプション）アセットアップロード時の自動タグ付けを有効化します。
+* 公開鍵を生成す [!DNL Experience Manager] る設定をに作成します。 [OAuth 統合用の公開証明書を取得します。](#obtain-public-certificate)
+* [Adobe Developer Consoleで統合を作成し](#create-aio-integration) 、生成した公開鍵をアップロードします。
+* [APIキーとAdobe Developer Consoleの他の資格情報を使用して、](#configure-smart-content-service)[!DNL Experience Manager] インスタンスでスマートタグを設定します。
+* [設定をテストします](#validate-the-configuration)。
+* [証明書の有効期限が切れた後に再設定します](#certrenew)。
 
 ### Adobe Developer Console統合の前提条件 {#prerequisite-for-aio-integration}
 
@@ -52,24 +52,7 @@ SCSを使用して画像にタグ付けする前に、Adobe Developer Console [!
 
 1. Click **[!UICONTROL Download Public Key]**.
 
-   ![Experience Managerのスマートタグで公開鍵を作成](assets/aem_smarttags-config1.png)
-
-### 証明書の有効期限が切れた場合に再設定する {#certrenew}
-
-証明書の有効期限が切れると、証明書は信頼されなくなります。新しい証明書を追加するには、以下の手順に従います。期限切れの証明書は更新できません。
-
-1. Log in your [!DNL Experience Manager] deployment as an administrator. **[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL ユーザー]**&#x200B;をクリックします。
-
-1. **[!UICONTROL dam-update-service]** ユーザーを見つけてクリックします。「**[!UICONTROL キーストア]**」タブをクリックします。
-1. 証明書の有効期限が切れた既存の **[!UICONTROL similaritysearch]** キーストアを削除します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
-
-   ![キーストアの既存の similaritysearch エントリを削除して新しいセキュリティ証明書を追加](assets/smarttags_delete_similaritysearch_keystore.png)
-
-   *図： キーストアの既存の`similaritysearch`エントリを削除して、新しいセキュリティ証明書を追加します。*
-
-1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** セキュリティ **[!UICONTROL /]** Adobe IMS設定にアクセスします ****。 使用可能なスマートタグ設定を開きます。 To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
-
-1. https://console.adobe.io [にアクセスし](https://console.adobe.io) 、プロジェクト内の既存のサービスに移動します。 新しい証明書をアップロードし、設定します。 設定について詳しくは、Adobe Developer Console統合の [作成の手順を参照してください](#create-aio-integration)。
+   ![Experience Managerスマートタグで公開鍵を作成](assets/aem_smarttags-config1.png)
 
 ### 統合の作成 {#create-aio-integration}
 
@@ -77,10 +60,10 @@ SCSを使用して画像にタグ付けする前に、Adobe Developer Console [!
 
 1. ブラウザ [ーでhttps://console.adobe.io](https://console.adobe.io/) にアクセスします。 適切なアカウントを選択し、関連付けられた組織の役割がシステム管理者であることを確認します。
 1. 任意の名前でプロジェクトを作成します。 「 **[!UICONTROL API追加」をクリックします]**。
-1. API **[!UICONTROL 追加ページで、「]** Experience Cloud **[!UICONTROL 」を選択し、「]** Smart Content ****」を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
+1. API **[!UICONTROL 追加ページで、「]** Experience Cloud **[!UICONTROL 」を選択し、「ス]** マートコンテンツ ****」を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
 1. 「公開鍵を **[!UICONTROL アップロード]**」を選択します。 からダウンロードした証明書ファイルを指定し [!DNL Experience Manager]ます。 正常にアップロードされた [!UICONTROL 公開鍵] （複数可）というメッセージが表示されます。 「**[!UICONTROL 次へ]**」をクリックします。
 1. [!UICONTROL 新しいサービスアカウント(JWT)秘密鍵証明書を作成] (JWT)ページには、設定したサービスアカウントの公開鍵が表示されます。 「**[!UICONTROL 次へ]**」をクリックします。
-1. 製品プロファイルを **[!UICONTROL 選択]** ページで、「 **[!UICONTROL Smart Content Services]**」を選択します。 「設定済みAPI **[!UICONTROL を保存]**」をクリックします。 設定に関する詳細情報がページに表示されます。 でスマートタグをさらに設定する際は、このページを開いたままにして、Experience Managerでこれらの値をコピーして追加 [!DNL Experience Manager]します。
+1. 製品プロファイルを **[!UICONTROL 選択]** ページで、「 **[!UICONTROL Smart Content Services]**」を選択します。 「設定済みAPI **[!UICONTROL を保存]**」をクリックします。 設定に関する詳細情報がページに表示されます。 でスマートタグをさらに設定する場合は、このページを開いたままにして、これらの値をコピーし、Experience Managerに追加 [!DNL Experience Manager]します。
 
    ![「Overview」タブで、統合について指定した情報を確認できます。](assets/integration_details.png)
 
@@ -104,6 +87,23 @@ SCSを使用して画像にタグ付けする前に、Adobe Developer Console [!
 1. スマートタグ設定を選択します。 ツールバーの「 **[!UICONTROL ヘルスをチェック]** 」をクリックします。 「**[!UICONTROL チェック]**」をクリック。「 [!UICONTROL Healthy configuration] 」というメッセージが表示されたダイアログで、設定が機能していることを確認します。
 
 ![スマートタグ設定の検証](assets/smart-tag-config-validation.png)
+
+### 証明書の有効期限が切れた場合に再設定する {#certrenew}
+
+証明書の有効期限が切れると、証明書は信頼されなくなります。新しい証明書を追加するには、以下の手順に従います。期限切れの証明書は更新できません。
+
+1. Log in your [!DNL Experience Manager] deployment as an administrator. **[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL ユーザー]**&#x200B;をクリックします。
+
+1. **[!UICONTROL dam-update-service]** ユーザーを見つけてクリックします。「**[!UICONTROL キーストア]**」タブをクリックします。
+1. 証明書の有効期限が切れた既存の **[!UICONTROL similaritysearch]** キーストアを削除します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
+
+   ![キーストアの既存の similaritysearch エントリを削除して新しいセキュリティ証明書を追加](assets/smarttags_delete_similaritysearch_keystore.png)
+
+   *図： キーストアの既存の`similaritysearch`エントリを削除して、新しいセキュリティ証明書を追加します。*
+
+1. ユーザーインターフェイスで、 [!DNL Experience Manager] ツール **[!UICONTROL /]** セキュリティ **[!UICONTROL /]** Adobe IMS設定にアクセスします ****。 使用可能なスマートタグ設定を開きます。 To download a public certificate, click **[!UICONTROL Download Public Certificate]**.
+
+1. https://console.adobe.io [にアクセスし](https://console.adobe.io) 、プロジェクト内の既存のサービスに移動します。 新しい証明書をアップロードし、設定します。 設定について詳しくは、Adobe Developer Console統合の [作成の手順を参照してください](#create-aio-integration)。
 
 ## 新しくアップロードされたアセットに対するスマートタグの有効化（オプション） {#enable-smart-tagging-for-uploaded-assets}
 
