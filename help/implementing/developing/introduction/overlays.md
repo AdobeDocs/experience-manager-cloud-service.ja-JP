@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAdobe Experience Managerのオーバーレイ
 description: Cloud ServiceとしてのAEMでは、オーバーレイの原則を使用して、コンソールやその他の機能を拡張およびカスタマイズできます
 translation-type: tm+mt
-source-git-commit: e9fa89753289563edd59e3d75413c90efe3ff0b2
+source-git-commit: 58440cb565039becd5b08333994b70f2ea77cc99
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '526'
 ht-degree: 38%
 
 ---
@@ -28,7 +28,7 @@ In a standard instance the predefined functionality is held under `/libs` and it
 
       * の下に適切な `/libs` 構造を再構築し `/apps`ます。
 
-         This does not require a 1:1 copy, the [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) is used to cross-reference the original definitions that are required. Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするためのサービスを提供します。
+         1:1コピーは不要です。 [Sling Resource Marge](/help/implementing/developing/introduction/sling-resource-merger.md) は、必要な元の定義を相互参照するために使用されます。 Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするためのサービスを提供します。
 
       * Make any changes under `/apps`.
    * メリット
