@@ -2,10 +2,10 @@
 title: Adobe Experience ManagerでのSling Resource MangerのCloud Serviceとしての使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
 workflow-type: tm+mt
-source-wordcount: '1241'
-ht-degree: 39%
+source-wordcount: '1160'
+ht-degree: 36%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 39%
 
 Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します。Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
 
-* [設定済みの検索パス](/help/implementing/developing/introduction/overlays.md#configuring-the-search-paths)を使用するリソースの&#x200B;**[オーバーレイ](/help/implementing/developing/introduction/overlays.md)**。
+* **[](/help/implementing/developing/introduction/overlays.md)**検索パスを使用したリソースのオーバーレイ[](/help/implementing/developing/introduction/overlays.md#search-paths)。
 
 * リソースタイプ階層を（**プロパティを通じて）使用するタッチ操作対応 UI のコンポーネントダイアログ（**）の`cq:dialog`オーバーライド`sling:resourceSuperType`。
 
@@ -30,9 +30,7 @@ Sling Resource Merger を使用すると、リソースやプロパティのオ�
 
 >[!CAUTION]
 >
->Sling Resource Merger および関連する手法は、[Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) に対してのみ使用できます。また、これは、タッチ対応の標準UIにのみ適切であることを意味します。 この方法で定義された特定のオーバーライドは、コンポーネントのタッチ対応ダイアログにのみ適用されます。
->
->他の領域（タッチ対応コンポーネントのその他の要素を含む）のオーバーレイ/オーバーライドでは、適切なノードと構造を元の要素からカスタマイズが定義される場所にコピーします。
+>Sling Resource Margerおよび関連するメソッドは、タッチ対応UI(Cloud ServiceとしてAEMで使用できる唯一のUI)でのみ使用できます。
 
 ### AEM の目的 {#goals-for-aem}
 
@@ -43,27 +41,17 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 
    When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). 情報を不必要に複製すると、システムのアップグレード時に問題が発生しやすくなります。
 
->[!NOTE]
->
->オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
->
->However, overrides are often defined under `/apps`, as best practice in AEM is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
 >[!CAUTION]
 >
 >`/libs` パス内の設定は&#x200B;***一切***&#x200B;変更しないでください。
 >
->`/libs` コンテンツは、インスタンスを次回アップグレードするとき（場合によってはホットフィックスまたは機能パックを適用したとき）に上書きされるからです。
+>これは、インスタンスにアップグレードが適用されると、のコンテンツ `/libs` が上書きされる可能性があるためです。
 >
->設定およびその他の変更に推奨される方法は次のとおりです。
->
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>* オーバーレイは [検索パスに依存します](/help/implementing/developing/introduction/overlays.md#search-paths)。
    >
    >
-1. `/apps` 内で変更作業をおこないます。
-
->
-
+* オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
+   >  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 
 ### プロパティ {#properties}
