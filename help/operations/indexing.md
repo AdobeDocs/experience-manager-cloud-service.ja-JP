@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 translation-type: tm+mt
-source-git-commit: 5594792b84bdb5a0c72bfb6d034ca162529e4ab2
+source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1475'
 ht-degree: 3%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # コンテンツの検索とインデックス作成 {#indexing}
 
-## クラウドサービスとしてのAEMの変更点 {#changes-in-aem-as-a-cloud-service}
+## Cloud ServiceとしてのAEMの変更点 {#changes-in-aem-as-a-cloud-service}
 
-AEMをクラウドサービスとして使用する場合、アドビでは、AEMインスタンス中心モデルから、Cloud ManagerのCI/CDパイプラインによって駆動される、n-xのAEMコンテナを持つサービスベースの表示に移行します。 単一のAEMインスタンスでインデックスの設定と管理を行う代わりに、インデックスの設定を指定してからデプロイメントを行う必要があります。 本番環境での設定の変更は、CI/CDのポリシーを明確に破っています。 インデックスの変更についても同じことが言えます。システムの安定性とパフォーマンスに影響を及ぼす可能性があるのは、指定しない場合は、実稼働環境に移行する前にテストおよび再インデックスを実行する必要があるからです。
+AEMをCloud Serviceとして使用する場合、アドビでは、AEMインスタンス中心モデルから、Cloud ManagerのCI/CDパイプラインによって駆動される、n-xのAEMコンテナを持つサービスベースの表示に移行します。 単一のAEMインスタンスでインデックスの設定と管理を行う代わりに、インデックスの設定を指定してからデプロイメントを行う必要があります。 本番環境での設定の変更は、CI/CDのポリシーを明確に破っています。 インデックスの変更についても同じことが言えます。システムの安定性とパフォーマンスに影響を及ぼす可能性があるのは、指定しない場合は、実稼働環境に移行する前にテストおよび再インデックスを実行する必要があるからです。
 
 次に、AEM 6.5以前のバージョンと比較した主な変更点のリストを示します。
 
@@ -32,13 +32,11 @@ AEMをクラウドサービスとして使用する場合、アドビでは、AE
 
 1. インデックスの構成は、配置を介して変更されます。 インデックス定義の変更は、他のコンテンツの変更と同様に設定されます。
 
-1. クラウドサービスとしてのAEMの概要では、 [Blue-Greenデプロイメントモデルの導入に伴い](#index-management-using-blue-green-deployments) 、次の2組のインデックスが存在します。 1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
-
-<!-- The version of the index that is used is configured using flags in the index definitions via the `useIfExist` flag. An index may be used in only one version of the application (for example only blue or only green), or in both versions. Detailed documentation is available at [Index Management using Blue-Green Deployments](#index-management-using-blue-green-deployments). -->
+1. Cloud ServiceとしてのAEMの高レベルでは、 [Blue-Greenデプロイメントモデルが導入され](#index-management-using-blue-green-deployments) 、2組のインデックスが存在します。 1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
 
 1. インデックス作成ジョブがCloud Managerのビルドページで完了したかどうかを確認でき、新しいバージョンでトラフィックを受信する準備ができたら通知を受け取ります。
 
-1. 制限事項： 現在、クラウドサービスとしてのAEMでのインデックス管理は、luceneタイプのインデックスに対してのみサポートされています。
+1. 制限事項： 現在、Cloud ServiceとしてのAEMでのインデックス管理は、lucene型のインデックスに対してのみサポートされています。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -56,7 +54,7 @@ AS NOTE: the above is internal for now.
 1. 既存のインデックス定義を更新しています。 これは、既存のインデックス定義の新しいバージョンを追加することを意味します
 1. 冗長または古い既存のインデックスを削除しています。
 
-上記のポイント1と2の両方について、それぞれのCloud Managerリリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。 詳しくは、「クラウドサービスとしてのAEMへの [デプロイ」ドキュメントを参照してください](/help/implementing/deploying/overview.md)。
+上記のポイント1と2の両方について、それぞれのCloud Managerリリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。 詳しくは、Cloud ServiceドキュメントとしてのAEMへの [デプロイを参照してください](/help/implementing/deploying/overview.md)。
 
 ### 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
@@ -86,7 +84,7 @@ AS NOTE: the above is internal for now.
 
 >[!TIP]
 >
->クラウドサービスとしてのAEMに必要なパッケージ構造について詳しくは、ドキュメントの [AEMプロジェクト構造を参照してください。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>Cloud ServiceとしてのAEMに必要なパッケージ構造について詳しくは、ドキュメントの [AEMプロジェクト構造を参照してください。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 青 — 緑の導入を使用したインデックス管理 {#index-management-using-blue-green-deployments}
 
@@ -126,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` は、AEMをクラウドサービスとして使用し、これを既存のインデックスの代わりとしてマークする場合に必要です。
+> `<indexName>-custom-<customerVersionNumber>` は、AEMをCloud Serviceとして、既存のインデックスの代わりとしてマークする場合に必要です。
 
 | 索引 | 標準インデックス | バージョン1で使用 | バージョン2で使用 |
 |---|---|---|---|
@@ -161,7 +159,9 @@ AS NOTE: the above is internal for now.
 
 新しいバージョンのアプリケーション以降で使用する「/oak:index/acmeProduct-custom-1」という名前のインデックスを追加するには、インデックスを次のように設定する必要があります。
 
-`/oak:index/acmeProduct-custom-1`
+`*mk.*assetLuceneIndex-1-custom-1`
+
+これは、インデックス名の前にカスタム識別子を付け、その後にドット(**.**). 識別子の長さは1 ～ 4文字である必要があります。
 
 上記のように、これにより、新しいバージョンのアプリケーションでのみインデックスが使用されます。
 
