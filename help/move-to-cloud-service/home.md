@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service への移行
 description: Adobe Experience Manager as a Cloud Service への移行に関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: b00c837e0de6e3ca00c9bc637bc3c53e26fff156
+source-git-commit: ffdb0a39684f1ccc587bf1cc401811a7ca6d649d
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 76%
+source-wordcount: '510'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +47,6 @@ Cloud Service への移行プロセスに含まれている以下の段階につ
 | [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Cloud ServiceとしてExperience Managerサイトを作成、管理する方法を理解します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Experience ManagerアセットをCloud Serviceとして使用および管理する方法を理解します。 |
-| [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | 開発および展開に関するトピックを含む、Cloud Service展開としてExperience Managerをカスタマイズする方法について説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Cloud ServiceとしてConnectorsをExperience Managerに統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Cloud ServiceとしてのExperience Managerのバックエンド操作について説明します。 |
