@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 5437329c55bd7da6d8b966a7f01c9e57ff1feb59
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 16%
+ht-degree: 42%
 
 ---
 
 
-# Use the Rich Text Editor to author content {#use-rich-text-editor-to-author-content}
+# リッチテキストエディターを使用したコンテンツのオーサリング {#use-rich-text-editor-to-author-content}
 
 リッチテキストエディタ(RTE)は、テキストコンテンツを追加する基本的な文書パーツ [!DNL Adobe Experience Manager]です。 また、オーサリングを可能にする他の多くのコンポーネントはRTEに基づいています。 Experience Manager開発者はRTEをカスタマイズでき、管理者は作成者が使用するRTEを設定できます。
 
@@ -26,25 +26,25 @@ ht-degree: 16%
 
 通常、ツールバーには次のオプションがあります。
 
-* **形式**: テキストを太字または斜体にしたり、テキストに下線を引きます。
-* **リスト**: 箇条書き記号または番号付きリストを作成し、インデントを設定します。
-* **ハイパーリンク**: リンクを作成します。
-* **リンク解除**: ハイパーリンクを削除
+* **形式**：テキストを太字や斜体にしたり、テキストに下線を引いたりします。
+* **リスト**：箇条書き記号または番号付きリストを作成し、インデントを設定します。
+* **ハイパーリンク**：リンクを作成します。
+* **リンク解除**：ハイパーリンクを削除します。
 * **フルスクリーン**: エディターをフルスクリーンモードで開きます。
-* **閉じる**: 編集を停止します。
-* **保存**: 変更を保存します。
+* **閉じる**：編集を停止します。
+* **保存**：変更を保存します。
 
-## Full-screen editing {#full-screen-editing}
+## フルスクリーン編集 {#full-screen-editing}
 
-テキストベースのコンポーネントの場合は、 ![ツールバーのフルスクリーンモードの](/help/sites-cloud/authoring/assets/editing-full-screen.png) RTEフルスクリーンボタン [（フルスクリーンモード）をクリックしてリッチテキストエディターを開き](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) 、ページコンテンツの残りを非表示にします。
+For text-based components, click the full-screen mode ![RTE full screen button](/help/sites-cloud/authoring/assets/editing-full-screen.png) from the [toolbar](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) to open the rich text editor and hides the rest of the page content.
 
-全画面表示モードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。使用できるオプションは、設定によって異なります。 <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。使用できるオプションは、設定によって異なります。 <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
 
-![全画面表示モードの RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
+![フルスクリーンモードの RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
 リッチテキストエディターのその他のオプションを次に示します。
 
-* **アンカー**: 後でリンクしたり参照を作成したりできるテキストにアンカーを作成します。
+* **アンカー**：テキストにアンカーを作成し、後でそのアンカーへのリンクや参照が作成できます。
 * **テキストを左揃え**.
 * **テキストを中央揃え**.
 * **テキストを右揃え**.
@@ -53,7 +53,7 @@ ht-degree: 16%
 
 >[!Tip]
 >
->ネストされたリストをRTE [!DNL Microsoft Word] にコピーすると、結果が異なる場合があります。 代わりに、テキストとして貼り付け、手動で調整を行います。
+>Copying nested lists from [!DNL Microsoft Word] into the RTE can give inconsistent results. 代わりに、テキストとして貼り付け、手動で調整をおこないます。
 
 >[!MORELIKETHIS]
 >
