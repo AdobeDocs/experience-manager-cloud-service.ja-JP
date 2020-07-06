@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
 workflow-type: tm+mt
 source-wordcount: '2732'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 73%
 
 >[!IMPORTANT]
 >
->画像プロファイルはPDFファイルには適用されません。
+>イメージプロファイルは PDF ファイルには適用されません。
 
 ## 切り抜きツールオプション {#crop-options}
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-スマート切り抜きの座標は、縦横比に応じて異なります。 つまり、画像プロファイルの各種スマート切り抜き設定で、画像プロファイルに追加されたサイズの縦横比が同じ場合、Dynamic Mediaに同じ縦横比が送信されます。 このため、同じ切り抜き領域を使用することをお勧めします。 これにより、画像プロファイルで使用される様々なサイズに影響を与えません。
+スマート切り抜きの座標は、縦横比に応じて異なります。つまり、画像プロファイルの各種スマート切り抜き設定で、画像プロファイルに追加されたサイズの縦横比が同じ場合、Dynamic Mediaに同じ縦横比が送信されます。 このため、同じ切り抜き領域を使用することをお勧めします。これにより、画像プロファイルで使用される様々なサイズに影響を与えません。
 
-作成する各スマート切り抜き生成には、追加の処理が必要になることに注意してください。 例えば、スマート切り抜きの縦横比を 6 つ以上追加すると、アセット取り込み速度が遅くなる可能性があります。また、システムの負荷が増大するおそれもあります。スマート切り抜きはフォルダーレベルで適用できるので、必要な場所で&#x200B;*のみ*&#x200B;フォルダーに使用することをお勧めします。
+スマート切り抜きの生成のたびに、追加の処理が必要になることに注意してください。例えば、スマート切り抜きの縦横比を 6 つ以上追加すると、アセット取り込み速度が遅くなる可能性があります。また、システムの負荷が増大するおそれもあります。スマート切り抜きはフォルダーレベルで適用できるので、必要な場所で&#x200B;*のみ*&#x200B;フォルダーに使用することをお勧めします。
 
-2つの画像切り抜きオプションから選択できます。 また、カラースウォッチと画像スウォッチの作成を自動化するオプションもあります。
+2 つの画像切り抜きオプションから選択できます。また、カラーおよび画像スウォッチの作成を自動化するオプションもあります。
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ ht-degree: 73%
      <li>切り抜きの開始点：「左」が X、「上」が Y です。</li>
      <li>水平方向の計算：元の画像の水平方向のピクセルサイズから「左」と「右」を差し引きます。</li>
      <li>垂直方向の計算：垂直方向の高さ（ピクセル）から「上」と「下」を差し引きます。</li>
-    </ul> <p>例えば、4000 x 3000 ピクセルの画像があるとします。次の値を使用します。 [上] = 250、[下] = 500、[左] = 300、[右] = 700</p> <p>左上 (300,250) から、(4000-300-700, 3000-250-500) つまり (3000,2250) のフィルスペースを使って切り抜きます。</p> </td>
+    </ul> <p>例えば、4000 x 3000 ピクセルの画像があるとします。値として「上」= 250、「下」= 500、「左」= 300、「右」= 700 を使用します。</p> <p>左上 (300,250) から、(4000-300-700, 3000-250-500) つまり (3000,2250) のフィルスペースを使って切り抜きます。</p> </td>
   </tr>
   <tr>
    <td>スマート切り抜き</td>
@@ -68,7 +68,7 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->アンシャープマスクは、PTIFF（Pyramid TIFF）内のダウンスケールされたレンディション（50％以上ダウンサンプルされたもの）にのみ適用されます。つまり、ptiff内の最大サイズのレンディションは、サムネールなどの小さいサイズのレンディションは変更される（そしてアンシャープマスクが表示される）のに対し、アンシャープマスクの影響を受けません。
+>アンシャープマスクは、PTIFF（Pyramid TIFF）内のダウンスケールされたレンディション（50％以上ダウンサンプルされたもの）にのみ適用されます。つまり、ptiff 内の最大サイズのレンディションはアンシャープマスクの影響を受けませんが、サムネールのような小さいサイズのレンディションは変更されます（そしてアンシャープマスクを表示します）。
 
 「**[!UICONTROL アンシャープマスク]**」には次のフィルタリングオプションがあります。
 
@@ -105,7 +105,7 @@ Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/asset
 
 **Dynamic Media イメージプロファイルを作成するには**：
 
-1. AEM のロゴをタップし、**[!UICONTROL ツール／アセット／イメージプロファイル]**&#x200B;に移動します。
+1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
 1. Tap **[!UICONTROL Create]** to add a new Image Profile.
 1. プロファイル名を入力し、アンシャープマスクのほか、切り抜きとスウォッチのいずれかまたは両方の値を入力します。
 
@@ -119,7 +119,7 @@ Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/asset
 
 ## Dynamic Media イメージプロファイルの編集または削除 {#editing-or-deleting-image-profiles}
 
-1. AEM のロゴをタップし、**[!UICONTROL ツール／アセット／イメージプロファイル]**&#x200B;に移動します。
+1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
 1. Select the Image Profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. 削除するには、「**[!UICONTROL 画像処理プロファイルを削除]**」を選択します。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
@@ -150,7 +150,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 #### Applying Dynamic Media Image Profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. AEM のロゴをタップし、**[!UICONTROL ツール／アセット／イメージプロファイル]**&#x200B;に移動します。
+1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
 1. 1つまたは複数のフォルダに適用する画像プロファイルを選択します。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
@@ -167,7 +167,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 ### Applying an Dynamic Media Image Profile globally {#applying-an-image-profile-globally}
 
-特定のフォルダーにプロファイルを適用できるだけでなく、グローバルにプロファイルを適用することもできます。これにより、AEM アセットにアップロードされている、すべてのフォルダー内にあるすべてのコンテンツに、選択したプロファイルを適用できます。
+特定のフォルダーにプロファイルを適用できるだけでなく、グローバルにプロファイルを適用することもできます。これにより、AEM Assets にアップロードされている、すべてのフォルダー内にあるすべてのコンテンツに、選択したプロファイルを適用できます。
 
 後で変更した既存のビデオプロファイルが存在するフォルダー内のアセットを再処理できます。[処理プロファイルを編集した後のフォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
@@ -201,7 +201,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 1. フォルダーをタップして、その内容を開きます。
 1. スマート切り抜きまたはスマートスウォッチを調整したい画像をタップます。
-1. In the toolbar, tap **[!UICONTROL Smart Crop]**.
+1. ツールバーで、「**[!UICONTROL スマート切り抜き]**」をタップします。
 
 1. 次のいずれかの操作をおこないます。
 
@@ -271,7 +271,7 @@ You can remove an Image Profile from a folder from within the **[!UICONTROL Tool
 
 ### Removing Dynamic Media Image Profiles from folders by way of Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. AEM のロゴをタップし、**[!UICONTROL ツール／アセット／イメージプロファイル]**&#x200B;に移動します。
+1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
 1. 1つまたは複数のフォルダから削除する画像プロファイルを選択します。
 1. 「**[!UICONTROL フォルダーから処理プロファイルを削除]**」をタップし、プロファイルを削除するフォルダーを 1 つ以上選択して、「**[!UICONTROL 削除]**」をタップします。
 
@@ -282,6 +282,6 @@ You can remove an Image Profile from a folder from within the **[!UICONTROL Tool
 1. Tap the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an Image Profile from.
 1. チェックマークをタップして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をタップします。
 1. 「**[!UICONTROL イメージプロファイル]**」タブを選択します。
-1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
+1. 「**[!UICONTROL プロファイル名]**」ドロップダウンリストから「**[!UICONTROL なし]**」を選択し、「**[!UICONTROL 保存して閉じる]**」をタップします。
 
    既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
