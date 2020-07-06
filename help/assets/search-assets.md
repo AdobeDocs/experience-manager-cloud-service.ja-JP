@@ -3,16 +3,16 @@ title: AEM でのデジタルアセットと画像の検索
 description: AEM のフィルターパネルを使用した必要なアセットの検索方法と検索で表示されたアセットの使用方法を説明します。
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7317a5db6ed348f99b2290d72ddf6e540fae5456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4529'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# AEM でのアセットの検索 {#search-assets-in-aem}
+# AEM でのアセットの検索{#search-assets-in-aem}
 
 Adobe Experience Manager の使いやすいアセット検出オプションを使用して、コンテンツベロシティ（コンテンツ創出の高速化）を向上させることができます。標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などです。AEM Assets ユーザーインターフェイスまたは他のアプリケーションやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
 
@@ -111,7 +111,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、[AEM での検索](https://helpx.adobe.com/jp/experience-manager/kt/help/assets/search-feature-video-use.html)を参照してください。
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6&captions=jpn)
 
 *検索結果のランク付けの方法とランクへの影響について*
 
@@ -178,7 +178,7 @@ path、limit、size および orderby の各プロパティを他のプロパテ
 
 複雑なクエリの検索形式の例：
 
-* 複数のファセットフィールドを持つアセットをすべて表示する（例：title=John Doe および creatortool=Adobe Photoshop）： `title:"John Doe" creatortool : Adobe*`
+* 複数のファセットフィールドを持つアセットをすべて表示する（例：title=John Doe および creatortool=Adobe Photoshop）：`title:"John Doe" creatortool : Adobe*`
 * ファセット値が 1 語でなく文になっているアセットをすべて表示する（例：title=Scott Reynolds）：`title:"Scott Reynolds"`
 * 1 つのプロパティに複数の値が指定されているアセットを表示する（例：title=Scott Reynolds または John Doe）：`title:"Scott Reynolds" OR "John Doe"`
 * プロパティ値が特定の文字列で始まるアセットを表示する（例：title=Scott Reynolds）：`title:Scott*`
@@ -403,7 +403,7 @@ You can search for digital assets based on one or more of the following properti
 
 検索結果を並べ替えると、必要なアセットをすばやく見つけることができます。検索結果の並べ替えはリスト表示で機能し、**[!UICONTROL フィルター]**&#x200B;パネルで「**[!UICONTROL [ファイル](#searchui)]**」を選択した場合のみおこなえます。[!DNL Assets]では、サーバー側の並べ替え機能を使用して、フォルダー内のすべてのアセット（どれだけ多くても対応可能）や検索クエリの結果をすばやく並べ替えます。サーバー側の並べ替えにより、クライアント側の並べ替えよりも高速で正確な結果が得られます。
 
-リスト表示では、任意のフォルダー内のアセットを並べ替える場合と同じように、検索結果を並べ替えることができます。並べ替えは、名前、タイトル、ステータス、ディメンション、サイズ、評価、使用状況、作成日、変更日、発行日、ワークフロー、チェックアウトの各列に対して機能します。
+リスト表示では、任意のフォルダー内のアセットを並べ替える場合と同じように、検索結果を並べ替えることができます。並べ替えは、「名前」、「タイトル」、「ステータス」、「寸法」、「サイズ」、「評価」、「使用状況」、「作成日」、「変更日」、「公開日」、「ワークフロー」、「チェックアウト済み」の各列でおこなわれます。
 
 並べ替え機能の制限事項については、[制限事項](#limitations)を参照してください。
 
