@@ -3,11 +3,11 @@ title: Adobe Experience Manager でのデジタルアセット管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4b4b5fbbd07851485d216b502c66037cccef134
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4419'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,11 +43,11 @@ ht-degree: 96%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAMユーザーがリポジトリに既に存在する1つ以上のアセットをアップロードした場合、は重複を検出し、ユーザーに通知します。 [!DNL Experience Manager] 重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。 この機能を有効にするには、 [!UICONTROL Adobe AEM Cloud Asset Duplication Detectorを設定します]。 OSGi設定 [の実行方法を参照](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)。 複製検出は、に保存された一意の `dam:sha1` 値に基づき `jcr:content/metadata/dam:sha1`ます。 つまり、ファイル名が異なる場合でも重複アセットが検出されます。
+DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
 
-![重複アセットのOSGi設定の検出](assets/duplicate-detection.png)
+![重複アセット検出の OSGi 設定](assets/duplicate-detection.png)
 
-有効にすると、Experience Managerは重複アセットの通知をインボックスに送信します。 複数の重複の集計結果です。 ユーザーは、結果に基づいてアセットを削除するよう選択できます。
+有効にすると、Experience Manager は重複アセットの通知をインボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
 
 ![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
 
@@ -200,7 +200,7 @@ DAMユーザーがリポジトリに既に存在する1つ以上のアセット�
 
    **レンディションの削除**
 
-   **[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択し、ツールバーの「**[!UICONTROL レンディションを削除]**」アイコンをタップまたはクリックします。アセット処理の完了後は、レンディションを一括削除することはできません。個々のアセットについては、ユーザインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するか、アセットを削除して削除したアセットを再度アップロードするように、[!DNL Experience Manager] をカスタマイズできます。
+   **[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択し、ツールバーの「**[!UICONTROL レンディションを削除]**」アイコンをタップまたはクリックします。アセット処理の完了後は、レンディションを一括削除することはできません。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するか、アセットを削除して削除したアセットを再度アップロードするように、[!DNL Experience Manager] をカスタマイズできます。
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
