@@ -1,21 +1,21 @@
 ---
-title: AEMでのクラウドサービスとしてのキャッシュ
-description: 'AEMでのクラウドサービスとしてのキャッシュ '
-translation-type: tm+mt
+title: AEM as a Cloud Service でのキャッシュ
+description: 'AEM as a Cloud Service でのキャッシュ '
+translation-type: ht
 source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1358'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # 概要 {#intro}
 
-トラフィックは、CDNを経由してApache Webサーバーレイヤーに渡されます。このレイヤーは、ディスパッチャーを含むモジュールをサポートします。 パフォーマンスを向上させるために、ディスパッチャーは主にキャッシュとして使用され、発行ノードで処理を制限します。
-ルールをディスパッチャーの設定に適用して、デフォルトのキャッシュ有効期限の設定を変更し、CDNでのキャッシュを可能にします。 Note that dispatcher also respects the resulting cache expiration headers if `enableTTL` is enabled in the dispatcher configuration, implying that it will refresh specific content even outside of content being republished.
+トラフィックは、CDN を経由して Apache Web サーバーレイヤーに渡されます。このレイヤーは、Dispatcher を含むモジュールをサポートします。パフォーマンスを向上させるために、Dispatcher は主にキャッシュとして使用され、公開ノードでの処理を制限します。
+Dispatcher の設定にルールを適用して、デフォルトのキャッシュ有効期限の設定を変更し、CDN でのキャッシュを可能にします。Dispatcher の設定で `enableTTL` が有効な場合、Dispatcher は、結果として生成されるキャッシュの有効期限のヘッダーも順守します。これは、再公開されるコンテンツの外部でも特定のコンテンツが更新されることを意味します。
 
-また、このページでは、ディスパッチャーキャッシュの無効化の方法、およびクライアント側ライブラリに関するブラウザーレベルでのキャッシュの動作についても説明します。
+また、このページでは、Dispatcher キャッシュの無効化の方法、およびクライアントサイドライブラリに関するブラウザーレベルでのキャッシュの動作についても説明します。
 
 ## キャッシュ {#caching}
 
@@ -38,7 +38,7 @@ ht-degree: 85%
 { /glob "*" /type "allow" }
 ```
 
-* 特定のコンテンツがキャッシュされないようにするには、Cache-Controlヘッダーを「private」に設定します。 例えば、次の例では、&quot;myfolder&quot;という名前のディレクトリ下のhtmlコンテンツがキャッシュされないようにします。
+* 特定のコンテンツがキャッシュされないようにするには、Cache-Control ヘッダーを「private」に設定します。例えば、次の例では、「myfolder」という名前のディレクトリ下の html コンテンツがキャッシュされないようにします。
 
 ```
 <LocationMatch "\/myfolder\/.*\.(html)$">.  // replace with the right regex
@@ -81,9 +81,9 @@ src/conf.dispatcher.d/cache の下のファイルに、次のルール（デフ�
 * HTML／Text ファイルタイプに使用する `EXPIRATION_TIME` 変数はデフォルトに設定できません
 * キャッシュの有効期限は、HTML/Text の節で説明したのと同じ LocationMatch 方法で、適切な正規表現を指定することで設定できます
 
-## ディスパッチャーキャッシュの無効化 {#disp}
+## Dispatcher キャッシュの無効化 {#disp}
 
-一般に、ディスパッチャーキャッシュを無効にする必要はありません。 代わりに、コンテンツが再公開される際にディスパッチャーがキャッシュを更新し、CDNがキャッシュの有効期限のヘッダーを考慮する必要があります。
+一般に、Dispatcher キャッシュを無効にする必要はありません。代わりに、コンテンツが再公開される際に Dispatcher がキャッシュを更新し、CDN がキャッシュの有効期限のヘッダーを考慮することを信頼できます。
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
