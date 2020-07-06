@@ -1,17 +1,17 @@
 ---
 title: アセットのデジタルアセット管理ソリューションにおけるアクセシビリティ。
-description: クラウドサービスとしてのAdobe Experience Managerのアクセシビリティ機能が、ユーザーを無効にする際にどのように役立つかを知っています。
+description: Adobe Experience Manager as a Cloud Service のアクセシビリティ機能が、障碍のあるユーザーにどのように役立つかを理解する。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cbaa8161a87c765c9ec7581d41df5212f5eb7ffc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Accessibility in Adobe Experience Manager Assets as a Cloud Service {#accessibility-in-aem-assets}
+# Adobe Experience Manager Assets as a Cloud Service のアクセシビリティ{#accessibility-in-aem-assets}
 
-アドビは、無効になっているユーザーを含め、すべてのユーザー向けに製品を作成しています。 Adobe Experience Managerは、障害を持つユーザーのニーズに合わせて継続的に拡張されます。 アドビオファーは、該当する標準の詳細を説明する製品の準拠情報を提供し、アクセシビリティ機能の概要を説明しています。
-詳しくは、AEMaCSのACRを参照してください。
+アドビは、障碍のあるユーザーを含め、すべてのユーザーを対象に製品を作成しています。Adobe Experience Manager は、障碍のあるユーザーのニーズに合わせて継続的に機能強化がおこなわれています。アドビは、製品に対して適用する標準を詳細説明する準拠情報を提供して、アクセシビリティ機能の概要を説明しています。
+詳しくは、AEMaaCS の ACR を参照してください。
