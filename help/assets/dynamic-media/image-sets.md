@@ -1,11 +1,11 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2050'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 99%
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：画像セット {#quick-start-image-sets}
+## クイックスタート：画像セット{#quick-start-image-sets}
 
 すぐに使い始めるには：
 
-1. [複数の表示用のプライマリソース画像をアップロードします。](#uploading-assets-in-image-sets)
+1. [複数ビュー用のプライマリソース画像をアップロードします。](#uploading-assets-in-image-sets)
 
    まずは画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最大サイズで 2,000 ピクセル以上の画像を使用してください。AEM Assets では多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
 
@@ -56,7 +56,7 @@ ht-degree: 99%
 
    管理者は、画像セットビューアプリセットを作成または編集できます。画像セットを特定のビューアプリセットで表示するには、画像セットを選択し、左側のレールのドロップダウンメニューで「**[!UICONTROL ビューア]**」を選択します。
 
-   **[!UICONTROL ツール／アセット／ビューアプリセット]**&#x200B;を選択して、ビューアプリセットを作成または編集します。
+   **[!UICONTROL ツール／Assets／ビューアプリセット]**&#x200B;を選択して、ビューアプリセットを作成または編集します。
 
 1. （オプション）バッチセットプリセットを使用して作成した[画像セットの表示](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)
 1. [画像セットをプレビューします。](/help/assets/dynamic-media/previewing-assets.md)
@@ -105,7 +105,7 @@ ht-degree: 99%
 >* ブラック、ブラウンおよびグリーンの色のサムネール。
 
 
-## 画像セットの作成 {#creating-image-sets}
+## 画像セットの作成{#creating-image-sets}
 
 画像セットは、ユーザーインターフェイスまたは API 経由で作成できます。ここでは、UI で画像セットを作成する方法について説明します。
 
@@ -164,7 +164,7 @@ ht-degree: 99%
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した画像セットが、作成先のフォルダーに表示されます。
 
-## 画像セットの表示 {#viewing-image-sets}
+## 画像セットの表示{#viewing-image-sets}
 
 画像セットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して自動的に作成することもできます。
 
@@ -178,11 +178,11 @@ ht-degree: 99%
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* 任意のセットのメンバー画像で、**セット**&#x200B;メニューを選択して、アセットがメンバーとして含まれているセットを表示します。
+* 任意のセットのメンバー画像で、**[!UICONTROL セット**&#x200B;メニューを選択して、アセットがメンバーとして含まれているセットを表示します。
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 検索で、「**フィルター**」を選択し、「**Dynamic Media**」を展開して「**[!UICONTROL セット]**」を選択します。
+* 検索で、「**[!UICONTROL フィルター**」を選択し、「**[!UICONTROL Dynamic Media**」を展開して「**[!UICONTROL セット]**」を選択します。
 
    検索結果として、UI で手動で作成した一致するセットか、バッチセットプリセットを使用して自動的に作成した一致するセットが返されます。自動セットの場合、検索クエリは、AEM での検索とは異なる「次の値で始まる」検索条件を使用して実行されます。AEM での検索は、「次を含む」検索条件に基づいて実行されます。フィルターを「**[!UICONTROL セット]**」に設定するのが、自動セットを検索する唯一の方法です。
 
@@ -192,7 +192,7 @@ ht-degree: 99%
 >
 >[画像セットの編集](#editing-image-sets)の説明に従って、ユーザーインターフェイスを通じて画像セットを表示できます。
 
-## 画像セットの編集 {#editing-image-sets}
+## 画像セットの編集{#editing-image-sets}
 
 画像セットには、次のような様々な編集タスクを実行できます。
 
@@ -228,10 +228,10 @@ ht-degree: 99%
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
 
-## 画像セットのプレビュー {#previewing-image-sets}
+## 画像セットのプレビュー{#previewing-image-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## 画像セットの公開 {#publishing-image-sets}
+## 画像セットの公開{#publishing-image-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
