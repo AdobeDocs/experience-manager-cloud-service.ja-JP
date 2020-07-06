@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 96%
    + [スマートイメージング](dynamic-media/imaging-faq.md)
    + [Dynamic Media アセットの配信](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media でのホットリンク保護の有効化](dynamic-media/hotlink-protection.md)
-   + [3Dサポート](dynamic-media/assets-3d.md)
+   + [3D サポート](dynamic-media/assets-3d.md)
    + [画像セット](dynamic-media/image-sets.md)
    + [パノラマ画像](dynamic-media/panoramic-images.md)
    + [混在メディアセット](dynamic-media/mixed-media-sets.md)
