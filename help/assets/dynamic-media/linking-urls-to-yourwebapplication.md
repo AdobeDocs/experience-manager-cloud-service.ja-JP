@@ -1,11 +1,11 @@
 ---
 title: Web アプリケーションへの URL のリンク
 description: Dynamic Media で Web アプリケーションに URL をリンクする方法
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dae5c0ed82687415719cd2d72f98028cf0a8e64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 
 [Web ページへのビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
 
-See also [Linking YouTube URLs to your Web Application](video.md).
+[Web アプリケーションへの YouTube URL のリンク](video.md)も参照してください。
 
-See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
+[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)も参照してください。
 
-See also [Uploading Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+[アセットのアップロード](/help/assets/manage-digital-assets.md#uploading-assets)も参照してください。
 
 ## アセットの URL の取得 {#obtaining-a-url-for-an-asset}
 
@@ -50,7 +50,7 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
 1. 画像プリセット URL またはビューアプリセット URL をコピーする&#x200B;*公開済み*&#x200B;のアセットの場所に移動し、そのアセットをタップして開きます。
 
-   URL をコピーするには、その前にアセットを公開しておく必要があります。****&#x200B;また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
+   URL をコピーするには、その&#x200B;*前に*&#x200B;アセットを&#x200B;*公開*&#x200B;しておく必要があります。また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
 
    [アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
 
@@ -84,7 +84,7 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
 Dynamic Media は静的アセットの配信をサポートします。静的アセットとは、画像やビデオに留まらない追加アセットです。配信がサポートされる静的アセットの形式は以下のとおりです。
 
-* 3Dファイル
+* 3D ファイル
 * アニメーション GIF
 * オーディオファイル
 * CSS
@@ -98,7 +98,7 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 
 1. URL をコピーする「公開済み」の静的アセットの場所に移動し、アセットをタップして開きます。
 
-   URL をコピーするには、その前に静的アセットを公開しておく必要があります。****
+   URL をコピーするには、その&#x200B;*前に*&#x200B;静的アセットを&#x200B;*公開*&#x200B;しておく必要があります。
 
    [アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
 
@@ -109,14 +109,14 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          例： `https://aem.com/is/content/adobe/image.gif`
-   * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
+   * **[!UICONTROL アセット／動的レンディション]**&#x200B;をタップし、静的アセットの動的レンディションをタップして URL をコピーします。
 
       コピーした URL を変更して、`is/image/` の代わりにパスの `is/content` を使用します。
 
 
 ## 公開されたビデオレンディションのビデオ URL の取得 {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. AEM で、**[!UICONTROL ツール／導入／クラウド／Cloud Services]** に移動します。
+1. AEM で、**[!UICONTROL ツール／デプロイメント／クラウド／Cloud Services]** に移動します。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
 1. 「**[!UICONTROL 利用可能な設定]**」の下で、必要な設定をタップします。
 
@@ -132,7 +132,7 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 
    例えば、登録 ID が `87654321|MyCompany` の場合、顧客名は `MyCompany` です。
 
-1. ページの左上隅付近で、「**Cloud Services**」をタップしてから「AEM」アイコンをタップし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
+1. ページの左上隅付近で、「**[!UICONTROL Cloud Services**」をタップしてから「AEM」アイコンをタップし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
 1. JCR（Java コンテンツリポジトリ）のビデオレンディションパス全体をコピーします。
 
    例えば、ビデオのレンディションパスは、次のように表示されることがあります。
@@ -151,9 +151,9 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 
    これは、公開されたビデオレンディションの完全なビデオ URL です。
 
-## アダプティブストリーミング（HLS）用のビデオ URL の取得 {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## アダプティブストリーミング（HLS）用のビデオ URL の取得{#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. AEM で、**[!UICONTROL ツール／導入／クラウド／Cloud Services]** に移動します。
+1. AEM で、**[!UICONTROL ツール／デプロイメント／クラウド／Cloud Services]** に移動します。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
 1. 「**[!UICONTROL 利用可能な設定]**」の下で、必要な設定をタップします。
 1. **[!UICONTROL Dynamic Media Cloud Services を設定]**&#x200B;ページで、以下の作業をおこないます。
