@@ -1,11 +1,11 @@
 ---
 title: ページへの Dynamic Media アセットの追加
 description: AEM 内のページに Dynamic Media コンポーネントを追加する方法
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a4c06ed7a01cd61ab1e53bba8acc5e276c8bad99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3124'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ AEM を WCM として使用している場合は、Dynamic Media アセットを
 
 ## ページへの Dynamic Media コンポーネントの追加 {#adding-a-dynamic-media-component-to-a-page}
 
-ページに3Dメディア、Dynamic Media、インタラクティブメディア、パノラマメディア、スマート切り抜きビデオまたはビデオ360メディアの各コンポーネントを追加する方法は、ページにコンポーネントを追加する方法と同じです。 Dynamic Media コンポーネントについては、後の節で説明します。
+3D メディア、Dynamic Media、インタラクティブメディア、パノラマメディア、スマート切り抜きビデオ、ビデオ 360 メディアのいずれかのコンポーネントを 1 つのページに追加することは、コンポーネントを任意のページに追加することと同じです。Dynamic Media コンポーネントについては、後の節で説明します。
 
 **ページへの Dynamic Media コンポーネントの追加**
 
@@ -39,7 +39,7 @@ AEM を WCM として使用している場合は、Dynamic Media アセットを
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
-1. ページにドロップした Dynamic Media コンポーネントに対応する設定ダイアログボックスが開きます。[必要に応じて、コンポーネントのオプションを設定します](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components)。
+1. ページにドロップした Dynamic Media コンポーネントに対応する設定ダイアログボックスが開きます。必要に応じて、[コンポーネントのオプションを設定します](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components)。
 
    以下の例では、Dynamic Media **[!UICONTROL ビデオ 360 メディア]**&#x200B;コンポーネントのダイアログボックスと、「ビューアプリセット」ドロップダウンリストで利用可能なオプションが表示されています。
 
@@ -96,7 +96,7 @@ Dynamic Media コンポーネントのローカライズの方法は 2 つあり
 
 利用可能な Dynamic Media コンポーネントは次のとおりです。
 
-* **** Dynamic Media - 画像、ビデオ、eCatalog、スピンセットなどのアセットに使用します。
+* **[!UICONTROL Dynamic Media]** - 画像、ビデオ、eCatalog、スピンセットなどのアセットに使用します。
 * **[!UICONTROL インタラクティブメディア]** - すべてのインタラクティブアセット（インタラクティブビデオ、インタラクティブ画像、カルーセルセットなど）に使用します。
 * **[!UICONTROL パノラマメディア -]** パノラマ画像またはパノラマ VR 画像アセットに使用します。
 * **[!UICONTROL ビデオ 360 メディア]** - 360 ビデオおよび 360 VR ビデオアセットに使用します。
@@ -117,7 +117,6 @@ Dynamic Media コンポーネントはスマートであり、追加している
 >
 >* 同じページで使用されている Dynamic Media コンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
-
 >
 >
 そのページの各 Dynamic Media コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
@@ -128,7 +127,7 @@ Dynamic Media コンポーネントを追加したときに、「**[!UICONTROL D
 
 * 画像が PTIFF（Pyramid TIFF）ファイルであること。Dynamic Media を有効にする前に読み込まれた画像には、pyramid tiff ファイルはありません。
 
-#### 画像を操作する場合 {#when-working-with-images}
+#### 画像を操作する場合{#when-working-with-images}
 
 Dynamic Media コンポーネントでは、画像セット、スピンセット、混在メディアセットなどの動的イメージを追加できます。ズームイン、ズームアウト、スピンセット内での画像の回転（該当する場合）または別のタイプのセットからの画像の選択をおこなうことができます。
 
@@ -189,15 +188,14 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 >
 >デフォルトでは、Dynamic Media ビデオコンポーネントはアダプティブです。ビデオコンポーネントを固定サイズにする場合は、そのコンポーネントで、「**[!UICONTROL 詳細]**」タブの「**[!UICONTROL 幅]**」と「**[!UICONTROL 高さ]**」を使用してサイズを設定します。
 
-* **ビューアプリセット** - ドロップダウンメニューから既存のビデオビューアプリセットを選択します。探しているビューアプリセットが表示されない場合は、表示できるように設定する必要があります。詳しくは、ビューアプリセットの管理を参照してください。
+* **[!UICONTROL ビューアプリセット** - ドロップダウンメニューから既存のビデオビューアプリセットを選択します。探しているビューアプリセットが表示されない場合は、表示できるように設定する必要があります。詳しくは、ビューアプリセットの管理を参照してください。
 
-* **ビューア修飾子** - ビューア修飾子は、名前=値の組み合わせで &amp; を区切り文字とした形式です。ビューア修飾子を使用すると、Adobe ビューアリファレンスガイドに概略が記されているとおり、ビューアを変更することができます。`posterimage=img.jpg&caption=text.vtt,1` はビューア修飾子の一例です。
+* **[!UICONTROL ビューア修飾子** - ビューア修飾子は、名前=値の組み合わせで &amp; を区切り文字とした形式です。ビューア修飾子を使用すると、Adobe ビューアリファレンスガイドに概略が記されているとおり、ビューアを変更することができます。`posterimage=img.jpg&caption=text.vtt,1` はビューア修飾子の一例です。
 
    ビューア修飾子を使用すると、例えば次のことが可能です。
 
-   * ビデオにキャプションファイルを関連付ける：[キャプション](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
-
+   * ビデオにキャプションファイルを関連付ける：[キャプション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.translate.html)
+   * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.translate.html)
    コンポーネントの「**[!UICONTROL 編集]**」をクリックして、次の詳細設定を編集できます。
 
 * **[!UICONTROL タイトル** - ビデオのタイトルを変更します。
@@ -256,7 +254,6 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 >
 >* 同じページで使用されているインタラクティブメディアコンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
-
 >
 >
 そのページの各インタラクティブメディアコンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
@@ -298,7 +295,6 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 >
 >* 同じページで使用されている&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
-
 >
 >
 そのページの各&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされないことに注意してください。
