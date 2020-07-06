@@ -20,6 +20,7 @@ ht-degree: 98%
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
+
 >
 >
 現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
@@ -147,6 +148,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -321,13 +323,13 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
    * `PUT` でコンテンツフラグメントを正常に更新する
 
-* **201** （作成）
+* **** 201（Created）
 
    次の場合に返されます。
 
    * `POST` でコンテンツフラグメントを正常に作成する
 
-* **404** （見つかりません）
+* **404**（Not Found）
 
    次の場合に返されます。
 
@@ -363,6 +365,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    通常、詳細なエラーメッセージは次のように返されます。
 
    ```xml
