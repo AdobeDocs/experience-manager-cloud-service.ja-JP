@@ -2,22 +2,22 @@
 title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法
 contentOwner: Rick Brough
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '436'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Media アセットの公開 {#publishing-dynamic-media-assets}
+# Dynamic Media アセットの公開{#publishing-dynamic-media-assets}
 
-ダイナミックメディアアセットを公開するには、既にアップロード済みのアセットを選択し、「 **[!UICONTROL 公開]** 」または「 **[!UICONTROL クイック公開]**」をタップします。 ダイナミックメディアアセットが公開されたら、URL経由で、またはページにコードを埋め込む方法で、Webページに含めることができます。
+Dynamic Media アセットを公開するには、既にアップロード済みのアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」をタップします。Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
 
 また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。[Dynamic Media の設定](config-dm.md)を参照してください。
 
-カー **[!UICONTROL ド表示で]**、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さなグローブアイコンが表示されます。 **[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
+**[!UICONTROL カード表示]**&#x200B;で、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さな地球アイコンが表示されます。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 77%
 
 [Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)も参照してください。
 
-See also [Embedding the Dynamic Media Video viewer or Image viewer on a web page.](embed-code.md)
+[Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ See also [Embedding the Dynamic Media Video viewer or Image viewer on a web page
 
 一連のアセットを公開する方法について詳しくは、[アセットの公開](/help/assets/manage-digital-assets.md)を参照してください。
 
-## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media アセットの HTTP/2 配信{#http-delivery-of-dynamic-media-assets}
 
 AEM は現在、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートしています。つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
