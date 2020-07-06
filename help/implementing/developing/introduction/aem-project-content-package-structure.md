@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c2c6ee59849cbe041019e0a4395a499e81a671e0
 workflow-type: tm+mt
 source-wordcount: '2530'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,15 +38,15 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 >
 > 以前のバージョンの AEM と同様に、`/libs` は変更しないでください。`/libs` にデプロイできるのは、AEM 製品コードだけです。
 
-### Oak Indexes {#oak-indexes}
+### Oak インデックス {#oak-indexes}
 
-Oakインデックス(`/oak:index`)は、AEM Cloudサービスのデプロイメントプロセスによって特別に管理されます。 これは、新しいインデックスが展開されて完全に再識別されるまで、Cloud Managerは新しいコードイメージに切り替わる前に待機する必要があるからです。
+Oak インデックス（`/oak:index`）は、AEM Cloud Service のデプロイメントプロセスによって特別に管理されます。これは、新しいインデックスが展開されて完全に再識別されるまで、Cloud Manager は新しいコードイメージに切り替わる前に待機する必要があるからです。
 
-このため、Oakインデックスは実行時に可変ですが、可変パッケージがインストールされる前に、インストールできるように、コードとしてデプロイする必要があります。 したがって、 `/oak:index` 設定はコードパッケージの一部であり、以下に説明するコンテンツパッケージ [の一部ではありません。](#recommended-package-structure)
+このため、Oak インデックスは実行時に可変ですが、可変パッケージがインストールされる前にインストールできるように、コードとしてデプロイする必要があります。したがって、`/oak:index` 設定はコードパッケージの一部であり、[以下に説明する](#recommended-package-structure)コンテンツパッケージの一部ではありません。
 
 >[!TIP]
 >
->AEMでのCloud Serviceとしてのインデックス作成について詳しくは、ドキュメント [コンテンツの検索とインデックス作成を参照してください。](/help/operations/indexing.md)
+>AEM as a Cloud Service のインデックス作成について詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)ドキュメントを参照してください。
 
 ## 推奨されるパッケージ構造 {#recommended-package-structure}
 
@@ -194,7 +194,6 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
    + `/apps/my-app-packages`
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
-
    >[!WARNING]
    >
    >慣例により、サブパッケージが埋め込まれるフォルダーの名前には、`-packages` というサフィックスが付けられます。これにより、デプロイメントコードパッケージとコンテンツパッケージが任意のサブパッケージの対象フォルダー `/apps/<app-name>/...` にデプロイ&#x200B;**されなくなり**、破壊的な循環インストール動作を避けることができます。
