@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b0436c74389ad0b3892d1258d993c00aa470c3ab
 workflow-type: tm+mt
 source-wordcount: '1132'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ AEM と Adobe Stock の間でやり取りができるようにするには、AEM
 1. AEM のロゴをクリックします。**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。「**[!UICONTROL 作成]**」をクリックし、**[!UICONTROL クラウドソリューション]**／**[!UICONTROL Adobe Stock]** を選択します。
 1. 既存の証明書を再使用するか、「**[!UICONTROL 新しい証明書を作成]**」を選択します。
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。証明書を作成したら、公開鍵をダウンロードします。「**[!UICONTROL 次へ]**」をクリックします。
-1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL API キー]**」、「**[!UICONTROL クライアントの秘密鍵]**」および「**[!UICONTROL ペイロード]**」の各フィールドに適切な値を指定します。See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from Adobe Developer Console.
-1. ダウンロードし追加た公開鍵をAdobe Developer Consoleサービスアカウントにダウンロードします。
+1. 「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL API キー]**」、「**[!UICONTROL クライアントの秘密鍵]**」および「**[!UICONTROL ペイロード]**」の各フィールドに適切な値を指定します。これらの値を Adobe 開発者コンソールから取得する方法について詳しくは、[JWT 認証のクイックスタート](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)（英語）を参照してください。
+1. ダウンロードした公開鍵を Adobe 開発者コンソールのサービスアカウントに追加します。
 
 <!--
 TBD: Update this instance when AIO updates their documentation publish URL.
@@ -39,7 +39,7 @@ TBD: Update this instance when AIO updates their documentation publish URL.
 
 ### AEM での Adobe Stock 設定の作成 {#create-adobe-stock-configuration-in-aem}
 
-1. AEM ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Adobe Stock]** に移動します。
+1. AEM ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL Cloud Services]**／**[!UICONTROL Adobe Stock]** に移動します。
 1. 「**[!UICONTROL 作成]**」をクリックして設定を作成し、その設定を既存の IMS 設定に関連付けます。環境パラメーターとして「`PROD`」を選択します。
 1. 「**[!UICONTROL ライセンスが必要なアセットのパス]**」フィールドの場所をそのまま残します。この場所を Adobe Stock アセットを保存する場所に変更しないでください。
 1. すべての必須プロパティを追加して作成を完了します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
@@ -66,7 +66,7 @@ AEM と Adobe Stock の両方でアセットを検索できます。検索場所
 
 * Adobe Stock アセットを検索するには、**[!UICONTROL ナビゲーション]**／**[!UICONTROL アセット]**／**[!UICONTROL Adobe Stock を検索]**&#x200B;をクリックします。
 
-* Adobe Stock と AEM Assets をまたいでアセットを検索するには、検索アイコン ![検索アイコン](assets/do-not-localize/search_icon.png) をクリックします。
+* Adobe Stock と AEM Assets をまたいでアセットを検索するには、検索アイコン![検索アイコン](assets/do-not-localize/search_icon.png)をクリックします。
 
 また、Adobe Stock アセットを選択するには、検索バーに「`Location: Adobe Stock`」と入力します。AEM は、検索されたアセットに対する高度なフィルタリング機能を備えており、サポートされているアセットのタイプや画像の向き、ライセンスの状態などのフィルターを使用して、必要なアセットをすばやく見つけることができます。
 
