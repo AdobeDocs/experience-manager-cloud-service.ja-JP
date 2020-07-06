@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fcae90c8e24dbd2994e8700daf22f5dff039b299
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 11%
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ Experience Manager as a Cloud Service 2020.6.0 の一般的なリリースノー
 
 ## リリース日 {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.6.0 is June 04, 2020.
+[!DNL Experience Manager] as a Cloud Service 2020.6.0 のリリース日は 2020 年 6 月 4 日です。
 
 ## AEM Sites の新機能 {#aem-sites}
 
@@ -24,34 +24,34 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 
 ### 新機能 {#whats-new-2020.6.0}
 
-コアコンポーネントのリリース2.9.0は、次の [AEM Sitesの一部として使用できるようになりました](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) 。
+[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)のリリース 2.9.0 は、AEM Sites の一部として使用できるようになり、以下が含まれます。
 
-* [Adobeクライアントデータレイヤー](https://github.com/adobe/adobe-client-data-layer) とコアコンポーネントの統合
-* すべてのコンポーネント用に設定可能なHTML ID属性
-* 新しいプログレスバーコンポーネント
+* [Adobe クライアントデータレイヤー](https://github.com/adobe/adobe-client-data-layer)とコアコンポーネントの統合
+* すべてのコンポーネント用に設定可能な HTML ID 属性
+* 新しい進行状況バーコンポーネント
 * 多くのバグ修正
 
 ### バグ修正 {#sites-bug-fixes}
 
-* レイアウトコンテナ内のコンポーネントは、レイアウトコンテナをコピーして再度ページに貼り付けた場合には表示されません。
+* レイアウトコンテナ内のコンポーネントが、レイアウトコンテナをコピーして再度ページに貼り付けると表示されない。
 
-* レイアウトコンポーネントのサイズ変更に関する問題を修正しました。
+* レイアウトコンポーネントのサイズ変更に関する問題を修正。
 
-* ルーティング角度のみのページとAEM/Angularページを管理する機能が追加されました。
+* Angular のみのページと、AEM および Angular ページのルーティングを管理する機能を追加。
 
 ### アクセシビリティ {#accessibility}
 
-* 下向き矢印を使用して参照モードで移動する際に、[ **ページを作成** ]ダイアログで[Masonry]項目にナレーションの役割と状態を使用できるようになりました。
+* 下向き矢印を使用して参照モードで移動する際に、**ページを作成**&#x200B;ダイアログで、Masonry 項目の役割とステートのナレーションが可能になりました。
 
-* ナビゲーションにリンクを追加し、ユーザーがメインコンテンツにスキップできるようにしました。
+* ナビゲーションにリンクを追加し、ユーザーがスキップしてメインコンテンツに移動できるようにしました。
 
 * スクリーンリーダーの機能強化。
 
-## Cloud ServiceとしてのAEMの基盤における新機能 {#foundations}
+## AEM as a Cloud Service の基盤における新機能 {#foundations}
 
-AEMプロジェクトのpom.xml内のリモートリポジトリへの参照をすべて削除すると、AEMプロジェクトのビルド時間が短縮され `https://downloads.experiencecloud.adobe.com/content/maven/public`ます。
+AEM プロジェクトの pom.xml 内のリモートリポジトリへの参照をすべて削除することで、AEM プロジェクトのビルド時間が短縮されます`https://downloads.experiencecloud.adobe.com/content/maven/public`。
 
-以前はその場所でホストされていたCloud ServiceSDK API JarとしてのAEMは、MavenのデフォルトのアーティファクトリポジトリであるMaven Centralに配置されています。
+以前その場所でホストされていた AEM as a Cloud Service の SDK API Jar は、Maven のデフォルトのアーティファクトリポジトリである Maven Central に配置されています。
 
 ## Cloud Manager の新機能 {#cloud-manager}
 
@@ -59,90 +59,90 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ### 新機能 {#what-is-new-cloud-manager}
 
-* Cloud Managerの *ビジネス所有者* (Business Owner)ロールのユーザーは、Sandboxプログラムをランディングページから(プログラムカードのクイックアクションボタンを使用して)またはプログラム内から削除できるようになりました。
+* Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-   詳細は、「Sandboxプログラムの [削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 」を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.translate.html)を参照してください。
 
-* Cloud Managerの *Business Owner* ( *ビジネス所有者* )またはDeployment Manager（デプロイメントマネージャー）のロールにあるSandboxプログラムユーザーが、Cloud Manager UIを使用して、設定された実稼働環境とステージ環境を削除できるようになりました。 削除オプションは、 **プログラムの概要ページの環境カードと** 環境 **** ページの両方から利用できるようになりました。 「実稼働」または「ステージ」で削除オプションを選択すると、セット内の他のものも削除されます。
+* Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;の役割にあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼働環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼働環境またはステージ環境で削除オプションを選択すると、セット内の他のものも削除されます。
 
-   詳細は、「Sandboxプログラムの [削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html) 」を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.translate.html)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
-* プログラムの概要 **** ページにコーチマークを付けて、Cloud Manager内部の基本的なナビゲーションに関する情報を提供し、基本的なナビゲーションを開始するように指示します。
+* **プログラムの概要**&#x200B;ページにコーチマークを付けて、Cloud Manager 内部の基本的なナビゲーションに関する情報を提供し、ユーザーが開始できるように指示します。
 
 * Cloud Manager で&#x200B;**学習**&#x200B;ページが利用できるようになり、トップナビゲーションからアクセスできます。このページには、Cloud Manager で割り当てられた役割に関連して、最も頻繁に使用されるワークフローについてユーザーが知るのに役立つリソースが含まれています。
 
-* Sandboxのプログラムは、 **Sandbox** バッジによって識別されます。このバッジは、ランディングページのプログラムカードに表示され、 **プログラムの概要** ページのプログラム名の横に表示されます。
+* サンドボックスプログラムは、**サンドボックス**&#x200B;バッジによって識別されるようになります。このバッジは、ランディングページのプログラムカードと、**プログラムの概要**&#x200B;ページで、プログラム名の横に表示されます。
 
-* SysAdminロールのユーザーは、Admin Console内の場所に1回のクリックでアクセスできるようになりました。この場所から、ユーザーのロールまたはCloud Managerへの権限を管理できます。 「 **Manage Access** (アクセス **を管理)** 」ボタンが、プログラムボタンの横のランディングページで使用できるようになりました。
+* 「システム管理者」の役割を持つユーザーは、Admin Console 内の場所に 1 回のクリックでアクセスできるようになりました。この場所から、ユーザーの役割や Cloud Manager への権限を管理できます。「**アクセスを管理**」ボタンが、ランディングページの「**プログラムを追加**」ボタンの横に表示されて使用できるようになりました。
 
-   詳細は、「 [SysAdminタスク](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks) 」を参照してください。
+   詳細は、[システム管理者のタスク](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)を参照してください。
 
-* システム管理者ロールのユーザーは、Cloud Managerから直接オーサーインスタンスに対して1回のクリックでアクセスできるようになりました。
+* 「システム管理者」の役割を持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-   詳細は、「作成者インスタンスへのアクセスの [管理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem) 」を参照してください。
+   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.translate.html#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
 * ビルド手順で、生成されるすべてのコンテンツパッケージに、名前、グループ、バージョンのすべての必須プロパティが含まれていることを検証できるようになりました。
 
-* ビルド手順で、ビルドで少なくとも1つのコンテンツパッケージが生成されたかどうかを検証できるようになりました。
+* ビルド手順で、ビルドで少なくとも 1 つのコンテンツパッケージが生成されたかどうかを検証できるようになりました。
 
 ### バグ修正 {#bug-fixes-cm}
 
-* 特定の状況で、[プログラムの **作成** ]ダイアログボックスのアイコンの表示がずれていました。
+* 特定の状況で、**プログラムを作成**&#x200B;ダイアログボックスのアイコンの表示がずれていました。
 
-* AEMリリースIDが、 **プログラムの概要** ページに一貫して表示されなかった問題を修正しました。
+* AEM リリース ID が、**プログラムの概要**&#x200B;ページに一貫して表示されなかった問題を修正しました。
 
-* When configuring the production pipeline, the **Scheduled Deployment** option was not visible for some customers.
+* 実稼働パイプラインを設定する際に、一部の顧客に対して、**スケジュール済みデプロイメント**&#x200B;オプションが表示されない問題を修正しました。
 
 ### 既知の問題 {#known-issues-cm}
 
-* Sandboxプログラム内の環境は、特定の期間のアクティビティが検出されない場合、休止状態になります。 このステータスは、Cloud Managerでは確認されません。 ただし、このステータスはDeveloper Consoleで確認できます。 この問題は、今後のリリースで修正される予定です。
+* サンドボックスプログラム内の環境が、一定期間アクティビティが検出されない場合、休止状態になる。このステータスは、Cloud Manager では確認されません。このステータスが確認されるのは、開発者コンソールを経由した場合です。この問題は、今後のリリースで修正される予定です。
 
-* Cloud Managerから直接Developer Consoleへのリンクに、Sandboxプログラムの環境を非休止/休止にするオプションは表示されません。 これを解決するには、Developer Consoleで、urlの末尾 `#release-cm-p1234-e5678` にパターンを追加します。ここで、「1234 *」はプログラムID、「5678* 」は環境ID ** です。 この問題は、今後のリリースで修正される予定です。
+* Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示しない。これを解決するには、開発者コンソールで、url の末尾にパターン `#release-cm-p1234-e5678` を追加します。ここで、*1234* はプログラム ID、*5678* は環境 ID です。この問題は、今後のリリースで修正される予定です。
 
-##  の新機能 [!DNL Adobe Experience Manager Assets]{#aem-assets}
+##  [!DNL Adobe Experience Manager Assets] の新機能 {#aem-assets}
 
-**強化されたスマートタグに関するガイド付きユーザーエクスペリエンス（Adobe Senesie搭載）**
+**拡張スマートタグに関するガイド付きユーザーエクスペリエンス（Adobe Sensei 搭載）**
 
-強化されたスマートタグを使用すると、組織はスマートタグモデルに対して、汎用のスマートタグに加えて、顧客固有のビジネスタグに基づいて画像を認識するようにトレーニングを行うことができます。
+拡張スマートタグを使用すると、組織はスマートタグモデルに対して、汎用のスマートタグに加えて、顧客固有のビジネスタグに基づいて画像を認識するようにトレーニングすることができます。
 
-このリリースでは、顧客固有のタグのセットに対するスマートタグのトレーニングを設定し、アセットを使用してトレーニングする新しいガイド付きのユーザーエクスペリエンスが提供されます。これは、今後認識され、タグ付けが行われる必要があります。 エクスペリエンスは、より直感的になりました。
+このリリースでは、一連の顧客固有のタグに対するスマートタグのトレーニングを設定し、アセットを使用してトレーニングする新しいガイド付きのユーザーエクスペリエンスが提供されます。これは、今後認識され、タグ付けされることになります。エクスペリエンスは、より直感的になりました。
 強化されたスマートタグをトレーニングして、スマートタグの直感的なトレーニングを実施します。 アセットにスマートタグを追加する [方法とスマートタグを](/help/assets/smart-tags.md) 設定する方法を参照してください [](/help/assets/smart-tags-configuration.md)。
 
 **3Dコンテンツの取り込み、プレビュー、配信のサポート**
 
-3DファイルをAEM Assets内に保存して使用できるようになりました。 ユーザは、OBJ、STL、GLTF、GLBファイルなど、様々なコア3Dファイルをアップロード、プレビュー、および使用できます。 また、任意のURL [!DNL Dynamic Media]やビューアを使用して、3Dエクスペリエンスを設定および配信できます。 これには、 [!DNL Dynamic Media] 3Dエクスペリエンスビューア、サイト3Dビューアコンポーネント、および3Dファイル配信機能( [!DNL Dynamic Media] AR/VR)が含まれます。 詳しくは、Dynamic Mediaでの3Dアセットの [操作を参照してください](/help/assets/dynamic-media/assets-3d.md)。
+3D ファイルを AEM Assets 内に保存して使用できるようになりました。ユーザは、OBJ、STL、GLTF、GLBファイルなど、様々なコア3Dファイルをアップロード、プレビュー、および使用できます。 また、任意のURL [!DNL Dynamic Media]やビューアを使用して、3Dエクスペリエンスを設定および配信できます。 これには、[!DNL Dynamic Media] 3D エクスペリエンスビューア、サイト 3D ビューアコンポーネント、および [!DNL Dynamic Media] 経由で 3D ファイルを配信する機能（AR/VR）が含まれます。詳しくは、[Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)を参照してください。
 
-**Adobe XDでのAdobe Asset Linkのサポート**
+**Adobe XD の Adobe Asset Link のサポート**
 
-最新のリリースでは、 [!DNL Experience Manager Assets] v29.3でリリースされた新しい [!DNL Adobe Asset Link] プラグインがサポートされます。この統合により、デザイナーはアプリケーションを終了することなく、デザインのアセットにアクセスし [!DNL Adobe XD][!DNL Experience Manager][!DNL Adobe XD] て使用できます。 Adobe XDドキュメントの [Adobe Asset Linkを参照してください](https://helpx.adobe.com/enterprise/using/adobe-asset-link-for-xd.html)。
+With the latest release, [!DNL Experience Manager Assets] supports a new [!DNL Adobe Asset Link] plug-in that is released with [!DNL Adobe XD] v29.3. The integration allows designers to access and use assets from [!DNL Experience Manager] in their designs, without the need to leave [!DNL Adobe XD] application. [Adobe XD ドキュメントの Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link-for-xd.html) を参照してください。
 
-このリリースでは、クリエイティブユーザーやクリエイティブデザイナーは、 [!DNL AEM Assets] 、 [!DNL Adobe Asset Link] 、 [!DNL Adobe XD]など様々なCreative Cloudデスクトップアプリケーション [!DNL Photoshop]を使用して管理されているアセットを操作できるようになり [!DNL Illustrator][!DNL InDesign]ました。
+このリリースで、クリエイティブユーザーやデザイナーは、[!DNL Adobe XD]、[!DNL Photoshop]、[!DNL Illustrator]、[!DNL InDesign] など様々な Creative Cloud デスクトップアプリケーションで、[!DNL Adobe Asset Link] を使用して [!DNL AEM Assets] で管理されているアセットを操作できるようになりました。
 
 **アクセシビリティの強化**
 
-[!DNL Adobe Experience Manager Assets] は、Webコンテンツアクセシビリティガイドライン(WCAG) v2.1ガイドラインに準拠してアクセシビリティを強化しました。 アクセシビリティは、次の使用例やインターフェイスに対して改善されました。
+[!DNL Adobe Experience Manager Assets] は、Web コンテンツアクセシビリティガイドライン（WCAG）v2.1 ガイドラインに準拠してアクセシビリティを強化しました。次の使用例やインターフェイスでのアクセシビリティが改善されました。
 
 ユーザーインターフェイス要素はスクリーンリーダーに適しており、キーボードを使用してアクセスでき、コントラストも優れています。 次に、拡張機能の詳細リストを示します。
 
-* [ [!UICONTROL ワークフロー]]、[ [!UICONTROL 範囲]、[文書の管理]ページの[オプション]、[範囲] ]、および[  ]の進捗バーは、スクリーンリーダーによって進捗バーとして読み込まれません。 代わりに、スクリーンリーダーユーザーはこれらのステータスインジケーターをタブリストとして認識します。 （CQ-4273015）
+* The [!UICONTROL Options], [!UICONTROL Scope], and [!UICONTROL Workflows] progress bars on [!UICONTROL Manage Publication] page are not read out by the screen-reader as progress bar. 代わりに、スクリーンリーダーユーザーは、これらのステータスインジケーターをタブリストとして認識してしまう。（CQ-4273015）
 
-* アセットの [!UICONTROL プロパティ] ページでタグを追加する場合、タグのツリー構造を操作します。 このツリー構造は、スクリーンリーダーユーザーが操作しても何も聞こえないのでアクセスできません。 （CQ-4272964）
+* アセットの[!UICONTROL プロパティ]ページでタグを追加する場合、タグのツリー構造に移動する。スクリーンリーダーユーザーは移動しても何も聞こえないので、このツリー構造にアクセスすることができない。（CQ-4272964）
 
-* リンクの共有ダイアログで、参照モードで移動するときに、スクリーンリーダー
+* リンクの共有ダイアログで、参照モードで移動するときに、スクリーンリーダーに次の現象が発生する。
 
    * ダイアログが読み込まれたらすぐに、テーブル情報をナレーションします。
    * リストに表示されているすべての自動提案に移動できません。
-   * 電子メールアドレス/ [!UICONTROL 検索コンボボックスに表示される自動提案のナレーションを行いません] 。 （CQ-4294232）
+   * Does not narrate the displayed auto-suggestions for the [!UICONTROL Add Email Address/Search] combo box. （CQ-4294232）
 
-* これで、 [!UICONTROL メタデータスキーマエディター] ページとその要素にキーボードでアクセスでき、スクリーンリーダーに適した状態になりました。 (CQ-4272953)ユーザーは、NVDAブラウズモードでキーボードを使用してコンポーネントをドラッグできます。 （CQ-4296326）
+* The [!UICONTROL Metadata Schema Editor] page and its elements are now accessible using a keyboard and are screen reader friendly. (CQ-4272953)ユーザーは、NVDAブラウズモードでキーボードを使用してコンポーネントをドラッグできます。 （CQ-4296326）
 
-* アセットユーザーインターフェイスでは、表示設定にキーボードからアクセスできません。 （CQ-4289038）
+* Assets ユーザーインターフェイスで、表示設定にキーボードからアクセスできない。（CQ-4289038）
 
-* 黄色の定格アイコンの輝度の比率は3:1未満です。 視覚や色の知覚を持たないユーザーには役立ちません。 星評価は、アセットのタブまたはカード表示に表示されます
+* 黄色の評価アイコンの輝度の比率が 3:1 未満で、視覚や色の知覚を持たないユーザーの役に立たない。星評価は、アセットのタブまたはカード表示に表示されます
 
 * 一部のユーザインターフェイス要素の色とコントラストが更新され、視覚が限られたユーザや、色の知覚を持たないユーザが、これらのユーザインターフェイス要素を区別できるようになりました。 例えば、アセットのプ [!UICONTROL ロパティ] とカード表示の「 [!UICONTROL 詳細」タブの「Rating] 」セクションにある星評価アイコンの色は、コントラストに合わせて変更されます。 （CQ-4295106）
 
@@ -160,7 +160,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * ビデオのボリュームコントロールは、キーボードを使用してアクセスできます。 （CQ-4272696）
 
-* アセットユーザーインターフェイスの操作可能なオプションの多くは、キーボードを使用するときにフォーカスを示しません。 （CQ-4272694）
+* Assets ユーザーインターフェイスの操作可能なオプションの多くが、キーボードを使用するときにフォーカスを示さない。（CQ-4272694）
 
 * スクリーンリーダーユーザーは、キーボードを使用してリスト表示の行が選択可能な場合に、その行を知ることができるようになりました。 行にポインタを合わせると、情報が通知されます。 （CQ-4271824）
 
@@ -168,17 +168,17 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * アセットページやフォルダーナビゲーションのヘッダーやズームオプションなど、リンクなどのインタラクティブなユーザーインターフェイス要素には、キーボードを使用してアクセスできるようになりました。 （CQ-4271412）
 
-* ア [!DNL Adobe Experience Manager] セット上のすべてのブラウズページのタイトルが一意になりました。 （CQ-4271409）
+* [!DNL Adobe Experience Manager] Assets 上のすべての参照済みページのタイトルが一意になりました。（CQ-4271409）
 
 **その他の機能強化**
 
 このリリースでは、次の機能強化が行われています。
 
-* アセット処理プロファイルを使用してアセットを再処理し、プロセスをフルコントロール(アセット処理を実行し、特定の処理プロファイルを適用し、後処理ワークフローを実行するかどうかを決定)できる。
-* 基になるクラスターインスタンスが背後で再起動された場合に、検索クエリがより高速に結果を返すようになりました（以前は、初期検索の実行がそれ以上続く可能性がありました）。
-* アセットインターフェイスのリスト表示でアセットを表示し、検索結果でアセットを表示する場合は、「名前」で並べ替えます。 アセットの [検索を参照してください](/help/assets/search-assets.md#sort)。
-* アセットインターフェイスのリスト表示でアセットを表示し、検索結果でアセットを表示する場合は、「作成日」（日付）で並べ替えます。 アセットの [検索を参照してください](/help/assets/search-assets.md#sort)。
-* アセットマイクロサービスを使用したEPSファイルの画像への変換をサポートします。
+* アセット処理プロファイルを使用してアセットを再処理し、プロセスをフルコントロールできる機能（フルアセット処理を実行し、特定の処理プロファイルのみを適用して後処理ワークフローを実行するかどうかを決定できる）。
+* 基になるクラスターインスタンスがバックグラウンドで再起動された場合に、検索クエリがより高速に結果を返すようになりました（以前は、初期検索の実行が長時間続くことがありました）。
+* Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「名前」で並べ替えました。[アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
+* Assets インターフェイスのリスト表示および検索結果で表示されるアセットを「作成日」（日付）で並べ替えました。[アセットの検索](/help/assets/search-assets.md#sort)を参照してください。
+* アセットマイクロサービスを使用した EPS ファイルの画像への変換をサポート。
 
 ### バグ修正 {#assets-bug-fixes}
 
@@ -187,11 +187,11 @@ Seek DM bug fixes if any.
 Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
 -->
 
-上記の新機能に加えて、現在のリリースでは、のお客様のご意見に基づいて、次のバグ修正が行われて [!DNL Assets]います。
+In addition to the above new features, the current release provides the following bug fixes based on customer feedback for [!DNL Assets].
 
-* MP3音楽ファイルの場合、DAMプレビューのサムネールに表示される再生ボタンが機能しません。 （CQ-4294731）
-* カードの表示にカーソルを重ねると、カード内のクイックアクションに（自動的に）フォーカスした結果、画面がスクロールします。 （GRANITE-26895）
+* MP3 音楽ファイルの場合、DAM プレビューのサムネールに表示される再生ボタンが機能しない。（CQ-4294731）
+* カード表示にカーソルを重ねると、カードで利用できるクイックアクションに（自動的に）フォーカスした結果、画面がスクロールする。（GRANITE-26895）
 * 検索結果を多くスクロールした後に画像を多く表示しすぎると、ブラウザーがクラッシュする原因となります。 （GRANITE-26432）
-* アセットのダウンロード時に、電子メールオプションが選択されていて、有効な電子メールIDが指定されている場合でも、ダウンロードオプションは使用できません。 （CQ-4296535）
-* スマートコレクションとして保存されたカスタムフィルターは、アセットに正しく適用されません。 （CQ-4294942）
-* 検索とインデックス作成に関する複数の機能強化と、パフォーマンス向上のためのバグ修正が行われました。 （CQ-4286373）
+* アセットのダウンロード時に、電子メールオプションが選択されていて、有効な電子メール ID が指定されている場合でも、ダウンロードオプションが使用できない。（CQ-4296535）
+* スマートコレクションとして保存されたカスタムフィルターが、アセットに正しく適用されない。（CQ-4294942）
+* 検索とインデックス作成に関する複数の機能強化と、パフォーマンス向上のためのバグ修正。（CQ-4286373）
