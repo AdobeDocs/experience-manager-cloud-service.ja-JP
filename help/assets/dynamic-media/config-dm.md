@@ -1,16 +1,16 @@
 ---
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5125'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# About configuring Dynamic Media Cloud Service {#configuring-dynamic-media-scene-mode}
+# Dynamic Media Cloud Service の設定について {#configuring-dynamic-media-scene-mode}
 
 開発用、ステージング用、実稼動用など、複数の異なる環境向けに Adobe Experience Manager をセットアップして使用する場合は、それぞれの環境向けに Dynamic Media Cloud Services を設定する必要があります。
 
@@ -18,9 +18,9 @@ ht-degree: 98%
 
 以下のアーキテクチャ図に Dynamic Media の仕組みを示します。
 
-新しいアーキテクチャでは、AEMはプライマリソースアセットを管理し、アセットの処理と公開に関するDynamic Mediaと同期します。
+新しいアーキテクチャでは、AEM は、プライマリソースアセットを担当し、アセットの処理および公開のための Dynamic Media と同期します。
 
-1. プライマリソースアセットがAEMにアップロードされると、Dynamic Mediaに複製されます。 その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
+1. プライマリソースアセットが AEM にアップロードされると、Dynamic Media にレプリケートされます。その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
 1. レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスおよびプレビューできます（バイナリは AEM インスタンスに送り返されません）。
 1. コンテンツを公開および承認する準備ができると、Dynamic Media サービスがトリガーされ、コンテンツが配信サーバーにプッシュされて、CDN にコンテンツがキャッシュされます。
 
@@ -83,7 +83,6 @@ Dynamic Media Cloud Services を設定するには：
          * **[!UICONTROL 継承]** - フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つ、またはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップの要領で表示されます。
          * **[!UICONTROL サブフォルダーを有効にする]** - このサブツリー内のすべての項目を、Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。
          * **[!UICONTROL サブフォルダーに対して無効]** - このサブツリー内のすべての項目を、Dynamic Media との同期から除外します。
-
    >[!NOTE]
    >
    >Dynamic Media ではバージョン管理はサポートされていません。また、遅延アクティベーションは、Dynamic Media 設定を編集ページの「**[!UICONTROL アセットを公開]**」が「**[!UICONTROL アクティベーション時]**」に設定されている場合にのみ、アセットが最初にアクティベートされるまでの間に限って適用されます。
@@ -94,7 +93,7 @@ Dynamic Media Cloud Services を設定するには：
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 「**[!UICONTROL 保存]**」をタップします。
-1. Dynamic Mediaのコンテンツが公開される前に、プレビューを安全に行うには、AEM作成者インスタンスを「許可リスト」してDynamic Mediaに接続する必要があります。
+1. Dynamic Media コンテンツを公開する前に安全にプレビューするには、AEM オーサーインスタンスを「許可リストに登録」して、Dynamic Media に接続する必要があります。
 
    * Dynamic Media Classic アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
    * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
@@ -136,7 +135,7 @@ Dynamic Media Classic（Scene7）のユーザーインターフェイスを使�
 * [サポートされていない形式のカスタム MIME タイプの追加](#adding-custom-mime-types-for-unsupported-formats)
 * [画像セットおよびスピンセットを自動生成するためのバッチセットプリセットの作成](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Image Server の公開設定  {#publishing-setup-for-image-server}
+#### Image Server の公開設定   {#publishing-setup-for-image-server}
 
 公開設定は、アセットがデフォルトで Dynamic Media からどのように配信されるかを決定します。設定が指定されていない場合、Dynamic Media は、公開設定で定義されたデフォルト設定に従ってアセットを配信します。例えば、解像度属性が含まれていない画像を配信するように要求した場合、画像は初期設定のオブジェクト解像度設定で配信されます。
 
@@ -405,7 +404,7 @@ spin-01-01
 
    資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
 
-1. ページの上付近にあるナビゲーションバーで、**設定／アプリケーション設定／バッチセットプリセット／バッチセットプリセット**&#x200B;をクリックします。
+1. ページの上付近にあるナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／バッチセットプリセット／バッチセットプリセット**&#x200B;をクリックします。
 
    詳細ページの右上隅に設定されている「**[!UICONTROL フォームを表示]**」は、デフォルトの表示です。
 
