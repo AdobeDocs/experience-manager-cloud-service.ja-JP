@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
@@ -40,16 +40,16 @@ ht-degree: 75%
    + [レンダリングコンポーネントのコンテンツフラグメントの設定](developing/extending/content-fragments-configuring-components-rendering.md)
    + [検索フォームの設定](developing/extending/search-forms.md)
    + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
-   + [RTEプラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [アクセス可能なサイトを作成するためのRTEの設定](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [RTE プラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
+   + [アクセシブルなサイトの作成に向けた RTE の設定 ](/help/implementing/developing/extending/rte-accessible-content.md)
 + AEM as a Cloud Service へのデプロイ {#deploying}
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
    + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
 + オーサー層 {#author-tier}
-   + [作成者層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
-   + [作成者層の保護](/help/implementing/author-tier/securing-the-author-tier.md)
+   + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
+   + [オーサー層の保護](/help/implementing/author-tier/securing-the-author-tier.md)
 + コンテンツ配信の概要 {#content-delivery}
-   + [コンテンツ配信のフロー](dispatcher/overview.md)
+   + [コンテンツ配信フロー](dispatcher/overview.md)
    + [クラウド内の Dispatcher](dispatcher/disp-overview.md)
-   + [Cloud ServiceとしてのAEMでのCDN](dispatcher/cdn.md)
-   + [AEMでのCloud Serviceとしてのキャッシュ](dispatcher/caching.md)
+   + [AEM as a Cloud Service での CDN](dispatcher/cdn.md)
+   + [AEM as a Cloud Service でのキャッシュ](dispatcher/caching.md)
