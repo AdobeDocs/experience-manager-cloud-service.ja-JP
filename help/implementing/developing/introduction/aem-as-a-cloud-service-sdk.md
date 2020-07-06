@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service の SDK
 description: 作成中
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: df6e6bc95b5f0489d0da034c27d8f3a4314a6e27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1027'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ AEM as a Cloud Service の SDK は、次のアーティファクトで構成さ�
 ## AEM as a Cloud Service の SDK へのアクセス {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * AEM Admin Console の「**Adobe Experience Manager について**」アイコンで、実稼動環境で実行している AEM のバージョンを確認できます。
-* クイックスタート JAR と Dispatcher ツールは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)から zip ファイルとしてダウンロードできます。なお、SDK リストにアクセスできるのは、AEM Managed Services 環境または AEM as a Cloud Service 環境のあるユーザーに限られます。
+* クイックスタート JAR と Dispatcher ツールは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)から zip ファイルとしてダウンロードできます。なお、SDK リストにアクセスできるのは、AEM Managed Services 環境または AEM as a Cloud Service 環境のあるユーザーに限られます。
 * Java API JAR と Javadoc JAR は、Maven ツール（コマンドラインまたは推奨 IDE）を使用してダウンロードできます。
 * Maven プロジェクトの POM では、以下の API JAR パッケージを参照する必要があります。サブパッケージのあらゆる POM でも、この依存関係を参照する必要があります。
 
