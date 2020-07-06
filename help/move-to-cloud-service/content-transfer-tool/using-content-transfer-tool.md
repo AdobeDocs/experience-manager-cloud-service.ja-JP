@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -18,22 +18,22 @@ ht-degree: 86%
 
 * コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
 
-* If you are using a *Sandbox Environment*, ensure that your environment is upgraded to June 10 2020 Release or later. *実稼働環境*&#x200B;を使用している場合、環境は自動的に更新されます。
+* *サンドボックス環境*&#x200B;を使用している場合は、環境が 2020 年 6 月 10 日以降のリリースにアップグレードされていることを確認してください。*実稼働環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
-* コンテンツ転送ツールを使用するには、ソースインスタンスの管理者ユーザーで、コンテンツの転送先のCloud ServiceインスタンスのAEM管理者グループに属している必要があります。 権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
+* コンテンツ転送ツールを使用するには、ソースインスタンスの管理者ユーザーで、コンテンツの転送先の Cloud Service インスタンスの AEM 管理者グループに属している必要があります。権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
 * オーサーの&#x200B;*インジェスト段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。
 
-* コンテンツ転送ツールで一度にサポートできるリポジトリサイズの推奨上限は20 GBです。
+* コンテンツ転送ツールで一度にサポートできるリポジトリサイズの推奨上限は 20 GB です。
 
 ## 入手方法 {#availability}
 
-コンテンツ転送ツールは、Software Distribution Portalからzipファイル(Content Transfer Tool v1.0.0)としてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイル（コンテンツ転送ツール v1.0.0）としてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
->Software Distribution [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) PortalからContent Transfer Toolをダウンロードします。
+>Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) portal.
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
@@ -70,7 +70,7 @@ ht-degree: 86%
    1. **アクセストークン**：アクセストークンを入力します。
 
       >[!NOTE]
-      >オーサーインスタンスからアクセストークンを取得するには、`/libs/granite/migration/token.json` を参照します。アクセストークンは、Cloud Service作成者インスタンスから取得されます。
+      >オーサーインスタンスからアクセストークンを取得するには、`/libs/granite/migration/token.json` を参照します。アクセストークンは、Cloud Service オーサーインスタンスから取得されます。
 
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
@@ -127,7 +127,7 @@ ht-degree: 86%
 
    >[!NOTE]
    >更新されたステータスを表示するには、ページの表示を更新する必要があります。
-   >抽出フェーズが開始されると、60秒後に書き込みロックが作成され、解放され *ます*。 したがって、抽出が停止した場合は、ロックが解除されるまで1分待ってから、抽出を再開する必要があります。
+   >抽出フェーズが開始されると、書き込みロックが作成され、*60 秒*&#x200B;後に解放されます。したがって、抽出が停止した場合は、ロックが解除されるまで 1 分待ってから、抽出を再開する必要があります。
 
 #### 追加抽出 {#top-up-extraction-process}
 
@@ -212,7 +212,7 @@ ht-degree: 86%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/view-log3.png)
 
-1. ユーザーインターフェイスを使用せずにログの末尾を表示するには、ソースAEM環境にSSHで接続し、末尾を表示 `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`します。
+1. ユーザーインターフェイスを使用せずにログの末尾を表示するには、ソース AEM 環境に SSH で接続し、`crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`で tail コマンドを実行します。
 
 ### 移行セットの削除 {#deleting-migration-set}
 
@@ -265,6 +265,6 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 
 * それでも、最初の移行セットのインジェストが失敗したわけではありません。この動作が見られるのは、新しいインジェストジョブが開始されると、前回のインジェストジョブが削除されるからです。したがって、最初の移行セットのステータス変更は無視してください。
 
-* コンテンツ転送ツールUIのアイコンが、このガイドに示すスクリーンショットとは異なるように表示される場合や、ソースAEMインスタンスのバージョンによっては表示されない場合があります。
+* コンテンツ転送ツール UI のアイコンが、このガイドに示すスクリーンショットとは異なって表示される場合や、ソース AEM インスタンスのバージョンによっては表示されない場合があります。
 
 
