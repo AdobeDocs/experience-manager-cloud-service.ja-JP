@@ -2,7 +2,7 @@
 title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 translation-type: tm+mt
-source-git-commit: 18841ec94b8dd92ca92deda0869f2698786458aa
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 100%
@@ -78,7 +78,7 @@ Adobe Experience Manager as a Cloud Service.には、強力な[検索](/help/sit
 
 >[!NOTE]
 >
-> Assets 関連の検索フォームについて詳しくは、[Assets - 検索ファセット](/help/assets/search-facets.md)を参照してください。
+>Assets 関連の検索フォームについて詳しくは、[Assets - 検索ファセット](/help/assets/search-facets.md)を参照してください。
 
 
 ## 述語とその設定 {#predicates-and-their-settings}
@@ -491,11 +491,10 @@ Adobe Experience Manager as a Cloud Service.には、強力な[検索](/help/sit
 
 >[!NOTE]
 >
->* 一般的な検索述語は、次の場所で定義されます。
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>一般的な検索述語は、次の場所で定義されます。
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
-この情報は参照用です。`/libs` には変更を加えないでください。
+>この情報は参照用です。`/libs` には変更を加えないでください。
 
 <!--
 >* Search predicates related only to siteadmin (classic UI) are located under:
@@ -550,174 +549,172 @@ Adobe Experience Manager as a Cloud Service.には、強力な[検索](/help/sit
 
 * **オプションノードパス**
 事実上は**オプションパス**&#x200B;と同じですが、これのみが共通の述語フィールドにあり、その他はアセット専用です。
-**単一の選択**&#x200B;オンにすると、オプションは単一の選択のみを許可するチェックボックスとしてレンダリングされます。チェックボックスを誤って選択した場合は、選択を解除できます。
+
+* **単一の選択**&#x200B;オンにすると、オプションは単一の選択のみを許可するチェックボックスとしてレンダリングされます。チェックボックスを誤って選択した場合は、選択を解除できます。
 
 * **公開とライブコピーのプロパティ名**
 Sites 専用の述語の、公開およびライブコピーのチェックボックスのラベル。
 
 * 「**設定**」タブのフィールドラベルに &amp;ast; が付いている場合、そのフィールドは必須であるという意味になり、空白のままにするとエラーメッセージが表示されます。
 
-* 検索フォームの設定 {#configuring-your-search-forms}**
+## 検索フォームの設定 {#configuring-your-search-forms}
 
-## カスタマイズされた設定を作成／開く {#creating-opening-a-customized-configuration}
+### カスタマイズされた設定を作成／開く {#creating-opening-a-customized-configuration}
 
-### **ツール**／**一般**／**検索フォーム**&#x200B;に移動します。
+1. **ツール**／**一般**／**検索フォーム**&#x200B;に移動します。
 
-1. カスタマイズする設定を選択します。************
-
+1. カスタマイズする設定を選択します。
 1. 「**編集**」アイコンを使用して、更新用に設定を開きます。
 1. 新規のカスタマイズの場合は、必要に応じて[新しい述語フィールドを追加して設定を定義](#add-edit-a-predicate-field-and-define-field-settings)します。既存のカスタマイズの場合は、既存のフィールドを選択して[設定を更新](#add-edit-a-predicate-field-and-define-field-settings)できます。
-1. 「**完了**」を選択して設定を保存します。変更は、次回設定を使用したときに表示されます。[](#add-edit-a-predicate-field-and-define-field-settings)
-1. [!NOTE]**
+1. 「**完了**」を選択して設定を保存します。変更は、次回設定を使用したときに表示されます。
 
-   >[!NOTE]カスタマイズした設定は（必要に応じて）以下の場所に保存されます。
+   >[!NOTE]
    >
-   >`/apps/cq/gui/content/facets/<option>`
+   >カスタマイズした設定は（必要に応じて）以下の場所に保存されます。
    >
+   >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
-   >* 述語フィールドの追加／編集とフィールド設定の定義 {#add-edit-a-predicate-field-and-define-field-settings}
 
 
-### フィールドを追加または編集して、その設定を定義／更新できます。{#add-edit-a-predicate-field-and-define-field-settings}
+### 述語フィールドの追加／編集とフィールド設定の定義 {#add-edit-a-predicate-field-and-define-field-settings}
 
-更新する[カスタマイズ設定を開きます](#creating-opening-a-customized-configuration)。
+フィールドを追加または編集して、その設定を定義／更新できます。
 
+1. 更新する[カスタマイズ設定を開きます](#creating-opening-a-customized-configuration)。
 1. 新しいフィールドを追加する場合は、「**述語を選択**」タブを開いて、必要な述語を必要な場所にドラッグします。**日付の範囲の述語**&#x200B;の例を以下に示します。
-1. ![述語の追加](assets/csf-add-predicate.png)****
 
-   ![状況に応じて、以下の手順を実行します。](assets/csf-add-predicate.png)
+   ![述語の追加](assets/csf-add-predicate.png)
 
-1. 新しいフィールドを追加する場合：
+1. 状況に応じて、以下の手順を実行します。
 
-   * 述語を追加すると、「**設定**」タブが開き、定義可能なプロパティが表示されます。
+   * 新しいフィールドを追加する場合：
 
-      既存の述語を更新する場合：****
+      述語を追加すると、「**設定**」タブが開き、定義可能なプロパティが表示されます。
 
-   * 右側の述語フィールドを選択し、「**設定**」タブを開きます。
+   * 既存の述語を更新する場合：
 
-      **日付の範囲の述語**&#x200B;の設定例を以下に示します。
+      右側の述語フィールドを選択し、「**設定**」タブを開きます。
+   **日付の範囲の述語**&#x200B;の設定例を以下に示します。
+
    ![述語の変更](assets/csf-modify-predicate.png)
 
-   必要に応じて変更を加え、「**完了**」を選択して確定します。変更は、次回設定を使用したときに表示されます。
+1. 必要に応じて変更を加え、「**完了**」を選択して確定します。変更は、次回設定を使用したときに表示されます。
 
-1. 検索設定のプレビュー {#previewing-the-search-configuration}**
+### 検索設定のプレビュー {#previewing-the-search-configuration}
 
-### プレビューアイコンを選択します。{#previewing-the-search-configuration}
+1. プレビューアイコンを選択します。
 
-1. ![プレビューアイコン](assets/csf-preview-icon.png)
+   ![プレビューアイコン](assets/csf-preview-icon.png)
 
-   ![検索フォームが、該当するコンソールの検索列に表示されるとおりに、すべて展開された状態で表示されます。](assets/csf-preview-icon.png)
+1. 検索フォームが、該当するコンソールの検索列に表示されるとおりに、すべて展開された状態で表示されます。
 
-1. ![プレビューフォーム](assets/csf-preview-form.png)
+   ![プレビューフォーム](assets/csf-preview-form.png)
 
-   プレビューを&#x200B;**閉じて**&#x200B;戻り、設定を完了します。
+1. プレビューを&#x200B;**閉じて**&#x200B;戻り、設定を完了します。
 
-1. 述語フィールドの削除 {#deleting-a-predicate-field}**
+### 述語フィールドの削除 {#deleting-a-predicate-field}
 
-### 更新する[カスタマイズ設定を開きます](#creating-opening-a-customized-configuration)。
-
+1. 更新する[カスタマイズ設定を開きます](#creating-opening-a-customized-configuration)。
 1. 述語フィールド（右側）を選択し、「**設定**」タブを開いて、**削除**&#x200B;アイコン（左下）を選択します。
-1. ![削除アイコン](assets/csf-delete-icon.png)****
 
-   ![削除の確認を要求するダイアログが表示されます。](assets/csf-delete-icon.png)
+   ![削除アイコン](assets/csf-delete-icon.png)
+
+1. 削除の確認を要求するダイアログが表示されます。
 
 1. 「**完了**」ボタンで削除およびその他の変更を確認します。
 
-1. 設定の削除（デフォルト復帰のため）{#deleting-a-configuration-to-reinstate-the-default}**
+### 設定の削除（デフォルト復帰のため）{#deleting-a-configuration-to-reinstate-the-default}
 
-### 設定のカスタマイズが完了すると、デフォルトが上書きされます。カスタマイズした設定を削除することにより、デフォルトの設定を復帰させることができます。{#deleting-a-configuration-to-reinstate-the-default}
+設定のカスタマイズが完了すると、デフォルトが上書きされます。カスタマイズした設定を削除することにより、デフォルトの設定を復帰させることができます。
 
-[!NOTE]
-
->[!NOTE]デフォルトの設定は削除できません。
+>[!NOTE]
 >
->カスタマイズした設定の削除は、コンソールからおこないます。
+>デフォルトの設定は削除できません。
 
-必要な設定（**ページエディター（段落検索）**&#x200B;など）を選択して、ツールバーの「**削除**」アイコンを選択します。
+カスタマイズした設定の削除は、コンソールからおこないます。
 
-1. ![デフォルトに戻す](assets/csf-restore-default.png)****
+1. 必要な設定（**ページエディター（段落検索）**&#x200B;など）を選択して、ツールバーの「**削除**」アイコンを選択します。
 
-   ![カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに鍵アイコンが再度表示されることで確認できます）。](assets/csf-restore-default.png)
+   ![デフォルトに戻す](assets/csf-restore-default.png)
 
-1. オプションの述語の追加 {#adding-options-predicates}
+1. カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに鍵アイコンが再度表示されることで確認できます）。
 
-### オプションの述語（オプション、オプションプロパティ）を使用すると、検索対象の項目を設定できます。通常は、ページノード上のプロパティなど、ページの直下にあるものを検索するために使用します。{#adding-options-predicates}
+### オプションの述語の追加 {#adding-options-predicates}
+
+オプションの述語（オプション、オプションプロパティ）を使用すると、検索対象の項目を設定できます。通常は、ページノード上のプロパティなど、ページの直下にあるものを検索するために使用します。
 
 以下の例（ページの作成に使用するテンプレートに従った検索）で、必要な手順を説明します。
 
-検索対象のプロパティを定義するノードを作成します。
+1. 検索対象のプロパティを定義するノードを作成します。
 
-1. ユーザーに提示される個々のオプションの定義を格納するルートノードが必要になります。
+   ユーザーに提示される個々のオプションの定義を格納するルートノードが必要になります。
 
    個々のオプションのノードには、次のプロパティが必要です。
 
-   `jcr:title` - 検索レールに表示されるフィールドラベル
-
+   * `jcr:title` - 検索レールに表示されるフィールドラベル
    * `value` - 検索対象のプロパティ値
-   * ![述語の定義](assets/csf-options-predicate-01.png)
+   ![述語の定義](assets/csf-options-predicate-01.png)
 
-   [!NOTE]](assets/csf-options-predicate-01.png)
-
+   >[!NOTE]
+   >
    >`/libs` パス内の設定は&#x200B;***一切***&#x200B;変更しないでください。
    >
-   >`/libs` コンテンツは、インスタンスを次回アップグレードするとき（場合によってはホットフィックスまたは機能パックを適用したとき）に上書きされるからです。***`/libs`
+   >`/libs` コンテンツは、インスタンスを次回アップグレードするとき（場合によってはホットフィックスまたは機能パックを適用したとき）に上書きされるからです。
    >
-   >設定およびその他の変更に推奨される方法は次のとおりです。`/libs`
+   >設定およびその他の変更に推奨される方法は次のとおりです。
    >
-   >必要な項目（`/libs` 内に存在）を、`/apps` の下で再作成します。この場合、次の場所から選択します。
-   >
-   >1. `/libs/cq/gui/content/common/options/predicates``/apps`
+   >1. 必要な項目（`/libs` 内に存在）を、`/apps` の下で再作成します。この場合、次の場所から選択します。
+   >1. `/libs/cq/gui/content/common/options/predicates`
    >1. `/apps.` 内で変更作業をおこないます。
-   >1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**Sites 管理者の検索レール**」を選択します。「**編集**」を選択します。
 
 
-1. 設定により、**オプション**&#x200B;または&#x200B;**オプションプロパティ**&#x200B;を設定に追加します。****
+1. **検索フォーム**&#x200B;コンソールを開いて、更新する設定を選択します。例えば、「**Sites 管理者の検索レール**」を選択します。「**編集**」を選択します。
 
-1. フィールドを更新します。具体的には次のフィールドです。********
-1. **プロパティ名**
+1. 設定により、**オプション**&#x200B;または&#x200B;**オプションプロパティ**&#x200B;を設定に追加します。
+1. フィールドを更新します。具体的には次のフィールドです。
 
-   * **ターゲットノードで検索するノードプロパティを指定します。次に例を示します。**
+   * **プロパティ名**
+
+      ターゲットノードで検索するノードプロパティを指定します。次に例を示します。
 
       `jcr:content/cq:template`
 
-      **オプションノードパス**
+   * **オプションノードパス**
 
-   * **オプションを保持するパスを選択します。次に例を示します。**
+      オプションを保持するパスを選択します。次に例を示します。
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
+   ![オプション述語](assets/csf-options-predicate-02.png)
 
-      ![オプション述語](assets/csf-options-predicate-02.png)
-   「**完了**」を選択して設定を保存します。
-
+1. 「**完了**」を選択して設定を保存します。
 1. 該当するコンソール（この例では **Site**）に移動し、**検索 - フィルター**&#x200B;レールを開きます。新しく定義された検索フォームと各種オプションが表示されます。必要なオプションを選択して検索結果を確認します。
-1. ![使用中のオプション](assets/csf-options-usage.png)****
 
-   ユーザーの権限 {#user-permissions}](assets/csf-options-usage.png)
-
-
-## 次の表に、検索フォームで編集、削除およびプレビューのアクションを実行するために必要な権限を示します。{#user-permissions}
+   ![使用中のオプション](assets/csf-options-usage.png)
 
 
+## ユーザーの権限 {#user-permissions}
+
+次の表に、検索フォームで編集、削除およびプレビューのアクションを実行するために必要な権限を示します。
 
 <table>
  <thead>
   <tr>
-   </td>
-   </td>
+   <td><strong>アクション</strong></td>
+   <td><strong>権限</strong></td>
   </tr>
  </thead>
  <tbody>
   <tr>
-   </td>
-   </td>
+   <td>編集 </td>
+   <td><code>/apps </code> ノード上の読み取り、書き込み権限。</td>
   </tr>
   <tr>
-   </td>
-   </td>
+   <td>削除</td>
+   <td><code>/apps</code> ノード上の読み取り、書き込み、削除権限。</td>
   </tr>
   <tr>
-   </td>
-   <td>Read, Write, Delete permissions on the <code>/var/dam/content</code> node.<br /> Read, Write permissions on the <code>/apps</code> node.</td>
+   <td>プレビュー</td>
+   <td><code>/var/dam/content</code> ノード上の読み取り、書き込み、削除権限。<br /><code>/apps</code> ノード上の読み取り、書き込み権限。</td>
   </tr>
  </tbody>
 </table>
