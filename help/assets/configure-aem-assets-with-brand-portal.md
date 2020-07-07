@@ -3,7 +3,7 @@ title: AEM Assets Cloud Service と Brand Portal の連携の設定
 description: AEM Assets Cloud Service と Brand Portal の連携の設定について説明します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: d5ac2fca30fd1614f21ad784bc4d59fe03a3162c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 98%
@@ -32,7 +32,6 @@ AEM Assets クラウドインスタンスと Brand Portal テナント（組織�
 >Brand Portal テナントは、1 つの AEM Assets クラウドインスタンスでのみ設定できます。
 >
 >複数の AEM Assets クラウドインスタンスを持つ Brand Portal テナントは設定しないでください。
-
 
 ## 前提条件 {#prerequisites}
 
@@ -231,8 +230,6 @@ Adobe 開発者コンソールで、プロジェクトと API を組織（Brand 
 >
 >IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。削除して、新しい有効な設定を作成する必要があります。
 
-
-
 ### Cloud Service の設定{#configure-the-cloud-service}
 
 Brand Portal Cloud Service を設定するには、次の手順を実行します。
@@ -343,8 +340,6 @@ AEM Assets クラウドインスタンスが Brand Portal で正常に設定さ�
 >[!NOTE]
 >
 >親フォルダーが Brand Portal に存在しない場合（上記の例）、または親フォルダーが AEM Assets で変更された場合に、追加のリクエストが生成されます。
-
-
 
 <!--
 
