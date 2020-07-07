@@ -2,7 +2,7 @@
 title: Adobe Experience ManagerでのSling Resource MangerのCloud Serviceとしての使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 translation-type: tm+mt
-source-git-commit: 8028682f19ba6ba7db6b60a2e5e5f5843f7ac11f
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 36%
@@ -51,8 +51,9 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
    >
    >
 * オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
-   >  However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
-
+>
+>
+However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
 
 ### プロパティ {#properties}
 
