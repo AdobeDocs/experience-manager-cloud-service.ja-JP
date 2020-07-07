@@ -2,7 +2,7 @@
 title: Git との統合
 description: Git との統合 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用
 
 >[!NOTE]
 >
-> このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリと Cloud Manager を使用する際のベストプラクティスです。規則とワークフローは、個々の開発チームに合わせて調整してください。
+>このビデオシリーズで概要を説明する手順と命名規則は、顧客管理 Git リポジトリと Cloud Manager を使用する際のベストプラクティスです。規則とワークフローは、個々の開発チームに合わせて調整してください。
 
 ## 初期同期 {#initial-sync}
 
