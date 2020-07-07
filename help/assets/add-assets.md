@@ -2,7 +2,7 @@
 title: Adobe Experience Manager へのデジタルアセットの追加
 description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1358'
 ht-degree: 97%
@@ -24,9 +24,9 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
-> Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。この方法は、AEM ユーザーインターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションなどの標準の製品機能やクライアントでデフォルトでサポートされているので、エンドユーザーがそれを意識することはありません。
+>Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。この方法は、AEM ユーザーインターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションなどの標準の製品機能やクライアントでデフォルトでサポートされているので、エンドユーザーがそれを意識することはありません。
 >
-> ユーザー側の技術チームでカスタマイズまたは拡張されるアップロードコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
+>ユーザー側の技術チームでカスタマイズまたは拡張されるアップロードコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
 ## アセットのアップロード {#upload-assets}
 
@@ -81,7 +81,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
-> ネストされたフォルダー階層を AEM にアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
+>ネストされたフォルダー階層を AEM にアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -136,7 +136,7 @@ AEM Assets では、ファイル名に禁止文字が含まれるアセットを
 
 >[!NOTE]
 >
-> セットアップした Adobe Experience Manager にデプロイする際に、他のシステムからのコンテンツ移行の一環として一括アップロードをおこなう場合は、使用するツールの入念な計画、検討、選択が必要です。コンテンツ移行方法のガイダンスについては、[デプロイメントガイド](/help/implementing/deploying/overview.md)を参照してください。
+>セットアップした Adobe Experience Manager にデプロイする際に、他のシステムからのコンテンツ移行の一環として一括アップロードをおこなう場合は、使用するツールの入念な計画、検討、選択が必要です。コンテンツ移行方法のガイダンスについては、[デプロイメントガイド](/help/implementing/deploying/overview.md)を参照してください。
 
 ## デスクトップクライアントを使用したアセットのアップロード {#upload-assets-desktop-clients}
 
@@ -163,7 +163,7 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 >[!NOTE]
 >
-> アセットに対する Dynamic Media の切り抜きなどの操作は非破壊的です。つまり、アップロードした元の内容は変更されず、代わりに、アセットの配信時におこなわれる切り抜きやメディア変換のパラメーターが提供されます。
+>アセットに対する Dynamic Media の切り抜きなどの操作は非破壊的です。つまり、アップロードした元の内容は変更されず、代わりに、アセットの配信時におこなわれる切り抜きやメディア変換のパラメーターが提供されます。
 
 処理プロファイルが割り当てられているフォルダーの場合、プロファイル名がカード表示のサムネールに表示されます。リスト表示では、プロファイル名が「**[!UICONTROL 処理プロファイル]**」に表示されます。
 
