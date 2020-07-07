@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 translation-type: tm+mt
-source-git-commit: c03e219d8261451e1215cf95babcbd4c1862d321
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -91,7 +91,7 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 >[!NOTE]
 >
-> プレリリースバージョンの **2.4RC1** は動的グループ作成サポートで利用でき、[この場所](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)にあります。
+>プレリリースバージョンの **2.4RC1** は動的グループ作成サポートで利用でき、[この場所](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)にあります。
 
 このリリースの主な機能は、Admin Console でユーザーのメンバーシップに合わせて新しい LDAP グループを動的にマッピングする機能と、動的なユーザーグループ作成です。
 
@@ -159,7 +159,8 @@ AEM では引き続き、管理者ユーザーのローカルログインをサ�
 
 
 >[!NOTE]
-> IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーが Adobe ID を使用して設定されている場合、ログインには会社の ID プロバイダーを使用して認証されます。
+>
+>IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーが Adobe ID を使用して設定されている場合、ログインには会社の ID プロバイダーを使用して認証されます。
 
 その後、ユーザーは IMS ログイン画面にリダイレクトされ、認証情報を入力する必要があります。
 
