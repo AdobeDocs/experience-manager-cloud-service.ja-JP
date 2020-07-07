@@ -3,7 +3,7 @@ title: 'Adobe Experience Manager as a Cloud Service におけるデジタルア�
 description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 27e72bbc0d852eb2c2eb059967c91e6108613965
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 100%
@@ -42,8 +42,9 @@ Adobe Experience Manager as a Cloud Service では、アセットをリポジト
 
 このアプローチで、アセットのアップロードをよりスケーラブルかつ効率的に処理できます。
 
-> !![NOTE]
-この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
+>[!NOTE]
+>
+>この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
 
 ### アップロードの開始 {#initiate-upload}
 
@@ -114,8 +115,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 | `replace` | Boolean | オプション | これが `True` で指定した名前のアセットが既に存在する場合、Experience Manager はそのアセットを削除し、再作成します。 |
 
 >!![NOTE]
->
-> アセットが既に存在し、`createVersion` も `replace` も指定されていない場合、Experience Manager はアセットの現在のバージョンを新しいバイナリで更新します。
+アセットが既に存在し、`createVersion` も `replace` も指定されていない場合、Experience Manager はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
