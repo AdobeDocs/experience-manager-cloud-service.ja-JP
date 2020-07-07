@@ -3,7 +3,7 @@ title: Brand Portal へのアセット、フォルダーおよびコレクショ
 description: アセット、フォルダーおよびコレクションを Brand Portal に公開します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 4677a8771c5891b8c9846e0adb58025304a71bdd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
@@ -26,7 +26,6 @@ Adobe Experience Manager（AEM）Assets 管理者の場合、アセット、フ�
 >[!NOTE]
 >
 >AEM オーサーが過剰なリソースを占有しないように、できればピーク時を避け、時間をずらして公開することをお勧めします。
-
 
 ## Brand Portal へのアセットの公開 {#publish-assets-to-bp}
 
@@ -187,7 +186,6 @@ AEM Assets クラウドインスタンスからコレクションを公開また
 >コンテンツフラグメントは Brand Portal に公開できません。したがって、AEM Assets インスタンスでコンテンツフラグメントを選択している場合は、「**[!UICONTROL Brand Portal に公開]**」アクションを使用できません。
 >
 >コンテンツフラグメントを含むコレクションを AEM Assets インスタンスから Brand Portal へ公開した場合は、そのフォルダー内のコンテンツフラグメントを除く全コンテンツが Brand Portal インターフェイスにレプリケートされます。
-
 
 ### コレクションの公開 {#publish-collections}
 
