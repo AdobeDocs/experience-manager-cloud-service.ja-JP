@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 translation-type: tm+mt
-source-git-commit: 093883d0afe62bf9d1d08f82180eccd3f75bca05
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # コンテンツの検索とインデックス作成 {#indexing}
 
-## Cloud ServiceとしてのAEMの変更点 {#changes-in-aem-as-a-cloud-service}
+## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
 AEMをCloud Serviceとして使用する場合、アドビでは、AEMインスタンス中心モデルから、Cloud ManagerのCI/CDパイプラインによって駆動される、n-xのAEMコンテナを持つサービスベースの表示に移行します。 単一のAEMインスタンスでインデックスの設定と管理を行う代わりに、インデックスの設定を指定してからデプロイメントを行う必要があります。 本番環境での設定の変更は、CI/CDのポリシーを明確に破っています。 インデックスの変更についても同じことが言えます。システムの安定性とパフォーマンスに影響を及ぼす可能性があるのは、指定しない場合は、実稼働環境に移行する前にテストおよび再インデックスを実行する必要があるからです。
 
@@ -72,7 +72,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> Jackrabbit Filevault Mavenパッケージプラグインバージョン **1.1.0** には既知の問題があり、のモジュール `oak:index` に追加できません `<packageType>application</packageType>`。 この問題に対処するには、バージョン **1.0.4を使用してください**。
+>Jackrabbit Filevault Mavenパッケージプラグインバージョン **1.1.0** には既知の問題があり、のモジュール `oak:index` に追加できません `<packageType>application</packageType>`。 この問題に対処するには、バージョン **1.0.4を使用してください**。
 
 インデックス定義は、カスタムおよびバージョン付きとしてマークされるようになりました。
 
@@ -90,7 +90,7 @@ AS NOTE: the above is internal for now.
 
 ### インデックス管理とは {#what-is-index-management}
 
-インデックス管理は、インデックスの追加、削除、変更に関するものです。 インデックスの *定義の変更は高速ですが* 、変更を適用する（「インデックスの作成」、または既存のインデックスの場合は「インデックスの再構築」と呼ばれる）には時間が必要です。 即時ではありません。 インデックスを作成するデータをリポジトリでスキャンする必要があります。
+インデックス管理は、インデックスの追加、削除、変更に関するものです。 インデックスの *定義の変更は高速ですが* 、変更を適用する（「インデックスの作成」と呼ばれることが多く、既存のインデックスの場合は「再インデックス化」）には時間が必要です。 即時ではありません。 インデックスを作成するデータをリポジトリでスキャンする必要があります。
 
 ### Blue-Green導入とは {#what-is-blue-green-deployment}
 
@@ -124,7 +124,7 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
-> `<indexName>-custom-<customerVersionNumber>` は、AEMをCloud Serviceとして、既存のインデックスの代わりとしてマークする場合に必要です。
+>`<indexName>-custom-<customerVersionNumber>` は、AEMをCloud Serviceとして、既存のインデックスの代わりとしてマークする場合に必要です。
 
 | 索引 | 標準インデックス | バージョン1で使用 | バージョン2で使用 |
 |---|---|---|---|
