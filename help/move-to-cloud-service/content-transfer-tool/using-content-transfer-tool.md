@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 7648adc4b1d9c5849363beb4162de2f42eac7cfd
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 99%
@@ -237,7 +237,8 @@ ht-degree: 99%
 以下のコマンドを実行します。
 
 >[!NOTE]
-> `--verbose` フラグが必要なのは、BLOB の参照元ノードのパスを報告するためです。
+>
+>`--verbose`フラグが必要なのは、BLOB の参照元ノードのパスを報告するためです。
 
 **AEM 6.5（Oak 1.8 以前）のリポジトリの場合**
 
