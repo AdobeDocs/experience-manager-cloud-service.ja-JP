@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: ae04553b17fcb7b9660f709565faed791a0c930e
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 100%
@@ -46,8 +46,9 @@ AEM as a Cloud Service は設定の可能性を提供します。
 
 ### 標準のロガーおよびライター {#standard-loggers-and-writers}
 
-> [!IMPORTANT]
-> これらは必要に応じてカスタマイズできますが、ほとんどのインストールには標準設定が適しています。ただし、標準のログ設定をカスタマイズする必要がある場合は、必ず `dev` 環境でおこないます。
+>[!IMPORTANT]
+>
+>これらは必要に応じてカスタマイズできますが、ほとんどのインストールには標準設定が適しています。ただし、標準のログ設定をカスタマイズする必要がある場合は、必ず `dev` 環境でおこないます。
 
 一部のロガーとライターは、AEM as a Cloud Service の標準インストールとして含まれています。
 
@@ -194,13 +195,13 @@ AEM as a Cloud Service では、次の情報を使用してログメッセージ
 
 >[!NOTE]
 >
-> 以下に示す設定の変更を実行するには、ローカルの開発環境で設定の変更を作成し、それらを AEM as a Cloud Service インスタンスにプッシュする必要があります。この方法について詳しくは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
+>以下に示す設定の変更を実行するには、ローカルの開発環境で設定の変更を作成し、それらを AEM as a Cloud Service インスタンスにプッシュする必要があります。この方法について詳しくは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
 
 **デバッグログレベルのアクティベート**
 
 >[!WARNING]
 >
-> DEBUG ログレベルをグローバルにアクティベートすると、大量の情報が生成され、情報の切り分けが難しくなります。デバッグが必要なサービスに対してのみ有効にすることをお勧めします。詳しくは、[個々のサービス用のロガーとライター](logging.md#loggers-and-writers-for-individual-services)を参照してください。
+>DEBUG ログレベルをグローバルにアクティベートすると、大量の情報が生成され、情報の切り分けが難しくなります。デバッグが必要なサービスに対してのみ有効にすることをお勧めします。詳しくは、[個々のサービス用のロガーとライター](logging.md#loggers-and-writers-for-individual-services)を参照してください。
 
 デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、
 
