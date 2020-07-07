@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: 'Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。 '
 translation-type: tm+mt
-source-git-commit: 5a846d34ee094e7d2f7fc71dbeef65f3fa58e86c
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
@@ -60,7 +60,7 @@ AEM as a Cloud Service では、次の特長を備えたオーケストレーシ
 
 >[!NOTE]
 >
-> 詳しくは、[デプロイ - 実行モード](/help/implementing/deploying/overview.md#runmodes)を参照してください。
+>詳しくは、[デプロイ - 実行モード](/help/implementing/deploying/overview.md#runmodes)を参照してください。
 
 AEM as a Cloud Service は個々のインスタンスとして使用でき、各インスタンスは完全な AEM 環境を表します。AEM as a Cloud Service で使用できる環境には、次の 4 種類があります。
 
