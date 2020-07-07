@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
 description: Adobe Experience Manager 6.5 と比較した、AEM Cloud Service の Adobe Experience Manager Assets の主な変更点.
 translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 92%
@@ -21,6 +21,7 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 * [クラシック UI の削除](#classic-ui).
 
 >[!NOTE]
+>
 >このドキュメントでは、AEM Assetsに対する注目すべき変更点に焦点を当てます。 Cloud ServiceとしてのAEMおよびその他のモジュールに関する一般的な変更点については、以下を参照してください。
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
@@ -28,7 +29,7 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 >* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
 >* [Cloud ServiceとしてのAEMに対する注目すべき変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
 >* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
 
 
 ## アセットの取り込みとアップロード {#asset-ingestion}
