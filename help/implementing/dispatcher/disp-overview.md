@@ -2,7 +2,7 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 6951b6ff255513f5865e1f92a09c5ac439271a26
+source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 96%
@@ -17,10 +17,12 @@ ht-degree: 96%
 ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。Dispatcher について詳しくは、[AEM Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
 
 >[!NOTE]
+>
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
 
 >[!WARNING]
-> Windows ユーザー：現在のバージョンの AEM as a Cloud Service のローカル Dispatcher ツール（v2.0.20）は、Windows との互換性がありません。Windows との互換性のアップデートを受け取るには、[アドビサポート](https://daycare.day.com/home.html)にお問い合わせください。
+>
+>Windows ユーザー：現在のバージョンの AEM as a Cloud Service のローカル Dispatcher ツール（v2.0.20）は、Windows との互換性がありません。Windows との互換性のアップデートを受け取るには、[アドビサポート](https://daycare.day.com/home.html)にお問い合わせください。
 
 ## Dispatcher ツール {#dispatcher-sdk}
 
