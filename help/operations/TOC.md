@@ -2,10 +2,10 @@
 sub-product: 'AEM as a Cloud Service の運用と保守 '
 user-guide-title: 'AEM as a Cloud Service の運用と保守 '
 translation-type: tm+mt
-source-git-commit: 61263c10257606040d5d42c4b6a6f9bc6eeb7c4a
+source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 100%
+source-wordcount: '42'
+ht-degree: 95%
 
 ---
 
@@ -17,4 +17,4 @@ ht-degree: 100%
 + [コンテンツレプリケーションサービス](replication.md)
 + [メンテナンスタスク](maintenance.md)
 + [バックアップと復元](backup.md)
-
++ [非同期ジョブ](asynchronous-jobs.md)
