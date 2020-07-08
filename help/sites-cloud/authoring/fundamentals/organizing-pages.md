@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 translation-type: tm+mt
-source-git-commit: 86fa0de81e8398b5b74291840304a2254d1771f4
+source-git-commit: b9c7e476ad8efebeff44d88302484893edbf1469
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 100%
+source-wordcount: '2550'
+ht-degree: 92%
 
 ---
 
@@ -366,6 +366,27 @@ AEM では、名前変更または移動がおこなわれるページへの内�
 <!--
 >A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 -->
+
+#### 非同期アクション {#asynchronous-actions}
+
+通常、ページの移動または名前変更操作は直ちに実行されます。 これは同期処理と見なされ、アクションが完了するまで、UI内のそれ以上のアクションはブロックされます。
+
+ただし、影響を受けるページ数が定義された制限を超える場合は、アクションは非同期に処理され、ページの移動や名前の変更の操作によって妨げられないUIでオーサリングを続行できます。
+
+* 上の最後の手順で **「Move** 」をクリックすると、AEMは設定されている制限を確認します。
+* 影響を受けるページ数が制限を下回る場合は、同期操作が実行されます。
+* 影響を受けるページ数が上限を超える場合は、非同期操作が実行されます。
+   * ユーザーは、非同期操作を実行するタイミングを定義する必要があります
+      * **非同期ジョブの実行を直ちに開始します** 。
+      * **後で** 、非同期ジョブが開始するタイミングをユーザーが定義できます。
+
+         ![非同期ページ移動](/help/sites-cloud/authoring/assets/asynchronous-page-move.png)
+
+非同期の状態は、グロー [**バルナビゲーション&#x200B;**→](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)ツール→操作→ジョブ→ジョブ→ジョブの操作→ジョブの操作→ジョブの**&#x200B;で、**Async Jobs Status**********&#x200B;ダッシュボードで確認できます。**
+
+>[!NOTE]
+>
+>非同期ジョブ処理の詳細およびページ移動/名前変更アクションの制限の設定方法については、『操作』ユーザーガイドの「 [非同期ジョブ](/help/operations/asynchronous-jobs.md) 」ドキュメントを参照してください。
 
 ### ページの削除 {#deleting-a-page}
 
