@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: 作成中
 translation-type: tm+mt
-source-git-commit: 21fa1bab926aec2f013492a0f5f4a30c1744357c
+source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 98%
+source-wordcount: '1631'
+ht-degree: 95%
 
 ---
 
@@ -158,8 +158,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-通常のプログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
-
+通常のプログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプに「Cloud Manager - Developer Role」が必要です。また、両方のサービスから表示ステータスダンプデータを取得するには、作成者と公開サービスの両方のAEM UsersまたはAEM Administrators Productプロファイルでも定義する必要があります。 ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
 
 
 ### AEM のステージング環境および実稼動環境用サービス {#aem-staging-and-production-service}
