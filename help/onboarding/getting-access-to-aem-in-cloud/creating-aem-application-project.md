@@ -2,10 +2,10 @@
 title: AEM Applicationプロジェクト —Cloud Service
 description: AEM Applicationプロジェクト —Cloud Service
 translation-type: tm+mt
-source-git-commit: 3979cad8f9e51756113971c81a601e8cba21c8a2
+source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 86%
+source-wordcount: '1120'
+ht-degree: 88%
 
 ---
 
@@ -125,31 +125,6 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 | CM_PROGRAM_NAME | プログラム名 |
 | ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Manager で生成された合成バージョン |
 | CM_AEM_PRODUCT_VERSION | リリース名 |
-
-
-### カスタム環境変数 {#custom-environ-variables}
-
-場合によっては、顧客のビルドプロセスが、Git リポジトリに格納するのに適さない特定の設定変数に依存していることがあります。Cloud Managerでは、これらの変数を顧客ごとにアドビの担当者が設定できます。 これらの変数は、安全な格納先に保存され、特定の顧客のビルドコンテナにのみ表示されます。この機能を使用する場合は、アドビの担当者に変数の設定を依頼する必要があります。
-
-設定が完了すると、これらの変数は環境変数として使用可能になります。これらの変数を Maven プロパティとして使用するには、pom.xml ファイルを参照します（変数は、前述のようにプロファイル内にあるはずです）。
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
-            </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
-        </profile>
-```
-
->[!NOTE]
->
->環境変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
