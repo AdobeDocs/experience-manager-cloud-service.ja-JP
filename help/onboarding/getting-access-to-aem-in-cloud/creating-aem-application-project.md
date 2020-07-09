@@ -1,11 +1,11 @@
 ---
-title: AEM Application Project — クラウドサービス
-description: AEM Application Project — クラウドサービス
+title: AEM Applicationプロジェクト —Cloud Service
+description: AEM Applicationプロジェクト —Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 92%
+source-wordcount: '1255'
+ht-degree: 86%
 
 ---
 
@@ -59,7 +59,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
-* インストールされている Java のバージョンは Oracle JDK 8u202 です。
+* JavaバージョンによりOracle JDK 8u202および11.0.2がインストールされています。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
 
    * bzip2
@@ -73,6 +73,37 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
+### Using Java 11 {#using-java-11}
+
+Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。 デフォルトでは、プロジェクトはJava 8を使用して構築されます。 プロジェクトでJava 11を使用するお客様は、 [Apache Maven Toolchainsプラグインを使用して使用できます](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+
+これを行うには、pom.xmlファイルに次のような `<plugin>` エントリを追加します。
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-toolchains-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>toolchain</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <toolchains>
+                    <jdk>
+                    <version>11</version>
+                    <vendor>oracle</vendor>
+                    </jdk>
+                </toolchains>
+            </configuration>
+        </plugin>
+```
+
+>[!NOTE]
+>サポートされるベンダーはOracleおよびSun Microsystemsで、サポートされるバージョンは1.8、1.11および11です。
 
 ## 環境変数 {#environment-variables}
 
