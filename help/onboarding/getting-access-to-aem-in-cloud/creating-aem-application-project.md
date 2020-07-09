@@ -2,9 +2,9 @@
 title: AEM Applicationプロジェクト —Cloud Service
 description: AEM Applicationプロジェクト —Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: e3370b7a7f543ae93b25ead8c174796fd27067f2
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1251'
 ht-degree: 86%
 
 ---
@@ -94,16 +94,17 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
             <configuration>
                 <toolchains>
                     <jdk>
-                    <version>11</version>
-                    <vendor>oracle</vendor>
+                        <version>11</version>
+                        <vendor>oracle</vendor>
                     </jdk>
                 </toolchains>
             </configuration>
-        </plugin>
 ```
 
 >[!NOTE]
->サポートされるベンダーはOracleおよびSun Microsystemsで、サポートされるバージョンは1.8、1.11および11です。
+>* サポートされるベンダーは `oracle` およびで `sun`す。
+>* サポートされているバージョンは、 `1.8`、 `1.11`および `11`です。
+
 
 ## 環境変数 {#environment-variables}
 
