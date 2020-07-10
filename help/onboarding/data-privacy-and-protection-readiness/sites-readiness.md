@@ -2,9 +2,9 @@
 title: データ保護とデータのプライバシーに関する規制 —Cloud Serviceサイトの準備Adobe Experience Manager
 description: 'データ保護およびデータプライバシーに関する様々な規制に対するCloud ServiceサイトのサポートとしてのAdobe Experience Managerについて説明します。 EU General Data Protection Regulation(GDPR)、California Consumer Privacy Act（カリフォルニア消費者プライバシー法）、およびCloud Serviceプロジェクトとして新しいAEMを導入する際の準拠方法を含む。 '
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1036'
 ht-degree: 45%
 
 ---
@@ -63,18 +63,14 @@ Adobe Experience Managerには、ユーザーのオプトイン/オプトアウ�
 
       オプトアウトCookieを削除した場合、またはコンピューターやWebブラウザーを変更した場合は、再度オプトアウトする必要があります。
 
-      オプトアウト —訪問者セッションの集計と分析（オプトアウトCookieをインストール）から自分を除外する( `amcglobal.sc.omtrdc.net` ここをクリック)。
+      オプトアウト —訪問者セッションの集計と分析（オプトアウトCookieのインストール）から自分を除外する — ここをクリックします。 `amcglobal.sc.omtrdc.net`
 
       オプトイン —訪問者セッションの集計と分析に含める（オプトアウトCookieをインストールしない） — ここをクリックします。 `amcglobal.sc.omtrdc.net`
    実際のリンクにアクセスするには、上記の手順に従います。
 
-   <!--
-    NOTE TO WRITER: Change link to https://www.adobe.com/legal/terms.html and edit note.
-    -->
-
    >[!NOTE]
    >
-   > 利用 **条件の「** プライバシーポリシー [」セクションに詳細な説明が記載されています](https://marketing.adobe.com/resources/help/ja_JP/terms.html)。
+   > 2に詳しい説明があり **ます。 プライバシー.** 」の節を参照し [てください](https://www.adobe.com/jp/legal/terms.html)。
 
 ## Analytics財団 {#analytics-foundation}
 
