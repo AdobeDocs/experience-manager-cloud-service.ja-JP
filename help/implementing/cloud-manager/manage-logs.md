@@ -2,7 +2,7 @@
 title: ログの管理 - Cloud Services
 description: ログの管理 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 また、**環境**&#x200B;ページからもダウンロードできます。
 
-![](assets/manage-logs2.png)
+![](assets/download-logs.png)
 
 >[!Note]
 >開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
