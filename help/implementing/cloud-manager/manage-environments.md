@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
+source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 91%
+source-wordcount: '753'
+ht-degree: 80%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 91%
 
 
 「 **更新** 」オプションは、 **環境** ・カードから利用できます。
-このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合、「**管理**」ボタンからも使用できます。
+This option is also available, if you click on **Details** from the **Environments** card. [ **環境** ]ページが開き、[開発]環境を選択したら、[ **...** ]をクリックして[ **更新**]を選択します。次の図を参照してください。
 
 ![](assets/environments-screen-update.png)
 
@@ -89,7 +89,7 @@ ht-degree: 91%
 
 ![](assets/environ-delete.png)
 
-また、 **環境カードで「** 詳細 **** 」をクリックすると、環境を削除できます。
+環境カードの「 **詳細** 」をクリックした場合も、削除オプションを使用でき **** ます。 [ **環境** ]ページが開き、[開発]環境を選択したら、[ **...** ]をクリックして[ **削除**]を選択します。次の図を参照してください。
 
 ![](assets/environ-delete-2.png)
 
@@ -108,5 +108,5 @@ ht-degree: 91%
 
 ![](assets/environ-dev-console.png)
 
-このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合、「**管理**」ボタンからも選択できます。
+This option is also available, if you click on **Details** from the **Environments** card. 「 **環境** 」ページが開き、環境を選択したら、「 **...」をクリックし** 、「 **Developer Console**」を選択します。
 
