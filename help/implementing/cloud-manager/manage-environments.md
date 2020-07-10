@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 39566698cf73539cc75b467be24f29c60926d06f
+source-git-commit: 11ea429fefcb4b38aa8a89acb3a5a2da5c3ecaeb
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 95%
+source-wordcount: '702'
+ht-degree: 91%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 95%
 
 開発環境の更新は、プログラムのユーザーが管理します。ある環境で AEM の最新の公開リリースが動作していない場合、ホーム画面の環境カードのステータスには&#x200B;**更新可能**&#x200B;と表示されます。
 
-![](assets/manage-environments2.png)
+![](assets/update-environ-1.png)
 
 
 「 **更新** 」オプションは、 **環境** ・カードから利用できます。
@@ -85,9 +85,14 @@ ht-degree: 95%
 
 必要な権限を持つユーザーは、開発環境を削除できます。
 
-**環境**&#x200B;カードのドロップダウンメニューから「**削除**」オプションを使用できます。このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合、「**管理**」ボタンからも使用できます。
+**環境**&#x200B;カードのドロップダウンメニューから「**削除**」オプションを使用できます。削除する開発環境 **の場合は** 、[...]をクリックします。
 
-![](assets/deleting-environment1.png)
+![](assets/environ-delete.png)
+
+また、 **環境カードで「** 詳細 **** 」をクリックすると、環境を削除できます。
+
+![](assets/environ-delete-2.png)
+
 
 >[!NOTE]
 この機能は、実稼動用に設定された通常のプログラムの実稼働／ステージング環境セットには使用できません。ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
@@ -101,7 +106,7 @@ ht-degree: 95%
 詳しくは、[サンドボックス環境の休止と休止解除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)を参照してください。
 
 
-![](assets/dev-console1.png)
+![](assets/environ-dev-console.png)
 
 このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合、「**管理**」ボタンからも選択できます。
 
