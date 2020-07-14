@@ -2,10 +2,10 @@
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: d59b193730e2135390386eab8ef83abae5f7eac0
+source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
 workflow-type: tm+mt
-source-wordcount: '10058'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -566,7 +566,7 @@ Or, if you intend to use the default tags in AEM, you can skip this task and go 
 
 >[!NOTE]
 >
->クラウドサービスの設定後は、YouTube Publishレプリケーションエージェントを有効にするために追加の設定は必要ありません。 これは、クラウドサービス設定が保存されたときに有効になっていたためです。
+>クラウドサービスの設定後は、この時点でYouTube Publishレプリケーションエージェントを有効にするために追加の設定は必要ありません。 これは、クラウドサービス設定が保存されたときに有効になっていたためです。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
