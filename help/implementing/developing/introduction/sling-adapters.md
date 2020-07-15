@@ -2,7 +2,7 @@
 title: Sling アダプターの使用
 description: Sling には、Adaptable インターフェイスを実装するオブジェクトを適切に変換するアダプターパターンが用意されています
 translation-type: tm+mt
-source-git-commit: 24e75871113d3dae903911cc28c0c2c8a994a04e
+source-git-commit: 4d41f18fea1984f64e85df6b06602426c3602efa
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 43%
@@ -10,7 +10,7 @@ ht-degree: 43%
 ---
 
 
-# Sling アダプターの使用{#using-sling-adapters}
+# Sling アダプターの使用 {#using-sling-adapters}
 
 [Sling](https://sling.apache.org) オファーと [Adapterパターン](https://sling.apache.org/site/adapters.html) 。Adaptable [](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) インターフェイスを実装するオブジェクトを簡単に変換します。 このインターフェイスは、オブジェクトを引数として渡されるクラス型に変換する汎用の [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) メソッドを提供します。
 
