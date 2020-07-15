@@ -2,10 +2,10 @@
 sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 translation-type: tm+mt
-source-git-commit: 1a8a9781da7390d25ec687d46af8d8a976c069bc
+source-git-commit: 69de631457966383b537fdf5aeddf9157adae73b
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,8 +30,10 @@ ht-degree: 92%
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
-   + [AEMのCloud Serviceとしてのオーバーレイ](developing/introduction/overlays.md)
-   + [AEMでのSling Resource MangerのCloud Serviceとしての使用](developing/introduction/sling-resource-merger.md)
+   + [Sling チートシート](developing/introduction/sling-cheatsheet.md)
+   + [Sling アダプターの使用](developing/introduction/sling-adapters.md)
+   + [AEM as a Cloud Service での Sling Resource Merger の使用](developing/introduction/sling-resource-merger.md)
+   + [AEM as a Cloud Service でのオーバーレイ](developing/introduction/overlays.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
