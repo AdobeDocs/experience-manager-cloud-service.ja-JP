@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.7.0 のリリースノート
 description: Experience Manager 2020.7.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 22a025b49444e08d014e0459443751b5a3cfc7bf
+source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 34%
+source-wordcount: '365'
+ht-degree: 33%
 
 ---
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service リリース 2020.7.0 の Cloud Manager の新機能と�
 
 ## Cloud Readiness Analyzerの新機能 {#cloud-readiness-analyzer}
 
-Cloud Readiness Analyzerの新機能と更新点について学ぶには、このセクションに従ってください。
+Cloud Readiness Analyzerリリースv1.0.2の新機能と更新点について学習するには、このセクションに従ってください。
 
 ### バグ修正 {#cra-bug-fixes}
 
