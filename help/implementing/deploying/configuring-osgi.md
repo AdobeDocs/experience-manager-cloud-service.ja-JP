@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
 workflow-type: tm+mt
-source-wordcount: '2689'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -545,7 +545,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ### 変数の数 {#number-of-variables}
 
-最大 20 個の変数を宣言できます。
+1つの環境につき最大200個の変数を宣言できます。
 
 ## シークレットおよび環境固有の設定値のデプロイメントに関する考慮事項 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
