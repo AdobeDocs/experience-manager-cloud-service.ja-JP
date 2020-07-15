@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.7.0 のリリースノート
 description: Experience Manager 2020.7.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d800ffd57826251031206290405ec1dd5febede8
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 51%
+source-wordcount: '248'
+ht-degree: 49%
 
 ---
 
@@ -27,6 +27,8 @@ AEM as a Cloud Service リリース 2020.7.0 の Cloud Manager の新機能と�
 * 環境ページのデザインが変更されました。
 
 * 冬眠状態の環境が、冬眠状態の場合に、Cloud Managerで個別のステータスが表示されるようになりました。
+
+* 環境ごとの環境変数の数が200に増えました。
 
 * Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。
 
