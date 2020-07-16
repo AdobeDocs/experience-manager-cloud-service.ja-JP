@@ -2,10 +2,10 @@
 title: AEM Applicationプロジェクト —Cloud Service
 description: AEM Applicationプロジェクト —Cloud Service
 translation-type: tm+mt
-source-git-commit: 528873fec97958646b2a0d7d64281c76ee1d021d
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 88%
+source-wordcount: '1138'
+ht-degree: 92%
 
 ---
 
@@ -73,11 +73,14 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 * Maven は常に *mvn --batch-mode clean org.jacoco:jacoco-maven-plugin:prepare-agent package* というコマンドで実行されます。
 * Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
-### Using Java 11 {#using-java-11}
+>[!NOTE]
+>Cloud Managerでは、の特定のバージョンは定義されませんが、少なくとも `jacoco-maven-plugin`使用するバージョンが必要で `0.7.5.201505241946`す。
 
-Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。 デフォルトでは、プロジェクトはJava 8を使用して構築されます。 プロジェクトでJava 11を使用するお客様は、 [Apache Maven Toolchainsプラグインを使用して使用できます](https://maven.apache.org/plugins/maven-toolchains-plugin/)。
+### Java の使用 {#using-java-11}
 
-これを行うには、pom.xmlファイルに次のような `<plugin>` エントリを追加します。
+Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。プロジェクトで Java 11 を使用するお客様は、[Apache Maven Toolchains プラグイン](https://maven.apache.org/plugins/maven-toolchains-plugin/)を使用して使用できます。
+
+これをおこなうには、pom.xml ファイルに次のような `<plugin>` エントリを追加します。
 
 ```xml
         <plugin>
@@ -103,7 +106,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 ```
 
 >[!NOTE]
->サポートされている `vendor` 値はと `oracle` で、サポートされている `sun` 値は `version` 、、 `1.8`および `1.11``11`です。
+>サポートされている `vendor` 値は `oracle`と `sun` で、サポートされている `version` 値は `1.8`、`1.11` および `11` です。
 
 ## 環境変数 {#environment-variables}
 
@@ -130,7 +133,7 @@ Cloud Managerで、Java 8とJava 11の両方を使用したカスタマープロ
 
 ごく一部のケースでは、開発用ワークステーションで実行する場合とは異なり、Cloud Manager 内で実行する場合にはビルドプロセスを少し変える必要が出ることもあります。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
-Cloud Manager ビルド環境内での Maven プロファイルのアクティブ化は、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
+Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
 
 例えば、Cloud Manager 内でビルドが実行されたときにのみ簡単なメッセージを出力する場合は、次のようにします。
 
