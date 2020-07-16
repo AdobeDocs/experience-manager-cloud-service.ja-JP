@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.7.0 のリリースノート
 description: Experience Manager 2020.7.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 66f066fe55ef872b62d4dcee711d3c7077bfccd1
+source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 33%
+source-wordcount: '404'
+ht-degree: 31%
 
 ---
 
@@ -49,6 +49,10 @@ AEM as a Cloud Service リリース 2020.7.0 の Cloud Manager の新機能と�
 * 環境名の検証で、1つずつエラーが発生しました。
 
 * 何も存在しない場合、環境ページに発行セグメントとディスパッチャーセグメントが表示されることがありました。
+
+### 既知の問題 {#known-issues}
+
+* コードカバレッジの計算方法の変更により、Jacocoプラグインの _最小バージョン_ は0.7.5.201505241946（2015年5月リリース）になりました。 古いバージョンを明示的に参照するお客様は、コード品質プロセスでエラーメッセージを受け取ります。
 
 ## Cloud Readiness Analyzerの新機能 {#cloud-readiness-analyzer}
 
