@@ -2,10 +2,10 @@
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 98%
+source-wordcount: '1165'
+ht-degree: 94%
 
 ---
 
@@ -24,6 +24,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 >
 >* **コンテンツフラグメント**&#x200B;は、主にテキストや関連画像などの編集コンテンツです。これは、デザインやレイアウトを含まない純粋なコンテンツです。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツなので、Web ページのフラグメントになります。
+
 >
 >
 エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
@@ -58,6 +59,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 3. 次のいずれかを実行できます。
    * **Assets** ブラウザーを開いて、**コンテンツフラグメント**&#x200B;をフィルタリングします（デフォルトは画像）。次に、必要なフラグメントをコンポーネントインスタンスにドラッグします。
    * コンテンツフラグメントコンポーネントを選択して、ツールバーの「**設定**」を選択します。ダイアログで、選択ダイアログを開き、必要な&#x200B;**コンテンツフラグメント**&#x200B;を参照して選択できます。
+
    >[!NOTE]
    >
    >特定のコンテンツフラグメントをページに直接ドラッグすることもできます。これにより、関連コンポーネントが自動的に作成されます（コンテンツフラグメント）。
@@ -78,6 +80,10 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 
 フラグメントの&#x200B;**設定**&#x200B;ダイアログを開き、フラグメントを現在のページで使用するように設定します。ダイアログは、使用されるコンポーネントによって異なる場合があります。
 
+>[!NOTE]
+>
+>コ [アコンポーネント、コンテンツフラグメントコンポーネントも参照してください](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)
+
 適切な設定ダイアログで、以下をはじめとする使用可能なパラメーターを選択できます。
 
 * **コンテンツフラグメント**
@@ -87,9 +93,10 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
    * **複数の要素**
 * **エレメント**
    * 使用するモデルに応じて選択を使用できます。
+
    >[!NOTE]
    >
-   >使用できる要素は、使用するモデルによって異なります。
+   >使用できるエレメントは、使用するモデルによって異なります。
 
 * **バリエーション**
    * デフォルトの「**マスター**」は常に利用できます。
@@ -129,7 +136,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 >
 >フラグメント自体に[ビジュアルアセット（画像）を挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)することもできます。
 >
->フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。
+>フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに追加できます( [混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))。
 
 >[!CAUTION]
 >
@@ -146,7 +153,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 
 ### 関連コンテンツの使用 {#using-associated-content}
 
-[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。関連コンテンツは、事実上、[中間コンテンツ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースです。
+[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
 
 >[!NOTE]
 >
@@ -164,7 +171,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 
 ### フラグメントに挿入されたアセット {#assets-inserted-into-the-fragment}
 
-アセット（画像など）がフラグメント自体に挿入されている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
+If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
 
 例えば、画像の場合、次のことができます。
 
