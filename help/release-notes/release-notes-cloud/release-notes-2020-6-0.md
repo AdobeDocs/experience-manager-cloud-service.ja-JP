@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 74abf1c4cc6ae449a81e3e40d073bfcb23b056e8
+source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 100%
+source-wordcount: '1949'
+ht-degree: 99%
 
 ---
 
@@ -182,11 +182,6 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 ### バグ修正 {#assets-bug-fixes}
 
-<!-- TBD: Add enhancements above and bug fixes below.
-Seek DM bug fixes if any.
-Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/tag/22
--->
-
 上記の新機能に加えて、現在のリリースでは、[!DNL Assets] に対するお客様のご意見に基づき、次のバグ修正がおこなわれています。
 
 * MP3 音楽ファイルの場合、DAM プレビューのサムネールに表示される再生ボタンが機能しない。（CQ-4294731）
@@ -195,3 +190,4 @@ Add Nui update as shared on Slack: https://git.corp.adobe.com/nui/app/releases/t
 * アセットのダウンロード時に、電子メールオプションが選択されていて、有効な電子メール ID が指定されている場合でも、ダウンロードオプションが使用できない。（CQ-4296535）
 * スマートコレクションとして保存されたカスタムフィルターが、アセットに正しく適用されない。（CQ-4294942）
 * 検索とインデックス作成に関する複数の機能強化と、パフォーマンス向上のためのバグ修正。（CQ-4286373）
+* フォルダーのプロパティに500内部サーバーエラーが表示される。 （CQ-4295701）
