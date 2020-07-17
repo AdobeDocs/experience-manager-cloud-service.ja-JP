@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 translation-type: tm+mt
-source-git-commit: 33ed1ab1e8a4c4d7d61981270b0a6c959c8ba3a3
+source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 96%
+source-wordcount: '1849'
+ht-degree: 95%
 
 ---
 
@@ -55,9 +55,9 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 #### コンテンツフラグメントとアセットのマッピング {#mapping-content-fragments-to-assets}
 
-![コンテンツフラグメントをアセットに](assets/content-fragment-to-assets.png)
+![コンテンツフラグメントをアセットへ](assets/content-fragment-to-assets.png)
 
-コンテンツフラグメントモデルに基づくコンテンツフラグメントは、単一のアセットにマップされます。
+コンテンツフラグメントモデルがベースのコンテンツフラグメントは、単一のアセットにマッピングされます。
 
 * すべてのコンテンツはアセットの `jcr:content/data` ノードに格納されます。
 
@@ -71,7 +71,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 例えば `text` 要素のコンテンツは、`text` プロパティとして `jcr:content/data/master` に格納されます。
 
 * メタデータと関連コンテンツは、`jcr:content/metadata` に格納されます。
-ただし、タイトルと説明は従来のメタデータと見なされないので、 に格納されます。 
+ただし、タイトルと説明は従来のメタデータと見なされないので、次の場所に格納されます。 
 `jcr:content`
 
 #### アセットの場所 {#asset-location}
@@ -167,7 +167,7 @@ Assets コアと統合するには：
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-frame.html)
+[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -245,7 +245,9 @@ Assets コアと統合するには：
 
 * `ContentElement` は、次のものに適応させることができます。
 
-   * `ElementTemplate` - 要素の構造に関する情報にアクセスするためのものです。
+   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
+
+* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` は、次のものに適応させることができます。
 
@@ -259,7 +261,7 @@ Assets コアと統合するには：
 
 * 次のタスクには、追加作業が必要な場合があります。
 
-   * データ構造を更新するには、`ContentFragment` から新しいバリエーションを作成します。
+   * から新しいバリエーションを作成することを強くお勧めし `ContentFragment`ます。 これにより、すべての要素がこのバリエーションを共有し、新しく作成したコンテンツ構造のバリエーションを反映するために、適切なグローバルデータ構造が必要に応じて更新されます。
 
    * `ContentElement.removeVariation()` を使用して、要素を介して既存のバリエーションを削除しても、バリエーションに割り当てられたグローバルデータ構造は更新されません。これらのデータ構造を確実に同期させるには、代わりに `ContentFragment.removeVariation()` を使用すると、バリエーションがグローバルに削除されます。
 
@@ -314,14 +316,13 @@ if (fragmentResource != null) {
 
 ### 例：新しいコンテンツフラグメントの作成 {#example-creating-a-new-content-fragment}
 
-To create a new content fragment programmatically, you need to use a
-`FragmentTemplate` adapted from a model resource.
+新しいコンテンツフラグメントをプログラムで作成するには、モデルリソースから適合した `FragmentTemplate` を使用する必要があります。
 
 次に例を示します。
 
 ```java
-Resource ModelRsc = resourceResolver.getResource("...");
-FragmentTemplate tpl = ModelRsc.adaptTo(FragmentTemplate.class);
+Resource modelRsc = resourceResolver.getResource("...");
+FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
@@ -331,7 +332,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 * ノード：`<conf-root>/settings/dam/cfm/jcr:content`
 * プロパティ名：`autoSaveInterval`
-* タイプ：`Long`
+* 型：`Long`
 
 * デフォルト：`600`（10 分）。`/libs/settings/dam/cfm/jcr:content` で定義されています
 
@@ -340,7 +341,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 * ノード：`/conf/global/settings/dam/cfm/jcr:content`
 * プロパティ名：`autoSaveInterval`
 
-* タイプ：`Long`
+* 型：`Long`
 
 * 値：`300`（5 分は 300 秒です）
 
