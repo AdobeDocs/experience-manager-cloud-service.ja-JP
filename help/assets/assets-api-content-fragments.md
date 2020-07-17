@@ -2,10 +2,10 @@
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
 translation-type: tm+mt
-source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
+source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -211,7 +211,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 アセットが要求されると、アセットのメタデータ（タイトルや名前など、それぞれのアセットスキーマで定義される情報）が応答で返されます。
 
-アセットのバイナリデータは、`content` タイプの SIREN リンクとして公開されます（`rel attribute` とも呼ばれます）。
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
 アセットには複数のレンディションを含めることができます。通常、これらは子エンティティとして公開されます。ただし、サムネールレンディションは例外です。これは、`thumbnail` タイプ（`rel="thumbnail"`）のリンクとして公開されます。
 
@@ -244,7 +244,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 使用方法は、特定の使用例以外にも、AEM オーサーを使用するかパブリッシュ環境を使用するかで異なることがあります。
 
-* 作成はオーサーインスタンスに厳密に結び付けられています（[現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません](/help/assets/assets-api-content-fragments.md#limitations)）。
+* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
 * 配信は、どちらからも可能です。AEM では、要求されたコンテンツを JSON 形式でのみ提供するからです。
 
    * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからの格納と配信で十分です。
