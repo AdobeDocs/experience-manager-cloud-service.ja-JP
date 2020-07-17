@@ -2,10 +2,10 @@
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
 translation-type: tm+mt
-source-git-commit: efbd21aa7d8aa5b32d0af720466e4ffe92a012dd
+source-git-commit: 4687e797362b5532c8b806bcef46778e8e8554ce
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >[!NOTE]
 >アクセス経由：
 >* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
->* `/content/assets` は `.model` セレクターを使用する&#x200B;**必要があります**。
+>* `/content/path/to/page` は `.model` セレクターを使用する&#x200B;**必要があります**。
 
 
 実行する操作は HTTP メソッドで決まります。
@@ -348,7 +348,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
    このエラーステータスと生成されたエラーメッセージ（等幅テキスト）が返される一般的なシナリオの一覧を以下に示します。
 
    * 親フォルダーが存在しない（`POST` でコンテンツフラグメントを作成する場合）
-   * コンテンツフラグメントモデルが指定されていないか（cq:modelが見つかりません）、読み取れません（パスが無効か、権限の問題が原因です）、または有効なフラグメントモデルがありません：
+   * コンテンツフラグメントモデルが指定されていない（cq:model が見つからない）、読み取れない（パスが無効か権限の問題が原因）、または有効なフラグメントモデルがありません。
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
