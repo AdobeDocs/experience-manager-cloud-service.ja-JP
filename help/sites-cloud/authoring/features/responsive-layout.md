@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
 workflow-type: tm+mt
 source-wordcount: '1765'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -98,144 +98,145 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
    エミュレーターツールバーに追加のレイアウトオプションが表示されます。
 
    * **デバイスを回転** - 垂直方向（縦置き）から水平方向（横置き）に、またはその逆に、デバイスを回転できます。
-![デバイスの回転（横置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
-   ![デバイスの回転（縦置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)   **デバイスを選択** - エミュレートする特定のデバイスをリストから定義します（詳しくは次のステップを参照）。
 
-   * ![デバイス選択ボタン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
+   ![デバイスの回転（横置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-landscape-button.png)
+   ![デバイスの回転（縦置き）ボタン](/help/sites-cloud/authoring/assets/responsive-layout-rotate-device-portrait-button.png)
 
-   ![エミュレートするデバイスを選択するには、次のどちらかの方法を使用できます。](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
+   * **デバイスを選択** - エミュレートする特定のデバイスをリストから定義します（詳しくは次のステップを参照）。
 
-1. デバイスを選択アイコンを使用して、ドロップダウンセレクターから選択する。
+   ![デバイス選択ボタン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
+1. エミュレートするデバイスを選択するには、次のどちらかの方法を使用できます。
+
+   * デバイスを選択アイコンを使用して、ドロップダウンセレクターから選択する。
    * エミュレーターツールバーのデバイスのインジケーターをタップまたはクリックする。
-   * ![デバイス選択ドロップダウン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
-   ![特定のデバイスを選択すると、次のことができます。](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
+   ![デバイス選択ドロップダウン](/help/sites-cloud/authoring/assets/responsive-layout-select-device-dropdown.png)
 
-1. 選択したデバイス（**iPad** など）のアクティブマーカーを確認する。
+1. 特定のデバイスを選択すると、次のことができます。
 
+   * 選択したデバイス（**iPad** など）のアクティブマーカーを確認する。
    * 該当する[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)（**タブレット**&#x200B;など）のアクティブマーカーを確認する。
    * 青い点線は、選択したデバイス（ここでは横置きの **iPhone 6 Plus**）の&#x200B;*フォールド*&#x200B;を表します。
-   * ![フォールド](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)****
 
-   フォールドは、コンテンツのページの改行と見なすこともできます（[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)と混同しないでください）。これは、デバイスでスクロールする前にユーザーに表示されるコンテンツの部分を確認するために表示されます。
+   ![フォールド](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * エミュレートしているデバイスの高さが画面サイズより高い場合、フォールドの線は表示されません。[](#layout-definitions-device-emulation-and-breakpoints)
+   * フォールドは、コンテンツのページの改行と見なすこともできます（[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)と混同しないでください）。これは、デバイスでスクロールする前にユーザーに表示されるコンテンツの部分を確認するために表示されます。
+   * エミュレートしているデバイスの高さが画面サイズより高い場合、フォールドの線は表示されません。
    * フォールドは、作成者の利便性のために表示されます。公開されたページには表示されません。
-   * レイアウトコンテナとそのコンテンツの追加（編集モード） {#adding-a-layout-container-and-its-content-edit-mode}
 
 
-## **レイアウトコンテナ**&#x200B;は、次の特徴を持つ段落システムです。
+## レイアウトコンテナとそのコンテンツの追加（編集モード） {#adding-a-layout-container-and-its-content-edit-mode}
 
-他のコンポーネントを含む。****
+**レイアウトコンテナ**&#x200B;は、次の特徴を持つ段落システムです。
 
+* 他のコンポーネントを含む。
 * レイアウトを定義する。
 * 変更に応答する。
-* [!NOTE]
 
+>[!NOTE]
+>
 >まだ使用可能になっていない場合は、**レイアウトコンテナ**&#x200B;を、段落システムまたはページ用に明示的にアクティベートする必要があります。<!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
+
+1. **レイアウトコンテナ**&#x200B;は、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)で標準コンポーネントとして使用できます。ここから、ページ上の必要な場所へドラッグできます。そうすると、「**コンポーネントをここにドラッグ**」プレースホルダーが表示されます。
+1. その後、コンポーネントをレイアウトコンテナに追加できます。これらのコンポーネントには実際のコンテンツが含まれます。
+
+   ![レイアウトコンテナ](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+
+## レイアウトコンテナでの選択およびアクションの実行（編集モード）{#selecting-and-taking-action-on-a-layout-container-edit-mode}
+
+他のコンポーネントと同様に、レイアウトコンテナは、選択してからアクション（切り取り、コピー、削除）を実行できます（**編集**&#x200B;モードのとき）。
+
+>[!CAUTION]
 >
->**レイアウトコンテナ**&#x200B;は、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)で標準コンポーネントとして使用できます。ここから、ページ上の必要な場所へドラッグできます。そうすると、「**コンポーネントをここにドラッグ**」プレースホルダーが表示されます。
+>レイアウトコンテナは段落システムなので、このコンポーネントを削除すると、レイアウトグリッドに加えて、そのコンテナ内にあるすべてのコンポーネント（およびそのコンテンツ）も削除されます。
 
-1. その後、コンポーネントをレイアウトコンテナに追加できます。これらのコンポーネントには実際のコンテンツが含まれます。****[](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)****
-1. ![レイアウトコンテナ](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
+1. グリッドのプレースホルダーの上にマウスを移動するか、タップすると、アクションメニューが表示されます。
 
-   レイアウトコンテナでの選択およびアクションの実行（編集モード）{#selecting-and-taking-action-on-a-layout-container-edit-mode}](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
-
-## 他のコンポーネントと同様に、レイアウトコンテナは、選択してからアクション（切り取り、コピー、削除）を実行できます（**編集**&#x200B;モードのとき）。
-
-[!CAUTION]**
-
->[!CAUTION]レイアウトコンテナは段落システムなので、このコンポーネントを削除すると、レイアウトグリッドに加えて、そのコンテナ内にあるすべてのコンポーネント（およびそのコンテンツ）も削除されます。
->
->グリッドのプレースホルダーの上にマウスを移動するか、タップすると、アクションメニューが表示されます。
-
-1. ![レイアウトコンテナへの追加](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
+   ![レイアウトコンテナへの追加](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
    **親**&#x200B;オプションを選択する必要があります。
 
    ![親ボタン](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   レイアウトコンポーネントがネストされている場合は、**親**&#x200B;オプションを選択するとドロップダウンに選択肢が表示され、ネストしたレイアウトコンテナまたはその親を選択できます。
+1. レイアウトコンポーネントがネストされている場合は、**親**&#x200B;オプションを選択するとドロップダウンに選択肢が表示され、ネストしたレイアウトコンテナまたはその親を選択できます。
 
-1. ドロップダウンのコンテナ名の上にマウスを移動すると、アウトラインがページに表示されます。****
+   ドロップダウンのコンテナ名の上にマウスを移動すると、アウトラインがページに表示されます。
 
-   ネストの一番下のレベルのレイアウトコンテナは、青色で描画されます。
-
+   * ネストの一番下のレベルのレイアウトコンテナは、青色で描画されます。
    * それ以上のコンテナは明るい青色です。
-   * ![ネストされたコンテナ](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-   グリッド全体が、コンテンツも含めて強調表示されます。アクションツールバーが表示され、ここから、「**削除**」などのアクションを選択できます。
+   ![ネストされたコンテナ](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. レイアウトの定義（レイアウトモード） {#defining-layouts-layout-mode}**
+1. グリッド全体が、コンテンツも含めて強調表示されます。アクションツールバーが表示され、ここから、「**削除**」などのアクションを選択できます。
 
-## [!NOTE]
+## レイアウトの定義（レイアウトモード） {#defining-layouts-layout-mode}
 
->[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)ごとに別々のレイアウトを定義できます（エミュレートされたデバイスのタイプと向きによって決定）。
+>[!NOTE]
 >
->レイアウトコンテナと共に実装されているレスポンシブグリッドのレイアウトを設定するには、**レイアウト**&#x200B;モードを使用する必要があります。
+>[ブレークポイント](#layout-definitions-device-emulation-and-breakpoints)ごとに別々のレイアウトを定義できます（エミュレートされたデバイスのタイプと向きによって決定）。
+
+レイアウトコンテナと共に実装されているレスポンシブグリッドのレイアウトを設定するには、**レイアウト**&#x200B;モードを使用する必要があります。
 
 **レイアウト**&#x200B;モードは 2 つの方法で開始できます。
 
-[ツールバーのモードメニュー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)を使用して&#x200B;**レイアウト**&#x200B;モードを選択する。
-
-* **編集**&#x200B;モードまたは&#x200B;**ターゲット設定**&#x200B;モードに切り替える場合と同様に、**レイアウト**&#x200B;モードを選択します。
-   * **レイアウト**&#x200B;モードは持続され、モードセレクターで別のモードを選択するまで、**レイアウト**&#x200B;モードのままです。****
-   * [個別のコンポーネントを編集する](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)。****
-* コンポーネントのクイックアクションメニューの「**レイアウト**」オプションを使用すると、**レイアウト**&#x200B;モードに切り替えることができます。
+* [ツールバーのモードメニュー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)を使用して&#x200B;**レイアウト**&#x200B;モードを選択する。
+   * **編集**&#x200B;モードまたは&#x200B;**ターゲット設定**&#x200B;モードに切り替える場合と同様に、**レイアウト**&#x200B;モードを選択します。
+   * **レイアウト**&#x200B;モードは持続され、モードセレクターで別のモードを選択するまで、**レイアウト**&#x200B;モードのままです。
+* [個別のコンポーネントを編集する](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)。
+   * コンポーネントのクイックアクションメニューの「**レイアウト**」オプションを使用すると、**レイアウト**&#x200B;モードに切り替えることができます。
    * **レイアウト**&#x200B;モードはコンポーネントを編集している間持続し、フォーカスが別のコンポーネントに移ると&#x200B;**編集**&#x200B;モードに戻ります。
-   * **レイアウトモードでは、グリッドに対して様々なアクションを実行できます。******
 
-青いドットを使用して、コンテンツのコンポーネントのサイズを変更します。サイズ変更は常にグリッドにスナップされます。背景のサイズを変更する際には、次のように位置揃えを補助するためのグリッドが表示されます。
+レイアウトモードでは、グリッドに対して様々なアクションを実行できます。
 
-* ![コンポーネントのサイズ変更](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+* 青いドットを使用して、コンテンツのコンポーネントのサイズを変更します。サイズ変更は常にグリッドにスナップされます。背景のサイズを変更する際には、次のように位置揃えを補助するためのグリッドが表示されます。
 
-   [!NOTE]](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+   ![コンポーネントのサイズ変更](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >コンポーネント（**画像**&#x200B;など）のサイズが変更されても、割合と比率は維持されます。
+   >[!NOTE]
    >
-   >コンテンツコンポーネントをクリックまたはタップします。ツールバーで次の操作を実行できます。****
+   >コンポーネント（**画像**&#x200B;など）のサイズが変更されても、割合と比率は維持されます。
 
-* **親** - 全体的にアクションを実行するために、レイアウトコンテナコンポーネント全体を選択できます。
+* コンテンツコンポーネントをクリックまたはタップします。ツールバーで次の操作を実行できます。
+   * **親** - 全体的にアクションを実行するために、レイアウトコンテナコンポーネント全体を選択できます。
    * **新規行にフロート** - コンポーネントが、グリッド内の空きスペースに応じて、新しい行に移動します。
    * **コンポーネントを非表示** - コンポーネントが非表示になります（レイアウトコンテナのツールバーから復元できます）。
-   * ![コンポーネントを非表示](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-   **レイアウト**&#x200B;モードでは、「**コンポーネントをここにドラッグ**」をタップまたはクリックすると、コンポーネント全体を選択できます。そうすると、このモードのツールバーが表示されます。
+   ![コンポーネントを非表示](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* ツールバーには、レイアウトコンポーネントの状態やそれに属するコンポーネントに応じて異なるオプションが表示されます。次に例を示します。********
+* **レイアウト**&#x200B;モードでは、「**コンポーネントをここにドラッグ**」をタップまたはクリックすると、コンポーネント全体を選択できます。そうすると、このモードのツールバーが表示されます。
 
-   **親** - 親コンポーネントを-選択します。
+   ツールバーには、レイアウトコンポーネントの状態やそれに属するコンポーネントに応じて異なるオプションが表示されます。次に例を示します。
 
-   * ![親ボタン](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+   * **親** - 親コンポーネントを-選択します。
 
-      **非表示のコンポーネントを表示** - すべてまたは個別のコンポーネントを表示します。数字は現在非表示のコンポーネントの数を示します。カウンターは非表示のコンポーネントの数を示します。
+      ![親ボタン](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-   * ![「非表示のコンポーネントを表示」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+   * **非表示のコンポーネントを表示** - すべてまたは個別のコンポーネントを表示します。数字は現在非表示のコンポーネントの数を示します。カウンターは非表示のコンポーネントの数を示します。
 
-      **ブレークポイントレイアウトを元に戻す** - デフォルトのレイアウトに戻します。カスタマイズされたレイアウトが適用されなくなります。
+      ![「非表示のコンポーネントを表示」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * ![「ブレークポイントレイアウトを元に戻す」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+   * **ブレークポイントレイアウトを元に戻す** - デフォルトのレイアウトに戻します。カスタマイズされたレイアウトが適用されなくなります。
 
-      **新規行にフロート** - コンポーネントの位置を上に移動します（間隔がある場合）。
+      ![「ブレークポイントレイアウトを元に戻す」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
-   * ![「新規行にフロート」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+   * **新規行にフロート** - コンポーネントの位置を上に移動します（間隔がある場合）。
 
-      **コンポーネントを非表示** - 現在のコンポーネントを非表示にします。
+      ![「新規行にフロート」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
-   * ![「コンポーネントを非表示」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+   * **コンポーネントを非表示** - 現在のコンポーネントを非表示にします。
 
-      [!NOTE]](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]上記の例では、フロートと非表示のアクションが使用可能になっています。これは、このレイアウトコンテナが親レイアウトコンテナ内にネストされているからです。
+      ![「コンポーネントを非表示」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+   >[!NOTE]
    >
-   >**コンポーネントを表示**&#x200B;親コンポーネントを選択して、「**非表示のコンポーネントを表示**」オプションを含むアクションツールバーを表示します。この例では、2 つのコンポーネントが非表示にされています。
+   >上記の例では、フロートと非表示のアクションが使用可能になっています。これは、このレイアウトコンテナが親レイアウトコンテナ内にネストされているからです。
 
-   * ![コンポーネントの再表示](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-「**非表示のコンポーネントを表示**」オプションを選択すると、現在非表示のコンポーネントが元の場所で青色で表示されます。
+   * **Unhide components**&#x200B;親コンポーネントを選択し、 
+**「非表示のコンポーネントを表示** 」オプション この例では、2 つのコンポーネントが非表示にされています。
 
-      ![「すべてを復元」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+      ![コンポーネントの再表示](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
+   「**非表示のコンポーネントを表示**」オプションを選択すると、現在非表示のコンポーネントが元の場所で青色で表示されます。
+
+   ![「すべてを復元」ボタン](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
    「**すべてを復元**」を選択すると、非表示のすべてのコンポーネントが表示されます。
-
-   ![Restore all button](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
-
-   Selecting **Restore all** will unhide all hidden components.
