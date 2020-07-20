@@ -2,9 +2,9 @@
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: a5b0d8789a50974c5b633feb5a84824b5999916c
+source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 96%
 
 ---
@@ -83,7 +83,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!NOTE]
 >
->AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「コンテンツフラグメントの翻訳プロジェクトの作成」を参照してください。
+>AEM はフラグメントコンテンツの翻訳もサポートしています。
 
 <!--
 >[!NOTE]
