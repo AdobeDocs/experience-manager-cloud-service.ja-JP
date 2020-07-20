@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -96,7 +96,8 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
-これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+これにより、ユーザーは、エクスペリエンスフラグメントを/content/experience-fragments内に 
+`cq:allowedTemplates` このフォルダーのプロパティには、で始まる名前を持つすべてのテンプレートが含まれ `experience-fragment`ます。 ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
@@ -165,6 +166,7 @@ HTML ページを生成すると、Sling Rewriter パイプラインは出力に
    2. `href` 属性
    3. `*-src` 属性（例：data-src、custom-src など）
    4. `*-href` 属性（例：`data-href`、`custom-href`、`img-href` など）
+
    >[!NOTE]
    >
    >ほとんどの場合、HTML 内の内部リンクは相対リンクですが、カスタムコンポーネントの HTML で完全な URL が指定されている場合もあります。デフォルトでは、AEM はこれらの完全な URL を無視し、変更しません。
@@ -287,8 +289,9 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 このメソッドは入力として次のパラメーターを受け取ります。
 
-* `link`：
-現在処理中のリンクの `String` 表現です。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
+* `link`
+ 
+`String` 現在処理中のリンクの表現。 これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`：
 現在処理中の HTML 要素の名前です。
