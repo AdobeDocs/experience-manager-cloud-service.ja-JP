@@ -2,10 +2,10 @@
 title: AEM Applicationプロジェクト —Cloud Service
 description: AEM Applicationプロジェクト —Cloud Service
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 92%
+source-wordcount: '1314'
+ht-degree: 80%
 
 ---
 
@@ -128,6 +128,39 @@ Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマー�
 | CM_PROGRAM_NAME | プログラム名 |
 | ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Manager で生成された合成バージョン |
 | CM_AEM_PRODUCT_VERSION | リリース名 |
+
+### パイプライン変数 {#pipeline-variables}
+
+場合によっては、顧客のビルドプロセスが、特定の設定変数に依存する可能性があります。これらの変数はGitリポジトリに配置するのに適していないか、同じブランチを使用するパイプライン実行間で異なる必要があります。
+
+Cloud Managerでは、これらの変数をCloud Manager APIまたはCloud Manager CLIを介してパイプライン単位で設定できます。 変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。 どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数はファイル内または他のビルドスクリプト内から参照でき `pom.xml` ます。
+
+CLIを使用して変数を設定するには、次のようなコマンドを実行します。
+
+`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
+
+現在の変数は次のとおりです。
+
+`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
+
+変数名には、英数字とアンダースコア(_)のみを使用できます。 慣例では、名前はすべて大文字である必要があります。パイプラインあたり200個の変数に制限があります。各名前は100文字未満にし、各値は2048文字未満にする必要があります。
+
+通常、 `Maven pom.xml` ファイル内で使用する場合は、次のような構文を使用して、これらの変数をMavenプロパティにマップすると便利です。
+
+```xml
+        <profile>
+            <id>cmBuild</id>
+            <activation>
+                <property>
+                    <name>env.CM_BUILD</name>
+                </property>
+            </activation>
+            <properties>
+                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
+            </properties>
+        </profile>
+```
+
 
 ## Cloud Manager での Maven プロファイルのアクティブ化 {#activating-maven-profiles-in-cloud-manager}
 
