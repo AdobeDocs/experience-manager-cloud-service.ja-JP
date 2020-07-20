@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
 workflow-type: tm+mt
 source-wordcount: '2276'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Dynamic Media で 3D アセットを使用するときに、追加のインス�
 
 <!-- See also [Dynamic Media 3D Release Notes.](/help/release-notes/aem3d-release-notes.md) -->
 
-## Dynamic Mediaでサポートされる3D形式 {#supported-three-d-file-formats-in-dm}
+## Dynamic Media でサポートされる 3D 形式 {#supported-three-d-file-formats-in-dm}
 
-Dynamic Mediaは、次の3Dファイル形式をサポートしています。
+Dynamic Media は、次の 3D ファイル形式をサポートしています。
 
-サポートされる [3D形式も参照](/help/assets/file-format-support.md#supported-3d-formats)
+[サポートされる 3D 形式](/help/assets/file-format-support.md#supported-3d-formats)も参照
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
@@ -88,7 +88,7 @@ Dynamic Media の 3D アセットを操作する前に、AEM の管理者が既�
 
 * サーバーの帯域幅
 * サーバーの待ち時間
-* 画像の複雑さ。
+* 画像の複雑さ
 
 さらに、カメラをインタラクティブに操作する際に、ワークステーション、ノートパソコン、モバイルタッチデバイスなどのクライアントコンピューターの性能を考慮することも重要です。グラフィック性能に優れ、ある程度パワフルなシステムなら、インタラクティブな 3D 表示をよりスムーズで満足なものにすることができます。
 
