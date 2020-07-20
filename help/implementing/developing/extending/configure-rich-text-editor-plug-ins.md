@@ -1,20 +1,20 @@
 ---
-title: Configure the Rich Text Editor plug-ins in [!DNL Adobe Experience Manager].
-description: リッチテキストエディタ [!DNL Adobe Experience Manager] ープラグインの設定について説明します。
+title: ' [!DNL Adobe Experience Manager] でのリッチテキストエディタープラグインの設定'
+description: ' [!DNL Adobe Experience Manager]  のリッチテキストエディタープラグインの設定について説明します。'
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
 source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
 workflow-type: tm+mt
 source-wordcount: '4301'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
 # リッチテキストエディタープラグインの設定 {#configure-the-rich-text-editor-plug-ins}
 
-リッチテキストエディター（RTE）の各機能は一連のプラグインを介して使用可能になり、それぞれに features プロパティがあります。features プロパティを設定することで、1 つ以上の RTE 機能を有効または無効にできます。この記事では、RTE プラグインの特殊な設定方法について説明します。
+リッチテキストエディター（RTE）の各機能は一連のプラグインから使用でき、それぞれに features プロパティがあります。features プロパティを設定することで、1 つ以上の RTE 機能を有効または無効にできます。この記事では、RTE プラグインの特殊な設定方法について説明します。
 
 他の RTE 設定について詳しくは、[リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)を参照してください。
 
@@ -26,7 +26,7 @@ ht-degree: 77%
 
 プラグインをアクティベートするには、次の手順に従います。初めてプラグインを設定するときは、対応するノードが存在しないので、一部の手順のみ実行します。
 
-By default, `format`, `link`, `list`, `justify`, and `control` plug-ins and all their features are enabled in RTE.
+デフォルトでは、`format`、`link`、`list`、`justify`、`control` プラグインとそのすべての機能が RTE で有効になっています。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plug-ins and all 
    * 親ノード（コンポーネントに応じる）：
 
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * 代替の設定ノード: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+      * 代替の設定ノード：`.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
    * 型：**jcr:primaryType** `cq:Widget`
    * いずれも以下のプロパティを持ちます。
@@ -60,11 +60,11 @@ By default, `format`, `link`, `list`, `justify`, and `control` plug-ins and all 
 
 プラグインをアクティベートしたら、次のガイドラインに従って `features` プロパティを設定します。
 
-|  | すべての機能を有効化 | 一部の特定の機能を有効化。 | すべての機能を無効化. |
+|  | すべての機能を有効化 | 一部の特定の機能を有効化。 | すべての機能を無効化。 |
 |---|---|---|---|
-| 名前 | 機能 | 機能 | 機能 |
-| 型 | String | `String` (複数文字列； タイプをに設定 `String` し、CRXDE Liteでクリック `Multi` します) | String |
-| 値 | `*`（アスタリスク） | 1つ以上のフィーチャ値に設定します。 | - |
+| 名前 | features | features | features |
+| 型 | String | `String`（複数文字列。CRXDE Lite で型を `String` に設定し、`Multi` をクリック） | String |
+| 値 | `*`（アスタリスク） | 1 つまたは複数の機能値を設定。 | - |
 
 ## findreplace プラグインの理解 {#findreplace}
 
@@ -72,7 +72,7 @@ By default, `format`, `link`, `list`, `justify`, and `control` plug-ins and all 
 
 置換機能を使用する場合は、検索文字列と同時に置換後の文字列も入力する必要があります。ただし、置換する前に「検索」をクリックして文字列を検索することはできます。「検索」をクリックした後に置換後の文字列を入力すると、検索がリセットされ、テキストの先頭から再開されます。
 
-検索と置換ダイアログは、「検索」をクリックすると透明になり、「置換」をクリックすると不透明になります。この動作により、作成者は置き換えられるテキストを確認できます。 「すべてを置換」をクリックすると、ダイアログが閉じて、実行された置換の回数が表示されます。
+検索と置換ダイアログは、「検索」をクリックすると透明になり、「置換」をクリックすると不透明になります。この動作により、作成者は置き換えられるテキストを確認できます。「すべてを置換」をクリックすると、ダイアログが閉じて、実行された置換の回数が表示されます。
 
 ## 貼り付けモードの設定 {#pastemodes}
 
@@ -80,9 +80,9 @@ RTE では、次の 3 つのいずれかのモードで、コンテンツを貼�
 
 * **ブラウザーモード**：ブラウザーのデフォルトの貼り付け機能を使用して、テキストを貼り付けます。この方法は推奨されません。不要なマークアップが追加されることがあります。
 
-* **プレーンテキストモード**：クリップボードの内容をプレーンテキストとして貼り付けます。It strips all elements of style and formatting from the copied content before inserting in [!DNL Experience Manager] component.
+* **プレーンテキストモード**：クリップボードの内容をプレーンテキストとして貼り付けます。この方法では、クリップボードの内容を [!DNL Experience Manager] コンポーネントに挿入する前に、そのスタイル要素と書式設定要素がすべて削除されます。
 
-* **MS Word モード**：MS Word からテキスト（テーブルを含む）を書式付きでコピーして貼り付けます。Web ページや MS Excel など、他のソースからのテキストのコピー＆貼り付けはサポートされていないので、一部の書式しか保持されません。
+* **MS Word モード**：MS Word からテキスト（テーブルを含む）を書式付きでコピーして貼り付けます。Web ページや MS Excel など、他のソースからのテキストのコピーおよび貼り付けはサポートされていないので、一部の書式しか保持されません。
 
 ### RTE ツールバーで使用可能な貼り付けオプションの設定  {#configure-paste-options-available-on-the-rte-toolbar}
 
@@ -108,31 +108,31 @@ RTE では、次の 3 つのいずれかのモードで、コンテンツを貼�
 
 * ブラウザーのデフォルトの貼り付け機能を使用して、テキストを貼り付けます。この方法は推奨されません。不要なマークアップが追加されることがあります。下の `browser` を使用して設定します。
 
-* クリップボードの内容をプレーンテキストとして貼り付けます。It strips all elements of style and formatting from the copied content before inserting in [!DNL Experience Manager] component. 下の `plaintext` を使用して設定します。
+* クリップボードの内容をプレーンテキスト形式で貼り付けます。この方法では、クリップボードの内容を [!DNL Experience Manager] コンポーネントに挿入する前に、そのスタイル要素と書式設定要素がすべて削除されます。下の `plaintext` を使用して設定します。
 
-* MS Word からテキスト（テーブルを含む）を書式付きでコピーして貼り付けます。Web ページや MS Excel など、他のソースからのテキストのコピー＆貼り付けはサポートされていないので、一部の書式しか保持されません。下の `wordhtml` を使用して設定します。
+* MS Word からテキスト（テーブルを含む）を書式付きでコピーして貼り付けます。Web ページや MS Excel など、他のソースからのテキストのコピーおよび貼り付けはサポートされていないので、一部の書式しか保持されません。下の `wordhtml` を使用して設定します。
 
-1. コンポーネント内で、`<rtePlugins-node>/edit` ノードに移動します。ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、`<rtePlugins-node>/edit` ノードに移動します。このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `edit` ノード内で、次の詳細情報を使用してプロパティを作成します。
 
    * **名前** `defaultPasteMode`
    * **型** `String`
-   * **値** は、、、またはの各 `browser``plaintext``wordhtml` モードの必要な貼り付けモードの1つです。
+   * **値**&#x200B;は `browser`、`plaintext`、`wordhtml` モードからのいずれかの必須の貼り付けモードです。
 
 ### コンテンツの貼り付け時に使用可能な書式の設定 {#pasteformats}
 
-The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so that you can explicitly allow a few styles when pasting in [!DNL Experience Manager] from another program, such as [!DNL Microsoft Word].
+Microsoft Word として貼り付け（`paste-wordhtml`）モードをさらに詳細に設定し、[!DNL Microsoft Word] などの別のプログラムから [!DNL Experience Manager] に貼り付けるときに使用可能なスタイルを明示的に定義することができます。
 
-For example, if only bold formats and lists should be allowed when pasting in [!DNL Experience Manager], you can filter out the other formats. これは、設定可能な貼り付けフィルタリングと呼ばれ、次の両方に対して実行できます。
+例えば、[!DNL Experience Manager] に貼り付ける際に太字書式とリストのみを許可する場合は、他の書式を除外できます。これは、設定可能な貼り付けフィルタリングと呼ばれ、次の両方に対して実行できます。
 
 * [テキスト](#pastemodes)
 * [リンク](#linkstyles)
 
 リンクに関しては、自動的に承認されるプロトコルも定義できます。
 
-To configure which formats are allowed when pasting text into [!DNL Experience Manager] from another program:
+別のプログラムから [!DNL Experience Manager] にテキストを貼り付けるときに使用可能な書式を設定するには、次のようにします。
 
-1. コンポーネント内で、ノード `<rtePlugins-node>/edit` に移動します。ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、ノード `<rtePlugins-node>/edit` に移動します。このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `edit` ノードの下に、HTML 貼り付けルールを格納するノードを作成します。
 
    * **名前** `htmlPasteRules`
@@ -161,10 +161,10 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
 
 | プロパティ | 型 | 説明 |
 |--- |--- |--- |
-| `allowBlockTags` | `String` | 使用可能なブロックタグのリストを定義します。ヘッドライン(h1、h2、h3)、段落(p)、リスト(ol、ul)、テーブル(table)など、使用できるブロックタグがいくつかあります。 |
-| `fallbackBlockTag` | `String` | Defines the block tag used for any blocks having a block tag not included in `allowBlockTags`. 通常は十分で `p` す。 |
-| `table` | `nt:unstructured` | テーブルを貼り付けるときの動作を定義します。このノードには、テーブルの貼り付けを許可するかどうかを定義するプロパティ allow（型は Boolean）が必要です。allowがfalseに設定されている場合、貼り付けられたテーブルコンテンツの処理方法を定義するには、プロパティignoreMode（タイプString）を指定する必要があります。 ignoreModeの有効な値は、テーブルの内容 `remove` を削除し、テーブルのセルを段落 `paragraph` に変換することです。 |
-| `list` | `nt:unstructured` | リストを貼り付けるときの動作を定義します。リストの貼り付けを許可するかどうかを定義するプロパティ `allow`（型は Boolean）が必要です。If `allow` is set to `false`, specify the property `ignoreMode` (type `String`) to define how to handle any list content pasted. ignoreModeの有効な値は、リストの内容 `remove` を削除し、リスト項目 `paragraph` を段落に変換することです。 |
+| `allowBlockTags` | `String` | 使用可能なブロックタグのリストを定義します。ヘッドライン（h1、h2、h3）、段落（p）、リスト（ol、ul）、テーブル（table）など、使用できるブロックタグがいくつかあります。 |
+| `fallbackBlockTag` | `String` | `allowBlockTags` に含まれていないブロックタグを含むブロックに使用されるブロックタグを定義します。通常は `p` で十分です。 |
+| `table` | `nt:unstructured` | テーブルを貼り付けるときの動作を定義します。このノードには、テーブルの貼り付けを許可するかどうかを定義する allow プロパティ（Boolean 型）が必要です。allow が false に設定されている場合は、ignoreMode プロパティ（String 型）を指定して、貼り付けられたテーブルコンテンツの処理方法を定義する必要があります。ignoreMode の有効な値は、テーブルの内容を削除する `remove` と、テーブルのセルを段落に変換する `paragraph` です。 |
+| `list` | `nt:unstructured` | リストを貼り付けるときの動作を定義します。リストの貼り付けを許可するかどうかを定義するプロパティ `allow`（Boolean 型）が必要です。`allow` を `false` に設定した場合、`ignoreMode` プロパティ（`String` 型）を指定して、貼り付けたリストコンテンツの処理方法を定義します。ignoreMode の有効な値は、リストの内容を削除する `remove` と、リスト項目を段落に変換する `paragraph` です。 |
 
 有効な `htmlPasteRules` 構造の例を以下に示します。
 
@@ -199,10 +199,10 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
 スタイルプラグインを初めて有効にしたときは、使用可能なデフォルトのスタイルがありません。ポップアップリストは空です。スタイルを使用できるようにするには、次の操作をおこないます。
 
 * 「スタイル」ドロップダウンセレクターを有効にします。
-* スタイルシートの場所を1つ以上指定します。
-* スタイルポップアップリストから選択できる個々のスタイルを指定します。
+* スタイルシートの場所を 1 つ以上指定します。
+* 「スタイル」ポップアップリストから選択可能な個々のスタイルを指定します。
 
-後で再設定する場合は、別のスタイルを追加する場合は、説明に従って新しいスタイルシートを参照し、追加のスタイルを指定します。
+例えばスタイルを追加するなど、後で再設定する場合は、新しいスタイルシートを参照して追加スタイルを指定する手順にのみ従います。
 
 >[!NOTE]
 >
@@ -212,7 +212,7 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
 
 これをおこなうには、スタイルプラグインを有効にします。
 
-1. コンポーネント内で、ノード `<rtePlugins-node>/styles` に移動します。ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、ノード `<rtePlugins-node>/styles` に移動します。このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `features` ノードで `styles` プロパティを作成します。
 
    * **名前** `features`
@@ -242,9 +242,9 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
 
 1. すべての変更を保存します。
 
-ダイアログ（クラシックUI）でRTEを使用する場合、リッチテキストの編集用に最適化されたスタイルシートを指定できます。 技術的な制限により、CSSコンテキストはエディターで失われるので、このコンテキストをエミュレートしてWYSIWYGの操作性を向上させることができます。
+RTE をダイアログ（クラシック UI）で使用する場合は、リッチテキスト編集用に最適化されたスタイルシートを指定できます。技術上の制限により、CSS コンテキストはエディターから失われるので、CSS コンテキストをエミュレートして WYSIWYG 環境を改善できます。
 
-リッチテキストエディターは、コンテナDOM要素を使用します。IDは、表示や編集に対して異なるスタイル `CQrte` を提供する、次のようなIDを持ちます。
+リッチテキストエディターは、表示や編集に対して異なるスタイルを提供する `CQrte` の ID を持つコンテナ DOM 要素を使用します。
 
 ```css
 #CQ td {
@@ -261,12 +261,12 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
 ### ポップアップリストで使用可能なスタイルの指定 {#stylesindropdown}
 
 1. コンポーネント定義内で、「[スタイル](#styleselectorlist)」ドロップダウンセレクターの有効化で作成したように、ノード `<rtePlugins-node>/styles` に移動します。
-1. Under the node `styles`, create a node (also called `styles`) to hold the list being made available:
+1. `styles` ノードの下に、選択可能にするリストを格納するノード（同じく `styles` という名前）を作成します。
 
    * **名前** `styles`
    * **型** `cq:WidgetCollection`
 
-1. Create a node under the `styles` node to represent an individual style:
+1. `styles` ノードの下に、個別のスタイルを表すノードを作成します。
 
    * **名前** 実際のスタイルに適した名前を指定可能
    * **型** `nt:unstructured`
@@ -289,11 +289,11 @@ To configure which formats are allowed when pasting text into [!DNL Experience M
 
 ### 日本語で最適な単語分割をするための RTE の設定 {#jpwordwrap}
 
-Authors using [!DNL Experience Manager] to author Japanese language content can apply a style to characters to avoid line break where a break is not required. これにより、作成者は文を目的の位置で区切ることができます。この機能のスタイルは、CSS スタイルシートに事前定義する CSS クラスに基づいています。
+[!DNL Experience Manager] を使用して日本語コンテンツを作成する作成者は、改行が不要な場合に改行を避けるスタイルを文字に適用できます。これにより、作成者は文を目的の位置で区切ることができます。この機能のスタイルは、CSS スタイルシートに事前定義する CSS クラスに基づいています。
 
 作成者が日本語のテキストに適用できるスタイルを作成するには、次の手順に従います。
 
-1. stylesノードの下にノードを作成します。 See [specify a style](#stylesindropdown).
+1. スタイルノードの下にノードを作成します。[スタイルを指定する](#stylesindropdown)を参照してください。
    * 名前：`jpn-word-wrap`
    * 型：`nt:unstructure`
 
@@ -308,7 +308,7 @@ Authors using [!DNL Experience Manager] to author Japanese language content can 
 `String`
    * 値：`Japanese word-wrap`
 
-1. スタイルシートを作成し、パスを指定します。 [スタイルシートの場所を指定](#locationofstylesheet)を参照してください。スタイルシートに次のコンテンツを追加します。必要に応じて背景色を変更してください。
+1. スタイルシートを作成してそのパスを指定します。[スタイルシートの場所を指定](#locationofstylesheet)を参照してください。スタイルシートに次のコンテンツを追加します。必要に応じて背景色を変更してください。
 
    ```css
    .text span.jpn-word-wrap {
@@ -319,7 +319,7 @@ Authors using [!DNL Experience Manager] to author Japanese language content can 
    }
    ```
 
-   ![日本語の折り返し機能を作成者が使用できるスタイルシート](assets/rte_jpwordwrap_stylesheet.jpg)
+   ![作成者が日本語のワードラップ機能を利用できるようにするスタイルシート](assets/rte_jpwordwrap_stylesheet.jpg)
 
 ## 段落書式の設定 {#paraformats}
 
@@ -331,20 +331,20 @@ RTE で作成したテキストは、ブロックタグ（デフォルトでは 
 
 >[!NOTE]
 >
->If a block tag, for example an `<hr>` tag, can&#39;t be assigned to a paragraph, it is not a valid use case for a `paraformat` plug-in.
+>ブロックタグ（`<hr>` タグなど）を段落に割り当てることができない場合は、`paraformat` プラグインを使用するのに有効なケースではありません。
 
-段落書式プラグインを初めて有効にしたときは、使用可能なデフォルトの段落書式はありません。ポップアップリストは空です。作成者に段落書式を設定するには、次の手順を実行します。
+段落書式プラグインを初めて有効にしたときは、使用可能なデフォルトの段落書式はありません。ポップアップリストは空です。段落書式を使用できるようにするには、次の操作をおこないます。
 
-* Enable the [!UICONTROL Format] pop-up selector list.
+* 「[!UICONTROL 形式]」ポップアップセレクターリストを有効化します。
 * ポップアップメニューから段落書式として選択できるブロックタグを指定します。
 
-後で再設定する場合は、別の形式を追加する場合は、手順の該当部分のみに従います。
+例えば書式を追加するなど、後で再設定する場合は、関連する手順にのみ従います。
 
-### 「フォーマット」ドロップダウンセレクターの有効化{#formatselectorlist}
+### 「形式」ドロップダウンセレクターの有効化{#formatselectorlist}
 
-プラグインを有効にするには、次の `paraformat` 手順に従います。
+`paraformat` プラグインを有効にするには、次の手順に従います。
 
-1. コンポーネント内で、ノード `<rtePlugins-node>/paraformat` に移動します。ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、ノード `<rtePlugins-node>/paraformat` に移動します。このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `features` ノードで `paraformat` プロパティを作成します。
 
    * **名前** `features`
@@ -353,7 +353,7 @@ RTE で作成したテキストは、ブロックタグ（デフォルトでは 
 
 >[!NOTE]
 >
->プラグインをそれ以上設定しない場合、有効になるデフォルトの形式は、段落( `<p>`)、見出し1 ( `<h1>`)、見出し2 ( `<h2>`)、見出し3 ( `<h3>`)です。
+>プラグインをそれ以上設定しない場合、有効になるデフォルトの形式は、段落（`<p>`）、見出し 1（`<h1>`）、見出し 2（`<h2>`）、見出し 3（`<h3>`）です。
 
 >[!CAUTION]
 >
@@ -361,15 +361,15 @@ RTE で作成したテキストは、ブロックタグ（デフォルトでは 
 
 ### 使用可能な段落書式の指定 {#paraformatsindropdown}
 
-段落書式は次の方法で選択できます。
+段落書式を選択可能にするには、次の手順を実行します。
 
-1. コンポーネント定義内で、[「フォーマット」ドロップダウンセレクターの有効化](#styleselectorlist)で作成したように、`<rtePlugins-node>/paraformat` ノードに移動します。
-1. Under the `paraformat` node create a node, to hold the list of formats:
+1. コンポーネント定義内で、[「形式」ドロップダウンセレクターの有効化](#styleselectorlist)で作成したように、`<rtePlugins-node>/paraformat` ノードに移動します。
+1. `paraformat` ノードの下に、書式のリストを格納するノードを作成します。
 
    * **名前** `formats`
    * **型** `cq:WidgetCollection`
 
-1. Create a node under the `formats` node, this holds details for an individual format:
+1. `formats` ノードの下に、個別の書式の詳細を格納するノードを作成します。
 
    * **名前** 実際の書式に適した名前（myparagraph、myheading1 など）を指定可能です。
    * **型** `nt:unstructured`
@@ -386,7 +386,7 @@ RTE で作成したテキストは、ブロックタグ（デフォルトでは 
 
    * **名前** `description`
    * **型** `String`
-   * **値** この書式の説明テキスト。例えば、段落、見出し 1、見出し 2 など。このテキストは「フォーマット」選択リストに表示されます。
+   * **値** この書式の説明テキスト。例えば、段落、見出し 1、見出し 2 など。このテキストは「形式」選択リストに表示されます。
 
 1. 変更内容を保存します。
 
@@ -397,16 +397,16 @@ RTE で作成したテキストは、ブロックタグ（デフォルトでは 
 
 ## 特殊文字の設定 {#spchar}
 
-In a standard [!DNL Experience Manager] installation, when the `misctools` plug-in is enabled for special characters (`specialchars`) a default selection is immediately available for use; for example, the copyright and trademark symbols.
+標準的な [!DNL Experience Manager] インストール環境では、`misctools` プラグインで特殊文字（`specialchars`）を有効にすると、デフォルトの選択肢が直ちに使用可能になります。例えば、著作権や商標の記号などです。
 
-RTEを設定して、選択した文字を利用できるようにします。 はっきりした文字を定義するか、シーケンス全体を定義することで指定します。
+個別の文字またはシーケンス全体を定義することにより、選択した文字が使用可能になるように RTE を設定できます。
 
 >[!CAUTION]
-特殊文字を追加すると、デフォルトの選択よりも優先されます。 必要に応じて、選択した文字を再定義します。
+特殊文字を追加すると、デフォルトの選択肢よりも優先されます。必要に応じて、選択した文字を再定義します。
 
 ### 単一文字の定義 {#definesinglechar}
 
-1. コンポーネント内で、ノード `<rtePlugins-node>/misctools` に移動します。ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、ノード `<rtePlugins-node>/misctools` に移動します。このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `features` ノードで `misctools` プロパティを作成します。
 
    * **名前** `features`
@@ -425,7 +425,7 @@ RTEを設定して、選択した文字を利用できるようにします。 �
    * **名前** `chars`
    * **型** `nt:unstructured`
 
-1. Under `chars` add a node to hold an individual character definition:
+1. `chars` の下に、個々の文字定義を格納するノードを追加します。
 
    * **名前** 文字を反映する名前（half など）を指定可能
    * **型** `nt:unstructured`
@@ -445,7 +445,7 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 ### 文字範囲の定義 {#definerangechar}
 
 1. [単一文字の定義](#definesinglechar)の手順 1～3 を使用します。
-1. Under `chars` add a node to hold the definition of the character range:
+1. `chars` の下に、文字範囲の定義を格納するノードを追加します。
 
    * **名前** 文字範囲を反映する名前（pencils など）を指定可能
    * **型** `nt:unstructured`
@@ -482,7 +482,7 @@ CRXDE でプロパティを保存すると、HTML 表現された文字が表示
 >[!NOTE]
 RTE コンポーネント内または RTE コンポーネントからのテーブルのコピーおよび貼り付けはブラウザーに依存します。デフォルトでは一部のブラウザーしかサポートされていません。結果はテーブルの構造やブラウザーに応じて様々です。例えば、クラシック UI とタッチ UI の Mozilla Firefox で、RTE コンポーネント内でテーブルをコピーして貼り付ける場合、テーブルのレイアウトは保存されません。
 
-1. コンポーネント内で、以下のノードに移動します。`<rtePlugins-node>/table`ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、以下のノードに移動します。`<rtePlugins-node>/table`このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `features` ノードで `table` プロパティを作成します。
 
    * **名前** `features`
@@ -499,26 +499,26 @@ RTE コンポーネント内または RTE コンポーネントからのテー�
 
 
 1. 参照する CSS スタイルシートの場所を定義します。これは、[テキストのスタイル](#textstyles)を定義する場合と同じなので、[スタイルシートの場所の指定](#locationofstylesheet)を参照してください。他のスタイルを定義済みであれば、場所は定義されている可能性があります。
-1. Under the `table` node create the following nodes as required:
+1. `table` ノードの下に、必要に応じて次のノードを作成します。
 
    * テーブル全体のスタイルを定義するには（**[!UICONTROL テーブルのプロパティ]**&#x200B;の下）：
 
       * **名前** `tableStyles`
       * **型** `cq:WidgetCollection`
-   * To define styles for the individual cells (available under **[!UICONTROL Cell properties]**),
+   * 個々のセルのスタイルを定義するには（**[!UICONTROL セルのプロパティ]**&#x200B;の下）：
 
       * **名前** `cellStyles`
       * **型** `cq:WidgetCollection`
 
 
-1. Create a node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style,
+1. `tableStyles` ノードまたは `cellStyles` ノード（適宜）の下に、個別のスタイルを表すノードを作成します。
 
    * **名前** 名前を指定できますが、スタイルが反映されている必要があります。
    * **型** `nt:unstructured`
 
 1. このノードで、以下のプロパティを作成します。
 
-   * 参照されるCSSスタイルを定義するには、次の手順を実行します。
+   * 参照される CSS スタイルを定義するには、次の手順を実行します。
 
       * **名前** `cssName`
       * **型** `String`
@@ -559,13 +559,13 @@ RTE コンポーネント内または RTE コンポーネントからのテー�
 >[!NOTE]
 インストールされていない言語に関してチェックを試みると、「スペルチェックできませんでした。」というメッセージが表示されます。
 
-標準のExperience Managerインストールには、次の辞書が含まれます。
+標準の Experience Manager インストールには、以下の辞書が含まれます。
 
 * アメリカ英語（en_us）
 * イギリス英語（en_gb）
 
 >[!NOTE]
-The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate ReadMe files. これらのファイルを修正しないでください。
+標準辞書は、ReadMe ファイルと一緒に `/libs/cq/spellchecker/dictionaries` にあります。これらのファイルを修正しないでください。
 
 必要に応じて辞書を追加するには、次の手順に従います。
 
@@ -602,7 +602,7 @@ RTE では、以前の編集を取り消す、またはやり直すことがで�
 
 タブサイズを定義するには、次のようにします。
 
-1. コンポーネント内で、ノード `<rtePlugins-node>/keys` に移動します。ノードが存在しない場合は、ノードを作成します。 詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
+1. コンポーネント内で、ノード `<rtePlugins-node>/keys` に移動します。このノードが存在しない場合は作成します。詳しくは、[プラグインのアクティベート](#activateplugin)を参照してください。
 1. `keys` ノードで、以下のプロパティを作成します。
 
    * **名前** `tabSize`
@@ -627,9 +627,9 @@ RTE では、以前の編集を取り消す、またはやり直すことがで�
 
 ## 編集可能な領域の高さの設定 {#editablespace}
 
-コンポーネントダイアログ内に表示される編集可能なスペースの高さを定義できます。 この設定は、ダイアログでRTEを使用する場合にのみ適用されます。 この設定では、ダイアログウィンドウの高さは変更されません。
+コンポーネントダイアログ内に表示される編集可能な領域の高さを定義できます。この設定は、ダイアログで RTE を使用する場合にのみ適用されます。この設定によってダイアログウィンドウの高さが変わることはありません。
 
-1. In the `../items/text` node, in the dialog definition for the component, create a property:
+1. `../items/text` ノードのコンポーネントのダイアログ定義で、次の新しいプロパティを作成します。
 
    * **名前** `height`
    * **型** `Long`
@@ -639,10 +639,10 @@ RTE では、以前の編集を取り消す、またはやり直すことがで�
 
 ## リンクのスタイルとプロトコルの設定 {#linkstyles}
 
-でリンクを追加する場合 [!DNL Experience Manager]、使用するCSSスタイルと、自動的に受け入れるプロトコルを定義できます。 To configure how links are added in [!DNL Experience Manager] from another program, define the HTML rules.
+[!DNL Experience Manager] でリンクを追加する場合、使用する CSS スタイルと、自動的に受け入れるプロトコルを定義できます。別のプログラムから [!DNL Experience Manager] にリンクを追加する方法を設定するには、HTML ルールを定義します。
 
 1. CRXDE Lite を使用して、プロジェクトのテキストコンポーネントを見つけます。
-1. Create a node at the same level as `<rtePlugins-node>`, that is, create the node under the parent node of `<rtePlugins-node>`:
+1. `<rtePlugins-node>` と同じレベル（`<rtePlugins-node>` の親ノードの下）にノードを作成します。
 
    * **名前** `htmlRules`
    * **型** `nt:unstructured`
@@ -653,9 +653,9 @@ RTE では、以前の編集を取り消す、またはやり直すことがで�
    * **型** `String`
    * **値** `richtext`
 
-   The location of the `../items/text` node can vary, depending on the structure of your dialog. との2つの例があ `/apps/myProject>/components/text/dialog/items/text` り `/apps/<myProject>/components/text/dialog/items/panel/items/text`ます。
+   `../items/text` ノードの場所は、ダイアログの構造によって異なる場合があります。`/apps/myProject>/components/text/dialog/items/text` と `/apps/<myProject>/components/text/dialog/items/panel/items/text` の 2 つの例があります。
 
-1. Under `htmlRules`, create a node.
+1. `htmlRules` の下にノードを作成します。
 
    * **名前** `links`
    * **型** `nt:unstructured`
@@ -672,7 +672,7 @@ RTE では、以前の編集を取り消す、またはやり直すことがで�
       * **名前** `cssExternal`
       * **型** `String`
       * **値** CSS クラスの名前（先頭に &quot;.&quot; を付けない。例、`.cssClass` ではなく `cssClass`）
-   * 有効な **[!UICONTROL プロトコルの配列]** ( `https://`、 `https://`、 `file://`、 `mailto:`、など)
+   * 有効な&#x200B;**[!UICONTROL プロトコル]**&#x200B;の配列（`https://`、`https://`、`file://`、`mailto:`、など）
 
       * **名前** `protocols`
       * **型** `String[]`
@@ -682,7 +682,7 @@ RTE では、以前の編集を取り消す、またはやり直すことがで�
       * **名前** `defaultProtocol`
       * **型** `String`
       * **値** 1 つまたは複数のデフォルトプロトコル
-   * リンクのターゲット属性の処理方法の定義。 ノードの作成：
+   * リンクのターゲット属性の処理方法の定義。ノードの作成：
 
       * **名前** `targetConfig`
       * **型** `nt:unstructured`
