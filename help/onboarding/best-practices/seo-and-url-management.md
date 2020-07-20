@@ -48,7 +48,8 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
    * ユーザーが理解できない URL は、検索エンジンでも理解できません。
    * 次に例を示します。
       `mybrand.com/products/product-detail.product-category.product-name.html`
-の方が `mybrand.com/products/product-detail.1234.html` より望ましい
+の方が  より望ましい 
+`mybrand.com/products/product-detail.1234.html`
 
 * 検索エンジンではサブドメインは異なるエンティティとして扱われ、サイトの SEO 値が分断されるので、可能な限りサブドメインの使用は避けます。
 
@@ -219,7 +220,8 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 * OSGi 設定には
    **Apache Sling Resource Resolver Factory**
-( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+( 
+`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * プロパティ
    **マッピング場所**（`resource.resolver.map.location`）
@@ -251,6 +253,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
    Web コンソール（localhost:4502/system/console/configMgr など）を使用して、Sling Resource Resolver を設定できます。
 
    * **Apache Sling Resource Resolver Factory**
+
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    URL を短縮するために必要なマッピングを正規表現として構築した後、ビルドに含まれている OsgiConfignode の `config.publish` でこれらの設定を定義することをお勧めします。
 
@@ -266,6 +269,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
 
    * `/content/my-brand/my-page.html` から
    * ただの `/my-page.html`
+
    これは、URL をできるだけ短く維持するという推奨事項に準拠しています。
 
 1. **ページに出力される URL のマッピング**
