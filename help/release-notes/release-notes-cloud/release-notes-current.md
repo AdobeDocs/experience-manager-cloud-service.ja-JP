@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.7.0 のリリースノート
 description: Experience Manager 2020.7.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 610e00a8669a7d81482d99685d200bd705b1848f
+source-git-commit: f96a9b89bb704b8b8b8eb94cdb5f94cc42890ec8
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 31%
+source-wordcount: '420'
+ht-degree: 30%
 
 ---
 
@@ -31,6 +31,9 @@ AEM as a Cloud Service リリース 2020.7.0 の Cloud Manager の新機能と�
 * 環境ごとの環境変数の数が200に増えました。
 
 * Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。
+
+* Cloud Managerのパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。
+詳細は、「 [パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables) 」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
