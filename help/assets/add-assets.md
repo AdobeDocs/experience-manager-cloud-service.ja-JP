@@ -2,10 +2,10 @@
 title: Adobe Experience Manager へのデジタルアセットの追加
 description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 97%
+source-wordcount: '1356'
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
->ネストされたフォルダー階層を AEM にアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
+>To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -158,8 +158,8 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 また、現在の環境で Dynamic Media が有効になっている場合は、次のプロファイルも使用できます。
 
-* [Dynamic Mediaの画像プロファイル](dynamic-media/image-profiles.md) を使用すると、特定の切り抜き(**[!UICONTROL スマート切り抜き]** およびピクセル切り抜き)とシャープの設定を、アップロードしたアセットに適用できます。
-* [Dynamic Mediaビデオプロファイル](dynamic-media/video-profiles.md) ：特定のビデオエンコーディングプロファイル（解像度、形式、パラメータ）を適用できます。
+* [Dynamic Media イメージプロファイル](dynamic-media/image-profiles.md)を使用すると、アップロードしたアセットに、特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;およびピクセル切り抜き）やシャープの設定を適用できます。
+* [Dynamic Media ビデオプロファイル](dynamic-media/video-profiles.md)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
 
 >[!NOTE]
 >
