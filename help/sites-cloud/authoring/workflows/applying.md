@@ -2,7 +2,7 @@
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
@@ -23,8 +23,8 @@ ht-degree: 100%
 
 ワークフローは以下のものから開始できます。
 
-* [**サイト**&#x200B;コンソール](#starting-a-workflow-from-the-sites-console)。
-* [ページの編集中に「**ページ情報&#x200B;**](#starting-a-workflow-from-the-page-editor)」から。
+* [サイトコンソール](#starting-a-workflow-from-the-sites-console)。
+* [ページの編集中に「ページ情報](#starting-a-workflow-from-the-page-editor)」から。
 
 >[!NOTE]
 >
@@ -51,8 +51,8 @@ ht-degree: 100%
 
 ワークフローは以下のいずれかから開始できます。
 
-* [サイトツールバーの「**作成**」オプション](#starting-a-workflow-from-the-sites-toolbar)。
-* [サイトコンソールの&#x200B;**タイムライン**&#x200B;レール](#starting-a-workflow-from-the-timeline)。
+* [サイトツールバーの「作成」オプション](#starting-a-workflow-from-the-sites-toolbar)。
+* [サイトコンソールのタイムラインレール](#starting-a-workflow-from-the-timeline)。
 
 両方の場合で、以下の作業が必要です。
 
@@ -87,8 +87,8 @@ ht-degree: 100%
 
 **ワークフローの作成**&#x200B;ウィザードを以下のいずれかから開いた後
 
-* [サイトツールバーの「**作成**」オプション](#starting-a-workflow-from-the-sites-toolbar)。
-* [サイトコンソールの&#x200B;**タイムライン**&#x200B;レール](#starting-a-workflow-from-the-timeline)。
+* [サイトツールバーの「作成」オプション](#starting-a-workflow-from-the-sites-toolbar)。
+* [サイトコンソールのタイムラインレール](#starting-a-workflow-from-the-timeline)。
 
 以下のように詳細を指定できます。
 
