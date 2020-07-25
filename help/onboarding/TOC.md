@@ -1,11 +1,12 @@
 ---
 sub-product: AEM as a Cloud Service のオンボーディング
 user-guide-title: AEM as a Cloud Service のオンボーディング
+user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 9dda30b0ea72329e26b820b19aeeb6a03f863751
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '133'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +21,11 @@ ht-degree: 93%
    + [ソースコードリポジトリ](what-is-required/source-code-repository.md)
 + クラウド内の AEM へのアクセス {#getting-access}
    + [Adobe Experience Manager as a Cloud Service へのアクセス](getting-access-to-aem-in-cloud/navigation.md)
-   + クラウドサービスのプログラム {#cloud-service-programs}
+   + Cloud Service のプログラム {#cloud-service-programs}
       + [プログラムへのアクセス](getting-access-to-aem-in-cloud/first-time-login.md)
       + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [プログラムの作成](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [Sandboxプログラム](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + [サンドボックスプログラム](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + [AEM アプリケーションプロジェクトの作成](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
 + データのプライバシーと保護への対応 {#data-privacy}
    + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
@@ -34,5 +35,5 @@ ht-degree: 93%
    + [AEM as a Cloud Service と Web アクセシビリティのガイドライン](accessibility/web-accessibility.md)
    + [WCAG 2.1 クイックガイド](accessibility/quick-guide-wcag.md)
 + ベストプラクティス {#best-practices}
-   + [SEOとURLの管理](best-practices/seo-and-url-management.md)
+   + [SEO と URL の管理](best-practices/seo-and-url-management.md)
 + [ツールコンソールの概要](tools-consoles.md)
