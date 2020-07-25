@@ -1,8 +1,9 @@
 ---
-sub-product: クラウドサービスとしてのAEM用コネクター
-user-guide-title: クラウドサービスとしてのAEM用コネクター
+sub-product: Cloud ServiceとしてのAEM用コネクタ
+user-guide-title: Cloud ServiceとしてのAEM用コネクタ
+user-guide-description: Learn how to integrate Connectors into Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 60%
