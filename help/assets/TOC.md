@@ -1,11 +1,12 @@
 ---
 sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
+user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 792e5f7ab7c64404e6c8e1bad956e328edb32044
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 98%
 
 + [AEM Assets as a Cloud Service](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [AEM Assets as a Cloud Service の主要な変更点](assets-cloud-changes.md)
++ [AEM Assets as a Cloud Service の主な変更点](assets-cloud-changes.md)
 + [アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
@@ -44,7 +45,7 @@ ht-degree: 98%
 + アセットの設定、管理、拡張 {#admin}
    + [API とリファレンス資料](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
-   + [画像プロファイルとビデオプロファイルの操作について](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [イメージプロファイルとビデオプロファイルの操作について](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [スマートタグの設定](smart-tags-configuration.md)
    + [多言語アセットとアセット翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
