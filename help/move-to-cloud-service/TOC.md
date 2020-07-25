@@ -1,11 +1,12 @@
 ---
 sub-product: AEM as a Cloud Service への移行
 user-guide-title: AEM as a Cloud Service への移行
+user-guide-description: Understand the transition journey to Cloud Service.
 translation-type: tm+mt
-source-git-commit: fe2c098b55bf501dc0ae68d01139b828d92d90f3
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 89%
 + クラウド移行ツール {#cloud-migration}
    + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
       + [概要](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [Cloud Readiness Analyzerの使用](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+      + [Cloud Readiness Analyzer の使用](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
    + コンテンツ転送ツール {#content-transfer-tool}
       + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
