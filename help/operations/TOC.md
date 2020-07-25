@@ -1,8 +1,9 @@
 ---
 sub-product: 'AEM as a Cloud Service の運用と保守 '
 user-guide-title: 'AEM as a Cloud Service の運用と保守 '
+user-guide-description: Learn about the back-end operations of Experience Manager as a Cloud Service, such as indexing and maintenance tasks.
 translation-type: tm+mt
-source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
+source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 95%
