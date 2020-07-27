@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: 作成中
 translation-type: tm+mt
-source-git-commit: 1e894b07de0f92c4cd96f2a309722aaadd146830
+source-git-commit: 0a2ae4e40cd342056fec9065d226ec064f8b2d1f
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 95%
+source-wordcount: '1940'
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 -->
 
-クラスター内のプライマリを識別する必要がある場合は、Apache Sling Discovery APIを使用して検出できます。
+クラスター内のプライマリを識別する必要がある場合は、Apache Sling Discovery API を使用して検出できます。
 
 ## メモリ内の状態 {#state-in-memory}
 
@@ -158,7 +158,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-通常のプログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプに「Cloud Manager - Developer Role」が必要です。また、両方のサービスから表示ステータスダンプデータを取得するには、作成者と公開サービスの両方のAEM UsersまたはAEM Administrators Productプロファイルでも定義する必要があります。 ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
+通常のプログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
 
 
 ### AEM のステージング環境および実稼動環境用サービス {#aem-staging-and-production-service}
@@ -168,3 +168,45 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 ### パフォーマンスの監視 {#performance-monitoring}
 
 アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、アプリケーションの指標を確認できません。
+
+## 専用出力IPアドレス
+
+AEMは要求に応じて、Cloud Serviceとして、JavaコードでプログラムされたHTTP（ポート80）およびHTTPS（ポート443）送信トラフィック用の静的な専用のIPアドレスを提供します。
+
+### メリット
+
+この専用IPアドレスは、SaaSベンダー（CRMベンダーなど）や、AEM以外の統合をIPアドレスの許可リストをオファーするCloud Serviceとして統合する場合のセキュリティを強化します。 専用のIPアドレスを許可リストに追加することで、顧客のAEMCloud Serviceからのトラフィックのみが外部サービスに送信できるようにします。 これは、他のIPからのトラフィックに加えて、許可されているものです。
+
+専用のIPアドレス機能を有効にしないと、Cloud ServiceとしてAEMから出てくるトラフィックは、他の顧客と共有される一連のIPを通って流れます。
+
+### 設定
+
+専用のIPアドレスを有効にするには、IPアドレス情報を提供するカスタマーサポートにリクエストを送信します。 リクエストは、環境ごとに行う必要があります。この中には、最初のリクエストの後に作成される新しい環境が含まれます。
+
+### 機能の使用
+
+この機能は、プロキシ設定に標準のJavaシステムプロパティを使用する場合、送信トラフィックの原因となるJavaコードまたはライブラリと互換性があります。 実際には、これには最も一般的なライブラリが含まれる必要があります。
+
+次にコード例を示します。
+
+```
+public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
+  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
+  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
+  URLConnection connection = finalUrl.openConnection();
+  connection.addRequestProperty("Accept", "application/json");
+  connection.addRequestProperty("X-API-KEY", apiKey);
+
+  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
+    return new JSONObject(new JSONTokener(responseReader));
+  }
+}
+```
+
+同じ専用IPが、アドビの組織内のすべてのお客様のプログラムと、各プログラム内のすべての環境に適用されます。 作成者サービスと発行サービスの両方に適用されます。
+
+HTTPポートとHTTPSポートのみがサポートされます。 これには、HTTP/1.1と、暗号化時のHTTP/2が含まれます。
+
+### デバッグの考慮事項
+
+予想される専用IPアドレスでトラフィックが実際に送信されていることを検証するには、目的のサービスでログインする（可能な場合）ことを確認します。 それ以外の場合は、 [https://ifconfig.me/ipなどのデバッグサービスを呼び出すと、呼び出し元のIPアドレスが返されるので便利です](https://ifconfig.me/ip)。
