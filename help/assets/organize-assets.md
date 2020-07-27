@@ -3,15 +3,15 @@ title: デジタルアセットの整理
 description: Adobe Experience Manager Assets に用意されている様々な手段を使用して、デジタルアセットを整理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 100%
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
 
-# デジタルアセットの整理{#organize-digital-assets}
+# デジタルアセットの整理 {#organize-digital-assets}
 
 Microsoft Office および PDF ドキュメントのすべてのデジタルアセット、メタデータおよびコンテンツが抽出され、検索可能になります。検索することでアセットの高度なフィルター処理が可能になり、適切な権限をフルに活用できます。メタデータについて詳しくは、「デジタルアセット管理」の「メタデータ」で説明しています。
 
@@ -44,5 +44,5 @@ Assets 内の特定のフォルダーにアクセスできるユーザーを制�
 フォルダー、タグまたはその両方を使用してアセットを構成できます。アセットにタグを追加すると、検索時に取得しやすくなります。アセットにタグを追加するには、次の手順に従います。
 
 1. Digital Asset Manager で、アセットをダブルクリックして開きます。
-1. 「**タグ**」領域で、ドロップダウンボタンをクリックして使用できるタグを表示します。必要に応じて追加するタグを選択します。タグを削除するには、タグにマウスを移動し、「**x**」をクリックして削除します。
+1. In the **Tags** area, open the menu to reveal the available tags. 必要に応じてタグを選択します。 To delete a tag, hover the pointer over the tag and click `X` to delete it.
 1. 「**保存**」をクリックして追加したタグを保存します。
