@@ -1,18 +1,16 @@
 ---
-title: 検索ファセット
+title: 検索ファセット.
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: c978be66702b7f032f78a1509f2a11315d1ed89f
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 100%
+source-wordcount: '2371'
+ht-degree: 95%
 
 ---
 
 
 # 検索ファセット {#search-facets}
-
-AEM で検索ファセットを作成、変更および使用する方法について説明します。
 
 Adobe Experience Manager (AEM) Assets の企業全体のデプロイメントには、多くのアセットが格納されています。AEM の一般的な検索機能だけでは、正しいアセットを見つけることが困難で時間がかかる場合があります。
 
@@ -35,34 +33,30 @@ Adobe Experience Manager (AEM) Assets の企業全体のデプロイメントに
 
 1. 検索フォームを編集ページで、「**[!UICONTROL 述語を選択]**」タブからメインウィンドウに述語をドラッグします。例えば、「**[!UICONTROL プロパティの述語]**」をドラッグします。
 
-   ![述語のドラッグ＆ドロップによる検索フィルターのカスタマイズ](assets/drag_predicate.png)
+   ![述語を押して移動し、検索フィルターをカスタマイズします](assets/drag_predicate.png)
 
-   述語のドラッグ＆ドロップによる検索フィルターのカスタマイズ
+   *図： 述語を押して移動し、検索フィルターをカスタマイズします。*
 
-1. 「設定」タブで、その述語のフィールドラベル、プレースホルダーテキストおよび説明を入力します。述語に関連付けるメタデータプロパティの有効な名前を指定します。
-
-   「設定」タブのヘッダーラベルは、選択した述語のタイプを示します。
+1. 「設定」タブで、その述語のフィールドラベル、プレースホルダーテキストおよび説明を入力します。述語に関連付けるメタデータプロパティの有効な名前を指定します。「設定」タブのヘッダーラベルは、選択した述語のタイプを示します。
 
    ![「設定」タブを使用した述語の必須オプションの指定](assets/settings.png)
 
-   「設定」タブを使用した述語の必須オプションの指定
+   *図： 「Settings」タブを使用して、述語に必要なオプションを指定します。*
 
-1. 「**[!UICONTROL プロパティ名]**」フィールドで、述語に関連付けるメタデータプロパティの有効な名前を指定します。実行される検索に基づく名前です。例えば、`jcr:content/metadata/dc:description` や `./jcr:content/metadata/dc:description` を入力します。
-
-   選択ダイアログから既存のノードを選択することもできます。
+1. 「**[!UICONTROL プロパティ名]**」フィールドで、述語に関連付けるメタデータプロパティの有効な名前を指定します。実行される検索に基づく名前です。例えば、`jcr:content/metadata/dc:description` や `./jcr:content/metadata/dc:description` を入力します。選択ダイアログから既存のノードを選択することもできます。
 
    ![「プロパティ名」フィールドでのメタデータプロパティと述語の関連付け](assets/property_settings.png)
 
-   「プロパティ名」フィールドでのメタデータプロパティと述語の関連付け
+   *図： 「Property Name」フィールドで、メタデータプロパティを述語に関連付けます。*
 
-1. 「**[!UICONTROL プレビュー]**」をタップまたはクリックして、![プレビュー](assets/preview.png)述語追加後のフィルターパネルの表示に関するプレビューを生成します。
+1. Click the **[!UICONTROL Preview]** ![preview](assets/preview.png) to generate a preview of the Filters panel as it appears after you add the predicate.
 1. プレビューモードで述語のレイアウトを確認します。
 
    ![変更送信前の検索フォームのプレビュー](assets/preview-1.png)
 
    変更送信前の検索フォームのプレビュー
 
-1. プレビューを閉じるには、プレビューの右上隅にある「**[!UICONTROL 閉じる]**」![close](assets/do-not-localize/close_icon.png) をタップまたはクリックします。
+1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close_icon.png) on the upper-right corner of the preview.
 1. 「**[!UICONTROL 完了]**」をタップして、設定を保存します。
 1. Assets ユーザーインターフェイスの検索パネルに移動します。プロパティの述語がパネルに追加されています。
 1. 検索するアセットの説明をテキストボックスに入力します。例えば、&quot;Adobe&quot; と入力します。検索を実行すると、「Adobe」に一致する説明を含むアセットが検索結果に表示されます。
@@ -139,13 +133,11 @@ CRX リポジトリのオプションでノード構造を手動で作成する�
 1. AEM のロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 一般]**／**[!UICONTROL 検索フォーム]**&#x200B;の順に移動します。
 1. 検索フォームページで、「**[!UICONTROL アセット管理者の検索レール]**」を選択し、「**編集**」![aemassets_edit](assets/aemassets_edit.png) をタップします。
 1. 検索フォームを編集ページで、「**[!UICONTROL 述語を選択]**」タブからメインウィンドウにタグの述語をドラッグします。
-1. 「設定」タブで、述語のプレースホルダーテキストを入力します。プロパティフィールドに検索したいプロパティ名を指定します（例：*jcr:content/metadata/cq:tags*）。または、選択ダイアログから CRXDE のノードを選択することもできます。
+1. 「設定」タブで、述語のプレースホルダーテキストを入力します。プロパティフィールドに検索したいプロパティ名を指定します（例：`jcr:content/metadata/cq:tags`）。または、選択ダイアログから CRXDE のノードを選択することもできます。
 1. この述語の「ルートタグ」の「パス」プロパティを設定して、「タグ」リストに様々なタグを表示させます。
 1. すべての指定したタグを含むアセットを検索するには、「**[!UICONTROL すべてのタグに一致オプションを表示]**」を選択します。
 
    ![タグの述語の一般的な設定](assets/tags_predicate.png)
-
-   タグの述語の一般的な設定
 
 1. 「**[!UICONTROL 説明]**」フィールドに説明を任意で入力し、「**[!UICONTROL 完了]**」をクリックまたはタップします。
 1. 検索パネルに移動します。**[!UICONTROL タグ]**&#x200B;の述語が検索パネルに追加されています。
@@ -330,28 +322,13 @@ CRX リポジトリのオプションでノード構造を手動で作成する�
 
 管理者の役割が割り当てられていない場合に、検索ファセットに関連する編集、削除およびプレビューアクションを実行するために必要な権限を次に示します。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>アクション</strong></td>
-   <td><strong>権限</strong></td>
-  </tr>
-  <tr>
-   <td>編集 </td>
-   <td>CRX の <code>/apps</code> ノードに対する読み取りおよび書き込み権限<br /> </td>
-  </tr>
-  <tr>
-   <td>削除</td>
-   <td>CRX の <code>/apps</code> ノードに対する読み取り、書き込みおよび削除権限</td>
-  </tr>
-  <tr>
-   <td>プレビュー</td>
-   <td>CRX の <code>/var/dam/content</code> ノードに対する読み取り、書き込みおよび削除権限。また、<code>/apps</code> の読み取りおよび書き込み権限</td>
-  </tr>
- </tbody>
-</table>
+| アクション | 権限 |
+|---|---|
+| 編集 | Read and write permissions on the `/apps` node in CRX. |
+| 削除 | Read, write, and delete permissions on the `/apps` node in CRX. |
+| プレビュー | Read, write, and delete permissions on the `/var/dam/content` node in CRX. Also, Read and write permissions on `/apps` node. |
 
 >[!MORELIKETHIS]
 >
->* [デジタルアセットの検索](search-assets.md)
+>* [デジタルアセットの検索](search-assets.md).
 
