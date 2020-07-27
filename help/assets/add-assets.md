@@ -1,20 +1,20 @@
 ---
-title: Adobe Experience Manager へのデジタルアセットの追加
-description: Adobe Experience Manager as a Cloud Service へのデジタルアセットの追加
+title: Add your digital assets to [!DNL Adobe Experience Manager].
+description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 6a0568be09ece4b8b06c66c706bcffe2316bebc2
+source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 99%
+source-wordcount: '1328'
+ht-degree: 77%
 
 ---
 
 
 # Adobe Experience Manager へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
-Adobe Experience Manager は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。画像、ドキュメント、生の画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブから Experience Manager Assets にアップロードできます。
+[!DNL Adobe Experience Manager] は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
 
-アップロード方法は多数用意されています。最もよく使用されるブラウザーアップロードに加えて、他の方法でも Adobe Experience Manager リポジトリにアセットを追加することができます。Adobe Asset Link や Adobe Experience Manager デスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードおよび取り込みスクリプト、AEM 拡張機能として追加されている自動取り込み統合などです。
+アップロード方法は多数用意されています。最も一般的に使用されるブラウザーのアップロードに加えて、Adobe Asset LinkやExperience Managerデスクトップアプリなどのデスクトップクライアント、作成するアップロードおよび取り込みスクリプト、Experience Manager拡張子として追加される自動取り込み統合など、Experience Managerリポジトリにアセットを追加する方法もあります。
 
 ここでは、エンドユーザー向けのアップロード方法に焦点を当て、Adobe Experience Manager API および SDK を使用したアセットアップロードおよび取り込みの技術的側面について説明する記事へのリンクを示します。
 
@@ -24,19 +24,19 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。この方法は、AEM ユーザーインターフェイス、Adobe Asset Link、AEM デスクトップアプリケーションなどの標準の製品機能やクライアントでデフォルトでサポートされているので、エンドユーザーがそれを意識することはありません。
+>Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。デフォルトでは、Experience Managerユーザーインターフェイス、Adobe Asset Link、Experience Managerデスクトップアプリケーションなど、初期設定の製品機能とクライアントによってサポートされ、エンドユーザーに対して透過的です。
 >
 >ユーザー側の技術チームでカスタマイズまたは拡張されるアップロードコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
 ## アセットのアップロード {#upload-assets}
 
-ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（Web ブラウザー）内の目的のフォルダーにドラッグ＆ドロップします。または、ユーザーインターフェイスからアップロードを開始することもできます。
+ファイル（または複数のファイル）をアップロードするには、デスクトップでファイルを選択し、ユーザーインターフェイス（Webブラウザー）上で出力先フォルダーにドラッグします。 または、ユーザーインターフェイスからアップロードを開始することもできます。
 
-1. Assets ユーザーインターフェイスで、デジタルアセットを追加する場所に移動します。
+1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. アセットをアップロードするには、以下のいずれかの操作をおこないます。
 
    * ツールバーの「**[!UICONTROL 作成]**」アイコンをタップします。次に、メニューで「**[!UICONTROL ファイル]**」をタップします。表示されたダイアログで、必要に応じてファイル名を変更できます。
-   * HTML5 をサポートするブラウザーで、アセットを Assets ユーザーインターフェイスに直接ドラッグします。ファイル名を変更するためのダイアログは表示されません。
+   * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. ファイル名を変更するためのダイアログは表示されません。
 
    ![create_menu](assets/create_menu.png)
 
@@ -59,9 +59,9 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。アップロード処理をキャンセルすると、AEM Assets はアセットのアップロード済みの部分を削除します。
+1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
-   ファイルがアップロードされる前にアップロード操作をキャンセルすると、AEM Assets が現在のファイルのアップロードを停止し、コンテンツを更新します。ただし、既にアップロードされているファイルは削除されません。
+   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. ただし、既にアップロードされているファイルは削除されません。
 
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -69,13 +69,13 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 -->
 
 <!-- #ENGCHECK assuming this is not relevant? remove after confirming#
-   During the upload operation, AEM saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, AEM consolidates these chunks into a single block of data in the repository.
+   During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
 
-1. AEM Assets のアップロード進行状況ダイアログには、アップロードが成功したファイルと失敗したファイルの数が表示されます。
+1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
 さらに、Assets ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
 
@@ -87,19 +87,19 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 ### Serial uploads {#serialuploads}
 
-Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your AEM Assets instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests AEM Assets can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, AEM assets may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of [!DNL Assets]. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, [!DNL Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
-To overcome this situation, AEM Assets ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
+To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
 Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
-If you upload many assets to AEM, the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. AEM Assets supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in AEM Assets.
+If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Assets] supports streamed uploading of assets. Streamed uploading reduces the disk I/O during the upload operation by avoiding asset storage in a temporary folder on the server before copying it to the repository. Instead, the data is transferred directly to the repository. This way, the time to upload large assets and the possibility of timeouts is reduced. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for AEM running on JEE server with servlet-api version lower than 3.1.
+>Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 -->
 
 ### アセットが既に存在する場合のアップロードの処理 {#handling-upload-existing-file}
@@ -114,11 +114,11 @@ If you upload many assets to AEM, the I/O requests to server increase drasticall
 >
 >アセットインサイトによる Adobe Analytics でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、Analytics から取得したアセットのデータが無効になります。
 
-重複したアセットを AEM Assets で保持するには、「**[!UICONTROL 保持]**」をタップまたはクリックします。アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
+重複アセットを保持するに [!DNL Assets]は、「 **[!UICONTROL 保持]**」をクリックします。 アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
 
 ### ファイル名の処理と禁止文字 {#filename-handling}
 
-AEM Assets では、ファイル名に禁止文字が含まれるアセットをアップロードできません。ファイル名に禁止文字が含まれるアセットをアップロードしようとすると、AEM Assets に警告メッセージが表示され、これらの文字を削除するか使用可能な名前でアップロードするまでアップロードが停止されます。
+[!DNL Experience Manager Assets] では、ファイル名に禁止文字が含まれるアセットをアップロードできません。If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
 組織固有のファイル命名規則に合うように、[!UICONTROL アセットをアップロード]ダイアログでは、アップロードするファイルに長い名前を指定できます。
 
@@ -142,7 +142,7 @@ AEM Assets では、ファイル名に禁止文字が含まれるアセットを
 
 Adobe Experience Manager では、Web ブラウザーユーザーインターフェイスに加えて、デスクトップ上の他のクライアントもサポートしています。Web ブラウザーを使用しなくても、これらのクライアントでアップロード操作をおこなうことができます。
 
-* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで AEM 内のアセットにアクセスできます。これらのデスクトップアプリケーション内から、現在開いているドキュメントを Adobe Asset Link ユーザーインターフェイスを通じて直接 AEM にアップロードできます。
+* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで 内のアセットにアクセスできます。You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
 * [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html)を利用すると、アセットのファイルタイプやアセットを操作するネイティブアプリケーションによらず、デスクトップ上でアセットを簡単に操作できます。ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードできると非常に便利です。
 
 ## 追加処理 {#additional-processing}
