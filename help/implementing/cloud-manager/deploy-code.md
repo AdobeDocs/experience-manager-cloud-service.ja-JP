@@ -59,7 +59,7 @@ ht-degree: 100%
 
 
 
-> [!IMPORTANT] の下）で、次の手順をおこないます。
+>[!IMPORTANT] の下）で、次の手順をおこないます。
 >以下の節は、AEM クラウドサービス用の Cloud Manager に対応するように更新する必要があり、現在作業中です。
 
 ## デプロイメントプロセス {#deployment-process}
