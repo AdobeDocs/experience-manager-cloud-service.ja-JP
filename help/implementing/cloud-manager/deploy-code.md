@@ -2,7 +2,7 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 44e32343767878016a991f443e5911bfb2877a92
+source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
@@ -59,7 +59,8 @@ ht-degree: 100%
 
 
 
->[!IMPORTANT] の下）で、次の手順をおこないます。
+>[!IMPORTANT]
+>
 >以下の節は、AEM クラウドサービス用の Cloud Manager に対応するように更新する必要があり、現在作業中です。
 
 ## デプロイメントプロセス {#deployment-process}
