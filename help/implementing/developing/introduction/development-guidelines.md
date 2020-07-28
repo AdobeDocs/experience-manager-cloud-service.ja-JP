@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: 作成中
 translation-type: tm+mt
-source-git-commit: 171284a6f629dcf13d1fadfc6b7b5f0e69e41d84
+source-git-commit: eb2f944b4cc4311c6e0c10d34d02eafa6128f6aa
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 83%
@@ -169,21 +169,21 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、アプリケーションの指標を確認できません。
 
-## 専用出力IPアドレス
+## 専用出力IPアドレス {#dedicated-egress-ip-address}
 
 要求に応じて、AEMは、Cloud Serviceとして、JavaコードでプログラムされたHTTP（ポート80）およびHTTPS（ポート443）送信トラフィック用の静的で専用のIPアドレスを提供します。
 
-### メリット
+### メリット {#benefits}
 
 この専用IPアドレスは、SaaSベンダー（CRMベンダーなど）やAEM以外の統合をIPアドレスの許可リストをオファーするCloud Serviceとして統合する場合のセキュリティを強化します。 専用のIPアドレスを許可リストに追加することで、顧客のAEMCloud Serviceからのトラフィックのみが外部サービスに送信できるようにします。 これは、他のIPからのトラフィックに加えて、許可されているものです。
 
 専用のIPアドレス機能を有効にしないと、AEMからCloud Serviceとして出てくるトラフィックは、他の顧客と共有するIPのセットを通って流れます。
 
-### 設定
+### 設定 {#configuration}
 
 専用のIPアドレスを有効にするには、IPアドレス情報を提供するカスタマーサポートにリクエストを送信します。 最初のリクエストの後に新しい環境が機能を必要とする場合は、各環境を指定し、追加のリクエストを行う必要があります。 サンドボックスプログラム環境はサポートされていません。
 
-### 機能の使用
+### 機能の使用 {#feature-usage}
 
 この機能は、プロキシ設定に標準のJavaシステムプロパティを使用する場合、送信トラフィックの原因となるJavaコードまたはライブラリと互換性があります。 実際には、これには最も一般的なライブラリが含まれる必要があります。
 
@@ -207,6 +207,6 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 HTTPポートとHTTPSポートのみがサポートされます。 これには、HTTP/1.1と、暗号化時のHTTP/2が含まれます。
 
-### デバッグの考慮事項
+### デバッグの考慮事項 {#debugging-considerations}
 
 予想される専用IPアドレスでトラフィックが実際に送信されていることを検証するには、目的のサービスでログインする（可能な場合）ことを確認します。 それ以外の場合は、 [https://ifconfig.me/ipなどのデバッグサービスを呼び出すと、呼び出し元のIPアドレスが返されるので便利です](https://ifconfig.me/ip)。
