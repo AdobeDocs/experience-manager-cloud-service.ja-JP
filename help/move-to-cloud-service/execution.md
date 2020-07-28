@@ -2,121 +2,121 @@
 title: 実行段階
 description: 実行段階
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 
 # 実行 {#execution-phase}
 
-実行フェーズを開始する前に、クラウドサービスにオンボードする必要があります。 また、Cloud ManagerはAEMクラウドサービスにコードをデプロイする唯一のメカニズムなので、十分に理解しておく必要があります。
+実行段階を開始する前に、Cloud Service にオンボーディングする必要があります。また、Cloud Manager に習熟しておく必要もあります。Cloud Manager は AEM Cloud Service にコードをデプロイするための唯一のメカニズムだからです。
 
-Cloud Managerを使用すると、組織はクラウド内のAEMを自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
+Cloud Manager を使用すると、組織がクラウド内の AEM を自己管理できます。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。
 
-詳しくは、次のリソースを参照してください。
+詳しくは、以下のリソースを参照してください。
 
-* [クラウドサービスとしてのExperience Managerのオンボーディングを参照し](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/home.html) 、Experience Managerのクラウドサービスとしてのオンボーディングに関するセルフヘルプリソースを理解してください。
+* [Adobe Experience Manager as a Cloud Service のオンボーディング](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/home.html)：Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースについて
 
-* [GitとAdobe Cloud Managerの統合](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) 」を参照して、単一のGitリポジトリを使用してコードをデプロイする方法を確認してください。
+* [Git と Adobe Cloud Manager の統合](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)：1 つの Git リポジトリを使用してコードをデプロイする方法について
 
-* [クラウドサービス設定としてのAdobe Experience](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#aem-configuration) （管理コンソールでの製品とユーザーアクセスの管理）を参照してください。
+* [Adobe Experience Manager as a Cloud Service の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/security/ims-support.html#aem-configuration)：Admin Console での製品とユーザーアクセスの管理
 
 
 ## 概要 {#introduction}
 
-クラウドサービスへのトランジションの正確な手順は、購入したシステムと、従うソフトウェア開発のライフサイクル慣行によって異なります。
+Cloud Service への移行の正確な手順は、購入したシステムと準拠するソフトウェア開発ライフサイクル手法によって異なります。
 
-次の図に、実行フェーズに関する主な手順を示します。
+実行段階に必要になる主なステップを次の図に示します。
 
 ![画像](/help/move-to-cloud-service/assets/exec-image1.png)
 
 ## コンテンツ転送 {#content-transfer}
 
-現在のAEMインスタンスからクラウドサービスインスタンスにコンテンツを転送するには、アドビのコンテンツ転送ツールを使用します。
+現在の AEM インスタンスから Cloud Service インスタンスにコンテンツを転送するには、アドビのコンテンツ転送ツールを使用します。
 
-このツールを使用すると、ソースAEMインスタンスからAEMクラウドサービスインスタンスに転送するコンテンツのサブセットを指定できます。
+このツールを使用すると、ソース AEM インスタンスから AEM Cloud Service インスタンスに転送するコンテンツサブセットを指定できます。
 
 >[!NOTE]
->クラウドサービスを利用する前に、最終的な差分コンテンツ転送のためのコンテンツの固定期間を短縮するために、頻繁に差分コンテンツのトップアップを行うことをお勧めします。
+>差分コンテンツ追加を頻繁におこなって、Cloud Service での運用を開始する前におこなう最後の差分コンテンツ転送に必要なコンテンツフリーズ期間を短縮することをお勧めします。
 
-詳しくは、「 [コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md) 」を参照してください。
+詳しくは、[コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
 
 >[!IMPORTANT]
->コンテンツ転送ツールの最小システム要件は、AEM 6.3以降およびJAVA 8です。 AEMより前のバージョンを使用している場合は、コンテンツ転送ツールを使用するには、コンテンツリポジトリをAEM 6.5にアップグレードする必要があります。
+>コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
 
 ## コードリファクタリング {#code-refactor}
 
-AEMでクラウドサービスとしてコードを開発および実行するには、考慮事項の変更が必要です。 コードは回復力が必要であること、特にインスタンスはいつでも停止する可能性があるので注意が必要です。  Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。
+AEM as a Cloud Service でコードを開発および実行するには、考え方を変える必要があります。インスタンスはいつ停止するかわからないので、コードには特に回復力が必要である点に留意してください。Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。
 
-AEM Mavenプロジェクトに、クラウドサービスとしてのAEMとの互換性を持たせるために、一部の変更が必要になります。 クラウドサービスとしてのAEMでは、AEMに展開するために、 *コンテンツ* と ** コードを個別のパッケージに分離する必要があります。
+AEM as a Cloud Service に対応するために、AEM Maven プロジェクトに変更がいくつか必要になります。AEM as a Cloud Service では、AEM にデプロイするために、*コンテンツ*&#x200B;と&#x200B;*コード*&#x200B;を別個のパッケージに分離する必要があります。
 
 * `/apps` と `/libs` は AEM の不変領域と見なされます。AEM の起動後（例：実行時）に変更（作成、更新、削除）できないからです。実行時に不変領域を変更しようとすると失敗します。
 
 * リポジトリ内のそれ以外の領域（`/content`、`/conf`、`/var`、`/home`、`/etc`、`/oak:index`、`/system`、`/tmp` など）はすべて可変領域です。つまり、実行時に変更できます。
 
-Refer to [Recommended Package Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure) for more details.
+詳しくは、[推奨されるパッケージ構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)を参照してください。
 
-クラウドサービスとしてAEMで開発する場合は、注意が必要な開発ガイドラインがいくつかあります。 詳しくは、「 [AEMをクラウドサービスの開発に関するガイドライン](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) 」を参照してください。
+AEM as a Cloud Service で開発する際に留意する必要がある開発ガイドラインがさらにいくつかあります。詳しくは、[AEM as a Cloud Service の開発ガイドライン](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
 
-計画段階で、クラウドサービスとの互換性を維持するためにリファクタリングする必要がある領域のリストが必要です。 また、コードをリファクタリングして最適化し、クラウドサービスに移行する方法の詳細については、 [開発ガイドライン](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html) （英語）も参照してください。
+Cloud Service に対応するためにリファクタリングする必要がある領域のリストを計画段階で作成する必要があります。また、Cloud Service に移行するためにコードをリファクタリングし最適化する方法について詳しくは、[開発ガイドライン](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
 
 コードリファクタリングタスクの一部を高速化するために、次のツールを使用できます。
 
-* [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [ディスパッチャーコンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [最新化ツール](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [アセットワークフロー移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
 
-コードをCloud Manager Gitを介してクラウドサービス環境にプッシュする前に、コードをローカルでリファクタリングおよびテストすることをお勧めします。
+Cloud Manager Git を介して Cloud Service 環境にコードをプッシュする前に、コードをリファクタリングしローカルでテストすることをお勧めします。
 
-詳しくは、 [AEM SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) （SDKのドキュメント）を参照してください。
+詳しくは、[AEM SDK](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) のドキュメントを参照してください。
 
 その他のリソースを以下に示します。
 
-* ディスパッチャーSDKのインストールを監視して、ディスパッチャーSDKのインストール方法を理解します。
+* Dispatcher SDKのインストール方法については、「Install Dispatcher SDK」（Dispatcher SDK のインストール）を視聴してください。
 
-   > [!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
-* ディスパッチャーSDKの設定を見て、ディスパッチャーSDKの設定方法を理解してください。
+* Dispatcher SDKの設定方法については、「Configure Dispatcher SDK」（Dispatcher SDK の設定）を視聴してください。
 
-   > [!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* 「 [ローカル開発セットアップ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) 」ドキュメントを確認し、ローカル開発環境を設定します。
+* ローカル開発環境を設定するには、[Local Development Environment Set up](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)（ローカル開発環境のセットアップ）を参照してください。
 
 
-トランジションの遍歴の一環として、アクティブなAEM上での継続的なコード開発を管理し、コードリファクタリングタスクと共に管理するには、Mavenプロジェクトの再構築が完了して、クラウドサービスとしてのAEMとの互換性を維持するまで、コードの停止期間を設定することをお勧めします。
+移行プロセスの一環として、アクティブな AEM 上で進行中のコード開発を、コードリファクタリングタスクと共に管理するには、AEM as a Cloud Service に対応するための Maven プロジェクトの再構築が完了するまで、コードの凍結期間を予定しておくことをお勧めします。
 
-プロジェクトの再構築が完了したら、この新しい構造に基づいて新しいコード開発を再開できます。 これにより、コードのデプロイメントおよびテスト中にCloud Managerのパイプラインエラーが発生することがなくなります。
+プロジェクトの再構築が完了したら、この新しい構造に基づいて新しいコード開発を再開できます。これにより、コードのデプロイメントおよびテスト中に発生する Cloud Manager パイプラインのエラーを減らすことができます。
 
 >[!NOTE]
->コンテンツ転送とコードリファクタリングのタスクは、順番に実行されるわけではありません。 これらのタスクは互いに独立して行うことができます。 ただし、クラウドサービス環境でコンテンツが正しくレンダリングされるようにするには、正しいプロジェクト構造が必要です。
+>コンテンツ転送タスクとコードリファクタリングタスクは、順番に実行しなくてもかまいません。これらのタスクは互いに独立に実行することができます。ただし、Cloud Service 環境でコンテンツが正常にレンダリングされるようにするには、正しいプロジェクト構造が必要です。
 
-## コードの導入とテストのベストプラクティス {#best-practices}
+## コードのデプロイメントとテストのベストプラクティス {#best-practices}
 
 Cloud Services 用 Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。
 
-テストスクリプトの作成方法と推奨範囲を50 %以上にする方法については、 [コード品質テスト](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing) （英語）を参照してください。
+テストスクリプトの作成と 50 %以上の推奨コードカバレッジについては、[コード品質テスト](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)を参照してください。
 
-また、AEMエンジニアリングのベストプラクティスに基づいて作成されたCloud Managerが実行するカスタムコード品質ルールについて詳しくは、 [「カスタムコード品質ルールについて](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html) 」を参照してください。
+さらに、AEM エンジニアリングのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルールについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)を参照してください。
 
-Cloud Managerの使用は、クラウドサービス環境にコードをデプロイする唯一のメカニズムです。
+Cloud Manager を使用する以外に、Cloud Service 環境にコードをデプロイする手段はありません。
 
-次のリソースに従って、Cloud Managerを使用してコードを管理およびデプロイする方法を学習します。
+Cloud Manager を使用してコードを管理およびデプロイする方法については、次のリソースを参照してください。
 
-* [環境の管理](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [環境の管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
 
-* [CI/CD パイプラインの設定](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [CI/CD パイプラインの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
 
-* [コードのデプロイ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [コードのデプロイ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
 
-## Go Live準備のベストプラクティス {#go-live}
+## 運用開始準備のベストプラクティス {#go-live}
 
-クラウドサービスとしてのAEMのGo Liveをスムーズかつ成功に導くために、次の手順を実行することを検討する必要があります。
+AEM as a Cloud Service 上でうまくスムーズに運用を開始できるようにするには、次の手順を実行することを検討してください。
 
-* コードとコンテンツの固定期間のスケジュール
-* 最終コンテンツのトップアップの実行
-* 完全なテスト反復
-* パフォーマンスとセキュリティテストの実行
+* コードとコンテンツの凍結期間のスケジュール設定
+* 最終コンテンツ追加の実行
+* 反復テストの完了
+* パフォーマンステストとセキュリティテストの実行
 * カットオーバー
