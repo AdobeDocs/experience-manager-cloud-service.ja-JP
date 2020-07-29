@@ -2,10 +2,10 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 1cee93310d84ea21b626f456163de6855056db5b
+source-git-commit: 161dc733d335fc62d7c3017647fe27c64a8dd26f
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 11%
+source-wordcount: '1077'
+ht-degree: 10%
 
 ---
 
@@ -51,7 +51,6 @@ AEMは、Cloud Serviceのログ文にアクセスできます。 AEM用アプリ
 DEBUG</td>
 <td>
 アプリケーションで発生している操作について説明します。<br>
-
 DEBUGログがアクティブな場合、発生したアクティビティと処理に影響を与える主要パラメータの明確な内容を提供する文がログに記録されます。</td>
 <td>
 <ul>
@@ -207,3 +206,19 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/customthumb/clientlibs.lc-60e4443805c37afa0c74b674b141f1df-lc.min.css HTTP/1.1" 200 809 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
+
+### HTTPアクセスログの設定 {#configuring-the-http-access-log}
+
+HTTPアクセスログは、AEMではCloud Serviceとして設定できません。
+
+## Apache Web サーバー／Dispatcher ログ {#dispatcher-logging}
+
+AEMは、Cloud Serviceとして、「発行」上のApache Webサーバーとディスパッチャーレイヤーの3つのログを提供します。
+
+* Apache HTTPD Webサーバーアクセスログ
+* Apache HTTPD Webサーバーエラーログ
+* Dispatcherログ
+
+これらのログは発行層でのみ使用できます。
+
+この一連のログは、AEMアプリケーションに到達する前の要求発行層として、AEMに対するHTTP要求に対するインサイトを提供します。 これは、パブリッシュ層サーバーへのほとんどのHTTP要求は、Apache HTTPD Web ServerおよびAEMDispatcherによってキャッシュされたコンテンツによって処理され、AEMアプリケーション自体には到達しないので、AEM Java、リクエスト、アクセスのログにはログ文が存在しません。
