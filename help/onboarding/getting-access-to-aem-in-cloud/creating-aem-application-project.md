@@ -1,11 +1,11 @@
 ---
-title: AEM Applicationプロジェクト —Cloud Service
-description: AEM Applicationプロジェクト —Cloud Service
+title: AEM Application Project -Cloud Service
+description: AEM Application Project -Cloud Service
 translation-type: tm+mt
-source-git-commit: 38be3237eb3245516d3ccf51d0718505ee5102f0
+source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 72%
+source-wordcount: '1414'
+ht-degree: 82%
 
 ---
 
@@ -76,37 +76,6 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
 
-### Java の使用 {#using-java-11}
-
-Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。プロジェクトで Java 11 を使用するお客様は、[Apache Maven Toolchains プラグイン](https://maven.apache.org/plugins/maven-toolchains-plugin/)を使用して使用できます。
-
-これをおこなうには、pom.xml ファイルに次のような `<plugin>` エントリを追加します。
-
-```xml
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-toolchains-plugin</artifactId>
-            <version>1.1</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>toolchain</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                <toolchains>
-                    <jdk>
-                        <version>11</version>
-                        <vendor>oracle</vendor>
-                    </jdk>
-                </toolchains>
-            </configuration>
-        </plugin>
-```
-
->[!NOTE]
->サポートされている `vendor` 値は `oracle`と `sun` で、サポートされている `version` 値は `1.8`、`1.11` および `11` です。
 
 ## 環境変数 {#environment-variables}
 
@@ -126,16 +95,16 @@ Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマー�
 | CM_PIPELINE_NAME | パイプライン名 |
 | CM_PROGRAM_ID | 数値プログラム識別子 |
 | CM_PROGRAM_NAME | プログラム名 |
-| ARTIFACTS_VERSION | ステージまたは実稼働パイプラインの場合、Cloud Manager で生成された合成バージョン |
+| ARTIFACTS_VERSION | ステージまたは実稼動パイプラインの場合、Cloud Manager で生成された合成バージョン |
 | CM_AEM_PRODUCT_VERSION | リリース名 |
 
 ### パイプライン変数 {#pipeline-variables}
 
-場合によっては、顧客のビルドプロセスが、特定の設定変数に依存する可能性があります。これらの変数はGitリポジトリに配置するのに適していないか、同じブランチを使用するパイプライン実行間で異なる必要があります。
+場合によっては、顧客のビルドプロセスが、特定の設定変数に依存している可能性があります。これらの変数は Git リポジトリに配置するのに適していない場合や、同じブランチを使用するパイプライン実行間で変える必要が出る場合があります。
 
-Cloud Managerでは、これらの変数をCloud Manager APIまたはCloud Manager CLIを介してパイプライン単位で設定できます。 変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。 どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数はファイル内または他のビルドスクリプト内から参照でき `pom.xml` ます。
+Cloud Manager では、これらの変数を Cloud Manager API または Cloud Manager CLI を介してパイプラインごとに設定できます。変数は、プレーンテキストとして保存することも、保存時に暗号化することもできます。どちらの場合も、変数はビルド環境内で環境変数として使用可能になり、変数は `pom.xml` ファイル内または他のビルドスクリプト内から参照できます。
 
-CLIを使用して変数を設定するには、次のようなコマンドを実行します。
+CLI を使用して変数を設定するには、次のようなコマンドを実行します。
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
 
@@ -143,9 +112,9 @@ CLIを使用して変数を設定するには、次のようなコマンドを�
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-変数名には、英数字とアンダースコア(_)のみを使用できます。 慣例では、名前はすべて大文字である必要があります。パイプラインあたり200個の変数に制限があります。各名前は100文字未満にし、各値は2048文字未満にする必要があります。
+変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。パイプラインあたり 200 個の変数という制限があります。名前はそれぞれ 100 文字未満、値はそれぞれ 2048 文字未満にする必要があります。
 
-通常、 `Maven pom.xml` ファイル内で使用する場合は、次のような構文を使用して、これらの変数をMavenプロパティにマップすると便利です。
+通常、`Maven pom.xml` ファイル内で使用する場合は、次のような構文を使用して、これらの変数を Maven プロパティにマップすると便利です。
 
 ```xml
         <profile>
@@ -368,7 +337,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 
 >[!NOTE]
 >
->この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM環境にシステムパッケージをインストールする必要がある場合は、アドビの担当者にお問い合わせください。
+>この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM環境にインストールされたシステムパッケージが必要な場合は、Adobeの担当者にお問い合わせください。
 
 ## コンテンツパッケージのスキップ {#skipping-content-packages}
 
