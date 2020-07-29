@@ -2,10 +2,10 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: bbcadf29dbac89191a3a1ad31ee6721f8f57ef95
+source-git-commit: 68445e086aeae863520d14cb712f0cbebbffb5ab
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 10%
+source-wordcount: '1304'
+ht-degree: 9%
 
 ---
 
@@ -195,41 +195,18 @@ AEMのCloud ServiceHTTPアクセスログは、HTTPリクエストを時間順�
 
 ### ログ形式 {#access-log-format}
 
-<table>
-<tbody>
-<tr>
-<td><b>Cloud ServiceノードIDとしてのAEM</b></td>
-<td><b>クライアントのIPアドレス</b></td>
-<td><b>User</b></td>
-<td><b>日時</b></td>
-<td><b>空白</b></td>
-<td><b>HTTPメソッド</b></td>
-<td><b>URL</b></td>
-<td><b>プロトコル</b></td>
-<td><b>空白</b></td>
-<td><b>HTTP応答ステータス</b></td>
-<td><b>HTTP応答時間（ミリ秒）</b></td>
-<td><b>リファラー</b></td>
-<td><b>ユーザーエージェント</b></td>
-</tr>
-<tr>
-<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
-<td>-</td>
-<td>myuser@adobe.com</td>
-<td>30/Apr/2020:17:37:14 +0000</td>
-<td>"</td>
-<td>GET</td>
-<td>/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css</td>
-<td>HTTP/1.1</td>
-<td>"</td>
-<td>200</td>
-<td>1141</td>
-<td><code>"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"</code></td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36 （KHTML、Geckoなど） Chrome/81.0.4044.122 Safari/537.36"</td>
-</tr>
-</tbody>
-</table>
-
+| Cloud ServiceノードIDとしてのAEM | cm-p1234-e26813-aem-publish-5c787687c-lqlxr |
+|---|---|
+| クライアントのIPアドレス | - |
+| User | myuser@adobe.com |
+| 日時 | 30/Apr/2020:17:37:14 +0000 |
+| HTTPメソッド | GET |
+| URL | /libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css |
+| プロトコル | HTTP/1.1 |
+| HTTP応答ステータス | 200 |
+| HTTP要求時間（ミリ秒） | 1141 |
+| リファラー | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
+| ユーザーエージェント | &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36 （KHTML、Geckoなど） Chrome/81.0.4044.122 Safari/537.36&quot; |
 
 **例**
 
@@ -243,7 +220,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 
 HTTPアクセスログは、AEMではCloud Serviceとして設定できません。
 
-## Apache Web サーバー／Dispatcher ログ {#dispatcher-logging}
+## Apache Web Server and Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
 
 AEMは、Cloud Serviceとして、「発行」上のApache Webサーバーとディスパッチャーレイヤーの3つのログを提供します。
 
@@ -253,4 +230,74 @@ AEMは、Cloud Serviceとして、「発行」上のApache Webサーバーとデ
 
 これらのログは発行層でのみ使用できます。
 
-この一連のログは、AEMアプリケーションに到達する前の要求発行層として、AEMに対するHTTP要求に対するインサイトを提供します。 これは、パブリッシュ層サーバーへのほとんどのHTTP要求は、Apache HTTPD Web ServerおよびAEMDispatcherによってキャッシュされたコンテンツによって処理され、AEMアプリケーション自体には到達しないので、AEM Java、リクエスト、アクセスのログにはログ文が存在しません。
+この一連のログは、AEMアプリケーションに到達する前の要求発行層として、AEMに対するHTTP要求に対するインサイトを提供します。 これは重要です。理想的には、発行層サーバーへのほとんどのHTTP要求は、Apache HTTPD WebサーバーおよびAEMDispatcherによってキャッシュされたコンテンツによって処理され、AEMアプリケーション自体には届かないことを理解します。 したがって、AEM Java、要求、またはアクセスのログには、これらの要求に対するログ文はありません。
+
+### Apache HTTPD Webサーバーアクセスログ {#apache-httpd-web-server-access-log}
+
+Apache HTTP Web Serverアクセスログは、公開層のWebサーバー/Dispatcherに到達する各HTTPリクエストの文を提供します。 アップストリームCDNから提供される要求は、これらのログには反映されません。
+
+エラーログの形式に関する情報については、 [公式のApacheドキュメントを参照してください](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
+
+**ログ形式**
+
+<!--blank until prod build finishes-->
+
+**例**
+
+```
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-32.png HTTP/1.1" 200 715 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:41 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/favicons/favicon-512.png HTTP/1.1" 200 9631 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET /etc.clientlibs/wknd/clientlibs/clientlib-site/resources/images/country-flags/US.svg HTTP/1.1" 200 810 "https://publish-p6902-e30226.adobeaemcloud.com/content/wknd/us/en.html" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0"
+```
+
+### Apache HTTPD Webサーバーアクセスログの設定 {#configuring-the-apache-httpd-webs-server-access-log}
+
+このログは、AEMではCloud Serviceとして設定できません。
+
+## Apache HTTPD Webサーバーのエラーログ {#apache-httpd-web-server-error-log}
+
+Apache HTTP Web Serverエラーログには、公開層のWebサーバー/Dispatcherの各エラーに関する文が記載されています。
+
+エラーログの形式に関する情報については、 [公式のApacheドキュメントを参照してください](https://httpd.apache.org/docs/2.4/logs.html#errorlog)。
+
+**ログ形式**
+
+<!--placeholder-->
+
+**例**
+
+```
+Fri Jul 17 02:19:48.093820 2020 [mpm_worker:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00292: Apache/2.4.43 (Unix) Communique/4.3.4-20200424 mod_qos/11.63 configured -- resuming normal operations
+Fri Jul 17 02:19:48.093874 2020 [core:notice] [pid 1:tid 140272153361288] [cm-p1234-e30226-aem-publish-b86c6b466-b9427] AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D ENVIRONMENT_PROD'
+Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] [cm-p1234-e30226-aem-publish-b496f64bf-5vckp] AH00295: caught SIGTERM, shutting down
+```
+
+### Apache HTTPD Webサーバーエラーログの設定 {#configuring-the-apache-httpd-web-server-error-log}
+
+mod_rewriteログレベルは、ファイル内の変数REWRITE_LOG_LEVELによって定義され `conf.d/variables/global.var`ます。
+
+Error、Warn、Info、Debug、およびTrace1 ～ Trace8に設定でき、デフォルト値はWarnです。 RewriteRulesをデバッグするには、ログレベルをTrace2に上げることをお勧めします。
+
+詳細は、 [mod_rewriteモジュールのドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) を参照してください。
+
+環境ごとのログレベルを設定するには、次に示すように、global.varファイル内の適切な条件付きブランチを使用します。
+
+```
+Define REWRITE_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define REWRITE_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define REWRITE_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## Dispatcherログ {#dispatcher-log}
+
+**ログ形式**
+
