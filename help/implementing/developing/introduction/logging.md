@@ -2,7 +2,7 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 436b4d05c88ba227144052fdd63ea78cbf1f03ba
+source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 17%
@@ -66,7 +66,6 @@ DEBUGログがアクティブな場合、発生したアクティビティと処
 WARN</td>
 <td>
 エラーになる可能性のある条件を説明します。<br>
-
 WARNログがアクティブな場合は、最適化に近づいている条件を示す文のみがログに記録されます。</td>
 <td>
 <ul>
@@ -82,7 +81,6 @@ WARNログがアクティブな場合は、最適化に近づいている条件�
 ERROR</td>
 <td>
 エラーを示す条件と解決する必要がある状態を説明します。<br>
-
 ERRORログがアクティブな場合は、エラーを示す文のみがログに記録されます。 ERRORログ文は、重大な問題を示しており、できるだけ早く解決する必要があります。</td>
 <td>
 <ul>
