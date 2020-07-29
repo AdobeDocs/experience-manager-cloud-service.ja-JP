@@ -2,10 +2,10 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 49bb443019edc6bdec22e24b8a8c7733abe54e35
+source-git-commit: c7100f53ce38cb8120074ec4eb9677fb7303d007
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 17%
+source-wordcount: '873'
+ht-degree: 10%
 
 ---
 
@@ -29,7 +29,7 @@ AEMアプリケーションレベルでのログは、次の3つのログで処�
 
 発行層のDispatcherキャッシュまたはアップストリームCDNから提供されるHTTP要求は、これらのログには反映されません。
 
-### AEM Javaログ {#aem-java-logging}
+## AEM Javaログ {#aem-java-logging}
 
 AEMは、Cloud Serviceのログ文にアクセスできます。 AEM用アプリケーションの開発者は、次のログレベルで、一般的なJavaログのベストプラクティス、カスタムコードの実行に関連する文のログ記録に従う必要があります。
 
@@ -91,3 +91,105 @@ ERRORログがアクティブな場合は、エラーを示す文のみがログ
 </ul></td>
 </tr>
 </table>
+
+Javaログでは、他の複数レベルのログ精度をサポートしていますが、AEMでは、上記の3つのレベルを使用することをCloud Serviceにお勧めします。
+
+AEMログレベルは、OSGi設定を介して環境の種類ごとに設定され、OSGi設定はGitにコミットされ、Cloud Managerを介してAEMにCloud Serviceとしてデプロイされます。 このため、ログレベルの設定を更新した環境を再デプロイする必要なく、AEM経由で利用可能なログを最適なログレベルで確実に使用できるように、ログ文の一貫性とCloud Serviceタイプの既知を保つことをお勧めします。
+
+### ログ形式 {#log-format}
+
+| 日付と時間 | AEMをCloud ServiceーのノードIDとして | ログレベル | ねじ | Java クラス | ログメッセージ |
+|---|---|---|---|---|---|
+| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | 承認者が指定されていません。デフォルトでは「 [ クリエイティブ承認者」ユーザーグループが設定されます ] |
+
+**ログ出力の例**
+
+`22.06.2020 18:33:30.120 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *ERROR* [qtp501076283-1809] io.prometheus.client.dropwizard.DropwizardExports Failed to get value from Gauge`
+`22.06.2020 18:33:30.229 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [qtp501076283-1805] org.apache.sling.auth.core.impl.SlingAuthenticator getAnonymousResolver: Anonymous access not allowed by configuration - requesting credentials`
+`22.06.2020 18:33:30.370 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] org.apache.sling.i18n.impl.JcrResourceBundle Finished loading 0 entries for 'en_US' (basename: <none>) in 4ms`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED`
+`22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring`
+
+### 設定ロガー {#configuration-loggers}
+
+AEM JavaログはOSGi設定として定義されているので、ターゲット固有のAEMは実行モードのフォルダーを使用するCloud Service環境ーとして使用できます。
+
+Sling LogManagerファクトリのOSGi設定を使用して、カスタムJavaパッケージのJavaログを設定します。 次の2つの設定プロパティがサポートされています。
+
+| OSGi設定プロパティ | 説明 |
+|---|---|
+| org.apache.sling.commons.log.names | ログ文を収集するJavaパッケージです。 |
+| org.apache.sling.commons.log.level | Javaパッケージをログに記録するログレベルです（org.apache.sling.commons.log.namesで指定）。 |
+
+その他のLogManager OSGi設定プロパティを変更すると、AEMでCloud Serviceとしての可用性の問題が発生する場合があります。
+
+3つのAEMで推奨されるログの設定（プレースホルダーJavaパッケージのを使用）の例を次に示します。こ `com.example`の場合、Cloud Service環境タイプとして使用されます。
+
+### 開発 {#development}
+
+/apps/my-app/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "debug"
+}
+```
+
+### ステージ {#stage}
+
+/apps/my-app/config.stage/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "warn"
+}
+```
+
+### 実稼動 {#productiomn}
+
+/apps/my-app/config.prod/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json
+
+```
+{
+    "org.apache.sling.commons.log.names": ["com.example"],
+    "org.apache.sling.commons.log.level": "error"
+}
+```
+
+## AEM HTTP要求ログ {#aem-http-request-logging}
+
+AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行われたHTTPリクエストと、そのHTTPレスポンスに関する情報を時系列で提供します。 このログは、AEMに対して行われるHTTP要求と、それらの要求が処理され応答される順序を理解するのに役立ちます。
+
+このログを理解するための鍵は、HTTPリクエストと応答のペアを、括弧内の数値で示されるIDでマッピングすることです。 多くの場合、リクエストと対応する応答には、他のHTTPリクエストと応答がログ内で相互に作用します。
+
+### ログ形式 {#http-request-logging-format}
+
+| 日付と時間 | リクエストと応答のペアID |  | HTTP メソッド | URL | プロトコル | Cloud ServiceノードIDとしてのAEM |
+|---|---|---|---|---|---|---|
+| 29/Apr/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
+
+**サンプルログ**
+
+```
+29/Apr/2020:19:14:21 +0000 [137] -> POST /conf/global/settings/dam/adminui-extension/metadataprofile/ HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] -> GET /mnt/overlay/dam/gui/content/processingprofilepage/metadataprofiles/editor.html/conf/global/settings/dam/adminui-extension/metadataprofile/main HTTP/1.1 [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:21 +0000 [137] <- 201 text/html 111ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+...
+29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
+```
+
+### ログの設定 {#configuring-the-log}
+
+AEM HTTP要求ログは、AEMでCloud Serviceとして設定できません。
+
+## AEM HTTPアクセスログ {#aem-http-access-logging}
+
+AEMのCloud ServiceHTTPアクセスログは、HTTPリクエストを時間順に表示します。 各ログエントリは、AEMにアクセスするHTTP要求を表します。
+
+このログは、AEMに対して行われているHTTP要求が何であるか、それに伴うHTTP応答ステータスコードを調べて成功した場合、およびHTTP要求が完了するまでの時間をすばやく把握するのに役立ちます。 このログは、ユーザーがログエントリをフィルタリングして、特定のユーザーのアクティビティをデバッグする場合にも役立ちます。
+
+### ログ形式 {#access-log-format}
