@@ -2,10 +2,10 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 23f7b4b41abf9b909ec55a7f37b6b8e78c689b9b
+source-git-commit: 0bb5ff11762a4a3a158d211f8bba2ff77d1d3201
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 9%
+source-wordcount: '2053'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,9 @@ AEMアプリケーションレベルでのログは、次の3つのログで処�
 1. HTTP要求ログ。HTTP要求とAEMが提供する応答に関する情報をログに記録します。
 1. HTTPアクセスログ。要約された情報とAEMが提供するHTTP要求をログに記録します。
 
-発行層のDispatcherキャッシュまたはアップストリームCDNから提供されるHTTP要求は、これらのログには反映されません。
+> [!NOTE]
+> 
+> 公開層のDispatcherキャッシュまたはアップストリームCDNから提供されるHTTP要求は、これらのログに反映されません。
 
 ## AEM Javaログ {#aem-java-logging}
 
@@ -97,10 +99,6 @@ AEMログレベルは、OSGi設定を介して環境の種類ごとに設定さ�
 
 ### ログ形式 {#log-format}
 
-| 日付と時間 | AEMをCloud ServiceーのノードIDとして | ログレベル | ねじ | Java クラス | ログメッセージ |
-|---|---|---|---|---|---|
-| 29.04.2020 21:50:13.398 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` | `*DEBUG*` | qtp2130572036-1472 | com.example.approval.workflow.impl.CustomApprovalWorkflow | `No specified approver, defaulting to [ Creative Approvers user group ]` |
-
 **ログ出力の例**
 
 ```
@@ -110,6 +108,35 @@ AEMログレベルは、OSGi設定を介して環境の種類ごとに設定さ�
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *INFO* [FelixLogListener] org.apache.sling.i18n Service [5126, [java.util.ResourceBundle]] ServiceEvent REGISTERED
 22.06.2020 18:33:30.372 [cm-p12345-e6789-aem-author-86657cbb55-xrnzq] *WARN* [73.91.59.34 [1592850810364] GET /libs/granite/core/content/login.html HTTP/1.1] libs.granite.core.components.login.login$jsp j_reason param value 'unknown' cannot be mapped to a valid reason message: ignoring
 ```
+
+<table>
+<tbody>
+<tr>
+<td>日時</td>
+<td>29.04.2020 21:50:13.398</td>
+</tr>
+<tr>
+<td>Cloud ServiceノードIDとしてのAEM</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+<tr>
+<td>ログレベル</td>
+<td>DEBUG</td>
+</tr>
+<tr>
+<td>ねじ</td>
+<td>qtp2130572036-1472</td>
+</tr>
+<tr>
+<td>Javaクラス</td>
+<td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
+</tr>
+<tr>
+<td>ログメッセージ</td>
+<td>承認者が指定されていません。デフォルトは[ Creative Approversユーザーグループ]です。</td>
+</tr>
+</tbody>
+</table>
 
 ### 設定ロガー {#configuration-loggers}
 
@@ -167,10 +194,6 @@ AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行
 
 ### ログ形式 {#http-request-logging-format}
 
-| 日付と時間 | リクエストと応答のペアID |  | HTTP メソッド | URL | プロトコル | Cloud ServiceノードIDとしてのAEM |
-|---|---|---|---|---|---|---|
-| 29/Apr/2020:19:14:21 +0000 | `[137]` | -> | POST | /conf/global/settings/dam/adminui-extension/metadataprofile/ | HTTP/1.1 | `[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]` |
-
 **サンプルログ**
 
 ```
@@ -182,6 +205,36 @@ AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行
 ...
 29/Apr/2020:19:14:22 +0000 [139] <- 200 text/html;charset=utf-8 637ms [cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]
 ```
+
+<table>
+<tbody>
+<tr>
+<td>日時</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
+</tr>
+<tr>
+<td>リクエストと応答のペアID</td>
+<td><code>[137]</code></td>
+</tr>
+<tr>
+<td>HTTP メソッド</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>/conf/global/settings/dam/adminui-extension/metadataprofile/</td>
+</tr>
+<tr>
+<td>プロトコル</td>
+<td>HTTP/1.1
+</td>
+</tr>
+<tr>
+<td>Cloud ServiceノードIDとしてのAEM</td>
+<td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
+</tr>
+</tbody>
+</table>
 
 ### ログの設定 {#configuring-the-log}
 
@@ -335,5 +388,145 @@ Define REWRITE_LOG_LEVEL Debug
 
 ## Dispatcherログ {#dispatcher-log}
 
-**ログ形式**
+<!--de completat-->
 
+**例**
+
+```
+[17/Jul/2020:23:48:06 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures.html" - 475ms [publishfarm/0] [action miss] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/climbing-new-zealand/_jcr_content/root/responsivegrid/carousel/item_1571266094599.coreimg.jpeg/1473680817282/sport-climbing.jpeg" 302 10ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+[17/Jul/2020:23:48:07 +0000] [I] [cm-p12904-e25628-aem-publish-6c5f7c9dbd-mzcvr] "GET /content/wknd/us/en/adventures/ski-touring-mont-blanc/_jcr_content/root/responsivegrid/carousel/item_1571168419252.coreimg.jpeg/1572047288089/adobestock-238230356.jpeg" 302 11ms [publishfarm/0] [action none] "publish-p12904-e25628.adobeaemcloud.com"
+```
+
+### ログ形式 {#dispatcher-log-format}
+
+### Dispatcherエラーログの設定 {#configuring-the-dispatcher-error-log}
+
+ディスパッチャーログレベルは、ファイル内の変数DISP_LOG_LEVELによって定義され `conf.d/variables/global.var`ます。
+
+Error、Warn、Info、Debug、およびTrace1に設定でき、デフォルト値はWarnです。
+
+Dispatcherログでは、他の複数レベルのログ精度をサポートしていますが、AEMは、Cloud Serviceとして以下に示すレベルを使用することをお勧めします。
+
+環境ごとのログレベルを設定するには、以下に示すように、 `global.var` ファイル内で適切な条件付き分岐を使用します。
+
+```
+Define DISP_LOG_LEVEL Debug
+  
+<IfDefine ENVIRONMENT_STAGE>
+  ...
+  Define DISP_LOG_LEVEL Warn
+  ...
+</IfDefine>
+<IfDefine ENVIRONMENT_PROD>
+  ...
+  Define DISP_LOG_LEVEL Error
+  ...
+</IfDefine>
+```
+
+## ログにアクセスする方法 {#how-to-access-logs}
+
+### クラウド環境 {#cloud-environments}
+
+クラウドサービスのCloud ServiceログとしてAEMにアクセスするには、Cloud Managerインターフェイスを使用してダウンロードするか、AdobeI/Oコマンドラインインターフェイスを使用してコマンドラインでログをテーリングします。 詳しくは、 [Cloud Managerのログに関するドキュメントを参照してください](/help/implementing/cloud-manager/manage-logs.md)。
+
+### ローカルSDK {#local-sdk}
+
+AEM asCloud ServiceSDKは、ローカル開発をサポートするログファイルを提供します。
+
+AEMログはフォルダー内にあり、次のログを表示でき `crx-quickstart/logs`ます。
+
+* AEM Javaログ： `error.log`
+* AEM HTTP要求ログ： `request.log`
+* AEM HTTPアクセスログ： `access.log`
+
+ディスパッチャーを含むApacheレイヤーログは、Dispatcherを保持するDockerコンテナにあります。 Dispatcherの開始方法については、 [Dispatcherのドキュメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) を参照してください。
+
+ログを取得するには：
+
+1. コマンドラインで、コンテナのリスト `docker ps` を入力します。
+1. コンテナにログインするには、「`docker exec -it <container> /bin/sh`」と入力します。ここで、 `<container>` は前の手順のディスパッチャーコンテナIDです。
+1. 次の下のキャッシュルートに移動します。 `/mnt/var/www/html`
+1. ログは下にある `/etc/httpd/logs`
+1. Inspect: XYZフォルダーの下でアクセスでき、次のログを表示できます。
+   * Apache HTTPD Webサーバーアクセスログ — `httpd_access.log`
+   * Apache HTTPD Webサーバーのエラーログ — `httpd_error.log`
+   * Dispatcherログ — `dispatcher.log`
+
+ログも端末出力に直接印刷されます。 ほとんどの場合、これらのログはDEBUGです。これは、Dockerの実行時にDebugレベルをパラメーターとして渡すことで実現できます。 次に例を示します。
+
+`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+## 実稼働環境とステージのデバッグ {#debugging-production-and-stage}
+
+例外的な状況では、ステージまたは実稼働環境でログをより細かく記録するには、ログレベルを変更する必要があります。
+
+これは可能ですが、Gitの設定ファイルのログレベルに対する警告とエラーからデバッグへの変更が必要です。また、これらの設定の変更を環境に登録するCloud ServiceとしてAEMへの展開を実行します。
+
+Debugによって書き込まれるログ文のトラフィックと量に応じて、環境に悪影響を与える可能性があるので、StageとProductionのデバッグレベルを変更することをお勧めします。
+
+* 慎重に行い、絶対に必要な場合にのみ行う
+* 適切なレベルに戻し、可能な限り早く再デプロイ
+
+## Splunkログ {#splunk-logs}
+
+Splunkアカウントを持っているお客様は、カスタマーサポートチケットを介して、AEMCloud Serviceログを適切なインデックスに転送するようにリクエストする場合があります。 ログデータは、Cloud Managerのログのダウンロードで利用できるものと同じですが、Splunk製品のクエリ機能を利用すると便利です。
+
+Splunkに送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワークI/O使用の一部と見なされます。
+
+### Splunk転送の有効化 {#enabling-splunk-forwarding}
+
+サポートの要請に応じて、お客様は次のことを示す必要があります。
+
+* Splunkのホスト
+* スプランク指数
+* スプランク港
+* Splunk HECトークン。 詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
+
+上記のプロパティは、関連するプログラム/環境タイプの組み合わせごとに指定する必要があります。  例えば、開発、ステージング、実稼動の各環境を希望する場合は、次に示す3組の情報を提供する必要があります。
+
+> [!NOTE]
+>
+> サンドボックスプログラム環境のSplunk転送はサポートされていません。
+
+以下に、サンプルのカスタマーサポートの要請を示します。
+
+プログラム123、実稼働環境
+
+* Splunkホスト： `splunk-hec-ext.acme.com`
+* Splunkインデックス： acme_123prod（お客様は任意の命名規則を選択できます）
+* Splunkポート： 443
+* HECトークンの分割： ABC123
+
+プログラム123、ステージ環境
+
+* Splunkホスト： `splunk-hec-ext.acme.com`
+* Splunkインデックス： acme_123stage
+* Splunkポート： 443
+* HECトークンの分割： ABC123
+
+プログラム123、開発エンヴ
+
+* Splunkホスト： `splunk-hec-ext.acme.com`
+* Splunkインデックス： acme_123dev
+* Splunkポート： 443
+* HECトークンの分割： ABC123
+
+各環境に同じSplunkインデックスを使用する場合は十分です。この場合、dev、stage、prodの値に基づいて `aem_env_type` フィールドを区別するために使用できます。 複数の開発環境がある場合は、この `aem_env_id` フィールドも使用できます。 一部の組織では、関連するインデックスで、少数のSplunk環境へのアクセスが制限されている場合、本番ユーザーのログに対して別のインデックスを選択できます。
+
+ログエントリの例を次に示します。
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+file_path: /var/log/aem/error.log
+host: 172.34.200.12 
+level: INFO
+msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
+orig_time: 16.07.2020 08:35:32.346
+pod_name: aemloggingall-aem-author-77797d55d4-74zvt
+splunk_customer: true
+```
