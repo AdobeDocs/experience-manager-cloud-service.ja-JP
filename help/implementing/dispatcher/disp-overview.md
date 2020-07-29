@@ -2,7 +2,7 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 495332d7ea421133e29f73f8930bb069bb5b4ebd
+source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
 ht-degree: 99%
@@ -372,7 +372,7 @@ Starting httpd server
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-ログレベルは、変数 `DISP_LOG_LEVEL` とs` `REWRITE_LOG_LEVEL` で定義 `conf.d/variables/global.var`します。 See the [Logging documentation](/help/implementing/developing/introduction/logging.md) for more information.
+ログレベルは、変数 `DISP_LOG_LEVEL` とs` `REWRITE_LOG_LEVEL` で定義 `conf.d/variables/global.var`します。 See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
