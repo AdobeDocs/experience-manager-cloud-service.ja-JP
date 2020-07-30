@@ -1,11 +1,11 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1891'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -211,7 +211,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 アセットが要求されると、アセットのメタデータ（タイトルや名前など、それぞれのアセットスキーマで定義される情報）が応答で返されます。
 
-The binary data of an asset is exposed as a SIREN link of type `content`.
+アセットのバイナリデータは、`content` タイプの SIREN リンクとして公開されます。
 
 アセットには複数のレンディションを含めることができます。通常、これらは子エンティティとして公開されます。ただし、サムネールレンディションは例外です。これは、`thumbnail` タイプ（`rel="thumbnail"`）のリンクとして公開されます。
 
@@ -221,7 +221,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 
 標準アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。**
 
-#### 表現 {#representation}
+#### 表現{#representation}
 
 コンテンツフラグメント：
 
@@ -230,7 +230,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 
 * アトミックと見なされます。つまり、エレメントとバリエーションは、リンクまたは子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。これにより、フラグメントのペイロードに効率的にアクセスできます。
 
-#### コンテンツモデルとコンテンツフラグメント {#content-models-and-content-fragments}
+#### コンテンツモデルとコンテンツフラグメント{#content-models-and-content-fragments}
 
 現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、コンシューマーは（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなど&#x200B;**&#x200B;は定義の一部だからです。
 
@@ -244,7 +244,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 
 使用方法は、特定の使用例以外にも、AEM オーサーを使用するかパブリッシュ環境を使用するかで異なることがあります。
 
-* It is strongly recommended that creation is bound to an author instance ([and currently there is no means to replicate a fragment to publish using this API](/help/assets/assets-api-content-fragments.md#limitations)).
+* 作成をオーサーインスタンスに結び付けることを強くお勧めします（[現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません](/help/assets/assets-api-content-fragments.md#limitations)）。
 * 配信は、どちらからも可能です。AEM では、要求されたコンテンツを JSON 形式でのみ提供するからです。
 
    * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからの格納と配信で十分です。
@@ -381,7 +381,7 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
    }
    ```
 
-## API リファレンス {#api-reference}
+## API リファレンス{#api-reference}
 
 詳細な API リファレンスについては、こちらを参照してください。
 <!--
