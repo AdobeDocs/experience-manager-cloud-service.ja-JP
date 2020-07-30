@@ -1,18 +1,18 @@
 ---
 title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: be65ba65fb6bbd7634da882ef8337565f1fce477
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # コンテンツフラグメント {#content-fragments}
 
-Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理されます](/help/assets/content-fragments/content-fragments.md)。
+Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントは、[ページに依存しないアセットとして作成および管理されます](/help/assets/content-fragments/content-fragments.md)。
 
 これによりチャネルに依存しないコンテンツを、様々なバリエーション（チャネル固有）で作成できます。その後、コンテンツページをオーサリングする際に、これらのフラグメントとそれらのバリエーションを使用できます。
 
@@ -52,7 +52,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
    * 適切にキュレーションされた関連メディアコンテンツと連携できます。
    * アドホックコンテンツのバリエーションをフラグメント内で集中管理したまま、それらのバリエーションをその場で作成できます。
 
-## ページへのコンテンツフラグメントの追加 {#adding-a-content-fragment-to-your-page}
+## ページへのコンテンツフラグメントの追加{#adding-a-content-fragment-to-your-page}
 
 1. 編集するページを開きます。
 2. **コンテンツフラグメント**&#x200B;コンポーネントを、**コンポーネント**&#x200B;ブラウザーまたは「**新規コンポーネントを挿入**」のいずれかから開きます。
@@ -82,7 +82,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 
 >[!NOTE]
 >
->コ [アコンポーネント、コンテンツフラグメントコンポーネントも参照してください](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)
+>[コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)も参照してください。
 
 適切な設定ダイアログで、以下をはじめとする使用可能なパラメーターを選択できます。
 
@@ -114,7 +114,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 >
 >フラグメントソースの編集は、そのコンテンツフラグメントを参照するすべてのページに影響します。
 
-### 中間コンテンツの追加 {#adding-in-between-content}
+### 中間コンテンツの追加{#adding-in-between-content}
 
 特定のコンテンツフラグメントをページに追加すると、フラグメントの各 HTML 段落間（および上部／下部）に&#x200B;**コンポーネントをここにドラッグ**&#x200B;プレースホルダーが表示されます。
 
@@ -136,7 +136,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 >
 >フラグメント自体に[ビジュアルアセット（画像）を挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)することもできます。
 >
->フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに追加できます( [混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets))。
+>フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに（[混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)として）追加できます。
 
 >[!CAUTION]
 >
@@ -151,9 +151,9 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 >* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
 
 
-### 関連コンテンツの使用 {#using-associated-content}
+### 関連コンテンツの使用{#using-associated-content}
 
-[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。Associated content is effectively a special source of content for [in-between content](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments).
+[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメ
 
 ### フラグメントに挿入されたアセット {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself (as [mixed-media fragments](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)), then the options for editing these assets in the page editor is limited.
+アセット（画像など）がフラグメント自体に（[混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)として）挿入されている場合、ページエディターでこれらのアセットを編集するためのオプションは制限されます。
 
 例えば、画像の場合、次のことができます。
 
