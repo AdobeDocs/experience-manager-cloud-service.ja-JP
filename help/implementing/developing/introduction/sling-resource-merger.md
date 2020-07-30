@@ -1,22 +1,22 @@
 ---
-title: Adobe Experience ManagerでのSling Resource MangerのCloud Serviceとしての使用
+title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1160'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
 
-# AEMでのSling Resource MangerのCloud Serviceとしての使用 {#using-the-sling-resource-merger-in-aem}
+# AEM as a Cloud Service での Sling Resource Merger の使用 {#using-the-sling-resource-merger-in-aem}
 
 ## 目的 {#purpose}
 
 Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します。Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
 
-* **[](/help/implementing/developing/introduction/overlays.md)**検索パスを使用したリソースのオーバーレイ[](/help/implementing/developing/introduction/overlays.md#search-paths)。
+* [検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)を使用するリソースの&#x200B;**[オーバーレイ](/help/implementing/developing/introduction/overlays.md)**。
 
 * リソースタイプ階層を（**プロパティを通じて）使用するタッチ操作対応 UI のコンポーネントダイアログ（**）の`cq:dialog`オーバーライド`sling:resourceSuperType`。
 
@@ -30,64 +30,65 @@ Sling Resource Merger を使用すると、リソースやプロパティのオ�
 
 >[!CAUTION]
 >
->Sling Resource Margerおよび関連するメソッドは、タッチ対応UI(Cloud ServiceとしてAEMで使用できる唯一のUI)でのみ使用できます。
+>Sling Resource Merger および関連するメソッドは、タッチ対応 UI（AEM as a Cloud Service で使用できる唯一の UI）でのみ使用できます。
 
 ### AEM の目的 {#goals-for-aem}
 
 AEM で Sling Resource Merger を使用する目的は、次のとおりです。
 
-* ensure that customization changes are not made in `/libs`.
-* reduce the structure that is replicated from `/libs`.
+* `/libs` にカスタマイズの変更が加えられないようにする。
+* `/libs` からレプリケートされる構造を減らす。
 
-   When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). 情報を不必要に複製すると、システムのアップグレード時に問題が発生しやすくなります。
+   Sling Resource Merger を使用するときは、`/libs` の構造全体をコピーすることは推奨されません。そうすると、カスタマイズ（通常は `/apps`）で維持される情報が多くなりすぎるからです。情報を不必要に複製すると、システムのアップグレード時に問題が発生しやすくなります。
 
 >[!CAUTION]
 >
 >`/libs` パス内の設定は&#x200B;***一切***&#x200B;変更しないでください。
 >
->これは、インスタンスにアップグレードが適用されると、のコンテンツ `/libs` が上書きされる可能性があるためです。
+>これは、インスタンスにアップグレードが適用されると、`/libs` のコンテンツが上書きされる可能性があるためです。
 >
->* オーバーレイは [検索パスに依存します](/help/implementing/developing/introduction/overlays.md#search-paths)。
+>* オーバーレイは[検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)に依存します。
    >
    >
 * オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
 >
 >
-However, overrides are often defined under `/apps`, as best practice in AEM as a Cloud Service is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
+ただし、オーバーライドは `/apps` 以下に定義されるのが一般的です。AEM as a Cloud Service では、カスタマイズを `/apps` 以下に定義することがベストプラクティスとされています。なぜなら `/libs` 以下のコンテンツを変更してはならないからです。
 
 ### プロパティ {#properties}
 
 リソースマージャーには次のプロパティがあります。
 
-* `sling:hideProperties` ( `String` または `String[]`)
+* `sling:hideProperties`（`String` または `String[]`）
 
    非表示にするプロパティまたはプロパティのリストを指定します。
 
-   The wildcard `*` hides all.
+   ワイルドカード `*` を指定した場合はすべて非表示になります。
 
-* `sling:hideResource` ( `Boolean`)
+* `sling:hideResource`（`Boolean`）
 
-   リソースの子を含め、リソースを完全に非表示にする必要があるかどうかを示します。
+   リソースを子も含めて完全に非表示にするかを示します。
 
-* `sling:hideChildren` ( `String` または `String[]`)
+* `sling:hideChildren`（`String` または `String[]`）
 
-   非表示にする子ノード、または子ノードのリストが含まれます。 ノードのプロパティは維持されます。
+   非表示にする子ノードまたは子ノードのリストが格納されます。ノードのプロパティは維持されます。
 
-   The wildcard `*` hides all.
+   ワイルドカード `*` を指定した場合はすべて非表示になります。
 
-* `sling:orderBefore` ( `String`)
+* `sling:orderBefore`（`String`）
 
-   現在のノードを前に配置する兄弟ノードの名前が含まれます。
+   現在のノードの直後に配置する兄弟ノードの名前が格納されます。
 
-These properties affect how the corresponding/original resources/properties (from `/libs`) are used by the overlay/override (often in `/apps`).
+これらのプロパティは、対応する（元の）リソースおよびプロパティ（`/libs` 内）がオーバーレイ／オーバーライド（`/apps` 内）によってどのように使用されるかに影響します。
 
 ### 構造の作成 {#creating-the-structure}
 
-To create an overlay or override you need to recreate the original node, with the equivalent structure, under the destination (usually `/apps`). 次に例を示します。
+オーバーレイまたはオーバーライドを作成するには、元のノードを同じ構造で、目的の場所（通常は `/apps`）に再作成する必要があります。次に例を示します。
 
 * オーバーレイ
 
-   * パネルに表示される、サイトコンソールのナビゲーションエントリの定義は、次の場所で定義されています。
+   * サイトコンソールのナビゲーションエントリの定義（パネルに表示されるもの）は次の場所で定義されています。
+
 
       `/libs/cq/core/content/nav/sites/jcr:title`
 
@@ -95,19 +96,19 @@ To create an overlay or override you need to recreate the original node, with th
 
       `/apps/cq/core/content/nav/sites`
 
-      次に、必要に応じてプロパティ `jcr:title` を更新します。
+      次に、必要に応じて `jcr:title` プロパティを更新します。
 
 * オーバーライド
 
-   * テキストコンソール用のタッチ対応ダイアログの定義は、次の場所で定義します。
+   * テキストコンソールのタッチ操作対応ダイアログの定義は、次の場所に定義されます。
 
       `/libs/foundation/components/text/cq:dialog`
 
-   * これを上書きするには、次のノードを作成します。例：
+   * これをオーバーライドするには、例えば、次のノードを作成します。
 
       `/apps/the-project/components/text/cq:dialog`
 
-これらのいずれを作成する場合も、必要な作業はスケルトン構造を再作成することだけです。To simplify the recreation of the structure all intermediary nodes can be of type `nt:unstructured` (they do not have to reflect the original node type; for example, in `/libs`).
+これらのいずれを作成する場合も、必要な作業はスケルトン構造を再作成することだけです。構造を簡単に再作成できるように、すべての中間ノードは、タイプ `nt:unstructured` として作成できます（例えば、`/libs` の元のノードタイプを反映する必要はありません）。
 
 上述のオーバーレイの例では、次のノードが必要になります。
 
@@ -122,7 +123,7 @@ To create an overlay or override you need to recreate the original node, with th
 
 >[!NOTE]
 >
->When using the Sling Resource Merger (i.e. when dealing with the standard, touch-enabled UI) it is not recommended to copy the entire structure from `/libs` as it would result in too much information being held in `/apps`. その場合、システムが何らかの理由でアップグレードされたときに問題が発生する可能性があります。
+>Sling Resource Merger を使用するとき（つまり標準のタッチ操作対応 UI を扱うとき）は、`/libs` の構造全体をコピーすることは推奨されません。そうすると、`/apps` 内で維持される情報が多くなりすぎるからです。その場合、システムが何らかの理由でアップグレードされたときに問題が発生する可能性があります。
 
 ### ユースケース {#use-cases}
 
@@ -130,38 +131,38 @@ To create an overlay or override you need to recreate the original node, with th
 
 * **プロパティの追加**
 
-   The property does not exist in the `/libs` definition, but is required in the `/apps` overlay/override.
+   `/libs` 定義に存在しないプロパティが `/apps` オーバーレイ／オーバーライドで必要になった場合に、プロパティを追加できます。
 
-   1. Create the corresponding node within `/apps`
-   1. このノードに新しいプロパティを作成します。
+   1. `/apps` 内に、対応するノードを作成します。
+   1. このノード``で新しいプロパティを作成します。
 
 * **プロパティの再定義（自動作成されたプロパティ以外）**
 
-   The property is defined in `/libs`, but a new value is required in the `/apps` overlay/override.
+   `/libs` で定義されているプロパティについて、`/apps` オーバーレイ／オーバーライドで新しい値が必要になった場合に、プロパティを再定義できます。
 
-   1. Create the corresponding node within `/apps`
+   1. `/apps` 内に、対応するノードを作成します。
    1. このノード（`apps` 以下）で対応するプロパティを作成します。
 
       * このプロパティには、Sling Resource Resolver 設定に基づいた優先順位が付けられます。
       * プロパティタイプの変更がサポートされています。
 
-         If you use a property type different to the one used in `/libs`, then the property type you define will be used.
+         `/libs` で使用されているものとは異なるプロパティタイプを使用する場合、その定義したプロパティタイプが使用されます。
    >[!NOTE]
    >
    >プロパティタイプの変更がサポートされています。
 
 * **自動作成されたプロパティの再定義**
 
-   By default, auto-created properties (such as `jcr:primaryType`) are not subject to an overlay/override to ensure that the node type currently under `/libs` is respected. To impose an overlay/override you have to recreate the node in `/apps`, explicitly hide the property and redefine it:
+   デフォルトでは、自動作成されたプロパティ（`jcr:primaryType` など）はオーバーレイ／オーバーライドの対象にならず、現在 `/libs` 以下にあるノードタイプが尊重されます。オーバーレイ／オーバーライドを適用するには、`/apps` でノードを再作成して、プロパティを明示的に非表示にし、再定義する必要があります。
 
-   1. Create the corresponding node under `/apps` with the desired `jcr:primaryType`
-   1. 自動作成されたプロパティ `sling:hideProperties` の値に設定した値で、そのノードにプロパティを作成します。 例えば、 `jcr:primaryType`
+   1. `/apps` 以下に、必要な `jcr:primaryType` を持つ、対応するノードを作成します。
+   1. 自動作成されたプロパティに設定された値で、そのノードに `sling:hideProperties` プロパティを作成します。例：`jcr:primaryType`
 
-      で定義されるこのプロパティ `/apps`は、現在は、 `/libs`
+      `/apps`で定義されるこのプロパティは、`/libs` 以下で定義されるプロパティより優先されるようになります。
 
 * **ノードおよびその子の再定義**
 
-   The node and its children are defined in `/libs`, but a new configuration is required in the `/apps` overlay/override.
+   `/libs` 内に定義されているノードとその子について、`/apps` オーバーレイ／オーバーライドで新しい設定が必要な場合は、再定義をおこないます。
 
    1. 次のアクションを両方実行します。
 
@@ -170,10 +171,10 @@ To create an overlay or override you need to recreate the original node, with th
 
 * **プロパティの非表示**
 
-   The property is defined in `/libs`, but not required in the `/apps` overlay/override.
+   `/libs` 内に定義されているプロパティが、`/apps` オーバーレイ／オーバーライドでは不要な場合に、プロパティを非表示にできます。
 
-   1. Create the corresponding node within `/apps`
-   1. タイプまたはのプロパティ `sling:hideProperties` を作成 `String` し `String[]`ます。 これを使用して、非表示にする（無視する）プロパティを指定します。ワイルドカードを使用することもできます。次に例を示します。
+   1. `/apps` 内に、対応するノードを作成します。
+   1. `String` 型または `String[]` 型の `sling:hideProperties` プロパティを作成します。これを使用して、非表示にする（無視する）プロパティを指定します。ワイルドカードを使用することもできます。次に例を示します。
 
       * `*`
       * `["*"]`
@@ -182,40 +183,40 @@ To create an overlay or override you need to recreate the original node, with th
 
 * **ノードおよびその子の非表示**
 
-   The node and its children are defined in `/libs`, but not required in the `/apps` overlay/override.
+   `/libs` 内に定義されているノードとその子が、`/apps` オーバーレイ／オーバーライドでは不要な場合に、不要なものを非表示にできます。
 
    1. /apps 以下に、対応するノードを作成します。
-   1. Create a property `sling:hideResource`
+   1. `sling:hideResource` プロパティを作成します
 
-      * type: `Boolean`
-      * 値: `true`
+      * 型：`Boolean`
+      * 値：`true`
 
 * **ノードの子の非表示（そのノードのプロパティは維持）**
 
-   The node, its properties and its children are defined in `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all of the child nodes are not required in the `/apps` overlay/override.
+   ノード、そのプロパティおよびその子が `/libs` に定義されていて、ノードとそのプロパティは `/apps` オーバーレイ／オーバーライドで必要であるものの、一部またはすべての子ノードが `/apps` オーバーレイ／オーバーライドで不要な場合に、不要なものを非表示にできます。
 
-   1. Create the corresponding node under `/apps`
-   1. プロパティの作成 `sling:hideChildren`:
+   1. `/apps` 以下に、対応するノードを作成します。
+   1. `sling:hideChildren` プロパティを作成します。
 
-      * type: `String[]`
-      * value: a list of the child nodes (as defined in `/libs`) to hide/ignore
+      * 型：`String[]`
+      * 値：非表示にする（無視する）子ノードのリスト（`/libs` 内に定義されているもの）
 
-      ワイルドカード(&amp;ast;) は、すべての子ノードを非表示/無視するために使用できます。
+      ワイルドカード &amp;ast; を使用してすべての子ノードを非表示にする（無視する）ことができます。
 
 
 * **ノードの並べ替え**
 
-   The node and its siblings are defined in `/libs`. A new position is required so the node is recreated in the `/apps` overlay/override, where the new position is defined in reference to the appropriate sibling node in `/libs`.
+   ノードとその兄弟が `/libs` 内で定義されていて、ノードの位置を変更したい場合には、目的のノードを `/apps` 内のオーバーレイ／オーバーライドで再作成し、その中で、`/libs` 内の適切な兄弟ノードを参照して新しい位置を定義します。
 
-   * Use the `sling:orderBefore` property:
+   * `sling:orderBefore` プロパティを使用します。
 
-      1. Create the corresponding node under `/apps`
-      1. プロパティの作成 `sling:orderBefore`:
+      1. `/apps` 以下に、対応するノードを作成します。
+      1. `sling:orderBefore` プロパティを作成します。
 
-         これは、現在のノードを配置する前のノードを指定します( `/libs`以下のように)。
+         これは、現在のノードを配置する前の（`/libs` 以下にある）ノードを指定します。
 
-         * type: `String`
-         * 値: `<before-SiblingName>`
+         * 型：`String`
+         * 値：`<before-SiblingName>`
 
 ### コードからの Sling Resource Merger の呼び出し {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -225,13 +226,13 @@ Sling Resource Merger には 2 つのカスタムリソースプロバイダー�
 >
 >リソースにアクセスするときは、適切なマウントポイントを使用することが推奨されます。
 >
->This ensures that the Sling Resource Merger is invoked and the fully merged resource returned (reducing the structure that needs to be replicated from `/libs`).
+>適切なマウントポイントを使用すれば、Sling Resource Merger が確実に呼び出され、完全にマージされたリソースが確実に返されます（`/libs` からレプリケートする必要がある構造が低減します）。
 
-* オーバーレイ:
+* オーバーレイ：
 
    * 目的：検索パスに基づいてリソースをマージする。
-   * mount point: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * マウントポイント：`/mnt/overlay`
+   * 使用方法：`mount point + relative path`
    * 例：
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
@@ -239,8 +240,8 @@ Sling Resource Merger には 2 つのカスタムリソースプロバイダー�
 * オーバーライド：
 
    * 目的：スーパータイプに基づいてリソースをマージする。
-   * mount point: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * マウントポイント：`/mnt/overide`
+   * 使用方法：`mount point + absolute path`
    * 例：
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
