@@ -1,11 +1,11 @@
 ---
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ ht-degree: 86%
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
-* リビジョンのクリーンアップ [と](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/revision-cleanup.html) データストアの整合性チェックを [](https://helpx.adobe.com/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)**** ソースリポジトリで実行して、潜在的な問題を特定し、リポジトリのサイズを小さくすることをお勧めします。
+* [リビジョンのクリーンアップ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/deploying/revision-cleanup.translate.html)と[データストアの整合性チェック](https://helpx.adobe.com/jp/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)を&#x200B;**ソースリポジトリ**&#x200B;で実行して、潜在的な問題を特定し、リポジトリのサイズを小さくすることをお勧めします。
 
-* AEM Cloud Author Content Network(CDN)の設定でIPのホワイトリストが設定されている場合は、ソース環境とAEM Cloud環境が相互に通信できるように、ソース環境IPも許可リストに追加する必要があります。
+* AEM as a Cloud Service オーサーのコンテンツ配信ネットワーク（CDN）に IP のホワイトリストが設定されている場合は、ソース環境と AEM as a Cloud Service 環境が相互に通信できるように、ソース環境の IP も許可リストに追加する必要があります。
 
 * インジェスト段階では、*ワイプ*&#x200B;モードを有効にしてインジェストを実行することをお勧めします。このモードでは、ターゲット AEM as a Cloud Service 環境内の既存のリポジトリ（オーサーまたはパブリッシュ）が完全に削除された後、移行セットのデータで更新されます。このモードは、現在のコンテンツの上に移行セットが適用される非ワイプモードより、はるかに高速です。
 
