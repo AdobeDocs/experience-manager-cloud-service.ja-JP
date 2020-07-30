@@ -3,15 +3,15 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 93%
+source-wordcount: '2246'
+ht-degree: 57%
 
 ---
 
 
-# アセットマイクロサービスの基本 {#get-started-using-asset-microservices}
+# アセットマイクロサービスと処理プロファイルの使用 {#get-started-using-asset-microservices}
 
 <!--
 * Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
@@ -23,7 +23,7 @@ ht-degree: 93%
 * [DO NOT COVER?] Exceptions or limitations or link back to lack of parity with AEM 6.5.
 -->
 
-アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
+アセットマイクロサービスは、クラウドサービスを使用して、アセットの拡張性と回復性に優れた処理を実現します。 アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
 アセット処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に依存してします。処理プロファイルには、デフォルトの設定が用意されていますが、管理者がより具体的なアセット処理設定を追加することもできます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズでは、拡張機能と完全なカスタマイズが可能です。
 
@@ -38,78 +38,116 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!NOTE]
 >
->ここで説明するアセット処理は、以前のバージョンの Experience Manager に存在する `DAM Update Asset` ワークフローモデルに代わるものです。標準的なレンディション生成とメタデータ関連のステップのほとんどは、アセットマイクロサービスの処理に置き換わり、残りのステップは後処理ワークフロー設定に置き換えることができます。
+>The asset processing described here replaces the `DAM Update Asset` workflow model that exists in the previous versions of [!DNL Experience Manager]. 標準的なレンディション生成とメタデータ関連のステップのほとんどは、アセットマイクロサービスの処理に置き換わり、残りのステップは後処理ワークフロー設定に置き換えることができます。
 
-## アセット処理の基本 {#get-started}
+## アセット処理オプションの理解 {#get-started}
 
-アセットマイクロサービスを使用したアセット処理は、デフォルト設定で事前設定されており、システムに必要なデフォルトのレンディションは確実に使用できるようになっています。また、メタデータ抽出およびテキスト抽出操作も使用できるようになっています。ユーザーはアセットのアップロードや更新を直ちに開始でき、基本的な処理がデフォルトで利用可能です。
+Experience Managerでは、次のレベルの処理が可能です。
 
-レンディション生成やアセット処理に関する特定の要件に応じて、AEM 管理者が追加の[!UICONTROL 処理プロファイル]を作成できます。ユーザーは、使用可能な 1 つ以上のプロファイルを特定のフォルダーに割り当てて、追加の処理を完了することができます。例えば、Web、モバイル、タブレット固有のレンディションを生成する場合などです。次のビデオでは、[!UICONTROL 処理プロファイル]の作成および適用方法と、作成したレンディションへのアクセス方法を示しています。
+| 設定 | 説明 | 対象となる使用例 |
+|---|---|---|
+| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | ユーザーインターフェイスで使用される [!DNL Assets] 標準のサムネール（48、140および319 px） 大きいプレビュー（Webレンディション — 1280 px）; メタデータとテキストの抽出。 |
+| [標準設定](#standard-config) | ユーザーインターフェイス経由の管理者のみが設定します。 上記のデフォルト設定よりも、レンディションの生成に関する多くのオプションを提供します。 | 画像の形式と解像度の変更、 FPOレンディションを生成します。 |
+| [カスタム設定](#custom-config) | より複雑な要件をサポートするカスタムワーカーを呼び出すために、管理者がユーザーインターフェイスを介して設定します。 クラウドネイティブを活用 [!DNL Asset Compute Service]します。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
-
-既存のプロファイルを変更するには、[アセットマイクロサービスの設定](#configure-asset-microservices)を参照してください。
 他のシステムとの統合などのカスタム要件に特化したカスタム処理プロファイルを作成する場合は、[後処理ワークフロー](#post-processing-workflows)を参照してください。
 
-## アセットマイクロサービスの設定 {#configure-asset-microservices}
-
-管理者がアセットマイクロサービスを設定するには、**[!UICONTROL ツール／Assets／処理プロファイル]**&#x200B;を選択して、設定ユーザーインターフェイスを使用できます。
-
-### デフォルト設定 {#default-config}
-
-デフォルト設定では、標準の処理プロファイルのみ設定されています。標準の処理プロファイルはユーザーインターフェイスに表示されず、変更することはできません。アップロードされたアセットは常に処理されます。標準の処理プロファイルを使用すると、Experience Manager で必要なあらゆる基本処理をすべてのアセットに対して実行できます。
-
-<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png) -->
-
-標準の処理プロファイルには、次の処理設定が用意されています。
-
-* アセットユーザーインターフェイスで使用される標準サムネール（48、140、319 px）
-* 大きなプレビュー（Web レンディション - 1280 px）
-* メタデータ抽出
-* テキスト抽出
-
-### サポートされているファイル形式 {#supported-file-formats}
+## サポートされているファイル形式 {#supported-file-formats}
 
 アセットマイクロサービスでは、レンディション生成やメタデータ抽出の機能に関して、様々なファイル形式をサポートしています。そのリストについては、[サポートされているファイル形式](file-format-support.md)を参照してください。
 
-### 処理プロファイルの追加 {#processing-profiles}
+## デフォルト設定 {#default-config}
 
-追加の処理プロファイルは、**[!UICONTROL 作成]**&#x200B;アクションを使用して追加できます。
+一部の初期設定は、Experience Managerで必要なデフォルトのレンディションを使用できるように事前に設定されています。 また、デフォルトの設定では、メタデータ抽出とテキスト抽出の操作も確実に行えます。 ユーザーはアセットのアップロードや更新を直ちに開始でき、基本的な処理がデフォルトで利用可能です。
 
-それぞれの処理プロファイル設定には、レンディションのリストが含まれています。レンディションごとに、以下を指定できます。
+デフォルト設定では、最も基本的な処理プロファイルのみが設定されます。 このような処理プロファイルは、ユーザーインターフェイスに表示されず、変更することはできません。 アップロードされたアセットは常に処理されます。Such a default processing profile ensures that the basic processing required by [!DNL Experience Manager] is completed on all assets.
 
-* レンディション名。
-* JPEG、PNG、GIF など、サポートされるレンディション形式。
-* レンディションの幅と高さをピクセル単位で指定します。指定しなかった場合は、元の画像の最大ピクセルサイズが使用されます。
-* JPEG のレンディションの画質（％単位）。
-* プロファイルの適用性を定義する、包含および除外 MIME タイプ。
+<!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
+-->
+
+## 標準プロファイル {#standard-config}
+
+[!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。 管理者は、追加の [!UICONTROL 処理プロファイルを作成して] 、そのようなレンディションの作成を容易にできます。 次に、1つ以上の使用可能なプロファイルを特定のフォルダーに割り当て、追加の処理を行います。 例えば、追加の処理でWeb、モバイル、タブレット用のレンディションを生成できるとします。 次のビデオでは、[!UICONTROL 処理プロファイル]の作成および適用方法と、作成したレンディションへのアクセス方法を示しています。
+
+* **レンディションの幅と高さ**: 「レンディションの幅」と「高さ」の指定では、生成される出力画像の最大サイズが指定されます。 Asset Microservicesは、可能な限り大きいレンディションを生成しようとします。このレンディションの幅と高さは、それぞれ指定された幅と高さ以下です。 縦横比は維持され、元の縦横比と同じになります。値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
+
+* **MIMEタイプインクルージョンルール**: 特定のMIMEタイプを持つアセットが処理される場合、最初に、MIMEタイプがレンディション仕様の除外されたMIMEタイプ値と比較されます。 そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（ブロックリスト）。それ以外の場合は、MIME タイプが包含 MIME タイプと照合され、リストと一致する場合は、そのレンディションが生成されます（許可リスト）。
+
+* **Special FPO rendition**: クリエイティブプロフェッショナルは、サイズの大きいアセットをから [!DNL Experience Manager] ドキュメントに配置する際、アセットを [!DNL Adobe InDesign] 配置した後、かなりの時間待ちます [](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)。 Meanwhile, the user is blocked from using [!DNL InDesign]. これにより、クリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。Adobe enables temporarily placing small-sized renditions in [!DNL InDesign] documents to begin with, which can be replaced with full-resolution assets on-demand later. [!DNL Experience Manager] には、配置専用（FPO）のレンディションが用意されています。これらの FPO レンディションは、ファイルサイズは小さいですが、縦横比は同じです。
+
+処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、 の[!DNL Adobe Asset Link][ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
+
+### 標準プロファイルの作成 {#create-standard-profile}
+
+標準の処理プロファイルを作成するには、次の手順に従います。
+
+1. 管理者は、 **[!UICONTROL ツール]** / **[!UICONTROL アセット]** / **[!UICONTROL 処理プロファイルにアクセスします]**。 「**[!UICONTROL 作成]**」をクリックします。
+1. フォルダーに適用する際に、プロファイルを一意に識別するのに役立つ名前を指定します。
+1. FPOレンディションを生成するには、「 **[!UICONTROL 標準]** 」タブで「FPOレンディションを **[!UICONTROL 作成]**」を有効にします。 1 ～ 100の **[!UICONTROL 画質]** (Quality)値を入力します。
+1. 他のレンディションを生成するには、「 **[!UICONTROL 追加New]** 」をクリックし、次の情報を入力します。
+
+   * 各レンディションのファイル名。
+   * 各レンディションのファイル形式（PNG、JPEGまたはGIF）。
+   * 各レンディションの幅と高さ（ピクセル単位） 値を指定しない場合は、元の画像の最大ピクセルサイズが使用されます。
+   * 各JPEGレンディションの画質(%)。
+   * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
 ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
-新しい処理プロファイルを作成して保存すると、設定済みの処理リストのプロファイルに追加されます。これらの処理プロファイルをフォルダー階層のフォルダーに適用して、アセットのアップロードやアセットの処理に対して有効にすることができます。
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
+次のビデオでは、標準プロファイルの有用性と使用方法を示します。
+
+>[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
 
 <!-- Removed per cqdoc-15624 request by engineering.
- ![processing-profiles-list](assets/processing-profiles-list.png) -->
+ ![processing-profiles-list](assets/processing-profiles-list.png) 
+ -->
 
-#### レンディションの幅と高さ {#rendition-width-height}
+## カスタムプロファイルと使用例 {#custom-config}
 
-レンディションの幅と高さの仕様には、生成される出力画像の最大サイズを指定します。アセットマイクロサービスでは、レンディションの幅と高さがそれぞれ指定の幅と高さを超えない範囲で、可能な限り大きなレンディションを生成しようとします。縦横比は維持され、元の縦横比と同じになります。
+**未定項目**:
 
-値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
+* 拡張性コンテンツを使用した全体的なクロスリンク。
+* 作業者のURLの取得方法について説明します。 開発、ステージ、および実稼動環境のワーカーURL
+* サービスパラメーターのメンションマッピング。 サービス記事を計算するためのリンクです。
+* Jiraチケットで共有されるフローの観点から確認します。
 
-#### MIME タイプ包含ルール {#mime-type-inclusion-rules}
+組織のニーズが異なるため、複雑なアセット処理の使用例の中には、デフォルト設定を使用して実行できないものもあります。 このような場合 [!DNL Asset Compute Service] のAdobeオファー。 これは、デジタルアセットを処理するためのスケーラブルで拡張可能なサービスです。 画像、ビデオ、ドキュメント、その他のファイル形式を、サムネール、抽出したテキスト、メタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-特定の MIME タイプのアセットが処理される際は、まず、その MIME タイプがレンディション仕様の除外 MIME タイプの値と照合されます。そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（ブロックリスト）。
+開発者は、Asset Compute Serviceを使用して、事前定義済みの複雑な使用例に対応する特殊なカスタムワーカーを作成できます。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、次の使用例をサポートしています。
 
-それ以外の場合は、MIME タイプが包含 MIME タイプと照合され、リストと一致する場合は、そのレンディションが生成されます（許可リスト）。
+* Adobe Senseiを使用して、デジタルアセット用に拡張されたカスタムスマートタグを生成します。
+* Adobe Senseiを使用して、被写体の切り抜きマスクを生成します。
+* PIMシステムから製品メタデータ情報を取得し、アセットの取り込み中に、メタデータをバイナリアセットの一部にします。
+* APIを使用して、透明画像の背景色を変更し [!DNL Adobe Photoshop] ます。
+* APIを使用して画像をリタッチし [!DNL Photoshop] ます。
+* APIを使用して画像をまっすぐにし [!DNL Adobe Lightroom] ます。
 
-#### 特別な FPO レンディション {#special-fpo-rendition}
+>[!NOTE]
+>
+>標準メタデータは、カスタムワーカーを使用して編集することはできません。 変更できるのは、カスタムメタデータのみです。
 
-AEM の大きなサイズのアセットを Adobe InDesign ドキュメントに配置する場合、クリエイティブプロフェッショナルは、[アセットを配置](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)してからかなりの時間待つ必要があります。一方、ユーザーは InDesign の使用をブロックされます。これにより、クリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。InDesign ドキュメントでは、小さいサイズのレンディションを一時的に配置して、最初に配置することができます。この作業は、後でオンデマンドにより、フル解像度のアセットに置き換えることができます。Experience Manager には、配置専用（FPO）のレンディションが用意されています。これらの FPO レンディションは、ファイルサイズは小さいですが、縦横比は同じです。
+### カスタムプロファイルの作成 {#create-custom-profile}
 
-処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、Adobe Asset Link の[ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
+カスタムプロファイルを作成するには、次の手順に従います。
 
-## アセットマイクロサービスを使用したアセットの処理 {#use-asset-microservices}
+1. 管理者は、 **[!UICONTROL ツール/アセット/処理プロファイルにアクセスします]**。 「**[!UICONTROL 作成]**」をクリックします。
+1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. レンディションの目的のファイル名を指定します。
+1. 次の情報を入力し、「 **[!UICONTROL 保存]**」をクリックします。
+
+   * 各レンディションのファイル名と、サポートされているファイル拡張子。
+   * FireflyカスタムアプリのエンドポイントURL。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
+   * 必要に応じて、追加サービスパラメーターを設定します。
+   * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
+
+![カスタム処理プロファイル](assets/custom-processing-profile.png)
+
+>[!CAUTION]
+>
+>Fireflyアプリと [!DNL Experience Manager] アカウントが同じ組織に属していない場合、統合は機能しません。
+
+## 処理プロファイルを使用したアセットの処理 {#use-profiles}
 
 追加のカスタム処理プロファイルを作成し、Experience Manager の特定のフォルダーに適用して、これらのフォルダーにアップロードまたは更新されたアセットを処理します。デフォルトの組み込み標準処理プロファイルは常に実行されますが、ユーザーインターフェイスには表示されません。カスタムアセットを追加する場合、プロファイルされたアセットは両方のプロファイルを使用して処理されます。
 
