@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.5.0 のリリースノート
 description: Experience Manager 2020.5.0 のリリースノート
-translation-type: ht
-source-git-commit: 06a56b0ca8000a41fe4e492206459b1525aae59d
-workflow-type: ht
-source-wordcount: '374'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 96%
 
 ---
 
 
 # AEM as a Cloud Service 2020.5.0 のリリースノート {#release-notes}
 
-Experience Manager as a Cloud Service 2020.5.0 の一般的なリリースノートの概要を次に説明します。
+このページでは、Experience Manager向けの一般的なリリースノートをCloud Service2020.5.0として概説しています。
 
 ## リリース日 {#release-date}
 
