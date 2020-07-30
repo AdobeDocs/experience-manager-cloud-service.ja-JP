@@ -2,11 +2,11 @@
 title: AEM Assets Cloud Service と Brand Portal の連携の設定
 description: AEM Assets Cloud Service と Brand Portal の連携の設定について説明します。
 contentOwner: Vishabh Gupta
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1762'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Adobe 開発者コンソールで、プロジェクトと API を組織（Brand 
 
    ![製品プロファイルを選択](assets/service-account4.png)
 
-1. API が設定されている場合は、API の概要にリダイレクトされます。左側のナビゲーションツリーで「**[!UICONTROL 資格情報]**」の下の「**[!UICONTROL サービスアカウント (JWT)]**」をクリックします。
+1. API が設定されている場合は、API の概要にリダイレクトされます。左側のナビゲーションツリーで「**[!UICONTROL 資格情報]**」の下の「**[!UICONTROL サービスアカウント（JWT）]**」をクリックします。
 
    >[!NOTE]
    >
@@ -314,7 +314,7 @@ AEM Assets クラウドインスタンスが Brand Portal で正常に設定さ�
 
 例えば、AEM Assets から Brand Portal にアセットを発行し、設定を検証したとします。
 
-1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. [設定のテスト](#test-configuration)節で示した手順（1～4）に従い、配布エージェントページに移動します。
 
 1. 「**[!UICONTROL ログ]**」をクリックして、配布ログを表示します。処理ログとエラーログは、ここで確認できます。
 
