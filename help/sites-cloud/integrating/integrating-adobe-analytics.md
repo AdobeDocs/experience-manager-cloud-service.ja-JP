@@ -2,7 +2,7 @@
 title: Adobe Analytics との統合
 description: 'Adobe Analytics との統合 '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 15%
@@ -27,7 +27,7 @@ AEMの以前のバージョンと比較すると、AEMのAnalytics設定ではCl
 
 1. Navigate to **Tools** → **Cloud Services**.
 2. Select **Adobe Analytics Configurations**.
-   ![Analytics](assets/analytics_screen.png "WindowAnalyticsウィンドウ")
+   ![Analytics](assets/analytics_screen1.png "WindowAnalyticsウィンドウ")
 3. Select the **Create** button.
 4. 詳細（以下を参照）を入力し、「 **接続**」をクリックします。
 
@@ -35,7 +35,7 @@ AEMの以前のバージョンと比較すると、AEMのAnalytics設定ではCl
 
 「Adobe Analytics設定」(Configuration)ウィンドウの設定フィールドは次のとおりです。
 
-![設定](assets/properties_field.png "パラメータ設定パラメータ")
+![設定](assets/properties_field1.png "パラメータ設定パラメータ")
 
 | プロパティ | 説明 |
 |---|---|
