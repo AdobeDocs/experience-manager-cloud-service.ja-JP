@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2691'
+ht-degree: 100%
 
 ---
 
@@ -388,7 +388,7 @@ config.dev
 
 **例 3**
 
-OSGi プロパティ `my_var1` の値をステージング、実稼働、および開発環境の 1 つで 同じ値、他の 2 つの開発環境では異なる値にします。この場合、Cloud Manager API を呼び出して各開発環境の値 `my_var1` を設定する必要があります。この値は、ステージングと実稼働と同じ値にする必要がある開発環境も含みます。フォルダー **config** に設定された値は継承されません。
+OSGi プロパティ `my_var1` の値をステージング、実稼働、1 つの開発環境で同じ値、他の 2 つの開発環境では異なる値にします。この場合、Cloud Manager API を呼び出して各開発環境の値 `my_var1` を設定する必要があります。この値は、ステージングと実稼働と同じ値にする必要がある開発環境も含みます。フォルダー **config** に設定された値は継承されません。
 
 <table>
 <tr>
@@ -545,7 +545,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 ### 変数の数 {#number-of-variables}
 
-1つの環境につき最大200個の変数を宣言できます。
+1 つの環境につき最大 200 個の変数を宣言できます。
 
 ## シークレットおよび環境固有の設定値のデプロイメントに関する考慮事項 {#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
