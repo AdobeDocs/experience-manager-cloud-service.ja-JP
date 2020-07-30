@@ -2,7 +2,7 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
+source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 9%
@@ -26,12 +26,12 @@ Adobeの起動は、AEMページ（JSライブラリ/タグ）のAnalyticsとTar
 ## Adobe Target設定の作成 {#create-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-   ![](assets/cloudservice.png "NavigationNavigation")
+   ![](assets/cloudservice1.png "NavigationNavigation")
 2. 「 **Adobe Target**」を選択します。
 3. Select the **Create** button.
-   ![](assets/tenant.png "CreateCreate")
+   ![](assets/tenant1.png "CreateCreate")
 4. 詳細（以下を参照）を入力し、「 **接続**」を選択します。
-   ![](assets/open_screen.png "ConnectConnect")
+   ![](assets/open_screen1.png "ConnectConnect")
 
 ### IMS 設定
 
@@ -44,7 +44,7 @@ Target設定を編集するには、次の手順に従います。
 1. 既存の設定を選択し、「 **プロパティ**」をクリックします。
 2. プロパティを編集します。
 3. Select **Re-connect to Adobe Target**.
-   ![再接続](assets/edit_config_page.png "再接続")
+   ![再接続](assets/edit_config_page1.png "再接続")
 4. 「**保存して閉じる**」を選択します。
 
 ### サイトへの設定の追加 {#add-configuration}
@@ -75,7 +75,7 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 2. プロパティの名前を指定します。
 3. ドメインに応じて、起動ライブラリを読み込むIP/ホストを入力します。
 4. Select the **Save** button.
-   ![LaunchpropertyLaunchproperty](assets/properties_newproperty.png "")
+   ![LaunchpropertyLaunchproperty](assets/properties_newproperty1.png "")
 
 ### 必要な拡張子の追加 {#add-extension}
 
@@ -83,10 +83,10 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターでTargetを検索します。
 2. 「 **Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
-   ![Target](assets/search_ext.png "SearchTarget検索")
+   ![Target](assets/search_ext1.png "SearchTarget検索")
 3. Select the **Configure** button. 設定ウィンドウに、読み込まれたTargetアカウントの資格情報と、この拡張のat.jsバージョンが表示されます。
 4. 「 **保存** 」を選択して、ターゲット式を起動プロパティに追加します。 「 **インストール済みの拡張機能** 」リストの下にターゲット式が表示されます。
-   ![Save](assets/configure_extension.png "ExtensionSave Extension")
+   ![Save](assets/configure_extension1.png "ExtensionSave Extension")
 5. 上記の手順を繰り返して、 **AdobeContextHub** 拡張機能を検索してインストールします（これは、どのターゲット設定に基づいてcontexthubパラメーターとの統合に必要です）。
 
 ### データ要素の作成 {#data-element}
@@ -97,16 +97,16 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 2. 「 **追加データ要素**」を選択します。
 3. データ要素の名前を指定し、コンテキストハブパラメーターにマップします。
 4. select **Save**.
-   ![Data](assets/data_elem.png "ElementData要素")
+   ![Data](assets/data_elem1.png "ElementData要素")
 
 ### ページルールの作成 {#page-rule}
 
 ル **ール** (Rule)では、サイトで実行される一連のアクションを定義し、順序を付けて、ターゲティングを達成します。
 
 1. スクリ追加ーンショットに示す一連のアクション。
-   ![](assets/rules.png "ActionsActions")
+   ![](assets/rules1.png "ActionsActions")
 2. 「す追加べてのmboxに対するパラメーター」で、前に設定したデータ要素（前述のデータ要素を参照）を、mbox呼び出しで送信されるパラメーターに追加します。
-   ![](assets/map_data.png "MboxActions")
+   ![](assets/map_data1.png "MboxActions")
 
 ### 構築と公開 {#build-publish}
 
