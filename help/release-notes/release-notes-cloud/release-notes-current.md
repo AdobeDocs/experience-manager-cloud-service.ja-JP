@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして参照してください。'
 translation-type: tm+mt
-source-git-commit: 5103d54bcb71d6c78894a30edafccf288a51368f
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 41%
+source-wordcount: '918'
+ht-degree: 40%
 
 ---
 
@@ -51,15 +51,15 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 新機能 {#what-is-new-core-components}
 
-[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)のリリース 2.11.0 は、AEM Sites の一部として使用できるようになり、以下が含まれます。
+Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
 
-* 新しい [PDF Viewerコンポーネントの紹介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)
+* 新しい [PDF Viewerコンポーネントの紹介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
 
-* [Accelerated Mobile Pages(AMP)のコアコンポーネントのサポートは](https://docs.adobe.com/content/help/en/experience-manager-core-components/developing/amp.html) 、Googleモバイル検索結果からサイトに入るときにページトランジションを瞬時に行うので、ユーザーエンゲージメントとSEOを向上させ、より高速な顧客体験を作成するのに役立ちます。
+* コアコンポーネントのAccelerated Mobile Pages(AMP)のサポートは、Googleモバイル検索結果からサイトに入るときにページトランジションを瞬時に作成するので、ユーザーエンゲージメントとSEOが向上し、より高速な顧客体験を作成できます。
 
-* バージョン1.0.2の [Adobeクライアントデータレイヤーとの互換性](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* Adobeクライアントデータレイヤーのバージョン1.0.2との互換性 [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
 
-* バグ修正とコード品質の改善
+* バグの修正とコードの質の改善。
 
 ## Cloud Manager {#cloud-manager}
 
