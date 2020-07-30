@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ AEM バージョンのアップデートは、常に、カスタムコードの�
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=jpn)
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
@@ -153,7 +153,7 @@ Cloud Manager がアプリケーションをデプロイすると、コンテン
 
 repoinit ステートメントを作成するには、次の手順に従います。
 
-1. Add OSGi configuration for factory PID `org.apache.sling.jcr.repoinit.RepositoryInitializer` in a configuration folder of the project. 設定には、 **org.apache.sling.jcr.repoint.RepositoryInitializer～initstructureなど、わかりやすい名前を付けます**。
+1. ファクトリ PID の OSGi 設定 `org.apache.sling.jcr.repoinit.RepositoryInitializer` をプロジェクトの設定フォルダーに追加します。設定には、**org.apache.sling.jcr.repoint.RepositoryInitializer～initstructure** など、わかりやすい名前を付けます。
 1. 設定のスクリプトプロパティに repoinit ステートメントを追加します。構文とオプションについては、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/repository-initialization.html)を参照してください。なお、子フォルダーの前に親フォルダーを明示的に作成する必要があります。例えば、`/content` を明示的に作成してから `/content/myfolder` を作成し、その後に `/content/myfolder/mysubfolder` を作成します。ACL を下位レベルの構造に設定する場合は、ACL を上位レベルに設定し、`rep:glob` 制限を適用することをお勧めします。例えば、`(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))` のように指定します。
 1. 実行時にローカル開発環境で検証します。
 
