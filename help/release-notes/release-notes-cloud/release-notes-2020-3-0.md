@@ -2,18 +2,17 @@
 title: リリースノート（2020.3.0）
 description: リリースノート（2020.3.0）
 translation-type: tm+mt
-source-git-commit: 27225bf4b918f39892ac9ab6f46deb97479f08e8
+source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '245'
+ht-degree: 94%
 
 ---
 
 
 # AEM as a Cloud Service 2020.3.0 のリリースノート {#release-notes}
 
-Experience Manager as a Cloud Service 2020.3.0 の一般的なリリースノートの概要を次に説明します。
-
+このページでは、Experience Manager向けの一般的なリリースノートをCloud Service2020.3.0として概説しています。
 
 ## リリース日 {#release-date}
 
