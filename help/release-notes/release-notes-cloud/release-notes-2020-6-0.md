@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d25129d8e2ad5f1501aec3b8491f6327b91fcc53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示しない。これを解決するには、開発者コンソールで、url の末尾にパターン `#release-cm-p1234-e5678` を追加します。ここで、*1234* はプログラム ID、*5678* は環境 ID です。この問題は、今後のリリースで修正される予定です。
 
-##  [!DNL Adobe Experience Manager Assets] の新機能 {#aem-assets}
+## [!DNL Adobe Experience Manager Assets] の新機能 {#aem-assets}
 
 **拡張スマートタグに関するガイド付きユーザーエクスペリエンス（Adobe Sensei 搭載）**
 
@@ -190,4 +190,4 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 * アセットのダウンロード時に、電子メールオプションが選択されていて、有効な電子メール ID が指定されている場合でも、ダウンロードオプションが使用できない。（CQ-4296535）
 * スマートコレクションとして保存されたカスタムフィルターが、アセットに正しく適用されない。（CQ-4294942）
 * 検索とインデックス作成に関する複数の機能強化と、パフォーマンス向上のためのバグ修正。（CQ-4286373）
-* フォルダーのプロパティに500内部サーバーエラーが表示される。 （CQ-4295701）
+* フォルダーのプロパティに 500 内部サーバーエラーが表示される。（CQ-4295701）
