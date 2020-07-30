@@ -1,18 +1,18 @@
 ---
 title: コンテンツフラグメントの操作
-description: Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
+description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 translation-type: tm+mt
 source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # コンテンツフラグメントの操作{#working-with-content-fragments}
 
-[Adobe Experience Manager (AEM) as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
+[Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
@@ -72,7 +72,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >[!NOTE]
 >
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**は、AEM 内の異なる機能です。
->* **コンテンツフラグメント** は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。 これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されません。
+>* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
 
 >
@@ -247,9 +247,9 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * [フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
    * コンテンツモデル定義にはタイトルと 1 つのデータ要素が必要です。その他すべてはオプションです。
-   * モデルは、デフォルトコンテンツを定義できます（該当する場合）。
+   * モデルでは、デフォルトコンテンツを定義できます（該当する場合）。
    * 作成者は、フラグメントコンテンツのオーサリング時に、定義された構造を変更することはできません。
-   * 依存コンテンツフラグメントの作成後にモデルに対して行った変更は、これらのコンテンツフラグメントに影響を与える可能性があります。
+   * 依存コンテンツフラグメントの作成後にモデルに対しておこなった変更は、これらのコンテンツフラグメントに影響を与える可能性があります。
 
 * **コンテンツフラグメントコンポーネント**
 
