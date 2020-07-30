@@ -2,9 +2,9 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 8063a41d079b8b959b903aa0f97068a42a22d840
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '857'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ Adobe Marketing Cloud に含まれている Adobe Target を使用すると、�
 * タッチUIを使用して、AEMでCloud ServiceとしてAnalytics設定を作成する（IMS設定が必要）。
 * 「 [Adobeの起動」の拡張機能としてAdobe Analyticsを追加し、設定する方法について説明します](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
-「エクスペリエンスのターゲット設定」では、Launchとの統合が必要です。 エクスペリエンスフラグメントをTargetに書き出す場合は、Adobe Target設定とIMSのみが必要です。
+Adobeの起動は、AEMページ（JSライブラリ/タグ）のAnalyticsとTargetの両方のクライアント側プロパティを管理するために必要です。 ただし、「エクスペリエンスのターゲット設定」には、Launchとの統合が必要です。 エクスペリエンスフラグメントをTargetに書き出す場合は、Adobe Target設定とIMSのみが必要です。
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Adobe Marketing Cloud に含まれている Adobe Target を使用すると、�
 1. Navigate to **Tools** → **Cloud Services**.
    ![](assets/cloudservice.png "NavigationNavigation")
 2. 「 **Adobe Target**」を選択します。
-3. Click the **Create** button.
+3. Select the **Create** button.
    ![](assets/tenant.png "CreateCreate")
 4. 詳細（以下を参照）を入力し、「 **接続**」を選択します。
    ![](assets/open_screen.png "ConnectConnect")
@@ -59,10 +59,6 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 >
 >既存の（レガシー）フレームワークは引き続き機能しますが、タッチ操作対応UIでは設定できません。 「起動」で変数マッピング設定を再構築することをお勧めします。
 
->[!NOTE]
->
->既存の（レガシー）フレームワークは引き続き機能しますが、タッチ操作対応UIでは設定できません。 「起動」で変数マッピング設定を再構築することをお勧めします。
-
 一般的な概要として、統合手順は次のとおりです。
 
 1. 起動プロパティの作成
@@ -83,7 +79,7 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 
 ### 必要な拡張子の追加 {#add-extension}
 
-拡張機能は、コアライブラリ設定を管理するコンテナです。 Adobe Target拡張機能は、最新のWeb用のTargetJavaScript SDKを使用したat.jsのクライアント側実装をサポートします。 **Adobe Targetと** AdobeのContextHub **** 拡張を追加する必要があります。
+**拡張機能** は、コアライブラリ設定を管理するコンテナです。 Adobe Target拡張機能は、最新のWeb用のTargetJavaScript SDKを使用したat.jsによるクライアント側実装をサポートします。 **Adobe Targetと** AdobeのContextHub **** 拡張を追加する必要があります。
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターでTargetを検索します。
 2. 「 **Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
@@ -95,7 +91,7 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 
 ### データ要素の作成 {#data-element}
 
-データ要素は、コンテキストハブのパラメーターをマップできるプレースホルダーです。
+**データ要素** は、コンテキストハブパラメーターをマップできるプレースホルダーです。
 
 1. 「 **データ要素**」を選択します。
 2. 「 **追加データ要素**」を選択します。
@@ -105,7 +101,7 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 
 ### ページルールの作成 {#page-rule}
 
-ルールでは、ターゲット設定を達成するために、一連のアクション（サイトで実行される）を定義し、順序を付けます。
+ル **ール** (Rule)では、サイトで実行される一連のアクションを定義し、順序を付けて、ターゲティングを達成します。
 
 1. スクリ追加ーンショットに示す一連のアクション。
    ![](assets/rules.png "ActionsActions")
