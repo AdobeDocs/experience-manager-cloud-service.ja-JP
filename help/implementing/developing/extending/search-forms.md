@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '2030'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # 検索フォームの設定 {#configuring-search-forms}
 
-Adobe Experience Manager as a Cloud Service.には、強力な[検索](/help/sites-cloud/authoring/getting-started/search.md)メカニズムが付属しています。
+Adobe Experience Manager as a Cloud Service には、強力な[検索](/help/sites-cloud/authoring/getting-started/search.md)メカニズムが付属しています。
 
 これと組み合わせて、コンテンツのフィルタリングに役立つ定義済みのオプションセットもあります。オプションには、**変更日**、**公開ステータス**、**ライブコピーのステータス**&#x200B;などの事前定義されたファセットが含まれており、必要なリソースをすばやく掘り下げることができます。
 
@@ -547,8 +547,9 @@ Adobe Experience Manager as a Cloud Service.には、強力な[検索](/help/sit
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Optionsノードのパス**。 
-**オプションパス**。共通の述語フィールドにのみ存在し、もう1つはアセットに固有です。
+* **オプションノードのパス**
+実質的に 
+**オプションパス**&#x200B;と同じ。前者は共通の述語フィールドにのみ存在し、後者はアセットに固有です。
 
 * **単一の選択**&#x200B;オンにすると、オプションは単一の選択のみを許可するチェックボックスとしてレンダリングされます。チェックボックスを誤って選択した場合は、選択を解除できます。
 
