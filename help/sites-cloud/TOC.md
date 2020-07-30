@@ -3,7 +3,7 @@ sub-product: AEM as a Cloud Service のコンテンツのオーサリング
 user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
+source-git-commit: ec747361935b94a729cdd5b6712aee6d3ce1b8a2
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -73,5 +73,5 @@ ht-degree: 100%
       + [オファーの作成と管理](authoring/personalization/offers.md)
       + [セグメント化について](authoring/personalization/segmentation.md)
 + AEM as a Cloud Service との統合{#integrations}
-   + [Adobe Analytics との統合](integrating/adobe-analytics.md)
-   + [Adobe Target との統合](integrating/adobe-target.md)
+   + [Adobe Analytics との統合](integrating/integrating-adobe-analytics.md)
+   + [Adobe Target との統合](integrating/integrating-adobe-target.md)
