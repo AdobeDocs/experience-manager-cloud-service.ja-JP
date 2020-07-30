@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして参照してください。'
 translation-type: tm+mt
-source-git-commit: ffde99214fecb151408500c6ba315f55aa28e57d
+source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 39%
+source-wordcount: '968'
+ht-degree: 38%
 
 ---
 
@@ -26,7 +26,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 新しいユーザーインターフェイスの実装は、クラシックUIに基づく実装に代わるものです。
 
-* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成はに残り [!DNL Adobe Launch]ます。
+* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成はに残り [!DNL Adobe Launch]ます。 「 [Adobe Analyticsの統合](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 」および「Adobe Targetの [統合」を参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
 * 設定は、Experience Managerリポジトリではなく、に保存され `/conf` るよう `/etc/cloudsettings` になりました。
 
