@@ -14,7 +14,7 @@ ht-degree: 77%
 
 [!DNL Adobe Experience Manager] は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
 
-アップロード方法は多数用意されています。最も一般的に使用されるブラウザーのアップロードに加えて、Adobe Asset LinkやExperience Managerデスクトップアプリなどのデスクトップクライアント、作成するアップロードおよび取り込みスクリプト、Experience Manager拡張子として追加される自動取り込み統合など、Experience Managerリポジトリにアセットを追加する方法もあります。
+アップロード方法は多数用意されています。最も一般的に使用されるブラウザーのアップロードに加えて、Experience Managerリポジトリにアセットを追加する方法は他にもあります。例えば、AdobeアセットリンクやExperience Managerデスクトップアプリ、アップロードや取り込みスクリプト、Experience Manager拡張子として追加される自動取り込みの統合です。
 
 ここでは、エンドユーザー向けのアップロード方法に焦点を当て、Adobe Experience Manager API および SDK を使用したアセットアップロードおよび取り込みの技術的側面について説明する記事へのリンクを示します。
 
@@ -24,7 +24,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。デフォルトでは、Experience Managerユーザーインターフェイス、Adobe Asset Link、Experience Managerデスクトップアプリケーションなど、初期設定の製品機能とクライアントによってサポートされ、エンドユーザーに対して透過的です。
+>Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。デフォルトでは、Experience Managerユーザーインターフェイス、Adobeアセットリンク、Experience Managerデスクトップアプリなど、初期設定の製品機能とクライアントによってサポートされ、エンドユーザーに対して透過的です。
 >
 >ユーザー側の技術チームでカスタマイズまたは拡張されるアップロードコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
