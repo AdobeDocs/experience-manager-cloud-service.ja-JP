@@ -1,11 +1,11 @@
 ---
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -72,12 +72,12 @@ ht-degree: 80%
 ![](assets/update-environ-1.png)
 
 
-「 **更新** 」オプションは、 **環境** ・カードから利用できます。
-This option is also available, if you click on **Details** from the **Environments** card. [ **環境** ]ページが開き、[開発]環境を選択したら、[ **...** ]をクリックして[ **更新**]を選択します。次の図を参照してください。
+「**更新**」オプションは、**環境**カードから利用できます。
+このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合にも使用できます。**環境**&#x200B;ページが開き、「開発」環境を選択したら、「**....**」をクリックして「**更新**」を選択します。次の図を参照してください。
 
 ![](assets/environments-screen-update.png)
 
-このオプションを選択すると、Deployment Managerでこの環境に関連付けられているパイプラインを最新のリリースに更新し、パイプラインを実行できます。
+これを選択すると、この環境に関連付けられているパイプラインをデプロイメントマネージャーで最新のリリースに更新してから実行できます。
 
 パイプラインが既に更新されている場合は、パイプラインの実行を求めるプロンプトが表示されます。
 
@@ -85,11 +85,11 @@ This option is also available, if you click on **Details** from the **Environmen
 
 必要な権限を持つユーザーは、開発環境を削除できます。
 
-**環境**&#x200B;カードのドロップダウンメニューから「**削除**」オプションを使用できます。削除する開発環境 **の場合は** 、[...]をクリックします。
+**環境**&#x200B;カードのドロップダウンメニューから「**削除**」オプションを使用できます。削除する開発環境の「**...**」をクリックします。
 
 ![](assets/environ-delete.png)
 
-環境カードの「 **詳細** 」をクリックした場合も、削除オプションを使用でき **** ます。 [ **環境** ]ページが開き、[開発]環境を選択したら、[ **...** ]をクリックして[ **削除**]を選択します。次の図を参照してください。
+**環境**&#x200B;カードの「**詳細**」をクリックした場合も、削除オプションを使用できます。**環境**&#x200B;ページが開き、「開発」環境を選択したら、「**...**」をクリックして「**削除**」を選択します。次の図を参照してください。
 
 ![](assets/environ-delete-2.png)
 
@@ -108,5 +108,5 @@ This option is also available, if you click on **Details** from the **Environmen
 
 ![](assets/environ-dev-console.png)
 
-This option is also available, if you click on **Details** from the **Environments** card. 「 **環境** 」ページが開き、環境を選択したら、「 **...」をクリックし** 、「 **Developer Console**」を選択します。
+このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合にも使用できます。**環境**&#x200B;ページが開きます。環境を選択したら、「**...**」をクリックし、「**開発者コンソール**」を選択します。
 
