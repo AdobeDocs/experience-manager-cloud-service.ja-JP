@@ -1,11 +1,11 @@
 ---
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1582'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 * コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
 
-* *サンドボックス環境*&#x200B;を使用している場合は、環境が 2020 年 6 月 10 日以降のリリースにアップグレードされていることを確認してください。*実稼働環境*&#x200B;を使用している場合、環境は自動的に更新されます。
+* *サンドボックス環境*&#x200B;を使用している場合は、環境が 2020 年 6 月 10 日以降のリリースにアップグレードされていることを確認してください。*実稼動環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
 * コンテンツ転送ツールを使用するには、ソースインスタンスの管理者ユーザーで、コンテンツの転送先の Cloud Service インスタンスの AEM 管理者グループに属している必要があります。権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
 
@@ -33,11 +33,11 @@ ht-degree: 99%
 コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイル（コンテンツ転送ツール v1.0.0）としてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
->Download the Content Transfer Tool, from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) portal.
+>[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=jpn)
 
 この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。
 
@@ -65,7 +65,7 @@ ht-degree: 99%
 
       >[!NOTE]
       >コンテンツ転送をおこなう際は、一度に最大 4 つの移行セットを作成し維持管理できます。
-      >さらに、特定の環境（*ステージング*、*開発*、*実稼働*&#x200B;のいずれか）ごとに個別に移行セットを作成する必要があります。
+      >さらに、特定の環境（*ステージング*、*開発*、*実稼動*&#x200B;のいずれか）ごとに個別に移行セットを作成する必要があります。
 
    1. **アクセストークン**：アクセストークンを入力します。
 
@@ -238,7 +238,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->`--verbose`フラグが必要なのは、BLOB の参照元ノードのパスを報告するためです。
+>`--verbose` フラグが必要なのは、BLOB の参照元ノードのパスを報告するためです。
 
 **AEM 6.5（Oak 1.8 以前）のリポジトリの場合**
 
