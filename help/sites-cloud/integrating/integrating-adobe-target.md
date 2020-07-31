@@ -2,7 +2,7 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 Adobe Marketing Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルにわたってターゲット設定と測定をおこない、コンテンツの関連性を高めることができます。Adobe TargetとAEMをCloud Serviceとして統合するには、次の作業が必要です。
 
 * タッチUIを使用して、AEMでCloud ServiceとしてAnalytics設定を作成する（IMS設定が必要）。
-* 「 [Adobeの起動」の拡張機能としてAdobe Analyticsを追加し、設定する方法について説明します](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* 「 [Adobeの起動」で、Adobe Targetを拡張機能として追加し、設定します](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 Adobeの起動は、AEMページ（JSライブラリ/タグ）のAnalyticsとTargetの両方のクライアント側プロパティを管理するために必要です。 ただし、「エクスペリエンスのターゲット設定」には、Launchとの統合が必要です。 エクスペリエンスフラグメントをTargetに書き出す場合は、Adobe Target設定とIMSのみが必要です。
 
