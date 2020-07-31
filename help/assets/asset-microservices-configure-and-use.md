@@ -3,10 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 253231d2c9bafbba72696db36e9ed46b8011c9b3
+source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 57%
+source-wordcount: '2208'
+ht-degree: 58%
 
 ---
 
@@ -92,7 +92,7 @@ Experience Managerでは、次のレベルの処理が可能です。
    * 各JPEGレンディションの画質(%)。
    * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
-![processing-profiles-adding](assets/processing-profiles-adding.png)
+   ![processing-profiles-adding](assets/processing-profiles-adding.png)
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -106,23 +106,22 @@ Experience Managerでは、次のレベルの処理が可能です。
 
 ## カスタムプロファイルと使用例 {#custom-config}
 
-**未定項目**:
+<!-- **TBD items**:
 
-* 拡張性コンテンツを使用した全体的なクロスリンク。
-* 作業者のURLの取得方法について説明します。 開発、ステージ、および実稼動環境のワーカーURL
-* サービスパラメーターのメンションマッピング。 サービス記事を計算するためのリンクです。
-* Jiraチケットで共有されるフローの観点から確認します。
+* Overall cross-linking with the extensibility content.
+* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention mapping of service parameters. Link to compute service article.
+* Review from flow perspective shared in Jira ticket.
+-->
 
 組織のニーズが異なるため、複雑なアセット処理の使用例の中には、デフォルト設定を使用して実行できないものもあります。 このような場合 [!DNL Asset Compute Service] のAdobeオファー。 これは、デジタルアセットを処理するためのスケーラブルで拡張可能なサービスです。 画像、ビデオ、ドキュメント、その他のファイル形式を、サムネール、抽出したテキスト、メタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、Asset Compute Serviceを使用して、事前定義済みの複雑な使用例に対応する特殊なカスタムワーカーを作成できます。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、次の使用例をサポートしています。
+開発者は、Asset Compute Serviceを使用して、事前定義済みの複雑な使用例に対応する特殊なカスタムワーカーを作成できます。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
-* Adobe Senseiを使用して、デジタルアセット用に拡張されたカスタムスマートタグを生成します。
-* Adobe Senseiを使用して、被写体の切り抜きマスクを生成します。
-* PIMシステムから製品メタデータ情報を取得し、アセットの取り込み中に、メタデータをバイナリアセットの一部にします。
-* APIを使用して、透明画像の背景色を変更し [!DNL Adobe Photoshop] ます。
-* APIを使用して画像をリタッチし [!DNL Photoshop] ます。
-* APIを使用して画像をまっすぐにし [!DNL Adobe Lightroom] ます。
+* Image cutout API [!DNL Adobe Photoshop] を呼び出して、結果をレンディションとして保存します。
+* サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
+* APIを使用して、Photoshopテンプレートに基づいて様々なレンディションを生成します。 [!DNL Photoshop]
+* APIを使用して、取り込んだアセットを最適化し、レンディションとして保存します。 [!DNL Adobe Lightroom]
 
 >[!NOTE]
 >
@@ -216,3 +215,4 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 ## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 
 * ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。[!DNL Experience Manager] を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
+* 現在、サポートされるレンディションはレンディションの生成に限られています。 新しいアセットの生成はサポートされていません。
