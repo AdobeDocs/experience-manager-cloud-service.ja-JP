@@ -2,9 +2,9 @@
 title: Adobe Analytics との統合
 description: 'Adobe Analytics との統合 '
 translation-type: tm+mt
-source-git-commit: f2ed74afd2df43e31ff1002cd42a60f372d0b769
+source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '530'
 ht-degree: 15%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 15%
 
 Adobe AnalyticsとAEMをCloud Serviceとして統合すると、Webページのアクティビティを追跡できます。 統合には次の要件が必要です。
 
-* タッチUIを使用して、AEMでCloud ServiceとしてAnalytics設定を作成します。
-* 「 [Adobeの起動」の拡張機能としてAdobe Analyticsを追加し、設定する方法について説明します]。(https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* タッチUIを使用して、AEMでCloud ServiceとしてAnalytics設定を作成する。
+* 「 [Adobeの起動」の拡張機能としてAdobe Analyticsを追加し、設定する方法について説明します](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
 AEMの以前のバージョンと比較すると、AEMのAnalytics設定ではCloud Serviceとしてフレームワークのサポートが提供されていません。 代わりに、現在はAdobeの起動を通じて行われます。これは、AEMサイトにAnalytics機能（JSライブラリ）を実装するデファクトツールです。 Adobeの起動では、Adobe Analyticsの拡張を設定できるプロパティが作成され、Adobe Analyticsにデータを送信するルールが作成されます。 Adobeの開始は、sitecatalystが提供する解析のタスクに代わるものです。
 
@@ -23,11 +23,11 @@ AEMの以前のバージョンと比較すると、AEMのAnalytics設定ではCl
 >
 >既存の Analytics アカウントを持たない Adobe Experience Manager as a Cloud Service ユーザーは、Experience Cloud 用の Analytics Foundation パックへのアクセスをリクエストできます。この Foundation パックでは、Analytics の使用量が制限されます。
 
-## Analytics設定の作成 {#analytics-configuration}
+## Adobe Analytics設定の作成 {#analytics-configuration}
 
 1. Navigate to **Tools** → **Cloud Services**.
-2. Select **Adobe Analytics Configurations**.
-   ![Analytics](assets/analytics_screen1.png "WindowAnalyticsウィンドウ")
+2. Select **Adobe Analytics**.
+   ![Adobe Analytics](assets/analytics_screen2.png "ウィンドウアドビAnalyticsウィンドウ")
 3. Select the **Create** button.
 4. 詳細（以下を参照）を入力し、「 **接続**」をクリックします。
 
