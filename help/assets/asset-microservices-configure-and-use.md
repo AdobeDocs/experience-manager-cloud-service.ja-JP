@@ -3,10 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f5ebd1ae28336e63d8f3a89d7519cf74b46a3bfd
+source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
 workflow-type: tm+mt
-source-wordcount: '2208'
-ht-degree: 58%
+source-wordcount: '2405'
+ht-degree: 47%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 58%
 
 アセットマイクロサービスは、クラウドサービスを使用して、アセットの拡張性と回復性に優れた処理を実現します。 アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
-アセット処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に依存してします。処理プロファイルには、デフォルトの設定が用意されていますが、管理者がより具体的なアセット処理設定を追加することもできます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズでは、拡張機能と完全なカスタマイズが可能です。
+Asset processing depends on the configuration in **[!UICONTROL Processing Profiles]**, which provide a default set up, and let an administrator to add more specific asset processing configuration. 管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズでは、拡張機能と完全なカスタマイズが可能です。
 
-アセットマイクロサービスを使用すると、以前のバージョンの Experience Manager よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。
+Asset microservices lets you process a [broad range of file types](/help/assets/file-format-support.md) covering more formats out-of-the-box than what is possible with previous versions of Experience Manager. 例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。
 
 <!-- Proposed DRAFT diagram for asset microservices flow - see section "asset-microservices-flow.png (asset-microservices-configure-and-use.md)" in the PPTX deck
 
@@ -44,17 +44,18 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 Experience Managerでは、次のレベルの処理が可能です。
 
-| 設定 | 説明 | 対象となる使用例 |
+| オプション | 説明 | 対象となる使用例 |
 |---|---|---|
-| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | ユーザーインターフェイスで使用される [!DNL Assets] 標準のサムネール（48、140および319 px） 大きいプレビュー（Webレンディション — 1280 px）; メタデータとテキストの抽出。 |
-| [標準設定](#standard-config) | ユーザーインターフェイス経由の管理者のみが設定します。 上記のデフォルト設定よりも、レンディションの生成に関する多くのオプションを提供します。 | 画像の形式と解像度の変更、 FPOレンディションを生成します。 |
-| [カスタム設定](#custom-config) | より複雑な要件をサポートするカスタムワーカーを呼び出すために、管理者がユーザーインターフェイスを介して設定します。 クラウドネイティブを活用 [!DNL Asset Compute Service]します。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
+| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> 大きなプレビュー（Web レンディション - 1280 px） </li><li> メタデータとテキストの抽出。</li></ul> |
+| [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。 デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。 標準搭載のワーカーを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPOレンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
+| [カスタムプロファイル](#custom-config) | を呼び出す際にカスタムワーカーを介してカスタムコードを使用するように、ユーザーインターフェイス経由で管理者が設定 [!DNL Asset Compute Service]します。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
 
-他のシステムとの統合などのカスタム要件に特化したカスタム処理プロファイルを作成する場合は、[後処理ワークフロー](#post-processing-workflows)を参照してください。
+<!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
+-->
 
 ## サポートされているファイル形式 {#supported-file-formats}
 
-アセットマイクロサービスでは、レンディション生成やメタデータ抽出の機能に関して、様々なファイル形式をサポートしています。そのリストについては、[サポートされているファイル形式](file-format-support.md)を参照してください。
+Asset Microservicesは、メタデータの処理、レンディションの生成、抽出を行うための様々なファイル形式をサポートしています。 MIME型の完全なリストと各型でサポートされる機能については、 [サポートされるファイル形式](file-format-support.md) （英語のみ）を参照してください。
 
 ## デフォルト設定 {#default-config}
 
@@ -65,7 +66,7 @@ Experience Managerでは、次のレベルの処理が可能です。
 <!-- ![processing-profiles-standard](assets/processing-profiles-standard.png)
 -->
 
-## 標準プロファイル {#standard-config}
+## 標準設定 {#standard-config}
 
 [!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。 管理者は、追加の [!UICONTROL 処理プロファイルを作成して] 、そのようなレンディションの作成を容易にできます。 次に、1つ以上の使用可能なプロファイルを特定のフォルダーに割り当て、追加の処理を行います。 例えば、追加の処理でWeb、モバイル、タブレット用のレンディションを生成できるとします。 次のビデオでは、[!UICONTROL 処理プロファイル]の作成および適用方法と、作成したレンディションへのアクセス方法を示しています。
 
@@ -96,11 +97,14 @@ Experience Managerでは、次のレベルの処理が可能です。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
-次のビデオでは、標準プロファイルの有用性と使用方法を示します。
+<!-- TBD: Update the video link when a new video is available from Tech Marketing.
+
+The following video demonstrates the usefulness and usage of standard profile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29832?quality=9)
+-->
 
-<!-- Removed per cqdoc-15624 request by engineering.
+<!-- This image was removed per cqdoc-15624, as requested by engineering.
  ![processing-profiles-list](assets/processing-profiles-list.png) 
  -->
 
@@ -114,14 +118,20 @@ Experience Managerでは、次のレベルの処理が可能です。
 * Review from flow perspective shared in Jira ticket.
 -->
 
-組織のニーズが異なるため、複雑なアセット処理の使用例の中には、デフォルト設定を使用して実行できないものもあります。 このような場合 [!DNL Asset Compute Service] のAdobeオファー。 これは、デジタルアセットを処理するためのスケーラブルで拡張可能なサービスです。 画像、ビデオ、ドキュメント、その他のファイル形式を、サムネール、抽出したテキスト、メタデータ、アーカイブなど、様々なレンディションに変換できます。
+は、デフォルト処理、PhotoshopファイルなどのAdobe固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例を [!DNL Asset Compute Service] サポートしています。 以前に必要だったDAM Update Assetワークフローのカスタマイズは、デフォルトで処理されるか、UIの処理プロファイル設定を介して処理されます。 この処理がビジネスニーズを満たさない場合、Adobeは、Asset Compute Serviceを開発して使用し、デフォルトの機能を拡張することを推奨します。
 
-開発者は、Asset Compute Serviceを使用して、事前定義済みの複雑な使用例に対応する特殊なカスタムワーカーを作成できます。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+>[!NOTE]
+>
+>Adobeでは、デフォルトのプロファイルまたは標準の構成を使用してビジネスを完了する必要がない場合にのみ、カスタムワーカーを使用することをお勧めします。
 
-* Image cutout API [!DNL Adobe Photoshop] を呼び出して、結果をレンディションとして保存します。
+画像、ビデオ、ドキュメント、その他のファイル形式を、サムネール、抽出したテキスト、メタデータ、アーカイブなど、様々なレンディションに変換できます。
+
+開発者は、を使用して、事前定義済みの使用例 [!DNL Asset Compute Service] に対応する、特殊なカスタムワーカーを作成できます。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+
+* のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
 * APIを使用して、Photoshopテンプレートに基づいて様々なレンディションを生成します。 [!DNL Photoshop]
-* APIを使用して、取り込んだアセットを最適化し、レンディションとして保存します。 [!DNL Adobe Lightroom]
+* [AdobeLightroomAPI](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) (API)を使用して、取り込んだアセットを最適化し、レンディションとして保存します。
 
 >[!NOTE]
 >
@@ -133,18 +143,30 @@ Experience Managerでは、次のレベルの処理が可能です。
 
 1. 管理者は、 **[!UICONTROL ツール/アセット/処理プロファイルにアクセスします]**。 「**[!UICONTROL 作成]**」をクリックします。
 1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. レンディションの目的のファイル名を指定します。
-1. 次の情報を入力し、「 **[!UICONTROL 保存]**」をクリックします。
+1. 次の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
    * FireflyカスタムアプリのエンドポイントURL。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
-   * 必要に応じて、追加サービスパラメーターを設定します。
+   * 「追加 [!UICONTROL サービスパラメータ] 」を選択すると、追加の情報やパラメータがカスタムワーカーに渡されます。
    * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
-![カスタム処理プロファイル](assets/custom-processing-profile.png)
+   「**[!UICONTROL 保存]**」をクリックします。
 
 >[!CAUTION]
 >
 >Fireflyアプリと [!DNL Experience Manager] アカウントが同じ組織に属していない場合、統合は機能しません。
+
+### カスタムプロファイルの例 {#custom-profile-example}
+
+カスタムプロファイルの使用方法を説明するために、キャンペーン画像にカスタムテキストを適用する使用例を考えてみましょう。 PhotoshopAPIを利用して画像を編集する処理プロファイルを作成できます。
+
+Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTROL Service Parameters] 」フィールドを使用して、これらのパラメーターをカスタムワーカーに渡すことができます。 次に、カスタムワーカーがPhotoshopAPIを呼び出し、これらの値をAPIに渡します。 例えば、フォント名、テキストカラー、テキスト重み付けおよびテキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
+
+![カスタム処理プロファイル](assets/custom-processing-profile.png)
+
+*図： 「[!UICONTROL サービスパラメータ]」フィールドを使用して、カスタムワーカーに組み込む事前定義済みのパラメータに追加情報を渡します。*
+
+この処理プロファイルが適用されたキャンペーンにフォルダ画像がアップロードされると、その画像はフォントの `Jumanji` テキストで更新され `Arial-BoldMT` ます。
 
 ## 処理プロファイルを使用したアセットの処理 {#use-profiles}
 
@@ -152,7 +174,7 @@ Experience Managerでは、次のレベルの処理が可能です。
 
 次のいずれかの方法を使用して、処理プロファイルをフォルダーに適用します。
 
-* 管理者が、**[!UICONTROL ツール／Assets／処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
+* Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
 * Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 変更を保存するには、「 **[!UICONTROL 保存して閉じる]**」をクリックします。
 
 >[!NOTE]
@@ -165,7 +187,7 @@ Experience Managerでは、次のレベルの処理が可能です。
 >
 >フォルダーに適用した処理プロファイルはツリー全体で機能しますが、サブプロファイルーに適用した別のフォルダーで上書きできます。 アセットがフォルダーにアップロードされると、Adobe Experience Manager は、そのフォルダーのプロパティで処理プロファイルを確認します。何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
 
-ユーザーは、新しくアップロードされ処理が完了したアセットのプレビューを開き、左側のパネルの&#x200B;**[!UICONTROL レンディション]**&#x200B;表示をクリックして、処理が実際におこなわれたかどうかを確認できます。特定のアセットのタイプが MIME タイプ包含ルールと一致する処理プロファイルの特定のレンディションが表示され、アクセス可能になります。
+生成されたすべてのレンディションは、左側のパネルの [!UICONTROL レンディション] 表示で使用できます。 アセットプレビューを開き、左のパネルを開いて **[!UICONTROL レンディション]** 表示にアクセスします。 特定のアセットのタイプが MIME タイプ包含ルールと一致する処理プロファイルの特定のレンディションが表示され、アクセス可能になります。
 
 ![追加レンディション](assets/renditions-additional-renditions.png)
 
