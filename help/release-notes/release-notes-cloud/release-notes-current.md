@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして参照してください。'
 translation-type: tm+mt
-source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
+source-git-commit: 459843adff623395bcf7afb41f427d6ea0fb825c
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 38%
+source-wordcount: '985'
+ht-degree: 37%
 
 ---
 
@@ -43,6 +43,12 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * Cloud Serviceの展開と互換性のないワークフローステップは、 [!UICONTROL ワークフローモデル] エディターで警告のマークが付けられるようになりました。 また、Cloud Service環境上で既存のワークフローを実行する場合、互換性のないワークフロー手順はスキップされます。
 
 * Cloud Managerの環境に関連付けられたGitプロジェクトにデプロイされ `/conf/global` たユーザーが作成したワークフローモデルは、に自動的にデプロイされ、Experience Managerで使用で `/var` きます。 顧客が変更した、下位の製品ワークフローモデル `/libs` は、に自動的にはデプロイされません `/var`。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新機能 {#what-is-new-commerce}
+
+* AEMコマースがCloud Serviceで利用できるようになりました。 詳しくは、「はじ [めに](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html)」を参照してください。
 
 ## コアコンポーネント {#core-components}
 
