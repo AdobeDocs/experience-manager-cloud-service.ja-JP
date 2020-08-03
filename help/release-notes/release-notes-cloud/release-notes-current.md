@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして参照してください。'
 translation-type: tm+mt
-source-git-commit: a454bcce2d4db89c0ac8dc27fd187a822bacf7e6
+source-git-commit: af6603725ff42583e01c62eb8e8cf11aaea41437
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '952'
 ht-degree: 38%
 
 ---
@@ -31,9 +31,6 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 * 設定は、Experience Managerリポジトリではなく、に保存され `/conf` るよう `/etc/cloudsettings` になりました。
 
 ## Adobe Experience Manager Assets as a Cloud Service {#assets}
-
->[!NOTE]
->Cloud Service機能としてのAEM Assetsは、今後数日以内に展開されます。
 
 ### 新機能 {#what-is-new-assets}
 
