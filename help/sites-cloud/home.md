@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Sites as a Cloud Service
 description: Adobe Experience Manager Sites as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 85398c51f2ce7931039a9771661c9ba7edb30d08
+source-git-commit: 6c2215cdc83aaaf15e9ef9905805d3da10c1e8f6
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 100%
 | [実装ユーザーガイド](/help/implementing/home.md) | 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
+| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM上のCommerce Integration FrameworkをCloud Serviceとして学習します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
