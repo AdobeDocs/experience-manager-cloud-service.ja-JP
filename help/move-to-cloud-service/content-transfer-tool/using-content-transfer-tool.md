@@ -1,11 +1,11 @@
 ---
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1582'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1a2172a35c3409dd98f4ce93d621762b935d122f
+workflow-type: tm+mt
+source-wordcount: '1616'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 100%
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
 * コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
+
+* コンテンツ転送ツールは、次の種類のデータストアと共に使用できます。 ファイルデータストア、S3データストア、共有S3データストア。 現在、Azure Blob Store Data Storeをサポートしていません。
 
 * *サンドボックス環境*&#x200B;を使用している場合は、環境が 2020 年 6 月 10 日以降のリリースにアップグレードされていることを確認してください。*実稼動環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
@@ -37,7 +39,7 @@ ht-degree: 100%
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。
 
