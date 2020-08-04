@@ -2,10 +2,10 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
 translation-type: tm+mt
-source-git-commit: 5f332f247cc8a9baafb3e80a362a04410a9d036f
+source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,10 @@ ht-degree: 98%
 2. 「**作成**」を選択し、「**コンテンツフラグメント**」を選択して、ウィザードを開きます。
 3. ウィザードの最初の手順では、新しいフラグメントの基盤を指定することを求められます。
 
-   * [モデル](/help/assets/content-fragments/content-fragments-models.md) — 構造化コンテンツを必要とするフラグメントの作成に使用します。 例えば、 **アドベンチャー** ・モデル
+   * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **アドベンチャー**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
 
       * 使用可能なすべてのモデルが表示されます。
+
    選択した後、「**次へ**」を使用して続けます。
 
    ![フラグメントの基盤](assets/cfm-managing-01.png)
@@ -122,6 +123,7 @@ ht-degree: 98%
 
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
+
    フラグメントエディターが開きます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
@@ -131,8 +133,6 @@ ht-degree: 98%
    >1. フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。
       >
       >
-      >
-
    2. **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
 
@@ -143,6 +143,7 @@ ht-degree: 98%
    * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [関連コンテンツ](#associating-content-with-your-fragment)
    * [メタデータ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![モード](assets/cfm-managing-04.png)
 
 4. 変更を加えた後、必要に応じて「**保存**」または「**キャンセル**」をクリックします。
@@ -173,7 +174,7 @@ ht-degree: 98%
 
    >[!CAUTION]
    >
-   >「**保存**」では、変更を保存するだけでなく、参照を更新し、必要に応じてディスパッチャーがフラッシュされます。これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+   >「**保存**」では、変更を保存するだけでなく、参照を更新し、必要に応じて Dispatcher がフラッシュされます。これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
    >
    >
    >「**保存**」を使用する際はこの点に留意し、フラグメントエディターを迅速に開いて、変更をおこない、保存してください。
