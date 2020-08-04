@@ -2,7 +2,7 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
 translation-type: tm+mt
-source-git-commit: bec541b49540f8794859803e0a56fc04c33de0f9
+source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 100%
@@ -131,7 +131,6 @@ ht-degree: 100%
    >[!NOTE]
    >
    >1. フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。
-   >
    >2. **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
 
