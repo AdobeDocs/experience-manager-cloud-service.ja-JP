@@ -2,7 +2,7 @@
 title: CIFコアコンポーネントのカスタマイズ
 description: CIFコアコンポーネントのカスタマイズ
 translation-type: tm+mt
-source-git-commit: dd6973085ae34dd6ea7296c36d0a14f699440269
+source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
 workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 3%
@@ -352,7 +352,7 @@ SlingモデルはJavaとして実装され、生成されたプロジェクト�
    -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
    +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
       data-sly-use.actionsTpl="actions.html">
-       ...
+      ...
    ```
 
    に変更を保存し `productteaser.html`ます。
