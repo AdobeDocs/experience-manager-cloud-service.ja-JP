@@ -2,7 +2,7 @@
 title: Cloud ServiceとしてのAEMコマースの使用の手引き
 description: Cloud ServiceとしてのAEMコマースの使用の手引き
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 6%
@@ -13,6 +13,8 @@ ht-degree: 6%
 # Cloud ServiceとしてのAEMコマースの使用の手引き {#start}
 
 AEMコマースをCloud Serviceとして使用し始めるには、Experience Manager Cloud ServiceがCommerce Integration Framework (CIF)アドオンを使用してプロビジョニングされている必要があります。 CIFアドオンは、Cloud Serviceとしての [AEM Sitesの上に追加のモジュール](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/home.html)。
+
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 ## 使用開始 {#onboarding}
 
