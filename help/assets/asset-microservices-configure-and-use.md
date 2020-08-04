@@ -3,10 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a29b00ed6b216fb83f6a7c6bb7b34e1f317ffa57
+source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
 workflow-type: tm+mt
-source-wordcount: '2405'
-ht-degree: 47%
+source-wordcount: '2482'
+ht-degree: 51%
 
 ---
 
@@ -48,7 +48,7 @@ Experience Managerでは、次のレベルの処理が可能です。
 |---|---|---|
 | [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> 大きなプレビュー（Web レンディション - 1280 px） </li><li> メタデータとテキストの抽出。</li></ul> |
 | [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。 デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。 標準搭載のワーカーを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPOレンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
-| [カスタムプロファイル](#custom-config) | を呼び出す際にカスタムワーカーを介してカスタムコードを使用するように、ユーザーインターフェイス経由で管理者が設定 [!DNL Asset Compute Service]します。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
+| [カスタムプロファイル](#custom-config) | カスタムワーカーを介してカスタムコードを使用し、 [Asset Compute Serviceを呼び出すように、管理者がユーザーインターフェイスを介して設定します](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -118,7 +118,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 * Review from flow perspective shared in Jira ticket.
 -->
 
-は、デフォルト処理、PhotoshopファイルなどのAdobe固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例を [!DNL Asset Compute Service] サポートしています。 以前に必要だったDAM Update Assetワークフローのカスタマイズは、デフォルトで処理されるか、UIの処理プロファイル設定を介して処理されます。 この処理がビジネスニーズを満たさない場合、Adobeは、Asset Compute Serviceを開発して使用し、デフォルトの機能を拡張することを推奨します。
+は、デフォルト処理、PhotoshopファイルなどのAdobe固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例を [!DNL Asset Compute Service] サポートしています。 以前に必要だったDAM Update Assetワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。 これらの処理オプションでビジネスニーズが満たされない場合、Adobeでは、デフォルトの機能を拡張するために開発および使用す [!DNL Asset Compute Service] ることを推奨します。 概要については、「拡張機能と使用するタイミングにつ [いて」を参照してください](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
@@ -126,9 +126,9 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 画像、ビデオ、ドキュメント、その他のファイル形式を、サムネール、抽出したテキスト、メタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、を使用して、事前定義済みの使用例 [!DNL Asset Compute Service] に対応する、特殊なカスタムワーカーを作成できます。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+開発者は、を使用 [!DNL Asset Compute Service] して、サポートされている使用例に対応するカスタムワーカーを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
-* のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
+* のImageCutout API [!DNL Adobe Photoshop]を使用し、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
 * APIを使用して、Photoshopテンプレートに基づいて様々なレンディションを生成します。 [!DNL Photoshop]
 * [AdobeLightroomAPI](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) (API)を使用して、取り込んだアセットを最適化し、レンディションとして保存します。
@@ -175,17 +175,17 @@ Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTRO
 次のいずれかの方法を使用して、処理プロファイルをフォルダーに適用します。
 
 * Administrators can select a processing profile definition in **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Processing Profiles]**, and use **[!UICONTROL Apply Profile to Folder(s)]** action. コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
-* Users can select a folder in the Assets user interface, use **[!UICONTROL Properties]** action to open folder properties screen, click on the **[!UICONTROL Processing Profiles]** tab, and in the popup list, select the correct processing profile for that folder. 変更を保存するには、「 **[!UICONTROL 保存して閉じる]**」をクリックします。
+* ユーザーが Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL 処理プロファイル]**」タブのポップアップリストでそのフォルダーに適した処理プロファイルを選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 >[!NOTE]
 >
 >特定のフォルダーに適用できる処理プロファイルは 1 つだけです。さらにレンディションを生成するには、既存の処理プロファイルにレンディションの定義を追加します。
 
-処理プロファイルがフォルダーに適用されると、このフォルダーまたはその任意のサブフォルダー内でアップロード（または更新）された新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます。この処理は、標準のデフォルトプロファイルに加えて、行われます。 フォルダーに複数のプロファイルを適用する場合、アップロードまたは更新されたアセットは、それぞれのプロファイルを使用して処理されます。
+処理プロファイルがフォルダーに適用されると、このフォルダーまたはその任意のサブフォルダー内でアップロード（または更新）された新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます。この処理は、標準のデフォルトプロファイルによる処理に加えておこなわれます。フォルダーに複数のプロファイルを適用する場合、アップロードまたは更新されたアセットは、それぞれのプロファイルを使用して処理されます。
 
 >[!NOTE]
 >
->フォルダーに適用した処理プロファイルはツリー全体で機能しますが、サブプロファイルーに適用した別のフォルダーで上書きできます。 アセットがフォルダーにアップロードされると、Adobe Experience Manager は、そのフォルダーのプロパティで処理プロファイルを確認します。何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
+>フォルダーに適用された処理プロファイルはツリー全体で機能しますが、サブフォルダーに適用された別のプロファイルでオーバーライドすることができます。アセットがフォルダーにアップロードされると、Adobe Experience Manager は、そのフォルダーのプロパティで処理プロファイルを確認します。何も適用されない場合は、適用する処理プロファイルが階層内の親フォルダーで確認されます。
 
 生成されたすべてのレンディションは、左側のパネルの [!UICONTROL レンディション] 表示で使用できます。 アセットプレビューを開き、左のパネルを開いて **[!UICONTROL レンディション]** 表示にアクセスします。 特定のアセットのタイプが MIME タイプ包含ルールと一致する処理プロファイルの特定のレンディションが表示され、アクセス可能になります。
 
@@ -238,3 +238,10 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 
 * ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。[!DNL Experience Manager] を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
 * 現在、サポートされるレンディションはレンディションの生成に限られています。 新しいアセットの生成はサポートされていません。
+
+>[!MORELIKETHIS]
+>
+>* [Asset Compute Serviceの紹介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
+>* [拡張機能と使用するタイミングを理解します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+>* [カスタムワーカーの作成方法](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)。
+
