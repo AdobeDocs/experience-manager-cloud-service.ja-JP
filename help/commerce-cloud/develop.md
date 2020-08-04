@@ -2,7 +2,7 @@
 title: Cloud ServiceとしてのAEM向けAEMコマースの開発
 description: Cloud ServiceとしてのAEM向けAEMコマースの開発
 translation-type: tm+mt
-source-git-commit: 170a6f4f3aa07b9aa917014b7a682ead9ed595c1
+source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 14%
@@ -67,13 +67,13 @@ AEMをCloud ServiceSDKとして使用するローカル追加のCIFオン開発�
 
    ```bash
    export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    ウィンドウの例：
 
    ```bash
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
-   ````
+   ```
 
    この変数は、AEMのCloud Service環境としても設定する必要があります。
 
