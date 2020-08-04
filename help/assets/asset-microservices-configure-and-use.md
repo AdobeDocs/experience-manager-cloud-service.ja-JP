@@ -3,10 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bef70df01192161b3dcca479b9faafa876d561f
+source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
 workflow-type: tm+mt
-source-wordcount: '2482'
-ht-degree: 51%
+source-wordcount: '2501'
+ht-degree: 50%
 
 ---
 
@@ -128,7 +128,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 開発者は、を使用 [!DNL Asset Compute Service] して、サポートされている使用例に対応するカスタムワーカーを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
-* のImageCutout API [!DNL Adobe Photoshop]を使用し、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
+* のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
 * APIを使用して、Photoshopテンプレートに基づいて様々なレンディションを生成します。 [!DNL Photoshop]
 * [AdobeLightroomAPI](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) (API)を使用して、取り込んだアセットを最適化し、レンディションとして保存します。
@@ -146,8 +146,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 次の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
-   * FireflyカスタムアプリのエンドポイントURL。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
-   * 「追加 [!UICONTROL サービスパラメータ] 」を選択すると、追加の情報やパラメータがカスタムワーカーに渡されます。
+   * [FireflyカスタムアプリのエンドポイントURL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
+   * 「追加Service Parameters」をクリックして、追加の情報やパラメーターをカスタムワーカーに [渡します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)。
    * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
    「**[!UICONTROL 保存]**」をクリックします。
