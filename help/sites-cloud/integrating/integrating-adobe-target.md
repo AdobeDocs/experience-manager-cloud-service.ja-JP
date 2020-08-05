@@ -2,7 +2,7 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 96e1d775a98584f12e4571c708955a9ded57e3c4
+source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 9%
@@ -12,12 +12,12 @@ ht-degree: 9%
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Marketing Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルにわたってターゲット設定と測定をおこない、コンテンツの関連性を高めることができます。Adobe TargetとAEMをCloud Serviceとして統合するには、次の作業が必要です。
+Adobe Marketing Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルにわたってターゲット設定と測定をおこない、コンテンツの関連性を高めることができます。Cloud ServiceとしてのAdobe TargetとAEMの統合には、次のものが必要です。
 
-* タッチUIを使用して、AEMでCloud ServiceとしてAnalytics設定を作成する（IMS設定が必要）。
-* 「 [Adobeの起動」で、Adobe Targetを拡張機能として追加し、設定します](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
+* タッチUIを使用して、AEMでCloud Serviceとしてターゲット設定を作成する（IMS設定が必要）。
+* 「 [Adobeの起動」の拡張機能としてAdobe Targetを追加し、設定する方法について説明します](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html)。
 
-Adobeの起動は、AEMページ（JSライブラリ/タグ）のAnalyticsとTargetの両方のクライアント側プロパティを管理するために必要です。 ただし、「エクスペリエンスのターゲット設定」には、Launchとの統合が必要です。 エクスペリエンスフラグメントをTargetに書き出す場合は、Adobe Target設定とIMSのみが必要です。
+Adobeの起動は、AEMページのAnalyticsとターゲット（JSライブラリ/タグ）の両方のクライアント側プロパティを管理するために必要です。 ただし、「エクスペリエンスのターゲット設定」には、Launchとの統合が必要です。 エクスペリエンスフラグメントをターゲットにエクスポートする場合は、Adobe Target設定とIMSのみが必要です。
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Adobeの起動は、AEMページ（JSライブラリ/タグ）のAnalyticsとTar
 
 ### IMS 設定
 
-TargetをAEMおよびLaunchと適切に統合するには、起動とTargetの両方のIMS設定が必要です。 LaunchのIMS設定はAEMでCloud Serviceとして事前に設定されていますが、TargetIMS設定は、Targetのプロビジョニング後に作成する必要があります。 Target [IMS設定の作成方法については、](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) このビデオ [](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) 、およびこのページを参照してください。
+ターゲットをAEMおよびLaunchと適切に統合するには、起動とターゲットの両方のIMS設定が必要です。 LaunchのIMS設定はAEMでCloud Serviceとして事前に設定されていますが、ターゲットIMS設定は、ターゲットのプロビジョニング後に作成する必要があります。 ターゲット [IMS設定の作成方法については、](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html) このビデオ [](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html) 、およびこのページを参照してください。
 
-### Target設定の編集 {#edit-target-configuration}
+### ターゲット設定の編集 {#edit-target-configuration}
 
-Target設定を編集するには、次の手順に従います。
+ターゲット設定を編集するには、次の手順に従います。
 
 1. 既存の設定を選択し、「 **プロパティ**」をクリックします。
 2. プロパティを編集します。
@@ -51,9 +51,9 @@ Target設定を編集するには、次の手順に従います。
 
 タッチ操作対応UI設定をサイトに適用するには、次のページに移動します。 **サイト** →任意のサイトページを選択 **→** プロパティ **→詳細→設定→設定→設定********** テナントを選択します。
 
-## Adobe起動を使用したAEMサイトのAdobe Targetの統合 {#integrate-target-launch}
+## Adobe発表を使用して、AEMサイトにAdobe Targetを統合する {#integrate-target-launch}
 
-AEMオファーは、Experience Platform Launchとの初期設定の統合を行います。 Experience Platform LaunchにAdobe Target拡張子を追加することで、AEM WebページのAdobe Targetの機能を使用できます。Targetライブラリは、「起動」を使用した場合にのみレンダリングされます。
+AEMオファーは、Experience Platform Launchとの初期設定の統合を行います。 Experience Platform LaunchにAdobe Target拡張機能を追加することで、AEM Webページ上のAdobe Targetの機能を使用できます。ターゲットライブラリは、「起動」を使用した場合にのみレンダリングされます。
 
 >[!NOTE]
 >
@@ -79,12 +79,12 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 
 ### 必要な拡張子の追加 {#add-extension}
 
-**拡張機能** は、コアライブラリ設定を管理するコンテナです。 Adobe Target拡張機能は、最新のWeb用のTargetJavaScript SDKを使用したat.jsによるクライアント側実装をサポートします。 **Adobe Targetと** AdobeのContextHub **** 拡張を追加する必要があります。
+**拡張機能** は、コアライブラリ設定を管理するコンテナです。 Adobe Target拡張機能は、最新のWeb用のターゲットJavaScript SDKを使用したat.jsによるクライアント側実装をサポートします。 ContextHub拡張機能 **Adobe Target** と **Adobeの両方を追加する必要があります** 。
 
-1. 「拡張機能カタログ」オプションを選択し、フィルターでTargetを検索します。
+1. 「拡張機能カタログ」オプションを選択し、フィルターでターゲットを検索します。
 2. 「 **Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
-   ![Target](assets/search_ext1.png "SearchTarget検索")
-3. Select the **Configure** button. 設定ウィンドウに、読み込まれたTargetアカウントの資格情報と、この拡張のat.jsバージョンが表示されます。
+   ![ターゲット](assets/search_ext1.png "SearchTarget検索")
+3. Select the **Configure** button. 設定ウィンドウに、読み込まれたターゲットアカウントの資格情報と、この拡張のat.jsバージョンが表示されます。
 4. 「 **保存** 」を選択して、ターゲット式を起動プロパティに追加します。 「 **インストール済みの拡張機能** 」リストの下にターゲット式が表示されます。
    ![Save](assets/configure_extension1.png "ExtensionSave Extension")
 5. 上記の手順を繰り返して、 **AdobeContextHub** 拡張機能を検索してインストールします（これは、どのターゲット設定に基づいてcontexthubパラメーターとの統合に必要です）。
@@ -116,7 +116,7 @@ AEMオファーは、Experience Platform Launchとの初期設定の統合を行
 
 | **変更点** | **クラシックUIの設定** | **タッチ操作対応UIの設定** | **結果** |
 |---|---|---|---|
-| Target設定の場所。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/ターゲット | 以前は、/etc/cloudservices/testandtargetの下に複数の設定が存在していましたが、現在は1つの設定がテナントの下に存在します。 |
+| ターゲット設定の場所。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/ターゲット | 以前は、/etc/cloudservices/testandtargetの下に複数の設定が存在していましたが、現在は1つの設定がテナントの下に存在します。 |
 
 >[!NOTE]
 >
