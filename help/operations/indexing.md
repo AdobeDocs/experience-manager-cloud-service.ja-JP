@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 0789eb6ea2fb128d7b6b87cffd44a92187535642
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1474'
 ht-degree: 3%
 
 ---
@@ -12,15 +12,15 @@ ht-degree: 3%
 
 # コンテンツの検索とインデックス作成 {#indexing}
 
-## Changes in AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
+## Cloud ServiceとしてのAEMの変更点 {#changes-in-aem-as-a-cloud-service}
 
-AEMをCloud Serviceとして使用する場合、アドビでは、AEMインスタンス中心モデルから、Cloud ManagerのCI/CDパイプラインによって駆動される、n-xのAEMコンテナを持つサービスベースの表示に移行します。 単一のAEMインスタンスでインデックスの設定と管理を行う代わりに、インデックスの設定を指定してからデプロイメントを行う必要があります。 本番環境での設定の変更は、CI/CDのポリシーを明確に破っています。 インデックスの変更についても同じことが言えます。システムの安定性とパフォーマンスに影響を及ぼす可能性があるのは、指定しない場合は、実稼働環境に移行する前にテストおよび再インデックスを実行する必要があるからです。
+AEMをCloud Serviceとして使用すると、AdobeはAEMインスタンス中心モデルから、n-x AEMコンテナを持つサービスベースの表示に移行し、Cloud ManagerのCI/CDパイプラインによって駆動されます。 単一のAEMインスタンスでインデックスを設定および保守する代わりに、インデックス設定を展開の前に指定する必要があります。 本番環境での設定の変更は、CI/CDのポリシーを明確に破っています。 インデックスの変更についても同じことが言えます。システムの安定性とパフォーマンスに影響を及ぼす可能性があるのは、指定しない場合は、実稼働環境に移行する前にテストおよび再インデックスを実行する必要があるからです。
 
-次に、AEM 6.5以前のバージョンと比較した主な変更点のリストを示します。
+AEM 6.5以前のバージョンと比較した主な変更点のリストを以下に示します。
 
-1. ユーザーは、単一のAEMインスタンスのインデックスマネージャーにアクセスして、インデックスのデバッグ、設定または維持を行うことができなくなります。 ローカル開発およびオンプレムデプロイメントにのみ使用されます。
+1. 1つのAEMインスタンスのインデックスマネージャにアクセスできなくなり、インデックスのデバッグ、構成、または維持ができなくなります。 ローカル開発およびオンプレムデプロイメントにのみ使用されます。
 
-1. ユーザーは、1つのAEMインスタンスのインデックスを変更したり、整合性チェックや再インデックスに関する心配をなくします。
+1. 1つのAEMインスタンスのインデックスを変更したり、整合性チェックや再インデックスについて心配する必要はありません。
 
 1. 一般に、Cloud ManagerのCI/CDパイプラインの品質の高いゲートウェイを迂回し、実稼働環境のビジネスKPIに影響を与えないように、インデックスの変更は実稼働環境に移行する前に開始されます。
 
@@ -32,11 +32,11 @@ AEMをCloud Serviceとして使用する場合、アドビでは、AEMインス�
 
 1. インデックスの構成は、配置を介して変更されます。 インデックス定義の変更は、他のコンテンツの変更と同様に設定されます。
 
-1. Cloud ServiceとしてのAEMの高レベルでは、 [Blue-Greenデプロイメントモデルが導入され](#index-management-using-blue-green-deployments) 、2組のインデックスが存在します。 1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
+1. AEMのCloud Serviceとしての高度なレベルでは、 [Blue-Green導入モデルが導入され](#index-management-using-blue-green-deployments) 、2組のインデックスが存在します。 1つは古いバージョン（青）用のセット、もう1つは新しいバージョン（緑）用のセットです。
 
 1. インデックス作成ジョブがCloud Managerのビルドページで完了したかどうかを確認でき、新しいバージョンでトラフィックを受信する準備ができたら通知を受け取ります。
 
-1. 制限事項： 現在、Cloud ServiceとしてのAEMでのインデックス管理は、lucene型のインデックスに対してのみサポートされています。
+1. 制限事項： 現在、AEM上でのCloud Serviceとしてのインデックス管理は、lucene型のインデックスに対してのみサポートされています。
 
 <!-- ## Sizing Considerations {#sizing-considerations}
 
@@ -54,7 +54,7 @@ AS NOTE: the above is internal for now.
 1. 既存のインデックス定義を更新しています。 これは、既存のインデックス定義の新しいバージョンを追加することを意味します
 1. 冗長または古い既存のインデックスを削除しています。
 
-上記のポイント1と2の両方について、それぞれのCloud Managerリリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。 詳しくは、Cloud ServiceドキュメントとしてのAEMへの [デプロイを参照してください](/help/implementing/deploying/overview.md)。
+上記のポイント1と2の両方について、それぞれのCloud Managerリリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。 詳しくは、「AEMへの [デプロイ」のCloud Serviceドキュメントを参照してください](/help/implementing/deploying/overview.md)。
 
 ### 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
@@ -84,7 +84,7 @@ AS NOTE: the above is internal for now.
 
 >[!TIP]
 >
->Cloud ServiceとしてのAEMに必要なパッケージ構造について詳しくは、ドキュメントの [AEMプロジェクト構造を参照してください。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
+>AEMをCloud Serviceとして使用する場合に必要なパッケージ構造の詳細については、「ドキュメント [AEMプロジェクト構造」を参照してください。](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
 
 ## 青 — 緑の導入を使用したインデックス管理 {#index-management-using-blue-green-deployments}
 
@@ -105,7 +105,7 @@ AS NOTE: the above is internal for now.
 * **/content**
 * */libs （読み取り専用）*
 * **/oak:index**
-* **/oak:index/acme**
+* **/oak:index/acme.**
 * **/jcr:system**
 * **/system**
 * **/var**
@@ -124,21 +124,21 @@ AS NOTE: the above is internal for now.
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` は、AEMをCloud Serviceとして、既存のインデックスの代わりとしてマークする場合に必要です。
+>`<indexName>-custom-<customerVersionNumber>` は、AEMが既存のインデックスの代わりとしてマークするためのCloud Serviceとして必要です。
 
 | 索引 | 標準インデックス | バージョン1で使用 | バージョン2で使用 |
 |---|---|---|---|
 | /oak:index/damAssetLucene | はい | はい | 不可 |
 | /oak:index/damAssetLucene-custom-1 | ○（カスタマイズ） | 不可 | 可 |
-| /oak:index/acmeProduct-custom-1 | 不可 | 可 | 不可 |
-| /oak:index/acmeProduct-custom-2 | 不可 | 不可 | 可 |
+| /oak:index/acme.product-custom-1 | 不可 | 可 | 不可 |
+| /oak:index/acme.product-custom-2 | 不可 | 不可 | 可 |
 | /oak:index/cqPageLucene | はい | 可 | はい |
 
 バージョン番号は、インデックスが変更されるたびに増加します。 製品自体のインデックス名と衝突するカスタムインデックス名を回避するには、カスタムインデックスと、初期設定のインデックスに対する変更をで終える必要があり `-custom-<number>`ます。
 
 ### 既製のインデックスの変更 {#changes-to-out-of-the-box-indexes}
 
-「damAssetLucene」や「cqPageLucene」のような既成のインデックスをアドビが変更すると、またはという名前の新しいインデックスが作成されます。また、インデックスが既にカスタマイズされている場合は、次のように、カスタマイズ済みのインデックス定義が既存のインデックスの変更と結合されます。 `damAssetLucene-2``cqPageLucene-2` 変更のマージは自動的に行われます。 つまり、あらかじめ用意されているインデックスが変更された場合、何もする必要はありません。 ただし、後でインデックスを再びカスタマイズすることは可能です。
+Adobeが「damAssetLucene」や「cqPageLucene」のような既成のインデックスを変更すると、またはという名前の新しいインデックスが作成されます。また、インデックスが既にカスタマイズされている場合は、次のように、カスタマイズされたインデックス定義が既成のインデックスの変更と結合されます。 `damAssetLucene-2``cqPageLucene-2` 変更のマージは自動的に行われます。 つまり、あらかじめ用意されているインデックスが変更された場合、何もする必要はありません。 ただし、後でインデックスを再びカスタマイズすることは可能です。
 
 | 索引 | 標準インデックス | バージョン2で使用 | バージョン3で使用 |
 |---|---|---|---|
@@ -153,26 +153,26 @@ AS NOTE: the above is internal for now.
 
 ### インデックスの削除 {#removing-an-index}
 
-新しいバージョンのアプリケーションでインデックスを削除する場合は、空のインデックス（インデックスを作成するデータのないインデックス）を新しい名前で定義できます。 例えば、名前を付けることができ `/oak:index/acmeProduct-custom-3`ます。 これにより、インデックスが置き換えられ `/oak:index/acmeProduct-custom-2`ます。 システム `/oak:index/acmeProduct-custom-2` が削除した後は、空のインデックスも削除 `/oak:index/acmeProduct-custom-3` できます。
+新しいバージョンのアプリケーションでインデックスを削除する場合は、空のインデックス（インデックスを作成するデータのないインデックス）を新しい名前で定義できます。 例えば、名前を付けることができ `/oak:index/acme.product-custom-3`ます。 これにより、インデックスが置き換えられ `/oak:index/acme.product-custom-2`ます。 システム `/oak:index/acme.product-custom-2` が削除した後は、空のインデックスも削除 `/oak:index/acme.product-custom-3` できます。
 
 ### インデックスの追加 {#adding-an-index}
 
-新しいバージョンのアプリケーション以降で使用する「/oak:index/acmeProduct-custom-1」という名前のインデックスを追加するには、インデックスを次のように設定する必要があります。
+新しいバージョンのアプリケーション以降で使用する「/oak:index/acme.product-custom-1」という名前のインデックスを追加するには、インデックスを次のように設定する必要があります。
 
-`*mk.*assetLuceneIndex-1-custom-1`
+`acme.product-1-custom-1`
 
-これは、インデックス名の前にカスタム識別子を付け、その後にドット(**.**). 識別子の長さは1 ～ 4文字である必要があります。
+これは、インデックス名の前にカスタム識別子を付け、その後にドット(**`.`**)を付けることで機能します。 識別子の長さは2 ～ 5文字です。
 
 上記のように、これにより、新しいバージョンのアプリケーションでのみインデックスが使用されます。
 
 ### インデックスの変更 {#changing-an-index}
 
-既存のインデックスを変更する場合は、変更したインデックス定義を使用して新しいインデックスを追加する必要があります。 例えば、既存のインデックス「/oak:index/acmeProduct-custom-1」が変更されているとします。 古いインデックスは下に、新しいインデックス `/oak:index/acmeProduct-custom-1`は下に格納され `/oak:index/acmeProduct-custom-2`ます。
+既存のインデックスを変更する場合は、変更したインデックス定義を使用して新しいインデックスを追加する必要があります。 例えば、既存のインデックス「/oak:index/acme.product-custom-1」が変更されているとします。 古いインデックスは下に、新しいインデックス `/oak:index/acme.product-custom-1`は下に格納され `/oak:index/acme.product-custom-2`ます。
 
 アプリケーションの古いバージョンでは、次の設定を使用します。
 
-`/oak:index/acmeProduct-custom-1`
+`/oak:index/acme.product-custom-1`
 
 新しいバージョンのアプリケーションでは、次の（変更された）設定が使用されます。
 
-`/oak:index/acmeProduct-custom-2`
+`/oak:index/acme.product-custom-2`
