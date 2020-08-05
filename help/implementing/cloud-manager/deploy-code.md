@@ -2,9 +2,9 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 164d2d3b4dabfa2b06da245dc33ef90b5b77192b
+source-git-commit: ebab226b7d45994cc00c1abe42d84dab47391f5d
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '895'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 100%
 
    **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
-   * 検証：この手順では、現在使用できるリソース（設定済みのブランチが存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
+   * 検証：この手順では、現在使用できるリソース（設定済みの分岐が存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
    * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境について詳しくは、[AEM アプリケーションプロジェクトの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md)を参照してください。
    * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスについて詳しくは、[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)を参照してください。
    * イメージのビルド：このステップには、イメージのビルドに使用されたプロセスのログファイルが含まれます。このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
@@ -50,18 +50,14 @@ ht-degree: 100%
       ![](assets/stage-deployment.png)
    **ステージテスト**&#x200B;には、以下のステップが含まれます。
 
-   * 製品機能テスト：Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。テストプロセスについて詳しくは、「[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)」を参照してください。
-   * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。テストプロセスについて詳しくは、「[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)」を参照してください。
+   * 製品機能テスト：Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。テストプロセスについて詳しくは、[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)を参照してください。
+   * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。テストプロセスについて詳しくは、[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)を参照してください。
 
       ![](assets/stage-testing.png)
 
 
 
 
-
->[!IMPORTANT]
->
->以下の節は、AEM クラウドサービス用の Cloud Manager に対応するように更新する必要があり、現在作業中です。
 
 ## デプロイメントプロセス {#deployment-process}
 
