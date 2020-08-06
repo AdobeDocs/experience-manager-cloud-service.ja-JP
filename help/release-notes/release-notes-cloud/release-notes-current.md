@@ -2,7 +2,7 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 9%
@@ -28,7 +28,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * アセットプログラムーで新しく作成した環境が、Smart Content Servicesで自動的に設定されるようになりました。
 
-* 休止状態の環境は、Cloud Managerの概要ページで非冬眠にすることができます。
+* 休止状態の環境は、Cloud Managerの **概要** ページで非冬眠にできます。
 
 * 認証バウンドのプライベートMavenリポジトリがサポートされるようになりました。
 
@@ -52,7 +52,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 概要ページで色が一致していません。
 
-### 既知の問題 {#known-issues}
+### 既知の問題 {#known-issues-cm}
 
 * 無効なページは、コンテンツ監査平均スコアが本来の値を下回る場合に含まれます。
 
