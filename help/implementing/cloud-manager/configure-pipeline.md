@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 70%
+source-wordcount: '772'
+ht-degree: 63%
 
 ---
 
@@ -14,35 +14,31 @@ ht-degree: 70%
 
 Cloud Managerには、次の2種類のパイプラインがあります。
 
-* **実稼働用パイプライン**:
+* **実稼働パイプライン**:
 
-   実稼働パイプラインは、実稼働およびステージ環境を作成した場合にのみ追加できます。
+   実稼働パイプラインは、実稼働およびステージ環境セットを作成した場合にのみ追加できます。
 
-   Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
+   Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
-* **実稼動以外のパイプライン**:
+* **非実稼働パイプライン**:
 
    実稼動以外のパイプラインは、Cloud Managerのユーザーインターフェイスの **概要** ページから追加できます。
 
    詳細は、 [非実稼働およびコード品質のみのパイプラインを参照](configure-pipeline.md#non-production-pipelines) 。
 
-## フローについて {#understanding-the-flow}
+>[!NOTE]
+>パイプラインを設定するには、次の操作を行う必要があります。
+> * パイプラインを開始するトリガーの定義
+> * 実稼動デプロイメントを制御するパラメーターの定義
+> * パフォーマンステストパラメーターの設定
 
-[!UICONTROL Cloud Manager] UI の&#x200B;**パイプライン設定**&#x200B;タイルからパイプラインを設定することができます。
 
-パイプラインの設定はデプロイメントマネージャーが担当します。その際は、まず **Git リポジトリ**&#x200B;からブランチを選択します。
+## Setting up Production Pipeline {#setting-up-production-pipeline}
 
-パイプラインを設定するには、以下をおこなう必要があります。
+Deployment Managerは、実稼働パイプラインのセットアップを担当します。
 
-* パイプラインを開始するトリガーの定義
-* 実稼動デプロイメントを制御するパラメーターの定義
-* パフォーマンステストパラメーターの設定
-
-## パイプラインの設定 {#setting-up-the-pipeline}
-
->[!CAUTION]
->
->1 つのプログラムの作成が完了し、Git リポジトリに少なくとも 1 つのブランチができるまで、パイプラインは設定できません。
+>[!NOTE]
+>プログラムの作成が完了し、Gitリポジトリに少なくとも1つのブランチがあり、ProductionとStageの環境セットが作成されるまで、実稼動パイプラインを設定できません。
 
 コードのデプロイを開始する前に、[!UICONTROL Cloud Manager] からパイプライン設定を指定する必要があります。
 
