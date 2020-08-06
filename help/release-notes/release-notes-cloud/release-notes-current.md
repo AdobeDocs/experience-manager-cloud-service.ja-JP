@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: b4a0cbd29991f8c418ab7b3305f5e9e99e62cc4a
+source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '370'
 ht-degree: 9%
 
 ---
@@ -23,6 +23,8 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 ### 新機能 {#what-is-new-cloud-manager}
 
 * 「コンテンツ監査」は、Cloud Managerサイト実稼働パイプラインで有効になる機能です。 Sitesを使用するプログラムの実稼働パイプライン設定に、「 **Content Audit**」という名前の3番目のタブが含まれるようになりました。 実稼働パイプラインを実行するたびに、カスタム機能テストの後、新しいContent Auditステップがパイプラインに含まれます。このステップは、パフォーマンス、SEO(Search Engine Optimization)、アクセシビリティ、ベストプラクティス、PWA(Progressive Web App)など、多数の次元に対してサイトを評価します。
+
+   Refer to [Content Audit Testing](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) for more details.
 
 * アセットプログラムーで新しく作成した環境が、Smart Content Servicesで自動的に設定されるようになりました。
 
