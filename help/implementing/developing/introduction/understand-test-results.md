@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: 4b79f7dd3a55e140869985faa644f7da1f62846c
+source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 100%
+source-wordcount: '1486'
+ht-degree: 66%
 
 ---
 
@@ -15,8 +15,10 @@ ht-degree: 100%
 Cloud Services 用 Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。これは、ビルドおよびユニットテストステップ中に実行されるテスト（オフラインで実行され、動作中の AEM 環境にはアクセスしない）とは対照的です。このコンテキストで実行されるテストには、次の 2 種類があります。
 * ユーザーが作成するテスト
 * アドビが作成するテスト
+* GoogleのLighthouseを利用したオープンソースツール
 
-どちらのタイプのテストも、これらのテストを実行するためのコンテナ化されたインフラストラクチャで実行されます。
+   >[!NOTE]
+   > お客様が作成したテストとAdobeが作成したテストは、どちらも、これらのタイプのテストを実行するために設計されたコンテナ化されたインフラストラクチャで実行されます。
 
 
 ## コード品質テスト {#code-quality-testing}
@@ -131,6 +133,51 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >[!NOTE]
 >「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。詳しくは、[ログのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
 
+## コンテンツ監査テスト {#content-audit-testing}
+
+コンテンツ監査は、GoogleのオープンソースツールであるLighthouseが提供するCloud Manager Sites Productionパイプラインで使用できる機能です。 この機能は、すべてのCloud Manager実稼働パイプラインで有効になります。
+
+これにより、デプロイメントプロセスが検証され、次の変更がデプロイされていることを確認できます。
+
+1. パフォーマンス、アクセシビリティ、ベストプラクティス、SEO（検索エンジンの最適化）、PWA（プログレッシブWebアプリ）の基準を満たします。
+
+1. これらのディメンションに回帰を含めないでください。
+
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+
+### コンテンツ監査結果について {#understanding-content-audit-results}
+
+コンテンツ監査は、実稼働パイプラインの実行ページで集計と詳細なページレベルのテスト結果を提供します。
+
+* 集計レベルの指標は、監査されたページ全体の平均スコアを測定します。
+* 個々のページレベルスコアは、ドリルダウンでも使用できます。
+* スコアの詳細を確認して、個々のテストの結果を確認し、コンテンツ監査中に特定された問題の是正方法に関するガイダンスを確認できます。
+* テスト結果の履歴はCloud Manager内に保持されるので、パイプライン実行で発生する変更に以前の実行からの回帰が含まれているかどうかをお客様が確認できます。
+
+#### 集計スコア {#aggregate-scores}
+
+各テストタイプ(パフォーマンス、アクセシビリティ、SEO、ベストプラクティス、PWA)に対して集計レベルのスコアが割り当てられます。
+
+集計レベルのスコアは、実行に含まれるページの平均スコアを取ります。 集計レベルでの変更は、含めるように設定されたページのコレクションが実行間で変更された場合でも、現在の実行中のページの平均スコアを、前回の実行時のスコアの平均と比較して表します。
+
+「変更」指標の値は、次のいずれかになります。
+
+* **正の値** — 前回の実稼動パイプライン実行以降、選択したテストのページが改善されました。
+
+* **負の値** — 前回の実稼動パイプライン実行以降、選択したテストでページが退行した。
+
+* **変更なし** — 前回の実稼動パイプライン実行以降、ページに同じスコアが割り当てられています。
+
+* **該当なし** — 比較できる以前のスコアはありません。
+
+   ![](assets/content-audit-test1.png)
+
+#### ページレベルのスコア {#page-level-scores}
+
+任意のテストにドリルダウンすると、より詳細なページレベルのスコアリングを確認できます。 ユーザーは、特定のテストで個々のページがどのようにスコアされたかと、前回のテスト実行時の変更を確認できます。
+個々のページの「詳細」をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
+![](assets/page-level-scores.png)
+
 ## ローカルテストの実行 {#local-test-execution}
 
 テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。
@@ -148,3 +195,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
