@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 72%
@@ -57,11 +57,11 @@ Cloud Managerには、次の2種類のパイプラインがあります。
 
 1. **パイプラインを設定**&#x200B;画面が表示されます。ブランチを選択して、「**次へ**」をクリックします。
 
-   ![](assets/set-up-pipeline2.png)
+   ![](assets/setup-pipeline-1.png)
 
 1. デプロイメントオプションを設定します。
 
-   ![](assets/set-up-pipeline3.png)
+   ![](assets/setup-pipeline-2.png)
 
    パイプラインを開始するトリガーを定義できます。
 
