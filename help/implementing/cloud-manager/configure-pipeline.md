@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 9cfdf421db39dd08e8b772241f1f750fb73375b8
+source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 72%
@@ -15,11 +15,15 @@ ht-degree: 72%
 Cloud Managerには、次の2種類のパイプラインがあります。
 
 * **実稼働用パイプライン**:
-実稼働パイプラインは、実稼働およびステージ環境を作成した場合にのみ追加できます。 詳細は、「パイプラインの [設定](configure-pipeline.md#setting-up-the-pipeline) 」を参照してください。
+実稼働パイプラインは、実稼働およびステージ環境を作成した場合にのみ追加できます。
+
+   詳細は、「パイプラインの [設定](configure-pipeline.md#setting-up-the-pipeline) 」を参照してください。
 
 * **実稼動以外のパイプライン**:
 
-   実稼動以外のパイプラインは、Cloud Managerのユーザーインターフェイスの **概要** ページから追加できます。 詳細は、 [非実稼働およびコード品質のみのパイプラインを参照](configure-pipeline.md#non-production-pipelines) 。
+   実稼動以外のパイプラインは、Cloud Managerのユーザーインターフェイスの **概要** ページから追加できます。
+
+   詳細は、 [非実稼働およびコード品質のみのパイプラインを参照](configure-pipeline.md#non-production-pipelines) 。
 
 ## フローについて {#understanding-the-flow}
 
@@ -90,7 +94,7 @@ Cloud Managerには、次の2種類のパイプラインがあります。
 
    「 **追加New Page Override** 」をクリックして、コンテンツ監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
 
-   ![](assets/content-audit-2.png)
+   ![](assets/content-audit2.png)
 
 1. 「パイプラインを **編集** 」(Edit Pipeline **)画面で「保存」(Save** )をクリックします。 **概要**&#x200B;ページに、**プログラムをデプロイ**&#x200B;カードが表示されます。「**デプロイ**」ボタンをクリックして、プログラムをデプロイします。
 
