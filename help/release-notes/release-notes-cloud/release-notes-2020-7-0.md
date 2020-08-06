@@ -2,7 +2,7 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 7f089e15deff87706e0ed3c38630b52832b277d4
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 37%
@@ -34,7 +34,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 ### 新機能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] は、アセットを処理するための拡張性と拡張性に優れたサービスです。 管理者は、を使用して作成したカスタムワーカーを呼び出すようにExperience Managerを設定でき [!DNL Asset Compute Service]ます。 開発者はこのサービスを使用して、複雑な使用例に対応する特殊なカスタムワーカーを作成できます。 このWebサービスでは、様々なファイルタイプのサムネールを生成したり、Adobeファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前駆としてのフルテキストの抽出を行ったりできます。 詳しくは、アセットマイクロサービスと処理プロファイルの [使用を参照してください](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] は、アセットを処理するための拡張性と拡張性に優れたサービスです。 管理者は、を使用して作成したカスタムExperience Managerを呼び出すようにアプリケーションを設定でき [!DNL Asset Compute Service]ます。 開発者はこのサービスを使用して、複雑な使用例に対応した特殊なカスタムアプリケーションを作成できます。 このWebサービスでは、様々なファイルタイプのサムネールを生成したり、Adobeファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前駆としてのフルテキストの抽出を行ったりできます。 詳しくは、アセットマイクロサービスと処理プロファイルの [使用を参照してください](/help/assets/asset-microservices-configure-and-use.md)。
 
 * Cloud Service [!DNL Dynamic Media] としてのの初期設定 [!DNL Experience Manager] が改善され、より堅牢になりました。 これで、管理者にプロセスの進行状況を提供できます。
 
