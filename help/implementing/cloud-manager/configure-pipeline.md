@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 8d82bb8ee2b7aa234fc6b9b8efe23f04f4c66c87
+source-git-commit: 3b600d197b835dcd24dfc0c301de8d87d49b9fc5
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 97%
+source-wordcount: '676'
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 ## フローについて {#understanding-the-flow}
 
-You can configure your production pipeline from the **Pipeline Settings** tile in the [!UICONTROL Cloud Manager] UI.
+[!UICONTROL Cloud Manager] UI の&#x200B;**パイプライン設定**&#x200B;タイルからパイプラインを設定することができます。
 
 パイプラインの設定はデプロイメントマネージャーが担当します。その際は、まず **Git リポジトリ**&#x200B;からブランチを選択します。
 
@@ -69,7 +69,14 @@ You can configure your production pipeline from the **Pipeline Settings** tile i
    * **直ちに続行** - 重要なエラーが検出されても、常にパイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. 「**次へ**」をクリックして「**テスト**」タブにアクセスし、プログラムのテスト条件を定義します。
+1. 実稼働用パイプライン設定には、「 **コンテンツ監査**」というラベルの付いた3番目のタブが含まれています。
+
+   このオプションは、コンテンツ監査に常に含めるURLパスの表を提供します。 ユーザーは、含めるURLパスを手動で入力できます。 最大25行まで含めることができます。 このセクションにユーザが送信したページがない場合、サイトのホームページはデフォルトとしてコンテンツ監査に含まれます。
+
+   >[!NOTE]
+   > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO(Search Engine Optimization)、ベストプラクティス、PWA（プログレッシブWeb App）のテストに従って評価されます。
+
+   詳細は、「コンテンツ監査結果 [について](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 」を参照してください。
 
    ![](assets/set-up-pipeline4.png)
 
