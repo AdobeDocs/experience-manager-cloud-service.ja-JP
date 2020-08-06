@@ -2,7 +2,7 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: 560c3436ae24e77e96ac3acd1987fe2f3dc3a9b5
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 66%
@@ -143,7 +143,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
@@ -175,7 +175,9 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 #### ページレベルのスコア {#page-level-scores}
 
 任意のテストにドリルダウンすると、より詳細なページレベルのスコアリングを確認できます。 ユーザーは、特定のテストで個々のページがどのようにスコアされたかと、前回のテスト実行時の変更を確認できます。
-個々のページの「詳細」をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
+
+個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
+
 ![](assets/page-level-scores.png)
 
 ## ローカルテストの実行 {#local-test-execution}
