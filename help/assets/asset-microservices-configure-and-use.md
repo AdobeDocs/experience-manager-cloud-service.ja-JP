@@ -3,9 +3,9 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f51700dad918e5152c1af70686531d1ce5f544e7
+source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2522'
 ht-degree: 50%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 50%
 # アセットマイクロサービスと処理プロファイルの使用 {#get-started-using-asset-microservices}
 
 <!--
-* Current capabilities of asset microservices offered. If workers have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
+* Current capabilities of asset microservices offered. If applications have names then list the names and give a one-liner description. (The feature-set is limited for now and continues to grow. So will this article continue to be updated.)
 * How to access the microservices. UI. API. Is extending possible right now?
-* Detailed list of what file formats and what processing is supported by which workflows/workers process.
+* Detailed list of what file formats and what processing is supported by which workflows/application process.
 * How/where can admins check what's already configured and provisioned.
 * How to create new config or request for new provisioning/purchase.
 
@@ -47,8 +47,8 @@ Experience Managerでは、次のレベルの処理が可能です。
 | オプション | 説明 | 対象となる使用例 |
 |---|---|---|
 | [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> 大きなプレビュー（Web レンディション - 1280 px） </li><li> メタデータとテキストの抽出。</li></ul> |
-| [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。 デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。 標準搭載のワーカーを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPOレンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
-| [カスタムプロファイル](#custom-config) | カスタムワーカーを介してカスタムコードを使用し、 [Asset Compute Serviceを呼び出すように、管理者がユーザーインターフェイスを介して設定します](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
+| [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。 デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。 標準搭載のオプションを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPOレンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
+| [カスタムプロファイル](#custom-config) | カスタムアプリケーションを介してカスタムコードを使用し、 [Asset Compute Serviceを呼び出すように、管理者がユーザーインターフェイスを介して設定します](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -113,7 +113,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 <!-- **TBD items**:
 
 * Overall cross-linking with the extensibility content.
-* Mention how to get URL of worker. Worker URL for Dev, Stage, and Prod environments.
+* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
 * Mention mapping of service parameters. Link to compute service article.
 * Review from flow perspective shared in Jira ticket.
 -->
@@ -122,11 +122,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->Adobeでは、デフォルトのプロファイルまたは標準の構成を使用してビジネスを完了する必要がない場合にのみ、カスタムワーカーを使用することをお勧めします。
+>Adobeでは、デフォルトの設定または標準のプロファイルを使用してビジネス要件を満たすことができない場合にのみ、カスタムアプリケーションを使用することをお勧めします。
 
-画像、ビデオ、ドキュメント、その他のファイル形式を、サムネール、抽出したテキスト、メタデータ、アーカイブなど、様々なレンディションに変換できます。
+画像、ビデオ、ドキュメントおよびその他のファイル形式を、サムネール、抽出したテキストおよびメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、を使用 [!DNL Asset Compute Service] して、サポートされている使用例に対応するカスタムワーカーを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html) 。 [!DNL Experience Manager] 管理者が設定するカスタムプロファイルを使用して、これらのカスタムワーカーをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+開発者は、を使用して、サポートされ [!DNL Asset Compute Service] る使用例に応じたカスタムアプリケーションを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 。 [!DNL Experience Manager] 管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
 * のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
@@ -135,22 +135,24 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 >[!NOTE]
 >
->標準メタデータは、カスタムワーカーを使用して編集することはできません。 変更できるのは、カスタムメタデータのみです。
+>標準メタデータは、カスタムアプリケーションを使用して編集することはできません。 変更できるのは、カスタムメタデータのみです。
 
 ### カスタムプロファイルの作成 {#create-custom-profile}
 
 カスタムプロファイルを作成するには、次の手順に従います。
 
 1. 管理者は、 **[!UICONTROL ツール/アセット/処理プロファイルにアクセスします]**。 「**[!UICONTROL 作成]**」をクリックします。
-1. Click on **[!UICONTROL Custom]** tab. Click **[!UICONTROL Add New]**. レンディションの目的のファイル名を指定します。
+1. 「 **[!UICONTROL カスタム]** 」タブをクリックします。 Click **[!UICONTROL Add New]**. レンディションの目的のファイル名を指定します。
 1. 次の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
-   * [FireflyカスタムアプリのエンドポイントURL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-worker.html)。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
-   * 「追加Service Parameters」をクリックして、追加の情報やパラメーターをカスタムワーカーに [渡します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html#pass-custom-parameters)。
+   * [FireflyカスタムアプリのエンドポイントURL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
+   * 「追加 Service Parameters 」を [選択し、追加の情報やパラメーターをカスタムアプリケーションに渡します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
    * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
    「**[!UICONTROL 保存]**」をクリックします。
+
+処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
 
 >[!CAUTION]
 >
@@ -160,11 +162,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 カスタムプロファイルの使用方法を説明するために、キャンペーン画像にカスタムテキストを適用する使用例を考えてみましょう。 PhotoshopAPIを利用して画像を編集する処理プロファイルを作成できます。
 
-Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTROL Service Parameters] 」フィールドを使用して、これらのパラメーターをカスタムワーカーに渡すことができます。 次に、カスタムワーカーがPhotoshopAPIを呼び出し、これらの値をAPIに渡します。 例えば、フォント名、テキストカラー、テキスト重み付けおよびテキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
+Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTROL Service Parameters] 」フィールドを使用して、これらのパラメーターをカスタムアプリケーションに渡すことができます。 次に、カスタムアプリケーションがPhotoshopAPIを呼び出し、これらの値をAPIに渡します。 例えば、フォント名、テキストカラー、テキスト重み付けおよびテキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
 
 ![カスタム処理プロファイル](assets/custom-processing-profile.png)
 
-*図： 「[!UICONTROL サービスパラメータ]」フィールドを使用して、カスタムワーカーに組み込む事前定義済みのパラメータに追加情報を渡します。*
+*図： 「[!UICONTROL サービスパラメータ]」フィールドを使用して、カスタムアプリケーションに組み込む事前定義済みのパラメータに追加情報を渡します。*
 
 この処理プロファイルが適用されたキャンペーンにフォルダ画像がアップロードされると、その画像はフォントの `Jumanji` テキストで更新され `Arial-BoldMT` ます。
 
@@ -243,5 +245,5 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 >
 >* [Asset Compute Serviceの紹介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
 >* [拡張機能と使用するタイミングを理解します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
->* [カスタムワーカーの作成方法](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-worker.html)。
+>* [カスタムアプリケーションの作成方法](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
 
