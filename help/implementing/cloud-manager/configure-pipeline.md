@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: c21c4e8c71b9427dee2402815df1660a12af8bdc
+source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 72%
+source-wordcount: '793'
+ht-degree: 70%
 
 ---
 
@@ -15,9 +15,10 @@ ht-degree: 72%
 Cloud Managerには、次の2種類のパイプラインがあります。
 
 * **実稼働用パイプライン**:
-実稼働パイプラインは、実稼働およびステージ環境を作成した場合にのみ追加できます。
 
-   詳細は、「パイプラインの [設定](configure-pipeline.md#setting-up-the-pipeline) 」を参照してください。
+   実稼働パイプラインは、実稼働およびステージ環境を作成した場合にのみ追加できます。
+
+   Refer to [Setting up the Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
 
 * **実稼動以外のパイプライン**:
 
@@ -83,6 +84,8 @@ Cloud Managerには、次の2種類のパイプラインがあります。
 
 1. 実稼働用パイプライン設定には、「 **コンテンツ監査**」というラベルの付いた3番目のタブが含まれています。
 
+   ![](assets/content-audit-1.png)
+
    このオプションは、コンテンツ監査に常に含めるURLパスの表を提供します。 ユーザーは、含めるURLパスを手動で入力できます。 最大25行まで含めることができます。 このセクションにユーザが送信したページがない場合、サイトのホームページはデフォルトとしてコンテンツ監査に含まれます。
 
    >[!NOTE]
@@ -90,9 +93,10 @@ Cloud Managerには、次の2種類のパイプラインがあります。
 
    詳細は、「コンテンツ監査結果 [について](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 」を参照してください。
 
-   ![](assets/content-audit-1.png)
-
    「 **追加New Page Override** 」をクリックして、コンテンツ監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
+
+   >[!NOTE]
+   >コンテンツ監査手順をアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 詳しくは、「 [既知の問題](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 」を参照してください。
 
    ![](assets/content-audit2.png)
 
