@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  のリッチテキストエデ�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
 workflow-type: tm+mt
 source-wordcount: '4301'
 ht-degree: 100%
