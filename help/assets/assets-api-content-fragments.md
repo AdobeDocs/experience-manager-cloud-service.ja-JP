@@ -1,9 +1,9 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
-translation-type: ht
-source-git-commit: 0dbec9bde44780958332f6f4cd82c05b4ec9206d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
+workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 100%
 
@@ -181,7 +181,7 @@ Assets REST API では、URL パラメーターを介して（GET リクエス�
 
 `GET /api/assets.json?offset=2&limit=3`
 
-```
+```json
 ...
 "properties": {
     ...
@@ -221,7 +221,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 標準アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。**
 
-#### 表現{#representation}
+#### 表現 {#representation}
 
 コンテンツフラグメント：
 
@@ -230,7 +230,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 * アトミックと見なされます。つまり、エレメントとバリエーションは、リンクまたは子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。これにより、フラグメントのペイロードに効率的にアクセスできます。
 
-#### コンテンツモデルとコンテンツフラグメント{#content-models-and-content-fragments}
+#### コンテンツモデルとコンテンツフラグメント {#content-models-and-content-fragments}
 
 現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、コンシューマーは（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなど&#x200B;**&#x200B;は定義の一部だからです。
 
@@ -381,7 +381,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
    }
    ```
 
-## API リファレンス{#api-reference}
+## API リファレンス {#api-reference}
 
 詳細な API リファレンスについては、こちらを参照してください。
 <!--
