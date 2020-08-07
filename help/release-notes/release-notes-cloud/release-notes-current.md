@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 19ad5567b94912eb4ea254b36f45feb46ad96255
+source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '440'
 ht-degree: 8%
 
 ---
@@ -48,7 +48,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 完了したパイプライン実行が正常に完了したと記録されなかったため、パイプラインの新しい実行が行われない場合がありました。
 
-* 内部通信の問題が原因で、パイプライン実行が「停止」する場合があります。
+* 内部通信の問題が原因で、パイプライン実行が *停止することがある* 。
 
 * 新しい組織をプロビジョニングすると、システム管理者以外の管理者ロールを持つ一部のユーザーに、誤ってCloud Managerへのアクセス権が与えられました。
 
@@ -58,7 +58,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * ユーザーインターフェイスで、削除中に環境に対して操作を試行することが誤って許可されました。
 
-* 概要ページで色が一致していません。
+* Cloud Managerの **概要** ページで色が一致していませんでした。
 
 ### 既知の問題 {#known-issues-cm}
 
