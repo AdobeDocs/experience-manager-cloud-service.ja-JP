@@ -3,10 +3,10 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2b7ca2ab6ab3c95b07de49a43c8b119a792a7ac
+source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 50%
+source-wordcount: '2537'
+ht-degree: 49%
 
 ---
 
@@ -70,11 +70,11 @@ Asset Microservicesは、メタデータの処理、レンディションの生�
 
 [!DNL Experience Manager] には、ユーザーのニーズに応じて、一般的な形式向けのより具体的なレンディションを生成する機能があります。 管理者は、追加の [!UICONTROL 処理プロファイルを作成して] 、そのようなレンディションの作成を容易にできます。 次に、1つ以上の使用可能なプロファイルを特定のフォルダーに割り当て、追加の処理を行います。 例えば、追加の処理でWeb、モバイル、タブレット用のレンディションを生成できるとします。 次のビデオでは、[!UICONTROL 処理プロファイル]の作成および適用方法と、作成したレンディションへのアクセス方法を示しています。
 
-* **レンディションの幅と高さ**: 「レンディションの幅」と「高さ」の指定では、生成される出力画像の最大サイズが指定されます。 Asset Microservicesは、可能な限り大きいレンディションを生成しようとします。このレンディションの幅と高さは、それぞれ指定された幅と高さ以下です。 縦横比は維持され、元の縦横比と同じになります。値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
+* **レンディションの幅と高さ**:「レンディションの幅」と「高さ」の指定では、生成される出力画像の最大サイズが指定されます。 Asset Microservicesは、可能な限り大きいレンディションを生成しようとします。このレンディションの幅と高さは、それぞれ指定された幅と高さ以下です。 縦横比は維持され、元の縦横比と同じになります。値が空の場合は、アセット処理で元の画像のピクセルサイズを前提とすることになります。
 
-* **MIMEタイプインクルージョンルール**: 特定のMIMEタイプを持つアセットが処理される場合、最初に、MIMEタイプがレンディション仕様の除外されたMIMEタイプ値と比較されます。 そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（ブロックリスト）。それ以外の場合は、MIME タイプが包含 MIME タイプと照合され、リストと一致する場合は、そのレンディションが生成されます（許可リスト）。
+* **MIMEタイプインクルージョンルール**:特定のMIMEタイプを持つアセットが処理される場合、最初に、MIMEタイプがレンディション仕様の除外されたMIMEタイプ値と比較されます。 そのリストと一致する場合、この特定のレンディションはアセットに対して生成されません（ブロックリスト）。それ以外の場合は、MIME タイプが包含 MIME タイプと照合され、リストと一致する場合は、そのレンディションが生成されます（許可リスト）。
 
-* **Special FPO rendition**: クリエイティブプロフェッショナルは、サイズの大きいアセットをから [!DNL Experience Manager] ドキュメントに配置する際、アセットを [!DNL Adobe InDesign] 配置した後、かなりの時間待ちます [](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)。 Meanwhile, the user is blocked from using [!DNL InDesign]. これにより、クリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。Adobe enables temporarily placing small-sized renditions in [!DNL InDesign] documents to begin with, which can be replaced with full-resolution assets on-demand later. [!DNL Experience Manager] には、配置専用（FPO）のレンディションが用意されています。これらの FPO レンディションは、ファイルサイズは小さいですが、縦横比は同じです。
+* **Special FPO rendition**:クリエイティブプロフェッショナルは、サイズの大きいアセットをから [!DNL Experience Manager] ドキュメントに配置する際、アセットを [!DNL Adobe InDesign] 配置した後、かなりの時間待ちます [](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)。 Meanwhile, the user is blocked from using [!DNL InDesign]. これにより、クリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。Adobe enables temporarily placing small-sized renditions in [!DNL InDesign] documents to begin with, which can be replaced with full-resolution assets on-demand later. [!DNL Experience Manager] には、配置専用（FPO）のレンディションが用意されています。これらの FPO レンディションは、ファイルサイズは小さいですが、縦横比は同じです。
 
 処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、 の[!DNL Adobe Asset Link][ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
 
@@ -110,14 +110,6 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## カスタムプロファイルと使用例 {#custom-config}
 
-<!-- **TBD items**:
-
-* Overall cross-linking with the extensibility content.
-* Mention how to get URL of application. Application URL for Dev, Stage, and Prod environments.
-* Mention mapping of service parameters. Link to compute service article.
-* Review from flow perspective shared in Jira ticket.
--->
-
 は、デフォルト処理、PhotoshopファイルなどのAdobe固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例を [!DNL Asset Compute Service] サポートしています。 以前に必要だったDAM Update Assetワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。 これらの処理オプションでビジネスニーズが満たされない場合、Adobeでは、デフォルトの機能を拡張するために開発および使用す [!DNL Asset Compute Service] ることを推奨します。 概要については、「拡張機能と使用するタイミングにつ [いて」を参照してください](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
@@ -128,7 +120,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 開発者は、を使用して、サポートされ [!DNL Asset Compute Service] る使用例に応じたカスタムアプリケーションを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 。 [!DNL Experience Manager] 管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
-* のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
+* のImageCutout API [!DNL Adobe Photoshop]を使用し、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
 * APIを使用して、Photoshopテンプレートに基づいて様々なレンディションを生成します。 [!DNL Photoshop]
 * [AdobeLightroomAPI](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) (API)を使用して、取り込んだアセットを最適化し、レンディションとして保存します。
@@ -148,11 +140,11 @@ The following video demonstrates the usefulness and usage of standard profile.
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
    * [FireflyカスタムアプリのエンドポイントURL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
    * 「追加 Service Parameters 」を [選択し、追加の情報やパラメーターをカスタムアプリケーションに渡します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
-   * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
+   * MIMEタイプを追加および除外し、処理を特定のファイル形式のみに制限します。
 
    「**[!UICONTROL 保存]**」をクリックします。
 
-処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
+カスタムアプリケーションは、ヘッドレスな [Project Firefly](https://github.com/AdobeDocs/project-firefly) Appです。 処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
 
 >[!CAUTION]
 >
@@ -166,7 +158,7 @@ Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTRO
 
 ![カスタム処理プロファイル](assets/custom-processing-profile.png)
 
-*図： 「[!UICONTROL サービスパラメータ]」フィールドを使用して、カスタムアプリケーションに組み込む事前定義済みのパラメータに追加情報を渡します。*
+*図：「[!UICONTROL サービスパラメータ]」フィールドを使用して、カスタムアプリケーションに組み込む事前定義済みのパラメータに追加情報を渡します。*
 
 この処理プロファイルが適用されたキャンペーンにフォルダ画像がアップロードされると、その画像はフォントの `Jumanji` テキストで更新され `Arial-BoldMT` ます。
 
