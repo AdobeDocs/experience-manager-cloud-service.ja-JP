@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '494'
 ht-degree: 8%
 
 ---
@@ -67,4 +67,18 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 * 「コンテンツ監査」タブに、発行ドメインではなく作成者ドメインを使用したベースURLが正しく表示されません。
 
 * コンテンツ監査手順をアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 ページが追加されない場合、ホームページは監査されます。
+
+## コンテンツ転送ツール {#content-transfer-tool}
+
+このセクションでは、新機能とコンテンツ転送ツールリリースv1.0.4の更新点について説明します。
+
+### 新機能 {#what-is-new-ctt}
+
+* コンテンツ転送ツールで共有S3 DataStoreがサポートされるようになりました。
+
+### バグ修正 {#ctt-bug-fixes}
+
+* アクションを完了するための追加のタイムアウトが追加されました。
+
+* 以前のバージョンのUIで、ログにエラーが表示されていたにもかかわらず、正常に抽出されたことがありました。
 
