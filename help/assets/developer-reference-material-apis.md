@@ -2,11 +2,11 @@
 title: 'Adobe Experience Manager as a Cloud Service におけるデジタルアセット管理のための Assets API '
 description: Assets API を使用すると、バイナリ、メタデータ、レンディション、コメント、コンテンツフラグメントなどのアセットを管理するための基本的な CRUD（作成、読み取り、更新、削除）操作を実行できます。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1249'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6db201f00e8f304122ca8c037998b363ff102c1f
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 98%
 
 ---
 
@@ -48,11 +48,7 @@ Adobe Experience Manager as a Cloud Service では、アセットをリポジト
 
 ### アップロードの開始 {#initiate-upload}
 
-最初の手順として、アセットが作成または更新されるフォルダーに HTTP POST リクエストを送信します。その際、バイナリアップロードを開始するためのリクエストであることを示す `.initiateUpload.json` セレクターを含めます。例えば、アセットが作成されるフォルダーのパスが `/assets/folder` の場合、リクエストは次のようになります。
-
-```
-POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
-```
+最初の手順として、アセットが作成または更新されるフォルダーに HTTP POST リクエストを送信します。その際、バイナリアップロードを開始するためのリクエストであることを示す `.initiateUpload.json` セレクターを含めます。For example, the path to the folder where the asset should be created is `/assets/folder`. POSTリクエストはで `POST https://[aem_server]:[port]/content/dam/assets/folder.initiateUpload.json`す。
 
 リクエスト本文のコンテンツタイプは、次のフィールドを含んだ `application/x-www-form-urlencoded` 形式のデータにする必要があります。
 
@@ -61,7 +57,7 @@ POST https://[aem_server]/content/dam/assets/folder.initiateUpload.json
 
 各バイナリに必須フィールドが含まれている限り、単一のリクエストを使用して複数のバイナリのアップロードを開始できます。成功した場合は、リクエストへの応答として、`201` ステータスコードと、次の形式の JSON データを含んだ本文が返されます。
 
-```
+```json
 {
     "completeURI": "(string)",
     "folderPath": (string)",
