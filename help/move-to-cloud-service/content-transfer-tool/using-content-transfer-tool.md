@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 01ffc349891ac1e11af4f4bc8a539069b8f6cd5e
+source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 97%
+source-wordcount: '1640'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 * コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
 
-* コンテンツ転送ツールは、次の種類のデータストアと共に使用できます。 ファイルデータストア、S3データストア、共有S3データストア。 現在、Azure Blob Store Data Storeはサポートされていません。
+* コンテンツ転送ツールは、次の種類のデータストアと共に使用できます。ファイルデータストア、S3データストア、共有S3データストア。 現在、Azure Blob Store Data Storeはサポートされていません。
 
 * *サンドボックス環境*&#x200B;を使用している場合は、環境が 2020 年 6 月 10 日以降のリリースにアップグレードされていることを確認してください。*実稼動環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
@@ -32,7 +32,7 @@ ht-degree: 97%
 
 ## 入手方法 {#availability}
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイル（コンテンツ転送ツール v1.0.0）としてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
+コンテンツ転送ツールは、ソフトウェア配布ポータルからzipファイルとしてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。 最新バージョンの詳細については、「 [リリースノート](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html)」を参照してください。
 
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
