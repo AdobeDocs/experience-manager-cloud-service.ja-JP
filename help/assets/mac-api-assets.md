@@ -1,12 +1,12 @@
 ---
-title: Assets HTTP API in [!DNL Adobe Experience Manager].
-description: のHTTP APIを使用して、デジタルアセットの作成、読み取り、更新、削除、管理を行います [!DNL Adobe Experience Manager Assets]。
+title: Assets HTTP API（ [!DNL Adobe Experience Manager] に含まれているもの）
+description: ' [!DNL Adobe Experience Manager Assets] の HTTP API を使用した、デジタルアセットの作成、読み取り、更新、削除、管理について説明します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b96e976b5a2aaff90d7317360b0325dcae21ff26
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 42%
+source-wordcount: '1476'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 42%
 
 ## 概要 {#overview}
 
-The Assets HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](/help/assets/assets-api-content-fragments.md)しています。
+Assets HTTP API を使用すれば、デジタルアセット（メタデータ、レンディション、コメントのほか、[!DNL Experience Manager] コンテンツフラグメントを使用した構造化コンテンツも含む）に対して作成、読み取り、更新、削除（CRUD）操作を実行できます。この API は `/api/assets` で公開されており、REST API として実装されています。[コンテンツフラグメントをサポート](/help/assets/assets-api-content-fragments.md)しています。
 
 この API にアクセスするには、次の手順を実行します。
 
@@ -24,7 +24,7 @@ The Assets HTTP API allows for create-read-update-delete (CRUD) operations on di
 
 API の応答は、一部の MIME タイプに対する JSON ファイル、およびすべての MIME タイプに対する応答コードです。JSON 応答はオプションであり、PDF ファイルなどでは利用できない場合があります。詳細な分析やアクションをおこなう場合は、応答コードを利用します。
 
-After the [!UICONTROL Off Time], an asset and its renditions are not available via the [!DNL Assets] web interface and through the HTTP API. [!UICONTROL オンタイム]が未来の場合、または[!UICONTROL オフタイム]が過去の場合、API は 404 エラーメッセージを返します。
+[!UICONTROL オフタイム]の経過後、アセットとそのレンディションは、[!DNL Assets] Web インターフェイスでも HTTP API でも使用できません。[!UICONTROL オンタイム]が未来の場合、または[!UICONTROL オフタイム]が過去の場合、API は 404 エラーメッセージを返します。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ After the [!UICONTROL Off Time], an asset and its renditions are not available v
 
 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。テキスト、数値、日付などの構造化データにアクセスするために使用できます。`standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
-For further information see [Content Fragments Support in the Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md).
+詳しくは、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/assets-api-content-fragments.md)を参照してください。
 
 ## データモデル {#data-model}
 
@@ -50,8 +50,8 @@ Assets HTTP API は、フォルダーとアセット（標準アセット用）�
 
 **プロパティ**：
 
-* `name` は、フォルダの名前です。 これは、URLパス内の最後のセグメントに拡張子がない場合と同じです。
-* `title` は、フォルダ名の代わりに表示できるフォルダのオプションのタイトルです。
+* `name` はフォルダーの名前です。これは、URL パスの最後のセグメント（拡張子を除く）と同じです。
+* `title` は名前の代わりに表示できるフォルダータイトル（オプション）です。
 
 >[!NOTE]
 >
@@ -60,42 +60,44 @@ Assets HTTP API は、フォルダーとアセット（標準アセット用）�
 **リンク**&#x200B;フォルダーは、次の 3 つのリンクを公開します。
 
 * `self`：自分自身へのリンク。
-* `parent`: 親フォルダーにリンクします。
-* `thumbnail`: （オプション）フォルダーのサムネール画像へのリンク。
+* `parent`：親フォルダーへのリンク。
+* `thumbnail`：（オプション）フォルダーのサムネール画像へのリンク。
 
 ### Assets {#assets}
 
-In [!DNL Experience Manager] an asset contains the following elements:
+[!DNL Experience Manager] では、アセットには次の要素が含まれています。
 
-* アセットのプロパティとメタデータ.
-* オリジナルのレンディション（最初にアップロードされたアセット）、サムネール、その他の各種レンディションなど複数のレンディション。追加のレンディションには、様々なサイズの画像、ビデオエンコーディングの画像、PDFまたはAdobe InDesignファイルから抽出したページなどがあります。
-* オプションのコメント.
+* アセットのプロパティとメタデータ
+* オリジナルのレンディション（最初にアップロードされたアセット）、サムネール、その他の各種レンディションなど複数のレンディション。追加レンディションは、サイズやビデオエンコーディングの異なる画像や、PDF ファイルまたは Adobe InDesign ファイルから抽出されたページの場合があります。
+* コメント（オプション）
 
-For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md).
+コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/assets-api-content-fragments.md)を参照してください。
 
-In [!DNL Experience Manager] a folder has the following components:
+[!DNL Experience Manager] では、フォルダーには次のコンポーネントが含まれています。
 
-* エンティティ： アセットの子はレンディションです。
-* プロパティ.
-* リンク.
+* エンティティ：アセットの子はアセットのレンディションです。
+* プロパティ
+* リンク
+
+## 使用可能な機能 {#available-features}
 
 Assets HTTP API には、以下の機能が含まれます。
 
-* フォルダーのリストの取得.
-* フォルダーの作成.
-* アセットを作成します（非推奨）。
-* アセットバイナリを更新します（非推奨）。
-* アセットメタデータの更新.
-* アセットレンディションの作成.
-* アセットレンディションの更新.
-* アセットコメントの作成.
-* フォルダーまたはアセットのコピー.
-* フォルダーまたはアセットの移動.
-* フォルダー、アセットまたはレンディションの削除.
+* フォルダーリストの取得
+* フォルダーの作成
+* アセットの作成（廃止）
+* アセットバイナリの更新（廃止）
+* アセットメタデータの更新
+* アセットレンディションの作成
+* アセットレンディションの更新
+* アセットコメントの作成
+* フォルダーまたはアセットのコピー
+* フォルダーまたはアセットの移動
+* フォルダー、アセットまたはレンディションの削除
 
 >[!NOTE]
 >
->読みやすいように、以下の例では、すべての cURL 表記法を省略しています。In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for `cURL`.
+>読みやすいように、以下の例では、すべての cURL 表記法を省略しています。実際には、この表記法は [Resty](https://github.com/micha/resty)（`cURL` 用のスクリプトラッパー）と関連があります。
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -110,35 +112,35 @@ Assets HTTP API には、以下の機能が含まれます。
 
 既存のフォルダーとその子エンティティ（サブフォルダーまたはアセット）の Siren 表現を取得します。
 
-**リクエスト**: `GET /api/assets/myFolder.json`
+**リクエスト**：`GET /api/assets/myFolder.json`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 200 - OK — 成功。
-* 404 - NOT FOUND — フォルダーが存在しないか、アクセスできません。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 200 - OK（成功）
+* 404 - NOT FOUND（フォルダーが存在しないかアクセスできない）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
-**応答**: 返されるエンティティのクラスは、アセットまたはフォルダーです。 含まれるエンティティのプロパティは、各エンティティの完全なプロパティセットのサブセットです。 エンティティのすべての表現を取得するために、クライアントは `rel` が `self` となっているリンクで参照される URL のコンテンツを取得する必要があります。
+**応答**：返されるエンティティのクラスはアセットまたはフォルダーです。含まれるエンティティのプロパティは、各エンティティの完全なプロパティセットのサブセットです。エンティティのすべての表現を取得するために、クライアントは `rel` が `self` となっているリンクで参照される URL のコンテンツを取得する必要があります。
 
 ## フォルダーの作成 {#create-a-folder}
 
-指定されたパスに新しい `sling`:`OrderedFolder` を作成します。If a `*` is provided instead of a node name, the servlet uses the parameter name as node name. リクエストデータとして受け入れられるのは、新しいフォルダーの Siren 表現か、`application/www-form-urlencoded` または `multipart`/`form`-`data` としてエンコードされた名前と値のペアのセットで、HTML フォームから直接フォルダーを作成するのに役立ちます。さらに、フォルダーのプロパティを URL クエリパラメーターとして指定できます。
+指定されたパスに新しい `sling`:`OrderedFolder` を作成します。ノード名の代わりに「`*`」が指定されている場合、サーブレットパラメーター名がノード名として使用されます。リクエストデータとして受け入れられるのは、新しいフォルダーの Siren 表現か、`application/www-form-urlencoded` または `multipart`/`form`-`data` としてエンコードされた名前と値のペアのセットで、HTML フォームから直接フォルダーを作成するのに役立ちます。さらに、フォルダーのプロパティを URL クエリパラメーターとして指定できます。
 
-指定されたパスの親ノードが存在しない場合、API呼び出しは `500` 応答コードで失敗します。 フォルダーが既に存在する場合、呼び出しは応答コード `409` を返します。
+指定されたパスの親ノードが存在しない場合、API 呼び出しは失敗し、応答コード `500` が返されます。フォルダーが既に存在する場合、呼び出しは応答コード `409` を返します。
 
-**パラメータ**: `name` はフォルダー名です。
+**パラメーター**：`name` はフォルダー名です。
 
 **リクエスト**
 
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 201 — 作成済み — 作成が成功した場合。
-* 409 - CONFLICT — フォルダーが既に存在する場合。
-* 412 - PRECONDITION FAILED — ルートコレクションが見つからないか、アクセスできない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 201 - CREATED（作成が成功した場合）
+* 409 - CONFLICT（フォルダーが既に存在する場合）
+* 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
 ## アセットの作成 {#create-an-asset}
 
@@ -150,22 +152,22 @@ API を使用してアセットバイナリを更新する方法については�
 
 ## アセットのメタデータの更新 {#update-asset-metadata}
 
-アセットメタデータのプロパティを更新します。名前空間内のプロパティを更新すると、APIは `dc:` 名前空間内の同じプロパティを更新し `jcr` ます。 APIは、2つの名前空間の下のプロパティを同期しません。
+アセットメタデータのプロパティを更新します。`dc:` 名前空間内のプロパティを更新すると、APIは `jcr` 名前空間内の同じプロパティを更新します。API は 2 つの名前空間内のプロパティを同期させません。
 
-**リクエスト**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**リクエスト**：`PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 200 - OK — アセットが正常に更新された場合。
-* 404 — 見つかりません — 指定したURIでアセットが見つからなかったか、アクセスできなかった場合。
-* 412 - PRECONDITION FAILED — ルートコレクションが見つからないか、アクセスできない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 200 - OK（アセットが正常に更新された場合）
+* 404 - NOT FOUND（指定した URI でアセットが見つからなかったかアクセスできなかった場合）
+* 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
 ## アセットレンディションの作成 {#create-an-asset-rendition}
 
-アセット用の新しいアセットレンディションを作成します。 リクエストパラメーター名が指定されない場合、ファイル名がレンディション名として使用されます。
+アセットの新しいアセットレンディションを作成します。リクエストパラメーター名が指定されない場合、ファイル名がレンディション名として使用されます。
 
-**パラメータ**: パラメーターは、レンディション `name` の名前とファイル参照 `file` を表します。
+**パラメーター**：パラメーターは `name`（レンディションの名前）と `file`（ファイル参照）です。
 
 **リクエスト**
 
@@ -174,80 +176,80 @@ API を使用してアセットバイナリを更新する方法については�
 
 **応答コード**
 
-* 201 — 作成済み — レンディションが正常に作成された場合。
-* 404 — 見つかりません — 指定したURIでアセットが見つからなかったか、アクセスできなかった場合。
-* 412 - PRECONDITION FAILED — ルートコレクションが見つからないか、アクセスできない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 201 - CREATED（レンディションが正常に作成された場合）
+* 404 - NOT FOUND（指定した URI でアセットが見つからなかったかアクセスできなかった場合）
+* 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
 ## アセットレンディションの更新 {#update-an-asset-rendition}
 
 アセットレンディションをそれぞれ新しいバイナリデータで置き換えて更新します。
 
-**リクエスト**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**リクエスト**：`PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 200 - OK — レンディションが正常に更新された場合。
-* 404 — 見つかりません — 指定したURIでアセットが見つからなかったか、アクセスできなかった場合。
-* 412 - PRECONDITION FAILED — ルートコレクションが見つからないか、アクセスできない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 200 - OK（レンディションが正常に更新された場合）
+* 404 - NOT FOUND（指定した URI でアセットが見つからなかったかアクセスできなかった場合）
+* 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
-## 資産追加に対するコメント {#create-an-asset-comment}
+## アセットへのコメントの追加 {#create-an-asset-comment}
 
 新しいアセットコメントを作成します。
 
-**パラメーター**: パラメーターは、コメント `message` のメッセージ本文と、JSON形式 `annotationData` のAnnotationデータ用です。
+**パラメーター**：パラメーターは `message`（コメントのメッセージ本文）と `annotationData`（JSON 形式の注釈データ）です。
 
-**リクエスト**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**リクエスト**：`POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 201 — コメントが正常に作成された場合は、作成済み。
-* 404 — 見つかりません — 指定したURIでアセットが見つからなかったか、アクセスできなかった場合。
-* 412 - PRECONDITION FAILED — ルートコレクションが見つからないか、アクセスできない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 201 - CREATED（コメントが正常に作成された場合）
+* 404 - NOT FOUND（指定した URI でアセットが見つからなかったかアクセスできなかった場合）
+* 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
 ## フォルダーまたはアセットのコピー {#copy-a-folder-or-asset}
 
-指定されたパスで使用可能なフォルダーまたはアセットを新しい保存先にコピーします。
+指定されたパスに存在するフォルダーまたはアセットを新しい宛先にコピーします。
 
-**Request Headers**: パラメーターは次のとおりです。
+**リクエストヘッダー**：パラメーターは次のとおりです。
 
-* `X-Destination` - APIソリューションスコープ内の、リソースのコピー先となる新しい宛先URI。
-* `X-Depth`  — または `infinity` のいずれか `0`。 を使用すると、リソースとそのプロパティのみがコピーされ、子はコピーされません。 `0`
-* `X-Overwrite`  — 既存の宛先 `F` でアセットが上書きされないようにするために使用します。
+* `X-Destination` - API ソリューション範囲内の、リソースのコピー先となる新しい宛先 URI
+* `X-Depth` - `infinity` か `0` のいずれか。`0` を使用すると、リソースとそのプロパティのみがコピーされ、子はコピーされません。
+* `X-Overwrite` - 既存の宛先にあるアセットが上書きされないようにするには、`F` を使用します。
 
-**リクエスト**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**リクエスト**：`COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 201 — 作成済み — フォルダー/アセットが既存の保存先以外にコピーされた場合。
-* 204 — コンテンツなし — フォルダーまたはアセットが既存の宛先にコピーされた場合。
-* 412 - PRECONDITION FAILED — リクエストヘッダーが見つからない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 201 - CREATED（フォルダーやアセットが既存でない宛先にコピーされた場合）
+* 204 - NO CONTENT（フォルダーまたはアセットが既存の宛先にコピーされた場合）
+* 412 - PRECONDITION FAILED（リクエストヘッダーが不明な場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
 ## フォルダーまたはアセットの移動 {#move-a-folder-or-asset}
 
 指定されたパスのフォルダーまたはアセットを新しい宛先に移動します。
 
-**リクエストヘッダー**: パラメーターは次のとおりです。
+**リクエストヘッダー**：パラメーターは次のとおりです。
 
-* `X-Destination` - APIソリューションスコープ内の、リソースのコピー先となる新しい宛先URI。
-* `X-Depth`  — または `infinity` のいずれか `0`。 を使用すると、リソースとそのプロパティのみがコピーされ、子はコピーされません。 `0`
-* `X-Overwrite`  — 既存のリソース `T` を強制的に削除する場合、または既存のリソースを上書きしない `F` 場合に使用します。
+* `X-Destination` - API ソリューション範囲内の、リソースのコピー先となる新しい宛先 URI
+* `X-Depth` - `infinity` か `0` のいずれか。`0` を使用すると、リソースとそのプロパティのみがコピーされ、子はコピーされません。
+* `X-Overwrite` - 既存のリソースを強制的に削除する場合は `T` を、既存リソースの上書きを防ぐ場合は `F` を使用します。
 
-**リクエスト**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**リクエスト**：`MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 201 — 作成済み — フォルダー/アセットが既存の保存先以外にコピーされた場合。
-* 204 — コンテンツなし — フォルダーまたはアセットが既存の宛先にコピーされた場合。
-* 412 - PRECONDITION FAILED — リクエストヘッダーが見つからない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 201 - CREATED（フォルダーやアセットが既存でない宛先にコピーされた場合）
+* 204 - NO CONTENT（フォルダーまたはアセットが既存の宛先にコピーされた場合）
+* 412 - PRECONDITION FAILED（リクエストヘッダーが不明な場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
 ## フォルダー、アセットまたはレンディションの削除 {#delete-a-folder-asset-or-rendition}
 
-指定されたパスでリソース(-tree)を削除します。
+指定されたパスのリソース（ツリー）を削除します。
 
 **リクエスト**
 
@@ -255,8 +257,8 @@ API を使用してアセットバイナリを更新する方法については�
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**応答コード**: 応答コードは次のとおりです。
+**応答コード**：応答コードは次のとおりです。
 
-* 200 - OK — フォルダーが正常に削除された場合。
-* 412 - PRECONDITION FAILED — ルートコレクションが見つからないか、アクセスできない場合。
-* 500 — 内部サーバーエラー — 他の問題が発生した場合。
+* 200 - OK（フォルダーが正常に削除された場合）
+* 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
+* 500 - INTERNAL SERVER ERROR（他に問題がある場合）
