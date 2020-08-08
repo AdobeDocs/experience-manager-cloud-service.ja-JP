@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: b44e6a522b6f2363daa40c6c6f9640ba2fadd35e
+source-git-commit: 1a307b065beff721cad35def4f812c3bee8eb8dd
 workflow-type: tm+mt
 source-wordcount: '2276'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Dynamic Media で 3D アセットを使用するときに、追加のインス�
 
 Dynamic Media は、次の 3D ファイル形式をサポートしています。
 
-[サポートされる 3D 形式](/help/assets/file-format-support.md#supported-3d-formats)も参照
+[サポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats)も参照
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
