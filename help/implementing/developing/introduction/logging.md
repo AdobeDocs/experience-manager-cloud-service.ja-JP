@@ -5,46 +5,46 @@ translation-type: tm+mt
 source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
 workflow-type: tm+mt
 source-wordcount: '2212'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
 # ログ {#logging}
 
-AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログは、ローカル開発およびクラウド環境、特にAEMをCloud Serviceの開発環境としてデバッグし、コード実行を理解するための重要な機能です。
+AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能です。
 
-AEMのログとログレベルは、AEMプロジェクトの一部としてGitに保存され、AEMプロジェクトの一部としてCloud Managerを介してデプロイされる構成ファイルで管理されます。 AEMにCloud Serviceとしてログインすると、次の2つの論理セットに分割できます。
+AEM のログとログレベルは、AEM プロジェクトの一部として Git に保存され、AEM プロジェクトの一部として Cloud Manager を介してデプロイされる構成ファイルで管理されます。AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
 
-* AEMログ。AEMアプリケーションレベルでログを実行します。
-* Apache HTTPD Webサーバー/Dispatcherログ。Apache HTTPD Webサーバー/サーバーログは、WebサーバーとDispatcherのログを発行層で実行します。
+* AEM ログ。AEM アプリケーションレベルでログを実行します。
+* Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
 
-## AEMログ {#aem-loggin}
+## AEM ログ {#aem-loggin}
 
-AEMアプリケーションレベルでのログは、次の3つのログで処理されます。
+AEM アプリケーションレベルでのログは、次の 3 つのログで処理されます。
 
-1. AEM Javaログ。AEMアプリケーションのJavaログ文をレンダリングします。
-1. HTTP要求ログ。HTTP要求とAEMが提供する応答に関する情報をログに記録します。
-1. HTTPアクセスログ。要約された情報とAEMが提供するHTTP要求をログに記録します。
+1. AEM Java ログ。AEM アプリケーションの Java ログステートメントをレンダリングします。
+1. HTTP リクエストログ。HTTP リクエストと AEM が提供する応答に関する情報をログに記録します。
+1. HTTP アクセスログ。AEM が提供する要約された情報と HTTP リクエストをログに記録します。
 
 >[!NOTE]
 >
->公開層のDispatcherキャッシュまたはアップストリームCDNから提供されるHTTP要求は、これらのログに反映されません。
+>パブリッシュ層の Dispatcher キャッシュまたはアップストリーム CDN から提供される HTTP リクエストは、これらのログに反映されません。
 
-## AEM Javaログ {#aem-java-logging}
+## AEM Java ログ {#aem-java-logging}
 
-AEMは、Cloud Serviceのログ文にアクセスできます。 AEM用アプリケーションの開発者は、次のログレベルで、一般的なJavaログのベストプラクティス、カスタムコードの実行に関連する文のログ記録に従う必要があります。
+AEM as a Cloud Service は Java ログステートメントにアクセスできます。AEM 向けアプリケーションの開発者は、次のログレベルで、一般的な Java ログのベストプラクティス、カスタムコードの実行に関連するステートメントのログ記録に従う必要があります。
 
 <table>
 <tr>
 <td>
-<b>AEM環境</b></td>
+<b>AEM 環境</b></td>
 <td>
 <b>ログレベル</b></td>
 <td>
 <b>説明</b></td>
 <td>
-<b>ログ文の可用性</b></td>
+<b>ログステートメントの可用性</b></td>
 </tr>
 <tr>
 <td>
@@ -52,8 +52,8 @@ AEMは、Cloud Serviceのログ文にアクセスできます。 AEM用アプリ
 <td>
 DEBUG</td>
 <td>
-アプリケーションで発生している操作について説明します。<br>
-DEBUGログがアクティブな場合、発生したアクティビティと処理に影響を与える主要パラメータの明確な内容を提供する文がログに記録されます。</td>
+アプリケーションでの出来事について説明します。<br>
+DEBUG ログがアクティブになっている場合、発生したアクティビティと処理に影響を与える主要パラメーターの明確な内容を提供するステートメントがログに記録されます。</td>
 <td>
 <ul>
 <li> ローカル開発</li>
@@ -67,7 +67,7 @@ DEBUGログがアクティブな場合、発生したアクティビティと処
 WARN</td>
 <td>
 エラーになる可能性のある条件を説明します。<br>
-WARNログがアクティブな場合は、最適化に近づいている条件を示す文のみがログに記録されます。</td>
+WARN ログがアクティブになっている場合は、次善となりつつある条件を示すステートメントのみがログに記録されます。</td>
 <td>
 <ul>
 <li> ローカル開発</li>
@@ -82,7 +82,7 @@ WARNログがアクティブな場合は、最適化に近づいている条件�
 ERROR</td>
 <td>
 エラーを示す条件と解決する必要がある状態を説明します。<br>
-ERRORログがアクティブな場合は、エラーを示す文のみがログに記録されます。 ERRORログ文は、重大な問題を示しており、できるだけ早く解決する必要があります。</td>
+ERROR ログがアクティブになっている場合は、エラーを示すステートメントのみがログに記録されます。ERROR ログステートメントは、重大な問題を示しており、できるだけ早く解決する必要があります。</td>
 <td>
 <ul>
 <li> ローカル開発</li>
@@ -93,9 +93,9 @@ ERRORログがアクティブな場合は、エラーを示す文のみがログ
 </tr>
 </table>
 
-Javaログでは、他の複数レベルのログ精度をサポートしていますが、AEMでは、上記の3つのレベルを使用することをCloud Serviceにお勧めします。
+Java ログはその他にも複数レベルのログ精度をサポートしていますが、AEM as a Cloud Service では、上記の 3 つのレベルを使用することをお勧めします。
 
-AEMログレベルは、OSGi設定を介して環境の種類ごとに設定され、OSGi設定はGitにコミットされ、Cloud Managerを介してAEMにCloud Serviceとしてデプロイされます。 このため、ログレベルの設定を更新した環境を再デプロイする必要なく、AEM経由で利用可能なログを最適なログレベルで確実に使用できるように、ログ文の一貫性とCloud Serviceタイプの既知を保つことをお勧めします。
+AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定され、次に Git にコミットされて、Cloud Manager を介して AEM as a Cloud Service にデプロイされます。そのため、ログレベルの設定を更新した環境を再デプロイせずに、AEM as a Cloud Service 経由で利用可能なログを最適なログレベルで確実に使用できるように、ログステートメントの一貫性と既知の環境の種類を保つことをお勧めします。
 
 **ログ出力の例**
 
@@ -116,7 +116,7 @@ AEMログレベルは、OSGi設定を介して環境の種類ごとに設定さ�
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>Cloud ServiceノードIDとしてのAEM</td>
+<td>AEM as a Cloud Service のノード ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -124,34 +124,34 @@ AEMログレベルは、OSGi設定を介して環境の種類ごとに設定さ�
 <td>DEBUG</td>
 </tr>
 <tr>
-<td>ねじ</td>
+<td>スレッド</td>
 <td>qtp2130572036-1472</td>
 </tr>
 <tr>
-<td>Javaクラス</td>
+<td>Java クラス</td>
 <td>com.example.approval.workflow.impl.CustomApprovalWorkflow</td>
 </tr>
 <tr>
 <td>ログメッセージ</td>
-<td>承認者が指定されていません。デフォルトは[ Creative Approversユーザーグループ]です。</td>
+<td>No specified approver, defaulting to [ Creative Approvers user group ]</td>
 </tr>
 </tbody>
 </table>
 
-### 設定ロガー {#configuration-loggers}
+### ログ設定 {#configuration-loggers}
 
-AEM JavaログはOSGi設定として定義されているので、ターゲット固有のAEMは実行モードのフォルダーを使用するCloud Service環境ーとして使用できます。
+AEM Java ログは OSGi 設定として定義されるので、ターゲット固有の AEM as a Cloud Service 環境は実行モードのフォルダーを使用します。
 
-Sling LogManagerファクトリのOSGi設定を使用して、カスタムJavaパッケージのJavaログを設定します。 次の2つの設定プロパティがサポートされています。
+Sling LogManager ファクトリの OSGi 設定を使用して、カスタム Java パッケージの Java ログを設定します。次の 2 つの設定プロパティがサポートされています。
 
-| OSGi設定プロパティ | 説明 |
+| OSGi 設定プロパティ | 説明 |
 |---|---|
-| org.apache.sling.commons.log.names | ログ文を収集するJavaパッケージです。 |
-| org.apache.sling.commons.log.level | Javaパッケージをログに記録するログレベルです（org.apache.sling.commons.log.namesで指定）。 |
+| org.apache.sling.commons.log.names | ログステートメントを収集する Java パッケージです。 |
+| org.apache.sling.commons.log.level | Java パッケージをログに記録するログレベルです（org.apache.sling.commons.log.names で指定）。 |
 
-その他のLogManager OSGi設定プロパティを変更すると、AEMでCloud Serviceとしての可用性の問題が発生する場合があります。
+その他の LogManager OSGi 設定プロパティを変更すると、AEM as a Cloud Service での可用性の問題が発生する場合があります。
 
-3つのAEMで推奨されるログの設定（プレースホルダーJavaパッケージのを使用）の例を次に示します。こ `com.example`の場合、Cloud Service環境タイプとして使用されます。
+3 つの AEM as a Cloud Service 環境で推奨されるログの設定（Java パッケージ `com.example` のプレースホルダーを使用）の例を次に示します。
 
 ### 開発 {#development}
 
@@ -186,11 +186,11 @@ Sling LogManagerファクトリのOSGi設定を使用して、カスタムJava�
 }
 ```
 
-## AEM HTTP要求ログ {#aem-http-request-logging}
+## AEM HTTP リクエストログ {#aem-http-request-logging}
 
-AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行われたHTTPリクエストと、そのHTTPレスポンスに関する情報を時系列で提供します。 このログは、AEMに対して行われるHTTP要求と、それらの要求が処理され応答される順序を理解するのに役立ちます。
+AEM as a Cloud Service の HTTP リクエストログは、AEM に対しておこなわれた HTTP リクエストと、それに対する HTTP レスポンスに関する情報を時系列で提供します。このログは、AEM に対しておこなわれる HTTP リクエストと、それらの要求が処理され応答される順序を理解するのに役立ちます。
 
-このログを理解するための鍵は、HTTPリクエストと応答のペアを、括弧内の数値で示されるIDでマッピングすることです。 多くの場合、リクエストと対応する応答には、他のHTTPリクエストと応答がログ内で相互に作用します。
+このログを理解するための鍵は、HTTP リクエストとレスポンスのペアを、括弧内の数値で示される ID でマッピングすることです。多くの場合、リクエストと対応するレスポンスには、その他の HTTP リクエストとレスポンスがログ内に差し込まれています。
 
 **サンプルログ**
 
@@ -213,7 +213,7 @@ AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行
 <td>29/Apr/2020:19:14:21 +0000</td>
 </tr>
 <tr>
-<td>リクエストと応答のペアID</td>
+<td>リクエストとレスポンスのペア ID</td>
 <td><code>[137]</code></td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行
 </td>
 </tr>
 <tr>
-<td>Cloud ServiceノードIDとしてのAEM</td>
+<td>AEM as a Cloud Service のノード ID</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
@@ -238,13 +238,13 @@ AEMは、Cloud ServiceのHTTPリクエストログとして、AEMに対して行
 
 ### ログの設定 {#configuring-the-log}
 
-AEM HTTP要求ログは、AEMでCloud Serviceとして設定できません。
+AEM HTTP リクエストログは、AEM as a Cloud Service では設定できません。
 
-## AEM HTTPアクセスログ {#aem-http-access-logging}
+## AEM HTTP アクセスログ {#aem-http-access-logging}
 
-AEMのCloud ServiceHTTPアクセスログは、HTTPリクエストを時間順に表示します。 各ログエントリは、AEMにアクセスするHTTP要求を表します。
+AEM as a Cloud Service の HTTP アクセスログは、HTTP リクエストを時系列に表示します。各ログエントリは、AEM にアクセスする HTTP リクエストを表します。
 
-このログは、AEMに対して行われているHTTP要求が何であるか、それに伴うHTTP応答ステータスコードを調べて成功した場合、およびHTTP要求が完了するまでの時間をすばやく把握するのに役立ちます。 このログは、ユーザーがログエントリをフィルタリングして、特定のユーザーのアクティビティをデバッグする場合にも役立ちます。
+このログは、AEM にどのような HTTP リクエストがおこなわれているか、それに対応する HTTP レスポンスのステータスコードを調べて、リクエストが成功しているか、また HTTP リクエストが完了するまでの時間をすばやく把握するのに役立ちます。このログは、ユーザーでログエントリをフィルタリングして、特定のユーザーのアクティビティをデバッグする場合にも役立ちます。
 
 **ログ出力の例**
 
@@ -259,11 +259,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <table>
 <tbody>
 <tr>
-<td>Cloud ServiceノードIDとしてのAEM</td>
-<td>cm-p1235-e2644-aem-author-5955cb5b8-8kgr2</td>
+<td>AEM as a Cloud Service のノード ID</td>
+<td>cm-p1235-e2644-aem-author-59555cb5b8-8kgr2</td>
 </tr>
 <tr>
-<td>クライアントのIPアドレス</td>
+<td>クライアントの IP アドレス</td>
 <td>-</td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>30/Apr/2020:17:37:14 +0000</td>
 </tr>
 <tr>
-<td>HTTPメソッド</td>
+<td>HTTP メソッド</td>
 <td>GET</td>
 </tr>
 <tr>
@@ -287,11 +287,11 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>HTTP応答ステータス</td>
+<td>HTTP レスポンスステータス</td>
 <td>200</td>
 </tr>
 <tr>
-<td>HTTP要求時間（ミリ秒）</td>
+<td>HTTP リクエスト時間（ミリ秒）</td>
 <td>1141</td>
 </tr>
 <tr>
@@ -300,32 +300,32 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 </tr>
 <tr>
 <td>ユーザーエージェント</td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36 （KHTML、Geckoなど） Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
 
-### HTTPアクセスログの設定 {#configuring-the-http-access-log}
+### HTTP アクセスログの設定 {#configuring-the-http-access-log}
 
-HTTPアクセスログは、AEMではCloud Serviceとして設定できません。
+HTTP アクセスログは、AEM as a Cloud Service では設定できません。
 
-## Apache Web Server and Dispatcher Logging {#apache-web-server-and-dispatcher-logging}
+## Apache Web サーバーおよび Dispatcher ログ {#apache-web-server-and-dispatcher-logging}
 
-AEMは、Cloud Serviceとして、「発行」上のApache Webサーバーとディスパッチャーレイヤーの3つのログを提供します。
+AEM as a Cloud Service は、パブリッシュ上の Apache Web サーバーと Dispatcher レイヤーに 3 つのログを提供します。
 
-* Apache HTTPD Webサーバーアクセスログ
-* Apache HTTPD Webサーバーエラーログ
-* Dispatcherログ
+* Apache HTTPD Web サーバーアクセスログ
+* Apache HTTPD Web サーバーエラーログ
+* Dispatcher ログ
 
-これらのログは発行層でのみ使用できます。
+これらのログはパブリッシュ層でのみ使用できます。
 
-この一連のログは、AEMアプリケーションに到達する前の要求発行層として、AEMに対するHTTP要求に対するインサイトを提供します。 これは重要です。理想的には、発行層サーバーへのほとんどのHTTP要求は、Apache HTTPD WebサーバーおよびAEMDispatcherによってキャッシュされたコンテンツによって処理され、AEMアプリケーション自体には届かないことを理解します。 したがって、AEM Java、要求、またはアクセスのログには、これらの要求に対するログ文はありません。
+これらのログは、AEM アプリケーションに到達する前に、AEM as a Cloud Service のパブリッシュ層に対しておこなわれた HTTP リクエストに関するインサイトを提供します。理想的には、パブリッシュ層サーバーへのほとんどの HTTP リクエストは、Apache HTTPD Web サーバーおよび AEM Dispatcher によってキャッシュされたコンテンツによって処理され、AEM アプリケーション自体には届きません。それを理解することは重要です。したがって、AEM の Java ログ、リクエストログ、アクセスログには、これらのリクエストに対するログステートメントはありません。
 
-### Apache HTTPD Webサーバーアクセスログ {#apache-httpd-web-server-access-log}
+### Apache HTTPD Web サーバーアクセスログ {#apache-httpd-web-server-access-log}
 
-Apache HTTP Web Serverアクセスログは、公開層のWebサーバー/Dispatcherに到達する各HTTPリクエストの文を提供します。 アップストリームCDNから提供される要求は、これらのログには反映されません。
+Apache HTTP Web Server アクセスログは、パブリッシュ層の Web サーバー／Dispatcher に到達する各 HTTP リクエストのステートメントを提供します。アップストリーム CDN から提供されるリクエストは、これらのログには反映されません。
 
-エラーログの形式に関する情報については、 [公式のApacheドキュメントを参照してください](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
+エラーログの形式に関する情報については、[公式の Apache ドキュメント](https://httpd.apache.org/docs/2.4/logs.html#accesslog)を参照してください。
 
 **ログ出力の例**
 
@@ -340,11 +340,11 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <table>
 <tbody>
 <tr>
-<td>AEMをクラウドサービスのノードIDとして</td>
+<td>AEM as a Cloud Service のノード ID</td>
 <td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
 </tr>
 <tr>
-<td>クライアントのIPアドレス</td>
+<td>クライアントの IP アドレス</td>
 <td>-</td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>HTTP/1.1</td>
 </tr>
 <tr>
-<td>HTTP応答の状態</td>
+<td>HTTP レスポンスステータス</td>
 <td>200</td>
 </tr>
 <tr>
@@ -381,20 +381,20 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>ユーザーエージェント</td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4)AppleWebKit/537.36 （KHTML、Geckoなど） Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
 
-### Apache HTTPD Webサーバーアクセスログの設定 {#configuring-the-apache-httpd-webs-server-access-log}
+### Apache HTTPD Web サーバーアクセスログの設定 {#configuring-the-apache-httpd-webs-server-access-log}
 
-このログは、AEMではCloud Serviceとして設定できません。
+このログは、AEM as a Cloud Service では設定できません。
 
-## Apache HTTPD Webサーバーエラーログ {#apache-httpd-web-server-error-log}
+## Apache HTTPD Web サーバーエラーログ {#apache-httpd-web-server-error-log}
 
-Apache HTTP Web Serverエラーログには、公開層のWebサーバー/Dispatcherの各エラーに関する文が記載されています。
+Apache HTTP Web サーバーエラーログには、パブリッシュ層の Web サーバー／Dispatcher の各エラーに関するステートメントを提供します。
 
-エラーログの形式に関する情報については、 [公式のApacheドキュメントを参照してください](https://httpd.apache.org/docs/2.4/logs.html#errorlog)。
+エラーログの形式に関する情報については、[公式の Apache ドキュメント](https://httpd.apache.org/docs/2.4/logs.html#errorlog)を参照してください。
 
 **ログ出力の例**
 
@@ -410,14 +410,14 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 <tbody>
 <tr>
 <td>日時</td>
-<td>金7月17日02:16:42.608913 2020</td>
+<td>Fri Jul 17 02:16:42.608913 2020</td>
 </tr>
 <tr>
 <td>イベントレベル</td>
 <td>[mpm_worker:notice]</td>
 </tr>
 <tr>
-<td>プロセスID</td>
+<td>プロセス ID</td>
 <td>[pid 1:tid 140715149343624]</td>
 </tr>
 <tr>
@@ -426,20 +426,20 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tr>
 <tr>
 <td>メッセージ</td>
-<td>AH00094: コマンドライン： 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+<td>AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>
 </table>
 
-### Apache HTTPD Webサーバーエラーログの設定 {#configuring-the-apache-httpd-web-server-error-log}
+### Apache HTTPD Web サーバーエラーログの設定 {#configuring-the-apache-httpd-web-server-error-log}
 
-mod_rewriteログレベルは、ファイル内の変数REWRITE_LOG_LEVELによって定義され `conf.d/variables/global.var`ます。
+mod_rewrite ログレベルは、`conf.d/variables/global.var` ファイル内の変数 REWRITE_LOG_LEVEL によって定義されます。
 
-Error、Warn、Info、Debug、およびTrace1 ～ Trace8に設定でき、デフォルト値はWarnです。 RewriteRulesをデバッグするには、ログレベルをTrace2に上げることをお勧めします。
+Error、Warn、Info、Debug、および Trace1～Trace8 に設定でき、デフォルト値は Warn です。RewriteRules をデバッグするには、ログレベルを Trace2 に上げることをお勧めします。
 
-詳細は、 [mod_rewriteモジュールのドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging) を参照してください。
+詳細は、[mod_rewrite モジュールのドキュメント](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging)を参照してください。
 
-環境ごとのログレベルを設定するには、次に示すように、global.varファイル内の適切な条件付きブランチを使用します。
+環境ごとのログレベルを設定するには、次に示すように、global.var ファイル内で適切な条件付き分岐を使用します。
 
 ```
 Define REWRITE_LOG_LEVEL Debug
@@ -456,7 +456,7 @@ Define REWRITE_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## Dispatcherログ {#dispatcher-log}
+## Dispatcher ログ {#dispatcher-log}
 
 **例**
 
@@ -487,12 +487,12 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Dispatcher応答ステータスコード</td>
+<td>Dispatcher レスポンスステータスコード</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>デュレーション (ms)</td>
-<td>1949ms</td>
+<td>デュレーション</td>
+<td>1949 ms</td>
 </tr>
 <tr>
 <td>ファーム</td>
@@ -500,24 +500,24 @@ Define REWRITE_LOG_LEVEL Debug
 </tr>
 <tr>
 <td>キャッシュの状態</td>
-<td>[アクションミス]</td>
+<td>[action miss]</td>
 </tr>
 <tr>
-<td>主催者</td>
+<td>ホスト</td>
 <td>"publish-p12904-e25628.adobeaemcloud.com"</td>
 </tr>
 </tbody>
 </table>
 
-### Dispatcherエラーログの設定 {#configuring-the-dispatcher-error-log}
+### Dispatcher エラーログの設定 {#configuring-the-dispatcher-error-log}
 
-ディスパッチャーログレベルは、ファイル内の変数DISP_LOG_LEVELによって定義され `conf.d/variables/global.var`ます。
+Dispatcher ログレベルは、`conf.d/variables/global.var` ファイル内の変数 DISP_LOG_LEVEL によって定義されます。
 
-Error、Warn、Info、Debug、およびTrace1に設定でき、デフォルト値はWarnです。
+Error、Warn、Info、Debug、および Trace1 に設定でき、デフォルト値は Warn です。
 
-Dispatcherログでは、他の複数レベルのログ精度をサポートしていますが、AEMは、Cloud Serviceとして以下に示すレベルを使用することをお勧めします。
+Dispatcher ログはその他にも複数レベルのログ精度をサポートしていますが、AEM as a Cloud Service では、次のレベルを使用することをお勧めします。
 
-環境ごとのログレベルを設定するには、以下に示すように、 `global.var` ファイル内で適切な条件付き分岐を使用します。
+環境ごとのログレベルを設定するには、次に示すように、`global.var` ファイル内で適切な条件付き分岐を使用します。
 
 ```
 Define DISP_LOG_LEVEL Debug
@@ -534,95 +534,95 @@ Define DISP_LOG_LEVEL Debug
 </IfDefine>
 ```
 
-## ログにアクセスする方法 {#how-to-access-logs}
+## ログのアクセス方法 {#how-to-access-logs}
 
 ### クラウド環境 {#cloud-environments}
 
-クラウドサービスのCloud ServiceログとしてAEMにアクセスするには、Cloud Managerインターフェイスを使用してダウンロードするか、AdobeI/Oコマンドラインインターフェイスを使用してコマンドラインでログをテーリングします。 詳しくは、 [Cloud Managerのログに関するドキュメントを参照してください](/help/implementing/cloud-manager/manage-logs.md)。
+Cloud Services の AEM as a Cloud Service のログにアクセスするには、Cloud Manager インターフェイスを使用してダウンロードするか、Adobe I/O コマンドラインインターフェイスを使用してコマンドラインでログに対して tail を実行します。詳しくは、[Cloud Manager のログに関するドキュメント](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
 
-### ローカルSDK {#local-sdk}
+### ローカル SDK {#local-sdk}
 
-AEM asCloud ServiceSDKは、ローカル開発をサポートするログファイルを提供します。
+AEM as a Cloud Service SDK は、ローカル開発をサポートするログファイルを提供します。
 
-AEMログはフォルダー内にあり、次のログを表示でき `crx-quickstart/logs`ます。
+AEM ログは `crx-quickstart/logs` フォルダー内にあり、次のログが参照できます。
 
-* AEM Javaログ： `error.log`
-* AEM HTTP要求ログ： `request.log`
-* AEM HTTPアクセスログ： `access.log`
+* AEM Java ログ： `error.log`
+* AEM HTTP リクエストログ： `request.log`
+* AEM HTTP アクセスログ： `access.log`
 
-ディスパッチャーを含むApacheレイヤーログは、Dispatcherを保持するDockerコンテナにあります。 Dispatcherの開始方法については、 [Dispatcherのドキュメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) を参照してください。
+Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/content-delivery/disp-overview.translate.html)を参照してください。
 
-ログを取得するには：
+ログを取得するには、以下の手順に従います。
 
-1. コマンドラインで、コンテナのリスト `docker ps` を入力します。
-1. コンテナにログインするには、「`docker exec -it <container> /bin/sh`」と入力します。ここで、 `<container>` は前の手順のディスパッチャーコンテナIDです。
-1. 次の下のキャッシュルートに移動します。 `/mnt/var/www/html`
-1. ログは下にある `/etc/httpd/logs`
-1. Inspect: XYZフォルダーの下でアクセスでき、次のログを表示できます。
-   * Apache HTTPD Webサーバーアクセスログ — `httpd_access.log`
-   * Apache HTTPD Webサーバーのエラーログ — `httpd_error.log`
-   * Dispatcherログ — `dispatcher.log`
+1. コマンドラインで、`docker ps` と入力してコンテナを一覧表示します。
+1. コンテナにログインするには、「`docker exec -it <container> /bin/sh`」と入力します。`<container>` は前の手順の Dispatcher コンテナ ID です。
+1. `/mnt/var/www/html` 下のキャッシュルートに移動します。
+1. ログは `/etc/httpd/logs` 下にあります。
+1. ログの調査：XYZ フォルダーにアクセスし、次のログを参照できます。
+   * Apache HTTPD Web サーバーアクセスログ - `httpd_access.log`
+   * Apache HTTPD Web サーバーエラーログ - `httpd_error.log`
+   * Dispatcher ログ - `dispatcher.log`
 
-ログも端末出力に直接印刷されます。 ほとんどの場合、これらのログはDEBUGです。これは、Dockerの実行時にDebugレベルをパラメーターとして渡すことで実現できます。 次に例を示します。
+ログは端末の出力にも直接表示できます。ほとんどの場合、これらのログは DEBUG で出力されるもので、Docker の実行時に Debug レベルをパラメーターとして渡すことで実現できます。次に例を示します。
 
 `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-## 実稼働環境とステージのデバッグ {#debugging-production-and-stage}
+## 実稼動環境とステージ環境のデバッグ {#debugging-production-and-stage}
 
-例外的な状況では、ステージまたは実稼働環境でログをより細かく記録するには、ログレベルを変更する必要があります。
+例外的な状況では、ステージまたは実稼動環境でログレベルを変更して、ログをより細かく記録する必要があります。
 
-これは可能ですが、Gitの設定ファイルのログレベルに対する警告とエラーからデバッグへの変更が必要です。また、これらの設定の変更を環境に登録するCloud ServiceとしてAEMへの展開を実行します。
+これは可能ですが、Git の設定ファイルのログレベル Warn と Error を Debug へ変更し、これらの設定の変更を環境に登録するために、AEM as a Cloud Service にデプロイメントを実行する必要があります。
 
-Debugによって書き込まれるログ文のトラフィックと量に応じて、環境に悪影響を与える可能性があるので、StageとProductionのデバッグレベルを変更することをお勧めします。
+Debug によって書き込まれるログステートメントのトラフィックと量に応じて、環境に悪影響を与える可能性があるため、ステージと実稼動環境のデバッグレベルを変更する場合は、次のことを推奨します。
 
-* 慎重に行い、絶対に必要な場合にのみ行う
-* 適切なレベルに戻し、可能な限り早く再デプロイ
+* 慎重におこない、絶対に必要な場合にのみ実行する
+* 可能な限り早く適切なレベルに戻し、再デプロイする
 
-## Splunkログ {#splunk-logs}
+## Splunk ログ {#splunk-logs}
 
-Splunkアカウントを持っているお客様は、カスタマーサポートチケットを介して、AEMCloud Serviceログを適切なインデックスに転送するようにリクエストする場合があります。 ログデータは、Cloud Managerのログのダウンロードで利用できるものと同じですが、Splunk製品のクエリ機能を利用すると便利です。
+Splunk アカウントを持っている顧客は、カスタマーサポートチケットを介して、AEM Cloud Service のログを適切なインデックスに転送するように依頼できます。ログデータは、Cloud Manager のログのダウンロードで利用できるものと同じですが、Splunk 製品のクエリ機能を利用すると便利です。
 
-Splunkに送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワークI/O使用の一部と見なされます。
+Splunk に送信されるログに関連付けられるネットワーク帯域幅は、お客様のネットワーク I/O 使用の一部と見なされます。
 
-### Splunk転送の有効化 {#enabling-splunk-forwarding}
+### Splunk 転送の有効化 {#enabling-splunk-forwarding}
 
-サポートの要請に応じて、お客様は次のことを示す必要があります。
+サポートを依頼するには、顧客は次のことを示す必要があります。
 
-* Splunkのホスト
-* スプランク指数
-* スプランク港
-* Splunk HECトークン。 詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
+* Splunk のホスト
+* Splunk のインデックス
+* Splunk のポート
+* Splunk の HEC トークン。詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
 
-上記のプロパティは、関連するプログラム/環境タイプの組み合わせごとに指定する必要があります。  例えば、開発、ステージング、実稼動の各環境を希望する場合は、次に示す3組の情報を提供する必要があります。
+上記のプロパティは、関連するプログラム／環境タイプの組み合わせごとに指定する必要があります。例えば、開発、ステージング、実稼動の各環境を希望する場合は、次に示す 3 組の情報を提供する必要があります。
 
 >[!NOTE]
 >
->サンドボックスプログラム環境のSplunk転送はサポートされていません。
+>サンドボックスプログラム環境の Splunk 転送はサポートされていません。
 
-以下に、サンプルのカスタマーサポートの要請を示します。
+以下に、カスタマーサポートへの依頼サンプルを示します。
 
-プログラム123、実稼働環境
+プログラム 123、実稼動環境
 
-* Splunkホスト： `splunk-hec-ext.acme.com`
-* Splunkインデックス： acme_123prod（お客様は任意の命名規則を選択できます）
-* Splunkポート： 443
-* HECトークンの分割： ABC123
+* Splunk ホスト：`splunk-hec-ext.acme.com`
+* Splunk インデックス：acme_123prod（顧客は任意の命名規則を選択できます）
+* Splunk ポート：443
+* Splunk HEC トークン：ABC123
 
-プログラム123、ステージ環境
+プログラム 123、ステージ環境
 
-* Splunkホスト： `splunk-hec-ext.acme.com`
-* Splunkインデックス： acme_123stage
-* Splunkポート： 443
-* HECトークンの分割： ABC123
+* Splunk ホスト：`splunk-hec-ext.acme.com`
+* Splunk インデックス：acme_123stage
+* Splunk ポート：443
+* Splunk HEC トークン：ABC123
 
-プログラム123、開発エンヴ
+プログラム 123、開発環境
 
-* Splunkホスト： `splunk-hec-ext.acme.com`
-* Splunkインデックス： acme_123dev
-* Splunkポート： 443
-* HECトークンの分割： ABC123
+* Splunk ホスト：`splunk-hec-ext.acme.com`
+* Splunk インデックス：acme_123dev
+* Splunk ポート：443
+* Splunk HEC トークン：ABC123
 
-各環境に同じSplunkインデックスを使用する場合は十分です。この場合、dev、stage、prodの値に基づいて `aem_env_type` フィールドを区別するために使用できます。 複数の開発環境がある場合は、この `aem_env_id` フィールドも使用できます。 一部の組織では、関連するインデックスで、少数のSplunk環境へのアクセスが制限されている場合、本番ユーザーのログに対して別のインデックスを選択できます。
+各環境に同じ Splunk インデックスを使用する場合はこれで十分です。その場合、`aem_env_type` フィールドを使用して、開発、ステージ、実稼動の値に基づいて区別できます。複数の開発環境がある場合は、`aem_env_id` フィールドも使用できます。一部の組織で、関連するインデックスのアクセスが一部の Splunk ユーザーに制限されている場合、実稼動環境のログに対して別のインデックスを選択することも可能です。
 
 ログエントリの例を次に示します。
 
