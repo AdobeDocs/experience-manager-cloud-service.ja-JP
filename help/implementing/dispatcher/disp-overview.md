@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
 workflow-type: tm+mt
 source-wordcount: '3824'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -328,7 +328,7 @@ Cloud manager validator 1.0.4
 }
 ```
 
-このステートメントは、`css` ファイルのリクエストを許可するものですが、クエリ文字列 `?a=.css` が続く&#x200B;**あらゆる**&#x200B;リソースに対するリクエストも許可してしまいます。したがって、このようなフィルターの使用は禁止されています（CVE-2016-0957 も参照してください）。
+このステートメントは、`css` ファイルのリクエストを許可するものですが、クエリ文字列 `?a=.css` の前に付くン&#x200B;**あらゆる**&#x200B;リソースに対するリクエストも許可してしまいます。したがって、このようなフィルターの使用は禁止されています（CVE-2016-0957 も参照してください）。
 
 **included file (...) does not match any known file**
 
@@ -372,7 +372,7 @@ Starting httpd server
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-ログレベルは、変数 `DISP_LOG_LEVEL` とs` `REWRITE_LOG_LEVEL` で定義 `conf.d/variables/global.var`します。 See the [Logging documentation](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging) for more information.
+ログレベルは、`conf.d/variables/global.var` の変数 `DISP_LOG_LEVEL` および `REWRITE_LOG_LEVEL` で定義します。詳しくは、[ログに関するドキュメント](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging)を参照してください。
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
