@@ -2,10 +2,10 @@
 title: AEM Application Project -Cloud Service
 description: AEM Application Project -Cloud Service
 translation-type: tm+mt
-source-git-commit: 9e27ff9510fda5ed238a25b2d63d1d9a3099a8b5
+source-git-commit: 4bcae8f2bb74838497323125ebf7015f955bb374
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 82%
+source-wordcount: '1406'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Manager で正常にビルドおよびデプロイされるために、既
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
 * Git リポジトリのルートには *pom.xml* ファイルが必要です。この *pom.xml* ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
 
-* 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、 [パスワードで保護されたアーティファクトリポジトリへのアクセスがサポートされます](#password-protected-maven-repositories) 。 ただし、ネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
+* 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、[パスワードで保護されたアーティファクトリポジトリ](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
 * デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
@@ -59,7 +59,6 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
-* JavaバージョンによりOracle JDK 8u202および11.0.2がインストールされています。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
 
    * bzip2
@@ -209,17 +208,17 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </profile>
 ```
 
-## パスワードで保護されたMavenリポジトリのサポート {#password-protected-maven-repositories}
+## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
 
-パスワードで保護されたMavenリポジトリをCloud Managerから使用するには、パスワード（およびユーザー名）を秘密の [パイプライン変数として指定し](#pipeline-variables) 、gitリポジトリにあるという名前のファイル内 `.cloudmanager/maven/settings.xml` でそのシークレットを参照します。 このファイルは、 [Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。 Cloud Managerのビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Managerが提供するデフォルトの `settings.xml` ファイルに結合されます。 このファイルを配置すると、サーバーIDはファイル内の `<repository>` 要素や `<pluginRepository>` 要素から参照され `pom.xml` ます。 一般に、これらの要素 `<repository>` や `<pluginRepository>` 要素は、 [Cloud Manager固有のプロファイルに含まれますが]{#activating-maven-profiles-in-cloud-manager}、厳密に必要とは限りません。
+パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル]{#activating-maven-profiles-in-cloud-manager}に含まれますが、厳密に必要とは限りません。
 
-例えば、リポジトリがhttps://repository.myco.com/maven2にあり、Cloud Managerで使用するユーザー名はがで、パスワードはがであるとし `cloudmanager` ま `secretword`す。
+例えば、リポジトリが https://repository.myco.com/maven2 にあり、Cloud Manager が使用するユーザー名が `cloudmanager` で、パスワードが `secretword` だとします。
 
-まず、パスワードをパイプライン上のシークレットとして設定します。
+まず、パスワードをパイプライン上の秘密として設定します。
 
 `$ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
 
-次に、 `.cloudmanager/maven/settings.xml` ファイルからこれを参照します。
+次に、`.cloudmanager/maven/settings.xml` ファイルからこれを参照します。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -235,7 +234,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 </settings>
 ```
 
-最後に、 `pom.xml` ファイル内のサーバーIDを参照します。
+最後に、`pom.xml` ファイル内のサーバー ID を参照します。
 
 ```xml
 <profiles>
