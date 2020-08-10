@@ -2,11 +2,11 @@
 title: デジタルアセットの整理
 description: Adobe Experience Manager Assets に用意されている様々な手段を使用して、デジタルアセットを整理します。
 contentOwner: AG
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,5 +44,5 @@ Assets 内の特定のフォルダーにアクセスできるユーザーを制�
 フォルダー、タグまたはその両方を使用してアセットを構成できます。アセットにタグを追加すると、検索時に取得しやすくなります。アセットにタグを追加するには、次の手順に従います。
 
 1. Digital Asset Manager で、アセットをダブルクリックして開きます。
-1. In the **Tags** area, open the menu to reveal the available tags. 必要に応じてタグを選択します。 To delete a tag, hover the pointer over the tag and click `X` to delete it.
+1. 「**タグ**」領域で、メニューを開いて使用できるタグを表示します。必要に応じてタグを選択します。タグを削除するには、タグにポインターを移動し、「`X`」をクリックして削除します。
 1. 「**保存**」をクリックして追加したタグを保存します。
