@@ -1,12 +1,12 @@
 ---
-sub-product: Cloud ServiceとしてのAEMの概要
-user-guide-title: Cloud ServiceとしてのAEMの概要
+sub-product: AEM as a Cloud Service の概要
+user-guide-title: AEM as a Cloud Service の概要
 user-guide-description: For an overview of Experience Manager as a Cloud service, including an introduction, terminology, etc., start here.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
