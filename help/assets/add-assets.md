@@ -1,20 +1,20 @@
 ---
-title: Add your digital assets to [!DNL Adobe Experience Manager].
-description: Add your digital assets to [!DNL Adobe Experience Manager] as a Cloud Service.
+title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service へのデジタルアセットの追加。'
 translation-type: tm+mt
 source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
 workflow-type: tm+mt
 source-wordcount: '1324'
-ht-degree: 76%
+ht-degree: 99%
 
 ---
 
 
 # Adobe Experience Manager へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
-[!DNL Adobe Experience Manager] は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。You can upload various types of files, such as images, documents, and raw image files, from your local folder or a network drive to [!DNL Experience Manager Assets].
+[!DNL Adobe Experience Manager] は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。画像、ドキュメント、生の画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブから [!DNL Experience Manager Assets] にアップロードできます。
 
-アップロード方法は多数用意されています。最も一般的に使用されるブラウザーのアップロードに加えて、Experience Managerリポジトリにアセットを追加する方法は他にもあります。例えば、AdobeアセットリンクやExperience Managerデスクトップアプリ、アップロードや取り込みスクリプト、Experience Manager拡張子として追加される自動取り込みの統合です。
+アップロード方法は多数用意されています。最もよく使用されるブラウザーアップロードに加えて、他の方法でも Adobe Experience Manager リポジトリにアセットを追加することができます。Adobe Asset Link や Adobe Experience Manager デスクトップアプリケーションなどのデスクトップクライアント、ユーザーが作成するアップロードおよび取り込みスクリプト、Experience Manager 拡張機能として追加されている自動取り込み統合などです。
 
 ここでは、エンドユーザー向けのアップロード方法に焦点を当て、Adobe Experience Manager API および SDK を使用したアセットアップロードおよび取り込みの技術的側面について説明する記事へのリンクを示します。
 
@@ -24,19 +24,19 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
->Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。デフォルトでは、Experience Managerユーザーインターフェイス、Adobeアセットリンク、Experience Managerデスクトップアプリなど、初期設定の製品機能とクライアントによってサポートされ、エンドユーザーに対して透過的です。
+>Adobe Experience Manager as a Cloud Service では、直接バイナリアップロードという新しいアセットアップロード方法を利用します。この方法は、Experience Manager ユーザーインターフェイス、Adobe Asset Link、Experience Manager デスクトップアプリケーションなどの標準の製品機能やクライアントでデフォルトでサポートされているので、エンドユーザーがそれを意識することはありません。
 >
 >ユーザー側の技術チームでカスタマイズまたは拡張されるアップロードコードでは、新しいアップロード API およびプロトコルを使用する必要があります。
 
 ## アセットのアップロード {#upload-assets}
 
-ファイル（または複数のファイル）をアップロードするには、デスクトップでファイルを選択し、ユーザーインターフェイス（Webブラウザー）上で出力先フォルダーにドラッグします。 または、ユーザーインターフェイスからアップロードを開始することもできます。
+ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（Web ブラウザー）内の目的のフォルダーにドラッグします。または、ユーザーインターフェイスからアップロードを開始することもできます。
 
-1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
+1. [!DNL Assets] ユーザーインターフェイスで、デジタルアセットを追加する場所に移動します。
 1. アセットをアップロードするには、以下のいずれかの操作をおこないます。
 
    * ツールバーの「**[!UICONTROL 作成]**」アイコンをタップします。次に、メニューで「**[!UICONTROL ファイル]**」をタップします。表示されたダイアログで、必要に応じてファイル名を変更できます。
-   * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. ファイル名を変更するためのダイアログは表示されません。
+   * HTML5 をサポートするブラウザーで、アセットを [!DNL Assets] ユーザーインターフェイスに直接ドラッグします。ファイル名を変更するためのダイアログは表示されません。
 
    ![create_menu](assets/create_menu.png)
 
@@ -59,9 +59,9 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
+1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。アップロード処理をキャンセルすると、[!DNL Assets] はアセットのアップロード済みの部分を削除します。
 
-   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. ただし、既にアップロードされているファイルは削除されません。
+   ファイルがアップロードされる前にアップロード操作をキャンセルすると、[!DNL Assets] が現在のファイルのアップロードを停止し、コンテンツを更新します。ただし、既にアップロードされているファイルは削除されません。
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
@@ -73,13 +73,13 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
-1. The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
+1. [!DNL Assets] のアップロード進行状況ダイアログには、アップロードが成功したファイルと失敗したファイルの数が表示されます。
 
 さらに、Assets ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
 
 >[!NOTE]
 >
->To upload nested folder hierarchies to AEM, see [bulk upload assets](#bulk-upload).
+>ネストされたフォルダー階層を AEM にアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -112,11 +112,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >アセットインサイトによる Adobe Analytics でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、Analytics から取得したアセットのデータが無効になります。
 
-重複アセットを保持するに [!DNL Assets]は、「 **[!UICONTROL 保持]**」をクリックします。 アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
+[!DNL Assets] で重複アセットを保持するには、「**[!UICONTROL 保持]**」をクリックします。アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
 
 ### ファイル名の処理と禁止文字 {#filename-handling}
 
-[!DNL Experience Manager Assets] では、ファイル名に禁止文字が含まれるアセットをアップロードできません。If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
+[!DNL Experience Manager Assets] では、ファイル名に禁止文字が含まれるアセットをアップロードできません。ファイル名に禁止文字が含まれるアセットをアップロードしようとすると、[!DNL Assets] に警告メッセージが表示され、これらの文字を削除するか使用可能な名前でアップロードするまでアップロードが停止されます。
 
 組織固有のファイル命名規則に合うように、[!UICONTROL アセットをアップロード]ダイアログでは、アップロードするファイルに長い名前を指定できます。
 
@@ -140,7 +140,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 Adobe Experience Manager では、Web ブラウザーユーザーインターフェイスに加えて、デスクトップ上の他のクライアントもサポートしています。Web ブラウザーを使用しなくても、これらのクライアントでアップロード操作をおこなうことができます。
 
-* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)[!DNL Experience Manager] を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで 内のアセットにアクセスできます。You can upload the currently open document into [!DNL Experience Manager] directly from Adobe Asset Link user interface from within these desktop applications.
+* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用すると、Adobe Photoshop、Adobe Illustrator、Adobe InDesign の各デスクトップアプリケーションで [!DNL Experience Manager] 内のアセットにアクセスできます。これらのデスクトップアプリケーション内から、現在開いているドキュメントを Adobe Asset Link ユーザーインターフェイスを通じて直接 [!DNL Experience Manager] にアップロードできます。
 * [Adobe Experience Manager デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html)を利用すると、アセットのファイルタイプやアセットを操作するネイティブアプリケーションによらず、デスクトップ上でアセットを簡単に操作できます。ブラウザーアップロードではフラットなファイルリストのアップロードのみサポートしているので、ネストされたフォルダー階層内のファイルをローカルファイルシステムからアップロードできると非常に便利です。
 
 ## 追加処理 {#additional-processing}
