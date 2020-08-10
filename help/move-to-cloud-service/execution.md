@@ -1,9 +1,9 @@
 ---
 title: 実行段階
 description: 実行段階
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Cloud Service に対応するためにリファクタリングする必要があ
 
 コードリファクタリングタスクの一部を高速化するために、次のツールを使用できます。
 
-* [アセットワークフロー移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
 * [Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
 * [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
 
@@ -75,13 +75,13 @@ Cloud Manager Git を介して Cloud Service 環境にコードをプッシュ�
 
 その他のリソースを以下に示します。
 
-* Dispatcher SDKのインストール方法については、「Install Dispatcher SDK」（Dispatcher SDK のインストール）を視聴してください。
+* Dispatcher SDK のインストール方法については、「Install Dispatcher SDK」（Dispatcher SDK のインストール）を視聴してください。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=jpn)
 
-* Dispatcher SDKの設定方法については、「Configure Dispatcher SDK」（Dispatcher SDK の設定）を視聴してください。
+* Dispatcher SDK の設定方法については、「Configure Dispatcher SDK」（Dispatcher SDK の設定）を視聴してください。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=jpn)
 
 * ローカル開発環境を設定するには、[Local Development Environment Set up](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)（ローカル開発環境のセットアップ）を参照してください。
 
