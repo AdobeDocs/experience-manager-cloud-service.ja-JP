@@ -2,17 +2,17 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: cd307cb8806f30892b40b20974e19d4a0a34f8dc
+source-git-commit: 938e83ccb5dfbd69cb1e137667601408185473e0
 workflow-type: tm+mt
 source-wordcount: '1486'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
 
 # テスト結果について {#understand-test-results}
 
-Cloud Services 用 Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。これは、ビルドおよびユニットテストステップ中に実行されるテスト（オフラインで実行され、動作中の AEM 環境にはアクセスしない）とは対照的です。このコンテキストで実行されるテストには、次の 2 種類があります。
+Cloud Services 用 Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。これは、ビルドおよびユニットテストステップ中に実行されるテスト（オフラインで実行され、動作中の AEM 環境にはアクセスしない）とは対照的です。このコンテキストでは、3つのタイプのテストが実行されます。
 * ユーザーが作成するテスト
 * アドビが作成するテスト
 * GoogleのLighthouseを利用したオープンソースツール
@@ -143,7 +143,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
