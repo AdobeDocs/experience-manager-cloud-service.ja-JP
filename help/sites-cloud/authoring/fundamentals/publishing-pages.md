@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1717'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 用語 {#terminology}
 
-AEM を使用する際に、公開に関連する様々な用語を目にする可能性があります。
+Cloud ServiceとしてAdobe Experience Manager(AEM)を使用する場合、投稿に関連する様々な用語が発生する可能性があります。
 
 * **公開／非公開**
    * 環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
@@ -52,6 +52,10 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 >* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
 >* A message will be displayed briefly to notify you that the workflow was triggered.
 -->
+
+>[!NOTE]
+>
+> その他の可能性については、ページプロパティ **の「** 基本」タブの「オン時間 **」および「** オフ時間 [」を参照してください。](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
 
 ### エディターからの公開 {#publishing-from-the-editor}
 
@@ -140,7 +144,7 @@ AEM を使用する際に、公開に関連する様々な用語を目にする�
 
    「コンテンツを追加」ボタンをクリックすると、[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)が開き、コンテンツを選択できます。
 
-   必要なページを選択し、「**選択**」をクリックしてコンテンツをウィザードに追加するか、「キャンセル」をクリックして選択をキャンセルして、ウィザードに戻ります。
+   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
 
    ウィザードに戻ると、リストの項目を選択して、次のような追加のオプションを設定できます。
 
