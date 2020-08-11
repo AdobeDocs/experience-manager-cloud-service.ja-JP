@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: 5d72645aa3a5296e7b616101955734f03425ab59
+source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 99%
+source-wordcount: '1675'
+ht-degree: 88%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 99%
 
 * **HTML ID**
 
-   * コンポーネントに適用するHTML ID。
+   * コンポーネントに適用する HTML ID。
 
 * **ページタイトル**
 
@@ -62,18 +62,27 @@ ht-degree: 99%
 
 * **オンタイム**
 
-   * 公開されたページがアクティベートされる日付と時間です。公開されると、このページは指定された時間まで休止状態になります。
-   * ページを即座に公開する場合（通常のシナリオの場合）、これらのフィールドは空白のままにします。
+   * 公開ページが公開環境で表示（レンダリング）される日時。 ページは、手動または事前設定の自動レプリケーションで発行する必要があります。
+
+      >[!NOTE]
+      >
+      > 関連する自動レプリケーション [の構成方法の詳細は、「オン/オフ時間 — トリガー構成](/help/operations/replication.md#on-and-off-times-trigger-configuration) 」を参照してください。
+
+      * 既に [発行（手動）されている場合](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 、このページは、指定された時間にレンダリングされるまで休止（非表示）状態に保たれます。
+      * 公開されず、自動レプリケーション用に構成されていない場合、ページは指定された時間に自動的に公開され、レンダリングされます。
+      * 発行されず、自動レプリケーションが設定されていない場合、ページは自動的に発行されないので、ページへのアクセスが試みられると404が表示されます。
+   * 即座に公開するページでは、これらのフィールド(**On Time** 、 **Off Time**)を空のままにし、非アクティブ化されるまで公開環境で使用できます（通常のシナリオ）。
 
 * **オフタイム**
 
-   * 公開されたページのアクティベートが解除される時間です。
-   * アクションがすぐに実行されるようにするには、これらのフィールドを空白のままにします。
+   * 「 **日時** 」と並行して、公開ページが公開環境で非表示になる時間を定義します。
+   * 即座に公開するページでは、これらのフィールド(**On Time** 、 **Off Time**)を空のままにし、非アクティブ化されるまで公開環境で使用できます（通常のシナリオ）。
 
 * **バニティ URL**
 
    * このページのバニティ URL を入力でき、短くより表現力のある URL にすることができます。
    * 例えば、Web サイト `http://example.com` のパス `/v1.0/startpage` で特定されるページに対して、バニティ URL が `welcome` に設定されている場合、`http://example.com/content/v1.0/startpage` のバニティ URL は `http://example.com/welcome` となります。
+
    >[!CAUTION]
    >
    >バニティ URL は次のような特性があります。
@@ -182,9 +191,10 @@ ht-degree: 99%
 
 ### Cloud Services {#cloud-services}
 
-* **クラウドサービスの設定**
+* **クラウドサービス設定**
 
    * Cloud Services のプロパティを定義します。
+
    <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
   -->
 
@@ -193,6 +203,7 @@ ht-degree: 99%
 * **ContextHub 設定**
 
    * 「ContextHub 設定」と「セグメントのパス」を選択します。
+
    <!--Select the [ContextHub Configuration](/help/sites-administering/contexthub-config.md) and [Segments Path](/help/sites-administering/segmentation.md).
   -->
 
@@ -209,6 +220,7 @@ ht-degree: 99%
    * 権限を追加
    * 閉じられたユーザーグループを編集
    * 有効な権限を表示
+
    <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
 
    <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
@@ -220,6 +232,7 @@ ht-degree: 99%
 * **ブループリント**
 
    * マルチサイト管理でのブループリントページのプロパティを定義します。
+
    <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 
    * 変更がライブコピーに適用される条件を制御します。
