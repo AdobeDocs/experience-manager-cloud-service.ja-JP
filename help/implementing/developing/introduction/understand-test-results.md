@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 61%
+source-wordcount: '1614'
+ht-degree: 59%
 
 ---
 
@@ -24,7 +24,7 @@ Cloud ManagerのCloud Servicesパイプラインでサポートされるテス�
 
 * お客様が書いた
 * Adobeで書かれた
-* GoogleのLighthouseを利用したオープンソースツール
+* Powered by Lighthouse from Google as a open source tool
 
    >[!NOTE]
    > お客様が作成したテストとAdobeが作成したテストは、どちらも、これらのタイプのテストを実行するために設計されたコンテナ化されたインフラストラクチャで実行されます。
@@ -90,6 +90,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >`@SuppressWarnings` 注釈をできるだけ具体的にすることをお勧めします。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。ただし、クラスレベルで注釈を付けることもできます。
 
+>[!NOTE]
+>明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。 Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) for more details.
+
 ## 機能テスト {#functional-testing}
 
 機能テストは、次の2つのタイプに分類されます。
@@ -111,7 +114,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。
 
 >[!NOTE]
->「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。詳しくは、[ログのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
+>「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
 
 
 #### 機能テストの作成 {#writing-functional-tests}
@@ -167,7 +170,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
@@ -200,7 +203,7 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 任意のテストにドリルダウンすると、より詳細なページレベルのスコアリングを確認できます。 ユーザーは、特定のテストで個々のページがどのようにスコアされたかと、前回のテスト実行時の変更を確認できます。
 
-個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseによって提供されます。
+個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
 
 ![](assets/page-level-scores.png)
 
