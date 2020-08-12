@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: 64644b2377eb152a6033fcade79aa820d3e6ff26
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 60%
+source-wordcount: '1620'
+ht-degree: 59%
 
 ---
 
@@ -91,7 +91,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >`@SuppressWarnings` 注釈をできるだけ具体的にすることをお勧めします。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。ただし、クラスレベルで注釈を付けることもできます。
 
 >[!NOTE]
->明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。 Refer to [Security Overview for AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) for more details.
+>明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。 Cloud Serviceでのセキュリティの詳細については、「 [Cloud ServiceとしてのAEMの](/help/security/cloud-service-security-overview.md) セキュリティの概要」を参照してください。
 
 ## 機能テスト {#functional-testing}
 
@@ -104,7 +104,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 製品機能テストは、AEMの主要な機能（オーサリングや複製など）を中心とした安定したHTTP統合テスト(IT)のセットです。これにより、アプリケーションコードの変更がこのコア機能を超えた場合に、お客様がデプロイできなくなります。
 
-製品機能テストは、お客様がCloud Managerに新しいコードをデプロイするたびに自動的に実行されます。
+製品機能テストは、お客様がCloud Managerに新しいコードをデプロイした場合に自動的に実行され、スキップすることはできません。
+
+サンプルテストについては、「 [製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 」を参照してください。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
@@ -202,7 +204,7 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 任意のテストにドリルダウンすると、より詳細なページレベルのスコアリングを確認できます。 ユーザーは、特定のテストで個々のページがどのようにスコアされたかと、前回のテスト実行時の変更を確認できます。
 
-個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
+個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseによって提供されます。
 
 ![](assets/page-level-scores.png)
 
