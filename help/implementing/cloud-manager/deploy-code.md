@@ -2,9 +2,9 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: fe2439e506f84a191922416e9c99b496fd90016c
+source-git-commit: c5d5b75f19c5b3d96ed4cd79f9e305b26709675b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 86%
 
 ---
@@ -51,10 +51,10 @@ ht-degree: 86%
    **ステージテスト**&#x200B;には、以下のステップが含まれます。
 
    * 製品の機能テスト：Cloud Managerのパイプライン実行では、ステージ環境に対して実行するテストの実行がサポートされます。
-Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+テストプロセスの詳細については、 [製品機能のテスト](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) （英語）を参照してください。
 
    * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
-      Refer to [Understand your Test Results](/help/implementing/developing/introduction/understand-test-results.md) for details on the testing process.
+      テストプロセスの詳細については、「 [カスタム機能テスト](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) 」を参照してください。
 
    * コンテンツ監査：パイプライン内のこのステップは常に存在し、スキップできません。 実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、コンテンツ監査手順が含まれます。 設定されたページがサービスに送信され、評価されます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 詳細は、 [「コンテンツ監査結果について](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 」を参照してください。
