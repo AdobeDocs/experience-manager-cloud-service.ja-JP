@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 59%
+source-wordcount: '1596'
+ht-degree: 60%
 
 ---
 
@@ -102,10 +102,9 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ### 製品機能テスト {#product-functional-testing}
 
-製品機能テストは、オーサリング、レプリケーションに関する安定したHTTP統合テスト(IT)のセットです。AEMのコア機能に障害が発生した場合に、アプリケーションコードに対する変更がデプロイされるのを防ぎます。
-ユーザーがCloud Managerに新しいコードをデプロイすると、常に自動的に実行されます。
+製品機能テストは、AEMの主要な機能（オーサリングや複製など）を中心とした安定したHTTP統合テスト(IT)のセットです。これにより、アプリケーションコードの変更がこのコア機能を超えた場合に、お客様がデプロイできなくなります。
 
-パイプライン内の製品機能のテスト手順は常に存在し、スキップすることはできません。この手順は、ステージ展開の直後に実行されます。
+ユーザーがCloud Managerに新しいコードをデプロイすると、常に自動的に実行されます。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
