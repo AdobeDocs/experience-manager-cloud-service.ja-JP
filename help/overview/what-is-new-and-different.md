@@ -1,24 +1,24 @@
 ---
-title: 新機能と新機能 —Cloud ServiceとしてのAdobe Experience Manager
-description: 'Cloud Serviceとしての違いおよび新機能 —Adobe Experience Manager(AEM) '
+title: Cloud ServiceとしてのAdobe Experience Manager
+description: '違いと新機能 —Cloud ServiceとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 10%
+source-wordcount: '1834'
+ht-degree: 11%
 
 ---
 
 
 # 新機能と相違点 {#what-is-new-and-what-is-different}
 
-AEMは、長年にわたって、次の両方を利用できます。
+長年の間、AEMは以下の両方を利用できます。
 
 * オンプレミス
 
 * 管理サービスとして
 
-以前のアプローチとCloud ServiceとしてのAEMには、本質的に異なる点があります。
+以前のアプローチとAEMのCloud Serviceには、本質的な違いがあります。
 
 * [アーキテクチャ](#architecture)
 * [アップグレード](#upgrades)
@@ -72,9 +72,9 @@ AEM as a Cloud Service には次の機能が追加されました。
 >
 >詳しくは、「 [導入のデプロイ」を参照してください](/help/implementing/deploying/overview.md)。
 
-Cloud ServiceとしてのAEMで、連続統合と連続配信(CI/CD)を使用して、プロジェクトが完全に最新の状態に保たれるようになりました。 これは、すべてのアップグレード操作が完全に自動化されているため、ユーザーに対するサービスの中断を必要としないことを意味します。
+AEMをCloud Serviceとして使用する場合、継続的な統合と継続的な配信(CI/CD)を使用して、プロジェクトが完全に最新の状態に保たれるようになりました。 これは、すべてのアップグレード操作が完全に自動化されているため、ユーザーに対するサービスの中断を必要としないことを意味します。
 
-アドビは、サービスのすべての操作インスタンスを最新バージョンのAEMコードベースに更新する際に、事前に対処します。
+Adobeは、サービスのすべての運用インスタンスをAEMコードベースの最新バージョンに更新する際に、事前に対処します。
 
 * バグ修正：
 
@@ -94,15 +94,15 @@ Cloud ServiceとしてのAEMで、連続統合と連続配信(CI/CD)を使用し
 
 ## Cloud Manager {#cloud-manager}
 
-Adobe Cloud Managerは、AEMの継続的なアップグレードアプローチにCloud Serviceとして不可欠です。インスタンスに対するすべてのアップデートを制御します。これは必須です。
+AdobeCloud Managerは、AEMの継続的なアップグレードアプローチにCloud Serviceとして不可欠です。インスタンスに対するすべてのアップデートを制御します。これは必須です。
 
-アップデートは、クラウドサービスの新しいバージョンが利用可能な場合にアドビがトリガーできます。 または、Cloud Managerが提供するパイプラインを使用してアプリケーションの更新をトリガーできます。
+更新は、クラウドサービスの新しいバージョンが利用可能な場合に、Adobeによってトリガーされる場合があります。 または、Cloud Managerが提供するパイプラインを使用してアプリケーションの更新をトリガーできます。
 
 Cloud Managerの機能は次のとおりです。
 
-* AEMのプログラムと環境の管理に使用、
+* aemプログラムと環境の管理に使用
 
-* Cloud ServiceとしてのAEMの不可欠な要素； 各新しいテナントは、最初にCloud Managerへのアクセス用にプロビジョニングされます。
+* cloud serviceとしてのAEMの不可欠な要素；各新しいテナントは、最初にCloud Managerへのアクセス用にプロビジョニングされます。
 
 * オペレーションおよび開発スタッフのための単一のエントリーポイント
 
@@ -110,13 +110,13 @@ Cloud Managerの機能は次のとおりです。
 
 * お客様の使用許諾契約に基づき、
 
-* Cloud ServiceとしてのAEMが有効化やトレーニングに使用されている場合、内部主導のアクターから
+* aemをCloud Serviceとして使用し、実現やトレーニングを行う場合は、内部からの影響を受けます。
 
-* を呼び出す必要があります。
+* adobe.comから開始した試行など、外部主導のプロセスから取得した場合。
 
 Cloud Managerは、Cloud ServiceとしてのAEMの主要コンポーネントを作成および設定できるセルフサービスポータルとして発展しました。
 
-* 新規プログラムの作成と管理。
+* これらのプログラム内でAEM環境を作成し、管理します。
 
 * これらのプログラム内でAEM環境を作成し、管理します。
 
@@ -132,13 +132,16 @@ Cloud Managerは、Cloud ServiceとしてのAEMの主要コンポーネントを
 
 * APAC（オーストラリア）
 
+>[!NOTE]
+>AEMでCloud ManagerをCloud Serviceとして使用するには、「Cloud Serviceとしての [Experience Managerへのアクセス](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md) 」を参照してください。
+
 ## 使用開始 {#onboarding}
 
 >[!NOTE]
 >
 >詳しくは、 [オンボーディングを参照してください](/help/onboarding/home.md)。
 
-AEMプロジェクトの開始と管理は、AEMをクラウドサービスとして使用する場合に簡単です。アドビは次のような様々な側面を担当しています。
+AEMプロジェクトの開始と管理は、AEMをクラウドサービスとして使用する場合に、Adobeは次のような多くの側面を担当します。
 
 * ベースラインAEM画像は、特定の用途向けに最適化されています。
 
@@ -146,7 +149,7 @@ AEMプロジェクトの開始と管理は、AEMをクラウドサービスと�
 
 また、現在とは大きく異なります。
 
-* すべての前提条件が満たされていることを確認する評価フェーズ。 例えば、次のように指定します。
+* すべての前提条件が満たされていることを確認する評価フェーズ。例えば、次のように指定します。
 
    * 法的要件
 
@@ -156,7 +159,7 @@ AEMプロジェクトの開始と管理は、AEMをクラウドサービスと�
 
 * 導入要件：
 
-   * コードの更新； 以前のバージョンのAEM用に開発されたお客様向けアプリケーションは、確認して更新する必要があります。
+   * コードの更新；aemの以前のバージョン用に開発されたお客様向けアプリケーションは、レビューを行い、場合によっては更新する必要があります。
 
    * コンテンツの移行
 
@@ -166,7 +169,7 @@ AEMプロジェクトの開始と管理は、AEMをクラウドサービスと�
 >
 >詳細については、『 [開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md) &amp; [開発 — WKNDチュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)』を参照してください。
 
-AEMをCloud Serviceとしてサポートする新しいアーキテクチャには、開発者の体験全体に対していくつかの重要な変更が含まれます。 Cloud ServiceとしてのAEMの主な目標の1つは、経験豊富なお客様(AEMをオンプレミスまたはAdobe Managed Servicesのコンテキストで使用した場合)が、カスタマイズしたコードの大部分を書き直さずに、できるだけ早くAEMに移行できるようにすることです。 ただし、一部の調整が必要な場合もあります。
+AEMをCloud Serviceとしてサポートする新しいアーキテクチャには、開発者の体験全体に対するいくつかの重要な変更が含まれます。 AEMをCloud Serviceとして使用する主な目標の1つは、経験豊富なお客様(AEMをオンプレミスまたはAdobe Managed Servicesのコンテキストで使用)が、カスタマイズしたコードの大部分を書き直さずに、できるだけ早くAEMにCloud Serviceできるようにすることです。 ただし、一部の調整が必要な場合もあります。
 
 ### クラウドの開発 {#aem-as-a-cloud-service-developing-cloud-development}
 
@@ -180,13 +183,13 @@ AEMをCloud Serviceとしてサポートする新しいアーキテクチャに�
 
 このプロセスは、一般に、クラウドファースト開発と呼ばれます。 エンドツーエンドの期間は、（アプリケーションの複雑さに応じて20 ～ 50の間で）数分かかると予想されるので、保留中のコードと設定の変更がクラウドで試行される前に、迅速な開発手法を採用する必要があります。
 
-OSGIバンドルとその関連設定が管理されるWebコンソール、およびAEM QuickStartの以前の一部であるWebコンソールは、Cloud Service環境としてAEMのユーザーが直接アクセスできなくなりました。 新しい開発者コンソールを使用して、このインターフェイスに引き続き読み取り専用モードでアクセスできます。 このコンソールを使用すると、開発者は作成者または発行サービスの特定のノードを直接選択してログインし、デフォルトでブロックされている領域にアクセスできます。
+OSGIバンドルとその関連設定が管理されるWebコンソール、およびAEM QuickStartの以前の部分は、Cloud Service環境としてAEMのユーザーが直接アクセスできなくなりました。 新しい開発者コンソールを使用して、このインターフェイスに引き続き読み取り専用モードでアクセスできます。 このコンソールを使用すると、開発者は作成者または発行サービスの特定のノードを直接選択してログインし、デフォルトでブロックされている領域にアクセスできます。
 
 >[!NOTE]
 >
 >「 [OSGi設定」も参照](/help/implementing/deploying/overview.md#osgi-configuration)
 
-開発者にとって、様々な環境ーのログファイルにすばやくアクセスする必要があるもう1つの一般的な要件です。 AEMをCloud Serviceとして使用する場合、作成者ノードと発行ノードに含まれる異なるノードのログファイルは、ダウンロード可能なファイルの形式、またはAPIを介してCloud Managerで利用できます。
+開発者にとって、様々な環境ーのログファイルにすばやくアクセスする必要があるもう1つの一般的な要件です。 AEMをCloud Serviceとして使用する場合、作成者ノードと発行ノードに含まれる異なるノードのログファイルは、ダウンロード可能なファイルの形式、またはAPI経由でCloud Managerで利用できます。
 
 コードとコンテンツが明確に分割されているので、開発者は、展開の一環として、特定のプロセスを使用してコンテンツを更新できます。 可変コンテンツの一般的な使用例は次のとおりです。
 
@@ -200,15 +203,15 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 
 ### ローカル開発 {#aem-as-a-cloud-service-developing-local-development}
 
-迅速な反復と開発をサポートするために、AEMの外部でAEMCloud Serviceを開発コンテキストとして開発することもできます。 この目的で、開発者は次のアーティファクトを使用できます。
+迅速な反復と開発をサポートするために、Cloud ServiceコンテキストとしてAEM以外でAEMアプリケーションを開発することも可能です。 この目的で、開発者は次のアーティファクトを使用できます。
 
-* Cloud ServiceクイックスタートとしてのAEM: 最新のAEMコードベースの `.jar` ベースで、同じ機能とAPIサーフェスを持つスタンドアロンのインストーラー。
+* Cloud ServiceクイックスタートとしてのAEM:最新のAEMコードベースの `.jar` ベースのスタンドアロンインストーラーで、同じ機能とAPIサーフェスを備えています。
 
-* Cloud ServiceDispatcherSDKとしてのAEM: Dispatcher設定をローカルでテストおよび検証する画像ベースのプロセス
+* Cloud ServiceディスパッチャーSDKとしてのAEM:ディスパッチャー設定をローカルでテストおよび検証する、イメージベースのプロセス
 
 >[!NOTE]
 >
->Cloud QuickStartでは、すべてのAEM SitesおよびAEM Assets機能が使用できるわけではありません。 これは、大部分の拡張機能を開発およびテストできる、単純な作成者環境で構成されています。
+>Cloud QuickStartでは、AEM SitesおよびAEM Assetsのすべての機能が使用できないことに注意してください。 これは、大部分の拡張機能を開発およびテストできる、単純な作成者環境で構成されています。
 
 ## 運用とパフォーマンス {#operations-and-performance}
 
@@ -216,17 +219,17 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 >
 >詳細については、最初に「[バックアップ](/help/operations/backup.md)」、「[インデックス作成](/help/operations/indexing.md)」、「[その他のメンテナンスタスク](/help/operations/maintenance.md)」を参照してください。
 
-AEMをCloud Serviceとして使用する場合、このような操作は自動化され、サービスの中断が不要になります。
+AEMをCloud Serviceとして使用すると、サービスの中断が不要になるように、このような操作が自動化されます。
 
 次の領域で、
 
 * 多くのタスクが自動化されています。
 
-* トポロジーは、最大限の回復性と効率性を実現するために最適化されています。 たとえば、バイナリレスレプリケーションがデフォルトです。
+* トポロジーは、最大限の回復性と効率性を実現するために最適化されています。たとえば、バイナリレスレプリケーションがデフォルトです。
 
 * キュー、ジョブ、バルク処理タスクなどの負荷の大きいタスクは、共有および専用のマイクロサービスで処理されるコアAEMインスタンスから移動されました。
 
-Cloud ServiceとしてのAEMの運用も、新しい監視、レポート、および警告インフラストラクチャでサポートされます。 これにより、Adobe SRE（サイト信頼性エンジニア）は、サービスの健全性をプロアクティブに維持できます。 この建築の様々な要素には様々なヘルスチェックが備わっています。 何らかの理由で、アーキテクチャの特定のノードが異常と見なされる場合、そのノードはサービスから削除され、静かに新しい正常なノードに置き換えられます。
+Cloud ServiceとしてのAEMの運用も、新しい監視、レポート、および警告インフラストラクチャによってサポートされます。 これにより、AdobeSRE（サイト信頼性エンジニア）は、サービスを積極的に健全な状態に維持できます。 この建築の様々な要素には様々なヘルスチェックが備わっています。 何らかの理由で、アーキテクチャの特定のノードが異常と見なされる場合、そのノードはサービスから削除され、静かに新しい正常なノードに置き換えられます。
 
 ## ID 管理 {#identity-management}
 
@@ -234,15 +237,15 @@ Cloud ServiceとしてのAEMの運用も、新しい監視、レポート、お�
 >
 >詳しくは、 [セキュリティ — IMSのサポートを参照してください](/help/security/ims-support.md)。
 
-Cloud ServiceとしてのAEMの大きな変更点は、Adobe IDを統合して作成者層にアクセスすることです。
+Cloud ServiceとしてのAEMに大きな変更があったのは、AdobeIDを完全に統合して作成者層にアクセスすることです。
 
-これには、ユーザーとユーザーグループを管理するために [Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用する必要があります。 ユーザーアカウントを使用すると、ユーザープロファイル情報がAdobeIdentity Managementシステム(IMS)に一元化され、すべてのクラウドサービスで共有されるので、ユーザーはアドビの製品やサービスにアクセスできます。 AEMへのアクセスを割り当てると、ユーザーアカウントはAEM内でCloud Serviceとして（以前と同様）参照できます。 例えば、AEMセキュリティユーザーインターフェイスからロールと権限を定義する場合などです。
+これには、ユーザーとユーザーグループを管理するために [Adobe管理コンソール](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用する必要があります。 ユーザーアカウントを使用すると、Adobeプロファイル情報はAdobeIdentity Managementシステム(IMS)に一元化され、すべてのクラウドサービスで共有されるので、ユーザーはの製品やサービスにアクセスできます。 AEMへのアクセスを割り当てると、ユーザーアカウントはAEMでCloud Serviceとして（以前と同様）参照できます。例えば、AEMセキュリティユーザーインターフェイスからロールと権限を定義する場合などです。
 
 これにより、次の利点が得られます。
 
-* AdobeIdentity Managementシステム(IMS)を使用して、すべてのAdobeクラウドアプリケーションでシングルサインオンを提供する。
+* AdobeIdentity Managementシステム(IMS)を使用して、すべてのAdobeクラウドアプリケーションに対してシングルサインオンを提供する。
 
-* AEMの各特定のインスタンスに対してCloud Serviceとしてローカルのままのユーザー環境設定。
+* ユーザーの環境設定は、AEMの特定の各インスタンスに対してローカルのままCloud Serviceとして使用します。
 
 ## オーサリングユーザーインターフェイス {#authoring-user-interface}
 
@@ -250,19 +253,19 @@ Cloud ServiceとしてのAEMの大きな変更点は、Adobe IDを統合して�
 >
 >詳しくは、 [基本処理](/help/sites-cloud/authoring/getting-started/basic-handling.md) (Basic Handling)を参考にしてください。
 
-オーサリングユーザーインターフェイス(UI)の基本原則は、サイトとアセットの両方にとって、これまでAEMを使用したことのある人には非常になじみ深いものです。
+オーサリングユーザーインターフェイス(UI)の基本原則は、サイトとアセットの両方に関し、過去にAEMを使用したことのある人には非常になじみ深いものです。
 
-主な違いは、UIが完全にタッチ対応であることです。 従来のUIは使用できなくなりました。 そうしないと、基本は変更されず、わずかな変更だけが表示されます。
+主な違いは、UIが完全にタッチ対応であることです。従来のUIは使用できなくなりました。 そうしないと、基本は変更されず、わずかな変更だけが表示されます。
 
 ## AEM Sites {#aem-sites}
 
-Adobe Experience ManagerサイトをCloud Serviceとして使用すると、AEMコンテンツ管理システムの機能とAEM Digital Asset Managementを組み合わせて、コンテンツ主導のパーソナライズされた体験を顧客に提供できます。
+Cloud ServiceとしてのAdobe Experience Manager Sitesは、AEMコンテンツ管理システムの機能とAEM Digital Asset Managementを組み合わせることで、コンテンツ主導のパーソナライズされた体験を顧客に提供できます。
 
 詳しくは、「サイトの [変更点の概要](/help/sites-cloud/sites-cloud-changes.md)」を参照してください。
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager資産をCloud ServiceオファーとしてクラウドネイティブのSaaSソリューションとしてDynamic Mediaし、高速でインパクトを与えるだけでなく、常に最新で常に利用可能で常に学習可能なシステム内で、AI/MLなどの次世代のスマート機能を利用できます。
+Cloud ServiceオファーとしてのAdobe Experience Managerアセットは、デジタルアセット管理とダイナミックメディアの処理を高速かつ影響を与えるだけでなく、常に最新で常に利用可能で、常に学習可能なシステム内で次世代のスマート機能（AI/MLなど）を利用できる、クラウドネイティブのSaaSソリューションです。
 
 アセットの提供には、次世代のアセット処理をクラウドで実行し、高パフォーマンスのアセット取り込みと検索を行う機能が含まれます。
 
@@ -274,8 +277,8 @@ Adobe Experience Manager資産をCloud Serviceオファーとしてクラウド�
 
 * [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
-* [Cloud ServiceとしてのAEMに対する注目すべき変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
-* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
-* [Cloud ServiceとしてのAEM Assetsの導入](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
+* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
