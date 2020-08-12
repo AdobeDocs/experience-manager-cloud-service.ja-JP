@@ -2,10 +2,10 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 86%
+source-wordcount: '983'
+ht-degree: 84%
 
 ---
 
@@ -42,8 +42,8 @@ ht-degree: 86%
    **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
    * 検証：この手順では、現在使用できるリソース（設定済みの分岐が存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
-   * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境について詳しくは、[AEM アプリケーションプロジェクトの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md)を参照してください。
-   * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスについて詳しくは、[テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)を参照してください。
+   * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境の詳細については、 [ビルド環境の詳細](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) を参照してください。
+   * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスの詳細については、 [コード品質テスト](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) (Code Quality Testing)を参照してください。
    * イメージのビルド：このステップには、イメージのビルドに使用されたプロセスのログファイルが含まれます。このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
    * ステージへのデプロイ
 
