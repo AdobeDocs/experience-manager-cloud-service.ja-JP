@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAdobe Experience Manager
 description: '違いと新機能 —Cloud ServiceとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 9882c95972675ee1e0af5de30119d764638f53f3
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1856'
 ht-degree: 11%
 
 ---
@@ -116,11 +116,11 @@ Cloud Managerの機能は次のとおりです。
 
 Cloud Managerは、Cloud ServiceとしてのAEMの主要コンポーネントを作成および設定できるセルフサービスポータルとして発展しました。
 
-* これらのプログラム内でAEM環境を作成し、管理します。
+* 新規プログラムの作成と管理。 詳細は、 [「プログラムとプログラムタイプについて](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 」を参照してください。
 
-* これらのプログラム内でAEM環境を作成し、管理します。
+* これらのプログラム内でAEM環境を作成し、管理します。 Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
-* カスタマーコードと関連する設定を特定の環境にデプロイするためのパイプラインの作成と管理。
+* カスタマーコードと関連する設定を特定の環境にデプロイするためのパイプラインの作成と管理。 詳細は、『CI-CDパイプラインの [設定](/help/implementing/cloud-manager/configure-pipeline.md) 』を参照してください。
 
 * これらのコンポーネントに関する重要なライフサイクルイベント（製品の更新など）の通知。
 
@@ -203,7 +203,7 @@ OSGIバンドルとその関連設定が管理されるWebコンソール、お�
 
 ### ローカル開発 {#aem-as-a-cloud-service-developing-local-development}
 
-迅速な反復と開発をサポートするために、Cloud ServiceコンテキストとしてAEM以外でAEMアプリケーションを開発することも可能です。 この目的で、開発者は次のアーティファクトを使用できます。
+迅速な反復と開発をサポートするために、AEMの外部でAEMアプリケーションをCloud Serviceコンテキストとして開発することも可能です。 この目的で、開発者は次のアーティファクトを使用できます。
 
 * Cloud ServiceクイックスタートとしてのAEM:最新のAEMコードベースの `.jar` ベースのスタンドアロンインストーラーで、同じ機能とAPIサーフェスを備えています。
 
