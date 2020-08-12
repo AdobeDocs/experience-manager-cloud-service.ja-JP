@@ -2,10 +2,10 @@
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法を学習します
 translation-type: tm+mt
-source-git-commit: 218afb360ec3a13f2f4562a703ca3184083fa7f6
+source-git-commit: ea6a1bddaab6819d1f89268ceba3c4d4981729a2
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 100%
+source-wordcount: '315'
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,8 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 * [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [レスポンシブサイト用に最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)
 * [コンテンツの HTTP/2 配信](/help/assets/dynamic-media/http2faq.md)
-* [CDN にキャッシュされたコンテンツの無効化](/help/assets/dynamic-media/invalidate-cdn-cached-content.md)
+* [ダイナミックメディアを使用したCDNキャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Dynamic Media Classicを使用したCDNキャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
