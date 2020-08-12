@@ -2,9 +2,9 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: f878421950bac58702f9d4b418fbcc2dc3e397b2
+source-git-commit: 65c9446dc3c70ce593512e2358f23368f7c97f89
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1598'
 ht-degree: 60%
 
 ---
@@ -104,7 +104,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 製品機能テストは、AEMの主要な機能（オーサリングや複製など）を中心とした安定したHTTP統合テスト(IT)のセットです。これにより、アプリケーションコードの変更がこのコア機能を超えた場合に、お客様がデプロイできなくなります。
 
-ユーザーがCloud Managerに新しいコードをデプロイすると、常に自動的に実行されます。
+製品機能テストは、お客様がCloud Managerに新しいコードをデプロイするたびに自動的に実行されます。
 
 ### カスタム機能テスト {#custom-functional-testing}
 
@@ -169,7 +169,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
