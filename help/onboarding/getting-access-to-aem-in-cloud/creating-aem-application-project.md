@@ -2,10 +2,10 @@
 title: AEM Application Project -Cloud Service
 description: AEM Application Project -Cloud Service
 translation-type: tm+mt
-source-git-commit: 1dfc9cfaba4c7701ebca58346d6eec6b946dd517
+source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 92%
+source-wordcount: '1472'
+ht-degree: 91%
 
 ---
 
@@ -373,3 +373,12 @@ content-package-maven-plugin では、同じようになります。
             </configuration>
         </plugin>
 ```
+
+## その他のリソース {#additional-resources}
+
+Cloud ServiceでのCloud Managerの使用方法については、次の節を参照してください。
+
+* [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
+* [CI-CDパイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)
+* [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
+* [テスト結果について](/help/implementing/developing/introduction/understand-test-results.md)
