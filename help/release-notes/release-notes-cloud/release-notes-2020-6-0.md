@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 translation-type: tm+mt
-source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
+source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
-source-wordcount: '1948'
-ht-degree: 99%
+source-wordcount: '1955'
+ht-degree: 98%
 
 ---
 
@@ -190,4 +190,4 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 * アセットのダウンロード時に、電子メールオプションが選択されていて、有効な電子メール ID が指定されている場合でも、ダウンロードオプションが使用できない。（CQ-4296535）
 * スマートコレクションとして保存されたカスタムフィルターが、アセットに正しく適用されない。（CQ-4294942）
 * 検索とインデックス作成に関する複数の機能強化と、パフォーマンス向上のためのバグ修正。（CQ-4286373）
-* フォルダーのプロパティに 500 内部サーバーエラーが表示される。（CQ-4295701）
+* アセットでフォルダーのプロパティタブにアクセスできず、500エラーが返されます。 （CQ-4295701）
