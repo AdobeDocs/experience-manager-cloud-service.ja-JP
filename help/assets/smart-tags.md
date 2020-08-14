@@ -2,11 +2,11 @@
 title: 人工知能サービスを使用した画像のタグ付け。
 description: Adobe Sensei サービスを使用して、状況依存や説明的なビジネスタグを適用する人工知能サービスによって画像にタグ付けします。
 contentOwner: AG
-translation-type: ht
-source-git-commit: cc24b16cf17f146e773e7974c649adae1bd10ddf
-workflow-type: ht
-source-wordcount: '2401'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+workflow-type: tm+mt
+source-wordcount: '2425'
+ht-degree: 98%
 
 ---
 
@@ -37,9 +37,11 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager] と Adobe 開発者コンソールの統合 {#integrate-aem-with-aio}
 
-Adobe 開発者コンソールを使用して、[!DNL Adobe Experience Manager] とスマートタグを統合できます。この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。
+>[!IMPORTANT]
+>
+>新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 既存のデプロイメントでは、管理者はスマートタグ統合を手動で [設定できます](/help/assets/smart-tags-configuration.md#aio-integration)。
 
-スマートタグを設定するタスクについては、[アセットのスマートタグのための Experience Manager の設定](smart-tags-configuration.md)を参照してください。バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
+を使用して、スマートタグ [!DNL Adobe Experience Manager] と統合でき [!DNL Adobe Developer Console]ます。 この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。スマートタグを設定するタスクについては、[アセットのスマートタグのための Experience Manager の設定](smart-tags-configuration.md)を参照してください。バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
 
 ## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
 
@@ -175,7 +177,7 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 1. 「**[!UICONTROL 保存]**」、「**[!UICONTROL OK]**」の順にクリックして、成功ダイアログを閉じます。
 1. 画像のプロパティページに移動します。昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
-### スマートタグ付き AEM 検索結果について{#understandsearch}
+### スマートタグ付き AEM 検索結果について {#understandsearch}
 
 デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
