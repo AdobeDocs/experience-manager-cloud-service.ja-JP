@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: dafdbffa96cd565379a700c696586222f43022c2
+source-git-commit: bb5bf9527da7ed9039740ef6d0bab27cfd21b84e
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 8%
+source-wordcount: '525'
+ht-degree: 23%
 
 ---
 
@@ -13,6 +13,10 @@ ht-degree: 8%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノートの概要を次に説明します。
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+* 新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 既存のデプロイメントでは、管理者は以前と同様にスマートタグ統合 [](/help/assets/smart-tags-configuration.md#aio-integration) を設定します。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -38,27 +42,27 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 休止状態の環境は、Cloud Managerの **概要** ページで非冬眠にできます。
 
-* 認証バウンドのプライベートMavenリポジトリがサポートされるようになりました。
+* 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
 
 ### バグ修正 {#bug-fixes-cm}
 
-* 不要で望ましくない一部のSonarQubeプラグインが、コード品質スキャンの一部として実行されていました。
+* 不要で望ましくない一部の SonarQube プラグインが、コード品質スキャンの一部として実行されていました。
 
 * パイプラインの実行ページで、ブランチ名の形式が正しくありませんでした。
 
-* 完了したパイプライン実行が正常に完了したと記録されなかったため、パイプラインの新しい実行が行われない場合がありました。
+* 一部のケースで、パイプラインの実行完了が正常に記録されなかったため、パイプラインが新たに実行されないことがありました。
 
-* 内部通信の問題が原因で、パイプライン実行が *停止することがある* 。
+* 内部通信の問題が原因で、パイプラインの実行が&#x200B;*停止*&#x200B;することがあります。
 
 * 新しい組織をプロビジョニングすると、システム管理者以外の管理者ロールを持つ一部のユーザーに、誤ってCloud Managerへのアクセス権が与えられました。
 
 * 特定の条件下で、更新インデックスジョブが複数回並行して開始され、展開エラーが発生しました。
 
-* プログラムカードのツールチップが、一貫して正しくなかった。
+* プログラムカードのツールチップの一貫性が適切に保てていませんでした。
 
 * ユーザーインターフェイスで、削除中に環境に対して操作を試行することが誤って許可されました。
 
-* Cloud Managerの **概要** ページで色が一致していませんでした。
+* There was a color mismatch on the Cloud Manager&#39;s **Overview** page.
 
 ### 既知の問題 {#known-issues-cm}
 
