@@ -3,9 +3,9 @@ title: 拡張スマートタグ
 description: Adobe Sensei の AI および ML サービスを利用して、状況に応じた説明的なビジネスタグを適用し、アセットの検出とコンテンツベロシティ（コンテンツ創出の高速化）を向上させます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c24fa22178914b1186b7f29bdab64d3bca765fe5
+source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1036'
 ht-degree: 97%
 
 ---
@@ -23,13 +23,17 @@ ht-degree: 97%
 3. Keystroke all steps and check all screenshots.
 -->
 
+>[!IMPORTANT]
+>
+>新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 既存の配置では、管理者は次の手順に従って環境を設定します。
+
 ## Adobe 開発者コンソールとの統合 {#aio-integration}
 
 SCS を使用して画像にタグ付けする前に、Adobe 開発者コンソールを使用して [!DNL Adobe Experience Manager] とスマートタグサービスを統合します。バックエンドでは、サービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
 
-* 公開鍵を生成する設定を [!DNL Experience Manager] に作成します。[OAuth 統合用の公開証明書を取得します。](#obtain-public-certificate)
-* [Adobe 開発者コンソールで統合を作成し、生成した公開鍵をアップロードします。](#create-aio-integration)
-* [APIキーとAdobe Developer Consoleの他の資格情報を使用して、](#configure-smart-content-service)[!DNL Experience Manager] インスタンスでスマートタグを設定します。
+* 公開鍵を生成する設定を [!DNL Experience Manager] に作成します。OAuth 統合用の[公開証明書を取得します](#obtain-public-certificate)。
+* [Adobe 開発者コンソールで統合を作成](#create-aio-integration)し、生成した公開鍵をアップロードします。
+* API キーやその他の Adobe 開発者コンソールの資格情報を使用して、[!DNL Experience Manager] インスタンスで[スマートタグを設定](#configure-smart-content-service)します。
 * [設定をテストします](#validate-the-configuration)。
 * [証明書の有効期限が切れた後に再設定します](#certrenew)。
 
@@ -76,7 +80,7 @@ Adobe 開発者コンソールで統合を作成してスマートタグを使�
 1. 「**[!UICONTROL 認証サーバー]**」フィールドに `https://ims-na1.adobelogin.com` URL を入力します。
 1. 「**[!UICONTROL API キー]**」フィールドに、[!DNL Adobe Developer Console] から&#x200B;**[!UICONTROL クライアント ID]** を入力します。
 1. 「**[!UICONTROL クライアントの秘密鍵]**」フィールドに、[!DNL Adobe Developer Console] から&#x200B;**[!UICONTROL クライアントの秘密鍵]**&#x200B;を入力します。「**[!UICONTROL クライアントの秘密鍵を取得]**」オプションをクリックして表示します。
-1. [!DNL Adobe Developer Console]のご自身のプロジェクトで、左側の余白から「**[!UICONTROL サービスアカウント（JWT）]**」をクリックします。「JWT **[!UICONTROL を生成]**」タブをクリックします。「**[!UICONTROL コピー]**」をクリックして、表示された **[!UICONTROL JWT ペイロード]**&#x200B;をコピーします。この値を、[!DNL Experience Manager] の「**[!UICONTROL ペイロード]**」フィールドに指定します。「**[!UICONTROL 作成]**」をクリックします。
+1. [!DNL Adobe Developer Console]のご自身のプロジェクトで、左側の余白から「**[!UICONTROL サービスアカウント（JWT）]**」をクリックします。「**[!UICONTROL JWT を生成]**」タブをクリックします。「**[!UICONTROL コピー]**」をクリックして、表示された **[!UICONTROL JWT ペイロード]**&#x200B;をコピーします。この値を、[!DNL Experience Manager] の「**[!UICONTROL ペイロード]**」フィールドに指定します。「**[!UICONTROL 作成]**」をクリックします。
 
 ### 設定の検証 {#validate-the-configuration}
 
