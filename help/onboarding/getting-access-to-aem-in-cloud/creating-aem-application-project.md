@@ -2,10 +2,10 @@
 title: AEM Application Project -Cloud Service
 description: AEM Application Project -Cloud Service
 translation-type: tm+mt
-source-git-commit: ff9823f3d083ebc1dc5d130919144fe3678a13ed
+source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 91%
+source-wordcount: '1543'
+ht-degree: 89%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 ## ウィザードを使用した AEM アプリケーションプロジェクトの作成 {#using-wizard-to-create-an-aem-application-project}
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
+新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 
 Cloud Manager で AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
@@ -59,6 +59,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
+* インストールされる Java バージョンは Oracle JDK 8u202 および 11.0.2 です。
 * 必要な追加のシステムパッケージが、次のようにいくつかインストールされています。
 
    * bzip2
@@ -75,6 +76,38 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
 
+### Java 11サポートの使用 {#using-java-support}
+
+Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。プロジェクトでJava 11を使用したい場合は、Maven Toolchainsプラグインを使用して使用できます。
+
+これをおこなうには、pom.xml ファイルに次のような `<plugin>` エントリを追加します。
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-toolchains-plugin</artifactId>
+    <version>1.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>toolchain</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <toolchains>
+            <jdk>
+                <version>11</version>
+                <vendor>oracle</vendor>
+           </jdk>
+        </toolchains>
+    </configuration>
+</plugin>
+```
+
+>[!NOTE]
+>サポートされているベンダーの値 `oracle` はとで `sun`す。
+>サポートされているバージョン値は、 `1.8`、 `1.11`および `11`です。
 
 ## 環境変数 {#environment-variables}
 
