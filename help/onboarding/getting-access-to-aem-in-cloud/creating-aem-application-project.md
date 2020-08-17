@@ -2,9 +2,9 @@
 title: AEM Application Project -Cloud Service
 description: AEM Application Project -Cloud Service
 translation-type: tm+mt
-source-git-commit: 2a89c8039f3d2135d8944822d3a4381142bbdb75
+source-git-commit: 696014ea61c049e719c8c9fdccc2a85b087c2466
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1549'
 ht-degree: 89%
 
 ---
@@ -78,7 +78,9 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 ### Java 11サポートの使用 {#using-java-support}
 
-Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。プロジェクトでJava 11を使用したい場合は、Maven Toolchainsプラグインを使用して使用できます。
+Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。
+
+Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
 
 これをおこなうには、pom.xml ファイルに次のような `<plugin>` エントリを追加します。
 
@@ -107,6 +109,7 @@ Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマー�
 
 >[!NOTE]
 >サポートされているベンダーの値 `oracle` はとで `sun`す。
+>
 >サポートされているバージョン値は、 `1.8`、 `1.11`および `11`です。
 
 ## 環境変数 {#environment-variables}
