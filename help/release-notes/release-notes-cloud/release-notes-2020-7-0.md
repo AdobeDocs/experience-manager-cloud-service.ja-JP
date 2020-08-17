@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
+source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 38%
+source-wordcount: '1056'
+ht-degree: 36%
 
 ---
 
@@ -30,11 +30,11 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * 設定は、Experience Managerリポジトリではなく、に保存され `/conf` るよう `/etc/cloudsettings` になりました。
 
-## Adobe Experience Manager Assets as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### 新機能 {#what-is-new-assets}
+### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] は、アセットを処理するための拡張性と拡張性に優れたサービスです。 管理者は、を使用して作成したカスタムExperience Managerを呼び出すようにアプリケーションを設定でき [!DNL Asset Compute Service]ます。 開発者はこのサービスを使用して、複雑な使用例に対応した特殊なカスタムアプリケーションを作成できます。 このWebサービスでは、様々なファイルタイプのサムネールを生成したり、Adobeファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前駆としてのフルテキストの抽出を行ったりできます。 詳しくは、アセットマイクロサービスと処理プロファイルの [使用を参照してください](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] は、アセットを処理するための拡張性と拡張性に優れたサービスです。 管理者は、を使用 [!DNL Experience Manager] して作成したカスタムアプリケーションを呼び出すように設定でき [!DNL Asset Compute Service]ます。 開発者はこのサービスを使用して、複雑な使用例に対応した特殊なカスタムアプリケーションを作成できます。 このWebサービスでは、様々なファイルタイプのサムネールを生成したり、Adobeファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前駆としてのフルテキストの抽出を行ったり、利用可能なすべてのサービスでアセットを実行できます。 [!DNL Sensei] 詳しくは、アセットマイクロサービスと処理プロファイルの [使用を参照してください](/help/assets/asset-microservices-configure-and-use.md)。
 
 * Cloud Service [!DNL Dynamic Media] としてのの初期設定 [!DNL Experience Manager] が改善され、より堅牢になりました。 これで、管理者にプロセスの進行状況を提供できます。
 
@@ -42,7 +42,13 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Cloud Serviceの展開と互換性のないワークフローステップは、 [!UICONTROL ワークフローモデル] エディターで警告のマークが付けられるようになりました。 また、Cloud Service環境上で既存のワークフローを実行する場合、互換性のないワークフロー手順はスキップされます。
 
-* Cloud Managerの環境に関連付けられたGitプロジェクトにデプロイされ `/conf/global` たユーザーが作成したワークフローモデルは、に自動的にデプロイされ、Experience Managerで使用で `/var` きます。 顧客が変更した、下位の製品ワークフローモデル `/libs` は、に自動的にはデプロイされません `/var`。
+* の環境に関連付けられたGitプロジェクトに展開され `/conf/global` た顧客が作成したワークフローモデルは、に自動的に展開さ [!DNL Cloud Manager] れ、で使用でき `/var`[!DNL Experience Manager]ます。 顧客が変更した、下位の製品ワークフローモデル `/libs` は、に自動的にはデプロイされません `/var`。
+
+### バグ修正 {#assets-bugs-fixed}
+
+* コレクションに含まれるアセットに対して、アセットの移動ウィザードが期待どおりに読み込まれません。 （CQ-4296756）
+* との値は、XMPの書き戻し `dam:size` から除外 `dam:sha1` されます。 （CQ-4237355）
+* アセットを一括して非公開にすると、要求URIが長すぎることを示すエラーが [!DNL Brand Portal] 生成されます。 （CQ-4299474）
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
