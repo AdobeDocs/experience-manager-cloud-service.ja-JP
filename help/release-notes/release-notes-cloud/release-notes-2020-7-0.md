@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 85f5262c2af7502e98fcb60b51b9b13d2c2c0f2c
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 37%
+source-wordcount: '1018'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,10 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 
    詳細は、「 [パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)」を参照してください。
+
+* 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
+
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11サポート [の使用](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
