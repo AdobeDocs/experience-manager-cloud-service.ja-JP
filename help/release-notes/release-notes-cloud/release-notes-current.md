@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 5a53e13a3692fbb8ab3ae7760f13b6908d15db3a
+source-git-commit: ded8f565ac80b5819eeee15396da5987da43dfd0
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 24%
+source-wordcount: '518'
+ht-degree: 22%
 
 ---
 
@@ -42,9 +42,6 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 休止状態の環境は、Cloud Managerの **概要** ページで非冬眠にできます。
 
-* 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
-
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11サポート [の使用](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
