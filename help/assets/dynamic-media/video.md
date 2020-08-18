@@ -1,11 +1,11 @@
 ---
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します。
-translation-type: ht
-source-git-commit: 591e33f255a82371dea6fbe07ed9c9b43764b12c
-workflow-type: ht
-source-wordcount: '10058'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+workflow-type: tm+mt
+source-wordcount: '10057'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ここでは、Dynamic Media でのビデオの操作方法について説明します。
 
-## クイックスタート：ビデオ{#quick-start-videos}
+## クイックスタート：ビデオ {#quick-start-videos}
 
 次のワークフローの手順説明は、Dynamic Media 内のアダプティブビデオセットをすぐに使い始めることを目的としたものです。各手順に続いて、詳しい説明のあるトピックの見出しへのリンクが記載されています。
 
@@ -117,7 +117,7 @@ ht-degree: 100%
 
 
 
-## Dynamic Media でのビデオの操作{#working-with-video-in-dynamic-media}
+## Dynamic Media でのビデオの操作 {#working-with-video-in-dynamic-media}
 
 Dynamic Media のビデオは、高品質のアダプティブビデオを簡単に公開して、デスクトップ、iOS、Android、Blackberry、Windows などのモバイルデバイスを含む複数の画面にストリーミングするためのエンドツーエンドのソリューションです。アダプティブビデオセットでは、同じビデオを、400 kbps、800 kbps、1000 kbps などの様々なビットレートと形式でエンコードしたバージョンにグループ分けします。デスクトップコンピューターまたはモバイルデバイスによって、利用可能な帯域幅が検出されます。
 
@@ -176,7 +176,7 @@ HTML5 と CSS を使用して再生コンポーネントをデザインできる
 
 『Adobe Scene7 ビューアリファレンスガイド』の [HTML5 ビューアについて](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.translate.html)も参照してください。
 
-### HTML5 ビデオビューアを使用した、デスクトップコンピューターおよびモバイルデバイス上でのビデオ再生{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### HTML5 ビデオビューアを使用した、デスクトップコンピューターおよびモバイルデバイス上でのビデオ再生 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 デスクトップおよびモバイルへのアダプティブビデオストリーミングの場合、ビットレートの切り替えに使用されるビデオは、アダプティブビデオセット内のすべての MP4 ビデオに基づいています。
 
@@ -263,7 +263,7 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
  </tbody>
 </table>
 
-## Dynamic Media ビデオソリューションのアーキテクチャ{#architecture-of-dynamic-media-video-solution}
+## Dynamic Media ビデオソリューションのアーキテクチャ {#architecture-of-dynamic-media-video-solution}
 
 次の図に、アップロード後、（Dynamic Media Hybrid モードの）DMGateway によってエンコードされ、公開されるビデオのオーサリングワークフローの全体像を示します。
 
@@ -323,7 +323,7 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 例えば、幅 1,440、高さ 1,080 のビデオの縦横比は 1,440/1,080、つまり 1.33 になります。このビデオファイルをエンコードするには、縦横比 4:3 のビデオエンコーディングプリセットを選択します。
 
-### ビットレート{#bitrate}
+### ビットレート {#bitrate}
 
 ビットレートとは、1 秒間のビデオ再生を作成するためにエンコードされるデータの量です。ビットレートは、1 秒あたりのキロビット数（Kbps）の単位で測定します。
 
@@ -408,7 +408,7 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセットの使用を推奨しています。MP4 ファイルでは H.264 ビデオコーデックが使用されるので、高品質のビデオを圧縮されたファイルサイズで作成することができます。
 
-## YouTube へのビデオの公開{#publishing-videos-to-youtube}
+## YouTube へのビデオの公開 {#publishing-videos-to-youtube}
 
 以前作成した YouTube チャンネルに、オンプレミス AEM ビデオアセットを直接公開できます。
 
@@ -536,7 +536,7 @@ Google Cloud を設定するには：
 
    Google アカウントからログアウトします。次に、YouTube チャンネルを作成します。
 
-### YouTube チャンネルの作成{#creating-a-youtube-channel}
+### YouTube チャンネルの作成 {#creating-a-youtube-channel}
 
 YouTube にビデオを公開するには、1 つ以上のチャネルが必要です。既に YouTube チャンネルを作成している場合は、このタスクをスキップして、次の「[公開用タグの追加](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)」タスクに進んでください。
 
@@ -585,7 +585,7 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 * 6.4 以前の AEM で YouTube を設定するには、[6.4 以前の AEM での YouTube](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before) の設定を参照してください。
 * AEM 6.4 以降で YouTube を設定するには、](#setting-up-youtube-in-aem-and-later)AEM 6.4 以降での YouTube の設定[を参照してください。
 
-#### AEM 6.4 以降での YouTube の設定{#setting-up-youtube-in-aem-and-later}
+#### AEM 6.4 以降での YouTube の設定 {#setting-up-youtube-in-aem-and-later}
 
 1. Dynamic Media のインスタンスに管理者としてログインしてください。
 1. AEM の左上隅にある AEM ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL Cloud Services]**／**[!UICONTROL YouTube 公開設定]**&#x200B;をタップします。
@@ -735,7 +735,7 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 
    詳しくは、[メタデータプロファイル](/help/assets/metadata-profiles.md)と[ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)を参照してください。
 
-### YouTube チャンネルへのビデオの公開{#publishing-videos-to-your-youtube-channel}
+### YouTube チャンネルへのビデオの公開 {#publishing-videos-to-your-youtube-channel}
 
 次は、前の手順で追加したタグを、ビデオアセットに関連付けます。このプロセスによって、AEM は、YouTube チャンネルに公開するアセットを把握します。
 
@@ -795,7 +795,7 @@ Web アプリケーションに YouTube URL をリンクするには：
 1. 「**[!UICONTROL 詳細]**」タブをクリックします。
 1. 「YouTube への公開」の「YouTube URL リスト」で、URL テキストを選択し、Web ブラウザーにコピーしてアセットをプレビューするか、Web コンテンツページに追加します。
 
-### ビデオを非公開にして YouTube から削除{#unpublishing-videos-to-remove-them-from-youtube}
+### ビデオを非公開にして YouTube から削除 {#unpublishing-videos-to-remove-them-from-youtube}
 
 AEM でビデオアセットを非公開にすると、そのビデオは YouTube から削除されます。
 
@@ -815,7 +815,7 @@ AEM では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube 
 1. ページの右上隅にある「**[!UICONTROL 次へ]**」をタップします。
 1. ページの右上隅にある「**[!UICONTROL 非公開]**」をタップします。
 
-## ビデオエンコーディングと YouTube への公開の進行状況の監視{#monitoring-video-encoding-and-youtube-publishing-progress}
+## ビデオエンコーディングと YouTube への公開の進行状況の監視 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 ビデオエンコーディングが適用されたフォルダーに新しいビデオをアップロードしたり、YouTube にビデオを公開したりする場合は、ビデオエンコーディング／YouTube への公開の進行状況（エラー状況）を様々な方法で監視できます。YouTube への公開の実際の進行状況は、ログを介してのみ把握できますが、YouTube への公開が失敗したか成功したかは、別の方法で示されます（以下の手順で説明します）。また、YouTube の公開ワークフローやビデオエンコーディングが完了するか中断されると、そのことを知らせる電子メール通知を受け取ることもできます。
 
@@ -974,7 +974,7 @@ For YouTube publishing jobs, do the following:
 
 1. 上位の公開済みビデオを示した表で、ビデオ名をタップしてビデオを再生し、そのビデオのオーディエンス保持（ドロップオフ）レポートを表示します。
 
-### Scene7 HTML5 ビューア SDK を使用して作成したビデオビューアに基づくビデオレポートの表示{#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Scene7 HTML5 ビューア SDK を使用して作成したビデオビューアに基づくビデオレポートの表示 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Dynamic Media で標準提供されているビデオビューアを使用している場合、または標準提供のビデオビューアからカスタムのビューアプリセットを作成した場合は、ビデオレポートを表示するための追加手順は必要ありません。これに対して、Scene7 HTML5 ビューア SDK から独自のビデオビューアを作成した場合は、次の手順を実行して、ビデオビューアが Dynamic Media のビデオレポートにトラッキングイベントを送信するように設定する必要があります。
 
@@ -1066,7 +1066,7 @@ URL で JSON 機能を使用する方法について詳しくは、*Scene7 画�
 
    良い結果を得るためには、このツールを Explorer 9 以上、Google Chrome、または Safari で使用してください。
 
-   ツールの「**[!UICONTROL ビデオファイルの URL を入力]**」フィールドにビデオファイルの URL をコピーして貼り付け、「**[!UICONTROL 読み込み**」をクリックします。[アセットの URL の取得](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)を参照して、ビデオファイルそのものの URL を取得し、それを「**[!UICONTROL ビデオファイルの URL を入力]**」フィールドに貼り付けてください。その後、Internet Explorer、Chrome、または Safari で、ビデオを再生できます。
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. [アセットの URL の取得](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)を参照して、ビデオファイルそのものの URL を取得し、それを「**[!UICONTROL ビデオファイルの URL を入力]**」フィールドに貼り付けてください。その後、Internet Explorer、Chrome、または Safari で、ビデオを再生できます。
 
    ここで、サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。終了したら、キャプションファイルの内容をコピーし、空のテキストエディターに貼り付けて、ファイル拡張子 .vtt を付けて保存します。
 
