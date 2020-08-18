@@ -2,17 +2,17 @@
 title: 画像プリセットの管理
 description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
 workflow-type: tm+mt
-source-wordcount: '3651'
-ht-degree: 99%
+source-wordcount: '3649'
+ht-degree: 98%
 
 ---
 
 
 # 画像プリセットの管理{#managing-image-presets}
 
-画像プリセットを使用すると、異なるサイズや異なる形式の画像、あるいは動的に生成された他の画像プロパティを設定した画像を動的に配信できます。各画像プリセットは、画像表示用のサイズやフォーマットに関するコマンドの事前定義済みコレクションを表します。画像プリセットの作成時には、画像配信用のサイズを選択します。またフォーマットコマンドも選択し、表示対象画像の配信時に画像の見た目が最適化されるようにします。
+画像プリセットを使用すると、AEM Assets は異なるサイズや異なる形式の画像、あるいは動的に生成された他の画像プロパティを設定した画像を動的に配信できます。各画像プリセットは、画像表示用のサイズやフォーマットに関するコマンドの事前定義済みコレクションを表します。画像プリセットの作成時には、画像配信用のサイズを選択します。またフォーマットコマンドも選択し、表示対象画像の配信時に画像の見た目が最適化されるようにします。
 
 管理者は、アセットを書き出すためのプリセットを作成できます。ユーザーは画像を書き出すときにプリセットを選択できます。また、この操作によって、管理者が指定した仕様に合わせて画像が再フォーマットされます。
 
@@ -251,7 +251,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 「**保存**」をクリックします。
+1. 「**[!UICONTROL 保存**」をクリックします。
 
 ### レスポンシブな画像プリセットの作成 {#creating-a-responsive-image-preset}
 
@@ -271,7 +271,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 画像プリセットを作成または編集するときに、ここで説明するオプションを使用できます。またアドビは、最初に使用すべきオプションとして、以下の「ベストプラクティス」のオプションをお勧めします。
 
-* **形式**（「**[!UICONTROL 基本]**」タブ）- 「**[!UICONTROL JPEG]**」形式または要件に合う別の形式を選択します。すべての Web ブラウザーでは JPEG 画像形式がサポートされています。この形式は、ファイルサイズが小さく画質とのバランスも取れています。ただし、JPEG 形式の画像は非可逆圧縮方式を使用しているので、圧縮設定が小さすぎると不要な画像アーティファクトが発生する可能性があります。このため、アドビは圧縮品質を 75 に設定することをお勧めします。この設定は、画質と小さなファイルサイズのバランスが取れた設定です。
+* **[!UICONTROL 「形式]** (**[!UICONTROL 「基本]** 」タブ)」 - **[!UICONTROL JPEG]** 、または要件に合う別の形式を選択します。すべてのWebブラウザーがJPEG画像形式をサポートしています。小さいファイルサイズと画質のバランスがとれています。ただし、JPEG形式の画像は非可逆圧縮方式を使用しているので、圧縮設定が低すぎると、不要な画像アーティファクトが発生する可能性があります。 このため、アドビは圧縮品質を 75 に設定することをお勧めします。この設定は、画質と小さなファイルサイズのバランスが取れた設定です。
 
 * **[!UICONTROL シンプルシャープを有効にする]** - 「**[!UICONTROL シンプルシャープを有効にする]**」は選択しません（このシャープフィルターでは、アンシャープマスク設定よりも細かく制御できません）。
 
@@ -372,7 +372,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープについては、<a href="https://docs.adobe.com/content/help/ja-JP/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">画像のシャープニング</a>を参照してください。
+      シャープニングについては、<a href="https://docs.adobe.com/content/help/ja-JP/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">画像のシャープニング</a>を参照してください。
     </div> </td>
   </tr>
   <tr>
@@ -392,7 +392,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
   </tr>
   <tr>
    <td><strong>画像の修飾子</strong></td>
-   <td><p>UI で使用できる共通の画像設定のほか、Dynamic Media では「<strong>画像の修飾子</strong>」フィールドで画像の詳細を多数指定できます。これらのパラメーターは、<a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Image Server プロトコルのコマンドリファレンス（英語）</a>で定義されています。</p> <p>重要：API にリストされている次の関数はサポートされていません。</p>
+   <td><p>UI で使用できる共通の画像設定のほか、Dynamic Media では「<strong>画像の修飾子</strong>」フィールドで画像の詳細を多数指定できます。これらのパラメーターは、<a href="https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.translate.html">Image Server プロトコルのコマンドリファレンス（英語）</a>で定義されています。</p> <p>重要：API にリストされている次の関数はサポートされていません。</p>
     <ul>
      <li>基本的なテンプレートコマンドおよびテキストレンダリングコマンド：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> および <code>textPs=</code></li>
      <li>ローカライゼーションコマンド：<code>locale=</code> および <code>req=xlate</code></li>
@@ -473,4 +473,4 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 ### 画像プリセットの削除 {#deleting-image-presets}
 
 1. AEM で、AEM のロゴをタップしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして、**[!UICONTROL アセット／画像プリセット]**&#x200B;の順に移動します。
-1. プリセットを選択してから、「**削除**」をクリックします。プリセットを削除してよいか確認するメッセージが表示されます。「**[!UICONTROL 削除]**」をタップして削除するか、「**[!UICONTROL キャンセル]**」をタップして中止します。
+1. プリセットを選択し、「**[!UICONTROL 削除]**」をクリックします。プリセットを削除してよいか確認するメッセージが表示されます。「**[!UICONTROL 削除]**」をタップして削除するか、「**[!UICONTROL キャンセル]**」をタップして中止します。
