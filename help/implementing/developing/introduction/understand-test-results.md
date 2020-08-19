@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 55%
+source-wordcount: '1702'
+ht-degree: 53%
 
 ---
 
@@ -169,6 +169,25 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 テストクラスは、通常の JUnit テストにする必要があります。テストインフラストラクチャは、aem-testing-clients テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことを強くお勧めします。詳しくは、[Git リンク](https://github.com/adobe/aem-testing-clients)を参照してください。
 
+#### ローカルテストの実行 {#local-test-execution}
+
+テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。
+
+ただし、これらのテストを実行する場合は、aem-testing-clients（および基になるSling Testing Clients）が期待する様々なシステムプロパティを設定する必要があります。
+
+これらのシステムプロパティは次のとおりです。
+
+* `sling.it.instances - should be set to 2`
+* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
+* `sling.it.instance.runmode.1 - should be set to author`
+* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
+* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
+* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
+* `sling.it.instance.runmode.2 - should be set to publish`
+* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
+* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
+
+
 ## コンテンツ監査テスト {#content-audit-testing}
 
 コンテンツ監査は、GoogleのオープンソースツールであるLighthouseが提供するCloud Manager Sites Productionパイプラインで使用できる機能です。 この機能は、すべてのCloud Manager実稼働パイプラインで有効になります。
@@ -179,7 +198,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
@@ -212,25 +231,7 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 任意のテストにドリルダウンすると、より詳細なページレベルのスコアリングを確認できます。 ユーザーは、特定のテストで個々のページがどのようにスコアされたかと、前回のテスト実行時の変更を確認できます。
 
-個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseによって提供されます。
+個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
 
 ![](assets/page-level-scores.png)
-
-## ローカルテストの実行 {#local-test-execution}
-
-テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。
-
-ただし、これらのテストを必ず実行する場合は、aem-testing-clients（およびそのベースとなる Sling Testing Client）で想定している様々なシステムプロパティを設定する必要があります。
-
-これらのシステムプロパティは次のとおりです。
-
-* `sling.it.instances - should be set to 2`
-* `sling.it.instance.url.1 - should be set to the author URL, for example, http://localhost:4502`
-* `sling.it.instance.runmode.1 - should be set to author`
-* `sling.it.instance.adminUser.1 - should be set to the author admin user, e.g. admin`
-* `sling.it.instance.adminPassword.1 - should be set to the author admin password`
-* `sling.it.instance.url.2 - should be set to the author URL, for example, http://localhost:4503`
-* `sling.it.instance.runmode.2 - should be set to publish`
-* `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
-* `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
 
