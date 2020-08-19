@@ -3,10 +3,10 @@ sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: f3d2d72dd9a0e025a3a88eecfd2b3ce466262093
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 97%
 
 ---
 
@@ -18,6 +18,11 @@ ht-degree: 100%
    + [環境の管理](cloud-manager/manage-environments.md)
    + [CI/CD パイプラインの設定](cloud-manager/configure-pipeline.md)
    + [コードのデプロイ](cloud-manager/deploy-code.md)
+   + テスト結果について {#test-results}
+      + [概要](/help/implementing/cloud-manager/overview-test-results.md)
+      + [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
+      + [コンテンツ監査テスト](/help/implementing/cloud-manager/content-audit-testing.md)
    + [カスタムコード品質ルールについて](cloud-manager/custom-code-quality-rules.md)
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
    + [通知について](cloud-manager/notifications.md)
@@ -37,7 +42,6 @@ ht-degree: 100%
    + [AEM as a Cloud Service でのオーバーレイ](developing/introduction/overlays.md)
    + [ログ](developing/introduction/logging.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
-   + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
