@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: bf0ecdfa4685d7ce9b26266e19af71199dd117a4
 workflow-type: tm+mt
-source-wordcount: '1700'
-ht-degree: 54%
+source-wordcount: '1703'
+ht-degree: 55%
 
 ---
 
@@ -36,9 +36,13 @@ Cloud ManagerのCloud Servicesパイプラインでサポートされるテス�
 
 さまざまなタイプのパイプラインの詳細については、 [『CI-CDパイプラインの](/help/implementing/cloud-manager/configure-pipeline.md) 設定』を参照してください。
 
+### カスタムコード品質ルールについて {#understanding-code-quality-rules}
+
 コード品質テストでは、ソースコードがスキャンされ、デプロイメントが特定の品質基準を満たしていることが確認されます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)」と呼ばれます。
 
-この手順の結果は、 *評価として提供されます*。 次の表に、様々なテスト条件の評価の概要を示します。
+You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
+
+この手順の結果は、 *評価として提供されます*。 テスト条件の評価の概要を次の表に示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -50,9 +54,6 @@ Cloud ManagerのCloud Servicesパイプラインでサポートされるテス�
 | 未解決の問題 | 問題の全体的なタイプ - 脆弱性、バグ、コードスメル | 情報 | > 0 |
 | 重複行 | 重複しているブロックに含まれている行の数。<br/>コードブロックが重複していると見なされるための条件：<br/><ul><li>**Java 以外のプロジェクトの場合：**</li><li>100 個以上の連続した重複トークンが必要です。</li><li>これらのトークンは、少なくとも次の場所に分散している必要があります。 </li><li>30 行の COBOL コード </li><li>20 行の ABAP コード </li><li>10 行の他言語コード</li><li>**Java プロジェクトの場合：**</li><li> トークンと行の数にかかわらず、10 個以上の連続した重複ステートメントが必要です。</li></ul> <br/>重複を検出する際は、インデントの違いと文字列リテラルの違いは無視されます。 | 情報 | > 1％ |
 | Cloud Service の互換性 | 識別された Cloud Service の互換性に関する問題の数です。 | 情報 | > 0 |
-
-
-ここでルールのリスト [code-quality-rules.xlsx](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx) をダウンロードできます。
 
 >[!NOTE]
 >
@@ -178,7 +179,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
