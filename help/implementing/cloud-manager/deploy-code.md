@@ -2,7 +2,7 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
+source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 82%
@@ -43,7 +43,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
 
    * 検証：この手順では、現在使用できるリソース（設定済みの分岐が存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
    * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境の詳細については、 [ビルド環境の詳細](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) を参照してください。
-   * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスの詳細については、 [コード品質テスト](/help/implementing/developing/introduction/understand-test-results.md#code-quality-testing) (Code Quality Testing)を参照してください。
+   * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスの詳細については、 [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md) (Code Quality Testing)を参照してください。
    * イメージのビルド：このステップには、イメージのビルドに使用されたプロセスのログファイルが含まれます。このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
    * ステージへのデプロイ
 
@@ -51,13 +51,13 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    **ステージテスト**&#x200B;には、以下のステップが含まれます。
 
    * 製品の機能テスト：Cloud Managerのパイプライン実行では、ステージ環境に対して実行するテストの実行がサポートされます。
-詳細は、 [製品機能のテスト](/help/implementing/developing/introduction/understand-test-results.md#product-functional-testing) を参照してください。
+詳細は、 [製品機能のテスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) を参照してください。
 
    * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
-      詳細は、「 [カスタム機能テスト](/help/implementing/developing/introduction/understand-test-results.md#custom-functional-testing) 」を参照してください。
+      詳細は、「 [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 」を参照してください。
 
    * コンテンツ監査：パイプライン内のこのステップは常に存在し、スキップできません。 実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、コンテンツ監査手順が含まれます。 設定されたページがサービスに送信され、評価されます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
-詳細は、 [「コンテンツ監査結果について](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 」を参照してください。
+詳細は、 [「コンテンツ監査結果について](/help/implementing/cloud-manager/content-audit-testing.md) 」を参照してください。
 
       ![](assets/testing-tab.png)
 
