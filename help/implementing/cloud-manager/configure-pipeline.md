@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: f0f49b935cb0ec2a7fe6115294be2b79cc8bac3d
+source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -87,7 +87,7 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
    >[!NOTE]
    > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO(Search Engine Optimization)、ベストプラクティス、PWA（プログレッシブWeb App）のテストに従って評価されます。
 
-   詳細は、「コンテンツ監査結果 [について](/help/implementing/developing/introduction/understand-test-results.md#content-audit-testing) 」を参照してください。
+   詳細は、「コンテンツ監査結果 [について](/help/implementing/cloud-manager/content-audit-testing.md) 」を参照してください。
 
    「 **追加New Page Override** 」をクリックして、コンテンツ監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
 
