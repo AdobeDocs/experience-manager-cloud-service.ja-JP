@@ -2,10 +2,10 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 2fa0ef7893fd4f06896402e33bf45d525f0817a5
+source-git-commit: 6eee78f2883b15f793662dc1474b7b7874903702
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 84%
+source-wordcount: '984'
+ht-degree: 82%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 84%
 
 ## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
-**パイプライン**（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
+Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
 
 1. Cloud Manager で「**デプロイ**」をクリックして、デプロイメントプロセスを開始します。
 
