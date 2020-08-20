@@ -2,10 +2,10 @@
 title: コード品質テスト —Cloud Services
 description: コード品質テスト —Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 78%
+source-wordcount: '831'
+ht-degree: 73%
 
 ---
 
@@ -16,14 +16,26 @@ ht-degree: 78%
 
 さまざまなタイプのパイプラインの詳細については、 [『CI-CDパイプラインの](/help/implementing/cloud-manager/configure-pipeline.md) 設定』を参照してください。
 
-## カスタムコード品質ルールについて {#understanding-code-quality-rules}
+## Understanding Code Quality Rules {#understanding-code-quality-rules}
 
 コード品質テストでは、ソースコードが特定の品質基準を満たしていることを確認するためにスキャンされます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)」と呼ばれます。
 
 >[!NOTE]
 >You can download the complete list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-この手順の結果は、 *評価として提供されます*。 テスト条件の評価の概要を次の表に示します。
+**三段門**
+
+このコード品質テスト手順では、特定された問題に対して3層の構造を使用します。
+
+* **重大** - これらはゲートで特定される問題のうち、パイプラインの即時失敗につながるものです。
+
+* **重要** - これらはゲートで特定される問題のうち、パイプラインの一時停止につながるものです。デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。
+
+* **情報**:これらの問題は、ゲートによって識別される問題で、純粋に情報提供の目的で提供され、パイプラインの実行に影響を与えません。
+
+この手順の結果は、 *評価として配信されます*。
+
+次の表に、「重要」、「重要」、「情報」の各カテゴリの評価と失敗のしきい値を示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
