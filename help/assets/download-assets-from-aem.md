@@ -1,19 +1,19 @@
 ---
-title: AEM からのアセットのダウンロード
-description: AEM からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。
+title: Download assets from [!DNL Adobe Experience Manager Assets].
+description: 「アセットをダウンロード」 [!DNL Adobe Experience Manager Assets] フロームを使用して、ダウンロード機能を有効または無効にします。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12575cd2f046d3a382786811dd28fec8df3be8bd
+source-git-commit: 3cbf0cc85c7c415f6585e92e509eb7fefb5ede82
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 56%
+source-wordcount: '747'
+ht-degree: 90%
 
 ---
 
 
-# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
+# [!DNL Adobe Experience Manager] からのアセットのダウンロード {#download-assets-from-aem}
 
-静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. ダウンロードされたアセットは、ZIP ファイルにバンドルされています。書き出しジョブ用に圧縮する ZIP ファイルの最大サイズは 1 GB です。書き出しジョブあたり、最大で500個のアセットの合計を指定できます。
+静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。または、アセットへのリンクを含む電子メールを [!DNL Adobe Experience Manager Assets] から直接送信できます。ダウンロードされたアセットは、ZIP ファイルにバンドルされています。書き出しジョブ用に圧縮する ZIP ファイルの最大サイズは 1 GB です。書き出しジョブあたり、最大で 500 個のアセットの合計を指定できます。
 
 >[!NOTE]
 >
@@ -21,31 +21,27 @@ ht-degree: 56%
 
 画像セット、スピンセット、混在メディアセット、カルーセルセットの各アセットタイプはダウンロードできません。
 
-**アセットをダウンロードするには**
+アセットをダウンロードするには、次の手順に従います。
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
-1. ダウンロードするアセットを含むフォルダーに移動します。
-1. フォルダーを選択するか、フォルダー内の1つ以上のアセットを選択します。
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. Experience Managerユーザーインターフェイスで、 **[!UICONTROL アセット]** / **[!UICONTROL ファイルをクリックします]**。
+1. ダウンロードするアセットに移動します。 フォルダーを選択するか、フォルダー内の 1 つ以上のアセットを選択します。On the toolbar, click **[!UICONTROL Download]**.
 
-   ![Experience Managerアセットからアセットをダウンロードする場合に使用できるオプション](/help/assets/assets/asset-download1.png)
+   ![アセットを [!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
 
-   *ダウンロードダイアログボックスのオプション*
+   *図：ダウンロードダイアログボックスのオプション*
 
 1. ダウンロードダイアログボックスで、目的のダウンロードオプションを選択します。
 
    | ダウンロードオプション | 説明 |
    |---|---|
-   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、ダウンロードした各アセット（アセットの親フォルダーの下にネストされた子フォルダー内のアセットを含む）が、ローカルコンピューター上の1つのフォルダーに含まれます。 このオプションを *選択しない場合* 、デフォルトでは、フォルダー階層は無視され、すべてのアセットがローカルコンピューターの1つのフォルダーにダウンロードされます。 |
-   | **[!UICONTROL 電子メール]** | 受信者に電子メール通知を送信する場合は、このオプションを選択します。 次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 展開時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-   | **[!UICONTROL アセット]** | レンディションなしで元の形式でアセットをダウンロードする場合は、このオプションを選択します。<br>元のアセットにサブアセットが含まれている場合は、「サブアセット」オプションを使用できます。 |
+   | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、ダウンロードした各アセット（アセットの親フォルダーの下にネストされた子フォルダー内のアセットを含む）が、ローカルコンピューター上の 1 つのフォルダーに含まれます。このオプションを&#x200B;*選択しない場合*、デフォルトでは、フォルダー階層は無視され、すべてのアセットがローカルコンピューターの 1 つのフォルダーにダウンロードされます。 |
+   | **[!UICONTROL 電子メール]** | 受信者に電子メール通知を送信する場合は、このオプションを選択します。次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL アセット]** | レンディションを含めずに、元の形式でアセットをダウンロードする場合に、このオプションを選択します。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
-   | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマートトリミングレンディションがAEM内からダウンロードされます。 スマート切り抜きレンディションを含むzipファイルが作成され、ローカルコンピューターにダウンロードされます。 |
-   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。 When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](/help/assets/dynamic-media/image-presets.md) list. <br>また、測定のサイズと単位、形式、カラースペース、解像度、および画像の反転などのオプションの画像修飾子を選択できます。 このオプションは、有効にしている場合にのみ使用でき [!DNL Dynamic Media] ます。 |
+   | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマート切り抜きレンディションが AEM 内からダウンロードされます。スマート切り抜きレンディションを含む zip ファイルが作成され、ローカルコンピューターにダウンロードされます。 |
+   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを[画像プリセット](/help/assets/dynamic-media/image-presets.md)リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
 
-1. ダイアログボックスで、「 **[!UICONTROL ダウンロード]**」をタップします。
-
+1. In the dialog box, click **[!UICONTROL Download]**.
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
@@ -76,6 +72,6 @@ AEM パブリッシュインスタンスの `Asset Download Servlet` を無効�
 >[!MORELIKETHIS]
 >
 >* [DRM で保護されたアセットのダウンロード](drm.md)
->* [Windows または Mac OS デスクトップで AEM デスクトップアプリケーションを使用したアセットのダウンロード](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)
+>* [WinまたはMacデスクトップでExperience Managerのデスクトップアプリを使用してアセットをダウンロードする](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)
 >* [サポートされている Adobe Creative Cloud アプリ内から Adobe Asset Link を使用したアセットのダウンロード](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
