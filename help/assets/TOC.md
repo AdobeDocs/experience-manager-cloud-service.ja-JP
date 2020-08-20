@@ -3,10 +3,10 @@ sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: f7e61c6544920ea38ceb4b455412e5e3ac32e476
+source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 97%
+source-wordcount: '412'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
    + [編集するアセットのチェックアウトとチェックイン](check-out-and-submit-assets.md)
    + [アセットの Digital Rights Management](drm.md)
 + アセットの設定、管理、拡張 {#admin}
-   + [API とリファレンス資料](developer-reference-material-apis.md)
+   + [開発者向けドキュメントおよびAPIのリファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
    + [イメージプロファイルとビデオプロファイルの操作について](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [スマートタグの設定](smart-tags-configuration.md)
