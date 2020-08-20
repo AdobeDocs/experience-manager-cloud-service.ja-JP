@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service へのデジタルアセットの追加。'
 translation-type: tm+mt
-source-git-commit: 3e9697d27337b39f5667cc94930de6ea7f0b68c5
+source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 99%
+source-wordcount: '1320'
+ht-degree: 95%
 
 ---
 
@@ -151,13 +151,13 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 次のプロファイルがあります。
 
-* [メタデータプロファイル](metadata-profiles.md)：フォルダーにアップロードされたアセットにデフォルトのメタデータプロパティを適用できます。
+* [メタデータプロファイル](metadata-profiles.md) ：そのフォルダーにアップロードされたアセットに初期設定のメタデータプロパティを適用できます
 * [処理プロファイル](asset-microservices-configure-and-use.md) ：デフォルトで可能な数を超えるレンディションを生成できます。
 
 また、現在の環境で Dynamic Media が有効になっている場合は、次のプロファイルも使用できます。
 
-* [Dynamic Media イメージプロファイル](dynamic-media/image-profiles.md)を使用すると、アップロードしたアセットに、特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;およびピクセル切り抜き）やシャープの設定を適用できます。
-* [Dynamic Media ビデオプロファイル](dynamic-media/video-profiles.md)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
+* [ダイナミックメディア画像プロファイル](dynamic-media/image-profiles.md) を使用すると、特定の切り抜き(**[!UICONTROL スマート切り抜き]** およびピクセル切り抜き)とシャープの設定を、アップロードしたアセットに適用できます。
+* [ダイナミックメディアビデオプロファイル](dynamic-media/video-profiles.md) (Dynamic Media Video Parameters)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
 
 >[!NOTE]
 >
