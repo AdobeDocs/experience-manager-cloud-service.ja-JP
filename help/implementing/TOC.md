@@ -3,9 +3,9 @@ sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '245'
 ht-degree: 97%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 97%
    + テスト結果について {#test-results}
       + [概要](/help/implementing/cloud-manager/overview-test-results.md)
       + [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [カスタムコード品質ルール](cloud-manager/custom-code-quality-rules.md)
       + [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
       + [コンテンツ監査テスト](/help/implementing/cloud-manager/content-audit-testing.md)
-   + [カスタムコード品質ルールについて](cloud-manager/custom-code-quality-rules.md)
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
    + [通知について](cloud-manager/notifications.md)
 + コードの管理 {#managing-code}
