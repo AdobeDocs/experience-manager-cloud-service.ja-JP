@@ -2,7 +2,7 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 82%
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 ## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
-Once you have configured your Production **Pipeline** (repository, environment, and testing environment), you are ready to deploy your code.
+実稼働パイプライン(リポジトリ、環境、テスト環境)を設定したら、コードを導入する準備が整います。
 
 1. Cloud Manager で「**デプロイ**」をクリックして、デプロイメントプロセスを開始します。
 
@@ -56,7 +56,7 @@ Once you have configured your Production **Pipeline** (repository, environment, 
    * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
       詳細は、「 [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 」を参照してください。
 
-   * コンテンツ監査：パイプライン内のこのステップは常に存在し、スキップできません。 実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、コンテンツ監査手順が含まれます。 設定されたページがサービスに送信され、評価されます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+   * コンテンツ監査：パイプライン内のこのステップは常に存在し、スキップできません。 実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、コンテンツ監査手順が含まれます。 設定されたページがサービスに送信され、評価されます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 詳細は、 [「コンテンツ監査結果について](/help/implementing/cloud-manager/content-audit-testing.md) 」を参照してください。
 
       ![](assets/testing-tab.png)
