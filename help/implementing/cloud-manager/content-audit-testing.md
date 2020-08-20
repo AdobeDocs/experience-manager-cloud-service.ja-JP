@@ -2,9 +2,9 @@
 title: コンテンツ監査テスト —Cloud Services
 description: コンテンツ監査テスト —Cloud Services
 translation-type: tm+mt
-source-git-commit: ce25ec1472dc349937fdbd5f7265d4295fe111e8
+source-git-commit: 4c4e0724185695279801c55db1b6874f351805a4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # コンテンツ監査テスト {#content-audit-testing}
 
-コンテンツ監査は、GoogleのオープンソースツールであるLighthouseが提供するCloud Manager Sites Productionパイプラインで使用できる機能です。 この機能は、すべてのCloud Manager実稼働パイプラインで有効になります。
+「コンテンツ監査」は、GoogleのオープンソースツールであるCloud Manager Sites Productionパイプラインで利用できる機能です。 この機能は、すべてのCloud Manager実稼働パイプラインで有効になります。
 
 これにより、デプロイメントプロセスが検証され、次の変更がデプロイされていることを確認できます。
 
@@ -53,7 +53,7 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 任意のテストにドリルダウンすると、より詳細なページレベルのスコアリングを確認できます。 ユーザーは、特定のテストで個々のページがどのようにスコアされたかと、前回のテスト実行時の変更を確認できます。
 
-個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
+個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseによって提供されます。
 
 ![](/help/implementing/developing/introduction/assets/page-level-scores.png)
 
