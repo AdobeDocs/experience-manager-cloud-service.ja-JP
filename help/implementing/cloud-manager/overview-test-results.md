@@ -2,29 +2,37 @@
 title: テスト結果の概要 —Cloud Services
 description: テスト結果の概要 —Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 41%
+source-wordcount: '140'
+ht-degree: 2%
 
 ---
 
 
 # 概要 {#overview}
 
-Cloud Services 用 Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。これは、ビルドおよびユニットテストステップ中に実行されるテスト（オフラインで実行され、動作中の AEM 環境にはアクセスしない）とは対照的です。
-
 Cloud ManagerのCloud Servicesパイプラインでサポートされるテストには、次の3つの大きなカテゴリがあります。
 
 1. [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
+
+   コード品質テストは、アプリケーションコードの品質を評価します。 コード品質パイプラインは、実稼働環境と実稼働環境以外のすべてのパイプラインのビルド手順の直後に実行されます。
+
+   The [Custom Code Quality Rules](/help/implementing/cloud-manager/custom-code-quality-rules.md) executed by Cloud Manager are created based on best practices from AEM Engineering.
+
 1. [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
+
+   機能テストは、実稼働パイプラインのステージテスト段階の一部です。
+
 1. [コンテンツ監査テスト](/help/implementing/cloud-manager/content-audit-testing.md)
+
+   コンテンツ監査テストは、すべてのCloud Manager実稼働パイプラインで有効になっており、スキップすることはできません。
 
 次のテストが可能です。
 
 * お客様が書いた
 * Adobeで書かれた
-* オープンソースツール（GoogleのLighthouseで動作）
+* ソースツールを開く
 
    >[!NOTE]
    > お客様が作成したテストとAdobeが作成したテストは、どちらも、これらのタイプのテストを実行するために設計されたコンテナ化されたインフラストラクチャで実行されます。
