@@ -3,7 +3,7 @@ title: アセット処理のためのアセットマイクロサービスの設�
 description: クラウドネイティブなアセットマイクロサービスを設定および使用してアセットを規模に応じて処理する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 568e5d2906fe6c9415eebcab7e3e4e1fb4a738fa
+source-git-commit: 2917f14bea5e2a31c436577d9fd74135cca93118
 workflow-type: tm+mt
 source-wordcount: '2537'
 ht-degree: 49%
@@ -120,7 +120,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 開発者は、を使用して、サポートされ [!DNL Asset Compute Service] る使用例に応じたカスタムアプリケーションを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 。 [!DNL Experience Manager] 管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
-* のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
+* のImageCutout API [!DNL Adobe Photoshop]を使用し、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
 * APIを使用して、Photoshopテンプレートに基づいて様々なレンディションを生成します。 [!DNL Photoshop]
 * [AdobeLightroomAPI](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) (API)を使用して、取り込んだアセットを最適化し、レンディションとして保存します。
