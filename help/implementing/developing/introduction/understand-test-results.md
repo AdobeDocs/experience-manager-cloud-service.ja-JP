@@ -2,9 +2,9 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1697'
 ht-degree: 53%
 
 ---
@@ -24,7 +24,7 @@ Cloud ManagerのCloud Servicesパイプラインでサポートされるテス�
 
 * お客様が書いた
 * Adobeで書かれた
-* オープンソースツール（GoogleのLighthouseで動作）
+* ソースツールを開く
 
    >[!NOTE]
    > お客様が作成したテストとAdobeが作成したテストは、どちらも、これらのタイプのテストを実行するために設計されたコンテナ化されたインフラストラクチャで実行されます。
