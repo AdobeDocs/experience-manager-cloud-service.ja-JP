@@ -1,16 +1,16 @@
 ---
-title: Dynamic Media のビデオプロファイル
+title: Dynamic Media ビデオプロファイル
 description: Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。また、ビデオにスマート切り抜きを追加することもできます。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '3682'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Media のビデオプロファイル{#video-profiles}
+# Dynamic Media ビデオプロファイル{#video-profiles}
 
 Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。アダプティブビデオエンコーディングプロファイルを使用してプライマリソースビデオをエンコーディングすると、再生中、ビデオプレーヤーは顧客のインターネット接続速度に応じて、ビデオストリームの品質を自動的に調整します。これがアダプティブストリーミングと呼ばれるものです。
 
@@ -34,7 +34,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 >
 >メタデータは、アセットの検索時に役に立ちます。サムネールは、エンコーディング中に生成される静的なビデオ画像です。サムネールは AEM システムによって必要とされ、ユーザーインターフェイス内のカード表示、検索結果表示およびアセットのリスト表示でビデオを視覚的に識別するために使用されます。エンコードされたビデオのレンディションアイコン（絵画用パレット）をタップすれば、生成されたサムネールを確認できます。
 
-ビデオプロファイルの作成が完了したら、フォルダまたは複数のフォルダにビデオフォルダを適用します。 See [Applying a Video Profile to folders.](#applying-a-video-profile-to-folders)
+ビデオプロファイルの作成が完了したら、そのプロファイルを 1 つまたは複数のフォルダーに適用します。[ビデオプロファイルのフォルダーへの適用](#applying-a-video-profile-to-folders)を参照してください。
 
 他のアセットタイプへの高度な処理パラメーターの定義については、[アセット処理の設定](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)を参照してください。
 
@@ -89,7 +89,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
  </tbody>
 </table>
 
-## About using smart crop in Video Profiles {#about-smart-crop-video}
+## ビデオプロファイルでのスマート切り抜きの使用について {#about-smart-crop-video}
 
 ビデオのスマート切り抜き（ビデオプロファイルで使用できるオプション機能）は、Adobe Sensei の人工知能機能を使用して、サイズに関係なく、アップロードしたアダプティブビデオやプログレッシブビデオの重要な部分を自動的に検出して切り抜くツールです。
 
@@ -107,21 +107,21 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 
 >[!IMPORTANT]
 >
->ビデオスマート切り抜きを機能させるには、ビデオプロファイルに1つ以上のビデオエンコーディングプリセットを含める必要があります。
+>ビデオのスマート切り抜きが機能するには、ビデオプロファイルに 1 つ以上のビデオエンコーディングプリセットを含める必要があります。
 
 ビデオのスマート切り抜きを使用するには、アダプティブビデオエンコーディングプロファイルまたはプログレッシブビデオエンコーディングプロファイルを作成します。プロファイルの一部として、**[!UICONTROL スマート切り抜き率]**&#x200B;ツールを使用して、事前定義済みの縦横比を選択します。例えば、ビデオエンコーディングプリセットを定義した後、縦横比が 16 x 9 の「モバイル横置き」定義と、縦横比が 9 x 16 の「モバイル縦置き」定義を追加できます。他に、1 x 1、4 x 3、4 x 5 の縦横比つまり切り抜き率も選択できます。
 
 ![スマート切り抜きによるビデオエンコーディングプロファイルの編集](assets/edit-smart-crop-video2.png)
 
-Note that you can toggle video smart crop in the Video Profile to either on or off using the slider to the far right of **[!UICONTROL Smart Crop Ratio]** in the user interface.
+なお、ユーザーインターフェイスの「**[!UICONTROL スマート切り抜き率]**」の右端にあるスライダーを使用して、ビデオプロファイルのビデオスマート切り抜きをオンまたはオフに切り替えることができます。
 
-ビデオプロファイルを作成して保存した後、目的のフォルダに適用できます。
+ビデオプロファイルを作成して保存した後、目的のフォルダーに適用できます。
 
-See [Applying Video Profiles to specific folders](#applying-video-profiles-to-specific-folders) or [Applying a Video Profile globally](#applying-a-video-profile-globally).
+詳しくは、[特定のフォルダーへのビデオプロファイルの適用](#applying-video-profiles-to-specific-folders)、または[ビデオプロファイルのグローバルな適用](#applying-a-video-profile-globally)を参照してください。
 
 [画像のスマート切り抜き](image-profiles.md)も参照してください。
 
-## Creating a Video Profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## アダプティブストリーミング用のビデオプロファイルの作成 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media には、最高の閲覧エクスペリエンスを実現できるよう最適化された、事前定義済みのアダプティブビデオエンコーディングプロファイル（MP4 H.264 向けのビデオアップロード設定のグループ）が付属しています。ビデオのアップロード時にこのプロファイルを使用できます。
 
@@ -140,7 +140,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 * H264 プロファイル
 * オーディオのサンプリングレート
 
-値が異なる場合も、プロファイルの作成をそのまま続行できますが、アダプティブストリーミングは実行できなくなることに注意してください。ユーザーには単一ビットレートのストリーミングが示されます。プロファイル内の個々のエンコーディングプリセットで同じ値を使用するようにエンコーディング設定を編集することをお勧めします(「アダプティブストリーミング用にエンコード」が有効になっている場合、ビデオプロファイル/プリセットエディターでアダプティブビデオエンコーディング設定のパリティが強制される必要があります)。
+値が異なる場合も、プロファイルの作成をそのまま続行できますが、アダプティブストリーミングは実行できなくなることに注意してください。ユーザーには単一ビットレートのストリーミングが示されます。プロファイル内の個々のエンコーディングプリセットで同じ値を使用するようにエンコーディング設定を編集することをお勧めします（「アダプティブストリーミング用にエンコーディング」が有効になっている場合、ビデオプロファイル／プリセットエディターでアダプティブビデオエンコーディング設定のパリティを適用する必要があります）。
 
 [プログレッシブストリーミング用のビデオエンコーディングプロファイルの作成](#creating-a-video-encoding-profile-for-progressive-streaming)も参照してください。
 
@@ -148,10 +148,10 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 
 他のアセットタイプへの高度な処理パラメーターの定義については、[アセット処理の設定](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)を参照してください。
 
-**アダプティブストリーミング用のビデオプロファイルを作成するには**、
+**アダプティブストリーミング用のビデオプロファイルを作成するには**
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. Click or tap **[!UICONTROL Create]** to add a new Video Profile.
+1. 「**[!UICONTROL 作成]**」をクリックまたはタップして、新しいビデオプロファイルを追加します。
 
 1. プロファイルの名前と説明を入力します。
 1. ビデオエンコーディングプリセットを作成ページまたはビデオエンコーディングプリセットを編集ページで、「**[!UICONTROL ビデオエンコーディングプリセットを追加]**」をタップします。
@@ -183,9 +183,9 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 
 1. ページの右上隅の「**[!UICONTROL 保存]**」をもう一度タップして、プロファイルを保存します。
 
-これで、ビデオを含んだフォルダーにプロファイルを適用できるようになりました。See [Applying a Video Profile to folders](#applying-a-video-profile-to-folders) or [Applying a Video Profile globally](#applying-a-video-profile-globally).
+これで、ビデオを含んだフォルダーにプロファイルを適用できるようになりました。詳しくは、[フォルダーへのビデオプロファイルの適用](#applying-a-video-profile-to-folders)または[ビデオプロファイルのグローバルな適用](#applying-a-video-profile-globally)を参照してください。
 
-## Creating a Video Profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
+## プログレッシブストリーミング用のビデオプロファイルの作成 {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」オプションを使用しない場合は、プロファイルに追加されるすべてのエンコーディングプリセットが、単一ビットレートのストリーミングまたはプログレッシブビデオ配信用の個々のビデオレンディションとして扱われることに注意してください。また、すべてのビデオレンディションが同じ縦横比であることを確認するための検証は実行されません。
 
@@ -200,7 +200,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 **プログレッシブストリーミング用のビデオプロファイルを作成するには：**
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. Tap **[!UICONTROL Create]** to add a new Video Profile.
+1. 「**[!UICONTROL 作成]**」をタップクリックして、新しいビデオプロファイルを追加します。
 1. プロファイルの名前と説明を入力します。
 1. ビデオエンコーディングプリセットを作成ページまたはビデオエンコーディングプリセットを編集ページで、「**[!UICONTROL ビデオエンコーディングプリセットを追加]**」をタップします。
 1. 「**[!UICONTROL 基本]**」タブで、ビデオとオーディオのオプションを設定します。各オプションの横にある情報アイコンをタップすると、追加の説明や、選択したビデオ形式のコーデックに応じた推奨設定が表示されます。
@@ -233,7 +233,7 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 
 1. ページの右上隅の「**[!UICONTROL 保存]**」をタップして、プロファイルを保存します。
 
-これで、ビデオを含んだフォルダーにプロファイルを適用できるようになりました。See [Applying a Video Profile to folders](#applying-a-video-profile-to-folders) or [Applying a Video Profile globally](#applying-a-video-profile-globally).
+これで、ビデオを含んだフォルダーにプロファイルを適用できるようになりました。詳しくは、[フォルダーへのビデオプロファイルの適用](#applying-a-video-profile-to-folders)または[ビデオプロファイルのグローバルな適用](#applying-a-video-profile-globally)を参照してください。
 
 ## カスタムで追加するビデオエンコーディングパラメーターの使用 {#using-custom-added-video-encoding-parameters}
 
@@ -255,7 +255,7 @@ AEM でビデオプロファイルを作成または編集する際にはユー�
   <tr>
    <td><strong>名前</strong></td>
    <td><strong>説明</strong><br /> </td>
-   <td><strong>タイプ</strong><br /> </td>
+   <td><strong>型</strong><br /> </td>
    <td><strong>値</strong></td>
   </tr>
   <tr>
@@ -301,9 +301,9 @@ AEM でビデオプロファイルを作成または編集する際にはユー�
 
 1. CRXDE Lite ページの左上隅にある「**[!UICONTROL ホームに戻る]**」アイコンをタップして、AEM に戻ります。
 
-### Editing a Video Profile {#editing-a-video-encoding-profile}
+### ビデオプロファイルの編集 {#editing-a-video-encoding-profile}
 
-作成したビデオプロファイルを編集して、そのプロファイル内のビデオプリセットを追加、編集または削除できます。
+作成したビデオプロファイルを編集して、そのプロファイル内のビデオプリセットを追加、編集または削除することができます。
 
 デフォルトでは、Dynamic Media に付属している定義済みの既製&#x200B;**[!UICONTROL アダプティブビデオエンコーディング]**&#x200B;プロファイルを編集することはできません。代わりに、プロファイルを手軽にコピーし、新しい名前で保存することができます。その後、コピーしたプロファイルで目的のプリセットを編集できます。
 
@@ -311,113 +311,114 @@ AEM でビデオプロファイルを作成または編集する際にはユー�
 
 他のアセットタイプへの高度な処理パラメーターの定義については、[アセット処理の設定](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)を参照してください。
 
-**ビデオプロファイルを編集するには**:
+**ビデオプロファイルを編集するには**：
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. ビデオプロファイルページで、1つのビデオプロファイル名をチェックします。
+1. ビデオプロファイルページで、1 つのビデオプロファイル名のチェックボックスをオンにします。
 1. ツールバーの「**[!UICONTROL 編集]**」をタップします。
 1. ビデオエンコーディングプロファイルページで、必要に応じて名前と説明を編集します。
-1. ベストプラクティスとしては、「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」チェックボックスは必ずオンにします。アダプティブストリーミングの説明を参照するには、情報アイコンをタップします(プログレッシブビデオプロファイルを編集する場合は、このチェックボックスを選択しないでください)。
+1. ベストプラクティスとしては、「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」チェックボックスは必ずオンにします。アダプティブストリーミングの説明を参照するには、情報アイコンをタップします（プログレッシブビデオプロファイルを編集する場合は、このチェックボックスをオンにしないでください）。
 1. 「ビデオエンコーディングプリセット」ヘッダーの下で、プロファイルを構成するビデオエンコーディングプリセットを追加、編集または削除します。
 
    「**[!UICONTROL 基本]**」タブと「**[!UICONTROL 詳細]**」タブの各オプションの横にある情報アイコンをタップすると、追加の説明や、選択したビデオ形式のコーデックに応じた推奨設定が表示されます。
 
 1. ページの右上隅にある「**[!UICONTROL 保存]**」をタップします。
 
-### Copying a Video Profile {#copying-a-video-encoding-profile}
+### ビデオプロファイルのコピー {#copying-a-video-encoding-profile}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. ビデオプロファイルページで、1つのビデオプロファイル名をチェックします。
+1. ビデオプロファイルページで、1 つのビデオプロファイル名のチェックボックスをオンにします。
 1. ツールバーの「**[!UICONTROL コピー]**」をタップします。
 1. ビデオエンコーディングプロファイルページで、プロファイルの新しい名前を入力します。
-1. ベストプラクティスとしては、「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」チェックボックスは必ずオンにします。アダプティブストリーミングの説明を参照するには、情報アイコンをタップします(プログレッシブビデオプロファイルをコピーする場合は、このチェックボックスをオンにしないでください)。
+1. ベストプラクティスとしては、「**[!UICONTROL アダプティブストリーミング用にエンコーディング]**」チェックボックスは必ずオンにします。アダプティブストリーミングの説明を参照するには、情報アイコンをタップします（プログレッシブビデオプロファイルをコピーする場合は、このチェックボックスをオンにしないでください）。
 
-   In Dynamic Media - Hybrid mode, if a WebM video preset is part of the Video Profile, then **[!UICONTROL Encode for adaptive streaming]** is not possible because all presets must be MP4.
+   Dynamic Media（ハイブリッドモード）では、WebM ビデオプリセットがビデオプロファイルに含まれている場合は、すべてのプリセットを MP4 にする必要があるので、**[!UICONTROL アダプティブストリーミング用にエンコーディング]**&#x200B;をオンにすることはできません。
 1. 「ビデオエンコーディングプリセット」ヘッダーの下で、プロファイルを構成するビデオエンコーディングプリセットを追加、編集または削除します。
 
    「基本」タブと「詳細」タブの各オプションの横にある情報アイコンをタップすると、推奨設定と説明が表示されます。
 
 1. ページの右上隅にある「**[!UICONTROL 保存]**」をタップします。
 
-### Deleting a Video Profile {#deleting-a-video-encoding-profile}
+### ビデオプロファイルの削除 {#deleting-a-video-encoding-profile}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. ビデオプロファイルページで、1つ以上のビデオプロファイル名を確認します。
+1. ビデオプロファイルページで、1 つ以上のビデオプロファイル名のチェックボックスをオンにします。
 1. ツールバーの「**[!UICONTROL 削除]**」をタップします。
 1. 「**[!UICONTROL OK]**」をタップします。
 
-## Applying a Video Profile to folders {#applying-a-video-profile-to-folders}
+## ビデオプロファイルのフォルダーへの適用 {#applying-a-video-profile-to-folders}
 
-ビデオプロファイルをフォルダに割り当てると、サブフォルダは自動的にそのプロファイルを親フォルダから継承します。 つまり、1つのフォルダに割り当てるビデオプロファイルは1つだけです。 アセットのアップロード、保存、使用およびアーカイブを行う場所のフォルダ構造は慎重に検討してください。
+フォルダーにビデオプロファイルを割り当てると、サブフォルダーは自動的に親フォルダーのプロファイルを継承します。つまり、フォルダーに 1 つのビデオプロファイルのみを適用すればよいことになります。そのため、アセットをアップロード、保存、使用およびアーカイブする場所のフォルダー構造については入念に検討してください。
 
-フォルダに別のビデオプロファイルを割り当てた場合、新しいプロファイルが以前のプロファイルよりも優先されます。 以前に存在したフォルダーアセットは変更されません。 新しいプロファイルは、後でフォルダーに追加されるアセットに適用されます。
+フォルダーに異なるビデオプロファイルを割り当てた場合、新しいプロファイルが以前のプロファイルよりも優先されます。以前に存在していたフォルダーのアセットは変更されずに維持されます。新しいプロファイルは、その後にフォルダーに追加されるアセットに対して適用されます。
 
 プロファイルが割り当てられているフォルダーは、ユーザーインターフェイスでカード名にプロファイルの名前が表示されます。
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
-ビデオプロファイルは、特定のフォルダーに適用することも、すべてのアセットにグローバルに適用することもできます。
+ビデオプロファイルは、特定のフォルダーに適用することも、すべてのアセットに全体的に適用することもできます。
 
-後で変更した既存のビデオプロファイルが既に存在するフォルダー内のアセットを再処理できます。 詳しくは、[フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
+後で変更した既存のビデオプロファイルが存在するフォルダー内のアセットを再処理できます。詳しくは、[フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
-### Applying a Video Profile to specific folders {#applying-video-profiles-to-specific-folders}
+### 特定のフォルダーへのビデオプロファイルの適用 {#applying-video-profiles-to-specific-folders}
 
-You can apply a Video Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. この節では、ビデオプロファイルをフォルダに両方の方法で適用する方法について説明します。
+**[!UICONTROL ツール]**&#x200B;メニュー内からフォルダーにビデオプロファイルを適用するか、またはフォルダー内にいる場合は「**[!UICONTROL プロパティ]**」から適用します。この節では、フォルダーにビデオプロファイルを適用するこれら両方の方法について説明します。
 
 既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
 [処理プロファイルを編集した後のフォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)も参照してください。
 
-#### Applying a Video Profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### プロファイルユーザーインターフェイスを介してフォルダーにビデオプロファイルを適用する {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. 1つまたは複数のフォルダに適用するビデオプロファイルを選択します。
-1. 「**[!UICONTROL プロファイルをフォルダーに適用]**」をタップし、新たにアップロードされたアセットを受け取る 1 つまたは複数のフォルダーを選択して、「**[!UICONTROL 適用]**」をタップします。**[!UICONTROL カード表示]**&#x200B;の場合、既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。You can [monitor the progress of a Video Profile processing job](#monitoring-the-progress-of-an-encoding-job).
+1. 1 つまたは複数のフォルダーに適用するビデオプロファイルを選択します。
+1. 「**[!UICONTROL プロファイルをフォルダーに適用]**」をタップし、新たにアップロードされたアセットを受け取る 1 つまたは複数のフォルダーを選択して、「**[!UICONTROL 適用]**」をタップします。**[!UICONTROL カード表示]**&#x200B;の場合、既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。[ビデオプロファイル処理ジョブの進行状況を監視](#monitoring-the-progress-of-an-encoding-job)できます。
 
-#### Applying a Video Profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
+#### 「プロパティ」でフォルダーにビデオプロファイルを適用する {#applying-video-profiles-to-folders-from-properties}
 
-1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a Video Profile to.
+1. AEM のロゴをタップまたはクリックし、「**[!UICONTROL Assets]**」に移動した後、ビデオプロファイルを適用するフォルダーに移動します。
 1. チェックマークをタップして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をタップします。
 1. 「**[!UICONTROL ビデオプロファイル]**」タブを選択し、ドロップダウンメニューからプロファイルを選択して、「**[!UICONTROL 保存して閉じる]**」をクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
-   ![chlimage_1-518](assets/chlimage_1-518.png)ビデオプロファイルの処理ジョブの進行状況を [監視できます](#monitoring-the-progress-of-an-encoding-job)。
+   ![chlimage_1-518](assets/chlimage_1-518.png)
+[ビデオプロファイル処理ジョブの進行状況を監視](#monitoring-the-progress-of-an-encoding-job)できます。
 
-### Applying a Video Profile globally {#applying-a-video-profile-globally}
+### ビデオプロファイルのグローバルな適用 {#applying-a-video-profile-globally}
 
 特定のフォルダーにプロファイルを適用できるだけでなく、グローバルにプロファイルを適用することもできます。これにより、AEM Assets にアップロードされている、すべてのフォルダー内にあるすべてのコンテンツに、選択したプロファイルを適用できます。
 
 [フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)も参照してください。
 
-**ビデオプロファイルをグローバルに適用するには**、
+**ビデオプロファイルをグローバルに適用するには**
 
 * CRXDE Lite で、`/content/dam/jcr:content` ノードに移動します。プロパティ `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` を追加し、「**[!UICONTROL すべて保存]**」をタップします。
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
-* You can [monitor the progress of a Video Profile processing job](#monitoring-the-progress-of-an-encoding-job).
+* [ビデオプロファイル処理ジョブの進行状況を監視](#monitoring-the-progress-of-an-encoding-job)できます。
 
-## Monitoring the progress of a Video Profile processing job {#monitoring-the-progress-of-an-encoding-job}
+## ビデオプロファイル処理ジョブの進行状況の監視 {#monitoring-the-progress-of-an-encoding-job}
 
-処理インジケーター（またはプログレスバー）が表示され、ビデオプロファイル処理ジョブの進行状況を視覚的に監視できます。
+ビデオプロファイル処理ジョブの進行状況を目視で監視できるように、処理インジケーター（進行状況バー）が表示されます。
 
 `error.log` ファイルで、エンコーディングジョブの進行状況を監視し、エンコーディングが完了したか、またはジョブのエラーが発生したかを確認することもできます。`error.log` は、AEM インスタンスのインストール先の `logs` フォルダーにあります。
 
-## Removing a Video Profile from folders {#removing-a-video-profile-from-folders}
+## フォルダーからのビデオプロファイルの削除 {#removing-a-video-profile-from-folders}
 
-フォルダーからビデオプロファイルを削除すると、すべてのサブフォルダーは、その親プロファイルーから削除されたフォルダーを自動的に継承します。 ただし、フォルダー内で行われたファイルの処理はすべて元のままです。
+フォルダーからビデオプロファイルを削除すると、サブフォルダーは自動的に親フォルダーのプロファイルの削除状態を継承します。ただし、フォルダー内で実行されたファイルの処理はそのまま維持されます。
 
-You can remove a Video Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. This section describes how to remove Video Profiles from folders both ways.
+**[!UICONTROL ツール]**&#x200B;メニュー内から、またはフォルダー内にいる場合は「**[!UICONTROL フォルダー設定]**」から、フォルダーのビデオプロファイルを削除できます。この節では、両方の方法でフォルダーからビデオプロファイルを削除する方法について説明します。
 
-### Removing a Video Profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
+### プロファイルユーザーインターフェイスを介してフォルダーからビデオプロファイルを削除する {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL ビデオプロファイル]**&#x200B;に移動します。
-1. フォルダーまたは複数のプロファイルーから削除するビデオフォルダーを選択します。
+1. 1 つまたは複数のフォルダーから削除するビデオプロファイルを選択します。
 1. 「**[!UICONTROL フォルダーからプロファイルを削除]**」をタップし、プロファイルを削除する 1 つまたは複数のフォルダーを選択して、「**[!UICONTROL 削除]**」をタップします。
 
-   フォルダー名の下にビデオプロファイルが表示されなくなったので、ビデオフォルダーがフォルダーに適用されなくなったことを確認できます。
+   名前がフォルダー名の下に表示されなくなっていることで、ビデオプロファイルがフォルダーに適用されていないことを確認できます。
 
-### Removing a Video Profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
+### 「プロパティ」でフォルダーからビデオプロファイルを削除する {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a Video Profile from.
-1. チェックマークをタップまたはクリックして対象のフォルダーを選択した後、「**プロパティ**」をタップまたはクリックします。
+1. AEM のロゴをタップまたはクリックし、「**[!UICONTROL Assets]**」に移動した後、ビデオプロファイルを削除するフォルダーに移動します。
+1. チェックマークをタップまたはクリックして対象のフォルダーを選択し、「**[プロパティ]**」をタップまたはクリックします。
 1. 「**[!UICONTROL ビデオプロファイル]**」タブを選択し、ドロップダウンメニューから「**[!UICONTROL なし]**」を選択して、「**[!UICONTROL 保存して閉じる]**」をクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
