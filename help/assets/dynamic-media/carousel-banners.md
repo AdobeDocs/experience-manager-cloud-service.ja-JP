@@ -2,9 +2,9 @@
 title: カルーセルバナー
 description: Dynamic Media のカルーセルバナーの操作方法を説明します
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '4606'
+source-wordcount: '4605'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Web サイトではカルーセルバナーは次のように表示されます�
 
 >[!NOTE]
 >
->管理者以外のユーザーは、カルーセルバナーを作成または編集できるように、**[!UICONTROL dam-users]** グループに追加される必要があります。作成や編集で問題が発生した場合、**[!UICONTROL dam-users ]**グループにユーザーを追加できるシステム管理者に確認してください。
+>管理者以外のユーザーは、カルーセルバナーを作成または編集できるように、**[!UICONTROL dam-users]** グループに追加される必要があります。作成や編集で問題が発生した場合、**[!UICONTROL dam-users]** グループにユーザーを追加できるシステム管理者に確認してください。
 
 ## クイックスタート：カルーセルバナー {#quick-start-carousel-banners}
 
@@ -83,12 +83,10 @@ Web サイトではカルーセルバナーは次のように表示されます�
 
 1. 次のいずれかの操作をおこないます。
 
-   * [Web サイトへのカルーセルバナーの追加
-      ](#adding-a-carousel-banner-to-your-website-page)Web サイトページにカルーセルバナーの URL またはコピーした埋め込みコードを追加できます。
+   * [Web サイトへのカルーセルバナーの追加](#adding-a-carousel-banner-to-your-website-page)Web サイトページにカルーセルバナーの URL またはコピーした埋め込みコードを追加できます。
 
       * [カルーセルバナーと既存のクイックビューの統合](#integrating-the-carousel-banner-with-an-existing-quickview)。サードパーティの Web コンテンツ管理システムを使用している場合は、新しいカルーセルバナーを、Web サイト上の既存のクイックビュー実装に統合する必要があります。
-   * [AEM で Web サイトへのカルーセルバナーの追加
-      ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)AEM Sites のお客様は、インタラクティブメディアコンポーネントを使用して、カルーセルセットを AEM 内のページに直接追加できます。
+   * [AEM で Web サイトへのカルーセルバナーの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)AEM Sites のお客様は、インタラクティブメディアコンポーネントを使用して、カルーセルセットを AEM 内のページに直接追加できます。
 
 
 カルーセルセットを編集する必要がある場合は、[カルーセルセットの編集](#editing-carousel-sets)を参照してください。また、[カルーセルセットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)を表示および編集することができます。
@@ -201,8 +199,7 @@ AEM Assets 内のバナー画像にホットスポットまたは画像マップ
    * ページの左上隅付近にある「**[!UICONTROL スライドを追加]**」をタップします。
 
    * ページの中央付近にある「**[!UICONTROL タップしてアセットセレクターを開く]**」をタップします。
-
-   カルーセルセットに含めるアセットをタップして選択します。選択済みのアセットにはチェックマークアイコンが付いています。作業が完了したら、ページの右上隅付近にある「**選択**」をタップします。
+   カルーセルセットに含めるアセットをタップして選択します。選択済みのアセットにはチェックマークアイコンが付いています。作業が完了したら、ページの右上隅付近にある「**[!UICONTROL 選択]**」をタップします。
 
    アセットセレクターでは、キーワードを入力して **[!UICONTROL Enter]** キーをタップまたはクリックすることで、アセットを検索することができます。フィルターを適用して、検索結果を絞り込むこともできます。パス、コレクション、ファイルタイプおよびタグでフィルタリングできます。フィルターを選択してから、ツールバーの&#x200B;**[!UICONTROL フィルター]**&#x200B;アイコンをタップします。表示アイコンをタップし、**[!UICONTROL 列表示]**、**[!UICONTROL カード表示]**、**[!UICONTROL リスト表示]**&#x200B;のいずれかを選択してビューを変更します。
 
@@ -376,7 +373,7 @@ AEM Assets 内のバナー画像にホットスポットまたは画像マップ
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. **プレビュー**&#x200B;をタップします。
+1. **[プレビュー]**&#x200B;をタップします。
 1. 画像上のホットスポットまたは画像マップをタップし、関連付けられたアクションをテストします。
 
 **ビューアリストでカルーセルバナーをプレビューするには**
