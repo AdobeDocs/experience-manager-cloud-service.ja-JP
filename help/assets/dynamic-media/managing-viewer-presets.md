@@ -1,11 +1,11 @@
 ---
 title: ビューアプリセットの管理
 description: ビューアプリセットの作成方法と管理方法
-translation-type: ht
-source-git-commit: 7b5a427853075054d56bc7ea6569d5d839e282a1
-workflow-type: ht
-source-wordcount: '4263'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
+source-wordcount: '4255'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >*事前に定義された標準提供ビューアプリセット*&#x200B;を編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集しようとすると、そのビューアプリセットを新しい名前で保存するように指示されます。
 
-## ビューアのキーボードアクセシビリティ{#keyboard-accessibility-for-viewers}
+## ビューアのキーボードアクセシビリティ {#keyboard-accessibility-for-viewers}
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
@@ -39,7 +39,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ## ビューアプリセットの管理 {#managing-viewer-presets-1}
 
-AEM でビューアプリセットの追加、編集、削除、公開、非公開およびプレビューを実行できます。それには、**[!UICONTROL ツール**（ハンマーアイコン）／**[!UICONTROL Assets／ビューアプリセット]**&#x200B;を選択します。
+AEM でビューアプリセットの追加、編集、削除、公開、非公開およびプレビューを実行できます。そのためには、**[!UICONTROL ツール（ハンマーアイコン）]**／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -146,7 +146,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  </tbody>
 </table>
 
-### 標準提供ビューアプリセットのリスト{#list-of-out-of-the-box-viewer-presets}
+### 標準提供ビューアプリセットのリスト {#list-of-out-of-the-box-viewer-presets}
 
 次の表に、Dynamic Media に付属するすべての事前定義済みの標準提供ビューアプリセットについて示します。
 
@@ -399,12 +399,12 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 **ビューアプリセットを作成するには：**
 
-1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール**（ハンマーアイコン）／**アセット／ビューアプリセット**&#x200B;をタップします。
+1. AEM の左上隅にある AEM のロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
 1. ビューアプリセットページのツールバーで、「**[!UICONTROL 作成]**」をタップします。
-1. **[!UICONTROL 新規ビューアプリセット**&#x200B;ダイアログボックスで、「**[!UICONTROL プリセット名]**」フィールドに新しいプリセットの名前を入力します。名前は慎重に選択してください。「**[!UICONTROL 作成]**」をタップした後で編集することはできません。
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully—they are not editable after you tap **[!UICONTROL Create]**.
 
    後述の手順でプリセットを保存すると、この名前がビューアプリセットページの「プリセットのタイトル」列ヘッダーの下に表示されます。
 
@@ -455,7 +455,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
    [ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
-### インタラクティブビデオのビューアプリセットの作成に関する考慮事項{#special-considerations-for-creating-an-interactive-viewer-preset}
+### インタラクティブビデオのビューアプリセットの作成に関する考慮事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **パネル内の画像サムネールのディスプレイモードについて**
 
@@ -520,7 +520,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 **ビューアプリセットをアクティベートまたはアクティベート解除するには：**
 
-1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
+1. AEM の左上隅にある AEM のロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
 1. ビューアプリセットページの「**[!UICONTROL 状態]**」列ヘッダーの下で、ビューアプリセットのアクティベートとアクティベート解除の切り替えアイコンをタップします。
 
    アクティベートされたビューアプリセットには、（青いボックスで）右側にトグルしたアイコンが示されます。アクティベート解除されたビューアプリセットには、（薄いグレーのボックスで）左側にトグルしたアイコンが示されます。
@@ -537,13 +537,13 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 **ビューアプリセットを公開するには：**
 
-1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
+1. AEM の左上隅にある AEM のロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
 1. 公開するビューアプリセットを 1 つ以上選択します。
 1. ツールバーの&#x200B;**[!UICONTROL 公開]**&#x200B;アイコンをタップします。
 
-## ビューアプリセットの並べ替え{#sorting-viewer-presets}
+## ビューアプリセットの並べ替え {#sorting-viewer-presets}
 
-1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
+1. AEM の左上隅にある AEM のロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
 1. 「**[!UICONTROL プリセットのタイトル]**」、「**[!UICONTROL タイプ]**」、「**[!UICONTROL 公開]**」または「**[!UICONTROL 状態]**」をクリックして、その見出しの列でソートします。例えば、「**[!UICONTROL タイプ]**」をクリックすると、ビューアプリセットのタイプが、アルファベット順で、またはアルファベットの逆の順序でソートされます。
 
 ## ビューアプリセットの編集 {#editing-viewer-presets}
@@ -552,7 +552,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 **ビューアプリセットを編集するには：**
 
-1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール**（ハンマーアイコン）／**[!UICONTROL アセット／ビューアプリセット]**&#x200B;をタップします。
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets]**.
 1. ビューアプリセットのタイトルの左側にあるチェックボックスをオンにして、プリセットを選択します。
 1. ツールバーの「**[!UICONTROL 編集]**」をタップします。
 1. **[!UICONTROL ビューアプリセットエディター]**&#x200B;ページで、「**[!UICONTROL 外観]**」タブと「**[!UICONTROL ビヘイビアー]**」タブのオプションを使用して、必要な変更をビューアプリセットに加えます。
@@ -570,7 +570,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 **カスタムビューアプリセットを削除するには：**
 
-1. AEM の左上隅にある AEM ロゴをタップし、左側のパネルで&#x200B;**[!UICONTROL ツール]**（ハンマーアイコン）／**[!UICONTROL Assets／ビューアプリセット]**&#x200B;をタップします。
+1. AEM の左上隅にある AEM のロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
 1. ビューアプリセットページで、「プリセットのタイトル」のチェックボックスをオンにして、**[!UICONTROL ごみ箱]**&#x200B;アイコンをタップします。
 1. 「**[!UICONTROL 削除]**」をタップします。
 
