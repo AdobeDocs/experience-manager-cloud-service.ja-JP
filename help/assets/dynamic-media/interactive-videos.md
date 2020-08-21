@@ -2,7 +2,7 @@
 title: インタラクティブビデオ
 description: Dynamic Media でインタラクティブビデオとショッパブルビデオを使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 100%
@@ -112,7 +112,7 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
 
 * Google Chrome で、ブラウザーから送信されるすべての HTTP リクエストを参照するには、**F12** キー（Windows）または **Command + Options + I** キー（Mac）を押してデベロッパーツールパネルを開き、「**Network**」タブをクリックします。
 
-* Firefox では、**F12** キー（Windows）または **Command + Option + I** キー（Mac）を押して Firebug プラグインを有効にして「**Net**」タブを使用するか、組み込みの Inspector ツールとその「Network」タブを使用します。
+* Firefox では、**F12** キー（Windows）または **Command + Option + I** キー（Mac）を押して Firebug プラグインを有効にして「**[Net]**」タブを使用するか、組み込みの Inspector ツールとその「Network」タブを使用します。
 
 * Internet Explorer では、**F12** キーを押してデバッガーツールをアクティベートします。
 
