@@ -1,11 +1,11 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
-translation-type: ht
-source-git-commit: a5e94003a3e9023155dc95ceba1a5531e4f20d8f
-workflow-type: ht
-source-wordcount: '2050'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+workflow-type: tm+mt
+source-wordcount: '2047'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：画像セット{#quick-start-image-sets}
+## クイックスタート：画像セット {#quick-start-image-sets}
 
 すぐに使い始めるには：
 
@@ -105,14 +105,14 @@ ht-degree: 100%
 >* ブラック、ブラウンおよびグリーンの色のサムネール。
 
 
-## 画像セットの作成{#creating-image-sets}
+## 画像セットの作成 {#creating-image-sets}
 
 画像セットは、ユーザーインターフェイスまたは API 経由で作成できます。ここでは、UI で画像セットを作成する方法について説明します。
 
 >[!NOTE]
 >
 >[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して画像セットを自動的に作成することもできます。
->**重要：**バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
+>**重要：**&#x200B;バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
 画像セットに追加したアセットは、自動的に英数字順で追加されます。追加後に、手動でアセットの順番を変更したり、並べ替えたりすることができます。
 
@@ -164,7 +164,7 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した画像セットが、作成先のフォルダーに表示されます。
 
-## 画像セットの表示{#viewing-image-sets}
+## 画像セットの表示 {#viewing-image-sets}
 
 画像セットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して自動的に作成することもできます。
 
@@ -178,11 +178,11 @@ ht-degree: 100%
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties.png)
 
-* 任意のセットのメンバー画像で、**[!UICONTROL セット**&#x200B;メニューを選択して、アセットがメンバーとして含まれているセットを表示します。
+* 任意のセットのメンバー画像で、**[!UICONTROL セット]**&#x200B;メニューを選択して、アセットがメンバーとして含まれているセットを表示します。
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* 検索で、「**[!UICONTROL フィルター**」を選択し、「**[!UICONTROL Dynamic Media**」を展開して「**[!UICONTROL セット]**」を選択します。
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets]**.
 
    検索結果として、UI で手動で作成した一致するセットか、バッチセットプリセットを使用して自動的に作成した一致するセットが返されます。自動セットの場合、検索クエリは、AEM での検索とは異なる「次の値で始まる」検索条件を使用して実行されます。AEM での検索は、「次を含む」検索条件に基づいて実行されます。フィルターを「**[!UICONTROL セット]**」に設定するのが、自動セットを検索する唯一の方法です。
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 >
 >[画像セットの編集](#editing-image-sets)の説明に従って、ユーザーインターフェイスを通じて画像セットを表示できます。
 
-## 画像セットの編集{#editing-image-sets}
+## 画像セットの編集 {#editing-image-sets}
 
 画像セットには、次のような様々な編集タスクを実行できます。
 
@@ -215,6 +215,7 @@ ht-degree: 100%
    * アセットを並べ替えるには、画像を新しい位置までドラッグします（並べ替えアイコンを選択して項目を移動します）。
    * 項目を昇順または降順に並べ替えるには、列の見出しをクリックします。
    * アセットを追加するか既存のアセットを更新するには、「**[!UICONTROL アセットを追加]**」をクリックします。アセットに移動して選択し、ページの右上隅にある「]**選択**[!UICONTROL 」をタップしますページ。
+
       >[!NOTE]
       >
       >AEM でサムネール用に使用されている画像を別の画像に置き換えて削除しても、元のアセットは表示されたままになります。
@@ -222,16 +223,17 @@ ht-degree: 100%
    * プリセットを適用するには、ページの右上隅付近にある「**[!UICONTROL プリセット]**」をタップし、ビューアプリセットを選択します。
    * サムネールを追加または変更するには、該当するアセットの右横にあるサムネールアイコンを選択します。新しいサムネールまたはスウォッチアセットに移動して選択し、「**[!UICONTROL 選択]**」をタップします。
    * 画像セット全体を削除するには、画像セットの場所に移動して画像セットを選択し、「**[!UICONTROL 削除]**」をタップします。
+
    >[!NOTE]
    >
    >画像セットの画像を編集するには画像セットに移動し、左側のレールの「**[!UICONTROL メンバーを設定]**」をタップしてから、個々のアセットの鉛筆アイコンをタップして編集ウィンドウを開きます。
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
 
-## 画像セットのプレビュー{#previewing-image-sets}
+## 画像セットのプレビュー {#previewing-image-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## 画像セットの公開{#publishing-image-sets}
+## 画像セットの公開 {#publishing-image-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
