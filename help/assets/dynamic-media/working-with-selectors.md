@@ -2,9 +2,9 @@
 title: セレクターの操作
 description: インタラクティブ画像、インタラクティブビデオ、カルーセルバナーのアセットの選択
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '738'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 1. カルーセルセット、インタラクティブ画像、インタラクティブビデオのいずれかに移動し、「**[!UICONTROL アクション]**」タブ（ホットスポットまたは画像マップを定義した場合のみ選択できる）をタップします。
 
-   商品セレクターは、「**アクションタイプ**」領域にあります。
+   商品セレクターは、「**[!UICONTROL アクションタイプ]**」領域にあります。
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
