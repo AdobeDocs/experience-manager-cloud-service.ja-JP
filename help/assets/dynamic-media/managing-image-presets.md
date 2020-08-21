@@ -2,9 +2,9 @@
 title: 画像プリセットの管理
 description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
-source-wordcount: '3649'
+source-wordcount: '3648'
 ht-degree: 98%
 
 ---
@@ -251,7 +251,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
-1. 「**[!UICONTROL 保存**」をクリックします。
+1. 「**[!UICONTROL 保存]**」をクリックします。
 
 ### レスポンシブな画像プリセットの作成 {#creating-a-responsive-image-preset}
 
