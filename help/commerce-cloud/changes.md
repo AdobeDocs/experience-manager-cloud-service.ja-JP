@@ -1,10 +1,10 @@
 ---
 title: Cloud ServiceとしてのAEMコマースに対する顕著な変更
-description: Adobe Experience Manager6.5と比較した、AEMコマースのCloud Serviceに関する顕著な変更。
+description: Adobe Experience Manager6.5と比較して、AEMコマースのCloud Serviceが顕著に変更されました。
 translation-type: tm+mt
-source-git-commit: df6f679b70a7cc70e4f76612c0a72a31443cd1b8
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '596'
 ht-degree: 13%
 
 ---
@@ -32,7 +32,7 @@ Experience Managerに商品カタログをインポートして保存するた�
 | Magentoバックエンド用のCIFオーサリングツールのデプロイ方法 | [AEM 6.5でサポートされているCIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) （CIFコネクタ）を参照してください。 | [AEM 6.5でサポートされているCIF Connector](https://github.com/adobe/commerce-cif-connector/blob/master/README.md) （CIFコネクタ）を参照してください。 | AEMをCloud Serviceとして使用するには、CIFアドオンを使用してプロビジョニングする必要があります。 詳細については、セールス担当者にお問い合わせください。 |
 | [CIFベニアプロジェクトの導入方法](https://github.com/adobe/aem-cif-guides-venia) | AEMパッケージのインストール | Cloud Managerを使用した [展開](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) | プロジェクトは [Cloud Manager Gitリポジトリに移動され](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) 、 [Cloud Managerを介して展開されます。](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/deploying/overview.html) |
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/QuickstartバージョンのCommerce Integration Frameworkは、非常に限られた使用例を対象としたAEMオンプレミスオファーで使用できます。 ただし、これは推奨される解決策ではありません。
 
@@ -48,6 +48,6 @@ Cloud ServiceとしてAEMのオンプレミスまたはManaged Servicesのイン
 * GraphQLクライアントOSGIバンドル **は、AEMプロジェクトに含める** べきではなく、CIFアドオンを介してデプロイされます
 * GraphQLクライアントおよびGraphql Data Service用のOSGI設定をAEMプロジェクトに含め **ることはで** きません。
 
->[!Tip]
+>[!TIP]
 >
 >GitHubの [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) プロジェクトを確認します。 このプロジェクトでは、AEM用のMavenプロファイルをCloud Serviceとして提供し、さまざまなフレームワーク条件を考慮したオンプレミスデプロイメントを行います。
