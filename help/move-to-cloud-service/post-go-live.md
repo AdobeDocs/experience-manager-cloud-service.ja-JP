@@ -2,10 +2,10 @@
 title: 運用開始後段階
 description: 運用開始後段階
 translation-type: tm+mt
-source-git-commit: 0565d053b6040bc99ae79823711d56eb9aecdfb3
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 82%
+source-wordcount: '241'
+ht-degree: 100%
 
 ---
 
@@ -23,18 +23,18 @@ AEM as a Cloud Service 環境のトラブルシューティングには、次の
 
 ## 開発者コンソール {#developer-console}
 
-AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージ環境、実稼働環境の開発者コンソールでおこなえます。
+AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージ環境、実稼動環境の開発者コンソールでおこなえます。
 
 開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)を参照してください。
 
 ## CRX/DE Lite {#crxde-lite}
 
-ユーザーは、ステージや実稼働環境ではなく、開発環境上のCRX/DE Liteにアクセスできます。
+ユーザーは開発環境では CRX/DE Lite にアクセスできますが、ステージング環境や実稼動環境ではアクセスできません。
 
->[重要]
+>[!IMPORTANT]
 >実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。また、ユーザーはステージング環境と実稼動環境用の開発者ツールにはアクセスできません。
 
-Refer to [Developing with CRX/DE Lite](https://docs.adobe.com/help/ja-JP/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) to learn how to develop your AEM application using CRX/DE Lite.
+CRX/DE Lite を使用して AEM アプリケーションを開発する方法については、[CRX/DE Lite による開発](https://docs.adobe.com/help/ja-JP/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)を参照してください。
 
 ## ログの管理 {#managing-logs}
 
