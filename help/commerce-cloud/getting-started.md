@@ -2,17 +2,17 @@
 title: Cloud ServiceとしてのAEMコマースの使用の手引き
 description: Cloud ServiceとしてのAEMコマースの使用の手引き
 translation-type: tm+mt
-source-git-commit: 1fcdfa60c134491c781906e4a757a3a10399bde1
+source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 6%
+source-wordcount: '571'
+ht-degree: 5%
 
 ---
 
 
 # Cloud ServiceとしてのAEMコマースの使用の手引き {#start}
 
-AEMコマースをCloud Serviceとして使用し始めるには、Experience Manager Cloud ServiceがCommerce Integration Framework (CIF)アドオンを使用してプロビジョニングされている必要があります。 CIFアドオンは、Cloud Serviceとしての [AEM Sitesの上に追加のモジュール](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/home.html)。
+AEMコマースをCloud Serviceとして使用し始めるには、Experience Manager Cloud ServiceがCommerce Integration Framework (CIF)アドオンを使用してプロビジョニングされている必要があります。 CIFアドオンは、Cloud Serviceとして [AEM Sitesの上に追加のモジュール](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/home.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ AEM CommerceをMagentoと接続するには、次の手順に従います。
 >
 >次のコマンドを使用して、すべてのCloud Manager変数を重複チェックできます。 `aio cloudmanager:list-environment-variables ENVIRONMENT_ID`
 
->[!Note]
+>[!NOTE]
 >
 >また、 [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) (Cloud Manager API)を使用してCloud Manager変数を設定することもできます。
 
