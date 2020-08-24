@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '3523'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb810684a513718ddb7232f1a2da725b2df7f36c
+workflow-type: tm+mt
+source-wordcount: '3537'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ AEM バージョンのアップデートは、常に、カスタムコードの�
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
@@ -183,7 +183,7 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 ### サードパーティパッケージの組み込み {#including-third-party}
 
-アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリでホストし、それらを `pom.xml` で参照することをお勧めします。これは、公開リポジトリの場合のみ可能です。
+アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリと、パスワード保護Mavenリポジトリで説明されているパスワード保護を持つプライベートリポジトリに対しても可能で [](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories)す。
 
 パッケージをリモートリポジトリに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリに保存できます。このリポジトリは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。このリポジトリは、プロジェクトの POM で次の例のように宣言されます。
 
