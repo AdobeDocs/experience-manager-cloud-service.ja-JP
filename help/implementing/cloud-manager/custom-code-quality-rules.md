@@ -2,15 +2,15 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 translation-type: tm+mt
-source-git-commit: f2fa2adeec74bfa687ed59d3e0847e6246028040
+source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2253'
 ht-degree: 100%
 
 ---
 
 
-# カスタムコード品質ルールについて {#custom-code-quality-rules}
+# カスタムコード品質ルール {#custom-code-quality-rules}
 
 
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
