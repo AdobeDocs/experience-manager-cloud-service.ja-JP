@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAEM向けAEMコマースの開発
 description: Cloud ServiceとしてのAEM向けAEMコマースの開発
 translation-type: tm+mt
-source-git-commit: e30086c546d9efcc1da07ac5862c012a0db02c09
+source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 14%
 
 ---
@@ -20,11 +20,13 @@ AEM用のCommerce Integration Framework(CIF)に基づくAEM Commerceプロジェ
 
 ## Cloud ServiceSDKとしてのAEMを使用したローカル開発 {#local}
 
+>[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
+
 CIFプロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。 AEM用に提供されたCIF追加-Onは、Cloud Service環境としても、ローカル開発にも使用できます。 このファイルは、 [ソフトウェア配布ポータルからダウンロードできます](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)。
 
 CIF追加オンはSling機能アーカイブとして提供されます。 ソフトウェア配布ポータルで利用できるzipファイルには、2つのSling機能アーカイブファイルが含まれています。1つはAEM作成者用、もう1つはAEM発行インスタンス用です。
 
-**AEMを初めてCloud Serviceに？** AEMをCloud ServiceSDKとして使用してローカル開発環境を設定するには、 [次のガイドを参照してください](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
+**AEMを初めてCloud Serviceに？** AEM [をCloud ServiceSDKとして使用し、ローカル開発環境をセットアップするための、より詳細なガイドを参照してください](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)。
 
 ### 必要なソフトウェア
 
@@ -39,7 +41,7 @@ CIF追加オンはSling機能アーカイブとして提供されます。 ソ�
 
 ### CIFアドオンへのアクセス
 
-The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html). zipファイルには、Sling機能アーカイブとしてのCIFアドオンが含まれていますが、AEMパッケージではありません。 SDKリストへのアクセスは、AEMがCloud Serviceライセンスとして使用されているものに制限されます。
+The CIF add-on can be downloaded as a zip file from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html). zipファイルには、 **Sling機能アーカイブとしてのCIFアドオンが含まれています**。AEMパッケージではありません。 SDKリストへのアクセスは、AEMがCloud Serviceライセンスとして使用されているものに制限されます。
 
 >[!TIP]
 >
@@ -59,7 +61,7 @@ AEMをCloud ServiceSDKとして使用するローカル追加のCIFオン開発�
 3. Create a `crx-quickstart/install` folder
 4. CIFアドオンの正しいSling機能アーカイブファイルを `crx-quickstart/install` フォルダーにコピーします。
 
-   CIFアドオンのzipファイルには、2つのSling機能アーカイブ `.far` ファイルが含まれています。 ローカルAEMをCloud ServiceSDKとして実行する方法に応じて、AEM AuthorまたはAEM Publishに適したものを使用してください。
+   CIFアドオンのzipファイルには、2つのSling機能アーカイブ `.far` ファイルが含まれています。 ローカルAEMをCloud ServiceSDKとして実行する方法に応じて、AEM AuthorまたはAEM Publishに正しいものを使用してください。
 
 5. MagentoGraphQLエンドポイントを保持するという名前のローカルOS環境変数 `COMMERCE_ENDPOINT` を作成します。
 
