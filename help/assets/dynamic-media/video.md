@@ -2,9 +2,9 @@
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
 workflow-type: tm+mt
-source-wordcount: '10056'
+source-wordcount: '10052'
 ht-degree: 99%
 
 ---
@@ -965,9 +965,9 @@ For YouTube publishing jobs, do the following:
 1. AEM の左上隅にある AEM ロゴをタップしてから、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL Assets]**／**[!UICONTROL ビデオレポート]**&#x200B;をタップします。
 1. ビデオレポートページで、次のいずれかの操作をおこないます。
 
-   * 右上付近にある&#x200B;**[UICONTROL ビデオレポートを更新]**&#x200B;アイコンをタップします。「更新」を使用する必要があるのは、レポートの最終日が今日の日付である場合のみです。この操作によって、前回のレポート実行以降に発生したビデオトラッキングを確認できます。
+   * 右上付近にある&#x200B;**[!UICONTROL ビデオレポートを更新]**&#x200B;アイコンをタップします。「更新」を使用する必要があるのは、レポートの最終日が今日の日付である場合のみです。この操作によって、前回のレポート実行以降に発生したビデオトラッキングを確認できます。
 
-   * 右上付近にある&#x200B;**[UICONTROL 日付選択]**アイコンをタップします。
+   * 右上付近にある&#x200B;**[!UICONTROL 日付選択]**アイコンをタップします。
 ビデオデータを表示する開始日と終了日の範囲を指定し、「**[!UICONTROL レポートを実行]**」をタップします。
 
    「トップの指標」グループボックスに、サイト全体にわたるすべての公開済みビデオに関する様々な集計値が表示されます。
@@ -1003,7 +1003,7 @@ Scene7 HTML5 ビューア SDK を使用して作成したビデオビューア�
 
    `config2` パラメーターは、HTML5 ビューアでの追跡を有効にします。また、ビデオレポートの設定情報や、お客様固有の Adobe Analytics 設定を含む、会社固有のプリセットでもあります。
 
-   config2 パラメーターの正しい値は、**[!UICONTROL 埋め込みコード]**&#x200B;のコピー機能と **[UICONTROL URL]** のコピー機能のどちらでも検索できます。**[UICONTROL URL]** コピーコマンドから取得した URL 内で探すべきパラメーターは、`&config2=<value>` です。この値はほぼ常に `companypreset` ですが、一部のケースでは `companypreset-1`、`companypreset-2` などとなっていることもあります。
+   config2 パラメーターの正しい値は、**[!UICONTROL 埋め込みコード]**&#x200B;のコピー機能と **[!UICONTROL URL]** のコピー機能のどちらでも検索できます。**[!UICONTROL URL]** コピーコマンドから取得した URL 内で探すべきパラメーターは、`&config2=<value>` です。この値はほぼ常に `companypreset` ですが、一部のケースでは `companypreset-1`、`companypreset-2` などとなっていることもあります。
 
 1. カスタムのビデオビューアコードで、次の操作をおこなって、ビューアページに AppMeasurementBridge.jsp を追加します。
 
