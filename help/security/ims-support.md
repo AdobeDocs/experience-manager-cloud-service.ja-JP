@@ -199,7 +199,7 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 ![ACL3](/help/security/assets/ims18.png)
 
 
-### Cloud Manager{#accessing-cloud-manager} へのアクセス
+### Cloud Manager へのアクセス{#accessing-cloud-manager}
 
 Cloud Manager または AEM as a Cloud Service 環境としてアクセスするには、Cloud Manager 製品のプロファイルに割り当てられている必要があります。
 
