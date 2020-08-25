@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 translation-type: tm+mt
-source-git-commit: bfdb862f07dc37b540c07f267b2bdcc2100bcca2
+source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 100%
+source-wordcount: '1842'
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,11 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 * コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/assets/content-fragments/content-fragments.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
-* 標準アセットについて詳しくは、[アセットの管理](/help/assets/manage-digital-assets.md)および[アセットエディターのカスタマイズと拡張](/help/assets/extend-asset-editor.md)を参照してください。
+* [アセットの管理](/help/assets/manage-digital-assets.md) 」を参照してください。
+
+<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
+* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
+-->
 
 ## アーキテクチャ {#architecture}
 
@@ -100,7 +104,7 @@ Assets コアと統合するには：
 >
 >[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)。詳しくは、[コアコンポーネントの開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/developing.html)を参照してください。
 
-コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)**を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この**[コンテンツフラグメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
