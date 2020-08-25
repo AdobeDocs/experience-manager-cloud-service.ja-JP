@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
 description: Adobe Experience Manager 6.5 と比較した、AEM Cloud Service の Adobe Experience Manager Assets の主な変更点.
 translation-type: tm+mt
-source-git-commit: 60f11cd86ecfeb47a46f9809d8ae9f1c45a4a25f
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 99%
@@ -38,7 +38,7 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 
 * Adobe Experience Manager では、アップロードとダウンロードに直接バイナリアクセスの原則を使用し、アセットの処理にアセットマイクロサービスを使用します。[アセットの取り込みの概要](/help/assets/asset-microservices-overview.md)を参照してください。
    * [直接バイナリアクセスを使用した](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)アセットのアップロード。
-   * 技術的な詳細については、[直接バイナリアップロードのプロトコルと API](/help/assets/developer-reference-material-apis.md#overview-binary-upload) を参照してください.
+   * 技術的な詳細については、[直接バイナリアップロードのプロトコルと API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください.
 * 以前のバージョンの AEM に用意されていたデフォルトの **[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローは使用できなくなりました。代わりに、デフォルトのアセット処理（レンディション、メタデータ抽出、インデックス作成用のテキスト抽出）のほとんどに対応できる、拡張性と可用性の高いサービスをアセットマイクロサービスが提供します。
    * [アセットマイクロサービスの設定および使用方法](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
    * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます。
