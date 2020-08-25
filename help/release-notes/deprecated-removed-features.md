@@ -2,7 +2,7 @@
 title: 非推奨（廃止予定）の機能と削除された機能
 description: リリースノート（Adobe Experience Manager as a Cloud Service の非推奨（廃止予定）の機能と削除された機能）
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 100%
@@ -30,7 +30,7 @@ ht-degree: 100%
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
 | Assets | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
-| Assets | AEM へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#overview-binary-upload) を参照してください。 |
+| Assets | AEM へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
 | Assets | ImageMagick などのコマンドラインツールの呼び出しを含め、[ ワークフローの](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)特定のワークフローステップ`DAM Asset Update`はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
 | Assets | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
 
