@@ -2,7 +2,7 @@
 title: コードリファクタリングツールの統合エクスペリエンス
 description: コードリファクタリングツールの統合エクスペリエンス
 translation-type: tm+mt
-source-git-commit: 03434343829e1a1fb95256a607619b55626c6afc
+source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -30,8 +30,8 @@ Cloud ServiceとしてAEMとの互換性が必要なコードリファクタリ�
 
 * **ユーザーインターフェイス**
 
-   * `aio-cli` 1つ以上のコードリファクタリングツールを実行するコマンド（ツールを連結して順番に実行する）
-   * `config.yaml` 必要な入力パラメーターを取り込む
+   * `aio-cli` 1つ以上のコードリファクタリングツールを実行するコマンド（ツールを連結して順番に実行する）。
+   * `config.yaml` は、必要な入力パラメーターを取り込みます。
 
 * **基礎となるコードリファクタリングツールスイート**
 
