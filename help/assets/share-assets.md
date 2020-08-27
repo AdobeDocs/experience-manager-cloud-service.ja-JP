@@ -3,10 +3,10 @@ title: アセット、フォルダー、コレクションをリンクとして�
 description: ここでは、Adobe Experience Manager Assets 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26833f59f21efa4de33969b7ae2e782fe5db8a14
+source-git-commit: f13a884d16dd5695a0acd456bea143591fd0d822
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 100%
+source-wordcount: '905'
+ht-degree: 98%
 
 ---
 
@@ -107,7 +107,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## アセットのダウンロードと共有 {#download-and-share-assets}
 
-ユーザーは、一部のアセットをダウンロードして、Adobe Experience Manager の外部で共有することができます。詳しくは、[アセットの検索方法](/help/assets/search-assets.md)、[アセットのダウンロード方法](/help/assets/download-assets-from-aem.md)、[コレクションのダウンロード方法](manage-collections.md#download-a-collection)を参照してください。
+Users can download the required assets and share these outside of [!DNL Experience Manager]. 詳しくは、[アセットの検索方法](/help/assets/search-assets.md)、[アセットのダウンロード方法](/help/assets/download-assets-from-aem.md)、[コレクションのダウンロード方法](manage-collections.md#download-a-collection)を参照してください。
 
 ## クリエイティブプロフェッショナルとのアセットの共有 {#share-with-creatives}
 
