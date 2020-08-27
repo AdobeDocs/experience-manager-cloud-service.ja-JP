@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
+source-git-commit: 7bd917067667af2f9f03a153a26303daade996fc
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1037'
 ht-degree: 12%
 
 ---
@@ -44,7 +44,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * ネイティブおよび高品質のPDFドキュメントプレビューがBrand Portalで使用できるようになりました。 「 [ドキュメントビューアの概要](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)」を参照してください。
 
-* キャッシュを無効にするユーザーインターフェイスが、で使用できるようになり [!DNL Dynamic Media]ました。
+* AEMで、CDN(コンテンツ配信ネットワーク)キャッシュをCloud Serviceとして直接無効にし [!DNL Dynamic Media] て(使用するのではなく [!DNL Dynamic Media Classic])、最新のアセットが数時間から数分以内に提供されるようになりました。 詳しくは、ダイナミックメディアを使用したCDNキャッシュの無効化を参照してください。 [](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 
 * のユーザーインターフェイスコントロール、ナビゲーション、参照、および検索の操作に、アクセシビリティのサポートが強化され [!DNL Assets]ました。
 
