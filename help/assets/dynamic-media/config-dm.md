@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: ed904a95768fb1965506187932d4f9d6464ed190
 workflow-type: tm+mt
 source-wordcount: '5124'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ Dynamic Media Cloud Services を設定するには：
       * **[!UICONTROL デフォルトで有効]** - フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。
 選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーのプロパティページを開きます。「**[!UICONTROL 詳細]**」タブをタップし、「**[!UICONTROL Dynamic Media 同期モード]**」ドロップダウンリストの次の 3 つのオプションから選択して、「**[!UICONTROL 保存]**」をタップします。
-         * **[!UICONTROL 継承]** - フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つ、またはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップの要領で表示されます。
+         * **[!UICONTROL 継承]** — フォルダーに明示的な同期値はありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された詳細なステータスは、ツールチップの要領で表示されます。
          * **[!UICONTROL サブフォルダーを有効にする]** - このサブツリー内のすべての項目を、Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。
          * **[!UICONTROL サブフォルダーに対して無効]** - このサブツリー内のすべての項目を、Dynamic Media との同期から除外します。
 
