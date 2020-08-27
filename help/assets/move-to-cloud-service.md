@@ -1,12 +1,12 @@
 ---
-title: Adobe Experience Manager 6.x から AEM Cloud Service への移行
-description: Adobe Experience Manager 6.x から AEM Cloud Service への移行
+title: Adobe Experience Manager6.xからのCloud ServiceとしてExperience Managerに移行します。
+description: Adobe Experience Manager6.xからのCloud ServiceとしてExperience Managerに移行します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e399c9f372aa8995abf5cddfbc41d1cfe2b0aa22
+source-git-commit: d9237a0121a346fc16e67e52300c3a5a263e5af3
 workflow-type: tm+mt
-source-wordcount: '28'
-ht-degree: 100%
+source-wordcount: '36'
+ht-degree: 27%
 
 ---
 
