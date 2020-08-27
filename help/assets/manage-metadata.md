@@ -4,10 +4,10 @@ description: メタデータのタイプと、 [!DNL Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 643d31998989e9ebe73e124313379fb64ec86cd5
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '1830'
-ht-degree: 100%
+source-wordcount: '1933'
+ht-degree: 94%
 
 ---
 
@@ -141,6 +141,16 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
    >[!CAUTION]
    >
    >1 つの値のみを指定できるフィールドの場合、「**[!UICONTROL 追加モード]**」を選択しても、フィールド内の既存の値に新しいメタデータが追加されません。
+
+## 処理プロファイルを使用したカスタムメタデータ {#metadata-compute-service}
+
+Cloud Serviceとしてのアセットは、クラウドネイティブのサービスを使用して、アセットのカスタムメタデータを生成できます。 カスタムメタデータを生成する処理プロファイルを設定します。 「処理プロファイル [の使用方法](/help/assets/asset-microservices-configure-and-use.md#use-profiles)」を参照してください。
+
+![処理プロファイルでのメタデータのレンダリング](assets/processing-profile-metadata.png)
+
+>[!TIP]
+>
+>1つのフォルダーに適用できる処理プロファイルは1つだけです。 フォルダー内のアセットに複数の処理を適用するには、1つの処理プロファイルに複数のオプションを追加します。 例えば、1人のプロファイルでレンディションの生成、アセットのトランスコード、カスタムメタデータの生成などを行うことができます。 各タスクにMIMEタイプのフィルターを適用して、必要なファイル形式に対して適切なタスクがトリガされるようにできます。
 
 ## 一括メタデータ更新の上限を設定する {#configlimit}
 
