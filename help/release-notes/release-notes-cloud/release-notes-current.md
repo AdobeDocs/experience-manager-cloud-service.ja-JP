@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 27f9f4441a95964a4ae0db798577510c726133c5
+source-git-commit: b47b4d0c84e814a43ca14c2efd4f553694ab6c2b
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 22%
+source-wordcount: '1002'
+ht-degree: 12%
 
 ---
 
@@ -14,9 +14,51 @@ ht-degree: 22%
 
 Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノートの概要を次に説明します。
 
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* ページとサブページ（ページツリー）を以前のバージョンに復元する機能。
+
+* AEM SPAエディターで起動を作成する機能。
+
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* 新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 既存のデプロイメントでは、管理者は以前と同様にスマートタグ統合 [](/help/assets/smart-tags-configuration.md#aio-integration) を設定します。
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* アセットマイクロサービスでビデオトランスコードがサポートされるようになりました。ビデオのビットレートとサイズの設定をサポートする [!UICONTROL 処理プロファイル] 画面の新しい「ビデオ」セクションが追加されました（出力形式はH.264コーデックのMP4です）。 For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). より多くのトランスコードオプションとビデオ配信 [!DNL Dynamic Media] アドオンを使用できます。
+
+* 新しい [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。 と手動で統合する必要はありま [!DNL Adobe Developer Console]せん。 既存のデプロイメントでは、管理者は以前と同様にスマートタグ統合 [](/help/assets/smart-tags-configuration.md#aio-integration) を設定します。
+
+* 新しい [アセットのダウンロードエクスペリエンス](/help/assets/download-assets-from-aem.md) :
+
+   * 大規模なダウンロードの場合は非同期的にダウンロードするので、ユーザーが待つ必要がありません。
+
+   * 開発者向けの拡張機能用の新しいモジュラーAPI。
+
+* [!DNL Experience Manager] は、アセットマイクロサービスのメタデータ抽出のパフォーマンスを改善しました。 アセット取り込みの全体的なスループットが向上します。
+
+* 処理プロファイルを使用して、Compute Serviceを使用してカスタムメタデータを生成します。 詳しくは、処理プロファイルを使用した [カスタムメタデータを参照してください](/help/assets/manage-metadata.md#metadata-compute-service)
+
+* 管理者が設定できる、Brand Portalユーザー向けのよりシンプルなダウンロード操作です。 「 [ダウンロードエクスペリエンスの概要](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)」を参照してください。
+
+* ネイティブおよび高品質のPDFドキュメントプレビューがBrand Portalで使用できるようになりました。 「 [ドキュメントビューアの概要](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)」を参照してください。
+
+* キャッシュを無効にするユーザーインターフェイスが、で使用できるようになり [!DNL Dynamic Media]ました。
+
+* のユーザーインターフェイスコントロール、ナビゲーション、参照、および検索の操作に、アクセシビリティのサポートが強化され [!DNL Assets]ました。
+
+   * 「 [!UICONTROL 追加レンディション] 」オプションを選択した後にEscキーを押すと、フォーカスがツールバーに戻ります。 <!-- via CQ-4293594-->
+   * 電子メールコンボボックスを使用する場合、キーボードフォーカスが期待どおりに機能します。 <!-- via CQ-4286215 -->
+   * 検索フィルターセクションのアコーディオン要素は、標準の拡大可能なアコーディオンとして解釈されます。 <!-- via CQ-4273103 -->
+   * タグをアセットに適用すると、タグがツリー要素として表示されます。 ARIA属性は、ツリー要素に適用され、現在アクセス可能になっています。 <!-- via CQ-4272964 -->
+
+* [!DNL AEM Desktop app] 2.0.3リリースがリリースされ、6.5.5との互換性が向上しました。 [!DNL AEM] クライアントOSの互換性リスト [!DNL Service Pack] の更新(10.14より前の7バージョンおよび [!DNL Windows] 7バー [!DNL MacOS] ジョンを削除)を行います。
+
+### 修正されたバグ [!DNL Assets] {#bugs-fixed}
+
+* 関連付けと非関連付けのオプションを初めてクリックした場合に応答しない。 （CQ-4299022）
+* アセットをダウンロードする際に、電子メールで受信するオプションを選択した場合、電子メールは送信されません。 （CQ-4299146）
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -42,6 +84,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 休止状態の環境は、Cloud Managerの **概要** ページで非冬眠にできます。
 
+* Google Lighthouseによるページに対してエクスペリエンスチェックを実行する機能。 Cloud Managerのパイプラインの一部として、エクスペリエンスKPIに対して最大25のページをチェックして検証でき、スコアがCloud Manager UIに表示されます。
 
 ### バグ修正 {#bug-fixes-cm}
 
@@ -85,3 +128,14 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 以前のバージョンのUIで、ログにエラーが表示されていたにもかかわらず、正常に抽出されたことがありました。
 
+## コードリファクタリングツール {#code-refactoring-tools}
+
+この節では、コードリファクタリングツールの新機能と更新点について説明します。
+
+### 新機能 {#what-is-new-refactoring}
+
+* AIO-CLIプラグインは、コードリファクタリングツールの統合を目的としてリリースされ、開発者がコードリファクタリングツールを1か所から呼び出して実行できるようになりました。 Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* AEM Dispatcher Converterが拡張され、オンプレミス設定とAdobe Managed Services Dispatcher設定の、Cloud Service互換のディスパッチャー設定としてのAEMへの変換がサポートされるようになりました。 詳しくは、 [Gitリソースを参照してください。AEMCloud Serviceディスパッチャーコンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) （英語）を参照してください。
+
+* AEM Dispatcher Converterは、AIO-CLIプラグインに再書き込み ` node.js ` され、統合されています。
