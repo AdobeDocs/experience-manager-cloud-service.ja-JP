@@ -4,7 +4,7 @@ description: AEM のフィルターパネルを使用した必要なアセット
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c0c5663999158e326bb4617f3bf34e96e7615f64
+source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
 workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 100%
@@ -363,7 +363,7 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
-<!-- Check with gklebus if this customization is possible in Cloud Service now
+<!-- Check with gklebus if this customization is possible in AEM now.
 
 ### Custom predicates to filter search results {#custompredicates}
 
