@@ -1,39 +1,62 @@
 ---
-title: ビデオアセットの管理
-description: ビデオアセットをアップロード、プレビュー、注釈付け、公開する方法について説明します。
+title: でビデオアセットを管理します [!DNL Adobe Experience Manager]。
+description: でビデオアセットをアップロード、プレビュー、注釈、公開します [!DNL Adobe Experience Manager]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0686acbc61b3902c6c926eaa6424828db0a6421a
+source-git-commit: d6a0848547a6dcbb058576827d3cacbc8045ae79
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '540'
+ht-degree: 26%
 
 ---
 
 
 # ビデオアセットの管理 {#manage-video-assets}
 
-Adobe Experience Manager（AEM）Assets でビデオアセットを管理および編集する方法について説明します。ビデオのエンコーディングとトランスコード（例えば、Fmpeg トランスコード）は、Dynamic Media 統合でのみ可能です。Dynamic Media を使用しないと、ビデオの基本的なサポートを利用できます。例えば、サポートされているファイル形式のプレビューサムネールの抽出や、ブラウザーでの直接の再生に対応した形式のプレビューが可能です。
+ビデオ形式は、組織のデジタルアセットの重要な部分です。 [!DNL Adobe Experience Manager] 成熟したオファーは、ビデオアセットの作成後に、ビデオアセットのライフサイクル全体を管理するための製品と機能を提供しています。
 
-<!-- Also, if you are licensed to use Dynamic Media, see the [Dynamic Media video documentation](/help/assets/dynamic-media/video.md). -->
+Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager Assets]. ビデオのエンコーディングとトランスコーディング、例えば、Fmpegトランスコーディングは、処理プロファイルを使用し、 [!DNL Dynamic Media] 統合を使用して行うことができます。 Without [!DNL Dynamic Media] license, [!DNL Experience Manager] provides basic support for videos, such as transcoding using FFmpeg, extraction of preview thumbnails for the supported file formats, and preview in the user interface for formats that are supported for playback in the browser directly.
 
 ## ビデオアセットのアップロードとプレビュー {#upload-and-preview-video-assets}
 
-Adobe Experience Manager Assets は、拡張子が MP4 のビデオアセットのプレビューを生成します。これらのレンディションは、AEM Assets ユーザーインターフェイスでプレビューすることができます。
+[!DNL Adobe Experience Manager Assets] 拡張子がMP4のビデオアセットのプレビューを生成します。 You can preview the renditions in the [!DNL Assets] user interface.
 
-1. デジタルアセットフォルダー（またはサブフォルダー）で、デジタルアセットを追加する場所に移動します。
-1. アセットをアップロードするには、ツールバーの「**[!UICONTROL 作成]**」をクリックまたはタップして、「**[!UICONTROL ファイル]**」を選択します。または、ユーザーインターフェイス上でファイルをドラッグします。詳しくは、[アセットのアップロード](manage-digital-assets.md#uploading-assets)を参照してください。
-1. カード表示でビデオをプレビューするには、ビデオアセットの&#x200B;**[!UICONTROL 再生]**&#x200B;ボタンをタップします。ビデオの一時停止や再生は、カード表示でのみ可能です。リスト表示では、[!UICONTROL 再生]および[!UICONTROL 一時停止]ボタンを使用できません。
-1. アセットの詳細ページでビデオをプレビューするには、カードの&#x200B;**[!UICONTROL 編集]**&#x200B;アイコンをクリックまたはタップします。ビデオは、ブラウザーのネイティブなビデオプレーヤーで再生されます。再生、一時停止、音量の調節およびビデオの全画面表示をおこなうことができます。
+1. デジタルアセットフォルダーまたはサブフォルダーで、デジタルアセットを追加する場所に移動します。
+1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. または、ユーザーインターフェイス上でファイルをドラッグします。詳しくは、[アセットのアップロード](manage-digital-assets.md#uploading-assets)を参照してください。
+1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. ビデオの一時停止や再生は、カード表示でのみ可能です。The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. To preview the video in the asset details page, select **[!UICONTROL Edit]** on the card. ビデオは、ブラウザーのネイティブなビデオプレーヤーで再生されます。再生、一時停止、音量の調節およびビデオの全画面表示をおこなうことができます。
 
 ## ビデオアセットを公開する {#publish-video-assets}
 
-ビデオアセットを公開すると、URL として Web ページに含めることや、Web ページに埋め込むことができます。[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+公開後、ビデオアセットをURLとしてWebページに含めたり、アセットを直接埋め込んだりできます。 詳しくは、ダイナミックメディアアセットの [公開を参照してください](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
+
+## 処理プロファイルを使用したトランスコード {#transcode-video}
+
+[!DNL Experience Manager] をCloud Serviceとして使用すると、処理プロファイルを使用してMP4ビデオファイルの基本的なトランスコードを実行できます。 この機能により、アップロードだけでなく、MP4ビデオファイルのプレビューやスケールも可能です。
+
+![Experience Managerでのビデオトランスコードの処理プロファイルの作成](assets/video-processing-profile-for-mp4.png)
+
+*図：でのビデオトランスコードの処理プロファイル[!DNL Experience Manager]です。*
+
+幅のみまたは高さのみを指定し、他のフィールドを空白にした場合、レンディションは縦横比を維持します。 現在、トランスコードに使用できるのはh264コーデックのみです。
+
+処理プロファイルを使用してアセットを処理するには、プロファイルーをフォルダーに追加します。 詳しくは、処理プロファイルを [使用したアセットの処理を参照してください](/help/assets/asset-microservices-configure-and-use.md#use-profiles)。
 
 ## ビデオアセットに注釈を付ける {#annotate-video-assets}
 
-1. Assets コンソールで、Assets カードの「[!UICONTROL 編集]」アイコンをクリックまたはタップして、アセットの詳細ページを表示します。
-1. ビデオを再生するには、[!UICONTROL プレビュー]アイコンをクリックまたはタップします。
-1. ビデオに注釈を付けるには、「**[!UICONTROL 注釈]**」ボタンをクリックします。注釈がビデオ内の特定の時点（フレーム）に追加されます。注釈を付ける際に、キャンバスに描画して、その画像をコメントと一緒に含めることができます。コメントは自動保存されます。注釈ウィザードを終了するには、「**[!UICONTROL 閉じる]**」をクリックします。
-1. ビデオ内の特定のポイントを探すには、**テキスト**&#x200B;フィールドに時刻（秒）を指定して、「**ジャンプ**」をクリックします。例えば、ビデオの最初の 20 秒をスキップするには、テキストフィールドに「10」と入力します。
+1. コン [!DNL Assets] ソールから、アセットカードの「 **[!UICONTROL 編集]** 」を選択して、アセットの詳細ページを表示します。
+1. ビデオを再生するには、「 **[!UICONTROL プレビュー]**」をクリックします。
+1. To annotate the video, click **[!UICONTROL Annotate]**. ビデオの特定の時間（フレーム）に注釈が追加されます。 注釈を付ける際に、キャンバスに描画して、その画像をコメントと一緒に含めることができます。コメントは自動保存されます。注釈ウィザードを終了するには、「**[!UICONTROL 閉じる]**」をクリックします。
+1. ビデオ内の特定のポイントを探すには、**テキスト**&#x200B;フィールドに時刻（秒）を指定して、「**ジャンプ**」をクリックします。例えば、ビデオの最初の 20 秒をスキップするには、テキストフィールドに「20」と入力します。
 1. タイムラインで表示するには、注釈をクリックします。タイムラインから注釈を削除するには、「**[!UICONTROL 削除]**」をクリックします。
+
+## ベストプラクティスと制限事項 {#tips-limitations}
+
+* Dynamic Mediaライセンスがない場合、処理プロファイルを使用してMP4ファイルを処理することしかできません。
+* を使用した基本的なトランスコード
+
+>[!MORELIKETHIS]
+>
+>* [ダイナミックメディアビデオドキュメント](/help/assets/dynamic-media/video.md)。
+>* [処理プロファイルの使用、タイプ、設定について詳しく知る](/help/assets/asset-microservices-configure-and-use.md)。
+
