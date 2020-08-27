@@ -3,10 +3,10 @@ sub-product: AEM Assets as a Cloud Service
 user-guide-title: AEM Assets as a Cloud Service
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: a829a70350464e0d96ae302aa305e140affbc63a
+source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 96%
+source-wordcount: '418'
+ht-degree: 94%
 
 ---
 
@@ -106,6 +106,7 @@ ht-degree: 96%
    + [Web アプリケーションへの URL のリンク](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [ルールセットを使用した URL の変換](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media アセットの公開](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [ダイナミックメディアを使用したCDNキャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
    + [Dynamic Media Classicを使用したCDNキャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [DHTML ビューアのサポート終了に関する FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
