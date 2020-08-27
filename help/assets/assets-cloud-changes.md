@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
 description: Adobe Experience Manager 6.5 と比較した、AEM Cloud Service の Adobe Experience Manager Assets の主な変更点.
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: 2f5925613219a475a4e7d780f7d2bb3da8148e31
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 99%
+source-wordcount: '628'
+ht-degree: 96%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
-アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（ImageMagick など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。ImageMagick の複雑な設定は、[!UICONTROL 処理プロファイル]の設定に使用できません。また、ビデオの Fmpeg トランスコードには [!DNL Dynamic Media] を使用します。
+アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（ImageMagick など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。ImageMagick の複雑な設定は、[!UICONTROL 処理プロファイル]の設定に使用できません。ビデオ [!DNL Dynamic Media] のFMPEGトランスコードに使用し、MP4ビデオの [基本的なトランスコードに処理プロファイルを使用します](/help/assets/manage-video-assets.md#transcode-video)。
 
 アセットマイクロサービスは、Cloud Manager で管理されるユーザープログラムと環境にある Adobe Experience Manager に自動的にプロビジョニングして接続される、クラウドネイティブなサービスです。Adobe Experience Manager の拡張やカスタマイズをおこなう場合、開発者は、既存のコンテンツまたはクラウド環境で生成されたレンディションを含んだアセットを使用して、アセットの使用、表示、ダウンロードをおこなうコードをテストし検証できます。
 
