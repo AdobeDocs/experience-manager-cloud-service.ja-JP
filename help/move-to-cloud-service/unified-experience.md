@@ -2,7 +2,7 @@
 title: コードリファクタリングツールの統合エクスペリエンス
 description: コードリファクタリングツールの統合エクスペリエンス
 translation-type: tm+mt
-source-git-commit: ae60d0b472ed6368aeb5806329ff1d5c689e0827
+source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Cloud ServiceとしてAEMとの互換性が必要なコードリファクタリ�
 
 ## メリット {#benefits}
 
-統合エクスペリエンスプラグインは、次の利点を提供します。
+Unified Experienceプラグインには次のような利点があります。
 
 * ソースコードで機能するツールを1つのアプリケーションに統合し、プラグインとして公開して、ユーザーに対して一貫性のあるユーザーエクスペリエンス `node.js``aio-cli ` を提供します。
 
