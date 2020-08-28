@@ -2,9 +2,9 @@
 title: ダイナミックメディアを使用したCDNキャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
-source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
+source-git-commit: d025a44fea539e1d7a0d76fe20dd818a88c43fd8
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1312'
 ht-degree: 4%
 
 ---
@@ -22,13 +22,11 @@ Dynamic Mediaアセットは、顧客との配信を高速化するために、C
 
 **ダイナミックメディアを使用してCDNキャッシュを無効にするには**
 
-*パート1:CDN無効化テンプレートの作成*
+*パート1/2:CDN無効化テンプレートの作成*
 
 1. AEMで、Cloud Serviceとして **[!UICONTROL ツール/アセット/CDN無効化テンプレートをタップします。]**
 
-<!--
-    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
--->
+   ![CDN検証機能](/help/assets/assets-dm/cdn-invalidation-template.png)
 
 1. CDN無効化テンプレート **** ページで、シナリオに基づいて次のいずれかのオプションを実行します。
 
@@ -39,9 +37,10 @@ Dynamic Mediaアセットは、顧客との配信を高速化するために、C
 
    ![CDN無効化テンプレート — 作成](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. CDN無効化テンプレートページの右上隅にある「 **[!UICONTROL 保存]**」をタップし、「 **[!UICONTROL OK]**」をタップします。
+1. CDN無効化テンプレートページの右上隅にある「 **[!UICONTROL 保存]**」をタップし、「 **[!UICONTROL OK]**」をタップします。<br>
 
-   *パート2:CDN無効化オプションの設定*
+   *パート2/2:CDN無効化オプションの設定*
+   <br>
 
 1. AEMで、Cloud Serviceとして **[!UICONTROL ツール/アセット/CDNの無効化をタップします。]**
 
