@@ -2,9 +2,9 @@
 title: ダイナミックメディアを使用したCDNキャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
-source-git-commit: fa86e005a44600fe2ff856a137c6de21a263689e
+source-git-commit: 42788d6a64c5bca7bddd563cb26634db80b2e75d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1307'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,9 @@ Dynamic Mediaアセットは、顧客との配信を高速化するために、C
 
 1. AEMで、Cloud Serviceとして **[!UICONTROL ツール/アセット/CDN無効化テンプレートをタップします。]**
 
-   ![CDN検証機能](/help/assets/assets-dm/cdn-invalidation-template.png)
+<!--
+    ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template.png)
+-->
 
 1. CDN無効化テンプレート **** ページで、シナリオに基づいて次のいずれかのオプションを実行します。
 
