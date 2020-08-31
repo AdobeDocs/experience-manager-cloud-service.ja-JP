@@ -3,10 +3,10 @@ sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 769364dc0a70e081a1a0cc9b86f616ccb99c93ab
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 97%
+source-wordcount: '365'
+ht-degree: 79%
 
 ---
 
@@ -36,12 +36,42 @@ ht-degree: 97%
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
+   + [AEM UIの構造](developing/introduction/ui-structure.md)
    + [Sling チートシート](developing/introduction/sling-cheatsheet.md)
    + [Sling アダプターの使用](developing/introduction/sling-adapters.md)
    + [AEM as a Cloud Service での Sling Resource Merger の使用](developing/introduction/sling-resource-merger.md)
    + [AEM as a Cloud Service でのオーバーレイ](developing/introduction/overlays.md)
    + [ログ](developing/introduction/logging.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [テスト結果の理解](/help/implementing/developing/introduction/understand-test-results.md)
++ コンポーネントとテンプレート {#components-templates}
+   + [コンポーネントの概要](developing/components/overview.md)
+   + [テンプレート](developing/components/templates.md)
+   + [コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
+   + [スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)
+   + [コンテンツサービス用の JSON エクスポーター](developing/components/json-exporter.md)
+   + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
+   + [画像エディター](developing/components/image-editor.md)
+   + [装飾タグ](developing/components/decoration-tag.md)
+   + [非表示条件の使用](developing/components/hide-conditions.md)
++ ヘッドレスエクスペリエンス管理 {#headless}
+   + [ヘッドレスおよびAEMとのハイブリッド](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
+   + 単一ページアプリケーション {#spa}
+      + [SPAの概要とチュートリアル](developing/spa/introduction.md)
+      + [SPA WKNDチュートリアル](developing/spa/wknd-tutorial.md)
+      + [Reactの使用を開始する](developing/spa/getting-started-react.md)
+      + [Angularを使用する前に](developing/spa/getting-started-angular.md)
+      + [スパディープディブス](developing/spa/deep-dives.md)
+      + [AEM向けSPAの開発](developing/spa/developing.md)
+      + [SPA エディターの概要](developing/spa/editor-overview.md)
+      + [SPA ブループリント](developing/spa/blueprint.md)
+      + [SPAページコンポーネント](developing/spa/page-component.md)
+      + [動的モデルとコンポーネントのマッピング](developing/spa/model-to-component-mapping.md)
+      + [モデルルーティング](developing/spa/routing.md)
+      + [統合の起動](developing/spa/launch-integration.md)
+      + [サーバー側のレンダリング](developing/spa/ssr.md)
+      + [JavaScript APIリファレンス](developing/spa/reference-materials.md)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
