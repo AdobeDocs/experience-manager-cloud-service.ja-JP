@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  のリッチテキストエディターを使用して、コンテンツを作成します。'
 description: ' [!DNL Experience Manager]  リッチテキストエディターを使用したコンテンツのオーサリング'
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 テキストベースのコンポーネントの場合は、[ツールバー](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)のフルスクリーンモード ![RTE 全画面表示ボタン](/help/sites-cloud/authoring/assets/editing-full-screen.png)をクリックしてリッチテキストエディターを開き、ページコンテンツの残りを非表示にします。
 
-フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。使用できるオプションは、設定によって異なります。 <!--Full screen mode displays all the configured options that you can use for authoring. The availability of options [depends on the configuration](/help/sites-administering/rich-text-editor.md).-->
+フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
 
 ![フルスクリーンモードの RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
