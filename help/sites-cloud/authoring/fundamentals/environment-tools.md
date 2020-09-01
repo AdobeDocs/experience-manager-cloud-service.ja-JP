@@ -2,7 +2,7 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
@@ -40,7 +40,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ページの編集中、**ヘルプ**&#x200B;には次の場所からアクセスできます。
 
-* [**ページ情報&#x200B;**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)セレクター。（エディターに初めてアクセスしたときに表示される）紹介用のスライドが表示されます。
+* [**ページ情報**](/help/sites-cloud/authoring/fundamentals/page-properties.md#page-properties)&#x200B;セレクター。（エディターに初めてアクセスしたときに表示される）紹介用のスライドが表示されます。
 * 特定のコンポーネントの[設定](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)ダイアログ（ダイアログツールバーの「？」アイコンを使用）。コンテキスト依存のヘルプが表示されます。
 
 その他の[ヘルプ関連リソースは、コンソールから表示できます](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)。
@@ -82,10 +82,12 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
    * アイコンまたは略語
       * 標準コンポーネントのアイコンはモノクロです。
       * 略語は常にコンポーネント名の最初の 2 文字です。
+
    **コンポーネント**&#x200B;ブラウザーの上部のツールバーでは、次の操作を実行できます。
 
    * コンポーネントを名前でフィルターします。
    * ドロップダウンから選択して特定のグループのみを表示します。
+
    コンポーネントについて詳しくは、**コンポーネント**&#x200B;ブラウザー内のコンポーネントの横にある情報アイコンをクリックまたはタップしてください（使用可能な場合）。例えば、**コンテンツフラグメント**&#x200B;の場合は、次のようになります。
 
    ![コンポーネントブラウザーに表示される情報](/help/sites-cloud/authoring/assets/component-browser-information.png)
@@ -98,7 +100,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ## アセットブラウザー {#assets-browser}
 
-アセットブラウザーには、現在のページで直接使用可能なすべてのアセットが表示されます。<!--The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.-->
+アセットブラウザーには、現在のページで直接使用可能なすべての[アセット](/help/assets/home.md)が表示されます。
 
 アセットブラウザーはサイドパネル内のタブであり、[コンポーネントブラウザー](#components-browser)と[コンテンツツリー](#content-tree)も同じ場所にあります。サイドパネルを開く（または閉じる）には、ツールバーの左上にある次のアイコンを使用します。
 
@@ -153,7 +155,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 >
 >モバイルデバイスは、幅が 1,024 px 未満の場合に検出されます。つまり、画面の小さいデスクトップも検出されます。
 
-アセットをすばやく変更する必要がある場合は、アセット名の横にある編集アイコンをクリックして、アセットブラウザーから直接アセットエディターを開始できます。<!--If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.-->
+アセットをすばやく変更する必要がある場合は、アセット名の横にある編集アイコンをクリックして、アセットブラウザーから直接[アセットエディター](/help/assets/manage-digital-assets.md)を開始できます。
 
 ![アセット編集ボタン](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -281,6 +283,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 >* 一部のモードにアクセスするには、適切な権限または特権が必要です。
 >* 開発者モードは、スペースの制約により、モバイルデバイスでは利用できません。
 >* [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)（`Ctrl-Shift-M`）で、**プレビュー**&#x200B;と、現在選択されているモード（**編集モード**、**レイアウトモード**&#x200B;など）を切り替えることができます。
+
 >
 
 
