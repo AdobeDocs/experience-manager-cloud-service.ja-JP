@@ -2,7 +2,7 @@
 title: モバイルデバイス用のページのオーサリング
 description: モバイル用にオーサリングするときは、複数のエミュレーターを切り替えて、エンドユーザー向けの表示を見ることができます。
 translation-type: tm+mt
-source-git-commit: dbd7b8084445b03beff3b5a96b0fa6b5512e10b8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # モバイルデバイス用のページのオーサリング {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager ページはレスポンシブレイアウトに基づいています。レスポンシブレイアウトは、コンテンツをターゲットデバイスに合わせて自動的に調整するので、特定のデバイス向けにコンテンツを作成しなくてもよくなります。
+Adobe Experience Manager ページはレスポンシブレイアウトに基づいています。[レスポンシブレイアウトは、コンテンツをターゲットデバイスに合わせて自動的に調整するので、特定のデバイス向けにコンテンツを作成しなくてもよくなります。](/help/sites-cloud/authoring/features/responsive-layout.md)
 
 モバイルページをオーサリングする場合、ページはモバイルデバイスをエミュレートする方法で表示されます。ページのオーサリング時に、いくつかのエミュレーターを切り替えて、エンドユーザーがページにアクセスしたときの表示を確認できます。
 
