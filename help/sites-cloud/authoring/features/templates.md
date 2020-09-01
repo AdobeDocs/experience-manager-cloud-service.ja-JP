@@ -2,10 +2,10 @@
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義し、テンプレートエディターにより、テンプレートの作成および維持は、もはや開発者のみのタスクではなくなります。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 100%
+source-wordcount: '4551'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 このドキュメントでは、**テンプレート作成者**&#x200B;がテンプレートコンソールおよびエディターを使用して、編集可能なテンプレートを作成および管理する方法を説明します。
 
-編集可能なテンプレートが技術レベルで機能する方法について詳しくは、開発者ドキュメント「ページテンプレート - 編集可能」を参照してください。<!-- For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md) for more information.-->
+For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 100%
 
 ### テンプレートフォルダーの作成 - 管理者 {#creating-a-template-folder-admin}
 
-テンプレートフォルダーは、プロジェクト固有のテンプレートを保持するためプロジェクトで作成する必要があります。これは管理者タスクであり、ドキュメント「ページテンプレート - 編集可能」で説明しています。<!-- A template folder should be created for your project to hold your project-specific templates. This is an admin task and is described in the document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-folders).-->
+テンプレートフォルダーは、プロジェクト固有のテンプレートを保持するためプロジェクトで作成する必要があります。This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
 
 ### 新しいテンプレートの作成 - テンプレート作成者 {#creating-a-new-template-template-author}
 
@@ -106,7 +106,7 @@ ht-degree: 100%
    >
    >標準の AEM インスタンスでは、テンプレートコンソールに既に&#x200B;**グローバル**&#x200B;フォルダーが存在します。この中にデフォルトのテンプレートが格納されており、現在のフォルダーにポリシーやテンプレートタイプがない場合にはフォールバックとして機能します。
    >
-   >プロジェクトで作成されたテンプレートフォルダーを使用することが推奨されるベストプラクティスです。<!-- It is recommended best practice to use a [template folder created for your project](/help/sites-developing/page-templates-editable.md#template-folders).-->
+   >[プロジェクトで作成されたテンプレートフォルダー](/help/implementing/developing/components/templates.md#template-folders)を使用することが推奨されるベストプラクティスです。
 
 1. 「**作成**」、「**テンプレートを作成**」を選択し、ウィザードを開きます。
 
@@ -114,7 +114,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >テンプレートタイプは、定義済みのテンプレートレイアウトであり、テンプレートのためのテンプレートであると見なすことができます。これらは、開発者またはシステム管理者が事前定義します。詳しくは、開発者ドキュメント「ページテンプレート - 編集可能」を参照してください。<!-- More information can be found in the developer document [Page Templates - Editable](/help/sites-developing/page-templates-editable.md#template-type).-->
+   >テンプレートタイプは、定義済みのテンプレートレイアウトであり、テンプレートのためのテンプレートであると見なすことができます。これらは、開発者またはシステム管理者が事前定義します。More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
 
 1. 次の「**テンプレート詳細**」を入力します。
 
@@ -204,7 +204,7 @@ ht-degree: 100%
    >**許可されたテンプレート**&#x200B;のリストが空の場合、値／リストが見つかるまでツリーを上に移動します。
    >
    >
-   >「使用可能なテンプレート」を参照してください。許可されたテンプレートの原則は保たれます。<!--See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.-->
+   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
 
 1. 「**保存**」をクリックして、ページプロパティの変更を保存します。
 
@@ -265,7 +265,7 @@ ht-degree: 100%
 
 #### レイアウト {#template-layout}
 
-[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードにはページオーサリングの[**レイアウト&#x200B;**モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードにはページオーサリングの&#x200B;[**レイアウト**&#x200B;モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### ページポリシー {#template-page-policies}
 
@@ -414,7 +414,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->リッチテキストエディターを実装するコンポーネントのコンテンツポリシーは、UI 設定を通じて RTE で提供されるオプションに対してのみ定義できます。<!--[Content policies for components implementing the rich text editor](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) can only be defined for options made available by the RTE through its UI settings.-->
+>[](/help/implementing/developing/extending/rich-text-editor.md)リッチテキストエディターを実装するコンポーネントのコンテンツポリシーは、UI 設定を通じて RTE で提供されるオプションに対してのみ定義できます。
 
 #### ポリシーおよびプロパティ（レイアウトコンテナ）{#policy-and-properties-layout-container}
 
@@ -504,7 +504,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->**初期コンテンツ**&#x200B;モードは、そのテンプレートで作成されたページの編集モードと考えることができます。このため、ポリシーは、**初期コンテンツ**&#x200B;モードで定義されず、[**構造&#x200B;**モードで定義されます](#editing-a-template-structure-template-author)。
+>**初期コンテンツ**&#x200B;モードは、そのテンプレートで作成されたページの編集モードと考えることができます。このため、ポリシーは、**初期コンテンツ**&#x200B;モードで定義されず、[**構造**&#x200B;モードで定義されます](#editing-a-template-structure-template-author)。
 
 * 編集可能なロックが解除されたコンポーネントはマーキングされています。選択すると、青い境界線が表示されます。
 
