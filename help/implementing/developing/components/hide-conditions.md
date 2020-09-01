@@ -2,7 +2,7 @@
 title: 非表示の条件の使用
 description: 非表示の条件を使用して、コンポーネントリソースをレンダリングするかどうかを決定できます。
 translation-type: tm+mt
-source-git-commit: 6902b40232ae0b704c5e29f09844cab018598c24
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 67%
@@ -58,22 +58,22 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. デフォルトでは、ページ作成者は、リストコアコンポーネントでオプション「**子ページ**」を選択して、子ページを使用したリストを作成できます。
 
-   ![リストコンポーネントの設定](/help/implementing/developing/introduction/assets/hide-conditions-list-settings.png)
+   ![リストコンポーネントの設定](assets/hide-conditions-list-settings.png)
 
 1. テンプレート作成者は、リストコアコンポーネントのデザインダイアログでオプション「**子を無効にする**」を選択して、子ページに基づいたリストを生成するオプションがページ作成者に対して表示されないようにできます。
 
-   ![リストコンポーネントデザインダイアログ](/help/implementing/developing/introduction/assets/hide-conditions-list-design.png)
+   ![リストコンポーネントデザインダイアログ](assets/hide-conditions-list-design.png)
 
 1. の下にポリシーノードが作成され、プロパティ `/conf/wknd/settings/wcm/policies/wknd/components/list` がに `disableChildren` 設定され `true`ます。
 
-   ![非表示条件のノード構造](/help/implementing/developing/introduction/assets/hide-conditions-node-structure.png)
+   ![非表示条件のノード構造](assets/hide-conditions-node-structure.png)
 
 1. 非表示条件は、ダイアログのプロパティノードの `granite:hide` プロパティの値として定義されます `/libs/core/wcm/components/list/v2/list/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/listFrom/items/children`
 
-![非表示条件の評価](/help/implementing/developing/introduction/assets/hide-conditions-evaluation.png)
+   ![非表示条件の評価](assets/hide-conditions-evaluation.png)
 
 1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
 1. ページ作成者がリストコンポーネントを使用するときに、オプション「**子ページ**」が表示されなくなりました。
 
-   ![子オプションが無効なリストコンポーネント](/help/implementing/developing/introduction/assets/hide-conditions-child-disabled.png)
+   ![子オプションが無効なリストコンポーネント](assets/hide-conditions-child-disabled.png)
