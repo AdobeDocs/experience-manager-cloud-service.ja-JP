@@ -2,7 +2,7 @@
 title: プロジェクト
 description: プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化でき、共通の共有環境でプロジェクトを簡単に管理できます
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 ### アセットコレクション {#asset-collections}
 
-アセットと同様に、アセットコレクションをプロジェクトに直接追加できます。アセット内にコレクションを定義します。<!--Similar to assets, you can add [asset collections](/help/assets/managing-collections-touch-ui.md) directly to your project. You define collections in Assets.-->
+アセットと同様に、[アセットコレクション](/help/assets/manage-collections.md)をプロジェクトに直接追加できます。アセット内にコレクションを定義します。
 
 ![アセットコレクション](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -112,7 +112,7 @@ ht-degree: 100%
 
 ### 翻訳ジョブ {#translation-job}
 
-翻訳ジョブタイルでは、翻訳を開始したり、翻訳のステータスを表示したりもできます。翻訳を設定するには、「翻訳プロジェクトの作成」を参照してください。<!--To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).-->
+翻訳ジョブタイルでは、翻訳を開始したり、翻訳のステータスを表示したりもできます。翻訳を設定するには、[翻訳プロジェクトの作成](/help/assets/translate-assets.md)を参照してください。
 
 ![翻訳ジョブ](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
