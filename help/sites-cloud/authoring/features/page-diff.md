@@ -2,7 +2,7 @@
 title: ページの差分
 description: ページの差分表示を使用すると、2 つのページを並べて比較し、差分を強調表示できます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 >
 >この機能を使用するには、ノード `/content/versionhistory` に対する&#x200B;**変更／作成／削除**&#x200B;権限が必要です。
 >
->この機能の技術的詳細については、「開発とページの差分」を参照してください。<!-- See [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) for more technical details on this feature.-->
+>この機能の技術的詳細については、[開発とページの差分](/help/implementing/developing/introduction/page-diff.md#operation-details)を参照してください。
 
 ## 使用方法 {#use}
 
@@ -105,4 +105,4 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->ページの差分操作の仕組みおよびページの差分に影響を与える可能性のある制限事項について詳しくは、この機能の開発者向けドキュメントを参照してください。<!-- For more details about the operation of the page diff mechanism as well as limitations which can affect page diff, please see the [developer documentation](/help/sites-developing/pagediff.md) of this feature.-->
+>ページの差分操作の仕組みおよびページの差分に影響を与える可能性のある制限事項について詳しくは、この機能の[開発者向けドキュメント](/help/implementing/developing/introduction/page-diff.md)を参照してください。
