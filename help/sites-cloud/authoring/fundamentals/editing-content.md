@@ -2,7 +2,7 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -129,7 +129,7 @@ ht-degree: 100%
 
 [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)を使用して、新しいコンポーネントを追加できます。[コンポーネントプレースホルダー](#component-placeholder)にコンポーネントの配置先が表示されます。
 
-1. ページが[**編集&#x200B;**モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
+1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. [コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)を開きます。
 1. 必要なコンポーネントを[必要な位置](#component-placeholder)までドラッグします。
 1. コンポーネントを[編集](#edit-content)します。
@@ -142,7 +142,7 @@ ht-degree: 100%
 
 段落システムの「**コンポーネントをここにドラッグ**」ボックスを使用して、新しいコンポーネントを追加できます。
 
-1. ページが[**編集&#x200B;**モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
+1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. 段落システムから新しいコンポーネントを選択して追加する方法は 2 つあります。
 
    * 既存のコンポーネントのツールバーまたは「**コンポーネントをここにドラッグ**」ボックスから&#x200B;**コンポーネントを挿入**&#x200B;オプション（+）を選択します。
@@ -165,7 +165,7 @@ ht-degree: 100%
 
 前述のいずれかのアセットタイプをドラッグしてコンポーネントを作成するには：
 
-1. ページが[**編集&#x200B;**モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
+1. ページが&#x200B;[**編集**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)であることを確認します。
 1. [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)を開きます。
 1. 必要なアセットを必要な位置までドラッグします。[コンポーネントプレースホルダー](#component-placeholder)にコンポーネントの配置先が表示されます。
 
@@ -177,7 +177,7 @@ ht-degree: 100%
 >
 >モバイルデバイスでは、アセットブラウザーは画面全体に表示されます。アセットをドラッグすると、ブラウザーが閉じて、アセットを配置できるようにページが再び表示されます。
 
-アセットを参照したとき、アセットをすぐに変更する必要があることに気づいた場合は、アセット名の横にある編集アイコンをクリックすると、ブラウザーから直接アセットエディターを開始できます。<!--If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-digital-assets.md) directly from the browser by clicking the edit icon next to the asset's name.-->
+アセットを参照したとき、アセットをすぐに変更する必要があることに気づいた場合は、アセット名の横にある編集アイコンをクリックすると、ブラウザーから直接[アセットエディター](/help/assets/manage-digital-assets.md)を開始できます。
 
 ![アセット編集ボタン](/help/sites-cloud/authoring/assets/asset-edit-button.png)
 
@@ -232,6 +232,7 @@ ht-degree: 100%
    * 同じページ、または別のページに貼り付けることができます。
    * 項目は、貼り付けアクションを選択した項目の上に貼り付けられます。
    * 貼り付けアクションは、クリップボードにコンテンツがある場合にのみ表示されます。
+
    ![貼り付けボタン](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
    >[!NOTE]
@@ -347,6 +348,7 @@ ht-degree: 100%
    * コンポーネントのサイズ変更ハンドルが表示されます。
    * エミュレーターツールバーが画面の上部に表示されます。
    * 標準の編集アクションの代わりにレイアウトアクションが、コンポーネントツールバーに表示されます。
+
    ![レイアウトモードのコンポーネント](/help/sites-cloud/authoring/assets/editing-layout-mode.png)
 
    [レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)と同様に、コンポーネントのレイアウトを変更できるようになりました。
