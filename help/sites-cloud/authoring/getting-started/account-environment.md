@@ -2,7 +2,7 @@
 title: アカウント環境の設定
 description: AEM では、アカウントおよびオーサー環境の特定項目を設定できます
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 100%
@@ -85,6 +85,7 @@ AEM では、アカウントおよびオーサー環境の特定項目を設定�
 
    * [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+
    このオプションは、キーボードショートカットを有効にします。デフォルトでは有効になっていますが、例えばユーザーに特定のアクセシビリティ要件がある場合に、無効にできます。
 
 * **アセットのホームページを有効にする**
@@ -93,4 +94,4 @@ AEM では、アカウントおよびオーサー環境の特定項目を設定�
 
 * **Stock 設定**
 
-   このオプションを使用すると、Adobe Stock の優先設定を指定できます。システム管理者が Adobe Stock との連携を有効にしている場合にのみ使用できます。 <!--This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).-->
+   このオプションを使用すると、Adobe Stock の優先設定を指定できます。システム管理者が ](/help/assets/aem-assets-adobe-stock.md)Adobe Stock との連携[を有効にしている場合にのみ使用できます。
