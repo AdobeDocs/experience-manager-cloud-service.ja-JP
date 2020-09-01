@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 >
 >また、一部のブラウザー（IE の旧バージョンなど）では、特定の長さまでの URL しか受け付けないので、ページ名を短くしておく技術的な理由もあります。
 
-新しいページを作成するとき、AEM では AEM と JCR によって課された規則に基づいてページ名が検証されます。<!--When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.-->
+When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
 
 使用できる最低限の文字は次のとおりです。
 
@@ -103,7 +103,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 * `_`（アンダースコア）
 * `-`（ハイフン／マイナス記号）
 
-使用可能なすべての文字について詳しくは、命名規則を参照してください。<!--Full details of all characters allowed can be found in [the naming conventions](/help/sites-developing/naming-conventions.md).-->
+許可されるすべての文字について詳しくは、[命名規則](/help/implementing/developing/introduction/naming-conventions.md)を参照してください。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 #### タイトル {#title}
 
-新しいページを作成するときにページの&#x200B;**タイトル**&#x200B;のみを指定した場合、AEM ではページの&#x200B;**名前**&#x200B;がこの文字列から派生され、AEM と JCR によって課された規則に基づいてページ名が検証されます。<!--If you supply only a page **Title** when creating a new page, AEM will derive the page **Name** from this string and [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+新しいページを作成するときにページの&#x200B;**タイトル**&#x200B;のみを指定した場合、AEM ではページの&#x200B;**名前**[がこの文字列から派生され、AEM と JCR によって課された規則に基づいてページ名が検証されます。](/help/implementing/developing/introduction/naming-conventions.md)
 
 「**タイトル**」フィールドに無効な文字が含まれていてもエラーにはなりませんが、派生された名前では、無効な文字が別の文字に置き換えられます。次に例を示します。
 
@@ -122,7 +122,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 
 #### 名前 {#name}
 
-新しいページを作成するときにページの&#x200B;**名前**&#x200B;を指定すると、AEM では AEM と JCR によって課された規則に基づいてページ名が検証されます。「**名前**」フィールドに無効な文字は指定できません。AEM で無効な文字が検出されると、フィールドが強調表示されます。<!--When you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR. You cannot submit invalid characters in the **Name** field. When AEM detects invalid characters the field will be highlighted with an explanatory message.-->
+新しいページを作成するときにページの&#x200B;**名前**&#x200B;を指定すると、AEM では AEM と JCR によって課された規則に基づいてページ名が検証されます。[](/help/implementing/developing/introduction/naming-conventions.md)「**名前**」フィールドに無効な文字は指定できません。AEM で無効な文字が検出されると、フィールドが強調表示され、説明メッセージが表示されます。
 
 ![無効なページ名の入力例](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -203,7 +203,7 @@ AEM では、複数のテンプレートが標準提供されています。使�
    * **名前**：
 
       * これは URI の生成に使用されます。指定しない場合、名前はタイトルから派生します。
-      * 新しいページを作成するときにページの「**名前**」を指定すると、AEM では AEM と JCR の規則に基づいてページ名が検証されます。<!--If you supply a page **Name** when creating a new page, AEM will [validate the name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.-->
+      * 新しいページを作成するときにページの「**名前**[」を指定すると、AEM では AEM と JCR の規則に基づいてページ名が検証されます。](/help/implementing/developing/introduction/naming-conventions.md)
       * 「**名前**」フィールドに&#x200B;**無効な文字は指定できません**。AEM で無効な文字が検出されると、そのフィールドは強調表示され、対象の文字を削除または置換する必要があることを示す説明メッセージが表示されます。
 
    >[!TIP]
@@ -362,9 +362,7 @@ AEM では、名前変更または移動がおこなわれるページへの内�
 
 >[!NOTE]
 >
->ページは、ページが基にしているテンプレートが許可される場所にのみ移動できます。詳しくは、「使用可能なテンプレート」を参照してください。
-<!--
->A page can only be moved to a location where the template upon which the page is based is allowed. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>ページは、ページが基にしているテンプレートが許可される場所にのみ移動できます。See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
 -->
 
 #### 非同期アクション {#asynchronous-actions}
