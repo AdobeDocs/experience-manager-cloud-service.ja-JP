@@ -2,9 +2,9 @@
 title: AEM UIの構造
 description: AEM UIは、基本となる原則がいくつかあり、いくつかの主要要素で構成されています
 translation-type: tm+mt
-source-git-commit: 0ae4a4695f3d869b9372694396711ca8626e1df1
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '915'
 ht-degree: 47%
 
 ---
@@ -169,4 +169,4 @@ AEMには、ページオーサリング用に複数のレイヤーが既に実�
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-技術情報について詳しくは、タッチ対応ページエディターの [JSドキュメントセット](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) （英語のみ）を参照してください。
+技術情報について詳しくは、ページエディター用の [JSドキュメントセット](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) を参照してください。
