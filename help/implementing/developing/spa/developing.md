@@ -2,9 +2,9 @@
 title: AEM向けSPAの開発
 description: この記事では、フロントエンド開発者がAEM向けのSPAを開発する際に考慮すべき重要な質問と、開発済みのSPAをAEMにデプロイする際に考慮すべきSPAに関するAEMのアーキテクチャの概要を説明します。
 translation-type: tm+mt
-source-git-commit: d0685af8b05d5491debf7bad99b5c8f111808f26
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2078'
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ AEMでのSPA開発の [原則に従う場合](#spa-development-principles-for-ae
    <th><strong>デメリット</strong></th>
   </tr>
   <tr>
-   <td>AEMは、 <a href="https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-reference-materials.html">SPAエディターSDKフレームワークを使用せずに、ヘッドレスなCMSとして使用されます。</a></td>
+   <td>AEMは、 <a href="/help/implementing/developing/spa/reference-materials.md">SPAエディターSDKフレームワークを使用せずに、ヘッドレスなCMSとして使用されます。</a></td>
    <td>フロントエンド開発者は、アプリを完全に制御できます。</td>
    <td><p>コンテンツ作成者は、AEMコンテンツのオーサリングエクスペリエンスを活用できません。</p> <p>コードに静的参照またはルーティングが含まれる場合、コードは移植性も再利用もできません。</p> <p>テンプレートエディターの使用を許可しないので、フロントエンド開発者はJCRを介して編集可能なテンプレートを維持する必要があります。</p> </td>
   </tr>
