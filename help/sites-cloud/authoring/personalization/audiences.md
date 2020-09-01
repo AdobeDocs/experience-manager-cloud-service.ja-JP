@@ -2,10 +2,10 @@
 title: オーディエンスの管理
 description: オーディエンスコンソールを使用して、Adobe Target アカウント用のオーディエンスを作成、整理および管理したり、ContextHub 用のセグメントを管理したりできます。
 translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '975'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ ContextHub セグメントは、オーディエンスコンソールまたはタ
    >
    >新しく作成したオーディエンスがあるか確認するために降順に並べ替えるには、「**変更済み**」をタップまたはクリックして、変更済みのリストを並べ替えることができます。
 
-ContextHub を使用するセグメント作成の詳細については、「ContextHub によるセグメンテーション設定」ドキュメントを参照してください。<!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
+ContextHub を使用するセグメント作成の詳細については、「ContextHub によるセグメント化の設定」ドキュメントを参照してください。<!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
 
 ## オーディエンスコンソールを使用した Adobe Target オーディエンスの作成 {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -65,7 +65,7 @@ Adobe Target オーディエンスを作成するには：
 
    ![オーディエンスへの移動](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. オーディエンスコンソールで、「**作成**」、「Target オーディエンスを作成」の順にタップまたはクリックします。
+1. オーディエンスコンソールで、「**作成**」、「**Target オーディエンスを作成**」の順にタップまたはクリックします。
 
    ![ターゲットオーディエンスの作成](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
@@ -82,13 +82,13 @@ Adobe Target オーディエンスを作成するには：
 
 | **属性** | **説明** | **その他の情報** |
 |---|---|---|
-| **モバイル** | モバイルデバイス、デバイスの種類、デバイスのベンダー、画面の寸法（ピクセル単位）などのパラメーターに基づく Target モバイルデバイスです。 | Adobe Target で[モバイルに関するドキュメント](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html)を参照してください。 |
-| **カスタム** | カスタムパラメーターは、mbox パラメーターです。mbox に対して mbox パラメーターを渡した場合、または targetPageParams 関数を使用した場合、それらのパラメーターはここに表示され、オーディエンスで使用できます。 | Adobe Target で[カスタムパラメーターに関するドキュメント](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)を参照してください。 |
+| **モバイル** | モバイルデバイス、デバイスの種類、デバイスのベンダー、画面の寸法（ピクセル単位）などのパラメーターに基づく Target モバイルデバイスです。 | Adobe Target で[モバイルに関するドキュメント](https://docs.adobe.com/content/help/ja-JP/target/using/audiences/create-audiences/categories-audiences/mobile.translate.html)を参照してください。 |
+| **カスタム** | カスタムパラメーターは、mbox パラメーターです。mbox に対して mbox パラメーターを渡した場合、または targetPageParams 関数を使用した場合、それらのパラメーターはここに表示され、オーディエンスで使用できます。 | Adobe Target で[カスタムパラメーターに関するドキュメント](https://docs.adobe.com/content/help/ja-JP/target/using/audiences/create-audiences/categories-audiences/custom-parameters.translate.html)を参照してください。 |
 | **OS** | 特定のオペレーティングシステムを使用している訪問者をターゲットに設定することができます。 | Linux、Macintosh または Windows を使用している Target ユーザーです。 |
-| **サイトページ** | 指定したページを閲覧している、または指定した mbox パラメーターが設定されている訪問者をターゲットにします。 | Adobe Target で[サイトページに関するドキュメント](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html)を参照してください。 |
-| **ブラウザー** | ページの訪問時に特定のブラウザーまたは特定のブラウザーオプションを使用しているユーザーをターゲットに設定することができます。 | Adobe Target で[ブラウザーオプションに関するドキュメント](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)を参照してください。 |
-| **訪問者プロファイル** | 特定のプロファイルパラメーターに一致する訪問者をターゲット設定します。 | Adobe Target で[訪問者プロファイルに関するドキュメント](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html)を参照してください。 |
-| **トラフィックソース** | サイトに導いた検索エンジンやランディングページに基づいて訪問者をターゲット設定します。 | Adobe Target で[トラフィックソースに関するドキュメント](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)を参照してください。 |
+| **サイトページ** | 指定したページを閲覧している、または指定した mbox パラメーターが設定されている訪問者をターゲットにします。 | Adobe Target で[サイトページに関するドキュメント](https://docs.adobe.com/content/help/ja-JP/target/using/audiences/create-audiences/categories-audiences/site-pages.translate.html)を参照してください。 |
+| **ブラウザー** | ページの訪問時に特定のブラウザーまたは特定のブラウザーオプションを使用しているユーザーをターゲットに設定することができます。 | Adobe Target で[ブラウザーオプションに関するドキュメント](https://docs.adobe.com/help/ja-JP/target/using/audiences/create-audiences/categories-audiences/browser.translate.html)を参照してください。 |
+| **訪問者プロファイル** | 特定のプロファイルパラメーターに一致する訪問者をターゲット設定します。 | Adobe Target で[訪問者プロファイルに関するドキュメント](https://docs.adobe.com/content/help/ja-JP/target/using/audiences/visitor-profiles/visitor-profile.translate.html)を参照してください。 |
+| **トラフィックソース** | サイトに導いた検索エンジンやランディングページに基づいて訪問者をターゲット設定します。 | Adobe Target で[トラフィックソースに関するドキュメント](https://docs.adobe.com/content/help/ja-JP/target/using/audiences/create-audiences/categories-audiences/traffic-sources.translate.html)を参照してください。 |
 
 ## オーディエンスコンソールでのオーディエンスの変更 {#modifying-an-audience-in-the-audiences-console}
 
