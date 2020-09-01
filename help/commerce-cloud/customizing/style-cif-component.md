@@ -10,7 +10,7 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1e8603a27af30ab394297b9f40491d93bc7d4ef4
+source-git-commit: d17aadfa60e2e13487d937c0630181beb7370328
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 5%
