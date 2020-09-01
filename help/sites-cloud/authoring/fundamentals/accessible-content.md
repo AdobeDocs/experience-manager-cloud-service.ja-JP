@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
-description: AEMをクラウドサービスとして使用すると、障害を持つユーザーがWebコンテンツにアクセスし、利用しやすくすることができます。
+description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
 translation-type: tm+mt
-source-git-commit: 84b69fb72b2fe28617417fd5a70c5ad1428c3535
+source-git-commit: fb6c90078e9da011a71093fcdab1a50faded5daa
 workflow-type: tm+mt
-source-wordcount: '13955'
-ht-degree: 84%
+source-wordcount: '14057'
+ht-degree: 99%
 
 ---
 
@@ -23,34 +23,32 @@ ht-degree: 84%
 * [WCAG ドキュメント](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 さらに、詳細は次を参照してください。
-* Our [Quick Guide to WCAG 2.1](/help/onboarding/accessibility/quick-guide-wcag.md).
-* アドビのソリューション用の [アクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance.html)。
 
-<!-- 
->* [Configuring the Rich Text Editor for producing accessible conten](/help/sites-administering/rte-accessible-content.md)
--->
+* アドビの [WCAG 2.1 クイックガイド](/help/onboarding/accessibility/quick-guide-wcag.md)
+* [Accessibility conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html)（アドビソリューションのアクセシビリティ準拠レポート）
+* [アクセス可能なコンテンツを生成するためのリッチテキストエディターの設定](/help/implementing/developing/extending/rte-accessible-content.md)
 
 ガイドラインは 3 つの適合レベル（レベル A（最低）、レベル AA、レベル AAA（最高））に分けられます。各レベルの簡単な定義を次に示します。
 
 * **レベル A：**&#x200B;サイトのアクセシビリティ基本的な最小レベルに達します。このレベルに達するには、レベル A の達成基準をすべて満たしている必要があります。
-* **レベルAA:** これは、基本的なレベルのアクセシビリティに到達し、ほとんどの状況でほとんどのテクノロジーを使用しているほとんどの人がアクセスできるように、注力すべき理想的なレベルのアクセシビリティです。 このレベルに達するには、レベル A とレベル AA の達成基準をすべて満たしている必要があります。
+* **レベル AA：**&#x200B;理想的なレベルのアクセシビリティです。ほとんどの状況で、ほとんどのテクノロジーを使用して、ほとんどのユーザーがアクセスできるように、サイトのアクセシビリティの基盤が整備されています。このレベルに達するには、レベル A とレベル AA の達成基準をすべて満たしている必要があります。
 * **レベル AAA：**&#x200B;きわめて高いレベルのアクセシビリティが確保されているサイトです。このレベルに達するには、レベル A、レベル AA、レベル AAA の達成基準をすべて満たしている必要があります。
 
 サイトを作成する際は、サイトの全体的なレベルを特定する必要があります。
 
-The following section presents [layers of the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) with related success criteria for Level A and Level AA [conformance levels](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1).
+次の節では、[WCAG 2.1 ガイドラインのレイヤー](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)および[適合レベル](https://www.w3.org/TR/WCAG/#conformance-to-wcag-2-1) A と AA の関連する達成基準を示します。
 
 >[!NOTE]
 >
 >このドキュメントでは、次の表記を使用しています。
 >
->* The [short names for the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance).
->* The [numbering used in the WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) to aid cross-referencing with the WCAG website.
+>* [WCAG 2.1 ガイドライン用の省略名](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)。
+>* WCAG の Web サイトとの相互参照を目的として [WCAG 2.1 のガイドラインで使用されている番号](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)。
 
 
 ## 原則 1：知覚可能 {#principle-perceivable}
 
-[原則 1: 知覚可能 - 情報およびユーザーインターフェイスコンポーネントは、ユーザーが知覚できる方法でユーザーに提示可能でなければならない。](https://www.w3.org/TR/WCAG/#perceivable)
+[原則 1：知覚可能 - 情報およびユーザーインターフェイスコンポーネントは、ユーザーが知覚できる方法でユーザーに提示可能でなければならない。](https://www.w3.org/TR/WCAG/#perceivable)
 
 ### 代替テキスト（1.1）{#text-alternatives}
 
@@ -70,21 +68,19 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 
 #### 達成方法 - テキスト以外のコンテンツ（1.1.1） {#how-to-meet-non-text-content}
 
-静的なグラフィックの場合、そのグラフィックと同等の代替テキストを指定することが基本的な要件です。これは、 **代替テキスト** フィールドで実行できます。 例えば、コアコンポーネント **[画像](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/image.html)**。
+静的なグラフィックの場合、そのグラフィックと同等の代替テキストを指定することが基本的な要件です。それには、「**代替テキスト**」フィールドを使用します。例えば、**[画像](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/image.html)**&#x200B;コアコンポーネントを参照してください。
 
 >[!NOTE]
 >
->標準搭載のコアコンポーネント( **[カルーセルなど](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**)には、個々の画像に代替テキスト記述を追加する**代替テキスト&#x200B;**フィールドを提供しないものもありますが、コンポーネント全体に「**Label ****[(](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** Accessibility)」フィールド(AccessibilityTab)があります。
+>標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
 >AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（「追加の HTML 要素および属性のサポートの追加」を参照）。
-
-<!--
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+>標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
+>
+>When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
-AEM では、デフォルトで入力される「**代替テキスト**」フィールドが必要です。If the image is purely decorative and alternative text would be unnecessary, the **Image is decorative** option can be checked.
+AEM では、デフォルトで入力される「**代替テキスト**」フィールドが必要です。画像が単なる装飾用で代替テキストが不要な場合は、「**画像は装飾画像**」オプションをチェックできます。
 
 #### 適切な代替テキストの作成 {#creating-good-text-alternatives}
 
@@ -97,7 +93,7 @@ AEM では、デフォルトで入力される「**代替テキスト**」フィ
 * 代替テキストでは、同じページ上のすぐ近くにテキスト形式で提示されているコンテンツをレプリケートしないでください。多くの画像は、ページのテキストで既に取り上げられている項目の説明なので、詳細な代替テキストが既に存在している場合があります。
 * テキスト以外のコンテンツが別のページまたはドキュメントへのリンクであり、同じリンクを形成しているテキストが他にない場合、画像の代替テキストは、画像を説明するものではなく、リンク先を示すものにする必要があります。
 * テキスト以外のコンテンツがボタン要素に含まれていて、同じボタンを形成するテキストがない場合、画像の代替テキストは、画像を説明するものではなく、ボタンの機能を示すものにする必要があります。
-* 画像に空の（ヌルの）代替テキストを割り当てるのは、問題ありませんが、画像に代替テキストを必要としない（例えば、純粋に装飾的なグラフィック）場合や、ページのテキストに同等のテキストが既に存在する場合に限ります。
+* 画像の代替テキストを空（null）にしても何の問題もありませんが、画像に代替テキストが不要な場合（純粋に装飾用のグラフィックの場合など）や、それに相当するテキストがページテキストに既に存在している場合に限られます。
 
 <!--
 The [W3C draft: HTML5 Techniques for providing useful text alternatives](https://dev.w3.org/html5/alt-techniques/) has more details and examples of appropriate alternative text provision for images of different types.
@@ -105,10 +101,10 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 代替テキストを必要とするテキスト以外のコンテンツには、以下のようなタイプがあります。
 
-* 説明写真：人や物や場所の画像です。ページ内の写真の役割を考えることが重要です。通常は、支援テクノロジーが要素のタイプ( `graphic` や `image`)を発表する際に、画像コンテンツについて説明することをお勧めします。 代替テキストの説明を使用する際 `screenshot` や使用する際 `illustration` の明確さが増す可能性がありますが、状況に応じて異なります。 一貫性は大きな要因です。オーサリングチーム全体に対して決定を行い、この決定をユーザーエクスペリエンス全体に適用する必要があります。
+* 説明写真：人や物や場所の画像です。ページでの写真の役割を考えることが重要です。支援テクノロジーで要素のタイプ（`graphic` や `image` など）を知らせる際には、通常、画像コンテンツについて説明することをお勧めします。代替テキストの説明で `screenshot` や `illustration` を使用すると、より明確な説明になることがありますが、それは状況によります。一貫性は大きな要因です。オーサリングチーム全体で共有される決定をおこない、その決定をユーザーエクスペリエンス全体に適用する必要があります。
 * アイコン：特定の情報を伝える小さい絵文字です。ページおよびサイト全体で一貫して使用する必要があります。1 つのページまたはサイト上の同じアイコンにはすべて、短く簡潔な同じ代替テキストを含める必要があります。ただし、そうすることにより、隣接するテキストと不要な重複が発生する場合を除きます。
 * チャートとグラフ：通常は数値データを表します。よって、代替テキストを提供する 1 つのオプションとしては、チャートまたはグラフィックで示されている主なトレンドの簡単な概要を含めることがあります。必要に応じて、「**詳細**」画像プロパティタブの「**説明**」フィールドを使用して、詳細な説明をテキストで提供します。さらに、ページまたはサイトの別の場所で、ソースデータを表形式で提供することもできます。
-* マップ、図、フローチャート： 空間データを提供するグラフィック（例えば、オブジェクト間やプロセス間の関係の説明をサポートする）の場合は、主要なメッセージがテキスト形式で提供され、このテキスト情報が各関連データポイントの近くに配置されていることを確認します。 地図の場合、完全に同等なテキストを提供することは困難な場合が多いものの、特定の場所への行き方を見つける手段として地図が提供されている場合は、地図画像の代替テキストで「*X の地図*」と簡単に示し、ページ内の別の場所または&#x200B;**画像**&#x200B;コンポーネントの「**詳細**」タブの「**説明**」フィールドで、目的の場所への道案内を提供します。
+* 地図、図、フローチャート：空間データを提供するグラフィックの場合（例：オブジェクト間の関係やプロセスの説明をサポートする場合）は、主要なメッセージをテキスト形式で提供し、このテキスト情報を各関連データポイントの近くに配置します。地図の場合、完全に同等なテキストを提供することは困難な場合が多いものの、特定の場所への行き方を見つける手段として地図が提供されている場合は、地図画像の代替テキストで「*X の地図*」と簡単に示し、ページ内の別の場所または&#x200B;**画像**&#x200B;コンポーネントの「**詳細**」タブの「**説明**」フィールドで、目的の場所への道案内を提供します。
 * CAPTCHA：CAPTCHA は、*Completely Automated Public Turing test to tell Computers and Humans Apart*（コンピューターと人間を区別するための、完全に自動化された公開チューリングテスト）の略です。Web ページで人間と不正ソフトウェアを区別するために使用されるセキュリティチェックですが、アクセシビリティの障害となる可能性があります。これらの画像をユーザーが見て説明することにより、セキュリティテストに合格します。この画像の代替テキストを提供することは明らかに不可能なので、代わりに代替のグラフィック以外のソリューションを検討する必要があります。W3C では、いくつかの提案をおこなっています。例えば、以下の方法にはそれぞれメリットとデメリットがあるとされています。
    * 論理パズル
    * 画像の代わりに音声出力を使用
@@ -133,7 +129,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 [ガイドライン 1.2 時間依存メディア：時間依存メディアには代替コンテンツを提供すること。](https://www.w3.org/TR/WCAG/#time-based-media)
 
-This deals with web content that is *time-based*. This covers content that the user can play (such as video, audio, and animated content) and may be prerecorded or a live stream.
+ここでは、*時間依存*&#x200B;の Web コンテンツについて扱います。これには、ユーザーが再生可能なコンテンツ（映像、音声、アニメーションなど）や、収録済みのコンテンツ、ライブストリームなどが含まれます。
 
 ### 音声のみおよび映像のみ（収録済み）（1.2.1）{#audio-only-and-video-only-prerecorded}
 
@@ -157,19 +153,19 @@ This deals with web content that is *time-based*. This covers content that the u
 
 #### 達成方法 - 音声のみおよび映像のみ（収録済み）（1.2.1）{#how-to-meet-audio-only-and-video-only-prerecorded}
 
-* コンテンツがビデオのない録音済みのオーディオ（ポッドキャストなど）の場合：
+* 映像なしの収録済み音声コンテンツ（ポッドキャストなど）の場合：
    * 音声コンテンツの字幕のリンクをコンテンツの直前または直後に提示します。字幕は、話の内容と、話されていない重要な内容のすべてに相当するテキストを含む HTML ページとし、話者を明記し、状況説明、声の表情、その他の重要な音声の説明を含める必要があります。
-* コンテンツがアニメーションの場合、またはオーディオのない事前に記録されたビデオの場合：
+* 音声なしのアニメーションまたは収録済み映像コンテンツの場合：
    * 映像で提供されている情報に相当するテキスト説明のリンクをコンテンツの直前または直後に提示します。
    * または、MP3 など一般的に使用されている音声形式で、相当する音声解説のリンクを提示します。
 
 >[!NOTE]
 >
->同じWebページ上に既に別の形式で存在するコンテンツの代替としてオーディオまたはビデオコンテンツを提供する場合は、別の代替オプションを追加する必要がない場合があります。
+>同じ Web ページ上に既に別の形式で存在するコンテンツの代替としてオーディオまたはビデオコンテンツを提供する場合は、代替情報をさらに追加する必要がない可能性があります。
 >
->WCAG 1.2.1に [ついて詳しくは、ガイドライン](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)「WCAG 1.2.1について」を参照してください。
+>詳しくは、[WCAG 1.2.1 の理解](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)をガイドラインとして参照してください。
 
-AEM Webページへのマルチメディアの挿入は、画像の挿入と似ています。 ただし、マルチメディアコンテンツには静止画像より多くの機能が含まれているので、マルチメディアの再生方法を制御するために、様々な設定やオプションがあります。
+マルチメディアを AEM Web ページに挿入することは、画像の挿入と似ています。ただし、マルチメディアコンテンツには静止画像より多くの機能が含まれているので、マルチメディアの再生方法を制御するために、様々な設定やオプションがあります。
 
 >[!NOTE]
 >
@@ -188,7 +184,7 @@ AEM Webページへのマルチメディアの挿入は、画像の挿入と似�
 
 #### 目的 - キャプション（収録済み）（1.2.2）{#purpose-captions-prerecorded}
 
-耳が聞こえない人や耳が聞こえにくい人は、オーディオコンテンツにアクセスできないか、非常に難しくなります。 キャプションは、音声オーディオと音声が読み上げられないオーディオのテキストで、ビデオの適切な時間に画面に表示されます。 オーディオが聞こえない人に、何が起きているのかを理解することができます。
+聴覚障碍のあるユーザーは、音声コンテンツにアクセスできないか、アクセスが非常に困難になります。キャプションは、音声で話されている内容と話されていない内容に相当するテキストであり、映像再生中に適時画面に表示されます。これにより、音声を聞くことのできないユーザーが内容を理解できます。
 
 #### 達成方法 - キャプション（収録済み）（1.2.2）{#how-to-meet-captions-prerecorded}
 
@@ -199,11 +195,11 @@ AEM Webページへのマルチメディアの挿入は、画像の挿入と似�
 
 可能な場合は、クローズドキャプションを使用して、キャプションの表示、非表示をユーザーが選択できるようにしてください。
 
-クローズドキャプションの場合、ビデオファイルと一緒に適切な形式( [SMIL](https://www.w3.org/AudioVideo/)など)で同期キャプションファイルを作成して提供する必要があります(方法の詳細はこのガイドの範囲外ですが、 [詳細情報 — キャプション（事前記録）(1.2.2)のチュートリアルへのリンクを用意しました](#more-information-captions-prerecorded)。 ビデオプレーヤーでキャプション機能を有効にして、そのビデオでキャプションが使用できることをユーザーに知らせるために、メモを提供するか、キャプション機能を有効にします。
+クローズドキャプションの場合は、適切な形式（[SMIL](https://www.w3.org/AudioVideo/) など）の同期キャプションファイルを映像ファイルと共に作成して提供する必要があります（この方法の詳細は、このガイドの範囲外ですが、[詳細情報 - キャプション（収録済み）（1.2.2）](#more-information-captions-prerecorded)に、いくつかのチュートリアルへのリンクを提示しています）。映像でキャプションを利用できることをユーザーに知らせるために、注意書きを表示するか、ビデオプレーヤーのキャプション機能を有効にしてください。
 
 オープンキャプションを使用する必要がある場合は、映像トラック内にテキストを埋め込みます。これをおこなうには、映像にタイトルをオーバーレイできるビデオ編集アプリケーションを使用します。
 
-#### More Information - Captions (Prerecorded) (1.2.2) {#more-information-captions-prerecorded}
+#### 詳細情報 - キャプション（収録済み）（1.2.2） {#more-information-captions-prerecorded}
 
 * [達成基準 1.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [達成基準 1.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
@@ -233,7 +229,7 @@ AEM Webページへのマルチメディアの挿入は、画像の挿入と似�
       * これにより、ユーザーは既存の音声トラック（**&#x200B;音声解説を含まない）と新しい音声トラック（**&#x200B;音声解説を含む）を切り替えることができます。
       * これにより、追加の説明が不要なユーザーの混乱を防ぐことができます。
    * 音声解説を拡張できるように、2 つ目のバージョンの映像コンテンツを作成します。これにより、適切な時点で音声と映像を一時的に休止して既存のボイスの合間に詳細な音声解説を提供することに関連する困難な作業を軽減できます。その結果、アクションが再開される前に、より長い音声解説を指定できます。前の例と同様に、追加の説明が不要なユーザーの混乱を防ぐために、この方法はオプションの追加音声トラックとして提供することをお勧めします。
-1. 映像またはアニメーションの音声および視覚要素をテキストで適切に表現した字幕を提供します。これには、適切な場合は、発言者の指示、設定の説明、視覚的に表示されるイベントや情報、および音声式が含まれます。 長さによって、字幕は映像やアニメーションと同じページに配置するか、別のページに配置できます。後者を選んだ場合は、映像またはアニメーションのすぐ近くに字幕へのリンクを提示してください。
+1. 映像またはアニメーションの音声および視覚要素をテキストで適切に表現した字幕を提供します。誰が話しているかや、状況の説明、視覚的に提示されるイベントや情報、声の表情を適宜含めてください。長さによって、字幕は映像やアニメーションと同じページに配置するか、別のページに配置できます。後者を選んだ場合は、映像またはアニメーションのすぐ近くに字幕へのリンクを提示してください。
 
 音声解説付きの映像の詳細な作成方法は、このガイドの範囲外です。映像および音声解説の作成には長時間を要する可能性がありますが、他のアドビ製品が役に立つ場合があります。
 
@@ -246,7 +242,7 @@ AEM Webページへのマルチメディアの挿入は、画像の挿入と似�
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### キャプション（ライブ）（1.2.4）    {#captions-live}
+### キャプション（ライブ）（1.2.4）      {#captions-live}
 
 * 達成基準 1.2.4
 * レベル AA
@@ -254,7 +250,7 @@ AEM Webページへのマルチメディアの挿入は、画像の挿入と似�
 
 #### 目的 - キャプション（ライブ）（1.2.4） {#purpose-captions-live}
 
-This success criterion is identical to [Captions (Prerecorded)](#captions-prerecorded) in that it addresses accessibility barriers experienced by people who are deaf or hearing-impaired, except that this success criterion deals with live presentations such as webcasts.
+この達成基準は、聴覚障碍のあるユーザーのアクセシビリティに関する問題に対応する点で、[キャプション（収録済み）](#captions-prerecorded)と同じです。ただし、この達成基準では Web キャストなどライブのプレゼンテーションを扱う点が異なります。
 
 #### 達成方法 - キャプション（ライブ）（1.2.4）{#how-to-meet-captions-live}
 
@@ -264,7 +260,7 @@ This success criterion is identical to [Captions (Prerecorded)](#captions-prerec
 
 * [WebAIM：Real Time Captioning](https://www.webaim.org/techniques/captions/realtime.php)
 
-* [AccessComputingプロジェクト（ワシントン大学）: 音声認識を使用してキャプションを自動的に生成できますか？](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
+* [AccessComputing プロジェクト（University of Washington）：Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
 #### 詳細情報 - キャプション（ライブ）（1.2.4）{#more-information-captions-live}
 
@@ -296,11 +292,11 @@ This success criterion is identical to [Captions (Prerecorded)](#captions-prerec
 
 このガイドラインは、次のようなユーザーのサポートに必要な要件に対応しています。
 
-* は、そのコンテンツのデフォルト表示で作成者が提示した情報（複数列のレイアウトや、色や画像を多く使用するページなど）にアクセスできない場合があります。
+* そのコンテンツのデフォルト表示（複数列のレイアウトや、色や画像を多用したページなど）では、作成者が提示した情報にアクセスできない場合があるユーザー
 
-* は、オーディオ専用、または大きなテキストや高いコントラストなどの代替の視覚表示を使用する場合があります。
+* 音声のみ、または大きいテキストや高いコントラストなど、代替の視覚表示を使用する可能性のあるユーザー
 
-### 情報および関係性（1.3.1）     {#info-and-relationships}
+### 情報および関係性（1.3.1）       {#info-and-relationships}
 
 * 達成基準 1.3.1
 * レベル A
@@ -308,50 +304,50 @@ This success criterion is identical to [Captions (Prerecorded)](#captions-prerec
 
 #### 目的 - 情報および関係性（1.3.1） {#purpose-info-and-relationships}
 
-障害を持つユーザーが使用する多くの支援テクノロジーは、コンテンツを効果的に表示または *理解するために構造情報に依存しています* 。 この構造情報は、ページ見出し、テーブル行、列見出し、リストタイプの形式をとることができます。 例えば、スクリーンリーダーを使用して、ページ内の見出しから見出しに移動できます。 ただし、ページコンテンツの構造が基になるHTMLではなく、視覚的なスタイルでのみ表示される場合、支援テクノロジーでは構造情報が利用できず、読みやすさが制限されます。
+障碍のあるユーザーが使用する多くの支援テクノロジーでは、コンテンツを効果的に表示または&#x200B;*理解*&#x200B;するために構造情報に基づいています。この構造情報は、ページ見出し、テーブルの行見出しおよび列見出し、リストタイプの形式を取ることができます。例えば、スクリーンリーダーを使用すれば、ページ内を見出しから見出しへと移動できます。ただし、ページコンテンツの構造が基になる HTML ではなく、視覚的なスタイルでのみ設定されているように見える場合、支援テクノロジーでは構造情報を利用できず、ブラウジングの操作性の向上を十分サポートできなくなります。
 
-この成功基準は、HTMLや他のコーディング手法を使用してプログラム的に構造情報を提供し、ブラウザや支援テクノロジーがその情報にアクセスして活用できるようにするために存在します。
+この達成基準の目的は、ブラウザーおよび支援テクノロジーが構造情報にアクセスし情報を利用できるように、構造情報が HTML やその他のコーディング手法を使用してプログラムで確実に提供されるようにすることです。
 
-#### How to Meet - Info and Relationships (1.3.1) {#how-to-meet-info-and-relationships}
+#### 達成方法 - 情報および関係性（1.3.1） {#how-to-meet-info-and-relationships}
 
-AEMでは、適切なHTML要素を使用して、意味的に意味のあるWebコンテンツを簡単に作成できます。 RTE（テキストコンポーネント）でページコンテンツを開き、**段落書式**&#x200B;メニュー（段落記号）を使用して、適切な構造要素（段落、見出しなど）を指定します。
+AEM では、適切な HTML 要素を使用することにより、意味のある Web コンテンツを簡単に構築できます。RTE（テキストコンポーネント）でページコンテンツを開き、**段落書式**&#x200B;メニュー（段落記号）を使用して、適切な構造要素（段落、見出しなど）を指定します。
 
-必要に応じて、次の要素を使用して、Webページの構造が適切であることを確認できます。
+次の要素を適宜使用して、Web ページに適切な構造を確実に指定できます。
 
-* **見出し：** RTEのアクセシビリティ機能を有効にしている限り、AEMオファー3レベルのページ見出しが有効になっています。 これらを使用して、コンテンツのセクションおよびサブセクションを識別できます。「見出し 1」は最上位の見出し、「見出し 3」は最下位の見出しです。システム管理者の設定により、使用可能な見出しレベルを増やすこともできます。
+* **見出し**：RTE のアクセシビリティ機能を有効にしている場合、AEM では 3 つのレベルのページ見出しが提供されます。これらを使用して、コンテンツのセクションおよびサブセクションを識別できます。「見出し 1」は最上位の見出し、「見出し 3」は最下位の見出しです。システム管理者の設定により、使用可能な見出しレベルを増やすこともできます。
 
-* **リスト**: HTMLを使用して、次の3種類のリストを指定できます。
+* **リスト**：HTML を使用して、3 つの異なるタイプのリストを指定できます。
    * `<ul>` 要素は、順序なし（箇条書き）リスト&#x200B;**&#x200B;に使用します。個々のリスト項目は、`<li>` 要素を使用して識別されます。RTE では、**箇条書き**&#x200B;アイコンを使用します。
    * `<ol>` 要素は、番号付きリスト&#x200B;**&#x200B;に使用します。個々のリスト項目は、`<li>` 要素を使用して識別されます。RTE では、「**番号付きリスト**」アイコンを使用します。
+
    既存のコンテンツを特定のリストタイプに変更する場合は、該当するテキストをハイライト表示して、適切なリストタイプを選択します。前述した段落テキストの入力方法を示す例と同様に、適切なリスト要素が HTML に自動的に追加されます。
 
    全画面表示モードでは、個別の&#x200B;**箇条書きリスト**&#x200B;および&#x200B;**番号付きリスト**&#x200B;アイコンが表示されます。全画面表示モード以外の場合、1 つの&#x200B;**リスト**&#x200B;アイコンから 2 つのオプションを使用できます。
 
-* **テーブル**: データの表は、HTMLの表要素を使用して識別する必要があります。
+* **テーブル**：データのテーブルは、HTML のテーブル要素を使用して識別する必要があります。
    * 1 つの `<table>` 要素
    * テーブルの行ごとに 1 つの `<tr>` 要素
    * 行および列の見出しごとに 1 つの `<th>` 要素
    * データセルごとに 1 つの `<td>` 要素
+
    さらに、アクセス可能なテーブルでは、次の要素および属性も使用します。
 
    * `<caption>` 要素は、テーブルの表示可能なキャプションを提供する際に使用します。キャプションは、デフォルトではテーブルの上に中央配置で表示されますが、CSS を使用して適切に配置できます。キャプションはプログラムによってテーブルに関連付けられるので、コンテンツを紹介する際に役立ちます。
    * `<summary>` 要素は、目の見えるユーザーに見えているものの概要を提示することで、視覚障碍のあるユーザーがテーブル内の情報をより簡単に理解できるように支援します。これは、複雑な、型どおりでないテーブルレイアウトが使用されている場合に特に便利です（この属性はブラウザーには表示されません。支援テクノロジーに読み上げられるだけです）。
    * `<th>` 要素の `scope` 属性は、セルが特定の行のヘッダーを表すか、特定の列のヘッダーを表すかを示すために使用します。同様の方法として、データセルが 1 つ以上のヘッダーに関連付けられている複雑なテーブルで、header 属性と id 属性を使用することがあります。
+
    >[!NOTE]
    >
-   >デフォルトでは、これらの要素や属性を直接は使用することはできませんが、システム管理者が&#x200B;**テーブルのプロパティ**&#x200B;ダイアログボックスでこれらの値のサポートを追加することは可能です（「追加の HTML 要素および属性のサポートの追加」を参照）。
-
-   <!-- removed link syntax for ExL - Bob Bringhurst
-  >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see Adding Support for Additional HTML Elements and Attributes /help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes).
-  -->
+   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
    「**テーブルのプロパティ**」タブを選択できる&#x200B;**テーブル**&#x200B;ダイアログを開くには、次のようにします。
 
    * 適切な&#x200B;**キャプション**&#x200B;を定義します。
    * 理想としては、「**幅**」、「**高さ**」、「**ボーダー**」、「**セル内の余白**」、「**セルの間隔**」のデフォルト値をすべて削除します。これらのプロパティはグローバルスタイルシートで設定できるからです。
+
    次に、**セルのプロパティ**&#x200B;を使用して、セルがデータセルかヘッダーセルかを選択できます。
 
-* **強調**: 強調を示すには、 `<strong>` または `<em>` 要素を使用します。 段落内のテキストをハイライト表示するために見出しを使用しないでください。
+* **強調**：`<strong>` または `<em>` 要素を使用して強調を指定します。段落内のテキストをハイライト表示するために見出しを使用しないでください。
    * 強調するテキストをハイライト表示します。
    * 「**B**」アイコン（`<strong>`に対応）または「**I**」アイコン（`<em>` に対応）を、**プロパティ**&#x200B;パネルでクリックします（HTML が選択されていることを確認してください）。
 
@@ -361,6 +357,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
       >
       >* `<b>` の代わりに `<strong>` を使用
       >* `<i>` の代わりに `<em>` を使用
+
       >
       >それぞれ実質的には同じですが、好ましいのは、意味的に正しい HTML である `<strong>` と `<em>` です。開発チームがプロジェクトインスタンスを作成する際に、`<strong>` と `<em>` ではなく `<b>` と `<i>` を使用するように RTE を設定できます。
 
@@ -430,7 +427,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 * [達成基準 1.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [達成基準 1.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### 感覚的な特徴（1.3.3）     {#sensory-characteristics}
+### 感覚的な特徴（1.3.3）       {#sensory-characteristics}
 
 * 達成基準 1.3.3
 * レベル A
@@ -438,7 +435,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 #### 目的 - 感覚的な特徴（1.3.3） {#purpose-sensory-characteristics}
 
-デザイナーは、情報を表示する際に、色、形状、テキストスタイル、またはコンテンツの絶対位置や相対位置など、視覚的なデザイン機能に重点を置いています。 これらは情報を伝える際に非常に強力なデザインテクニックになります（認知機能に関するニーズを持つ目の見えるユーザに対しては全体的なアクセシビリティを向上できます）が、視覚や視覚に障害を持つ人は、位置、色、形状などの属性を視覚的に識別する必要がある情報にアクセスできません。
+デザイナーは多くの場合、情報を提示する際に、色、形状、テキストスタイル、コンテンツの絶対位置または相対位置など、視覚的なデザイン特性に注目します。これらは、情報を伝えるうえで非常に強力なデザイン手法になります（また、目の見えるユーザーでも認知的なアクセシビリティが必要な場合にはアクセシビリティ全体を向上させることができます）。ただし、視覚障碍のあるユーザーは、位置や色、形状などの属性を視覚的に識別する必要のある情報にはアクセスできない場合があります。
 
 同様に、話し手が男性か女性かなど、異なる音声を区別する必要のある情報を音声コンテンツの代替テキストに反映しないと、聴覚障碍のあるユーザーにアクセシビリティの問題が発生します。
 
@@ -466,7 +463,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 [ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### 色の使用（1.4.1）     {#use-of-color}
+### 色の使用（1.4.1）       {#use-of-color}
 
 * 達成基準 1.4.1
 * レベル A
@@ -484,15 +481,15 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 また、テキストのみのブラウザーやモノクロの表示デバイスを使用している場合や、ページの白黒印刷を見る場合も、色を知覚できません。
 
-さらに考慮する必要があるのは、インターフェイス要素（タブ、トグルボタンなど）の *選択状態です* 。この状態は、色だけでなく視覚的な表示以外にも、何らかの形で伝達する必要があります。 このような要素では、特定の感覚に依存しない包括的なユーザーエクスペリエンスを作成する場合、パターン、図形、およびプログラム情報をさらに使用すると便利です。
+さらに考慮する必要があるのは、インターフェイス要素（タブ、トグルボタンなど）の&#x200B;*選択*&#x200B;状態です。この状態は、色などの視覚的な提示以外の方法で伝える必要があります。このような要素については、特定の感覚に依存しない包括的なユーザーエクスペリエンスを作成する場合、さらにパターン、図形、プログラム情報を使用すると役に立ちます。
 
-#### How to Meet - Use of Color (1.4.1) {#how-to-meet-use-of-color}
+#### 達成方法 - 色の使用（1.4.1） {#how-to-meet-use-of-color}
 
 色を使用して情報を伝達する場合は、色を見なくても情報が利用できることを確認してください。
 
 例えば、色によって提供されている情報を、テキストでも明示的に提供します。
 
-色を情報提供のキューとして使用する場合は、スタイル（太字、斜体など）やフォントの変更など、追加の視覚的キューを指定する必要があります。これは、視覚障碍を持つ人や色覚障碍を持つ人が情報を特定するのに役立ちます。ただし、ページをまったく見ることのできない人には役に立たないので、全面的に依存することはできません。したがって、この情報を目の見えないユーザーに伝えるには、隠しテキストを提供したり、 [Accessible Rich Internet Applications(ARIA)Suite of Web標準などのプログラム的なソリューションを使用したりすると便利です](https://www.w3.org/WAI/standards-guidelines/aria/)。
+色を情報提供のキューとして使用する場合は、スタイル（太字、斜体など）やフォントの変更など、追加の視覚的キューを指定する必要があります。これは、視覚障碍を持つ人や色覚障碍を持つ人が情報を特定するのに役立ちます。ただし、ページをまったく見ることのできない人には役に立たないので、全面的に依存することはできません。したがって、視覚障碍のあるユーザーにこのような情報を伝えるには、隠しテキストを提供したり、[ARIA（アクセシブルリッチインターネットアプリケーション）Web 標準規格](https://www.w3.org/WAI/standards-guidelines/aria/)などのプログラマティックソリューションを使用したりすると、役に立つ場合があります。
 
 #### 詳細情報 - 色の使用（1.4.1）{#more-information-use-of-color}
 
@@ -507,13 +504,13 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 #### 目的 - 音量の制御（1.4.2）{#purpose-audio-control}
 
-画面読み上げソフトウェアを使用している個人は、同時に他の音声が再生されている場合、音声出力を聞き取るのが難しい場合があります。この問題は、画面読み上げの音声出力が（現在のほとんどの場合と同様に）ソフトウェアベースで、サウンドとして同じ音量コントロールを介して制御される場合に悪化します。また、認知障害を持つ人や神経異性の人は、音に対する感受性を持つ場合もあります。 オーディオコンテンツのボリュームレベルを変更できない場合もあります。
+画面読み上げソフトウェアを使用している個人は、同時に他の音声が再生されている場合、音声出力を聞き取るのが難しい場合があります。この問題は、画面読み上げの音声出力が（現在のほとんどの場合と同様に）ソフトウェアベースで、サウンドとして同じ音量コントロールを介して制御される場合に悪化します。さらに、認知障碍や神経多様性のあるユーザーの中は、音に対する感受性が強い人がいる場合があります。このような人にとっては、オーディオコンテンツの音量レベルを変更できないと大きな問題になります。
 
 したがって、ユーザーがバックグラウンドサウンドをオフにできることが重要です。
 
 >[!NOTE]
 >
->ボリュームの制御は、ボリュームをゼロにすることを含む。
+>音量の調節には、音量をゼロにできることを含みます。
 
 #### 達成方法 - 音声の制御（1.4.2）{#how-to-meet-audio-control}
 
@@ -530,13 +527,14 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 * レベル AA
 * コントラスト（最低限）：テキストおよびテキストの画像を視覚的に表現したものが、4.5:1 以上のコントラスト比を持つ。ただし、次の場合を除く。
    * 大きいテキスト：大型のテキストおよび大型のテキストの画像の最低コントラスト比は 3:1 です。
-   * Incidental: Text or images of text that are part of an inactive user interface component, that are [pure decoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+   * 付随的：テキストまたはテキストの画像が、非アクティブなユーザーインターフェイスコンポーネントの一部である場合、[純粋な装飾](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)である場合、誰にも表示されない場合、他の重要な視覚コンテンツが含まれている写真の一部である場合は、コントラストの要件はありません。
    * ロゴタイプ：ロゴまたはブランド名の一部であるテキストには、最低コントラストの要件はありません。
+
    >[!NOTE]
    >
-   >詳しくは、「テキスト以外のコントラスト [について](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) 」を参照して、コンテンツ作成者がテキスト以外の要素（アイコン、インターフェイス要素など）に関する追加の要件を確認してください。
+   >詳しくは、[Understanding Success Criterion 1.4.11: Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) を参照して、コンテンツ作成者がテキスト以外の要素（アイコン、インターフェイス要素など）に関する追加要件を確認してください。
 
-#### Purpose - Contrast (Minimum) (1.4.3) {#purpose-contrast-minimum}
+#### 目的 - コントラスト（最低限）（1.4.3） {#purpose-contrast-minimum}
 
 特定の視覚障碍のあるユーザーは、特定の低コントラストの色のペアを区別できない場合があります。次のいずれかの場合に、このようなユーザーにアクセシビリティの問題が発生することがあります。
 
@@ -557,17 +555,17 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 >[!NOTE]
 >
->同等のPT/PX/EMサイズがフォントでレンダリングされる方法が異なる場合があることに注意してください。
+>フォントは PT／PX／EM サイズ設定が同等でもレンダリング方法が異なる場合があることに注意してください。
 >
->Webコンテンツ用の適切なフォントとサイズを選択する際は、判断力に優れ、読みやすさと操作性の面で誤りを含めることをお勧めします。
+>Web コンテンツに適したフォントとサイズ設定を選択する際には、読みやすさと使いやすさを慎重すぎるぐらい慎重に考慮して、的確に判断することをお勧めします。
 
 >[!NOTE]
 >
->次のサイトは、他のユニットへのコンバージョンに役立ちます。
+>次のサイトは他の単位への変換に役立ちます。
 >
->* [ピクセルからEmカルキュレータ — オムニ](https://www.omnicalculator.com/conversion/px-to-em)
->* [フォントサイズの変換： pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PXからEMへの変換により、単純化](http://pxtoem.com)
+>* [Px to Em Calculator - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
+>* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
 
 
 コントラスト比を確認するには、[Paciello Group の Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) や [WebAIM の Color Contrast Checker](https://www.webaim.org/resources/contrastchecker/) などの色コントラストツールを使用してください。これらのツールを使用すると、色のペアを確認し、コントラストの問題を報告できます。
@@ -593,7 +591,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 #### 達成方法 - テキストのサイズ変更（1.4.4）{#how-to-meet-resize-text}
 
-コンテンツ作成者は、成功条件1.4.4 [の満たし](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) 方のガイドラインに従うだけでなく、ページデザインやフォントサイズ（レスポンシブWebデザインなど）で流動的で柔軟な幅と高さを使用して、読者がテキストのサイズを変更できるように促すことができます。
+[達成基準 1.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)のガイドラインに従うだけでなく、読者がテキストのサイズを変更できるように、ページデザインやフォントサイズで流動的で柔軟な幅と高さ（レスポンシブ Web デザインなど）を使用するよう、コンテンツ作成者を促すことができます。
 
 #### 詳細情報 - テキストのサイズ変更（1.4.4）{#more-information-resize-text}
 
@@ -664,7 +662,7 @@ AEMでは、適切なHTML要素を使用して、意味的に意味のあるWeb�
 
 この達成基準の目的は、コンテンツが Web ページ上のコンテンツのサブセクション内にキーボードフォーカスを&#x200B;*トラップ*&#x200B;しないようにすることです。これは、複数の形式がページ内で組み合わされ、プラグインや埋め込みアプリケーションを使用してレンダリングされる場合に発生する一般的な問題です。
 
-Webページの機能によって、コンテンツのサブセクション（モーダルダイアログなど）にフォーカスが制限される場合があります。 そのような場合は、ユーザーがコンテンツのサブセクションを終了できる方法を提供する必要があります（例えば、ESCキーでモーダルダイアログを閉じるか、閉じるボタンでモーダルダイアログを閉じます）。
+Web ページの機能によって、フォーカスがコンテンツのサブセクション（モーダルダイアログなど）に制限される場合があります。そのような場合は、コンテンツのサブセクションからユーザーが移動できる方法を用意しておく必要があります（例えば、ESC キーや「閉じる」ボタンでモーダルダイアログを閉じるなど）。
 
 #### 達成方法 - キーボードトラップなし（2.1.2）{#how-to-meet-no-keyboard-trap}
 
@@ -700,7 +698,7 @@ Webページの機能によって、コンテンツのサブセクション（�
 * [達成基準 2.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### 一時停止、停止、非表示（2.2.2）     {#pause-stop-hide}
+### 一時停止、停止、非表示（2.2.2）       {#pause-stop-hide}
 
 * 達成基準 2.2.2
 * レベル A
@@ -717,19 +715,19 @@ Webページの機能によって、コンテンツのサブセクション（�
 
 #### 目的 - 一時停止、停止、非表示（2.2.2） {#purpose-pause-stop-hide}
 
-移動するコンテンツが気をそらすか、物理的に負担が大きくなる場合があり、ページの他の部分に集中するのが困難な場合があります。 また、テキストの移動に遅れを取らないユーザーには、このようなコンテンツが読みにくくなる場合があります。
+ユーザーによっては、動くコンテンツが気が散る、さらには肉体的に苦痛とまで感じられて、ページの他の部分に集中することが難しくなる場合があります。さらに、動くテキストを目で追うのに苦労するユーザーには、そのようなコンテンツは読みにくいことがわかる場合もあります。
 
-#### How to Meet - Pause, Stop, Hide (2.2.2) {#how-to-meet-pause-stop-hide}
+#### 達成方法 - 一時停止、停止、非表示（2.2.2） {#how-to-meet-pause-stop-hide}
 
 移動、閃光、点滅の性質を持つコンテンツを含む Web ページを作成する際には、コンテンツの性質に応じて、次のうち 1 つ以上の提案事項を適用できます。
 
-* ユーザーの読む時間を十分にするために、コンテンツのスクロールを一時停止する方法を提供します。例えば、ニュースティッカー、自動更新されたテキスト、自動進行する画像カルーセルなどです。
+* ユーザーの読む時間を十分にするために、コンテンツのスクロールを一時停止する方法を提供します。例えば、ニュースティッカー、自動更新テキスト、自動進行する画像カルーセルなどです。
 * 点滅するコンテンツが、5 秒後に点滅を停止するようにします。
-* ブラウザーで無効にできるコンテンツの移動や点滅を表示するには、適切なテクノロジーを使用します。 例えば、Graphics Interchange Format(GIF)やAnimated Portable Network Graphics(APNG)ファイルなどです。
-* Webページ上のフォームコントロールを提供して、ページ上で移動するコンテンツや明滅するコンテンツをすべて無効にすることができます。
-* 上記のいずれかが不可能な場合は、すべてのコンテンツを含むページへのリンクを提供します。ただし、移動したり点滅したりすることはありません。
+* ブラウザーで無効にできる、動きや点滅のあるコンテンツを表示するには、適切なテクノロジーを使用します。例えば、Graphics Interchange Format（GIF）ファイルや Animated Portable Network Graphics（APNG）ファイルなどです。
+* ページ上の動きや点滅のあるコンテンツをすべてユーザーが無効にできるように、Web ページでのフォームコントロールを提供します。
+* 上記の方法が不可能な場合は、含まれているすべてのコンテンツに動きや点滅がないページへのリンクを提供します。
 
-#### More information - Pause, Stop, Hide (2.2.2) {#more-information-pause-stop-hide}
+#### 詳細情報 - 一時停止、停止、非表示（2.2.2） {#more-information-pause-stop-hide}
 
 * [達成基準 2.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [達成基準 2.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
@@ -778,7 +776,7 @@ Webページの機能によって、コンテンツのサブセクション（�
 
 #### 目的 - ブロックのスキップ（2.4.1）{#purpose-bypass-blocks}
 
-この達成基準の目的は、コンテンツ間を順番に移動する訪問者が、Web ページの主要なコンテンツにより直接敵にアクセスできるようにすることです。Web ページやアプリケーションには、他のページや画面に表示されるコンテンツが含まれる場合が多くあります。コンテンツの繰り返しブロックの例としては、ナビゲーションリンク、ヘッダーグラフィック、メニュー、広告フレームなどがありますが、これらに限定されません。 個々の単語、フレーズ、単一のリンクなどの小さな繰り返しセクションは、この規定の目的ではブロックとは見なされません。
+この達成基準の目的は、コンテンツ間を順番に移動する訪問者が、Web ページの主要なコンテンツにより直接敵にアクセスできるようにすることです。Web ページやアプリケーションには、他のページや画面に表示されるコンテンツが含まれる場合が多くあります。コンテンツの繰り返しブロックの例としては、ナビゲーションリンク、ヘッダーグラフィック、メニュー、広告フレームなどがありますが、これらに限定されません。個々の単語、フレーズ、単一のリンクなどの小さな繰り返しセクションは、この規定の目的ではブロックとは見なされません。
 
 #### 達成方法 - ブロックのスキップ（2.4.1）{#how-to-meet-bypass-blocks}
 
@@ -789,7 +787,7 @@ Webページの機能によって、コンテンツのサブセクション（�
 * [達成基準 2.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### ページタイトル（2.4.2）     {#page-titled}
+### ページタイトル（2.4.2）       {#page-titled}
 
 * 達成基準 2.4.2
 * レベル A
@@ -801,7 +799,7 @@ Webページの機能によって、コンテンツのサブセクション（�
 
 #### 達成方法 - ページタイトル（2.4.2） {#how-to-meet-page-titled}
 
-AEMで新しいHTMLページを作成する場合、ページタイトルを指定できます。 ページのコンテンツと目的、特に一意の要素をタイトルに適切に記述し、訪問者がそのコンテンツが実際にニーズに関連しているかどうかをすばやく特定できるようにします。
+AEM で新しい HTML ページを作成する際には、ページタイトルを指定できます。コンテンツが自分のニーズに実際に関係があるかどうかを訪問者がすばやく特定できるように、ページのコンテンツや目的、特に独自の観点を十分に反映したタイトルにしてください。
 
 ページを編集する際に、ページタイトルを編集することもできます（**ページ情報**／**プロパティ**&#x200B;からアクセス可能）。
 
@@ -818,7 +816,7 @@ AEMで新しいHTMLページを作成する場合、ページタイトルを指�
 
 #### 目的 - フォーカス順序（2.4.3）{#purpose-focus-order}
 
-この達成基準の目的は、ユーザーがコンテンツを順番に移動する際に、コンテンツの意味に合った順序で情報が表示され、キーボードから操作できるようにすることです。これにより、ユーザーがコンテンツの一貫したメンタルモデルを作成できるので、混乱が軽減されます。コンテンツ内の論理的な関係を反映した異なる順序が存在する場合があります。例えば、複数のフィールドやステップで構成されるオンラインフォームのコンポーネント間を移動すると、コンテンツ内の論理的な関係が反映されます。
+この達成基準の目的は、ユーザーがコンテンツを順番に移動する際に、コンテンツの意味に合った順序で情報が表示され、キーボードから操作できるようにすることです。これにより、ユーザーがコンテンツの一貫したメンタルモデルを作成できるので、混乱が軽減されます。コンテンツ内の論理的な関係を反映した異なる順序が存在する場合があります。例えば、複数のフィールドやステップで構成されるオンラインフォームでのコンポーネント間の移動は、コンテンツ内の論理的な関係を反映しています。
 
 #### 達成方法 - フォーカス順序（2.4.3）{#how-to-meet-focus-order}
 
@@ -829,7 +827,7 @@ AEMで新しいHTMLページを作成する場合、ページタイトルを指�
 * [達成基準 2.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### リンクの目的（コンテキスト内）（2.4.4）     {#link-purpose-in-context}
+### リンクの目的（コンテキスト内）（2.4.4）       {#link-purpose-in-context}
 
 * 達成基準 2.4.4
 * レベル A
@@ -837,9 +835,9 @@ AEMで新しいHTMLページを作成する場合、ページタイトルを指�
 
 #### 目的 - リンクの目的（コンテキスト内）（2.4.4） {#purpose-link-purpose-in-context}
 
-障害に関係なく、適切なリンクテキストを介したリンクの向きを明確に示すことが、すべてのユーザーにとって重要です。 これは、ユーザーが実際にリンクをたどるかどうかを判断するのに役立ちます。 目が見えるユーザにとって、意味のあるリンクテキストはページ上に複数のリンクがある場合（特にページがテキスト中心の場合）に非常に役立ちます。意味のあるリンクテキストは、ターゲットページの機能を明確に示します。 単一のページですべてのリンクのリストを生成できる支援技術を使用するユーザーは、リンクのテキストが一意で情報のある場合に、リンクのテキストをコンテキスト外でより簡単に理解できます。 ただし、認識機能に障害を持つ視覚障害を持つ人は、リンクがリンクがどこに移動するのかを正確に説明するのに十分な情報を提供しないと、混乱する場合があります。
+障碍に関係なく、すべてのユーザーにとって、適切なリンクテキストによってリンクの目的を明確に示すことは重要です。これによってユーザーは、実際にリンクをたどるかどうかを判断できます。目の見えるユーザーにとって、ページ上に複数のリンクがある場合（特に、テキストが多いページの場合）、意味のあるリンクテキストは、ターゲットページの機能をより明確に示すので、非常に有用です。支援テクノロジーのユーザーは、1 つのページにすべてのリンクのリストを生成できるので、リンクテキストが独特でしかも情報量が多ければ、コンテキストからリンクテキストをより簡単に理解できます。ただし、目の見えるユーザーでも認知機能に障碍がある場合は、リンク先を正確に説明する十分な情報をリンクが提供しないと、当惑する可能性があります。
 
-#### How to Meet - Link Purpose (In Context) (2.4.4) {#how-to-meet-link-purpose-in-context}
+#### 達成方法 - リンクの目的（コンテキスト内）（2.4.4） {#how-to-meet-link-purpose-in-context}
 
 何よりも、リンクの目的がリンクのテキスト内で明確に説明されていることを確認してください。
 
@@ -852,9 +850,9 @@ AEMで新しいHTMLページを作成する場合、ページタイトルを指�
 
 リンクは複数ページにわたって一貫した表現にする必要があります。ナビゲーションバーの場合は特にそうです。例えば、特定のページへのリンクの名前を、あるページで「**パブリケーション**」とする場合は、一貫性を保つために、他のページでもそのテキストを使用します。
 
-記述時点では、ページに表示される類似のリンクが宛先に関する一意の情報を提供するように、タイトル属性の使用に関する問題がいくつかあります（例えば、「詳細を表示」は様々な宛先を指す場合が多い）。
+本ドキュメントの執筆時点では、ページに表示される類似リンクがリンク先に関する一意の情報を提供するようにタイトル属性を使用するには、問題がいくつかあります（例えば、「続きを読む」は多くの場合、様々なリンク先を指します）。
 
-* title属性に含まれるテキストは、通常、マウスユーザーのツールチップポップアップとしてのみ使用でき、キーボードやモバイルユーザーは常にアクセスできません。
+* タイトル属性内に含まれるテキストは、通常はマウスユーザーにツールチップのポップアップとして表示されるだけで、キーボードを使用した、またはモバイルユーザーによる一貫したアクセスはできません。
 * スクリーンリーダーでタイトル属性を読み上げることができますが、この機能はデフォルトでは有効になっていない場合があり、タイトル属性が存在することにユーザーが気づかない可能性があります。
 * タイトルテキストの外観の変更が難しいので、ユーザーによっては読むことが困難または不可能な場合があります。
 
@@ -875,7 +873,7 @@ John Smith’s publications
 >
 >上記のスニペットは図です。**画像**&#x200B;コンポーネントを使用することをお勧めします。
 
-追加のコンテキストを必要とせずに、リンクの目的を識別するリンクテキストを提供することをお勧めしますが、これは常に可能とは限りません。 コンテキストのないリンクは、次の場合に使用できます。HTML の例は、[達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)を参照してください。
+追加のコンテキストを必要とせずにリンクの目的を識別するリンクテキストを提供することが望ましいものの、これが常に可能とは限らないことがわかっています。コンテキストのないリンクは、次の場合に使用できます。HTML の例は、[達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)を参照してください。
 
 * リンクテキストが、密接に関連するリンクのリストの一部であり、リンクを含むリスト項目で十分なコンテンツが提供されている場合。
 * リンクの目的が、前の&#x200B;**（後ろではない）段落テキストから明確に識別できる場合。
@@ -981,17 +979,17 @@ John Smith’s publications
 
 この達成基準を満たすために、ページ上部の `lang` 要素内で `<html>` 属性を使用して、Web ページのデフォルト言語を識別できます。次に例を示します。
 
-* If a page is written in English, the `<html>` element should read:
+* 英語で書かれているページの場合、`<html>` 要素は次のようになります。
    `<html lang = “en”>`
 
-* 一方、スペイン語でレンダリングされるページは、次の標準を採用する必要があります。
+* 一方、スペイン語でレンダリングされるページの場合は、次の標準規格を採用します。
    `<html lang = “es”>`
 
-In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-cloud/authoring/fundamentals/page-properties.md).
+AEM では、ページのデフォルト言語はページ作成時に設定されますが、[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)の編集時に変更することもできます。
 
 >[!NOTE]
 >
->AEMは、ルート言語のバリエーションに対してさらに微調整を行います。 例えば、アメリカン英語 — en-us、英語 — en-gb、カナダ英語 — en-caのように入力します。 この詳細レベルは支援テクノロジーにとって不必要なことが多くありますが、ページコンテンツの地域的なバリエーションに使用することもできます。
+>AEM では、ルート言語のバリエーションに応じてさらに微調整をおこなうことができます。例えば、アメリカ英語の場合は en-us、イギリス英語の場合は en-gb、カナダ英語の場合は en-ca などと指定します。この詳細レベルは支援テクノロジーにとっては不必要な場合が多いですが、ページコンテンツの地域的なバリエーションに使用することができます。
 
 #### 詳細情報 - ページの言語（3.1.1）{#more-information-language-of-page}
 
@@ -999,7 +997,7 @@ In AEM, the default language of your page is set when creating the page, but may
 * [達成基準 3.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * コードは ISO 639-1 に基づいています。各言語の詳細なコードリストについては、[W3 Schools サイト](https://www.w3schools.com/tags/ref_language_codes.asp)を参照してください。
 
-### 一部分の言語（3.1.2）     {#language-of-parts}
+### 一部分の言語（3.1.2）       {#language-of-parts}
 
 * 達成基準 3.1.2
 * レベル AA
@@ -1012,7 +1010,7 @@ In AEM, the default language of your page is set when creating the page, but may
 この達成基準を適用するページでは、以下のことが可能です。
 
 * 点字切り替えソフトウェアで、アクセント記号付きの文字を挿入。
-* スクリーンリーダーは、特殊文字を含む単語や、ページレベルで識別されたデフォルト言語ではない単語を発音します。
+* スクリーンリーダーで、特殊文字を含む単語やページレベルで識別されたデフォルト言語でない単語を発音。
 * Google 翻訳などの翻訳ツールを使用して、コンテンツを別の言語に翻訳。
 
 #### 達成方法 - 一部分の言語（3.1.2） {#how-to-meet-language-of-parts}
@@ -1039,10 +1037,7 @@ In AEM, the default language of your page is set when creating the page, but may
 >
 >様々な言語の名前や都市名を含める場合や、デフォルトの言語で一般的になった外来語やフレーズ（英語の *schadenfreude* など）を使用する場合は、この達成基準に従う必要はありません。
 
-span 要素を適切な言語で追加するには、RTE のソース編集モードで、上記の内容になるように HTML マークアップを手動で編集します。または、システム管理者が `lang` 属性を RTE に含めることもできます（「追加の HTML 要素および属性のサポートの追加」を参照）。
-<!--
-To add the span element, with an appropriate language, you can manually edit your HTML markup in the source edit mode of the RTE so that it reads as above. Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+span 要素を適切な言語で追加するには、RTE のソース編集モードで、上記の内容になるように HTML マークアップを手動で編集します。Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 #### 詳細情報 - 一部分の言語（3.1.2）{#more-information-language-of-parts}
 
@@ -1159,7 +1154,7 @@ Web ページ上に 2 つのコンポーネントがあり、両方のコンポ�
 
 #### 目的 - エラーの特定（3.3.1）{#purpose-error-identification}
 
-この達成基準の目的は、エラーが発生したことをユーザーが確実に認識し、何が間違っているかを判断できるようにすることです。エラーメッセージは、できる限り具体的に記述する必要があります。フォームの送信に失敗した場合に、フォームを再表示してエラーのあるフィールドを示すことは、一部のユーザーにとって、エラーの発生を認識するのに十分ではありません。例えば、スクリーンリーダーを使用するユーザーは、インジケーターのひとつに遭遇するまでエラーがあったことに気づきません。エラーインジケーターに遭遇する前に、ページが単に機能していないと考えて、フォームを完全に破棄する可能性があります。Per the definition in WCAG, an [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) is information provided by the user that is not accepted. これには以下が含まれます。
+この達成基準の目的は、エラーが発生したことをユーザーが確実に認識し、何が間違っているかを判断できるようにすることです。エラーメッセージは、できる限り具体的に記述する必要があります。フォームの送信に失敗した場合に、フォームを再表示してエラーのあるフィールドを示すことは、一部のユーザーにとって、エラーの発生を認識するのに十分ではありません。例えば、スクリーンリーダーを使用するユーザーは、インジケーターのひとつに遭遇するまでエラーがあったことに気づきません。エラーインジケーターに遭遇する前に、ページが単に機能していないと考えて、フォームを完全に破棄する可能性があります。WCAG の定義によると、[入力エラー](https://www.w3.org/TR/WCAG/#dfn-input-error)は、ユーザーから提供される受け入れられない情報です。これには以下が含まれます。
 
 Web ページで必要とされるが、ユーザーによって省略された情報、またはユーザーが提供するが、必要なデータ形式または許可されている値に該当しない情報。次に例を示します。
 
@@ -1189,9 +1184,9 @@ Web ページで必要とされるが、ユーザーによって省略された�
 
 フォームへの入力を支援する説明を提供することは、インターフェイスを使いやすくするための基本です。これをおこなうことは、視覚や認知の障碍のあるユーザーに特に役立ちます。この説明がないと、フォームのレイアウトや、フォームの特定のフィールドで提供されているデータの種類を理解することが困難になるからです。
 
-##### Forms
+##### フォーム
 
-In the AEM WKND demo project a default label is added when you add a form component, such as a **Text Field**, to the page. このデフォルトのタイトルはコンポーネントのタイプによって異なります。そのフィールドの編集ダイアログの「**タイトルとテキスト**」タブに、独自のタイトルを追加できます。各フォームコンポーネントに関連付けられているデータをユーザーが理解できるようなラベルを指定することが重要です。
+AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B;などのフォームコンポーネントをページに追加すると、デフォルトのラベルが追加されます。このデフォルトのタイトルはコンポーネントのタイプによって異なります。そのフィールドの編集ダイアログの「**タイトルとテキスト**」タブに、独自のタイトルを追加できます。各フォームコンポーネントに関連付けられているデータをユーザーが理解できるようなラベルを指定することが重要です。
 
 この「**タイトル**」フィールドは、支援テクノロジーで使用できるラベルを提供するので、フィールド要素用に使用する必要があります。フィールドの横のテキストにラベルを書き込むだけでは不十分です。
 
@@ -1199,17 +1194,13 @@ In the AEM WKND demo project a default label is added when you add a form compon
 
 ###### 画像ボタン {#image-buttons}
 
-Where image buttons are used (for example, the **Image Button** component of the WKND project) the **Title** field in the **Title and Text** tab of the edit dialog actually provides the alt text for the image, rather than the label. 以下の例では、`Submit` というテキストを持つ画像に、`Submit` という代替テキストが、編集ダイアログの「**タイトル**」フィールドを使用して追加されています。
+画像ボタンが使用されている場合（WKND プロジェクトの&#x200B;**画像ボタン**&#x200B;コンポーネントなど）、編集ダイアログの「**タイトルとテキスト**」タブの「**タイトル**」フィールドには、ラベルではなく、画像の代替テキストが実際に表示されます。以下の例では、`Submit` というテキストを持つ画像に、`Submit` という代替テキストが、編集ダイアログの「**タイトル**」フィールドを使用して追加されています。
 
 ###### フォームフィールドのグループ {#groups-of-form-fields}
 
-In the WKND project, where there is a group of related controls, such as **Radio Group**, a title may be needed for the group, as well as individual controls. AEMでラジオボタンのセットを追加する場合、「**タイトル**」フィールドにはこのグループタイトルが表示されますが、個々のタイトルはラジオボタン（**項目**）の作成時に指定されます。
+**ラジオグループ**&#x200B;など、関連するコントロールのグループがある WKND プロジェクトでは、個々のコントロールだけでなく、グループにタイトルが必要になる場合があります。AEMでラジオボタンのセットを追加する場合、「**タイトル**」フィールドにはこのグループタイトルが表示されますが、個々のタイトルはラジオボタン（**項目**）の作成時に指定されます。
 
-ただし、グループタイトルとラジオボタン自体との間には、プログラム的な関連付けはありません。テンプレートエディターでは、必要な `fieldset` タグと `legend` タグでタイトルを囲んで、この関連付けを作成する必要があります。この処理は、ページのソースコードを編集することによってのみ可能です。また、システム管理者がこれらの要素のサポートを追加して、**フィールドのプロパティ**&#x200B;ダイアログに表示させることもできます（「追加の HTML 要素および属性のサポートの追加」を参照）。
-
-<!--
-However, there is no programmatic association between the group title and the radio buttons themselves. Template editors would need to wrap the title in the necessary `fieldset` and `legend` tags to create this association and this can only be done by editing the page source code. Alternatively, a system administrator can add support for these elements so that they appear in the **Field Properties** dialog (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
--->
+ただし、グループタイトルとラジオボタン自体との間には、プログラム的な関連付けはありません。テンプレートエディターでは、必要な `fieldset` タグと `legend` タグでタイトルを囲んで、この関連付けを作成する必要があります。この処理は、ページのソースコードを編集することによってのみ可能です。また、システム管理者がこれらの要素のサポートを追加して、**フィールドのプロパティ**&#x200B;ダイアログに表示させることもできます（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md)を参照）。
 
 ###### フォームに関するその他の考慮事項 {#additional-considerations-for-forms}
 
@@ -1237,7 +1228,7 @@ However, there is no programmatic association between the group title and the ra
 
 #### 目的 - エラー修正の提案（3.3.3）{#purpose-error-suggestion}
 
-この達成基準の目的は、入力エラーの修正に必要な適切な提案がユーザーに確実に届くようにすることです。The WCAG definition of [input error](https://www.w3.org/TR/WCAG/#dfn-input-error) says that it is &quot;information provided by the user that is not accepted&quot; by the system. 受け入れられない情報の例としては、必要であるがユーザーによって省略された情報や、ユーザーが提供するが、必要なデータ形式または許容される値に該当しない情報などがあります。
+この達成基準の目的は、入力エラーの修正に必要な適切な提案がユーザーに確実に届くようにすることです。WCAG の[入力エラー](https://www.w3.org/TR/WCAG/#dfn-input-error)の定義は、「ユーザーが提供する情報で、受け入れられないもの」というものです。受け入れられない情報の例としては、必要であるがユーザーによって省略された情報や、ユーザーが提供するが、必要なデータ形式または許容される値に該当しない情報などがあります。
 
 達成基準 3.3.1 はエラーの通知を提供します。しかし、認知機能に障碍を持つユーザーは、エラーの修正方法を理解するのが難しい場合があります。視覚に障碍を持つユーザーは、エラーの修正方法を正確に理解できない場合があります。フォームの送信に失敗した場合、エラーの発生を認識しているにもかかわらず、エラーの修正方法が不明なことから、ユーザーはフォームを放棄する可能性があります。
 
