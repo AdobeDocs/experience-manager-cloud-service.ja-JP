@@ -2,7 +2,7 @@
 title: SPA ブループリント
 description: このドキュメントでは、AEM内に編集可能なSPAコンポーネントを実装するためにSPAフレームワークが満たす必要がある、フレームワークに依存しない一般的な契約について説明します。
 translation-type: tm+mt
-source-git-commit: f7d90d9cb41077a3a510f97a9f9f89f4b2b13cd9
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 作成者がAEM SPAエディターを使用してSPAのコンテンツを編集できるようにするには、SPAが満たす必要がある要件があります。
 
-## 概要 {#introdcution}
+## 概要 {#introduction}
 
 このドキュメントでは、AEM内に編集可能なSPAコンポーネントを実装するために、SPAフレームワークが満たす必要がある一般的な契約(AEMサポート層など)について説明します。
 
@@ -283,4 +283,3 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 AEM での SPA について詳しくは、次のドキュメントを参照してください。
 
 * [SPAエディタ概要](editor-overview.md) :AEMのSPAと通信モデルの概要
-
