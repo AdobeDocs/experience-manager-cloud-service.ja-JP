@@ -2,7 +2,7 @@
 title: ページバージョンの処理
 description: ページのバージョンを作成、比較および復元します
 translation-type: tm+mt
-source-git-commit: 87da152f21abe379d70e0a8d04f3155901f013dd
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 67%
@@ -132,7 +132,7 @@ ht-degree: 67%
 
    ![バージョンの復元 — ページの選択](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 選択したページの選択したバージョンを **現在のバージョンに復元するには** 、「 *Restore* （復元）」を選択します。
+1. 選択したページの選択したバージョンを現在のバージョンとして復元するには **、[復元** ]を選択します。
 
 >[!NOTE]
 >
