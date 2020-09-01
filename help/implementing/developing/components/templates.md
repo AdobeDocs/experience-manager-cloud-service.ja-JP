@@ -2,7 +2,7 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用されるページを作成するときに使用します。
 translation-type: tm+mt
-source-git-commit: 0508311b997789ada07856a73d29e38d1b735979
+source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 55%
@@ -512,7 +512,7 @@ Folio Builder
 
    * `cq:templateType`  — テンプレートタイプの参照を提供します。
 
-![テンプレート、コンテンツ、コンポーネントの相互関係](/help/implementing/developing/introduction/assets/templates-content-components.png)
+![テンプレート、コンテンツ、コンポーネントの相互関係](assets/templates-content-components.png)
 
 上の図は、テンプレート、コンテンツおよびコンポーネントの相関関係を示したものです。
 
@@ -565,7 +565,7 @@ Folio Builder
 
 以下の図は、テンプレートの評価プロセスを示しています。
 
-![テンプレート評価プロセス](/help/implementing/developing/introduction/assets/template-evaluation.png)
+![テンプレート評価プロセス](assets/template-evaluation.png)
 
 >[!CAUTION]
 >
