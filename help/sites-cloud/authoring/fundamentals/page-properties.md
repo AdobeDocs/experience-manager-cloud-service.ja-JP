@@ -2,9 +2,9 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1687'
 ht-degree: 88%
 
 ---
@@ -129,11 +129,9 @@ ht-degree: 88%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-<!--
-* **Inherited from &lt;*path*&gt;**
+* **&lt;パス>から継承**
 
-  * Indicates whether the page is inherited. and where from.
--->
+   * ページが継承されるかどうか、およびどこから継承するかを示します。
 
 * **クラウド設定**
 
