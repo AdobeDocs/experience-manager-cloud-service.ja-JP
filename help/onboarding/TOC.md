@@ -2,11 +2,11 @@
 sub-product: AEM as a Cloud Service のオンボーディング
 user-guide-title: AEM as a Cloud Service のオンボーディング
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
-translation-type: ht
-source-git-commit: c6de895d9d7e876096efe98238b9b0558224a4e6
-workflow-type: ht
-source-wordcount: '133'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,10 @@ ht-degree: 100%
       + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [プログラムの作成](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [サンドボックスプログラム](getting-access-to-aem-in-cloud/sandbox-programs.md)
-   + [AEM アプリケーションプロジェクトの作成](getting-access-to-aem-in-cloud/creating-aem-application-project.md)
+   + AEM アプリケーションプロジェクトの作成 {#create-application-project}
+      + [ウィザードの使用](getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [ビルド環境の詳細について](getting-access-to-aem-in-cloud/build-environment-details.md)
 + データのプライバシーと保護への対応 {#data-privacy}
    + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](data-privacy-and-protection-readiness/foundation-readiness.md)
