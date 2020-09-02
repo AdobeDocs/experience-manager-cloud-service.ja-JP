@@ -1,10 +1,18 @@
 ---
 title: CIFコアコンポーネントのカスタマイズ
-description: CIFコアコンポーネントのカスタマイズ
+description: AEM CIFコアコンポーネントをカスタマイズする方法を説明します。 このチュートリアルでは、ビジネス固有の要件を満たすために、CIFコアコンポーネントを安全に拡張する方法について説明します。 GraphQLクエリを拡張してカスタム属性を返し、新しい属性をCIFコアコンポーネントに表示する方法を説明します。
+sub-product: コマース
+topics: development
+version: cloud-service
+doc-type: tutorial
+activity: develop
+audience: developer
+kt: 4279
+thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: c3cf472f5e207e7ca0788dc3e42105868d9bdf00
+source-git-commit: 919d607a0c5fb673d9011c6d7bf2759140e8468f
 workflow-type: tm+mt
-source-wordcount: '2520'
+source-wordcount: '2550'
 ht-degree: 3%
 
 ---
@@ -12,266 +20,169 @@ ht-degree: 3%
 
 # AEM CIFコアコンポーネントのカスタマイズ {#customize-cif-components}
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) （CIFコアコンポーネント）は、Adobe Experience Manager(AEM)とMagentoソリューションを統合するプロジェクトの迅速化に役立つ、標準的なコマースコンポーネントのセットを提供します。 これらのコンポーネントは、運用に対応しており、CSSを [使用して簡単にスタイル設定できます](style-cif-component.md)。 多くの実装では、ビジネス固有の要件を満たすために、これらのコンポーネントを拡張する必要があります。
+[CIFベニアプロジェクト](https://github.com/adobe/aem-cif-guides-venia) は、 [CIFコアコンポーネントを使用するためのリファレンスコードベースです](https://github.com/adobe/aem-core-cif-components)。 このチュートリアルでは、 [Product Teaserコンポーネントをさらに拡張して、Magentoのカスタム属性を表示します](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 。 AEMとMagentoのGraphQLの統合、およびCIFコアコンポーネントが提供する拡張フックについても詳しく説明します。
 
-このチュートリアルでは、AEM CIFコアコンポーネントとAEMが提供する一般的な拡張機能ポイントのいくつかを確認します。 これを行うには、 [Product Teaserコンポーネントの機能を拡張して、「New」バナーのレンダリング機能を含めます](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 。 コンテンツ作成者は、このバナーを切り替えて、バナーの表示期間を指定できます。 商品の「年齢」は、Magentoカタログの作成日に基づきます。 製品が一定日数経過したら、「新規」バナーは自動的に消えます。
+>[!TIP]
+>
+> 独自のコマース実装を開始する際に [AEMプロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype) を使用します。
 
-![新しいバナー拡張](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
+## 作成する内容
+
+ベニアのブランドは最近、持続可能な材料を使用して一部の製品を製造し始めた。同社は、 **エコフレンドリー** ・バッジを製品ティーザーの一部として表示したいと考えている。 商品が **環境に適した資材を使用しているかどうかを示す新しいカスタム属性がMagentoで作成されます** 。 次に、このカスタム属性がGraphQLクエリの一部として追加され、特定の製品のProduct Teaserに表示されます。
+
+![エコフレンドリーバッジ最終導入](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## 前提条件 {#prerequisites}
 
-次のツールとテクノロジーが必要です。
+このチュートリアルを完了するには、ローカル開発環境が必要です。 これには、Magentoインスタンスに設定および接続されたAEMの実行インスタンスが含まれます。 AEMをCloud ServiceSDKとして使用したローカル開発の [セットアップに関する要件と手順を確認します](../develop.md)。 このチュートリアルを完全に実行するには、 [属性をMagento内の製品に追加する権限が必要になります](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 。
 
-* [Java 11](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
-* [Apache Maven](https://maven.apache.org/) （3.3.9以降）
-* [AEM Cloud SKDとCIFアドオン](../develop.md)
-* CIFコアコンポーネントと互換性のあるMagento
+また、コードサンプルやチュートリアルを実行するには、GraphiQL [](https://github.com/graphql/graphiql) 、またはブラウザ拡張などのGraphQL IDEが必要です。 ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。 Google Chromeでは、 [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) は、ジョブを実行できる拡張機能の1つです。
 
-このチュートリアルに進む前に、次の内容を確認することをお勧めします。
+## ベニアプロジェクトのコピー {#clone-venia-project}
 
-* [Cloud ServiceとしてのAEM上でのCommerce Integration Frameworkの概要](/help/commerce-cloud/overview.md)
-* [スタイルAEM CIFコアコンポーネント — チュートリアル](style-cif-component.md)
+Venia Project [をコピーし](https://github.com/adobe/aem-cif-guides-venia) 、デフォルトのスタイルを上書きします。
 
-## スタータープロジェクト
+>[!NOTE]
+>
+> **(CIFを含むAEMプロジェクトアーキタイプに基づく** )既存のプロジェクトを自由に使用し、このセクションをスキップしてください。
 
-このチュートリアルで使用するスタータープロジェクトを用意しました。 プロジェクトは、CIFプロジェクトアーキタイプ [のv0.7.0](https://github.com/adobe/aem-cif-project-archetype/releases/tag/cif-project-archetype-0.7.0) を使用して生成されました。 新しいプロジェクトを開始する際は、常に [最新リリースのアーキタイプを使用することをお勧めします](https://github.com/adobe/aem-cif-project-archetype/releases/latest) 。
-
-1. スタータープロジェクト [**acme-store.zipをデスクトップにダウンロードします&#x200B;**](/help/commerce-cloud/assets/customize-cif-components/acme-store.zip)。
-
-1. 「 **acme-store.zip** 」を解凍すると、次のフォルダー構造が表示されます。
-
-   ```plain
-   /acme-store
-      /ui.content
-      /ui.apps
-      /samplecontent
-      /core
-      /all
-      + pom.xml
-      + README.md
-   ```
-
-1. 新しいターミナルウィンドウを開き、プロジェクトを構築し、AEMのローカルインスタンスに展開します。
+1. 次のgitコマンドを実行して、プロジェクトをコピーします。
 
    ```shell
-   $ cd acme-store/
-   $ mvn clean install -PautoInstallAll
+   $ git clone git@github.com:adobe/aem-cif-guides-venia.git
+   ```
+
+1. プロジェクトを構築し、AEMのローカルインスタンスにデプロイします。
+
+   ```shell
+   $ cd aem-cif-guides-venia/
+   $ mvn clean install -PautoInstallPackage,cloud
    ```
 
 1. AEMインスタンス追加をMagentoインスタンスに接続したり、新しく作成したプロジェクトに設定を追加したりするために必要なOSGi設定。
 
-1. この時点で、Magentoインスタンスに接続されたストアフロントの作業バージョンが必要です。 次の場所にある `US` / `Home` ページに移動します。 [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. この時点で、Magentoインスタンスに接続されたストアフロントの作業バージョンが必要です。 次の場所にある `US` / `Home` ページに移動します。 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    現在、店頭ではベニアのテーマが使用されていることがわかります。 ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、接続Magentoが機能していることが示されます。
 
-   ![ベニアテーマで構成されたストアフロント](/help/commerce-cloud/assets/customize-cif-components/acme-store-configured.png)
+   ![ベニアテーマで構成されたストアフロント](../assets/customize-cif-components/venia-store-configured.png)
 
 ## Product Teaserの作成 {#author-product-teaser}
 
-このチュートリアル全体で、Product Teaserコンポーネントの拡張を行います。 最初の手順として、Product Teaserの新しいインスタンスをホームページに追加し、ベースライン機能を理解します。
+Product Teaserコンポーネントは、このチュートリアル全体で拡張されます。 最初の手順として、Product Teaserの新しいインスタンスをホームページに追加し、ベースライン機能を理解します。
 
 1. サイトの **ホームページ** : [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
-1. ページのメインレイアウトコンテナに新しい **製品Teaser** コンポーネントを挿入します。
+2. ページのメインレイアウトコンテナに新しい **製品Teaser** コンポーネントを挿入します。
 
-   ![Product Teaserの挿入](/help/commerce-cloud/assets/customize-cif-components/product-teaser-add-component.png)
+   ![Product Teaserの挿入](../assets/customize-cif-components/product-teaser-add-component.png)
 
-1. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを **製品に切り替えます**。 これにより、接続されたMagentoインスタンスから使用可能な商品のリストが表示されます。 製品を選択し、ページ上の **製品ティーザー****(Product Teaser** )コンポーネントにドラッグ&amp;ドロップします。
+3. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを **製品に切り替えます**。 これにより、接続されたMagentoインスタンスから使用可能な商品のリストが表示されます。 製品を選択し、ページ上の **製品ティーザー****(Product Teaser** )コンポーネントにドラッグ&amp;ドロップします。
 
-   ![Product Teaserをドラッグ&amp;ドロップ](/help/commerce-cloud/assets/customize-cif-components/drag-drop-product-teaser.png)
+   ![Product Teaserをドラッグ&amp;ドロップ](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
+   >[!NOTE]
+   >
    > 注意：ダイアログ( *レンチ* アイコンをクリック)を使用してコンポーネントを設定することで、表示された製品を設定することもできます。
 
-1. これで、Product Teaserによって製品が表示されます。 製品の名前と製品の価格は、表示されるデフォルトの属性です。
+4. これで、Product Teaserによって製品が表示されます。 製品の名前と製品の価格は、表示されるデフォルトの属性です。
 
-   ![製品ティーザー — デフォルトスタイル](/help/commerce-cloud/assets/customize-cif-components/product-teaser-default-style.png)
+   ![製品ティーザー — デフォルトスタイル](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Product Teaserのマークアップのカスタマイズ {#customize-markup-product-teaser}
+## Magento追加のカスタム属性 {#add-custom-attribute}
 
-AEMコンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。 これは、コンポーネントがマークアップのレンダリングに使用する [HTLスクリプトを上書きすることで行われます](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html) 。 HTML Template Language(HTL)は、AEMコンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。 例えば、Product Teaserを何度も繰り返し使用して、異なる製品を表示できます。
+AEMに表示された商品と商品データはMagentoに格納される。 次に、MagentoUIを使用して設定した製品属性の一部として、 **環境に優しい** 、新しい属性を追加します。
 
-この例では、テーザーの上にバナーをレンダリングして、製品が「新規」で、最近カタログに追加されたことを示します。 コンポーネントのマークアップを [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) カスタマイズするデザインパターンは、AEM CIFコアコンポーネントだけでなく、すべてのAEMコンポーネントに対して実際に標準です。
+>[!TIP]
+>
+> 製品属性セットの一部として、既にカスタム **Yes/No** 属性を持っていますか？ 自由に使用して、このセクションをスキップしてください。
 
-選択したIDEを使用して、チュートリアルの最初にダウンロードしたスタータープロジェクト [を](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) 開きます。
+1. Magentoインスタンスにログインします。
+1. 「 **カタログ** / **製品**」に移動します。
+1. 検索フィルタを更新して、前の練習でTeaserコンポーネントに追加した **場合に使用する構成可能な製品** (Configurable Product)を見つけます。 製品を編集モードで開きます。
 
-1. ui.apps **** モジュールに移動して展開し、フォルダー階層を展開して次の操作を行います。 `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser` ファイルを検査し `.content.xml` ます。
+   ![Valeria製品の検索](../assets/customize-cif-components/search-valeria-product.png)
 
-   ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-       jcr:description="Product Teaser Component"
-       jcr:primaryType="cq:Component"
-       jcr:title="Product Teaser"
-       sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"
-       componentGroup="acme"/>
+1. 製品の表示で、 **追加属性** / **新しい属性を**&#x200B;作成をクリックします。
+1. 次の値を使用して **新規属性** ・フォームに入力します（他の値はデフォルト設定のままにします）。
+
+   | フィールドセット | フィールドラベル | 値 |
+   |-----------|-------------|---------|
+   | 属性プロパティ | 属性ラベル | **環境に優しい** |
+   | 属性プロパティ | カタログ入力タイプ | **はい/いいえ** |
+   | 高度な属性プロパティ | 属性コード | **eco_friendly** |
+
+   ![新規属性フォーム](../assets/customize-cif-components/attribute-new-form.png)
+
+   Click **Save Attribute** when finished.
+
+1. 製品の下部までスクロールし、「 **属性** 」見出しを展開します。 新しい **エコフレンドリー** (Eco Friendly)フィールドが表示されます。 切り替えボタンを「 **はい**」に切り替えます。
+
+   ![「はい」に切り替え](../assets/customize-cif-components/eco-friendly-toggle-yes.png)
+
+   **製品への変更を保存します** 。
+
+   >[!TIP]
+   >
+   > 製品属性の管理の詳細については、 [Magentoユーザーガイドを参照してください](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)。
+
+1. **システム** / **ツール** / ****&#x200B;キャッシュ管理に移動します。 データスキーマは更新されたので、Magento内のキャッシュタイプの一部を無効にする必要があります。
+1. 「 **Configuration** 」の横のチェックボックスをオンにして、 **Refresh用にキャッシュタイプを送信します。**
+
+   ![構成キャッシュの種類の更新](../assets/customize-cif-components/refresh-configuration-cache-type.png)
+
+   >[!TIP]
+   >
+   > キャッ [シュ管理の詳細については、Magentoユーザーガイドを参照してください](https://docs.magento.com/user-guide/system/cache-management.html)。
+
+## GraphQL IDEを使用して属性を検証する {#use-graphql-ide}
+
+AEMコードに移る前に、GraphQL [IDEを使用して](https://devdocs.magento.com/guides/v2.4/graphql/) MagentoGraphQLを調べると便利です。 AEMとのMagento統合は、主に一連のGraphQLクエリを介して行われます。 GraphQLクエリの理解と変更は、CIFコアコンポーネントを拡張する主な方法の1つです。
+
+次に、GraphQL IDEを使用して、属性が製品属性セットに追加されたことを確認します。 `eco_friendly` このチュートリアルのスクリーンショットは、 [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+
+1. GraphQL IDEを開き、IDEまたは拡張子のURLバー `http://<magento-server>/graphql` にURLを入力します。
+2. 追加次の [productsクエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) ( `YOUR_SKU` は、前の演習で使用した製品の **SKU** )。
+
+   ```json
+     {
+       products(
+       filter: { sku: { eq: "YOUR_SKU" } }
+       ) {
+           items {
+           name
+           sku
+           eco_friendly
+           }
+       }
+   }
    ```
 
-   上記は、プロジェクトのProduct Teaserコンポーネントのコンポーネント定義です。 プロパティに注目し `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`ます。 これは、 [プロキシコンポーネントの作成例です](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components)。 AEM CIFコアコンポーネントからすべてのProduct Teaser HTLスクリプトをコピー&amp;ペーストする代わりに、を使用してすべての機能を継承す `sling:resourceSuperType` ることができます。
+3. クエリを実行すると、次のような応答が返されます。
 
-1. 新しいブラウザーを開き、AEMの [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/core/cif/components/commerce/productteaser/v1/productteaser) に移動します。 ツリーを展開して、次の下のコンポー `productteaser` ネントを表示します。 `/apps/core/cif/components/commerce/productteaser/v1/productteaser`:
-
-   ![CRXDE Lite製品ティーザー](/help/commerce-cloud/assets/customize-cif-components/crxde-productteaser.png)
-
-   これは、Product Teaserコンポーネントの完全なコンポーネント定義です。
-
-1. IDEとAcme Storeプロジェクトに戻ります。 Create a new file named `productteaser.html` beneath `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser`.
-
-1. CRXDE-Lite `productteaser.html` の内容を [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)`productteaser.html` からコピーし、新しく作成したファイルのAcme-Storeプロジェクトに貼り付けます。
-
-   ![Product Teaserのhtml上書き](/help/commerce-cloud/assets/customize-cif-components/productteaser-html-overwrite.png)
-
-1. Acme-Storeプロジェクトで、 `productteaser.html` ファイルを変更し、製品の画像マークアップの上にバッジを表す新しいdivを挿入します。
-
-   ```html
-   ...
-   <div data-sly-test.isvalid="${product.url}" class="item__root" data-cmp-is="productteaser">
-       <!-- Add Badge -->
-       <div class="item__badge">
-           <span>New</span>
-       </div>
-       <!-- end add badge -->
-       <a class="item__images" href=${product.url}>
-           <img class="item__image" width="100%" height="100%"
-                   src="${product.image}" alt="${product.image}"/>
-       </a>
-       <a class="item__name" href=${product.url}><span>${product.name}</span></a>
-       <div class="item__price">
-           <span> ${product.formattedPrice} </span>
-       </div>
-       <sly data-sly-call="${actionsTpl.actions @ product=product}"></sly>
-   </div>
+   ```json
+   {
+   "data": {
+       "products": {
+           "items": [
+               {
+               "name": "Valeria Two-Layer Tank",
+               "sku": "VT11",
+               "eco_friendly": 1
+               }
+           ]
+           }
+       }
+   }
    ```
 
-1. Mavenのスキルを使用するか、IDEの機能を使用して、更新したコードをAEMのローカルインスタンス [にデプロイします](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)。
+   ![GraphlQLの応答例](../assets/customize-cif-components/sample-graphql-query.png)
 
-   ```shell
-   $ cd ui.apps
-   $ mvn -PautoInstallPackage clean install
-   ```
+   「 **はい** 」の値は1の整数です ****。 これは、GraphQLクエリをJavaで記述する場合に役立ちます。
 
-1. ブラウザーで、AEMの店頭の [ホームページに戻ります](http://localhost:4502/editor.html/content/acme/us/en.html) 。 更新すると、コンポーネントの右上隅に「新しい」バナーが表示されます。
-
-   ![新しいバナー拡張](/help/commerce-cloud/assets/customize-cif-components/new-banner-productteaser.png)
-
-   現在のところ、バナーを表示するロジックはありません。 次の練習では、それを修正します。
-
-   > バナーをレンダリングするCSSは、スタータープロジェクトの一部として提供されており、次の場所にあります。 `ui.apps/../apps/acme/clientlibs/theme/components/productteaser/teaser.css`. 詳しくは、「CIFコアコンポーネントの [スタイル設定](style-cif-component.md)」チュートリアルを参照してください。
-
-## 製品テーザーのダイアログのカスタマイズ {#customize-dialog-product-teaser}
-
-次に、「新規」と見なされる製品の日付範囲や、バナーを表示する必要があるかどうかを作成者が決定できるように、製品のTeaserコンポーネントのダイアログをカスタマイズします。 これを行うには、Acme Storeプロジェクトの一部としてProduct Teaserのダイアログを [カスタマイズします](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) 。
-
-1. 任意のIDEでAcme Storeプロジェクトを開き、に移動し `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser`ます。
-
-1. Beneath the `productteaser` folder, add a new folder named `_cq_dialog`. 追加という名前の `_cq_dialog` フォルダーに新しいファイル `.content.xml`。 これで、次のファイル構造になります。
-
-   ```plain
-   ../acme
-       /components
-           /commerce
-               /productteaser
-                  /_cq_dialog
-                     + .content.xml
-                  /_cq_template
-                  + .content.xml
-                  + productteaser.html
-   ```
-
-1. 次 `_cq_dialog/.content.xml` のXMLで更新：
-
-   ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
-       xmlns:cq="http://www.day.com/jcr/cq/1.0" 
-       xmlns:jcr="http://www.jcp.org/jcr/1.0" 
-       xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
-       jcr:primaryType="nt:unstructured" 
-       jcr:title="My Product Teaser" 
-       sling:resourceType="cq/gui/components/authoring/dialog" 
-       trackingFeature="cif-core-components:productteaser:v1">
-       <content jcr:primaryType="nt:unstructured" 
-           sling:resourceType="granite/ui/components/coral/foundation/container">
-           <items jcr:primaryType="nt:unstructured">
-               <tabs jcr:primaryType="nt:unstructured" 
-                   sling:resourceType="granite/ui/components/coral/foundation/tabs" 
-                   maximized="{Boolean}true">
-                   <items jcr:primaryType="nt:unstructured">
-                       <badge jcr:primaryType="nt:unstructured" 
-                           jcr:title="Badge" 
-                           sling:resourceType="granite/ui/components/coral/foundation/container" 
-                           margin="{Boolean}true">
-                           <items jcr:primaryType="nt:unstructured">
-                               <columns jcr:primaryType="nt:unstructured" 
-                                   sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns" 
-                                   margin="{Boolean}true">
-                                   <items jcr:primaryType="nt:unstructured">
-                                       <column jcr:primaryType="nt:unstructured" 
-                                           sling:resourceType="granite/ui/components/coral/foundation/container">
-                                           <items jcr:primaryType="nt:unstructured">
-                                               <badge jcr:primaryType="nt:unstructured" 
-                                                   sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" 
-                                                   text="Display 'New' badge" 
-                                                   value="true" 
-                                                   uncheckedValue="false" 
-                                                   name="./badge" />
-                                               <age jcr:primaryType="nt:unstructured" 
-                                                   sling:resourceType="granite/ui/components/coral/foundation/form/numberfield" 
-                                                   fieldDescription="The maximum age in days the 'new' badge should be shown" 
-                                                   fieldLabel="Max Product Age" 
-                                                   name="./age"
-                                                   min="{Long}0" 
-                                                   value="10" />
-                                               <ageTypeHint jcr:primaryType="nt:unstructured" 
-                                                   sling:resourceType="granite/ui/components/foundation/form/hidden" 
-                                                   ignoreData="{Boolean}true" 
-                                                   name="./age@TypeHint" 
-                                                   value="Long" />
-                                           </items>
-                                       </column>
-                                   </items>
-                               </columns>
-                           </items>
-                       </badge>
-                   </items>
-               </tabs>
-           </items>
-       </content>
-   </jcr:root>
-   ```
-
-   上記では、新しいタブと1つの非表示フィールドの一部として、さらに2つのフィールドを追加しました。
-
-   1. 「新規」バッジを表示するチェックボックス
-   2. 製品の最大年齢を定義する数値フィールド
-   3. 製品の最大期間が長く保存されるように非表示にするフィールドです(詳しくは、 [@TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) を参照)。
-
-   プロキシコンポーネントの一部として定義されたダイアログは、 [Sling Resource Margeと呼ばれる機能を持つ既存のすべてのダイアログフィールドを継承します](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/sling-resource-merger.html)。 したがって、Product Teaserの一部である既存のフィールドを再定義する必要はありません。
-
-1. を更新 `productteaser.html` し、バッジ `data-sly-test` のにを追加 `<div>` します。 これは、ユーザーが「true」をチェックした場合にバッジを表示するかどうかを決定する簡単なテストです。
-
-   ```html
-       ...
-       <div data-sly-test.isvalid="${product.url}" class="item__root" data-cmp-is="productteaser">
-   
-           <!--/* add test to see if properties.badge equals true */-->
-           <div data-sly-test="${properties.badge == 'true'}" class="item__badge">
-               <span>New</span>
-           </div>
-   ...
-   ```
-
-1. IDEの機能を使用するか、mavenスキルを使用して、更新したコードをAEMのローカルインスタンスにデプロイします。
-
-   ```shell
-   $ cd ui.apps
-   $ mvn -PautoInstallPackage clean install
-   ```
-
-1. 製品ティーザーコンポーネントに戻り、 *レンチ* アイコンをクリックしてダイアログを開きます。 これで、 **バッジのタブが表示され** 、さらに2つのフィールドが表示されます。 これらのフィールドを更新すると、値がAEMに保持されます。 次のチェックボックスを使用して、バッジのオン/オフを切り替えることができます。
-
-   ![バッジの切り替え](/help/commerce-cloud/assets/customize-cif-components/toggle-badge-checkbox.gif)
-
-   これにより、バッジの表示タイミングを作成者が制御できるようになります。 ただし、製品の **最大使用期間のエントリに基づいて、製品が特定の年齢に達したら、バッジが自動的に消えるのが最適です**。 この場合、いくつかのバックエンドロジックを実装する必要があります。
+   >[!TIP]
+   >
+   > GraphQL [Magentoに関する詳細なドキュメントは、こちらを参照してください](https://devdocs.magento.com/guides/v2.4/graphql/index.html)。
 
 ## 製品ティーザーのSlingモデルの更新 {#updating-sling-model-product-teaser}
 
@@ -279,11 +190,34 @@ AEMコンポーネントの一般的な拡張機能は、コンポーネント�
 
 SlingモデルはJavaとして実装され、生成されたプロジェクトの **コア** モジュールにあります。
 
-1. 任意のIDEでAcme Storeプロジェクトを開き、 **core** モジュールの下で次の操作を行います。 `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`. **MyProductTeaser.java** は、CIF **** ProductTeaserインターフェイスを拡張する、事前に作成したJavaインターフェイスです。
+任意 [のIDEを使用して](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 、Veniaプロジェクトをインポートします。 使用するスクリーンショットは、 [Visual StudioコードIDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
-1. 次に、次の場所にあるMyProductTeaserImpl.java **ファイルを開きます** 。 `core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`. `MyProductTeaserImpl` は、インターフェイスの実装クラスで `MyProductTeaser`す。
+1. IDEで、 **コア** ・モジュールの下に移動して、次の操作を行います。 `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
-   Slingモデルに対する [委任パターンを使用して](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 、次の `ProductTeaser` プロパティを使用して `sling:resourceSuperType` クラスを参照できます。
+   ![コアの場所IDE](../assets/customize-cif-components/core-location-ide.png)
+
+   `MyProductTeaser.java` は、CIF ProductTeaserインターフェイスを拡張するJava [インターフェイス](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) です。
+
+   製品が「新規」と見なされた場合にバッジ `isShowBadge()` を表示するための新しいメソッドが既に追加されています。
+
+1. 新し追加いメソッド、インターフェイス `isEcoFriendly()` への
+
+   ```java
+   @ProviderType
+   public interface MyProductTeaser extends ProductTeaser {
+       // Extend the existing interface with the additional properties which you
+       // want to expose to the HTL template.
+       public Boolean isShowBadge();
+   
+       public Boolean isEcoFriendly();
+   }
+   ```
+
+   これは、製品の属性が「はい `eco_friendly` 」または「いいえ ********」に設定されているかどうかを示すロジックをカプセル化する新しい方法です。
+
+1. 次に、at. `MyProductTeaserImpl.java``core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`
+
+   Slingモデルの [委任パターンを使用すると](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 、次の `MyProductTeaserImpl` プロパティを介して `ProductTeaser``sling:resourceSuperType` モデルを参照できます。
 
    ```java
    @Self
@@ -291,7 +225,7 @@ SlingモデルはJavaとして実装され、生成されたプロジェクト�
    private ProductTeaser productTeaser;
    ```
 
-   上書きや変更を望まないメソッドの場合は、単に次の値を返すことができ `ProductTeaser` ます。
+   上書きや変更を望まないすべてのメソッドに対して、単にその戻り値を返すだけです `ProductTeaser` 。 次に例を示します。
 
    ```java
    @Override
@@ -300,7 +234,9 @@ SlingモデルはJavaとして実装され、生成されたプロジェクト�
    }
    ```
 
-1. AEM CIFコアコンポーネントが提供する拡張ポイントの1つに、特定の製品属性にアクセス `AbstractProductRetriever` できる拡張ポイントがあります。 次追加のメソッドを使用して、メソッド `AbstractProductRetriever` 内のを初期化し `init()` ます。
+   これにより、導入で記述する必要のあるJavaコードの量を最小限に抑えることができます。
+
+1. AEM CIFコアコンポーネントが提供する拡張ポイントの1つに、特定の製品属性へのアクセスを提供 `AbstractProductRetriever` するものがあります。 Inspect `initModel()` 法：
 
    ```java
    import javax.annotation.PostConstruct;
@@ -315,101 +251,35 @@ SlingモデルはJavaとして実装され、生成されたプロジェクト�
        public void initModel() {
            productRetriever = productTeaser.getProductRetriever();
    
+           if (productRetriever != null) {
+               productRetriever.extendProductQueryWith(p -> p.createdAt());
+           }
+   
        }
    ...
    ```
 
-1. フォーマットされた価格を変更し、のロジックを上書きして、これらの変更をテストし `getFormattedPrice()`ます。 ドイツ語のロケールに基づいて価格を明示的にフォーマットするように、次の更新を行います。 （または別の国を選ぶ！）
+   注 `@PostConstruct` 釈により、Slingモデルが初期化されるとすぐにこのメソッドが呼び出されます。
 
-   ```java
-           import java.util.Locale;
-           import java.text.NumberFormat;
-            ...
-   
-               @Override
-                   public String getFormattedPrice() 
-                   {
-                   //return productTeaser.getFormattedPrice();
-                   NumberFormat germanCurrencyFormat = NumberFormat.getCurrencyInstance(Locale.GERMANY);
-                   Double price =  productRetriever.fetchProduct().getPrice().getRegularPrice().getAmount().getValue();
-                       if(price != null) 
-                       {
-                           return germanCurrencyFormat.format(price);
-                       }
-                   return null;
-                   }
-   ```
+   製品のGraphQLクエリは、追加の `extendProductQueryWith` 属性を取得するために `created_at` メソッドを使用して既に拡張されています。 この属性は、後で `isShowBadge()` メソッドの一部として使用されます。
 
-   この `productRetriever` オブジェクトが、この `ProductInterface``fetchProduct()` メソッドを使用してオブジェクトにアクセスする方法を示します。 使用可能なすべての [メソッドは、ここで確認できます](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java)。
-
-   > 注意*ロケールをドイツ語に変更するのは、オーバーライドを見る楽しい例です。 実際、ProductTeaserは [ページのロケールを使用して形式を決定します](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/internal/models/v1/productteaser/ProductTeaserImpl.java#L173)。
-
-1. 次に、 **ui.apps****** モジュールのproducteaser.htmlを更新して、次の場所で新しいSlingモデルを参照する必要があります。 `com.acme.cif.core.models.MyProductTeaser`.
-
-   ```diff
-     <!--/* productteaser.html - change the use.product to point to MyProductTeaser */-->
-     <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
-   -  data-sly-use.product="com.adobe.cq.commerce.core.components.models.productteaser.ProductTeaser"
-   +  data-sly-use.product="com.acme.cif.core.models.MyProductTeaser"
-      data-sly-use.actionsTpl="actions.html">
-      ...
-   ```
-
-   に変更を保存し `productteaser.html`ます。
-
-1. コードベースをAEMのローカルインスタンスにデプロイします。 ui.apps **と** コア **** モジュールの両方に変更が加えられたので、ルートからプロジェクトを構築しデプロイします。
-
-   ```shell
-   $ cd acme-store
-   $ mvn -PautoInstallPackage clean install
-   ```
-
-1. ブラウザーを開き、次の場所に移動します。 [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). このコンソールには、システムに登録されているSlingモデルがすべて表示されます。 MyTeaserModelImplがデプロイされ、正しくマッピングされていることを確認する重複チェック。 次のような表示が可能です。
-
-   ```plain
-   com.acme.cif.core.models.MyProductTeaserImpl - acme/components/commerce/productteaser
-   ```
-
-1. 最後に、Product Teaserコンポーネントを作成した場所に移動し、次のようにドイツの通貨形式で価格が表示されます。
-
-   ![価格の形式が更新されました](/help/commerce-cloud/assets/customize-cif-components/german-currency-update.png)
-
-## isShowBadgeロジックの実装 {#implement-isshowbadge}
-
-これで、Slingモデルのメソッドの上書きを試す機会ができたので、「新しい」バッジを表示するタイミングのロジックを実装します。
-
-1. IDEに戻り、次の場所にあるMyProductTeaser.java **** ファイルを開きます。 `core/src/main/java/com/acme/cif/core/models/MyProductTeaser.java`.
-
-1. 新し追加いメソッド、インターフェイス `isShowBadge()` への
-
-   ```java
-   @ProviderType
-   public interface MyProductTeaser extends ProductTeaser {
-       // Extend the existing interface with the additional properties which you
-       // want to expose to the HTL template.
-       public Boolean isShowBadge();
-   }
-   ```
-
-   これは、バッジを表示するかどうかのロジックをカプセル化するために導入する新しい方法です。
-
-1. 次に、MyProductTeaserImpl.java **をで再度開き**`core/src/main/java/com/acme/cif/core/models/MyProductTeaserImpl.java`ます。
-
-1. 「新しい」バッジを表示する期間のロジックは、製品の `created_at` 属性に基づきます。 この属性にアクセスするには、ProductTeaserで実行する **GraphQL** クエリを拡張する必要があります。 これを行うには、MyProductTeaserImpl.javaの `init()` メソッドを更新し **ます**。
+1. GraphQLクエリを更新し、属性を部分クエリに含めま `eco_friendly` す。
 
    ```java
    //MyProductTeaserImpl.java
+   
+   private static final String ECO_FRIENDLY_ATTRIBUTE = "eco_friendly";
    
    @PostConstruct
    public void initModel() {
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           // Pass your custom partial query to the ProductRetriever. This class will
-           // automatically take care of executing your query as soon
-           // as you try to access any product property.
            productRetriever.extendProductQueryWith(p ->
-               p.addCustomSimpleField("created_at")
+                productRetriever.extendProductQueryWith(p -> p
+                   .createdAt()
+                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
+               );
            );
        }
    }
@@ -417,94 +287,202 @@ SlingモデルはJavaとして実装され、生成されたプロジェクト�
 
    この `extendProductQueryWith` 方法を追加すると、他の製品属性を確実にモデルの残りの部分で使用できるようになります。 また、実行されるクエリの数も最小限に抑えられます。
 
-   >[!NOTE]
-   >上記のコードでは`addCustomSimpleField` 、を使用して `created_at` プロパティを取得しています。 この例では、Magentoスキーマの一部であるカスタム属性をクエリする方法を説明します。
-   >
-   > ただし、この `created_at` プロパティは実際に [製品インターフェイスの一部として実装されているので](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java) 、次のようにメソッドを再使用する方がよい方法です。 `productRetriever.extendProductQueryWith(p -> p.createdAt());`. 最も一般的に見つかるスキーマ属性のほとんどは実装されているので、真のカスタム属性 `addCustomSimpleField` に対してのみを使用します。
+   上記のコードでは`addCustomSimpleField` 、属性を取得するためにが使用され `eco_friendly` ます。 この例では、Magentoスキーマの一部であるカスタム属性をクエリする方法を説明します。
 
-1. 次に、次の `isShowBadge()` メソッドを実装します。
+   >[!NOTE]
+   >
+   > この `createdAt()` メソッドは、 [製品インターフェイスの一部として実装されています](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java)。 最も一般的に見つかるスキーマ属性のほとんどは実装されているので、真のカスタム属性 `addCustomSimpleField` に対してのみを使用します。
+
+1. Javaコードのデバッグに役立つロガー追加:
 
    ```java
-   import java.time.format.DateTimeFormatter;
-   import java.util.Locale;
-   import java.time.temporal.ChronoUnit;
-   
+   import org.slf4j.Logger;
+   import org.slf4j.LoggerFactory;
    ...
+   @Model(adaptables = SlingHttpServletRequest.class, adapters = MyProductTeaser.class, resourceType = MyProductTeaserImpl.RESOURCE_TYPE)
+   public class MyProductTeaserImpl implements MyProductTeaser {
    
+   private static final Logger LOGGER = LoggerFactory.getLogger(MyProductTeaserImpl.class);
+   ```
+
+1. 次に、 `isEcoFriendly()` メソッドを実装します。
+
+   ```java
    @Override
-   public Boolean isShowBadge() {
-        final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+   public Boolean isEcoFriendly() {
    
-        //Look at the checkbox from the dialog to see if we should even attempt to show the badge
-        final boolean showBadge = properties.get("badge", false);
-        if (showBadge) {
-   
-            //Look at the numberfield set from the dialog to determine the max "age" in days to compare too
-            final int maxAgeProp = properties.get("age", 0);
-   
-           String createdAtString;
-           try {
-               //Grab the created_at property from the product
-               //Here we show the example of retrieving the attribute as if it was a custom attribute
-               // an alternative that would work is productRetriever.fetchProduct().getCreatedAt()
-               createdAtString = productRetriever.fetchProduct().getAsString("created_at");
-               log.info("***CREATED_AT**** " + createdAtString);
-           } catch (SchemaViolationError e) {
-               //it is possible that a schema error could be thrown if the attribute is not part of the schema
-               log.error("Error determining to showBadge" , e);
-               return false;
+       Integer ecoFriendlyValue;
+       try {
+           ecoFriendlyValue = productRetriever.fetchProduct().getAsInteger(ECO_FRIENDLY_ATTRIBUTE);
+           if(ecoFriendlyValue != null && ecoFriendlyValue.equals(Integer.valueOf(1))) {
+               LOGGER.info("*** Product is Eco Friendly**");
+               return true;
            }
-   
-            // Custom code to calc the date difference of the product creation
-            // compared to today
-           final LocalDate createdAt = LocalDate.parse(createdAtString, formatter);
-            if (createdAt != null) {
-   
-                final long ageInDays = ChronoUnit.DAYS.between(createdAt, LocalDate.now());
-                if (ageInDays < maxAgeProp) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
+       } catch (SchemaViolationError e) {
+           LOGGER.error("Error retrieving eco friendly attribute");
+       }
+       LOGGER.info("*** Product is not Eco Friendly**");
+       return false;
+   }
    ```
 
-   上記の方法では、まず、作成者がチェックボックスを使用してバッジ機能を有効にしたかどうかを確認します。 次に、ダイアログの一部として設定され `age` 、製品の保存日数を表すプロパティの値を読み取り、バナーが消えるまでの長さを表します。 最後に、その `created_at` 日付に基づいて、商品の古さを計算します。 2つの値を比較した後、バッジ `true` を表示します。他の場合 `false` も同様です。
+   上記のメソッドでは、が製品の取得に `productRetriever` 使用され、 `getAsInteger()` メソッドが `eco_friendly` 属性の値の取得に使用されます。 先ほど実行したGraphQLクエリに基づいて、 `eco_friendly` 属性が「**Yes**」に設定された場合の期待値は、実際には **1の整数であることがわかりました**。
 
-1. 最後に、このメソッドを呼び出すには、 `productteaser.html` スクリプトにもう1つ追加する必要があり `isShowBadge()` ます。 のファイルを開き `ui.apps/src/main/content/jcr_root/apps/acme/components/commerce/productteaser/productteaser.html`ます。 次の更新を行います。
+   Slingモデルが更新されたので、Slingモデルに基づいて **環境に優しい** というインジケータを実際に表示するには、コンポーネントマークアップを更新する必要があります。
 
-   ```diff
+## Product Teaserのマークアップのカスタマイズ {#customize-markup-product-teaser}
+
+AEMコンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。 これは、コンポーネントがマークアップのレンダリングに使用する [HTLスクリプトを上書きすることで行われます](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html) 。 HTML Template Language(HTL)は、AEMコンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。 例えば、Product Teaserを何度も繰り返し使用して、異なる製品を表示できます。
+
+この例では、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「環境に優しい」ことを示します。 コンポーネントのマークアップを [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) カスタマイズするデザインパターンは、AEM CIFコアコンポーネントだけでなく、すべてのAEMコンポーネントに対して実際に標準です。
+
+1. IDEで、モジュールに移動して展開し、フォルダ階層を展開して次の操作を行います。 `ui.apps``ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` ファイルを検査し `.content.xml` ます。
+
+   ![Product Teaser ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+       jcr:description="Product Teaser Component"
+       jcr:primaryType="cq:Component"
+       jcr:title="Product Teaser"
+       sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"
+       componentGroup="Venia - Commerce"/>
+   ```
+
+   上記は、プロジェクトのProduct Teaserコンポーネントのコンポーネント定義です。 プロパティに注目し `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`ます。 これは、 [プロキシコンポーネントの作成例です](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html#create-proxy-components)。 AEM CIFコアコンポーネントからすべてのProduct Teaser HTLスクリプトをコピー&amp;ペーストする代わりに、を使用してすべての機能を継承す `sling:resourceSuperType` ることができます。
+
+1. Open the file `productteaser.html`. これは、 `productteaser.html` CIF Product Teaserからの [ファイルのコピーです](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
+
+   ```html
+   <!--/* productteaser.html */-->
+   <sly data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
+       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+       data-sly-use.actionsTpl="actions.html"
+       data-sly-test.isConfigured="${properties.selection}"
+       data-sly-test.hasProduct="${product.url}">
+   ```
+
+   のSlingモデルが使用され、 `MyProductTeaser``product` 変数に割り当てられていることに注意してください。
+
+1. 前の演習 `productteaser.html` で実装した `isEcoFriendly` メソッドを呼び出すように変更します。
+
+   ```html
    ...
-   - <div data-sly-test="${properties.badge == 'true'}" class="item__badge">
-   + <div data-sly-test="${product.showBadge}" class="item__badge">
-        <span>New</span>
-    </div>
+   <div data-sly-test="${isConfigured && hasProduct}" class="item__root" data-cmp-is="productteaser" data-virtual="${product.virtualProduct}">
+       <div data-sly-test="${product.showBadge}" class="item__badge">
+           <span>${properties.text || 'New'}</span>
+       </div>
+       <!--/* Insert call to Eco Friendly here */-->
+       <div data-sly-test="${product.ecoFriendly}" class="item__eco">
+           <span>Eco Friendly</span>
+       </div>
    ...
    ```
 
-1. コードベースをAEMのローカルインスタンスにデプロイします。 ui.apps **と** コア **** モジュールの両方に変更が加えられたので、ルートからプロジェクトを構築しデプロイします。
+   Sling ModelメソッドをHTLで呼び出すと、メソッドの `get` および `is` 部分が削除され、最初の文字が小文字に変換されます。 そう `isShowBadge()` なる `.showBadge` と `isEcoFriendly` なる `.ecoFriendly`。 から返されるboolean値に基づいて、が表示されるか `.isEcoFriendly()` どうかを決定 `<span>Eco Friendly</span>` します。
+
+   その他の `data-sly-test` HTLブロック文の詳細については、こちらを参照してください [](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/block-statements.html#test)。
+
+1. 変更を保存し、コマンドラインターミナルからMavenスキルを使用してAEMにアップデートを展開します。
 
    ```shell
-   $ cd acme-store
-   $ mvn -PautoInstallPackage clean install
+   $ cd aem-cif-guides-venia/
+   $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. AEMとProductTeaserコンポーネントに戻り、異なる数値を試して製品の最大経過時間を表示します。 製品の古さに応じて、バッジを表示するには、非常に大きな数値を入力する必要があります。
+1. 新しいブラウザーウィンドウを開き、AEMに移動し、 **OSGiコンソール** / **ステータス** / **Slingモデル**&#x200B;を選択します。 [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
-   ![製品の最大年齢999](/help/commerce-cloud/assets/customize-cif-components/max-age-working.png)
-
-1. 最後に、AEMログを検索して、上記の手順5で入力したログ文を確認します。 これは、Magentoから取得される `created_at` プロパティの値を出力する必要があります。 ファイルを開いてAEMのログを表示でき `error.log` ます。 このファイルは、AEM jarがインストールされ `crx-quickstart/logs/error.log` ている場所の下にあります。 次のような行項目が表示されます。
+1. を検索す `MyProductTeaserImpl` ると、次のような行が表示されます。
 
    ```plain
-   com.acme.cif.core.models.MyProductTeaser ***CREATED_AT**** 2019-06-05 06:51:33
+   com.venia.core.models.commerce.MyProductTeaserImpl - venia/components/commerce/productteaser
    ```
 
-   これで、実装したロジックが正しいことを確認できます。
+   これは、Slingモデルが正しくデプロイされ、正しいコンポーネントにマッピングされていることを示します。
 
-### Congratulations {#congratulations}
+1. Product Teaserが追加された **http://localhost:4502/editor.html/content/venia/us/en.htmlの** Veniaホームページに更新します [](http://localhost:4502/editor.html/content/venia/us/en.html) 。
 
-最初のAEM CIFコンポーネントをカスタマイズしただけです。 Download the [finished solution package here](/help/commerce-cloud/assets/customize-cif-components/acme-store-solution.zip).
+   ![環境に優しいメッセージが表示される](../assets/customize-cif-components/eco-friendly-text-displayed.png)
+
+   製品の `eco_friendly` 属性が「 **Yes**」に設定されている場合は、ページに「Eco Friendly」というテキストが表示されます。 異なる製品に切り替えて、動作の変更を確認してください。
+
+1. 次にAEMを開き、追加したログ文 `error.log` を確認します。 は、 `error.log` にあり `<AEM SDK Install Location>/crx-quickstart/logs/error.log`ます。
+
+   AEMログを検索して、Slingモデルに追加されたログ文を確認します。
+
+   ```plain
+   2020-08-28 12:57:03.114 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is Eco Friendly**
+   ...
+   2020-08-28 13:01:00.271 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is not Eco Friendly**
+   ...
+   ```
+
+   >[!CAUTION]
+   >
+   > また、ティーザで使用される製品が属性セットの一部としての `eco_friendly` 属性を持たない場合は、スタックトレースが表示されることがあります。
+
+## 環境に優しいバッジ追加のスタイル {#add-styles}
+
+この時点で、 **環境に優しい** バッジを表示するタイミングのロジックは機能していますが、プレーンテキストでは一部のスタイルが使用される場合があります。 次に、モジュールにアイコンとスタイルを追加し、実装を完了し `ui.frontend` ます。
+
+1. eco_friendly.svg [ファイルをダウンロードします](../assets/customize-cif-components/eco_friendly.svg) 。 これは、 **エコフレンドリー** ・バッジとして使用されます。
+1. IDEに戻り、フォル `ui.frontend` ダに移動します。
+1. フ追加ァイルを次のフォルダに格納します。 `eco_friendly.svg``ui.frontend/src/main/resources/images`
+
+   ![エコフレンドリーSVGが追加されました](../assets/customize-cif-components/eco-friendly-svg-added.png)
+
+1. Open the file `productteaser.scss` at `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
+1. 次のSassルールが `.productteaser` クラス内にあ追加ります。
+
+   ```scss
+   .productteaser {
+       ...
+       .item__eco {
+           width: 60px;
+           height: 60px;
+           left: 0px;
+           overflow: hidden;
+           position: absolute;
+           padding: 5px;
+   
+       span {
+           display: block;
+           position: absolute;
+           width: 45px;
+           height: 45px;
+           text-indent: -9999px;
+           background: no-repeat center center url('../resources/images/eco_friendly.svg'); 
+           }
+       }
+   ...
+   }
+   ```
+
+   >[!NOTE]
+   >
+   > フロントエンドワークフローに関する詳細は、「CIFコアコンポーネントの [スタイル設定](./style-cif-component.md) 」を参照してください。
+
+1. 変更を保存し、コマンドラインターミナルからMavenスキルを使用してAEMにアップデートを展開します。
+
+   ```shell
+   $ cd aem-cif-guides-venia/
+   $ mvn clean install -PautoInstallPackage,cloud
+   ```
+
+1. Product Teaserが追加された **http://localhost:4502/editor.html/content/venia/us/en.htmlの** Veniaホームページに更新します [](http://localhost:4502/editor.html/content/venia/us/en.html) 。
+
+   ![エコフレンドリーバッジ最終導入](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
+
+## Congratulations {#congratulations}
+
+最初のAEM CIFコンポーネントをカスタマイズしただけです。 完成したソリューションファイルをここにダウンロードし [ます](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)。
+
+## ボーナスチャレンジ {#bonus-challenge}
+
+Product Teaserに既に実装されている **新規** バッジの機能を確認します。 作成者が **エコフレンドリ** ・バッジをいつ表示するかを制御するためのチェックボックスを追加します。 でコンポーネントダイアログを更新する必要があり `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`ます。
+
+![新しいバッジの実装の課題](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
 ## その他のリソース {#additional-resources}
 
@@ -512,3 +490,4 @@ SlingモデルはJavaとして実装され、生成されたプロジェクト�
 * [AEM CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components)
 * [AEM CIFコアコンポーネントのカスタマイズ](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 * [コアコンポーネントのカスタマイズ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
+* [はじめに —AEM Sites](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
