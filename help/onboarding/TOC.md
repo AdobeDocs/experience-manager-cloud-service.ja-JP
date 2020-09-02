@@ -3,10 +3,10 @@ sub-product: AEM as a Cloud Service のオンボーディング
 user-guide-title: AEM as a Cloud Service のオンボーディング
 user-guide-description: This guide provides an summary of how to get started with Experience Manager as a Cloud Service, including how to get access and important data protection information.
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 93%
+source-wordcount: '144'
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 93%
    + AEM アプリケーションプロジェクトの作成 {#create-application-project}
       + [ウィザードの使用](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
-      + [ビルド環境の詳細について](getting-access-to-aem-in-cloud/build-environment-details.md)
+      + [ビルド環境について](getting-access-to-aem-in-cloud/build-environment-details.md)
 + データのプライバシーと保護への対応 {#data-privacy}
    + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](data-privacy-and-protection-readiness/foundation-readiness.md)
