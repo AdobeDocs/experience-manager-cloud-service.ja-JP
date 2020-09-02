@@ -10,7 +10,7 @@ audience: developer
 kt: 4279
 thumbnail: 4279-customize-cif.jpg
 translation-type: tm+mt
-source-git-commit: 919d607a0c5fb673d9011c6d7bf2759140e8468f
+source-git-commit: 34b4dc697d3fb8c3f81e16ee3cab5d768e42b99c
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
