@@ -2,10 +2,10 @@
 title: プロジェクト設定の詳細
 description: プロジェクト設定の詳細 —Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 83%
+ht-degree: 77%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 83%
 Cloud Manager で正常にビルドおよびデプロイされるために、既存の AEM プロジェクトはいくつかの基本ルールに従う必要があります。
 
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
-* Git リポジトリのルートには *pom.xml* ファイルが必要です。この *pom.xml* ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
+* Git リポジトリのルートには *pom.xml* ファイルが必要です。This *pom.xml* file can refer to as many sub-modules (which in turn may have other sub-modules, etc.) as necessary.
 
 * 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、[パスワードで保護されたアーティファクトリポジトリ](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
-* デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
+* デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。コンテンツパッケージは、サブモジュールの数に制限はありません。
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
 
@@ -31,7 +31,7 @@ Cloud Manager で正常にビルドおよびデプロイされるために、既
 
 ごく一部のケースでは、開発用ワークステーションで実行する場合とは異なり、Cloud Manager 内で実行する場合にはビルドプロセスを少し変える必要が出ることもあります。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
-Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
+Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Managerビルド環境の外部でのみ使用するプロファイルは、この変数がないことを確認して行う必要があります。
 
 例えば、Cloud Manager 内でビルドが実行されたときにのみ簡単なメッセージを出力する場合は、次のようにします。
 
