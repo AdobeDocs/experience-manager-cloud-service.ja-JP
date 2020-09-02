@@ -2,20 +2,20 @@
 title: ウィザードの使用
 description: ウィザードの使用 —Cloud Services
 translation-type: tm+mt
-source-git-commit: 1c4d45fd994529815e7428b1d239cf89265fb775
+source-git-commit: 3344e6a8c0c09903f44606673106d884516b4471
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 77%
+source-wordcount: '146'
+ht-degree: 64%
 
 ---
 
 
-# ウィザードを使用した AEM アプリケーションプロジェクトの作成 {#using-wizard-to-create-an-aem-application-project}
+# ウィザードの使用 {#using-wizard-to-create-an-aem-application-project}
 
 新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
 
 
-Cloud Manager で AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
+次の手順に従って、ウィザードを使用してCloud ManagerでAEMアプリケーションプロジェクトを作成します。
 
 1. Cloud Manager にログインし、基本的なプログラム設定が完了すると、リポジトリが空の場合、**概要**&#x200B;画面に特別なコールトゥアクションカードが表示されます。
 
