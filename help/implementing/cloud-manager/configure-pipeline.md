@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 63%
+source-wordcount: '747'
+ht-degree: 65%
 
 ---
 
@@ -90,9 +90,6 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
    詳しくは、「エクスペリエンス監査結果 [について](/help/implementing/cloud-manager/experience-audit-testing.md) 」を参照してください。
 
    「 **追加新しいページの上書き** 」をクリックして、エクスペリエンス監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
-
-   >[!NOTE]
-   >エクスペリエンス監査ステップをアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 詳しくは、「 [既知の問題](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 」を参照してください。
 
    ![](assets/exp-audit2.png)
 
