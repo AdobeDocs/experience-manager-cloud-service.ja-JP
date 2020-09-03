@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -58,11 +58,11 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
 
 1. **パイプラインを設定**&#x200B;画面が表示されます。ブランチを選択して、「**次へ**」をクリックします。
 
-   ![](assets/setup-pipeline-1.png)
+   ![](assets/setup-1.png)
 
 1. デプロイメントオプションを設定します。
 
-   ![](assets/setup-pipeline-2.png)
+   ![](assets/setup-2.png)
 
    パイプラインを開始するトリガーを定義できます。
 
@@ -80,7 +80,7 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
 
 1. 実稼動用のパイプライン設定には、「 **エクスペリエンス監査**」というラベルの付いた3番目のタブが含まれています。
 
-   ![](assets/content-audit-1.png)
+   ![](assets/setup-3.png)
 
    このオプションは、エクスペリエンス監査に常に含める必要があるURLパスの表を提供します。 ユーザーは、含めるURLパスを手動で入力できます。 最大25行まで含めることができます。 このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトとしてエクスペリエンス監査に含まれます。
 
@@ -94,7 +94,7 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
    >[!NOTE]
    >エクスペリエンス監査ステップをアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 詳しくは、「 [既知の問題](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 」を参照してください。
 
-   ![](assets/content-audit2.png)
+   ![](assets/exp-audit2.png)
 
 1. 「パイプラインを **編集** 」(Edit Pipeline **)画面で「保存」(Save** )をクリックします。 **概要**&#x200B;ページに、**プログラムをデプロイ**&#x200B;カードが表示されます。「**デプロイ**」ボタンをクリックして、プログラムをデプロイします。
 
