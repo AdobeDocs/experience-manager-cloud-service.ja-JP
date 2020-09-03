@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 12%
 
 ---
@@ -83,7 +83,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * 「コンテンツ監査」は、Cloud Managerサイト実稼働パイプラインで有効になる機能です。 Sitesを使用するプログラムの実稼働パイプライン設定に、「 **Content Audit**」という名前の3番目のタブが含まれるようになりました。 実稼働パイプラインを実行するたびに、カスタム機能テストの後、新しいContent Auditステップがパイプラインに含まれます。このステップは、パフォーマンス、SEO(Search Engine Optimization)、アクセシビリティ、ベストプラクティス、PWA(Progressive Web App)など、多数の次元に対してサイトを評価します。
 
    >[!NOTE]
-   >「コンテンツ監査」は、「エクスペリエンス監査」に名前が変更されました。
+   >「コンテンツ監査」は、「エクスペリエンス監査」に名称変更されました。
 
    Refer to [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
 
