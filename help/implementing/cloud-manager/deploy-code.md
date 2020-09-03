@@ -2,10 +2,10 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 18ef67e6b8450e4220a5d40c1da8b126136e39f2
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 82%
+source-wordcount: '985'
+ht-degree: 81%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 ## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
-実稼働パイプライン(リポジトリ、環境、テスト環境)を設定したら、コードを導入する準備が整います。
+実稼働パイプライン（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
 
 1. Cloud Manager で「**デプロイ**」をクリックして、デプロイメントプロセスを開始します。
 
@@ -42,7 +42,7 @@ ht-degree: 82%
    **ステージのデプロイメント**&#x200B;には、以下の手順が含まれます。
 
    * 検証：この手順では、現在使用できるリソース（設定済みの分岐が存在する場合など）を使用するようにパイプラインが設定され、環境が使用できることを確認します。
-   * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境の詳細については、 [ビルド環境の詳細](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#build-environment-details) を参照してください。
+   * ビルドおよび単体テスト：この手順では、コンテナ化されたビルドプロセスを実行します。ビルド環境の詳細については、 [ビルド環境の詳細](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md) を参照してください。
    * コードスキャン：この手順では、アプリケーションコードの品質を評価します。テストプロセスの詳細については、 [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md) (Code Quality Testing)を参照してください。
    * イメージのビルド：このステップには、イメージのビルドに使用されたプロセスのログファイルが含まれます。このプロセスでは、ビルドステップで生成されたコンテンツおよび Dispatcher パッケージを Docker イメージと Kubernetes 設定に変換します。
    * ステージへのデプロイ
@@ -51,13 +51,13 @@ ht-degree: 82%
    **ステージテスト**&#x200B;には、以下のステップが含まれます。
 
    * 製品の機能テスト：Cloud Managerのパイプライン実行では、ステージ環境に対して実行するテストの実行がサポートされます。
-詳細は、 [製品機能のテスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) を参照してください。
+Refer to [Product Functional Testing](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) for more details.
 
    * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
-      詳細は、「 [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) 」を参照してください。
+      Refer to [Custom Functional Testing](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) for more details.
 
-   * コンテンツ監査：パイプライン内のこのステップは常に存在し、スキップできません。 実稼動パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、コンテンツ監査手順が含まれます。 設定されたページがサービスに送信され、評価されます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
-詳細は、 [「コンテンツ監査結果について](/help/implementing/cloud-manager/content-audit-testing.md) 」を参照してください。
+   * エクスペリエンスの監査：パイプライン内のこのステップは常に存在し、スキップできません。 実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。 設定されたページがサービスに送信され、評価されます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+詳しくは、「エクスペリエンス監査結果 [について](/help/implementing/cloud-manager/experience-audit-testing.md) 」を参照してください。
 
       ![](assets/testing-tab.png)
 
@@ -88,7 +88,7 @@ Cloud Manager が実稼動以外のトポロジにデプロイされる場合、
 
    >[!NOTE]
    >
-   >すべての AEM アーティファクトは、オーサーとパブリッシャーの両方にデプロイされます。ノード専用の設定が必要な場合は、実行モードを使用する必要があります。特定の目的のために実行モードを使用して AEM インスタンスを調整できるようにする方法について詳しくは、「実行モード」を参照してください。
+   >すべての AEM アーティファクトは、オーサーとパブリッシャーの両方にデプロイされます。ノード固有の設定が必要な場合は、実行モードを使用する必要があります。 実行モードを使用してAEMインスタンスを特定の目的で調整する方法について詳しくは、実行モードを参照してください。
 
 1. Dispatcher のアーティファクトは、以下のように各 Dispatcher にデプロイされます。
 
