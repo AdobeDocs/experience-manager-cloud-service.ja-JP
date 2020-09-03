@@ -2,7 +2,7 @@
 title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 4211a4d95be6e625b283e3142609923245da8d31
+source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 36%
@@ -38,7 +38,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is Ju
 
 * Cloud Service [!DNL Dynamic Media] としてのの初期設定 [!DNL Experience Manager] が改善され、より堅牢になりました。 これで、管理者にプロセスの進行状況を提供できます。
 
-* にアセットを公開する方法 [!DNL Dynamic Media] は、アセットマイクロサービスを使用するアセット処理パイプライン全体の不可欠な要素とし、バッチ公開バックエンドを改善することで、簡単になり、より堅牢になります。
+* にアセットを発行する方法 [!DNL Dynamic Media] は、アセットマイクロサービスを使用するアセット処理パイプライン全体の不可欠な要素とし、バッチ発行バックエンドを改善することで、簡単になり、より堅牢になります。
 
 * Cloud Serviceの展開と互換性のないワークフローステップは、 [!UICONTROL ワークフローモデル] エディターで警告のマークが付けられるようになりました。 また、Cloud Service環境上で既存のワークフローを実行する場合、互換性のないワークフロー手順はスキップされます。
 
@@ -90,11 +90,11 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 * Cloud Manager のパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。
 
 
-   詳細は、「 [パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#pipeline-variables)」を参照してください。
+   詳細は、「 [パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)」を参照してください。
 
 * 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11サポート [の使用](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#using-java-support) 」を参照してください。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11サポート [の使用](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
