@@ -2,7 +2,7 @@
 title: エクスペリエンス監査テスト —Cloud Services
 description: エクスペリエンス監査テスト —Cloud Services
 translation-type: tm+mt
-source-git-commit: 87d41dc311e96c41be230046f511d2c3301d48f1
+source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -51,7 +51,8 @@ Cloud Managerのエクスペリエンス監査を使用すると、サイト上�
 
 * **該当なし** — 比較できる以前のスコアはありません。
 
-   ![](/help/implementing/developing/introduction/assets/content-audit-test1.png)
+   ![](/help/implementing/cloud-manager/assets/exp-audit-1.png)
+
 
 ### ページレベルのスコア {#page-level-scores}
 
@@ -59,5 +60,5 @@ Cloud Managerのエクスペリエンス監査を使用すると、サイト上�
 
 個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
 
-![](/help/implementing/developing/introduction/assets/page-level-scores.png)
+![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
 
