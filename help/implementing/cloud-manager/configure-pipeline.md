@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 7b764262370631982c4f9f8b760fbec5fd0e05c6
+source-git-commit: e1bf1a42ff81352c4946a2e5e5c731255234d5f3
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 63%
@@ -78,21 +78,21 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
    * **直ちに続行** - 重要なエラーが検出されても、常にパイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. 実稼働用パイプライン設定には、「 **コンテンツ監査**」というラベルの付いた3番目のタブが含まれています。
+1. 実稼動用のパイプライン設定には、「 **エクスペリエンス監査**」というラベルの付いた3番目のタブが含まれています。
 
    ![](assets/content-audit-1.png)
 
-   このオプションは、コンテンツ監査に常に含めるURLパスの表を提供します。 ユーザーは、含めるURLパスを手動で入力できます。 最大25行まで含めることができます。 このセクションにユーザが送信したページがない場合、サイトのホームページはデフォルトとしてコンテンツ監査に含まれます。
+   このオプションは、エクスペリエンス監査に常に含める必要があるURLパスの表を提供します。 ユーザーは、含めるURLパスを手動で入力できます。 最大25行まで含めることができます。 このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトとしてエクスペリエンス監査に含まれます。
 
    >[!NOTE]
    > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO(Search Engine Optimization)、ベストプラクティス、PWA（プログレッシブWeb App）のテストに従って評価されます。
 
-   詳細は、「コンテンツ監査結果 [について](/help/implementing/cloud-manager/content-audit-testing.md) 」を参照してください。
+   詳しくは、「エクスペリエンス監査結果 [について](/help/implementing/cloud-manager/experience-audit-testing.md) 」を参照してください。
 
-   「 **追加New Page Override** 」をクリックして、コンテンツ監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
+   「 **追加新しいページの上書き** 」をクリックして、エクスペリエンス監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
 
    >[!NOTE]
-   >コンテンツ監査手順をアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 詳しくは、「 [既知の問題](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 」を参照してください。
+   >エクスペリエンス監査ステップをアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 詳しくは、「 [既知の問題](/help/release-notes/release-notes-cloud/release-notes-current.md#known-issues-cm) 」を参照してください。
 
    ![](assets/content-audit2.png)
 
