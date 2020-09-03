@@ -2,7 +2,7 @@
 title: テスト結果の概要 —Cloud Services
 description: テスト結果の概要 —Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: d03ef0afe91760e35ef4e8fb3e3f2c833cbf945c
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 2%
@@ -24,9 +24,9 @@ Cloud ManagerのCloud Servicesパイプラインでサポートされるテス�
 
    機能テストは、実稼働パイプラインのステージテスト段階の一部です。
 
-1. [コンテンツ監査テスト](/help/implementing/cloud-manager/content-audit-testing.md)
+1. [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
 
-   コンテンツ監査テストは、すべてのCloud Manager実稼働パイプラインで有効になっており、スキップすることはできません。
+   エクスペリエンスの監査テストは、すべてのCloud Manager実稼働パイプラインで有効になっているので、スキップできません。
 
 次のテストが可能です。
 
