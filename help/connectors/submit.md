@@ -2,7 +2,7 @@
 title: AEM コネクタの登録
 description: AEM コネクタの登録
 translation-type: tm+mt
-source-git-commit: d9c87b1c63274dfae81a8e3b96d9c4009b569236
+source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 91%
@@ -22,7 +22,7 @@ AEM コネクタは [Adobe Exchange](https://partners.adobe.com/jp/exchangeprogr
 パッケージをプロジェクトに組み込む方法には、様々な選択肢があります。
 
 1. パートナーの公開リポジトリ - 公にアクセス可能な Maven リポジトリでパートナーがコンテンツパッケージをホストします。
-1. パートナーのパスワードで保護されたリポジトリ — パートナーは、パスワードで保護されたMavenリポジトリでコンテンツパッケージをホストします。 手順については、 [パスワードで保護されたMavenリポジトリ](/help/onboarding/getting-access-to-aem-in-cloud/creating-aem-application-project.md#password-protected-maven-repositories) (「」)を参照してください。
+1. パートナーのパスワードで保護されたリポジトリ — パートナーは、パスワードで保護されたMavenリポジトリでコンテンツパッケージをホストします。 手順については、 [パスワードで保護されたMavenリポジトリ](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories) (「」)を参照してください。
 1. アーティファクトのバンドル - ユーザーの Maven プロジェクトにコネクタパッケージがローカルに含まれます。
 
 パッケージは、ホストされている場所に関係なく、ベンダーから提供されるとおりに、パッケージを依存関係として pom.xml で参照する必要があります。
