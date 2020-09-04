@@ -2,10 +2,10 @@
 title: テスト結果について - Cloud Services
 description: テスト結果について - Cloud Services
 translation-type: tm+mt
-source-git-commit: b3548e3920fed45f6d1de54a49801d3971aa6bba
+source-git-commit: 736a7c8d56a957e511451b0ba06affd9643f75e5
 workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -32,17 +32,17 @@ Cloud ManagerのCloud Servicesパイプラインでサポートされるテス�
 
 ## コード品質テスト {#code-quality-testing}
 
-この手順では、アプリケーションコードの質を評価します。 これは、コード品質のみのパイプラインの中核となる目的で、実稼働環境と実稼働環境以外のすべてのパイプラインのビルド手順の直後に実行されます。
+この手順では、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。
 
-さまざまなタイプのパイプラインの詳細については、 [『CI-CDパイプラインの](/help/implementing/cloud-manager/configure-pipeline.md) 設定』を参照してください。
+様々なタイプのパイプラインの詳細については、[CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)を参照してください。
 
 ### カスタムコード品質ルールについて {#understanding-code-quality-rules}
 
-コード品質テストでは、ソースコードがスキャンされ、デプロイメントが特定の品質基準を満たしていることが確認されます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM固有のルールの一部は、AEM Engineeringのベストプラクティスに基づいて作成され、「 [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)」と呼ばれます。
+コード品質テストでは、ソースコードがスキャンされ、デプロイメントが特定の品質基準を満たしていることが確認されます。 現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)と呼ばれます。
 
 You can download the list of rules [here](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest.xlsx).
 
-この手順の結果は、 *評価として提供されます*。 テスト条件の評価の概要を次の表に示します。
+この手順の結果は、*評価*&#x200B;として提供されます。テスト条件の評価の概要を次の表に示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -198,7 +198,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 1. これらのディメンションに回帰を含めないでください。
 
-Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報を提供するもので、ユーザーはスコアや現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
+Content Audit in Cloud Managerを使用すると、エンドユーザーのサイトでのデジタルエクスペリエンスを最高の基準に維持できます。 結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。 この洞察は、現在のデプロイメントで導入される回帰があるかどうかを判断するのに役立ちます。
 
 ### コンテンツ監査結果について {#understanding-content-audit-results}
 
@@ -213,7 +213,7 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 各テストタイプ(パフォーマンス、アクセシビリティ、SEO、ベストプラクティス、PWA)に対して集計レベルのスコアが割り当てられます。
 
-集計レベルのスコアは、実行に含まれるページの平均スコアを取ります。 集計レベルでの変更は、含めるように設定されたページのコレクションが実行間で変更された場合でも、現在の実行中のページの平均スコアを、前回の実行時のスコアの平均と比較して表します。
+集計レベルのスコアは、実行に含まれるページの平均スコアを取ります。 集計レベルでの変更は、含めるように設定されたページのコレクションが実行間で変更された場合でも、現在の実行でのページの平均スコアを、前回の実行でのスコアの平均と比較して表します。
 
 「変更」指標の値は、次のいずれかになります。
 
@@ -225,7 +225,7 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 * **該当なし** — 比較できる以前のスコアはありません。
 
-   ![](assets/content-audit-test1.png)
+   <!-- ![](assets/content-audit-test1.png) -->
 
 #### ページレベルのスコア {#page-level-scores}
 
@@ -233,5 +233,5 @@ Content Audit in Cloud Managerを使用すると、エンドユーザーのサ�
 
 個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合の問題の修正に関するガイダンスが示されます。 テストと関連ガイダンスの詳細は、Google Lighthouseから提供されます。
 
-![](assets/page-level-scores.png)
+<!-- ![](assets/page-level-scores.png) -->
 
