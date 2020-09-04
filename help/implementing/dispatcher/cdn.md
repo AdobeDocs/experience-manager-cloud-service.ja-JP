@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: 38b69b96011b7920adaf7f6cca0edff10f387b41
+source-git-commit: 50c5be6adf265eac9c9c7a7b36d03cb30ba4e5d2
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 89%
+source-wordcount: '689'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 アドビの標準搭載 CDN を使用してコンテンツ配信に備えるには、次の手順に従います。
 
 1. この情報を含む安全なフォームへのリンクを共有して、署名済みの SSL 証明書と秘密鍵をアドビに提供します。このタスクについてカスタマーサポートと調整してください。
-   **注意：** AEM as a Cloud Service は、ドメイン検証（DV）証明書をサポートしていません。
+   **注意：** AEM as a Cloud Service は、ドメイン検証（DV）証明書をサポートしていません。また、2048ビットのRSA秘密鍵と一致する信頼できる証明機関(CA)のX.509 TLS証明書である必要があります。
 1. カスタマーサポートに通知：
    * どのカスタムドメインを特定の環境に関連付けるか（プログラム ID と環境 ID で定義）。オーサー側のカスタムドメインはサポートされていません。
    * トラフィックを特定の環境に制限するために IP 許可リストが必要な場合。
