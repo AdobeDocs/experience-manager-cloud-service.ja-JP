@@ -2,10 +2,10 @@
 title: 通知 - クラウドサービス
 description: 通知 - クラウドサービス
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 94%
 
 ---
 
@@ -33,11 +33,10 @@ ht-degree: 100%
 
 デフォルトでは、Adobe [!UICONTROL Experience Cloud] ソリューションの Web ユーザーインターフェイスで通知を確認できます。個々のユーザーは、これらの通知を電子メールで即時またはダイジェストベースで受け取ることもできます。
 
-
 これにより、Adobe [!UICONTROL Experience Cloud] の通知環境設定画面に移動します。
 
 ユーザーは電子メール通知をオンにしたり、電子メールで受信する通知のタイプを（オプションで）選択したりできます。
 
 >[!NOTE]
 >
->以下に示すように、Adobe [!UICONTROL Experience Cloud] からのダイジェスト作成を有効にすることもできます。
+>You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
