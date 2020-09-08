@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: c65a5ebf204e25e56d518db3b354b95aef631621
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -87,13 +87,13 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 * 浮動小数点データを持つ TIFF ファイル。
 * Lab カラースペースを持つ TIFF ファイル。
 
-## 3D形式 {#support-3d-formats}
+## 3D 形式 {#support-3d-formats}
 
-次の3D形式のリストがサポートされています。
+次の 3D 形式のリストがサポートされています。
 
-Dynamic Mediaでの3Dアセットの [操作も参照してください。](/help/assets/dynamic-media/assets-3d.md)
+[Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)も参照してください。
 
-| 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3次元プレビュー | Dynamic Media配信 |
+| 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3D プレビュー | Dynamic Media の配信 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -195,7 +195,7 @@ Dynamic Mediaでの3Dアセットの [操作も参照してください。](/hel
 | WEBM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式{#video-dynamic-media-transcoding}
+## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式{#video-dynamic-media-transcoding} 
 
 | ビデオファイル拡張子 | コンテナ | 推奨されるビデオコーデック | サポートされないビデオコーデック |
 |------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
