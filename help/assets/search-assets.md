@@ -4,10 +4,10 @@ description: AEM のフィルターパネルを使用した必要なアセット
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 88b845f3749ad5c362216c8988e9e12ba511eb35
+source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
 workflow-type: tm+mt
-source-wordcount: '4529'
-ht-degree: 100%
+source-wordcount: '4525'
+ht-degree: 98%
 
 ---
 
@@ -107,13 +107,13 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 1. Assets ユーザーインターフェイスから、アセットのプロパティページを開きます。「**[!UICONTROL 詳細]**」をクリックし、「**[!UICONTROL 検索キーワードに採用]**」の下の「**[!UICONTROL 追加]**」をクリックまたはタップします。
 1. 「**[!UICONTROL 昇格を検索]**」ボックスで、画像検索時の強化の対象となるキーワードを指定し、「**[!UICONTROL 追加]**」をクリックまたはタップします。同じ方法で複数のキーワードを指定できます。
-1. 「**[!UICONTROL 保存して閉じる]**」をクリックまたはタップします。昇格したこのキーワードの対象となるアセットが、検索結果の上位に表示されます。
+1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。昇格したこのキーワードの対象となるアセットが、検索結果の上位に表示されます。
 
 ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、[AEM での検索](https://helpx.adobe.com/jp/experience-manager/kt/help/assets/search-feature-video-use.html)を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*検索結果のランク付けの方法とランクへの影響について*
+*ビデオ：検索結果のランク付け方法とランクへの影響を理解します。*
 
 ## 詳細検索 {#scope}
 
@@ -242,7 +242,7 @@ AEM 検索機能では、コレクションの検索とコレクション内の�
 
 ![アセットピッカーでのアセットの参照と選択](assets/assetpicker.png)
 
-アセットピッカーでのアセットの参照と選択
+*図：アセットピッカーでアセットを参照し、選択します。*
 
 ## 制限事項 {#limitations}
 
@@ -264,8 +264,8 @@ AEM Assets の検索機能には、次の制限事項があります。
 * 様々な Creative アプリから取得した使用状況の統計に基づいて、サポートされるアセットを検索するには、インサイトの述語を使用します。使用状況データが、使用状況スコア、インプレッション数、クリック数およびメディアチャネルでグループ化され、アセットがカテゴリ別に表示されます。
 * チェックボックスを使用して、すべての検索結果か、フィルタリングした検索結果（選択範囲のみ操作）を選択します。現在のユーザーに表示されているアセットの数に関係なく、検索されたすべてのアセットが選択されます。例えば、選択したすべてのアセットをダウンロードしたり、選択したすべてのアセットのメタデータプロパティを一括更新したり、選択したアセットをコレクションに追加したりできます。
 * 必須メタデータを含んでいないアセットを検索する場合は、[必須メタデータ](#mandatorymetadata)を参照してください。
-* 検索では、すべてのメタデータフィールドが使用されます。12 の検索などの一般的な検索では通常、多数の結果が返されます。より良い結果を得るには、（一重引用符ではなく）二重引用符を使用するか、特殊文字のない単語に番号が続いている（例：*shoe12* など）ようにします。
-* 全文検索では、- や ^ などの演算子をサポートしています。これらの文字を文字列リテラルとして検索するには、検索式を二重引用符で囲みます。例えば、「Notebook - Beauty」ではなく、「&quot;Notebook - Beauty&quot;」と指定します。
+* 検索では、すべてのメタデータフィールドが使用されます。12 の検索などの一般的な検索では通常、多数の結果が返されます。より良い結果を得るには、（一重引用符ではなく）二重引用符を使用するか、特殊文字のない単語に番号が続いている（例：`shoe12` など）ようにします。
+* フルテキスト検索では、 `-` およびなどの演算子がサポートされ `^`ます。 これらの文字を文字列リテラルとして検索するには、検索式を二重引用符で囲みます。For example, use `"Notebook - Beauty"` instead of `Notebook - Beauty`.
 * 検索結果が多すぎる場合は、[検索範囲](#scope)を制限して、目的のアセットを絞り込みます。これは、特定のファイルタイプ、特定の場所、特定のメタデータなど、目的のアセットを検索する良い方法がある程度わかっている場合に最も効果的です。
 
 * **タグ付け**：タグを使用すると、アセットを分類して参照や検索をより効率的におこなえるようになります。タグ付けは、適切な分類を他のユーザーやワークフローに伝播するうえで役に立ちます。AEM では、使用状況データやトレーニングでアセットのタグ付けを絶えず改善する、Adobe Sensei の AI サービスを活用して、アセットに自動的にタグを付ける手段を提供しています。この機能がアカウントで有効な場合は、アセットを検索する際にスマートタグが考慮されます。これは組み込みの検索機能と連携して機能します。[検索動作](#searchbehavior)を参照してください。検索結果の表示順序を最適化するには、選択した一部のアセットの[検索ランキングを上げる](#searchrank)ことができます。
@@ -278,7 +278,7 @@ AEM Assets の検索機能には、次の制限事項があります。
 
 ![引用符がある場合とない場合の検索動作](assets/search_with_quotes.gif)
 
-引用符がある場合とない場合の検索動作
+*図：検索動作（引用符の有無）*
 
 **アスタリスクワイルドカードを使用した検索**：検索の範囲を広げるには、検索語の前後にアスタリスクを使用して任意の数の文字に一致するようにします。例えば、アスタリスクを付けずに「run」を検索しても、（メタデータ内も含め）検索語のバリエーションを含んだアセットは返されません。アスタリスクは任意の数の文字に置き換わります。例：
 
@@ -289,7 +289,7 @@ AEM Assets の検索機能には、次の制限事項があります。
 
 ![アセット検索でのアスタリスクワイルドカードの使用例](assets/search_with_asterisk_run.gif)
 
-アセット検索でのアスタリスクワイルドカードの使用例
+*図：例を使用して、アセット検索でアスタリスクワイルドカードを使用する例を示します。*
 
 **疑問符ワイルドカードを使用した検索**：検索の範囲を広げるには、1 つ以上の「?」文字を使用して正確な数の文字に一致するようにします。例えば、次の例では、
 
@@ -301,7 +301,7 @@ AEM Assets の検索機能には、次の制限事項があります。
 
 ![アセット検索での疑問符ワイルドカードの使用例](assets/search_with_questionmark_run.gif)
 
-アセット検索での疑問符ワイルドカードの使用例
+*図：例を使用して、アセット検索で疑問符ワイルドカードを使用する例を示します。*
 
 **キーワードの除外**：ダッシュを使用すると、キーワードを含まないアセットを検索できます。例えば、`running -shoe` クエリでは、`running` を含み `shoe` を含まないアセットを返します。同様に、`camp -night` クエリでは `camp` を含み `night` を含まないアセットを返します。なお、`camp-night` クエリの場合は、`camp` と `night` の両方を含むアセットを返すので、注意してください。
 
@@ -313,6 +313,7 @@ AEM Assets の検索機能には、次の制限事項があります。
 ### Search index configurations {#searchindex}
 
 Asset discovery relies on indexing of DAM contents, including the metadata. Faster and accurate asset discovery relies on optimized indexing and appropriate configurations. See [indexing](/help/operations/indexing.md).
+-->
 
 <!--
 ### Visual or similarity search {#configvisualsearch}
@@ -347,7 +348,6 @@ Visual search uses smart tagging and requires AEM 6.5.2.0 or later. After config
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save all the changes.
 
 For related information, see [understand smart tags in AEM](https://helpx.adobe.com/experience-manager/kt/help/assets/smart-tags-feature-video-understand.html) and [how to manage smart tags](/help/assets/smart-tags.md).
-
 -->
 
 <!--
@@ -362,8 +362,9 @@ To improve the speed of discovery, AEM Assets offers search facets using which y
 ### Extract text when uploading assets {#extracttextupload}
 
 You can configure AEM to extract the text from the assets when users upload assets, such as PSD or PDF files. AEM indexes the extracted text and helps users search these assets based on the extracted text. See [upload assets](/help/assets/manage-digital-assets.md#uploading-assets).
+-->
 
-<!-- Check with gklebus if this customization is possible in AEM now.
+<!-- TBD: Check with gklebus and engineering if these customization are possible in CS.
 
 ### Custom predicates to filter search results {#custompredicates}
 
@@ -373,20 +374,20 @@ You can search for digital assets based on one or more of the following properti
 
 | Search field | Search property values |
 |---|---|
-| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
-| Last Modified | Hour, Day, Week, Month, or Year. |
-| File Size | Small, Medium, or Large. |
-| Publish Status | Published or Unpublished. |
 | Approved Status | Approved or Rejected. |
+| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
+| File Size | Small, Medium, or Large. |
+| Last Modified | Hour, Day, Week, Month, or Year. |
+| MIME Types | Images, Documents, Multimedia, Archives, or Other. |
 | Orientation | Horizontal, Vertical, or Square. |
+| Publish Status | Published or Unpublished. |
 | Style | Color, or Black & White. |
+| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
+| Video Codec | x264. Value is stored in the metadata of video renditions only. |
+| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
 | Video Height | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 | Video Width | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Video Format | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Value is stored in the metadata of the source video and any renditions. |
-| Video Codec | x264. Value is stored in the metadata of video renditions only. |
-| Video Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
-| Audio Codec | Libvorbis, Lame MP3, AAC Encoding. Value is stored in the metadata of video renditions only. |
-| Audio Bitrate | Specified as a minimum and maximum value. Value is stored in the metadata of video renditions only. |
 
 -->
 
@@ -464,6 +465,9 @@ You can search for digital assets based on one or more of the following properti
 **検索フィルター／述語を使用できない**：検索フィルターに想定されるカスタマイズ機能をユーザーインターフェイスで使用できない場合は、管理者に問い合わせて、カスタマイズ機能がすべての作成者向けにおよび使用中の実稼動サーバーに実装されているかどうかを確認してください。設定が正しくなかった可能性があります。
 
 ## 検索に関連する問題のトラブルシューティング {#troubleshoot}
+
+<!-- TBD: Expand this section.
+-->
 
 問題と取り得る対策については、以下を参照してください。
 
