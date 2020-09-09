@@ -2,9 +2,9 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: e85f06b1f1431cfe8955c84bdb96ea27f566ff95
+source-git-commit: bf07f6cba245ac8bc671264e5af24b0c72c68c5d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '770'
 ht-degree: 63%
 
 ---
@@ -82,9 +82,9 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
 
    ![](assets/setup-3.png)
 
-   「 **追加新しいページの上書き** 」をクリックして、エクスペリエンス監査に含めるURLパスを指定します。
+   「 **追加新しいページ** 」をクリックして、エクスペリエンス監査に含めるURLパスを指定します。
 
-   例えば、エクスペリエンス監査に含め `https://wknd.site/us/en/about-us.html` る場合は、このフィールドにパス `us/en/about-us.html` を入力します。
+   例えば、エクスペリエンス監査に含め `https://wknd.site/us/en/about-us.html` る場合は、このフィールドにパス `us/en/about-us.html` を入力し、「 **保存**」をクリックします。
 
    ![](assets/exp-audit4.png)
 
