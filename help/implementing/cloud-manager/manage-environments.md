@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+source-git-commit: 3768474b41abe76ee639e51c9eae39d72ab7c4a4
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 95%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 95%
 
 ## Managing Access {#managing-access}
 
-Select **Manage Access** from from the dropdown menu in the **Environments** Card. オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
+Select **Manage Access** from the dropdown menu in the **Environments** Card. オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
 
 詳しくは、「作成者インスタンスへのアクセスの [管理](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」を参照してください。
 
