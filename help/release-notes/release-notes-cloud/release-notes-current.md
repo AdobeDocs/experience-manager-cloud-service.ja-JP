@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 28%
+source-wordcount: '235'
+ht-degree: 20%
 
 ---
 
@@ -13,6 +13,24 @@ ht-degree: 28%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 Experience Manager as a Cloud Service 2020.9.0 の一般的なリリースノートの概要を次に説明します。
+
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+
+### 新機能 {#what-is-new-commerce}
+
+* CIFコアコンポーネントv1.3.0をリリースしました。詳しくは、「 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 」を参照してください。
+
+* 商品やカテゴリテンプレート用の商品/カテゴリに関するプレビュー機能が利用できるようになりました。 これにより、AEMのビジネスユーザーやマーケターは、商品やカテゴリのテンプレートに実際のデータを表示できます。
+
+* 製品およびカテゴリに追加されたプロパティページ。これにより、ビジネスユーザーは、製品のSKU/カテゴリIDに関連付けられた表示の詳細を確認できます。
+
+* 製品コンソールに追加され、製品/カテゴリを名前または価格属性で並べ替えられるようになりました。
+
+* 製品コンソールに追加された製品検索機能。
+
+### バグ修正 {#bug-fixes-commerce}
+
+* Commerce Cloud構成は継承を尊重しませんでした。 この問題は、設定に値が継承されるように修正されました。
 
 
 ## Cloud Manager {#cloud-manager}
@@ -24,7 +42,7 @@ Experience Manager as a Cloud Service 2020.9.0 の一般的なリリースノー
 ### 新機能 {#what-is-new-cloud-manager}
 
 * 「コンテンツ監査」は、「エクスペリエンス監査」という名称に変更されました。
-* ビルドプロセスは、3つのMavenコマンドに分けられています。
+* ビルドプロセスは、3つの Maven コマンドに分けられています。
 * Gitリポジトリを複製できない場合は、最大3回再試行されます。
 
 ### バグ修正 {#bug-fixes-cm}
