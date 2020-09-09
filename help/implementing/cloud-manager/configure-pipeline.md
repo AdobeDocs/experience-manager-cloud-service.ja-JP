@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: b94cd6c5bce641e50491f5c1fd30f5cb2f92646c
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 65%
+source-wordcount: '775'
+ht-degree: 63%
 
 ---
 
@@ -82,16 +82,26 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
 
    ![](assets/setup-3.png)
 
-   このオプションは、エクスペリエンス監査に常に含める必要があるURLパスの表を提供します。 ユーザーは、含めるURLパスを手動で入力できます。 最大25行まで含めることができます。 このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトとしてエクスペリエンス監査に含まれます。
+   このオプションは、エクスペリエンス監査に常に含める必要があるURLパスの表を提供します。 ユーザーは、入力フィールドに入力を行い、独自のカスタムリンクを定義する必要があります。
 
-   >[!NOTE]
-   > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO(Search Engine Optimization)、ベストプラクティス、PWA（プログレッシブWeb App）のテストに従って評価されます。
+   例えば、エクスペリエンス監査に含め `https://wknd.site/us/en/about-us.html` る場合は、このフィールドにパス `us/en/about-us.html` を入力します。
+
+   ![](assets/set-up-5.png)
+
+   表に表示されるURLは次のとおりで `https://publish-p7719-e13204.adobeaemcloud.com/us/en/about-us.html`す。
+
+   ![](assets/set-up-4.png)
+
+   最大25行まで含めることができます。 このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
 
    詳しくは、「エクスペリエンス監査結果 [について](/help/implementing/cloud-manager/experience-audit-testing.md) 」を参照してください。
 
    「 **追加新しいページの上書き** 」をクリックして、エクスペリエンス監査に含めるURLパスを指定します。 パスを追加したら、「 **保存**」をクリックします。
 
    ![](assets/exp-audit2.png)
+
+   >[!NOTE]
+   > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO(Search Engine Optimization)、ベストプラクティス、PWA（プログレッシブWeb App）のテストに従って評価されます。
 
 1. 「パイプラインを **編集** 」(Edit Pipeline **)画面で「保存」(Save** )をクリックします。 **概要**&#x200B;ページに、**プログラムをデプロイ**&#x200B;カードが表示されます。「**デプロイ**」ボタンをクリックして、プログラムをデプロイします。
 
