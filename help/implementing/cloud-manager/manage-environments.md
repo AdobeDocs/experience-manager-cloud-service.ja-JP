@@ -1,11 +1,11 @@
 ---
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
-translation-type: ht
-source-git-commit: 92b7388f5050c47f4cc00fd1e0e2d48f28a1f424
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3130b1af089d67bcdca2b1da5bdb7fede8bcafbb
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 95%
 
 ---
 
@@ -96,6 +96,15 @@ ht-degree: 100%
 
 >[!NOTE]
 この機能は、実稼動用に設定された通常のプログラムの実稼働／ステージング環境セットには使用できません。ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
+
+## Managing Access {#managing-access}
+
+Select **Manage Access** from from the dropdown menu in the **Environments** Card. オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
+
+詳しくは、「作成者インスタンスへのアクセスの [管理](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」を参照してください。
+
+![](assets/environ-manage-access.png)
+
 
 ## 開発者コンソールへのアクセス {#accessing-developer-console}
 
