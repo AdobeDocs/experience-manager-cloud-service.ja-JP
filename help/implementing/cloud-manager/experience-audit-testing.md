@@ -2,9 +2,9 @@
 title: エクスペリエンス監査テスト —Cloud Services
 description: エクスペリエンス監査テスト —Cloud Services
 translation-type: tm+mt
-source-git-commit: 561345f58ce8e448176507e3bba114324dc18256
+source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # エクスペリエンス監査テスト {#experience-audit-testing}
 
-エクスペリエンス監査は、GoogleのオープンソースツールであるCloud Manager Sites Productionパイプラインで使用できる機能です。 この機能は、すべてのCloud Manager実稼働パイプラインで有効になります。
+エクスペリエンス監査は、GoogleのオープンソースツールであるGoogle Lighthouseを利用したCloud Manager Sites Productionパイプラインで使用できる機能です。 この機能は、すべてのCloud Manager実稼働パイプラインで有効になります。
 
 これにより、デプロイメントプロセスが検証され、次の変更がデプロイされていることを確認できます。
 
