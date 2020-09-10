@@ -2,9 +2,9 @@
 title: ContextHub ストア候補のサンプル
 description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 76%
 
 ---
@@ -112,7 +112,7 @@ The `contexthub.geolocation` sample store candidate uses Google Maps to obtain a
 
 デバイス、ウィンドウ、ブラウザー、日付時刻など、現在のクライアント環境に関する情報を格納します。
 
-### ソースの場所{#source-location-surferinfo
+### ソースの場所 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
