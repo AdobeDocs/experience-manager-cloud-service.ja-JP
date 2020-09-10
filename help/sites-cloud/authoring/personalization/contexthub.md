@@ -2,7 +2,7 @@
 title: ContextHub データを使用したページのプレビュー
 description: ContextHub ツールバーは、ContextHub ストアからのデータを表示し、ストアデータを変更することができ、コンテンツのプレビューに役立ちます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 100%
@@ -12,14 +12,14 @@ ht-degree: 100%
 
 # ContextHub データを使用したページのプレビュー {#previewing-pages-using-contexthub-data}
 
-ContextHub ツールバーには、ContextHub ストアのデータが表示され、このツールバーを使用してストアデータを変更することができます。ContextHub ツールバーは、ContextHub ストア内のデータによって決定されるコンテンツのプレビューに役立ちます。<!--The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.-->
+ContextHub ツールバーには、ContextHub ストアのデータが表示され、このツールバーを使用してストアデータを変更することができます。ContextHub ツールバーは、ContextHub ストア内のデータによって決定されるコンテンツのプレビューに役立ちます。
 
 このツールバーは、1 つ以上の UI モジュールを含む一連の UI モードで構成されます。
 
 * UI モードは、ツールバーの左側に表示されるアイコンです。アイコンをクリックまたはタップすると、そのモードに含まれる UI モジュールがツールバーに表示されます。
 * UI モジュールは、1 つ以上の ContextHub ストアのデータを表示します。一部の UI モジュールでは、ストアデータを操作することもできます。
 
-ContextHub によって、いくつかの UI モードと UI モジュールがインストールされます。管理者によって、異なる UI モードと UI モジュールを表示するように ContextHub が設定されている場合もあります。<!--ContextHub installs several UI modes and UI modules. Your administrator may have [configured ContextHub](/help/sites-administering/contexthub-config.md) to display different ones.-->
+ContextHub によって、いくつかの UI モードと UI モジュールがインストールされます。管理者によって、異なる UI モードと UI モジュールを表示するように [ContextHub が設定されている](/help/implementing/developing/personalization/configuring-contexthub.md)場合もあります。
 
 ## ContextHub ツールバーの表示 {#revealing-the-contexthub-toolbar}
 
