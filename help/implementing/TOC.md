@@ -3,9 +3,9 @@ sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 5eeecedae463f0d3308b0edd5bb3487def885666
+source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '387'
 ht-degree: 79%
 
 ---
@@ -74,6 +74,15 @@ ht-degree: 79%
       + [統合の起動](developing/spa/launch-integration.md)
       + [サーバー側のレンダリング](developing/spa/ssr.md)
       + [JavaScript APIリファレンス](developing/spa/reference-materials.md)
++ パーソナライゼーション {#personalization}
+   + [ContextHub](developing/personalization/contexthub.md)
+   + [ContextHub の設定](developing/personalization/configuring-contexthub.md)
+   + [サンプルのストア候補](developing/personalization/sample-stores.md)
+   + [サンプルストアモジュール](developing/personalization/sample-modules.md)
+   + [ContextHub の診断](developing/personalization/contexthub-diagnostics.md)
+   + [ContextHub の拡張](developing/personalization/extending-contexthub.md)
+   + [ContextHub API](developing/personalization/contexthub-api.md)
+   + [Adobe Target との統合](/help/sites-cloud/integrating/adobe-target.md)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
