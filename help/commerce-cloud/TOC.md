@@ -1,9 +1,10 @@
 ---
-sub-product: Cloud ServiceとしてのAEMコマース
-user-guide-title: Cloud ServiceとしてのAEMコマース
+sub-product: CLOUD SERVICEとしてのAEMコマース
+user-guide-title: CLOUD SERVICEとしてのAEMコマース
+breadcrumb-title: Commerce Guide
 user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8e7b2e2e0c5c23aa14bc4d302c417dcc27f70468
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 17%
@@ -13,7 +14,7 @@ ht-degree: 17%
 
 # Commerce {#commerce}
 
-+ [Cloud ServiceとしてのAEMコマース](/help/commerce-cloud/home.md)
++ [CLOUD SERVICEとしてのAEMコマース](/help/commerce-cloud/home.md)
 + [概要](overview.md)
 + [主要な変更点](changes.md)
 + アーキテクチャ {#architecture}
