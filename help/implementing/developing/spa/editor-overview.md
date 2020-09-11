@@ -2,7 +2,7 @@
 title: SPA エディターの概要
 description: この記事では、SPAエディタの包括的な概要と、SPAエディタの動作方法に関する詳細ワークフローをAEM内で説明します。
 translation-type: tm+mt
-source-git-commit: 9b52d94b9f00be30c21dece9b34b0b56056dcbd6
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 55%
@@ -36,7 +36,7 @@ SPA のページコンポーネントは、JSP ファイルまたは HTL ファ�
 
 ### ページモデルの管理 {#page-model-management}
 
-ページモデルの解決と管理は、指定の `PageModel` ライブラリに委任されます。SPAは、SPAエディタで初期化して作成するために、ページモデルライブラリを使用する必要があります。 このページモデルライブラリは、`cq-react-editable-components` npm によって AEM のページコンポーネントに間接的に提供されます。ページモデルは、AEM と SPA 間のインタープリターであるので、常に存在している必要があります。ページを作成したら、ページエディターとの通信を可能にするために、`cq.authoring.pagemodel.messaging` ライブラリを追加する必要があります。
+ページモデルの解決と管理は、指定の `PageModel` ライブラリに委任されます。SPAは、SPAエディタで初期化して作成するために、ページモデルライブラリを使用する必要があります。 このページモデルライブラリは、`aem-react-editable-components` npm によって AEM のページコンポーネントに間接的に提供されます。ページモデルは、AEM と SPA 間のインタープリターであるので、常に存在している必要があります。ページを作成したら、ページエディターとの通信を可能にするために、`cq.authoring.pagemodel.messaging` ライブラリを追加する必要があります。
 
 SPA ページのコンポーネントがページのコアコンポーネントから継承される場合、`cq.authoring.pagemodel.messaging` クライアントライブラリのカテゴリを使用可能にするオプションが 2 つあります。
 
