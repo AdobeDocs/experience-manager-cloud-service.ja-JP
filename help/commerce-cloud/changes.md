@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAEMコマースに対する顕著な変更
 description: Adobe Experience Manager6.5と比較して、AEMコマースのCloud Serviceが顕著に変更されました。
 translation-type: tm+mt
-source-git-commit: ed81d08d9775f61c0ab1e305710ac7ecf29d4229
+source-git-commit: 2934d0d8d3977bb7884bae9654ac26e9fa57b34f
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 12%
 
 ---
@@ -36,7 +36,7 @@ Experience Managerに商品カタログをインポートして保存するた�
 >
 >AEM Managed ServiceまたはAEM On-premiseでのCIFの使用方法に関する追加ドキュメントについては、 [Commerce Integration Frameworkを参照してください。](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
 
->[!Note]
+>[!NOTE]
 >
 >CIF Classic/QuickstartバージョンのCommerce Integration Frameworkは、非常に限られた使用例を対象としたAEMオンプレミスオファーで使用できます。 ただし、これは推奨される解決策ではありません。
 
