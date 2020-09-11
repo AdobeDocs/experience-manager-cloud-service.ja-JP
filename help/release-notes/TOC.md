@@ -1,9 +1,10 @@
 ---
 sub-product: AEM as a Cloud Service のリリースノート
 user-guide-title: AEM as a Cloud Service のリリースノート
+breadcrumb-title: Release Notes
 user-guide-description: This guide provides important information about the latest release of Experience Manager as a Cloud Service, including what is new, deprecated and removed features, and known issues.
 translation-type: tm+mt
-source-git-commit: 3b9592117d2eb48c1cec30027f5a15f2a45dc3a9
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 100%
