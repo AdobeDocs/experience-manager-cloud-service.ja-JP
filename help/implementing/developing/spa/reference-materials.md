@@ -2,17 +2,17 @@
 title: SPAリファレンス資料
 description: 単一ページのアプリケーションAPIリファレンスとソースコードリポジトリの概要
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: ef3e40c22264e96253dc1ff322a667b4b2432450
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 15%
+source-wordcount: '127'
+ht-degree: 12%
 
 ---
 
 
-# SPA JavaScript API リファレンス{#spa-javascript-api-references}
+# SPAリファレンス資料 {#spa-reference-materials}
 
-## NMPモジュールのAPIリファレンス {#api-references}
+## NMPモジュールのSPA Javascript APIリファレンス {#api-references}
 
 AEM SPA Editor SDKフレームワーク用のNPMモジュールに関して使用可能なJavaScript APIリファレンスを次に示します。
 
