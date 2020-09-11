@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: a2037fb3a315db801423c33671e1885a0b655391
+source-git-commit: cca8aff3ada327252bfabd2207e7aa86fdf00033
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '255'
 ht-degree: 20%
 
 ---
@@ -13,6 +13,12 @@ ht-degree: 20%
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
 Experience Manager as a Cloud Service 2020.9.0 の一般的なリリースノートの概要を次に説明します。
+
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+### What is new in [!DNL Sites] {#what-is-new-sites}
+
+* シングルページアプリケーション(SPA)エディターのJavaScript SDK [がオープンソースになりました。](/help/implementing/developing/spa/reference-materials.md)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -31,7 +37,6 @@ Experience Manager as a Cloud Service 2020.9.0 の一般的なリリースノー
 ### バグ修正 {#bug-fixes-commerce}
 
 * Commerce Cloud構成は継承を尊重しませんでした。 この問題は、設定に値が継承されるように修正されました。
-
 
 ## Cloud Manager {#cloud-manager}
 
