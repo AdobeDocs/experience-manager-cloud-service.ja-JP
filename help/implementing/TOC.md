@@ -3,7 +3,7 @@ sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: 7031e923c40367115c4423b561757b0f2b40878c
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 79%
@@ -73,7 +73,7 @@ ht-degree: 79%
       + [モデルルーティング](developing/spa/routing.md)
       + [統合の起動](developing/spa/launch-integration.md)
       + [サーバー側のレンダリング](developing/spa/ssr.md)
-      + [JavaScript APIリファレンス](developing/spa/reference-materials.md)
+      + [SPAリファレンスドキュメント](developing/spa/reference-materials.md)
 + パーソナライゼーション {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub の設定](developing/personalization/configuring-contexthub.md)
