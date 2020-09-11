@@ -1,9 +1,10 @@
 ---
 sub-product: AEM as a Cloud Service のセキュリティ
 user-guide-title: AEM as a Cloud Service のセキュリティ
+breadcrumb-title: Security Guide
 user-guide-description: Learn about important security topics regarding Experience Manager as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 75d9e5817448489790cc0e4004db59e0f330af71
+source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 78%
