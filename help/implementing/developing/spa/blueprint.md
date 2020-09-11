@@ -2,7 +2,7 @@
 title: SPA ブループリント
 description: このドキュメントでは、AEM内に編集可能なSPAコンポーネントを実装するためにSPAフレームワークが満たす必要がある、フレームワークに依存しない一般的な契約について説明します。
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 10%
@@ -97,7 +97,7 @@ npmモジュール： [@adobe/aem-react-editable-components](https://www.npmjs.c
 
 #### 角 {#angular}
 
-npmモジュール： [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+npmモジュール： [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## メインサービスとコンポーネント {#main-services-and-components}
 
