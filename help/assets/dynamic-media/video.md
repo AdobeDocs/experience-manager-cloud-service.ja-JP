@@ -2,9 +2,9 @@
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 07d60f1ae6be824af07bc51f989a5c2029a3422a
+source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
 workflow-type: tm+mt
-source-wordcount: '10052'
+source-wordcount: '10056'
 ht-degree: 99%
 
 ---
@@ -410,9 +410,9 @@ Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセッ�
 
 ## YouTube へのビデオの公開 {#publishing-videos-to-youtube}
 
-以前作成した YouTube チャンネルに、オンプレミス AEM ビデオアセットを直接公開できます。
+AEM Assetsで管理されているビデオアセットは、以前に作成したYouTubeチャネルに直接投稿できます。
 
-ビデオアセットを YouTube に公開するには、タグを使用して AEM Assets をセットアップします。これらのタグを YouTube チャンネルに関連付けます。ビデオアセットのタグが YouTube チャンネルのタグと一致する場合、ビデオが YouTube に公開されます。YouTube への公開は、関連するタグが使用されている限り、ビデオの通常公開と一緒におこなわれます。
+ビデオアセットをYouTubeに公開するには、AEM Assetsのビデオアセットにタグを付けます。 これらのタグを YouTube チャンネルに関連付けます。ビデオアセットのタグが YouTube チャンネルのタグと一致する場合、ビデオが YouTube に公開されます。YouTube への公開は、関連するタグが使用されている限り、ビデオの通常公開と一緒におこなわれます。
 
 YouTube は独自のエンコーディングをおこないます。そのため、AEM にアップロードされた元のビデオファイルは、Dynamic Media のエンコードで作成されたビデオレンディションではなく YouTube に公開されます。Dynamic Media を使用してビデオを処理する必要はありませんが、再生にビューアプリセットが必要な場合は、それがおこなわれます。
 
