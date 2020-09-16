@@ -2,10 +2,10 @@
 title: Cloud Readiness Analyzer の使用
 description: Cloud Readiness Analyzer の使用
 translation-type: tm+mt
-source-git-commit: ba2105d389617fe0c7e26642799b3a7dd3adb8a1
+source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 78%
+source-wordcount: '2189'
+ht-degree: 71%
 
 ---
 
@@ -51,19 +51,37 @@ Cloud Readiness Analyzer の表示方法を学ぶには、次のセクション�
 
    ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-1.png)
 
-1. 「**Cloud Readiness Analyzer**」をクリックすると、レポート生成が開始され、使用可能になると表示されます。
+1. 「 **レポートの** 生成」をクリックして、Cloud Readiness Analyzerを実行します。
 
-   >[!NOTE]
-   >レポート全文を表示するには、ページを下にスクロールする必要があります。
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report.png)
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-1.png)
+1. CRAがレポートを生成中に、ツールが行った進行状況を画面で確認できます。 分析された項目の数と、見つかった結果の数が表示されます。
 
-1. CRA レポートが生成され、表示されたら、下の図に示すように、「**CSV**」をクリックして、レポートをコンマ区切り値（CSV）形式でダウンロードするオプションがあります。
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-generate-report-1.png)
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-2.png)
+
+1. CRAレポートが生成されると、検索のタイプと重要度レベル別に整理された表形式で、結果の概要と数が表示されます。 特定の検索の詳細を表示するには、表内の検索のタイプに対応する番号をクリックします。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+
+上記のアクションは、レポート内のその検索場所まで自動的にスクロールします。
+
+![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+
+1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
 
    >[!NOTE]
    >CRA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+
+   >[!NOTE]
+   >レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
+
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh-1.png)
+
 
 ### Adobe Experience Manager 6.2 および 6.1 {#aem-specific-versions}
 
