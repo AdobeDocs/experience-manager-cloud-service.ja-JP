@@ -3,10 +3,10 @@ title: ブランドポータルでのCloud ServiceとしてのAEM Assetsの設�
 description: AEM Assets と Brand Portal の連携の設定.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 96a084dd0e8f250b343b616573aeedb2b83682e4
+source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 36%
+source-wordcount: '1647'
+ht-degree: 37%
 
 ---
 
@@ -275,7 +275,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
    ![](assets/test-bpconfig4.png)
 
-   A message appears at the bottom of the page that your *test package is successfully delivered*.
+   テ *ストパッケージが正常に配信されたことを示すメッセージが表示されます*。
 
    >[!NOTE]
    >
