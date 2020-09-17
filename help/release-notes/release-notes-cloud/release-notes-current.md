@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 529a538948f537fde8b2c50fb1f3acc942a7cb64
+source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '391'
 ht-degree: 19%
 
 ---
@@ -60,7 +60,7 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 ### 新機能 {#what-is-new-cra}
 
-* Cloud Readiness Analyzer(CRA)には、開始状態コンソールがあり、ユーザーがクリックしてCRAを実行するための明示的な「レポートの生成」ボタンを表示します。
+* Cloud Readiness Analyzer(CRA)には開始状態コンソールがあり、ユーザーがクリックしてCRAを実行するための明示的な「 **レポートの生成** 」ボタンを表示します。
 
 * CRA UIの実行中は進行状況が表示されます。 分析中の項目と実行中に見つかった結果が表示されます。
 
