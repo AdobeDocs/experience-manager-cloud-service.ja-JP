@@ -2,9 +2,9 @@
 title: Cloud Readiness Analyzer の使用
 description: Cloud Readiness Analyzer の使用
 translation-type: tm+mt
-source-git-commit: f1127461504da5e0b4cdb6220143e535439b5858
+source-git-commit: b0ea504fe9b1f2d8eadb9fd263c983dae090cd1a
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2209'
 ht-degree: 71%
 
 ---
@@ -106,7 +106,7 @@ Cloud Readiness Analyzer ツールを AEM インスタンスで実行すると�
 * **システム概要**：CRA が実行された AEM システムに関する情報です。
 * **発見カテゴリ**：各セクションが同じカテゴリの 1 つ以上の発見に対応する複数セクション。各セクションには次の内容が含まれます。カテゴリ名、サブタイプ、発見数と重要度、概要、カテゴリドキュメントへのリンク、個々の発見情報。
 
-アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。
+アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。各検索カテゴリの詳細については、「 [パターン検出カテゴリ」を参照してください。](https://docs.adobe.com/content/help/en/experience-manager-pattern-detection/table-of-contents/aso.html)
 
 次の表に、重要度レベルを示します。
 
