@@ -2,7 +2,7 @@
 title: Cloud Readiness Analyzer の使用
 description: Cloud Readiness Analyzer の使用
 translation-type: tm+mt
-source-git-commit: b15969e7cdbd8c3affc6a51b0bc0b0f3f5fdb0f0
+source-git-commit: 6459a3eae03ec75ed9449f27ad717b90bddf6dec
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 71%
@@ -62,20 +62,20 @@ Cloud Readiness Analyzer の表示方法を学ぶには、次のセクション�
 
 1. CRAレポートが生成されると、検索のタイプと重要度レベル別に整理された表形式で、結果の概要と数が表示されます。 特定の検索の詳細を表示するには、表内の検索のタイプに対応する番号をクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table.png)
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-4.png)
 
    上記のアクションは、レポート内のその検索場所まで自動的にスクロールします。
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-summary-table-1.png)
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-5.png)
 
 1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-download-csv.png)
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-6.png)
 
    >[!NOTE]
    >CRA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
-   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/cra-tool-refresh.png)
+   ![画像](/help/move-to-cloud-service/cloud-readiness-analyzer/assets/report-cra-7.png)
 
    >[!NOTE]
    >レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
