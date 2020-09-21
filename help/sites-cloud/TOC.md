@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
 breadcrumb-title: Authoring Guide
 user-guide-description: Understand how to author with, and administer, Experience Manager Sites as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 82ad2cda70dd664ac9456a04f34e2d5831687fc1
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
@@ -73,6 +73,7 @@ ht-degree: 100%
       + [オーディエンスの管理](authoring/personalization/audiences.md)
       + [オファーの作成と管理](authoring/personalization/offers.md)
       + [セグメント化について](authoring/personalization/segmentation.md)
+      + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 + AEM as a Cloud Service との統合{#integrations}
    + [Adobe Analytics との統合](integrating/integrating-adobe-analytics.md)
    + [Adobe Target との統合](integrating/integrating-adobe-target.md)
