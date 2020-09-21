@@ -1,11 +1,11 @@
 ---
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '2530'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d0e63184d229e52b949d0f24660121e3417912be
+workflow-type: tm+mt
+source-wordcount: '2542'
+ht-degree: 99%
 
 ---
 
@@ -102,8 +102,10 @@ Oak インデックス（`/oak:index`）は、AEM Cloud Service のデプロイ�
    + `all` コンテンツパッケージに次のパッケージが埋め込まれて、単一のデプロイメントアーティファクトが作成されます。
       + `ui.apps.common`：サイト A とサイト B の&#x200B;**両方**&#x200B;に必要なコードをデプロイします
       + `ui.apps.site-a`：サイト A に必要なコードをデプロイします
+         + `core.site-a` OSGiバンドルJARは `ui.apps.site-a`
       + `ui.content.site-a`：サイト A に必要なコンテンツと設定をデプロイします
       + `ui.apps.site-b`：サイト B に必要なコードをデプロイします
+         + `core.site-b` OSGiバンドルJARは `ui.apps.site-b`
       + `ui.content.site-b`：サイト B に必要なコンテンツと設定をデプロイします
 
 ## パッケージタイプ {#package-types}
