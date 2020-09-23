@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: a56ced81d0e1db44f156204eb6ff0c6860b395f6
+source-git-commit: 5627904800600386d186fdf9123cacbb55c57a49
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 95%
+source-wordcount: '1667'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 * コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
 
-* コンテンツ転送ツールは、次の種類のデータストアと共に使用できます。ファイルデータストア、S3データストア、共有S3データストア。 現在、Azure Blob Store Data Storeはサポートされていません。
+* コンテンツ転送ツールは、次の種類のデータストアと共に使用できます。ファイルデータストア、S3 Data Store、共有S3 Data Store、およびAzure Blob Store Data Store。
 
 * *サンドボックス環境*&#x200B;を使用している場合は、環境が 2020 年 6 月 10 日以降のリリースにアップグレードされていることを確認してください。*実稼動環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
@@ -47,16 +47,16 @@ ht-degree: 95%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
 
-1. 「**移行セットを作成**」をクリックして、新しい移行セットを作成します。**コンテンツ移行セットの詳細**&#x200B;が表示されます。
+1. 最初の移行セットを作成すると、次のコンソールが表示されます。 「**移行セットを作成**」をクリックして、新しい移行セットを作成します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
 
    >[!NOTE]
-   >コンテンツ転送画面には、既存の移行セットとその現在のステータスが表示されます。
-
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   >既存の移行セットがある場合、コンソールには既存の移行セットのリストが表示され、現在のステータスが表示されます。
 
 1. **コンテンツ移行セットの詳細**&#x200B;画面のフィールドに、以下のように値を入力します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-3.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
 
 
    1. **名前**：移行セットの名前を入力します。
@@ -72,13 +72,13 @@ ht-degree: 95%
    1. **アクセストークン**：アクセストークンを入力します。
 
       >[!NOTE]
-      >オーサーインスタンスからアクセストークンを取得するには、`/libs/granite/migration/token.json` を参照します。アクセストークンは、Cloud Service オーサーインスタンスから取得されます。
+      >「アクセストークンを **開く** 」ボタンを使用してアクセストークンを取得できます。 ターゲットCloud ServiceインスタンスのAEM管理者グループに属していることを確認する必要があります。
 
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
       1. **バージョンを含める**：必要に応じて選択します。
 
-      1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。
+      1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、入力または選択による入力を受け付けます。
 
          >[!IMPORTANT]
          >移行セットの作成時には、次のパスは制限されます。
@@ -92,43 +92,40 @@ ht-degree: 95%
 
 1. 移行セットが&#x200B;*概要*&#x200B;ページに表示されます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img4.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   既存のすべての移行セットが、現在のステータスなどのステータス情報と共に&#x200B;*概要*&#x200B;ページに表示されます。
+   既存のすべての移行セットが、現在のステータスなどのステータス情報と共に&#x200B;*概要*&#x200B;ページに表示されます。以下に示すアイコンの一部が表示されます。
 
    * *赤い雲*&#x200B;は、抽出プロセスを完了できないことを示しています。
    * *緑の雲*&#x200B;は、抽出プロセスを完了できることを示しています。
    * *黄色のアイコン*&#x200B;は、その既存の移行セットが同じインスタンス内の他のユーザーによって作成されたことを示しています。
 
-1. 概要ページで移行セットを選択し、「**プロパティ**」をクリックして、移行セットのプロパティを表示または編集します。
+1. 概要ページで移行セットを選択し、「**プロパティ**」をクリックして、移行セットのプロパティを表示または編集します。プロパティの編集中は、コンテナ名またはサービスURLを変更できません。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-img6.png)
+
 
 ### コンテンツ転送の抽出プロセス {#extraction-process}
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 
-1. *概要*&#x200B;ページで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。
+1. *概要*&#x200B;ページで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。The **Migration Set extraction** dialog box displays and click on **Extract** to start the extraction phase.
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. **移行セットの抽出**&#x200B;ダイアログボックスが表示されるので、「**抽出**」をクリックして抽出段階を完了します。
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/06-content-extraction.png)
 
    >[!NOTE]
    >抽出段階では、ステージングコンテナを上書きするオプションがあります。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-2.png)
 
-1. 「**抽出**」フィールドに、進行中の抽出プロセスを表す&#x200B;**実行中**&#x200B;ステータスが表示されます。
+1. 「 **抽出** 」フィールドに「 **実行中** 」ステータスが表示され、抽出が進行中であることを示します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-3.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/07-extraction-job-running.png)
 
    抽出が完了すると、移行セットのステータスが&#x200B;**完了**&#x200B;に更新され、*緑で塗りつぶされた*&#x200B;雲のアイコンが「**情報**」フィールドに表示されます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-4.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/10-extraction-complete.png)
 
    >[!NOTE]
-   >更新されたステータスを表示するには、ページの表示を更新する必要があります。
+   >UIには自動リロード機能があり、30秒ごとに概要ページをリロードします。
    >抽出フェーズが開始されると、書き込みロックが作成され、*60 秒*&#x200B;後に解放されます。したがって、抽出が停止した場合は、ロックが解除されるまで 1 分待ってから、抽出を再開する必要があります。
 
 #### 追加抽出 {#top-up-extraction-process}
@@ -140,41 +137,25 @@ ht-degree: 95%
 
 抽出プロセスが完了したら、追加抽出方式を使用して差分コンテンツを転送できます。それには、次の手順に従います。
 
-1. *概要*&#x200B;ページに移動し、追加抽出の実行対象となる移行セットを選択します。
-
-1. 「**抽出**」をクリックして、追加抽出を開始します。
-
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extraction-img1.png)
-
-1. **移行セットの抽出**&#x200B;ダイアログボックスが表示されます。
+1. *概要*&#x200B;ページに移動し、追加抽出の実行対象となる移行セットを選択します。「**抽出**」をクリックして、追加抽出を開始します。**移行セットの抽出**&#x200B;ダイアログボックスが表示されます。
 
    >[!IMPORTANT]
    >「**抽出時にステージングコンテナを上書き**」オプションを無効にしてください。
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/extract-topup-1.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### コンテンツ転送のインジェストプロセス {#ingestion-process}
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 
-1. *概要*&#x200B;ページで移行セットを選択し、「**取り込み**」をクリックしてインジェストを開始します。
+1. *概要*&#x200B;ページで移行セットを選択し、「**取り込み**」をクリックしてインジェストを開始します。**移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。Click on **Ingest** to start the ingestion phase. デモのために、「**コンテンツをオーサーインスタンスに取り込み**」オプションは無効になっています。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-1. **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-2.png)
+1. 取り込みが完了すると、 **「取り込みを** 公開 **」フィールドのステータスが**&#x200B;完了に更新されます。
 
-   デモのために、「**コンテンツをオーサーインスタンスに取り込み**」オプションは無効になっています。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-3.png)
-
-   「**取り込み**」をクリックして、インジェスト段階を完了します。
-
-1. インジェストが完了すると、「**オーサーインジェスト**」フィールドのステータスが&#x200B;**完了**&#x200B;に更新され、緑で塗りつぶされた雲のアイコンが「**情報**」フィールドに表示されます。
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-4.png)
-
-   >[!NOTE]
-   > 更新されたステータスを表示するには、ページの表示を更新する必要があります。
 
 #### 追加インジェスト {#top-up-ingestion-process}
 
@@ -185,17 +166,11 @@ ht-degree: 95%
 
 インジェストプロセスが完了したら、追加インジェスト方式を使用して差分コンテンツを転送できます。それには、次の手順に従います。
 
-1. *概要*&#x200B;ページに移動し、追加インジェストの実行対象となる移行セットを選択します。
+1. *概要*&#x200B;ページに移動し、追加インジェストの実行対象となる移行セットを選択します。「**取り込み**」をクリックして、追加インジェストを開始します。**移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
 
-1. 「**取り込み**」をクリックして、追加インジェストを開始します。
-
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-1.png)
-
-1. **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
-
-   >[!NOTE]
-   >前回のインジェストアクティビティで追加された既存のコンテンツを削除しないように、「*ワイプ*」オプションを無効にしてください。
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ingest-topup-1.png)
+   >[!IMPORTANT]
+   >以前のインジェストアクティビティから既存のコンテンツを削除しないようにするには、 **「インジェストの前にクラウドインスタンス上の既存のコンテンツを** ワイプ」オプションを無効にする必要があります。
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
 
