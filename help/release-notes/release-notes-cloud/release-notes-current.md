@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 9bb087cb0570a1f3bbffb989a9399d3274f9c5e1
+source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 19%
+source-wordcount: '462'
+ht-degree: 17%
 
 ---
 
@@ -70,3 +70,16 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 * 場合によっては、更新を強制した後にCRAレポートが更新されないことがありました。 このバージョンは修正されました。
 
+## コンテンツ転送ツール {#content-transfer-tool}
+
+このセクションでは、新機能とコンテンツ転送ツールリリースv1.1.10の更新点について説明します。
+
+### 新機能 {#what-is-new-ctt}
+
+* コンテンツ転送ツール(CTT)は、Azure Blob Store Data Storeをサポートしています。
+
+* CTTユーザーインターフェイスには、30秒ごとに概要ページをリロードする自動リロード機能があります。
+
+* CTTユーザーインターフェイスに追加されたボタンにより、 *アクセストークンを簡単に取得でき* ます。
+
+* *URL* および *移行セット名に対する説明的な検証メッセージが追加されました*。
