@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 24f7e9c1a99286d38332b1d4fa1b0ff9a7335069
+source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 17%
+source-wordcount: '629'
+ht-degree: 15%
 
 ---
 
@@ -14,11 +14,38 @@ ht-degree: 17%
 
 Experience Manager as a Cloud Service 2020.9.0 の一般的なリリースノートの概要を次に説明します。
 
+## リリース日 {#release-date}
+
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
 * シングルページアプリケーション(SPA)エディターのJavaScript SDK [がオープンソースになりました。](/help/implementing/developing/spa/reference-materials.md)
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+
+### What is new in [!DNL Assets] {#what-is-new-assets}
+
+* PNG画像への透かしの設定は、アセットマイクロサービスで生成されたレンディションでサポートされます。 処理プロファイルとして設定できます。 &lt;!— TBD:ヘルプ記事へのリンク。>
+
+* 機能強化 [!DNL Dynamic Media]
+
+   * 一部のみの公開 — マーケティングチームは、 [!DNL Dynamic Media] スマート切り抜き画像や同期された動的レンディションにアクセスして、販促用のマテリアルを作成でき [!DNL Dynamic Media] ます。すべて、グローバル配信用にアセットを公開する必要はありま [!DNL Dynamic Media] せん。 AEMと [!DNL Dynamic Media] 出版は切り離され、それを実現するために別々に行うことができる。
+   * 管理者は、AEM UIで直接プロビジョニング時に受け取った [!DNL Dynamic Media] Cloud Serviceパスワードをリセットできます。デスクトップアプリケーションを使用する必要はありません [!DNL Dynamic Media Classic] 。
+
+* 以下の機能強化について詳しくは、ブランドポータル [の新機能を参照してください](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/introduction/whats-new.html)。
+
+   * Adobe Document Cloud表示SDKとの統合により、PDFのプレビューが強化されました。
+   * シングルクリックによるダウンロード機能
+   * ダウンロードエクスペリエンスの新しい管理設定。
+
+<!--
+### Bugs Fixed {#bugs-fixed-assets}
+
+TBD: list of Assets aaCS bugs that are fixed.
+-->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
