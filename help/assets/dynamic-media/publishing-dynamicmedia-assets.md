@@ -3,7 +3,7 @@ title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 9a4f8b4470a0850f4044f799b2af6cf836fd402d
+source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 93%
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 Dynamic Media アセットを公開するには、既にアップロード済みのアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」をタップします。Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
 
-また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。[Dynamic Media の設定](config-dm.md)を参照してください。または、フォルダーレベルで「 **[!UICONTROL 一部の発行]** 」を使用して、相互に排他的なアセットをダイナミックメディアまたはAEMに選択的に公開することもできます。 詳しくは、ダイナミックメディアでの一部のみの公開の [操作を参照してください。](/help/assets/dynamic-media/selective-publishing.md)
+また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。[Dynamic Media の設定を参照してください。](config-dm.md) または、フォルダーレベルで「 **[!UICONTROL 一部の発行]** 」を使用して、相互に排他的なアセットをダイナミックメディアまたはAEMに選択的に公開することもできます。 詳しくは、ダイナミックメディアでの一部のみの公開の [操作を参照してください。](/help/assets/dynamic-media/selective-publishing.md)
 
 **[!UICONTROL カード表示]**&#x200B;で、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さな地球アイコンが表示されます。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
