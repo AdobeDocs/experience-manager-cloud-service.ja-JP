@@ -3,7 +3,7 @@ title: アセットの透かしの設定
 description: デジタルアセットへの透かしの追加.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a9ebb97541b44140d0155bcfa5d0228c79dbffec
+source-git-commit: f1fcddf196a1a2bfa2629dbd6a8fe0ac057a3d07
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 1. [透かしを適用する際にアセットのマイクロサービスを利用する処理プロファイル](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) を作成します。
 
-![透かしを作成するアセット処理プロファイル](assets/watermark-processing-profile.png)
+   ![透かしを作成するアセット処理プロファイル](assets/watermark-processing-profile.png)
 
 1. [フォルダーに処理プロファイルーを適用して](/help/assets/asset-microservices-configure-and-use.md#use-profiles) 、ウォーターマーク付きのアセットを作成します。
 
