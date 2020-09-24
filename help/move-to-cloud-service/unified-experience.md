@@ -2,9 +2,9 @@
 title: コードリファクタリングツールの統合エクスペリエンス
 description: コードリファクタリングツールの統合エクスペリエンス
 translation-type: tm+mt
-source-git-commit: d6fa0d8bb7d5e251e51a3e4ffd93d6aaa1c7980c
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -46,4 +46,4 @@ Unified Experienceプラグインには次のような利点があります。
 詳しくは、 [Gitリソースを参照してください。aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) ：使用方法と、GitHubでオープンソースのこのプラグインコードに貢献する方法を確認します。
 
 >[!NOTE]
->現在、プラグインに統合されているのは、Dispatcher Converterのみです。
+>現在、このプラグインはAEM Dispatcher ConverterおよびRepository Modenizerと統合されています。
