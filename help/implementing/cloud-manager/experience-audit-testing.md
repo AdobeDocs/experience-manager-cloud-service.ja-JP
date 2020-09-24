@@ -2,7 +2,7 @@
 title: エクスペリエンス監査テスト —Cloud Services
 description: エクスペリエンス監査テスト —Cloud Services
 translation-type: tm+mt
-source-git-commit: 28ba5412190560b21b27068832ba05cfff24c079
+source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Cloud Managerのエクスペリエンス監査を使用すると、サイト上�
    >[!NOTE]
    >プログレッシブWeb App(PWA)スコアは概要スコアには含まれず、ページレベルのレポートの詳細画面にのみ表示されます。
 * 個々のページレベルスコアは、ドリルダウンでも使用できます。
-* スコアの詳細を確認して、個々のテストの結果を確認し、コンテンツ監査中に特定された問題の是正方法に関するガイダンスを確認できます。
+* スコアの詳細を参照して、個々のテストの結果を確認し、エクスペリエンスの監査中に特定された問題の是正方法に関するガイダンスを確認できます。
 * テスト結果の履歴はCloud Manager内に保持されるので、パイプライン実行で発生する変更に以前の実行からの回帰が含まれているかどうかをお客様が確認できます。
 
 ### 集計スコア {#aggregate-scores}
