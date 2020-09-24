@@ -2,10 +2,10 @@
 title: Repository Modenizer
 description: Repository Modenizer
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 3%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
@@ -26,6 +26,9 @@ Repository Modenizerは、次の配置構造を作成することで、互換性
 
 * `all` packageは、サブパッケージとを含むコンテナパッケージ `ui.apps` で `ui.content`す。
 
+>[!NOTE]
+>プロジェクト構造は、パッケージとそれらの *アーキタイプ* 24に基づいて `pom.xml/filter.xml files`います。 Refer to [Archetype 24](https://github.com/adobe/aem-project-archetype) for more details.
+
 ## リポジトリの最新化の使用 {#using-repo-modernizer}
 
 * AdobeI/O CLIを使用：AdobeI/O CLIのCloud Serviceコードリファクタリングプラグインとして、 `aio-cli-plugin-aem-cloud-service-migration` AEMを介してRepository Modenizerを使用することをお勧めします。
@@ -36,5 +39,5 @@ Repository Modenizerは、次の配置構造を作成することで、互換性
 
    詳しくは、 **[Gitリソースを参照してください。Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** （リポジトリの最新化）を参照してください。
 
->[!NOTE]
->Repository Modernizerは、NodeJSを使用して開発されています。 NodeJS 10.0以降をインストールすることをお勧めします。
+   >[!NOTE]
+   >Repository Modenizerは、NodeJSを使用して開発されています。 NodeJS 10.0以降をインストールすることをお勧めします。
