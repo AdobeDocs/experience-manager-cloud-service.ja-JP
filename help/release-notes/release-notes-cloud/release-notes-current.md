@@ -2,17 +2,17 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
+source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 14%
+source-wordcount: '730'
+ht-degree: 12%
 
 ---
 
 
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-Experience Manager as a Cloud Service 2020.9.0 の一般的なリリースノートの概要を次に説明します。
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## リリース日 {#release-date}
 
@@ -28,12 +28,12 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* PNG画像への透かしの設定は、アセットマイクロサービスで生成されたレンディションでサポートされます。 処理プロファイルとして設定できます。
+* 透かし画像ファイルは、アセットマイクロサービスで生成されるレンディションでサポートされます。 処理プロファイルとして設定でき、透かしとしてPNGファイルを使用します。 アセットの [透かしを参照してください](/help/assets/watermark-assets.md)。
 
 * 機能強化 [!DNL Dynamic Media]
 
-   * 一部のみの公開 — マーケティングチームは、 [!DNL Dynamic Media] スマート切り抜き画像や同期された動的レンディションにアクセスして、販促用のマテリアルを作成でき [!DNL Dynamic Media] ます。すべて、グローバル配信用にアセットを公開する必要はありま [!DNL Dynamic Media] せん。 AEMと [!DNL Dynamic Media] 出版は切り離され、それを実現するために別々に行うことができる。
-   * 管理者は、AEM UIで直接プロビジョニング時に受け取った [!DNL Dynamic Media] Cloud Serviceパスワードをリセットできます。デスクトップアプリケーションを使用する必要はありません [!DNL Dynamic Media Classic] 。
+   * 一部のみの公開 — マーケティングチームは、販促用のマテリアルを作成できるように、 [!DNL Dynamic Media] スマート切り抜き画像とそれに同期する動的レンディションにアクセスでき [!DNL Dynamic Media] るようになりました。すべて、グローバル配信用にアセットを公開する必要はありま [!DNL Dynamic Media] せん。 [!DNL Experience Manager] そして [!DNL Dynamic Media] 出版は切り離され、別々に行われ、それを実現することができる。 「 [一部のみの発行](/help/assets/dynamic-media/selective-publishing.md)」を参照してください。
+   * 管理者は、プロビジョニング時に受け取った [!DNL Dynamic Media] Cloud Serviceパスワードをリセットできるようになりました。 リセットは、デスクトップアプリケーションを使用しなくても、 [!DNL Experience Manager] ユーザーインターフェイスで実行でき [!DNL Dynamic Media Classic] ます。
 
 * 以下の機能強化について詳しくは、ブランドポータル [の新機能を参照してください](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
