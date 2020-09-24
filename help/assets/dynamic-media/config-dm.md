@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 500d8795176fa21f79a8d67954fc9352b9a349f8
+source-git-commit: c5c2f5d9f0fd539591972382f197cb83b3d7e60e
 workflow-type: tm+mt
 source-wordcount: '5124'
 ht-degree: 97%
@@ -157,7 +157,9 @@ Image Server 画面では、画像を配信するためのデフォルト設定�
 To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, click **[!UICONTROL Setup > Application Setup > General Settings.]**
 
 * **[!UICONTROL サーバー -]**&#x200B;アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、Web サイトとアプリケーションの URL 文字列を生成するのに使用されます。これらの URL 呼び出しは、アカウントに固有です。AEM サポートによって明示的に指示されない限り、サーバー名は変更しないでください。
+
 * **[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダーにアップロードされるアセットや、元のアセットと異なるファイル名拡張子（JPG、TIF、PNG など）を持つアセットに影響を与えます。
+
 * **[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは最も厳格な置換規則です。置き換え画像を元の画像と同じフォルダーにアップロードし、置き換え画像と元の画像のファイル名拡張子が同じになっている必要があります。これらの要件が満たされない場合は、重複する画像が作成されます。
 
    >[!NOTE]
@@ -165,7 +167,9 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
    >AEM との一貫性を維持するには、常にこの設定（**現在のフォルダーでベース名と拡張子が同じファイルを上書き**）を選択します。
 
 * **[!UICONTROL 任意のフォルダーでベース名と拡張子が同じファイルを上書き]** - 置き換え画像と元の画像のファイル名拡張子は同じになっている必要があります（例えば、chair.jpg は chair.jpg で置き換えられますが、chair.tif では置き換えられません）。ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります。。
+
 * **[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を、元の画像と別のフォルダーにアップロードでき、ファイル名拡張子が異なるファイルをアップロードして、元のファイルと置き換えることができます。元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。
+
 * **[!UICONTROL 初期設定のカラープロファイル]** - 詳細については、[カラーマネジメントの設定](#configuring-color-management)を参照してください。
 
    >[!NOTE]
@@ -212,7 +216,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 [アセットのアップロード](/help/assets/add-assets.md)を参照してください。
 
-**アセット処理を設定するには**：
+アセット処理を設定するには：:
 
 1. AEM で、AEM ロゴをクリックしてグローバルナビゲーションコンソールにアクセスして、**[!UICONTROL 一般／CRXDE Lite]** をクリックします。
 1. 左側のレールで、次の場所に移動します。
@@ -229,7 +233,6 @@ Dynamic Media によって処理されるアセットタイプを定義して、
    * **[!UICONTROL jobParam]** をダブルクリックして、関連するテキストフィールドを開きます。特定の MIME タイプに使用可能な、許可されている処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
 
 1. 次のいずれかの操作をおこないます。
-
    * 手順 3～4 を繰り返して、その他の MIME タイプを編集します。
    * On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 
@@ -239,7 +242,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 AEM Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite で追加する新しいノードが AEM によって削除されないようにするには、必ず `image_` より前に MIME タイプを移動し、その有効値が **[!UICONTROL false]** に設定されている必要があります。
 
-**サポートされていない形式のカスタム MIME タイプを追加するには**
+サポートされていない形式のカスタム MIME タイプを追加するには:
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -305,7 +308,7 @@ AEM Assets でサポートされていない形式のカスタム MIME タイプ
 
 定義には、一致とベース名という 2 つの要素を使用できます。これらのフィールドでは、命名規則のすべての要素を定義して、要素が含まれるセットを命名するために使用される規則の一部を指定できます。会社の個別の命名規則では、これらの各要素について 1 つまたは複数の定義行を使用できます。独自の定義行を必要なだけ使用して、メイン画像、カラー要素、代替表示要素およびスウォッチ要素などの個別の要素にグループ化できます。
 
-**デフォルトの命名規則を設定するには：**
+デフォルトの命名規則を設定するには：:
 
 1. Dynamic Media Classic（Scene7）アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。
 
@@ -339,7 +342,7 @@ Dynamic Media では、バッチセットプリセットを使用して、アセ
 
 バッチセットプリセットを定義するフォームフィールドメソッドとコードメソッドのどちらかを使用できます（正規表現を使用できます）。デフォルトの名前では、「フォームを表示」での定義と同時に「コードを表示」を選択して、正規表現を使用して定義を作成できます。また、どちらかの表示をオフにして、一方の表示のみを使用することもできます。
 
-**バッチセットプリセットを作成するには：**
+バッチセットプリセットを作成するには：:
 
 1. Dynamic Media Classic（Scene7）アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。
 
@@ -502,7 +505,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローでビデオを処理するために使用されます。
 
-**Granite のワークフローキューを更新するには：**
+Granite のワークフローキューを更新するには：:
 
 1. `https://<server>/system/console/configMgr` に移動して、**Queue: Granite Workflow Queue** を検索します。
 
@@ -524,7 +527,7 @@ Granite のワークフローキューは、一時的でないワークフロー
 
 Scene7 アップロード接続の設定は、AEM Assets を Dynamic Media Classic サーバーと同期します。
 
-**Scene7 アップロード接続を更新するには：**
+Scene7 アップロード接続を更新するには：:
 
 1. `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl` に移動します。
 1. 「**[!UICONTROL Number of connections]**」フィールドおよび「**[!UICONTROL Active job timeout]**」フィールドで、必要に応じて数値を変更します。
@@ -537,7 +540,7 @@ Scene7 アップロード接続の設定は、AEM Assets を Dynamic Media Class
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. 「**[!UICONTROL 保存]**」をタップします。
+1. Tap **[!UICONTROL Save.]**
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
