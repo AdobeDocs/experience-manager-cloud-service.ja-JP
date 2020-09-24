@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 130603301212cdb29ae7f395ebc05fc58f64686e
+source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1054'
 ht-degree: 12%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 12%
 
 Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノートの概要を次に説明します。
 
-## リリース日 {#release-date}
-
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is August 27, 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -25,6 +22,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 * ページとサブページ（ページツリー）を以前のバージョンに [復元する機能](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
 
 * AEM [SPA Editorで起動を](/help/sites-cloud/authoring/launches/overview.md) 作成する機能 [。](/help/implementing/developing/spa/introduction.md)
+
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -80,6 +78,7 @@ The release date for [!DNL Experience Manager] as a Cloud Service 2020.8.0 is Au
 ### 新機能 {#what-is-new-cloud-manager}
 
 * 「コンテンツ監査」は、Cloud Managerサイト実稼働パイプラインで有効になる機能です。 Sitesを使用するプログラムの実稼働パイプライン設定に、「 **Content Audit**」という名前の3番目のタブが含まれるようになりました。 実稼働パイプラインを実行するたびに、カスタム機能テストの後、新しいContent Auditステップがパイプラインに含まれます。このステップは、パフォーマンス、SEO(Search Engine Optimization)、アクセシビリティ、ベストプラクティス、PWA(Progressive Web App)など、多数の次元に対してサイトを評価します。
+
 
    >[!NOTE]
    >「コンテンツ監査」は、「エクスペリエンス監査」に名称変更されました。
