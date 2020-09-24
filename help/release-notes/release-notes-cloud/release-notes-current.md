@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
+source-git-commit: 9d73b8339a327643be9f2ea674857b401346087a
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 15%
+source-wordcount: '714'
+ht-degree: 14%
 
 ---
 
@@ -110,3 +110,18 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 * CTTユーザーインターフェイスに追加されたボタンにより、 *アクセストークンを簡単に取得でき* ます。
 
 * *URL* および *移行セット名に対する説明的な検証メッセージが追加されました*。
+
+## コードリファクタリングツール {#code-refactoring}
+
+この節では、コードリファクタリングツールの新機能と更新点について説明します。
+
+### 新機能 {#what-is-new-refactoring}
+
+* AIO-CLIプラグインは、Repository Modenizerをサポートしており、ユーザーはこのプラグインを使用してツールを実行できます。
+
+   Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+
+* Repository Modenizerユーティリティを使用すると、既存のプロジェクトパッケージを、AEM用に定義されたプロジェクト構造と互換性のあるパッケージに再構築できます。
+
+   詳しくは、 [Gitリソースを参照してください。リポジトリの最新化](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 」を参照してください。
+
