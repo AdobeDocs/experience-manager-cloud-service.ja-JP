@@ -2,9 +2,9 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: 615adbe6597f05a1cc2150a265f217d21026be8a
+source-git-commit: f39b03455fc03104932952b892b88403d0c9eca7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 15%
 
 ---
@@ -28,7 +28,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* PNG画像への透かしの設定は、アセットマイクロサービスで生成されたレンディションでサポートされます。 処理プロファイルとして設定できます。 &lt;!— TBD:ヘルプ記事へのリンク。>
+* PNG画像への透かしの設定は、アセットマイクロサービスで生成されたレンディションでサポートされます。 処理プロファイルとして設定できます。
 
 * 機能強化 [!DNL Dynamic Media]
 
