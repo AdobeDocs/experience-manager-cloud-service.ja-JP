@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service へのデジタルアセットの追加。'
 translation-type: tm+mt
-source-git-commit: 06cba29b131ada6a1c0fe2bd8ccad95ce5ff7160
+source-git-commit: 28dddf8282d2489e97fae6247476dee54b72fe0d
 workflow-type: tm+mt
-source-wordcount: '1320'
-ht-degree: 95%
+source-wordcount: '1318'
+ht-degree: 94%
 
 ---
 
@@ -30,18 +30,6 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 ## アセットのアップロード {#upload-assets}
 
-ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（Web ブラウザー）内の目的のフォルダーにドラッグします。または、ユーザーインターフェイスからアップロードを開始することもできます。
-
-1. [!DNL Assets] ユーザーインターフェイスで、デジタルアセットを追加する場所に移動します。
-1. アセットをアップロードするには、以下のいずれかの操作をおこないます。
-
-   * ツールバーの「**[!UICONTROL 作成]**」アイコンをタップします。次に、メニューで「**[!UICONTROL ファイル]**」をタップします。表示されたダイアログで、必要に応じてファイル名を変更できます。
-   * HTML5 をサポートするブラウザーで、アセットを [!DNL Assets] ユーザーインターフェイスに直接ドラッグします。ファイル名を変更するためのダイアログは表示されません。
-
-   ![create_menu](assets/create_menu.png)
-
-   複数のファイルを選択するには、ファイル選択ダイアログで、Ctrl キーまたは Command キーを押しながらアセットを選択します。iPad を使用している場合、一度に選択できるファイルは 1 つだけです。
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
@@ -59,10 +47,6 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
    ![chlimage_1-212](assets/chlimage_1-212.png)
 -->
 
-1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。アップロード処理をキャンセルすると、[!DNL Assets] はアセットのアップロード済みの部分を削除します。
-
-   ファイルがアップロードされる前にアップロード操作をキャンセルすると、[!DNL Assets] が現在のファイルのアップロードを停止し、コンテンツを更新します。ただし、既にアップロードされているファイルは削除されません。
-
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
    The ability to resume uploading is especially helpful in low-bandwidth scenarios and network glitches, where it takes a long time to upload a large asset. You can pause the upload operation and continue later when the situation improves. When you resume, uploading starts from the point where you paused it.
 -->
@@ -73,13 +57,29 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 -->
 
+ファイル（または複数のファイル）をアップロードするには、デスクトップ上でファイルを選択して、ユーザーインターフェイス（Web ブラウザー）内の目的のフォルダーにドラッグします。または、ユーザーインターフェイスからアップロードを開始することもできます。
+
+1. [!DNL Assets] ユーザーインターフェイスで、デジタルアセットを追加する場所に移動します。
+1. アセットをアップロードするには、以下のいずれかの操作をおこないます。
+
+   * ツールバーの「**[!UICONTROL 作成]**」アイコンをタップします。次に、メニューで「**[!UICONTROL ファイル]**」をタップします。表示されたダイアログで、必要に応じてファイル名を変更できます。
+   * HTML5 をサポートするブラウザーで、アセットを [!DNL Assets] ユーザーインターフェイスに直接ドラッグします。ファイル名を変更するためのダイアログは表示されません。
+
+   ![create_menu](assets/create_menu.png)
+
+   複数のファイルを選択するには、ファイル選択ダイアログで、Ctrl キーまたは Command キーを押しながらアセットを選択します。iPad を使用している場合、一度に選択できるファイルは 1 つだけです。
+
+1. 進行中のアップロードをキャンセルするには、進行状況バーの横にある閉じるボタン（「`X`」）をクリックします。アップロード処理をキャンセルすると、[!DNL Assets] はアセットのアップロード済みの部分を削除します。
+
+   ファイルがアップロードされる前にアップロード操作をキャンセルすると、[!DNL Assets] が現在のファイルのアップロードを停止し、コンテンツを更新します。ただし、既にアップロードされているファイルは削除されません。
+
 1. [!DNL Assets] のアップロード進行状況ダイアログには、アップロードが成功したファイルと失敗したファイルの数が表示されます。
 
-さらに、Assets ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
+   さらに、Assets ユーザーインターフェイスには、アップロードした最新のアセットまたは最初に作成したフォルダーが表示されます。
 
 >[!NOTE]
 >
->ネストされたフォルダー階層を AEM にアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
+>To upload nested folder hierarchies, see [bulk upload assets](#bulk-upload).
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
