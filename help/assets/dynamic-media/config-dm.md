@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: ab9255dd28f1c20f1085810e63f0b56e30fa8c5a
+source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
 workflow-type: tm+mt
-source-wordcount: '5122'
-ht-degree: 97%
+source-wordcount: '5599'
+ht-degree: 80%
 
 ---
 
@@ -46,52 +46,43 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Dynamic Media Cloud Service の設定 {#configuring-dynamic-media-cloud-services}
+## Cloud Servicesでの新しいダイナミックメディア設定の作成 {#configuring-dynamic-media-cloud-services}
 
-**Dynamic Media Cloud Service を設定する前**：Dynamic Media の資格情報を含んだプロビジョニング電子メールを受信したら、Dynamic Media Classic に[ログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)して、パスワードを変更する必要があります。プロビジョニング電子メールで提供されたパスワードは、システムが生成したもので、一時的なパスワードです。Dynamic Media Cloud Service が正しい資格情報で設定されるように、パスワードを更新することが重要です。
-
-Dynamic Media Cloud Services を設定するには：
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
-1. コンソールの左側の「**[!UICONTROL ツール]**」見出しの下で、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;をタップします。
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Dynamic Media 設定ブラウザーページの左側のパネルで、「**[!UICONTROL グローバル]**」をタップし（「**[!UICONTROL グローバル]**」の左側にあるフォルダーアイコンをタップまたは選択しないでください）、次に、「**[!UICONTROL 作成]**」をタップします。
-1. Dynamic Media 設定を作成ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。これらは、プロビジョニング電子メールでアドビから提供されます。この電子メールを受信していない場合は、サポートにお問い合わせください。
+1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. これらは、プロビジョニング電子メールでアドビから提供されます。この電子メールを受信していない場合は、サポートにお問い合わせください。
 1. 「**[!UICONTROL Dynamic Media に接続]**」をクリックします。
+1. パスワードの **[!UICONTROL 変更ダイアログボックスの「]** 新しいパスワード **** 」フィールドに、8 ～ 25文字の新しいパスワードを入力します。 パスワードには、次のうち少なくとも1つを含める必要があります。
 
-   >[!NOTE]
-   >
-   >Dynamic Media の資格情報を含むプロビジョニング電子メールを受信したら、Dynamic Media Classic に[ログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)して、パスワードを変更してください。プロビジョニング電子メールで提供されたパスワードは、システムが生成したもので、一時的なパスワードです。Dynamic Media Cloud Service が正しい資格情報で設定されるように、パスワードを更新することが重要です。
+   * 大文字
+   * 小文字
+   * 数値
+   * 特殊文字： `# $ & . - _ : { }`
+
+   「 **[!UICONTROL 現在のパスワード]** 」フィールドは意図的に事前入力され、操作から非表示になっています。
+
+   必要に応じて、パスワードの目のアイコンをタップしてパスワードを表示し、入力または再入力したパスワードのスペルを確認できます。 アイコンをもう一度タップすると、パスワードが非表示になります。
+
+1. 「 **[!UICONTROL パスワードの繰り返し]** 」フィールドに新しいパスワードを再入力し、「 **[!UICONTROL 完了」をタップします。]**
+
+   新しいパスワードは、ダイナミックメディア設定 **[!UICONTROL を作成]** ページの右上隅にある「保存 **** 」をタップしたときに保存されます。
+
+   パスワードの **[!UICONTROL 変更]** ダイアログボックスで「キャンセル **[!UICONTROL 」をタップした場合も、「保存]****** 」をタップして新しく作成したダイナミックメディア設定を保存する際に、新しいパスワードを入力する必要があります。
+
+   パスワードからダイナミックメディアへの [変更も参照してください](#change-dm-password)。
 
 1. 接続に成功したら、次のように設定できます。
 
-* **[!UICONTROL 会社]** - Dynamic Media アカウントの名前です。異なるサブブランドや事業部、または異なるステージング／実稼動環境のために、複数の Dynamic Media アカウントを持っていることがあります。
-
-* **[!UICONTROL 会社のルートフォルダーのパス]**
-
-* **[!UICONTROL アセットの公開]** - 次の 3 つのオプションから選択できます。
-
-* **[!UICONTROL 即時公開]**&#x200B;とは、アセットがアップロードされると、システムがアセットを取り込み、URL／埋め込みをすぐに提供することを意味します。アセットを公開するためにユーザーが操作する必要はありません。
-
-* **[!UICONTROL アクティベーション時]**&#x200B;とは、URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があることを意味します。
-
-* **[!UICONTROL 一部のみの公開]**&#x200B;とは、アセットがセキュリティで保護されたプレビューのためにのみ自動公開され、DMS7 に公開せずに明示的に AEM に公開して、パブリックドメインでの配信を可能にすることを意味します。今後、アドビは、相互に排他的なアセットを AEM に公開し、Dynamic Media に公開するこのオプションを拡張します。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。
-
-* **[!UICONTROL プレビューサーバーを保護]** - セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、この設定を指定されたとおりにしておくことをお勧めします。
-
-* **[!UICONTROL すべてのコンテンツを同期]** - デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。
-
-* **[!UICONTROL Dynamic Media 同期モード]**
-
-* **[!UICONTROL デフォルトで有効]** - フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.-->
-
-* **[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。
-選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーのプロパティページを開きます。「**[!UICONTROL 詳細]**」タブをタップし、「**[!UICONTROL Dynamic Media 同期モード]**」ドロップダウンリストの次の 3 つのオプションから選択して、「**[!UICONTROL 保存]**」をタップします。
-
-* **[!UICONTROL 継承]** — フォルダーに明示的な同期値はありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された詳細なステータスは、ツールチップの要領で表示されます。
-
-* **[!UICONTROL サブフォルダーを有効にする]** - このサブツリー内のすべての項目を、Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。
-
-* **[!UICONTROL サブフォルダーに対して無効]** - このサブツリー内のすべての項目を、Dynamic Media との同期から除外します。
+   | プロパティ | 説明 |
+   |---|---|
+   | 会社 | ダイナミックメディアアカウントの名前。 異なるサブブランドや事業部、または異なるステージング／実稼動環境のために、複数の Dynamic Media アカウントを持っていることがあります。 |
+   | 会社のルートフォルダーのパス | 会社のルートフォルダーパス。 |
+   | アセットの公開 | 次の3つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**:アセットがアップロードされると、アセットが取り込まれ、URL/埋め込みが即座に提供されます。 アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**:URL/埋め込みリンクを指定する前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 一部のみの発行&#x200B;]**:アセットは、セキュリティで保護されたプレビューのためにのみ自動公開され、パブリックドメインでの配信のためにDMS7に公開することなく、AEMに明示的に公開できます。 今後、アドビは、相互に排他的なアセットを AEM に公開し、Dynamic Media に公開するこのオプションを拡張します。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。 |
+   | プレビューサーバーを保護 | セキュリティで保護されたレンディションプレビューサーバへのURLパスを指定できます。 つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、この設定を指定されたとおりにしておくことをお勧めします。 |
+   | すべてのコンテンツを同期 | デフォルトで選択されています。 Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL Enable by default ]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**:ダイナミックメディアと同期するために選択したフォルダーを明示的にマークするまで、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをダイナミックメディアと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。 「 **[!UICONTROL 詳細]** 」タブの「 **[!UICONTROL ダイナミックメディア同期モード]** 」ドロップダウンリストで、次の3つのオプションから選択します。 When you are done, tap **[!UICONTROL Save]**. *注意：これら3つのオプションは、「すべてのコンテンツを&#x200B;**同期**」を選択した場合は使用できません。* ダイナミックメディアのフォルダーレベルでの一部のみの発行の [操作も参照してください。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された詳細なステータスは、ツールチップの要領で表示されます。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:ダイナミックメディアと同期するために、このサブツリーの内容をすべて含めます。 フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダに対して無効&#x200B;]**:このサブツリー内のすべてをダイナミックメディアとの同期から除外します。 |
 
    >[!NOTE]
    >
@@ -100,10 +91,19 @@ Dynamic Media Cloud Services を設定するには：
    >
    >アセットがアクティベートされるとすぐに、すべての更新が S7 配信にライブ公開されます。
 
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 「**[!UICONTROL 保存]**」をタップします。
-1. Dynamic Media コンテンツを公開する前に安全にプレビューするには、AEM オーサーインスタンスを「許可リストに登録」して、Dynamic Media に接続する必要があります。
+1. 「**[!UICONTROL 保存]**」をタップします。新しいダイナミックメディアのパスワードと設定が保存されます。 代わりに **[!UICONTROL 「キャンセル」をタップした場合]** 、パスワードは更新されません。
+1. ダイナミックメディア **[!UICONTROL を設定]** ダイアログボックスで、「 **[!UICONTROL OK]** 」をタップして設定を開始します。
+
+   >[!IMPORTANT]
+   >
+   >新しいダイナミックメディア設定がセットアップを終了すると、AEMインボックス内にステータス通知が届きます。
+   >
+   >このインボックス通知は、設定が成功したか、失敗したかを通知します。
+   > 詳しくは、「新しいダイナミックメディア設定と受信トレイの [トラブルシューティング](#troubleshoot-dm-config)[](/help/sites-cloud/authoring/getting-started/inbox.md) 」を参照してください。
+
+1. ダイナミックメディアコンテンツを公開する前に、安全にプレビューするには、AEMオーサーインスタンスを「許可リスト」してダイナミックメディアに接続する必要があります。 この設定を行うには、次の手順を実行します。
 
    * Dynamic Media Classic アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
    * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
@@ -116,6 +116,58 @@ Dynamic Media Cloud Services を設定するには：
 これで基本設定は完了です。Dynamic Media を使用する準備が整いました。
 
 設定をさらにカスタマイズする場合は、[Dynamic Media での詳細設定](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)で示す任意のタスクをオプションで実行できます。
+
+### 新しいダイナミックメディア設定のトラブルシューティング {#troubleshoot-dm-config}
+
+新しいダイナミックメディア設定がセットアップを完了すると、AEMインボックス内にステータス通知が届きます。 この通知は、次のインボックスの各画像に示すように、設定が成功したかどうかを通知します。
+
+![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+
+![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+
+「受信トレイ [」も参照してください](/help/sites-cloud/authoring/getting-started/inbox.md)。
+
+**新しいダイナミックメディア設定のトラブルシューティングを行うには**
+
+1. AEMページの右上隅近くにあるベルのアイコンをタップし、「すべて **[!UICONTROL 表示]**」をタップします。
+1. インボックスページで成功通知をタップし、設定のステータスとログの概要を読み取ります。
+
+   設定に失敗した場合は、次のスクリーンショットのような失敗通知をタップします。
+
+   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+
+1. 「 **[!UICONTROL DMSETUP]** 」ページで、障害を説明する設定の詳細を確認します。 特に、エラーメッセージやエラーコードは控えておいてください。 この情報については、Adobeケアにお問い合わせください。
+
+   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+
+### パスワードをダイナミックメディアに変更する {#change-dm-password}
+
+ダイナミックメディアでのパスワードの有効期限は、現在のシステムの日付から100年に設定されています。
+
+パスワードには、次のうち少なくとも1つを含める必要があります。
+
+* 大文字
+* 小文字
+* 数値
+* 特殊文字： `# $ & . - _ : { }`
+
+必要に応じて、パスワードの目のアイコンをタップしてパスワードを表示し、入力または再入力したパスワードのスペルを確認できます。 アイコンをもう一度タップすると、パスワードが非表示になります。
+
+変更したパスワードは、ダイナミックメディア設定 **[!UICONTROL ページの右上隅にある「]** 保存 **** 」をタップしたときに保存されます。
+
+1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
+1. On the left side of the console, tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Edit.]**
+1. ダイナミックメディア設定 **[!UICONTROL を編集ページの「]** パスワード **[!UICONTROL 」フィールドのすぐ下で、「パスワードの]** 変更 **[!UICONTROL 」をタップします。]**
+1. パスワードの **[!UICONTROL 変更]** ダイアログボックスで、次の操作を行います。
+
+   * 「 **[!UICONTROL 新しいパスワード]** 」フィールドに、新しいパスワードを入力します。
+
+      「 **[!UICONTROL 現在のパスワード]** 」フィールドは意図的に事前入力され、操作から非表示になっています。
+
+   * 「 **[!UICONTROL パスワードの繰り返し]** 」フィールドに新しいパスワードを再入力し、「 **[!UICONTROL 完了」をタップします。]**
+
+1. ダイナミックメディア設定を **[!UICONTROL 編集]** ページの右上隅にある「 **[!UICONTROL 保存]**」をタップし、「 **[!UICONTROL OK」をタップします。]**
 
 ## （オプション）Dynamic Media での詳細設定{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -171,14 +223,14 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 1. プロビジョニング中に提供された資格情報を使用して、[Dynamic Media Classic にログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)します。**[!UICONTROL 設定／アプリケーション設定]**&#x200B;に移動します。
 1. 「**[!UICONTROL 公開設定]**」領域を展開して、「**[!UICONTROL Image Server]**」を選択します。パブリッシュインスタンスのデフォルトを設定する際に、「**[!UICONTROL 公開コンテキスト]**」を「**[!UICONTROL 画像サービング]**」に設定します。
-1. 例えば「**[!UICONTROL カラーマネジメント属性]**」領域のプロパティなど、変更が必要なプロパティにスクロールします。
+1. 例えば「**[!UICONTROL カラーマネジメント属性]**」領域のプロパティなど、変更が必要なプロパティにスクロールします。次のカラー補正プロパティを設定できます。
 
-   次のカラー補正プロパティを設定できます。
-
-   **[!UICONTROL CMYK のデフォルトカラースペース]** - デフォルトの CMYK カラープロファイルの名前。
-   **[!UICONTROL グレースケールのデフォルトカラースペース]** - デフォルトのグレーカラープロファイルの名前.
-   **[!UICONTROL RGB のデフォルトカラースペース]** - デフォルトの RGB カラープロファイルの名前.
-   **[!UICONTROL カラー変換レンダリングの方法]** - レンダリング方法を指定します。指定できる値は、**[!UICONTROL 知覚的]**、**[!UICONTROL 相対的な色域を維持]**、**[!UICONTROL 彩度]**、**[!UICONTROL 絶対的な色域を維持です。]** Adobeでは、 **[!UICONTROL 相対パスをデフォルトとして推奨します]** 。
+   | プロパティ | 説明 |
+   |---|---|
+   | CMYK初期設定のカラースペース | 初期設定のCMYKカラープロファイルの名前。 |
+   | グレースケールのデフォルトカラースペース | デフォルトのグレーカラープロファイルの名前。 |
+   | RGB初期設定カラースペース | 初期設定のRGBカラープロファイルの名前。 |
+   | カラー変換レンダリングインテント | レンダリングインテントを指定します。 指定できる値は、**[!UICONTROL 知覚的]**、**[!UICONTROL 相対的な色域を維持]**、**[!UICONTROL 彩度]**、**[!UICONTROL 絶対的な色域を維持です。]** Adobeでは、 **[!UICONTROL 相対パスをデフォルトとして推奨します]** 。 |
 
 1. 「**[!UICONTROL 保存]**」をタップします。
 
@@ -464,7 +516,7 @@ PDF ファイル、Postscript ファイル、PSD ファイルには、以下の�
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-これらのパラメーターのいずれかを更新するには、[MIME タイプベースの Assets／Dynamic Media Classic アップロードジョブパラメーターサポートの有効化](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)の手順に従います。
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### Granite の一時的なワークフローキューの更新 {#updating-the-granite-transient-workflow-queue}
 
