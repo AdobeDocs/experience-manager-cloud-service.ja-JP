@@ -2,9 +2,9 @@
 title: ContextHub の設定
 description: Context Hub の設定方法について説明します。
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1683'
 ht-degree: 68%
 
 ---
@@ -72,7 +72,6 @@ UI モジュールのプロパティには、モジュール固有のプロパ�
 | [contexthub.base](sample-modules.md#contexthub-base-ui-module-type) | 汎用UIモジュールタイプ | UIモジュールのプロパティで設定 |
 | [contexthub.browserinfo](sample-modules.md#contexthub-browserinfo-ui-module-type) | ブラウザーに関する情報を表示します | `surferinfo` |
 | [contexthub.datetime](sample-modules.md#contexthub-datetime-ui-module-type) | 日付と時刻の情報を表示します | `datetime` |
-| [contexthub.device](sample-modules.md#contexthub-device-ui-module-type) | クライアントデバイスの表示 | `emulators` |
 | [contexthub.location](sample-modules.md#contexthub-location-ui-module-type) | クライアントの緯度と経度、およびマップ上の位置が表示されます。位置は変更できます。 | `geolocation` |
 | [contexthub.screen-orientation](sample-modules.md#contexthub-screen-orientation-ui-module-type) | デバイスの画面の向き（横置きまたは縦置き）を表示します。 | `emulators` |
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | ページタグに関する統計を表示します。 | `tagcloud` |
@@ -112,14 +111,10 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 | ストアの種類 | 説明 |
 |---|---|
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 解決済みおよび未解決の ContextHub セグメントを格納します。ContextHub SegmentManagerからセグメントを自動的に取得します |
-| [aem.resolvedsegments](sample-stores.md#aem-resolvedsegments-sample-store-candidate) | 現在までに解決済みのセグメントを格納します。ContextHub SegmentManagerサービスをリッスンしてストアを自動的に更新します |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | ブラウザーの場所の緯度と経度を格納します。 |
-| [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) | ブラウザーの場所の現在の日付、時刻、季節が格納されます |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 多数のデバイスのプロパティと機能を定義し、現在のクライアントデバイスを検出します |
-| [contexthub.generic-jsonp](sample-stores.md#contexthub-generic-jsonp-sample-store-candidate) | JSONPサービスからデータを取得し、保存します |
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 現在のユーザーのプロファイルデータを格納します |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | デバイス情報、ブラウザーの種類、ウィンドウの向きなど、クライアントに関する情報を格納します |
-| [contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) | ページタグとタグ数を格納します。 |
 
 1. Experience Manager レールで、ツール／サイト／ContextHub をクリックまたはタップします。
 1. デフォルトの設定コンテナをクリックまたはタップします。
@@ -144,7 +139,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 
 A contexthub.generic-jsonp store is configured so that it stores data for the service call `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. サービスが UI モジュールに表示される次のデータを返します。
 
-```xml
+```javascript
 {
    "md5": "919a56ab62b6d5e1219fe1d95248a2c5",
    "original": "\"text to md5\""
@@ -165,7 +160,7 @@ jsontest.com サイトの MD5 サービスからのデータを保存するに�
 * **有効：** 選択
 * **詳細設定 (JSON):**
 
-   ```xml
+   ```javascript
    {
     "service": {
     "jsonp": false,
@@ -193,7 +188,7 @@ Use the procedure in [Adding a UI Module](#adding-a-ui-module) to add the UI mod
 * **モジュールタイプ：** contexthub.base
 * **詳細設定 (JSON):**
 
-   ```xml
+   ```javascript
    {
     "icon": "coral-Icon--data",
     "title": "MD5 Conversion",
@@ -222,6 +217,15 @@ Use CRXDE Lite to set the property `debug` to **true** under:
 
 * `/conf/global/settings/cloudsettings` または
 * `/conf/<site>/settings/cloudsettings`
+
+### ContextHub のデバッグメッセージのログ {#logging-debug-messages-for-contexthub}
+
+Configure the Adobe Granite ContextHub OSGi service (PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`) to log detailed Debug messages that are useful when developing.
+
+To configure the service you can either use the [Web Console](/help/implementing/deploying/configuring-osgi.md) or use a JCR node in the repository:
+
+* Web コンソール：デバッグメッセージをログに記録するには、Debug プロパティを選択します。
+* JCR node: To log Debug messages, set the boolean `com.adobe.granite.contexthub.debug` property to `true`.
 
 ### サイレントモード {#silent-mode}
 
