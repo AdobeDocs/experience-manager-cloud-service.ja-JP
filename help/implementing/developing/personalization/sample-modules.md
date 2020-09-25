@@ -2,9 +2,9 @@
 title: ContextHub UI モジュールタイプのサンプル
 description: ContextHub には、ソリューションで利用できる UI モジュールのサンプルが用意されています
 translation-type: tm+mt
-source-git-commit: 2a589ff554a5cced3d7ad45d981697debb73992f
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1126'
 ht-degree: 66%
 
 ---
@@ -95,7 +95,7 @@ contexthub.browserinfo UI モジュールのインスタンスには、詳細設
 
 ## contexthub.datetime UI モジュールタイプ {#contexthub-datetime-ui-module-type}
 
-The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the [contexthub.datetime](sample-stores.md#contexthub-datetime-sample-store-candidate) store candidate.
+The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the `contexthub.datetime` store candidate.
 
 ![contexthub.datetimeモジュール](assets/datetime-module.png)
 
@@ -187,7 +187,7 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## contexthub.tagcloud UI モジュールタイプ {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. この UI モジュールは、ツールバーに多数のタグを表示します。ポップアップには、タグクラウドと新しいタグを追加するためのテキストボックスが表示されます。この UI モジュールは、[contexthub.tagcloud](sample-stores.md#contexthub-tagcloud-sample-data-store) ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
+The `contexthub.tagcloud` UI module displays information about tags. この UI モジュールは、ツールバーに多数のタグを表示します。ポップアップには、タグクラウドと新しいタグを追加するためのテキストボックスが表示されます。この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
 
 ![contexthub.tagcloudモジュール](assets/tagcloud-module.png)
 
