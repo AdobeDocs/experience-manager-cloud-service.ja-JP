@@ -2,9 +2,9 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用されるページを作成するときに使用します。
 translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3221'
 ht-degree: 55%
 
 ---
@@ -292,7 +292,7 @@ This default `template-authors` group only covers the project setups, where all 
 
    * ページコンポーネントのリソースタイプ。
    * ルートノードのポリシー。テンプレートエディターで許可されるコンポーネントを定義します。
-   * そのテンプレートタイプで、モバイルエミュレーターのレスポンシブグリッドと設定のブレークポイントを定義することをお勧めします。This is optional, because the configuration could also be defined on the individual template (see the section [Template Type and Mobile Device Groups](#p-template-type-and-mobile-device-groups-br-p)).
+   * そのテンプレートタイプで、モバイルエミュレーターのレスポンシブグリッドと設定のブレークポイントを定義することをお勧めします。
 
 * AEM には、既製のテンプレートタイプがいくつか用意されています（HTML5 ページ、アダプティブフォームページなど）。
 
@@ -476,7 +476,7 @@ Definitions for editable templates are stored [user-defined folders](#template-f
 
    テンプレートは、次のどちらかの方法で有効化してからでなければ使用できません。
 
-   * **テンプレート**&#x200B;コンソールから[テンプレートを有効化](/help/sites-cloud/authoring/features/templates.md#enablingatemplateauthor)する。
+   * **テンプレート**&#x200B;コンソールから[テンプレートを有効化](/help/sites-cloud/authoring/features/templates.md)する。
 
    * Setting the status property on the `jcr:content` node.
 
