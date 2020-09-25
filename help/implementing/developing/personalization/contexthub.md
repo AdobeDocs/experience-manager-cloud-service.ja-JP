@@ -2,7 +2,7 @@
 title: ContextHub
 description: ContextHubは、コンテキストデータの保存、操作、表示のためのフレームワークです
 translation-type: tm+mt
-source-git-commit: 75d6b51c0148a21ca401d98a5eaf644fc6b0e8cc
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 57%
@@ -43,8 +43,8 @@ ContextHub ストアは、コンテキストデータをクライアント上に
 * ContextHub には、いくつかの[ストアタイプのサンプル](sample-stores.md)が用意されています。
 * AEM コンソールを使用して[ストアを作成](configuring-contexthub.md#creating-a-contexthub-store)します。
 * Developers can [create custom store types](extending-contexthub.md#creating-custom-store-candidates).
-* 開発者は、JavaScript を使用して[ストアデータにアクセス](configuring-contexthub.md#interacting-with-contexthub-stores)できます。
+* 開発者は、JavaScript を使用して[ストアデータにアクセス](adding-contexthub.md#interacting-with-contexthub-stores)できます。
 
 ## セグメント化 {#segmentation}
 
-ContextHub には、セグメントの管理や、現在のコンテキストで解決されるセグメントの判断をするセグメント化エンジンが含まれています。いくつかのセグメントが定義されています。JavaScript API を使用して、[解決されたセグメントを判断](configuring-contexthub.md#determining-resolved-contexthub-segments)できます。
+ContextHub には、セグメントの管理や、現在のコンテキストで解決されるセグメントの判断をするセグメント化エンジンが含まれています。いくつかのセグメントが定義されています。JavaScript API を使用して、[解決されたセグメントを判断](adding-contexthub.md#determining-resolved-contexthub-segments)できます。
