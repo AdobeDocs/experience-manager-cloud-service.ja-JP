@@ -2,7 +2,7 @@
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります
 translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 73%
@@ -12,7 +12,7 @@ ht-degree: 73%
 
 # ContextHub JavaScript API リファレンス {#contexthub-javascript-api-reference}
 
-[ContextHub コンポーネントをページに追加](configuring-contexthub.md#adding-contexthub-to-a-page-component)すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
+[ContextHub コンポーネントをページに追加](adding-contexthub.md)すると、ContextHub JavaScript API がスクリプトで使用できるようになります。
 
 ## ContextHub 定数 {#contexthub-constants}
 
@@ -20,7 +20,7 @@ ContextHub JavaScript API によって定義される定数値です。
 
 ### イベント定数 {#event-constants}
 
-ContextHub ストアに対して発生する名前付きイベントを次の表に示します。[ContextHub.Utils.Eventing](contexthub-api.md#contexthub-utils-eventing) も参照してください。
+ContextHub ストアに対して発生する名前付きイベントを次の表に示します。[ContextHub.Utils.Eventing](#contexthub-utils-eventing) も参照してください。
 
 | 定数 | 説明 | 値 |
 |---|---|---|
@@ -482,7 +482,7 @@ initializes the `ContextHub.Store.JSONPStore` object.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-`ContextHub.Store.PersistedJSONPStore` は [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) を拡張したものなので、このクラスのすべての関数を継承しています。ただし、JSONP サービスから取得されるデータは、ContextHub の永続性に応じて保持されます(See [Persistence Modes:](configuring-contexthub.md#persistence-modes))
+`ContextHub.Store.PersistedJSONPStore` は [ContextHub.Store.JSONPStore](#contexthub-store-jsonpstore) を拡張したものなので、このクラスのすべての関数を継承しています。ただし、JSONP サービスから取得されるデータは、ContextHub の永続性に応じて保持されます(See [Persistence Modes:](adding-contexthub.md#persistence-modes))
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
