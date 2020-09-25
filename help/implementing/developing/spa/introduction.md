@@ -2,7 +2,7 @@
 title: SPAの概要とチュートリアル
 description: この記事では、SPAの概念を紹介し、基本的なSPAアプリケーションを使用したオーサリング方法を紹介し、基礎となるAEM SPAエディターとの関連を示します。
 translation-type: tm+mt
-source-git-commit: 78ce5113d97b0fa2e0172598d374c924f4306395
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 3%
@@ -151,7 +151,7 @@ SPAがエンドユーザーに対してどのように動作するかを体験�
 
 次の節「SPAアプリケーションの [読み込み](#loading-a-spa-application)」では、SPAの読み込みの仕組みと、コンテンツの同期および非同期的な読み込み方法を詳しく調べます。
 
-### SPAアプリケーションの読み込み {#loading-an-spa-application}
+### SPAアプリケーションの読み込み {#loading-a-spa-application}
 
 1. まだ読み込まれていない場合は、Web.Retailジャーナルアプリケーションを公開サーバーに読み込むか、ページエディターの **ページ表示****(Page Information** )メニューから「公開済み」オプションを使用します。
 
