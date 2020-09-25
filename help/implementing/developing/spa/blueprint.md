@@ -2,7 +2,7 @@
 title: SPA ブループリント
 description: このドキュメントでは、AEM内に編集可能なSPAコンポーネントを実装するためにSPAフレームワークが満たす必要がある、フレームワークに依存しない一般的な契約について説明します。
 translation-type: tm+mt
-source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '2058'
 ht-degree: 10%
@@ -164,7 +164,7 @@ SPAコンポーネントはレスポンシブグリッドなどのグラフィ�
 
 次に例を示します。
 
-```
+```html
 <div data-cq-data-path={"path/to/the/responsivegrid/*"} className="new section aem-Grid-newComponent"/>
 ```
 
@@ -183,7 +183,7 @@ SPAコンポーネントはレスポンシブグリッドなどのグラフィ�
 
 基になる [`Component Mapping`](#componentmapping)`MapTo` ライブラリとその関数は、カプセル化して拡張し、現在のコンポーネントクラスと共に提供される編集設定に対する相対的な機能を提供できます。
 
-```
+```javascript
 const EditConfig = {
 
     emptyLabel: 'My Component',
@@ -205,7 +205,7 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 
 上記の実装では、プロジェクトコンポーネントは、 [コンポーネントマッピング](#componentmapping) ストアに実際に登録される前に、空白機能で拡張されます。 これは、ライブラリをカプセル化して拡張し、設定オブジェクトのサポートを導入するこ [`ComponentMapping`](#componentmapping) とで行い `EditConfig` ます。
 
-```
+```javascript
 /**
  * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
  *
@@ -245,9 +245,9 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 * The responsive grid element carries class names prefixed with `aem-Grid--`
 * The responsive column element carries class names prefixed with `aem-GridColumn--`
 * 親グリッドの列でもあるレスポンシブグリッドは、前の2つのプレフィックスが同じ要素に表示されないなど、ラップされます
-* Elements corresponding to editable resources carry a `data-cq-data-path` property. このドキュメントの「ページエディタ [との契約](#contract-wtih-the-page-editor) 」の節を参照してください。
+* Elements corresponding to editable resources carry a `data-cq-data-path` property. このドキュメントの「ページエディタ [との契約](#contract-with-the-page-editor) 」の節を参照してください。
 
-```
+```javascript
 <div data-cq-data-path="/content/page">
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
         <div class="aem-container aem-GridColumn aem-GridColumn--default--12" data-cq-data-path="/content/page/jcr:content/root/responsivegrid">
