@@ -2,9 +2,9 @@
 title: SPAとサーバー側のレンダリング
 description: SPAでサーバー側レンダリング(SSR)を使用すると、ページの初期読み込みを高速化し、クライアントにさらにレンダリングを渡すことができます。
 translation-type: tm+mt
-source-git-commit: c2c338061d72ae6c5054d18308a2ea1038eaea39
+source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Adobe I/O Runtimeについて詳しくは、
 >
 >Adobeでは、AEM環境（作成者、発行、ステージなど）ごとに個別のAdobe I/O Runtimeインスタンスを作成することをお勧めします。
 
-## リモートレンダラーの設定 {#remote-renderer-configuration}
+## リモートレンダラーの設定 {#remote-content-renderer-configuration}
 
 AEMは、リモートレンダリングされたコンテンツをどこで取得できるかを知っている必要があります。 SSRにどのモデル [を実装するかに関係なく](#adobe-i-o-runtime) 、AEMにこのリモートレンダリングサービスへのアクセス方法を指定する必要があります。
 
@@ -67,8 +67,6 @@ AEMは、リモートレンダリングされたコンテンツをどこで取�
 >[!NOTE]
 >
 >AEM駆動の通信フロー [、](#aem-driven-communication-flow) Adobe I/O Runtime駆動のフローのどちらを実装するかに関係なく、リモートコンテンツレンダラー設定を定義する必要があり [](#adobe-i-o-runtime-driven-communication-flow) ます。
->
->また、カスタムNode.jsサーバーを [使用する場合は、この設定も定義する必要があります。](#using-node-js)
 
 >[!NOTE]
 >
@@ -76,7 +74,7 @@ AEMは、リモートレンダリングされたコンテンツをどこで取�
 
 ## AEM主導の通信フロー {#aem-driven-communication-flow}
 
-SSRを使用する場合、AEMのSPAの [コンポーネントインタラクションワークフロー](introduction.md#workflow) には、アプリの初期コンテンツがAdobe I/O Runtimeで生成される段階が含まれます。
+SSRを使用する場合、AEMのSPAの [コンポーネントインタラクションワークフロー](introduction.md#interaction-with-the-spa-editor) には、アプリの初期コンテンツがAdobe I/O Runtimeで生成される段階が含まれます。
 
 1. ブラウザはAEMからSSRコンテンツを要求します。
 1. AEMは、モデルをAdobe I/O Runtimeに投稿します。
@@ -164,7 +162,7 @@ AEMでSSRをのSPAと共に使用するために必要な [リモートコンテ
 
 カスタム要求ハンドラーを追加するには、インター `RemoteContentRendererRequestHandler` フェイスを実装します。 コンポーネントのプロパティは、100より大きい整数（ランク）に設定して `Constants.SERVICE_RANKING` く `DefaultRemoteContentRendererRequestHandlerImpl`ださい。
 
-```
+```javascript
 @Component(immediate = true,
         service = RemoteContentRendererRequestHandler.class,
         property={
@@ -188,7 +186,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 通常、ページコンポーネントのHTLテンプレートは、この機能のメイン受信者です。
 
-```
+```html
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
 ```
 
