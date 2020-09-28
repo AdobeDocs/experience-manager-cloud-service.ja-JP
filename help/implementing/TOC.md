@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: Implementing Guide
 user-guide-description: Learn how to customize your Experience Manager as a Cloud Service deployment, including development and deployment topics.
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: fa7d271a047277afe0a4bad709d1223224c92fb8
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '398'
 ht-degree: 78%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 78%
    + [アクセシブルなサイトの作成に向けた RTE の設定 ](/help/implementing/developing/extending/rte-accessible-content.md)
 + AEM as a Cloud Service へのデプロイ {#deploying}
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
+   + [AEMバージョンの更新](deploying/aem-version-updates.md)
    + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
 + オーサー層 {#author-tier}
    + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
