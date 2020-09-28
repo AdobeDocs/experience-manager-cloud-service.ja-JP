@@ -1,11 +1,11 @@
 ---
-title: アセット処理のためのアセットマイクロサービスの設定と使用.
+title: Asset Microservicesの設定と使用
 description: クラウドネイティブのアセットマイクロサービスを設定し、使用して、アセットをスケールで処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee3dfaee39f05dbcc37ae77789431af115b1c115
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2527'
 ht-degree: 45%
 
 ---
