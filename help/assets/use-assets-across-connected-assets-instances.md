@@ -1,11 +1,11 @@
 ---
-title: Connected Assets を使用して、 [!DNL Adobe Experience Manager Sites]  オーサリングワークフローで DAM アセットを共有する
+title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの共有
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
-translation-type: ht
-source-git-commit: 97830590ba66e90c324770fa57b3ff11a760677f
-workflow-type: ht
-source-wordcount: '2082'
+translation-type: tm+mt
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+workflow-type: tm+mt
+source-wordcount: '2080'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ ht-degree: 100%
 
    |  | [!DNL Sites] as a Cloud Service | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a Cloud Service ** | サポート対象 | サポート対象 | サポート対象 |
+   | **[!DNL Experience Manager Assets]as a Cloud Service** | サポート対象 | サポート対象 | サポート対象 |
    | AMS 上の **[!DNL Experience Manager]6.5[!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise ** | サポートなし | サポートなし | サポートなし |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise** | サポートなし | サポートなし | サポートなし |
 
 ### サポートされているファイル形式 {#mimetypes}
 
@@ -112,7 +112,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
    1. フィールド「**[!UICONTROL 許可されたオリジン]**」にローカル [!DNL Sites] の URL、つまり `https://[local_sites]:[port]` を入力します。設定を保存します。
 
-## リモートアセットの使用{#use-remote-assets}
+## リモートアセットの使用 {#use-remote-assets}
 
 Web サイト作成者は、コンテンツファインダーを使用して DAM デプロイメントに接続します。Web サイト作成者は、コンポーネント内のリモートアセットを参照、検索、ドラッグできます。リモート DAM への認証をおこなえるよう、管理者から提供された DAM ユーザーの資格情報を手元に用意してください。
 
