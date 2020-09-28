@@ -1,12 +1,12 @@
 ---
-title: アセット内ファイルのチェックイン、チェックアウト
+title: Check In and Check Out files in [!DNL Assets]
 description: 編集のためにアセットをチェックアウトし、変更が完了した後にアセットをチェックインする方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 100%
+source-wordcount: '406'
+ht-degree: 98%
 
 ---
 
