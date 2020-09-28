@@ -1,12 +1,12 @@
 ---
-title: AEM でのデジタルアセットと画像の検索
+title: デジタルアセットの検索
 description: AEM のフィルターパネルを使用した必要なアセットの検索方法と検索で表示されたアセットの使用方法を説明します。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7673ff492caac0b06e568ffecb43da2f5c6becbc
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4521'
 ht-degree: 98%
 
 ---
