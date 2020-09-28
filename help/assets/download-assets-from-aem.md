@@ -1,12 +1,12 @@
 ---
-title: Download assets from [!DNL Adobe Experience Manager Assets].
+title: アセットをダウンロード
 description: 「アセットをダウンロード」 [!DNL Adobe Experience Manager Assets] フロームを使用して、ダウンロード機能を有効または無効にします。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c4a642541a3c8f69c0efff0dbbe036374a1d6f6b
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 68%
+source-wordcount: '893'
+ht-degree: 69%
 
 ---
 
