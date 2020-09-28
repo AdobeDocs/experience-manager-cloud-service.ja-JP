@@ -2,10 +2,10 @@
 title: Cloud ServiceとしてのAdobe Experience Manager
 description: '違いと新機能 —Cloud ServiceとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 338f4b8d291bd0dca1c2f0de7bd6f721156d8df9
+source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 15%
+source-wordcount: '1899'
+ht-degree: 11%
 
 ---
 
@@ -69,15 +69,12 @@ AEM as a Cloud Service には次の機能が追加されました。
 ## アップデート {#upgrades}
 
 >[!NOTE]
->
->詳しくは、「 [導入のデプロイ」を参照してください](/help/implementing/deploying/overview.md)。
+>詳しくは、 [AEM Version Updatesを参照してください](/help/implementing/deploying/aem-version-updates.md)。
 
-AEMをCloud Serviceとして使用する場合、連続配信(CI/CD)を使用して、プロジェクトが確実に最新のAEMバージョンになるようになりました。 つまり、すべてのアップグレード操作が完全に自動化され、ユーザーに対するサービスの中断は不要です。
+AEMをCloud Serviceとして使用する場合、連続配信(CI/CD)を使用して、プロジェクトが確実に最新のAEMバージョンになるようになりました。
 
->[!NOTE]
->実稼働環境への更新に失敗した場合、Cloud Managerはステージ環境を自動的にロールバックします。 これは、更新が完了した後、ステージバージョンと実稼働環境の両方が同じAEMバージョンにあることを確認するために、自動的に行われます。
-
-AEMバージョンのアップデートには、次の2種類があります。
+これは、すべてのアップグレード操作が完全に自動化されているため、ユーザーに対するサービスの中断を必要としないことを意味します。
+Adobeは、サービスのすべての運用インスタンスをAEMコードベースの最新バージョンに更新する際に、事前に対処します。AEMバージョンのアップデートには、次の2種類があります。
 
 * **プッシュの更新**
 
@@ -93,19 +90,8 @@ AEMバージョンのアップデートには、次の2種類があります。
 
    * 予測可能な月次スケジュールでリリース。
 
-AEMのアップデートは、本番環境にあるシステムに対してサービスを停止させないよう、複数の手順を実行する、集中的で完全に自動化された製品検証パイプラインを経て行われます。 ヘルスチェックは、アプリケーションのヘルスを監視するために使用されます。AEMでのCloud Serviceの更新中にこれらのチェックが失敗した場合、リリースは続行されず、Adobeは、更新によってこの予期しない動作が発生した理由を調べます。
-
-[製品のアップグレードや、製品のアップグレードや顧客コードのプッシュが実稼動を中断するのを防ぐ製品テストや顧客機能テストも](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 、AEMバージョンのアップデート時に検証されます。
-
->[注意]
->カスタムコードがステージング環境にプッシュされた後で拒否された場合、次回の AEM アップデートでは、それらの変更は削除され、顧客が前回実稼動環境に正常にリリースしたコードの Git タグを反映するようになります。
-
-
-### 複合ノードストア {#composite-node-structure}
-
-ノードのクラスターであるオーサーの場合も含め、前述のように、ほとんどの場合、アップデートでダウンタイムは発生しません。
-
-Rolling updates are possible due to the *composite node store* feature in Oak. この機能を利用すると、AEM で複数のリポジトリを同時に参照できます。In a rolling deployment, the new Green AEM version contains its own `/libs`, that is, the TarMK based immutable repository), distinct from the older Blue AEM version, although both reference a shared DocumentMK based mutable repository that contains areas like `/content` , `/conf` , `/etc` and others. ブルーバージョンにもグリーンバージョンにも独自の `/libs` があるので、ローリングアップデート中はどちらもアクティブになり、ブルーバージョンが完全にグリーンバージョンに置き換わるまでトラフィックを処理することができます。
+>[!NOTE]
+>詳しくは、 [デプロイメントアーキテクチャを参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/architecture.html#deployment-architecture) 。
 
 ## Cloud Manager {#cloud-manager}
 
