@@ -1,9 +1,9 @@
 ---
-title: の [!DNL Adobe Stock] 管理セット [!DNL Adobe Experience Manager Assets]。
+title: の [!DNL Adobe Stock] 管理セット [!DNL Assets]。
 description: 内部から、検索、取得、ライセンス、 [!DNL Adobe Stock] 管理の各セットを検索します [!DNL Adobe Experience Manager]。 ライセンス済みのアセットを他のデジタルアセットと同様に使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 453a8459e042f57820c10fb90f30c2016aa0f5d0
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 24%
@@ -15,7 +15,7 @@ ht-degree: 24%
 
 Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager].
 
-[!DNL Adobe Stock] サービスは、あらゆるクリエイティブプロジェクトに使用できる、適切にキュレーションされ、著作権使用料が不要で質の高い何百万点もの写真、ベクター、イラスト、ビデオ、テンプレートおよび 3D アセットを提供します。[!DNL Experience Manager] で保存されたアセットは、インター [!DNL Adobe Stock] フェイス上ですばやく検索、プレビュー、ライセンス認証でき [!DNL Experience Manager][!DNL Experience Manager] ます。
+[!DNL Adobe Stock] サービスは、あらゆるクリエイティブプロジェクトに使用できる、適切にキュレーションされ、著作権使用料が不要で質の高い何百万点もの写真、ベクター、イラスト、ビデオ、テンプレートおよび 3D アセットを提供します。[!DNL Experience Manager] で保存されたアセットは、インター [!DNL Adobe Stock] フェイス上ですばやく検索、プレビューおよびライセンス認証でき [!DNL Experience Manager][!DNL Experience Manager] ます。
 
 ## 統合 [!DNL Experience Manager] および [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
