@@ -1,12 +1,12 @@
 ---
-title: アセットマイクロサービスでクラウド内のデジタルアセットを処理する方法について説明します。
+title: Asset Microservicesを使用したアセットの処理
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '838'
+ht-degree: 99%
 
 ---
 
