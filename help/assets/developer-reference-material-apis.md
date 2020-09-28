@@ -1,12 +1,12 @@
 ---
-title: Cloud Service [!DNL Adobe Experience Manager] 内のデジタルアセット管理に関する開発者向けリファレンス。
+title: 開発者向けリファレンス [!DNL Assets]
 description: '[!DNL Assets] APIと開発者向けリファレンスコンテンツを使用すると、バイナリファイル、メタデータ、レンディション、コメントなどのアセットを管理できます [!DNL Content Fragments]。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cfcb9fb85cffeabc5d5af94c30bd8ace8039ac83
+source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 46%
+source-wordcount: '1236'
+ht-degree: 47%
 
 ---
 
