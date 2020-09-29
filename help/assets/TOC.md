@@ -4,9 +4,9 @@ user-guide-title: Cloud Serviceガイドとしてのアセット
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 0f3f34d8871462bf94f596d04c04c99db6488fa5
+source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,6 @@ ht-degree: 90%
    + [メタデータの追加と編集](meta-edit.md)
    + [フォルダーのアセットとコレクションのレビュー](bulk-approval.md)
    + [アセットインサイトの使用と設定](assets-insights.md)
-   + [非同期ジョブ](asynchronous-jobs.md)
    + [メタデータプロファイル](metadata-profiles.md)
    + [メタデータスキーマ](metadata-schemas.md)
    + [ビデオアセットの管理](manage-video-assets.md)
