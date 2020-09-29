@@ -2,10 +2,10 @@
 title: AEMバージョンの更新
 description: 'AEMバージョンの更新 '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 35%
+source-wordcount: '395'
+ht-degree: 38%
 
 ---
 
@@ -21,15 +21,12 @@ AEMをCloud Serviceとして使用する場合、連続配信(CI/CD)を使用し
 
 AEMバージョンのアップデートには、次の2種類があります。
 
-* **プッシュの更新**
+* **AEMプッシュアップデート**
 
    * 毎日リリースできます。
    * ほとんどのメンテナンス作業で、最新のバグ修正やセキュリティ更新が含まれています。
 
-   定期的に変更が適用されるにつれ、影響は徐々に大きくなり、サービスへの影響が減少します。
-
->[!NOTE]
->AEMのプッシュアップデートの詳細については、 [Adobe Experience ManagerのCloud Service継続配信モデルとしてのホワイトペーパーを参照してください](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
+      定期的に変更が適用されるにつれ、影響は徐々に大きくなり、サービスへの影響が減少します。
 
 * **新機能の更新**
 
