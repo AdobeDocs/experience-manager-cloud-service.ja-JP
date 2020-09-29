@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 translation-type: tm+mt
-source-git-commit: ca37f00926fc110b865e6db2e61ff1198519010b
+source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
 workflow-type: tm+mt
-source-wordcount: '3202'
-ht-degree: 97%
+source-wordcount: '3210'
+ht-degree: 94%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 97%
 
 AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEM as a Cloud Service 環境にコードをデプロイするための唯一のメカニズムになりました。
 
-The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). 別の見方をすれば、カスタムコードリリースは実稼動環境にある AEM バージョンに照らしてテストする必要があります。カスタムコードがその AEM 上にデプロイされるからです。その後に発生するAEMバージョンの更新で、頻繁に自動的に適用されます。 これらは、既に導入されている顧客コードとの後方互換性を保つためのものです。
-
+The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). 別の方法で表示すると、カスタムコードリリースは実稼働環境にあるAEMバージョンに対してテストする必要があります。これは、カスタムコードリリースが最上位にデプロイされるからです。 その後に発生するAEMバージョンの更新で、頻繁に自動的に適用されます。 既に導入済みの顧客コードとの下位互換性を確保することを目的としています。
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
@@ -236,19 +235,19 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ## インデックス {#indexes}
 
-新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順がおこなわれてから、新しいバージョン（グリーンバージョン）でトラフィックを引き受けることができるようになります。Skyline でのインデックス管理について詳しくは、[こちら](/help/operations/indexing.md)を参照してください。Cloud Manager のビルドページで、インデックス作成ジョブのステータスを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
+新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順がおこなわれてから、新しいバージョン（グリーンバージョン）でトラフィックを引き受けることができるようになります。AEMでのCloud Serviceとしてのインデックス管理について詳しくは、 [この記事を参照してください](/help/operations/indexing.md)。 Cloud Manager のビルドページで、インデックス作成ジョブのステータスを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
 
 >[!NOTE]
 >
 >ローリングデプロイメントに必要な時間は、インデックスのサイズによって異なります。新しいインデックスが生成されるまで、グリーンバージョンではトラフィックを引き受けられないからです。
 
-現時点では、Skyline はインデックス管理ツール（ACS AEM Commons の Ensure Oak Index ツールなど）とは連携して動作しません。
+現時点では、Cloud ServiceとしてのAEMは、ACS Commons Ensure Oak Indexツールなどのインデックス管理ツールでは動作しません。
 
 ## レプリケーション {#replication}
 
 公開メカニズムは、[AEM レプリケーション Java API](https://helpx.adobe.com/jp/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html) と後方互換性があります。
 
-クラウド対応の AEM クイックスタートでレプリケーションを使用して開発およびテストをおこなうには、従来のレプリケーション機能をオーサー／パブリッシュ設定で使用する必要があります。クラウドで AEM オーサーの UI エントリポイントが削除された場合、ユーザーは `http://localhost:4502/etc/replication` にアクセスして設定をおこないます。
+クラウド対応のAEM quickstartを使用してレプリケーションを開発およびテストするには、従来のレプリケーション機能を作成者/発行の設定で使用する必要があります。 クラウドで AEM オーサーの UI エントリポイントが削除された場合、ユーザーは `http://localhost:4502/etc/replication` にアクセスして設定をおこないます。
 
 ## ローリングデプロイメントに対応する後方互換コード {#backwards-compatible-code-for-rolling-deployments}
 
