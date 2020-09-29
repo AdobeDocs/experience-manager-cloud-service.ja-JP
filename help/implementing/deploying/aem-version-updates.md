@@ -2,9 +2,9 @@
 title: AEMバージョンの更新
 description: 'AEMバージョンの更新 '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '394'
 ht-degree: 38%
 
 ---
@@ -36,7 +36,8 @@ AEMのアップデートは、本番環境にあるシステムに対してサ�
 
 [製品のアップグレードや、製品のアップグレードや顧客コードのプッシュが実稼動を中断するのを防ぐ製品テストや顧客機能テストも](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#functional-testing) 、AEMバージョンのアップデート時に検証されます。
 
->[注意]
+>[!NOTE]
+>
 >カスタムコードがステージング環境にプッシュされた後で拒否された場合、次回の AEM アップデートでは、それらの変更は削除され、顧客が前回実稼動環境に正常にリリースしたコードの Git タグを反映するようになります。
 
 ## 複合ノードストア {#composite-node-store}
