@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAdobe Experience Manager
 description: '違いと新機能 —Cloud ServiceとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 58f9023519a98ae28dc2b0986d6e25e8804e6e72
+source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1856'
 ht-degree: 11%
 
 ---
@@ -66,7 +66,7 @@ AEM as a Cloud Service には次の機能が追加されました。
 ![様々な使用パターンに応じた自動スケーリング](assets/introduction-04.png "様々な使用パターンに応じた自動スケーリング")
 
 
-## アップデート {#upgrades}
+## AEM のアップデート {#upgrades}
 
 >[!NOTE]
 >詳しくは、 [AEM Version Updatesを参照してください](/help/implementing/deploying/aem-version-updates.md)。
@@ -82,9 +82,6 @@ Adobeは、サービスのすべての運用インスタンスをAEMコードベ
    * ほとんどのメンテナンス作業で、最新のバグ修正やセキュリティ更新が含まれています。
 
       定期的に変更が適用されるにつれ、影響は徐々に大きくなり、サービスへの影響が減少します。
-
-      >[!NOTE]
-      >AEMのプッシュアップデートの詳細については、 [Adobe Experience ManagerのCloud Service継続配信モデルに関するホワイトペーパーを参照してください。](https://fieldreadiness-adobe.highspot.com/items/5ea322e1c714336c23b32599#2)
 
 * **新機能の更新**
 
