@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAdobe Experience Manager
 description: '違いと新機能 —Cloud ServiceとしてのAdobe Experience Manager(AEM)。 '
 translation-type: tm+mt
-source-git-commit: 4e164812cc489959f615dc683f07c362af1555a1
+source-git-commit: 98514867fba8c998cb653abea059e15a99cbd007
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1875'
 ht-degree: 11%
 
 ---
@@ -73,8 +73,12 @@ AEM as a Cloud Service には次の機能が追加されました。
 
 AEMをCloud Serviceとして使用する場合、連続配信(CI/CD)を使用して、プロジェクトが確実に最新のAEMバージョンになるようになりました。
 
-これは、すべてのアップグレード操作が完全に自動化されているため、ユーザーに対するサービスの中断を必要としないことを意味します。
-Adobeは、サービスのすべての運用インスタンスをAEMコードベースの最新バージョンに更新する際に、事前に対処します。AEMバージョンのアップデートには、次の2種類があります。
+つまり、実稼働環境とステージ環境のインスタンスは、ユーザーのサービスを中断することなく最新のAEMバージョンに更新されます。
+
+>[!NOTE]
+> 実稼働環境への更新に失敗した場合、Cloud Managerはステージ環境を自動的にロールバックします。 これは、更新が完了した後、ステージバージョンと実稼働環境の両方が同じAEMバージョンにあることを確認するために、自動的に行われます。
+
+AEMバージョンのアップデートには、次の2種類があります。
 
 * **プッシュの更新**
 
