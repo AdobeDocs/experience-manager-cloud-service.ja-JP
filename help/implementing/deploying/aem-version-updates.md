@@ -2,7 +2,7 @@
 title: AEMバージョンの更新
 description: 'AEMバージョンの更新 '
 translation-type: tm+mt
-source-git-commit: 5032c503be8972879eff82d4919bb07dcff1db2a
+source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 38%
@@ -24,6 +24,7 @@ AEMバージョンのアップデートには、次の2種類があります。
 * **AEMプッシュアップデート**
 
    * 毎日リリースできます。
+
    * ほとんどのメンテナンス作業で、最新のバグ修正やセキュリティ更新が含まれています。
 
       定期的に変更が適用されるにつれ、影響は徐々に大きくなり、サービスへの影響が減少します。
