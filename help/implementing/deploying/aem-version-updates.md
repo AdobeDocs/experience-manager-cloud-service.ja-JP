@@ -2,9 +2,9 @@
 title: AEMバージョンの更新
 description: 'AEMバージョンの更新 '
 translation-type: tm+mt
-source-git-commit: 3d9ed5ea31344bf4e25c37368cca01856cdbbd01
+source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '396'
 ht-degree: 38%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 38%
 
 ## 概要 {#introduction}
 
-AEMをCloud Serviceとして使用する場合、連続配信(CI/CD)を使用して、プロジェクトが確実に最新のAEMバージョンになるようになりました。 つまり、すべてのアップグレード操作が完全に自動化され、ユーザーに対するサービスの中断は不要です。
+AEMをCloud Serviceとして使用する場合、連続配信(CI/CD)を使用して、プロジェクトが確実に最新のAEMバージョンになるようになりました。 つまり、実稼働環境とステージ環境のインスタンスは、ユーザーのサービスを中断することなく最新のAEMバージョンに更新されます。
 
 >[!NOTE]
 >実稼働環境への更新に失敗した場合、Cloud Managerはステージ環境を自動的にロールバックします。 これは、更新が完了した後、ステージバージョンと実稼働環境の両方が同じAEMバージョンにあることを確認するために、自動的に行われます。
