@@ -4,24 +4,24 @@ user-guide-title: Cloud Serviceガイドとしてのアセット
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
+source-git-commit: 1f575a2bc844e108477a86d4f653928442165c8e
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 90%
+source-wordcount: '406'
+ht-degree: 78%
 
 ---
 
 
-# アセットガイド {#assets}
+# [!DNL Assets] ガイド {#assets}
 
-+ [AEM Assets as a Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [AEM Assets as a Cloud Service の主な変更点](assets-cloud-changes.md)
-+ [アーキテクチャ](architecture.md)
++ [Cloud Service [!DNL Assets] に対する主な変更点](assets-cloud-changes.md)
++ [[!DNL Assets] アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
 + [アクセシビリティ [!DNL Assets]](accessibility.md)
-+ AEM を使用したデジタルアセットの管理 {#manage}
++ Manage digital assets {#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
    + [アセットマイクロサービスの基本](asset-microservices-configure-and-use.md)
@@ -30,29 +30,29 @@ ht-degree: 90%
    + [一般的なアセット管理タスク](manage-digital-assets.md)
    + [スマートタグ](smart-tags.md)
    + [アセットの整理方法](organize-assets.md)
-   + [AEM での Adobe Stock アセットの使用](aem-assets-adobe-stock.md)
+   + [aemでの [!DNL Adobe Stock] ユーザーセット](aem-assets-adobe-stock.md)
    + [コレクションの管理](manage-collections.md)
    + [メタデータの概要](manage-metadata.md)
-   + [Adobe Creative Cloud との統合](aem-cc-integration-best-practices.md)
+   + [統合対象 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
    + [メタデータの追加と編集](meta-edit.md)
    + [フォルダーのアセットとコレクションのレビュー](bulk-approval.md)
    + [アセットインサイトの使用と設定](assets-insights.md)
    + [メタデータプロファイル](metadata-profiles.md)
    + [メタデータスキーマ](metadata-schemas.md)
    + [ビデオアセットの管理](manage-video-assets.md)
-   + [AEM からのアセットのダウンロード](download-assets-from-aem.md)
+   + [アセットのダウンロード](download-assets-from-aem.md)
    + [編集するアセットのチェックアウトとチェックイン](check-out-and-submit-assets.md)
    + [アセットの Digital Rights Management](drm.md)
    + [透かしアセット](watermark-assets.md)
-+ アセットの設定、管理、拡張 {#admin}
++ Configure, administer and extend [!DNLAssets] {#admin}
    + [開発者向けドキュメントおよびAPIのリファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
-   + [イメージプロファイルとビデオプロファイルの操作について](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [画像とビデオのプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [スマートタグの設定](smart-tags-configuration.md)
-   + [多言語アセットとアセット翻訳](translate-assets.md)
+   + [多言語アセットと翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
-   + [AEM Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
+   + [コンテンツフラグメントはアセットHTTP APIでサポート](content-fragments/assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
@@ -60,8 +60,8 @@ ht-degree: 90%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [AEM Assets と Brand Portal の連携の設定](configure-aem-assets-with-brand-portal.md)
-   + [Brand Portal へのアセットの公開](publish-to-brand-portal.md)
+   + [ [!DNL Assets] 設定 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [アセットの公開先 [!DNL Brand Portal]](publish-to-brand-portal.md)
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
