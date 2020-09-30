@@ -3,10 +3,10 @@ title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +158,9 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 取得されたアセットは他のローカルアセットと同じように使用できます。ただし、関連するメタデータは編集できません。
 
-## 制限事項 {#limitations}
+## Limitations and best practices {#tip-and-limitations}
+
+* アセットの使用に関するインサイトを取得するには、インスタンスで [アセットインサイト](/help/assets/assets-insights.md) 機能を設定し [!DNL Sites] ます。
 
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 
@@ -166,7 +168,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * ローカルアセットは読み取り専用のコピーです。[!DNL Experience Manager] コンポーネントは、アセットに対して非破壊編集をおこないます。その他のいかなる編集もできません。
 * ローカルで取得されたアセットは、オーサリング用途でのみ使用できます。アセット更新ワークフローの適用やメタデータの編集はおこなえません。
 * 画像とリストに表示されるドキュメント形式のみがサポートされます。[!DNL Dynamic Media]、アセット、コンテンツフラグメントおよびエクスペリエンスフラグメントはサポートされません。
-* メタデータスキーマは取得されません。
+* [!DNL Experience Manager] メタデータスキーマを取得しません。 これは、取り込まれたすべてのメタデータが表示されない場合があることを意味します。 スキーマを個別に更新すると、すべてのプロパティが表示されます。
 * [!DNL Sites] 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズするための API サポートはありません。
 * この機能は、リモートアセットのシームレスな検索および使用をサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。
@@ -185,6 +187,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * 取得操作は 5 秒でタイムアウトします。アセット取得時、問題が発生する場合があります（ネットワークに問題がある場合など）。作成者は、再試行をおこない、リモートアセットを[!UICONTROL コンテンツファインダー]から[!UICONTROL ページエディター]にドラッグ＆ドロップできます。
 * 取得されたアセットに対しては、単純な非破壊編集と、 `Image` コンポーネント経由でサポートされている編集をおこなえます。アセットは読み取り専用です。
 * アセットを再取得する唯一の方法は、アセットをページにドラッグすることです。アセットを再取得して更新するための API サポートなどの手段はありません。
+* DAMからアセットが廃止されると、それらは引き続き [!DNL Sites] ページで使用されます。
 
 ## 問題のトラブルシューティング {#troubleshoot}
 
