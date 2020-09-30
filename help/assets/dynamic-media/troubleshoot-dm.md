@@ -2,17 +2,21 @@
 title: Dynamic Media のトラブルシューティング
 description: Dynamic Media のトラブルシューティング。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 100%
+source-wordcount: '995'
+ht-degree: 95%
 
 ---
 
 
 # Dynamic Media のトラブルシューティング {#troubleshooting-dynamic-media-scene-mode}
 
-以下では、Dynamic Media のトラブルシューティングについて説明します。
+次のトピックでは、ダイナミックメディアのトラブルシューティングについて説明します。
+
+## 新しいダイナミックメディア設定 {#new-dm-config}
+
+新しいダイナミックメディア設定の [トラブルシューティングを参照してください。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
 
 ## 一般（すべてのアセット）{#general-all-assets}
 
@@ -32,14 +36,6 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
 ### 同期のログ {#synchronization-logging}
 
 同期のエラーと問題は `error.log`（AEM サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
-
-### 移動、コピー、削除 {#move-copy-delete}
-
-移動、コピーまたは削除の処理を実行する前に次をおこなってください。
-
-* 画像やビデオの移動、コピーまたは削除操作の前に `<object_node>/jcr:content/metadata/dam:scene7ID` の値が存在することを確認します。
-* 画像やビューアプリセットの移動、コピーまたは削除操作の前に `https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata` の値が存在することを確認します。
-* 上記のメタデータ値がない場合、移動、コピーまたは削除処理の前にアセットを再度アップロードする必要があります。
 
 ### バージョン管理 {#version-control}
 
@@ -75,16 +71,6 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
      <li>アセットを公開します。</li>
      <li>アセットを再度アップロードして公開します。</li>
     </ul> </td>
-  </tr>
-  <tr>
-   <td>設定エディターのアセットセレクターが永続的に読み込み中の状態になっている</td>
-   <td><p>6.4 で解決予定の既知の問題です。</p> </td>
-   <td><p>セレクターを閉じて再度開きます。</p> </td>
-  </tr>
-  <tr>
-   <td>セットの編集でアセットを選択した後、<strong>選択</strong>ボタンが有効にならない</td>
-   <td><p> </p> <p>6.4 で解決予定の既知の問題です。</p> <p> </p> </td>
-   <td><p>アセットセレクターで別のフォルダーをクリックしてからアセットの選択に戻ります。</p> </td>
   </tr>
   <tr>
    <td>スライドを切り替えた後、カルーセルホットスポットが移動する</td>
@@ -160,7 +146,6 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
    <td><p>ビデオのエンコーディングがまだ進行中か、エラー状態になっているかを判断するには：</p>
     <ul>
      <li>ビデオのステータスを確認します。<code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
-     <li>ワークフローコンソールでビデオを監視します。<code>https://localhost:4502/libs/cq/workflow/content/console.html</code> &gt; 「インスタンス」タブ、「アーカイブ」タブ、「エラー」タブ。</li>
     </ul> </td>
    <td> </td>
   </tr>
@@ -220,19 +205,16 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
     </ol> </td>
    <td><p>サンプルアセットまたはビューアプリセットのアートワークが同期されていないか、公開されてない場合は、コピー／同期処理全体をやり直します。</p>
     <ol>
-     <li>CRXDE Lite に移動します。
-      <ul>
-       <li><code>&lt;sync-folder&gt;/_CSS/_OOTB</code> を削除します。</li>
-      </ul> </li>
-     <li>CRX パッケージマネージャー（<code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>）に移動します。
+     <li><code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code> に移動します。
+     </li>
+     <li>次のアクションを順に選択します。
       <ol>
-       <li>リストでビューアパッケージを検索します（<code>cq-dam-scene7-viewers-content</code> で始まります）。</li>
-       <li>「<strong>再インストール</strong>」をクリックします。</li>
+       <li>同期フォルダーを削除します。</li>
+       <li>プリセットフォルダを選択(下 <code>/conf</code>)
+       <li>DMセットアップ非同期ジョブをトリガします。</li>
       </ol> </li>
-     <li>クラウドサービスページで、Dynamic Media 設定ページに移動した後、Dynamic Media - Scene7 設定の設定ダイアログボックスを開きます。
-      <ul>
-       <li>何も変更せず、「<strong>保存</strong>」をクリックします。これで、サンプルアセット、ビューアプリセット CSS およびアートワークを作成および同期するロジックが再度トリガーされます。<br />  </li>
-      </ul> </li>
+     <li>AEM受信トレイで同期が成功したという通知が表示されるまで待ちます。
+     </li>
     </ol> </td>
   </tr>
  </tbody>
