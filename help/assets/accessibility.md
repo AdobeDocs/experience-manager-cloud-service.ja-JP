@@ -3,10 +3,10 @@ title: アクセシビリティ [!DNL Experience Manager Assets]。
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0bb58d910fed91e4627e1fd8e1f9af47a1b2f4df
+source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1823'
+ht-degree: 2%
 
 ---
 
@@ -172,7 +172,7 @@ CRUD操作、アセットのダウンロード、メタデータの追加など�
 * キーボードを使用したドラッグ機能は、スクリーンリーダーの参照モードのメタデータスキーマエディターで正しく機能します。
 * ユーザーは、キーボードを使用して、フォルダープロパティの「権限」タブにある「閉じたユーザーグループ」の下の追加ユーザーまたはグループフィールドにフォーカスを移動できます。
 
-## デジタルアセットの検索 {#search}
+## デジタルアセットの検索 {#search-assets}
 
 すばやくシームレスなアセット検索の経験により、コンテンツの速度が向上します。 コンテンツ速度の使用例は、主な [!DNL Assets] 機能の一部です。 Omnisearchバーから検索を開始するには、キーボードショートカットを使用する `/` か、スクリーンリーダーと共に使用し `Tab` て、検索オプションをすばやく見つけることができます。 スクリーンリーダーは、検索オプションの検索オプションにフォーカスがある場合、 [!UICONTROL 検索ボタン] (Search Button ![)としてオプション名をナレートします](assets/do-not-localize/search_icon.png)。 ユーザーが押すと、「Omnisearch」ボックス `Return` が開きます。 スクリーンリーダーは、検索ボックスに入力されたキーワードのナレーションだけでなく、提供されるオートコンプリート候補のナレーションも行い [!DNL Experience Manager Assets]ます。 矢印キーと `Return`、を組み合わせて使用し、様々なオプション `Tab` にアクセスして検索をトリガーできます。
 
