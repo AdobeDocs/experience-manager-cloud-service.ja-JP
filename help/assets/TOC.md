@@ -4,9 +4,9 @@ user-guide-title: Cloud Serviceガイドとしてのアセット
 breadcrumb-title: Assets Guide
 user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: cea753a0783397c7fd9b757b2246c87ffa698f82
+source-git-commit: 942eb1424af119c4dda6b8286a20ff030c807802
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '430'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 90%
 + [アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
++ [アクセシビリティ [!DNL Assets]](accessibility.md)
 + AEM を使用したデジタルアセットの管理 {#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
