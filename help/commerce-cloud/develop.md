@@ -2,10 +2,10 @@
 title: Cloud ServiceとしてのAEM向けAEMコマースの開発
 description: Cloud ServiceとしてのAEM向けAEMコマースの開発
 translation-type: tm+mt
-source-git-commit: 19fa6391913f556b80607f8dd5215489082b50ab
+source-git-commit: 1c39ddefbeceb52e6a7adefe1d32d4cef164ef3b
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 14%
+source-wordcount: '962'
+ht-degree: 12%
 
 ---
 
@@ -80,6 +80,34 @@ AEMをCloud ServiceSDKとして使用するローカル追加のCIFオン開発�
    この変数は、AEMのCloud Service環境としても設定する必要があります。
 
 6. Cloud ServiceSDKとしてのAEMの開始
+
+7. ローカルのGraphQLプロキシサーバーの開始
+
+   MagentoGraphQLエンドポイントをCIFアドオンでローカルに使用できるようにし、CIFコンポーネントでは次のコマンドを使用します。 GraphQLエンドポイントは、で使用でき `http://localhost:3002/graphql`ます。
+Mac OSXの例：
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial ''
+   ```
+
+   ウィンドウの例：
+
+   ```bash
+   npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
+   ```
+   この引数には、空の文字列を受け取る `--proxyPartial` 必要があります。
+
+   GraphQLクエリツールにいくつかのクエリを指定して、ローカルのGraphQLプロキシをテスト `http://localhost:3002/graphql` し、テストできます。
+
+8. AEM SDKにログインし、ローカルのGraphQLプロキシサーバーを使用するようにCIFを設定する
+
+   CIFCloud Service設定に移動します(ツール/Cloud Services/CIF設定)。 プロジェクトで使用されている設定のプロパティ表示を開きます。
+
+   このプロパティには、ローカルプロキシサーバーエンドポイントを使用 `GraphQL Proxy Path``http://localhost:3002/graphql`します。 設定を保存します。
+
+>[!NOTE]
+>
+>手順8の設定をプロジェクトリポジトリにプッシュしないでください。 この設定は、ローカル開発の設定にのみ必要です。 CLOUD SERVICE環境としてのAEMは、オンボーディング中にGraphQLプロキシで既に設定されています。
 
 OSGIコンソールを使用してセットアップを確認します：`http://localhost:4502/system/console/osgi-installer`。 このリストには、機能モデルファイルで定義されているCIFアドオン関連バンドル、コンテンツパッケージ、OSGI設定が含まれている必要があります。
 
