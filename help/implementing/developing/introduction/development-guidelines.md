@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 translation-type: tm+mt
-source-git-commit: d7b3306f2415960669a60472ba343bfb394a1012
+source-git-commit: 82f50e50bb93baa280a981708277dd63004b101f
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 87%
@@ -230,9 +230,9 @@ AEMは、Cloud Serviceとして送信メールを暗号化する必要があり�
 
 AEM CSでは、ポート465経由でメールを送信する必要があります。 TLSオプションが有効になっている限り、メールサーバーがポート465をサポートしていない場合は、ポート587を使用できます。
 
-> [!NOTE]
+>[!NOTE]
 >
-> Adobeは、一意の専用IPアドレスを介したSMTP登録をサポートしていません。
+>Adobeは、一意の専用IPアドレスを介したSMTP登録をサポートしていません。
 
 ### 設定 {#email-configuration}
 
