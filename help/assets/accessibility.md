@@ -1,11 +1,11 @@
 ---
-title: アクセシビリティ [!DNL Experience Manager Assets]。
+title: アクセシビリティ [!DNL Experience Manager Assets]
 description: Know how accessibility features in [!DNL Adobe Experience Manager] as a Cloud Service help disabled users.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d129538618630faff4bb2542668b8e47ef0e5f6
+source-git-commit: a277d647e3ae95ab18cf13b76ceaaeef6d64cc26
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1841'
 ht-degree: 2%
 
 ---
@@ -43,11 +43,12 @@ Adobeは、障害を持つユーザーを含むすべてのユーザー向けの
 
 ## 支援テクノロジー {#at-support}
 
-障害を持つユーザーは、Webコンテンツにアクセスする際に、ハードウェアとソフトウェアを頻繁に使用します。 これらのツールは、支援テクノロジーと呼ばれます。 [!DNL Adobe Experience Manager Assets] 次の支援テクノロジーを使用して、ユーザーが主要な機能を使用できるようにします。
+障害を持つユーザーは、Webコンテンツにアクセスする際に、ハードウェアとソフトウェアを頻繁に使用します。 これらのツールは、支援テクノロジーと呼ばれます。 [!DNL Adobe Experience Manager Assets] 次の種類の支援テクノロジーを使用して、ソフトウェアの主要機能を使用するユーザーにサポートを提供します。
 
 * スクリーンリーダー
 * 音声認識ソフトウェア
 * キーボードの使用 — ナビゲーションとショートカット。
+* スイッチコントロール、更新可能な点字ディスプレイ、その他のコンピュータ入力デバイスを含む支援ハードウェア。
 * UI虫めがねツール
 
 ## [!DNL Experience Manager Assets] アクセシブルな使用例 {#accessible-assets-use-cases}
