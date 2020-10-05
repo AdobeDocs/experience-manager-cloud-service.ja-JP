@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 description: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 translation-type: tm+mt
-source-git-commit: e5e329f674f5e2817f6feb26e3a7720c8d26d333
+source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 99%
+source-wordcount: '863'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
 >* Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
 >* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
->* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+>* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 >* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 
 
@@ -109,10 +109,10 @@ AMS 上やオンプレミスでのインストールからプロジェクトを�
 
 ## アセットの操作と配信 {#asset-handling}
 
-AEM as a Cloud Service では、アセットのアップロード、処理、ダウンロードが最適化されて効率がアップし、拡張性とアップロード／ダウンロード速度が向上しました。ただし、これによって、一部の既存カスタムコードが影響を受ける可能性があります。
+アセットのアップロード、処理およびダウンロードは、より効率的な拡大縮小と高速なアップロードおよびダウンロードを可能にするため、Cloud Serviceとしてアセットに最適化されました。 ただし、これによって、一部の既存カスタムコードが影響を受ける可能性があります。
 
 * 以前のバージョンの AEM に用意されていたデフォルトの **DAM アセットの更新**&#x200B;ワークフローは使用できなくなりました。
 * **変換をおこなわずに**&#x200B;バイナリを配信する Web サイトコンポーネントでは、直接ダウンロードを使用する必要があります。
-   * Sling Get サーブレットは、デフォルトで直接ダウンロードをおこなうように変更されました。
+   * Sling Get Servlet は、デフォルトで直接ダウンロードをおこなうように変更されました。
 * （サーブレットを介したサイズ変更などの）**変換をおこなって**&#x200B;バイナリを配信する Web サイトコンポーネントは、引き続きそのまま動作します。
 * パッケージマネージャーで取り込まれたアセットについては、Assets インターフェイスの「**アセットを再処理**」アクションを使用して、手動で再処理する必要があります。
