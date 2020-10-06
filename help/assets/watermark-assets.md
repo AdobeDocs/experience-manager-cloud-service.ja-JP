@@ -3,10 +3,10 @@ title: アセットの透かしの設定
 description: デジタルアセットへの透かしの追加.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 7ea7af1cf784b6866f3c2484475a8072ff76be2c
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 2%
+source-wordcount: '198'
+ht-degree: 3%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 [!DNL Adobe Experience Manager Assets] 画像に電子透かしを追加できます。 [!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。 透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。 また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態を示すこともできます。
 
-アセットに透かしを設定するExperience Managerを設定するには、次の手順に従います。
+アセットの透かし [!DNL Experience Manager] を設定するには、次の手順に従います。
 
 1. 透かしとしてPNGファイルが適用されます。 このファイルをDAMリポジトリにアップロードします。
 
-1. 環境に関連付けられたCloud Manager Gitリポジトリにアクセスします。 Cloud Manager Gitリポジトリ `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json` にあるという名前のファイルを、次の内容でコミットします。 詳しくは、「Cloud ServiceとしてExperience ManagerでOSGi設定を行う [方法](/help/implementing/deploying/configuring-osgi.md)」を参照してください。
+1. 環境に関連付けられた [!DNL Cloud Manager] Gitリポジトリにアクセスします。 Gitリポジトリ `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.json`[!DNL Cloud Manager] にあるという名前のファイルを、次の内容でコミットします。 詳しくは、「Cloud Service [内でOSGi設定を行う [!DNL Experience Manager] 方法](/help/implementing/deploying/configuring-osgi.md)」を参照してください。
 
    ```json
    {
