@@ -2,10 +2,10 @@
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
 translation-type: tm+mt
-source-git-commit: c78e0514efa3937b876c15be1cac35e8e01daa03
+source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 12%
+source-wordcount: '765'
+ht-degree: 11%
 
 ---
 
@@ -116,6 +116,8 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 この節では、コードリファクタリングツールの新機能と更新点について説明します。
 
 ### 新機能 {#what-is-new-refactoring}
+
+[Repository Modenizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) は、Cloud ServiceとしてAdobe Experience Managerに定義されたプロジェクト構造と互換性を持つように、コンテンツとコードを個別のパッケージに分割して、既存のプロジェクトパッケージを再構築するために開発されたユーティリティです。
 
 * AIO-CLIプラグインは、Repository Modenizerをサポートしており、ユーザーはこのプラグインを使用してツールを実行できます。
 
