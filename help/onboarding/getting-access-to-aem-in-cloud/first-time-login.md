@@ -1,8 +1,8 @@
 ---
-title: 初回ログイン — クラウドサービス
-description: 初回ログイン — クラウドサービス
+title: 初回ログイン —Cloud Service
+description: 初回ログイン —Cloud Service
 translation-type: tm+mt
-source-git-commit: 57206e36725e28051b2468d47da726e318bd763b
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 10%
@@ -24,7 +24,7 @@ Cloud Managerに正常にログインすると 、ユーザーインターフェ
 
 >[!NOTE]
 >
->以下に示すように、クラウドサービス上のプログラムは、サブタイトル **Experience Manager Cloud** (AMSプログラム用の **Experience Manager** ではなく)で示されます。
+>Cloud Service上のプログラムは、次に示すように、字幕 **Experience Managerクラウド** (AMSプログラムの **** Experience Managerとは異なる)で示されます。
 
 ![](assets/first_timelogin1.png)
 
@@ -35,25 +35,25 @@ Cloud Managerに正常にログインすると 、ユーザーインターフェ
 
 * **プログラムは既にCloud Managerに存在します**
 
-## 既存のプログラムを持たないクラウドサービスでの新しいプログラムの追加 {#no-program}
+## 既存のプログラムを持たないCloud Serviceに新しいプログラムを追加する {#no-program}
 
 
 次の図に示すように、ランディングページは最初のプログラムを作成するよう指示します。
 ![](assets/first_timelogin0.png)
 
 
-## 既存のプログラムを使用したクラウドサービスへの新しいプログラムの追加 {#existing-program}
+## 既存のプログラムを使用したCloud Serviceでの新しいプログラムの追加 {#existing-program}
 
 
-1. **Adobe[!UICONTROL Experience Cloud ]**にログインすると、**プログラムと製品のリストが表示されます&#x200B;**。
+1. **Adobe[!UICONTROL Experience Cloudにログインすると]** 、 **プログラムと製品のリストが表示されます**。
 
    ![](assets/first_timelogin1.png)
 
-   クラウドサービス上のプログラムは、サブタイトル **Experience Manager Cloud** (AMSプログラム向け **Experience Manager** ではなく)で示されます。
+   Cloud Service上のプログラムは、サブタイトル **Experience Managerクラウド** (AMSプログラムの **** Experience Managerとは異なります)で示されます。
 
    >[!NOTE]
    >For example, in the figure above, **We.Retail Global** is an AMS program and **We.Retail-Prod Program - Prod** is a program available via Cloud Service.
 
-1. クラウドサービスで新しいプログラムを作成する **プログラムと製品** 画面からプログラムを追加する方法については、「プログラムの [作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)」を参照してください。
+1. Cloud Serviceで新しいプログラムを作成するための **プログラムと製品** 画面からのプログラムの追加方法については、「プログラムの [作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)」を参照してください。
 
 
