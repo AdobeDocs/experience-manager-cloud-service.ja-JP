@@ -3,7 +3,7 @@ title: ブランドポータルでのCloud ServiceとしてのAEM Assetsの設�
 description: AEM Assets と Brand Portal の連携の設定.
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: ad1f1e8c0ba5409cd645489263f349b29f080d27
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 37%
@@ -30,7 +30,6 @@ Cloud ServiceとしてのAEM Assetsは、Adobe開発者コンソールを介し�
 >[!NOTE]
 >
 >Cloud ServiceインスタンスとしてのAEM Assetsは、1人のBrand Portalテナントでのみ構成する必要があります。
-
 
 ## 前提条件 {#prerequisites}
 
@@ -64,16 +63,10 @@ IMS 設定には、次の 2 つの手順が含まれます。
 公開鍵（証明書）は、Adobeデベロッパーコンソールでプロファイルを認証します。
 
 1. AEM Assets にログインします。
-
 1. From the **Tools** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
-
-
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。It will redirect to the **[!UICONTROL Adobe IMS Technical Account Configuration]** page. デフォルトでは、「**証明書**」タブが開きます。
-
 1. 「 **[!UICONTROL Cloud Solution]** 」ドロップダウンリストで「 **[!UICONTROL Adobeブランドポータル]** 」を選択します。
-
 1. 「 **[!UICONTROL 新しい証明書を]** 作成 **」チェックボックスをオンにして、公開鍵の** エイリアスを指定します。 エイリアスは、公開鍵の名前として機能します。
-
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。Then, click **[!UICONTROL OK]** to generate the public key.
 
    ![証明書を作成](assets/ims-config2.png)
@@ -218,8 +211,6 @@ You can now use the client ID (API key), client secret, and JWT payload to [conf
 >
 >IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。削除して、新しい有効な設定を作成する必要があります。
 
-
-
 ### Cloud Service の設定{#configure-the-cloud-service}
 
 Brand Portal Cloud Service を設定するには、次の手順を実行します。
@@ -281,19 +272,15 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
    >
    >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
 
-
 次の操作が可能になりました。
 
 * [AEM Assets から Brand Portal へのアセットの公開](publish-to-brand-portal.md)
 * [AEM Assets から Brand Portal へのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assets から Brand Portal へのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-
 * [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-
 See [Brand Portal documentation](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/home.html) for more information.
-
 
 ## 配布ログ {#distribution-logs}
 
@@ -302,7 +289,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ja-JP/exper
 例えば、AEM Assets から Brand Portal にアセットを発行し、設定を検証したとします。
 
 1. [設定のテスト](#test-configuration)節で示した手順（1～4）に従い、配布エージェントページに移動します。
-
 1. 「 **[!UICONTROL ログ]** 」をクリックして、処理ログとエラーログを表示します。
 
    ![](assets/test-bpconfig5.png)
@@ -315,10 +301,12 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ja-JP/exper
 アセットの公開時に、次の要求および応答ログが生成されます。
 
 **配布エージェントの要求**：
+
 * DSTRQ2（リクエスト 2）：アセットの公開リクエストがトリガーされます。
 * DSTRQ3 （リクエスト3）:システムは、（アセットが存在する）AEM Assetsフォルダーの発行と、Brand Portal内のフォルダーの複製を行うための別の要求をトリガーします。
 
 **配布エージェントの応答**：
+
 * queue-bpdistributionagent0（DSTRQ2）：アセットが Brand Portal に公開されます。
 * queue-bpdistributionagent0(DSTRQ3):システムは、（アセットを含む）AEM AssetsフォルダーをBrand Portalに複製します。
 
@@ -327,8 +315,6 @@ See [Brand Portal documentation](https://docs.adobe.com/content/help/ja-JP/exper
 >[!NOTE]
 >
 >親フォルダーがBrand Portalに存在しない場合や、AEM Assetsで変更された場合に備えて、追加のリクエストが生成されます。
-
-
 
 <!--
 
@@ -358,4 +344,4 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
    Comment Type: draft
 
    <li>Step text</li>
-   -->
+-->
