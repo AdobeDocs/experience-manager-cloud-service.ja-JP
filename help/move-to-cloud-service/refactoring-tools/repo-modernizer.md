@@ -2,7 +2,7 @@
 title: Repository Modenizer
 description: Repository Modenizer
 translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 4%
@@ -40,4 +40,5 @@ Repository Modenizerは、次の配置構造を作成することで、互換性
    詳しくは、 **[Gitリソースを参照してください。Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)** （リポジトリの最新化）を参照してください。
 
    >[!NOTE]
+   >
    >Repository Modenizerは、NodeJSを使用して開発されています。 NodeJS 10.0以降をインストールすることをお勧めします。
