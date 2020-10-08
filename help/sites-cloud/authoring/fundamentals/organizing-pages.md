@@ -2,7 +2,7 @@
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 98%
@@ -363,7 +363,6 @@ AEM では、名前変更または移動がおこなわれるページへの内�
 >[!NOTE]
 >
 >ページは、ページが基にしているテンプレートが許可される場所にのみ移動できます。See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
--->
 
 #### 非同期アクション {#asynchronous-actions}
 
