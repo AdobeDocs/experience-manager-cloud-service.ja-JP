@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 1f0e6805dc5acd21f323a5ce502363c63bfb0f0a
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 79%
@@ -140,8 +140,10 @@ ht-degree: 79%
 1. *概要*&#x200B;ページに移動し、追加抽出の実行対象となる移行セットを選択します。「**抽出**」をクリックして、追加抽出を開始します。**移行セットの抽出**&#x200B;ダイアログボックスが表示されます。
 
    >[!IMPORTANT]
+   >
    >「**抽出時にステージングコンテナを上書き**」オプションを無効にしてください。
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+   >
+   >![画像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
 
 ### コンテンツ転送のインジェストプロセス {#ingestion-process}
 
@@ -151,17 +153,16 @@ ht-degree: 79%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
-
 1. 取り込みが完了すると、 **「取り込みを** 公開 **」フィールドのステータスが**&#x200B;完了に更新されます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
-
 
 #### 追加インジェスト {#top-up-ingestion-process}
 
 コンテンツ転送ツールには、*差分コンテンツ追加*&#x200B;をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
 
 >[!NOTE]
+>
 >最初のコンテンツ転送の後は、差分コンテンツ追加を頻繁におこなって、Cloud Service での運用を開始する前におこなう最後の差分コンテンツ転送に必要なコンテンツ凍結期間を短縮することをお勧めします。
 
 インジェストプロセスが完了したら、追加インジェスト方式を使用して差分コンテンツを転送できます。それには、次の手順に従います。
@@ -169,8 +170,10 @@ ht-degree: 79%
 1. *概要*&#x200B;ページに移動し、追加インジェストの実行対象となる移行セットを選択します。「**取り込み**」をクリックして、追加インジェストを開始します。**移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
 
    >[!IMPORTANT]
+   >
    >以前のインジェストアクティビティから既存のコンテンツを削除しないようにするには、 **「インジェストの前にクラウドインスタンス上の既存のコンテンツを** ワイプ」オプションを無効にする必要があります。
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+   >
+   >![画像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
 
