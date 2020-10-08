@@ -1,31 +1,31 @@
 ---
-title: Dynamic Mediaの画像プロファイルとビデオプロファイルについて
-description: 画像プロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。 例えば、アップロードするDynamic Mediaのビデオアセットに適用するビデオエンコーディングを指定できます。 または、Dynamic Mediaの画像アセットが正しく切り抜かれるように、画像に適用する画像プロファイルを指定します。
+title: Dynamic Media のイメージプロファイルとビデオプロファイルについて
+description: イメージプロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。例えば、アップロードする Dynamic Media のビデオアセットに適用するビデオエンコーディングを指定できます。また、画像アセットを適切に切り抜くために Dynamic Media 画像アセットに適用するイメージプロファイルを指定できます。
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Mediaの画像プロファイルとビデオプロファイルについて{#about-dm-image-video-profiles}
+# Dynamic Media のイメージプロファイルとビデオプロファイルについて{#about-dm-image-video-profiles}
 
-画像プロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。 例えば、アップロードするDynamic Mediaのビデオアセットに適用するビデオエンコーディングを指定できます。 または、Dynamic Mediaの画像アセットが正しく切り抜かれるように、画像に適用する画像プロファイルを指定します。
+イメージプロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。例えば、アップロードする Dynamic Media のビデオアセットに適用するビデオエンコーディングを指定できます。また、画像アセットを適切に切り抜くために Dynamic Media 画像アセットに適用するイメージプロファイルを指定できます。
 
-Dynamic Mediaでは、2種類のプロファイルを作成できます。詳しくは、次のリンクを参照してください。
+Dynamic Media では、2 種類のプロファイルを作成できます。次のリンク先では、それらのプロファイルについて詳しく説明しています。
 
-* [Dynamic Media画像プロファイル](/help/assets/dynamic-media/image-profiles.md)
-* [Dynamic Mediaビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)
+* [Dynamic Media イメージプロファイル](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)
 
-See also [Metadata profiles](/help/assets/metadata-profiles.md).
+[メタデータプロファイル](/help/assets/metadata-profiles.md)も参照してください。
 
-Dynamic Mediaの画像プロファイルまたはDynamic Mediaのビデオプロファイルを作成、編集および削除するには、管理者権限が必要です。
+Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルを作成、編集および削除するには、管理者権限が必要です。
 
-画像プロファイルまたはビデオプロファイルを作成したら、新しくアップロードしたDynamic Mediaアセットのアップロード先として使用する1つ以上のフォルダにその画像フォルダを割り当てます。
+イメージプロファイルまたはビデオプロファイルを作成した後、新規にアップロードする Dynamic Media アセットのアップロード先として使用する 1 つ以上のフォルダーにそのプロファイルを割り当てます。
 
-See also [Best Practices for Organizing your Digital Assets for using Image Profiles or Video Profiles](/help/assets/dynamic-media/best-practices-for-file-management.md).
+[イメージプロファイルまたはビデオプロファイルを使用するためのデジタルアセット編成のベストプラクティス](/help/assets/dynamic-media/best-practices-for-file-management.md)も参照してください。
 
 >[!NOTE]
 >
@@ -33,13 +33,13 @@ See also [Best Practices for Organizing your Digital Assets for using Image Prof
 >
 >同じプロファイルが割り当てられている 2 つのフォルダー間でアセットを移動する場合にも、同じことが言えます。
 
-## フォルダー内のDynamic Mediaアセットの再処理 {#reprocessing-assets}
+## フォルダー内の Dynamic Media アセットの再処理 {#reprocessing-assets}
 
-既にDynamic Media画像プロファイルまたは後で変更したDynamic Mediaビデオプロファイルが存在するフォルダ内のアセットを再処理できます。
+後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。
 
-例えば、Dynamic Media画像プロファイルを作成し、それをフォルダに割り当てたとします。 フォルダーにアップロードした画像アセットには、自動的に画像プロファイルがアセットに適用されました。 ただし、後で、新しいスマート切り抜き率を画像プロファイルに追加することにします。 その場合は、もう一度アセットを選択してフォルダーに再度アップロードするのではなく、「*Scene7 : アセットを再処理*」ワークフローを実行するだけです。
+例えば、Dynamic Media イメージプロファイルを作成してフォルダーに割り当てたとします。フォルダーにアップロードした画像アセットには、イメージプロファイルが自動的にアセットに適用されます。ただし、後でイメージプロファイルに新しいスマート切り抜き率を追加することにします。その場合は、もう一度アセットを選択してフォルダーに再度アップロードするのではなく、「*Scene7 : アセットを再処理*」ワークフローを実行するだけです。
 
-処理が初めて失敗したアセットに対して、再処理ワークフローを実行できます。したがって、画像プロファイルやビデオプロファイルを編集していない場合や、画像プロファイルやビデオプロファイルを既に適用している場合でも、アセットのフォルダに対して再処理ワークフローをいつでも実行できます。
+処理が初めて失敗したアセットに対して、再処理ワークフローを実行できます。したがって、イメージプロファイルやビデオプロファイルを編集していない場合や、イメージプロファイルやビデオプロファイルを既に適用している場合でも、アセットのフォルダーに対して再処理ワークフローをいつでも実行できます。
 
 オプションで、再処理ワークフローのバッチサイズを、デフォルトの 50 アセットから最大 1,000 アセットまで調整できます。フォルダーに対して「_Scene7 : アセットを再処理_」ワークフローを実行すると、アセットは一括でグループ化された後、Dynamic Media サーバーに送信されて処理されます。処理の後、バッチセット全体の各アセットのメタデータが AEM 上で更新されます。バッチサイズが非常に大きい場合は、処理に遅延が生じる可能性があります。また、バッチサイズが小さすぎると、Dynamic Media サーバーへのラウンドトリップの数が多くなりすぎるおそれがあります。
 
@@ -48,7 +48,9 @@ See also [Best Practices for Organizing your Digital Assets for using Image Prof
 >[!NOTE]
 >
 >Dynamic Media Classic から AEM へのアセットの一括移行を実行する場合は、Dynamic Media サーバー上で移行レプリケーションエージェントを有効にする必要があります。移行が完了したら、このエージェントを必ず無効にします。
-再処理ワークフローが期待どおりに動作するように、Dynamic Media サーバー上で移行公開エージェントを無効にする必要があります。
+
+>
+>再処理ワークフローが期待どおりに動作するように、Dynamic Media サーバー上で移行公開エージェントを無効にする必要があります。
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
@@ -56,10 +58,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**フォルダー内のDynamic Mediaアセットを再処理するには**:
-1. In AEM, from the Assets page, navigate to a folder of Dynamic Media assets that has an Image Profile or a Video Profile assigned to it and for which you want to apply the **Scene7: Reprocess Asset** workflow,
+**フォルダー内の Dynamic Media アセットの再処理**：
+1. AEM のアセットページで、イメージプロファイルまたはビデオプロファイルが割り当てられている、**Scene7：アセットを再処理**&#x200B;ワークフローの適用対象となる Dynamic Media アセットフォルダーに移動します。
 
-   画像プロファイルまたはビデオプロファイルが既に割り当てられているフォルダは、カード表示のプロファイル名のすぐ下に名が表示されます。
+   既にイメージプロファイルまたはビデオプロファイルが割り当てられているフォルダーには、カード表示のフォルダー名のすぐ下にプロファイルの名前が表示されます。
 
 1. フォルダーを選択します。
 
@@ -84,7 +86,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### 再処理ワークフローのバッチサイズの調整 {#adjusting-load}
 
-（オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、再処理の実行対象となるアセットの平均アセットサイズと MIME タイプによって決まります。値を大きくすると、1 回の再処理ジョブのファイル数が多くなります。したがって、処理バナーが AEM アセット上に長時間表示されたままになります。ただし、平均ファイルサイズが小さい（1 MB 以下の）場合は、値を数百個（1000 以下）に増やすことをお勧めします。平均ファイルサイズが大きい（数百 MB の）場合は、バッチサイズを最大 10 までに減らすことをお勧めします。
+（オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、再処理の実行対象となるアセットの平均アセットサイズと MIME タイプによって決まります。値を大きくすると、1 回の再処理ジョブのファイル数が多くなります。したがって、処理バナーが AEM Assets 上に長時間表示されたままになります。ただし、平均ファイルサイズが小さい（1 MB 以下の）場合は、値を数百個（1000 以下）に増やすことをお勧めします。平均ファイルサイズが大きい（数百 MB の）場合は、バッチサイズを最大 10 までに減らすことをお勧めします。
 
 **再処理ワークフローのバッチサイズを調整するには（オプション）**：
 
