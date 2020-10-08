@@ -2,10 +2,10 @@
 title: ログ
 description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
 translation-type: tm+mt
-source-git-commit: 86103b40e931ec00e0c15e9dbcbdf396c8eb05c9
+source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
-source-wordcount: '2212'
-ht-degree: 100%
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -588,7 +588,7 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 
 サポートを依頼するには、顧客は次のことを示す必要があります。
 
-* Splunk のホスト
+* Splunk HECエンドポイントアドレス
 * Splunk のインデックス
 * Splunk のポート
 * Splunk の HEC トークン。詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
@@ -603,21 +603,21 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 
 プログラム 123、実稼動環境
 
-* Splunk ホスト：`splunk-hec-ext.acme.com`
+* Splunk HECエンドポイントアドレス： `splunk-hec-ext.acme.com`
 * Splunk インデックス：acme_123prod（顧客は任意の命名規則を選択できます）
 * Splunk ポート：443
 * Splunk HEC トークン：ABC123
 
 プログラム 123、ステージ環境
 
-* Splunk ホスト：`splunk-hec-ext.acme.com`
+* Splunk HECエンドポイントアドレス： `splunk-hec-ext.acme.com`
 * Splunk インデックス：acme_123stage
 * Splunk ポート：443
 * Splunk HEC トークン：ABC123
 
 プログラム 123、開発環境
 
-* Splunk ホスト：`splunk-hec-ext.acme.com`
+* Splunk HECエンドポイントアドレス： `splunk-hec-ext.acme.com`
 * Splunk インデックス：acme_123dev
 * Splunk ポート：443
 * Splunk HEC トークン：ABC123
