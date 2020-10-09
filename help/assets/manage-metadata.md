@@ -4,9 +4,9 @@ description: メタデータのタイプと、 [!DNL Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1932'
 ht-degree: 94%
 
 ---
@@ -213,7 +213,7 @@ DOS などの状況を防ぐため、AEM では Sling 要求でサポートさ�
 ### 印刷固有のメタデータ {#print-specific-metadata}
 
 * PDF および PDF/X - Adobe PDF およびサードパーティのアプリケーション。
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org)。
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata)。
 * XMP - [!DNL Extensible Metadata Platform]。
 * `xmpPG` - ページテキストの XMP メタデータ。
 
