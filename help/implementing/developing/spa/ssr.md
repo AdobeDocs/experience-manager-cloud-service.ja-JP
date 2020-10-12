@@ -2,7 +2,7 @@
 title: SPAとサーバー側のレンダリング
 description: SPAでサーバー側レンダリング(SSR)を使用すると、ページの初期読み込みを高速化し、クライアントにさらにレンダリングを渡すことができます。
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -118,7 +118,7 @@ SSRを使用する場合、AEMのSPAの [コンポーネントインタラクシ
     </ul> </td>
    <td>
     <ul>
-     <li>CSSやJavaScriptなどのアプリケーションに必要なClientlibリソースは、AEM開発者が <code>allowProxy</code> プロパティを使用して使用できるようにする必要があります<br /> </li>
+     <li>CSSやJavaScriptなどのアプリケーションに必要なClientlibリソースは、AEM開発者が <code><a href="/help/implementing/developing/introduction/clientlibs.md">allowProxy</a></code> プロパティを使用して使用できるようにする必要があります<br /> </li>
      <li>リソースはAEMとAdobe I/O Runtimeの間で同期する必要があります<br /> </li>
      <li>SPAのオーサリングを可能にするには、Adobe I/O Runtimeのプロキシサーバーが必要になる場合があります</li>
     </ul> </td>
