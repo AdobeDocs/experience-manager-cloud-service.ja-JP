@@ -2,7 +2,7 @@
 title: ContextHub の拡張
 description: 提供されている ContextHub ストアやモジュールのタイプがソリューションの要件を満たさない場合は、新しいタイプを定義できます
 translation-type: tm+mt
-source-git-commit: ddfdcf74977adf00bc0ab01b0b1a669781f0d730
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 66%
@@ -18,9 +18,7 @@ ht-degree: 66%
 
 ContextHub ストアは、登録済みのストア候補から作成します。カスタムストアを作成するには、ストア候補を作成して登録する必要があります。
 
-<!--The javascript file that includes the code that creates and registers the store candidate must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-ストア候補を作成して登録するコードを含む JavaScript ファイルは、クライアントライブラリフォルダーに含める必要があります。フォルダーのカテゴリは、次のパターンに一致しなければなりません。
+ストア候補を作成して登録するコードを含む JavaScript ファイルは、[クライアントライブラリフォルダー](/help/implementing/developing/introduction/clientlibs.md)に含める必要があります。フォルダーのカテゴリは、次のパターンに一致しなければなりません。
 
 ```xml
 contexthub.store.[storeType]
@@ -101,9 +99,7 @@ To create a UI module renderer, create a `Class` object that contains the logic 
 }());
 ```
 
-<!--The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/sites-developing/clientlibs.md#creating-client-library-folders). The category of the folder must match the following pattern:-->
-
-レンダラーを作成し登録するコードを含むjavascriptファイルは、クライアントライブラリフォルダーに含める必要があります。 フォルダーのカテゴリは、次のパターンに一致しなければなりません。
+The javascript file that includes the code that creates and registers the renderer must be included in a [client library folder](/help/implementing/developing/introduction/clientlibs.md). フォルダーのカテゴリは、次のパターンに一致しなければなりません。
 
 ```javascript
 contexthub.module.[moduleType]
