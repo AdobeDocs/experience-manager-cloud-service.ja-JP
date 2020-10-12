@@ -39,12 +39,11 @@ ht-degree: 100%
 >使用可能なアクティビティの種類は、次のオプションによって決まります。
 >
 >* Adobe Target の接続に AEM 側で使用される Adobe Target テナント（clientcode）で `xt_only` オプションがオンになっている場合は、XT アクティビティ&#x200B;**のみ**&#x200B;を AEM で作成できます。
-   >
-   >
-* Adobe Target テナント（clientcode）で `xt_only` オプションが&#x200B;**オフ**&#x200B;になっている場合は、XT アクティビティと A/B アクティビティの&#x200B;**両方**&#x200B;を AEM で作成できます。
+>
+>* Adobe Target テナント（clientcode）で `xt_only` オプションが&#x200B;**オフ**&#x200B;になっている場合は、XT アクティビティと A/B アクティビティの&#x200B;**両方**&#x200B;を AEM で作成できます。
 >
 >
-**追加のメモ：**`xt_only` オプションは特定の Target テナント（clientcode）に適用される設定で、Adobe Target でのみ直接編集できます。このオプションは AEM で有効および無効にすることはできません。
+>**追加のメモ：**`xt_only` オプションは特定の Target テナント（clientcode）に適用される設定で、Adobe Target でのみ直接編集できます。このオプションは AEM で有効および無効にすることはできません。
 
 >[!CAUTION]
 >
