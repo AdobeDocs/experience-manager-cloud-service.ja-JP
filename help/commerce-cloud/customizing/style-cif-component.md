@@ -10,9 +10,9 @@ audience: developer
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 7fd7a8a5387c8b204e8e470a2571679b89701074
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2592'
 ht-degree: 5%
 
 ---
@@ -67,7 +67,7 @@ Venia Project [をコピーし](https://github.com/adobe/aem-cif-guides-venia) �
 
 ## クライアントライブラリとui.frontendモジュール {#introduction-to-client-libraries}
 
-ストアフロントのテーマ/スタイルのレンダリングを担当するCSSとJavaScriptは、AEMで、 [クライアントライブラリ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/developing/introduction/clientlibs.html) （短くはclientlib）によって管理されます。 クライアントライブラリは、プロジェクトのコード内でCSSとJavaScriptを整理し、ページに配信するメカニズムを提供します。
+ストアフロントのテーマ/スタイルのレンダリングを担当するCSSとJavaScriptは、AEMで、 [クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md) （短くはclientlib）によって管理されます。 クライアントライブラリは、プロジェクトのコード内でCSSとJavaScriptを整理し、ページに配信するメカニズムを提供します。
 
 ブランド固有のスタイルは、これらのクライアントライブラリで管理されるCSSを追加および上書きして、AEM CIFコアコンポーネントに適用できます。 クライアントライブラリが構造化され、ページに含まれる方法を理解することが重要です。
 
@@ -77,7 +77,7 @@ Venia Project [をコピーし](https://github.com/adobe/aem-cif-guides-venia) �
 
 ![ui.frontend to ui.apps architecture](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*コンパイル済みのCSSとJavaScriptは、Mavenのビルド中に、`ui.frontend`モジュールからクライアントライブラリとして`ui.apps`モジュールにコピーされます*
+*コンパイル済みのCSSとJavaScriptは、Mavenのビルド中に、 `ui.frontend` モジュールからクライアントライブラリとして `ui.apps` モジュールにコピーされます*
 
 ## Teaserスタイルを更新する {#ui-frontend-module}
 
@@ -249,7 +249,7 @@ Venia Project [をコピーし](https://github.com/adobe/aem-cif-guides-venia) �
    </html>
    ```
 
-   クライアントライブラリは、ページに配信される際にプレフィックスが付けら `/etc.clientlibs` れ、 [プロキシ](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) 経由で提供され、またはで機密事項が公開されないようにな `/apps` りま `/libs`す。
+   クライアントライブラリは、ページに配信される際にプレフィックスが付けら `/etc.clientlibs` れ、 [プロキシ](/help/implementing/developing/introduction/clientlibs.md) 経由で提供され、またはで機密事項が公開されないようにな `/apps` りま `/libs`す。
 
    注意 `venia/clientlibs/clientlib-site.min.css` と `venia/clientlibs/clientlib-site.min.js`。 これらは、モジュールから派生したコンパイル済みのCSSファイルとJavaScriptファイルで `ui.frontend` す。
 
@@ -482,6 +482,6 @@ CRXDE-Liteで、更新されたCSSファイルがデプロイされたこ [と�
 * [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)
 * [AEM CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components)
 * [ローカルAEM開発環境の設定](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [クライアント側ライブラリ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/developing/introduction/clientlibs.html)
+* [クライアント側ライブラリ](/help/implementing/developing/introduction/clientlibs.md)
 * [はじめに —AEM Sites](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [スタイルシステムを使用した開発](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
