@@ -2,9 +2,9 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用されるページを作成するときに使用します。
 translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3228'
 ht-degree: 55%
 
 ---
@@ -115,8 +115,8 @@ Creating Page Templates is primarily done with the [template console and templat
 >The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
 >
 >すべてのサンプルコンテンツページには `cq.shared` が含まれているので、それらをベースとするコンテンツには自動的に `cq.shared` が含められます。ただし、サンプルコンテンツをベースとせず、ゼロから独自のコンテンツページを作成する場合は、`cq.shared` 名前空間を含める必要があります。
-
-<!--See [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) for further information.-->
+>
+>詳しくは、[クライアント側ライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)を参照してください。
 
 >[!CAUTION]
 >
