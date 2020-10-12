@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
-translation-type: ht
-source-git-commit: 18c2f70acd33c83a0d98ccb658d3e9be18b34c8b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+workflow-type: tm+mt
 source-wordcount: '1358'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ Dispatcher キャッシュがクリアされない問題が発生した場合は
 
 ## クライアントサイドライブラリとバージョンの整合性 {#content-consistency}
 
-ページは、HTML、JavaScript、CSS、画像で構成されます。JS ライブラリ間の依存関係を考慮して、クライアントサイドライブラリ（clientlibs）フレームワークを活用し、JavaScript および CSS リソースを HTML ページに読み込むことをお勧めします。
+ページは、HTML、JavaScript、CSS、画像で構成されます。Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
 
 clientlibs フレームワークは、自動バージョン管理を提供します。つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、最新バージョンは、顧客がリリースをプッシュしたときに利用可能になります。この機能がないと、開発者は新しいバージョンのライブラリを参照して HTML を手動で変更する必要があります。同じライブラリを共有する HTML テンプレートが多い場合は特に負担がかかります。
 
