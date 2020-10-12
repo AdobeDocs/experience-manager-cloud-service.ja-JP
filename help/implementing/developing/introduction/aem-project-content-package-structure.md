@@ -2,7 +2,7 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 51e9a9a8c9d63583a5dc116f886d878d3f849687
+source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '2828'
 ht-degree: 74%
@@ -63,7 +63,7 @@ Oak indexes (`/oak:index`) are specifically managed by the AEM as a Cloud Servic
 + The `ui.apps` package contains all the code to be deployed and only deploys to `/apps`. `ui.apps` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + [コンポーネントの定義とHTL](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html) スクリプト
       + `/apps/my-app/components`
-   + JavaScript と CSS（クライアントライブラリ経由）
+   + JavaScript and CSS (via [Client Libraries](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [オーバーレイ](/help/implementing/developing/introduction/overlays.md) / `/libs`
       + `/apps/cq`、`/apps/dam/` など
