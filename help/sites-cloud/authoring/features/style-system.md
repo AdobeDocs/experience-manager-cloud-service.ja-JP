@@ -2,10 +2,10 @@
 title: スタイルシステム
 description: スタイルシステムを使用すると、テンプレート作成者がコンポーネントのコンテンツポリシーのスタイルクラスを定義し、コンテンツ作成者がページでのコンポーネントの編集時にそのスタイルクラスを選択できます。これらのスタイルは、1 つのコンポーネントの別の視覚的バリエーションとして使用することができるので、コンポーネントがより柔軟で扱いやすいものになります。
 translation-type: tm+mt
-source-git-commit: 130b372a9450c5c632715b098fd5c5ebf61bdf0d
+source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '1329'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 93%
 
 1. HTML 開発者は視覚的バリエーションごとに対応する CSS コードを（オプションで JS コードも）実装し、それらは定義済みとなります。
 
-1. AEM 開発者は、提供された CSS を（オプションで JS も）クライアントライブラリに配置し、デプロイします。<!--The AEM developer places the provided CSS (and optional JS) in a [Client Library](/help/sites-developing/clientlibs.md) and deploys it.-->
+1. AEM 開発者は、提供された CSS を（オプションで JS も）[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)に配置し、デプロイします。
 
 1. AEM 開発者またはテンプレート作成者は、ページテンプレートを設定し、スタイル設定された各コンポーネントのポリシーを編集します。また、定義済みの CSS クラスを追加し、スタイルごとにわかりやすい名前を付け、組み合わせが可能なスタイルを示します。
 
@@ -57,7 +57,7 @@ ht-degree: 93%
 
 ## 使用方法 {#use}
 
-この機能のデモをおこなうために、コアコンポーネントの [タイトルコンポーネント](https://www.adobe.com/go/aem_cmp_title_v2_jp)の [WKND](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) による実装を例として使用します。
+この機能のデモをおこなうために、コアコンポーネントの[タイトルコンポーネント](https://www.adobe.com/go/aem_cmp_title_v2_jp)の [WKND](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) による実装を例として使用します。
 
 次の[コンテンツ作成者として](#as-a-content-author)節と[テンプレート作成者として](#as-a-template-author)節では、WKND のスタイルシステムを使用してスタイルシステムの機能をテストする方法について説明します。
 
@@ -105,9 +105,7 @@ ht-degree: 93%
 
 >[!CAUTION]
 >
->コンポーネントポリシーのスタイルプロパティとして設定されている CSS クラス（および必要な JavaScript）を動作可能にするには、クライアントライブラリとしてデプロイする必要があります。
-
-<!--The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.-->
+>The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
 
 ## セットアップ {#setup}
 
@@ -117,19 +115,19 @@ ht-degree: 93%
 
 ### デザインダイアログの「スタイル」タブを有効にする {#enable-styles-tab-design}
 
-コンポーネントがAEMのスタイルシステムで動作し、デザインダイアログに「スタイル」タブを表示するには、コンポーネント開発者は、コンポーネントに次の設定を含む「スタイル」タブを含める必要があります。
+コンポーネントが AEM のスタイルシステムと連動し、デザインダイアログに「スタイル」タブが表示されるようにするには、コンポーネント開発者がコンポーネントに次の設定をおこなって「スタイル」タブを組み込む必要があります。
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->これは [、](/help/implementing/developing/introduction/overlays.md)Sling Resource Mangerを使用して [](/help/implementing/developing/introduction/sling-resource-merger.md)、オーバーレイを使用します。
+>これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
 
 コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが自動的に挿入されます。この他にコンポーネント自体でおこなう必要があることはありません。
 
 ### 編集ダイアログの「スタイル」タブを有効にする {#enable-styles-tab-edit}
 
-編集ダイアログの「スタイル」タブもオプションで使用できます。「デザインダイアログ」タブとは異なり、「編集」ダイアログのタブは、スタイルシステムの機能に必須ではありませんが、コンテンツ作成者がスタイルを設定するためのオプションの代替インターフェイスです。
+編集ダイアログの「スタイル」タブもオプションで使用できます。「デザインダイアログ」タブとは異なり、編集ダイアログのタブは、スタイルシステムが機能するのに必須ではなく、コンテンツ作成者がスタイルを設定するためのオプションの代替インターフェイスです。
 
 編集ダイアログのタブは、デザインダイアログのタブと同様の方法で組み込むことができます。
 
@@ -137,7 +135,7 @@ ht-degree: 93%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->これは [、](/help/implementing/developing/introduction/overlays.md)Sling Resource Mangerを使用して [](/help/implementing/developing/introduction/sling-resource-merger.md)、オーバーレイを使用します。
+>これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
 
 >[!NOTE]
 >
