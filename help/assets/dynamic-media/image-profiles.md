@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media イメージプロファイル
-description: Dynamic Mediaアンシャープマスク、スマート切り抜き、スマートスウォッチ、またはその両方の設定を含む画像プロファイルを作成し、プロファイルを画像アセットのフォルダーに適用します。
+description: アンシャープマスクのほか、スマート切り抜きとスマートスウォッチのどちらか一方または両方の設定を含む Dynamic Media イメージプロファイルを作成し、そのプロファイルを画像アセットのフォルダーに適用します。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 78%
+source-wordcount: '2737'
+ht-degree: 99%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 78%
 
 >[!IMPORTANT]
 >
->イメージプロファイルは PDF ファイルには適用されません。
+>画像プロファイルは、PDF、GIF、INDD(Adobe InDesign)ファイルには適用されません。
 
 ## 切り抜きツールオプション {#crop-options}
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-スマート切り抜きの座標は、縦横比に応じて異なります。つまり、画像プロファイルの各種スマート切り抜き設定で、画像プロファイルに追加されたサイズの縦横比が同じ場合、Dynamic Mediaに同じ縦横比が送信されます。 このため、同じ切り抜き領域を使用することをお勧めします。これにより、画像プロファイルで使用される様々なサイズに影響を与えません。
+スマート切り抜きの座標は、縦横比に応じて異なります。つまり、イメージプロファイルの各種スマート切り抜き設定で、イメージプロファイルに追加されたサイズの縦横比が同じ場合、同じ縦横比が Dynamic Media に送信されます。このため、同じ切り抜き領域を使用することをお勧めします。それにより、イメージプロファイルで使用される様々なサイズに影響を与えません。
 
 スマート切り抜きの生成のたびに、追加の処理が必要になることに注意してください。例えば、スマート切り抜きの縦横比を 6 つ以上追加すると、アセット取り込み速度が遅くなる可能性があります。また、システムの負荷が増大するおそれもあります。スマート切り抜きはフォルダーレベルで適用できるので、必要な場所で&#x200B;*のみ*&#x200B;フォルダーに使用することをお勧めします。
 
@@ -93,20 +93,20 @@ ht-degree: 78%
  </tbody>
 </table>
 
-Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)
+シャープニングについては、[画像のシャープニング](/help/assets/dynamic-media/assets/s7_sharpening_images.pdf)で説明しています。
 
 ## Dynamic Media イメージプロファイルの作成 {#creating-image-profiles}
 
 他のアセットタイプへの高度な処理パラメーターの定義については、[アセット処理の設定](config-dm.md#configuring-asset-processing)を参照してください。
 
-詳しくは、Dynamic Media [の画像プロファイルとビデオプロファイルについてを参照してください](/help/assets/dynamic-media/about-image-video-profiles.md)。
+詳しくは、[Dynamic Media のイメージプロファイルとビデオプロファイルについて](/help/assets/dynamic-media/about-image-video-profiles.md)を参照してください。
 
 [処理プロファイルを使用するためのデジタルアセットの編成のベストプラクティス](/help/assets/dynamic-media/best-practices-for-file-management.md)を参照してください。
 
 **Dynamic Media イメージプロファイルを作成するには**：
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
-1. Tap **[!UICONTROL Create]** to add a new Image Profile.
+1. 「**[!UICONTROL 作成]**」をタップして、新しいイメージプロファイルを追加します。
 1. プロファイル名を入力し、アンシャープマスクのほか、切り抜きとスウォッチのいずれかまたは両方の値を入力します。
 
    目的を具体的に表すプロファイル名を使用すると便利です。例えば、スウォッチのみを生成するプロファイルを作成する（つまり、スマート切り抜きが無効（オフ）になっていて、カラーと画像スウォッチが有効（オン）になっている）場合、「スマートスウォッチ」というプロファイル名を使用できます。
@@ -120,58 +120,58 @@ Sharpening is described in [Sharpening Images.](/help/assets/dynamic-media/asset
 ## Dynamic Media イメージプロファイルの編集または削除 {#editing-or-deleting-image-profiles}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
-1. Select the Image Profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. 削除するには、「**[!UICONTROL 画像処理プロファイルを削除]**」を選択します。
+1. 編集または削除するイメージプロファイルを選択します。編集するには、「**[!UICONTROL 画像処理プロファイルを編集]**」を選択します。削除するには、「**[!UICONTROL 画像処理プロファイルを削除]**」を選択します。
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. 編集の場合は、変更内容を保存します。削除の場合は、プロファイルの削除を確定します。
 
-## Applying a Dynamic Media Image Profile to folders {#applying-an-image-profile-to-folders}
+## Dynamic Media イメージプロファイルのフォルダーへの適用 {#applying-an-image-profile-to-folders}
 
-画像プロファイルをフォルダに割り当てると、サブフォルダは自動的にそのプロファイルを親フォルダから継承します。 つまり、1つのフォルダに割り当てることができる画像プロファイルは1つだけです。 アセットのアップロード、保存、使用およびアーカイブを行う場所のフォルダ構造は慎重に検討してください。
+フォルダーにイメージプロファイルを割り当てると、サブフォルダーは自動的に親フォルダーのプロファイルを継承します。つまり、フォルダーに 1 つのイメージプロファイルのみを適用すればよいことになります。そのため、アセットをアップロード、保存、使用およびアーカイブする場所のフォルダー構造については入念に検討してください。
 
-フォルダに別の画像プロファイルを割り当てた場合、新しいプロファイルは以前のプロファイルよりも優先されます。 以前に存在したフォルダーアセットは変更されません。 新しいプロファイルは、後でフォルダーに追加されるアセットに適用されます。
+フォルダーに異なるイメージプロファイルを割り当てた場合、新しいプロファイルが以前のプロファイルよりも優先されます。以前に存在していたフォルダーのアセットは変更されずに維持されます。新しいプロファイルは、その後にフォルダーに追加されるアセットに対して適用されます。
 
 プロファイルが割り当てられているフォルダーには、ユーザーインターフェイス上でカード内に表示されたときに、そのプロファイルの名前が示されます。
 
 <!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
-画像プロファイルは、特定のフォルダに適用することも、すべてのアセットにグローバルに適用することもできます。
+イメージプロファイルは、特定のフォルダーに適用することも、全アセットにグローバルに適用することもできます。
 
-後で変更した既存の画像プロファイルが既に存在するフォルダー内のアセットを再処理できます。 [処理プロファイルを編集した後のフォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
+後で変更した既存のイメージプロファイルが存在するフォルダー内のアセットを再処理できます。[処理プロファイルを編集した後のフォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
-### Applying Dynamic Media Image Profiles to specific folders {#applying-image-profiles-to-specific-folders}
+### 特定フォルダーへの Dynamic Media イメージプロファイルの適用 {#applying-image-profiles-to-specific-folders}
 
-You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. ここでは、両方の方法で画像プロファイルをフォルダに適用する方法について説明します。
+**[!UICONTROL ツール]**&#x200B;メニュー内から、またはフォルダー内にいる場合は「**[!UICONTROL プロパティ]**」から、特定のフォルダーにイメージプロファイルを適用できます。この節では、イメージプロファイルをフォルダーに適用するための方法を両方とも説明します。
 
 既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
 後で変更した既存のビデオプロファイルが存在するフォルダー内のアセットを再処理できます。[処理プロファイルを編集した後のフォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
-#### Applying Dynamic Media Image Profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### プロファイルユーザーインターフェイスを使用したフォルダーへの Dynamic Media イメージプロファイルの適用 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
-1. 1つまたは複数のフォルダに適用する画像プロファイルを選択します。
+1. 1 つ以上のフォルダーに適用するイメージプロファイルを選択します。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
 1. 「**[!UICONTROL 処理プロファイルをフォルダーに適用]**」をタップし、新規にアップロードするアセットを置くために使用するフォルダーを 1 つ以上選択し、「**[!UICONTROL 適用]**」をタップまたはクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
-#### Applying Dynamic Media Image Profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
+#### プロパティを使用したフォルダーへの Dynamic Media イメージプロファイルの適用 {#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply an Image Profile to.
+1. AEM のロゴをタップし、「**[!UICONTROL アセット]**」に移動した後、イメージプロファイルを適用するフォルダーに移動します。
 1. チェックマークをタップして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をタップします。
 1. 「**[!UICONTROL イメージプロファイル]**」タブをタップします。「**[!UICONTROL プロファイル名]**」ドロップダウンリストからプロファイルを選択し、「**[!UICONTROL 保存して閉じる]**」をタップします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Applying an Dynamic Media Image Profile globally {#applying-an-image-profile-globally}
+### Dynamic Media イメージプロファイルのフォルダーへのグローバルな適用 {#applying-an-image-profile-globally}
 
 特定のフォルダーにプロファイルを適用できるだけでなく、グローバルにプロファイルを適用することもできます。これにより、AEM Assets にアップロードされている、すべてのフォルダー内にあるすべてのコンテンツに、選択したプロファイルを適用できます。
 
 後で変更した既存のビデオプロファイルが存在するフォルダー内のアセットを再処理できます。[処理プロファイルを編集した後のフォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
-**Dynamic Media画像プロファイルをグローバルに適用するには**:
+**Dynamic Media イメージプロファイルをグローバルに適用するには**：
 
 1. 次のいずれかの操作をおこないます。
 
@@ -197,7 +197,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 **単一画像のスマート切り抜きまたはスマートスウォッチを編集するには**：
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch Image Profile applied to it.
+1. AEM ロゴをタップし、**[!UICONTROL アセット]**&#x200B;に移動した後、スマート切り抜きまたはスマートスウォッチのイメージプロファイルが適用されているフォルダーに移動します。
 
 1. フォルダーをタップして、その内容を開きます。
 1. スマート切り抜きまたはスマートスウォッチを調整したい画像をタップます。
@@ -214,7 +214,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 ## 複数の画像のスマート切り抜きまたはスマートスウォッチの編集 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-スマート切り抜きを含む画像プロファイルをフォルダに適用すると、そのフォルダ内のすべての画像に切り抜きが適用されます。 必要に応じて、複数の画像のスマート切り抜きウィンドウの位置の再調整またはサイズの変更を&#x200B;*手動*&#x200B;でおこなって、その焦点位置を細かく調整することができます。
+スマート切り抜きを含んだイメージプロファイルをフォルダーに適用すると、そのフォルダー内のすべての画像に切り抜きが適用されます。必要に応じて、複数の画像のスマート切り抜きウィンドウの位置の再調整またはサイズの変更を&#x200B;*手動*&#x200B;でおこなって、その焦点位置を細かく調整することができます。
 
 スマート切り抜きを編集して保存すると、その画像の切り抜きを使用しているすべての場所で変更が反映されます。
 
@@ -222,7 +222,7 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 **複数画像のスマート切り抜きまたはスマートスウォッチを編集するには**：
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch Image Profile applied to it.
+1. AEM ロゴをタップし、**[!UICONTROL アセット]**&#x200B;に移動した後、スマート切り抜きまたはスマートスウォッチのイメージプロファイルが適用されているフォルダーに移動します。
 1. フォルダーで、**[!UICONTROL その他のアクション]**（...）アイコンをタップし、「**[!UICONTROL スマート切り抜き]**」をタップします。
 
 1. **[!UICONTROL スマート切り抜きを編集]**&#x200B;ページで、次のいずれかの操作をおこないます。
@@ -263,23 +263,23 @@ You can apply an Image Profile to a folder from within the **[!UICONTROL Tools]*
 
 1. ページの右上隅にある「**[!UICONTROL 保存]**」をタップします。「**[!UICONTROL 閉じる]**」をタップして、アセットのフォルダーに戻ります。
 
-## Removing an Image Profile from folders {#removing-an-image-profile-from-folders}
+## フォルダーからのイメージプロファイルの削除 {#removing-an-image-profile-from-folders}
 
-フォルダから画像プロファイルを削除すると、サブフォルダはそのプロファイルの削除を親フォルダから自動的に継承します。 ただし、フォルダー内で行われたファイルの処理はすべて元のままです。
+フォルダーからイメージプロファイルを削除すると、サブフォルダーは自動的に親フォルダーのプロファイルの削除状態を継承します。ただし、フォルダー内で実行されたファイルの処理はそのまま維持されます。
 
-You can remove an Image Profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. この節では、両方の方法でフォルダから画像プロファイルを削除する方法について説明します。
+**[!UICONTROL ツール]**&#x200B;メニュー内から、またはフォルダー内にいる場合は「**[!UICONTROL プロパティ]**」で、特定のフォルダーからイメージプロファイルを削除できます。この節では、イメージプロファイルをフォルダーから削除するための方法を両方とも説明します。
 
-### Removing Dynamic Media Image Profiles from folders by way of Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### プロファイルユーザーインターフェイスを使用したフォルダーからの Dynamic Media イメージプロファイルの削除 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. AEM のロゴをタップし、**[!UICONTROL ツール／Assets／イメージプロファイル]**&#x200B;に移動します。
-1. 1つまたは複数のフォルダから削除する画像プロファイルを選択します。
+1. 1 つ以上のフォルダーから削除するイメージプロファイルを選択します。
 1. 「**[!UICONTROL フォルダーから処理プロファイルを削除]**」をタップし、プロファイルを削除するフォルダーを 1 つ以上選択して、「**[!UICONTROL 削除]**」をタップします。
 
-   フォルダー名の下に画像プロファイルが表示されなくなったので、画像フォルダーがフォルダーに適用されなくなったことを確認できます。
+   名前がフォルダー名の下に表示されなくなっていることで、イメージプロファイルがフォルダーに適用されていないことを確認できます。
 
-### Removing Dynamic Media Image Profiles from folders by way of Properties {#removing-image-profiles-from-folders-via-properties}
+### プロパティを使用したフォルダーからの Dynamic Media イメージプロファイルの削除 {#removing-image-profiles-from-folders-via-properties}
 
-1. Tap the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an Image Profile from.
+1. AEM のロゴをタップして「**[!UICONTROL アセット]**」に移動した後、イメージプロファイルを削除するフォルダーに移動します。
 1. チェックマークをタップして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をタップします。
 1. 「**[!UICONTROL イメージプロファイル]**」タブを選択します。
 1. 「**[!UICONTROL プロファイル名]**」ドロップダウンリストから「**[!UICONTROL なし]**」を選択し、「**[!UICONTROL 保存して閉じる]**」をタップします。
