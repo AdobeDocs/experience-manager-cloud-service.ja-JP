@@ -2,9 +2,9 @@
 title: Dynamic Media イメージプロファイル
 description: アンシャープマスクのほか、スマート切り抜きとスマートスウォッチのどちらか一方または両方の設定を含む Dynamic Media イメージプロファイルを作成し、そのプロファイルを画像アセットのフォルダーに適用します。
 translation-type: tm+mt
-source-git-commit: 35bf35cb68ffc82539fe65750486a6db98480207
+source-git-commit: 867303fd42ed73d7c7dfb5cc1e3612f05ffea10f
 workflow-type: tm+mt
-source-wordcount: '2737'
+source-wordcount: '2738'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->画像プロファイルは、PDF、GIF、INDD(Adobe InDesign)ファイルには適用されません。
+>画像プロファイルは、PDF、アニメーションGIF、INDD(Adobe InDesign)ファイルには適用されません。
 
 ## 切り抜きツールオプション {#crop-options}
 
