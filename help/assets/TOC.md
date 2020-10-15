@@ -1,13 +1,13 @@
 ---
 sub-product: Adobe Experience Manager Assets as a Cloud Service
-user-guide-title: Cloud Serviceガイドとしてのアセット
-breadcrumb-title: Assets Guide
-user-guide-description: Understand how to use and administer Experience Manager Assets as a Cloud Service.
+user-guide-title: Assets as a Cloud Service ガイド
+breadcrumb-title: Assets ガイド
+user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 translation-type: tm+mt
 source-git-commit: 98f914fbae9fa6291a8330fe0fe6ebbf51984de1
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 78%
+source-wordcount: '420'
+ht-degree: 80%
 
 ---
 
