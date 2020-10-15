@@ -1,13 +1,13 @@
 ---
 sub-product: AEM as a Cloud Service への移行
 user-guide-title: AEM as a Cloud Service への移行
-breadcrumb-title: Move Guide
-user-guide-description: Understand the transition journey to Cloud Service.
+breadcrumb-title: 移動ガイド
+user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 translation-type: tm+mt
 source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 94%
+source-wordcount: '81'
+ht-degree: 95%
 
 ---
 
