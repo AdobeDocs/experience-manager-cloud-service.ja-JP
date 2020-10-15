@@ -1,13 +1,13 @@
 ---
 sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
-breadcrumb-title: 導入ガイド
+breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
 source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 78%
       + [SPA WKNDチュートリアル](developing/spa/wknd-tutorial.md)
       + [Reactの使用を開始する](developing/spa/getting-started-react.md)
       + [Angularを使用する前に](developing/spa/getting-started-angular.md)
-      + [スパディープディブス](developing/spa/deep-dives.md)
+      + [SPAディープディブ](developing/spa/deep-dives.md)
       + [AEM向けSPAの開発](developing/spa/developing.md)
       + [SPA エディターの概要](developing/spa/editor-overview.md)
       + [SPA ブループリント](developing/spa/blueprint.md)
