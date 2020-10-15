@@ -3,10 +3,10 @@ title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5a21785883d652508b9fc12c14ff1884e358115f
+source-git-commit: 2ef262dc8ac3b1c0ae2ac9e77d18664eb83270f7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2201'
+ht-degree: 94%
 
 ---
 
@@ -33,8 +33,8 @@ ht-degree: 0%
    |  | [!DNL Sites] as a Cloud Service | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a Cloud Service** | サポート対象 | サポート対象 | サポート対象 |
-   | AMS 上の **[!DNL Experience Manager]6.5[!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]On-Premise** | サポートなし | サポートなし | サポートなし |
+   | AMS 上の **[!DNL Experience Manager]6.5 [!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | サポートなし | サポートなし | サポートなし |
 
 ### サポートされているファイル形式 {#mimetypes}
 
@@ -195,3 +195,4 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 * [!UICONTROL コンテンツファインダー]からリモートアセットを検索できない場合は、必要な役割と権限が設定されていることを確認してください。
 * リモート DAM から取得したアセットは、1 つ以上の理由で Web ページに発行できない場合があります。リモートサーバーに存在しない、取得する適切なアクセス許可がない、ネットワーク障害、などが原因の可能性があります。アセットがリモート DAM から削除されていないことを確認してください。適切な権限が設定され、前提条件が満たされていることを確認します。アセットをページに追加し直して、再公開してください。アセット取得時のエラーについては、[非同期ジョブのリスト](/help/operations/asynchronous-jobs.md)を確認してください。
+* ローカル [!DNL Sites] 展開からリモートDAM展開にアクセスできない場合は、クロスサイトCookieが許可されていることを確認してください。 クロスサイトCookieがブロックされている場合、の2つのデプロイメントは認証されない [!DNL Experience Manager] 可能性があります。 例えば、匿名モード [!DNL Google Chrome] では、サードパーティcookieがブロックされる場合があります。 で、アドレスバー [!DNL Chrome]の「目」アイコンをクリックしてcookieを許可するか、サードパーティcookieを有効にする方 [法に関するヘルプを参照してください](https://support.google.com/chrome/answer/95647)。
