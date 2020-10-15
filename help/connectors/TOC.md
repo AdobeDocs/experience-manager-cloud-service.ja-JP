@@ -1,12 +1,12 @@
 ---
 sub-product: AEM as a Cloud Service のコネクタ
 user-guide-title: AEM as a Cloud Service のコネクタ
-breadcrumb-title: Connectors Guide
-user-guide-description: Learn how to integrate Connectors into Experience Manager as a Cloud Service.
+breadcrumb-title: コネクタガイド
+user-guide-description: Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。
 translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
-source-wordcount: '35'
+source-wordcount: '49'
 ht-degree: 100%
 
 ---
