@@ -2,10 +2,10 @@
 title: ビルド環境の詳細
 description: ビルド環境の詳細 —Cloud Services
 translation-type: tm+mt
-source-git-commit: 34087724d41de1fc4303ddbbb92122760d360e77
+source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 82%
+source-wordcount: '732'
+ht-degree: 84%
 
 ---
 
@@ -74,7 +74,7 @@ Customers who want to use Java 11 in their projects can do so using the [Apache 
 >Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
 
 >[!NOTE]
->Cloud Managerプロジェクトのビルドでは、引き続きJava 8を使用してMavenを呼び出すので、 [Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) などのプラグインを介してツールチェーンプラグインに設定されたJavaバージョンを確認または適用することはできません。
+>Cloud Manager プロジェクトのビルドでは、引き続き Java 8 を使用して Maven を呼び出します。そのため、[Apache Maven Enforcer プラグイン](https://maven.apache.org/enforcer/maven-enforcer-plugin/)などのプラグインを介してツールチェーンプラグインに設定された Java バージョンを確認または適用することはできません。これらのプラグインは使用しないでください。
 
 ## 環境変数 {#environment-variables}
 
@@ -111,7 +111,7 @@ CLI を使用して変数を設定するには、次のようなコマンドを�
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。パイプラインあたり 200 個の変数という制限があります。名前はそれぞれ 100 文字未満、値はそれぞれ 2048 文字未満にする必要があります。
+変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。パイプラインあたり200個の変数に制限があります。各名前は100文字未満にする必要があり、文字列型変数の場合は2048文字未満、secretString型変数の場合は500文字未満にする必要があります。
 
 通常、`Maven pom.xml` ファイル内で使用する場合は、次のような構文を使用して、これらの変数を Maven プロパティにマップすると便利です。
 
@@ -187,5 +187,4 @@ CLI を使用して変数を設定するには、次のようなコマンドを�
 同じ方法を、RubyGems の `gem` や Python パッケージの `pip` など、特定の言語用のパッケージのインストールにも使用できます。
 
 >[!NOTE]
->
 >この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM環境にインストールされたシステムパッケージが必要な場合は、Adobeの担当者にお問い合わせください。
