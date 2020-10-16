@@ -3,10 +3,10 @@ title: アクセシビリティ [!DNL Experience Manager Assets]
 description: 障害を持つユーザーにとって、Cloud Service [!DNL Adobe Experience Manager] のアクセシビリティ機能がどのように役立つかを知る。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d0be8ff6c8f9e0c37bd4dc9f66d80e19ab7e1508
+source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 
 ---
 
@@ -30,22 +30,24 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 # Accessibility in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
-Adobeは、障害を持つユーザーを含むすべてのユーザー向けの商品作成に取り組んでいます。 [!DNL Adobe Experience Manager] は、すべてのタイプのユーザーのニーズに合わせて継続的に拡張されます。 [!DNL Experience Manager] 規格に準拠する詳細な規格に関する準拠情報を公開し、製品のアクセシビリティ機能の概要を示し、準拠レベルを説明します。 これは、ユーザーが遵守の程度を理解するのに役立ちます。
+[!DNL Adobe Experience Manager] コンテンツ作成者や発行者は、素晴らしいエクスペリエンスをWeb上で提供できます。 Adobeは、のアクセシビリティを向上させ、障害を持つクリエイターを対象に取り組んでい [!DNL Experience Manager]ます。 このソフトウェアは、あらゆる種類のユーザーのニーズを満たすように継続的に拡張され、視覚、聴覚、運動、または他の障害を持つ個人を含む世界的な標準に準拠しています。
 
-[!DNL Adobe Experience Manager] は、次の標準に対する様々なレベルのサポートを提供します。
+[!DNL Experience Manager] 準拠する規格を説明する準拠情報を公開し、製品のアクセシビリティ機能の概要を示し、準拠レベルを説明します。 これらのアクセシビリティ準拠レポートは、準拠の程度を [!DNL Experience Manager] ユーザーが理解するのに役立ちます。 で行った機能強化により、すべてのユーザーは、キーボード、スクリーンリーダー、拡大鏡、その他の支援技術を使用して、簡単にインターフェイスを使用できます。 [!DNL Assets]
+
+[!DNL Experience Manager] は、次の標準に対する様々なレベルのサポートを提供します。
 
 * [Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/).
-* [第508条を改訂](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
-* [WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/)。
+* [再生法第508条を改正](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
+* [Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) by W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
 
-準拠レベルの詳細を示すレポートにアクセスするには、すべてのAdobeソリューションの [アクセシビリティ準拠レポート ](https://www.adobe.com/accessibility/compliance.html) (ACR)ページを参照してください。
+準拠レベルの詳細を示すレポートにアクセスするには、すべてのAdobeソリューションの [アクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance.html) (ACR)ページを参照してください。
 
 ## 支援テクノロジー {#at-support}
 
-障害を持つユーザーは、Webコンテンツにアクセスする際に、ハードウェアとソフトウェアを頻繁に使用します。 これらのツールは、支援テクノロジーと呼ばれます。 [!DNL Adobe Experience Manager Assets] 次の種類の支援テクノロジーを使用して、ソフトウェアの主要機能を使用するユーザーにサポートを提供します。
+障害を持つユーザーは、Webコンテンツにアクセスする際に、ハードウェアとソフトウェアを頻繁に使用します。 これらのツールは、支援テクノロジーと呼ばれます。 [!DNL Experience Manager Assets] ソフトウェアの主要機能を使用する場合、次の種類の支援テクノロジー(AT)を使用できます。
 
-* スクリーンリーダー
+* スクリーンリーダーとスクリーン虫めがね。
 * 音声認識ソフトウェア
 * キーボードの使用 — ナビゲーションとショートカット。
 * スイッチコントロール、更新可能な点字ディスプレイ、その他のコンピュータ入力デバイスを含む支援ハードウェア。
@@ -75,8 +77,7 @@ Adobeは、障害を持つユーザーを含むすべてのユーザー向けの
 
 ### アセットのキーボードショートカット {#keyboard-shortcuts}
 
-<!-- TBD: Add here only those keyboard shortcuts that work for/with Assets. Do with Oct release.
--->
+アセットの次のアクションは、リストに表示されているキーボードショートカットを使用します。 コンソールに適用されるほとんどのキーボードショートカットは、 [!DNL Experience Manager] アセットにも適用されます。 See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). キーボードショートカットを [有効または無効にする方法を参照してください](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 | ユーザーインターフェイスまたはシナリオ | キーボードショートカット | アクション |
 |---|---|---|
@@ -84,38 +85,37 @@ Adobeは、障害を持つユーザーを含むすべてのユーザー向けの
 | アセットユーザーインターフェイスの列表示 | 左向き矢印キーと右向き矢印キー | 現在のフォルダーの上または下のファイルとフォルダーに移動します。 |
 | アセット内のフォルダの参照 | `/` | Omnisearchボックスを開いて検索を呼び出します。 |
 | アセットコンソール | ` | サイドレールを切り替え |
-| アセットコンソール | Alt + 1 | コンテンツツリーを開きます。 |
-| アセットコンソール | Alt + 2 | 「 [!UICONTROL ナビゲーション] 」(Navigation)を参照してください。 |
-| アセットコンソール | Alt + 3 | 選択したアセットの [!UICONTROL タイムラインを表示] 。 |
-| アセットコンソール | Alt + 4 | 選択したアセットのライブコピーの参照を開きます。 |
-| アセットコンソール | Alt + 5 | 検索を呼び出して、選択したフォルダー内で検索を行います。 |
+| アセットコンソール | `Alt + 1` | コンテンツツリーを開きます。 |
+| アセットコンソール | `Alt + 2` | 左側の [!UICONTROL ナビゲーション] (Navigation)パネルを開きます。 |
+| アセットコンソール | `Alt + 3` | 選択したアセットの [!UICONTROL タイムラインを表示] 。 |
+| アセットコンソール | `Alt + 4` | 選択したアセットのライブコピーの参照を開きます。 |
+| アセットコンソール | `Alt + 5` | 検索を呼び出して、選択したフォルダー内で検索を行います。 |
 | アセットまたはフォルダが選択されている | Backspace | 選択したアセットまたはフォルダーを削除します。 |
 | アセットまたはフォルダが選択されている | `p` | 選択したアセットのプロパティページを開きます。 |
 | アセットまたはフォルダが選択されている | `e` | 選択したアセットを編集します。 |
 | アセットまたはフォルダが選択されている | `m` | 選択したアセットを移動します。 |
-| アセットまたはフォルダが選択されている | Ctrl + C | 選択したアセットをコピーします。 |
-| アセットまたはフォルダが選択されている | Esc | 選択を解除します。 |
-| ダイアログボックスが開き、フォーカスがある | Esc | ダイアログボックスを閉じます。 |
-| DAM内のフォルダー内 | Ctrl + V | コピーしたアセットを貼り付けます。 |
-| アセットコンソール | Ctrl + A | すべてのアセットを選択します。 |
-| アセットプロパティページ | Ctrl + S | 変更を保存します。 |
+| アセットまたはフォルダが選択されている | `Ctrl + c` | 選択したアセットをコピーします。 |
+| アセットまたはフォルダが選択されている | `Esc` | 選択を解除します。 |
+| ダイアログボックスが開き、フォーカスがある | `Esc` | ダイアログボックスを閉じます。 |
+| DAM内のフォルダー内 | `Ctrl + v` | コピーしたアセットを貼り付けます。 |
+| アセットコンソール | `Ctrl + A` | すべてのアセットを選択します。 |
+| アセットプロパティページ | `Ctrl + S` | 変更を保存します。 |
 | アセットコンソール | `?` | キーボードショートカットのリストを参照してください。 |
-
-コンソールに適用されるほとんどのキーボードショートカットは、 [!DNL Experience Manager] アセットにも適用されます。 See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). キーボードショートカットを [有効または無効にする方法を参照してください](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 ## サインインとユーザーインター [!DNL Assets] フェイスの操作 {#login}
 
 ユーザーは、キーボードを使用してログイン先に移動し、ログインフィールドに入力することができます。 ログインページのユーザ名とパスワードの組み合わせが正しくないことに起因するエラーメッセージは、エラーが発生するたびにスクリーンリーダーによって通知されます。
 
-ログイン後、DAMユーザーは、キーボードを使用してユーザーインター [!DNL Assets] フェイスに移動できます。 キーボードのナビゲーション順序は、左から右、上から下です。 キーボードを使用してナビゲーションを行う場合、焦点を合わせた操作可能なオプションは、カラーコントラストが高くハイライト表示され、スクリーンリーダーによってナレーションが行われます。 メニュー内のフォーカスされたオプションの状態（展開または折りたたみ）が、スクリーンリーダーによってアナウンスされます。
+ログイン後、DAMユーザーは、キーボードを使用してユーザーインター [!DNL Assets] フェイス内を移動できます。 左側のパネル、メニュー、ユーザープロファイル、検索バー、ファイルとフォルダー、管理および設定などのユーザーインターフェイス要素は、キーボードを使用して移動できます。 キーボードのナビゲーション順序は、左から右、上から下です。 キーボードを使用してナビゲーションを行う場合、フォーカス時にアクション可能なオプションが、カラーコントラストの高いハイライトで表示され、スクリーンリーダーによってナレーションされます。 メニュー内のフォーカスされたオプションの状態（展開、折りたたみ、混在など）は、必要に応じて、スクリーンリーダーによって通知されます。 また、アクション可能なオプションの目的は、外観やUIの配置などではなく、スクリーンリーダーによって通知されます。
 
-ユーザーがメニューからヘルプまたはユーザープロファイルのオプションを展開すると、スクリーンリーダーから適切なオプションまたはステータスが通知されます。 ユーザーがユーザープロファイルオプションを展開すると、キーボードを使用して使用可能なオプションを選択できます。 例えば、ユーザーが別のユーザーを装うことができます。 ユーザーインターフェイスオプションとエラーメッセージ
+ユーザーがメニューからヘルプまたはユーザープロファイルのオプションを展開すると、スクリーンリーダーから適切なオプションまたはステータスが通知されます。 ユーザーがユーザープロファイルオプションを展開すると、キーボードを使用して使用可能なオプションを選択できます。 例えば、管理者は別のユーザーを装うことができます。 ユーザーが [!UICONTROL ヘルプ] オプションから文字列を検索した場合、ナレーターが「ヘルプの検索」を通知して、検索が進行中であることを示します。
 
-![Experience Managerユーザーインターフェイスでのトップオプションのキーボードナビゲーション](assets/keyboard-navigation-in-aem.gif)
+<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
-*図：Experience Managerユーザーインターフェイスの上部にあるオプションを、`Tab`keyを使用して移動します。*
+![Keyboard navigation of top options in Experience Manager user interface](assets/keyboard-navigation-in-aem.gif)
 
-ユーザーが [!UICONTROL ヘルプ] オプションから文字列を検索した場合、ナレーターが「ヘルプの検索」を通知して、検索が進行中であることを示します。
+*Figure: Navigating through the options at the top of Experience Manager user interface using `Tab` key.*
+-->
 
 ## 既存のアセットと表示関連情報の参照 {#browse}
 
@@ -143,9 +143,9 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * キーを使用して移動する際のユーザーフォーカスは、バージョンプレビューの閉じるオプションに移動できます。 `Tab`
 * キーボードを使用して参照する場合、強調表示された操作可能なユーザーインターフェイスオプションは、コントラストを強化し、より目立つ視覚的な焦点を持ちます。 これにより、焦点を絞った領域をユーザーがより識別しやすくなります。
 * サムネール表示からクイックアクションアイコンを削除する `Esc` ためにキーを使用しても、最後にフォーカスされたアイテムからはキーボードフォーカスが削除されません。
-* アセットを選択した状態で、Alt + 4キーボードショートカットを押すと、参照リストが開きます。 キーを使用して、ゼロ以外の参照エントリ間を移動でき `Tab` ます。
-* アセットに対するコメントは、アセットタイムラインで使用できます。 キーボードでアクセスできます。
-* Experience Managerの表示設定には、キーボードからアクセスできます。 ユーザーは、矢印キーを使用して使用可能なカードのサイズ間を移動し、選択してTabキーで移動し、既存の表示設定表示ー内の他の要素を設定できます。
+* アセットを選択した状態で、キーボードショートカットを押すと、左側のレールに `Alt + 4` 参照  リストが開きます。 キーを使用して、ゼロ以外の参照エントリ間を移動でき `Tab` ます。 ゼロ以外の参照エントリを参照するだけで、作業やキー操作を省力化できます。
+* アセットに対するコメントは、アセットタイムラインで使用できます。 キーボードまたはキーボードショートカットを使用して左側のレールにアクセスすると、アクセスできます。
+* [!UICONTROL の表示設定][!DNL Experience Manager] は、キーボードを使用してアクセスできます。 ユーザーは、矢印キーを使用して使用可能なカードのサイズ間を移動し、選択してTabキーで移動し、既存の表示設定表示ー内の他の要素を設定できます。
 
 <!-- TBD: Gradually,  as more enhancements are done in these categories, add more content.
 
@@ -156,7 +156,6 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * List the a11y fixes in workflows to configure and administer [!DNL Experience Manager Assets]?
 * Some enhancements in Processing profiles creation or application to a folder?
 * Some enhancements to metadata properties UI?
-
 -->
 
 ## Manage digital assets {#manage-assets}
@@ -169,7 +168,7 @@ CRUD操作、アセットのダウンロード、メタデータの追加など�
 
 * [!UICONTROL アセットのプロパティページの「保存して閉じる] 」オプションが、キーボードを使用してアクセスできるようになりました。
 * スクリーンリーダーは、アセットのプロパティボタンの「基本」タブで選択したタグを削除し、選択したタグを削除するオプションを読み上げます。
-* 日付選択ポップアップダイアログは、キーボードを使用して使用できます。 日付選択は、オン時間とオフ時間を設定するために使用します。
+* 日付選択ポップアップダイアログは、キーボードを使用して使用できます。 日付選択ユーザーインターフェイス要素は、オン時間とオフ時間を設定するために使用します。
 * キーボードを使用したドラッグ機能は、スクリーンリーダーの参照モードのメタデータスキーマエディターで正しく機能します。
 * ユーザーは、キーボードを使用して、フォルダープロパティの「権限」タブにある「閉じたユーザーグループ」の下の追加ユーザーまたはグループフィールドにフォーカスを移動できます。
 
@@ -206,11 +205,14 @@ CRUD操作、アセットのダウンロード、メタデータの追加など�
    * リストに表示されているすべての提案に移動できます。
    * 「電子メールアドレス」フィールドと「検索」フィ追加ールドに対して表示された提案の説明
 
-## アクセシビリティ [!DNL Dynamic Media] {#dynamic-media-accessibility}
+<!-- TBD: With more info from the DM team. A few Sev1 issues are fixed and if those are shipped, then mention those here.
 
-ダイナミックメディアを使用する場合、次の機能を使用するとアクセスしやすくなります。
+## Accessibility in [!DNL Dynamic Media] {#dynamic-media-accessibility}
 
-* ユーザは、キーアセット内 `Flyout`の詳細ビューアを使用して、 、 、 、 、 、 、 `InlineZoom`、 `Shoppable_Banner`、および `Zoom_dark``Zoom_light``ZoomVertical_dark``ZoomVertical_light``Tab`[!DNL Dynamic Media]オプションにフォーカスできます。
+When using Dynamic Media, the following functionality helps make it accessible:
+
+* A user can focus to `Flyout`, `InlineZoom`, `Shoppable_Banner`, `Zoom_dark`, `Zoom_light`, `ZoomVertical_dark`, and `ZoomVertical_light` options using `Tab` key in asset details Viewers in [!DNL Dynamic Media].
+-->
 
 ## アクセス可能なドキュメント {#accessible-docs}
 
@@ -224,15 +226,12 @@ CRUD操作、アセットのダウンロード、メタデータの追加など�
 <!-- 
 ## More resources for accessibility {#a11y-resources}
 
-TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share or leave a link here.
+TBD: If anyone is aware of AEM-specific resources that help users leverage any accessibility features or use any assistive technology with AEM, please share a reference with asgupta@adobe.com.
 -->
-
-## リリースの機能強化 [!DNL Experience Manager Assets] {#rn-fixes}
-
-個々のリリースで行われた個々の拡張機能のリストについては、各リリースの [リリースノート](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/home.html) を参照してください。
 
 >[!MORELIKETHIS]
 >
->* [AEMアクセシビリティガイダンス](/help/onboarding/accessibility/web-accessibility.md)
->* [Adobeソリューションの準拠レポート](https://www.adobe.com/accessibility/compliance.html)
+>* [個々のリリースで行われた個々の機能強化のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>* [AEMのアクセシビリティガイダンス](/help/onboarding/accessibility/web-accessibility.md)。
+>* [Adobeソリューションの準拠レポート](https://www.adobe.com/accessibility/compliance.html)。
 
