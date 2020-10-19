@@ -3,9 +3,9 @@ title: アクセシビリティ [!DNL Experience Manager Assets]
 description: 障害を持つユーザーにとって、Cloud Service [!DNL Adobe Experience Manager] のアクセシビリティ機能がどのように役立つかを知る。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ### アセットのキーボードショートカット {#keyboard-shortcuts}
 
-アセットの次のアクションは、リストに表示されているキーボードショートカットを使用します。 コンソールに適用されるほとんどのキーボードショートカットは、 [!DNL Experience Manager] アセットにも適用されます。 See [Keyboard Shortcuts for Consoles](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/essentials/keyboard-shortcuts.html). キーボードショートカットを [有効または無効にする方法を参照してください](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+アセットの次のアクションは、リストに表示されているキーボードショートカットを使用します。 コンソールに適用されるほとんどのキーボードショートカットは、 [!DNL Experience Manager] アセットにも適用されます。 See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). キーボードショートカットを [有効または無効にする方法を参照してください](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
 
 | ユーザーインターフェイスまたはシナリオ | キーボードショートカット | アクション |
 |---|---|---|
@@ -192,7 +192,7 @@ CRUD操作、アセットのダウンロード、メタデータの追加など�
 
 ## アセットの共有 {#share-assets}
 
-<!-- TBD: Accessibility in DA, BP, AAL? Asked CCE team for AAL content?
+<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed there's no content.
 -->
 
 アセットを共有する場合、次の機能によってアクセシビリティが向上します。
