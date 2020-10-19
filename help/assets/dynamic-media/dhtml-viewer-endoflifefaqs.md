@@ -2,10 +2,10 @@
 title: DHTML ビューアのサポート終了に関する FAQ
 description: 2014 年 1 月 31 日をもって、Scene7 の DHTML ビューアプラットフォームは正式にサポート終了となります。このページでは、新しい HTML5 ビューアプラットフォームへの移行に備えて、よくある質問にお答えします。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
+source-wordcount: '1628'
+ht-degree: 97%
 
 ---
 
@@ -123,4 +123,4 @@ DHTML ベースのビューアを実稼動環境で引き続き利用してい�
 
 **詳細についての問い合わせ先を教えてください。**
 
-この FAQ で解決しなかった疑問がある場合は、サポート（[s7support@adobe.com](mailto:s7support@adobe.com)）またはアドビのアカウントマネージャーまでお問い合わせください。
+このFAQですべての質問に回答しなかった場合は、Admin Consoleを [使用してサポート事例を作成するか](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 、Adobeのアカウントマネージャーにお問い合わせください。
