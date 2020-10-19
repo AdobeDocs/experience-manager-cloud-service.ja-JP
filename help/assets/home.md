@@ -1,16 +1,16 @@
 ---
-title: Cloud Serviceガイドとしてのアセット
+title: Assets as a Cloud Service ガイド
 description: Adobe Experience Manager Assets as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 181e1f1526726154232f25eac95db05e290756d6
+source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '352'
 ht-degree: 85%
 
 ---
 
 
-# Cloud Serviceガイドとしてのアセット {#aem-assets-guide}
+# Assets as a Cloud Service ガイド {#aem-assets-guide}
 
 以下に、Experience Manager Assets as a Cloud Service のセルフヘルプリソースを示します。
 
@@ -40,7 +40,7 @@ ht-degree: 85%
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
-* [最近のドキュメントの更新](https://helpx.adobe.com/jp/experience-manager/documentation-updates.html#AEMasaCloudService)
+* [最近のドキュメントの更新](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html#aem-as-a-cloud-service)
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)
 * [コアコンポーネントのドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
