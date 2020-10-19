@@ -1,11 +1,11 @@
 ---
 title: スマートイメージング
 description: スマートイメージングでは、各ユーザーに固有の閲覧特性を利用して、ユーザーのエクスペリエンス用に最適化された適切な画像を自動的に提供することで、より良いパフォーマンスとエンゲージメントをもたらします。
-translation-type: ht
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
-source-wordcount: '1720'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -111,8 +111,8 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 スマートイメージングを使用するためのリクエストを開始する必要があります。自動的には有効になりません。
 
-1. テクニカルサポートリクエストを開始します（電子メール：`s7support@adobe.com`）。
-1. サポートリクエストには、以下の情報を記入してください。
+1. [Admin Consoleを使用して、サポートケースを作成します。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. サポートケースに次の情報を入力します。
 
    1. 主要連絡先の氏名、電子メールアドレス、電話番号。
    1. スマートイメージングを有効にする全ドメイン（`images.company.com` や `mycompany.scene7.com`）。
@@ -146,8 +146,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 リクエストは、テクニカルサポートに到着した順序で、待ちリストに従って処理されます。
 
 >[!NOTE]
->
->リードタイムが長くなる場合がありますが、それは、スマートイメージングを有効化するためには、アドビによるキャッシュのクリアが必要になるからです。そのため、処理できる移行の数は、常にほんの数件です。
+リードタイムが長くなる場合がありますが、それは、スマートイメージングを有効化するためには、アドビによるキャッシュのクリアが必要になるからです。そのため、処理できる移行の数は、常にほんの数件です。
 
 ## スマートイメージングを使用するための切り替えに際しては、どんなリスクがありますか？{#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
@@ -169,8 +168,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 1. このテストを、様々なブラウザーやユーザー条件で繰り返します。
 
 >[!NOTE]
->
->すべての画像が変換されるわけではありません。スマートイメージングは、パフォーマンスを向上させるために変換が必要かどうかを判別します。予期されるパフォーマンスゲインがない場合や、形式が JPEG や PNG でない場合、画像は変換されません。
+すべての画像が変換されるわけではありません。スマートイメージングは、パフォーマンスを向上させるために変換が必要かどうかを判別します。予期されるパフォーマンスゲインがない場合や、形式が JPEG や PNG でない場合、画像は変換されません。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
