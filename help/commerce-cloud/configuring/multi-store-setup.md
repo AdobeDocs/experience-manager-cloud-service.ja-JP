@@ -2,7 +2,7 @@
 title: マルチストアの設定
 description: マルチストアの設定
 translation-type: tm+mt
-source-git-commit: 94c6abef36b6add300ba3b24855ebf3edf10e1ed
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 3%
@@ -32,7 +32,7 @@ AEMサイトとAEM CIFコアコンポーネントを専用のストア表示に�
 
 3. 次の手順に従って、CIFCloud Service設定の子設定を作成します。
 
-   * AEMで、ツール/一般/設定ブラウザに移動します。
+   * AEMで、ツール/一般/ [設定ブラウザに移動します。](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 作成したベース設定を選択します
    * 上記のポイント2で説明した手順を使用して、新しい設定を作成します
 
@@ -41,7 +41,7 @@ AEMサイトとAEM CIFコアコンポーネントを専用のストア表示に�
 4. AEMサイトへの子設定の割り当て
 
    * AEM Sitesコンソールに移動
-   * サイト構造の地域または言語ルート( Veniaサンプルページ _の場合は_ /content/venia/usまたは/content/venia/us/en
+   * サイト構造の地域または言語ルート(Veniaサンプルページ _の場合は_ /content/venia/usまたは/content/venia/us/en
    * ページを選択し、ページのプロパティを開きます
    * 「詳細設定」タブを選択します。
    * セクションで、手順で作成した設定を `Configuration` 選択します
