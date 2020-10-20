@@ -2,10 +2,10 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用されるページを作成するときに使用します。
 translation-type: tm+mt
-source-git-commit: 056fb27108d8f78acfc4658daa92912a48112f1f
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '3228'
-ht-degree: 55%
+ht-degree: 54%
 
 ---
 
@@ -156,7 +156,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 新しいフォルダーを作成するには、次のいずれかの方法を使用できます。
 
 * プログラムで自動的に、または CRXDE Lite を使用して作成する
-* 設定ブラウザーの使用
+* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## CRXDE Lite の使用 {#using-crxde-lite}
 
@@ -189,7 +189,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 
 ### 設定ブラウザーの使用 {#using-the-configuration-browser}
 
-1. **グローバルナビゲーション**／**ツール**／**設定ブラウザー**&#x200B;に移動します。
+1. **グローバルナビゲーション**／**ツール**／[**設定ブラウザー**&#x200B;に移動します。](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
    The existing folders are listed to the left including the `global` folder.
 
@@ -203,7 +203,7 @@ In a standard AEM instance the `global` folder already exists in the template co
 
 >[!NOTE]
 >
->グローバルフォルダーにテンプレートを作成する場合は、設定ブラウザーでグローバルフォルダーを編集し、「**編集可能なテンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
+>[設定ブラウザーで](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 、グローバルフォルダーを編集し **、このフォルダー内にテンプレートを作成する場合は、** 編集可能なテンプレート(Editable Templates)オプションをアクティブにできますが、ベストプラクティスは推奨されません。
 
 ### ACL とグループ {#acls-and-groups}
 
