@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 translation-type: tm+mt
-source-git-commit: b0d0ada16662c6edf6068b9de8a296ccfd410216
+source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 94%
@@ -34,7 +34,7 @@ The update of the [AEM version](/help/implementing/deploying/aem-version-updates
 >[!NOTE]
 >ローカルマシン上と Adobe Cloud 上のアプリケーションの動作には、運用上のわずかな違いがあります。これらのアーキテクチャの違いは、ローカル開発時に考慮される必要があり、結果的に、クラウドインフラストラクチャにデプロイしたときに動作が異なることになる可能性があります。こうした違いがあるので、実稼動環境で新しいカスタムコードをロールアウトする前に、開発環境とステージ環境で徹底的なテストを実行することが重要です。
 
-内部リリースのカスタムコードを開発するには、[AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) の関連バージョンをダウンロードし、インストールする必要があります。AEM as a Cloud Service Dispatcher ツールを使用する方法について詳しくは、[このページ](/help/implementing/dispatcher/overview.md)を参照してください。
+内部リリースのカスタムコードを開発するには、[AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) の関連バージョンをダウンロードし、インストールする必要があります。AEM as a Cloud Service Dispatcher ツールを使用する方法について詳しくは、[このページ](/help/implementing/dispatcher/disp-overview.md)を参照してください。
 
 次のビデオでは、AEM as a Cloud Service にコードをデプロイする方法の概要を説明します。
 
