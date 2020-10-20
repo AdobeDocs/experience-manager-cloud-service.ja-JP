@@ -2,10 +2,10 @@
 title: コンテンツフラグメントモデル
 description: コンテンツフラグメントモデルは、構造化コンテンツを含むコンテンツフラグメントを作成するために使用します。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 100%
 
 コンテンツフラグメントモデルを有効にするには、次の操作を実行する必要があります。
 
-* Configuration Manager でのコンテンツフラグメントモデル使用の有効化
+* 設定ブラウザーでのコンテンツフラグメントモデルの使用の有効化
 * アセットフォルダーへの設定の適用
 
-### Configuration Manager でのコンテンツフラグメントモデルの有効化 {#enable-content-fragment-models-in-configuration-manager}
+### Enable Content Fragment Models in Configuration Browser {#enable-content-fragment-models-in-configuration-browser}
 
-[新しいコンテンツフラグメントモデルを作成する](#creating-a-content-fragment-model)には、最初に設定マネージャーを使用してコンテンツフラグメントモデルを有効にする&#x200B;**必要があります**。
+To [create a new Content Fragment Model](#creating-a-content-fragment-model) you **must** first enable them using the [Configuration Browser:](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 1. **ツール**／**一般**&#x200B;に移動し、**設定ブラウザー**&#x200B;を開きます。
 2. Web サイトに適した場所を選択します。
@@ -97,11 +97,10 @@ ht-degree: 100%
    ![フィールドのプロパティ](assets/cfm-models-05.png)
 
    >[!NOTE]
-   >
-   >データタイプが&#x200B;**複数行テキスト**&#x200B;の場合、「**デフォルトの種類**」を次のいずれかとして定義できます。
-   >* **リッチテキスト**
-   >* **Markdown**
-   >* **プレーンテキスト**
+   データタイプが&#x200B;**複数行テキスト**&#x200B;の場合、「**デフォルトの種類**」を次のいずれかとして定義できます。
+   * **リッチテキスト**
+   * **Markdown**
+   * **プレーンテキスト**
 
    指定しなかった場合は、デフォルト値の&#x200B;**リッチテキスト**&#x200B;がこのフィールドで使用されます。
    コンテンツフラグメントモデルで「**デフォルトの種類**」を変更した場合、その影響が既存の関連コンテンツフラグメントに及ぶのは、そのフラグメントがエディターで開かれて保存された後です。
@@ -119,8 +118,7 @@ ht-degree: 100%
 ## コンテンツフラグメントモデルの削除 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->コンテンツフラグメントモデルを削除すると、依存するフラグメントが影響を受ける可能性があります。
+コンテンツフラグメントモデルを削除すると、依存するフラグメントが影響を受ける可能性があります。
 
 コンテンツフラグメントモデルを削除するには：
 
@@ -130,8 +128,7 @@ ht-degree: 100%
 1. モデルを選択し、次にツールバーの「**削除**」を選択します。
 
    >[!NOTE]
-   >
-   >モデルが参照されている場合は、警告が表示されます。適切に対処します。
+   モデルが参照されている場合は、警告が表示されます。適切に対処します。
 
 ## コンテンツフラグメントモデルの公開 {#publishing-a-content-fragment-model}
 
@@ -145,5 +142,4 @@ ht-degree: 100%
 1. モデルを選択し、次にツールバーの「**公開**」を選択します。
 
    >[!NOTE]
-   >
-   >まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+   まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
