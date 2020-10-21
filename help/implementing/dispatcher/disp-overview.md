@@ -2,10 +2,10 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: fe4202cafcab99d22e05728f58974e1a770a99ed
+source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
 workflow-type: tm+mt
-source-wordcount: '3824'
-ht-degree: 100%
+source-wordcount: '4073'
+ht-degree: 91%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 100%
 
 Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下を提供します。
 
-* Dispatcher 用の Maven プロジェクトにインクルードする設定ファイルを含むバニラファイル構造。
-* ローカルで Dispatcher 設定を検証するためのツール。
+* ディスパッチャー用のMavenプロジェクトに含める設定ファイルを含むバニラファイル構造です。
+* Cloud ServiceがサポートするディレクティブとしてAEMのみがディスパッチャー設定に含まれていることを検証するためのツール。        また、ツールでは構文が正しいかどうかも検証され、Apacheで開始が正常に行われます。
 * Dispatcher をローカルで実行する Docker イメージ。
 
 ## ツールのダウンロードと抽出 {#extracting-the-sdk}
@@ -194,13 +194,13 @@ Uncompressing DispatcherSDKv<version>  100%
 
 以下では、内部リリースのデプロイ時に Cloud Manager で関連付けられた品質ゲートを渡せるように、設定をローカルで検証する方法について説明します。
 
-## Dispatcher 設定のローカル検証 {#local-validation-of-dispatcher-configuration}
+## ディスパッチャー設定でサポートされるディレクティブのローカル検証 {#local-validation-of-dispatcher-configuration}
 
 検証ツールは、Mac OS、Linux または Windows バイナリとして `bin/validator` の SDK で使用可能で、リリースのビルドとデプロイ時に Cloud Manager が実行する検証と同じものが実行できます。
 
 次のように呼び出します：`validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-ツールは Apache と Dispatcher の設定を検証します。`conf.d/enabled_vhosts/*.vhost` のパターンに合うすべてのファイルをスキャンし、許可リストに登録されたディレクティブのみ使用されているかどうかを確認します。Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
+ディスパッチャーの設定が、クラウドサービスとしてAEMがサポートする適切なディレクティブを使用しているかどうかを検証するには、パターンを持つすべてのファイルをスキャン `conf.d/enabled_vhosts/*.vhost`します。 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
 
 ```
 $ validator whitelist
@@ -261,11 +261,9 @@ Cloud manager validator 1.0.4
 
 検証ツールは、許可リストに登録されていない Apache ディレクティブの使用禁止を報告するのみということに注意してください。Apache 設定の構文や意味の問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
 
-検証エラーが報告されなければ、設定のデプロイメント準備は完了です。
-
 ツールによって出力される一般的な検証エラーをデバッグする場合のトラブルシューティング手法を次に示します。
 
-**unable to locate a`conf.dispatcher.d`subfolder in the archive**
+**unable to locate a `conf.dispatcher.d` subfolder in the archive**
 
 アーカイブには、`conf.d` フォルダーと `conf.dispatcher.d` フォルダーが含まれている必要があります。アーカイブにはプレフィックス `etc/httpd` を&#x200B;**使用しないでください**。
 
@@ -347,13 +345,41 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
 
+## Apache httpdが開始できるように、ディスパッチャー設定構文のローカル検証 {#local-validation}
+
+ディスパッチャーモジュール設定に、サポートされているディレクティブのみが含まれていると判断したら、Apacheが開始できるように構文が正しいことを確認する必要があります。 このテストを行うには、ドッカーをローカルにインストールする必要があります。 AEMを実行する必要はありません。
+
+次に示すように `validate.sh` スクリプトを使用します。
+
+```
+$ validate.sh src/dispatcher
+Phase 1: Dispatcher validator
+2019/06/19 16:02:55 No issues found
+Phase 1 finished
+Phase 2: httpd -t validation in docker image
+Running script /docker_entrypoint.d/10-create-docroots.sh
+Running script /docker_entrypoint.d/20-wait-for-backend.sh
+Waiting until aemhost is available
+aemhost resolves to xx.xx.xx.xx
+Running script /docker_entrypoint.d/30-allowed-clients.sh
+# Dispatcher configuration: (/etc/httpd/conf.dispatcher.d/dispatcher.any)
+/farms {
+...
+}
+Syntax OK
+Phase 2 finished
+```
+
+スクリプトは次の処理を行います。
+
+1. 前の節のバリデータを実行し、サポートされているディレクティブのみが含まれていることを確認します。 設定が有効でない場合、スクリプトは失敗します。
+2. 構文が正しいかどうか `httpd -t command` をテストし、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります
+
 ## Apache および Dispatcher 設定のローカルでのテスト {#testing-apache-and-dispatcher-configuration-locally}
 
-Apache と Dispatcher の設定をローカルでテストすることもできます。前述のように、Docker をローカルにインストールし、設定が検証に合格する必要があります。
+Apache と Dispatcher の設定をローカルでテストすることもできます。ドッカーをローカルにインストールし、前述のとおり検証に合格するように設定する必要があります。
 
-バリデーターは、「`-d`」パラメーターを使用して、Dispatcher が必要とするすべての設定ファイルを含むフォルダーを出力します。
-
-その後、`docker_run.sh` スクリプトは設定を使用してコンテナを開始し、そのフォルダーを参照できるようになります。
+「`-d`」パラメーターを使用して検証ツールを実行します。このパラメーターは、ディスパッチャーが必要とするすべての設定ファイルを含むフォルダーを出力します。 次に、 `docker_run.sh` スクリプトはそのフォルダーを指定できます。 ポート番号（下の例では、8080）を指定してディスパッチャーエンドポイントを公開すると、コンテナを設定で開始します。
 
 ```
 $ validator full -d out src/dispatcher
@@ -372,7 +398,35 @@ Starting httpd server
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-ログレベルは、`conf.d/variables/global.var` の変数 `DISP_LOG_LEVEL` および `REWRITE_LOG_LEVEL` で定義します。詳しくは、[ログに関するドキュメント](/help/implementing/developing/introduction/logging.md#apache-web-server-and-dispatcher-logging)を参照してください。
+The following strategy can be used to increase the log output for the dispatcher module and see the results of the `RewriteRule` evaluation in both local and cloud environments.
+
+これらのモジュールのログレベルは、変数の `DISP_LOG_LEVEL` と `REWRITE_LOG_LEVEL` によって定義されます。これらは、`conf.d/variables/global.vars` ファイルに設定できます。関連する箇所は以下のとおりです。
+
+```
+# Log level for the dispatcher
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1
+# Default value: Warn
+#
+# Define DISP_LOG_LEVEL Warn
+ 
+# Log level for mod_rewrite
+#
+# Possible values are: Error, Warn, Info, Debug and Trace1 - Trace8
+# Default value: Warn
+#
+# To debug your RewriteRules, it is recommended to raise your log
+# level to Trace2.
+#
+# More information can be found at:
+# https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging
+#
+# Define REWRITE_LOG_LEVEL Warn
+```
+
+ディスパッチャーをローカルで実行すると、ログは端末出力に直接出力されます。 ほとんどの場合、これらのログをDEBUGにする必要があります。これは、Dockerの実行時にDebugレベルをパラメーターとして渡すことで行うことができます。 例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+
+クラウド環境のログは、Cloud Managerのログサービスを通じて公開されます。
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
