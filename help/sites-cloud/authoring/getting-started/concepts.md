@@ -2,9 +2,9 @@
 title: オーサリングに関する概念
 description: AEM でのオーサリングの概念です
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '349'
 ht-degree: 100%
 
 ---
@@ -27,10 +27,6 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 ![オーサー、パブリッシャー、ディスパッチャーの模式図](/help/sites-cloud/authoring/assets/author-publish.png)
 
 オーサー環境では、AEM の機能は AEM のオーサリング UI を通じて利用できます。パブリッシュ環境では、ユーザーに公開するインターフェイスの全体的なルックアンドフィールをデザインします。
-
->[!NOTE]
->
->AEM ドキュメントの公開には、AEM そのものが使用されます。
 
 ## オーサー環境 {#author-environment}
 
@@ -65,4 +61,4 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 
 ## Dispatcher {#dispatcher}
 
-Web サイトの訪問者に対するパフォーマンスを最適化するには、**[Dispatcher](/help/implementing/dispatcher/overview.md)**を使用してロードバランシングとキャッシングを実装します。
+Web サイトの訪問者に対するパフォーマンスを最適化するには、**[Dispatcher](/help/implementing/dispatcher/overview.md)** を使用してロードバランシングとキャッシングを実装します。
