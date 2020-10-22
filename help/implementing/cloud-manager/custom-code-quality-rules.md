@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 translation-type: tm+mt
-source-git-commit: 437652f9ed5d0fc4abae22e470b650bd1c2bedb6
+source-git-commit: 457ee90f0c0eeb9325cab0c66694862772390611
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 100%
+source-wordcount: '2267'
+ht-degree: 99%
 
 ---
 
@@ -16,8 +16,7 @@ ht-degree: 100%
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
 >[!NOTE]
->
->ここで提供されるコードサンプルは、例としてのみ使用されています。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQuebeの概念と品質ルールについて詳しくは [、「概念](https://docs.sonarqube.org/7.4/user-guide/concepts/) 」を参照してください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
