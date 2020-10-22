@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 61fa965f14e566976db8ac6475553b9a9d3ed43a
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 100%
+source-wordcount: '209'
+ht-degree: 97%
 
 ---
 
@@ -27,6 +27,18 @@ ht-degree: 100%
       + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
       + [プログラムの作成](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [サンドボックスプログラム](getting-access-to-aem-in-cloud/sandbox-programs.md)
+   + Cloud Manager の使用 {#using-cloud-manager}
+      + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
+      + [CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)
+      + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
+   + テスト結果について {#test-results}
+      + [概要](/help/implementing/cloud-manager/overview-test-results.md)
+      + [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
+      + [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)
+      + [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
+      + [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
+   + [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)
+   + [通知について](/help/implementing/cloud-manager/notifications.md)
    + AEM アプリケーションプロジェクトの作成 {#create-application-project}
       + [ウィザードの使用](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
