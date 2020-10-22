@@ -1,10 +1,10 @@
 ---
 title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
-description: '[!DNLAdobe Experience Manager] 2020.9.0のCloud Serviceリリースノートとして。'
+description: '[!DNL Adobe Experience Manager] を2020.9.0のCloud Serviceリリースノートとして追加しました。'
 translation-type: tm+mt
-source-git-commit: 5fb87f82c092552aa5e1c4b569399ec0bbc0da3b
+source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 11%
 
 ---
@@ -22,7 +22,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* シングルページアプリケーション(SPA)エディターのJavaScript SDK [がオープンソースになりました。](/help/implementing/developing/spa/reference-materials.md)
+* シングルページアプリケーション(SPA)エディタJavaScript SDK [がオープンソースになりました。](/help/implementing/developing/spa/reference-materials.md)
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -87,7 +87,7 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 ### 新機能 {#what-is-new-cra}
 
-* Cloud Readiness Analyzer(CRA)には開始状態コンソールがあり、ユーザーがクリックしてCRAを実行するための明示的な「 **レポートの生成** 」ボタンを表示します。
+* [Cloud Readiness Analyzer(CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) には、開始状態コンソールがあり、ユーザーがクリックしてCRAを実行するための明示的な「 **レポートの生成** 」ボタンを表示します。
 
 * CRA UIの実行中は進行状況が表示されます。 分析中の項目と実行中に見つかった結果が表示されます。
 
@@ -103,7 +103,7 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツ転送ツール(CTT)は、Azure Blob Store Data Storeをサポートしています。
+* [コンテンツ転送ツール(CTT)は](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 、Azure Blob Store Data Storeをサポートしています。
 
 * CTTユーザーインターフェイスには、30秒ごとに概要ページをリロードする自動リロード機能があります。
 
