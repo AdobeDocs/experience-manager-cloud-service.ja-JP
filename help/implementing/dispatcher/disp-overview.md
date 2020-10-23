@@ -2,9 +2,9 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
+source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4073'
 ht-degree: 88%
 
 ---
@@ -35,7 +35,8 @@ Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下�
 ## ツールのダウンロードと抽出 {#extracting-the-sdk}
 
 Cloud ServiceSDKとしての [AEMに含まれるディスパッチャーツールは、](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)ソフトウェア配布 [](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) ポータルのzipファイルからダウンロードできます。 新しいディスパッチャーツールのバージョンで利用できる新しい設定は、AEMのそのバージョンを実行するクラウド環境にクラウドでデプロイするために使用できます。
-/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdSDKを解凍します。これにより、macOS/LinuxとWindowsの両方のディスパッチャーツールがバンドルされます。
+
+SDKを解凍します。これにより、macOS/LinuxとWindowsの両方のディスパッチャーツールがバンドルされます。
 
 **macOS/Linuxの場合**、ディスパッチャーツールのアーティファクトを実行可能にして実行します。 保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己抽出されます。
 
