@@ -2,10 +2,10 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 720c1cdb6c26bb023a6cbf12aaa935645b0e8661
+source-git-commit: 2bf7578ec5431f98ab7cfff55770766228ba63e2
 workflow-type: tm+mt
-source-wordcount: '4073'
-ht-degree: 91%
+source-wordcount: '4082'
+ht-degree: 88%
 
 ---
 
@@ -34,18 +34,19 @@ Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下�
 
 ## ツールのダウンロードと抽出 {#extracting-the-sdk}
 
-Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルの zip ファイルからダウンロードできます。なお、SDK リストにアクセスできるのは、AEM Managed Services 環境または AEM as a Cloud Service 環境のあるユーザーに限られます。新しい Dispatcher ツールバージョンで利用可能な新しい設定は、そのバージョン以降の AEM が実行されているクラウド環境にデプロイするときに使用できます。
+Cloud ServiceSDKとしての [AEMに含まれるディスパッチャーツールは、](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)ソフトウェア配布 [](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) ポータルのzipファイルからダウンロードできます。 新しいディスパッチャーツールのバージョンで利用できる新しい設定は、AEMのそのバージョンを実行するクラウド環境にクラウドでデプロイするために使用できます。
+/Users/raiman/Documents/experience-manager-cloud-service.en/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.mdSDKを解凍します。これにより、macOS/LinuxとWindowsの両方のディスパッチャーツールがバンドルされます。
 
-**macOS および Linux の場合**、シェルスクリプトをマシン上のフォルダーにダウンロードし、実行可能にして実行します。保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己抽出されます。
+**macOS/Linuxの場合**、ディスパッチャーツールのアーティファクトを実行可能にして実行します。 保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己抽出されます。
 
 ```bash
-$ chmod +x DispatcherSDKv<version>.sh
-$ ./DispatcherSDKv<version>.sh
+$ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
+$ ./aem-sdk-dispatcher-tools-<version>-unix.sh
 Verifying archive integrity...  100%   All good.
-Uncompressing DispatcherSDKv<version>  100% 
+Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Windows の場合**、zip アーカイブをダウンロードして抽出します。
+**Windowsの場合**、Dispatcher Toolingのzipアーカイブを抽出します。
 
 ## ファイル構造 {#file-structure}
 
@@ -379,7 +380,7 @@ Phase 2 finished
 
 Apache と Dispatcher の設定をローカルでテストすることもできます。ドッカーをローカルにインストールし、前述のとおり検証に合格するように設定する必要があります。
 
-「`-d`」パラメーターを使用して検証ツールを実行します。このパラメーターは、ディスパッチャーが必要とするすべての設定ファイルを含むフォルダーを出力します。 次に、 `docker_run.sh` スクリプトはそのフォルダーを指定できます。 ポート番号（下の例では、8080）を指定してディスパッチャーエンドポイントを公開すると、コンテナを設定で開始します。
+すべてのディスパッチャー設定ファイルを含むフォルダーを出力するパラメーターを使用して、検証ツールを実行します(前述とは `validator.sh``-d` 異なります)。 次に、スクリプトを実行し、その `docker_run.sh` フォルダーを引数として渡します。 ポート番号を指定する（次を参照）。8080)でディスパッチャーエンドポイントを公開するために、Dockerコンテナが開始され、設定と共にディスパッチャーを実行します。
 
 ```
 $ validator full -d out src/dispatcher
