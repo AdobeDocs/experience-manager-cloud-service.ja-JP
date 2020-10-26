@@ -2,9 +2,9 @@
 title: Sling アダプターの使用
 description: Sling には、Adaptable インターフェイスを実装するオブジェクトを適切に変換するアダプターパターンが用意されています
 translation-type: tm+mt
-source-git-commit: 4201207acb48ab61892f4dd5de05d7f5f9f7ba83
+source-git-commit: 8826fde91a2ab0be0fe7850ae20f46ba023cdf55
 workflow-type: tm+mt
-source-wordcount: '2437'
+source-wordcount: '2442'
 ht-degree: 65%
 
 ---
@@ -370,4 +370,4 @@ Value[]</a></td>
 
 #### その他 {#other}
 
-さらに、Sling、JCR、OCM では、カスタム OCM（` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`Object Content Mapping）オブジェクト用の [](https://jackrabbit.apache.org/object-content-mapping.html) も提供しています。
+さらに、Sling、JCR、OCM では、カスタム OCM（[`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)Object Content Mapping）オブジェクト用の [](https://jackrabbit.apache.org/object-content-mapping.html) も提供しています。
