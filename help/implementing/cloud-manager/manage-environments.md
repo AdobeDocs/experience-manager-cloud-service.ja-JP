@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: c015c631f6ad988b1482b45281a2ed9840e6af45
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 95%
+source-wordcount: '830'
+ht-degree: 90%
 
 ---
 
@@ -62,6 +62,16 @@ ht-degree: 95%
 
    >[!NOTE]
    >実稼動以外のパイプラインをまだセットアップしていない場合は、*概要*&#x200B;画面に、実稼動以外のパイプラインの作成に使用できるカードが表示されます。
+
+
+### 環境の表示 {#viewing-environment}
+
+概要ページの **環境** ・カードは、最大3環境までリストできます。
+
+「すべてを **表示** 」ボタンを選択して **** 環境の概要ページに移動し、環境の完全なリストを表に表示できます。
+
+![](assets/environment-view1.png)
+
 
 ## 環境の更新 {#updating-dev-environment}
 
