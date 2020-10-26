@@ -2,9 +2,9 @@
 title: 設定と設定ブラウザ
 description: AEM設定と、AEMでのワークスペース設定の管理方法について理解します。
 translation-type: tm+mt
-source-git-commit: 174648c78b71ef60d2d2507c3c4fbf18bbdac647
+source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1496'
 ht-degree: 2%
 
 ---
@@ -19,13 +19,13 @@ AEM設定は、AEMの設定を管理し、ワークスペースとして機能�
 設定は、2つの異なる視点から考察できます。
 
 * [管理者は](#configurations-administrator) 、設定のグループを定義および管理する際に、AEM内のワークスペースとして設定を使用します。
-* [開発者は](#configurations-developer) 、Sling Context-Aware Configurationsを実装し、AEMで設定を保持および検索する基本的な設定メカニズムを使用します。
+* [開発者は](#configurations-developer) 、AEMで設定を保持および検索する設定を実装する基本的な設定メカニズムを使用します。
 
-管理者の表示上、設定とはAEMで設定を管理するワークスペースの作成方法を指します。一方、開発者はAEMがリポジトリ内で設定を維持し、調べる方法を理解する必要があります。
+まとめ：管理者の表示上、設定とは、AEMで設定を管理するワークスペースの作成方法を指します。一方、開発者は、AEMがリポジトリ内でこれらの設定を使用および管理する方法を理解する必要があります。
 
 設定は、ユーザーの視点に関係なく、AEMでは2つの主な目的を果たします。
 
-* 設定により、ユーザーのグループに対して特定の機能が有効になります。
+* 設定により、特定のユーザーグループに対して特定の機能が有効になります。
 * 設定によって、これらの機能のアクセス権が定義されます。
 
 ## 管理者としての設定 {#configurations-administrator}
@@ -38,6 +38,8 @@ AEM管理者と作成者は、設定をワークスペースと見なすこと�
 * [コンテキストハブセグメント](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 * [編集可能なテンプレート](/help/sites-cloud/authoring/features/templates.md)
+
+### 例 {#administrator-example}
 
 例えば、管理者が編集可能なテンプレートの2つの設定を作成できます。
 
@@ -122,7 +124,7 @@ AEM管理者と作成者は、設定をワークスペースと見なすこと�
 
 コンテンツは、プロパティを介して関連する設定を参照し `cq:conf` ます。 AEMは、コンテンツとコンテキスト `cq:conf` プロパティに基づいて検索を実行し、適切な設定を見つけます。
 
-### 簡単な例 {#example}
+### 例 {#developer-example}
 
 この例では、DAM設定に関心のあるアプリケーションコードがあるとします。
 
@@ -193,7 +195,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 設定の使用 {#using-configurations}
 
-AEMの設定は、Sling Context-Aware設定に基づいています。 Slingバンドルには、コンテキストに応じた設定の取得に使用できるサービスAPIが用意されています。 コンテキスト対応設定とは、前の例で [説明したように、コンテンツリソースまたはリソースツリーに関連する設定です。](#example)
+AEMの設定は、Sling Context-Aware設定に基づいています。 Slingバンドルには、コンテキストに応じた設定の取得に使用できるサービスAPIが用意されています。 コンテキスト対応設定とは、前の例で [説明したように、コンテンツリソースまたはリソースツリーに関連する設定です。](#developer-example)
 
 コンテキスト対応の設定、例、およびその使用方法の詳細については、Slingのドキュメントを [参照してください。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
