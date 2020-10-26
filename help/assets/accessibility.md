@@ -3,9 +3,9 @@ title: アクセシビリティ [!DNL Experience Manager Assets]
 description: 障害を持つユーザーにとって、Cloud Service [!DNL Adobe Experience Manager] のアクセシビリティ機能がどのように役立つかを知る。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ffdecc8439b96b3bfcfd0571304a7917135684ca
+source-git-commit: 726c63a9bb3426bea324abec87b5e9f7d5e9e755
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1894'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Original scope of this article for Core Assets for all a11y topics is around the
 
 ## キーボードの使用のサポート {#keyboard-use}
 
-クリック可能なユーザーインターフェイス要素や、ポインターを使用したアクションが可能なユーザーインターフェイス要素の多くは、キーボードを使用して操作することもできます。 キーボードを使用すると、UI要素に焦点を当て、適切なアクションを実行できます。 ユーザーは、キーボードショートカットを使用して、UI要素にフォーカスしなくても、コマンドやアクションを直接トリガーできます。 例えば、ユーザーは、キーボードを使用してUIコントロールに移動し、Returnキーを押し、キーボードショートカットを押すことで、左側にアセットのタイムラインを開くことができ `alt + 2` ます。
+クリック可能なユーザーインターフェイス要素や、ポインターを使用したアクションが可能なユーザーインターフェイス要素の多くは、キーボードを使用して操作することもできます。 キーボードを使用すると、UI要素に焦点を当て、適切なアクションを実行できます。 ユーザーは、キーボードショートカットを使用して、UI要素にフォーカスしなくても、コマンドやアクションを直接トリガーできます。 例えば、ユーザーは、キーボードを使用してUIコントロールに移動し、キーボードショートカットを押し、キーボードショートカットを押すことで、左側にアセットのタイムライン `Return` を開くことができ `Alt + 2` ます。
 
 <!-- TBD items:
 
