@@ -2,7 +2,7 @@
 title: 開発とページの差分
 description: ページの相違機能の仕組みと開発者への影響の理解
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 57a9026dd944547196e53fecb1cf1213ed793af7
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 44%
@@ -30,7 +30,7 @@ ht-degree: 44%
 
 この一時コンテンツをクリーンアップするために、クリーンアップタスクが自動的に実行されます。
 
-## 権限 {#permissions}
+## 制限事項 {#limitations}
 
 相違はDOM比較によってクライアント側で行われるので、相違処理は簡単ですが、開発者が考慮する必要のあるいくつかの制限があります。
 
