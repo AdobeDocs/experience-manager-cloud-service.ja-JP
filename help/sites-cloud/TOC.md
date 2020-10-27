@@ -1,10 +1,11 @@
 ---
+solution: Experience Manager, Experience Manager Sites
 sub-product: AEM as a Cloud Service のコンテンツのオーサリング
 user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
 breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 translation-type: tm+mt
-source-git-commit: d5b92dda6b79407988eea3126f10fe875a0176ea
+source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 100%
