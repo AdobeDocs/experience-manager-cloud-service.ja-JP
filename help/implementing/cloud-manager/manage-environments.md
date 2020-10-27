@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
+source-git-commit: 7b452b260bfaee159fe4d228b704f69b12780805
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 90%
+source-wordcount: '850'
+ht-degree: 88%
 
 ---
 
@@ -67,9 +67,17 @@ ht-degree: 90%
 
 概要ページの **環境** ・カードは、最大3環境までリストできます。
 
-「すべてを **表示** 」ボタンを選択して **** 環境の概要ページに移動し、環境の完全なリストを表に表示できます。
+1. 「すべて **を表示** 」ボタンを選択して、 **** 環境の概要ページに移動し、環境のリストが完全に含まれた表を表示します。
 
-![](assets/environment-view1.png)
+   ![](assets/environment-view-1.png)
+
+1. **環境** ページには、既存の環境のリストがすべて表示されます。
+
+   ![](assets/environment-view-2.png)
+
+1. 環境の詳細を表示するリストの環境のいずれかを選択します。
+
+   ![](assets/environment-view-3.png)
 
 
 ## 環境の更新 {#updating-dev-environment}
