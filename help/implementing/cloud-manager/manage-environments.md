@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 6c719411ffa7bd814a515e302024ac433f173207
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '828'
 ht-degree: 90%
 
 ---
@@ -38,7 +38,6 @@ ht-degree: 90%
 
 ## 環境の追加 {#adding-environments}
 
-
 1. 環境を追加するには、「**環境を追加**」をクリックします。このボタンは、**環境**画面で使用できます。
    ![](assets/environments-tab.png)
 
@@ -64,7 +63,7 @@ ht-degree: 90%
    >実稼動以外のパイプラインをまだセットアップしていない場合は、*概要*&#x200B;画面に、実稼動以外のパイプラインの作成に使用できるカードが表示されます。
 
 
-### 環境の表示 {#viewing-environment}
+## 表示環境 {#viewing-environment}
 
 概要ページの **環境** ・カードは、最大3環境までリストできます。
 
