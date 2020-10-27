@@ -2,7 +2,7 @@
 title: Cloud Serviceリリース2020.10.0としてのAEMのCloud Managerのリリースノート
 description: Cloud Serviceリリース2020.10.0としてのAEMのCloud Managerのリリースノート
 translation-type: tm+mt
-source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
+source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 54%
@@ -31,7 +31,7 @@ AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月1�
 * 環境ごとの環境変数の数が 200 に増えました。
 
 * 概要ページの環境カードには、最大3環境のリストが表示されます。 「すべてを **表示** 」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-Refer to [Viewing Environments](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) for more details.
+詳しくは、「 [環境の](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 表示」を参照してください。
 
 
 ### バグ修正 {#bug-fixes-cloud-manager}
