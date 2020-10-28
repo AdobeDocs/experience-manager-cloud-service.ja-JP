@@ -2,9 +2,9 @@
 title: Cloud Serviceとしての2020.10.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNL Adobe Experience Manager] を2020.10.0のCloud Serviceリリースノートとして追加しました。'
 translation-type: tm+mt
-source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
+source-git-commit: 12883e87d4aee796b23c366e77651134dafb8f4c
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '855'
 ht-degree: 21%
 
 ---
@@ -66,7 +66,7 @@ Content to come
 
 * CIF Cloud config UIで、/libと/apps/の設定用の「保存して閉じる」ボタンが表示される問題を修正しました。 ただし、これらは読み取り専用なので、「閉じる」ボタンのみが表示されるように修正されました。
 
-### Cloud Manager {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 * 環境ページのデザインが変更されました。
 
@@ -77,7 +77,7 @@ Content to come
 * 環境ごとの環境変数の数が 200 に増えました。
 
 * 概要ページの環境カードには、最大3環境のリストが表示されます。 「すべてを **表示** 」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-
+詳しくは、「 [環境の](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 表示」を参照してください。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
