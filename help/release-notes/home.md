@@ -2,7 +2,7 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service のリリースノート。
 description: 'Adobe Experience Manager (AEM) as a Cloud Service のリリースノート。 '
 translation-type: tm+mt
-source-git-commit: 0fa6d88b4df97b17256f42ad2eb1752c141e02a2
+source-git-commit: b65c7db00ad1ae34c30c979b688daca5280963c1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 93%
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 | 製品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| バージョン | 2020.9.0 |
+| バージョン | 2020.10.0 |
 | 型 | 継続的な更新 |
 | 公開日 | 継続的アップデート |
 
