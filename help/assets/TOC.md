@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 80%
+source-wordcount: '429'
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 80%
    + [アセットの追加とアップロード](add-assets.md)
    + [アセットの検索](search-assets.md)
    + [一般的なアセット管理タスク](manage-digital-assets.md)
-   + [スマートタグ](smart-tags.md)
+   + [画像のスマートタグ](smart-tags.md)
+   + [ビデオアセットのスマートタグ付け](smart-tags-video-assets.md)
    + [アセットの整理方法](organize-assets.md)
    + [aemでの [!DNL Adobe Stock] ユーザーセット](aem-assets-adobe-stock.md)
    + [コレクションの管理](manage-collections.md)
@@ -49,7 +50,7 @@ ht-degree: 80%
    + [開発者向けドキュメントおよびAPIのリファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
    + [画像とビデオのプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [スマートタグの設定](smart-tags-configuration.md)
+   + [画像のスマートタグの設定](smart-tags-configuration.md)
    + [多言語アセットと翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
