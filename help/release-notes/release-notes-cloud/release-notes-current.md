@@ -1,129 +1,117 @@
 ---
-title: Cloud Serviceの2020.9.0リリース [!DNL Adobe Experience Manager] のリリースノート。
-description: '[!DNL Adobe Experience Manager] を2020.9.0のCloud Serviceリリースノートとして追加しました。'
+title: Cloud Serviceとしての2020.10.0リリース [!DNL Adobe Experience Manager] のリリースノート。
+description: '[!DNL Adobe Experience Manager] を2020.10.0のCloud Serviceリリースノートとして追加しました。'
 translation-type: tm+mt
-source-git-commit: ded2efb4020386b058ec6b1286d6dfa078cddfe1
+source-git-commit: 45d9b852fad20f518f9840adc17b9d2abeb2bc6a
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 11%
+source-wordcount: '848'
+ht-degree: 21%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## リリース日 {#release-date}
 
-The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 is September 24, 2020.
+The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
+次のリリース(2020.11.0)は、11月26日に予定されています。
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sitess}
 
 ### What is new in [!DNL Sites] {#what-is-new-sites}
 
-* シングルページアプリケーション(SPA)エディタJavaScript SDK [がオープンソースになりました。](/help/implementing/developing/spa/reference-materials.md)
+<!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
+
+* **プロジェクトアーキタイプ24**:新しいAEMプロジェクトを開始するための推奨基盤が、新しいAdobeクライアントデータレイヤーを含む、AMPにサイトを配信するオプションと、プロジェクトCSS/JSを追加する新しい拡張ポイントを含む、改善されました。
+
+* **ContextHubフォルダ**:ContextHubオファーのターゲット設定機能で使用するオーディエンスセグメントを簡単に整理、検索、選択できるオーディエンスを作成できます。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### What is new in [!DNL Assets] {#what-is-new-assets}
 
-* 透かし画像ファイルは、アセットマイクロサービスで生成されるレンディションでサポートされます。 処理プロファイルとして設定でき、透かしとしてPNGファイルを使用します。 アセットの [透かしを参照してください](/help/assets/watermark-assets.md)。
+* **[!DNL Adobe Sensei]powered video smart tagging**:AIモデルを利用して、オブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAMユーザーは、タグの追加に費やす時間を短縮し、公開されたリッチ情報を利用して顧客に適切なエクスペリエンスを提供できます。 詳しくは、 [スマートタグビデオアセット](/help/assets/smart-tags-video-assets.md)。
 
-* 機能強化 [!DNL Dynamic Media]
+* **ブランドポータルの強化**:では、次の新機能およびその他の機能を利用でき [!DNL Brand Portal]ます。 詳しくは、「[[!DNL Brand Portal] リリースノート](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)」を参照してください。
 
-   * 一部のみの公開 — マーケティングチームは、販促用のマテリアルを作成できるように、 [!DNL Dynamic Media] スマート切り抜き画像とそれに同期する動的レンディションにアクセスでき [!DNL Dynamic Media] るようになりました。すべて、グローバル配信用にアセットを公開する必要はありま [!DNL Dynamic Media] せん。 [!DNL Experience Manager] そして [!DNL Dynamic Media] 出版は切り離され、別々に行われ、それを実現することができる。 「 [一部のみの発行](/help/assets/dynamic-media/selective-publishing.md)」を参照してください。
-   * 管理者は、プロビジョニング時に受け取った [!DNL Dynamic Media] Cloud Serviceパスワードをリセットできるようになりました。 リセットは、デスクトップアプリケーションを使用しなくても、 [!DNL Experience Manager] ユーザーインターフェイスで実行でき [!DNL Dynamic Media Classic] ます。
+   * [ダウンロード操作が強化され、シンプルで迅速なダウンロードが可能になりました](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) 。 その他のダウンロード設定は、ユーザーや企業のニーズに合ったエクスペリエンスをオファーするために管理者が設定できます。
+   * 「ファイル」、「 [コレクション](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)」、「共有リンク」への1クリックナビゲーションが、どのページからでも可能になりました。
+   * ユーザーは、特定のレンディションを [選択してダウンロードできる](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) 。 新しいレンディションのダウンロードオプションは、アセットの詳細ページのレンディションパネルで使用できます。
+   * ゲストユーザーセッションのタイムアウトを15分に設定すると、すべての同時ユーザーに対して快適なエクスペリエンスが提供されます。
 
-* 以下の機能強化について詳しくは、ブランドポータル [の新機能を参照してください](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* **[!DNL Adobe Asset Link]バージョン2.1**:、およびの新しいバージョンの [Adobeアセットリンク](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 拡張 [!DNL Adobe Photoshop]を使用で [!DNL Adobe Illustrator][!DNL Adobe InDesign] きます。 2020年10月にリリースされたバージョン2021の最新 [!DNL Adobe Creative Cloud] アプリケーションとの互換性を追加します。
 
-   * Adobe Document Cloud表示SDKとの統合により、PDFのプレビューが強化されました。
-   * シングルクリックによるダウンロード機能
-   * ダウンロードエクスペリエンスの新しい管理設定。
+* **[!DNL Assets]WebPファイルのサポート**: [!DNL Assets] をCloud ServiceがWebP画像形式に対応するようになりました。 WebPは、Googleが作成する新しい画像形式です。 WebPファイル形式の画像は、JPGまたはPNGファイルと区別できず、ファイルサイズは非常に小さくなります。 アセットのファイルサイズが小さくなると、ページ読み込み時間が短縮され、コンテンツ作成者はWebエクスペリエンスをより高速に利用できます。
 
 <!--
 ### Bugs Fixed {#bugs-fixed-assets}
 
-TBD: list of Assets aaCS bugs that are fixed.
+Content to come
 -->
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* CIFコアコンポーネントv1.3.0をリリースしました。詳しくは、「 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) 」を参照してください。
+* 最新のCIFコアコンポーネントバージョンv1.4.0を含むCIFベニアリファレンスサイト — 2020.10.2をリリースしました。詳細は、『 [CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 』を参照してください。
 
-* 商品やカテゴリテンプレート用の商品/カテゴリに関するプレビュー機能が利用できるようになりました。 これにより、AEMのビジネスユーザーやマーケターは、商品やカテゴリのテンプレートに実際のデータを表示できます。
-
-* 製品およびカテゴリに追加されたプロパティページ。これにより、ビジネスユーザーは、製品のSKU/カテゴリIDに関連付けられた表示の詳細を確認できます。
-
-* 製品コンソールに追加され、製品/カテゴリを名前または価格属性で並べ替えられるようになりました。
-
-* 製品コンソールに追加された製品検索機能。
+* CIFコアコンポーネントv1.4.0をリリースしました。詳しくは、「 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 」を参照してください。
 
 ### バグ修正 {#bug-fixes-commerce}
 
-* Commerce Cloud構成は継承を尊重しませんでした。 この問題は、設定に値が継承されるように修正されました。
+* 製品コンソールとピッカーのGraphQLリクエストは、HTTPPOSTを使用して行われました。 この問題は、Apollo GraphQLクライアントがGraphQLクライアントのOSGi設定内の設定を順守し、設定されている場合にGETリクエストをサポートするように修正されました。
 
-## Cloud Manager {#cloud-manager}
+* CIF Cloud config UIで、/libと/apps/の設定用の「保存して閉じる」ボタンが表示される問題を修正しました。 ただし、これらは読み取り専用なので、「閉じる」ボタンのみが表示されるように修正されました。
 
-### リリース日 {#release-date-cm}
+### Cloud Manager {#cloud-manager}
 
-[!UICONTROL Cloud Manager] バージョン 2020.9.0 のリリース日は 2020 年 9 月 03 日です。
+* 環境ページのデザインが変更されました。
 
-### 新機能 {#what-is-new-cloud-manager}
+* 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
 
-* 「コンテンツ監査」は、「エクスペリエンス監査」という名称に変更されました。
-* ビルドプロセスは、3つの Maven コマンドに分けられています。
-* Gitリポジトリを複製できない場合は、最大3回再試行されます。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。
 
-### バグ修正 {#bug-fixes-cm}
+* 環境ごとの環境変数の数が 200 に増えました。
 
-* 「コンテンツ監査」タブで、パブリッシュドメインではなく作成者ドメインを使用してベースURLが正しく表示されませんでした。
+* 概要ページの環境カードには、最大3環境のリストが表示されます。 「すべてを **表示** 」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
 
-## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
-Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点については、このセクションを参照してください。
+### バグ修正 {#bug-fixes-cloud-manager}
 
-### 新機能 {#what-is-new-cra}
+* 環境が完全に作成される前に、Cloud Manager から開発者コンソールへのリンクが正しくアクティブになっていませんでした。
 
-* [Cloud Readiness Analyzer(CRA)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html) には、開始状態コンソールがあり、ユーザーがクリックしてCRAを実行するための明示的な「 **レポートの生成** 」ボタンを表示します。
+* Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示していませんでした。
 
-* CRA UIの実行中は進行状況が表示されます。 分析中の項目と実行中に見つかった結果が表示されます。
+* 非実稼働パイプライン編集ページの「キャンセル」ボタンと「保存」ボタンが必ずしも表示されていなかった問題を修正しました。
 
-* CRAレポートには、検索のタイプと重要度レベル別に整理された表形式で、結果の概要と数が表示されます。 その検索結果の数をクリックすると、自動的にレポート内のその検索結果の場所にスクロールします。
+* コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
 
-### バグ修正 {#cra-bug-fixes}
+* 新しいプログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
 
-* 場合によっては、更新を強制した後にCRAレポートが更新されないことがありました。 このバージョンは修正されました。
+* 一部の大規模なパイプラインステップログは、ユーザーインターフェイスから一貫性のある方法でダウンロードできませんでした。
+
+* 環境名の検証が、1 つずれていました。
+
+* 何も存在しない場合、環境ページにパブリッシュセグメントと Dispatcher セグメントが表示されることがありました。
+
+
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
+
+### ワークフロー {#workflows}
+
+* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づくワークフローインスタンスの検索のサポートが追加されました。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-このセクションでは、新機能とコンテンツ転送ツールリリースv1.1.10の更新点について説明します。
+Follow this section to learn about what is new and the updates for [Content Transfer Tool](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) Release v1.1.12.
 
 ### 新機能 {#what-is-new-ctt}
 
-* [コンテンツ転送ツール(CTT)は](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html) 、Azure Blob Store Data Storeをサポートしています。
+* ログのユーザーエクスペリエンスが向上しました。 タイムスタンプが抽出およびインジェストログに追加された。 ログが空かどうかを示すメッセージが追加されました。
 
-* CTTユーザーインターフェイスには、30秒ごとに概要ページをリロードする自動リロード機能があります。
+### バグ修正 {#ctt-bug-fixes}
 
-* CTTユーザーインターフェイスに追加されたボタンにより、 *アクセストークンを簡単に取得でき* ます。
-
-* *URL* および *移行セット名に対する説明的な検証メッセージが追加されました*。
-
-## コードリファクタリングツール {#code-refactoring}
-
-この節では、コードリファクタリングツールの新機能と更新点について説明します。
-
-### 新機能 {#what-is-new-refactoring}
-
-[Repository Modenizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md) は、Cloud ServiceとしてAdobe Experience Managerに定義されたプロジェクト構造と互換性を持つように、コンテンツとコードを個別のパッケージに分割して、既存のプロジェクトパッケージを再構築するために開発されたユーティリティです。
-
-* AIO-CLIプラグインは、Repository Modenizerをサポートしており、ユーザーはこのプラグインを使用してツールを実行できます。
-
-   Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
-
-* Repository Modenizerユーティリティを使用すると、既存のプロジェクトパッケージを、AEM用に定義されたプロジェクト構造と互換性のあるパッケージに再構築できます。
-
-   詳しくは、 [Gitリソースを参照してください。リポジトリの最新化](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) 」を参照してください。
-
+* 移行セットに、ファイル名が部分的に類似したパスが含まれている場合、コンテンツ転送ツールはコンテンツファイルをスキップしていました。 この問題は修正されました。
