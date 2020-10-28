@@ -1,17 +1,17 @@
 ---
-title: 画像へのスマートサービスでのタグ付け
-description: Adobe Sensei サービスを使用して、状況依存や説明的なビジネスタグを適用する人工知能サービスによって画像にタグ付けします。
+title: AI生成タグを使用した画像の自動タグ付け
+description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
 workflow-type: tm+mt
-source-wordcount: '2424'
-ht-degree: 98%
+source-wordcount: '2433'
+ht-degree: 87%
 
 ---
 
 
-# スマートタグサービスのトレーニングと画像のタグ付け {#train-service-tag-assets}
+# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
 
 デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙を使用してアセットをタグ付けすると、タグベースの検索でアセットを特定し、取得することが容易になります。
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 そのバックグラウンドで、スマートタグは [Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングをおこないます。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。
 
-<!-- TBD: Create a similar flowchart for how training works in CS.
+<!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
@@ -33,13 +33,13 @@ ht-degree: 98%
 
 スマートタグは、[!DNL Adobe Experience Manager Assets] 顧客にのみ適用できます。スマートタグは、[!DNL Experience Manager] のアドオンとして購入できます。
 
-<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? -->
+<!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
 ## [!DNL Experience Manager] と Adobe 開発者コンソールの統合 {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
 >
->新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 既存のデプロイメントでは、管理者はスマートタグ統合を手動で [設定できます](/help/assets/smart-tags-configuration.md#aio-integration)。
+>新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 古いデプロイメントでは、管理者はスマートタグ統合を手動で [設定できます](/help/assets/smart-tags-configuration.md#aio-integration)。
 
 を使用して、スマートタグ [!DNL Adobe Experience Manager] と統合でき [!DNL Adobe Developer Console]ます。 この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。スマートタグを設定するタスクについては、[アセットのスマートタグのための Experience Manager の設定](smart-tags-configuration.md)を参照してください。バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
 
@@ -154,28 +154,36 @@ ht-degree: 98%
 1. 「**[!UICONTROL 開始]**」をクリックします。ワークフローによってアセットにタグが適用されます。アセットフォルダーに移動し、タグを確認して、アセットが適切にタグ付けされているかどうかを確認します。詳しくは、[スマートタグの管理](#manage-smart-tags-and-searches)を参照してください。
 
 >[!NOTE]
->
+
 >後続のタグ付けサイクルでは、新しくトレーニングされたタグを使用して、変更したアセットのみが再度タグ付けされます。ただし、タグ付けワークフローの最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが 24 時間を超える場合は、変更されないアセットもタグ付けされます。定期的なタグ付けワークフローについては、時間の間隔が 6 ヶ月を超えると、変更されていないアセットがタグ付けされます。
 
 ### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
 
 Experience Manager は、DAM にアップロードするアセットに自動的にタグ付けすることができます。そのためには、管理者は、使用可能な手順をスマートタグアセットに追加するワークフローを設定します。[アップロードしたアセットのスマートタグを有効にする方法](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)を参照してください。
 
-## スマートタグと画像検索の管理 {#manage-smart-tags-and-searches}
+## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
 
-関連性の高いタグのみが表示されるようにするために、スマートタグを整理し、ブランド画像に割り当てられた可能性のある不正確なタグを削除することができます。
+スマートタグをキュレーションして、ブランドアセットに割り当てられている不正確なタグを削除し、最も関連性の高いタグのみが表示されるようにすることができます。
 
-また、スマートタグをモデレートすると、画像が最も関連性の高いタグの検索結果に表示されるようになるので、画像のタグベース検索の精度が向上します。実質的には、検索結果に関連性のない画像が表示されないようにすることができます。
+また、スマートタグのモデレートは、最も関連性の高いタグの検索結果にアセットが表示されるようにすることで、タグベースでアセットを検索しやすくします。 基本的に、関連のないアセットが検索結果に表示される可能性を排除できます。
 
-タグに高いランクを割り当てて、画像に関して関連性を高めることもできます。画像のタグのランクを高くすることで、特定のタグに基づいて検索が実行されたときに、その画像が検索結果に表示される可能性が高くなります。
+また、タグに上位のランクを割り当てて、アセットに対する関連性を高めることもできます。 アセットのタグを昇格すると、特定のタグに基づいて検索を行った場合に、検索結果にアセットが表示される可能性が高くなります。
 
-1. オムニサーチボックスで、タグに基づいてアセットを検索します。
-1. 検索結果を調査し、検索に関連性のない画像を特定します。
-1. 画像を選択し、ツールバーの「**[!UICONTROL タグを管理]**」アイコンをクリックします。
-1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいて画像が検索されないようにするには、タグを選択し、ツールバーの削除アイコンをクリックします。または、ラベルの横に表示される `X` 記号をクリックします。
-1. タグに高いランクを割り当てるには、タグを選択し、ツールバーの昇格アイコンをクリックします。昇格したタグは、「**[!UICONTROL タグ]**」セクションに移動されます。
-1. 「**[!UICONTROL 保存]**」、「**[!UICONTROL OK]**」の順にクリックして、成功ダイアログを閉じます。
-1. 画像のプロパティページに移動します。昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
+アセットのスマートタグをモデレートするには：
+
+1. Omnisearchフィールドで、タグに基づいてアセットを検索します。
+
+1. 検索結果をInspectして、検索に関連のないアセットを特定します。
+
+1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+
+1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいてアセットを検索しない場合は、タグを選択し、ツールバーの ![削除アイコン](assets/do-not-localize/delete-icon.png) を選択します。 または、ラベルの横の `X` 記号を選択します。
+
+1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+
+1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
+
+1. Navigate to the [!UICONTROL Properties] page for the asset. 昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
 ### スマートタグ付き AEM 検索結果について {#understandsearch}
 
@@ -210,4 +218,5 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 >
 >* [スマートタグの Experience Manager の設定](smart-tags-configuration.md)
 >* [スマートタグによるアセット管理の仕組み](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
+>* [ビデオアセットのスマートタグ付け](smart-tags-video-assets.md)
 
