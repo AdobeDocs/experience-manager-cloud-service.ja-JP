@@ -1,16 +1,17 @@
 ---
 title: スタイルAEM CIFコアコンポーネント
 description: AEM CIFコアコンポーネントのスタイル設定方法を学びます。 このチュートリアルでは、クライアント側ライブラリまたはclientlibを使用して、Adobe Experience Manager(AEM)コマース実装のCSSとJavaScriptをデプロイおよび管理する方法について説明します。 このチュートリアルでは、ui.frontendモジュールとwebpackプロジェクトがエンドツーエンドのビルドプロセスに統合される方法についても説明します。
-sub-product: コマース
-topics: front-end-development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -483,5 +484,5 @@ CRXDE-Liteで、更新されたCSSファイルがデプロイされたこ [と�
 * [AEM CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components)
 * [ローカルAEM開発環境の設定](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [クライアント側ライブラリ](/help/implementing/developing/introduction/clientlibs.md)
-* [はじめに —AEM Sites](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [はじめに —AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [スタイルシステムを使用した開発](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
