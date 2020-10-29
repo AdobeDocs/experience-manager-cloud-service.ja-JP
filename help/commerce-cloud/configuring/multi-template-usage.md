@@ -1,11 +1,19 @@
 ---
 title: 複数のカテゴリページと製品ページの作成
-description: 複数のカテゴリページと製品ページの作成
+description: ターゲット化されたマーケティングコンテンツを使用して、カテゴリのランディングページと商品の詳細ページを強化する方法について説明します。
+sub-product: Commerce
+version: cloud-service
+doc-type: feature-video
+activity: use
+audience: marketer
+feature: Commerce Integration Framework
+kt: 3455
+thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d79ac17a2282f2c08b69fae24e672bf17ddf8dc4
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 0%
+source-wordcount: '102'
+ht-degree: 4%
 
 ---
 
