@@ -1,16 +1,17 @@
 ---
 title: CIFコアコンポーネントのカスタマイズ
 description: AEM CIFコアコンポーネントをカスタマイズする方法を説明します。 このチュートリアルでは、ビジネス固有の要件を満たすために、CIFコアコンポーネントを安全に拡張する方法について説明します。 GraphQLクエリを拡張してカスタム属性を返し、新しい属性をCIFコアコンポーネントに表示する方法を説明します。
-sub-product: コマース
-topics: development
+sub-product: Commerce
+topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+feature: Commerce Integration Framework
 kt: 4279
-thumbnail: 4279-customize-cif.jpg
+thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: a88595f3fab37f4406e607cb104a27de51cdbef6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 3%
@@ -490,4 +491,4 @@ Product Teaserに既に実装されている **新規** バッジの機能を確
 * [AEM CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components)
 * [AEM CIFコアコンポーネントのカスタマイズ](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 * [コアコンポーネントのカスタマイズ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-* [はじめに —AEM Sites](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [はじめに —AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
