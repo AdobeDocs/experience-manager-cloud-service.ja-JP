@@ -1,18 +1,19 @@
 ---
 title: Commerce Integration Frameworkを使用したAEMとMagentoの統合
-description: Commerce Integration Frameworkを使用したAEMとMagentoの統合
+description: AEMとMagentoは、Commerce Integration Framework(CIF)を使用してシームレスに統合されます。 CIFを使用すると、AEMはMagentoインスタンスにアクセスし、GraphQLを介してMagentoと通信できます。 また、AEM作成者は、製品とカテゴリの選択機能と製品コンソールを使用して、Magentoからオンデマンドで取得した製品とカテゴリのデータを参照できます。 さらに、CIFには標準搭載のストアフロントが用意されており、これによりコマースプロジェクトの迅速化に役立ちます。
+thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 48805b21500ff3f2629efd6aecb40bb1cdc38cd6
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 2%
 
 ---
 
 
 # AEM and Magento Integration using Commerce Integration Framework {#aem-magento-framework}
 
-AEMとMagentoは、Commerce Integration Framework(CIF)を使用してシームレスに統合されます。 CIFを使用すると、AEMはMagentoインスタンスにアクセスし、GraphQLを介してMagentoと通信できます。 また、AEM Authorは、製品/カテゴリの選択機能と製品コンソールを使用して、Magentoからオンデマンドで取り込んだ製品およびカテゴリデータを閲覧できます。 さらに、CIFには標準搭載のストアフロントが用意されており、これによりコマースプロジェクトの迅速化に役立ちます。
+AEMとMagentoは、Commerce Integration Framework(CIF)を使用してシームレスに統合されます。 CIFを使用すると、AEMはMagentoインスタンスにアクセスし、GraphQLを介してMagentoと通信できます。 また、AEM作成者は、製品とカテゴリの選択機能と製品コンソールを使用して、Magentoからオンデマンドで取得した製品とカテゴリのデータを参照できます。 さらに、CIFには標準搭載のストアフロントが用意されており、これによりコマースプロジェクトの迅速化に役立ちます。
 
 ## アーキテクチャの概要 {#overview}
 
