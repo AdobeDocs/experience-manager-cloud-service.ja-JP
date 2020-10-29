@@ -2,7 +2,7 @@
 title: Cloud Serviceとしての2020.10.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNL Adobe Experience Manager] を2020.10.0のCloud Serviceリリースノートとして追加しました。'
 translation-type: tm+mt
-source-git-commit: 4cbee57ff2490802bb473279a37fe6c539a4f44b
+source-git-commit: 95a5c9ad098a3670221847b9c45cdf6c6e22192f
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 20%
@@ -17,7 +17,7 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 ## リリース日 {#release-date}
 
 The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 is October 28, 2020.
-次のリリース(2020.11.0)は、11月26日に予定されています。
+次のリリース(2020.11.0)は、2020年12月1日に予定されています。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sitess}
 
