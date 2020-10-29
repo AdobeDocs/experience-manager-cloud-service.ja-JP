@@ -1,11 +1,17 @@
 ---
 title: Cloud ServiceとしてのAEMコマースの使用の手引き
-description: Cloud ServiceとしてのAEMコマースの使用の手引き
+description: コマース対応のAEMプロジェクトを実行中のAEMにクラウドサービス環境としてデプロイする方法を説明します。 Adobeクラウドマネージャーの機能とCI/CDパイプラインを使用して、実行中の環境に対するVeniaリファレンスストアフロントを構築します。
+topics: Commerce
+feature: Commerce Integration Framework, Cloud Manager
+version: cloud-service
+doc-type: tutorial
+kt: 4947
+thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 5%
+source-wordcount: '600'
+ht-degree: 6%
 
 ---
 
