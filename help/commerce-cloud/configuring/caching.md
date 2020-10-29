@@ -1,10 +1,10 @@
 ---
 title: キャッシュとパフォーマンス
-description: キャッシュとパフォーマンス
+description: GraphQLとコンテンツのキャッシュを有効にしてコマース実装のパフォーマンスを最適化するために利用できる様々な設定について説明します。
 translation-type: tm+mt
-source-git-commit: 2997a28e79b51e88ececbd46c81dbc6a6c443e68
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -44,21 +44,21 @@ venia/components/structure/navigation:true:10:600
 
 を使用する場合は、 [ベニアリファレンスストア](https://github.com/adobe/aem-cif-guides-venia) (Venia Reference Store)を考慮してください。 CIFナビゲーションコンポーネント( `venia/components/structure/navigation`)の名前で **はなく**`core/cif/components/structure/navigation/v1/navigation`、コンポーネントプロキシ名を使用することに注意してください。
 
-他のコンポーネントのキャッシュは、通常、Dispatcherレベルで構成されるキャッシュと連携して、プロジェクト単位で定義する必要があります。 これらのキャッシュはアクティブに無効になっていないので、キャッシュ期間は慎重に設定する必要があります。 すべての可能なプロジェクトや使用例に一致する「1つのサイズですべてを満たす」値はありません。 プロジェクトの要件に最も適したプロジェクトレベルでキャッシュ方法を定義してください。
+他のコンポーネントのキャッシュは、通常はディスパッチャーレベルで設定されたキャッシュと連携して、プロジェクト単位で定義する必要があります。 これらのキャッシュはアクティブに無効になっていないので、キャッシュ期間は慎重に設定する必要があります。 すべての可能なプロジェクトや使用例に一致する「1つのサイズですべてを満たす」値はありません。 プロジェクトの要件に最も適したプロジェクトレベルでキャッシュ方法を定義してください。
 
 ## ディスパッチャーのキャッシング {#dispatcher}
 
-AEMページまたはAEM [Dispatcher内のフラグメントのキャッシュは](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html) 、どのAEMプロジェクトでもベストプラクティスです。 通常、AEMで変更されたコンテンツがDispatcher内で適切に更新されるように、無効化手法に依存します。 これは、AEMDispatcherのキャッシュ方法の中核機能です。
+AEMページまたはAEM [Dispatcher内のフラグメントのキャッシュは](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html) 、どのAEMプロジェクトに対してもベストプラクティスです。 通常、AEMで変更されたコンテンツがディスパッチャーで適切に更新されるように、無効化手法に依存します。 これは、AEMディスパッチャーのキャッシュ方法のコア機能です。
 
 純粋なAEMで管理されるコンテンツCIFに加えて、通常、ページには、GraphQLを介してMagentoから動的に取り込まれたコマースデータを表示できます。 ページ構造自体は変更されない場合がありますが、コマースのコンテンツは変更されることがあります。例えば、商品データ（名前、価格など）のMagentoが変更される場合などです。
 
-AEMディスパッチャーでCIFページを限られた時間だけキャッシュできるようにするため、AEMDispatcherでCIFページをキャッシュする場合は、 [時間ベースのキャッシュの無効化](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （TTLベースのキャッシュとも呼ばれます）を使用することをお勧めします。 この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用してAEMで設定できます。
+AEMディスパッチャーでCIFページを限られた時間だけキャッシュできるようにするため、AEMディスパッチャーでCIFページをキャッシュする場合は、 [時間ベースのキャッシュの無効化](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （TTLベースのキャッシュとも呼ばれます）を使用することをお勧めします。 この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用してAEMで設定できます。
 
 TTLベースのキャッシュを使用する場合、開発者は通常、選択したAEMページの1つまたは複数のキャッシュ期間を定義します。 これにより、CIFページは設定された期間までAEMディスパッチャーにのみキャッシュされ、コンテンツは頻繁に更新されます。
 
 >[!NOTE]
 >
->サーバー側のデータはAEMディスパッチャーによってキャッシュされる場合がありますが、 `product`、 `productlist``searchresults` 、コンポーネントなどの一部のCIFコンポーネントは、通常、ページが読み込まれる際に、クライアント側のブラウザーリクエストで製品価格を再取得します。 これにより、ページの読み込み時に重要な動的コンテンツが常に取得されます。
+>サーバー側のデータはAEMディスパッチャーによってキャッシュされる場合がありますが、 `product`、 `productlist``searchresults` 、コンポーネントなどのCIFコンポーネントは、通常、ページの読み込み時にクライアント側のブラウザーリクエストで製品の価格を再取得します。 これにより、ページの読み込み時に重要な動的コンテンツが常に取得されます。
 
 ## その他のリソース
 
