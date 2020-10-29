@@ -1,10 +1,18 @@
 ---
 title: 高度なURL設定
-description: 高度なURL設定
+description: 商品ページとカテゴリページのURLをカスタマイズする方法について説明します。 これにより、導入で検索エンジンのURLを最適化し、検出を促進できます。
+sub-product: Commerce
+version: cloud-service
+doc-type: technical-video
+activity: setup
+audience: administrator
+feature: Commerce Integration Framework
+kt: 4933
+thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: 3a235e3d8e2d97e413f445df1f0bfe52e97024b3
+source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '789'
 ht-degree: 4%
 
 ---
@@ -28,22 +36,22 @@ SEO要件に従って `UrlProvider` サービスを設定し、プロジェク�
 
 これにより、次のプロパティを使用して製品ページのURLが設定されます。
 
-* **製品URLテンプレート**: は、一連のプレースホルダーを使用してURLの形式を定義します。 デフォルト値 `{{page}}.{{url_key}}.html#{{variant_sku}}``/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange` はです。最終的にURLが生成されます。例えば、
+* **製品URLテンプレート**:は、一連のプレースホルダーを使用してURLの形式を定義します。 デフォルト値 `{{page}}.{{url_key}}.html#{{variant_sku}}``/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange` はです。最終的にURLが生成されます。例えば、
    * `{{page}}` が `/content/venia/us/en/products/product-page`
    * `{{url_key}}` は、Magentoの製品の `url_key` プロパティ（ここ）に置き換えられました。 `chaz-kangeroo-hoodie`
    * `{{variant_sku}}` は、現在選択されているバリアントに置き換えられました。 `MH01-M-Orange`
-* **製品識別子の場所**: 製品データの取得に使用される識別子の場所を定義します。 デフォルト値はで `SELECTOR`す。もう1つの有効な値は `SUFFIX`です。 前の例のURLでは、このIDを使用して製品データ `chaz-kangeroo-hoodie` を取得します。
-* **製品識別子の種類**: 製品データを取得する際に使用する識別子のタイプを定義します。 デフォルト値はで `URL_KEY`す。もう1つの有効な値は `SKU`です。 前の例のURLでは、のようなMagentoGraphQLフィルタを使用して製品データが取得され `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`ます。
+* **製品識別子の場所**:製品データの取得に使用される識別子の場所を定義します。 デフォルト値はで `SELECTOR`す。もう1つの有効な値は `SUFFIX`です。 前の例のURLでは、このIDを使用して製品データ `chaz-kangeroo-hoodie` を取得します。
+* **製品識別子の種類**:製品データを取得する際に使用する識別子のタイプを定義します。 デフォルト値はで `URL_KEY`す。もう1つの有効な値は `SKU`です。 前の例のURLでは、のようなMagentoGraphQLフィルタを使用して製品データが取得され `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`ます。
 
 ### 製品リストページのURLテンプレート {#product-list}
 
 これにより、次のプロパティを使用して、カテゴリページまたは製品リストページのURLが設定されます。
 
-* **カテゴリURLテンプレート**: は、一連のプレースホルダーを使用してURLの形式を定義します。 デフォルト値 `{{page}}.{{id}}.html``/content/venia/us/en/products/category-page.3.html` はです。最終的にURLが生成されます。例えば、
+* **カテゴリURLテンプレート**:は、一連のプレースホルダーを使用してURLの形式を定義します。 デフォルト値 `{{page}}.{{id}}.html``/content/venia/us/en/products/category-page.3.html` はです。最終的にURLが生成されます。例えば、
    * `{{page}}` が `/content/venia/us/en/products/category-page`
    * `{{id}}` ここ、カテゴリのMagentoの `id` 財産に取って代わられた `3`
-* **カテゴリ識別子の場所**: 製品データの取得に使用される識別子の場所を定義します。 デフォルト値はで `SELECTOR`す。もう1つの有効な値は `SUFFIX`です。 前の例のURLでは、このIDを使用して製品データ `3` を取得します。
-* **カテゴリ識別子の種類**: 製品データを取得する際に使用する識別子のタイプを定義します。 デフォルト値であり、現在サポートされている値のみ `ID`です。 前の例のURLでは、カテゴリデータは、のようなMagentoGraphQLフィルタを使用して取得され `category(id:3)`ます。
+* **カテゴリ識別子の場所**:製品データの取得に使用される識別子の場所を定義します。 デフォルト値はで `SELECTOR`す。もう1つの有効な値は `SUFFIX`です。 前の例のURLでは、このIDを使用して製品データ `3` を取得します。
+* **カテゴリ識別子の種類**:製品データを取得する際に使用する識別子のタイプを定義します。 デフォルト値であり、現在サポートされている値のみ `ID`です。 前の例のURLでは、カテゴリデータは、のようなMagentoGraphQLフィルタを使用して取得され `category(id:3)`ます。
 
 を使用するコンポーネントによって対応するデータが設定されている限り、各テンプレートにカスタムプロパティを追加でき `UrlProvider`ます。 クラスのコード例を調べて、この実装方法を調べ `ProductListItemImpl` ます。
 
@@ -51,11 +59,11 @@ SEO要件に従って `UrlProvider` サービスを設定し、プロジェク�
 
 ## Slingマッピングとの結合 {#sling-mapping}
 
-さらに、URLの書き換え `UrlProvider`と処理を行うために、 [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) を設定することもできます。 AEM Archetypeプロジェクト [](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) では、ポート4503（発行）および80（ディスパッチャー）のSlingマッピングを設定する設定例も提供されています。
+さらに、URLの書き換え `UrlProvider`と処理を行うために、 [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) を設定することもできます。 AEM Archetypeプロジェクト [](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) では、ポート4503（発行）および80（ディスパッチャー）のSling Mappingsを設定する設定例も提供されています。
 
-## AEMDispatcherとの統合 {#dispatcher}
+## AEM Dispatcherとの統合 {#dispatcher}
 
-URLの書き換えは、モジュールとAEMDispatcherHTTPサーバを使用して行うこともでき `mod_rewrite` ます。 AEM [プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype) には、生成されたサイズに対する基本的な [](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 書き換えルールが既に含まれている参照AEMDispatcher設定が用意されています。
+URLの書き換えは、モジュールと共にAEM Dispatcher HTTPサーバーを使用して行うこともでき `mod_rewrite` ます。 AEM [プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype) には、生成されたサイズに対する基本的な [](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) 書き換えルールが既に含まれている、参照AEMディスパッチャー設定が用意されています。
 
 ## 例
 
