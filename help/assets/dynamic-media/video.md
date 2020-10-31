@@ -2,7 +2,7 @@
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 3a56bee9236702d22fc7159c744271be49f4a9a6
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '10056'
 ht-degree: 99%
@@ -686,7 +686,7 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 
 1. AEM の左上隅にある AEM ロゴをクリックし、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL Assets]**／**[!UICONTROL メタデータスキーマ]**&#x200B;をクリックします。
 1. 「**[!UICONTROL デフォルト値]**」をクリックします（「デフォルト値」の左側にある選択ボックスにチェックマークを追加しないでください）。
-1. **[!UICONTROL デフォルトのページで]** 、 **[!UICONTROL ビデオの左側にあるチェックボックスをオンにし、「]**&#x200B;編集 **[]**」をクリックします。
+1. **[!UICONTROL デフォルトのページで]** 、 **[!UICONTROL ビデオの左側にあるチェックボックスをオンにし、「]**&#x200B;編集 ****」をクリックします。
 1. メタデータスキーマエディターページで、「**[!UICONTROL 詳細]**」タブをクリックします。
 1. 「YouTube への公開」の下で、「**[!UICONTROL YouTube カテゴリ]**」をクリックします。
 1. ページの右側の「**[!UICONTROL 設定]**」タブで次の手順を実行します。
