@@ -2,7 +2,7 @@
 title: 混在メディアセット
 description: Dynamic Media での混在メディアセットの使用方法について説明します。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 97%
@@ -147,7 +147,7 @@ ht-degree: 97%
       >* 混在メディアセット全体を削除するには、任意の表示モード（**[!UICONTROL カード表示]**&#x200B;や&#x200B;**[!UICONTROL 列表示]**&#x200B;など）から混在メディアセットに移動します。アセットの上にマウスポインターを置き、チェックマークアイコンをタップして選択します。キーボードの **[!UICONTROL Backspace]** キーを押すか、ツールバーの「**[!UICONTROL 詳細]**」（3 つのドット）をクリックしてから「**[!UICONTROL 削除]**」をタップします。
          >
          >
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+      * You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
@@ -157,7 +157,7 @@ ht-degree: 97%
    >* 混在メディアセット内のアセットを編集するには - 混在メディアセットに移動します。セットを（選択ではなく）タップして、AEM プレビューを設定ページでセットを開きます。左側のレールで、下向きキャレットをクリックしてドロップダウンリストを開き、「**[!UICONTROL メンバーを設定]**」をタップします。メンバーを設定ページで、アセットの上にマウスポインターを置き、「**[!UICONTROL 編集]**」（鉛筆アイコン）をタップして編集ページを開きます。
       >
       >
-   * 混在メディアセット全体を削除するには - 任意の表示モード（カード表示や列表示など）から混在メディアセットに移動します。セットの上にマウスポインターを置き、「**[選択]**」（チェックマークアイコン）をタップします。キーボードの **[!UICONTROL Backspace]** キーを押すか、「**[!UICONTROL 詳細]**」（連続する 3 つのドット）をタップしてから「**[!UICONTROL 削除]**」をタップします。
+   * 混在メディアセット全体を削除するには - 任意の表示モード（カード表示や列表示など）から混在メディアセットに移動します。セットの上にマウスポインターを置き、「**[!UICONTROL 選択]**」（チェックマークアイコン）をタップします。キーボードの **[!UICONTROL Backspace]** キーを押すか、「**[!UICONTROL 詳細]**」（連続する 3 つのドット）をタップしてから「**[!UICONTROL 削除]**」をタップします。
 
 
 ## 混在メディアセットのプレビュー {#previewing-mixed-media-sets}
