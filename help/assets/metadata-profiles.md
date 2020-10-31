@@ -3,7 +3,7 @@ title: メタデータプロファイル
 description: アセットのメタデータプロファイルについて理解します。また、メタデータプロファイルを作成し、フォルダーのアセットに適用する方法も学習します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 6b5bfa2bc7b37753e7c63bb2cf52609f352dc1ef
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 98%
@@ -88,7 +88,7 @@ ht-degree: 98%
 
 1. 左側のレールで、「**[!UICONTROL アセット]**」をタップし、メタデータプロファイルを適用するフォルダーに移動します。
 1. チェックマークをタップまたはクリックして対象のフォルダーを選択し、「**プロパティ**」をタップまたはクリックします。
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[Save]**. 既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
+1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**. 既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
 ### メタデータプロファイルのグローバルな適用 {#applying-a-metadata-profile-globally}
 
