@@ -3,9 +3,9 @@ title: サポートされているファイル形式と MIME タイプ
 description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '812'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,6 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 | GIF | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
-| SVG | - | ✓ | - | - |
 | TIFF | ✓ | ✓ | ✓ | - |
 
 ## [!DNL Dynamic Media] での画像形式 {#image-support-dynamic-media}
