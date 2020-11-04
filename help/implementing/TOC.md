@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 69756d6831678151b0e8eb73db81113d49f17447
+source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 78%
+source-wordcount: '408'
+ht-degree: 77%
 
 ---
 
@@ -45,7 +45,6 @@ ht-degree: 78%
    + [クライアント側ライブラリの使用](developing/introduction/clientlibs.md)
    + [設定と設定ブラウザ](developing/introduction/configurations.md)
    + [ログ](developing/introduction/logging.md)
-   + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [ページの差分](/help/implementing/developing/introduction/page-diff.md)
    + [エディターの制限事項](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名規則](/help/implementing/developing/introduction/naming-conventions.md)
