@@ -1,11 +1,11 @@
 ---
 title: 検索ファセット。
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
-translation-type: ht
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+workflow-type: tm+mt
+source-wordcount: '2377'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ CRX リポジトリのオプションでノード構造を手動で作成する�
 1. 次のいずれかの操作をおこないます。
 
    * 「**[!UICONTROL プロパティ名]**」フィールドで、オプションのノードを定義する JSON ファイルのパスを指定し、対応するキーと値のペアを指定します。
-   * 「オプション」フィールドの横にある ![](assets/do-not-localize/aem_assets_add_icon.png) をタップして、フィルターパネルに入力するオプションの表示テキストと値を指定します。別のオプションを追加するには、![](assets/do-not-localize/aem_assets_add_icon.png) をタップまたはクリックして手順を繰り返します。
+   * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
 
 1. ユーザーが一度に複数のファイルタイプのオプション（例：「画像」、「ドキュメント」、「マルチメディア」、「アーカイブ」）を選択可能にするには、「**[!UICONTROL 単一の選択]**」チェックボックスをオフにします。「**[!UICONTROL 単一の選択]**」をオンにすると、ユーザーは一度に 1 つのファイルタイプのオプション選択できます。
 
