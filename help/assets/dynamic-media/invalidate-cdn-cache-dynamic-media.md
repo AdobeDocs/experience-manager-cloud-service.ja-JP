@@ -2,9 +2,9 @@
 title: ダイナミックメディアを使用したCDNキャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
-source-git-commit: 30c7dddb52a6012d3c55cdb66ae0c9b1a3588fa3
+source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1300'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ Dynamic Mediaアセットは、顧客との配信を高速化するために、C
 
 >[!IMPORTANT]
 >
->次の手順は、Cloud ServiceとしてAEM上のダイナミックメディアにのみ適用されます。 また、この機能を使用するには、AEMダイナミックメディアに組み込まれている標準搭載のCDNを使用する必要があります。その他のカスタムCDNはサポートされていません。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>この機能を使用するには、AEMダイナミックメディアに組み込まれている標準搭載のCDNを使用する必要があります。その他のカスタムCDNはサポートされていません。 <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 ダイナミックメディアの [キャッシュの概要も参照してください](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)。
 
@@ -37,7 +37,9 @@ Dynamic Mediaアセットは、顧客との配信を高速化するために、C
 
    ![CDN無効化テンプレート — 作成](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. 「 **[!UICONTROL CDN無効化テンプレート]** 」ページの右上隅にある「 **[!UICONTROL 保存]**」をタップし、「 **[!UICONTROL OK」をタップします。]**<br>   *パート2/2:CDN無効化オプションの設定*
+1. 「 **[!UICONTROL CDN無効化テンプレート]** 」ページの右上隅にある「 **[!UICONTROL 保存]**」をタップし、「 **[!UICONTROL OK」をタップします。]**<br>
+
+   *パート2/2:CDN無効化オプションの設定*
    <br>
 
 1. AEMで、Cloud Serviceとして **[!UICONTROL ツール/アセット/CDNの無効化をタップします。]**
@@ -55,7 +57,7 @@ Dynamic Mediaアセットは、顧客との配信を高速化するために、C
 
    | オプション | 説明 |
    | --- | --- |
-   | **[!UICONTROL CDN でアセット関連の画像プリセットを無効化します]** | （オプション）このオプションを選択すると、選択したアセットとそれに関連するすべての画像プリセットURLが、キャッシュの無効化のために自動形成されます。<br>アセットと、それに関連付けられた事前定義のプリセットURLは、無効化のために自動形成されます。 このオプションは、画像アセットに対してのみ機能します。 |
+   | **[!UICONTROL CDNでアセット関連の画像プリセットを無効化する]** | （オプション）このオプションを選択すると、選択したアセットとそれに関連するすべての画像プリセットURLが、キャッシュの無効化のために自動形成されます。<br>アセットと、それに関連付けられた事前定義のプリセットURLは、無効化のために自動形成されます。 このオプションは、画像アセットに対してのみ機能します。 |
    | **[!UICONTROL テンプレートに基づく無効化]** | （オプション）URL生成に定義済みのテンプレートのみを使用する場合は、このオプションを選択します。 |
    | **[!UICONTROL アセットを追加]** | アセット選択を使用して、無効にするアセットを選択します。 公開済みまたは非公開のアセットを選択できます。<br>CDNでのキャッシュは、アセットベースではなくURLベースです。 したがって、Webサイト上の完全なURLを認識する必要があります。 これらのURLを決定したら、それらをテンプレートに追加できます。 その後、これらのアセットを選択して追加し、URLを無効にする作業を1回で行うことができます。 <br>このオプションは、CDNのアセットに関連付けられた画像プリセットを **[!UICONTROL 無効にする、またはテンプレートに基づく]**&#x200B;無効化 ****、あるいはその両方と組み合わせて使用します。 |
    | **[!UICONTROL URL を追加]** | CDNキャッシュを無効にするダイナミックメディアアセットに、完全なURLパスを手動で追加または貼り付けます。 2の ***パート1でCDN無効化テンプレートを作成しなかった場合は、このオプションを使用します。CDN無効化テンプレートの作成***。無効にするアセットは数個だけです。<br>**重要：** 追加する各URLは、それぞれ別の行に記述する必要があります。<br>一度に1,000個までのURLを無効にできます。 「 **[!UICONTROL 追加URL]** 」テキストフィールドのURL数が1000を超える場合、「 **[!UICONTROL 次へ]**」をタップできません。 このような場合、選択したアセットの右側の **[!UICONTROL X]** をタップするか、手動で追加したURLをタップして、アセットを無効化リストから削除する必要があります。<br>画像スマートトリミングのURLは、CDN無効化テンプレートまたはこの **[!UICONTROL 追加URL]** テキストフィールドのいずれかで指定する必要があります。 |
