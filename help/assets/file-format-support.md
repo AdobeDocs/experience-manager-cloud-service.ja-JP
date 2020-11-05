@@ -3,10 +3,10 @@ title: サポートされているファイル形式と MIME タイプ
 description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 532e3bc376864cb54fe881deede2c78ee28fef89
+source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '828'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 
 ## Adobe 形式 {#adobe-formats}
 
-| ファイル形式 | サムネールの生成 | フルテキストの抽出 | メタデータ抽出 | 幅/高さ |
+| ファイル形式 | サムネールの生成 | フルテキスト抽出 | メタデータ抽出 | 幅/高さ |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | Collage | - | - | ✓ | - |
@@ -61,6 +61,9 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
+| WebP | ✓ | ✓ | - | - |
+
+* 現在、WebPは非可逆圧縮をサポートしており、画質を変更するために0 ～ 100の値をサポートしています。
 
 ## [!DNL Dynamic Media] での画像形式 {#image-support-dynamic-media}
 
@@ -137,7 +140,7 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 
 アセット管理機能でサポートされるドキュメント形式は次のとおりです。
 
-| ファイル形式 | サムネールの生成 | フルテキストの抽出 | 幅/高さ | メタデータの管理 | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| ファイル形式 | サムネールの生成 | フルテキスト抽出 | 幅/高さ | メタデータの管理 | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
