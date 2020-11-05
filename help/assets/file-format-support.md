@@ -3,10 +3,10 @@ title: サポートされているファイル形式と MIME タイプ
 description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a1ecf5d0cf84a5f83952c6b32e77fdbb397486c2
+source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 97%
+source-wordcount: '812'
+ht-degree: 99%
 
 ---
 
@@ -61,9 +61,6 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 | JPEG | ✓ | ✓ | ✓ | ✓ |
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
-| WebP | ✓ | ✓ | - | - |
-
-* 現在、WebPは非可逆圧縮をサポートしており、画質を変更するために0 ～ 100の値をサポートしています。
 
 ## [!DNL Dynamic Media] での画像形式 {#image-support-dynamic-media}
 
