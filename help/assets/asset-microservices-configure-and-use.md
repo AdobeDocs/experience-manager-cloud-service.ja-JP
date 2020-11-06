@@ -3,9 +3,9 @@ title: Asset Microservicesの設定と使用
 description: クラウドネイティブのアセットマイクロサービスを設定し、使用して、アセットをスケールで処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2530'
 ht-degree: 45%
 
 ---
@@ -36,7 +36,7 @@ Experience Managerでは、次のレベルの処理が可能です。
 
 | オプション | 説明 | 対象となる使用例 |
 |---|---|---|
-| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 px) </li> <li> 大きなプレビュー（Web レンディション - 1280 px） </li><li> メタデータとテキストの抽出。</li></ul> |
+| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 pixels) </li> <li> 大きいプレビュー（Webレンディション — 1280ピクセル） </li><li> メタデータとテキストの抽出。</li></ul> |
 | [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。 デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。 標準搭載のオプションを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPOレンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
 | [カスタムプロファイル](#custom-config) | カスタムアプリケーションを介してカスタムコードを使用し、 [Asset Compute Serviceを呼び出すように、管理者がユーザーインターフェイスを介して設定します](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
 
@@ -78,9 +78,9 @@ Asset Microservicesは、メタデータの処理、レンディションの生�
 1. 他のレンディションを生成するには、「 **[!UICONTROL 追加New]** 」をクリックし、次の情報を入力します。
 
    * 各レンディションのファイル名。
-   * 各レンディションのファイル形式（PNG、JPEGまたはGIF）。
+   * 各レンディションのファイル形式（PNG、JPEG、GIFまたはWebP）。
    * 各レンディションの幅と高さ（ピクセル単位） 値を指定しない場合は、元の画像の最大ピクセルサイズが使用されます。
-   * 各JPEGレンディションの画質(%)。
+   * 各JPEGおよびWebPレンディションの画質(%)。
    * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
@@ -148,7 +148,7 @@ Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTRO
 
 ![カスタム処理プロファイル](assets/custom-processing-profile.png)
 
-*図：「[!UICONTROL サービスパラメータ]」フィールドを使用して、カスタムアプリケーションに組み込む事前定義済みのパラメータに追加情報を渡します。 この例では、キャンペーン画像がアップロードされると、画像はフォントの`Jumanji`テキストで更新され`Arial-BoldMT`ます。*
+*図：「 [!UICONTROL サービスパラメータ] 」フィールドを使用して、カスタムアプリケーションに組み込む事前定義済みのパラメータに追加情報を渡します。 この例では、キャンペーン画像がアップロードされると、画像はフォントの `Jumanji` テキストで更新され `Arial-BoldMT` ます。*
 
 ## 処理プロファイルを使用したアセットの処理 {#use-profiles}
 
