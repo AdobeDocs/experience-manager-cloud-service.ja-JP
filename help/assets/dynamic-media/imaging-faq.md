@@ -2,9 +2,9 @@
 title: スマートイメージング
 description: スマートイメージングでは、各ユーザーに固有の閲覧特性を利用して、ユーザーのエクスペリエンス用に最適化された適切な画像を自動的に提供することで、より良いパフォーマンスとエンゲージメントをもたらします。
 translation-type: tm+mt
-source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
+source-git-commit: e4d75f8bb783df57705bcaa6483bcb0ac6ec7ead
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2085'
 ht-degree: 79%
 
 ---
@@ -105,8 +105,6 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
-
-また、スマートイメージングの前提条件を理解するには、[スマートイメージングを使用するための資格を私は満たしていますか？](#am-i-eligible-to-use-smart-imaging)を参照してください。
 
 ## スマートイメージングは HTTPS で機能しますか？HTTP/2 ではどうですか？{#does-smart-imaging-working-with-https-how-about-http}
 
