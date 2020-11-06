@@ -2,10 +2,10 @@
 title: スマートイメージング
 description: スマートイメージングでは、各ユーザーに固有の閲覧特性を利用して、ユーザーのエクスペリエンス用に最適化された適切な画像を自動的に提供することで、より良いパフォーマンスとエンゲージメントをもたらします。
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: 8040cd38bb01296ed89d44c707ca1e759489eb7b
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 98%
+source-wordcount: '2100'
+ht-degree: 79%
 
 ---
 
@@ -54,11 +54,23 @@ ht-degree: 98%
 
 ## スマートイメージングはどのように機能しますか？ {#how-does-smart-imaging-work}
 
-スマートイメージングは Adobe Sensei を使用して、ブラウザーの機能に基づいて、画像を最も最適な形式、サイズ、画質に自動的に変換します。
+ユーザーから画像が要求された場合、ユーザーの特性を確認し、使用中のブラウザーに基づいて適切な画像形式に変換します。 これらの形式の変換は、表示の忠実度を低下させない方法で行われます。 スマートイメージングは、次の方法で、ブラウザの機能に基づいて画像を異なる形式に自動的に変換します。
 
-* Chrome、Firefox、Microsoft Edge、Android、Opera などのブラウザー用の WebP に自動的に変換します。
-* Safari などのブラウザーでは、JPEG2000 に自動的に変換されます。
-* Internet Explorer 9 以降などのブラウザーでは、自動的に JPEG に変換します。
+* 次のブラウザー用にWebPに自動的に変換：
+   * Chrome
+   * Firefox 以降
+   * Microsoft Edge
+   * Safari 14.0 +
+      * Safari 14のみ（iOS 14.0以降およびmacOS BigSur以降）
+   * Android
+   * Opera
+* レガシーブラウザーでの次のサポート：
+
+   | ブラウザー | ブラウザー/OSのバージョン | 形式 |
+   | --- | --- | --- |
+   | Safari | iOS 14.0以前 | JPEG2000 |
+   | Edge | 十八以前 | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * 上記形式をサポートしていないブラウザーの場合は、元々要求された画像形式が提供されます。
 
 元の画像サイズがスマートイメージングの生成するサイズより小さい場合は、元の画像が提供されます。
@@ -84,7 +96,13 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## スマートイメージングを使用する場合、URL の変更や、画像プリセットの変更、サイトへの新しいコードのデプロイなどは必要ですか？{#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-いいえ。スマートイメージングは既存の画像 URL や画像プリセットとシームレスに連携します。また、スマートイメージングでは、ユーザーのブラウザーを検出するために Web サイトにコードを追加する必要はありません。これらはすべて自動的に処理されます。
+スマートイメージングは、既存のカスタムドメインでスマートイメージングを設定する場合、既存の画像URLや画像プリセットとシームレスに連携します。 また、スマートイメージングでは、ユーザーのブラウザーを検出するために Web サイトにコードを追加する必要はありません。これらはすべて自動的に処理されます。
+
+スマートイメージングを使用するために新しいカスタムドメインを設定する必要がある場合は、このカスタムドメインを反映するようにURLを更新する必要があります。
+
+また、スマートイメージングの前提条件を理解するには、[スマートイメージングを使用するための資格を私は満たしていますか？](#am-i-eligible-to-use-smart-imaging)を参照してください。
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -171,6 +189,34 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 すべての画像が変換されるわけではありません。スマートイメージングは、パフォーマンスを向上させるために変換が必要かどうかを判別します。予期されるパフォーマンスゲインがない場合や、形式が JPEG や PNG でない場合、画像は変換されません。
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## パフォーマンスの向上を知る方法 スマート・イメージングのメリットをメモする方法はありますか。 {#performance-gain}
+
+**スマートイメージング・ヘッダーについて**
+
+Smart Imagingのヘッダ値は、キャッシュ以外の要求が現在の時点で処理される場合にのみ機能します。 これは、現在のキャッシュの互換性を維持するために行われ、キャッシュを介して画像が提供される場合に計算を行う必要がなくなります。
+
+スマートイメージングヘッダーを使用するには、リクエストに`cache=off`修飾子を追加する必要があります。 ダイナミックメディア画像サービング[](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html) /レンダリングAPIのキャッシュを参照してください。
+
+使用例 `cache=off` （説明用のみ）:
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+このようなリクエストを使用した後、「応答ヘッダー」セクションにヘッダーが表示され `-x-adobe-smart-imaging` ます。 次のスクリーンショットを参照してください(ハイライト表示されて `-x-adobe-smart-imaging` います)。
+
+![スマートイメージング・ヘッダ](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+このヘッダー値は、次のことを示します。
+
+* スマートイメージングが会社で動作しています。
+* 正の値(>=0)は、変換が成功したことを示します。 この場合、新しい画像（ここではwebP）が返されます。
+* 負の値(&lt;0)は、変換が成功しなかったことを示します。 この場合、元の要求された画像が返されます（指定しない場合は、デフォルトでJPEGが返されます）。
+* この値は、要求された画像と新しい画像のバイト数の差を示します。 この場合、保存されるバイト数は75048で、1つのイメージの場合は約75 KBです。 
+   * 負の値は、要求された画像が新しい画像より小さかったことを示します。 負のサイズの差は表示されますが、提供される画像は元の要求された画像のみです
+
+**スマートイメージングヘッダーを使用するタイミング**
+
+スマートイメージング応答ヘッダーは、デバッグ目的で有効にするか、またはスマートイメージングの利点のみを強調表示します。 を通常のシナリオ`cache=off`で使用すると、読み込み時間に大きな影響を与えます。
 
 ## 要求に対してスマートイメージングをオフにできますか？ {#turning-off-smart-imaging}
 
