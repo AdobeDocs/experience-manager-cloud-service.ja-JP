@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 6319b8dcbddda9910b6745d1594dd81f5ba986ba
+source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
 workflow-type: tm+mt
-source-wordcount: '5599'
-ht-degree: 80%
+source-wordcount: '5598'
+ht-degree: 79%
 
 ---
 
@@ -82,7 +82,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパス。 |
    | アセットの公開 | 次の3つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**:アセットがアップロードされると、アセットが取り込まれ、URL/埋め込みが即座に提供されます。 アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**:URL/埋め込みリンクを指定する前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 一部のみの発行&#x200B;]**:アセットは、セキュリティで保護されたプレビューのためにのみ自動公開され、パブリックドメインでの配信のためにDMS7に公開することなく、AEMに明示的に公開できます。 今後、アドビは、相互に排他的なアセットを AEM に公開し、Dynamic Media に公開するこのオプションを拡張します。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。 |
    | プレビューサーバーを保護 | セキュリティで保護されたレンディションプレビューサーバへのURLパスを指定できます。 つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、この設定を指定されたとおりにしておくことをお勧めします。 |
-   | すべてのコンテンツを同期 | デフォルトで選択されています。 Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL Enable by default ]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion.<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**:ダイナミックメディアと同期するために選択したフォルダーを明示的にマークするまで、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをダイナミックメディアと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。 「 **[!UICONTROL 詳細]** 」タブの「 **[!UICONTROL ダイナミックメディア同期モード]** 」ドロップダウンリストで、次の3つのオプションから選択します。 When you are done, tap **[!UICONTROL Save]**. *注意：これら3つのオプションは、「すべてのコンテンツを&#x200B;**同期**」を選択した場合は使用できません。* ダイナミックメディアのフォルダーレベルでの一部のみの発行の [操作も参照してください。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された詳細なステータスは、ツールチップの要領で表示されます。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:ダイナミックメディアと同期するために、このサブツリーの内容をすべて含めます。 フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダに対して無効&#x200B;]**:このサブツリー内のすべてをダイナミックメディアとの同期から除外します。 |
+   | すべてのコンテンツを同期 | デフォルトで選択されています。 Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL Enable by default ]**: The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**:ダイナミックメディアと同期するために選択したフォルダーを明示的にマークするまで、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをダイナミックメディアと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。 「 **[!UICONTROL 詳細]** 」タブの「 **[!UICONTROL ダイナミックメディア同期モード]** 」ドロップダウンリストで、次の3つのオプションから選択します。 When you are done, tap **[!UICONTROL Save]**. *注意：これら3つのオプションは、「すべてのコンテンツを&#x200B;**同期**」を選択した場合は使用できません。* ダイナミックメディアのフォルダーレベルでの一部のみの発行の [操作も参照してください。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。 継承された詳細なステータスは、ツールチップの要領で表示されます。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:ダイナミックメディアと同期するために、このサブツリーの内容をすべて含めます。 フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダに対して無効&#x200B;]**:このサブツリー内のすべてをダイナミックメディアとの同期から除外します。 |
 
    >[!NOTE]
    >
@@ -244,14 +244,14 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 * Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * CMYK 出力を返す動的レンディションは、CMYK 出力を *WebCoated* カラースペースで返します。
 
-#### アセット処理の設定 {#configuring-asset-processing}
+#### サポートされる形式でのMIMEタイプの編集 {#configuring-asset-processing}
 
-Dynamic Media によって処理されるアセットタイプを定義して、高度なアセット処理パラメーターをカスタマイズできます。例えば、アセット処理パラメーターを指定して次のことができます。
+ダイナミックメディアで処理されるアセットタイプを定義し、高度なアセット処理パラメーターをカスタマイズできます。 例えば、アセット処理パラメーターを指定して次のことができます。
 
 * Adobe PDF を eCatalog アセットに変換する。
 * Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated Postscript ファイル（.EPS）をラスタライズする。
-* 注意：ビデオプロファイルおよびイメージプロファイルは、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
+* [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md) 、 [画像プロファイル](/help/assets/dynamic-media/image-profiles.md) は、それぞれビデオの処理と画像の処理を定義するために使用できます。
 
 [アセットのアップロード](/help/assets/add-assets.md)を参照してください。
 
@@ -267,9 +267,9 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 1. mimeTypes フォルダーで、MIME タイプを選択します。
 1. CRXDE Lite ページの右側の下部で、次の操作をおこないます。
 
-   * 「**[!UICONTROL 有効]**」フィールドをダブルクリックします。デフォルトでは、すべてのアセットの MIME タイプが有効になって（**[!UICONTROL true]** に設定されて）います。これは、処理に関してアセットが Dynamic Media に同期されることを意味します。このアセットの MIME タイプを処理から除外する場合、この設定を **[!UICONTROL false]** に変更します。
+   * Double-click the **[!UICONTROL enabled]** field. デフォルトでは、すべてのアセットの MIME タイプが有効になって（**[!UICONTROL true]** に設定されて）います。これは、処理に関してアセットが Dynamic Media に同期されることを意味します。If you want to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-   * **[!UICONTROL jobParam]** をダブルクリックして、関連するテキストフィールドを開きます。特定の MIME タイプに使用可能な、許可されている処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
+   * Double-click **[!UICONTROL jobParam]** to open its associated text field. 特定の MIME タイプに使用可能な、許可されている処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
 
 1. 次のいずれかの操作をおこないます。
    * 手順 3～4 を繰り返して、その他の MIME タイプを編集します。
@@ -277,11 +277,11 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 1. ページの左上隅で、「**[!UICONTROL CRXDE Lite]**」をタップして AEM に戻ります。
 
-#### サポートされていない形式のカスタム MIME タイプの追加 {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
 
 AEM Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite で追加する新しいノードが AEM によって削除されないようにするには、必ず `image_` より前に MIME タイプを移動し、その有効値が **[!UICONTROL false]** に設定されている必要があります。
 
-サポートされていない形式のカスタム MIME タイプを追加するには:
+サポートされていない形式にMIMEタイプを追加するには：
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -443,7 +443,7 @@ spin-01-01
 
    資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
 
-1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup]>[!UICONTROL Batch Set Presets]>[!UICONTROL Batch Set Preset]**.
+1. On the navigation bar near the top of the page, click **[!UICONTROL Setup > Application Setup] > [!UICONTROL Batch Set Presets] > [!UICONTROL Batch Set Preset]**.
 
    詳細ページの右上隅に設定されている「**[!UICONTROL フォームを表示]**」は、デフォルトの表示です。
 
