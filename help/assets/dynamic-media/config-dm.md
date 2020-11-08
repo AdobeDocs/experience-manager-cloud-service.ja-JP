@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 978fcf17a1bd00b6d3be81587afaafef1807d678
+source-git-commit: 9719a440a85b150599efa3eb9dc2bd443a917217
 workflow-type: tm+mt
-source-wordcount: '5598'
-ht-degree: 79%
+source-wordcount: '5619'
+ht-degree: 77%
 
 ---
 
@@ -193,8 +193,8 @@ Dynamic Media Classic（Scene7）のユーザーインターフェイスを使�
 * [Image Server の公開設定 ](#publishing-setup-for-image-server)
 * [アプリケーションの一般設定の指定](#configuring-application-general-settings)
 * [カラーマネジメントの設定](#configuring-color-management)
-* [アセット処理の設定](#configuring-asset-processing)
-* [サポートされていない形式のカスタム MIME タイプの追加](#adding-custom-mime-types-for-unsupported-formats)
+* [サポートされる形式でのMIMEタイプの編集](#editing-mime-types-for-supported-formats)
+* [サポートされていない形式に対するMIME型の追加](#adding-mime-types-for-unsupported-formats)
 * [画像セットおよびスピンセットを自動生成するためのバッチセットプリセットの作成](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Image Server の公開設定    {#publishing-setup-for-image-server}
@@ -244,7 +244,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 * Dynamic renditions that return RGB output, will return it in the *sRGB* color space.
 * CMYK 出力を返す動的レンディションは、CMYK 出力を *WebCoated* カラースペースで返します。
 
-#### サポートされる形式でのMIMEタイプの編集 {#configuring-asset-processing}
+#### サポートされる形式でのMIMEタイプの編集 {#editing-mime-types-for-supported-formats}
 
 ダイナミックメディアで処理されるアセットタイプを定義し、高度なアセット処理パラメーターをカスタマイズできます。 例えば、アセット処理パラメーターを指定して次のことができます。
 
@@ -255,7 +255,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 [アセットのアップロード](/help/assets/add-assets.md)を参照してください。
 
-アセット処理を設定するには：:
+**サポートされる形式のMIMEタイプを編集するには**
 
 1. AEM で、AEM ロゴをクリックしてグローバルナビゲーションコンソールにアクセスして、**[!UICONTROL 一般／CRXDE Lite]** をクリックします。
 1. 左側のレールで、次の場所に移動します。
@@ -277,11 +277,11 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 1. ページの左上隅で、「**[!UICONTROL CRXDE Lite]**」をタップして AEM に戻ります。
 
-#### Adding MIME types for unsupported formats {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
 AEM Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite で追加する新しいノードが AEM によって削除されないようにするには、必ず `image_` より前に MIME タイプを移動し、その有効値が **[!UICONTROL false]** に設定されている必要があります。
 
-サポートされていない形式にMIMEタイプを追加するには：
+**サポートされていない形式にMIMEタイプを追加するには**
 
 1. From AEM, tap **[!UICONTROL Tools > Operations > Web Console.]**
 
@@ -347,7 +347,7 @@ AEM Assets でサポートされていない形式のカスタム MIME タイプ
 
 定義には、一致とベース名という 2 つの要素を使用できます。これらのフィールドでは、命名規則のすべての要素を定義して、要素が含まれるセットを命名するために使用される規則の一部を指定できます。会社の個別の命名規則では、これらの各要素について 1 つまたは複数の定義行を使用できます。独自の定義行を必要なだけ使用して、メイン画像、カラー要素、代替表示要素およびスウォッチ要素などの個別の要素にグループ化できます。
 
-デフォルトの命名規則を設定するには：:
+**デフォルトの命名規則を設定するには：**
 
 1. Dynamic Media Classic（Scene7）アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。
 
@@ -381,7 +381,7 @@ Dynamic Media では、バッチセットプリセットを使用して、アセ
 
 バッチセットプリセットを定義するフォームフィールドメソッドとコードメソッドのどちらかを使用できます（正規表現を使用できます）。デフォルトの名前では、「フォームを表示」での定義と同時に「コードを表示」を選択して、正規表現を使用して定義を作成できます。また、どちらかの表示をオフにして、一方の表示のみを使用することもできます。
 
-バッチセットプリセットを作成するには：:
+**バッチセットプリセットを作成するには：**
 
 1. Dynamic Media Classic（Scene7）アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。
 
@@ -437,7 +437,7 @@ spin-01-01
 
 このスピンセットをアップロードして公開する際に、**アップロードオプションを設定**&#x200B;ダイアログボックスの&#x200B;**バッチセットプリセット**&#x200B;の下に表示される 2D スピンセット手法の名前をアクティブ化します。
 
-2D スピンセットを自動生成するためのバッチセットプリセットを作成するには：:
+**2D スピンセットを自動生成するためのバッチセットプリセットを作成するには：**
 
 1. Dynamic Media Classic（Scene7）アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。
 
@@ -532,11 +532,13 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 1. 「**[!UICONTROL Maximum Parallel Jobs]**」フィールドで、目的の値に数値を変更します。
 
-   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4 コアサーバーでは、2 ワーカースレッドが割り当てられます。（0.0～1.0 の値は比率に基づき、1 より大きい数はワーカースレッドの数を割り当てます）。
+   ダイナミックメディアへの大量のファイルのアップロードを適切にサポートするために **[!UICONTROL 、「並列ジョブの]** 最大数」を増やすことができます。 正確な値は、ハードウェア容量に依存します。 初期移行または1回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。 ただし、大きな値（コア数の2倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。 そのため、特定の使用事例に基づいて値をテストし、調整する必要があります。
 
-   アドビでは、Dynamic Media Classic（Scene7）への大量のファイルのアップロードを適切にサポートするために、「**[!UICONTROL Maximum Parallel Jobs]**」を 32 に設定することをお勧めします。
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 「**[!UICONTROL 保存]**」をタップします。
 
