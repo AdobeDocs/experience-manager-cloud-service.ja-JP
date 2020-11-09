@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
 description: 'Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。 '
-translation-type: ht
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
-source-wordcount: '1679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+workflow-type: tm+mt
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -59,10 +59,11 @@ AEM as a Cloud Service では、次の特長を備えたオーケストレーシ
 ## 環境 {#environments}
 
 >[!NOTE]
->
 >詳しくは、[デプロイ - 実行モード](/help/implementing/deploying/overview.md#runmodes)を参照してください。
 
-AEM as a Cloud Service は個々のインスタンスとして使用でき、各インスタンスは完全な AEM 環境を表します。AEM as a Cloud Service で使用できる環境には、次の 4 種類があります。
+AEM as a Cloud Service は個々のインスタンスとして使用でき、各インスタンスは完全な AEM 環境を表します。
+
+AEMでは、Cloud Serviceとして3種類の環境を使用できます。
 
 * **実稼動環境**：実務担当者向けのアプリケーションをホストします。
 
@@ -70,9 +71,7 @@ AEM as a Cloud Service は個々のインスタンスとして使用でき、各
 
 * **開発環境**：ステージ環境および実稼動環境と同じランタイム条件で開発者が AEM アプリケーションを実装できます。
 
-* **デモ環境**：評価、デモ、プロトタイピング、トレーニングの目的で使用できます。
-
-開発環境とデモ環境は、しばしば&#x200B;*非実稼動*&#x200B;環境と呼ばれます。
+   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
 
 ## プログラム {#programs}
 
