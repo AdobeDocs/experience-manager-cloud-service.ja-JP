@@ -4,9 +4,9 @@ description: Experience Manager デプロイメントを Adobe Creative Cloud �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '3297'
+source-wordcount: '3296'
 ht-degree: 99%
 
 ---
@@ -26,7 +26,6 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 
 ## クリエイティブプロフェッショナル、マーケティング担当者、DAM ユーザーのコラボレーションニーズ {#collaboration-need-of-creatives-marketers-and-dam-users}
 
-
 | 要件 | 使用例 | 関係するサーフェス |
 |---|---|---|
 | デスクトップ上でクリエイティブプロフェッショナル向けのエクスペリエンスを簡素化する | クリエイティブプロフェッショナル（より広い意味では、ネイティブアセット作成アプリケーションで作業しているデスクトップユーザー）向けに、DAM（AEM Assets）で管理されるアセットへのアクセスを効率化します。変更の検出、使用（開く）、編集、AEM への保存のほか、新しいファイルのアップロードを容易にわかりやすくおこなえる方法が必要です。 | Windows または Mac デスクトップ、Creative Cloud アプリ |
@@ -38,7 +37,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 | 関係するユーザーに対する価値提案 | アドビ製品／サービス | 関係するサーフェス |
 |---|---|---|
 | クリエイティブユーザーは、Creative Cloud アプリを使用したまま、AEM からアセットを検出し、それらを開いて使用したり、編集して変更を AEM にアップロードするほか、新しいファイルを AEM にアップロードします。 | [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator、InDesign |
-| ビジネスユーザーは、アセットのオープンと使用、編集と AEM への変更のアップロード、AEM への新しいファイルのアップロードをデスクトップ環境から簡単におこなえます。汎用の統合を使用して、アドビ以外のアセットも含め、あらゆるアセットタイプをネイティブデスクトップアプリケーションで開きます。 | [AEM デスクトップアプリケーション](https://docs.adobe.com/content/help/ja-JP/experience-manager-desktop-app/using/using.html) | Windows および Mac デスクトップ上の AEM デスクトップアプリケーション |
+| ビジネスユーザーは、アセットのオープンと使用、編集と AEM への変更のアップロード、AEM への新しいファイルのアップロードをデスクトップ環境から簡単におこなえます。汎用の統合を使用して、アドビ以外のアセットも含め、あらゆるアセットタイプをネイティブデスクトップアプリケーションで開きます。 | [[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en) | Windows および Mac デスクトップ上の AEM デスクトップアプリケーション |
 | マーケティング担当者とビジネスユーザーは、AEM 内から Adobe Stock アセットの検出、プレビュー、ライセンス取得と保存、管理をおこなえます。ライセンスを取得し保存したアセットは、限定された Adobe Stock メタデータを提供してガバナンスの強化に役立ちます。 | [Adobe Experience Manager と Adobe Stock との連携](aem-assets-adobe-stock.md) | AEM Web インターフェイス |
 
 ここでは、主に、コラボレーションニーズの最初の 2 つの側面に焦点を当てます。アセットの大規模な配布と調達については、使用例として簡単に説明します。そのようなニーズに対するソリューションとしては、Adobe Brand Portal または Asset Share Commons を検討してください。代替ソリューション（[AEM Assets Brand Portal](https://helpx.adobe.com/jp/experience-manager/brand-portal/user-guide.html)、[Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) コンポーネントに基づいて構築できるソリューション、[リンク共有](share-assets.md)、[AEM Assets Web UI](/help/assets/manage-digital-assets.md) の使用など）については、それぞれ固有の要件に基づいた検討が必要です。
