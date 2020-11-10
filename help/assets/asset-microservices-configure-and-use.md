@@ -3,15 +3,15 @@ title: Asset Microservicesの設定と使用
 description: クラウドネイティブのアセットマイクロサービスを設定し、使用して、アセットをスケールで処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a316bc6f0c1f0d09f6531b6e1b244596c6010355
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 45%
+source-wordcount: '2514'
+ht-degree: 46%
 
 ---
 
 
-# アセットマイクロサービスと処理プロファイルの使用 {#get-started-using-asset-microservices}
+# Use asset microservices and processing profiles {#get-started-using-asset-microservices}
 
 アセットマイクロサービスは、クラウドネイティブアプリケーション（「ワーカー」とも呼ばれる）を使用して、アセットの拡張性と回復性の高い処理を実現します。 アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
@@ -38,7 +38,7 @@ Experience Managerでは、次のレベルの処理が可能です。
 |---|---|---|
 | [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。 この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>Standard thumbnails used by [!DNL Assets] user interface (48, 140, and 319 pixels) </li> <li> 大きいプレビュー（Webレンディション — 1280ピクセル） </li><li> メタデータとテキストの抽出。</li></ul> |
 | [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。 デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。 標準搭載のオプションを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPOレンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
-| [カスタムプロファイル](#custom-config) | カスタムアプリケーションを介してカスタムコードを使用し、 [Asset Compute Serviceを呼び出すように、管理者がユーザーインターフェイスを介して設定します](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
+| [カスタムプロファイル](#custom-config) | ユーザーインターフェイスを介して管理者が、 [Asset computeサービスを呼び出すためにカスタムコードを使用するように設定します](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。 クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 使用 [可能な使用例を参照してください](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -100,15 +100,15 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## カスタムプロファイルと使用例 {#custom-config}
 
-は、デフォルト処理、PhotoshopファイルなどのAdobe固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例を [!DNL Asset Compute Service] サポートしています。 以前に必要だったDAM Update Assetワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。 これらの処理オプションでビジネスニーズが満たされない場合、Adobeでは、デフォルトの機能を拡張するために開発および使用す [!DNL Asset Compute Service] ることを推奨します。 概要については、「拡張機能と使用するタイミングにつ [いて」を参照してください](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
+は、デフォルト処理、PhotoshopファイルなどのAdobe固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例を [!DNL Asset Compute Service] サポートしています。 以前に必要だったDAM Update Assetワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。 これらの処理オプションでビジネスニーズが満たされない場合、Adobeでは、デフォルトの機能を拡張するために開発および使用す [!DNL Asset Compute Service] ることを推奨します。 概要については、「拡張機能と使用するタイミングにつ [いて」を参照してください](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
 
 >[!NOTE]
 >
 >Adobeでは、デフォルトの設定または標準のプロファイルを使用してビジネス要件を満たすことができない場合にのみ、カスタムアプリケーションの使用をお勧めします。
 
-画像、ビデオ、ドキュメントおよびその他のファイル形式を、サムネール、抽出したテキストおよびメタデータ、アーカイブなど、様々なレンディションに変換できます。
+画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、を使用して、サポートされ [!DNL Asset Compute Service] る使用例に応じたカスタムアプリケーションを [作成できます](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html) 。 [!DNL Experience Manager] 管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+開発者は、を使用して、サポートされ [!DNL Asset Compute Service] る使用例に応じたカスタムアプリケーションを [作成できます](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html) 。 [!DNL Experience Manager] 管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。 [!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
 * のImageCutout API [!DNL Adobe Photoshop]を使用して、結果をレンディションとして保存します [](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) 。
 * サードパーティ製システムを呼び出して、PIMシステムなどのデータを更新します。
@@ -119,7 +119,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >標準メタデータは、カスタムアプリケーションを使用して編集することはできません。 変更できるのは、カスタムメタデータのみです。
 
-### カスタムプロファイルの作成 {#create-custom-profile}
+### Create a custom profile {#create-custom-profile}
 
 カスタムプロファイルを作成するには、次の手順に従います。
 
@@ -128,13 +128,13 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 次の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
-   * [FireflyカスタムアプリのエンドポイントURL](https://docs.adobe.com/content/help/en/asset-compute/using/extend/deploy-custom-application.html)。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
-   * 「追加 Service Parameters 」を [選択し、追加の情報やパラメーターをカスタムアプリケーションに渡します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#pass-custom-parameters)。
+   * [FireflyカスタムアプリのエンドポイントURL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)。 アプリは、Experience Managerアカウントと同じ組織のものである必要があります。
+   * 「追加 Service Parameters 」を [選択し、追加の情報やパラメーターをカスタムアプリケーションに渡します](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)。
    * MIMEタイプを追加および除外し、処理を特定のファイル形式のみに制限します。
 
    「**[!UICONTROL 保存]**」をクリックします。
 
-カスタムアプリケーションは、ヘッドレスな [Project Firefly](https://github.com/AdobeDocs/project-firefly) Appです。 処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
+カスタムアプリケーションは、[Project Firefly](https://github.com/AdobeDocs/project-firefly) のヘッドレスアプリです。処理プロファイルが設定されている場合、カスタムアプリケーションは指定されたすべてのファイルを取得します。 アプリケーションは、ファイルをフィルタリングする必要があります。
 
 >[!CAUTION]
 >
@@ -144,7 +144,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 カスタムプロファイルの使用方法を説明するために、キャンペーン画像にカスタムテキストを適用する使用例を考えてみましょう。 PhotoshopAPIを利用して画像を編集する処理プロファイルを作成できます。
 
-Asset Compute Serviceの統合により、Experience Managerは、「 [!UICONTROL Service Parameters] 」フィールドを使用して、これらのパラメーターをカスタムアプリケーションに渡すことができます。 次に、カスタムアプリケーションがPhotoshopAPIを呼び出し、これらの値をAPIに渡します。 例えば、フォント名、テキストカラー、テキスト重み付けおよびテキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
+asset computeサービスの統合により、Experience Managerは、「 [!UICONTROL サービスパラメータ] 」フィールドを使用して、これらのパラメーターをカスタムアプリケーションに渡すことができます。 次に、カスタムアプリケーションがPhotoshopAPIを呼び出し、これらの値をAPIに渡します。 例えば、フォント名、テキストカラー、テキスト重み付けおよびテキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
 
 ![カスタム処理プロファイル](assets/custom-processing-profile.png)
 
@@ -224,9 +224,9 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 
 >[!MORELIKETHIS]
 >
->* [Asset Compute Serviceの紹介](https://docs.adobe.com/content/help/en/asset-compute/using/introduction.html)。
->* [拡張機能と使用するタイミングを理解します](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)。
->* [カスタムアプリケーションの作成方法](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html)。
+>* [asset computeサービスの概要](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)。
+>* [拡張機能と使用するタイミングを理解します](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)。
+>* [カスタムアプリケーションの作成方法](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)。
 >* [様々な使用例でサポートされるMIMEタイプ](/help/assets/file-format-support.md)。
 
 
