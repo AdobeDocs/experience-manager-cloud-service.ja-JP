@@ -3,10 +3,10 @@ title: アセットをダウンロード
 description: 「アセットをダウンロード」 [!DNL Adobe Experience Manager Assets] フロームを使用して、ダウンロード機能を有効または無効にします。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 69%
+source-wordcount: '885'
+ht-degree: 68%
 
 ---
 
@@ -26,16 +26,16 @@ ht-degree: 69%
 * [Experience Managerユーザーインターフェイス](#download-in-aem)
 * アセットリンク共有ユーザーインターフェイス
 * [アセット共有コモンズ](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [デスクトップアプリ](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## AEMインターフェイスを使用したアセットのダウンロード {#download-in-aem}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークを提供します。 ユーザーインターフェイスから小さなファイルがリアルタイムでダウンロードされます。 サイズの大きいファイルは非同期でダウンロードされ、受信トレイのExperience Manager通知を通じて完了が通知されます。 「Experience Manager受信トレイにつ [いて](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)」を参照してください。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークを提供します。 ユーザーインターフェイスから小さなファイルがリアルタイムでダウンロードされます。 サイズの大きいファイルは非同期でダウンロードされ、受信トレイのExperience Manager通知を通じて完了が通知されます。 「Experience Manager受信トレイにつ [いて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)」を参照してください。
 
 ![ダウンロード通知](assets/download-notification.png)
 
-*図：インボックスを介したダウンロード通知[!DNL Experience Manager]。*
+*図：インボックスを介したダウンロード通知 [!DNL Experience Manager] 。*
 
 非同期ダウンロードは、次のいずれかの場合にトリガーされます。
 
@@ -86,7 +86,7 @@ ht-degree: 69%
 
  パブリッシュインスタンスの `Asset Download Servlet` を無効にするには、アセットダウンロード要求をすべてブロックするように Dispatcher 設定を更新します。[!DNL Experience Manager]サーブレットは、OSGi コンソールから手動で直接無効にすることもできます。
 
-1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)に新しいルールを追加します。
+1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)に新しいルールを追加します。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
