@@ -4,9 +4,9 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '4431'
+source-wordcount: '4429'
 ht-degree: 99%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 99%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
+DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
 
 ![重複アセット検出の OSGi 設定](assets/duplicate-detection.png)
 
