@@ -3,10 +3,10 @@ title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 26294ad57544aa822dc6341fbbd85f396730ee8b
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '2223'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 この機能を使用または設定する前に、以下を確認してください。
 
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
-* [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。[!DNL Experience Manager] 6.5 について詳しくは、[Experience Manager 6.5 Assets の Connected Assets 機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.translate.html)を参照してください。
+* [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。For more information, [!DNL Experience Manager] 6.5, see [Connected Assets functionality in Experience Manager 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -40,7 +40,7 @@ ht-degree: 93%
 
 作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターで使用します。ドキュメントが `Download` コンポーネントに追加され、画像が `Image` コンポーネントに追加されます。作成者は、デフォルトの `Download` または `Image` コンポーネントを拡張するカスタム [!DNL Experience Manager] コンポーネントにもリモートアセットを追加します。サポートされる形式は以下の通りです。
 
-* **画像形式**：[画像コンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/image.html)がサポートする形式。[!DNL Dynamic Media] 画像はサポートされていません。
+* **画像形式**：[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)がサポートする形式。[!DNL Dynamic Media] 画像はサポートされていません。
 * **ドキュメント形式**：詳しくは、[サポートされるドキュメント形式](file-format-support.md#document-formats)を参照してください。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
@@ -193,7 +193,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 一般的なエラーシナリオのトラブルシューティングをおこなうには、次の手順に従います。
 
-* [!UICONTROL コンテンツファインダー]からリモートアセットを検索できない場合は、必要な役割と権限が設定されていることを確認してください。
+* If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * リモート DAM から取得したアセットは、1 つ以上の理由で Web ページに発行できない場合があります。リモートサーバーに存在しない、取得する適切なアクセス許可がない、ネットワーク障害、などが原因の可能性があります。アセットがリモート DAM から削除されていないことを確認してください。適切な権限が設定され、前提条件が満たされていることを確認します。アセットをページに追加し直して、再公開してください。アセット取得時のエラーについては、[非同期ジョブのリスト](/help/operations/asynchronous-jobs.md)を確認してください。
 * ローカル [!DNL Sites] 展開からリモートDAM展開にアクセスできない場合は、クロスサイトCookieが許可されていることを確認してください。 クロスサイトCookieがブロックされている場合、の2つのデプロイメントは認証されない [!DNL Experience Manager] 可能性があります。 例えば、匿名モード [!DNL Google Chrome] では、サードパーティcookieがブロックされる場合があります。 ブラウザーでCookieを許可するには、アドレスバーの「目」アイコンをクリックし、「サイトが動作していません」/「ブロック」に移動し、リモートDAM URLを選択して、ログイントークンCookieを許可します。 [!DNL Chrome] または、サードパーティcookieを有効にする [方法に関するヘルプを参照してください](https://support.google.com/chrome/answer/95647)。
 
