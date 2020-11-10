@@ -3,10 +3,10 @@ title: AI生成タグを使用した画像の自動タグ付け
 description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33f5f5e0f4769381dd135216d7c7e49e158e870e
+source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
-source-wordcount: '2433'
-ht-degree: 87%
+source-wordcount: '2432'
+ht-degree: 85%
 
 ---
 
@@ -205,7 +205,7 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 
 * 画像内の細かい違いを認識することはできません。例えば、シャツのサイズが細身か標準かなどの違いは認識できません。
 * 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、T シャツのロゴなどです。
-* タグ付けは、AEM がサポートされているロケールでサポートされています。言語の一覧については、[スマートタグのリリースノート](https://docs.adobe.com/content/help/ja-JP/experience-manager-64/release-notes/smart-content-service-release-notes.translate.html)を参照してください。
+* タグ付けは、Experience Managerがサポートする言語でサポートされています。 For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
 
 スマートタグ（通常または拡張）付きのアセットを検索するには、アセットのオムニサーチ（全文検索）を使用します。スマートタグには個別の検索用述語はありません。
 
