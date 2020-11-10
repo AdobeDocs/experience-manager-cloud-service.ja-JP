@@ -2,10 +2,10 @@
 title: プロジェクト設定の詳細
 description: プロジェクト設定の詳細 —Cloud Services
 translation-type: tm+mt
-source-git-commit: 17971405c174e2559879335ade437c5fec2868a3
+source-git-commit: 207d0742e8bf46065c7e20bec7d88b0776c246b2
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 77%
 Cloud Manager で正常にビルドおよびデプロイされるために、既存の AEM プロジェクトはいくつかの基本ルールに従う必要があります。
 
 * プロジェクトは Apache Maven を使用してビルドする必要があります。
-* Git リポジトリのルートには *pom.xml* ファイルが必要です。This *pom.xml* file can refer to as many sub-modules (which in turn may have other sub-modules, etc.) as necessary.
+* Git リポジトリのルートには *pom.xml* ファイルが必要です。この *pom.xml* ファイルでは、必要な数のサブモジュールを参照できます（それらのサブモジュールでさらに他のサブモジュールなどを参照している場合もあります）。
 
 * 追加の Maven アーティファクトリポジトリへの参照を *pom.xml* ファイルに追加できます。設定時には、[パスワードで保護されたアーティファクトリポジトリ](#password-protected-maven-repositories)へのアクセスがサポートされます。ただし、ネットワークで保護されたアーティファクトリポジトリへのアクセスはサポートされていません。
-* デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。コンテンツパッケージは、サブモジュールの数に制限はありません。
+* デプロイ可能なコンテンツパッケージは、*target* という名前のディレクトリに含まれているコンテンツパッケージ *zip* ファイルをスキャンすることで検出されます。任意の数のサブモジュールでコンテンツパッケージを作成することもできます。
 
 * デプロイ可能な Dispatcher アーティファクトは、*conf* および *conf.d* というディレクトリを持つ *zip* ファイル（これも *target* という名前のディレクトリに含まれる）をスキャンすることで検出されます
 
@@ -31,7 +31,7 @@ Cloud Manager で正常にビルドおよびデプロイされるために、既
 
 ごく一部のケースでは、開発用ワークステーションで実行する場合とは異なり、Cloud Manager 内で実行する場合にはビルドプロセスを少し変える必要が出ることもあります。この場合は、[Maven プロファイル](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)を使用して、Cloud Manager を含む環境ごとのビルドの違いを定義できます。
 
-Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Managerビルド環境の外部でのみ使用するプロファイルは、この変数がないことを確認して行う必要があります。
+Cloud Manager ビルド環境内での Maven プロファイルのアクティベーションは、前述の CM_BUILD という名前の環境変数があるかどうかを調べておこなう必要があります。逆に、Cloud Manager ビルド環境以外でのみ使用するためのプロファイルは、この変数がないかどうかを調べることでアクティブ化する必要があります。
 
 例えば、Cloud Manager 内でビルドが実行されたときにのみ簡単なメッセージを出力する場合は、次のようにします。
 
@@ -108,7 +108,7 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
 ## パスワードで保護された Maven リポジトリのサポート {#password-protected-maven-repositories}
 
 >[!NOTE]
->パスワードで保護されたMavenリポジトリのアーティファクトは、現在、このメカニズムを通じてデプロイされるコードがCloud Managerのクォリティゲートを通じて実行されないので、非常に注意深く使用する必要があります。 したがって、AEMに結び付けられていないコードに対しては、まれなケースでのみ使用する必要があります。 バイナリと共にプロジェクトのソースコード全体に加え、Javaソースもデプロイすることをお勧めします。
+>パスワードで保護された Maven リポジトリのアーティファクトは、慎重に使用する必要があります。これは、現在、このメカニズムを通じてデプロイされるコードは Cloud Manager の品質ゲートを通じて実行されないためです。したがって、まれなケースで、AEM に結び付けられていないコードに対してのみ使用する必要があります。Java ソース、およびプロジェクトのソースコード全体もバイナリとともにデプロイすることをお勧めします。
 
 パスワードで保護された Maven リポジトリを Cloud Manager から使用するには、パスワード（および任意でユーザー名）を秘密の[パイプライン変数](#pipeline-variables)として指定し、git リポジトリの `.cloudmanager/maven/settings.xml` という名前のファイル内でその秘密を参照します。このファイルは、[Maven Settings File](https://maven.apache.org/settings.html) スキーマに従います。Cloud Manager のビルドプロセス開始時に、このファイル内の `<servers>` 要素が、Cloud Manager が提供するデフォルトの `settings.xml` ファイルに結合されます。`adobe` と `cloud-manager` で始まるサーバー ID は予約済みと見なされるため、カスタムサーバーでは使用しないでください。サーバー ID がこれらのプレフィックスのいずれかに&#x200B;**一致しない**&#x200B;場合、デフォルトの ID `central` は Cloud Manager でミラーリングされません。このファイルを配置すると、サーバー ID は `<repository>` 内や `pom.xml` ファイル内の `<pluginRepository>` 要素から参照されます。一般に、これらの `<repository>` や `<pluginRepository>` 要素は、[Cloud Manager 固有のプロファイル](#activating-maven-profiles-in-cloud-manager)に含まれますが、厳密に必要とは限りません。
 
@@ -145,43 +145,41 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
                     <name>env.CM_BUILD</name>
                 </property>
         </activation>
-        <build>
-            <repositories>
-                <repository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>myco-repository</id>
-                    <name>MyCo Releases</name>
-                    <url>https://repository.myco.com/maven2</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                </pluginRepository>
-            </pluginRepositories>
-        </build>
+        <repositories>
+             <repository>
+                 <id>myco-repository</id>
+                 <name>MyCo Releases</name>
+                 <url>https://repository.myco.com/maven2</url>
+                 <snapshots>
+                     <enabled>false</enabled>
+                 </snapshots>
+                 <releases>
+                     <enabled>true</enabled>
+                 </releases>
+             </repository>
+         </repositories>
+         <pluginRepositories>
+             <pluginRepository>
+                 <id>myco-repository</id>
+                 <name>MyCo Releases</name>
+                 <url>https://repository.myco.com/maven2</url>
+                 <snapshots>
+                     <enabled>false</enabled>
+                 </snapshots>
+                 <releases>
+                     <enabled>true</enabled>
+                 </releases>
+             </pluginRepository>
+         </pluginRepositories>
     </profile>
 </profiles>
 ```
 
 ### ソースのデプロイ {#deploying-sources}
 
-バイナリと共にJavaソースをMavenリポジトリにデプロイすることをお勧めします。
+バイナリと共に Java ソースを Maven リポジトリにデプロイすることをお勧めします。
 
-プロジェクトでmaven-source-pluginを設定します。
+プロジェクトで maven-source-plugin を設定します。
 
 ```xml
         <plugin>
@@ -198,11 +196,11 @@ Cloud Manager 以外でビルドが実行されたときにのみ簡単なメッ
         </plugin>
 ```
 
-### プロジェクトソースの配置 {#deploying-project-sources}
+### プロジェクトソースのデプロイ {#deploying-project-sources}
 
-バイナリと一緒にプロジェクトソース全体をMavenリポジトリにデプロイすることをお勧めします。これにより、正確なアーティファクトを再構築できます。
+バイナリと一緒にプロジェクトソース全体を Maven リポジトリにデプロイすることをお勧めします。これにより、正確なアーティファクトを再構築できます。
 
-プロジェクトにmaven-assembly-pluginを設定します。
+プロジェクトで maven-assembly-plugin を設定します。
 
 ```xml
         <plugin>
