@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
+source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 85%
@@ -86,13 +86,13 @@ ht-degree: 85%
 
 開発環境の更新は、プログラムのユーザーが管理します。ある環境で AEM の最新の公開リリースが動作していない場合、ホーム画面の環境カードのステータスには&#x200B;**更新可能**&#x200B;と表示されます。
 
-![](assets/update-environ-1.png)
+![](assets/environ-update.png)
 
 
 「**更新**」オプションは、**環境**カードから利用できます。
 このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合にも使用できます。**環境**&#x200B;ページが開き、「開発」環境を選択したら、「**....**」をクリックして「**更新**」を選択します。次の図を参照してください。
 
-![](assets/environments-screen-update.png)
+![](assets/environ-update2.png)
 
 これを選択すると、この環境に関連付けられているパイプラインをデプロイメントマネージャーで最新のリリースに更新してから実行できます。
 
@@ -108,7 +108,7 @@ ht-degree: 85%
 
 **環境**&#x200B;カードの「**詳細**」をクリックした場合も、削除オプションを使用できます。**環境**&#x200B;ページが開き、「開発」環境を選択したら、「**...**」をクリックして「**削除**」を選択します。次の図を参照してください。
 
-![](assets/environ-delete-2.png)
+![](assets/environ-delete2.png)
 
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. �
 
 詳しくは、「作成者インスタンスへのアクセスの [管理](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」を参照してください。
 
-![](assets/environ-manage-access.png)
+![](assets/environ-access.png)
 
 
 ## 開発者コンソールへのアクセス {#accessing-developer-console}
@@ -134,7 +134,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. �
 詳しくは、[サンドボックス環境の休止と休止解除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)を参照してください。
 
 
-![](assets/environ-dev-console.png)
+![](assets/environ-devconsole.png)
 
 このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合にも使用できます。**環境**&#x200B;ページが開きます。環境を選択したら、「**...**」をクリックし、「**開発者コンソール**」を選択します。
 
