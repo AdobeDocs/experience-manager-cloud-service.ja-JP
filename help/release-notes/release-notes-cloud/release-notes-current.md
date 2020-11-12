@@ -2,9 +2,9 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
+source-git-commit: eb4a567e7ae2aac7260aae28e2b91b088e42f945
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '787'
 ht-degree: 4%
 
 ---
@@ -67,7 +67,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12日です。
 
-### 新機能 {#what-is-new}
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * 新しいメニューオプション「 **ローカルログイン** 」が、環境カードおよび環境の概要ページの環境メニューオプションから利用できるようになりました。
 
