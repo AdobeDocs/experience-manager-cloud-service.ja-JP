@@ -2,9 +2,9 @@
 title: Cloud Serviceリリース2020.11.0としてのAEMのCloud Managerのリリースノート
 description: Cloud Serviceリリース2020.11.0としてのAEMのCloud Managerのリリースノート
 translation-type: tm+mt
-source-git-commit: 1d71788a84bb3c680ad4045454db00cfb345469d
+source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '186'
 ht-degree: 4%
 
 ---
@@ -23,6 +23,7 @@ AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12�
 ### 新機能 {#what-is-new}
 
 * 新しいメニューオプション「 **ローカルログイン** 」が、環境カードおよび環境の概要ページの環境メニューオプションから利用できるようになりました。
+Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
 
 * Cloud Managerの「 **Learn** 」タブが更新され、UIの新しい画像が表示されるようになりました。
 
