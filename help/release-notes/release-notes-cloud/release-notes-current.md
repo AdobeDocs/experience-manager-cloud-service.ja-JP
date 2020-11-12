@@ -1,18 +1,18 @@
 ---
-title: Cloud Serviceとしての2020.10.0リリース [!DNL Adobe Experience Manager] のリリースノート。
-description: '[!DNL Adobe Experience Manager] を2020.10.0のCloud Serviceリリースノートとして追加しました。'
+title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
+source-git-commit: d8cb22a5597e95bf4c74233b48553bb67bca09cb
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 19%
+source-wordcount: '785'
+ht-degree: 4%
 
 ---
 
 
 # Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
+The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
 ## リリース日 {#release-date}
 
@@ -60,37 +60,25 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * CIF Cloud config UIで、/libと/apps/の設定用の「保存して閉じる」ボタンが表示される問題を修正しました。 ただし、これらは読み取り専用なので、「閉じる」ボタンのみが表示されるように修正されました。
 
+
 ## Cloud Manager {#cloud-manager}
 
-* 環境ページのデザインが変更されました。
+### リリース日 {#release-date-cm}
 
-* 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
+AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12日です。
 
-* Cloud Managerビルドコンテナで、Java 8またはJava 11を使用したプロジェクトのコンパイルがサポートされるようになりました。 Java 11のサポートは、Mavenツールチェーンシステムによって提供されます。
+### 新機能 {#what-is-new}
 
-* 環境ごとの環境変数の数が 200 に増えました。
+* 新しいメニューオプション「 **ローカルログイン** 」が、環境カードおよび環境の概要ページの環境メニューオプションから利用できるようになりました。
 
-* 概要ページの環境カードには、最大3環境のリストが表示されます。 「すべてを **表示** 」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-詳しくは、「 [環境の](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 表示」を参照してください。
+* Cloud Managerの「 **Learn** 」タブが更新され、UIの新しい画像が表示されるようになりました。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* 環境が完全に作成される前に、Cloud Manager から開発者コンソールへのリンクが正しくアクティブになっていませんでした。
-
-* Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示していませんでした。
-
-* 非実稼働パイプライン編集ページの「キャンセル」ボタンと「保存」ボタンが必ずしも表示されていなかった問題を修正しました。
-
-* コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
-
-* 新しいプログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
-
-* 一部の大規模なパイプラインステップログは、ユーザーインターフェイスから一貫性のある方法でダウンロードできませんでした。
-
-* 環境名の検証が、1 つずれていました。
-
-* 何も存在しない場合、環境ページにパブリッシュセグメントと Dispatcher セグメントが表示されることがありました。
-
+* ビルドの実行前に行われた依存関係の読み込みには、Mavenプラグインのダウンロードが必要です。
+* Cloud Managerのフッターから言語を選択するリンクが、正しい場所に移動するようになりました。
+* コードのスキャン中に、SonarQubeプロセスが開始しないことがあります。 これは自動検出され、再起動が試行されます。
+* 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
