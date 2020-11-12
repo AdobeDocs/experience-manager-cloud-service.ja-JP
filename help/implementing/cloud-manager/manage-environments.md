@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 906965ee6f86682ebd5df8f3e99c5951d78cb071
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 85%
@@ -140,7 +140,7 @@ Select **Manage Access** from the dropdown menu in the **Environments** Card. �
 
 ## ローカルログイン {#login-locally}
 
-[ **環境** カード]のドロップダウンメニューから[ローカルログイン **** ]を選択し、ローカルでAdobe Experience Managerにログインします。
+[ **環境** カード]のドロップダウンメニューで[ローカルログイン **** ]を選択し、Adobe Experience Managerにローカルでログインします。
 
 ![](assets/environ-login-locally.png)
 
