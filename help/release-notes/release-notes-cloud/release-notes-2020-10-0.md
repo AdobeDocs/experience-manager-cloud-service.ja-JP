@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての2020.10.0リリース [!DNL Adobe Experience Manager] のリリースノート。
 description: '[!DNL Adobe Experience Manager] を2020.10.0のCloud Serviceリリースノートとして追加しました。'
 translation-type: tm+mt
-source-git-commit: f0ac4b511fefa0bcde8d59c416da638941cd52ad
+source-git-commit: eb4a567e7ae2aac7260aae28e2b91b088e42f945
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 52%
+source-wordcount: '286'
+ht-degree: 49%
 
 ---
 
@@ -15,6 +15,12 @@ ht-degree: 52%
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service 2020.10.0.
 
 ## Cloud Manager {#cloud-manager}
+
+### リリース日 {#release-date-cm}
+
+AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月2日です。
+
+### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
 
 * 環境ページのデザインが変更されました。
 
@@ -44,4 +50,3 @@ The following section outlines the general Release Notes for [!DNL Experience Ma
 * 環境名の検証が、1 つずれていました。
 
 * 何も存在しない場合、環境ページにパブリッシュセグメントと Dispatcher セグメントが表示されることがありました。
-
