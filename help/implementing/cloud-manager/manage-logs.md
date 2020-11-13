@@ -2,10 +2,10 @@
 title: ログの管理 - Cloud Services
 description: ログの管理 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 ユーザーは、環境カードを使用して、選択した環境の使用可能なログファイルのリストにアクセスできます。ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-これらのファイルは、UI の&#x200B;**概要**&#x200B;ページからダウンロードできます。
+These files can be downloaded through the UI, either from the **Overview**  page:
 
-![](assets/manage-logs1.png)
+![](assets/download-logs1.png)
 
 また、**環境**&#x200B;ページからもダウンロードできます。
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 >[!NOTE]
 >開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
 
-![](assets/manage-logs3.png)
+![](assets/download-logs2.png)
 
 
 ## API を介したログの入手 {#logs-thorugh-api}
