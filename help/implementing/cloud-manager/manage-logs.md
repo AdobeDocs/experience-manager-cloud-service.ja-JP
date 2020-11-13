@@ -2,7 +2,7 @@
 title: ログの管理 - Cloud Services
 description: ログの管理 - Cloud Services
 translation-type: tm+mt
-source-git-commit: 703248cdcab9797b20d3f7e46f7ac03c15ec6980
+source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 93%
@@ -28,7 +28,7 @@ These files can be downloaded through the UI, either from the **Overview**  page
 ![](assets/download-logs2.png)
 
 
-## API を介したログの入手 {#logs-thorugh-api}
+## API を介したログの入手 {#logs-through-api}
 
 UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
 
