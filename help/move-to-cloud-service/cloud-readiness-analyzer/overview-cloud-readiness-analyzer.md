@@ -1,26 +1,26 @@
 ---
-title: Cloud Readiness Analyzer の概要
-description: Cloud Readiness Analyzer の概要
+title: ベストプラクティスアナライザの概要
+description: ベストプラクティスアナライザの概要
 translation-type: tm+mt
-source-git-commit: 2064dd6c647780dc149c51b7ff166779ba0a2212
+source-git-commit: 61be08b5cbee6c389f3878ef9d9f7ea9167b1dce
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 95%
+source-wordcount: '288'
+ht-degree: 35%
 
 ---
 
 
-# 概要 {#overview-cloud-readiness-analyzer}
+# 概要 {#overview-best-practices-analyzer}
 
-Cloud Readiness Analyzer を使用すると、既存の Adobe Experience Manager（AEM）のデプロイメントから AEM as a Cloud Service への移行の準備状況を評価するプロセスを迅速に実行できます。
+ベストプラクティスアナライザは、AEMのベストプラクティスに従っていない領域を示すことにより、現在のAEM導入の評価を提供します。 また、AEMのベストプラクティスを導入するための次の手順に関するガイダンスも提供します。 さらに、既存のAdobe Experience Manager(AEM)の導入からAEMへの移行の準備をCloud Serviceとして評価するプロセスを高速化できます。
 
 このツールでは、AEM as a Cloud Service への移行の最初の手順として、リファクタリングの可能性がある領域を識別するレポートを生成します。
 
-## Cloud Readiness Analyzer レポート {#cra-report}
+## ベストプラクティスアナライザレポート {#bpa-report}
 
-Cloud Readiness Analyzer レポートは、一般的なアップグレードの準備状況を理解するために使用します。このレポートは、カテゴリの中で発見された問題で構成されており、AEM as a Cloud Service のデプロイメントを成功させるにはそれらの問題を解決する必要があります。
+ベストプラクティスアナライザレポートは、アップグレードの準備状況に関する一般的な概要を理解するために使用します。 このレポートは、カテゴリの中で発見された問題で構成されており、AEM as a Cloud Service のデプロイメントを成功させるにはそれらの問題を解決する必要があります。
 
-Cloud Readiness Analyzer レポートには、次のカテゴリが含まれます。
+ベストプラクティスアナライザーレポートには、次のカテゴリが含まれます。
 
 * リファクタリングが必要なアプリケーション機能
 * サポートされている場所に移動する必要があるリポジトリ項目
@@ -28,9 +28,9 @@ Cloud Readiness Analyzer レポートには、次のカテゴリが含まれま�
 * デプロイと設定に関する問題
 * 新しい機能に置き換えられた、または AEM as a Cloud Service で現在サポートされていない AEM 6.x の機能
 
-カテゴリに関する追加情報、およびこれらのカテゴリに関連する示唆と解決策に関する情報は、Cloud Readiness Analyzer レポート内からリンクを介して提供されます。
+カテゴリに関する追加情報、およびこれらのカテゴリに関連する示唆と解決策に関する情報は、Best Practices Analyzer Report内のリンクを通して提供されます。
 
 >[!NOTE]
->Cloud Readiness Analyzer レポートは、手動で収集および評価する必要のある情報を提供することで、AEM as a Cloud Service の移行に必要な時間とコストの見積もりプロセスをスピードアップします。
+>ベストプラクティスアナライザレポートは、AEMにCloud Serviceとしてトランジションするのに必要な時間とコストを予測するプロセスを高速化します。それ以外の場合は、手動で収集して評価する必要のある情報を提供します。
 
-Cloud Readiness Analyzer レポートは、AEM インスタンスからダウンロードすることもできます。詳細については、 [「Cloud Readiness Analyzerレポートの](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) 表示」を参照してください。
+また、ベストプラクティスアナライザーレポートは、AEMインスタンスからダウンロードすることもできます。 Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md#viewing-report) for more details.
