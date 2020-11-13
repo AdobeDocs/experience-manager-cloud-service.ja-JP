@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service への移行
 breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 translation-type: tm+mt
-source-git-commit: 30aa03b97bfe94b63e6c6b1208504d1362e9ad8b
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 95%
+ht-degree: 86%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 95%
    + [実行](/help/move-to-cloud-service/execution.md)
    + [運用開始後](/help/move-to-cloud-service/post-go-live.md)
 + クラウド移行ツール {#cloud-migration}
-   + Cloud Readiness Analyzer {#cloud-readiness-analyzer}
-      + [概要](/help/move-to-cloud-service/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.md)
-      + [Cloud Readiness Analyzer の使用](/help/move-to-cloud-service/cloud-readiness-analyzer/using-cloud-readiness-analyzer.md)
+   + ベストプラクティスアナライザ {#best-practices-analyzer}
+      + [概要](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
+      + [ベストプラクティスアナライザの使用](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + コンテンツ転送ツール {#content-transfer-tool}
       + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
