@@ -2,10 +2,10 @@
 title: 計画段階
 description: 計画段階
 translation-type: tm+mt
-source-git-commit: fdcad36713cdcd766d7d698a2e6c017dad1b03a0
+source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 91%
+source-wordcount: '420'
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe Experience Manager as a Cloud Service で廃止される特長や機能に
 
 移行プロセスで予想される作業レベルを決定するには、主要な変更点および廃止される機能に照らした現在の AEM ソースコードの包括的な評価をおこなう必要があります。
 
-現在のAEMバージョンでCloud Readiness Analyzer(CRA)を実行すると、評価手順を高速化できます。 詳しくは、「 [CRAの概要](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/overview-cloud-readiness-analyzer.html)」を参照してください。
+現在のAEMバージョンでBest Practices Analyzerを実行すると、評価手順を早めることができます。 詳細については、 [ベストプラクティスアナライザを参照してください](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
 
 >[!NOTE]
 >既に Cloud Manager と Cloud Service 環境にアクセスできる場合は、現在のコードを Cloud Manager のコード品質パイプラインで実行して、Cloud Service に対応するために必要なコード変更を評価することをお勧めします。
