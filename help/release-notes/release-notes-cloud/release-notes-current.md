@@ -2,7 +2,7 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 8a7dd4059a200e82b6cb385acc5dcb174aa50938
+source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 4%
@@ -107,7 +107,7 @@ Best Practices Analyzerのリリース日は2020年11月14日です。
 
 ### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
 
-* Cloud Readiness Analyzerは、BPA (Best Practices Analyzer)になりました。 BPAは、現在のAEM実装のベストプラクティス評価を提供し、既存のAEMインスタンスからAEMにCloud Serviceとして移行する準備を評価するのに役立ちます。
+* Cloud Readiness Analyzerは、BPA (Best Practices Analyzer)になりました。 BPAは、現在のAEM実装のベストプラクティスの評価を提供し、既存のAEMインスタンスからAEMにCloud Serviceとして移行する準備を評価するのに役立ちます。
 
 * の使用を検出する新しいディテクターが追加されました。 `java.io.InputStream`これは、AEMでCloud Serviceーとして使用すると問題を引き起こす可能性があります。
 
