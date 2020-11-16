@@ -3,7 +3,7 @@ title: AI生成タグを使用した画像の自動タグ付け
 description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
 ht-degree: 85%
@@ -154,7 +154,7 @@ ht-degree: 85%
 1. 「**[!UICONTROL 開始]**」をクリックします。ワークフローによってアセットにタグが適用されます。アセットフォルダーに移動し、タグを確認して、アセットが適切にタグ付けされているかどうかを確認します。詳しくは、[スマートタグの管理](#manage-smart-tags-and-searches)を参照してください。
 
 >[!NOTE]
-
+>
 >後続のタグ付けサイクルでは、新しくトレーニングされたタグを使用して、変更したアセットのみが再度タグ付けされます。ただし、タグ付けワークフローの最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが 24 時間を超える場合は、変更されないアセットもタグ付けされます。定期的なタグ付けワークフローについては、時間の間隔が 6 ヶ月を超えると、変更されていないアセットがタグ付けされます。
 
 ### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
