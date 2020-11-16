@@ -2,9 +2,9 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 95e89bc665ee228da0a25a57a3a917a6b4c379ad
+source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4059'
 ht-degree: 88%
 
 ---
@@ -222,7 +222,6 @@ Whitelisted directives:
 | `mod_access_compat` | [https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) |
 | `mod_alias` | [https://httpd.apache.org/docs/2.4/mod/mod_alias.html](https://httpd.apache.org/docs/2.4/mod/mod_alias.html) |
 | `mod_allowmethods` | [https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html](https://httpd.apache.org/docs/2.4/mod/mod_allowmethods.html) |
-| `mod_auth_basic` | [https://httpd.apache.org/docs/2.4/mod/mod_auth_basic.html](https://httpd.apache.org/docs/2.4/mod/mod_auth_basic.html) |
 | `mod_authn_core` | [https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_core.html) |
 | `mod_authn_file` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authn_file.html) |
 | `mod_authz_core` | [https://httpd.apache.org/docs/2.4/mod/core.html](https://httpd.apache.org/docs/2.4/mod/mod_authz_core.html) |
