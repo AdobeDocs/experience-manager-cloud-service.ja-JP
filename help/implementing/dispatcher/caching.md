@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 translation-type: tm+mt
-source-git-commit: 0d01dc2cfed88a1b610a929d26ff4b144626a0e3
+source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
 workflow-type: tm+mt
-source-wordcount: '1483'
-ht-degree: 89%
+source-wordcount: '1481'
+ht-degree: 85%
 
 ---
 
@@ -25,12 +25,12 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
 * AEM as a Cloud Service の SDK Dispatcher ツールを使用して、`global.vars` の `EXPIRATION_TIME` 変数を定義することにより、すべての HTML/Text コンテンツに対して上書きできます。
 * 次の apache mod_headers ディレクティブを使用して、より詳細なレベルで上書きできます。
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
 グローバルキャッシュコントロールヘッダーや、広い範囲に一致するヘッダーを設定して、非公開にするコンテンツに適用されないようにする場合は、注意が必要です。 複数のディレクティブを使用して、ルールをきめ細かく適用することを検討します。 しかし、AEMをCloud Serviceとして使用すると、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合に、キャッシュヘッダーが削除されます。 AEMで常にキャッシュを適用するように強制するには、次のように「always」オプションを追加します。
 
@@ -48,15 +48,16 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
 { /glob "*" /type "allow" }
 ```
 
-* 特定のコンテンツがキャッシュされないようにするには、Cache-Control ヘッダーを「private」に設定します。例えば、次の例では、「myfolder」という名前のディレクトリ下の html コンテンツがキャッシュされないようにします。
+* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
 
-```
-<LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
-    Header set Cache-Control “private”
-</LocationMatch>
-```
+   ```
+      <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
+      Header set Cache-Control “private”
+     </LocationMatch>
+   ```
 
-* [dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
+   >[!NOTE]
+   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
@@ -68,12 +69,12 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
 * デフォルトではキャッシュされません。
 * 次の Apache `mod_headers` ディレクティブを使用して、より詳細なレベルに設定できます。
 
-```
-<LocationMatch "^\.*.(jpeg|jpg)$">
-    Header set Cache-Control "max-age=222"
-    Header set Age 0
-</LocationMatch>
-```
+   ```
+      <LocationMatch "^\.*.(jpeg|jpg)$">
+        Header set Cache-Control "max-age=222"
+        Header set Age 0
+      </LocationMatch>
+   ```
 
 キャッシュをあまり広く行わないよう注意し、AEMに「always」オプションを指定して常にキャッシュを適用させる方法については、上記のhtml/textセクションの説明を参照してください。
 
@@ -86,7 +87,8 @@ src/conf.dispatcher.d/cache の下のファイルに、次のルール（デフ�
 
 キャッシュせずに非公開にするアセットが、LocationMatch ディレクティブフィルターの一部ではないことを確認します。
 
-* [dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
+>[!NOTE]
+>The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### ノードストア内の他のコンテンツファイルタイプ {#other-content}
 
