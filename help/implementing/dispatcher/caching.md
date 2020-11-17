@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 translation-type: tm+mt
-source-git-commit: 79e1c15e8a92589cffaff18252e066a892c929b6
+source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 85%
+source-wordcount: '1479'
+ht-degree: 84%
 
 ---
 
@@ -32,21 +32,21 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
    </LocationMatch>
    ```
 
-グローバルキャッシュコントロールヘッダーや、広い範囲に一致するヘッダーを設定して、非公開にするコンテンツに適用されないようにする場合は、注意が必要です。 複数のディレクティブを使用して、ルールをきめ細かく適用することを検討します。 しかし、AEMをCloud Serviceとして使用すると、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合に、キャッシュヘッダーが削除されます。 AEMで常にキャッシュを適用するように強制するには、次のように「always」オプションを追加します。
+   グローバルキャッシュコントロールヘッダーや、広い範囲に一致するヘッダーを設定して、非公開にするコンテンツに適用されないようにする場合は、注意が必要です。 複数のディレクティブを使用して、ルールをきめ細かく適用することを検討します。 しかし、AEMをCloud Serviceとして使用すると、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合に、キャッシュヘッダーが削除されます。 AEMで常にキャッシュを適用するように強制するには、次のように「always」オプションを追加します。
 
-```
-<LocationMatch "\.(html)$">
+   ```
+   <LocationMatch "\.(html)$">
         Header always set Cache-Control "max-age=200"
         Header set Age 0
-</LocationMatch>
-```
+   </LocationMatch>
+   ```
 
-`src/conf.dispatcher.d/cache` の下のファイルに次のルール（デフォルト設定）があることを確認する必要があります。
+   `src/conf.dispatcher.d/cache` の下のファイルに次のルール（デフォルト設定）があることを確認する必要があります。
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
 * To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
 
@@ -76,19 +76,19 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
       </LocationMatch>
    ```
 
-キャッシュをあまり広く行わないよう注意し、AEMに「always」オプションを指定して常にキャッシュを適用させる方法については、上記のhtml/textセクションの説明を参照してください。
+   キャッシュをあまり広く行わないよう注意し、AEMに「always」オプションを指定して常にキャッシュを適用させる方法については、上記のhtml/textセクションの説明を参照してください。
 
-src/conf.dispatcher.d/cache の下のファイルに、次のルール（デフォルト設定）があることを確認する必要があります。
+   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
 
-```
-/0000
-{ /glob "*" /type "allow" }
-```
+   ```
+   /0000
+   { /glob "*" /type "allow" }
+   ```
 
-キャッシュせずに非公開にするアセットが、LocationMatch ディレクティブフィルターの一部ではないことを確認します。
+   キャッシュせずに非公開にするアセットが、LocationMatch ディレクティブフィルターの一部ではないことを確認します。
 
->[!NOTE]
->The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >[!NOTE]
+   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
 
 ### ノードストア内の他のコンテンツファイルタイプ {#other-content}
 
