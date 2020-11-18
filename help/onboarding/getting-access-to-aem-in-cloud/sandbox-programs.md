@@ -2,7 +2,7 @@
 title: サンドボックスプログラム-Cloud Service
 description: サンドボックスプログラム-Cloud Service
 translation-type: tm+mt
-source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
+source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Sandboxプログラムは、プログラムの作成時に、自動作成され�
 
 必要な権限を持つユーザーは、開発環境、実稼働/ステージ環境またはセットを削除できます。
 
-環境を削除する方法について詳しくは、環境の [削除](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) を参照してください。
+環境を削除する方法について詳しくは、「環境の [削除](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) 」を参照してください。
 
 
 ## サンドボックス環境の冬眠と非冬眠 {#hibernating-introduction}
@@ -176,7 +176,7 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 ## AEM Sandbox環境の更新 {#aem-updates-sandbox}
 
-Refer to [AEM version updates](/help/implementing/deploying/overview.md#version-updates) for more details.
+Refer to [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
 
 ユーザーは、Sandboxプログラム内の環境に手動でAEMアップデートを適用できます。
 
