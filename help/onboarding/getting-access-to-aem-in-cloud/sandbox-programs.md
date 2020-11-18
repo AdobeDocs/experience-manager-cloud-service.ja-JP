@@ -2,10 +2,10 @@
 title: サンドボックスプログラム-Cloud Service
 description: サンドボックスプログラム-Cloud Service
 translation-type: tm+mt
-source-git-commit: 81f2d4f4f956edbf88135a703df0162afd92bc43
+source-git-commit: b3fbe13df886459c6b18369af1a6e550ccad0454
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 1%
+source-wordcount: '1184'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Sandboxプログラムは、AEMCloud Serviceで使用できる2種類のプロ�
 
 SandboxプログラムにはSitesとAssetsが含まれ、Gitリポジトリ、開発環境、非実稼働パイプラインが自動入力されます。  Gitリポジトリには、AEMプロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
 
-プログラムタイプの詳細については、 [「プログラムとプログラムタイプについて](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html) 」を参照してください。
+プログラムタイプの詳細については、 [「プログラムとプログラムタイプについて](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 」を参照してください。
 
 ### サンドボックスプログラムの属性 {#attributes-sandbox}
 
@@ -43,7 +43,7 @@ Sandboxプログラムには次の属性があります。
 
 プログラム作成ウィザードを使用すると、Sandboxプログラムを作成できます。
 
-Sandboxプログラムの作成方法について詳しくは、「Sandboxプログラムの [作成](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/creating-a-program.html#create-sandbox-program) 」を参照してください。
+Sandboxプログラムの作成方法について詳しくは、「Sandboxプログラムの [作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) 」を参照してください。
 
 ### Sandbox環境の作成 {#creating-sandbox-environments}
 
@@ -51,13 +51,13 @@ Sandboxプログラムは、プログラムの作成時に、自動作成され�
 
 実稼働段階の環境セットは、実稼動パイプラインをセットアップする準備ができたら、Sandboxプログラムに手動で追加できます。
 
-環境を手動で作成する方法について詳しくは、「環境の [追加](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments) 」を参照してください。
+環境を手動で作成する方法について詳しくは、「環境の [追加](/help/implementing/cloud-manager/manage-environments.md) 」を参照してください。
 
 ### Sandbox環境の削除 {#deleting-sandbox-environments}
 
 必要な権限を持つユーザーは、開発環境、実稼働/ステージ環境またはセットを削除できます。
 
-環境を削除する方法について詳しくは、環境の [削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#deleting-environment) を参照してください。
+環境を削除する方法について詳しくは、環境の [削除](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) を参照してください。
 
 
 ## サンドボックス環境の冬眠と非冬眠 {#hibernating-introduction}
@@ -93,7 +93,7 @@ SandboxプログラムをDeveloper Consoleから手動で休止状態にする�
 Sandboxプログラム環境を手動で休止状態にするには、次の手順に従います。
 
 1. Navigate to the **Developer Console**.
-[環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
+[環境](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
    >[!IMPORTANT]
    >Cloud Managerから **Developer Console** （開発者コンソール）に直接リンクしても、Sandboxプログラム環境を休止するオプションは提供されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
 
@@ -119,7 +119,7 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 ### 冬眠解除 {#de-hibernation-introduction}
 
 1. Navigate to the **Developer Console**.
-[環境](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
+[環境](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
 
    >[!IMPORTANT]
    >Cloud Managerから **Developer Console** （開発者コンソール）に直接リンクしても、Sandboxプログラム環境の休止状態を解除するオプションは表示されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
@@ -157,8 +157,6 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 製品プロファイルがCloud ServiceとしてAEMへのアクセスを許可している場合は、 **Developer Console**(環境の非休止状態)にアクセスできる必要があります。
 
-ユーザー権限の設定については、 [Cloud Managerの「](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) 追加ユーザーと役割」を参照してください。
-
 #### 冬眠環境へのアクセス {#accessing-hibernated-environment}
 
 次の図に示すように、冬眠した環境の作成者層または発行層に対してブラウザリクエストを行うと、環境の冬眠状態を示すランディングページが発生します。
@@ -178,11 +176,11 @@ Sandboxプログラム環境を手動で休止状態にするには、次の手�
 
 ## AEM Sandbox環境の更新 {#aem-updates-sandbox}
 
-Refer to [AEM version updates](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#version-updates) for more details.
+Refer to [AEM version updates](/help/implementing/deploying/overview.md#version-updates) for more details.
 
 ユーザーは、Sandboxプログラム内の環境に手動でAEMアップデートを適用できます。
 
-環境を更新する方法については、 [環境の更新](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#updating-dev-environment) を参照してください。
+環境を更新する方法については、 [環境の更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) を参照してください。
 
 >[!NOTE]
 >* 手動更新は、対象環境に適切に設定されたパイプラインがある場合にのみ実行できます。
