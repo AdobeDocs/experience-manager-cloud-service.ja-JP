@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
-translation-type: ht
-source-git-commit: 024518cca45463afb5cbb4c9cd66bf1cd2a7c210
-workflow-type: ht
-source-wordcount: '2691'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
+workflow-type: tm+mt
+source-wordcount: '2737'
+ht-degree: 98%
 
 ---
 
@@ -471,6 +471,11 @@ config.dev
 </table>
 
 ## プロパティ設定用の Cloud Manager API 形式 {#cloud-manager-api-format-for-setting-properties}
+
+APIの設定方法 [については](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) 、このページを参照してください。
+>[!NOTE]
+>
+>使用したCloud Manager APIに「Deployment Manager -Cloud Service」というロールが割り当てられていることを確認します。 その他のロールでは、以下のコマンドのすべてを実行できません。
 
 ### API を使用した値の設定 {#setting-values-via-api}
 
