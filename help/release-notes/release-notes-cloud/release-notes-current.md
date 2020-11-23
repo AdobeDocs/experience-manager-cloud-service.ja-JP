@@ -2,10 +2,10 @@
 title: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Current Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service.
 translation-type: tm+mt
-source-git-commit: 4bce4fceab08a95fc2c1c8334f84fd54204228ba
+source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 4%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -44,7 +44,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * **[!DNL Adobe Asset Link]バージョン2.1**:、およびの新しいバージョンの [Adobeアセットリンク](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 拡張 [!DNL Adobe Photoshop]を使用で [!DNL Adobe Illustrator][!DNL Adobe InDesign] きます。 2020年10月にリリースされたバージョン2021の最新 [!DNL Adobe Creative Cloud] アプリケーションとの互換性を追加します。
 
-* **[!DNL Assets]WebPファイルのサポート**: [!DNL Assets] をCloud ServiceがWebP画像形式に対応するようになりました。 WebPは、Googleが作成する新しい画像形式です。 WebPファイル形式の画像は、JPGまたはPNGファイルと区別できず、ファイルサイズは非常に小さくなります。 アセットのファイルサイズが小さくなると、ページ読み込み時間が短縮され、コンテンツ作成者はWebエクスペリエンスをより高速に利用できます。 標準処理プロファイルの [作成を参照してください](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
+* **[!DNL Assets]WebPファイルのサポート**: [!DNL Assets] をCloud ServiceがWebP画像形式でのレンディションの作成をサポートするようになりました。 WebPは、Googleが作成する新しい画像形式です。 WebPファイル形式の画像は、JPGまたはPNGファイルと区別できず、ファイルサイズは非常に小さくなります。 アセットのファイルサイズが小さくなると、ページ読み込み時間が短縮され、コンテンツ作成者はWebエクスペリエンスをより高速に利用できます。 標準処理プロファイルの [作成を参照してください](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -72,13 +72,13 @@ AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12�
 * 新しいメニューオプション **「ローカルログイン** 」が、 **環境カードおよび** 環境 **** 概要ページの環境メニューオプションから利用できるようになりました。
 Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
 
-* Cloud Managerの「 **Learn** 」タブが更新され、UIの新しい画像が表示されるようになりました。
+* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* ビルドの実行前に行われた依存関係の読み込みには、Mavenプラグインのダウンロードが必要です。
-* Cloud Managerのフッターから言語を選択するリンクが、正しい場所に移動するようになりました。
-* コードのスキャン中に、SonarQubeプロセスが開始しないことがあります。 これは自動検出され、再起動が試行されます。
+* ビルドの実行に先立っておこなわれる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
+* 言語を選択するための Cloud Manager フッターからのリンクが、正しい場所を指すようになりました。
+* コードスキャン時に SonarQube プロセスが起動しないことがあります。これが自動検出され、再起動が試行されるようになりました。
 * 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
