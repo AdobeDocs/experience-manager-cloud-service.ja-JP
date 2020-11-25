@@ -4,16 +4,16 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.
 index: y
 type: Documentation
 solution-title: Adobe Experience Manager as a Cloud Service
-solution-hub-url: https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/landing/home.html
-getting-started-title: 概要
-getting-started-url: https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/overview/home.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=ja
+getting-started-title: はじめに
+getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: チュートリアル
-tutorials-url: https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 85%
+source-wordcount: '110'
+ht-degree: 70%
 
 ---
 
@@ -52,5 +52,3 @@ metadata.md
 * `title`
 * `description`
 * `contentOwner` (以下のコアアセットコンテンツのみ `/help/assets`)
-
-メタデータに関する追加情報は、[内部オーサリングガイド](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)を参照してください。
