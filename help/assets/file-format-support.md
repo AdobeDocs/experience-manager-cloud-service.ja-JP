@@ -1,25 +1,25 @@
 ---
 title: サポートされているファイル形式と MIME タイプ
-description: Adobe Experience Manager Assets as a Cloud Service でサポートされているファイル形式と MIME タイプ。
+description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2df737ae0601774f4a9d1dce470125f596fab467
+source-git-commit: bafcf005a2264b96caa3d59c478aa57fb38b2a4c
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 99%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
 
-# AEM Assets as a Cloud Service でサポートされているファイル形式 {#supported-file-formats}
+# [!DNL Assets] サポートされるファイル形式 {#supported-file-formats}
 
-Adobe Experience Manager as a Cloud Service では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。Adobe Experience Manager Assets は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
+[!DNL Adobe Experience Manager] as a Cloud Service では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。[!DNL Adobe Experience Manager Assets] は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
 
-さらに、Experience Manager Assets は、プレビューとレンディションの生成、およびフルテキストインデックス用のメタデータとテキストの抽出をサポートする拡張機能を提供します。この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
+In addition, [!DNL Experience Manager Assets] provides extended support to generate previews and renditions and to extract metadata and text for full-text indexing. この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
 
 アセットマイクロサービスを使用したアセットの変換の主な要素は次のとおりです。
 
-* アドビのアプリケーションおよびサービス（Adobe Photoshop、Adobe InDesign、Adobe Illustrator、Adobe XD、Adobe Dimension、Adobe Acrobat または PDF など）で生成される主要な [Adobe ファイル形式](#adobe-formats)
+* Key [Adobe file formats](#adobe-formats) produced by Adobe applications and services, including [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], and [!DNL Adobe Acrobat] or PDF.
 * 主要な[イメージングファイル形式](#image-formats).
 * （Adobe Camera Raw を活用した）各種カメラ（キャノン、ニコン、富士フイルム、オリンパスなどのメーカー）に対応する [Camera Raw ファイル形式。](#camera-raw-formats)
 * Microsoft Office 形式や OpenDocument 形式などの一般的な[ドキュメント形式](#document-formats)
@@ -39,7 +39,7 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | AI | ✓ | - | ✓ | ✓ |
 | Collage | - | - | ✓ | - |
-| DN | ✓ |  | ✓ | ✓ |
+| DN | ✓ | - | ✓ | ✓ |
 | Ideas | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -94,12 +94,12 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 
 | 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3D プレビュー | Dynamic Media の配信 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW] 形式 {#camera-raw-formats}
 
@@ -174,7 +174,7 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 | 3G2 | - | ✓ | - |
 | 3GP | - | ✓ | - |
 | AVI | ✓ | ✓ | ✓ |
-| DIVX | ✓ |  | ✓ |
+| DIVX | ✓ | - | ✓ |
 | F4V | ✓ | ✓ | ✓ |
 | FLV | ✓ | ✓ | ✓ |
 | M2T | ✓ | - | ✓ |
@@ -197,27 +197,27 @@ Adobe Experience Manager as a Cloud Service では、任意のバイナリファ
 ## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式{#video-dynamic-media-transcoding} 
 
 | ビデオファイル拡張子 | コンテナ | 推奨されるビデオコーデック | サポートされないビデオコーデック |
-|------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| MP4 | MPEG-4 | H264/AVC（すべてのプロファイル） |  |
+|------------------------|--------------------|--------|-------|
+| MP4 | MPEG-4 | H264/AVC（すべてのプロファイル） | - |
 | MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV（DV25）、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
 | FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（ベクターアニメーションファイル） |
 | WMV | Windows Media 9 | WMV3（v9）、WMV2（v8）、WMV1（v7）、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen（MSS2）、Microsoft Photo Story（WVP2） |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
+| M4V | Apple iTunes | H264/AVC | - |
 | AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV（DV25）、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3（IV30）、MJPEG、Microsoft Video 1（MS-CRAM） |
-| WebM | WebM | Google VP8 |  |
-| OGV、OGG | Ogg | Theora、VP3、Dirac |  |
-| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D、RM | Red Raw Video | MJPEG 2000 |  |
+| WebM | WebM | Google VP8 | - |
+| OGV、OGG | Ogg | Theora、VP3、Dirac | - |
+| MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
+| MTS | AVCHD | H264/AVC | - |
+| MKV | Matroska | H264/AVC | - |
+| R3D、RM | Red Raw Video | MJPEG 2000 | - |
 | RAM、RM | RealVideo | サポート対象外 | Real G2（RV20）、Real 8（RV30）、Real 10（RV40） |
-| FLAC | Native Flac | Free lossless audio codec |  |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000 codec |  |
+| FLAC | Native Flac | Free lossless audio codec | - |
+| MJ2 | Motion JPEG2000 | Motion JPEG 2000 codec | - |
 
 ## オーディオ形式 {#audio-formats}
 
-Assets as a Cloud Service は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。
+[!DNL Assets] as a Cloud Service は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。
 
 >[!MORELIKETHIS]
 >
