@@ -85,7 +85,7 @@ AEMにプロキシを使用する目標は、Maven設定の最初の有効なプ
 
 The parameters in the following table are common to all goals except when noted in the **Goals** column.
 
-| 名前 | タイプ | 必須 | デフォルト値 | 説明 | ゴール |
+| 名前 | 種類 | 必須 | デフォルト値 | 説明 | ゴール |
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | 不可 | `false` | 値 `true` を指定すると、エラーの発生時にビルドが失敗します。値 `false` を指定すると、ビルドの際にエラーが無視されます。 | All goals except `package` |
 | `name` | `String` | `build`:はい、 `install`:いいえ、 `rm`:はい | `build`:No default, `install`:Mavenプロジェクトの `artifactId` プロパティの値 | 操作するパッケージの名前 | All goals except `ls` |
@@ -117,7 +117,7 @@ All parameters for the build goal are described in the [Common Parameters](#comm
 
 In addition to the following parameters, see the descriptions in the [Common Parameters](#common-parameters) section.
 
-| 名前 | タイプ | 必須 | デフォルト値 | 説明 |
+| 名前 | 種類 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|---|---|
 | `artifact` | `String` | 不可 | The value of the `artifactId` property of the Maven project | A string of the form `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | 不可 | なし | インストールするアーティファクトの ID |
@@ -164,7 +164,7 @@ All parameters of the uninstall goal are described in the [Common Parameters](#c
 
 In addition to the following parameters, see the description of the `name` parameter in the [Common Parameters](#common-parameters) section.
 
-| 名前 | タイプ | 必須 | デフォルト値 | 説明 |
+| 名前 | 種類 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|---|
 | `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 不可 | なし | 使用するアーカイブの設定 |
 | `builtContentDirectory` | `java.io.File` | 可 | Mavenビルドの出力ディレクトリの値 | パッケージに含めるコンテンツを含むディレクトリ |
@@ -205,7 +205,7 @@ In addition to the following parameters, see the description of the `name` param
 </filter>
 ```
 
-##### Import Mode {#import-mode}
+##### インポートモード {#import-mode}
 
 `mode` 要素は、パッケージが読み込まれる際にリポジトリ内のコンテンツがどのような影響を受けるかを定義します。使用できる値は次のとおりです。
 
@@ -219,7 +219,7 @@ In addition to the following parameters, see the description of the `name` param
 
 #### パラメーター {#parameters-6}
 
-| 名前 | タイプ | 必須 | デフォルト値 | 説明 |
+| 名前 | 種類 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|---|
 | `detail` | `boolean` | 不可 | `false` | 各目標に対して設定可能なすべてのプロパティを表示するかどうかを指定します |
 | `goal` | `String` | 不可 | なし | このパラメーターは、ヘルプを表示する目標の名前を定義します。 値を指定しない場合は、すべてのゴールのヘルプが表示されます。 |
