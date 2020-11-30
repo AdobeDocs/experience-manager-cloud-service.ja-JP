@@ -1,9 +1,9 @@
 ---
 title: 実行段階
 description: 実行段階
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
@@ -77,11 +77,11 @@ Cloud Manager Git を介して Cloud Service 環境にコードをプッシュ�
 
 * Dispatcher SDK のインストール方法については、「Install Dispatcher SDK」（Dispatcher SDK のインストール）を視聴してください。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601?captions=jpn)
+   >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Dispatcher SDK の設定方法については、「Configure Dispatcher SDK」（Dispatcher SDK の設定）を視聴してください。
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602?captions=jpn)
+   >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 * ローカル開発環境を設定するには、[Local Development Environment Set up](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)（ローカル開発環境のセットアップ）を参照してください。
 
