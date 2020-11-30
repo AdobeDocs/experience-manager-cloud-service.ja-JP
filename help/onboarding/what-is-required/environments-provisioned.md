@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 2b7ee2b7b0ce351ed48aeb2f3135c947eafe7247
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 51%
+ht-degree: 59%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 51%
 
 ## プロビジョニング {#provisioning}
 
-お客様が購入したすべてのAEMクラウド環境は、自動的にアドビにプロビジョニングされ、Cloud Managerのプログラムにリンクされます。 これらの AEM クラウド環境は、すべての Adobe Managed Services サブスクリプションに含まれ、通常は 1 つ以上の実稼動環境、1 つのステージング環境、1 つ以上の開発環境またはテスト環境（オプション）で構成されます。
+お客様が購入したすべてのAEM Cloud環境は、Adobeによって自動的にプロビジョニングされ、Cloud Managerのプログラムにリンクされます。 これらの AEM クラウド環境は、すべての Adobe Managed Services サブスクリプションに含まれ、通常は 1 つ以上の実稼動環境、1 つのステージング環境、1 つ以上の開発環境またはテスト環境（オプション）で構成されます。
 
 ## お知らせメール {#welcome-email}
 
@@ -22,6 +22,6 @@ ht-degree: 51%
 
 ## 次の手順 {#next-steps}
 
-お知らせメールが届くと、Adobe IMS 資格情報を使用して管理者として Cloud Manager にログインする準備が整います。ログインすると、AEMクラウドの実稼働環境と実稼働以外の環境が使用可能で、正常に実行されていることを確認できます。
+お知らせメールが届くと、Adobe IMS 資格情報を使用して管理者として Cloud Manager にログインする準備が整います。ログインすれば、AEM クラウドの実稼動環境および非実稼動環境が使用可能で正常に動作していることを確認できます。
 
-これらのAEMクラウド環境は、Cloud ManagerのGitリポジトリからステージング環境を経由し、AEM実稼働環境まで、コードをデプロイする際に、CI/CDパイプラインの実行にCloud Managerで使用されます。 また、Web プロパティのデジタルエクスペリエンスの作成を開始する準備ができたら、Cloud Manager から直接 AEM クラウド環境にアクセスできます。
+これらのAEMクラウド環境は、Cloud ManagerでCI/CDパイプラインを実行する際に、Cloud ManagerのGitリポジトリからステージング環境経由で、AEM実稼働環境まで、CI/CDパイプラインを実行するために使用されます。 また、Web プロパティのデジタルエクスペリエンスの作成を開始する準備ができたら、Cloud Manager から直接 AEM クラウド環境にアクセスできます。
