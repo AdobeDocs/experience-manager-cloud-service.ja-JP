@@ -1,32 +1,32 @@
 ---
 title: 画像エディター
-description: 画像エディタはAEMの中核となる要素で、コンポーネントを利用してコンテンツ作成者が画像を操作しやすくすることができます。
+description: 画像エディターは AEM の中核となる要素で、コンポーネントを利用することでコンテンツ作成者は画像を操作しやなります。
 translation-type: tm+mt
 source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 
 # 画像エディター {#image-editor}
 
-画像エディタはAEMの中核となる要素で、コンポーネントを利用してコンテンツ作成者が画像を操作しやすくすることができます。
+画像エディターは AEM の中核となる要素で、コンポーネントを利用することでコンテンツ作成者は画像を操作しやなります。
 
-## 画像マップの相対的な単位 {#relative-units-for-image-map}
+## 画像マップの相対単位 {#relative-units-for-image-map}
 
-画像マップ領域は、絶対単位と相対単位の両方として画像エディタに保持されます。 相対単位は、レスポンシブ画像コンポーネント内のクライアント側で画像マップのサイズを動的に（画像サイズに対して）変更するデータ属性として指定する場合に役立ちます。
+画像マップ領域は、絶対単位および相対単位として画像エディターに保持されます。相対単位は、レスポンシブ画像コンポーネント内のクライアントサイドで画像マップのサイズを（画像サイズに対して）動的に変更するデータ属性として指定する場合に役立ちます。
 
-### imageMapプロパティ {#imagemap-property}
+### imageMap プロパティ {#imagemap-property}
 
-画像マップの座標は、画像エディターで `imageMap` プロパティとしてJCRに保持されます。 次の形式で指定します。
+画像マップの座標は、画像エディターで `imageMap` プロパティとして JCR に保持されます。このエディターは、以下の形式から構成されています。
 
 このプロパティは、マップ領域を次のように格納します。
 
 `[area1][area2][...]`
 
-面グラフの形式：
+領域の形式：
 
 `[SHAPE(COORDINATES)"HREF"|"TARGET"|"ALT"|(RELATIVE_COORDINATES)]`
 
@@ -35,23 +35,23 @@ ht-degree: 10%
 `[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
 `[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
-## SVG画像のサポート {#support-for-svg-images}
+## SVG 画像のサポート {#support-for-svg-images}
 
-Scalable Vector Graphics(SVG)は、画像エディターでサポートされています。
+画像エディターでは Scalable Vector Graphics（SVG）がサポートされています。
 
 * DAM からの SVG アセットのドラッグ＆ドロップと、ローカルファイルシステムからの SVG ファイルのアップロード、はどちらもサポートされます。
 
-## MIMEタイプによるプラグインの有効化 {#enabling-plugins-by-mime-type}
+## MIME タイプによるプラグインの有効化 {#enabling-plugins-by-mime-type}
 
-特定の状況では、サーバーサイドの処理がサポートされないため、特定のMIMEタイプに対してオーサリングアクションを制限する必要があります。 例えば、SVG画像の編集は許可されない場合があります。
+特定の状況では、サーバーサイドの処理がサポートされないため、特定の MIME タイプに対してオーサリングアクションを制限する必要があります。例えば、SVG 画像の編集は許可されない場合があります。
 
-画像エディター内のプラグインは、個々のプラグインの設定ノードでプ `supportedMimeTypes` ロパティを設定することで、MIMEタイプによって選択的に有効にすることができます。
+画像エディター内のプラグインは、個々のプラグインの設定ノードで `supportedMimeTypes` プロパティを設定することで、MIME タイプによって選択的に有効にできます。
 
 ### 例 {#example}
 
-例えば、切り抜き機能はGIF、JPEG、PNG、WEBPおよびTIFF画像に対してのみ許可されるとします。
+例えば、切り抜き機能は GIF、JPEG、PNG、WEBP、TIFF 画像に対してのみ許可されるとします。
 
-次に、この `supportedMimeTypes` プロパティを、画像コンポーネントのノード上のプラグインの設定ノードで許可されているMIMEタイプの文字列として設定する必要があ `cq:editConfig` ります。
+次に、この `supportedMimeTypes` プロパティを、画像コンポーネントの `cq:editConfig` ノード上のプラグインの設定ノードで許可されている MIME タイプの文字列として設定する必要があります。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 
