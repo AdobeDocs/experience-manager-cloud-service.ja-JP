@@ -1,60 +1,60 @@
 ---
 title: レプリケーション
-description: 分布 レプリケーションのトラブルシューティング
+description: 配布とレプリケーションのトラブルシューティング。
 translation-type: tm+mt
 source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # レプリケーション {#replication}
 
-Cloud ServiceとしてAdobe Experience Managerは、 [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) (Sling Content Distribution)機能を使用して、AEMランタイムの外部にあるAdobeI/O上で実行されるパイプラインサービスに複製するコンテンツを移動します。
+Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配布](https://sling.apache.org/documentation/bundles/content-distribution.html)機能を使用して、AEM ランタイムの外部にある Adobe I/O 上で動作するパイプラインサービスに複製するコンテンツを移動します。
 
 >[!NOTE]
 >
->詳しくは、 [配布版を参照してください](/help/core-concepts/architecture.md#content-distribution) 。
+>詳しくは、[コンテンツ配布](/help/core-concepts/architecture.md#content-distribution)を参照してください。
 
 ## コンテンツの公開方法 {#methods-of-publishing-content}
 
-### クイック非公開/公開 — 計画されている非公開/公開 {#publish-unpublish}
+### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
-作成者向けのこれらの標準的なAEM機能は、AEMCloud Serviceでは変更されません。
+これらの標準的な作成者向け AEM 機能は、AEM as a Cloud Service でも変わりません。
 
-### オン/オフ時間 — トリガー設定 {#on-and-off-times-trigger-configuration}
+### オンタイムとオフタイム - トリガー設定 {#on-and-off-times-trigger-configuration}
 
-「 **オン時間** 」と「 **オフ時間** 」の追加機能は、ページプロパティの「 [基本」タブから利用できます](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)。
+**オンタイム**&#x200B;と&#x200B;**オフタイム**&#x200B;の追加設定を[ページのプロパティの「基本」タブ](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)でおこなえます。
 
-この自動レプリケーションを実現するには、 **OSGi構成** On Off Trigger構成で [自動レプリケーションを有効にする必要があります](/help/implementing/deploying/configuring-osgi.md)****。
+これの自動レプリケーションを実現するには、[OSGi 設定](/help/implementing/deploying/configuring-osgi.md)の「**On Off Trigger Configuration**」で「**Auto Replicate**」を有効にする必要があります。
 
-![OSGiオンオフトリガーの設定](/help/operations/assets/replication-on-off-trigger.png)
+![OSGi の On Off Trigger Configuration ダイアログ](/help/operations/assets/replication-on-off-trigger.png)
 
 ### ツリーのアクティベーション {#tree-activation}
 
-ツリーアクティベーションを実行するには：
+ツリーのアクティベーションを実行するには：
 
-1. AEM開始メニューで、 **ツール/導入/配布に移動します。**
-2. カードの **forwardPublisherを選択します**
-3. forwardPublisher WebコンソールのUIを表示したら、「配布」を **選択します。**
+1. AEM 開始メニューで&#x200B;**ツール／デプロイメント／配布**&#x200B;に移動します。
+2. **forwardPublisher** カードを選択します。
+3. forwardPublisher Web コンソール UI で「**配布**」を選択します。
 
-   ![](assets/distribute.png "DistributeDistribute")
-4. パスブラウザーでパスを選択し、必要に応じてノード、ツリーまたは削除を追加するか、「 **送信」を選択します**
+   ![配布](assets/distribute.png "配布")
+4. パスブラウザーでパスを選択し、必要に応じてノードやツリーの追加または削除を選択し、「**送信**」をクリックします。
 
 ## トラブルシューティング {#troubleshooting}
 
-レプリケーションのトラブルシューティングを行うには、AEM Author Service Web UIのReplication Queuesに移動します。
+レプリケーションのトラブルシューティングをおこなうには、AEM オーサーサービス Web UI のレプリケーションキューに移動します。
 
-1. AEM開始メニューで、 **ツール/導入/配布に移動します。**
-2. カードの **forwardPublisherを選択します**
-   ![](assets/status.png "StatusStatus")
-3. 緑であるはずのキューステータスを確認します
-4. レプリケーションサービスへの接続をテストできます
-5. コンテンツパブリケーションの履歴を表示する **「ログ** 」タブを選択します
+1. AEM 開始メニューで&#x200B;**ツール／デプロイメント／配布**&#x200B;に移動します。
+2. **forwardPublisher** カードを選択します。
+   ![ステータス](assets/status.png "ステータス")
+3. キューのステータスが緑色かどうかを確認します。
+4. レプリケーションサービスへの接続をテストできます。
+5. 「**ログ**」タブを選択すると、コンテンツパブリケーションの履歴が表示されます。
 
-![](assets/logs.png "LogsLogs")
+![ログ](assets/logs.png "ログ")
 
-コンテンツを公開できない場合は、パブリケーション全体がAEM発行サービスから戻されます。
-この場合、パブリケーションがキャンセルされた原因となった項目を特定するために、キューを確認する必要があります。 赤いステータスを示すキューをクリックすると、保留中のアイテムを含むキューが表示され、必要に応じて、このキューから単一またはすべてのアイテムをクリアできます。
+コンテンツを公開できなかった場合は、パブリケーション全体が AEM パブリッシュサービスから戻されます。
+その場合は、パブリケーションのキャンセル原因となった項目を特定するために、キューを確認する必要があります。赤色のステータスを示すキューをクリックすると、保留中の項目を含んでいるキューが表示され、必要に応じて、そのキューから 1 つまたはすべての項目をクリアできます。
