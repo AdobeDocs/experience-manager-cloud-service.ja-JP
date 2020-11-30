@@ -1,6 +1,6 @@
 ---
 title: データ保護とデータのプライバシーに関する規制 —Cloud Service基盤の準備としてのAdobe Experience Manager
-description: '様々なData Protection and Data Privacy RegulationsのCloud Service基盤サポートとしてのAdobe Experience Managerについて説明します。 EU General Data Protection Regulation(GDPR)、California Consumer Privacy Act（カリフォルニア消費者プライバシー法）、およびCloud Serviceプロジェクトとして新しいAEMを導入する際の準拠方法を含む。 '
+description: '様々なData Protection and Data Privacy RegulationsのCloud Service財団サポートとしてのAdobe Experience Managerについて説明します。EU General Data Protection Regulation(GDPR)、California Consumer Privacy Act（カリフォルニア消費者プライバシー法）、新しいAEMをCloud Serviceプロジェクトとして導入する際の遵守方法を含む。 '
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 32%
 ---
 
 
-# データ保護およびデータのプライバシーに関する規制に対するCloud Service基盤の準備としてのAdobe Experience Manager {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# データ保護とデータプライバシー規制に対するCloud Service基盤の準備としてのAdobe Experience Manager {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,9 +20,9 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するアドビの対応、およびアドビのお客様にとっての意味について詳しくは、アドビのプライバシーセンター [を参照してください](https://www.adobe.com/privacy.html)。
+>プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、 [Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
-## AEM Foundationデータのプライバシーと保護のサポート {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation Data Privacy and Protectionのサポート {#aem-foundation-data-privacy-and-protection-support}
 
 AEM Foundationレベルでは、保存される個人データはUserプロファイルーに保持されます。 したがって、この記事の内容は、主に、アクセス要求と削除要求に対応するために、ユーザープロファイルにアクセスする方法と削除する方法に関するものです。
 
@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->AEMがCloud Serviceの場合、CRXDEにアクセスできないため、UIからユーザープロファイルを削除する手順は手動ではありません。
+>AEMの場合、CRXDEにアクセスできないので、Cloud Serviceプロファイルを削除する手動の手順はUIからは利用できません。
 
 ### HTTP API {#http-api-1}
 
