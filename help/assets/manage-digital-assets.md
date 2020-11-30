@@ -22,7 +22,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->* `sling:OrderedFolder` タイプの Assets フォルダーの共有は、Marketing Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
+>* `sling:OrderedFolder` タイプの Assets フォルダーの共有は、Experience Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
 >* Experience Manager では、`subassets` をフォルダーの名前として使用することはできません。これは、複合アセットのサブアセットを含むノード用に予約されているキーワードです
 
 
@@ -47,7 +47,7 @@ DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセッ�
 
 ![重複アセット検出の OSGi 設定](assets/duplicate-detection.png)
 
-設定ファイルをカスタムコード `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` で追加し、ファイルに次の内容を含めることができます。
+設定ファイル `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` をカスタムコードで追加し、ファイルに次の内容を含めることができます。
 
 ```json
 {
@@ -332,7 +332,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
    ![add_user](assets/add_user.png)
 
-1. ユーザーがフォルダーにアクセスしたときにログイン画面を表示するには、「**[!UICONTROL 有効]**」オプションを選択します。次に、AEM 内のログインページへのパスを選択し、変更を保存します。
+1. ユーザーがフォルダーにアクセスしたときにログイン画面を表示するには、「**[!UICONTROL 有効にする]**」オプションを選択します。次に、AEM 内のログインページへのパスを選択し、変更を保存します。
 
    ![login_page](assets/login_page.png)
 
@@ -440,7 +440,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
 1. 以下のいずれかから&#x200B;**[!UICONTROL 注釈]**&#x200B;アイコンをタップまたはクリックします。
 
    * [クイックアクション](#quick-actions)
-   * アセットを選択した後またはアセットページに移動した後に、ツールバーから
+   * アセットを選択した後のツールバーから、またはアセットページに移動して
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
@@ -602,7 +602,7 @@ AEM Assets インターフェイスの編集ツールを使用すると、画像
    ![save_version](assets/save_version.png)
 
 1. バージョンのプレビューを生成するには、「**[!UICONTROL バージョンをプレビュー]**」をタップまたはクリックします。
-1. Assets UI でこのバージョンを表示するには、「**[!UICONTROL このバージョンに戻す]**」を選択します。
+1. Assets UI でこのバージョンを表示するには、「**[!UICONTROL このバージョンに戻る]**」を選択します。
 1. 2 つのバージョンを比較するには、アセットのアセットページに移動し、現在のバージョンと比較するバージョンをタップまたはクリックします。
 
    ![select_version_tocompare](assets/select_version_tocompare.png)
