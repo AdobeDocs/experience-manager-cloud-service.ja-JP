@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 1cbc54fb7de0ba9c1c92cdcbe64f02a9e767c3b7
+source-git-commit: ce55065c3ae6a2350ed06811af76477df7c11291
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 77%
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -37,17 +37,20 @@ ht-degree: 77%
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
-   + [AEM UIの構造](developing/introduction/ui-structure.md)
+   + [AEM UI の構造](developing/introduction/ui-structure.md)
    + [Sling チートシート](developing/introduction/sling-cheatsheet.md)
    + [Sling アダプターの使用](developing/introduction/sling-adapters.md)
    + [AEM as a Cloud Service での Sling Resource Merger の使用](developing/introduction/sling-resource-merger.md)
    + [AEM as a Cloud Service でのオーバーレイ](developing/introduction/overlays.md)
-   + [クライアント側ライブラリの使用](developing/introduction/clientlibs.md)
+   + [クライアントサイドライブラリの使用](developing/introduction/clientlibs.md)
    + [設定と設定ブラウザ](developing/introduction/configurations.md)
    + [ログ](developing/introduction/logging.md)
    + [ページの差分](/help/implementing/developing/introduction/page-diff.md)
    + [エディターの制限事項](/help/implementing/developing/introduction/editor-limitations.md)
    + [命名規則](/help/implementing/developing/introduction/naming-conventions.md)
+   + [AEM タグ付けフレームワーク](/help/implementing/developing/introduction/tagging-framework.md)
+   + [AEMアプリケーションへのタグ付けの構築](/help/implementing/developing/introduction/tagging-applications.md)
+   + [AEM技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
 + 開発者ツール {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
@@ -61,32 +64,32 @@ ht-degree: 77%
    + [コンテンツサービス用の JSON エクスポーター](developing/components/json-exporter.md)
    + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
    + [画像エディター](developing/components/image-editor.md)
-   + [装飾タグ](developing/components/decoration-tag.md)
+   + [デコレーションタグ](developing/components/decoration-tag.md)
    + [非表示条件の使用](developing/components/hide-conditions.md)
 + ヘッドレスエクスペリエンス管理 {#headless}
-   + [ヘッドレスおよびAEMとのハイブリッド](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [ヘッドレスおよび AEM とのハイブリッド](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
    + 単一ページアプリケーション {#spa}
-      + [SPAの概要とチュートリアル](developing/spa/introduction.md)
-      + [SPA WKNDチュートリアル](developing/spa/wknd-tutorial.md)
-      + [Reactの使用を開始する](developing/spa/getting-started-react.md)
-      + [Angularを使用する前に](developing/spa/getting-started-angular.md)
-      + [SPAディープディブ](developing/spa/deep-dives.md)
-      + [AEM向けSPAの開発](developing/spa/developing.md)
+      + [SPA の概要およびガイド](developing/spa/introduction.md)
+      + [SPA WKND チュートリアル](developing/spa/wknd-tutorial.md)
+      + [React の使用を開始する](developing/spa/getting-started-react.md)
+      + [Angular の使用を開始する](developing/spa/getting-started-angular.md)
+      + [SPA の詳細](developing/spa/deep-dives.md)
+      + [AEM 向け SPA の開発](developing/spa/developing.md)
       + [SPA エディターの概要](developing/spa/editor-overview.md)
       + [SPA ブループリント](developing/spa/blueprint.md)
-      + [SPAページコンポーネント](developing/spa/page-component.md)
-      + [動的モデルとコンポーネントのマッピング](developing/spa/model-to-component-mapping.md)
+      + [SPA ページコンポーネント](developing/spa/page-component.md)
+      + [コンポーネントマッピングの動的モデル ](developing/spa/model-to-component-mapping.md)
       + [モデルルーティング](developing/spa/routing.md)
-      + [統合の起動](developing/spa/launch-integration.md)
-      + [サーバー側のレンダリング](developing/spa/ssr.md)
-      + [SPAリファレンスドキュメント](developing/spa/reference-materials.md)
+      + [ローンチの統合](developing/spa/launch-integration.md)
+      + [サーバーサイドレンダリング](developing/spa/ssr.md)
+      + [SPA リファレンスドキュメント](developing/spa/reference-materials.md)
 + パーソナライゼーション {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub の設定](developing/personalization/configuring-contexthub.md)
-   + [ページへのContextHubの追加](developing/personalization/adding-contexthub.md)
+   + [ページへの ContextHub の追加](developing/personalization/adding-contexthub.md)
    + [サンプルのストア候補](developing/personalization/sample-stores.md)
-   + [サンプルストアモジュール](developing/personalization/sample-modules.md)
+   + [サンプルのストアモジュール](developing/personalization/sample-modules.md)
    + [ContextHub の診断](developing/personalization/contexthub-diagnostics.md)
    + [ContextHub の拡張](developing/personalization/extending-contexthub.md)
    + [ContextHub API](developing/personalization/contexthub-api.md)
@@ -102,7 +105,7 @@ ht-degree: 77%
    + [アクセシブルなサイトの作成に向けた RTE の設定 ](/help/implementing/developing/extending/rte-accessible-content.md)
 + AEM as a Cloud Service へのデプロイ {#deploying}
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
-   + [AEMバージョンの更新](deploying/aem-version-updates.md)
+   + [AEM バージョンのアップデート](deploying/aem-version-updates.md)
    + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
 + オーサー層 {#author-tier}
    + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
