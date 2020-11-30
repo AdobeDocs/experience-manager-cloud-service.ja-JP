@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bb81fbf0952719c6ea364d008506faad73a60b8f
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 96%
 | [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
-| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM上のCommerce Integration FrameworkをCloud Serviceとして学習します。 |
+| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
