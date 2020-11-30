@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 96%
 
 ## 用語 {#terminology}
 
-Cloud ServiceとしてAdobe Experience Manager(AEM)を使用する場合、投稿に関連する様々な用語が発生する可能性があります。
+Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開に関連する様々な用語を目にするかもしれません。
 
 * **公開／非公開**
    * 環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
@@ -55,7 +55,7 @@ Cloud ServiceとしてAdobe Experience Manager(AEM)を使用する場合、投�
 
 >[!NOTE]
 >
-> その他の可能性については、ページプロパティ **の「** 基本」タブの「オン時間 **」および「** オフ時間 [」を参照してください。](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)
+> その他の可能性については、[ページプロパティの「基本」タブ](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)の「**オンタイム**」および「**オフタイム**」を参照してください。
 
 ### エディターからの公開 {#publishing-from-the-editor}
 
@@ -144,7 +144,7 @@ Cloud ServiceとしてAdobe Experience Manager(AEM)を使用する場合、投�
 
    「コンテンツを追加」ボタンをクリックすると、[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)が開き、コンテンツを選択できます。
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel** to cancel the selection and return to the wizard.
+   必要なページを選択し、「**選択**」をクリックしてコンテンツをウィザードに追加するか、「**キャンセル**」をクリックして選択をキャンセルして、ウィザードに戻ります。
 
    ウィザードに戻ると、リストの項目を選択して、次のような追加のオプションを設定できます。
 
