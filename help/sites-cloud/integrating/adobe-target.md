@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
 workflow-type: tm+mt
 source-wordcount: '743'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ Target に統合するには、次のタスクを実行します。
    * [Adobe I/O を使用した Adobe Target との統合](https://docs.adobe.com/content/help/en/experience-manager-65/administering/integration/integration-ims-adobe-io.html)
    * [Launch by Adobe の統合](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
    * [Adobe I/O を使用した AEM と Adobe Launch の統合](https://helpx.adobe.com/jp/experience-manager/using/aem_launch_adobeio_integration.html)
-   * [AEM と Launch by Adobe、Analytics、Target の統合について](https://helpx.adobe.com/jp/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
+   * [AEM と Experience Platform Launch、Analytics、Target の統合について](https://helpx.adobe.com/jp/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
 
 >[!NOTE]
 >
->Launch by Adobe の IMS 設定（技術アカウント）は、AEM as a Cloud Service に事前に設定されています。ユーザーはこの設定を作成する必要はありません。
+>Experience Platform Launch の IMS 設定（技術アカウント）は、AEM as a Cloud Service に事前に設定されています。ユーザーはこの設定を作成する必要はありません。
 
 1. [アクティビティを設定する](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)：アクティビティを Target のクラウド設定に関連付けます。
 
@@ -74,7 +74,7 @@ Target に統合するには、次のタスクを実行します。
 
 AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、AEM アクティビティの管理、AEM オーディエンスの管理に関する知識が必要です。以下を十分理解している必要があります。
 
-* Adobe Target（[Adobe Target のドキュメント](https://docs.adobe.com/content/help/en/target/using/target-home.html)を参照）
+* Adobe Target（[Adobe Target のドキュメント](https://docs.adobe.com/content/help/ja-JP/target/using/target-home.translate.html)を参照）
 * AEM アクティビティコンソール（[アクティビティの管理](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/activitylib.html)を参照）
 * AEM オーディエンス（[オーディエンスの管理](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/personalization/managing-audiences.html)を参照）
 
