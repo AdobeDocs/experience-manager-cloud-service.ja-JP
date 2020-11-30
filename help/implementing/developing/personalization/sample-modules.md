@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -32,19 +32,19 @@ contexthub.base UI モジュールタイプは、その他すべての UI モジ
 * **ポップオーバーのコンテンツ：** UI モジュールをクリックまたはタップするとポップオーバーに表示されるコンテンツを指定します。
 * **全画面モード：**&#x200B;全画面モードを許可するかどうかを制御します。
 
-ソースコードはにあり `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`ます。
+ソースコードは `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js` にあります。
 
 ### 設定 {#configuration}
 
 contexthub.base UI モジュールは、JSON 形式の JavaScript オブジェクトを使用して設定します。UI モジュールの機能を設定するには、次のいずれかのプロパティを含めます。
 
-* **image:** アイコンとして表示する画像のURL。
-* **icon:** Coral UIアイコン [クラスの名前](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 。 icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
-* **title:** UIモジュールのタイトル。 タイトルは、ポインターを UI モジュールアイコンに合わせると表示されます。
-* **fullscreen:** UIモジュールがフルスクリーンモードをサポートするかどうかを示すboolean値です。 Use `true` to support fullscreen and `false` to prevent fullscreen mode.
-* **template：** ContextHub のツールバーにレンダリングするコンテンツを指定する [Handlebars](https://handlebarsjs.com/) テンプレート。Use at most two `<p>` tags.
-* **storeMapping：**&#x200B;キーとストアのマッピング。関連するContextHubストアデータにアクセスするには、ハンドルテンプレートのキーを使用します。
-* **リスト:** UIモジュールがクリックされたときにプロバーでリストとして表示する項目の配列です。 この項目を含める場合は、popoverTemplate を含めないでください。値は、次のキーを持つオブジェクトの配列です。
+* **image：**&#x200B;アイコンとして表示する画像への URL。
+* **icon：**[Coral UI アイコン](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)クラスの名前。icon プロパティと image プロパティの両方に値を指定した場合は、image が使用されます。
+* **title：** UI モジュールのタイトル。タイトルは、ポインターを UI モジュールアイコンに合わせると表示されます。
+* **fullscreen：** UI モジュールが全画面モードをサポートするかどうかを示すブール値。全画面をサポートする場合は `true`、全画面モードを許可しない場合は `false` を使用します。
+* **template：** ContextHub のツールバーにレンダリングするコンテンツを指定する [Handlebars](https://handlebarsjs.com/) テンプレート。最大 2 つの `<p>` タグを使用します。
+* **storeMapping：**&#x200B;キーとストアのマッピング。Handlebar テンプレートでキーを使用して、関連付けられている ContextHub ストアデータにアクセスします。
+* **list：** UI モジュールをクリックしたときに、ポップオーバーにリストとして表示する項目の配列。この項目を含める場合は、popoverTemplate を含めないでください。値は、次のキーを持つオブジェクトの配列です。
    * title：この項目に対して表示するテキスト
    * image：（オプション）左側に表示する画像への URL
    * icon：（オプション）左側に表示する CUI アイコンクラス。image が指定されている場合は無視されます。
@@ -53,11 +53,11 @@ contexthub.base UI モジュールは、JSON 形式の JavaScript オブジェ�
    * checkmark
    * チェックボックス
    * radio
-* **poverTemplate:** UIモジュールがクリックされたときにプローバーでレンダリングするコンテンツを指定するハンドルテンプレートです。 この項目を含める場合は、`list` 項目を含めないでください。
+* **popoverTemplate：** UI モジュールをクリックしたときにポップオーバーにレンダリングするコンテンツを指定する Handlebars テンプレート。この項目を含める場合は、`list` 項目を含めないでください。
 
 ### 例 {#example}
 
-The following example configures a c`ontexthub.base` UI module to display information from a [contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate) store. `template` 項目は、`storeMapping` 項目が作成するキーを使用することによって、このストアからデータを取得する方法を示しています。
+次の例では、[contexthub.emulators](sample-stores.md#granite-emulators-sample-store-candidate) ストアからの情報を表示するように c`ontexthub.base` UI モジュールを設定しています。`template` 項目は、`storeMapping` 項目が作成するキーを使用することによって、このストアからデータを取得する方法を示しています。
 
 ```javascript
 {
@@ -70,15 +70,15 @@ The following example configures a c`ontexthub.base` UI module to display inform
 }
 ```
 
-![contexthub.baseモジュール](assets/base-module.png)
+![Contexthub.base モジュール](assets/base-module.png)
 
 ## contexthub.browserinfo UI モジュールタイプ {#contexthub-browserinfo-ui-module-type}
 
-The `contexthub.browserinfo` UI module displays information about the client web browser and operating system. 情報は、[contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) ストア候補をベースとする surferinfo ストアから取得されます。
+`contexthub.browserinfo` UI モジュールは、クライアント Web ブラウザーとオペレーティングシステムに関する情報を表示します。情報は、[contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) ストア候補をベースとする surferinfo ストアから取得されます。
 
-![contexthub.browserinfoモジュール](assets/browserinfo-module.png)
+![contexthub.browserinfo モジュール](assets/browserinfo-module.png)
 
-The source code for the UI module is located at `/libs/granite/contexthub/components/modules/browserinfo`. Although `contexthub.browserinfo` extends the `contexthub.base` UI module, it does not override or provide additional functions. この実装は、ブラウザー情報をレンダリングするためのデフォルトの設定を提供します。
+この UI モジュールのソースコードは `/libs/granite/contexthub/components/modules/browserinfo` にあります。`contexthub.browserinfo` は `contexthub.base` UI モジュールを拡張したものですが、追加の関数を上書きまたは提供しません。この実装は、ブラウザー情報をレンダリングするためのデフォルトの設定を提供します。
 
 ### 設定 {#configuration-1}
 
@@ -95,13 +95,13 @@ contexthub.browserinfo UI モジュールのインスタンスには、詳細設
 
 ## contexthub.datetime UI モジュールタイプ {#contexthub-datetime-ui-module-type}
 
-The `contexthub.datetime` UI module displays the date and time that is stored in a store named datetime that is based on the `contexthub.datetime` store candidate.
+`contexthub.datetime` UI モジュールは、`contexthub.datetime` ストア候補をベースとする、datetime という名前のストアに格納されている日時を表示します。
 
-![contexthub.datetimeモジュール](assets/datetime-module.png)
+![contexthub.datetime モジュール](assets/datetime-module.png)
 
 このモジュールは、ストア内の日時を変更できるポップオーバーフォームを提供します。
 
-The source of the `contexthub.datetime` UI module is located at `/libs/granite/contexthub/components/modules/datetime`.
+`contexthub.datetime` UI モジュールのソースは `/libs/granite/contexthub/components/modules/datetime` にあります。
 
 ### 設定 {#configuration-2}
 
@@ -120,11 +120,11 @@ contexthub.datetime UI モジュールのインスタンスは、詳細設定用
 
 ## contexthub.location UI モジュールタイプ {#contexthub-location-ui-module-type}
 
-The `contexthub.location` UI module displays the longitude and latitude of the client. このモジュールは、クリックして現在の位置を変更できる Google マップを表示するポップオーバーを提供します。このモジュールは、[contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) ストア候補をベースとする、geolocation という名前の ContextHub ストアから情報を取得します。
+`contexthub.location` UI モジュールは、クライアントの緯度と経度を表示します。このモジュールは、クリックして現在の位置を変更できる Google マップを表示するポップオーバーを提供します。このモジュールは、[contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) ストア候補をベースとする、geolocation という名前の ContextHub ストアから情報を取得します。
 
-![contexthub.locationモジュール](assets/location-module.png)
+![contexthub.location モジュール](assets/location-module.png)
 
-The source of the UI module is located at `/etc/cloudsettings/default/contexthub/geolocation`.
+UI モジュールのソースは `/etc/cloudsettings/default/contexthub/geolocation` にあります。
 
 ### 設定 {#configuration-4}
 
@@ -163,15 +163,15 @@ contexthub.location UI モジュールのインスタンスには、詳細設定
 
 ## contexthub.screen-orientation UI モジュールタイプ {#contexthub-screen-orientation-ui-module-type}
 
-The `contexthub.screen-orientation` UI module displays the current screen orientation of the client. デフォルトでは無効になっていますが、このモジュールは向きを選択できるポップオーバーを提供します。このモジュールは、[granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) ストア候補をベースとする、emulators という名前の ContextHub ストアから情報を取得します。
+`contexthub.screen-orientation` UI モジュールは、クライアントの現在の画面の向きを表示します。デフォルトでは無効になっていますが、このモジュールは向きを選択できるポップオーバーを提供します。このモジュールは、[granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) ストア候補をベースとする、emulators という名前の ContextHub ストアから情報を取得します。
 
-![contexthub.screen-orientationモジュール](assets/screen-orientation-module.png)
+![contexthub.screen-orientation モジュール](assets/screen-orientation-module.png)
 
-The source of the UI module is located at `/libs/granite/contexthub/components/modules/screen-orientation`.
+UI モジュールのソースは `/libs/granite/contexthub/components/modules/screen-orientation` にあります。
 
 ### 設定 {#configuration-5}
 
-Instances of the `contexthub.screen-orientation` UI module do not require a value for the Detail Configuration. 次の JSON テキストは、モジュールのデフォルトの設定を表しています。Note that the `clickable` property is `false` by default. If you override the default configuration to set `clickable` to `true`, clicking the module reveals a popup where you can select the orientation.
+`contexthub.screen-orientation` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。`clickable` プロパティは、デフォルトでは `false` です。デフォルトの設定を上書きして `clickable` を `true` に設定した場合、このモジュールをクリックするとポップアップが表示され、向きを選択できます。
 
 ```javascript
 {
@@ -187,15 +187,15 @@ Instances of the `contexthub.screen-orientation` UI module do not require a valu
 
 ## contexthub.tagcloud UI モジュールタイプ {#contexthub-tagcloud-ui-module-type}
 
-The `contexthub.tagcloud` UI module displays information about tags. この UI モジュールは、ツールバーに多数のタグを表示します。ポップアップには、タグクラウドと新しいタグを追加するためのテキストボックスが表示されます。この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
+`contexthub.tagcloud` UI モジュールは、タグに関する情報を表示します。この UI モジュールは、ツールバーに多数のタグを表示します。ポップアップには、タグクラウドと新しいタグを追加するためのテキストボックスが表示されます。この UI モジュールは、`contexthub.tagcloud` ストア候補をベースとする、tagcloud という名前の ContextHub ストアから情報を取得します。
 
-![contexthub.tagcloudモジュール](assets/tagcloud-module.png)
+![contexthub.tagcloud モジュール](assets/tagcloud-module.png)
 
-The source of the UI module is located at `/libs/granite/contexthub/components/modules/tagcloud`.
+UI モジュールのソースは `/libs/granite/contexthub/components/modules/tagcloud` にあります。
 
 ### 設定 {#configuration-6}
 
-Instances of the `contexthub.tagcloud` UI module do not require a value for the Detail Configuration. 次の JSON テキストは、モジュールのデフォルトの設定を表しています。
+`contexthub.tagcloud` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。
 
 ```javascript
 {
@@ -211,15 +211,15 @@ Instances of the `contexthub.tagcloud` UI module do not require a value for the 
 
 ## granite.profile UI モジュールタイプ {#granite-profile-ui-module-type}
 
-The `granite.profile` ContextHub UI module displays the display name of the current user. ポップアップにはユーザーのログイン名が表示され、表示名の値を変更できます。この UI モジュールは、[granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補をベースとする、profile という名前の ContextHub ストアから情報を取得します。
+`granite.profile` ContextHub UI モジュールは、現在のユーザーの表示名を表示します。ポップアップにはユーザーのログイン名が表示され、表示名の値を変更できます。この UI モジュールは、[granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補をベースとする、profile という名前の ContextHub ストアから情報を取得します。
 
-![granite.プロファイルモジュール](assets/profile-module.png)
+![granite.profile モジュール](assets/profile-module.png)
 
-The source of the UI module is at `/libs/granite/contexthub/components/modules/profile`.
+この UI モジュールのソースは `/libs/granite/contexthub/components/modules/profile` にあります。
 
 ### 設定 {#configuration-7}
 
-Instances of the `granite.profile` UI module do not require a value for the Detail Configuration. 次の JSON テキストは、モジュールのデフォルトの設定を表しています。
+`granite.profile` UI モジュールのインスタンスには、詳細設定用の値は必要ありません。次の JSON テキストは、モジュールのデフォルトの設定を表しています。
 
 ```javascript
 {
