@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: c3922be7da1e76fee51e2ae2f59f16e260727001
 workflow-type: tm+mt
 source-wordcount: '1955'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # AEM as a Cloud Service 2020.6.0 のリリースノート {#release-notes}
 
-このページでは、Experience Manager向けの一般的なリリースノートをCloud Service2020.6.0として概要を説明しています。
+このページでは、Experience Manager as a Cloud Service 2020.6.0 の一般的なリリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
@@ -61,11 +61,11 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.translate.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;の役割にあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セット内の他のものも削除されます。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.translate.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
@@ -81,7 +81,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * 「システム管理者」の役割を持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.translate.html#manage-access-aem)を参照してください。
+   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
@@ -190,4 +190,4 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 * アセットのダウンロード時に、電子メールオプションが選択されていて、有効な電子メール ID が指定されている場合でも、ダウンロードオプションが使用できない。（CQ-4296535）
 * スマートコレクションとして保存されたカスタムフィルターが、アセットに正しく適用されない。（CQ-4294942）
 * 検索とインデックス作成に関する複数の機能強化と、パフォーマンス向上のためのバグ修正。（CQ-4286373）
-* アセットでフォルダーのプロパティタブにアクセスできず、500エラーが返されます。 （CQ-4295701）
+* Assets でフォルダーのプロパティタブにアクセスできず、500 エラーが返されます。（CQ-4295701）
