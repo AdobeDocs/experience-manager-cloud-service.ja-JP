@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
 workflow-type: tm+mt
 source-wordcount: '466'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ContextHub には、ソリューションで利用できるサンプルストア
 
 >[!WARNING]
 >
->サンプルストアの候補は、プロジェクト専用の設定を構築する際に役立つリファレンス設定として提供されているので、直接使用しないでください。
+>サンプルストア候補は、プロジェクト専用の設定を構築する際に役立つリファレンス設定として提供されているので、直接使用しないでください。
 
 ## aem.segmentation サンプルストア候補 {#aem-segmentation-sample-store-candidate}
 
-解決済みおよび未解決の ContextHub セグメント用のストア。ContextHub SegmentManager からセグメントを自動的に取得します。
+解決済みおよび未解決の ContextHub セグメント用のストア。ContextHub SegmentManager からセグメントを自動的に取得します.
 
 ### ソースの場所 {#source-location-segmentation}
 
@@ -36,7 +36,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 ### 設定 {#configuration-segmentation}
 
-When you create an `aem.segmentation` store, you do not need to provide a detailed configuration. デフォルトの設定によって、ContextHub セグメント定義の場所が指定されます。
+`aem.segmentation` ストアを作成する場合、詳細な設定をする必要はありません。デフォルトの設定によって、ContextHub セグメント定義の場所が指定されます。
 
 ```xml
 {
@@ -50,7 +50,7 @@ When you create an `aem.segmentation` store, you do not need to provide a detail
 
 ## contexthub.geolocation サンプルストア候補 {#contexthub-geolocation-sample-store-candidate}
 
-The `contexthub.geolocation` sample store candidate uses Google Maps to obtain and store information about the client location.
+`contexthub.geolocation` サンプルストア候補は、Google マップを使用して、クライアントの位置に関する情報を取得し、格納します。
 
 ### ソースの場所 {#source-location-geolocation}
 
@@ -58,7 +58,7 @@ The `contexthub.geolocation` sample store candidate uses Google Maps to obtain a
 
 ### ベースとなる実装 {#base-implementation-geolocation}
 
-店 `contexthub.geolocation` 舗候補は拡張する [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)。
+`contexthub.geolocation` ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore) を拡張したものです。
 
 ### 設定 {#configuration-geolocation}
 
@@ -104,7 +104,7 @@ The `contexthub.geolocation` sample store candidate uses Google Maps to obtain a
 
 >[!NOTE]
 >
->Chrome 50.xで導入されたセキュリティポリシーでは、位置情報関連の呼び出しは、セキュリティで保護された接続を介して行われる必要があります。 そのため、AEM では、AEM が https 経由で実行されていても、ジオロケーション API 呼び出しに https の使用を強制します。その他の場合は、同一オリジンポリシーに準拠するために、http が使用されます。
+>Chrome 50.x で導入されたセキュリティポリシーでは、すべてのジオロケーション関連呼び出しは、安全な接続を使用しておこなう必要があります。そのため、AEM では、AEM が https 経由で実行されていても、ジオロケーション API 呼び出しに https の使用を強制します。その他の場合は、同一オリジンポリシーに準拠するために、http が使用されます。
 >
 >Chrome での変更について詳しくは、[Google のこのブログ投稿](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)を参照してください。
 
@@ -118,11 +118,11 @@ The `contexthub.geolocation` sample store candidate uses Google Maps to obtain a
 
 ### ベースとなる実装 {#base-implementation-surferinfo}
 
-店 `contexthub.surferinfo` 舗候補は拡張する [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)。
+`contexthub.surferinfo` ストア候補は、[`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore) を拡張したものです。
 
 ### 設定 {#configuration-surferinfo}
 
-The default configuration is inherited from `ContextHub.Store.PersistedStore`.
+デフォルトの設定は、`ContextHub.Store.PersistedStore` から継承されます。
 
 ### データ項目 {#data-items-surferinfo}
 
@@ -177,7 +177,7 @@ The default configuration is inherited from `ContextHub.Store.PersistedStore`.
 
 ## granite.emulators サンプルストア候補 {#granite-emulators-sample-store-candidate}
 
-The `granite.emulators` sample store candidate stores information about client devices.
+`granite.emulators` サンプルストア候補は、クライアントデバイスに関する情報を格納します。
 
 ### ソースの場所 {#source-location-emulators}
 
@@ -185,7 +185,7 @@ The `granite.emulators` sample store candidate stores information about client d
 
 ### ベースとなる実装 {#base-implementation-emulators}
 
-店 `granite.emulators` 舗候補は拡張する [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore)。
+`granite.emulators` ストア候補は、[`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore) を拡張したものです。
 
 ### 設定 {#configuration-emulators}
 
@@ -318,7 +318,7 @@ The `granite.emulators` sample store candidate stores information about client d
 
 ### ベースとなる実装 {#base-implementation-profile}
 
-店 `granite.profile` 舗候補は拡張する [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore)。
+`granite.profile` ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore) を拡張したものです。
 
 ### 設定 {#configuration-profile}
 
