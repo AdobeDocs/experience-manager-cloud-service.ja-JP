@@ -1,6 +1,6 @@
 ---
-title: ソースコードリポジトリ —Cloud Service
-description: ソースコードリポジトリ —Cloud Service
+title: ソースコードリポジトリ —Cloud Services
+description: ソースコードリポジトリ —Cloud Services
 translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
