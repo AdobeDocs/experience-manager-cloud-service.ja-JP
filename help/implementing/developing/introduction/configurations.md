@@ -14,7 +14,7 @@ ht-degree: 2%
 
 AEM設定は、AEMの設定を管理し、ワークスペースとして機能します。
 
-## 設定とは {#what-is-a-configuration}
+## What is a Configuration? {#what-is-a-configuration}
 
 設定は、2つの異なる視点から考察できます。
 
