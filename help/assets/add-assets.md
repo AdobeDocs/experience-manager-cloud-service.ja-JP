@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Adobe Experience Manager では任意のバイナリファイルをアップロ�
 
 >[!NOTE]
 >
->To upload nested folder hierarchies, see [bulk upload assets](#bulk-upload).
+>ネストされたフォルダー階層をアップロードする方法については、[アセットの一括アップロード](#bulk-upload)を参照してください。
 
 <!-- #ENGCHECK I'm assuming this is no longer relevant.... If yes, this should be removed#
 
@@ -151,13 +151,13 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 次のプロファイルがあります。
 
-* [メタデータプロファイル](metadata-profiles.md) ：そのフォルダーにアップロードされたアセットに初期設定のメタデータプロパティを適用できます
-* [処理プロファイル](asset-microservices-configure-and-use.md) ：デフォルトで可能な数を超えるレンディションを生成できます。
+* [メタデータプロファイル](metadata-profiles.md)：フォルダーにアップロードされたアセットにデフォルトのメタデータプロパティを適用できます。
+* [処理プロファイル](asset-microservices-configure-and-use.md)：デフォルトで可能な数より多いレンディションを生成できます。
 
 また、現在の環境で Dynamic Media が有効になっている場合は、次のプロファイルも使用できます。
 
-* [ダイナミックメディア画像プロファイル](dynamic-media/image-profiles.md) を使用すると、特定の切り抜き(**[!UICONTROL スマート切り抜き]** およびピクセル切り抜き)とシャープの設定を、アップロードしたアセットに適用できます。
-* [ダイナミックメディアビデオプロファイル](dynamic-media/video-profiles.md) (Dynamic Media Video Parameters)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
+* [Dynamic Media イメージプロファイル](dynamic-media/image-profiles.md)を使用すると、アップロードしたアセットに、特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;およびピクセル切り抜き）やシャープの設定を適用できます。
+* [Dynamic Media ビデオプロファイル](dynamic-media/video-profiles.md)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
 
 >[!NOTE]
 >
@@ -171,7 +171,7 @@ Adobe Experience Manager では、Web ブラウザーユーザーインターフ
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [Adobe Experience Manager デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
 >* [Adobe Asset Link](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Adobe Asset Link のドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
 >* [アセットのアップロードに関するテクニカルリファレンス](developer-reference-material-apis.md#asset-upload-technical)
