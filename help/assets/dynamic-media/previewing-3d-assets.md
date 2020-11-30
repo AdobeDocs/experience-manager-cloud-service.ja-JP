@@ -1,9 +1,9 @@
 ---
 title: 3D アセットのプレビュー
 description: 3D アセットのプレビュー方法について説明します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 100%
 
