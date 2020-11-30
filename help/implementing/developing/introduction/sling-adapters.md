@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
 source-wordcount: '2234'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -149,7 +149,7 @@ Value[]</a></td>
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html">ページ</a></td>
-   <td>If this is a JCR-node-based resource and the node is a <code>cq:Page</code> (or <code>cq:PseudoPage</code>).</td>
+   <td>このリソースが JCR ノードベースのリソースであり、ノードが <code>cq:Page</code>（または <code>cq:PseudoPage</code>）である場合。</td>
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/components/Component.html">コンポーネント</a></td>
@@ -157,7 +157,7 @@ Value[]</a></td>
   </tr>  
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/designer/Design.html">デザイン</a></td>
-   <td>これが設計ノード(<code>cq:Page</code>)の場合</td>
+   <td>このノードが設計ノード（<code>cq:Page</code>）である場合。</td>
   </tr>
   <tr>
    <td><a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Template.html">テンプレート</a></td>
