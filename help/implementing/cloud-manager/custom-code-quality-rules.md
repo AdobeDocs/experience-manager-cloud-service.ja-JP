@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 7fdbdd8bfe80d5f87d9917c905c8d04c4c277534
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
 >[!NOTE]
->ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQuebeの概念と品質ルールについて詳しくは [、「概念](https://docs.sonarqube.org/7.4/user-guide/concepts/) 」を参照してください。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQube の概念と品質ルールについて詳しくは、[概念](https://docs.sonarqube.org/7.4/user-guide/concepts/)（英語のみ）を参照してください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -425,7 +425,7 @@ public void doThis() {
 
 **最初の対象バージョン**：バージョン 2018.4.0
 
-名前が示すように、Java の例外は常に&#x200B;**&#x200B;例外的な状況で使用する必要があります。結果として、例外がキャッチされる際に、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
+名前が示すように、Java の例外は常に&#x200B;*例外的な*&#x200B;状況で使用する必要があります。結果として、例外がキャッチされる際に、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
 
 #### 準拠していないコード {#non-compliant-code-10}
 
@@ -555,7 +555,7 @@ public void doThis(Resource resource) {
 
 **キー**：CQRules:AMSCORE-554
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -569,7 +569,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 
 **キー**：AMSCORE-553
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -680,7 +680,7 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 
 **キー**：ClassicUIAuthoringMode
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -690,9 +690,9 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 
 ### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
 
-**キー**：ComponentWithOnlyClassicUIDalog
+**キー**：ComponentWithOnlyClassicUIDialog
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -710,7 +710,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 **キー**：ImmutableMutableMixedPackage
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
@@ -718,13 +718,13 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 Cloud Service のデプロイメントモデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリの不変領域のコンテンツ（つまり、`/apps and /libs, although /libs` を顧客コードで変更すると、別の違反を引き起こします）または可変領域（その他すべて）のいずれかを含める必要があります。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
-詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html)を参照してください。
+詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)を参照してください。
 
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
-**キー**：リバースレプリケーション
+**キー**：ReverseReplication
 
-**タイプ**:コードの匂い/Cloud Serviceの互換性
+**タイプ**：コードスメル／Cloud Service との互換性
 
 **深刻度**：軽度
 
