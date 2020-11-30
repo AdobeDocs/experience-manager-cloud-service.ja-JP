@@ -1,12 +1,12 @@
 ---
-title: Check In and Check Out files in [!DNL Assets]
+title: ' [!DNL Assets] 内ファイルのチェックインとチェックアウト'
 description: 編集のためにアセットをチェックアウトし、変更が完了した後にアセットをチェックインする方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Adobe Experience Manager (AEM) Assets では、編集のためにアセットを
 
    アセットに注釈を付けたり公開したりすることもできます。
 
-1. Assets の UI で編集したアセットを選択し、ツールバーで「**[!UICONTROL チェックイン]**」アイコンをクリックまたはタップします。
+1. Assets UI で編集したアセットを選択し、ツールバーで&#x200B;**[!UICONTROL チェックイン]**&#x200B;アイコンをクリックまたはタップします。
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
