@@ -16,7 +16,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 * コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/assets/content-fragments/content-fragments.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
-* [アセットの管理](/help/assets/manage-digital-assets.md) 」を参照してください。
+* 「[アセットの管理](/help/assets/manage-digital-assets.md)」を参照してください。
 
 <!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
 * [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
