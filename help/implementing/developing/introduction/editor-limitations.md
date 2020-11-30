@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 65%
 
 ### リンクがアクティブにならない {#links-not-active}
 
-When [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.md), links are not active.
+[ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)時に、リンクがアクティブになりません。
 
-* [**プレビュー**](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) モードに切り替えて、コンテンツ内のリンクを使用して移動します。
+* [コンテンツ内のリンクを使用して移動するには、**プレビュー**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)に切り替えます。
 
 ### 構造ページ {#structure-pages}
 
-ページに名前を付けることはできません `structure`。 名前が付けられたページ `structure` は、ページエディターで編集できません。
+ページに `structure` と名前が付けられない 。`structure` と名前が付けられたページは、ページエディターで編集できません。
 
 ## CSS の制限 {#css-limitations}
 
@@ -40,19 +40,19 @@ When [editing a page](/help/sites-cloud/authoring/fundamentals/editing-content.m
 
 ### vh 単位 {#vh-units}
 
-`vh` iframeの高さはAEMで自動的に調整される必要があるので、単位はサポートされません。
+iframe の高さは AEM によって自動調整されるので、`vh` 単位はサポートされません。
 
 ### 固定の背景画像 {#fixed-background-images}
 
-iframe内に埋め込まれているため、スクロール時に背景画像が固定として表示されない場合があります。
+固定の背景画像は、iframe 内に埋め込まれるので、スクロール時に固定されているように表示されない可能性があります。
 
-* Selecting **View Page as Published** in the header bar actions displays the page properly.
+* ヘッダーバーのアクションで「**公開済みとしてページを表示**」を選択すると、ページが正しく表示されます。
 
 ### 100 ％の高さ {#height}
 
 ページの body 要素では、100 ％の高さはサポートされていません。
 
-* 次のようにbody要素を「ストレッチ」してフルスクリーンボディを実装するには、回避策があります。
+* フルスクリーンの body を実装するために次のように body 要素を「拡張」することで、回避することが可能です。
 
 ```xml
 body {
