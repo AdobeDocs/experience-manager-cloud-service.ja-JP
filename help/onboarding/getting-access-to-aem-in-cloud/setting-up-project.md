@@ -1,11 +1,11 @@
 ---
 title: プロジェクト設定の詳細
-description: プロジェクト設定の詳細 —Cloud Services
+description: プロジェクト設定の詳細 - Cloud Services
 translation-type: tm+mt
 source-git-commit: 207d0742e8bf46065c7e20bec7d88b0776c246b2
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
