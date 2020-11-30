@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
 workflow-type: tm+mt
 source-wordcount: '3210'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,18 +16,18 @@ ht-degree: 94%
 
 AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEM as a Cloud Service 環境にコードをデプロイするための唯一のメカニズムになりました。
 
-The update of the [AEM version](/help/implementing/deploying/aem-version-updates.md) is always a separate deployment event from pushing [custom code](#customer-releases). 別の方法で表示すると、カスタムコードリリースは実稼働環境にあるAEMバージョンに対してテストする必要があります。これは、カスタムコードリリースが最上位にデプロイされるからです。 その後に発生するAEMバージョンの更新で、頻繁に自動的に適用されます。 既に導入済みの顧客コードとの下位互換性を確保することを目的としています。
+[AEM バージョン](/help/implementing/deploying/aem-version-updates.md)のアップデートは、常に、[カスタムコード](#customer-releases)のプッシュとは別のデプロイメントイベントになります。別の見方をすれば、カスタムコードリリースは実稼動環境にある AEM バージョンに照らしてテストする必要があります。カスタムコードがその AEM 上にデプロイされるからです。その後に発生する AEM バージョンの更新で、頻繁に自動的に適用されます。これらは、既に導入されている顧客コードとの後方互換性を保つためのものです。
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
 >[!NOTE]
->コードベースが既にある場合は、[AEM ドキュメント](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)に記載されているリポジトリ再構築の演習を完了することをお勧めします。
+>コードベースが既にある場合は、[AEM ドキュメント](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)に記載されているリポジトリー再構築の演習を完了することをお勧めします。
 
 ## お客様向けリリース {#customer-releases}
 
 ### 適切な AEM バージョンに照らしたコーディング {#coding-against-the-right-aem-version}
 
-これまでの AEM ソリューションでは、最新の AEM バージョンが頻繁に（およそ年 1 回、四半期ごとにサービスパックをリリース）変更され、顧客側では、API JAR を参照して、都合の良いときに実稼動インスタンスを最新のクイックスタートに更新するという形でした。ただし、AEMはCloud Serviceアプリケーションとして自動的に最新バージョンのAEMに更新される頻度が高いので、内部リリース用のカスタムコードは最新バージョンのAEMに対して構築する必要があります。
+これまでの AEM ソリューションでは、最新の AEM バージョンが頻繁に（およそ年 1 回、四半期ごとにサービスパックをリリース）変更され、顧客側では、API JAR を参照して、都合の良いときに実稼動インスタンスを最新のクイックスタートに更新するという形でした。しかし、AEM as a Cloud Service アプリケーションは、もっと頻繁に最新バージョンの AEM に自動更新されるので、内部リリースのカスタムコードは、最新の AEM バージョンに対応するように作成する必要があります。
 
 既存の非クラウドバージョンの AEM と同様に、特定のクイックスタートに基づくローカルのオフライン開発がサポートされ、ほとんどの場合にデバッグに最適なツールになると予想されます。
 
@@ -41,7 +41,7 @@ The update of the [AEM version](/help/implementing/deploying/aem-version-updates
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 >[!NOTE]
->コードベースが既にある場合は、[AEM ドキュメント](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)に記載されているリポジトリ再構築の演習を完了することをお勧めします。
+>コードベースが既にある場合は、[AEM ドキュメント](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)に記載されているリポジトリー再構築の演習を完了することをお勧めします。
 
 ## Cloud Manager とパッケージマネージャーを使用したコンテンツパッケージのデプロイ {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -169,7 +169,7 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 ### サードパーティパッケージの組み込み {#including-third-party}
 
-アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリと、パスワード保護Mavenリポジトリで説明されているパスワード保護を持つプライベートリポジトリに対しても可能で [](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)す。
+アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリーと、[パスワード保護 Maven リポジトリー](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)で説明されているパスワード保護を持つプライベートリポジトリーに対しても可能です。
 
 パッケージをリモートリポジトリに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリに保存できます。このリポジトリは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。このリポジトリは、プロジェクトの POM で次の例のように宣言されます。
 
@@ -235,19 +235,19 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ## インデックス {#indexes}
 
-新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順がおこなわれてから、新しいバージョン（グリーンバージョン）でトラフィックを引き受けることができるようになります。AEMでのCloud Serviceとしてのインデックス管理について詳しくは、 [この記事を参照してください](/help/operations/indexing.md)。 Cloud Manager のビルドページで、インデックス作成ジョブのステータスを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
+新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順がおこなわれてから、新しいバージョン（グリーンバージョン）でトラフィックを引き受けることができるようになります。AEM as a Cloud Service でのインデックス管理について詳しくは、[この記事](/help/operations/indexing.md)を参照してください。Cloud Manager のビルドページで、インデックス作成ジョブのステータスを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
 
 >[!NOTE]
 >
 >ローリングデプロイメントに必要な時間は、インデックスのサイズによって異なります。新しいインデックスが生成されるまで、グリーンバージョンではトラフィックを引き受けられないからです。
 
-現時点では、Cloud ServiceとしてのAEMは、ACS Commons Ensure Oak Indexツールなどのインデックス管理ツールでは動作しません。
+現時点では、AEM as a Cloud Service はインデックス管理ツール（ACS AEM Commons の Ensure Oak Index ツールなど）とは連携して動作しません。
 
 ## レプリケーション {#replication}
 
 公開メカニズムは、[AEM レプリケーション Java API](https://helpx.adobe.com/jp/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html) と後方互換性があります。
 
-クラウド対応のAEM quickstartを使用してレプリケーションを開発およびテストするには、従来のレプリケーション機能を作成者/発行の設定で使用する必要があります。 クラウドで AEM オーサーの UI エントリポイントが削除された場合、ユーザーは `http://localhost:4502/etc/replication` にアクセスして設定をおこないます。
+クラウド対応の AEM クイックスタートでレプリケーションを使用して開発およびテストをおこなうには、従来のレプリケーション機能をオーサー／パブリッシュ設定で使用する必要があります。クラウドで AEM オーサーの UI エントリポイントが削除された場合、ユーザーは `http://localhost:4502/etc/replication` にアクセスして設定をおこないます。
 
 ## ローリングデプロイメントに対応する後方互換コード {#backwards-compatible-code-for-rolling-deployments}
 
