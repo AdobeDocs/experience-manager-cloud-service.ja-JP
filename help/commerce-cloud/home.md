@@ -1,23 +1,23 @@
 ---
-title: CLOUD SERVICEとしてのAEMコマース
-description: CLOUD SERVICEのセルフヘルプリソースとドキュメントのリンクとしてのAEMコマース
+title: AEM Commerce as a Cloud Service
+description: AEM Commerce as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
 source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
-# CLOUD SERVICEとしてのAEMコマース {#commerce-guide}
+# AEM Commerce as a Cloud Service {#commerce-guide}
 
-このページでは、AEMコマースに関するCloud Serviceのセルフヘルプリソースをリストします。
+ここでは、AEM Commerce as a Cloud Service に関するセルフヘルプリソースの一覧を示します。
 
-## 主要コマース記事 {#key-articles}
+## Commerce の主要記事 {#key-articles}
 
-* [Cloud ServiceとしてのAEMコマースの導入](overview.md)
-* [Cloud ServiceとしてのAEMコマースのアーキテクチャ](architecture/magento.md)
+* [AEM Commerce as a Cloud Service の概要](overview.md)
+* [AEM Commerce as a Cloud Service のアーキテクチャ](architecture/magento.md)
 * [概要](getting-started.md)
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
@@ -41,7 +41,7 @@ ht-degree: 82%
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)
 * [コアコンポーネントのドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager のドキュメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
 * [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
