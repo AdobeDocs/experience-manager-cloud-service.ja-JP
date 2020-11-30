@@ -1,46 +1,46 @@
 ---
-title: SPAモデルルーティング
-description: AEMのシングルページアプリの場合、アプリはルーティングを担当します。 このドキュメントでは、ルーティングメカニズム、契約および使用可能なオプションについて説明します。
+title: SPA モデルルーティング
+description: AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# SPAモデルルーティング{#spa-model-routing}
+# SPA モデルルーティング{#spa-model-routing}
 
-AEMのシングルページアプリの場合、アプリはルーティングを担当します。 このドキュメントでは、ルーティングメカニズム、契約および使用可能なオプションについて説明します。
+AEM の単一ページアプリケーションの場合、アプリはルーティングを担当します。このドキュメントでは、ルーティングメカニズム、契約、使用可能なオプションについて説明します。
 
 ## プロジェクトルーティング {#project-routing}
 
-アプリはルーティングを所有し、プロジェクトのフロントエンド開発者によって実装されます。 このドキュメントでは、AEMサーバーから返されるモデルに固有のルーティングを説明します。 ページモデルのデータ構造は、基になるリソースのURLを公開します。 フロントエンドプロジェクトでは、ルーティング機能を提供するカスタムライブラリまたはサードパーティライブラリを使用できます。 ルートでモデルのフラグメントが必要になると、関数の呼び出しを行うことができ `PageModelManager.getData()` ます。 モデルルートが変更された場合は、ページエディターなどのリスニングライブラリに警告するためにイベントをトリガーする必要があります。
+アプリはルーティングを所有し、プロジェクトのフロントエンド開発者によって実装されます。このドキュメントでは、AEM サーバーから返されるモデルに固有のルーティングについて説明します。ページモデルのデータ構造は、基になるリソースの URL を反映します。フロントエンドプロジェクトでは、ルーティング機能を提供する任意のカスタムライブラリまたはサードパーティ製ライブラリを使用できます。ルートでモデルのフラグメントが予想されたら、`PageModelManager.getData()` 関数の呼び出しをおこなうことができます。モデルルートが変更された場合は、イベントをトリガーして、ページエディターなどのリッスンしているライブラリに警告する必要があります。
 
 ## アーキテクチャ {#architecture}
 
-詳細については、SPA BlueprintドキュメントのPageModelManager [の節を参照してください](blueprint.md#pagemodelmanager) 。
+詳しくは、SPA ブループリントドキュメントの [PageModelManager](blueprint.md#pagemodelmanager) の節を参照してください。
 
 ## ModelRouter {#modelrouter}
 
-有効な場合、 `ModelRouter` はHTML5履歴API関数をカプセル化し `pushState` 、特定のモデルフラグメントが事前に取得され、アクセス可能であ `replaceState` ることを保証します。 次に、モデルが変更されたことを登録されたフロントエンドコンポーネントに通知します。
+`ModelRouter` は、有効な場合、HTML5 の History API 関数 `pushState` および `replaceState` をカプセル化して、特定のモデルフラグメントが事前に取得されアクセス可能になることを保証します。次に、モデルが変更されたことを登録済みのフロントエンドコンポーネントに通知します。
 
 ## 手動と自動のモデルルーティング {#manual-vs-automatic-model-routing}
 
-は、モデルのフラグメントの取得を `ModelRouter` 自動化します。 しかし、自動化されたツールには制限が伴います。 必要に応じて、メタプロパティを使用してパスを無効にしたり、無視するように設定する `ModelRouter` ことができます( [SPAページコンポーネント](page-component.md) ドキュメントの「メタプロパティ」セクションを参照)。 フロントエンド開発者は、関数を使用して特定のモデルのフラグメントを読み込むようにリクエストするこ `PageModelManager` とで、独自のモデルルーティングレイヤーを実装でき `getData()` ます。
+`ModelRouter` は、モデルフラグメントの取得を自動化します。ただし、自動化された処理の常として、制限を伴います。必要に応じて、`ModelRouter` を無効にしたり、パスを無視するようにメタプロパティで設定したりできます（[SPA ページコンポーネント](page-component.md)のドキュメントでメタプロパティに関する節を参照）。フロントエンド開発者は、`getData()` 関数を使用して特定のモデルフラグメントを読み込むように `PageModelManager` に要求することで、独自のモデルルーティングレイヤーを実装することができます。
 
 >[!CAUTION]
 >
->現在のバージョンのみで、Sling Modelエントリポイントの実際のリソースパスを指すURLの使用がサポートされて `ModelRouter` います。 バニティURLやエイリアスの使用はサポートされていません。
+>`ModelRouter` の現在のバージョンでは、Sling Model エントリポイントの実際のリソースパスを指す URL のみ使用できます。バニティ URL やエイリアスの使用はサポートしていません。
 
 ## ルーティングのコントラクト {#routing-contract}
 
-現在の実装は、SPAプロジェクトで、異なるアプリページへのルーティングにHTML5履歴APIを使用することを前提としています。
+現在の実装では、SPA プロジェクトで様々なアプリケーションページへのルーティングに HTML5 の History API を使用することを前提としています。
 
 ### 設定 {#configuration}
 
-は、モデルルーティングのリスンと、モデルフラグメントのプリフェッチの呼び出しに関する概念を `ModelRouter` サポートし `pushState``replaceState` ています。 内部的に、指定されたURL `PageModelManager` に対応するモデルの読み込みがトリガーされ、他のモジュールがリッスンできる `cq-pagemodel-route-changed` イベントが発生します。
+`ModelRouter` では、`pushState` 呼び出しと `replaceState` 呼び出しをリッスンしてモデルフラグメントをプリフェッチするので、モデルルーティングの概念をサポートしています。内部では、`PageModelManager` をトリガーして指定の URL に対応するモデルを読み込み、他のモジュールがリッスンできる `cq-pagemodel-route-changed` イベントを発生させます。
 
 デフォルトではこの処理が自動的に有効になっています。無効にする場合は、SPA で次のメタプロパティをレンダリングする必要があります。
 
@@ -48,7 +48,7 @@ AEMのシングルページアプリの場合、アプリはルーティング�
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Note that every route of the SPA should correspond to an accessible resource in AEM (e.g., &quot; `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a &quot;block list&quot; of routes that should be ignored by the `PageModelManager`:
+なお、ルートが選択されると、対応するページモデルの読み込みが `PageModelManager` で自動的に試行されるので、SPA のすべてのルートを AEM 内のアクセス可能なリソース（`/content/mysite/mypage"` など）に対応させる必要があります。ただし、SPA では、必要に応じて、`PageModelManager` で無視する必要があるルートの「ブロックリスト」を定義することもできます。
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
