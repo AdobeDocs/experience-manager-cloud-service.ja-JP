@@ -1,5 +1,5 @@
 ---
-title: アクセシビリティ [!DNL Dynamic Media]
+title: ' [!DNL Dynamic Media] でのアクセシビリティ'
 description: ダイナミックメディアビューアおよびダイナミックメディアビューアのアクセシビリティについて説明します。
 contentOwner: Rick Brough
 topic-tags: introduction
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## ダイナミックメディアでのキーボードのアクセシビリティのサポート
 
-ダイナミックメディアはAEM Assetsのプラグインなので、キーボードコントロールの動作のほとんどはAEM Assetsの動作とまったく同じです。 例えば、ダイナミックメディアの `Cancel` ボタンは、AEM Assetsと同じフォーカスハイライトを持ち、AEM Assetsと同じ `Spacebar` キーに反応します。 アセットの [キーボードショートカットを参照してください](/help/assets/accessibility.md#keyboard-shortcuts)。
+ダイナミックメディアはAEM Assetsのプラグインなので、キーボードコントロールの動作のほとんどはAEM Assetsの動作とまったく同じです。 例えば、ダイナミックメディアの `Cancel` ボタンは、AEM Assetsと同じフォーカスハイライトを持ち、AEM Assetsと同じ `Spacebar` キーに反応します。 See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 ダイナミックメディアの個々のユーザーインターフェイス要素でサポートされているキーストロークは、ほとんどの場合、明確で見つけやすいものです。 ダイナミックメディアのキーボードコントロールは、次の点について説明します。
 
@@ -52,7 +52,7 @@ See [Editing the smart crop or smart swatch of a single image](/help/assets/dyna
 
 すべての標準搭載のダイナミックメディアビューアコンポーネントは、ユーザーにとってキーボードのアクセシビリティをサポートします。
 
-詳しくは、『Dynamic Media Viewersリファレンスガイド』の [キーボードのアクセシビリティとナビゲーション](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) （英語のみ）を参照してください。
+詳しくは、『Dynamic Media Viewersリファレンスガイド』の [キーボードのアクセシビリティとナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) （英語のみ）を参照してください。
 
 ## Dynamic Media Viewerでの支援テクノロジーのサポート {#assistive-technology=support-for-dm-viewers}
 
