@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
 workflow-type: tm+mt
 source-wordcount: '2432'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 85%
 
 >[!IMPORTANT]
 >
->新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 古いデプロイメントでは、管理者はスマートタグ統合を手動で [設定できます](/help/assets/smart-tags-configuration.md#aio-integration)。
+>新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
 
-を使用して、スマートタグ [!DNL Adobe Experience Manager] と統合でき [!DNL Adobe Developer Console]ます。 この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。スマートタグを設定するタスクについては、[アセットのスマートタグのための Experience Manager の設定](smart-tags-configuration.md)を参照してください。バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
+[!DNL Adobe Developer Console] を使用して、[!DNL Adobe Experience Manager] とスマートタグを統合できます。この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。スマートタグを設定するタスクについては、[アセットのスマートタグのための Experience Manager の設定](smart-tags-configuration.md)を参照してください。バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
 
 ## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
 
@@ -155,7 +155,7 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->後続のタグ付けサイクルでは、新しくトレーニングされたタグを使用して、変更したアセットのみが再度タグ付けされます。ただし、タグ付けワークフローの最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが 24 時間を超える場合は、変更されないアセットもタグ付けされます。定期的なタグ付けワークフローについては、時間の間隔が 6 ヶ月を超えると、変更されていないアセットがタグ付けされます。
+>後続のタグ付けサイクルでは、新しくトレーニングされたタグを使用して、変更したアセットのみが再度タグ付けされます。ただし、タグ付けワークフローの最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが 24 時間を超える場合は、変更されないアセットもタグ付けされます。定期的なタグ付けワークフローについては、時間の間隔が 6 か月を超えると、変更されていないアセットがタグ付けされます。
 
 ### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
 
@@ -185,7 +185,7 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 
 1. Navigate to the [!UICONTROL Properties] page for the asset. 昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
-### スマートタグ付き AEM 検索結果について {#understandsearch}
+### スマートタグ付き AEM 検索結果について    {#understandsearch}
 
 デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
