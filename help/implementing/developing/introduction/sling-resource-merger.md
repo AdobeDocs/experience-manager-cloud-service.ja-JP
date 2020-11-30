@@ -1,9 +1,9 @@
 ---
 title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ## 目的 {#purpose}
 
-Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します。Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
+Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します. Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
 
 * [検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)を使用するリソースの&#x200B;**[オーバーレイ](/help/implementing/developing/introduction/overlays.md)**。
 
@@ -48,11 +48,12 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 >これは、インスタンスにアップグレードが適用されると、`/libs` のコンテンツが上書きされる可能性があるためです。
 >
 >* オーバーレイは[検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)に依存します。
+   >
+   >
+* オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
 >
->* オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
 >
->
->ただし、オーバーライドは `/apps` 以下に定義されるのが一般的です。AEM as a Cloud Service では、カスタマイズを `/apps` 以下に定義することがベストプラクティスとされています。なぜなら `/libs` 以下のコンテンツを変更してはならないからです。
+ただし、オーバーライドは `/apps` 以下に定義されるのが一般的です。AEM as a Cloud Service では、カスタマイズを `/apps` 以下に定義することがベストプラクティスとされています。なぜなら `/libs` 以下のコンテンツを変更してはならないからです。
 
 ### プロパティ {#properties}
 
