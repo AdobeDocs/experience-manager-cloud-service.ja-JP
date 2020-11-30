@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->新しい [!DNL Experience Manager Assets] 配置は、既定でと統合 [!DNL Adobe Developer Console] されます。 これにより、スマートタグ機能の設定を迅速に行うことができます。 既存の配置では、管理者は次の手順に従って環境を設定します。
+>新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。既存のデプロイメントでは、管理者は次の手順に従って環境を設定します。
 
 ## Adobe 開発者コンソールとの統合 {#aio-integration}
 
@@ -103,7 +103,7 @@ Adobe 開発者コンソールで統合を作成してスマートタグを使�
 
    ![キーストアの既存の similaritysearch エントリを削除して新しいセキュリティ証明書を追加](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *図：キーストアの既存の`similaritysearch`エントリを削除して新しいセキュリティ証明書を追加.*
+   *図：キーストアの既存の `similaritysearch` エントリを削除して新しいセキュリティ証明書を追加.*
 
 1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;にアクセスします。使用可能なスマートタグ設定を開きます。公開証明書をダウンロードするには、「**[!UICONTROL 公開証明書をダウンロード]**」をクリックします。
 
