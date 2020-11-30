@@ -14,7 +14,7 @@ ht-degree: 99%
 
 AEM では、**レイアウトコンテナ**&#x200B;コンポーネントを使用して、ページのレスポンシブレイアウトを作成できます。
 
-レスポンシブグリッド内にコンポーネントを配置できる段落システムを提供します。このグリッドでは、デバイスやウィンドウのサイズおよび形式に従ってレイアウトを再編成できます。このコンポーネントを、[**レイアウト&#x200B;**モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)と連動して使用すると、デバイスに依存するレスポンシブレイアウトを作成および編集できます。
+レスポンシブグリッド内にコンポーネントを配置できる段落システムを提供します。このグリッドでは、デバイスやウィンドウのサイズおよび形式に従ってレイアウトを再編成できます。このコンポーネントを、[**レイアウト**&#x200B;モード](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)と連動して使用すると、デバイスに依存するレスポンシブレイアウトを作成および編集できます。
 
 レイアウトコンテナには、次の特徴があります。
 
@@ -27,15 +27,15 @@ AEM では、**レイアウトコンテナ**&#x200B;コンポーネントを使�
 
 AEM は、次のメカニズムを組み合わせて使用することにより、ページのレスポンシブレイアウトを実現します。
 
-* [**レイアウトコンテナ&#x200B;**](#adding-a-layout-container-and-its-content-edit-mode)コンポーネント
+* [**レイアウトコンテナ**](#adding-a-layout-container-and-its-content-edit-mode)&#x200B;コンポーネント
 
    このコンポーネントは、[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)で使用でき、レスポンシブグリッド内にコンポーネントを追加および配置できるグリッド段落システムを提供します。ページ上のデフォルトの段落システムとしても設定できます。
 
-* [**レイアウトモード&#x200B;**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
+* [**レイアウトモード**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
    レイアウトコンテナをページに配置したら、**レイアウト**&#x200B;モードを使用して、レスポンシブグリッド内にコンテンツを配置できます。
 
-* [**エミュレーター&#x200B;**](#selecting-a-device-to-emulate)：
+* [**エミュレーター**](#selecting-a-device-to-emulate)：
 コンポーネントをインタラクティブにサイズ変更することによってデバイスやウィンドウのサイズに従ってレイアウトを再編成する、レスポンシブ Web サイトを作成および編集できます。その後、エミュレーターを使用して、コンテンツのレンダリング方法を確認できます。
 
 これらのレスポンシブグリッドメカニズムを使用すると、次のことが可能になります。
