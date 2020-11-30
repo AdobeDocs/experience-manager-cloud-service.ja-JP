@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 52d7f6ff1c11ee450d418989ae35ff69d2cc39e6
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 86%
       + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + コードリファクタリングツール {#refactoring-tools}
-   + [統合されたエクスペリエンス](/help/move-to-cloud-service/unified-experience.md)
-   + [Repository Modenizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+   + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
+   + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
    + [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
