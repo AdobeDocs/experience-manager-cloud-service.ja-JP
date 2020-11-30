@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 3dc0d1d77595f7b3e890fb4b390eef5bcf84ecd8
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート {#release-notes}
 
-This page outlines the general release notes for [!DNL Experience Manager] as a Cloud Service 2020.4.0.
+このページでは、 [!DNL Experience Manager] as a Cloud Service 2020.4.0 の一般的なリリースノートの概要を説明します。
 
 ## リリース日 {#release-date}
 
@@ -39,7 +39,7 @@ This page outlines the general release notes for [!DNL Experience Manager] as a 
 
       ![特定の処理プロファイルを使用して、選択したアセットを再処理する](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
-   * [!DNL Dynamic Media]：アセットをセキュリティで保護されたプレビューのみで自動公開するように、選択式の公開設定を追加。また、パブリックドメインの配信用に DMS7 に公開することなく、アセットを Experience Manager に明示的に公開できます。
+   * [!DNL Dynamic Media]：アセットをセキュリティで保護されたプレビューのみで自動公開するように、選択的公開の設定を追加。また、パブリックドメインの配信用に DMS7 に公開することなく、アセットを Experience Manager に明示的に公開できます。
 
 ### バグ修正 {#assets-bug-fixes}
 
@@ -51,7 +51,7 @@ This page outlines the general release notes for [!DNL Experience Manager] as a 
 >* [Adobe Asset Link について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand Portal の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Asset Link を使用するための Experience Manager の設定](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [アセットのマイクロサービスを使用した、Experience Manager でのワークフロー作成](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [アセットのマイクロサービスを使用した、Experience Manager でのワークフロー作成](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager の新機能 {#whats-new-cloud-manager}
