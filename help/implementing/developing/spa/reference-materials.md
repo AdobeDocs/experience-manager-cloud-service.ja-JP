@@ -1,32 +1,32 @@
 ---
-title: SPAリファレンス資料
-description: 単一ページのアプリケーションAPIリファレンスとソースコードリポジトリの概要
+title: SPA 参照資料
+description: 単一ページアプリケーション API リファレンスとソースコードリポジトリーの概要
 translation-type: tm+mt
 source-git-commit: ef3e40c22264e96253dc1ff322a667b4b2432450
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 
-# SPAリファレンス資料 {#spa-reference-materials}
+# SPA 参照資料 {#spa-reference-materials}
 
-## NMPモジュールのSPA Javascript APIリファレンス {#api-references}
+## NMP モジュールの SPA Javascript API リファレンス {#api-references}
 
-AEM SPA Editor SDKフレームワーク用のNPMモジュールに関して使用可能なJavaScript APIリファレンスを次に示します。
+AEM SPA エディター SDK フレームワーク用の NPM モジュールについて、利用可能な JavaScript API リファレンスを次に示します。
 
 * [コンポーネントのマッピング](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [ページモデルマネージャー](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 * [React 編集可能コンポーネント](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [編集可能なAngularコンポーネント](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [編集可能な Angular コンポーネント](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## オープンソースGitHubリポジトリ {#github-repositories}
+## オープンソース GitHub リポジトリー {#github-repositories}
 
-SPAライブラリ用のGitHub上のオープンソースリポジトリは次のとおりです。
+GitHub での SPA ライブラリのオープンソースリポジトリーは次のとおりです。
 
 * [コンポーネントのマッピング](https://github.com/adobe/aem-spa-component-mapping)
 * [ページモデルマネージャー](https://github.com/adobe/aem-spa-page-model-manager)
 * [React 編集可能コンポーネント](https://github.com/adobe/aem-react-editable-components)
-* [編集可能なAngularコンポーネント](https://github.com/adobe/aem-angular-editable-components)
-* [SPAプロジェクトコア](https://github.com/adobe/aem-spa-project-core)
+* [編集可能な Angular コンポーネント](https://github.com/adobe/aem-angular-editable-components)
+* [SPA プロジェクトコア](https://github.com/adobe/aem-spa-project-core)
