@@ -2,9 +2,9 @@
 title: デジタルアセットの整理
 description: Adobe Experience Manager Assets に用意されている様々な手段を使用して、デジタルアセットを整理します。
 contentOwner: AG
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 100%
 
