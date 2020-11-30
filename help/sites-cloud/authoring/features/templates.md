@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '4551'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 このドキュメントでは、**テンプレート作成者**&#x200B;がテンプレートコンソールおよびエディターを使用して、編集可能なテンプレートを作成および管理する方法を説明します。
 
-For detailed information about how editable templates work at a technical level, please see the developer document [Page Templates](/help/implementing/developing/components/templates.md) for more information.
+編集可能なテンプレートが技術レベルで機能する方法について詳しくは、開発者ドキュメント「[ページテンプレート](/help/implementing/developing/components/templates.md)」を参照してください。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ For detailed information about how editable templates work at a technical level,
 
 ### テンプレートフォルダーの作成 - 管理者 {#creating-a-template-folder-admin}
 
-テンプレートフォルダーは、プロジェクト固有のテンプレートを保持するためプロジェクトで作成する必要があります。This is an admin task and is described in the document [Page Templates](/help/implementing/developing/components/templates.md#template-folders).-->
+テンプレートフォルダーは、プロジェクト固有のテンプレートを保持するためプロジェクトで作成する必要があります。これは管理者タスクであり、ドキュメントの[ページテンプレート](/help/implementing/developing/components/templates.md#template-folders)で説明しています。
 
 ### 新しいテンプレートの作成 - テンプレート作成者 {#creating-a-new-template-template-author}
 
@@ -114,7 +114,7 @@ For detailed information about how editable templates work at a technical level,
 
    >[!NOTE]
    >
-   >テンプレートタイプは、定義済みのテンプレートレイアウトであり、テンプレートのためのテンプレートであると見なすことができます。これらは、開発者またはシステム管理者が事前定義します。More information can be found in the developer document [Page Templates](/help/implementing/developing/components/templates.md#template-type).-->
+   >テンプレートタイプは、定義済みのテンプレートレイアウトであり、テンプレートのためのテンプレートであると見なすことができます。これらは、開発者またはシステム管理者が事前定義します。詳しくは、開発者ドキュメントの[ページテンプレート](/help/implementing/developing/components/templates.md#template-type)を参照してください。
 
 1. 次の「**テンプレート詳細**」を入力します。
 
@@ -204,7 +204,7 @@ For detailed information about how editable templates work at a technical level,
    >**許可されたテンプレート**&#x200B;のリストが空の場合、値／リストが見つかるまでツリーを上に移動します。
    >
    >
-   >See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >[使用可能なテンプレート](/help/implementing/developing/components/templates.md#template-availability)を参照してください。許可されたテンプレートの原則は保たれます。
 
 1. 「**保存**」をクリックして、ページプロパティの変更を保存します。
 
@@ -221,7 +221,7 @@ For detailed information about how editable templates work at a technical level,
 1. 連携して公開される&#x200B;**コンテンツポリシー**&#x200B;を選択します。
 1. ツールバーから「**公開**」を選択してアクションを完了します。
 
-## テンプレートの編集- テンプレート作成者 {#editing-templates-template-authors}
+## テンプレートの編集 - テンプレート作成者 {#editing-templates-template-authors}
 
 テンプレートを作成（または編集）するときに、様々な側面を定義できます。テンプレートの編集は、ページのオーサリングに似ています。
 
@@ -334,7 +334,7 @@ For detailed information about how editable templates work at a technical level,
 
 #### ポリシーとプロパティ（一般） {#policy-and-properties-general}
 
-コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用可能なコンポーネントまたは最小／最大寸法です。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
+コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用できるコンポーネントや最小／最大サイズを定義できます。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
 
 コンポーネントのコンテンツポリシーを作成するか、既存のポリシーを選択します。
 
@@ -353,7 +353,7 @@ For detailed information about how editable templates work at a technical level,
 
 ##### ポリシー {#policy}
 
-コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用可能なコンポーネントまたは最小／最大寸法です。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
+コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用できるコンポーネントや最小／最大サイズを定義できます。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
 
 **ポリシー**&#x200B;の下で、既存のポリシーを選択して、ドロップダウンからコンポーネントに適用できます。
 
@@ -428,7 +428,7 @@ For detailed information about how editable templates work at a technical level,
 
 ##### ポリシー {#policy-layout}
 
-コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用可能なコンポーネントまたは最小／最大寸法です。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
+コンテンツ（またはデザイン）ポリシーでは、コンポーネントのデザインプロパティを定義します。例えば、使用できるコンポーネントや最小／最大サイズを定義できます。これらのポリシーは、テンプレートと、そのテンプレートを使用して作成されるページに適用されます。
 
 **ポリシー**&#x200B;の下で、既存のポリシーを選択して、ドロップダウンからコンポーネントに適用できます。これは、ウィンドウの一般使用の場合と同じく機能します。
 
@@ -541,7 +541,7 @@ For detailed information about how editable templates work at a technical level,
 
 ### テンプレートの編集 - ページポリシー - テンプレート作成者／開発者 {#editing-a-template-page-policy-template-author-developer}
 
-必要なクライアント側ライブラリを含むページポリシーは、**ページ情報**&#x200B;メニューの「**ページポリシー**」オプションの下に維持されます。
+必要なクライアントサイドライブラリを含むページポリシーは、**ページ情報**&#x200B;メニューの「**ページポリシー**」オプションの下に維持されます。
 
 **ページデザイン**&#x200B;ダイアログにアクセスするには
 
@@ -582,19 +582,19 @@ For detailed information about how editable templates work at a technical level,
 
 #### ページプロパティ {#page-properties}
 
-ページのプロパティを使用し、「**ページデザイン**」ダイアログを使用して、必要なクライアント側ライブラリを定義できます。これらのクライアント側ライブラリには、テンプレートおよびそのテンプレートで作成されたページとともにロードされるスタイルシートおよび JavaScript が含まれます。
+ページのプロパティを使用し、「**ページデザイン**」ダイアログを使用して、必要なクライアントサイドライブラリを定義できます。これらのクライアントサイドライブラリには、テンプレートおよびそのテンプレートで作成されたページとともにロードされるスタイルシートおよび JavaScript が含まれます。
 
 ![ページプロパティ](/help/sites-cloud/authoring/assets/templates-page-properties.png)
 
-* このテンプレートで作成されるページに対して適用するクライアント側ライブラリを指定します。**クライアント側ライブラリ**&#x200B;セクションのテキストフィールドにライブラリ名を入力します。
+* このテンプレートで作成されるページに対して適用するクライアントサイドライブラリを指定します。**クライアント側ライブラリ**&#x200B;セクションのテキストフィールドにライブラリ名を入力します。
 
-   ![クライアント側ライブラリ](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+   ![クライアントサイドライブラリ](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * 複数のライブラリが必要な場合は、「追加」ボタンをクリックして、ライブラリ名のために追加のテキストフィールドを追加します。
 
    ![追加ボタン](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   クライアント側ライブラリで必要なだけいくつでも任意の数のテキストフィールドを追加します。
+   クライアントサイドライブラリで必要なだけいくつでも任意の数のテキストフィールドを追加します。
 
 * 必要に応じて、ドラッグハンドルを使用してフィールドをドラッグすることで、ライブラリの相対位置を定義します。
 
@@ -602,7 +602,7 @@ For detailed information about how editable templates work at a technical level,
 
 >[!NOTE]
 >
->テンプレート作成者が、テンプレートにページポリシーを指定できる一方、その作成者は開発者から適切なクライアント側ライブラリの詳細を得る必要があります。
+>テンプレート作成者が、テンプレートにページポリシーを指定できる一方、その作成者は開発者から適切なクライアントサイドライブラリの詳細を得る必要があります。
 
 ### テンプレートの編集 - 最初のページのプロパティ - 作成者 {#editing-a-template-initial-page-properties-author}
 
