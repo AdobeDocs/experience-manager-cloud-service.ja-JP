@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -116,11 +116,11 @@ ht-degree: 85%
 >
 この機能は、実稼動用に設定された通常のプログラムの実稼働／ステージング環境セットには使用できません。ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
 
-## Managing Access {#managing-access}
+## アクセスの管理 {#managing-access}
 
-Select **Manage Access** from the dropdown menu in the **Environments** Card. オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
+**環境**&#x200B;カードのドロップダウンメニューから「**アクセスを管理**」を選択します。オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
 
-詳しくは、「作成者インスタンスへのアクセスの [管理](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem) 」を参照してください。
+詳しくは、「オーサーインスタンスへのアクセスの[管理](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md#manage-access-aem)」を参照してください。
 
 ![](assets/environ-access.png)
 
