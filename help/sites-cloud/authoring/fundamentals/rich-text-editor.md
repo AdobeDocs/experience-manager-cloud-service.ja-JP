@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 97%
 
 テキストベースのコンポーネントの場合は、[ツールバー](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)のフルスクリーンモード ![RTE 全画面表示ボタン](/help/sites-cloud/authoring/assets/editing-full-screen.png)をクリックしてリッチテキストエディターを開き、ページコンテンツの残りを非表示にします。
 
-フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。The availability of options [depends on the configuration](/help/implementing/developing/extending/rich-text-editor.md).
+フルスクリーンモードでは、オーサリングに使用できる設定済みオプションがすべて表示されます。使用できるオプションは、[設定によって異なります。](/help/implementing/developing/extending/rich-text-editor.md)
 
 ![フルスクリーンモードの RTE](/help/sites-cloud/authoring/assets/rte-full-screen.png)
 
