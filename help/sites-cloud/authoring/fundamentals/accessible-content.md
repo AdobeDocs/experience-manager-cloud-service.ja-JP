@@ -75,11 +75,11 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 >
 >標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
->AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（「追加の HTML 要素および属性のサポートの追加」を参照）。
+>AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（追加の HTML 要素および属性のサポートの追加を参照）。
 >
 >標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
->When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)を参照）。
 
 AEM では、デフォルトで入力される「**代替テキスト**」フィールドが必要です。画像が単なる装飾用で代替テキストが不要な場合は、「**画像は装飾画像**」オプションをチェックできます。
 
@@ -243,7 +243,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### キャプション（ライブ）（1.2.4）      {#captions-live}
+### キャプション（ライブ）（1.2.4）          {#captions-live}
 
 * 達成基準 1.2.4
 * レベル AA
@@ -297,7 +297,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * 音声のみ、または大きいテキストや高いコントラストなど、代替の視覚表示を使用する可能性のあるユーザー
 
-### 情報および関係性（1.3.1）       {#info-and-relationships}
+### 情報および関係性（1.3.1）           {#info-and-relationships}
 
 * 達成基準 1.3.1
 * レベル A
@@ -339,7 +339,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
    >[!NOTE]
    >
-   >By default, these elements and attributes are not directly available, though it is possible for the system administrator to add support for these values in the **Table properties** dialog box (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+   >デフォルトでは、これらの要素や属性を直接は使用することはできませんが、システム管理者が&#x200B;**テーブルのプロパティ**&#x200B;ダイアログボックスでこれらの値のサポートを追加することは可能です（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)を参照）。
 
    「**テーブルのプロパティ**」タブを選択できる&#x200B;**テーブル**&#x200B;ダイアログを開くには、次のようにします。
 
@@ -428,7 +428,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [達成基準 1.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### 感覚的な特徴（1.3.3）       {#sensory-characteristics}
+### 感覚的な特徴（1.3.3）           {#sensory-characteristics}
 
 * 達成基準 1.3.3
 * レベル A
@@ -464,7 +464,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 [ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### 色の使用（1.4.1）       {#use-of-color}
+### 色の使用（1.4.1）           {#use-of-color}
 
 * 達成基準 1.4.1
 * レベル A
@@ -699,7 +699,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### 一時停止、停止、非表示（2.2.2）       {#pause-stop-hide}
+### 一時停止、停止、非表示（2.2.2）           {#pause-stop-hide}
 
 * 達成基準 2.2.2
 * レベル A
@@ -788,7 +788,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### ページタイトル（2.4.2）       {#page-titled}
+### ページタイトル（2.4.2）           {#page-titled}
 
 * 達成基準 2.4.2
 * レベル A
@@ -828,7 +828,7 @@ AEM で新しい HTML ページを作成する際には、ページタイトル�
 * [達成基準 2.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### リンクの目的（コンテキスト内）（2.4.4）       {#link-purpose-in-context}
+### リンクの目的（コンテキスト内）（2.4.4）           {#link-purpose-in-context}
 
 * 達成基準 2.4.4
 * レベル A
@@ -998,7 +998,7 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 * [達成基準 3.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * コードは ISO 639-1 に基づいています。各言語の詳細なコードリストについては、[W3 Schools サイト](https://www.w3schools.com/tags/ref_language_codes.asp)を参照してください。
 
-### 一部分の言語（3.1.2）       {#language-of-parts}
+### 一部分の言語（3.1.2）           {#language-of-parts}
 
 * 達成基準 3.1.2
 * レベル AA
@@ -1038,7 +1038,7 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 >
 >様々な言語の名前や都市名を含める場合や、デフォルトの言語で一般的になった外来語やフレーズ（英語の *schadenfreude* など）を使用する場合は、この達成基準に従う必要はありません。
 
-span 要素を適切な言語で追加するには、RTE のソース編集モードで、上記の内容になるように HTML マークアップを手動で編集します。Alternatively the `lang` attribute can be included in the RTE by a system administrator (see [Adding Support for Additional HTML Elements and Attributes](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+span 要素を適切な言語で追加するには、RTE のソース編集モードで、上記の内容になるように HTML マークアップを手動で編集します。または、システム管理者が `lang` 属性を RTE に含めることもできます（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)を参照）。
 
 #### 詳細情報 - 一部分の言語（3.1.2）{#more-information-language-of-parts}
 
@@ -1099,7 +1099,7 @@ span 要素を適切な言語で追加するには、RTE のソース編集モ�
 
 * 達成基準 3.2.3
 * レベル AA
-* 一貫したナビゲーション：一連のウェブページ内の複数のウェブページで繰り返されるナビゲーションのメカニズムは、ユーザーが変更しない限り、繰り返されるたびに同じ相対順で発生する。
+* 一貫したナビゲーション：一連の Web ページ内の複数の Web ページで繰り返されるナビゲーションのメカニズムは、ユーザーが変更しない限り、繰り返されるたびに同じ相対順で発生する。
 
 #### 目的 - 一貫したナビゲーション（3.2.3）{#purpose-consistent-navigation}
 
@@ -1199,7 +1199,7 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 ###### フォームフィールドのグループ {#groups-of-form-fields}
 
-**ラジオグループ**&#x200B;など、関連するコントロールのグループがある WKND プロジェクトでは、個々のコントロールだけでなく、グループにタイトルが必要になる場合があります。AEMでラジオボタンのセットを追加する場合、「**タイトル**」フィールドにはこのグループタイトルが表示されますが、個々のタイトルはラジオボタン（**項目**）の作成時に指定されます。
+**ラジオグループ**&#x200B;など、関連するコントロールのグループがある WKND プロジェクトでは、個々のコントロールだけでなく、グループにタイトルが必要になる場合があります。AEM でラジオボタンのセットを追加する場合、「**タイトル**」フィールドにはこのグループタイトルが表示されますが、個々のタイトルはラジオボタン（**項目**）の作成時に指定されます。
 
 ただし、グループタイトルとラジオボタン自体との間には、プログラム的な関連付けはありません。テンプレートエディターでは、必要な `fieldset` タグと `legend` タグでタイトルを囲んで、この関連付けを作成する必要があります。この処理は、ページのソースコードを編集することによってのみ可能です。また、システム管理者がこれらの要素のサポートを追加して、**フィールドのプロパティ**&#x200B;ダイアログに表示させることもできます（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md)を参照）。
 
