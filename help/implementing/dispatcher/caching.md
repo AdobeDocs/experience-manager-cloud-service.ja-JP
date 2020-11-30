@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0e414de936267cb4648c3078720b198e00c4a3cb
 workflow-type: tm+mt
 source-wordcount: '1479'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service 以前は、Dispatcher キャッシュを無効にする�
 1. パブリッシュ Dispatcher のフラッシュエージェントを指定して、レプリケーションエージェントを呼び出す
 2. `invalidate.cache` API を直接呼び出す（例：`POST /dispatcher/invalidate.cache`）
 
-Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、[AEM からのキャッシュページの無効化](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/configuring/page-invalidate.translate.html)ページで説明されている無効化手順は、AEM as a Cloud Service では無効になります。代わりに、レプリケーションフラッシュエージェントを使用する必要があります。タグの割り当ては、レプリケーション API を使用しておこなえます。レプリケーション API ドキュメントは[ここ](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html)からご利用ください。また、キャッシュをフラッシュする例については、[API 使用例](https://helpx.adobe.com/jp/experience-manager/using/aem64_replication_api.html)および、特に、使用可能なあらゆるエージェントに対して ACTIVATE タイプのレプリケーションアクションを発行する `CustomStep` の例を参照してください。フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
+Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、[AEM からのキャッシュページの無効化](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/configuring/page-invalidate.html)ページで説明されている無効化手順は、AEM as a Cloud Service では無効になります。代わりに、レプリケーションフラッシュエージェントを使用する必要があります。タグの割り当ては、レプリケーション API を使用しておこなえます。レプリケーション API ドキュメントは[ここ](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/Replicator.html)からご利用ください。また、キャッシュをフラッシュする例については、[API 使用例](https://helpx.adobe.com/jp/experience-manager/using/aem64_replication_api.html)および、特に、使用可能なあらゆるエージェントに対して ACTIVATE タイプのレプリケーションアクションを発行する `CustomStep` の例を参照してください。フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
 
 次に図で示します。
 
@@ -127,7 +127,7 @@ Dispatcher キャッシュがクリアされない問題が発生した場合は
 
 ## クライアントサイドライブラリとバージョンの整合性 {#content-consistency}
 
-ページは、HTML、JavaScript、CSS、画像で構成されます。Customers are encouraged to leverage the [Client-Side Libraries (clientlibs) framework](/help/implementing/developing/introduction/clientlibs.md) to import Javascript and CSS resources into HTML pages, taking into account dependencies between JS libraries.
+ページは、HTML、JavaScript、CSS、画像で構成されます。JS ライブラリ間の依存関係を考慮して、[クライアントサイドライブラリ（clientlibs）フレームワーク](/help/implementing/developing/introduction/clientlibs.md)を活用し、JavaScript および CSS リソースを HTML ページに読み込むことをお勧めします。
 
 clientlibs フレームワークは、自動バージョン管理を提供します。つまり、開発者はソース管理で JS ライブラリに対する変更をチェックインでき、最新バージョンは、顧客がリリースをプッシュしたときに利用可能になります。この機能がないと、開発者は新しいバージョンのライブラリを参照して HTML を手動で変更する必要があります。同じライブラリを共有する HTML テンプレートが多い場合は特に負担がかかります。
 
