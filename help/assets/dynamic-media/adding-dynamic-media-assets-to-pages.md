@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
 workflow-type: tm+mt
 source-wordcount: '3121'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -189,14 +189,14 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 >
 >デフォルトでは、Dynamic Media ビデオコンポーネントはアダプティブです。ビデオコンポーネントを固定サイズにする場合は、そのコンポーネントで、「**[!UICONTROL 詳細]**」タブの「**[!UICONTROL 幅]**」と「**[!UICONTROL 高さ]**」を使用してサイズを設定します。
 
-* **[!UICONTROL ビューアプリセット]**— ドロップダウンメニューから既存のビデオビューアプリセットを選択します。 探しているビューアプリセットが表示されない場合は、表示できるように設定する必要があります。詳しくは、ビューアプリセットの管理を参照してください。
+* **[!UICONTROL ビューアプリセット]** - ドロップダウンメニューから既存のビデオビューアプリセットを選択します。探しているビューアプリセットが表示されない場合は、表示できるように設定する必要があります。詳しくは、ビューアプリセットの管理を参照してください。
 
-* **[!UICONTROL ビューア修飾子]**— ビューア修飾子は、name=valueの形式で、&amp;区切り文字を使用して組み合わされ、『Adobeビューアリファレンスガイド』で概要を説明しているようにビューアを変更できます。 `posterimage=img.jpg&caption=text.vtt,1` はビューア修飾子の一例です。
+* **[!UICONTROL ビューア修飾子]** - ビューア修飾子は、名前=値の組み合わせで &amp; を区切り文字とした形式です。ビューア修飾子を使用すると、アドビビューアリファレンスガイドに概略が記されているとおり、ビューアを変更することができます。`posterimage=img.jpg&caption=text.vtt,1` はビューア修飾子の一例です。
 
    ビューア修飾子を使用すると、例えば次のことが可能です。
 
-   * ビデオにキャプションファイルを関連付ける：[キャプション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.translate.html)
-   * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.translate.html)
+   * ビデオにキャプションファイルを関連付ける：[キャプション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
    コンポーネントの「**[!UICONTROL 編集]**」をクリックして、次の詳細設定を編集できます。
 
@@ -210,7 +210,7 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 
 Dynamic Media コンポーネントを使用して、スマート切り抜き画像アセットを Web ページに追加します。コンポーネントの編集時に、ページ上でビデオを再生するための事前定義済みのビデオビューアプリセットを使用するように選択できます。
 
-詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)を参照してください。
+詳しくは、[AEM Assets Dynamic Media でのスマート切り抜きの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)を参照してください。
 
 [イメージプロファイル](/help/assets/dynamic-media/image-profiles.md)も参照してください。
 
@@ -337,10 +337,10 @@ Dynamic Media アカウントでの HTTP/2 の使用方法について詳しく�
 
 >[!MORELIKETHIS]
 >
->* [AEM Dynamic Media でのビデオプレーヤーの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [AEM Dynamic Media でのインタラクティブビデオの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [AEM Dynamic Media でのアセットビューアについて](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [AEM Dynamic Media でのカスタムビデオサムネールの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [AEM Dynamic Media でのカラーマネジメントについて](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [AEM Dynamic Media での画像シャープニングの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [AEM Dynamic Media でのビデオプレーヤーの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [AEM Dynamic Media でのインタラクティブビデオの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [AEM Dynamic Media でのアセットビューアについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [AEM Dynamic Media でのカスタムビデオサムネールの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [AEM Dynamic Media でのカラーマネジメントについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [AEM Dynamic Media での画像シャープニングの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
