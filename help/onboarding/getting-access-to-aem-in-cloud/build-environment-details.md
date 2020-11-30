@@ -1,11 +1,11 @@
 ---
 title: ビルド環境の詳細
-description: ビルド環境の詳細 —Cloud Services
+description: ビルド環境の詳細 - Cloud Services
 translation-type: tm+mt
 source-git-commit: 3e76f7273393f104347611a8f0238e3722714b2b
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * [後述されている通り](#installing-additional-system-packages)、これ以外にも、ビルド時にパッケージがインストールされる場合があります。
 * すべてのビルドは、Pristine 環境で実行されます。ビルドコンテナは実行から次回の実行までの間、状態を保持しません。
-* Mavenは常に次の3つのコマンドで実行します。
+* Maven は常に次の 3 つのコマンドで実行します。
 
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています(See [Adobe Public Maven Repository](https://repo.adobe.com/) for more details).
+* Maven は、settings.xml ファイルを使用してシステムレベルで設定されます。このファイルには、アドビの公開&#x200B;**アーティファクト**&#x200B;リポジトリが自動的に含まれています（詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
 
-### Java 11サポートの使用 {#using-java-support}
+### Java 11 サポートの使用 {#using-java-support}
 
 Cloud Manager で、Java 8 と Java 11 の両方を使用したカスタマープロジェクトの作成がサポートされるようになりました。デフォルトでは、プロジェクトは Java 8 を使用して構築されます。
 
-Customers who want to use Java 11 in their projects can do so using the [Apache Maven Toolchains Plugin](https://maven.apache.org/plugins/maven-toolchains-plugin/).
+プロジェクトで Java 11 を使用するお客様は、[Apache Maven Toolchains プラグイン](https://maven.apache.org/plugins/maven-toolchains-plugin/)を使用して使用できます。
 
 これをおこなうには、pom.xml ファイルに次のような `<plugin>` エントリを追加します。
 
@@ -71,7 +71,7 @@ Customers who want to use Java 11 in their projects can do so using the [Apache 
 ```
 
 >[!NOTE]
->Supported vendor values are `oracle`  and `sun`and the supported version values are `1.8`, `1.11`, and `11`.
+>サポートされているベンダー値は `oracle` と `sun` で、サポートされているバージョン値は `1.8`、`1.11` および `11` です。
 
 >[!NOTE]
 >Cloud Manager プロジェクトのビルドでは、引き続き Java 8 を使用して Maven を呼び出します。そのため、[Apache Maven Enforcer プラグイン](https://maven.apache.org/enforcer/maven-enforcer-plugin/)などのプラグインを介してツールチェーンプラグインに設定された Java バージョンを確認または適用することはできません。これらのプラグインは使用しないでください。
@@ -111,7 +111,7 @@ CLI を使用して変数を設定するには、次のようなコマンドを�
 
 `$ aio cloudmanager:list-pipeline-variables PIPELINEID`
 
-変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。パイプラインあたり200個の変数に制限があります。各名前は100文字未満にする必要があり、文字列型変数の場合は2048文字未満、secretString型変数の場合は500文字未満にする必要があります。
+変数名に使用できるのは、英数字と下線（_）のみです。慣例では、名前はすべて大文字である必要があります。パイプラインあたりの変数は最大 200 個という制限があります。それぞれの名前は 100 文字未満、それぞれの値は文字列型変数の場合は 2048 文字未満、secretString 型変数の場合は 500 文字未満にする必要があります。
 
 通常、`Maven pom.xml` ファイル内で使用する場合は、次のような構文を使用して、これらの変数を Maven プロパティにマップすると便利です。
 
@@ -187,4 +187,4 @@ CLI を使用して変数を設定するには、次のようなコマンドを�
 同じ方法を、RubyGems の `gem` や Python パッケージの `pip` など、特定の言語用のパッケージのインストールにも使用できます。
 
 >[!NOTE]
->この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM環境にインストールされたシステムパッケージが必要な場合は、Adobeの担当者にお問い合わせください。
+>この方法でシステムパッケージをインストールしても、Adobe Experience Manager の実行に使用されているランタイム環境にはインストール&#x200B;**されません**。AEM 環境にシステムパッケージをインストールする必要がある場合は、アドビ担当者にお問い合わせください。
