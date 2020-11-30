@@ -19,7 +19,7 @@ ht-degree: 100%
 1. **アセット**&#x200B;コンソールで、コンテンツフラグメントの場所に移動します。
 2. 以下のどちらかの操作をおこないます。
 
-   * [**「プロパティを表示&#x200B;**」を選択してダイアログを開きます](/help/assets/manage-digital-assets.md#editing-properties)。開いて表示されたら、編集することもできます。
+   * [**「プロパティを表示**」を選択してダイアログを開きます](/help/assets/manage-digital-assets.md#editing-properties)。開いて表示されたら、編集することもできます。
    * [編集するコンテンツフラグメント](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)を開き、サイドパネルから「**メタデータ**」を選択します。
 
    ![メタデータ](assets/cfm-metadata-01.png)
