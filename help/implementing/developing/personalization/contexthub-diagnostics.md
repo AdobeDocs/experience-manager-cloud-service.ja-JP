@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
 # ContextHub の診断 {#contexthub-diagnostics}
 
-ContextHub には、ContextHub フレームワークの概要を確認できる診断ページがあります。To open the page, go to the `contexthub.diagnostics.html` page of your AEM author instance, for example:
+ContextHub には、ContextHub フレームワークの概要を確認できる診断ページがあります。このページを開くには、AEM オーサーインスタンスの `contexthub.diagnostics.html` ページに移動します。例：
 
 `http://<host>:<port>/conf/<site>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
@@ -35,14 +35,14 @@ ContextHub の診断ページには、作成されたストアおよび UI モ�
 
 モジュールセクションには、設定されているすべての ContextHub UI モジュールが一覧表示されます。リストの各項目は、次の情報で構成されます。
 
-* **タイトル：** UIモジュールが基にしている [UIモジュールタイプ](sample-modules.md) 。
+* **タイトル**：UI モジュールのベースとなっている [UI モジュールタイプ](sample-modules.md)。
 * **パス：**&#x200B;設定を保持しているリポジトリノードへのパス。
 * **リソースタイプ：** UI モジュールタイプが定義されているリポジトリノードのパス。
 * **クライアントライブラリ：**&#x200B;読み込まれ、UI モジュールタイプを実装するクライアントライブラリのカテゴリ。
 
 ## Clientlibs {#clientlibs}
 
-The Clientlibs section lists all of the [client library folders](/help/implementing/developing/introduction/clientlibs.md) that ContextHub has loaded. クライアントライブラリは次のように分類されます。
+Clientlibs セクションには、ContextHub によって読み込まれたすべての[クライアントライブラリフォルダー](/help/implementing/developing/introduction/clientlibs.md)が一覧表示されます。クライアントライブラリは次のように分類されます。
 
 * **kernel.js：** ContextHub フレームワーク、セグメントエンジン、ストアタイプを実装するクライアントライブラリ。
 * **ui.js：** ContextHub UI および UI モジュールタイプを実装するクライアントライブラリ。
@@ -52,9 +52,9 @@ The Clientlibs section lists all of the [client library folders](/help/implement
 
 URL セクションには、次の ContextHub 機能へのリンクが含まれます。
 
-* **設定エディター：** ストア、UIモ [ード](configuring-contexthub.md) 、UIモジュールを設定できるContextHub設定ページを開きます。
-* **ContextHubモジュールの設定：** ContextHubストア設定のJavaScriptオブジェクト表現を含む `/etc/cloudsettings/default/contexthub.config.kernel.js` ファイルを開きます。
-* **ContextHub UIの設定：** ContextHub UIモード設定のJavaScriptオブジェクト表現を含む `/etc/cloudsettings/default/contexthub.config.ui.js` ファイルを開きます。
-* **kernel.js:** ContextHubフレームワーク、セグメントエンジン、およびストアの種類を実装するクライアントライブラリのソースコードを含む `/etc/cloudsettings/default/contexthub.kernel.js` ファイルを開きます。
-* **ui.js:** ContextHub UIとUIモジュールタイプを実装するクライアントライブラリのソースコードを含む `/etc/cloudsettings/default/contexthub.ui.js` ファイルを開きます。
-* **style.css:** ContextHub UIおよびUIモジュールのCSSスタイルを含む `/etc/cloudsettings/default/contexthub.styles.css` ファイルを開きます。
+* **設定エディター**：ストア、UI モードおよび UI モジュールを設定できる [ContextHub 設定ページ](configuring-contexthub.md)を開きます。
+* **ContextHub モジュールの設定**：`/etc/cloudsettings/default/contexthub.config.kernel.js` ファイルを開きます。このファイルには、ContextHub ストア設定の JavaScript オブジェクト表現が格納されています。
+* **ContextHub UI の設定**：`/etc/cloudsettings/default/contexthub.config.ui.js` ファイルを開きます。このファイルには、ContextHub UI モード設定の JavaScript オブジェクト表現が格納されています。
+* **kernel.js**：`/etc/cloudsettings/default/contexthub.kernel.js` ファイルを開きます。このファイルには、ContextHub フレームワークおよびセグメントエンジン、ストアタイプを実装するクライアントライブラリのソースコードが格納されています。
+* **ui.js**：`/etc/cloudsettings/default/contexthub.ui.js` ファイルを開きます。このファイルには、ContextHub UI および UI モジュールタイプを実装するクライアントライブラリのソースコードが格納されています。
+* **style.css**：`/etc/cloudsettings/default/contexthub.styles.css` ファイルを開きます。このファイルには、ContextHub UI および UI モジュールの CSS スタイルが格納されています。
