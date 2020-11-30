@@ -1,12 +1,12 @@
 ---
-title: Asset Microservicesを使用したアセットの処理
+title: アセットマイクロサービスを使用したアセットの処理
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -80,6 +80,6 @@ Adobe Experience Manager は、アセット処理の完了後に後処理ワー�
 >* [アセットマイクロサービスの基本](asset-microservices-configure-and-use.md)
 >* [サポートされているファイル形式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
 >* [直接バイナリアクセスに関する Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
