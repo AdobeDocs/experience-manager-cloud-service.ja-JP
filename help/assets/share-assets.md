@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -107,13 +107,13 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## アセットのダウンロードと共有 {#download-and-share-assets}
 
-Users can download the required assets and share these outside of [!DNL Experience Manager]. 詳しくは、[アセットの検索方法](/help/assets/search-assets.md)、[アセットのダウンロード方法](/help/assets/download-assets-from-aem.md)、[コレクションのダウンロード方法](manage-collections.md#download-a-collection)を参照してください。
+ユーザーは、必要なアセットをダウンロードして、[!DNL Experience Manager] の外部で共有することができます。詳しくは、[アセットの検索方法](/help/assets/search-assets.md)、[アセットのダウンロード方法](/help/assets/download-assets-from-aem.md)、[コレクションのダウンロード方法](manage-collections.md#download-a-collection)を参照してください。
 
 ## クリエイティブプロフェッショナルとのアセットの共有 {#share-with-creatives}
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **AEM デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
+* **AEM デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
 
 * **Adobe Asset Link**：クリエイティブプロフェッショナルは、Adobe InDesign、Adobe Illustrator、Adobe Photoshop 内から直接アセットを検索および使用できます。
 
