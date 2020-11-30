@@ -1,75 +1,76 @@
 ---
-title: Cloud Serviceの2020.7.0リリース [!DNL Adobe Experience Manager] のリリースノート。
-description: '[!DNLAdobe Experience Manager] 2020.7.0のCloud Serviceリリースノートとして。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 リリースのリリースノート。'
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート.'
 translation-type: tm+mt
 source-git-commit: 67d8ef256b410695435446ba0e560edce9115bab
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 36%
+source-wordcount: '1052'
+ht-degree: 100%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート {#release-notes}
 
 Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノートの概要を次に説明します。
 
 ## リリース日 {#release-date}
 
-The release date for [!DNL Experience Manager] as a Cloud Service 2020.7.0 is July 30, 2020.
+[!DNL Experience Manager] as a Cloud Service 2020.7.0 のリリース日は 2020 年 7 月 30 日です。
 
-## Cloud ServiceとしてのAdobe Experience Manager Sites {#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
 ### 新機能 {#what-is-new-sites}
 
-[!DNL Experience Manager] を、およびのCloud Serviceコネクタ [!DNL Adobe Target] に対して次のよう [!DNL Adobe Analytics] に拡張しました。
+[!DNL Adobe Target] および [!DNL Adobe Analytics] 用の [!DNL Experience Manager] as a Cloud Service コネクタは以下のように強化されています。
 
-* 新しいユーザーインターフェイスの実装は、クラシックUIに基づく実装に代わるものです。
+* 新しいユーザーインターフェイスの実装は、クラシック UI に基づく実装に代わるものです。
 
-* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成はに残り [!DNL Adobe Launch]ます。 「 [Adobe Analyticsの統合](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 」および「Adobe Targetの [統合」を参照してください](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
+* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。「[Adobe Analytics の統合](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.translate.html)」および「[Adobe Target の統合](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)」を参照してください。
 
-* 設定は、Experience Managerリポジトリではなく、に保存され `/conf` るよう `/etc/cloudsettings` になりました。
+* 設定は、Experience Manager リポジトリーの `/etc/cloudsettings` ではなく、`/conf` に保存されるようになりました。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] は、アセットを処理するための拡張性と拡張性に優れたサービスです。 管理者は、を使用 [!DNL Experience Manager] して作成したカスタムアプリケーションを呼び出すように設定でき [!DNL Asset Compute Service]ます。 開発者はこのサービスを使用して、複雑な使用例に対応した特殊なカスタムアプリケーションを作成できます。 このWebサービスでは、様々なファイルタイプのサムネールを生成したり、Adobeファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前駆としてのフルテキストの抽出を行ったり、利用可能なすべてのサービスでアセットを実行できます。 [!DNL Sensei] 詳しくは、アセットマイクロサービスと処理プロファイルの [使用を参照してください](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] は、アセットを処理するための拡張性に優れたサービスです。管理者は、[!DNL Asset Compute Service] を使用して作成したカスタムアプリケーションを呼び出すように [!DNL Experience Manager] を設定できます。デベロッパーはこのサービスを使用して、複雑な使用例に対応する特殊なカスタムアプリケーションを作成できます。この Web サービスでは、様々なファイルタイプのサムネールを生成したり、アドビファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前段階としてのフルテキストの抽出を行ったり、利用可能なすべての [!DNL Sensei] サービスでアセットを実行できます。詳しくは、「[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md)」を参照してください。
 
-* Cloud Service [!DNL Dynamic Media] としてのの初期設定 [!DNL Experience Manager] が改善され、より堅牢になりました。 これで、管理者にプロセスの進行状況を提供できます。
+* [!DNL Experience Manager] As a Cloud Service の [!DNL Dynamic Media] の初期設定が改善され、より堅牢になりました。管理者にプロセスの進行状況が提供されます。
 
-* にアセットを発行する方法 [!DNL Dynamic Media] は、アセットマイクロサービスを使用するアセット処理パイプライン全体の不可欠な要素とし、バッチ発行バックエンドを改善することで、簡単になり、より堅牢になります。
+* [!DNL Dynamic Media] へのアセットの発行は、アセットマイクロサービスを使用するアセット処理パイプライン全体で不可欠な要素とし、バッチ発行バックエンドを改善することで、簡単になり、より堅牢になっています。
 
-* Cloud Serviceの展開と互換性のないワークフローステップは、 [!UICONTROL ワークフローモデル] エディターで警告のマークが付けられるようになりました。 また、Cloud Service環境上で既存のワークフローを実行する場合、互換性のないワークフロー手順はスキップされます。
+* [!UICONTROL ワークフローモデル]エディターで、Cloud Service の展開と互換性のないワークフローステップに警告のマークがつくようになりました。また、Cloud Service 環境上で既存のワークフローを実行する場合、互換性のないワークフロー手順はスキップされます。
 
-* の環境に関連付けられたGitプロジェクトに展開され `/conf/global` た顧客が作成したワークフローモデルは、に自動的に展開さ [!DNL Cloud Manager] れ、で使用でき `/var`[!DNL Experience Manager]ます。 顧客が変更した、下位の製品ワークフローモデル `/libs` は、に自動的にはデプロイされません `/var`。
+* [!DNL Cloud Manager] の環境に関連付けられた Git プロジェクトの `/conf/global` にデプロイされた、顧客が作成したワークフローモデルは、`/var` に自動的にデプロイされ、[!DNL Experience Manager] で使用できます。顧客が変更した、`/libs` にある製品ワークフローモデルは、自動的には `/var` にデプロイされません。
 
 ### バグ修正 {#assets-bugs-fixed}
 
-* コレクションに含まれるアセットに対して、アセットの移動ウィザードが期待どおりに読み込まれません。 （CQ-4296756）
-* との値は、XMPの書き戻し `dam:size` から除外 `dam:sha1` されます。 （CQ-4237355）
-* アセットを一括して非公開にすると、要求URIが長すぎることを示すエラーが [!DNL Brand Portal] 生成されます。 （CQ-4299474）
+* コレクションに含まれるアセットに対して、アセットの移動ウィザードが期待どおりに読み込まれません。（CQ-4296756）
+* `dam:size` 値および `dam:sha1` 値は、XMP の書き戻しから除外されます。（CQ-4237355）
+* アセットを一括して非公開にすると、要求 URI が長すぎることを示すエラーが [!DNL Brand Portal] によって生成されます。（CQ-4299474）
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-AEMコマースがCloud Serviceで利用できるようになりました。
+AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは、 [「AEM Commerceを使い始める前にCloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/getting-started.html) 」を参照してください。
+詳しくは、「[Cloud ServiceとしてのAEMコマースの使用の手引き](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/commerce/getting-started.html)」を参照してください。
 
 ## コアコンポーネント {#core-components}
 
 ### 新機能 {#what-is-new-core-components}
 
-Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) is now available as part of AEM Sites including:
+[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)のリリース 2.11.0 は、AEM Sites の一部として使用できるようになり、以下を含みます。
 
-* 新しい [PDF Viewerコンポーネントの紹介](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)。
+* 新しい [PDF ビューアコンポーネント](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)の導入。
 
-* コアコンポーネントのAccelerated Mobile Pages(AMP)サポートが利用できるようになりました。 Googleのモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントとSEOが向上します。
-詳しくは、コアコンポーネントの [AMPサポートを参照してください](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/amp.html) 。
+* コアコンポーネントの Accelerated Mobile Pages（AMP）
+サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。
+詳しくは、「[コアコンポーネントの AMP サポート](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/amp.html)」を参照してください。
 
-* Adobeクライアントデータレイヤーのバージョン1.0.2との互換性 [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)。
+* [Adobe Client Data Layer](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/data-layer/overview.html) のバージョン 1.0.2 との互換性。
 
 * バグの修正とコードの質の改善。
 
@@ -87,14 +88,14 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
-* Cloud Manager のパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。
+* Cloud Manager のパイプラインで、顧客が設定した変数とシークレットがサポートされるようになりました。
 
 
-   詳細は、「 [パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)」を参照してください。
+   詳細は、「[パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)」を参照してください。
 
-* 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
+* 認証バウンドのプライベート Maven リポジトリーがサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11サポート [の使用](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 」を参照してください。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「[Java 11 サポートの使用](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
@@ -116,19 +117,19 @@ Release 2.11.0 of the [AEM Core Components](https://docs.adobe.com/content/help/
 
 ### 既知の問題 {#known-issues}
 
-* コードカバレッジの計算方法の変更により、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンは 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照するお客様は、コード品質プロセスでエラーメッセージを受け取ります。
+* コードカバレッジの計算方法の変更により、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンは 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照している場合は、コード品質プロセスでエラーメッセージが表示されます。
 
-## Adobe Experience Manager as a Cloud Service Foundation {#cloud-foundation}
+## Adobe Experience Manager as a Cloud Service の基礎 {#cloud-foundation}
 
 ### 新機能 {#what-is-new-foundations}
 
-* [ログはSplunkアカウントに転送でき](/help/implementing/developing/introduction/logging.md#splunk-logs)、組織はSplunkへの投資を活用できます。
+* [ログは Splunk アカウントに転送でき](/help/implementing/developing/introduction/logging.md#splunk-logs)、組織は Splunk への投資を活用できます。
 
-* [静的な専用出力IPアドレスは](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) 、Javaコードでプログラムされたアウトバウンドトラフィックに割り当てることができます。これは、一部の統合で役立つ場合があります。
+* [静的な専用 egress IP アドレス](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)は、Java コードでプログラムされたアウトバウンドトラフィックに割り当てることができます。これは、一部の統合で役立つ場合があります。
 
-* AEM AnalyticsクラウドサービスUIをクラシックUIから新しいAEM UIに移行しました。 また、AEMリポジトリ内のAnalyticsクラウドサービスの場所を、他のAEMクラウドサービスと連携す `/etc` るために、 `/conf`に移動しました。
+* AEM Analytics Cloud Service UI をクラシック UI から新しい AEM UI に移行しました。また、AEM リポジトリー内の Analytics クラウドサービスの場所を、他の AEM クラウドサービスと連携するために、 `/etc` から `/conf` に移動しました。
 
-* AEMターゲットクラウドサービスUIをクラシックUIから新しいAEM UIに移動。 また、AEMリポジトリ内のターゲットクラウドサービスの場所を、他のAEMクラウドサービスと連携さ `/etc` せるために、 `/conf`に移動しました。
+* AEM Target Cloud Service UI をクラシック UI から新しい AEM UI に移行しました。また、AEM リポジトリー内の Target Cloud Service の場所を、他の AEM クラウドサービスと連携させるために、`/etc` から `/conf` に移動しました。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
