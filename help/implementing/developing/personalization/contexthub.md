@@ -1,30 +1,30 @@
 ---
 title: ContextHub
-description: ContextHubは、コンテキストデータの保存、操作、表示のためのフレームワークです
+description: ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。
 translation-type: tm+mt
 source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 
 # ContextHub {#contexthub}
 
-ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。主な機能は、様々なパーソナルをシミュレートおよび切り替えながら、コンテキストデータを [表示する機能を提供することです。](/help/sites-cloud/authoring/personalization/contexthub.md)
+ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。主な機能は、[様々なペルソナをシミュレートおよび切り替えながら、コンテキストデータを表示する機能を提供する](/help/sites-cloud/authoring/personalization/contexthub.md)ことです。
 
-ContextHubでは、次のことができます。
+ContextHub では、次のことができます。
 
-* [コンテキストデータを使用してページを作成する際に、プレゼンテーション、表示、切り替えの個人](#presentation) 、ユーザーエクスペリエンスのシミュレートを行います。
-* [Webサイト上のコンテキストデータ](#persistence) をデータレイヤー表現として保持します。
-* [選択したコンテキストのセグメント](#segmentation) を管理します。
+* コンテキストデータを使用してページを作成する際に、[プレゼンテーション、表示、ペルソナの切り替え、ユーザーエクスペリエンスのシミュレーション](#presentation)をおこないます。
+* データレイヤー表現として Web サイト上の[コンテキストデータを保持](#persistence)します。
+* 選択したコンテキストの[セグメントを管理](#segmentation)します。
 
-クライアント側のJavaScript APIを使用すると、コンテンツのパーソナライズ用にデータにアクセスできます。
+クライアントサイド JavaScript API を使用してデータにアクセスし、コンテンツをパーソナライズします。
 
 ## プレゼンテーション {#presentation}
 
-マーケティング担当者と作成者は、[ContextHub ツールバー](/help/sites-cloud/authoring/personalization/contexthub.md)を使用してストアデータを表示および操作し、ページのオーサリング時にユーザーエクスペリエンスをシミュレートできます。ツールバーは、ContextHubストアへのアクセスを提供するUIモジュールのグループで構成されます。 [このグループは](#persistence) 、クライアント上でContextHubデータを保持します。
+マーケティング担当者と作成者は、[ContextHub ツールバー](/help/sites-cloud/authoring/personalization/contexthub.md)を使用してストアデータを表示および操作し、ページのオーサリング時にユーザーエクスペリエンスをシミュレートできます。ツールバーは、[ContextHub ストア](#persistence)へのアクセスを提供する UI モジュールのグループで構成されます。 これは、クライアント上で ContextHub データを保持します。
 
 各 ContextHub UI モジュールは、事前定義されたモジュールタイプのインスタンスです。
 
@@ -36,13 +36,13 @@ ContextHubでは、次のことができます。
 
 ## 永続性 {#persistence}
 
-ContextHub ストアは、コンテキストデータをクライアント上に保持します。ContextHub Javascript APIを使用すると、ストアにアクセスし、必要に応じてデータを作成、更新、削除できます。 したがって、ContextHub はページ上のデータレイヤーに相当します。
+ContextHub ストアは、コンテキストデータをクライアント上に保持します。ContextHub JavaScript API を使用してストアにアクセスし、必要に応じてデータを作成、更新および削除できます。したがって、ContextHub はページ上のデータレイヤーに相当します。
 
 個々の ContextHub ストアは、事前定義されたストアタイプのインスタンスです。
 
 * ContextHub には、いくつかの[ストアタイプのサンプル](sample-stores.md)が用意されています。
 * AEM コンソールを使用して[ストアを作成](configuring-contexthub.md#creating-a-contexthub-store)します。
-* Developers can [create custom store types](extending-contexthub.md#creating-custom-store-candidates).
+* デベロッパーは、[カスタムストアタイプを作成](extending-contexthub.md#creating-custom-store-candidates)できます。
 * 開発者は、JavaScript を使用して[ストアデータにアクセス](adding-contexthub.md#interacting-with-contexthub-stores)できます。
 
 ## セグメント化 {#segmentation}
