@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1c518830f0bc9d9c7e6b11bebd6c0abd668ce040
 workflow-type: tm+mt
 source-wordcount: '1329'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 97%
 
 1. HTML 開発者は視覚的バリエーションごとに対応する CSS コードを（オプションで JS コードも）実装し、それらは定義済みとなります。
 
-1. AEM 開発者は、提供された CSS を（オプションで JS も）[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)に配置し、デプロイします。
+1. AEM デベロッパーは、提供された CSS を（オプションで JS も）[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)に配置し、デプロイします。
 
 1. AEM 開発者またはテンプレート作成者は、ページテンプレートを設定し、スタイル設定された各コンポーネントのポリシーを編集します。また、定義済みの CSS クラスを追加し、スタイルごとにわかりやすい名前を付け、組み合わせが可能なスタイルを示します。
 
@@ -105,7 +105,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component&#39;s policy must be deployed as [Client Libraries](/help/implementing/developing/introduction/clientlibs.md) in order to work.
+>コンポーネントポリシーのスタイルプロパティとして設定されている CSS クラス（および必要な JavaScript）を動作可能にするには、[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)としてデプロイする必要があります。
 
 ## セットアップ {#setup}
 
