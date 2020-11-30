@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1687'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -62,21 +62,21 @@ ht-degree: 88%
 
 * **オンタイム**
 
-   * 公開ページが公開環境で表示（レンダリング）される日時。 ページは、手動または事前設定の自動レプリケーションで発行する必要があります。
+   * 公開ページが公開環境で表示（レンダリング）される日時。ページは、手動または事前設定の自動レプリケーションで公開する必要があります。
 
       >[!NOTE]
       >
-      > 関連する自動レプリケーション [の構成方法の詳細は、「オン/オフ時間 — トリガー構成](/help/operations/replication.md#on-and-off-times-trigger-configuration) 」を参照してください。
+      > 関連する自動レプリケーションの設定方法の詳細は、「[オン／オフ時間 - トリガー構成](/help/operations/replication.md#on-and-off-times-trigger-configuration)」を参照してください。
 
-      * 既に [発行（手動）されている場合](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) 、このページは、指定された時間にレンダリングされるまで休止（非表示）状態に保たれます。
-      * 公開されず、自動レプリケーション用に構成されていない場合、ページは指定された時間に自動的に公開され、レンダリングされます。
-      * 発行されず、自動レプリケーションが設定されていない場合、ページは自動的に発行されないので、ページへのアクセスが試みられると404が表示されます。
-   * 即座に公開するページでは、これらのフィールド(**On Time** 、 **Off Time**)を空のままにし、非アクティブ化されるまで公開環境で使用できます（通常のシナリオ）。
+      * 既に[公開（手動）されている](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)場合、このページは、指定された時間にレンダリングされるまで休止（非表示）状態に保たれます。
+      * 公開されておらず、自動レプリケーション用に設定されている場合、ページは指定された時間に自動的に公開され、レンダリングされます。
+      * 公開されておらず、自動レプリケーション用に設定されていない場合、ページは自動的に公開されないので、ページへのアクセスを試みると 404 が表示されます。
+   * 即座に公開するページでは、これらのフィールド（**オンタイム**、**オフタイム**）を空のままにし、非アクティブ化されるまで公開環境で使用できます（通常のシナリオ）。
 
 * **オフタイム**
 
-   * 「 **日時** 」と並行して、公開ページが公開環境で非表示になる時間を定義します。
-   * 即座に公開するページでは、これらのフィールド(**On Time** 、 **Off Time**)を空のままにし、非アクティブ化されるまで公開環境で使用できます（通常のシナリオ）。
+   * 「**オンタイム**」と並行して、公開ページが公開環境で非表示になる時間を定義します。
+   * 即座に公開するページでは、これらのフィールド（**オンタイム**、**オフタイム**）を空のままにし、非アクティブ化されるまで公開環境で使用できます（通常のシナリオ）。
 
 * **バニティ URL**
 
@@ -129,7 +129,7 @@ ht-degree: 88%
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
   -->
 
-* **&lt;パス>から継承**
+* **&lt;path> から継承**
 
    * ページが継承されるかどうか、およびどこから継承するかを示します。
 
@@ -180,7 +180,7 @@ ht-degree: 88%
 
 * **ソーシャルメディア共有**
 
-   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/sharing.html)に公開します。
+   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/sharing.html)に公開します。
 
    * **Facebook に対してユーザー共有を有効にする**
    * **Pinterest に対してユーザー共有を有効にする**
