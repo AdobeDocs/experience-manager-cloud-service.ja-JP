@@ -1,11 +1,11 @@
 ---
-title: サンドボックスプログラム-Cloud Service
-description: サンドボックスプログラム-Cloud Service
+title: サンドボックスプログラム - Cloud Service
+description: サンドボックスプログラム - Cloud Service
 translation-type: tm+mt
 source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 0%
+ht-degree: 97%
 
 ---
 
@@ -14,177 +14,175 @@ ht-degree: 0%
 
 ## 概要 {#introduction}
 
-Sandboxプログラムは、AEMCloud Serviceで使用できる2種類のプログラムの1つで、もう1つは正規プログラムです。
+サンドボックスプログラムは、AEM Cloud Service で使用できる 2 種類のプログラムの 1 つで、もう 1 つは標準プログラムです。
 
-サンドボックスは、通常、トレーニング、実行デモ、有効化、またはコンセプトの配達確認(POC)の目的を満たすために作成されます。彼らは生きたトラフィックを運ぶつもりはない。 Cloud Serviceコミットメントとして [AEMに従うことはありません](https://www.adobe.com/legal/service-commitments.html)。
+サンドボックスは、通常、トレーニング、デモの実行、使用可能性、またはコンセプトの配達確認（POC）といった目的を満たすために作成され、ライブトラフィックを運ぶためのものではありません。サンドボックスは、[AEM as a Cloud Service のコミットメント](https://www.adobe.com/jp/legal/service-commitments.html)には従いません。
 
-サンドボックスで作成された環境は、自動スケール用に構成されていません。 したがって、パフォーマンスや負荷テストには適していません。
+サンドボックスで作成された環境は、自動スケール用に設定されません。従って、パフォーマンスや負荷テストには適しません。
 
-SandboxプログラムにはSitesとAssetsが含まれ、Gitリポジトリ、開発環境、非実稼働パイプラインが自動入力されます。  Gitリポジトリには、AEMプロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
+サンドボックスプログラムには Sites と Assets が含まれ、Git リポジトリ、開発環境、実稼働以外のパイプラインが自動入力されます。Git リポジトリには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
 
-プログラムタイプの詳細については、 [「プログラムとプログラムタイプについて](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md) 」を参照してください。
+プログラムタイプの詳細については、[プログラムとプログラムタイプについて](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)を参照してください。
 
 ### サンドボックスプログラムの属性 {#attributes-sandbox}
 
-Sandboxプログラムには次の属性があります。
+サンドボックスプログラムには次の属性があります。
 
-1. **プログラムの作成：** サンドボックスプログラムの作成には、次の自動機能が含まれます。
+1. **プログラムの作成：**&#x200B;サンドボックスプログラムの作成には、次の自動機能が含まれます。
    * サンプルコードとコンテンツを使用したプロジェクトのセットアップ
-   * 開発環境の創出
-   * 開発環境への非実稼働パイプラインの作成(開発環境へのマスターブランチのデプロイ)
+   * 開発環境の作成
+   * 開発環境にデプロイされる、実稼働以外のパイプラインの作成（開発環境へのメインブランチのデプロイ）
 
-1. **ソリューション：** サンドボックスプログラムには、AEM Sitesとアセットが含まれます。
+1. **ソリューション：**&#x200B;サンドボックスプログラムには、AEM Sites と Assets が含まれます。
 
-1. **AEMアップデート：** AEMのアップデートは、Sandboxプログラム内の環境に手動で適用でき、自動的にプッシュされることはありません。
+1. **AEM アップデート：** AEM のアップデートは、サンドボックスプログラム内の環境に手動で適用します。自動でプッシュされることはありません。
 
-1. **休止状態：** Sandboxプログラム内の環境は、特定の期間、アクティビティが検出されなかった場合、自動的に休止状態になります。 冬眠状態の環境は、手動で非冬眠状態にすることができます。
+1. **休止状態：**&#x200B;サンドボックスプログラム内の環境は、特定の期間、アクティビティが検出されなかった場合、自動的に休止状態になります。休止状態の環境は、手動で休止を解除できます。
 
-### Sandboxプログラムの作成 {#creating-sandbox-program}
+### サンドボックスプログラムの作成 {#creating-sandbox-program}
 
-プログラム作成ウィザードを使用すると、Sandboxプログラムを作成できます。
+プログラム作成ウィザードを使用すると、サンドボックスプログラムを作成できます。
 
-Sandboxプログラムの作成方法について詳しくは、「Sandboxプログラムの [作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program) 」を参照してください。
+サンドボックスプログラムの作成方法について詳しくは、「[サンドボックスプログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md#create-sandbox-program)」を参照してください。
 
-### Sandbox環境の作成 {#creating-sandbox-environments}
+### サンドボックス環境の作成 {#creating-sandbox-environments}
 
-Sandboxプログラムは、プログラムの作成時に、自動作成された方法で開発環境に配信されます。 開発環境には、デフォルトで、作成者と発行層が含まれます。
+サンドボックスプログラムは、プログラムの作成時に、自動作成された形式で開発環境に配信されます。開発環境には、デフォルトで、オーサーとパブリッシュ層が含まれます。
 
-実稼働段階の環境セットは、実稼動パイプラインをセットアップする準備ができたら、Sandboxプログラムに手動で追加できます。
+実稼働とステージングの環境セットは、実稼動パイプラインをセットアップする準備ができたら、サンドボックスプログラムに手動で追加できます。
 
-環境を手動で作成する方法について詳しくは、「環境の [追加](/help/implementing/cloud-manager/manage-environments.md) 」を参照してください。
+To learn how to manually create an environment, refer to [Adding Environment](/help/implementing/cloud-manager/manage-environments.md) for more details.
 
-### Sandbox環境の削除 {#deleting-sandbox-environments}
+### サンドボックス環境の削除 {#deleting-sandbox-environments}
 
-必要な権限を持つユーザーは、開発環境、実稼働/ステージ環境またはセットを削除できます。
+必要な権限を持つユーザーは、開発環境、実稼働／ステージング環境またはそのセットを削除できます。
 
-環境を削除する方法について詳しくは、「環境の [削除](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) 」を参照してください。
+To delete an environment, refer to [Deleting Environment](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
 
 
-## サンドボックス環境の冬眠と非冬眠 {#hibernating-introduction}
+## サンドボックス環境の休止と休止解除 {#hibernating-introduction}
 
-Sandboxプログラム環境は、特定の期間、アクティビティが検出されなかった場合、 *休止モードに入ります* 。
+サンドボックスプログラム環境は、一定期間アクティビティが検出されなかった場合、*休止モードに入ります*。
 
 >[!NOTE]
->休止状態は、サンドボックスプログラム環境に固有です。 正規プログラム環境は休止状態になりません。
+>休止状態は、サンドボックスプログラム環境に固有のものです。標準プログラム環境は休止状態になりません。
 
 ### 休止状態 {#hibernation-introduction}
 
-休止状態は、自動または手動で発生できます。 サンドボックスプログラム環境が *休止モードに入るまで、数分かかる場合があります*。 データは休止中に保持されます。
+休止状態には、自動または手動で移行します。サンドボックスプログラム環境が&#x200B;*休止モード*&#x200B;に入るまで、数分かかる場合があります。休止中、データは保持されます。
 
 休止状態は次のように分類されます。
 
-* **Sandboxの自動プログラム環境は** 、8時間操作が実行されなかった場合に自動的に休止状態になります。つまり、作成者も発行サービスも要求を受け取りません。
+* **自動**：サンドボックスプログラム環境は、8 時間操作が実行されなかった場合に自動的に休止状態になります。休止状態では、オーサーまたはパブリッシュサービスはリクエストを受け取りません。
 
-* **手動**:ユーザはSandboxプログラム環境を手動で休止できますが、休止状態が一定時間（8時間）続くと自動的に休止状態になるので、これを行う必要はありません。
+* **手動**：サンドボックスプログラム環境は手動で休止できますが、活動がない状態が一定時間（8 時間）続くと自動的に休止状態になるので、これをおこなう必要はありません。
 
 >[!CAUTION]
->最新のリリースでは、Cloud ManagerからDeveloper Consoleに直接リンクしても、Sandboxプログラム環境を休止するオプションは提供されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
+>最新のリリースでは、Cloud Manager から開発者コンソールに直接リンクしても、サンドボックスプログラム環境を休止するオプションは提供されません。回避策は、開発者コンソールで URL の末尾に次のようなパターンを追加します。`#release-cm-p1234-e5678 where 1234`1234 は&#x200B;*プログラム ID*、5678 は&#x200B;*環境 ID* です。
 
-#### 手動ハイバーネーションの使用 {#using-manual-hibernation}
+#### 手動による休止 {#using-manual-hibernation}
 
-SandboxプログラムをDeveloper Consoleから手動で休止状態にするには、次の2つの方法があります。
+サンドボックスプログラムを開発者コンソールから手動で休止状態にするには、次の 2 つの方法があります。
 
 * 環境の詳細画面
 * 環境一覧画面
 
 >[!NOTE]
->Sandboxプログラム用のDeveloper Consoleへのアクセスは、Cloud Managerの任意のユーザーが利用できます。
+>サンドボックスプログラム用の開発者コンソールへのアクセスは、Cloud Manager の任意のユーザーが利用できます。
 
-Sandboxプログラム環境を手動で休止状態にするには、次の手順に従います。
+サンドボックスプログラム環境を手動で休止状態にするには、次の手順に従います。
 
-1. Navigate to the **Developer Console**.
-[環境](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
+1. **開発者コンソール**&#x200B;に移動します。**環境**&#x200B;カードから&#x200B;**開発者コンソール**&#x200B;にアクセスする方法については、[開発者コンソールへのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)を参照してください。
    >[!IMPORTANT]
-   >Cloud Managerから **Developer Console** （開発者コンソール）に直接リンクしても、Sandboxプログラム環境を休止するオプションは提供されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
+   >Cloud Manager から&#x200B;**開発者コンソール**&#x200B;に直接リンクしても、サンドボックスプログラム環境を休止するオプションは提供されません。回避策は、開発者コンソールで URL の末尾に次のようなパターンを追加します。`#release-cm-p1234-e5678 where 1234`1234 は&#x200B;*プログラム ID*、5678 は&#x200B;*環境 ID* です。
 
-1. Click **Hibernate**, as shown in the figure below:
+1. **休止**&#x200B;をクリックします（下図を参照）。
 
    ![](assets/hibernate-1.png)
 
    または、
 
-   左上の **環境** ( ****)リンクをクリックして環境リストを表示し、次の図に示すように「Hibernate」をクリックします。
+   左上の&#x200B;**環境**&#x200B;リンクをクリックして環境リストを表示し、次の図に示すように「**休止**」をクリックします。
 
    ![](assets/hibernate-1b.png)
 
-1. 「 **Hibernate** 」をクリックして手順を確認します。
+1. 「**休止**」をクリックして手順を確認します。
 
    ![](assets/hibernate-2.png)
 
-1. 休止状態が正常に終了すると、環境の休止処理完了通知が **開発者コンソール** 画面に表示されます。
+1. 休止処理が正常に完了すると、環境の休止処理完了通知が&#x200B;**開発者コンソール**&#x200B;画面に表示されます。
 
    ![](assets/hibernate-4.png)
 
 
-### 冬眠解除 {#de-hibernation-introduction}
+### 休止解除 {#de-hibernation-introduction}
 
-1. Navigate to the **Developer Console**.
-[環境](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) カードから **Developer Console** （開発者コンソール）にアクセスする方法については、Accessing Developer Console **** （開発者コンソールへのアクセス）を参照してください。
+1. **開発者コンソール**&#x200B;に移動します。**環境**&#x200B;カードから&#x200B;**開発者コンソール**&#x200B;にアクセスする方法については、[開発者コンソールへのアクセス](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)を参照してください。
 
    >[!IMPORTANT]
-   >Cloud Managerから **Developer Console** （開発者コンソール）に直接リンクしても、Sandboxプログラム環境の休止状態を解除するオプションは表示されません。 回避策は、Developer Consoleで1回行い、URLの末尾に次のパターンを追加します。 `#release-cm-p1234-e5678 where 1234` 1234は *プログラムID* 、5678は *環境ID*&#x200B;です。
+   >Cloud Manager から&#x200B;**開発者コンソール**&#x200B;に直接リンクしても、サンドボックスプログラム環境を休止解除するオプションは提供されません。回避策は、開発者コンソールで URL の末尾に次のようなパターンを追加します。`#release-cm-p1234-e5678 where 1234`1234 は&#x200B;*プログラム ID*、5678 は&#x200B;*環境 ID* です。
 
    >[!NOTE]
-   >または、 **Developer Console** （開発者コンソール）に移動して非休止状態にするには、既に休止状態になっている環境の作成者または発行サービスにアクセスします。この場合、ランディングページはDeveloper Consoleへのリンクと共に表示されます。 後述の「冬眠環境へのアクセス」の節を参照してください。
+   >または、**開発者コンソール**&#x200B;に移動し、既に休止状態になっている環境のオーサーまたはパブリッシュサービスにアクセスして休止を解除できます。この場合、開発者コンソールへのリンクと共にランディングページが表示されます。後述の休止環境へのアクセスの節を参照してください。
 
    >[!IMPORTANT]
-   >Developer Consoleへのアクセスは、 **Admin Consoleの** Cloud Manager - Developer Role **（開発者ロール）で定義されます**。 開発者ロールの権限を持つユーザーは、Sandboxプログラム環境の休止状態を解除できます。
+   >開発者コンソールへのアクセスは、**開発者コンソール**&#x200B;の&#x200B;**Cloud Manager - 開発者ロール**&#x200B;で定義されます。開発者ロールの権限を持つユーザーは、サンドボックスプログラム環境の休止状態を解除できます。
 
-1. Click on **De-hibernate**, as shown in the figure below:
+1. **休止解除**&#x200B;をクリックします（下図を参照）。
 
    ![](assets/de-hibernation-img1.png)
 
    または、
 
-   左上の **環境** ( ****)リンクをクリックして環境リストを表示し、次の図に示すように「De-hibernate」をクリックします。
+   左上の&#x200B;**環境**&#x200B;リンクをクリックして環境リストを表示し、次の図に示すように「**休止解除**」をクリックします。
 
    ![](assets/de-hibernate-1b.png)
 
 
-1. 「 **休止状態を** 解除」をクリックして手順を確認します。
+1. 「**休止解除**」をクリックして手順を確認します。
 
    ![](assets/de-hibernation-img2.png)
 
-1. 休止プロセスが開始され、進行状況が更新されるという通知が届きます。
+1. 休止解除処理が開始されると通知が届き、進行状況を把握できます。
 
    ![](assets/de-hibernation-img3.png)
 
-1. 処理が完了すると、Sandboxプログラム環境が再度アクティブになります。
+1. 処理が完了すると、サンドボックスプログラム環境が再度アクティブになります。
 
    ![](assets/de-hibernation-img4.png)
 
 #### 休止状態を解除する権限 {#permissions-de-hibernate}
 
-製品プロファイルがCloud ServiceとしてAEMへのアクセスを許可している場合は、 **Developer Console**(環境の非休止状態)にアクセスできる必要があります。
+製品プロファイルで AEM as a Cloud Service へのアクセスが許可されている場合は、**開発者コンソール**&#x200B;にアクセスして環境の休止状態を解除できます。
 
-#### 冬眠環境へのアクセス {#accessing-hibernated-environment}
+#### 休止環境へのアクセス {#accessing-hibernated-environment}
 
-次の図に示すように、冬眠した環境の作成者層または発行層に対してブラウザリクエストを行うと、環境の冬眠状態を示すランディングページが発生します。
+休止状態の環境のオーサー層またはパブリッシュ層に対してブラウザーリクエストをおこなうと、次の図に示すように、環境の休止状態を示すランディングページが表示されます。
 
 ![](assets/de-hibernation-img5.png)
 
 ### 重要な検討事項 {#important-considerations}
 
-冬眠状態と冬眠解除状態の環境に関する主な考慮事項は、次のとおりです。
+休止状態と休止解除状態の環境に関する主な考慮事項は、次のとおりです。
 
-* ユーザーは、パイプラインを使用して、休止状態の環境にカスタムコードを導入できます。 環境は冬眠状態のままとなり、新しいコードは環境で非冬眠状態になった後に表示されます。
+* ユーザーは、パイプラインを使用して、休止状態の環境にカスタムコードを導入できます。環境は休止状態のままとなり、新しいコードは環境で休止状態が解除された後に表示されます。
 
-* AEMのアップグレードは、冬眠状態の環境に適用できます。これにより、お客様はCloud Managerから手動でトリガーできます。 環境は冬眠状態のままとなり、新しいリリースは、冬眠状態を解除すると環境に表示されます。
+* AEM のアップグレードは、休止状態の環境に適用できます。アップグレードは Cloud Manager から手動でトリガーできます。環境は休止状態のままとなり、新しいリリースは、休止状態を解除すると環境に表示されます。
 
 >[!NOTE]
->現在、Cloud Managerは、環境を休止状態にするかどうかを示しません。
+>現在、Cloud Manager は、環境を休止状態であるかどうかを示しません。
 
-## AEM Sandbox環境の更新 {#aem-updates-sandbox}
+## サンドボックス環境への AEM アップデートの適用 {#aem-updates-sandbox}
 
-Refer to [AEM version updates](/help/implementing/deploying/aem-version-updates.md) for more details.
+詳しくは、[AEM のバージョンアップデート](/help/implementing/deploying/aem-version-updates.md)を参照してください。
 
-ユーザーは、Sandboxプログラム内の環境に手動でAEMアップデートを適用できます。
+ユーザーは、サンドボックスプログラム内の環境に、手動で AEM アップデートを適用できます。
 
-環境を更新する方法については、 [環境の更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) を参照してください。
+環境を更新する方法については、[環境の更新](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)を参照してください。
 
 >[!NOTE]
 >* 手動更新は、対象環境に適切に設定されたパイプラインがある場合にのみ実行できます。
->* 「 *Production* 」または「 *Stage* 」環境を手動で更新すると、もう一方が自動的に更新されます。 Production+Stage環境セットは、同じAEMリリースに存在する必要があります。
+>* *実稼働*&#x200B;または&#x200B;*ステージング*&#x200B;環境を手動で更新すると、もう一方が自動的に更新されます。実稼働とステージングの環境セットは、同じ AEM リリースに存在する必要があります。
 
 
 
