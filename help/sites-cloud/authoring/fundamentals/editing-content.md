@@ -325,7 +325,7 @@ ht-degree: 100%
 
    ![コンポーネントの移動](/help/sites-cloud/authoring/assets/editing-moving-component.png)
 
-1. 段落が移動されます。
+1. 段落が移動します。
 
 >[!TIP]
 >
