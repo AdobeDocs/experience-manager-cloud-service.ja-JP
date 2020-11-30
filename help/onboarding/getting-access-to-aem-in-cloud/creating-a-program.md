@@ -1,11 +1,11 @@
 ---
-title: プログラムの作成 — クラウドサービス
-description: プログラムの作成 — クラウドサービス
+title: プログラムの作成 —Cloud Service
+description: プログラムの作成 —Cloud Service
 translation-type: tm+mt
 source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 ![](assets/create-program-add.png)
 
-## Sandboxプログラムの作成 {#create-sandbox-program}
+## サンドボックスプログラムの作成 {#create-sandbox-program}
 
 サンドボックスプログラムを作成するには、次の手順に従います。
 
@@ -57,7 +57,7 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
    ![](assets/create-program-5.png)
 
-1. 開発への非実稼動パイプラインのデプロイが完了すると、ウィザードに従って、開発時にAEMにアクセスするか、開発環境にコードをデプロイするかを行います。
+1. 開発への非実稼動パイプラインのデプロイが完了すると、ウィザードに従って、AEMへのアクセス（開発時）または開発環境へのコードのデプロイがユーザーに指示されます。
 
    ![](assets/create-program-setup-deploy.png)
 
@@ -66,12 +66,12 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
    ![](assets/create-program-a1.png)
 
-## Sandboxプログラムの削除 {#delete-sandbox-program}
+## Deleting a Sandbox Program {#delete-sandbox-program}
 
-Cloud Managerの *Business Owner* ( *Business Owner)または* Deployment Manager(Deployment Manager)のロールにあるSandboxプログラムユーザーは、Cloud Manager UIを使用して、設定された実稼働環境とステージ環境を削除できます。
+A Sandbox Program user in *Business Owner* or *Deployment Manager* role in Cloud Manager can delete their Production and Stage environment set via the Cloud Manager UI.
 
 >[!NOTE]
->「実稼働」または「ステージ」で削除オプションを選択すると、セット内の他のものも削除されます。
+>実稼動環境またはステージ環境で削除オプションを選択すると、セット内の他のものも削除されます。
 
 次に示すように、削除ランディングページを使用できます。
 
@@ -84,9 +84,9 @@ Sandboxプログラムを削除するには、 **プログラムの概要** ペ�
 ![](assets/delete-sandbox2.png)
 
 
-## 正規プログラムの作成 {#create-regular-program}
+## Creating a Regular Program {#create-regular-program}
 
-正規 ** プログラムは、AEMとCloud Managerに精通し、コードを実稼働環境にデプロイする目的で、開始によるコードの記述、構築、テストを行う準備が整っているユーザーを対象としています。
+正規 ** プログラムは、AEMとCloud Managerに精通し、コードを実稼動環境にデプロイする目的でコードの作成、構築、テストを開始する準備ができているユーザーを対象としています。
 
 正規プログラムを作成するには、次の手順に従います。
 
