@@ -1,118 +1,118 @@
 ---
-title: Cloud ServiceとしてのAEMコマースの概要
-description: Cloud ServiceとしてのExperience Managerコマースは、Commerce Integration Framework(CIF)で構成されます。これは、Magentoおよび他のサードパーティのコマースソリューションのコマースサービスをExperience Cloudと統合および拡張するためのAdobeの推奨パターンです。
+title: AEM Commerce as a Cloud Service の概要
+description: Experience Manager Commerce as a Cloud Service は、Commerce Integration Framework（CIF）で構成されます。これは、Magento および他のサードパーティのコマースソリューションのコマースサービスを Experience Cloud と統合および拡張するための推奨パターンです。
 thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '1357'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Introducing AEM Commerce as a Cloud Service {#commerce-intro}
+# AEM Commerce as a Cloud Service の概要 {#commerce-intro}
 
-Cloud ServiceとしてのExperience Managerコマースは、Commerce Integration Framework(CIF)で構成されます。これは、Magentoおよび他のサードパーティのコマースソリューションのコマースサービスをExperience Cloudと統合および拡張するためのAdobeの推奨パターンです。 これにより、Adobeのお客様は、最先端のテクノロジーに基づく、個々の顧客に合わせた卓越した買い物体験を提供できます。
+Experience Manager Commerce as a Cloud Service は、Commerce Integration Framework（CIF）で構成されます。これは、Magento および他のサードパーティのコマースソリューションのコマースサービスを Experience Cloud と統合および拡張するための推奨パターンです。これにより、アドビのお客様は、最先端のテクノロジーに基づく、個々の顧客に合わせた卓越したショッピングエクスペリエンスを提供できます。
 
-Commerce Integration Frameworkは、Cloud ServiceとしてのExperience Manager用のアドオンモジュールで、Cloud ServiceとコマースのソリューションとしてのExperience Manager間の統合の開発を促進するための一連のオーサリングツール、コンポーネント、リファレンスストアフロントを提供します。
+Commerce Integration Framework は、Experience Manager as a Cloud Service 用のアドオンモジュールで、Experience Manager as a Cloud とコマースソリューション間の統合の開発を促進するためのオーサリングツール、コンポーネント、参照用ストアフロントを提供します。
 
-## CIFの利点 {#cif-benefits}
+## CIF の利点 {#cif-benefits}
 
 主な利点は次のとおりです。
 
 * 統合は、複数のシステムとの統合を標準化およびカプセル化する抽象レイヤーです。
 
-* CIFはheadless/omnichannelエクスペリエンスをサポートします。
+* CIF はヘッドレス／オムニチャネルエクスペリエンスをサポートします。
 
-   * 単一ページアプリと複数ページアプリ
-   * GraphQLエンドポイント
+   * 単一ページアプリケーションと複数ページアプリケーション
+   * GraphQL エンドポイント
 
-* CIFは、カスタマイズやコマースサービスの拡張を行うための、サーバレスのマイクロサービスベースのプロセスとビジネスロジックレイヤーを提供します。
+* CIF は、カスタマイズやコマースサービスの拡張をおこなうための、サーバレスのマイクロサービスベースのプロセスとビジネスロジックレイヤーを提供します。
 
-* CIFは、AEMやMagentoなどのAdobeソリューションとの統合を標準搭載
+* CIF は、AEM や Magento などのアドビソリューションとの統合を標準搭載しています。
 
-## CIF要素 {#cif-elements}
+## CIF 要素 {#cif-elements}
 
-![CIF要素](/help/commerce-cloud/assets/cif-overview1.jpg)
+![CIF 要素](/help/commerce-cloud/assets/cif-overview1.jpg)
 
 
-### オーサリングツール用CIFアドオン {#add-on-authoring-tools}
+### オーサリングツール用 CIF アドオン {#add-on-authoring-tools}
 
-CIFアドオンを使用すると、製品コンソール、製品とカテゴリの選択、または作成者の製品検索など、コマースオーサリングツールにアクセスして、マーケティングやコマースのコンテンツで豊富なエクスペリエンスを作成できます。 アドオンは、GraphQLを介してMagento（または代替コマースシステム）へのバックエンド接続も管理します。 アドオンがプロビジョニングされると、AEM環境としてCloud Serviceに自動的にデプロイされます。
+CIF アドオンを使用すると、作成者は、製品コンソール、製品とカテゴリの選択、製品検索などのコマースオーサリングツールにアクセスして、マーケティングやコマースのコンテンツで豊富なエクスペリエンスを作成できます。アドオンは、GraphQL を介して Magento（または代替コマースシステム）へのバックエンド接続も管理します。プロビジョニングされたアドオンは、AEM as a Cloud Service 環境に自動的にデプロイされます。
 
-### AEM CIFコアコンポーネント {#aem-cif-core}
+### AEM CIF コアコンポーネント {#aem-cif-core}
 
-AEM CIFコアコンポーネントは、MagentoのGraphQLサポートを持つサーバー側およびクライアント側のレンダリングコンポーネントです。 AEMテクノロジーを基に静的でキャッシュ可能でSEOに優しい商取引ストアを作るのに使われます
+AEM CIF コアコンポーネントは、Magento の GraphQL サポートを持つサーバーサイドおよびクライアントサイドのレンダリングコンポーネントです。AEM テクノロジーを基に、静的で、キャッシュ可能で、SEO フレンドリーなコマースストアフロントを作成するのに使用されます。
 
-基本的なコンポーネントが提供され、製品の詳細、製品のリスト、ナビゲーション、検索など、コマースの実装間で共通です。 そのまま使用することも、拡張することもできます。
+製品の詳細、製品のリスト、ナビゲーション、検索など、コマースの実装間で共通の基本的なコンポーネントが提供されます。そのまま使用することも、拡張することもできます。
 
-AEM CIFコアコンポーネント [(](https://github.com/adobe/aem-core-cif-components) CIF Core Components [)は](https://github.com/adobe/aem-core-wcm-components) AEM Sitesコアコンポーネントと同様に機能しますが、コマース固有の使用例に特化したものです。
+[AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は [AEM Sites コアコンポーネント](https://github.com/adobe/aem-core-wcm-components)同様に機能しますが、コマース固有の使用例に特化したものです。
 
-次のコンポーネントの主な利点があります。
+次はコンポーネントの主な利点です。
 
-* プロジェクトでは簡単に使用できます。
-* 現状のまま、または最小限の変更で使用できます。
-* GraphQL APIまたはREST APIを使用したMagentoとの接続に関するベストプラクティスを提供します
+* プロジェクトで簡単に使用できます。
+* 現状のまま、または最小限に変更して使用できます。
+* GraphQL API または REST API を介した Magento への接続のベストプラクティスを提供します。
 
-AEM作成者がAEMでマーケティングコンテンツとコマースコンテンツを組み合わせてエクスペリエンスページを作成できるように、製品ティーザーや製品カルーセルなどのコンポーネントが用意されています。 これらのコンポーネントは、AEMで作成されたコンテンツページに簡単にドラッグ&amp;ドロップでき、Cloud Serviceの製品やカテゴリ選択などのCIFオーサリングツールを使用して特定の製品やカテゴリにリンクできます。
+AEM 作成者が AEM でマーケティングコンテンツとコマースコンテンツを組み合わせてエクスペリエンスページを作成できるように、製品ティーザーや製品カルーセルなどのコンポーネントが用意されています。これらのコンポーネントは、AEM で作成されたコンテンツページに簡単にドラッグ＆ドロップでき、Cloud Service の製品やカテゴリ選択などの CIF オーサリングツールを使用して特定の製品やカテゴリにリンクできます。
 
-すべてのコンポーネントはGitHub上にオープンソースで [す](https://github.com/adobe/aem-core-cif-components)。 これにより、今後行われる変更に対する完全な透明性が示され、最新バージョンを簡単に入手できます。 また、改善点やバグ修正のプルリクエストを組み込むこともできます。
+すべてのコンポーネントはオープンソースで [GitHub](https://github.com/adobe/aem-core-cif-components) にあります。これにより、今後おこなわれる変更に対する完全な透明性が確保され、最新バージョンを簡単に入手できます。また、改善点やバグ修正のプルリクエストをおこなうこともできます。
 
-### AEM Venia Storefront {#aem-venia-storefront}
+### AEM Venia ストアフロント {#aem-venia-storefront}
 
-AEM [Venia Storefront](https://github.com/adobe/aem-cif-guides-venia) は、B2Cコマースの基本的な遍歴を紹介する、製作用に適した最新のリファレンスストアフロントです。 AEM、CIF、Magentoを使用して、コマースプロジェクトを開始し、プロジェクトを高速化するために使用できます。 AEMとMagentoの統合のベストプラクティスを示し、 [AEM CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components) と [](https://github.com/adobe/aem-core-wcm-components) AEM Sitesコアコンポーネントの使用方法を示します。また、AdobeコマースグラフQLエンドポイントをサポートします。 また、AEMとMagentoの統合をデモするためのリファレンスサイトをプリセールスに提供します。
+AEM [Venia ストアフロント](https://github.com/adobe/aem-cif-guides-venia)は、B2C コマースの基本的なジャーニーを紹介する、製作に適した最新の参照用ストアフロントです。AEM、CIF、Magento を使用して、コマースプロジェクトを開始し、プロジェクトを高速化するために使用できます。AEM と Magento の統合のベストプラクティスと、[AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)および [AEM Sites コアコンポーネント](https://github.com/adobe/aem-core-wcm-components)の使用方法を示します。また、Adobe Commerce GraphQL エンドポイントをサポートしています。また、AEM と Magento の統合をデモするための参照用サイトをプリセールスに提供します。
 
-AEM Venia Storefrontは、AEMがガラスとMagentoを所有している混在ページアプリケーションで、コマースバックエンドにヘッドレス方式で電力を供給します。 サーバー側のレンダリングとクライアント側のレンダリングの両方が、ストアフロントで使用されます。 サーバー側のレンダリングは静的コンテンツの配信に使用され、クライアント側のレンダリングは動的コンテンツの配信に使用されます。
+AEM Venia ストアフロントは、AEM がエクスペリエンスを提供し Magento がヘッドレスにコマースバックエンドを提供している混在ページアプリケーションです。ストアフロントでは、サーバーサイドのレンダリングとクライアントサイドのレンダリングの両方が使用されます。サーバーサイドのレンダリングは静的コンテンツの配信に使用され、クライアントサイドのレンダリングは動的コンテンツの配信に使用されます。
 
-製品ページとカタログページは比較的静的で、AEMで作成した汎用テンプレート上の製品の詳細や製品のリストなど、AEM CIFコアコンポーネントを使用してサーバー側にレンダリングされます。 これらのコンポーネントは、GraphQL APIを介してMagentoからデータを取得します。
-これらのページは動的に作成され、サーバー上でレンダリングされ、AEMディスパッチャー上でキャッシュされて、ブラウザーに配信されます。
-在庫や価格など、より動的な属性の場合は、クライアント側のコンポーネントが使用されます。 クライアント側のコンポーネントまたはWebコンポーネントは、GraphQL APIを介してMagentoからデータを直接取得し、コンテンツをブラウザにレンダリングします。
+製品ページとカタログページは比較的静的で、AEM で作成した汎用テンプレート上の製品の詳細や製品のリストなど、AEM CIF コアコンポーネントを使用してサーバーサイドにレンダリングされます。これらのコンポーネントは、GraphQL API を介して Magento からデータを取得します。
+これらのページは動的に作成され、サーバー上でレンダリングされ、AEM Dispatcher 上でキャッシュされて、ブラウザーに配信されます。
+在庫や価格など、より動的な属性に対しては、クライアントサイドコンポーネントが使用されます。クライアントサイドコンポーネントまたは Web コンポーネントは、GraphQL API を介して Magento からデータを直接取得し、コンテンツをブラウザーにレンダリングします。
 
 #### チェックアウト {#checkout}
 
-この参照ストアフロントは、買い物かごとチェックアウトフォームをレンダリングするクライアント側の買い物かごコンポーネントを使用し、完全なエクスペリエンス統合パターンを示します。このパターンでは、Magentoが完全にヘッドレスで実行され、AEMがガラスを所有します。 提示されている抽象支払い方法を使用することをお勧めします。 これにより、Adobeクライアントは支払ゲートウェイプロバイダーと直接通信でき、MagentoクラウドもPCIの機密データを保持または受け渡すことができなくなります。
+この参照ストアフロントは、買い物かごとチェックアウトフォームをレンダリングするクライアントサイドの買い物かごコンポーネントを使用して、Magento が完全にヘッドレスで実行されて AEM がエクスペリエンスを提供する、完全なエクスペリエンス統合パターンを示しています。提供されている抽象支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビも Magento クラウドも PCI 機密データを保持したり受け渡したりしないようになります
 
 #### アカウント管理 {#account-management}
 
-アカウント管理はMagentoによって処理され、参照ストアフロントはクライアント側のReactベースのコンポーネントを使用して、AEMが次の機能でエクスペリエンスをレンダリングできるようにします。アカウントを作成し、サインインし、パスワードを忘れた場合。
+アカウント管理は Magento によって処理され、参照ストアフロントでは、クライアントサイドの React ベースのコンポーネントを使用して、AEM がアカウント作成、サインイン、パスワードを忘れた場合のエクスペリエンスをレンダリングできるようにします。
 
-AEM Venia Storefrontプロジェクトはオープンソースで、詳しくは [AEM Venia Storefrontを参照してください](https://github.com/adobe/aem-cif-guides-venia)。
+AEM Venia ストアフロントプロジェクトはオープンソースです。詳しくは「[AEM Venia ストアフロント](https://github.com/adobe/aem-cif-guides-venia)」を参照してください。
 
 ### AEM プロジェクトアーキタイプ {#aem-project-archtype}
 
-The [AEM Project Archetype](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html) can be used to create a minimal, best-practices-based Adobe Experience Manager project as a starting point for your own AEM projects. オプションで、 [AEM CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components) ( CIF Core Components)を新しく生成したプロジェクトに含めることができます。
+[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)は、最小限のベストプラクティスベースの Adobe Experience Manager プロジェクトを独自の AEM プロジェクトの起点として作成するために使用できます。オプションで、[AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を新しく生成したプロジェクトに含めることができます。
 
-### CIF拡張レイヤー {#cif-extension}
+### CIF 拡張レイヤー {#cif-extension}
 
-CIF拡張レイヤーは、複雑なビジネスロジックをホストする中間レイヤーです。 AdobeのサーバレスプラットフォームであるAdobe I/O Runtimeプラットフォーム上で動作します。 マイクロサービスレベルでビジネスロジックとプロセスロジックを注入することで、エンドツーエンドのサービス呼び出しを拡張できます。 例えば、場所とチャネルを使用して在庫戦略を決定する場合などがビジネスロジックです。 プロセスロジックは、例えば、パーソナライズされた情報を取得する場合などに使用します。
+CIF 拡張レイヤーは、複雑なビジネスロジックをホストする中間レイヤーです。アドビのサーバレスプラットフォームである Adobe I/O Runtime プラットフォーム上で動作します。マイクロサービスレベルでビジネスロジックとプロセスロジックを注入することで、エンドツーエンドのサービス呼び出しを拡張できます。ビジネスロジックの例は、場所とチャネルを使用して在庫戦略を決定する場合です。プロセスロジックの例は、パーソナライズされた情報を取得する場合です。
 
-### CIF統合レイヤ {#cif-integration-layer}
+### CIF 統合レイヤー {#cif-integration-layer}
 
-CIF統合レイヤーは、他のコマースソリューションとの統合を標準化するために使用します。 これは、AdobeのサーバーレスプラットフォームであるAdobe I/O Runtimeプラットフォーム上で実行され、サードパーティのAPIをAdobeコマースAPIに対してマッピングすることで、マイクロサービスレベルでの統合を可能にします。 AEMとのサードパーティ製Magentoの構築を開始するために、 [](https://github.com/adobe/commerce-cif-graphql-integration-reference) リファレンス実装を作成し、AdobeコマースAPI(MagentoGraphQL API)を使用して非コマースバックエンドを統合する方法を示しました。
+CIF 統合レイヤーは、他のコマースソリューションとの統合を標準化するために使用します。アドビのサーバーレスプラットフォームである Adobe I/O Runtime プラットフォーム上で実行され、サードパーティの API を Adobe Commerce API に対してマッピングすることで、マイクロサービスレベルでの統合を可能にします。AEM とのサードパーティ製統合の作成を開始するのに役立つように、[参照用実装](https://github.com/adobe/commerce-cif-graphql-integration-reference)を作成し、Adobe Commerce API（Magento GraphQL API）を使用して Magento 以外のコマースバックエンドを統合する方法を示しています。
 
-## AEMコマース統合パターン {#aem-commerce-integration}
+## AEM のコマース統合パターン {#aem-commerce-integration}
 
-一般的に実装されるAEMコマース統合パターンの一部を次に示します。
+一般的に実装される AEM のコマース統合パターンの一部を次に示します。
 
-![AEM CIF統合パターン](/help/commerce-cloud/assets/aem-cif-integration-patterns-updated.JPG)
-
-
-### 統合パターン1 {#integration-pattern-one}
-
-これは、AEMがガラス全体を所有し、AdobeコマースGraphQL APIを介してコマースサービスを統合する場合に推奨される統合パターンです。 このパターンは、AEMの柔軟性を最大限に解除し、複数のデバイスにわたってリッチメディアサイトのデザインをカスタマイズします。 この統合パターンは、CIFが標準のソリューションとしてサポートしています。
+![AEM CIF 統合パターン](/help/commerce-cloud/assets/aem-cif-integration-patterns-updated.JPG)
 
 
-### 統合パターン2 {#integration-pattern-two}
+### 統合パターン 1 {#integration-pattern-one}
 
-このパターンは、コンテンツやコマースを完全にヘッドレスに配信する方法を表しています。 配信は完全にクライアント側です。 このパターンのコンテンツはAPI経由で配信され、HTMLとコマースのデータはGraphQL経由で配信されます。 このパターンは、CIFの標準でサポートされていません。
-
-
-### 統合パターン3 {#integration-pattern-three}
-
-このパターンでは、Magentoはガラスを所有し、AEMオーサリング済みコンテンツを埋め込みます。 AEMで作成したコンテンツは、エクスペリエンスフラグメントまたはコンテンツフラグメントを介して配信できます。 この統合パターンはプロジェクト固有の作業を必要とし、CIFを使用してすぐに実装することはできません。
+これは、AEM がエクスペリエンス全体を提供し、Adobe Commerce GraphQL API を介してコマースサービスを統合する場合に推奨される統合パターンです。このパターンでは、AEM の柔軟性を最大限に活かして、複数のデバイスでリッチメディアのサイトデザインをカスタマイズできます。この統合パターンは、CIF 標準ソリューションとしてサポートされています。
 
 
-### 統合パターン4 {#integration-pattern-four}
+### 統合パターン 2 {#integration-pattern-two}
 
-これは、ガラスまたはプレゼンテーションレイヤーがAEMとコマースソリューションの間で分割される一般的な統合パターンです。 通常、コマースソリューションはチェックアウトやマイアカウントなどのマーケティング以外のページを提供し、AEMはマーケティングページとストアフロントカタログエクスペリエンスを提供します。 このパターンでは、ユーザーが別々に操作するのを避けるために、買い物かごとユーザーセッションが2つのシステムの間で適切に処理されるようにする必要があります。 例えば、Magentoは買い物かごとユーザーセッションをcookieに保存し、AEMとMagento間で共有できます。 このパターンはプロジェクト固有の作業が必要になり、CIFを使用してすぐに使用できる状態では実装できません。
+このパターンは、コンテンツやコマースを完全にヘッドレスに配信する方法を表しています。配信は完全にクライアントサイドです。このパターンのコンテンツは API 経由で配信され、HTML とコマースのデータは GraphQL 経由で配信されます。このパターンは、CIF では標準でサポートされていません。
+
+
+### 統合パターン 3 {#integration-pattern-three}
+
+このパターンでは、Magento がエクスペリエンスを提供し、AEM がオーサリングしたコンテンツを埋め込みます。AEM で作成したコンテンツは、エクスペリエンスフラグメントまたはコンテンツフラグメントを介して配信できます。この統合パターンにはプロジェクト固有の作業が必要であり、CIF ですぐに実装することはできません。
+
+
+### 統合パターン 4 {#integration-pattern-four}
+
+これは、エクスペリエンスレイヤーまたはプレゼンテーションレイヤーが AEM とコマースソリューションの間で分割される一般的な統合パターンです。通常、コマースソリューションがチェックアウトやマイアカウントなどのマーケティング以外のページを提供し、AEM がマーケティングページとストアフロントカタログエクスペリエンスを提供します。このパターンでは、ユーザーエクスペリエンスが不統一になるのを避けるために、買い物かごとユーザーセッションが 2 つのシステムの間で適切に処理されるようにする必要があります。例えば、Magento は買い物かごとユーザーセッションを Cookie に保存し、AEM と Magento 間で共有できます。このパターンにはプロジェクト固有の作業が必要でありと、CIF ですぐに実装することはできません。
