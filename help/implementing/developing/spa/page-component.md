@@ -1,43 +1,43 @@
 ---
-title: SPAページコンポーネント
-description: SPAでは、ページコンポーネントは子コンポーネントのHTML要素を提供せず、代わりにSPAフレームワークに委任します。 このドキュメントでは、これによってSPAのページコンポーネントが一意になる方法を説明します。
+title: SPA ページコンポーネント
+description: SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
 translation-type: tm+mt
 source-git-commit: c075bcc415b68ba0deaeca61d6d179bd7263ca5f
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
 
-# SPAページコンポーネント {#spa-page-component}
+# SPA ページコンポーネント {#spa-page-component}
 
-SPAのページコンポーネントは、JSPまたはHTLファイルとリソースオブジェクトを介して、子コンポーネントのHTML要素を提供しません。 この処理は SPA フレームワークに委任されます。子コンポーネントの表現は、JSONデータ構造（例：モデル）としてフェッチされます。 次に、指定されたJSONモデルに従ってSPAコンポーネントがページに追加されます。 そのため、ページコンポーネントの初期ボディの構成は、その対応するプリレンダリングHTMLとは異なります。
+SPA のページコンポーネントは、JSP ファイルまたは HTL のファイルやリソースオブジェクトを介して子コンポーネントの HTML 要素を提供しません。この処理は SPA フレームワークに委任されます。子コンポーネントの表現は、JSON データ構造（モデル）として取得されます。次に、指定された JSON モデルに従って SPA コンポーネントがページに追加されます。そのため、ページコンポーネントの初期本文の構成は、その対応するプリレンダリング HTML とは異なります。
 
 ## ページモデルの管理 {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided [`PageModelManager`](blueprint.md#pagemodelmanager) module. SPAは、初期化時に `PageModelManager` モジュールとやり取りし、初期ページモデルを取得し、モデル更新の登録を行う必要があります。主に、作成者がページエディターを使用してページを編集する際に生成されます。 は、SPAプロジェクト `PageModelManager` からnpmパッケージとしてアクセスできます。 AEMとSPAの間のインタプリタとして、はSPAに付き添うこと `PageModelManager` を意図しています。
+ページモデルの解決と管理は、指定の [`PageModelManager`](blueprint.md#pagemodelmanager) モジュールに委任されます。SPA は、初期化時に `PageModelManager` モジュールとやり取りして、初期ページモデルを取得し、モデル更新の登録をおこなう必要があります。これは主に、作成者がページエディターを使用してページを編集しているときに生成されます。`PageModelManager` は、npm パッケージとして SPA プロジェクトからアクセスできます。`PageModelManager` は、AEMとSPAとの間のインタープリターなので、SPAに付随するものです。
 
-ページを作成できるようにするには、という名前のクライアントライブラリを追加し `cq.authoring.pagemodel.messaging` て、SPAとページエディター間の通信チャネルを提供する必要があります。 SPAページコンポーネントがページwcm/coreコンポーネントから継承している場合は、次のオプションを使用してクライアントライブラリカテゴリを使用できるように `cq.authoring.pagemodel.messaging` します。
+ページを作成できるようにするには、`cq.authoring.pagemodel.messaging` という名前のクライアントライブラリを追加して、SPA とページエディターの間の通信チャネルを提供する必要があります。SPA ページコンポーネントがページ wcm/core コンポーネントから継承している場合は、次のオプションを使用して、`cq.authoring.pagemodel.messaging` クライアントライブラリカテゴリを使用可能にします。
 
 * テンプレートが編集可能な場合は、クライアントライブラリカテゴリをページポリシーに追加します。
-* ペ追加ージコンポーネント `customfooterlibs.html` の「」を使用したクライアントライブラリカテゴリ。
+* ページコンポーネントの `customfooterlibs.html` を使用したクライアントライブラリカテゴリを追加します。
 
-カテゴリの組み込みをページエディターのコンテキストに制限することを忘れないでください。 `cq.authoring.pagemodel.messaging`
+`cq.authoring.pagemodel.messaging` カテゴリの組み込みをページエディターのコンテキストに制限することを忘れないでください。
 
 ## 通信データタイプ {#communication-data-type}
 
-通信データ型は、属性を使用してAEM Pageコンポーネント内にHTML要素を設定し `data-cq-datatype` ます。 通信データ型がJSONに設定されている場合、GET要求はコンポーネントのSlingモデルエンドポイントに届きます。 ページエディターで更新が実行されると、更新されたコンポーネントの JSON 表記がページモデルのライブラリに送信されます。次に、ページモデルライブラリがSPAに更新の警告を表示します。
+通信データタイプは、`data-cq-datatype` 属性を使用して AEM ページコンポーネント内に HTML 要素を設定します。通信データタイプが JSON に設定されると、GET リクエストにより、コンポーネントの Sling Model エンドポイントにヒットします。ページエディターで更新が実行されると、更新されたコンポーネントの JSON 表現がページモデルのライブラリに送信されます。次に、ページモデルのライブラリから、SPA に更新が警告されます。
 
-**SPAページコンポーネント —`body.html`**
+**SPA ページコンポーネント -`body.html`**
 
 ```
 <div id="page"></div>
 ```
 
-DOMの生成を遅らせないことをお勧めしますが、SPAフレームワークでは、本文の末尾にスクリプトを追加する必要があります。
+DOM の生成を遅延させないことは基本ですが、それに加えて、SPA フレームワークは本文の末尾にスクリプトを追加する必要があります。
 
-**SPAページコンポーネント —`customfooterlibs.html`**
+**SPA ページコンポーネント -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -46,9 +46,9 @@ DOMの生成を遅らせないことをお勧めしますが、SPAフレーム�
 <sly data-sly-call="${clientLib.js @ categories='we-retail-journal-react'}"></sly>
 ```
 
-SPAコンテンツを記述するメタリソースプロパティ。
+SPA コンテンツを記述するメタリソースプロパティです。
 
-**SPAページコンポーネント —`customheaderlibs.html`**
+**SPA ページコンポーネント -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>
@@ -62,22 +62,22 @@ SPAコンテンツを記述するメタリソースプロパティ。
 
 >[!NOTE]
 >
->コンポーネントのSlingモデル表現を要求する際、デフォルトのモデルセレクターは静的に設定されます。
+>コンポーネントの Sling Model 表現をリクエストする際、デフォルトのモデルセレクターは静的に設定されます。
 
 ## メタプロパティ {#meta-properties}
 
-* `cq:wcmmode`:エディターのWCMモード（ページ、テンプレートなど）
-* `cq:pagemodel_root_url`:アプリのルートモデルのURL。 子ページモデルはアプリのルートモデルのフラグメントなので、子ページに直接アクセスする場合に重要です。 次 `PageModelManager` に、アプリケーションの初期モデルを、そのルートエントリポイントからアプリケーションに入るときに体系的に再構成する。
-* `cq:pagemodel_router`:ライブラリ [`ModelRouter`](routing.md)`PageModelManager` の有効化または無効化
-* `cq:pagemodel_route_filters`:無視する必要があるルートを指定するための、カンマ区切りのリストまたは正規式 [`ModelRouter`](routing.md) 。
+* `cq:wcmmode`：エディターの WCM モード（ページ、テンプレートなど）
+* `cq:pagemodel_root_url`：アプリのルートモデルの URL。子ページモデルはアプリのルートモデルのフラグメントなので、子ページに直接アクセスする場合に重要です。次に、`PageModelManager` は、アプリケーションの初期モデルを、そのルートエントリポイントからアプリケーションに入るときに体系的に再構成します。
+* `cq:pagemodel_router`：`PageModelManager` ライブラリの [`ModelRouter`](routing.md) を有効化または無効化
+* `cq:pagemodel_route_filters`：[`ModelRouter`](routing.md) が無視する必要があるルートを指定するための、カンマ区切りのリストまたは正規表現。
 
 ## ページエディターオーバーレイの同期 {#page-editor-overlay-synchronization}
 
-オーバーレイの同期は、 `cq.authoring.page` カテゴリが提供するのと同じ変異オブザーバー(Mutation Observer)が保証します。
+オーバーレイの同期は、`cq.authoring.page` カテゴリが提供するのと同じミューテーションオブザーバーが保証されます。
 
-## SlingモデルJSONが書き出した構造の設定 {#sling-model-json-exported-structure-configuration}
+## Sling Model JSON が書き出した構造設定 {#sling-model-json-exported-structure-configuration}
 
-ルーティング機能が有効な場合、AEMナビゲーションコンポーネントのJSONエクスポートのおかげで、SPAのJSONエクスポートにアプリケーションの様々なルートが含まれていることが前提となります。 AEM ナビゲーションコンポーネントの JSON 出力は、次の 2 つのプロパティを使用し、SPA のルートページのコンテンツポリシーで設定することができます。
+ルーティング機能を有効にすると、AEM ナビゲーションコンポーネントの JSON 書き出しによって、SPA の JSON 書き出しにアプリケーションの複数のルートが含まれるという前提になります。AEM ナビゲーションコンポーネントの JSON 出力は、次の 2 つのプロパティを使用し、SPA のルートページのコンテンツポリシーで設定することができます。
 
 * `structureDepth`：書き出されたツリーの深度に対応する数字。
-* `structurePatterns`:書き出すページに対応する正規表現
+* `structurePatterns`：書き出すページに対応する Regex の Regex 配列。
