@@ -152,7 +152,7 @@ API を使用してアセットバイナリを更新する方法については�
 
 ## アセットのメタデータの更新 {#update-asset-metadata}
 
-アセットメタデータのプロパティを更新します。`dc:` 名前空間内のプロパティを更新すると、APIは `jcr` 名前空間内の同じプロパティを更新します。API は 2 つの名前空間内のプロパティを同期させません。
+アセットメタデータのプロパティを更新します。`dc:` 名前空間内のプロパティを更新すると、API は `jcr` 名前空間内の同じプロパティをアップデートします。API は 2 つの名前空間内のプロパティを同期させません。
 
 **リクエスト**：`PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
