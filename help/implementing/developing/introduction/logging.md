@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0b648e1a0da141f8393c62cb269e5498e2ecd23f
 workflow-type: tm+mt
 source-wordcount: '2219'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -550,7 +550,7 @@ AEM ログは `crx-quickstart/logs` フォルダー内にあり、次のログ�
 * AEM HTTP リクエストログ： `request.log`
 * AEM HTTP アクセスログ： `access.log`
 
-Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/content-delivery/disp-overview.translate.html)を参照してください。
+Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)を参照してください。
 
 ログを取得するには、以下の手順に従います。
 
@@ -588,7 +588,7 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 
 サポートを依頼するには、顧客は次のことを示す必要があります。
 
-* Splunk HECエンドポイントアドレス
+* Splunk HEC エンドポイントアドレス
 * Splunk のインデックス
 * Splunk のポート
 * Splunk の HEC トークン。詳しくは、[こちらのページ](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples)を参照してください。
@@ -603,21 +603,21 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 
 プログラム 123、実稼動環境
 
-* Splunk HECエンドポイントアドレス： `splunk-hec-ext.acme.com`
+* Splunk HEC エンドポイントアドレス： `splunk-hec-ext.acme.com`
 * Splunk インデックス：acme_123prod（顧客は任意の命名規則を選択できます）
 * Splunk ポート：443
 * Splunk HEC トークン：ABC123
 
 プログラム 123、ステージ環境
 
-* Splunk HECエンドポイントアドレス： `splunk-hec-ext.acme.com`
+* Splunk HEC エンドポイントアドレス： `splunk-hec-ext.acme.com`
 * Splunk インデックス：acme_123stage
 * Splunk ポート：443
 * Splunk HEC トークン：ABC123
 
 プログラム 123、開発環境
 
-* Splunk HECエンドポイントアドレス： `splunk-hec-ext.acme.com`
+* Splunk HEC エンドポイントアドレス： `splunk-hec-ext.acme.com`
 * Splunk インデックス：acme_123dev
 * Splunk ポート：443
 * Splunk HEC トークン：ABC123
