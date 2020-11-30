@@ -1,9 +1,9 @@
 ---
 title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクを非同期的に処理することでパフォーマンスを最適化します。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: be817ff8265d9d45a80557c0e44949ba6562993c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
