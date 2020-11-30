@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 4%
+ht-degree: 36%
 
 ---
 
@@ -23,13 +23,13 @@ AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12�
 ### 新機能 {#what-is-new}
 
 * 新しいメニューオプション「 **ローカルログイン** 」が、環境カードおよび環境の概要ページの環境メニューオプションから利用できるようになりました。
-Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md##login-locally)を参照してください。
 
-* Cloud Managerの「 **Learn** 」タブが更新され、UIの新しい画像が表示されるようになりました。
+* The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* ビルドの実行前に行われた依存関係の読み込みには、Mavenプラグインのダウンロードが必要です。
-* Cloud Managerのフッターから言語を選択するリンクが、正しい場所に移動するようになりました。
-* コードのスキャン中に、SonarQubeプロセスが開始しないことがあります。 これは自動検出され、再起動が試行されます。
+* ビルドの実行に先立っておこなわれる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
+* 言語を選択するための Cloud Manager フッターからのリンクが、正しい場所を指すようになりました。
+* コードスキャン時に SonarQube プロセスが起動しないことがあります。これが自動検出され、再起動が試行されるようになりました。
 * 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
