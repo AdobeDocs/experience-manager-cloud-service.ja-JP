@@ -1,42 +1,42 @@
 ---
-title: AEMでのSPAの使用の手引き(React)
-description: この記事では、サンプルのSPAアプリケーションを紹介し、SPAの組み合わせ方法を説明し、Reactフレームワークを使用して独自のSPAを使用して迅速に運用を開始できます。
+title: React を使用した AEM での SPA の概要
+description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、React を使用して独自の SPA の運用を速やかに開始する方法についても説明します。
 translation-type: tm+mt
 source-git-commit: 8bdb7bbe80a4e22bb2b750c0719c6db745133392
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 
-# AEMでのSPAの使用の手引き(React) {#getting-started-with-spas-in-aem-using-react}
+# React を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-react}
 
 単一ページアプリケーション（SPA）により、Web サイトのユーザーに魅力的なエクスペリエンスを提供することができます。開発者は SPA フレームワークを使用してサイトを構築したいと考え、作成者はそうして構築されたサイトのコンテンツを AEM 内でシームレスに編集したいと考えています。
 
-SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。この記事では、ReactフレームワークのシンプルなSPAアプリケーションを紹介し、その組み合わせ方法を説明します。これにより、独自のSPAを使用してすばやく作業を開始できます。
+SPA オーサリング機能には、AEM 内で SPA をサポートするための包括的なソリューションが用意されています。この記事では、React フレームワーク上のシンプルな SPA アプリケーションを紹介し、その設定方法を説明するほか、独自の SPA の運用をすぐに開始する方法についても説明します。
 
 >[!NOTE]
 >
->この記事はReactフレームワークに基づいています。 Angularフレームワークの対応するドキュメントについては、AEMのSPAの [使用の手引き — Angularを参照してください](getting-started-angular.md)。
+>この記事は React フレームワークに基づいています。対応する Angular フレームワークのドキュメントについては、「[Angular を使用した AEM での SPA の概要](getting-started-angular.md)」を参照してください。
 
 ## 概要 {#introduction}
 
 この記事では、シンプルな SPA の基本的な機能と、SPA を運用するための最低条件の概要を説明します。
 
-AEMでのSPAの動作方法の詳細については、次のドキュメントを参照してください。
+AEM での SPA の動作について詳しくは、次のドキュメントを参照してください。
 
-* [SPAの概要とチュートリアル](introduction.md)
+* [SPA の概要およびガイド](introduction.md)
 * [SPA エディターの概要](editor-overview.md)
 * [SPA ブループリント](blueprint.md)
 
 >[!NOTE]
 >
->SPA内でコンテンツをオーサリングするには、コンテンツをAEMに格納し、コンテンツモデルによって公開する必要があります。
+>SPA 内のコンテンツを作成するには、コンテンツを AEM に格納し、コンテンツモデルによって公開する必要があります。
 >
->AEM以外で開発されたSPAは、コンテンツモデル契約に従わない場合は認証できません。
+>AEM 外で開発された SPA については、コンテンツモデルの契約に準拠していない場合、オーサリングをおこなうことはできません。
 
-このドキュメントでは、Reactフレームワークを使用して作成されたシンプルなSPAの構造を順を追って説明し、その仕組みを説明して、この理解を独自のSPAに適用します。
+このドキュメントでは、React フレームワークを使用して作成されたシンプルな SPA の構造を順を追って解説し、その仕組みを理解した上で独自の SPA に適用する方法を説明します。
 
 ## 依存関係、設定、ビルド {#dependencies-configuration-and-building}
 
@@ -44,7 +44,7 @@ AEMでのSPAの動作方法の詳細については、次のドキュメント�
 
 ### 依存関係 {#dependencies}
 
-この `package.json` ファイルは、SPAパッケージ全体の要件を定義します。 動作中のSPAに対するAEMの最小依存関係を以下に示します。
+`package.json` ファイルは、SPA パッケージ全体の要件を定義します。SPA の動作に対する AEM の最小依存関係を以下に示します。
 
 ```
   "dependencies": {
@@ -61,13 +61,13 @@ AEMでのSPAの動作方法の詳細については、次のドキュメント�
  react-dom
 ```
 
-The `aem-clientlib-generator` is leveraged to make the creation of client libraries automatic as part of the build process.
+クライアントライブラリの作成をビルドプロセスの一部として自動化するために、`aem-clientlib-generator` が活用されています。
 
 `"aem-clientlib-generator": "^1.4.1",`
 
 詳しくは、[GitHub のこちらのページ](https://github.com/wcm-io-frontend/aem-clientlib-generator)を参照してください。
 
-The `aem-clientlib-generator` is configured in the `clientlib.config.js` file as follows.
+`aem-clientlib-generator` は、`clientlib.config.js` ファイルで次のように設定されています。
 
 ```
 module.exports = {
@@ -106,19 +106,19 @@ module.exports = {
 
 ### AEM プロジェクトアーキタイプ {#aem-project-archetype}
 
-AEMプロジェクトでは、 [AEM Project Archetype](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)（ReactまたはAngularを使用するSPAプロジェクトをサポートし、SPA SDKを利用する）を活用する必要があります。
+AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)を活用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を活用します。
 
 ## アプリケーション構造 {#application-structure}
 
-前述のように依存関係を含め、アプリを作成すると、AEMインスタンスにアップロードできる有効なSPAパッケージが表示されます。
+以前に説明したように依存関係を追加してアプリをビルドすると、AEM インスタンスにアップロードできる SPA パッケージが作成されます。
 
-このドキュメントの次のセクションでは、AEMのSPAの構造、アプリケーションを駆動する重要なファイル、およびそれらの連携方法について説明します。
+このドキュメントの次の節では、AEM での SPA 自体の構造と、アプリケーションの動作にかかわる重要なファイルのほか、それらのファイルがどのように連携するのかについて説明します。
 
-例としてシンプル化された画像コンポーネントが使用されますが、アプリケーションのすべてのコンポーネントは同じ概念に基づいています。
+シンプルな画像コンポーネントを例として使用していますが、このアプリケーションのコンポーネントはすべて同じ概念に基づいています。
 
 ### index.js {#index-js}
 
-SPA のエントリポイントはもちろん `index.js` ファイルです。このファイルの内容を以下に示していますが、重要な部分のみに焦点を当てるために簡略化されています。
+SPA のエントリポイントはもちろん `index.js` ファイルです。このファイルの内容を以下に示しますが、重要な部分のみに焦点を当てるために簡略化しています。
 
 ```
 import ReactDOM from 'react-dom';
@@ -135,13 +135,13 @@ ReactDOM.render(
 });
 ```
 
-`index.js` の主要機能は、`ReactDOM.render` 関数を使用して、DOM 内でアプリケーションをインジェクトする場所を決めることです。
+`index.js` の主要機能は、`ReactDOM.render` 関数を活用して、DOM 内でアプリケーションをインジェクトする場所を決めることです。
 
-これは、この関数の標準的な使用方法であり、この例のアプリに固有のものではありません。
+これはこの関数の標準的な使用方法です。このアプリ例に独自の使用方法ではありません。
 
 #### 静的インスタンス化 {#static-instantiation}
 
-コンポーネントテンプレート（JSXなど）を使用して静的にコンポーネントをインスタンス化する場合は、モデルからコンポーネントのプロパティに値を渡す必要があります。
+コンポーネントテンプレート（JSX など）を使用して静的にコンポーネントをインスタンス化する場合は、モデルからコンポーネントのプロパティに値を渡す必要があります。
 
 ### App.js {#app-js}
 
@@ -159,11 +159,11 @@ class App extends Page {
 export default withModel(App);
 ```
 
-`App.js` 主に、アプリを構成するルートコンポーネントをラップする役割を果たします。 アプリのエントリポイントは、ページです。
+`App.js` の主な役目は、アプリを構成するルートコンポーネントをラップすることです。アプリのエントリポイントはページです。
 
 ### Page.js {#page-js}
 
-このページをレンダリングすると、ここに示す `App.js` 呼び出しをシンプル版 `Page.js` で表示します。
+ページをレンダリングすると、`App.js` は以下の `Page.js`（簡易表示）を呼び出します。
 
 ```
 import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
@@ -177,9 +177,9 @@ class AppPage extends Page {
 MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppPage));
 ```
 
-In this example the `AppPage` class extends `Page`, which contains the inner-content methods that can then be used.
+この例の `AppPage` クラスでは、インナーコンテンツメソッドを含む `Page` を拡張して使用します。
 
-`Page` は、ページモデルの JSON 表現を取り込み、コンテンツを処理してページの各要素をラップ／デコレートします。Further details on the `Page` can be found in the document [SPA Blueprint.](blueprint.md)
+`Page` は、ページモデルの JSON 表現を取得し、コンテンツを処理してページの各要素をラップ／デコレートします。`Page` のその他の詳細については、[SPA ブループリント](blueprint.md)のドキュメントを参照してください。
 
 ### Image.js {#image-js}
 
@@ -210,7 +210,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM の SPA の中核概念は、SPA コンポーネントを AEM コンポーネントにマッピングし、コンテンツが変更されたときにコンポーネントも更新する（またはその逆も含む）というものです。この通信モデルの概要については、「ドキュメント [SPAエディタの概要](editor-overview.md) 」を参照してください。
+AEM の SPA の中核概念は、SPA コンポーネントを AEM コンポーネントにマッピングし、コンテンツが変更されたときにコンポーネントも更新する（またはその逆も含む）というものです。この通信モデルの概要については、「[SPA エディターの概要](editor-overview.md)」を参照してください。
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -243,9 +243,9 @@ class PageClass extends Component {...};
 export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
 ```
 
-The `MapTo` function returns a `Component` which is the result of a composition that extends the provided `PageClass` with the class names and attributes that enable the authoring. このコンポーネントは後でエクスポートし、アプリケーションのマークアップでインスタンス化できます。
+`MapTo` 関数は、指定された `Component` を、オーサリング可能にするクラス名と属性で拡張した構成結果の `PageClass` を返します。このコンポーネントは後でエクスポートし、アプリケーションのマークアップでインスタンス化できます。
 
-When exported using the `MapTo` or `withModel` functions, the `Page` component, is wrapped with a `ModelProvider` component which provides standard components access to the latest version of the page model or a precise location in that page model.
+`MapTo` または `withModel` 関数を使用してエクスポートされた `Page` コンポーネントは、`ModelProvider` コンポーネントによってラップされます。このコンポーネントは、標準コンポーネントに、ページモデルの最新バージョンに対するアクセス権またはそのページモデル内の詳細な位置を提供します。
 
 詳しくは、[SPA ブループリントのドキュメント](blueprint.md)を参照してください。
 
@@ -253,18 +253,18 @@ When exported using the `MapTo` or `withModel` functions, the `Page` component, 
 >
 >デフォルトでは、`withModel` 関数を使用するとコンポーネントのモデル全体を受け取ります。
 
-## SPAコンポーネント間での情報の共有 {#sharing-information-between-spa-components}
+## SPA コンポーネント間での情報の共有 {#sharing-information-between-spa-components}
 
-単一ページのアプリケーション内のコンポーネントが情報を共有する場合は、定期的に必要となります。 これを行う方法には、次に示すように、複雑さを増す順序でいくつか推奨されます。
+単一ページのアプリケーション内のコンポーネントが情報を共有することは定期的に必要です。これをおこなう推奨方法にはいくつかあり、以下に簡単なものから順に示します。
 
-* **オプション1:** 例えばReact Contextを使用して、ロジックを一元化し、必要なコンポーネントにブロードキャストします。
-* **オプション2:** Reduxなどのステートライブラリを使用して、コンポーネントの状態を共有します。
-* **オプション3:** コンテナコンポーネントをカスタマイズおよび拡張することで、オブジェクト階層を活用します。
+* **オプション 1：** React Context などを使用して、ロジックを一元化し、必要なコンポーネントにブロードキャストします。
+* **オプション 2：** Redux などのステートライブラリを使用して、コンポーネントの状態を共有します。
+* **オプション 3：**&#x200B;コンテナコンポーネントをカスタマイズおよび拡張することで、オブジェクト階層を活用します。
 
 ## 次の手順 {#next-steps}
 
-* [AEMでのSPAの使用の手引き](getting-started-angular.md) （Angularを使用）は、AEMでAngularを使用してSPAエディタを使用するために基本SPAを構築する方法を示しています。
-* [「SPA Editor Overview](editor-overview.md) 」では、AEMとSPAの間の通信モデルの詳細について説明しています。
-* [WKND SPA Project](wknd-tutorial.md) （WKND SPAプロジェクト）は、AEMで単純なSPAプロジェクトを実装するためのステップバイステップのチュートリアルです。
-* [SPAの動的モデルとコンポーネントのマッピング](model-to-component-mapping.md) (DSP)では、動的モデルとコンポーネントのマッピング、およびAEMのSPA内での動作について説明しています。
-* [SPA Blueprint](blueprint.md) オファーは、ReactやAngular以外のフレームワーク用にAEMでSPAを実装したり、単に理解を深めたい場合に備えて、AEM用SPA SDKの仕組みを深く掘り下げます。
+* 「[Angular を使用した AEM での SPA の使用の手引き ](getting-started-angular.md)」は、Angular を使用して SPA エディターで動作する基本 SPA を構築する方法を示します。
+* 「[SPA エディターの概要](editor-overview.md)」では、AEM と SPA 間の通信モデルをより深く分析しています。
+* [WKND SPA プロジェクト](wknd-tutorial.md)は、AEM で簡単な SPA プロジェクトを実装するための、手順を追ったチュートリアルです。
+* [SPA の動的モデルからコンポーネントへのマッピング](model-to-component-mapping.md)では、動的モデルとコンポーネントのマッピング、および AEM の SPA 内での動作方法について説明しています。
+* [SPA ブループリント](blueprint.md)は、React や Angular 以外のフレームワーク用に、AEM に SPA を実装する場合や、単に理解を深めたい場合に、AEM 用の SPA SDK の詳しい仕組みを提供します。
