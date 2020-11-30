@@ -1,6 +1,6 @@
 ---
 title: ContextHub データを使用したページのプレビュー
-description: ContextHub ツールバーは、ContextHub ストアからのデータを表示し、ストアデータを変更することができ、コンテンツのプレビューに役立ちます。
+description: ContextHub ツールバーは、ContextHub ストアからのデータを表示し、ストアデータを変更することができ、コンテンツのプレビューに立ちます。
 translation-type: tm+mt
 source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
 workflow-type: tm+mt
