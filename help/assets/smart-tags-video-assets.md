@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## アップロード時のビデオのスマートタグ付け {#smart-tag-assets-on-ingestion}
 
-ビデオアセットを [Cloud Serviceとしてに](add-assets.md#upload-assets) アップロードする場合 [!DNL Adobe Experience Manager] 、ビデオは ![処理されます](assets/do-not-localize/assetprocessing.png)。 処理が完了したら、アセットの [!UICONTROL プロパティ] ページの「基本  」タブを参照します。 スマートタグは、「 [!UICONTROL スマートタグ]」の下のビデオに自動的に追加されます。 Asset Compute Serviceは、Adobe Senseiを利用してこれらのスマートタグを作成します。
+ビデオアセットを [Cloud Serviceとしてに](add-assets.md#upload-assets) アップロードする場合 [!DNL Adobe Experience Manager] 、ビデオは ![処理されます](assets/do-not-localize/assetprocessing.png)。 処理が完了したら、アセットの [!UICONTROL プロパティ] ページの「基本  」タブを参照します。 スマートタグは、「 [!UICONTROL スマートタグ]」の下のビデオに自動的に追加されます。 asset computeサービスでは、Adobe Senseiを利用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
