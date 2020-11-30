@@ -1,6 +1,6 @@
 ---
 title: ナビゲーション
-description: ナビゲーション — クラウドサービス
+description: ナビゲーション —Cloud Service
 translation-type: tm+mt
 source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
 workflow-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Adobe Experience Manager as a Cloud Service へのアクセス {#navigation}
 
-システム管理者からCloud Managerへのアクセス権が付与されると、 [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)でもアクセスできるCloud Managerログインページが表示される電子メールが届きます。
+システム管理者からCloud Managerへのアクセス権が付与されると、 [Adobe Experience CloudからもアクセスできるCloud Managerログインページが表示される電子メールが届きます](https://my.cloudmanager.adobe.com/)。
 
 正常にログインすると、以下に示すようにCloud Managerのランディングページに誘導されます。
 
@@ -20,33 +20,33 @@ ht-degree: 1%
 
 ## SysAdminタスク {#sysadmin-tasks}
 
-システム管理者ロールのユーザーは、管理コンソールに直接アクセスしてロールと権限を管理し、AEMインスタンスにアクセスできるようになりました。
+SysAdminロールのユーザーは、ロールと権限を管理し、AEMインスタンスにアクセスするために、Admin Consoleに直接アクセスできるようになりました。
 
 ### ロールの管理 {#manage-roles}
 
-システム管理者ロールのユーザーは、 **管理コンソール** （Cloud Managerに対するユーザーの役割または権限を管理する場所）への1クリックでのアクセス権を持ちます。
+As a user in the SysAdmin role, you have one-click access to the location in **Admin Console** from where user roles or permissions to Cloud Manager are managed.
 
 プロファイルにユーザーを追加する方法の詳細については、 [Accessing Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) （Cloud Managerへのアクセス）を参照してください。
 
 >[!NOTE]
->2020年1月以前にクラウドサービスとしてAEMへのアクセス権を付与された組織によっては、それらの組織がAdobe Admin Consoleに移動し、製品と環境の製品プロファイルを選択する必要があります。
+>2020年1月以前にAEMにCloud Serviceとしてアクセス権を付与された組織では、組織はAdobe Admin Consoleに移動され、製品と環境の製品プロファイルを選択する必要があります。
 
 1. Cloud Managerのランディングページーに移動し、「アクセスを **管理**」をクリックします。
 
    ![](assets/sys-admin5.png)
 
-1. 「アクセス **を管理**」をクリックすると、 **管理コンソールに移動します。** 管理コンソールから、Cloud Managerのユーザーの役割や権限を管理できます。
+1. 「アクセスの **管理**」をクリックすると、 **Admin Console** （Cloud Managerのユーザーの役割や権限を管理できる場所）に移動します。
 
    ![](assets/sys-admin1.png)
 
 ### 作成者インスタンスへのアクセスの管理 {#manage-access-aem}
 
-システム管理者ロールのユーザーは、 **管理コンソールへの1クリックアクセス権を持ちます。** 管理コンソールからは、作成者インスタンスに直接移動してアクセスを管理できます。
+システム管理者ロールのユーザーは、 **Admin Consoleに対して1回のクリックでアクセスできます。** から作成者インスタンスに直接移動し、アクセスを管理できます。
 
 >[!NOTE]
->2020年1月以前にクラウドサービスとしてAEMへのアクセス権を付与された組織によっては、それらの組織がAdobe Admin Consoleに移動し、製品と環境の製品プロファイルを選択する必要があります。
+>2020年1月以前にAEMにCloud Serviceとしてアクセス権を付与された組織では、組織はAdobe Admin Consoleに移動され、製品と環境の製品プロファイルを選択する必要があります。
 
-詳しくは、「AEM内のインスタンスへのクラウドサービスとしての [アクセス](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) 」を参照してください。
+Refer to [Accessing an Instance in AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#accessing-instance-cloud-service) for more details.
 
 1. 「 **環境の概要** 」ページから「 **プログラム** 」カードに移動し、「アクセスの **管理**」をクリックします。
 
@@ -58,21 +58,21 @@ ht-degree: 1%
 
    ![](assets/sys-admin4.png)
 
-1. 「アクセスの **管理**」をクリックすると、 **環境の作成者インスタンスにアクセスできる** 管理コンソールに移動します。
+1. 「アクセスの **管理**」をクリックすると、環境の作成者インスタンスにアクセスできる **** Admin Consoleに移動します。
 
    ![](assets/sys-admin-2.png)
 
 ## 既存のAMSのお客様の場合 {#existing-aem}
 
-既存のAMS(Adobe Managed Services)のお客様がクラウドサービスにアクセスできる場合は、既存のプログラムと **追加プログラム** ボタンがランディングページの右上隅に表示されます。
+既存のAMS(Adobe Managed Services)のお客様がCloud Serviceにアクセスできる場合は、既存のプログラムと **プログラム** ボタンがランディングページの右上隅に表示されます。
 
-「 **プログラム** 」ボタンが表示されず、クラウドサービスへのアクセスに関するご質問がある場合は、アドビの担当者にお問い合わせください。
+「 **プログラム** 」ボタンが表示されず、Cloud Serviceへのアクセスに関するご質問がある場合は、Adobeの担当者にお問い合わせください。
 
-詳しくは、 [「既存のプログラムを使用したクラウドサービスでの新しいプログラムの](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) 追加」を参照してください。
+詳細は、「既存のプログラムとのCloud Serviceでの新しいプログラムの [追加](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program) 」を参照してください。
 
-## 新規のクラウドサービスをご利用のお客様向け {#new-cloud-services}
+## 新規Cloud Serviceのお客様向け {#new-cloud-services}
 
-クラウドサービスをご利用のお客様の場合は、空のランディングページの右上隅に **追加「** プログラム」ボタンが表示されます。 新しいプログラムをクラウドサービスに追加する場合。
+新規Cloud Serviceのお客様の場合は、空のランディングページの右上隅に **追加「プログラム** 」ボタンが表示されます。 Cloud Serviceに新しいプログラムを追加する必要があります。
 
-詳しくは、 [「既存のプログラムを持たないクラウドサービスでの新しいプログラムの](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) 追加」を参照してください。
+詳細は、「既存のプログラムを持たないCloud Serviceに新しいプログラムを [追加する](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program) 」を参照してください。
 
