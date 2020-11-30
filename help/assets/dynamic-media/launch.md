@@ -34,7 +34,7 @@ Dynamic Media ビューア 5.13 の最近のリリースと共に、Adobe Launch
 
 Adobe Launch の統合の主な事例は、AEM Assets と AEM Sites の両方を使用するお客様です。そのような場合、AEM オーサーノードと Adobe Launch の標準統合を設定し、Site インスタンスを Adobe Launch プロパティに関連付けることができます。その後、Site ページに追加された Dynamic Media WCM コンポーネントは、ビューアのデータとイベントを追跡します。
 
-[AEM Site での Dynamic Media ビューアのトラッキングについて](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)を参照してください。
+[AEM Sites での Dynamic Media ビューアのトラッキングについて](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)を参照してください。
 
 統合が支える 2 番目の事例は、AEM Assets のみ、または Dynamic Media Classic を使用するお客様です。その場合、ビューアの埋め込みコードを取得して、Web サイトページに追加します。次に、Adobe Launch から Adobe Launch ライブラリ実稼動用 URL を取得し、Web ページのコードに手動で追加します。
 
@@ -472,7 +472,7 @@ Adobe Analytics を設定した後、統合のために次の設定がおこな�
 
 1. 一般に、Adobe Analytics でのレポートの設定は、特定のプロジェクトのニーズに左右されます。したがって、詳細なレポート設定は、この統合の範囲外です。
 
-   ただし、**[Adobe Analytics 変数の設定](#setting-up-adobe-analytics-variables)**でカスタムトラフィック変数を設定すると、カスタムトラフィックレポートが Adobe Analytics で自動的に使用可能になることはわかります。
+   ただし、**[Adobe Analytics 変数の設定](#setting-up-adobe-analytics-variables)**&#x200B;でカスタムトラフィック変数を設定すると、カスタムトラフィックレポートが Adobe Analytics で自動的に使用可能になることはわかります。
 
    例えば、**[!UICONTROL ビューアアセット（prop 30）]**&#x200B;変数のレポートは、**[!UICONTROL カスタムトラフィック／カスタムトラフィック 21～30／ビューアアセット（prop 30）]**&#x200B;下のレポートメニューから使用できます。
 
@@ -681,7 +681,7 @@ AEM 設定は、次の 2 つの主な手順で構成されます。
 
    >[!NOTE]
    >
-   >この時点で、**[!UICONTROL Adobe IMS テクニカルアカウント設定ページを***&#x200B;開いたまま&#x200B;***にします。ページは]**&#x200B;閉じずに&#x200B;******、「***次へ***」もクリックしません。このページには、手順の後半で戻ってきます。
+   >この時点で、**[!UICONTROL Adobe IMS テクニカルアカウント設定ページを&#x200B;***開いたまま***にします。ページは]**&#x200B;閉じずに&#x200B;******、「***次へ***」もクリックしません。このページには、手順の後半で戻ってきます。
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
