@@ -1,29 +1,29 @@
 ---
-title: 機能テスト —Cloud Services
-description: 機能テスト —Cloud Services
+title: 機能テスト - Cloud Services
+description: 機能テスト - Cloud Services
 translation-type: tm+mt
 source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
 # 機能テスト {#functional-testing}
 
-機能テストは、次の2つのタイプに分類されます。
+機能テストは次の 2 つのタイプに分類されます。
 
 * 製品機能テスト
 * カスタム機能テスト
 
 ## 製品機能テスト {#product-functional-testing}
 
-製品機能テストは、AEMの主要な機能（オーサリングや複製など）を中心とした安定したHTTP統合テスト(IT)のセットです。これにより、アプリケーションコードの変更がこのコア機能を超えた場合に、お客様がデプロイできなくなります。
+製品機能テストは、AEM のコア機能（オーサリングやレプリケーションなど）に関する安定した HTTP 統合テスト（IT）のセットです。これを実行することで、顧客によるアプリケーションコードの変更がこのコア機能に障害が発生させる場合、その変更がデプロイされるのを防ぎます。
 
-製品機能テストは、お客様がCloud Managerに新しいコードをデプロイした場合に自動的に実行され、スキップすることはできません。
+製品機能テストは、顧客が新しいコードを Cloud Manager にデプロイするたびに自動的に実行され、省略することはできません。
 
-サンプルテストについては、「 [製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) 」を参照してください。
+サンプルテストについては、[製品機能テスト](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)を参照してください。
 
 ## カスタム機能テスト {#custom-functional-testing}
 
@@ -32,7 +32,7 @@ ht-degree: 70%
 ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。
 
 >[!NOTE]
->「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。Refer to [Accessing and Managing Logs](/help/implementing/cloud-manager/manage-logs.md) for more details.
+>「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。詳しくは、[ログのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
 
 
 ### 機能テストの作成 {#writing-functional-tests}
@@ -82,7 +82,7 @@ ht-degree: 70%
 
 テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。
 
-ただし、これらのテストを実行する場合は、aem-testing-clients（および基になるSling Testing Clients）が期待する様々なシステムプロパティを設定する必要があります。
+ただし、これらのテストを実行する場合は、aem-testing-clients（およびそのベースとなる Sling Testing Client）で想定している様々なシステムプロパティを設定する必要があります。
 
 これらのシステムプロパティは次のとおりです。
 
