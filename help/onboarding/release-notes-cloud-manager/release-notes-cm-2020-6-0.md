@@ -22,11 +22,11 @@ AEMのCloud ManagerのCloud Service2020.6.0のリリース日は2020年6月4日�
 
 * Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.translate.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;の役割にあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セット内の他のものも削除されます。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.translate.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
@@ -42,7 +42,7 @@ AEMのCloud ManagerのCloud Service2020.6.0のリリース日は2020年6月4日�
 
 * 「システム管理者」の役割を持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.translate.html#manage-access-aem)を参照してください。
+   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
