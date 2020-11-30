@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 67%
 バージョン管理では、特定の時点でのページの「スナップショット」が作成されます。バージョン管理を使用すると、以下の操作を実行できます。
 
 * ページのバージョンを作成する。
-* 1つ以上のページの以前のバージョンを次の場所に復元：
-   * ページに対して行った変更を元に戻します。
-   * 削除したページを復元します。
-   * ツリーを（指定した日時に）復元します。
-* バージョンのプレビュー。
-* ページの現在のバージョンと以前のバージョンを比較します。
-   * テキストと画像の違いがハイライトされます。
-* Timewarpは、ページのバージョンを使用して公開環境の状態を決定します。
+* 1 つ以上のページの以前のバージョンを次の場所に回復する。
+   * ページに対しておこなった変更を取り消す。
+   * 削除したページを復元する。
+   * ツリーを（指定した日時に）復元する。
+* バージョンをプレビューする。
+* ページの現在のバージョンを以前のバージョンと比較する。
+   * テキストと画像の差がハイライトされます。
+* タイムワープはページのバージョンを使用して、パブリッシュ環境の状態を判断します。
 
 ## 新しいバージョンの作成 {#creating-a-new-version}
 
@@ -59,40 +59,40 @@ ht-degree: 67%
 
 タイムラインが開き、新しいバージョンを示すように情報が更新されます。
 
-## バージョンの復元 {#reinstating-versions}
+## バージョンの回復 {#reinstating-versions}
 
-ページのバージョンを作成した後、以前のバージョンを復元する様々な方法があります。
+ページのバージョンを作成した後、以前のバージョンを回復する様々な方法があります。
 
-* タイ **ムラインパネルの「このバージョンに** 戻す [](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) 」オプション
+* [タイムライン](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)パネルの「**このバージョンに戻る**」オプション
 
-   選択したページの以前のバージョンを復元します。
+   選択したページの以前のバージョンを回復します。
 
-* 上部のアク **ションツールバーの「復元** 」 [オプション](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+* 上部の[アクションツールバー](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)の「**復元**」オプション
 
    * **バージョンを復元**
 
-      現在選択されているフォルダー内の指定されたページのバージョンを復元します。これには、以前削除したページの復元も含まれます。
+      現在選択されているフォルダー内の指定されたページのバージョンを回復します。これには、以前削除したページの復元も含むことができます。
 
-   * **ツリーの復元**
+   * **ツリーを復元**
 
-      ツリー全体のバージョンを指定した日時に復元する。これには、以前削除したページが含まれる場合があります。
+      ツリー全体のバージョンを指定した日時に回復します。これには、以前削除したページを含むことができます。
 
 >[!NOTE]
 >
->ページを復元すると、作成されたバージョンは新しいブランチの一部になります。
+>ページを回復すると、作成されたバージョンが新しいブランチの一部になります。
 >
 >この処理は次のようになります。
 >
 >1. 任意のページのバージョンを作成します。
 >1. 最初のラベルおよびバージョンノードの名前は 1.0、1.1、1.2 などです。
->1. 最初のバージョンを復元する。例：1.0
+>1. 最初のバージョン（1.0 など）を回復します。
 >1. 新しいバージョンを再度作成します。
 >1. 生成されるラベルおよびノードの名前は 1.0.0、1.0.1、1.0.2 などです。
 
 
-### Revert to a Version {#revert-to-a-version}
+### 特定のバージョンに戻す {#revert-to-a-version}
 
-選択したページを **以前のバージョンに戻すには** :
+選択したページの以前のバージョンを&#x200B;**復帰**&#x200B;させるには、次の手順に従います。
 
 1. 以前のバージョンに戻すページに移動して、そのページを表示します。
 1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)でページを選択します。
@@ -105,58 +105,58 @@ ht-degree: 67%
 
 ### バージョンを復元 {#restore-version}
 
-このメソッドは、現在のフォルダー内の指定されたページのバージョンを復元するために使用できます。これには、以前削除したページの復元も含まれます。
+このメソッドは、現在のフォルダー内の指定されたページのバージョンを復元するために使用できます。これには、以前削除したページの復元も含むことができます。
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. 必要なフォルダーに移動して[選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)します。
 
-1. 「 **復元**」を選択し、上部の **アクションツールバーで** 「バージョンを復元 [](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)」を選択します。
+1. 「**復元**」を選択し、上部の[アクションツールバー&#x200B;**で「**&#x200B;バージョンを復元](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)」を選択します。
 
    >[!NOTE]
    >
-   >次の場合：
-   >* 子ページを持たない単一のページを選択した場合、
-   >* または、フォルダー内のどのページにもバージョンがない場合、
+   >次のいずれかの場合：
+   >* 子ページを持たない単一のページを選択
+   >* フォルダー内のどのページにもバージョンがない
 
    >
-   >この場合、該当するバージョンがないため、表示は空になります。
+   >該当するバージョンがないため、表示は空になります。
 
-1. 利用可能なバージョンが表示されます。
+1. 利用可能なバージョンがリストに表示されます。
 
-   ![バージョンを復元 — フォルダ内のすべてのページのリスト](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
+   ![バージョンを復元 - フォルダ内のすべてのページのリスト](/help/sites-cloud/authoring/assets/versions-restore-version-01.png)
 
-1. 特定のページに対して、「 **RESTORE TO VERSION** 」のドロップダウンセレクターを使用して、そのページに必要なバージョンを選択します。
+1. 特定のページに対して、「**バージョンに復元**」ドロップダウンセレクターを使用して、そのページに必要なバージョンを選択します。
 
-   ![Restore Version - Select Version](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
+   ![バージョンを復元 - バージョンの選択](/help/sites-cloud/authoring/assets/versions-restore-version-02.png)
 
 1. メインディスプレイで、復元する必要のあるページを選択します。
 
-   ![バージョンの復元 — ページの選択](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
+   ![バージョンを復元 - ページの選択](/help/sites-cloud/authoring/assets/versions-restore-version-03.png)
 
-1. 選択したページの選択したバージョンを現在のバージョンとして復元するには **、[復元** ]を選択します。
+1. 選択したページの選択したバージョンを現在のバージョンとして復元するには、「**復元**」を選択します。
 
 >[!NOTE]
 >
->必要なページと関連するバージョンを選択する順序は入れ替えが可能です。
+>必要なページと関連するバージョンを選択する順序は入れ替え可能です。
 
-### ツリーの復元 {#restore-tree}
+### ツリーを復元 {#restore-tree}
 
-このメソッドは、指定した日時に、ツリーのバージョンを復元する場合に使用できます。これには、以前削除したページが含まれる場合があります。
+このメソッドは、指定した日時にツリーのバージョンを復元する場合に使用できます。これには、以前削除したページを含めることができます。
 
-1. Navigate to, and [select](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources), the required folder.
+1. 必要なフォルダーに移動して[選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)します。
 
-1. 「 **リストア**」を選択し、トップ・ **アクション・ツールバーから「ツリーのリストア** 」を選択し [](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)ます。 ツリーの最新バージョンが表示されます。
+1. 「**復元**」を選択し、上部の[アクションツールバー](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)から「**ツリーを復元**」を選択します。ツリーの最新バージョンが表示されます。
 
-   ![ツリーの復元](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
+   ![ツリーを復元](/help/sites-cloud/authoring/assets/versions-restore-tree-01.png)
 
-1. 「 **最新バージョンの日付での日付と時刻の選択」を使用して** 、復元するツリーの別のバージョンを選択します。
+1. 「**最新バージョンの日付**」で、日時セレクターを使用して、復元するツリーの別のバージョンを選択します。
 
-1. 必要に応じて、「 **保持されたバージョン付きでないページ** 」フラグを設定します。
+1. 必要に応じて、「**バージョン管理されないページを維持**」フラグを設定します。
 
-   * アクティブ（選択）の場合、バージョン管理されていないページはすべて維持され、復元の影響を受けません。
+   * アクティブ（選択）の場合、バージョン管理されないページはすべて維持され、復元の影響を受けません。
 
-   * 非アクティブ（選択されていない）場合、バージョン管理されていないページは、バージョン管理されたツリーに存在しないので削除されます。
+   * 非アクティブ（選択されていない）場合、バージョン管理されないページは、バージョン管理されたツリーに存在しないため、削除されます。
 
-1. 選択したバージョンのツリーを **現在のバージョンとしてリストアする場合は** 、「Restore *」を選択し* ます。
+1. 選択したバージョンのツリーを&#x200B;**現在**&#x200B;のバージョンとして復元する場合は、「*復元*」を選択します。
 
 ## バージョンのプレビュー {#previewing-a-version}
 
