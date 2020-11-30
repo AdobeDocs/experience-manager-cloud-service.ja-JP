@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,10 @@ ht-degree: 94%
 >
 >承認およびスケジュール済みの通知は、ビジネスオーナー、プログラムマネージャー、デプロイメントマネージャーの役割のユーザーにのみ送信されます。
 
-通知は、[!UICONTROL Cloud Manager] UI（ユーザーインターフェイス）のサイドバーおよび Adobe [!UICONTROL Experience Cloud] 中で表示されます。
+通知は、[!UICONTROL Cloud Manager] の UI（ユーザーインターフェイス）のサイドバーおよび Adobe [!UICONTROL Experience Cloud] 全体で表示されます。
+
+
+
 
 ![](assets/notify-1.png)
 
@@ -38,4 +41,4 @@ ht-degree: 94%
 ユーザーは電子メール通知をオンにしたり、電子メールで受信する通知のタイプを（オプションで）選択したりできます。
 
 >[!NOTE]
->You can also enable digesting from the Adobe [!UICONTROL Experience Cloud].
+>Adobe [!UICONTROL Experience Cloud] からのダイジェスト作成を有効にすることもできます。
