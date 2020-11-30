@@ -1,23 +1,23 @@
 ---
-title: AEM最新化ツール
-description: 'AEM最新化ツール '
+title: AEM Modernization Tools
+description: 'AEM Modernization Tools '
 translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 19%
+ht-degree: 100%
 
 ---
 
 
-# AEM最新化ツール {#aem-moderization-tools}
+# AEM Modernization Tools {#aem-moderization-tools}
 
-AEM最新化ツールスイートは、AEM開発チームに、従来の最新のAEM機能を現在サポートされている機能に変換するツールを提供します。
+AEM Modernization Tools は、現在使用されている従来の AEM 機能を現在サポートされている最新の機能に変換するツールを AEM 開発チームに提供します。
 
 
 ## 概要 {#introduction}
 
-AEM最新化ツールを使用すると、次の変換を簡単に行うことができます。
+AEM Modernization Tools を使用すると、以下の変換を容易におこなえるようになります。
 
 * 静的テンプレートから編集可能テンプレートへ
 * デザイン設定からポリシーへ
@@ -25,11 +25,11 @@ AEM最新化ツールを使用すると、次の変換を簡単に行うこと�
 * クラシック UI からタッチ操作対応 UI へ
 
 >[!NOTE]
->AEM Modenize Toolsはコミュニティでの作業であり、アドビはサポートや警告を行っていません。
+>AEM Modernize Tools はコミュニティの取り組みであり、アドビによるサポートまたは保証の対象外です。
 
-AEM最新化ツールスイートの計画、設定、開発について詳しくは、 **[「AEM最新化ツールの](https://opensource.adobe.com/aem-modernize-tools/)**概要」を参照してください。
+AEM Modernize Tools を使用した計画、設定、開発について詳しくは、**[Introducing AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)**（AEM Modernization Tools の概要）を参照してください。
 
-## AEM Modernization Tool Suiteのインストールと実装 {#installing-implementing}
+## AEM Modernization Tools のインストールと実装 {#installing-implementing}
 
-詳しくは、 **[Gitリソースを参照してください。 AEM Modenize Tools Suite](https://github.com/adobe/aem-modernize-tools)**（ツールの最新化）を参照して、インストールと実装について学んでください。
+インストールと実装については、**[Git リソース：AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)**&#x200B;を参照してください。
 
