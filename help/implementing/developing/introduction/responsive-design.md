@@ -1,28 +1,28 @@
 ---
 title: レスポンシブデザイン
-description: レスポンシブデザインでは、複数のデバイスで同じエクスペリエンスを複数の方向で効果的に表示できます
+description: レスポンシブデザインを使用すると、同じエクスペリエンスを複数のデバイスで、複数の向きで効果的に表示できます。
 translation-type: tm+mt
 source-git-commit: a642c5260c6c7ca63e59662877641d28db261fe4
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 
-# Responsive Design {#responsive-design}
+# レスポンシブデザイン {#responsive-design}
 
-表示されるクライアントビューポートに合わせてエクスペリエンスを設計します。 レスポンシブデザインを使用すると、同じページを複数のデバイスで、縦、横の両方の向きで効果的に表示できます。次の画像の例は、表示域サイズの変更に対してページがどのように応答するかを示しています。
+エクスペリエンスが表示されるクライアントの表示域に適応するようにエクスペリエンスをデザインします。レスポンシブデザインを使用すると、同じページを複数のデバイスで、縦、横の両方の向きで効果的に表示できます。次の画像の例は、表示域サイズの変更に対してページがどのように応答するかを示しています。
 
 * レイアウト：表示域が小さい場合は 1 列レイアウトを使用し、表示域が大きい場合は複数列レイアウトを使用します。
 * テキストサイズ：表示域が大きい場合は、（見出しなどの適切な箇所で）大きいテキストサイズを使用します。
 * コンテンツ：小型デバイスに表示する場合は、重要なコンテンツのみを表示します。
 * ナビゲーション：他のページにアクセスするためのデバイス専用のツールを提供します。
-* 画像：ウィンドウの寸法に従って、クライアントビューポートに適した画像レンディションを提供します。
+* 画像：ウィンドウのサイズに応じて、クライアントの表示域に適した画像レンディションを提供します
 
 ![レスポンシブデザインの例](assets/responsive-example.png)
 
-複数のウィンドウのサイズと向きに合わせて調整されるHTML5を生成するAdobe Experience Manager(AEM)アプリケーションを開発します。 例えば、次のような表示域の幅の範囲が、様々なデバイスタイプと向きに対応します。
+複数のウィンドウサイズと向きに適応可能な HTML5 を生成する Adobe Experience Manager（AEM）アプリケーションを開発します。例えば、次のような表示域の幅の範囲が、様々なデバイスタイプと向きに対応します。
 
 * 幅 480 ピクセル以下（携帯電話、縦置き）
 * 幅 767 ピクセル以下（携帯電話、横置き）
@@ -36,39 +36,39 @@ ht-degree: 59%
 * [可変グリッド](#developing-a-fluid-grid)
 * [アダプティブ画像](#using-adaptive-images)
 
-As you design, use the **Emulator** toolbar to preview your pages for various screen sizes.
+デザインの際には、**エミュレーター**&#x200B;を使用してページを様々な画面サイズでプレビューします。
 
-## Before You Develop {#before-you-develop}
+## 開発の前に {#before-you-develop}
 
 Web ページをサポートする AEM アプリケーションを開発する前に、デザインについていくつかの決定をおこなう必要があります。例えば、次の情報が必要になります。
 
-* ターゲットにしているデバイス
-* ターゲットビューポートのサイズ
-* ターゲットビューポートの各サイズのページレイアウト
+* ターゲットとするデバイス
+* ターゲットの表示域サイズ
+* ターゲットの表示域サイズごとのページレイアウト
 
 ### アプリケーション構造 {#application-structure}
 
 次のような一般的な AEM アプリケーション構造により、すべてのレスポンシブデザイン実装をサポートできます。
 
-* ページコンポーネントは下にあります `/apps/<application_name>/components`
-* テンプレートは次の場所にあります `/apps/<application_name>/templates`
+* ページコンポーネントは `/apps/<application_name>/components` の下にあります。
+* テンプレートは `/apps/<application_name>/templates` の下にあります。
 
 ## メディアクエリの使用 {#using-media-queries}
 
 メディアクエリによって、ページレンダリング用の CSS スタイルを選択的に使用できます。AEM 開発ツールおよび機能を使用すれば、アプリケーションでメディアクエリを効果的かつ効率的に実装できます。
 
-The W3C group provides the [Media Queries](https://www.w3.org/TR/css3-mediaqueries/) recommendation that describes this CSS3 feature and the syntax.
+W3C グループが、この CSS3 機能と構文について示した、[メディアクエリ](https://www.w3.org/TR/css3-mediaqueries/)に関する推奨事項を提供しています。
 
 ### CSS ファイルの作成 {#creating-the-css-file}
 
 CSS ファイルでは、ターゲットとしているデバイスのプロパティに基づいてメディアクエリを定義します。次の実装方法は、各メディアクエリのスタイルを管理するのに効果的です。
 
-* Use a [Client Library folder](clientlibs.md) to define the CSS that is assembled when the page is rendered.
+* [クライアントライブラリフォルダー](clientlibs.md)を使用して、ページのレンダリング時に組み立てられる CSS を定義します。
 * 各メディアクエリおよび関連するスタイルを、それぞれ個別の CSS ファイルで定義します。メディアクエリのデバイスの特徴を表したファイル名を使用すると便利です。
 * すべてのデバイスに共通するスタイルを、個別の 1 つの CSS ファイルで定義します。
-* クライアントライブラリフォルダーのcss.txtファイルで、アセンブルしたCSSファイル内のリストCSSファイルの必要に応じて、CSSファイルの順序を変更します。
+* クライアントライブラリフォルダーの css.txt ファイルで、組み立てられた CSS ファイル内で必要とされる順に CSS ファイルを並べます。
 
-The [WKND tutorial](develop-wknd-tutorial.md) uses this strategy to define styles in the site design. WKNDで使用されるCSSファイルは、にあり `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`ます。
+[WKND チュートリアル](develop-wknd-tutorial.md)ではこの実装方法を使用して、サイトデザインのスタイルを定義しています。WKND で使用される CSS ファイルは、`/apps/wknd/clientlibs/clientlib-grid/less/grid.less` にあります。
 
 <!--
 ## Previewing for Specific Devices {#previewing-for-specific-devices}
