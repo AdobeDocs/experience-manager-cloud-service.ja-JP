@@ -1,11 +1,11 @@
 ---
-title: コンポーネント 概要
+title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
 translation-type: tm+mt
 source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -16,38 +16,38 @@ ht-degree: 50%
 
 ## コンポーネントとは{#what-are-components}
 
-AEMのコンポーネントは次のとおりです。
+AEM のコンポーネント：
 
-* Webサイトにコンテンツを表示するための特定の機能を実現するモジュラー型ユニット。
-* 再利用可能。
-* リポジトリの1つのフォルダー内に自己完結型のユニットとして開発。
+* 特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
+* 再利用可能です。
+* リポジトリーの 1 つのフォルダー内の自己完結型ユニットとして開発されます。
 * 非表示の設定ファイルを持ちません。
 * 他のコンポーネントを組み込むことができます。
-* どのAEMシステムでもどこでも実行でき、また、特定のコンポーネントで実行できるように制限することもできます。
+* AEM システム内ならどこでも実行でき、また、特定のコンポーネントで実行できるように制限することもできます。
 * 標準化されたユーザーインターフェイスがあります。
-* 設定可能な編集動作がある。
-* Granite UIコンポーネントに基づくサブ要素を使用して構築されたダイアログボックスを使用します。
-* HTLを使用して開発され [ます](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)。
+* 設定可能な編集動作があります。
+* Granite UI コンポーネントに基づくサブ要素を使用して構築されたダイアログボックスを使用します。
+* [HTL](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html) を使用して開発されています。
 * デフォルトの機能を拡張するカスタマイズされたコンポーネントを作成するために開発できます。
 
 コンポーネントはモジュールなので、次のことができます。
 
 * ローカルインスタンスで新しいコンポーネントを開発する。
-* テスト環境に展開します。
-* ライブオーサリング環境にデプロイする。そこで、作成者や管理者のコンテンツの追加および設定を許可します。
-* ライブパブリッシュ環境にデプロイします。この画像を使用して、Webサイトの訪問者向けにコンテンツをレンダリングします。
+* テスト環境にデプロイします。
+* ライブオーサリング環境にデプロイし、そこで、作成者や管理者のコンテンツの追加および設定を許可します。
+* ライブパブリッシュ環境にデプロイします。Web サイトへの訪問者用にコンテンツをレンダリングするために使用します。
 
 各 AEM コンポーネント：
 
 * リソースタイプです。
-* 特定の機能を完全に実現するスクリプトの集まりです。
-* AEM内またはポータル内で、単独で機能します。
+* 特定の機能を完全に実現するスクリプトのコレクションです。
+* 単独で（AEM 内またはポータル内で）機能できます。
 
 ## AEM コアコンポーネント {#aem-core-components}
 
-[AEMコアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) は、Webサイトの開発時間を短縮し、メンテナンスコストを削減するための、AEM用の標準化されたWebコンテンツ管理(WCM)コンポーネントのセットです。
+[AEM コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)は、AEM で Web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された Web コンテンツ管理（WCM）コンポーネントのセットです。
 
-コアコンポーネントは、Cloud ServiceとしてAEMと共に提供され、 [WKNDチュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md) では、コンポーネントの実装方法と使用方法を説明します。 コンポーネントは、すべてのソースコードと共に提供されており、そのまま使用することも、コンポーネントを変更または拡張する出発点として使用することもできます。
+コアコンポーネントは、Cloud Service として AEM と共に提供され、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、コンポーネントの実装方法と使用方法を説明します。コンポーネントは、すべてのソースコードと共に提供されており、そのまま使用することも、コンポーネントを変更または拡張する出発点として使用することもできます。
 
 ### 利用可能なコンポーネントの表示 {#viewing-available-components}
 
@@ -55,13 +55,13 @@ AEM インスタンスで利用可能なすべてのコンポーネントの概�
 
 または、CRXDE Lite を使用して、リポジトリで利用可能なすべてのコンポーネントのリストを取得することもできます。
 
-1. In **[!UICONTROL CRXDE Lite]**, select **[!UICONTROL Tools]** from the toolbar, then **[!UICONTROL Query]**, which opens the **[!UICONTROL Query]** tab.
+1. **[!UICONTROL CRXDE Lite]** で、ツールバーから「**[!UICONTROL ツール]**」を選択し、「**[!UICONTROL クエリ]**」を選択して、「**[!UICONTROL クエリ]**」タブを開きます。
 
-1. 「**[!UICONTROL クエリー]**」タブで、「`XPath`タイプ&#x200B;**[!UICONTROL 」として「]**」を選択します。
+1. 「**[!UICONTROL クエリ]**」タブで、「**[!UICONTROL タイプ]**」として「`XPath`」を選択します。
 
-1. **[!UICONTROL クエリ]**&#x200B;入力フィールドに次の文字列を入力します。
+1. 「**[!UICONTROL クエリ]**」入力フィールドに次の文字列を入力します。
 
    `//element(*, cq:Component)`
 
-1. Click **[!UICONTROL Execute]** and the components are listed.
+1. 「**[!UICONTROL 実行]**」をクリックするとコンポーネントがリストされます。
 
