@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
 workflow-type: tm+mt
 source-wordcount: '2207'
-ht-degree: 48%
+ht-degree: 72%
 
 ---
 
@@ -51,7 +51,7 @@ Best Practices Analyzerは、Software Distribution Portalからzipファイル�
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. [ **レポートの** 生成]をクリックして、ベストプラクティスアナライザを実行します。
+1. Click on **Generate Report** to execute the Best Practices Analyzer.
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
@@ -60,15 +60,15 @@ Best Practices Analyzerは、Software Distribution Portalからzipファイル�
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
-1. BPAレポートが生成されると、検索の種類と重要度のレベル別に整理された表形式で、結果の概要と数が表示されます。 特定の検索の詳細を表示するには、表内の検索のタイプに対応する番号をクリックします。
+1. BPAレポートが生成されると、検索の種類と重要度のレベル別に整理された表形式で、結果の概要と数が表示されます。 特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
-   上記のアクションは、レポート内のその検索場所まで自動的にスクロールします。
+   上記のアクションは、レポート内でその結果の場所まで自動的にスクロールします。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. You have the option of downloading the report in a comma-separated values (CSV) format by clicking on **CSV**, as shown in the figure below.
+1. 下の図に示すように、「**CSV**」をクリックして、レポートをコンマ区切り値（CSV）形式でダウンロードするオプションがあります。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -109,7 +109,7 @@ Adobe Experience Manager 6.1 では、このツールは機能せず、HTTP イ�
 アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。
 
 >[!NOTE]
->各検索カテゴリの詳細については、「 [パターン検出カテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)」を参照してください。
+>各結果カテゴリの詳細については、「[パターンディテクターカテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)」を参照してください。
 
 次の表に、重要度レベルを示します。
 
@@ -167,17 +167,17 @@ HTTP インターフェイスは、様々な方法で使用できます。
 
 このインターフェイスでは、次の HTTP ヘッダーが使用されます。
 
-* `Cache-Control: max-age=<seconds>`:キャッシュフレッシュネスの有効期間を秒単位で指定します。 （[RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8) を参照）
-* `Prefer: respond-async`:サーバーが非同期で応答する必要があることを指定します。 （[RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1) を参照）
-* `Prefer: return=minimal`:サーバーが最小限の応答を返すように指定します。 （[RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2) を参照）
+* `Cache-Control: max-age=<seconds>`：キャッシュフレッシュネスの有効期間を秒単位で指定します。（[RFC 7234](https://tools.ietf.org/html/rfc7234#section-5.2.2.8) を参照）
+* `Prefer: respond-async`：サーバーが非同期で応答する必要があることを指定します。（[RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.1) を参照）
+* `Prefer: return=minimal`：サーバーが最小限の応答を返すように指定します。（[RFC 7240](https://tools.ietf.org/html/rfc7240#section-4.2) を参照）
 
 次の HTTP クエリパラメーターは、HTTP ヘッダーが容易に使用できない場合の便宜を図るために使用できます。
 
-* `max-age` （数値、オプション）:キャッシュフレッシュネスの有効期間を秒単位で指定します。 この数値は 0 以上にする必要があります。デフォルトのフレッシュ時間は86400秒です。 このパラメーターまたは対応するヘッダーがない場合は、24時間の要求を処理するために新規キャッシュが使用され、その時点でキャッシュを再生成する必要があります。 を使用 `max-age=0` すると、新しく生成されたキャッシュのゼロ以外の有効期間を使用して、キャッシュが強制的にクリアされ、レポートの再生成が開始されます。
-* `respond-async` （ブール値、オプション）:応答を非同期で提供する必要があることを指定します。 Using `respond-async=true` when the cache is stale will cause the server to return a response of `202 Accepted` without waiting for the cache to be refreshed and for the report to be generated. キャッシュが新規の場合、このパラメーターは無効です。The default value is `false`. Without this parameter or the corresponding header the server will respond synchronously, which may require a significant amount of time and require an adjustment to the maximum response time for the HTTP client.
-* `may-refresh-cache` （ブール値、オプション）:現在のキャッシュが空、古い、または古くなる前にキャッシュが古い場合に、要求に応じてサーバーがキャッシュを更新する可能性があることを指定します。 指定し `may-refresh-cache=true`た場合、または指定しなかった場合、サーバーはバックグラウンドタスクを開始し、パターンディテクターを呼び出してキャッシュを更新します。 この場合、キャッシュ `may-refresh-cache=false` が空または古い場合に行われた更新タスクがサーバーで開始されないと、レポートは空になります。 既に処理中の更新タスクは、このパラメータの影響を受けません。
-* `return-minimal` （ブール値、オプション）:サーバーからの応答に、進行状況の指示とキャッシュの状態を含む状態のみをJSON形式で含めるように指定します。 の場合 `return-minimal=true`、応答本文はステータスオブジェクトに制限されます。 指定し `return-minimal=false`た場合、または指定しなかった場合は、完全な応答が返されます。
-* `log-findings` （ブール値、オプション）:サーバが最初にキャッシュを構築または更新したときに、キャッシュの内容をログに記録する必要があることを指定します。 キャッシュからの検索はそれぞれJSON文字列として記録されます。 このログは、要求で新しいキャッシュが生成さ `log-findings=true` れた場合にのみ発生します。
+* `max-age`（数値、オプション）：キャッシュフレッシュネスの有効期間を秒単位で指定します。この数値は 0 以上にする必要があります。デフォルトのフレッシュ有効期間は 86400 秒です。このパラメーターまたは対応するヘッダーがない場合は、要求を 24 時間処理するために新規キャッシュが使用され、その時点でキャッシュを再生成する必要があります。`max-age=0` を使用すると、新しく生成されたキャッシュのゼロ以外の有効期間を使用して、キャッシュが強制的にクリアされ、レポートの再生成が開始されます。
+* `respond-async`（ブール値、オプション）：応答を非同期で提供する必要があることを指定します。キャッシュが古い場合に `respond-async=true` を使用すると、キャッシュの更新とレポートの生成を待たずに、サーバーは `202 Accepted` 応答を返します。キャッシュが新規の場合、このパラメーターは無効です。デフォルト値は `false` です。このパラメーターや対応するヘッダーがない場合、サーバーは同期して応答します。これには非常に長い時間がかかり、HTTP クライアントの最大応答時間の調整が必要になる場合があります。
+* `may-refresh-cache`（ブール値、オプション）：現在のキャッシュが空、古い、または古くなる場合、要求に応じてサーバーがキャッシュを更新することを指定します。`may-refresh-cache=true` の場合、または指定されていない場合、サーバーはバックグラウンドタスクを開始し、パターンディテクターを呼び出してキャッシュを更新します。`may-refresh-cache=false` の場合、キャッシュが空または古い場合に実行されるはずの更新タスクがサーバーで開始されないため、レポートは空になります。既に処理中の更新タスクは、このパラメーターの影響を受けません。
+* `return-minimal`（ブール値、オプション）：サーバーからの応答に、進行状況の指示とキャッシュの状態を含む状態のみを JSON 形式で含めるように指定します。`return-minimal=true` の場合、応答本文はステータスオブジェクトに制限されます。`return-minimal=false` の場合、または指定されていない場合、完全な応答が返されます。
+* `log-findings`（ブール値、オプション）：サーバーが最初にキャッシュを構築または更新したときに、キャッシュの内容をログに記録するかどうかを指定します。キャッシュからの結果はそれぞれ JSON 文字列として記録されます。このログは、`log-findings=true` で、要求で新しいキャッシュが生成された場合にのみ発生します。
 
 HTTP ヘッダーと対応するクエリパラメーターの両方が存在する場合は、クエリパラメーターが優先されます。
 
@@ -190,10 +190,10 @@ HTTP インターフェイスを使用してレポートの生成を開始する
 
 次の応答値を指定できます。
 
-* `200 OK`:キャッシュのフレッシュネス有効期間内に生成された、パターンディテクターからの結果が応答に含まれていることを示します。
-* `202 Accepted`:キャッシュが古いことを示すために使用します。 と `respond-async=true` この応答 `may-refresh-cache=true` が更新タスクの進行中であることを示す場合。 この応答 `may-refresh-cache=false` が単にキャッシュが古いことを示す場合。
+* `200 OK`：応答にキャッシュのフレッシュネス有効期間内に生成されたパターン検出の結果が含まれることを示します。
+* `202 Accepted`：キャッシュが古いことを示すために使用します。`respond-async=true` および `may-refresh-cache=true` の場合、この応答は更新タスクが進行中であることを示します。`may-refresh-cache=false` の場合、この応答は単にキャッシュが古いことを示します。
 * `400 Bad Request`：リクエストでエラーが発生したことを示します。詳細については、問題詳細形式のメッセージ（[RFC 7807](https://tools.ietf.org/html/rfc7807) を参照）を参照してください。
-* `401 Unauthorized`:要求が承認されなかったことを示します。
+* `401 Unauthorized`：要求が承認されなかったことを示します。
 * `500 Internal Server Error`：内部サーバーエラーが発生したことを示します。詳細については、問題詳細形式のメッセージを参照してください。
 * `503 Service Unavailable`：サーバーが別の応答でビジー状態であり、このリクエストをタイムリーに処理できないことを示します。これは、同期リクエストがおこなわれた場合にのみ発生する可能性があります。詳細については、問題詳細形式のメッセージを参照してください。
 
