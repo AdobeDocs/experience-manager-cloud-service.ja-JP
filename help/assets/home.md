@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 76%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 76%
 ## Assets に関する主要な記事 {#key-articles}
 
 * [概要と新機能](overview.md)
-* [主な変更点](/help/assets/assets-cloud-changes.md)
+* [主要な変更点](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service のアーキテクチャ](architecture.md)
 * [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
 
@@ -32,11 +32,11 @@ ht-degree: 76%
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
 | [オンボーディング](/help/onboarding/home.md) | Experience Manager as a Cloud Service の基本を学ぶ - 重要なデータにアクセスし、保護します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |
-| [Cloud ServiceとしてのExperience Managerへの移行](/help/move-to-cloud-service/home.md) | Experience Managerへのトランジションの遍歴をCloud Serviceとして理解する |
+| [Experience Manager as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | Experience Manager as a Cloud Service への移行プロセスについて説明します。 |
 | [実装ユーザガイド](/help/implementing/home.md) | Experience Manager as a Cloud Service をカスタマイズ、開発およびデプロイします。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
-| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM上のCommerce Integration FrameworkをCloud Serviceとして学習します。 |
+| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
