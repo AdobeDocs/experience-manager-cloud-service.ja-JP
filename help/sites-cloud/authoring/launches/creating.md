@@ -81,8 +81,8 @@ ht-degree: 100%
 
    （「**完了**」を使用して）コンソールを戻す場合、次のいずれかからローンチを確認（およびアクセス）できます。
 
-   * [**ローンチ&#x200B;**コンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-   * [**サイト&#x200B;**コンソールの「**&#x200B;参照&#x200B;**」](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
+   * [**ローンチ**&#x200B;コンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+   * [**サイト**&#x200B;コンソールの「**参照**」](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 
 ### 新しいテンプレートでのローンチの作成 {#create-launch-with-new-template}
 
