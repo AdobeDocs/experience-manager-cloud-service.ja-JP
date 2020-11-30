@@ -105,6 +105,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
       * モバイルデバイス：カードをタップ＆ホールドする
       * デスクトップデバイス：チェックマークアイコンで表される[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用する
    * ページが選択されていることを示すために、カードにチェックマークが付けられます。
+
    ![カードの例](/help/sites-cloud/authoring/assets/card.png)
 
 ### クイックアクション（カード表示／デスクトップのみ） {#quick-actions-card-view-desktop-only}
@@ -137,6 +138,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
       * サイドパネルを開く。
       * 「コンポーネント」タブを選択する（[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)）。
       * 必要なコンポーネントをページにドラッグする。
+
       サイドパネルは、次のアイコンで開く（および閉じる）ことができます。
 
       ![サイドパネルの切り替えボタン](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
@@ -174,6 +176,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       * ツールバーから「**プレビュー**」を選択します。
    * 「**編集**」ドロップダウンセレクターを使用して、編集モードに戻ります（またはその他のモードを選択します）。
+
    >[!NOTE]
    >
    >コンテンツのリンクを使用して移動するには、[プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)を使用する必要があります。
@@ -189,6 +192,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       * 該当するリソースの[クイックアクション（カード表示／デスクトップのみ）](#quick-actions-card-view-desktop-only)
       * ツールバー（[ページが選択されている](#selecting-your-page-for-further-action)場合）
+
       ![「プロパティ」ボタン](/help/sites-cloud/authoring/assets/properties.png)
 
    1. ページのプロパティが表示されます。必要に応じて変更を加え、「保存」を使用してそれらを保持します。
@@ -212,6 +216,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       * 該当するリソースの[クイックアクション（カード表示／デスクトップのみ）](#quick-actions-card-view-desktop-only)
       * （[ページが選択されている](#selecting-your-page-for-further-action)場合）ツールバー（「[後で公開する](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)」にアクセスすることもできます）
+
       ![「クイック公開」ボタン](/help/sites-cloud/authoring/assets/quick-publish.png)
 
 
@@ -237,6 +242,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    * 必要なリソースの[クイックアクション（カード表示／デスクトップのみ）。](#quick-actions-card-view-desktop-only)
    * ツールバー（[ページが選択されている](#selecting-your-page-for-further-action)場合）
+
    以降の操作は、アクションに応じて、次のようになります。
 
    * コピー：
@@ -282,7 +288,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ページの[バージョン](/help/sites-cloud/authoring/features/page-versions.md)を作成するには：
 
-1. タイムラインレールを開くには、（**[ページ選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**の前または後に）ツールバーアイコンを使用して「[タイムライン](#selecting-your-page-for-further-action)」を選択します。
+1. タイムラインレールを開くには、（**[ページ選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**&#x200B;の前または後に）ツールバーアイコンを使用して「[タイムライン](#selecting-your-page-for-further-action)」を選択します。
 
    ![「タイムライン」表示オプション](/help/sites-cloud/authoring/assets/timeline.png)
 
@@ -296,7 +302,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 ページのバージョンの復元と比較では、使用する基本的なメカニズムは同じです。
 
-1. （**[ページ選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**の前または後に）ツールバーアイコンを使用して「[タイムライン](#selecting-your-page-for-further-action)」を選択します。
+1. （**[ページ選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)**&#x200B;の前または後に）ツールバーアイコンを使用して「[タイムライン](#selecting-your-page-for-further-action)」を選択します。
 
    ![「タイムライン」表示オプション](/help/sites-cloud/authoring/assets/timeline.png)
 
