@@ -1,24 +1,24 @@
 ---
-title: WKND SPAプロジェクト
-description: SPAの開発に没頭し、プロジェクトの設定、コンポーネントのマッピング、フロントエンド開発ツール、アプリケーションのルーティングを通じて、ReactとAngularの両方を使用して独自のSPAを実装します。
+title: WKND SPA プロジェクト
+description: 複数のパートで構成されているこのチュートリアルを実行すると、プロジェクトの設定、コンポーネントのマッピング、フロントエンド開発ツール、アプリケーションのルーティングなどを理解して、React と Angular の両方で独自の SPA を実装できるようになります。このチュートリアルを活用して SPA 開発に習熟 してください。
 translation-type: tm+mt
 source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
 workflow-type: tm+mt
 source-wordcount: '151'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# WKND SPAプロジェクト {#wknd-spa-project}
+# WKND SPA プロジェクト {#wknd-spa-project}
 
-SPAの開発に没頭し、プロジェクトの設定、コンポーネントのマッピング、フロントエンド開発ツール、およびアプリケーションのルーティングを通じて独自のSPAを実装できるマルチパートチュートリアルをご利用ください。
+複数のパートで構成されているこのチュートリアルを実行すると、プロジェクトの設定、コンポーネントのマッピング、フロントエンド開発ツール、アプリケーションのルーティングなどを理解して、独自の SPA を実装できるようになります。このチュートリアルを活用して SPA 開発に習熟しください。
 
-![WKND SPAプロジェクト](assets/wknd-spa-project.png)
+![WKND SPA プロジェクト](assets/wknd-spa-project.png)
 
-AEM WKND Tutorialと同様、このSPAに焦点を当てた対応オファーは、アプリケーションルーティングを通じてプロジェクトの設定から、AEMで編集可能な、独自のシングルページアプリを作成するエンドツーエンドの例です。
+AEM WKND チュートリアルと同様に、SPA に的を絞ったこのチュートリアルでは、編集可能な独自の単一ページアプリケーションを AEM で作成する包括的な例を示します。プロジェクトの設定から始まり、アプリケーションのルーティングまでを紹介します。
 
-* [AEMで最初のAngular SPAを作成する](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [AEMでの最初のリアクトSPAの作成](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [AEM での Angular SPA の作成（チュートリアル）](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [AEM での React SPA の作成（チュートリアル）](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/spa-react-tutorial/overview.html)
 
-ただし、AEM向けの独自のSPAプロジェクトを開始する前に、AEM [ドキュメント用のSPAの](developing.md) 開発を確認することもできます。
+AEM 対応の独自の SPA プロジェクトを開始する前に、[AEM 対応 SPA の開発](developing.md)のドキュメントに目を通すことをお勧めします。
