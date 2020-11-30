@@ -22,8 +22,8 @@ AEM では、アカウントおよびオーサー環境の特定項目を設定�
 
 **ユーザー**&#x200B;設定ダイアログでは、次の機能にアクセスできます。
 
-* 次のユーザーとして動作
-   * 「次のユーザーとして動作」機能を使用すると、ユーザーは別のユーザーに成り代わって作業をおこなうことができます。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
+* 次のユーザーとして操作
+   * 「次のユーザーとして操作」機能を使用すると、ユーザーは別のユーザーに成り代わって作業をおこなうことができます。<!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
 * プロファイル
    * ユーザー設定への便利なリンクを提供します。<!--Offers a convenient link to your [user settings](/help/sites-administering/security.md))-->
 * [環境設定](#my-preferences)
