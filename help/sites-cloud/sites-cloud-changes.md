@@ -1,11 +1,11 @@
 ---
-title: AEM Sites as a Cloud Service の主な変更点
-description: 'AEM Sites as a Cloud Service の主な変更点 '
+title: AEM Cloud Service の AEM Sites の主な変更点
+description: 'AEM Cloud Service の AEM Sites の主な変更点 '
 translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 91%
 AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud Service プラットフォームの一部として、エクスペリエンス管理機能を提供します。AEM Sites as a Cloud Service には、AEM as a Cloud Service の主なメリット（クラウドネイティブの拡張性、稼動時間、最新状態の維持など）に加え、Sites 固有の変更や追加も数多く含まれています。
 
 >[!NOTE]
->このドキュメントでは、AEM Sites as a Cloud Service の主な変更点について重点的に説明します。Cloud ServiceとしてのAEMおよびその他のモジュールに関する一般的な変更点については、以下を参照してください。
+>このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
->* AEMのCloud Serviceとしての [概要 — 新機能と違い](/help/overview/what-is-new-and-different.md)
+>* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
 >* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
->* [Cloud ServiceとしてのAEMに対する注目すべき変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+>* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
->* [Cloud ServiceとしてのAEM Assetsの導入](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+>* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
+>* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
 
 
 AEM Sites as a Cloud Service の変更点と追加機能は次のとおりです。
@@ -46,9 +46,9 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 
-新しい AEM 参照サイト [WKND](https://wknd.site/) が更新および公開されて、AEM で Web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。新しい参照サイトと[付属のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)では、プロジェクトのセットアップ、コアコンポーネント、編集可能テンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックを扱っています。
+新しい AEM 参照サイト [WKND](https://wknd.site/) が更新および公開されて、AEM で Web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。新しい参照サイトと[付属のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)では、プロジェクトのセットアップ、コアコンポーネント、編集可能テンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックを扱っています。
 
-これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。今後、参照サイトはデフォルトではインストールされなくなります。代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリ](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)が提供されます。
+これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。今後、参照サイトはデフォルトではインストールされなくなります。代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリ](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)が提供されます。
 
 ## 実行時に使用できない機能 {#capabilities-not-available-at-runtime}
 
