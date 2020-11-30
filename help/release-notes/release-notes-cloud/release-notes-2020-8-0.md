@@ -1,73 +1,73 @@
 ---
-title: Cloud Serviceの2020.8.0リリース [!DNL Adobe Experience Manager] のリリースノート。
-description: '[!DNLAdobe Experience Manager] 2020.8.0のCloud Serviceリリースノートとして。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート.'
 translation-type: tm+mt
 source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 12%
+source-wordcount: '1050'
+ht-degree: 100%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート {#release-notes}
 
 Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノートの概要を次に説明します。
 
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### [!DNL Sites] の新機能 {#what-is-new-sites}
 
-* ページとサブページ（ページツリー）を以前のバージョンに [復元する機能](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)。
+* [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)機能。
 
-* AEM [SPA Editorで起動を](/help/sites-cloud/authoring/launches/overview.md) 作成する機能 [。](/help/implementing/developing/spa/introduction.md)
+* AEM [SPA エディター](/help/implementing/developing/spa/introduction.md)で[ローンチを作成](/help/sites-cloud/authoring/launches/overview.md)する機能。
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* アセットマイクロサービスでビデオのトランスコードがサポートされるようになりました。 「 [!UICONTROL 処理プロファイル] 」設定の新しい節では、ビデオのビットレートとサイズを設定できます。 出力形式は、H.264コーデックを使用したMP4です。 For details, see [manage video assets](/help/assets/manage-video-assets.md#transcode-video). その他のトランスコードオプションおよびビデオ配信については、 [!DNL Dynamic Media] アドオンを使用します。
+* アセットマイクロサービスでビデオのトランスコーディングがサポートされるようになりました。[!UICONTROL 処理プロファイル]設定の新しいセクションで、ビデオのビットレートとサイズを設定できます。出力形式は、H.264 コーデックを使用した MP4 です。詳しくは、[ビデオアセットの管理](/help/assets/manage-video-assets.md#transcode-video)を参照してください。その他のトランスコーディングオプションとビデオ配信については、[!DNL Dynamic Media] アドオンを使用してください。
 
-* 新しい [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。 と手動で統合する必要はありま [!DNL Adobe Developer Console]せん。 既存のデプロイメントでは、管理者は以前と同様にスマートタグ統合 [](/help/assets/smart-tags-configuration.md#aio-integration) を設定します。
+* 新しい Adobe [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。[!DNL Adobe Developer Console] と手動で統合する必要はありません。既存のデプロイメントでは、管理者が以前と同様に[スマートタグ統合の設定](/help/assets/smart-tags-configuration.md#aio-integration)をおこないます。
 
-* 新しい [アセットのダウンロードエクスペリエンス](/help/assets/download-assets-from-aem.md) :
+* 新しい[アセットダウンロードエクスペリエンス](/help/assets/download-assets-from-aem.md)には以下の特長があります。
 
-   * 大規模なダウンロードの場合は非同期的にダウンロードするので、ユーザーが待つ必要がありません。
-   * 開発者向けの拡張機能用の新しいモジュラーAPI。
+   * 大規模なダウンロードの場合は非同期的にダウンロードするので、ユーザーは待つ必要がない。
+   * 新しいモジュラー API を使用して開発者が機能を拡張できる。
 
-* アセットマイクロサービスのメタデータ抽出のパフォーマンスが向上しました。 アセット取り込みの全体的なスループットが向上します。
+* アセットマイクロサービスのメタデータ抽出のパフォーマンスが向上しました。アセット取り込みの全体的なスループットが向上しました。
 
-* 処理プロファイルを使用して、Compute Serviceを使用してカスタムメタデータを生成します。 詳しくは、処理プロファイルを使用した [カスタムメタデータを参照してください](/help/assets/manage-metadata.md#metadata-compute-service)。
+* 処理プロファイルを使用して、Compute Service でカスタムメタデータを生成できます。詳しくは、[処理プロファイルを使用したカスタムメタデータ](/help/assets/manage-metadata.md#metadata-compute-service)を参照してください。
 
-* 管理者が設定できる、Brand Portalユーザー向けのよりシンプルなダウンロード操作です。 「 [ダウンロードエクスペリエンスの概要](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)」を参照してください。
+* 管理者が設定できる、Brand Portal ユーザー向けのよりシンプルなダウンロードエクスペリエンスが提供されます。詳しくは、[ダウンロードエクスペリエンスの概要](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)を参照してください。
 
-* ネイティブおよび高品質のPDFドキュメントプレビューがBrand Portalで使用できるようになりました。 「 [ドキュメントビューアの概要](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)」を参照してください。
+* ネイティブで高品質な PDF ドキュメントプレビューが Brand Portal で使用できるようになりました。詳しくは、[ドキュメントビューアの概要](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)を参照してください。
 
-* CDN(コンテンツ配信ネットワーク)キャッシュをAEM内から直接無効にできるよう [!DNL Dynamic Media] になりました(これは、を使用する場合とは異なり [!DNL Dynamic Media Classic]ます)。 これにより、最新のアセットが数時間から数分以内に提供されます。 詳しくは、ダイナミックメディアを使用したCDNキャッシュの [無効化を参照してください](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
+* （[!DNL Dynamic Media Classic] を使用するのではなく）AEM の [!DNL Dynamic Media] から直接 CDN（コンテンツ配信ネットワーク）キャッシュを無効にできるようになりました。これにより、最新のアセットが数時間ではなく数分以内に提供されます。詳しくは、[Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)を参照してください。
 
-* のユーザーインターフェイスコントロール、ナビゲーション、参照、および検索の操作に、アクセシビリティのサポートが強化され [!DNL Assets]ました。
+* [!DNL Assets] のユーザーインターフェイスコントロール、ナビゲーション、参照、検索の操作に、アクセシビリティのサポートが強化されました。
 
-   * 「 [!UICONTROL 追加レンディション] 」オプションを選択した後にEscキーを押すと、フォーカスがツールバーに戻ります。 <!-- via CQ-4293594-->
-   * 電子メールコンボボックスを使用する場合、キーボードフォーカスが期待どおりに機能します。 <!-- via CQ-4286215 -->
-   * 検索フィルターセクションのアコーディオン要素は、標準の拡大可能なアコーディオンとして解釈されます。 <!-- via CQ-4273103 -->
-   * タグをアセットに適用すると、タグがツリー要素として表示されます。 ARIA属性は、ツリー要素に適用され、現在アクセス可能になっています。 <!-- via CQ-4272964 -->
+   * 「[!UICONTROL レンディションを追加]」オプションを選択した後に Esc キーを押すと、フォーカスがツールバーに戻ります。<!-- via CQ-4293594-->
+   * 電子メールコンボボックスを使用している場合、キーボードフォーカスが期待どおりに機能します。<!-- via CQ-4286215 -->
+   * 検索フィルターセクションのアコーディオン要素は、標準の拡大可能なアコーディオンとして解釈されます。<!-- via CQ-4273103 -->
+   * タグをアセットに適用すると、タグがダイアログボックスにツリー要素として表示されます。ARIA 属性はツリー要素に適切に適用されて、アクセス可能になりました。<!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] 2.0.3リリースがリリースされました。 6.5.5 Service Packとの互換性が向上し [!DNL Experience Manager] 、クライアントOSの互換性リストが更新されました。 [!DNL Windows] 7および10.14より前の [!DNL macOS] バージョンはサポートされません。
+* [!DNL AEM Desktop app] 2.0.3 リリースがリリースされました。[!DNL Experience Manager] 6.5.5 サービスパックとの互換性が向上し、クライアント OS の互換性リストが更新されました。[!DNL Windows] 7 とバージョン 10.14 より前の [!DNL macOS] はサポートされていません。
 
-### 修正されたバグ [!DNL Assets] {#bugs-fixed}
+### [!DNL Assets] で修正されたバグ {#bugs-fixed}
 
-* 関連付けと非関連付けのオプションを初めてクリックした場合に応答しない。 （CQ-4299022）
-* アセットをダウンロードする際に、電子メールで受信するオプションを選択した場合、電子メールは送信されません。 （CQ-4299146）
+* 「関連付け」と「関連付けを解除」のオプションが、初めてクリックしたときに応答しない。（CQ-4299022）
+* アセットをダウンロードする際に電子メールで受け取るオプションを選択した場合、電子メールが送信されない。（CQ-4299146）
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* 製品コンソール機能が使用できるようになりました。 これにより、AEMのマーケターや作成者は、コマースバックエンドに保存されているカテゴリや製品を表示してナビゲートできます。 製品コンソールでのカテゴリおよび製品のプロパティのサポートも提供されました。
+* 製品コンソール機能が使用できるようになりました。これにより、AEM でマーケターや作成者が、コマースバックエンドに保存されているカテゴリや製品を表示したりナビゲートしたりできます。製品コンソールでカテゴリや製品のプロパティもサポートされるようになりました。
 
-* 製品とカテゴリの選択機能が強化され、マーケティング担当者はSKUを使用して製品を選択したり、カテゴリIDを使用してカテゴリを選択したりできるようになりました。
+* 製品およびカテゴリピッカーが改善されて、マーケターが SKU で製品を選択したり、カテゴリ ID でカテゴリを選択したりできるようになりました。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -77,19 +77,19 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### 新機能 {#what-is-new-cloud-manager}
 
-* 「コンテンツ監査」は、Cloud Managerサイト実稼働パイプラインで有効になる機能です。 Sitesを使用するプログラムの実稼働パイプライン設定に、「 **Content Audit**」という名前の3番目のタブが含まれるようになりました。 実稼働パイプラインを実行するたびに、カスタム機能テストの後、新しいContent Auditステップがパイプラインに含まれます。このステップは、パフォーマンス、SEO(Search Engine Optimization)、アクセシビリティ、ベストプラクティス、PWA(Progressive Web App)など、多数の次元に対してサイトを評価します。
+* コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼働パイプラインを実行するたびに、パイプライン内のカスタム機能テストの後に新しいコンテンツ監査ステップが含まれるようになります。このステップでは、パフォーマンス、SEO（検索エンジン最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ Web アプリ）などの多数のディメンションに照らしてサイトを評価します。
 
 
    >[!NOTE]
-   >「コンテンツ監査」は、「エクスペリエンス監査」に名称変更されました。
+   >「コンテンツ監査」は、「エクスペリエンス監査」に名称が変更されました。
 
-   Refer to [Experience Audit Testing](/help/implementing/cloud-manager/experience-audit-testing.md) for more details.
+   詳しくは、[エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)を参照してください。
 
-* アセットプログラムーで新しく作成した環境が、Smart Content Servicesで自動的に設定されるようになりました。
+* Assets プログラムで新しく作成した環境が、スマートコンテンツサービスで自動的に設定されるようになりました。
 
-* 休止状態の環境は、Cloud Managerの **概要** ページで非冬眠にできます。
+* 休止状態の環境を Cloud Manager の&#x200B;**概要**&#x200B;ページで休止解除できます。
 
-* Google Lighthouseによるページに対してエクスペリエンスチェックを実行する機能。 Cloud Managerのパイプラインの一部として、エクスペリエンスKPIに対して最大25のページをチェックして検証でき、スコアがCloud Manager UIに表示されます。
+* Google Lighthouse を活用したエクスペリエンスチェックをページに対して実行できます。Cloud Manager パイプラインの一環として、最大 25 ページをエクスペリエンス KPI に照らしてチェックおよび検証でき、そのスコアが Cloud Manager UI に表示されます。
 
 ### バグ修正 {#bug-fixes-cm}
 
@@ -101,46 +101,46 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 内部通信の問題が原因で、パイプラインの実行が&#x200B;*停止*&#x200B;することがあります。
 
-* 新しい組織をプロビジョニングすると、システム管理者以外の管理者ロールを持つ一部のユーザーに、誤ってCloud Managerへのアクセス権が与えられました。
+* 新しい組織をプロビジョニングするときに、システム管理者以外の管理者ロールを持つ一部のユーザーに、Cloud Manager へのアクセス権が誤って付与されていました。
 
-* 特定の条件下で、更新インデックスジョブが複数回並行して開始され、展開エラーが発生しました。
+* 特定の条件下で、インデックス更新ジョブが複数回並行して開始された結果、デプロイメントエラーが発生していました。
 
 * プログラムカードのツールチップの一貫性が適切に保てていませんでした。
 
-* ユーザーインターフェイスで、削除中に環境に対して操作を試行することが誤って許可されました。
+* ユーザーインターフェイスで、削除中の環境に対して誤って操作を試行できていました。
 
-* There was a color mismatch on the Cloud Manager&#39;s **Overview** page.
+* Cloud Manager の&#x200B;**概要**&#x200B;ページで、色が一致していませんでした。
 
 ### 既知の問題 {#known-issues-cm}
 
-* 無効なページは、コンテンツ監査平均スコアが本来の値を下回る場合に含まれます。
+* コンテンツ監査平均スコアは、無効なページが含まれているので本来の値を下回っています。
 
-* 「コンテンツ監査」タブに、発行ドメインではなく作成者ドメインを使用したベースURLが正しく表示されません。
+* 「コンテンツ監査」タブに、パブリッシュドメインではなくオーサードメインを使用したベース URL が誤って表示されます。
 
-* コンテンツ監査手順をアクティブにするには、ユーザーはパイプラインを編集し、必要に応じてページを追加する必要があります。 ページが追加されない場合、ホームページは監査されます。
+* コンテンツ監査ステップをアクティブにするには、ユーザーがパイプラインを編集し、必要に応じてページを追加する必要があります。ページが追加されない場合は、ホームページが監査されます。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-このセクションでは、新機能とコンテンツ転送ツールリリースv1.0.4の更新点について説明します。
+コンテンツ転送ツールリリース v1.0.4 の新機能と更新点については、このセクションを参照してください。
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツ転送ツールで共有S3 DataStoreがサポートされるようになりました。
+* コンテンツ転送ツールで共有 S3 データストアがサポートされるようになりました。
 
 ### バグ修正 {#ctt-bug-fixes}
 
-* アクションを完了するための追加のタイムアウトが追加されました。
+* ツールがアクションを完了するためのタイムアウトが追加されました。
 
-* 以前のバージョンのUIで、ログにエラーが表示されていたにもかかわらず、正常に抽出されたことがありました。
+* 旧バージョンの UI で、ログにエラーが示されているにもかかわらず、正常な抽出として表示されることがありました。
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
-この節では、コードリファクタリングツールの新機能と更新点について説明します。
+コードリファクタリングツールの新機能と更新点については、このセクションを参照してください。
 
 ### 新機能 {#what-is-new-refactoring}
 
-* AIO-CLIプラグインは、コードリファクタリングツールの統合を目的としてリリースされ、開発者がコードリファクタリングツールを1か所から呼び出して実行できるようになりました。 Refer to [Git Resource: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) for more details.
+* コードリファクタリングツールを統合するための AIO-CLI プラグインがリリースされ、開発者がコードリファクタリングツールを一元的に呼び出して実行できるようになりました。詳しくは、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) を参照してください。
 
-* AEM Dispatcher Converterが拡張され、オンプレミス設定とAdobe Managed Services Dispatcher設定の、Cloud Service互換のディスパッチャー設定としてのAEMへの変換がサポートされるようになりました。 詳しくは、 [Gitリソースを参照してください。AEMCloud Serviceディスパッチャーコンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) （英語）を参照してください。
+* AEM Dispatcher コンバーターが拡張されて、オンプレミス設定と Adobe Managed Services Dispatcher 設定を、AEM as a Cloud Service と互換性のある Dispatcher 設定に変換できるようになりました。詳しくは、[Git リソース：AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) を参照してください。
 
-* AEM Dispatcher Converterは、AIO-CLIプラグインに再書き込み ` node.js ` され、統合されています。
+* AEM Dispatcher コンバーターが ` node.js ` で書き換えられ、AIO-CLI プラグインと統合されました。
