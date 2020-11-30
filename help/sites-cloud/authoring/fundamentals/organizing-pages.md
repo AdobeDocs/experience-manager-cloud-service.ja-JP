@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
 source-wordcount: '2554'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 98%
 
 Web サイトの構造は、コンテンツページを保持するツリーと見なすことができます。これらのコンテンツページの名前は、URL の作成に使用されます。一方、タイトルは、ページコンテンツを表示したときに表示されます。
 
-以下に、[WKND チュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)サイトの例です。このサイトでは、スケートボード場（`la-skateparks`）に関する記事にアクセスします。
+以下に、[WKND チュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)サイトの例です。このサイトでは、スケートボード場（`la-skateparks`）に関する記事にアクセスします。
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -93,7 +93,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 >
 >また、一部のブラウザー（IE の旧バージョンなど）では、特定の長さまでの URL しか受け付けないので、ページ名を短くしておく技術的な理由もあります。
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/implementing/developing/introduction/naming-conventions.md) imposed by AEM and the JCR.
+[新しいページを作成するとき、AEM では AEM と JCR によって課された規則に基づいてページ名が検証されます。](/help/implementing/developing/introduction/naming-conventions.md)
 
 使用できる最低限の文字は次のとおりです。
 
@@ -362,7 +362,7 @@ AEM では、名前変更または移動がおこなわれるページへの内�
 
 >[!NOTE]
 >
->ページは、ページが基にしているテンプレートが許可される場所にのみ移動できます。See [Template Availability](/help/implementing/developing/components/templates.md#template-availability) for more information.
+>ページは、ページが基にしているテンプレートが許可される場所にのみ移動できます。詳しくは、[使用可能なテンプレート](/help/implementing/developing/components/templates.md#template-availability)を参照してください。
 
 #### 非同期アクション {#asynchronous-actions}
 
