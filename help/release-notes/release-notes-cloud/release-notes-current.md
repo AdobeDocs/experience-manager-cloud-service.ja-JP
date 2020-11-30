@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 05184bbf507fe84ffb69da90502190b1a2793ee3
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 10%
+ht-degree: 17%
 
 ---
 
 
-# Release Notes for [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
 
 The following section outlines the general Release Notes for [!DNL Experience Manager] as a Cloud Service.
 
@@ -21,7 +21,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### What is new in [!DNL Sites] {#what-is-new-sites}
+### [!DNL Sites] の新機能 {#what-is-new-sites}
 
 <!-- add when release done: * **Core Components 2.12.0**: With Core Components being on auto-update, benefit from the latest improvements contributed by the community. See list of changes since 2.11.1: Release Notes -->
 
@@ -31,7 +31,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### What is new in [!DNL Assets] {#what-is-new-assets}
+### [!DNL Assets] の新機能 {#what-is-new-assets}
 
 * **[!DNL Adobe Sensei]powered video smart tagging**:AIモデルを利用して、オブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAMユーザーは、タグの追加に費やす時間を短縮し、公開されたリッチ情報を利用して顧客に適切なエクスペリエンスを提供できます。 詳しくは、 [スマートタグビデオアセット](/help/assets/smart-tags-video-assets.md)。
 
@@ -52,7 +52,7 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 * 最新のCIFコアコンポーネントバージョンv1.4.0を含むCIFベニアリファレンスサイト — 2020.10.2をリリースしました。詳細は、『 [CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) 』を参照してください。
 
-* CIFコアコンポーネントv1.4.0をリリースしました。詳しくは、「 [CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) 」を参照してください。
+* CIF コアコンポーネント v1.4.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0)」を参照してください。
 
 ### バグ修正 {#bug-fixes-commerce}
 
@@ -67,10 +67,10 @@ The Release Date for [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.
 
 AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12日です。
 
-### What is new in [!DNL Cloud Manager] {#what-is-new-cm}
+### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
 * 新しいメニューオプション **「ローカルログイン** 」が、 **環境カードおよび** 環境 **** 概要ページの環境メニューオプションから利用できるようになりました。
-Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environments.md##login-locally) for more details.
+詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md##login-locally)を参照してください。
 
 * The **Learn** tab in Cloud Manager has been refreshed with new images in the UI.
 
@@ -81,7 +81,7 @@ Refer to [Managing Environments](/help/implementing/cloud-manager/manage-environ
 * コードスキャン時に SonarQube プロセスが起動しないことがあります。これが自動検出され、再起動が試行されるようになりました。
 * 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
 
-## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
+## Adobe Experience Manager as a Cloud Service の基礎 {#cloud-service-foundation}
 
 ### ワークフロー {#workflows}
 
@@ -105,7 +105,7 @@ Follow this section to learn about what is new and the updates for [Content Tran
 
 Best Practices Analyzerのリリース日は2020年11月14日です。
 
-### What is new in [!DNL Best Practices Analyzer] {#what-is-new-bpa}
+### [!DNL Best Practices Analyzer] の新機能 {#what-is-new-bpa}
 
 * Cloud Readiness Analyzerは、BPA (Best Practices Analyzer)になりました。 BPAは、現在のAEM実装のベストプラクティスの評価を提供し、既存のAEMインスタンスからAEMにCloud Serviceとして移行する準備を評価するのに役立ちます。
 
