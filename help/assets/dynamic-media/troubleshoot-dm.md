@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: a0b4f04aaafbaef86728c8bd23cc026f43c72dde
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Dynamic Media のトラブルシューティング {#troubleshooting-dynamic-media-scene-mode}
 
-次のトピックでは、ダイナミックメディアのトラブルシューティングについて説明します。
+以下のトピックでは、Dynamic Media のトラブルシューティングについて説明します。
 
-## 新しいダイナミックメディア設定 {#new-dm-config}
+## 新しい Dynamic Media 設定 {#new-dm-config}
 
-新しいダイナミックメディア設定の [トラブルシューティングを参照してください。](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)
+「[新しい Dynamic Media 設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)」を参照してください。
 
 ## 一般（すべてのアセット）{#general-all-assets}
 
@@ -209,11 +209,11 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
      </li>
      <li>次のアクションを順に選択します。
       <ol>
-       <li>同期フォルダーを削除します。</li>
-       <li>プリセットフォルダを選択(下 <code>/conf</code>)
-       <li>DMセットアップ非同期ジョブをトリガします。</li>
+       <li>「Sync」フォルダーを削除します。</li>
+       <li>「Preset」フォルダーを選択します（下 <code>/conf</code>）。
+       <li>DM セットアップ非同期ジョブをトリガします。</li>
       </ol> </li>
-     <li>AEM受信トレイで同期が成功したという通知が表示されるまで待ちます。
+     <li>AEM 受信トレイで同期が成功したという通知が表示されるまで待ちます。
      </li>
     </ol> </td>
   </tr>
