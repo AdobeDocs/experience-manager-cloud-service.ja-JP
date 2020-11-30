@@ -1,22 +1,22 @@
 ---
-title: コード品質テスト —Cloud Services
-description: コード品質テスト —Cloud Services
+title: コード品質テスト - Cloud Services
+description: コード品質テスト - Cloud Services
 translation-type: tm+mt
 source-git-commit: ba20916bf6048cb7dff054d9c10f6e1606ae8506
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # コード品質テスト {#code-quality-testing}
 
-コード品質テストは、アプリケーションコードの品質を評価します。 これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。
+コード品質テストでは、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。
 
-様々なタイプのパイプラインの詳細については、[CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)を参照してください。
+様々なタイプのパイプラインの詳細については、「[CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)」を参照してください。
 
-## Understanding Code Quality Rules {#understanding-code-quality-rules}
+## コード品質テストについて{#understanding-code-quality-rules}
 
 コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)と呼ばれます。
 
@@ -25,17 +25,17 @@ ht-degree: 83%
 
 **三段門**
 
-このコード品質テスト手順では、特定された問題に対して3層の構造を使用します。
+このコード品質テスト手順では、特定された問題に対して 3 層の構造を使用します。
 
 * **重大** - これらはゲートで特定される問題のうち、パイプラインの即時失敗につながるものです。
 
 * **重要** - これらはゲートで特定される問題のうち、パイプラインの一時停止につながるものです。デプロイメントマネージャー、プロジェクトマネージャーまたはビジネスオーナーは、問題をオーバーライドできます。この場合、パイプラインは続行されます。または、問題を承認できます。この場合、パイプラインはエラーで停止します。
 
-* **情報**:これらの問題は、ゲートによって識別される問題で、純粋に情報提供の目的で提供され、パイプラインの実行に影響を与えません。
+* **情報** - これらはゲートで特定される問題のうち、情報提供だけを目的とするもので、パイプラインの実行には影響しません。
 
-The results of this step is delivered as *Ratings*.
+この手順の結果は、*評価*&#x200B;として提供されます。
 
-次の表に、「重要」、「重要」、「情報」の各カテゴリの評価と失敗のしきい値を示します。
+次の表に、「重大」、「重要」、「情報」の各カテゴリの評価と失敗のしきい値を示します。
 
 | 名前 | 定義 | カテゴリ | 不合格のしきい値 |
 |--- |--- |--- |--- |
@@ -59,7 +59,7 @@ The results of this step is delivered as *Ratings*.
 
 ## 偽陽性の処理 {#dealing-with-false-positives}
 
-品質スキャンプロセスは完璧ではなく、実際には問題がないにもかかわらず問題として誤って特定することもあります。This is referred to as a *false positive*.
+品質スキャンプロセスは完璧ではなく、実際には問題がないにもかかわらず問題として誤って特定することもあります。これは「*偽陽性*」と呼ばれます。
 
 この場合、ルール ID を注釈属性として指定した標準の Java `@SuppressWarnings` 注釈を使用して、ソースコードに注釈を付けることができます。例えば、よくある問題の 1 つとして、ハードコードされたパスワードを検出する SonarQube ルールにおいて、ハードコードされたパスワードの識別方法が強引な場合があります。
 
@@ -92,4 +92,4 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >`@SuppressWarnings` 注釈をできるだけ具体的にすることをお勧めします。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。ただし、クラスレベルで注釈を付けることもできます。
 
 >[!NOTE]
->明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。 Cloud Serviceでのセキュリティの詳細については、「 [Cloud ServiceとしてのAEMの](/help/security/cloud-service-security-overview.md) セキュリティの概要」を参照してください。
+>明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールはあります。Cloud Service でのセキュリティの詳細については、「 [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)」を参照してください。
