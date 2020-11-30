@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
 workflow-type: tm+mt
 source-wordcount: '71'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 60%
 + [概要](overview.md)
 + [主要な変更点](changes.md)
 + アーキテクチャ {#architecture}
-   + [Magento統合](architecture/magento.md)
+   + [Magento 統合](architecture/magento.md)
    + [サードパーティコマースの統合](architecture/third-party.md)
-+ [はじめに](getting-started.md)
-+ [AEMCloud ServiceSDKを使用した開発](develop.md)
++ [概要](getting-started.md)
++ [AEM Cloud Service SDK を使用した開発](develop.md)
 + 設定 {#configure}
    + [マルチテンプレートの使用](configuring/multi-template-usage.md)
    + [マルチストアの設定](configuring/multi-store-setup.md)
-   + [SEO用のURLの設定](configuring/advanced-url-configuration.md)
+   + [SEO 用の URL の設定](configuring/advanced-url-configuration.md)
    + [キャッシュオプション](configuring/caching.md)
 + カスタマイズ {#customize}
-   + [CIFコンポーネントのスタイル設定](customizing/style-cif-component.md)
-   + [CIFコンポーネントのカスタマイズ](customizing/customize-cif-components.md)
+   + [CIF コンポーネントのスタイル設定](customizing/style-cif-component.md)
+   + [CIF コンポーネントのカスタマイズ](customizing/customize-cif-components.md)
 + [FAQ](faq.md)
