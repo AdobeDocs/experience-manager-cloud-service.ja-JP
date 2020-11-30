@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1511e24cbc4a845b1d7673438b8b7c4171d173e6
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 65%
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe will create an **Organization** identifier for your company in the Adobe I
 
 ## ユーザーの ID タイプ {#user-identity-types}
 
-Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://helpx.adobe.com/enterprise/using/identity.html)を参照して、使用可能ないずれかの ID タイプを使用して Adobe ID を取得する方法の詳細を確認してください。
+Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://helpx.adobe.com/jp/enterprise/using/identity.html)を参照して、使用可能ないずれかの ID タイプを使用して Adobe ID を取得する方法の詳細を確認してください。
 
 ## ユーザーとロール {#users-and-roles}
 
