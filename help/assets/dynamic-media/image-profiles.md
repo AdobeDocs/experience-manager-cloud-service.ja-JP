@@ -16,7 +16,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->画像プロファイルは、PDF、アニメーションGIF、INDD(Adobe InDesign)ファイルには適用されません。
+>イメージプロファイルは、PDF ファイル、アニメーション GIF ファイル、INDD（Adobe InDesign）ファイルには適用されません。
 
 ## 切り抜きツールオプション {#crop-options}
 
