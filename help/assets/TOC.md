@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 78%
+ht-degree: 96%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 78%
 
 + [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [Cloud Service [!DNL Assets] に対する主な変更点](assets-cloud-changes.md)
++ [ [!DNL Assets]  as a Cloud Service の主な変更点](assets-cloud-changes.md)
 + [[!DNL Assets] アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
-+ [アクセシビリティ [!DNL Assets]](accessibility.md)
-+ Manage digital assets {#manage}
++ [ [!DNL Assets]](accessibility.md) のアクセシビリティ
++ デジタルアセットの管理{#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
    + [アセットマイクロサービスの基本](asset-microservices-configure-and-use.md)
@@ -32,10 +32,10 @@ ht-degree: 78%
    + [画像のスマートタグ](smart-tags.md)
    + [ビデオアセットのスマートタグ付け](smart-tags-video-assets.md)
    + [アセットの整理方法](organize-assets.md)
-   + [aemでの [!DNL Adobe Stock] ユーザーセット](aem-assets-adobe-stock.md)
+   + [AEM での  [!DNL Adobe Stock]  アセットの使用](aem-assets-adobe-stock.md)
    + [コレクションの管理](manage-collections.md)
    + [メタデータの概要](manage-metadata.md)
-   + [統合対象 [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md)
+   + [ [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md) との統合
    + [メタデータの追加と編集](meta-edit.md)
    + [フォルダーのアセットとコレクションのレビュー](bulk-approval.md)
    + [アセットインサイトの使用と設定](assets-insights.md)
@@ -44,17 +44,17 @@ ht-degree: 78%
    + [ビデオアセットの管理](manage-video-assets.md)
    + [アセットのダウンロード](download-assets-from-aem.md)
    + [編集するアセットのチェックアウトとチェックイン](check-out-and-submit-assets.md)
-   + [アセットの Digital Rights Management](drm.md)
-   + [透かしアセット](watermark-assets.md)
-+ Configure, administer and extend [!DNL Assets] {#admin}
-   + [開発者向けドキュメントおよびAPIのリファレンス](developer-reference-material-apis.md)
+   + [アセットのデジタル著作権管理](drm.md)
+   + [アセットへの透かしの適用 ](watermark-assets.md)
++ [!DNL Assets] の設定、管理、拡張 {#admin}
+   + [開発者向けドキュメントと API リファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
-   + [画像とビデオのプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
+   + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
    + [画像のスマートタグの設定](smart-tags-configuration.md)
    + [多言語アセットと翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
-   + [コンテンツフラグメントはアセットHTTP APIでサポート](content-fragments/assets-api-content-fragments.md)
+   + [Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
@@ -62,8 +62,8 @@ ht-degree: 78%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Assets] 設定 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [アセットの公開先 [!DNL Brand Portal]](publish-to-brand-portal.md)
+   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
+   + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
@@ -110,9 +110,9 @@ ht-degree: 78%
    + [Web アプリケーションへの URL のリンク](dynamic-media/linking-urls-to-yourwebapplication.md)
    + [ルールセットを使用した URL の変換](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media アセットの公開](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [ダイナミックメディアでの一部のみの公開の操作](dynamic-media/selective-publishing.md)
-   + [ダイナミックメディアを使用したCDNキャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Dynamic Media Classicを使用したCDNキャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Dynamic Media での選択的公開の操作](dynamic-media/selective-publishing.md)
+   + [Dynamic Media を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Dynamic Media Classic を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [DHTML ビューアのサポート終了に関する FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash ビューアのサポート終了に関する通知](dynamic-media/flash-viewers-eol.md)
