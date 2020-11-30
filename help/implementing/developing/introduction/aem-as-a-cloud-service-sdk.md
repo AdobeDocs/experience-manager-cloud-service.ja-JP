@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service の SDK
-description: Cloud Serviceソフトウェア開発キットとしてのAEMの概要
+description: AEM as a Cloud Service ソフトウェア開発キットの概要
 translation-type: tm+mt
 source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -53,7 +53,7 @@ Cloud ServiceSDKとしてのAEMは、カスタムコードを構築しデプロ�
 
 >[!NOTE]
 >
-> SDK のバージョンエントリは、AEM as a Cloud Service のバージョンと一致する必要があります。AEM にログインし、画面の右上隅にある疑問符アイコンに移動して、「**[!UICONTROL Adobe Experience Manager について]**」を選択すると、使用しているバージョンを確認できます。
+>SDK のバージョンエントリは、AEM as a Cloud Service のバージョンと一致する必要があります。AEM にログインし、画面の右上隅にある疑問符アイコンに移動して、「**[!UICONTROL Adobe Experience Manager について]**」を選択すると、使用しているバージョンを確認できます。
 
 
 ## 新しい SDK バージョンでのローカルプロジェクトの更新 {#refreshing-a-local-project-with-a-new-skd-version}
