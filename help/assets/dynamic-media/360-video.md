@@ -115,7 +115,7 @@ Start by uploading 360 Videos.
    * ビデオの上でマウスポインターをドラッグして、静的なシーンの表示角度を変更します。
    * ビデオの&#x200B;**[!UICONTROL 再生]**&#x200B;ボタンをタップして再生を開始します。ビデオの再生中にビデオの上でマウスポインターをドラッグして、表示角度を変更します。
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*360 ビデオのスクリーンショット&#x200B;*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*360 ビデオのスクリーンショット*
 
    * 「ビューア」リストから **[!UICONTROL Video360VR]** をタップします。
 
