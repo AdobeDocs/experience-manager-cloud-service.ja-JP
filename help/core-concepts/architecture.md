@@ -71,7 +71,7 @@ AEMでは、Cloud Serviceとして3種類の環境を使用できます。
 
 * **開発環境**：ステージ環境および実稼動環境と同じランタイム条件で開発者が AEM アプリケーションを実装できます。
 
-   Refer to [Managing Environments](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager) for more details.
+   詳しくは、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)を参照してください。
 
 ## プログラム {#programs}
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service のインスタンスに対する更新はすべて Cloud
 
 Adobe Experience Manager as a Cloud Service では、コンテンツの公開の仕組みが変更されました。AEM as a Cloud Service では、以前のバージョンの AEM で使用されていたレプリケーションフレームワークがページの公開（オーサーインスタンスからパブリッシュインスタンスへの変更内容の移動）に使用されなくなりました。
 
-代わりに、[Sling コンテンツ配布](https://sling.apache.org/documentation/bundles/content-distribution.html)機能を使用して、適切なコンテンツを移動するようになりました。これは、AEM ランタイムの外部にある Adobe I/O で実行されるパイプラインサービスを使用します。
+代わりに、AEM as a Cloud Service は、[Sling コンテンツ配布](https://sling.apache.org/documentation/bundles/content-distribution.html)機能を使用して、適切なコンテンツを移動するようになりました。これは、AEM ランタイムの外部にある Adobe I/O で実行されるパイプラインサービスを使用します。
 
 実行時にパブリッシュノードが追加、削除またはリサイクルされた場合の自動的なセルフサービス設定など、セットアップは自動化されています。
 
