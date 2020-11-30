@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 71%
+ht-degree: 78%
 
 ---
 
@@ -26,14 +26,14 @@ AEMのCloud ManagerのCloud Service2020.7.0のリリース日は2020年7月20日
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
-* Cloud Manager のパイプラインで、カスタマーセットの変数とシークレットがサポートされるようになりました。
+* Cloud Manager のパイプラインで、顧客が設定した変数とシークレットがサポートされるようになりました。
 
 
-   詳細は、「 [パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)」を参照してください。
+   詳細は、「[パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)」を参照してください。
 
-* 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
+* 認証バウンドのプライベート Maven リポジトリーがサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11サポート [の使用](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support) 」を参照してください。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「[Java 11 サポートの使用](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
@@ -55,4 +55,4 @@ AEMのCloud ManagerのCloud Service2020.7.0のリリース日は2020年7月20日
 
 ### 既知の問題 {#known-issues}
 
-* コードカバレッジの計算方法の変更により、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンは 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照するお客様は、コード品質プロセスでエラーメッセージを受け取ります。
+* コードカバレッジの計算方法の変更により、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンは 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照している場合は、コード品質プロセスでエラーメッセージが表示されます。
