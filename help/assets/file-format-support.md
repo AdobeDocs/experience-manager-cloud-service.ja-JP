@@ -3,7 +3,7 @@ title: サポートされているファイル形式と MIME タイプ
 description: File formats and MIME types supported by [!DNL Experience Manager Assets] as a Cloud Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2d858e1cddc67d07dd26dc40663cb4ed2197b02
+source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 93%
@@ -193,7 +193,7 @@ In addition, [!DNL Experience Manager Assets] provides extended support to gener
 | MTS | ✓ | - | ✓ |
 | OGV | ✓ | - | ✓ |
 | QT | ✓ | - | ✓ |
-| R3D | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
 | SWF | ✓ | - | ✓ |
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
