@@ -13,50 +13,50 @@ translation-type: tm+mt
 source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 3%
+ht-degree: 92%
 
 ---
 
 
 # マルチストアの設定 {#multi-store}
 
-AEM CIFコアコンポーネントは複数のAEMサイト構造で使用でき、基盤となるGraphQLクライアントは異なるMagentoストア/ストア表示に接続できます。 これにより、複雑なマルチストア/マルチサイトの設定をプロジェクトに実装できます。
+AEM CIF コアコンポーネントは複数の AEM サイト構造で使用でき、基盤となる GraphQL クライアントの実装は異なる Magento ストア／ストア表示に接続できます。これにより、複雑なマルチストア／マルチサイトの設定をプロジェクトに実装できます。
 
-複数のMagentoストア表示をAdobe Experience Manager Sitesと統合するためのオプションについて詳しく説明するビデオチュートリアルです。
+複数の Magento ストア表示を Adobe Experience Manager Sites と統合するためのオプションについて詳しく説明するビデオチュートリアルです。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-AEM Live Copyのマルチサイト管理機能と言語コピー機能は、Commerce Integration Frameworkと組み合わせて使用し、地域とロケールをまたいでサイトをグローバルに管理します。
+地域とロケールをまたいでサイトをグローバルに管理するために、AEM マルチサイト管理のライブコピー機能および言語コピー機能を Commerce Integration Framework と組み合わせて使用できます。
 
-推奨される設定は、AEMサイトとMagentoストア表示の間に1対1の関係を使用することです。
+推奨される設定は、AEM サイトと Magento ストア表示の間に 1 対 1 の関係を使用することです。
 
-AEMサイトとAEM CIFコアコンポーネントを専用のストア表示に接続するには、次の手順に従います。
+AEM サイトと AEM CIF コアコンポーネントを専用のストア表示に接続するには、次の手順に従います。
 
 ## 設定 {#configuration}
 
-1. 「 [MagentoのWebサイト、店舗、表示」に記載されているパターンに従って、複数の店舗や表示を設定する](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. 「[Magento の Web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)」に記載されているパターンに従って、複数のストアや表示を設定します。
 
-2. AEMとMagento間の接続が動作していることを確認します。
+2. AEM と Magento 間の接続が動作していることを確認します。
 
-3. 次の手順に従って、CIFCloud Service設定の子設定を作成します。
+3. 次の手順に従って、CIF Cloud Service 設定の子設定を作成します。
 
-   * AEMで、ツール/一般/ [設定ブラウザに移動します。](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
-   * 作成したベース設定を選択します
-   * 上記のポイント2で説明した手順を使用して、新しい設定を作成します
+   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 作成したベース設定を選択します。
+   * 上記のポイント 2 で説明した手順を使用して、新しい設定を作成します。
 
-   この新しい設定は、基本の設定の子設定として作成されます。 ツール/一般/設定ブラウザーに移動して、設定を作成できるようになりました。
+   この新しい設定は、基本設定の子設定として作成されます。ツール／一般／設定ブラウザーに移動して、設定を作成できるようになっています。
 
-4. AEMサイトへの子設定の割り当て
+4. AEM Sites に子設定を割り当てます。
 
-   * AEM Sitesコンソールに移動
-   * サイト構造の地域または言語ルート(Veniaサンプルページ _の場合は_ /content/venia/usまたは/content/venia/us/en
-   * ページを選択し、ページのプロパティを開きます
-   * 「詳細設定」タブを選択します。
-   * セクションで、手順で作成した設定を `Configuration` 選択します
+   * AEM Sites コンソールに移動します。
+   * サイト構造の地域または言語ルート（Venia サンプルページの場合は /content/venia/us _または_ /content/venia/us/en）に移動します。
+   * ページを選択し、ページのプロパティを開きます。
+   * 「詳細」タブを選択します。
+   * `Configuration` セクションで、手順で作成した設定を選択します。
 
 ## その他のリソース
 
-* [MagentoWebサイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
-* [AEM CIFコアコンポーネント — マルチストア/サイト設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [マルチサイトマネージャの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Magento Web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [AEM CIF コアコンポーネント - マルチストア／サイト設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
+* [マルチサイトマネージャの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [コンテンツの再利用：マルチサイトマネージャーとライブコピー](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
