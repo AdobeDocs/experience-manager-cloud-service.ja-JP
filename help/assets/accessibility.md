@@ -1,12 +1,12 @@
 ---
-title: アクセシビリティ [!DNL Experience Manager Assets]
-description: 障害を持つユーザーにとって、Cloud Service [!DNL Adobe Experience Manager] のアクセシビリティ機能がどのように役立つかを知る。
+title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
+description: 障害を持つユーザーにとって、 [!DNL Adobe Experience Manager]  as a Cloud Service のアクセシビリティ機能がどのように役立つかを説明します。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 1dc278c85a1dabdd3e6ac4c0de95271d9da3260c
 workflow-type: tm+mt
 source-wordcount: '1918'
-ht-degree: 2%
+ht-degree: 55%
 
 ---
 
@@ -27,18 +27,18 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# Cloud Serviceとしてのアクセシビリティ機能 [!DNL Adobe Experience Manager Assets] の使用 {#accessibility-in-aem-assets}
+# Accessibility features in [!DNL Adobe Experience Manager Assets] as a Cloud Service {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] コンテンツ作成者や発行者は、素晴らしいエクスペリエンスをWeb上で提供できます。 Adobeは、のアクセシビリティを向上させ、障害を持つクリエイターを対象に取り組んでい [!DNL Experience Manager]ます。 このソフトウェアは、あらゆる種類のユーザーのニーズを満たすように継続的に拡張され、視覚、聴覚、運動、または他の障害を持つ個人を含む世界的な標準に準拠しています。
 
 [!DNL Experience Manager] 準拠する規格を説明する準拠情報を公開し、製品のアクセシビリティ機能の概要を示し、準拠レベルを説明します。 アクセシビリティ準拠レポートは、 [!DNL Experience Manager] ユーザーが様々な標準への準拠レベルを理解するのに役立ちます。 で行った機能強化により、すべてのユーザーは、キーボード、スクリーンリーダー、拡大鏡、その他の支援テクノロジーを使用して、簡単にインターフェイスを使用できます。 [!DNL Assets]
 
-[!DNL Experience Manager] は、次の標準に対する様々なレベルのサポートを提供します。
+[!DNL Experience Manager] は、次の標準を様々なレベルでサポートしています。
 
 * [Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/).
 * [再生法第508条を改正](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
 * [Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) by W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
-* [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549).
+* [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)
 
 準拠レベルの詳細を含むレポートを読み取るには、 [アクセシビリティ準拠レポート](https://www.adobe.com/accessibility/compliance.html) (ACR)ページを参照してください。
 
@@ -47,26 +47,26 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ## 支援テクノロジー {#at-support}
 
-障害を持つユーザーは、頻繁にハードウェアとソフトウェアを利用してWebコンテンツにアクセスし、ソフトウェア製品を使用します。 これらのツールは、支援テクノロジーと呼ばれます。 [!DNL Experience Manager Assets] ソフトウェアの主要機能を使用する場合、次の種類の支援テクノロジー(AT)を使用できます。
+障害を持つユーザーは、頻繁にハードウェアとソフトウェアを利用してWebコンテンツにアクセスし、ソフトウェア製品を使用します。 これらのツールは、支援テクノロジーと呼ばれます。[!DNL Experience Manager Assets] ソフトウェアの主要機能を使用する場合、次の種類の支援テクノロジー(AT)を使用できます。
 
 * スクリーンリーダーとスクリーン虫めがね。
 * 音声認識ソフトウェア
-* キーボードの使用 — ナビゲーションとショートカット。
-* スイッチコントロール、更新可能な点字ディスプレイ、その他のコンピュータ入力デバイスを含む支援ハードウェア。
-* UI虫めがねツール
+* キーボードの使用 - ナビゲーションとショートカット
+* スイッチコントロール、更新可能な点字ディスプレイ、その他のコンピュータ入力デバイスを含む支援ハードウェア
+* UI 拡大ツール
 
-## [!DNL Experience Manager Assets] アクセシブルな使用例 {#accessible-assets-use-cases}
+## アクセシブルな [!DNL Experience Manager Assets] の使用例 {#accessible-assets-use-cases}
 
-では、アクセシビリティ機能 [!DNL Experience Manager]は、ユーザーとそのお客様の2つの主要な要件に対応し [!DNL Experience Manager] ています。
+[!DNL Experience Manager] のアクセシビリティ機能は、[!DNL Experience Manager] ユーザーとその顧客の 2 つの主要な要件に対応しています。
 
-* コンテンツデザイナーや制作者にとって、アクセシブルなコンテンツを作成して公開する機能は、顧客やWebサイト訪問者の間でも使用されます。 コンテンツは、支援テクノロジーの支援を受けて障害を持つユーザーが使用できます。 詳しくは、「 [Webアクセシビリティガイドライン](/help/onboarding/accessibility/web-accessibility.md)」を参照してください。
-* [!DNL Experience Manager] また、障害を持つユーザーや管理者は、ユーザーインターフェイスやコントロールにアクセスして、コンテンツの作成と管理を行うこともできます。 障害を持つユーザーは、支援テクノロジーを使用して、この [!DNL Assets] 機能をナビゲート、使用、管理できます。
+* コンテンツデザイナーやクリエーターには、アクセシブルなコンテンツを作成して公開する機能が提供されます。作成されたコンテンツは、顧客や Web サイト訪問者によって使用されます。障害を持つユーザーは、支援テクノロジーを使用してコンテンツを使用できます。詳しくは、「[Web アクセシビリティのガイドライン](/help/onboarding/accessibility/web-accessibility.md)」を参照してください。
+* [!DNL Experience Manager] また、障害を持つユーザーや管理者は、ユーザーインターフェイスやコントロールにアクセスして、コンテンツの作成と管理を行うこともできます。 障害を持つユーザーは、支援テクノロジーを使用して、[!DNL Assets] 機能をナビゲート、使用、管理できます。
 
-の主な機能 [!DNL Assets] は以前よりもアクセスしやすく、定期的に更新され、グローバル標準への準拠が改善されています。 のCRUD操作には、ある程度のアクセシビリティが組み込ま [!DNL Assets] れています。 アセットの追加、管理、検索、配布などのDAMワークフローには、キーボードショートカット、スクリーンリーダーテキスト、カラーコントラストなどの支援を受けてアクセスできます。
+[!DNL Assets] の主な機能は以前よりもアクセスしやすく、定期的にアップデートされており、グローバル標準への準拠が改善されています。The CRUD operations in [!DNL Assets] have some degree of accessibility built into those. アセットの追加、管理、検索、配布などの DAM ワークフローには、キーボードショートカット、スクリーンリーダーテキスト、カラーコントラストなどの支援を受けてアクセスできます。
 
 ## キーボードの使用のサポート {#keyboard-use}
 
-クリック可能なユーザーインターフェイス要素や、ポインターを使用したアクションが可能なユーザーインターフェイス要素の多くは、キーボードを使用して操作することもできます。 キーボードを使用すると、UI要素に焦点を当て、適切なアクションを実行できます。 ユーザーは、キーボードショートカットを使用して、UI要素にフォーカスしなくても、コマンドやアクションを直接トリガーできます。 例えば、ユーザーは、キーボードを使用してユーザーインターフェイスコントロールに移動し、キーボードショートカットを選択することで、左側にアセットのタイムラインを開くこ `Return`とができ `Alt + 2` ます。
+クリックやポインターを使用するユーザーインターフェイス要素の多くは、キーボードを使用して操作することもできます。キーボードを使用して UI 要素にフォーカスし、適切なアクションを実行できます。キーボードショートカットを使用して、UI 要素にフォーカスせずに、コマンドやアクションを直接トリガーすることもできます。For example, users can open the timeline of an asset in the left side by browsing to the user interface control using a keyboard and selecting `Return`, and selecting `Alt + 2` keyboard shortcut.
 
 <!-- TBD items:
 
@@ -76,40 +76,40 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
-### のキーボードショートカット [!DNL Assets] {#keyboard-shortcuts}
+### Keyboard shortcuts in [!DNL Assets] {#keyboard-shortcuts}
 
-の次の操作は、リストに表示されているキーボードショートカット [!DNL Assets] を使用して実行します。 コンソールに適用されるほとんどのキーボードショートカットは、 [!DNL Experience Manager] にも適用され [!DNL Assets]ます。 See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). キーボードショートカットを [有効または無効にする方法を参照してください](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)。
+の次の操作は、リストに表示されているキーボードショートカット [!DNL Assets] を使用して実行します。 Most keyboard shortcuts that apply to [!DNL Experience Manager] Consoles also apply to [!DNL Assets]. See [keyboard shortcuts for Consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md). キーボードショートカットを[有効または無効にする方法](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。
 
 | ユーザーインターフェイスまたはシナリオ | キーボードショートカット | アクション |
 |---|---|---|
-| ユーザーインター [!DNL Assets] フェイスの列表示 | 上向き矢印キーと下向き矢印キー | 同じ階層内のファイルやフォルダーに移動します。 |
-| ユーザーインター [!DNL Assets] フェイスの列表示 | 左向き矢印キーと右向き矢印キー | 現在のフォルダーの上または下のファイルとフォルダーに移動します。 |
-| フォルダの参照 [!DNL Assets] | `/` | Omnisearchボックスを開いて検索を呼び出します。 |
-| [!DNL Assets] コンソール | ` | サイドレールを切り替え |
+| Column view in [!DNL Assets] user interface | 上向き矢印キーと下向き矢印キー | 同じ階層内のファイルやフォルダーに移動します。 |
+| Column view in [!DNL Assets] user interface | 左向き矢印キーと右向き矢印キー | 現在のフォルダーの上または下のファイルとフォルダーに移動します。 |
+| Browsing folders in [!DNL Assets] | `/` | オムニサーチボックスを開いて検索を呼び出します。 |
+| [!DNL Assets] コンソール | ` | サイドパネルを切り替えます。 |
 | [!DNL Assets] コンソール | `Alt + 1` | コンテンツツリーを開きます。 |
 | [!DNL Assets] コンソール | `Alt + 2` | 左側の [!UICONTROL ナビゲーション] (Navigation)パネルを開きます。 |
-| [!DNL Assets] コンソール | `Alt + 3` | 選択したアセットの [!UICONTROL タイムラインを表示] 。 |
+| [!DNL Assets] コンソール | `Alt + 3` | 選択したアセットの[!UICONTROL タイムライン]を表示します。 |
 | [!DNL Assets] コンソール | `Alt + 4` | 選択したアセットのライブコピーの参照を開きます。 |
-| [!DNL Assets] コンソール | `Alt + 5` | 検索を呼び出して、選択したフォルダー内で検索を行います。 |
-| アセットまたはフォルダが選択されている | Backspace | 選択したアセットまたはフォルダーを削除します。 |
-| アセットまたはフォルダが選択されている | `p` | 選択したアセットのプロパティページを開きます。 |
-| アセットまたはフォルダが選択されている | `e` | 選択したアセットを編集します。 |
-| アセットまたはフォルダが選択されている | `m` | 選択したアセットを移動します。 |
-| アセットまたはフォルダが選択されている | `Ctrl + c` | 選択したアセットをコピーします。 |
-| アセットまたはフォルダが選択されている | `Esc` | 選択を解除します。 |
+| [!DNL Assets] コンソール | `Alt + 5` | 検索を呼び出して、選択したフォルダー内で検索をおこないます。 |
+| アセットまたはフォルダーが選択されている | Backspace | 選択したアセットまたはフォルダーを削除します。 |
+| アセットまたはフォルダーが選択されている | `p` | 選択したアセットのプロパティページを開きます。 |
+| アセットまたはフォルダーが選択されている | `e` | 選択したアセットを編集します。 |
+| アセットまたはフォルダーが選択されている | `m` | 選択したアセットを移動します。 |
+| アセットまたはフォルダーが選択されている | `Ctrl + c` | 選択したアセットをコピーします。 |
+| アセットまたはフォルダーが選択されている | `Esc` | 選択を解除します。 |
 | ダイアログボックスが開き、フォーカスがある | `Esc` | ダイアログボックスを閉じます。 |
-| DAM内のフォルダー内 | `Ctrl + v` | コピーしたアセットを貼り付けます。 |
+| DAM 内のフォルダー内 | `Ctrl + v` | コピーしたアセットを貼り付けます。 |
 | [!DNL Assets] コンソール | `Ctrl + A` | すべてのアセットを選択します。 |
 | アセットプロパティページ | `Ctrl + S` | 変更を保存します。 |
-| [!DNL Assets] コンソール | `?` | キーボードショートカットのリストを参照してください。 |
+| [!DNL Assets] コンソール | `?` | キーボードショートカットのリストを表示します。 |
 
-## サインインとユーザーインター [!DNL Assets] フェイスの操作 {#login}
+## サインインと [!DNL Assets] ユーザーインターフェイスの操作 {#login}
 
 ユーザーは、キーボードを使用してログイン先に移動し、サインインフィールドに入力することができます。 ログインページのユーザ名とパスワードの組み合わせが正しくないことに起因するエラーメッセージは、エラーが発生するたびにスクリーンリーダーによって通知されます。
 
-ログイン後、DAMユーザーは、キーボードを使用してユーザーインター [!DNL Assets] フェイス内を移動できます。 左側のパネル、メニュー、ユーザープロファイル、検索バー、ファイルとフォルダー、管理および設定などのユーザーインターフェイス要素は、キーボードを使用して移動できます。 キーボードのナビゲーション順序は、左から右、上から下です。 キーボードを使用してナビゲーションを行う場合、フォーカス時にアクション可能なオプションが、カラーコントラストの高いハイライトで表示され、スクリーンリーダーによってナレーションされます。 メニュー内のフォーカスされたオプションの状態（展開、折りたたみ、混在など）は、必要に応じて、スクリーンリーダーによって通知されます。 また、アクション可能なオプションの目的は、外観やUIの配置などではなく、スクリーンリーダーによって通知されます。
+After logging in, DAM users can navigate within [!DNL Assets] user interface using keyboard. 左側のパネル、メニュー、ユーザープロファイル、検索バー、ファイルとフォルダー、管理および設定などのユーザーインターフェイス要素は、キーボードを使用して移動できます。 キーボードのナビゲーション順序は、左から右、上から下です。キーボードを使用してナビゲーションを行う場合、フォーカス時にアクション可能なオプションが、カラーコントラストの高いハイライトで表示され、スクリーンリーダーによってナレーションされます。 メニュー内のフォーカスされたオプションの状態（展開、折りたたみ、混在など）は、必要に応じて、スクリーンリーダーによって通知されます。 また、アクション可能なオプションの目的は、外観やUIの配置などではなく、スクリーンリーダーによって通知されます。
 
-ユーザーがメニューからヘルプまたはユーザープロファイルのオプションを展開すると、スクリーンリーダーから適切なオプションまたはステータスが通知されます。 ユーザーがユーザープロファイルオプションを展開すると、キーボードを使用して使用可能なオプションを選択できます。 例えば、管理者は別のユーザーを装うことができます。 ユーザーが [!UICONTROL ヘルプ] ・オプションから文字列を検索した場合、ナレータは検索が進行中であることを示す「ヘルプの検索」を通知します。
+メニューからヘルプまたはユーザープロファイルのオプションを展開すると、スクリーンリーダーから適切なオプションまたはステータスが通知されます。ユーザープロファイルオプションを展開すると、キーボードを使用して使用可能なオプションを選択できるようになりす。例えば、管理者は別のユーザーを装うことができます。 If a user searches for a string from the [!UICONTROL Help] option, a narrator announces &quot;Searching Help&quot; to indicate that a search is in progress.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -118,9 +118,9 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 *Figure: Navigating through the options at the top of [!DNL Experience Manager] user interface using `Tab` key.*
 -->
 
-## アセットの参照と関連表示 {#browse}
+## Browse assets and view the related information {#browse}
 
-ユーザーインターフェイスでは、キーボードを使用してDAMリポジトリ内の既存のデジタルアセットのリスト、プレビューまたはダウンロード、生成されたレンディションの表示、表示の切り替え、生成されたレンディションの表示、タイムラインとバージョンの履歴の表示、コメントと参照の表示、メタデータの管理を行えます。 [!DNL Assets]
+[!DNL Assets] ユーザーインターフェイスでは、キーボードを使用して DAM リポジトリー内の既存のデジタルアセットの一覧表示、プレビューまたはダウンロード、生成されたレンディションの表示、表示の切り替え、タイムラインとバージョンの履歴の表示、コメントと参照の表示、メタデータの管理をおこなうことができます。
 
 <!-- TBD: Not sure about the following list items mean:
 
@@ -136,16 +136,16 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * CQ-4273122 - Assets of video/audio type will have aria-label in format "Multimedia player: <Title>" so users relying on screen-reader will get to know that they are video/audio assets.
 -->
 
-アセットリポジトリを参照する際、次の機能によりアクセシビリティが向上します。
+アセットリポジトリーを参照する際、次の機能によりアクセシビリティが向上します。
 
-* スクリーンリーダーは、アイコン名の代わりにアイコンの目的や機能を表現する代替テキストを表示します。
-* ユーザーは、キーボードキーを使用して、アセットの参照リストのインタラクティブユーザーインターフェイスオプションにアクセスし、焦点を合わせることができます。
-* リスト表示の各行の要素は、スクリーンリーダーによって同じ行の要素として通知されます。
+* アイコン名の代わりにアイコンの目的や機能を表現する代替テキストがスクリーンリーダーによってアナウウンスされる。
+* キーボードキーを使用してアセットの参照リストのインタラクティブユーザーインターフェイスオプションにアクセスし、フォーカスすることができる。
+* リスト表示の各行の要素は、スクリーンリーダーによって同じ行の要素としてアナウンスされる。
 * キーを使用して移動する場合、フォーカスはバージョンプレビューの閉じるオプションに移動できます。 `Tab`
-* キーボードを使用して参照する場合、強調表示された操作可能なユーザーインターフェイスオプションは、コントラストを強化し、より目立つ視覚的な焦点を持ちます。 これにより、焦点を絞った領域をユーザーがより識別しやすくなります。
-* サムネール表示からクイックアクションアイコンを削除する `Esc` ためにキーを使用しても、最後にフォーカスされたアイテムからはキーボードフォーカスが削除されません。
-* アセットを選択した状態で、キーボードショートカットを選択すると、左側のレールに `Alt + 4` 参照  リストが開きます。 キーを使用して、ゼロ以外の参照エントリ間を移動でき `Tab` ます。 ゼロ以外の参照エントリを参照するだけで、作業やキー操作を省力化できます。
-* アセットに対するコメントは、アセットタイムラインで使用できます。 キーボードまたはキーボードショートカットを使用して左側のレールにアクセスすると、アクセスできます。
+* キーボードを使用して参照する場合、強調表示された操作可能なユーザーインターフェイスオプションのコントラストが強化され、より目立つ視覚的なフォーカスを持つようになる。これにより、フォーカスされた領域がより識別しやすくなる。
+* サムネール表示からクイックアクションアイコンを削除するために `Esc` キーを使用しても、最後にフォーカスされたアイテムからはキーボードフォーカスが削除されない。
+* アセットを選択した状態で、キーボードショートカットを選択すると、左側のレールに `Alt + 4` 参照  リストが開きます。 Using `Tab` key, users can navigate through the non-zero reference entries. ゼロ以外の参照エントリを参照するだけで、作業やキー操作を省力化できます。
+* アセットに対するコメントは、アセットタイムラインで使用でき、キーボードまたはキーボードショートカットを使用して左側のレールにアクセスすると、アクセスできます。
 * [!UICONTROL の表示設定][!DNL Experience Manager] は、キーボードを使用してアクセスできます。 ユーザーは、矢印キーを使用して使用可能なカードのサイズ間を移動し、選択してTabキーで移動し、既存の表示設定表示ー内の他の要素を設定できます。
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
@@ -159,36 +159,36 @@ Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessib
 * Some enhancements to metadata properties UI?
 -->
 
-## Manage digital assets {#manage-assets}
+## デジタルアセットの管理{#manage-assets}
 
-CRUD操作、アセットのダウンロード、メタデータの追加など、多くのアセット管理タスクには、様々な角度からアクセスできます。 [!DNL Assets] 様々な支援テクノロジー（特にスクリーンリーダーやキーボード）を使用してタスクを行うことができます。
+CRUD操作、アセットのダウンロード、メタデータの追加など、多くのアセット管理タスクには、様々な角度からアクセスできます。 [!DNL Assets] を使用すると、様々な支援テクノロジー（特にスクリーンリーダーやキーボード）を使用してタスクを実行できます。
 
-キーボードを使用してリポジトリを [参照し、アセットをダウンロードする方法を示すビデオデモを参照してください](https://youtu.be/K3dgqMRQJys)。
+キーボードを使用して[リポジトリーを参照し、アセットをダウンロードする](https://youtu.be/K3dgqMRQJys)方法を示すビデオデモを参照してください。
 
-通常、マーケターや管理者などの役割が行うメタデータ操作では、次の機能によりアクセシビリティが向上します。
+通常、マーケターや管理者などの役割でおこなうメタデータ操作では、次の機能によりアクセシビリティが向上します。
 
-* [!UICONTROL アセットの] プロパティ [!UICONTROL ページの「保存して閉じる] 」オプションは、キーボードを使用してアクセスできるようになりました。
+* アセットのプロパティページの「[!UICONTROL 保存して閉じる][!UICONTROL  」オプションが、キーボードを使用してアクセスできるようになりました。]
 * スクリーンリーダーは、アセットの [!UICONTROL プロパティの「] 基本 [!UICONTROL 」タブで選択したタグを削除するオプションを読み上げます]。
 * ユーザーは、日付選択ポップアップダイアログをキーボードと共に使用できます。 日付選択ユーザーインターフェイス要素を使用して、オン時間とオフ時間を設定し、「日付」を選択します。
-* キーボードを使用したドラッグ機能は、スクリーンリーダーの [!UICONTROL 参照モードのメタデータスキーマエディタ] (MDE)で正しく機能します。
-* ユーザーは、キーボードを使用して、フォルダーのプ [!UICONTROL ロパティの「] 権限 [!UICONTROL 」タブにある「] 閉じたユーザーグループ」の下の「ユーザーまたはグループ」フィールドにフォーカスを移動でき ます。
+* The drag functionality using keyboard correctly functions in [!UICONTROL Metadata Schema Editor] in browse mode of screen reader.
+* A user can move the focus using keyboard to the Add User or Group field under [!UICONTROL Closed User Group] in the [!UICONTROL Permissions] tab of folder [!UICONTROL Properties].
 
 ## デジタルアセットの検索 {#search-assets}
 
-すばやくシームレスなアセット検索の経験により、コンテンツの速度が向上します。 コンテンツ速度の使用例は、主な [!DNL Assets] 機能の一部です。 Omnisearchバーから検索を開始するには、キーボードショートカットを使用する `/` か、スクリーンリーダーと共に使用し `Tab` て、検索オプションをすばやく見つけることができます。 スクリーンリーダーは、検索オプションの検索オプションにフォーカスがある場合、オプション名を「検索ボタン」として ![ナレーションします](assets/do-not-localize/search_icon.png)。 ユーザーは「Omnisearch」ボックス `Return` を開くことを選択できます。 スクリーンリーダーは、検索ボックスに入力されたキーワードのナレーションだけでなく、提供された提案のナレーションも行い [!DNL Experience Manager Assets]ます。 矢印キーと `Return`、を組み合わせて使用し、様々なオプション `Tab` にアクセスして検索をトリガーできます。
+すばやくシームレスなアセット検索の経験により、コンテンツの速度が向上します。コンテンツ速度の使用例は、主な [!DNL Assets] 機能の一部です。オムニサーチバーから検索を開始するには、キーボードショートカット `/` を使用するか、スクリーンリーダーと共に `Tab` を使用して、検索オプションをすばやく見つけることができます。The screen reader narrates the name of the option as &quot;Search Button&quot; when the focus is on the search option ![search option](assets/do-not-localize/search_icon.png). Users can select `Return` to open the Omnisearch box. スクリーンリーダーは、検索ボックスに入力されたキーワードのナレーションだけでなく、[!DNL Experience Manager Assets] で提供される提案のナレーションもおこないます。矢印キー、`Return`、`Tab`を組み合わせて使用し、様々なオプションにアクセスして検索をトリガーできます。
 
 検索機能は、次の機能でアクセスできます。
 
-* ページタイトルはスクリーンリーダーが使用できるので、ページをアセットの検索ページとして識別するのに役立ちます。
+* ページタイトルはスクリーンリーダーが使用できるので、ページをアセットの検索ページとして識別するのに役立つ。
 * ユーザーは、Omnisearchフィールド内からアセットを検索します。 ユーザーは、キーボードナビゲーションまたはキーボードショートカットを使用して開くことができ `/`ます。
 * 開始が検索キーワードを入力し、矢印キーを使用して自動サーチクエリを選択できます。 ハイライトされた提案はキーを使用して選択でき、選択した提案はアセットで検索されます。 `Return`
 * スクリーンリーダーは、検索結果をフィルタリングする際に、フィルターパネルで混在状態のチェックボックス（ネストされた述語のすべてを選択しない限り、第1レベルのチェックボックスは選択されず、完全に選択されます）を識別し、読み上げることができます。
-* 「全検索」ボックスを閉じると、ユーザーのフォーカスが検索オプションに移動します。
+* 「オムニサーチ」ボックスを閉じると、ユーザーのフォーカスが検索オプションに移動する。
 
-検索結果をフィルタする場合：
+検索結果をフィルターする場合：
 
-* 検索結果ページには、スクリーンリーダーユーザーをより深く理解するための情報のタイトルが表示されます。
-* スクリーンリーダーは、検索フィルターのオプションを拡大可能なアコーディオンとして通知します。
+* 検索結果ページには、スクリーンリーダーユーザーがより深く理解できるように分かりやすいタイトルが表示される。
+* スクリーンリーダーは、検索フィルターのオプションを拡大可能なアコーディオンとして通知する。
 * 状態が混在するオプションを持つ述語は、スクリーンリーダーによって通知されます。
 
 ## アセットの共有 {#share-assets}
@@ -198,22 +198,22 @@ CRUD操作、アセットのダウンロード、メタデータの追加など�
 
 アセットを共有する場合、次の機能によってアクセシビリティが向上します。
 
-* ユーザーは、リンクの共有ダイアログの「検索と電子メールアドレス」フィールド内のキーボードを使用して、フォーカスを移動す追加ることができます。
+* ユーザーは、リンク共有ダイアログの「電子メールアドレスを検索／追加」フィールド内でキーボードを使用して、フォーカスを移動することができる。
 
-* リンクの共有ダイアログで、参照モードで移動するときに、スクリーンリーダー、
+* リンク共有ダイアログで、参照モードで移動するときに、スクリーンリーダーに次の現象が発生する。
 
-   * ダイアログが読み込まれた後は、直ちに表の情報を読み込まないでください。
-   * リストに表示されているすべての提案に移動できます。
-   * 「電子メールアドレス」フィールドと「検索」フィ追加ールドに対して表示された提案の説明
+   * ダイアログが読み込まれてすぐに、テーブル情報を読み上げない。
+   * リストに表示されているすべての提案に移動できる。
+   * 「電子メールアドレスを検索／追加」フィールドに対して表示された提案を読み上げる。
 
 ## アクセス可能なドキュメント {#accessible-docs}
 
-[!DNL Experience Manager] には、障害を持つユーザーが使用できる、アクセシブルなドキュメントが用意されています。 以下は、コンテンツオファーを今すぐアクセシブルにするのに役立ちますが、Adobeはテンプレートとコンテンツの改善に努め続けます。
+[!DNL Experience Manager] には、障害を持つユーザーが使用できる、アクセシブルなドキュメントが用意されています。 アドビはテンプレートとコンテンツの改善に努めています。現時点では以下の機能が、コンテンツをアクセシブルにするのに役立ちます。
 
-* スクリーンリーダーはテキストを読み上げることができます。
-* 画像や図には代替テキストが用意されています。
-* キーボードナビゲーションが可能です。
-* コントラスト比は、ドキュメントWebサイトの一部を強調表示するのに役立ちます。
+* スクリーンリーダーはテキストを読み上げることができる。
+* 画像や図には代替テキストが用意されている。
+* キーボードナビゲーションが可能である。
+* コントラスト比は、ドキュメント Web サイトの一部を強調表示するのに役立つ。
 
 ## フィードバックの提供 {#a11y-feedback}
 
