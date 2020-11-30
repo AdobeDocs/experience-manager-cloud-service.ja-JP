@@ -1,45 +1,45 @@
 ---
-title: Cloud ServiceとしてのAEMの保守タスク
-description: 'Cloud ServiceとしてのAEMの保守タスク '
+title: AEM as a Cloud Service のメンテナンスタスク
+description: 'AEM as a Cloud Service のメンテナンスタスク '
 translation-type: tm+mt
 source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Cloud ServiceとしてのAEMの保守タスク
+# AEM as a Cloud Service のメンテナンスタスク
 
-メンテナンスタスクとは、リポジトリを最適化するためにスケジュールに従って実行されるプロセスです。 AEMをCloud Serviceとして使用すると、お客様がメンテナンスタスクの運用プロパティを設定する必要が最小限になります。 お客様は、リソースをアプリケーション・レベルの懸念事項に集中させ、インフラストラクチャの運用をAdobeに任せることができます。
+メンテナンスタスクとは、リポジトリーを最適化するためにスケジュールに従って実行されるプロセスです。AEM as a Cloud Service を使用すると、顧客がメンテナンスタスクの運用プロパティを設定する必要が最小限になります。顧客は、インフラストラクチャの運用をアドビに任せて、リソースをアプリケーションレベルの懸念事項に集中させることができます。
 
 メンテナンスタスクの詳細については、次のページを参照してください。
 
-* [AEMメンテナンスガイド](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [運用ダッシュボードの保守タスク](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+* [AEM メンテナンスガイド](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
+* [運用ダッシュボードのメンテナンスタスク](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
 
 ## メンテナンスタスクの設定
 
-以前のバージョンのAEMでは、メンテナンスカード（ツール/操作/メンテナンス）を使用してメンテナンスタスクを設定できました。 AEMをCloud Serviceとして使用する場合、メンテナンスカードは使用できなくなり、Cloud Managerを使用して設定をソース管理にコミットし、展開する必要があります。 Adobeは、お客様の判断を必要としない保守タスク（データストアのガベージコレクションなど）を管理し、他の保守タスクはお客様が設定できます（下の表を参照）。
+以前のバージョンの AEM では、メンテナンスカード（ツール／操作／メンテナンス）を使用してメンテナンスタスクを設定できました。AEM as a Cloud Service を使用する場合、メンテナンスカードは使用できなくなったので、Cloud Manager を使用して設定をソース管理にコミットし、デプロイする必要があります。アドビは、顧客の判断を必要としないメンテナンスタスク（データストアのガベージコレクションなど）を管理します。他のメンテナンスタスクは顧客が設定できます（下の表を参照）。
 
 >[!CAUTION]
 >
->Adobeは、パフォーマンスの低下などの問題を軽減するために、お客様の保守タスク設定を上書きする権利を保留します。
+>アドビは、パフォーマンスの低下などの問題を軽減するために、顧客のメンテナンスタスク設定を上書きする権利を保留します。
 
-次の表に、AEMのリリース時にCloud Serviceとして使用できるメンテナンスタスクを示します。
+次の表に、AEM as a Cloud Service のリリース時に使用できるメンテナンスタスクを示します。
 
 | メンテナンスタスク | 設定の所有者 | 設定方法（オプション） |
 |---|---|---|
-| データストアのガベージコレクション | アドビ | 該当なし — 完全Adobe所有 |
-| バージョンのパージ | アドビ | 完全にAdobeが所有しますが、将来は、お客様は特定のパラメーターを設定できるようになります。 |
-| 監査ログの削除 | アドビ | 完全にAdobeが所有しますが、将来は、お客様は特定のパラメーターを設定できるようになります。 |
-| Lucene バイナリクリーンアップ | アドビ | 未使用で、Adobeによって無効にされています。 |
-| アドホックタスクの削除 | 顧客 | Githubで行う必要があります。 <br> フォルダーまたはの下にプロパティを作成することで、の下にあ `/libs` る標準のメンテナンスウィンドウ設定ノードを上書き `/apps/settings/granite/operations/maintenance/granite_weekly` し `granite_daily`ます。 詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。 <br> 上記のノードの下に別のノードを追加し（名前を付けて）、適切なプロパティを追加して、メンテナンスタスク `granite_TaskPurgeTask`を有効にします。 <br> OSGIプロパティの設定については、 [AEM 6.5メンテナンスタスクのドキュメントを参照してください](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| ワークフローのパージ | 顧客 | Githubで行う必要があります。 <br> フォルダー `/libs` またはの下にプロパティを作成することで、の下にある標準搭載のメンテナンスウィンドウ設定ノードを上書き`/apps/settings/granite/operations/maintenance/granite_weekly``granite_daily`します。 詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。 <br> 上記のノードの下に別のノードを追加し（名前を付けて）、適切なプロパティを追加して、メンテナンスタスク `granite_WorkflowPurgeTask`を有効にします。 <br> OSGIプロパティの設定については、AEM 6.5メンテナンスタスク [ドキュメントを参照してください](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
-| プロジェクトのパージ | 顧客 | Githubで行う必要があります。 <br> フォルダーまたはの下にプロパティを作成することで、の下にあ `/libs` る標準のメンテナンスウィンドウ設定ノードを上書き `/apps/settings/granite/operations/maintenance/granite_weekly` し `granite_daily`ます。 詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。 <br> 上のノードの下に適切なプロパティを持つノードを追加(名前を付ける `granite_ProjectPurgeTask`)して、メンテナンスタスクを有効にします。 <br> OSGIプロパティの設定については、AEM 6.5 [メンテナンスタスクドキュメントを参照してください](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
+| データストアのガベージコレクション | アドビ | 該当なし - アドビが完全所有 |
+| バージョンのパージ | アドビ | アドビが完全に所有していますが、将来は、顧客が特定のパラメーターを設定できるようになります。 |
+| 監査ログの削除 | アドビ | アドビが完全に所有していますが、将来は、顧客が特定のパラメーターを設定できるようになります。 |
+| Lucene バイナリクリーンアップ | アドビ | 未使用で、アドビによって無効にされています。 |
+| アドホックタスクの削除 | 顧客 | Github でおこなう必要があります。<br> `/apps/settings/granite/operations/maintenance/granite_weekly` フォルダーまたは `granite_daily` フォルダーにプロパティを作成することで、`/libs` 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。<br> 上記のノードの下に別のノードを追加し（`granite_TaskPurgeTask` という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。<br> OSGI プロパティの設定については、[AEM 6.5 メンテナンスタスクのドキュメント](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)を参照してください。 |
+| ワークフローのパージ | 顧客 | Github でおこなう必要があります。<br> `/apps/settings/granite/operations/maintenance/granite_weekly` フォルダーまたは `granite_daily` フォルダーにプロパティを作成することで、`/libs` 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。<br> 上記のノードの下に別のノードを追加し（`granite_WorkflowPurgeTask` という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。<br> OSGI プロパティの設定については、[AEM 6.5 メンテナンスタスクドキュメント](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)を参照してください。 |
+| プロジェクトのパージ | 顧客 | Github でおこなう必要があります。<br> `/apps/settings/granite/operations/maintenance/granite_weekly` フォルダーまたは `granite_daily` フォルダーにプロパティを作成することで、`/libs` 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。<br>上記のノードの下に適切なプロパティを持つノードを追加し（`granite_ProjectPurgeTask` と命名します）、メンテナンスタスクを有効にします。<br> OSGI プロパティの設定については、[AEM 6.5 メンテナンスタスクドキュメント](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)を参照してください。 |
 
-ユーザーは、ワークフローの削除、アドホックタスクの削除およびプロジェクトの削除の保守タスクのそれぞれを、日別、週別、月別の保守期間中に実行するようにスケジュールできます。 これらの設定は、ソース管理で直接編集する必要があります。 次の表に、各ウィンドウで使用可能な設定パラメータを示します。
+ユーザーは、ワークフローの削除、アドホックタスクの削除およびプロジェクトの削除のメンテナンスタスクのそれぞれを、日別、週別、月別の保守期間中に実行するようにスケジュールできます。これらの設定は、ソース管理で直接編集する必要があります。次の表に、各ウィンドウで使用可能な設定パラメータを示します。
 
 <table>
   <tr>
@@ -53,48 +53,48 @@ ht-degree: 3%
   <tr>
     <td>毎日</td>
     <td>顧客</td>
-    <td>JCRノード定義</td>
+    <td>JCR ノード定義</td>
     <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>以下のコードサンプル1を参照してください。</td>
+    <td>以下のコードサンプル 1 を参照してください。</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（この値は変更しないでください）</li>
-    <li><strong>windowStartTime</strong> = HH:MM（24時間形式） 日別メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</li>
-    <li><strong>windowEndTime</strong> = HH:MM（24時間形式） 日次メンテナンスウィンドウに関連付けられたメンテナンスタスクが、まだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
+    <li><strong>windowStartTime</strong> = HH:MM（24 時間形式）  日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</li>
+    <li><strong>windowEndTime</strong> = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
     </ul> </td> 
   </tr>
   <tr>
     <td>毎週</td>
     <td>顧客</td>
-    <td>JCRノード定義</td>
+    <td>JCR ノード定義</td>
     <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
-    <td>以下のコードサンプル2を参照してください。</td>
+    <td>以下のコードサンプル 2 を参照してください。</td>
      <td>
     <ul>
     <li><strong>windowSchedule</strong> = weekly（この値は変更しないでください）</li>
-    <li><strong>windowStartTime</strong> = HH:MM（24時間形式） 週別のメンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</li>
-    <li><strong>windowEndTime</strong> = HH:MM（24時間形式） 週単位のメンテナンスウィンドウに関連付けられたメンテナンスタスクが、まだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
-    <li><strong>windowScheduleWeekdays = 1 ～ 7の2つの値の配列。 例えば[5,5].</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。 開始と終了の正確な時刻は、それぞれwindowStartTimeとwindowEndTimeで管理されます。</li>
+    <li><strong>windowStartTime</strong> = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</li>
+    <li><strong>windowEndTime</strong> = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
+    <li><strong>windowScheduleWeekdays = 1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</li>
     </ul> </td> 
   </tr>
   <tr>
     <td>毎月</td>
     <td>顧客</td>
-    <td>JCRノード定義</td>
+    <td>JCR ノード定義</td>
     <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
-    <td>以下のコードサンプル3を参照してください。</td>
+    <td>以下のコードサンプル 3 を参照してください。</td>
      <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（この値は変更しないでください）</li>
-    <li><strong>windowStartTime</strong> = HH:MM（24時間形式） 月別メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</li>
-    <li><strong>windowEndTime</strong> = HH:MM（24時間形式） 月別メンテナンスウィンドウに関連付けられたメンテナンスタスクが、まだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
-    <li><strong>windowScheduleWeekdays = 1 ～ 7の2つの値の配列。 例えば[5,5].</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。 開始と終了の正確な時刻は、それぞれwindowStartTimeとwindowEndTimeで管理されます。</li>
-    <li><strong>windowFirstLastStartDay - 0/1</strong> 0（月の最初の週にスケジュールを設定）、1は月の最後の週にスケジュールを設定（設定）。 値を指定しないと、毎月windowScheduleWeekdaysの規定に従って、ジョブを毎日効果的にスケジュールします。</li>
+    <li><strong>windowStartTime</strong> = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</li>
+    <li><strong>windowEndTime</strong> = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
+    <li><strong>windowScheduleWeekdays = 1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</li>
+    <li><strong>windowFirstLastStartDay - 0 または 1</strong> 0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。</li>
     </ul> </td> 
   </tr>
 </table>
 
-コード例1
+コードサンプル 1
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,7 +109,7 @@ ht-degree: 3%
  />
 ```
 
-コード例2
+コードサンプル 2
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -124,7 +124,7 @@ ht-degree: 3%
    windowStartTime="14:30"/>
 ```
 
-コード例3
+コードサンプル 3
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
