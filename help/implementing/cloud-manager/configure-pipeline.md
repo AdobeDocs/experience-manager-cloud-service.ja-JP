@@ -5,40 +5,40 @@ translation-type: tm+mt
 source-git-commit: 4d5ad99e44446ac40d9798df1c7fabb862065495
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 
 # CI/CD パイプラインの設定 {#configure-ci-cd-pipeline}
 
-Cloud Managerには、次の2種類のパイプラインがあります。
+Cloud Manager には、次の 2 種類のパイプラインがあります。
 
-* **実稼働パイプライン**:
+* **実稼動パイプライン**：
 
-   実稼働パイプラインは、実稼働およびステージ環境セットを作成した場合にのみ追加できます。
+   実稼働パイプラインは、実稼働とステージング環境のセットを作成した場合にのみ追加できます。
 
-   Refer to [Setting up Production Pipeline](configure-pipeline.md#setting-up-the-pipeline) for more details.
+   詳しくは、[実稼働パイプラインの設定](configure-pipeline.md#setting-up-the-pipeline)を参照してください。
 
-* **非実稼働パイプライン**:
+* **実稼動以外のパイプライン**：
 
-   実稼動以外のパイプラインは、Cloud Managerのユーザーインターフェイスの **概要** ページから追加できます。
+   実稼動以外のパイプラインは、Cloud Manager のユーザーインターフェイスの&#x200B;**概要**&#x200B;ページから追加できます。
 
-   詳細は、 [非実稼働およびコード品質のみのパイプラインを参照](configure-pipeline.md#non-production-pipelines) 。
+   詳細は、[非実稼動パイプラインとコード品質専用パイプライン](configure-pipeline.md#non-production-pipelines)を参照してください。
 
 >[!NOTE]
->パイプラインを設定するには、次の操作を行う必要があります。
+>パイプラインを設定するには、次の操作をおこなう必要があります。
 > * パイプラインを開始するトリガーの定義
 > * 実稼動デプロイメントを制御するパラメーターの定義
 > * パフォーマンステストパラメーターの設定
 
 
-## Setting up Production Pipeline {#setting-up-production-pipeline}
+## 実稼働パイプラインの設定 {#setting-up-production-pipeline}
 
-Deployment Managerは、実稼働パイプラインのセットアップを担当します。
+実稼働パイプラインの設定はデプロイメントマネージャーが担当します。
 
 >[!NOTE]
->プログラムの作成が完了し、Gitリポジトリに少なくとも1つのブランチがあり、ProductionとStageの環境セットが作成されるまで、実稼動パイプラインを設定できません。
+>プログラムの作成が完了し、Git リポジトリに少なくとも 1 つのブランチがあり、実稼働とステージングの環境セットが作成されるまで、実稼動パイプラインを設定できません。
 
 コードのデプロイを開始する前に、[!UICONTROL Cloud Manager] からパイプライン設定を指定する必要があります。
 
@@ -46,7 +46,7 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
 >
 >初期設定後にパイプライン設定を変更できます。
 
-## [!UICONTROL Cloud Manager] からパイプライン設定を指定する{#configuring-the-pipeline-settings-from-cloud-manager}
+## [!UICONTROL Cloud Manager] からパイプライン設定を指定する {#configuring-the-pipeline-settings-from-cloud-manager}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムをセットアップし、少なくとも 1 つの環境ができたら、いつでもデプロイメントパイプラインをセットアップできます。
 
@@ -78,33 +78,33 @@ Deployment Managerは、実稼働パイプラインのセットアップを担�
    * **直ちに続行** - 重要なエラーが検出されても、常にパイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. 実稼動用のパイプライン設定には、「 **エクスペリエンス監査**」というラベルの付いた3番目のタブが含まれています。 このオプションは、エクスペリエンス監査に常に含める必要があるURLパスの表を提供します。
+1. 実稼動パイプライン設定には、**エクスペリエンス監査**&#x200B;というラベルの付いた 3 番目のタブが含まれています。このオプションは、エクスペリエンス監査に常に含める必要がある URL パスの表を提供します。
 
    >[!NOTE]
-   >[ **追加新規ページ** ]をクリックして、独自のカスタムリンクを定義する必要があります。
+   >「**新規ページを追加**」をクリックして、独自のカスタムリンクを定義する必要があります。
 
    ![](assets/setup-3.png)
 
-   「 **追加新しいページ** 」をクリックして、エクスペリエンス監査に含めるURLパスを指定します。
+   「**新規ページを追加**」をクリックして、エクスペリエンス監査に含める URL パスを指定します。
 
-   例えば、エクスペリエンス監査に含め `https://wknd.site/us/en/about-us.html` る場合は、このフィールドにパス `us/en/about-us.html` を入力し、「 **保存**」をクリックします。
+   例えば、`https://wknd.site/us/en/about-us.html` をエクスペリエンス監査に含める場合は、このフィールドにパス `us/en/about-us.html` を入力し、「**保存**」をクリックします。
 
    ![](assets/exp-audit4.png)
 
-   表に表示されるURLは次のとおりです。
+   表に表示される URL は次のとおりです。
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
    ![](assets/exp-audit5.png)
 
-   最大25行まで含めることができます。 このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
+   最大 25 行まで含めることができます。このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
 
-   詳しくは、「エクスペリエンス監査結果 [について](/help/implementing/cloud-manager/experience-audit-testing.md) 」を参照してください。
+   詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」ｓを参照してください。
 
    >[!NOTE]
-   > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO(Search Engine Optimization)、ベストプラクティス、PWA（プログレッシブWeb App）のテストに従って評価されます。
+   > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ Web アプリ）のテストに従って評価されます。
 
-1. 「パイプラインを **編集** 」(Edit Pipeline **)画面で「保存」(Save** )をクリックします。 **概要**&#x200B;ページに、**プログラムをデプロイ**&#x200B;カードが表示されます。「**デプロイ**」ボタンをクリックして、プログラムをデプロイします。
+1. **パイプラインを編集**&#x200B;画面で「**保存**」をクリックします。**概要**&#x200B;ページに、**プログラムをデプロイ**&#x200B;カードが表示されます。「**デプロイ**」ボタンをクリックして、プログラムをデプロイします。
 
    ![](assets/configure-pipeline5.png)
 
