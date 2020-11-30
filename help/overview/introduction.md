@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service の概要 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html) (AEM) は Cloud Service として利用可能になりました。
+[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html)（AEM）は as a Cloud Service として利用可能になりました。
 
 Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 
@@ -52,7 +52,7 @@ Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
 >
 >AEM as a Cloud Service で導入された新しい用語の一部については、[用語](terminology.md)を参照してください。
 
-## Cloud Service として追加された価値 {#value-added-as-a-cloud-service}
+## as a Cloud Service としての付加価値 {#value-added-as-a-cloud-service}
 
 AEM は、最新のクラウドサービスの主な特徴を取り入れることで、次の目標を達成します。
 
@@ -75,9 +75,9 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 ## Adobe Experience Manager as a Cloud Service の理解 {#getting-to-know-aem-as-cloud-service}
 
 * Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
-* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
-* [Cloud ServiceとしてのAEMに対する注目すべき変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
-* [ Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [Adobe Experience Manager as a Cloud Service のアーキテクチャ](/help/core-concepts/architecture.md)
+* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service の概要](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
