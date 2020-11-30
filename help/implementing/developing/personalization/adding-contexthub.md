@@ -5,20 +5,20 @@ translation-type: tm+mt
 source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 
 # ページへの ContextHub の追加とストアへのアクセス {#adding-contexthub-to-pages-and-accessing-stores}
 
-ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ContextHub をページに追加します.
+ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ContextHub をページに追加します。
 
-ContextHub JavaScript API を使用すると、ContextHub が管理するコンテキストデータにアクセスできます。このページでは、コンテキストデータにアクセスして操作するためのAPIの主な機能について簡単に説明します。 詳細情報とコードのサンプルは、API リファレンスドキュメントへのリンクから確認できます。
+ContextHub JavaScript API を使用すると、ContextHub が管理するコンテキストデータにアクセスできます。このページでは、コンテキストデータにアクセスおよび操作するための API の主な機能について簡単に説明します。詳細情報とコードのサンプルは、API リファレンスドキュメントへのリンクから確認できます。
 
 ## ページコンポーネントへの ContextHub の追加 {#adding-contexthub-to-a-page-component}
 
-To enable the ContextHub features and to link to the ContextHub Javascript libraries, include the `contexthub` component in the `head` section of your page. ページコンポーネントのHTLコードは、次の例のようになります。
+ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリンクするには、ページの `head` セクションに `contexthub` コンポーネントを含めます。ページコンポーネントの HTL コードは、次の例のようになります。
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -44,14 +44,14 @@ ContextHub ストアは、次のいずれかの永続モードを使用します
 * **ローカル：** HTML5 localStorage を使用してデータを保持します。ローカルストレージは、セッションをまたがってブラウザー上に保持されます。
 * **セッション：** HTML5 sessionStorage を使用してデータを保持します。セッションストレージは、ブラウザーセッションが持続する間、保持され、すべてのブラウザーウィンドウで使用可能です。
 * **Cookie：**&#x200B;ブラウザーのデータストレージ用 cookie のネイティブサポートを使用します。cookie データは、HTTP 要求としてサーバーとの間で送受信されます。
-* **Window.name:** window.nameプロパティを使用してデータを永続化します。
-* **メモリ：** JavaScriptオブジェクトを使用してデータを永続化します。
+* **Window.name：** window.name プロパティを使用してデータを保持します。
+* **メモリ：** JavaScript オブジェクトを使用してデータを保持します。
 
 デフォルトでは、ContextHub は「ローカル」永続モードを使用します。ブラウザーが HTML5 localStorage をサポートまたは許可していない場合は、「セッション」永続モードが使用されます。ブラウザーが HTML5 sessionStorage をサポートまたは許可していない場合は、「Window.name」永続モードが使用されます。
 
 ### ストアデータ {#store-data}
 
-ストアデータは内部的にツリー構造を形成しており、値をプライマリタイプまたは複合オブジェクトとして追加できます。複合オブジェクトをストアに追加すると、オブジェクトのプロパティがデータツリーにブランチを形成します。例えば、次の複合オブジェクトは、locationという名前の空のストアに追加されます。
+ストアデータは内部的にツリー構造を形成しており、値をプライマリタイプまたは複合オブジェクトとして追加できます。複合オブジェクトをストアに追加すると、オブジェクトのプロパティがデータツリーにブランチを形成します。例えば、次の複合オブジェクトを location という名前の空のストアに追加します。
 
 ```javascript
 Object {
@@ -80,21 +80,21 @@ Object {
             |- elevation
 ```
 
-ツリー構造は、ストア内のデータ項目をキーと値のペアとして定義します。In the above example, the key `/number` corresponds with the value `321`, and the key `/data/country` corresponds with the value `Switzerland`.
+ツリー構造は、ストア内のデータ項目をキーと値のペアとして定義します。上記の例では、キー `/number` が値 `321` に対応し、キー `/data/country` が値 `Switzerland` に対応しています。
 
 ### オブジェクトの操作 {#manipulating-objects}
 
-ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating Javascript objects. JavaScript オブジェクトをストアに追加する前またはストアから取得した後に、このクラスの関数を使用して JavaScript オブジェクトを操作します。
+ContextHub には、JavaScript オブジェクトを操作するための [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) クラスが用意されています。JavaScript オブジェクトをストアに追加する前またはストアから取得した後に、このクラスの関数を使用して JavaScript オブジェクトを操作します。
 
-Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
+さらに、[`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) クラスには、オブジェクトを文字列にシリアライズしたり、文字列をオブジェクトにデシリアライズしたりするための関数があります。`JSON.parse` 関数および `JSON.stringify` 関数をネイティブに含まないブラウザーをサポートするには、このクラスを使用して JSON データを処理します。
 
 ## ContextHub ストアとのやり取り {#interacting-with-contexthub-stores}
 
-ストアを JavaScript オブジェクトとして取得するには、[`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript オブジェクトを使用します。ストアオブジェクトを取得したら、そのストアに格納されているデータを操作できます。Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
+ストアを JavaScript オブジェクトとして取得するには、[`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript オブジェクトを使用します。ストアオブジェクトを取得したら、そのストアに格納されているデータを操作できます。ストアを取得するには、[`getAllStores`](contexthub-api.md#getallstores) 関数または [`getStore`](contexthub-api.md#getstore-name) 関数を使用します。
 
 ### ストアデータへのアクセス {#accessing-store-data}
 
-The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript class defines several functions for interacting with store data. 次の関数は、オブジェクトに格納されている複数のデータ項目を保存および取得します。
+[`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript クラスは、ストアデータとやり取りするための関数を定義します。次の関数は、オブジェクトに格納されている複数のデータ項目を保存および取得します。
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -110,7 +110,7 @@ The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript
 >
 >ContextHub は、デフォルトでは、パブリッシュサーバーを使用した現在のログインを認識しません。そうしたユーザーは ContextHub では「匿名」と見なされます。
 >
->プロファイルストアを読み込むことで、ContextHubにログインユーザーを認識させることができます。 Refer to [sample code on GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>プロファイルストアを読み込むことで、ContextHub にログインユーザーを認識させることができます。[GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js) でサンプルコードを参照してください。
 
 ### ContextHub のイベンティング {#contexthub-eventing}
 
@@ -118,33 +118,33 @@ ContextHub には、ストアイベントに自動的に対処できるように
 
 ## ContextHub を使用した cookie の操作 {#using-context-hub-to-manipulate-cookies}
 
-ContextHub JavaScript API には、ブラウザー cookie を処理するためのクロスブラウザーサポートがあります。The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
+ContextHub JavaScript API には、ブラウザー cookie を処理するためのクロスブラウザーサポートがあります。[`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) 名前空間は、Cookie を作成、操作、削除するための関数を定義します。
 
 ## 解決された ContextHub セグメントの特定 {#determining-resolved-contexthub-segments}
 
-ContextHub のセグメントエンジンを使用して、現在のコンテキストで解決された登録済みセグメントを特定できます。解決されたセグメントを取得するには、[`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) クラスの getResolvedSegments 関数を使用します。Then, use the `getName` or `getPath` function of the [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) class to test for a segment.
+ContextHub のセグメントエンジンを使用して、現在のコンテキストで解決された登録済みセグメントを特定できます。解決されたセグメントを取得するには、[`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) クラスの getResolvedSegments 関数を使用します。その後で、`getName` クラスの `getPath` 関数または [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) 関数を使用して、セグメントをテストします。
 
 ### ContextHub セグメント {#contexthub-segments}
 
-ContextHub segments are installed below the `/conf/<site>/settings/wcm/segments` node.
+ContextHub のセグメントは、`/conf/<site>/settings/wcm/segments` ノードの下にインストールされます。
 
-次のセグメントは、 [WKNDチュートリアルサイトと共にインストールされます。](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+次のセグメントは、[WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)でインストールされます。
 
 * summer（夏）
 * winter（冬）
 
 これらのセグメントの解決に使用されるルールを要約すると次のようになります。
 
-* まず、 [位置情報ストアを使用して](sample-stores.md#contexthub-geolocation-sample-store-candidate) 、ユーザの緯度を決定します。
-* 次に、 [surferinfoストアの月のデータ項目が、その緯度の季節を](sample-stores.md#contexthub-surferinfo-sample-store-candidate) 決定します。
+* まず、[位置情報ストア](sample-stores.md#contexthub-geolocation-sample-store-candidate)を使用して、ユーザの緯度を決定します。
+* 次に、[surferinfo ストア](sample-stores.md#contexthub-surferinfo-sample-store-candidate)の月のデータ項目が、その緯度での季節を決定します。
 
 >[!WARNING]
 >
->インストールされたセグメントは、プロジェクト用の独自の専用設定を構築するのに役立つリファレンス設定として提供されます。したがって、直接使用しないでください。
+>インストールされたセグメントは、プロジェクト用の独自の専用設定を構築するのに役立つリファレンス設定として提供されています。直接使用しないでください。
 
 ## ContextHub のデバッグ {#debugging-contexthub}
 
-ログの生成を含め、ContextHubをデバッグするための多くのオプションがあります。 See [Configuring ContextHub for more information.](configuring-contexthub.md#logging-debug-messages-for-contexthub)
+ログの生成を含め、ContextHub をデバッグするためには多くのオプションがあります。詳しくは、「[ContextHub の設定](configuring-contexthub.md#logging-debug-messages-for-contexthub)」を参照してください。
 
 ## ContextHub フレームワークの概要の確認 {#see-an-overview-of-the-contexthub-framework}
 
