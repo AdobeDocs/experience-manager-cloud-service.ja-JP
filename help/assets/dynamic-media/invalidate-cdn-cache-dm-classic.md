@@ -1,36 +1,36 @@
 ---
-title: Dynamic Media Classicを使用したCDNキャッシュの無効化
+title: Dynamic Media Classic を使用した CDN キャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
 source-git-commit: 8f555f2cf97aaeabfae24919ad5861a2512b0903
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Media Classicを使用したCDNキャッシュの無効化 {#invalidating-your-cdn-cached-content}
+# Dynamic Media Classic を使用した CDN キャッシュの無効化 {#invalidating-your-cdn-cached-content}
 
 CDN を使用して Dynamic Media アセットをキャッシュすることで、高速配信が可能になります。ただし、あるアセットを更新する場合に、変更をすぐに適用したいことがあります。コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 
 >[!IMPORTANT]
 >
->これらの手順は、AEM 6.5、Service Pack 5以前のダイナミックメディアにのみ適用されます。 <!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
+>これらの手順は、AEM 6.5、Service Pack 5 以前の Dynamic Media にのみ適用されます。<!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
 [Dynamic Media Classic（Scene7）のキャッシュの概要](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)も参照してください。
 
-**Dynamic Media Classicを使用してCDNキャッシュを無効にするには：**
+**Dynamic Media Classic を使用して CDN キャッシュを無効にするには：**
 
 1. 次のいずれかの操作をおこないます。
 
-   * Webブラウザーで、Dynamic Media Classicアカウントにログオンします。
+   * Web ブラウザーで、Dynamic Media Classic アカウントにログオンします。
 
       [https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)
 
       資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
 
-   * Dynamic Media Classicアプリケーションを開き、アカウントにサインインします。
+   * Dynamic Media Classic アプリケーションを開き、アカウントにサインインします。
 
 1. **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。
 1. アプリケーションの一般設定ページで、「サーバー」グループ見出しの下にある「**[!UICONTROL CDN 無効化テンプレート]**」テキストボックスを見つけます。
