@@ -1,28 +1,28 @@
 ---
 title: ContextHub でのセグメント化の設定
-description: ContextHubを使用してセグメントを設定する方法を説明します。
+description: ContextHub を使用してセグメントを設定する方法を説明します。
 translation-type: tm+mt
 source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 48%
+ht-degree: 80%
 
 ---
 
 
 # ContextHub でのセグメント化の設定{#configuring-segmentation-with-contexthub}
 
-キャンペーンを作成する場合、セグメント化を考えることが重要になります。See [Understanding Segmentation](segmentation.md) for information on how segmentation works and key terms.
+キャンペーンを作成する場合、セグメント化を考えることが重要になります。セグメント化の仕組みと主な用語について詳しくは、「[セグメント化について](segmentation.md)」を参照してください。
 
 サイト訪問者についてこれまでに収集した情報と、達成する目標に応じて、ターゲットコンテンツに必要なセグメントと戦略を定義する必要があります。
 
 このようなセグメントを使用して、訪問者に特定のターゲットコンテンツを提供します。ここで定義された[アクティビティ](activities.md)は、任意のページに追加できます。また、専用のコンテンツを適用できる訪問者セグメントを定義できます。
 
-AEMを使用すると、ユーザーの体験を簡単にパーソナライズできます。 また、セグメント定義の結果を検証することもできます。
+AEM では、ユーザーエクスペリエンスを簡単にパーソナライズできます。また、セグメント定義の結果を検証することもできます。
 
 ## セグメントへのアクセス {#accessing-segments}
 
-The [Audiences](audiences.md) console is used to manage segments for ContextHub as well as audiences for your Adobe Target account. このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
+[オーディエンス](audiences.md)コンソールは、ContextHub のセグメントを管理したり、Adobe Target アカウントのオーディエンスを管理したりする目的で使用します。このドキュメントでは、ContextHub のセグメントの管理について取り上げます。
 
 セグメントにアクセスするには、グローバルナビゲーションで&#x200B;**ナビゲーション／パーソナライズ機能／オーディエンス**&#x200B;を選択します。
 
@@ -31,26 +31,26 @@ The [Audiences](audiences.md) console is used to manage segments for ContextHub 
 ## セグメントエディター {#segment-editor}
 
 <!--The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-The **Segment Editor** allows you to easily modify a segment. セグメントを編集するには、セグメントリストからセグメントを選択し、「**編集**」ボタンをクリックします。
+**セグメントエディター**&#x200B;を使用すると、セグメントを簡単に変更できます。セグメントを編集するには、セグメントリストからセグメントを選択し、「**編集**」ボタンをクリックします。
 
 ![セグメントエディター](../assets/contexthub-segment-editor.png)
 
-Using the components browser you can add **AND** and **OR** containers to define the segment logic, then add additional components to compare properties and values or reference scripts and other segments to define the selection criteria (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting the segment.
+コンポーネントブラウザーを使用すると、**AND** および **OR** コンテナを追加してセグメントロジックを定義してから、別のコンポーネントを追加してプロパティや値を比較できます。また、スクリプトやその他のセグメントを参照して選択条件を定義する（[新しいセグメントの作成](#creating-a-new-segment)を参照）ことによって、セグメントの選択シナリオを正確に定義できます。
 
-ステートメント全体が true と評価されると、セグメントは解決されます。In the event of multiple segments being applicable, then the **Boost** factor is also used. See [Creating a New Segment](#creating-a-new-segment) for details on the boost factor.
+ステートメント全体が true と評価されると、セグメントは解決されます。複数のセグメントを適用可能な場合、**ブースト**&#x200B;係数も使用されます。ブースト係数について詳しくは、「[新しいセグメントの作成](#creating-a-new-segment)」を参照してください。
 
 >[!CAUTION]
 >
->セグメントエディターは、循環参照をチェックしません。例えば、セグメントAは別のセグメントBを参照し、次にセグメントAを参照します。セグメントAに循環参照が含まれていないことを確認する必要があります。
+>セグメントエディターは、循環参照をチェックしません。例えば、セグメント A が別のセグメント B を参照していて、そのセグメント B がセグメント A を参照している場合などです。このため、セグメントに循環参照が存在しないことを必ず確認してください。
 
 ### コンテナ {#containers}
 
-次のコンテナは標準で用意されており、比較や参照をグループ化してブール評価をおこなうために使用できます。これらはコンポーネントブラウザーからエディターにドラッグできます。See the following section [Using AND and OR Containers](#using-and-and-or-containers) for more information.
+次のコンテナは標準で用意されており、比較や参照をグループ化してブール評価をおこなうために使用できます。これらはコンポーネントブラウザーからエディターにドラッグできます。詳しくは、「[AND コンテナと OR コンテナの使用](#using-and-and-or-containers)」の節を参照してください。
 
 |  |  |
 |---|---|
-| コンテナ AND | ブール値のAND演算子 |
-| コンテナ OR | ブールOR演算子 |
+| コンテナ AND | AND ブール演算値 |
+| コンテナ OR | OR ブール演算値 |
 
 ### 比較 {#comparisons}
 
@@ -58,21 +58,21 @@ Using the components browser you can add **AND** and **OR** containers to define
 
 |  |  |
 |---|---|
-| プロパティ — 値 | ストアのプロパティと定義済みの値を比較 |
-| プロパティ — プロパティ | ストアの1つのプロパティと別のプロパティを比較 |
-| プロパティセグメントの参照 | 店舗のプロパティを、参照されている別のセグメントと比較します |
-| プロパティスクリプトの参照 | ストアのプロパティとスクリプトの結果を比較 |
-| セグメントリファレンススクリプトリファレンス | 参照セグメントとスクリプトの結果を比較 |
+| プロパティ - 値 | ストアのプロパティと定義済みの値を比較 |
+| プロパティ - プロパティ | ストアの 1 つのプロパティと別のプロパティを比較 |
+| プロパティ - セグメントの参照 | ストアのプロパティを参照先の別のセグメントと比較 |
+| プロパティ - スクリプトの参照 | ストアのプロパティとスクリプトの結果を比較 |
+| セグメントリファレンス - スクリプトリファレンス | 参照先セグメントとスクリプトの結果を比較 |
 
 >[!NOTE]
 >
->値を比較する際に、比較のデータタイプが設定されていない場合（つまり自動検出に設定されている場合）、ContextHubのセグメント化エンジンは、値をJavaScriptと同様に比較します。 値が想定されたタイプにキャストされないので、誤解を招く結果となることがあります。次に例を示します。
+>値の比較時に比較のデータタイプが設定されていない場合（つまり、自動検出に設定されている場合）、ContextHub のセグメント化エンジンでは、javascript と同じように値が比較されます。値が想定されたタイプにキャストされないので、誤解を招く結果となることがあります。次に例を示します。
 >
 >`null < 30 // will return true`
 >
->Therefore when [creating a segment](#creating-a-new-segment), you should select a **data type** whenever the types of compared values are known. 次に例を示します。
+>したがって、[セグメントの作成](#creating-a-new-segment)時に比較対象の値のタイプがわかる場合は、常に&#x200B;**データタイプ**&#x200B;を選択してください。次に例を示します。
 >
->When comparing the property `profile/age`, you already know that the compared type will be **number**, so even if `profile/age` is not set, a comparison `profile/age` less-than 30 will return **false**, as you would expect.
+>`profile/age` プロパティを比較する場合は、比較対象のタイプが&#x200B;**数値**&#x200B;であることが既にわかっているので、`profile/age` が設定されていなくても、`profile/age` が 30 より小さいという比較では、想定どおりに **false** が返されます。
 
 ### 参照 {#references}
 
@@ -81,36 +81,36 @@ Using the components browser you can add **AND** and **OR** containers to define
 |  |  |
 |---|---|
 | セグメントの参照 | 参照先セグメントを評価 |
-| スクリプト参照 | 参照先のスクリプトを評価します。 詳しくは、次の「スクリプト参照の [使用](#using-script-references) 」の節を参照してください。 |
+| スクリプト参照 | 参照先セグメントをします。詳しくは、次の「[スクリプト参照の使用](#using-script-references)」の節を参照してください。 |
 
 ## 新しいセグメントの作成 {#creating-a-new-segment}
 
-新しいセグメントを定義するには：
+新しいセグメントを定義するには、次の手順に従います。
 
 1. セグメント [に](#accessing-segments)アクセスした後 [](#organizing-segments) 、セグメントを作成するフォルダーに移動するか、ルートに残します。
 
 1. 「 **作成** 」ボタンをタップまたはクリックし、「ContextHubセグメントを **作成**」を選択します。
 
-   ![追加セグメント](../assets/contexthub-create-segment.png)
+   ![セグメントを追加](../assets/contexthub-create-segment.png)
 
 1. 「**新しい ContextHub セグメント**」で、セグメントのタイトルと必要に応じてブースト値を入力し、「**作成**」をタップまたはクリックします。
 
    ![新しいセグメント](../assets/contexthub-new-segment.png)
 
-   各セグメントには、重み付け係数として使用されるブーストパラメータがあります。 複数のセグメントが有効である場合、数値が小さいセグメントよりも、数値が大きいセグメントのほうが優先して選択されます。
+   各セグメントには、重み付け係数として使用されるブーストパラメーターがあります。複数のセグメントが有効である場合、数値が小さいセグメントよりも、数値が大きいセグメントのほうが優先して選択されます。
 
    * 最小値：`0`
    * 最大値：`1000000`
 
 1. セグメントコンソールから、新しく作成したセグメントを編集し、セグメントエディターで開きます。
 1. 比較または参照をセグメントエディターにドラッグすると、デフォルトの AND コンテナに表示されます。
-1. 新しい参照またはセグメントの設定オプションをダブルクリックまたはタップして、特定のパラメーターを編集します。この例では、バーゼルのユーザーのテストを行っています。
+1. 新しい参照またはセグメントの設定オプションをダブルクリックまたはタップして、特定のパラメーターを編集します。この例では、バーゼルのユーザーをテストしています。
 
-   ![バーゼルでの人のテスト](../assets/contexthub-comparing-property-value.png)
+   ![バーゼルでのユーザーテスト](../assets/contexthub-comparing-property-value.png)
 
    比較が適切に評価されるように、可能であれば常に「**データタイプ**」を設定します。詳しくは、[比較](#comparisons)を参照してください。
 
-1. Click **Done** to save your definition:
+1. 「**完了**」をクリックして定義を保存します。
 1. 必要に応じてその他のコンポーネントを追加します。AND 比較および OR 比較のコンテナコンポーネントを使用して、ブール式を作成できます（後述の [AND コンテナと OR コンテナの使用](#using-and-and-or-containers)を参照）。セグメントエディターでは、不要になったコンポーネントを削除したり、コンポーネントをステートメント内の別の場所へドラッグしたりすることができます。
 
 ### AND コンテナと OR コンテナの使用 {#using-and-and-or-containers}
@@ -120,7 +120,7 @@ AND および OR コンテナコンポーネントを使用すると、AEM で�
 * 定義の最上位レベルは必ず、最初に作成された AND コンテナになります。これは変更できませんが、他のセグメント定義には影響しません。
 * コンテナのネストが意味のあるものになっていることを確認してください。コンテナは、ブール式の括弧として見ることができます。
 
-次の例は、スイスのターゲットグループで考慮される訪問者を選択する場合に使用します。
+次の例では、スイスターゲットグループに属すると見なされる訪問者を選択しています。
 
 ```text
  People in Basel
@@ -130,11 +130,11 @@ AND および OR コンテナコンポーネントを使用すると、AEM で�
  People in Zürich
 ```
 
-最初に、OR コンテナコンポーネントをデフォルトの AND コンテナ内に配置します。ORコンテナ内で、プロパティまたは参照コンポーネントを追加できます。
+最初に、OR コンテナコンポーネントをデフォルトの AND コンテナ内に配置します。OR コンテナ内で、プロパティまたは参照コンポーネントを追加できます。
 
-![OR演算子を使用したセグメント](../assets/contexthub-or-operator.png)
+![OR 演算子を使用したセグメント](../assets/contexthub-or-operator.png)
 
-必要に応じて、複数のANDおよびOR演算子をネストできます。
+必要に応じて、複数の AND および OR 演算子をネストできます。
 
 ### スクリプト参照の使用 {#using-script-references}
 
@@ -142,7 +142,7 @@ AND および OR コンテナコンポーネントを使用すると、AEM で�
 
 #### 参照するスクリプトの定義 {#defining-a-script-to-reference}
 
-1. Add file to `contexthub.segment-engine.scripts` clientlib.
+1. `contexthub.segment-engine.scripts` クライアントライブラリにファイルを追加します。
 1. 値を返す関数を実装します。次に例を示します。
 
    ```javascript
@@ -174,9 +174,9 @@ AND および OR コンテナコンポーネントを使用すると、AEM で�
    })();
    ```
 
-1. Register the script with `ContextHub.SegmentEngine.ScriptManager.register`.
+1. スクリプトを `ContextHub.SegmentEngine.ScriptManager.register` に登録します。
 
-その他のプロパティに依存するスクリプトでは、`this.dependOn()` () を呼び出す必要があります。For example if the script depends on `profile/age`:
+その他のプロパティに依存するスクリプトでは、`this.dependOn()` を呼び出す必要があります。例えば、スクリプトが `profile/age` に依存する場合は次のようになります。
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -266,7 +266,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 作成したセグメントと一致するペルソナを選択します。
 1. ContextHub によって、選択したペルソナに適用できるセグメントが解決されます。
 
-例えば、Baselでユーザーを識別するための単純なセグメント定義は、ユーザーの場所に基づいています。 これらの条件に一致する特定の人物を読み込むと、セグメントが正常に解決されたかどうかが表示されます。
+例えば、バーゼルのユーザーを識別するための単純なセグメント定義は、ユーザーの場所に基づいています。これらの条件に一致する特定のペルソナを読み込むと、次のようにセグメントが正常に解決されたかどうかがわかります。
 
 ![解決されるセグメント](../assets/contexthub-segment-resolve.png)
 
@@ -280,7 +280,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 このようなテストは、ターゲットコンテンツや関連する&#x200B;**アクティビティ**&#x200B;および&#x200B;**エクスペリエンス**&#x200B;と組み合わせて、コンテンツページでも実行できます。
 
-アクティビティとエクスペリエンスを設定した場合は、アクティビティを使用してセグメントを簡単にテストできます。 アクティビティの設定について詳しくは、[ターゲットコンテンツのオーサリングに関するドキュメント](targeted-content.md)を参照してください。
+アクティビティとエクスペリエンスを設定した場合は、アクティビティを使用してセグメントを簡単にテストできます。アクティビティの設定について詳しくは、[ターゲットコンテンツのオーサリングに関するドキュメント](targeted-content.md)を参照してください。
 
 1. ターゲットコンテンツを設定したページの編集モードでは、ターゲットとなるコンテンツが矢印アイコンによって示されます。
 1. プレビューモードに切り替えてから、ContextHub を使用して、エクスペリエンスに設定されているセグメント化と一致しないペルソナに切り替えます。
@@ -288,4 +288,4 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ## セグメントの使用 {#using-your-segment}
 
-セグメントは、特定のターゲットオーディエンスが表示する実際のコンテンツを制御するために使用します。 See [Managing Audiences](audiences.md) for more information about audiences and segments and [Authoring Targeted Content](targeted-content.md) about using audiences and segments to target content.
+セグメントを使用して、特定のターゲットオーディエンスに向けられた実際のコンテンツを制御することができます。オーディエンスおよびセグメントについて詳しくは、[オーディエンスの管理](audiences.md)を参照してください。オーディエンスおよびセグメントを使用したコンテンツのターゲティングについては、[ターゲットコンテンツのオーサリング](targeted-content.md)を参照してください。
