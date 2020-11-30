@@ -2,10 +2,10 @@
 title: タグの使用
 description: タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 96bde8b7f169256b352c1663f902b874afd6a73b
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます。タグはキーワードやラベルとしてページ、アセット、その他のコンテンツに添付し、コンテンツや関連コンテンツを検索できます。
 
 * タグの作成および管理や、タグが適用されるコンテンツについては、「タグの管理」を参照してください。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* タグ付けのフレームワークおよびカスタムアプリケーションにタグを追加したりタグを拡張したりする方法について詳しくは、「開発者のためのタグ付け」を参照してください。<!-- See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.-->
+* See [Tagging for Developers](/help/implementing/developing/introduction/tagging-framework.md) for information about the tagging framework as well as including and extending tags in custom applications.
 
 ## タグを使用する 10 の理由 {#ten-reasons-to-use-tagging}
 
