@@ -32,7 +32,7 @@ ht-degree: 100%
       + [ページの作成と整理](authoring/fundamentals/organizing-pages.md)
       + [ページのコンテンツの編集](authoring/fundamentals/editing-content.md)
       + [リッチテキストエディター](authoring/fundamentals/rich-text-editor.md)
-      + [ページのプロパティ](authoring/fundamentals/page-properties.md)
+      + [ページプロパティ](authoring/fundamentals/page-properties.md)
       + [ページの公開](authoring/fundamentals/publishing-pages.md)
       + [コンテンツフラグメント](authoring/fundamentals/content-fragments.md)
       + [エクスペリエンスフラグメント](authoring/fundamentals/experience-fragments.md)
