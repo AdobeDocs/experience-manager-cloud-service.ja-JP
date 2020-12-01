@@ -2,10 +2,10 @@
 title: メタデータ - フラグメントのプロパティ
 description: コンテンツフラグメントのメタデータ（プロパティ）を表示して編集できます。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '111'
+ht-degree: 89%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 100%
 3. 「**基本**」タブに、表示または編集が可能なオプションが表示されます。
 
    * 「**画像をアップロード**」の対象となるサムネール
+   * **コンテンツフラグメント** モデルは、現在のフラグメントの作成に使用されるモデルを示します
    * **タイトル**
    * **説明**
    * **タグ**
