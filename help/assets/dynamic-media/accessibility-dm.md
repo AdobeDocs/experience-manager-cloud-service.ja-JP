@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 97c53ec4317657beeb3619b2f56915a1e649dd9b
+source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 1%
@@ -13,28 +13,28 @@ ht-degree: 1%
 ---
 
 
-# ダイナミックメディアでのアクセシビリティ {#working-with-three-d-assets-dm}
+# ダイナミックメディアでのアクセシビリティ{#working-with-three-d-assets-dm}
 
 ダイナミックメディアは、オーサリングユーザーインターフェイス全体で、JAWSやNVDAスクリーンリーダーなどのキーボード制御および支援テクノロジーをサポートしています。
 
 ## ダイナミックメディアでのキーボードのアクセシビリティのサポート
 
-ダイナミックメディアはAEM Assetsのプラグインなので、キーボードコントロールの動作のほとんどはAEM Assetsの動作とまったく同じです。 例えば、ダイナミックメディアの `Cancel` ボタンは、AEM Assetsと同じフォーカスハイライトを持ち、AEM Assetsと同じ `Spacebar` キーに反応します。 See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+ダイナミックメディアはAEM Assetsのプラグインなので、キーボードコントロールの動作のほとんどはAEM Assetsの動作とまったく同じです。 例えば、ダイナミックメディアの`Cancel`ボタンは、AEM Assetsと同じフォーカスハイライトを持ち、AEM Assetsと同じ`Spacebar`キーに反応します。 詳しくは、[アセットのキーボードショートカット](/help/assets/accessibility.md#keyboard-shortcuts)を参照してください。
 
 ダイナミックメディアの個々のユーザーインターフェイス要素でサポートされているキーストロークは、ほとんどの場合、明確で見つけやすいものです。 ダイナミックメディアのキーボードコントロールは、次の点について説明します。
 
-* ページ上のインタラクティブな要素間を移動する際に、キーストローク `Tab``Shift+Tab` とキーストロークを使用する機能。
-入力フォーカスを使用すると、タブ順序内の次のユーザーインターフェイス要素に進みます。 `Tab` を使用す `Shift+Tab` ると、入力フォーカスが前のユーザーインターフェイス要素に戻ります。
-フォーカストラバーサルは、画面上の自然なユーザインターフェイス要素の位置に従い、左から右、上から下の順に移動します。 また、エラーのあるフィールドがある場合は、を押してフォーカス `Tab` をそのフィールドに移動できます。
-* ボタン、ドロップダウンリストなどの標準的なユーザインターフェイス要素をアクティブにするために、 `Spacebar` および `Enter` キーを使用できます。
+* `Tab`と`Shift+Tab`のキー操作を使用して、ページ上のインタラクティブな要素間を移動する機能。
+`Tab`を使用すると、入力フォーカスがタブ順序の次のユーザーインターフェイス要素に進みます。`Shift+Tab`を使用すると、入力フォーカスが前のユーザーインターフェイス要素に戻ります。
+フォーカストラバーサルは、画面上の自然なユーザインターフェイス要素の位置に従い、左から右、上から下の順に移動します。 また、エラーのあるフィールドがある場合は、`Tab`を押してフォーカスを移動できます。
+* `Spacebar`キーと`Enter`キーを使用して、ボタン、ドロップダウンリストなどの標準的なユーザインターフェイス要素をアクティブにする機能。
 * アクティブな要素でキーボードのフォーカスハイライトを確認する機能。 入力フォーカスを有するユーザインターフェイス要素は、ユーザインターフェイス要素の周りにレンダリングされた境界として視覚的なフォーカス表示を受け取ることができる。
 * ホットスポットエディタでは、矢印キーなどのカスタムキーストロークを使用して複雑なユーザインターフェイス要素を操作し、ホットスポットの位置を変更できます。
-* インタラクティブビデオエディタで、を使用して画像 `Spacebar` を選択し、セグメントに追加できます。 また、 `Backspace` キーを使用して、「 **[!UICONTROL コンテンツ]** 」タブから選択したアイテムを削除できます。 また、必要に応じて `Tab` 機能を押し、ページ上のインタラクティブ要素間を移動します。
+* インタラクティブビデオエディターでは、`Spacebar`を使用して画像を選択し、セグメントに追加できます。 さらに、`Backspace`キーを使用して、「**[!UICONTROL コンテンツ]**」タブから選択したアイテムを削除できます。 また、必要に応じて`Tab`キーを押して、ページ上のインタラクティブ要素間を移動します。
 * 画像切り抜き/スマート切り抜きエディタでは、次の操作を実行できます。
    * フレームサイズを切り抜く、画像の位置を変更する、またはその両方には矢印キーを使用します。
-   * 最初の `Tab` 停止ボタンで、画像フレーム全体がハイライトされます。 その後、キーボードの矢印キーを使用してフレームの位置を変更できます。
-   * 次の4つの `Tab` ストップは、フレームの四隅です。 フレームの隅にフォーカスを置くと、隅がハイライトされます。 キーボードの矢印キーを使用して、フォーカスを移動できます。
-See [Editing the smart crop or smart swatch of a single image](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+   * 最初の`Tab`ストップで画像フレーム全体がハイライトされます。 その後、キーボードの矢印キーを使用してフレームの位置を変更できます。
+   * 次の4つの`Tab`ストップは、フレームの四隅です。 フレームの隅にフォーカスを置くと、隅がハイライトされます。 キーボードの矢印キーを使用して、フォーカスを移動できます。
+[単一の画像のスマート切り抜きまたはスマートスウォッチの編集](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)を参照してください。
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
@@ -44,20 +44,20 @@ See [Editing the smart crop or smart swatch of a single image](/help/assets/dyna
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## ダイナミックメディアでの支援テクノロジーのサポート {#assistive-technology=support-for-dm}
+## ダイナミックメディアでの支援テクノロジーのサポート{#assistive-technology=support-for-dm}
 
-ダイナミックメディアのユーザインターフェイス要素は、スクリーンリーダーなどの支援テクノロジーと連携します。 例えば、キーボードショートカットを使用してランドマークをナビゲートしたとき、またはキーボードショートカットを使用して領域を移動したときに、ページのランドマーク `D` が認識され `R`ます。 また、見出しのキーボードショートカットを使用して移動する際に、見出しのナレーションも行 `H`います。
+ダイナミックメディアのユーザインターフェイス要素は、スクリーンリーダーなどの支援テクノロジーと連携します。 例えば、キーボードショートカット`D`を使用してランドマークを移動したとき、またはキーボードショートカット`R`を使用して領域を移動したときに、ページのランドマークが認識されます。 また、見出しのキーボードショートカット`H`を使用してナビゲートする際に、見出しのナレーションも行います。
 
-## ダイナミックメディアビューアでのキーボードのアクセシビリティのサポート {#keyboard-accessibility-for-dm-viewers}
+## ダイナミックメディアビューアでのキーボードのアクセシビリティのサポート{#keyboard-accessibility-for-dm-viewers}
 
 すべての標準搭載のダイナミックメディアビューアコンポーネントは、ユーザーにとってキーボードのアクセシビリティをサポートします。
 
-詳しくは、『Dynamic Media Viewersリファレンスガイド』の [キーボードのアクセシビリティとナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) （英語のみ）を参照してください。
+『Dynamic Media Viewersリファレンスガイド』の「[キーボードのアクセシビリティとナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)」を参照してください。
 
-## Dynamic Media Viewerでの支援テクノロジーのサポート {#assistive-technology=support-for-dm-viewers}
+## Dynamic Mediaビューアでの支援テクノロジーのサポート{#assistive-technology=support-for-dm-viewers}
 
 すべてのダイナミックメディアビューアコンポーネントは、ARIA(Accessible Rich Internet Applications)の役割と属性をサポートしており、スクリーンリーダーなどの支援テクノロジーとの統合を強化します。
-Dynamic Media Viewersリファレンスガイドの **Viewerのカスタマイズに関するトピックで、** 支援テクノロジーサポート・ヘルプ・トピックを参照してください。 例えば、ビデオビューアの [支援技術サポート](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) （英語）またはインタラクティブ画像ビューアの [支援技術サポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only) （英語）を参照してください。
+Dynamic Media Viewersリファレンスガイドのビューアのカスタマイズに関するトピックで、**支援テクノロジーのサポート**&#x200B;のヘルプトピックを参照してください。 例えば、ビデオビューアの場合は[支援テクノロジーのサポート](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)を、インタラクティブ画像ビューアの場合は[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)を参照してください。
 
 >[!MORELIKETHIS]
 >
