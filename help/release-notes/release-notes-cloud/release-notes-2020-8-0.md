@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート.'
 translation-type: tm+mt
-source-git-commit: fe769e8acecbc173f2437edc292eeba2585f0509
+source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 100%
@@ -21,10 +21,10 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)機能。
 
-* AEM [SPA エディター](/help/implementing/developing/spa/introduction.md)で[ローンチを作成](/help/sites-cloud/authoring/launches/overview.md)する機能。
+* AEM [SPA エディター](/help/implementing/developing/hybrid/introduction.md)で[ローンチを作成](/help/sites-cloud/authoring/launches/overview.md)する機能。
 
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] cloud serviceとして  {#assets}
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
