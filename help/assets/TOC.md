@@ -5,9 +5,9 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: a298921410b4cba05ad341f7cee6d2ac9981bce4
+source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '432'
 ht-degree: 96%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 96%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Brand Portal] での  [!DNL Assets]  の設定](configure-aem-assets-with-brand-portal.md)
+   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
@@ -82,12 +82,15 @@ ht-degree: 96%
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
-   + [Dynamic Media ビューアプリセットの管理](dynamic-media/managing-viewer-presets.md)
-   + [Dynamic Media ビューアプリセットの適用](dynamic-media/viewer-presets.md)
-   + [Dynamic Media 画像プリセットの管理](dynamic-media/managing-image-presets.md)
-   + [Dynamic Media 画像プリセットの適用](dynamic-media/image-presets.md)
    + [イメージプロファイル](dynamic-media/image-profiles.md)
    + [ビデオプロファイル](dynamic-media/video-profiles.md)
+   + [Dynamic Media 画像プリセットの管理](dynamic-media/managing-image-presets.md)
+   + [Dynamic Media 画像プリセットの適用](dynamic-media/image-presets.md)
+   + [Dynamic Media ビューアプリセットの管理](dynamic-media/managing-viewer-presets.md)
+   + [Dynamic Media ビューアプリセットの適用](dynamic-media/viewer-presets.md)
+   + [バッチセットプリセット](dynamic-media/batch-set-presets-dm.md)
+   + [Dynamic Media を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Dynamic Media Classic を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [スマートイメージング](dynamic-media/imaging-faq.md)
    + [Dynamic Media アセットの配信](dynamic-media/delivering-dynamic-media-assets.md)
    + [Dynamic Media でのホットリンク保護の有効化](dynamic-media/hotlink-protection.md)
@@ -111,8 +114,6 @@ ht-degree: 96%
    + [ルールセットを使用した URL の変換](dynamic-media/using-rulesets-to-transform-urls.md)
    + [Dynamic Media アセットの公開](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Dynamic Media での選択的公開の操作](dynamic-media/selective-publishing.md)
-   + [Dynamic Media を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Dynamic Media Classic を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [DHTML ビューアのサポート終了に関する FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + [Flash ビューアのサポート終了に関する通知](dynamic-media/flash-viewers-eol.md)
