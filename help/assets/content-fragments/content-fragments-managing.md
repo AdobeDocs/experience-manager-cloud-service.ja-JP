@@ -2,21 +2,41 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
 translation-type: tm+mt
-source-git-commit: bb664c48c31aa19f71e881d31fcde5fdc3bb35a1
+source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 96%
 
 ---
 
 
 # コンテンツフラグメントの管理{#managing-content-fragments}
 
+<!--
+>[!CAUTION]
+>
+>Certain features for Content Fragments will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+>
+>Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
+
+>[!CAUTION]
+>
+>AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
+>
+>関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+
 コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
 >[!NOTE]
 >
->コンテンツフラグメントは、ページのオーサリングで使用します。[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
+>コンテンツフラグメントは次の場合に使用できます。
+>
+>* ページのオーサリング時；「[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)」を参照してください。
+>* [GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)でコンテンツフラグメントを使用するヘッドレスコンテンツ配信用。
+
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -75,6 +95,7 @@ ht-degree: 100%
 
 フラグメントを選択して、次の適用可能なアクションを含むツールバーを表示します。
 
+* **アセットを再処理**
 * **作成**
 * **ダウンロード**
 
@@ -89,17 +110,12 @@ ht-degree: 100%
 
    * フラグメントの要素、バリエーション、および関連付けられているコンテンツやメタデータと共に[コンテンツを編集するためにフラグメントを開く](/help/assets/content-fragments/content-fragments-variations.md)ことができます。
 
-* **タグを管理**
-* **コレクションに追加**
-
-   * フラグメントをコレクションに追加します。
-   * これは、[コレクションをフラグメントと関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content)際に実行できます。
-
-* **コピー**／**貼り付け**
-
-* **移動**
 * **クイック公開**
 * **公開を管理**
+* **タグを管理**
+* **コレクションに追加**
+* **コピー** (および **貼り付け**)
+* **移動**
 * **削除**
 
 >[!NOTE]
@@ -141,6 +157,8 @@ ht-degree: 100%
    * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [関連コンテンツ](#associating-content-with-your-fragment)
    * [メタデータ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   * [プレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
 
    ![モード](assets/cfm-managing-04.png)
 
@@ -150,7 +168,7 @@ ht-degree: 100%
    >
    >「**保存**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
+## 保存、キャンセルおよびバージョン  {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -204,19 +222,19 @@ ht-degree: 100%
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理  {#creating-and-managing-variations-within-your-fragment}
 
 マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
+## コンテンツをフラグメントと関連付ける  {#associating-content-with-your-fragment}
 
 フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
-## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## フラグメントのメタデータ（プロパティ）の表示と編集  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 「[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)」タブを使用し、フラグメントのプロパティを表示して編集できます。
 
-## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
+## コンテンツフラグメントのタイムライン  {#timeline-for-content-fragments}
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
@@ -236,11 +254,10 @@ ht-degree: 100%
    * **削除**
 
 >[!NOTE]
->
->コメントは次のとおりです。
->* すべてのアセットの標準機能
->* タイムラインで追加
->* フラグメントアセットに関連付けられる
+コメントは次のとおりです。
+* すべてのアセットの標準機能
+* タイムラインで追加
+* フラグメントアセットに関連付けられる
 
 注釈（コンテンツフラグメント用）は次のとおりです。
 * フラグメントエディターで入力
@@ -275,8 +292,7 @@ ht-degree: 100%
 * 「**完了**」を選択すると、コンソールに戻ります
 
 >[!NOTE]
->
->フラグメントの比較中にフラグメントコンテンツを編集することはできません。
+フラグメントの比較中にフラグメントコンテンツを編集することはできません。
 
 ![比較](assets/cfm-managing-06.png)
 
@@ -293,9 +309,8 @@ ht-degree: 100%
 ## フラグメントの公開と参照 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
->まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
+まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 コンテンツフラグメントを使用するには、パブリッシュ環境で公開する必要があります。次の方法で公開できます。
 
@@ -303,8 +318,7 @@ ht-degree: 100%
 * [フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
->
->フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
+フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -314,12 +328,10 @@ ht-degree: 100%
 2. フラグメントを選択します。
 
    >[!NOTE]
-   >
-   >**削除**&#x200B;アクションはクイックアクションとして実行できません。
+   **削除**&#x200B;アクションはクイックアクションとして実行できません。
 
 3. ツールバーから「**削除**」を選択します。
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   >
-   >フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
