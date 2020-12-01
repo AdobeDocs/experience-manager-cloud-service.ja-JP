@@ -2,39 +2,77 @@
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 85f47a417e73432d776c0ed4f5cdb7673ce41a70
+source-git-commit: 468d6f6a87c9a4794d5187146f7d879433cafa6f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 100%
+source-wordcount: '1997'
+ht-degree: 88%
 
 ---
 
 
 # コンテンツフラグメントの操作{#working-with-content-fragments}
 
+<!--
+>[!CAUTION]
+>
+>Certain features for Content Fragments will be released in early 2021.
+>
+>The related documentation is already available for preview purposes.
+>
+>Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
+-->
+
+>[!CAUTION]
+>
+>AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
+>
+>関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+
 [Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
 * 作成されるフラグメントの構造を事前定義する[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)に基づいています。
+* 構造の範囲は次のとおりです。
+   * 基本
+      * 例えば、1つの複数行テキストフィールドを指定します。
+      * 単純なコンテンツをページオーサリングで使用するために準備する場合に使用できます。
+   * 複雑な
+      * テキスト、数値、ブール値、データと時間など、様々なデータタイプの多くのフィールドの組み合わせ。
+      * ページオーサリング用により構造化されたコンテンツを準備する目的、またはアプリケーションに配信する目的のいずれかで使用できます。
+
+<!--
+  * Nested
+    * The reference data types available allow you to nest your content.
+    * Tends to be used for delivery to your application.
+-->
 
 コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
 
 * コンポーネントを使用して、配信するフラグメントの要素を管理できます。
 * API 配信に使用されるページで複数のコンテンツフラグメントコアコンポーネントを追加して、一括配信できます。
 
-以降のページでは、次のような、コンテンツフラグメントを作成、構成、管理するためのタスクについて説明します。
+このページと次のページでは、コンテンツフラグメントの作成、設定、保守および使用に関するタスクについて説明します。
 
-* [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md) - コンテンツフラグメントを作成し、編集、公開、参照します。
+* [インスタンスに対するコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md) - モデルを有効化、作成および定義します。
+* [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md) - コンテンツフラグメントを作成し、編集、公開、参照します。
 * [バリエーション - フラグメントコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md) - フラグメントコンテンツをオーサリングし、マスターのバリエーションを作成します。
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) - フラグメントに Markdown 構文を使用します。
 * [関連コンテンツの使用](/help/assets/content-fragments/content-fragments-assoc-content.md) - 関連コンテンツを追加します。
 * [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md) - フラグメントのプロパティを表示および編集します。
+* [Content Fragments, at to GraphQL, to deliver content](/help/assets/content-fragments/content-fragments-graphql.md) for use in your applications. これに役立つように、[JSON出力](/help/assets/content-fragments/content-fragments-json-preview.md)をプレビューできます。
 
 >[!NOTE]
 >
->以降のページは、[コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)と合わせてお読みください。
+>これらのページは、次の項目と組み合わせて読むことができます。
+>
+>* [コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
+>* [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
+>* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM GraphQL API（コンテンツフラグメントで使用）](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
 
@@ -51,7 +89,23 @@ ht-degree: 100%
 * 特定のチャネル向けにコンテンツのバリエーションをデザインする。
 * アセットを挿入することでテキストに画像を追加する（混在メディアフラグメント）
 
+<!--
+* Create nested content to reflect the complexity of your data.
+-->
+
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
+
+>[!NOTE]
+>
+>**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
+>* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
+>* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+
+>
+>
+エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
+>
+>詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 
@@ -71,13 +125,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!NOTE]
 >
->**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
->* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
->* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
->
->エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
->
->詳細については、](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
+>Cloud ServiceとしてのAEM Sites向けヘッドレス開発の紹介は、[ヘッドレスとAEM](/help/implementing/developing/headless/introduction.md)を参照。
 
 >[!NOTE]
 >
@@ -101,6 +149,8 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 * [コンテンツフラグメントコンポーネント（参照コンポーネント）を介してページエディター内で](/help/sites-cloud/authoring/fundamentals/content-fragments.md)使用されます。
 
    * **コンテンツフラグメント**&#x200B;コンポーネントを使用できるのはページの作成者です。作成者は、コンテンツフラグメントコンポーネントを使用して、必要なコンテンツフラグメントを HTML または JSON 形式で参照し、配信できます。
+
+* [AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)を使用してアクセスできます。
 
 コンテンツフラグメントは、次のようなコンテンツ構造です。
 
@@ -168,13 +218,13 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
    * 複数行テキスト要素（任意のフラグメントタイプ）にのみ追加できます。
    * 前のテキスト（段落）に添付されます。
 
-   >[!CAUTION]
-   >
-   >プレーンテキスト形式に切り替えることで、（誤って）フラグメントから削除するおそれがあります。
+      >[!CAUTION]
+      >
+      >フラグメントからアセットが（誤って）削除される場合は、プレーンテキスト形式に切り替えます。
 
-   >[!NOTE]
-   >
-   >ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、または Assets ブラウザー内のアセットを使用します。
+      >[!NOTE]
+      >
+      >ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、または Assets ブラウザー内のアセットを使用します。
 
 * **関連コンテンツ**
 
@@ -237,17 +287,20 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 ### フラグメントを利用するための要件 {#required-by-fragments}
 
-コンテンツフラグメントを作成、編集、使用するためには、次のものが必要です。
+コンテンツフラグメントを作成するには、次の手順を実行します。
 
 * **コンテンツモデル**
 
-   * [有効化されてから、ツールを使用して作成されます](/help/assets/content-fragments/content-fragments-models.md)。
+   * 設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md)を使用して[有効にします。
+   * [ツール](/help/assets/content-fragments/content-fragments-models.md)を使用して作成されます。
    * [フラグメントを作成](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)するために必要です。
    * フラグメントの構造（タイトル、コンテンツ要素、タグ定義）を定義します。
-   * コンテンツモデル定義にはタイトルと 1 つのデータ要素が必要です。その他すべてはオプションです。
+   * コンテンツモデルの定義には、タイトルと1つのデータ要素が必要です。それ以外はすべてオプションです。
    * モデルでは、デフォルトコンテンツを定義できます（該当する場合）。
    * 作成者は、フラグメントコンテンツのオーサリング時に、定義された構造を変更することはできません。
    * 依存コンテンツフラグメントの作成後にモデルに対しておこなった変更は、これらのコンテンツフラグメントに影響を与える可能性があります。
+
+コンテンツフラグメントをページオーサリングに使用するには、次の方法も必要です。
 
 * **コンテンツフラグメントコンポーネント**
 
