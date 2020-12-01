@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 4420fd95388ba2f389192f767b6d612bdc2b18a9
+source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 96%
+source-wordcount: '436'
+ht-degree: 95%
 
 ---
 
@@ -79,6 +79,7 @@ ht-degree: 96%
    + [Dynamic Media の操作](dynamic-media/dynamic-media.md)
    + [Dynamic Media の設定](dynamic-media/config-dm.md)
    + [Dynamic Media のトラブルシューティング](dynamic-media/troubleshoot-dm.md)
+   + [ダイナミックメディアでのアクセシビリティ](dynamic-media/accessibility-dm.md)
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
