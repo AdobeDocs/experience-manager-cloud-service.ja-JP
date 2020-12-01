@@ -2,10 +2,10 @@
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 100%
+source-wordcount: '2069'
+ht-degree: 98%
 
 ---
 
@@ -28,25 +28,27 @@ ht-degree: 100%
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：画像セット {#quick-start-image-sets}
+## クイックスタート：画像セット  {#quick-start-image-sets}
 
 すぐに使い始めるには：
 
+1. オプション. [バッチセットプリセットを作成し、スピンセット画像をアップロードする新しいフォルダに](/help/assets/dynamic-media/batch-set-presets-dm.md) 適用します。
+
+   バッチセットプリセットを使用すると、画像セットの作成を自動化できます。
+
+   >[!IMPORTANT]
+   >
+   >バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
+
 1. [複数ビュー用のプライマリソース画像をアップロードします。](#uploading-assets-in-image-sets)
 
-   まずは画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最大サイズで 2,000 ピクセル以上の画像を使用してください。AEM Assets では多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
+   画像セット用の画像をアップロードします。 ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最大サイズで 2,000 ピクセル以上の画像を使用してください。AEM Assets では多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
 
 1. [画像セットを作成します。](#creating-image-sets)
 
    画像セットで、画像セットビューア内のサムネール画像をクリックします。
 
    Assets で画像セットを作成するには、**[!UICONTROL 作成／画像セット]**&#x200B;をタップまたはクリックします。次に、画像を追加して「**[!UICONTROL 保存]**」をクリックします。
-
-   [バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して画像セットを自動的に作成することもできます。
-
-   >[!IMPORTANT]
-   >
-   >バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
    詳しくは、[アップロード用の画像セットアセットの準備およびファイルのアップロード](#uploading-assets-in-image-sets)を参照してください。
 
@@ -105,13 +107,13 @@ ht-degree: 100%
 >* ブラック、ブラウンおよびグリーンの色のサムネール。
 
 
-## 画像セットの作成 {#creating-image-sets}
+## 画像セットの作成  {#creating-image-sets}
 
 画像セットは、ユーザーインターフェイスまたは API 経由で作成できます。ここでは、UI で画像セットを作成する方法について説明します。
 
 >[!NOTE]
 >
->[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して画像セットを自動的に作成することもできます。
+>[バッチセットプリセット](/help/assets/dynamic-media/batch-set-presets-dm.md)を使用して画像セットを自動的に作成することもできます。
 >**重要：**&#x200B;バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
 画像セットに追加したアセットは、自動的に英数字順で追加されます。追加後に、手動でアセットの順番を変更したり、並べ替えたりすることができます。
@@ -164,9 +166,9 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した画像セットが、作成先のフォルダーに表示されます。
 
-## 画像セットの表示 {#viewing-image-sets}
+## 画像セットの表示  {#viewing-image-sets}
 
-画像セットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用して自動的に作成することもできます。
+画像セットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/batch-set-presets-dm.md)を使用して自動的に作成することもできます。
 
 >[!IMPORTANT]
 >
@@ -192,7 +194,7 @@ ht-degree: 100%
 >
 >[画像セットの編集](#editing-image-sets)の説明に従って、ユーザーインターフェイスを通じて画像セットを表示できます。
 
-## 画像セットの編集 {#editing-image-sets}
+## 画像セットの編集  {#editing-image-sets}
 
 画像セットには、次のような様々な編集タスクを実行できます。
 
@@ -230,10 +232,10 @@ ht-degree: 100%
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
 
-## 画像セットのプレビュー {#previewing-image-sets}
+## 画像セットのプレビュー  {#previewing-image-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## 画像セットの公開 {#publishing-image-sets}
+## 画像セットの公開  {#publishing-image-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
