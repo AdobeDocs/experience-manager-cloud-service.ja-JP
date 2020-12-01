@@ -2,10 +2,10 @@
 title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 100%
+source-wordcount: '1835'
+ht-degree: 96%
 
 ---
 
@@ -22,11 +22,19 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
+>アセットユーザーインターフェイスについて詳しくは、[タッチ操作対応UIでのアセットの管理](/help/assets/manage-digital-assets.md)を参照し、画像セットアセットがアップロードされる新しいフォルダーに適用します。
 
 ## クイックスタート：スピンセット {#quick-start-spin-sets}
 
 スピンセットをすぐに使い始めるには、次の手順を実行します。
+
+1. オプション. [バッチセットプリセットを作成し、新しいアセ](/help/assets/dynamic-media/batch-set-presets-dm.md) ットフォルダに適用します。
+
+   バッチセットプリセットを使用すると、スピンセットの作成を自動化できます。
+
+   >[!IMPORTANT]
+   >
+   >バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
 1. [複数ビュー用の画像をアップロードします。](#uploading-assets-for-spin-sets)
 
@@ -37,10 +45,6 @@ ht-degree: 100%
    スピンセットを作成するには、**[!UICONTROL 作成／スピンセット]**&#x200B;を選択し、セットの名前を付け、アセットを選択し、画像の表示順を選択します。
 
    [セレクターの操作](/help/assets/dynamic-media/working-with-selectors.md)を参照してください。
-
-   >[!NOTE]
-   >
-   >[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)を使用してスピンセットを自動的に作成することもできます。**重要：**&#x200B;バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
 1. 必要に応じて[スピンセットビューアプリセット](/help/assets/dynamic-media/managing-viewer-presets.md)を設定します。
 
@@ -86,7 +90,7 @@ ht-degree: 100%
 * 製品の細部に十分に光を当て、ピントを合わせるようにします。
 * ファッション衣料の場合は、マネキンやモデルに着せてスピン画像を撮影します。多くの場合、ガラス製のマネキンを使用してマネキンを完全にマスクするか、画像内に定型化されたマネキンを表示します。角度を定義することで、モデルによるスピンセットを作成できます。床にテープを貼って角度をマークし、モデルが撮影ごとに動いて向きを変えるための手助けをします。
 
-## スピンセットの作成 {#creating-spin-sets}
+## スピンセットの作成  {#creating-spin-sets}
 
 ここでは、スピンセットを作成する方法について説明します。
 
@@ -143,7 +147,7 @@ ht-degree: 100%
 
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成したスピンセットが、作成先のフォルダーに表示されます。
 
-## スピンセットの表示 {#viewing-spin-sets}
+## スピンセットの表示  {#viewing-spin-sets}
 
 スピンセットは、ユーザーインターフェイスで作成することも、[バッチセットプリセット](/help/assets/dynamic-media/config-dm.md)を使用して自動的に作成することもできます。ただし、バッチセットプリセットを使用して作成したセットは、ユーザーインターフェイスに表示&#x200B;*されません*。バッチセットプリセットを使用して作成したセットには、3 つの方法でアクセスできます（これらの方法は、スピンセットをユーザーインターフェイスで作成した場合も使用できます）。
 
@@ -201,10 +205,10 @@ ht-degree: 100%
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をクリックします。
 
-## スピンセットのプレビュー {#previewing-spin-sets}
+## スピンセットのプレビュー  {#previewing-spin-sets}
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## スピンセットの公開 {#publishing-spin-sets}
+## スピンセットの公開  {#publishing-spin-sets}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
