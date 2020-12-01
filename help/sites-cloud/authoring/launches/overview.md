@@ -2,10 +2,10 @@
 title: ローンチ
 description: ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 100%
 
 * [ローンチの作成](/help/sites-cloud/authoring/launches/creating.md)
 * [ローンチの編集](/help/sites-cloud/authoring/launches/editing.md)
+* [起動回数内でのページの管理](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [Timewarpを使用した起動回数に基づくコンテンツのプレビュー](/help/sites-cloud/authoring/launches/preview.md)
 * [ローンチの昇格](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## ローンチ - イベントの順序 {#launches-the-order-of-events}
