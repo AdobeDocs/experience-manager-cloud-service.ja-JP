@@ -2,10 +2,10 @@
 title: ローンチの編集
 description: 'ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。 '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 
 1. [「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)にアクセスして使用可能なアクションを表示します。
 1. 「**このページに移動**」を選択して編集するページを開きます。
+
+ページを編集すると、上部のツールバーに、「**離れる**」および「**移動**」オプションと共に表示されます。
+
+![ページエディターから起動を移動](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
 ### ライブコピーへのローンチページサブジェクトを編集 {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -39,7 +43,7 @@ ht-degree: 100%
 
 おこなった変更を追跡するために、ローンチを&#x200B;**参照**&#x200B;で表示して、ローンチページをそのソースページと比較することができます。
 
-1. **サイト**&#x200B;コンソールで、[ローンチのソースページに移動してそれを選択します](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
+1. **サイト**&#x200B;コンソールで、[起動のソースページに移動し、](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)を1つ選択します。
 1. **[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開いて、「**ローンチ**」を選択します。
 1. 特定のローンチを選択してから、次のように&#x200B;**ソースと比較します**。
 
@@ -65,7 +69,7 @@ ht-degree: 100%
 >
 >ローンチにページを追加するには、ページが共通の言語ルートの下（単一のサイト内）にある必要があります。
 
-## ローンチの設定の編集 {#editing-a-launch-configuration}
+## ローンチの設定の編集  {#editing-a-launch-configuration}
 
 ローンチのプロパティは、任意のタイミングで編集できます。
 
@@ -78,7 +82,7 @@ ht-degree: 100%
 1. 必要な変更を加え、「**保存**」で確定します。
    * 「**ローンチ日**」フィールドと「**実稼動準備完了**」フィールドの目的とインタラクションについて詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください。
 
-## ページのローンチステータスの確認 {#discovering-the-launch-status-of-a-page}
+## ページのローンチステータスの確認  {#discovering-the-launch-status-of-a-page}
 
 「参照」タブから特定のローンチを選択すると、ステータスが表示されます（[「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)を参照）。
 
