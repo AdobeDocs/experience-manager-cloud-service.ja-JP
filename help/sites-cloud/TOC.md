@@ -5,10 +5,10 @@ user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
 breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 translation-type: tm+mt
-source-git-commit: d311c87c1ae1cdfe9f50d41750aecbab960dc7ef
+source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 94%
 
 ---
 
@@ -58,7 +58,9 @@ ht-degree: 100%
    + ローンチ {#launches}
       + [ローンチの操作](authoring/launches/overview.md)
       + [ローンチの作成](authoring/launches/creating.md)
+      + [起動でのページの管理](authoring/launches/managing-pages.md)
       + [ローンチの編集](authoring/launches/editing.md)
+      + [Timewarpでの起動のプレビュー](authoring/launches/preview.md)
       + [ローンチの昇格](authoring/launches/promoting.md)
    + ワークフロー {#workflows}
       + [ワークフローの操作](authoring/workflows/overview.md)
@@ -75,6 +77,7 @@ ht-degree: 100%
       + [オファーの作成と管理](authoring/personalization/offers.md)
       + [セグメント化について](authoring/personalization/segmentation.md)
       + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+      + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [ワークフローの管理](administering/workflows-administering.md)
 + AEM as a Cloud Service との統合{#integrations}
