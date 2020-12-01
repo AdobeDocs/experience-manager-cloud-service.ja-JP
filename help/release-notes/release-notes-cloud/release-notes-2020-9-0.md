@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の 2020.9.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート。'
 translation-type: tm+mt
-source-git-commit: db5ca67c583166f4ecb09884a064dfc1378f436e
+source-git-commit: 701d9ff3c9553c28bce0ef417487facedb22373f
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 100%
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ### [!DNL Sites] の新機能 {#what-is-new-sites}
 
-* 単一ページアプリケーション（SPA）エディター JavaScript SDK が[オープンソース](/help/implementing/developing/spa/reference-materials.md)になりました。
+* 単一ページアプリケーション（SPA）エディター JavaScript SDK が[オープンソース](/help/implementing/developing/hybrid/reference-materials.md)になりました。
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] cloud serviceとして  {#assets}
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
