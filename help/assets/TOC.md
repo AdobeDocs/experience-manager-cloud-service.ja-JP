@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 302830f46f5a0cedcb717b4ab2e2d95f1c9904d4
+source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 95%
+source-wordcount: '471'
+ht-degree: 89%
 
 ---
 
@@ -55,6 +55,8 @@ ht-degree: 95%
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
+   + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+   + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
@@ -66,13 +68,17 @@ ht-degree: 95%
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
+   + [コンテンツフラグメントとGraphQLとのヘッドレス配信](content-fragments/content-fragments-graphql.md)
    + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
+   + [インスタンスに対するコンテンツフラグメント機能の有効化](content-fragments/content-fragments-configuration-browser.md)
    + [コンテンツフラグメントモデル](content-fragments/content-fragments-models.md)
    + [バリエーション - フラグメントコンテンツのオーサリング](content-fragments/content-fragments-variations.md)
    + [コンテンツフラグメントを関連付けられたコンテンツ](content-fragments/content-fragments-assoc-content.md)
    + [メタデータ - フラグメントのプロパティ](content-fragments/content-fragments-metadata.md)
    + [コンテンツフラグメント - 削除に関する考慮事項](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
+   + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [プレビュー- JSON表現](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League 提供の Dynamic Media ニュースレター](dynamic-media/dynamic-media-newsletter.md)
    + [Dynamic Media のセットアップ](dynamic-media/administering-dynamic-media.md)
