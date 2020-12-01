@@ -2,10 +2,10 @@
 title: ページバージョンの処理
 description: ページのバージョンを作成、比較および復元します
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 83c6301cd804ea1bb41204cf68d9a8de0b373678
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 100%
+source-wordcount: '1521'
+ht-degree: 99%
 
 ---
 
@@ -116,6 +116,7 @@ ht-degree: 100%
    >次のいずれかの場合：
    >* 子ページを持たない単一のページを選択
    >* フォルダー内のどのページにもバージョンがない
+
    >
    >該当するバージョンがないため、表示は空になります。
 
@@ -189,9 +190,13 @@ ht-degree: 100%
 
 1. 「**現在のバージョンと比較**」を選択します。[ページの比較](/help/sites-cloud/authoring/features/page-diff.md)が開き、ページの違いが表示されます。
 
-## タイムワープ {#timewarp}
+## タイムワープ  {#timewarp}
 
 タイムワープは、過去の特定の時間にページが&#x200B;*公開された*&#x200B;状態をシミュレートするために設計された機能です。
+
+>[!NOTE]
+>
+>[Timewarpは、未来をプレビューする起動回数と組み合わせて使用することもできます](/help/sites-cloud/authoring/launches/preview.md)。
 
 コンテンツの作成は継続的な共同作業プロセスなので、コンテンツの変更内容を把握するために、公開された Web サイトを作成者が経時的に追跡できるようにすることがタイムワープの目的です。この機能では、ページのバージョンを使用してパブリッシュ環境の状態を判断します。
 
