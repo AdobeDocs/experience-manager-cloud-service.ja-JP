@@ -99,7 +99,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 | `replace` | ブール値 | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
 
 >!![NOTE]
-アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
+>アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
@@ -124,8 +124,9 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 * `AssetManager`Java API（`AssetManager.createAsset(..)` など）
 
 >[!MORELIKETHIS]
-* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
-* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
+>
+>* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
+>* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
 
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
@@ -193,5 +194,6 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+>
+>* [Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 
