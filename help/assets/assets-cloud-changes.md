@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Assets as a Cloud Service の主な変更点
-description: Adobe Experience Manager 6.5 と比較した、AEM Cloud Service の Adobe Experience Manager Assets の主な変更点.
+title: Adobe Experience Manager Assets as a の主な変更点 [!DNL Cloud Service]
+description: AEM [!DNL Cloud Service] のAdobe Experience Manager資産に対する顕著な変更点は、Adobe Experience Manager6.5と比較してa0/>です。
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 99%
+source-wordcount: '601'
+ht-degree: 80%
 
 ---
 
 
-# Experience Manager Assets as a Cloud Service の主な変更点 {#notable-changes}
+# Experience Manager Assets as a の主な変更点 [!DNL Cloud Service] {#notable-changes}
 
-Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。ただし、Adobe Experience Manager as a Cloud Service と、On-Premise や Adobe Managed Services の Adobe Experience Manager Assets を比較すると、両者には多くの違いがあります。このドキュメントでは、Assets 機能の重要な違いについて説明します。
+[!DNL Cloud Service]としてのAdobe Experience Managerは、AEMプロジェクトを管理するための新機能と可能性を数多く提供します。 ただし、Experience ManagerアセットのオンプレミスとAdobe管理サービスの間には、[!DNL Cloud Service]としてのExperience Managerと比べて多くの違いがあります。 このドキュメントでは、Assets 機能の重要な違いについて説明します。
 
 Adobe Experience Manager 6.5 との主な違いは次の点です。
 
@@ -22,14 +22,14 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 
 >[!NOTE]
 >
->このドキュメントでは、AEM Assets の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
+>このドキュメントでは、AEM Assets の主な変更点について重点的に説明します。[!DNL Cloud Service]や他のモジュールとしてのExperience Managerに関する一般的な変更点については、以下を参照してください。
 >
->* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
->* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
->* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
->* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
->* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a の概要 [!DNL Cloud Service]](/help/overview/introduction.md)
+>* [AEMの概要 [!DNL Cloud Service]  — 新機能と違い](/help/overview/what-is-new-and-different.md)
+>* [Adobe Experience Manager as a のアーキテクチャ](/help/core-concepts/architecture.md)[!DNL Cloud Service]
+>* [AEMに対する主な変更点 [!DNL Cloud Service] （リリースノート）](/help/release-notes/aem-cloud-changes.md)
+>* [～としてのAEM Sitesの顕著な変化 [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
+>* [チュートリアル [!DNL Cloud Service] としてのAdobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 
 ## アセットの取り込みとアップロード {#asset-ingestion}
@@ -56,4 +56,4 @@ Adobe Experience Manager 6.5 との主な違いは次の点です。
 
 ## クラシック UI の削除 {#classic-ui}
 
-Adobe Experience Manager as a Cloud Service ではクラシック UI が使用できなくなりました。標準のインターフェイスは、タッチ対応 UI です。
+Classic UIは、Experience Managerでは[!DNL Cloud Service]として使用できなくなりました。 標準のインターフェイスは、タッチ対応 UI です。
