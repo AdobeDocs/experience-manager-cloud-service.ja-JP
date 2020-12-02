@@ -102,7 +102,7 @@ CRX リポジトリのオプションでノード構造を手動で作成する�
 1. 次のいずれかの操作をおこないます。
 
    * 「**[!UICONTROL プロパティ名]**」フィールドで、オプションのノードを定義する JSON ファイルのパスを指定し、対応するキーと値のペアを指定します。
-   * Tap ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) next to the Options field to specify the display text and value for the options you want to supply in the Filters panel. To add another option, tap/click ![Assets add icon](assets/do-not-localize/aem_assets_add_icon.png) and repeat the step.
+   * フィルターパネルで指定するオプションの表示テキストと値を指定するには、「オプション」フィールドの横のアセット追加アイコン![をタップします。 ](assets/do-not-localize/aem_assets_add_icon.png)別のオプションを追加するには、![アセットを追加アイコン](assets/do-not-localize/aem_assets_add_icon.png)をタップまたはクリックし、手順を繰り返します。
 
 1. ユーザーが一度に複数のファイルタイプのオプション（例：「画像」、「ドキュメント」、「マルチメディア」、「アーカイブ」）を選択可能にするには、「**[!UICONTROL 単一の選択]**」チェックボックスをオフにします。「**[!UICONTROL 単一の選択]**」をオンにすると、ユーザーは一度に 1 つのファイルタイプのオプション選択できます。
 
