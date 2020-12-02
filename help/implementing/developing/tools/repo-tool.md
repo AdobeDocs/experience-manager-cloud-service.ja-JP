@@ -12,23 +12,23 @@ ht-degree: 51%
 
 # AEM Repo ツール {#aem-repo-tool}
 
-AEM Repo ツールは、FTP に相当するコマンドラインを使用してローカルファイルシステムと AEM サーバーの間で JCR コンテンツを転送するためのシンプルなソリューションです。The AEM Repo Tool is similar to the [Jackrabbit FileVault Maven plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin), but is faster, has minimal dependencies, and is a simple bash script.
+AEM Repo ツールは、FTP に相当するコマンドラインを使用してローカルファイルシステムと AEM サーバーの間で JCR コンテンツを転送するためのシンプルなソリューションです。AEM Repo Toolは[Jackrabbit FileVault Mavenプラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin)に似ていますが、高速で依存性が最小限で、単純なbashスクリプトです。
 
 このツールを使用すると、開発者向けのファイルの転送が簡単になり、EclipseとIntelliJに統合して開発をさらに効率化できます。
 
 ## 概要 {#overview}
 
-For a given path inside a `jcr_root` FileVault structure on the filesystem, the AEM Repo Tool creates a package with a single filter for the entire subtree and pushes that to the server (similar to FTP `put`), fetches it from the server ( `get`) or compares the differences ( `status` and `diff`).
+ファイルシステム上の`jcr_root` FileVault構造内の特定のパスに対して、AEM Repo Toolはサブツリー全体に対して単一のフィルタを持つパッケージを作成し（FTP `put`と同様）サーバにプッシュし、サーバから取り込むか（ `status`と`diff`）の違いを比較します。`get`
 
-The tool does not support multiple filter paths or FileVault&#39;s `filter.xml`.
+このツールは、複数のフィルタパスまたはFileVaultの`filter.xml`をサポートしていません。
 
 >[!CAUTION]
 >
 >AEM Repo ツールは、指定したファイル全体またはディレクトリを常に上書きすることに注意してください。
 
-## ダウンロードとドキュメント {#download-and-documentation}
+## ダウンロードとドキュメント  {#download-and-documentation}
 
-The [AEM Repo Tool is available on GitHub via this link](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) along with detailed installation and usage instructions.
+[AEM Repo Toolは、GitHub上で、このリンク](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo)と共に、詳細なインストールおよび使用方法に関する説明と共に利用できます。
 
 AEM Repo ツールのソースをダウンロードする場合は、GitHub プロジェクト（次のリンク）を参照してください。
 
