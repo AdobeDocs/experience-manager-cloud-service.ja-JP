@@ -40,7 +40,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 1 つのアクティビティに複数のエクスペリエンスを定義できます。[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console)または[ターゲットモード](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)を使用して、アクティビティにエクスペリエンスを追加できます。
 
-## オファー {#offers}
+## オファー  {#offers}
 
 オファーは、それぞれのエクスペリエンスでページ上に表示されるコンテンツです。オーディエンス向けコンテンツの効果を最大限に高めるには、異なるエクスペリエンスに異なるオファーを使用します。
 
@@ -48,7 +48,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-cloud/authoring/personalization/offers.md)を使用します。[ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)するときは、単一エクスペリエンス用のオファーを作成するか、オファーライブラリからオファーを追加します。
 
-## ターゲティングエンジン {#targeting-engine}
+## ターゲティングエンジン  {#targeting-engine}
 
 ターゲティングエンジンは、ターゲットコンテンツ用のロジックを動かすメカニズムです。使用可能なターゲティングエンジンには AEM と Adobe Target の 2 種類があり、どちらを使用するかは[アクティビティ](/help/sites-cloud/authoring/personalization/activities.md)で設定します。
 
