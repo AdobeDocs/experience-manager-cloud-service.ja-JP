@@ -3,9 +3,9 @@ title: ビデオアセットの管理
 description: ' [!DNL Adobe Experience Manager] でビデオアセットをアップロード、プレビュー、注釈、公開します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '537'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ## 処理プロファイルを使用したトランスコード {#transcode-video}
 
-[!DNL Experience Manager] as a Cloud Service では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールも可能です。
+[!DNL Experience Manager][!DNL Cloud Service] as a では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールも可能です。
 
 ![Experience Manager でのビデオトランスコードの処理プロファイルの作成](assets/video-processing-profile-for-mp4.png)
 
