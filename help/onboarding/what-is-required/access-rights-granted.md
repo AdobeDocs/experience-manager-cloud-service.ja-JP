@@ -12,7 +12,7 @@ ht-degree: 67%
 
 # アクセス権の付与 {#access-rights-granted}
 
-Adobe will create an **Organization** identifier for your company in the Adobe Identity Management System (IMS), where all your users and their permissions can be managed. Each user, who needs to be a member of this organization, and will be granted access to any of the [!UICONTROL Experience Cloud] service, will need to have their own **Adobe ID**.
+Adobeは、AdobeIdentity Managementシステム(IMS)に、会社の&#x200B;**組織** IDを作成します。このIDでは、すべてのユーザーとユーザーの権限を管理できます。 この組織のメンバーである必要があり、[!UICONTROL Experience Cloud]サービスへのアクセスを許可される各ユーザーは、独自の&#x200B;**Adobe ID**&#x200B;を持つ必要があります。
 
 ## ユーザーの ID タイプ {#user-identity-types}
 
