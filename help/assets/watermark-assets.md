@@ -3,10 +3,10 @@ title: アセットの透かしの設定
 description: デジタルアセットへの透かしの追加。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af27295b618fb3909d43ed94a74148f7c4f59c10
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 87%
+source-wordcount: '194'
+ht-degree: 88%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 87%
 
 1. 透かしとして PNG ファイルが適用されます。このファイルを DAM リポジトリにアップロードします。
 
-1. 環境に関連付けられた [!DNL Cloud Manager] Git リポジトリにアクセスします。リポジトリ内の`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`という名前のファイルを次の内容でコミットします。 手順については、[Cloud Service](/help/implementing/deploying/configuring-osgi.md)として [!DNL Experience Manager] OSGi設定を行う方法を参照してください。
+1. 環境に関連付けられた [!DNL Cloud Manager] Git リポジトリにアクセスします。リポジトリ内の`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`という名前のファイルを次の内容でコミットします。 手順については、[ [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md)として [!DNL Experience Manager] の&lt;a0/>OSGi設定を行う方法を参照してください。
 
    ```json
    {
