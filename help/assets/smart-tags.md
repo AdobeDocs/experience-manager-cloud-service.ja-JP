@@ -1,6 +1,6 @@
 ---
 title: AI生成タグを使用した画像の自動タグ付け
-description: Tag images using artificially intelligent services that apply contextual and descriptive business tags using [!DNL Adobe Sensei] services.
+description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する、人工的にインテリジェントなサービスを使用して画像にタグ付けします。'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 80171c63e9f3ba9ace4fd948c7997f14a17ccddc
@@ -11,7 +11,7 @@ ht-degree: 86%
 ---
 
 
-# Train Smart Content Service and auto-tag your images {#train-service-tag-assets}
+# スマートコンテンツサービスをトレーニングし、画像に自動タグを付ける{#train-service-tag-assets}
 
 デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙を使用してアセットをタグ付けすると、タグベースの検索でアセットを特定し、取得することが容易になります。
 
@@ -39,7 +39,7 @@ ht-degree: 86%
 
 >[!IMPORTANT]
 >
->新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。On the older deployments, administrators can manually [configure smart tags integration](/help/assets/smart-tags-configuration.md#aio-integration).
+>新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。古いデプロイメントでは、管理者は手動で[スマートタグ統合](/help/assets/smart-tags-configuration.md#aio-integration)を設定できます。
 
 [!DNL Adobe Developer Console] を使用して、[!DNL Adobe Experience Manager] とスマートタグを統合できます。この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。スマートタグを設定するタスクについては、[アセットのスマートタグのための Experience Manager の設定](smart-tags-configuration.md)を参照してください。バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
 
@@ -161,7 +161,7 @@ ht-degree: 86%
 
 Experience Manager は、DAM にアップロードするアセットに自動的にタグ付けすることができます。そのためには、管理者は、使用可能な手順をスマートタグアセットに追加するワークフローを設定します。[アップロードしたアセットのスマートタグを有効にする方法](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)を参照してください。
 
-## Manage smart tags and asset searches {#manage-smart-tags-and-searches}
+## スマートタグとアセット検索の管理{#manage-smart-tags-and-searches}
 
 スマートタグをキュレーションして、ブランドアセットに割り当てられている不正確なタグを削除し、最も関連性の高いタグのみが表示されるようにすることができます。
 
@@ -175,17 +175,17 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 
 1. 検索結果をInspectして、検索に関連のないアセットを特定します。
 
-1. Select the asset, and then select ![Manage tags icon](assets/do-not-localize/manage-tags-icon.png) from the toolbar.
+1. アセットを選択し、ツールバーから![タグの管理アイコン](assets/do-not-localize/manage-tags-icon.png)を選択します。
 
-1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいてアセットを検索しない場合は、タグを選択し、ツールバーの ![削除アイコン](assets/do-not-localize/delete-icon.png) を選択します。 または、ラベルの横の `X` 記号を選択します。
+1. **[!UICONTROL タグを管理]**&#x200B;ページで、タグを調査します。特定のタグに基づいてアセットを検索しない場合は、タグを選択し、ツールバーから![削除アイコン](assets/do-not-localize/delete-icon.png)を選択します。 または、ラベルの横の`X`記号を選択します。
 
-1. To assign a higher rank to a tag, select the tag and select ![Promote icon](assets/do-not-localize/promote-icon.png) from the toolbar. The tag you promote is moved to the **[!UICONTROL Tags]** section.
+1. タグに上位のランクを割り当てるには、タグを選択し、ツールバーから![プロモートアイコン](assets/do-not-localize/promote-icon.png)を選択します。 プロモートするタグは、**[!UICONTROL タグ]**&#x200B;セクションに移動します。
 
-1. Select **[!UICONTROL Save]** and then select **[!UICONTROL OK]** to close the [!UICONTROL Success] dialog.
+1. 「**[!UICONTROL 保存]**」を選択し、「**[!UICONTROL OK]**」を選択して[!UICONTROL 成功]ダイアログを閉じます。
 
-1. Navigate to the [!UICONTROL Properties] page for the asset. 昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
+1. アセットの[!UICONTROL プロパティ]ページに移動します。 昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
-### スマートタグ付き AEM 検索結果について    {#understandsearch}
+### スマートタグ付き AEM 検索結果について     {#understandsearch}
 
 デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
@@ -205,7 +205,7 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 
 * 画像内の細かい違いを認識することはできません。例えば、シャツのサイズが細身か標準かなどの違いは認識できません。
 * 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、T シャツのロゴなどです。
-* タグ付けは、Experience Managerがサポートする言語でサポートされています。 For a list of languages, see [Smart Content Service release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages).
+* タグ付けは、Experience Managerがサポートする言語でサポートされています。 言語のリストについては、「[Smart Content Serviceリリースノート](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)」を参照してください。
 
 スマートタグ（通常または拡張）付きのアセットを検索するには、アセットのオムニサーチ（全文検索）を使用します。スマートタグには個別の検索用述語はありません。
 
