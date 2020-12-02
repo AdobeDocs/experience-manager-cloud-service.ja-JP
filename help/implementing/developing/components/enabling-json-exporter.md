@@ -23,7 +23,7 @@ JSON 書き出しは、[Sling Model](https://sling.apache.org/documentation/bund
 * [コンポーネントに Sling Model を定義する](#define-a-sling-model-for-the-component)
 * [Sling Model インターフェイスに注釈を付ける](#annotate-the-sling-model-interface)
 
-## コンポーネントに Sling Model を定義する    {#define-a-sling-model-for-the-component}
+## コンポーネントに Sling Model を定義する     {#define-a-sling-model-for-the-component}
 
 まず、コンポーネントに Sling Model を定義する必要があります。
 
@@ -82,4 +82,4 @@ Model インターフェイスには、シリアル化されるメソッドを�
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)および[コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)
+* [コアコンポーネント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)および[コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)
