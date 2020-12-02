@@ -73,7 +73,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
    <td>はい</td>
    <td>2,000<br /> </td>
    <td>30</td>
-   <td>Dolby HE-AAC</td>
+   <td>ドルビーHE-AAC</td>
    <td>128</td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
    <td>はい</td>
    <td>3000<br /> </td>
    <td>30</td>
-   <td>Dolby HE-AAC</td>
+   <td>ドルビーHE-AAC</td>
    <td>128</td>
   </tr>
  </tbody>
@@ -419,6 +419,6 @@ AEM でビデオプロファイルを作成または編集する際にはユー�
 ### 「プロパティ」でフォルダーからビデオプロファイルを削除する {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. AEM のロゴをタップまたはクリックし、「**[!UICONTROL Assets]**」に移動した後、ビデオプロファイルを削除するフォルダーに移動します。
-1. On the folder, tap or click the check mark to select it and then tap **[!UICONTROL Properties]**.
+1. フォルダーで、チェックマークをタップまたはクリックして選択し、**[!UICONTROL プロパティ]**&#x200B;をタップします。
 1. 「**[!UICONTROL ビデオプロファイル]**」タブを選択し、ドロップダウンメニューから「**[!UICONTROL なし]**」を選択して、「**[!UICONTROL 保存して閉じる]**」をクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
