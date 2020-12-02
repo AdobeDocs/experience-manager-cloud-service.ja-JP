@@ -51,13 +51,13 @@ ht-degree: 97%
 
 実稼働とステージングの環境セットは、実稼動パイプラインをセットアップする準備ができたら、サンドボックスプログラムに手動で追加できます。
 
-To learn how to manually create an environment, refer to [Adding Environment](/help/implementing/cloud-manager/manage-environments.md) for more details.
+環境を手動で作成する方法については、[環境](/help/implementing/cloud-manager/manage-environments.md)の追加を参照してください。
 
 ### サンドボックス環境の削除 {#deleting-sandbox-environments}
 
 必要な権限を持つユーザーは、開発環境、実稼働／ステージング環境またはそのセットを削除できます。
 
-To delete an environment, refer to [Deleting Environment](/help/implementing/cloud-manager/manage-environments.md#deleting-environment) for more details.
+環境を削除する方法について詳しくは、[環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment)の削除を参照してください。
 
 
 ## サンドボックス環境の休止と休止解除 {#hibernating-introduction}
