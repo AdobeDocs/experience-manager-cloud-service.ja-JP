@@ -104,7 +104,7 @@ Assets コアと統合するには：
 >
 >[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)。詳しくは、[コアコンポーネントの開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/developing.html)を参照してください。
 
-コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
@@ -167,7 +167,7 @@ Assets コアと統合するには：
 
    * 各スキーマフォームは、フラグメントエディターと統合されています。
 
-## コンテンツフラグメント管理 API - サーバー側 {#the-content-fragment-management-api-server-side}
+## コンテンツフラグメント管理 API - サーバー側  {#the-content-fragment-management-api-server-side}
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
@@ -177,7 +177,7 @@ Assets コアと統合するには：
 >
 >コンテンツ構造に直接アクセスする代わりに、サーバー側 API を使用することを強くお勧めします。
 
-### 主要インターフェイス {#key-interfaces}
+### 主要インターフェイス  {#key-interfaces}
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
@@ -318,7 +318,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### 例：新しいコンテンツフラグメントの作成 {#example-creating-a-new-content-fragment}
+### 例：新しいコンテンツフラグメントの作成  {#example-creating-a-new-content-fragment}
 
 新しいコンテンツフラグメントをプログラムで作成するには、モデルリソースから適合した `FragmentTemplate` を使用する必要があります。
 
@@ -330,7 +330,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### 例：自動保存間隔の指定 {#example-specifying-the-auto-save-interval}
+### 例：自動保存間隔の指定  {#example-specifying-the-auto-save-interval}
 
 [自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
 
@@ -353,4 +353,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 詳しくは、次を参照してください。
 
-* [コアコンポーネント - コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)（推奨）
+* [コアコンポーネント - コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)（推奨）
