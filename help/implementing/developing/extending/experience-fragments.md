@@ -97,7 +97,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
 これにより、ユーザーは、エクスペリエンスフラグメントを/content/experience-fragments内に 
-`cq:allowedTemplates` このフォルダーのプロパティには、で始まる名前を持つすべてのテンプレートが含まれ `experience-fragment`ます。 ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+`cq:allowedTemplates` このフォルダーのプロパティには、で始まる名前を持つすべてのテンプレートが含まれ `experience-fragment`ます。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
@@ -291,7 +291,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 * `link`
  
-`String` 現在処理中のリンクの表現。 これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
+`String` 現在処理中のリンクの表現。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`：
 現在処理中の HTML 要素の名前です。
