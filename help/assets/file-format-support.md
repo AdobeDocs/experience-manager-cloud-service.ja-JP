@@ -1,11 +1,11 @@
 ---
 title: サポートされているファイル形式と MIME タイプ
-description: ' [!DNL Experience Manager Assets] でCloud Serviceとしてサポートされているファイル形式とMIME型です。'
+description: ' [!DNL Experience Manager Assets] で [!DNL Cloud Service]としてサポートされているファイル形式とMIME型です。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e5ea5ccf0110d1fb55449c9c1933aff6aba0065
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '783'
 ht-degree: 93%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # [!DNL Assets] サポートされるファイル形式  {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a Cloud Service では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。[!DNL Adobe Experience Manager Assets] は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
+[!DNL Adobe Experience Manager] as a では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。[!DNL Cloud Service][!DNL Adobe Experience Manager Assets] は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
 
 さらに、[!DNL Experience Manager Assets]は、プレビューとレンディションの生成、およびフルテキストインデックスのメタデータとテキストの抽出をサポートする拡張機能も提供します。 この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
 
@@ -221,7 +221,7 @@ ht-degree: 93%
 
 ## オーディオ形式 {#audio-formats}
 
-[!DNL Assets] as a Cloud Service は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。
+[!DNL Assets] as a は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。[!DNL Cloud Service]
 
 >[!MORELIKETHIS]
 >
