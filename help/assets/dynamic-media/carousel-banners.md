@@ -183,7 +183,7 @@ AEM Assets 内のバナー画像にホットスポットまたは画像マップ
 
 画像バナーをアップロードするには、[アセットのアップロード](/help/assets/manage-digital-assets.md)を参照してください。
 
-## カルーセルセットの作成 {#creating-carousel-sets}
+## カルーセルセットの作成  {#creating-carousel-sets}
 
 >[!NOTE]
 >
@@ -324,7 +324,7 @@ AEM Assets 内のバナー画像にホットスポットまたは画像マップ
 
    [Web サイトランディングページへのカルーセルセットの追加](#adding-a-carousel-banner-to-your-website-page)を参照してください。
 
-## カルーセルセットの編集 {#editing-carousel-sets}
+## カルーセルセットの編集  {#editing-carousel-sets}
 
 >[!NOTE]
 管理者以外のユーザーは、カルーセルバナーを作成または編集できるように、**[!UICONTROL dam-users]** グループに追加される必要があります。作成や編集で問題が発生した場合、**[!UICONTROL dam-users]** グループにユーザーを追加できるシステム管理者に確認してください。
@@ -397,7 +397,7 @@ AEM Assets 内のバナー画像にホットスポットまたは画像マップ
 
 カルーセルバナーの公開方法に関する情報については、「[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)」を参照してください。
 
-## Web サイトページへのカルーセルバナーの追加 {#adding-a-carousel-banner-to-your-website-page}
+## Web サイトページへのカルーセルバナーの追加  {#adding-a-carousel-banner-to-your-website-page}
 
 バナー画像をアップロードしてカルーセルを作成し、ホットスポットまたは画像マップ（あるいは両方）を画像に追加し、カルーセルセットを公開したら、次は既存の Web サイトページにカルーセルを追加できます。
 
