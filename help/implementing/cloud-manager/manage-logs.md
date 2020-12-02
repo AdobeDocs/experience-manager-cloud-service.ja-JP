@@ -14,7 +14,7 @@ ht-degree: 93%
 
 ユーザーは、環境カードを使用して、選択した環境の使用可能なログファイルのリストにアクセスできます。ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-These files can be downloaded through the UI, either from the **Overview**  page:
+これらのファイルは、**概要**&#x200B;ページからUIからダウンロードできます。
 
 ![](assets/download-logs1.png)
 
