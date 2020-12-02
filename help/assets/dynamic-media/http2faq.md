@@ -35,7 +35,7 @@ HTTP/2 とその利点については、次の Web サイトで簡潔に説明�
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## HTTP/2 に切り替えるには {#am-i-eligible-to-switch-over-to-http}
+## HTTP/2 に切り替えるには  {#am-i-eligible-to-switch-over-to-http}
 
 HTTP/2 を使用するには、以下の要件を満たしている必要があります。
 
@@ -49,14 +49,14 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 ## Dynamic Media Classic アカウントに対して HTTP/2 を有効にする方法 {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-Admin Consoleを [使用してサポートケースを作成し](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 、HTTP/2に切り替えるようにリクエストする必要があります。自動的には実行されません。
+[サポートケース](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)を作成し、HTTP/2に切り替えるようにリクエストするには、Admin Consoleを使用する必要があります。自動的には実行されません。
 
 1. サポートケースに次の情報を入力します。
 
    * 主要連絡先名、電子メールおよび電話番号。
    * HTTP/2 への切り替えが必要なすべてのドメイン。つまり、`images.company.com` または `mycompany.scene7.com`。
 
-   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)します。
+   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)します。
 
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
 
@@ -64,7 +64,7 @@ Admin Consoleを [使用してサポートケースを作成し](https://helpx.a
    * 直接的関係で管理するのではなく、アドビを介して CDN を使用していることを確認します。
    * 専用ドメインを使用していることを確認します。つまり、`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` などの汎用の Scene7 ドメインではなく、`images.company.com` または `mycompany.scene7.com`。
 
-   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)します。
+   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)します。
 
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在汎用 Scene7 ドメインを使用している場合は、この切り替えの一部として、独自のカスタムドメインへの移行を要求できます。
 
@@ -82,12 +82,12 @@ Admin Consoleを [使用してサポートケースを作成し](https://helpx.a
 >
 >HTTP/2 への切り替えにはキャッシュのクリアが含まれるので、リードタイムが長くなる場合があります。そのため、一度に処理できる顧客の移行は数件のみとなります。
 
-## HTTP/2 への切り替えに伴うリスク {#what-are-the-risks-with-moving-to-http}
+## HTTP/2 への切り替えに伴うリスク  {#what-are-the-risks-with-moving-to-http}
 
 HTTP/2 への切り替えには、新しい CDN 設定への移行が伴うので、CDN でキャッシュがクリアされます。
 
 キャッシュが再作成されるまで、キャッシュされていないコンテンツはアドビの元のサーバーに直接アクセスして取得されます。このため、元のサーバーからリクエストをプルするときに許容できるパフォーマンスが維持されるように、アドビでは一度に少数の顧客の移行を処理するよう計画します。
 
-## URL または Web サイトが HTTP/2 でアクティベートされていることを確認する方法 {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## URL または Web サイトが HTTP/2 でアクティベートされていることを確認する方法  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 Web ブラウザーで使用する拡張機能をダウンロードする必要があります。Firefox および Chrome の場合は、「**[!UICONTROL HTTP/2 and SPDY Indicator]**」という拡張機能があります。ブラウザーは HTTP/2 をセキュア接続でのみサポートするので、確認するには https の付いた URL を呼び出す必要があります。この拡張では、HTTP/2 がサポートされている場合、青い稲妻マークおよび「X-Firefox-Spdy: h2」というヘッダーによって示されます。
