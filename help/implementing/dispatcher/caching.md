@@ -48,7 +48,7 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
    { /glob "*" /type "allow" }
    ```
 
-* To prevent specific content from being cached, set the Cache-Control header to *private*. For example, the following would prevent html content under a directory named **myfolder** from being cached:
+* 特定のコンテンツがキャッシュされないようにするには、Cache-Controlヘッダーを&#x200B;*private*&#x200B;に設定します。 例えば、次の例では、**myfolder**&#x200B;という名前のディレクトリのHTMLコンテンツがキャッシュされないようにします。
 
    ```
       <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
@@ -57,7 +57,7 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
    ```
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >[dispatcher-ttl AEM ACSコモンズプロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)など、他のメソッドは値を正常に上書きしません。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
@@ -78,7 +78,7 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
 
    キャッシュをあまり広く行わないよう注意し、AEMに「always」オプションを指定して常にキャッシュを適用させる方法については、上記のhtml/textセクションの説明を参照してください。
 
-   It is necessary to ensure that a file under `src/conf.dispatcher.d/`cache has the following rule (which is in the default configuration):
+   `src/conf.dispatcher.d/`キャッシュ下のファイルに次の規則（デフォルト設定）があることを確認する必要があります。
 
    ```
    /0000
@@ -88,7 +88,7 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
    キャッシュせずに非公開にするアセットが、LocationMatch ディレクティブフィルターの一部ではないことを確認します。
 
    >[!NOTE]
-   >The other methods, including the [dispatcher-ttl AEM ACS Commons project](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), will not successfully override values.
+   >[dispatcher-ttl AEM ACSコモンズプロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)など、他のメソッドは値を正常に上書きしません。
 
 ### ノードストア内の他のコンテンツファイルタイプ {#other-content}
 
