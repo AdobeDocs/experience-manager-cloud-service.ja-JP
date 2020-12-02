@@ -61,7 +61,7 @@ AEM as a Cloud Service に対応するために、AEM Maven プロジェクト�
 
 AEM as a Cloud Service で開発する際に留意する必要がある開発ガイドラインがさらにいくつかあります。詳しくは、[AEM as a Cloud Service の開発ガイドライン](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
 
-Cloud Service に対応するためにリファクタリングする必要がある領域のリストを計画段階で作成する必要があります。また、Cloud Service に移行するためにコードをリファクタリングし最適化する方法について詳しくは、[開発ガイドライン](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
+Cloud Service に対応するためにリファクタリングする必要がある領域のリストを計画段階で作成する必要があります。また、Cloud Service に移行するためにコードをリファクタリングし最適化する方法について詳しくは、[開発ガイドライン](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
 
 コードリファクタリングタスクの一部を高速化するために、次のツールを使用できます。
 
