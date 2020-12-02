@@ -238,7 +238,7 @@ AEM または Dynamic Media との間で、アセットをフォルダーレベ�
    | 即時または<br>アクティベーション時 | 非公開 | AEM および Dynamic Media |
    | 即時または<br>アクティベーション時 | Dynamic Media から非公開 | なし |
    | 選択的公開 | 非公開 | AEM |
-   | 選択的公開 | Dynamic Media から非公開 | Dynamic Media |
+   | 選択的公開 | Dynamic Media から非公開 | ダイナミックメディア |
 
 1. **[!UICONTROL 公開を管理 -範囲]**&#x200B;ページで、次のいずれかの操作をおこないます。
    * 公開または非公開から削除する 1 つ以上のアセットを選択します。
