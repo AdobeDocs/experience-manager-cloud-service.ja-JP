@@ -122,7 +122,7 @@ Experience Cloud アカウントが Adobe Analytics for Audio and Video を使�
 
 詳しくは、[拡張機能のインストールとセットアップ](#installing-and-setup-of-extensions)を参照してください。
 
-現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
+現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
 
 ## Dynamic Media ビューア拡張機能の使用 {#using-the-dynamic-media-viewers-extension}
 
