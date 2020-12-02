@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# ページテンプレートの作成 {#creating-page-templates}
+# ページテンプレートの作成  {#creating-page-templates}
 
 ページを作成するとき、テンプレートを選択する必要があります。これは新しいページを作成するための基本として使用されます。テンプレートは、作成されるページの構造、初期コンテンツ、および使用できるコンポーネントを定義します。
 
@@ -127,7 +127,7 @@ ht-degree: 100%
    >
    >新しく作成されたテンプレートは、コンソールで&#x200B;**ドラフト**&#x200B;とマークされます。これは、ページ作成者がまだテンプレートを使用できないことを示します。
 
-### テンプレートプロパティの定義 - テンプレート作成者 {#defining-template-properties-template-author}
+### テンプレートプロパティの定義 - テンプレート作成者  {#defining-template-properties-template-author}
 
 テンプレートには、次のプロパティを指定できます。
 
@@ -162,7 +162,7 @@ ht-degree: 100%
    * このサムネールで満足できない場合は、**クリア**&#x200B;をタップまたはクリックして、他の画像をアップロードするか、サムネールを再生成します。
 1. 満足できる場合は、「**保存して閉じる**」をクリックまたはタップします。
 
-### テンプレートの有効化および許可 - テンプレート作成者 {#enabling-and-allowing-a-template-template-author}
+### テンプレートの有効化および許可 - テンプレート作成者  {#enabling-and-allowing-a-template-template-author}
 
 ページを作成するときにテンプレートを使用するには、以下の作業が必要です。
 
@@ -527,7 +527,7 @@ ht-degree: 100%
 >
 >初期コンテンツは、コンテンツを作成するための出発点となるコンポーネントおよびページレイアウトを準備するためのものです。そのまま残す実際のコンテンツとなるものではありません。そのため、初期コンテンツは変換できません。
 >
->ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/get-started/localization.html)を使用できます。
+>ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)を使用できます。
 
 ### テンプレートの編集 - レイアウト - テンプレート作成者 {#editing-a-template-layout-template-author}
 
