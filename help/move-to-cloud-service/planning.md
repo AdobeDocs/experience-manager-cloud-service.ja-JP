@@ -46,7 +46,7 @@ Adobe Experience Manager as a Cloud Service で廃止される特長や機能に
 
 移行プロセスで予想される作業レベルを決定するには、主要な変更点および廃止される機能に照らした現在の AEM ソースコードの包括的な評価をおこなう必要があります。
 
-現在のAEMバージョンでBest Practices Analyzerを実行すると、評価手順を早めることができます。 詳細については、 [ベストプラクティスアナライザを参照してください](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)。
+現在のAEMバージョンでBest Practices Analyzerを実行すると、評価手順を早めることができます。 詳しくは、[ベストプラクティスアナライザ](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)を参照してください。
 
 >[!NOTE]
 >既に Cloud Manager と Cloud Service 環境にアクセスできる場合は、現在のコードを Cloud Manager のコード品質パイプラインで実行して、Cloud Service に対応するために必要なコード変更を評価することをお勧めします。
