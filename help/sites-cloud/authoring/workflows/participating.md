@@ -21,7 +21,7 @@ ht-degree: 100%
 * [ワークフロー項目を開いて、詳細を表示（またはアクションを実行）](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [ワークロードペイロード（複数のリソース）を表示](#viewing-the-workflow-payload-multiple-resources)
 
-## 使用可能なワークフローアクションの通知 {#notifications-of-available-workflow-actions}
+## 使用可能なワークフローアクションの通知  {#notifications-of-available-workflow-actions}
 
 作業項目（**コンテンツを承認**&#x200B;など）が割り当てられると、様々なアラートや通知が表示されます。
 
