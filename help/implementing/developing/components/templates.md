@@ -156,7 +156,7 @@ ht-degree: 98%
 新しいフォルダーを作成するには、次のいずれかの方法を使用できます。
 
 * プログラムで自動的に、または CRXDE Lite を使用して作成する
-* Using the [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+* [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)の使用
 
 ## CRXDE Lite の使用 {#using-crxde-lite}
 
@@ -203,7 +203,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->[設定ブラウザーで](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) 、グローバルフォルダーを編集し **、このフォルダー内にテンプレートを作成する場合は、** 編集可能なテンプレート(Editable Templates)オプションをアクティブにできますが、ベストプラクティスは推奨されません。
+>[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)で、グローバルフォルダーを編集し、このフォルダー内にテンプレートを作成する場合は、**編集可能なテンプレート**&#x200B;オプションをアクティブにできますが、ベストプラクティスは推奨されません。
 
 ### ACL とグループ {#acls-and-groups}
 
@@ -470,7 +470,7 @@ GitHub のコード
 
 ページポリシーを使用して、テンプレートまたは作成されるページで、ページ（メインの parsys）の[コンテンツポリシー](#content-policies)を定義できます。
 
-### 使用するテンプレートの有効化と許可 {#enabling-and-allowing-a-template-for-use}
+### 使用するテンプレートの有効化と許可  {#enabling-and-allowing-a-template-for-use}
 
 1. **テンプレートの有効化**
 
