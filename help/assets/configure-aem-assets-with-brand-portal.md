@@ -1,23 +1,23 @@
 ---
-title: AEM Assets as a Cloud Service と Brand Portal の連携の設定
+title: ブランドポータルでAEM Assetsを [!DNL Cloud Service] として構成
 description: AEM Assets と Brand Portal の連携を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 100%
+source-wordcount: '1629'
+ht-degree: 90%
 
 ---
 
 
-# AEM Assets as a Cloud Service と Brand Portal の連携の設定 {#configure-aem-assets-with-brand-portal}
+# ブランドポータル{#configure-aem-assets-with-brand-portal}でAEM Assetsを[!DNL Cloud Service]として設定
 
-Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager アセットから Cloud Service インスタンスとして Brand Portal に公開し、 Brand Portal ユーザーに配信できます。
+Adobe Experience Managerアセットブランドポータルを設定すると、承認されたブランドアセットをAdobe Experience Managerアセットから[!DNL Cloud Service]インスタンスとしてBrand Portalに発行し、Brand Portalユーザーに配信できます。
 
 **設定ワークフロー**
 
-AEM Assets as a Cloud Service は、Adobe 開発者コンソールを介して Brand Portal と連携して設定されます。このコンソールは、Adobe Identity Management サービス（IMS）アカウントトークンを調達し、Brand Portal テナントの認証を受けます。この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
+[!DNL Cloud Service]としてのAEM Assetsは、Adobe開発者コンソールを介してBrand Portalで設定されます。このコンソールは、Brand Portalテナントの認証用にAdobeIdentity Managementサービス(IMS)アカウントトークンを調達します。 この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
 
 1. AEM Assets で、IMS アカウントを作成して公開鍵（証明書）を生成します。
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。
@@ -29,13 +29,13 @@ AEM Assets as a Cloud Service は、Adobe 開発者コンソールを介して B
 
 >[!NOTE]
 >
->AEM Assets as a Cloud Service インスタンスは、1 つの Brand Portal テナントでのみ構成する必要があります。
+>[!DNL Cloud Service]インスタンスとしてのAEM Assetsは、1つのBrand Portalテナントでのみ構成する必要があります。
 
 ## 前提条件 {#prerequisites}
 
 AEM Assets と Brand Portal の連携を設定するには以下が必要です。
 
-* AEM Assets as a Cloud Service インスタンスの起動および実行
+* [!DNL Cloud Service]インスタンスとしてのAEM Assetsの起動および実行
 * Brand Portal テナント URL
 * Brand Portal テナントの IMS 組織に対するシステム管理者権限を持つユーザー
 
@@ -51,7 +51,7 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 
 ### IMS 設定の作成 {#create-ims-configuration}
 
-IMS 設定は、AEM Assets as a Cloud Service インスタンスを Brand Portal テナントで認証します。
+IMS設定は、Brand Portalテナントを使用して[!DNL Cloud Service]インスタンスとしてAEM Assetsを認証します。
 
 IMS 設定には、次の 2 つの手順が含まれます。
 
@@ -231,7 +231,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。クラウド設定が作成されます。
 
-   AEM Assets as a Cloud Service インスタンスが Brand Portal テナントで設定されました。
+   [!DNL Cloud Service]インスタンスとしてのAEM AssetsがBrand Portalテナントと共に構成されました。
 
 ### 設定のテスト{#test-configuration}
 
@@ -262,7 +262,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
    ![](assets/test-bpconfig3.png)
 
-1. AEM Assets as a Cloud Servic と Brand Portal の間の接続を確認するには、**[!UICONTROL 接続をテスト]**&#x200B;アイコンをクリックします。
+1. [!DNL Cloud Service]とBrand PortalのAEM Assets間の接続を確認するには、**[!UICONTROL 接続をテスト]**&#x200B;アイコンをクリックします。
 
    ![](assets/test-bpconfig4.png)
 
