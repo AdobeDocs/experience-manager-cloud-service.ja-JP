@@ -47,7 +47,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 上記の静的ドキュメントに加えて、アドビおよび AEM コミュニティでは、コネクタの市場投入に役立つ以下のリソースを提供しています。
 
 * アドビコミュニティの [AEM フォーラム](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)は、同業者が質問をしたり質問に答えたりする活発なサイトです。
-* アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://partners.adobe.com/jp/exchangeprogram/experiencecloud)を参照してください。
+* アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud)を参照してください。
 * 組織が実装の支援を希望する場合は、アドビの [Professional Services](http://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
 
 パッケージ構成ルール
@@ -69,7 +69,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 クラウドサービスの設定
 -----------------------------
 
-コネクタ実装の 1 つの側面として、コネクタ設定の補助コードがあります。このコードにより、ツール／操作／Cloud Services で、コネクタ名の付いたカードが表示されるようになります。When clicked, a [configuration browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser) pops up where the customer selects the parent folder to contain the connector configuration. コネクタのコードによって、設定が必要なすべてのプロパティを含んだフォームが生成され、最終的に、`/conf` の配下の設定フォルダーにプロパティ値が格納されます。このフォルダーは、後ほど「サイトのプロパティ」タブまたは「アセットのプロパティ」タブで選択できます。
+コネクタ実装の 1 つの側面として、コネクタ設定の補助コードがあります。このコードにより、ツール／操作／Cloud Services で、コネクタ名の付いたカードが表示されるようになります。クリックすると、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)がポップアップ表示され、ユーザーがコネクタ設定を含む親フォルダーを選択します。 コネクタのコードによって、設定が必要なすべてのプロパティを含んだフォームが生成され、最終的に、`/conf` の配下の設定フォルダーにプロパティ値が格納されます。このフォルダーは、後ほど「サイトのプロパティ」タブまたは「アセットのプロパティ」タブで選択できます。
 
 
 コンテキスト対応の設定
