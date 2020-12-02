@@ -11,7 +11,7 @@ ht-degree: 100%
 ---
 
 
-# ビデオアセットの管理 {#manage-video-assets}
+# ビデオアセットの管理  {#manage-video-assets}
 
 ビデオ形式は、組織のデジタルアセットの重要な部分です。[!DNL Adobe Experience Manager] は、ビデオアセットの作成後に、ビデオアセットのライフサイクル全体を管理するための充実した機能を提供しています。
 
