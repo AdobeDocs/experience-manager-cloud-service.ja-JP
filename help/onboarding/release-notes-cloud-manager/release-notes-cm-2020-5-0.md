@@ -10,7 +10,7 @@ ht-degree: 71%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.5.0 {#release-notes}
+# Cloud Service2020.5.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
 
 このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.5.0として概要を説明しています。
 
