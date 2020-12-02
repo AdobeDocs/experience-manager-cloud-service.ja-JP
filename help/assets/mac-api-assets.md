@@ -3,10 +3,10 @@ title: Assets HTTP API
 description: ' [!DNL Adobe Experience Manager Assets] の HTTP API を使用した、デジタルアセットの作成、読み取り、更新、削除、管理について説明します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 100%
+source-wordcount: '1473'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->アセットやバイナリ一般（レンディションなど）のアップロードまたは更新に関連する API 呼び出しはすべて、AEM as a Cloud Service デプロイメントでは廃止されます。バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload-technical) を使用します。
+>一般的なアセットやバイナリ（レンディションなど）のアップロードまたは更新に関連するすべてのAPI呼び出しは、AEMでは[!DNL Cloud Service]デプロイメントとして非推奨になりました。 バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload-technical) を使用します。
 
 ## コンテンツフラグメント {#content-fragments}
 
