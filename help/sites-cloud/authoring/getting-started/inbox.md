@@ -43,7 +43,7 @@ ht-degree: 100%
 >
 >特定のアクションは、[適切なリソースのカード表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)にも表示されます。
 
-## インボックスを開く {#opening-the-inbox}
+## インボックスを開く  {#opening-the-inbox}
 
 AEM 通知インボックスを開くには：
 
