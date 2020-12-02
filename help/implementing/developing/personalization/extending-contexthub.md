@@ -14,7 +14,7 @@ ht-degree: 100%
 
 提供されている ContextHub ストアやモジュールのタイプがソリューションの要件を満たさない場合は、新しいタイプを定義できます。
 
-## カスタムストア候補の作成 {#creating-custom-store-candidates}
+## カスタムストア候補の作成  {#creating-custom-store-candidates}
 
 ContextHub ストアは、登録済みのストア候補から作成します。カスタムストアを作成するには、ストア候補を作成して登録する必要があります。
 
