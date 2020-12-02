@@ -348,7 +348,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>User</td>
+<td>ユーザー</td>
 <td>-</td>
 </tr>
 <tr>
@@ -381,7 +381,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>ユーザーエージェント</td>
-<td>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh;Intel Mac OS X 10_15_4)AppleWebKit/537.36 （KHTML、Geckoなど） Chrome/81.0.4044.122 Safari/537.36"</td>
 </tr>
 </tbody>
 </table>
