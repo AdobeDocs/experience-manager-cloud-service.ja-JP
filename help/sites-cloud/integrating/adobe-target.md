@@ -53,6 +53,7 @@ Target に統合するには、次のタスクを実行します。
 >
 >* 3.x は [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) のように設定します。
 >* 4.x は [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) のように設定します。
+
 >
 
 
@@ -69,7 +70,7 @@ Target に統合するには、次のタスクを実行します。
 >
 >AEM オーサーインスタンスでコンポーネントをターゲット設定すると、そのコンポーネントが、キャンペーンの登録、オファーの設定、Adobe Target セグメントの取得（設定されている場合）をおこなうために、Adobe Target に対して一連のサーバー側呼び出しを実行します。AEM Publish から Adobe Target にサーバー側呼び出しは作成されません。
 
-## 背景情報ソース {#background-information-sources}
+## 背景情報ソース  {#background-information-sources}
 
 AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、AEM アクティビティの管理、AEM オーディエンスの管理に関する知識が必要です。以下を十分理解している必要があります。
 
@@ -85,6 +86,7 @@ AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、A
 >* エクスペリエンス：2,000
 >* 指標：50
 >* レポートのセグメント：50
+
 >
 
 
