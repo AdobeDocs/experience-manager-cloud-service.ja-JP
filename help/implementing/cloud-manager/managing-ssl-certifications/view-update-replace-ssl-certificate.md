@@ -10,15 +10,15 @@ ht-degree: 0%
 ---
 
 
-# SSL証明書の更新と置換の表示  {#view-update-replace-ssl-certificate}
+# SSL証明書の更新と置換の表示{#view-update-replace-ssl-certificate}
 
-## SSL証明書の表示と更新 {#view-update}
+## SSL証明書の表示と更新{#view-update}
 
 1. SSL証明書の詳細を表示する場合は、表示と更新メニューを使用します。
 1. または、この画面で証明書の参照に使用されている名前を変更できます。 注：更新を行えるのは、適切な権限を持つユーザーのみです。
 1. 既存の証明書の有効期限が間もなく切れます。 ユーザーは証明書ベンダーで証明書を更新しました。期限が切れる既存の証明書を置き換えます。 注：更新を行えるのは、適切な権限を持つユーザーのみです。
 
-## SSL証明書の置き換え {#replace-ssl-certificate}
+## SSL証明書の置き換え{#replace-ssl-certificate}
 
 >[!NOTE]
 >Cloud ManagerでSSL証明書を更新または置き換えるには、ユーザーがビジネス所有者またはDeployment Managerのロールに属している必要があります。
