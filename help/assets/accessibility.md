@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
-description: 障害を持つユーザーにとって、 [!DNL Adobe Experience Manager]  as a Cloud Service のアクセシビリティ機能がどのように役立つかを説明します。
+description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 障害を持つユーザーに対しては、アクセシビリティ機能の使い方を知っておくこと。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1dc278c85a1dabdd3e6ac4c0de95271d9da3260c
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 55%
+source-wordcount: '1912'
+ht-degree: 54%
 
 ---
 
@@ -27,7 +27,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# Cloud Service{#accessibility-in-aem-assets}としての[!DNL Adobe Experience Manager Assets]のアクセシビリティ機能
+# [!DNL Adobe Experience Manager Assets]の[!DNL Cloud Service] {#accessibility-in-aem-assets}のアクセシビリティ機能
 
 [!DNL Adobe Experience Manager] コンテンツ作成者や発行者は、素晴らしいエクスペリエンスをWeb上で提供できます。Adobeは、[!DNL Experience Manager]のアクセシビリティを向上させ、障害を持つクリエイターを加えようと努めています。 このソフトウェアは、あらゆる種類のユーザーのニーズを満たすように継続的に拡張され、視覚、聴覚、運動、または他の障害を持つ個人を含む世界的な標準に準拠しています。
 
