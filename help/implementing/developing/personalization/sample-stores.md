@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# ContextHub ストア候補のサンプル {#sample-contexthub-store-candidates}
+# ContextHub ストア候補のサンプル  {#sample-contexthub-store-candidates}
 
 ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています。各サンプルでは次の情報が提供されます。
 
@@ -308,7 +308,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 }
 ```
 
-## granite.profile サンプルストア候補 {#granite-profile-sample-store-candidate}
+## granite.profile サンプルストア候補  {#granite-profile-sample-store-candidate}
 
 現在のユーザーに関する情報を格納します。
 
