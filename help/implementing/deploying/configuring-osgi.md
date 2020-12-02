@@ -336,7 +336,7 @@ OSGi プロパティ `my_var1` の値をステージング、実稼働、3 つ�
 <table>
 <tr>
 <td>
-<b>Folder</b>
+<b>フォルダ</b>
 </td>
 <td>
 <b>myfile.cfg.json の内容</b>
@@ -377,9 +377,9 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ "my_var1":"$[env:my_var1]"
+ "my_var2":"abc",
+ "my_var3":500
 }
 </pre>
 </td>
@@ -393,7 +393,7 @@ OSGi プロパティ `my_var1` の値をステージング、実稼働、1 つ�
 <table>
 <tr>
 <td>
-<b>Folder</b>
+<b>フォルダ</b>
 </td>
 <td>
 <b>myfile.cfg.json の内容</b>
@@ -406,9 +406,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ "my_var1":"val1",
+ "my_var2":"abc",
+ "my_var3":500
 }
 </pre>
 </td>
@@ -420,9 +420,9 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1" : "$[env:my_var1]"
- "my_var2": "abc",
- "my_var3": 500
+ "my_var1":"$[env:my_var1]"
+ "my_var2":"abc",
+ "my_var3":500
 }
 </pre>
 </td>
@@ -434,7 +434,7 @@ config.dev
 <table>
 <tr>
 <td>
-<b>Folder</b>
+<b>フォルダ</b>
 </td>
 <td>
 <b>myfile.cfg.json の内容</b>
@@ -447,9 +447,9 @@ config
 <td>
 <pre>
 { 
- "my_var1": "val1",
- "my_var2": "abc",
- "my_var3": 500
+ "my_var1":"val1",
+ "my_var2":"abc",
+ "my_var3":500
 }
 </pre>
 </td>
@@ -472,7 +472,7 @@ config.dev
 
 ## プロパティ設定用の Cloud Manager API 形式 {#cloud-manager-api-format-for-setting-properties}
 
-APIの設定方法 [については](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md) 、このページを参照してください。
+APIの設定方法については、[このページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)を参照してください。
 >[!NOTE]
 >
 >使用したCloud Manager APIに「Deployment Manager -Cloud Service」というロールが割り当てられていることを確認します。 その他のロールでは、以下のコマンドのすべてを実行できません。
