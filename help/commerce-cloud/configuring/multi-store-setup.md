@@ -40,7 +40,7 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
 3. 次の手順に従って、CIF Cloud Service 設定の子設定を作成します。
 
-   * In AEM go to Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * AEMで、Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)に移動します。
    * 作成したベース設定を選択します。
    * 上記のポイント 2 で説明した手順を使用して、新しい設定を作成します。
 
