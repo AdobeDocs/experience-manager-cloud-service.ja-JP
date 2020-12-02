@@ -48,7 +48,7 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 
 新しい AEM 参照サイト [WKND](https://wknd.site/) が更新および公開されて、AEM で Web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。新しい参照サイトと[付属のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)では、プロジェクトのセットアップ、コアコンポーネント、編集可能テンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックを扱っています。
 
-これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。今後、参照サイトはデフォルトではインストールされなくなります。代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリ](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)が提供されます。
+これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。今後、参照サイトはデフォルトではインストールされなくなります。代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリ](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)が提供されます。
 
 ## 実行時に使用できない機能 {#capabilities-not-available-at-runtime}
 
