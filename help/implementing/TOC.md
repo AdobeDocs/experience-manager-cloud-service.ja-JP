@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 09b23185663164ffa5a6066b67f8f1fb74872cde
+source-git-commit: 4687054b049263c109591884a0368dfa76346298
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 84%
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
+   + [複数のソースGitリポジトリの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + AEM as a Cloud Service 向けの開発{#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
    + [AEM プロジェクトリポジトリの構造パッケージ](developing/introduction/repository-structure-package.md)
