@@ -19,7 +19,7 @@ ht-degree: 87%
 
 1. 透かしとして PNG ファイルが適用されます。このファイルを DAM リポジトリにアップロードします。
 
-1. 環境に関連付けられた [!DNL Cloud Manager] Git リポジトリにアクセスします。Commit a file named `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` in the repository with the following contents. For instructions, see [how to do OSGi configuration in [!DNL Experience Manager] as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+1. 環境に関連付けられた [!DNL Cloud Manager] Git リポジトリにアクセスします。リポジトリ内の`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`という名前のファイルを次の内容でコミットします。 手順については、[Cloud Service](/help/implementing/deploying/configuring-osgi.md)として [!DNL Experience Manager] OSGi設定を行う方法を参照してください。
 
    ```json
    {
