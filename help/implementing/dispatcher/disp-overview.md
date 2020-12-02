@@ -34,11 +34,11 @@ Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下�
 
 ## ツールのダウンロードと抽出 {#extracting-the-sdk}
 
-Cloud ServiceSDKとしての [AEMに含まれるディスパッチャーツールは、](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)ソフトウェア配布 [](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html) ポータルのzipファイルからダウンロードできます。 新しいディスパッチャーツールのバージョンで利用できる新しい設定は、AEMのそのバージョンを実行するクラウド環境にクラウドでデプロイするために使用できます。
+[AEMの一部であるCloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)としてのディスパッチャーツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルのzipファイルからダウンロードできます。 新しいディスパッチャーツールのバージョンで利用できる新しい設定は、AEMのそのバージョンを実行するクラウド環境にクラウドでデプロイするために使用できます。
 
 SDKを解凍します。これにより、macOS/LinuxとWindowsの両方のディスパッチャーツールがバンドルされます。
 
-**macOS/Linuxの場合**、ディスパッチャーツールのアーティファクトを実行可能にして実行します。 保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己抽出されます。
+**macOS/Linuxの場合**、ディスパッチャーツールのアーティファクトを実行可能にして実行します。保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己抽出されます。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -196,13 +196,13 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 以下では、内部リリースのデプロイ時に Cloud Manager で関連付けられた品質ゲートを渡せるように、設定をローカルで検証する方法について説明します。
 
-## ディスパッチャー設定でサポートされるディレクティブのローカル検証 {#local-validation-of-dispatcher-configuration}
+## ディスパッチャー設定{#local-validation-of-dispatcher-configuration}でサポートされているディレクティブのローカル検証
 
 検証ツールは、Mac OS、Linux または Windows バイナリとして `bin/validator` の SDK で使用可能で、リリースのビルドとデプロイ時に Cloud Manager が実行する検証と同じものが実行できます。
 
 次のように呼び出します：`validator full [-d folder] [-w whitelist] zip-file | src folder`
 
-ディスパッチャーの設定が、クラウドサービスとしてAEMがサポートする適切なディレクティブを使用しているかどうかを検証するには、パターンを持つすべてのファイルをスキャン `conf.d/enabled_vhosts/*.vhost`します。 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
+ディスパッチャーの設定が、パターン`conf.d/enabled_vhosts/*.vhost`のすべてのファイルをスキャンして、クラウドサービスとしてAEMがサポートする適切なディレクティブを使用しているかどうかを検証します。 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
 
 ```
 $ validator whitelist
@@ -346,11 +346,11 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
 
-## Apache httpdが開始できるように、ディスパッチャー設定構文のローカル検証 {#local-validation}
+## Apache httpdが開始{#local-validation}を実行できるように、ディスパッチャー設定構文のローカル検証
 
 ディスパッチャーモジュール設定に、サポートされているディレクティブのみが含まれていると判断したら、Apacheが開始できるように構文が正しいことを確認する必要があります。 このテストを行うには、ドッカーをローカルにインストールする必要があります。 AEMを実行する必要はありません。
 
-次に示すように `validate.sh` スクリプトを使用します。
+`validate.sh`スクリプトを次のように使用します。
 
 ```
 $ validate.sh src/dispatcher
@@ -374,13 +374,13 @@ Phase 2 finished
 スクリプトは次の処理を行います。
 
 1. 前の節のバリデータを実行し、サポートされているディレクティブのみが含まれていることを確認します。 設定が有効でない場合、スクリプトは失敗します。
-2. 構文が正しいかどうか `httpd -t command` をテストし、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります
+2. 構文が正しいかどうかをテストして`httpd -t command`を実行し、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります
 
 ## Apache および Dispatcher 設定のローカルでのテスト {#testing-apache-and-dispatcher-configuration-locally}
 
 Apache と Dispatcher の設定をローカルでテストすることもできます。ドッカーをローカルにインストールし、前述のとおり検証に合格するように設定する必要があります。
 
-すべてのディスパッチャー設定ファイルを含むフォルダーを出力するパラメーターを使用して、検証ツールを実行します(前述とは `validator.sh``-d` 異なります)。 次に、スクリプトを実行し、その `docker_run.sh` フォルダーを引数として渡します。 ポート番号を指定する（次を参照）。8080)でディスパッチャーエンドポイントを公開するために、Dockerコンテナが開始され、設定と共にディスパッチャーを実行します。
+すべてのディスパッチャー設定ファイルを含むフォルダーを出力する`-d`パラメーターを使用して、検証ツールを実行します（前述の`validator.sh`とは異なります）。 次に、`docker_run.sh`スクリプトを実行し、そのフォルダーを引数として渡します。 ポート番号を指定する（次を参照）。8080)でディスパッチャーエンドポイントを公開するために、Dockerコンテナが開始され、設定と共にディスパッチャーを実行します。
 
 ```
 $ validator full -d out src/dispatcher
@@ -399,7 +399,7 @@ Starting httpd server
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-The following strategy can be used to increase the log output for the dispatcher module and see the results of the `RewriteRule` evaluation in both local and cloud environments.
+次の方法を使用して、ディスパッチャー環境のログ出力を増やし、`RewriteRule`評価の結果をローカルモジュールとクラウドの両方で確認できます。
 
 これらのモジュールのログレベルは、変数の `DISP_LOG_LEVEL` と `REWRITE_LOG_LEVEL` によって定義されます。これらは、`conf.d/variables/global.vars` ファイルに設定できます。関連する箇所は以下のとおりです。
 
