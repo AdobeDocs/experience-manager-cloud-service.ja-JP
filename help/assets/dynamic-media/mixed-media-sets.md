@@ -72,7 +72,7 @@ ht-degree: 97%
 
 また、混在メディアセットにスピンセットまたは画像セットを追加する場合は、それらのセットも作成します。
 
-## 混在メディアセットの作成 {#creating-mixed-media-sets}
+## 混在メディアセットの作成  {#creating-mixed-media-sets}
 
 混在メディアセットには画像、画像セット、スピンセットおよびビデオを追加できます。ファイル、画像セットおよびスピンセットを公開できる状態にしてから、混在メディアセットに追加するようにしてください。
 
@@ -114,7 +114,7 @@ ht-degree: 97%
 1. プリセットを適用するには、右上隅にある「**[!UICONTROL プリセット]**」をタップし、アセットに適用するプリセットを選択します。
 1. 「**[!UICONTROL 保存]**」をクリックします。新しく作成した混在メディアセットが、作成先のフォルダーに表示されます。
 
-## 混在メディアセットの編集 {#editing-mixed-media-sets}
+## 混在メディアセットの編集  {#editing-mixed-media-sets}
 
 [アセットの編集と同じように](/help/assets/manage-digital-assets.md)、ユーザーインターフェイスで直接、混在メディアセット内のアセットに対して様々な編集タスクを実行できます。また、混在メディアセットでは次のアクションも実行できます。
 
@@ -147,7 +147,7 @@ ht-degree: 97%
       >* 混在メディアセット全体を削除するには、任意の表示モード（**[!UICONTROL カード表示]**&#x200B;や&#x200B;**[!UICONTROL 列表示]**&#x200B;など）から混在メディアセットに移動します。アセットの上にマウスポインターを置き、チェックマークアイコンをタップして選択します。キーボードの **[!UICONTROL Backspace]** キーを押すか、ツールバーの「**[!UICONTROL 詳細]**」（3 つのドット）をクリックしてから「**[!UICONTROL 削除]**」をタップします。
          >
          >
-      * You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+      * 混在メディアセット内のアセットを編集するには、セットに移動し、左のレールで&#x200B;**[!UICONTROL メンバーを設定]**&#x200B;をタップし、個々のアセット上で&#x200B;**[!UICONTROL 鉛筆]**&#x200B;アイコンをタップして編集ウィンドウを開きます。
 
 
 1. 編集が完了したら、「**[!UICONTROL 保存]**」をタップします。
@@ -164,7 +164,7 @@ ht-degree: 97%
 
 混在メディアセットのプレビュー方法について詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## 混在メディアセットの公開 {#publishing-mixed-media-sets}
+## 混在メディアセットの公開  {#publishing-mixed-media-sets}
 
 混在メディアセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
