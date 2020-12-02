@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# アカウント環境の設定 {#configuring-your-account-environment}
+# アカウント環境の設定  {#configuring-your-account-environment}
 
 AEM では、アカウントおよびオーサー環境の特定項目を設定できます。
 
