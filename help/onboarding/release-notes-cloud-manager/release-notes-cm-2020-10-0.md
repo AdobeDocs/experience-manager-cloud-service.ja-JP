@@ -10,7 +10,7 @@ ht-degree: 48%
 ---
 
 
-# Release Notes for Cloud Manager in Adobe Experience Manager as a Cloud Service 2020.10.0 {#release-notes}
+# Cloud Service2020.10.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
 
 このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.10.0として概要を説明しています。
 
@@ -30,8 +30,8 @@ AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月1�
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
-* 概要ページの環境カードには、最大3環境のリストが表示されます。 「すべてを **表示** 」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-詳しくは、「 [環境の](/help/implementing/cloud-manager/manage-environments.md#viewing-environment) 表示」を参照してください。
+* 概要ページの環境カードには、最大3環境のリストが表示されます。 「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
+詳しくは、[環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)の表示を参照してください。
 
 
 ### バグ修正 {#bug-fixes-cloud-manager}
