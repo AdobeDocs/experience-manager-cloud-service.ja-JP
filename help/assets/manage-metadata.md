@@ -4,10 +4,10 @@ description: メタデータのタイプと、 [!DNL Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eb30e4f948c748c0c0e39f32c8870aff116a7a86
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 100%
+source-wordcount: '1930'
+ht-degree: 99%
 
 ---
 
@@ -144,7 +144,7 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
 
 ## 処理プロファイルを使用したカスタムメタデータ {#metadata-compute-service}
 
-Assets as a Cloud Service は、クラウドネイティブのサービスを使用して、アセットのカスタムメタデータを生成できます。カスタムメタデータを生成する処理プロファイルを設定します。「[処理プロファイルの使用方法](/help/assets/asset-microservices-configure-and-use.md#use-profiles)」を参照してください。
+[!DNL Cloud Service]としてのアセットは、クラウドネイティブサービスを使用して、アセットのカスタムメタデータを生成できます。 カスタムメタデータを生成する処理プロファイルを設定します。「[処理プロファイルの使用方法](/help/assets/asset-microservices-configure-and-use.md#use-profiles)」を参照してください。
 
 ![処理プロファイルでのメタデータのレンダリング](assets/processing-profile-metadata.png)
 
