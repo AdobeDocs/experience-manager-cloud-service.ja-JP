@@ -157,7 +157,7 @@ ht-degree: 100%
 
 1. 選択したコンポーネントがページの下部に追加されます。必要に応じてコンポーネントを[編集](#edit-content)します。
 
-### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
+### アセットブラウザーを使用したコンポーネントの挿入  {#inserting-a-component-using-the-assets-browser}
 
 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、ページに新しいコンポーネントを追加することもできます。この操作により、適切なタイプの新しいコンポーネント（アセットが格納される）が自動的に作成されます。
 
@@ -270,7 +270,7 @@ ht-degree: 100%
 * [編集用のコンポーネントのダイアログ](#component-edit-dialog)を開きます。
 * アセットブラウザーから[アセットをドラッグ＆ドロップ](#drag-and-drop-assets-into-component)して、コンテンツを直接追加します。
 
-### コンポーネントの編集ダイアログ {#component-edit-dialog}
+### コンポーネントの編集ダイアログ  {#component-edit-dialog}
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
@@ -409,7 +409,7 @@ ht-degree: 100%
 
 [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を使用すると、レビュー担当者や他の作成者がコンテンツに関するフィードバックを提供できます。注釈は、レビューや検証の目的でよく使用されます。
 
-## ページのプレビュー {#previewing-pages}
+## ページのプレビュー  {#previewing-pages}
 
 ページをプレビューするには、以下の 2 つの方法があります。
 
