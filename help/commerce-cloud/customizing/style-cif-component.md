@@ -485,4 +485,4 @@ IDE と生成されたプロジェクトに戻ります。
 * [ローカル AEM 開発環境の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [クライアントサイドライブラリ](/help/implementing/developing/introduction/clientlibs.md)
 * [AEM Sites 使用の手引き](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [スタイルシステムを使用した開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [スタイルシステムを使用した開発](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
