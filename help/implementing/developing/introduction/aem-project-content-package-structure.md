@@ -617,5 +617,5 @@ Maven ビルドの前にターゲットディレクトリをクリーンアッ�
 
 ## その他のリソース {#additional-resources}
 
-+ [Maven を使用したパッケージの管理](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [Maven を使用したパッケージの管理](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
 + [FileVault コンテンツパッケージ Maven プラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
