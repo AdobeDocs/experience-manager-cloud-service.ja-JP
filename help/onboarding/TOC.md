@@ -43,7 +43,7 @@ ht-degree: 97%
       + [ウィザードの使用](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [ビルド環境について](getting-access-to-aem-in-cloud/build-environment-details.md)
-   + Cloud Managerのリリースノート {#release-notes-cloud-manager}
+   + Cloud Manager {#release-notes-cloud-manager}のリリースノート
       + [最新のリリースノート（2020.11.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [リリースノート（2020.10.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
       + [リリースノート（2020.9.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
