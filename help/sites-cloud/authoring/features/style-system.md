@@ -16,7 +16,7 @@ ht-degree: 100%
 
 このため、スタイルごとにカスタムコンポーネントを開発したり、スタイル機能を有効化するためにコンポーネントのダイアログをカスタマイズする必要がなくなりました。これにより、AEM のバックエンド開発をしなくてもそのまま再利用可能な、コンテンツ作成者のニーズにすばやく簡単に応えることができるコンポーネントの数が増加します。
 
-## 使用例 {#use-case}
+## 使用例  {#use-case}
 
 テンプレート作成者には、コンテンツ作成者がコンポーネントを操作するときの動作を設定する能力だけでなく、1 つのコンポーネントに複数の別の視覚的バリエーションを設定するための能力も必要です。
 
@@ -67,7 +67,7 @@ ht-degree: 100%
 1. [テンプレート作成者として](#as-a-template-author)の節の説明に従って、コンテンツ作成者が使用できるようにする CSS クラスを設定します。
 1. この後、コンテンツ作成者は[コンテンツ作成者として](#as-a-content-author)の節の説明に従ってスタイルを使用できます。
 
-### コンテンツ作成者として {#as-a-content-author}
+### コンテンツ作成者として  {#as-a-content-author}
 
 1. WKND プロジェクトをインストールした後、WKND の英語のマスターホームページ（`http://<host>:<port>/sites.html/content/wknd/language-masters/en`）に移動し、ページを編集します。
 1. ページの下方の&#x200B;**タイトル**&#x200B;コンポーネントを選択します。
@@ -82,7 +82,7 @@ ht-degree: 100%
    >
    >この例では、**カラー**&#x200B;スタイル（**黒**、**白**、**グレー**）は相互排他的ですが、**スタイル**&#x200B;オプション（**アンダーライン**、**右揃え**、**最小間隔**）は組み合わせることができます。これは、[テンプレート作成者としてテンプレートで設定可能](#as-a-template-author)です。
 
-### テンプレート作成者として {#as-a-template-author}
+### テンプレート作成者として  {#as-a-template-author}
 
 1. WKND の英語のマスターホームページ（`http://<host>:<port>/sites.html/content/wknd/language-masters/en`）の編集時に、**ページ情報／テンプレートの編集**&#x200B;でページのテンプレートを編集します。
 
@@ -121,7 +121,6 @@ ht-degree: 100%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
 
 コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが自動的に挿入されます。この他にコンポーネント自体でおこなう必要があることはありません。
@@ -136,7 +135,6 @@ ht-degree: 100%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
 
 >[!NOTE]
@@ -158,6 +156,7 @@ ht-degree: 100%
 >1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
 >1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
 >1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
+
 >
 
 
