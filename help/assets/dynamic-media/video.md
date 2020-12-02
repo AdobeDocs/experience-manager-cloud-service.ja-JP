@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ここでは、Dynamic Media でのビデオの操作方法について説明します。
 
-## クイックスタート：ビデオ {#quick-start-videos}
+## クイックスタート：ビデオ  {#quick-start-videos}
 
 次のワークフローの手順説明は、Dynamic Media 内のアダプティブビデオセットをすぐに使い始めることを目的としたものです。各手順に続いて、詳しい説明のあるトピックの見出しへのリンクが記載されています。
 
@@ -23,6 +23,7 @@ ht-degree: 100%
 >Dynamic Media のビデオを操作する前に、AEM 管理者が既に Dynamic Media Cloud Services を有効にして設定を完了していることを確認してください。
 >
 >* Dynamic Media 設定の [Dynamic Media Cloud Services の設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)、および [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)を参照してください。
+
 >
 
 
@@ -58,7 +59,6 @@ ht-degree: 100%
    * ビデオアセットをプレビューして公開します。
 
       * ソースビデオとビデオのエンコードされたレンディションを、関連するサムネールと共に表示します。
-
          [ビデオのプレビュー](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)または[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)。
          [ビデオレンディションの管理](/help/assets/manage-digital-assets.md#managing-renditions)。
 
@@ -78,7 +78,6 @@ ht-degree: 100%
           [Viewing video rendition properties](/help/assets/video-renditions.md) -->
 
     * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-
     [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
     
     * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
@@ -107,11 +106,9 @@ ht-degree: 100%
    * サードパーティの Web コンテンツ管理システムを使用している場合、Web ページにビデオをリンクするか、ビデオを埋め込むことができます。
 
       * URL を使用したビデオの統合：
-
          [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * Web ページの埋め込みコードを使用したビデオの統合：
-
          [Web ページへのビデオビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)。
    * [YouTube にビデオを公開します](#publishing-videos-to-youtube)。
    * [ビデオレポートを生成します](#viewing-video-reports)。
@@ -120,7 +117,7 @@ ht-degree: 100%
 
 
 
-## Dynamic Media でのビデオの操作 {#working-with-video-in-dynamic-media}
+## Dynamic Media でのビデオの操作  {#working-with-video-in-dynamic-media}
 
 Dynamic Media のビデオは、高品質のアダプティブビデオを簡単に公開して、デスクトップ、iOS、Android、Blackberry、Windows などのモバイルデバイスを含む複数の画面にストリーミングするためのエンドツーエンドのソリューションです。アダプティブビデオセットでは、同じビデオを、400 kbps、800 kbps、1000 kbps などの様々なビットレートと形式でエンコードしたバージョンにグループ分けします。デスクトップコンピューターまたはモバイルデバイスによって、利用可能な帯域幅が検出されます。
 
@@ -177,9 +174,9 @@ Dynamic Media の HTML5 ビデオビューアプリセットは堅牢なビデ�
 
 HTML5 と CSS を使用して再生コンポーネントをデザインできる機能、埋め込み再生の機能、ブラウザーの機能に応じてアダプティブストリーミングまたはプログレッシブストリーミングを使用できる機能を 1 つのプレーヤーにまとめることで、リッチメディアコンテンツを配信する範囲をデスクトップユーザーとモバイルユーザーの両方に拡大して、ビデオエクスペリエンスを効率化することができます。
 
-『Adobe Scene7 ビューアリファレンスガイド』の [HTML5 ビューアについて](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.translate.html)も参照してください。
+『Adobe Scene7 ビューアリファレンスガイド』の [HTML5 ビューアについて](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)も参照してください。
 
-### HTML5 ビデオビューアを使用した、デスクトップコンピューターおよびモバイルデバイス上でのビデオ再生 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### HTML5 ビデオビューアを使用した、デスクトップコンピューターおよびモバイルデバイス上でのビデオ再生  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 デスクトップおよびモバイルへのアダプティブビデオストリーミングの場合、ビットレートの切り替えに使用されるビデオは、アダプティブビデオセット内のすべての MP4 ビデオに基づいています。
 
@@ -266,7 +263,7 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
  </tbody>
 </table>
 
-## Dynamic Media ビデオソリューションのアーキテクチャ {#architecture-of-dynamic-media-video-solution}
+## Dynamic Media ビデオソリューションのアーキテクチャ  {#architecture-of-dynamic-media-video-solution}
 
 次の図に、アップロード後、（Dynamic Media Hybrid モードの）DMGateway によってエンコードされ、公開されるビデオのオーサリングワークフローの全体像を示します。
 
@@ -326,7 +323,7 @@ Dynamic Media を有効にし、ビデオクラウドサービスを設定済み
 
 例えば、幅 1,440、高さ 1,080 のビデオの縦横比は 1,440/1,080、つまり 1.33 になります。このビデオファイルをエンコードするには、縦横比 4:3 のビデオエンコーディングプリセットを選択します。
 
-### ビットレート {#bitrate}
+### ビットレート  {#bitrate}
 
 ビットレートとは、1 秒間のビデオ再生を作成するためにエンコードされるデータの量です。ビットレートは、1 秒あたりのキロビット数（Kbps）の単位で測定します。
 
@@ -411,7 +408,7 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセットの使用を推奨しています。MP4 ファイルでは H.264 ビデオコーデックが使用されるので、高品質のビデオを圧縮されたファイルサイズで作成することができます。
 
-## YouTube へのビデオの公開 {#publishing-videos-to-youtube}
+## YouTube へのビデオの公開  {#publishing-videos-to-youtube}
 
 AEM Assets で管理されているビデオアセットは、以前に作成した YouTube チャネルに直接投稿できます。
 
@@ -539,7 +536,7 @@ Google Cloud を設定するには：
 
    Google アカウントからログアウトします。次に、YouTube チャンネルを作成します。
 
-### YouTube チャンネルの作成 {#creating-a-youtube-channel}
+### YouTube チャンネルの作成  {#creating-a-youtube-channel}
 
 YouTube にビデオを公開するには、1 つ以上のチャネルが必要です。既に YouTube チャンネルを作成している場合は、このタスクをスキップして、次の「[公開用タグの追加](/help/assets/dynamic-media/video.md#adding-tags-for-publishing)」タスクに進んでください。
 
@@ -588,7 +585,7 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 * 6.4 以前の AEM で YouTube を設定するには、[6.4 以前の AEM での YouTube](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before) の設定を参照してください。
 * AEM 6.4 以降で YouTube を設定するには、](#setting-up-youtube-in-aem-and-later)AEM 6.4 以降での YouTube の設定[を参照してください。
 
-#### AEM 6.4 以降での YouTube の設定 {#setting-up-youtube-in-aem-and-later}
+#### AEM 6.4 以降での YouTube の設定  {#setting-up-youtube-in-aem-and-later}
 
 1. Dynamic Media のインスタンスに管理者としてログインしてください。
 1. AEM の左上隅にある AEM ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL Cloud Services]**／**[!UICONTROL YouTube 公開設定]**&#x200B;をタップします。
@@ -738,7 +735,7 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 
    詳しくは、[メタデータプロファイル](/help/assets/metadata-profiles.md)と[ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)を参照してください。
 
-### YouTube チャンネルへのビデオの公開 {#publishing-videos-to-your-youtube-channel}
+### YouTube チャンネルへのビデオの公開  {#publishing-videos-to-your-youtube-channel}
 
 次は、前の手順で追加したタグを、ビデオアセットに関連付けます。このプロセスによって、AEM は、YouTube チャンネルに公開するアセットを把握します。
 
@@ -749,10 +746,9 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 >**[!UICONTROL 即時公開する]**&#x200B;の場合、アップロードされたアセットは、IPS と同期された後、配信システムに自動的に公開されます。これは Dynamic Media には当てはまりますが、YouTube には当てはまりません。YouTube に公開するには、AEM オーサーを介して公開する必要があります。
 
 >[!NOTE]
->
->AEM では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube への公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
->詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
->詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
+AEM では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube への公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
+詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
+詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
 
 **YouTube チャンネルにビデオを公開するには：**
 
@@ -787,8 +783,7 @@ AEM 6.4 以降では、AEM で YouTube への公開をセットアップする�
 ビデオの公開後、Dynamic Media によって生成された YouTube URL 文字列を取得できます。YouTube URL をコピーしたらクリップボードに配置されるので、必要に応じて Web サイトのページまたはアプリケーションに貼り付けることができます。
 
 >[!NOTE]
->
->YouTube URL は、ビデオアセットを YouTube に公開するまではコピーできません。
+YouTube URL は、ビデオアセットを YouTube に公開するまではコピーできません。
 
 Web アプリケーションに YouTube URL をリンクするには：
 
@@ -800,18 +795,16 @@ Web アプリケーションに YouTube URL をリンクするには：
 1. 「**[!UICONTROL 詳細]**」タブをクリックします。
 1. 「YouTube への公開」の「YouTube URL リスト」で、URL テキストを選択し、Web ブラウザーにコピーしてアセットをプレビューするか、Web コンテンツページに追加します。
 
-### ビデオを非公開にして YouTube から削除 {#unpublishing-videos-to-remove-them-from-youtube}
+### ビデオを非公開にして YouTube から削除  {#unpublishing-videos-to-remove-them-from-youtube}
 
 AEM でビデオアセットを非公開にすると、そのビデオは YouTube から削除されます。
 
 >[!CAUTION]
->
->YouTube 内からビデオを直接削除すると、AEM にはそのことがわかりません。そのため、AEM は、そのビデオがまだ YouTube に公開されているかのように機能を続けます。ビデオアセットを YouTube で非公開にするときは、必ず AEM からおこなってください。
+YouTube 内からビデオを直接削除すると、AEM にはそのことがわかりません。そのため、AEM は、そのビデオがまだ YouTube に公開されているかのように機能を続けます。ビデオアセットを YouTube で非公開にするときは、必ず AEM からおこなってください。
 
 >[!NOTE]
->
->AEM では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube で非公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
->詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
+AEM では、YouTube からのコンテンツの削除に **[!UICONTROL YouTube で非公開]**&#x200B;ワークフローを使用します。このワークフローでは、進行状況を監視して、エラー情報を表示できます。
+詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
 
 ビデオを非公開にして YouTube から削除するには：
 
@@ -822,7 +815,7 @@ AEM でビデオアセットを非公開にすると、そのビデオは YouTub
 1. ページの右上隅にある「**[!UICONTROL 次へ]**」をタップします。
 1. ページの右上隅にある「**[!UICONTROL 非公開]**」をタップします。
 
-## ビデオエンコーディングと YouTube への公開の進行状況の監視 {#monitoring-video-encoding-and-youtube-publishing-progress}
+## ビデオエンコーディングと YouTube への公開の進行状況の監視  {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 ビデオエンコーディングが適用されたフォルダーに新しいビデオをアップロードしたり、YouTube にビデオを公開したりする場合は、ビデオエンコーディング／YouTube への公開の進行状況（エラー状況）を様々な方法で監視できます。YouTube への公開の実際の進行状況は、ログを介してのみ把握できますが、YouTube への公開が失敗したか成功したかは、別の方法で示されます（以下の手順で説明します）。また、YouTube の公開ワークフローやビデオエンコーディングが完了するか中断されると、そのことを知らせる電子メール通知を受け取ることもできます。
 
@@ -851,19 +844,17 @@ AEM でビデオアセットを非公開にすると、そのビデオは YouTub
    エンコーディングなどのワークフロー情報がタイムラインに表示されます。YouTube の公開の場合、ワークフロータイムラインには、YouTube チャンネルの名前と YouTube ビデオの URL も含まれます。さらに、パブリッシュが完了すると、ワークフロータイムラインには、エラー通知も表示されます。
 
    >[!NOTE]
-   >
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには長時間を要する可能性があります。例えば、次の設定です。
-   >* Apache Sling Job Queue Configuration
-   >* Adobe Granite Workflow External Process Job Handler
-   >* Granite Workflow Timeout Queue
+   [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、失敗／エラーメッセージが最終的に記録されるまでには長時間を要する可能性があります。例えば、次の設定です。
+   * Apache Sling Job Queue Configuration
+   * Adobe Granite Workflow External Process Job Handler
+   * Granite Workflow Timeout Queue
 
    これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
 
 1. 進行中のワークフローについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL インスタンス]**&#x200B;からワークフローインスタンスを表示します。
 
    >[!NOTE]
-   >
-   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要となる場合があります。
+   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要となる場合があります。
 
    ![chlimage_1-433](assets/chlimage_1-433.png)
 
@@ -876,25 +867,22 @@ AEM でビデオアセットを非公開にすると、そのビデオは YouTub
 1. エラーが発生したジョブについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL エラー]**&#x200B;からワークフローエラーを表示します。**[!UICONTROL ワークフローエラー]**&#x200B;に、エラーが発生したすべてのワークフローアクティビティが表示されます。
 
    >[!NOTE]
-   >
-   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要となる場合があります。
+   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要となる場合があります。
 
    ![chlimage_1-435](assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >
-   >[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには長時間を要する可能性があります。例えば、次の設定です。
-   >* Apache Sling Job Queue Configuration
-   >* Adobe Granite Workflow External Process Job Handler
-   >* Granite Workflow Timeout Queue
+   [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) からの&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;に関する複数のワークフロー設定があるので、エラーメッセージが最終的に記録されるまでには長時間を要する可能性があります。例えば、次の設定です。
+   * Apache Slingジョブキューの設定
+   * AdobeGraniteワークフロー外部プロセスジョブハンドラ
+   * Graniteワークフロータイムアウトキュー
 
    これらの設定の&#x200B;**[!UICONTROL 再試行]**、**[!UICONTROL 再試行遅延]**&#x200B;および&#x200B;**[!UICONTROL タイムアウト]**&#x200B;プロパティは調整できます。
 
 1. 完了したワークフローについては、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL アーカイブ]**&#x200B;からワークフローアーカイブを表示します。**[!UICONTROL ワークフローアーカイブ]**&#x200B;に、完了したすべてのワークフローアクティビティが表示されます。
 
    >[!NOTE]
-   >
-   >**[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要となる場合があります。
+   **[!UICONTROL ツール]**&#x200B;メニューにアクセスするには、管理者権限が必要となる場合があります。
 
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
@@ -949,8 +937,7 @@ For YouTube publishing jobs, do the following:
 ## ビデオレポートの表示 {#viewing-video-reports}
 
 >[!NOTE]
->
->ビデオレポートを使用できるのは、Dynamic Media - ハイブリッドモードを実行している場合のみです。
+ビデオレポートを使用できるのは、Dynamic Media - ハイブリッドモードを実行している場合のみです。
 
 ビデオレポートには、指定した期間における様々な集計指標が表示されます。ユーザーはビデオレポートを使用して、公開済みの個々のビデオやビデオの集合が期待どおりに動作しているかを監視できます。次のトップの指標データは、Web サイト全体のすべての公開済みビデオについて集計されるものです。
 
@@ -967,8 +954,7 @@ For YouTube publishing jobs, do the following:
 ビデオが Adobe Experience Manager Dynamic Media 以外でエンコードされた場合、オーディエンス保持（ドロップオフ）グラフおよび表内の再生率データは利用できません。
 
 >[!NOTE]
->
->トラッキングおよびレポートのデータは、Dynamic Media 独自のビデオプレーヤーと関連するビデオプレーヤープリセットの使用状況のみに基づいています。そのため、他のビデオプレーヤーによって再生されたビデオを追跡およびレポートすることはできません。
+トラッキングおよびレポートのデータは、Dynamic Media 独自のビデオプレーヤーと関連するビデオプレーヤープリセットの使用状況のみに基づいています。そのため、他のビデオプレーヤーによって再生されたビデオを追跡およびレポートすることはできません。
 
 デフォルトでは、ビデオレポートを最初に開いたときに、今月初めから今月の今日の日付までのビデオデータが表示されます。ただし、このデフォルトの日付範囲を上書きして、独自の日付範囲を指定することができます。次回ビデオレポートを開くと、指定した日付範囲が使用されます。
 
@@ -988,7 +974,7 @@ For YouTube publishing jobs, do the following:
 
 1. 上位の公開済みビデオを示した表で、ビデオ名をタップしてビデオを再生し、そのビデオのオーディエンス保持（ドロップオフ）レポートを表示します。
 
-### Scene7 HTML5 ビューア SDK を使用して作成したビデオビューアに基づくビデオレポートの表示 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Scene7 HTML5 ビューア SDK を使用して作成したビデオビューアに基づくビデオレポートの表示  {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Dynamic Media で標準提供されているビデオビューアを使用している場合、または標準提供のビデオビューアからカスタムのビューアプリセットを作成した場合は、ビデオレポートを表示するための追加手順は必要ありません。これに対して、Scene7 HTML5 ビューア SDK から独自のビデオビューアを作成した場合は、次の手順を実行して、ビデオビューアが Dynamic Media のビデオレポートにトラッキングイベントを送信するように設定する必要があります。
 
@@ -1026,13 +1012,11 @@ Scene7 HTML5 ビューア SDK を使用して作成したビデオビューア�
 `config2` がその他の場合は、プリセットパラメーターを `config2` パラメーターと同じに設定します。例えば、`config2=companypreset-2` の場合、`&param2=companypreset-2` を AppMeasurmentBridge.jsp の URL に追加します。
 
    * 次に、AppMeasurementBridge.jsp にスクリプトを追加します。
-
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
 1. 次の操作をおこなって、TrackingManager コンポーネントを作成します。
 
    * `s7sdk.Utils.init();` をコールした後に、次の行を追加して、TrackingManager インスタンスを作成し、イベントを追跡します。
-
       `var trackingManager = new s7sdk.TrackingManager();`
 
    * 次の操作をおこなって、コンポーネントを TrackingManager に接続します。
@@ -1051,7 +1035,6 @@ Scene7 HTML5 ビューア SDK を使用して作成したビデオビューア�
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-
    appMeasurementBridge オブジェクトには組み込みのトラッキング関数があります。ただし、複数のトラッキングシステムやその他の機能をサポートするために、独自のトラッキング関数を作成することもできます。
 
    詳しくは、『*Scene7 HTML5 Viewer SDK User Guide*』の「*Using the TrackingManager Component*」を参照してください。このガイドは、[Adobe Developer Connection](https://help.adobe.com/ja_JP/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) からダウンロードできます。
@@ -1063,8 +1046,7 @@ Scene7 HTML5 ビューア SDK を使用して作成したビデオビューア�
 聴覚障害者のためのクローズドキャプションを使用することで、キャプションによってアクセシビリティを大幅に向上させることもできます。
 
 >[!NOTE]
->
->使用するビデオプレーヤーがキャプションの表示に対応する必要があります。
+使用するビデオプレーヤーがキャプションの表示に対応する必要があります。
 
 Dynamic Media には、キャプションファイルを JSON（JavaScript Object Notation）形式に変換する機能があります。このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。この後、検索エンジンがコンテンツをクロールしてインデックスを作成できます。これにより、ビデオを検索しやすくなり、ビデオコンテンツの詳細がユーザーに提供されます。
 
@@ -1089,8 +1071,7 @@ URL で JSON 機能を使用する方法について詳しくは、*Scene7 画�
    ここで、サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。終了したら、キャプションファイルの内容をコピーし、空のテキストエディターに貼り付けて、ファイル拡張子 .vtt を付けて保存します。
 
    >[!NOTE]
-   >
-   >複数言語のビデオサブタイトルを用意してグローバル対応する場合、WebVTT 標準では、サポート対象の言語ごとに個別の .vtt ファイルを作成して呼び出す必要があります。
+   複数言語のビデオサブタイトルを用意してグローバル対応する場合、WebVTT 標準では、サポート対象の言語ごとに個別の .vtt ファイルを作成して呼び出す必要があります。
 
    通常、VTT ファイルの名前はビデオファイルと同じにして、言語ロケール（-EN、-FR、-DE など）を追加します。そうしておくと、既存の Web コンテンツ管理システムを使用してビデオの URL を自動的に生成する際に役立ちます。
 
@@ -1120,10 +1101,9 @@ URL で JSON 機能を使用する方法について詳しくは、*Scene7 画�
 1 つのビデオまたはアダプティブビデオセットにチャプターマーカーを追加すると、長編ビデオの視聴と操作が簡単になります。ビデオの再生中に、ビデオのタイムライン（ビデオスクラバーとも呼ばれる）上のチャプターマーカーをクリックするだけで、関心があるポイントや、新しいコンテンツ、デモ、チュートリアルなどにすぐに移動できます。
 
 >[!NOTE]
->
->ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーを必ずしもサポートしているとは限りません。
+ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Media ビデオプレーヤーは、チャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーは、チャプターマーカーを必ずしもサポートしているとは限りません。
 
-必要であれば、ビデオビューアプリセットを使用するのではなく、チャプター機能を備えた独自のカスタムビデオビューアを作成して、ブランディングできます。チャプターナビゲーション機能を備えた独自の HTML5 ビューアの作成方法について詳しくは、『Adobe Scene7 Viewer SDK for HTML5』の「Customizing Behavior Using Modifiers」で `s7sdk.video.VideoPlayer` クラスと `s7sdk.video.VideoScrubber`7 クラスの説明を参照してください。Adobe Scene7 Viewer SDK は、[Adobe Developer Connection](https://help.adobe.com/ja_JP/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) からダウンロードして入手できます。
+必要であれば、ビデオビューアプリセットを使用するのではなく、チャプター機能を備えた独自のカスタムビデオビューアを作成して、ブランディングできます。チャプターナビゲーション機能を備えた独自の HTML5 ビューアの作成方法について詳しくは、『Adobe Scene7 Viewer SDK for HTML5』の「Customizing Behavior Using Modifiers」で `s7sdk.video.VideoPlayer` クラスと `s7sdk.video.VideoScrubber`7 クラスの説明を参照してください。Adobe Scene7 Viewer SDK は、[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) からダウンロードして入手できます。
 
  ビデオのチャプターリストを作成する方法は、キャプションを作成する方法とほとんど同じです。つまり、WebVTT ファイルを作成します。ただし、この WebVTT ファイルは、WebVTT キャプションファイルと分けておく必要があります（キャプションファイルを使用する場合）。キャプションとチャプターを 1 つの WebVTT ファイルにまとめることはできません。
 
