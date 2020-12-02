@@ -2,9 +2,9 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: aae587109d1f8764ac535b316a2a7d05fd7179fe
+source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
 workflow-type: tm+mt
-source-wordcount: '4059'
+source-wordcount: '4082'
 ht-degree: 88%
 
 ---
@@ -375,6 +375,8 @@ Phase 2 finished
 
 1. 前の節のバリデータを実行し、サポートされているディレクティブのみが含まれていることを確認します。 設定が有効でない場合、スクリプトは失敗します。
 2. 構文が正しいかどうかをテストして`httpd -t command`を実行し、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります
+
+Cloud Managerの展開中に、`httpd -t syntax`チェックも実行され、エラーはCloud Manager `Build Images step failure`ログに記録されます。
 
 ## Apache および Dispatcher 設定のローカルでのテスト {#testing-apache-and-dispatcher-configuration-locally}
 
