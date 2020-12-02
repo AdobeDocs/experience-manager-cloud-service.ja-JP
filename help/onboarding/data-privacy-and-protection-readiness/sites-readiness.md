@@ -10,7 +10,7 @@ ht-degree: 45%
 ---
 
 
-# Cloud Serviceサイトでのデータ保護およびデータプライバシー規制への対応準備としてのAdobe Experience Manager {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Cloud Serviceサイトに対するデータ保護の準備とデータのプライバシーに関する規制{#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,23 +20,23 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、 [Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+>プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、[Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
 Cloud ServiceサイトとしてのAdobe Experience Managerは、お客様がデータのプライバシーと保護に関するコンプライアンスの義務を守るのを支援する準備が整っています。 このページでは、AEM Sitesでのリクエストの処理手順を説明します。 プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
 
-詳しくは、 [Adobeプライバシーセンターを参照してください](https://www.adobe.com/privacy.html)。
+詳しくは、[Adobeプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
 >[!NOTE]
 >
->詳細は、『Data Protection and Data Privacy Regulations [』の「Data Readiness for Data Protection」と「Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md) 」の「Adobe Experience Manager」を参照してください。
+>詳細は、[Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)のCloud Service準備に関するAdobe Experience Managerを参照してください。
 
 ## AEM オーサー層 {#aem-author-tier}
 
-User accounts and UGC content on the author server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+作成者サーバー上のユーザーアカウントとUGCコンテンツは、[AEM Foundationドキュメント](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)に記載されています。
 
 ## AEM パブリッシュ層 {#aem-publish-tier}
 
-User accounts used to authenticate visitors on the site, and UGC content on the publish server are covered in the [AEM Foundation documentation](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md).
+サイト上の訪問者の認証に使用されるユーザーアカウント、およびパブリッシュサーバー上のUGCコンテンツは、[AEM Foundationドキュメント](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)に記載されています。
 
 デフォルトでは、AEM Sitesコンポーネントは、訪問者が入力したフォームデータを発行サーバーに保存しません。 サードパーティのシステムまたは Adobe Campaign にデータを転送してさらに処理をおこなうことをお勧めします。
 
@@ -53,9 +53,9 @@ Adobe Experience Managerは、ユーザーのオプトイン/オプトアウト�
 1. 次の URL に移動します。
    [Adobeプライバシーセンター — オプトアウト](https://www.adobe.com/privacy/opt-out.html)
 
-1. 「 **Services** - **Experience Cloudサービスの使用状況データ」まで下にスクロールします**。
+1. **サービス** - **Experience Cloudサービス使用状況データ**&#x200B;まで下にスクロールします。
 
-1. 参照先リンクを選択します。現在、 **ここにタイトルが付いています**。
+1. 参照先リンクを選択します。現在、**ここ**&#x200B;にタイトルが付いています。
 
 1. 次の詳細と、に関するオプションが表示されオプトアウトます。
 
@@ -63,22 +63,22 @@ Adobe Experience Managerは、ユーザーのオプトイン/オプトアウト�
 
       オプトアウトCookieを削除した場合、またはコンピューターやWebブラウザーを変更した場合は、再度オプトアウトする必要があります。
 
-      オプトアウト —訪問者セッションの集計と分析（オプトアウトCookieをインストール）から自分を除外する( `amcglobal.sc.omtrdc.net` ここをクリック)。
+      オプトアウト —訪問者セッションの集計と分析（`amcglobal.sc.omtrdc.net`オプトアウトcookieをインストール）から自分を除外 — ここをクリックします。
 
-      オプトイン —訪問者セッションの集計と分析に含める（オプトアウトCookieをインストールしない） — ここをクリックします。 `amcglobal.sc.omtrdc.net`
+      オプトイン —訪問者セッションの集計と分析（`amcglobal.sc.omtrdc.net`オプトアウトCookieをインストールしないでください）に含める — ここをクリックします。
    実際のリンクにアクセスするには、上記の手順に従います。
 
    >[!NOTE]
    >
-   > 2に詳しい説明があり **ます。 プライバシー.** 」の節を参照して [ください](https://www.adobe.com/jp/legal/terms.html)。
+   > **2に詳しい説明があります。 プライバシー.** 」の節を参照して [ください](https://www.adobe.com/jp/legal/terms.html)。
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sitesには、Adobe Analyticsオンデマンドサービス内の機能を使用するAnalytics Foundationとのオプションの統合が含まれています。
 
-For further information on managing data subject requests related to Adobe Analytics see [Adobe Analytics and Data Privacy](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html).
+Adobe Analyticsに関するデータのサブジェクトリクエストの管理についての詳細は、[Adobe Analyticsとデータのプライバシー](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)を参照してください。
 
-## ターゲット別パーソナライゼーション基盤 {#personalization-foundation-by-target}
+## ターゲット{#personalization-foundation-by-target}別のパーソナライゼーション基盤
 
 AEM Sitesには、Adobe Targetオンデマンドサービス内の機能を使用するターゲット別のPersonalization Foundationとの統合（オプション）が含まれています。
 
@@ -126,7 +126,7 @@ AEMは、ContextHubと共にオプションのデータレイヤーを提供し�
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### ContextHub の永続性のプレビュー {#previewing-persistence-of-contexthub}
+### ContextHub の永続性のプレビュー  {#previewing-persistence-of-contexthub}
 
 ContextHub で使用されている永続性をプレビューするには、次の方法があります。
 
@@ -214,7 +214,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### ContextHub の永続性の解除 {#clearing-persistence-of-contexthub}
+### ContextHub の永続性の解除  {#clearing-persistence-of-contexthub}
 
 ContextHub の永続性を解除するには：
 
