@@ -1,42 +1,42 @@
 ---
-title: Assets as a Cloud Service ガイド
-description: Adobe Experience Manager Assets as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
+title: ' [!DNL Cloud Service] ガイドとしてのアセット'
+description: ' [!DNL Cloud Service] セルフヘルプリソースとドキュメントのリンクとしてのAdobe Experience Manager資産'
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 87%
+source-wordcount: '307'
+ht-degree: 31%
 
 ---
 
 
-# Assets as a Cloud Service ガイド {#aem-assets-guide}
+# [!DNL Cloud Service]ガイド{#aem-assets-guide}としてのアセット
 
-以下に、Experience Manager Assets as a Cloud Service のセルフヘルプリソースを示します。
+以下は、[!DNL Cloud Service]としてのExperience Managerアセットのセルフヘルプリソースです。
 
 ## Assets に関する主要な記事 {#key-articles}
 
 * [概要と新機能](overview.md)
 * [主要な変更点](/help/assets/assets-cloud-changes.md)
-* [AEM Assets as a Cloud Service のアーキテクチャ](architecture.md)
+* [アセットのアーキテクチャ( [!DNL Cloud Service]](architecture.md)
 * [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
 
 ## Experience Manager ガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service のホーム](/help/landing/home.md) | Experience Manager as a Cloud Service の完全なドキュメント。 |
+| [Experience Manager [!DNL Cloud Service] をホームとして](/help/landing/home.md) | [!DNL Cloud Service]としてのExperience Managerの完全なドキュメント。 |
 | [概要](/help/overview/home.md) | Experience Manager as a Cloud Service の概要と用語集。 |
 | [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止される機能および削除された機能、既知の問題について説明します。 |
-| [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe Experience Manager as a Cloud Service の中心概念について紹介します。 |
-| [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
-| [オンボーディング](/help/onboarding/home.md) | Experience Manager as a Cloud Service の基本を学ぶ - 重要なデータにアクセスし、保護します。 |
-| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |
-| [Experience Manager as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | Experience Manager as a Cloud Service への移行プロセスについて説明します。 |
-| [実装ユーザガイド](/help/implementing/home.md) | Experience Manager as a Cloud Service をカスタマイズ、開発およびデプロイします。 |
-| [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
-| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
-| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
+| [中心概念](/help/core-concepts/home.md) | このガイドでは、新しいサービスのアーキテクチャを含む、Experience Managerのコアコンセプトを[!DNL Cloud Service]として紹介します。 |
+| [セキュリティユーザーガイド](/help/security/home.md) | Experience Managerを[!DNL Cloud Service]として扱う際の重要なセキュリティトピックを紹介します。 |
+| [オンボーディング](/help/onboarding/home.md) | Experience Managerを[!DNL Cloud Service]として使い始める — 重要なデータにアクセスし、保護する。 |
+| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Experience Managerサイトを[!DNL Cloud Service]として作成、管理する方法を理解します。 |
+| [Experience Managerへの移行 [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Experience Managerへのトランジションの遍歴を[!DNL Cloud Service]として理解します。 |
+| [実装ユーザガイド](/help/implementing/home.md) | Experience Managerを[!DNL Cloud Service]としてカスタマイズ、開発、デプロイします。 |
+| [コネクタユーザーガイド](/help/connectors/home.md) | コネクタを[!DNL Cloud Service]としてExperience Managerに統合する方法を説明します。 |
+| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Experience Managerのバックエンド操作を[!DNL Cloud Service]として説明します。 |
+| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEMでのCommerce Integration Frameworkに関する情報を[!DNL Cloud Service]として参照します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
@@ -46,6 +46,6 @@ ht-degree: 87%
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [チュートリアル [!DNL Cloud Service] としてのAdobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
