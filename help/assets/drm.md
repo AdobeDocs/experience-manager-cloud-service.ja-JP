@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL Assets] のデジタル著作権管理 '
-description: ' [!DNL Experience Manager] as a Cloud Service でライセンスされているアセットの状態と有効期限の情報を管理する方法について説明します。'
+description: ' [!DNL Experience Manager] 内のライセンス済みアセットのアセット有効期限の状態と情報を [!DNL Cloud Service]として管理する方法を説明します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 100%
+source-wordcount: '1345'
+ht-degree: 98%
 
 ---
 
