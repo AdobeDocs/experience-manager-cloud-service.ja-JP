@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: デジタルア追加セットを [!DNL Adobe Experience Manager] a [!DNL Cloud Service]として<a0/>に保存します。
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1895'
 ht-degree: 38%
 
 ---
@@ -176,10 +176,6 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 停止]:アクティブな構成を終了します。
    * [!UICONTROL ジョブのステータス]:進行中のインポートジョブで使用された場合、または完了したジョブで使用された場合の構成のステータスを表示します。
    * [!UICONTROL 表示アセット]:ターゲットフォルダーが存在する場合は、表示します。
-
->[!NOTE]
->
->[!DNL Experience Manager]にセットアップしてデプロイする際に、他のシステムからのコンテンツ移行の一環としてバルクアップロードを行う場合は、慎重な計画、考慮、ツールの選択が必要になります。 コンテンツ移行方法のガイダンスについては、[デプロイメントガイド](/help/implementing/deploying/overview.md)を参照してください。
 
 ## デスクトップクライアントを使用したアセットのアップロード {#upload-assets-desktop-clients}
 
