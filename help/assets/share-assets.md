@@ -3,17 +3,17 @@ title: アセット、フォルダー、コレクションをリンクとして�
 description: ここでは、Adobe Experience Manager Assets 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 97%
+source-wordcount: '896'
+ht-degree: 96%
 
 ---
 
 
 # Adobe Experience Manager で管理されるアセットの共有と配布 {#share-assets-from-aem}
 
-Adobe Experience Manager（AEM）Assets では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。Adobe Experience Manager Assets as a Cloud Service のアセットを共有するには、次の方法を使用します。
+Adobe Experience Manager（AEM）Assets では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。次の方法を使用して、Experience Managerアセットのアセットを[!DNL Cloud Service]として共有します。
 
 * リンクとして共有。
 * アセットをダウンロードし、個別に共有します。
@@ -187,6 +187,5 @@ Adobe Asset Link を使用すると、コンテンツ作成プロセスでのク
 * If you cannot share assets using link sharing functionality, ensure that you have the appropriate permissions. See [share assets](#sharelink).
 -->
 
-<!--
-Add content or link about how to share using Brand Portal when it is available on Cloud Service.
+<!-- TBD: Add content or link about how to share using Brand Portal when it is available on [!DNL Cloud Service].
 -->
