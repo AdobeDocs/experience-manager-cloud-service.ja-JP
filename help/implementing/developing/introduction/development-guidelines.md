@@ -236,7 +236,7 @@ AEM CS では、ポート 465 でメールを送信する必要があります�
 
 ### 設定 {#email-configuration}
 
-AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
+AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
 電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/notification.html)を参照してください。AEM CS の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスを以下のように調整する必要があります。
 
