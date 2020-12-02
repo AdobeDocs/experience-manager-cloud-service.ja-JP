@@ -26,7 +26,7 @@ ContextHub 機能を有効にし、ContextHub JavaScript ライブラリにリ�
 
 ContextHub ツールバーをプレビューモードで表示するかどうかも設定する必要があります。[ContextHub UI の表示／非表示](configuring-contexthub.md#showing-and-hiding-the-contexthub-ui)を参照してください。
 
-## ContextHub ストアについて {#about-contexthub-stores}
+## ContextHub ストアについて  {#about-contexthub-stores}
 
 コンテキストデータを保持するには、ContextHub ストアを使用します。ContextHub には、すべてのストアタイプの基礎となる次のタイプのストアが用意されています。
 
@@ -37,7 +37,7 @@ ContextHub ツールバーをプレビューモードで表示するかどうか
 
 すべてのストアタイプは、[`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) クラスの拡張です。新しいストアタイプの作成については、[カスタムストアの作成](extending-contexthub.md#creating-custom-store-candidates)を参照してください。ストアタイプのサンプルについては、[ContextHub ストア候補のサンプル](sample-stores.md)を参照してください。
 
-### 永続モード {#persistence-modes}
+### 永続モード  {#persistence-modes}
 
 ContextHub ストアは、次のいずれかの永続モードを使用します。
 
