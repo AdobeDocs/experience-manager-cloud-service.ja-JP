@@ -20,7 +20,7 @@ ht-degree: 91%
    + [実行](/help/move-to-cloud-service/execution.md)
    + [運用開始後](/help/move-to-cloud-service/post-go-live.md)
 + クラウド移行ツール {#cloud-migration}
-   + ベストプラクティスアナライザ {#best-practices-analyzer}
+   + ベストプラクティスアナライザ{#best-practices-analyzer}
       + [概要](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [ベストプラクティスアナライザの使用](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + コンテンツ転送ツール {#content-transfer-tool}
