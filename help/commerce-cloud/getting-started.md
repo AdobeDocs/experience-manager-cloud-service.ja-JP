@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: b3abefb2953080443e220a248dd4484d23c09a0e
+source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 93%
+source-wordcount: '677'
+ht-degree: 80%
 
 ---
 
@@ -63,9 +63,25 @@ AEM Commerce を Magento と接続するには、次の手順に従います。
 
 >[!NOTE]
 >
->また、[Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) を使用して Cloud Manager 変数を設定することもできます。
+>または、[Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)を使用してCloud Manager変数を設定することもできます。
 
 これで、AEM Commerce as a Cloud Service を使用する準備が整い、Cloud Manager を介してプロジェクトをデプロイできます。
+
+## ステージングされたカタログ機能を有効にする（オプション） {#staging}
+
+>[!NOTE]
+>
+>この機能は、MagentoのEnterprise EditionまたはMagentoのCloudでのみ使用できます。
+
+1. Magentoにログインし、統合トークンを作成します。 詳しくは、[トークンベースの認証](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)を参照してください。 統合トークンに&#x200B;*`Content -> Staging`リソースへの*&#x200B;アクセスのみ&lt;a0/>が含まれていることを確認してください。 `Access Token`値をコピーします。
+
+1. Cloud Managerで`COMMERCE_AUTH_HEADER`シークレット変数を設定します。
+
+   ```bash
+   aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
+   ```
+
+   Cloud Manager用のAdobe I/OCLIの設定方法については、[「AEMコマースとMagentoの接続](#magento)」を参照してください。
 
 ## サードパーティコマースシステムとの統合 {#integrations}
 
