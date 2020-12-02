@@ -1,6 +1,6 @@
 ---
-title: Search digital assets and images in [!DNL Adobe Experience Manager].
-description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
+title: ' [!DNL Adobe Experience Manager]内のデジタルアセットと画像を検索します。'
+description: フィルターパネルを使用して [!DNL Adobe Experience Manager] 内で必要なアセットを見つける方法と、検索に表示されるアセットを使用する方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 75%
 ---
 
 
-# Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# [!DNL Adobe Experience Manager] {#search-assets-in-aem}内のアセットを検索
 
-[!DNL Adobe Experience Manager Assets] は、高いコンテンツ速度を達成するのに役立つ堅牢なアセット検出方法を提供します。 標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などです。Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
+[!DNL Adobe Experience Manager Assets] は、高いコンテンツ速度を達成するのに役立つ堅牢なアセット検出方法を提供します。標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などです。[!DNL Assets]ユーザーインターフェイスや他のアプリケーションやサーフェスを介して実行できる、シンプル、高度、カスタムの検索を使用して、これらの使用例を満たすことができます。
 
 [!DNL Experience Manager Assets] は次の使用例をサポートしています。ここでは、これらの使用例での使用法、概念、設定、制限事項、トラブルシューティングについて説明します。
 
@@ -31,9 +31,9 @@ ht-degree: 75%
 | [制限事項](#tips)と[ヒント](#limitations) |  |  |
 | [例を使った説明](#samples) |  |  |
 
-Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and press return. または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。[!DNL Experience Manager] 開始が検索キーワードを入力する際に、サーチクエリを表示します。
+[!DNL Experience Manager] Webインターフェイスの上部にあるOmnisearchフィールドを使用してアセットを検索します。 [!DNL Experience Manager]の&#x200B;**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;に移動し、上部のバーの![search_icon](assets/do-not-localize/search_icon.png)をクリックし、検索キーワードを入力して、Returnキーを押します。 または、キーワードショートカット `/`（スラッシュ）を使用して、オムニサーチフィールドを開きます。`Location:Assets` が事前に選択されており、DAM アセットの検索に制限されています。[!DNL Experience Manager] 開始が検索キーワードを入力する際に、サーチクエリを表示します。
 
-アセット、フォルダー、タグおよびメタデータを検索するには、**[!UICONTROL フィルター]**&#x200B;パネルを使用します。ファイルタイプ、ファイルサイズ、最終変更日、アセットのステータス、インサイトデータ、Adobe Stock ライセンスなどの、様々なオプション（述部）に基づいて検索結果をフィルタリングできます。You can customize the Filters panel and add or remove search predicates using [search facets](/help/assets/search-facets.md). [!UICONTROL フィルターパネルの] ファイルの種類 [!UICONTROL (File Type] )フィルターには、混在状態のチェックボックスがあります。 したがって、すべてのネストされた述語（またはフォーマット）を選択しない限り、第1レベルのチェックボックスは部分的にチェックされます。
+アセット、フォルダー、タグおよびメタデータを検索するには、**[!UICONTROL フィルター]**&#x200B;パネルを使用します。ファイルタイプ、ファイルサイズ、最終変更日、アセットのステータス、インサイトデータ、Adobe Stock ライセンスなどの、様々なオプション（述部）に基づいて検索結果をフィルタリングできます。フィルターパネルをカスタマイズし、[検索ファセット](/help/assets/search-facets.md)を使用して、検索述語を追加または削除できます。 [!UICONTROL フィルター]パネルの[!UICONTROL ファイルタイプ]フィルターには、混在状態のチェックボックスがあります。 したがって、すべてのネストされた述語（またはフォーマット）を選択しない限り、第1レベルのチェックボックスは部分的にチェックされます。
 
 [!DNL Experience Manager] 検索機能では、コレクションの検索とコレクション内のアセットの検索をサポートしています。詳しくは、[コレクションの検索](/help/assets/manage-collections.md)を参照してください。
 
@@ -43,9 +43,9 @@ Search assets using the Omnisearch field at the top of the [!DNL Experience Mana
 
 ![Experience Managerアセットの検索結果インターフェイスを理解する](assets/aem_search_results.png)
 
-*図：検索結果インターフェースを理解 [!DNL Experience Manager Assets] する。*
+*図：検索結果インター [!DNL Experience Manager Assets] フェイスを理解する。*
 
-**A.** 検索をスマートコレクションとして保存します。 **B.検索結果を絞り込むための** フィルターまたは予測。 **C.** ファイル、フォルダ、またはその両方を表示する。 **D：**「フィルター」をクリックすると、左側のパネルが開くまたは閉じます。**E：** DAM が検索場所になります。**F.** Omnisearchフィールドにユーザが入力する検索キーワードを入力。 **G.** 、ロードされた検索結果を選択します。 **H.** 検索結果の合計中に表示された検索結果の数 **I.検索を閉じます** 。 **J.** カードの表示とリストの表示を切り替えます。
+**A.検索をスマートコレクションとして** 保存します。**B.検索結果を絞り込むための** フィルターまたは予測&#x200B;**C.** 表示ファイル、フォルダ、またはその両方。**D：**「フィルター」をクリックすると、左側のパネルが開くまたは閉じます。**E：** DAM が検索場所になります。**F.** Omnisearchフィールドにユーザが入力する検索キーワードを入力します。**G.ロードされた検索結果を** 選択します。**H.検索結果の合計** 数の中で検索結果が表示される回数&#x200B;**I.検索を** 閉じます。**J.カードの表示とリストの表示を** 切り替えます。
 
 ### 動的検索ファセット {#dynamicfacets}
 
@@ -71,11 +71,11 @@ Search assets using the Omnisearch field at the top of the [!DNL Experience Mana
 
 オムニサーチフィールドからキーワード検索を実行できます。キーワード検索は、大文字と小文字が区別されません。また、（よく使用されるメタデータフィールド全体にわたる）フルテキスト検索です。 複数のキーワードを使用する場合は、`AND` がキーワード間のデフォルトの演算子になります。
 
-結果は、最も近い一致を先頭に関連性の高い順に並べ替えられます。複数のキーワードがある場合は、メタデータに含まれるキーワードが多いアセットが、より関連性の高い結果になります。メタデータ内では、スマートタグとして表示されるキーワードは、他のメタデータフィールドに表示されるキーワードより高くランク付けされます。[!DNL Experience Manager] では、特定の検索用語に、より高い重みを付けることができます。Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
+結果は、最も近い一致を先頭に関連性の高い順に並べ替えられます。複数のキーワードがある場合は、メタデータに含まれるキーワードが多いアセットが、より関連性の高い結果になります。メタデータ内では、スマートタグとして表示されるキーワードは、他のメタデータフィールドに表示されるキーワードより高くランク付けされます。[!DNL Experience Manager] では、特定の検索用語に、より高い重みを付けることができます。また、特定の検索用語に対して、ターゲットアセットの一部のランク[を&lt;a0/>上げることもできます。](#searchrank)
 
 関連性の高いアセットをすばやく見つけるために、この機能豊富なインターフェイスには、フィルタリング、並べ替え、選択のメカニズムが用意されています。複数の条件に基づいて結果をフィルタリングし、検索されたアセットの数を様々なフィルター別に確認できます。または、オムニサーチフィールドのクエリを変更して検索を再実行することもできます。検索用語やフィルターを変更しても、その他のフィルターは依然として適用され、検索のコンテキストが保たれます。
 
-結果が多数のアセットの場合、カード表示に最初の100が [!DNL Experience Manager] 表示され、リスト表示に200が表示されます。 ユーザがスクロールすると、読み込まれるアセットが増えます。 これは、パフォーマンスを向上させるためです。 表示されるアセット [数のデモビデオをご覧ください](https://www.youtube.com/watch?v=LcrGPDLDf4o)。
+結果が多数のアセットである場合、[!DNL Experience Manager]は最初の100をカード表示に、200をリスト表示に表示します。 ユーザがスクロールすると、読み込まれるアセットが増えます。 これは、パフォーマンスを向上させるためです。 [表示されるアセット数](https://www.youtube.com/watch?v=LcrGPDLDf4o)のデモビデオをご覧ください。
 
 時には、予期しないアセットが検索結果に表示される場合があります。詳しくは、[予期しない検索結果](#unexpectedresults)を参照してください。
 
@@ -108,11 +108,11 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 特定のアセットに対するキーワードの有効性を高めることで、キーワードに基づいた検索を強化できます。つまり、特定のキーワードを昇格させた場合、それらのキーワードに基づいて検索すると、それらのキーワードの対象となる画像が検索結果の最上部に表示されます。
 
-1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
-1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. 同じ方法で複数のキーワードを指定できます。
+1. [!DNL Assets]ユーザーインターフェイスから、アセットのプロパティページを開きます。 「**[!UICONTROL 詳細設定]**」をクリックし、「**[!UICONTROL 検索キーワード]**&#x200B;を昇格する」の下の追加「****」をクリックします。
+1. 「**[!UICONTROL プロモートを検索]**」ボックスで、画像の検索をブーストするキーワードを指定し、「**[!UICONTROL 追加]**」をクリックします。 同じ方法で複数のキーワードを指定できます。
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。昇格したこのキーワードの対象となるアセットが、検索結果の上位に表示されます。
 
-ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。For detailed info, see [search in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+ターゲットを絞ったキーワードの検索結果で一部のアセットのランクを上げることで、この機能をうまく利用できます。以下の例（ビデオ）を参照してください。詳しくは、Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)の[検索を参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -171,8 +171,8 @@ AEM のユーザーインターフェイス内から [Adobe Stock アセット](
 | 件名 | subject:&quot;Training&quot; |
 | タグ | tags:&quot;Location And Travel&quot; |
 | タイプ | type:&quot;image\png&quot; |
-| 画像の幅 | width:lowerbound..upperbound |
-| 画像の高さ | height:lowerbound..upperbound |
+| 画像の幅 | width:lowerbound..上の |
+| 画像の高さ | height:lowerbound..上の |
 | 人 | person:John |
 
 path、limit、size および orderby の各プロパティを他のプロパティと OR で結合することはできません。
@@ -181,7 +181,7 @@ path、limit、size および orderby の各プロパティを他のプロパテ
 
 複雑なクエリの検索形式の例：
 
-* 複数のファセットフィールドを持つアセットをすべて表示する（例：title=John Doe および creatortool=Adobe Photoshop）： `title:"John Doe" creatortool : Adobe*`
+* 複数のファセットフィールドを持つアセットをすべて表示する（例：title=John Doe および creatortool=Adobe Photoshop）：  `title:"John Doe" creatortool : Adobe*`
 * ファセット値が 1 語でなく文になっているアセットをすべて表示する（例：title=Scott Reynolds）：`title:"Scott Reynolds"`
 * 1 つのプロパティに複数の値が指定されているアセットを表示する（例：title=Scott Reynolds または John Doe）：`title:"Scott Reynolds" OR "John Doe"`
 * プロパティ値が特定の文字列で始まるアセットを表示する（例：title=Scott Reynolds）：`title:Scott*`
@@ -249,17 +249,17 @@ AEM 検索機能では、コレクションの検索とコレクション内の�
 
 ## 制限事項 {#limitations}
 
-The search capability in [!DNL Experience Manager Assets] has the following limitations:
+[!DNL Experience Manager Assets]の検索機能には次の制限があります。
 
 * 検索クエリの先頭にスペースを入れないでください。スペースを入れると、検索が機能しません。
-* [!DNL Experience Manager] は、検索結果からアセットのプロパティを選択し、検索をキャンセルした後も、検索語を引き続き表示する場合があります。 <!-- (CQ-4273540) -->
+* [!DNL Experience Manager] は、検索結果からアセットのプロパティを選択し、検索をキャンセルした後も、検索語を引き続き表示する場合があります。  <!-- (CQ-4273540) -->
 * フォルダーまたはファイルとフォルダーを検索する場合、どのパラメーターでも検索結果を並べ替えることはできません。
-* If you press Return without typing in Omnisearch bar, [!DNL Experience Manager] returns a list of only files and not folders. If you search specifically for folders without using a keyword, [!DNL Experience Manager] does not return any results.
+* Omnisearchバーに入力せずにReturnキーを押すと、[!DNL Experience Manager]はファイルのみのリストを返し、フォルダーは返しません。 キーワードを使用せずに特にフォルダを検索した場合、[!DNL Experience Manager]は結果を返しません。
 
 ビジュアル検索または類似検索には、次の制限事項があります。
 
 * ビジュアル検索は、より大きなリポジトリで最も有効に機能します。良好な結果を得るために最低限必要な画像数はありませんが、画像の数が少ないと、一致の精度が大きなリポジトリの場合ほど良くない可能性があります。
-* You cannot change the model or train [!DNL Experience Manager] to find similar images. 例えば、一部のアセットにスマートタグを追加または削除しても、モデルは変更されません。それらのアセットは、視覚的に類似した検索結果から除外されます。
+* モデルを変更したり、[!DNL Experience Manager]をトレーニングして類似の画像を見つけることはできません。 例えば、一部のアセットにスマートタグを追加または削除しても、モデルは変更されません。それらのアセットは、視覚的に類似した検索結果から除外されます。
 
 次のシナリオでは、検索機能のパフォーマンスに制限がある場合があります。
 
@@ -269,13 +269,13 @@ The search capability in [!DNL Experience Manager Assets] has the following limi
 
 * アセットのレビューステータスを監視する場合は、該当するオプションを使用して、承認されているアセットまたは承認待ちのアセットを検索します。
 * 様々な Creative アプリから取得した使用状況の統計に基づいて、サポートされるアセットを検索するには、インサイトの述語を使用します。使用状況データが、使用状況スコア、インプレッション数、クリック数およびメディアチャネルでグループ化され、アセットがカテゴリ別に表示されます。
-* 「 **[!UICONTROL Select All]** 」チェックボックスを使用して、検索したアセットを選択します。 [!DNL Experience Manager] 最初は、100アセットをカード表示で、200アセットをリスト表示で表示します。 検索結果をスクロールすると、読み込まれるアセットが増えます。 読み込まれたアセットより多くのアセットを選択できます。 選択したアセットの数が、検索結果ページの右上隅に表示されます。 選択範囲に対して操作を実行できます。例えば、選択したアセットのダウンロード、選択したアセットのメタデータプロパティの一括更新、選択したアセットのコレクションへの追加などが可能です。 表示されている数よりも多くのアセットが選択されている場合は、選択したすべてのアセットにアクションが適用されるか、ダイアログにアセットが適用されている数が表示されます。 読み込まれなかったアセットにアクションを適用するには、すべてのアセットが明示的に選択されていることを確認します。
+* 「**[!UICONTROL すべて選択]**」チェックボックスを使用して、検索したアセットを選択します。 [!DNL Experience Manager] 最初は、100アセットをカード表示で、200アセットをリスト表示で表示します。検索結果をスクロールすると、読み込まれるアセットが増えます。 読み込まれたアセットより多くのアセットを選択できます。 選択したアセットの数が、検索結果ページの右上隅に表示されます。 選択範囲に対して操作を実行できます。例えば、選択したアセットのダウンロード、選択したアセットのメタデータプロパティの一括更新、選択したアセットのコレクションへの追加などが可能です。 表示されている数よりも多くのアセットが選択されている場合は、選択したすべてのアセットにアクションが適用されるか、ダイアログにアセットが適用されている数が表示されます。 読み込まれなかったアセットにアクションを適用するには、すべてのアセットが明示的に選択されていることを確認します。
 * 必須メタデータを含んでいないアセットを検索する場合は、[必須メタデータ](#mandatorymetadata)を参照してください。
 * 検索では、すべてのメタデータフィールドが使用されます。12 の検索などの一般的な検索では通常、多数の結果が返されます。より良い結果を得るには、（一重引用符ではなく）二重引用符を使用するか、特殊文字のない単語に番号が続いている（例：`shoe12` など）ようにします。
 * フルテキスト検索では、`-` および `^` などの演算子がサポートされます。これらの文字を文字列リテラルとして検索するには、検索式を二重引用符で囲みます。例えば、`Notebook - Beauty` の代わりに `"Notebook - Beauty"` を使用します。
 * 検索結果が多すぎる場合は、[検索範囲](#scope)を制限して、目的のアセットを絞り込みます。これは、特定のファイルタイプ、特定の場所、特定のメタデータなど、目的のアセットを検索する良い方法がある程度わかっている場合に最も効果的です。
 
-* **タグ付け**:タグを使用すると、閲覧や検索が効率的に行えるアセットを分類できます。 タグ付けは、適切な分類を他のユーザーやワークフローに伝播するうえで役に立ちます。[!DNL Experience Manager] では、使用状況データやトレーニングでアセットのタグ付けを絶えず改善する、Adobe Sensei の AI サービスを活用して、アセットに自動的にタグを付ける手段を提供しています。この機能がアカウントで有効な場合は、アセットを検索する際にスマートタグが考慮されます。これは組み込みの検索機能と連携して機能します。[検索動作](#searchbehavior)を参照してください。検索結果の表示順序を最適化するには、選択した一部のアセットの[検索ランキングを上げる](#searchrank)ことができます。
+* **タグ付け**:タグを使用すると、閲覧や検索が効率的に行えるアセットを分類できます。タグ付けは、適切な分類を他のユーザーやワークフローに伝播するうえで役に立ちます。[!DNL Experience Manager] では、使用状況データやトレーニングでアセットのタグ付けを絶えず改善する、Adobe Sensei の AI サービスを活用して、アセットに自動的にタグを付ける手段を提供しています。この機能がアカウントで有効な場合は、アセットを検索する際にスマートタグが考慮されます。これは組み込みの検索機能と連携して機能します。[検索動作](#searchbehavior)を参照してください。検索結果の表示順序を最適化するには、選択した一部のアセットの[検索ランキングを上げる](#searchrank)ことができます。
 
 * **インデックス作成**：インデックスが作成されたメタデータおよびアセットのみが検索結果に返されます。検索範囲とパフォーマンスを向上させるには、適切なインデックス作成をおこない、ベストプラクティスに従ってください。詳しくは、[インデックス作成](#searchindex)を参照してください。
 
@@ -310,7 +310,7 @@ The search capability in [!DNL Experience Manager Assets] has the following limi
 
 *図：アセット検索での疑問符ワイルドカードの使用例*
 
-**キーワードの除外**：ダッシュを使用すると、キーワードを含まないアセットを検索できます。例えば、`running -shoe` クエリでは、`running` を含み `shoe` を含まないアセットを返します。同様に、`camp -night` クエリでは `camp` を含み `night` を含まないアセットを返します。The query `camp-night` returns assets that contain both `camp` and `night`.
+**キーワードの除外**：ダッシュを使用すると、キーワードを含まないアセットを検索できます。例えば、`running -shoe` クエリでは、`running` を含み `shoe` を含まないアセットを返します。同様に、`camp -night` クエリでは `camp` を含み `night` を含まないアセットを返します。クエリ`camp-night`は、`camp`と`night`の両方を含むアセットを返します。
 
 ![ダッシュを使用して、除外されたキーワードを含まないアセットを検索する](assets/search_dash_exclude_keyword.gif)
 
@@ -402,7 +402,7 @@ You can search for digital assets based on one or more of the following properti
 
 ## アセット検索結果の操作 {#aftersearch}
 
-検索したアセットを使用して、次の操作を実行できま [!DNL Experience Manager]す。
+[!DNL Experience Manager]で検索したアセットを使用して、次の操作を行うことができます。
 
 * メタデータプロパティなどの情報を表示する。
 * 1 つ以上のアセットをダウンロードする。
@@ -411,7 +411,7 @@ You can search for digital assets based on one or more of the following properti
 
 ### 検索結果の並べ替え {#sort}
 
-検索結果を並べ替えて、必要なアセットをすばやく見つける。 You can sort the search results in list view and only when you select **[[!UICONTROL Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Assets] では、サーバー側の並べ替え機能を使用して、フォルダー内のすべてのアセット（どれだけ多くても対応可能）や検索クエリの結果をすばやく並べ替えます。サーバー側の並べ替えにより、クライアント側の並べ替えよりも高速で正確な結果が得られます。
+検索結果を並べ替えて、必要なアセットをすばやく見つける。 リスト表示で検索結果を並べ替えることができます。並べ替えができるのは、**[!UICONTROL フィルター]**&#x200B;パネルで「**[[!UICONTROL ファイル]](#searchui)**」を選択した場合のみです。 [!DNL Assets] では、サーバー側の並べ替え機能を使用して、フォルダー内のすべてのアセット（どれだけ多くても対応可能）や検索クエリの結果をすばやく並べ替えます。サーバー側の並べ替えにより、クライアント側の並べ替えよりも高速で正確な結果が得られます。
 
 リスト表示では、任意のフォルダー内のアセットを並べ替える場合と同じように、検索結果を並べ替えることができます。並べ替えは、「名前」、「タイトル」、「ステータス」、「寸法」、「サイズ」、「評価」、「使用状況」、「作成日」、「変更日」、「公開日」、「ワークフロー」、「チェックアウト済み」の各列でおこなわれます。
 
@@ -437,7 +437,7 @@ You can search for digital assets based on one or more of the following properti
 
 複数アセットの共通のメタデータフィールドに対して一括更新をおこなうことができます。検索結果から、1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL プロパティ]**」をクリックし、必要に応じてメタデータを更新します。完了したら、「**[!UICONTROL 保存して閉じる]**」をクリックします。更新されたフィールド内の既存のメタデータが上書きされます。
 
-For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/manage-metadata.md#manage-assets-metadata) without using the search functionality. 複数のフォルダーをまたぐアセットや共通の条件に一致するアセットについては、検索を通じてメタデータを一括更新するほうが手軽です。
+単一のフォルダーまたはコレクションで使用できるアセットの場合は、検索機能を使用せずに、メタデータを一括[で&lt;a0/>更新すると簡単です。 ](/help/assets/manage-metadata.md#manage-assets-metadata)複数のフォルダーをまたぐアセットや共通の条件に一致するアセットについては、検索を通じてメタデータを一括更新するほうが手軽です。
 
 ### スマートコレクション {#collections-1}
 
@@ -448,7 +448,7 @@ For the assets that are available in a single folder or a collection, it is easi
 
 検索条件に基づいて、スマートコレクションを作成できます。**[!UICONTROL フィルター]**&#x200B;パネルで「**[!UICONTROL ファイル]**」を選択し、「**[!UICONTROL スマートコレクションを保存]**」をクリックします。詳しくは、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
 
-## 予期しない検索結果と問題 {#unexpectedresults}
+## 予期しない検索結果と問題{#unexpectedresults}
 
 <!--
 **Partially related or unrelated search results**: AEM may display seemingly partially related or unrelated assets, alongside the desired assets in the search results. If you enable Enhanced Smart Tags, the search behavior changes slightly. See how it changes [after smart tagging](#withsmarttags).
@@ -456,15 +456,15 @@ For the assets that are available in a single folder or a collection, it is easi
 
 | エラー、問題、症状 | 考えられる理由 | 問題の修正または理解 |
 |---|---|---|
-| メタデータが見つからないアセットを検索する場合に、誤った結果が返される。 | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. 結果は、インデックス付きメタデータプロパティに基づきます。 | メタデータが更新された後、アセットメタデータの正しい状態を反映するために、再インデックス化が必要です。 詳しくは、[必須メタデータ](metadata-schemas.md#define-mandatory-metadata)を参照してください。 |
-| 検索結果が多すぎます。 | 部分一致検索パラメータ。 | 検索の [範囲を制限することを検討](#scope)。 スマートタグを使用すると、予想以上に多くの検索結果が得られる場合があります。 「スマートタグを使用した [検索動作](#withsmarttags)」を参照してください。 |
-| 検索結果が無関係か、一部関連している。 | スマートタグによって検索動作が変わります。 | スマートタグ付け後の検索 [の変更について理解し](#withsmarttags)ます。 |
+| メタデータが見つからないアセットを検索する場合に、誤った結果が返される。 | 必須のメタデータがないアセットを検索すると、[!DNL Experience Manager]によって有効なメタデータを持つアセットが表示される場合があります。 結果は、インデックス付きメタデータプロパティに基づきます。 | メタデータが更新された後、アセットメタデータの正しい状態を反映するために、再インデックス化が必要です。 詳しくは、[必須メタデータ](metadata-schemas.md#define-mandatory-metadata)を参照してください。 |
+| 検索結果が多すぎます。 | 部分一致検索パラメータ。 | [検索範囲](#scope)を制限することを検討。 スマートタグを使用すると、予想以上に多くの検索結果が得られる場合があります。 [スマートタグ](#withsmarttags)による検索動作を参照してください。 |
+| 検索結果が無関係か、一部関連している。 | スマートタグによって検索動作が変わります。 | [スマートタグ](#withsmarttags)後の検索の変化を理解します。 |
 | アセットに対するオートコンプリートの提案はありません。 | 新しくアップロードしたアセットのインデックスはまだ作成されていません。 開始がOmnisearchバーで検索キーワードを入力した場合、そのメタデータは提案としてすぐには使用できません。 | [!DNL Assets] では、タイムアウト期間（デフォルトは 1 時間）が経過してから、新しくアップロードまたは更新されたすべてのアセットのメタデータにインデックスを付けるバックグラウンドジョブを実行し、その後でメタデータを候補のリストに追加します。 |
 | 検索結果はありません. | <ul><li>クエリに一致するアセットが存在しません。 </li><li> 検索クエリの前に空白が追加されました。 </li><li> サポートされていないメタデータフィールドに、検索したキーワードが含まれています。</li><li> アセットのオフタイム中に行われた検索。 </li></ul> | <ul><li>別のキーワードを使用した検索。 または、スマートタグ付け検索または類似性検索を使用して、検索結果を改善します。 </li><li>[既知の制限](#limitations)。</li><li>すべてのメタデータフィールドが検索対象と見なされません。 詳しくは、[検索範囲](#scope)を参照してください。</li><li>後で検索するか、必要なアセットのオンタイムとオフタイムを変更します。</li></ul> |
-| 検索フィルターまたは述語が使用できません。 | <ul><li>検索フィルターが設定されていない。</li><li>ログインに使用できません。</li><li>（おそらく）検索オプションは、使用しているデプロイメントに合わせてカスタマイズされません。</li></ul> | <ul><li>検索のカスタマイズが使用可能かどうかを管理者に問い合わせて確認してください。</li><li>管理者に問い合わせて、お使いのアカウントに、カスタマイズを使用する権限または権限があるかどうかを確認してください。</li><li>管理者に問い合わせて、使用している [!DNL Assets] 展開で使用可能なカスタマイズを確認してください。</li></ul> |
-| 視覚的に類似した画像を検索する場合、期待された画像が見つかりません。 | <ul><li>では画像を使用できません [!DNL Experience Manager]。</li><li>画像のインデックスが作成されていません。 通常、最近アップロードされた日時。</li><li>画像にスマートタグは付きません。</li></ul> | <ul><li>追加画像を [!DNL Assets]。</li><li>リポジトリのインデックスを再作成するには、管理者に問い合わせてください。 また、適切なインデックスを使用していることを確認してください。</li><li>管理者に問い合わせて、関連アセットのスマートタグを付けます。</li></ul> |
+| 検索フィルターまたは述語が使用できません。 | <ul><li>検索フィルターが設定されていない。</li><li>ログインに使用できません。</li><li>（おそらく）検索オプションは、使用しているデプロイメントに合わせてカスタマイズされません。</li></ul> | <ul><li>検索のカスタマイズが使用可能かどうかを管理者に問い合わせて確認してください。</li><li>管理者に問い合わせて、お使いのアカウントに、カスタマイズを使用する権限または権限があるかどうかを確認してください。</li><li>管理者に問い合わせて、使用している[!DNL Assets]展開で使用可能なカスタマイズを確認してください。</li></ul> |
+| 視覚的に類似した画像を検索する場合、期待された画像が見つかりません。 | <ul><li>[!DNL Experience Manager]では画像を使用できません。</li><li>画像のインデックスが作成されていません。 通常、最近アップロードされた日時。</li><li>画像にスマートタグは付きません。</li></ul> | <ul><li>追加[!DNL Assets]に画像を送信します。</li><li>リポジトリのインデックスを再作成するには、管理者に問い合わせてください。 また、適切なインデックスを使用していることを確認してください。</li><li>管理者に問い合わせて、関連アセットのスマートタグを付けます。</li></ul> |
 | 視覚的に類似した画像を検索する場合、無関係な画像が表示されます。 | 視覚検索の動作。 | [!DNL Experience Manager] では、関連する可能性のあるアセットをできるだけ多く表示します。関連性の低い画像がある場合は、結果には追加されますが、検索のランキングは低くなります。検索結果を下にスクロールするにつれて、検索されたアセットの一致精度と関連性が低くなります。 |
-| 検索結果を選択して操作する場合、検索されたすべてのアセットは操作されません。 | 「す [!UICONTROL べて選択] 」オプションを選択した場合は、カード表示で最初に100件の検索結果が選択され、リスト表示で最初に200件の検索結果が選択されます。 |  |
+| 検索結果を選択して操作する場合、検索されたすべてのアセットは操作されません。 | 「[!UICONTROL すべてを選択]」オプションは、カード表示の最初の100件の検索結果と、リスト表示の最初の200件の検索結果のみを選択します。 |  |
 
 >[!MORELIKETHIS]
 >
