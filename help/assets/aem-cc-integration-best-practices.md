@@ -24,7 +24,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 >
 >AEM/Creative Cloud フォルダー共有機能は非推奨（廃止予定）となったので、以下では扱われなくなりました。AEM で管理されたアセットへのアクセス権をクリエイティブユーザーに与える方法としては、Adobe Asset Link や AEM Desktop App などの新しい機能をお勧めします。
 
-## クリエイティブプロフェッショナル、マーケティング担当者、DAM ユーザーのコラボレーションニーズ {#collaboration-need-of-creatives-marketers-and-dam-users}
+## クリエイティブプロフェッショナル、マーケティング担当者、DAM ユーザーのコラボレーションニーズ  {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | 要件 | 使用例 | 関係するサーフェス |
 |---|---|---|
@@ -46,7 +46,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 
 使用する機能の決定
 
-### 使用例とアドビソリューションの対応関係    {#mapping-of-use-cases-and-adobe-solutions}
+### 使用例とアドビソリューションの対応関係     {#mapping-of-use-cases-and-adobe-solutions}
 
 | 使用例 | Adobe Asset Link | AEM デスクトップアプリケーション | 備考または代替手段 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 | 使用 - AEM からドキュメント内にアセットを配置する | 対応 - 埋め込み | 対応 - リンクまたは埋め込み | AEM デスクトップアプリケーションでは、ローカルファイルシステム上のファイルとしてアセットにアクセスできます。ネイティブアプリでは、これらのリンクはローカルパスで表されます。 |
 | 編集 - 編集用に開く | 対応 - チェックアウトアクション | 対応 - 「開く」アクション（ネットワーク共有内） | 「[AAL でチェックアウト](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)」の場合は、デフォルトでは、アセットをユーザーの Creative Cloud ストレージアカウント（Creative Cloud アプリで同期）に保存します。 |
 | 編集 - AEM の外部で作業する | 対応 - デスクトップに同期しているユーザーの Creative Cloud ストレージアカウントでアセットが入手可能です。 | 対応 |  |
-| 編集 - 変更をアップロードする | 対応 - [チェックインアクション](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)（オプションコメント付き） | 対応 |  |
+| 編集 - 変更をアップロードする | 対応 - [チェックインアクション](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)（オプションコメント付き） | 対応 |  |
 | アップロード - 単一ファイル | 対応 - 現在のアクティブなドキュメントをアップロードします | 対応 | [Web インターフェイスを使用してアップロード](/help/assets/manage-digital-assets.md#uploading-assets) |
 | アップロード - 複数ファイル／階層フォルダー構造 | 非対応 | 対応 | [Web インターフェイスを使用してアップロード](/help/assets/manage-digital-assets.md#uploading-assets)。カスタムスクリプティングまたはツール |
 | その他 - ユーザーとログイン | Creative Cloud デスクトップアプリケーションにログインした Creative Cloud ユーザーが認識されます（SSO） | AEM ユーザー／ログイン | 両方のソリューションのユーザーが AEM ユーザークォータに対してカウントされます。 |
@@ -70,7 +70,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 
 アセット配布使用例をサポートするには、他のソリューションを考慮に入れる必要があります。
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/jp/experience-manager/brand-portal/user-guide.html)：AEM Assets への設定可能な SaaS アドオンで、アセットの公開に使用。
+* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)：AEM Assets への設定可能な SaaS アドオンで、アセットの公開に使用。
 
 * カスタムソリューションは [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) のコードベースに基づいて作成される。
 * AEM [リンク共有](/help/assets/share-assets.md)：リンクを使用してアドホックでアセットを共有する。
@@ -127,7 +127,7 @@ AEM と Creative Cloud の統合のベストプラクティスの概要を説明
 
 クリエイティブチームとマーケティング／事業部門（LOB）チームの間の効率的なワークフローをデザインし、最適なサポート機能を選択するには、アセットを DAM に保存するタイミングと理由を理解することが重要です。
 
-### アセットを DAM に保存する理由 {#why-assets-are-stored-in-dam}
+### アセットを DAM に保存する理由  {#why-assets-are-stored-in-dam}
 
 アセットを DAM に保存すると、アクセスおよび検索がしやすくなります。これにより、組織またはエコシステムの多数のユーザー（パートナー、顧客などを含む）が、アセットを活用できるようになります。
 
@@ -137,7 +137,7 @@ AEM と Creative Cloud の統合のベストプラクティスの概要を説明
 
 多くの場合、アセットおよび更新をすべて保存することは推奨されません。例えば、特定のアセットの更新の質が低く、大量のリソースを消費するような場合、そのアセットは DAM に保存しないようにします。
 
-#### アセットを DAM に保存するタイミング {#when-assets-are-stored-in-dam}
+#### アセットを DAM に保存するタイミング  {#when-assets-are-stored-in-dam}
 
 クリエイティブチーム（および組織）は、通常、アセットのライフサイクルのステージごとにアセットを保存しようとは考えません。例えば、以下のような場合、アセットは保存されません。
 
@@ -151,7 +151,7 @@ AEM と Creative Cloud の統合のベストプラクティスの概要を説明
 * クリエイティブチームが事前に選択したアセット
 * マーケティング部門が使用できる、または特定の契約や合意に応じて同部門から要求された、特定の形式のアセット（例えば、RAW ファイルから変換した JPG ファイル、PSD ファイルから作成した TIFF／画像ファイルなど）
 
-#### アセットの更新を DAM に保存するタイミング {#when-updates-to-assets-are-stored-in-dam}
+#### アセットの更新を DAM に保存するタイミング  {#when-updates-to-assets-are-stored-in-dam}
 
 原則として、より広範な DAM ユーザーに関連するアセットの更新のみを DAM に保存するようにしてください。それにより、（マーケティングおよび類似の部門の）ユーザーの DAM アセットのタイムラインには、関連するバージョンのみが表示されます。
 
@@ -168,7 +168,7 @@ DAM の既存アセットに対する変更要求が出された後、マーケ�
 
 AEM Assets では、AEM Assets デプロイメントに対するアクセス権に基づいて、2 つのタイプのユーザーがサポートされています。通常、エンタープライズネットワーク（ファイアウォール）の内側にいるユーザーは、DAM に直接アクセスできます。エンタープライズネットワークの外側にいるその他のユーザーは、直接アクセスすることはできません。このユーザータイプにより、技術的観点から、どの統合を使用できるかが決定されます。
 
-#### DAM への直接アクセス権を持つクリエイティブユーザー {#creative-users-with-direct-access-to-dam}
+#### DAM への直接アクセス権を持つクリエイティブユーザー  {#creative-users-with-direct-access-to-dam}
 
 通常、社内のクリエイティブチームや、社内ネットワークにオンボーディングされたエージェンシー／クリエイティブプロフェッショナルは、（AEM ログインを含む）DAM インスタンスへのアクセス権を持っています。外部の関係者（通常はクライアントのために働く代理店などの信頼できる組織）に直接アクセスを許可するように、AEM とネットワークインフラストラクチャを設定できます。これにより、外部の関係者がネットワークを介して（例えば、VPN または IP の許可リスト経由で）AEM にアクセスできるようになります。
 
@@ -181,7 +181,7 @@ DAM インスタンスへの直接アクセス権を持たない外部のエー�
 以下の戦略で最終／承認済みアセットへのアクセスを提供します。
 
 * Asset Link が機能しない場合は、デスクトップアプリケーションを使用します。
-* 外部パートナーに安全にアセットを配布するには、[AEM Assets Brand Portal](https://helpx.adobe.com/jp/experience-manager/brand-portal/user-guide.html) を使用します。
+* 外部パートナーに安全にアセットを配布するには、[AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) を使用します。
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) に基づいた、配布および調達用ポータルのカスタム実装を使用します。
 * AEM に設定されたアクセス制御と必要なネットワークインフラストラクチャ（VPN や IP の許可リストなど）を使用して、DAM 内の専用のコンテンツ領域に外部の関係者がアクセスできるようにします。AEM Web UI を使用してアセットを取得したり、新しいコンテンツを DAM にアップロードしたりできます。
 
