@@ -19,7 +19,7 @@ ht-degree: 100%
 
 [インタラクティブ画像](/help/assets/dynamic-media/interactive-images.md)も参照してください。
 
-## インタラクティブビデオの使用例 {#interactive-video-in-action}
+## インタラクティブビデオの使用例  {#interactive-video-in-action}
 
 インタラクティブなショッパブルビデオの動作を確認するには、「[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)」をクリックし、ページの「**[!UICONTROL ショッパブルメディア]**」見出しまでスクロールして、ショッパブルビデオをクリックして再生を開始します。
 
@@ -45,7 +45,7 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >ユーザーがサムネール画像をクリックすると Web ページが開かれるようにインタラクティブビデオを作成した場合、一部のデバイスでは、ポップアップ Web ページがブロックされて開きません。そのようなケースでは、デバイスのポップアップブロック機能の設定を変更する必要があります。例えば、Apple iPhone 6 では&#x200B;**[!UICONTROL 設定／Safari／ポップアップブロック]**&#x200B;をタップして、コントロールを&#x200B;**[!UICONTROL オフ]**&#x200B;にスライドします。こうすると、インタラクティブビデオを再生してサムネールをクリックしたときに、ポップアップを開くかどうかを確認するメッセージが表示されます。同意すると Web ページが開きます。
 
-### インタラクティブビデオの作成方法を見る {#watch-how-interactive-videos-are-created}
+### インタラクティブビデオの作成方法を見る  {#watch-how-interactive-videos-are-created}
 
 [インタラクティブビデオの作成方法](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)[](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)を示す 7 分 30 秒のガイドをご覧ください（このビデオガイドの対象は Assets on Demand ですが、原則や手順は AEM Assets のインタラクティブビデオにも対応しています）。
 
@@ -85,10 +85,9 @@ There was a link here that showed the video frame of an interactive video and wh
 ## （オプション）クイックビュー変数の特定{#optional-identifying-quickview-variables}
 
 >[!NOTE]
->
->このタスクが必要になるのは次に該当する場合のみです。
->* クイックビューをトリガーして、ビデオにインタラクティブ機能を追加する。
->* eコマースソリューション（IBM Websphere Commerce、Elastic Path、hybris、Intershop など）から AEM に製品データを取り出すために、AEM の実装が&#x200B;** eコマース統合フレームワークを使用していない。<!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
+このタスクが必要になるのは次に該当する場合のみです。
+* クイックビューをトリガーして、ビデオにインタラクティブ機能を追加する。
+* eコマースソリューション（IBM Websphere Commerce、Elastic Path、hybris、Intershop など）から AEM に製品データを取り出すために、AEM の実装が&#x200B;** eコマース統合フレームワークを使用していない。<!-- See [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).-->
 
 AEM の実装で AEM eCommerce を使用している場合は、このタスクをスキップして次のタスクに進みます。
 
@@ -209,7 +208,7 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
 
 これで、ビデオおよび関連するサムネールアセットをアップロードできます。
 
-## （オプション）インタラクティブビデオのビューアプリセットの作成 {#optional-creating-an-interactive-video-viewer-preset}
+## （オプション）インタラクティブビデオのビューアプリセットの作成  {#optional-creating-an-interactive-video-viewer-preset}
 
 デフォルトの標準提供インタラクティブビデオビューアプリセットタイプ（`Shoppable_Video_dark` または `Shoppable_Video_light`）を使用する予定がある場合は、このタスクをスキップして次に進むことができます。
 
@@ -249,12 +248,10 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を参照してください。
 
 >[!NOTE]
->
->インタラクティブビデオのソーシャルメディア共有ツールは、エクスペリエンスフラグメントにビューアを埋め込む場合はサポートされないことに注意してください。この問題を回避するには、ソーシャルメディア共有ツールのないビューアプリセットを使用または作成します。このようなビューアプリセットを使用すると、ビューアをエクスペリエンスフラグメントに正常に埋め込むことができます。
+インタラクティブビデオのソーシャルメディア共有ツールは、エクスペリエンスフラグメントにビューアを埋め込む場合はサポートされないことに注意してください。この問題を回避するには、ソーシャルメディア共有ツールのないビューアプリセットを使用または作成します。このようなビューアプリセットを使用すると、ビューアをエクスペリエンスフラグメントに正常に埋め込むことができます。
 
 >[!NOTE]
->
->インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。
+インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。
 
 ページの右上隅にある「取り消し」および「やり直し」オプションは、現在の作成／編集セッションの間で有効です。
 
@@ -475,8 +472,7 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
    完了したら、「**[!UICONTROL 保存]**」をタップします。
 
    >[!NOTE]
-   >
-   >インタラクティブビデオを保存すると、関連付けられた `.vtt` ファイルも自動的に保存されます。`.vtt` ファイルは、**[!UICONTROL アセット]**&#x200B;のルートにある `_VTT` フォルダーに保存されます。インタラクティブビデオが Web サイト上で正しく再生されるには、それらのファイルとフォルダーが必要です。したがって、`_VTT` フォルダーやフォルダーのコンテンツを移動したり、編集したり削除しないでください。
+   インタラクティブビデオを保存すると、関連付けられた `.vtt` ファイルも自動的に保存されます。`.vtt` ファイルは、**[!UICONTROL アセット]**&#x200B;のルートにある `_VTT` フォルダーに保存されます。インタラクティブビデオが Web サイト上で正しく再生されるには、それらのファイルとフォルダーが必要です。したがって、`_VTT` フォルダーやフォルダーのコンテンツを移動したり、編集したり削除しないでください。
 
 1. インタラクティブビデオを公開します。公開すると、最終的にコピーして Web サイトに貼り付ける埋め込みコードまたは URL が作成されます。
 
@@ -485,8 +481,7 @@ AEM の実装で AEM eCommerce を使用している場合は、このタスク�
    [アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
 
    >[!NOTE]
-   >
-   >クイックビューを含むショッパブルビデオを公開するには、ビデオに関連する各画像アセットをコマース領域から個別に公開してください。
+   クイックビューを含むショッパブルビデオを公開するには、ビデオに関連する各画像アセットをコマース領域から個別に公開してください。
 
    タイムラインセグメントを追加し、インタラクティブビデオを公開したので、既存の Web サイトのランディングページにビデオを追加する準備が整いました。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website)を参照してください。
 
@@ -510,9 +505,8 @@ AEM Sites のユーザーである場合は、インタラクティブメディ�
 コピーした埋め込みコードはレスポンシブ環境用に設定されているので、以前に静的なビデオが使用していた領域に自動的に収まります。
 
 >[!NOTE]
->
->そのため、ハイパーリンクされた Web ページのみを使用したインタラクティビティを追加した場合は、これで完了です。
->一方、クイックビューをトリガーするインタラクティビティを追加した場合は、インタラクティブビデオの隣のサムネールは表示専用であり、まだ既存のクイックビューと統合されていません。そのような場合は、インタラクティブビデオを Web サイトの既存のクイックビューと統合する必要があります。
+そのため、ハイパーリンクされた Web ページのみを使用したインタラクティビティを追加した場合は、これで完了です。
+一方、クイックビューをトリガーするインタラクティビティを追加した場合は、インタラクティブビデオの隣のサムネールは表示専用であり、まだ既存のクイックビューと統合されていません。そのような場合は、インタラクティブビデオを Web サイトの既存のクイックビューと統合する必要があります。
 
 **例**
 
@@ -551,11 +545,10 @@ AEM Sites のユーザーである場合は、インタラクティブメディ�
 
 [https://marketing.adobe.com/resources/help/ja_JP/dm/shoppable-video/john-lewis/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-video/john-lewis/landing-1.html)
 
-## インタラクティブビデオの既存のクイックビューへの統合 {#integrating-an-interactive-video-with-an-existing-quickview}
+## インタラクティブビデオの既存のクイックビューへの統合  {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->このタスクはスタンドアロン AEM Assets のユーザーのみに適用されます。
+このタスクはスタンドアロン AEM Assets のユーザーのみに適用されます。
 
 このプロセスの最後の手順は、Web サイトで使用されている既存のクイックビュー実装にインタラクティブビデオを統合することです。すべてのケースで機能する統合のソリューションはありません。すべてのクイックビュー実装は固有のものです。そのため、フロントエンド IT 担当者の支援を受けた特別なアプローチが必要になります。
 
