@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。お客様は、Cloud Manager の Git リポジトリをすぐに使用できます。オプションとして、オンプレミスまたは&#x200B;**顧客管理**&#x200B;の Git リポジトリを Cloud Manager と統合することもできます。
 
-## Git 統合の概要 {#git-integration-overview}
+## Git 統合の概要  {#git-integration-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
