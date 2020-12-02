@@ -1,6 +1,6 @@
 ---
 sub-product: AEM Commerce as a Cloud Service
-user-guide-title: AEM Commerce as a Cloud Service
+user-guide-title: CLOUD SERVICEとしてのAEMコマース
 breadcrumb-title: コマースガイド
 user-guide-description: Experience Manager Commerce as a Cloud Service の使用方法と管理方法について説明します。
 translation-type: tm+mt
