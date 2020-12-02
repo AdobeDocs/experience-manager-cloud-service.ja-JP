@@ -10,7 +10,7 @@ ht-degree: 30%
 ---
 
 
-# AEMアプリケーションへのタグ付けの構築 {#building-tagging-into-aem-applications}
+# AEMアプリケーションへのタグ付けの構築{#building-tagging-into-aem-applications}
 
 このドキュメントでは、タグをプログラムで使用したり、カスタムAEMアプリケーション内でタグを拡張したりする目的で、
 
@@ -22,20 +22,20 @@ ht-degree: 30%
 
 タグ付けに関する関連情報：
 
-* コンテンツ作成者としてのコンテンツのタグ付けについて詳しくは、 [](/help/sites-cloud/authoring/features/tags.md) タグの使用を参照してください。
+* コンテンツ作成者としてのタグ付けについて詳しくは、[タグ](/help/sites-cloud/authoring/features/tags.md)の使用を参照してください。
 * タグの作成と管理、および適用されたコンテンツタグについては、管理者の観点から、「タグの管理」を参照してください。
 
 ## タグ付け API の概要 {#overview-of-the-tagging-api}
 
-AEM の[タグフレームワーク](tagging-framework.md)の実装により、JCR API を使用してタグおよびタグコンテンツを管理できます。`TagManager` 文字列配列プロパティで値として入力したタグが重複しないようにするため、既存でないタグ `cq:tags` を指すタグは削除され、移動されたタグや結合されたタグ `TagID``TagID`は更新されます。 `TagManager` は、間違った変更を元に戻す JCR 監視リスナーを使用します。メインクラスは [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) パッケージ内にあります。
+AEM の[タグフレームワーク](tagging-framework.md)の実装により、JCR API を使用してタグおよびタグコンテンツを管理できます。`TagManager` 値として `cq:tags` 文字列配列プロパティに入力したタグが重複しないように、既存でないタグを指す `TagID`タグは削除され、移動したタグや結合されたタグ `TagID`は更新されます。`TagManager` は、間違った変更を元に戻す JCR 監視リスナーを使用します。メインクラスは [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) パッケージ内にあります。
 
-* `JcrTagManagerFactory`  — のJCRベースの実装を返し `TagManager`ます。 タグ付け API のリファレンス実装です。
+* `JcrTagManagerFactory`  — のJCRベースの実装を返し `TagManager`ます。タグ付け API のリファレンス実装です。
 * `TagManager`  — パスと名前によるタグの解決と作成を可能にします。
 * `Tag`  — タグオブジェクトを定義します。
 
 ### JCR ベースの TagManager の取得 {#getting-a-jcr-based-tagmanager}
 
-To retrieve a `TagManager` instance, you need to have a JCR `Session` and to call `getTagManager(Session)`:
+`TagManager`インスタンスを取得するには、JCR `Session`があり、`getTagManager(Session)`を呼び出す必要があります。
 
 ```java
 @Reference
@@ -60,7 +60,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/content/cq:tags/default/my/tag`):
+`Tags`をJCR `Nodes`にマッピングするJCRベースの実装の場合、リソース（例：`/content/cq:tags/default/my/tag`）がある場合は、Slingの`adaptTo`メカニズムを直接使用できます。
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -75,7 +75,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Directly adapting from `Node` to `Tag` is not possible, because `Node` does not implement the Sling `Adaptable.adaptTo(Class)` method.
+>`Node`はSling `Adaptable.adaptTo(Class)`メソッドを実装していないので、`Node`から`Tag`に直接適応させることはできません。
 
 ### タグの取得と設定 {#getting-and-setting-tags}
 
@@ -122,7 +122,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## タグのガベージコレクター {#the-tag-garbage-collector}
 
-タグガベージコレクターは、非表示で未使用のタグをクリーンアップするバックグラウンドサービスです。 非表示および未使用のタグは、下のタグ `/content/cq:tags` にプロパティがあり、コンテンツノードでは使用されません `cq:movedTo` 。 0の数があります。 この遅延削除プロセスを使用すると、移動または結合操作の一環としてコンテンツノード( `cq:tags` プロパティ)を更新する必要がありません。 ページプロパティダイアログなどで `cq:tags` プロパティが更新されると、 `cq:tags` プロパティ内の参照が自動的に更新されます。
+タグガベージコレクターは、非表示で未使用のタグをクリーンアップするバックグラウンドサービスです。 非表示および未使用のタグは、`/content/cq:tags`の下のタグで、`cq:movedTo`プロパティを持ち、コンテンツノードでは使用されません。 0の数があります。 この遅延削除プロセスを使用すると、移動や結合操作の一環としてコンテンツノード（`cq:tags`プロパティ）を更新する必要がありません。 `cq:tags`プロパティの参照は、`cq:tags`プロパティが更新されると自動的に更新されます。例えば、ページプロパティダイアログを使用します。
 
 タグガベージコレクターは、デフォルトで1日に1回実行されます。 これは、次の場所で設定できます。
 
@@ -132,14 +132,14 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 タグおよびタグ一覧の検索は次のように動作します。
 
-* The search for `TagID` searches for the tags that have the property `cq:movedTo` set to `TagID` and follows through the `cq:movedTo` `TagID`s.
-* The search for tag title only searches the tags that do not have a `cq:movedTo` property.
+* `TagID`は、`cq:movedTo`プロパティ`TagID`が&lt;a2/>に設定され、`cq:movedTo` `TagID`をたどるタグを検索します。
+* タグタイトルの検索では、`cq:movedTo`プロパティを持たないタグのみが検索されます。
 
 ## 他の言語のタグ {#tags-in-different-languages}
 
-タグは異なる言語で定義 `title` できます。 次に、言語に依存するプロパティがタグノードに追加されます。 このプロパティは、例えばフランス語 `jcr:title.<locale>`の翻訳の場合 `jcr:title.fr` などの形式を持ちます。 `<locale>` は、小文字のISOロケール文字列である必要があります。次に例を示すように、ハイフン/ダッシュ(`_`)の代わりにアンダースコア(`-`)を使用します。 `de_ch`.
+タグ`title`は異なる言語で定義できます。 次に、言語に依存するプロパティがタグノードに追加されます。 このプロパティは`jcr:title.<locale>`の形式を持ちます。例：`jcr:title.fr`（フランス語訳） `<locale>` は、小文字のISOロケール文字列である必要があります。次に例を示すように、ハイフン/ダッシュ(`_`)の代わりにアンダースコア(`-`)を使用します。 `de_ch`.
 
-For example when the **Animals** tag is added to the **Products** page, the value `stockphotography:animals` is added to the property `cq:tags` of the node `/content/wknd/en/products/jcr:content`. 翻訳は、タグノードから参照されます。
+例えば、**Animals**&#x200B;タグを&#x200B;**Products**&#x200B;ページに追加すると、`stockphotography:animals`の値がノード`/content/wknd/en/products/jcr:content`のプロパティ`cq:tags`に追加されます。 翻訳は、タグノードから参照されます。
 
 サーバー側 API には、ローカライズされた `title` 関連のメソッドがあります。
 
@@ -160,13 +160,13 @@ AEMでは、ページ言語またはユーザー言語から言語を取得で�
 
 ### タグを編集ダイアログへの新しい言語の追加 {#adding-a-new-language-to-the-edit-tag-dialog}
 
-次の手順では、 **タグ編集** ダイアログに新しい言語（フィンランド語など）を追加する方法を説明します。
+次の手順では、新しい言語（フィンランド語など）を&#x200B;**タグ編集**&#x200B;ダイアログに追加する方法を説明します。
 
-1. CRXDE **で**、ノードの複数値プロパティ `languages` を編集し `/content/cq:tags`ます。
-1. フィンランド語追加のロケールを表す。変更を保存します。 `fi_fi`
+1. **CRXDE**&#x200B;で、ノード`/content/cq:tags`の複数値のプロパティ`languages`を編集します。
+1. 追加`fi_fi`。これはフィンランド語のロケールを表し、変更を保存します。
 
-ページプロパティのタグダイアログと、タグ **付け** コンソールでタグを編集する際のタグの **編集** ダイアログで、フィンランド語が使用できるようになりました。
+ページプロパティのタグダイアログと、**タグ付け**&#x200B;コンソールでタグを編集する際の&#x200B;**タグ**&#x200B;を編集ダイアログで、フィンランド語を使用できるようになりました。
 
 >[!NOTE]
 >
->The new language needs to be one of the AEM recognized languages, i.e. it needs to be available as a node below `/libs/wcm/core/resources/languages`.
+>新しい言語は、AEMで認識される言語の1つである必要があります。つまり、`/libs/wcm/core/resources/languages`の下のノードとして使用できる必要があります。
