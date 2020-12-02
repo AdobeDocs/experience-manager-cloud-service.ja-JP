@@ -156,7 +156,7 @@ ht-degree: 100%
 
    * 書き出し設定を指定します。
 
-### サムネール {#thumbnail}
+### サムネール  {#thumbnail}
 
 ページサムネール画像が表示されます。以下の操作を実行できます。
 
@@ -236,14 +236,14 @@ ht-degree: 100%
    * 変更がライブコピーに適用される条件を制御します。
 
 
-### ライブコピー {#live-copy}
+### ライブコピー  {#live-copy}
 
 * **ライブコピー**
 
    * マルチサイト管理でのライブコピーページのプロパティを定義します。<!--Define properties for a Live Copy page within [multi-site management](/help/sites-administering/msm.md).-->
    * ブループリントからの変更が適用される条件を制御します。
 
-### サイト構造 {#site-structure}
+### サイト構造  {#site-structure}
 
 * **サインアップページ**、**オフラインページ**&#x200B;など、サイト全体にわたる機能を提供するページへのリンクを指定します。
 
