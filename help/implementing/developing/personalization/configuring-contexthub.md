@@ -27,7 +27,7 @@ Adobe Granite ContextHub OSGi サービスを設定して、ページで [Contex
 
 ContextHub UI を表示に設定すると、AEM オーサーインスタンスのページにのみ表示されます。UI はパブリッシュインスタンスのページには表示されません。
 
-## ContextHub UI モードとモジュールの追加 {#adding-contexthub-ui-modes-and-modules}
+## ContextHub UI モードとモジュールの追加  {#adding-contexthub-ui-modes-and-modules}
 
 ContextHub ツールバーに表示される UI のモードとモジュールをプレビューモードで設定します。
 
@@ -40,7 +40,7 @@ UI モードはツールバーの左側に一連のアイコンとして表示�
 
 アイコンは、[Coral UI ライブラリ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)からの参照です。
 
-### UI モードの追加 {#adding-a-ui-mode}
+### UI モードの追加  {#adding-a-ui-mode}
 
 UI モードをグループ関連の ContextHub モジュールに追加します。UI モードを作成する際に、ContextHub ツールバーに表示されるタイトルとアイコンを指定します。
 
@@ -59,7 +59,7 @@ UI モードをグループ関連の ContextHub モジュールに追加しま�
 
 1. 「保存」をクリックまたはタップします。
 
-### UI モジュールの追加 {#adding-a-ui-module}
+### UI モジュールの追加  {#adding-a-ui-module}
 
 ContextHub UI モジュールを UI モードに追加し、それを ContextHub ツールバーに表示して、ページコンテンツをプレビューできるようにします。UI モジュールを追加するときは、ContextHub に登録されるモジュールタイプのインスタンスを作成します。UI モジュールを追加するには、関連するモジュールタイプの名前が必要です。
 
@@ -94,11 +94,11 @@ UI モジュールのプロパティには、モジュール固有のプロパ�
 1. （オプション）デフォルトのストアの設定をオーバーライドするには、UI モジュールを設定する JSON オブジェクトを入力します。
 1. 「保存」をクリックまたはタップします。
 
-## ContextHub ストアの作成 {#creating-a-contexthub-store}
+## ContextHub ストアの作成  {#creating-a-contexthub-store}
 
 ContextHub ストアを作成してユーザーデータを保持し、必要に応じてそのデータにアクセスします。ContextHub ストアは、登録済みのストア候補に基づきます。ストアを作成する際には、ストア候補が登録された storeType の値が必要です（[カスタムストア候補の作成](extending-contexthub.md#creating-custom-store-candidates)を参照してください）。
 
-### ストアの詳細設定 {#detailed-store-configuration}
+### ストアの詳細設定  {#detailed-store-configuration}
 
 ストアを設定すると、詳細設定プロパティによりストア固有のプロパティの値を指定できます。値は、ストアの `config` 関数の `init` パラメーターに基づきます。このため、この値を指定する必要があるかどうかと、指定する値の形式はストアによって変わります。
 
@@ -113,7 +113,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 解決済みおよび未解決の ContextHub セグメントを格納します。ContextHub SegmentManager からセグメントを自動的に取得します |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | ブラウザーの場所の緯度と経度を格納します。 |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 多数のデバイスのプロパティと機能を定義し、現在のクライアントデバイスを検出します |
-| [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 現在のユーザーのプロファイルデータを格納します |
+| [granite.プロファイル](sample-stores.md#granite-profile-sample-store-candidate) | 現在のユーザーのプロファイルデータを格納します |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | デバイス情報、ブラウザーの種類、画面の向きなど、クライアントに関する情報を格納します |
 
 1. Experience Manager レールで、ツール／サイト／ContextHub をクリックまたはタップします。
@@ -133,7 +133,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 1. （オプション）デフォルトのストアの設定をオーバーライドするには、「詳細設定（JSON）」ボックスに JSON オブジェクトを入力します。
 1. 「保存」をクリックまたはタップします。
 
-## JSONP サービスの使用例      {#example-using-a-jsonp-service}
+## JSONP サービスの使用例       {#example-using-a-jsonp-service}
 
 この例は、ストアを設定して UI モジュールにデータを表示する方法を示します。この例では、ストアのデータソースとして jsontest.com サイトの MD5 サービスが使用されています。サービスが指定の文字列の MD5 ハッシュコードを JSON 形式で返します。
 
@@ -146,7 +146,7 @@ contexthub.generic-jsonp ストアがサービスコール `https://md5.jsontest
 }
 ```
 
-### contexthub.generic-jsonp ストアの作成 {#creating-a-contexthub-generic-jsonp-store}
+### contexthub.generic-jsonp ストアの作成  {#creating-a-contexthub-generic-jsonp-store}
 
 contexthub.generic-jsonp のサンプルのストア候補を使用すると、JSON データを返す JSONP サービスや Web サービスからデータを取得できます。このストア候補では、そのストア設定を使用して、使用する JSONP サービスに関する詳細を指定します。
 
@@ -202,7 +202,7 @@ ContextHub ツールバーに UI モジュールを追加して、サンプル�
 
 ContextHub のデバッグモードを有効にして、トラブルシューティングに対応できます。デバッグモードは、ContextHub 設定または CRXDE のいずれかを利用して有効にできます。
 
-### 設定による有効化 {#via-the-configuration}
+### 設定による有効化  {#via-the-configuration}
 
 ContextHub の設定を編集し、「**デバッグ**」オプションをオンにします。
 
