@@ -3,21 +3,21 @@ title: ' [!DNL Assets] の開発者向けリファレンス'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 100%
+source-wordcount: '1208'
+ht-degree: 97%
 
 ---
 
 
 # [!DNL Assets] API と開発者向けリファレンス資料 {#assets-cloud-service-apis}
 
-この記事には、[!DNL Assets] as a Cloud Service の開発者向けリファレンス資料およびリソースが含まれています。新しいアップロード方法、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
+この記事には、[!DNL Assets]の開発者向けの参考資料とリソースが[!DNL Cloud Service]として含まれています。 新しいアップロード方法、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
 
 ## アセットのアップロード {#asset-upload-technical}
 
-[!DNL Experience Manager] as a Cloud Service には、アセットをリポジトリーにアップロードする新しい方法が用意されています。ユーザーは、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順は次のとおりです。
+[!DNL Experience Manager][!DNL Cloud Service] as a には、アセットをリポジトリーにアップロードする新しい方法が用意されています。ユーザーは、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順は次のとおりです。
 
 1. [HTTP リクエストを送信します](#initiate-upload)。その結果、新しいバイナリをアップロードする意図が [!DNL Experience Manage]r デプロイメントに通知されます。
 1. [開始リクエストで提供される 1 つ以上の URI にバイナリのコンテンツを POST 送信します。](#upload-binary)
@@ -99,7 +99,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 | `replace` | ブール値 | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
 
 >!![NOTE]
->アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
+アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
@@ -118,15 +118,14 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-新しいアップロード方法は、[!DNL Adobe Experience Manager] as a Cloud Service の場合のみサポートされます。[!DNL Adobe Experience Manager] 6.5 の API は非推奨（廃止予定）となりました。アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連するメソッドは、次の API で非推奨（廃止予定）となりました。
+新しいアップロードメソッドは、[!DNL Cloud Service]として[!DNL Adobe Experience Manager]に対してのみサポートされます。 [!DNL Adobe Experience Manager] 6.5 の API は非推奨（廃止予定）となりました。アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連するメソッドは、次の API で非推奨（廃止予定）となりました。
 
 * [Adobe Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager`Java API（`AssetManager.createAsset(..)` など）
 
 >[!MORELIKETHIS]
->
->* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
->* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
 
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
@@ -139,7 +138,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードしたユーザーは、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が非常に簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。
 
-Adobe [!DNL Experience Manager] as a Cloud Service でサポートされているワークフローステップは次のとおりです。
+[!DNL Experience Manager] を [!DNL Cloud Service] サポートする次のワークフロー手順を実行します。
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -194,6 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [aSDKとしてのExperience Cloud [!DNL Cloud Service] です](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
 
