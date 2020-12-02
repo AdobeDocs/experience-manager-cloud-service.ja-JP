@@ -10,7 +10,7 @@ ht-degree: 32%
 ---
 
 
-# データ保護とデータプライバシー規制に対するCloud Service基盤の準備としてのAdobe Experience Manager {#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
+# データ保護とデータプライバシーに関するCloud Service基盤の準備としてのAdobe Experience Manager{#aem-foundation-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,9 +20,9 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、 [Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+>プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、[Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
-## AEM Foundation Data Privacy and Protectionのサポート {#aem-foundation-data-privacy-and-protection-support}
+## AEM Foundation Data Privacy and Protectionのサポート{#aem-foundation-data-privacy-and-protection-support}
 
 AEM Foundationレベルでは、保存される個人データはUserプロファイルーに保持されます。 したがって、この記事の内容は、主に、アクセス要求と削除要求に対応するために、ユーザープロファイルにアクセスする方法と削除する方法に関するものです。
 
@@ -30,7 +30,7 @@ AEM Foundationレベルでは、保存される個人データはUserプロフ�
 
 ### 手動の手順 {#manual-steps}
 
-1. Open the User Administration console, by browsing to **[!UICONTROL Tools - Security - Users]** or by browsing directly to `https://<serveraddress>:<serverport>/security/users.html`
+1. **[!UICONTROL ツール→セキュリティ→ユーザー]**&#x200B;を開くか、`https://<serveraddress>:<serverport>/security/users.html`を直接参照して、ユーザー管理コンソールを開きます。
 
 <!--
    ![useradmin2](assets/useradmin2.png)
@@ -82,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. 前述のように、ユーザー管理コンソールを開き、目的のユーザーを検索します。
 2. ユーザーの上にマウスポインターを置き、選択アイコンをクリックします。プロファイルがグレーに変わり、選択されたことが示されます。
 
-3. Press the **Disable** button in the upper menu to disable the user:
+3. 上部メニューの「**無効にする**」ボタンを押して、ユーザーを無効にします。
 
    ![アカウントを無効にする](assets/dpp-foundation-03.png)
 
