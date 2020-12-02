@@ -25,7 +25,7 @@ clientlibs は、AEM から CSS と JavaScript を配信するための組み込
 
 >[!TIP]
 >
->AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/uifrontend.html)にも慣れている必要があります。
+>AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)にも慣れている必要があります。
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
@@ -35,7 +35,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 ## AEM as a Cloud Service 向けフロントエンド開発 {#fed-for-aemaacs}
 
-すべての JavaScript、CSS、およびその他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュールで管理する必要があります。](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/uifrontend.html) アーキタイプの柔軟性により、最新の Web ツールを使用して、これらのリソースを作成および管理できます。
+すべての JavaScript、CSS、およびその他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュールで管理する必要があります。](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) アーキタイプの柔軟性により、最新の Web ツールを使用して、これらのリソースを作成および管理できます。
 
 次に、アーキタイプは、リソースを単一の CSS ファイルと JS ファイルにコンパイルし、自動的にリポジトリーの `cq:clientLibraryFolder` に埋め込むことができます。
 
@@ -90,7 +90,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
    * `resources` フォルダーの下に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
-   * これは、通常、 [AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスでおこなわれます。
+   * これは、通常、 [AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスでおこなわれます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
 1. クライアントライブラリフォルダーを選択して、**作成／ファイルを作成**&#x200B;をクリックします。
 1. ファイル名ボックスに、次のいずれかのファイル名を入力して、「OK」をクリックします。
@@ -210,7 +210,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 コードの埋め込みは、リポジトリのセキュリティ保護された領域に格納されているライブラリへのアクセスを提供する際に便利です。
 
-#### アプリケーション専用のクライアントライブラリフォルダー {#app-specific-client-library-folders}
+#### アプリケーション専用のクライアントライブラリフォルダー  {#app-specific-client-library-folders}
 
 アプリケーション関連のすべてのファイルは、`/app` 内のアプリケーションフォルダーに格納することをお勧めします。Web サイト訪問者の `/app` フォルダーに対するアクセスを拒否することもお勧めします。両方のベストプラクティスを満たすには、`/etc` にクライアントライブラリフォルダーを作成して、 `/app` 内のクライアントライブラリを埋め込みます。
 
@@ -341,7 +341,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 GCC オプションについて詳しくは、[GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels)を参照してください。
 
-#### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
+#### システムのデフォルト縮小ツールの設定  {#set-system-default-minifier}
 
 YUI は、AEM のデフォルト縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
 
