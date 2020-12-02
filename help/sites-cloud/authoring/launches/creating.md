@@ -107,7 +107,7 @@ ht-degree: 100%
 >
 >このメカニズムを使用して、[既存のページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)のテンプレートを変更できます。ただし、コンテンツが失われることは考慮する必要があります。
 
-### ネストされたローンチの作成 {#creating-a-nested-launch}
+### ネストされたローンチの作成  {#creating-a-nested-launch}
 
 ネストされたローンチを作成（ローンチをローンチ内に作成）して、既存のローンチからローンチを作成できます。これにより、作成者は各ローンチで同じ変更を複数回加えることなく、既に加えられた変更を活用できます。
 
