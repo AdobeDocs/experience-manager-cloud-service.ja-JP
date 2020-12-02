@@ -1,6 +1,6 @@
 ---
 title: Repository Modernizer
-description: Repository Modernizer
+description: Repository Modenizer
 translation-type: tm+mt
 source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
 workflow-type: tm+mt
