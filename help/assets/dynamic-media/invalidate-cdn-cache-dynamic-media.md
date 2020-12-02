@@ -16,7 +16,7 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 
 >[!IMPORTANT]
 >
->This feature requires that you use the out-of-the-box CDN that is bundled with AEM Dynamic Media; any other custom CDN is not supported. <!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>この機能を使用するには、AEMダイナミックメディアに組み込まれている標準搭載のCDNを使用する必要があります。その他のカスタムCDNはサポートされていません。<!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
 
 [Dynamic Media のキャッシュの概要](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)も参照してください。
 
