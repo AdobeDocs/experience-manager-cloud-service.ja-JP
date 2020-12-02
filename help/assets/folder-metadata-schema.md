@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Adobe Experience Manager（AEM）Assets では、フォルダープロパティページに表示されるレイアウトとメタデータを定義する、アセットフォルダーのメタデータスキーマを作成できます。
 
-## フォルダーメタデータスキーマフォームの追加 {#add-a-folder-metadata-schema-form}
+## フォルダーメタデータスキーマフォームの追加  {#add-a-folder-metadata-schema-form}
 
 フォルダーメタデータスキーマフォームエディターを使用して、フォルダーのメタデータスキーマを作成および編集します。
 
@@ -23,7 +23,7 @@ Adobe Experience Manager（AEM）Assets では、フォルダープロパティ�
 1. フォルダーメタデータスキーマフォームページで、「**[!UICONTROL 作成]**」をタップまたはクリックします。
 1. フォームの名前を指定し、「**[!UICONTROL 作成]**」をタップまたはクリックします。新しいスキーマフォームがスキーマフォームページにリストされます。
 
-## フォルダーメタデータスキーマフォームの編集 {#edit-folder-metadata-schema-forms}
+## フォルダーメタデータスキーマフォームの編集  {#edit-folder-metadata-schema-forms}
 
 以下を含む、新しく追加された、または既存のメタデータスキーマフォームを編集できます。
 
@@ -53,7 +53,7 @@ Adobe Experience Manager（AEM）Assets では、フォルダープロパティ�
 
 1. ツールバーの「**[!UICONTROL 保存]**」をタップまたはクリックして変更内容を保存します。
 
-### フォームを作成するコンポーネント {#components-to-build-forms}
+### フォームを作成するコンポーネント  {#components-to-build-forms}
 
 「**[!UICONTROL フォームを作成]**」タブには、フォルダーメタデータスキーマフォーム内で使用するフォーム項目が一覧表示されます。「**[!UICONTROL 設定]**」タブには、「**[!UICONTROL フォームを作成]**」タブで選択した各項目の属性が表示されます。以下は、「**[!UICONTROL フォームを作成]**」タブで使用可能なフォーム項目のリストです。
 
@@ -124,7 +124,7 @@ Adobe Experience Manager（AEM）Assets では、フォルダープロパティ�
 
 **[!UICONTROL クラス]**：プロパティに関連付けられているオブジェクトクラス。
 
-## フォルダーメタデータスキーマフォームの削除 {#delete-folder-metadata-schema-forms}
+## フォルダーメタデータスキーマフォームの削除  {#delete-folder-metadata-schema-forms}
 
 フォルダーメタデータスキーマフォームページから、フォルダーメタデータスキーマフォームを削除できます。フォームを削除するには、フォームを選択し、ツールバーの「削除」アイコンをタップまたはクリックします。
 
@@ -136,7 +136,7 @@ Adobe Experience Manager（AEM）Assets では、フォルダープロパティ�
 
 フォルダーのメタデータスキーマを設定すると、スキーマフォームのパスは、フォルダーノードの `folderMetadataSchema` プロパティ（.*/jcr:content* 下）に保存されます。
 
-### フォルダーメタデータスキーマページからのスキーマへの割り当て {#assign-to-a-schema-from-the-folder-metadata-schema-page}
+### フォルダーメタデータスキーマページからのスキーマへの割り当て  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
 1. フォルダーメタデータスキーマフォームページから、フォルダーに適用するスキーマフォームを選択します。
