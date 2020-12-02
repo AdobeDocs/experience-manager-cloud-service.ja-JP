@@ -10,7 +10,7 @@ ht-degree: 2%
 ---
 
 
-# データ保護とデータプライバシー規制に対するCloud Service準備としてのAdobe Experience Manager {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# データ保護とデータプライバシーに関する規制に対するCloud Service準備としてのAdobe Experience Manager{#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、 [Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+>プライバシーに関する問題に対するAdobeの対応、およびAdobeのお客様にとっての意味について詳しくは、[Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
 Adobeは、お客様のプライバシー管理者またはAEM管理者がデータ保護とデータプライバシーの要請を処理し、お客様がこれらの規制に準拠できるように、ドキュメントと手順を（APIを使用して）提供しています。 ドキュメントに記載された手順により、顧客は手動で、または、可能な場合は外部のポータルやサービスからAPIに呼び出すことで、規制要求を実行できます。
 
@@ -30,7 +30,7 @@ Adobeは、お客様のプライバシー管理者またはAEM管理者がデー
 >
 >別のAdobeのオンデマンドサービスのデータは、関連するプライバシー要求と共に、そのサービスでの処置が必要になります。
 >
->詳しくは、 [Adobeのプライバシーセンターを参照してください](https://www.adobe.com/privacy.html)。
+>詳しくは、[Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
 ## 概要 {#introduction}
 
@@ -78,19 +78,19 @@ Adobeは、Adobe Experience Managerのアクセス、削除、およびオプト
 
 ![データ保護とプライバシー](assets/data-protection-and-privacy-01.png)
 
-## Cloud Serviceと規制への対応としてのAdobe Experience Manager {#aem-as-a-cloud-service-and-regulatory-readiness}
+## Cloud Serviceと規制対応のAdobe Experience Manager{#aem-as-a-cloud-service-and-regulatory-readiness}
 
 Cloud ServiceとしてのAEMの製品領域に関する規制に関するドキュメントについては、以下の節を参照してください。
 
 ## Adobe Experience Manager as a Cloud Service の基礎 {#aem-foundation}
 
-See [AEM Foundation Readiness for Data Protection and Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md).
+「[AEM Foundation Readiness for Data Protection」および「Data Privacy Regulations](/help/onboarding/data-privacy-and-protection-readiness/foundation-readiness.md)」を参照してください。
 
 ## Adobe Experience Manager Sites as a Cloud Service {#aem-sites}
 
-See [AEM Sites Readiness for Data Protection and Data Privacy Regulations.](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
+[データ保護とデータのプライバシーに関する準備に関するAEM Sitesの規制を参照してください。](/help/onboarding/data-privacy-and-protection-readiness/sites-readiness.md)
 
-## Adobe Target&amp;Adobe AnalyticsとのCloud Service統合としてのAdobe Experience Manager {#aem-integration-with-adobe-target-adobe-analytics}
+## Adobe Target&amp;Adobe AnalyticsとのCloud Service統合としてのAdobe Experience Manager{#aem-integration-with-adobe-target-adobe-analytics}
 
 Cloud Service統合としてのAdobe Experience Managerは、データ保護とプライバシー（GDPRなど）に対応したサービスを提供します。 統合に関連して、Adobe TargetやAdobe Analyticsからの個人データはAEMに格納されない。
 詳しくは、次のセクションを参照してください。
