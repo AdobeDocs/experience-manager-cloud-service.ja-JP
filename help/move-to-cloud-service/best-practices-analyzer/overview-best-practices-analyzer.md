@@ -16,7 +16,7 @@ ht-degree: 35%
 
 このツールでは、AEM as a Cloud Service への移行の最初の手順として、リファクタリングの可能性がある領域を識別するレポートを生成します。
 
-## ベストプラクティスアナライザレポート {#bpa-report}
+## ベストプラクティスアナライザレポート{#bpa-report}
 
 ベストプラクティスアナライザレポートは、アップグレードの準備状況に関する一般的な概要を理解するために使用します。 このレポートは、カテゴリの中で発見された問題で構成されており、AEM as a Cloud Service のデプロイメントを成功させるにはそれらの問題を解決する必要があります。
 
@@ -33,4 +33,4 @@ ht-degree: 35%
 >[!NOTE]
 >ベストプラクティスアナライザレポートは、AEMにCloud Serviceとしてトランジションするのに必要な時間とコストを予測するプロセスを高速化します。それ以外の場合は、手動で収集して評価する必要のある情報を提供します。
 
-また、ベストプラクティスアナライザーレポートは、AEMインスタンスからダウンロードすることもできます。 Refer to [Viewing the Best Practices Analyzer Report](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) for more details.
+また、ベストプラクティスアナライザーレポートは、AEMインスタンスからダウンロードすることもできます。 詳細については、[Best Practices Analyzerレポートの表示](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)を参照してください。
