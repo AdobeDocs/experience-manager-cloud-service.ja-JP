@@ -39,6 +39,7 @@ ht-degree: 100%
 >
 >* 構造に複数のローンチがあるときは、[ネストされたローンチの昇格](#promoting-a-nested-launch)。
 >* 自動昇格および公開について詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)。
+
 >
 
 
@@ -77,7 +78,7 @@ ht-degree: 100%
 
 1. 「**昇格**」を選択します。
 
-## 編集中のローンチページの昇格 {#promoting-launch-pages-when-editing}
+## 編集中のローンチページの昇格  {#promoting-launch-pages-when-editing}
 
 ローンチページの編集中、**ローンチを昇格**&#x200B;アクションは「**ページ情報**」からも実行できます。これによりウィザードが開き、必要な情報が収集されます。
 
@@ -87,7 +88,7 @@ ht-degree: 100%
 >
 >これは単一および[ネストされたローンチ](#promoting-a-nested-launch)で使用できます。
 
-## ネストされたローンチの昇格 {#promoting-a-nested-launch}
+## ネストされたローンチの昇格  {#promoting-a-nested-launch}
 
 ネストされたローンチを作成後、任意のソース（ルートソース（実稼動）を含む）に戻して昇格させることができます。
 
