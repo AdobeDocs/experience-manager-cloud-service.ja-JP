@@ -47,7 +47,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 
 ### CIF アドオンへのアクセス
 
-CIF アドオンは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)から zip ファイルとしてダウンロードできます。Zip ファイルには、CIF アドオンが **Sling 機能アーカイブ**&#x200B;として含まれています。これは、AEM パッケージではありません。なお、SDK リストにアクセスできるのは、AEM as a Cloud Service ライセンスのあるユーザーに限られます。
+CIF アドオンは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)から zip ファイルとしてダウンロードできます。Zip ファイルには、CIF アドオンが **Sling 機能アーカイブ**&#x200B;として含まれています。これは、AEM パッケージではありません。なお、SDK リストにアクセスできるのは、AEM as a Cloud Service ライセンスのあるユーザーに限られます。
 
 >[!TIP]
 >
@@ -187,4 +187,4 @@ Venia 参照用ストアを使い始めるには、Git リポジトリーをコ�
 
 - [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
-- [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)
+- [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
