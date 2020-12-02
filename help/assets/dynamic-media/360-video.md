@@ -24,7 +24,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)も参照してください。
 
-## 360 ビデオの視聴 {#video-in-action}
+## 360 ビデオの視聴  {#video-in-action}
 
 「[Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」をタップして、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中にマウスポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
