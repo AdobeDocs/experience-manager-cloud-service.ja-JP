@@ -79,6 +79,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## パノラマ画像の公開 {#publishing-panoramic-images}
+## パノラマ画像の公開  {#publishing-panoramic-images}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
