@@ -45,6 +45,6 @@ ContextHub ストアは、コンテキストデータをクライアント上に
 * デベロッパーは、[カスタムストアタイプを作成](extending-contexthub.md#creating-custom-store-candidates)できます。
 * 開発者は、JavaScript を使用して[ストアデータにアクセス](adding-contexthub.md#interacting-with-contexthub-stores)できます。
 
-## セグメント化 {#segmentation}
+## セグメント化  {#segmentation}
 
 ContextHub には、セグメントの管理や、現在のコンテキストで解決されるセグメントの判断をするセグメント化エンジンが含まれています。いくつかのセグメントが定義されています。JavaScript API を使用して、[解決されたセグメントを判断](adding-contexthub.md#determining-resolved-contexthub-segments)できます。
