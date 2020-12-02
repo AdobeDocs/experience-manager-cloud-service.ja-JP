@@ -1,6 +1,6 @@
 ---
 title: AEM Developer Tools for Eclipse
-description: AEM Developer Tools for Eclipse
+description: AEM Eclipse開発者ツール
 translation-type: tm+mt
 source-git-commit: c40d668cb6dcf5c3e2d09504b547457306a99c85
 workflow-type: tm+mt
@@ -30,18 +30,18 @@ AEM Developer Tools for Eclipse は、Apache License 2 に従ってリリース�
 
 AEM Developer Toolsを使用する前に、次の操作を行う必要があります。
 
-* Download and install [Eclipse IDE for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/).
-* Configure your eclipse installation to ensure that you have at least 1 gigabyte of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* [Eclipse IDE for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/)をダウンロードしてインストールします。
+* [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse)の説明に従って`eclipse.ini`設定ファイルを編集し、少なくとも1 GBのヒープメモリがあることを確認するようにEclipseを設定します。
 
 >[!NOTE]
 >
->On macOS, you need to right-click on **Eclipse.app** and then select **Show Package Contents** in order to find your `eclipse.ini`**.**
+>macOSでは、**Eclipse.app**&#x200B;を右クリックし、「**パッケージの内容を表示**」を選択して&#x200B;`eclipse.ini`**を探す必要があります。**
 
-## How to Install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Eclipse用AEM Developer Toolsのインストール方法{#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
+上記の[要件](#requirements)を満たしたら、次のようにプラグインをインストールできます。
 
-1. Open the [AEM Developer Tools Web Site.](https://eclipse.adobe.com/aem/dev-tools/)
+1. [AEM Developer Tools Webサイトを開きます。](https://eclipse.adobe.com/aem/dev-tools/)
 
 1. **インストール用リンク**&#x200B;をコピーします。
 
@@ -50,23 +50,23 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 1. Eclipse で、**Help** メニューを開きます。
 1. 「**Install New Software**」をクリックします。
 1. 「**Add...**」をクリックします。
-1. 「 **名前**`AEM Developer Tools`」に、
+1. **名前**&#x200B;に`AEM Developer Tools`と入力します。
 1. 「**Location**」にインストール用 URL をコピーします。
 1. 「**追加**」をクリックします。
 1. 「**AEM**」プラグインと「**Sling**」プラグインの両方をオンにします。
 1. 「**次へ**」をクリックします。
-1. [ **インストールの詳細** ]ウィンドウで、[ **次へ** ]を再度クリックします。
-1. Accept the license agreements and click **Finish**.
-1. Click **RestartNow** in order to restart Eclipse.
+1. **詳細をインストール**&#x200B;ウィンドウで、**次へ**&#x200B;を再度クリックします。
+1. 使用許諾契約に同意し、[**終了**]をクリックします。
+1. Eclipseを再起動するには、**RestartNow**&#x200B;をクリックします。
 
 ## AEM パースペクティブ {#the-aem-perspective}
 
-Eclipseでは、パースペクティブによってウィンドウ内で使用できるアクションと表示が決定され、Eclipse内のタスク指向のリソースとのやり取りが可能になります。 パースペクティブについて詳しくは、 [Eclipseのドキュメントを参照してください。](https://help.eclipse.org)
+Eclipseでは、パースペクティブによってウィンドウ内で使用できるアクションと表示が決定され、Eclipse内のタスク指向のリソースとのやり取りが可能になります。 パースペクティブの詳細については、[Eclipseのドキュメントを参照してください。](https://help.eclipse.org)
 
 AEM Development Tools for Eclipseは、AEMプロジェクトとインスタンスをオファーがフルコントロールできるAEMの視点を提供します。 AEMパースペクティブを開くには：
 
-1. Eclipseメニューバーから、 **Window** -> **Perspective** -> **Open Perspective** -> **** Other Eclipseを選択します。
-1. ダイアログで **AEM** を選択し、 **「開く**」をクリックします。
+1. Eclipseメニューバーから、「**Window** -> **Perspective** -> **Open Perspective** -> **Other**」を選択します。
+1. ダイアログで「**AEM**」を選択し、「**開く**」をクリックします。
 
 ![EclipseのAEMパースペクティブ](assets/eclipse-aem-perspective.png)
 
@@ -86,7 +86,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
    >
    >m2eclipseがアーキタイプカタログをスキャンする必要があるので、この手順には少し時間がかかる場合があります。
 
-1. メニュー `com.adobe.granite.archetypes : sample-project-archetype : <highest-number>` からを選択し、「 **次へ**」をクリックします。
+1. メニューから「`com.adobe.granite.archetypes : sample-project-archetype : <highest-number>`」を選択し、「**次へ**」をクリックします。
 
    ![アーキタイプバージョンの選択](assets/select-archetype.png)
 
@@ -95,9 +95,9 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
    * **名前**
    * **グループID**
    * **アーティファクトID**
-   * **appId** — この値を設定するには、 **** 詳細オプションを展開する必要がある場合があります。
-   * **appTitle** — この値を設定するには、 **** 詳細オプションを展開する必要がある場合があります。
-   * **パッケージ** — この値を設定するには、 **** 詳細オプションを展開する必要がある場合があります。
+   * **appId**  — この値を設定するには、「 **** 詳細」オプションを展開する必要がある場合があります。
+   * **appTitle**  — この値を設定するには、「 **** 詳細」オプションを展開する必要がある場合があります。
+   * **パッケージ**  — この値を設定するには、 **** 詳細オプションを展開する必要がある場合があります。
 
    ![アーキタイププロパティの定義](assets/archetype-properties.png)
 
@@ -121,32 +121,32 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 ## 既存プロジェクトの読み込み方法 {#how-to-import-existing-projects}
 
-「 **新規プロジェクト** 」機能を使用して、次のような適切な構造を作成できます。
+**新しいプロジェクト**&#x200B;機能を使用して、次のような適切な構造を作成できます。
 
-1. 手順に従って [サンプルのマルチモジュールプロジェクトを作成し](#sample-multi-module-project) 、次のプロジェクトを作成します。これにより、懸念事項を健全に分離できます。
+1. [サンプルのマルチモジュールプロジェクト](#sample-multi-module-project)を作成する手順に従うと、次のプロジェクトが自分用に作成されます。これにより、懸念事項を健全に分離できます。
 
-   * `PROJECT.ui.apps` for `/apps` and `/etc` content
-   * `PROJECT.ui.content` 書か `/content` れた
+   * `PROJECT.ui.apps` for  `/apps` and  `/etc` content
+   * `PROJECT.ui.content` それ `/content` は書かれている
    * `PROJECT.core` Javaバンドルの場合（Javaコードを追加するとすぐに興味深い内容になります）
-   * `PROJECT.it.launcher` と統合テスト `PROJECT.it.tests` に関する情報
+   * `PROJECT.it.launcher` 統合テスト `PROJECT.it.tests` の場合は、
 
-1. プロジェクトのコンテンツをパッケージの `PROJECT.ui.apps` および `apps``etc` フォルダーに置き換えます。
+1. `PROJECT.ui.apps`プロジェクトの内容をパッケージの`apps`フォルダーと`etc`フォルダーに置き換えます。
 
-   1. Project Explorerパネルで、 `PROJECT.ui.apps` / `src` / `main` / `content` / `jcr_root` >を展開し `apps`ます。
-   1. フォルダーを右クリックし `apps` 、 **表示場所** / **システムエクスプローラーを選択します**。
-   1. 表示され `apps` るフォルダー `etc` とフォルダーを削除し、コンテンツパッケージのフォルダー `apps``etc` とフォルダーをここに配置します。
-   1. Eclipseで、 `PROJECT.ui.apps` プロジェクトを右クリックし、「 **更新**」を選択します。
+   1. プロジェクトエクスプローラーパネルで、`PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`を展開します。
+   1. `apps`フォルダーを右クリックし、****&#x200B;に表示/**システムエクスプローラー**&#x200B;を選択します。
+   1. 表示する`apps`フォルダーと`etc`フォルダーを削除し、コンテンツパッケージの`apps`フォルダーと`etc`フォルダーをここに配置します。
+   1. Eclipseで、`PROJECT.ui.apps`プロジェクトを右クリックし、「**更新**」を選択します。
 
-1. 次に、に対して同じ手順を実行 `PROJECT.ui.content` し、そのコンテンツフォルダーをいずれかのパッケージに置き換えます。
+1. 次に、`PROJECT.ui.content`に対して同じことを行い、そのコンテンツフォルダーをパッケージの1つに置き換えます。
 
-   1. Project Explorerパネルで、 `PROJECT.ui.content` / `src` / `main` / `content` / `jcr_root` >を展開し `content`ます。
-   1. 深いコンテンツフォルダーを右クリックし、 **表示場所** / **システムエクスプローラーを選択します**。
+   1. プロジェクトエクスプローラーパネルで、`PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`を展開します。
+   1. より深いコンテンツフォルダーを右クリックし、「**** -> **システムエクスプローラー**&#x200B;に表示」を選択します。
    1. 表示されるコンテンツフォルダーを削除し、コンテンツパッケージのコンテンツフォルダーをここに配置します。
-   1. Eclipseで、 `PROJECT.ui.content` プロジェクトを右クリックし、「 **更新**」を選択します。
+   1. Eclipseで、`PROJECT.ui.content`プロジェクトを右クリックし、「**更新**」を選択します。
 
-1. 次に、これら2つのプロジェクトの `filter.xml` ファイルを更新して、コンテンツパッケージのコンテンツに対応させる必要があります。 その場合は、コンテンツパッケージの `META-INF/vault/filter.xml` ファイルを別のテキスト/コードエディターで開きます。
+1. 次に、これら2つのプロジェクトの`filter.xml`ファイルを更新して、コンテンツパッケージの内容に合わせる必要があります。 その場合は、コンテンツパッケージの`META-INF/vault/filter.xml`ファイルを別のテキスト/コードエディターで開きます。
 
-   * 次に、 `filter.xml` ファイルの外観の例を示します。
+   * `filter.xml`ファイルの例を次に示します。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -160,10 +160,10 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
    </workspaceFilter>
    ```
 
-1. パッケージを2つのプロジェクトに分割したコンテンツについては、これらのフィルタールールを2つに分割し、2つのプロジェクトの `filter.xml` ファイルを更新する必要もあります。
+1. パッケージを2つのプロジェクトに分割したコンテンツについては、これらのフィルタールールを2つに分割し、2つのプロジェクトの`filter.xml`ファイルに合わせて更新する必要もあります。
 
-   1. Eclipseで、を開き `PROJECT.ui.apps/src/main/content/META-INF/filter.xml`ます。
-   1. 要素の内容を、 `<workspaceFilter>` 開始ーにおよ `/apps` びを設定したパッケージのルールで置き換えます `/etc`
+   1. Eclipseで、`PROJECT.ui.apps/src/main/content/META-INF/filter.xml`を開きます。
+   1. `<workspaceFilter>`要素の内容を、`/apps`と`/etc`を含む開始ーを含むパッケージのルールに置き換えます
       * 次に例を示します。
 
          ```xml
@@ -174,8 +174,8 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
             <filter root="/etc/designs/foo"/>
          </workspaceFilter>
          ```
-   1. 次に開き `PROJECT.ui.content/src/main/content/META-INF/filter.xml`ます。
-   1. ルールを、開始ーに含まれるパッケージのルールに置き換え `/content`ます。
+   1. 次に`PROJECT.ui.content/src/main/content/META-INF/filter.xml`を開きます。
+   1. ルールを、`/content`を開始したパッケージのルールに置き換えます。
       * 次に例を示します。
 
          ```xml
@@ -191,13 +191,13 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 1. すべての変更を保存してください。 これで、新しいコンテンツをAEMインスタンスに同期できます。
 
 1. Serversパネルで、接続が開始されていることを確認します。開始していない場合は確認します。
-1. 「 **クリーンアップして公開** 」アイコンをクリックします。
+1. 「**クリーンアップして公開**」アイコンをクリックします。
 
 完了したら、インスタンスでパッケージを実行させ、保存すると、変更が自動的にインスタンスに同期されます。
 
-プロジェクトからパッケージを再構築する場合は、を右クリックし `PROJECT.ui.apps` て、「 `PROJECT.ui.content` 実行 **」** -> 「 **Mavenのインストール**」を選択します。
+プロジェクトからパッケージを再構築する場合は、`PROJECT.ui.apps`または`PROJECT.ui.content`を右クリックし、「**Run As** -> **Maven Install**」を選択します。
 
-これで、パッケージを含むターゲットフォルダーが作成されました( `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)をクリックします。
+これで、パッケージを含むターゲットフォルダーが作成されました(`PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`)。
 
 ## トラブルシューティング {#troubleshooting}
 
@@ -207,7 +207,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
 
 1. 作成したプロジェクトをすべて選択します。
 1. 右クリックします。
-1. コンテキストメニューで、 **Maven** -> **Update Projectsを選択します**。
+1. コンテキストメニューで、「**Maven** -> **プロジェクトを更新**」を選択します。
 1. 「**Force Updates of Snapshot/Releases**」をオンにします。
 1. 「**OK**」をクリックします。
 
@@ -217,7 +217,7 @@ Eclipseは必要な依存関係をダウンロードします。 これには少
 
 Apache Sling IDE tooling for Eclipse の公式 Web サイトでは、次の役立つ情報を参照できます。
 
-* The [**Apache Sling IDE tooling for Eclipse** User Guide](https://sling.apache.org/documentation/development/ide-tooling.html), this documentation will guide you through the overall concepts, server integration and deployment capabilities supported by the AEM Development Tools.
+* [**Apache Sling IDEツール（『Eclipse**&#x200B;ユーザガイド](https://sling.apache.org/documentation/development/ide-tooling.html)』）では、このドキュメントを使用して、AEM開発ツールでサポートされる全体的な概念、サーバー統合およびデプロイメント機能を説明します。
 * [トラブルシューティング情報](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
 * [既知の問題リスト](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
