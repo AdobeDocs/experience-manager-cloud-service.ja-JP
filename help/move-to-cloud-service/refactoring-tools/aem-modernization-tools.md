@@ -1,6 +1,6 @@
 ---
 title: AEM Modernization Tools
-description: 'AEM Modernization Tools '
+description: 'AEM最新化ツール '
 translation-type: tm+mt
 source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
 workflow-type: tm+mt
