@@ -153,7 +153,7 @@ ht-degree: 100%
  </tbody>
 </table>
 
-## インボックスの最大サイズの設定 {#setting-the-maximum-size-of-the-inbox}
+## インボックスの最大サイズの設定  {#setting-the-maximum-size-of-the-inbox}
 
 インボックスの最大サイズは、**Adobe Granite Workflow Service** を設定することで設定できます。「[リポジトリーへの OSGi 設定の追加](/help/implementing/deploying/configuring-osgi.md)」を参照してください。次の表に、設定可能なプロパティについて説明します。
 
