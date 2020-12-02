@@ -5,19 +5,19 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 6dea6ac6cdadfe64ad47d492ea502fe3babd155d
+source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 89%
+source-wordcount: '467'
+ht-degree: 87%
 
 ---
 
 
 # [!DNL Assets] ガイド {#assets}
 
-+ [[!DNL Assets] as a Cloud Service](/help/assets/home.md)
++ [[!DNL Assets] として [!DNL Cloud Service]](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [ [!DNL Assets]  as a Cloud Service の主な変更点](assets-cloud-changes.md)
++ [の主な変更点 [!DNL Assets]  [!DNL Cloud Service]](assets-cloud-changes.md)
 + [[!DNL Assets] アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
@@ -64,7 +64,7 @@ ht-degree: 89%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Brand Portal] での  [!DNL Assets]  の設定](configure-aem-assets-with-brand-portal.md)
+   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
