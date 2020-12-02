@@ -55,7 +55,7 @@ ht-degree: 99%
 
 [ガイドライン 1.1 代替テキスト：すべてのテキスト以外のコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などのユーザーが必要とする形式に変換できるように、代替テキストを提供すること。](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### テキスト以外のコンテンツ（1.1.1） {#non-text-content}
+### テキスト以外のコンテンツ（1.1.1）  {#non-text-content}
 
 * 達成基準 1.1.1
 * レベル A
@@ -67,7 +67,7 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 
 もう 1 つのメリットとして、代替テキストを使用すると、検索エンジンのテクノロジーによってテキスト以外のコンテンツのインデックスを作成できます。
 
-#### 達成方法 - テキスト以外のコンテンツ（1.1.1） {#how-to-meet-non-text-content}
+#### 達成方法 - テキスト以外のコンテンツ（1.1.1）  {#how-to-meet-non-text-content}
 
 静的なグラフィックの場合、そのグラフィックと同等の代替テキストを指定することが基本的な要件です。それには、「**代替テキスト**」フィールドを使用します。例えば、**[画像](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/image.html)**&#x200B;コアコンポーネントを参照してください。
 
@@ -77,7 +77,7 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 >
 >AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（追加の HTML 要素および属性のサポートの追加を参照）。
 >
->標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://docs.adobe.com/content/help/jp/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
+>標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
 >AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)を参照）。
 
@@ -116,7 +116,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 >
 >背景と手前のテキストの間には適度なコントラストが必要です。これについて詳しくは、[コントラスト（最低限）（1.4.3）](#contrast-minimum)を参照してください。
 
-#### 詳細情報 - テキスト以外のコンテンツ（1.1.1） {#more-information-non-text-content}
+#### 詳細情報 - テキスト以外のコンテンツ（1.1.1）  {#more-information-non-text-content}
 
 * [達成基準 1.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [達成基準 1.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -126,7 +126,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
 -->
 
-### 時間依存メディア（1.2） {#time-based-media}
+### 時間依存メディア（1.2）  {#time-based-media}
 
 [ガイドライン 1.2 時間依存メディア：時間依存メディアには代替コンテンツを提供すること。](https://www.w3.org/TR/WCAG/#time-based-media)
 
@@ -243,13 +243,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### キャプション（ライブ）（1.2.4）          {#captions-live}
+### キャプション（ライブ）（1.2.4）           {#captions-live}
 
 * 達成基準 1.2.4
 * レベル AA
 * キャプション（ライブ）：同期されたメディアに含まれるすべてのライブ音声コンテンツに対してキャプションが提供されている。
 
-#### 目的 - キャプション（ライブ）（1.2.4） {#purpose-captions-live}
+#### 目的 - キャプション（ライブ）（1.2.4）  {#purpose-captions-live}
 
 この達成基準は、聴覚障碍のあるユーザーのアクセシビリティに関する問題に対応する点で、[キャプション（収録済み）](#captions-prerecorded)と同じです。ただし、この達成基準では Web キャストなどライブのプレゼンテーションを扱う点が異なります。
 
@@ -287,7 +287,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [達成基準 1.2.5 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [達成基準 1.2.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### 適応可能（1.3） {#adaptable}
+### 適応可能（1.3）  {#adaptable}
 
 [ガイドライン 1.3 適応可能：情報および構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作している。](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -297,13 +297,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * 音声のみ、または大きいテキストや高いコントラストなど、代替の視覚表示を使用する可能性のあるユーザー
 
-### 情報および関係性（1.3.1）           {#info-and-relationships}
+### 情報および関係性（1.3.1）            {#info-and-relationships}
 
 * 達成基準 1.3.1
 * レベル A
 * 情報および関係性：プレゼンテーションを通して伝えられる情報、構造および関係性を、プログラムによって特定できる、またはテキスト形式で利用できる。
 
-#### 目的 - 情報および関係性（1.3.1） {#purpose-info-and-relationships}
+#### 目的 - 情報および関係性（1.3.1）  {#purpose-info-and-relationships}
 
 障碍のあるユーザーが使用する多くの支援テクノロジーでは、コンテンツを効果的に表示または&#x200B;*理解*&#x200B;するために構造情報に基づいています。この構造情報は、ページ見出し、テーブルの行見出しおよび列見出し、リストタイプの形式を取ることができます。例えば、スクリーンリーダーを使用すれば、ページ内を見出しから見出しへと移動できます。ただし、ページコンテンツの構造が基になる HTML ではなく、視覚的なスタイルでのみ設定されているように見える場合、支援テクノロジーでは構造情報を利用できず、ブラウジングの操作性の向上を十分サポートできなくなります。
 
@@ -428,13 +428,13 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [達成基準 1.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### 感覚的な特徴（1.3.3）           {#sensory-characteristics}
+### 感覚的な特徴（1.3.3）            {#sensory-characteristics}
 
 * 達成基準 1.3.3
 * レベル A
 * 感覚的な特徴：コンテンツを理解および操作するために提供されている指示が、形状、サイズ、視覚的な場所、方向、音声など、コンポーネントの感覚的な特徴のみに依存していない。
 
-#### 目的 - 感覚的な特徴（1.3.3） {#purpose-sensory-characteristics}
+#### 目的 - 感覚的な特徴（1.3.3）  {#purpose-sensory-characteristics}
 
 デザイナーは多くの場合、情報を提示する際に、色、形状、テキストスタイル、コンテンツの絶対位置または相対位置など、視覚的なデザイン特性に注目します。これらは、情報を伝えるうえで非常に強力なデザイン手法になります（また、目の見えるユーザーでも認知的なアクセシビリティが必要な場合にはアクセシビリティ全体を向上させることができます）。ただし、視覚障碍のあるユーザーは、位置や色、形状などの属性を視覚的に識別する必要のある情報にはアクセスできない場合があります。
 
@@ -444,7 +444,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >
 >色の代替に関連する要件について詳しくは、[色の使用](#use-of-color)を参照してください。
 
-#### 達成方法 - 感覚的な特徴（1.3.3） {#how-to-meet-sensory-characteristics}
+#### 達成方法 - 感覚的な特徴（1.3.3）  {#how-to-meet-sensory-characteristics}
 
 ページコンテンツの視覚的な特徴に依存する情報が、代替形式でも提示されていることを確認してください。
 
@@ -460,11 +460,11 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.3.3 について](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [達成基準 1.3.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### 判別可能（1.4） {#distinguishable}
+### 判別可能（1.4）  {#distinguishable}
 
 [ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### 色の使用（1.4.1）           {#use-of-color}
+### 色の使用（1.4.1）            {#use-of-color}
 
 * 達成基準 1.4.1
 * レベル A
@@ -474,7 +474,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >
 >この達成基準では、色覚を具体的に扱います。その他の知覚については、[適応可能（1.3）](#adaptable)で、色やその他の視覚的表現のコーディングを含めて説明しています。
 
-#### 目的 - 色の使用（1.4.1） {#purpose-use-of-color}
+#### 目的 - 色の使用（1.4.1）  {#purpose-use-of-color}
 
 色は、Web ページの美しさを強調するうえで間違いなく効果的な方法であり、情報を伝達するうえでも便利です。ただし、全盲から色覚異常まで、様々な視覚障碍があり、特定の色を区別できない人もいます。このため、情報を提供するうえで、色分けは信頼性の低い方法となります。
 
@@ -546,7 +546,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >
 >純粋に装飾目的で使用されるテキストは、この達成基準から除外されます。
 
-#### 達成方法 - コントラスト（最低限）（1.4.3） {#how-to-meet-contrast-minimum}
+#### 達成方法 - コントラスト（最低限）（1.4.3）  {#how-to-meet-contrast-minimum}
 
 テキストと背景色のコントラストが十分であることを確認します。コントラスト比は、問題のテキストのサイズとスタイルによって異なります。
 
@@ -575,7 +575,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 推奨されるコントラストレベルを満たすことができない場合は、代替の、同等のページ（色のコントラストに関する問題がないページ）へのリンクを提供するか、ユーザーが自身の要件に合わせてページの配色のコントラストを調整できるようにする必要があります。
 
-#### 詳細情報 - コントラスト（最低限）（1.4.3） {#more-information-contrast-minimum}
+#### 詳細情報 - コントラスト（最低限）（1.4.3）  {#more-information-contrast-minimum}
 
 * [達成基準 1.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [達成基準 1.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
@@ -611,11 +611,11 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >
 >ロゴタイプ（ロゴまたはブランド名の一部であるテキスト）は必須と見なされます。
 
-#### 目的 - 文字画像（1.4.5） {#purpose-images-of-text}
+#### 目的 - 文字画像（1.4.5）  {#purpose-images-of-text}
 
 文字画像は、多くの場合、ロゴタイプなど特定のスタイルのテキストが好まれる場合や、テキストが別のソース（紙のドキュメントのスキャンなど）から生成された場合に使用されます。ただし、HTML で表現され、CSS を使用してスタイル設定されているテキストと比較して、文字画像は柔軟性に欠けており、視覚障碍のあるユーザーや読解が困難なユーザーにとって必要となるサイズや外観の変更ができません。
 
-#### 達成方法 - 文字画像（1.4.5） {#how-to-meet-images-of-text}
+#### 達成方法 - 文字画像（1.4.5）  {#how-to-meet-images-of-text}
 
 文字画像を使用する必要がある場合は、CSS を使用して、文字画像を同等の HTML テキストに置き換え、テキストをカスタマイズ可能にします。これをおこなう方法の例は、[C30：CSS を用いて、テキストを画像化された文字に置き換え、変換するユーザーインターフェイスコントロールを提供する](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)を参照してください。
 
@@ -624,7 +624,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.4.5 について](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [達成基準 1.4.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
 
-## 原則 2：操作可能 {#principle-operable}
+## 原則 2：操作可能  {#principle-operable}
 
 [原則 2：操作可能 - ユーザーインターフェイスコンポーネントおよびナビゲーションは操作可能でなければならない。](https://www.w3.org/TR/WCAG/#operable)
 
@@ -699,7 +699,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### 一時停止、停止、非表示（2.2.2）           {#pause-stop-hide}
+### 一時停止、停止、非表示（2.2.2）            {#pause-stop-hide}
 
 * 達成基準 2.2.2
 * レベル A
@@ -714,7 +714,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 1. ソフトウェアによって定期的に更新されるコンテンツや、ユーザーエージェントにストリーミングされるコンテンツでは、一時停止してから再開されるまでの間に生成または受信された情報を保持したり停止したりする必要はありません。これは技術的に不可能な場合があり、多くの場合に誤解を招く可能性があるからです。
 1. プリロード段階または同様の状況の一環として発生するアニメーションがある場合に、すべてのユーザーに対してその段階中はインタラクションが発生できず、進捗を示さないことによってユーザーが混乱したり、コンテンツがフリーズまたは破損していると考える可能性がある場合は、そのアニメーションを必須と見なすことができます。
 
-#### 目的 - 一時停止、停止、非表示（2.2.2） {#purpose-pause-stop-hide}
+#### 目的 - 一時停止、停止、非表示（2.2.2）  {#purpose-pause-stop-hide}
 
 ユーザーによっては、動くコンテンツが気が散る、さらには肉体的に苦痛とまで感じられて、ページの他の部分に集中することが難しくなる場合があります。さらに、動くテキストを目で追うのに苦労するユーザーには、そのようなコンテンツは読みにくいことがわかる場合もあります。
 
@@ -751,7 +751,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 
 場合によっては、コンテンツが放つ閃光によって光過敏性発作が発生する可能性があります。この達成基準を満たすと、そのようなユーザーが閃光を放つコンテンツの心配をせずにすべてのコンテンツにアクセスし、体験できます。
 
-#### 達成方法 - 3 回の閃光、またはしきい値以下（2.3.1） {#how-to-meet-three-flashes-or-below-threshold}
+#### 達成方法 - 3 回の閃光、またはしきい値以下（2.3.1）  {#how-to-meet-three-flashes-or-below-threshold}
 
 次の技法が適用されていることを確認する必要があります。
 
@@ -788,17 +788,17 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### ページタイトル（2.4.2）           {#page-titled}
+### ページタイトル（2.4.2）            {#page-titled}
 
 * 達成基準 2.4.2
 * レベル A
 * ページタイトル： Web ページが、トピックまたは目的を説明するタイトルを持つ。
 
-#### 目的 - ページタイトル（2.4.2） {#purpose-page-titled}
+#### 目的 - ページタイトル（2.4.2）  {#purpose-page-titled}
 
 この達成基準を満たすと、特定の障碍があるかどうかにかかわらず誰でも、ページ全体を読まずに Web ページの内容を短時間で識別できます。これは、ブラウザーのタブで複数の Web ページを開いている場合に特に便利です。ページタイトルがタブに表示されるので、簡単に見つけることができるからです。
 
-#### 達成方法 - ページタイトル（2.4.2） {#how-to-meet-page-titled}
+#### 達成方法 - ページタイトル（2.4.2）  {#how-to-meet-page-titled}
 
 AEM で新しい HTML ページを作成する際には、ページタイトルを指定できます。コンテンツが自分のニーズに実際に関係があるかどうかを訪問者がすばやく特定できるように、ページのコンテンツや目的、特に独自の観点を十分に反映したタイトルにしてください。
 
@@ -828,13 +828,13 @@ AEM で新しい HTML ページを作成する際には、ページタイトル�
 * [達成基準 2.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### リンクの目的（コンテキスト内）（2.4.4）           {#link-purpose-in-context}
+### リンクの目的（コンテキスト内）（2.4.4）            {#link-purpose-in-context}
 
 * 達成基準 2.4.4
 * レベル A
 * リンクの目的（コンテキスト内）：各リンクの目的が、リンクテキストのみから、またはリンクテキストとプログラムで特定したリンクコンテキストから特定できる。ただし、リンクの目的が一般的にユーザーにとってあいまいな場合を除く。
 
-#### 目的 - リンクの目的（コンテキスト内）（2.4.4） {#purpose-link-purpose-in-context}
+#### 目的 - リンクの目的（コンテキスト内）（2.4.4）  {#purpose-link-purpose-in-context}
 
 障碍に関係なく、すべてのユーザーにとって、適切なリンクテキストによってリンクの目的を明確に示すことは重要です。これによってユーザーは、実際にリンクをたどるかどうかを判断できます。目の見えるユーザーにとって、ページ上に複数のリンクがある場合（特に、テキストが多いページの場合）、意味のあるリンクテキストは、ターゲットページの機能をより明確に示すので、非常に有用です。支援テクノロジーのユーザーは、1 つのページにすべてのリンクのリストを生成できるので、リンクテキストが独特でしかも情報量が多ければ、コンテキストからリンクテキストをより簡単に理解できます。ただし、目の見えるユーザーでも認知機能に障碍がある場合は、リンク先を正確に説明する十分な情報をリンクが提供しないと、当惑する可能性があります。
 
@@ -962,21 +962,21 @@ John Smith’s publications
 
 [原則 3：理解可能 - 情報およびユーザーインターフェイスの操作は理解可能でなければならない。](https://www.w3.org/TR/WCAG/#understandable)
 
-### テキストのコンテンツを読みやすく理解可能にする（3.1） {#make-text-content-readable-and-understandable}
+### テキストのコンテンツを読みやすく理解可能にする（3.1）  {#make-text-content-readable-and-understandable}
 
 [ガイドライン 3.1 読みやすさ：テキストのコンテンツを読みやすく理解可能にすること。](https://www.w3.org/TR/WCAG/#readable)
 
-### ページの言語（3.1.1） {#language-of-page}
+### ページの言語（3.1.1）  {#language-of-page}
 
 * 達成基準 3.1.1
 * レベル A
 * ページの言語：各 Web ページのデフォルトの自然言語がどの言語であるか、プログラムによる特定ができる。
 
-#### 目的 - ページの言語（3.1.1） {#purpose-language-of-page}
+#### 目的 - ページの言語（3.1.1）  {#purpose-language-of-page}
 
 この達成基準の目的は、テキストおよびその他の言語コンテンツが正確にレンダリングされることを確認することです。スクリーンリーダーユーザーにとっては、これによってコンテンツが正しく発音され、一方で視覚的なブラウザーでは特定の言語セットが正確に表示されます。
 
-#### 達成方法 - ページの言語（3.1.1） {#how-to-meet-language-of-page}
+#### 達成方法 - ページの言語（3.1.1）  {#how-to-meet-language-of-page}
 
 この達成基準を満たすために、ページ上部の `lang` 要素内で `<html>` 属性を使用して、Web ページのデフォルト言語を識別できます。次に例を示します。
 
@@ -998,13 +998,13 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 * [達成基準 3.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * コードは ISO 639-1 に基づいています。各言語の詳細なコードリストについては、[W3 Schools サイト](https://www.w3schools.com/tags/ref_language_codes.asp)を参照してください。
 
-### 一部分の言語（3.1.2）           {#language-of-parts}
+### 一部分の言語（3.1.2）            {#language-of-parts}
 
 * 達成基準 3.1.2
 * レベル AA
 * 一部分の言語：コンテンツの一節ごと、フレーズごとの人間言語はプログラムによって決定できます。ただし、固有名詞、技術用語、不明な言語の単語、周囲のテキストに特有の表現の一部となっている単語やフレーズなどを除きます。
 
-#### 目的 - 一部分の言語（3.1.2） {#purpose-language-of-parts}
+#### 目的 - 一部分の言語（3.1.2）  {#purpose-language-of-parts}
 
 この達成基準の目的は、[ページの言語](#language-of-page)の達成基準と類似していますが、単一のページに複数言語のコンテンツ（引用や一般的でない外来語）が含まれる Web ページに適用される点が異なります。
 
@@ -1014,7 +1014,7 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 * スクリーンリーダーで、特殊文字を含む単語やページレベルで識別されたデフォルト言語でない単語を発音。
 * Google 翻訳などの翻訳ツールを使用して、コンテンツを別の言語に翻訳。
 
-#### 達成方法 - 一部分の言語（3.1.2） {#how-to-meet-language-of-parts}
+#### 達成方法 - 一部分の言語（3.1.2）  {#how-to-meet-language-of-parts}
 
 `lang` 属性を使用して、コンテンツの言語の変更を識別できます。例えば、ドイツ語（ISO 639-1 コード “de”）の引用は、次のように表示できます。
 
@@ -1181,7 +1181,7 @@ Web ページで必要とされるが、ユーザーによって省略された�
 * レベル A
 * ラベルまたは説明：コンテンツにユーザー入力が必要な場合に、ラベルまたは説明が提供されている。
 
-#### 目的 - ラベルまたは説明（3.3.2） {#purpose-labels-or-instructions}
+#### 目的 - ラベルまたは説明（3.3.2）  {#purpose-labels-or-instructions}
 
 フォームへの入力を支援する説明を提供することは、インターフェイスを使いやすくするための基本です。これをおこなうことは、視覚や認知の障碍のあるユーザーに特に役立ちます。この説明がないと、フォームのレイアウトや、フォームの特定のフィールドで提供されているデータの種類を理解することが困難になるからです。
 
@@ -1216,7 +1216,7 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 機能がごく限られている簡単なフォームでは、「`Submit`」ボタンに適切にラベルを付けると、隣のフィールド（「`Search`」など）のラベルとしての役割を果たすことができます。これは、ラベルテキストのスペースを見つけることが困難な可能性のある場合に便利です。
 
-#### 詳細情報 - ラベルまたは説明（3.3.2） {#more-information-labels-or-instructions}
+#### 詳細情報 - ラベルまたは説明（3.3.2）  {#more-information-labels-or-instructions}
 
 * [達成基準 3.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [達成基準 3.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
