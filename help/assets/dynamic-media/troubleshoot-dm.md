@@ -22,7 +22,7 @@ ht-degree: 100%
 
 次に全般的なヒントやテクニックを示します。
 
-### アセット同期ステータスプロパティ {#asset-synchronization-status-properties}
+### アセット同期ステータスプロパティ  {#asset-synchronization-status-properties}
 
 CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dynamic Media へのアセットの同期に成功したことが確認できます。
 
@@ -33,7 +33,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media のリモートアセットへの URL を生成するには、これを入力する必要があります。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **success** または **failed:`<error text>`** | セット（スピンセット、画像セットなど）、画像プリセット、ビューアプリセット、アセットの画像マップの更新、編集された画像などの同期ステータス。 |
 
-### 同期のログ {#synchronization-logging}
+### 同期のログ  {#synchronization-logging}
 
 同期のエラーと問題は `error.log`（AEM サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
@@ -45,7 +45,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
 
 * Dynamic Media ではバージョンの作成はサポートされていません。配信で新しいバージョンが既存のアセットを置換します。
 
-## 画像とセット {#images-and-sets}
+## 画像とセット  {#images-and-sets}
 
 画像とセットで問題が発生している場合、次のトラブルシューティングガイドに従ってください。
 
