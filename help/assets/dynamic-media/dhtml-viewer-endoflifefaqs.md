@@ -47,7 +47,7 @@ DHTML に関するこのような制限や、デスクトップとモバイル�
 
 1. 次の表で「ビューアテクノロジー」が「DHTML」と表示されている標準提供の Scene7 ビューアをベースとして、新しいプリセットとして作成されたビューアを使用している。
 
-   [https://help.adobe.com/ja_JP/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/ja_JP/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
+   [https://help.adobe.com/ja_JP/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000](https://help.adobe.com/en_US/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html#WS1c46793299cf21d77e926d1613177f0a020-8000)
 
 1. JSP ベースの DHTML ソリューションから作成されたカスタムビューアを使用している。
 
@@ -94,10 +94,10 @@ Scene7 は初の HTML5 ビューア SDK を 2011 年秋にバージョン 5.5 �
 
 ビューアを HTML5 プラットフォームに移行するには、次の選択肢があります。
 
-1. Scene7 の標準提供 HTML5 ビューアのいずれかを使用する。ビューアの例については、[https://microsite.omniture.com/t2/help/ja_JP/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/ja_JP/s7/vlist/vlist.html) を参照してください。
+1. Scene7 の標準提供 HTML5 ビューアのいずれかを使用する。ビューアの例については、[https://microsite.omniture.com/t2/help/ja_JP/s7/vlist/vlist.html](https://microsite.omniture.com/t2/help/en_US/s7/vlist/vlist.html) を参照してください。
 1. SPS アプリケーションの設定に従って、Scene7 の標準提供 HTML5 ビューアのいずれかを設定する。これにより、ビューアのサイズ、トランジション、ズームなどの動作をカスタマイズできます。[https://help.adobe.com/ja_JP/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html](https://help.adobe.com/ja_JP/scene7/using/WS6E593DEA-7D81-4cd6-84B0-85E8BB274176.html)
 1. CSS を編集してボタンのアートワーク、配置、透過性、背景色などのビジュアルデザインを変更することによって、Scene7 の標準提供 HTML5 ビューアのルックアンドフィールをカスタマイズする。[https://microsite.omniture.com/t2/help/ja_JP/s7/viewers_ref/index.html#Customizing_HTML5_Viewers](https://microsite.omniture.com/t2/help/ja_JP/s7/viewers_ref/index.html#Customizing_HTML5_Viewers)
-1. SDK を使用してカスタム HTML5 ビューアを最初から作成する。SDK は、[https://help.adobe.com/ja_JP/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/ja_JP/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) からダウンロードできます。プロフェッショナルサービスを利用してカスタムビューアを作成したり、社内の Web 開発チームにカスタムビューアを作成させることができます。
+1. SDK を使用してカスタム HTML5 ビューアを最初から作成する。SDK は、[https://help.adobe.com/ja_JP/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html](https://help.adobe.com/en_US/scene7/using/WSd4272150f67705c11b002eec12fcba4dee6-8000.html) からダウンロードできます。プロフェッショナルサービスを利用してカスタムビューアを作成したり、社内の Web 開発チームにカスタムビューアを作成させることができます。
 
 **HTML5 をサポートしていないブラウザーはどうなりますか？**
 
@@ -123,4 +123,4 @@ DHTML ベースのビューアを実稼動環境で引き続き利用してい�
 
 **詳細についての問い合わせ先を教えてください。**
 
-このFAQですべての質問に回答しなかった場合は、Admin Consoleを [使用してサポート事例を作成するか](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 、Adobeのアカウントマネージャーにお問い合わせください。
+このFAQが全ての質問に回答しなかった場合は、[Admin Consoleを使ってサポートケース](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)を作成するか、Adobeのアカウントマネージャーにお問い合わせください。
