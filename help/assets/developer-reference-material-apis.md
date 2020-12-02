@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Assets] の開発者向けリファレンス'
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
+description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
@@ -91,15 +91,15 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 | フィールド | 型 | 必須／未指定 | 説明 |
 |---|---|---|---|
 | `fileName` | String | 必須 | アセットの名前（開始データで提供されたもの）。 |
-| `mimeType` | String | 必須 | バイナリの HTTP コンテンツタイプ（開始データで提供されたもの）。 |
-| `uploadToken` | String | 必須 | バイナリのアップロードトークン（開始データで提供されたもの）。 |
+| `mimeType` | 文字列 | 必須 | バイナリの HTTP コンテンツタイプ（開始データで提供されたもの）。 |
+| `uploadToken` | 文字列 | 必須 | バイナリのアップロードトークン（開始データで提供されたもの）。 |
 | `createVersion` | Boolean | オプション | これが `True` で、指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はアセットの新しいバージョンを作成します。 |
-| `versionLabel` | String | オプション | 新しいバージョンが作成される場合、アセットの新しいバージョンに関連付けられるラベル。 |
-| `versionComment` | String | オプション | 新しいバージョンが作成される場合、そのバージョンに関連付けられたコメント。 |
-| `replace` | Boolean | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
+| `versionLabel` | 文字列 | オプション | 新しいバージョンが作成される場合、アセットの新しいバージョンに関連付けられるラベル。 |
+| `versionComment` | 文字列 | オプション | 新しいバージョンが作成される場合、そのバージョンに関連付けられたコメント。 |
+| `replace` | ブール値 | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
 
 >!![NOTE]
->アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
+アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
@@ -124,9 +124,8 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 * `AssetManager`Java API（`AssetManager.createAsset(..)` など）
 
 >[!MORELIKETHIS]
->
->* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
->* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
+* [オープンソース aem-upload ライブラリ](https://github.com/adobe/aem-upload)。
+* [オープンソースコマンドラインツール](https://github.com/adobe/aio-cli-plugin-aem)。
 
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
@@ -194,6 +193,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
->
->* [Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Experience Cloud as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 
