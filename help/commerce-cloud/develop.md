@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 6be2ed60f4e672b99a85b55f833b8ae2f1b952b0
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 96%
+source-wordcount: '1070'
+ht-degree: 89%
 
 ---
 
@@ -58,18 +58,18 @@ CIF アドオンは、[ソフトウェア配布ポータル](https://experience.
 AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の場合は、次の手順に従います。
 
 1. 最新の AEM as a Cloud Service SDK を取得します。
-2. AEM.jar を解凍し、`crx-quickstart` フォルダーを作成します。次を実行します。
+1. AEM.jar を解凍し、`crx-quickstart` フォルダーを作成します。次を実行します。
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-3. `crx-quickstart/install` フォルダーの作成
-4. CIF アドオンの正しい Sling 機能アーカイブファイルを `crx-quickstart/install` フォルダーにコピーします。
+1. `crx-quickstart/install` フォルダーの作成
+1. CIF アドオンの正しい Sling 機能アーカイブファイルを `crx-quickstart/install` フォルダーにコピーします。
 
    CIF アドオンの zip ファイルには、2 つの Sling 機能アーカイブ `.far` ファイルが含まれています。ローカル AEM as a Cloud Service SDK を実行する方法に応じて、AEM オーサーまたは AEM パブリッシュに対して正しいものを使用してください。
 
-5. Magento GraphQL エンドポイントを保持する `COMMERCE_ENDPOINT` という名前のローカル OS 環境変数を作成します。
+1. Magento GraphQL エンドポイントを保持する `COMMERCE_ENDPOINT` という名前のローカル OS 環境変数を作成します。
 
    Mac OS X の例：
 
@@ -85,9 +85,21 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
    この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。
 
-6. AEM as a Cloud Service SDK を開始します。
+   変数の詳細については、[AEM用のOSGiのCloud Serviceとしての設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
 
-7. ローカルの GraphQL プロキシサーバーを開始します。
+1. （オプション）ステージングされたカタログ機能を有効にするには、Magentoインスタンス用の統合トークンを作成する必要があります。 [はじめに](./getting-started.md#staging)の手順に従ってトークンを作成してください。
+
+   `COMMERCE_AUTH_HEADER`という名前のOSGiシークレットを次の値に設定します。
+
+   ```xml
+   Authorization: Bearer <Access Token>
+   ```
+
+   シークレットの詳細については、[AEM用のOSGiのCloud Serviceとしての設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+
+1. AEM as a Cloud Service SDK を開始します。
+
+1. ローカルの GraphQL プロキシサーバーを開始します。
 
    Magento GraphQL エンドポイントを CIF アドオンと CIF コンポーネントでローカルに使用できるように、次のコマンドを使用します。GraphQL エンドポイントは、`http://localhost:3002/graphql` で使用できるようになります。
 Mac OS X の例：
@@ -101,11 +113,12 @@ Mac OS X の例：
    ```bash
    npx local-cors-proxy --proxyUrl https://demo.magentosite.cloud --port 3002 --proxyPartial '""'
    ```
+
    引数 `--proxyPartial` は、空の文字列を受け取る必要があります。
 
    GraphQL クエリツールを `http://localhost:3002/graphql` に向けて数件のクエリをテストし、ローカルの GraphQL プロキシをテストできます。
 
-8. AEM SDK にログインし、ローカルの GraphQL プロキシサーバーを使用するように CIF を設定します。
+1. AEM SDK にログインし、ローカルの GraphQL プロキシサーバーを使用するように CIF を設定します。。
 
    CIF Cloud Service 設定に移動します（ツール／Cloud Services／CIF 設定）。プロジェクトで使用されている設定のプロパティ表示を開きます。
 
