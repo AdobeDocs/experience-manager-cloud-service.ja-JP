@@ -2,9 +2,9 @@
 title: GraphQLでのコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信用のGraphQLとのCloud Serviceとして使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -129,3 +129,7 @@ AEM GraphQL APIの実装は、[GraphQL Javaライブラリ](https://graphql.org/
 ## AEMでのGraphQLの使用方法 — サンプルコンテンツとクエリ{#learn-graphql-with-aem-sample-content-queries}
 
 AEM GraphQL APIの使い方の紹介は、[AEMでのGraphQLの使い方の学習 — サンプルコンテンツとクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)を参照してください。
+
+## チュートリアル — AEM HeadlessとGraphQLの使い始めに
+
+実践チュートリアルを探している場合 AEMのGraphQL APIを使用し、外部アプリで使用するコンテンツを、ヘッドレスCMSシナリオで構築して公開する方法を示す[AEM HeadlessとGraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)のエンドツーエンドのチュートリアルをご覧ください。
