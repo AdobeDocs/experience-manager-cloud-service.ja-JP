@@ -64,7 +64,7 @@ ht-degree: 87%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
+   + [ [!DNL Brand Portal] での [!DNL Assets] の設定](configure-aem-assets-with-brand-portal.md)
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
