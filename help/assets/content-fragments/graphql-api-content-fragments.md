@@ -2,9 +2,9 @@
 title: Cloud ServiceGraphQL APIとしてのAdobe Experience Managerとのコンテンツフラグメントを使用したコンテンツ配信
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、AEM GraphQL API for Headless Content配信とのCloud Serviceとして使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 1601d0ac5cd72ac53b810dd9891a6744adc1819e
+source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2491'
 ht-degree: 2%
 
 ---
@@ -625,3 +625,7 @@ AEMのGraphQLサーブレットにアクセスするには、エンドポイン�
 1. **Q**:「*GraphQL API for AEMとクエリビルダーAPIの違いは何ですか？*」
 
    * **A**:「AEM GraphQL API *オファーは、JSON出力の全体的な制御を行い、コンテンツのクエリを行う業界標準です。今後、AEMはAEM GraphQL APIへの投資を計画しています。*&quot;
+
+## チュートリアル — AEMヘッドレスとGraphQLの使い始めに{#tutorial}
+
+実践チュートリアルを探している場合 AEMのGraphQL APIを使用し、外部アプリで使用するコンテンツを、ヘッドレスCMSシナリオで構築して公開する方法を示す[AEM HeadlessとGraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)のエンドツーエンドのチュートリアルをご覧ください。
