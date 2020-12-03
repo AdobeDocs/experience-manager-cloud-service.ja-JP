@@ -3,10 +3,10 @@ title: 使用状況および共有に関するレポート
 description: デジタルアセットの使用状況、アクティビティ、共有を理解するのに役立つ、 [!DNL Adobe Experience Manager Assets]  でのアセットに関するレポートです。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8b1cc8af67c6d12d7e222e12ac4ff77e32ec7e0e
+source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '928'
+ht-degree: 96%
 
 ---
 
@@ -48,17 +48,19 @@ ht-degree: 100%
 
    ![レポートタイプの選択](assets/choose_report.png)
 
+<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
    >[!NOTE]
    >
-   >「**[!UICONTROL ダウンロードされたアセット]**」レポートを生成する前に、Asset Download サービスが有効になっていることを確認してください。Web コンソール（`https://[aem_server]:[port]/system/console/configMgr`）で、「**[!UICONTROL Day CQ DAM Event Recorder]**」設定を開き、「イベントタイプ」で「**[!UICONTROL ダウンロードされたアセット（ダウンロード済み）]**」オプションを選択します（まだ選択されていない場合）。
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
 
-   >[!NOTE]
-   >
-   >デフォルトで、アセットの[!UICONTROL ダウンロード]レポートにはコンテンツフラグメントとリンク共有が含まれています。適切なオプションを選択して、リンク共有のレポートを作成するか、ダウンロードレポートからコンテンツフラグメントを除外します。
+>[!NOTE]
+>
+>デフォルトで、アセットの[!UICONTROL ダウンロード]レポートにはコンテンツフラグメントとリンク共有が含まれています。適切なオプションを選択して、リンク共有のレポートを作成するか、ダウンロードレポートからコンテンツフラグメントを除外します。
 
-   >[!NOTE]
-   >
-   >[!UICONTROL ダウンロード]レポートには、個別に選択した後、またはクイックアクションを使用してダウンロードされたアセットの詳細のみが表示されます。ただし、ダウンロードされたフォルダー内のアセットの詳細は含まれません。
+>[!NOTE]
+>
+>[!UICONTROL ダウンロード]レポートには、個別に選択した後、またはクイックアクションを使用してダウンロードされたアセットの詳細のみが表示されます。ただし、ダウンロードされたフォルダー内のアセットの詳細は含まれません。
 
 1. タイトル、説明、サムネール、CRX リポジトリ内のフォルダーパス（レポートの保存場所）など、レポートの詳細を設定します。デフォルトでは、フォルダーパスは `/content/dam` です。別のパスを指定することもできます。
 
@@ -139,11 +141,18 @@ ht-degree: 100%
 
 1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
 
-## パージサービスの設定 {#configure-purging-service}
+<!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
-不要になったレポートを削除するには、数量や経過日数に基づいて既存のレポートをパージするように、Web コンソールで DAM レポートパージサービスを設定します。
+## Configure purging service {#configure-purging-service}
 
-1. `https://[aem_server]:[port]/system/console/configMgr` で Web コンソール（設定マネージャー）にアクセスします。
-1. 「**[!UICONTROL DAM Report Purge Service]**」設定を開きます。
-1. `scheduler.expression.name` フィールドでパージサービスの頻度（時間間隔）を指定します。レポートの経過日数および数量のしきい値を設定することもできます。
-1. 変更内容を保存します。
+To remove reports that you no longer require, configure the DAM Report Purge service from the web console to purge existing reports based on their quantity and age.
+
+1. Access the web console (configuration manager) from `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL DAM Report Purge Service]** configuration.
+1. Specify the frequency (time interval) for the purging service in the `scheduler.expression.name` field. You can also configure the age and the quantity threshold for reports.
+1. Save the changes.
+-->
+
+## トラブルシューティング情報、ヒント、制限事項{#best-practices-and-limitations}
+
+* ディスク使用量レポートが生成されず、[!DNL Dynamic Media]を使用している場合は、すべてのアセットが正しく処理されることを確認します。 解決するには、アセットを再処理し、レポートを再生成します。
