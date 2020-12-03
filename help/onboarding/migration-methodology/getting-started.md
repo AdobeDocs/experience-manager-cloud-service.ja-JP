@@ -2,10 +2,10 @@
 title: Cloud ServiceとしてのExperience Managerへの移行
 description: Cloud ServiceとしてのExperience Managerへの移行
 translation-type: tm+mt
-source-git-commit: 3c1ff52d58f64d351507d20e4368a6aeb1bf6339
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 13%
+source-wordcount: '2117'
+ht-degree: 12%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 13%
 # Cloud Service{#Overview}としてAdobe Experience Managerへの移行
 
 >[!CONTEXTUALHELP]
->id="aemcloud_migration-overview"
+>id="aemcloud_migration_overview"
 >title="クラウドサービスとしてのAEMへの移行"
 >abstract="様々なExperience Managerの導入からExperience Managerまで、トランジションのお客様に対してCloud Serviceとして推奨される段階的アプローチの概要を説明し、既存のお客様が接続された継続的な経験を提供できるようにします。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en" text="新機能と新機能"
@@ -101,6 +101,11 @@ Cloud Service環境としてAEMを設定およびデプロイする方法につ�
 <br>
 
 ## Cloud Service{#move-to-cloud}としてAdobe Experience Managerに移動
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_move_to_cloud"
+>title="Cloud ServiceとしてAdobe Experience Managerに移る"
+>abstract="この1ページでは、様々なExperience Managerの導入からExperience Managerまで、トランジションのお客様に推奨される各段階的なアプローチをCloud Serviceとしてまとめ、既存のお客様が、この目的に合った、目的に合った最新のプラットフォームで連続的な体験を提供できます。"
 
 **Cloud ServiceとしてのExperience Managerは、Experience Managerサイトやアセットの拡張性、安全性、機敏性の高いテクノロジー基盤を提供し、マーケティング担当者やIT部門は、規模の大きさで効果的なエクスペリエンスを提供することに集中できます。**
 
