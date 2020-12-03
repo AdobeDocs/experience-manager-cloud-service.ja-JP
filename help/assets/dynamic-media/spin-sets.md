@@ -2,10 +2,10 @@
 title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '1835'
-ht-degree: 96%
+source-wordcount: '1829'
+ht-degree: 94%
 
 ---
 
@@ -74,9 +74,9 @@ ht-degree: 96%
 
 必要に応じて、[スピンセットを編集](#editing-spin-sets)できます。また、[スピンセットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)の表示と変更もできます。
 
-## スピンセット用のアセットのアップロード {#uploading-assets-for-spin-sets}
+## スピンセット用のアセットのアップロード{#uploading-assets-for-spin-sets}
 
-アイテムの写真は最低でも、1 次元スピンセットで 8～12 個、2 次元スピンセットで 16～24 個必要になります。アイテムが回転および反転している印象を与えるためには、写真を一定の間隔で撮影する必要があります。例えば、1 次元スピンセットに 12 個の写真を含める場合、写真を撮影するごとに 30 度ずつ（360/12）アイテムを回転します。
+1次元スピンセットを使用するには、少なくとも8 ～ 12枚の写真が必要です。アイテムが回転したり反転したりしているように見せるには、一定の間隔でアイテムを撮影する必要があります。 例えば、1 次元スピンセットに 12 個の写真を含める場合、写真を撮影するごとに 30 度ずつ（360/12）アイテムを回転します。
 
 スピンセット用の画像のアップロードは、[AEM Assets での他のアセットのアップロード](/help/assets/manage-digital-assets.md)と同様に実行できます。
 
