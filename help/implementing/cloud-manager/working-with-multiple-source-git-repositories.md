@@ -2,9 +2,9 @@
 title: 複数のソースGitリポジトリの操作
 description: 複数のソースGitリポジトリの操作 —Cloud Services
 translation-type: tm+mt
-source-git-commit: 89429fcba3a1d4f5e5fe9c98ef235057b979ad60
+source-git-commit: e8cfe8eeec697fe74da02e178a89fc7a0e22d441
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Cloud ManagerのGitリポジトリを直接操作する代わりに、ユーザ�
 1. Cloud Manager GitリポジトリのルートMaven pomの新し追加いディレクトリへの参照です。
 
 
-## 付録A:GitHubアクションの例{#sample-github-action}
+## GitHubアクションの例{#sample-github-action}
 
 これは、メインブランチに対するプッシュの後、Cloud ManagerのGit RepositoryのサブディレクトリにプッシュすることによってトリガーされるGitHubアクションのサンプルです。 Cloud ManagerのGitリポジトリに接続してプッシュできるようにするには、GitHubアクションに`MAIN_USER`と`MAIN_PASSWORD`の2つのシークレットを提供する必要があります。
 
@@ -117,7 +117,7 @@ jobs:
 >[!NOTE]
 >上記のスクリプトでは、`git add`を使用してリポジトリを更新します。リポジトリは、削除が含まれると想定します。デフォルトのGitの設定に応じて、`git add --all`に置き換える必要があります。
 
-## 付録B:Jenkinsジョブの例{#sample-jenkins-job}
+## Jenkinsジョブの例{#sample-jenkins-job}
 
 これは、Jenkinsジョブなどで使用できるサンプルスクリプトです。 Gitリポジトリの変更によってトリガーされます。 Jenkinsジョブは、そのプロジェクトまたはブランチの最新の状態をチェックアウトし、このスクリプトを実行します。
 
