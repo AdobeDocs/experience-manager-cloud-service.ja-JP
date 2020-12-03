@@ -2,10 +2,10 @@
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
 translation-type: tm+mt
-source-git-commit: 7a1d12a8cff03af660b936bb7d8b045532357f0d
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 98%
+source-wordcount: '2070'
+ht-degree: 97%
 
 ---
 
@@ -81,9 +81,9 @@ ht-degree: 98%
 
 セットの作成で問題が発生した場合は、[Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)の「画像とセット」を参照してください。
 
-## 画像セット内のアセットのアップロード {#uploading-assets-in-image-sets}
+## 画像セット用のアセットのアップロード{#uploading-assets-in-image-sets}
 
-まずは画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最適なズーム詳細には、最大サイズで 2,000 ピクセル以上の画像を使用してください。Dynamic Media では、各画像を最大 25 メガピクセルまでレンダリングできます。例えば、5,000 x 5,000 メガピクセルの画像や、その他のサイズの組み合わせを 25 メガピクセルまで使用できます。
+開始を行います。 ユーザーは画像セットビューアで画像をズームできるので、画像を選択する際にはズームを考慮します。最適なズーム詳細には、最大サイズで 2,000 ピクセル以上の画像を使用してください。Dynamic Media では、各画像を最大 25 メガピクセルまでレンダリングできます。例えば、5,000 x 5,000 メガピクセルの画像や、その他のサイズの組み合わせを 25 メガピクセルまで使用できます。
 
 画像セットでは多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
 
