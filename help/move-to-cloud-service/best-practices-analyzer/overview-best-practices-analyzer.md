@@ -2,15 +2,20 @@
 title: ベストプラクティスアナライザの概要
 description: ベストプラクティスアナライザの概要
 translation-type: tm+mt
-source-git-commit: 07180809ff8b4a42a07eb9c691ab7a99262742ec
+source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 35%
+source-wordcount: '351'
+ht-degree: 29%
 
 ---
 
 
 # 概要 {#overview-best-practices-analyzer}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_bpa_overview"
+>title="ベストプラクティスアナライザの概要"
+>abstract="ベストプラクティスアナライザは、AEMのベストプラクティスに従っていない領域を示すことにより、現在のAEM導入の評価を提供します。 また、AEMのベストプラクティスを導入するための次の手順に関するガイダンスも提供します。 さらに、既存のAdobe Experience Manager(AEM)の導入からAEMへの移行の準備をCloud Serviceとして評価するプロセスを高速化できます。"
 
 ベストプラクティスアナライザは、AEMのベストプラクティスに従っていない領域を示すことにより、現在のAEM導入の評価を提供します。 また、AEMのベストプラクティスを導入するための次の手順に関するガイダンスも提供します。 さらに、既存のAdobe Experience Manager(AEM)の導入からAEMへの移行の準備をCloud Serviceとして評価するプロセスを高速化できます。
 
