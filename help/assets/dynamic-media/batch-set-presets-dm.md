@@ -3,9 +3,9 @@ title: バッチセットプリセット
 description: ダイナミックメディアのバッチセットプリセットを使用して、画像セットとスピンセットの作成を自動化する方法について説明します。
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: eba7216d6b70c15d7f8767358d1947e5dba1d802
+source-git-commit: b10ad95e0e8b87eaaf6a0a99ce82d6b317660b12
 workflow-type: tm+mt
-source-wordcount: '3466'
+source-wordcount: '3521'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 3%
 
 **ベストプラクティス**  — バッチセットプリセットを使用する場合、Adobeは次のワークフローを推奨します。
 
-1. バッチセットプリセットを作成します。
-1. 新しいアセットフォルダを作成するか、既存のアセットフォルダを使用して、[!DNL Dynamic Media]との同期を確認します。
-1. バッチセットプリセットをアセットフォルダに適用します。
-1. 画像をアセットフォルダーにアップロードします。
-1. 画像セットまたはスピンセットを作成します。
-1. 画像セットまたはスピンセットを公開します。
+1. バッチセットプリセットを作成します。 詳しくは、[画像セットまたはスピンセット用のバッチセットプリセットの作成](#creating-bsp)を参照してください。
+1. 新しいアセットフォルダを作成するか、既存のアセットフォルダを使用して、[!DNL Dynamic Media]との同期を確認します。 [フォルダーの作成](/help/assets/manage-digital-assets.md#creating-folders)を参照してください。
+1. バッチセットプリセットをアセットフォルダに適用します。 [フォルダー](#apply-bsp)へのバッチセットプリセットの適用についてを参照してください。
+1. 画像をアセットフォルダーにアップロードします。 詳しくは、[画像セット](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets)のアセットのアップロード、[スピンセット用のアセットのアップロード](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets)または[デジタルアセットをAdobe Experience Manager](#add-assets-to-experience-manager)追加にアップロードするを参照してください。
+1. 画像セットまたはスピンセットを作成します。 詳しくは、[画像セット](/help/assets/dynamic-media/image-sets.md)または[スピンセット](/help/assets/dynamic-media/spin-sets.md)を参照してください。
+1. 画像セットまたはスピンセットを公開します。 [Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
 ## 画像セットまたはスピンセット用のバッチセットプリセット{#creating-bsp}の作成
 
