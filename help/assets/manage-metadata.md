@@ -4,10 +4,10 @@ description: メタデータのタイプと、 [!DNL Adobe Experience Manager As
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -152,13 +152,16 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
 >
 >1 つのフォルダーに適用できる処理プロファイルは 1 つだけです。フォルダー内のアセットに複数の処理を適用するには、1 つの処理プロファイルに複数のオプションを追加します。例えば、1 つのプロファイルでレンディションの生成、アセットのトランスコード、カスタムメタデータの生成などをおこなうことができます。各タスクに MIME タイプのフィルターを適用して、必要なファイル形式に対して適切なタスクがトリガされるようにできます。
 
-## 一括メタデータ更新の上限を設定する {#configlimit}
+<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
-DOS などの状況を防ぐため、AEM では Sling 要求でサポートされるパラメーターの数を制限しています。一度に多くのアセットのメタデータを更新すると、上限に到達する可能性があり、それ以上のアセットでメタデータが更新されなくなります。AEM はログに次の警告を生成します。
+## Configure limit for bulk metadata update {#configlimit}
+
+To prevent DOS-like situation, [!DNL Experience Manager] limits the number of parameters supported in a Sling request. When updating metadata of many assets in one go, you may reach the limit and the metadata does not get updated for more assets. [!DNL Experience Manager] generates the following warning in the logs:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-制限を変更するには、Web コンソール（**[!UICONTROL ツール]**／**[!UICONTROL オペレーション]**／**[!UICONTROL Web コンソール]**）にアクセスし、**[!UICONTROL Apache Sling 要求のパラメーター処理]** OSGi 構成で&#x200B;**[!UICONTROL 最大 POST パラメーター]**&#x200B;の値を変更します。
+To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**) and change the value of **[!UICONTROL Maximum POST Parameters]** in **[!UICONTROL Apache Sling Request Parameter Handling]** OSGi configuration.
+-->
 
 ## メタデータスキーマ {#metadata-schemata}
 
