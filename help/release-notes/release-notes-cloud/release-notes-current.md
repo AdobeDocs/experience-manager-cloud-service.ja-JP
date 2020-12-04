@@ -2,9 +2,9 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 7e8c794752073da0b4815c97dc53282989cd3fb5
+source-git-commit: f37bcfda2b4e4c036ce5c7ddd2dd1aa131f2a6a5
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1269'
 ht-degree: 12%
 
 ---
@@ -25,9 +25,9 @@ Cloud Service2020.11.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 * **[階層管理](/help/sites-cloud/authoring/launches/managing-pages.md) &amp; [将来のタイムワープを起動](/help/sites-cloud/authoring/launches/preview.md)**:起動内にページを追加/削除する新しいUIと、Timewarpを使用してサイトを参照すると、起動からの将来の状態が表示されます。
 
-* **展開可能なライブコピーページを並べ替え**:[ [!UICONTROL 名前]]、[ [!UICONTROL 最終変更日]]、[ [!UICONTROL 最終ロールアウト日]の各] プロパティを使用して、ロールアウトに使用できるライブコピーページを並べ替える新しいオプションが追加されました。ページの[!UICONTROL 最後のロールアウト日]は、新しく導入されたプロパティです。
+* **[拡張コンテンツフラグメントモデルとエディタ](/help/assets/content-fragments/content-fragments-models.md)**:様々なデータタイプに対する入力検証の新しいオプション、新しいフォームのビジュアライゼーションでの定義済みリストデータタイプの改善、アセットUIにコンテンツフラグメントモデル名が表示され、検索可能になりました。
 
-<!--- * **[Extended Content Fragment Models & Editor](/help/assets/content-fragments/content-fragments-models.md)**: New options for input validation on various data types, improved Enumeration data type with new form visualizations, and the Content Fragment model name is displayed and searchable in Assets UI. --->
+* **展開可能なライブコピーページを並べ替え**:[ [!UICONTROL 名前]]、[ [!UICONTROL 最終変更日]]、[ [!UICONTROL 最終ロールアウト日]の各] プロパティを使用して、ロールアウトに使用できるライブコピーページを並べ替える新しいオプションが追加されました。ページの[!UICONTROL 最後のロールアウト日]は、新しく導入されたプロパティです。
 
 ## [!DNL Adobe Experience Manager Assets] cloud serviceとして  {#assets}
 
