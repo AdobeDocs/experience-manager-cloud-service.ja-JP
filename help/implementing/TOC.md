@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 737c7473e97279a524cbb5809634c2c2dcfc8826
+source-git-commit: fd3ab969d9fb433ca2db68a5919fd0a0e9181e14
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,6 +65,10 @@ ht-degree: 83%
          + [非表示条件の使用](developing/components/hide-conditions.md)
       + [AEM タグ付けフレームワーク](/help/implementing/developing/introduction/tagging-framework.md)
       + [AEMアプリケーションへのタグ付けの構築](/help/implementing/developing/introduction/tagging-applications.md)
+      + 検索 {#search}
+         + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
+         + [Query Builder の述語リファレンス](/help/implementing/developing/introduction/query-builder-predicates.md)
+         + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
    + ハイブリッドAEM開発{#hybrid}
       + [ハイブリッドおよびAEM付きSPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
