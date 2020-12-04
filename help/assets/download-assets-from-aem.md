@@ -3,9 +3,9 @@ title: アセットのダウンロード
 description: ' [!DNL Adobe Experience Manager Assets]  からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 96%
 
 ---
@@ -29,7 +29,7 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 * [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
-## AEM インターフェイスを使用したアセットのダウンロード {#download-in-aem}
+## [!DNL Experience Manager]インターフェイス{#download-in-aem}を使用したアセットのダウンロード
 
 非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。サイズの大きいファイルは非同期でダウンロードされ、ユーザーは、インボックスに届く Adobe Experience Manager 通知で完了を知らされます。詳しくは、[Adobe Experience Manager インボックスについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)を参照してください。
 
