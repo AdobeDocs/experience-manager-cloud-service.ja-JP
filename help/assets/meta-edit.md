@@ -1,12 +1,12 @@
 ---
 title: メタデータの編集と追加
-description: AEM Assets のアセットメタデータを編集する様々な方法について説明します。
+description: アセットのメタデータを編集する様々な方法（ [!DNL Experience Manager Assets] アセットのメタデータ）について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 100%
+source-wordcount: '422'
+ht-degree: 91%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 メタデータは、検索可能なアセットに関する追加情報です。画像をアップロードすると自動的に抽出されます。既存のメタデータを編集したり、新しいメタデータプロパティを既存のフィールドに追加（例えば、メタデータフィールドが空白の場合など）したりすることができます。
 
-どの企業でも、メタデータの語彙を制御して信頼性を確保する必要があります。そのため、AEM Assets では、新しいメタデータプロパティをアドホックに追加することはできません。作成者は、アセットの新しいメタデータフィールドを追加することはできませんが、開発者は追加できます。[アセットの新しいメタデータプロパティの作成](meta-edit.md#editing-metadata-schema)を参照してください。
+会社には、制御された信頼性の高いメタデータの語彙が必要なので、[!DNL Experience Manager Assets]では、新しいメタデータプロパティをアドホックに追加できません。 作成者は、アセットの新しいメタデータフィールドを追加することはできませんが、開発者は追加できます。[アセットの新しいメタデータプロパティの作成](meta-edit.md#editing-metadata-schema)を参照してください。
 
 ## アセットのメタデータの編集 {#editing-metadata-for-an-asset}
 
