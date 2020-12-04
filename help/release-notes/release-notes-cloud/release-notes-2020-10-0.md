@@ -2,13 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート.'
 translation-type: tm+mt
-source-git-commit: 841069f35539a49c6ee67699bf3a476cf1c9da41
+source-git-commit: fd271f24e5f8ddbe440dccf5c51c91a46c70dead
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 25%
+source-wordcount: '1044'
+ht-degree: 24%
 
 ---
-
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート {#release-notes}
@@ -32,8 +31,6 @@ Cloud Service2020.10.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 ## [!DNL Adobe Experience Manager Assets] cloud serviceとして  {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
-
 * **[!DNL Adobe Sensei]powered video smart tagging**:AIモデルを利用して、オブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAMユーザーは、タグの追加に費やす時間を短縮し、公開されたリッチ情報を利用して顧客に適切なエクスペリエンスを提供できます。詳しくは、[ビデオアセットのスマートタグ付け](/help/assets/smart-tags-video-assets.md)を参照してください。
 
 * **ブランドポータルの強化**:では、次の新機能およびその他の機能を利用でき [!DNL Brand Portal]ます。詳しくは、「[[!DNL Brand Portal] リリースノート](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)」を参照してください。
@@ -45,13 +42,7 @@ Cloud Service2020.10.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 * **[!DNL Adobe Asset Link]バージョン2.1**:、およびの [Adobeアセット](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) リンク拡張機能の新しいバージョン [!DNL Adobe Photoshop]を使用 [!DNL Adobe Illustrator] [!DNL Adobe InDesign] できます。2020年10月にリリースされたバージョン2021の最新の[!DNL Adobe Creative Cloud]アプリケーションとの互換性を追加します。
 
-* **[!DNL Assets]WebPファイルのサポート**: [!DNL Assets] をCloud ServiceがWebP画像形式に対応するようになりました。WebPは、Googleが作成する新しい画像形式です。 WebPファイル形式の画像は、JPGまたはPNGファイルと区別できず、ファイルサイズは非常に小さくなります。 アセットのファイルサイズが小さくなると、ページ読み込み時間が短縮され、コンテンツ作成者はWebエクスペリエンスをより高速に利用できます。
-
-<!--
-### Bugs Fixed {#bugs-fixed-assets}
-
-Content to come
--->
+* **[!DNL Assets]WebPファイルのサポート**: [!DNL Assets] をCloud ServiceがWebP画像形式に対応するようになりました。WebPは、Googleが作成する新しい画像形式です。 WebPファイル形式の画像は、JPGまたはPNGファイルと区別できず、ファイルサイズは非常に小さくなります。 アセットのファイルサイズが小さくなると、ページ読み込み時間が短縮され、コンテンツ作成者はWebエクスペリエンスをより高速に利用できます。 [処理プロファイルの作成](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)のWebPの使い方を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -80,7 +71,6 @@ AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月2�
 * 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
 
 * Cloud Managerビルドコンテナで、Java 8またはJava 11を使用したプロジェクトのコンパイルがサポートされるようになりました。 Java 11のサポートは、Mavenツールチェーンシステムによって提供されます。
-
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
@@ -122,4 +112,3 @@ AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月2�
 ### バグ修正 {#ctt-bug-fixes}
 
 * 移行セットに、ファイル名が部分的に類似したパスが含まれている場合、コンテンツ転送ツールはコンテンツファイルをスキップしていました。 この問題は修正されました。
-
