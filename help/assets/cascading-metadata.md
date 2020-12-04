@@ -3,10 +3,10 @@ title: カスケードメタデータ
 description: この記事では、アセットのカスケードメタデータを定義する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 991d4900862c92684ed92c1afc081f3e2d76c7ff
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 100%
+source-wordcount: '957'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 * 別のフィールドに指定された値に基づいて、特定のフィールドに表示されるオプションを変更します。
 * 別のフィールドに指定された値に基づいて、特定のフィールドにデフォルトのメタデータ値を設定します。
 
-## AEM でのカスケードメタデータの設定  {#configure-cascading-metadata-in-aem}
+## [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}にカスケードメタデータを設定
 
 選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。いくつかの例を示します。
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。
 
-1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
+1. [!DNL Experience Manager]ロゴをタップ/クリックし、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**/**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
 1. **[!UICONTROL スキーマフォーム]**&#x200B;ページでスキーマフォームを選択し、ツールバーの「**[!UICONTROL 編集]**」をタップまたはクリックしてスキーマを編集します。
 
    ![select_form](assets/select_form.png)
@@ -54,7 +54,7 @@ ht-degree: 100%
 
    * 値を手動で指定するには、「**[!UICONTROL 手動で追加]**」を選択し、「**[!UICONTROL 選択肢を追加]**」をタップまたはクリックした後、オプションのテキストと値を指定します。例えば、ビデオ、PDF、Word、画像などのアセットタイプを指定します。
 
-   * JSON ファイルから値を動的に取得するには、「**[!UICONTROL JSON パスで追加]**」を選択し、JSON ファイルのパスを指定します。AEM は、フォームがユーザーに提供されたときに、キーと値のペアをリアルタイムで取得します。
+   * JSON ファイルから値を動的に取得するには、「**[!UICONTROL JSON パスで追加]**」を選択し、JSON ファイルのパスを指定します。[!DNL Experience Manager] は、フォームがユーザーに提供されたときに、キーと値のペアをリアルタイムで取得します。
 
    両方のオプションは同時には使用できません。オプションを JSON ファイルから読み込んで手動で編集することはできません。
 
