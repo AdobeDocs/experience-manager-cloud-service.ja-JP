@@ -3,10 +3,10 @@ title: アセットマイクロサービスの設定と使用
 description: クラウドネイティブなアセットマイクロサービスを設定および使用して大規模なアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '2514'
-ht-degree: 96%
+source-wordcount: '2511'
+ht-degree: 94%
 
 ---
 
@@ -180,7 +180,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
 
-後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、AEM で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動で追加してトリガーする必要はありません。次に例を示します。
+後処理ワークフローは、設定されている場合、マイクロサービスの処理が終了した後、[!DNL Experience Manager]によって自動的に実行されます。 ワークフローランチャーを手動で追加してトリガーする必要はありません。次に例を示します。
 
 * アセットを処理するためのカスタムワークフロー手順。
 * 外部システムから提供されるアセット（製品やプロセスの情報など）にメタデータやプロパティを追加するための統合機能。
@@ -195,7 +195,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### 後処理ワークフローモデルの作成 {#create-post-processing-workflow-models}
 
-後処理ワークフローモデルは、通常の AEM ワークフローモデルです。リポジトリの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
+後処理ワークフローモデルは、通常の[!DNL Experience Manager]ワークフローモデルです。 リポジトリの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
 処理ステップは、ニーズに応じて追加する必要があります。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
 
@@ -213,7 +213,7 @@ Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workf
 >[!NOTE]
 >
 >Custom Workflow Runner の設定は、OSGi サービスの設定になります。OSGi 設定のデプロイ方法については、[Adobe Experience Manager へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
->OSGi Web コンソールは、AEM の On-Premise デプロイメントや Managed Services デプロイメントとは異なり、Cloud Service デプロイメントでは直接使用できません。
+>OSGi Webコンソールは、[!DNL Experience Manager]のオンプレミスおよび管理されたサービスデプロイメントとは異なり、クラウドサービスデプロイメントでは直接利用できません。
 
 後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
 
