@@ -17,7 +17,7 @@ ht-degree: 69%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザの使用"
 >abstract="ベストプラクティスアナライザー（旧称Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。 ベストプラクティスアナライザレポートは、アップグレードの準備状況に関する一般的な概要を理解するために使用します。"
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## ベストプラクティスアナライザを使用する際の重要な考慮事項{#imp-considerations}
 
