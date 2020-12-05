@@ -3,17 +3,17 @@ title: ' [!DNL Assets] のアーキテクチャ'
 description: Adobe Experience Manager Assets as a のアーキテクチャ [!DNL Cloud Service]
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 38%
+source-wordcount: '86'
+ht-degree: 41%
 
 ---
 
 
 # [!DNL Cloud Service]ソリューション{#assets-architecture}としてのアセットのアーキテクチャ
 
-[!DNL Cloud Service]としてのAEM AssetsはAdobe Experience Managerを基盤とし、最新の提供Experience Manager6.5と比較しています。[!DNL Cloud Service]の提供内容は、調整されたアーキテクチャと機能を備え、クラウドネイティブのサービスとして提供されています。 基盤となるアーキテクチャの変更により、Experience Manager6.5のすべての機能が[!DNL Cloud Service]の一部になるわけではありません。
+[!DNL Experience Manager Assets] は、最新の製品 [!DNL Cloud Service] 6.5に基づ [!DNL Adobe Experience Manager] い [!DNL Experience Manager] ており、との比較も行われています。この [!DNL Cloud Service] 製品は、クラウドネイティブのサービスとして機能するようにアーキテクチャと機能が調整されています。基盤となるアーキテクチャの変更により、Experience Manager6.5のすべての機能が[!DNL Cloud Service]の一部になるわけではありません。
 
 アセットマイクロサービスのアーキテクチャの概要については、[アセットマイクロサービスの概要](asset-microservices-overview.md#asset-microservices-architecture)を参照してください。
 
