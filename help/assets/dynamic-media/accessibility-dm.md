@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 40d84fc902f872eae276272b6a975c108b655943
+source-git-commit: d87710badeeb0518a2e51b8abc3974fa77914515
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## ダイナミックメディアでのキーボードのアクセシビリティのサポート
 
-ダイナミックメディアはAEM Assetsのプラグインなので、キーボードコントロールの動作のほとんどはAEM Assetsの動作とまったく同じです。 例えば、ダイナミックメディアの`Cancel`ボタンは、AEM Assetsと同じフォーカスハイライトを持ち、AEM Assetsと同じ`Spacebar`キーに反応します。 詳しくは、[アセットのキーボードショートカット](/help/assets/accessibility.md#keyboard-shortcuts)を参照してください。
+ダイナミックメディアはExperience Managerアセットのプラグインなので、キーボードコントロールの動作のほとんどは、Experience Managerアセットの動作とまったく同じです。 例えば、ダイナミックメディアの`Cancel`ボタンは、Experience Managerアセットと同じフォーカスハイライトを持ち、Experience Managerアセットと同じ`Spacebar`キーに反応します。 詳しくは、[アセットのキーボードショートカット](/help/assets/accessibility.md#keyboard-shortcuts)を参照してください。
 
 ダイナミックメディアの個々のユーザーインターフェイス要素でサポートされているキーストロークは、ほとんどの場合、明確で見つけやすいものです。 ダイナミックメディアのキーボードコントロールは、次の点について説明します。
 
