@@ -2,10 +2,10 @@
 title: 画像プリセットの管理
 description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。
 translation-type: tm+mt
-source-git-commit: c240f9aa465b019fa77cc471f865db1f4ab45532
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '3648'
-ht-degree: 100%
+source-wordcount: '3608'
+ht-degree: 97%
 
 ---
 
@@ -182,8 +182,10 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 >[!NOTE]
 >
 >* EPS ファイルのサムネールサイズは 「サムネール」の下の「**[!UICONTROL 引数]**」タブにある **[!UICONTROL EPS サムネール]**&#x200B;のステップで設定します。
->
->* ビデオのサムネールサイズは「**[!UICONTROL 引数]**」の下にある「**[!UICONTROL 処理]**」タブの **[!UICONTROL FFmpeg サムネール]**&#x200B;のステップで設定します。
+   >
+   >
+* ビデオのサムネールサイズは「**[!UICONTROL 引数]**」の下にある「**[!UICONTROL 処理]**」タブの **[!UICONTROL FFmpeg サムネール]**&#x200B;のステップで設定します。
+
 >
 
 
@@ -390,7 +392,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
   </tr>
   <tr>
    <td><strong>画像の修飾子</strong></td>
-   <td><p>UI で使用できる共通の画像設定のほか、Dynamic Media では「<strong>画像の修飾子</strong>」フィールドで画像の詳細を多数指定できます。これらのパラメーターは、<a href="https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Image Server プロトコルのコマンドリファレンス（英語）</a>で定義されています。</p> <p>重要：API にリストされている次の関数はサポートされていません。</p>
+   <td><p>UI で使用できる共通の画像設定のほか、Dynamic Media では「<strong>画像の修飾子</strong>」フィールドで画像の詳細を多数指定できます。これらのパラメーターは、<a href="https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview.html">Image Server プロトコルのコマンドリファレンス（英語）</a>で定義されています。</p> <p>重要：API にリストされている次の関数はサポートされていません。</p>
     <ul>
      <li>基本的なテンプレートコマンドおよびテキストレンダリングコマンド：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> および <code>textPs=</code></li>
      <li>ローカライゼーションコマンド：<code>locale=</code> および <code>req=xlate</code></li>
@@ -407,7 +409,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 ### 画像の修飾子による画像プリセットオプションの定義 {#defining-image-preset-options-with-image-modifiers}
 
-「基本」タブと「詳細」タブで使用できるオプションに加えて、画像の修飾子を定義して、画像プリセットの定義でより多くのオプションを指定することができます。画像のレンダリングには Scene7 画像レンダリング API が利用されており、詳しくは [HTTP プロトコルリファレンス](https://microsite.omniture.com/t2/help/ja_JP/s7/is_ir_api/is_api/http_ref/c_http_protocol_reference.html)で定義されています。
+「基本」タブと「詳細」タブで使用できるオプションに加えて、画像の修飾子を定義して、画像プリセットの定義でより多くのオプションを指定することができます。イメージレンダリングは、ダイナミックメディアイメージレンダリングAPIに依存しており、詳しくは『[HTTPプロトコルリファレンス](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)』を参照してください。
 
 画像の修飾子を使用して実行できることについて、以下に基本的な例を示します。
 
@@ -415,7 +417,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 >
 >一部の画像の修飾子は、[AEM で使用できません](#advanced-tab-options)。
 
-* [op_invert](https://microsite.omniture.com/t2/help/ja_JP/s7/is_ir_api/is_api/http_ref/r_op_invert.html) - それぞれの色成分を、画像の効果が反対になるように逆転させます。
+* [op_invert](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) - それぞれの色成分を、画像の効果が反対になるように逆転させます。
 
    ```xml
    &op_invert=1
@@ -423,7 +425,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
    ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://microsite.omniture.com/t2/help/ja_JP/s7/is_ir_api/is_api/http_ref/r_op_blur.html) - 画像にぼかしフィルターを適用します。
+* [op_blur](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - 画像にぼかしフィルターを適用します。
 
    ```xml
    &op_blur=7
@@ -439,7 +441,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
    ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://microsite.omniture.com/t2/help/ja_JP/s7/is_ir_api/is_api/http_ref/r_op_brightness.html) - 明るさを増減させます。
+* [op_brightness](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html) - 明るさを増減させます。
 
    ```xml
    &op_brightness=58
@@ -447,7 +449,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
    ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://microsite.omniture.com/t2/help/ja_JP/s7/is_ir_api/is_api/http_ref/r_opac.html) - 画像の不透明度を調節します。前景の不透明度を減らすことができます。
+* [opac](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - 画像の不透明度を調節します。前景の不透明度を減らすことができます。
 
    ```xml
    opac=29
