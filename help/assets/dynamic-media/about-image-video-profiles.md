@@ -2,10 +2,10 @@
 title: Dynamic Media のイメージプロファイルとビデオプロファイルについて
 description: イメージプロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。例えば、アップロードする Dynamic Media のビデオアセットに適用するビデオエンコーディングを指定できます。また、画像アセットを適切に切り抜くために Dynamic Media 画像アセットに適用するイメージプロファイルを指定できます。
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 4fc5ae2aba6a19f37127f795e563a3d079e06bbb
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 100%
+source-wordcount: '1301'
+ht-degree: 92%
 
 ---
 
@@ -47,7 +47,8 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 
 >[!NOTE]
 >
->Dynamic Media Classic から AEM へのアセットの一括移行を実行する場合は、Dynamic Media サーバー上で移行レプリケーションエージェントを有効にする必要があります。移行が完了したら、このエージェントを必ず無効にします。
+>Dynamic Media ClassicからExperience Managerへのアセットの一括移行を実行する場合は、Dynamic Media Serverで移行レプリケーションエージェントを有効にする必要があります。 移行が完了したら、このエージェントを必ず無効にします。
+
 >
 >再処理ワークフローが期待どおりに動作するように、Dynamic Media サーバー上で移行公開エージェントを無効にする必要があります。
 
@@ -58,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **フォルダー内の Dynamic Media アセットの再処理**：
-1. AEM のアセットページで、イメージプロファイルまたはビデオプロファイルが割り当てられている、**Scene7：アセットを再処理**&#x200B;ワークフローの適用対象となる Dynamic Media アセットフォルダーに移動します。
+1. Adobe Experience Managerのアセットページで、画像プロファイルまたはビデオプロファイルが割り当てられ、**Scene7を適用するダイナミックメディアアセットのに移動します。アセット**&#x200B;の再処理ワークフロー、
 
    既にイメージプロファイルまたはビデオプロファイルが割り当てられているフォルダーには、カード表示のフォルダー名のすぐ下にプロファイルの名前が表示されます。
 
@@ -81,11 +82,11 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. 「**[!UICONTROL 開始]**」をクリックした後、「**[!UICONTROL 確認]**」をクリックします。
 
-   ワークフローを監視したり、進行状況を確認したりするには、AEM のメインコンソールページで&#x200B;**[!UICONTROL ツール／ワークフロー]**&#x200B;をクリックします。ワークフローインスタンスページで、ワークフローを選択します。メニューバーの「**[!UICONTROL 履歴を開く]**」をクリックします。同じワークフローインスタンスページで、選択したワークフローの終了、休止、名前変更をおこなうこともできます。
+   ワークフローを監視したり、その進行状況を確認するには、Experience Managerのメインコンソールページで、**[!UICONTROL ツール/ワークフロー]**&#x200B;をクリックします。 ワークフローインスタンスページで、ワークフローを選択します。メニューバーの「**[!UICONTROL 履歴を開く]**」をクリックします。同じワークフローインスタンスページで、選択したワークフローの終了、休止、名前変更をおこなうこともできます。
 
 ### 再処理ワークフローのバッチサイズの調整 {#adjusting-load}
 
-（オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、再処理の実行対象となるアセットの平均アセットサイズと MIME タイプによって決まります。値を大きくすると、1 回の再処理ジョブのファイル数が多くなります。したがって、処理バナーが AEM Assets 上に長時間表示されたままになります。ただし、平均ファイルサイズが小さい（1 MB 以下の）場合は、値を数百個（1000 以下）に増やすことをお勧めします。平均ファイルサイズが大きい（数百 MB の）場合は、バッチサイズを最大 10 までに減らすことをお勧めします。
+（オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、再処理の実行対象となるアセットの平均アセットサイズと MIME タイプによって決まります。値を大きくすると、1 回の再処理ジョブのファイル数が多くなります。したがって、処理バナーはExperience Managerアセット上に長い時間残ります。 ただし、平均ファイルサイズが小さい（1 MB 以下の）場合は、値を数百個（1000 以下）に増やすことをお勧めします。平均ファイルサイズが大きい（数百 MB の）場合は、バッチサイズを最大 10 までに減らすことをお勧めします。
 
 **再処理ワークフローのバッチサイズを調整するには（オプション）**：
 
@@ -137,7 +138,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
