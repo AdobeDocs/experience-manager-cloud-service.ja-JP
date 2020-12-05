@@ -2,10 +2,10 @@
 title: 非推奨（廃止予定）の機能と削除された機能
 description: リリースノート（Adobe Experience Manager as a Cloud Service の非推奨（廃止予定）の機能と削除された機能）
 translation-type: tm+mt
-source-git-commit: 0a9a462f1b92a0dcb712163574bbf57582f8145c
+source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 | 領域 | 機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
 | UI | （リンクチェッカー、バージョンパージ、一部の Cloud Services 設定など）いくつかの選択機能については、一部のクラシック UI ダイアログが当面そのまま残りますが、一般的なクラシック UI へのアクセスは AEM 製品 UI から削除されました。 | 標準 UI |
-| Dynamic Media | [Dynamic Media Classic（Scene7）](https://helpx.adobe.com/jp/experience-manager/6-5/sites/administering/using/scene7.html)および [Dynamic Media Hybrid モード](https://helpx.adobe.com/jp/experience-manager/6-5/assets/using/config-dynamic.html)とのこれまでの統合は、AEM as a Cloud Service では使用できません。 | Adobe Experience Manager as a Cloud Service で提供される [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 |
+| Dynamic Media | 以前の[Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration)および[Dynamic Media Hybrid mode](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)との統合は、AEMではCloud Serviceとして使用できません。 | Adobe Experience Manager as a Cloud Service で提供される [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 |
 | Sites | Portal Director とポートレットコンポーネント | これらの機能は AEM 6.4 で非推奨（廃止予定）となり、現在は AEM から削除されています。 |
 | サイト | デザインインポーター | 実行時に AEM リポジトリの不変セクションにアクセスできないので、この機能は削除されました。 |
 | アセット | [Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの AEM Assets の共有](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/configure-assets-cc-integration.html)は使用できません。 | Creative Cloud との統合には、[Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用します。 |
