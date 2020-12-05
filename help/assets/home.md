@@ -2,9 +2,9 @@
 title: ' [!DNL Cloud Service] ガイドとしてのアセット'
 description: ' [!DNL Cloud Service] セルフヘルプリソースとドキュメントのリンクとしてのAdobe Experience Manager資産'
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 31%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 31%
 | [実装ユーザガイド](/help/implementing/home.md) | Experience Managerを[!DNL Cloud Service]としてカスタマイズ、開発、デプロイします。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | コネクタを[!DNL Cloud Service]としてExperience Managerに統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Experience Managerのバックエンド操作を[!DNL Cloud Service]として説明します。 |
-| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEMでのCommerce Integration Frameworkに関する情報を[!DNL Cloud Service]として参照します。 |
+| [コマースユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager]上のCommerce Integration Frameworkを[!DNL Cloud Service]として学習します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
@@ -48,4 +48,4 @@ ht-degree: 31%
 * [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
 * [チュートリアル [!DNL Cloud Service] としてのAdobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
-* [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+* [[!DNL Experience Manager] コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
