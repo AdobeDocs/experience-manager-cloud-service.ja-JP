@@ -3,10 +3,10 @@ title: ' [!DNL Assets] のデジタル著作権管理 '
 description: ' [!DNL Experience Manager] 内のライセンス済みアセットのアセット有効期限の状態と情報を [!DNL Cloud Service]として管理する方法を説明します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 98%
+source-wordcount: '1343'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 1. [!DNL Assets] コンソールで、ツールバーの「**[!UICONTROL 検索]**」をクリックしてオムニサーチボックスを表示します。
 
-1. オムニサーチボックスのカーソルで、Enter キーを押して検索結果ページを表示します。
+1. 「Omnisearch」ボックスにカーソルを置き、`Enter`キーを選択して検索結果ページを表示します。
 
 1. グローバルナビゲーションアイコンをクリックして、検索パネルを表示します。
 
@@ -95,7 +95,7 @@ ht-degree: 98%
 
 1. アセットをステータスに基づいて検索するには、「**[!UICONTROL 検索]**」をクリックしてオムニサーチバーを表示します。
 
-1. Return キーを押し、「[!DNL Experience Manager]」をクリックして検索パネルを表示します。
+1. 「`Return`」を選択し、「[!DNL Experience Manager]」をクリックして検索パネルを表示します。
 1. 検索パネルで、「**[!UICONTROL 公開ステータス]**」をクリックして「**[!UICONTROL 公開済み]**」を選択し、[!DNL Assets] で公開済みのアセットを検索します。
 
 1. 「**[!UICONTROL 承認ステータス]**」をクリックし、適切なアイコンをクリックして承認済みまたは却下されたアセットを検索します。
