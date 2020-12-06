@@ -4,9 +4,9 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
-source-wordcount: '4408'
+source-wordcount: '4407'
 ht-degree: 95%
 
 ---
@@ -95,7 +95,7 @@ DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセッ�
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、Enter キーを押します。新しいタグは[!DNL Experience Manager]に保存されます。
+1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、`Enter`キーを選択します。 新しいタグは[!DNL Experience Manager]に保存されます。
 
    YouTube で公開して YouTube へのリンクを張る（適切なリンクがある場合）には、タグが必要です。
 
