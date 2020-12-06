@@ -2,10 +2,10 @@
 title: 検索ファセット。
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: c80c0063ce0f7c6bc8d99d5078ec8d5f50839732
+source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
 workflow-type: tm+mt
 source-wordcount: '2377'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -33,9 +33,9 @@ Adobe Experience Manager (AEM) Assets の企業全体のデプロイメントに
 
 1. 検索フォームを編集ページで、「**[!UICONTROL 述語を選択]**」タブからメインウィンドウに述語をドラッグします。例えば、「**[!UICONTROL プロパティの述語]**」をドラッグします。
 
-   ![述語を押して移動し、検索フィルターをカスタマイズ](assets/drag_predicate.png)
+   ![検索フィルターをカスタマイズする述語を選択し、移動します](assets/drag_predicate.png)
 
-   *図：述語を押して移動し、検索フィルターをカスタマイズ。*
+   *図：述語を選択して移動し、検索フィルターをカスタマイズします。*
 
 1. 「設定」タブで、その述語のフィールドラベル、プレースホルダーテキストおよび説明を入力します。述語に関連付けるメタデータプロパティの有効な名前を指定します。「設定」タブのヘッダーラベルは、選択した述語のタイプを示します。
 
