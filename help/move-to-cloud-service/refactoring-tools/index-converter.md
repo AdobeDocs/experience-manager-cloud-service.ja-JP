@@ -2,10 +2,10 @@
 title: インデックスコンバータ
 description: インデックスコンバータ
 translation-type: tm+mt
-source-git-commit: 21bd9392d913369a5e8e0ebd9badbbe30fd4bba3
+source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 5%
+source-wordcount: '170'
+ht-degree: 6%
 
 ---
 
@@ -19,9 +19,20 @@ Index Converterは、Cloud ServiceとしてのAEMへの移行に備えて、顧�
 Index Converterを使用すると、AEM開発者は、Cloud Service互換のカスタムOakインデックス定義として、既存のカスタムOakインデックス定義をAEMに移行できます。
 
 >[!NOTE]
->インデックスコンバータは、`/apps`または`/oak:index`の下に存在する&#x200B;*lucene*&#x200B;型カスタムOakインデックス定義のみを変換します。 `nt:base`用に作成された&#x200B;*lucene*&#x200B;型のインデックスは変換しません。
+>インデックスコンバータは、`/apps`または`/oak:index`に存在する&#x200B;*lucene*&#x200B;型カスタムOakインデックス定義のみを変換します。 `nt:base`用に作成された&#x200B;*lucene*&#x200B;型のインデックスは変換しません。
+
+カスタムOakインデックス定義を作成する方法は2つあります。
+
+* `under /apps` （任意のカスタムコンテンツパッケージを使用）
+* &lt;a0/のパスの直下`/oak:index`
+
+>[!NOTE]
+>Oak定義の定義および作成方法については、[Ensure Oak Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html)を参照してください。
 
 ## インデックスコンバータの使用{#using-index-converter}
 
-**[Gitリソースを参照：aem-cs-source-migration-index-converter](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)**&#x200B;を参照してください。
+>[!NOTE]
+>[AIO CLIプラグインを使用して](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)Index Converterツールを使用することをお勧めしますが、このツールはスタンドアロンで実行することもできます。
+
+**[Gitリソースを参照：aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)**&#x200B;を参照してください。
 
