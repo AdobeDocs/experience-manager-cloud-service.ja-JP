@@ -2,9 +2,9 @@
 title: インデックスコンバータ
 description: インデックスコンバータ
 translation-type: tm+mt
-source-git-commit: adfc453729b88a9cc457783806eb7b4d69150b21
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '169'
 ht-degree: 6%
 
 ---
@@ -34,5 +34,5 @@ Index Converterを使用すると、AEM開発者は、Cloud Service互換のカ�
 >[!NOTE]
 >[AIO CLIプラグインを使用して](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)Index Converterツールを使用することをお勧めしますが、このツールはスタンドアロンで実行することもできます。
 
-**[Gitリソースを参照：aem-cs-source-migration-index-converter](https://git.corp.adobe.com/vavarshn/aem-cloud-service-source-migration/blob/master/packages/index-converter/README.md)**&#x200B;を参照してください。
+**[Gitリソースを参照：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**&#x200B;を参照してください。
 
