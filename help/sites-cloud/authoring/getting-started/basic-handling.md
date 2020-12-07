@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 translation-type: tm+mt
-source-git-commit: 996a1b49889816d3b887d8d568ec56b72bd99074
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 * [検索](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![検索ボタン](/help/sites-cloud/authoring/assets/search-button.png)
+   ![検索アイコン](/help/sites-cloud/authoring/assets/search-icon.png)
 
    [ショートカットキー](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/`（スラッシュ）を使用して、任意のコンソールから検索を呼び出すこともできます。
 
