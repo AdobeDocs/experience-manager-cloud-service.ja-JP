@@ -2,7 +2,7 @@
 title: SSL証明書の削除 — SSL証明書の管理
 description: SSL証明書の削除 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -22,6 +22,6 @@ SSL証明書を削除するには、次の手順に従います。
 
 1. 環境ページからSSL証明書画面に移動します。
 1. 削除するSSL証明書名が一覧表示されている行を識別します。
-1. **を選択…行の右端の**&#x200B;メニュー
-1. **削除**&#x200B;を選択
-1. 送信の確認
+1. **を選択…**&#x200B;メニューを表示します。
+1. 「**削除**」を選択します。
+1. 送信を確認します。
