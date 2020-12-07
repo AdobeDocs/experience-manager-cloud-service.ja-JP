@@ -2,9 +2,9 @@
 title: 概要 — SSL証明書の管理
 description: 概要 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: 74cc587874c4d0a0ef9b542549801198d4f2d7a5
+source-git-commit: fecbd0b4d5cfd8aa970c235c79158bea44403c09
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Cloud Managerでは、セルフサービス機能を使用して、Cloud Manager
 
 Cloud Managerでは、次のお客様向けSSL証明書の要件をサポートしています。
 
-* SSL証明書は、複数の環境が1回だけ使用し、追加複数回使用する場合があります。
+* SSL証明書は複数の環境が使用できます。つまり、1回追加して複数回使用します。
 * 各Cloud Manager環境は、複数の証明書を使用できます。
 * 秘密鍵は、複数のSSL証明書を発行する場合があります。
 * 通常、各証明書には複数のドメインが含まれます。
@@ -30,6 +30,8 @@ Cloud Managerでは、次のお客様向けSSL証明書の要件をサポート�
 
 権限を持つユーザーは、Cloud Manager UI SSL証明書ページを使用して、次のようなタスクを実行してプログラムのSSL証明書を管理できます。
 
-* SSL証明書の追加を参照してください。
-* SSL証明書の表示、更新または置き換え。 これらの操作により、表示の詳細や、期限切れになる証明書の置き換えが可能になります。
+* SSL証明書の追加
+* SSL証明書の表示、更新または置き換え
+   >[!NOTE]
+   >これらの操作により、表示の詳細や、期限切れになる証明書の置き換えが可能になります。
 * SSL証明書の削除
