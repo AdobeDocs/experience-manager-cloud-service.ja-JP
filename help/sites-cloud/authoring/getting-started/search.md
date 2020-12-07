@@ -2,10 +2,10 @@
 title: 検索
 description: 包括的な検索を使用して、よりすばやくコンテンツを見つけます
 translation-type: tm+mt
-source-git-commit: f04dd39a5a22f44f976f2e473689780099f10f9a
+source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,7 @@ AEM のオーサー環境は、リソースタイプに応じて、コンテン�
 
 検索は上部のツールバーから使用できます。
 
-![検索ボタン](/help/sites-cloud/authoring/assets/search-button.png)
+![検索アイコン](/help/sites-cloud/authoring/assets/search-icon.png)
 
 検索レールでは、次の操作を実行できます。
 
