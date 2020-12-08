@@ -2,10 +2,10 @@
 title: ローンチの昇格
 description: 'コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。 '
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 96%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 100%
 >
 >* 構造に複数のローンチがあるときは、[ネストされたローンチの昇格](#promoting-a-nested-launch)。
 >* 自動昇格および公開について詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)。
+
 >
 
 
@@ -46,11 +47,14 @@ ht-degree: 100%
 ローンチは、**サイト**&#x200B;コンソールまたは&#x200B;**ローンチ**&#x200B;コンソールを使用して昇格させることができます。
 
 1. 次のファイルを開きます。
-   * **サイト**&#x200B;コンソールの場合：
+   * **サイト**&#x200B;コンソール（ソースページの移動時）:
       1. [参照レール](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)を開き、[選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md)を使用して必要なソースページを選択します（または参照レールを選択して開きます。順序はどちらでもかまいません）。すべての参照が表示されます。
       1. **ローンチ**（例：ローンチ（1））を選択して特定のローンチのリストを表示します。
       1. 特定のローンチを選択して使用可能なアクションを選択します。
       1. 「**ローンチを昇格**」を選択してウィザードを開きます。
+   * 起動ページを移動する際の&#x200B;**サイト**&#x200B;コンソール：
+      1. [選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md)を使用して、必要な起動ページを選択します。
+      1. **Promote**&#x200B;アクションは、ツールバーで使用できます。
    * **ローンチ**&#x200B;コンソールの場合：
       1. 対象のローンチを選択（サムネールをタップまたはクリック）します。
       1. 「**昇格**」を選択します。
