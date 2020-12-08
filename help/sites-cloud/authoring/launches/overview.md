@@ -2,10 +2,10 @@
 title: ローンチ
 description: ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
 translation-type: tm+mt
-source-git-commit: 395e936c34d7d7fdece8f57c773d07a244f880e4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 98%
+source-wordcount: '878'
+ht-degree: 90%
 
 ---
 
@@ -84,22 +84,31 @@ ht-degree: 98%
 >
 >問題が発生している場合は、システム管理者にお問い合わせください。
 
-### ローンチコンソール {#the-launches-console}
-
-ローンチコンソールを使用すると、ローンチの概要を確認し、リストされたローンチに対してアクションを実行できます。コンソールは次の方法でアクセスできます。
-
-* **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
-
-* または、`https://<host>:<port>/libs/launches/content/launches.html` に直接アクセスします。
-
 ## 「参照」のローンチ（サイトコンソール）{#launches-in-references-sites-console}
 
 1. **サイト**&#x200B;コンソールで、ローンチのソースに移動します。
 1. **参照**&#x200B;レールを開き、ソースページを選択します。
-1. 「**ローンチ**」を選択すると、既存のローンチのリストが表示されます。
+1. 「**起動回数**」を選択すると、既存の起動と&#x200B;**起動コンソール**&#x200B;へのアクセスが一覧表示されます。
 
    ![サイトコンソールでのローンチの参照](/help/sites-cloud/authoring/assets/launches-references.png)
 
 1. 適切なローンチをタップまたはクリックすると、使用可能なアクションのリストが表示されます。
 
    ![サイトコンソールでローンチに対して実行可能なアクション](/help/sites-cloud/authoring/assets/launches-references-actions.png)
+
+## ローンチコンソール {#the-launches-console}
+
+ローンチコンソールを使用すると、ローンチの概要を確認し、リストされたローンチに対してアクションを実行できます。コンソールは次の方法でアクセスできます。
+
+* **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
+
+* **サイトコンソールでソースコンテンツを** 移動する際に、 **** 参照レールの「起動」セクションの下部にある「 **** コンソール」を起動します。
+
+   ![サイトコンソールの起動のリファレンスにあるコンソールを起動](/help/sites-cloud/authoring/assets/launches-references.png)
+
+* 右上の&#x200B;**起動**&#x200B;ボタン（サイトコンソールで起動コンテンツを移動する場合）
+
+   ![サイトコンソールの起動オプション](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+
+* あるいは直接例えば、次のように指定します。
+   `https://<host>:<port>/libs/launches/content/launches.html`
