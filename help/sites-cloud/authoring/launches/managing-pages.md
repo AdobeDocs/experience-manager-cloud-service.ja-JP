@@ -2,9 +2,9 @@
 title: 起動でのページの管理
 description: '起動内に新しいページを作成できます。 また、不要なページを削除することもできます。 '
 translation-type: tm+mt
-source-git-commit: 1a753aa9132a6de73e093caa1f682a78f29348c4
+source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '290'
 ht-degree: 2%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 2%
 * 既存のページを選択し、アクションを実行します。例えば、**編集**&#x200B;し、**プロパティ**、**ロック**、**コピー**、**貼り付け**、**削除**を開きます。
 
    ![[コンテンツの管理]からサイトコンソールの起動に移動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* **参照**&#x200B;レールを使用して、**ソース**を起動ページに戻ります。
+   ![サイトコンソール — 起動ソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## 起動追加するページ{#add-pages-to-launch}
 
