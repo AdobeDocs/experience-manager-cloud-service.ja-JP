@@ -2,10 +2,10 @@
 title: ローンチの作成
 description: 今後のアクティベートのために既存の Web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 97%
 
 ---
 
@@ -120,13 +120,15 @@ ht-degree: 100%
 **ローンチ**&#x200B;コンソールからネストされたローンチを作ることは、基本的に他の形式のローンチを作成することと同じです。ただし、次のようにローンチブランチ `/content/launches` に移動する必要があります。
 
 1. **ローンチ**&#x200B;コンソールで「**作成**」を選択します。
-1. 「**ページの追加**」を選択してから、フィルターで `/content/launches` を指定してローンチブランチに移動します。必要なローンチを選択し「**選択**」で確認します。
+1. 「**追加ページ**」を選択し、起動の分岐に移動して&#x200B;**フィルター**&#x200B;レールで`/content/launches`を指定します。 必要なローンチを選択し「**選択**」で確認します。
 
    ![ネストされたローンチの作成](/help/sites-cloud/authoring/assets/launches-create-nested.png)
 
-1. 「**次へ**」で続行し、他のローンチと同様に「**プロパティ**」に入力します。
+1. 「**次へ**」をクリックして次に進みます。
 
-   ![ネストされたローンチのソースの選択](/help/sites-cloud/authoring/assets/launches-create-nested-select.png)
+1. 他の起動と同様に、**プロパティ**&#x200B;を完了します。
+
+1. **作成**&#x200B;で完了します。
 
 #### ネストされたローンチの作成 - サイトコンソール {#creating-a-nested-launch-sites-console}
 
