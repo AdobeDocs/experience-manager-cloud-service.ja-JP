@@ -1,16 +1,14 @@
 ---
 title: Dynamic Media での 3D アセットの操作
-seo-title: Dynamic Media での 3D アセットの操作
-description: Dynamic Media で 3D アセットを使用する方法について説明します。
-seo-description: Dynamic Media で 3D アセットを使用する方法について説明します。
+description: Dynamic Media で 3D アセットを使用する方法について説明します。。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 72bf52ca97b9c3cac84361207e53093fc69c0b43
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2270'
 ht-degree: 90%
 
 ---
@@ -47,7 +45,7 @@ Dynamic Media は、次の 3D ファイル形式をサポートしています�
 
 次のワークフローの手順説明は、Dynamic Media 内の 3D アセットをすぐに使い始めることを目的としたものです。
 
-ダイナミックメディアで3Dアセットを操作する前に、Experience Manager管理者がダイナミックメディアCloud Servicesを有効にし、設定済みであることを確認してください。
+Dynamic Mediaで3Dアセットを操作する前に、Experience Manager管理者がDynamic MediaCloud Servicesを有効にして設定していることを確認してください。
 
 詳しくは、[Dynamic Media Cloud Services の設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を参照してください。
 
@@ -170,7 +168,7 @@ Web ページが&#x200B;**[!UICONTROL 編集]**&#x200B;モードの場合、3D �
 
 ## 3D メディアコンポーネントの操作について {#working-with-three-d-media-component}
 
-ダイナミックメディアには、Webページ上で3Dモデルをインタラクティブに表示できるように、Experience Managerサイトで使用できるダイナミックメディア3Dメディアコンポーネントが含まれています。
+Dynamic MediaにはDynamic Media3Dメディアコンポーネントが含まれており、このコンポーネントをExperience Managerサイトで使用して、Webページ上で3Dモデルをインタラクティブに表示できます。
 
 * [ページテンプレートへの 3D メディアコンポーネントの追加](#adding-three-d-media-component-to-page-template)
 * [Web ページへの 3D メディアコンポーネントの追加](#adding-the-three-d-media-component-to-a-web-page)
@@ -200,7 +198,7 @@ Web コンテンツ管理システムとして Adobe Experience Manager を使�
 
 [ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
 
-1. Experience Managerサイトを開き、ダイナミックメディア3Dメディアコンポーネントを追加するWebページを選択します。
+1. Experience Managerサイトを開き、Dynamic Media3Dメディアコンポーネントを追加するWebページを選択します。
 1. **[!UICONTROL 編集]**（鉛筆）アイコンをタップして、ページをページエディターで開きます。ページの右上付近の&#x200B;**[!UICONTROL 編集]**&#x200B;モードが選択されていることを確認します。
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
@@ -255,7 +253,7 @@ Dynamic Media は、Dynamic Media で&#x200B;*静的コンテンツ*&#x200B;と�
 
 **[!UICONTROL カード表示]**&#x200B;で、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さな地球アイコンが表示されます。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
-WCMとしてExperience Managerを使用している場合は、この公開方法を使用して、ダイナミックメディア3DアセットをWebページに直接追加します。
+WCMとしてExperience Managerを使用している場合は、この公開方法を使用して、Dynamic Media3DアセットをWebページに直接追加します。
 
 [Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)も参照してください。
 
@@ -284,7 +282,7 @@ WCMとしてExperience Managerを使用している場合は、この公開方�
 
 ### ディメンショナルビューアを使用した、Dynamic Media 3D アセットの代替の公開方法 {#alternate-publish-methods}
 
-Experience ManagerをWCMとして使用して&#x200B;*いない*&#x200B;場合は、次の2つの方法でDynamic Media 3Dアセットを公開します。
+Experience ManagerをWCMとして使用&#x200B;*しない*&#x200B;場合は、次の2つの方法でDynamic Media3Dアセットをパブリッシュします。
 
 * **[!UICONTROL URL]** - サードパーティの Web コンテンツ管理システムを使用していて、ディメンショナルビューアを使用して Dynamic Media 3D アセットを Web ページにリンクする場合は、**[!UICONTROL URL]** を使用します。
 
