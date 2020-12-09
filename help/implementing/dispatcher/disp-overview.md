@@ -2,9 +2,9 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: cf5216f3d4d0a9acc7fabc31896770464303f793
+source-git-commit: ee53d400627fe2fd97d5cbdea8ddd38e00af191f
 workflow-type: tm+mt
-source-wordcount: '4082'
+source-wordcount: '4050'
 ht-degree: 88%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 88%
 >[!NOTE]
 >
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
-
+<!--
 >[!WARNING]
 >
->Windows ユーザー：現在のバージョンの AEM as a Cloud Service のローカル Dispatcher ツール（v2.0.20）は、Windows との互換性がありません。Windows との互換性のアップデートを受け取るには、[アドビサポート](https://daycare.day.com/home.html)にお問い合わせください。
+>Windows users: the current version of AEM as a Cloud Service local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility. Alexandru note: removed at the request of Brian C -->
 
 ## Dispatcher ツール {#dispatcher-sdk}
 
