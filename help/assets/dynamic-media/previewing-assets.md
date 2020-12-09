@@ -1,8 +1,8 @@
 ---
 title: アセットのプレビュー
-description: Dynamic Media のアセットをプレビューする方法について説明します。
+description: Dynamic Media のアセットをプレビューする方法について説明します。。
 translation-type: tm+mt
-source-git-commit: df0374c58150780c373780051aeb7dda0c111e45
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 100%
