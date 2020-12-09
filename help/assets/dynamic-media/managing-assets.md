@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media アセットの管理について
-description: Dynamic Media アセットの操作方法について説明します。
+description: Dynamic Media アセットの操作方法について説明します。。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
