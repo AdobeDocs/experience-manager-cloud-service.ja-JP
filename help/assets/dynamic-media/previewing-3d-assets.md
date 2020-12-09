@@ -1,11 +1,11 @@
 ---
 title: 3D アセットのプレビュー
-description: 3D アセットのプレビュー方法について説明します。
+description: 3D アセットのプレビュー方法について説明します。 dynamic mediaで
 translation-type: tm+mt
-source-git-commit: d84a6692f2d0aae496bd2bd98ac99c2663f3fe52
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 100%
+source-wordcount: '569'
+ht-degree: 99%
 
 ---
 
