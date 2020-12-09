@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media のセットアップ
-description: Dynamic Media をセットアップするには、Dynamic Media を設定して、画像やビューアのプリセットを管理する必要があります
+description: Dynamic Mediaを設定するには、Dynamic Mediaを設定し、画像とビューアプリセットを管理する必要があります。
 translation-type: tm+mt
-source-git-commit: 79d4e51db99e2c1f8b18edd7249a26f4be7169e1
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 69%
+ht-degree: 60%
 
 ---
 
@@ -40,4 +40,4 @@ Dynamic Media の管理者には、次のトピックが参考になります。
 >
 >**アップグレードする場合：**
 >
->* Experience Managerを起動して実行した後、アップロードするアセットでは、ダイナミックメディアが自動的に有効になります（システム管理者が明示的に無効にしていない場合）。 アップグレードしたExperience Managerのインスタンスで、ダイナミックメディアを初めて使用する場合は、アセットをダイナミックメディアを有効にするために、アセットの再処理が必要になる場合があります。
+>* Experience Managerを起動して実行した後は、アップロードしたアセットはすべて自動的に有効になります（ただし、システム管理者が明示的に無効にしていない場合）。 アップグレードしたExperience Managerのインスタンスを使用し、Dynamic Mediaに初めてアクセスする場合は、アセットを再処理してDynamic Media対応にする必要がある場合があります。
