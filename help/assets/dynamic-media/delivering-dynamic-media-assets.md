@@ -1,18 +1,18 @@
 ---
 title: Dynamic Media アセットの配信
-description: Dynamic Media アセットの配信方法を学習します
+description: Dynamic Media資産の配信方法を学びます。
 translation-type: tm+mt
-source-git-commit: 7a2eef19a3807d02e7eba0ce177465aabc35a53e
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 
 # Dynamic Media アセットの配信{#delivering-dynamic-media-assets}
 
-ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
+ビデオと画像の両方で、Dynamic Mediaアセットの配信方法はWebサイトの実装方法に依存します。
 
 Dynamic Media を使用する場合、次の複数のオプションがあります。
 
