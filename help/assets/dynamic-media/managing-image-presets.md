@@ -1,8 +1,8 @@
 ---
 title: 画像プリセットの管理
-description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。
+description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。。
 translation-type: tm+mt
-source-git-commit: e31ac0c2d28f60d7b98036c16f154a09da51d6bf
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '3608'
 ht-degree: 97%
@@ -409,7 +409,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 ### 画像の修飾子による画像プリセットオプションの定義 {#defining-image-preset-options-with-image-modifiers}
 
-「基本」タブと「詳細」タブで使用できるオプションに加えて、画像の修飾子を定義して、画像プリセットの定義でより多くのオプションを指定することができます。イメージレンダリングは、ダイナミックメディアイメージレンダリングAPIに依存しており、詳しくは『[HTTPプロトコルリファレンス](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)』を参照してください。
+「基本」タブと「詳細」タブで使用できるオプションに加えて、画像の修飾子を定義して、画像プリセットの定義でより多くのオプションを指定することができます。イメージレンダリングは、Dynamic MediaイメージレンダリングAPIに依存しており、詳しくは『[HTTPプロトコルリファレンス](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)』を参照してください。
 
 画像の修飾子を使用して実行できることについて、以下に基本的な例を示します。
 
