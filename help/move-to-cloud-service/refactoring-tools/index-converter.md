@@ -2,7 +2,7 @@
 title: インデックスコンバータ
 description: インデックスコンバータ
 translation-type: tm+mt
-source-git-commit: 1117f03b2eff37f8b25726c3dc60d5a3fe98a5d1
+source-git-commit: 3fe19282f9e96d503f4e8be05553c6f48a6f19b6
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 9%
@@ -37,11 +37,11 @@ Index Converterを使用すると、AEM開発者は、Cloud Service互換のカ�
 
 * Adobe I/OCLI経由：`aio-cli-plugin-aem-cloud-service-migration`経由でIndex Converterを使用することをお勧めします(AEMはAdobe I/OCLIのCloud Serviceコードリファクタリングプラグインとして使用します)。
 
-プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
+   プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
 
 * スタンドアロンユーティリティとして、Index Converterは、スタンドアロンユーティリティとして実行することもできます。
 
-**[Gitリソースを参照：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**&#x200B;を参照して、このツールの使用方法を確認してください。
+   **[Gitリソースを参照：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)**&#x200B;を参照して、このツールの使用方法を確認してください。
 
 
 
