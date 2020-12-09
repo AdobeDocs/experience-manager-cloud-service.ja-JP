@@ -1,17 +1,17 @@
 ---
 title: Dynamic Media アセットの公開
-description: Dynamic Media アセットの公開方法
+description: Dynamic Mediaアセットの公開方法を説明します。
 contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: b65ce0af6281f60272322744f0e6f81b7eb6b96a
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 98%
 
 ---
 
 
-# Dynamic Media アセットの公開  {#publishing-dynamic-media-assets}
+# Dynamic Media アセットの公開 {#publishing-dynamic-media-assets}
 
 Dynamic Media アセットを公開するには、既にアップロード済みのアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」をタップします。Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
 
@@ -33,6 +33,7 @@ Dynamic Media アセットを公開するには、既にアップロード済み
 >
 >* アセットの URL を使用するためには、そのアセットを公開する必要があります。アセットが公開されていない場合、URL をコピーして Web ブラウザーに貼り付けても機能しません。
 >* ライブ配信をするには、画像プリセットおよびビューアプリセットをアクティベートして公開する必要があります。
+
 >
 
 
