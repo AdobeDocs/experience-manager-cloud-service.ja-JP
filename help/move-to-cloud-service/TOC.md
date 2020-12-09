@@ -4,7 +4,7 @@ user-guide-title: AEM as a Cloud Service への移行
 breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 translation-type: tm+mt
-source-git-commit: 4ded4f7da78c42f28cf8e472f88d18918f8cf1d0
+source-git-commit: 81e84ae3993321c210de917a9a9bcd17d32b2040
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 89%
@@ -29,7 +29,7 @@ ht-degree: 89%
 + コードリファクタリングツール {#refactoring-tools}
    + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
+   + [インデックスコンバータ](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-   + [インデックスコンバータ](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
