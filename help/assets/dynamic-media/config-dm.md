@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media Cloud Service の設定
-description: Adobe Experience Manager Cloud Service で Dynamic Media を設定する方法に関する情報です。
+description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法に関する情報。
 translation-type: tm+mt
-source-git-commit: 0f6baa02d612a790fbeed9f8c9d356e0d96c5093
+source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
-source-wordcount: '3853'
-ht-degree: 95%
+source-wordcount: '3855'
+ht-degree: 94%
 
 ---
 
@@ -246,7 +246,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 #### サポートされる形式のMIMEタイプの編集{#editing-mime-types-for-supported-formats}
 
-ダイナミックメディアで処理されるアセットタイプを定義し、高度なアセット処理パラメーターをカスタマイズできます。 例えば、アセット処理パラメーターを指定して次のことができます。
+Dynamic Mediaが処理するアセットタイプを定義し、高度なアセット処理パラメータをカスタマイズできます。 例えば、アセット処理パラメーターを指定して次のことができます。
 
 * Adobe PDF を eCatalog アセットに変換する。
 * Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
@@ -368,7 +368,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 1. 「**[!UICONTROL Maximum Parallel Jobs]**」フィールドで、目的の値に数値を変更します。
 
-   ダイナミックメディアへの大量のファイルのアップロードを適切にサポートするには、**[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やします。 正確な値は、ハードウェア容量に依存します。 初期移行または1回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。 ただし、大きな値（コア数の2倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。 そのため、特定の使用事例に基づいて値をテストし、調整する必要があります。
+   **[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やすと、Dynamic Mediaへのファイルの大量アップロードを適切にサポートできます。 正確な値は、ハードウェア容量に依存します。 初期移行または1回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。 ただし、大きな値（コア数の2倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。 そのため、特定の使用事例に基づいて値をテストし、調整する必要があります。
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
