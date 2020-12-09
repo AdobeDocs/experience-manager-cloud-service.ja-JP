@@ -2,10 +2,10 @@
 title: ローンチの作成
 description: 今後のアクティベートのために既存の Web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 translation-type: tm+mt
-source-git-commit: 035c6d862bf28fe2a6fbdbbf32dff45fa09dbd8c
+source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 97%
+source-wordcount: '1036'
+ht-degree: 93%
 
 ---
 
@@ -19,6 +19,18 @@ ht-degree: 97%
 * デフォルトでは、ライブコピーによってソースページの変更に合わせてローンチページが自動的に更新されます。静的なコピーを作成して自動更新をおこなわないように指定できます。<!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
 
 オプションとして、**ローンチ日**（と時間）を指定して、ローンチページを昇格およびアクティベートするタイミングを定義できます。ただし、**ローンチ日**&#x200B;は&#x200B;**実稼動準備完了**&#x200B;フラグと組み合わせた場合のみ機能します（[ローンチ設定の編集](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)を参照）。アクションが実際に自動的におこなわれるようにするには、両方を設定する必要があります。
+
+>[!NOTE]
+>
+>起動を作成すると、階層の上のページはテンプレートを使用して作成されます。
+>
+>* `/libs/launches/templates/outofscope`
+>
+>
+これらのページは編集できません。 次のメッセージが表示されます。
+>
+>* **このページは、開始に含まれていません。実稼動ページに移動**
+
 
 ## ローンチの作成 {#creating-a-launch}
 
