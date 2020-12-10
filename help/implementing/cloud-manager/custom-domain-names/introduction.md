@@ -2,9 +2,9 @@
 title: 概要 — カスタムドメイン名
 description: 概要 — カスタムドメイン名
 translation-type: tm+mt
-source-git-commit: 7704c19e440b1fedc651ce0115eb5e5ecf1eba1c
+source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,6 @@ Cloud Managerでは、UIを介して、独自のブランド名を持つサイ�
 
 Cloud Manager UIドメイン設定ページまたは環境の詳細ページを使用して、権限を持つユーザーは、次のような、環境のカスタムドメイン名を管理するためのタスクをいくつか実行できます。
 
-* カスタムドメイン名の追加。
-* 表示の詳細を表示したり、期限切れになる証明書を置き換えたりすることが可能なカスタムドメイン名の表示または更新。
-* カスタムドメイン名を削除しています。
+* [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* [表示の詳細を表示したり、期限切れになる証明書を置き換えたりすることが可能なカスタム](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md) ドメイン名の表示と更新
+* [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
