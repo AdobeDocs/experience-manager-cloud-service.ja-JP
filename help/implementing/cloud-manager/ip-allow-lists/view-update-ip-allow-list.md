@@ -2,7 +2,7 @@
 title: 表示と更新 — Could ManagerでのIP許可リスト
 description: 表示と更新 — Could ManagerでのIP許可リスト
 translation-type: tm+mt
-source-git-commit: b353de1a58eb8c31de7289677a589cf192ebc0b9
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -29,10 +29,10 @@ IP許可リストを更新するには、Business Owner（ビジネス所有者�
 
 次の手順に従って、IP許可リストを更新します。
 
-1. 環境画面でIP許可リストページに移動します。
+1. **環境**&#x200B;画面から&#x200B;**IP許可リスト**&#x200B;ページに移動します。
 1. 表示/更新するIP許可リスト規則が一覧表示される行を識別します。
 1. **を選択…**&#x200B;メニューを表示します。
-1. 「表示と更新」オプションを選択します。
+1. 「**表示と更新**」オプションを選択します。
 1. 名前またはIPに変更を加え、送信を確認します。
 
 ## IP許可リストの追加、更新、削除に関する重要な考慮事項{#considerations}
@@ -41,4 +41,4 @@ IP許可リストを更新するには、Business Owner（ビジネス所有者�
 * IP許可リストからIP範囲を削除すると、対応するすべての環境サービスから自動的にIP範囲の適用が解除されます。
 * 前の更新が進行中で、まだ完了していないIP許可リストに対する更新は行えません。
 * IP許可リストに対する更新は、以前の更新で発生したエラーがある場合は行えません。 更新を再試行して、エラーを消去する必要があります。
-詳細については、「IP許可リストステータスの確認」を参照してください。
+詳しくは、[IP許可リストステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)を参照してください。
