@@ -2,7 +2,7 @@
 title: SSL証明書の追加 — SSL証明書の管理
 description: SSL証明書の追加 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
+source-git-commit: 1e7855661220f69038edf35d4c45b7d45b5c6bce
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -53,11 +53,12 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
 
 1. **追加SSL証明書**&#x200B;をクリックして、**追加SSL証明書**&#x200B;ダイアログボックスを開きます。
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
-
-   1. 「**証明書名**」に証明書の名前を入力します。 証明書を簡単に参照できる任意の名前を指定できます。
-   1. **証明書**、**秘密鍵**、**証明書チェーン**をそれぞれのフィールドに貼り付けます。 入力ボックスの右側にある貼り付けアイコンを使用します。
+   * 「**証明書名**」に証明書の名前を入力します。 証明書を簡単に参照できる任意の名前を指定できます。
+   * **証明書**、**秘密鍵**、**証明書チェーン**をそれぞれのフィールドに貼り付けます。 入力ボックスの右側にある貼り付けアイコンを使用します。
 3つのフィールドはすべてオプションではなく、含める必要があります。
+
+      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
 
       >[!NOTE]
       >検出されたエラーが表示されます。 証明書を保存する前に、すべてのエラーを解決する必要があります。 一般的なエラーの対処方法の詳細については、[証明書のエラー](#certificate-errors)を参照してください。
