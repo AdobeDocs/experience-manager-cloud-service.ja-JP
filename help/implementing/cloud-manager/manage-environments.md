@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: fb979363fcb8c17fbefd11b9b86498447593f745
+source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 89%
+source-wordcount: '1254'
+ht-degree: 63%
 
 ---
 
@@ -147,4 +147,45 @@ ht-degree: 89%
 さらに、**環境**&#x200B;の概要ページからローカルにログインできます。
 
 ![](assets/environ-login-locally-2.png)
+
+## カスタムドメイン名の管理{#manage-cdn}
+
+環境の概要ページから環境の詳細ページにナビゲートします。
+
+以下に示すように、お使いの環境の発行サービスで次の操作を実行できます。
+
+1. **カスタムドメイン名の追加**:「カスタムドメイン名の [追加」を参照してください。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+
+1. **カスタムドメイン名の表示と更新**:「カスタムドメイン名とSSL証明書の [表示と更新」を参照してください。](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+
+1. **カスタムドメイン名の削除**:「カスタムドメイン名とSSL証明書の [削除」を参照してください。](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+
+## IP許可リストの管理{#manage-ip-allow-lists}
+
+環境の概要ページから環境の詳細ページにナビゲートします。 ここで、環境の発行サービスや作成者サービスに対して次の操作を実行できます。
+
+### IP許可リストの適用{#apply-ip-allow-list}
+
+IP許可リストの適用は、許可リストの定義に含まれるすべてのIP範囲が、環境の作成者または発行サービスに関連付けられるプロセスです。 IP許可リストを適用するには、Business Owner（ビジネス所有者）またはDeployment Manager（展開マネージャー）の役割を持つユーザーがログインしている必要があります。
+
+>[!NOTE]
+>IP許可リストを環境サービスに適用するには、Cloud ManagerにIPアドレスが存在する必要があります。 Cloud ManagerのIP許可リストの詳細については、「Could Manager[のIP許可リストの概要」に移動してください。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+
+その場合は、次の手順に従います。
+
+1. 環境画面から特定の環境の詳細ページに移動し、IP許可リストテーブルに移動します。
+1. IP許可リストテーブルの上部にある入力フィールドを使用して、IP許可リストと、それを適用する作成者または発行サービスを選択します。
+1. 次に、「Apply」を選択し、送信を確認します。
+
+### IP許可リストの適用解除{#unapply-ip-allow-list}
+
+IP許可リストの適用解除は、許可リストの定義に含まれるすべてのIP範囲が、環境の作成者/発行者サービスと関連付け解除されるプロセスです。  IP許可リストの適用を解除するには、Business Owner（ビジネス所有者）またはDeployment Manager（デプロイメントマネージャー）の役割を持つユーザーがログインしている必要があります。
+
+その場合は、次の手順に従います。
+
+1. 環境画面から特定の環境の詳細ページに移動し、IP許可リストテーブルに移動します。
+1. 適用を解除するIP許可リスト規則が一覧表示されている行を識別します。
+1. **を選択…**&#x200B;メニューを表示します。
+1. 「未適用」オプションを選択し、送信を確認します。
+
 
