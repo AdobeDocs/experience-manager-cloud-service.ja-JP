@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 5e81e6ed9c44956384ff248bb28cebc861cf0b76
+source-git-commit: f836254f6c4874621d4772758b29c6b22aff0ed6
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 93%
+source-wordcount: '357'
+ht-degree: 67%
 
 ---
 
@@ -43,6 +43,32 @@ ht-degree: 93%
       + [ウィザードの使用](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [ビルド環境について](getting-access-to-aem-in-cloud/build-environment-details.md)
+   + SSL証明書の管理{#manage-ssl-certificates}
+      + [概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [SSL証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [SSL証明書の表示と更新または置き換え](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [SSL証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [SSL証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + カスタムドメイン名{#custom-domain-names}
+      + [概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [カスタムドメイン名の取得](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [TXTレコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [DNS設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [DNSレコードの状態を確認しています](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [カスタムドメイン名のSSL証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP許可リスト{#ip-allow-lists}
+      + [概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [IP許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [IP許可リストの適用を解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Cloud Manager {#release-notes-cloud-manager}のリリースノート
       + [最新のリリースノート（2020.11.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [リリースノート（2020.10.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
