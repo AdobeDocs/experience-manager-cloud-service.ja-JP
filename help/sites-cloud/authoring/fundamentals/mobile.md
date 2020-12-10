@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # モバイルデバイス用のページのオーサリング {#authoring-a-page-for-mobile-devices}
 
-Adobe Experience Manager ページはレスポンシブレイアウトに基づいています。[レスポンシブレイアウトは、コンテンツをターゲットデバイスに合わせて自動的に調整するので、特定のデバイス向けにコンテンツを作成しなくてもよくなります。](/help/sites-cloud/authoring/features/responsive-layout.md)
+Adobe Experience Manager ページはレスポンシブレイアウトに基づいています。[レスポンシブレイアウトは](/help/sites-cloud/authoring/features/responsive-layout.md)、コンテンツをターゲットデバイスに合わせて自動的に調整するので、特定のデバイス向けにコンテンツを作成しなくてもよくなります。
 
 モバイルページをオーサリングする場合、ページはモバイルデバイスをエミュレートする方法で表示されます。ページのオーサリング時に、いくつかのエミュレーターを切り替えて、エンドユーザーがページにアクセスしたときの表示を確認できます。
 
