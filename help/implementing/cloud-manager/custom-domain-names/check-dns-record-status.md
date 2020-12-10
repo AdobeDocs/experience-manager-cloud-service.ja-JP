@@ -2,7 +2,7 @@
 title: DNSレコードの状態を確認しています
 description: DNSレコードの状態を確認しています
 translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -14,8 +14,7 @@ ht-degree: 0%
 
 [ドメインの設定]ページの[環境]の表にあるDNSレコードのステータスアイコンをクリックすると、ドメイン名がCloud ServiceWebサイトとして正しく解決されているかどうかを確認できます。
 
->[!NOTE]
->カスタムドメイン名の検証と展開が最初に正常に完了すると、Cloud Managerは自動的にDNSルックアップをトリガーします。 それ以降の試行では、ステータスの横にある&#x200B;**resolve again**&#x200B;アイコンをアクティブに選択する必要があります。
+カスタムドメイン名の検証と展開が最初に正常に完了すると、Cloud Managerは自動的にDNSルックアップをトリガーします。 それ以降の試行では、ステータスの横にある&#x200B;**resolve again**&#x200B;アイコンをアクティブに選択する必要があります。
 
 Cloud Managerは、ドメイン名に対してDNSルックアップを実行し、次のいずれかのステータスメッセージを表示します。
 
