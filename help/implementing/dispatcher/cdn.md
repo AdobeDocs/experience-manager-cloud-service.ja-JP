@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: 14d08529eeee0f9881e668eed6273cfa57f1360f
+source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 93%
+source-wordcount: '462'
+ht-degree: 84%
 
 ---
 
@@ -18,21 +18,16 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ## AEM 管理による CDN {#aem-managed-cdn}
 
-アドビの標準搭載 CDN を使用してコンテンツ配信に備えるには、次の手順に従います。
+次の節に従って、Cloud ManagerセルフサービスUIを使用し、Adobeの追加設定不要なCDNを使用してコンテンツ配信の準備を行います。
 
-1. この情報を含む安全なフォームへのリンクを共有して、署名済みの SSL 証明書と秘密鍵をアドビに提供します。このタスクについてカスタマーサポートと調整してください。Adobeでは、1つのプログラムに対して最大10個のSSL証明書をサポートします。
-   **注意：** AEM as a Cloud Service は、ドメイン検証（DV）証明書をサポートしていません。また、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書である必要があります。
-1. カスタマーサポートに通知：
-   * プログラムidと環境idで定義される、特定の環境に関連付ける必要があるカスタムドメイン。 特定のドメインに対して最大100個の環境がサポートされ、ドメインにワイルドカードを含めることはできません。 オーサー側のカスタムドメインはサポートされていません。
-   * トラフィックを特定の環境に制限するために IP 許可リストが必要な場合。
-1. DNS レコードに必要な変更のタイミングについて、カスタマーサポートと連携します。手順は、apex レコードが必要かどうかに応じて異なります。
-   * apex レコードが不要な場合は、FQDN が `cdn.adobeaemcloud.com` を指すように、CNAME DNS レコードを設定する必要があります。
-   * apex レコードが必要な場合は、次の IP を指す A レコードを作成します。151.101.3.10、151.101.67.10、151.101.131.10、151.101.195.10。必要な FQDN が DNS ゾーンと一致する場合、apex レコードが必要です。これは、Unix dig コマンドを使用して、出力の SOA 値がドメインと一致するか確認することでテストできます。例えば、`dig anything.dev.adobeaemcloud.com` コマンドが `dev.adobeaemcloud.com` の SOA（権限の開始、つまりゾーン）を返す場合、apex レコードではなく、`dig dev.adobeaemcloud.com` が `dev.adobeaemcloud.com` の SOA を返す場合、apex レコードです。
-1. SSL 証明書の有効期限が切れると、新しい SSL 証明書を再送信できるように通知されます。
+1. [SSL証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **トラフィックの制限**
 
-デフォルトでは、アドビが管理する CDN のセットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境のパブリッシュサービスへのトラフィックを制限する場合（IP アドレスの範囲でステージングを制限する場合など）、カスタマーサポートと協力してこれらの制限を設定する必要があります。
+デフォルトでは、アドビが管理する CDN のセットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境の発行サービスへのトラフィックを制限する場合（例えば、一定のIPアドレスでステージングを制限する場合）、Cloud Manager UIを使用して、セルフサービスでこの操作を行うことができます。
+
+詳しくは、[IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
