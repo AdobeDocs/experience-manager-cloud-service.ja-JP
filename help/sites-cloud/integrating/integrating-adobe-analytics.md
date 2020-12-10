@@ -39,7 +39,7 @@ Adobe Analytics 設定ウインドウで表示される設定フィールドは�
 
 | プロパティ | 説明 |
 |---|---|
-| 会社 | Adobe Analytics ログイン会社情報 |
+| 会社情報 | Adobe Analytics ログイン会社情報 |
 | ユーザー名 | Adobe Analytics API ユーザー |
 | パスワード | 認証に使用される Adobe Analytics パスワード |
 | データセンター | アカウントが関連付けられている Adobe Analytics データセンター（サンノゼやロンドンなどのサーバー） |
