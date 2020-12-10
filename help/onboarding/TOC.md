@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 67%
+source-wordcount: '368'
+ht-degree: 66%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 67%
       + [IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
       + [IP許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [IP許可リストの適用を解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [IP許可リストの適用の解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + Cloud Manager {#release-notes-cloud-manager}のリリースノート
