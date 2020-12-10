@@ -4,8 +4,8 @@ description: 'Adobe Experience Manager (AEM) as a Cloud Service のリリース�
 translation-type: tm+mt
 source-git-commit: c6e9f7073b13211386f30142ea34f1e256905450
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '378'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 | [実装ユーザーガイド](/help/implementing/home.md) | 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
-| [コマースユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
+| [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
