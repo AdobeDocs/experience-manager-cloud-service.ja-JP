@@ -16,8 +16,8 @@ ht-degree: 100%
 
 メンテナンスタスクの詳細については、次のページを参照してください。
 
-* [AEM メンテナンスガイド](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)
-* [運用ダッシュボードのメンテナンスタスク](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
+* [AEM メンテナンスガイド](https://helpx.adobe.com/jp/experience-manager/kb/AEM6-Maintenance-Guide.html)
+* [運用ダッシュボードのメンテナンスタスク](https://helpx.adobe.com/jp/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks)
 
 ## メンテナンスタスクの設定
 
