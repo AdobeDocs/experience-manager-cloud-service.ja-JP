@@ -121,7 +121,7 @@ Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher 
 
 ![CDN](assets/cdnd.png "CDN")
 
-Dispatcher キャッシュがクリアされない問題が発生した場合は、[カスタマーサポート](https://helpx.adobe.com/support.ec.html)にお問い合わせください。必要に応じて Dispatcher キャッシュをフラッシュします。
+Dispatcher キャッシュがクリアされない問題が発生した場合は、[カスタマーサポート](https://helpx.adobe.com/jp/support.ec.html)にお問い合わせください。必要に応じて Dispatcher キャッシュをフラッシュします。
 
 アドビが管理する CDN は TTL に従うので、フラッシュする必要はありません。問題の疑いがある場合は、[カスタマーサポート](https://helpx.adobe.com/support.ec.html)にお問い合わせください。必要に応じてアドビが管理する CDN キャッシュをフラッシュします。
 
