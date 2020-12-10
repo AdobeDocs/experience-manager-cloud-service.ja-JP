@@ -59,4 +59,4 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 * [Magento Web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF コアコンポーネント - マルチストア／サイト設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [マルチサイトマネージャの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [コンテンツの再利用：マルチサイトマネージャーとライブコピー](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html)
+* [コンテンツの再利用：マルチサイトマネージャーとライブコピー](https://helpx.adobe.com/jp/experience-manager/6-5/sites/administering/using/msm.html)
