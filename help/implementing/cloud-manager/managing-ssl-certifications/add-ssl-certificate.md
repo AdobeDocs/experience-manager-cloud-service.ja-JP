@@ -2,9 +2,9 @@
 title: SSL証明書の追加 — SSL証明書の管理
 description: SSL証明書の追加 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
+source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
 
 次の手順に従って、SSLファイルの形式をPEMに変換します。
 
-1. PFXをPEMに変換
+* PFXをPEMに変換
 
-`openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
 
-1. P7BをPEMに変換
+* P7BをPEMに変換
 
-`openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
 
-1. DERをPEMに変換
+* DERをPEMに変換
 
-`openssl x509 -inform der -in certificate.cer -out certificate.pem`
+   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
 ## 重要な検討事項 {#important-considerations}
 
@@ -50,9 +50,11 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
 1. 画面左側のナビゲーションメニューで「**SSL Certificates**」をクリックします。 既存のSSL証明書の詳細を示す表がこの画面に表示されます。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
-1. **追加certificate**&#x200B;ボタンを選択して、**追加SSL Certificate**&#x200B;ダイアログボックスを開きます。
+
+1. **追加SSL証明書**&#x200B;をクリックして、**追加SSL証明書**&#x200B;ダイアログボックスを開きます。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
    1. 「**証明書名**」に証明書の名前を入力します。 証明書を簡単に参照できる任意の名前を指定できます。
    1. **証明書**、**秘密鍵**、**証明書チェーン**をそれぞれのフィールドに貼り付けます。 入力ボックスの右側にある貼り付けアイコンを使用します。
 3つのフィールドはすべてオプションではなく、含める必要があります。
@@ -84,6 +86,4 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
 
 ### 証明書の有効期限{#certificate-validity-dates}
 
-Cloud Managerでは、SSL証明書が今後90日以上有効になる予定です
-
-証明書チェーンの有効性を確認します。
+Cloud Managerでは、SSL証明書が今後90日以上有効になる予定です。 証明書チェーンの有効性を確認する必要があります。
