@@ -36,7 +36,7 @@ ht-degree: 31%
 | [実装ユーザガイド](/help/implementing/home.md) | Experience Managerを[!DNL Cloud Service]としてカスタマイズ、開発、デプロイします。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | コネクタを[!DNL Cloud Service]としてExperience Managerに統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Experience Managerのバックエンド操作を[!DNL Cloud Service]として説明します。 |
-| [コマースユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager]上のCommerce Integration Frameworkを[!DNL Cloud Service]として学習します。 |
+| [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager]上のCommerce Integration Frameworkを[!DNL Cloud Service]として学習します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
