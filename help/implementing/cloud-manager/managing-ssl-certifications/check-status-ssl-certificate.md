@@ -2,9 +2,9 @@
 title: SSL証明書のステータスの確認 — SSL証明書の管理
 description: SSL証明書のステータスの確認 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: e27e5302802e68dce2a5713626950896bb35420a
+source-git-commit: f426a9a653a3a3ae06abdbd2262e5d8f4beff277
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # SSL証明書のステータスの確認{#checking-status-an-ssl-certificate}
 
-SSL証明書のステータスは、SSL証明書ページまたは環境の詳細ページから一目で確認できます。
+SSL証明書のステータスは、SSL証明書ページから一目で確認できます。
 
 SSL証明書のステータスは、次のカラースキームで確認できます。
 
