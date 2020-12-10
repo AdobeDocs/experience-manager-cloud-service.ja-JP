@@ -2,9 +2,9 @@
 title: SSL証明書の追加 — SSL証明書の管理
 description: SSL証明書の追加 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: 88ef9265b40f64f2229e37e5f8ca02959e8d9ce2
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,13 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
 
 `openssl x509 -inform der -in certificate.cer -out certificate.pem`
 
-## 証明書の追加{#adding-certificate}
+## 重要な検討事項 {#important-considerations}
 
->[!NOTE]
->* SSL証明書をCloud Managerにインストールするには、ユーザーがビジネス所有者またはDeployment Managerの役割を持っている必要があります。
->* Cloud Managerでは、証明書の有効期限が切れている場合でも、プログラム内の1つ以上の環境に関連付けることができるSSL証明書は、常に最大10個まで許可されます。 ただし、Cloud Manager UIでは、50個までのSSL証明書をプログラムにインストールできます。
+* SSL証明書をCloud Managerにインストールするには、ユーザーがビジネス所有者またはDeployment Managerの役割を持っている必要があります。
 
+* Cloud Managerでは、証明書の有効期限が切れている場合でも、プログラム内の1つ以上の環境に関連付けることができるSSL証明書は、常に最大10個まで許可されます。 ただし、Cloud Manager UIでは、50個までのSSL証明書をプログラムにインストールできます。
+
+## 証明書の追加{#adding-a-cert}
 
 証明書を追加するには、次の手順に従います。
 
@@ -51,13 +52,14 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 1. **追加certificate**&#x200B;ボタンを選択して、**追加SSL Certificate**&#x200B;ダイアログボックスを開きます。
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-2.png)
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
    1. 「**証明書名**」に証明書の名前を入力します。 証明書を簡単に参照できる任意の名前を指定できます。
-   1. **証明書**、**秘密鍵**、**証明書チェーン**&#x200B;をそれぞれのフィールドに貼り付けます。 入力ボックスの右側にある貼り付けアイコンを使用します。
+   1. **証明書**、**秘密鍵**、**証明書チェーン**をそれぞれのフィールドに貼り付けます。 入力ボックスの右側にある貼り付けアイコンを使用します。
+3つのフィールドはすべてオプションではなく、含める必要があります。
 
-      >[!NOTE]
-      >3つのフィールドはすべてオプションではなく、含める必要があります。
 1. 「**保存**」をクリックして、証明書を送信します。 テーブルに新しい行として表示されます。
+
+   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
    >[!NOTE]
    >検出されたエラーが表示されます。 証明書を保存する前に、すべてのエラーを解決する必要があります。 一般的なエラーの対処方法の詳細については、[証明書のエラー](#certificate-errors)を参照してください。
 
