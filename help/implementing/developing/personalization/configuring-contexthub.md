@@ -38,7 +38,7 @@ UI モードはツールバーの左側に一連のアイコンとして表示�
 
 ![ContextHub ツールバー](assets/contexthub-toolbar.png)
 
-アイコンは、[Coral UI ライブラリ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)からの参照です。
+アイコンは、[Coral UI ライブラリ](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)からの参照です。
 
 ### UI モードの追加  {#adding-a-ui-mode}
 
@@ -133,7 +133,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 1. （オプション）デフォルトのストアの設定をオーバーライドするには、「詳細設定（JSON）」ボックスに JSON オブジェクトを入力します。
 1. 「保存」をクリックまたはタップします。
 
-## JSONP サービスの使用例       {#example-using-a-jsonp-service}
+## JSONP サービスの使用例         {#example-using-a-jsonp-service}
 
 この例は、ストアを設定して UI モジュールにデータを表示する方法を示します。この例では、ストアのデータソースとして jsontest.com サイトの MD5 サービスが使用されています。サービスが指定の文字列の MD5 ハッシュコードを JSON 形式で返します。
 
