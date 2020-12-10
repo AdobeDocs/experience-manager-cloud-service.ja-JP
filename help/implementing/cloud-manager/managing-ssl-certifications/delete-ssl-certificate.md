@@ -2,9 +2,9 @@
 title: SSL証明書の削除 — SSL証明書の管理
 description: SSL証明書の削除 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: 84c8204d257de4ecdee3728176f6d4ef545346f5
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >証明書のCloud Managerからの削除は、元に戻すことができない永久的な操作です。 ベストプラクティスは、必要なSSLファイルをローカルに保存してから、Cloud Managerユーザーインターフェイスで削除することです。
 
 >[!NOTE]
->Cloud ManagerでSSL証明書を削除するには、ユーザーがビジネス所有者またはDeployment Managerのロールに属している必要があります。 1つ以上のドメインが関連付けられているSSL証明書は、Cloud Managerでは削除できません。  SSL証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。 このトピックの詳細については、「カスタムドメイン名の削除」の「INSERT LINK」を参照してください。
+>Cloud ManagerでSSL証明書を削除するには、ユーザーがビジネス所有者またはDeployment Managerのロールに属している必要があります。 1つ以上のドメインが関連付けられているSSL証明書は、Cloud Managerでは削除できません。  SSL証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。 詳しくは、[カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)を参照してください。
 
 SSL証明書を削除するには、次の手順に従います。
 
