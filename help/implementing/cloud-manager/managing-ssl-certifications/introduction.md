@@ -2,10 +2,10 @@
 title: 概要 — SSL証明書の管理
 description: 概要 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: 5ebe94c8562b952521effa3b67267c3eab925d16
+source-git-commit: 99eb33c3c42094f787d853871aee3a3607856316
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 0%
+source-wordcount: '254'
+ht-degree: 1%
 
 ---
 
@@ -14,11 +14,12 @@ ht-degree: 0%
 
 Cloud Managerでは、セルフサービス機能を使用して、Cloud Manager UIからSSL証明書をインストールできます。 Cloud Managerは、SSL証明書と、お客様が所有する秘密鍵を管理するプラットフォームTLSサービスを使用します。通常は、サードパーティの証明機関（例：「Let’s Encrypt」）から取得します。
 
->[!IMPORTANT]
->Cloud Managerでは、SSL証明書や秘密鍵は提供されません。 これらは、第三者の証明機関から入手する必要があります。 詳しくは、[SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)を参照してください。
+## 重要な検討事項 {#important-considerations}
 
->[!NOTE]
->AEMは、セキュリティで保護されたhttpsサイトのみをサポートしています。 複数のカスタムドメインを持つ顧客は、ドメインを追加するたびに証明書をアップロードする必要はありません。 したがって、複数のドメインを持つ1つの証明書を取得することで、このような顧客のメリットが得られます。
+
+* Cloud Managerでは、SSL証明書や秘密鍵は提供されません。 これらは、第三者の証明機関から入手する必要があります。 詳しくは、[SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)を参照してください。
+
+* AEMは、セキュアな`https`サイトのみをサポートします。 複数のカスタムドメインを持つ顧客は、ドメインを追加するたびに証明書をアップロードする必要はありません。 したがって、複数のドメインを持つ1つの証明書を取得することで、このような顧客のメリットが得られます。
 
 Cloud Managerでは、次のお客様向けSSL証明書の要件をサポートしています。
 
@@ -30,8 +31,8 @@ Cloud Managerでは、次のお客様向けSSL証明書の要件をサポート�
 
 権限を持つユーザーは、Cloud Manager UI SSL証明書ページを使用して、次のようなタスクを実行してプログラムのSSL証明書を管理できます。
 
-* SSL証明書の追加
-* SSL証明書の表示、更新または置き換え
+* [SSL証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+* [SSL証明書の表示、更新または置換](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
    >[!NOTE]
    >これらの操作により、表示の詳細や、期限切れになる証明書の置き換えが可能になります。
-* SSL証明書の削除
+* [SSL証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
