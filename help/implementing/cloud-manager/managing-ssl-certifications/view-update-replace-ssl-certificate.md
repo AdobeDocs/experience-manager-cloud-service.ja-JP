@@ -2,7 +2,7 @@
 title: 'SSL証明書の更新と置換の表示 — SSLの管理 '
 description: SSL証明書の更新と置換の表示 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: d5a119921a06ea06cbf2b95353083aa987869629
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Cloud Manager UIで次のオプションを使用する場合：
 
 ## SSL証明書の有効期限が近づく{#update-ssl-certificate}
 
-証明書の有効期限が切れると、有効期限切れの証明書で使用されているドメインは機能しなくなります。 期限切れの証明書を更新するには、次の手順に従う必要があります。 これにより、必要に応じてドメインが引き続き機能します。 新しい証明書を追加すると、カスタムドメイン名を新しい証明書で更新してから、ドメインが必要に応じて動作するようにする必要があります。 詳細は、[カスタムドメイン名の表示と更新と置き換え](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)を参照してください。
+証明書の有効期限が切れると、有効期限切れの証明書で使用されているドメインは機能しなくなります。 期限切れの証明書を更新するには、次の手順に従う必要があります。 これにより、必要に応じてドメインが引き続き機能します。 新しい証明書を追加すると、カスタムドメイン名を新しい証明書で更新してから、ドメインが必要に応じて動作するようにする必要があります。 詳細は、「[カスタムドメイン名の表示と更新と置き換え](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)」を参照してください。
 
 次の手順に従って、SSL証明書を更新します。
 
