@@ -2,15 +2,15 @@
 title: 'SSL証明書の更新と置換の表示 — SSLの管理 '
 description: SSL証明書の更新と置換の表示 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: e5305efad061ae0b06ecb16433fccd5e97f978f3
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
 
 
-# SSL証明書の更新と置換の表示{#view-update-replace-ssl-certificate}
+# SSL証明書の表示と更新と置き換え{#view-update-replace-ssl-certificate}
 
 ## SSL証明書の表示と更新{#view-update}
 
