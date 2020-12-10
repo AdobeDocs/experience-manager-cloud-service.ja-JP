@@ -54,7 +54,7 @@ Adobe 開発者コンソールで統合を作成してスマートタグを使�
 
 1. 「**[!UICONTROL 新しい証明書を作成]**」を選択します。名前を入力し、「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックします。
 
-1. 「**[!UICONTROL 公開鍵をダウンロードする]**」をクリックします。
+1. 「**[!UICONTROL 公開鍵をダウンロード]**」をクリックします。
 
    ![Experience Manager スマートタグで公開鍵を作成](assets/aem_smarttags-config1.png)
 
@@ -88,7 +88,7 @@ Adobe 開発者コンソールで統合を作成してスマートタグを使�
 
 1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;にアクセスします。
 
-1. 「スマートタグ設定」を選択します。ツールバーの「**[!UICONTROL ヘルスチェック]**」をクリックします。「**[!UICONTROL チェック]**」をクリックします。[!UICONTROL Healthy configuration] というメッセージを含むダイアログが表示されることで、設定が機能していることが確認できます。
+1. 「スマートタグ設定」を選択します。ツールバーの「**[!UICONTROL 正常性をチェック]**」をクリックします。「**[!UICONTROL チェック]**」をクリックします。[!UICONTROL Healthy configuration] というメッセージを含むダイアログが表示されることで、設定が機能していることが確認できます。
 
 ![スマートタグ設定の検証](assets/smart-tag-config-validation.png)
 
