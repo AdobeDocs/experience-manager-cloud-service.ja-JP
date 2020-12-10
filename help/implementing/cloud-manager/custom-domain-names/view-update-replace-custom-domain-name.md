@@ -2,9 +2,9 @@
 title: カスタムドメイン名の更新と置き換えの表示
 description: カスタムドメイン名の更新と置き換えの表示
 translation-type: tm+mt
-source-git-commit: 14218246d9f34ab48a2215e1274d210293ae3f1b
+source-git-commit: d557abb4234322e8a1fef15ac4c7088c64d782bf
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,4 @@ ht-degree: 0%
 >[!NOTE]
 >SSL証明書は有効で、カスタムドメイン名を含んでいる必要があります。
 
-## カスタムドメイン名のSSL証明書の更新{#update-ssl-certificate-cdn}
-
-更新アクションは、UIの2つの異なる場所から実行できます。
-
-1. 環境画面で、「ドメイン設定」ページに移動します。
-1. または、環境画面で特定の環境の詳細ページに移動し、「ドメイン名」(Domain Names)テーブルに移動します。
-表示/更新するカスタムドメイン名が一覧表示される行を識別します。
-1. **を選択…行の右端の**&#x200B;メニュー
-1. 「表示と更新」オプションを選択します
-1. 必要に応じてSSL証明書に変更を加え、送信を確認します
 
