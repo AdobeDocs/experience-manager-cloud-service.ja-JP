@@ -3,17 +3,65 @@ title: ' [!DNL Assets] の開発者向けリファレンス'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 97%
+source-wordcount: '1400'
+ht-degree: 85%
 
 ---
 
 
-# [!DNL Assets] API と開発者向けリファレンス資料 {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] API と開発者向けリファレンス資料 {#assets-cloud-service-apis}
 
-この記事には、[!DNL Assets]の開発者向けの参考資料とリソースが[!DNL Cloud Service]として含まれています。 新しいアップロード方法、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
+この記事には、[!DNL Assets]の開発者向けの推奨事項、参照資料、およびリソースが[!DNL Cloud Service]として含まれています。 新しいアセットアップロードモジュール、APIリファレンスおよび後処理ワークフローで提供されるサポートに関する情報が含まれます。
+
+## [!DNL Experience Manager Assets] APIと操作  {#use-cases-and-apis}
+
+[!DNL Assets] には、デジタルアセットをプログラム的に操作するためのいくつかのAPIが [!DNL Cloud Service] 用意されています。各APIは、以下の表に示すように、特定の使用例をサポートしています。 [!DNL Assets]ユーザーインターフェイス、[!DNL Experience Manager]デスクトップアプリ、および[!DNL Adobe Asset Link]は、すべての操作または一部の操作をサポートしています。
+
+>[!CAUTION]
+>
+>一部のAPIは、引き続き存在しますが、アクティブにはサポートされていない（×で示される）ので、使用しないでください。
+
+| サポートレベル | 説明 |
+| ------------- | --------------------------- |
+| ✓ | サポート対象 |
+| × | サポートされていない. 使用しないでください。 |
+| - | 使用不可 |
+
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset computeサービス](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)サーブレットをスリング | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(プレビュー)_ |
+| ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
+| **元のバイナリ** |  |  |  |  |  |  |
+| オリジナルを作成 | kid | × | - | × | × | - |
+| オリジナルを読む | - | × | kid | kid | kid | - |
+| オリジナルを更新 | kid | × | kid | × | × | - |
+| オリジナルを削除 | - | kid | - | kid | kid | - |
+| オリジナルをコピー | - | kid | - | kid | kid | - |
+| オリジナルを移動 | - | kid | - | kid | kid | - |
+| **メタデータ** |  |  |  |  |  |  |
+| メタデータの作成 | - | kid | kid | kid | kid | - |
+| メタデータの読み取り | - | kid | - | kid | kid | - |
+| メタデータの更新 | - | kid | kid | kid | kid | - |
+| メタデータの削除 | - | kid | kid | kid | kid | - |
+| メタデータのコピー | - | kid | - | kid | kid | - |
+| メタデータの移動 | - | kid | - | kid | kid | - |
+| **コンテンツフラグメント(CF)** |  |  |  |  |  |  |
+| CFを作成 | - | kid | - | kid | - | - |
+| CFの読み取り | - | kid | - | kid | - | kid |
+| CFの更新 | - | kid | - | kid | - | - |
+| CFの削除 | - | kid | - | kid | - | - |
+| CFをコピー | - | kid | - | kid | - | - |
+| CFを移動 | - | kid | - | kid | - | - |
+| **バージョン** |  |  |  |  |  |  |
+| バージョンの作成 | kid | kid | - | - | - | - |
+| 読み取りバージョン | - | kid | - | - | - | - |
+| バージョンの削除 | - | kid | - | - | - | - |
+| **フォルダー** |  |  |  |  |  |  |
+| フォルダーを作成 | kid | kid | - | kid | - | - |
+| フォルダの読み取り | - | kid | - | kid | - | - |
+| フォルダの削除 | kid | kid | - | kid | - | - |
+| フォルダのコピー | kid | kid | - | kid | - | - |
+| フォルダの移動 | kid | kid | - | kid | - | - |
 
 ## アセットのアップロード {#asset-upload-technical}
 
@@ -31,8 +79,7 @@ ht-degree: 97%
 * バイナリクラウドストレージは、コンテンツ配信ネットワーク（CDN）または Edge ネットワークと連携します。CDN は、クライアントに近いアップロードエンドポイントを選択します。特に地理的に分散したチームでは、データが近くのエンドポイントに転送される距離が短いほど、アップロードのパフォーマンスとユーザーエクスペリエンスが向上します。
 
 >[!NOTE]
->
->この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
+この方法を実装するクライアントコードを確認するには、オープンソースの [aem-upload ライブラリ](https://github.com/adobe/aem-upload)を参照してください。
 
 ### アップロードの開始 {#initiate-upload}
 
