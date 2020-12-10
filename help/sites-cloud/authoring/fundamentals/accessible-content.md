@@ -243,7 +243,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### キャプション（ライブ）（1.2.4）           {#captions-live}
+### キャプション（ライブ）（1.2.4）             {#captions-live}
 
 * 達成基準 1.2.4
 * レベル AA
@@ -297,7 +297,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * 音声のみ、または大きいテキストや高いコントラストなど、代替の視覚表示を使用する可能性のあるユーザー
 
-### 情報および関係性（1.3.1）            {#info-and-relationships}
+### 情報および関係性（1.3.1）              {#info-and-relationships}
 
 * 達成基準 1.3.1
 * レベル A
@@ -428,7 +428,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [達成基準 1.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### 感覚的な特徴（1.3.3）            {#sensory-characteristics}
+### 感覚的な特徴（1.3.3）              {#sensory-characteristics}
 
 * 達成基準 1.3.3
 * レベル A
@@ -464,7 +464,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 [ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### 色の使用（1.4.1）            {#use-of-color}
+### 色の使用（1.4.1）              {#use-of-color}
 
 * 達成基準 1.4.1
 * レベル A
@@ -699,7 +699,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### 一時停止、停止、非表示（2.2.2）            {#pause-stop-hide}
+### 一時停止、停止、非表示（2.2.2）              {#pause-stop-hide}
 
 * 達成基準 2.2.2
 * レベル A
@@ -788,7 +788,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### ページタイトル（2.4.2）            {#page-titled}
+### ページタイトル（2.4.2）              {#page-titled}
 
 * 達成基準 2.4.2
 * レベル A
@@ -828,7 +828,7 @@ AEM で新しい HTML ページを作成する際には、ページタイトル�
 * [達成基準 2.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### リンクの目的（コンテキスト内）（2.4.4）            {#link-purpose-in-context}
+### リンクの目的（コンテキスト内）（2.4.4）              {#link-purpose-in-context}
 
 * 達成基準 2.4.4
 * レベル A
@@ -998,7 +998,7 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 * [達成基準 3.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * コードは ISO 639-1 に基づいています。各言語の詳細なコードリストについては、[W3 Schools サイト](https://www.w3schools.com/tags/ref_language_codes.asp)を参照してください。
 
-### 一部分の言語（3.1.2）            {#language-of-parts}
+### 一部分の言語（3.1.2）              {#language-of-parts}
 
 * 達成基準 3.1.2
 * レベル AA
