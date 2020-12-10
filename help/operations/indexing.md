@@ -128,11 +128,11 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 | 索引 | 標準提供インデックス | バージョン 1 で使用 | バージョン 2 で使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene | はい | はい | 不可 |
-| /oak:index/damAssetLucene-custom-1 | はい（カスタマイズ） | 不可 | 可 |
+| /oak:index/damAssetLucene | 可 | 可 | 不可 |
+| /oak:index/damAssetLucene-custom-1 | 可（カスタマイズ） | 不可 | 可 |
 | /oak:index/acme.product-custom-1 | 不可 | 可 | 不可 |
 | /oak:index/acme.product-custom-2 | 不可 | 不可 | 可 |
-| /oak:index/cqPageLucene | はい | 可 | はい |
+| /oak:index/cqPageLucene | 可 | 可 | 可 |
 
 バージョン番号は、インデックスが変更されるたびに増加します。製品自体のインデックス名と衝突するカスタムインデックス名を回避するには、カスタムインデックスと、標準提供のインデックスの変更を `-custom-<number>` で終える必要があります。
 
@@ -142,10 +142,10 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 | 索引 | 標準提供インデックス | バージョン 2 で使用 | バージョン 3 で使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene-custom-1 | はい（カスタマイズ） | はい | 不可 |
+| /oak:index/damAssetLucene-custom-1 | 可（カスタマイズ） | 可 | 不可 |
 | /oak:index/damAssetLucene-2-custom-1 | はい（damAssetLucene-custom-1 および damAssetLucene-2 から自動的に結合） | 不可 | 可 |
-| /oak:index/cqPageLucene | はい | はい | 不可 |
-| /oak:index/cqPageLucene-2 | はい | 不可 | 可 |
+| /oak:index/cqPageLucene | 可 | 可 | 不可 |
+| /oak:index/cqPageLucene-2 | 可 | 不可 | 可 |
 
 ### 制限事項 {#limitations}
 
