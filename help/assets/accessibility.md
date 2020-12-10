@@ -35,7 +35,7 @@ Possible topics to cover in this article are below.
 
 [!DNL Experience Manager] は、次の標準を様々なレベルでサポートしています。
 
-* [Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/).
+* [Web Content Accessibility Guidelines（WCAG）2.1](https://www.w3.org/TR/WCAG/)
 * [再生法第508条を改正](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines)。
 * [Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) by W3C](https://www.w3.org/WAI/standards-guidelines/aria/).
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)
