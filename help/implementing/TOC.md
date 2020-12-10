@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: b927992107d7e7e4df5511a366c71449ff73ec93
+source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '579'
 ht-degree: 81%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 81%
          + [画像エディター](developing/components/image-editor.md)
          + [デコレーションタグ](developing/components/decoration-tag.md)
          + [非表示条件の使用](developing/components/hide-conditions.md)
+         + [コンポーネントリファレンスガイド](developing/components/reference.md)
       + [AEM タグ付けフレームワーク](/help/implementing/developing/introduction/tagging-framework.md)
       + [AEMアプリケーションへのタグ付けの構築](/help/implementing/developing/introduction/tagging-applications.md)
       + 検索 {#search}
