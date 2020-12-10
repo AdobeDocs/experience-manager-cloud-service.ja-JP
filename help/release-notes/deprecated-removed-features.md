@@ -41,7 +41,7 @@ ht-degree: 92%
 | 領域 | 機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
 | UI | （リンクチェッカー、バージョンパージ、一部の Cloud Services 設定など）いくつかの選択機能については、一部のクラシック UI ダイアログが当面そのまま残りますが、一般的なクラシック UI へのアクセスは AEM 製品 UI から削除されました。 | 標準 UI |
-| Dynamic Media | 以前の[Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration)および[Dynamic Media Hybrid mode](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)との統合は、AEMではCloud Serviceとして使用できません。 | Adobe Experience Manager as a Cloud Service で提供される [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 |
+| Dynamic Media | 以前の[Dynamic Mediaクラシック](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html#integration)および[Dynamic Mediaハイブリッドモード](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html#dynamic)との統合は、AEMではCloud Serviceとして使用できません。 | Adobe Experience Manager as a Cloud Service で提供される [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 |
 | Sites | Portal Director とポートレットコンポーネント | これらの機能は AEM 6.4 で非推奨（廃止予定）となり、現在は AEM から削除されています。 |
 | サイト | デザインインポーター | 実行時に AEM リポジトリの不変セクションにアクセスできないので、この機能は削除されました。 |
 | アセット | [Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの AEM Assets の共有](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/configure-assets-cc-integration.html)は使用できません。 | Creative Cloud との統合には、[Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用します。 |
