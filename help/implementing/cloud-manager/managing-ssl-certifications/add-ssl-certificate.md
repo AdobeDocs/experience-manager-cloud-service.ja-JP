@@ -2,9 +2,9 @@
 title: SSL証明書の追加 — SSL証明書の管理
 description: SSL証明書の追加 — SSL証明書の管理
 translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+source-git-commit: 4255035b68467e4ad783edd88e8f4e96855cfe50
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # SSL証明書の追加{#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEMは、OV（組織の検証）またはEV（拡張検証）の証明書のみをCloud Serviceとして受け入れます。 DV（ドメイン検証）証明書は受け入れられません。
+>AEMは、OV（組織の検証）またはEV（拡張検証）の証明書のみをCloud Serviceとして受け入れます。 DV（ドメイン検証）証明書は受け入れられません。 また、証明書は、信頼できる証明機関(CA)のX.509 TLS証明書で、一致する2048ビットRSA秘密鍵が含まれている必要があります。
 
 証明書のプロビジョニングには数日かかり、数か月前から証明書をプロビジョニングすることをお勧めします。 詳しくは、[SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)を参照してください。
 
@@ -59,11 +59,12 @@ SSLファイルをCloud Managerにインストールするには、PEM形式に�
    1. **証明書**、**秘密鍵**、**証明書チェーン**をそれぞれのフィールドに貼り付けます。 入力ボックスの右側にある貼り付けアイコンを使用します。
 3つのフィールドはすべてオプションではなく、含める必要があります。
 
+      >[!NOTE]
+      >検出されたエラーが表示されます。 証明書を保存する前に、すべてのエラーを解決する必要があります。 一般的なエラーの対処方法の詳細については、[証明書のエラー](#certificate-errors)を参照してください。
+
 1. 「**保存**」をクリックして、証明書を送信します。 テーブルに新しい行として表示されます。
 
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
-   >[!NOTE]
-   >検出されたエラーが表示されます。 証明書を保存する前に、すべてのエラーを解決する必要があります。 一般的なエラーの対処方法の詳細については、[証明書のエラー](#certificate-errors)を参照してください。
 
 ## 証明書エラー{#certificate-errors}
 
