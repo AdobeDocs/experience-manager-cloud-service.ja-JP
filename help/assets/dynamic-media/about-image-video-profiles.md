@@ -47,7 +47,7 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 
 >[!NOTE]
 >
->Dynamic Media ClassicからExperience Managerへのアセットの一括移行を実行する場合は、Dynamic Media Serverで移行レプリケーションエージェントを有効にする必要があります。 移行が完了したら、このエージェントを必ず無効にします。
+>アセットの一括移行をDynamic MediaクラシックからExperience Managerに実行する場合は、Dynamic Mediaサーバーで移行レプリケーションエージェントを有効にする必要があります。 移行が完了したら、このエージェントを必ず無効にします。
 
 >
 >再処理ワークフローが期待どおりに動作するように、Dynamic Media サーバー上で移行公開エージェントを無効にする必要があります。
@@ -59,7 +59,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 -->
 
 **フォルダー内の Dynamic Media アセットの再処理**：
-1. Adobe Experience Managerのアセットページで、画像プロファイルまたはビデオプロファイルが割り当てられ、**Scene7を適用するダイナミックメディアアセットのに移動します。アセット**&#x200B;の再処理ワークフロー、
+1. Adobe Experience Managerで、アセットページから、画像プロファイルまたはビデオプロファイルが割り当てられていて、**Scene7を適用するDynamic Mediaアセットのーに移動します。アセット**&#x200B;の再処理ワークフロー、
 
    既にイメージプロファイルまたはビデオプロファイルが割り当てられているフォルダーには、カード表示のフォルダー名のすぐ下にプロファイルの名前が表示されます。
 
