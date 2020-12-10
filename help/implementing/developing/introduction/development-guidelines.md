@@ -86,7 +86,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ### ログ {#logs}
 
-ローカル開発の場合、ログエントリは`/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
+ローカル開発の場合、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
 クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
