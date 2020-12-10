@@ -2,7 +2,7 @@
 title: TXTレコードの追加
 description: カスタムドメイン名の追加
 translation-type: tm+mt
-source-git-commit: 8d97bedc8c473c13e3378849741104b2c85492e2
+source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -19,7 +19,7 @@ TXTレコードを作成する前に、次の手順に従う必要がありま�
 * 組織のドメインのDNSレコードを変更する権限を持つか、または可能な適切な担当者に問い合わせてください。
 * ドメインホストまたは登録機関を既に知らない場合は、それを特定します。
 
-ドメインの検証を開始すると、Cloud Managerで検証に使用する名前とTXT値が提供されます。 指定し追加た名前と値を使用して、ドメインのDNSサーバーにTXTレコードを送信します。
+ドメインの検証を開始すると、検証に使用する名前とTXT値がCloud Managerによって提供されます。 指定し追加た名前と値を使用して、ドメインのDNSサーバーにTXTレコードを送信します。
 
 1. ドメインホストにログインし、「DNSレコード」セクションにアクセスします。
 1. 追加`_aemverification.[yourdomainname]`を名前として指定し、TXT値を表示されるとおりに追加します。
