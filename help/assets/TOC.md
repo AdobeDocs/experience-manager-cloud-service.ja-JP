@@ -64,7 +64,7 @@ ht-degree: 87%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Brand Portal] での [!DNL Assets] の設定](configure-aem-assets-with-brand-portal.md)
+   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
@@ -85,7 +85,7 @@ ht-degree: 87%
    + [Dynamic Media の操作](dynamic-media/dynamic-media.md)
    + [Dynamic Media の設定](dynamic-media/config-dm.md)
    + [Dynamic Media のトラブルシューティング](dynamic-media/troubleshoot-dm.md)
-   + [ダイナミックメディアでのアクセシビリティ](dynamic-media/accessibility-dm.md)
+   + [Dynamic Mediaでのアクセシビリティ](dynamic-media/accessibility-dm.md)
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
