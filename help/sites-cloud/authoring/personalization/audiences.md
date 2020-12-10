@@ -65,7 +65,7 @@ Adobe Target オーディエンスを作成するには：
 
    ![オーディエンスへの移動](/help/sites-cloud/authoring/assets/audiences-navigation.png)
 
-1. オーディエンスコンソールで、「**作成**」、「**Target オーディエンスを作成**」の順にタップまたはクリックします。
+1. オーディエンスコンソールで、「**作成**」、「**ターゲットオーディエンスを作成**」の順にタップまたはクリックします。
 
    ![ターゲットオーディエンスの作成](/help/sites-cloud/authoring/assets/audiences-create-target.png)
 
