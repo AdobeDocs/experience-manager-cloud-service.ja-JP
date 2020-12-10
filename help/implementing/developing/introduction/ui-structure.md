@@ -169,4 +169,4 @@ AEM には、編集、プレビュー、注釈など、ページオーサリン�
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-技術情報について詳しくは、ページエディター用の [JS ドキュメントセット](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)を参照してください。
+技術情報について詳しくは、ページエディター用の [JS ドキュメントセット](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)を参照してください。
