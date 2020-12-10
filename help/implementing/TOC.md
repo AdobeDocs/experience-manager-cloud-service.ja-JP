@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: c130ade74e91c4247b4c858621a4d39d45fb2404
+source-git-commit: c1485dabe9c31b355a0b06b96c69a11e31ea9962
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 81%
+source-wordcount: '681'
+ht-degree: 69%
 
 ---
 
@@ -28,6 +28,32 @@ ht-degree: 81%
       + [UIテスト](/help/implementing/cloud-manager/ui-testing.md)
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
    + [通知について](cloud-manager/notifications.md)
+   + SSL証明書の管理{#manage-ssl-certificates}
+      + [概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [SSL証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [SSL証明書の表示と更新または置き換え](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+      + [SSL証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [SSL証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+   + カスタムドメイン名{#custom-domain-names}
+      + [概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [カスタムドメイン名の取得](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
+      + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+      + [TXTレコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+      + [DNS設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [DNSレコードの状態を確認しています](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [カスタムドメイン名のSSL証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
+      + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   + IP許可リスト{#ip-allow-lists}
+      + [概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
+      + [IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+      + [IP許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+      + [IP許可リストの適用を解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
+      + [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
