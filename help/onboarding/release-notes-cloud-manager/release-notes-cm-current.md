@@ -1,35 +1,36 @@
 ---
-title: Cloud Serviceリリース2020.11.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2020.11.0としてのAEMのCloud Managerのリリースノート
+title: Cloud Serviceリリース2020.12.0としてのAEMのCloud Managerのリリースノート
+description: Cloud Serviceリリース2020.12.0としてのAEMのCloud Managerのリリースノート
 translation-type: tm+mt
-source-git-commit: 727dfd1d16a80620fba6db00289021ee5efae0fc
+source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 36%
+source-wordcount: '128'
+ht-degree: 6%
 
 ---
 
 
-# Cloud Service2020.11.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Cloud Service2020.12.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.11.0として概要を説明しています。
+このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.12.0として概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12日です。
+AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10日です。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 新機能 {#what-is-new}
 
-* 新しいメニューオプション&#x200B;**ローカルログイン**が、環境カードおよび環境の概要ページの環境メニューオプションから利用できるようになりました。
-詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md##login-locally)を参照してください。
+* [SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
 
-* Cloud Managerの「**学習**」タブが更新され、UIの新しい画像が表示されました。
+* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
 
-### バグ修正 {#bug-fixes-cloud-manager}
+* **環境**&#x200B;の詳細ページが更新され、環境のカスタムドメイン名とIP許可リストを管理できるようになりました。
 
-* ビルドの実行に先立っておこなわれる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
-* 言語を選択するための Cloud Manager フッターからのリンクが、正しい場所を指すようになりました。
-* コードスキャン時に SonarQube プロセスが起動しないことがあります。これが自動検出され、再起動が試行されるようになりました。
-* 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
+
+### バグ修正  {#bug-fixes}
+
+* 結果を提供せずに、コードスキャン段階でエラーが発生する場合があります。
+
+* 環境カードに&#x200B;**追加**&#x200B;ボタンが一貫して表示されませんでした。
