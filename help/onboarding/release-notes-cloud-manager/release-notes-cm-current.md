@@ -2,9 +2,9 @@
 title: Cloud Serviceリリース2020.12.0としてのAEMのCloud Managerのリリースノート
 description: Cloud Serviceリリース2020.12.0としてのAEMのCloud Managerのリリースノート
 translation-type: tm+mt
-source-git-commit: 738cff4231f329826b44f1b0f1a184fa15edd82a
+source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '129'
 ht-degree: 6%
 
 ---
