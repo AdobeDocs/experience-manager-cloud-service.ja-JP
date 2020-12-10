@@ -500,7 +500,7 @@ UI モジュールおよび UI モジュールレンダラーを管理します�
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-UI モジュールレンダラーを ContextHub に登録します。登録後、レンダラーを使用して [UI モジュールを作成](configuring-contexthub.md#adding-a-ui-module)できます。[ を拡張`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types)してカスタム UI モジュールレンダラーを作成する場合は、この関数を使用します。
+UI モジュールレンダラーを ContextHub に登録します。登録後、レンダラーを使用して [UI モジュールを作成](configuring-contexthub.md#adding-a-ui-module)できます。`ContextHub.UI.BaseModuleRenderer`](extending-contexthub.md#creating-contexthub-ui-module-types) を拡張[してカスタム UI モジュールレンダラーを作成する場合は、この関数を使用します。
 
 ##### パラメーター {#parameters-registerrenderer}
 
