@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '693'
 ht-degree: 68%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 68%
       + [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
       + [DNS設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
       + [DNSレコードの状態を確認しています](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+      + [カスタムドメイン名の表示と更新と置き換え](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [カスタムドメイン名のSSL証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + IP許可リストの管理{#ip-allow-lists}
