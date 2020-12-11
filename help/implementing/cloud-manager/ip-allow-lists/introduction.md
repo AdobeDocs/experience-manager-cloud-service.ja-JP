@@ -2,9 +2,9 @@
 title: 概要 — Could ManagerでのIP許可リスト
 description: 概要 — Could ManagerでのIP許可リスト
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ IP許可リストは1回追加すると、1つのユニットまたはエンテ�
 
 権限を持つユーザーは、Cloud Manager UI IP許可リストページまたは環境の詳細ページを使用して、次のような環境のIP許可リストを管理するためのタスクを実行できます。
 
-* IP許可リストの追加
+* [IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
    >[!NOTE]
    > 1回追加だけルールを再利用したり、プログラム内の環境サービス間で任意の回数ルールを適用したりできます。
-* IP許可リストの表示と更新
-* IP許可リストの適用または適用解除
-* IP許可リストの削除
+* [IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
+* [IP許可リストの適用または適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+* [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
