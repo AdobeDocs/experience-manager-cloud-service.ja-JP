@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 3aff98256eb26176bca52a49286bf2853290b5ef
+source-git-commit: d115f5ce463257af54ae0ff48749df455b863dfd
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -123,10 +123,10 @@ Cloud ServiceSDKビルドアナライザーMavenプラグインとしてのAEM�
 
 ### [!DNL Code Refactoring Tools] の新機能 {#what-is-new-crt}
 
-* AIO-CLIプラグインの新しいバージョンがリリースされました。 このプラグインの最新バージョンには、AEM Dispatcher ConverterとRepository Modenizerのバグ修正が含まれ、新しいユーティリティIndex Converterもサポートされています。 このプラグインの詳細については、[統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)を参照してください。
+* AIO-CLIプラグインの新しいバージョンがリリースされました。 このプラグインの最新バージョンには、AEM Dispatcher ConverterとRepository Modenizerのバグ修正が含まれ、新しいユーティリティIndex Converterもサポートされています。
+このプラグインの詳細については、[統合エクスペリエンス](/help/move-to-cloud-service/unified-experience.md)を参照してください。
 
-* Index Converterは、Cloud Service互換のOAKインデックス定義として、顧客のカスタムOAKインデックス定義をAEMに変換するために使用できるユーティリティです。
-詳しくは、[Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)を参照してください。
+* [Index ](/help/move-to-cloud-service/refactoring-tools/index-converter.md) Converterは、顧客のCustom OAK Index Definitionsを、Cloud Service互換のOAK Index DefinitionsとしてAEMに変換するために使用できるユーティリティです。詳しくは、[Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)を参照してください。
 
 * [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)に追加された新機能。すべてのOSGi設定を含む個別のパッケージ`ui.config`を作成します。
 
