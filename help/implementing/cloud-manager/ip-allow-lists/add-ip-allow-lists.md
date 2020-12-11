@@ -2,7 +2,7 @@
 title: 'IP許可リストの追加 '
 description: IP許可リストの追加
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 701020701fd45af720edea13a70cb459a650fbca
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -10,11 +10,9 @@ ht-degree: 0%
 ---
 
 
-# 概要 {#introduction}
+# IP許可リストの追加{#add-ip-allow-list}
 
 IP許可リストを追加するには、Business Owner（ビジネス所有者）またはDeployment Manager（展開マネージャー）の役割を持つユーザーがログインしている必要があります。
-
-## IP許可リストの追加{#add-ip-allow-list}
 
 次の手順に従って、IP許可リストを追加します。
 
