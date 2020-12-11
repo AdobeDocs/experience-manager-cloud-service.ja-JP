@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 146f5348eb9c0fafd5dd8c4f974e1e534d9bb0df
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 63%
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -150,15 +150,22 @@ ht-degree: 63%
 
 ## カスタムドメイン名の管理{#manage-cdn}
 
-環境の概要ページから環境の詳細ページにナビゲートします。
+「環境の概要」ページから、**環境**&#x200B;の詳細ページに移動します。
 
 以下に示すように、お使いの環境の発行サービスで次の操作を実行できます。
 
-1. **カスタムドメイン名の追加**:「カスタムドメイン名の [追加」を参照してください。](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. **カスタムドメイン**
+名の追加カスタムドメイン名の [追加を参照](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **カスタムドメイン名の表示と更新**:「カスタムドメイン名とSSL証明書の [表示と更新」を参照してください。](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+1. **カスタムドメイン名と**
+証明書の表示と更新
+   * [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
+   * [SSL証明書の表示と更新](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
 
-1. **カスタムドメイン名の削除**:「カスタムドメイン名とSSL証明書の [削除」を参照してください。](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. **カスタムドメイン名と**
+証明書の削除
+   * [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+   * [SSL証明書](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## IP許可リストの管理{#manage-ip-allow-lists}
 
