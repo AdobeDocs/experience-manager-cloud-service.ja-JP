@@ -2,9 +2,9 @@
 title: Cloud Serviceリリース2020.12.0としてのAEMのCloud Managerのリリースノート
 description: Cloud Serviceリリース2020.12.0としてのAEMのCloud Managerのリリースノート
 translation-type: tm+mt
-source-git-commit: 4635cb6360707d12cf512b0ee21f05169a153114
+source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '130'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10�
 
 * [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
 
-* **環境**&#x200B;の詳細ページが更新され、環境のカスタムドメイン名とIP許可リストを管理できるようになりました。
+* **環境**&#x200B;の詳細ページが更新され、環境上のカスタムドメイン名とIP許可リストを管理できるようになりました。
 
 
 ### バグ修正  {#bug-fixes}
