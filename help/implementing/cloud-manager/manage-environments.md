@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
+source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 62%
+source-wordcount: '1248'
+ht-degree: 63%
 
 ---
 
@@ -154,18 +154,11 @@ ht-degree: 62%
 
 以下に示すように、お使いの環境の発行サービスで次の操作を実行できます。
 
-1. **カスタムドメイン**
-名の追加カスタムドメイン名の [追加を参照](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-1. **カスタムドメイン名と**
-証明書の表示と更新
-   * [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-   * [SSL証明書の表示と更新](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
+1. [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
 
-1. **カスタムドメイン名と**
-証明書の削除
-   * [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
-   * [SSL証明書](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+1. [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
 ## IP許可リストの管理{#manage-ip-allow-lists}
 
@@ -176,23 +169,23 @@ ht-degree: 62%
 IP許可リストの適用は、許可リストの定義に含まれるすべてのIP範囲が、環境の作成者または発行サービスに関連付けられるプロセスです。 IP許可リストを適用するには、Business Owner（ビジネス所有者）またはDeployment Manager（展開マネージャー）の役割を持つユーザーがログインしている必要があります。
 
 >[!NOTE]
->IP許可リストを環境サービスに適用するには、Cloud ManagerにIPアドレスが存在する必要があります。 Cloud ManagerのIP許可リストの詳細については、「Could Manager[のIP許可リストの概要」に移動してください。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>IP許可リストを環境サービスに適用するには、Cloud ManagerにIPアドレスが存在する必要があります。 Cloud ManagerのIP許可リストの詳細については、「Could Manager[のIP許可リストの紹介」に移動してください。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
-その場合は、次の手順に従います。
+IP許可リストを適用するには、次の手順に従います。
 
-1. 環境画面から特定の環境の詳細ページに移動し、IP許可リストテーブルに移動します。
+1. **環境**&#x200B;の詳細ページから特定の環境に移動し、**IP許可リスト**&#x200B;テーブルに移動します。
 1. IP許可リストテーブルの上部にある入力フィールドを使用して、IP許可リストと、それを適用する作成者または発行サービスを選択します。
-1. 次に、「Apply」を選択し、送信を確認します。
+1. 「**Apply**」をクリックし、送信を確認します。
 
 ### IP許可リストの適用解除{#unapply-ip-allow-list}
 
-IP許可リストの適用解除は、許可リストの定義に含まれるすべてのIP範囲が、環境の作成者/発行者サービスと関連付け解除されるプロセスです。  IP許可リストの適用を解除するには、Business Owner（ビジネス所有者）またはDeployment Manager（デプロイメントマネージャー）の役割を持つユーザーがログインしている必要があります。
+IP許可リストの適用解除は、許可リストの定義に含まれるすべてのIP範囲が、環境内の作成者サービスまたは発行者サービスと関連付け解除されるプロセスです。 IP許可リストの適用を解除するには、Business Owner（ビジネス所有者）またはDeployment Manager（デプロイメントマネージャー）の役割を持つユーザーがログインしている必要があります。
 
-その場合は、次の手順に従います。
+IP許可リストの適用を解除するには、次の手順に従います。
 
-1. 環境画面から特定の環境の詳細ページに移動し、IP許可リストテーブルに移動します。
+1. 環境画面から特定の&#x200B;**環境**&#x200B;の詳細ページに移動し、**IP許可リスト**&#x200B;テーブルに移動します。
 1. 適用を解除するIP許可リスト規則が一覧表示されている行を識別します。
 1. **を選択…**&#x200B;メニューを表示します。
-1. 「未適用」オプションを選択し、送信を確認します。
+1. 「**適用解除**」オプションを選択し、送信を確認します。
 
 
