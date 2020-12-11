@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 483c31a7ca53dc5e5dcffe3e9bfc7ce613ca8697
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 63%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 63%
 IP許可リストの適用は、許可リストの定義に含まれるすべてのIP範囲が、環境の作成者または発行サービスに関連付けられるプロセスです。 IP許可リストを適用するには、Business Owner（ビジネス所有者）またはDeployment Manager（展開マネージャー）の役割を持つユーザーがログインしている必要があります。
 
 >[!NOTE]
->IP許可リストを環境サービスに適用するには、Cloud ManagerにIPアドレスが存在する必要があります。 Cloud ManagerのIP許可リストの詳細については、「Could Manager[のIP許可リストの紹介」に移動してください。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>IP許可リストを環境サービスに適用するには、Cloud ManagerにIPアドレスが存在する必要があります。 Cloud ManagerでのIP許可リストの詳細については、「Could ManagerでのIP許可リストの紹介[」を参照してください。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
 
 IP許可リストを適用するには、次の手順に従います。
 
