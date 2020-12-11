@@ -2,7 +2,7 @@
 title: IP許可リストの状態の確認
 description: IP許可リストの状態の確認
 translation-type: tm+mt
-source-git-commit: 4245bbad81327ffdba9c400a36a03d815e2ebdc7
+source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -33,7 +33,8 @@ ht-degree: 0%
 
 * **削除**:削除要求が進行中です。これには、すべてのサービスの適用を取り消す必要があります。 各非適用は、「未開始/進行中/完了」または「失敗」と共に表示されます。
 削除の操作が完了すると、IP許可リストは次の操作を行います。
-   * IP許可リストテーブルに表示されなくなりました* Cloud Managerのプログラム内のサービスには適用されなくなりました
+   * IP許可リストテーブルに表示されなくなります。
+   * Cloud Managerのプログラム内のどのサービスにも適用されなくなりました。
 
 * **削除に失敗しました**:削除操作の1つ以上の非適用プロセスが失敗しました。各Unapplyは、「完了」または「失敗」と共に表示されます。
 
