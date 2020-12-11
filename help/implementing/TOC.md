@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: b19dfdd33ae789e56a56edc7a3d7ea960ba46d91
+source-git-commit: b3c577f1030ed96e5dde596c5fe01e853c3199df
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '701'
 ht-degree: 68%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 68%
       + [IP許可リストの適用を解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
