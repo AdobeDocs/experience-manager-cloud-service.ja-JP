@@ -2,7 +2,7 @@
 title: コンテンツフラグメントの作成ヘッドレスクイック開始ガイド
 description: コンテンツフラグメントを使用すると、AEMでヘッドレスに配信できるページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用できます。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 3%
@@ -53,5 +53,6 @@ ht-degree: 3%
 
 コンテンツフラグメントを作成したら、はじめにガイドの最後の部分に進み、[コンテンツフラグメントにアクセスして配信するためのAPIリクエストを作成できます。](create-api-request.md)
 
->!![TIP]
-コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/assets/content-fragments/content-fragments.md)を参照してください
+>[!TIP]
+>
+>コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/assets/content-fragments/content-fragments.md)を参照してください
