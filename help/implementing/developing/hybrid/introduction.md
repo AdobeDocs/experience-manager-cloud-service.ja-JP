@@ -2,10 +2,10 @@
 title: SPA の概要およびガイド
 description: この記事では、SPA の概念を説明し、基本的な SPA アプリケーションを使用したオーサリング方法を紹介し、基礎となる AEM SPA エディターとの関連を示します。
 translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+source-git-commit: e4b75913e8d2ec90efc97d79e3a272b146fc06d6
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
+source-wordcount: '1933'
+ht-degree: 97%
 
 ---
 
@@ -80,8 +80,10 @@ SPA の背後にある主な考え方は、SPA がネイティブアプリケー
 >AEM での SPA の動作方法に関する技術的な詳細は、次の記事を参照してください。
 >* [React を使用した AEM での SPA の概要](getting-started-react.md)
 >* [Angular を使用した AEM での SPA の概要](getting-started-angular.md)
+
 >
->SPA エディターのデザイン、アーキテクチャ、技術的なワークフローについて詳しくは、次の記事を参照してください。
+>
+SPA エディターのデザイン、アーキテクチャ、技術的なワークフローについて詳しくは、次の記事を参照してください。
 >* [SPA エディターの概要](editor-overview.md).
 
 
@@ -151,7 +153,7 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
 ### SPA アプリケーションの読み込み {#loading-a-spa-application}
 
-1. 読み込みがまだの場合は、Web.Retai ジャーナルアプリケーションを公開サーバーに読み込むか、ページエディターの&#x200B;**ページ情報**&#x200B;メニューから「**公開済みとして表示**」オプションを使用して読み込みます。
+1. まだ読み込まれていない場合は、WKND SPA Projectアプリをパブリッシュサーバーに読み込むか、ページエディターの&#x200B;**ページ情報**&#x200B;メニューから&#x200B;**表示を発行済み**&#x200B;として読み込みます。
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -252,7 +254,7 @@ AEM SPA エディターを活用する SPA が構築されている場合、コ�
 
 1. このモデルでは、ページを同期して読み込むように複数のページをグループ化できるので、必要なページ再読み込み数を減らせます。
 
-   Web.Retail ジャーナルの例では、訪問者は一般的にこれらのすべてのページを訪問するので、`home`、`page-1`、`page-2`、`page-3` ページは同期して読み込まれます。
+   WKND SPAプロジェクトアプリの例では、訪問者は一般的にこれらのすべてのページを訪問するので、`home`、`page-1`、`page-2`、`page-3`の各ページは同期的に読み込まれます。
 
    この動作は必須ではなく、完全に定義可能です。
 
