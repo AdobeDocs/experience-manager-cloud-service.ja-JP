@@ -2,7 +2,7 @@
 title: 構成ヘッドレスクイック開始ガイドの作成
 description: Cloud ServiceとしてAEMでヘッドレス機能を使い始める最初の手順として、設定を作成する必要があります。
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 2%
@@ -42,12 +42,14 @@ AEMのヘッドレスなコンテンツ管理に関しては、AEM内でコン�
 
 必要に応じて、複数の設定を作成できます。 設定は入れ子にすることもできます。
 
->!![NOTE]
-導入要件に応じて、**コンテンツフラグメントモデル**&#x200B;および&#x200B;**GraphQLの永続的なクエリ**&#x200B;に加えて、設定オプションが必要になる場合があります。
+>[!NOTE]
+>
+>導入要件に応じて、**コンテンツフラグメントモデル**&#x200B;および&#x200B;**GraphQLの永続的なクエリ**&#x200B;に加えて、設定オプションが必要になる場合があります。
 
 ## 次の手順 {#next-steps}
 
 この設定を使用すると、はじめにガイドの2番目の部分に進み、[コンテンツフラグメントモデルを作成します。](create-content-model.md)
 
->!![TIP]
-構成ブラウザーの詳細については、[構成ブラウザーのドキュメントを参照してください。](/help/implementing/developing/introduction/configurations.md)
+>[!TIP]
+>
+>構成ブラウザーの詳細については、[構成ブラウザーのドキュメントを参照してください。](/help/implementing/developing/introduction/configurations.md)
