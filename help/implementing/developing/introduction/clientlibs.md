@@ -117,7 +117,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 * clientlib（`/etc.clientlibs/myprojects/clientlibs/foo.js` を介す）
 * 静的な画像（`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` を介す）
 
-### クライアントライブラリの読み込みHTLを介す {#loading-via-htl}
+### クライアントライブラリの読み込み（HTL を介す）{#loading-via-htl}
 
 clientlibs がクライアントライブラリフォルダーに正常に保存および管理されると、HTL を介してアクセスできます。
 
