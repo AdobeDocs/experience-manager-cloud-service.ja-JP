@@ -2,7 +2,7 @@
 title: コンテンツフラグメントへのアクセスと配信ヘッドレスクイック開始ガイド
 description: アセットREST APIを使用すると、コンテンツフラグメントを管理でき、GraphQL APIを使用すると、ヘッドレスで簡単にコンテンツフラグメントコンテンツを配信できます。
 translation-type: tm+mt
-source-git-commit: 7ed96dc0da879800d731983a0399b4f4fb3d7d41
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 作成したモデルが`firstName`、`lastName`、`position`の各フィールドを持つ`person`と呼ばれている場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
 
-   ```
+   ```text
    query {
      persons {
        items {
