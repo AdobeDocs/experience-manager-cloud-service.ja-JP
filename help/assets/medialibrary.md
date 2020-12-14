@@ -3,10 +3,10 @@ title: AEM Assets と AEM Media Library との比較
 description: AEM Assets と AEM Media Library の違いなど、両者に関するよくある質問。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82dd9bd69fe994f74c7be8a571e386f0e902f6a1
+source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 100%
+source-wordcount: '694'
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ AEM Assets のお客様だけが使用できる独自の機能は次のとおり
 
 ## Web サイトでカテゴリ述語を使用したいのですが、その場合 AEM Assets は必要ですか。  {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-はい。カテゴリ述語は、Geometrixx Press Center で使用されるその他すべてのコンポーネントと共に AEM Assets に含まれており、AEM Assets ライセンスが必要です。
+はい、カテゴリ述語は、他のコンポーネントと共にAEM Assetsの一部であり、AEM Assetsのライセンスが必要です。
 
 ## 画像を読み込むときに自動的にサイズ変更したいのですが、その場合 AEM Assets は必要ですか。  {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
