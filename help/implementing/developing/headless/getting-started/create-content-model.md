@@ -2,7 +2,7 @@
 title: コンテンツフラグメントモデルの作成ヘッドレスクイック開始ガイド
 description: コンテンツフラグメントモデルは、AEMのヘッドレス機能を使用して作成および提供するコンテンツの構造を定義します。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -63,5 +63,6 @@ ht-degree: 1%
 
 モデルを作成してコンテンツフラグメントの構造を定義したら、はじめにガイドの3番目の部分に進み、フラグメント自体を保存するフォルダーを[作成します。](create-assets-folder.md)
 
->!![TIP]
-コンテンツフラグメントモデルについて詳しくは、[コンテンツフラグメントモデルのドキュメント](/help/assets/content-fragments/content-fragments-models.md)を参照してください
+>[!TIP]
+>
+>コンテンツフラグメントモデルについて詳しくは、[コンテンツフラグメントモデルのドキュメント](/help/assets/content-fragments/content-fragments-models.md)を参照してください
