@@ -2,7 +2,7 @@
 title: アセットフォルダのヘッドレスクイック開始ガイドの作成
 description: コンテンツフラグメントモデルは、コンテンツフラグメントの構造を定義します。 次に、コンテンツフラグメントはアセットフォルダーに保存されます。
 translation-type: tm+mt
-source-git-commit: 9c801af38142434a5a0302b73b6fc1469a0eaab2
+source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -53,5 +53,6 @@ ht-degree: 1%
 
 コンテンツフラグメント用のフォルダーを作成したら、はじめにガイドの4番目の部分に進み、[コンテンツフラグメントを作成します。](create-content-fragment.md)
 
->!![TIP]
-コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/assets/content-fragments/content-fragments.md)を参照してください
+>[!TIP]
+>
+>コンテンツフラグメントの管理について詳しくは、[コンテンツフラグメントのドキュメント](/help/assets/content-fragments/content-fragments.md)を参照してください
