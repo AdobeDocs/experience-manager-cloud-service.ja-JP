@@ -4,8 +4,8 @@ description: アセット共有の Query Builder の機能は、Java API と RES
 translation-type: tm+mt
 source-git-commit: cfd54f0cd84cef72b6f2fad1a85132c312a19348
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2069'
+ht-degree: 45%
 
 ---
 
