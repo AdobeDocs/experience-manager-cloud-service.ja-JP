@@ -4,8 +4,8 @@ description: クエリビルダーAPIの述語参照。
 translation-type: tm+mt
 source-git-commit: 90b635cb31af910e08bdee7925cec0c7beb05318
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2221'
+ht-degree: 16%
 
 ---
 
