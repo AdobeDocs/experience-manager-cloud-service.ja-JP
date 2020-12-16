@@ -4,8 +4,8 @@ description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新
 translation-type: tm+mt
 source-git-commit: d115f5ce463257af54ae0ff48749df455b863dfd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1194'
+ht-degree: 9%
 
 ---
 
