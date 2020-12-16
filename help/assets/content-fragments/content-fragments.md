@@ -100,8 +100,10 @@ ht-degree: 88%
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
 >* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+
 >
->エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
+>
+エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
 >詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
