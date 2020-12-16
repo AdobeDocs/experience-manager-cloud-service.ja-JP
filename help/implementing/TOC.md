@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: c82622ad26fecd547c12fff6994713488b9759df
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 68%
+ht-degree: 69%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 68%
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
-   + [複数のソースGitリポジトリの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [複数のソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
 + AEM as a Cloud Service 向けの開発{#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
    + [AEM プロジェクトリポジトリの構造パッケージ](developing/introduction/repository-structure-package.md)
