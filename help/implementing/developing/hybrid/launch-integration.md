@@ -16,7 +16,7 @@ Adobe Experience Platform Launch は、Analytics、ターゲットおよび Audi
 
 ## チュートリアル {#tutorial}
 
-SPA と Adobe Experience Platform Launch の統合方法を理解するには、[このナレッジベースの記事とチュートリアル](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)を参照してください。この記事では、Angular または React で構築した Experience Cloud を実装するだけでなく、Launch の設定手順も説明しています。
+SPA と Adobe Experience Platform Launch の統合方法を理解するには、[このナレッジベースの記事とチュートリアル](https://helpx.adobe.com/jp/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)を参照してください。この記事では、Angular または React で構築した Experience Cloud を実装するだけでなく、Launch の設定手順も説明しています。
 
 >[!NOTE]
 >
