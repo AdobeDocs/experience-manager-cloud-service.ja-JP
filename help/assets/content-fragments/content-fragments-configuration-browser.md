@@ -2,10 +2,10 @@
 title: コンテンツフラグメント — 設定ブラウザー
 description: 設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
 translation-type: tm+mt
-source-git-commit: ae918d074d4bacfc207d4dca2c67f41a3118aff4
+source-git-commit: c821baff208e563009e68f51700555ea1d516886
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 42%
+source-wordcount: '263'
+ht-degree: 38%
 
 ---
 
@@ -42,19 +42,25 @@ ht-degree: 42%
 >
 >詳しくは、[設定ブラウザー：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)も参照してください。
 
+>[!CAUTION]
+>
+>サブ設定（設定内にネストされた設定）は、コンテンツフラグメントでの使用をサポートしていません。
+
 1. **ツール**／**一般**&#x200B;に移動し、**設定ブラウザー**&#x200B;を開きます。
-2. Web サイトに適した場所を選択します。
-3. 「**作成**」を使用してダイアログを開き、次の操作をおこないます。
+
+1. 「**作成**」を使用してダイアログを開き、次の操作をおこないます。
 
    1. 「**タイトル**」を指定します。
-   2. ユーザーが使用できるようにするには、
+   1. ユーザーが使用できるようにするには、
       * **コンテンツフラグメントモデル**
       * **GraphQLの永続的なクエリ**
 
       ![設定の定義](assets/cfm-conf-01.png)
 
 
-4. 「**作成**」を選択して、定義を保存します。
+1. 「**作成**」を選択して、定義を保存します。
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### アセットフォルダーへの設定の適用 {#apply-the-configuration-to-your-assets-folder}
 
