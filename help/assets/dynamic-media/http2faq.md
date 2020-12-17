@@ -2,10 +2,10 @@
 title: コンテンツの HTTP/2 配信の FAQ
 description: HTTP/2 コンテンツ配信について説明します。
 translation-type: tm+mt
-source-git-commit: 24d929702fd9eb31b95fdd6d97c7b9978d919804
+source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 94%
+source-wordcount: '753'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ HTTP/2 とその利点については、次の Web サイトで簡潔に説明�
 
 ## コンテンツ配信を HTTP/2 に移行する主なメリット {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-パフォーマンスの向上は、Web サイトのコード、Scene7 の使用方法、顧客のデバイス、画面、場所などの要因によって大きく異なります。
+パフォーマンスがどれくらい向上するかは、Web サイトのコード、Dynamic Media の使用方法、消費者のデバイス、画面と場所などに応じて異なります。
 
 アドビ独自のテストでは、以下の結果が出ています。
 
@@ -41,13 +41,13 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 * リッチメディアリクエストにセキュア HTTPS を使用している。
 * アドビ製品にバンドルされたコンテンツ配信ネットワーク（CDN）を Dynamic Media Classic ライセンスの一部として使用している。
-* 汎用の Dynamic Media Classic ドメイン（`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` のいずれか）ではなく、専用ドメイン（`images.company.com` または `mycompany.scene7.com`）を使用している。
+* 汎用の Dynamic Media ドメイン（`images.company.com`、`mycompany.scene7.com`、`s7d1.scene7.com` のいずれか）ではなく、専用ドメイン（`s7d2.scene7.com` または `s7d13.scene7.com`）を使用している。
 
-   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)します。
+   ドメインを検索するには、各会社アカウントの[Dynamic Mediaクラシック](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)のインスタンスにログインします。
 
-   **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**公開先サーバー名**」というラベルの付いたフィールドを見つけます。現在汎用 Scene7 ドメインを使用している場合は、この切り替えの一部として、独自のカスタムドメインへの移行を要求できます。
+   **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**公開先サーバー名**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
-## Dynamic Media Classic アカウントに対して HTTP/2 を有効にする方法 {#what-is-the-process-for-enabling-http-for-my-scene-account}
+## Dynamic Media アカウントに対して HTTP/2 を有効にする方法 {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
 [サポートケース](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)を作成し、HTTP/2に切り替えるようにリクエストするには、Admin Consoleを使用する必要があります。自動的には実行されません。
 
@@ -56,17 +56,17 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
    * 主要連絡先名、電子メールおよび電話番号。
    * HTTP/2 への切り替えが必要なすべてのドメイン。つまり、`images.company.com` または `mycompany.scene7.com`。
 
-   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)します。
+   ドメインを検索するには、各会社アカウントの[Dynamic Mediaクラシック](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)のインスタンスにログインします。
 
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
 
    * リッチメディアリクエストについて、セキュリティで保護された HTTPS を使用していることを確認します。
    * 直接的関係で管理するのではなく、アドビを介して CDN を使用していることを確認します。
-   * 専用ドメインを使用していることを確認します。つまり、`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` などの汎用の Scene7 ドメインではなく、`images.company.com` または `mycompany.scene7.com`。
+   * 専用ドメインを使用していることを確認します。つまり、`images.company.com`または`mycompany.scene7.com`です。`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`などの一般的なDynamic Mediaドメインではありません。
 
-   ドメインを確認するには、各会社アカウントの [Scene7 Publishing System のインスタンスにログイン](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)します。
+   ドメインを検索するには、各会社アカウントの[Dynamic Mediaクラシック](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)のインスタンスにログインします。
 
-   **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在汎用 Scene7 ドメインを使用している場合は、この切り替えの一部として、独自のカスタムドメインへの移行を要求できます。
+   **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
    1. テクニカルサポートによって、リクエストの送信順に基づいて HTTP/2 の顧客待機リストに追加されます。
    1. アドビでリクエストを処理する準備が整うと、サポートから連絡があり、移行についての調整および完了予定日の設定がおこなわれます。
