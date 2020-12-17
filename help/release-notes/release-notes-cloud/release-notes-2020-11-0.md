@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート.'
 translation-type: tm+mt
-source-git-commit: 70974ad7762bd07f68ee883756708799a79cf85f
+source-git-commit: 66374fe5a9126ba92e12c0128d5f60e0f0d09cb6
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 13%
@@ -34,7 +34,8 @@ Cloud Service2020.11.0の[!DNL Adobe Experience Manager]のリリース日は202
 ### [!DNL Assets]と[!DNL Dynamic Media] {#what-is-new-assets}の新機能
 
 * **一括アセット取り込み**:アセットマイクロサービスを含むCloud Serviceアーキテクチャ [!DNL Experience Manager] として活用する、拡張性の高いクラウドネイティブの取り込みサービスを提供します。主な使用例として、監視、レポート、スケジュール機能を使用した大規模な取り込みが挙げられます。また、一般的なクラウドアップロードツールを使用して、クラウドデータストアにアセットを初期的に転送できます。 [アセットバルクインジェスタツール](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
-このツールは、システム管理者、コンサルタント、または導入パートナーの担当者を対象としています。 この機能により、大規模な取り込みが可能になり、初回の取り込み時や時折大量の取り込み時に使用するのが理想的です。 取り込みジョブを小さくするには、[[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)または[アセットユーザーインターフェイス](/help/assets/add-assets.md#upload-assets)を使用したアップロードを使用します。
+
+   このツールは、システム管理者、コンサルタント、または導入パートナーの担当者を対象としています。 この機能により、大規模な取り込みが可能になり、初回の取り込み時や時折大量の取り込み時に使用するのが理想的です。 取り込みジョブを小さくするには、[[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)または[アセットユーザーインターフェイス](/help/assets/add-assets.md#upload-assets)を使用したアップロードを使用します。
 
    ![一括インポーターの設定](/help/assets/assets/bulk-import-config-low-res.png)
 
