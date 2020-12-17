@@ -2,10 +2,10 @@
 title: ルールセットを使用した URL の変換
 description: Dynamic Media でルールセットをデプロイして、URL を変換できます。ルールセットはスクリプティング言語（JavaScript など）で記述された命令セットで、XML データを評価して、そのデータが特定の条件を満たす場合に特定のアクションを実行します。
 translation-type: tm+mt
-source-git-commit: 1713cddf713afc24103a841a7dbae923941f6322
+source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 98%
 
 ---
 
@@ -17,11 +17,11 @@ Dynamic Media でルールセットをデプロイして、URL を変換でき�
 * MIME タイプのサフィックスの付加。多くのサービスや Web サイトでは、`.jpg` を URL に付加するなど、画像のサフィックスが必要です。
 * SEO（検索エンジン最適化）のための URL へのフォルダーパスの作成。
 
-   [Adobe Scene7 Publishing System による SEO のサポート](/help/assets/dynamic-media/assets/s7_seo.pdf)を参照してください。
+   [Dynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)を参照してください。
 
 * SEO（検索エンジン最適化）のための URL へのメタデータの付加。
 
-   [Adobe Scene7 Publishing System による SEO のサポート](/help/assets/dynamic-media/assets/s7_seo.pdf)を参照してください。
+   [Dynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)を参照してください。
 
 * ダウンロードを開始するためのコンテンツ処理方法の設定。
 * パーソナライゼーションのための画像サービングテンプレーティング URL の簡略化。例えば、`rgb{XX,YY,ZZ}` を RTF 対応の `\redXX\greenYY\blueZZ` に変換します。
