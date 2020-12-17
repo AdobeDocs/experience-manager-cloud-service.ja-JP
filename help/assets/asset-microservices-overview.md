@@ -3,10 +3,10 @@ title: アセットマイクロサービスを使用したアセットの処理
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 89%
+source-wordcount: '829'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 89%
 * アドビのネイティブファイル処理サービスを適宜使用して、[アドビ独自のファイル形式の高品質な出力と効率的な処理](file-format-support.md)を提供。
 * ユーザー固有のアクションおよび統合を追加するための後処理ワークフローを設定可能。
 
-アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（ImageMagick や FFmpeg トランスコーディングなど）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。
+Asset Microservicesを使用すると、サードパーティのレンダリングツールやメソッド（ImageMagickやFmpegトランスコードなど）が不要になり、設定が簡素化され、一般的なファイルタイプの基本的な機能がデフォルトで提供されます。
 
 ## アーキテクチャの概要 {#asset-microservices-architecture}
 
