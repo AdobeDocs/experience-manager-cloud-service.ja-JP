@@ -3,10 +3,10 @@ title: ビデオアセットの管理
 description: ' [!DNL Adobe Experience Manager] でビデオアセットをアップロード、プレビュー、注釈、公開します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '616'
+ht-degree: 80%
 
 ---
 
@@ -28,17 +28,17 @@ ht-degree: 100%
 
 ## ビデオアセットを公開する {#publish-video-assets}
 
-公開後、ビデオアセットを URL として Web ページに含めたり、アセットを直接埋め込んだりできます。詳しくは、[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+公開後、ビデオアセットを URL として Web ページに含めたり、アセットを直接埋め込んだりできます。詳しくは、[発行 [!DNL Dynamic Media] アセット](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
 ## 処理プロファイルを使用したトランスコード {#transcode-video}
 
 [!DNL Experience Manager][!DNL Cloud Service] as a では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールも可能です。
 
-![Experience Manager でのビデオトランスコードの処理プロファイルの作成](assets/video-processing-profile-for-mp4.png)
+![ビデオトランスコードの処理プロファイルを  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
 *図：[!DNL Experience Manager] でのビデオトランスコードの処理プロファイル。*
 
-幅または高さのみを指定して、その他のフィールドを空白にした場合、レンディションは縦横比を維持します。現在、トランスコードに使用できるのは h264 コーデックのみです。
+幅または高さのみを指定して、その他のフィールドを空白にした場合、レンディションは縦横比を維持します。H.264ビデオコーデックはトランスコードに使用できます。
 
 処理プロファイルを使用してアセットを処理するには、プロファイルをフォルダーに追加します。詳しくは、[処理プロファイルを使用したアセットの処理](/help/assets/asset-microservices-configure-and-use.md#use-profiles)を参照してください。
 
@@ -52,8 +52,18 @@ ht-degree: 100%
 
 ## ベストプラクティスと制限事項 {#tips-limitations}
 
-* Dynamic Media ライセンスがない場合、処理プロファイルを使用して処理できるのは、MP4 ファイルのみです。
-* 基本的なトランスコード
+* [!DNL Dynamic Media]ライセンスがない場合は、処理プロファイルを使用したMP4ファイルのみを処理できます。
+* 処理プロファイルを使用してMP4ファイルをトランスコードする場合、次のガイドラインと制限が適用されます。
+
+   * Apple ProResファイルは、最大解像度1080pにのみトランスコードできます。
+   * ソースファイルのビットレートが200 Mbpsを超える場合は、最大解像度1080pにのみトランスコードできます。
+   * その後、ソースフレームレート>= 60 fpsの場合、使用できるソースファイルの最大サイズは次のとおりです
+
+      * 4,000 MB（4,000 MBのトランスコード用）
+      * 800 MB（1080pトランスコード用）。
+      * 8 GB（720pトランスコード用）
+   * 4k解像度にトランスコードできる最大ファイルサイズは、解像度4k、ビットレート12 Mbps、23 fpsの2.55 GB MP4ファイルです。
+
 
 >[!MORELIKETHIS]
 >
