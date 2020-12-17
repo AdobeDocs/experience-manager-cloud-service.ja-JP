@@ -2,10 +2,10 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関する開発者向けリファレンスガイド
 translation-type: tm+mt
-source-git-commit: 3f31ced24ab8af942b848a8c9ac6bd53ceb5f3b1
+source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
 workflow-type: tm+mt
-source-wordcount: '3390'
-ht-degree: 35%
+source-wordcount: '3464'
+ht-degree: 34%
 
 ---
 
@@ -67,10 +67,6 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 * Javaの使用 — [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)を使用すると、HTLファイルからカスタムJavaクラスのヘルパーメソッドにアクセスできます。 そのため、Java コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
 * JavaScript の使用 - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)は、HTLファイルがJavaScriptで記述されたヘルパーコードにアクセスできるようにします。 そのため、JavaScript コードを使用して、コンポーネントのコンテンツを選択および設定するためのロジックを実装できます。
 * クライアント側ライブラリの使用 — 最新のWebサイトは、複雑なJavaScriptとCSSコードによるクライアント側の処理に大きく依存しています。 詳しくは、「AEMでのクライアント側ライブラリのCloud Serviceとしての使用[」のドキュメントを参照してください。](/help/implementing/developing/introduction/clientlibs.md)
-
-### 独自コンポーネントの開発 {#developing-your-own-components}
-
-開発コンテンツはこちら？
 
 ## コンポーネント構造{#structure}
 
@@ -409,6 +405,14 @@ AEMには、多くの既存の設定が存在します。 **CRXDE Lite**&#x200B;
 ### フィールドの検証 {#field-validation}
 
 Granite UIとGranite UIウィジェットのフィールド検証は、`foundation-validation` APIを使用して行います。 詳しくは、[`foundation-valdiation` Graniteのドキュメント](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)を参照してください。
+
+### ダイアログの可用性の検出{#dialog-ready}
+
+ダイアログが使用可能で準備が整ったときにのみ実行する必要があるカスタムJavaScriptがある場合は、`dialog-ready`イベントをリッスンする必要があります。
+
+このイベントは、ダイアログが読み込まれ（または再読み込み）、使用の準備ができたときにトリガーされます。つまり、ダイアログのDOMに変更（作成/更新）がある場合に必ずトリガーされます。
+
+`dialog-ready` は、ダイアログ内のフィールドや類似のタスクをカスタマイズするJavaScriptカスタムコードをフックするために使用できます。
 
 ## プレビュー動作{#preview-behavior}
 
