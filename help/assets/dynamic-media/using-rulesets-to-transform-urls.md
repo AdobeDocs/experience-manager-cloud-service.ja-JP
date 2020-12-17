@@ -2,10 +2,10 @@
 title: ルールセットを使用した URL の変換
 description: Dynamic Media でルールセットをデプロイして、URL を変換できます。ルールセットはスクリプティング言語（JavaScript など）で記述された命令セットで、XML データを評価して、そのデータが特定の条件を満たす場合に特定のアクションを実行します。
 translation-type: tm+mt
-source-git-commit: fe2cf46a7a84b4b07bf17de8c048fc2db41c2c70
+source-git-commit: 3a8f63c46e5604a9ce46250ac2d02cc95b473a7c
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 98%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -17,11 +17,11 @@ Dynamic Media でルールセットをデプロイして、URL を変換でき�
 * MIME タイプのサフィックスの付加。多くのサービスや Web サイトでは、`.jpg` を URL に付加するなど、画像のサフィックスが必要です。
 * SEO（検索エンジン最適化）のための URL へのフォルダーパスの作成。
 
-   [Dynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)を参照してください。
+   「[AdobeDynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)」を参照してください。
 
 * SEO（検索エンジン最適化）のための URL へのメタデータの付加。
 
-   [Dynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)を参照してください。
+   「[AdobeDynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)」を参照してください。
 
 * ダウンロードを開始するためのコンテンツ処理方法の設定。
 * パーソナライゼーションのための画像サービングテンプレーティング URL の簡略化。例えば、`rgb{XX,YY,ZZ}` を RTF 対応の `\redXX\greenYY\blueZZ` に変換します。
@@ -42,9 +42,11 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 
 また、最初は実稼動環境に影響を与えないステージング環境でルールセットをテストしてください。通常、実稼動環境とステージング環境では異なるログイン情報が必要となります。
 
-* **NA ステージング環境**&#x200B;のログインページ：[https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA ステージング環境**&#x200B;のログインページ：[https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC ステージング環境**&#x200B;のログインページ：[https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+ログイン情報については、[AdobeDynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)を参照してください。
+
+<!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 [ルールセットでの &#39;is&#39; イメージに代わる &#39;asset&#39; の使用](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)も参照してください。
 
