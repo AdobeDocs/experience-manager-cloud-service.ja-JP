@@ -2,10 +2,10 @@
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
 translation-type: tm+mt
-source-git-commit: 8aa2585e85b0ed23d68597857cda09dc301df4f6
+source-git-commit: 68f799349a4a1a9d5a09fb0cb23e0f5620d77d2f
 workflow-type: tm+mt
-source-wordcount: '1891'
-ht-degree: 100%
+source-wordcount: '1862'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,10 @@ ht-degree: 100%
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
+
 >
->現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
+>
+現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
 [Assets REST API](/help/assets/mac-api-assets.md) を使用すると、Adobe Experience Manager as a Cloud Service の開発者は、HTTP API 経由で CRUD 操作（作成、読み取り、更新、削除）を介して、（AEM に保存された）コンテンツに直接アクセスできます。
 
@@ -63,8 +65,8 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
 
 >[!NOTE]
->
 >アクセス経由：
+>
 >* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
 >* `/content/path/to/page` は `.model` セレクターを使用する&#x200B;**必要があります**。
 
@@ -147,6 +149,7 @@ The exact format of supported requests is defined in the [API Reference](/help/a
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -304,32 +307,27 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 次のように、いくつかの制限があります。
 
-* **バリエーションは書き込みも更新もできません。**&#x200B;バリエーションが（更新などの）ペイロードに追加された場合は、無視されます。ただし、このバリエーションは配信（`GET`）を通じて提供されます。
-
 * **コンテンツフラグメントモデルは現在サポートされていません。**&#x200B;読み取りも作成もできません。新しいコンテンツフラグメントを作成または既存のコンテンツフラグメントを更新できるようにするには、コンテンツフラグメントモデルの正しいパスがわかっている必要があります。現在のところ、これらの概要を取得するには、管理 UI を使用するしかありません。
 * **参照は無視されます。**&#x200B;現時点では、既存のコンテンツフラグメントが参照されているかどうかはチェックされません。したがって、例えば、コンテンツフラグメントを削除すると、削除されたコンテンツフラグメントへの参照を含んでいるページで問題が発生する可能性があります。
+
+<!--
+* **Variations cannot be written and updated.** If those variations are added to a payload (e.g. for updates) they will be ignored. However, the variation will be served via delivery ( `GET`).
+-->
 
 ## ステータスコードとエラーメッセージ {#status-codes-and-error-messages}
 
 関連する状況で次のステータスコードが表示されることがあります。
 
-* **200**（OK）
-
-   次の場合に返されます。
+* **200** (OK)が次の場合に返されます。
 
    * `GET` でコンテンツフラグメントを要求する
-
    * `PUT` でコンテンツフラグメントを正常に更新する
 
-* **201**（Created）
-
-   次の場合に返されます。
+* **201** （作成済み）が次の場合に返されます：
 
    * `POST` でコンテンツフラグメントを正常に作成する
 
-* **404**（Not Found）
-
-   次の場合に返されます。
+* **404**（Not Found）次の場合に返されます。
 
    * 要求されたコンテンツフラグメントが存在しない
 
@@ -339,8 +337,8 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
    >
    >次の場合に返されます。
    >
-   >    * 特定のコードで識別できないエラーが発生した場合
-   >    * 指定されたペイロードが有効でない場合
+   >* 特定のコードで識別できないエラーが発生した場合
+   >* 指定されたペイロードが有効でない場合
 
 
    このエラーステータスと生成されたエラーメッセージ（等幅テキスト）が返される一般的なシナリオの一覧を以下に示します。
@@ -382,6 +380,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 ## API リファレンス  {#api-reference}
 
 詳細な API リファレンスについては、こちらを参照してください。
+
 <!--
 * [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 -->
