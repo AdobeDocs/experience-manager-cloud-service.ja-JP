@@ -2,9 +2,9 @@
 title: 画像プリセットの管理
 description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3607'
 ht-degree: 97%
 
 ---
@@ -372,7 +372,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープニングについては、<a href="https://docs.adobe.com/content/help/ja-JP/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">画像のシャープニング</a>を参照してください。
+      シャープニングについては、<a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">画像のシャープニング</a>を参照してください。
     </div> </td>
   </tr>
   <tr>
