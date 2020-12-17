@@ -2,9 +2,9 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 984914c6147d0ee96575c93496cbdfc4bb9bc094
+source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 16%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 16%
 
 Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は2020年12月17日です。
 次のリリース(2021.1.0)は、2020年1月28日にリリースされます。
+
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+
+* **[コンテンツフラグメントHTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP 追加 APIを使用して、コンテンツフラグメントのバリエーションを追加/更新および削除する機能。
 
 ## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
 
