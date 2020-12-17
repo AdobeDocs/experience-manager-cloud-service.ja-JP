@@ -3,7 +3,7 @@ title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 29c3ca56281c482f195d84590ceb4ef07c556e64
 workflow-type: tm+mt
 source-wordcount: '2240'
 ht-degree: 89%
@@ -157,6 +157,16 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 >Webページで使用すると、取得したリモートアセットは、ローカルフォルダーへのアクセス権限を持つユーザーが検索および使用できます。 取得したアセットは、ローカルフォルダ（上のウォークスルーの`connectedassets`）に保存されます。 これらのアセットは、ローカルリポジトリでも[!UICONTROL コンテンツファインダー]経由で検索および表示できます。
 
 取得されたアセットは他のローカルアセットと同じように使用できます。ただし、関連するメタデータは編集できません。
+
+<!-- TBD: Uncomment after verification for Dec release.
+
+### Check use of an asset across other pages {#asset-usage-references}
+
+[!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset.
+
+Users can view incoming references of the assets and move or delete the asset.
+
+-->
 
 ## 制限事項とベストプラクティス {#tip-and-limitations}
 
