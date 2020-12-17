@@ -2,19 +2,19 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法に関する情報。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
 workflow-type: tm+mt
-source-wordcount: '3855'
-ht-degree: 94%
+source-wordcount: '3853'
+ht-degree: 93%
 
 ---
 
 
-# Dynamic Media Cloud Service の設定について {#configuring-dynamic-media-scene-mode}
+# Dynamic Media Cloud Service の設定について {#configuring-dynamic-media}
 
 開発用、ステージング用、実稼動用など、複数の異なる環境向けに Adobe Experience Manager をセットアップして使用する場合は、それぞれの環境向けに Dynamic Media Cloud Services を設定する必要があります。
 
-## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media-scene-mode}
+## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media}
 
 以下のアーキテクチャ図に Dynamic Media の仕組みを示します。
 
@@ -184,9 +184,9 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 ### （オプション）Dynamic Media 設定のセットアップと設定 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
-Dynamic Media Classic（Scene7）のユーザーインターフェイスを使用して、Dynamic Media の設定を変更します。
+[Dynamic Mediaクラシック]ユーザインターフェイスを使用して、Dynamic Media設定を変更します。
 
-上記のタスクの一部を実行するには、[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) で Dynamic Media Classic（Scene7）にログインする必要があります。
+上記のタスクの一部では、次の場所でDynamic Mediaクラシックにログインする必要があります。[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 セットアップおよび設定タスクには、次のものが含まれます。
 
