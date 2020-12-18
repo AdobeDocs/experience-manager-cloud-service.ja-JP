@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: デジタルア追加セットを [!DNL Adobe Experience Manager] a [!DNL Cloud Service]として<a0/>に保存します。
 translation-type: tm+mt
-source-git-commit: a5c9ec14af4241734fb6f6c88d5fc982e52924ce
+source-git-commit: 42d607c2dc938c2ed91ecac10b29824050dd6810
 workflow-type: tm+mt
 source-wordcount: '1895'
 ht-degree: 38%
@@ -148,6 +148,8 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 ### アセットバルクインジェスタツール{#asset-bulk-ingestor}
 
 このツールは、AzureまたはS3データストアからのアセットの大規模な取り込みに使用する管理者グループに対してのみ提供されます。
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
 ツールを設定するには、次の手順に従います。
 
