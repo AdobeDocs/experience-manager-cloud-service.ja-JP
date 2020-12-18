@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 1%
+source-wordcount: '618'
+ht-degree: 0%
 
 ---
 
@@ -52,12 +52,12 @@ Dynamic Mediaのユーザインターフェイス要素は、スクリーンリ�
 
 すべての標準搭載のDynamic Mediaビューアコンポーネントは、お客様向けのキーボードアクセシビリティをサポートしています。
 
-『Dynamic Mediaビューアリファレンスガイド』の[キーボードのアクセシビリティとナビゲーション](https://docs.adobe.com/content/help/ja-JP/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)を参照してください。
+『Dynamic Mediaビューアリファレンスガイド』の[キーボードのアクセシビリティとナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)を参照してください。
 
 ## Dynamic Mediaビューアで支援テクノロジーがサポート{#assistive-technology=support-for-dm-viewers}
 
 すべてのDynamic Mediaビューアコンポーネントは、ARIA(Accessible Rich Internet Applications)の役割と属性をサポートしており、スクリーンリーダーなどの支援テクノロジーとの統合を強化しています。
-『Dynamic Mediaビューアリファレンスガイド』の「ビューアのカスタマイズ」トピックで、**支援テクノロジサポート**&#x200B;ヘルプトピックを参照してください。 例えば、ビデオビューアの場合は[支援テクノロジーのサポート](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)を、インタラクティブ画像ビューアの場合は[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)を参照してください。
+『Dynamic Mediaビューアリファレンスガイド』の「ビューアのカスタマイズ」トピックで、**支援テクノロジサポート**&#x200B;ヘルプトピックを参照してください。 例えば、ビデオビューアの場合は[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)を、インタラクティブ画像ビューアの場合は[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=en#viewers-for-aem-assets-only)を参照してください。
 
 >[!MORELIKETHIS]
 >
