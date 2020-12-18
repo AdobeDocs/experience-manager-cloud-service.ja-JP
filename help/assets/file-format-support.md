@@ -3,10 +3,10 @@ title: サポートされているファイル形式と MIME タイプ
 description: ' [!DNL Experience Manager Assets] で [!DNL Cloud Service]としてサポートされているファイル形式とMIME型です。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 93%
+source-wordcount: '807'
+ht-degree: 91%
 
 ---
 
@@ -222,6 +222,10 @@ ht-degree: 93%
 ## オーディオ形式 {#audio-formats}
 
 [!DNL Assets] as a は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。[!DNL Cloud Service]
+
+## ヒントと制限事項 {#limitations-and-tips}
+
+* 現在、メタデータ抽出のファイルサイズの上限は約10 GBです。 非常に大きなアセットをアップロードする場合、メタデータの抽出操作に失敗することがあります。
 
 >[!MORELIKETHIS]
 >
