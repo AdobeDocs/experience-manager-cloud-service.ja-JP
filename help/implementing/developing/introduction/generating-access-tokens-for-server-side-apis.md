@@ -2,9 +2,9 @@
 title: サーバー側APIのアクセストークンの生成
 description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
 translation-type: tm+mt
-source-git-commit: 9a4cb6d981fdf5eea4d1b9c7ae9e3c99947d9745
+source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ### JWTベアラトークンの生成{#generating-the-jwt-bearer-token}
 
-組織の管理者ロールを持つユーザーには、特定の環境の開発者コンソールに、2つのボタンと共に「統合」タブが表示されます。 「**Get Service Credentials**」ボタンをクリックすると、秘密鍵、証明書、設定が生成されます。
+組織の管理者ロールを持つユーザーには、特定の環境の開発者コンソールに、2つのボタンと共に「統合」タブが表示されます。 「**サービス資格情報を取得**」ボタンをクリックすると、ポッドの選択内容に関係なく、環境の作成者層と発行層の秘密鍵、証明書、設定が生成されます。
 
 ![JWT生成](assets/JWTtoken3.png)
 
