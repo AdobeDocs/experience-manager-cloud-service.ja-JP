@@ -2,7 +2,7 @@
 title: Dynamic Media イメージプロファイル
 description: アンシャープマスクのほか、スマート切り抜きとスマートスウォッチのどちらか一方または両方の設定を含む Dynamic Media イメージプロファイルを作成し、そのプロファイルを画像アセットのフォルダーに適用します。
 translation-type: tm+mt
-source-git-commit: 59c532d8893f6dc6b94d7ec45a4af87ff1e37fff
+source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
 source-wordcount: '2753'
 ht-degree: 98%
