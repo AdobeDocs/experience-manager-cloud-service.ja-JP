@@ -2,9 +2,9 @@
 title: サーバー側APIのアクセストークンの生成
 description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
 translation-type: tm+mt
-source-git-commit: 251f5de85d63f6afd730fc450fe2b5a06bc90c38
+source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ ht-degree: 0%
 
 ## サーバ間のフロー{#the-server-to-server-flow}
 
-管理者ロールを持つユーザーは、JWTベアラトークンを生成できます。JWTベアラトークンは、サーバーにインストールし、秘密キーとして慎重に扱う必要があります。 JWTベアラトークンは、IMSと交換して、AEMへの要求に含まれるアクセストークンをCloud Serviceとして取り替える必要があります。
+管理者の役割を持つユーザーは、Cloud Serviceの資格情報としてAEMを生成できます。この資格情報はサーバーにインストールし、秘密キーとして慎重に扱う必要があります。 このJSON形式のファイルには、AEMとの統合に必要なCloud ServiceAPIとしてのすべてのデータが含まれています。 データは、署名付きJWTトークンの作成に使用され、IMSアクセストークンと交換されます。 その後、このアクセストークンをベアラ認証トークンとして使用し、AEMにCloud Serviceとしてリクエストを行うことができます。
 
 サーバー間のフローは次の手順で行います。
 
-* 開発者コンソールからJWTベアラートークンを生成します
-* AEMに対して呼び出しを行うAEM以外のサーバーにトークンをインストールする
-* AdobeのIMS APIを使用して、JWTベアラトークンをアクセストークンに交換する
-* AEM APIの呼び出し
+* 開発者コンソールからAEMをCloud Service資格情報として取得する
+* AEMに対して呼び出しを行う非AEMサーバー上に、Cloud Service資格情報としてAEMをインストールします
+* JWTトークンを生成し、AdobeのIMS APIを使用してアクセストークンとそのトークンを交換する
+* アクセストークンをベアラ認証トークンとして使用してAEM APIを呼び出す
 
-### JWTベアラトークンの生成{#generating-the-jwt-bearer-token}
+### AEMをCloud Service資格情報として取得{#fetch-the-aem-as-a-cloud-service-credentials}
 
-組織の管理者ロールを持つユーザーには、特定の環境の開発者コンソールに、2つのボタンと共に「統合」タブが表示されます。 「**サービス資格情報を取得**」ボタンをクリックすると、ポッドの選択内容に関係なく、環境の作成者層と発行層の秘密鍵、証明書、設定が生成されます。
+IMS組織の管理者ロールを持つユーザーには、特定の環境のDeveloper Consoleの「統合」タブと2つのボタンが表示されます。 「**サービス資格情報を取得**」ボタンをクリックすると、サービス資格情報jsonが生成されます。このjsonには、ポッドの選択内容に関係なく、環境の作成者層と公開層の設定を含む、AEM以外のサーバーに必要なすべての情報が含まれます。
 
 ![JWT生成](assets/JWTtoken3.png)
 
@@ -59,21 +59,45 @@ ht-degree: 0%
 }
 ```
 
-### AEM以外のサーバーにトークンをインストールする{#install-the-token-on-a-non-aem-server}
+### AEMサービス資格情報をAEM以外のサーバーにインストールする{#install-the-aem-service-credentials-on-a-non-aem-server}
 
-AEMに対して呼び出しを行う非AEMアプリケーションでは、JWTベアラトークンをインストールし、それを秘密として扱う必要があります。
+AEMに対して呼び出しを行うAEM以外のアプリケーションは、AEMにCloud Service資格情報としてアクセスでき、暗号鍵として扱う必要があります。
 
-### JWTトークンをアクセストークン{#exchange-the-jwt-token-for-an-access-token}に交換する
+### JWTトークンを生成し、アクセストークンと交換する{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-AdobeのIMSサービスへの呼び出しにJWTトークンを含めて、アクセストークンを取得します。これは24時間有効です。
+AdobeのIMSサービスへの呼び出しで秘密鍵証明書を使用してJWTトークンを作成し、アクセストークンを取得します。この認証は24時間有効です。
+
+AEM-CSサービス資格情報は、この目的で設計されたクライアントライブラリを使用して、アクセストークンと交換できます。 クライアントライブラリは、[AdobeのパブリックGitHubリポジトリ](https://github.com/adobe/aemcs-api-client-lib)から入手できます。このリポジトリには、より詳細なガイダンスと最新の情報が含まれています。
+
+```
+/*jshint node:true */
+"use strict";
+
+const fs = require('fs');
+const exchange = require("@adobe/aemcs-api-client-lib");
+
+const jsonfile = "aemcs-service-credentials.json";
+
+var config = JSON.parse(fs.readFileSync(jsonfile, 'utf8'));
+exchange(config).then(accessToken => {
+    // output the access token in json form including when it will expire.
+    console.log(JSON.stringify(accessToken,null,2));
+}).catch(e => {
+    console.log("Failed to exchange for access token ",e);
+});
+```
+
+同じ交換は、正しい形式で署名済みJWTトークンを生成し、IMS Token Exchange APIを呼び出すことのできる任意の言語で実行できます。
+
+アクセストークンは、有効期限（通常は12時間）を定義します。 gitリポジトリには、アクセストークンを管理し、期限が切れる前に更新するためのサンプルコードがあります。
 
 ### AEM API {#calling-the-aem-api}を呼び出しています
 
-アクセストークンを含め、AEMに対する適切なサーバー間API呼び出しをCloud Service環境として作成します。 したがって、&quot;Authorization&quot;ヘッダーには`"Bearer <access_token>"`の値を使用します。
+アクセストークンを含め、AEMに対する適切なサーバー間API呼び出しをCloud Service環境として作成します。 したがって、&quot;Authorization&quot;ヘッダーには`"Bearer <access_token>"`の値を使用します。 例えば、`curl`を使用します。
 
-<!-- ### Code Samples {#code-samples}
-
-https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL will change to public git repo before we publish) contains client libraries written in node.js that will exchange the JSON outputted by the developer console for an access token. -->
+```curlc
+curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
+```
 
 ## 開発者フロー{#developer-flow}
 
@@ -100,6 +124,6 @@ https://git.corp.adobe.com/boston/skyline-api-client-lib (internal note: URL wil
 
 Cloud Service環境として、AEM以外のアプリケーションからAEMに対する適切なサーバー間API呼び出しを行います。ヘッダーにアクセストークンを含めます。 したがって、&quot;Authorization&quot;ヘッダーには`"Bearer <access_token>"`の値を使用します。
 
-## JWTベアラトークンの失効{#jwt-bearer-token-revocation}
+## サービス資格情報の失効{#service-credentials-revocation}
 
 JWTベアラトークンを取り消す必要がある場合は、カスタマーサポートにリクエストを送信してください。
