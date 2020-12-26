@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 539fa16396519b66d53b91745bf69c819c5d5ea1
+source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIFコアコンポーネントバージョンv1.6.0を含むCIFベニアリファレンスサイト — 2020.12.01をリリースしました。詳細については、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)を参照してください。
+* 最新のCIFコアコンポーネントバージョンv1.6.0が含まれるCIFベニアリファレンスサイト — 2020.12.01をリリースしました。詳細は、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)を参照してください。
 
 * CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)」を参照してください。
 
@@ -57,7 +57,7 @@ AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10�
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* 結果を提供せずに、コードスキャン段階でエラーが発生する場合があります。
+* コードスキャンステージで、解決された結果が提供されず、エラーが発生する場合があります。
 
 * 環境カードに&#x200B;**追加**&#x200B;ボタンが一貫して表示されませんでした。
 
