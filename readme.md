@@ -1,14 +1,14 @@
 ---
-source-git-commit: aa4e8a3d1650411c4b78c534b5797abbcd0a7035
+source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '91'
-ht-degree: 63%
+source-wordcount: '97'
+ht-degree: 59%
 
 ---
-# Adobe Experience ManagerCloud Service文書
+# Cloud Service文書としてのAdobe Experience Manager
 
-これは、Adobe Experience ManagerCloud Serviceドキュメントのリポジトリです。 このドキュメントでは、インストール、管理、オーサリングの使用、およびCloud Serviceを使用したAEMのカスタマイズ方法について説明します。
+これは、Cloud ServiceドキュメントとしてAdobe Experience Managerのリポジトリです。 このドキュメントでは、インストール、管理、オーサリングの使用、およびCloud Serviceとしてのエクスペリエンスのカスタマイズ方法について説明します。
 
 ドキュメントに対する貢献を歓迎します。次のリソースを参照してください。
 
