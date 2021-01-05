@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d3100ce33aa294c30509f8b8c0e41ed4c42b880
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 15%
 
 ---
 
@@ -31,6 +31,6 @@ AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10�
 
 ### バグ修正  {#bug-fixes}
 
-* 結果を提供せずに、コードスキャン段階でエラーが発生する場合があります。
+* コードスキャンステージで、解決された結果が提供されず、エラーが発生する場合があります。
 
 * 環境カードに&#x200B;**追加**&#x200B;ボタンが一貫して表示されませんでした。
