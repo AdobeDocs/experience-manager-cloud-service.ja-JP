@@ -3,10 +3,10 @@ title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c915b32d676ff225cbe276be075d3ae1a865f11
+source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 93%
 
 ---
 
@@ -72,11 +72,11 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
-Adobe Experience Manager (AEM) Assets のこの XMP の書き戻し機能は、アセットメタデータの変更をアセットのレンディションにレプリケートします。
+Adobe Experience Manager(AEM)アセットのこのXMP書き戻し機能は、アセットのメタデータ変更をアセットのレンディションに複製します。
 
 AEM Assets 内からアセットのメタデータを変更した場合、またはアセットをアップロードした場合、変更は最初に CRXDE のアセットノードに保存されます。
 
-XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。
+XMPの書き戻し機能は、アセットのすべてのレンディションまたは特定のレンディションにメタデータの変更を反映します。
 
 「`Classic Leather`」というタイトルのアセットの「[!UICONTROL タイトル]」プロパティを「`Nylon`」に変更するシナリオについて考えます。
 
@@ -88,39 +88,43 @@ XMP の書き戻し機能によって、メタデータの変更が、アセッ�
 
 ただし、AEM Assets では、メタデータの変更はアセットのレンディションに自動的に反映されません。
 
-XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイル内に変更内容が埋め込まれます。
+XMPの書き戻し機能を使用すると、メタデータの変更をアセットのすべてのレンディションまたは特定のレンディションに反映できます。 ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイル内に変更内容が埋め込まれます。
 
-### XMP 書き戻しの有効化 {#enable-xmp-writeback}
+<!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes.
+### Enable XMP writeback {#enable-xmp-writeback}
 -->
 
-アセットのアップロード時にメタデータの変更をアセットのレンディションに反映させるには、設定マネージャーで「**[!UICONTROL Adobe CQ DAM Rendition Maker]**」の設定を変更します。
+<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
 
-1. Configuration Manager を開くには、`https://[aem_server]:[port]/system/console/configMgr` にアクセスします。
-1. 「**[!UICONTROL Adobe CQ DAM Rendition Maker]**」設定を開きます。
-1. 「**[!UICONTROL Propagate XMP]**」オプションを選択し、変更を保存します。
+<!-- 
+To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
-### 特定のレンディションに対する XMP 書き戻しの有効化 {#enable-xmp-writeback-for-specific-renditions}
+1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration.
+1. Select the **[!UICONTROL Propagate XMP]** option, and then save the changes.
 
-XMP の書き戻し機能によって、選択されたレンディションにメタデータの変更が反映されるようにするには、これらのレンディションを DAM メタデータ書き戻しワークフローの「[!UICONTROL XMP の書き戻しプロセス]」ワークフローステップに指定します。デフォルトでは、このステップには元のレンディションが設定されています。
+### Enable XMP write-back for specific renditions {#enable-xmp-writeback-for-specific-renditions}
 
-XMP の書き戻し機能でメタデータを thumbnail.140.100.png および thumbnail.319.319.png のレンディションに反映するには、次の手順を実行します。
+To let the XMP write-back feature propagate metadata changes to select renditions, specify these renditions to the [!UICONTROL XMP Writeback Process] workflow step of DAM Metadata WriteBack workflow. By default, this step is configured with the original rendition.
 
-1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**&#x200B;に移動します。
-1. モデルページで、「**[!UICONTROL DAM メタデータの書き戻し]**」ワークフローモデルを開きます。
-1. **[!UICONTROL DAM メタデータの書き戻し]**&#x200B;ページで、「**[!UICONTROL XMP の書き戻しプロセス]**」ステップを開きます。
-1. **[!UICONTROL ステップのプロパティ]**&#x200B;ダイアログボックスで、「**[!UICONTROL プロセス]**」タブをタップまたはクリックします。
-1. 「**[!UICONTROL 引数]**」ボックスに「`rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`」を追加し、「**[!UICONTROL OK]**」をタップまたはクリックします。
+For the XMP write-back feature to propagate metadata to the rendition thumbnails 140.100.png and 319.319.png, perform these steps.
+
+1. Tap/click the AEM logo, and then navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. From the Models page, open the **[!UICONTROL DAM Metadata Writeback]** workflow model.
+1. In the **[!UICONTROL DAM Metadata Writeback]** properties page, open the **[!UICONTROL XMP Writeback Process]** step.
+1. In the **[!UICONTROL Step Properties]** dialog box, tap/click the **[!UICONTROL Process]** tab.
+1. In the **[!UICONTROL Arguments]** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, and then tap/click **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. 変更内容を保存します。
-1. 新しい属性で Dynamic Media 画像の PTIFF（Pyramid TIFF）レンディションを再生成するには、「**[!UICONTROL Dynamic Media プロセスの画像アセット]**」ステップを DAM メタデータ書き戻しワークフローに追加します。PTIFF レンディションは、Dynamic Media Hybrid 実装でのみ、ローカルで作成および格納されます。
+1. Save the changes.
+1. To regenerate the Pyramid TIFF (PTIFF) renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata write-back workflow. PTIFF renditions are only created and stored locally in a Dynamic Media Hybrid implementation.
 
-1. ワークフローを保存します。
+1. Save the workflow.
 
-メタデータの変更がアセットのレンディション thumbnail.140.100.png と thumbnail.319.319.png のみに反映され、他のレンディションには反映されなくなります。
+The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
+-->
 
 >[!MORELIKETHIS]
 >
