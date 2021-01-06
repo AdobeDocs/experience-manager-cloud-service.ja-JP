@@ -3,10 +3,10 @@ title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの
 description: リモート  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: caf50490c573c2f119f2cbfa14ee7cca12854364
+source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 63%
+source-wordcount: '2704'
+ht-degree: 62%
 
 ---
 
@@ -105,6 +105,10 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
    >作成者がアセットを取得する際、リモート デプロイメントで使用可能なすべてのレンディションが取得されます。取得したアセットのレンディションをさらに作成したい場合は、この設定手順をスキップしてください。[!UICONTROL DAM アセットの更新]ワークフローが開始され、追加のレンディションが作成されます。これらのレンディションは、ローカルの [!DNL Sites] デプロイメントでのみ使用でき、リモート DAM デプロイメントでは使用できません。
 
 1. 追加[!DNL Sites]デプロイメントは、[!DNL Assets]デプロイメントのCORS設定で許可されている接触チャネルとして使用できます。 詳しくは、[CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)についてを参照してください。
+
+設定済みの[!DNL Sites]展開と[!DNL Assets]展開の間の接続を確認できます。
+
+![接続されたアセットが設定済みの接続テスト  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
