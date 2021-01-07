@@ -2,9 +2,9 @@
 title: 概要 — カスタムドメイン名
 description: 概要 — カスタムドメイン名
 translation-type: tm+mt
-source-git-commit: f40f87cb61d5f66ca5773d1fd1cfee6fb623201d
+source-git-commit: 677a5d65bb15c9579f19b0b4e8ef03d1201e4a94
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 概要 {#introduction}
 
-Cloud Managerでは、UIを介して、独自のブランド名を持つサイトを識別するカスタムドメインを追加できます。 AEMaaCSは、デフォルトのドメイン名（末尾が`*.adobearmcloud.com`）でプロビジョニングされます。 このデフォルトのドメイン名は、Webサイトにカスタムドメイン名を付けた後でも、そのまま残ります。
+Cloud Managerでは、UIを介して、独自のブランド名を持つサイトを識別するカスタムドメインを追加できます。 Cloud ServiceとしてのAdobe Experience Managerは、デフォルトのドメイン名（末尾が`*.adobeaemcloud.com`）でプロビジョニングされます。 このデフォルトのドメイン名は、Webサイトにカスタムドメイン名を付けた後でも、そのまま残ります。
 
 >[!NOTE]
 >カスタムドメイン名は、Cloud Managerで、Sitesプログラムの（Publishサービス）のみサポートされます。 各Cloud Manager環境は、1つの環境につき最大100個のカスタムドメインをホストできます。
