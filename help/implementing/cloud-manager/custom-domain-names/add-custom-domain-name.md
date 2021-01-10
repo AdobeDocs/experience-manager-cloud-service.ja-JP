@@ -2,7 +2,7 @@
 title: カスタムドメイン名の追加
 description: カスタムドメイン名の追加
 translation-type: tm+mt
-source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
+source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -50,7 +50,8 @@ Cloud Managerでカスタムドメイン名を追加するには、ユーザー�
 1. ドロップダウンから「**Domain SSL Certificate**」を選択し、「**Continue**」を選択します。
 
 1. **追加[ドメイン** 名]ダイアログボックスが表示されます。[環境名の検証]画面が開きます。 詳しくは、[TXTレコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)を参照してください。
-表示される手順に従って、環境のドメイン所有権を証明します。
+
+   表示される手順に従って、環境のドメイン所有権を証明します。
 
 1. 「**作成**」をクリックします。
 1. CDNデプロイメントには、有効なSSL証明書が必要で、TXT検証に成功している必要があります。 これは、ステータス&#x200B;**検証済みで展開済み**で示されます。
