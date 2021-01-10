@@ -2,9 +2,9 @@
 title: カスタムドメイン名の追加
 description: カスタムドメイン名の追加
 translation-type: tm+mt
-source-git-commit: 3d60af3da62a8a5c8cb62a4e79452bc7675b1878
+source-git-commit: b336f361b496b672d26a5316952ee52ce828e201
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Cloud Managerでカスタムドメイン名を追加するには、ユーザー�
 ## 重要な検討事項 {#important-considerations}
 
 * カスタムドメイン名を追加する前に、カスタムドメイン名を含む有効なSSL証明書をプログラムにインストールする必要があります。 詳しくは、[SSL証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
+
+* ドメインに現在実行中のパイプラインが接続されている間は、環境に環境名を追加できません。
 
 * 一度に追加できるドメイン名は1つだけです。 ただし、ドメインにワイルドカードを含めることはできません。 作成者側のカスタムドメインはサポートされていません。
 
