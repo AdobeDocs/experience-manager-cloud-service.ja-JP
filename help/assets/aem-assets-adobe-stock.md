@@ -3,10 +3,10 @@ title: ' [!DNL Assets] での  [!DNL Adobe Stock]  アセットの管理。'
 description: ' [!DNL Adobe Experience Manager] 内から  [!DNL Adobe Stock]  アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->複数の [!DNL Adobe Stock] 設定がある場合は、ユーザ環境設定パネルで目的の設定を選択します。Experience Manager ホームページからパネルにアクセスするには、ユーザーアイコンをクリックし、**[!UICONTROL ユーザー環境設定]**／**[!UICONTROL Stock 設定]**&#x200B;をクリックします。
+>複数の [!DNL Adobe Stock] 設定がある場合は、ユーザ環境設定パネルで目的の設定を選択します。Experience Managerホームページからパネルにアクセスするには、ユーザーアイコンをクリックし、**[!UICONTROL ユーザー環境設定]**/**[!UICONTROL 在庫設定]**&#x200B;をクリックします。
 
 ## [!DNL Experience Manager] での [!DNL Adobe Stock] アセットの使用と管理 {#usemanage}
 
