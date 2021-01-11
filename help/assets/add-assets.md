@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: デジタルア追加セットを [!DNL Adobe Experience Manager] a [!DNL Cloud Service]として<a0/>に保存します。
 translation-type: tm+mt
-source-git-commit: 6f5b6ba7da4c0d3161b9f34602b0256c319b191f
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 38%
+source-wordcount: '1950'
+ht-degree: 34%
 
 ---
 
@@ -44,17 +44,13 @@ ht-degree: 38%
 
    You can pause the uploading of large assets (greater than 500 MB) and resume it later from the same page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-211.png)
-
    The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
    The Pause button does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** button appears.
 
-   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+   To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
-   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click the **[!UICONTROL Play]** icon.
-
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   When you click the **[!UICONTROL Pause]** icon, it toggles to a **[!UICONTROL Play]** icon. To resume uploading, click **[!UICONTROL Play]** option.
 -->
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
@@ -95,7 +91,7 @@ Uploading numerous assets in bulk consumes significant I/O resources, which may 
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
-Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
+Serial uploading of assets is enabled by default. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in CRX-DE and set the value of the `parallelUploads` property to `true`.
 
 ### Streamed uploads {#streamed-uploads}
 
@@ -188,23 +184,23 @@ Webブラウザーのユーザーインターフェイスに加えて、[!DNL Ex
 
 ## アップロード時にアセットを処理{#process-when-uploaded}
 
-アップロードされたアセットに対して追加の処理を行うために、アップロードフォルダーに処理プロファイルを適用できます。 プロファイルーは、[!DNL Assets]内のフォルダーの&#x200B;**[!UICONTROL プロパティ]**&#x200B;ページで入手できます。
+アップロードされたアセットに対して追加の処理を行うために、アップロードフォルダーに処理プロファイルを適用できます。 プロファイルーは、[!DNL Assets]内のフォルダーの&#x200B;**[!UICONTROL プロパティ]**&#x200B;ページで入手できます。 拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、引き続きバイナリファイルをDAMに保存できます。
 
-![assets-folder-properties](assets/assets-folder-properties.png)
+![処理プロファイルを追加するためのオプションを含むアセットフォルダーのプロパティ](assets/assets-folder-properties.png)
 
 次のタブを使用できます。
 
-* [メタデータプロファイル](metadata-profiles.md)：フォルダーにアップロードされたアセットにデフォルトのメタデータプロパティを適用できます。
+* [メタデータ](metadata-profiles.md) プロファイルを使用すると、そのフォルダーにアップロードされたアセットに初期設定のメタデータプロパティを適用できます。
 * [処理プロファイル](asset-microservices-configure-and-use.md)：デフォルトで可能な数より多いレンディションを生成できます。
 
 また、デプロイメントで[!DNL Dynamic Media]が有効になっている場合は、次のタブを使用できます。
 
-* [Dynamic Media イメージプロファイル](dynamic-media/image-profiles.md)を使用すると、アップロードしたアセットに、特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;およびピクセル切り抜き）やシャープの設定を適用できます。
-* [Dynamic Media ビデオプロファイル](dynamic-media/video-profiles.md)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
+* [[!DNL Dynamic Media]  イメージプロファイル](dynamic-media/image-profiles.md)を使用すると、アップロードしたアセットに、特定の切り抜き（**[!UICONTROL スマート切り抜き]**&#x200B;およびピクセル切り抜き）やシャープの設定を適用できます。
+* [[!DNL Dynamic Media]  ビデオプロファイル](dynamic-media/video-profiles.md)を使用すると、特定のビデオエンコーディングプロファイル（解像度、形式、パラメーター）を適用できます。
 
 >[!NOTE]
 >
->アセットに対する Dynamic Media の切り抜きなどの操作は非破壊的です。つまり、アップロードした元の内容は変更されず、代わりに、アセットの配信時におこなわれる切り抜きやメディア変換のパラメーターが提供されます。
+>[!DNL Dynamic Media] 切り抜きや、アセットに対するその他の操作は非破壊的です。つまり、アップロードされた元の内容は変更されません。代わりに、アセットを配信する際に切り抜きや変換を行うパラメータを提供します。
 
 処理プロファイルが割り当てられているフォルダーの場合、プロファイル名がカード表示のサムネールに表示されます。リスト表示では、プロファイル名が「**[!UICONTROL 処理プロファイル]**」に表示されます。
 
