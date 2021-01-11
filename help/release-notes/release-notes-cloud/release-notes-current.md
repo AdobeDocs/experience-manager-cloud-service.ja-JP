@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 6b001ffb9afe73c09d131ef7901cc2c12c57f164
+source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 19%
+source-wordcount: '694'
+ht-degree: 16%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 19%
 ## リリース日 {#release-date}
 
 Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は2020年12月17日です。
-次のリリース(2021.1.0)は、2020年1月28日にリリースされます。
+次のリリース(2021.1.0)は、2021年1月28日にリリースされます。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -74,3 +74,20 @@ AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10�
 ### バグ修正 {#crt-bug-fixes}
 
 * AEM Dispatcher ConverterおよびRepository Modenizerツールで行われたいくつかのバグ修正。 [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)および[Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
+
+## クラウド移行ツール {#code-transition-tools}
+
+### リリース日 {#release-date-ctt}
+
+コンテンツ転送ツールv1.1.20のリリース日は2021年1月8日です。
+
+### [!DNL Content Transfer Tool] の新機能 {#what-is-new-ctt}
+
+* ユーザーは、コンテンツ転送ツール(CTT)ユーザーインターフェイスのステータスアイコンにマウスポインターを置くと、アクセストークンの有効期限が切れたかどうかを確認できます。 また、Cloud Serviceセットの詳細UIで、移行インスタンスに接続できないことが通知されます。
+
+### バグ修正 {#ctt-bug-fixes}
+
+* 移行セットのCTT (Content Transfer Tool)ユーザーインターフェイスのステータスが、無操作状態が一定期間続いた後も保持されず、変更されました。 この問題は修正されました。
+* ログが利用できない場合、表示ログのオプションが無効になっていました。 この問題は修正され、ログが見つからない理由をユーザーに通知するメッセージが追加されました。
+* ユーザーがインジェストを停止したときに、コンテンツ転送ツールのユーザーインターフェイスのステータスがFAILEDと表示されていた問題を修正しました。 この問題は修正され、代わりに&#x200B;*STOPPED*&#x200B;が表示されるようになりました。
+
