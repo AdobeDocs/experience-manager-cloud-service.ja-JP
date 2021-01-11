@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Assets as a の主な変更点 [!DNL Cloud Service]
-description: Experience Manager [!DNL Cloud Service] のAdobe Experience Manager資産に対する顕著な変更は、Adobe Experience Manager6.5に比べて<a0/>です。
+title: ' [!DNL Adobe Experience Manager Assets] を [!DNL Cloud Service]として主に変更'
+description: '[!DNLAdobe Experience Manager6.5と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の顕著な変更。'
 translation-type: tm+mt
-source-git-commit: 0838f384b31c59fe95087e1a71741656eedcd13b
+source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 63%
+source-wordcount: '605'
+ht-degree: 46%
 
 ---
 
 
-# Experience Manager Assets as a の主な変更点 [!DNL Cloud Service] {#notable-changes}
+# [!DNL Experience Manager Assets]を[!DNL Cloud Service] {#notable-changes}として注目すべき変更
 
-[!DNL Cloud Service]としてのAdobe Experience Managerは、Experience Managerプロジェクトを管理するための新機能と可能性を数多く提供します。 Experience Managerアセットは、オンプレミスまたはAdobe管理サービスとしてホストされるものと、[!DNL Experience Manager]は[!DNL Cloud Service]としてホストされるものとで多くの違いがあります。 この記事では、[!DNL Assets]機能の重要な違いについて説明します。
+[!DNL Adobe Experience Manager] は、Experience Managerプロジェクトを管理するための多くの新機能と可能性を [!DNL Cloud Service] 提供します。[!DNL Experience Manager Assets]社内またはAdobe管理サービスとしてホストされる&lt;a0/>と[!DNL Cloud Service]社との間には多くの違いがあります。 [!DNL Experience Manager]この記事では、[!DNL Assets]機能の重要な違いについて説明します。
 
 [Experience Manager] 6.5との主な違いは次のとおりです。
 
@@ -22,16 +22,17 @@ ht-degree: 63%
 
 ## アセットの取り込みと処理{#asset-ingestion}
 
-アセットの取り込みの拡大・縮小、アップロードの高速化、マイクロサービスを使用した処理の高速化、一括取り込みを可能にすることで、アセットのアップロードが効率化されました。 製品機能（Web ユーザーインターフェイス、デスクトップクライアント）が更新されました。ただし、これによって、一部の既存カスタマイズが影響を受ける可能性があります。
+アセットのアップロードは、取り込みの拡大・縮小、アップロードの高速化、マイクロサービスを使用した処理の高速化、一括取り込みを可能にすることで、効率を向上させるために最適化されています。 製品機能（Webユーザーインターフェイス、デスクトップクライアント）が更新されます。 また、これは既存のカスタマイズの一部に影響を与える場合があります。
 
-* Adobe Experience Manager では、アップロードとダウンロードに直接バイナリアクセスの原則を使用し、アセットの処理にアセットマイクロサービスを使用します。[アセットの取り込みの概要](/help/assets/asset-microservices-overview.md)を参照してください。
+* [!DNL Experience Manager] 直接バイナリアクセスの原則を使用してアセットをアップロードおよびダウンロードし、アセットの処理にasset microservicesを使用します。[マイクロサービスの概要](/help/assets/asset-microservices-overview.md)を参照してください。
    * [直接バイナリアクセスを使用した](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)アセットのアップロード。
-   * 技術的な詳細については、[直接バイナリアップロードのプロトコルと API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください.
+   * 技術的な詳細については、[直接バイナリアップロードプロトコルとAPI](/help/assets/developer-reference-material-apis.md#upload-binary)を参照してください。
    * 基本的なCRUD操作に使用できるAPIメソッドの比較については、[APIとアセット操作](/help/assets/developer-reference-material-apis.md#use-cases-and-apis)を参照してください。
 * 以前のバージョンの に用意されていたデフォルトの **[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローは使用できなくなりました。[!DNL Experience Manager]代わりに、アセットマイクロサービスは、デフォルトのアセット処理(レンディション、メタデータ抽出、インデックス作成用のテキスト抽出)のほとんどをカバーする、スケーラブルで、容易に利用できるサービスを提供します。
-   * [アセットマイクロサービスの設定および使用方法](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
-   * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます。
-* パッケージマネージャーで取り込まれたアセットについては、Assets インターフェイスの「**[!UICONTROL アセットを再処理]**」アクションを使用して、手動で再処理する必要があります。
+   * [アセットのマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)を参照
+   * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます.
+* Package Managerを使用してアップロードされるアセットは、[!DNL Assets]インターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
+* 拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、引き続きバイナリファイルをDAMに保存できます。
 
 アセットマイクロサービスで生成された標準レンディションは、後方互換性のある方法でアセットリポジトリノードに保存されます（同じ命名規則が使用されます）。
 
