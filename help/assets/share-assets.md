@@ -1,19 +1,19 @@
 ---
 title: アセット、フォルダー、コレクションをリンクとして共有
-description: ここでは、Adobe Experience Manager Assets 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
+description: この記事では、 [!DNL Experience Manager Assets] 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 95%
+source-wordcount: '683'
+ht-degree: 66%
 
 ---
 
 
-# Adobe Experience Manager で管理されるアセットの共有と配布 {#share-assets-from-aem}
+# [!DNL Experience Manager] {#share-assets-from-aem}で管理されているアセットを共有および配布
 
-Adobe Experience Manager（AEM）Assets では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。次の方法を使用して、Experience Managerアセットのアセットを[!DNL Cloud Service]として共有します。
+[!DNL Adobe Experience Manager Assets] アセット、フォルダー、コレクションを組織のメンバー、およびパートナーやベンダーを含む外部エンティティと共有できます。[!DNL Experience Manager Assets]のアセットを[!DNL Cloud Service]として共有するには、次の方法を使用します。
 
 * リンクとして共有。
 * アセットをダウンロードし、個別に共有します。
@@ -23,7 +23,7 @@ Adobe Experience Manager（AEM）Assets では、アセット、フォルダー�
 
 ## アセットをリンクとして共有 {#sharelink}
 
-ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクによるアセットの共有は、外部の関係者が AEM Assets にログインすることなくリソースを利用するための便利な方法です。
+ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクを通じてアセットを共有すると、[!DNL Assets]に最初にログインしなくても、外部のユーザーがリソースを利用できる便利な方法です。
 
 >[!NOTE]
 >
@@ -31,8 +31,8 @@ Adobe Experience Manager（AEM）Assets では、アセット、フォルダー�
 >* リンクをユーザーと共有する前に、Day CQ Mail Service が設定されていることを確認してください。設定されていないと、エラーが発生します。
 
 
-1. Assets のユーザーインターフェイスで、リンクとして共有するアセットを選択します。
-1. ツールバーの「**[!UICONTROL リンクを共有]**」をクリックまたはタップします。「**[!UICONTROL リンクを共有]**」フィールドにアセットリンクが自動的に作成されます。このリンクをコピーしてユーザーと共有します。リンクのデフォルトの有効期間は 1 日です。
+1. [!DNL Assets]ユーザーインターフェイスで、リンクとして共有するアセットを選択します。
+1. ツールバーで、**[!UICONTROL リンクを共有]**&#x200B;をクリックします。 「**[!UICONTROL リンクを共有]**」フィールドにアセットリンクが自動的に作成されます。このリンクをコピーしてユーザーと共有します。リンクのデフォルトの有効期間は 1 日です。
 
    >[!NOTE]
    >
@@ -113,9 +113,9 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **AEM デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
+* **Experience Managerデスクトップアプリ**:このアプリはWindowsとMacで動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
 
-* **Adobe Asset Link**：クリエイティブプロフェッショナルは、Adobe InDesign、Adobe Illustrator、Adobe Photoshop 内から直接アセットを検索および使用できます。
+* **Adobeアセットリンク**:クリエイティブプロフェッショナルは、、、の内部から直接アセットを検索して使用 [!DNL Adobe InDesign]でき [!DNL Adobe Illustrator]ま [!DNL Adobe Photoshop]す。
 
 ## アセット共有の設定 {#configure-sharing}
 
@@ -125,11 +125,11 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクによるアセットの共有は、外部の関係者が AEM Assets にログインすることなくリソースを利用するための便利な方法です。
+ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクを通じてアセットを共有すると、[!DNL Assets]に最初にログインしなくても、外部のユーザーがリソースを利用できる便利な方法です。
 
 >[!NOTE]
 >
->AEM オーサーインスタンスから外部エンティティへのリンクを共有する場合は、`GET` リクエストに対する次の URL のみ公開するようにします。AEM オーサーインスタンスの安全性を確保するために、その他の URL はブロックします。
+> オーサーインスタンスから外部エンティティへのリンクを共有する場合は、`GET` リクエストに対する次の URL のみ公開するようにします。 オーサーインスタンスの安全性を確保するために、その他の URL はブロックします。
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`
@@ -169,15 +169,15 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### デスクトップアクションのデスクトップアプリでの有効化 {#desktop-actions}
 
-ブラウザーの Assets ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開くことができます。これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、[AEM Web インターフェイスでのデスクトップアクションの有効化](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)を参照してください。
+ブラウザーの[!DNL Assets]ユーザーインターフェイス内から、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。 これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、[AEM Web インターフェイスでのデスクトップアクションの有効化](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)を参照してください。
 
 ![デスクトップアプリで作業する際の、デスクトップアクションのショートカットとしての有効化](assets/enable_desktop_actions.png)
 
-### Adobe Asset Link の使用設定 {#configure-asset-link}
+### [!DNL Adobe Asset Link] {#configure-asset-link}を使用する設定
 
-Adobe Asset Link を使用すると、コンテンツ作成プロセスでのクリエイティブ担当者とマーケティング担当者のコラボレーションを合理化できます。Adobe Experience Manager（AEM）Assets を、Creative Cloud デスクトップアプリケーションの Adobe InDesign、Adobe Photoshop および Adobe Illustrator に接続します。Adobe Asset Link パネルを使用すると、AEM Assets に保存されたコンテンツに対して、クリエイティブが最もなじみのあるクリエイティブアプリケーションからアクセスして、変更を加えることができます。
+Adobe Asset Link を使用すると、コンテンツ作成プロセスでのクリエイティブ担当者とマーケティング担当者のコラボレーションを合理化できます。[!DNL Adobe Experience Manager Assets]と[!DNL Creative Cloud]デスクトップアプリ[!DNL Adobe InDesign]、[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]を接続します。 [!DNL Adobe Asset Link]パネルを使用すると、[!DNL Assets]に保存されたコンテンツにクリエイティブがアクセスし、変更する際に、最もなじみのあるクリエイティブアプリケーションを使用できます。
 
-[AEM で Adobe Asset Link を使用する設定方法](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)を参照してください。
+[ [!DNL Adobe Asset Link]](https://helpx.adobe.com/jp/enterprise/using/configure-aem-assets-for-asset-link.html)で [!DNL Assets] を使うように設定する方法を参照してください。
 
 ## ベストプラクティスとトラブルシューティング {#bestpractices}
 
