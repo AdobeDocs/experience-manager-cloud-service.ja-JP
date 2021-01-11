@@ -3,10 +3,10 @@ title: アセットマイクロサービスの設定と使用
 description: クラウドネイティブなアセットマイクロサービスを設定および使用して大規模なアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '2532'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Manager では、次のレベルの処理が可能です。
 
 処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、 [!DNL Adobe Asset Link] [ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
 
-### 標準プロファイルの作成 {#create-standard-profile}
+### 標準プロファイル{#create-standard-profile}を作成
 
 標準の処理プロファイルを作成するには、次の手順に従います。
 
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 画像、ビデオ、ドキュメントおよびその他のファイル形式を、サムネール、抽出したテキストおよびメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-デベロッパーは、[!DNL Asset Compute Service] を使用して、サポートされる使用例に応じた[カスタムアプリケーションを作成](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)できます。[!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+開発者は[!DNL Asset Compute Service]を使って[カスタムアプリケーション](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)を作成し、サポートされている使用例に対応できます。 [!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
 * [!DNL Adobe Photoshop] の [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) を使用して、結果をレンディションとして保存します。
 * サードパーティシステムを呼び出して、PIM システムなどのデータをアップデートします。
@@ -123,7 +123,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 カスタムプロファイルを作成するには、次の手順に従います。
 
-1. 管理者は、**[!UICONTROL ツール／アセット／処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
+1. 管理者は、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
 1. 「**[!UICONTROL カスタム]**」タブをクリックします。「**[!UICONTROL 新規追加]**」をクリックします。レンディションの目的のファイル名を指定します。
 1. 以下の情報を入力します。
 
@@ -145,6 +145,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 カスタムプロファイルの使用方法を説明するために、キャンペーン画像にカスタムテキストを適用する使用例を考えてみましょう。Photoshop API を利用して画像を編集する処理プロファイルを作成できます。
 
 アセット計算サービスの統合により、Experience Manager は、「[!UICONTROL サービスパラメーター]」フィールドを使用して、これらのパラメーターをカスタムアプリケーションに渡すことができます。次に、カスタムアプリケーションが Photoshop API を呼び出し、これらの値を API に渡します。例えば、フォント名、テキストカラー、テキスト重み付け、テキストサイズを渡して、カスタムテキストをキャンペーン画像に追加できます。
+
+<!-- TBD: Check screenshot against the interface. -->
 
 ![カスタム処理プロファイル](assets/custom-processing-profile.png)
 
