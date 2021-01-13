@@ -2,10 +2,10 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関する開発者向けリファレンスガイド
 translation-type: tm+mt
-source-git-commit: a4805cd1c6ee3b32f064f258d4a2a0308bee99b1
+source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 34%
+source-wordcount: '3720'
+ht-degree: 32%
 
 ---
 
@@ -315,6 +315,39 @@ AEM内のコンポーネントは、**リソースタイプの階層**&#x200B;�
    * `cq:listeners` (ノードタイプ `cq:EditListenersConfig`):コンポーネントでアクションが発生する前または後の動作を定義する
 
 AEMには、多くの既存の設定が存在します。 **CRXDE Lite**&#x200B;のクエリツールを使用すると、特定のプロパティまたは子ノードを簡単に検索できます。
+
+### コンポーネントプレースホルダ{#component-placeholders}
+
+コンポーネントにコンテンツがない場合でも、コンポーネントは常に、作成者に表示される一部のHTMLをレンダリングする必要があります。 そうしないと、視覚的にエディターのインターフェイスから見えなくなり、技術的には表示されますが、ページやエディターには表示されなくなります。 この場合、作成者は空のコンポーネントを選択して操作することができません。
+
+このため、ページがページエディターでレンダリングされる（WCMモードが`edit`または`preview`の場合）際に、コンポーネントは表示された出力をレンダリングしない限り、プレースホルダーをレンダリングする必要があります。
+プレースホルダーの一般的なHTMLマークアップは次のとおりです。
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+上記のプレースホルダーHTMLをレンダリングする一般的なHTLスクリプトは次のとおりです。
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+前の例では、`isEmpty`は変数で、コンポーネントにコンテンツがなく、作成者には見えない場合にのみtrueになります。
+
+繰り返しを避けるために、Adobeでは、コンポーネントの実装者に対して、コアコンポーネントが提供するプレースホルダーのように[HTLテンプレートをこれらのプレースホルダーに使用するように推奨します。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+その後、前のリンクでのテンプレートの使用は、次のHTL行で行います。
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+前の例では、`model.text`は変数で、コンテンツが含まれ、表示されている場合にのみtrueになります。
+
+このテンプレートの使用例は、コアコンポーネント[（タイトルコンポーネントなど）で確認できます。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### cq:EditConfig の子ノードを使用した設定 {#configuring-with-cq-editconfig-child-nodes}
 
