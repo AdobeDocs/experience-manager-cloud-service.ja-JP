@@ -2,10 +2,10 @@
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義し、テンプレートエディターにより、テンプレートの作成および維持は、もはや開発者のみのタスクではなくなります。
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 7cceaf3942b60f13004d606de9a7e0408f528671
 workflow-type: tm+mt
-source-wordcount: '4551'
-ht-degree: 100%
+source-wordcount: '4600'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 >
 >多くの場合、**許可されたテンプレート**&#x200B;は Web サイトが最初に設定されたときに事前定義されています。
 
->[!CAUTION]
+>[!TIP]
 >
 >国際化する必要がある情報は、テンプレートに含めないでください。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
@@ -127,7 +127,13 @@ ht-degree: 100%
    >
    >新しく作成されたテンプレートは、コンソールで&#x200B;**ドラフト**&#x200B;とマークされます。これは、ページ作成者がまだテンプレートを使用できないことを示します。
 
-### テンプレートプロパティの定義 - テンプレート作成者  {#defining-template-properties-template-author}
+>[!NOTE]
+>
+>テンプレートは、ページ作成ワークフローを合理化する強力なツールです。 ただし、テンプレートが多すぎると作成者を圧倒し、ページ作成を混乱させる可能性があります。 テンプレートの数を100未満に抑えるのが一般的です。
+>
+>Adobeでは、パフォーマンスに影響が及ぶ可能性があるので、1000を超えるテンプレートを使用することはお勧めしません。
+
+### テンプレートプロパティの定義 - テンプレート作成者 {#defining-template-properties-template-author}
 
 テンプレートには、次のプロパティを指定できます。
 
