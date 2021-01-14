@@ -2,9 +2,9 @@
 title: GraphQLでのコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信用のGraphQLとのCloud Serviceとして使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
+>AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
 >
->関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+>お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM GraphQL API（標準GraphQLに基づくカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツを配信できます。
 
@@ -78,7 +78,7 @@ GraphQLでは、次のいずれかに対してクエリを実行できます。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-クラウドエクスペリエンスとしてのアドビエクスペリエンスには、標準のGraphQL API[のカスタマイズ実装が実装されています。](/help/assets/content-fragments/graphql-api-content-fragments.md)
+クラウドエクスペリエンスとしてのアドビエクスペリエンスには、標準のGraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)のカスタマイズ実装が実装されています。[
 
 AEM GraphQL APIの実装は、[GraphQL Javaライブラリ](https://graphql.org/code/#java)に基づいています。
 
