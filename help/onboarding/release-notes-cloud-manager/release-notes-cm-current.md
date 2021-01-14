@@ -2,7 +2,7 @@
 title: Cloud Serviceリリース2021.1.0としてのAEMのCloud Managerのリリースノート
 description: Cloud Serviceリリース2021.1.0としてのAEMのCloud Managerのリリースノート
 translation-type: tm+mt
-source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
+source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # Cloud Service2021.1.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2021.1.0として概要を説明しています
+このページでは、AEMのCloud ManagerのリリースノートをCloud Service2021.1.0として概要を説明しています。
 
 ## リリース日 {#release-date}
 
