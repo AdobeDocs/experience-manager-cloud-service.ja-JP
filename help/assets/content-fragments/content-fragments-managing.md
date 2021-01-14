@@ -2,31 +2,21 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
 translation-type: tm+mt
-source-git-commit: 0a60687eacf054675205d9a9466473e1f4996db1
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 96%
+source-wordcount: '1488'
+ht-degree: 95%
 
 ---
 
 
 # コンテンツフラグメントの管理{#managing-content-fragments}
 
-<!--
 >[!CAUTION]
 >
->Certain features for Content Fragments will be released in early 2021.
+>AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
 >
->The related documentation is already available for preview purposes.
->
->Please see the [Release Notes](/help/release-notes/release-notes-cloud/release-notes-current.md) for further details.
--->
-
->[!CAUTION]
->
->AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
->
->関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+>お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
