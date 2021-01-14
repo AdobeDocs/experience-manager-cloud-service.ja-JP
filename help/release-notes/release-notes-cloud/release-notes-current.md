@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: cfe49fe414f387c660259de540af0cc26ef3951f
+source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 16%
+source-wordcount: '692'
+ht-degree: 14%
 
 ---
 
@@ -45,21 +45,15 @@ Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 ### リリース日 {#release-date-cm}
 
-AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10日です。
-
-### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
-
-* [SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
-
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
-
-* **環境**&#x200B;の詳細ページが更新され、環境上のカスタムドメイン名とIP許可リストを管理できるようになりました。
+AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日です。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* コードスキャンステージで、解決された結果が提供されず、エラーが発生する場合があります。
+* アセット実稼動インスタンスでは、場合によっては、環境&#x200B;**ユーザー**&#x200B;の詳細ページにブランドポータルのステータスが&#x200B;*保留*&#x200B;として表示されます。ユーザーは何も操作を行えません。
 
-* 環境カードに&#x200B;**追加**&#x200B;ボタンが一貫して表示されませんでした。
+* Cloud Managerから非休止状態をトリガーすると、非休止状態が正常に開始された場合でも、エラーメッセージが表示されることがありました。
+
+* 環境の作成または削除でエラーが発生した場合は、まれに対処しました。
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
