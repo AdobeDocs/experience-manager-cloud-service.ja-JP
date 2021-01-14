@@ -2,9 +2,9 @@
 title: AEMでのGraphQLの使用方法 — サンプルコンテンツとクエリ
 description: AEMでのGraphQLの使用方法 — サンプルコンテンツとクエリ
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1298'
 ht-degree: 6%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
+>AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
 >
->関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+>お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 GraphQLクエリの使用を開始し、AEMコンテンツフラグメントとの連携方法を学ぶには、いくつかの実用的な例を見るのに役立ちます。
 
@@ -278,7 +278,7 @@ AEM用のGraphQLでのクエリの基本的な操作は、標準のGraphQL仕様
 
 ### サンプルクエリ-会社のCEOと従業員の詳細{#sample-full-details-company-ceos-employees}
 
-このクエリは、ネストされたフラグメントの構造を使用して、会社のCEOとそのすべての従業員の詳細を返します。
+このクエリは、ネストされたフラグメントの構造を使用して、会社のCEOとその従業員全員の詳細を返します。
 
 **サンプルクエリ**
 
