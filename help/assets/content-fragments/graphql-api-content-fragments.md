@@ -2,9 +2,9 @@
 title: Cloud ServiceGraphQL APIとしてのAdobe Experience Managerとのコンテンツフラグメントを使用したコンテンツ配信
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、AEM GraphQL API for Headless Content配信とのCloud Serviceとして使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 1e9596fb12a38f5c4c6e15d7c33af86e59e76083
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2506'
 ht-degree: 2%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
+>AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
 >
->関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+>お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 Cloud Service(AEM) GraphQL APIとしてのAdobe Experience Managerは、コンテンツフラグメントと共に使用される標準のオープンソースのGraphQL APIに大きく基づいています。
 
