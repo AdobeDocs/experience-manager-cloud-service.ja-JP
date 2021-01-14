@@ -2,10 +2,10 @@
 title: コンテンツフラグメント — 設定ブラウザー
 description: 設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
 translation-type: tm+mt
-source-git-commit: c821baff208e563009e68f51700555ea1d516886
+source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 38%
+source-wordcount: '278'
+ht-degree: 36%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 38%
 
 >[!CAUTION]
 >
->AEM GraphQL API(コンテンツフラグメント配信用)は、2021年の初めにリリースされます。
+>AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
 >
->関連ドキュメントは、既にプレビュー目的でご利用いただけます。
+>お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 ## インスタンスのコンテンツフラグメント機能を有効にする{#enable-content-fragment-functionality-instance}
 
