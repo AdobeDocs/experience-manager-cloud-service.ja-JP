@@ -2,17 +2,17 @@
 title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 98%
+source-wordcount: '3296'
+ht-degree: 95%
 
 ---
 
 
 # ページテンプレート {#page-templates}
 
-ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートによって、結果ページの構造、すべての初期コンテンツ、使用可能なコンポーネント（設計プロパティ）が定義されます。これには、次のようないくつかの利点があります。
+ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートによって、結果ページの構造、すべての初期コンテンツ、使用可能なコンポーネント（設計プロパティ）が定義されます。これにはいくつかの利点があります。
 
 * ページテンプレートによって、専門的な作成者が[テンプレートを作成および編集](/help/sites-cloud/authoring/features/templates.md)できます。
    * このような専門的な作成者は、**テンプレート作成者**&#x200B;と呼ばれます。
@@ -99,7 +99,7 @@ ht-degree: 98%
 
    テンプレート作成者がテンプレートを有効にする方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)を参照してください。
 
-   テンプレートの有効化の技術的な詳細については、このドキュメントの[使用するテンプレートの有効化と許可](#enabling-and-allowing-a-template-for-use)を参照してください。
+   テンプレートの有効化に関する技術的な詳細については、このドキュメントの「[Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e」を参照してください。
 
 1. テンプレートを使用してコンテンツページを作成します。
 
@@ -110,6 +110,16 @@ ht-degree: 98%
 
    編集可能テンプレートを使用したページ作成の技術的な詳細については、このドキュメントの[作成されるコンテンツページ](#resultant-content-pages)を参照してください。
 
+>[!TIP]
+>
+>国際化する必要がある情報は、テンプレートに含めないでください。内部化の目的では、コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)の[ローカライゼーション機能を推奨します。
+
+>[!NOTE]
+>
+>テンプレートは、ページ作成ワークフローを合理化する強力なツールです。 ただし、テンプレートが多すぎると作成者を圧倒し、ページ作成を混乱させる可能性があります。 テンプレートの数を100未満に抑えるのが一般的です。
+>
+>Adobeでは、パフォーマンスに影響が及ぶ可能性があるので、1000を超えるテンプレートを使用することはお勧めしません。
+
 >[!NOTE]
 >
 >エディタークライアントライブラリは、コンテンツページに `cq.shared` 名前空間が存在することを前提としています。名前空間が存在しない場合は、JavaScript エラー「`Uncaught TypeError: Cannot read property 'shared' of undefined`」が発生します。
@@ -118,9 +128,7 @@ ht-degree: 98%
 >
 >詳しくは、[クライアントサイドライブラリの使用](/help/implementing/developing/introduction/clientlibs.md)を参照してください。
 
->[!CAUTION]
->
->国際化する必要がある情報は、テンプレートに含めないでください。
+
 
 ## テンプレートフォルダー {#template-folders}
 
