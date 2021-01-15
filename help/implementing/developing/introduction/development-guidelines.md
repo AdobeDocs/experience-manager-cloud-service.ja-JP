@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 translation-type: tm+mt
-source-git-commit: 2910d5c1d32ca58f6634204bac882fccb3e65bf3
+source-git-commit: a3d940765796e6a4d8e16d8fe31343074358ebc3
 workflow-type: tm+mt
-source-wordcount: '2239'
-ht-degree: 99%
+source-wordcount: '2275'
+ht-degree: 94%
 
 ---
 
@@ -220,8 +220,8 @@ AEM as a Cloud Service では、送信メールを暗号化する必要があり
 デフォルトでは、送信電子メールは無効になっています。有効にするには、以下を含んだサポートチケットを送信します。
 
 1. メールサーバーの完全修飾ドメイン名（例：`smtp.sendgrid.net`）
-1. 使用するポート。メールサーバーでサポートされている場合は、ポート 465 にしてください。サポートされていない場合は、ポート 587 にします。ポート 587 を使用できるのは、メールサーバーがそのポートで TLS を要求し適用する場合のみです
-1. メールの送信元となる環境のプログラム ID と環境 ID
+1. 使用するポート。メールサーバーでサポートされている場合はポート465、それ以外の場合はポート587にする必要があります。ポート587は、メールサーバーで必要な場合にのみ使用でき、そのポートでTLSを適用します
+1. メールアウトする環境のプログラムIDと環境ID
 1. オーサー、パブリッシュ、またはその両方で SMTP アクセスが必要かどうか
 
 ### 電子メールの送信 {#sending-emails}
@@ -238,16 +238,16 @@ AEM CS では、ポート 465 でメールを送信する必要があります�
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/notification.html)を参照してください。AEM CS の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスを以下のように調整する必要があります。
+電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/notification.html)を参照してください。AEMをCloud Serviceとして使用する場合は、`com.day.cq.mailer.DefaultMailService OSGI`サービスに対して次の調整を行う必要があります。
 
 ポート 465 がリクエストされた場合：
 
 * `smtp.port` を `465` に設定
 * `smtp.ssl` を `true` に設定
-* `smtp.starttls` を `false` に設定
 
 ポート 587 がリクエストされた場合（メールサーバーがポート 465 をサポートしていない場合のみ可能）：
 
 * `smtp.port` を `587` に設定
 * `smtp.ssl` を `false` に設定
-* `smtp.starttls` を `true` に設定
+
+`smtp.starttls`プロパティは、実行時にAEMによって適切な値にCloud Serviceとして自動的に設定されます。 これは、ポート465の場合は`false`、ポート587の場合は`true`になります。 これは、OSGI設定で設定されている`smtp.starttls`値に関係なく、
