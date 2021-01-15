@@ -2,7 +2,7 @@
 title: サーバー側APIのアクセストークンの生成
 description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
 translation-type: tm+mt
-source-git-commit: 7ca7cd458ea5152d56754bf1e6a500b2c04d0039
+source-git-commit: a8cb0c1bf2cdc741173e83ad00b6453931a8df18
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -101,7 +101,9 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ## 開発者フロー{#developer-flow}
 
-開発者は、Cloud Service開発環境として開発AEMに要求を行うAEM以外のアプリケーション（ラップトップ上で実行しているか、ホストされている）の開発インスタンスを使用してテストを行うと考えられます。 ただし、開発者は必ずしもAEMへの管理者ロールアクセス権をCloud Service開発環境として持っていないので、通常のサーバ間フローで記述されたJWTベアラを生成できるとは想定できません。 したがって、AEMへのリクエストで、開発者がアクセス権を持つCloud Service環境として使用できるアクセストークンを直接生成するメカニズムを提供する。 AEMをCloud Service開発者コンソールとして使用するために必要な権限については、[開発者ガイドラインドキュメント](/help/implementing/developing/introduction/development-guidelines.md)を参照してください。
+開発者は、Cloud Service開発環境として開発AEMに要求を行うAEM以外のアプリケーション（ラップトップ上で実行しているか、ホストされている）の開発インスタンスを使用してテストを行うと考えられます。 ただし、開発者は必ずしもAEMへの管理者ロールアクセス権をCloud Service開発環境として持っていないので、通常のサーバ間フローで記述されたJWTベアラを生成できるとは想定できません。 したがって、AEMへのリクエストで、開発者がアクセス権を持つCloud Service環境として使用できるアクセストークンを直接生成するメカニズムを提供する。
+
+AEMをCloud Service開発者コンソールとして使用するために必要な権限については、[開発者ガイドラインドキュメント](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を参照してください。
 
 >[!NOTE]
 >
