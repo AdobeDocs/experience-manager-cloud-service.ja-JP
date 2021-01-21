@@ -2,7 +2,7 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: a09377df02225e9ad58ea4a8a0671fc40bd7d703
+source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 14%
@@ -84,4 +84,3 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 * 移行セットのCTT (Content Transfer Tool)ユーザーインターフェイスのステータスが、無操作状態が一定期間続いた後も保持されず、変更されました。 この問題は修正されました。
 * ログが利用できない場合、表示ログのオプションが無効になっていました。 この問題は修正され、ログが見つからない理由をユーザーに通知するメッセージが追加されました。
 * ユーザーがインジェストを停止したときに、コンテンツ転送ツールのユーザーインターフェイスのステータスがFAILEDと表示されていた問題を修正しました。 この問題は修正され、代わりに&#x200B;*STOPPED*&#x200B;が表示されるようになりました。
-
