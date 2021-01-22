@@ -12,7 +12,7 @@ ht-degree: 46%
 
 # [!DNL Experience Manager Assets]を[!DNL Cloud Service] {#notable-changes}として注目すべき変更
 
-[!DNL Adobe Experience Manager] は、Experience Managerプロジェクトを管理するための多くの新機能と可能性を [!DNL Cloud Service] 提供します。[!DNL Experience Manager Assets]社内またはAdobe管理サービスとしてホストされる&lt;a0/>と[!DNL Cloud Service]社との間には多くの違いがあります。 [!DNL Experience Manager]この記事では、[!DNL Assets]機能の重要な違いについて説明します。
+[!DNL Adobe Experience Manager] は、Experience Managerプロジェクトを管理するための多くの新機能と可能性を [!DNL Cloud Service] 提供します。[!DNL Experience Manager Assets]社内またはAdobe管理サービスとしてホストされる[!DNL Experience Manager]と[!DNL Cloud Service]社との間には多くの違いがあります。 この記事では、[!DNL Assets]機能の重要な違いについて説明します。
 
 [Experience Manager] 6.5との主な違いは次のとおりです。
 
