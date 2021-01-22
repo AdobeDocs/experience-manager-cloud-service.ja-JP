@@ -2,10 +2,10 @@
 title: コンテンツの HTTP/2 配信の FAQ
 description: HTTP/2 コンテンツ配信について説明します。
 translation-type: tm+mt
-source-git-commit: d9673296208831e68c5f776e0a9b142f348efc95
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 86%
+source-wordcount: '762'
+ht-degree: 83%
 
 ---
 
@@ -43,7 +43,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 * アドビ製品にバンドルされたコンテンツ配信ネットワーク（CDN）を Dynamic Media Classic ライセンスの一部として使用している。
 * 汎用の Dynamic Media ドメイン（`images.company.com`、`mycompany.scene7.com`、`s7d1.scene7.com` のいずれか）ではなく、専用ドメイン（`s7d2.scene7.com` または `s7d13.scene7.com`）を使用している。
 
-   ドメインを検索するには、各会社アカウントの[Dynamic Mediaクラシック](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)のインスタンスにログインします。
+   ドメインを探すには、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
 
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**公開先サーバー名**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
@@ -56,7 +56,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
    * 主要連絡先名、電子メールおよび電話番号。
    * HTTP/2 への切り替えが必要なすべてのドメイン。つまり、`images.company.com` または `mycompany.scene7.com`。
 
-   ドメインを検索するには、各会社アカウントの[Dynamic Mediaクラシック](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)のインスタンスにログインします。
+   ドメインを探すには、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
 
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
 
@@ -64,7 +64,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
    * 直接的関係で管理するのではなく、アドビを介して CDN を使用していることを確認します。
    * 専用ドメインを使用していることを確認します。つまり、`images.company.com`または`mycompany.scene7.com`です。`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`などの一般的なDynamic Mediaドメインではありません。
 
-   ドメインを検索するには、各会社アカウントの[Dynamic Mediaクラシック](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)のインスタンスにログインします。
+   ドメインを探すには、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
 
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
