@@ -162,7 +162,7 @@ Dynamic Media では、MP4 H.264 ビデオのモバイルビデオ再生がサ�
 
 詳しくは、[動的なビデオ再生](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)の例を参照してください。
 
-『](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)Dynamic Mediaビューアリファレンスガイド[』の「AEM AssetsおよびDynamic Mediaクラシック[のビューア」および「](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)AEM Assetsのみのビューア[」も参照してください。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)』の「AEM AssetsおよびDynamic Mediaクラシック](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)のビューア」および「[AEM Assetsのみのビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)」も参照してください。[
 
 ## ベストプラクティス：HTML5 ビデオビューアの使用 {#best-practice-using-the-html-video-viewer}
 
@@ -399,9 +399,9 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 | ビデオタイプ | 幅 x 高さ | 幅の比率 | 高さの比率 |
 |--- |--- |--- |--- |
-| ソース | 1,920 x 1,080 | 1 | 1 |
+| ソース | 1,920 x 1,080 | 1 | 3 |
 | エンコード | 960 x 540 | 2 | 2 |
-| エンコード | 640 x 360 | 3 | 1 |
+| エンコード | 640 x 360 | 3 | 3 |
 | エンコード | 480 x 270 | 4 | 4 |
 
 ### エンコードされたビデオのファイル形式 {#encoded-video-file-format}
