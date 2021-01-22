@@ -53,7 +53,7 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
    >Cloud Manager UIのセルフサービスGitアカウント管理を使用してGitリポジトリにアクセスし管理する方法について詳しくは、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセスを参照してください。
 
 
-1. 開発環境が作成されると、次の図のように、ユーザはAEM **リンクに&lt;a0/>アクセスできます。**
+1. 開発環境が作成されると、次の図のように、ユーザはAEM **リンクに**&#x200B;アクセスできます。
 
    ![](assets/create-program-5.png)
 
