@@ -73,7 +73,7 @@ AEM Commerce を Magento と接続するには、次の手順に従います。
 >
 >この機能は、MagentoのEnterprise EditionまたはMagentoのCloudでのみ使用できます。
 
-1. Magentoにログインし、統合トークンを作成します。 詳しくは、[トークンベースの認証](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)を参照してください。 統合トークンに&#x200B;*`Content -> Staging`リソースへの*&#x200B;アクセスのみ&lt;a0/>が含まれていることを確認してください。 `Access Token`値をコピーします。
+1. Magentoにログインし、統合トークンを作成します。 詳しくは、[トークンベースの認証](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)を参照してください。 統合トークンに&#x200B;*`Content -> Staging`リソースへの*&#x200B;アクセスのみが含まれていることを確認してください。 `Access Token`値をコピーします。
 
 1. Cloud Managerで`COMMERCE_AUTH_HEADER`シークレット変数を設定します。
 
