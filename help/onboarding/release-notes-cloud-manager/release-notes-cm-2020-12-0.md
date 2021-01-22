@@ -4,8 +4,8 @@ description: Cloud Serviceリリース2020.12.0としてのAEMのCloud Manager�
 translation-type: tm+mt
 source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '130'
+ht-degree: 15%
 
 ---
 
