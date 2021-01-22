@@ -96,7 +96,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 >[!NOTE]
 >
->AEMの場合、CRXDEにアクセスできないので、Cloud Serviceプロファイルを削除する手動の手順はUIからは利用できません。
+>AEMの場合、CRXDEにアクセスできないので、Cloud ServiceとしてUIからユーザープロファイルを削除する手順は手動ではありません。
 
 ### HTTP API {#http-api-1}
 
