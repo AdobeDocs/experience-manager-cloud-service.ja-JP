@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 「正規名」または「`CNAME`レコード」は、エイリアス名をtrueまたは正規のドメイン名にマップするDNSレコードの一種です。 CNAMEレコードは、通常、`www.example.com`などのサブドメインを、そのサブドメインのコンテンツをホストするドメインにマップするために使用します。
 
-Domain Registrarにログインし、次に示すように、カスタムターゲット名がドメインを指すようにCNAMEレコードを作成します。
+ドメインレジストラにログインし、以下のように、ターゲットに対するカスタムドメイン名をポイントする CNAME を作成します:
 
 | CNAME | Custom Domain Name Point toターゲット |
 |--- |--- |
