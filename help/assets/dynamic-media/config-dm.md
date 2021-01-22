@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法に関する情報。
 translation-type: tm+mt
-source-git-commit: 3f29bf65b1c30cee9bf7833a1c5092819ebf9a50
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '3853'
-ht-degree: 93%
+source-wordcount: '3869'
+ht-degree: 91%
 
 ---
 
@@ -48,7 +48,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Cloud Services での新しい Dynamic Media 設定の作成 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must [log in](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) to Dynamic Media Classic to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側でツールアイコンをタップした後、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;をタップします。
@@ -105,7 +105,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Dynamic Media コンテンツを公開する前に安全にプレビューするには、AEM オーサーインスタンスを「許可リストに登録」して、Dynamic Media に接続する必要があります。この設定をおこなうには、以下を実行します。
 
-   * Dynamic Media Classic アカウントにログインします（[http://www.adobe.com/jp/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)）。資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
+   * [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。 資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
    * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
 
    * Image Server 公開ページの「公開コンテキスト」ドロップダウンリストで、「**[!UICONTROL 画像サービングをテスト]**」を選択します。
@@ -186,7 +186,7 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 [Dynamic Mediaクラシック]ユーザインターフェイスを使用して、Dynamic Media設定を変更します。
 
-上記のタスクの一部では、次の場所でDynamic Mediaクラシックにログインする必要があります。[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+上記のタスクの一部では、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開いて、アカウントにサインインする必要があります。
 
 セットアップおよび設定タスクには、次のものが含まれます。
 
@@ -221,7 +221,8 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 画像を要求する際にカラー補正を有効にするためのデフォルトのカラープロパティを設定するには：
 
-1. プロビジョニング中に提供された資格情報を使用して、[Dynamic Media Classic にログイン](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)します。**[!UICONTROL 設定／アプリケーション設定]**&#x200B;に移動します。
+1. [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、プロビジョニング時に提供された資格情報を使用してアカウントにサインインします。
+1. **[!UICONTROL 設定／アプリケーション設定]**&#x200B;に移動します。
 1. 「**[!UICONTROL 公開設定]**」領域を展開して、「**[!UICONTROL Image Server]**」を選択します。パブリッシュインスタンスのデフォルトを設定する際に、「**[!UICONTROL 公開コンテキスト]**」を「**[!UICONTROL 画像サービング]**」に設定します。
 1. 例えば「**[!UICONTROL カラーマネジメント属性]**」領域のプロパティなど、変更が必要なプロパティにスクロールします。次のカラー補正プロパティを設定できます。
 
