@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
-description: デジタルア追加セットを [!DNL Adobe Experience Manager] a [!DNL Cloud Service]として<a0/>に保存します。
+description: デジタルア追加セットを [!DNL Adobe Experience Manager] a [!DNL Cloud Service]としてに保存します。
 translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
