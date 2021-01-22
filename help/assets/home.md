@@ -32,7 +32,7 @@ ht-degree: 31%
 | [セキュリティユーザーガイド](/help/security/home.md) | Experience Managerを[!DNL Cloud Service]として扱う際の重要なセキュリティトピックを紹介します。 |
 | [オンボーディング](/help/onboarding/home.md) | Experience Managerを[!DNL Cloud Service]として使い始める — 重要なデータにアクセスし、保護する。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Experience Managerサイトを[!DNL Cloud Service]として作成、管理する方法を理解します。 |
-| [Experience Managerへの移行 [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Experience Managerへのトランジションの遍歴を[!DNL Cloud Service]として理解します。 |
+| [Experience Managerへの移行 [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | Experience Managerへのトランジションジャーニーを[!DNL Cloud Service]として理解します。 |
 | [実装ユーザガイド](/help/implementing/home.md) | Experience Managerを[!DNL Cloud Service]としてカスタマイズ、開発、デプロイします。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | コネクタを[!DNL Cloud Service]としてExperience Managerに統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Experience Managerのバックエンド操作を[!DNL Cloud Service]として説明します。 |
