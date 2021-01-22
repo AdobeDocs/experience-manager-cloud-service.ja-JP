@@ -121,7 +121,6 @@ ht-degree: 100%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
 
 コンポーネントが設定されると、すべての編集可能なコンポーネントを自動的にラップする装飾要素に、ページ作成者が設定したスタイルが自動的に挿入されます。この他にコンポーネント自体でおこなう必要があることはありません。
@@ -136,7 +135,6 @@ ht-degree: 100%
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->
 >これは、[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) を介して[オーバーレイ](/help/implementing/developing/introduction/overlays.md)を使用します。
 
 >[!NOTE]
@@ -158,6 +156,7 @@ ht-degree: 100%
 >1. HTL（`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`）が他のすべての要素よりも優先されます。
 >1. 次に、複数のアクティブなスタイルの中で、コンポーネントのポリシーで設定されたスタイルのリストの最初のスタイルが優先されます。
 >1. 最後に、コンポーネントの `cq:htmlTag` または `cq:tagName` がフォールバック値と見なされます。
+
 >
 
 
