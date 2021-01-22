@@ -2,7 +2,7 @@
 title: パノラマ画像
 description: Dynamic Media でのパノラマ画像の使用方法を学習します。
 translation-type: tm+mt
-source-git-commit: 6224d193adfb87bd9b080f48937e0af1f03386d6
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 100%
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 For the Panoramic Image viewer to work properly within AEM, you must synchronize the Panoramic Image viewer presets with Dynamic Media Classic (Scene7) and Dynamic Media Classic (Scene7)-specific metadata so the viewer presets get updated in the JCR. To accomplish this, configure Dynamic Media Classic (Scene7) in the following manner:
 
-1. [Log into your instance of Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) for each company account.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
 1. Near the upper-right corner of the page, click **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
