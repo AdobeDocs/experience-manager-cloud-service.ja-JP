@@ -2,10 +2,10 @@
 title: Dynamic Media Classic を使用した CDN キャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 98%
+source-wordcount: '663'
+ht-degree: 93%
 
 ---
 
@@ -22,15 +22,9 @@ CDN を使用して Dynamic Media アセットをキャッシュすることで�
 
 **Dynamic Media Classic を使用して CDN キャッシュを無効にするには：**
 
-1. 次のいずれかの操作をおこないます。
+1. [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
 
-   * Web ブラウザーで、Dynamic Media Classic アカウントにログオンします。
-
-      [https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html](https://www.adobe.com/jp/marketing/experience-manager/scene7-login.html)
-
-      資格情報とログオンは、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
-
-   * Dynamic Media Classic アプリケーションを開き、アカウントにサインインします。
+   資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
 
 1. **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。
 1. アプリケーションの一般設定ページで、「サーバー」グループ見出しの下にある「**[!UICONTROL CDN 無効化テンプレート]**」テキストボックスを見つけます。
