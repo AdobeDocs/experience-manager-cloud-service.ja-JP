@@ -132,7 +132,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 タグおよびタグ一覧の検索は次のように動作します。
 
-* `TagID`は、`cq:movedTo`プロパティ`TagID`が&lt;a2/>に設定され、`cq:movedTo` `TagID`をたどるタグを検索します。
+* `TagID`は、`cq:movedTo`プロパティ`TagID`がに設定され、`cq:movedTo` `TagID`をたどるタグを検索します。
 * タグタイトルの検索では、`cq:movedTo`プロパティを持たないタグのみが検索されます。
 
 ## 他の言語のタグ {#tags-in-different-languages}
