@@ -42,7 +42,7 @@ Cloud Serviceは、Adobe Experience Managerの豊富な機能と拡張性を、�
 
 <br>
 
-## Cloud ServiceとしてのAdobe Experience Managerでの開発者の遍歴{#developer-journey}
+## Cloud Service{#developer-journey}としてのAdobe Experience Managerの開発者ジャーニー
 
 ### 開発
 
@@ -121,12 +121,12 @@ Cloud Service への移行プロセスには、計画、実行、運用開始後
 
 ### 計画
 
-Cloud Serviceへのトランジションの遍歴を始める前に、Cloud ServiceとしてのExperience Managerについて理解し、行われた注目すべき変更を確認し、置き換えられた機能や非推奨の機能を確認する必要があります。
+Cloud Serviceへのトランジションジャーニーを始める前に、Cloud ServiceとしてのExperience Managerについて理解し、行われた注目すべき変更を確認し、置き換えられた機能や非推奨の機能を確認する必要があります。
 
 <table>
 <tr>
 <td>プロジェクトの検出と評価</td>
-<td><ul><li>Cloud ServiceとしてのAdobe Experience ManagerとExperience Manager6.xとの重要な違いを理解するには、「Experience Managerに対する注目すべき変更」をCloud Service<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en">として参照してください。</a></li><li>非推奨とマークされた機能と機能の詳細については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">非推奨の機能</a>を参照してください。</li><li>[Cloud Serviceの移行のみ]Cloud Serviceの準備状況の評価：ソース環境で<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">ベストプラクティスアナライザー(BPA)</a>を実行 </li><li>Experience ManagerCSの主な変更点と廃止された機能に対する評価を完了します。</li></ul></td>
+<td><ul><li>Cloud ServiceとしてのAdobe Experience ManagerとExperience Manager6.xとの重要な違いを理解するには、「Experience Managerに対する注目すべき変更」をCloud Service</a>として参照してください。<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=en"></a></li><li>非推奨とマークされた機能と機能の詳細については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=en#deprecated-features">非推奨の機能</a>を参照してください。</li><li>[Cloud Serviceの移行のみ]Cloud Serviceの準備状況の評価：ソース環境で<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration">ベストプラクティスアナライザー(BPA)</a>を実行 </li><li>Experience ManagerCSの主な変更点と廃止された機能に対する評価を完了します。</li></ul></td>
 </tr>
 <tr>
 <td>レビュー</td>
