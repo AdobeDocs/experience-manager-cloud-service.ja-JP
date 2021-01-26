@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 84%
+source-wordcount: '567'
+ht-degree: 68%
 
 ---
 
@@ -51,3 +51,24 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 顧客 CDN からアドビが管理する CDN へのホップは効率的ですが、ホップの増加に伴い、パフォーマンスがわずかに低下する可能性があります。
 
 この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
+
+## 位置情報ヘッダー{#geo-headers}
+
+Adobeが管理するCDNは、次の内容を含む各リクエストにヘッダーを追加します。
+
+* 国コード：`x-aem-client-country`
+* 大陸コード：`x-aem-client-continent`
+
+国コードの値は、Alpha-2コード（[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明）です。
+
+大陸コードの値は次のとおりです。
+
+* AFアフリカ
+* 南極大陸
+* ASアジア
+* EUヨーロッパ
+* 北米
+* オクセアニア
+* 南アメリカ南部
+
+この情報は、リクエストの接触チャネル（国）に基づいて別のURLにリダイレクトするなどの使用例に役立ちます。 ただし、この使用例ではリダイレクトは様々なのでキャッシュしないでください。 必要に応じて、`Cache-Control: private`を使用してキャッシュを防ぐことができます。 [キャッシュ](/help/implementing/dispatcher/caching.md#html-text)も参照してください。
