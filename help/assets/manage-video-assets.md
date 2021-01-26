@@ -3,9 +3,9 @@ title: ビデオアセットの管理
 description: ' [!DNL Adobe Experience Manager] でビデオアセットをアップロード、プレビュー、注釈、公開します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 80%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 80%
 
    * Apple ProResファイルは、最大解像度1080pにのみトランスコードできます。
    * ソースファイルのビットレートが200 Mbpsを超える場合は、最大解像度1080pにのみトランスコードできます。
-   * その後、ソースフレームレート>= 60 fpsの場合、使用できるソースファイルの最大サイズは次のとおりです
+   * その後、ソースフレームレート>=60 fpsの場合、使用できるソースファイルの最大サイズは、次のとおりです。
 
       * 4,000 MB（4,000 MBのトランスコード用）
       * 800 MB（1080pトランスコード用）。
