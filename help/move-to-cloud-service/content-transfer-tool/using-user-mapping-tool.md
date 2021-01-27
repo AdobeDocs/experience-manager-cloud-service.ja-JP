@@ -2,9 +2,9 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 translation-type: tm+mt
-source-git-commit: 410b7900981596590fa80b286b40a965700f108e
+source-git-commit: a5129eac9f8032de5931b75c83eea62e480c1847
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '754'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,11 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
    >[!NOTE]
    >この手順をスキップすると、ユーザーとグループのマッピングは抽出段階でスキップされます。
 
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-1.png)
+
    以下の説明に従って、User Management API設定のフィールドに値を入力します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-2.png)
 
    * **組織ID**:ユーザーを移行する組織のIMS組織IDを入力します。
 
@@ -67,12 +71,17 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
       >[!NOTE]
       >アクセストークンの有効期限は24時間ごとに切れ、新しいアイテムを作成する必要があります。 新しいトークンを作成するには、[Adobe開発者コンソール](https://console.adobe.io)に戻って、プロジェクトを選択し、User Management APIをクリックして、ボックスに同じ秘密鍵を貼り付けます。
 
-1. 上記の情報を入力した後、「保存」をクリックします。
+1. 上記の情報を入力したら、「**保存**」をクリックします。
 
-1. 移行セットを作成するには、[移行セットの作成]をクリックしてフィールドに値を入力し、[保存]をクリックします。 詳しくは、「コンテンツ転送ツールの実行」を参照してください。
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-3.png)
+
+
+1. **[移行セットの作成]**&#x200B;をクリックしてフィールドに値を入力し、**[保存]**&#x200B;をクリックして、移行セットを作成します。 詳しくは、「コンテンツ転送ツールの実行」を参照してください。
 
    >[!NOTE]
    >切り替えスイッチで、「Mapping Users from IMS Users and Groups」がデフォルトでオンになっています。 この設定を使用すると、この移行セットで抽出が実行されると、ユーザーマッピングツールは抽出段階の一部として実行されます。 これは、コンテンツ転送ツールの抽出段階を実行する場合に推奨される方法です。 この切り替えをオフにした場合、またはユーザマッピング設定が作成されない場合、ユーザとグループのマッピングは抽出段階でスキップされます。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-4.png)
 
 1. 抽出フェーズを実行するには、「[コンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool)」を参照してください。
 
