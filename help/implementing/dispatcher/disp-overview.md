@@ -2,10 +2,10 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 translation-type: tm+mt
-source-git-commit: 4d58ccf972f5bf2a48b228755f93166c17bcb4b0
+source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
-source-wordcount: '4050'
-ht-degree: 88%
+source-wordcount: '4119'
+ht-degree: 86%
 
 ---
 
@@ -369,7 +369,8 @@ Phase 2 finished
 スクリプトは次の処理を行います。
 
 1. 前の節のバリデータを実行し、サポートされているディレクティブのみが含まれていることを確認します。 設定が有効でない場合、スクリプトは失敗します。
-2. 構文が正しいかどうかをテストして`httpd -t command`を実行し、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります
+2. 構文が正しいかどうかをテストして`httpd -t command`を実行し、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります。
+3. [ファイル構造セクション](#file-structure)で説明されているように不変にする予定のディスパッチャーSDK設定ファイルのサブセットが変更されていないことを確認します。 これは、AEM SDKバージョンv2021.1.4738で導入された新しいチェックで、ディスパッチャーツールバージョン2.0.36も含まれます。この更新前に、これらの不変ファイルのローカルSDKでの変更がCloud環境にも適用されると誤って想定されていました。
 
 Cloud Managerの展開中に、`httpd -t syntax`チェックも実行され、エラーはCloud Manager `Build Images step failure`ログに記録されます。
 
