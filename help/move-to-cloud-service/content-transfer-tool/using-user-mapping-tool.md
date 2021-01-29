@@ -2,10 +2,10 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 translation-type: tm+mt
-source-git-commit: d582b752848b2b8b5a5955eec08b04fbbc3a53fa
+source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 5%
+source-wordcount: '783'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 トランジションジャーニーの一環として、Cloud ServiceとしてAdobe Experience Manager(AEM)にユーザーとグループを移動するには、既存のAEMシステムからAEMにCloud Serviceとしてユーザーとグループを移動する必要があります。 これは、コンテンツ転送ツールで行います。
 
-AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。これには、ユーザーとユーザーグループの管理にAdobe Admin Consoleを使用する必要があります。 ユーザープロファイル情報は、AdobeIdentity Managementシステム(IMS)に一元化され、すべてのAdobeクラウドアプリケーションにシングルサインオンを提供します。 詳細はIdentity Managementを参照。 この変更により、Cloud Service作成者インスタンス上の重複ユーザーとグループを回避するために、既存のユーザーとグループをIMS IDにマッピングする必要があります。
+AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。これには、ユーザーとユーザーグループの管理に[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html)を使用する必要があります。 ユーザープロファイル情報は、AdobeIdentity Managementシステム(IMS)に一元化され、すべてのAdobeクラウドアプリケーションにシングルサインオンを提供します。 詳しくは、[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=en#identity-management)を参照してください。 この変更により、Cloud Service作成者インスタンス上の重複ユーザーとグループを回避するために、既存のユーザーとグループをIMS IDにマッピングする必要があります。
 
 ## 重要な検討事項 {#important-considerations}
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 ## ユーザーインターフェイス {#user-interface}
 
-ユーザマッピングツールは、コンテンツ転送ツールに統合されています。 コンテンツ転送ツールは、ソフトウェア配布ポータルからダウンロードできます。 最新バージョンの詳細については、[現在のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
+ユーザマッピングツールは、コンテンツ転送ツールに統合されています。 [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からContent Transfer Toolをダウンロードできます。 最新バージョンの詳細については、[現在のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
 1. 「Adobe Experience Managerを選択」を選択し、ツール/**操作** -> **コンテンツ転送**&#x200B;に移動します。
 1. 「**ユーザーマッピング設定を作成**」をクリックします。
