@@ -3,10 +3,10 @@ title: アセットマイクロサービスの設定と使用
 description: クラウドネイティブなアセットマイクロサービスを設定および使用して大規模なアセットを処理します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 93%
+source-wordcount: '2576'
+ht-degree: 88%
 
 ---
 
@@ -180,18 +180,18 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 後処理ワークフロー {#post-processing-workflows}
 
-処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
+アセットの追加処理が必要で、処理プロファイルを使用して処理できない場合は、後処理ワークフローを設定に追加できます。 これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
 
-後処理ワークフローは、設定されている場合、マイクロサービスの処理が終了した後、[!DNL Experience Manager]によって自動的に実行されます。 ワークフローランチャーを手動で追加してトリガーする必要はありません。次に例を示します。
+後処理ワークフローは、設定されている場合、マイクロサービスの処理が終了した後、[!DNL Experience Manager]によって自動的に実行されます。 ワークフローランチャーを手動でワークフローにトリガーする必要はありません。 次に例を示します。
 
 * アセットを処理するためのカスタムワークフロー手順。
 * 外部システムから提供されるアセット（製品やプロセスの情報など）にメタデータやプロパティを追加するための統合機能。
 * 外部サービスによる追加処理。
 
-後処理ワークフロー設定を Adobe Experience Manager に追加する作業は、次の手順で構成されます。
+後処理ワークフローの設定を[!DNL Experience Manager]に追加するには、次の手順に従います。
 
-* 1 つ以上のワークフローモデルの作成。ドキュメントでは&#x200B;*後処理ワークフローモデル*&#x200B;と呼びますが、これらは通常の Experience Manager ワークフローモデルです。
-* これらのモデルへの特定のワークフローステップの追加。手順は、ワークフローモデルの設定に基づいてアセットに対して実行されます。
+* 1 つ以上のワークフローモデルの作成。このドキュメントでは、これらのカスタムモデルを&#x200B;*後処理ワークフローモデル*&#x200B;と呼びます。 これらは、通常の[!DNL Experience Manager]ワークフローモデルです。
+* これら追加のモデルに必要なワークフロー手順です。 デフォルトのワークフローの手順を確認し、必要なデフォルトの手順をすべてカスタムワークフローに追加します。 手順は、ワークフローモデルの設定に基づいてアセットに対して実行されます。例えば、アセットのアップロード時に自動的にスマートタグを実行する場合は、カスタムの後処理ワークフローモデルに手順を追加します。
 * [!UICONTROL DAM アセットの更新ワークフロー完了プロセス]ステップを最後に追加します。この手順を追加すると、Experience Manager がいつ処理が終了したかを把握して、アセットを処理済みとしてマークできるので、アセットに&#x200B;*新規*&#x200B;が表示されます。
 * Custom Workflow Runner サービスの設定を作成すると、パス（フォルダーの場所）または正規表現で後処理ワークフローモデルの実行を設定できます。
 
@@ -207,7 +207,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 アセットマイクロサービスの処理が終了した後に、システム内でアップロードまたは更新されたアセットに対して実行する後処理ワークフローモデルを設定するには、Custom Workflow Runner サービスを設定する必要があります。
 
-Custom Workflow Runner サービス（`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`）は OSGi サービスで、次の 2 つの設定オプションを提供します。
+Adobe CQDAMカスタムワークフローランナー(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)はOSGiサービスで、次の2つの設定オプションを提供します。
 
 * パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリパスに基づいて、複数のワークフローモデルをリストアップできます。パスとモデルはコロンで区切る必要があります。単純なリポジトリパスがサポートされており、`/var` パス内のワークフローモデルにマッピングされる必要があります。例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
