@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 14%
+source-wordcount: '649'
+ht-degree: 15%
 
 ---
 
@@ -73,14 +73,10 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツールv1.1.20のリリース日は2021年1月8日です。
+コンテンツ転送ツールv1.2.20のリリース日は2021年2月1日です。
 
 ### [!DNL Content Transfer Tool] の新機能 {#what-is-new-ctt}
 
-* ユーザーは、コンテンツ転送ツール(CTT)ユーザーインターフェイスのステータスアイコンにマウスポインターを置くと、アクセストークンの有効期限が切れたかどうかを確認できます。 また、Cloud Serviceセットの詳細UIで、移行インスタンスに接続できないことが通知されます。
-
-### バグ修正 {#ctt-bug-fixes}
-
-* 移行セットのCTT (Content Transfer Tool)ユーザーインターフェイスのステータスが、無操作状態が一定期間続いた後も保持されず、変更されました。 この問題は修正されました。
-* ログが利用できない場合、表示ログのオプションが無効になっていました。 この問題は修正され、ログが見つからない理由をユーザーに通知するメッセージが追加されました。
-* ユーザーがインジェストを停止したときに、コンテンツ転送ツールのユーザーインターフェイスのステータスがFAILEDと表示されていた問題を修正しました。 この問題は修正され、代わりに&#x200B;*STOPPED*&#x200B;が表示されるようになりました。
+* コンテンツ転送ツール — ユーザーマッピングツールに追加された新しい機能とUI。 この機能は、コンテンツ移行アクティビティの一環として、既存のユーザーとグループをAdobeのIdentity ManagementシステムIDに自動的にマッピングします。 詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
+* コンテンツ転送ツールは、移行セット内で参照されているすべてのグループとユーザーを子も含めて移行するようになりました。
+* 移行セットの作成時に、`/etc`の下の特定のパスを選択できます。
