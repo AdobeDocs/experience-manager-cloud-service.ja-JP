@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 100%
 
    詳しくは、[コンテンツ転送の抽出プロセス](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process)を参照してください。
 
-2. **インジェスト**：インジェストとは、*移行セット*&#x200B;からターゲット Cloud Service インスタンスにコンテンツを取り込むことです。
+>[!NOTE]
+>
+> 抽出段階の一部として、ユーザマッピングツールを実行することをお勧めします。 詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)を参照してください。
+
+1. **インジェスト**：インジェストとは、*移行セット*&#x200B;からターゲット Cloud Service インスタンスにコンテンツを取り込むことです。
 
    詳しくは、[コンテンツ転送のインジェストプロセス](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process)を参照してください。
 
