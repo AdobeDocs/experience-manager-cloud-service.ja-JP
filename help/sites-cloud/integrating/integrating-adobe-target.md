@@ -2,9 +2,9 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 7d3b5199333a60d69957819d874f8ce1bafdd797
+source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,6 @@ Target 設定を編集するには、次の手順に従います。
 1. 既存の設定を選択し、「**プロパティ**」をクリックします。
 2. プロパティを編集します。
 3. 「**Adobe Target に再接続**」を選択します。
-   ![再接続](assets/edit_config_page1.png "再接続")
 4. 「**保存して閉じる**」を選択します。
 
 ### サイトへの設定の追加 {#add-configuration}
