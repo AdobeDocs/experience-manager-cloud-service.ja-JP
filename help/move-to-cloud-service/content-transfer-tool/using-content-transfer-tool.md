@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 6446faf2ed936b8bcefd6b4192dbd99fb10aa41e
+source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 83%
+source-wordcount: '1906'
+ht-degree: 82%
 
 ---
 
@@ -28,9 +28,7 @@ ht-degree: 83%
 
 * アクセストークンは、特定の期間の後、またはCloud Service環境がアップグレードされた後に、定期的に期限切れになる場合があります。 アクセストークンの有効期限が切れると、Cloud Serviceインスタンスに接続できなくなり、新しいアクセストークンを取得する必要があります。 既存の移行セットに関連付けられているステータスアイコンは赤のクラウドに変わり、その上にカーソルを置くとメッセージが表示されます。
 
-* 現在、AEM as a Cloud Service オーサーインスタンスのデフォルト MongoDB サイズは 32GB です。セグメントストアのサイズが 20GB を超える場合は、サポートチケットを送信して MongoDB のサイズを増やすことをお勧めします。
-
-* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なもののみです。 *抽出*&#x200B;プロセスは、`/home`全体を移行セットにコピーし、*インジェスト*&#x200B;プロセスは、移行されたコンテンツACLで参照されているすべてのユーザーとグループをコピーします。
+* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なもののみです。 *抽出*&#x200B;プロセスは、`/home`全体を移行セットにコピーし、*インジェスト*&#x200B;プロセスは、移行されたコンテンツACLで参照されているすべてのユーザーとグループをコピーします。 既存のユーザーとグループをIMS IDに自動的にマップするには、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)を参照してください。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
