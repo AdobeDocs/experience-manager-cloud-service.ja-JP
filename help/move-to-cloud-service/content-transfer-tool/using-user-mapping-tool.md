@@ -2,10 +2,10 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 translation-type: tm+mt
-source-git-commit: 2ceaaa4db35ab793392ae3644db9b862cbf9af2b
+source-git-commit: d1a944606a88a0afded94592676f14c0ba84e954
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 6%
+source-wordcount: '782'
+ht-degree: 8%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 ユーザマッピングツールは、コンテンツ転送ツールに統合されています。 [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からContent Transfer Toolをダウンロードできます。 最新バージョンの詳細については、[現在のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
-1. 「Adobe Experience Managerを選択」を選択し、ツール/**操作** -> **コンテンツ転送**&#x200B;に移動します。
+1. Adobe Experience Manager を選択し、ツール／**運営**／**コンテンツ転送**&#x200B;に移動します。
 1. 「**ユーザーマッピング設定を作成**」をクリックします。
 
    >[!NOTE]
