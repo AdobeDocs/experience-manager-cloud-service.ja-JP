@@ -2,7 +2,7 @@
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します。。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '9536'
 ht-degree: 98%
@@ -399,7 +399,7 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 | ビデオタイプ | 幅 x 高さ | 幅の比率 | 高さの比率 |
 |--- |--- |--- |--- |
-| ソース | 1,920 x 1,080 | 1 | 3 |
+| ソース | 1,920 x 1,080 | 1 | 1 |
 | エンコード | 960 x 540 | 2 | 2 |
 | エンコード | 640 x 360 | 3 | 3 |
 | エンコード | 480 x 270 | 4 | 4 |
@@ -1049,7 +1049,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media には、キャプションファイルを JSON（JavaScript Object Notation）形式に変換する機能があります。このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。この後、検索エンジンがコンテンツをクロールしてインデックスを作成できます。これにより、ビデオを検索しやすくなり、ビデオコンテンツの詳細がユーザーに提供されます。
 
-URLでのJSON関数の使用について詳しくは、[静的な（画像以外の）コンテンツの提供](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)を参照してください。
+URLでのJSON関数の使用について詳しくは、[静的な（画像以外の）コンテンツの提供](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)を参照してください。
 
 **ビデオにキャプションまたはサブタイトルを追加するには:**
 
