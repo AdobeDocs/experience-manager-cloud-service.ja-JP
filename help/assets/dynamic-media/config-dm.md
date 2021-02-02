@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法に関する情報。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
 ht-degree: 91%
@@ -206,7 +206,7 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 Image Server 画面では、画像を配信するためのデフォルト設定を指定します。各設定の説明については、UI 画面を参照してください。
 
-**[!UICONTROL 要求属性]** - これらの設定は、サーバーから配信できる画像を制限します。**[!UICONTROL 初期設定の要求属性]** - これらの設定は、画像のデフォルトの表示に関係します。**[!UICONTROL 共通のサムネール属性]** - これらの設定は、サムネール画像のデフォルトの表示に関係します。**[!UICONTROL カタログフィールドの初期設定]** - これらの設定は、画像の解像度とデフォルトのサムネールの種類に関係します。**[!UICONTROL カラーマネジメント属性]** - これらの設定は、使用する ICC カラープロファイルを決定します。**[!UICONTROL 互換性の属性]** - この設定により、後方互換性の確保のためにバージョン 3.6 の場合と同様に、テキストレイヤーの先頭と末尾の段落が処理されます。**[!UICONTROL ローカリゼーションサポート]** - これらの設定によって、複数のロケール属性を管理します。また、ロケールマップ文字列を指定することもできます。これにより、ビューアのツールチップで使用する言語を指定できます。**[!UICONTROL ローカリゼーションサポート]**&#x200B;の設定について詳しくは、[アセットのローカライゼーションを設定する場合の考慮事項](https://experienceleague.corp.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)を参照してください。
+**[!UICONTROL 要求属性]** - これらの設定は、サーバーから配信できる画像を制限します。**[!UICONTROL 初期設定の要求属性]** - これらの設定は、画像のデフォルトの表示に関係します。**[!UICONTROL 共通のサムネール属性]** - これらの設定は、サムネール画像のデフォルトの表示に関係します。**[!UICONTROL カタログフィールドの初期設定]** - これらの設定は、画像の解像度とデフォルトのサムネールの種類に関係します。**[!UICONTROL カラーマネジメント属性]** - これらの設定は、使用する ICC カラープロファイルを決定します。**[!UICONTROL 互換性の属性]** - この設定により、後方互換性の確保のためにバージョン 3.6 の場合と同様に、テキストレイヤーの先頭と末尾の段落が処理されます。**[!UICONTROL ローカリゼーションサポート]** - これらの設定によって、複数のロケール属性を管理します。また、ロケールマップ文字列を指定することもできます。これにより、ビューアのツールチップで使用する言語を指定できます。**[!UICONTROL ローカリゼーションサポート]**&#x200B;の設定について詳しくは、[アセットのローカライゼーションを設定する場合の考慮事項](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets)を参照してください。
 
 #### アプリケーションの一般設定の指定 {#configuring-application-general-settings}
 
