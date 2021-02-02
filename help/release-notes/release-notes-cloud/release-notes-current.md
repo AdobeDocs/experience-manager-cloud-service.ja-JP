@@ -2,7 +2,7 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 1ac061dfc9773a1de0b1d5f8c427f8d770ca73fa
+source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 15%
@@ -73,7 +73,7 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツールv1.2.20のリリース日は2021年2月1日です。
+コンテンツ転送ツールv1.2.2のリリース日は2021年2月1日です。
 
 ### [!DNL Content Transfer Tool] の新機能 {#what-is-new-ctt}
 
