@@ -2,10 +2,10 @@
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
 translation-type: tm+mt
-source-git-commit: 42d7ac4fc99ef45c26c23d68ddfe2a5ddf7f62fd
+source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 98%
+source-wordcount: '1931'
+ht-degree: 97%
 
 ---
 
@@ -305,6 +305,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 * **コンテンツフラグメントモデルは現在サポートされていません。**&#x200B;読み取りも作成もできません。新しいコンテンツフラグメントを作成または既存のコンテンツフラグメントを更新できるようにするには、コンテンツフラグメントモデルの正しいパスがわかっている必要があります。現在のところ、これらの概要を取得するには、管理 UI を使用するしかありません。
 * **参照は無視されます。**&#x200B;現時点では、既存のコンテンツフラグメントが参照されているかどうかはチェックされません。したがって、例えば、コンテンツフラグメントを削除すると、削除されたコンテンツフラグメントへの参照を含んでいるページで問題が発生する可能性があります。
+* **JSONデータ** 型JSONデータ型のREST API出力は、現在、 *文字列ベースの出力* です **。
 
 ## ステータスコードとエラーメッセージ {#status-codes-and-error-messages}
 
