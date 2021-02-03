@@ -2,21 +2,15 @@
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
-source-wordcount: '2012'
-ht-degree: 87%
+source-wordcount: '2027'
+ht-degree: 86%
 
 ---
 
 
 # コンテンツフラグメントの操作{#working-with-content-fragments}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
->
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 [Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
 
@@ -30,12 +24,9 @@ ht-degree: 87%
    * 複雑な
       * テキスト、数値、ブール値、データと時間など、様々なデータタイプの多くのフィールドの組み合わせ。
       * ページオーサリング用により構造化されたコンテンツを準備する目的、またはアプリケーションに配信する目的のいずれかで使用できます。
-
-<!--
-  * Nested
-    * The reference data types available allow you to nest your content.
-    * Tends to be used for delivery to your application.
--->
+   * 入れ子
+      * 使用可能な参照データ型を使用して、コンテンツをネストできます。
+      * アプリへの配信に使用される傾向があります。
 
 コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
 
@@ -78,10 +69,7 @@ ht-degree: 87%
 * 多様なチャネル向けのコンテンツプールを構築する。
 * 特定のチャネル向けにコンテンツのバリエーションをデザインする。
 * アセットを挿入することでテキストに画像を追加する（混在メディアフラグメント）
-
-<!--
-* Create nested content to reflect the complexity of your data.
--->
+* データの複雑さを反映して、ネストされたコンテンツを作成します。
 
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
 
@@ -121,11 +109,9 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 >
 >AEM はフラグメントコンテンツの翻訳もサポートしています。
 
-<!--
 >[!NOTE]
 >
->AEM also supports the translation of fragment content. See [Creating Translation Projects for Content Fragments](/help/assets/creating-translation-projects-for-content-fragments.md) for further information.
--->
+>AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、[Translating Assets](/help/assets/translate-assets.md)を参照してください。
 
 ## コンテンツタイプ {#content-type}
 
@@ -306,6 +292,12 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 ### WKND サンプル {#wknd-sample}
 
-AEM as a Cloud Service の習得に役立つ [WKND サイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サンプルが用意されています。サンプルフラグメントが含まれており、それらは次の場所で確認できます。
+AEM as a Cloud Service の習得に役立つ [WKND サイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サンプルが用意されています。
 
-`hhttp://<host>:<port>/assets.html/content/dam/wknd/en/adventures`
+WKNDプロジェクトには、次のものが含まれます。
+
+* コンテンツフラグメントモデルは次の場所で利用できます。
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* 次の場所で利用可能なコンテンツフラグメント（およびその他のコンテンツ）
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
