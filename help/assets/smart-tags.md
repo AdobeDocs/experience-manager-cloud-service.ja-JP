@@ -1,29 +1,54 @@
 ---
-title: AI生成タグを使用した画像の自動タグ付け
-description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する、人工的にインテリジェントなサービスを使用して画像にタグ付けします。'
+title: AI生成タグを使用したアセットの自動タグ付け
+description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する、人為的にインテリジェントなサービスを使用してアセットにタグ付けします。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 745585ebd50f67987ee4fc48d4f9d5b4afa865a0
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '2431'
-ht-degree: 86%
+source-wordcount: '2557'
+ht-degree: 78%
 
 ---
 
 
-# スマートコンテンツサービスをトレーニングし、画像に自動タグを付ける{#train-service-tag-assets}
+# 検索を高速にするための追加スマートタグ{#smart-tag-assets-for-faster-search}
 
-デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類に基づく統制語彙を使用してアセットをタグ付けすると、タグベースの検索でアセットを特定し、取得することが容易になります。
+デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類管理されたボキャブラリでアセットをタグ付けすることで、アセットを容易に識別して検索で取得できます。
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
 
-そのバックグラウンドで、スマートタグは [Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングをおこないます。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。
+背景には、スマートタグは、[Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html)の人工的にインテリジェントなフレームワークを使用して、タグ構造とビジネスタクソノミに対する画像認識アルゴリズムのトレーニングを行っています。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-スマートタグを使用するには、次のタスクを実行します。
+## サポートされているアセットタイプ {#smart-tags-supported-file-formats}
+
+スマートタグは、サポートされているファイルタイプのうち、JPGおよびPNG形式のレンディションを生成するものにのみ適用されます。 この機能は、次のタイプのアセットに対してサポートされています。
+
+| 画像（MIMEタイプ） | テキストベースのアセット（ファイル形式） | ビデオアセット（ファイル形式とコーデック） |
+|----|-----|------|
+| image/jpeg | TXT | MP4 (H264/AVC) |
+| image/tiff | RTF | MKV (H264/AVC) |
+| image/png | DITA | MOV(H264/AVC、Motion JPEG) |
+| image/bmp | XML | AVI（インデオ4） |
+| image/gif | JSON | FLV(H264/AVC、vp6f) |
+| image/pjpeg | DOC | WMV(WMV2) |
+| image/x-portable-anymap | DOCX |  |
+| image/x-portable-bitmap | PDF |  |
+| image/x-portable-graymap | CSV |  |
+| image/x-portable-pixmap | PPT |  |
+| image/x-rgb | PPTX |  |
+| image/x-xbitmap | VTT |  |
+| image/x-xpixmap | SRT |  |
+| image/x-icon |  |  |
+| image/photoshop |  |  |
+| image/x-photoshop |  |  |
+| image/psd |  |  |
+| image/vnd.adobe.photoshop |  |  |
+
+[!DNL Experience Manager] 初期設定では、スマートタグがテキストベースのアセットとビデオに自動的に追加されます。画像にスマートタグを自動追加するには、次のタスクを実行します。
 
 * [ [!DNL Adobe Experience Manager] Adobe 開発者コンソールとの統合](#integrate-aem-with-aio).
 * [タグモデルとガイドラインの理解](#understand-tag-models-guidelines)。
@@ -31,7 +56,9 @@ ht-degree: 86%
 * [デジタルアセットのタグ付け](#tag-assets)。
 * [タグと検索の管理](#manage-smart-tags-and-searches)。
 
-スマートタグは、[!DNL Adobe Experience Manager Assets] 顧客にのみ適用できます。スマートタグは、[!DNL Experience Manager] のアドオンとして購入できます。
+>[!TIP]
+>
+>スマートタグは、[!DNL Adobe Experience Manager Assets] 顧客にのみ適用できます。スマートタグは、[!DNL Experience Manager] のアドオンとして購入できます。
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -92,7 +119,7 @@ ht-degree: 86%
    * 2019 年と 2020 年にリリースされた車種を含むタグモデル。
    * 同じ車種をいくつか含む複数のタグモデル。
 
-**トレーニングに使用する画像**：同じ画像を使用して、異なるタグモデルをトレーニングできます。ただし、イメージをタグモデル内の複数のタグに関連付けることはできません。したがって、異なるタグモデルに属する異なるタグを、同じ画像にタグ付けすることが可能です。
+**トレーニングに使用する画像**：同じ画像を使用して、異なるタグモデルをトレーニングできます。ただし、イメージをタグモデル内の複数のタグに関連付けないでください。 同じ画像に、異なるタグモデルに属する異なるタグを付けることができます。
 
 トレーニングを取り消すことはできません。上記のガイドラインは、トレーニングに適した画像を選択する際に役立ちます。
 
@@ -154,15 +181,17 @@ ht-degree: 86%
    ![start_workflow](assets/start_workflow.png)
 
 1. 「**[!UICONTROL DAM スマートタグアセット]**」ワークフローを選択し、ワークフローのタイトルを指定します。
-1. 「**[!UICONTROL 開始]**」をクリックします。ワークフローによってアセットにタグが適用されます。アセットフォルダーに移動し、タグを確認して、アセットが適切にタグ付けされているかどうかを確認します。詳しくは、[スマートタグの管理](#manage-smart-tags-and-searches)を参照してください。
+1. 「**[!UICONTROL 開始]**」をクリックします。ワークフローによってアセットにタグが適用されます。アセットフォルダーに移動し、タグを確認して、アセットが正しくタグ付けされていることを確認します。 詳しくは、[スマートタグの管理](#manage-smart-tags-and-searches)を参照してください。
 
 >[!NOTE]
 >
->後続のタグ付けサイクルでは、新しくトレーニングされたタグを使用して、変更したアセットのみが再度タグ付けされます。ただし、タグ付けワークフローの最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが 24 時間を超える場合は、変更されないアセットもタグ付けされます。定期的なタグ付けワークフローについては、時間の間隔が 6 か月を超えると、変更されていないアセットがタグ付けされます。
+>後続のタグ付けサイクルでは、変更されたアセットのみが、新しくトレーニングされたタグで再度タグ付けされます。ただし、タグ付けワークフローで最後のタグ付けサイクルと現在のタグ付けサイクルの間のギャップが24時間を超える場合は、変更されていないアセットにもタグが付けられます。 定期的なタグ付けワークフローについては、時間の間隔が 6 か月を超えると、変更されていないアセットがタグ付けされます。
 
 ### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
 
 Experience Manager は、DAM にアップロードするアセットに自動的にタグ付けすることができます。そのためには、管理者は、使用可能な手順をスマートタグアセットに追加するワークフローを設定します。[アップロードしたアセットのスマートタグを有効にする方法](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)を参照してください。
+
+<!-- TBD: Text-based assets are automatically smart tagged. -->
 
 ## スマートタグとアセット検索の管理{#manage-smart-tags-and-searches}
 
@@ -190,7 +219,7 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 
 ### スマートタグ付き AEM 検索結果について     {#understandsearch}
 
-デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
+デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、追加の`OR`句が追加され、適用したスマートタグ内の検索用語が検索されます。 例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
 * 「`woman`」と「`running`」の両方のキーワードがメタデータ内にあるアセット。
 
@@ -209,6 +238,8 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 * 画像内の細かい違いを認識することはできません。例えば、シャツのサイズが細身か標準かなどの違いは認識できません。
 * 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、T シャツのロゴなどです。
 * タグ付けは、Experience Managerがサポートする言語でサポートされています。 言語のリストについては、「[Smart Content Serviceリリースノート](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)」を参照してください。
+
+<!-- TBD: Add limitations related to text-based assets. -->
 
 スマートタグ（通常または拡張）付きのアセットを検索するには、アセットのオムニサーチ（全文検索）を使用します。スマートタグには個別の検索用述語はありません。
 
