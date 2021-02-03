@@ -2,31 +2,27 @@
 title: GraphQLでのコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信用のGraphQLとのCloud Serviceとして使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 54b377c6d98398fd5066dc4a3337a3877b9e3ed7
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 0%
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
 
 # GraphQLでコンテンツフラグメントを使用したヘッドレスコンテンツ配信{#headless-content-delivery-using-content-fragments-with-graphQL}
 
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
->
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
+Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM GraphQL API（標準GraphQLに基づくカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツを配信できます。 単一のAPIクエリをカスタマイズする機能により、レンダリングする必要がある/必要な特定のコンテンツを(単一のAPIクエリに対する応答として)取得して配信できます。
 
-Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM GraphQL API（標準GraphQLに基づくカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツを配信できます。
+>[!NOTE]
+>
+>Cloud ServiceとしてのAEM Sites向けヘッドレス開発の紹介は、[ヘッドレスとAEM](/help/implementing/developing/headless/introduction.md)を参照。
 
 ## ヘッドレスCMS {#headless-cms}
 
 ヘッドレスコンテンツ管理システム(CMS)は次のとおりです。
 
 * &quot;*ヘッドレスコンテンツ管理システム（ヘッドレスCMS）は、バックエンド専用のコンテンツ管理システム(CMS)で、API経由でコンテンツにアクセスし、任意のデバイスに表示できます。*
-
-   *「ヘッドレス」という用語は、「ボディ」（コンテンツリポジトリなどのバックエンド）から「ヘッド」（Webサイトの前端）を切り刻むという概念から来ています。*&quot;
 
    [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system)を参照してください。
 
@@ -36,49 +32,19 @@ AEMのコンテンツフラグメントのオーサリングに関しては、�
 
 * コンテンツフラグメントのコンテンツは、コンテンツフラグメントモデルに従って、あらかじめ決められた方法で構造化されます。 これにより、アプリケーションへのアクセスが簡素化され、コンテンツの処理がさらに進みます。
 
->[!NOTE]
->
->Cloud ServiceとしてのAEM Sites向けヘッドレス開発の紹介は、[ヘッドレスとAEM](/help/implementing/developing/headless/introduction.md)を参照。
-
 ## GraphQL — 概要{#graphql-overview}
 
 GraphQLは次のようになります。
 
-* &quot;*...APIのクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。 GraphQLは、APIのデータの完全で理解可能な説明を提供し、クライアントに何が必要で何も必要でないかを正確に尋ねる力を与え、APIの時間の経過と共に発展させ、強力な開発ツールを有効にします。*&quot;
+* &quot;*...APIのクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイム。*&quot;
 
    [GraphQL.org](https://graphql.org)を参照
 
-* &quot;*...柔軟なAPIレイヤー用にオープンな仕様。 GraphQLを既存のバックエンドに重ね合わせて、以前に比べて迅速に製品を構築….*&quot;.
-
-   「[GraphQLの探索](https://www.graphql.com)」を参照してください。 「*GraphQLの探索はアポロチームが管理している。 私たちの目標は、GraphQL.*&#x200B;を理解し、導入するために必要なツールを世界中の開発者や技術リーダーに全て提供することです。
-
 [AEM GraphQL API](#aem-graphql-api)を使用すると、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)で（複雑な）クエリを実行できます。の各クエリは、特定のモデルタイプに従っています。 返されたコンテンツは、アプリケーションで使用できます。
-
-### GraphQLの用語{#graphql-terminology}
-
-GraphQLでは次を使用します。
-
-* **[クエリ](https://graphql.org/learn/queries/)**
-
-* **[スキーマとタイプ](https://graphql.org/learn/schema/)**  — これらを使用して、GraphQLはAEMでGraphQLを実装する際に許可されるタイプと操作を示します。
-
-* **[フィールド](https://graphql.org/learn/queries/#fields)**
-
-* **GraphQL Endpoint**  - GraphQLスキーマに応答し、GraphQLクエリへのアクセスを提供するAEM内のパス。
-
-[ベストプラクティス](https://graphql.org/learn/best-practices/)を含む包括的な詳細については、[(GraphQL.org)「GraphQL](https://graphql.org/learn/)の概要」を参照してください。
-
-### GraphQLクエリタイプ{#graphql-query-types}
-
-GraphQLでは、次のいずれかに対してクエリを実行できます。
-
-* **単一エントリ**
-
-* **[エントリのリスト](https://graphql.org/learn/schema/#lists-and-non-null)**
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-クラウドエクスペリエンスとしてのアドビエクスペリエンスには、標準のGraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)のカスタマイズ実装が実装されています。[
+クラウドエクスペリエンスとしてのAdobeエクスペリエンスの場合、標準のGraphQL APIのカスタマイズ実装が開発されました。 詳しくは、[AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)を参照してください。
 
 AEM GraphQL APIの実装は、[GraphQL Javaライブラリ](https://graphql.org/code/#java)に基づいています。
 
@@ -103,6 +69,8 @@ AEM GraphQL APIの実装は、[GraphQL Javaライブラリ](https://graphql.org/
 ### コンテンツフラグメントモデル {#content-fragments-models}
 
 次の[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md):
+
+* [スキーマ](https://graphql.org/learn/schema/)の生成に使用します。1回は&#x200B;**有効**&#x200B;です。
 
 * GraphQLに必要なデータタイプとフィールドを指定します。 アプリケーションが可能なもののみを要求し、期待されるものを受け取るようにします。
 
