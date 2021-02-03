@@ -1,10 +1,10 @@
 ---
 title: ビデオアセットのスマートタグ付け
-description: ビデオアセットのスマートタグ付けは、Adobe Senseiのサービスを使用して、コンテキストタグと説明タグを適用することで、アセットのタグ付けを自動化します。
+description: Experience Managerは、 [!DNL Adobe Sensei]を使用して、文脈依存の、説明的なスマートタグをビデオに自動的に追加します。
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # ビデオアセットのスマートタグ付け{#video-smart-tags}
 
-新しいコンテンツに対するニーズが高まる中で、人手による作業を減らし、人を惹きつけるデジタルエクスペリエンスをすぐに届ける必要があります。 [!DNL Adobe Experience Manager] は、人工知能による支援を受けたビデオアセットの自動タグ付けを [!DNL Cloud Service] サポートします。ビデオの手動タグ付けには時間がかかる場合があります。 ただし、Adobe Senseiのビデオスマートタグ機能では、人工知能モデルを使用してビデオコンテンツを分析し、ビデオアセットにタグを追加します。 これにより、DAMユーザーが顧客に豊富なエクスペリエンスを提供する時間を短縮できます。 Adobeの機械学習サービスは、ビデオに対して2組のタグを生成します。 一方、1つのセットは、そのビデオ内のオブジェクト、シーンおよび属性に対応します。もう1つのセットは、飲用、走行、ジョギングなどのアクションに関する。
+新しいコンテンツに対するニーズが高まる中で、人手による作業を減らし、人を惹きつけるデジタルエクスペリエンスをすぐに届ける必要があります。 [!DNL Adobe Experience Manager] は、人工知能を使用したビデオアセットの自動タグ付けを [!DNL Cloud Service] サポートしています。ビデオの手動タグ付けには時間がかかる場合があります。 ただし、[!DNL Adobe Sensei]の動力付きビデオスマートタグ機能では、人工知能モデルを使用してビデオコンテンツを分析し、ビデオアセットにタグを追加します。 これにより、DAMユーザーが顧客に豊富なエクスペリエンスを提供する時間を短縮できます。 Adobeの機械学習サービスは、ビデオに対して2組のタグを生成します。 一方、1つのセットは、そのビデオ内のオブジェクト、シーンおよび属性に対応します。もう1つのセットは、飲用、走行、ジョギングなどのアクションに関する。
 
-スマートタグ付けでサポートされるビデオファイル形式（およびそのコーデック）は、MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(indeo4)、FLV（H2です。64/AVC、vp6f）、およびWMV(WMV2)。 また、この機能により、300 MBまでのビデオのタグ付けも可能です。 ビデオアセットの自動タグ付けは、ビデオがアップロードされた後、または再処理がトリガーされた後、標準のアセット処理(サムネールの作成とメタデータ抽出と共に)として行われます。 スマートタグは、アセット[!UICONTROL プロパティ]内の[信頼性スコア](#confidence-score-video-tag)の降順で表示されます。 ビデオタグ付けは、[!DNL Adobe Experience Manager]ではデフォルトで[!DNL Cloud Service]として有効になっています。 ただし、フォルダー上のビデオスマートタグ](#opt-out-video-smart-tagging)を[オプトアウトできます。
+ビデオアセットの自動タグ付けは、ビデオがアップロードされた後、または再処理がトリガされた後、標準のアセット処理(サムネールの作成、メタデータ抽出と共に)として行われます。 スマートタグは、アセット[!UICONTROL プロパティ]内の[信頼性スコア](#confidence-score-video-tag)の降順で表示されます。 ビデオタグ付けは、[!DNL Adobe Experience Manager]ではデフォルトで[!DNL Cloud Service]として有効になっています。 ただし、フォルダー上のビデオスマートタグ](#opt-out-video-smart-tagging)を[オプトアウトできます。
 
 ## アップロード{#smart-tag-assets-on-ingestion}のビデオのスマートタグ付け
 
-[ビデオアセット](add-assets.md#upload-assets)を[!DNL Cloud Service]として[!DNL Adobe Experience Manager]にアップロードする場合、ビデオの処理は![](assets/do-not-localize/assetprocessing.png)行われます。 処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。 スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。 asset computeサービスでは、Adobe Senseiを利用してこれらのスマートタグを作成します。
+[ビデオアセット](add-assets.md#upload-assets)を[!DNL Cloud Service]として[!DNL Adobe Experience Manager]にアップロードすると、ビデオが処理されます。 処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。 スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。 アセットマイクロサービスは、[!DNL Adobe Sensei]を利用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
@@ -44,7 +44,9 @@ DAM内の既存のビデオアセットに対して、スマートタグが自�
 
 1. 「![アセットの再処理」アイコン](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL アセットの再処理]アイコンを選択し、「[!UICONTROL 完全なプロセス]」オプションを選択します。
 
-![アセットの再処理を行い、既存のDAMリポジトリにタグを追加](assets/reprocess.gif)
+<!-- TBD: Limit size -->
+
+![アセットを再処理して、既存のDAMリポジトリにタグを追加する](assets/reprocess.gif)
 
 プロセスが完了したら、フォルダー内の任意のビデオアセットの[!UICONTROL プロパティ]ページに移動します。 自動的に追加されたタグは、[!UICONTROL 「基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。 適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score-video-tag)の降順で並べ替えられます。
 
@@ -123,13 +125,13 @@ DAM内の既存のビデオアセットに対して、スマートタグが自�
 
 ## 制限事項 {#video-smart-tagging-limitations}
 
-* ビデオアセットのタグ付けに関するスマートタグサービス（拡張スマートタグ）のトレーニングは、まだサポートされていません。
+* 特定のビデオを使用するビデオにスマートタグを適用するサービスをトレーニングすることはできません。 デフォルトの[!DNL Adobe Sensei]設定で動作します。
 
 * タグ付けの進行状況は表示されません。
 
-* タグ付けに適したビデオのサイズは、300 MB以下です。 Adobe Senseiサービスは、この条件を満たすビデオにスマートタグを付け、フォルダー内の他のビデオのタグ付けをスキップします。
+* ファイルサイズが300 MB未満のビデオのみが自動タグ付けされます。 [!DNL Adobe Sensei]サービスは、サイズが大きいビデオファイルをスキップします。
 
-* MP4(H264/AVC)、MKV(H264/AVC)、MOV(H264/AVC、Motion JPEG)、AVI(Indeo4)、FLV(H22)のファイル形式のビデオのみ64/AVC、vp6f)、WMV(WMV2)はタグ付けが可能です。
+* [スマートタグ](/help/assets/smart-tags.md#smart-tags-supported-file-formats)で言及されている、ファイル形式のビデオとサポートされているコーデックのみがタグ付けされます。
 
 >[!MORELIKETHIS]
 >
