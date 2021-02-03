@@ -3,10 +3,10 @@ title: 拡張スマートタグ
 description: Adobe Sensei の AI および ML サービスを利用して、状況に応じた説明的なビジネスタグを適用し、アセットの検出とコンテンツベロシティ（コンテンツ創出の高速化）を向上させます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33ce255e126f2a49f1c1a6e94955aade2ca0d240
+source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。既存のデプロイメントでは、管理者は次の手順に従って環境を設定します。
+>新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。既存のデプロイメントでは、管理者は次の手順に従って統合を設定します。
 
 ## Adobe 開発者コンソールとの統合 {#aio-integration}
 
