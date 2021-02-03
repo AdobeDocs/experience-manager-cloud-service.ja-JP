@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
-seo-title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
+description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 translation-type: tm+mt
-source-git-commit: c8759ba41813a891664c1cf2d12eaeddbd4aabeb
+source-git-commit: d1e789527bed9e846dfc265c757889fcd96feaf5
 workflow-type: tm+mt
 source-wordcount: '3124'
 ht-degree: 100%
@@ -47,7 +47,6 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
    * ページでセレクターを使用する場合、セマンティック値を提供するセレクターが推奨されます。
    * ユーザーが理解できない URL は、検索エンジンでも理解できません。
    * 次に例を示します。
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 の方が  より望ましい 
 `mybrand.com/products/product-detail.1234.html`
@@ -365,8 +364,8 @@ Disallow: /
 >
 >Sling サーブレットを登録すると、拡張子 `sitemap` のセレクター `xml` をリスンできます。これにより、末尾が以下のようになっている URL が要求されると、サーブレットによってリクエストが処理されます。
 >    `/<path-to>/page.sitemap.xml`
->その後、要求されたリソースをリクエストから取得し、JCR API を使用してコンテンツツリーのその地点からサイトマップを生成できます。
->このようなアプローチは、複数のサイトを同じインスタンスから処理している場合にメリットがあります。`/content/siteA.sitemap.xml` に対するリクエストでは `siteA` 用のサイトマップが生成され、`/content/siteB.sitemap.xml` のリクエストでは `siteB` 用のサイトマップが生成されます。コードを追加する必要はありません。
+その後、要求されたリソースをリクエストから取得し、JCR API を使用してコンテンツツリーのその地点からサイトマップを生成できます。
+このようなアプローチは、複数のサイトを同じインスタンスから処理している場合にメリットがあります。`/content/siteA.sitemap.xml` に対するリクエストでは `siteA` 用のサイトマップが生成され、`/content/siteB.sitemap.xml` のリクエストでは `siteB` 用のサイトマップが生成されます。コードを追加する必要はありません。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 
