@@ -2,10 +2,10 @@
 title: コンテンツフラグメントへのアクセスと配信ヘッドレスクイック開始ガイド
 description: アセットREST APIを使用すると、コンテンツフラグメントを管理でき、GraphQL APIを使用すると、ヘッドレスで簡単にコンテンツフラグメントコンテンツを配信できます。
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 0%
+source-wordcount: '504'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +27,14 @@ ht-degree: 0%
 
 情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。 一般に、これらのクエリは、モデルごとにエンドポイントごとに1回だけ考慮する必要があります。 この入門ガイドの目的上、必要な作業は1つだけです。
 
-1. AEMにCloud Serviceとしてログインし、メインメニューで&#x200B;**ツール/アセット —> GraphQL**&#x200B;を選択します。
-   * または、`https://<host>:<port>/content/graphiql.html`で直接ページを開きます。
+<!-- Not in the UI yet - will need updating when it is -->
+<!--
+1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
+   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
+-->
+
+1. AEMにCloud Serviceとしてログインし、GraphicQLインターフェイスにアクセスします。
+   * 例：`https://<host>:<port>/content/graphiql.html`
 
 1. GraphiQLは、GraphQLのブラウザ内クエリエディタです。 クエリを構築して、コンテンツフラグメントを取得し、それらをJSONとして直接配信できます。
    * 左側のパネルでは、クエリを作成できます。
@@ -39,8 +45,9 @@ ht-degree: 0%
 1. 作成したモデルが`firstName`、`lastName`、`position`の各フィールドを持つ`person`と呼ばれている場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
 
    ```text
-   query {
-     persons {
+   query 
+   {
+     personList {
        items {
          _path
          firstName
