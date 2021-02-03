@@ -2,21 +2,15 @@
 title: コンテンツフラグメントの管理
 description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 95%
+source-wordcount: '1593'
+ht-degree: 88%
 
 ---
 
 
 # コンテンツフラグメントの管理{#managing-content-fragments}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
->
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
@@ -39,8 +33,8 @@ ht-degree: 95%
 コンテンツフラグメントの作成方法は次のとおりです。
 
 1. フラグメントを作成する **Assets** フォルダーに移動します。
-2. 「**作成**」を選択し、「**コンテンツフラグメント**」を選択して、ウィザードを開きます。
-3. ウィザードの最初の手順では、新しいフラグメントの基盤を指定することを求められます。
+1. 「**作成**」を選択し、「**コンテンツフラグメント**」を選択して、ウィザードを開きます。
+1. ウィザードの最初の手順では、新しいフラグメントの基盤を指定することを求められます。
 
    * [モデル](/help/assets/content-fragments/content-fragments-models.md) - **アドベンチャー**&#x200B;モデルなど、構造化コンテンツを必要とするフラグメントの作成に使用されます
 
@@ -50,7 +44,7 @@ ht-degree: 95%
 
    ![フラグメントの基盤](assets/cfm-managing-01.png)
 
-4. 「**プロパティ**」の手順で次を指定します。
+1. 「**プロパティ**」の手順で次を指定します。
 
    * **基本**
 
@@ -72,9 +66,12 @@ ht-degree: 95%
           必須。タイトルから自動的に派生しますが、変更が可能です。
 
 
-5. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
+1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
-## コンテンツフラグメントのアクション {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >コンソールの&#x200B;**リスト**&#x200B;モードでは、**表示設定**&#x200B;を更新して&#x200B;**コンテンツフラグメントモデル**&#x200B;列を有効にできます。
+
+## アセットコンソールのコンテンツフラグメントに対するアクション{#actions-for-a-content-fragment-assets-console}
 
 **Assets** コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
 
@@ -125,7 +122,7 @@ ht-degree: 95%
 >コンテンツフラグメントを編集するには、適切な権限が必要になります。問題が発生している場合は、システム管理者にお問い合わせください。
 
 1. **Assets** コンソールを使用して、コンテンツフラグメントの場所に移動します。
-2. フラグメントを開いて編集するには、以下のいずれかを実行します。
+1. フラグメントを開いて編集するには、以下のいずれかを実行します。
 
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
@@ -140,25 +137,51 @@ ht-degree: 95%
    >2. **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
 
-3. サイドパネルのアイコンを使用して、3 つのモデル間を移動します。
-
-   * バリエーション：[コンテンツの編集](#editing-the-content-of-your-fragment)と[バリエーションの管理](#creating-and-managing-variations-within-your-fragment)
-
-   * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [関連コンテンツ](#associating-content-with-your-fragment)
-   * [メタデータ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-   * [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   * [プレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
-
-   ![モード](assets/cfm-managing-04.png)
-
-4. 変更を加えた後、必要に応じて「**保存**」または「**キャンセル**」をクリックします。
+1. 変更を加えた後、必要に応じて「**保存**」または「**キャンセル**」をクリックします。
 
    >[!NOTE]
    >
    >「**保存**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## 保存、キャンセルおよびバージョン  {#save-cancel-and-versions}
+## コンテンツフラグメントエディターのモードとアクション{#modes-actions-content-fragment-editor}
+
+コンテンツフラグメントエディターからは、様々なモードとアクションを使用できます。
+
+### コンテンツフラグメントエディター{#modes-in-the-content-fragment-editor}のモード
+
+サイドパネルのアイコンを使用して、様々なモードを切り替えます。
+
+* バリエーション：[コンテンツの編集](#editing-the-content-of-your-fragment)と[バリエーションの管理](#creating-and-managing-variations-within-your-fragment)
+
+* [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [関連コンテンツ](#associating-content-with-your-fragment)
+* [メタデータ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [プレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![モード](assets/cfm-managing-04.png)
+
+### コンテンツフラグメントエディターのツールバーアクション{#toolbar-actions-in-the-content-fragment-editor}
+
+上部のツールバーには、複数のモードから使用できる機能があります。
+
+![モード](assets/cfm-managing-top-toolbar.png)
+
+* フラグメント名の下に、現在のフラグメントの作成に使用されている[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)の名前が表示されます。
+
+   * また、この名前はモデルエディタを開くリンクでもあります。
+
+* フラグメントのステータスを確認する。例えば、作成、変更、公開の日時に関する情報です。 ステータスも色分けされています。
+
+   * 新規：灰色
+   * ドラフト：青
+   * 発行済み：緑
+   * 変更日：オレンジ
+   * 非アクティブ：red
+
+* **[フラグメントを](#publishing-and-referencing-a-fragment)** 発行します。
+
+## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -304,7 +327,8 @@ ht-degree: 95%
 
 コンテンツフラグメントを使用するには、パブリッシュ環境で公開する必要があります。次の方法で公開できます。
 
-* 作成後に **Assets** コンソールから。
+* 創造後アセットコンソール](#actions-for-a-content-fragment-assets-console)で使用可能な[アクションを使用して
+* [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から
 * [フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
