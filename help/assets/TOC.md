@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 87%
+source-wordcount: '476'
+ht-degree: 85%
 
 ---
 
@@ -56,6 +56,7 @@ ht-degree: 87%
    + [Assets HTTP API](mac-api-assets.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
    + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+   + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
