@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート.'
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 13%
@@ -91,7 +91,7 @@ AEMのCloud ManagerのCloud Service2020.11.0のリリース日は2020年11月12�
 ### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
 * 新しいメニューオプション&#x200B;**ローカルログイン**&#x200B;が、**環境**&#x200B;カードおよび&#x200B;**環境**サマリページの環境メニューオプションから利用できるようになりました。
-詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md##login-locally)を参照してください。
+詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#login-locally)を参照してください。
 
 * Cloud Managerの「**学習**」タブが更新され、UIの新しい画像が表示されました。
 
