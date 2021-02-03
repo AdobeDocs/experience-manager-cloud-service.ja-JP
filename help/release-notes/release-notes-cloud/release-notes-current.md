@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: cd392473d4e8ebee20b41c6c979121fe81819a40
+source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 11%
+source-wordcount: '678'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,6 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 次のリリース(2021.2.0)は、2021年2月25日に予定されています。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
-
-* **[コンテンツフラグメントHTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP 追加 APIを使用して、コンテンツフラグメントのバリエーションを追加/更新および削除する機能。
 
 * **[GraphQL API for Content Fragment配信](/help/assets/content-fragments/graphql-api-content-fragments.md)**:GraphQL構文を使用したコンテンツフラグメントのクエリ、およびコンテンツフラグメントモデルに基づくスキーマ（JSON形式で出力）
 
@@ -69,20 +67,6 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 * Cloud Managerから非休止状態をトリガーすると、非休止状態が正常に開始された場合でも、エラーメッセージが表示されることがありました。
 
 * 環境の作成または削除でエラーが発生した場合は、まれに対処しました。
-
-## コードリファクタリングツール {#code-refactoring-tools}
-
-### [!DNL Code Refactoring Tools] の新機能 {#what-is-new-crt}
-
-* AIO-CLIプラグインの新しいバージョンがリリースされました。 このプラグインの最新バージョンには、AEM Dispatcher ConverterとRepository Modenizerのバグ修正が含まれ、新しいユーティリティIndex Converterもサポートされています。 このプラグインの詳細については、[統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)を参照してください。
-
-* Index Converterは、Cloud Service互換のOAKインデックス定義として、顧客のカスタムOAKインデックス定義をAEMに変換するために使用できるユーティリティです。 詳しくは、[Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)を参照してください。
-
-* [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)に追加された新機能。すべてのOSGi設定を含む個別のパッケージ`ui.config`を作成します。
-
-### バグ修正 {#crt-bug-fixes}
-
-* AEM Dispatcher ConverterおよびRepository Modenizerツールで行われたいくつかのバグ修正。 [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)および[Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
 
 ## AEM FoundationとしてのCloud Service{#aem-as-a-cloud-service-foundation}
 
