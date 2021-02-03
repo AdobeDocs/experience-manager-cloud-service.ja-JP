@@ -2,21 +2,15 @@
 title: コンテンツフラグメントモデル
 description: コンテンツフラグメントモデルは、構造化コンテンツを含むコンテンツフラグメントを作成するために使用します。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 3538c03a6a455cd22423ca5a4fd69c1fe57b3e5e
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 44%
+source-wordcount: '2156'
+ht-degree: 26%
 
 ---
 
 
 # コンテンツフラグメントモデル {#content-fragment-models}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
->
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 コンテンツフラグメントモデルは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)のコンテンツの構造を定義します。
 
@@ -25,6 +19,7 @@ ht-degree: 44%
 1. [インスタンスに対するコンテンツフラグメントモデル機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [コンテンツフラグメントモデルの作成](#creating-a-content-fragment-model)、 [設定](#defining-your-content-fragment-model)、
 1. [コンテンツフラグメントの作成時に使用するコンテンツフラグメ](#enabling-disabling-a-content-fragment-model) ントの作成時に使用するコンテンツフラグメントモデルの有効化
+1. [ポリシーを設定することで、必要なアセット](#allowing-content-fragment-models-assets-folder) フォルダーに対してコンテンツフラグメントモデルを許可し **ます**。
 
 ## コンテンツフラグメントモデルの作成 {#creating-a-content-fragment-model}
 
@@ -36,7 +31,7 @@ ht-degree: 44%
    >
    >[コンテンツフラグメントモデルの使用が有効になっていない](/help/assets/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
 
-1. 「**モデルタイトル**」を指定します。また、必要に応じて&#x200B;**タグ**&#x200B;と&#x200B;**説明**&#x200B;を追加することもできます。
+1. 「**モデルタイトル**」を指定します。また、**タグ**、**説明**&#x200B;を追加し、必要に応じて&#x200B;**モデル**&#x200B;を有効にして[モデル](#enabling-disabling-a-content-fragment-model)を有効にします。
 
    ![タイトルと説明](assets/cfm-models-02.png)
 
@@ -64,69 +59,35 @@ ht-degree: 44%
    >
    >あるフィールドを&#x200B;**必須**&#x200B;として指定した場合、左側のウィンドウに表示される&#x200B;**ラベル**&#x200B;にアスタリスク（*****）が付きます。
 
+   ![プロパティ](assets/cfm-models-03.png)
+
 1. **フィールドを追加するには**
 
-   * 必要なデータ型をフィールドの目的の場所にドラッグします。
+   * 必要なデータタイプをフィールドの必要な場所にドラッグします。
 
-   * フィールドがモデルに追加されると、その特定のデータタイプに対して定義できる&#x200B;**プロパティ**&#x200B;が右側のパネルに表示されます。ここで、そのフィールドに必要な項目を定義することができます。多くのプロパティは説明がなく、詳しくは[プロパティ](#properties)を参照してください。
+      ![フィールドへのデータタイプのドラッグ](assets/cfm-models-04.png)
+
+   * フィールドがモデルに追加されると、その特定のデータタイプに対して定義できる&#x200B;**プロパティ**&#x200B;が右側のパネルに表示されます。ここで、そのフィールドに必要な項目を定義することができます。
+
+      * 多くのプロパティは説明がなく、詳しくは[プロパティ](#properties)を参照してください。
+      * **フィールドラベル**&#x200B;を入力すると、**プロパティ名**&#x200B;が空の場合は自動入力され、後で手動で更新できます。
+
+      次に例を示します。
+
+      ![フィールドのプロパティ](assets/cfm-models-05.png)
+
 
 1. **フィールドを削除するには**
 
    必要なフィールドを選択し、ごみ箱アイコンをクリックまたはタップします。この操作の確認が求められます。
 
-1. す追加べての必須フィールドを選択し、必要に応じて関連するプロパティを定義します。
+   ![削除](assets/cfm-models-06.png)
+
+1. す追加べての必須フィールドを選択し、必要に応じて関連するプロパティを定義します。 次に例を示します。
+
+   ![保存](assets/cfm-models-07.png)
 
 1. 「**保存**」を選択して、定義を保持します。
-
-<!--
-## Defining your Content Fragment Model {#defining-your-content-fragment-model}
-
-The content fragment model effectively defines the structure of the resulting content fragments using a selection of **[Data Types](#data-types)**. Using the model editor you can add instances of the data types, then configure them to create the required fields:
-
->[!CAUTION]
->
->Editing an existing content fragment model can impact dependent fragments.
-
-1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
-
-1. Navigate to the folder holding your content fragment model.
-1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
-
-   Once open the model editor shows:
-
-    * left: fields already defined
-    * right: **Data Types** available for creating fields (and **Properties** for use once fields have been created)
-
-   >[!NOTE]
-   >
-   >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
-
-   ![properties](assets/cfm-models-03.png)
-
-1. **To Add a Field**
-
-    * Drag a required data type to the required location for a field:
-
-      ![data type to field](assets/cfm-models-04.png)
-
-    * Once a field has been added to the model, the right panel will show the **Properties** that can be defined for that particular data type. Here you can define what is required for that field. 
-      Many properties are self-explanatory, for additional details see [Properties](#properties).
-      For example:
-
-      ![field properties](assets/cfm-models-05.png)
-
-1. **To Remove a Field**
-
-   Select the required field, then click/tap the trash-can icon. You will be asked to confirm the action.
-
-   ![remove](assets/cfm-models-06.png)
-
-1. Add all required fields, and define the related properties, as required. For example:
-
-   ![save](assets/cfm-models-07.png)
-
-1. Select **Save** to persist the definition.
--->
 
 ## データタイプ {#data-types}
 
@@ -148,19 +109,16 @@ The content fragment model effectively defines the structure of the resulting co
    * フラグメント作成者がタグの領域にアクセスして選択できるようにします。
 * **コンテンツ参照**
    * 任意の種類の他のコンテンツを参照します。は、[ネストされたコンテンツ](#using-references-to-form-nested-content)の作成に使用できます。
-
-<!--
-* **Fragment Reference**
-  * References other content fragments; can be used to [create nested content](#using-references-to-form-nested-content)
-  * The data type can be configured to allow fragment authors to:
-    * Edit the referenced fragment directly.
-    * Create a new content fragment, based on the appropriate model  
-* **JSON Object**
-  * Allows the content fragment author to enter JSON syntax into the corresponding elements of a fragment. 
-    * To allow AEM to store direct JSON that you have copy/pasted from another service.
-    * The JSON will be passed through, and output as JSON in GraphQL.
-    * Includes JSON syntax-highlighting, auto-complete and error-highlighting in the content fragment editor.
--->
+* **フラグメント参照**
+   * 他のコンテンツフラグメントを参照します。は、[ネストされたコンテンツ](#using-references-to-form-nested-content)の作成に使用できます。
+   * データ型を設定して、フラグメント作成者が次の操作を行えるようにすることができます。
+      * 参照先のフラグメントを直接編集します。
+      * 適切なモデルに基づいて新しいコンテンツフラグメントを作成する
+* **JSON オブジェクト**
+   * コンテンツフラグメントの作成者が、フラグメントの対応する要素にJSON構文を入力できるようにします。
+      * 別のサービスからコピー&amp;ペーストした直接JSONをAEMに保存できるようにする。
+      * JSONが渡され、GraphQLにJSONとして出力されます。
+      * コンテンツフラグメントエディターに、JSON構文のハイライト、オートコンプリート、エラーのハイライトが含まれます。
 
 ## プロパティ {#properties}
 
@@ -186,15 +144,26 @@ Asフラグメント内のフィールドを実現/レンダリングするた�
 
    コンテンツフラグメントモデルで「**デフォルトの種類**」を変更した場合、その影響が既存の関連コンテンツフラグメントに及ぶのは、そのフラグメントがエディターで開かれて保存された後です。
 
-<!--
-* **Translatable**
-  Checking the "Translatable" checkbox on a field in CF model editor will
+* ****
+UniqueContent（特定のフィールドに対する）は、現在のモデルから作成されるすべてのコンテンツフラグメントで一意である必要があります。
 
-  * Ensure the field's property name is added in translation config, context `/content/dam/<tenant>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+   これは、同じモデルの別のフラグメントに既に追加されているコンテンツを、コンテンツ作成者が繰り返せないようにするために使用します。
 
-* See **[Fragment Reference (Nested Fragments)](#fragment-reference-nested-fragments)** for more details about that specific data type and its properties.
--->
+   例えば、コンテンツフラグメントモデルの&#x200B;**1行のテキスト**&#x200B;フィールド`Country`は、2つの依存するコンテンツフラグメントに値`Japan`を持つことはできません。 2つ目のインスタンスが試行されると、警告が表示されます。
+
+   >[!NOTE]
+   言語ルートごとの一意性が確保されます。
+
+   >[!NOTE]
+   バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用される値とは異なります。
+
+* **翻訳可能CFモデルエディターでフィールドの「翻訳可能」チェックボックスをオンにすると、**
+
+
+   * フィールドのプロパティ名が、まだ存在しない場合は、translation config, context `/content/dam/<tenant>`に追加されていることを確認します。
+   * GraphQLの場合：「コンテンツフラグメント」フィールドの`<translatable>`プロパティを`yes`に設定し、変換可能なコンテンツのみを含むJSON出力用のGraphQLクエリフィルターを許可します。
+
+* 特定のデータ型とそのプロパティについて詳しくは、**[フラグメント参照（ネストされたフラグメント）](#fragment-reference-nested-fragments)**&#x200B;を参照してください。
 
 ## 検証 {#validation}
 
@@ -204,72 +173,65 @@ Asフラグメント内のフィールドを実現/レンダリングするた�
    * 事前定義された正規表現と比較します。
 * **番号**
    * 特定の値を確認します。
+* **コンテンツ参照**
+   * 特定のタイプのコンテンツをテストします。
+   * 指定したファイルサイズ以下のアセットのみを参照できます。
+   * 定義済みの幅または高さ（ピクセル単位）の範囲内の画像のみを参照できます。
+* **フラグメント参照**
+   * 特定のコンテンツフラグメントモデルをテストします。
 
 <!--
-* **Content Reference**
-  * Test for specific types of content.
-  * Only images within a predefined range of width and height (in pixels) can be referenced. 
-  * Only assets of specified file size or smaller can be referenced. 
   * Only predefined file types can be referenced.
   * No more than the predefined number of assets can be referenced. 
   * No more than the predefined number of fragments can be referenced.
-* **Fragment Reference**
-  * Test for a specific content fragment model.
 -->
 
-<!--
-## Using References to form Nested Content {#using-references-to-form-nested-content}
+## 参照を使用したネストされたコンテンツのフォーム{#using-references-to-form-nested-content}
 
-Content Fragments can form nested content, using either of the following data types:
+コンテンツフラグメントは、次のデータ型のいずれかを使用して、ネストされたコンテンツを形成できます。
 
-* **[Content Reference](#content-reference)**
-  * Provides a simple reference to other content; of any type.
-  * Can be configured for a one or multiple references (in the resulting fragment).
+* **[コンテンツ参照](#content-reference)**
+   * 他のコンテンツへの簡単な参照を提供します。任意のタイプの
+   * 1つまたは複数の参照に対して設定できます（結果のフラグメント内）。
 
-* **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
-  * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
-    >[!NOTE]
-    >
-    >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-  * Can be configured for one or multiple references (in the resulting fragment)..
+* **[フラグメント参照](#fragment-reference-nested-fragments)** （ネストされたフラグメント）
+   * 指定した特定のモデルに応じて、他のフラグメントを参照します。
+   * 構造化データを含めたり、取得したりできます。
+
+      >[!NOTE]
+      この方法は、GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)でのコンテンツフラグメントを使用した[ヘッドレスコンテンツ配信との関連で特に重要です。
+   * 1つまたは複数の参照に対して設定できます（結果のフラグメント内）。
 
 >[!NOTE]
->
->AEM has a recurrence protection for:
->
->* Content References
->  This prevents the user from adding a reference to the current fragment. This may lead to an empty Fragment Reference picker dialog.
->
->* Fragment References in GraphQL 
->  If you create a deep query that returns multiple Content Fragments referenced by each another, it will return null at first occurence.
+AEMでは次の繰り返しを保護しています。
+* コンテンツ参照
+これにより、現在のフラグメントに参照が追加されなくなります。 これにより、空のフラグメント参照選択ダイアログが表示される場合があります。
 
-### Content Reference {#content-reference}
+* GraphQLのフラグメント参照
+相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初にnullが返されます。
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
 
-In addition to standard properties you can specify:
+### コンテンツ参照 {#content-reference}
 
-* The **Root Path** for any referenced content.
-* The content types that can be referenced.
-* Limitations for file sizes.
-* Image restraints.
--->
+コンテンツリファレンスを使用すると、別のソースからコンテンツをレンダリングできます。例えば、画像やコンテンツフラグメントなどです。
 
-<!-- Check screenshot - might need update
+標準プロパティに加えて、次を指定できます。
 
-   ![Content Reference](assets/cfm-content-reference.png)
--->
+* 参照されるコンテンツの&#x200B;**ルートパス**。
+* 参照可能なコンテンツタイプ。
+* ファイルサイズの制限事項
+* 画像の制限。
+   <!-- Check screenshot - might need update -->
+   ![コンテンツ参照](assets/cfm-content-reference.png)
 
-<!--
-### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
+### フラグメント参照（ネストされたフラグメント） {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+フラグメント参照は、1つ以上のコンテンツフラグメントを参照します。 アプリで使用するコンテンツを取得する場合、この特に関心のある機能は、複数のレイヤーを持つ構造化データを取得できる点にあります。
 
-For example:
+次に例を示します。
 
-* A model defining details for an employee; these include:
-  * A reference to the model that defines the employer (company)
+* 従業員の詳細を定義するモデル以下が含まれます。
+   * 事業主(会社)を定義するモデルへの参照
 
 ```xml
 type EmployeeModel {
@@ -286,44 +248,34 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->This is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+これは、GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)でのコンテンツフラグメントを使用した[ヘッドレスコンテンツ配信との関連で特に重要です。
 
-In addition to standard properties you can define:
+標準プロパティに加えて、次のように定義できます。
 
-* **Render As**:
+* **レンダリング時の名前**:
 
-  * **multifield** - the fragment author can create multiple, individual, references
+   * **multifield**  — フラグメント作成者は、複数の個別の参照を作成できます。
 
-  * **fragmentreference** - allows the fragment author to select a single reference to a fragment
+   * **fragmentreference**  — フラグメント作成者がフラグメントへの1つの参照を選択できるようにします。
 
-* **Model Type**
-  Multiple models can be selected. When authoring the Content Fragment any referenced fragments must have been created using these models.
+* **モデル**
+タイプ複数のモデルを選択できます。コンテンツフラグメントをオーサリングする場合、参照フラグメントはこれらのモデルを使用して作成されている必要があります。
 
-* **Root Path**
-  This specifies a root path for any fragments referenced.
+* **ルート**
+パス参照されるすべてのフラグメントのルートパスを指定します。
 
-* **Allow Fragment Creation**
+* **フラグメントの作成を許可**
 
-  This will allow the fragment author to create a new fragment based on the appropriate model.
--->
+   これにより、フラグメント作成者は適切なモデルに基づいて新しいフラグメントを作成できます。
 
-<!--
-  * **fragmentreferencecomposite** - allows the fragment author to build a composite, by selecting multiple fragments
--->
+   * **fragmentreferencecomposite**  — 複数のフラグメントを選択して、フラグメント作成者が複合フラグメントを作成できます。
 
-<!-- Check screenshot - might need update
+   <!-- Check screenshot - might need update -->
+   ![フラグメント参照](assets/cfm-fragment-reference.png)
 
-   ![Fragment Reference](assets/cfm-fragment-reference.png)
--->
-
-<!--
 >[!NOTE]
->
->A recurrence protection mechanism is in place. It prohibits the user from selecting the current Content Fragment in the Fragment Reference. This may lead to an empty Fragment Reference picker dialog.
->
->There is also a recurrence protection for Fragment References in GraphQL. If you create a deep query across two Content Fragments that reference each other, it will return null.
--->
+繰り返し防止機構が設けられている。 これにより、フラグメント参照でユーザーが現在のコンテンツフラグメントを選択できなくなります。 これにより、空のフラグメント参照選択ダイアログが表示される場合があります。
+GraphQLには、フラグメント参照の繰り返し保護もあります。 相互に参照する2つのコンテンツフラグメントに対してディープクエリを作成すると、nullが返されます。
 
 ## コンテンツフラグメントモデルの有効化または無効化{#enabling-disabling-a-content-fragment-model}
 
@@ -365,6 +317,40 @@ In addition to standard properties you can define:
 * 対応するクイックアクション（必要なモデルにマウスを移動）。
 
 ![有効なモデルの無効化](assets/cfm-status-disable.png)
+
+## アセットフォルダー{#allowing-content-fragment-models-assets-folder}上でのコンテンツフラグメントモデルの許可
+
+コンテンツガバナンスを実装するには、アセットフォルダーに&#x200B;**ポリシー**&#x200B;を設定して、そのフォルダーでフラグメントの作成に許可するコンテンツフラグメントモデルを制御します。
+
+>[!NOTE]
+このメカニズムは、[ページの高度なプロパティで、あるページに対してページテンプレート](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)とその子を許可すると似ています。
+
+**ポリシー**&#x200B;を&#x200B;**許可されているコンテンツフラグメントモデル**&#x200B;用に設定するには：
+
+1. 必要なアセットフォルダーの&#x200B;**プロパティ**&#x200B;に移動して開きます。
+
+1. 「**ポリシー**」タブを開き、次の設定を行うことができます。
+
+   * **継承元`<folder>`**
+
+      ポリシーは、新しい子フォルダーの作成時に自動的に継承されます。サブフォルダーで親フォルダーとは異なるモデルを許可する必要がある場合は、ポリシーを再設定（継承を中断）できます。
+
+   * **許可されているコンテンツフラグメントモデルパス (パス別)**
+
+      複数のモデルを使用できます。
+
+   * **タグ別に許可されるコンテンツフラグメントモデル**
+
+      複数のモデルを使用できます。
+   ![コンテンツフラグメントモデルポリシー](assets/cfm-model-policy-assets-folder.png)
+
+1. **変更を** 保存します。
+
+フォルダーに対して許可されるコンテンツフラグメントモデルは、次のように解決されます。
+* ****&#x200B;許可されているコンテンツフラグメントモデル&#x200B;**のポリシー**。
+* 空の場合は、継承ルールを使用してポリシーを決定してみてください。
+* 継承チェーンが結果を提供しない場合は、そのフォルダーの&#x200B;**Cloud Services**&#x200B;設定を調べます（最初に直接、次に継承を介します）。
+* 上記のいずれも結果を出さない場合、そのフォルダーには許可されているモデルはありません。
 
 ## コンテンツフラグメントモデルの削除 {#deleting-a-content-fragment-model}
 
