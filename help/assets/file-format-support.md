@@ -3,10 +3,10 @@ title: サポートされているファイル形式と MIME タイプ
 description: ' [!DNL Experience Manager Assets] で [!DNL Cloud Service]としてサポートされているファイル形式とMIME型です。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 744f63306187b991a11acee2071b9266d11e1a21
+source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 91%
+source-wordcount: '806'
+ht-degree: 90%
 
 ---
 
@@ -60,24 +60,24 @@ ht-degree: 91%
 | GIF | kid | kid | kid | kid |
 | JPEG | kid | kid | kid | kid |
 | PNG | kid | kid | kid | kid |
-| TIFF | kid | kid | kid | - |
-| SVG | kid | - | kid | kid |
-| SGI | kid | kid | kid | kid |
 | RGB | kid | kid | kid | kid |
 | RGBA | kid | kid | kid | kid |
+| SGI | kid | kid | kid | kid |
+| SVG | kid | - | kid | kid |
+| TIFF | kid | kid | kid | - |
 
 ## [!DNL Dynamic Media] での画像形式 {#image-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| PNG | kid | kid | kid | kid | kid |
-| GIF | kid | kid | kid | kid | kid |
-| TIFF | kid | kid | kid | kid | kid |
-| JPEG | kid | kid | kid | kid | kid |
 | BMP | kid | - | - | - | - |
-| PSD   ‡ | kid | - | - | - | - |
 | EPS | kid | kid | kid | kid | kid |
+| GIF | kid | kid | kid | kid | kid |
+| JPEG | kid | kid | kid | kid | kid |
 | PICT | kid | - | - | - | - |
+| PNG | kid | kid | kid | kid | kid |
+| PSD   ‡ | kid | - | - | - | - |
+| TIFF | kid | kid | kid | kid | kid |
 
 ‡ 結合された画像は PSD ファイルから抽出されます。この画像は [!DNL Adobe Photoshop] によって生成され、PSD ファイルに含まれます。設定によって、結合された画像は実際の画像である場合とそうでない場合があります。
 
@@ -92,7 +92,7 @@ ht-degree: 91%
 
 ## 3D 形式 {#support-3d-formats}
 
-次の 3D 形式のリストがサポートされています。
+次の3D形式がサポートされています。
 
 [Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)も参照してください。
 
@@ -143,24 +143,24 @@ ht-degree: 91%
 
 | ファイル形式 | サムネールの生成 | フルテキスト抽出 | 幅/高さ | メタデータの管理 | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| PDF | kid | kid | kid | kid | kid |
-| DOCX | kid | kid | kid | kid | kid |
 | DOC | - | - | - | kid | kid |
-| PPTX | kid | kid | kid | kid | kid |
-| PPT | - | - | - | kid | kid |
-| XLSX | kid | kid | kid | kid | kid |
-| XLS | - | - | - | kid | kid |
+| DOCX | kid | kid | kid | kid | kid |
+| EPUB | - | kid | - | - | - |
+| HTML | - | kid | - | kid | kid |
 | ODF | kid | kid | kid | - | - |
-| OFG | kid | kid | kid | - | - |
 | ODM | kid | kid | kid | - | - |
 | ODP | kid | kid | kid | - | - |
 | ODS | kid | kid | kid | - | - |
 | ODT | kid | kid | kid | kid | kid |
-| EPUB | - | kid | - | - | - |
-| HTML | - | kid | - | kid | kid |
+| OFG | kid | kid | kid | - | - |
+| PDF | kid | kid | kid | kid | kid |
+| PPT | - | - | - | kid | kid |
+| PPTX | kid | kid | kid | kid | kid |
 | PS | - | - | kid | - | - |
 | RTF | - | kid | - | kid | kid |
 | TXT | - | kid | - | kid | kid |
+| XLS | - | - | - | kid | kid |
+| XLSX | kid | kid | kid | kid | kid |
 | XML | - | kid | - | - | - |
 
 ## [!DNL Dynamic Media] でのドキュメント形式{#document-support-dynamic-media}
@@ -168,8 +168,8 @@ ht-degree: 91%
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | 愛 | kid | - | - | - | - |
-| PDF | kid | kid | kid | kid | kid |
 | INDD | kid | - | - | - | - |
+| PDF | kid | kid | kid | kid | kid |
 
 ## ビデオ形式 {#video-formats}
 
@@ -191,6 +191,7 @@ ht-degree: 91%
 | MPEG | kid | kid | kid |
 | MPG | kid | kid | kid |
 | MTS | kid | - | kid |
+| MXF | kid | - | kid |
 | OGV | kid | - | kid |
 | QT | kid | - | kid |
 | R3D | - | kid | kid |
