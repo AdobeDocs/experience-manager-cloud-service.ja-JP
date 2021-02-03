@@ -2,21 +2,15 @@
 title: プレビュー- JSON表現
 description: フラグメントのJSON表現のプレビュー
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 2%
 
 ---
 
 
 # プレビュー- JSON表現{#preview-json-representation}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
->
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 コンテンツフラグメントのモデルを開発する場合、コンテンツフラグメントのサンプルJSON出力を、モデルに基づいて表示することができます。 例えば、最終的な出力がどのように見えるかを調べるには、次のように記述します。 これは、モデルのJSON構造を検証する場合に便利です。データタイプごとのデフォルトのサンプルコンテンツを使用する場合もあります。
 
