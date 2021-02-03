@@ -1,22 +1,16 @@
 ---
-title: Cloud ServiceGraphQL APIとしてのAdobe Experience Managerとのコンテンツフラグメントを使用したコンテンツ配信
+title: AEM GraphQL API（コンテンツフラグメントで使用）
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、AEM GraphQL API for Headless Content配信とのCloud Serviceとして使用する方法を説明します。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 2%
+source-wordcount: '3192'
+ht-degree: 1%
 
 ---
 
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
-
->[!CAUTION]
->
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
->
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
 
 Cloud Service(AEM) GraphQL APIとしてのAdobe Experience Managerは、コンテンツフラグメントと共に使用される標準のオープンソースのGraphQL APIに大きく基づいています。
 
@@ -24,11 +18,27 @@ AEMでGraphQL APIを使用すると、ヘッドレスCMS実装のJavaScriptク�
 
 * RESTと同様に、反復的なAPIリクエストの回避、
 * 配信が特定の要件に限定されていることの確認、
-* 単一のAPIクエリに応答してレンダリングに必要なものを一括配信できます。
+* 単一のAPIクエリに対する応答としてレンダリングに必要なものを一括配信できます。
 
 ## GraphQL API {#graphql-api}
 
-*「GraphQLは、2012年にFacebookが内部で開発したデータクエリ言語および仕様です。2015年にはGraphQLが正式にオープンソースとなる前に、Facebookが開発しました。開発者の生産性を高め、転送されるデータ量を最小限に抑える目的で、RESTベースのアーキテクチャに代わる手段を提供します。 GraphQLは、あらゆる規模の数百の組織が実稼働環境で使用しています。&quot;*[GraphQL Foundation](https://foundation.graphql.org/)を参照してください。
+GraphQLは次のようになります。
+
+* &quot;*...APIのクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。 GraphQLは、APIのデータの完全で理解可能な説明を提供し、クライアントに何が必要で何も必要でないかを正確に尋ねる力を与え、APIの時間の経過と共に発展させ、強力な開発ツールを有効にします。*&quot;
+
+   [GraphQL.org](https://graphql.org)を参照
+
+* &quot;*...柔軟なAPIレイヤー用にオープンな仕様。 GraphQLを既存のバックエンドに重ね合わせて、以前に比べて迅速に製品を構築….*&quot;.
+
+   「[GraphQLの探索](https://www.graphql.com)」を参照してください。
+
+* *&quot;...2012年にFacebookが内部で開発したデータクエリ言語および仕様。2015年には公開される。開発者の生産性を高め、転送されるデータ量を最小限に抑える目的で、RESTベースのアーキテクチャに代わる手段を提供します。 GraphQLは、数百の組織が実稼働環境で使用しています。*
+
+   [GraphQL Foundation](https://foundation.graphql.org/)を参照してください。
+
+<!--
+"*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
+-->
 
 GraphQL APIの詳細については、以下の節を参照してください（その他多くのリソース）。
 
@@ -52,9 +62,149 @@ AEM向けのGraphQLの実装は、標準のGraphQL Javaライブラリに基づ�
 
 * [GraphQL Java at GitHub](https://github.com/graphql-java)
 
+### GraphQLの用語{#graphql-terminology}
+
+GraphQLでは次を使用します。
+
+* **[クエリ](https://graphql.org/learn/queries/)**
+
+* **[スキーマとタイプ](https://graphql.org/learn/schema/)**:
+
+   * スキーマは、コンテンツフラグメントモデルに基づいてAEMによって生成されます。
+   * GraphQLでは、スキーマを使用して、AEM向けのGraphQLの実装で許可されるタイプと操作を示します。
+
+* **[フィールド](https://graphql.org/learn/queries/#fields)**
+
+* **[GraphQLエンドポイント](#graphql-aem-endpoint)**
+   * GraphQLクエリに応答し、GraphQLスキーマにアクセスできるAEM内のパス。
+
+   * 詳しくは、[GraphQLエンドポイントの有効化](#enabling-graphql-endpoint)を参照してください。
+
+[ベストプラクティス](https://graphql.org/learn/best-practices/)を含む包括的な詳細については、[(GraphQL.org)「GraphQL](https://graphql.org/learn/)の概要」を参照してください。
+
+### GraphQLクエリタイプ{#graphql-query-types}
+
+GraphQLを使用すると、次のいずれかを返すクエリを実行できます。
+
+* **単一のエントリ**
+
+* エントリ](https://graphql.org/learn/schema/#lists-and-non-null)**の**[&#x200B;リスト
+
+また、次の操作も実行できます。
+
+* [持続的なクエリ（キャッシュ）](#persisted-queries-caching)
+
+## AEMエンドポイント用のGraphQL {#graphql-aem-endpoint}
+
+エンドポイントは、AEM用のGraphQLへのアクセスに使用するパスです。 このパスを使用すると、次のことができます。
+
+* GraphQLスキーマにアクセスする、
+* GraphQLクエリの送信、
+* (GraphQLクエリに対する)応答を受け取ります。
+
+AEMエンドポイント用のGraphQLのリポジトリパスは次のとおりです。
+
+`/content/cq:graphql/global/endpoint`
+
+アプリは、リクエストURLで次のパスを使用できます。
+
+`/content/_cq_graphql/global/endpoint.json`
+
+AEMでGraphQLのエンドポイントを有効にするには、次の操作が必要です。
+
+>[!CAUTION]
+>
+>これらの手順は近い将来変更される可能性があります。
+
+* [GraphQLエンドポイントの有効化](#enabling-graphql-endpoint)
+* [追加設定の実行](#additional-configurations-graphql-endpoint)
+
+### GraphQLエンドポイントの有効化{#enabling-graphql-endpoint}
+
+>[!NOTE]
+>
+>Adobeが提供するパッケージの詳細については、[サポートするパッケージ](#supporting-packages)を参照してください。
+
+AEMでGraphQLクエリを有効にするには、エンドポイントを`/content/cq:graphql/global/endpoint`に作成します。
+
+* ノード`cq:graphql`と`global`はタイプ`sling:Folder`でなければなりません。
+* ノード`endpoint`はタイプ`nt:unstructured`で、`graphql/sites/components/endpoint`の`sling:resourceType`を含む必要があります。
+
+>[!CAUTION]
+>
+>現在、エンドポイントに既知の問題があります。
+>
+>* エントリ`cq:graphql`は、**サイト**コンソールに表示されます。を最上位レベルに置きます。
+   >  これは使用しないでください。
+
+
+>[!CAUTION]
+>
+>エンドポイントは、すべてのユーザーがアクセスできます。 これは、特にパブリッシュインスタンスでは、GraphQLクエリがサーバーに大きな負荷をかける可能性があるので、セキュリティ上の問題を引き起こす可能性があります。
+>
+>エンドポイントで、使用事例に応じたACLを設定できます。
+
+>[!NOTE]
+>
+>エンドポイントはそのまま使用できません。 [GraphQLエンドポイント](#additional-configurations-graphql-endpoint)の追加設定は別途行う必要があります。
+
+>[!NOTE]
+>また、[GraphiQL IDE](#graphiql-interface)を使用して、GraphQLクエリのテストとデバッグを行うこともできます。
+
+### GraphQLエンドポイント{#additional-configurations-graphql-endpoint}の追加設定
+
+>[!NOTE]
+>
+>Adobeが提供するパッケージの詳細については、[サポートするパッケージ](#supporting-packages)を参照してください。
+
+追加の設定が必要です。
+
+* Dispatcher:
+   * 必要なURLを許可するには
+   * 必須
+* バニティー URL:
+   * エンドポイントの簡易URLを割り当てるには
+   * オプション
+* OSGi 設定:
+   * GraphQLサーブレット設定：
+      * エンドポイントへの要求を処理します
+      * 構成名は`org.apache.sling.graphql.core.GraphQLServlet`です。 OSGiファクトリ設定として提供する必要があります
+      * `sling.servlet.extensions` に設定する必要がある  `[json]`
+      * `sling.servlet.methods` に設定する必要がある  `[GET,POST]`
+      * `sling.servlet.resourceTypes` に設定する必要がある  `[graphql/sites/components/endpoint]`
+      * 必須
+   * スキーマサーブレット設定：
+      * GraphQLスキーマを作成します
+      * 構成名は`com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`です。 OSGiファクトリ設定として提供する必要があります
+      * `sling.servlet.extensions` に設定する必要がある  `[GQLschema]`
+      * `sling.servlet.methods` に設定する必要がある  `[GET]`
+      * `sling.servlet.resourceTypes` に設定する必要がある  `[graphql/sites/components/endpoint]`
+      * 必須
+   * CSRFの設定：
+      * エンドポイントのセキュリティ保護
+      * 構成名は`com.adobe.granite.csrf.impl.CSRFFilter`です
+      * 除外パス追加の既存のリストへの`/content/cq:graphql/global/endpoint` (`filter.excluded.paths`)
+      * 必須
+
+### サポートパッケージ{#supporting-packages}
+
+GraphQLエンドポイントの設定を簡単にするために、Adobeは[GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip)パッケージを提供します。
+
+このアーカイブには、[必要な追加設定](#additional-configurations-graphql-endpoint)と[GraphQLエンドポイント](#enabling-graphql-endpoint)の両方が含まれます。 プレーンAEMインスタンスにインストールすると、完全に動作するGraphQLエンドポイントが`/content/cq:graphql/global/endpoint`に表示されます。
+
+このパッケージは、独自のGraphQLプロジェクトの設計図を作成するためのものです。 パッケージの使い方の詳細は、パッケージ&#x200B;**README**&#x200B;を参照してください。
+
+必要な設定を手動で作成したい場合は、Adobeから専用の[GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)も提供されます。 このコンテンツパッケージには、GraphQLエンドポイントのみが含まれ、設定は含まれません。
+
 ## GraphicQL Interface {#graphiql-interface}
 
-AEM Graph APIには、標準の[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)インターフェイスの実装が含まれています。 これにより、クエリを直接入力、テストできます。
+<!--
+AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
+-->
+
+標準の[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)インターフェイスの実装は、AEM GraphQLで使用できます。 これは、AEM](#installing-graphiql-interface)と共に[インストールできます。
+
+このインターフェイスを使用すると、クエリを直接入力およびテストできます。
 
 次に例を示します。
 
@@ -63,6 +213,12 @@ AEM Graph APIには、標準の[GraphiQL](https://graphql.org/learn/serving-over
 構文の強調表示、オートコンプリート、オートコンプリートなどの機能と、履歴およびオンラインドキュメントが提供されます。
 
 ![GraphicQL ](assets/cfm-graphiql-interface.png "InterfaceGraphiQLインタフェース")
+
+### AEM GraphicQLインターフェイスのインストール{#installing-graphiql-interface}
+
+GraphiQLユーザーインターフェイスは、専用のパッケージを使用してAEMにインストールできます。[GraphicQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)パッケージ。
+
+詳しくは、パッケージ&#x200B;**README**&#x200B;を参照してください。aemインスタンスにインストールする方法の詳細を含む、様々なシナリオに関する詳細。
 
 ## 作成および公開環境の使用例{#use-cases-author-publish-environments}
 
@@ -76,13 +232,23 @@ AEM Graph APIには、標準の[GraphiQL](https://graphql.org/learn/serving-over
       * AEMのCloud ServiceとしてのGraphQLは、現在読み取り専用APIです。
       * REST APIはCR(u)D操作に使用できます。
 
+## 権限 {#permission}
+
+権限は、アセットへのアクセスに必要な権限です。
+
 ## スキーマ生成{#schema-generation}
 
 GraphQLは、厳密に型指定されたAPIです。つまり、データは型別に明確に構造化、整理する必要があります。
 
 GraphQLの仕様には、特定のインスタンスでデータを取り調べる堅牢なAPIを作成する方法に関する一連のガイドラインが記載されています。 これを行うには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が含まれています。
 
-コンテンツフラグメントの場合、GraphQLスキーマ（構造と型）は、[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)とそのデータ型に基づきます。
+コンテンツフラグメントの場合、GraphQLスキーマ（構造と型）は、**有効** [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)とそのデータ型に基づきます。
+
+>[!CAUTION]
+>
+>（**Enabled**&#x200B;に設定されているコンテンツフラグメントモデルから派生した）すべてのGraphQLスキーマは、GraphQLエンドポイントを介して読み取り可能です。
+>
+>つまり、こうやって漏れ出す可能性があるので、機密データが存在しないことを確認する必要があるのです。たとえば、これにはモデル定義のフィールド名として存在する可能性のある情報が含まれます。
 
 例えば、ユーザーが`Article`という名前のコンテンツフラグメントモデルを作成した場合、AEMは`ArticleModel`型のオブジェクト`article`を生成します。 この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。
 
@@ -95,7 +261,7 @@ GraphQLの仕様には、特定のインスタンスでデータを取り調べ�
 
    これは、生成された型`ArticleModel`に複数の[フィールド](#fields)が含まれていることを示します。
 
-   * そのうちの3つは、ユーザーが制御しています。`author`、`main`、`linked_article`。
+   * そのうちの3つは、ユーザーが制御しています。`author`、`main`、`referencearticle`。
 
    * その他のフィールドはAEMによって自動的に追加され、特定のコンテンツフラグメントに関する情報を提供するのに役立つ方法を示します。この例では、`_path`、`_metadata`、`_variations`です。 これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、前に`_`が付いています。
 
@@ -121,7 +287,7 @@ Sites GraphQLサービスは、コンテンツフラグメントモデルに対�
 >
 >REST apiを使用してコンテンツフラグメントモデルの一括更新を行う場合や、その他の方法で行う場合に備えて、この点に注意してください。
 
-スキーマは、GraphQLクエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子`GQLschema`で呼び出されたことを処理します。 例えば、`/content/graphql/endpoint.GQLschema`で単純な`GET`リクエストを実行すると、Content-typeのスキーマが出力されます。`text/x-graphql-schema;charset=iso-8859-1`。
+スキーマは、GraphQLクエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子`GQLschema`で呼び出されたことを処理します。 例えば、`/content/cq:graphql/global/endpoint.GQLschema`で単純な`GET`リクエストを実行すると、Content-typeのスキーマが出力されます。`text/x-graphql-schema;charset=iso-8859-1`。
 
 ## フィールド {#fields}
 
@@ -168,7 +334,7 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 
 ```xml
 {
-  persons {
+  personList {
     items {
       _path
     }
@@ -180,15 +346,17 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 
 ```xml
 {
-    person(_path="/content/dam/path/to/fragment/john-doe") {
-        _path
-        name
-        first-name
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      firstName
+      name
     }
+  }
 }
 ```
 
-[サンプルクエリ — 単一の都市フラグメント](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-city-fragment)を参照してください。
+[サンプルクエリ — 単一の特定の都市のフラグメント](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)を参照してください。
 
 #### メタデータ {#metadata}
 
@@ -217,12 +385,14 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _path
-    _metadata {
-      stringMetadata {
-        name
-        value
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _path
+      _metadata {
+        stringMetadata {
+          name
+          value
+        }
       }
     }
   }
@@ -246,8 +416,10 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 
 ```xml
 {
-  person(_path: "/content/dam/path/to/fragment/john-doe") {
-    _variations
+  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+    item {
+      _variations
+    }
   }
 }
 ```
@@ -269,7 +441,7 @@ GraphQLでは、変数のクエリへの配置が許可されています。 詳
 ```xml
 ### query
 query GetArticlesByVariation($variation: String!) {
-    articles(variation: $variation) {
+    articleList(variation: $variation) {
         items {
             _path
             author
@@ -292,10 +464,11 @@ GraphQLでは、GraphQL Directivesと呼ばれる変数に基づいてクエリ�
 ![GraphQL ](assets/cfm-graphqlapi-04.png "DirectivesGraphQLディレクティブ")
 
 ```xml
-query getAdventureByType($includePrice: Boolean!) {
-  adventures {
+### query
+query GetAdventureByType($includePrice: Boolean!) {
+  adventureList {
     items {
-      adventureType
+      adventureTitle
       adventurePrice @include(if: $includePrice)
     }
   }
@@ -306,6 +479,47 @@ query getAdventureByType($includePrice: Boolean!) {
     "includePrice": true
 }
 ```
+
+## フィルタ{#filtering}
+
+また、GraphQLクエリでフィルタリングを使用して、特定のデータを返すこともできます。
+
+フィルタリングでは、論理演算子と式に基づいた構文を使用します。
+
+例えば、次の（基本）クエリフィルターは、`Jobs`または`Smith`の名前を持つすべての人をします。
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _logOp: OR
+      _expressions: [
+        {
+          value: "Jobs"
+        },
+        {
+          value: "Smith"
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+その他の例は、次を参照してください。
+
+* aem拡張機能の[GraphQLの詳細](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+
+* [このサンプルの内容と構造を使用したクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+
+   * サンプルクエリで使用するために用意されている[サンプルコンテンツと構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+
+* [WKNDプロジェクトに基づくサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## 持続的なクエリ（キャッシュ） {#persisted-queries-caching}
 
@@ -511,7 +725,7 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
 
    * alloworigin:[ドメイン]またはalloworiginregexp:[ドメインのregex]
    * supportedmethods:[POST]
-   * allowedpaths:[&quot;/apps/graphql-enablement/content/endpoint.gql(/persisted)?&quot;]
+   * allowedpaths:[&quot;/content/graphql/global/endpoint.json&quot;]
 
 * GraphQLで持続的なクエリエンドポイントへのアクセス：
 
@@ -524,41 +738,19 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
 >お客様は、次のことを行う責任を負います。
 >
 >* 信頼済みドメインへのアクセスのみを許可する
->* ワイルドカード[*]構文を使用しないGraphQLエンドポイントを世界中に公開する。
+>* 機密情報が公開されていないことを確認する
+>* ワイルドカード[*]構文を使用しないこれにより、GraphQLエンドポイントへの認証済みアクセスが無効になり、世界中に公開されます。
 
 
+>[!CAUTION]
+>
+>GraphQL [スキーマ](#schema-generation) （**有効**&#x200B;になっているコンテンツフラグメントモデルから派生）はすべて、GraphQLエンドポイントを通じて読み取り可能です。
+>
+>つまり、こうやって漏れ出す可能性があるので、機密データが存在しないことを確認する必要があるのです。たとえば、これにはモデル定義のフィールド名として存在する可能性のある情報が含まれます。
 
-## フィルタ{#filtering}
+## 認証 {#authentication}
 
-また、GraphQLクエリでフィルタリングを使用して、特定のデータを返すこともできます。
-
-フィルタリングでは、論理演算子と式に基づいた構文を使用します。
-
-例えば、次を参照してください。
-
-* aem拡張機能の[GraphQLの詳細](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-some-extensions)
-
-* [サンプルクエリで使用するためのサンプルコンテンツと](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) 構造
-
-* [このサンプルの内容と構造を使用したクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
-
-* [WKNDプロジェクトに基づくサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
-
-## 権限 {#permission}
-
-権限は、アセットへのアクセスに必要な権限です。
-
-<!-- to be addressed later -->
-
-<!-- 
-## Authentication {#authentication}
--->
-
-<!-- to be addressed later -->
-
-<!-- 
-## Caching {#caching}
--->
+「[コンテンツフラグメントでのリモートAEM GraphQLクエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)」を参照してください。
 
 <!-- to be addressed later -->
 
@@ -571,52 +763,6 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
 <!--
 ## Paging {#paging}
 -->
-
-## エンドポイント{#end-points}
-
-エンドポイントは、AEM用のGraphQLへのアクセスに使用するパスです。 このパスを使用すると、次のことができます。
-
-* GraphQLスキーマにアクセスする、
-* GraphQLクエリの送信、
-* (GraphQLクエリに対する)応答を受け取ります。
-
-AEMのGraphQLサーブレットにアクセスするには、エンドポイントを設定する必要があります。 これには2つのOSGi設定も含まれます。
-
-1. GraphQLスキーマを取得する要求に応答するSlingスキーマサーブレット：
-
-   ![AEM SitesグラフQLスキーマサーブレット](assets/cfm-endpoint-01.png)
-
-   * **セレクター** (`sling.servlet.selectors`)は空白のままにする必要があります。
-
-   * **Resource Types** (`sling.servlet.resourceTypes`):GraphQLサーブレットがリスンするリソースタイプを定義します。次に例を示します。
-      `graphql-enablement/components/endpoint`.
-
-   * **Methods** (`sling.servlet.methods^)
-
-      サーブレットがリッスンするHTTPメソッド。通常は`GET`です。
-
-   * **拡張** (`sling.servlet.extensions`)
-
-      スキーマサーブレットが応答する拡張子を指定します。 この場合、GraphQL仕様と互換性を持たせるために`GQLschema`が使用されます。
-
-2. graphqlリクエストに応答するサーブレット：
-
-   ![Apache Sling GraphQLサーブレット](assets/cfm-endpoint-02.png)
-
-   * **セレクター** (`sling.servlet.selectors`)は空白のままにする必要があります。
-
-   * **Resource Type** (`sling.servlet.resourceTypes`) GraphQLサーブレットが応答するリソースタイプ。例： `graphql-enablement/components/endpoint`
-
-   * **Methods** (`sling.servlet.methods`) GraphQLサーブレットが応答する必要があるHTTPメソッド(通常は `GET` と `POST`)。
-
-   * **拡張子** (`sling.servlet.extensions`) GraphQL要求をリッスンする拡張子です。通常はこれを受け入れ `gql`ます。
-
-3. 次に、エンドポイント（これらの設定で定義されているsling:resourceTypeのノード）を作成する必要があります。
-例えば、GraphQLスキーマを取得するためのエンドポイントを作成するには、`/apps/<my-site>/graphql`の下に新しいノードを作成します。
-
-   * 名前：`endpoint`
-   * プライマリタイプ：`nt:unstructured`
-   * sling:resourceType: `graphql-enablement/components/endpoint`
 
 ## FAQ {#faqs}
 
