@@ -2,10 +2,10 @@
 title: メタデータ - フラグメントのプロパティ
 description: コンテンツフラグメントのメタデータ（プロパティ）を表示して編集できます。
 translation-type: tm+mt
-source-git-commit: d302df83f3c2f95a5cc46d1d21c5e1376d4d4faf
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 89%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 2. 以下のどちらかの操作をおこないます。
 
    * [**「プロパティを表示**」を選択してダイアログを開きます](/help/assets/manage-digital-assets.md#editing-properties)。開いて表示されたら、編集することもできます。
-   * [編集するコンテンツフラグメント](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)を開き、サイドパネルから「**メタデータ**」を選択します。
+   * 編集するコンテンツフラグメントを開き、サイドパネルから「**メタデータ**」を選択します。
 
    ![メタデータ](assets/cfm-metadata-01.png)
 
