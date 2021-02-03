@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 76da904f4fc5a96e6892242c42bae5d05eea2e16
+source-git-commit: 7ce352515b375d553cd00802204274c3c6774bb4
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 15%
+source-wordcount: '863'
+ht-degree: 11%
 
 ---
 
@@ -23,23 +23,38 @@ Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 * **[コンテンツフラグメントHTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP 追加 APIを使用して、コンテンツフラグメントのバリエーションを追加/更新および削除する機能。
 
+* **[GraphQL API for Content Fragment配信](/help/assets/content-fragments/graphql-api-content-fragments.md)**:GraphQL構文を使用したコンテンツフラグメントのクエリ、およびコンテンツフラグメントモデルに基づくスキーマ（JSON形式で出力）
+
+* **[GraphQL APIリクエストの認証サポート](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:GraphQL APIリクエストをサーバ側APIのアクセストークンで認証できる機能。
+
+* JSON形式やロケールでリッチテキストを出力する機能など、GraphQL APIからのJSON出力の強化。
+
+* コンテンツフラグメントモデルのネストをサポートし、ネストされたコンテンツフラグメント構造を作成できます。このためには、専用のコンテンツフラグメント参照データ型またはコンテンツフラグメント参照を複数行テキストフィールド内にインラインで作成します。
+
+* 「一意」、「必須」、「変換可能」など、コンテンツフラグメントモデルのデータ型で使用できる追加の検証ルールです。
+
+* コンテンツフラグメントモデルにタグ付けし、タグまたはパスによるポリシーを持つフォルダー内でコンテンツフラグメントを作成できます。
+
+* コンテンツフラグメントエディターでの使い勝手の向上（公開アクションや、フラグメントが基づくモデルの表示など）。
+
+* コンテンツフラグメントエディターでJSON出力を直接プレビューできる機能。
+
+
 ## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
 
-* [!DNL Adobe InDesign Server]との統合が[!DNL Cloud Service]として[!DNL Experience Manager]で利用できるようになりました。 [!DNL Adobe InDesign Server]スクリプティングを使用して[!DNL Adobe InDesign]ファイルを処理する自動化機能を提供し、[!DNL Assets]テンプレートユーザーインターフェイスを使用してパンフレットや広告を作成できます。 [!DNL Adobe Managed Services]でホストされる[!DNL InDesign Server]のみ[!DNL Experience Manager as a Cloud Service]に対してサポートされます。<!-- TBD: Add link to article. -->
+* [!DNL Experience Manager] は、スマートタグ機能を [!DNL Cloud Service] 拡張して、テキストベースのアセット内のキーワードとエンティティの識別をサポートしています。テキストを識別し、インデックスを作成し、メタデータとして使用できるようにして、設定を行うことなく検索体験を向上させます。 「[スマートタグ](/help/assets/smart-tags.md)」を参照してください。
 
-* [!DNL Experience Manager] は、接続されたアセット機能を使用したリモート [!DNL Experience Manager Sites] デプロイメントでアセットが使用された場合に、アセット参照を追跡および表示するように拡張されました。アセットの[!UICONTROL プロパティ]ページに新しい[!UICONTROL 参照]タブが追加され、アセットのローカル参照とリモート参照がリストされるようになりました。 この参照により、DAMユーザーは[!DNL Sites]ページ内および[!DNL Assets]内の複合アセット内のアセットの使用状況を追跡できます。 [接続されたアセットの設定と使用](/help/assets/use-assets-across-connected-assets-instances.md)を参照してください。
-
-* [!DNL Dynamic Media] の機能は、 [!DNL Sites] 画像ベースのコアコンポーネントを介してアクセスできるようになりました。作成者は、Webページの作成時に画像プリセット、スマート切り抜き、画像修飾子を使用するように、コンポーネントをすばやく設定できます。 [コアコンポーネント2.13.0リリース](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)を参照してください。
-
-* [!DNL Experience Manager] デスクトップアプリを使用すると、ユーザーはデスクトップアプリケーションインターフェイス上のWindowsエクスプローラーまたはMac Finderからファイルをドラッグすることで、ファイルやフォルダーをアップロードできます。詳しくは、[デスクトップアプリを使用したアセットの追加](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
+* MXFファイル形式がサポートされるようになりました。 [サポートされているファイル形式](/help/assets/file-format-support.md#video-formats)を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* 最新のCIFコアコンポーネントバージョンv1.6.0が含まれるCIFベニアリファレンスサイト — 2020.12.01をリリースしました。詳細は、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)を参照してください。
+* 製品エクスペリエンス管理：アセットおよびエクスペリエンスフラグメント用の新しい「コマース」プロパティタブ。 このタブでは、製品やカテゴリをアセットやエクスペリエンスフラグメントにリンクできます。 また、このタブには、リンクされた製品/カテゴリのリアルタイムデータと、製品コンソールに詳細を表示するリンクが表示されます。
 
-* CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)」を参照してください。
+* 最新のCIFコアコンポーネントバージョンv1.7.0が含まれるCIFベニアリファレンスサイト — 2021.02.02をリリースしました。詳細は、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02)を参照してください。
+
+* CIF コアコンポーネント v1.7.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)」を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -68,6 +83,23 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 ### バグ修正 {#crt-bug-fixes}
 
 * AEM Dispatcher ConverterおよびRepository Modenizerツールで行われたいくつかのバグ修正。 [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)および[Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
+
+## AEM FoundationとしてのCloud Service{#aem-as-a-cloud-service-foundation}
+
+### 新機能 {#what-is-new-foundation}
+
+* サーバー間認証API呼び出し — 適切なアクセストークンを生成して、認証済みのサーバー間API呼び出しを外部アプリケーションとAEMの間でCloud Service環境として行います。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)を読むか、[チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)を参照してください。
+
+### SDKビルドアナライザー{#sdk-build-analyzers}
+
+Cloud ServiceSDKビルドアナライザーMavenプラグインとしてのAEMは、Mavenプロジェクト内の問題（依存関係の欠落など）を検出します。 開発者は、ローカル開発中に問題を発見し、Cloud Managerを使用してCloud環境に展開する前に、問題を発見できます。
+
+このリリースでは、2つの新しいアナライザーが追加されました。
+
+* リポイント分析器
+* bundle-nativecode
+
+詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)を参照してください。
 
 ## クラウド移行ツール {#code-transition-tools}
 
