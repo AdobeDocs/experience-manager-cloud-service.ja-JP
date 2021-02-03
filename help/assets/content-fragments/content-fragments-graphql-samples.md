@@ -2,21 +2,24 @@
 title: AEMでのGraphQLの使用方法 — サンプルコンテンツとクエリ
 description: AEMでのGraphQLの使用方法 — サンプルコンテンツとクエリ
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 6%
+source-wordcount: '1708'
+ht-degree: 5%
 
 ---
 
 
 # AEMでのGraphQLの使用方法 — サンプルコンテンツとクエリ{#learn-graphql-with-aem-sample-content-queries}
 
->[!CAUTION]
+>[!NOTE]
 >
->AEM GraphQL API for Content Fragments配信は、リクエストに応じて使用できます。
+>このページは、次の内容と共に読む必要があります。
 >
->お使いのAEM用のAPIをCloud Serviceプログラムとして有効にするには、[Adobeサポート](https://experienceleague.adobe.com/?lang=en&amp;support-solution=General#support)にお問い合わせください。
+>* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)
+>* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+>* [AEM GraphQL API（コンテンツフラグメントで使用）](/help/assets/content-fragments/graphql-api-content-fragments.md)
+
 
 GraphQLクエリの使用を開始し、AEMコンテンツフラグメントとの連携方法を学ぶには、いくつかの実用的な例を見るのに役立ちます。
 
@@ -26,7 +29,7 @@ GraphQLクエリの使用を開始し、AEMコンテンツフラグメントと�
 
 * また、サンプルコンテンツフラグメント構造（コンテンツフラグメントモデルと関連するコンテンツフラグメント）に基づく[サンプルGraphQLクエリ](#graphql-sample-queries)もいくつかあります。
 
-## AEM用のGraphQL — 一部の拡張子{#graphql-some-extensions}
+## AEM用のGraphQL — 拡張子の概要{#graphql-extensions}
 
 AEM用のGraphQLでのクエリの基本的な操作は、標準のGraphQL仕様に従います。 AEMを使用したGraphQLクエリの場合、いくつかの拡張子があります。
 
@@ -34,148 +37,59 @@ AEM用のGraphQLでのクエリの基本的な操作は、標準のGraphQL仕様
    * モデル名を使用eg city
 
 * 結果のリストを期待する場合：
-   * モデル名に「リスト」を追加します。例：`cityList`
+   * モデル名に`List`を追加；例：`cityList`
+   * [サンプルクエリ — すべての市区町村に関するすべての情報](#sample-all-information-all-cities)を参照
 
 * 論理和を使用する場合：
-   * use &quot; _logOp:OR&quot;
+   * use ` _logOp: OR`
+   * [サンプルクエリ- &quot;Jobs&quot;または&quot;Smith&quot;](#sample-all-persons-jobs-smith)の名前を持つすべての人を参照
 
 * 論理積(AND)も存在しますが、（多くの場合）暗黙的です
 
 * コンテンツフラグメントモデル内のフィールドに対応するフィールド名にクエリできます
+   * [サンプルクエリ-会社のCEOおよび従業員の詳細](#sample-full-details-company-ceos-employees)を参照
 
 * モデルのフィールドに加えて、システム生成フィールドがいくつかあります（アンダースコアの前にあります）。
 
    * コンテンツの場合：
 
       * `_locale` :言葉を明かす言語マネージャーに基づく
-
+         * [特定のロケールの複数のコンテンツフラグメントに対するサンプルクエリ](#sample-wknd-multiple-fragments-given-locale)を参照
       * `_metadata` :フラグメントのメタデータを表示するには
-
+         * [メタデータのサンプルクエリ — 賞のメタデータのリスト（タイトル：GB](#sample-metadata-awards-gb)）を参照
+      * `_model` :コンテンツフラグメントモデルのクエリを許可（パスとタイトル）
+         * 「[モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)」を参照してください。
       * `_path` :リポジトリ内のコンテンツフラグメントへのパス
-
-      * `_references` :参考文献を表示するリッチテキストエディターへのインライン参照の追加
-
-      * `_variations` :コンテンツフラグメント内の特定のバリエーションを表示するには
+         * [サンプルクエリ — 単一の特定の都市のフラグメント](#sample-single-specific-city-fragment)を参照
+      * `_reference` :参考文献を表示するリッチテキストエディターへのインライン参照の追加
+         * [参照が事前に取得された複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照
+      * `_variation` :コンテンツフラグメント内の特定のバリエーションを表示するには
+         * [サンプルクエリ — 名前の付いたバリエーションのあるすべての市区町村](#sample-cities-named-variation)を参照
    * 操作：
 
-      * `_operator` :特定の演算子を適用する； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`,
-
+      * `_operator` :特定の演算子を適用する； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
+         * [サンプルクエリ- &quot;Jobs&quot;の名前を持たないすべての人を参照](#sample-all-persons-not-jobs)
       * `_apply` :特定の条件を適用する場合例えば、   `AT_LEAST_ONCE`
-
+         * [サンプルクエリ — 少なくとも1回は](#sample-array-item-occur-at-least-once)を含むアレイのフィルタを参照
       * `_ignoreCase` :クエリー時にケースを無視するには
+         * [サンプルクエリ — 名前にSANが含まれるすべての都市（大文字と小文字を区別しない）を参照](#sample-all-cities-san-ignore-case)
+
+
+
+
+
+
+
 
 
 * GraphQL和集合タイプは次のようにサポートされます。
 
-   * use `...on`
-
-
-## GraphQL {#content-fragment-structure-graphql}で使用するサンプルコンテンツフラグメント構造
-
-簡単な例を挙げるには、以下が必要です。
-
-* 1つ以上の[サンプルコンテンツフラグメントモデル](#sample-content-fragment-models-schemas) - GraphQLスキーマの基盤を形成します。
-
-* [上記のモデルに基づくコンテンツ](#sample-content-fragments) フラグメントのサンプル
-
-### コンテンツフラグメントモデルのサンプル(スキーマ) {#sample-content-fragment-models-schemas}
-
-サンプルクエリでは、次のコンテンツモデルとその相互関係（参照 —>）を使用します。
-
-* [会社](#model-company)
--> [個人](#model-person)
-    -> [賞](#model-award)
-
-* [市区町村](#model-city)
-
-#### 会社情報 {#model-company}
-
-会社を定義する基本フィールドを次に示します。
-
-| フィールド名 | データタイプ | リファレンス |
-|--- |--- |--- |
-| 会社名 | 1 行のテキスト |  |
-| 最高経営責任者 | フラグメント参照（1つ） | [人](#model-person) |
-| 従業員 | フラグメント参照（複数フィールド） | [人](#model-person) |
-
-#### 人 {#model-person}
-
-従業員にもなれる個人を定義するフィールド：
-
-| フィールド名 | データタイプ | リファレンス |
-|--- |--- |--- |
-| 名前 | 1 行のテキスト |  |
-| 名 | 1 行のテキスト |  |
-| 賞 | フラグメント参照（複数フィールド） | [賞](#model-award) |
-
-#### 賞{#model-award}
-
-賞を定義するフィールドは次のとおりです。
-
-| フィールド名 | データタイプ | リファレンス |
-|--- |--- |--- |
-| ショートカット/ID | 1 行のテキスト |  |
-| タイトル | 1 行のテキスト |  |
-
-#### 市区町村 {#model-city}
-
-都市を定義するフィールドは次のとおりです。
-
-| フィールド名 | データタイプ | リファレンス |
-|--- |--- |--- |
-| 名前 | 1 行のテキスト |  |
-| 国 | 1 行のテキスト |  |
-| 母集団 | 数値 |  |
-| カテゴリ | タグ |  |
-
-### サンプルコンテンツフラグメント{#sample-content-fragments}
-
-適切なモデルでは、次のフラグメントが使用されます。
-
-#### 会社情報 {#fragment-company}
-
-| 会社名 | 最高経営責任者 | 従業員 |
-|--- |--- |--- |
-| Apple | Steve Jobs | デューク・マーシュ<br>最大のコーフィールド |
-|  リトルポニー | アダム・スミス | ララ・クロフト<br>カッター・スレード |
-| NextStep Inc. | Steve Jobs | ジョー・スミス<br>安倍リンカーン |
-
-#### 人 {#fragment-person}
-
-| 名前 | 名 | 賞 |
-|--- |--- |--- |
-| リンカーン |  阿部 |  |
-| スミス | Adam |   |
-| スライド |  カッター |  Gameblitz<br>ゲームスター |
-| マーシュ |  公爵 |   |   |
-|  スミス |  ジョー |   |
-| クロフト |  ララ | ゲームスター |
-| Caulfield |  Max |  Gameblitz |
-|  ジョブ |  スティーブ |   |
-
-#### 賞{#fragment-award}
-
-| ショートカット/ID | タイトル |
-|--- |--- |
-| GB | Gameblitz |
-|  GS | ゲームスター |
-|  OSC | オスカー |
-
-#### 市区町村 {#fragment-city}
-
-| 名前 | 国 | 母集団 | カテゴリ |
-|--- |--- |--- |--- |
-| バーゼル | スイス | 172258 | city:emea |
-| ベルリン | ドイツ | 3669491 | city:capital<br>city:emea |
-| ブカレスト | ルーマニア | 1821000 |  city:capital<br>city:emea |
-| サンフランシスコ |  米国 |  883306 |  city:beach<br>city:na |
-| サンノゼ |  米国 |  102635 |  city:na |
-| Stutgart |  ドイツ |  634830 |  city:emea |
-|  チューリッヒ |  スイス |  415367 |  city:capital<br>city:emea |
+   * 使用`... on`
+      * 「[コンテンツ参照を使用した特定のモデルのコンテンツフラグメントのサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)」を参照してください。
 
 ## GraphQL — サンプルコンテンツフラグメント構造を使用したサンプルクエリ{#graphql-sample-queries-sample-content-fragment-structure}
 
-クエリの作成の図とサンプル結果については、サンプルクエリを参照してください。
+作成クエリの図とサンプル結果については、以下のサンプルクエリを参照してください。
 
 >[!NOTE]
 >
@@ -183,9 +97,13 @@ AEM用のGraphQLでのクエリの基本的な操作は、標準のGraphQL仕様
 >
 >例：`http://localhost:4502/content/graphiql.html`
 
+>[!NOTE]
+>
+>サンプルクエリは、GraphQL](#content-fragment-structure-graphql)で使用する[サンプルコンテンツフラグメント構造に基づいています
+
 ### サンプルクエリ — 使用可能なすべてのスキーマとデータ型{#sample-all-schemes-datatypes}
 
-これにより、使用可能なすべてのスキーマのすべてのタイプが返されます。
+これは、使用可能なすべてのスキーマのすべての`types`を返します。
 
 **サンプルクエリ**
 
@@ -269,134 +187,6 @@ AEM用のGraphQLでのクエリの基本的な操作は、標準のGraphQL仕様
         {
           "name": "__TypeKind",
           "description": "An enum describing what kind of type a given __Type is"
-        }
-      ]
-    }
-  }
-}
-```
-
-### サンプルクエリ-会社のCEOと従業員の詳細{#sample-full-details-company-ceos-employees}
-
-このクエリは、ネストされたフラグメントの構造を使用して、会社のCEOとその従業員全員の詳細を返します。
-
-**サンプルクエリ**
-
-```xml
-query {
-  companyList {
-    items {
-      name
-      ceo {
-        _path
-        name
-        firstName
-        awards {
-        id
-          title
-        }
-      }
-      employees {
-       name
-        firstName
-       awards {
-         id
-          title
-        }
-      }
-    }
-  }
-}
-```
-
-**サンプル結果**
-
-```xml
-{
-  "data": {
-    "companyList": {
-      "items": [
-        {
-          "name": "Apple Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Marsh",
-              "firstName": "Duke",
-              "awards": []
-            },
-            {
-              "name": "Caulfield",
-              "firstName": "Max",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Little Pony, Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
-            "name": "Smith",
-            "firstName": "Adam",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Croft",
-              "firstName": "Lara",
-              "awards": [
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            },
-            {
-              "name": "Slade",
-              "firstName": "Cutter",
-              "awards": [
-                {
-                  "id": "GB",
-                  "title": "Gameblitz"
-                },
-                {
-                  "id": "GS",
-                  "title": "Gamestar"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "NextStep Inc.",
-          "ceo": {
-            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
-            "name": "Jobs",
-            "firstName": "Steve",
-            "awards": []
-          },
-          "employees": [
-            {
-              "name": "Smith",
-              "firstName": "Joe",
-              "awards": []
-            },
-            {
-              "name": "Lincoln",
-              "firstName": "Abraham",
-              "awards": []
-            }
-          ]
         }
       ]
     }
@@ -537,7 +327,7 @@ query {
 }
 ```
 
-### サンプルクエリ — 単一の都市フラグメント{#sample-single-city-fragment}
+### サンプルクエリ- 1つの特定の都市フラグメント{#sample-single-specific-city-fragment}
 
 これは、リポジトリ内の特定の場所にある単一のフラグメントエントリの詳細を返すクエリです。
 
@@ -613,6 +403,134 @@ query {
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### サンプルクエリ-会社のCEOと従業員の詳細{#sample-full-details-company-ceos-employees}
+
+このクエリは、ネストされたフラグメントの構造を使用して、会社のCEOとその従業員全員の詳細を返します。
+
+**サンプルクエリ**
+
+```xml
+query {
+  companyList {
+    items {
+      name
+      ceo {
+        _path
+        name
+        firstName
+        awards {
+        id
+          title
+        }
+      }
+      employees {
+       name
+        firstName
+       awards {
+         id
+          title
+        }
+      }
+    }
+  }
+}
+```
+
+**サンプル結果**
+
+```xml
+{
+  "data": {
+    "companyList": {
+      "items": [
+        {
+          "name": "Apple Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Marsh",
+              "firstName": "Duke",
+              "awards": []
+            },
+            {
+              "name": "Caulfield",
+              "firstName": "Max",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Little Pony, Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/adam-smith",
+            "name": "Smith",
+            "firstName": "Adam",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Croft",
+              "firstName": "Lara",
+              "awards": [
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            },
+            {
+              "name": "Slade",
+              "firstName": "Cutter",
+              "awards": [
+                {
+                  "id": "GB",
+                  "title": "Gameblitz"
+                },
+                {
+                  "id": "GS",
+                  "title": "Gamestar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NextStep Inc.",
+          "ceo": {
+            "_path": "/content/dam/sample-content-fragments/persons/steve-jobs",
+            "name": "Jobs",
+            "firstName": "Steve",
+            "awards": []
+          },
+          "employees": [
+            {
+              "name": "Smith",
+              "firstName": "Joe",
+              "awards": []
+            },
+            {
+              "name": "Lincoln",
+              "firstName": "Abraham",
+              "awards": []
+            }
           ]
         }
       ]
@@ -1186,7 +1104,13 @@ query {
 
 ## WKNDプロジェクトを使用したサンプルクエリ{#sample-queries-using-wknd-project}
 
-これらのサンプルクエリは、WKNDプロジェクトに基づいています。
+これらのサンプルクエリは、WKNDプロジェクトに基づいています。 これには次のものがあります。
+
+* コンテンツフラグメントモデルは次の場所で利用できます。
+   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+
+* 次の場所で利用可能なコンテンツフラグメント（およびその他のコンテンツ）
+   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1277,12 +1201,12 @@ query {
 
 次のサンプルクエリは、次の情報を取り調べます。
 
-* 特定のモデルの単一のコンテンツフラグメント
-* すべての形式のコンテンツ：
-   * HTML
-   * Markdown
-   * プレーンテキスト
-   * JSON
+* 特定のパスにあるタイプ`article`の単一のコンテンツフラグメント
+   * その中で、コンテンツのすべての形式を次のように指定します。
+      * HTML
+      * Markdown
+      * プレーンテキスト
+      * JSON
 
 **サンプルクエリ**
 
@@ -1303,7 +1227,40 @@ query {
 }
 ```
 
+### モデル{#sample-wknd-content-fragment-model-from-model}からのコンテンツフラグメントモデルのサンプルクエリ
+
+次のサンプルクエリは、次の情報を取り調べます。
+
+* 単一のコンテンツフラグメント用
+   * 基になるコンテンツフラグメントモデルの詳細
+
+**サンプルクエリ**
+
+```xml
+{
+  adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
+    item {
+      _path
+      adventureTitle
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
 ### ネストされたコンテンツフラグメントのサンプルクエリ — 単一モデルタイプ{#sample-wknd-nested-fragment-single-model}
+
+このクエリは、次の情報を取り調べます。
+
+* 特定のパスにあるタイプ`article`の単一のコンテンツフラグメント
+   * その中で、参照先（ネストされた）フラグメントのパスと作成者
+
+>[!NOTE]
+>
+>フィールド`referencearticle`のデータ型は`fragment-reference`です。
 
 **サンプルクエリ**
 
@@ -1324,6 +1281,15 @@ query {
 
 ### ネストされたコンテンツフラグメントのサンプルクエリ — 複数モデルタイプ{#sample-wknd-nested-fragment-multiple-model}
 
+このクエリは、次の情報を取り調べます。
+
+* タイプ`bookmark`の複数のコンテンツフラグメント
+   * を、特定のモデルタイプ`article`および`adventure`の他のフラグメントへのフラグメント参照と共に使用します。
+
+>[!NOTE]
+>
+>フィールド`fragments`のデータタイプは`fragment-reference`で、モデル`Article`、`Adventure`が選択されています。
+
 ```xml
 {
   bookmarkList {
@@ -1343,7 +1309,61 @@ query {
 }
 ```
 
-### コンテンツ参照{#sample-wknd-fragment-specific-model-content-reference}を使用した特定のモデルのコンテンツフラグメントのサンプルクエリ
+### コンテンツ参照を含む特定のモデルのコンテンツフラグメントのサンプルクエリ{#sample-wknd-fragment-specific-model-content-reference}
+
+このクエリには2種類あります。
+
+1. すべてのコンテンツ参照を返す場合。
+1. `attachments`型の特定のコンテンツ参照を返す。
+
+次のクエリが問い合わされます。
+
+* タイプ`bookmark`の複数のコンテンツフラグメント
+   * （他のフラグメントへのコンテンツ参照を含む）
+
+#### プリフェッチされた参照を持つ複数のコンテンツフラグメントのサンプルクエリ{#sample-wknd-multiple-fragments-prefetched-references}
+
+次のクエリは、`_references`を使用して、すべてのコンテンツ参照を返します。
+
+```xml
+{
+  bookmarkList {
+     _references {
+         ... on ImageRef {
+          _path
+          type
+          height
+        }
+        ... on MultimediaRef {
+          _path
+          type
+          size
+        }
+        ... on DocumentRef {
+          _path
+          type
+          author
+        }
+        ... on ArchiveRef {
+          _path
+          type
+          format
+        }
+    }
+    items {
+        _path
+    }
+  }
+}
+```
+
+#### 添付ファイル付き複数のコンテンツフラグメントのサンプルクエリ{#sample-wknd-multiple-fragments-attachments}
+
+次のクエリは、すべての`attachments` — タイプ`content-reference`の特定のフィールド（サブグループ）を返します。
+
+>[!NOTE]
+>
+>フィールド`attachments`のデータ型は`content-reference`で、様々なフォームが選択されています。
 
 ```xml
 {
@@ -1376,80 +1396,16 @@ query {
 }
 ```
 
-### プリフェッチされた参照を持つ複数のコンテンツフラグメントのサンプルクエリ{#sample-wknd-multiple-fragments-prefetched-references}
-
-```xml
-{
-  bookmarkList {
-    _references {
-       ... on ImageRef {
-        _path
-        type
-        height
-      }
-      ... on MultimediaRef {
-        _path
-        type
-        size
-      }
-      ... on DocumentRef {
-        _path
-        type
-        author
-      }
-      ... on ArchiveRef {
-        _path
-        type
-        format
-      }
-    }
-  }
-}
-```
-
-### 特定のモデル{#sample-wknd-single-fragment-given-model}の単一のコンテンツフラグメントのバリエーションのサンプルクエリ
-
-**サンプルクエリ**
-
-```xml
-{
-  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
-    item {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
-### 特定のロケール{#sample-wknd-multiple-fragments-given-locale}の複数のコンテンツフラグメントのサンプルクエリ
-
-**サンプルクエリ**
-
-```xml
-{ 
-  articleList (_locale: "fr") {
-    items {
-      _path
-      author
-      main {
-        html
-        markdown
-        plaintext
-        json
-      }
-    }
-  }
-}
-```
-
 ### RTEインライン参照を含む1つのコンテンツフラグメントのサンプルクエリ{#sample-wknd-single-fragment-rte-inline-reference}
+
+このクエリは、次の情報を取り調べます。
+
+* 特定のパスにあるタイプ`bookmark`の単一のコンテンツフラグメント
+   * その中で、RTEインライン参照
+
+>[!NOTE]
+>
+>RTEインライン参照は、`_references`内で水和されます。
 
 **サンプルクエリ**
 
@@ -1486,7 +1442,37 @@ query {
 }
 ```
 
+### 特定のモデル{#sample-wknd-single-fragment-given-model}の単一のコンテンツフラグメントのバリエーションのサンプルクエリ
+
+このクエリは、次の情報を取り調べます。
+
+* 特定のパスにあるタイプ`article`の単一のコンテンツフラグメント
+   * その中で、変動に関連するデータが次のようになります。`variation1`
+
+**サンプルクエリ**
+
+```xml
+{
+  articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
+    item {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
 ### 特定のモデルの複数のコンテンツフラグメントの名前付きのバリエーションのサンプルクエリ{#sample-wknd-variation-multiple-fragment-given-model}
+
+このクエリは、次の情報を取り調べます。
+
+* 特定のバリエーションを持つ`article`タイプのコンテンツフラグメントの場合：`variation1`
 
 **サンプルクエリ**
 
@@ -1506,3 +1492,131 @@ query {
   }
 }
 ```
+
+### 特定のロケール{#sample-wknd-multiple-fragments-given-locale}の複数のコンテンツフラグメントのサンプルクエリ
+
+このクエリは、次の情報を取り調べます。
+
+* `fr`ロケール内のタイプ`article`のコンテンツフラグメント
+
+**サンプルクエリ**
+
+```xml
+{ 
+  articleList (_locale: "fr") {
+    items {
+      _path
+      author
+      main {
+        html
+        markdown
+        plaintext
+        json
+      }
+    }
+  }
+}
+```
+
+## サンプルコンテンツフラグメント構造（GraphQLで使用） {#content-fragment-structure-graphql}
+
+サンプルクエリは次の構造に基づいています。この構造では、次の値を使用します。
+
+* 1つ以上の[サンプルコンテンツフラグメントモデル](#sample-content-fragment-models-schemas) - GraphQLスキーマの基盤を形成します。
+
+* [上記のモデルに基づくコンテンツ](#sample-content-fragments) フラグメントのサンプル
+
+### コンテンツフラグメントモデルのサンプル(スキーマ) {#sample-content-fragment-models-schemas}
+
+サンプルクエリでは、次のコンテンツモデルとその相互関係（参照 —>）を使用します。
+
+* [会社](#model-company)
+-> [個人](#model-person)
+    -> [賞](#model-award)
+
+* [市区町村](#model-city)
+
+#### 会社情報 {#model-company}
+
+会社を定義する基本フィールドを次に示します。
+
+| フィールド名 | データタイプ | リファレンス |
+|--- |--- |--- |
+| 会社名 | 1 行のテキスト |  |
+| 最高経営責任者 | フラグメント参照（1つ） | [人](#model-person) |
+| 従業員 | フラグメント参照（複数フィールド） | [人](#model-person) |
+
+#### 人 {#model-person}
+
+従業員にもなれる個人を定義するフィールド：
+
+| フィールド名 | データタイプ | リファレンス |
+|--- |--- |--- |
+| 名前 | 1 行のテキスト |  |
+| 名 | 1 行のテキスト |  |
+| 賞 | フラグメント参照（複数フィールド） | [賞](#model-award) |
+
+#### 賞{#model-award}
+
+賞を定義するフィールドは次のとおりです。
+
+| フィールド名 | データタイプ | リファレンス |
+|--- |--- |--- |
+| ショートカット/ID | 1 行のテキスト |  |
+| タイトル | 1 行のテキスト |  |
+
+#### 市区町村 {#model-city}
+
+都市を定義するフィールドは次のとおりです。
+
+| フィールド名 | データタイプ | リファレンス |
+|--- |--- |--- |
+| 名前 | 1 行のテキスト |  |
+| 国 | 1 行のテキスト |  |
+| 母集団 | 数値 |  |
+| カテゴリ | タグ |  |
+
+### サンプルコンテンツフラグメント{#sample-content-fragments}
+
+適切なモデルでは、次のフラグメントが使用されます。
+
+#### 会社情報 {#fragment-company}
+
+| 会社名 | 最高経営責任者 | 従業員 |
+|--- |--- |--- |
+| Apple | Steve Jobs | デューク・マーシュ<br>最大のコーフィールド |
+|  リトルポニー | アダム・スミス | ララ・クロフト<br>カッター・スレード |
+| NextStep Inc. | Steve Jobs | ジョー・スミス<br>安倍リンカーン |
+
+#### 人 {#fragment-person}
+
+| 名前 | 名 | 賞 |
+|--- |--- |--- |
+| リンカーン |  阿部 |  |
+| スミス | Adam |   |
+| スライド |  カッター |  Gameblitz<br>ゲームスター |
+| マーシュ |  公爵 |   |   |
+|  スミス |  ジョー |   |
+| クロフト |  ララ | ゲームスター |
+| Caulfield |  Max |  Gameblitz |
+|  ジョブ |  スティーブ |   |
+
+#### 賞{#fragment-award}
+
+| ショートカット/ID | タイトル |
+|--- |--- |
+| GB | Gameblitz |
+|  GS | ゲームスター |
+|  OSC | オスカー |
+
+#### 市区町村 {#fragment-city}
+
+| 名前 | 国 | 母集団 | カテゴリ |
+|--- |--- |--- |--- |
+| バーゼル | スイス | 172258 | city:emea |
+| ベルリン | ドイツ | 3669491 | city:capital<br>city:emea |
+| ブカレスト | ルーマニア | 1821000 |  city:capital<br>city:emea |
+| サンフランシスコ |  米国 |  883306 |  city:beach<br>city:na |
+| サンノゼ |  米国 |  102635 |  city:na |
+| Stutgart |  ドイツ |  634830 |  city:emea |
+|  チューリッヒ |  スイス |  415367 |  city:capital<br>city:emea |
