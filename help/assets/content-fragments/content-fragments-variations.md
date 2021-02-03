@@ -2,10 +2,10 @@
 title: バリエーション - フラグメントコンテンツのオーサリング
 description: バリエーションでは、フラグメントのコンテンツをオーサリングし、目的に応じてそのコンテンツのバリエーションを作成できます（必要な場合）。
 translation-type: tm+mt
-source-git-commit: da8fcf1288482d406657876b5d4c00b413461b21
+source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
 workflow-type: tm+mt
-source-wordcount: '1742'
-ht-degree: 91%
+source-wordcount: '2186'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 91%
 
 * フラグメントの[コンテンツの入力](#authoring-your-content)、
 * [マスター](#managing-variations)コンテンツの&#x200B;**バリエーションの作成および管理,**
-* フラグメントの作成に使用された[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)の名前を参照してください。上部のツールバーのフラグメント名の下に表示されます。
 
 編集中のデータタイプに応じて他の様々なアクションを実行します。次に例を示します。
 
@@ -54,11 +53,9 @@ ht-degree: 91%
    * その他の編集オプションの表示（[リッチテキスト](#rich-text)形式の場合）
    * 様々な[アクション](#actions)へのアクセス
 
-<!--
-For example:
+次に例を示します。
 
-![full screen editor](assets/cfm-variations-02.png)
--->
+![全画面表示エディター](assets/cfm-variations-02.png)
 
 ### フルスクリーンエディタ{#full-screen-editor}
 
@@ -66,11 +63,9 @@ For example:
 
 ![全画面表示エディターアイコン](assets/cfm-variations-03.png)
 
-<!--
-This will open the full screen text editor:
+フルスクリーンのテキストエディタが開きます。
 
-![full screen editor icon](assets/cfm-variations-fullscreentexteditor.png)
--->
+![全画面表示エディター](assets/cfm-variations-fullscreentexteditor.png)
 
 フルスクリーンテキストエディターには、次の機能があります。
 
@@ -122,10 +117,7 @@ This will open the full screen text editor:
    * 検索と置換
    * スペルチェッカー
    * [注釈](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-
-<!--
-* [Insert Content Fragment](#inserting-content-fragment-into-your-fragment)
--->
+* [コンテンツフラグメントを挿入](#inserting-content-fragment-into-your-fragment);は、「 **複数行」の** テキストフィールドが「フラグメント参照を **許可**」で設定されている場合に使用できます。
 
 [アクション](#actions)は、全画面表示エディターからアクセスすることもできます。
 
@@ -161,35 +153,33 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 >
 >**リッチテキスト**&#x200B;と **Markdown** を切り替えると、ブロック引用やコードブロックに予期しない影響が出ることがあります。ブロック引用とコードブロックの 2 つの形式は処理方法が異なる場合があるからです。
 
-<!--
-### Fragment References {#fragment-references}
+### フラグメント参照{#fragment-references}
 
-If the Content Fragment Model contains Fragment References, your fragment authors may have additional options:
+コンテンツフラグメントモデルにフラグメント参照が含まれる場合、フラグメント作成者には次の追加オプションがあります。
 
-* [Edit Content Fragment](#fragment-references-edit-content-fragment)
-* [New Content Fragment](#fragment-references-new-content-fragment)
+* [コンテンツフラグメントを編集](#fragment-references-edit-content-fragment)
+* [新しいコンテンツフラグメント](#fragment-references-new-content-fragment)
 
-![Fragment References](assets/cfm-variations-12.png)
+![フラグメント参照](assets/cfm-variations-12.png)
 
-#### Edit Content Fragment {#fragment-references-edit-content-fragment}
+#### コンテンツフラグメントを編集{#fragment-references-edit-content-fragment}
 
-The option **Edit Content Fragment** will open
-a new browser tab, with the content fragment open in the content fragment editor.
+「**コンテンツフラグメントを編集**」オプションが開きます
+新しいブラウザータブが開き、コンテンツフラグメントエディターでコンテンツフラグメントが開きます。
 
-#### New Content Fragment {#fragment-references-new-content-fragment}
+#### 新しいコンテンツフラグメント {#fragment-references-new-content-fragment}
 
-The option **New Content Fragment** will allow you to create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+「**新しいコンテンツフラグメント**」オプションを使用すると、完全に新しいフラグメントを作成できます。 これを実現するには、コンテンツフラグメントを作成ウィザードをエディターで開きます。
 
-You will then be able to create a new fragment by:
+その後、次の方法で新しいフラグメントを作成できます。
 
-1. Navigating to, and selecting the required folder.
-1. Selecting **Next**.
-1. Specifying properties; for example **Title**.
-1. Selecting **Create**.
-1. Finally:
-   1. **Done** will return (to the original fragment) and reference the new fragment.
-   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
--->
+1. 目的のフォルダに移動し、選択します。
+1. 「**次へ**」を選択します。
+1. プロパティの指定；例：**タイトル**
+1. 「**作成**」を選択します。
+1. 最後に：
+   1. **** Doneは（元のフラグメントに）戻り、新しいフラグメントを参照します。
+   1. **** Openは、新しいフラグメントを参照すると共に、新しいフラグメントを編集用に新しいブラウザータブで開きます。
 
 ### 重要な統計の表示 {#viewing-key-statistics}
 
@@ -245,23 +235,25 @@ You will then be able to create a new fragment by:
 
 1. 変更を確定するには、「**要約**」を選択します。
 
-<!--
-1. The original text is displayed side-by-side with the proposed summarization:
+1. 元のテキストが、提案された要約の横に並んで表示されます。
 
-    * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click on any highlighted sentence to keep it in the summarized content.
-    * Click on any non-highlighted sentence to have it eliminated.
+   * 削除される文には取り消し線が付けられ、赤く表示されます。
+   * 強調表示された文をクリックすると、その文書はコンテンツの要約に保持されます。
+   * 強調表示されていない文をクリックすると、削除されます。
 
-   ![summarization comparison](assets/cfm-variations-06.png)
--->
+   ![要約とオリジナルの比較](assets/cfm-variations-06.png)
 
 ### コンテンツフラグメントへの注釈の追加 {#annotating-a-content-fragment}
 
 フラグメントに注釈を追加するには：
 
 1. 「**マスター**」または必要なバリエーションを選択します。
+
 1. 全画面表示エディターを開きます。
+
 1. 上部のツールバーに、**注釈**&#x200B;アイコンが表示されます。 必要に応じて、一部のテキストを選択できます。
+
+   ![注釈](assets/cfm-variations-07.png)
 
 1. ダイアログが開きます。ここで注釈を入力できます。
 
@@ -279,18 +271,9 @@ You will then be able to create a new fragment by:
 
 1. 「**保存**」を選択します。
 
-<!--
-1. The **Annotate** icon is available in the top toolbar. You can seelect some text if required.
+1. フルスクリーンエディターを閉じても、注釈はハイライトされたままになります。 選択すると、ダイアログが開き、注釈をさらに編集できます。
 
-   ![annotate](assets/cfm-variations-07.png)
--->
-
-<!--
-1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
-
-   ![annotate](assets/cfm-variations-07c.png)
-
--->
+   ![注釈](assets/cfm-variations-07c.png)
 
 ### 注釈の表示、編集、削除 {#viewing-editing-deleting-annotations}
 
@@ -305,13 +288,9 @@ You will then be able to create a new fragment by:
 
 * 注釈の一覧表示や削除をおこなうには、フラグメントエディターで「**注釈**」タブを選択します。
 
+   ![注釈](assets/cfm-variations-08.png)
+
 * 選択されたフラグメントの[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)で、注釈の表示や削除をおこなえます。
-
-<!--
-* Can be listed, and deleted, by selecting the **Annotations** tab in the fragment editor.
-
-  ![annotations](assets/cfm-variations-08.png)
--->
 
 ### フラグメントへのアセットの挿入 {#inserting-assets-into-your-fragment}
 
@@ -346,49 +325,43 @@ You will then be able to create a new fragment by:
    * **Markdown**：アセットは表示されなくなりますが、**リッチテキスト**&#x200B;に戻すとアセットがまた表示されます。
 
 
-<!--
-### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
+### コンテンツフラグメントのフラグメントへの挿入{#inserting-content-fragment-into-your-fragment}
 
-To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
+コンテンツフラグメントの作成プロセスを容易にするために、別のコンテンツフラグメントをフラグメントに追加することもできます。
 
-They will be added as a reference, in your current location in your fragment.
--->
-
-<!--
->[!CAUTION]
->
->These assets cannot be moved or deleted on a referencing page, this must be done in the fragment editor.
->
->However, formatting of the asset (e.g. size) must be done in the [page editor](/help/sites-cloud/authoring/fundamentals/content-fragments.md). The representation of the asset in the fragment editor is purely for authoring the content flow.
+これらは参照として、フラグメント内の現在の場所に追加されます。
 
 >[!NOTE]
->
->There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
--->
+このオプションは、**複数行テキスト**&#x200B;が&#x200B;**フラグメント参照を許可**&#x200B;で設定されている場合に使用できます。
 
-<!--
-1. Position the cursor at the position you want to add the fragment.
-1. Use the **Insert Content Fragment** icon to open the search dialog.
+>[!CAUTION]
+参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
+ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)でおこなう必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
-   ![insert Content Fragment icon](assets/cfm-variations-13.png)
+>[!NOTE]
+[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
 
-1. In the dialog you can either:
+1. フラグメントを追加する位置にカーソルを置きます。
+1. **コンテンツフラグメントを挿入**&#x200B;アイコンを使用して、検索ダイアログを開きます。
 
-    * navigate to the required fragment in the Assets folder
-    * search for the fragment
+   ![コンテンツフラグメントを挿入アイコン](assets/cfm-variations-13.png)
 
-   Once located, select the required fragment by clicking on the thumbnail.
+1. ダイアログでは以下が可能です。
 
-1. Use **Select** to add a reference to the selected Content Fragment to your current content fragment (at the current location).
+   * アセットフォルダー内の必要なフラグメントに移動します
+   * フラグメントの検索
+
+   見つけたら、サムネールをクリックして、必要なフラグメントを選択します。
+
+1. 「**選択**」を使用して、選択したコンテンツフラグメントへの参照を現在のコンテンツフラグメント（現在の場所）に追加します。
 
    >[!CAUTION]
-   >
-   >If, after adding an reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
-   >* **Markdown**: the reference will remain.
--->
+   別のフラグメントへの参照を追加した後に、次の形式に変更する場合：
+   * **テキスト**:参照はフラグメントから完全に失われます。
+   * **Markdown**:参考文献は残る。
 
-## バリエーションの管理  {#managing-variations}
+
+## バリエーションの管理 {#managing-variations}
 
 ### バリエーションの作成 {#creating-a-variation}
 
@@ -455,9 +428,12 @@ They will be added as a reference, in your current location in your fragment.
 *バリエーションから&#x200B;**マスター***へ変更内容を転送することはできません。
 
 1. フラグメントエディターでコンテンツフラグメントを開きます。**マスター**&#x200B;が編集されていることを確認します。
+
 1. 特定のバリエーションを選択し、次のいずれかから適切な同期アクションを選択します。
 
    * 「**アクション**」ドロップダウンセレクター - **現在の要素をマスターと同期**
+
+      ![マスターとの同期](assets/cfm-variations-11a.png)
 
    * 全画面表示エディターのツールバー - **マスターと同期**
 
@@ -472,26 +448,3 @@ They will be added as a reference, in your current location in your fragment.
    ![マスターとの同期](assets/cfm-variations-11c.png)
 
 1. 「**同期**」を選択すると、バリエーションが更新され、表示されます。
-
-<!--
-1. Select a specific variation, then the appropriate synchronization action from either:
-
-   * the **Actions** drop down selector - **Sync current element with master**
-
-      ![synchronizing with master](assets/cfm-variations-11a.png)
-
-   * the toolbar of the full-screen editor - **Sync with master**
-
-      ![synchronizing with master](assets/cfm-variations-11b.png)
-
-1. Master and the variation will be shown side-by-side:
-
-   * green indicates content added (to the variation)
-   * red indicates content removed (from the variation)
-   * blue indicates replaced text
-
-   ![synchronizing with master](assets/cfm-variations-11c.png)
-
-1. Select **Synchronize**, the variation will updated and shown.
-
--->
