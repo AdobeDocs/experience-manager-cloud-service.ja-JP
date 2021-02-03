@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: d8c4c49b158077393aac66bcb87a52236115551f
+source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 68%
+source-wordcount: '710'
+ht-degree: 67%
 
 ---
 
@@ -140,6 +140,7 @@ ht-degree: 68%
       + 配信API {#delivery-api}
          + [コンテンツフラグメントREST API](/help/assets/content-fragments/assets-api-content-fragments.md)
          + [コンテンツフラグメントGraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+         + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
          + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)
 + 開発者ツール {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
