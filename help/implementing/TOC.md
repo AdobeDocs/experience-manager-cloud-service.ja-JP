@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
+source-git-commit: 769b45e2546b06edba24c5cd33ad3e4547b3b54c
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 66%
+source-wordcount: '869'
+ht-degree: 55%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 66%
          + [コンポーネントの概要](developing/components/overview.md)
          + [テンプレート](developing/components/templates.md)
          + [コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
-         + [スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)
+         + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html)
          + [コンテンツサービス用の JSON エクスポーター](developing/components/json-exporter.md)
          + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
          + [画像エディター](developing/components/image-editor.md)
@@ -103,6 +103,7 @@ ht-degree: 66%
       + [Java APIのガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
    + ハイブリッドAEM開発{#hybrid}
       + [ハイブリッドおよびAEM付きSPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA の概要およびガイド](developing/hybrid/introduction.md)
       + [SPA WKND チュートリアル](developing/hybrid/wknd-tutorial.md)
       + [React の使用を開始する](developing/hybrid/getting-started-react.md)
@@ -117,7 +118,7 @@ ht-degree: 66%
       + [RemotePageコンポーネント](developing/hybrid/remote-page.md)
       + [AEM内での外部SPAの編集](developing/hybrid/editing-external-spa.md)
       + [サーバーサイドレンダリング](developing/hybrid/ssr.md)
-      + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
+      + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [ローンチの統合](developing/hybrid/launch-integration.md)
       + [SPA リファレンスドキュメント](developing/hybrid/reference-materials.md)
    + ヘッドレスエクスペリエンス管理 {#headless}
@@ -129,22 +130,22 @@ ht-degree: 66%
          + [コンテンツフラグメントの作成](developing/headless/getting-started/create-content-fragment.md)
          + [コンテンツフラグメントへのアクセスと配信](developing/headless/getting-started/create-api-request.md)
       + コンテンツフラグメント {#content-fragments}
-         + [コンテンツフラグメントとGraphQLとのヘッドレス配信](/help/assets/content-fragments/content-fragments-graphql.md)
-         + [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
-         + [インスタンスに対するコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-         + [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
-         + [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)
-         + [バリエーション - フラグメントコンテンツのオーサリング](/help/assets/content-fragments/content-fragments-variations.md)
-         + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
-         + [関連コンテンツの使用](/help/assets/content-fragments/content-fragments-assoc-content.md)
-         + [メタデータ - フラグメントのプロパティ](/help/assets/content-fragments/content-fragments-metadata.md)
-         + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
-         + [プレビュー- JSON表現](/help/assets/content-fragments/content-fragments-json-preview.md)
+         + [コンテンツフラグメントとGraphQLとのヘッドレス配信](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [コンテンツフラグメントの操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
+         + [インスタンスに対するコンテンツフラグメント機能の有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
+         + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
+         + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html)
+         + [バリエーション - フラグメントコンテンツのオーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html)
+         + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html)
+         + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
+         + [メタデータ - フラグメントのプロパティ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+         + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+         + [プレビュー- JSON表現](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
       + 配信API {#delivery-api}
-         + [コンテンツフラグメントREST API](/help/assets/content-fragments/assets-api-content-fragments.md)
-         + [コンテンツフラグメントGraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-         + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-         + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+         + [コンテンツフラグメントREST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+         + [コンテンツフラグメントGraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+         + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/graphql-authentication-content-fragments.md)
 + 開発者ツール {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
@@ -160,7 +161,7 @@ ht-degree: 66%
    + [ContextHub の拡張](developing/personalization/extending-contexthub.md)
    + [ContextHub API](developing/personalization/contexthub-api.md)
    + [Adobe Target との統合](/help/sites-cloud/integrating/adobe-target.md)
-   + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
+   + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
