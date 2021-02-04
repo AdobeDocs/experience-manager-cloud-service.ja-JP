@@ -2,10 +2,10 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
+source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 9%
+source-wordcount: '745'
+ht-degree: 8%
 
 ---
 
@@ -27,7 +27,9 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 * **[GraphQL APIリクエストの認証サポート](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:GraphQL APIリクエストをサーバ側APIのアクセストークンで認証できる機能。
 
-* [RemotePage](/help/implementing/developing/hybrid/remote-page.md) コンポーネントは、を使用してAEM内の外部SPAを表示および編集するためのサポートを提供します。
+* **[RemotePageコンポーネント](/help/implementing/developing/hybrid/remote-page.md)**:を使用して、AEM内の外部SPAを表示および編集するためのサポートを追加しました。
+
+* **[AEM内での外部SPAの編集](/help/implementing/developing/hybrid/editing-external-spa.md)**:スタンドアロンのシングルページアプリをAEMインスタンスにアップロードする機能、編集可能なコンテンツセクションの追加、オーサリングを有効にする機能が追加されました。
 
 * JSON形式やロケールでリッチテキストを出力する機能など、GraphQL APIからのJSON出力の強化。
 
