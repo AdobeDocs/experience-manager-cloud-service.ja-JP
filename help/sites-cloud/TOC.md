@@ -5,10 +5,10 @@ user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
 breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 94%
+source-wordcount: '241'
+ht-degree: 92%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 94%
       + [コンポーネントコンソール](authoring/features/components-console.md)
       + [レスポンシブレイアウト](authoring/features/responsive-layout.md)
       + [タグの使用](authoring/features/tags.md)
+      + [プログレッシブWebアプリ機能を有効にする](authoring/features/enable-pwa.md)
    + プロジェクト {#projects}
       + [プロジェクトの操作](authoring/projects/overview.md)
       + [プロジェクトの管理](authoring/projects/managing.md)
