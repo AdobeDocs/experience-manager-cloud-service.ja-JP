@@ -2,9 +2,9 @@
 title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
 translation-type: tm+mt
-source-git-commit: 429d1710af30f85174f69ed111140b2e4fb5ab0f
+source-git-commit: 5901bdd97c8c94f6baf04eab8da1d7fc3f3f89da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '719'
 ht-degree: 9%
 
 ---
@@ -21,9 +21,13 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
+### ヘッドレスコンテンツ管理 {#headless}
+
 * **[GraphQL API for Content Fragment配信](/help/assets/content-fragments/graphql-api-content-fragments.md)**:GraphQL構文を使用したコンテンツフラグメントのクエリ、およびコンテンツフラグメントモデルに基づくスキーマ（JSON形式で出力）
 
 * **[GraphQL APIリクエストの認証サポート](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**:GraphQL APIリクエストをサーバ側APIのアクセストークンで認証できる機能。
+
+* [RemotePage](/help/implementing/developing/hybrid/remote-page.md) コンポーネントは、を使用してAEM内の外部SPAを表示および編集するためのサポートを提供します。
 
 * JSON形式やロケールでリッチテキストを出力する機能など、GraphQL APIからのJSON出力の強化。
 
@@ -37,6 +41,9 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 * コンテンツフラグメントエディターでJSON出力を直接プレビューできる機能。
 
+### プログレッシブWebアプリ(PWA) {#pwa}
+
+* [プログレッシブWeb App(PWA)版の](/help/sites-cloud/authoring/features/enable-pwa.md)  サイトは、簡単な設定でプロジェクトレベルで有効にできるようになりました。
 
 ## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
 
