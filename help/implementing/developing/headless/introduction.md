@@ -2,10 +2,10 @@
 title: Cloud ServiceとしてのAEM Sites向けヘッドレス開発
 description: コンテンツモデル、コンテンツフラグメント、GraphQL APIなどの強力な機能をCloud Serviceとして使用すると、AEMを使用してエクスペリエンスを一元的に管理し、チャネル全体に提供できます。
 translation-type: tm+mt
-source-git-commit: 712a99095494ab333cf0ebb2ac9fffe3f5945f3b
+source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 5%
+source-wordcount: '573'
+ht-degree: 4%
 
 ---
 
@@ -21,6 +21,14 @@ ht-degree: 5%
 ヘッドレス実装は、フルスタックおよびハイブリッドソリューションに従来のようにページやコンポーネントの管理に向けられ、チャネル中立で再利用可能なコンテンツのフラグメントとそのクロスチャネル配信の作成に重点を置いています。 これは、Webエクスペリエンスを実装するための最新の動的な開発パターンです。
 
 ![AEM導入モデル](assets/aem-implementation-models.png)
+
+## ヘッドフルとヘッドレスの比較{#headful-headless}
+
+このドキュメントでは、AEMの完全なヘッドレス実装モデルに焦点を当てます。 ただし、headfulとheadlessは、AEMではバイナリの選択である必要はありません。 ヘッドレス機能を使用すると、コンテンツを管理して様々なエンドポイントに配信すると同時に、コンテンツ作成者が単一ページのアプリを編集できるようになります。 すべてAEMで。
+
+>[!TIP]
+>
+>詳しくは、AEM](/help/implementing/developing/headful-headless.md)のドキュメント[ヘッドフルとヘッドレスを参照してください。
 
 ## CLOUD SERVICEとしてのAEMおよびヘッドレス{#aem-headless}
 
