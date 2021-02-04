@@ -2,9 +2,9 @@
 title: サーバー側APIのアクセストークンの生成
 description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
 translation-type: tm+mt
-source-git-commit: a29eda3347502a3a498c2f40ed2e46cda59b2a24
+source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 概要 {#introduction}
 
->[!IMPORTANT]
->
->この機能はまだ使用できません。 最新の機能のリストについては、[リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
-
 一部のアーキテクチャは、AEMインフラストラクチャの外部のサーバにホストされるアプリケーションから、AEMへのCloud Serviceとしてのコールを行うことに依存しています。 例えば、サーバーを呼び出し、AEMにCloud ServiceとしてAPIリクエストを送信するモバイルアプリケーションです。
 
 サーバー間のフローを以下に示し、開発のためのシンプルなフローを示します。 Cloud Service[Developer Console](development-guidelines.md#crxde-lite-and-developer-console)としてのAEMは、認証プロセスに必要なトークンの生成に使用されます。
+
+>[!NOTE]
+>
+>このドキュメントに加えて、[AEM用のトークンベースの認証(Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)として)に関するチュートリアルも参照できます。
 
 ## サーバ間のフロー{#the-server-to-server-flow}
 
