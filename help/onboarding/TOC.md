@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: af15539007e264fc473d35529f0f8c41276ec01d
+source-git-commit: 42147d7465ec10a41702e74699a3d54624b7d4bd
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 67%
+source-wordcount: '662'
+ht-degree: 39%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 67%
    + [役割に基づく権限](what-is-required/role-based-permissions.md)
    + [ソースコードリポジトリー](what-is-required/source-code-repository.md)
 + 移行プロセスの諸段階 {#phases}
-   + [計画](/help/move-to-cloud-service/planning.md)
-   + [実行](/help/move-to-cloud-service/execution.md)
-   + [運用開始後](/help/move-to-cloud-service/post-go-live.md)
+   + [計画](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
+   + [実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
+   + [運用開始後](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + クラウド内の AEM へのアクセス {#getting-access}
    + [Adobe Experience Manager as a Cloud Service へのアクセス](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Service のプログラム {#cloud-service-programs}
@@ -32,47 +32,47 @@ ht-degree: 67%
       + [プログラムの作成](getting-access-to-aem-in-cloud/creating-a-program.md)
       + [サンドボックスプログラム](getting-access-to-aem-in-cloud/sandbox-programs.md)
    + Cloud Manager の使用 {#using-cloud-manager}
-      + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
-      + [CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)
-      + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
+      + [環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)
+      + [CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+      + [コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
    + テスト結果について {#test-results}
-      + [概要](/help/implementing/cloud-manager/overview-test-results.md)
-      + [コード品質テスト](/help/implementing/cloud-manager/code-quality-testing.md)
-      + [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)
-      + [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
-      + [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
-   + [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)
-   + [通知について](/help/implementing/cloud-manager/notifications.md)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html)
+      + [コード品質テスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html)
+      + [カスタムコード品質ルール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
+      + [機能テスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html)
+      + [エクスペリエンス監査テスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/experience-audit-testing.html)
+   + [ログへのアクセスと管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)
+   + [通知について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/notifications.html)
    + AEM アプリケーションプロジェクトの作成 {#create-application-project}
       + [ウィザードの使用](getting-access-to-aem-in-cloud/using-the-wizard.md)
       + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [ビルド環境について](getting-access-to-aem-in-cloud/build-environment-details.md)
    + SSL証明書の管理{#manage-ssl-certificates}
-      + [概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
-      + [SSL証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-      + [SSL証明書の表示と更新または置き換え](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-      + [SSL証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-      + [SSL証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html)
+      + [SSL証明書の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html)
+      + [SSL証明書の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html)
+      + [SSL証明書の表示と更新または置き換え](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html)
+      + [SSL証明書のステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html)
+      + [SSL証明書の削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/delete-ssl-certificate.html)
    + カスタムドメイン名の管理{#custom-domain-names}
-      + [概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-      + [カスタムドメイン名の取得](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
-      + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-      + [TXTレコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
-      + [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [DNS設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-      + [DNSレコードの状態を確認しています](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-      + [カスタムドメイン名の表示と更新](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-      + [カスタムドメイン名のSSL証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-      + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html)
+      + [カスタムドメイン名の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html)
+      + [カスタムドメイン名の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html)
+      + [TXTレコードの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html)
+      + [カスタムドメイン名のステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html)
+      + [DNS設定の構成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html)
+      + [DNSレコードの状態を確認しています](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html)
+      + [カスタムドメイン名の表示と更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.html)
+      + [カスタムドメイン名のSSL証明書の更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html)
+      + [カスタムドメイン名の削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html)
    + IP許可リストの管理{#ip-allow-lists}
-      + [概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
-      + [IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-      + [IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-      + [IP許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-      + [IP許可リストの適用の解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
-      + [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html)
+      + [IP許可リストの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html)
+      + [IP許可リストの表示と更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html)
+      + [IP許可リストの適用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html)
+      + [IP許可リストの適用の解除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/unapply-ip-allow-list.html)
+      + [IP許可リストの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
+      + [IP許可リストのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Cloud Manager {#release-notes-cloud-manager}のリリースノート
       + [最新のリリースノート（2021.1.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
       + [リリースノート（2020.12.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
