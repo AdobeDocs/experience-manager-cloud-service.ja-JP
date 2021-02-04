@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: e59f3d09a6e7a6007e25e088feb86c25be994bed
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 67%
+source-wordcount: '724'
+ht-degree: 66%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 67%
    + [AEM技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [サーバー側APIのアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [headful and headless in AEM](developing/headful-headless.md)
    + 完全スタックAEM開発{#full-stack}
       + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI の構造](developing/introduction/ui-structure.md)
@@ -102,7 +103,6 @@ ht-degree: 67%
       + [Java APIのガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
    + ハイブリッドAEM開発{#hybrid}
       + [ハイブリッドおよびAEM付きSPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-      + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
       + [SPA の概要およびガイド](developing/hybrid/introduction.md)
       + [SPA WKND チュートリアル](developing/hybrid/wknd-tutorial.md)
       + [React の使用を開始する](developing/hybrid/getting-started-react.md)
@@ -114,8 +114,11 @@ ht-degree: 67%
       + [SPA ページコンポーネント](developing/hybrid/page-component.md)
       + [コンポーネントマッピングの動的モデル ](developing/hybrid/model-to-component-mapping.md)
       + [モデルルーティング](developing/hybrid/routing.md)
-      + [ローンチの統合](developing/hybrid/launch-integration.md)
+      + [RemotePageコンポーネント](developing/hybrid/remote-page.md)
+      + [AEM内での外部SPAの編集](developing/hybrid/editing-external-spa.md)
       + [サーバーサイドレンダリング](developing/hybrid/ssr.md)
+      + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
+      + [ローンチの統合](developing/hybrid/launch-integration.md)
       + [SPA リファレンスドキュメント](developing/hybrid/reference-materials.md)
    + ヘッドレスエクスペリエンス管理 {#headless}
       + [ヘッドレスとAEM](developing/headless/introduction.md)
