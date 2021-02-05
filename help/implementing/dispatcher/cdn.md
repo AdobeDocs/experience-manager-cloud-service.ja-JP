@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
+source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 64%
+source-wordcount: '607'
+ht-degree: 49%
 
 ---
 
@@ -18,14 +18,14 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ## AEM 管理による CDN {#aem-managed-cdn}
 
-次の節に従って、Cloud ManagerセルフサービスUIを使用し、Adobeの追加設定不要なCDNを使用してコンテンツ配信の準備を行います。
+次の節に従って、Cloud ManagerセルフサービスUIを使用し、AEMの標準搭載のCDNを使用してコンテンツ配信の準備を行います。
 
 1. [SSL証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **トラフィックの制限**
 
-デフォルトでは、アドビが管理する CDN のセットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境の発行サービスへのトラフィックを制限する場合（例えば、一定のIPアドレスでステージングを制限する場合）、Cloud Manager UIを使用して、セルフサービスでこの操作を行うことができます。
+AEM管理のCDN設定では、デフォルトで、実稼働環境用と非実稼働環境（開発およびステージ環境）用の両方の環境について、すべてのパブリックトラフィックが公開サービスに到達できます。 特定の環境の発行サービスへのトラフィックを制限する場合（例えば、一定のIPアドレスでステージングを制限する場合）、Cloud Manager UIを使用して、セルフサービスでこの操作を行うことができます。
 
 詳しくは、[IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
 
@@ -35,7 +35,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
-顧客が既存の CDN を使用する必要がある場合は、自社でその CDN を管理してアドビの管理対象 CDN を参照できます。ただし、次の条件を満たす必要があります。
+顧客が既存のCDNを使用する必要がある場合は、そのCDNを管理し、AEMが管理するCDNを指すように指定できます。ただし、次の条件が満たされている必要があります。
 
 * 顧客は、交換するのに手間がかかる既存 CDN を保有している。
 * 顧客が自社で管理している。
@@ -46,19 +46,19 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 設定手順：
 
 1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。
-1. ホストヘッダーを接触チャネルドメインに設定します（アドビの CDN の入口）。この値はアドビから取得されます。
+1. ホストヘッダーを、AEM CDNの入力である接触チャネルドメインに設定します。 この値はアドビから取得されます。
 1. SNI ヘッダーを接触チャネルに送信します。ホストヘッダーと同様に、sni ヘッダーはドメイン接触チャネルです。
 1. トラフィックを AEM サーバーに正しくルーティングするために必要な `X-Edge-Key` を設定します。この値はアドビから取得されます。
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
 
-顧客 CDN からアドビが管理する CDN へのホップは効率的ですが、ホップの増加に伴い、パフォーマンスがわずかに低下する可能性があります。
+お客様のCDNからAEM管理のCDNへのホップは効率的である可能性が高いにもかかわらず、ホップの増加が原因でパフォーマンスが低下する可能性があります。
 
 この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
 
 ## 位置情報ヘッダー{#geo-headers}
 
-Adobeが管理するCDNは、次の内容を含む各リクエストにヘッダーを追加します。
+AEMが管理するCDNは、次の情報を含む各リクエストにヘッダーを追加します。
 
 * 国コード：`x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
