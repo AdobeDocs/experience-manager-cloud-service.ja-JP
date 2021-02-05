@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: 8ca8944d37c1a10782597ec30c16b0151b5cd717
+source-git-commit: b6ae5cab872a3cca4eb41259f6c242b1fbeb98bb
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 68%
+source-wordcount: '604'
+ht-degree: 64%
 
 ---
 
@@ -28,6 +28,10 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 デフォルトでは、アドビが管理する CDN のセットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境の発行サービスへのトラフィックを制限する場合（例えば、一定のIPアドレスでステージングを制限する場合）、Cloud Manager UIを使用して、セルフサービスでこの操作を行うことができます。
 
 詳しくは、[IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
+
+>[!CAUTION]
+>
+>許可されているIPからの要求のみ、AEMの管理対象CDNで処理されます。 AEMが管理するCDNに対して独自のCDNを指定する場合は、CDNのIPが許可リストに含まれていることを確認します。
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
