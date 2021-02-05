@@ -3,10 +3,10 @@ title: 拡張スマートタグ
 description: Adobe Sensei の AI および ML サービスを利用して、状況に応じた説明的なビジネスタグを適用し、アセットの検出とコンテンツベロシティ（コンテンツ創出の高速化）を向上させます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 98%
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。既存のデプロイメントでは、管理者は次の手順に従って統合を設定します。
+>[!DNL Experience Manager Assets] 2020 [年8月の](/help/release-notes/release-notes-cloud/2020/release-notes-2020-8-0.md#assets) リリース以降に作成されたデプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。古いデプロイメントでは、管理者は次の手順に従って統合を設定できます。
 
 ## Adobe 開発者コンソールとの統合 {#aio-integration}
 
@@ -109,7 +109,7 @@ Adobe 開発者コンソールで統合を作成してスマートタグを使�
 
 1. [https://console.adobe.io](https://console.adobe.io) にアクセスし、プロジェクト内の既存のサービスに移動します。新しい証明書をアップロードし、設定します。設定について詳しくは、[Adobe 開発者コンソール統合の作成](#create-aio-integration)の手順を参照してください。
 
-## 新しくアップロードされたアセットに対するスマートタグの有効化（オプション） {#enable-smart-tagging-for-uploaded-assets}
+## アセットがアップロードされたときに自動タグ付けを有効にする（オプション） {#enable-smart-tagging-for-uploaded-assets}
 
 1. [!DNL Experience Manager] で、**[!UICONTROL ツール／ワークフロー／モデル]**&#x200B;に移動します。
 1. **[!UICONTROL ワークフローモデル]**&#x200B;ページで、「**[!UICONTROL DAM アセットの更新]**」ワークフローモデルを選択します。
