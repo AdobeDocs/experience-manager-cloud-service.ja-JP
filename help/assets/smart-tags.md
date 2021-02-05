@@ -3,15 +3,15 @@ title: AI生成タグを使用したアセットの自動タグ付け
 description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する、人為的にインテリジェントなサービスを使用してアセットにタグ付けします。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7af525ed1255fb4c4574c65dc855e0df5f1da402
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 78%
+source-wordcount: '2799'
+ht-degree: 68%
 
 ---
 
 
-# 検索を高速にするための追加スマートタグ{#smart-tag-assets-for-faster-search}
+# 検索体験追加を改善するためのアセットへのスマートタグ{#smart-tag-assets-for-faster-search}
 
 デジタルアセットを扱う組織では、アセットメタデータで分類に基づく統制語彙を使用することがますます多くなっています。これには、基本的に、従業員、パートナーおよび顧客がデジタルアセットを参照したり、検索したりする場合によく使用するキーワードのリストが含まれます。分類管理されたボキャブラリでアセットをタグ付けすることで、アセットを容易に識別して検索で取得できます。
 
@@ -23,25 +23,31 @@ ht-degree: 78%
 ![flowchart](assets/flowchart.gif) 
 -->
 
+次のタイプのアセットにタグを付けることができます。
+
+* **画像**:多くの形式の画像は、Adobe Senseiのスマートコンテンツサービスを使用してタグ付けされます。トレーニングモデル](#train-model)を作成し、[スマートタグ](#tag-assets)を画像に適用します。[
+* **ビデオアセット**:ビデオタグ付けは、では初期設定で有効 [!DNL Adobe Experience Manager] になってい [!DNL Cloud Service]ます。[新しいビデオをアップロードしたり、既存のビデオを再処理したりすると、ビデオは自動](/help/assets/smart-tags-video-assets.md) タグ付けされます。
+* **テキストベースのアセット**: [!DNL Experience Manager Assets] アップロード時に、サポートされているテキストベースのアセットに自動タグ付けを行います。
+
 ## サポートされているアセットタイプ {#smart-tags-supported-file-formats}
 
-スマートタグは、サポートされているファイルタイプのうち、JPGおよびPNG形式のレンディションを生成するものにのみ適用されます。 この機能は、次のタイプのアセットに対してサポートされています。
+スマートタグは、JPGおよびPNG形式のレンディションを生成する、サポートされるファイル形式に適用されます。 この機能は、次のタイプのアセットに対してサポートされています。
 
 | 画像（MIMEタイプ） | テキストベースのアセット（ファイル形式） | ビデオアセット（ファイル形式とコーデック） |
 |----|-----|------|
-| image/jpeg | TXT | MP4 (H264/AVC) |
-| image/tiff | RTF | MKV (H264/AVC) |
-| image/png | DITA | MOV(H264/AVC、Motion JPEG) |
-| image/bmp | XML | AVI（インデオ4） |
+| image/jpeg | CSV | MP4 (H264/AVC) |
+| image/tiff | DOC | MKV (H264/AVC) |
+| image/png | DOCX | MOV(H264/AVC、Motion JPEG) |
+| image/bmp | HTML | AVI（インデオ4） |
 | image/gif | JSON | FLV(H264/AVC、vp6f) |
-| image/pjpeg | DOC | WMV(WMV2) |
-| image/x-portable-anymap | DOCX |  |
-| image/x-portable-bitmap | PDF |  |
-| image/x-portable-graymap | CSV |  |
-| image/x-portable-pixmap | PPT |  |
-| image/x-rgb | PPTX |  |
+| image/pjpeg | PDF | WMV(WMV2) |
+| image/x-portable-anymap | PPT |  |
+| image/x-portable-bitmap | PPTX |  |
+| image/x-portable-graymap | RTF |  |
+| image/x-portable-pixmap | SRT |  |
+| image/x-rgb | TXT |  |
 | image/x-xbitmap | VTT |  |
-| image/x-xpixmap | SRT |  |
+| image/x-xpixmap | XML |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -62,6 +68,12 @@ ht-degree: 78%
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
+## テキストベースのアセットのスマートタグ付け{#smart-tag-text-based-assets}
+
+サポートされているテキストベースのアセットは、アップロード時に[!DNL Experience Manager Assets]によって自動タグ付けされます。 デフォルトで有効になっています。 スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。 テキストベースのアセットの場合、スマートタグはテキストに表示されるキーワードですが、アセットを説明するのに最適なキーワードです。 サポートされているアセットの場合、[!DNL Experience Manager]は既にテキストを抽出し、インデックスが作成され、アセットの検索に使用されます。 ただし、テキスト内のキーワードに基づくスマートタグには、完全検索インデックスに比べてアセット検出を改善するために使用される、専用の、構造化された、優先度の高い検索ファセットが用意されています。
+
+画像およびビデオの場合、スマートタグは視覚的な観点に基づいて生成されます。
+
 ## [!DNL Experience Manager] と Adobe 開発者コンソールの統合 {#integrate-aem-with-aio}
 
 >[!IMPORTANT]
@@ -72,12 +84,7 @@ ht-degree: 78%
 
 ## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
 
-タグモデルは、画像の視覚要素でつながっているタグのグループです。例えば、靴のコレクションは異なるタグを持つことができますが、すべてのタグは靴に関連し、同じタグモデルに属することができます。タグは、画像の明確に異なる視覚要素にのみ関連付けることができます。[!DNL Experience Manager] でトレーニングモデルのコンテンツ表現を理解するには、各タグに対して手動で追加されたタグと例として用いる画像のグループから構成されるトップレベルのエンティティとして、トレーニングモデルを視覚化します。各タグは、画像にのみ適用できます。
-
-現実的に処理できないタグは、以下に関連しています。
-
-* 製品のリリース年や季節、画像のムード、また誘発される感情など、非視覚的で抽象的な要素。
-* シャツの襟の有無や、製品に埋め込まれた小さな製品ロゴなど、製品の視覚的な細かい違い。
+タグモデルは、タグ付けされる画像の様々な視覚要素に関連付けられた、関連するタグのグループです。 タグは、画像の明確に異なる視覚的要素と関連付けられるので、タグを適用すると、特定のタイプの画像を検索するのに役立ちます。 例えば、靴のコレクションは異なるタグを持つことができますが、すべてのタグは靴に関連し、同じタグモデルに属することができます。タグを適用すると、色別、デザイン別、使用方法別など、様々なタイプの靴を探すのに役立ちます。 [!DNL Experience Manager] でトレーニングモデルのコンテンツ表現を理解するには、各タグに対して手動で追加されたタグと例として用いる画像のグループから構成されるトップレベルのエンティティとして、トレーニングモデルを視覚化します。各タグは、画像にのみ適用できます。
 
 タグモデルを作成してサービスをトレーニングする前に、自社ビジネスのコンテキストでイメージ内のオブジェクトを最もよく説明する一意のタグのセットを特定します。キュレーション後のセット内のアセットが、[トレーニングガイドライン](#training-guidelines)に従っていることを確認してください。
 
@@ -189,9 +196,7 @@ ht-degree: 78%
 
 ### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
 
-Experience Manager は、DAM にアップロードするアセットに自動的にタグ付けすることができます。そのためには、管理者は、使用可能な手順をスマートタグアセットに追加するワークフローを設定します。[アップロードしたアセットのスマートタグを有効にする方法](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)を参照してください。
-
-<!-- TBD: Text-based assets are automatically smart tagged. -->
+[!DNL Experience Manager] は、DAM にアップロードするアセットに自動的にタグ付けすることができます。そのためには、管理者は、使用可能な手順をスマートタグアセットに追加するワークフローを設定します。[アップロードしたアセットのスマートタグを有効にする方法](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)を参照してください。
 
 ## スマートタグとアセット検索の管理{#manage-smart-tags-and-searches}
 
@@ -231,17 +236,21 @@ Experience Manager は、DAM にアップロードするアセットに自動的
 1. スマートタグ内の「`woman running`」に一致するもの。
 1. スマートタグ内の「`woman`」または「`running`」に一致するもの。
 
-### タグの制限 {#limitations}
+## タグの制限とベストプラクティス{#limitations}
 
-拡張スマートタグは、ブランド画像とそのタグの学習モデルに基づいています。これらのモデルは、タグを識別するうえで常に完璧であるわけではありません。スマートタグの現行バージョンには次の制限事項があります。
+強化されたスマートタグは、画像とそのタグの学習モデルに基づいています。 これらのモデルは、タグを識別するうえで常に完璧であるわけではありません。スマートタグの現行バージョンには次の制限事項があります。
 
 * 画像内の細かい違いを認識することはできません。例えば、シャツのサイズが細身か標準かなどの違いは認識できません。
 * 画像の細かい模様や部分に基づいてタグを識別することはできません。例えば、T シャツのロゴなどです。
-* タグ付けは、Experience Managerがサポートする言語でサポートされています。 言語のリストについては、「[Smart Content Serviceリリースノート](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)」を参照してください。
+* タグ付けは、[!DNL Experience Manager]がサポートする言語でサポートされています。 言語のリストについては、「[Smart Content Serviceリリースノート](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html#languages)」を参照してください。
+* 現実的に処理されないタグは、次のものに関連しています。
+
+   * 製品のリリースの年や季節、画像によって誘発されるムードや感情、ビデオの主観的な意味など、非視覚的で抽象的な要素。
+   * シャツの襟の有無や、製品に埋め込まれた小さな製品ロゴなど、製品の視覚的な細かい違い。
 
 <!-- TBD: Add limitations related to text-based assets. -->
 
-スマートタグ（通常または拡張）付きのアセットを検索するには、アセットのオムニサーチ（全文検索）を使用します。スマートタグには個別の検索用述語はありません。
+スマートタグ（標準または拡張タグ）を使用してアセットを検索するには、[!DNL Assets] Omnisearch（フルテキスト検索）を使用します。 スマートタグには個別の検索用述語はありません。
 
 >[!NOTE]
 >
