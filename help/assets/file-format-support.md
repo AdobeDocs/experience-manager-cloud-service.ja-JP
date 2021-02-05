@@ -3,10 +3,10 @@ title: サポートされているファイル形式と MIME タイプ
 description: ' [!DNL Experience Manager Assets] で [!DNL Cloud Service]としてサポートされているファイル形式とMIME型です。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 72a87e2eb8c4e40bbe0e5f831afc374fe3521bd7
+source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 90%
+source-wordcount: '818'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 * Microsoft Office 形式や OpenDocument 形式などの一般的な[ドキュメント形式](#document-formats)
 * 各種の[ビデオ](#video-formats)および[オーディオ](#audio-formats)形式.
 
-次の凡例で、サポートのレベルを説明します。
+次の凡例で、各形式のサポートレベルを説明します。
 
 | サポートレベル | 説明 |
 | ------------- | --------------------------- |
@@ -231,4 +231,5 @@ ht-degree: 90%
 >[!MORELIKETHIS]
 >
 >* [アセットマイクロサービスを使用したアセット処理](asset-microservices-overview.md)
+>* [テキストベースのアセットのスマートタグ付けに対応しているファイル形式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
