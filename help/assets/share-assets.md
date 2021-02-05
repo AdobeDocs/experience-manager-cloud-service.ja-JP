@@ -3,10 +3,10 @@ title: アセット、フォルダー、コレクションをリンクとして�
 description: この記事では、 [!DNL Experience Manager Assets] 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 66%
+source-wordcount: '681'
+ht-degree: 64%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 66%
 >[!NOTE]
 >
 >* リンクとして共有するフォルダーやアセットに対する編集の ACL 権限が必要です。
->* リンクをユーザーと共有する前に、Day CQ Mail Service が設定されていることを確認してください。設定されていないと、エラーが発生します。
+>* ユーザーとリンクを共有する前に、[送信電子メールが有効](/help/implementing/developing/introduction/development-guidelines.md#sending-email)であることを確認します。 設定されていないと、エラーが発生します。
 
 
 1. [!DNL Assets]ユーザーインターフェイスで、リンクとして共有するアセットを選択します。
