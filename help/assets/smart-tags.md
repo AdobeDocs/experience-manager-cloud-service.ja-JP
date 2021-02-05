@@ -3,9 +3,9 @@ title: AI生成タグを使用したアセットの自動タグ付け
 description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する、人為的にインテリジェントなサービスを使用してアセットにタグ付けします。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
+source-git-commit: c7befef579ca6f722ca630102c875bfb7651c131
 workflow-type: tm+mt
-source-wordcount: '2799'
+source-wordcount: '2807'
 ht-degree: 68%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 68%
 
 * **画像**:多くの形式の画像は、Adobe Senseiのスマートコンテンツサービスを使用してタグ付けされます。トレーニングモデル](#train-model)を作成し、[スマートタグ](#tag-assets)を画像に適用します。[
 * **ビデオアセット**:ビデオタグ付けは、では初期設定で有効 [!DNL Adobe Experience Manager] になってい [!DNL Cloud Service]ます。[新しいビデオをアップロードしたり、既存のビデオを再処理したりすると、ビデオは自動](/help/assets/smart-tags-video-assets.md) タグ付けされます。
-* **テキストベースのアセット**: [!DNL Experience Manager Assets] アップロード時に、サポートされているテキストベースのアセットに自動タグ付けを行います。
+* **テキストベースのアセット**: [!DNL Experience Manager Assets] アップロード時に、サポートされているテキストベースのアセットに自動タグ付けを行います。[テキストベースのアセットのスマートタグ付け](#smart-tag-text-based-assets)についての詳細を説明します。
 
 ## サポートされているアセットタイプ {#smart-tags-supported-file-formats}
 
