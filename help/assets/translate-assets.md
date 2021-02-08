@@ -3,9 +3,9 @@ title: 複数の言語でのデジタルアセットの作成と管理
 description: バイナリ、メタデータ、タグなどのアセットを複数の言語に翻訳するワークフローを自動化する方法を学習します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f85dea62ba334fd5b3a7cc45fbf09556cbfdd2ec
+source-git-commit: 100171693837dcdcef0efeab8d61b567114c5ef0
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2587'
 ht-degree: 100%
 
 ---
@@ -186,7 +186,10 @@ Adobe Experience Manager (AEM) Assets では、多言語アセットはフォル
 
 1. アセットコンソールに移動し、翻訳済みアセットそれぞれのプロパティページを開き、翻訳されたメタデータを表示します。
 
-アセットのメタデータを効率よく翻訳するためのヒントは、[メタデータを効率よく翻訳するための 5 つの手順（英語）](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)を参照してください。
+<!-- TBD: Possibly this blog wasn't migrated. Still try to find from the author. Old one is archived at https://web.archive.org/web/20180423042713/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/
+
+For tips on translating metadata for assets efficiently, see [5 Steps to efficiently translate metadata](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/). 
+-->
 
 ## 翻訳プロジェクトの作成 {#creating-translation-projects}
 
