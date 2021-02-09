@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
 workflow-type: tm+mt
 source-wordcount: '2737'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ OSGi で提供されている標準化されたプリミティブにより、サ
 
 AEM コードプロジェクトに含まれる設定ファイルを使用して、OSGi コンポーネントの設定を管理できます。
 
-## OSGi の設定ファイル{#osgi-configuration-files}
+## OSGi の設定ファイル {#osgi-configuration-files}
 
 設定の変更は、 AEM プロジェクトのコードパッケージ（`ui.apps`）で、実行モード固有の config フォルダーの下に設定ファイル（`.cfg.json`）として定義されます。
 
@@ -40,7 +40,7 @@ cfg.json OSGi 設定形式に従います。
 >
 >以前のバージョンの AEM は、.cfg、.config、XML sling:OsgiConfig リソース定義など、様々なファイル形式の OSGi 設定ファイルをサポートしていました。これらの形式は、cfg.json OSGi 設定形式に置き換えられます。
 
-## 実行モードの解決{#runmode-resolution}
+## 実行モードの解決 {#runmode-resolution}
 
 実行モードを使用すると、特定の OSGi 設定を特定の AEM インスタンスにターゲット設定できます。実行モードを使用するには、次の形式で、`/apps/example`（「example」はプロジェクト名）の下に config フォルダーを作成します。
 
@@ -56,7 +56,7 @@ config フォルダー名で定義された実行モードが AEM で使用さ�
 
 ローカルで開発する場合は、実行モード起動パラメーターを渡して、使用する実行モード OSGi 設定を指定できます。
 
-## OSGi 設定値のタイプ{#types-of-osgi-configuration-values}
+## OSGi 設定値のタイプ {#types-of-osgi-configuration-values}
 
 AEM as a Cloud Service で使用できる OSGi 設定値は 3 種類あります。
 
@@ -182,7 +182,7 @@ OSGi 設定ファクトリのファイル名には、`<PID>-<factory-name>.cfg.j
 
 ### AEM SDK Quickstart を使用した OSGi 設定の生成
 
-AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネントの設定、および JSON として OSGi 設定を書き出すために使用できます。これは、OSGi プロパティとその値の形式が AEM プロジェクトで OSGi 設定を定義する開発者には理解されない可能性のある、AEM が提供する OSGi コンポーネントを設定する場合に役立ちます。AEM Web コンソールの設定 UI を使用すると、リポジトリに `.cfg.json` ファイルが書き込まれるので、AEM プロジェクト定義の OSGi 設定が生成される設定と異なる場合、ローカル開発中の予期しない動作を回避するために、これに注意が必要です。
+AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネントの設定、および JSON として OSGi 設定を書き出すために使用できます。これは、OSGi プロパティとその値の形式が AEM プロジェクトで OSGi 設定を定義する開発者には理解されない可能性のある、AEM が提供する OSGi コンポーネントを設定する場合に役立ちます。AEM Web コンソールの設定 UI を使用すると、リポジトリーに `.cfg.json` ファイルが書き込まれるので、AEM プロジェクト定義の OSGi 設定が生成される設定と異なる場合、ローカル開発中の予期しない動作を回避するために、これに注意が必要です。
 
 1. AEM SDK Quickstart Jar の AEM Web コンソールに管理者ユーザーとしてログインします。
 1. OSGi／設定に移動します。
@@ -472,10 +472,10 @@ config.dev
 
 ## プロパティ設定用の Cloud Manager API 形式 {#cloud-manager-api-format-for-setting-properties}
 
-APIの設定方法については、[このページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)を参照してください。
+API の設定方法については、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)を参照してください。
 >[!NOTE]
 >
->使用したCloud Manager APIに「Deployment Manager -Cloud Service」というロールが割り当てられていることを確認します。 その他のロールでは、以下のコマンドのすべてを実行できません。
+>使用している Cloud Manager API に「デプロイメントマネージャー - Cloud Service」という役割が割り当てられていることを確認します。その他の役割では、必ずしも以下のすべてのコマンドを実行できるわけではありません。
 
 ### API を使用した値の設定 {#setting-values-via-api}
 
