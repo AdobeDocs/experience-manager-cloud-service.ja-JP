@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -35,7 +35,7 @@ HTTP/2 とその利点については、次の Web サイトで簡潔に説明�
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## HTTP/2 に切り替えるには  {#am-i-eligible-to-switch-over-to-http}
+## HTTP/2 に切り替えるには {#am-i-eligible-to-switch-over-to-http}
 
 HTTP/2 を使用するには、以下の要件を満たしている必要があります。
 
@@ -49,9 +49,9 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 ## Dynamic Media アカウントに対して HTTP/2 を有効にする方法 {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[サポートケース](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)を作成し、HTTP/2に切り替えるようにリクエストするには、Admin Consoleを使用する必要があります。自動的には実行されません。
+[Admin Console を使用してサポートケースを作成](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)し、HTTP/2 に切り替えるように要求する必要があります。自動的には切り替わりません。
 
-1. サポートケースに次の情報を入力します。
+1. サポートケースには、次の情報を記入してください。
 
    * 主要連絡先名、電子メールおよび電話番号。
    * HTTP/2 への切り替えが必要なすべてのドメイン。つまり、`images.company.com` または `mycompany.scene7.com`。
