@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,10 +39,10 @@ ht-degree: 88%
 
 1. 「**[!UICONTROL 使用状況の統計]**」セクションを見て、アセットが含まれているエンティティや最近使用されたクリエイティブソリューションを確認します。使用率が高いほど、ユーザーの間で人気のあるアセットであることを意味します。使用状況データは、次の見出しの下に表示されます。
 
-   * **[!UICONTROL アセット]**：アセットが、コレクションまたは複合アセットに含まれた回数.
-   * **[!UICONTROL Web およびモバイル]**：アセットが Web サイトまたはアプリに含まれた回数.
-   * **[!UICONTROL ソーシャル]**：アセットが Adobe Social や Adobe Campaign などのソリューションで使用された回数.
-   * **[!UICONTROL 電子メール]**：アセットが電子メールキャンペーンで使用された回数.
+   * **[!UICONTROL アセット]**：アセットが、コレクションまたは複合アセットに含まれた回数
+   * **[!UICONTROL Web およびモバイル]**：アセットが Web サイトまたはアプリに含まれた回数
+   * **[!UICONTROL ソーシャル]**：アセットが Adobe Social や Adobe Campaign などのソリューションで使用された回数
+   * **[!UICONTROL 電子メール]**：アセットが電子メールキャンペーンで使用された回数
 
    ![usage_statistics](assets/usage_statistics.png)
 
@@ -86,31 +86,31 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
 ## アセットインサイトの設定 {#configure-asset-insights}
 
-[!DNL Experience Manager Assets] サードパーティWebサイトで使用されるデジタルアセットの使用状況データを、から取得 [!DNL Adobe Analytics]します。アセットインサイトを有効にしてこのデータを取得し、インサイトを生成するには、まず[!DNL Adobe Analytics]と統合する機能を設定します。
+[!DNL Experience Manager Assets] では、サードパーティ Web サイトで使用されているデジタルアセットの使用状況データを [!DNL Adobe Analytics] から取得します。アセットインサイトでこのようなデータを取得して洞察を得るためには、まず、[!DNL Adobe Analytics] と連携するようにこの機能を設定します。
 
 >[!NOTE]
 >
 >インサイトのサポートおよび提供がおこなわれるのは、画像に対してのみです。
 
-1. [!DNL Experience Manager]で、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**&#x200B;をクリックします。
+1. [!DNL Experience Manager] で&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL アセット]**&#x200B;をクリックします。
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. 「**[!UICONTROL インサイト設定]**」カードをクリックします。
 1. ウィザードで、データセンターを選択し、会社名、ユーザー名、共有暗号鍵などの資格情報を指定します。
 
-   ![ のアセットインサイト用に Adobe Analytics を設定する[!DNL Experience Manager]](assets/insights_config2.png)
+   ![[!DNL Experience Manager]](assets/insights_config2.png)のアセットインサイトに Adobe Analytics を設定する
 
-   *図： のアセットインサイト用に Adobe Analytics を設定する[!DNL Experience Manager]*
+   *図：[!DNL Experience Manager]*&#x200B;のアセットインサイトに Adobe Analytics を設定する
 
-1. 「**[!UICONTROL 認証]**」をクリックまたはタップします。[!DNL Experience Manager]が資格情報を認証した後、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトからデータを取得するAdobe Analyticsレポートスイートを選択します。 「**[!UICONTROL 追加]**」をクリックします。
-1. [!DNL Experience Manager]がレポートスイートを設定したら、**[!UICONTROL 「完了]**」をタップします。
+1. 「**[!UICONTROL 認証]**」をクリックまたはタップします。[!DNL Experience Manager] によって資格情報が認証されたら、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータをフェッチする Adobe Analytics レポートスイートを選択します。「**[!UICONTROL 追加]**」をクリックします。
+1. [!DNL Experience Manager] でレポートスイートが設定されたら、「**[!UICONTROL 完了]**」をタップします。
 
 ### ページトラッカー {#page-tracker}
 
-Adobe Analytics アカウントを設定すると、ページトラッカーコードが生成されます。サードパーティWebサイトで使用される[!DNL Experience Manager]アセットを追跡するためにアセットインサイトを有効にするには、Webサイトコードにページトラッカーコードを含めます。  Assets のページトラッカーユーティリティを使用してページトラッカーコードを生成してください。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+Adobe Analytics アカウントを設定すると、ページトラッカーコードが生成されます。サードパーティの Web サイトで使用されている [!DNL Experience Manager] アセットをアセットインサイトで追跡できるようにするには、Web サイトコードにトラッカーコードを組み込みます。Assets のページトラッカーユーティリティを使用してページトラッカーコードを生成してください。<!--  For more information on how to include your Page Tracker code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
-1. [!DNL Experience Manager]で、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**&#x200B;をクリックします。
+1. [!DNL Experience Manager] で&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL アセット]**&#x200B;をクリックします。
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
