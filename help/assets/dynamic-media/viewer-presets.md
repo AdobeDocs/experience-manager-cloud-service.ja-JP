@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media ビューアプリセットの適用
-description: Dynamic Media でのビューアプリセットの適用方法について説明します。。
+description: Dynamic Media でのビューアプリセットの適用方法について説明します。
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 [ビューアプリセットの公開](managing-viewer-presets.md#publishing-viewer-presets)も参照してください。
 
-使用しているパブリッシュモードによっては、ビューアプリセットを公開する必要がない場合があります。ビューアプリセットに関する問題は、[Dynamic Mediaのトラブルシューティング](troubleshoot-dm.md#viewers)を参照してください。
+使用しているパブリッシュモードによっては、ビューアプリセットを公開する必要がない場合があります。ビューアプリセットで問題が発生した場合は、[Dynamic Media のトラブルシューティング](troubleshoot-dm.md#viewers)を参照してください。
 
 ## アセットへの Dynamic Media ビューアプリセットの適用 {#applying-a-viewer-preset-to-an-asset}
 
