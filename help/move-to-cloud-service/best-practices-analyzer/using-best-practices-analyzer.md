@@ -1,42 +1,40 @@
 ---
-title: ベストプラクティスアナライザの使用
-description: ベストプラクティスアナライザの使用
+title: ベストプラクティスアナライザーの使用
+description: ベストプラクティスアナライザーの使用
 translation-type: tm+mt
 source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
 workflow-type: tm+mt
 source-wordcount: '2362'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 
-# ベストプラクティスアナライザの使用{#using-best-practices-analyzer}
+# ベストプラクティスアナライザーの使用 {#using-best-practices-analyzer}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
->title="ベストプラクティスアナライザの使用"
->abstract="ベストプラクティスアナライザー（旧称Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。 ベストプラクティスアナライザレポートは、アップグレードの準備状況に関する一般的な概要を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>title="ベストプラクティスアナライザーの使用"
+>abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
+>additional-url=""
 
-## ベストプラクティスアナライザを使用する際の重要な考慮事項{#imp-considerations}
+## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
-次の節に従って、ベストプラクティスアナライザー(BPA)を実行する際の重要な考慮事項を理解してください。
+ベストプラクティスアナライザー（BPA）を実行するには、次の重要事項を考慮してください。
 
-* BPAレポートは、Adobe Experience Manager(AEM) [パターンディテクター](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/upgrading/pattern-detector.translate.html)の出力を使用して作成されます。 BPAで使用されるパターンディテクターのバージョンは、BPAインストールパッケージに含まれています。
+* BPA レポートは、Adobe Experience Manager（AEM）[パターン検出](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/upgrading/pattern-detector.translate.html)の出力を使用して作成されます。BPA で使用するパターン検出のバージョンは、BPA インストールパッケージに含まれています。
 
-* BPAは、**admin**&#x200B;ユーザー、または&#x200B;**administrators**&#x200B;グループのユーザーのみが実行できます。
+* BPA は、**管理者**&#x200B;ユーザーまたは&#x200B;**管理者**&#x200B;グループのユーザーのみが実行できます。
 
-* BPAは、バージョン6.1以降を使用するAEMインスタンスでサポートされます。
+* BPA は、バージョン 6.1 以降の AEM インスタンスでサポートされます。
 
-   >[!NOTE]
-AEM 6.1にBPAをインストールするための特別な要件 [については、「AEM 6.1](#installing-on-aem61) へのインストール」を参照してください。
+   >[!NOTE]AEM 6.1 に BPA をインストールするための特別な要件については、「[AEM 6.1 へのインストール](#installing-on-aem61)」を参照してください。
 
-* BPAは任意の環境で実行できますが、*ステージ*&#x200B;環境で実行することをお勧めします。
+* BPA はどの環境でも実行できますが、*ステージング*&#x200B;環境で実行することをお勧めします。
 
-   >[!NOTE]
-ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、 ** 実稼働環境にできる限り近い ** 認証環境でBPAを実行することをお勧めします。または、実稼動版の&#x200B;*オーサー*&#x200B;環境のクローンで実行することもできます。
+   >[!NOTE]ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、*実稼動*&#x200B;環境にできる限り近い&#x200B;*オーサー*&#x200B;環境で BPA を実行することをお勧めします。または、実稼動版の&#x200B;*オーサー*&#x200B;環境のクローンで実行することもできます。
 
-* BPAレポートのコンテンツの生成には、数分から数時間の間に相当な時間がかかる場合があります。 必要な時間は、AEM リポジトリコンテンツのサイズと特性、AEM バージョン、その他の要因に大きく左右されます。
+* BPA レポートのコンテンツの生成には、数分から数時間まで、相当な時間がかかる場合があります。必要な時間は、AEM リポジトリーコンテンツのサイズと特性、AEM バージョン、その他の要因に大きく左右されます。
 
 * レポートのコンテンツの生成に非常に時間がかかる場合があるため、コンテンツはバックグラウンドプロセスで生成され、キャッシュに保持されます。レポートの表示とダウンロードは、期限が切れるか、レポートが明示的に更新されるまでコンテンツキャッシュを利用するので、比較的高速でおこなわれます。レポートコンテンツの生成中にブラウザータブを閉じても、キャッシュでレポートのコンテンツが使用可能になったら戻って表示できます。
 
@@ -45,33 +43,33 @@ AEM 6.1にBPAをインストールするための特別な要件 [について�
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_download"
 title="ベストプラクティスアナライザーのダウンロード"
-abstract="Best Practices Analyzerは、Software Distribution Portalからzipファイルとしてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。"
+abstract="ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。"
 
-Best Practices Analyzerは、Software Distribution Portalからzipファイルとしてダウンロードできます。 パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
+ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
-Best Practices Analyzerは、 [Software ](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html) Distribution Portalからダウンロードします。
+[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
 
-## ベストプラクティスアナライザーレポートの表示{#viewing-report}
+## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 以降 {#aem-later-versions}
 
-ベストプラクティスアナライザレポートの表示方法を学ぶには、次のセクションに従います。
+ベストプラクティスアナライザーレポートを表示するには、次のようにします。
 
-1. Adobe Experience Managerを選択し、ツール> **操作** -> **ベストプラクティスアナライザ**&#x200B;に移動します。
+1. Adobe Experience Manager を選択し、ツール／**操作**／**ベストプラクティスアナライザー**&#x200B;に移動します。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
 
-1. [**レポートの生成**]をクリックして、ベストプラクティスアナライザを実行します。
+1. 「**レポートの生成**」をクリックして、ベストプラクティスアナライザーを実行します。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. BPAがレポートを生成中に、ツールが行った進行状況を画面で確認できます。 分析された項目の数と、見つかった結果の数が表示されます。
+1. BPA がレポートを生成している間は、ツールの進行状況を画面で確認できます。分析された項目の数と、見つかった結果の数が表示されます。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
 
 
-1. BPAレポートが生成されると、検索の種類と重要度のレベル別に整理された表形式で、結果の概要と数が表示されます。 特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
+1. BPA レポートが生成されると、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
 
@@ -83,8 +81,7 @@ Best Practices Analyzerは、 [Software ](https://experience.adobe.com/#/downloa
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-BPAでキャッシュを消去し、「レポートの **更新**」をクリックしてレポートを再生成するように強制できます。
+   >[!NOTE]BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -95,21 +92,21 @@ BPAでキャッシュを消去し、「レポートの **更新**」をクリッ
 
 ### Adobe Experience Manager 6.2 および 6.1 {#aem-specific-versions}
 
-ベストプラクティスアナライザツールは、Adobe Experience Manager6.2ではCSVレポートを生成およびダウンロードするリンクに限定されています。
+Adobe Experience Manager 6.2 では、ベストプラクティスアナライザーツールの CSV レポートを生成およびダウンロードするリンクのみに制限されています。
 
 Adobe Experience Manager 6.1 では、このツールは機能せず、HTTP インターフェイスのみを使用できます。
 
 >[!NOTE]すべてのバージョンで、付属のパターン検出は独立して実行できます。
 
-## ベストプラクティスアナライザレポートの解釈{#cra-report}
+## ベストプラクティスアナライザーレポートの説明 {#cra-report}
 
 [!CONTEXTUALHELP]
 id="aemcloud_bpa_interpreting"
-title="ベストプラクティスアナライザーレポートの解釈"
-abstract="BPAレポート出力を表示する場合は、次の2つの方法があります。UIとCSV。 ベストプラクティスアナライザツールをAEMインスタンスで実行すると、UIレポートが結果としてツールウィンドウに表示されます。 レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=en" text="ベストプラクティスアナライザーレポートのカテゴリについて"
+title="ベストプラクティスアナライザーレポートの説明"
+abstract="BPA レポート出力は UI と CSV の 2 つのオプションで表示できます。ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果として UI レポートがツールウィンドウに表示されます。レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja" text="ベストプラクティスアナライザーレポートのカテゴリについて"
 
-ベストプラクティスアナライザツールをAEMインスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
+ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
 
 レポートの形式は次のとおりです。
 
@@ -118,12 +115,12 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
    * **有効期限**：レポートコンテンツのキャッシュが期限切れになる時期。
    * **生成期間**：レポートコンテンツ生成プロセスに費やされた時間。
    * **結果数**：レポートに含まれる結果の合計数。
-* **システム概要**:BPAが実行されたAEMシステムに関する情報です。
+* **システム概要**：BPA が実行された AEM システムに関する情報です。
 * **発見カテゴリ**：各セクションが同じカテゴリの 1 つ以上の発見に対応する複数セクション。各セクションには次の内容が含まれます。カテゴリ名、サブタイプ、発見数と重要度、概要、カテゴリドキュメントへのリンク、個々の発見情報。
 
 アクションの大まかな優先度を示すために、各発見に重要度レベルが割り当てられます。
 
->[!NOTE]各結果カテゴリの詳細については、「[パターンディテクターカテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)」を参照してください。
+>[!NOTE]各結果カテゴリの詳細については、「[パターンディテクターカテゴリ](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja)」を参照してください。
 
 次の表に、重要度レベルを示します。
 
@@ -135,9 +132,9 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 | CRITICAL | アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
 
 
-## ベストプラクティスアナライザーのCSVレポートの解釈{#cra-csv-report}
+## ベストプラクティスアナライザーの CSV レポートの説明 {#cra-csv-report}
 
-AEMインスタンスから&#x200B;**CSV**&#x200B;オプションをクリックすると、ベストプラクティスアナライザーレポートのCSV形式がコンテンツキャッシュから作成され、ブラウザーに返されます。 ブラウザーの設定に応じて、このレポートは、デフォルト名が `results.csv` のファイルとして自動的にダウンロードされます。
+AEM インスタンスから「**CSV**」オプションをクリックすると、ベストプラクティスアナライザーレポートが CSV 形式でコンテンツキャッシュから作成され、ブラウザーに返されます。ブラウザーの設定に応じて、このレポートは、デフォルト名が `results.csv` のファイルとして自動的にダウンロードされます。
 
 キャッシュの有効期限が切れた場合は、CSV ファイルを作成してダウンロードする前にレポートが再生成されます。
 
@@ -159,9 +156,9 @@ CSV 形式レポートの列は次のとおりです。
 
 ## HTTP インターフェイス {#http-interface}
 
-BPAは、AEM内でユーザーインターフェイスの代替として使用できるHTTPインターフェイスを提供します。 このインタフェースは、HEAD コマンドと GET コマンドの両方をサポートしています。BPAレポートを生成し、次の3つの形式のいずれかで返す場合に使用します。JSON、CSV、タブ区切り値(TSV)。
+BPA は HTTP インターフェイスを提供し、AEM 内でのユーザーインターフェイスの代替として使用できます。このインタフェースは、HEAD コマンドと GET コマンドの両方をサポートしています。BPA レポートを生成し、JSON、CSV、タブ区切り値（TSV）の 3 つの形式のいずれかで返す場合に使用します。
 
-BPAがインストールされているサーバーのHTTPアクセスには、次のURLを使用できます。`<host>`は、必要に応じて、ホスト名とポートです。
+BPA がインストールされているサーバーの HTTP アクセスには、次の URL を使用できます。`<host>` は、ホスト名と必要に応じてポートを示します。
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` JSON 形式の場合
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` CSV 形式の場合
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` TSV 形式の場合
@@ -198,7 +195,7 @@ HTTP ヘッダーと対応するクエリパラメーターの両方が存在す
 HTTP インターフェイスを使用してレポートの生成を開始する簡単な方法は、次のコマンドを使用することです。
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`
 
-リクエストがおこなわれた後、クライアントはレポートを生成するのにアクティブである必要はありません。HTTPGET要求を使用して1つのクライアントでレポートの生成を開始し、レポートが生成されたら、別のクライアントまたはAEMユーザーインターフェイスのBPAツールを使用してキャッシュから表示できます。
+リクエストがおこなわれた後、クライアントはレポートを生成するのにアクティブである必要はありません。HTTP GET リクエストを使用して 1 つのクライアントでレポートの生成を開始し、レポートが生成された後は、別のクライアントのキャッシュや、 AEM ユーザーインターフェイスの BPA ツールから表示できます。
 
 ### 応答 {#http-responses}
 
@@ -215,18 +212,18 @@ HTTP インターフェイスを使用してレポートの生成を開始する
 
 ### キャッシュ有効期間の調整 {#cache-adjustment}
 
-デフォルトのBPAキャッシュの有効期間は24時間です。 レポートを更新し、キャッシュを再生成するオプションを使用する場合、AEMインスタンスとHTTPインターフェイスの両方で、このデフォルト値は、ほとんどのBPAの使用に適していると考えられます。 AEM インスタンスに対してレポート生成時間が特に長い場合は、レポートの再生成を最小限に抑えるためにキャッシュの有効期間を調整することをお勧めします。
+BPA キャッシュのデフォルトの有効期間は 24 時間です。レポートを更新し、キャッシュを再生成するオプションを使用する場合、AEM インスタンスと HTTP インターフェイスの両方で、このデフォルト値は BPA のほとんどの用途に適しています。AEM インスタンスに対してレポート生成時間が特に長い場合は、レポートの再生成を最小限に抑えるためにキャッシュの有効期間を調整することをお勧めします。
 
-キャッシュのライフタイム値は、次のリポジトリノードの `maxCacheAge` プロパティとして保存されます。`/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
+キャッシュのライフタイム値は、次のリポジトリーノードの `maxCacheAge` プロパティとして保存されます。`/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
 
 このプロパティの値は、キャッシュの有効期間（秒）です。管理者は、CRX／DE Lite を使用してキャッシュの有効期間を調整できます。
 
 ### AEM 6.1 へのインストール {#installing-on-aem61}
 
-BPAは、`repository-reader-service`という名前のシステムサービスユーザーアカウントを使用して、パターン検出器を実行します。 このアカウントは、AEM 6.2 以降で使用できます。AEM 6.1では、次の手順を実行して、BPAの&#x200B;*インストールの前に*&#x200B;アカウントを作成する必要があります。
+BPA は、パターンディテクターの実行に `repository-reader-service` と名付けられたシステムサービスユーザーアカウントを使用します。このアカウントは、AEM 6.2 以降で使用できます。AEM 6.1 では、BPA をインストールする&#x200B;*前に*、次の手順でこのアカウントを作成する必要があります。
 
 1. [新しいサービスユーザーの作成](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/security/security-service-users.translate.html#creating-a-new-service-user)の手順に従って、ユーザーを作成します。UserID を `repository-reader-service` に設定し、中間パスを空のままにして、緑のチェックマークをクリックします。
 
 2. [ユーザーとグループの管理の手順](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/security/security.translate.html#managing-users-and-groups)に従います。特に、`repository-reader-service` ユーザーを `administrators` グループに追加する手順については、ユーザーをグループに追加の手順を参照してください。
 
-3. Package Managerを使用して、BPAパッケージをソースAEMインスタンスにインストールします。 （これにより、`repository-reader-service` システムサービスユーザーの ServiceUserMapper 構成に必要な構成の修正が追加されます）
+3. パッケージマネージャーを介して BPA パッケージをソース AEM インスタンスにインストールします。（これにより、`repository-reader-service` システムサービスユーザーの ServiceUserMapper 構成に必要な構成の修正が追加されます）
