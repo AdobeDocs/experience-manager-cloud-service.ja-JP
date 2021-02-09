@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# SPA およびサーバーサイドレンダリング{#spa-and-server-side-rendering}
+# SPA およびサーバーサイドレンダリング {#spa-and-server-side-rendering}
 
 単一ページアプリケーション（SPA）では、使い慣れたネイティブアプリケーションと同様に反応して動作するリッチで動的なエクスペリエンスを提供できます。[これは、コンテンツを事前に読み込こんでからユーザーとのやり取りを処理するという負荷のかかる作業をクライアントにまかせることで](introduction.md#how-does-a-spa-work)、クライアントとサーバーの間で必要な通信量を最小限に抑え、アプリケーションの反応を良くすることで達成できます。
 
@@ -83,7 +83,7 @@ SSR を使用する場合、AEM にある SPA の[コンポーネントインタ
 
 ![SSE CMS 駆動の AEM Adobe I/O](assets/ssr-cms-drivenaemnode-adobeio.png)
 
-## Adobe I/O Runtime 主導の通信フロー{#adobe-i-o-runtime-driven-communication-flow}
+## Adobe I/O Runtime 主導の通信フロー {#adobe-i-o-runtime-driven-communication-flow}
 
 前の節では、AEM がブートストラップとコンテンツの提供おこなう場合に、AEM の SPA に関するサーバーサイドレンダリングの標準および推奨の実装について説明しました。
 
