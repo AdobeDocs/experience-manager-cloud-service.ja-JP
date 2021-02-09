@@ -1,16 +1,16 @@
 ---
 title: キャッシュとパフォーマンス
-description: GraphQLとコンテンツのキャッシュを有効にしてコマース実装のパフォーマンスを最適化するために利用できる様々な設定について説明します。
+description: GraphQL とコンテンツキャッシュを有効にしてコマース実装のパフォーマンス最適化に利用できる様々な設定について説明します。
 translation-type: tm+mt
 source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
 workflow-type: tm+mt
 source-wordcount: '848'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# キャッシュとパフォーマンス{#caching}
+# キャッシュとパフォーマンス {#caching}
 
 ## コンポーネントおよび GraphQL の応答キャッシュ {#graphql}
 
