@@ -1,16 +1,16 @@
 ---
 title: 3D アセットのプレビュー
-description: 3D アセットのプレビュー方法について説明します。 dynamic mediaで
+description: Dynamic Media の 3D アセットのプレビュー方法について説明します。
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# AEM での 3D アセットのプレビュー{#previewing-3d-assets}
+# AEM での 3D アセットのプレビュー {#previewing-3d-assets}
 
 Adobe Experience Manager では、オーサリングプロセスの一環として、3D アセットのアップロード、配信、インタラクティブプレビューをサポートしています。
 
@@ -40,7 +40,7 @@ AEM のインタラクティブ 3D プレビューでは、次のファイル形
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## AEM で 3D アセットをプレビューする際のパフォーマンスに関する考慮事項{#performance-3d-previewing-assets}
+## AEM で 3D アセットをプレビューする際のパフォーマンスに関する考慮事項 {#performance-3d-previewing-assets}
 
 アセットの詳細表示ページで 3D アセットを開くときにかかる時間は、帯域幅、画像の複雑さ、サーバーの待ち時間など、いくつかの要因によって異なります。
 
