@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a02e035a842e7c633aaa926d0ab092b2c7aed5cb
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   グローバルキャッシュコントロールヘッダーや、広い範囲に一致するヘッダーを設定して、非公開にするコンテンツに適用されないようにする場合は、注意が必要です。 複数のディレクティブを使用して、ルールをきめ細かく適用することを検討します。 しかし、AEMをCloud Serviceとして使用すると、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合に、キャッシュヘッダーが削除されます。 AEMで常にキャッシュを適用するように強制するには、次のように「always」オプションを追加します。
+   グローバルキャッシュコントロールヘッダーや、広い範囲の正規表現に一致するヘッダーを設定する場合は、非公開にするコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。ただし、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合、AEM as a Cloud Service によってキャッシュヘッダーが削除されます。AEM で常にキャッシュを適用するように強制するには、次のように「always」オプションを追加します。
 
    ```
    <LocationMatch "\.(html)$">
@@ -56,7 +56,7 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 特定のコンテンツがキャッシュされないようにするには、Cache-Controlヘッダーを&#x200B;*private*&#x200B;に設定します。 例えば、次の例では、**myfolder**&#x200B;という名前のディレクトリのHTMLコンテンツがキャッシュされないようにします。
+* 特定のコンテンツがキャッシュされないようにするには、Cache-Control ヘッダーを「*private*」に設定します。例えば、次の例では、「**myfolder**」という名前のディレクトリ下の html コンテンツがキャッシュされないようにします。
 
    ```
       <LocationMatch "/myfolder/.*\.(html)$">.  // replace with the right regex
@@ -65,7 +65,7 @@ Define DISABLE_DEFAULT_CACHING
    ```
 
    >[!NOTE]
-   >[dispatcher-ttl AEM ACSコモンズプロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)など、他のメソッドは値を正常に上書きしません。
+   >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
@@ -84,9 +84,9 @@ Define DISABLE_DEFAULT_CACHING
       </LocationMatch>
    ```
 
-   キャッシュをあまり広く行わないよう注意し、AEMに「always」オプションを指定して常にキャッシュを適用させる方法については、上記のhtml/textセクションの説明を参照してください。
+   広範囲にキャッシュしすぎないように注意し、AEM に「always」オプションを指定して常にキャッシュを適用させる方法については、上記の html/text セクションの説明を参照してください。
 
-   `src/conf.dispatcher.d/`キャッシュ下のファイルに次の規則（デフォルト設定）があることを確認する必要があります。
+   `src/conf.dispatcher.d/` cache の下のファイルに、次のルール（デフォルト設定）があることを確認する必要があります。
 
    ```
    /0000
@@ -96,7 +96,7 @@ Define DISABLE_DEFAULT_CACHING
    キャッシュせずに非公開にするアセットが、LocationMatch ディレクティブフィルターの一部ではないことを確認します。
 
    >[!NOTE]
-   >[dispatcher-ttl AEM ACSコモンズプロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)など、他のメソッドは値を正常に上書きしません。
+   >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
 
 ### ノードストア内の他のコンテンツファイルタイプ {#other-content}
 
