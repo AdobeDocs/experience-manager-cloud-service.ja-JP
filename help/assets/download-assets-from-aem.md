@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,12 +26,12 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 * [Adobe Experience Manager ユーザーインターフェイス](#download-in-aem)
 * アセットリンク共有ユーザーインターフェイス
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)
+* [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#download-assets)
 
-## [!DNL Experience Manager]インターフェイス{#download-in-aem}を使用したアセットのダウンロード
+## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-in-aem}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。サイズの大きいファイルは非同期でダウンロードされ、ユーザーは、インボックスに届く Adobe Experience Manager 通知で完了を知らされます。詳しくは、[Adobe Experience Manager インボックスについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html)を参照してください。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。サイズの大きいファイルは非同期でダウンロードされ、ユーザーは、インボックスに届く Adobe Experience Manager 通知で完了を知らされます。詳しくは、[Adobe Experience Manager インボックスについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ja)を参照してください。
 
 ![ダウンロード通知](assets/download-notification.png)
 
@@ -86,7 +86,7 @@ Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用す
 
  パブリッシュインスタンスの `Asset Download Servlet` を無効にするには、アセットダウンロード要求をすべてブロックするように Dispatcher 設定を更新します。[!DNL Experience Manager]サーブレットは、OSGi コンソールから手動で直接無効にすることもできます。
 
-1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)に新しいルールを追加します。
+1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring)に新しいルールを追加します。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
