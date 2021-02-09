@@ -1,11 +1,11 @@
 ---
 title: 画質最適化のベストプラクティス
-description: Dynamic Mediaで画像アセットの画質を最適化するために使用できるベストプラクティスを説明します。
+description: Dynamic Media で画像アセットの画質の最適化に使用できるベストプラクティスについて説明します。
 translation-type: tm+mt
 source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
 workflow-type: tm+mt
 source-wordcount: '1475'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
