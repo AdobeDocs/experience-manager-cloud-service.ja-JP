@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -164,7 +164,7 @@ ht-degree: 95%
 新しいフォルダーを作成するには、次のいずれかの方法を使用できます。
 
 * プログラムで自動的に、または CRXDE Lite を使用して作成する
-* [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)の使用
+* [設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)の使用 
 
 ## CRXDE Lite の使用 {#using-crxde-lite}
 
@@ -211,7 +211,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)で、グローバルフォルダーを編集し、このフォルダー内にテンプレートを作成する場合は、**編集可能なテンプレート**&#x200B;オプションをアクティブにできますが、ベストプラクティスは推奨されません。
+>グローバルフォルダーにテンプレートを作成する場合は、[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)でグローバルフォルダーを編集し、「**編集可能なテンプレート**」オプションをオンにします。ただし、これは推奨されるベストプラクティスではありません。
 
 ### ACL とグループ {#acls-and-groups}
 
@@ -314,7 +314,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->`/libs` パス内の設定は一切変更しないでください。これは、`/libs` のコンテンツが AEM の更新によっていつでも上書きされる可能性があるためです。
+>`/libs` パス内のものは一切変更しないでください。これは、`/libs` のコンテンツが AEM の更新によっていつでも上書きされる可能性があるためです。
 
 サイト固有のテンプレートタイプは、以下に相当する場所に保存してください。
 
@@ -478,7 +478,7 @@ GitHub のコード
 
 ページポリシーを使用して、テンプレートまたは作成されるページで、ページ（メインの parsys）の[コンテンツポリシー](#content-policies)を定義できます。
 
-### 使用するテンプレートの有効化と許可  {#enabling-and-allowing-a-template-for-use}
+### 使用するテンプレートの有効化と許可 {#enabling-and-allowing-a-template-for-use}
 
 1. **テンプレートの有効化**
 
