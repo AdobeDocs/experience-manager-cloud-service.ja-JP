@@ -1,24 +1,24 @@
 ---
-title: Cloud Serviceリリース2020.6.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2020.6.0としてのAEMのCloud Managerのリリースノート
+title: AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager のリリースノート
+description: AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager のリリースノート
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Service2020.6.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Adobe Experience Manager as a Cloud Service 2020.6.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.6.0として概要を説明しています。
+このページでは、AEM as a Cloud Service 2020.6.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2020.6.0のリリース日は2020年6月4日です。
+AEM as a Cloud Service 2020.6.0 の Cloud Manager のリリース日は 2020 年 6 月 4 日です。
 
-## 新機能 {#whats-new-cloud-manager}
+## 新情報 {#whats-new-cloud-manager}
 
 * Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
