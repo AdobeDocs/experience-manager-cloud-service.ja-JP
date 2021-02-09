@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: f275b9f8a1c6cbc188e75be435a4efc9394fa140
 workflow-type: tm+mt
 source-wordcount: '565'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_overview"
->title="Cloud Acceleration Managerについて"
->abstract="Cloud Acceleration Managerは、Cloud ServiceとしてAEMに移行するプロセス全体を通して、ユーザー自身の個人ガイドです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="AEM Sites as a Cloud Service の主な変更点"
+>title="Cloud Acceleration Manager について"
+>abstract="Cloud Acceleration Manager は、AEM as a Cloud Service に移行するプロセス全体を通して、ユーザー専用の個人的なガイドとなります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=ja" text="AEM Sites as a Cloud Service の主な変更点"
 
 ## AEM as a Cloud Service に移行するメリット {#benefits-aem-moving-to-aem-guide}
 
