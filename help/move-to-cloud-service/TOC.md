@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 85%
+ht-degree: 95%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 85%
    + [実行](/help/move-to-cloud-service/execution.md)
    + [運用開始後](/help/move-to-cloud-service/post-go-live.md)
 + クラウド移行ツール {#cloud-migration}
-   + ベストプラクティスアナライザ{#best-practices-analyzer}
+   + ベストプラクティスアナライザー {#best-practices-analyzer}
       + [概要](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
-      + [ベストプラクティスアナライザの使用](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
+      + [ベストプラクティスアナライザーの使用](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + コンテンツ転送ツール {#content-transfer-tool}
       + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [ユーザーマッピングツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
@@ -30,7 +30,7 @@ ht-degree: 85%
 + コードリファクタリングツール {#refactoring-tools}
    + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
    + [Repository Modernizer](/help/move-to-cloud-service/refactoring-tools/repo-modernizer.md)
-   + [インデックスコンバータ](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
+   + [インデックスコンバーター](/help/move-to-cloud-service/refactoring-tools/index-converter.md)
    + [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
