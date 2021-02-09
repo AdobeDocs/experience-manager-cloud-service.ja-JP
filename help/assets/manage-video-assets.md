@@ -11,7 +11,7 @@ ht-degree: 80%
 ---
 
 
-# ビデオアセットの管理  {#manage-video-assets}
+# ビデオアセットの管理 {#manage-video-assets}
 
 ビデオ形式は、組織のデジタルアセットの重要な部分です。[!DNL Adobe Experience Manager] は、ビデオアセットの作成後に、ビデオアセットのライフサイクル全体を管理するための充実した機能を提供しています。
 
@@ -32,7 +32,7 @@ ht-degree: 80%
 
 ## 処理プロファイルを使用したトランスコード {#transcode-video}
 
-[!DNL Experience Manager][!DNL Cloud Service] as a では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールも可能です。
+[!DNL Experience Manager] as a [!DNL Cloud Service] では、処理プロファイルを使用して MP4 ビデオファイルの基本的なトランスコードを実行できます。この機能により、アップロードだけでなく、MP4 ビデオファイルのプレビューやスケールも可能です。
 
 ![ビデオトランスコードの処理プロファイルを  [!DNL Experience Manager]](assets/video-processing-profile-for-mp4.png)
 
