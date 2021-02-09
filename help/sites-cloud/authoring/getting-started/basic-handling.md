@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
 workflow-type: tm+mt
 source-wordcount: '2864'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 次に、これらのパネルで使用できるオプションについて説明します。
 
-### ナビゲーションパネル  {#navigation-panel}
+### ナビゲーションパネル {#navigation-panel}
 
 ナビゲーションパネル：
 
@@ -77,7 +77,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ## ツールパネル {#tools-panel}
 
-ツールパネルには、同様のツールコンソールをグループ化した様々なカテゴリを含むサイドパネルがあります。ツールコンソールを使用して、Web サイト、デジタルアセット、およびコンテンツリポジトリのその他の要素の管理に役立つ、数多くの専用ツールおよびコンソールにアクセスできます。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+ツールパネルには、同様のツールコンソールをグループ化した様々なカテゴリを含むサイドパネルがあります。ツールコンソールを使用して、Web サイト、デジタルアセット、およびコンテンツリポジトリーのその他の要素の管理に役立つ、数多くの専用ツールおよびコンソールにアクセスできます。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![ツールパネル](/help/sites-cloud/authoring/assets/tools-panel.png)
 
