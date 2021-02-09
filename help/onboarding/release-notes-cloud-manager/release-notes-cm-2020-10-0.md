@@ -1,22 +1,22 @@
 ---
-title: Cloud Serviceリリース2020.10.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2020.10.0としてのAEMのCloud Managerのリリースノート
+title: AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノート
 translation-type: tm+mt
 source-git-commit: 65752c7c51538de27aa2b21695e8eb6c6695a5f5
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Service2020.10.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Adobe Experience Manager as a Cloud Service 2020.10.0 Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.10.0として概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月1日です。
+AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリース日は 2020 年 10 月 1 日です。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -26,12 +26,12 @@ AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月1�
 
 * 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
 
-* Cloud Managerビルドコンテナで、Java 8またはJava 11を使用したプロジェクトのコンパイルがサポートされるようになりました。 Java 11のサポートは、Mavenツールチェーンシステムによって提供されます。
+* Cloud Manager ビルドコンテナで、Java 8 または Java 11 を使用したプロジェクトのコンパイルがサポートされるようになりました。Java 11 のサポートは、Maven ツールチェーンシステムによって提供されます。
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
-* 概要ページの環境カードには、最大3環境のリストが表示されます。 「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
-詳しくは、[環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)の表示を参照してください。
+* 概要ページの環境カードには、最大 3 環境のリストが表示されます。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
+詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
 
 
 ### バグ修正 {#bug-fixes-cloud-manager}
@@ -40,7 +40,7 @@ AEMのCloud ManagerのCloud Service2020.10.0のリリース日は2020年10月1�
 
 * Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示していませんでした。
 
-* 非実稼働パイプライン編集ページの「キャンセル」ボタンと「保存」ボタンが必ずしも表示されていなかった問題を修正しました。
+* 非実稼動パイプライン編集ページの「キャンセル」ボタンおよび「保存」ボタンが常には表示されていませんでした。
 
 * コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
 
