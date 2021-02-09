@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media アセットの公開
-description: Dynamic Mediaアセットの公開方法を説明します。
+description: Dynamic Media アセットの公開方法を学習します。
 contentOwner: Rick Brough
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '469'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Dynamic Media アセットを公開するには、既にアップロード済み
 
 一連のアセットを公開する方法について詳しくは、[アセットの公開](/help/assets/manage-digital-assets.md)を参照してください。
 
-## Dynamic Media アセットの HTTP/2 配信  {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
 
 AEM は現在、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートしています。つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
