@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
 workflow-type: tm+mt
 source-wordcount: '5348'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# ターゲットモードを使用したターゲットコンテンツのオーサリング  {#authoring-targeted-content-using-targeting-mode}
+# ターゲットモードを使用したターゲットコンテンツのオーサリング {#authoring-targeted-content-using-targeting-mode}
 
 AEM のターゲットモードを使用してターゲットコンテンツをオーサリングします。ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。次のことができます。
 
@@ -174,7 +174,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 エクスペリエンスを追加するには：
 
-1. エクスペリエンスを追加するには、**オーディエンス**&#x200B;ウィンドウの既存のエクスペリエンスの下に表示される&#x200B;**+** **追加エクスペリエンスのターゲット設定**&#x200B;をクリックまたはタップします。
+1. エクスペリエンスを追加するには、**オーディエンス**&#x200B;ウィンドウで既存のエクスペリエンスの下に表示される「**+** エクスペリエンスターゲット設定を追加」をクリックまたはタップします&#x200B;**。**
 1. オーディエンスを選択します。デフォルトでは、オーディエンス名はエクスペリエンス名になります。必要に応じて、別の名前を入力できます。「**OK**」をクリックまたはタップします。
 
 #### ターゲットモードを使用したエクスペリエンスの削除  {#removing-experiences-using-targeting-mode}
@@ -388,7 +388,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 [ターゲット設定プロセス](#the-targeting-process-create-target-and-goals-settings)のターゲットステップでは、作成ステップで使用したエクスペリエンスとオーディエンスをマッピングします。ターゲットページには、各エクスペリエンスのターゲットとなるオーディエンスが表示されます。各エクスペリエンスのオーディエンスを指定または変更できます。Adobe Target を使用する場合は、A/B テストを作成して、オーディエンスの一定割合のトラフィックを特定のエクスペリエンスにターゲット設定することもできます。
 
-### AEMターゲット設定またはAdobe Target（エクスペリエンスのターゲット設定）を使用している場合{#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### AEM ターゲティングまたは Adobe Target（エクスペリエンスターゲティング）を使用する場合 {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 マッピング図の左側にオーディエンスが、右側にエクスペリエンスが表示されます。
 
@@ -402,7 +402,7 @@ AEM または Adobe Target をターゲティングエンジンとして使用�
 
 ![警告アイコン](../assets/targeted-warn.png)
 
-### エクスペリエンスとオーディエンスの関連付け（AEM または Adobe Target）{#associating-experiences-with-audiences-aem-or-adobe-target}
+### エクスペリエンスとオーディエンスの関連付け（AEM または Adobe Target） {#associating-experiences-with-audiences-aem-or-adobe-target}
 
 AEM ターゲティング（または Adobe Target エクスペリエンスターゲット設定）を使用する場合は、以下の手順を使用してエクスペリエンスとオーディエンスを関連付けます。
 
@@ -410,7 +410,7 @@ AEM ターゲティング（または Adobe Target エクスペリエンスタ�
 1. （オプション）「**編集**」をクリックまたはタップし、キーワードを入力して目的のセグメントを検索します。
 1. オーディエンスのリストからオーディエンスを選択し、「**OK**」をクリックまたはタップします。
 
-### A/Bテスト(Adobe Target)を使用している場合{#if-you-are-using-a-b-testing-adobe-target}
+### A/B テストを使用する場合（Adobe Target） {#if-you-are-using-a-b-testing-adobe-target}
 
 A/B テストアクティビティがある場合は、オーディエンスが左側に、各エクスペリエンスを表示する割合が中央に、エクスペリエンスが右側に表示されます。
 
