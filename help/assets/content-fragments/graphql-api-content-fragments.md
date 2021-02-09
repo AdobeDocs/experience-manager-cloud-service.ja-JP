@@ -1,38 +1,38 @@
 ---
-title: AEM GraphQL API（コンテンツフラグメントで使用）
-description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、AEM GraphQL API for Headless Content配信とのCloud Serviceとして使用する方法を説明します。
+title: コンテンツフラグメントと共に使用する AEM GraphQL API
+description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
 source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
 workflow-type: tm+mt
 source-wordcount: '3192'
-ht-degree: 1%
+ht-degree: 71%
 
 ---
 
 
-# AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
+# コンテンツフラグメントと共に使用する AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
 
-Cloud Service(AEM) GraphQL APIとしてのAdobe Experience Managerは、コンテンツフラグメントと共に使用される標準のオープンソースのGraphQL APIに大きく基づいています。
+コンテンツフラグメントと共に使用される Adobe Experience Manager（AEM）as a Cloud Service GraphQL API は、オープンソースの標準 GraphQL API に大きく依存しています。
 
-AEMでGraphQL APIを使用すると、ヘッドレスCMS実装のJavaScriptクライアントに対して、コンテンツフラグメントを効率的に配信できます。
+AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScript クライアントにコンテンツフラグメントを効率的に配信できます。
 
-* RESTと同様に、反復的なAPIリクエストの回避、
-* 配信が特定の要件に限定されていることの確認、
+* REST で API リクエストの反復を回避
+* 特定の要件に限定された配信を確保
 * 単一のAPIクエリに対する応答としてレンダリングに必要なものを一括配信できます。
 
 ## GraphQL API {#graphql-api}
 
-GraphQLは次のようになります。
+GraphQL とは次のことを意味します。
 
-* &quot;*...APIのクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。 GraphQLは、APIのデータの完全で理解可能な説明を提供し、クライアントに何が必要で何も必要でないかを正確に尋ねる力を与え、APIの時間の経過と共に発展させ、強力な開発ツールを有効にします。*&quot;
+* 「*...API のクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。GraphQL は、API のデータの完全で理解可能な説明を提供し、必要なものを正確に要求する力をクライアントに与え、API の長期的な発展を促し、強力な開発ツールの実現を可能にします。*」
 
-   [GraphQL.org](https://graphql.org)を参照
+   [GraphQL.org](https://graphql.org) を参照
 
-* &quot;*...柔軟なAPIレイヤー用にオープンな仕様。 GraphQLを既存のバックエンドに重ね合わせて、以前に比べて迅速に製品を構築….*&quot;.
+* 「*...柔軟な API レイヤー用のオープンな仕様。GraphQL を既存のバックエンドに重ね合わせて、以前に比べて迅速に製品を構築…。*」
 
-   「[GraphQLの探索](https://www.graphql.com)」を参照してください。
+   「[Explore GraphQL](https://www.graphql.com)」を参照
 
-* *&quot;...2012年にFacebookが内部で開発したデータクエリ言語および仕様。2015年には公開される。開発者の生産性を高め、転送されるデータ量を最小限に抑える目的で、RESTベースのアーキテクチャに代わる手段を提供します。 GraphQLは、数百の組織が実稼働環境で使用しています。*
+* *&quot;...2012年にFacebookが内部で開発したデータクエリ言語および仕様。2015年には公開される。開発者の生産性を高め、転送データの量を最小限に抑えるために、REST ベースのアーキテクチャに代わる手段を提供します。GraphQLは、数百の組織が実稼働環境で使用しています。*
 
    [GraphQL Foundation](https://foundation.graphql.org/)を参照してください。
 
@@ -40,15 +40,15 @@ GraphQLは次のようになります。
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
 -->
 
-GraphQL APIの詳細については、以下の節を参照してください（その他多くのリソース）。
+GraphQL API の詳細については、（多くのリソースの中でも特に）以下を参照してください。
 
-* [graphql.org](https://graphql.org):
+* [graphql.org](https://graphql.org)：
 
-   * [GraphQLの概要](https://graphql.org/learn)
+   * [GraphQL の概要](https://graphql.org/learn)
 
-   * [GraphQL仕様](http://spec.graphql.org/)
+   * [GraphQL の仕様](http://spec.graphql.org/)
 
-* [graphql.com](https://graphql.com):
+* [graphql.com](https://graphql.com)：
 
    * [ガイド](https://www.graphql.com/guides/)
 
@@ -56,15 +56,15 @@ GraphQL APIの詳細については、以下の節を参照してください（
 
    * [導入事例](https://www.graphql.com/case-studies/)
 
-AEM向けのGraphQLの実装は、標準のGraphQL Javaライブラリに基づいています。 次のページを参照してください。
+AEM 用 GraphQL の実装は、標準の GraphQL Java ライブラリをベースにしています。以下を参照してください。
 
 * [graphQL.org - Java](https://graphql.org/code/#java)
 
-* [GraphQL Java at GitHub](https://github.com/graphql-java)
+* [GitHub の GraphQL Java](https://github.com/graphql-java)
 
-### GraphQLの用語{#graphql-terminology}
+### GraphQL 用語 {#graphql-terminology}
 
-GraphQLでは次を使用します。
+GraphQL では次を使用します。
 
 * **[クエリ](https://graphql.org/learn/queries/)**
 
@@ -80,9 +80,9 @@ GraphQLでは次を使用します。
 
    * 詳しくは、[GraphQLエンドポイントの有効化](#enabling-graphql-endpoint)を参照してください。
 
-[ベストプラクティス](https://graphql.org/learn/best-practices/)を含む包括的な詳細については、[(GraphQL.org)「GraphQL](https://graphql.org/learn/)の概要」を参照してください。
+[ベストプラクティス](https://graphql.org/learn/best-practices/)を含む包括的な詳細については、「[(GraphQL.org) GraphQL の概要](https://graphql.org/learn/)」を参照してください。
 
-### GraphQLクエリタイプ{#graphql-query-types}
+### GraphQL クエリタイプ {#graphql-query-types}
 
 GraphQLを使用すると、次のいずれかを返すクエリを実行できます。
 
@@ -96,11 +96,11 @@ GraphQLを使用すると、次のいずれかを返すクエリを実行でき�
 
 ## AEMエンドポイント用のGraphQL {#graphql-aem-endpoint}
 
-エンドポイントは、AEM用のGraphQLへのアクセスに使用するパスです。 このパスを使用すると、次のことができます。
+エンドポイントは、AEM 用 GraphQL へのアクセスに使用するパスです。このパスを使用すると、以下が可能になります。
 
-* GraphQLスキーマにアクセスする、
-* GraphQLクエリの送信、
-* (GraphQLクエリに対する)応答を受け取ります。
+* GraphQL スキーマへのアクセス
+* GraphQL クエリの送信
+* （GraphQL クエリに対する）応答の受信
 
 AEMエンドポイント用のGraphQLのリポジトリパスは次のとおりです。
 
@@ -196,7 +196,7 @@ GraphQLエンドポイントの設定を簡単にするために、Adobeは[Grap
 
 必要な設定を手動で作成したい場合は、Adobeから専用の[GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)も提供されます。 このコンテンツパッケージには、GraphQLエンドポイントのみが含まれ、設定は含まれません。
 
-## GraphicQL Interface {#graphiql-interface}
+## GraphicQL インターフェイス {#graphiql-interface}
 
 <!--
 AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
@@ -206,13 +206,13 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 
 このインターフェイスを使用すると、クエリを直接入力およびテストできます。
 
-次に例を示します。
+例えば、次のようなものです。
 
 * `http://localhost:4502/content/graphiql.html`
 
-構文の強調表示、オートコンプリート、オートコンプリートなどの機能と、履歴およびオンラインドキュメントが提供されます。
+構文のハイライト表示機能、オートコンプリート、自動候補表示などの機能と共に、履歴およびオンラインドキュメントが提供されています。
 
-![GraphicQL ](assets/cfm-graphiql-interface.png "InterfaceGraphiQLインタフェース")
+![GraphicQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
 ### AEM GraphicQLインターフェイスのインストール{#installing-graphiql-interface}
 
@@ -220,27 +220,27 @@ GraphiQLユーザーインターフェイスは、専用のパッケージを使
 
 詳しくは、パッケージ&#x200B;**README**&#x200B;を参照してください。aemインスタンスにインストールする方法の詳細を含む、様々なシナリオに関する詳細。
 
-## 作成および公開環境の使用例{#use-cases-author-publish-environments}
+## オーサー環境とパブリッシュ環境のユースケース {#use-cases-author-publish-environments}
 
-使用例は、Cloud Service環境としてのAEMのタイプに応じて異なります。
+ユースケースは、AEM as a Cloud Service 環境のタイプに応じて異なる場合があります。
 
-* 発行環境;使用目的：
-   * JSアプリケーションのクエリデータ（標準の使用例）
+* パブリッシュ環境の使用目的：
+   * JS アプリケーションのデータのクエリ（標準ユースケース）
 
-* 作成者環境;使用目的：
-   * 「コンテンツ管理目的」のクエリデータ：
-      * AEMのCloud ServiceとしてのGraphQLは、現在読み取り専用APIです。
-      * REST APIはCR(u)D操作に使用できます。
+* オーサー環境の使用目的：
+   * 「コンテンツ管理用」のデータのクエリ：
+      * AEM as a Cloud Service の GraphQL は現在読み取り専用の API です。
+      * CR（U）D 操作には REST API を使用できます。
 
 ## 権限 {#permission}
 
-権限は、アセットへのアクセスに必要な権限です。
+Assets へのアクセスに必要な権限です。
 
-## スキーマ生成{#schema-generation}
+## スキーマ生成 {#schema-generation}
 
-GraphQLは、厳密に型指定されたAPIです。つまり、データは型別に明確に構造化、整理する必要があります。
+GraphQL は、厳密に型指定された API です。つまり、データは型別に明確に構造化され編成される必要があります。
 
-GraphQLの仕様には、特定のインスタンスでデータを取り調べる堅牢なAPIを作成する方法に関する一連のガイドラインが記載されています。 これを行うには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が含まれています。
+GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。そのタスクをおこなうには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
 
 コンテンツフラグメントの場合、GraphQLスキーマ（構造と型）は、**有効** [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)とそのデータ型に基づきます。
 
@@ -250,87 +250,87 @@ GraphQLの仕様には、特定のインスタンスでデータを取り調べ�
 >
 >つまり、こうやって漏れ出す可能性があるので、機密データが存在しないことを確認する必要があるのです。たとえば、これにはモデル定義のフィールド名として存在する可能性のある情報が含まれます。
 
-例えば、ユーザーが`Article`という名前のコンテンツフラグメントモデルを作成した場合、AEMは`ArticleModel`型のオブジェクト`article`を生成します。 この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。
+例えば、ユーザーが `Article` という名前のコンテンツフラグメントモデルを作成した場合、AEMは `ArticleModel` 型のオブジェクト `article` を生成します。この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。
 
 1. コンテンツフラグメントモデル：
 
-   ![GraphQLContent Fragment Modelで使用する](assets/cfm-graphqlapi-01.png "GraphQLで使用するコンテンツフラグメントモデル")
+   ![GraphQL で使用するコンテンツフラグメントモデル](assets/cfm-graphqlapi-01.png "GraphQL で使用するコンテンツフラグメントモデル")
 
-1. 対応するGraphQLスキーマ（GraphiQL自動ドキュメントiからの出力）:
-   ![Graphコンテンツフラグメントに基づくGraphQLスキーマ](assets/cfm-graphqlapi-02.png "ModelGraphコンテンツフラグメントモデルに基づくQLスキーマ")
+1. 対応する GraphQLスキーマ（GraphiQL 自動生成ドキュメントからの出力）:
+   ![コンテンツフラグメントモデルに基づく GraphQL スキーマ](assets/cfm-graphqlapi-02.png "コンテンツフラグメントモデルに基づく GraphQL スキーマ")
 
-   これは、生成された型`ArticleModel`に複数の[フィールド](#fields)が含まれていることを示します。
+   この図では、生成された型 `ArticleModel` に複数の[フィールド](#fields)が含まれていることがわかります。
 
-   * そのうちの3つは、ユーザーが制御しています。`author`、`main`、`referencearticle`。
+   * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
 
-   * その他のフィールドはAEMによって自動的に追加され、特定のコンテンツフラグメントに関する情報を提供するのに役立つ方法を示します。この例では、`_path`、`_metadata`、`_variations`です。 これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、前に`_`が付いています。
+   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付いています。
 
-1. ユーザーが記事のモデルに基づいてコンテンツフラグメントを作成した後、GraphQLで調査できます。 例については、[サンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)（GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)で使用する[サンプルコンテンツフラグメント構造に基づく）を参照してください。
+1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)を参照してください。
 
-AEM用のGraphQLでは、スキーマは柔軟です。 つまり、コンテンツフラグメントモデルを作成、更新、または削除するたびに、自動生成されます。 また、データスキーマキャッシュは、コンテンツフラグメントモデルを更新する際にも更新されます。
+AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
 
-Sites GraphQLサービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。 更新が検出されると、スキーマのその部分のみが再生成されます。 この最適化により、時間を節約し、安定性を提供します。
+Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間が節約され、安定性も確保されます。
 
-例えば、次のような場合、
+例えば、次のようになります。
 
-1. `Content-Fragment-Model-1`と`Content-Fragment-Model-2`を含むパッケージをインストールします。
+1. `Content-Fragment-Model-1` と `Content-Fragment-Model-2` を含んだパッケージをインストールすると、
 
-   1. `Model-1`と`Model-2`のGraphQL型が生成されます。
+   1. `Model-1` と `Model-2` の GraphQL 型が生成されます。
 
-1. 次に`Content-Fragment-Model-2`を変更します。
+1. 次に `Content-Fragment-Model-2` を変更すると、
 
-   1. `Model-2` GraphQLタイプのみが更新されます。
+   1. `Model-2` GraphQL 型だけが更新されます。
 
-   1. `Model-1`は同じままです。
+   1. 一方、`Model-1` は同じままです。
 
 >[!NOTE]
 >
->REST apiを使用してコンテンツフラグメントモデルの一括更新を行う場合や、その他の方法で行う場合に備えて、この点に注意してください。
+>REST API を使用してコンテンツフラグメントモデルの一括更新をおこなう場合などには、この点に留意することが大切です。
 
-スキーマは、GraphQLクエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子`GQLschema`で呼び出されたことを処理します。 例えば、`/content/cq:graphql/global/endpoint.GQLschema`で単純な`GET`リクエストを実行すると、Content-typeのスキーマが出力されます。`text/x-graphql-schema;charset=iso-8859-1`。
+スキーマは、GraphQL クエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子 `GQLschema` で呼び出されることに対処します。例えば、`/content/cq:graphql/global/endpoint.GQLschema` で単純な `GET` リクエストを実行すると、`text/x-graphql-schema;charset=iso-8859-1` の Content-type を持つスキーマが出力されます。
 
 ## フィールド {#fields}
 
-スキーマ内には2つの基本的なカテゴリから成る個々のフィールドがあります。
+スキーマ内には、次の 2 つの基本的なカテゴリに属する個々のフィールドがあります。
 
-* 生成するフィールド。
+* ユーザーが生成するフィールド
 
-   選択した[フィールドタイプ](#field-types)は、コンテンツフラグメントモデルの設定方法に基づいてフィールドを作成するために使用されます。 フィールド名は、**データタイプ**&#x200B;の&#x200B;**プロパティ名**&#x200B;フィールドから取得されます。
+   選択された[フィールドタイプ](#field-types)を使用して、コンテンツフラグメントモデルの設定方法に基づいてフィールドが作成されます。フィールド名は、**データタイプ**&#x200B;の「**プロパティ名**」フィールドから取得されます。
 
-   * また、**Render As**&#x200B;プロパティも考慮する必要があります。これは、ユーザーが特定のデータ型を設定できるからです。例えば、1行のテキストや複数フィールドなどです。
+   * また、**レンダリング時の名前**&#x200B;プロパティも考慮する必要があります。ユーザーが特定のデータ型を、例えば、1 行のテキストか複数フィールドのどちらかとして設定できるからです。
 
-* AEM用のGraphQLでも、[ヘルパーフィールド](#helper-fields)が多数生成されます。
+* AEM 用 GraphQL が生成する多数の[ヘルパーフィールド](#helper-fields)
 
-   これらは、コンテンツフラグメントを識別するため、またはコンテンツフラグメントに関する詳細を取得するために使用されます。
+   これらは、コンテンツフラグメントを識別するためや、コンテンツフラグメントに関する詳細を取得するために使用されます。
 
-### フィールドタイプ{#field-types}
+### フィールドタイプ {#field-types}
 
-AEM用のGraphQLは、タイプのリストをサポートしています。 サポートされるすべてのコンテンツフラグメントモデルのデータ型と、対応するGraphQLの型が表されます。
+AEM 用 GraphQL では一連のタイプをサポートしています。サポートされているすべてのコンテンツフラグメントモデルデータ型と、それに対応する GraphQL 型を以下の表に示します。
 
-| コンテンツフラグメントモデル — データタイプ | GraphQL Type | 説明 |
+| コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1 行のテキスト | 文字列， [文字列] |  作成者名、場所名などの単純な文字列に使用します。 |
-| 複数行テキスト | String |  記事の本文などのテキストの出力に使用します。 |
-| 数値 |  浮動小数点， [浮動小数点] | 浮動小数点数と正規数を表示するのに使用します。 |
-| Boolean |  Boolean |  チェックボックスの表示に使用→単純なtrue/false文 |
-| 日時 | カレンダー |  ISO 8086形式で日時を表示するために使用します。 |
-| 列挙 |  String |  モデルの作成時に定義されたオプションのリストからオプションを表示するために使用します。 |
-|  タグ |  [String] |  AEMで使用されるタグを表す文字列のリストを表示するために使用します。 |
-| コンテンツ参照 |  文字列 |  AEMで別のアセットへのパスを表示するために使用します。 |
-| フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します。モデルの作成時に定義されます。 |
+| 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します |
+| 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します |
+| 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
+| ブール値 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
+| 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します |
+| 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
+|  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
+| コンテンツ参照 |  文字列 |  AEM 内の別のアセットへのパスを表示するために使用します |
+| フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
 
-### ヘルパーフィールド{#helper-fields}
+### ヘルパーフィールド {#helper-fields}
 
-ユーザー生成フィールドのデータ型に加えて、AEM用のGraphQLでは、コンテンツフラグメントの識別やコンテンツフラグメントに関する追加情報の提供に役立つために、多数の&#x200B;*ヘルパー*&#x200B;フィールドも生成されます。
+ユーザー生成フィールドのデータ型に加えて、AEM 用 GraphQL では、コンテンツフラグメントの識別やコンテンツフラグメントに関する追加情報の提供に役立つ多数の&#x200B;*ヘルパー*&#x200B;フィールドも生成されます。
 
 #### パス {#path}
 
-パスフィールドは、GraphQLで識別子として使用されます。 これは、AEMリポジトリ内のコンテンツフラグメントアセットのパスを表します。 コンテンツフラグメントの識別子としてこれを選択しました。理由は次のとおりです。
+パスフィールドは、GraphQL で識別子として使用されます。これは、AEM リポジトリー内のコンテンツフラグメントアセットのパスを表します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
 
-* はAEM内で一意です。
-* 簡単に取り込める
+* AEM 内で一意である
+* 取得しやすい
 
-次のコードは、コンテンツフラグメントモデル`Person`に基づいて作成されたすべてのコンテンツフラグメントのパスを表示します。
+次のコードでは、コンテンツフラグメントモデル `Person` に基づいて作成されたすべてのコンテンツフラグメントのパスを表示します。
 
 ```xml
 {
@@ -342,7 +342,7 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 }
 ```
 
-特定の種類のコンテンツフラグメントを1つ取得するには、まずそのパスを決定する必要もあります。 次に例を示します。
+特定のタイプのコンテンツフラグメントを 1 つ取得するには、まずそのパスも決定する必要があります。次に例を示します。
 
 ```xml
 {
@@ -360,9 +360,9 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 
 #### メタデータ {#metadata}
 
-また、AEMはGraphQLを通じて、コンテンツフラグメントのメタデータを公開します。 メタデータは、コンテンツフラグメントのタイトル、サムネールパス、コンテンツフラグメントの説明、作成日など、コンテンツフラグメントを説明する情報です。
+また、AEM では GraphQL を通じて、コンテンツフラグメントのメタデータも公開します。メタデータは、コンテンツフラグメントのタイトル、サムネールパス、コンテンツフラグメントの説明、作成日など、コンテンツフラグメントを説明する情報です。
 
-メタデータはスキーマエディターを通して生成され、特定の構造を持たないので、`TypedMetaData` GraphQL型はコンテンツフラグメントのメタデータを公開するために実装されました。 `TypedMetaData` 次のスカラー型でグループ化された情報を公開します。
+メタデータはスキーマエディターで生成され、特定の構造を持たないので、コンテンツフラグメントのメタデータを公開するために GraphQL 型 `TypedMetaData` が実装されました。`TypedMetaData` では、次のスカラー型でグループ化された情報を公開します。
 
 | フィールド |
 |--- |
@@ -377,11 +377,11 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
-各スカラ型は、名前と値のペアの1つを表すか、名前と値のペアの配列を表します。このペアの値は、グループ化された型の値です。
+各スカラー型は、名前と値の 1 つのペアを表すか、名前と値のペアの配列を表します。このペアの値は、グループ化されたときの型になります。
 
-例えば、コンテンツフラグメントのタイトルを取得する場合、このプロパティがStringプロパティであることがわかっているので、すべての文字列メタデータをクエリします。
+例えば、コンテンツフラグメントのタイトルを取得する場合は、このプロパティが String 型プロパティであることがわかっているので、すべての String 型メタデータをクエリすることになります。
 
-メタデータのクエリを作成するには：
+メタデータをクエリするには、次のようにします。
 
 ```xml
 {
@@ -399,20 +399,20 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 }
 ```
 
-「Generated GraphQL」スキーマを表示する場合は、すべてのメタデータGraphQLタイプを表示できます。 すべてのモデルタイプは同じ`TypedMetaData`を持ちます。
+生成された GraphQL スキーマを表示するには、すべてのメタデータ GraphQL 型を表示します。すべてのモデルタイプは同じ `TypedMetaData` を持ちます。
 
 >[!NOTE]
 >
->**標準と配列のメタデータの違い**
->`StringMetadata`と`StringArrayMetadata`はどちらも、リポジトリに格納されているものを参照し、取得方法ではありません。
+>**標準メタデータと配列メタデータの違い**：
+>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリーに格納されているものについての指定であり、その取得手段についての指定ではありません。
 >
->例えば、`stringMetadata`フィールドを呼び出すと、リポジトリに格納されているすべてのメタデータの配列が`String`として受け取られ、`stringArrayMetadata`を呼び出すと、リポジトリに格納されているすべてのメタデータの配列が`String[]`として受け取られます。
+>例えば、`stringMetadata` フィールドを呼び出すと、リポジトリーに `String` として格納されているすべてのメタデータの配列を受け取ることになります。一方、`stringArrayMetadata` を呼び出すと、リポジトリーに `String[]` として格納されているすべてのメタデータの配列を受け取ります。
 
-詳しくは、[メタデータのサンプルクエリ — 賞のメタデータのリスト(GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb))を参照してください。
+詳しくは、[メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)を参照してください。
 
 #### バリエーション {#variations}
 
-`_variations`フィールドは、コンテンツフラグメントのバリエーションに対するクエリを簡略化するために実装されました。 次に例を示します。
+コンテンツフラグメントのバリエーションに対するクエリを簡略化するために、`_variations` フィールドが実装されています。次に例を示します。
 
 ```xml
 {
@@ -424,19 +424,19 @@ AEM用のGraphQLは、タイプのリストをサポートしています。 サ
 }
 ```
 
-[サンプルクエリ — 名前の付いたバリエーションのあるすべての市区町村](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)を参照してください。
+詳しくは、[サンプルクエリ - 名前付きバリエーションを持つすべての都市](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)を参照してください。
 
 <!--
 ## Security Considerations {#security-considerations}
 -->
 
-## GraphQL変数{#graphql-variables}
+## GraphQL 変数 {#graphql-variables}
 
-GraphQLでは、変数のクエリへの配置が許可されています。 詳しくは、GraphiQL](https://graphql.org/learn/queries/#variables)の[GraphQLドキュメントを参照してください。
+GraphQL では、クエリに変数を含めることができます。詳しくは、](https://graphql.org/learn/queries/#variables)GraphQL の GraphiQL に関するドキュメント[を参照してください。
 
 例えば、特定のバリエーションを持つタイプ`Article`のすべてのコンテンツフラグメントを取得するには、GraphiQLで変数`variation`を指定します。
 
-![GraphQL ](assets/cfm-graphqlapi-03.png "VariablesGraphQL変数")
+![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
 ```xml
 ### query
@@ -455,13 +455,13 @@ query GetArticlesByVariation($variation: String!) {
 }
 ```
 
-## GraphQLディレクティブ{#graphql-directives}
+## GraphQL ディレクティブ {#graphql-directives}
 
-GraphQLでは、GraphQL Directivesと呼ばれる変数に基づいてクエリを変更する可能性があります。
+GraphQL では、GraphQL ディレクティブ と呼ばれる変数に基づいてクエリを変更する可能性があります。
 
-例えば、`adventurePrice`フィールドは、変数`includePrice`に基づいて、すべての`AdventureModels`のクエリに含めることができます。
+例えば、変数 `includePrice` に基づいて、すべての `AdventureModels` のクエリに `adventurePrice` フィールドを含めることができます。
 
-![GraphQL ](assets/cfm-graphqlapi-04.png "DirectivesGraphQLディレクティブ")
+![GraphQL ディレクティブ](assets/cfm-graphqlapi-04.png "GraphQL ディレクティブ")
 
 ```xml
 ### query
@@ -480,11 +480,11 @@ query GetAdventureByType($includePrice: Boolean!) {
 }
 ```
 
-## フィルタ{#filtering}
+## フィルタリング {#filtering}
 
-また、GraphQLクエリでフィルタリングを使用して、特定のデータを返すこともできます。
+GraphQL クエリでフィルタリングを使用して、特定のデータを返すこともできます。
 
-フィルタリングでは、論理演算子と式に基づいた構文を使用します。
+フィルタリングでは、論理演算子と論理式に基づいた構文を使用します。
 
 例えば、次の（基本）クエリフィルターは、`Jobs`または`Smith`の名前を持つすべての人をします。
 
@@ -513,28 +513,28 @@ query {
 
 その他の例は、次を参照してください。
 
-* aem拡張機能の[GraphQLの詳細](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)
+* [AEM 用 GraphQL の拡張機能](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)の詳細
 
-* [このサンプルの内容と構造を使用したクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+* [このサンプルコンテンツおよび構造を使用したサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
    * サンプルクエリで使用するために用意されている[サンプルコンテンツと構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 
-* [WKNDプロジェクトに基づくサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+* [WKND プロジェクトに基づいたサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## 持続的なクエリ（キャッシュ） {#persisted-queries-caching}
+## 永続的クエリ（キャッシュ） {#persisted-queries-caching}
 
-POST要求を使用してクエリを準備した後、HTTPキャッシュまたはCDNでキャッシュできるGET要求を使用して実行できます。
+POST リクエストを使用してクエリを準備した後、HTTP キャッシュまたは CDN でキャッシュできる GET リクエストを使用して、そのクエリを実行できます。
 
-POSTクエリは通常キャッシュされないので、このパラメーターが必要です。クエリをパラメーターとして使用する場合、HTTPサービスや中間体にとってパラメーターが大きくなりすぎるリスクが大きくなります。
+このようにする必要があるのは、POST クエリが通常はキャッシュされないからです。クエリをパラメーターとして GET を使用する場合、HTTP サービスや中間ステップにとってパラメーターが大きくなりすぎるという重大なリスクがあります。
 
-特定のクエリを保持するために必要な手順は次のとおりです。
+特定のクエリを永続化するために必要な手順は次のとおりです。
 
 >[!NOTE]
->これより前に、適切な設定に対して&#x200B;**GraphQL Persistenceクエリ**&#x200B;を有効にする必要があります。 詳しくは、[設定ブラウザーでコンテンツフラグメント機能を有効にする](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
+>その前に、適切な設定に対して「**GraphQL Persistence Queries**」を有効にする必要があります。詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
 
-1. 新しいエンドポイントURL `/graphql/persist.json/<config>/<persisted-label>`にPUTしてクエリを準備します。
+1. 新しいエンドポイント URL `/graphql/persist.json/<config>/<persisted-label>` に PUT してクエリを準備します。
 
-   例えば、持続的なクエリを作成します。
+   例えば、次のようにして、永続的クエリを作成します。
 
    ```xml
    $ curl -X PUT \
@@ -555,9 +555,9 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
    }'
    ```
 
-1. この時点で、応答を確認します。
+1. この段階で、応答を確認します。
 
-   例えば、成功を確認します。
+   例えば、以下が成功するかどうかを確認します。
 
    ```xml
    {
@@ -569,18 +569,18 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
    }
    ```
 
-1. その後、URL `/graphql/execute.json/<shortPath>`をGETすることで、永続化されたクエリを再生できます。
+1. その後、URL `/graphql/execute.json/<shortPath>` を GET して、永続的クエリを再生できます。
 
-   例えば、持続的なクエリを使用します。
+   例えば、次のような永続的クエリを使用します。
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. 永続化されたクエリを既存のクエリパスにPOSTingで更新します。
+1. 既存のクエリパスに POST して、永続的クエリを更新します。
 
-   例えば、持続的なクエリを使用します。
+   例えば、次のような永続的クエリを使用します。
 
    ```xml
    $ curl -X POST \
@@ -617,7 +617,7 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. キャッシュ制御を使用して、ラップされたプレーンクエリを作成します。
+1. キャッシュコントロール付きのラップされたプレーンクエリを作成します。
 
    次に例を示します。
 
@@ -630,7 +630,7 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. 次のパラメーターを使用して、永続化されたクエリを作成します。
+1. パラメーター付きの永続的クエリを作成します。
 
    次に例を示します。
 
@@ -656,7 +656,7 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
      }'
    ```
 
-1. パラメーターを使用したクエリの実行
+1. パラメーター付きのクエリを実行します。
 
    次に例を示します。
 
@@ -670,9 +670,9 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. 発行時にクエリを実行するには、関連する永続的なツリーを複製する必要があります
+1. パブリッシュでクエリを実行するには、関連する永続的ツリーをレプリケートする必要があります。
 
-   * レプリケーションにPOSTを使用する：
+   * レプリケーションに POST を使用する場合：
 
       ```xml
       $curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -681,63 +681,63 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
         -F cmd=activate
       ```
 
-   * パッケージの使用：
+   * パッケージを使用する場合：
       1. 新しいパッケージ定義を作成します。
-      1. 設定を含めます（例：`/conf/wknd/settings/graphql/persistentQueries`）。
+      1. 設定（例：`/conf/wknd/settings/graphql/persistentQueries`）を含めます。
       1. パッケージをビルドします。
-      1. パッケージを複製します。
-   * レプリケーション/配布ツールを使用する。
-      1. [配布]ツールに移動します。
+      1. パッケージをレプリケートします。
+   * レプリケーション／配布ツールを使用する場合：
+      1. 配布ツールに移動します。
       1. 設定のツリーアクティベーション（例：`/conf/wknd/settings/graphql/persistentQueries`）を選択します。
-   * ワークフローの使用（ワークフローランチャーの設定を使用）:
-      1. 異なるイベント（作成、変更など）に設定を複製するワークフローモデルを実行するためのワークフロー起動ルールを定義します。
+   * （ワークフローランチャーの設定を通じて）ワークフローを使用する場合：
+      1. 様々なイベント（例：作成、変更など）で設定をレプリケートするワークフローモデルを実行するためのワークフローランチャールールを定義します。
 
 
 
-1. クエリの設定が公開になると、公開エンドポイントを使用するだけで、同じ原則が適用されます。
-
-   >[!NOTE]
-   >
-   >匿名アクセスの場合、システムは、ACLによって「全員」がクエリ設定へのアクセスを許可されていると想定します。
-   >
-   >そうでないと実行できなくなります。
+1. クエリの設定がいったん公開されると、パブリッシュエンドポイントを使用するだけで、同じ原則が適用されます。
 
    >[!NOTE]
    >
-   >URL内のセミコロン(&quot;;&quot;)は、エンコードする必要があります。
+   >匿名アクセスの場合は、ACL で「全員」にクエリ設定へのアクセスが許可されているとシステムが想定します。
    >
-   >例えば、持続的なクエリを実行する要求の場合と同様に、次のように指定します。
+   >そうでない場合は、実行できなくなります。
+
+   >[!NOTE]
+   >
+   >URL 内のセミコロン（「;」）はすべてエンコードする必要があります。
+   >
+   >例えば、永続的クエリを実行するリクエストの場合と同様に、次のようにします。
    >
    >
    ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
-## 外部WebサイトからのGraphQLエンドポイントのクエリ{#query-graphql-endpoint-from-external-website}
+## 外部 Web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
 >[!NOTE]
 >
->AEMでのCORSリソース共有ポリシーの詳細については、「[接触チャネル間のリソース共有(CORS)について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))」を参照してください。
+>AEM での CORS リソース共有ポリシーについて詳しくは、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))を参照してください。
 
-サードパーティのWebサイトでJSON出力を使用できるようにするには、顧客のGitリポジトリでCORSポリシーを設定する必要があります。 これは、目的のエンドポイントに適切なOSGi CORS設定ファイルを追加することで行います。 この設定では、アクセスを許可する信頼できるWebサイト名(regex)を指定する必要があります。
+サードパーティの Web サイトで JSON 出力を使用できるようにするには、顧客の Git リポジトリーに CORS ポリシーを設定する必要があります。それには、目的のエンドポイントに適した OSGi CORS 設定ファイルを追加します。この設定では、アクセスを許可する信頼できる Web サイト名（または正規表現）を指定してください。
 
-* GraphQLエンドポイントへのアクセス：
+* GraphQL エンドポイントにアクセスする場合：
 
-   * alloworigin:[ドメイン]またはalloworiginregexp:[ドメインのregex]
-   * supportedmethods:[POST]
+   * alloworigin: [自分のドメイン]または alloworiginregexp: [自分のドメインの正規表現]
+   * supportedmethods: [POST]
    * allowedpaths:[&quot;/content/graphql/global/endpoint.json&quot;]
 
-* GraphQLで持続的なクエリエンドポイントへのアクセス：
+* GraphQL の永続的クエリエンドポイントにアクセスする場合：
 
-   * alloworigin:[ドメイン]またはalloworiginregexp:[ドメインのregex]
-   * supportedmethods:[GET]
-   * allowedpaths:[&quot;/graphql/execute.json/.*&quot;]
+   * alloworigin: [自分のドメイン]または alloworiginregexp: [自分のドメインの正規表現]
+   * supportedmethods: [GET]
+   * allowedpaths: [&quot;/graphql/execute.json/.*&quot;]
 
 >[!CAUTION]
 >
->お客様は、次のことを行う責任を負います。
+>以下は顧客の責任でおこなう必要があります。
 >
->* 信頼済みドメインへのアクセスのみを許可する
+>* 信頼できるドメインにのみアクセスを許可する
 >* 機密情報が公開されていないことを確認する
 >* ワイルドカード[*]構文を使用しないこれにより、GraphQLエンドポイントへの認証済みアクセスが無効になり、世界中に公開されます。
 
@@ -766,12 +766,12 @@ POSTクエリは通常キャッシュされないので、このパラメータ�
 
 ## FAQ {#faqs}
 
-次のような質問が生じました。
+次のような質問が寄せられました。
 
-1. **Q**:「*GraphQL API for AEMとクエリビルダーAPIの違いは何ですか？*」
+1. **Q**：「*AEM 用 GraphQL API と Query Builder API の違いは何ですか？*」
 
-   * **A**:「AEM GraphQL API *オファーは、JSON出力の全体的な制御を行い、コンテンツのクエリを行う業界標準です。今後、AEMはAEM GraphQL APIへの投資を計画しています。*&quot;
+   * **A**：「AEM GraphQL API *は JSON 出力の完全な制御が可能であり、コンテンツをクエリするための業界標準になっています。今後、AEM GraphQL API への投資が計画されています。*」
 
-## チュートリアル — AEMヘッドレスとGraphQLの使い始めに{#tutorial}
+## チュートリアル - AEM ヘッドレスおよび GraphQL 入門 {#tutorial}
 
-実践チュートリアルを探している場合 AEMのGraphQL APIを使用し、外部アプリで使用するコンテンツを、ヘッドレスCMSシナリオで構築して公開する方法を示す[AEM HeadlessとGraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)のエンドツーエンドのチュートリアルをご覧ください。
+実践チュートリアルをお探しですか？AEM の GraphQL API を使用し、外部アプリで使用するコンテンツをヘッドレス CMS シナリオで構築して公開する方法を示す「[AEM ヘッドレスと GraphQL をはじめる前に](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)」のエンドツーエンドのチュートリアルをご覧ください。
