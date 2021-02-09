@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 82%
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
-* コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。
+* コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリーを AEM 6.5 にアップグレードする必要があります。
 
 * AEM を開始するユーザーが `java` コマンドを実行できるように、AEM 環境上で Java を設定する必要があります。
 
@@ -28,22 +28,22 @@ ht-degree: 82%
 
 * アクセストークンは、特定の期間の後、またはCloud Service環境がアップグレードされた後に、定期的に期限切れになる場合があります。 アクセストークンの有効期限が切れると、Cloud Serviceインスタンスに接続できなくなり、新しいアクセストークンを取得する必要があります。 既存の移行セットに関連付けられているステータスアイコンは赤のクラウドに変わり、その上にカーソルを置くとメッセージが表示されます。
 
-* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なもののみです。 *抽出*&#x200B;プロセスは、`/home`全体を移行セットにコピーし、*インジェスト*&#x200B;プロセスは、移行されたコンテンツACLで参照されているすべてのユーザーとグループをコピーします。 既存のユーザーとグループをIMS IDに自動的にマップするには、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)を参照してください。
+* コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーとグループをIMS IDに自動的にマップするには、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration)を参照してください。
 
 * 抽出段階では、コンテンツ転送ツールはアクティブな AEM ソースインスタンスで実行されます。
 
-* コンテンツ転送処理の&#x200B;*抽出*&#x200B;段階が完了し、*取り込み段階*&#x200B;を開始して、Cloud Service *段階*&#x200B;または&#x200B;*実稼働環境*&#x200B;のインスタンスとしてAEMにコンテンツを取り込む前に、サポートチケットをログに記録する必要があります。インジェスト&#x200B;*を使用すると、*&#x200B;インジェスト&#x200B;*プロセス中にAdobeが中断を起こさないようにできます。*&#x200B;計画された&#x200B;*取り込み*&#x200B;日の1週間前に、サポートチケットをログに記録する必要があります。 サポートチケットを送信すると、サポートチームは次の手順に関するガイダンスを提供します。
-   * 次の詳細を含むサポートチケットをログに記録します。
-      * *インジェスト*&#x200B;段階の開始を計画している場合は、（タイムゾーンに合わせて）日付と予測時刻を正確に指定してください。
-      * データを取り込む環境タイプ（ステージまたは実稼働）。
-      * プログラムID。
+* コンテンツ転送プロセスの&#x200B;*抽出*&#x200B;段階が完了したら、*取り込み段階*&#x200B;を開始してコンテンツを AEM as a Cloud Service の&#x200B;*ステージング*&#x200B;インスタンスまたは&#x200B;*実稼働*&#x200B;インスタンスに取り込む前に、サポートチケットを申請して、*取り込み*&#x200B;を実行する意図をアドビに知らせる必要があります。それにより、アドビは、*取り込み*&#x200B;プロセス中に中断が発生しないようにすることができます。予定している&#x200B;*取り込み*&#x200B;日の 1 週間前にサポートチケットを申請する必要があります。サポートチケットを申請したら、サポートチームから、次の手順に関するガイダンスが提供されます。
+   * サポートチケットを申請する際には、次の詳細を記載します。
+      * *取り込み*&#x200B;段階の開始を予定している正確な日付と大体の時刻（およびタイムゾーン）
+      * データの取り込み先として予定している環境のタイプ（ステージングまたは実稼働）
+      * プログラム ID
 
-* オーサーの&#x200B;*インジェスト段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。また、*取り込み*&#x200B;フェーズの実行中に、Cloud Managerのパイプラインが実行されないようにしてください。
+* オーサーの&#x200B;*インジェスト段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにしてください。
 
 
 ## 入手方法 {#availability}
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。  最新バージョンの詳細については、「[リリースノート](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.translate.html)」を参照してください。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.translate.html)」を参照してください。
 
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
@@ -226,7 +226,7 @@ ht-degree: 82%
 
 ### 不明な BLOB ID {#missing-blobs}
 
-以下に示すように、不明な BLOB ID が報告された場合は、既存のリポジトリで整合性チェックを実行し、不明な BLOB を復元する必要があります。
+以下に示すように、不明な BLOB ID が報告された場合は、既存のリポジトリーで整合性チェックを実行し、不明な BLOB を復元する必要があります。
 `ERROR o.a.j.o.p.b.AbstractSharedCachingDataStore - Error retrieving record [ba45c53f8b687e7056c85dceebf8156a0e6abc7e]`
 
 以下のコマンドを実行します。
@@ -235,13 +235,13 @@ ht-degree: 82%
 >
 >`--verbose` フラグが必要なのは、BLOB の参照元ノードのパスを報告するためです。
 
-**AEM 6.5（Oak 1.8 以前）のリポジトリの場合**
+**AEM 6.5（Oak 1.8 以前）のリポジトリーの場合**
 
 ```shell
 java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds] <DATASTORE_CFG> --verbose <OUT_DIR> --dump
 ```
 
-**Oak 1.10 以降のリポジトリの場合**
+**Oak 1.10 以降のリポジトリーの場合**
 
 ```shell
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
