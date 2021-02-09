@@ -1,40 +1,40 @@
 ---
-title: UIテスト —Cloud Services
-description: UIテスト —Cloud Services
+title: UI テスト - Cloud Services
+description: UI テスト - Cloud Services
 translation-type: tm+mt
 source-git-commit: bf3fb5178bc2ae72e19ecc1de82b08fac5089ecf
 workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# UIテスト{#ui-testing}
+# UI テスト {#ui-testing}
 
 >[!CAUTION]
 >
->この機能はまだ一般には利用できません。
+>この機能はまだ一般にはリリースされていません。
 
 
-UIテストは、言語とフレームワーク（JavaとMaven、NodeとWebDriver.io、またはSeleniumに基づいて構築されたその他のフレームワークとテクノロジーなど）で幅広い選択を可能にするために、Dockerイメージにパッケージ化されたSeleniumベースのテストです。 Dockerイメージは、標準ツールを使用して作成できますが、実行時には特定の規則に従う必要があります。 Dockerイメージを実行すると、Seleniumサーバーが自動的にプロビジョニングされます。 以下に説明するランタイム規則に従って、テストコードでSeleniumサーバーとテスト対象のAEMインスタンスの両方にアクセスできます。
+UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。Docker イメージは、標準ツールを使用して作成できますが、実行時には特定の規則に従う必要があります。Docker イメージを実行すると、Selenium サーバーが自動的にプロビジョニングされます。以下に説明する実行時規則に従うと、テストコードが Selenium サーバーにもテスト対象の AEM インスタンスにもアクセスできます。
 
-## UIテストの構築{#building-ui-tests}
+## UI テストの作成 {#building-ui-tests}
 
-UIテストは、Mavenプロジェクトで生成されたDockerビルドコンテキストから作成されます。 Cloud Managerは、Dockerのビルドコンテキストを使用して、実際のUIテストを含むDocker画像を生成します。 要約すると、MavenプロジェクトでDockerビルドコンテキストが生成され、Dockerビルドコンテキストでは、UIテストを含むDockerイメージの作成方法が説明されます。
+UI テストは、Maven プロジェクトで生成された Docker ビルドコンテキストから作成されます。Cloud Manager は、Docker ビルドコンテキストを使用して、実際の UI テストを含んだ Docker イメージを生成します。手短に言えば、Maven プロジェクトでは Docker ビルドコンテキストが生成され、Docker ビルドコンテキストでは、UI テストを含んだ Docker イメージの作成方法が記述されます。
 
-この節では、UIテストプロジェクトをリポジトリに追加するために必要な手順について説明します。 急いでいる場合、またはプログラミング言語に特別な要件がない場合は、[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)でUIテストプロジェクトを生成できます。
+この節では、UI テストプロジェクトをリポジトリーに追加するために必要な手順について説明します。時間がない場合やプログラミング言語の特別な要件がない場合は、[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)で UI テストプロジェクトを自動的に生成できます。
 
-### Dockerビルドコンテキストの生成{#generate-docker-build-context}
+### Docker ビルドコンテキストの生成 {#generate-docker-build-context}
 
-Dockerビルドコンテキストを生成するには、次の機能を持つMavenモジュールが必要です。
+Docker ビルドコンテキストを生成するには、次の処理をおこなう Maven モジュールが必要です。
 
-- `Dockerfile`と、テストでDockerイメージを作成するのに必要なその他すべてのファイルを含むアーカイブを作成します。
-- アーカイブに`ui-test-docker-context`分類子のタグを付けます。
+- `Dockerfile`と、テストを含んだ Docker イメージの作成に必要なその他のすべてのファイルを格納したアーカイブを作成する。
+- アーカイブに `ui-test-docker-context` 分類子をタグ付けする。
 
-これを実行する最も簡単な方法は、[Maven Assembly Plugin](http://maven.apache.org/plugins/maven-assembly-plugin/)を設定してDockerビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てることです。
+これをおこなうには、[Maven アセンブリプラグイン](http://maven.apache.org/plugins/maven-assembly-plugin/)を設定して Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるのが最も簡単です。
 
-様々なテクノロジーとフレームワークを使用してUIテストを作成できますが、この節では、プロジェクトが次のような方法でレイアウトされていることを前提としています。
+様々なテクノロジーとフレームワークを使用して UI テストを作成できますが、この節では、プロジェクトが次のようにレイアウトされていることを前提としています。
 
 ```
 ├── Dockerfile
@@ -47,7 +47,7 @@ Dockerビルドコンテキストを生成するには、次の機能を持つMa
 └── wait-for-grid.sh
 ```
 
-`pom.xml`ファイルはMavenのビルドを処理します。 次追加のようなMavenアセンブリプラグインの実行。
+`pom.xml` ファイルは Maven ビルドを扱います。次のような Maven アセンブリプラグインに実行を追加します。
 
 ```xml
 <plugin>
@@ -71,7 +71,7 @@ Dockerビルドコンテキストを生成するには、次の機能を持つMa
 </plugin>
 ```
 
-この実行は、Maven Assembly Pluginに対し、プラグインの用語で「アセンブリ記述子」と呼ばれる`assembly-ui-test-docker-context.xml`に含まれる命令に基づいてアーカイブを作成するよう指示します。 アセンブリ記述子は、アーカイブに含まれる必要のあるすべてのファイルをリストします。
+この実行は、`assembly-ui-test-docker-context.xml` に含まれている命令（プラグインの専門用語では「アセンブリ記述子」と呼ばれます）に基づいてアーカイブを作成するように Maven アセンブリプラグインに指示します。アセンブリ記述子では、アーカイブに含める必要のあるすべてのファイルがリストアップされます。
 
 ```xml
 <assembly>
@@ -100,53 +100,53 @@ Dockerビルドコンテキストを生成するには、次の機能を持つMa
 </assembly>
 ```
 
-アセンブリ記述子は、プラグインに対して`.tar.gz`型のアーカイブの作成を指示し、`ui-test-docker-context`分類子を割り当てます。 さらに、アーカイブに含める必要のあるファイルがリストされます。
+アセンブリ記述子は、`.tar.gz` タイプのアーカイブを作成するようにプラグインに指示し、そのアーカイブに `ui-test-docker-context` 分類子を割り当てます。さらに、そのアーカイブに含める必要のある次のファイルがリストアップされます。
 
-- `Dockerfile`。Dockerイメージの作成に必須です。
-- `wait-for-grid.sh`スクリプト。このスクリプトの目的は以下のとおりです。
-- `test-module`フォルダー内のNode.jsプロジェクトによって実装された、実際のUIテスト。
+- `Dockerfile`：Docker イメージの作成に必須。
+- `wait-for-grid.sh` スクリプト：目的は後述のとおり。
+- 実際の UI テスト：`test-module` フォルダー内に Node.js プロジェクトで実装。
 
-アセンブリ記述子は、UIテストをローカルで実行中に生成される可能性のある一部のファイルも除外します。 これにより、アーカイブのサイズが小さくなり、ビルドが高速になります。
+また、アセンブリ記述子は、UI テストのローカル実行中に生成される可能性のある一部のファイルを除外します。これにより、アーカイブのサイズが小さくなり、ビルドが高速になります。
 
-Dockerのビルドコンテキストを含むアーカイブはCloud Managerによって自動的に取得され、デプロイメントパイプライン中にテストを含むDockerイメージが作成されます。 最終的に、Cloud ManagerはDocker画像を実行して、アプリケーションに対するUIテストを実行します。
+Docker ビルドコンテキストを含んだアーカイブが Cloud Manager で自動的に選択され、テストを含んだ Docker イメージがデプロイメントパイプライン中に作成されます。最終的に、Cloud Manager は Docker イメージを実行して、アプリケーションに対する UI テストを実行します。
 
-## UIテストの書き込み{#writing-ui-tests}
+## UI テストの書き込み {#writing-ui-tests}
 
-この節では、UIテストを含むDockerイメージが従う必要がある規則について説明します。 Dockerイメージは、前の節で説明したDockerビルドコンテキストから構築されます。
+この節では、UI テストを含んだ Docker イメージが従う必要がある規則について説明します。Docker イメージは、前の節で説明した Docker ビルドコンテキストから作成されます。
 
 ### 環境変数 {#environment-variables}
 
-実行時に、次の環境変数がDockerイメージに渡されます。
+実行時に次の環境変数が Docker イメージに渡されます。
 
 | 変数 | 例 | 説明 |
 |---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | SeleniumサーバーのURL |
-| `SELENIUM_BROWSER` | `chrome`、`firefox` | Seleniumサーバーで使用されるブラウザー実装 |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM作成者インスタンスのURL |
-| `AEM_AUTHOR_USERNAME` | `admin` | AEM作成者インスタンスにログインするためのユーザー名 |
-| `AEM_AUTHOR_PASSWORD` | `admin` | AEMオーサーインスタンスにログインするためのパスワードです |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM発行インスタンスのURL |
-| `AEM_PUBLISH_USERNAME` | `admin` | AEM発行インスタンスにログインするユーザー名 |
-| `AEM_PUBLISH_PASSWORD` | `admin` | AEM発行インスタンスにログインするためのパスワード |
-| `REPORTS_PATH` | `/usr/src/app/reports` | テスト結果のXMLレポートを保存する必要があるパス |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | Seleniumにアクセスできるようにするためにファイルをアップロードする必要があるURL |
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium サーバーの URL |
+| `SELENIUM_BROWSER` | `chrome`、`firefox` | Selenium サーバーで使用されるブラウザー実装 |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM オーサーインスタンスの URL |
+| `AEM_AUTHOR_USERNAME` | `admin` | AEM オーサーインスタンスにログインするためのユーザー名 |
+| `AEM_AUTHOR_PASSWORD` | `admin` | AEM オーサーインスタンスにログインするためのパスワード |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | AEM パブリッシュインスタンスの URL |
+| `AEM_PUBLISH_USERNAME` | `admin` | AEM パブリッシュインスタンスにログインするためのユーザー名 |
+| `AEM_PUBLISH_PASSWORD` | `admin` | AEM パブリッシュインスタンスにログインするためのパスワード |
+| `REPORTS_PATH` | `/usr/src/app/reports` | テスト結果の XML レポートの保存先となるパス |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | Selenium からファイルにアクセスできるようにするためのファイルアップロード先の URL |
 
-### セレンの準備ができるのを待っています{#waiting-for-selenium}
+### Selenium の準備完了までの待機 {#waiting-for-selenium}
 
-テスト開始を行う前に、Seleniumサーバが起動および実行されていることを確認するのはDockerイメージの責任です。 Seleniumサービスの待機は、次の2つの手順で行います。
+テストを開始する前に、Selenium サーバーが実行状態にあることを Docker イメージ側で確認する必要があります。Selenium サービスの準備が完了するまで、次の 2 段階の手順で待機します。
 
-1. `SELENIUM_BASE_URL`環境変数からSeleniumサービスのURLを読み取ります。
-2. Selenium APIによって公開された[ステータスエンドポイント](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)に対して定期的にポーリングを行います。
+1. `SELENIUM_BASE_URL` 環境変数から Selenium サービスの URL を読み取ります。
+2. Selenium API で公開されている[ステータスエンドポイント](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)に対して定期的にポーリングをおこないます。
 
-Seleniumの状態エンドポイントがポジティブな応答で応答すると、テストは最終的に開始できます。
+Selenium のステータスエンドポイントが肯定的な応答を返したら、いよいよテストを開始できます。
 
-### テストレポートを生成{#generate-test-reports}
+### テストレポートの生成 {#generate-test-reports}
 
-Dockerイメージは、JUnit XML形式のテストレポートを生成し、環境変数`REPORTS_PATH`で指定されたパスに保存する必要があります。 JUnit XML形式は、テストの結果をレポートするための広範な形式です。 DockerイメージがJavaとMavenを使用する場合、[Maven Surefireプラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)と[Mavenフェールセーフプラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/)の両方が使用されます。 Dockerイメージが他のプログラミング言語またはテストランナーと共に実装されている場合は、選択したツールのドキュメントを参照し、JUnit XMLレポートの生成方法を確認してください。
+Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テスト結果のレポートに広く使用されている形式です。Docker イメージで Java と Maven が使用される場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)と [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/)の両方が使用されます。Docker イメージが他のプログラミング言語またはテストランナーで実装されている場合は、選択したツールのドキュメントを参照して、JUnit XML レポートの生成方法を確認してください。
 
-### ファイルのアップロード(#upload-files)
+### ファイルのアップロード {#upload-files}
 
-テストでは、テスト対象のアプリにファイルをアップロードする必要がある場合があります。 テストに対するSeleniumの導入を柔軟に維持するため、Seleniumに直接アセットをアップロードすることはできません。 代わりに、ファイルのアップロードは次のような中間的な手順に従います。
+テストでは、場合によって、テスト対象のアプリケーションにファイルをアップロードする必要があります。テストに対する Selenium デプロイメントの柔軟性を維持するため、Selenium に直接アセットをアップロードすることはできません。代わりに、以下の中間手順を経て、ファイルをアップロードします。
 
-1. `UPLOAD_URL`環境変数で指定されたURLにファイルをアップロードします。 アップロードは、マルチパート形式の1つのPOST要求で実行する必要があります。 マルチパートフォームには、1つのファイルフィールドが必要です。 これは`curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`と同じです。 このようなHTTP要求を実行する方法については、Dockerイメージで使用されているプログラミング言語のドキュメントとライブラリを参照してください。
-2. アップロードが成功した場合、リクエストは`text/plain`型の`200 OK`応答を返します。 応答の内容は不透明なファイルハンドルです。 `<input>`要素のファイルパスの代わりにこのハンドルを使用して、アプリケーション内のファイルのアップロードをテストできます。
+1. `UPLOAD_URL` 環境変数で指定された URL にファイルをアップロードします。アップロードは、マルチパートフォームを含んだ 1 つの POST リクエストで実行する必要があります。このマルチパートフォームには、1 つのファイルフィールドが必要です。これは `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"` と同等です。このような HTTP リクエストを実行する方法については、Docker イメージで使用されているプログラミング言語のドキュメントやライブラリを参照してください。
+2. アップロードが成功した場合、リクエストは `text/plain` タイプの `200 OK` 応答を返します。この応答の内容は不透明なファイルハンドルです。`<input>` 要素のファイルパスの代わりにこのハンドルを使用して、アプリケーション内のアップロードファイルをテストできます。
