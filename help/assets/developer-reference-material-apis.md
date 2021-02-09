@@ -6,66 +6,66 @@ translation-type: tm+mt
 source-git-commit: 5bc532a930a46127051879e000ab1a7fc235a6a8
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # [!DNL Adobe Experience Manager Assets] API と開発者向けリファレンス資料 {#assets-cloud-service-apis}
 
-この記事には、[!DNL Assets]の開発者向けの推奨事項、参照資料、およびリソースが[!DNL Cloud Service]として含まれています。 新しいアセットアップロードモジュール、APIリファレンスおよび後処理ワークフローで提供されるサポートに関する情報が含まれます。
+このドキュメントは、[!DNL Assets] as a [!DNL Cloud Service] のデベロッパー向けリファレンス資料およびリソースが含まれています。新しいアップロードモジュール、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
 
-## [!DNL Experience Manager Assets] APIと操作  {#use-cases-and-apis}
+## [!DNL Experience Manager Assets] API と操作 {#use-cases-and-apis}
 
-[!DNL Assets] には、デジタルアセットをプログラム的に操作するためのいくつかのAPIが [!DNL Cloud Service] 用意されています。各APIは、以下の表に示すように、特定の使用例をサポートしています。 [!DNL Assets]ユーザーインターフェイス、[!DNL Experience Manager]デスクトップアプリ、および[!DNL Adobe Asset Link]は、すべての操作または一部の操作をサポートしています。
+[!DNL Assets] as a [!DNL Cloud Service] には、デジタルアセットをプログラミングで操作するためのいくつかの API が用意されています。各 API は、以下の表に示すように、特定の使用例をサポートしています。[!DNL Assets] ユーザーインターフェイス、[!DNL Experience Manager] デスクトップアプリ、[!DNL Adobe Asset Link] は、すべての操作または一部の操作をサポートしています。
 
 >[!CAUTION]
 >
->一部のAPIは、引き続き存在しますが、アクティブにはサポートされていない（×で示される）ので、使用しないでください。
+>一部の API は、引き続き存在しますが、アクティブにはサポートされていない（x で示される）ので、使用しないでください。
 
 | サポートレベル | 説明 |
 | ------------- | --------------------------- |
 | ✓ | サポート対象 |
-| × | サポートされていない. 使用しないでください。 |
+| × | サポートされていない。使用しないでください。 |
 | - | 使用不可 |
 
-| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM/Sling/](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset computeサービス](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)サーブレットをスリング | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) _(プレビュー)_ |
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM／Sling／JCR](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **元のバイナリ** |  |  |  |  |  |  |
 | オリジナルを作成 | kid | × | - | × | × | - |
 | オリジナルを読む | - | × | kid | kid | kid | - |
-| オリジナルを更新 | kid | × | kid | × | × | - |
+| オリジナルをアップデート | kid | × | kid | × | × | - |
 | オリジナルを削除 | - | kid | - | kid | kid | - |
 | オリジナルをコピー | - | kid | - | kid | kid | - |
 | オリジナルを移動 | - | kid | - | kid | kid | - |
 | **メタデータ** |  |  |  |  |  |  |
-| メタデータの作成 | - | kid | kid | kid | kid | - |
-| メタデータの読み取り | - | kid | - | kid | kid | - |
-| メタデータの更新 | - | kid | kid | kid | kid | - |
-| メタデータの削除 | - | kid | kid | kid | kid | - |
-| メタデータのコピー | - | kid | - | kid | kid | - |
-| メタデータの移動 | - | kid | - | kid | kid | - |
-| **コンテンツフラグメント(CF)** |  |  |  |  |  |  |
-| CFを作成 | - | kid | - | kid | - | - |
-| CFの読み取り | - | kid | - | kid | - | kid |
-| CFの更新 | - | kid | - | kid | - | - |
-| CFの削除 | - | kid | - | kid | - | - |
-| CFをコピー | - | kid | - | kid | - | - |
-| CFを移動 | - | kid | - | kid | - | - |
+| メタデータを作成 | - | kid | kid | kid | kid | - |
+| メタデータを読み取り | - | kid | - | kid | kid | - |
+| メタデータを更新 | - | kid | kid | kid | kid | - |
+| メタデータを削除 | - | kid | kid | kid | kid | - |
+| メタデータをコピー | - | kid | - | kid | kid | - |
+| メタデータを移動 | - | kid | - | kid | kid | - |
+| **コンテンツフラグメント（CF）** |  |  |  |  |  |  |
+| CF を作成 | - | kid | - | kid | - | - |
+| CF を読み取り | - | kid | - | kid | - | kid |
+| CF を更新 | - | kid | - | kid | - | - |
+| CF を削除 | - | kid | - | kid | - | - |
+| CF をコピー | - | kid | - | kid | - | - |
+| CF を移動 | - | kid | - | kid | - | - |
 | **バージョン** |  |  |  |  |  |  |
-| バージョンの作成 | kid | kid | - | - | - | - |
-| 読み取りバージョン | - | kid | - | - | - | - |
-| バージョンの削除 | - | kid | - | - | - | - |
+| バージョンを作成 | kid | kid | - | - | - | - |
+| バージョンを読み取り | - | kid | - | - | - | - |
+| バージョンを削除 | - | kid | - | - | - | - |
 | **フォルダー** |  |  |  |  |  |  |
 | フォルダーを作成 | kid | kid | - | kid | - | - |
-| フォルダの読み取り | - | kid | - | kid | - | - |
-| フォルダの削除 | kid | kid | - | kid | - | - |
-| フォルダのコピー | kid | kid | - | kid | - | - |
-| フォルダの移動 | kid | kid | - | kid | - | - |
+| フォルダを読み取り | - | kid | - | kid | - | - |
+| フォルダーを削除 | kid | kid | - | kid | - | - |
+| フォルダーをコピー | kid | kid | - | kid | - | - |
+| フォルダーを移動 | kid | kid | - | kid | - | - |
 
 ## アセットのアップロード {#asset-upload-technical}
 
-[!DNL Experience Manager][!DNL Cloud Service] as a には、アセットをリポジトリーにアップロードする新しい方法が用意されています。ユーザーは、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順は次のとおりです。
+[!DNL Experience Manager] as a [!DNL Cloud Service] には、アセットをリポジトリーにアップロードする新しい方法が用意されています。ユーザーは、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順は次のとおりです。
 
 1. [HTTP リクエストを送信します](#initiate-upload)。その結果、新しいバイナリをアップロードする意図が [!DNL Experience Manage]r デプロイメントに通知されます。
 1. [開始リクエストで提供される 1 つ以上の URI にバイナリのコンテンツを POST 送信します。](#upload-binary)
@@ -165,7 +165,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 <!-- #ENGCHECK review / update the list of deprecated APIs below. -->
 
-新しいアップロードメソッドは、[!DNL Cloud Service]として[!DNL Adobe Experience Manager]に対してのみサポートされます。 [!DNL Adobe Experience Manager] 6.5 の API は非推奨（廃止予定）となりました。アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連するメソッドは、次の API で非推奨（廃止予定）となりました。
+新しいアップロード方法は、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の場合のみサポートされます。[!DNL Adobe Experience Manager] 6.5 の API は非推奨（廃止予定）となりました。アセットやレンディションのアップロードまたは更新（あらゆるバイナリアップロード）に関連するメソッドは、次の API で非推奨（廃止予定）となりました。
 
 * [Adobe Experience Manager Assets HTTP API](mac-api-assets.md)
 * `AssetManager`Java API（`AssetManager.createAsset(..)` など）
@@ -185,7 +185,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードしたユーザーは、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が非常に簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。
 
-[!DNL Experience Manager] を [!DNL Cloud Service] サポートする次のワークフロー手順を実行します。
+[!DNL Experience Manager] as a [!DNL Cloud Service] でサポートされているワークフローステップは次のとおりです。
 
 * `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
 * `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
@@ -240,5 +240,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* [aSDKとしてのExperience Cloud [!DNL Cloud Service] です](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)。
+* [Experience Cloud as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 
