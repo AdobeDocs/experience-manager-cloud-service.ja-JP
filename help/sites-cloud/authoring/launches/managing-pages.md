@@ -1,74 +1,74 @@
 ---
-title: 起動でのページの管理
-description: '起動内に新しいページを作成できます。 また、不要なページを削除することもできます。 '
+title: ローンチでのページの管理
+description: 'ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。 '
 translation-type: tm+mt
 source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 起動内のページの管理{#managing-pages-in-launch}
+# ローンチ内のページの管理 {#managing-pages-in-launch}
 
-起動では、次の両方が可能です。
+ローンチでは、次の両方が可能です。
 
-* [既存ページの新しいコンテンツの管理](/help/sites-cloud/authoring/launches/editing.md)、
-* [サイトコンソールの起動の構造に移動し](#navigate-structure-of-launch)、
-* コンソールから[追加新しいページを](#add-pages-to-launch)に、または[不要なページを](#remove-pages-from-launch)から削除し、起動します。
-* 起動内のページに対して、その他の標準的なアクションを実行します。
+* [既存ページの新しいコンテンツを管理する](/help/sites-cloud/authoring/launches/editing.md)
+* [Sites コンソールでローンチの構造をナビゲーションする](#navigate-structure-of-launch)
+* コンソールから、ローンチに[新しいページを追加](#add-pages-to-launch)または[不要なページを削除](#remove-pages-from-launch)する
+* ローンチ内のページに対して、その他の標準的なアクションを実行する
 
-## 起動の構造をナビゲート{#navigate-structure-of-launch}
+## ローンチの構造のナビゲーション {#navigate-structure-of-launch}
 
-以下の場所から、起動の構造をナビゲートできます。
+以下の場所から、ローンチの構造をナビゲーションできます。
 
-* ページエディター:
+* ページエディター：
 
-   * 「**移動**」を選択して、コンソールで起動の構造を開きます。
-      ![ページエディターから起動に移動](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
+   * 「**ナビゲーション**」を選択して、コンソールでローンチの構造を開きます。
+      ![ページエディターからローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
       >[!NOTE]
       >
       >また、次のことを実行できます。
       >
-      >* **起動** 後、ソースページの編集に戻る
+      >* ローンチの&#x200B;**終了**&#x200B;後、ソースページの編集に戻る
 
 
-* ****コンソールを起動：
-特定の起動を選択すると、「**コンテンツを管理**」を選択できます。
-   ![コンソールを起動 — コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+* **ローンチ**コンソール：
+特定のローンチを選択すると、「**コンテンツを管理**」を選択できます。
+   ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
-* **サイト**コンソール：
-特定のソースページを選択し、**参照**&#x200B;を開く場合は、「**起動**」を選択し、次に「**コンテンツを管理**」を選択します。
-   ![コンソールを起動 — コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
+* **Sites** コンソール：
+特定のソースページを選択し、「**参照**」を開き、「**ローンチ**」を選択してから「**コンテンツを管理**」を選択します。
+   ![ローンチコンソール - コンテンツを管理](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
    >[!NOTE]
    >
-   >また、「**コンソール**&#x200B;を起動」を選択して、**コンテンツを管理**（およびその他のアクション）にアクセスすることもできます。
+   >また、「**ローンチコンソール**」を選択して、「**コンテンツを管理**」（およびその他のアクション）にアクセスすることもできます。
 
-これらのエントリポイントはすべて、サイトコンソールで起動が開き、次の操作ができます。
+これらのエントリポイントのすべてで Sites コンソールのローンチが開き、次の操作ができます。
 
-* 移動,
-* **新しいページ** の作成、
-* 既存のページを選択し、アクションを実行します。例えば、**編集**&#x200B;し、**プロパティ**、**ロック**、**コピー**、**貼り付け**、**削除**を開きます。
+* ナビゲーションする
+* 新しいページを&#x200B;**作成**&#x200B;する
+* 既存のページを選択し、アクション（例：**編集**、**プロパティ**、**ロック**、**コピー**、**貼り付け**、**削除**）を実行する
 
-   ![[コンテンツの管理]からサイトコンソールの起動に移動](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
-* **参照**&#x200B;レールを使用して、**ソース**を起動ページに戻ります。
-   ![サイトコンソール — 起動ソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
+   ![「コンテンツの管理」から Sites コンソールでローンチをナビゲーション](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
+* **参照**&#x200B;パネルを使用して、**ローンチソース**ページに戻る
+   ![Sites コンソール - ローンチソース](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
-## 起動追加するページ{#add-pages-to-launch}
+## ローンチにページを追加する {#add-pages-to-launch}
 
-起動に新しいページを追加するには：
+ローンチに新しいページを追加するには、以下をおこないます。
 
-1. [起動の目的の場所に移動します](#navigate-structure-of-launch)。
+1. [ローンチの目的の場所に移動します](#navigate-structure-of-launch)。
 
-1. 「**作成**&#x200B;から[ページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)を作成」を通常どおり選択します。
+1. 「**作成**」を選択して、いつも通り[ページを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)します。
 
-## 起動からページを削除{#remove-pages-from-launch}
+## ローンチからページを削除する {#remove-pages-from-launch}
 
-起動からページを削除するには：
+ローンチからページを削除するには、以下をおこないます。
 
-1. [起動の目的の場所に移動します](#navigate-structure-of-launch)。
+1. [ローンチの目的の場所に移動します](#navigate-structure-of-launch)。
 
-1. **削除**&#x200B;を選択して[ページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)を削除します（通常）。
+1. **削除**&#x200B;を選択して、いつも通り[ページを削除](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page)します。
