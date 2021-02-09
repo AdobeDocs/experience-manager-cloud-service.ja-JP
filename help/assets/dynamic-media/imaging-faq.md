@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 2c1bfdd3c66eeb1be05aaf5b397de36a7fe0140c
 workflow-type: tm+mt
 source-wordcount: '1816'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 90%
 
 ## スマートイメージングとは {#what-is-smart-imaging}
 
-スマートイメージングテクノロジーは、Adobe Senesi AI の機能を活用して、既存の「画像プリセット」と連携してクライアントのブラウザーの機能に基づいて、画像形式、サイズ、画質を自動的に最適化し、配信パフォーマンスを向上します。
+スマートイメージングテクノロジーは、Adobe Sensei AI の機能を活用して、既存の「画像プリセット」と連携してクライアントのブラウザーの機能に基づいて、画像形式、サイズ、画質を自動的に最適化し、配信パフォーマンスを向上します。
 
 スマートイメージングをアドビのクラス最高のプレミアム CDN サービスと完全に統合することで、パフォーマンスを大幅にアップさせることもできます。このサービスが、サーバー、ネットワークおよびピアリングポイント間を結ぶ、最適なインターネットルートを見つけます。最適なインターネットルートとは、待ち時間が最小限であったり、インターネット上のデフォルトルートよりもパケット損失率が低かったりするルートです。
 
 次の画像アセットの例は、追加されたスマートイメージングの最適化を示しています。
 
-| 画像 <br>（URL） | サムネール | サイズ<br>（JPEG） | サイズ（WebP）<br>（スマートイメージングを使用） | % 削減 |
+| 画像 <br>（URL） | サムネール | サイズ<br>（JPEG） | サイズ（WebP）<br>（スマートイメージングを使用） | 削減 % |
 |---|---|---|---|---|
 | [画像 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [画像 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
@@ -28,7 +28,7 @@ ht-degree: 90%
 | [画像 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | 平均 = 51% |
 
-上記と同様に、アドビでも 7009 個の URL を含むテストを実施し、スマートイメージングの機能により、JPEG 用のファイルサイズの平均最適化を 38%、WebP 形式の PNG 用のファイルサイズの最適化を 31%達成しました。
+上記と同様に、アドビでも 7009 個の URL を含むテストを実施し、スマートイメージングの機能により、JPEG 用のファイルサイズの平均最適化を 38%、WebP 形式の PNG 用のファイルサイズの最適化を 31% 達成しました。
 
 ## 最新のスマートイメージングの主要なメリットとは {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -54,22 +54,22 @@ ht-degree: 90%
 
 ## スマートイメージングはどのように機能しますか？ {#how-does-smart-imaging-work}
 
-ユーザーから画像が要求された場合、ユーザーの特性を確認し、使用中のブラウザーに基づいて適切な画像形式に変換します。 これらの形式の変換は、表示の忠実度を低下させない方法で行われます。 スマートイメージングは、次の方法で、ブラウザの機能に基づいて画像を異なる形式に自動的に変換します。
+画像が消費者から要求されると、そのユーザーの特性を確認し、使用中のブラウザーに基づいて適切な画像形式に変換します。これらの形式変換は、視覚的忠実性を低下させない方法でおこなわれます。スマートイメージングは、次のような方法で、ブラウザーの機能に基づいて、自動的に画像を別の形式に変換します。
 
-* 次のブラウザー用にWebPに自動的に変換：
+* 次のブラウザー用に WebP に自動的に変換：
    * Chrome
-   * Firefox 以降
+   * Firefox
    * Microsoft Edge
    * Safari 14.0 +
-      * Safari 14のみ（iOS 14.0以降およびmacOS BigSur以降）
+      * Safari 14（iOS 14.0 以降および macOS BigSur 以降のみ）
    * Android
    * Opera
-* レガシーブラウザーでの次のサポート：
+* 以下のレガシーブラウザーでのサポート：
 
-   | ブラウザー | ブラウザー/OSのバージョン | 形式 |
+   | ブラウザー | ブラウザー／OS のバージョン | 形式 |
    | --- | --- | --- |
-   | Safari | iOS 14.0以前 | JPEG2000 |
-   | Edge | 十八以前 | JPEGXR |
+   | Safari | iOS 14.0 以前 | JPEG2000 |
+   | Edge | 18 以前 | JPEGXR |
    | Internet Explorer | 9+ | JPEGXR |
 * 上記形式をサポートしていないブラウザーの場合は、元々要求された画像形式が提供されます。
 
@@ -88,17 +88,17 @@ ht-degree: 90%
 
 Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
-## スマートイメージングは、使用中の既存の画像プリセットとどのように連携しますか？{#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
+## スマートイメージングは、使用中の既存の画像プリセットとどのように連携しますか？ {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 スマートイメージングは既存の「画像プリセット」と連携し、要求されたファイル形式が JPEG または PNG の場合は、画質（qlt）および形式（fmt）を除くすべての画像設定を監視します。形式変換の場合、画像プリセットの設定で定義されているとおりの完全な視覚的忠実性が維持されますが、ファイルサイズは小さくなります。元の画像サイズがスマートイメージングの生成するサイズより小さい場合は、元の画像が提供されます。
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
-## スマートイメージングを使用する場合、URL の変更や、画像プリセットの変更、サイトへの新しいコードのデプロイなどは必要ですか？{#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
+## スマートイメージングを使用する場合、URL の変更や、画像プリセットの変更、サイトへの新しいコードのデプロイなどは必要ですか？ {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-スマートイメージングは、既存のカスタムドメインでスマートイメージングを設定する場合、既存の画像URLや画像プリセットとシームレスに連携します。 また、スマートイメージングでは、ユーザーのブラウザーを検出するために Web サイトにコードを追加する必要はありません。これらはすべて自動的に処理されます。
+既存のカスタムドメインで設定する場合、スマートイメージングは既存の画像 URL や画像プリセットとシームレスに連携します。また、スマートイメージングでは、ユーザーのブラウザーを検出するために Web サイトにコードを追加する必要はありません。これらはすべて自動的に処理されます。
 
-スマートイメージングを使用するために新しいカスタムドメインを設定する必要がある場合は、このカスタムドメインを反映するようにURLを更新する必要があります。
+スマートイメージングを使用するために新しいカスタムドメインを設定する必要がある場合は、このカスタムドメインを反映するように URL を更新する必要があります。
 
 また、スマートイメージングの前提条件を理解するには、[スマートイメージングを使用するための資格を私は満たしていますか？](#am-i-eligible-to-use-smart-imaging)を参照してください。
 
@@ -106,7 +106,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 <!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
-## スマートイメージングは HTTPS で機能しますか？HTTP/2 ではどうですか？{#does-smart-imaging-working-with-https-how-about-http}
+## スマートイメージングは HTTPS で機能しますか？HTTP/2 ではどうですか？ {#does-smart-imaging-working-with-https-how-about-http}
 
 スマートイメージングは、HTTP または HTTPS で配信された画像に対して機能します。また、HTTP/2 上でも機能します。
 
@@ -127,8 +127,8 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 スマートイメージングを使用するためのリクエストを開始する必要があります。自動的には有効になりません。
 
-1. [Admin Consoleを使用して、サポートケースを作成します。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
-1. サポートケースに次の情報を入力します。
+1. [Admin Console を使用して、サポートケースを作成します。](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. サポートケースには、以下の情報を記入してください。
 
    1. 主要連絡先の氏名、電子メールアドレス、電話番号。
    1. スマートイメージングを有効にする全ドメイン（`images.company.com` や `mycompany.scene7.com`）。
@@ -164,7 +164,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 >[!NOTE]
 リードタイムが長くなる場合がありますが、それは、スマートイメージングを有効化するためには、アドビによるキャッシュのクリアが必要になるからです。そのため、処理できる移行の数は、常にほんの数件です。
 
-## スマートイメージングを使用するための切り替えに際しては、どんなリスクがありますか？{#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## スマートイメージングを使用するための切り替えに際しては、どんなリスクがありますか？ {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 顧客の Web ページを表示するリスクはありません。ですが、スマートイメージングへの切り替えには、Dynamic Media Classic または Dynamic Media on AEM の新規構成への移行が伴うので、スマートイメージングに切り替えると、CDN のキャッシュが消去されることを認識する必要があります。
 
