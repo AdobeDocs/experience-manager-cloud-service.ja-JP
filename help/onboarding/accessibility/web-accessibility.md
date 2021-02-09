@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン{#aem-and-the-web-accessibility-guidelines}
+# Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン {#aem-and-the-web-accessibility-guidelines}
 
 様々な社会的、経済的、法的動機により、Web コンテンツを設計する際には、身体的障碍や制限の有無に関係なく、対象とするオーディエンスができるだけアクセスしやすくことが求められます。Adobe Experience Manager (AEM) as a Cloud Service による Web アクセシビリティは、優れた Web デザインの重要な側面となっています。
 
