@@ -1,18 +1,18 @@
 ---
-title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
-description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
 source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
 workflow-type: tm+mt
 source-wordcount: '745'
-ht-degree: 8%
+ht-degree: 21%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
 
-次の節では、[!DNL Experience Manager]の一般的なリリースノートをCloud Serviceとしてまとめています。
+[!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
 ## リリース日 {#release-date}
 
@@ -47,7 +47,7 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 * [プログレッシブWeb App(PWA)版の](/help/sites-cloud/authoring/features/enable-pwa.md)  サイトは、簡単な設定でプロジェクトレベルで有効にできるようになりました。
 
-## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 * [!DNL Experience Manager] は、スマートタグ機能を [!DNL Cloud Service] 拡張して、テキストベースのアセット内のキーワードとエンティティの識別をサポートしています。テキストを識別し、インデックスを作成し、メタデータとして使用できるようにして、設定を行うことなく検索体験を向上させます。 「[スマートタグ](/help/assets/smart-tags.md)」を参照してください。
 
@@ -61,7 +61,7 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 * 最新のCIFコアコンポーネントバージョンv1.7.0が含まれるCIFベニアリファレンスサイト — 2021.02.02をリリースしました。詳細は、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02)を参照してください。
 
-* CIF コアコンポーネント v1.7.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)」を参照してください。
+* CIF コアコンポーネント v1.7.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
@@ -83,16 +83,16 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 
 * サーバー間認証API呼び出し — 適切なアクセストークンを生成して、認証済みのサーバー間API呼び出しを外部アプリケーションとAEMの間でCloud Service環境として行います。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)を読むか、[チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)を参照してください。
 
-### SDKビルドアナライザー{#sdk-build-analyzers}
+### SDK ビルドアナライザー {#sdk-build-analyzers}
 
-Cloud ServiceSDKビルドアナライザーMavenプラグインとしてのAEMは、Mavenプロジェクト内の問題（依存関係の欠落など）を検出します。 開発者は、ローカル開発中に問題を発見し、Cloud Managerを使用してCloud環境に展開する前に、問題を発見できます。
+AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグインでは、依存関係の欠落など、Maven プロジェクトの問題を検出します。これを使用すると、ローカル開発中に、Cloud Manager でクラウド環境にデプロイする前に開発者が問題を見つけることができます。
 
 このリリースでは、2つの新しいアナライザーが追加されました。
 
 * リポイント分析器
 * bundle-nativecode
 
-詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=en#developing)を参照してください。
+詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)を参照してください。
 
 ## クラウド移行ツール {#code-transition-tools}
 
