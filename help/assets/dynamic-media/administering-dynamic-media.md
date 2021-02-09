@@ -1,16 +1,16 @@
 ---
 title: Dynamic Media のセットアップ
-description: Dynamic Mediaを設定するには、Dynamic Mediaを設定し、画像とビューアプリセットを管理する必要があります。
+description: Dynamic Media をセットアップするには、Dynamic Media を設定して、画像やビューアのプリセットを管理する必要があります.
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Media のセットアップ  {#setting-up-dynamic-media}
+# Dynamic Media のセットアップ {#setting-up-dynamic-media}
 
 [Dynamic Media ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)では、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信し、アセットを管理できます。これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
@@ -27,7 +27,7 @@ ht-degree: 60%
 Dynamic Media の管理者には、次のトピックが参考になります。
 
 * [Dynamic Media の設定](config-dm.md)
-* [画像プリセットの管理](managing-image-presets.md)
+* [画像プリセットの管理 ](managing-image-presets.md)
 * [ビューアプリセットの管理](managing-viewer-presets.md)
 * [Dynamic Media のトラブルシューティング](troubleshoot-dm.md)
 
@@ -40,4 +40,4 @@ Dynamic Media の管理者には、次のトピックが参考になります。
 >
 >**アップグレードする場合：**
 >
->* Experience Managerを起動して実行した後は、アップロードしたアセットはすべて自動的に有効になります（ただし、システム管理者が明示的に無効にしていない場合）。 アップグレードしたExperience Managerのインスタンスを使用し、Dynamic Mediaに初めてアクセスする場合は、アセットを再処理してDynamic Media対応にする必要がある場合があります。
+>* Experience Manager を実行状態にした後にアップロードしたすべてのアセットで、Dynamic Media が自動的に有効になります（システム管理者によって明示的に無効にされた場合を除く）。アップグレードされた Experience Manager インスタンスで Dynamic Media を新たに使用する場合、Dynamic Media を使用できるようアセットを再処理する必要が生じる場合があります。
