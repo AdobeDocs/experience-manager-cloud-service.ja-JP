@@ -1,16 +1,16 @@
 ---
-title: 画像プリセットの管理
-description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します。。
+title: '画像プリセットの管理 '
+description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します.
 translation-type: tm+mt
 source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3607'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
 
-# 画像プリセットの管理{#managing-image-presets}
+# 画像プリセットの管理 {#managing-image-presets}
 
 画像プリセットを使用すると、AEM Assets は異なるサイズや異なる形式の画像、あるいは動的に生成された他の画像プロパティを設定した画像を動的に配信できます。各画像プリセットは、画像表示用のサイズやフォーマットに関するコマンドの事前定義済みコレクションを表します。画像プリセットの作成時には、画像配信用のサイズを選択します。またフォーマットコマンドも選択し、表示対象画像の配信時に画像の見た目が最適化されるようにします。
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 管理者が画像プリセットを作成できます。画像プリセットを作成する際に、最初から作業を始めることも、既存のプリセットから始めて新しい名前で保存することもできます。
 
-## 画像プリセットの管理  {#managing-image-presets-1}
+## 画像プリセットの管理 {#managing-image-presets-1}
 
 AEM で画像プリセットを管理するには、AEM のロゴをタップまたはクリックしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして&#x200B;**[!UICONTROL アセット／画像プリセット]**&#x200B;の順に移動します。
 
@@ -77,7 +77,7 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。AEM As
 >
 >DAM アセットの更新ワークフローでは、**[!UICONTROL EPS サムネール]**&#x200B;のステップで EPS ファイルのサムネールが生成されます。
 
-#### PDF/AI/EPS アセットのメタデータプロパティ  {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS アセットのメタデータプロパティ {#pdf-ai-eps-asset-metadata-properties}
 
 | **メタデータプロパティ** | **説明** |
 |---|---|
@@ -277,7 +277,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * **[!UICONTROL シャープ：再サンプリングモード]** - 「**[!UICONTROL バイキュービック法]**」を選択します。
 
-#### 「基本」タブオプション{#basic-tab-options}
+#### 「基本」タブオプション {#basic-tab-options}
 
 <table>
  <tbody>
@@ -323,7 +323,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
  </tbody>
 </table>
 
-#### 「詳細」タブオプション{#advanced-tab-options}
+#### 「詳細」タブオプション {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -409,7 +409,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 ### 画像の修飾子による画像プリセットオプションの定義 {#defining-image-preset-options-with-image-modifiers}
 
-「基本」タブと「詳細」タブで使用できるオプションに加えて、画像の修飾子を定義して、画像プリセットの定義でより多くのオプションを指定することができます。イメージレンダリングは、Dynamic MediaイメージレンダリングAPIに依存しており、詳しくは『[HTTPプロトコルリファレンス](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)』を参照してください。
+「基本」タブと「詳細」タブで使用できるオプションに加えて、画像の修飾子を定義して、画像プリセットの定義でより多くのオプションを指定することができます。画像のレンダリングには Dynamic Media 画像レンダリング API が利用されており、詳しくは [HTTP プロトコルリファレンス](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction.html#image-rendering-api)で定義されています。
 
 画像の修飾子を使用して実行できることについて、以下に基本的な例を示します。
 
