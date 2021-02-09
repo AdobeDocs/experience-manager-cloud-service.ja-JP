@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 ユーザーは、環境カードを使用して、選択した環境の使用可能なログファイルのリストにアクセスできます。ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-これらのファイルは、**概要**&#x200B;ページからUIからダウンロードできます。
+これらのファイルは、UI の&#x200B;**概要**&#x200B;ページからダウンロードできます。
 
 ![](assets/download-logs1.png)
 
