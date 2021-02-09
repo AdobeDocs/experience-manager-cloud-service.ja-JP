@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8383dc023b35cf76f7dc0e41cedef8cfab7753aa
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 サンドボックスで作成された環境は、自動スケール用に設定されません。従って、パフォーマンスや負荷テストには適しません。
 
-サンドボックスプログラムには Sites と Assets が含まれ、Git リポジトリ、開発環境、実稼働以外のパイプラインが自動入力されます。Git リポジトリには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
+サンドボックスプログラムには Sites と Assets が含まれ、Git リポジトリー、開発環境、実稼働以外のパイプラインが自動入力されます。Git リポジトリーには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
 
 プログラムタイプの詳細については、[プログラムとプログラムタイプについて](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)を参照してください。
 
@@ -51,13 +51,13 @@ ht-degree: 97%
 
 実稼働とステージングの環境セットは、実稼動パイプラインをセットアップする準備ができたら、サンドボックスプログラムに手動で追加できます。
 
-環境を手動で作成する方法については、[環境](/help/implementing/cloud-manager/manage-environments.md)の追加を参照してください。
+環境を手動で作成する方法について詳しくは、「[環境の追加](/help/implementing/cloud-manager/manage-environments.md)」を参照してください。
 
 ### サンドボックス環境の削除 {#deleting-sandbox-environments}
 
 必要な権限を持つユーザーは、開発環境、実稼働／ステージング環境またはそのセットを削除できます。
 
-環境を削除する方法について詳しくは、[環境](/help/implementing/cloud-manager/manage-environments.md#deleting-environment)の削除を参照してください。
+環境を削除する方法について詳しくは、「[環境の削除](/help/implementing/cloud-manager/manage-environments.md#deleting-environment)」を参照してください。
 
 
 ## サンドボックス環境の休止と休止解除 {#hibernating-introduction}
@@ -170,7 +170,7 @@ ht-degree: 97%
 * AEM のアップグレードは、休止状態の環境に適用できます。アップグレードは Cloud Manager から手動でトリガーできます。環境は休止状態のままとなり、新しいリリースは、休止状態を解除すると環境に表示されます。
 
 >[!NOTE]
->現在、Cloud Manager は、環境を休止状態であるかどうかを示しません。
+>現在、Cloud Manager は、環境が休止状態であるかどうかを示しません。
 
 ## サンドボックス環境への AEM アップデートの適用 {#aem-updates-sandbox}
 
