@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,12 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)も参照してください。
 
-## 360 ビデオの視聴  {#video-in-action}
+## 360 ビデオの視聴 {#video-in-action}
 
 「[Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」をタップして、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中にマウスポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
-![360 ビデオのサンプル](assets/6_5_360videoiss_simplified.png)*Space Station 360（国際宇宙ステーションの 360 度ビデオ）のビデオフレーム*
+![360 ビデオのサンプル](assets/6_5_360videoiss_simplified.png)
+*Space Station 360（国際宇宙ステーションの 360 度ビデオ）のビデオフレーム*
 
 ## 360/VR ビデオと Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -38,7 +39,7 @@ Adobe Premier Pro を使用すれば、360/VR シーンを表示および編集�
 
 ## 360 ビデオビューアで使用するアセットのアップロード {#uploading-assets-for-use-with-the-video-viewer}
 
-Experience Managerにアップロードされる360個のビデオアセットは、通常のビデオアセットと同様、アセットページでは&#x200B;**マルチメディア**&#x200B;というラベルが付けられます。
+Experience Manager にアップロードされた 360 ビデオアセットには、通常のビデオアセットの場合と同じく、アセットページで「**マルチメディア**」というラベルが付けられます。
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *アップロードされた 360 ビデオアセット（カード表示）。アセットには「マルチメディア」というラベルが付けられます。*
@@ -96,8 +97,7 @@ Start by uploading 360 Videos.
 
 360 ビデオの設定が完了したら、このビデオを公開できます。
 
-[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対URLを持つリンク、特にExperience Managerサイトページへのリンクが含まれる場合、URLベースのリンク方式は使用できません。
-[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
 **360 ビデオをプレビューするには**
 
@@ -130,5 +130,4 @@ Start by uploading 360 Videos.
 
 360 ビデオを使用するには公開する必要があります。360 ビデオを公開すると、URL と埋め込みコードがアクティベートされます。また、スケーラブルで効率の良い配信のために CDN と統合された Dynamic Media クラウドにも、360 ビデオが公開されます。
 
-360 ビデオの公開方法について詳しくは、[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)も参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)も参照してください。インタラクティブコンテンツに相対URLを持つリンク、特にExperience Managerサイトページへのリンクが含まれる場合、URLベースのリンク方式は使用できません。
-[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
+360 ビデオの公開方法について詳しくは、[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)も参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)も参照してください。インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
