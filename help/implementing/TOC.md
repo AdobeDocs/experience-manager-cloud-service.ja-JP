@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 85c802029f8499ef1d97bc40e2cce5015f19c49b
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 55%
+ht-degree: 73%
 
 ---
 
@@ -25,24 +25,24 @@ ht-degree: 55%
       + [カスタムコード品質ルール](cloud-manager/custom-code-quality-rules.md)
       + [機能テスト](/help/implementing/cloud-manager/functional-testing.md)
       + [エクスペリエンス監査テスト](/help/implementing/cloud-manager/experience-audit-testing.md)
-      + [UIテスト](/help/implementing/cloud-manager/ui-testing.md)
+      + [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
    + [通知について](cloud-manager/notifications.md)
    + SSL証明書の管理{#manage-ssl-certificates}
       + [概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-      + [SSL証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
-      + [SSL証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+      + [SSL 証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
+      + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [SSL証明書の表示と更新と置き換え](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
-      + [SSL証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
-      + [SSL証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
+      + [SSL 証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
+      + [SSL 証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + カスタムドメイン名の管理{#custom-domain-names}
       + [概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [カスタムドメイン名の取得](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-      + [TXTレコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+      + [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
       + [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-      + [DNS設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
-      + [DNSレコードの状態を確認しています](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
+      + [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+      + [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
       + [カスタムドメイン名の表示と更新と置き換え](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
       + [カスタムドメイン名のSSL証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
@@ -52,25 +52,25 @@ ht-degree: 55%
       + [IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
       + [IP許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
       + [IP許可リストの適用を解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
-      + [IP許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+      + [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
-   + [複数のソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-+ AEM as a Cloud Service 向けの開発{#developing}
+   + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
++ AEM as a Cloud Service 向けの開発 {#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
-   + [AEM プロジェクトリポジトリの構造パッケージ](developing/introduction/repository-structure-package.md)
+   + [AEM プロジェクトリポジトリーの構造パッケージ](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [ログ](developing/introduction/logging.md)
-   + [設定と設定ブラウザ](developing/introduction/configurations.md)
-   + [AEM技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
+   + [設定と設定ブラウザー](developing/introduction/configurations.md)
+   + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [サーバー側APIのアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [headful and headless in AEM](developing/headful-headless.md)
-   + 完全スタックAEM開発{#full-stack}
+   + フルスタック AEM 開発 {#full-stack}
       + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
       + [AEM UI の構造](developing/introduction/ui-structure.md)
       + [Sling チートシート](developing/introduction/sling-cheatsheet.md)
@@ -93,16 +93,16 @@ ht-degree: 55%
          + [非表示条件の使用](developing/components/hide-conditions.md)
          + [コンポーネントリファレンスガイド](developing/components/reference.md)
       + [AEM タグ付けフレームワーク](/help/implementing/developing/introduction/tagging-framework.md)
-      + [AEMアプリケーションへのタグ付けの構築](/help/implementing/developing/introduction/tagging-applications.md)
+      + [AEM アプリケーションへのタグ付けの構築](/help/implementing/developing/introduction/tagging-applications.md)
       + 検索 {#search}
          + [Query Builder API](/help/implementing/developing/introduction/query-builder-api.md)
          + [Query Builder の述語リファレンス](/help/implementing/developing/introduction/query-builder-predicates.md)
          + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
-      + [AEMノードタイプ](/help/implementing/developing/introduction/node-types.md)
-      + [Java APIのガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
-   + ハイブリッドAEM開発{#hybrid}
-      + [ハイブリッドおよびAEM付きSPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
+      + [Java API のガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
+   + ハイブリッド AEM 開発 {#hybrid}
+      + [AEM でのハイブリッドと SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [SPA の概要およびガイド](developing/hybrid/introduction.md)
       + [SPA WKND チュートリアル](developing/hybrid/wknd-tutorial.md)
@@ -122,15 +122,15 @@ ht-degree: 55%
       + [ローンチの統合](developing/hybrid/launch-integration.md)
       + [SPA リファレンスドキュメント](developing/hybrid/reference-materials.md)
    + ヘッドレスエクスペリエンス管理 {#headless}
-      + [ヘッドレスとAEM](developing/headless/introduction.md)
-      + はじめに{#getting-started}
+      + [ヘッドレスと AEM](developing/headless/introduction.md)
+      + 「はじめる前に」ガイド {#getting-started}
          + [設定の作成](developing/headless/getting-started/create-configuration.md)
          + [コンテンツフラグメントモデルの作成](developing/headless/getting-started/create-content-model.md)
-         + [アセットフォルダの作成](developing/headless/getting-started/create-assets-folder.md)
+         + [アセットフォルダーの作成](developing/headless/getting-started/create-assets-folder.md)
          + [コンテンツフラグメントの作成](developing/headless/getting-started/create-content-fragment.md)
          + [コンテンツフラグメントへのアクセスと配信](developing/headless/getting-started/create-api-request.md)
       + コンテンツフラグメント {#content-fragments}
-         + [コンテンツフラグメントとGraphQLとのヘッドレス配信](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+         + [コンテンツフラグメントと GraphQL のヘッドレス配信](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
          + [コンテンツフラグメントの操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html)
          + [インスタンスに対するコンテンツフラグメント機能の有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html)
          + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html)
@@ -140,15 +140,15 @@ ht-degree: 55%
          + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html)
          + [メタデータ - フラグメントのプロパティ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
          + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-         + [プレビュー- JSON表現](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
-      + 配信API {#delivery-api}
-         + [コンテンツフラグメントREST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
-         + [コンテンツフラグメントGraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-         + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
+         + [プレビュー - JSON 表現](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+      + 配信 API {#delivery-api}
+         + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html)
+         + [コンテンツフラグメント GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
+         + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html)
          + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html)
-+ 開発者ツール {#developer-tools}
++ デベロッパーツール {#developer-tools}
    + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
-   + [Content Package Maven Plugin](/help/implementing/developing/tools/maven-plugin.md)
+   + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
 + パーソナライゼーション {#personalization}
