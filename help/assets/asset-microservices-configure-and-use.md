@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -36,9 +36,9 @@ Experience Manager では、次のレベルの処理が可能です。
 
 | オプション | 説明 | 対象となる使用例 |
 |---|---|---|
-| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>[!DNL Assets]ユーザーインターフェイスで使用される標準サムネール（48、140、319ピクセル） </li> <li> 大きいプレビュー（Webレンディション — 1280ピクセル） </li><li> メタデータとテキストの抽出。</li></ul> |
+| [デフォルト設定](#default-config) | 現在の状態で使用可能で、変更できません。この設定は、非常に基本的なレンディション生成機能を提供します。 | <ul> <li>[!DNL Assets] ユーザーインターフェイスで使用される標準サムネール（48、140、319 ピクセル） </li> <li> 大きなプレビュー（Web レンディション - 1280 ピクセル） </li><li> メタデータとテキストの抽出。</li></ul> |
 | [カスタム設定](#standard-config) | ユーザーインターフェイスを介して管理者が設定します。デフォルトのオプションを拡張して、レンディションの生成に関するさらなるオプションを提供します。標準搭載のオプションを拡張して、様々な形式とレンディションを提供します。 | <ul><li>FPO レンディション。 </li> <li>画像のファイル形式と解像度の変更</li> <li> 条件に応じて、設定したファイルタイプに適用します。 </li> </ul> |
-| [カスタムプロファイル](#custom-config) | カスタムアプリケーションを介してカスタムコードを使用し、[アセット計算サービス](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html)を呼び出すように、ユーザーインターフェイスを介して管理者が設定します。クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 「[可能な使用例](#custom-config)」を参照してください。 |
+| [カスタムプロファイル](#custom-config) | カスタムアプリケーションを介してカスタムコードを使用し、[アセット計算サービス](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=ja)を呼び出すように、ユーザーインターフェイスを介して管理者が設定します。クラウド固有の拡張性の高い方法で、より複雑な要件をサポートします。 | 「[可能な使用例](#custom-config)」を参照してください。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -78,9 +78,9 @@ Experience Manager では、次のレベルの処理が可能です。
 1. 他のレンディションを生成するには、「**[!UICONTROL 新規追加]**」をクリックし、次の情報を入力します。
 
    * 各レンディションのファイル名。
-   * 各レンディションのファイル形式（PNG、JPEG、GIFまたはWebP）。
+   * 各レンディションのファイル形式（PNG、JPEG、GIF、WebP）。
    * 各レンディションの幅と高さ（ピクセル単位）。指定しなかった場合は、元の画像の最大ピクセルサイズが使用されます。
-   * 各JPEGおよびWebPレンディションの画質(%)。
+   * 各 JPEG および WebP レンディションの画質（パーセント単位）。
    * プロファイルの適用性を定義する、包含および除外 MIME タイプ。
 
    ![processing-profiles-adding](assets/processing-profiles-image.png)
@@ -100,7 +100,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## カスタムプロファイルと使用例 {#custom-config}
 
-[!DNL Asset Compute Service] は、デフォルト処理、Photoshop ファイルなどのアドビ固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例をサポートしています。以前に必要だった DAM アップデートアセットワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。これらの処理オプションでビジネスニーズが満たされない場合、デフォルトの機能を拡張するために [!DNL Asset Compute Service] を開発および使用することを推奨します。概要については、「[拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html)」を参照してください。
+[!DNL Asset Compute Service] は、デフォルト処理、Photoshop ファイルなどのアドビ固有の形式の処理、カスタム処理や組織固有の処理など、様々な使用例をサポートしています。以前に必要だった DAM アップデートアセットワークフローのカスタマイズは、自動的に処理されるか、処理プロファイルの設定を介して処理されます。これらの処理オプションでビジネスニーズが満たされない場合、デフォルトの機能を拡張するために [!DNL Asset Compute Service] を開発および使用することを推奨します。概要については、「[拡張機能と使用するタイミングについて](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja)」を参照してください。
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 画像、ビデオ、ドキュメントおよびその他のファイル形式を、サムネール、抽出したテキストおよびメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は[!DNL Asset Compute Service]を使って[カスタムアプリケーション](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html)を作成し、サポートされている使用例に対応できます。 [!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+開発者は[!DNL Asset Compute Service]を使って[カスタムアプリケーション](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja)を作成し、サポートされている使用例に対応できます。 [!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
 * [!DNL Adobe Photoshop] の [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) を使用して、結果をレンディションとして保存します。
 * サードパーティシステムを呼び出して、PIM システムなどのデータをアップデートします。
@@ -128,8 +128,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 以下の情報を入力します。
 
    * 各レンディションのファイル名と、サポートされているファイル拡張子。
-   * [Firefly カスタムアプリのエンドポイント URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html)。アプリは、Experience Manager アカウントと同じ組織のものである必要があります。
-   * サービスパラメーターを追加し、[追加の情報やパラメーターをカスタムアプリケーションに渡します](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#extend)。
+   * [Firefly カスタムアプリのエンドポイント URL](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=ja)。アプリは、Experience Manager アカウントと同じ組織のものである必要があります。
+   * サービスパラメーターを追加し、[追加の情報やパラメーターをカスタムアプリケーションに渡します](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja#extend)。
    * MIME タイプを追加および除外し、処理を特定のファイル形式のみに制限します。
 
    「**[!UICONTROL 保存]**」をクリックします。
@@ -182,7 +182,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 アセットの追加処理が必要で、処理プロファイルを使用して処理できない場合は、後処理ワークフローを設定に追加できます。 これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
 
-後処理ワークフローは、設定されている場合、マイクロサービスの処理が終了した後、[!DNL Experience Manager]によって自動的に実行されます。 ワークフローランチャーを手動でワークフローにトリガーする必要はありません。 次に例を示します。
+後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、[!DNL Experience Manager] で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動でワークフローにトリガーする必要はありません。 次に例を示します。
 
 * アセットを処理するためのカスタムワークフロー手順。
 * 外部システムから提供されるアセット（製品やプロセスの情報など）にメタデータやプロパティを追加するための統合機能。
@@ -197,7 +197,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### 後処理ワークフローモデルの作成 {#create-post-processing-workflow-models}
 
-後処理ワークフローモデルは、通常の[!DNL Experience Manager]ワークフローモデルです。 リポジトリの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
+後処理ワークフローモデルは、通常の [!DNL Experience Manager] ワークフローモデルです。リポジトリの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
 処理ステップは、ニーズに応じて追加する必要があります。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
 
@@ -215,7 +215,7 @@ Adobe CQDAMカスタムワークフローランナー(`com.adobe.cq.dam.processo
 >[!NOTE]
 >
 >Custom Workflow Runner の設定は、OSGi サービスの設定になります。OSGi 設定のデプロイ方法については、[Adobe Experience Manager へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
->OSGi Webコンソールは、[!DNL Experience Manager]のオンプレミスおよび管理されたサービスデプロイメントとは異なり、クラウドサービスデプロイメントでは直接利用できません。
+>OSGi Web コンソールは、[!DNL Experience Manager] のオンプレミスデプロイメントや Managed Services でのデプロイメントとは異なり、クラウドサービスデプロイメントでは直接使用できません。
 
 後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
 
