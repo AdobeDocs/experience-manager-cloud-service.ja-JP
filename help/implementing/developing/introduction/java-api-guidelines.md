@@ -1,26 +1,26 @@
 ---
-title: Java APIのガイドライン
-description: AEMは、多くのJava APIを公開するリッチなオープンソースソフトウェアスタック上で構築されています。
+title: Java API ガイドライン
+description: AEM は、使用可能な多数の Java API を公開する豊富なオープンソースソフトウェアスタックに基づいて構築されています。
 translation-type: tm+mt
 source-git-commit: b927992107d7e7e4df5511a366c71449ff73ec93
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 
-# Java APIガイドライン{#java-api-guidelines}
+# Java API ガイドライン {#java-api-guidelines}
 
-Adobe Experience Manager(AEM)は、開発中に使用する多くのJava APIを公開する、リッチなオープンソースソフトウェアスタック上に構築されています。
+Adobe Experience Manager（AEM）は、開発時に使用可能な多数の Java API を公開する豊富なオープンソースソフトウェアスタックに基づいて構築されています。
 
-AEMは、次の4つの主要なJava APIセットを優先順に基づいて構築されています。
+AEM は、優先順に次の 4 つの主要な Java API セットに基づいて構築されています。
 
-1. **Adobe Experience Manager(AEM)**  — ページ、アセット、ワークフローなどの製品概念。
-1. **[Apache Sling Web Framework](https://sling.apache.org/apidocs/sling11/)**  - RESTおよびリソースベースの抽象概念（リソース、値マップ、HTTP要求など）。
-1. **[JCR(Apache Jackrabbit Oak)](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)**  — ノード、プロパティ、セッションなどのデータおよびコンテンツの抽象概念。
-1. **[OSGi(Apache Felix)](https://felix.apache.org)**  — サービスや(OSGi)コンポーネントなどのOSGiアプリケーションコンテナ抽象概念。
+1. **Adobe Experience Manager（AEM）** - 製品の抽象概念（ページ、アセット、ワークフローなど）。
+1. **[Apache Sling Web フレームワーク](https://sling.apache.org/apidocs/sling11/)** - REST およびリソースベースの抽象概念（リソース、値マップ、HTTP リクエストなど）。
+1. **[JCR（Apache Jackrabbit Oak）](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)** - データおよびコンテンツの抽象概念（ノード、プロパティ、セッションなど）。
+1. **[OSGi（Apache Felix）](https://felix.apache.org)** - OSGi アプリケーションコンテナの抽象概念（サービスや（OSGi）コンポーネントなど）。
 
-APIがAEMで提供される場合は、Sling、JCR、OSGiよりも優先します。 AEMがAPIを提供しない場合は、JCRやOSGiよりSlingを優先します。
+AEM が API を提供する場合は、それを Sling、JCR、OSGi よりも優先します。AEM が API を提供しない場合は、Sling を JCR や OSGi よりも優先します。
 
-これらのガイドラインの詳細については、「[Java APIのベストプラクティスについて」のドキュメントを参照してください。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+これらのガイドラインについて詳しくは、[Java API のベストプラクティスについて](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=ja)を参照してください。
