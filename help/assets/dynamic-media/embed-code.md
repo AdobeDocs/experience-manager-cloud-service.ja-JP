@@ -1,11 +1,11 @@
 ---
 title: Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み
-description: WebページにDynamic Mediaのビデオや画像アセットを埋め込む方法を説明します。
+description: Web ページに Dynamic Media ビデオまたは画像アセットを埋め込む方法を説明します。
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
