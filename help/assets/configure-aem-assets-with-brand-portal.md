@@ -1,23 +1,23 @@
 ---
-title: ブランドポータルでAEM Assetsを [!DNL Cloud Service] として構成
+title: AEM Assets as a  [!DNL Cloud Service]  と Brand Portal の連携の設定
 description: AEM Assets と Brand Portal の連携を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
 source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
 workflow-type: tm+mt
 source-wordcount: '1629'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
 
-# ブランドポータル{#configure-aem-assets-with-brand-portal}でAEM Assetsを[!DNL Cloud Service]として設定
+# AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携の設定 {#configure-aem-assets-with-brand-portal}
 
-Adobe Experience Managerアセットブランドポータルを設定すると、承認されたブランドアセットをAdobe Experience Managerアセットから[!DNL Cloud Service]インスタンスとしてBrand Portalに発行し、Brand Portalユーザーに配信できます。
+Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスから Brand Portal に公開し、Brand Portal ユーザーに配信できます。
 
 **設定ワークフロー**
 
-[!DNL Cloud Service]としてのAEM Assetsは、Adobe開発者コンソールを介してBrand Portalで設定されます。このコンソールは、Brand Portalテナントの認証用にAdobeIdentity Managementサービス(IMS)アカウントトークンを調達します。 この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
+AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携は、Adobe 開発者コンソールを通じて設定されます。このコンソールでは、Brand Portal テナントの認証に使用する Adobe Identity Management サービス（IMS）アカウントトークンを調達します。この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
 
 1. AEM Assets で、IMS アカウントを作成して公開鍵（証明書）を生成します。
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。
@@ -29,13 +29,13 @@ Adobe Experience Managerアセットブランドポータルを設定すると�
 
 >[!NOTE]
 >
->[!DNL Cloud Service]インスタンスとしてのAEM Assetsは、1つのBrand Portalテナントでのみ構成する必要があります。
+>AEM Assets as a [!DNL Cloud Service] インスタンスには、1 つの Brand Portal テナントとの連携のみ設定する必要があります。
 
 ## 前提条件 {#prerequisites}
 
 AEM Assets と Brand Portal の連携を設定するには以下が必要です。
 
-* [!DNL Cloud Service]インスタンスとしてのAEM Assetsの起動および実行
+* 実行中の AEM Assets as a [!DNL Cloud Service] インスタンス
 * Brand Portal テナント URL
 * Brand Portal テナントの IMS 組織に対するシステム管理者権限を持つユーザー
 
@@ -51,7 +51,7 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 
 ### IMS 設定の作成 {#create-ims-configuration}
 
-IMS設定は、Brand Portalテナントを使用して[!DNL Cloud Service]インスタンスとしてAEM Assetsを認証します。
+IMS 設定では、AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの連携を認証します。
 
 IMS 設定には、次の 2 つの手順が含まれます。
 
@@ -65,7 +65,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 1. AEM Assets にログインします。
 1. **ツール**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL Adobe IMS 技術アカウント設定]**&#x200B;ページにリダイレクトされます。デフォルトでは、「**証明書**」タブが開きます。
-1. 「**[!UICONTROL クラウドソルーション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
+1. 「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
 1. 「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の&#x200B;**エイリアス**&#x200B;を指定します。ここで入力したエイリアスが、公開鍵になります。
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックして公開証明書を生成します。
 
@@ -89,7 +89,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 サービスアカウント資格情報と JWT ペイロードを生成するには、次の手順を実行します。
 
-1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は次のとおりです。[https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は、[https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
 
 
    >[!NOTE]
@@ -106,7 +106,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
    AEM Brand Portal サービスにアクセスできることを確認します。
 
-1. **[!UICONTROL API を設定]**&#x200B;ウィンドウで、「**[!UICONTROL 公開鍵をアップロード]**」をクリックします。次に、「**[!UICONTROL ファイルを選択]**」をクリックし、[公開証明書の取得](#public-certificate)節でダウンロードした公開鍵（.crt ファイル）をアップロードします。
+1. **[!UICONTROL API を設定]**&#x200B;ウィンドウで、「**[!UICONTROL 公開鍵をアップロード]**」をクリックします。次に、「**[!UICONTROL ファイルを選択]**」をクリックし、[公開証明書の取得](#public-certificate)のセクションでダウンロードした公開鍵（.crt ファイル）をアップロードします。
 
    「**[!UICONTROL 次へ]**」をクリックします。
 
@@ -211,7 +211,7 @@ IMS アカウントを設定するには、次の手順を実行します。
 >
 >IMS 設定がヘルスチェックに合格していることを確認します。設定がヘルスチェックに合格しない場合は無効です。削除して、新しい有効な設定を作成する必要があります。
 
-### Cloud Service の設定{#configure-the-cloud-service}
+### Cloud Service の設定 {#configure-the-cloud-service}
 
 Brand Portal Cloud Service を設定するには、次の手順を実行します。
 
@@ -231,9 +231,9 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。クラウド設定が作成されます。
 
-   [!DNL Cloud Service]インスタンスとしてのAEM AssetsがBrand Portalテナントと共に構成されました。
+   これで、AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの連携が設定されました。
 
-### 設定のテスト{#test-configuration}
+### 設定のテスト {#test-configuration}
 
 設定を検証するには、次の手順を実行します。
 
@@ -262,7 +262,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
    ![](assets/test-bpconfig3.png)
 
-1. [!DNL Cloud Service]とBrand PortalのAEM Assets間の接続を確認するには、**[!UICONTROL 接続をテスト]**&#x200B;アイコンをクリックします。
+1. AEM Assets as a [!DNL Cloud Service] と Brand Portal の間の接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
 
    ![](assets/test-bpconfig4.png)
 
