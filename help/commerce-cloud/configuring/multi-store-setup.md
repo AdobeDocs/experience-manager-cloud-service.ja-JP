@@ -1,6 +1,6 @@
 ---
 title: マルチストアの設定
-description: 複数のストア表示をMagentoからAEMにマッピングする方法を説明します。 これにより、プロジェクトでマルチテナントおよびマルチ言語の使用例をサポートできます。
+description: 複数のストア表示を Magento から AEM にマッピングする方法を説明します。これにより、マルチテナントおよび多言語のユースケースをプロジェクトでサポートできます。
 sub-product: Commerce
 version: cloud-service
 doc-type: technical-video
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
 3. 次の手順に従って、CIF Cloud Service 設定の子設定を作成します。
 
-   * AEMで、Tools -> General -> [Configuration Browser](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)に移動します。
+   * AEM で、ツール／一般／[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)に移動します。
    * 作成したベース設定を選択します。
    * 上記のポイント 2 で説明した手順を使用して、新しい設定を作成します。
 
