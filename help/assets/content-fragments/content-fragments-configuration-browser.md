@@ -1,40 +1,40 @@
 ---
-title: コンテンツフラグメント — 設定ブラウザー
+title: コンテンツフラグメント - 設定ブラウザー
 description: 設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
 translation-type: tm+mt
 source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 42%
+ht-degree: 93%
 
 ---
 
 
-# コンテンツフラグメント — 設定ブラウザー{#content-fragments-configuration-browser}
+# コンテンツフラグメント - 設定ブラウザー {#content-fragments-configuration-browser}
 
-## インスタンスのコンテンツフラグメント機能を有効にする{#enable-content-fragment-functionality-instance}
+## インスタンスに対するコンテンツフラグメント機能の有効化 {#enable-content-fragment-functionality-instance}
 
 コンテンツフラグメントを使用する前に、**設定ブラウザー**&#x200B;を使用して以下を有効にする必要があります。
 
-* **コンテンツフラグメントモデル**  — 必須
-* **GraphQLの永続的なクエリ**  — オプション
+* **コンテンツフラグメントモデル** - 必須
+* **GraphQL の永続的なクエリ** - オプション
 
 >[!CAUTION]
 >
 >**コンテンツフラグメントモデル**&#x200B;を有効にしないと、新しいモデルを作成するための「**作成**」オプションを使用できません。
 
-コンテンツフラグメント機能を有効にするには、次の操作を行う必要があります。
+コンテンツフラグメント機能を有効にするには、次の操作を実行する必要があります。
 
 * 設定ブラウザーを使用して、コンテンツフラグメント機能の使用を有効にする
 * アセットフォルダーへの設定の適用
 
-### 設定ブラウザーでコンテンツフラグメント機能を有効にする{#enable-content-fragment-functionality-in-configuration-browser}
+### 設定ブラウザーでコンテンツフラグメント機能を有効にする {#enable-content-fragment-functionality-in-configuration-browser}
 
-[特定のコンテンツフラグメント機能](#creating-a-content-fragment-model)を使用するには、**まず**&#x200B;設定ブラウザ&#x200B;**を使用して**&#x200B;有効にする必要があります。
+[特定のコンテンツフラグメント機能](#creating-a-content-fragment-model)を使用するには、まず&#x200B;**設定ブラウザー**&#x200B;を使用して有効にする&#x200B;**必要があります**。
 
 >[!NOTE]
 >
->詳しくは、[設定ブラウザー：](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)も参照してください。
+>詳しくは、「[設定ブラウザー](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)」も参照してください。
 
 >[!CAUTION]
 >
@@ -45,9 +45,9 @@ ht-degree: 42%
 1. 「**作成**」を使用してダイアログを開き、次の操作をおこないます。
 
    1. 「**タイトル**」を指定します。
-   1. ユーザーが使用できるようにするには、
+   1. 使用できるようにするには、以下を選択します。
       * **コンテンツフラグメントモデル**
-      * **GraphQLの永続的なクエリ**
+      * **GraphQL の永続的なクエリ**
 
       ![設定の定義](assets/cfm-conf-01.png)
 
@@ -58,7 +58,7 @@ ht-degree: 42%
 
 ### アセットフォルダーへの設定の適用 {#apply-the-configuration-to-your-assets-folder}
 
-設定&#x200B;**グローバル**&#x200B;がコンテンツフラグメント機能に対して有効になっている場合、すべてのアセットフォルダーに適用されます。
+「**グローバル**」がコンテンツフラグメント機能に対して有効になっている場合、設定はすべてのアセットフォルダーに適用されます。
 
 他の設定（グローバル以外）を同等のアセットフォルダーで使用するには、接続を定義する必要があります。そのためには、適切なフォルダーの「**フォルダーのプロパティ**」の「**クラウドサービス**」タブで「**設定**」を適切に選択します。
 
