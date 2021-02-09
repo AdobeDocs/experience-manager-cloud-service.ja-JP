@@ -1,6 +1,6 @@
 ---
 title: AEM Commerce as a Cloud Service - はじめに
-description: コマース対応のAEMプロジェクトを実行中のAEMにクラウドサービス環境としてデプロイする方法を説明します。 Adobeクラウドマネージャーの機能とCI/CDパイプラインを使用して、実行中の環境に対するVeniaリファレンスストアフロントを構築します。
+description: 実行中の AEM as a Cloud Service 環境にコマース対応の AEM プロジェクトをデプロイする方法を説明します。Adobe Cloud Manager の機能と CI／CD パイプラインを使用すると、実行中の環境に対する Venia 参照ストアフロントを構築できます。
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: cloud-service
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -63,25 +63,25 @@ AEM Commerce を Magento と接続するには、次の手順に従います。
 
 >[!NOTE]
 >
->または、[Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)を使用してCloud Manager変数を設定することもできます。
+>また、[Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html) を使用して Cloud Manager 変数を設定することもできます。
 
 これで、AEM Commerce as a Cloud Service を使用する準備が整い、Cloud Manager を介してプロジェクトをデプロイできます。
 
-## ステージングされたカタログ機能を有効にする（オプション） {#staging}
+## ステージング済みカタログ機能の有効化（オプション） {#staging}
 
 >[!NOTE]
 >
->この機能は、MagentoのEnterprise EditionまたはMagentoのCloudでのみ使用できます。
+>この機能は、Magento Enterprise Edition または Magento Cloud でのみ使用できます。
 
-1. Magentoにログインし、統合トークンを作成します。 詳しくは、[トークンベースの認証](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)を参照してください。 統合トークンに&#x200B;*`Content -> Staging`リソースへの*&#x200B;アクセスのみが含まれていることを確認してください。 `Access Token`値をコピーします。
+1. Magento にログインし、統合トークンを作成します。詳しくは、[トークンベースの認証](https://devdocs.magento.com/guides/v2.4/get-started/authentication/gs-authentication-token.html#integration-tokens)を参照してください。統合トークンから `Content -> Staging` リソースに&#x200B;*のみ*&#x200B;アクセスできることを確認してください。`Access Token` 値をコピーします。
 
-1. Cloud Managerで`COMMERCE_AUTH_HEADER`シークレット変数を設定します。
+1. Cloud Manager でシークレット変数 `COMMERCE_AUTH_HEADER` を設定します。
 
    ```bash
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --secret COMMERCE_AUTH_HEADER "Authorization Bearer: <Access Token>"
    ```
 
-   Cloud Manager用のAdobe I/OCLIの設定方法については、[「AEMコマースとMagentoの接続](#magento)」を参照してください。
+   Cloud Manager 用の Adobe I/O CLI を設定する方法については、[AEM Commerce と Magento の接続](#magento)を参照してください。
 
 ## サードパーティコマースシステムとの統合 {#integrations}
 
