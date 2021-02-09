@@ -2,10 +2,10 @@
 title: マルチサイトでのターゲットコンテンツの操作
 description: アクティビティ、エクスペリエンス、オファーなどのターゲットコンテンツを複数のサイトにまたがって管理する必要がある場合は、AEM に組み込まれているターゲットコンテンツ用マルチサイトサポートを利用できます。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 100%
+source-wordcount: '2915'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
 
 継承はいつでも休止または復元できます。さらに、継承を休止せずに、ローカルなエクスペリエンスを作成することもできます。デフォルトでは、特に指定しない限り、すべてのページがマスター領域を使用します。
 
-## ターゲットコンテンツ用マルチサイト管理の概要  {#introduction-to-multisite-support-for-targeted-content}
+## ターゲットコンテンツ用マルチサイト管理の概要 {#introduction-to-multisite-support-for-targeted-content}
 
 ターゲットコンテンツ用マルチサイト管理はすぐに利用可能です。この機能を使用して、MSM で管理されるマスターページからローカルなライブコピーにターゲットコンテンツをプッシュしたり、ターゲットコンテンツのグローバルな変更とローカルな変更を管理したりできます。
 
@@ -52,11 +52,12 @@ ht-degree: 100%
 >
 >* ロールアウトまたはライブコピーを利用する場合は MSM ライセンスが必要です。
 >* Adobe Target への同期を利用する場合は、Adobe Target ライセンスが必要です。
+
 >
 
 
 
-## 使用例  {#use-cases}
+## ユースケース {#use-cases}
 
 ターゲットコンテンツ用マルチサイト管理は、目的に応じて様々な方法で使用できます。この節では、この機能を 1 つのブランドで使用する場合の仕組みを説明します。さらに、[例：地域に基づくコンテンツのターゲット設定](#example-targeting-content-based-on-geography)では、複数のサイトでコンテンツのターゲット設定をおこなう具体的な例を示します。
 
@@ -188,9 +189,9 @@ AEM でこれを実現するには、次の作業をおこないます。
 
 1. **ロールアウトの設定**&#x200B;ドロップダウンメニューで、適切な設定を選択します。
 
-   各オプションの説明については、「インストール済みのロールアウト設定」を参照してください。<!--See [Installed Rollout Configurations](/help/sites-administering/msm-sync.md#installed-rollout-configurations) for descriptions of each option.-->
+   各オプションの説明については、[インストール済みのロールアウト設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)を参照してください。
 
-   ライブコピーについて詳しくは、「ライブコピーの作成と同期」を参照してください。<!--See [Creating and Synchronizing Live Copies](/help/sites-administering/msm-livecopy.md) for more information on live copies.-->
+   ライブコピーについて詳しくは、[ライブコピーの作成と同期](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)を参照してください。
 
    >[!NOTE]
    >
@@ -239,6 +240,7 @@ AEM でこれを実現するには、次の作業をおこないます。
 >
 >* 休止または分離できるのは、アクティビティ内のライブコピーだけです。
 >* 継承されたアクティビティを拡張するために、ライブコピーを休止または分離する必要はありません。そのアクティビティ用の&#x200B;**新しい**&#x200B;ローカルなエクスペリエンスやオファーをいつでも作成できます。既存のアクティビティを変更する場合は、継承を休止する必要があります。
+
 >
 
 
