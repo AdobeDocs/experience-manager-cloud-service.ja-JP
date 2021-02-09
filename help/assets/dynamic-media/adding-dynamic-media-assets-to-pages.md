@@ -1,24 +1,24 @@
 ---
 title: ページへの Dynamic Media アセットの追加
-description: Adobe Experience ManagerのページにCloud ServiceとしてDynamic Mediaコンポーネントを追加する方法。
+description: Adobe Experience Manager as a Cloud Service で Dynamic Media コンポーネントをページに追加する方法。
 translation-type: tm+mt
 source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
 workflow-type: tm+mt
 source-wordcount: '3135'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
-# ページへの Dynamic Media アセットの追加{#adding-dynamic-media-assets-to-pages}
+# ページへの Dynamic Media アセットの追加 {#adding-dynamic-media-assets-to-pages}
 
 Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。これをおこなうには、レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加できます。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
 
-WCMとしてExperience Managerを使用している場合は、Dynamic Mediaアセットを直接ページに追加します。 サードパーティの製品を WCM として使用している場合は、アセットの[リンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)または[埋め込み](/help/assets/dynamic-media/embed-code.md)をおこないます。サードパーティのレスポンシブ Web サイトの場合は、[レスポンシブサイトへの最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)を参照してください。
+Adobe Experience Manager を WCM として使用している場合は、Dynamic Media アセットを直接ページに追加します。サードパーティの製品を WCM として使用している場合は、アセットの[リンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)または[埋め込み](/help/assets/dynamic-media/embed-code.md)をおこないます。サードパーティのレスポンシブ Web サイトの場合は、[レスポンシブサイトへの最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
->アセットは、Experience Manager内のページに追加する前に公開する必要があります。 [Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+>Experience Manager でページに追加する前にアセットを公開する必要があります。[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
 ## ページへの Dynamic Media コンポーネントの追加 {#adding-a-dynamic-media-component-to-a-page}
 
@@ -26,8 +26,8 @@ WCMとしてExperience Managerを使用している場合は、Dynamic Mediaア�
 
 **ページへの Dynamic Media コンポーネントの追加**
 
-1. 「Experience Manager」で、Dynamic Mediaコンポーネントを追加するページを開きます。
-1. 左側のウィンドウで、「**[!UICONTROL コンポーネント]**」アイコンをタップし、「Dynamic Media」でフィルタリングします。
+1. Dynamic Media コンポーネントを追加するページを Experience Manager で開きます。
+1. 左側のウィンドウで、「**[!UICONTROL コンポーネント]**」アイコンをタップし、「ダイナミックメディア」でフィルタリングします。
 
    Dynamic Media コンポーネントのリストがない場合は、使用する Dynamic Media コンポーネントを有効にしなければならない可能性があります。詳しくは、[Dynamic Media コンポーネントの有効化](#enabling-dynamic-media-components)を参照してください。
 
@@ -53,7 +53,7 @@ WCMとしてExperience Managerを使用している場合は、Dynamic Mediaア�
 
 ページに追加できる Dynamic Media コンポーネントがない場合は、使用するコンポーネントをまず有効にしなければならない可能性があります。
 
-1. 「Experience Manager」で、Dynamic Mediaコンポーネントを追加するページを開きます。
+1. Dynamic Media コンポーネントを追加するページを Experience Manager で開きます。
 1. ページ上部付近のツールバーの左側にあるページ情報アイコンをタップした後、ドロップダウンリストから「**[!UICONTROL テンプレートを編集]**」をタップします。
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -67,8 +67,8 @@ WCMとしてExperience Managerを使用している場合は、Dynamic Mediaア�
 
    ![許可されたコンポーネント](/help/assets/assets-dm/allowed-components.png)
 
-1. **[!UICONTROL Dynamic Media]** が表示されるまでスクロールします。
-1. **[!UICONTROL Dynamic Media]** の左側にある「>」アイコンをタップしてリストを展開し、有効にする Dynamic Media コンポーネントを選択します。
+1. **[!UICONTROL ダイナミックメディア]**&#x200B;が表示されるまでスクロールします。
+1. **[!UICONTROL ダイナミックメディア]**&#x200B;の左側にある「>」アイコンをタップしてリストを展開し、有効にする Dynamic Media コンポーネントを選択します。
 
    ![Dynamic Media コンポーネントリスト](/help/assets/assets-dm/dm-components-select.png)
 
@@ -96,14 +96,14 @@ Dynamic Media コンポーネントのローカライズの方法は 2 つあり
 
 利用可能な Dynamic Media コンポーネントは次のとおりです。
 
-* **[!UICONTROL Dynamic Media]** - 画像、ビデオ、eCatalog、スピンセットなどのアセットに使用します。
+* **[!UICONTROL ダイナミックメディア]** - 画像、ビデオ、eCatalog、スピンセットなどのアセットに使用します。
 * **[!UICONTROL インタラクティブメディア]** - すべてのインタラクティブアセット（インタラクティブビデオ、インタラクティブ画像、カルーセルセットなど）に使用します。
 * **[!UICONTROL パノラマメディア -]** パノラマ画像またはパノラマ VR 画像アセットに使用します。
 * **[!UICONTROL ビデオ 360 メディア]** - 360 ビデオおよび 360 VR ビデオアセットに使用します。
 
 >[!NOTE]
 >
->これらのコンポーネントはデフォルトでは使用できないので、使用前にテンプレートエディターで使用可能にする必要があります。テンプレートエディターでコンポーネントを使用できるようになったら、他のExperience Managerコンポーネントと同様に、コンポーネントをページに追加できます。
+>これらのコンポーネントはデフォルトでは使用できないので、使用前にテンプレートエディターで使用可能にする必要があります。テンプレートエディターでコンポートを使用可能にした後は、他の Experience Manager コンポーネントの場合と同様にページに追加することができます。
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -124,17 +124,17 @@ Dynamic Media コンポーネントはスマートであり、追加している
 >
 >一方、ページ内で、同じタイプのアセットを使用するすべての Dynamic Media コンポーネントで同じビューアプリセットを使用することは可能です。
 
-Dynamic Media コンポーネントを追加したときに、「**[!UICONTROL Dynamic Media 設定]**」が空であるかアセットを適切に追加できない場合は、次の点を確認してください。
+Dynamic Media コンポーネントを追加したときに、「**[!UICONTROL ダイナミックメディア設定]**」が空であるかアセットを適切に追加できない場合は、次の点を確認してください。
 
 * 画像が PTIFF（Pyramid TIFF）ファイルであること。Dynamic Media を有効にする前に読み込まれた画像には、pyramid tiff ファイルはありません。
 
-#### 画像を操作する場合  {#when-working-with-images}
+#### 画像を操作する場合 {#when-working-with-images}
 
 Dynamic Media コンポーネントでは、画像セット、スピンセット、混在メディアセットなどの動的イメージを追加できます。ズームイン、ズームアウト、スピンセット内での画像の回転（該当する場合）または別のタイプのセットからの画像の選択をおこなうことができます。
 
 また、ビューアプリセット、画像プリセットまたは画像形式をコンポーネント内で直接設定することもできます。画像をレスポンシブにするために、ブレークポイントの設定かレスポンシブ画像プリセットの適用のいずれかを実行できます。
 
-コンポーネント内の&#x200B;**[!UICONTROL 編集]**&#x200B;アイコンをタップし、次に「**[!UICONTROL Dynamic Media 設定]**」をタップすると、次の Dynamic Media 設定を編集することができます。
+コンポーネント内の&#x200B;**[!UICONTROL 編集]**&#x200B;アイコンをタップし、次に「**[!UICONTROL ダイナミックメディア設定]**」をタップすると、次の Dnamic Media 設定を編集することができます。
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -210,7 +210,7 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 
 Dynamic Media コンポーネントを使用して、スマート切り抜き画像アセットを Web ページに追加します。コンポーネントの編集時に、ページ上でビデオを再生するための事前定義済みのビデオビューアプリセットを使用するように選択できます。
 
-「[Experience Managerアセットでのスマート切り抜きの使用」Dynamic Media](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)を参照してください。
+詳しくは、[Experience Manager Assets Dynamic Media でのスマート切り抜きの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)を参照してください。
 
 [イメージプロファイル](/help/assets/dynamic-media/image-profiles.md)も参照してください。
 
@@ -337,10 +337,10 @@ Dynamic Media アカウントでの HTTP/2 の使用方法について詳しく�
 
 >[!MORELIKETHIS]
 >
->* [Experience ManagerDynamic Mediaでのビデオプレイヤの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Experience ManagerDynamic Mediaでのインタラクティブビデオの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Experience ManagerDynamic Mediaのアセットビューアについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Experience ManagerDynamic Mediaでのカスタムビデオサムネールの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Experience ManagerDynamic Mediaのカラーマネジメントについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Experience ManagerDynamic Mediaでの画像へのシャープの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Experience Manager Dynamic Media でのビデオプレーヤーの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
+>* [Experience Manager Dynamic Media でのインタラクティブビデオの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
+>* [Experience Manager Dynamic Media でのアセットビューアについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Experience Manager Dynamic Media でのカスタムビデオサムネールの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Experience Manager Dynamic Media でのカラーマネジメントについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Experience Manager Dynamic Media での画像シャープ処理の使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
