@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 3ee2e53268ea77949057ac18fcb4a8f8b1e01cb2
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 96%
 * 有効期限
 * 変更
 * 公開
-* [!DNL Brand Portal] publish
+* [!DNL Brand Portal] 公開
 * ディスク使用量
 * ファイル
 * リンク共有
@@ -43,7 +43,7 @@ ht-degree: 96%
 
    ![アセットレポートに移動するツールページ](assets/navigation.png)
 
-1. アセットレポートページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
+1. [!UICONTROL アセットレポート]ページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
 1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をクリックします。
 
    ![レポートタイプの選択](assets/choose_report.png)
@@ -118,13 +118,13 @@ ht-degree: 96%
 * 有効期限
 * 変更
 * 公開
-* [!DNL Brand Portal] publish
+* [!DNL Brand Portal] 公開
 * ファイル
 
 これらのレポートにカスタム列を追加するには、次の手順に従います。
 
 1. [!DNL Manager interface] で、 **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL レポート]**&#x200B;をクリックします 。
-1. アセットレポートページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
+1. [!UICONTROL アセットレポート]ページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
 
 1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をクリックします。
 1. タイトル、説明、サムネール、フォルダーパス、期間など、該当するレポートの詳細を設定します。
@@ -153,6 +153,6 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## トラブルシューティング情報、ヒント、制限事項{#best-practices-and-limitations}
+## トラブルシューティング情報、ヒント、制限事項 {#best-practices-and-limitations}
 
-* ディスク使用量レポートが生成されず、[!DNL Dynamic Media]を使用している場合は、すべてのアセットが正しく処理されることを確認します。 解決するには、アセットを再処理し、レポートを再生成します。
+* [!DNL Dynamic Media] を使用していて、ディスク使用量レポートが生成されない場合は、すべてのアセットが正しく処理されていることを確認します。問題を解決するには、アセットを再処理してから、レポートを再度生成します。
