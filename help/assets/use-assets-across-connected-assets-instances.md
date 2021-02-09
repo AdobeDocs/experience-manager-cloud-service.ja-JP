@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: f548a4eecbd2a7c6bad2a848ce493c2dcff3f248
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 62%
+ht-degree: 71%
 
 ---
 
 
-# Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有{#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。1 つの理由は、連携して動作する必要がある既存のデプロイメントを地理的に分散させることができます。もう 1 つの理由は、親会社が一緒に使用したい異種インフラストラクチャをもたらす買収です。
 
@@ -19,7 +19,7 @@ ht-degree: 62%
 
 ## Connected Assets の概要 {#overview-of-connected-assets}
 
-[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の[!DNL Assets]デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。 管理者は、[!DNL Experience Manager]の展開と[!DNL Sites]の機能と[!DNL Experience Manager]の機能との1回限りの統合を[!DNL Assets]の機能との別の展開に作成します。
+[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。
 
 [!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットを [!DNL Sites] ローカルデプロイメントで一度に利用できるようにするには、リモートアセットを一括で移行することを検討します。
 
@@ -28,9 +28,9 @@ ht-degree: 62%
 この機能を使用または設定する前に、以下を確認してください。
 
 * ユーザーがそれぞれのデプロイメント上で適切なユーザーグループに属している。
-* [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。[!DNL Experience Manager] 6.5でのこの機能の動作について詳しくは、[Experience Manager6.5のアセット](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html)の接続済みアセットを参照してください。
+* [!DNL Adobe Experience Manager] のデプロイメントタイプでは、サポートされている条件の 1 つが満たされます。[!DNL Experience Manager] 6.5 でのこの機能の動作について詳しくは、[Experience Manager 6.5 のアセットの接続済みアセット](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=ja)を参照してください。
 
-   |  | [!DNL Sites] として  [!DNL Cloud Service] | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
+   |  | [!DNL Sites] as a [!DNL Cloud Service] | AMS 上の [!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]として[!DNL Cloud Service]** | サポート対象 | サポート対象 | サポート対象 |
    | AMS 上の **[!DNL Experience Manager]6.5 [!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
@@ -40,7 +40,7 @@ ht-degree: 62%
 
 作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターで使用します。ドキュメントが `Download` コンポーネントに追加され、画像が `Image` コンポーネントに追加されます。作成者は、デフォルトの `Download` または `Image` コンポーネントを拡張するカスタム [!DNL Experience Manager] コンポーネントにもリモートアセットを追加します。サポートされる形式は以下の通りです。
 
-* **画像形式**：[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)がサポートする形式。[!DNL Dynamic Media] 画像はサポートされていません。
+* **画像形式**：[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja)がサポートする形式。[!DNL Dynamic Media] 画像はサポートされていません。
 * **ドキュメント形式**：詳しくは、[サポートされるドキュメント形式](file-format-support.md#document-formats)を参照してください。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
@@ -154,7 +154,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 >[!CAUTION]
 >
->Webページで使用すると、取得したリモートアセットは、ローカルフォルダーへのアクセス権限を持つユーザーが検索および使用できます。 取得したアセットは、ローカルフォルダ（上のウォークスルーの`connectedassets`）に保存されます。 これらのアセットは、ローカルリポジトリでも[!UICONTROL コンテンツファインダー]経由で検索および表示できます。
+>Web ページで使用すると、取得したリモートアセットは、ローカルフォルダーへのアクセス権限を持つユーザーが検索および使用できます。取得したアセットは、ローカルフォルダー（上のウォークスルーの `connectedassets`）に保存されます。これらのアセットは、ローカルリポジトリでも[!UICONTROL コンテンツファインダー]経由で検索および表示できます。
 
 取得されたアセットは他のローカルアセットと同じように使用できます。ただし、関連するメタデータは編集できません。
 
@@ -213,9 +213,9 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 * [!UICONTROL コンテンツファインダー]からリモートアセットを検索できない場合は、必要な役割と権限が設定されていることを確認してください。
 * リモート DAM から取得したアセットは、1 つ以上の理由で Web ページに発行できない場合があります。リモートサーバーに存在しない、取得する適切なアクセス許可がない、ネットワーク障害、などが原因の可能性があります。アセットがリモート DAM から削除されていないことを確認してください。適切な権限が設定され、前提条件が満たされていることを確認します。アセットをページに追加し直して、再公開してください。アセット取得時のエラーについては、[非同期ジョブのリスト](/help/operations/asynchronous-jobs.md)を確認してください。
-* ローカル[!DNL Sites]展開からリモートDAM展開にアクセスできない場合は、クロスサイトcookieが許可されていることを確認してください。 クロスサイトcookieがブロックされると、[!DNL Experience Manager]の2つのデプロイメントが認証されない場合があります。 例えば、匿名モードの[!DNL Google Chrome]は、サードパーティcookieをブロックする可能性があります。 [!DNL Chrome]ブラウザーでcookieを許可するには、アドレスバーの「目」アイコンをクリックし、「サイトが動作していません」/「ブロック」に移動し、リモートDAM URLを選択して、ログイントークンcookieを許可します。 または、[サードパーティcookieを有効にする方法](https://support.google.com/chrome/answer/95647)に関するヘルプを参照してください。
+* ローカル [!DNL Sites] デプロイメントからリモート DAM デプロイメントにアクセスできない場合は、クロスサイト cookie が許可されていることを確認してください。クロスサイト cookie がブロックされると、[!DNL Experience Manager] の 2 つのデプロイメントが認証されない場合があります。例えば、匿名モードの [!DNL Google Chrome] は、サードパーティ cookie をブロックする可能性があります。[!DNL Chrome] ブラウザーで cookie を許可するには、アドレスバーの「目」アイコンをクリックし、「サイトが動作していません」／「ブロック」に移動し、リモート DAM URL を選択して、ログイントークン cookie を許可します。または、[サードパーティ cookie を有効にする方法](https://support.google.com/chrome/answer/95647)に関するヘルプを参照してください。
 
-   ![匿名モードでのChromeでのCookieエラー](assets/chrome-cookies-incognito-dialog.png)
+   ![匿名モードでの Chrome での cookie エラー](assets/chrome-cookies-incognito-dialog.png)
 
 * リモート参照が取得されず、エラーメッセージが表示される場合は、サイト展開が使用可能かどうかを確認し、ネットワーク接続の問題がないかどうかを確認します。 後で確認し直してください。 [!DNL Assets] デプロイメントは、 [!DNL Sites] デプロイメントとの接続を確立しようとして2回試み、失敗が報告されます。
 
