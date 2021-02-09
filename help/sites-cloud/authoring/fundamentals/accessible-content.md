@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
 workflow-type: tm+mt
 source-wordcount: '14060'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
 
 ガイドラインは 3 つの適合レベル（レベル A（最低）、レベル AA、レベル AAA（最高））に分けられます。各レベルの簡単な定義を次に示します。
 
-* **レベル A：**&#x200B;サイトのアクセシビリティ基本的な最小レベルに達します。このレベルに達するには、レベル A の達成基準をすべて満たしている必要があります。
+* **レベル A：**&#x200B;サイトのアクセシビリティ基本的な最低レベルに達しています。このレベルに達するには、レベル A の達成基準をすべて満たしている必要があります。
 * **レベル AA：**&#x200B;理想的なレベルのアクセシビリティです。ほとんどの状況で、ほとんどのテクノロジーを使用して、ほとんどのユーザーがアクセスできるように、サイトのアクセシビリティの基盤が整備されています。このレベルに達するには、レベル A とレベル AA の達成基準をすべて満たしている必要があります。
 * **レベル AAA：**&#x200B;きわめて高いレベルのアクセシビリティが確保されているサイトです。このレベルに達するには、レベル A、レベル AA、レベル AAA の達成基準をすべて満たしている必要があります。
 
@@ -51,17 +51,17 @@ ht-degree: 99%
 
 [原則 1：知覚可能 - 情報およびユーザーインターフェイスコンポーネントは、ユーザーが知覚できる方法でユーザーに提示可能でなければならない。](https://www.w3.org/TR/WCAG/#perceivable)
 
-### 代替テキスト（1.1）{#text-alternatives}
+### 代替テキスト（1.1） {#text-alternatives}
 
 [ガイドライン 1.1 代替テキスト：すべてのテキスト以外のコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などのユーザーが必要とする形式に変換できるように、代替テキストを提供すること。](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### テキスト以外のコンテンツ（1.1.1）  {#non-text-content}
+### テキスト以外のコンテンツ（1.1.1） {#non-text-content}
 
 * 達成基準 1.1.1
 * レベル A
 * テキスト以外のコンテンツ：ユーザーに提示されるすべてのテキスト以外のコンテンツには、同等の目的を果たす代替テキストが提供されます。ただし、次の場合は除きます。
 
-#### 目的 - テキスト以外のコンテンツ（1.1.1）{#purpose-non-text-content}
+#### 目的 - テキスト以外のコンテンツ（1.1.1） {#purpose-non-text-content}
 
 Web ページ上の情報はテキスト以外の様々な形式（写真、ビデオ、アニメーション、チャート、グラフなど）で指定できます。視覚に障碍のあるユーザーは、テキスト以外のコンテンツを見ることができませんが、スクリーンリーダーによる読み上げや、触覚で感知可能な点字表示デバイスを使用すれば、テキストコンテンツにアクセスできます。そのため、グラフィカルな形式にコンテンツの代替テキストを指定することにより、グラフィカルなコンテンツを見ることができないユーザーも、そのコンテンツが提供するものと同等の情報にアクセスできます。
 
@@ -132,7 +132,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 ここでは、*時間依存*&#x200B;の Web コンテンツについて扱います。これには、ユーザーが再生可能なコンテンツ（映像、音声、アニメーションなど）や、収録済みのコンテンツ、ライブストリームなどが含まれます。
 
-### 音声のみおよび映像のみ（収録済み）（1.2.1）{#audio-only-and-video-only-prerecorded}
+### 音声のみおよび映像のみ（収録済み）（1.2.1） {#audio-only-and-video-only-prerecorded}
 
 * 達成基準 1.2.1
 * レベル A
@@ -140,7 +140,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
    * 収録済みの音声のみ：時間依存メディアの代替コンテンツが提供されており、収録済みの音声のみのコンテンツと同等の情報を提示している。
    * 収録済みの映像のみ：時間依存メディアの代替コンテンツまたは音声トラックが提供されており、収録済みの映像のみのコンテンツと同等の情報を提示している。
 
-#### 目的 - 音声のみおよび映像のみ（収録済み）（1.2.1）{#purpose-audio-only-and-video-only-prerecorded}
+#### 目的 - 音声のみおよび映像のみ（収録済み）（1.2.1） {#purpose-audio-only-and-video-only-prerecorded}
 
 次のようなユーザーに、アクセシビリティの問題が発生します。
 
@@ -152,7 +152,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 この情報を別の形式（テキストや、音声なしの映像に音声を付けるなど）で提供すると、元のコンテンツにアクセスできないユーザーがアクセス可能になります。
 
-#### 達成方法 - 音声のみおよび映像のみ（収録済み）（1.2.1）{#how-to-meet-audio-only-and-video-only-prerecorded}
+#### 達成方法 - 音声のみおよび映像のみ（収録済み）（1.2.1） {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * 映像なしの収録済み音声コンテンツ（ポッドキャストなど）の場合：
    * 音声コンテンツの字幕のリンクをコンテンツの直前または直後に提示します。字幕は、話の内容と、話されていない重要な内容のすべてに相当するテキストを含む HTML ページとし、話者を明記し、状況説明、声の表情、その他の重要な音声の説明を含める必要があります。
@@ -172,22 +172,22 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 >
 >情報提供のためのコンテンツでマルチメディアを使用する場合は、代替のリンクも作成する必要があります。例えば、字幕を含めるには、字幕を表示するための HTML ページを作成してから、音声コンテンツの横または下にリンクを追加します。
 
-#### 詳細情報 - 音声のみおよび映像のみ（収録済み）（1.2.1）{#more-information-audio-only-and-video-only-prerecorded}
+#### 詳細情報 - 音声のみおよび映像のみ（収録済み）（1.2.1） {#more-information-audio-only-and-video-only-prerecorded}
 
 * [達成基準 1.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)
 * [達成基準 1.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded)
 
-### キャプション（収録済み）（1.2.2）{#captions-prerecorded}
+### キャプション（収録済み）（1.2.2） {#captions-prerecorded}
 
 * 達成基準 1.2.2
 * レベル A
 * キャプション（収録済み）：同期されたメディアに含まれるすべての収録済み音声コンテンツに対してキャプションが提供されます。ただし、そのメディアがテキストの代替メディアであり、その旨の明確なラベルが付けられている場合を除きます。
 
-#### 目的 - キャプション（収録済み）（1.2.2）{#purpose-captions-prerecorded}
+#### 目的 - キャプション（収録済み）（1.2.2） {#purpose-captions-prerecorded}
 
 聴覚障碍のあるユーザーは、音声コンテンツにアクセスできないか、アクセスが非常に困難になります。キャプションは、音声で話されている内容と話されていない内容に相当するテキストであり、映像再生中に適時画面に表示されます。これにより、音声を聞くことのできないユーザーが内容を理解できます。
 
-#### 達成方法 - キャプション（収録済み）（1.2.2）{#how-to-meet-captions-prerecorded}
+#### 達成方法 - キャプション（収録済み）（1.2.2） {#how-to-meet-captions-prerecorded}
 
 キャプションは、次のいずれかの状態に設定できます。
 
@@ -210,31 +210,31 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
 -->
 
-### 音声解説または代替メディア（収録済み）（1.2.3）{#audio-description-or-media-alternative-prerecorded}
+### 音声解説または代替メディア（収録済み）（1.2.3） {#audio-description-or-media-alternative-prerecorded}
 
 * 達成基準 1.2.3
 * レベル A
 * 音声解説または代替メディア（収録済み）：収録済みの映像コンテンツの時間依存メディアまたは音声解説の代わりとなるものが、同期されたメディアに対して提供されている。ただし、そのメディアがテキストの代替メディアであり、その旨の明確なラベルが付けられている場合を除きます。
 
-#### 目的 - 音声解説または代替メディア（収録済み）（1.2.3）{#purpose-audio-description-or-media-alternative-prerecorded}
+#### 目的 - 音声解説または代替メディア（収録済み）（1.2.3） {#purpose-audio-description-or-media-alternative-prerecorded}
 
 映像やアニメーションの情報が視覚的にのみ提供されている場合や、内容を視覚的に理解するのに十分な情報が音声で提供されていない場合は、視覚障碍のあるユーザーにアクセシビリティの問題が発生します。
 
-#### 達成方法 - 音声解説または代替メディア（収録済み）（1.2.3）{#how-to-meet-audio-description-or-media-alternative-prerecorded}
+#### 達成方法 - 音声解説または代替メディア（収録済み）（1.2.3） {#how-to-meet-audio-description-or-media-alternative-prerecorded}
 
 この達成基準を満たすために採用できる方法は 2 つあり、どちらを使用してもかまいません。
 
 1. 映像コンテンツに音声解説を追加します。これをおこなうには、次の 3 つのうちいずれかの方法を使用します。
    * 既存のボイスの休止部分で、既存の音声トラックでは提示されていないシーンの変化に関する情報を提供します。
    * 元の音声を含み、さらにシーンの変化に関する追加の音声情報も含む新しい追加のオプション音声トラックを提供します。
-      * これにより、ユーザーは既存の音声トラック（**&#x200B;音声解説を含まない）と新しい音声トラック（**&#x200B;音声解説を含む）を切り替えることができます。
+      * これにより、ユーザーは既存の音声トラック&#x200B;*（*&#x200B;音声解説を含まない&#x200B;*）*&#x200B;と新しい音声トラック（音声解説を含む）を切り替えることができます。
       * これにより、追加の説明が不要なユーザーの混乱を防ぐことができます。
    * 音声解説を拡張できるように、2 つ目のバージョンの映像コンテンツを作成します。これにより、適切な時点で音声と映像を一時的に休止して既存のボイスの合間に詳細な音声解説を提供することに関連する困難な作業を軽減できます。その結果、アクションが再開される前に、より長い音声解説を指定できます。前の例と同様に、追加の説明が不要なユーザーの混乱を防ぐために、この方法はオプションの追加音声トラックとして提供することをお勧めします。
 1. 映像またはアニメーションの音声および視覚要素をテキストで適切に表現した字幕を提供します。誰が話しているかや、状況の説明、視覚的に提示されるイベントや情報、声の表情を適宜含めてください。長さによって、字幕は映像やアニメーションと同じページに配置するか、別のページに配置できます。後者を選んだ場合は、映像またはアニメーションのすぐ近くに字幕へのリンクを提示してください。
 
 音声解説付きの映像の詳細な作成方法は、このガイドの範囲外です。映像および音声解説の作成には長時間を要する可能性がありますが、他のアドビ製品が役に立つ場合があります。
 
-#### 詳細情報 - 音声解説または代替メディア（収録済み）（1.2.3）{#more-information-audio-description-or-media-alternative-prerecorded}
+#### 詳細情報 - 音声解説または代替メディア（収録済み）（1.2.3） {#more-information-audio-description-or-media-alternative-prerecorded}
 
 * [達成基準 1.2.3 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html)
 * [達成基準 1.2.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
@@ -243,7 +243,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### キャプション（ライブ）（1.2.4）             {#captions-live}
+### キャプション（ライブ）（1.2.4）                  {#captions-live}
 
 * 達成基準 1.2.4
 * レベル AA
@@ -253,7 +253,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 この達成基準は、聴覚障碍のあるユーザーのアクセシビリティに関する問題に対応する点で、[キャプション（収録済み）](#captions-prerecorded)と同じです。ただし、この達成基準では Web キャストなどライブのプレゼンテーションを扱う点が異なります。
 
-#### 達成方法 - キャプション（ライブ）（1.2.4）{#how-to-meet-captions-live}
+#### 達成方法 - キャプション（ライブ）（1.2.4） {#how-to-meet-captions-live}
 
 上記の[キャプション（収録済み）](#captions-prerecorded)のガイダンスに従ってください。ただし、メディアがライブなので、キャプションは可能な限り短時間で、起こっていることに応じて作成する必要があります。したがって、リアルタイムキャプションツールや音声テキスト変換ツールの使用を検討してください。
 
@@ -263,26 +263,26 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * [AccessComputing プロジェクト（University of Washington）：Can captions be generated automatically using speech recognition?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
-#### 詳細情報 - キャプション（ライブ）（1.2.4）{#more-information-captions-live}
+#### 詳細情報 - キャプション（ライブ）（1.2.4） {#more-information-captions-live}
 
 * [達成基準 1.2.4 について](https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html)
 * [達成基準 1.2.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#captions-live)
 
-### 音声解説（収録済み）（1.2.5）{#audio-description-prerecorded}
+### 音声解説（収録済み）（1.2.5） {#audio-description-prerecorded}
 
 * 達成基準 1.2.5
 * レベル AA
 * 音声解説（収録済み）：同期されたメディアに含まれるすべての収録済み映像コンテンツに対して音声解説が提供されている。
 
-#### 目的 - 音声解説（収録済み）（1.2.5）{#purpose-audio-description-prerecorded}
+#### 目的 - 音声解説（収録済み）（1.2.5） {#purpose-audio-description-prerecorded}
 
 この達成基準は、[音声解説または代替メディア（収録済み）](#audio-description-or-media-alternative-prerecorded)と同じです。ただし作成者は、レベル AA に準拠するために、より詳細な音声解説を提供する必要があります。
 
-#### 達成方法 - 音声解説（収録済み）（1.2.5）{#how-to-meet-audio-description-prerecorded}
+#### 達成方法 - 音声解説（収録済み）（1.2.5） {#how-to-meet-audio-description-prerecorded}
 
 [音声解説または代替メディア（収録済み）](#audio-description-or-media-alternative-prerecorded)のガイダンスに従ってください。
 
-#### 詳細情報 - 音声解説（収録済み）（1.2.5）{#more-information-audio-description-prerecorded}
+#### 詳細情報 - 音声解説（収録済み）（1.2.5） {#more-information-audio-description-prerecorded}
 
 * [達成基準 1.2.5 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [達成基準 1.2.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
@@ -297,7 +297,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 * 音声のみ、または大きいテキストや高いコントラストなど、代替の視覚表示を使用する可能性のあるユーザー
 
-### 情報および関係性（1.3.1）              {#info-and-relationships}
+### 情報および関係性（1.3.1）                    {#info-and-relationships}
 
 * 達成基準 1.3.1
 * レベル A
@@ -318,7 +318,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * **見出し**：RTE のアクセシビリティ機能を有効にしている場合、AEM では 3 つのレベルのページ見出しが提供されます。これらを使用して、コンテンツのセクションおよびサブセクションを識別できます。「見出し 1」は最上位の見出し、「見出し 3」は最下位の見出しです。システム管理者の設定により、使用可能な見出しレベルを増やすこともできます。
 
 * **リスト**：HTML を使用して、3 つの異なるタイプのリストを指定できます。
-   * `<ul>` 要素は、順序なし（箇条書き）リスト&#x200B;**&#x200B;に使用します。個々のリスト項目は、`<li>` 要素を使用して識別されます。RTE では、**箇条書き**&#x200B;アイコンを使用します。
+   * `<ul>` 要素は、*順序なし*（箇条書き）リストに使用します。個々のリスト項目は、`<li>` 要素を使用して識別されます。RTE では、**箇条書き**&#x200B;アイコンを使用します。
    * `<ol>` 要素は、番号付きリスト&#x200B;**&#x200B;に使用します。個々のリスト項目は、`<li>` 要素を使用して識別されます。RTE では、「**番号付きリスト**」アイコンを使用します。
 
    既存のコンテンツを特定のリストタイプに変更する場合は、該当するテキストをハイライト表示して、適切なリストタイプを選択します。前述した段落テキストの入力方法を示す例と同様に、適切なリスト要素が HTML に自動的に追加されます。
@@ -404,31 +404,31 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
    >
    >この機能は、標準インストールでは、すぐには使用できません。RTE、HTML ルールおよびシリアライザーを設定する必要があります。
 
-#### 詳細情報 - 情報および関係性（1.3.1）{#more-information-info-and-relationships}
+#### 詳細情報 - 情報および関係性（1.3.1） {#more-information-info-and-relationships}
 
 * [達成基準 1.3.1 について](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 * [達成基準 1.3.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships)
 
-### 意味のあるシーケンス（1.3.2）{#meaningful-sequence}
+### 意味のあるシーケンス（1.3.2） {#meaningful-sequence}
 
 * 達成基準 1.3.2
 * レベル A
 * 意味のあるシーケンス：コンテンツが提示される順序がその意味に影響を与える場合、正しい読み取り順序をプログラム的に決定することができる。
 
-#### 目的 - 意味のあるシーケンス（1.3.2）{#purpose-meaningful-sequence}
+#### 目的 - 意味のあるシーケンス（1.3.2） {#purpose-meaningful-sequence}
 
 この達成基準の目的は、ユーザーエージェントが意味を理解するために必要な読み取り順序を維持しながら、コンテンツの代替表示を可能にすることです。意味を持つコンテンツの少なくとも 1 つのシーケンスをプログラムで判断できることが重要です。この達成基準を満たさないコンテンツは、支援テクノロジーがコンテンツを誤った順序で読み取った場合や、代替スタイルシートやその他の書式変更が適用された場合、ユーザーを混乱させたり、方向を狂わせたりする可能性があります。
 
-#### 達成方法 - 意味のあるシーケンス（1.3.2）{#how-to-meet-meaningful-sequence}
+#### 達成方法 - 意味のあるシーケンス（1.3.2） {#how-to-meet-meaningful-sequence}
 
 [達成基準 1.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)のガイドラインに従います。
 
-#### 詳細情報 - 意味のあるシーケンス（1.3.2）{#more-information-meaningful-sequence}
+#### 詳細情報 - 意味のあるシーケンス（1.3.2） {#more-information-meaningful-sequence}
 
 * [達成基準 1.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)
 * [達成基準 1.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence)
 
-### 感覚的な特徴（1.3.3）              {#sensory-characteristics}
+### 感覚的な特徴（1.3.3）                    {#sensory-characteristics}
 
 * 達成基準 1.3.3
 * レベル A
@@ -448,14 +448,14 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 ページコンテンツの視覚的な特徴に依存する情報が、代替形式でも提示されていることを確認してください。
 
-* 視覚的な位置に依存して情報を提供しないでください。例えば、追加情報にアクセスするためにページの右側にあるメニューをユーザーに示す場合は、「右側のメニュー」**&#x200B;とは言わずに、見出しを使用するなどしてメニューに名前を付けて、テキストではその名前で説明します。
+* 視覚的な位置に依存して情報を提供しないでください。例えば、追加情報にアクセスするためにページの右側にあるメニューをユーザーに示す場合は、「右側のメニュー」とは言わずに、見出しを使用するなどしてメニューに名前を付けて、テキストではその名前で説明します&#x200B;*。*
 * 情報を伝える唯一の方法として、テキストのスタイル設定（太字や斜体など）に依存しないでください。
 
 >[!NOTE]
 >
->視覚的でないコンテキストで意味を持つことが理解される場合は、説明的な用語を使用してかまいません。例えば、「上記」**&#x200B;や「下記」**&#x200B;という表現を使用することは、通常は許容されます。それぞれ、コンテンツの特定の項目の前後にあるコンテンツを示すからです。これは、コンテンツを声に出して読み上げる場合でも意味をなします。
+>視覚的でないコンテキストで意味を持つことが理解される場合は、説明的な用語を使用してかまいません。例えば、「上記」や「下記」という表現を使用することは、通常は許容されます&#x200B;*。*&#x200B;それぞれ、コンテンツの特定の項目の前後にあるコンテンツを示すからです。これは、コンテンツを声に出して読み上げる場合でも意味をなします&#x200B;*。*
 
-#### 詳細情報 - 感覚的な特徴（1.3.3）{#more-information-sensory-characteristics}
+#### 詳細情報 - 感覚的な特徴（1.3.3） {#more-information-sensory-characteristics}
 
 * [達成基準 1.3.3 について](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [達成基準 1.3.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
@@ -464,7 +464,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 [ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
 
-### 色の使用（1.4.1）              {#use-of-color}
+### 色の使用（1.4.1）                    {#use-of-color}
 
 * 達成基準 1.4.1
 * レベル A
@@ -492,18 +492,18 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 色を情報提供のキューとして使用する場合は、スタイル（太字、斜体など）やフォントの変更など、追加の視覚的キューを指定する必要があります。これは、視覚障碍を持つ人や色覚障碍を持つ人が情報を特定するのに役立ちます。ただし、ページをまったく見ることのできない人には役に立たないので、全面的に依存することはできません。したがって、視覚障碍のあるユーザーにこのような情報を伝えるには、隠しテキストを提供したり、[ARIA（アクセシブルリッチインターネットアプリケーション）Web 標準規格](https://www.w3.org/WAI/standards-guidelines/aria/)などのプログラマティックソリューションを使用したりすると、役に立つ場合があります。
 
-#### 詳細情報 - 色の使用（1.4.1）{#more-information-use-of-color}
+#### 詳細情報 - 色の使用（1.4.1） {#more-information-use-of-color}
 
 * [達成基準 1.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html)
 * [達成基準 1.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#use-of-color)
 
-### 音声の制御（1.4.2）{#audio-control}
+### 音声の制御（1.4.2） {#audio-control}
 
 * 達成基準 1.4.2
 * レベル A
 * 音声の制御：Web ページ上の任意の音声が 3 秒以上自動的に再生される場合は、音声を一時停止または停止するメカニズムか、システム全体の音量レベルとは別に、音声の音量を制御するメカニズムが使用できる。
 
-#### 目的 - 音量の制御（1.4.2）{#purpose-audio-control}
+#### 目的 - 音量の制御（1.4.2） {#purpose-audio-control}
 
 画面読み上げソフトウェアを使用している個人は、同時に他の音声が再生されている場合、音声出力を聞き取るのが難しい場合があります。この問題は、画面読み上げの音声出力が（現在のほとんどの場合と同様に）ソフトウェアベースで、サウンドとして同じ音量コントロールを介して制御される場合に悪化します。さらに、認知障碍や神経多様性のあるユーザーの中は、音に対する感受性が強い人がいる場合があります。このような人にとっては、オーディオコンテンツの音量レベルを変更できないと大きな問題になります。
 
@@ -513,16 +513,16 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 >
 >音量の調節には、音量をゼロにできることを含みます。
 
-#### 達成方法 - 音声の制御（1.4.2）{#how-to-meet-audio-control}
+#### 達成方法 - 音声の制御（1.4.2） {#how-to-meet-audio-control}
 
 [達成基準 1.4.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)のガイドラインに従います。
 
-#### 詳細情報 - 音声の制御（1.4.2）{#more-information-audio-control}
+#### 詳細情報 - 音声の制御（1.4.2） {#more-information-audio-control}
 
 * [達成基準 1.4.2 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
 * [達成基準 1.4.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-control)
 
-### コントラスト（最低限）（1.4.3）{#contrast-minimum}
+### コントラスト（最低限）（1.4.3） {#contrast-minimum}
 
 * 達成基準 1.4.3
 * レベル AA
@@ -580,26 +580,26 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
 * [達成基準 1.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum)
 
-### テキストのサイズ変更（1.4.4）{#resize-text}
+### テキストのサイズ変更（1.4.4） {#resize-text}
 
 * 達成基準 1.4.4
 * レベル A
 * テキストのサイズ変更：テキストのキャプションと画像を除き、テキストは 200 パーセントまで支援テクノロジーを必要とせずに、コンテンツや機能を失うことなくサイズ変更できる。
 
-#### 目的 - テキストのサイズ変更（1.4.4）{#purpose-resize-text}
+#### 目的 - テキストのサイズ変更（1.4.4） {#purpose-resize-text}
 
-この達成基準の目的は、テキストベースの制御（見えるように表示されたテキスト文字 [ 対 ASCII などのデータ形式にあるテキスト文字]）を含む、視覚的にレンダリングされたテキストを、拡大鏡などの支援テクノロジーを使用せずに、正常に拡大・縮小できるようにすることです。ユーザーが Web ページのすべてのコンテンツを拡大・縮小するメリットを受ける場合もありますが、テキストは最も重要です。
+この達成基準の目的は、テキストベースの制御（見えるように表示されたテキスト文字 [対 ASCII などのデータ形式にあるテキスト文字]）を含む、視覚的にレンダリングされたテキストを、拡大鏡などの支援テクノロジーを使用せずに、正常に拡大・縮小できるようにすることです。ユーザーが Web ページのすべてのコンテンツを拡大・縮小するメリットを受ける場合もありますが、テキストは最も重要です。
 
-#### 達成方法 - テキストのサイズ変更（1.4.4）{#how-to-meet-resize-text}
+#### 達成方法 - テキストのサイズ変更（1.4.4） {#how-to-meet-resize-text}
 
 [達成基準 1.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)のガイドラインに従うだけでなく、読者がテキストのサイズを変更できるように、ページデザインやフォントサイズで流動的で柔軟な幅と高さ（レスポンシブ Web デザインなど）を使用するよう、コンテンツ作成者を促すことができます。
 
-#### 詳細情報 - テキストのサイズ変更（1.4.4）{#more-information-resize-text}
+#### 詳細情報 - テキストのサイズ変更（1.4.4） {#more-information-resize-text}
 
 * [達成基準 1.4.4 について](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 * [達成基準 1.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#resize-text)
 
-### 文字画像（1.4.5）{#images-of-text}
+### 文字画像（1.4.5） {#images-of-text}
 
 * 達成基準 1.4.5
 * レベル AA
@@ -619,7 +619,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 文字画像を使用する必要がある場合は、CSS を使用して、文字画像を同等の HTML テキストに置き換え、テキストをカスタマイズ可能にします。これをおこなう方法の例は、[C30：CSS を用いて、テキストを画像化された文字に置き換え、変換するユーザーインターフェイスコントロールを提供する](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)を参照してください。
 
-#### 詳細情報 - 文字画像（1.4.5）{#more-information-images-of-text}
+#### 詳細情報 - 文字画像（1.4.5） {#more-information-images-of-text}
 
 * [達成基準 1.4.5 について](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)
 * [達成基準 1.4.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#images-of-text)
@@ -628,78 +628,78 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 [原則 2：操作可能 - ユーザーインターフェイスコンポーネントおよびナビゲーションは操作可能でなければならない。](https://www.w3.org/TR/WCAG/#operable)
 
-### キーボード操作可能（2.1）{#keyboard-accessible}
+### キーボード操作可能（2.1） {#keyboard-accessible}
 
 [ガイドライン 2.1 キーボード操作可能：すべての機能をキーボードから使用できること。](https://www.w3.org/TR/WCAG/#keyboard-accessible)
 
 これは、キーボードを使用してすべての機能のアクセスを確保することを目的としています。
 
-### キーボード（2.1.1）{#keyboard}
+### キーボード（2.1.1） {#keyboard}
 
 * 達成基準 2.1.1
 * レベル A
 * キーボード：コンテンツのすべての機能が、個々のキー操作に特定のタイミングを必要とせずに、キーボードインターフェイスを介して操作できる。ただし、基になる機能は、エンドポイントだけでなく、ユーザーの移動のパスに依存する入力を必要とすることは例外とする。
 
-#### 目的 - キーボード（2.1.1）{#purpose-keyboard}
+#### 目的 - キーボード（2.1.1） {#purpose-keyboard}
 
 この達成基準の目的は、可能な限りコンテンツをキーボード（または代替キーボード利用できるような）キーボードインタフェースで操作ができるようにすることです。コンテンツをキーボードや代替キーボードで操作できる場合は、（目と手の協調運動を必要とするマウスのようなデバイスを使用できない）全盲の人や、代替キーボードやキーボードエミュレーターの役割をする入力デバイスを使用する必要がある人でも操作できます。キーボードエミュレーターには、音声入力ソフトウェア、息操作ソフトウェア、画面キーボード、スキャンソフトウェアなど、様々な支援テクノロジーや代替キーボードが含まれます。視覚障碍を持つ人は、ポインターを目で追うのが困難な場合があり、キーボードから制御できれば、ソフトウェアの使用が容易になる（あるいは可能になる）かもしれません。
 
-#### 達成方法 - キーボード（2.1.1）{#how-to-meet-keyboard}
+#### 達成方法 - キーボード（2.1.1） {#how-to-meet-keyboard}
 
 [達成基準 2.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)のガイドラインに従います。
 
-#### 詳細情報 - キーボード（2.1.1）{#more-information-keyboard}
+#### 詳細情報 - キーボード（2.1.1） {#more-information-keyboard}
 
 * [達成基準 2.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [達成基準 2.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#keyboard)
 
-### キーボードトラップなし（2.1.2）{#no-keyboard-trap}
+### キーボードトラップなし（2.1.2） {#no-keyboard-trap}
 
 * 達成基準 2.1.2
 * レベル A
 * キーボードトラップなし：キーボードインターフェイスを使用してキーボードフォーカスをページのコンポーネントに移動できる場合、キーボードインターフェイスのみを使用してコンポーネントからフォーカスを移動できる。また修飾キーを伴わない矢印キーやタブキーなどの標準的な方法以上のものが必要な場合、ユーザーにフォーカスを外す方法を通知できる。
 
-#### 目的 - キーボードトラップなし（2.1.2）{#purpose-no-keyboard-trap}
+#### 目的 - キーボードトラップなし（2.1.2） {#purpose-no-keyboard-trap}
 
 この達成基準の目的は、コンテンツが Web ページ上のコンテンツのサブセクション内にキーボードフォーカスを&#x200B;*トラップ*&#x200B;しないようにすることです。これは、複数の形式がページ内で組み合わされ、プラグインや埋め込みアプリケーションを使用してレンダリングされる場合に発生する一般的な問題です。
 
 Web ページの機能によって、フォーカスがコンテンツのサブセクション（モーダルダイアログなど）に制限される場合があります。そのような場合は、コンテンツのサブセクションからユーザーが移動できる方法を用意しておく必要があります（例えば、ESC キーや「閉じる」ボタンでモーダルダイアログを閉じるなど）。
 
-#### 達成方法 - キーボードトラップなし（2.1.2）{#how-to-meet-no-keyboard-trap}
+#### 達成方法 - キーボードトラップなし（2.1.2） {#how-to-meet-no-keyboard-trap}
 
 [達成基準 2.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)のガイドラインに従います。
 
-#### 詳細情報 - キーボードトラップなし（2.1.2）{#more-information-no-keyboard-trap}
+#### 詳細情報 - キーボードトラップなし（2.1.2） {#more-information-no-keyboard-trap}
 
 * [達成基準 2.1.2 について](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 * [達成基準 2.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap)
 
-### 十分な時間（2.2）{#enough-time}
+### 十分な時間（2.2） {#enough-time}
 
 [ガイドライン 2.2 十分な時間：ユーザーがコンテンツを読み、使用するのに十分な時間を提供します。](https://www.w3.org/TR/WCAG/#enough-time)
 
 これは、ユーザーがコンテンツを読んで行動を起こすのに十分な時間を確保することを目的としています。
 
-### タイミング調整可能（2.2.1）{#timing-adjustable}
+### タイミング調整可能（2.2.1） {#timing-adjustable}
 
 * 達成基準 2.2.1
 * レベル A
 * キーボード：ユーザーがコンテンツを読み、使用するのに十分な時間を提供すること。
 
-#### 目的 - タイミング調整可能（2.2.1）{#purpose-timing-adjustable}
+#### 目的 - タイミング調整可能（2.2.1） {#purpose-timing-adjustable}
 
 この達成基準の目的は、可能な限り常に、障碍のあるユーザーが Web コンテンツを利用するのに十分な時間を提供することです。全盲、視覚障碍、手指の障碍、認知機能の制限など、障碍のあるユーザーは、コンテンツを読むのに時間がかかる場合や、オンラインフォームの入力などの機能を実行するのに時間がかかる場合があります。Web 機能が時間に依存する場合は、制限時間より前に必要な操作をおこなうのが難しい場合があります。これにより、サービスにアクセスできなくなる場合があります。時間に依存しない機能をデザインすることで、障碍のある人がこうした機能を完了するのに役立ちます。時間制限の無効化、時間制限のカスタマイズ、時間制限になる前に延長リクエストをおこなうオプションを提供することで、タスクの完了に予想以上の時間を要するユーザーの役に立ちます。これらのオプションは、ユーザーにとって最も役に立つ順に表示されます。時間制限を無効にする方が、時間制限の長さをカスタマイズするよりも効果的で、時間制限の長さをカスタマイズする方が、時間制限前の延長リクエストよりも効果的です。
 
-#### 達成方法 - タイミング調整可能（2.2.1）{#how-to-meet-timing-adjustable}
+#### 達成方法 - タイミング調整可能（2.2.1） {#how-to-meet-timing-adjustable}
 
 [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)のガイドラインに従います。
 
-#### 詳細情報 - タイミング調整可能（2.2.1）{#more-information-timing-adjustable}
+#### 詳細情報 - タイミング調整可能（2.2.1） {#more-information-timing-adjustable}
 
 * [達成基準 2.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [達成基準 2.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### 一時停止、停止、非表示（2.2.2）              {#pause-stop-hide}
+### 一時停止、停止、非表示（2.2.2）                    {#pause-stop-hide}
 
 * 達成基準 2.2.2
 * レベル A
@@ -733,11 +733,11 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [達成基準 2.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)
 
-### 発作および身体的反応（2.3）{#seizures-and-physcial-reactions}
+### 発作および身体的反応（2.3） {#seizures-and-physcial-reactions}
 
 [ガイドライン 2.3 発作の防止：発作や身体的反応を引き起こすようなコンテンツを設計しないこと。](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)
 
-### 3 回の閃光、またはしきい値以下（2.3.1）{#three-flashes-or-below-threshold}
+### 3 回の閃光、またはしきい値以下（2.3.1） {#three-flashes-or-below-threshold}
 
 * 達成基準 2.3.1
 * レベル A
@@ -747,7 +747,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 >
 >この達成基準を満たさないコンテンツがある場合は、ユーザーがページ全体を使用できない場合があるので、Web ページ上のすべてのコンテンツ（他の達成基準を満たすために使用されているかどうかにかかわらず）が、この達成基準を満たす必要があります。[適合要件の「5. 非干渉」](https://www.w3.org/TR/WCAG/#cc5)を参照してください。
 
-#### 目的 - 3 回の閃光、またはしきい値以下（2.3.1）{#purpose-three-flashes-or-below-threshold}
+#### 目的 - 3 回の閃光、またはしきい値以下（2.3.1） {#purpose-three-flashes-or-below-threshold}
 
 場合によっては、コンテンツが放つ閃光によって光過敏性発作が発生する可能性があります。この達成基準を満たすと、そのようなユーザーが閃光を放つコンテンツの心配をせずにすべてのコンテンツにアクセスし、体験できます。
 
@@ -756,39 +756,39 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 次の技法が適用されていることを確認する必要があります。
 
 * コンポーネントの 1 秒間の閃光回数が 3 回以下であることを確認します。
-* 上記の条件を満たすことができない場合は、画面上のピクセル単位の小さい安全な領域&#x200B;**&#x200B;内に、閃光コンテンツを表示します。この領域は、「[G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176)」で説明している複雑な数式を使用して計算されるので、この技法を使用するのは、閃光コンテンツが絶対に&#x200B;**&#x200B;必要な場合のみにする必要があります。
+* 上記の条件を満たすことができない場合は、画面上のピクセル単位の小さい安全な領域内に&#x200B;*、*&#x200B;閃光コンテンツを表示します。この領域は、「[G176: Keeping the flashing area small enough](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176)」で説明している複雑な数式を使用して計算されるので、この技法を使用するのは、閃光コンテンツが絶対に必要な場合のみにする必要があります&#x200B;*。*
 
-#### 詳細情報 - 3 回の閃光、またはしきい値以下（2.3.1）{#more-information-three-flashes-or-below-threshold}
+#### 詳細情報 - 3 回の閃光、またはしきい値以下（2.3.1） {#more-information-three-flashes-or-below-threshold}
 
 * [達成基準 2.3.1 について](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [達成基準 2.3.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
 
-### ナビゲーション可能（2.4）{#navigable}
+### ナビゲーション可能（2.4） {#navigable}
 
 [ガイドライン 2.4 ナビゲーション可能：ユーザーのナビゲーション、コンテンツの検索、位置の特定に役立つ方法を提供します。](https://www.w3.org/TR/WCAG/#navigable)
 
 これは、ユーザーがコンテンツを簡単かつ明白にナビゲートできることを目的としています。
 
-### ブロックのスキップ（2.4.1）{#bypass-blocks}
+### ブロックのスキップ（2.4.1） {#bypass-blocks}
 
 * 達成基準 2.4.1
 * レベル A
 * ブロックのスキップ：複数の Web ページで繰り返されるコンテンツのブロックをスキップする仕組みが利用できる。
 
-#### 目的 - ブロックのスキップ（2.4.1）{#purpose-bypass-blocks}
+#### 目的 - ブロックのスキップ（2.4.1） {#purpose-bypass-blocks}
 
 この達成基準の目的は、コンテンツ間を順番に移動する訪問者が、Web ページの主要なコンテンツにより直接敵にアクセスできるようにすることです。Web ページやアプリケーションには、他のページや画面に表示されるコンテンツが含まれる場合が多くあります。コンテンツの繰り返しブロックの例としては、ナビゲーションリンク、ヘッダーグラフィック、メニュー、広告フレームなどがありますが、これらに限定されません。個々の単語、フレーズ、単一のリンクなどの小さな繰り返しセクションは、この規定の目的ではブロックとは見なされません。
 
-#### 達成方法 - ブロックのスキップ（2.4.1）{#how-to-meet-bypass-blocks}
+#### 達成方法 - ブロックのスキップ（2.4.1） {#how-to-meet-bypass-blocks}
 
 [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)のガイドラインに従います。
 
-#### 詳細情報 - ブロックのスキップ（2.4.1）{#more-information-bypass-blocks}
+#### 詳細情報 - ブロックのスキップ（2.4.1） {#more-information-bypass-blocks}
 
 * [達成基準 2.4.1 について](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html)
 * [達成基準 2.4.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks)
 
-### ページタイトル（2.4.2）              {#page-titled}
+### ページタイトル（2.4.2）                    {#page-titled}
 
 * 達成基準 2.4.2
 * レベル A
@@ -804,31 +804,31 @@ AEM で新しい HTML ページを作成する際には、ページタイトル�
 
 ページを編集する際に、ページタイトルを編集することもできます（**ページ情報**／**プロパティ**&#x200B;からアクセス可能）。
 
-#### 詳細情報 - ページタイトル（2.4.2）{#more-information-page-titled}
+#### 詳細情報 - ページタイトル（2.4.2） {#more-information-page-titled}
 
 * [達成基準 2.4.2 について](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
 * [達成基準 2.4.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#page-titled)
 
-### フォーカス順序（2.4.3）{#focus-order}
+### フォーカス順序（2.4.3） {#focus-order}
 
 * 達成基準 2.4.3
 * レベル A
 * フォーカス順序：Web ページを順次ナビゲーションでき、ナビゲーションのシーケンスが意味や操作に影響を与える場合、フォーカス可能なコンポーネントは、意味や操作性を保持する順序でフォーカスを受け取る。
 
-#### 目的 - フォーカス順序（2.4.3）{#purpose-focus-order}
+#### 目的 - フォーカス順序（2.4.3） {#purpose-focus-order}
 
 この達成基準の目的は、ユーザーがコンテンツを順番に移動する際に、コンテンツの意味に合った順序で情報が表示され、キーボードから操作できるようにすることです。これにより、ユーザーがコンテンツの一貫したメンタルモデルを作成できるので、混乱が軽減されます。コンテンツ内の論理的な関係を反映した異なる順序が存在する場合があります。例えば、複数のフィールドやステップで構成されるオンラインフォームでのコンポーネント間の移動は、コンテンツ内の論理的な関係を反映しています。
 
-#### 達成方法 - フォーカス順序（2.4.3）{#how-to-meet-focus-order}
+#### 達成方法 - フォーカス順序（2.4.3） {#how-to-meet-focus-order}
 
 [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)のガイドラインに従います。
 
-#### 詳細情報 - フォーカス順序（2.4.3）{#more-information-focus-order}
+#### 詳細情報 - フォーカス順序（2.4.3） {#more-information-focus-order}
 
 * [達成基準 2.4.3 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html)
 * [達成基準 2.4.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-order)
 
-### リンクの目的（コンテキスト内）（2.4.4）              {#link-purpose-in-context}
+### リンクの目的（コンテキスト内）（2.4.4）                    {#link-purpose-in-context}
 
 * 達成基準 2.4.4
 * レベル A
@@ -877,16 +877,16 @@ John Smith’s publications
 追加のコンテキストを必要とせずにリンクの目的を識別するリンクテキストを提供することが望ましいものの、これが常に可能とは限らないことがわかっています。コンテキストのないリンクは、次の場合に使用できます。HTML の例は、[達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)を参照してください。
 
 * リンクテキストが、密接に関連するリンクのリストの一部であり、リンクを含むリスト項目で十分なコンテンツが提供されている場合。
-* リンクの目的が、前の&#x200B;**（後ろではない）段落テキストから明確に識別できる場合。
+* リンクの目的が、前の（後ろではない）段落テキストから明確に識別できる場合&#x200B;*。*
 * リンクがデータテーブル内に含まれているので、関連する見出しから目的を明確に識別できる場合。
 * リンクのリストが一連の見出し内に含まれており、見出し自体で適切なコンテキストが提供される場合。
 * リンクのリストがネストされたリンク内に含まれており、ネストされたリンクの上の親リスト項目で適切なコンテキストが提供される場合。
 
 1 つのページ上に複数のリンクがある場合（各リンクで提供される指示が複雑だが必要な詳細である場合）は、代替バージョンの Web ページを提供することが妥当と言えます。代替バージョンは、まったく同じコンテンツを表示する一方で、リンクテキストはそれほど詳細ではないものを用意します。
 
-また、スクリプトを使用して、リンク自体では最低限のテキストを使用し、ページの上部に向かって配置されている適切なコントロールをアクティベートするとリンクテキストが展開&#x200B;**&#x200B;され、詳細が表示されるように指定することもできます。同様に、CSS を使用して、目の見えるユーザーに対しては完全なリンクを非表示&#x200B;**&#x200B;にし、スクリーンリーダーユーザーに対しては引き続き完全に画面に出力する方法があります。これはこのドキュメントの範囲外ですが、これをおこなう方法について詳しくは、[詳細情報 - リンクの目的（コンテキスト内）（2.4.4）](#more-information-link-purpose-in-context)を参照してください。
+また、スクリプトを使用して、リンク自体では最低限のテキストを使用し、ページの上部に向かって配置されている適切なコントロールをアクティベートするとリンクテキストが展開され&#x200B;*、*&#x200B;詳細が表示されるように指定することもできます。同様に、CSS を使用して、目の見えるユーザーに対しては完全なリンクを非表示にし、スクリーンリーダーユーザーに対しては引き続き完全に画面に出力する方法があります。これはこのドキュメントの範囲外ですが、これをおこなう方法について詳しくは、[詳細情報 - リンクの目的（コンテキスト内）（2.4.4）](#more-information-link-purpose-in-context)を参照してください&#x200B;*。*
 
-#### 詳細情報 - リンクの目的（コンテキスト内）（2.4.4）{#more-information-link-purpose-in-context}
+#### 詳細情報 - リンクの目的（コンテキスト内）（2.4.4） {#more-information-link-purpose-in-context}
 
 * [達成基準 2.4.4 について](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
 * [達成基準 2.4.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)
@@ -895,53 +895,53 @@ John Smith’s publications
 * [C7: Using CSS to hide a portion of the link text](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 -->
 
-### 複数の手段（2.4.5）{#multiple-ways}
+### 複数の手段（2.4.5） {#multiple-ways}
 
 * 達成基準 2.4.5
 * レベル AA
 * 複数の手段：一連の Web ページ内で Web ページを見つける方法が複数ある。ただし、Web ページがプロセスの結果や 1 ステップである場合を除く。
 
-#### 目的 - 複数の手段（2.4.5）{#purpose-multiple-ways}
+#### 目的 - 複数の手段（2.4.5） {#purpose-multiple-ways}
 
 この達成基準の目的は、ユーザーがニーズに最も合った方法でコンテンツを見つけられるようにすることです。ユーザーは、複数の手段のなかから、より使いやすい、または分かりやすい手段を見つけられます。
 
 小規模サイトでも、何らかの形で方向付けの手段を提供する必要があります。3 ～ 4 ページのサイトで、すべてのページがホームページからリンクされている場合、ホームページ上のリンクがサイトマップとしても機能するため、ホームページと各ページ間で相互にリンクを提供するだけで十分です。
 
-#### 対応方法 - 複数の手段（2.4.5）{#how-to-meet-multiple-ways}
+#### 対応方法 - 複数の手段（2.4.5） {#how-to-meet-multiple-ways}
 
 [達成基準 2.4.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)のガイドラインに従います。
 
-#### 詳細情報 - 複数の手段（2.4.5）{#more-information-multiple-ways}
+#### 詳細情報 - 複数の手段（2.4.5） {#more-information-multiple-ways}
 
 * [達成基準 2.4.5 について](https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html)
 * [達成基準 2.4.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways)
 
-### 見出しおよびラベル（2.4.6）{#headings-and-labels}
+### 見出しおよびラベル（2.4.6） {#headings-and-labels}
 
 * 達成基準 2.4.6
 * レベル AA
 * 見出しおよびラベル：見出しとラベルがトピックや目的を表している。
 
-#### 目的 - 見出しおよびラベル（2.4.6）{#purpose-headings-and-labels}
+#### 目的 - 見出しおよびラベル（2.4.6） {#purpose-headings-and-labels}
 
 この達成基準の目的は、ユーザーが Web ページに含まれる情報と、その情報の編成方法を理解できるようにすることです。見出しが明確で説明的な場合、ユーザーは探している情報が見つけやすくなり、コンテンツの異なる部分との関係を理解しやくなります。説明的なラベルは、コンテンツ内の特定のコンポーネントの識別に役立ちます。
 
-#### 達成方法 - 見出しおよびラベル（2.4.6）{#how-to-meet-headings-and-labels}
+#### 達成方法 - 見出しおよびラベル（2.4.6） {#how-to-meet-headings-and-labels}
 
 [達成基準 2.4.6 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)のガイドラインに従います。
 
-#### 詳細 - 見出しおよびラベル（2.4.6）{#more-information-headings-and-labels}
+#### 詳細 - 見出しおよびラベル（2.4.6） {#more-information-headings-and-labels}
 
 * [達成基準 2.4.6 について](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 * [達成基準 2.4.6 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels)
 
-### フォーカスの可視化（2.4.7）{#focus-visible}
+### フォーカスの可視化（2.4.7） {#focus-visible}
 
 * 達成基準 2.4.7
 * レベル AA
 * フォーカスの可視化：キーボード操作可能なユーザインターフェイスは、キーボードフォーカスインジケータを表示する操作モードがある。
 
-#### 目的 - フォーカスの可視化（2.4.7）{#purpose-focus-visible}
+#### 目的 - フォーカスの可視化（2.4.7） {#purpose-focus-visible}
 
 この達成基準の目的は、キーボードのフォーカスがある要素を知るのに役立ちます。
 
@@ -949,11 +949,11 @@ John Smith’s publications
 
 達成基準で「操作モード」としているのは、フォーカスインジケーターが常に表示されるとは限らないプラットフォームを考慮するためです。ほとんどの場合、操作モードは 1 つだけなので、この達成基準が適用されます。
 
-#### 達成方法 - フォーカスの可視化（2.4.7）{#how-to-meet-focus-visible}
+#### 達成方法 - フォーカスの可視化（2.4.7） {#how-to-meet-focus-visible}
 
 [達成基準 2.4.7 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)のガイドラインに従います。
 
-#### 詳細情報 - フォーカスの可視化（2.4.7）{#more-information-focus-visible}
+#### 詳細情報 - フォーカスの可視化（2.4.7） {#more-information-focus-visible}
 
 * [達成基準 2.4.7 について](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html)
 * [達成基準 2.4.7 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#focus-visible)
@@ -992,13 +992,13 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 >
 >AEM では、ルート言語のバリエーションに応じてさらに微調整をおこなうことができます。例えば、アメリカ英語の場合は en-us、イギリス英語の場合は en-gb、カナダ英語の場合は en-ca などと指定します。この詳細レベルは支援テクノロジーにとっては不必要な場合が多いですが、ページコンテンツの地域的なバリエーションに使用することができます。
 
-#### 詳細情報 - ページの言語（3.1.1）{#more-information-language-of-page}
+#### 詳細情報 - ページの言語（3.1.1） {#more-information-language-of-page}
 
 * [達成基準 3.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 * [達成基準 3.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-page)
 * コードは ISO 639-1 に基づいています。各言語の詳細なコードリストについては、[W3 Schools サイト](https://www.w3schools.com/tags/ref_language_codes.asp)を参照してください。
 
-### 一部分の言語（3.1.2）              {#language-of-parts}
+### 一部分の言語（3.1.2）                    {#language-of-parts}
 
 * 達成基準 3.1.2
 * レベル AA
@@ -1040,24 +1040,24 @@ AEM では、ページのデフォルト言語はページ作成時に設定さ�
 
 span 要素を適切な言語で追加するには、RTE のソース編集モードで、上記の内容になるように HTML マークアップを手動で編集します。または、システム管理者が `lang` 属性を RTE に含めることもできます（[追加の HTML 要素および属性のサポートの追加](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)を参照）。
 
-#### 詳細情報 - 一部分の言語（3.1.2）{#more-information-language-of-parts}
+#### 詳細情報 - 一部分の言語（3.1.2） {#more-information-language-of-parts}
 
 * [達成基準 3.1.2 について](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
 * [達成基準 3.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts)
 
-### 予測可能（3.2）{#predictable}
+### 予測可能（3.2） {#predictable}
 
 [ガイドライン 3.2 予測可能：Web ページを予測可能な方法で表示および操作できるようにします。](https://www.w3.org/TR/WCAG/#predictable)
 
 これは、Web ページの外観と動作の一貫性を確保することを目的としています。
 
-### フォーカス時（3.2.1）{#on-focus}
+### フォーカス時（3.2.1） {#on-focus}
 
 * 達成基準 3.2.1
 * レベル A
 * フォーカス時：どのユーザインターフェイスコンポーネントもフォーカスを受け取ったときに、コンテキストの変化を引き起こさない。
 
-#### 目的 - フォーカス時（3.2.1）{#purpose-on-focus}
+#### 目的 - フォーカス時（3.2.1） {#purpose-on-focus}
 
 この達成基準の目的は、訪問者がドキュメント内を移動する際に、機能が予測可能であることを保証することです。フォーカスを受け取ったときにイベントをトリガーできるコンポーネントは、コンテキストを変更してはなりません。コンポーネントがフォーカスを受け取った場合のコンテキストの変更例を次に示しますが、これらに限定されません。
 
@@ -1067,41 +1067,41 @@ span 要素を適切な言語で追加するには、RTE のソース編集モ�
 
 フォーカスは、キーボード（例：タブキーからコントロールに移動）またはマウス（例：テキストフィールドをクリック）を介してコントロールに移動する場合もあります。コントロールの上にマウスを移動しても、スクリプティングによってこの動作が実装されていない限り、フォーカスは移動しません。一部の種類のコントロールでは、コントロールをクリックすると、そのコントロール（ボタンなど）もアクティブになり、コンテキストの変更が開始される場合があります。
 
-#### 達成方法 - フォーカス時（3.2.1）{#how-to-meet-on-focus}
+#### 達成方法 - フォーカス時（3.2.1） {#how-to-meet-on-focus}
 
 [達成基準 3.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)のガイドラインに従います。
 
-#### 詳細情報 - フォーカス時（3.2.1）{#more-information-on-focus}
+#### 詳細情報 - フォーカス時（3.2.1） {#more-information-on-focus}
 
 * [達成基準 3.2.1 について](https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html)
 * [達成基準 3.2.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#on-focus)
 
-### 入力時（3.2.2）{#on-input}
+### 入力時（3.2.2） {#on-input}
 
 * 達成基準 3.2.2
 * レベル A
 * 入力時：ユーザインターフェイスコンポーネントの設定を変更しても、コンポーネントを使用する前にユーザーに動作について通知されていない限り、コンテキストは自動的に変更されない。
 
-#### 目的 - 入力時（3.2.2）{#purpose-on-input}
+#### 目的 - 入力時（3.2.2） {#purpose-on-input}
 
 この達成基準の目的は、データの入力やフォームコントロールの選択を確実に予測可能な結果にすることです。ユーザインターフェイスコンポーネントの設定を変更すると、コントロールの一部の側面が変更され、ユーザーが操作しなくなったときに保存されます。したがって、チェックボックスをオンにしたり、テキストフィールドにテキストを入力したり、リストコントロールで選択したオプションを変更したりすると、設定は変わりますが、リンクやボタンはアクティブになりません。コンテキストの変更は、変更を容易に認識できないユーザーや、変更によって注意力が散漫になりやすいユーザーを混乱させる可能性があります。コンテキストの変更は、ユーザーのアクションに応じてそのような変更がおこなわれることが明らかな場合にのみ適切です。
 
-#### 達成方法 - 入力時（3.2.2）{#how-to-meet-on-input}
+#### 達成方法 - 入力時（3.2.2） {#how-to-meet-on-input}
 
 [達成基準 3.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#on-input)のガイドラインに従います。
 
-#### 詳細情報 - 入力時（3.2.2）{#more-information-on-input}
+#### 詳細情報 - 入力時（3.2.2） {#more-information-on-input}
 
 * [達成基準 3.2.2 について](https://www.w3.org/WAI/WCAG21/Understanding/on-input.html)
 * [達成基準 3.2.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#on-input)
 
-### 一貫したナビゲーション（3.2.3）{#consistent-navigation}
+### 一貫したナビゲーション（3.2.3） {#consistent-navigation}
 
 * 達成基準 3.2.3
 * レベル AA
 * 一貫したナビゲーション：一連の Web ページ内の複数の Web ページで繰り返されるナビゲーションのメカニズムは、ユーザーが変更しない限り、繰り返されるたびに同じ相対順で発生する。
 
-#### 目的 - 一貫したナビゲーション（3.2.3）{#purpose-consistent-navigation}
+#### 目的 - 一貫したナビゲーション（3.2.3） {#purpose-consistent-navigation}
 
 この達成基準の目的は、一連の Web ページ内で繰り返されるコンテンツを操作し、特定の情報や機能を複数回見つけ出す必要があるユーザーに対して、一貫した表示とレイアウトの使用を促すことです。視覚障碍を持つ人が画面の表示比率を使用して一度に画面の一部のみを表示する場合は、繰り返されるコンテンツをすばやく見つけ出すために、よく視覚的なキューやページの境界を使用します。繰り返されるコンテンツを同じ順序で表示することは、デザイン内の空間記憶や視覚的キューを使用して繰り返されるコンテンツを見つけ出す視覚的ユーザーにとっても重要です。
 
@@ -1109,22 +1109,22 @@ span 要素を適切な言語で追加するには、RTE のソース編集モ�
 
 ユーザーは、アダプティブユーザーエージェントを使用するか、環境設定を設定して、ユーザーにとって最も役立つ方法で情報が表示されるように、順序を変更することもできます。
 
-#### 達成方法 - 一貫したナビゲーション（3.2.3）{#how-to-meet-consistent-navigation}
+#### 達成方法 - 一貫したナビゲーション（3.2.3） {#how-to-meet-consistent-navigation}
 
 [達成基準 3.2.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)のガイドラインに従います。
 
-#### 詳細情報 - 一貫したナビゲーション（3.2.3）{#more-information-consistent-navigation}
+#### 詳細情報 - 一貫したナビゲーション（3.2.3） {#more-information-consistent-navigation}
 
 * [達成基準 3.2.3 について](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)
 * [達成基準 3.2.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation)
 
-### 一貫した識別（3.2.4）{#consistent-identification}
+### 一貫した識別（3.2.4） {#consistent-identification}
 
 * 達成基準 3.2.4
 * レベル A
 * 一貫した識別：一連の Web ページ内で同じ機能を持つコンポーネントは一貫して識別される。
 
-#### 目的 - 一貫した識別（3.2.4）{#purpose-consistent-identification}
+#### 目的 - 一貫した識別（3.2.4） {#purpose-consistent-identification}
 
 この達成基準の目的は、一連の Web ページ内で繰り返し表示される機能コンポーネントを一貫して識別することです。Web サイトの操作時にスクリーンリーダーを使用するユーザーが取る戦略は、異なる Web ページに表示される機能になじみがあるかどうかに大きく依存しています。違う Web ページで、同じ機能に異なるラベルが付いている（または、より一般的には、アクセシブルな名前が異なる）場合、そのサイトは非常に使いにくくなります。また、認知機能に障碍を持つ人にとっては、混乱を招き、認知負荷が高まる可能性があります。したがって、一貫したラベル付けが役立ちます。
 
@@ -1134,26 +1134,26 @@ Web ページ上に 2 つのコンポーネントがあり、両方のコンポ�
 
 1 つの Web ページ内で一貫性を保つことは望ましく、ベストプラクティスでもありますが、3.2.4 では、複数ページにわたって何かが繰り返される、一連の Web ページ内の一貫性のみに対応します。
 
-#### 達成方法 - 一貫した識別（3.2.4）{#how-to-meet-consistent-identification}
+#### 達成方法 - 一貫した識別（3.2.4） {#how-to-meet-consistent-identification}
 
 [達成基準 3.2.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)のガイドラインに従います。
 
-#### 詳細情報 - 一貫性のある識別（3.2.4）{#more-information-consistent-identification}
+#### 詳細情報 - 一貫性のある識別（3.2.4） {#more-information-consistent-identification}
 
 * [達成基準 3.2.4 について](https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html)
 * [達成基準 3.2.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification)
 
-### 入力支援（3.3）{#input-assistance}
+### 入力支援（3.3） {#input-assistance}
 
 [ガイドライン 3.3 入力支援：利用者の間違いを防ぎ、修正を支援すること。](https://www.w3.org/TR/WCAG/#input-assistance)
 
-### エラーの特定（3.3.1）{#error-identification}
+### エラーの特定（3.3.1） {#error-identification}
 
 * 達成基準 3.3.1
 * レベル A
 * エラーの特定：入力エラーが自動的に検出されると、エラーのある項目が識別され、そのエラーがユーザーにテキストで説明される。
 
-#### 目的 - エラーの特定（3.3.1）{#purpose-error-identification}
+#### 目的 - エラーの特定（3.3.1） {#purpose-error-identification}
 
 この達成基準の目的は、エラーが発生したことをユーザーが確実に認識し、何が間違っているかを判断できるようにすることです。エラーメッセージは、できる限り具体的に記述する必要があります。フォームの送信に失敗した場合に、フォームを再表示してエラーのあるフィールドを示すことは、一部のユーザーにとって、エラーの発生を認識するのに十分ではありません。例えば、スクリーンリーダーを使用するユーザーは、インジケーターのひとつに遭遇するまでエラーがあったことに気づきません。エラーインジケーターに遭遇する前に、ページが単に機能していないと考えて、フォームを完全に破棄する可能性があります。WCAG の定義によると、[入力エラー](https://www.w3.org/TR/WCAG/#dfn-input-error)は、ユーザーから提供される受け入れられない情報です。これには以下が含まれます。
 
@@ -1166,16 +1166,16 @@ Web ページで必要とされるが、ユーザーによって省略された�
 * ユーザーが、数字しか受け入れない電話番号フィールドに英字や丸括弧を入力する
 * ユーザーが前回の入札または最小入札増分を下回る入札を入力する
 
-#### 達成方法 - エラーの特定（3.3.1）{#how-to-meet-error-identification}
+#### 達成方法 - エラーの特定（3.3.1） {#how-to-meet-error-identification}
 
 [達成基準 3.3.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)のガイドラインに従います。
 
-#### 詳細情報 - エラーの特定（3.3.1）{#more-information-error-identification}
+#### 詳細情報 - エラーの特定（3.3.1） {#more-information-error-identification}
 
 * [達成基準 3.3.1 について](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html)
 * [達成基準 3.3.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#error-identification)
 
-### ラベルまたは説明（3.3.2）{#labels-or-instructions}
+### ラベルまたは説明（3.3.2） {#labels-or-instructions}
 
 * 達成基準 3.3.2
 * レベル A
@@ -1221,13 +1221,13 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 * [達成基準 3.3.2 について](https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html)
 * [達成基準 3.3.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions)
 
-### エラー修正の提案（3.3.3）{#error-suggestion}
+### エラー修正の提案（3.3.3） {#error-suggestion}
 
 * 達成基準 3.3.3
 * レベル AA
 * キーボード：入力エラーが自動的に検出され、修正候補がわかる場合は、コンテンツのセキュリティや目的を危険にさらさない限り、修正候補がユーザーに提供される。
 
-#### 目的 - エラー修正の提案（3.3.3）{#purpose-error-suggestion}
+#### 目的 - エラー修正の提案（3.3.3） {#purpose-error-suggestion}
 
 この達成基準の目的は、入力エラーの修正に必要な適切な提案がユーザーに確実に届くようにすることです。WCAG の[入力エラー](https://www.w3.org/TR/WCAG/#dfn-input-error)の定義は、「ユーザーが提供する情報で、受け入れられないもの」というものです。受け入れられない情報の例としては、必要であるがユーザーによって省略された情報や、ユーザーが提供するが、必要なデータ形式または許容される値に該当しない情報などがあります。
 
@@ -1235,16 +1235,16 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 コンテンツ作成者によるエラーの説明の提供や、ユーザーエージェントによる、テクノロジーに特化した、プログラム的に決定された情報に基づく、エラーの説明の提供が可能です。
 
-#### 達成方法 - エラー修正の提案（3.3.3）{#how-to-meet-error-suggestion}
+#### 達成方法 - エラー修正の提案（3.3.3） {#how-to-meet-error-suggestion}
 
 [達成基準 3.3.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)のガイドラインに従います。
 
-#### 詳細情報 - エラー修正の提案（3.3.3）{#more-information-error-suggestion}
+#### 詳細情報 - エラー修正の提案（3.3.3） {#more-information-error-suggestion}
 
 * [達成基準 3.3.3 について](https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html)
 * [達成基準 3.3.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion)
 
-### エラー回避（法務、金融、データ）（3.3.4）{#error-prevention-legal-financial-data}
+### エラー回避（法務、金融、データ）（3.3.4） {#error-prevention-legal-financial-data}
 
 * 達成基準 3.3.4
 * レベル AA
@@ -1257,7 +1257,7 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
    * 確認
 送信の最終処理をおこなう前に、情報の見直し、確認および修正をおこなうメカニズムを利用できる
 
-#### 目的 - エラー回避（法務、金融、データ）（3.3.4）{#purpose-error-prevention-legal-financial-data}
+#### 目的 - エラー回避（法務、金融、データ）（3.3.4） {#purpose-error-prevention-legal-financial-data}
 
 この達成基準の目的は、障碍を持つユーザーが、元に戻せない操作を実行する際に、誤りが原因で重大な結果が生じるのを回避できるよう支援することです。例えば、返金不能な航空券を購入したり、証券会社の口座で株式購入注文を送信したりすると、深刻な結果をもたらす金融取引となります。航空便の日付を誤った場合、交換できない間違った日付のチケットを購入することになります。購入する株式の数を間違えた場合は、意図した数よりも多くの株式を購入する可能性があります。どちらのエラーも、すぐに実行され、後で変更することができないトランザクションを伴うので、大きな犠牲を払うことになりかねません。同様に、データベースに保存された、後でアクセスする必要があるデータ（例えば旅行サービスの Web サイトに保存されている旅行プロファイル全体など）を誤って変更または削除してしまうと、回復不能なエラーとなる可能性があります。「ユーザーが自分で制御可能」なデータの変更または削除を参照する場合、この達成基準の意図は、ファイルやレコードの削除など、大量のデータの損失を防ぐことです。保存コマンド、またはドキュメント、レコード、その他のデータの単純な作成や編集を実行するたびに、確認を要求するものではありません。
 
@@ -1265,53 +1265,53 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 ユーザーが自分で制御可能なデータとは、ユーザーが意図した行動によって変更および／または削除できる、ユーザーが閲覧可能なデータのことです。ユーザーがこれらのデータを制御するケースの例としては、ユーザーアカウントの電話番号と住所の更新や、Web サイトから過去の請求書レコードの削除などがあります。インターネットログや検索エンジンの監視データなど、ユーザーが直接表示又は情報交換できないデータは指しません。
 
-#### 達成方法 - エラー回避（法務、金融、データ）（3.3.4）{#how-to-meet-error-prevention-legal-financial-data}
+#### 達成方法 - エラー回避（法務、金融、データ）（3.3.4） {#how-to-meet-error-prevention-legal-financial-data}
 
 [達成基準 3.3.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)のガイドラインに従います。
 
-#### 詳細情報 - エラー回避（法務、金融、データ）（3.3.4）{#more-information-error-prevention-legal-financial-data}
+#### 詳細情報 - エラー回避（法務、金融、データ）（3.3.4） {#more-information-error-prevention-legal-financial-data}
 
 * [達成基準 3.3.4 について](https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html)
 * [達成基準 3.3.4 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data)
 
-## 原則 4：堅牢{#principle-robust}
+## 原則 4：堅牢 {#principle-robust}
 
 [原則 4：堅牢 - コンテンツは、支援テクノロジーを含む様々なユーザーエージェントが確実に解釈できるように十分に堅牢でなければならない。](https://www.w3.org/TR/WCAG/#robust)
 
-### 互換性（4.1）{#compatible}
+### 互換性（4.1） {#compatible}
 
 [ガイドライン 4.1 互換性：支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大化します。](https://www.w3.org/TR/WCAG/#compatible)
 
 支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大化します。
 
-### 構文解析（4.1.1）{#parsing}
+### 構文解析（4.1.1） {#parsing}
 
 * 達成基準 4.1.1
 * レベル A
 * 構文解析：マークアップ言語を使用して実装したコンテンツでは、要素に完全な開始タグと終了タグが付けられ、要素は仕様に従ってネストされ、重複属性は含まれず、ID は一意である。ただし、指定によって機能が許可される場合を除く。
 
-#### 目的 - 構文解析（4.1.1）{#purpose-parsing}
+#### 目的 - 構文解析（4.1.1） {#purpose-parsing}
 
 この達成基準の目的は、支援テクノロジーを含むユーザーエージェントがコンテンツを正確に解釈および解析できるようにすることです。コンテンツをデータ構造に解析できない場合、異なるユーザーエージェントがそのコンテンツを異なる方法で表示する、または完全に解析できない可能性があります。一部のユーザーエージェントは、コード化が不完全なコンテンツをレンダリングする際に、「修復テクニック」を使用します。
 
 修復技術はユーザーエージェントによって異なるので、ユーザーエージェントの正式な文法で定義された規則に従ってコンテンツが作成されない限り、コンテンツが正確にデータ構造に解析される、または支援テクノロジーなどの特殊なユーザーエージェントが正しくレンダリングされることを、作成者は前提にすることはできません。マークアップ言語では、要素と属性の構文のエラーと、正しくネストされた開始および終了タグの提供に失敗すると、エラーが発生し、ユーザーエージェントがコンテンツを確実に解析できなくなります。したがって、達成基準では、正式な文法規則の規則のみを使用して内容を解析できる必要があります。
 
-#### 達成方法 - 構文解析（4.1.1）{#how-to-meet-parsing}
+#### 達成方法 - 構文解析（4.1.1） {#how-to-meet-parsing}
 
 [達成基準 4.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#parsing)のガイドラインに従います。
 
-#### 詳細 - 構文解析（4.1.1）{#more-information-parsing}
+#### 詳細 - 構文解析（4.1.1） {#more-information-parsing}
 
 * [達成基準 4.1.1 について](https://www.w3.org/WAI/WCAG21/Understanding/parsing.html)
 * [達成基準 4.1.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#parsing)
 
-### 名前、役割、値（4.1.2）{#name-role-value}
+### 名前、役割、値（4.1.2） {#name-role-value}
 
 * 達成基準 4.1.2
 * レベル A
 * 名前、役割、値：すべてのユーザーインターフェイスコンポーネント（フォーム要素、リンク、スクリプトによって生成されるコンポーネントを含むが、これらに限定されない）で、名前と役割をプログラムによって決定できる。ユーザーが設定できる状態、プロパティ、値は、プログラムによって設定できる。また、これらの項目に対する変更の通知は、支援テクノロジーを含むユーザーエージェントが利用できる。
 
-#### 目的 - 名前、役割、値（4.1.2）{#purpose-ame-role-value}
+#### 目的 - 名前、役割、値（4.1.2） {#purpose-ame-role-value}
 
 この達成基準の目的は、支援テクノロジー（AT）がコンテンツ内のユーザーインターフェイスコントロールのステータスに関する情報を収集、アクティブ化（設定）し、最新の状態に保つことです。
 
@@ -1321,11 +1321,11 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 ユーザインターフェイスコントロールの特に重要な状態は、フォーカスがあるかどうかです。コントロールのフォーカス状態はプログラムで判定でき、フォーカスの変更に関する通知はユーザーエージェントや支援テクノロジーに送られます。ユーザーインターフェイスコントロールの状態のその他の例としては、チェックボックスやラジオボタンが選択されているかどうか、または折りたたみ可能なツリーやリストノードが展開されているか折りたたまれているかなどがあります。
 
-#### 達成方法 - 名前、役割、値（4.1.2）{#how-to-meet-ame-role-value}
+#### 達成方法 - 名前、役割、値（4.1.2） {#how-to-meet-ame-role-value}
 
 [達成基準 4.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)のガイドラインに従います。
 
-#### 詳細情報 - 名前、役割、値（4.1.2）{#more-information-ame-role-value}
+#### 詳細情報 - 名前、役割、値（4.1.2） {#more-information-ame-role-value}
 
 * [達成基準 4.1.2 について](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
 * [達成基準 4.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#name-role-value)
