@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 91%
 
 ページ（またはページのセット）にローンチが作成されている場合、ページのローンチコピーのコンテンツを編集できます。
 
-1. [「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)にアクセスして使用可能なアクションを表示します。
+1. [「参照」のローンチ（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)にアクセスして使用可能なアクションを表示します。
 1. 「**このページに移動**」を選択して編集するページを開きます。
 
-ページを編集すると、上部のツールバーに、「**離れる**」および「**移動**」オプションと共に表示されます。
+ページを編集すると、上部のツールバーに、「**終了**」および「**ナビゲート**」オプションと共に表示されます。
 
-![ページエディターから起動を移動](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+![ページエディターからの「終了」と「ローンチをナビゲート」](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 
-### ライブコピーへのローンチページサブジェクトを編集 {#editing-launch-pages-subject-to-a-live-copy}
+### ライブコピーへのローンチページサブジェクトの編集 {#editing-launch-pages-subject-to-a-live-copy}
 
 ローンチがライブコピーに基づく場合は、次のようになります。<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
 
@@ -43,7 +43,7 @@ ht-degree: 91%
 
 おこなった変更を追跡するために、ローンチを&#x200B;**参照**&#x200B;で表示して、ローンチページをそのソースページと比較することができます。
 
-1. **サイト**&#x200B;コンソールで、[起動のソースページに移動し、](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)を1つ選択します。
+1. **Sites** コンソールで、[ローンチのソースページに移動してそれを選択します](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. **[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開いて、「**ローンチ**」を選択します。
 1. 特定のローンチを選択してから、次のように&#x200B;**ソースと比較します**。
 
@@ -69,7 +69,7 @@ ht-degree: 91%
 >
 >ローンチにページを追加するには、ページが共通の言語ルートの下（単一のサイト内）にある必要があります。
 
-## ローンチの設定の編集  {#editing-a-launch-configuration}
+## ローンチの設定の編集 {#editing-a-launch-configuration}
 
 ローンチのプロパティは、任意のタイミングで編集できます。
 
