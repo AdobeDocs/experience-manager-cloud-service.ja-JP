@@ -8,28 +8,28 @@ translation-type: tm+mt
 source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
 
 # [!DNL Assets] ガイド {#assets}
 
-+ [[!DNL Assets] として [!DNL Cloud Service]](/help/assets/home.md)
++ [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [の主な変更点 [!DNL Assets]  [!DNL Cloud Service]](assets-cloud-changes.md)
++ [ [!DNL Assets]  as a [!DNL Cloud Service]](assets-cloud-changes.md) の主な変更点
 + [[!DNL Assets] アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
 + [ [!DNL Assets]](accessibility.md) のアクセシビリティ
-+ デジタルアセットの管理{#manage}
++ デジタルアセットの管理 {#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
    + [アセットマイクロサービスの基本](asset-microservices-configure-and-use.md)
    + [アセットの追加とアップロード](add-assets.md)
    + [アセットの検索](search-assets.md)
    + [一般的なアセット管理タスク](manage-digital-assets.md)
-   + [画像のスマートタグ](smart-tags.md)
+   + [画像のスマートタグ付け](smart-tags.md)
    + [ビデオアセットのスマートタグ付け](smart-tags-video-assets.md)
    + [アセットの整理方法](organize-assets.md)
    + [AEM での  [!DNL Adobe Stock]  アセットの使用](aem-assets-adobe-stock.md)
@@ -55,9 +55,9 @@ ht-degree: 85%
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
-   + [AEM GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+   + [コンテンツフラグメント用 AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
    + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM GraphQL APIとコンテンツフラグメント — サンプルコンテンツとクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
@@ -69,7 +69,7 @@ ht-degree: 85%
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
-   + [コンテンツフラグメントとGraphQLとのヘッドレス配信](content-fragments/content-fragments-graphql.md)
+   + [コンテンツフラグメントと GraphQL のヘッドレス配信](content-fragments/content-fragments-graphql.md)
    + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
    + [インスタンスに対するコンテンツフラグメント機能の有効化](content-fragments/content-fragments-configuration-browser.md)
    + [コンテンツフラグメントモデル](content-fragments/content-fragments-models.md)
@@ -79,14 +79,14 @@ ht-degree: 85%
    + [コンテンツフラグメント - 削除に関する考慮事項](content-fragments/content-fragments-delete.md)
    + [Markdown](content-fragments/content-fragments-markdown.md)
    + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
-   + [プレビュー- JSON表現](/help/assets/content-fragments/content-fragments-json-preview.md)
+   + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
    + [Experience League 提供の Dynamic Media ニュースレター](dynamic-media/dynamic-media-newsletter.md)
    + [Dynamic Media のセットアップ](dynamic-media/administering-dynamic-media.md)
    + [Dynamic Media の操作](dynamic-media/dynamic-media.md)
    + [Dynamic Media の設定](dynamic-media/config-dm.md)
    + [Dynamic Media のトラブルシューティング](dynamic-media/troubleshoot-dm.md)
-   + [Dynamic Mediaでのアクセシビリティ](dynamic-media/accessibility-dm.md)
+   + [Dynamic Media でのアクセシビリティ](dynamic-media/accessibility-dm.md)
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
