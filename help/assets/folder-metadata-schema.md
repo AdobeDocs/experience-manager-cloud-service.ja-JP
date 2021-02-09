@@ -1,12 +1,12 @@
 ---
 title: フォルダーメタデータスキーマ
-description: ' でアセットフォルダーのメタデータスキーマを作成する方法について説明します。 [!DNL Experience Manager Assets]'
+description: '  [!DNL Experience Manager Assets] のアセットフォルダーのメタデータスキーマを作成する方法について説明します。'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 96%
 
 フォルダーメタデータスキーマフォームエディターを使用して、フォルダーのメタデータスキーマを作成および編集します。
 
-1. [!DNL Experience Manager]ロゴをタップ/クリックし、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**/**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
+1. [!DNL Experience Manager] のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
 1. フォルダーメタデータスキーマフォームページで、「**[!UICONTROL 作成]**」をタップまたはクリックします。
 1. フォームの名前を指定し、「**[!UICONTROL 作成]**」をタップまたはクリックします。新しいスキーマフォームがスキーマフォームページにリストされます。
 
-## フォルダーメタデータスキーマフォームの編集  {#edit-folder-metadata-schema-forms}
+## フォルダーメタデータスキーマフォームの編集 {#edit-folder-metadata-schema-forms}
 
 以下を含む、新しく追加された、または既存のメタデータスキーマフォームを編集できます。
 
@@ -138,7 +138,7 @@ ht-degree: 96%
 
 ### フォルダーメタデータスキーマページからのスキーマへの割り当て  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. [!DNL Experience Manager]ロゴをタップ/クリックし、**[!UICONTROL ツール]**/**[!UICONTROL アセット]****[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
+1. [!DNL Experience Manager] のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL フォルダーメタデータスキーマ]**&#x200B;に移動します。
 1. フォルダーメタデータスキーマフォームページから、フォルダーに適用するスキーマフォームを選択します。
 1. ツールバーの「**[!UICONTROL フォルダーに適用]**」をタップまたはクリックします。
 
@@ -155,7 +155,7 @@ ht-degree: 96%
 
 フォルダーを作成するときに、フォルダーメタデータスキーマを割り当てることができます。システムに 1 つ以上のフォルダーメタデータスキーマが存在する場合は、**[!UICONTROL フォルダーを作成]**&#x200B;ダイアログに追加リストが表示されます。希望のスキーマを選択できます。デフォルトではスキーマは選択されていません。
 
-1. [!DNL Experience Manager Assets]ユーザーインターフェイスで、ツールバーの&#x200B;**[!UICONTROL 「作成」]**&#x200B;をタップまたはクリックします。
+1. [!DNL Experience Manager Assets] ユーザーインターフェイスで、ツールバーの「**[!UICONTROL 作成]**」をタップまたはクリックします。
 1. フォルダーのタイトルと名前を指定します。
 1. フォルダーメタデータスキーマリストから希望のスキーマを選択します。次に、「**[!UICONTROL 作成]**」をタップまたはクリックします。
 
