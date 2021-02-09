@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: de313ebc7a4fe89784b9083edbb790dc444caac9
 workflow-type: tm+mt
 source-wordcount: '4358'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 ## フォルダーの作成 {#creating-folders}
 
-`Nature` に関するすべての画像などの、アセットのコレクションを構成する場合に、それらを保存するフォルダーを作成できます。フォルダーを使用すると、アセットを分類および整理できます。[!DNL Experience Manager Assets] フォルダ内のアセットを整理して、作業を効率化する必要はありません。
+`Nature` に関するすべての画像などの、アセットのコレクションを構成する場合に、それらを保存するフォルダーを作成できます。フォルダーを使用すると、アセットを分類および整理できます。ただし、[!DNL Experience Manager Assets] では、効率向上のために必ずアセットをフォルダーで整理しなければならないということではありません。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 94%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
+DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
 
 ![重複アセット検出の OSGi 設定](assets/duplicate-detection.png)
 
@@ -95,13 +95,13 @@ DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセッ�
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、`Enter`キーを選択します。 新しいタグは[!DNL Experience Manager]に保存されます。
+1. 「**[!UICONTROL タグ]**」フィールドで、タグを 1 つ以上選択します。カスタムタグを追加するには、ボックスにタグの名前を入力し、`Enter` キーを押します。新しいタグが [!DNL Experience Manager] に保存されます。
 
    YouTube で公開して YouTube へのリンクを張る（適切なリンクがある場合）には、タグが必要です。
 
    >[!NOTE]
    >
-   >タグを作成するには、CRX リポジトリの `/content/cq:tags/default` パスでの書き込み権限が必要です。
+   >タグを作成するには、CRX リポジトリーの `/content/cq:tags/default` パスでの書き込み権限が必要です。
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
 
@@ -145,7 +145,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >同じ場所にあるアセットをコピーすると、[!DNL Experience Manager]によって名前のバリエーションが自動的に生成されます。 例えば、`Square`という名前のアセットをコピーすると、[!DNL Experience Manager]はコピーのタイトルを`Square1`として自動的に生成します。
+   >同じ場所でアセットをコピーすると、[!DNL Experience Manager] は自動的に名前のバリエーションを生成します。例えば、「`Square`」というタイトルのアセットをコピーすると、[!DNL Experience Manager] は自動的にそのコピーのタイトルを「`Square1`」として生成します。
 
 1. ツールバーの&#x200B;**[!UICONTROL 貼り付け]**&#x200B;アセットアイコンをクリックします。アセットがこの場所にコピーされます。
 
@@ -209,7 +209,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >デフォルトでは、[!DNL Experience Manager Assets]は、プレビューモードでアセットの元のレンディションを表示しません。 管理者は、オーバーレイを使用して[!DNL Assets]を設定し、プレビューモードで元のレンディションを表示することができます。
+   >デフォルトでは、[!DNL Experience Manager Assets] はプレビューモードでアセットのオリジナルレンディションを表示しません。管理者の場合、オーバーレイを使用して、プレビューモードでもオリジナルレンディションを表示するように [!DNL Assets] を設定できます。
 
 1. 表示または削除するレンディションを選択します。
 
@@ -229,7 +229,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    >
    >**[!UICONTROL レンディション]**&#x200B;パネルからレンディションを選択する場合、ツールバーのコンテキストが変わり、レンディションに関連するアクションのみが表示されます。レンディションをアップロードアイコンなどのオプションは表示されません。これらのオプションをツールバーに表示するには、アセットの詳細ページに移動します。
 
-   画像またはビデオアセットの詳細ページに表示するレンディションのサイズを設定できます。指定したサイズに基づいて、アセットは、正確なサイズまたは最も近いサイズのレンディションを表示します。
+   画像またはビデオアセットの詳細ページに表示するレンディションのサイズを設定できます。Assets では、指定される寸法に基づいてレンディションを正確なサイズまたは最も近いサイズで表示します。
 
    アセットの詳細レベルで画像のレンディションのサイズを設定するには、`renditionpicker` ノード（`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`）をオーバーレイして、幅のプロパティの値を設定します。画像サイズに基づいてアセットの詳細ページでレンディションをカスタマイズするには、幅の代わりに **[!UICONTROL size (Long) in KB]** プロパティを設定します。サイズベースのカスタマイズの場合、`preferOriginal` プロパティを使用すると、一致するレンディションのサイズがオリジナルより大きい場合でも、オリジナルが優先されます。
 
@@ -237,7 +237,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリ内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
+   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリー内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
 
    >[!NOTE]
    >
@@ -329,7 +329,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## 閉じられたユーザーグループ {#closed-user-group}
 
-Closed User Group(CUG)は、[!DNL Experience Manager]から公開される特定のアセットフォルダーへのアクセスを制限するために使用されます。 フォルダーに対して CUG を作成すると、そのフォルダー（フォルダーのアセットとサブフォルダーを含む）へのアクセスは、割り当てられたメンバーまたはグループのみに制限されます。フォルダーにアクセスするには、セキュリティ資格情報を使用してログインする必要があります。
+閉じられたユーザーグループ（CUG）は、[!DNL Experience Manager] から公開された特定のアセットフォルダーへのアクセスを制限するために使用します。フォルダーに対して CUG を作成すると、そのフォルダー（フォルダーのアセットとサブフォルダーを含む）へのアクセスは、割り当てられたメンバーまたはグループのみに制限されます。フォルダーにアクセスするには、セキュリティ資格情報を使用してログインする必要があります。
 
 CUG は、アセットへのアクセスを制限する追加の方法です。また、フォルダーのログインページを設定することもできます。
 
@@ -338,16 +338,16 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
    ![add_user](assets/add_user.png)
 
-1. ユーザーがフォルダーにアクセスしたときにログイン画面を表示するには、「**[!UICONTROL 有効にする]**」オプションを選択します。次に、[!DNL Experience Manager]でログインページのパスを選択し、変更を保存します。
+1. ユーザーがフォルダーにアクセスしたときにログイン画面を表示するには、「**[!UICONTROL 有効にする]**」オプションを選択します。次に、[!DNL Experience Manager] 内のログインページへのパスを選択し、変更を保存します。
 
    ![login_page](assets/login_page.png)
 
    >[!NOTE]
    >
-   >ログインページのパスを指定しない場合、[!DNL Experience Manager]は、パブリッシュインスタンスにデフォルトのログインページを表示します。
+   >ログインページへのパスを指定しないと、[!DNL Experience Manager] はパブリッシュインスタンスでデフォルトのログインページを表示します。
 
 1. フォルダーを公開し、パブリッシュインスタンスからアクセスすると、ログイン画面が表示されます。
-1. CUG メンバーの場合は、自分のセキュリティ資格情報を入力します。このフォルダーは、[!DNL Experience Manager]によって認証された後に表示されます。
+1. CUG メンバーの場合は、自分のセキュリティ資格情報を入力します。[!DNL Experience Manager] によって認証されると、フォルダーが表示されます。
 
 ## アセットの検索 {#search-assets}
 
@@ -364,7 +364,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 ## 画像の編集 {#editing-images}
 
-[!DNL Experience Manager Assets]インターフェイスの編集ツールを使用すると、画像アセットに対して小さな編集ジョブを実行できます。 画像に対して切り抜き、回転、反転などの編集ジョブを実行できます。アセットに画像マップを追加することもできます。
+[!DNL Experience Manager Assets] インターフェイスの編集ツールを使用すると、画像アセットに対して細かい編集ジョブを実行できます。画像に対して切り抜き、回転、反転などの編集ジョブを実行できます。アセットに画像マップを追加することもできます。
 
 >[!NOTE]
 >
@@ -422,7 +422,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 タイムラインを使用すると、アセットのアクティブなワークフロー、コメントや注釈、アクティビティログ、バージョンなど、選択した項目の様々なイベントを表示できます。
 
 ![アセットのタイムラインエントリの並べ替え](assets/sort_timeline.gif)
-**&#x200B;図：アセットのタイムラインエントリの並べ替え
+*図：アセットのタイムラインエントリの並べ替え*
 
 >[!NOTE]
 >
@@ -436,7 +436,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 注釈とは、画像やビデオに追加するコメントまたは注記です。マーケティング担当者は、注釈により、アセットについてコラボレーションし、フィードバックを残すことができます。
 
-ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。 Assets がサポートするビデオの形式は、ブラウザーによって異なります。
+ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。Assets がサポートするビデオの形式は、ブラウザーによって異なります。
 
 >[!NOTE]
 >
@@ -567,7 +567,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 * 別のアプリケーションで画像を変更し、 Assets にアップロードします。元の画像が上書きされないように画像のバージョンが作成されます。
 * アセットのメタデータを編集します。
-* [!DNL Experience Manager]デスクトップアプリを使用して、既存のアセットをチェックアウトし、変更を保存します。 アセットを保存するたびに、新しいバージョンが作成されます。
+* 既存のアセットをチェックアウトしたり変更を保存したりするには、[!DNL Experience Manager] デスクトップアプリケーションを使用します。アセットが保存されるたびに、新しいバージョンが作成されます。
 
 また、ワークフローを使用して、自動バージョン管理を有効にすることもできます。アセットのバージョンを作成すると、バージョンと共にメタデータとレンディションが保存されます。レンディションによって、同じ画像の代替となる画像が表示されます（例えば、アップロードされた JPEG ファイルの PNG レンディション）。
 
