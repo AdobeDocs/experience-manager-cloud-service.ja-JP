@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 64%
+ht-degree: 67%
 
 ---
 
@@ -113,7 +113,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **Experience Managerデスクトップアプリ**:このアプリはWindowsとMacで動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
+* **Experience Managerデスクトップアプリ**:このアプリはWindowsとMacで動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、AEM ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
 
 * **Adobeアセットリンク**:クリエイティブプロフェッショナルは、、、の内部から直接アセットを検索して使用 [!DNL Adobe InDesign]でき [!DNL Adobe Illustrator]ま [!DNL Adobe Photoshop]す。
 
@@ -169,7 +169,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### デスクトップアクションのデスクトップアプリでの有効化 {#desktop-actions}
 
-ブラウザーの[!DNL Assets]ユーザーインターフェイス内から、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。 これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、[AEM Web インターフェイスでのデスクトップアクションの有効化](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)を参照してください。
+ブラウザーの[!DNL Assets]ユーザーインターフェイス内から、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。 これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、[AEM Web インターフェイスでのデスクトップアクションの有効化](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#desktopactions-v2)を参照してください。
 
 ![デスクトップアプリで作業する際の、デスクトップアクションのショートカットとしての有効化](assets/enable_desktop_actions.png)
 
