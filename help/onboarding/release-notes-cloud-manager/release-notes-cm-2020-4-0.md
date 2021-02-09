@@ -1,22 +1,22 @@
 ---
-title: Cloud Serviceリリース2020.4.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2020.4.0としてのAEMのCloud Managerのリリースノート
+title: AEM as a Cloud Service リリース 2020.4.0 の Cloud Manager のリリースノート
+description: AEM as a Cloud Service リリース 2020.4.0 の Cloud Manager のリリースノート
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Service2020.4.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Adobe Experience Manager as a Cloud Service 2020.4.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.4.0として概要を説明しています。
+このページでは、AEM as a Cloud Service 2020.4.0 の Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2020.4.0のリリース日は2020年4月20日です。
+AEM as a Cloud Service 2020.4.0 の Cloud Manager のリリース日は 2020 年 4 月 9 日です。
 
 ## 新機能 {#whats-new-cloud-manager}
 
