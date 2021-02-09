@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media Cloud Service の設定
-description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法に関する情報。
+description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
 source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '3869'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -136,7 +136,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. **[!UICONTROL DMSETUP]**&#x200B;ページで、失敗を説明する設定詳細を確認します。特に、エラーメッセージやエラーコードは控えておいてください。この情報を示して、アドビカスタマーケアに問い合わせる必要があります。
+1. **[!UICONTROL DMSETUP]** ページで、失敗を説明する設定詳細を確認します。特に、エラーメッセージやエラーコードは控えておいてください。この情報を示して、アドビカスタマーケアに問い合わせる必要があります。
 
    ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -169,9 +169,9 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 1. **[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたあと、「**[!UICONTROL OK]**」をタップします。
 
-## （オプション）Dynamic Media での詳細設定{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## （オプション）Dynamic Media での詳細設定 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりする場合は、次の&#x200B;**&#x200B;オプションタスクを 1 つまたは複数実行できます。
+Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりする場合は、次のオプションタスクを 1 つまたは複数実行できます&#x200B;*。*
 
 * [Dynamic Media 設定のセットアップと設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（オプション）Dynamic Media のパフォーマンスの調整](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
@@ -193,12 +193,12 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 * [Image Server の公開設定 ](#publishing-setup-for-image-server)
 * [アプリケーションの一般設定の指定](#configuring-application-general-settings)
 * [カラーマネジメントの設定](#configuring-color-management)
-* [サポートされる形式でのMIMEタイプの編集](#editing-mime-types-for-supported-formats)
-* [サポートされていない形式に対するMIME型の追加](#adding-mime-types-for-unsupported-formats)
+* [サポートされる形式の MIME タイプの編集](#editing-mime-types-for-supported-formats)
+* [サポートされていない形式のカスタム MIME タイプの追加](#adding-mime-types-for-unsupported-formats)
 
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-#### Image Server の公開設定     {#publishing-setup-for-image-server}
+#### Image Server の公開設定       {#publishing-setup-for-image-server}
 
 公開設定は、アセットがデフォルトで Dynamic Media からどのように配信されるかを決定します。設定が指定されていない場合、Dynamic Media は、公開設定で定義されたデフォルト設定に従ってアセットを配信します。例えば、解像度属性が含まれていない画像を配信するように要求した場合、画像は初期設定のオブジェクト解像度設定で配信されます。
 
@@ -245,21 +245,21 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 * RGB 出力を返す動的レンディションは、RGB 出力を *sRGB* カラースペースで返します。
 * CMYK 出力を返す動的レンディションは、CMYK 出力を *WebCoated* カラースペースで返します。
 
-#### サポートされる形式のMIMEタイプの編集{#editing-mime-types-for-supported-formats}
+#### サポートされる形式の MIME タイプの編集 {#editing-mime-types-for-supported-formats}
 
-Dynamic Mediaが処理するアセットタイプを定義し、高度なアセット処理パラメータをカスタマイズできます。 例えば、アセット処理パラメーターを指定して次のことができます。
+Dynamic Media によって処理されるアセットタイプを定義して、高度なアセット処理パラメーターをカスタマイズできます。例えば、アセット処理パラメーターを指定して次のことができます。
 
 * Adobe PDF を eCatalog アセットに変換する。
 * Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated Postscript ファイル（.EPS）をラスタライズする。
-* [ビデオ](/help/assets/dynamic-media/video-profiles.md) プロファイルと [](/help/assets/dynamic-media/image-profiles.md) イメージングプロファイルは、それぞれビデオおよび画像の処理を定義するために使用できます。
+* [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)および[イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md)は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
 
 [アセットのアップロード](/help/assets/add-assets.md)を参照してください。
 
-**サポートされる形式のMIMEタイプを編集するには**
+**サポートされる形式の MIME タイプを編集するには**
 
 1. AEM で、AEM ロゴをクリックしてグローバルナビゲーションコンソールにアクセスして、**[!UICONTROL 一般／CRXDE Lite]** をクリックします。
-1. 左側のレールで、次の場所に移動します。
+1. 左側のパネルで、次の場所に移動します。
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
@@ -268,9 +268,9 @@ Dynamic Mediaが処理するアセットタイプを定義し、高度なアセ�
 1. mimeTypes フォルダーで、MIME タイプを選択します。
 1. CRXDE Lite ページの右側の下部で、次の操作をおこないます。
 
-   * **[!UICONTROL 有効]**&#x200B;フィールドを重複クリックします。 デフォルトでは、すべてのアセットの MIME タイプが有効になって（**[!UICONTROL true]** に設定されて）います。これは、処理に関してアセットが Dynamic Media に同期されることを意味します。このアセットのMIMEタイプを処理から除外する場合は、この設定を&#x200B;**[!UICONTROL false]**&#x200B;に変更します。
+   * 「**[!UICONTROL 有効]**」フィールドをダブルクリックします。デフォルトでは、すべてのアセットの MIME タイプが有効になって（**[!UICONTROL true]** に設定されて）います。これは、処理に関してアセットが Dynamic Media に同期されることを意味します。このアセットの MIME タイプを処理から除外する場合、この設定を **[!UICONTROL false]** に変更します。
 
-   * **[!UICONTROL jobParam]**&#x200B;を重複がクリックすると、関連するテキストフィールドが開きます。 特定の MIME タイプに使用可能な、許可されている処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
+   * **[!UICONTROL jobParam]** をダブルクリックして、関連するテキストフィールドを開きます。特定の MIME タイプに使用可能な、許可されている処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
 
 1. 次のいずれかの操作をおこないます。
    * 手順 3～4 を繰り返して、その他の MIME タイプを編集します。
@@ -278,11 +278,11 @@ Dynamic Mediaが処理するアセットタイプを定義し、高度なアセ�
 
 1. ページの左上隅で、「**[!UICONTROL CRXDE Lite]**」をタップして AEM に戻ります。
 
-#### サポートされていない形式に対するMIMEタイプの追加{#adding-mime-types-for-unsupported-formats}
+#### サポートされていない形式のカスタム MIME タイプの追加 {#adding-mime-types-for-unsupported-formats}
 
 AEM Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite で追加する新しいノードが AEM によって削除されないようにするには、必ず `image_` より前に MIME タイプを移動し、その有効値が **[!UICONTROL false]** に設定されている必要があります。
 
-**サポートされていない形式にMIMEタイプを追加するには**
+**サポートされていない形式のカスタム MIME タイプを追加するには**
 
 1. AEM で、**[!UICONTROL ツール／運営／Web コンソール]**&#x200B;をタップします。
 
@@ -315,7 +315,7 @@ AEM Assets でサポートされていない形式のカスタム MIME タイプ
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
-1. 左側のレールで、次の場所に移動します。
+1. 左側のパネルで、次の場所に移動します。
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
@@ -367,9 +367,9 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
    >
    >OSGi PID は動的に生成されるので、ダイレクト URL ではなく、テキスト検索が必要です。
 
-1. 「**[!UICONTROL Maximum Parallel Jobs]**」フィールドで、目的の値に数値を変更します。
+1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
 
-   **[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やすと、Dynamic Mediaへのファイルの大量アップロードを適切にサポートできます。 正確な値は、ハードウェア容量に依存します。 初期移行または1回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。 ただし、大きな値（コア数の2倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。 そのため、特定の使用事例に基づいて値をテストし、調整する必要があります。
+   **[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やすと、Dynamic Media へのファイルの大量アップロードを適切にサポートできます。正確な値は、ハードウェア容量に依存します。初期移行または 1 回限りの一括アップロードなど、特定のシナリオでは、大きな値を使用できます。ただし、大きな値（コア数の 2 倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。そのため、特定の使用事例に基づいて値をテストし、調整する必要があります。
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -391,7 +391,7 @@ Granite のワークフローキューを更新するには：:
    >
    >OSGi PID は動的に生成されるので、ダイレクト URL ではなく、テキスト検索が必要です。
 
-1. 「**[!UICONTROL Maximum Parallel Jobs]**」フィールドで、目的の値に数値を変更します。
+1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
 
    デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4 コアサーバーでは、2 ワーカースレッドが割り当てられます。（0.0～1.0 の値は比率に基づき、1 より大きい数はワーカースレッドの数を割り当てます）。
 
