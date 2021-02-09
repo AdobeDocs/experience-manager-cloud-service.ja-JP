@@ -1,18 +1,18 @@
 ---
 title: Dynamic Media アセットの配信
-description: Dynamic Media資産の配信方法を学びます。
+description: Dynamic Media アセットの配信方法について説明します。
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Media アセットの配信{#delivering-dynamic-media-assets}
+# Dynamic Media アセットの配信 {#delivering-dynamic-media-assets}
 
-ビデオと画像の両方で、Dynamic Mediaアセットの配信方法はWebサイトの実装方法に依存します。
+ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
 
 Dynamic Media を使用する場合、次の複数のオプションがあります。
 
@@ -39,7 +39,7 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 * [Dynamic Media Classic を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
-## Dynamic Media アセットの HTTP/2 配信  {#http-delivery-of-dynamic-media-assets}
+## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
 
 AEM は現在、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートしています。つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
