@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
 workflow-type: tm+mt
 source-wordcount: '1473'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->一般的なアセットやバイナリ（レンディションなど）のアップロードまたは更新に関連するすべてのAPI呼び出しは、AEMでは[!DNL Cloud Service]デプロイメントとして非推奨になりました。 バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload-technical) を使用します。
+>アセットやバイナリ一般（レンディションなど）のアップロードまたは更新に関連する API 呼び出しはすべて、AEM as a [!DNL Cloud Service] デプロイメントでは廃止されています。バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload-technical) を使用します。
 
 ## コンテンツフラグメント {#content-fragments}
 
