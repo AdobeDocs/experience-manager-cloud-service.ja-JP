@@ -1,11 +1,11 @@
 ---
 title: レスポンシブサイト用に最適化された画像の配信
-description: レスポンシブコード機能を使用して、最適化された画像をDynamic Mediaから配信する方法を説明します。
+description: レスポンシブコード機能を使用して、最適化された画像を Dynamic Media から配信する方法を説明します。
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
