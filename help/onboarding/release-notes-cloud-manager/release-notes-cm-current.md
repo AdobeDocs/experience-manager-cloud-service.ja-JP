@@ -1,18 +1,18 @@
 ---
-title: Cloud Serviceリリース2021.1.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2021.1.0としてのAEMのCloud Managerのリリースノート
+title: AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノート
 translation-type: tm+mt
 source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 4%
+ht-degree: 44%
 
 ---
 
 
-# Cloud Service2021.1.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Adobe Experience Manager as a Cloud Service 2021.1.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2021.1.0として概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
@@ -20,7 +20,7 @@ AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日
 
 ## Cloud Manager {#cloud-manager}
 
-### バグ修正  {#bug-fixes}
+### バグ修正 {#bug-fixes}
 
 * アセット実稼動インスタンスでは、場合によっては、環境&#x200B;**ユーザー**&#x200B;の詳細ページにブランドポータルのステータスが&#x200B;*保留*&#x200B;として表示されます。ユーザーは何も操作を行えません。
 
