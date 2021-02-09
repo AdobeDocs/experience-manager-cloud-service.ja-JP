@@ -1,11 +1,11 @@
 ---
 title: Dynamic Media のトラブルシューティング
-description: Dynamic Mediaを使用する場合のトラブルシューティングのヒント
+description: Dynamic Media 使用時のトラブルシューティングのヒント
 translation-type: tm+mt
 source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
 workflow-type: tm+mt
 source-wordcount: '998'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 99%
 
 「[新しい Dynamic Media 設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)」を参照してください。
 
-## 一般（すべてのアセット）{#general-all-assets}
+## 一般（すべてのアセット） {#general-all-assets}
 
 次に全般的なヒントやテクニックを示します。
 
-### アセット同期ステータスプロパティ  {#asset-synchronization-status-properties}
+### アセット同期ステータスプロパティ {#asset-synchronization-status-properties}
 
 CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dynamic Media へのアセットの同期に成功したことが確認できます。
 
@@ -63,7 +63,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dyna
      <li><p>CRX/DE に移動します。</p>
       <ul>
        <li>JCR 内のプリセット <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> が定義されているかどうかを確認します。この場所は、AEM 6.x から 6.4 にアップグレードし、移行をオプトアウトした場合に適用されます。それ以外の場合、場所は <code>/conf/global/settings/dam/dm/presets/viewer</code> になります。</li>
-       <li>JCR のアセットに <code>dam:scene7FileStatus</code><strong></strong> があり、それが「メタデータ」で <code>PublishComplete</code> と表示されていることを確認します。</li>
+       <li>JCR のアセットに <code>dam:scene7FileStatus</code><strong> </strong> があり、それが「メタデータ」で <code>PublishComplete</code> と表示されていることを確認します。</li>
       </ul> </li>
     </ol> </td>
    <td><p>ページを更新するか、別のページに移動してから戻ります（サイドレール JSP を再コンパイルする必要があります）。</p> <p>それでも解決しない場合：</p>
