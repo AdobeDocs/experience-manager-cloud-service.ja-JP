@@ -1,6 +1,6 @@
 ---
 title: Maven プロジェクトバージョンの処理
-description: Maven プロジェクトバージョンの処理 - Cloud Services
+description: Maven プロジェクトバージョンの処理- Cloud Services
 translation-type: tm+mt
 source-git-commit: 8e470ed1ea30fd2fa59617fdb6755abf9a0d74a2
 workflow-type: tm+mt
