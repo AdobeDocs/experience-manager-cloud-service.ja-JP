@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
 workflow-type: tm+mt
 source-wordcount: '4119'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -23,17 +23,17 @@ ht-degree: 86%
 
 Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下を提供します。
 
-* ディスパッチャー用のMavenプロジェクトに含める設定ファイルを含むバニラファイル構造です。
-* Cloud ServiceがサポートするディレクティブとしてAEMのみがディスパッチャー設定に含まれていることを検証するためのツール。        また、ツールでは構文が正しいかどうかも検証され、Apacheで開始が正常に行われます。
+* Dispatcher 用の Maven プロジェクトにインクルードする設定ファイルを含んだバニラファイル構造。
+* AEM as a Cloud Service でサポートされているディレクティブのみ Dispatcher 設定に含まれていることを顧客が検証するためのツール。また、ツールでは、Apache を開始が正常に起動できるように、構文が正しいかどうかも検証されます。
 * Dispatcher をローカルで実行する Docker イメージ。
 
-## ツールのダウンロードと抽出{#extracting-the-sdk}
+## ツールのダウンロードと抽出 {#extracting-the-sdk}
 
-[AEMの一部であるCloud ServiceSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)としてのディスパッチャーツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルのzipファイルからダウンロードできます。 新しいディスパッチャーツールのバージョンで利用できる新しい設定は、AEMのそのバージョンを実行するクラウド環境にクラウドでデプロイするために使用できます。
+[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に含まれている Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルで zip ファイルとしてダウンロードできます。新しい Dispatcher ツールバージョンで利用可能な新しい設定は、そのバージョン以降の AEM が実行されているクラウド環境にデプロイするときに使用できます。
 
-SDKを解凍します。これにより、macOS/LinuxとWindowsの両方のディスパッチャーツールがバンドルされます。
+SDK を解凍します。SDK には、macOS／Linux と Windows の両方の Dispatcher ツールがバンドルされています。
 
-**macOS/Linuxの場合**、ディスパッチャーツールのアーティファクトを実行可能にして実行します。保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己抽出されます。
+**macOS／Linux の場合**：Dispatcher ツールのアーティファクトを実行可能にして実行します。保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己解凍されます。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -42,7 +42,7 @@ Verifying archive integrity...  100%   All good.
 Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 ```
 
-**Windowsの場合**、Dispatcher Toolingのzipアーカイブを抽出します。
+**Windows の場合**：Dispatcher ツールの zip アーカイブを解凍します。
 
 ## ファイル構造 {#file-structure}
 
@@ -191,13 +191,13 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 以下では、内部リリースのデプロイ時に Cloud Manager で関連付けられた品質ゲートを渡せるように、設定をローカルで検証する方法について説明します。
 
-## ディスパッチャー設定{#local-validation-of-dispatcher-configuration}でサポートされているディレクティブのローカル検証
+## Dispatcher 設定でサポートされているディレクティブのローカル検証 {#local-validation-of-dispatcher-configuration}
 
 検証ツールは、Mac OS、Linux または Windows バイナリとして `bin/validator` の SDK で使用可能で、リリースのビルドとデプロイ時に Cloud Manager が実行する検証と同じものが実行できます。
 
 次のように呼び出します：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-ディスパッチャーの設定が、パターン`conf.d/enabled_vhosts/*.vhost`のすべてのファイルをスキャンして、クラウドサービスとしてAEMがサポートする適切なディレクティブを使用しているかどうかを検証します。 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
+このツールでは、パターン `conf.d/enabled_vhosts/*.vhost` に一致するすべてのファイルをスキャンして、AEM as a Cloud Service でサポートされている適切なディレクティブが Dispatcher 設定で使用されているかどうかを検証します。Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
 
 ```
 $ validator allowlist
@@ -341,11 +341,11 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
 
-## Apache httpdが開始{#local-validation}を実行できるように、ディスパッチャー設定構文のローカル検証
+## Apache httpd を起動するための Dispatcher 設定構文のローカル検証 {#local-validation}
 
-ディスパッチャーモジュール設定に、サポートされているディレクティブのみが含まれていると判断したら、Apacheが開始できるように構文が正しいことを確認する必要があります。 このテストを行うには、ドッカーをローカルにインストールする必要があります。 AEMを実行する必要はありません。
+サポートされているディレクティブのみ Dispatcher モジュール設定に含まれていることがわかったら、Apache を起動できるように、構文が正しいことを確認してください。このテストをおこなうには、Docker をローカルにインストールする必要があります。AEM が動作している必要はありません。
 
-`validate.sh`スクリプトを次のように使用します。
+`validate.sh` スクリプトを次のように使用します。
 
 ```
 $ validate.sh src/dispatcher
@@ -366,19 +366,19 @@ Syntax OK
 Phase 2 finished
 ```
 
-スクリプトは次の処理を行います。
+このスクリプトは次の処理をおこないます。
 
-1. 前の節のバリデータを実行し、サポートされているディレクティブのみが含まれていることを確認します。 設定が有効でない場合、スクリプトは失敗します。
-2. 構文が正しいかどうかをテストして`httpd -t command`を実行し、apache httpdが開始できるようにします。 正常に終了した場合は、設定をデプロイする準備が整っている必要があります。
+1. 前の節で説明したバリデーターを実行して、サポートされているディレクティブのみ含まれていることを確認します。設定が有効でない場合、スクリプトは失敗します。
+2. Apache httpd を起動できるように、`httpd -t command` を実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています。。
 3. [ファイル構造セクション](#file-structure)で説明されているように不変にする予定のディスパッチャーSDK設定ファイルのサブセットが変更されていないことを確認します。 これは、AEM SDKバージョンv2021.1.4738で導入された新しいチェックで、ディスパッチャーツールバージョン2.0.36も含まれます。この更新前に、これらの不変ファイルのローカルSDKでの変更がCloud環境にも適用されると誤って想定されていました。
 
-Cloud Managerの展開中に、`httpd -t syntax`チェックも実行され、エラーはCloud Manager `Build Images step failure`ログに記録されます。
+Cloud Manager によるデプロイ中に、`httpd -t syntax` のチェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
 ## Apache および Dispatcher 設定のローカルでのテスト {#testing-apache-and-dispatcher-configuration-locally}
 
-Apache と Dispatcher の設定をローカルでテストすることもできます。ドッカーをローカルにインストールし、前述のとおり検証に合格するように設定する必要があります。
+Apache と Dispatcher の設定をローカルでテストすることもできます。前述のように、Docker をローカルにインストールし、設定が検証に合格する必要があります。
 
-すべてのディスパッチャー設定ファイルを含むフォルダーを出力する`-d`パラメーターを使用して、検証ツールを実行します（前述の`validator.sh`とは異なります）。 次に、`docker_run.sh`スクリプトを実行し、そのフォルダーを引数として渡します。 ポート番号を指定する（次を参照）。8080)でディスパッチャーエンドポイントを公開するために、Dockerコンテナが開始され、設定と共にディスパッチャーを実行します。
+すべての Dispatcher 設定ファイルを含んだフォルダーを出力する `-d` パラメーターを使用して、検証ツール（前述の `validator.sh` とは異なります）を実行します。次に、そのフォルダーを引数として渡して `docker_run.sh` スクリプトを実行します。Dispatcher エンドポイントを公開するためのポート番号（ここでは 8080）を指定することで、Docker コンテナが起動され、所定の設定で Dispatcher が実行されます。
 
 ```
 $ validator full -d out src/dispatcher
@@ -397,7 +397,7 @@ Starting httpd server
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-次の方法を使用して、ディスパッチャー環境のログ出力を増やし、`RewriteRule`評価の結果をローカルモジュールとクラウドの両方で確認できます。
+次の方法を使用して、Dispatcher モジュールのログ出力を増やし、`RewriteRule` 評価の結果をローカル環境とクラウド環境の両方で確認できます。
 
 これらのモジュールのログレベルは、変数の `DISP_LOG_LEVEL` と `REWRITE_LOG_LEVEL` によって定義されます。これらは、`conf.d/variables/global.vars` ファイルに設定できます。関連する箇所は以下のとおりです。
 
@@ -423,9 +423,9 @@ Starting httpd server
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-ディスパッチャーをローカルで実行すると、ログは端末出力に直接出力されます。 ほとんどの場合、これらのログをDEBUGにする必要があります。これは、Dockerの実行時にDebugレベルをパラメーターとして渡すことで行うことができます。 例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-クラウド環境のログは、Cloud Managerのログサービスを通じて公開されます。
+クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
