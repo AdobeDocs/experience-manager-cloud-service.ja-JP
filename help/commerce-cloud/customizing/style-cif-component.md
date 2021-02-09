@@ -1,6 +1,6 @@
 ---
 title: AEM CIF コアコンポーネントのスタイル設定
-description: AEM CIF コアコンポーネントのスタイル設定方法を説明します。このチュートリアルでは、クライアントサイドライブラリ（clientlib）を使用して、Adobe Experience Manager （AEM） Commerce 実装の CSS と JavaScript をデプロイおよび管理する方法について説明します。このチュートリアルでは、ui.frontend モジュールと webpack プロジェクトがエンドツーエンドのビルドプロセスに統合される方法についても説明します。
+description: AEM CIF コアコンポーネントのスタイル設定方法を説明します。このチュートリアルでは、クライアントサイドライブラリ（clientlib）を使用して、Adobe Experience Manager（AEM）Commerce 実装の CSS と JavaScript をデプロイおよび管理する方法について説明します。このチュートリアルでは、ui.frontend モジュールと webpack プロジェクトがエンドツーエンドのビルドプロセスに統合される方法についても説明します。
 sub-product: Commerce
 topics: Development
 version: cloud-service
@@ -448,7 +448,7 @@ IDE と生成されたプロジェクトに戻ります。
    >[!NOTE]
    >完全な Maven ビルドを実行せずに、プロジェクトファイルをローカル AEM インスタンスに直接同期できる追加の [IDE セットアップとツール](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)があります。
 
-## アップデートされた製品ティーザーを表示{#view-updated-product-teaser}
+## アップデートされた製品ティーザーを表示 {#view-updated-product-teaser}
 
 プロジェクトのコードを AEM にデプロイした後は、製品ティーザーの変更を確認できるようになります。
 
@@ -468,7 +468,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 また、AEM は、パフォーマンスを考慮してクライアントライブラリをキャッシュしようとします。コードがデプロイされた後で、古いファイルが提供されることがあります。[クライアントライブラリのリビルドツール](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)を使用して、AEM クライアントライブラリのキャッシュを手動で無効にすることができます。*AEM が古いバージョンのクライアントライブラリをキャッシュしていると思われる場合は、「キャッシュを無効にする」ことをお勧めします。「ライブラリのリビルド」は非効率で時間がかかります。*
 
-## これで完了です。{#congratulations}
+## これで完了です {#congratulations}
 
 最初の AEM CIF コアコンポーネントのスタイルを設定し、webpack デベロッパーサーバーを使用しました。
 
