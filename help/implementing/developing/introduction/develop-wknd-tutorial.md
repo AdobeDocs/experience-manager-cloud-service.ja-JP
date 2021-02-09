@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# AEM Sites の開発の手引き - WKND チュートリアル{#getting-started-developing-aem-sites-wknd-tutorial}
+# AEM Sites の開発の手引き - WKND チュートリアル {#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## 概要 {#overview}
 
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service を使用した開発が初めての
 
 ![WKND](assets/wknd-tutorial-homepage.png)
 
-WKND 開発者向けチュートリアルは[こちら](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)で利用でき、最新のテクノロジーとベストプラクティスを使用して AEM プロジェクトを作成する手順を紹介しています。
+WKND 開発者向けチュートリアルは[こちら](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)で利用でき、最新のテクノロジーとベストプラクティスを使用して AEM プロジェクトを作成する手順を紹介しています。
 
 ## 中心概念 {#core-concepts}
 
@@ -32,5 +32,5 @@ WKND 開発者向けチュートリアルは[こちら](https://docs.adobe.com/c
 * [コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/getting-started/getting-started.html)
 * [Sling Model](https://sling.apache.org/documentation/bundles/models.html)
-* [編集可能なテンプレート](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [スタイルシステム](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [編集可能なテンプレート](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [スタイルシステム](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
