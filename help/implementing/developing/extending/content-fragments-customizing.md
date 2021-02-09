@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# コンテンツフラグメントのカスタマイズと拡張{#customizing-and-extending-content-fragments}
+# コンテンツフラグメントのカスタマイズと拡張 {#customizing-and-extending-content-fragments}
 
 Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメントは標準アセットを拡張します。
 
@@ -65,7 +65,7 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 
 * すべてのコンテンツはアセットの `jcr:content/data` ノードに格納されます。
 
-   * 要素データは次のマスターサブノードに格納されます。
+   * 要素データは次のプライマリサブノードに格納されます。
       `jcr:content/data/master`
 
    * バリエーションは、そのバリエーション名のサブノードに格納されます。
@@ -167,7 +167,7 @@ Assets コアと統合するには：
 
    * 各スキーマフォームは、フラグメントエディターと統合されています。
 
-## コンテンツフラグメント管理 API - サーバー側  {#the-content-fragment-management-api-server-side}
+## コンテンツフラグメント管理 API - サーバー側 {#the-content-fragment-management-api-server-side}
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
@@ -237,7 +237,7 @@ Assets コアと統合するには：
 
 
 
-### 適応 - adaptTo() の使用{#adapting-using-adaptto}
+### 適応 - adaptTo() の使用 {#adapting-using-adaptto}
 
 次のものを適応させることができます。
 
@@ -287,7 +287,7 @@ Assets コアと統合するには：
 
 >[!CAUTION]
 >
->この背景情報を考慮して下さい。ここでは（リポジトリ内の&#x200B;*私的な領域*&#x200B;としてマークされているため）何も変更しないでください。ですが、場合によっては、内部の動作を理解するのに役立ちます。
+>この背景情報を考慮して下さい。ここでは（リポジトリー内の&#x200B;*私的な領域*&#x200B;としてマークされているため）何も変更しないでください。ですが、場合によっては、内部の動作を理解するのに役立ちます。
 
 複数のビュー（= HTML ページ）にまたがる可能性があるコンテンツフラグメントの編集はアトミックです。このようなアトミックなマルチ表示編集機能は、一般的な AEM の概念ではないので、コンテンツフラグメントは、*編集セッション*&#x200B;と呼ばれるものを使用します。
 
