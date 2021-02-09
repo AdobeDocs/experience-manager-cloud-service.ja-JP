@@ -1,26 +1,26 @@
 ---
-title: Cloud Serviceリリース2020.2.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2020.2.0としてのAEMのCloud Managerのリリースノート
+title: AEM as a Cloud Service Release 2020.2.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2020.2.0 Cloud Manager のリリースノート
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Service2020.2.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Adobe Experience Manager as a Cloud Service 2020.2.0 Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.2.0として概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2020.2.0 Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2020.2.0のリリース日は2020年2月13日です。
+AEM as a Cloud Service 2020.2.0 Cloud Manager のリリース日は 2020 年 2 月 13 日です。
 
 ## Cloud Manager {#cloud-manager}
 
-### 最新情報 {#what-is-new}
+### 新機能 {#what-is-new}
 
 * Adobe Experience Manager のアーキタイプのバージョンがバージョン 22 に更新されました。
 * サンドボックス／デモプログラムのステージ環境と実稼動環境は、Cloud Manager UI を使用して更新できるようになりました。
@@ -29,7 +29,7 @@ AEMのCloud ManagerのCloud Service2020.2.0のリリース日は2020年2月13日
 * コードスキャン手順に、ダウンロード可能なログが追加されました。
 * コードスキャン中に検出された問題を含むスプレッドシートに、特定のルールに関するドキュメントへのリンクを含む列が表示されるようになりました。
 
-### バグ修正  {#bug-fixes}
+### バグ修正 {#bug-fixes}
 
 * ブラウザーのセキュリティポリシーにより、パイプライン実行画面の特定のボタンが正しく機能しない場合があります。
 * Cloud Manager のランディングページで、概要、環境、アクティビティのリンクを利用できる場合がありました。
