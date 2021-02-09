@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 87%
 
 また、次のことを実行できます。
 
-* 起動ブランチのコンテンツをナビゲートします。必要に応じて、ページを追加または削除します。
-* 公開済みコンテンツが将来の特定の日付/時間をどのように見るかに関するプレビューです。
+* ローンチブランチのコンテンツをナビゲートします。必要に応じて、ページを追加または削除します。
+* 公開済みコンテンツが将来の特定の日付／時間をどのように見るかに関するプレビューです。
 
 次の四半期が始まるとき、ローンチページを昇格させて（更新されたコンテンツを保持している）ソースページを公開できます。すべてのページを昇格させるか、変更したページのみを昇格させることができます。
 
@@ -37,8 +37,8 @@ ht-degree: 87%
 
 * [ローンチの作成](/help/sites-cloud/authoring/launches/creating.md)
 * [ローンチの編集](/help/sites-cloud/authoring/launches/editing.md)
-* [起動回数内でのページの管理](/help/sites-cloud/authoring/launches/managing-pages.md)
-* [Timewarpを使用した起動回数に基づくコンテンツのプレビュー](/help/sites-cloud/authoring/launches/preview.md)
+* [ローンチ内でのページの管理](/help/sites-cloud/authoring/launches/managing-pages.md)
+* [タイムワープを使用したローンチに基づくコンテンツのプレビュー](/help/sites-cloud/authoring/launches/preview.md)
 * [ローンチの昇格](/help/sites-cloud/authoring/launches/promoting.md)
 
 ## ローンチ - イベントの順序 {#launches-the-order-of-events}
@@ -63,9 +63,9 @@ ht-degree: 87%
       * （戻して昇格させた後に）ソースページからコンテンツを公開します。
       * すべてのページまたは変更したページのみを昇格させます。
    * 自動 - これには次の要素が関与します。
-      * 「**ローンチ****日**（**ライブ日付**）」フィールド：ローンチを作成または編集するときに設定できます。
+      * 「**ローンチ日**（**ライブ日付**）」**フィールド**：ローンチを作成または編集するときに設定できます。
       * 「**実稼動準備完了**」フラグ：ローンチを編集するときにのみ設定できます。
-      * 「**実稼動準備完了**」フラグが設定されると、ローンチは指定の「**ローンチ****日**（**ライブ日付**）」に実稼動ページに自動的に昇格されます。昇格後、実稼働ページは自動的に公開されます。\
+      * 「**実稼動準備完了**」フラグが設定されると、ローンチは指定の「**ローンチ** **日**（**ライブ日付**）」に実稼動ページに自動的に昇格されます。昇格後、実稼働ページは自動的に公開されます。\
           日付が設定されていない場合、フラグの効果はありません。
 * ソースの更新とページのローンチを並行しておこなうことができます。
    * ソースページに対する変更は、ローンチコピーに自動的に反映されます（ライブコピーなど、継承するように設定されている場合）。
@@ -89,11 +89,11 @@ ht-degree: 87%
 >
 >問題が発生している場合は、システム管理者にお問い合わせください。
 
-## 「参照」のローンチ（サイトコンソール）{#launches-in-references-sites-console}
+## 「参照」のローンチ（サイトコンソール） {#launches-in-references-sites-console}
 
 1. **サイト**&#x200B;コンソールで、ローンチのソースに移動します。
 1. **参照**&#x200B;レールを開き、ソースページを選択します。
-1. 「**起動回数**」を選択すると、既存の起動と&#x200B;**起動コンソール**&#x200B;へのアクセスが一覧表示されます。
+1. 「**ローンチ**」を選択すると、既存のローンチが一覧表示され、**ローンチコンソール**&#x200B;にアクセスできます。
 
    ![サイトコンソールでのローンチの参照](/help/sites-cloud/authoring/assets/launches-references.png)
 
@@ -107,13 +107,13 @@ ht-degree: 87%
 
 * **ツール**&#x200B;コンソールで、**ツール**／**サイト**／**ローンチ**&#x200B;と選択します。
 
-* **サイトコンソールでソースコンテンツを** 移動する際に、 **** 参照レールの「起動」セクションの下部にある「 **** コンソール」を起動します。
+* Sites コンソールでソースコンテンツをナビゲートする際に、**参照**&#x200B;パネルの「**ローンチ**」セクションの下部にある「**ローンチコンソール**」をクリックします。
 
-   ![サイトコンソールの起動のリファレンスにあるコンソールを起動](/help/sites-cloud/authoring/assets/launches-references.png)
+   ![Sites コンソールのローンチの「参照」にあるローンチコンソール](/help/sites-cloud/authoring/assets/launches-references.png)
 
-* 右上の&#x200B;**起動**&#x200B;ボタン（サイトコンソールで起動コンテンツを移動する場合）
+* 右上の「**ローンチ**」ボタン（Sites コンソールでローンチコンテンツをナビゲーションする場合）。
 
-   ![サイトコンソールの起動オプション](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+   ![Sites コンソールのローンチオプション](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
-* あるいは直接例えば、次のように指定します。
+* または、例えば次のように指定します。
    `https://<host>:<port>/libs/launches/content/launches.html`
