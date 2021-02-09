@@ -1,6 +1,6 @@
 ---
 title: AEM Commerce for AEM as a Cloud Service の開発
-description: AEMプロジェクトのアーキタイプを使用して、コマース対応AEMプロジェクトを生成する方法を説明します。 AEMをCloud ServiceSDKとして使用し、ローカル開発環境にプロジェクトを構築してデプロイする方法を説明します。
+description: AEM プロジェクトアーキタイプを使用してコマース対応の AEM プロジェクトを生成する方法を説明します。AEM as a Cloud Service SDK でプロジェクトを構築してローカル開発環境にデプロイする方法を説明します。
 topics: Commerce, Development
 feature: Commerce Integration Framework
 version: cloud-service
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 82%
+ht-degree: 94%
 
 ---
 
@@ -38,7 +38,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 
 以下をローカルにインストールしておく必要があります。
 
-- [AEM as a Cloud Service の SDK](https://docs.adobe.com/content/help/en/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service の SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)（3.3.9 以降）
 - [Node.js v10 以降](https://nodejs.org/ja/)
@@ -85,17 +85,17 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
    この変数は、AEMがコマースシステムに接続する際に使用します。 さらに、CIFアドオンには、MagentoGraphQLエンドポイントをローカルで使用できるローカルリバースプロキシが含まれています。 これは、CIFオーサリングツール（製品コンソールおよびピッカー）や、GraphQLの直接呼び出しを行うCIFクライアント側コンポーネントで使用されます。
 
-   この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数の詳細については、[AEM用のOSGiのCloud Serviceとしての設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+   この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
-1. （オプション）ステージングされたカタログ機能を有効にするには、Magentoインスタンス用の統合トークンを作成する必要があります。 [はじめに](./getting-started.md#staging)の手順に従ってトークンを作成してください。
+1. （オプション）ステージング済みカタログ機能を有効にするには、Magento インスタンスの統合トークンを作成する必要があります。[概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
 
-   `COMMERCE_AUTH_HEADER`という名前のOSGiシークレットを次の値に設定します。
+   `COMMERCE_AUTH_HEADER` という名前の OSGi シークレットを次の値に設定します。
 
    ```xml
    Authorization: Bearer <Access Token>
    ```
 
-   シークレットの詳細については、[AEM用のOSGiのCloud Serviceとしての設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
 
 1. AEM as a Cloud Service SDK を開始します。
 
