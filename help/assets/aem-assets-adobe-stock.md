@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Assets] での  [!DNL Adobe Stock]  アセットの管理。'
+title: ' [!DNL Assets] での [!DNL Adobe Stock] アセットの管理。'
 description: ' [!DNL Adobe Experience Manager] 内から  [!DNL Adobe Stock]  アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
 contentOwner: AG
 translation-type: tm+mt
@@ -74,7 +74,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->[!DNL Adobe Stock] から検索されたアセットは [!DNL Experience Manager] に表示されるだけです。[アセットを保存](/help/assets/aem-assets-adobe-stock.md#saveassets)するか、[アセットにライセンスを付与して保存](/help/assets/aem-assets-adobe-stock.md#licenseassets)した後でないと、[!DNL Adobe Stock] アセットを取得して [!DNL Experience Manager] リポジトリに保存することはできません。既に [!DNL Experience Manager] に保存されているアセットが表示され、参照やアクセスが簡単にできるようにハイライトされます。また、[!DNL Stock] アセットは、ソースが [!DNL Stock] であることを示すいくつかの追加メタデータとともに保存されます。
+>[!DNL Adobe Stock] から検索されたアセットは [!DNL Experience Manager] に表示されるだけです。[アセットを保存](/help/assets/aem-assets-adobe-stock.md#saveassets)するか、[アセットにライセンスを付与して保存](/help/assets/aem-assets-adobe-stock.md#licenseassets)した後でないと、[!DNL Adobe Stock] アセットを取得して [!DNL Experience Manager] リポジトリーに保存することはできません。既に [!DNL Experience Manager] に保存されているアセットが表示され、参照やアクセスが簡単にできるようにハイライトされます。また、[!DNL Stock] アセットは、ソースが [!DNL Stock] であることを示すいくつかの追加メタデータとともに保存されます。
 
 ![ Experience Manager の検索フィルターと、検索結果内でハイライトされている Adobe Stock アセット](assets/aem-search-filters2.jpg)
 
@@ -118,7 +118,7 @@ ht-degree: 97%
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets での Adobe Stock アセットの使用について説明するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Experience Manager Assets での Adobe Stock アセットの使用について説明するビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=ja)
 >* [Adobe Stock エンタープライズプランのヘルプ](https://helpx.adobe.com/jp/enterprise/using/adobe-stock-enterprise.html)
 >* [Adobe Stock の FAQ](https://helpx.adobe.com/jp/stock/faq.html)
 
