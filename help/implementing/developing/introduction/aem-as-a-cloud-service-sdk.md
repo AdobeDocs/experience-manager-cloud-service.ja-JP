@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,16 +24,16 @@ AEM as a Cloud Service の SDK は、次のアーティファクトで構成さ�
 * **6.5 で非推奨（廃止予定）の Java API JAR** - AEM 6.5 以降に削除された追加のインターフェイスセット
 * **6.5 で非推奨（廃止予定）の Javadoc JAR** - 追加のインターフェイスセットの Javadoc
 
-## SDKのビルド{#building-for-the-sdk}
+## SDK を使用する場合のビルド {#building-for-the-sdk}
 
-Cloud ServiceSDKとしてのAEMは、カスタムコードを構築しデプロイするために使用されます。 詳しくは、[AEMプロジェクトのアーキタイプに関するドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)を参照してください。 高いレベルで、次の手順を実行します。
+AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロイに使用されます。詳しくは、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja)に関するドキュメントを参照してください。実行する手順の概要は次のとおりです。
 
-* **コードをコンパイルします**。期待どおり、ソースコードがコンパイルされ、結果のコンテンツパッケージが生成されます
-* **アーティファクトを作成します**。アーティファクトは、このプロセス中に作成されます
-* **バンドルを分析します**。バンドルはMavenアナライザープラグインを使用して分析され、Mavenプロジェクト内で依存関係の欠落などの問題を探します
-* **アーティファクトをデプロイします**。アーティファクトは、ローカルサーバーにデプロイされます。
+* **コードのコンパイル**：ソースコードがコンパイルされ、その結果としてコンテンツパッケージが生成されます。
+* **アーティファクトのビルド**：アーティファクトがビルドされます。
+* **バンドルの分析**：Maven アナライザープラグインを使用してバンドルが分析され、依存関係が見つからないといった問題が Maven プロジェクトにないかどうかを調べます。
+* **アーティファクトのデプロイ**：アーティファクトがローカルサーバーにデプロイされます。
 
-同じ手順がCloud Managerで実行されるのは、Cloud環境に展開する場合です。 ローカルでビルドを実行すると、開発者はコードや構造の問題を効率的に発見できるので、ソース管理にコミットしてCloud Managerのデプロイメントを開始するまでに時間がかかる場合があります。
+クラウド環境へのデプロイ時と同じ手順が Cloud Manager により実行されます。ビルドをローカルで実行すると、ローカルの開発とテストが可能になるので、ソース管理にコミットして時間のかかる Cloud Manager によるデプロイメントがトリガーされる前に、開発者はコードや構造上の問題を効率的に検出できます。
 
 ## AEM as a Cloud Service の SDK へのアクセス {#accessing-the-aem-as-a-cloud-service-sdk}
 
