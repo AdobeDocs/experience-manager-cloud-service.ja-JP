@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
 workflow-type: tm+mt
 source-wordcount: '957'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 * 別のフィールドに指定された値に基づいて、特定のフィールドに表示されるオプションを変更します。
 * 別のフィールドに指定された値に基づいて、特定のフィールドにデフォルトのメタデータ値を設定します。
 
-## [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}にカスケードメタデータを設定
+## [!DNL Experience Manager] でのカスケードメタデータの設定 {#configure-cascading-metadata-in-aem}
 
 選択されたアセットタイプに基づいて、カスケードメタデータを表示するシナリオを検討します。いくつかの例を示します。
 
@@ -35,7 +35,7 @@ ht-degree: 98%
 
 選択したアセットタイプに関係なく、著作権情報を必須フィールドとして表示します。
 
-1. [!DNL Experience Manager]ロゴをタップ/クリックし、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**/**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
+1. [!DNL Experience Manager] のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
 1. **[!UICONTROL スキーマフォーム]**&#x200B;ページでスキーマフォームを選択し、ツールバーの「**[!UICONTROL 編集]**」をタップまたはクリックしてスキーマを編集します。
 
    ![select_form](assets/select_form.png)
@@ -79,7 +79,7 @@ ht-degree: 98%
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. 「**[!UICONTROL 要件]**」から、「**[!UICONTROL 必須、新しいルールに基づく]**」オプションを選択します。
-1. 「**[!UICONTROL ルールを追加]**」をタップまたはクリックし、「**[!UICONTROL アセットタイプ]**」フィールドを選択して依存関係を作成します。また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL ビデオ]**」を選択します。「**[!UICONTROL 完了]**」をタップまたはクリックして、変更内容を保存します。
+1. 「**[!UICONTROL ルールを追加]**」をタップまたはクリックし、「**[!UICONTROL アセットタイプ]**」フィールドを選択して依存関係を作成します。また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL Video]**」を選択します。「**[!UICONTROL 完了]**」をタップまたはクリックして、変更内容を保存します。
 
    ![define_rule](assets/define_rule.png)
 
@@ -89,7 +89,7 @@ ht-degree: 98%
 
 1. 「**[!UICONTROL 視認性]**」の下で、「**[!UICONTROL 表示可、新しいルールに基づく]**」オプションを選択します。
 
-1. 「**[!UICONTROL ルールを追加]**」をタップまたはクリックし、「**[!UICONTROL アセットタイプ]**」フィールドを選択して依存関係を作成します。また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL ビデオ]**」を選択します。「**[!UICONTROL 完了]**」をタップまたはクリックして、変更内容を保存します。
+1. 「**[!UICONTROL ルールを追加]**」をタップまたはクリックし、「**[!UICONTROL アセットタイプ]**」フィールドを選択して依存関係を作成します。また、依存関係を作成するフィールド値も選択します。この場合は、「**[!UICONTROL Video]**」を選択します。「**[!UICONTROL 完了]**」をタップまたはクリックして、変更内容を保存します。
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -105,7 +105,7 @@ ht-degree: 98%
 1. 手順を繰り返して、「[!UICONTROL アセットタイプ]」フィールドのドキュメントアセット（PDF、Word）と、「[!UICONTROL ページ数]」や「[!UICONTROL 作成者]」などのフィールドとの依存関係を作成します。
 1. 「**[!UICONTROL 保存]**」をクリックします。メタデータスキーマをフォルダーに適用します。
 
-1. メタデータスキーマを適用したフォルダーに移動して、アセットのプロパティページを開きます。「アセットタイプ」フィールドでの選択に応じて、関連するカスケードメタデータのフィールドが表示されます。
+1. メタデータスキーマを適用したフォルダーに移動して、アセットのプロパティページを開きます。「アセットの種類」フィールドでの選択に応じて、関連するカスケードメタデータのフィールドが表示されます。
 
    ![ビデオアセットのカスケードメタデータ](assets/video_asset.png)
    *図：ビデオアセットのカスケードメタデータ*
