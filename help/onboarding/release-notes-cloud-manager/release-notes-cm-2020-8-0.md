@@ -1,24 +1,24 @@
 ---
-title: Cloud Serviceリリース2020.8.0としてのAEMのCloud Managerのリリースノート
-description: Cloud Serviceリリース2020.8.0としてのAEMのCloud Managerのリリースノート
+title: AEM as a Cloud Service リリース 2020.8.0 の Cloud Manager のリリースノート
+description: AEM as a Cloud Service リリース 2020.8.0 の Cloud Manager のリリースノート
 translation-type: tm+mt
 source-git-commit: ca690144a8254d5ffba354f0f96d9ef1c5202533
 workflow-type: tm+mt
 source-wordcount: '423'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Service2020.8.0 {#release-notes}としてのAdobe Experience ManagerのCloud Managerのリリースノート
+# Adobe Experience Manager as a Cloud Service 2020.8.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEMのCloud ManagerのリリースノートをCloud Service2020.8.0として概要を説明しています。
+このページでは、AEM as a Cloud Service 2020.8.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2020.8.0のリリース日は2020年8月7日です。
+AEM as a Cloud Service 2020.8.0 の Cloud Manager のリリース日は 2020 年 8 月 6 日です。
 
-## 新機能 {#whats-new-cloud-manager}
+## 新情報 {#whats-new-cloud-manager}
 
 * コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼働パイプラインを実行するたびに、パイプライン内のカスタム機能テストの後に新しいコンテンツ監査ステップが含まれるようになります。このステップでは、パフォーマンス、SEO（検索エンジン最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ Web アプリ）などの多数のディメンションに照らしてサイトを評価します。
 
