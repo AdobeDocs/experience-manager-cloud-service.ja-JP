@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: a01a55f85639613e5febd2588c9c55590f888124
 workflow-type: tm+mt
 source-wordcount: '2284'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ### ログ {#logs}
 
-ローカル開発の場合、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
+ローカル開発の場合、ログエントリは    `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
 クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -120,7 +120,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 クラウド環境のスレッドダンプは継続的に収集されますが、現時点ではセルフサービス方式でダウンロードすることはできません。しばらくの間は、問題のデバッグ用にスレッドダンプが必要な場合は、AEM サポートに連絡して、正確な時間枠を指定してください。
 
-## CRX/DE LiteとDeveloper Console {#crxde-lite-and-developer-console}
+## CRXDE Lite とデベロッパーコンソール {#crxde-lite-and-developer-console}
 
 ### ローカル開発 {#local-development}
 
@@ -130,7 +130,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
-お客様は、ステージや実稼働環境ではなく、作成者層の開発環境上のCRXDE Liteにアクセスできます。 不変リポジトリ（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
+ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリ（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
 AEM as a Cloud Service 開発者環境でデバッグするためのツールセットが開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
