@@ -37,7 +37,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 このチュートリアルを完了するには、ローカルの開発環境が必要です。これには、Magento インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、[属性を Magento 内の製品に追加](https://docs.magento.com/user-guide/catalog/product-attributes-add.html)する権限が必要になります。
 
-また、コード例やチュートリアルを実行するには、[GraphiQL ](https://github.com/graphql/graphiql) またはブラウザー拡張機能などの GraphQL IDE が必要です。ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。Google Chrome の [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) は、ジョブを実行できる拡張機能の 1 つです。
+また、コード例やチュートリアルを実行するには、[GraphiQL](https://github.com/graphql/graphiql) またはブラウザー拡張機能などの GraphQL IDE が必要です。ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。Google Chrome の [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) は、ジョブを実行できる拡張機能の 1 つです。
 
 ## Venia プロジェクトのクローン {#clone-venia-project}
 
@@ -475,7 +475,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    ![エコフレンドリーバッジの最終実装](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## これで完了です。{#congratulations}
+## これで完了です {#congratulations}
 
 最初の AEM CIF コンポーネントをカスタマイズしました。完成したソリューションファイルを[こちら](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip)からダウンロードしてください。
 
