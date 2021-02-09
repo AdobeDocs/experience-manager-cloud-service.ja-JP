@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 91%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_planning"
->title="トランジションの計画"
+>title="移行の計画"
 >abstract="Cloud Service への移行プロセスを開始する前に、AEM as a Cloud Service に習熟し、AEM as a Cloud Service に対する主要な変更点を確認すると共に、置換または廃止された機能も確認する必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html" text="ベストプラクティスアナライザ"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja" text="ベストプラクティスアナライザー"
 
 Cloud Service への移行プロセスを開始する前に、AEM as a Cloud Service に習熟し、AEM as a Cloud Service に対する主要な変更点を確認すると共に、置換または廃止された機能も確認する必要があります。
 
@@ -28,7 +28,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 重要な違いについては、[Adobe Experience Manager（AEM）as a Cloud Service の主要な変更点](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)を参照してください。
 
-## 廃止される機能 {#deprecated-features}
+## 非推奨（廃止予定）の機能 {#deprecated-features}
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。
 
@@ -46,7 +46,7 @@ Adobe Experience Manager as a Cloud Service で廃止される特長や機能に
 
 移行プロセスで予想される作業レベルを決定するには、主要な変更点および廃止される機能に照らした現在の AEM ソースコードの包括的な評価をおこなう必要があります。
 
-現在のAEMバージョンでBest Practices Analyzerを実行すると、評価手順を早めることができます。 詳しくは、[ベストプラクティスアナライザ](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)を参照してください。
+現在の AEM バージョンでベストプラクティスアナライザーを実行すると、評価ステップを高速化できます。詳しくは、[ベストプラクティスアナライザー](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)を参照してください。
 
 >[!NOTE]
 >既に Cloud Manager と Cloud Service 環境にアクセスできる場合は、現在のコードを Cloud Manager のコード品質パイプラインで実行して、Cloud Service に対応するために必要なコード変更を評価することをお勧めします。
