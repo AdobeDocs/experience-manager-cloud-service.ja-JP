@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -59,9 +59,9 @@ ht-degree: 92%
    + ローンチ {#launches}
       + [ローンチの操作](authoring/launches/overview.md)
       + [ローンチの作成](authoring/launches/creating.md)
-      + [起動でのページの管理](authoring/launches/managing-pages.md)
+      + [ローンチでのページの管理](authoring/launches/managing-pages.md)
       + [ローンチの編集](authoring/launches/editing.md)
-      + [Timewarpでの起動のプレビュー](authoring/launches/preview.md)
+      + [タイムワープでのローンチのプレビュー](authoring/launches/preview.md)
       + [ローンチの昇格](authoring/launches/promoting.md)
    + ワークフロー {#workflows}
       + [ワークフローの操作](authoring/workflows/overview.md)
@@ -81,6 +81,6 @@ ht-degree: 92%
       + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [ワークフローの管理](administering/workflows-administering.md)
-+ AEM as a Cloud Service との統合{#integrations}
++ AEM as a Cloud Service との統合 {#integrations}
    + [Adobe Analytics との統合](integrating/integrating-adobe-analytics.md)
    + [Adobe Target との統合](integrating/integrating-adobe-target.md)
