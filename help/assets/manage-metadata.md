@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: ce22a7ba95942881b90a4f3f22d89bcd35b5e559
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 99%
 
 * アセットの名前。
 * 最終変更の日時。
-* リポジトリに格納されたときのアセットのサイズ。
+* リポジトリーに格納されたときのアセットのサイズ。
 * アセットが含まれるフォルダーの名前。
 * 関連するアセットまたは適用したタグ。
 
@@ -77,7 +77,7 @@ ht-degree: 99%
 
 メタデータをファイルに埋め込む方法は様々です。エンコーディング規格は、次の中から選択できます。
 
-* XMP：[!DNL Assets] で抽出したメタデータをリポジトリに格納するために使用されます。
+* XMP：[!DNL Assets] で抽出したメタデータをリポジトリーに格納するために使用されます。
 * ID3：オーディオファイルおよびビデオファイル用の規格です。
 * Exif：画像ファイル用の規格です。
 * その他、従来の規格：[!DNL Microsoft Word]、[!DNL PowerPoint]、[!DNL Excel] など。
@@ -144,7 +144,7 @@ Adobe Experience Manager Assets を使用すると、複数のアセットのメ
 
 ## 処理プロファイルを使用したカスタムメタデータ {#metadata-compute-service}
 
-[!DNL Cloud Service]としてのアセットは、クラウドネイティブサービスを使用して、アセットのカスタムメタデータを生成できます。 カスタムメタデータを生成する処理プロファイルを設定します。「[処理プロファイルの使用方法](/help/assets/asset-microservices-configure-and-use.md#use-profiles)」を参照してください。
+Assets as a [!DNL Cloud Service] では、クラウドネイティブのサービスを使用して、アセットのカスタムメタデータを生成できます。カスタムメタデータを生成する処理プロファイルを設定します。「[処理プロファイルの使用方法](/help/assets/asset-microservices-configure-and-use.md#use-profiles)」を参照してください。
 
 ![処理プロファイルでのメタデータのレンダリング](assets/processing-profile-metadata.png)
 
