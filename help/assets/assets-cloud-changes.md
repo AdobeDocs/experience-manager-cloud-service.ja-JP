@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
 workflow-type: tm+mt
 source-wordcount: '605'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 46%
 * Package Managerを使用してアップロードされるアセットは、[!DNL Assets]インターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
 * 拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、引き続きバイナリファイルをDAMに保存できます。
 
-アセットマイクロサービスで生成された標準レンディションは、後方互換性のある方法でアセットリポジトリノードに保存されます（同じ命名規則が使用されます）。
+アセットマイクロサービスで生成された標準レンディションは、後方互換性のある方法でアセットリポジトリーノードに保存されます（同じ命名規則が使用されます）。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
@@ -46,7 +46,7 @@ ht-degree: 46%
 
 ## クラシック UI の削除 {#classic-ui}
 
-Classic UIは、Experience Managerでは[!DNL Cloud Service]として使用できなくなりました。 標準のインターフェイスは、タッチ対応 UI です。
+Adobe Experience Manager as a [!DNL Cloud Service] ではクラシック UI が使用できなくなりました。標準のインターフェイスは、タッチ対応 UI です。
 
 >[!MORELIKETHIS]
 >
@@ -55,5 +55,5 @@ Classic UIは、Experience Managerでは[!DNL Cloud Service]として使用で�
 >* [!DNL Experience Manager]の[アーキテクチャ](/help/core-concepts/architecture.md)は[!DNL Cloud Service]として
 >* [の主な変更点 [!DNL Experience Manager] は、 [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
 >* [の主な変更点 [!DNL Experience Manager Sites] は、 [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 
