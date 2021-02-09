@@ -1,16 +1,16 @@
 ---
 title: ビューアプリセットの管理
-description: ビューアプリセットの作成方法と管理方法 dynamic mediaで
+description: ビューアプリセットの作成方法と管理方法（Dynamic Media 内）
 translation-type: tm+mt
 source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
 workflow-type: tm+mt
 source-wordcount: '4246'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
 
-# ビューアプリセットの管理{#managing-viewer-presets}
+# ビューアプリセットの管理 {#managing-viewer-presets}
 
 ビューアプリセットは、ユーザーのコンピューター画面やモバイルデバイスでのリッチメディアアセットの表示方法を決定する様々な設定のコレクションです。管理者は、ビューアプリセットを作成できます。設定は、幅広いビューア設定オプションで使用できます。例えば、ビューアの表示サイズやズームの動作を変更できます。
 
@@ -23,7 +23,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)』も参照してください。
+『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja)』も参照してください。
 
 ここでは、ビューアプリセットを作成、編集および管理する方法について説明します。アセットをプレビューする際は、いつでもビューアプリセットを適用できます。詳しくは、[ビューアプリセットの適用](#applying-a-viewer-preset-to-an-asset)を参照してください。
 
@@ -31,7 +31,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >*事前に定義された標準提供ビューアプリセット*&#x200B;を編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集しようとすると、そのビューアプリセットを新しい名前で保存するように指示されます。
 
-## ビューアのキーボードアクセシビリティ  {#keyboard-accessibility-for-viewers}
+## ビューアのキーボードアクセシビリティ {#keyboard-accessibility-for-viewers}
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
@@ -51,7 +51,7 @@ AEM でビューアプリセットの追加、編集、削除、公開、非公�
 
 Web ページごとに異なるニーズがあります。例えば、個別のブラウザーウィンドウで HTML5 ビューアを開くリンクを示す Web ページが必要な場合や、ホスティングページに直接 HTML5 ビューアを埋め込む必要が生じる場合があります。後者の場合、Web ページのレイアウトは静的なものになる場合と、「レスポンシブ」にして、デバイスやブラウザーウィンドウのサイズが異なれば、異なる表示をする場合もあります。これらのニーズに対応するために、Dynamic Media に付属する事前定義済みの標準提供 HTML5 ビューアはすべて、静的な Web ページとレスポンシブデザイン Web ページの両方をサポートしています。
 
-Webページにレスポンシブビューアを埋め込む方法について詳しくは、*Dynamic Media画像サービングとレンダリングAPIのヘルプ*&#x200B;の[レスポンシブ静的画像ライブラリ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)を参照してください。
+レスポンシブビューアを Web ページに埋め込む方法について詳しくは、 Dynamic Media 画像サービングおよびレンダリング API ヘルプの[レスポンシブ静的画像ライブラリ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)を参照してください&#x200B;*。*
 
 >[!NOTE]
 >
@@ -469,7 +469,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   </tr>
   <tr>
    <td>セグメント</td>
-   <td><p><code>Segment </code>は、既製のインタラクティブビデオビューアプリセット <code>Shoppable_Video_light</code> と <code>Shoppable_Video_dark</code> および自身で作成するすべてのインタラクティブビデオビューアプリセットのデフォルトのディスプレイモードです。</p> <p>このモードでは、ビデオセグメントに割り当てられているサムネールの数がディスプレイパネル内に表示されるスポットの数よりも少ない場合、次または前のサブセグメントがパネル内の空のスポットを満たすように引っ張り込まれることはありません。<i></i>つまり、特定のビデオセグメントに割り当てられたスウォッチの表示を保持します。</p> </td>
+   <td><p><code>Segment </code>は、既製のインタラクティブビデオビューアプリセット <code>Shoppable_Video_light</code> と <code>Shoppable_Video_dark</code> および自身で作成するすべてのインタラクティブビデオビューアプリセットのデフォルトのディスプレイモードです。</p> <p>このモードでは、ビデオセグメントに割り当てられているサムネールの数がディスプレイパネル内に表示されるスポットの数よりも少ない場合、次または前のサブセグメントがパネル内の空のスポットを満たすように引っ張り込まれることはありません<i>。</i>つまり、特定のビデオセグメントに割り当てられたスウォッチの表示を保持します。</p> </td>
   </tr>
   <tr>
    <td>連続</td>
