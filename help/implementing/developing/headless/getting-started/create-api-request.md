@@ -1,31 +1,31 @@
 ---
-title: コンテンツフラグメントへのアクセスと配信ヘッドレスクイック開始ガイド
-description: アセットREST APIを使用すると、コンテンツフラグメントを管理でき、GraphQL APIを使用すると、ヘッドレスで簡単にコンテンツフラグメントコンテンツを配信できます。
+title: コンテンツフラグメントへのアクセスとヘッドレス配信クイック開始ガイド
+description: アセット REST API を使用すると、コンテンツフラグメントを管理でき、GraphQL API を使用すると、コンテンツフラグメントコンテンツをヘッドレスで簡単に配信できます。
 translation-type: tm+mt
 source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 1%
+ht-degree: 97%
 
 ---
 
 
-# コンテンツフラグメントへのアクセスと配信ヘッドレスクイック開始ガイド{#accessing-delivering-content-fragments}
+# コンテンツフラグメントへのアクセスとヘッドレス配信クイック開始ガイド {#accessing-delivering-content-fragments}
 
-アセットREST APIを使用すると、コンテンツフラグメントを管理でき、GraphQL APIを使用すると、ヘッドレスで簡単にコンテンツフラグメントコンテンツを配信できます。
+アセット REST API を使用すると、コンテンツフラグメントを管理でき、GraphQL API を使用すると、コンテンツフラグメントコンテンツをヘッドレスで簡単に配信できます。
 
-## GraphQLとAssets REST APIとは何ですか。{#what-are-the-apis}
+## GraphQL API と Assets REST API とは何ですか {#what-are-the-apis}
 
-[コンテンツフラグメントを作成したので、AEM API](create-content-fragment.md) を使用してそれらを無理に配信できます。
+[コンテンツフラグメントはいくつか作成したので、AEM API](create-content-fragment.md) を使用してそれらをヘッドレスで配信できます。
 
-* [GraphQL ](/help/assets/content-fragments/graphql-api-content-fragments.md) APIを使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。
-* [アセットREST ](/help/assets/content-fragments/assets-api-content-fragments.md) APIを使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
+* [GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。
+* [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
-このガイドの残りの部分では、GraphQLへのアクセスとコンテンツフラグメントの配信について説明します。
+このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
 
-## GraphQL {#how-to-deliver-a-content-fragment}を使用したコンテンツフラグメントの配信方法
+## GraphQL を使用したコンテンツフラグメントの配信方法 {#how-to-deliver-a-content-fragment}
 
-情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。 一般に、これらのクエリは、モデルごとにエンドポイントごとに1回だけ考慮する必要があります。 この入門ガイドの目的上、必要な作業は1つだけです。
+情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。一般に、これらのクエリは、モデルやエンドポイントごとに 1 回だけ作成する必要があります。この「はじめる前に」ガイドの目的上、1 つだけ作成します。
 
 <!-- Not in the UI yet - will need updating when it is -->
 <!--
@@ -36,13 +36,13 @@ ht-degree: 1%
 1. AEMにCloud Serviceとしてログインし、GraphicQLインターフェイスにアクセスします。
    * 例：`https://<host>:<port>/content/graphiql.html`
 
-1. GraphiQLは、GraphQLのブラウザ内クエリエディタです。 クエリを構築して、コンテンツフラグメントを取得し、それらをJSONとして直接配信できます。
+1. GraphiQL は、GraphQL のブラウザー内のクエリエディターです。クエリを構築して、コンテンツフラグメントを取得し、それらを JSON としてヘッドレスに配信できます。
    * 左側のパネルでは、クエリを作成できます。
    * 右側のパネルに結果が表示されます。
-   * クエリエディタは、コード補完機能とホットキーを備えており、クエリを簡単に実行できます。
-      ![GraphiQLエディタ](../assets/graphiql.png)
+   * クエリエディターは、コード補完機能とホットキーを備えており、クエリを簡単に実行できます。
+      ![GraphiQL エディター](../assets/graphiql.png)
 
-1. 作成したモデルが`firstName`、`lastName`、`position`の各フィールドを持つ`person`と呼ばれている場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
+1. 作成したモデルが `person` で `firstName`、`lastName`、`position` の各フィールドを持つ場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
 
    ```text
    query 
@@ -59,23 +59,23 @@ ht-degree: 1%
    ```
 
 1. 左側のパネルにクエリを入力します。
-   ![GraphiQLクエリ](../assets/graphiql-query.png)
+   ![GraphiQL クエリ](../assets/graphiql-query.png)
 
-1. 「**クエリを実行**」ボタンをクリックするか、`Ctrl-Enter`ホットキーを使用すると、結果がJSONとして右側のパネルに表示されます。
-   ![GraphiQLの結果](../assets/graphiql-results.png)
+1. 「**クエリを実行**」ボタンをクリックするか `Ctrl-Enter` ホットキーを使用すると、結果が JSON として右側のパネルに表示されます。
+   ![GraphiQL の結果](../assets/graphiql-results.png)
 
 1. ページの右上にある&#x200B;**ドキュメント**リンクをクリックすると、文脈依存ドキュメントが表示され、独自のモデルに適合するクエリの構築に役立ちます。
-   ![GraphiQLドキュメント](../assets/graphiql-documentation.png)
+   ![GraphiQL ドキュメント](../assets/graphiql-documentation.png)
 
-GraphQLを使用すると、特定のデータセットや個々のデータオブジェクトだけでなく、オブジェクトの特定の要素、ネストされた結果、クエリ変数のオファーサポートなどをターゲットできる構造化クエリが可能です。
+GraphQL を使用すると、特定のデータセットや個々のデータオブジェクトだけでなく、オブジェクトの特定の要素、ネストされた結果、クエリ変数のオファーサポートなどをターゲットできる構造化クエリが可能です。
 
-GraphQLでは、反復的なAPIリクエストと過剰な配信を回避でき、代わりに単一のAPIクエリに対するレンダリングに必要なものを一括配信できます。 結果のJSONを使用して、他のサイトやアプリにデータを配信できます。
+GraphQL では、反復的な API リクエストと過剰な配信を回避でき、代わりに単一の API クエリに対するレンダリングに必要なものを一括配信できます。結果の JSON を使用して、他のサイトやアプリにデータを配信できます。
 
 ## 次の手順 {#next-steps}
 
-これで作業は完了です。これで、AEMのヘッドレスコンテンツ管理に関する基本的な理解が得られます。 もちろん、利用可能な機能の包括的な理解を深めるためのリソースは他にもたくさんあります。
+これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。もちろん、利用可能な機能の包括的な理解を深めるためのリソースは他にもたくさんあります。 
 
-* **設定ブラウザ** - AEM設定ブラウザの詳細
-* **[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)**  — コンテンツフラグメントの作成と管理に関する詳細
-* **[AEM AssetsHTTP APIでサポートされるコンテンツフラグメント](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD操作（作成、読み取り、更新、削除）を介してHTTP API経由で直接AEMコンテンツにアクセスする方法の詳細
-* **[GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**  — コンテンツフラグメントを無理に配信する方法の詳細
+* **設定ブラウザー** - AEM 設定ブラウザーの詳細
+* **[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)** - コンテンツフラグメントの作成と管理に関する詳細
+* **[AEM Assets HTTP API でサポートされるコンテンツフラグメント](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD 操作（作成、読み取り、更新、削除）を介して HTTP API 経由で直接 AEM コンテンツにアクセスする方法の詳細
+* **[GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)** - コンテンツフラグメントをヘッドレスで配信する方法の詳細
