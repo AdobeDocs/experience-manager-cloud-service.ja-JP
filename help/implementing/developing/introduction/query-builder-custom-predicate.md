@@ -1,29 +1,29 @@
 ---
 title: Query Builder 用のカスタム述語エバリュエーターの実装
-description: AEMオファーのクエリビルダーは、コンテンツリポジトリをクエリするための簡単でカスタマイズ可能な方法です
+description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
 translation-type: tm+mt
 source-git-commit: 21a0e6967a17ea30435d0343c4aa497f54134cda
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 
 # Query Builder 用のカスタム述語エバリュエーターの実装 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-このドキュメントでは、カスタム述語評価演算子を実装して[クエリビルダー](query-builder-api.md)を拡張する方法を説明します。
+ここでは、カスタム述語エバリュエーターを実装して、[Query Builder](query-builder-api.md) を拡張する方法について説明します。
 
 ## 概要 {#overview}
 
-[クエリビルダー](query-builder-api.md)オファーを使用すると、コンテンツリポジトリを簡単にクエリできます。 AEMには、データのクエリに役立つ[述語評価演算子](#query-builder-predicates.md)のセットが付属しています。
+[Query Builder](query-builder-api.md) を使用すると、コンテンツリポジトリーへのクエリを簡単に実行できます。AEM には、データのクエリに役立つ一連の[述語エバリュエーター](#query-builder-predicates.md)が付属しています。
 
 しかし、カスタム述語エバリュエーターを実装することによって、複雑さを軽減し、セマンティックを向上させて、クエリを単純化することができます。
 
 他にも、カスタム述語では、以下のような XPath では直接実行できないことも実行できます。
 
 * 別のサービスからのデータのクエリ
-* 計算に基づくカスタムフィルター
+* 計算に基づくカスタムフィルタリング
 
 >[!NOTE]
 >
@@ -31,33 +31,33 @@ ht-degree: 51%
 
 >[!TIP]
 >
->クエリの例は、[クエリビルダー](query-builder-api.md)ドキュメントーにあります。
+>クエリの例については、[Query Builder](query-builder-api.md) を参照してください。
 
 >[!TIP]
 >
 >このページのコードは GitHub にあります
 >
->* [GitHubでaem-search-custom-predicate-evaluatorプロジェクトを開きます](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+>* [GitHub の aem-search-custom-predicate-evaluator プロジェクト](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)を開きます
 >* プロジェクトを [ZIP ファイル](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)としてダウンロードします
 
 
 >[!NOTE]
 >
->GitHubに関するこのリンクコードと、このドキュメントのコードスニペットは、デモ目的でのみ提供されています。
+>GitHub のこのリンク済みコードと、このドキュメントのコードスニペットは、デモ目的でのみ提供されています。
 
 ### 述語エバリュエーターの詳細 {#predicate-evaluator-in-detail}
 
 述語エバリュエーターは、クエリの制約を定義する特定の述語を評価します。
 
-高レベルの検索制約（`width>200`など）を、実際のコンテンツモデルに合う特定のJCRクエリ(例：`metadata/@width > 200`)。 ノードを手動でフィルタリングして、制約をチェックすることもできます。
+抽象的な検索制約（`width>200` など）を、実際のコンテンツモデルに合った具体的な JCR クエリ（例：`metadata/@width > 200`）にマッピングします。ノードを手動でフィルタリングして、制約をチェックすることもできます。
 
 >[!TIP]
 >
->`PredicateEvaluator` および `com.day.cq.search` パッケージについて詳しくは、[Java のドキュメント](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html)を参照してください。
+>`PredicateEvaluator` および `com.day.cq.search` パッケージについて詳しくは、[Java のドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html)を参照してください。
 
 ### レプリケーションメタデータ用のカスタム述語エバリュエーターの実装 {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
-例として、レプリケーション・メタデータに基づくデータを支援するカスタム述語評価基準を作成する方法を説明します。
+一例として、この節では、次のレプリケーションメタデータに基づくデータに役立つカスタム述語エバリュエーターを作成する方法について説明します。
 
 * `cq:lastReplicated`：最終レプリケーションアクションの日付を格納
 * `cq:lastReplicatedBy`：最終レプリケーションアクションを呼び出したユーザーの ID を格納
@@ -65,7 +65,7 @@ ht-degree: 51%
 
 #### デフォルトの述語エバリュエーターを使用したレプリケーションメタデータのクエリ {#querying-replication-metadata-with-default-predicate-evaluators}
 
-次のクエリは、`admin`が年の初めからアクティブ化した`/content`ブランチのノードのリストを取得します。
+次のクエリでは、年初から `admin` によってアクティベートされた `/content` ブランチ内のノードのリストを取得します。
 
 ```xml
 path=/content
@@ -95,21 +95,21 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-レプリケーションメタデータ述語をカスタム述語評価子でグループ化すると、意味のあるクエリを作成するのに役立ちます。
+カスタム述語エバリュエーターを使用して、レプリケーションメタデータの述語をグループ化すると、意味のあるクエリを作成できます。
 
 #### Maven 依存関係の更新 {#updating-maven-dependencies}
 
 >[!TIP]
 >
->mavenを使用するなど、新しいAEMプロジェクトのセットアップは、[WKNDチュートリアルで詳しく説明されています。](develop-wknd-tutorial.md)
+>Maven の使用など、新しい AEM プロジェクトのセットアップについて詳しくは、[WKND チュートリアル](develop-wknd-tutorial.md)を参照してください。
 
 まず、プロジェクトの Maven 依存関係を更新する必要があります。`PredicateEvaluator` は `cq-search` アーティファクトの一部なので、Maven の pom ファイルに追加する必要があります。
 
 >[!NOTE]
 >
->`cq-search`依存関係の範囲は`provided`に設定されます。これは、`cq-search`が`OSGi`コンテナによって提供されるからです。
+>`cq-search` は `OSGi` コンテナで提供されるので、`cq-search` の依存関係の範囲は `provided` に設定されます。
 
-次のスニペットは、`pom.xml`ファイルの[unified diff形式](https://ja.wikipedia.org/wiki/Diff#.E3.83.A6.E3.83.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.89.E5.BD.A2.E5.BC.8F_.28Unified_format.29)の違いを示しています
+次のスニペットは、`pom.xml` ファイルの差分を[ユニファイド diff 形式](https://ja.wikipedia.org/wiki/Diff#.E3.83.A6.E3.83.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.89.E5.BD.A2.E5.BC.8F_.28Unified_format.29)で示しています。
 
 ```text
 @@ -120,6 +120,12 @@
@@ -128,14 +128,14 @@ replic.action=Activate
 
 #### ReplicationPredicateEvaluator の作成 {#writing-the-replicationpredicateevaluator}
 
-`cq-search`プロジェクトには`AbstractPredicateEvaluator`抽象クラスが含まれています。 これは、独自のカスタム述語評価演算子`(PredicateEvaluator`を実装するためのいくつかの手順で拡張できます)。
+`cq-search` プロジェクトには、`AbstractPredicateEvaluator` 抽象クラスが含まれます。このクラスを数ステップで拡張して、独自のカスタム述語エバリュエーター `(PredicateEvaluator`）を実装できます。
 
 >[!NOTE]
 >
->次の手順では、データをフィルタリングする `Xpath` 式を作成する方法について説明します。もう1つの方法は、行単位でデータを選択する`includes`メソッドを実装することです。 詳しくは、[Java のドキュメント](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)を参照してください。
+>次の手順では、データをフィルタリングする `Xpath` 式を作成する方法について説明します。この他に、データを行単位で選択する `includes` メソッドを実装する方法もあります。詳しくは、[Java のドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29)を参照してください。
 
 1. `com.day.cq.search.eval.AbstractPredicateEvaluator` を拡張する新しい Java クラスを作成します。
-1. [unified diff形式](https://en.wikipedia.org/wiki/Diff#Unified_format)に表示されるようなスニペットを`@Component`付けて、クラスに注釈を付けます。
+1. [ユニファイド diff 形式](https://en.wikipedia.org/wiki/Diff#Unified_format)で示した次のスニペットのように、クラスに `@Component` で注釈を付けます。
 
    ```text
    @@ -19,8 +19,11 @@
@@ -153,7 +153,7 @@ replic.action=Activate
 
    >[!NOTE]
    >
-   >`factory`は、`com.day.cq.search.eval.PredicateEvaluator/`で始まり、カスタム`PredicateEvaluator`の名前で終わる一意の文字列である必要があります。
+   >`factory` は、`com.day.cq.search.eval.PredicateEvaluator/` で始まりカスタム `PredicateEvaluator` の名前で終わる一意の文字列にする必要があります。
 
    >[!NOTE]
    >
@@ -165,9 +165,9 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   オーバーライドメソッドでは、引数に指定された `Xpath` に基づいて `Predicate` 式を組み立てます。
+   オーバーライドメソッドでは、引数に指定された `Predicate` に基づいて `Xpath` 式を組み立てます。
 
-### レプリケーションメタデータのカスタム述語評価子の例{#example-of-a-custom-predicate-evaluator-for-replication-metadata}
+### レプリケーションメタデータ用のカスタム述語エバリュエーターの例 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 
 この `PredicateEvaluator` の完全な実装は、次のクラスのようになります。
 
