@@ -1,46 +1,46 @@
 ---
-title: AdobeコンテンツパッケージMavenプラグイン
-description: Content Package Mavenプラグインを使用したAEMアプリケーションのデプロイ
+title: Adobe Content Package Maven Plugin
+description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 translation-type: tm+mt
 source-git-commit: 2cdbbe9b8f6608cbdd299889be515d421e3d9ad3
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 
-# AdobeコンテンツパッケージMavenプラグイン{#adobe-content-package-maven-plugin}
+# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 
-AdobeコンテンツパッケージMavenプラグインを使用して、パッケージの展開と管理タスクをMavenプロジェクトに統合します。
+パッケージデプロイメントおよび管理タスクを Maven プロジェクトに組み込むには、Adobe Content Package Maven Plugin を使用します。
 
-構築されたパッケージのAEMへの展開は、AdobeコンテンツパッケージMavenプラグインによって実行され、AEM Package Managerを使用して通常実行されるタスクの自動化を可能にします。
+構築したパッケージは Adobe Content Package Maven Plugin で AEM にデプロイされます。その結果、通常は AEM パッケージマネージャーを使用して実行する以下のタスクを自動化できるようになります。
 
-* ファイルシステム内のファイルから新しいパッケージを作成します。
-* AEMでパッケージをインストールおよびアンインストールします。
-* AEMで既に定義されているパッケージを構築します。
-* AEMにインストールされているパッケージのリストを取得します。
-* AEMからパッケージを削除します。
+* ファイルシステム内のファイルから新しいパッケージを作成する。
+* AEM にパッケージをインストールまたはアンインストールする。
+* AEM で定義済みのパッケージをビルドする。
+* AEM にインストールされているパッケージのリストを取得する。
+* AEM からパッケージを削除する。
 
-このドキュメントでは、Mavenを使用してこれらのタスクを管理する方法について詳しく説明します。 しかし、[AEMプロジェクトとそのパッケージの構造を理解することも重要です。](#aem-project-structure)
+このドキュメントでは、Maven を使用してこれらのタスクを管理する方法について詳しく説明します。また一方、[AEM プロジェクトとそのパッケージの構造](#aem-project-structure)を理解することも重要です。
 
 >[!NOTE]
 >
->パッケージの作成は、[Apache Jackrabbit FileVault Package Mavenプラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)が所有するようになりました。 構築されたパッケージのAEMへの展開は、ここで説明するAdobeコンテンツパッケージMavenプラグインによって実行されます。
+>パッケージの作成は、[Apache Jackrabbit FileVault パッケージ Maven プラグイン](https://jackrabbit.apache.org/filevault-package-maven-plugin/)で管理されるようになりました。構築したパッケージは、ここで説明するように、Adobe Content Package Maven Plugin で AEM にデプロイされます。
 
-## パッケージとAEMプロジェクト構造{#aem-project-structure}
+## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
-AEM 6.5は、オンプレミスとAMSの両方の実装の最新のAEM Project Archetypeによって実装された、パッケージ管理とプロジェクト構造の最新のベストプラクティスに従います。
+AEM 6.5 は、オンプレミス実装と AMS 実装の最新の AEM プロジェクトアーキタイプで実装されているパッケージ管理とプロジェクト構造の最新のベストプラクティスに従っています。
 
 >[!TIP]
 >
->詳しくは、AEMの「[AEMプロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.translate.html)」の記事(Cloud Serviceドキュメントとして)と、[AEMプロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。 どちらもAEM 6.5では完全にサポートされています。
+>詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)と、[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
 
 ## Content Package Maven Plugin の入手 {#obtaining-the-content-package-maven-plugin}
 
-このプラグインは[Maven Central Repositoryから入手できます。](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+このプラグインは [Maven Central リポジトリー](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)から入手できます。
 
-## コンテンツパッケージMavenプラグインの目標とパラメーター
+## Content Package Maven Plugin のゴールとパラメーター
 
 Content Package Maven Plugin を使用するには、POM ファイルのビルド要素内に次のプラグイン要素を追加します。
 
@@ -57,13 +57,13 @@ Content Package Maven Plugin を使用するには、POM ファイルのビル�
 
 Maven でプラグインをダウンロードできるようにするには、このページの [Content Package Maven Plugin の取得](#obtaining-the-content-package-maven-plugin)で提供されるプロファイルを使用します。
 
-## Content Package Maven Plugin のゴール  {#goals-of-the-content-package-maven-plugin}
+## Content Package Maven Plugin のゴール {#goals-of-the-content-package-maven-plugin}
 
 Content Package Plugin に用意されているゴールおよびゴールパラメーターについては、以降の節で説明します。共通パラメーターの節に示すパラメーターはほとんどのゴールに使用できます。1 つのゴールに適用するパラメーターについては、そのゴールの節を参照してください。
 
 ### プラグインプレフィックス {#plugin-prefix}
 
-プラグインのプレフィックスは`content-package`です。次の例のように、コマンドラインから目標を実行するには、このプレフィックスを使用します。
+プラグインプレフィックスは `content-package` です。次の例に示すように、コマンドラインからゴールを実行するには、このプレフィックスを使用します。
 
 ```shell
 mvn content-package:build
@@ -71,7 +71,7 @@ mvn content-package:build
 
 ### パラメータープレフィックス {#parameter-prefix}
 
-特に断りのない限り、プラグインの目標とパラメーターには、次の例のように`vault`プレフィックスが使用されます。
+特に指定がない限り、プラグインのゴールおよびパラメーターでは、次の例に示すように `vault` プレフィックスを使用します。
 
 ```shell
 mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/packmgr/service.jsp"
@@ -79,27 +79,27 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### プロキシ {#proxies}
 
-AEMにプロキシを使用する目標は、Maven設定の最初の有効なプロキシ設定を使用します。 プロキシ設定が見つからない場合、プロキシは使用されません。「[共通パラメーター](#common-parameters)」セクションの`useProxy`パラメーターを参照してください。
+AEM にプロキシを使用するゴールでは、Maven 設定で最初に見つかった有効なプロキシ設定を使用します。プロキシ設定が見つからない場合、プロキシは使用されません。[共通パラメーター](#common-parameters)の節の `useProxy` パラメーターを参照してください。
 
 ### 共通パラメーター {#common-parameters}
 
-次の表に示すパラメーターは、**目標**&#x200B;列に記述されている場合を除き、すべての目標に共通です。
+次の表に示すパラメーターは、すべてのゴールに共通です（**ゴール**&#x200B;列に記載されている場合を除く）。
 
-| 名前 | 種類 | 必須 | デフォルト値 | 説明 | ゴール |
+| 名前 | 型 | 必須 | デフォルト値 | 説明 | ゴール |
 |---|---|---|---|---|---|
-| `failOnError` | `boolean` | 不可 | `false` | 値 `true` を指定すると、エラーの発生時にビルドが失敗します。値 `false` を指定すると、ビルドの際にエラーが無視されます。 | `package`以外のすべての目標 |
-| `name` | `String` | `build`:はい、 `install`:いいえ、 `rm`:はい | `build`:No default,  `install`:Mavenプロジェクトの `artifactId` プロパティの値 | 操作するパッケージの名前 | `ls`以外のすべての目標 |
-| `password` | `String` | 可 | `admin` | AEMでの認証に使用するパスワード | `package`以外のすべての目標 |
-| `serverId` | `String` | 不可 | 認証用のユーザー名とパスワードを取得するサーバーID | `package`以外のすべての目標 |
-| `targetURL` | `String` | 可 | `http://localhost:4502/crx/packmgr/service.jsp` | AEMパッケージマネージャーのHTTPサービスAPIのURL | `package`以外のすべての目標 |
-| `timeout` | `int` | 不可 | `5` | パッケージマネージャーサービスとの通信の接続タイムアウト（秒） | `package`以外のすべての目標 |
-| `useProxy` | `boolean` | 不可 | `true` | `true`の値を指定すると、Mavenは、Package Managerに対する要求をプロキシするために、最初に見つかったアクティブなプロキシ設定を使用します。 | `package`以外のすべての目標 |
-| `userId` | `String` | 可 | `admin` | AEMで認証するユーザー名 | `package`以外のすべての目標 |
-| `verbose` | `boolean` | 不可 | `false` | 詳細ログを有効または無効にします | `package`以外のすべての目標 |
+| `failOnError` | `boolean` | いいえ | `false` | 値 `true` を指定すると、エラーの発生時にビルドが失敗します。値 `false` を指定すると、ビルドの際にエラーが無視されます。 | `package` を除くすべてのゴール |
+| `name` | `String` | `build`：はい、`install`：いいえ、`rm`：はい | `build`：デフォルト値なし、`install`：Maven プロジェクトの `artifactId` プロパティの値 | 処理をおこなうパッケージの名前 | `ls` を除くすべてのゴール |
+| `password` | `String` | はい | `admin` | AEM での認証に使用するパスワード | `package` を除くすべてのゴール |
+| `serverId` | `String` | いいえ | 認証用のユーザー名とパスワードの取得元のサーバー ID | `package` を除くすべてのゴール |
+| `targetURL` | `String` | はい | `http://localhost:4502/crx/packmgr/service.jsp` | AEM パッケージマネージャーの HTTP サービス API の URL | `package` を除くすべてのゴール |
+| `timeout` | `int` | いいえ | `5` | パッケージマネージャーサービスとの通信の接続タイムアウト（秒） | `package` を除くすべてのゴール |
+| `useProxy` | `boolean` | いいえ | `true` | 値 `true` を指定すると、Maven は最初に見つかったアクティブなプロキシ設定を使用してパッケージマネージャーへのリクエストをプロキシします。 | `package` を除くすべてのゴール |
+| `userId` | `String` | はい | `admin` | AEM で認証するユーザー名 | `package` を除くすべてのゴール |
+| `verbose` | `boolean` | いいえ | `false` | 詳細ログを有効または無効にします | `package` を除くすべてのゴール |
 
 ### build {#build}
 
-AEMインスタンスで既に定義されているコンテンツパッケージをビルドします。
+AEM インスタンスで既に定義されているコンテンツパッケージをビルドします。
 
 >[!NOTE]
 >
@@ -107,38 +107,38 @@ AEMインスタンスで既に定義されているコンテンツパッケー�
 
 #### パラメーター {#parameters}
 
-ビルド目標のすべてのパラメーターについては、[共通パラメーター](#common-parameters)の節で説明します。
+build ゴールのすべてのパラメーターについては、[共通パラメーター](#common-parameters)を参照してください。
 
 ### install {#install}
 
-リポジトリにパッケージをインストールします。 このゴールの実行に Maven プロジェクトは不要です。目標は、Maven構築のライフサイクルの`install`段階に縛られます。
+リポジトリー内のパッケージをインストールします。このゴールの実行に Maven プロジェクトは不要です。このゴールは Maven のビルドライフサイクルの `install` フェーズにバインドされます。
 
 #### パラメーター {#parameters-1}
 
-次のパラメーターに加えて、[共通パラメーター](#common-parameters)の節の説明を参照してください。
+以下のパラメーターに加えて、[共通パラメーター](#common-parameters)の説明も参照してください。
 
-| 名前 | 種類 | 必須 | デフォルト値 | 説明 |
+| 名前 | 型 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|---|---|
-| `artifact` | `String` | 不可 | Mavenプロジェクトの`artifactId`プロパティの値 | `groupId:artifactId:version[:packaging]`形式の文字列 |
-| `artifactId` | `String` | 不可 | なし | インストールするアーティファクトの ID |
-| `groupId` | `String` | 不可 | なし | インストールするアーティファクトの`groupId` |
-| `install` | `boolean` | 不可 | `true` | パッケージがアップロードされたときに、パッケージを自動的に解凍するかどうかを指定します |
-| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | 不可 | `localRepository`システム変数の値 | systemプロパティとしてプラグイン設定を使用して設定できないローカルのMavenリポジトリは常に使用されます |
-| `packageFile` | `java.io.File` | 不可 | Mavenプロジェクトに定義された主要アーティファクト | インストールするパッケージファイルの名前 |
-| `packaging` | `String` | 不可 | `zip` | インストールするアーティファクトのパッケージ化のタイプ |
-| `pomRemoteRepositories` | `java.util.List` | 可 | Mavenプロジェクトに定義されている`remoteArtifactRepositories`プロパティの値 | この値はプラグイン設定を使用して設定することはできません。この値はプロジェクトで指定する必要があります。 |
-| `project` | `org.apache.maven.project.MavenProject` | 可 | プラグインが設定されているプロジェクト | プロジェクトにプラグイン設定が含まれているので暗黙的なMavenプロジェクト |
-| `repositoryId` (POM)、 `repoID` （コマンドライン） | `String` | 不可 | `temp` | アーティファクトの取得元のリポジトリのID |
-| `repositoryUrl` (POM)、 `repoURL` （コマンドライン） | `String` | 不可 | なし | アーティファクトの取得元であるリポジトリのURL |
-| version | String | 不可 | なし | インストールするアーティファクトのバージョン |
+| `artifact` | `String` | いいえ | Maven プロジェクトの `artifactId` プロパティの値 | `groupId:artifactId:version[:packaging]` 形式の文字列 |
+| `artifactId` | `String` | いいえ | なし | インストールするアーティファクトの ID |
+| `groupId` | `String` | いいえ | なし | インストールするアーティファクトの `groupId` |
+| `install` | `boolean` | いいえ | `true` | アップロード時にパッケージを自動的に解凍するかどうかを指定します |
+| `localRepository` | `org.apache.maven.artifact.repository.ArtifactRepository` | いいえ | `localRepository` システム変数の値 | ローカルの Maven リポジトリー（常にシステムプロパティが使用されるので、プラグイン設定を使用してこのパラメーターを設定することはできません） |
+| `packageFile` | `java.io.File` | いいえ | Maven プロジェクト用に定義されているプライマリアーティファクト | インストールするパッケージファイルの名前 |
+| `packaging` | `String` | いいえ | `zip` | インストールするアーティファクトのパッケージ化のタイプ |
+| `pomRemoteRepositories` | `java.util.List` | はい | Maven プロジェクト用に定義されている `remoteArtifactRepositories` プロパティの値 | この値は、プラグイン設定を使用して設定することはできず、プロジェクトで指定する必要があります。 |
+| `project` | `org.apache.maven.project.MavenProject` | はい | プラグインが設定されるプロジェクト | Maven プロジェクト（プラグイン設定が格納されているので、これは暗黙的なプロジェクトです） |
+| `repositoryId`（POM）、`repoID`（コマンドライン） | `String` | いいえ | `temp` | アーティファクトの取得元リポジトリーの ID |
+| `repositoryUrl`（POM）、`repoURL`（コマンドライン） | `String` | いいえ | なし | アーティファクトの取得元リポジトリーの URL |
+| version | String | いいえ | なし | インストールするアーティファクトのバージョン |
 
 ### ls {#ls}
 
-パッケージマネージャーにデプロイされるパッケージを一覧表示します。
+パッケージマネージャーにデプロイされているパッケージを一覧表示します。
 
 #### パラメーター {#parameters-2}
 
-ls目標のすべてのパラメーターについては、[共通パラメーター](#common-parameters)の節で説明します。
+ls ゴールのすべてのパラメーターについては、[共通パラメーター](#common-parameters)を参照してください。
 
 ### rm {#rm}
 
@@ -146,48 +146,48 @@ ls目標のすべてのパラメーターについては、[共通パラメー�
 
 #### パラメーター {#parameters-3}
 
-rm目標のすべてのパラメーターについては、「[共通パラメーター](#common-parameters)」セクションで説明します。
+rm ゴールのすべてのパラメーターについては、[共通パラメーター](#common-parameters)を参照してください。
 
 ### uninstall {#uninstall}
 
-パッケージをアンインストールします。このパッケージは、アンインストールされた状態でサーバーに残ります。
+パッケージをアンインストールします。パッケージは、アンインストールされた状態でサーバーに残ります。
 
 #### パラメーター {#parameters-4}
 
-アンインストール目標のすべてのパラメーターについては、[共通パラメーター](#common-parameters)の節で説明します。
+uninstall ゴールのすべてのパラメーターについては、[共通パラメーター](#common-parameters)を参照してください。
 
 ### package {#package}
 
-コンテンツパッケージを作成します。package ゴールのデフォルト設定には、コンパイルしたファイルを保存するディレクトリのコンテンツが含まれます。package ゴールを実行するには、compile build フェーズを完了しておく必要があります。package ゴールは Maven のビルドライフサイクルの package フェーズにバインドされます。
+コンテンツパッケージを作成します。package ゴールのデフォルト設定には、コンパイルしたファイルを保存するディレクトリの内容が含まれます。package ゴールを実行するには、compile build フェーズを完了しておく必要があります。package ゴールは Maven のビルドライフサイクルの package フェーズにバインドされます。
 
 #### パラメーター {#parameters-5}
 
-次のパラメーターに加えて、[共通パラメーター](#common-parameters)セクションの`name`パラメーターの説明を参照してください。
+以下のパラメーターに加えて、[共通パラメーター](#common-parameters)の `name` パラメーターの説明も参照してください。
 
-| 名前 | 種類 | 必須 | デフォルト値 | 説明 |
+| 名前 | 型 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|---|
-| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | 不可 | なし | 使用するアーカイブの設定 |
-| `builtContentDirectory` | `java.io.File` | 可 | Mavenビルドの出力ディレクトリの値 | パッケージに含めるコンテンツを含むディレクトリ |
-| `dependencies` | `java.util.List` | 不可 | なし |  |
-| `embeddedTarget` | `java.lang.String` | 不可 | なし |  |
-| `embeddeds` | `java.util.List` | 不可 | なし |  |
-| `failOnMissingEmbed` | `boolean` | 可 | `false` | `true`の値を指定すると、埋め込みアーティファクトがプロジェクトの依存関係に見つからない場合に、ビルドが失敗します。 `false`の値を指定すると、ビルドでこのようなエラーが無視されます。 |
-| `filterSource` | `java.io.File` | 不可 | なし | このパラメーターは、ワークスペースフィルターのソースを指定するファイルを定義します。 設定で指定され、embeddeds または subpackages を使用して挿入されるフィルターはファイルコンテンツと結合されます。 |
-| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | 不可 | なし | このパラメーターには、パッケージコンテンツを定義するフィルター要素が含まれます。 実行すると、フィルターは`filter.xml`ファイルに含まれます。 下の[フィルターの使用](#using-filters)の節を参照してください。 |
-| `finalName` | `java.lang.String` | 可 | Mavenプロジェクトで定義された`finalName` （構築段階） | 生成されたパッケージZIPファイルの名前（ファイル拡張子`.zip`を除く） |
-| `group` | `java.lang.String` | 可 | Mavenプロジェクトで定義されている`groupID` | 生成されたコンテンツパッケージの`groupId`。コンテンツパッケージのターゲットインストールパスの一部です |
-| `outputDirectory` | `java.io.File` | 可 | Mavenプロジェクトで定義されたビルドディレクトリ | コンテンツパッケージが保存されるローカルディレクトリ |
-| `prefix` | `java.lang.String` | 不可 | なし |  |
-| `project` | `org.apache.maven.project.MavenProject` | 可 | なし | Mavenプロジェクト |
-| `properties` | `java.util.Map` | 不可 | なし | これらのパラメーターは、`properties.xml`ファイルに設定できる追加のプロパティを定義します。 これらのプロパティは、次の定義済みプロパティを上書きできません。`group` （設定するには`group`パラメータを使用）、`name` （設定するには`name`パラメータを使用）、`version` （設定するには`version`パラメータを使用）、`description` （プロジェクト記述から設定）、`groupId` (Mavenプロジェクト記述子の`artifactId` (`artifactId`)Mavenプロジェクト記述子), `dependencies` （設定するには`dependencies`パラメーターを使用）, `createdBy` （`user.name`システムプロパティーの値）, `created` （現在のシステム時間）, `requiresRoot` （設定するには`requiresRoot`パラメーターを使用）, `packagePath`（グループとパッケージ名から自動的に生成）`groupId` |
-| `requiresRoot` | `boolean` | 可 | false | パッケージにルートが必要かどうかを定義します。これは`properties.xml`ファイルの`requiresRoot`プロパティになります。 |
-| `subPackages` | `java.util.List` | 不可 | なし |  |
-| `version` | `java.lang.String` | 可 | Maven プロジェクトで定義されるバージョン | コンテンツパッケージのバージョン |
-| `workDirectory` | `java.io.File` | 可 | Mavenプロジェクトで定義されたディレクトリ（ビルドフェーズ） | パッケージに含めるコンテンツを含むディレクトリ |
+| `archive` | `org.apache.maven.archiver.MavenArchiveConfiguration` | いいえ | なし | 使用するアーカイブ設定 |
+| `builtContentDirectory` | `java.io.File` | はい | Maven ビルドの出力ディレクトリの値 | パッケージに含める内容を格納するディレクトリ |
+| `dependencies` | `java.util.List` | いいえ | なし |  |
+| `embeddedTarget` | `java.lang.String` | いいえ | なし |  |
+| `embeddeds` | `java.util.List` | いいえ | なし |  |
+| `failOnMissingEmbed` | `boolean` | はい | `false` | 値 `true` を指定すると、埋め込みアーティファクトがプロジェクトの依存関係に見つからない場合にビルドが失敗します。値 `false` を指定すると、ビルドの際にこのエラーが無視されます。 |
+| `filterSource` | `java.io.File` | いいえ | なし | パラメーターワークスペースフィルターのソースを指定するファイルを定義します。設定で指定され、embeddeds または subpackages を使用して挿入されるフィルターはファイル内容と結合されます。 |
+| `filters` | `com.day.jcr.vault.maven.pack.impl.DefaultWorkspaceFilter` | いいえ | なし | パッケージ内容を定義するフィルター要素を格納します。実行すると、`filter.xml` ファイルにフィルターが追加されます。以下の[フィルターの使用](#using-filters)の節を参照してください。 |
+| `finalName` | `java.lang.String` | はい | Maven プロジェクト（build フェーズ）で定義される `finalName` | 生成されるパッケージの ZIP ファイルの名前（ファイル拡張子 `.zip` を除く） |
+| `group` | `java.lang.String` | はい | Maven プロジェクトで定義される `groupID` | 生成されるコンテンツパッケージの `groupId`（コンテンツパッケージのターゲットインストールパスに含まれます） |
+| `outputDirectory` | `java.io.File` | はい | Maven プロジェクトで定義されるビルドディレクトリ | コンテンツパッケージが保存されるローカルディレクトリ |
+| `prefix` | `java.lang.String` | いいえ | なし |  |
+| `project` | `org.apache.maven.project.MavenProject` | はい | なし | Maven プロジェクト |
+| `properties` | `java.util.Map` | いいえ | なし | これらのパラメーターは、`properties.xml` ファイルに設定できる追加のプロパティを定義します。これらのプロパティで次の定義済みプロパティを上書きすることはできません。`group`（`group` パラメーターを使用して設定）、`name`（`name` パラメーターを使用して設定）、`version`（`version` パラメーターを使用して設定）、`description`（プロジェクトの説明から設定）、`groupId`（Maven プロジェクト記述子の `groupId`）、`artifactId`（Maven プロジェクト記述子の `artifactId`）、`dependencies`（`dependencies` パラメーターを使用して設定）、`createdBy`（システムプロパティ `user.name` の値）、`created`（現在のシステム時刻）、`requiresRoot`（`requiresRoot` パラメーターを使用して設定）、`packagePath`（グループ名とパッケージ名から自動的に生成） |
+| `requiresRoot` | `boolean` | はい | false | パッケージにルートが必要かどうかを定義します。これは `properties.xml` ファイルの `requiresRoot` プロパティになります。 |
+| `subPackages` | `java.util.List` | いいえ | なし |  |
+| `version` | `java.lang.String` | はい | Maven プロジェクトで定義されるバージョン | コンテンツパッケージのバージョン |
+| `workDirectory` | `java.io.File` | はい | Maven プロジェクト（build フェーズ）で定義されるディレクトリ | パッケージに含める内容を格納するディレクトリ |
 
 #### フィルターの使用 {#using-filters}
 
-パッケージのコンテンツを定義するには、フィルター要素を使用します。フィルターは、パッケージの`META-INF/vault/filter.xml`ファイルの`workspaceFilter`要素に追加されます。
+パッケージ内容を定義するには、フィルター要素を使用します。フィルターはパッケージの `META-INF/vault/filter.xml` ファイルの `workspaceFilter` 要素に追加されます。
 
 次に示すフィルターの例は、使用する XML 構造を示しています。
 
@@ -207,11 +207,11 @@ rm目標のすべてのパラメーターについては、「[共通パラメ�
 
 ##### インポートモード {#import-mode}
 
-`mode` 要素は、パッケージが読み込まれる際にリポジトリ内のコンテンツがどのような影響を受けるかを定義します。使用できる値は次のとおりです。
+`mode` 要素は、パッケージが読み込まれる際にリポジトリー内の内容がどのような影響を受けるかを定義します。使用できる値は次のとおりです。
 
-* **merge：**&#x200B;まだリポジトリに含まれていないパッケージのコンテンツが追加されます。パッケージ内およびリポジトリ内のコンテンツは変更されません。コンテンツがリポジトリから削除されることはありません。
-* **置換：リポジトリ内にないパッケージ内の** コンテンツは、リポジトリに追加されます。リポジトリ内のコンテンツは、パッケージ内の一致するコンテンツに置き換えられます。コンテンツがパッケージに存在しない場合、コンテンツはリポジトリから削除されます。
-* **update：**&#x200B;リポジトリに含まれていないパッケージのコンテンツがリポジトリに追加されます。リポジトリ内のコンテンツは、パッケージ内の一致するコンテンツに置き換えられます。既存のコンテンツはリポジトリから削除されます。
+* **merge：**&#x200B;まだリポジトリーに含まれていないパッケージ内容が追加されます。パッケージとリポジトリーの両方に含まれている内容は変更されません。リポジトリーの内容が削除されることはありません。
+* **replace：**&#x200B;リポジトリーに含まれていないパッケージ内容がリポジトリーに追加されます。リポジトリー内の内容が、パッケージ内の一致する内容に置き換えられます。パッケージ内に存在しない内容はリポジトリーから削除されます。
+* **update：**&#x200B;リポジトリーに含まれていないパッケージ内容がリポジトリーに追加されます。リポジトリー内の内容が、パッケージ内の一致する内容に置き換えられます。既存の内容はリポジトリーから削除されます。
 
 フィルターに `mode` 要素が含まれていない場合は、デフォルト値 `replace` が使用されます。
 
@@ -219,20 +219,20 @@ rm目標のすべてのパラメーターについては、「[共通パラメ�
 
 #### パラメーター {#parameters-6}
 
-| 名前 | 種類 | 必須 | デフォルト値 | 説明 |
+| 名前 | 型 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|---|
-| `detail` | `boolean` | 不可 | `false` | 各目標に対して設定可能なすべてのプロパティを表示するかどうかを指定します |
-| `goal` | `String` | 不可 | なし | このパラメーターは、ヘルプを表示する目標の名前を定義します。 値を指定しない場合は、すべてのゴールのヘルプが表示されます。 |
-| `indentSize` | `int` | 不可 | `2` | 各レベルのインデントに使用するスペースの数です（正の数を指定する必要があります） |
-| `lineLength` | `int` | 不可 | `80` | 表示線の最大長（正の値を指定する必要があります） |
+| `detail` | `boolean` | いいえ | `false` | 各ゴールに設定可能なプロパティをすべて表示するかどうかを指定します |
+| `goal` | `String` | いいえ | なし | ヘルプを表示するゴールの名前を指定します。値を指定しない場合は、すべてのゴールのヘルプが表示されます。 |
+| `indentSize` | `int` | いいえ | `2` | 各レベルのインデントに使用するスペースの数（指定する場合は正の数にします） |
+| `lineLength` | `int` | いいえ | `80` | 表示行の最大長（指定する場合は正の数にします） |
 
 ## パッケージへのサムネール画像またはプロパティファイルの追加 {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
 パッケージのプロパティをカスタマイズするには、デフォルトのパッケージ設定ファイルを置き換えます。例えば、パッケージを識別するためのサムネール画像をパッケージマネージャーとパッケージ共有に追加します。
 
-ソースファイルは、ファイルシステムのどこにでも配置できます。 POMファイルで、ソースファイルを`target/vault-work/META-INF`にコピーし、パッケージに含めるビルドリソースを定義します。
+ソースファイルはファイルシステム内のどこにあっても構いません。POM ファイルでは、ソースファイルを `target/vault-work/META-INF` にコピーするように、パッケージに追加するビルドリソースを定義します。
 
-次のPOMコードは、プロジェクトソースの`META-INF`フォルダー内のファイルをパッケージに追加します。
+次の POM コードでは、プロジェクトソースの `META-INF` フォルダー内のファイルをパッケージに追加します。
 
 ```xml
 <build>
@@ -246,7 +246,7 @@ rm目標のすべてのパラメーターについては、「[共通パラメ�
 </build>
 ```
 
-次の POM コードでは、1 つのサムネール画像だけをパッケージに追加します。サムネール画像は`thumbnail.png`という名前にする必要があり、パッケージの`META-INF/vault/definition`フォルダーに置く必要があります。 この例では、ソースファイルはプロジェクトの`/src/main/content/META-INF/vault/definition`フォルダーにあります。
+次の POM コードでは、1 つのサムネール画像だけをパッケージに追加します。サムネール画像の名前を `thumbnail.png` と指定して、パッケージの `META-INF/vault/definition` フォルダーに配置してください。この例では、ソースファイルはプロジェクトの `/src/main/content/META-INF/vault/definition` フォルダーにあります。
 
 ```xml
 <build>
@@ -260,10 +260,10 @@ rm目標のすべてのパラメーターについては、「[共通パラメ�
 </build>
 ```
 
-## AEMプロジェクトのアーキタイプを使用したAEMプロジェクトの生成{#using-archetypes}
+## AEM プロジェクトアーキタイプを使用した AEM プロジェクトの生成 {#using-archetypes}
 
-最新のAEMプロジェクトアーキタイプは、オンプレミスとAMSの両方の実装にベストプラクティスパッケージ構造を実装し、すべてのAEMプロジェクトに推奨します。
+最新の AEM プロジェクトアーキタイプでは、オンプレミス実装でも AMS 実装でも、ベストプラクティスに従ったパッケージ構造を実装しているので、すべての AEM プロジェクトにこのプロジェクトアーキタイプを使用することをお勧めします。
 
 >[!TIP]
 >
->詳しくは、AEMの「[AEMプロジェクト構造](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)」の記事(Cloud Serviceドキュメントとして)と、[AEMプロジェクトアーキタイプ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。 どちらもAEM 6.5では完全にサポートされています。
+>詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)と、[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
