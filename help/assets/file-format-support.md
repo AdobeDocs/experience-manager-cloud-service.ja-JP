@@ -1,29 +1,29 @@
 ---
 title: サポートされているファイル形式と MIME タイプ
-description: ' [!DNL Experience Manager Assets] で [!DNL Cloud Service]としてサポートされているファイル形式とMIME型です。'
+description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service] でサポートされているファイル形式と MIME タイプ。'
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 86%
+ht-degree: 93%
 
 ---
 
 
-# [!DNL Assets] サポートされるファイル形式  {#supported-file-formats}
+# [!DNL Assets] サポートされているファイル形式 {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。[!DNL Cloud Service][!DNL Adobe Experience Manager Assets] は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、任意のバイナリファイルについて、その形式によらず、基本的なコンテンツ管理機能（格納、メタデータのオンライン管理、バージョン管理、アップロード、ダウンロードなど）をサポートしています。[!DNL Adobe Experience Manager Assets] は様々なファイル形式をサポートし、各製品機能は様々な形式をサポートしています。
 
-さらに、[!DNL Experience Manager Assets]は、プレビューとレンディションの生成、およびフルテキストインデックスのメタデータとテキストの抽出をサポートする拡張機能も提供します。 この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
+さらに、[!DNL Experience Manager Assets] は、プレビューとレンディションの生成、およびフルテキストインデックス用のメタデータとテキストの抽出をサポートする拡張機能を提供します。この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
 
 アセットマイクロサービスを使用したアセットの変換の主な要素は次のとおりです。
 
-* [!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]、[!DNL Adobe Acrobat]、PDFなど、Adobeのアプリケーションやサービスで生成されるキー[Adobeファイル形式](#adobe-formats)。
-* 主要な[イメージングファイル形式](#image-formats).
+* アドビのアプリケーションおよびサービス（ または PDF など）で生成される主要な [Adobe ファイル形式](#adobe-formats)（[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]、および [!DNL Adobe Acrobat] または PDF。
+* 主要な[イメージングファイル形式](#image-formats)。
 * （Adobe Camera Raw を活用した）各種カメラ（キャノン、ニコン、富士フイルム、オリンパスなどのメーカー）に対応する [Camera Raw ファイル形式。](#camera-raw-formats)
-* Microsoft Office 形式や OpenDocument 形式などの一般的な[ドキュメント形式](#document-formats)
-* 各種の[ビデオ](#video-formats)および[オーディオ](#audio-formats)形式.
+* Microsoft Office 形式や OpenDocument 形式などの一般的な[ドキュメント形式](#document-formats)。
+* 各種の[ビデオ](#video-formats)および[オーディオ](#audio-formats)形式。
 
 次の凡例で、各形式のサポートレベルを説明します。
 
@@ -163,7 +163,7 @@ ht-degree: 86%
 | XLSX | kid | kid | kid | kid | kid |
 | XML | - | kid | - | - | - |
 
-## [!DNL Dynamic Media] でのドキュメント形式{#document-support-dynamic-media}
+## [!DNL Dynamic Media] でのドキュメント形式 {#document-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -199,7 +199,7 @@ ht-degree: 86%
 | WebM | kid | - | kid |
 | WMV | kid | kid | kid |
 
-## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式{#video-dynamic-media-transcoding} 
+## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式 {#video-dynamic-media-transcoding}
 
 | ビデオファイル拡張子 | コンテナ | 推奨されるビデオコーデック | サポートされないビデオコーデック |
 |------------------------|--------------------|--------|-------|
@@ -222,7 +222,7 @@ ht-degree: 86%
 
 ## オーディオ形式 {#audio-formats}
 
-[!DNL Assets] as a は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。[!DNL Cloud Service]
+[!DNL Assets] as a [!DNL Cloud Service] は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。
 
 ## ヒントと制限事項 {#limitations-and-tips}
 
