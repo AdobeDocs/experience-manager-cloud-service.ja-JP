@@ -2,10 +2,10 @@
 title: '画像プリセットの管理 '
 description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 98%
+source-wordcount: '3647'
+ht-degree: 96%
 
 ---
 
@@ -372,7 +372,8 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
      <li><strong>適用先</strong> - アンシャープを各カラーまたは明るさに適用するかを指定します。</li>
     </ul>
     <div>
-      シャープニングについては、<a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">画像のシャープニング</a>を参照してください。
+      シャープの適用については、
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">AEMDynamic Media</a>ビデオ、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Sharpening an image</a>オンラインヘルプトピック、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best practices for sharpening images in cempone Classic</a> downloadable PDFで、「画像へのシャープの適用」を使用する方法」
     </div> </td>
   </tr>
   <tr>
