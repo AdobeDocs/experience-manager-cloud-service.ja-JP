@@ -2,9 +2,9 @@
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します.
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '9536'
+source-wordcount: '9537'
 ht-degree: 99%
 
 ---
@@ -401,7 +401,7 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 |--- |--- |--- |--- |
 | ソース | 1,920 x 1,080 | 1 | 3 |
 | エンコード | 960 x 540 | 2 | 2 |
-| エンコード | 640 x 360 | 3 | 3 |
+| エンコード | 640 x 360 | 3 | 1 |
 | エンコード | 480 x 270 | 4 | 4 |
 
 ### エンコードされたビデオのファイル形式 {#encoded-video-file-format}
@@ -764,7 +764,7 @@ AEM では、YouTube からのコンテンツの公開に **[!UICONTROL YouTube 
 1. ビデオのプロパティページの右上隅にある「**[!UICONTROL 保存して閉じる]**」をクリックします。
 1. ツールバーの「**[!UICONTROL クイック公開]**」をクリックします。
 
-   [AEM Sites での公開管理の使用](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/publication-management-feature-video-use.html)も参照してください。
+   [AEM Sites での公開管理の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)も参照してください。
 
    オプションで、YouTube チャンネルで公開済みビデオを確認できます。
 
@@ -974,7 +974,7 @@ For YouTube publishing jobs, do the following:
 
 1. 上位の公開済みビデオを示した表で、ビデオ名をタップしてビデオを再生し、そのビデオのオーディエンス保持（ドロップオフ）レポートを表示します。
 
-<!-- OBSOLETE CONTENT OBSOLETE CONTENT SDK ONLY AVAILABLE INTERNALLY NOW 
+<!-- OBSOLETE CONTENT OBSOLETE CONTENT - SDK ONLY AVAILABLE INTERNALLY NOW 
 ### Viewing video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Dynamic Media HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
