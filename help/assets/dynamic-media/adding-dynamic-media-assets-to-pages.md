@@ -2,10 +2,10 @@
 title: ページへの Dynamic Media アセットの追加
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media コンポーネントをページに追加する方法。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '3135'
-ht-degree: 99%
+source-wordcount: '3128'
+ht-degree: 97%
 
 ---
 
@@ -210,7 +210,7 @@ Dynamic Media コンポーネントを使用して、ダイナミックビデオ
 
 Dynamic Media コンポーネントを使用して、スマート切り抜き画像アセットを Web ページに追加します。コンポーネントの編集時に、ページ上でビデオを再生するための事前定義済みのビデオビューアプリセットを使用するように選択できます。
 
-詳しくは、[Experience Manager Assets Dynamic Media でのスマート切り抜きの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)を参照してください。
+詳しくは、[Experience Manager Assets Dynamic Media でのスマート切り抜きの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html#dynamic-media)を参照してください。
 
 [イメージプロファイル](/help/assets/dynamic-media/image-profiles.md)も参照してください。
 
@@ -337,10 +337,10 @@ Dynamic Media アカウントでの HTTP/2 の使用方法について詳しく�
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Dynamic Media でのビデオプレーヤーの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
->* [Experience Manager Dynamic Media でのインタラクティブビデオの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Experience Manager Dynamic Media でのアセットビューアについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
->* [Experience Manager Dynamic Media でのカスタムビデオサムネールの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Experience Manager Dynamic Media でのカラーマネジメントについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
->* [Experience Manager Dynamic Media での画像シャープ処理の使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Experience Manager Dynamic Media でのビデオプレーヤーの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html#dynamic-media)
+>* [Experience Manager Dynamic Media でのインタラクティブビデオの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html#dynamic-media)
+>* [Experience Manager Dynamic Media でのアセットビューアについて](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html#dynamic-media)
+>* [Experience Manager Dynamic Media でのカスタムビデオサムネールの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html#dynamic-media)
+>* [Experience Manager Dynamic Media でのカラーマネジメントについて](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html#dynamic-media)
+>* [Experience Manager Dynamic Media での画像シャープ処理の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)
 
