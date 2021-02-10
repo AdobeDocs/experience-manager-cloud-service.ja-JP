@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 135fe0d4172af12f091268e9ffc45295e6645fd7
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '721'
 ht-degree: 21%
 
 ---
@@ -43,9 +43,11 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 * コンテンツフラグメントエディターでJSON出力を直接プレビューできる機能。
 
-### プログレッシブWebアプリ(PWA) {#pwa}
+<!--
+### Progressive Web Apps (PWAs) {#pwa}
 
-* [プログレッシブWeb App(PWA)版の](/help/sites-cloud/authoring/features/enable-pwa.md)  サイトは、簡単な設定でプロジェクトレベルで有効にできるようになりました。
+* [A Progressive Web App (PWA) version of a site](/help/sites-cloud/authoring/features/enable-pwa.md)  can now be enabled at the project level via simple configuration.
+-->
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
