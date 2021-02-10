@@ -2,10 +2,10 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
+source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
 workflow-type: tm+mt
-source-wordcount: '3167'
-ht-degree: 71%
+source-wordcount: '3220'
+ht-degree: 70%
 
 ---
 
@@ -19,6 +19,14 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 * REST で API リクエストの反復を回避
 * 特定の要件に限定された配信を確保
 * 単一のAPIクエリに対する応答としてレンダリングに必要なものを一括配信できます。
+
+>[!NOTE]
+>
+>GraphQLは現在、Adobe Experience Manager(AEM)の2つの（個別の）シナリオでCloud Serviceとして使用されています。
+>
+>* [AEMコマースは、GraphQLを介してコマースプラットフォームのデータを使用します](/help/commerce-cloud/architecture/magento.md)。
+>* AEMコンテンツフラグメントは、AEM GraphQL API（標準のGraphQLに基づいてカスタマイズされた実装）と連携して、アプリケーションで使用するために構造化されたコンテンツを配信します。
+
 
 ## GraphQL API {#graphql-api}
 
