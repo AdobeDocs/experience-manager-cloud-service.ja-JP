@@ -1,11 +1,13 @@
 ---
 title: プログレッシブWebアプリ機能を有効にする
 description: AEM Sitesでは、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブwebアプリケーション機能を有効にすることができます。
+hide: true
+hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ba014bb90b1cb08630455b3ac72895272ae8ed5b
+source-git-commit: 071eefa3b6f5e9636ace612e968b6a9627c98550
 workflow-type: tm+mt
 source-wordcount: '1725'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -78,7 +80,7 @@ PWAの場合、ユーザーはサイトのローカルコピーを持ち、イ�
 
 >[!NOTE]
 >
->[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)の今後のバージョンでは、これらの機能が自動的に含まれる予定です。 ただし、コアコンポーネントの代わりにカスタムコンポーネントを使用する場合は、これらの調整が必要になります。
+>[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)の今後のバージョンでは、これらの機能が自動的に含まれる予定です。 ただし、コアコンポーネントの代わりにカスタムコンポーネントを使用する場合は、これらの調整が必要になります。
 
 ### ディスパッチャーの調整{#adjust-dispatcher}
 
