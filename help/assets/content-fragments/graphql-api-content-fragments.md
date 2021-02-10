@@ -2,9 +2,9 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 47ed0f516b724c4d9a966bd051a022f322acb08e
+source-git-commit: 20f90d46d24fa211d51ef4b59bb56f4b9f963bc3
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3167'
 ht-degree: 71%
 
 ---
@@ -218,7 +218,9 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 
 GraphiQLユーザーインターフェイスは、専用のパッケージを使用してAEMにインストールできます。[GraphicQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)パッケージ。
 
-詳しくは、パッケージ&#x200B;**README**&#x200B;を参照してください。aemインスタンスにインストールする方法の詳細を含む、様々なシナリオに関する詳細。
+<!--
+See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
+-->
 
 ## オーサー環境とパブリッシュ環境のユースケース {#use-cases-author-publish-environments}
 
