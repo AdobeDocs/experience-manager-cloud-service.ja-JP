@@ -2,10 +2,10 @@
 title: Dynamic Media ビューアと Adobe Analytics および Adobe Launch の統合
 description: Dynamic Media ビューア 5.13 のリリースと共に、Adobe Launch の Dynamic Media ビューア拡張機能を使用すると、Dynamic Media、Adobe Analytics、Adobe Launch のユーザーは、Adobe Launch 設定で Dynamic Media ビューア固有のイベントとデータを使用できます。
 translation-type: tm+mt
-source-git-commit: c3ada59105cad7c2fc3b36b032d045b91f86b495
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '6628'
-ht-degree: 97%
+source-wordcount: '6626'
+ht-degree: 96%
 
 ---
 
@@ -834,4 +834,4 @@ AEM 設定は、次の 2 つの主な手順で構成されます。
 
 上記の AEM パブリッシュ用の Adobe Launch クラウド設定で、Adobe Launch ライブラリの開発 URL またはステージング URL を指定することで、この制限を回避できます。これにより、AEM パブリッシュノードは Adobe Launch ライブラリの開発版またはステージング版を使用するようになります。
 
-Adobe Launch クラウドの設定について詳しくは、[Adobe I/O を使用した AEM と Adobe Launch の統合](https://helpx.adobe.com/jp/experience-manager/using/aem_launch_adobeio_integration.html)を参照してください。
+Adobe起動のクラウド設定の設定について詳しくは、[Experience Platform LaunchとAEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html#integrations)の統合を参照してください。
