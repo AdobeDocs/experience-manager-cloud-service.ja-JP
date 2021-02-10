@@ -2,10 +2,10 @@
 title: 360/VR ビデオ
 description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを操作する方法を学びます。
 translation-type: tm+mt
-source-git-commit: 59d3f95db8ac4b779207bcf3d260067abea40d93
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 100%
+source-wordcount: '963'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 空間オーディオは現在サポートされていません。オーディオをステレオにミックスした場合、お客様がカメラの表示角度を変更してもバランス（L/R）は変化しません。
 
-詳しくは、[AEM Assets での Dynamic Media 360 ビデオとカスタムビデオサムネールの使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html)を参照してください。
+詳しくは、[AEM Assets での Dynamic Media 360 ビデオとカスタムビデオサムネールの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)を参照してください。
 
 [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)も参照してください。
 
