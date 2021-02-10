@@ -2,10 +2,10 @@
 title: 画質最適化のベストプラクティス
 description: Dynamic Media で画像アセットの画質の最適化に使用できるベストプラクティスについて説明します。
 translation-type: tm+mt
-source-git-commit: e18fdf02371b641b6ff65d70084b22ab9b6b6ded
+source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
 workflow-type: tm+mt
-source-wordcount: '1475'
-ht-degree: 97%
+source-wordcount: '1474'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ AEM には、画像をチューニングおよび最適化して結果をレン�
 
 画像のシャープニングは、Web サイト上の画像を管理するうえで最も難しい操作であり、多くの誤りが発生するところです。次の補助的なリソースを参照して、AEM でのシャープニングおよびアンシャープニングマスクの仕組みについて詳しく確認してください。
 
-ベストプラクティスに関するホワイトペーパー[AdobeDynamic Mediaクラシック](/help/assets/dynamic-media/assets/sharpening_images.pdf)のシャープの適用もAEMに適用されます。
+* ベストプラクティスに関するホワイトペーパー[AdobeDynamic Mediaクラシック](/help/assets/dynamic-media/assets/sharpening_images.pdf)のシャープの適用もAEMに適用されます。
 
-Adobe TV で、[アンシャープマスクを使用した画像のシャープニング](https://helpx.adobe.com/jp/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)を参照してください。
+* [AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)での画像へのシャープの適用をご覧ください。
 
 AEM を使用すれば、取り込み時、配信時またはその両方で画像をシャープにすることができます。ただし、ほとんどの場合は、両方ではなくどちらか一方の方法のみを使用して画像をシャープにしてください。一般に、配信時に URL 上で画像をシャープにすることで、最適な結果が得られます。
 
