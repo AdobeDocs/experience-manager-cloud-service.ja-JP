@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 42147d7465ec10a41702e74699a3d54624b7d4bd
+source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 48%
+source-wordcount: '665'
+ht-degree: 49%
 
 ---
 
@@ -74,7 +74,8 @@ ht-degree: 48%
       + [IP 許可リストの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [IP許可リストのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.1.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.2.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [リリースノート（2021.1.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [リリースノート（2020.12.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [リリースノート（2020.11.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
       + [リリースノート（2020.10.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
