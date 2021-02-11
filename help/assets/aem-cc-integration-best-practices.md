@@ -4,10 +4,10 @@ description: Experience Manager デプロイメントを Adobe Creative Cloud �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1586cd9d6b3e9da115bff802d840a72d1207e4a
+source-git-commit: eaf08018fbbf1cf1e71db2edce9ea673d546073a
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3294'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 
 アセット配布使用例をサポートするには、他のソリューションを考慮に入れる必要があります。
 
-* [AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html)：AEM Assets への設定可能な SaaS アドオンで、アセットの公開に使用。
+* [AEM Assetsブランド](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) ポータルを使用して、アセットを公開するための設定可能なアドオンを設定できます。
 
 * カスタムソリューションは [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) のコードベースに基づいて作成される。
 * AEM [リンク共有](/help/assets/share-assets.md)：リンクを使用してアドホックでアセットを共有する。
