@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: f1a54ac3f995a6e8cc51f9ef16e14df6210a02cd
+source-git-commit: 6c40641333f2297d7004d792e87f16a7cf081970
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 17%
@@ -146,7 +146,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 Best Practices Analyzer v2.1.0のリリース日は2021年2月11日です。
 
-### [!DNL Best-Practices-Analyzer] の新機能 {#what-is-new-bpa}
+### [!DNL Best Practices Analyzer] の新機能 {#what-is-new-bpa}
 
 * AEM FormsとAEM Formsの導入の使用を検出し、AEM Formsへの移行に関連する領域をCloud Serviceとして示す機能。
 * カスタムコンポーネントとテンプレートの使用状況と数を検出し、レポートする機能。
