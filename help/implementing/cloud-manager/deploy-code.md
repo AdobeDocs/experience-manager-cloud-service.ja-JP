@@ -2,10 +2,10 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: d0dd1bb2f3f040ef61401f5dbd5d5d9799c1a8ff
+source-git-commit: aef8afd3efca4d6d5db9f457e952958ee9ca38de
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 95%
 
 ---
 
@@ -54,6 +54,9 @@ ht-degree: 100%
 
    * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
       詳しくは、「[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)」を参照してください。
+
+   * カスタムUIテスト：パイプライン内のこのステップは常に存在し、スキップできません。 カスタムUIテストを記述し、AEMで作成したWebおよびモバイルアプリを検証する自動テストスイートをすばやく作成できます。
+詳しくは、[カスタムUIテスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)を参照してください。
 
    * エクスペリエンス監査：パイプライン内のこのステップは常に存在し、スキップできません。実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。設定されたページがサービスに送信され、評価されます。結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
 詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」を参照してください。
