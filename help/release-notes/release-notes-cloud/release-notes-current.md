@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
+source-git-commit: 801f1df5ceaa24289e2d88ecfe187a7a1497a6fe
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1108'
 ht-degree: 17%
 
 ---
@@ -120,9 +120,17 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)を参照してください。
 
-## クラウド移行ツール {#code-transition-tools}
+## コンテンツ転送ツール {#content-transfer-tool}
 
 ### リリース日 {#release-date-ctt}
+
+コンテンツ転送ツールv1.2.4のリリース日は2021年2月10日です。
+
+### バグ修正 {#bug-fixes-ctt}
+
+* 複数のユーザーをマッピングする際に、一部のユーザーのIMS IDが正しくマッピングされない問題を修正しました。 この問題が修正されました。
+
+### リリース日 {#release-date-ctt-feb}
 
 コンテンツ転送ツールv1.2.2のリリース日は2021年2月1日です。
 
@@ -131,3 +139,24 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 * コンテンツ転送ツール — ユーザーマッピングツールに追加された新しい機能とUI。 この機能は、コンテンツ移行アクティビティの一環として、既存のユーザーとグループをAdobeのIdentity ManagementシステムIDに自動的にマッピングします。 詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
 * コンテンツ転送ツールは、移行セット内で参照されているすべてのグループとユーザーを子も含めて移行するようになりました。
 * 移行セットの作成時に、`/etc`の下の特定のパスを選択できます。
+
+## ベストプラクティスアナライザー {#best-practices-analyzer}
+
+### リリース日 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.0のリリース日は2021年2月11日です。
+
+### [!DNL Best-Practices-Analyzer] の新機能 {#what-is-new-bpa}
+
+* AEM FormsとAEM Formsの導入の使用を検出し、AEM Formsへの移行に関連する領域をCloud Serviceとして示す機能。
+* カスタムコンポーネントとテンプレートの使用状況と数を検出し、レポートする機能。
+* 使用するノードストアとデータストアの種類を検出する機能。
+* Dynamic Mediaの使い方を検出する能力。
+* 使用するJavaバージョンの検出機能。
+
+
+
+
+
+
+
