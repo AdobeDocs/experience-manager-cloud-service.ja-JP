@@ -2,10 +2,10 @@
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
 translation-type: tm+mt
-source-git-commit: 25ba5798de175b71be442d909ee5c9c37dcf10d4
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 100%
+source-wordcount: '469'
+ht-degree: 89%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 * 製品機能テスト
 * カスタム機能テスト
+* カスタム UI テスト
 
 ## 製品機能テスト {#product-functional-testing}
 
@@ -33,6 +34,12 @@ ht-degree: 100%
 
 >[!NOTE]
 >「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。詳しくは、[ログのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
+
+## カスタム UI テスト {#custom-ui-testing}
+
+カスタムUIテストを記述し、AEMで作成したWebおよびモバイルアプリを検証する自動テストスイートをすばやく作成できます。
+
+カスタムUIテストの作成方法について詳しくは、[UIテストの作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html#building-ui-tests)を参照してください。
 
 
 ### 機能テストの作成 {#writing-functional-tests}
