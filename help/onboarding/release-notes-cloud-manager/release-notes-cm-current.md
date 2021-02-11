@@ -1,29 +1,52 @@
 ---
-title: AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノート
+title: AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノート
 translation-type: tm+mt
-source-git-commit: 05f539c41ea3caa0f754c0cdced4c795f8b6afb9
+source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 44%
+source-wordcount: '386'
+ht-degree: 19%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 2021.1.0 の Cloud Manager のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.2.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日です。
+AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 月 11 日です。
 
 ## Cloud Manager {#cloud-manager}
 
+### 新機能 {#what-is-new}
+
+* Cloud Manager実稼働パイプラインに、カスタムUIテスト機能が含まれるようになりました。
+
+* アセットのお客様は、Cloud Manager UIを使用してセルフサービスの方法でBrand Portalインスタンスをいつ、どこにデプロイするかを選択できるようになります。 アセットソリューションを使用する通常の（Sandbox以外の）プログラムの場合、Brand Portalを実稼働環境でプロビジョニングできるようになりました。 プロビジョニングは、実稼働環境で1回だけ実行できます。
+
+* プロジェクトとサンドボックスの作成で使用されるAEMプロジェクトアーキタイプがバージョン25に更新されました。
+
+* コードスキャン中に識別された非推奨のAPIのリストが絞り込まれ、最新Cloud ServiceのSDKリリースで非推奨となった追加のクラスとメソッドが含まれるようになりました。
+
+* SonarQubeプロファイル（Cloud Manager用）が更新され、squid:S2142というSonarルールが削除されました。 これは、スレッド割り込みチェックと競合しなくなります。
+
+* Cloud Manager UIは、ドメイン名を一時的に追加/更新できない可能性があるユーザーに通知します。関連付けられた環境には実行中のパイプラインが割り当てられているか、現在、承認手順を待機中です。
+
+* プロパティの設定は、sonarというプリフィックスが付いた顧客`pom.xml`ファイルに動的に削除され、ビルドと品質スキャンの失敗を回避します。
+
+* Cloud Manager UIには、現在展開中のドメイン名でSSL証明書が使用されている場合、SSL証明書を一時的に選択できない可能性があるユーザーに通知されます。
+
+
 ### バグ修正 {#bug-fixes}
 
-* アセット実稼動インスタンスでは、場合によっては、環境&#x200B;**ユーザー**&#x200B;の詳細ページにブランドポータルのステータスが&#x200B;*保留*&#x200B;として表示されます。ユーザーは何も操作を行えません。
+* ドメイン名に対するSSL証明書の一致で、大文字と小文字が区別されなくなりました。
 
-* Cloud Managerから非休止状態をトリガーすると、非休止状態が正常に開始された場合でも、エラーメッセージが表示されることがありました。
+* 証明書の秘密鍵が2048ビットの制限を満たさない場合に、適切なエラーメッセージが表示されるように、Cloud Manager UIからユーザーに通知されるようになりました。
 
-* 環境の作成または削除でエラーが発生した場合は、まれに対処しました。
+* Cloud Manager UIには、現在展開中のドメイン名でSSL証明書が使用されている場合、SSL証明書を一時的に選択できない可能性があるユーザーに通知されます。
+
+* 場合によっては、内部の問題が原因で環境の削除が停止することがあります。
+
+* 一部のパイプラインエラーは、誤ってパイプラインエラーとして報告されました。
