@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノート
 translation-type: tm+mt
-source-git-commit: d20a729712c1dbd48150f813419b57c49074b492
+source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 19%
@@ -34,7 +34,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * Cloud Manager UIは、ドメイン名を一時的に追加/更新できない可能性があるユーザーに通知します。関連付けられた環境には実行中のパイプラインが割り当てられているか、現在、承認手順を待機中です。
 
-* ビルドおよび品質スキャンの失敗を回避するため、先頭にSonarが付いた顧客`pom.xml`ファイルに設定されたプロパティは、動的に削除されるようになりました。
+* sonarのプリフィックスが付いた顧客`pom.xml`ファイルに設定されたプロパティは、ビルドおよび品質スキャンの失敗を回避するために、動的に削除されるようになりました。
 
 * Cloud Manager UIには、現在展開中のドメイン名でSSL証明書が使用されている場合、SSL証明書を一時的に選択できない可能性があるユーザーに通知されます。
 
