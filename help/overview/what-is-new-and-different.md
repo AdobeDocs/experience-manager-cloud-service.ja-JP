@@ -2,7 +2,7 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: '相違点と新機能 - Adobe Experience Manager（AEM） as a Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 52e8cf1e3fb503c1d222a9543cfc1ddfe87132b6
+source-git-commit: 1563da55c3dfed52088d5309eeac071918ff0d51
 workflow-type: tm+mt
 source-wordcount: '1876'
 ht-degree: 100%
@@ -262,7 +262,7 @@ Adobe Experience Manager Sites as a Cloud Service は、AEM コンテンツ管�
 
 ## AEM Assets {#aem-assets}
 
-Adobe Experience Manager Assets as a Cloud Service は、クラウドネイティブな SaaS ソリューションです。企業がデジタルアセット管理と Dynamic Media 操作を迅速かつ効果的におこなうだけでなく、常に最新で常に可用性が高く常に学習可能なシステム内から AI や機械学習などの次世代スマート機能を使用するうえでも役に立ちます。
+Adobe Experience Manager Assets as a Cloud Service は、クラウドネイティブな PaaS ソリューションです。企業がデジタルアセット管理と Dynamic Media 操作を迅速かつ効果的におこなうだけでなく、常に最新で常に可用性が高く常に学習可能なシステム内から AI や機械学習などの次世代スマート機能を使用するうえでも役に立ちます。
 
 Assets が提供する機能には、クラウドでの次世代アセット処理やパフォーマンスの高いアセット取り込みおよび検索などがあります。
 
