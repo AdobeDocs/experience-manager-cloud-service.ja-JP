@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.2.0 Cloud Manager のリリースノート
 translation-type: tm+mt
-source-git-commit: bca0519b3f27ee21df41b2292d19e330c4aa5f7d
+source-git-commit: 968775b24441457143f497c2cfb1f9ece392d475
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 19%
+source-wordcount: '399'
+ht-degree: 18%
 
 ---
 
@@ -38,6 +38,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * Cloud Manager UIには、現在展開中のドメイン名でSSL証明書が使用されている場合、SSL証明書を一時的に選択できない可能性があるユーザーに通知されます。
 
+* Cloud Serviceの互換性の問題をカバーするため、コード品質ルールが追加されました。
 
 ### バグ修正 {#bug-fixes}
 
