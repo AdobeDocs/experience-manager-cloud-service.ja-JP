@@ -1,11 +1,12 @@
 ---
 title: Dynamic Media のイメージプロファイルまたはビデオプロファイルを使用するためのデジタルアセット編成のベストプラクティス
 description: Dynamic Media の画像およびビデオアセットファイルの命名、整理および管理に関するヒントとベストプラクティス。
+contentOwner: Rick Brough
 translation-type: tm+mt
-source-git-commit: 68cf71054b1cd7dfb2790122ba4c29854ffdf703
+source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
