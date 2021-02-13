@@ -3,10 +3,10 @@ title: AEM Assets と AEM Media Library との比較
 description: AEM Assets と AEM Media Library の違いなど、両者に関するよくある質問。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
+source-git-commit: e98179379a97e7270b755042928133ddbd8de3fa
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 97%
+source-wordcount: '693'
+ht-degree: 91%
 
 ---
 
@@ -23,14 +23,14 @@ AEM Assets は、AEM プラットフォーム上のアプリケーションで�
 
 AEM Media Library は、画像やその他の共有リソースの保存専用に設けられた、AEM WCM コンテンツリポジトリ内の構成要素です。Media Library は、AEM WCM のデジタルアセット管理機能を使用します。
 
-## AEM WCM にはない AEM Assets の機能  {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## AEM WCM にはない AEM Assets の機能 {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
 AEM Assets のお客様だけが使用できる独自の機能は次のとおりです。
 
-1. タイトル、タグ、説明以外のメタデータを抽出して編集する機能
-1. AEM Assets Admin（ようこそ画面の siteadmin の隣にある 2 つ目のボタンをクリックすると表示されます）
+1. タイトル、タグ、説明以外のメタデータを抽出および編集する機能。
+1. AEM Assets管理者は、スタートアップスクリーンで`siteadmin`の隣にある2番目のオプションをクリックすると表示されます。
 1. デジタルアセット管理に関連するすべてのワークフローステップ（AEM Assets 取り込み、AEM Assets 削除、AEM Assets サブアセット操作、AEM Assets メタデータ抽出）
-1. パッケージ領域に含まれるライブラリ（「dam」など）
+1. パッケージスペースに「dam」を含むライブラリ。
 
 これらの機能を使用するには、AEM Assets の有効なライセンスが必要です。
 
