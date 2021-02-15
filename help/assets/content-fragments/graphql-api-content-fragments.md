@@ -2,10 +2,10 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 48b889e2357f9564c7a0e529c2bde5a05f7fcea1
+source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 70%
+source-wordcount: '3296'
+ht-degree: 66%
 
 ---
 
@@ -725,23 +725,90 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 
 ## 外部 Web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
+外部WebサイトからGraphQLエンドポイントにアクセスするには、次の項目を設定する必要があります。
+
+* [CORSフィルター](#cors-filter)
+* [転送者フィルタ](#referrer-filter)
+
+### CORSフィルタ{#cors-filter}
+
 >[!NOTE]
 >
 >AEM での CORS リソース共有ポリシーについて詳しくは、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))を参照してください。
 
-サードパーティの Web サイトで JSON 出力を使用できるようにするには、顧客の Git リポジトリーに CORS ポリシーを設定する必要があります。それには、目的のエンドポイントに適した OSGi CORS 設定ファイルを追加します。この設定では、アクセスを許可する信頼できる Web サイト名（または正規表現）を指定してください。
+GraphQLエンドポイントにアクセスするには、お客様のGitリポジトリでCORSポリシーを設定する必要があります。 これは、目的のエンドポイントに適切なOSGi CORS設定ファイルを追加することで行います。
 
-* GraphQL エンドポイントにアクセスする場合：
+この設定では、アクセスを許可する必要がある信頼できるWebサイト接触チャネル`alloworigin`または`alloworiginregexp`を指定する必要があります。
 
-   * alloworigin: [自分のドメイン]または alloworiginregexp: [自分のドメインの正規表現]
-   * supportedmethods: [POST]
-   * allowedpaths:[&quot;/content/graphql/global/endpoint.json&quot;]
+例えば、`https://my.domain`のGraphQLエンドポイントと持続クエリエンドポイントへのアクセスを許可するには、次を使用します。
 
-* GraphQL の永続的クエリエンドポイントにアクセスする場合：
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json",
+    "/graphql/execute.json/.*"
+  ]
+}
+```
 
-   * alloworigin: [自分のドメイン]または alloworiginregexp: [自分のドメインの正規表現]
-   * supportedmethods: [GET]
-   * allowedpaths: [&quot;/graphql/execute.json/.*&quot;]
+エンドポイントのバニティパスを設定した場合は、`allowedpaths`でも使用できます。
+
+### 転送者フィルタ{#referrer-filter}
+
+CORSの設定に加えて、サードパーティのホストからのアクセスを許可する転送者フィルターを設定する必要があります。
+
+これは、次の適切なOSGi転送者フィルタ設定ファイルを追加することで行います。
+
+* 信頼できるwebサイトのホスト名を指定します。`allow.hosts`または`allow.hosts.regexp`、
+* このホスト名に対するアクセスを許可します。
+
+例えば、転送者`my.domain`を使用してリクエストへのアクセスを許可するには、次の操作を行います。
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
 
 >[!CAUTION]
 >
