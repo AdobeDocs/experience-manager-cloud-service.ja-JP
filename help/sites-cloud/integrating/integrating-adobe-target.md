@@ -2,9 +2,9 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
+source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 81%
 
 ---
@@ -54,7 +54,7 @@ Adobe TargetテナントIDとAdobe Targetクライアントコードのフィー
 
 >[!NOTE]
 >
-> 既存のターゲット設定を編集する場合：
+> 既存のターゲット設定を変更する場合：
 >
 > 1. テナントIDを再入力します。
 > 2. ターゲットに再接続します。
