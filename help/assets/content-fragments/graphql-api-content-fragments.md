@@ -2,10 +2,10 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 05dd9c9111409a67bf949b0fd8a13041eae6ef1d
+source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 66%
+source-wordcount: '2935'
+ht-degree: 62%
 
 ---
 
@@ -98,9 +98,11 @@ GraphQLを使用すると、次のいずれかを返すクエリを実行でき�
 
 * エントリ](https://graphql.org/learn/schema/#lists-and-non-null)**の**[&#x200B;リスト
 
-また、次の操作も実行できます。
+<!--
+You can also perform:
 
-* [持続的なクエリ（キャッシュ）](#persisted-queries-caching)
+* [Persisted Queries, that are cached](#persisted-queries-caching)
+-->
 
 ## AEMエンドポイント用のGraphQL {#graphql-aem-endpoint}
 
@@ -531,20 +533,21 @@ query {
 
 * [WKND プロジェクトに基づいたサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
-## 永続的クエリ（キャッシュ） {#persisted-queries-caching}
+<!--
+## Persisted Queries (Caching) {#persisted-queries-caching}
 
-POST リクエストを使用してクエリを準備した後、HTTP キャッシュまたは CDN でキャッシュできる GET リクエストを使用して、そのクエリを実行できます。
+After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
-このようにする必要があるのは、POST クエリが通常はキャッシュされないからです。クエリをパラメーターとして GET を使用する場合、HTTP サービスや中間ステップにとってパラメーターが大きくなりすぎるという重大なリスクがあります。
+This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-特定のクエリを永続化するために必要な手順は次のとおりです。
+Here are the steps required to persist a given query:
 
 >[!NOTE]
->その前に、適切な設定に対して「**GraphQL Persistence Queries**」を有効にする必要があります。詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
+>Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 
-1. 新しいエンドポイント URL `/graphql/persist.json/<config>/<persisted-label>` に PUT してクエリを準備します。
+1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
-   例えば、次のようにして、永続的クエリを作成します。
+   For example, create a persisted query:
 
    ```xml
    $ curl -X PUT \
@@ -565,32 +568,32 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
    }'
    ```
 
-1. この段階で、応答を確認します。
+1. At this point, check the response.
 
-   例えば、以下が成功するかどうかを確認します。
+   For example, check for success:
 
-   ```xml
-   {
-     "action": "create",
-     "configurationName": "wknd",
-     "name": "plain-article-query",
-     "shortPath": "/wknd/plain-article-query",
-     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-   }
-   ```
+     ```xml
+     {
+       "action": "create",
+       "configurationName": "wknd",
+       "name": "plain-article-query",
+       "shortPath": "/wknd/plain-article-query",
+       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+     }
+     ```
 
-1. その後、URL `/graphql/execute.json/<shortPath>` を GET して、永続的クエリを再生できます。
+1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
 
-   例えば、次のような永続的クエリを使用します。
+   For example, use the persisted query:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. 既存のクエリパスに POST して、永続的クエリを更新します。
+1. Update a persisted query by POSTing to an already existing query path.
 
-   例えば、次のような永続的クエリを使用します。
+   For example, use the persisted query:
 
    ```xml
    $ curl -X POST \
@@ -614,9 +617,9 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
    }'
    ```
 
-1. ラップされたプレーンクエリを作成します。
+1. Create a wrapped plain query.
 
-   次に例を示します。
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -627,9 +630,9 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. キャッシュコントロール付きのラップされたプレーンクエリを作成します。
+1. Create a wrapped plain query with cache control.
 
-   次に例を示します。
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -640,9 +643,9 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. パラメーター付きの永続的クエリを作成します。
+1. Create a persisted query with parameters:
 
-   次に例を示します。
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -666,62 +669,62 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
      }'
    ```
 
-1. パラメーター付きのクエリを実行します。
+1. Executing a query with parameters.
 
-   次に例を示します。
+   For example:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
+
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. パブリッシュでクエリを実行するには、関連する永続的ツリーをレプリケートする必要があります。
+1. To execute the query on publish, the related persist tree need to replicated
 
-   * レプリケーションに POST を使用する場合：
+   * Using a POST for replication:
 
-      ```xml
-      $curl -X POST   http://localhost:4502/bin/replicate.json \
-        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-        -F cmd=activate
-      ```
+     ```xml
+     $curl -X POST   http://localhost:4502/bin/replicate.json \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+       -F cmd=activate
+     ```
 
-   * パッケージを使用する場合：
-      1. 新しいパッケージ定義を作成します。
-      1. 設定（例：`/conf/wknd/settings/graphql/persistentQueries`）を含めます。
-      1. パッケージをビルドします。
-      1. パッケージをレプリケートします。
-   * レプリケーション／配布ツールを使用する場合：
-      1. 配布ツールに移動します。
-      1. 設定のツリーアクティベーション（例：`/conf/wknd/settings/graphql/persistentQueries`）を選択します。
-   * （ワークフローランチャーの設定を通じて）ワークフローを使用する場合：
-      1. 様々なイベント（例：作成、変更など）で設定をレプリケートするワークフローモデルを実行するためのワークフローランチャールールを定義します。
+   * Using a package:
+     1. Create a new package definition.
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+     1. Build the package.
+     1. Replicate the package.
 
+   * Using replication/distribution tool.
+     1. Go to the Distribution tool.
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
+   * Using a workflow (via workflow launcher configuration):
+     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. クエリの設定がいったん公開されると、パブリッシュエンドポイントを使用するだけで、同じ原則が適用されます。
-
-   >[!NOTE]
-   >
-   >匿名アクセスの場合は、ACL で「全員」にクエリ設定へのアクセスが許可されているとシステムが想定します。
-   >
-   >そうでない場合は、実行できなくなります。
+1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
 
    >[!NOTE]
    >
-   >URL 内のセミコロン（「;」）はすべてエンコードする必要があります。
+   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
    >
-   >例えば、永続的クエリを実行するリクエストの場合と同様に、次のようにします。
+   >If that is not the case it will not be able to execute.
+
+   >[!NOTE]
    >
+   >Any semicolons (";") in the URLs need to be encoded.
    >
-   ```xml
+   >For example, as in the request to Execute a persisted query:
+   >
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
+-->
 
 ## 外部 Web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
@@ -740,8 +743,13 @@ GraphQLエンドポイントにアクセスするには、お客様のGitリポ�
 
 この設定では、アクセスを許可する必要がある信頼できるWebサイト接触チャネル`alloworigin`または`alloworiginregexp`を指定する必要があります。
 
-例えば、`https://my.domain`のGraphQLエンドポイントと持続クエリエンドポイントへのアクセスを許可するには、次を使用します。
+<!--
+For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
+-->
 
+例えば、`https://my.domain`のGraphQLエンドポイントへのアクセスを許可するには、次を使用します。
+
+<!--
 ```xml
 {
   "supportscredentials":true,
@@ -771,6 +779,39 @@ GraphQLエンドポイントにアクセスするには、お客様のGitリポ�
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
+  ]
+}
+```
+-->
+
+```xml
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "exposedheaders":[
+    ""
+  ],
+  "alloworigin":[
+    "https://my.domain"
+  ],
+  "maxage:Integer":1800,
+  "alloworiginregexp":[
+    ""
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
