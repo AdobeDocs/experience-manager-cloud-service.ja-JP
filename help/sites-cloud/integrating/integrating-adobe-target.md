@@ -2,10 +2,10 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: f07df8230ac3be34c29f54c41dc75ed21b2f5b3d
+source-git-commit: 344afa2d78c2453dce4d49e108ea7617d307ea09
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '1048'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,33 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 4. 詳細（以下を参照）を入力し、「**接続**」を選択します。
    ![接続](assets/open_screen1.png "接続")
 
-### IMS 設定
+### IMS 設定 {#ims-configuration}
 
 Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/integration-ims-adobe-io.translate.html)を参照してください。
+
+### Adobe TargetテナントIDとAdobe Targetクライアントコード{#tenant-client}
+
+Adobe TargetテナントIDとAdobe Targetクライアントコードのフィールドを設定する場合は、次の点に注意してください。
+
+1. ほとんどのお客様の場合、テナントIDとクライアントコードは同じです。 つまり、両方のフィールドに同じ情報が含まれ、同じ情報が含まれます。 両方のフィールドにテナントIDを必ず入力してください。
+2. 従来の目的では、テナントIDとクライアントコードのフィールドに異なる値を入力することもできます。
+
+どちらの場合も、次の点に注意してください。
+
+* デフォルトでは、（最初に追加された場合は）クライアントコードもテナントIDフィールドに自動的にコピーされます。
+* デフォルトのテナントIDセットを変更するオプションがあります。
+* したがって、ターゲットへのバックエンド呼び出しはテナントIDに基づき、ターゲットへのクライアント側呼び出しはクライアントコードに基づきます。
+
+前述したように、最初のケースはCloud ServiceとしてAEMで最も一般的です。 どちらの方法でも、**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
+
+>[!NOTE]
+>
+> 既存のターゲット設定を編集する場合：
+>
+> 1. テナントIDを再入力します。
+> 2. ターゲットに再接続します。
+> 3. 設定を保存します。
+
 
 ### Target 設定の編集 {#edit-target-configuration}
 
