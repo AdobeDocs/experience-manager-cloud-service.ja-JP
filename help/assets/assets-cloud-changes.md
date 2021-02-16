@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] を [!DNL Cloud Service]として主に変更'
 description: '[!DNLAdobe Experience Manager6.5と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の顕著な変更。'
 translation-type: tm+mt
-source-git-commit: ed449eea146ec18bdc4d25ae4938f9a36180037d
+source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 49%
+source-wordcount: '697'
+ht-degree: 39%
 
 ---
 
@@ -31,10 +31,14 @@ ht-degree: 49%
 * 以前のバージョンの に用意されていたデフォルトの **[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローは使用できなくなりました。[!DNL Experience Manager]代わりに、アセットマイクロサービスは、デフォルトのアセット処理(レンディション、メタデータ抽出、インデックス作成用のテキスト抽出)のほとんどをカバーする、スケーラブルで、容易に利用できるサービスを提供します。
    * [アセットのマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)を参照
    * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます.
+* メタデータの書き戻しはサポートされていません。
 * Package Managerを使用してアップロードされるアセットは、[!DNL Assets]インターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
-* 拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、引き続きバイナリファイルをDAMに保存できます。
+* 拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 [MIMEタイプの自動](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) 検出を使用できません。例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。
+* [[!DNL Assets] ホームページ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) エクスペリエンスが利用できません。
+* 重複のアセット検出の動作は、Experience Manager6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作とは異なります。[
+* 配置専用(FPO)レンディションの生成方法は、以前の[!DNL Experience Manager]バージョンとは異なります。 Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)としてのExperience Managerについては、[FPOレンディションを参照してください。
 
-アセットマイクロサービスで生成された標準レンディションは、後方互換性のある方法でアセットリポジトリーノードに保存されます（同じ命名規則が使用されます）。
+アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、アセットリポジトリノードに互換性のある方法で保存されます。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
