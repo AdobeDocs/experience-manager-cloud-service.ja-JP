@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: b0abba78292035140688b1802e8d8f12a121a1f0
+source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 98%
+source-wordcount: '474'
+ht-degree: 96%
 
 ---
 
@@ -123,6 +123,6 @@ ht-degree: 98%
    + [Dynamic Media アセットの公開](dynamic-media/publishing-dynamicmedia-assets.md)
    + [Dynamic Media での選択的公開の操作](dynamic-media/selective-publishing.md)
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
-   + [DHTML ビューアのサポート終了に関する FAQ](dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + [Flash ビューアのサポート終了に関する通知](dynamic-media/flash-viewers-eol.md)
    + [コンテンツの HTTP/2 配信の FAQ](dynamic-media/http2faq.md)
+   + [Flashビューアの提供終了](dynamic-media/flash-viewers-eol.md)
+   + [DHTMLビューアの提供終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
