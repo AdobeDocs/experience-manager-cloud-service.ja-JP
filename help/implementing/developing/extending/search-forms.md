@@ -600,7 +600,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 1. プレビューを&#x200B;**閉じて**&#x200B;戻り、設定を完了します。
 
-### 述語フィールドの削除 {#deleting-a-predicate-field}
+### 述語フィールドの削除  {#deleting-a-predicate-field}
 
 1. 更新する[カスタマイズ設定を開きます](#creating-opening-a-customized-configuration)。
 1. 述語フィールド（右側）を選択し、「**設定**」タブを開いて、**削除**&#x200B;アイコン（左下）を選択します。
