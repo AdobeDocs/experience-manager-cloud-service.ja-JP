@@ -7,8 +7,8 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '611'
+ht-degree: 64%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Dynamic Media では、オーサリングユーザーインターフェイス全体でキーボードコントロールおよび支援テクノロジー（JAWS スクリーンリーダーや NVDA スクリーンリーダーなど）をサポートしています。
 
-## Dynamic Media でのキーボードアクセシビリティのサポート {#keyboard-support-in-dm}
+## Dynamic Media でのキーボードアクセシビリティのサポート  {#keyboard-support-in-dm}
 
 Dynamic MediaはExperience Managerアセットのプラグインなので、キーボードコントロールの動作のほとんどはExperience Managerアセットの動作と同じです。 例えば、Dynamic Mediaの`Cancel`ボタンは、Experience Managerアセットと同じフォーカスハイライトを持ちます。 また、Experience Managerアセットと同様に`Spacebar`キーにも対応します。 アセット](/help/assets/accessibility.md#keyboard-shortcuts)の[キーボードショートカットを参照してください。
 
