@@ -24,7 +24,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] は、Adobe Experience Manage
 * アドビのネイティブファイル処理サービスを適宜使用して、[アドビ独自のファイル形式の高品質な出力と効率的な処理](file-format-support.md)を提供。
 * ユーザー固有のアクションおよび統合を追加するための後処理ワークフローを設定可能。
 
-Asset Microservicesを使用すると、サードパーティのレンダリングツールやメソッド（ImageMagickやFmpegトランスコードなど）が不要になり、設定が簡素化され、一般的なファイルタイプの基本的な機能がデフォルトで提供されます。
+Asset Microservicesを使用すると、サードパーティのレンダリングツールやメソッド（ImageMagickやFmpegトランスコードなど）が不要になり、設定が簡単になり、一般的なファイルタイプの基本的な機能がデフォルトで提供されます。
 
 ## アーキテクチャの概要 {#asset-microservices-architecture}
 
