@@ -33,7 +33,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 4. 詳細（以下を参照）を入力し、「**接続**」を選択します。
    ![接続](assets/open_screen1.png "接続")
 
-### IMS 設定 {#ims-configuration}
+### IMS 設定  {#ims-configuration}
 
 Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/integration-ims-adobe-io.translate.html)を参照してください。
 
