@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d9e0c105ad7f9e03bc2120a03a5c613b97ffa17b
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 8%
+ht-degree: 21%
 
 ---
 
@@ -14,4 +14,4 @@ ht-degree: 8%
 
 2017年1月31日をもって、Flashビューアプラットフォームのサポートは正式に終了となります。
 
-サポートされている最新のビューアについては、『Dynamic Mediaビューアリファレンスガイド[』を参照してください。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)
+サポートされている最新のビューアについては、『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja)』を参照してください。
