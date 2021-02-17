@@ -478,7 +478,7 @@ GitHub のコード
 
 ページポリシーを使用して、テンプレートまたは作成されるページで、ページ（メインの parsys）の[コンテンツポリシー](#content-policies)を定義できます。
 
-### 使用するテンプレートの有効化と許可 {#enabling-and-allowing-a-template-for-use}
+### 使用するテンプレートの有効化と許可  {#enabling-and-allowing-a-template-for-use}
 
 1. **テンプレートの有効化**
 
