@@ -57,7 +57,7 @@ Content Package Maven Plugin を使用するには、POM ファイルのビル�
 
 Maven でプラグインをダウンロードできるようにするには、このページの [Content Package Maven Plugin の取得](#obtaining-the-content-package-maven-plugin)で提供されるプロファイルを使用します。
 
-## Content Package Maven Plugin のゴール {#goals-of-the-content-package-maven-plugin}
+## Content Package Maven Plugin のゴール  {#goals-of-the-content-package-maven-plugin}
 
 Content Package Plugin に用意されているゴールおよびゴールパラメーターについては、以降の節で説明します。共通パラメーターの節に示すパラメーターはほとんどのゴールに使用できます。1 つのゴールに適用するパラメーターについては、そのゴールの節を参照してください。
 
