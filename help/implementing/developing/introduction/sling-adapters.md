@@ -276,7 +276,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
  </tbody>
 </table>
 
-#### WCM {#wcm}
+#### WCM  {#wcm}
 
 **[Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** は次の項目に適応します。
 
