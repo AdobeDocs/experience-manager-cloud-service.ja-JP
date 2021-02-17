@@ -24,7 +24,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 * AEM [SPA エディター](/help/implementing/developing/hybrid/introduction.md)で[ローンチを作成](/help/sites-cloud/authoring/launches/overview.md)する機能。
 
 
-## [!DNL Adobe Experience Manager Assets] cloud serviceとして  {#assets}
+## [!DNL Adobe Experience Manager Assets] Cloud Serviceとして  {#assets}
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
@@ -75,7 +75,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 [!UICONTROL Cloud Manager] バージョン 2020.8.0 のリリース日は 2020 年 8 月 06 日です。
 
-### 新機能 {#what-is-new-cloud-manager}
+### 新情報 {#what-is-new-cloud-manager}
 
 * コンテンツ監査は、Cloud Manager Sites 実稼動パイプラインで有効な機能です。Sites を使用するプログラムの実稼働パイプライン設定に、**コンテンツ監査**&#x200B;という名前の 3 番目のタブが含まれるようになりました。実稼働パイプラインを実行するたびに、パイプライン内のカスタム機能テストの後に新しいコンテンツ監査ステップが含まれるようになります。このステップでは、パフォーマンス、SEO（検索エンジン最適化）、アクセシビリティ、ベストプラクティス、PWA（プログレッシブ Web アプリ）などの多数のディメンションに照らしてサイトを評価します。
 
