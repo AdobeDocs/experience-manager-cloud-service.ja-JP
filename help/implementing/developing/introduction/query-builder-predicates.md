@@ -140,7 +140,7 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601 形式�
 * **`upperOperation`** - `<`（より前）または `<=`（以前）。`upperBound` に適用されます。デフォルトは `<` です
 * **`timeZone`** - ISO-8601 の日付文字列で指定されていない場合に使用するタイムゾーンの ID。デフォルトは、システムのデフォルトのタイムゾーンです。
 
-### excludepaths {#excludepaths}
+### excludepaths  {#excludepaths}
 
 パスが正規表現に一致するノードを結果から除外します。
 
