@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] を [!DNL Cloud Service]として主に変更'
 description: '[!DNLAdobe Experience Manager6.5と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の顕著な変更。'
 translation-type: tm+mt
-source-git-commit: 035d77ee4a6f9ef3593a34b2691ab6545d9e4f11
+source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 39%
+source-wordcount: '693'
+ht-degree: 30%
 
 ---
 
@@ -31,33 +31,35 @@ ht-degree: 39%
 * 以前のバージョンの に用意されていたデフォルトの **[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローは使用できなくなりました。[!DNL Experience Manager]代わりに、アセットマイクロサービスは、デフォルトのアセット処理(レンディション、メタデータ抽出、インデックス作成用のテキスト抽出)のほとんどをカバーする、スケーラブルで、容易に利用できるサービスを提供します。
    * [アセットのマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)を参照
    * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます.
-* メタデータの書き戻しはサポートされていません。
-* Package Managerを使用してアップロードされるアセットは、[!DNL Assets]インターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
-* 拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 [MIMEタイプの自動](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html) 検出を使用できません。例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。
-* [[!DNL Assets] ホームページ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) エクスペリエンスが利用できません。
-* 重複のアセット検出の動作は、Experience Manager6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作とは異なります。[
-* 配置専用(FPO)レンディションの生成方法は、以前の[!DNL Experience Manager]バージョンとは異なります。 Cloud Service](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)としてのExperience Managerについては、[FPOレンディションを参照してください。
+* メタデータの書き戻しはサポートされていません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)の[メタデータの書き戻しを参照してください。
+* Package Managerを使用してアップロードされるアセットは、[!DNL Assets]ユーザーインターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
+* [!DNL Assets] は、アップロードされたアセットのMIMEタイプを自動的に検出しません。拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。
+* [!DNL Assets] ホームページエクスペリエンスを使用できません。[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照してください。
+* 重複資産の検出は、[ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作とは異なる動作をします。
+* 配置専用(FPO)レンディションの生成方法は、以前の[!DNL Experience Manager]バージョンとは異なります。 [ [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)として [!DNL Experience Manager] のFPOレンディションを参照してください。
 
-アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、アセットリポジトリノードに互換性のある方法で保存されます。
+アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、アセットリポジトリノードに下位互換性のある方法で保存されます。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
 アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（ImageMagick など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。ImageMagick の複雑な設定は、[!UICONTROL 処理プロファイル]の設定に使用できません。ビデオの高度なFmpegトランスコードには[!DNL Dynamic Media]を、MP4ビデオの基本的なトランスコードには[処理プロファイルを使用します](/help/assets/manage-video-assets.md#transcode-video)。
 
-アセットマイクロサービスは、Cloud Manager で管理されるユーザープログラムと環境にある Adobe Experience Manager に自動的にプロビジョニングして接続される、クラウドネイティブなサービスです。Adobe Experience Manager の拡張やカスタマイズをおこなう場合、開発者は、既存のコンテンツまたはクラウド環境で生成されたレンディションを含んだアセットを使用して、アセットの使用、表示、ダウンロードをおこなうコードをテストし検証できます。
+Asset Microservicesは、Cloud Managerで管理されるお客様のプログラムーや環境ーで、自動的に[!DNL Experience Manager]にプロビジョニングされ、配線されるクラウドネイティブのサービスです。 [!DNL Experience Manager]を拡張またはカスタマイズするには、開発者は、クラウド環境で生成されたレンディションを含む既存のコンテンツまたはアセットを使用し、アセットの使用、表示、ダウンロードを使用したコードのテストと検証を行います。
 
 コードとプロセス（アセットの取り込みや処理を含む）のエンドツーエンドの検証をおこなうには、コードの変更を[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)を使用してクラウド開発環境にデプロイし、アセットマイクロサービスの処理をすべて実行してテストします。
 
 ## クラシック UI の削除 {#classic-ui}
 
-Adobe Experience Manager as a [!DNL Cloud Service] ではクラシック UI が使用できなくなりました。標準のインターフェイスは、タッチ対応 UI です。
+クラシックUIは、[!DNL Experience Manager]では[!DNL Cloud Service]として使用できなくなりました。 タッチ対応UIのみを使用できます。
 
 >[!MORELIKETHIS]
 >
->* [の [!DNL Adobe Experience Manager] 紹介 [!DNL Cloud Service]](/help/overview/introduction.md)
->* [ [!DNL Experience Manager] as a [!DNL Cloud Service] の概要 — 新機能と異なる機能](/help/overview/what-is-new-and-different.md)
->* [!DNL Experience Manager]の[アーキテクチャ](/help/core-concepts/architecture.md)は[!DNL Cloud Service]として
->* [の主な変更点 [!DNL Experience Manager] は、 [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md)
->* [の主な変更点 [!DNL Experience Manager Sites] は、 [!DNL Cloud Service]](/help/sites-cloud/sites-cloud-changes.md)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+>[!DNL Experience Manager]の[!DNL Cloud Service]には次のリソースがあります。
+>
+>* [紹介](/help/overview/introduction.md)
+>* [新機能と相違点](/help/overview/what-is-new-and-different.md)
+>* [建築](/help/core-concepts/architecture.md)
+>* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
+>* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 
