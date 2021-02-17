@@ -159,7 +159,7 @@ AEM Assets 内でバナー画像にホットスポットを追加する場合は
 
 これで、画像バナーをアップロードし、AEM Assets のショッパブルインタラクティブ画像機能を使用して画像バナーにホットスポットを追加する準備ができました。
 
-## （オプション）インタラクティブ画像ビューアプリセットの作成 {#optional-creating-an-interactive-image-viewer-preset}
+## （オプション）インタラクティブ画像ビューアプリセットの作成  {#optional-creating-an-interactive-image-viewer-preset}
 
 AEM Assets に含まれる、デフォルトの標準提供インタラクティブ画像ビューアプリセット（`Shoppable_Banner`）を使用するように選択できます。または、インタラクティブ画像で使用するために独自のカスタムビューアプリセットを作成できます。
 
