@@ -24,7 +24,7 @@ ht-degree: 100%
 
 * 単一ページアプリケーション（SPA）エディター JavaScript SDK が[オープンソース](/help/implementing/developing/hybrid/reference-materials.md)になりました。
 
-## [!DNL Adobe Experience Manager Assets] cloud serviceとして  {#assets}
+## [!DNL Adobe Experience Manager Assets] Cloud Serviceとして  {#assets}
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
