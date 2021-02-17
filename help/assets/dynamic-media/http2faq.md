@@ -35,7 +35,7 @@ HTTP/2 とその利点については、次の Web サイトで簡潔に説明�
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## HTTP/2 に切り替えるには {#am-i-eligible-to-switch-over-to-http}
+## HTTP/2 に切り替えるには  {#am-i-eligible-to-switch-over-to-http}
 
 HTTP/2 を使用するには、以下の要件を満たしている必要があります。
 
