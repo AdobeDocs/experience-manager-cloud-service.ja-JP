@@ -22,7 +22,7 @@ ht-degree: 100%
 
 次に全般的なヒントやテクニックを示します。
 
-### アセット同期ステータスプロパティ {#asset-synchronization-status-properties}
+### アセット同期ステータスプロパティ  {#asset-synchronization-status-properties}
 
 CRXDE Lite で次のアセットプロパティを見直すと、AEM から Dynamic Media へのアセットの同期に成功したことが確認できます。
 
