@@ -28,7 +28,7 @@ ht-degree: 100%
 >
 >アセットユーザーインターフェイスについて詳しくは、[タッチ UI を使用したアセットの管理](/help/assets/manage-digital-assets.md)を参照してください。
 
-## クイックスタート：画像セット {#quick-start-image-sets}
+## クイックスタート：画像セット  {#quick-start-image-sets}
 
 すぐに使い始めるには：
 
