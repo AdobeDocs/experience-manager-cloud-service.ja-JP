@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] を [!DNL Cloud Service]として主に変更'
 description: '[!DNLAdobe Experience Manager6.5と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の顕著な変更。'
 translation-type: tm+mt
-source-git-commit: 3e7613aa50e69e2c9789df4f2fb429ab74654110
+source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 30%
+source-wordcount: '714'
+ht-degree: 29%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 30%
 * メタデータの書き戻しはサポートされていません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)の[メタデータの書き戻しを参照してください。
 * Package Managerを使用してアップロードされるアセットは、[!DNL Assets]ユーザーインターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
 * [!DNL Assets] は、アップロードされたアセットのMIMEタイプを自動的に検出しません。拡張子のないデジタルアセットや、誤った拡張子のデジタルアセットは、必要に応じて処理されません。 例えば、そのようなアセットをアップロードする場合、何も発生しないか、アセットに誤った処理プロファイルが適用される場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。
+* [!DNL Experience Manager] 」は、複合アセットのサブアセットを生成し [!DNL Cloud Service] ません。 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)の[サブアセットの作成を参照してください。
 * [!DNL Assets] ホームページエクスペリエンスを使用できません。[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照してください。
 * 重複資産の検出は、[ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作とは異なる動作をします。
 * 配置専用(FPO)レンディションの生成方法は、以前の[!DNL Experience Manager]バージョンとは異なります。 [ [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)として [!DNL Experience Manager] のFPOレンディションを参照してください。
