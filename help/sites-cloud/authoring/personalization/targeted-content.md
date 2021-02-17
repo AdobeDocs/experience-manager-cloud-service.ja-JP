@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# ターゲットモードを使用したターゲットコンテンツのオーサリング {#authoring-targeted-content-using-targeting-mode}
+# ターゲットモードを使用したターゲットコンテンツのオーサリング  {#authoring-targeted-content-using-targeting-mode}
 
 AEM のターゲットモードを使用してターゲットコンテンツをオーサリングします。ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。次のことができます。
 
