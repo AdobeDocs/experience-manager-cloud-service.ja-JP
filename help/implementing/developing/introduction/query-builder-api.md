@@ -26,7 +26,7 @@ REST API を使用すると、JSON で送信される応答を使用した HTTP 
 >
 >QueryBuilder API は JCR API を使用して構築されています。また、OSGi バンドル内から JCR API を使用して、AEM JCR をクエリすることもできます。詳しくは、[JCR API を使用した Adobe Experience Manager データのクエリ](https://helpx.adobe.com/jp/experience-manager/using/querying-experience-manager-data-using1.html)を参照してください。
 
-## Gem セッション {#gem-session}
+## Gem セッション  {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-index.html) は、アドビの専門家が提供する、Adobe Experience Manager を技術的に深く掘り下げた一連のセッションです。
 
