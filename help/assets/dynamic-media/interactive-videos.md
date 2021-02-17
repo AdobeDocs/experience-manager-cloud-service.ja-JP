@@ -19,7 +19,7 @@ ht-degree: 99%
 
 [インタラクティブ画像](/help/assets/dynamic-media/interactive-images.md)も参照してください。
 
-## インタラクティブビデオの使用例 {#interactive-video-in-action}
+## インタラクティブビデオの使用例  {#interactive-video-in-action}
 
 インタラクティブなショッパブルビデオの動作を確認するには、「[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)」をクリックし、ページの「**[!UICONTROL ショッパブルメディア]**」見出しまでスクロールして、ショッパブルビデオをクリックして再生を開始します。
 
