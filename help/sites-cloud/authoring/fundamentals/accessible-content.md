@@ -55,7 +55,7 @@ ht-degree: 100%
 
 [ガイドライン 1.1 代替テキスト：すべてのテキスト以外のコンテンツには、拡大印刷、点字、音声、シンボル、平易な言葉などのユーザーが必要とする形式に変換できるように、代替テキストを提供すること。](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### テキスト以外のコンテンツ（1.1.1） {#non-text-content}
+### テキスト以外のコンテンツ（1.1.1）  {#non-text-content}
 
 * 達成基準 1.1.1
 * レベル A
@@ -243,7 +243,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
 -->
 
-### キャプション（ライブ）（1.2.4）                  {#captions-live}
+### キャプション（ライブ）（1.2.4）                   {#captions-live}
 
 * 達成基準 1.2.4
 * レベル AA
@@ -358,6 +358,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
       >
       >* `<b>` の代わりに `<strong>` を使用
       >* `<i>` の代わりに `<em>` を使用
+
       >
       >それぞれ実質的には同じですが、好ましいのは、意味的に正しい HTML である `<strong>` と `<em>` です。開発チームがプロジェクトインスタンスを作成する際に、`<strong>` と `<em>` ではなく `<b>` と `<i>` を使用するように RTE を設定できます。
 
