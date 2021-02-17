@@ -167,7 +167,7 @@ Assets コアと統合するには：
 
    * 各スキーマフォームは、フラグメントエディターと統合されています。
 
-## コンテンツフラグメント管理 API - サーバー側 {#the-content-fragment-management-api-server-side}
+## コンテンツフラグメント管理 API - サーバー側  {#the-content-fragment-management-api-server-side}
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
