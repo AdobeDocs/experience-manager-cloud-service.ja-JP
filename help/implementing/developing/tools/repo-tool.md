@@ -26,7 +26,7 @@ AEM Repo ツールは、FTP に相当するコマンドラインを使用して�
 >
 >AEM Repo ツールは、指定したファイル全体またはディレクトリを常に上書きすることに注意してください。
 
-## ダウンロードとドキュメント {#download-and-documentation}
+## ダウンロードとドキュメント  {#download-and-documentation}
 
 [AEM Repo ツールは、このリンクの GitHub で利用できます](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo)。詳細なインストールおよび使用手順も用意されています。
 
