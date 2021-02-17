@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: c0db892d58f762bd5659596371ece86950e9cdd7
+source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
 workflow-type: tm+mt
-source-wordcount: '3869'
-ht-degree: 97%
+source-wordcount: '3868'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 -->
 
-## Cloud Services での新しい Dynamic Media 設定の作成 {#configuring-dynamic-media-cloud-services}
+## Cloud ServicesでのDynamic Media構成の作成{#configuring-dynamic-media-cloud-services}
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
@@ -186,7 +186,7 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 [Dynamic Mediaクラシック]ユーザインターフェイスを使用して、Dynamic Media設定を変更します。
 
-上記のタスクの一部では、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開いて、アカウントにサインインする必要があります。
+上記のタスクの一部では、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインする必要があります。
 
 セットアップおよび設定タスクには、次のものが含まれます。
 
