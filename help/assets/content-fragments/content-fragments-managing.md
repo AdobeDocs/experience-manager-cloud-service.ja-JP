@@ -235,7 +235,7 @@ ht-degree: 89%
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理  {#creating-and-managing-variations-within-your-fragment}
 
 マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
