@@ -35,7 +35,7 @@ ht-degree: 2%
 
 コンテンツ作成者は、サイトの再コーディングを必要とする代わりに、サイトの[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)の追加タブとしてPWAプロパティを設定できます。
 
-* 保存または公開時に、この設定では、サイト上のPWA機能を有効にする[マニフェストファイル](https://developer.mozilla.org/en-US/docs/Web/Manifest)と[サービスワーカー](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)を書き出すイベントハンドラーをトリガーします。
+* 保存または公開時に、この設定トリガーは、サイト上のPWA機能を有効にする[マニフェストファイル](https://developer.mozilla.org/en-US/docs/Web/Manifest)と[サービスワーカー](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)を書き出すイベントハンドラーをします。
 * マニフェストおよびサービスワーカーは、サイトに適用される[コンテキスト対応構成](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html)に保存されます。 また、アプリ内でオフライン機能を許可するコンテンツのプロキシを有効にするため、サービスワーカーがアプリケーションのルートから提供されるように、Slingマッピングも管理されます。
 
 PWAの場合、ユーザーはサイトのローカルコピーを持ち、インターネットに接続していなくてもアプリのような操作を行うことができます。
@@ -158,7 +158,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
    * **スタンドアロン**  — ブラウザーはユーザーに完全に隠され、ネイティブアプリケーションのように表示されます。これがデフォルト値です。
       * このオプションを使用する場合、アプリのナビゲーションは、サイトのページ上のリンクとコンポーネントを使用してコンテンツ全体を通じて、ブラウザーのナビゲーションコントロールを使用せずに可能でなければなりません。
    * **ブラウザー**  — ブラウザーは、サイトの訪問時に通常通りに表示されます。
-   * **最小限のUI**  — ブラウザーは、ネイティブアプリと同様、ほとんど非表示ですが、基本的なナビゲーションコントロールが表示されます。
+   * **最小限のUI**  — ブラウザーはネイティブアプリと同様、ほとんど非表示ですが、基本的なナビゲーションコントロールが表示されます。
    * **フルスクリーン**  — ブラウザーはネイティブアプリケーションと同様に完全に非表示になりますが、フルスクリーンモードでレンダリングされます。
       * このオプションを使用する場合、アプリのナビゲーションは、サイトのページ上のリンクとコンポーネントを使用してコンテンツ全体を通じて、ブラウザーのナビゲーションコントロールを使用せずに可能でなければなりません。
 * **画面の向き**  — ローカルアプリケーションとして、PWAは [デバイスの向きを処理する方法を知っている必要があります。](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
