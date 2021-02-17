@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 translation-type: tm+mt
 source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3082'
+ht-degree: 69%
 
 ---
 
