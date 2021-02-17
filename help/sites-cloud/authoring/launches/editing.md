@@ -69,7 +69,7 @@ ht-degree: 100%
 >
 >ローンチにページを追加するには、ページが共通の言語ルートの下（単一のサイト内）にある必要があります。
 
-## ローンチの設定の編集 {#editing-a-launch-configuration}
+## ローンチの設定の編集  {#editing-a-launch-configuration}
 
 ローンチのプロパティは、任意のタイミングで編集できます。
 
