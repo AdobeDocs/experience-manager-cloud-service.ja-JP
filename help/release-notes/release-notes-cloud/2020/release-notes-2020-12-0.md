@@ -1,29 +1,28 @@
 ---
-title: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
-description: Cloud Serviceとしての [!DNL Adobe Experience Manager] の最新のリリースノートです。
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
 source-git-commit: 31e07090e4e3a265269eebce13857f88245788ee
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 16%
+ht-degree: 29%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
 
-次の節では、[!DNL Experience Manager]の一般的なリリースノートをCloud Serviceとしてまとめています。
+[!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
 ## リリース日 {#release-date}
 
-Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は2020年12月17日です。
-次のリリース(2021.1.0)は、2021年1月28日にリリースされます。
+[!DNL Adobe Experience Manager] as a Cloud Service 2020.12.0 のリリース日は 2020 年 12 月 17 日です。次のリリース(2021.1.0)は、2021年1月28日にリリースされます。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * **[コンテンツフラグメントHTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**:HTTP 追加 APIを使用して、コンテンツフラグメントのバリエーションを追加/更新および削除する機能。
 
-## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 * [!DNL Adobe InDesign Server]との統合が[!DNL Cloud Service]として[!DNL Experience Manager]で利用できるようになりました。 [!DNL Adobe InDesign Server]スクリプティングを使用して[!DNL Adobe InDesign]ファイルを処理する自動化機能を提供し、[!DNL Assets]テンプレートユーザーインターフェイスを使用してパンフレットや広告を作成できます。 [!DNL Adobe Managed Services]でホストされる[!DNL InDesign Server]のみ[!DNL Experience Manager as a Cloud Service]に対してサポートされます。<!-- TBD: Add link to article. -->
 
@@ -31,7 +30,7 @@ Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 * [!DNL Dynamic Media] の機能は、 [!DNL Sites] 画像ベースのコアコンポーネントを介してアクセスできるようになりました。作成者は、Webページの作成時に画像プリセット、スマート切り抜き、画像修飾子を使用するように、コンポーネントをすばやく設定できます。 [コアコンポーネント2.13.0リリース](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)を参照してください。
 
-* [!DNL Experience Manager] デスクトップアプリを使用すると、ユーザーはデスクトップアプリケーションインターフェイス上のWindowsエクスプローラーまたはMac Finderからファイルをドラッグすることで、ファイルやフォルダーをアップロードできます。詳しくは、[デスクトップアプリを使用したアセットの追加](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)を参照してください。
+* [!DNL Experience Manager] デスクトップアプリを使用すると、ユーザーはデスクトップアプリケーションインターフェイス上のWindowsエクスプローラーまたはMac Finderからファイルをドラッグすることで、ファイルやフォルダーをアップロードできます。詳しくは、[デスクトップアプリを使用したアセットの追加](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -39,13 +38,13 @@ Cloud Service2020.12.0の[!DNL Adobe Experience Manager]のリリース日は202
 
 * 最新のCIFコアコンポーネントバージョンv1.6.0が含まれるCIFベニアリファレンスサイト — 2020.12.01をリリースしました。詳細は、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.12.01)を参照してください。
 
-* CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、「[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)」を参照してください。
+* CIF コアコンポーネント v1.6.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.6.0)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
 
 ### リリース日 {#release-date-cm}
 
-AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10日です。
+AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12 月 10 日です。
 
 ### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
@@ -57,9 +56,9 @@ AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10�
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* コードスキャンステージで、解決された結果が提供されず、エラーが発生する場合があります。
+* 結果を提供せずに、コードスキャン段階で発生する場合があった障害に対処しました。
 
-* 環境カードに&#x200B;**追加**&#x200B;ボタンが一貫して表示されませんでした。
+* 環境カードに「**追加**」ボタンが一貫して表示されませんでした。
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
@@ -85,6 +84,6 @@ AEMのCloud ManagerのCloud Service2020.12.0のリリース日は2020年12月10�
 
 ### バグ修正 {#ctt-bug-fixes}
 
-* 移行セットのCTT (Content Transfer Tool)ユーザーインターフェイスのステータスが、無操作状態が一定期間続いた後も保持されず、変更されました。 この問題は修正されました。
+* 移行セットのCTT (Content Transfer Tool)ユーザーインターフェイスのステータスが、無操作状態が一定期間続いた後も保持されず、変更されました。 この問題が修正されました。
 * ログが利用できない場合、表示ログのオプションが無効になっていました。 この問題は修正され、ログが見つからない理由をユーザーに通知するメッセージが追加されました。
 * ユーザーがインジェストを停止したときに、コンテンツ転送ツールのユーザーインターフェイスのステータスが&#x200B;*FAILED*&#x200B;になっていた問題を修正しました。 この問題は修正され、代わりに&#x200B;*STOPPED*&#x200B;が表示されるようになりました。
