@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: bb8ab907dbeb422db410328f9c559c6794c16a8f
 workflow-type: tm+mt
 source-wordcount: '2127'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -217,7 +217,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ### 仮想リーフコンポーネント{#virtual-leaf-components}
 
-前の例では、既存のAEMコンテンツを持つSPAにコンポーネントを追加しました。 ただし、AEMでコンテンツがまだ作成されていないが、後でコンテンツの作成者が追加する必要がある場合があります。 これに対応するために、フロントエンド開発者はSPA内の適切な場所にコンポーネントを追加できます。 これらのコンポーネントは、AEMのエディターで開くとプレースホルダーを表示します。 コンテンツの作成者がこれらのプレースホルダー内にコンテンツを追加すると、ノードがJCR構造に作成され、コンテンツが保持されます。 作成したコンポーネントでは、スタンドアロンのリーフコンポーネントと同じ操作のセットを使用できます。
+前の例では、既存のAEMコンテンツを持つSPAにコンポーネントを追加しました。 ただし、AEMでコンテンツがまだ作成されていないが、後でコンテンツ作成者が追加する必要がある場合があります。 これに対応するために、フロントエンド開発者はSPA内の適切な場所にコンポーネントを追加できます。 これらのコンポーネントは、AEMのエディターで開くとプレースホルダーを表示します。 コンテンツの作成者がこれらのプレースホルダー内にコンテンツを追加すると、ノードがJCR構造に作成され、コンテンツが保持されます。 作成したコンポーネントでは、スタンドアロンのリーフコンポーネントと同じ操作のセットを使用できます。
 
 この例では、以前に作成した`AEMText`コンポーネントを再利用しています。 WKNDホームページの既存のテキストコンポーネントの下に新しいテキストを追加する必要があります。 コンポーネントの追加は、通常のリーフコンポーネントの場合と同じです。 ただし、`itemPath`は、新しいコンポーネントを追加する必要があるパスに更新できます。
 
@@ -333,5 +333,5 @@ AEMのコンテキストでSPAを理解するには、次の参照資料が役�
 * [React を使用した AEM での SPA の概要](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPAリファレンス資料（APIリファレンス）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA BlueprintとPageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
-* [SPA モデルルーティング](/help/implementing/developing/hybrid/routing.md)
-* [SPA およびサーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md)
+* [SPA モデルルーティング ](/help/implementing/developing/hybrid/routing.md)
+* [SPA およびサーバーサイドレンダリング ](/help/implementing/developing/hybrid/ssr.md)
