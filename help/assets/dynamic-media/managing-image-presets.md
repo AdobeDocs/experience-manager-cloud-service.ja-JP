@@ -77,7 +77,7 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。AEM As
 >
 >DAM アセットの更新ワークフローでは、**[!UICONTROL EPS サムネール]**&#x200B;のステップで EPS ファイルのサムネールが生成されます。
 
-#### PDF/AI/EPS アセットのメタデータプロパティ {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS アセットのメタデータプロパティ  {#pdf-ai-eps-asset-metadata-properties}
 
 | **メタデータプロパティ** | **説明** |
 |---|---|
@@ -373,7 +373,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
     </ul>
     <div>
       シャープの適用については、
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">AEMDynamic Media</a>ビデオ、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Sharpening an image</a>オンラインヘルプトピック、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best practices for sharpening images in cempone Classic</a> downloadable PDFで、「画像へのシャープの適用」を使用する方法」
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media">AEMDynamic Media</a>ビデオ、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#master-files">Sharpening an image</a>オンラインヘルプトピック、<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Best practices for sharpening images in cempones in classic</a> downloadable PDFで、「画像へのシャープの適用」を使用する方法」
     </div> </td>
   </tr>
   <tr>
