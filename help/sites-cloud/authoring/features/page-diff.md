@@ -35,7 +35,7 @@ ht-degree: 100%
 
 それらのコンテキスト内で差分の確認を開始する方法については、それぞれのトピックを参照してください。
 
-### 差分の表示 {#presentation-of-differences}
+### 差分の表示  {#presentation-of-differences}
 
 比較対象のコンテンツにかかわらず、差分の表示は同じです。
 
