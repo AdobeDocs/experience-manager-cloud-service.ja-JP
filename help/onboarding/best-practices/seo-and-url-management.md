@@ -47,7 +47,6 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
    * ページでセレクターを使用する場合、セマンティック値を提供するセレクターが推奨されます。
    * ユーザーが理解できない URL は、検索エンジンでも理解できません。
    * 次に例を示します。
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
 の方が  より望ましい 
 `mybrand.com/products/product-detail.1234.html`
@@ -191,7 +190,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
    `www.mydomain.com/es/home.html`
 
 * この場合、URL を次のように表示した方が効果的です。
-   `www.mydomain.com/es/casa.html`.
+   `www.mydomain.com/es/casa.html`
 
 ページ名のローカライズに伴う課題は、AEM プラットフォームで使用可能なローカリゼーションツールの多くでは、コンテンツを同期しておくためには、ロケール間でページ名を一致させる必要があるという点です。
 
@@ -222,7 +221,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 * OSGi 設定には
    **Apache Sling Resource Resolver Factory**
 ( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`）
 
 * プロパティ
    **マッピング場所**（`resource.resolver.map.location`）
@@ -365,8 +364,8 @@ Disallow: /
 >
 >Sling サーブレットを登録すると、拡張子 `sitemap` のセレクター `xml` をリスンできます。これにより、末尾が以下のようになっている URL が要求されると、サーブレットによってリクエストが処理されます。
 >    `/<path-to>/page.sitemap.xml`
->その後、要求されたリソースをリクエストから取得し、JCR API を使用してコンテンツツリーのその地点からサイトマップを生成できます。
->このようなアプローチは、複数のサイトを同じインスタンスから処理している場合にメリットがあります。`/content/siteA.sitemap.xml` に対するリクエストでは `siteA` 用のサイトマップが生成され、`/content/siteB.sitemap.xml` のリクエストでは `siteB` 用のサイトマップが生成されます。コードを追加する必要はありません。
+その後、要求されたリソースをリクエストから取得し、JCR API を使用してコンテンツツリーのその地点からサイトマップを生成できます。
+このようなアプローチは、複数のサイトを同じインスタンスから処理している場合にメリットがあります。`/content/siteA.sitemap.xml` に対するリクエストでは `siteA` 用のサイトマップが生成され、`/content/siteB.sitemap.xml` のリクエストでは `siteB` 用のサイトマップが生成されます。コードを追加する必要はありません。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 
