@@ -132,21 +132,21 @@ ContextHub で使用されている永続性をプレビューするには、次
 
 * ブラウザーのコンソールを使用する。以下に例を示します。
 
-   * Chrome の場合：
+   * Chrome:
 
       * デベロッパー ツール／Application／Storage を選択
 
          * Local Storage／（Web サイト）／ContextHubPersistence
          * Session Storage／（Web サイト）／ContextHubPersistence
          * Cookies／（Web サイト）／SessionPersistence
-   * Firefox の場合：
+   * Firefox:
 
       * 開発ツールを表示／ストレージを選択
 
          * ローカルストレージ／（Web サイト）／ContextHubPersistence
          * Session Storage／（Web サイト）／ContextHubPersistence
          * Cookie／（Web サイト）／SessionPersistence
-   * Safari の場合：
+   * Safari:
 
       * 環境設定／詳細／メニューバーに“開発”メニューを表示を選択
       * 開発／JavaScriptコンソールを表示を選択
