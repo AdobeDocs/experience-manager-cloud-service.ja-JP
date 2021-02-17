@@ -24,7 +24,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 >
 >AEM/Creative Cloud フォルダー共有機能は非推奨（廃止予定）となったので、以下では扱われなくなりました。AEM で管理されたアセットへのアクセス権をクリエイティブユーザーに与える方法としては、Adobe Asset Link や AEM Desktop App などの新しい機能をお勧めします。
 
-## クリエイティブプロフェッショナル、マーケティング担当者、DAM ユーザーのコラボレーションニーズ {#collaboration-need-of-creatives-marketers-and-dam-users}
+## クリエイティブプロフェッショナル、マーケティング担当者、DAM ユーザーのコラボレーションニーズ  {#collaboration-need-of-creatives-marketers-and-dam-users}
 
 | 要件 | 使用例 | 関係するサーフェス |
 |---|---|---|
