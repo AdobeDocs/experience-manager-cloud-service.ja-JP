@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 77d0ae925ed3837c70e58c110b6c8360790b6aee
+source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1178'
 ht-degree: 16%
 
 ---
@@ -144,7 +144,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 ### リリース日 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.0のリリース日は2021年2月11日です。
+Best Practices Analyzer v2.1.2のリリース日は2021年2月19日です。
 
 ### ベストプラクティスアナライザの新機能{#what-is-new-bpa}
 
@@ -153,6 +153,19 @@ Best Practices Analyzer v2.1.0のリリース日は2021年2月11日です。
 * 使用するノードストアとデータストアの種類を検出する機能。
 * Dynamic Mediaの使い方を検出する能力。
 * 使用するJavaバージョンの検出機能。
+
+## コードリファクタリングツール {#code-refactoring-tools}
+
+### コードリファクタリングツールの新機能{#what-is-new-crt}
+
+* AIO-CLIプラグインの新しいバージョンがリリースされました。 このプラグインの最新バージョンには、リポジトリの最新化機能に関するいくつかのバグ修正が含まれています。
+このプラグインの詳細については、[統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)を参照してください。
+
+### バグ修正 {#bug-fixes-crt}
+
+* リポジトリの最新化で行われたいくつかのバグ修正。
+[GitHubリソースを参照：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
+
 
 
 
