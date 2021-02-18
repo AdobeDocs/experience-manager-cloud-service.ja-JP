@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] を [!DNL Cloud Service]として主に変更'
 description: '[!DNLAdobe Experience Manager6.5と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の顕著な変更。'
 translation-type: tm+mt
-source-git-commit: db08a4365d264383cc143727e423ac9886bed66c
+source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 29%
+source-wordcount: '743'
+ht-degree: 28%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 29%
 * [!DNL Assets] ホームページエクスペリエンスを使用できません。[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照してください。
 * 重複資産の検出は、[ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作とは異なる動作をします。
 * 配置専用(FPO)レンディションの生成方法は、以前の[!DNL Experience Manager]バージョンとは異なります。 [ [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)として [!DNL Experience Manager] のFPOレンディションを参照してください。
+* ZIPアーカイブをアップロードする場合、[!DNL Experience Manager]は[!DNL Cloud Service]としてアーカイブにバンドルされているアセットは抽出されません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)の[ZIP抽出を参照してください。
 
 アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、アセットリポジトリノードに下位互換性のある方法で保存されます。
 
