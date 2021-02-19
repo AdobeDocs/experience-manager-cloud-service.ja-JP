@@ -2,15 +2,22 @@
 title: 適切な人材、適切な役割
 description: 適切な人材、適切な役割
 translation-type: tm+mt
-source-git-commit: 35143c9189620180665fe8f8735bc7800c03dc96
+source-git-commit: 7add7edf0a3fe40be33483e293a345d7c68eb312
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '825'
 ht-degree: 2%
 
 ---
 
 
 # **まず、適切な役割を担う適切な人材を得る**
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_chooseteam"
+>title="適切なチームを選択"
+>abstract="適切な人材を適切な職につけ、Adobe Experience Managerの導入を成功に導く。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPIの調整"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=en" text="KPIの評価"
 
 おそらく、組織内の複数の部門がデジタルエクスペリエンスの異なる側面を所有しています。 統治が行われない限り、この段階は果てしない議論、内紛、混乱に向けられています。
 
