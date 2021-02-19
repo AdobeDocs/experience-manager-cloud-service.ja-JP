@@ -2,9 +2,9 @@
 title: サーバー側APIのアクセストークンの生成
 description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
 translation-type: tm+mt
-source-git-commit: e4c7fcc1576a401629461117be4dba404a3c37c8
+source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ exchange(config).then(accessToken => {
 
 同じ交換は、正しい形式で署名済みJWTトークンを生成し、IMS Token Exchange APIを呼び出すことのできる任意の言語で実行できます。
 
-アクセストークンは、有効期限を定義します（通常は12時間）。 gitリポジトリには、アクセストークンを管理し、期限が切れる前に更新するためのサンプルコードがあります。
+アクセストークンは、有効期限を定義します（通常は24時間）。 gitリポジトリには、アクセストークンを管理し、期限が切れる前に更新するためのサンプルコードがあります。
 
 ### AEM API {#calling-the-aem-api}を呼び出しています
 
@@ -120,7 +120,7 @@ AEMをCloud Service開発者コンソールとして使用するために必要�
 
 >[!NOTE]
 >
->ローカル開発アクセストークンは、24時間有効で、その後同じ方法で再生成する必要があります。
+>ローカル開発アクセストークンは、最大24時間有効です。その後、同じ方法で再生成する必要があります。
 
 開発者は、このトークンを使用して、AEM以外のテストアプリケーションからAEMにCloud Service環境として呼び出しを行うことができます。 通常、開発者は、AEM以外のアプリケーションで、自分のノートブックPCにこのトークンを使用します。 また、クラウドとしてのAEMは、通常実稼働以外の環境です。
 
