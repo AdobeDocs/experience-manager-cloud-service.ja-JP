@@ -2,7 +2,7 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: '相違点と新機能 - Adobe Experience Manager（AEM） as a Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 938f2b45a99e8884c166656694424d2123121369
+source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 98%
@@ -121,7 +121,7 @@ Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作�
 
 * これらのコンポーネントの重要なライフサイクルイベント（製品アップデートなど）の通知の受信。
 
-Cloud Managerは、多くの地域にわたるデータセンターの環境を作成し、グローバルな取り組みを提供します。 CDN Point of Presence(PoP)は、世界中の顧客に対して、低レイテンシのコンテンツ配信を保証します。
+Cloud Managerは、多くの地域にわたるデータセンターの環境を作成し、グローバルな取り組みを提供します。 CDNのプレゼンスポイント(PoPs)により、世界中の顧客が待ち時間の短いコンテンツ配信を実現します。
 
 >[!NOTE]
 >AEM as a Cloud Service で Cloud Manager の使用を開始するには、[Adobe Experience Manager as a Cloud Service へのアクセス](/help/onboarding/getting-access-to-aem-in-cloud/navigation.md)を参照してください。
