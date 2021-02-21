@@ -2,10 +2,10 @@
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
 
-Dynamic Media を使用する場合、次の複数のオプションがあります。
+Dynamic Mediaでは、次のいくつかの方法があります。
 
 * Web サイトが AEM 上にホストされている場合は、Dynamic Media アセットを直接ページに追加します。
 * Web サイトが AEM 上にない場合は、次のいずれかの方法を選択します。
@@ -25,7 +25,7 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 
 >[!NOTE]
 >
->スマートイメージングは、既存の画像プリセットで機能し、配信の直前にインテリジェンスを使用して、ブラウザーまたはネットワークの接続速度に基づいて画像のファイルサイズをさらに低減します。詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
+>スマートイメージングは、既存の画像プリセットと連携して動作します。 配信の最後のミリ秒の情報を使用して、ブラウザまたはネットワークの接続速度に基づいて、画像ファイルのサイズをさらに小さくします。 詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
 
 詳しくは、次のトピックを参照してください。
 
@@ -43,4 +43,4 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 
 AEM は現在、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートしています。つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
-詳しくは、[コンテンツの HTTP/2 配信に関する FAQ](/help/assets/dynamic-media/http2faq.md) を参照してください。
+詳しくは、[HTTP/2配信のコンテンツに関するよくある質問](/help/assets/dynamic-media/http2faq.md)を参照してください。
