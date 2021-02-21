@@ -2,7 +2,7 @@
 title: DHTMLビューアの提供終了
 description: 2014年1月31日をもって、DHTMLビューアプラットフォームは正式に提供終了となります。
 translation-type: tm+mt
-source-git-commit: 7dee751f0b0e059bda7cfdf3f524bdc4c75de91b
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 14%
