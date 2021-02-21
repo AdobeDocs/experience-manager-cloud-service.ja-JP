@@ -2,10 +2,10 @@
 title: Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み
 description: Web ページに Dynamic Media ビデオまたは画像アセットを埋め込む方法を説明します。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -42,7 +42,7 @@ AEM を WCM として使用&#x200B;_していない_&#x200B;場合に限り、UR
 
    [画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-1. 左側のレールでドロップダウンメニューを選択して、「**[!UICONTROL ビューア]**」をタップします。
+1. 左側のレールで、ドロップダウンリストを選択し、「**[!UICONTROL ビューア]**」をタップします。
 1. 左側のレールで、ビューアプリセット名をタップします。ビューアプリセットがアセットに適用されます。
 1. 「**[!UICONTROL 埋め込み]**」をタップします。
 1. **[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスで、コード全体をクリップボードにコピーしてから、「**[!UICONTROL 閉じる]**」をタップします。
