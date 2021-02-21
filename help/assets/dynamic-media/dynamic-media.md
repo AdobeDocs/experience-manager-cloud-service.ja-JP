@@ -2,10 +2,10 @@
 title: Dynamic Media の操作
 description: Dynamic Media を使用して、Web、モバイルおよびソーシャルサイトで使用するためにアセットを配信する方法を学習します。
 translation-type: tm+mt
-source-git-commit: 3431f7f82b086c5c9aa0c2900332eae70728b147
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Dynamic Media 限定の機能は次のとおりです。
 * [ビデオ](video.md)
 * [Dynamic Media アセットの配信 ](delivering-dynamic-media-assets.md)
 * [アセットの管理](managing-assets.md)
-* [クイックビューを使用したカスタムポップアップの作成](custom-pop-ups.md)
+* [クイック表示を使用したカスタムポップアップウィンドウの作成](custom-pop-ups.md)
 
 [Dynamic Media の設定](administering-dynamic-media.md)も参照してください。
 
