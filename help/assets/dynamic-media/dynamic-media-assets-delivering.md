@@ -1,20 +1,20 @@
 ---
 title: Dynamic Media アセットの配信
-description: Dynamic Media を使用する場合、ビデオでも画像でも、Dynamic Media アセットを Web サイトに配信するオプションは複数あります。
+description: Dynamic Mediaでは、ビデオと画像の両方のDynamic MediaアセットをWebサイトに配信するオプションがいくつかあります。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 100%
+source-wordcount: '105'
+ht-degree: 56%
 
 ---
 
 
 # Dynamic Media アセットの配信 {#delivering-dynamic-media-assets}
 
-ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
+ビデオと画像の両方で、Dynamic Mediaアセットの配信方法はWebサイトの実装方法に依存します。
 
-Dynamic Media を使用する場合、次の複数のオプションがあります。
+Dynamic Mediaでは、次のいくつかの方法があります。
 
 * Web サイトが AEM 上にホストされている場合は、Dynamic Media アセットを直接ページに追加します。
 * Web サイトが AEM 上にない場合は、タッチ操作対応 UI で、[Dynamic Media アセットの配信](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)を参照してください。
