@@ -2,17 +2,17 @@
 title: コンテンツの HTTP/2 配信の FAQ
 description: HTTP/2 コンテンツ配信について説明します。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 193201670e5e78235025885f52215cca730ce556
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 88%
+source-wordcount: '758'
+ht-degree: 66%
 
 ---
 
 
 # コンテンツの HTTP/2 配信の FAQ{#http-delivery-of-content-faq}
 
-コンテンツの HTTP/2 配信が可能になったことをお知らせします。HTTP/2 を使用すると、パフォーマンスが全体的に向上します。
+コンテンツの HTTP/2 配信が可能になったことをお知らせします。HTTP/2を使用する場合、全体的なパフォーマンスが向上します。
 
 ## HTTP/2 とは {#what-is-http}
 
@@ -24,7 +24,7 @@ HTTP/2 とその利点については、次の Web サイトで簡潔に説明�
 
 ## コンテンツ配信を HTTP/2 に移行する主なメリット {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-パフォーマンスがどれくらい向上するかは、Web サイトのコード、Dynamic Media の使用方法、消費者のデバイス、画面と場所などに応じて異なります。
+パフォーマンスの向上は様々な要因に基づいているので、様々な要因によって異なります。 例えば、Webサイトのコード、Dynamic Mediaの使用方法、消費者のデバイス、画面、場所などがあります。
 
 アドビ独自のテストでは、以下の結果が出ています。
 
@@ -49,7 +49,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 ## Dynamic Media アカウントに対して HTTP/2 を有効にする方法 {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
-[Admin Console を使用してサポートケースを作成](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)し、HTTP/2 に切り替えるように要求する必要があります。自動的には切り替わりません。
+[Admin Consoleを使用してサポート](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ケースを作成し、HTTP/2に切り替えるようリクエストします。自動的には実行されません。
 
 1. サポートケースには、次の情報を記入してください。
 
@@ -69,7 +69,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
    **[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
    1. テクニカルサポートによって、リクエストの送信順に基づいて HTTP/2 の顧客待機リストに追加されます。
-   1. アドビでリクエストを処理する準備が整うと、サポートから連絡があり、移行についての調整および完了予定日の設定がおこなわれます。
+   1. Adobeがリクエストを処理する準備が整ったら、カスタマーケアからトランジションの調整とターゲット日の設定を依頼されます。
    1. 完了後に通知があり、HTTP/2 への正常な切り替えを確認できます。
 
 
@@ -80,14 +80,14 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
 >[!NOTE]
 >
->HTTP/2 への切り替えにはキャッシュのクリアが含まれるので、リードタイムが長くなる場合があります。そのため、一度に処理できる顧客の移行は数件のみとなります。
+>HTTP/2へのトランジションではキャッシュのクリアが行われるので、リードタイムは長くなります。 そのため、一度に処理できる顧客の移行は数件のみとなります。
 
 ## HTTP/2 への切り替えに伴うリスク  {#what-are-the-risks-with-moving-to-http}
 
 HTTP/2 への切り替えには、新しい CDN 設定への移行が伴うので、CDN でキャッシュがクリアされます。
 
-キャッシュが再作成されるまで、キャッシュされていないコンテンツはアドビの元のサーバーに直接アクセスして取得されます。このため、元のサーバーからリクエストをプルするときに許容できるパフォーマンスが維持されるように、アドビでは一度に少数の顧客の移行を処理するよう計画します。
+キャッシュが再作成されるまで、キャッシュされていないコンテンツはアドビの元のサーバーに直接アクセスして取得されます。この措置により、Adobeは一度に複数の顧客トランジションを処理する予定です。 この方法を使用すると、接触チャネルから要求を取り込む際に、許容可能なパフォーマンスが維持されます。
 
 ## URL または Web サイトが HTTP/2 でアクティベートされていることを確認する方法  {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-Web ブラウザーで使用する拡張機能をダウンロードする必要があります。Firefox および Chrome の場合は、「**[!UICONTROL HTTP/2 and SPDY Indicator]**」という拡張機能があります。ブラウザーは HTTP/2 をセキュア接続でのみサポートするので、確認するには https の付いた URL を呼び出す必要があります。この拡張では、HTTP/2 がサポートされている場合、青い稲妻マークおよび「X-Firefox-Spdy: h2」というヘッダーによって示されます。
+Webブラウザで使用する拡張機能をダウンロードします。 FirefoxおよびChromeには、**[!UICONTROL HTTP/2およびSPDYインジケーター]**&#x200B;という拡張子があります。 ブラウザーは HTTP/2 をセキュア接続でのみサポートするので、確認するには https の付いた URL を呼び出す必要があります。HTTP/2がサポートされている場合、拡張子は青いFlash記号で示され、ヘッダーは「X-Firefox-Spdy」です。&quot;h2&quot;。
