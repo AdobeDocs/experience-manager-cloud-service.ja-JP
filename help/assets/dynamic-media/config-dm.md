@@ -2,27 +2,27 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 5a50226bfae12440d07f9a21233ea06e118addac
+source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
 workflow-type: tm+mt
-source-wordcount: '3868'
-ht-degree: 96%
+source-wordcount: '3827'
+ht-degree: 65%
 
 ---
 
 
 # Dynamic Media Cloud Service の設定について {#configuring-dynamic-media}
 
-開発用、ステージング用、実稼動用など、複数の異なる環境向けに Adobe Experience Manager をセットアップして使用する場合は、それぞれの環境向けに Dynamic Media Cloud Services を設定する必要があります。
+開発、ステージング、実稼働など、様々な環境でAdobe Experience Managerを使用する場合は、それらの環境ごとにDynamic MediaCloud Servicesを設定します。
 
 ## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media}
 
 以下のアーキテクチャ図に Dynamic Media の仕組みを示します。
 
-新しいアーキテクチャでは、AEM は、プライマリソースアセットを担当し、アセットの処理および公開のための Dynamic Media と同期します。
+新しいアーキテクチャでは、AEMは主要なソースアセットを管理し、Dynamic Mediaと同期してアセットの処理と公開を行います。
 
 1. プライマリソースアセットが AEM にアップロードされると、Dynamic Media にレプリケートされます。その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
 1. レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスおよびプレビューできます（バイナリは AEM インスタンスに送り返されません）。
-1. コンテンツを公開および承認する準備ができると、Dynamic Media サービスがトリガーされ、コンテンツが配信サーバーにプッシュされて、CDN にコンテンツがキャッシュされます。
+1. コンテンツの公開と承認の準備が整ったら、Dynamic Mediaサービスはコンテンツを配信サーバーにプッシュして、CDNでコンテンツをキャッシュするようトリガーします。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -51,9 +51,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
-1. コンソールの左側でツールアイコンをタップした後、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;をタップします。
-1. Dynamic Media 設定ブラウザーページの左側のパネルで、「**[!UICONTROL グローバル]**」をタップし（「**[!UICONTROL グローバル]**」の左側にあるフォルダーアイコンをタップまたは選択しないでください）、次に、「**[!UICONTROL 作成]**」をタップします。
-1. **[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。これらは、プロビジョニング電子メールでアドビから提供されます。この電子メールを受信していない場合は、サポートにお問い合わせください。
+1. コンソールの左側で、ツールアイコンをタップし、**[!UICONTROL Cloud Services/Dynamic Media設定]**&#x200B;をタップします。
+1. Dynamic Media構成ブラウザーページの左ペインで、**[!UICONTROL グローバル]**&#x200B;をタップします（**[!UICONTROL グローバル]**&#x200B;の左にあるフォルダーアイコンはタップまたは選択しないでください）。 次に、「**[!UICONTROL 作成]**」をタップします。
+1. **[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。この情報は、プロビジョニング用の電子メールにAdobeが提供します。 この電子メールを受信しなかった場合は、Adobeカスタマーケアにお問い合わせください。
 1. 「**[!UICONTROL Dynamic Media に接続]**」をクリックします。
 1. **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスの「**[!UICONTROL 新しいパスワード]**」フィールドに、8～25 文字の新しいパスワードを入力します。パスワードには、次のうち少なくとも 1 つを含める必要があります。
 
@@ -62,7 +62,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    * 数値
    * 特殊文字：`# $ & . - _ : { }`
 
-   なお、「**[!UICONTROL 現在のパスワード]**」フィールドは意図的に事前入力されており、操作時には非表示になっています。
+   「**[!UICONTROL 現在のパスワード]**」フィールドは、意図的に事前入力され、操作から隠されています。
 
    必要に応じて、パスワードの目のアイコンをタップしてパスワードを表示し、入力または再入力したパスワードのスペルを確認できます。アイコンをもう一度タップすると、パスワードが非表示になります。
 
@@ -70,7 +70,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    新しいパスワードは、**[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたときに保存されます。
 
-   **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスで「**[!UICONTROL キャンセル]**」をタップした場合でも、「**[!UICONTROL 保存]**」をタップして新規作成の Dynamic Media 設定を保存する際に、新しいパスワードを入力する必要があります。
+   **[!UICONTROL パスワードの変更]**&#x200B;ダイアログボックスで「**[!UICONTROL キャンセル]**」をタップした場合、新しく作成したDynamic Media設定を保存する際に、新しいパスワードを入力する必要があります。
 
    [Dynamic Media のパスワードの変更](#change-dm-password)も参照してください。
 
@@ -78,15 +78,15 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | プロパティ | 説明 |
    |---|---|
-   | 会社 | Dynamic Media アカウントの名前です。異なるサブブランドや事業部、または異なるステージング／実稼動環境のために、複数の Dynamic Media アカウントを持っていることがあります。 |
+   | 会社 | Dynamic Media アカウントの名前です。様々なサブブランド、部門、ステージング/実稼動環境用に複数のDynamic Mediaアカウントを持つ可能性があります。 |
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
-   | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**：URL／埋め込みリンクが提供される前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 選択的公開&#x200B;]**：アセットは、セキュアなプレビューのためにのみ自動公開され、パブリックドメインでの配信のために DMS7 に公開することなく、明示的に AEM に公開することができます。今後、アドビは、相互に排他的なアセットを AEM に公開し、Dynamic Media に公開するこのオプションを拡張します。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。 |
-   | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、この設定を指定されたとおりにしておくことをお勧めします。 |
-   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**：フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**：選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーを選択した後、ツールバーで「**[!UICONTROL プロパティ]**」をタップします。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」をタップします。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。*&#x200B;関連項目：[Dynamic Media のフォルダーレベルでの選択的公開の設定。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**：フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つまたはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップの要領で表示されます。<br>**[!UICONTROL サブフォルダーを有効にする]**：このサブツリー内のすべての項目を Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーに対して無効&#x200B;]**：このサブツリー内のすべての項目を Dynamic Media との同期から除外します。 |
+   | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**:URL/埋め込みリンクを指定する前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 一部のみの発行&#x200B;]**:アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用にDMS7に公開せずに、AEMに明示的に公開することもできます。 今後、このオプションでは、相互に排他的な関係で、AEMにアセットを公開し、Dynamic Mediaにアセットを公開する予定です。 つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。 |
+   | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。<br>独自の会社のサーバーまたは特別なサーバーを使用する特別な設定がない限り、Adobeはこの設定を指定のままにすることをお勧めします。 |
+   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**：フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**：選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをDynamic Mediaと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」をタップします。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。*&#x200B;関連項目：[Dynamic Media のフォルダーレベルでの選択的公開の設定。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。ツールチップを介した継承されたショーの詳細なステータス。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:Dynamic Mediaと同期するために、このサブツリーの内容をすべて含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーに対して無効&#x200B;]**:このサブツリーのすべてをDynamic Mediaに同期から除外します。 |
 
    >[!NOTE]
    >
-   >Dynamic Media ではバージョン管理はサポートされていません。また、遅延アクティベーションは、Dynamic Media 設定を編集ページの「**[!UICONTROL アセットを公開]**」が「**[!UICONTROL アクティベーション時]**」に設定されている場合にのみ、アセットが最初にアクティベートされるまでの間に限って適用されます。
+   >Dynamic Media ではバージョン管理はサポートされていません。また、遅延アクティベーションは、Dynamic Media設定を編集ページの&#x200B;**[!UICONTROL アセットを発行]**&#x200B;が&#x200B;**[!UICONTROL アクティベーション]**&#x200B;に設定されている場合にのみ適用されます。その後、アセットが初めてアクティブ化されるまでのみ有効です。
    >
    >
    >アセットがアクティベートされるとすぐに、すべての更新が S7 配信にライブ公開されます。
@@ -98,19 +98,19 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!IMPORTANT]
    >
-   >新しい Dynamic Media 設定が完了したら、AEM のインボックス内にステータス通知が届きます。
+   >新しいDynamic Media設定がセットアップを完了すると、AEMインボックス内にステータス通知が表示されます。
    >
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
    > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
 
-1. Dynamic Media コンテンツを公開する前に安全にプレビューするには、AEM オーサーインスタンスを「許可リストに登録」して、Dynamic Media に接続する必要があります。この設定をおこなうには、以下を実行します。
+1. Dynamic Mediaコンテンツを公開する前に安全にプレビューするには、AEM作成者インスタンスを「許可リスト」してDynamic Mediaに接続する必要があります。 このアクションを設定するには、次の手順を実行します。
 
    * [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。 資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
-   * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
+   * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定/アプリケーション設定/公開設定/Image Server]**&#x200B;をクリックします。
 
    * Image Server 公開ページの「公開コンテキスト」ドロップダウンリストで、「**[!UICONTROL 画像サービングをテスト]**」を選択します。
    * 「クライアントアドレスフィルター」で、**[!UICONTROL 「追加」]**&#x200B;をタップします。
-   * チェックボックスを選択してアドレスを有効（オン）にしてから、AEM オーサーインスタンスの IP アドレス（Dispatcher IP ではない）を入力します。
+   * アドレスを有効（有効）にするには、チェックボックスをオンにし、（ディスパッチャーIPではなく）AEM作成者インスタンスのIPアドレスを入力します。
    * 「**[!UICONTROL 保存]**」をクリックします。
 
 これで基本設定は完了です。Dynamic Media を使用する準備が整いました。
@@ -119,11 +119,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### 新しい Dynamic Media 設定のトラブルシューティング {#troubleshoot-dm-config}
 
-新しい Dynamic Media 設定が完了したら、AEM のインボックス内にステータス通知が届きます。この通知は、以下の各インボックス画像に示すように、設定が成功したかどうかを知らせるものです。
+新しいDynamic Media設定がセットアップを完了すると、AEMインボックス内にステータス通知が表示されます。 この通知は、以下の各インボックス画像に示すように、設定が成功したかどうかを知らせるものです。
 
-![aeminboxsuccess](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
+![Experience Managerインボックス成功](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
-![aeminboxfailure](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
+![Experience Manager受信トレイエラー](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
 [インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)も参照してください。
 
@@ -134,11 +134,11 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    設定に失敗した場合は、次のスクリーンショットに示すような失敗通知をタップします。
 
-   ![dmsetupfailed](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
+   ![Dynamic Mediaのセットアップに失敗しました](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. **[!UICONTROL DMSETUP]** ページで、失敗を説明する設定詳細を確認します。特に、エラーメッセージやエラーコードは控えておいてください。この情報を示して、アドビカスタマーケアに問い合わせる必要があります。
+1. **[!UICONTROL DMSETUP]** ページで、失敗を説明する設定詳細を確認します。特に、エラーメッセージやエラーコードは控えておいてください。この情報については、Adobeカスタマーケアにお問い合わせください。
 
-   ![dmsetuppage](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
+   ![Dynamic Media設定ページ](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
 ### Dynamic Media のパスワードの変更 {#change-dm-password}
 
@@ -156,14 +156,14 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 変更したパスワードは、**[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたときに保存されます。
 
 1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
-1. コンソールの左側でツールアイコンをタップした後、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;をタップします。
-1. Dynamic Media 設定ブラウザーページの左側のパネルで、「**[!UICONTROL グローバル]**」をタップし（「**[!UICONTROL グローバル]**」の左側にあるフォルダーアイコンをタップまたは選択しないでください）、次に、「**[!UICONTROL 編集]**」をタップします。
+1. コンソールの左側で、ツールアイコンをタップし、**[!UICONTROL Cloud Services/Dynamic Media設定をタップします。]**
+1. [Dynamic Media構成ブラウザ]ページの左ペインで、**[!UICONTROL グローバル]**&#x200B;をタップします。**[!UICONTROL グローバル]**&#x200B;の左にあるフォルダーアイコンをタップまたは選択しないでください。次に、「**[!UICONTROL 編集」をタップします。]**
 1. **[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページで「**[!UICONTROL パスワード]**」フィールドのすぐ下の「**[!UICONTROL パスワードを変更]**」をタップします。
 1. **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスで以下をおこないます。
 
    * 「**[!UICONTROL 新しいパスワード]**」フィールドに、新しいパスワードを入力します。
 
-      なお、「**[!UICONTROL 現在のパスワード]**」フィールドは意図的に事前入力されており、操作時には非表示になっています。
+      「**[!UICONTROL 現在のパスワード]**」フィールドは、意図的に事前入力され、操作から隠されています。
 
    * 「**[!UICONTROL パスワードの繰り返し]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」をタップします。
 
@@ -171,7 +171,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 ## （オプション）Dynamic Media での詳細設定 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりする場合は、次のオプションタスクを 1 つまたは複数実行できます&#x200B;*。*
+Dynamic Mediaの設定とセットアップをさらにカスタマイズしたり、パフォーマンスを最適化するには、次の&#x200B;*オプション*&#x200B;タスクを1つ以上実行します。
 
 * [Dynamic Media 設定のセットアップと設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（オプション）Dynamic Media のパフォーマンスの調整](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
@@ -184,7 +184,7 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 ### （オプション）Dynamic Media 設定のセットアップと設定 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
-[Dynamic Mediaクラシック]ユーザインターフェイスを使用して、Dynamic Media設定を変更します。
+Dynamic Mediaクラシックユーザインターフェイスを使用して、Dynamic Media設定を変更します。
 
 上記のタスクの一部では、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインする必要があります。
 
@@ -212,24 +212,26 @@ Image Server 画面では、画像を配信するためのデフォルト設定�
 
 アプリケーションの一般設定ページを開くには、Dynamic Media Classic グローバルナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。
 
-**[!UICONTROL サーバー -]**&#x200B;アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、Web サイトとアプリケーションの URL 文字列を生成するのに使用されます。これらの URL 呼び出しは、アカウントに固有です。AEM サポートによって明示的に指示されない限り、サーバー名は変更しないでください。**[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダーにアップロードされるアセットや、元のアセットと異なるファイル名拡張子（JPG、TIF、PNG など）を持つアセットに影響を与えます。**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは最も厳格な置換規則です。置き換え画像を元の画像と同じフォルダーにアップロードし、置き換え画像と元の画像のファイル名拡張子が同じになっている必要があります。これらの要件が満たされない場合は、重複する画像が作成されます。AEM との一貫性を維持するには、｢**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]**｣を常に選択します。**[!UICONTROL 任意のフォルダーでベース名と拡張子が同じファイルを上書き]** - 置き換え画像と元の画像のファイル名拡張子は同じになっている必要があります（例えば、chair.jpg は chair.jpg で置き換えられますが、chair.tif では置き換えられません）。ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります.
-**[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を、元の画像と別のフォルダーにアップロードでき、ファイル名拡張子が異なるファイルをアップロードして、元のファイルと置き換えることができます。元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。**[!UICONTROL 初期設定のカラープロファイル]** - 詳細については、[カラーマネジメントの設定](#configuring-color-management)を参照してください。デフォルトでは、アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択した場合 15 個のレンディションが表示され、「**[!UICONTROL ビューア]**」を選択した場合 15 個のビューアプリセットが表示されます。この制限は増やすことができます。[表示する画像プリセット数を増減する](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)または[表示するビューアプリセット数を増減する](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)を参照してください。
+**[!UICONTROL サーバー -]**&#x200B;アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、WebサイトやアプリケーションのURL文字列の作成に使用されます。 これらの URL 呼び出しは、アカウントに固有です。AEM サポートによって明示的に指示されない限り、サーバー名は変更しないでください。**[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダにアップロードされたアセット、または元のアセットとは異なるファイル拡張子を持つアセットに影響を与えます。
+**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは最も厳格な置換規則です。置き換え画像は、元の画像と同じフォルダにアップロードし、元の画像と同じファイル拡張子を持つ必要があります。 これらの要件が満たされない場合は、重複する画像が作成されます。AEM との一貫性を維持するには、｢**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]**｣を常に選択します。**[!UICONTROL 任意のフォルダでベース名と拡張子が同じファイルを上書き]**  — 置き換え画像と元の画像のファイル拡張子が同じである必要があります。例えば、chair.jpgはchair.jpgを置き換える必要があり、chair.tifは置き換えません。 ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります.
+**[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を元の画像とは別のフォルダにアップロードしたり、ファイル拡張子が異なるファイルをアップロードしたり、元のファイルと置き換えたりできます。 元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。**[!UICONTROL 初期設定のカラープロファイル]** - 詳細については、[カラーマネジメントの設定](#configuring-color-management)を参照してください。デフォルトでは、アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択した場合 15 個のレンディションが表示され、「**[!UICONTROL ビューア]**」を選択した場合 15 個のビューアプリセットが表示されます。この制限は増やすことができます。[表示する画像プリセット数を増減する](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)または[表示するビューアプリセット数を増減する](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)を参照してください。
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
 Dynamic Media カラーマネジメントを使用すると、アセットをカラー補正できます。カラー補正により、取り込まれたアセットは、カラースペース（RGB、CMYK、グレー）および埋め込みカラープロファイルを維持します。動的レンディションを要求した場合、画像の色は、CMYK、RGB またはグレー出力を使用するターゲットのカラースペースに補正されます。[画像プリセットの設定](/help/assets/dynamic-media/managing-image-presets.md)を参照してください。
 
-画像を要求する際にカラー補正を有効にするためのデフォルトのカラープロパティを設定するには：
+画像を要求する際にカラー補正を有効にするための初期設定のカラープロパティを設定するには：
 
 1. [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、プロビジョニング時に提供された資格情報を使用してアカウントにサインインします。
 1. **[!UICONTROL 設定／アプリケーション設定]**&#x200B;に移動します。
 1. 「**[!UICONTROL 公開設定]**」領域を展開して、「**[!UICONTROL Image Server]**」を選択します。パブリッシュインスタンスのデフォルトを設定する際に、「**[!UICONTROL 公開コンテキスト]**」を「**[!UICONTROL 画像サービング]**」に設定します。
-1. 例えば「**[!UICONTROL カラーマネジメント属性]**」領域のプロパティなど、変更が必要なプロパティにスクロールします。次のカラー補正プロパティを設定できます。
+1. 変更する必要のあるプロパティまでスクロールします。例えば、**[!UICONTROL 「カラーマネジメント属性」]**領域のプロパティなどです。
+次のカラー補正プロパティを設定できます。
 
    | プロパティ | 説明 |
    |---|---|
    | CMYK の初期設定カラースペース | 初期設定の CMYK カラープロファイルの名前。 |
-   | グレースケールの初期設定のカラースペース | 初期設定のグレーカラープロファイルの名前。 |
+   | Grayscale Default Color Space | 初期設定のグレーカラープロファイルの名前。 |
    | RGB の初期設定カラースペース | 初期設定の RGB カラープロファイルの名前。 |
    | カラー変換レンダリングインテント | レンダリングインテントを指定します。指定できる値は、**[!UICONTROL 知覚的]**、**[!UICONTROL 相対的な色域を維持]**、**[!UICONTROL 彩度]**、**[!UICONTROL 絶対的な色域を維持です。]**&#x200B;アドビでは、デフォルトとして&#x200B;**[!UICONTROL 相対]**&#x200B;をお勧めします。 |
 
@@ -240,10 +242,10 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 それには、次のようにします。
 
 * RGB および CMYK 画像のカラー補正を有効にします。
-* カラープロファイルを持たない RGB 画像は、*sRGB* カラースペースと見なされます。
-* カラープロファイルを持たない CMYK 画像は、*WebCoated* カラースペースと見なされます。
-* RGB 出力を返す動的レンディションは、RGB 出力を *sRGB* カラースペースで返します。
-* CMYK 出力を返す動的レンディションは、CMYK 出力を *WebCoated* カラースペースで返します。
+* カラープロファイルのないRGB画像は、*sRGB*&#x200B;カラースペースにあると見なされます。
+* カラープロファイルのないCMYK画像は、*WebCoated*&#x200B;のカラースペースにあると見なされます。
+* RGB出力を返すダイナミックレンディション、sRGB *カラースペースに返すレンディション。*
+* CMYK出力を返すダイナミックレンディションを&#x200B;*WebCoated*&#x200B;のカラースペースに戻します。
 
 #### サポートされる形式の MIME タイプの編集 {#editing-mime-types-for-supported-formats}
 
@@ -251,7 +253,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 * Adobe PDF を eCatalog アセットに変換する。
 * Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
-* Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated Postscript ファイル（.EPS）をラスタライズする。
+* Adobe Illustratorファイル(.AI)またはAdobe Photoshopカプセル化PostScript®ファイル(.EPS)をラスタライズします。
 * [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)および[イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md)は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
 
 [アセットのアップロード](/help/assets/add-assets.md)を参照してください。
@@ -263,24 +265,24 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-   ![mimetypes](assets/mimetypes.png)
+   ![MIME タイプ](assets/mimetypes.png)
 
-1. mimeTypes フォルダーで、MIME タイプを選択します。
+1. mimeTypesフォルダーで、MIMEタイプを選択します。
 1. CRXDE Lite ページの右側の下部で、次の操作をおこないます。
 
-   * 「**[!UICONTROL 有効]**」フィールドをダブルクリックします。デフォルトでは、すべてのアセットの MIME タイプが有効になって（**[!UICONTROL true]** に設定されて）います。これは、処理に関してアセットが Dynamic Media に同期されることを意味します。このアセットの MIME タイプを処理から除外する場合、この設定を **[!UICONTROL false]** に変更します。
+   * 「**[!UICONTROL 有効]**」フィールドをダブルクリックします。デフォルトでは、すべてのアセットのMIMEタイプが有効（**[!UICONTROL true]**&#x200B;に設定）になります。これは、アセットがDynamic Mediaと同期されて処理されることを意味します。 このアセットのMIMEタイプを処理から除外する場合は、この設定を&#x200B;**[!UICONTROL false]**&#x200B;に変更します。
 
-   * **[!UICONTROL jobParam]** をダブルクリックして、関連するテキストフィールドを開きます。特定の MIME タイプに使用可能な、許可されている処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
+   * **[!UICONTROL jobParam]** をダブルクリックして、関連するテキストフィールドを開きます。特定のMIMEタイプで使用できる処理パラメーターの値のリストについては、[サポートされているMIMEタイプ](/help/assets/file-format-support.md)を参照してください。
 
 1. 次のいずれかの操作をおこないます。
-   * 手順 3～4 を繰り返して、その他の MIME タイプを編集します。
+   * 手順3 ～ 4を繰り返して、さらにMIMEタイプを編集します。
    * CRXDE Lite ページのメニューバーで、「**[!UICONTROL すべて保存]**」をクリックします。
 
 1. ページの左上隅で、「**[!UICONTROL CRXDE Lite]**」をタップして AEM に戻ります。
 
 #### サポートされていない形式のカスタム MIME タイプの追加 {#adding-mime-types-for-unsupported-formats}
 
-AEM Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite で追加する新しいノードが AEM によって削除されないようにするには、必ず `image_` より前に MIME タイプを移動し、その有効値が **[!UICONTROL false]** に設定されている必要があります。
+Experience Managerアセットで、サポートされていない形式のカスタムMIMEタイプを追加できます。 CRXDE Liteに追加した新しいノードがExperience Managerによって削除されないようにするには、MIMEタイプを`image_`の前に移動します。 また、有効な値が&#x200B;**[!UICONTROL false]**&#x200B;に設定されていることを確認します。
 
 **サポートされていない形式のカスタム MIME タイプを追加するには**
 
@@ -296,13 +298,13 @@ AEM Assets でサポートされていない形式のカスタム MIME タイプ
 
    ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
 
-1. **Adobe CQ Scene7 Asset MIME type Service** ページで、任意のプラス記号アイコン「+」をクリックします。新しい MIME タイプを追加する場合にクリックする、プラス記号のテーブルの場所はすぐわかります。
+1. **Adobe CQ Scene7 Asset MIME type Service** ページで、任意のプラス記号アイコン「+」をクリックします。表内でプラス記号をクリックして新しいMIMEタイプを追加する場所は簡単です。
 
    ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
 1. 空のテキストフィールドに追加した `DWG=image/vnd.dwg` を入力します。
 
-   この `DWG=image/vnd.dwg` 例は、説明の目的でのみ使用します。ここで追加する MIME タイプは、その他のサポートされていない形式でもかまいません。
+   例`DWG=image/vnd.dwg`は説明用です。 ここで追加する MIME タイプは、その他のサポートされていない形式でもかまいません。
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -319,11 +321,11 @@ AEM Assets でサポートされていない形式のカスタム MIME タイプ
 
    `conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
 
-1. `image_vnd.dwg` MIME タイプをドラッグし、次のスクリーンショットに示すように、ツリー内の `image_` の上にドロップします。
+1. MIMEタイプ`image_vnd.dwg`をドラッグし、次のスクリーンショットに示すように、ツリーの`image_`のすぐ上にドロップします。
 
    ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
 
-1. MIME タイプ `image_vnd.dwg` を選択したまま、「**[!UICONTROL プロパティ]**」タブの&#x200B;**[!UICONTROL 有効]**&#x200B;行の&#x200B;**[!UICONTROL 値]**&#x200B;列見出しの値をダブルクリックして、「**[!UICONTROL 値]**」ドロップダウンリストを開きます。
+1. MIMEタイプ`image_vnd.dwg`が選択された状態で、**[!UICONTROL 「プロパティ]**」タブの&#x200B;**[!UICONTROL enabled]**&#x200B;行の&#x200B;**[!UICONTROL 値]**&#x200B;列ヘッダーの下の値を重複クリックします。 **[!UICONTROL 値]**&#x200B;ドロップダウンリストが開きます。
 1. フィールドに `false` と入力します（または、ドロップダウンリストから「**[!UICONTROL false]**」を選択します）。
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
@@ -345,12 +347,12 @@ Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> のスムーズな実
 
 ジョブパラメータを調整して、ファイルアップロード時の処理を高速化できます。例えば、PSD ファイルをアップロードするものの、テンプレートとして処理しない場合は、レイヤー抽出を false（オフ）に設定できます。このような場合、調整されたジョブパラメータは `process=None&createTemplate=false` と表示されます。
 
-PDF ファイル、Postscript ファイル、PSD ファイルには、以下の「調整済み」ジョブパラメーターを使用することをお勧めします。
+Adobeでは、PDF、PostScript®およびPSDファイルに対して、次の「調整済み」ジョブパラメーターを使用することをお勧めします。
 
 | ファイルタイプ | 推奨されるジョブパラメーター |
 | ---| ---|
 | PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
-| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 <!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
@@ -369,7 +371,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
 
-   **[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やすと、Dynamic Media へのファイルの大量アップロードを適切にサポートできます。正確な値は、ハードウェア容量に依存します。初期移行または 1 回限りの一括アップロードなど、特定のシナリオでは、大きな値を使用できます。ただし、大きな値（コア数の 2 倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。そのため、特定の使用事例に基づいて値をテストし、調整する必要があります。
+   **[!UICONTROL 並列ジョブの最大数]**&#x200B;を増やすと、Dynamic Media へのファイルの大量アップロードを適切にサポートできます。正確な値は、ハードウェア容量によって異なります。 初回移行や1回限りのバルクアップロードなど、特定のシナリオでは、大きな値を使用できます。 ただし、大きな値（コア数の2倍など）を使用すると、他の同時アクティビティに悪影響を及ぼす可能性があることに注意してください。 そのため、特定の使用事例に基づいて値をテストし、調整します。
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -381,7 +383,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 #### Granite のワークフローキューの更新 {#updating-the-granite-workflow-queue}
 
-Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローでビデオを処理するために使用されます。
+Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Mediaでは、**[!UICONTROL Dynamic Mediaエンコードビデオ]**&#x200B;のワークフローでビデオを処理するのに使用しました。
 
 Granite のワークフローキューを更新するには：:
 
@@ -393,7 +395,7 @@ Granite のワークフローキューを更新するには：:
 
 1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
 
-   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4 コアサーバーでは、2 ワーカースレッドが割り当てられます。（0.0～1.0 の値は比率に基づき、1 より大きい数はワーカースレッドの数を割り当てます）。
+   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4コアサーバーでは、2つのワーカースレッドが割り当てられます。 （0.0 ～ 1.0の値は比率ベース、または1より大きい任意の数値によって、ワーカースレッドの数が割り当てられます）。
 
    ほとんどの事例では、デフォルト設定の 0.5 で十分です。
 
@@ -403,14 +405,14 @@ Granite のワークフローキューを更新するには：:
 
 #### Scene7 アップロード接続の更新 {#updating-the-scene-upload-connection}
 
-Scene7 アップロード接続の設定は、AEM Assets を Dynamic Media Classic サーバーと同期します。
+「Scene7アップロード接続」設定により、Experience ManagerアセットがDynamic Mediaクラシックサーバーに同期されます。
 
 Scene7 アップロード接続を更新するには：:
 
 1. `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl` に移動します。
-1. 「**[!UICONTROL Number of connections]**」フィールドおよび「**[!UICONTROL Active job timeout]**」フィールドで、必要に応じて数値を変更します。
+1. 「**[!UICONTROL 接続数]**」フィールド、または「**[!UICONTROL アクティブなジョブタイムアウト]**」フィールド、またはその両方で、必要に応じて数を変更します。
 
-   「**[!UICONTROL Number of connections]**」設定は、AEM が Dynamic Media へのアップロードで許可される HTTP 接続の最大数を制御します。通常、事前定義済みの値の 10 接続で十分です。
+   「**[!UICONTROL 接続数]**」設定は、Dynamic MediaへのアップロードにExperience ManagerできるHTTP接続の最大数を制御します。 通常、10個の接続の定義済み値で十分です。
 
    「**[!UICONTROL Active job timeout]**」設定は、アップロードされた Dynamic Media アセットが配信サーバーで公開されるまでの待機時間を決定します。デフォルトでは、この値は 2100 秒または 35 分です。
 
