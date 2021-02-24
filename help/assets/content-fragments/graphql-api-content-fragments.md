@@ -2,10 +2,10 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 89a51faa08adc1a87d86c8e280919b3a890aae8b
+source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
 workflow-type: tm+mt
 source-wordcount: '2935'
-ht-degree: 62%
+ht-degree: 61%
 
 ---
 
@@ -268,20 +268,20 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 
    ![GraphQL で使用するコンテンツフラグメントモデル](assets/cfm-graphqlapi-01.png "GraphQL で使用するコンテンツフラグメントモデル")
 
-1. 対応する GraphQLスキーマ（GraphiQL 自動生成ドキュメントからの出力）:
+1. 対応するGraphQLスキーマ（GraphiQLの自動ドキュメントからの出力）:
    ![コンテンツフラグメントモデルに基づく GraphQL スキーマ](assets/cfm-graphqlapi-02.png "コンテンツフラグメントモデルに基づく GraphQL スキーマ")
 
    この図では、生成された型 `ArticleModel` に複数の[フィールド](#fields)が含まれていることがわかります。
 
    * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
 
-   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付いています。
+   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、前に`_`が付いています。
 
 1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)を参照してください。
 
 AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
 
-Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間が節約され、安定性も確保されます。
+Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を確保できます。
 
 例えば、次のようになります。
 
@@ -321,8 +321,8 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します |
-| 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します |
+| 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
+| 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します。 |
 | 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
 | ブール値 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します |
