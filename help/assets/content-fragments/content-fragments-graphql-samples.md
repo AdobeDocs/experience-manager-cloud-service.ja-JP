@@ -2,10 +2,10 @@
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
 description: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ。
 translation-type: tm+mt
-source-git-commit: 972d242527871660d55b9a788b9a53e88d020749
+source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 70%
+source-wordcount: '1707'
+ht-degree: 68%
 
 ---
 
@@ -49,7 +49,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
    * [サンプルクエリ-会社のCEOおよび従業員の詳細](#sample-full-details-company-ceos-employees)を参照
 
-* モデルのフィールドに加えて、次のようなシステム生成フィールドがあります（フィールド名の先頭にアンダースコアが付きます）
+* モデルのフィールドに加えて、システム生成フィールドがいくつかあります（前にアンダースコアが付いています）。
 
    * コンテンツの場合：
 
@@ -59,7 +59,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [メタデータのサンプルクエリ — 賞のメタデータのリスト（タイトル：GB](#sample-metadata-awards-gb)）を参照
       * `_model` :コンテンツフラグメントモデルのクエリを許可（パスとタイトル）
          * 「[モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)」を参照してください。
-      * `_path`：リポジトリー内のコンテンツフラグメントへのパス
+      * `_path` :リポジトリ内のコンテンツフラグメントへのパス
          * [サンプルクエリ — 単一の特定の都市のフラグメント](#sample-single-specific-city-fragment)を参照
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
          * [参照が事前に取得された複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照
@@ -329,7 +329,7 @@ query {
 
 ### サンプルクエリ- 1つの特定の都市フラグメント{#sample-single-specific-city-fragment}
 
-これは、リポジトリー内の特定の場所にある 1 つのフラグメントエントリの詳細を返すクエリです。
+これは、リポジトリ内の特定の場所にある単一のフラグメントエントリの詳細を返すクエリです。
 
 **サンプルクエリ**
 
