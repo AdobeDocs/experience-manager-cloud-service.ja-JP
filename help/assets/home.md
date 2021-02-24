@@ -1,41 +1,41 @@
 ---
-title: Assets as a [!DNL Cloud Service] のガイド
-description: Adobe Experience Manager Assets as a [!DNL Cloud Service] に関するセルフヘルプリソースおよびドキュメントリンク
+title: '[!DNL Assets] as a [!DNL Cloud Service] ガイド'
+description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] セルフサービスのリソースとドキュメントのリンク'
 translation-type: tm+mt
-source-git-commit: 3207151a76c51637551907d15a34f1a6b7450d02
+source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 100%
+source-wordcount: '259'
+ht-degree: 54%
 
 ---
 
 
-# Assets as a [!DNL Cloud Service] のガイド {#aem-assets-guide}
+# [!DNL Assets] を [!DNL Cloud Service] ガイドとして  {#aem-assets-guide}
 
-以下に、Experience Manager Assets as a [!DNL Cloud Service] のセルフヘルプリソースを示します。
+[!DNL Experience Manager Assets]の[!DNL Cloud Service]のセルフヘルプリソースを以下に示します。
 
-## Assets に関する主要な記事 {#key-articles}
+## キー[!DNL Assets]記事{#key-articles}
 
 * [概要と新機能](overview.md)
 * [主要な変更点](/help/assets/assets-cloud-changes.md)
-* [AEM Assets as a [!DNL Cloud Service]](architecture.md) のアーキテクチャ
+* [ [!DNL Assets] AEM as a [!DNL Cloud Service]](architecture.md) のアーキテクチャ
 * [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
 
-## Experience Manager ガイド {#aem-guides}
+## [!DNL Experience Manager] ガイド  {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [Adobe Experience Manager as a [!DNL Cloud Service]  のホーム](/help/landing/home.md) | Experience Manager as a [!DNL Cloud Service] の完全なドキュメント。 |
-| [概要](/help/overview/home.md) | Experience Manager as a Cloud Service の概要と用語集。 |
+| [[!DNL Experience Manager] as a [!DNL Cloud Service] ホーム](/help/landing/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として完全にドキュメント化。 |
+| [概要](/help/overview/home.md) | [!DNL Cloud Service]としての[!DNL Experience Manager]の基本的な概要と用語集です。 |
 | [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止される機能および削除された機能、既知の問題について説明します。 |
-| [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe Experience Manager as a [!DNL Cloud Service] の中心概念について紹介します。 |
-| [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a [!DNL Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
-| [オンボーディング](/help/onboarding/home.md) | Experience Manager as a [!DNL Cloud Service] の基本を学ぶ - 重要なデータにアクセスし、保護します。 |
-| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a [!DNL Cloud Service] を使用したオーサリングおよび管理方法について説明します。 |
-| [Experience Manager as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) への移行 | Experience Manager as a [!DNL Cloud Service] への移行プロセスについて説明します。 |
-| [実装ユーザガイド](/help/implementing/home.md) | Experience Manager as a [!DNL Cloud Service] をカスタマイズ、開発およびデプロイします。 |
-| [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a [!DNL Cloud Service] にコネクタを統合する方法を説明します。 |
-| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a [!DNL Cloud Service] のバックエンド運用について説明します。 |
+| [中心概念](/help/core-concepts/home.md) | このガイドでは、新しいサービスのアーキテクチャを含む、[!DNL Experience Manager]のコア概念を[!DNL Cloud Service]として紹介します。 |
+| [セキュリティユーザーガイド](/help/security/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として扱う際の重要なセキュリティトピックを紹介します。 |
+| [オンボーディング](/help/onboarding/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として使い始める — 重要なデータにアクセスし保護する。 |
+| [Sites ユーザーガイド](/help/sites-cloud/home.md) | [!DNL Experience Manager Sites]を[!DNL Cloud Service]として作成、管理する方法を理解します。 |
+| [ [!DNL Experience Manager] ツールを [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | [!DNL Experience Manager]へのトランジションジャーニーを[!DNL Cloud Service]として理解します。 |
+| [実装ユーザガイド](/help/implementing/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]としてカスタマイズ、開発、展開します。 |
+| [コネクタユーザーガイド](/help/connectors/home.md) | コネクタを[!DNL Cloud Service]として[!DNL Experience Manager]に統合する方法を説明します。 |
+| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、[!DNL Experience Manager]を[!DNL Cloud Service]としてバックエンドで操作する方法について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager] as a [!DNL Cloud Service] の Commerce Integration Framework について説明します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
