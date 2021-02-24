@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: f4ac8168dcf394fa66460e6f4cffaff0ee6fdbab
+source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 49%
+source-wordcount: '634'
+ht-degree: 45%
 
 ---
 
@@ -48,7 +48,7 @@ AEM管理のCDN設定では、デフォルトで、実稼働環境用と非実�
 1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。
 1. ホストヘッダーを、AEM CDNの入力である接触チャネルドメインに設定します。 この値はアドビから取得されます。
 1. SNI ヘッダーを接触チャネルに送信します。ホストヘッダーと同様に、sni ヘッダーはドメイン接触チャネルです。
-1. トラフィックを AEM サーバーに正しくルーティングするために必要な `X-Edge-Key` を設定します。この値はアドビから取得されます。
+1. AEMサーバーへのトラフィックの正しいルーティングに必要な`X-Edge-Key`または`X-AEM-Edge-Key`を設定します（CDNがX-Edge-*をストリップする場合）。 この値はアドビから取得されます。AdobeCDNの入力に直接アクセスする場合（`X-Edge-Key`が存在しない場合はブロックする）は、Adobeに通知してください。
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
 
@@ -63,7 +63,7 @@ AEMが管理するCDNは、次の情報を含む各リクエストにヘッダ�
 * 国コード：`x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
 
-国コードの値は、[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明されるアルファ2コードです。
+国コードの値は、Alpha-2コード（[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明）です。
 
 大陸コードの値は次のとおりです。
 
