@@ -2,10 +2,10 @@
 title: コンテンツの HTTP/2 配信の FAQ
 description: HTTP/2 コンテンツ配信について説明します。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 66%
+source-wordcount: '786'
+ht-degree: 62%
 
 ---
 
@@ -13,6 +13,10 @@ ht-degree: 66%
 # コンテンツの HTTP/2 配信の FAQ{#http-delivery-of-content-faq}
 
 コンテンツの HTTP/2 配信が可能になったことをお知らせします。HTTP/2を使用する場合、全体的なパフォーマンスが向上します。
+
+>[!NOTE]
+>
+>この機能を使用するには、Adobe Experience ManagerDynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 この機能では、その他のカスタムCDNはサポートされません。
 
 ## HTTP/2 とは {#what-is-http}
 
@@ -40,7 +44,7 @@ HTTP/2 とその利点については、次の Web サイトで簡潔に説明�
 HTTP/2 を使用するには、以下の要件を満たしている必要があります。
 
 * リッチメディアリクエストにセキュア HTTPS を使用している。
-* アドビ製品にバンドルされたコンテンツ配信ネットワーク（CDN）を Dynamic Media Classic ライセンスの一部として使用している。
+* Dynamic Mediaクラシックライセンスの一部として、AdobeバンドルCDN(コンテンツ配信ネットワーク)を使用します。
 * 汎用の Dynamic Media ドメイン（`images.company.com`、`mycompany.scene7.com`、`s7d1.scene7.com` のいずれか）ではなく、専用ドメイン（`s7d2.scene7.com` または `s7d13.scene7.com`）を使用している。
 
    ドメインを探すには、[Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
