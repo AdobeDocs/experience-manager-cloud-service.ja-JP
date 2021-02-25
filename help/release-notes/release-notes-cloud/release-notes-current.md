@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 6f48b5daa5b47ad19db8b3431350111364f962fc
+source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 16%
+source-wordcount: '961'
+ht-degree: 11%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 16%
 
 ## リリース日 {#release-date}
 
-Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021年2月3日です。
-次のリリース(2021.2.0)は、2021年2月25日に予定されています。
+Cloud Service2021.2.0の[!DNL Adobe Experience Manager]のリリース日は2021年2月25日です。
+次のリリース(2021.3.0)は、2021年3月25日に予定されています。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
@@ -51,19 +51,24 @@ Cloud Service2021.1.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] は、スマートタグ機能を [!DNL Cloud Service] 拡張して、テキストベースのアセット内のキーワードとエンティティの識別をサポートしています。テキストを識別し、インデックスを作成し、メタデータとして使用できるようにして、設定を行うことなく検索体験を向上させます。 「[スマートタグ](/help/assets/smart-tags.md)」を参照してください。
+## [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* MXFファイル形式がサポートされるようになりました。 [サポートされているファイル形式](/help/assets/file-format-support.md#video-formats)を参照してください。
+* アセットは[!DNL Experience Manager Assets Brand Portal]を使用してソースにできます。 新しいマーケティングキャンペーン、フォトシュート、プロジェクトに関して、エージェンシーユーザーからアセットをソース化するのに役立ちます。
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+<!-- TBD: refine this list of features and enh. for Feb release.
 
-### 新機能 {#what-is-new-commerce}
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
 
-* 製品エクスペリエンス管理：アセットおよびエクスペリエンスフラグメント用の新しい「コマース」プロパティタブ。 このタブでは、製品やカテゴリをアセットやエクスペリエンスフラグメントにリンクできます。 また、このタブには、リンクされた製品/カテゴリのリアルタイムデータと、製品コンソールに詳細を表示するリンクが表示されます。
+Indicators for expired, approved, and rejected statuses now available for assets in Column view.
 
-* 最新のCIFコアコンポーネントバージョンv1.7.0が含まれるCIFベニアリファレンスサイト — 2021.02.02をリリースしました。詳細は、[CIFベニアリファレンスサイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02)を参照してください。
+Ability to select a root path. select if a minimum number of tags is required. 
 
-* CIF コアコンポーネント v1.7.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0)を参照してください。
+Add a Boolean or radio widget type to metadata schema setup. -->
+
+## [!DNL Assets] {#bug-fixes-assets}のバグ修正
+
+* 名前の競合を解決した後に既存のアセットの新しいバージョンを作成すると、元のアセットのメタデータが上書きされます。 （CQ-4313594）
+* 注釈テキストが長いアセットを印刷すると、空白がある場合でも、注釈テキストはトリミングされます。 （CQ-4314101）
 
 ## Cloud Manager {#cloud-manager}
 
@@ -101,23 +106,6 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 * 場合によっては、内部の問題が原因で環境の削除が停止することがあります。
 
 * 一部のパイプラインエラーは、誤ってパイプラインエラーとして報告されました。
-
-## AEM FoundationとしてのCloud Service{#aem-as-a-cloud-service-foundation}
-
-### 新機能 {#what-is-new-foundation}
-
-* サーバー間認証API呼び出し — 適切なアクセストークンを生成して、認証済みのサーバー間API呼び出しを外部アプリケーションとAEMの間でCloud Service環境として行います。 詳しくは、[ドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)を読むか、[チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)を参照してください。
-
-### SDK ビルドアナライザー {#sdk-build-analyzers}
-
-AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグインでは、依存関係の欠落など、Maven プロジェクトの問題を検出します。これを使用すると、ローカル開発中に、Cloud Manager でクラウド環境にデプロイする前に開発者が問題を見つけることができます。
-
-このリリースでは、2つの新しいアナライザーが追加されました。
-
-* リポイント分析器
-* bundle-nativecode
-
-詳しくは、[ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)を参照してください。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
