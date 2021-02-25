@@ -2,10 +2,10 @@
 title: Dynamic Media でのホットリンク保護の有効化
 description: Dynamic Media でホットリンク保護を有効化する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 58%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -16,4 +16,8 @@ ht-degree: 58%
 
 [Adobe](https://helpx.adobe.com/jp/support.html) のお客様は、CDNレベルで転送者フィルタを設定できます。これにより、ドメインで許可されたWebサイトのリスト上のWebサイトにのみDynamic Mediaのコンテンツが提供されます。
 
-ホットリンク保護を機能させるには、アドビ製品にバンドルされた CDN を使用する必要があります。ホットリンク保護を有効化するには、Dynamic Media アカウントの設定変更を要求するサポートチケットを管理者が作成する必要があります。ホットリンク保護を有効化するための追加費用は発生しません。
+>[!NOTE]
+>
+>この機能を使用するには、Adobe Experience ManagerDynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 この機能では、その他のカスタムCDNはサポートされません。
+
+ホットリンク保護を有効にするには、管理者がサポートチケットを作成して、Dynamic Mediaアカウントの設定変更をリクエストする必要があります。 ホットリンク保護を有効にするための追加費用は発生しません。
