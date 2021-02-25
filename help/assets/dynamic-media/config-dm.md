@@ -2,10 +2,10 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: a11ce4c60ddfa345a3be20e3cc4f99ce86d1e84b
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '3827'
-ht-degree: 65%
+source-wordcount: '3893'
+ht-degree: 64%
 
 ---
 
@@ -18,13 +18,26 @@ ht-degree: 65%
 
 以下のアーキテクチャ図に Dynamic Media の仕組みを示します。
 
-新しいアーキテクチャでは、AEMは主要なソースアセットを管理し、Dynamic Mediaと同期してアセットの処理と公開を行います。
+新しいアーキテクチャでは、Experience Managerは主要なソースアセットを管理し、Dynamic Mediaと同期してアセットの処理と公開を行います。
 
 1. プライマリソースアセットが AEM にアップロードされると、Dynamic Media にレプリケートされます。その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
 1. レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスおよびプレビューできます（バイナリは AEM インスタンスに送り返されません）。
 1. コンテンツの公開と承認の準備が整ったら、Dynamic Mediaサービスはコンテンツを配信サーバーにプッシュして、CDNでコンテンツをキャッシュするようトリガーします。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
+
+>[!NOTE]
+>
+>次の機能のリストでは、Adobe Experience Manager-Dynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 これらの機能では、その他のカスタムCDNはサポートされません。
+>
+>* [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
+>* [キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+>* [ホットリンクの保護](/help/assets/dynamic-media/hotlink-protection.md)
+>* [HTTP/2コンテンツの配信](/help/assets/dynamic-media/http2faq.md)
+>* [Dynamic MediaビューアとAdobe AnalyticsおよびExperience Platform Launchの統合](/help/assets/dynamic-media/launch.md)
+>* CDNレベルでのURLリダイレクト
+>* Akamai ChinaCDN(中国での最適な配信のため)
+
 
 <!-- OBSOLETE CONTENT
 
