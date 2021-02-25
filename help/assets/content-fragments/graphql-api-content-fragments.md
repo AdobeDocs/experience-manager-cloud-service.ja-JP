@@ -2,9 +2,9 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: e6553e5f46d87c7214fdfd888a984ca725c773d9
+source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2901'
 ht-degree: 61%
 
 ---
@@ -139,14 +139,6 @@ AEMでGraphQLクエリを有効にするには、エンドポイントを`/conte
 
 * ノード`cq:graphql`と`global`はタイプ`sling:Folder`でなければなりません。
 * ノード`endpoint`はタイプ`nt:unstructured`で、`graphql/sites/components/endpoint`の`sling:resourceType`を含む必要があります。
-
->[!CAUTION]
->
->一部のリリースでは、現在、エンドポイントに既知の問題があります。
->
->* 使用するリリースに応じて、`cq:graphql`エントリは&#x200B;**サイト**コンソールに表示されます。を最上位レベルに置きます。
-   >  これは使用しないでください。
-
 
 >[!CAUTION]
 >
