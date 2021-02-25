@@ -4,9 +4,9 @@ user-guide-title: AEM as a Cloud Service のリリースノート
 breadcrumb-title: リリースノート
 user-guide-description: このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。
 translation-type: tm+mt
-source-git-commit: 137d8f6c432e4d5dea744c96e01782e81bd4cfee
+source-git-commit: fe26fe183c437d6ffe18e1db7fcdb74ad9448982
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '107'
 ht-degree: 100%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 100%
 + [リリース情報](/help/release-notes/home.md)
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   + 2021 {#2021}
+      + [リリースノート（2021.1.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
       + [リリースノート（2020.12.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
       + [リリースノート（2020.11.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-11-0.md)
