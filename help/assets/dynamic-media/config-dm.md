@@ -2,9 +2,9 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
-source-wordcount: '3893'
+source-wordcount: '3883'
 ht-degree: 64%
 
 ---
@@ -28,13 +28,12 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->次の機能のリストでは、Adobe Experience Manager-Dynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 これらの機能では、その他のカスタムCDNはサポートされません。
+>次の機能のリストでは、Adobe Experience Manager-Dynamic Mediaに組み込まれている標準搭載のCDNを使用する必要があります。 これらの機能では、その他のカスタムCDNはサポートされません。
 >
 >* [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
 >* [キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [ホットリンクの保護](/help/assets/dynamic-media/hotlink-protection.md)
 >* [HTTP/2コンテンツの配信](/help/assets/dynamic-media/http2faq.md)
->* [Dynamic MediaビューアとAdobe AnalyticsおよびExperience Platform Launchの統合](/help/assets/dynamic-media/launch.md)
 >* CDNレベルでのURLリダイレクト
 >* Akamai ChinaCDN(中国での最適な配信のため)
 
