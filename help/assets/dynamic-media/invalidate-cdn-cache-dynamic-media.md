@@ -2,10 +2,10 @@
 title: Dynamic Media を使用した CDN キャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
-source-git-commit: 77e270b354e7e99aa2e7ab88ddc8528ad0c4ade0
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 97%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 Dynamic Media アセットは、顧客との配信を高速化するために、CDN（コンテンツ配信ネットワーク）によってキャッシュされます。ただし、これらのアセットを更新する場合に、その変更を Web サイトに即座に反映させたいことがあります。CDN キャッシュの削除または無効化をおこなうと、Dynamic Media によって配信されるアセットをすばやく更新できます。TTL（有効期限）の値（デフォルトは 10 時間）を使用してキャッシュの有効期限が切れるのを待つ代わりに、Dynamic Media ユーザーインターフェイスからリクエストを送信し、キャッシュの有効期限を数分に設定できます。
 
->[!IMPORTANT]
+>[!NOTE]
 >
->この機能を使用するには、AEM Dynamic Media に組み込まれている標準搭載の CDN を使用する必要があります。その他のカスタム CDN はサポートされません。<!-- If you are using Dynamic Media in AEM 6.5, Service Pack 5 or earlier to invalidate the CDN cache [use the steps found here](/help/assets/invalidate-cdn-cache-dm-classic.md). -->
+>この機能を使用するには、Adobe Experience ManagerDynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 この機能では、その他のカスタムCDNはサポートされません。
 
 [Dynamic Media のキャッシュの概要](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)も参照してください。
 
