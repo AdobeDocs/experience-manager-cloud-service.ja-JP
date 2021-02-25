@@ -2,17 +2,21 @@
 title: Dynamic Media Classic を使用した CDN キャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 93%
+source-wordcount: '691'
+ht-degree: 84%
 
 ---
 
 
 # Dynamic Media Classic を使用した CDN キャッシュの無効化 {#invalidating-your-cdn-cached-content}
 
-CDN を使用して Dynamic Media アセットをキャッシュすることで、高速配信が可能になります。ただし、あるアセットを更新する場合に、変更をすぐに適用したいことがあります。コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、Dynamic Media で配信されるアセットをすばやく更新できます。キャッシュが期限切れになるのを待つ必要はありません。
+Dynamic Mediaアセットは、高速配信を実現するために、CDN(コンテンツ配信ネットワーク)によってキャッシュされます。 ただし、あるアセットを更新する場合に、変更をすぐに適用したいことがあります。CDNキャッシュコンテンツを無効にすると、キャッシュの期限が切れるのを待たずに、Dynamic Mediaから配信されるアセットをすばやく更新できます。
+
+>[!NOTE]
+>
+>この機能を使用するには、Adobe Experience ManagerDynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 この機能では、その他のカスタムCDNはサポートされません。
 
 >[!IMPORTANT]
 >
