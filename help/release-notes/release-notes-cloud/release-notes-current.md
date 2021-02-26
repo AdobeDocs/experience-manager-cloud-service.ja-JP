@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: ad80ea25abf06fd18dd781641f215e134a18a037
+source-git-commit: a93db92689928a900662a39b11bb5a7ea9724e62
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 11%
+source-wordcount: '1017'
+ht-degree: 10%
 
 ---
 
@@ -53,22 +53,18 @@ Cloud Service2021.2.0の[!DNL Adobe Experience Manager]のリリース日は2021
 
 ## [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* アセットは[!DNL Experience Manager Assets Brand Portal]を使用してソースにできます。 新しいマーケティングキャンペーン、フォトシュート、プロジェクトに関して、エージェンシーユーザーからアセットをソース化するのに役立ちます。
+* [!DNL Brand Portal]には、新しいダウンロード設定が導入されています。この設定を使用すると、フォルダーやコレクションなどをダウンロードする際に、アセットごとに個別のフォルダーを作成できます。 [ダウンロード設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)を参照してください。
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
-
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
-
-Ability to select a root path. select if a minimum number of tags is required. 
-
-Add a Boolean or radio widget type to metadata schema setup. -->
+Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  -->
 
 ## [!DNL Assets] {#bug-fixes-assets}のバグ修正
 
 * 名前の競合を解決した後に既存のアセットの新しいバージョンを作成すると、元のアセットのメタデータが上書きされます。 （CQ-4313594）
 * 注釈テキストが長いアセットを印刷すると、空白がある場合でも、注釈テキストはトリミングされます。 （CQ-4314101）
+* 複数のアセットを選択してプロパティを更新すると、エラーが発生したり、選択解除されたアセットのプロパティが更新されたりする場合があります。 （CQ-4316532）
+* [!UICONTROL アセット管理者の検索レール]を開こうとすると、ページは空白のままになり、[!UICONTROL 編集]/[!UICONTROL 設定]をクリックするとエラーが発生します。 （CQ-4315079）
 
 ## Cloud Manager {#cloud-manager}
 
