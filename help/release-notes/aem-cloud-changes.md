@@ -2,10 +2,10 @@
 title: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 description: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 translation-type: tm+mt
-source-git-commit: c1014098cecf3c3f86a7af844801fb1202864b51
+source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 93%
 
 ---
 
@@ -65,11 +65,10 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ## パブリッシュリポジトリに対する変更は禁止 {#changes-to-publish-repo}
 
-AEM as a Cloud Service では、パブリッシュリポジトリを直接変更することはできません。オンプレミス AEM または AMS 上の AEM の以前のバージョンでは、パブリッシュリポジトリ内のコードを直接変更して、例えばユーザーの作成、ユーザープロファイルの更新、ノードの作成などをおこなうことができました。この操作はおこなえなくなりましたが、代わりに次の方法を使用できます。
+発行層の`/home`フォルダーの下の変更以外に、発行Cloud Serviceーに直接変更を加えることはできません。 以前のバージョンのオンプレミスAEMまたはAMS上のAEMでは、コードの変更を発行リポジトリに直接行うことができました。 次の方法で、一部の制限を緩和できます。
 
 * コンテンツおよびコンテンツベースの設定については、オーサーインスタンス上で変更をおこなって公開します。
 * コードと設定については、Git リポジトリ内で変更をおこない、CI/CD パイプラインを実行して変更をロールアウトします。
-* フォーム送信やプロファイルデータなどのユーザー関連データについては、Experience Cloud プラットフォームまたは他のサードパーティ製セッション対応ストアの統一プロファイルサービスを利用します。
 
 ## カスタム実行モードは禁止 {#custom-runmodes}
 
