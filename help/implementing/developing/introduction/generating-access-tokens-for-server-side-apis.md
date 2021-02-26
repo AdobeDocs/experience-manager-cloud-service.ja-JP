@@ -2,9 +2,9 @@
 title: サーバー側APIのアクセストークンの生成
 description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
 translation-type: tm+mt
-source-git-commit: 47296bc734dffb943be37b61ddce6b505d57d6b5
+source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -141,4 +141,11 @@ Cloud Service環境として、AEM以外のアプリケーションからAEMに�
 
 ## サービス資格情報の失効{#service-credentials-revocation}
 
-JWTベアラトークンを取り消す必要がある場合は、カスタマーサポートにリクエストを送信してください。
+資格情報を取り消す必要がある場合は、次の手順に従って、カスタマーサポートにリクエストを送信する必要があります。
+
+1. ユーザーインターフェイスでAdobe Admin Consoleのテクニカルアカウントユーザーを無効にします。
+   * Cloud Managerで、**...**&#x200B;ボタンをクリックします。 これにより、製品のプロファイルページが開きます
+   * 次に、**AEM Users**&#x200B;プロファイルをクリックして、ユーザーのリストを表示します
+   * 「**API Credentials**」タブをクリックし、適切なテクニカルアカウントユーザーを探して削除します
+2. カスタマーサポートに連絡し、特定の環境のサービス資格情報の削除をリクエストします
+3. 最後に、このドキュメントで説明されているとおり、秘密鍵証明書を再び生成できます。 また、作成した新しいテクニカルアカウントユーザーに適切な権限があることも確認してください。
