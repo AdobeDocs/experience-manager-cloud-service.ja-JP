@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: e9dd057f3389264a7743d16133f66a9e944d13b1
+source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 45%
+source-wordcount: '644'
+ht-degree: 44%
 
 ---
 
@@ -63,7 +63,7 @@ AEMが管理するCDNは、次の情報を含む各リクエストにヘッダ�
 * 国コード：`x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
 
-国コードの値は、Alpha-2コード（[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明）です。
+国コードの値は、[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明されるアルファ2コードです。
 
 大陸コードの値は次のとおりです。
 
@@ -75,4 +75,4 @@ AEMが管理するCDNは、次の情報を含む各リクエストにヘッダ�
 * オクセアニア
 * 南アメリカ南部
 
-この情報は、リクエストの接触チャネル（国）に基づいて別のURLにリダイレクトするなどの使用例に役立ちます。 ただし、この使用例ではリダイレクトは様々なのでキャッシュしないでください。 必要に応じて、`Cache-Control: private`を使用してキャッシュを防ぐことができます。 [キャッシュ](/help/implementing/dispatcher/caching.md#html-text)も参照してください。
+この情報は、リクエストの接触チャネル（国）に基づいて別のURLにリダイレクトするなどの使用例に役立ちます。 地域情報に依存するキャッシュ応答には、Varyヘッダーを使用します。 例えば、特定の国のランディングページにリダイレクトする場合は、常に`Vary: x-aem-client-country`を含める必要があります。 必要に応じて、`Cache-Control: private`を使用してキャッシュを防ぐことができます。 [キャッシュ](/help/implementing/dispatcher/caching.md#html-text)も参照してください。
