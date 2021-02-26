@@ -2,16 +2,16 @@
 title: AEM Commerce as a Cloud Service - はじめに
 description: 実行中の AEM as a Cloud Service 環境にコマース対応の AEM プロジェクトをデプロイする方法を説明します。Adobe Cloud Manager の機能と CI／CD パイプラインを使用すると、実行中の環境に対する Venia 参照ストアフロントを構築できます。
 topics: Commerce
-feature: Commerce Integration Framework, Cloud Manager
+feature: Commerce Integration Framework、Cloud Manager
 version: cloud-service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 7a26596b00f276404934e467490ff79d08b0e1d0
+source-git-commit: 05242f0ca4168e220a4b83436da4daa0013edfaf
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 1. AEM Commerce as a Cloud Service を有効にし、CIF アドオンをプロビジョニングする
 2. AEM Commerce as a Cloud Service を Magento 環境に接続する
 
-最初の手順はアドビがおこないます。プロビジョニングプロセスの一部として、IMS 組織、Magento 環境の GraphQL エンドポイント URL などの情報を入力する必要があります。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
+最初のオンボーディングステップはAdobeが行います。 価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
 CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、新しく作成する必要があります。詳しくは、「[プログラムの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)」を参照してください。
 
