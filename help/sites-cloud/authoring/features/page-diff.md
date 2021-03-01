@@ -2,7 +2,7 @@
 title: ページの差分
 description: ページの差分表示を使用すると、2 つのページを並べて比較し、差分を強調表示できます。
 translation-type: tm+mt
-source-git-commit: b405e49cd883df1e2e9768bb9e4d6908afc443e2
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 100%
@@ -29,9 +29,9 @@ ht-degree: 100%
 並列比較による差分表示では、次のものを比較できます。
 
 * [バージョン](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - ページの以前のバージョンとその現在の状態
-* ライブコピー - ライブコピーとそのブループリント <!-- [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy with its Blueprint-->
+* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)ライブコピー - ライブコピーとそのブループリント
 * [ローンチ](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - ローンチとそのソース
-* 言語コピー - （再）翻訳前と（再）翻訳後のページ <!-- [Language Copies](/help/sites-administering/tc-manage.md#comparing-language-copies) - A page before and after (re-)translation-->
+* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)言語コピー - （再）翻訳前と（再）翻訳後のページ
 
 それらのコンテキスト内で差分の確認を開始する方法については、それぞれのトピックを参照してください。
 
