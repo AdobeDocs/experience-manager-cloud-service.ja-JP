@@ -2,10 +2,10 @@
 title: ローンチの編集
 description: 'ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。 '
 translation-type: tm+mt
-source-git-commit: 914eb7f7b040b99c11d9f109549eb13868058320
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ### ライブコピーへのローンチページサブジェクトの編集 {#editing-launch-pages-subject-to-a-live-copy}
 
-ローンチがライブコピーに基づく場合は、次のようになります。<!--If your launch is based upon a [live copy](/help/sites-administering/msm.md) then you will:-->
+起動が[ライブコピー](/help/sites-cloud/administering/msm/overview.md)に基づいている場合は、次の操作を行います。
 
 * コンポーネント（コンテンツやプロパティ）を編集するときにロック記号（小さな鍵アイコン）が表示されます。
 * 「**ライブコピー**」タブが&#x200B;**ページのプロパティ**&#x200B;に表示されます。
@@ -37,7 +37,7 @@ ht-degree: 100%
 * 閉じられた鍵アイコンをクリックするとこの同期が解除され、ローンチのコンテンツを新たに更新できるようになります。一度ロックを解除する（鍵アイコンを開く）と、ソースブランチ内の同じ場所に対して加えられた変更により、ユーザーが加えた変更が上書きされることがなくなります。
 * 特定のページの継承を&#x200B;**一時停止**（および&#x200B;**再開**）します。
 
-詳しくは、「ライブコピーのコンテンツの変更」を参照してください。<!--See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.-->
+詳しくは、「[ライブコピーのコンテンツの変更](/help/sites-cloud/administering/msm/creating-live-copies.md)」を参照してください。
 
 ## ローンチページとそのソースページの比較 {#comparing-a-launch-page-to-its-source-page}
 
