@@ -2,7 +2,7 @@
 title: プロジェクトワークフローの操作
 description: すぐに使用可能な様々なプロジェクトワークフローが用意されています。
 translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
@@ -35,10 +35,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->&amp;ast; これらのワークフローは、プロジェクトの&#x200B;**ワークフロー**&#x200B;タイルからは開始できません。「アセットの言語コピーの作成」を参照してください。
-<!--
->&ast; These workflows are not started from the **Workflow** tile in Projects. See [Creating Language Copies for Assets.](/help/sites-administering/tc-manage.md)
--->
+>&amp;ast; これらのワークフローは、プロジェクトの&#x200B;**ワークフロー**&#x200B;タイルからは開始できません。[アセットの言語コピーの作成](/help/sites-cloud/administering/translation/managing-projects.md)を参照してください。
 
 ワークフローを開始および完了する手順は、どのワークフローを選択した場合も同じです。手順が変わるだけです。
 
@@ -48,7 +45,7 @@ AEM でのワークフローの操作について詳しくは、以下を参照�
 
 * [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 * [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)
-* ワークフローの設定 <!--* [Configuring workflows](/help/sites-administering/workflows.md)-->
+* [ワークフローの設定](/help/sites-cloud/administering/workflows-administering.md)
 
 このセクションでは、プロジェクトに使用可能なワークフローについて説明します。
 
