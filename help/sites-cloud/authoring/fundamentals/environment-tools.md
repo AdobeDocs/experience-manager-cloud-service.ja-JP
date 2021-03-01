@@ -2,10 +2,10 @@
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2152'
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
    ![コンテンツツリー編集ボタン](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* ライブコピーの一部を構成するページで、コンポーネントが別のページから継承される場合、継承オプションを含め、オプションの選択肢は少なくなります。<!--A page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page:-->
+* [livecopy](/help/sites-cloud/administering/msm/overview.md)に含まれるページで、コンポーネントは別のページから継承されます。
 
 >[!NOTE]
 >
@@ -225,9 +225,9 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 * **被リンク**（当該ページを参照するページのリストと、特定のリンクを選択したときにそれらのページのいずれかを&#x200B;**編集**&#x200B;できる直接アクセスを提供）
 * **参照**&#x200B;コンポーネントを使用した借りたコンテンツおよび貸したコンテンツのインスタンス（ここから参照元／参照先ページに移動可能）
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)（関連するローンチへのアクセスを提供）
-* ライブコピー（選択したリソースに基づくすべてのライブコピーのパスを表示）<!--[Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.-->
-* ブループリント（詳細と各種アクションを提供）<!--[Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions-->
-* 言語コピー（詳細と各種アクションを提供）<!--[Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions-->
+* [](/help/sites-cloud/administering/msm/overview.md)ライブコピー（選択したリソースに基づくすべてのライブコピーのパスを表示）
+* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，詳細と様々なアクションを提供
+* [言語コピー](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)（詳細と各種アクションを提供）
 
 ## イベント - タイムライン {#events-timeline}
 
@@ -248,7 +248,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 ![ページ情報オプション](/help/sites-cloud/authoring/assets/page-information.png)
 
 * [プロパティを開く](/help/sites-cloud/authoring/fundamentals/page-properties.md)
-* ページをロールアウト <!--[Rollout Page](/help/sites-administering/msm.md#msm-from-the-ui)-->
+* [ページをロールアウト](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [ワークフローを開始](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [ページをロック](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
 * [ページを公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
@@ -283,6 +283,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 >* 一部のモードにアクセスするには、適切な権限または特権が必要です。
 >* 開発者モードは、スペースの制約により、モバイルデバイスでは利用できません。
 >* [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)（`Ctrl-Shift-M`）で、**プレビュー**&#x200B;と、現在選択されているモード（**編集モード**、**レイアウトモード**&#x200B;など）を切り替えることができます。
+
 >
 
 
