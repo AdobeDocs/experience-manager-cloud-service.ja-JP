@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 translation-type: tm+mt
-source-git-commit: c3fd7b5a6311eded51b13ab9fea1ca6af4a050eb
+source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 65%
+source-wordcount: '1909'
+ht-degree: 64%
 
 ---
 
@@ -192,11 +192,10 @@ ht-degree: 65%
 
 ### ブループリント {#blueprint}
 
-このタブは、設計図として機能するページに対してのみ表示されます。
+このタブは、設計図として機能するページに対してのみ表示されます。 ライブコピーの基盤となる設計図は、[マルチサイト管理の一部です。](/help/sites-cloud/administering/msm/overview.md)
 
 * **現在のライブコピー**  — このブループリントページに基づくリストページ（ライブコピー）
 
-   <!--Define properties for a Blueprint page within [multi-site management](/help/sites-administering/msm.md).-->
 * **ロールアウト設定**  — 変更がライブコピーに反映される状況を制御します。
 
 ### ライブコピー {#live-copy}
