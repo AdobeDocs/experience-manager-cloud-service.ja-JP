@@ -2,7 +2,7 @@
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 translation-type: tm+mt
-source-git-commit: 305f584d89bc92f89b3ddaa49bb5da2f10e567db
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2864'
 ht-degree: 100%
@@ -450,8 +450,8 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 **参照**&#x200B;には、選択したリソースへの関係が表示されます。例えば、**サイト**&#x200B;コンソールでは、ページの[参照](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)には次が表示されます。
 
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
-* ライブコピー<!--[Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)-->
-* 言語コピー<!--[Language copies](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)-->
+* [ライブコピー](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
+* [言語コピー](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
 * コンテンツ参照：
 
    * 他のページから選択ページへのリンク
