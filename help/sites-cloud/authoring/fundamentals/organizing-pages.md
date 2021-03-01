@@ -2,7 +2,7 @@
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 100%
@@ -130,10 +130,7 @@ Web サイトの構造は、コンテンツページを保持するツリーと�
 >
 >ISO-639-1 で定義されている 2 文字コードをページ名として使用することは避けてください（言語ルートの場合を除く）。
 >
->詳しくは、翻訳するコンテンツの準備を参照してください。
-<!--
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
--->
+>詳しくは、[翻訳するコンテンツの準備](/help/sites-cloud/administering/translation/preparation.md)を参照してください。
 
 ### テンプレート {#templates}
 
