@@ -2,10 +2,10 @@
 title: プロジェクト
 description: プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化でき、共通の共有環境でプロジェクトを簡単に管理できます
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 4f52c08674148776c29c0a3130c60a34f6ed30cd
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -158,7 +158,7 @@ AEM には、次の 3 種類の既製のテンプレートが付属していま�
 
 * シンプルなプロジェクト - 他のカテゴリに適合しない、あらゆるプロジェクト用のリファレンスサンプルです（キャッチオール）。3 つの基本的な役割（所有者、エディター、監視者）と 4 つのワークフロー（プロジェクト承認、ローンチをリクエスト、ランディングページをリクエスト、電子メールをリクエスト）が含まれます。
 * メディアプロジェクト - メディア関連アクティビティ用のリファレンスサンプルプロジェクトです。いくつかのメディア関連プロジェクトの役割（フォトグラファー、エディター、コピーライター、デザイナー、所有者、監視者）が含まれます。メディアコンテンツに関連する 2 つのワークフロー（コピーをリクエスト（テキストのリクエストおよびレビュー用）と撮影した製品写真（製品に関連する写真の管理用））も含まれます。
-* 翻訳プロジェクト - 翻訳関連アクティビティを管理するためのリファレンスサンプルです。3 つの基本的な役割（所有者、エディター、監視者）が含まれます。ワークフローユーザーインターフェイスでアクセスする 2 つのワークフローが含まれます。<!--* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.-->
+* A [翻訳プロジェクト](/help/sites-cloud/administering/translation/overview.md) — 翻訳関連アクティビティを管理するためのリファレンスサンプル。 3 つの基本的な役割（所有者、エディター、監視者）が含まれます。ワークフローユーザーインターフェイスでアクセスする 2 つのワークフローが含まれます。
 
 選択したテンプレートに基づいて、特にユーザーの役割とワークフローに関して使用可能なオプションは異なります。
 
