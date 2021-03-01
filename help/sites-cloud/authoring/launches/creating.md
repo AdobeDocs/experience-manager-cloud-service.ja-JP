@@ -2,10 +2,10 @@
 title: ローンチの作成
 description: 今後のアクティベートのために既存の Web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 translation-type: tm+mt
-source-git-commit: 9e9f2bbed463143f821cc7aa0d50f37f892f3e9b
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '1045'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 * タイトルは[参照](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)レールに表示されます。作成者はそこからローンチにアクセスして作業できます。
 * デフォルトで、ソースページの子ページがローンチに含まれています。希望に応じて、ソースページのみを使用することもできます。
-* デフォルトでは、ライブコピーによってソースページの変更に合わせてローンチページが自動的に更新されます。静的なコピーを作成して自動更新をおこなわないように指定できます。<!--By default, [Live Copy](/help/sites-administering/msm.md) automatically updates the launch pages as the source pages change. You can specify that a static copy is created to prevent automatic changes.-->
+* デフォルトでは、[ライブコピー](/help/sites-cloud/administering/msm/overview.md)によってソースページの変更に合わせてローンチページが自動的に更新されます。静的なコピーを作成して自動更新をおこなわないように指定できます。
 
 オプションとして、**ローンチ日**（と時間）を指定して、ローンチページを昇格およびアクティベートするタイミングを定義できます。ただし、**ローンチ日**&#x200B;は&#x200B;**実稼動準備完了**&#x200B;フラグと組み合わせた場合のみ機能します（[ローンチ設定の編集](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration)を参照）。アクションが実際に自動的におこなわれるようにするには、両方を設定する必要があります。
 
@@ -26,7 +26,8 @@ ht-degree: 100%
 >
 >* `/libs/launches/templates/outofscope`
 >
->これらのページは編集できません。次のメッセージが表示されます。
+>
+これらのページは編集できません。次のメッセージが表示されます。
 >
 >* **このページはローンチに含まれていません。実稼動ページに移動**
 
@@ -83,7 +84,7 @@ ht-degree: 100%
    * **ローンチタイトル**：ローンチの名前。作成者にとって意味のある名前にしてください。
    * **既存のコンテンツを使用**：元のコンテンツを使用してローンチを作成します。
    * **新しいテンプレートを使用してページを置き換える**：詳しくは、[新しいテンプレートでのローンチの作成](#create-launch-with-new-template)を参照してください。
-   * **ソースページのライブデータを継承**：ソースページに変更があったときにローンチページのコンテンツを自動的に更新する場合は、このオプションを選択します。このオプションでは、ローンチをライブコピーにすることでこれを実現します。デフォルトでは、このオプションが選択されています。<!--Select this option to automatically update the content of launch pages when the source pages change. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md). By default, this option is selected.-->
+   * **ソースページのライブデータを継承**：ソースページに変更があったときにローンチページのコンテンツを自動的に更新する場合は、このオプションを選択します。このオプションは、起動を[ライブコピー](/help/sites-cloud/administering/msm/overview.md)にすることでこれを実現します。 デフォルトでは、このオプションは選択されています。—>
    * **ローンチ日**：ローンチコピーがアクティベートされる日付と時間（「**実稼動準備完了**」フラグによって変わります。[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください）。
 
    ![ローンチのプロパティ](/help/sites-cloud/authoring/assets/launches-properties.png)
