@@ -2,10 +2,10 @@
 title: モバイルデバイス用のページのオーサリング
 description: モバイル用にオーサリングするときは、複数のエミュレーターを切り替えて、エンドユーザー向けの表示を見ることができます。
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 98%
 
 ---
 
@@ -20,13 +20,11 @@ Adobe Experience Manager ページはレスポンシブレイアウトに基づ�
 
 >[!NOTE]
 >
->既存の標準サイトに基づいたモバイルサイトを作成するには、標準サイトのライブコピーを作成します。「様々なチャネル用のライブコピーの作成」を参照してください。
+>既存の標準サイトに基づいたモバイルサイトを作成するには、標準サイトのライブコピーを作成します。「[ライブコピーの作成」を参照してください。](/help/sites-cloud/administering/msm/creating-live-copies.md)
 >
 >AEM 開発者は、新しいデバイスグループを作成できます。「デバイスグループフィルターの作成」を参照してください。
 
 <!--
->To create a mobile site based on an existing standard site, create a live copy of the standard site. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
->
 >AEM developers can create new device groups. (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
 -->
 
