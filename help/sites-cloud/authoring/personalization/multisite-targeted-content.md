@@ -2,9 +2,9 @@
 title: マルチサイトでのターゲットコンテンツの操作
 description: アクティビティ、エクスペリエンス、オファーなどのターゲットコンテンツを複数のサイトにまたがって管理する必要がある場合は、AEM に組み込まれているターゲットコンテンツ用マルチサイトサポートを利用できます。
 translation-type: tm+mt
-source-git-commit: 01ca37d8bdf1c7e5c1801db6f4ad537772407064
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '2915'
+source-wordcount: '2900'
 ht-degree: 99%
 
 ---
@@ -16,10 +16,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->ターゲットコンテンツ用マルチサイト管理は、上級者向けの機能です。この機能を使用するには、AEM のマルチサイトマネージャーや、Adobe Target の統合に関する詳しい知識が必要です。
-<!--
->Working with Multisite support for targeted content is an advanced feature. To use this feature, you should be familiar with [Multi Site Manager](/help/sites-administering/msm.md) and the [Adobe Target integration](/help/sites-administering/target.md) with AEM.
--->
+>ターゲットコンテンツ用マルチサイト管理は、上級者向けの機能です。この機能を使用するには、[マルチサイトマネージャー](/help/sites-cloud/administering/msm/overview.md)とAEMとの[Adobe Targetの統合](/help/sites-cloud/integrating/integrating-adobe-target.md)に精通している必要があります。
 
 このドキュメントでは次の内容について説明します。
 
@@ -110,7 +107,7 @@ ht-degree: 99%
 
 ![バージョンの変更](/help/sites-cloud/authoring/assets/multisite-us-change.png)
 
-マーケティング担当者はこの変更をヨーロッパ地域にもロールアウトしたいと考え、「**ページをロールアウト**」をタップまたはクリックして、ライブコピーをロールアウトしました。タブを更新すると、英国のサイトに新しい画像が表示されます。これは、英国のサイトの「ヨーロッパ」領域がマスター領域を継承しているからです（ロールアウトによって画像が反映されます）。<!--The marketer would like to roll out these changes to the European region and [rolls out the live copy](/help/sites-administering/msm-livecopy.md) by tapping or clicking **Rollout Page**. After refreshing the tab, the Great Britain site has the new image as the Europe area inherits from the master area (after rollout).-->
+マーケティング担当者はこの変更をヨーロッパ地域にもロールアウトしたいと考え、「**ページをロールアウト**」をタップまたはクリックして、[ライブコピーをロールアウト](/help/sites-cloud/administering/msm/creating-live-copies.md)しました。タブを更新すると、英国のサイトに新しい画像が表示されます。これは、英国のサイトの「ヨーロッパ」領域がマスター領域を継承しているからです（ロールアウトによって画像が反映されます）。
 
 ![ライブコピーのロールアウト](/help/sites-cloud/authoring/assets/multisite-roll-out.png)
 
@@ -189,9 +186,9 @@ AEM でこれを実現するには、次の作業をおこないます。
 
 1. **ロールアウトの設定**&#x200B;ドロップダウンメニューで、適切な設定を選択します。
 
-   各オプションの説明については、[インストール済みのロールアウト設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-sync.html#installed-and-custom-rollout-configurations)を参照してください。
+   各オプションの説明については、[インストール済みのロールアウト設定](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-and-custom-rollout-configurations)を参照してください。
 
-   ライブコピーについて詳しくは、[ライブコピーの作成と同期](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-livecopy.html)を参照してください。
+   ライブコピーについて詳しくは、[ライブコピーの作成と同期](/help/sites-cloud/administering/msm/creating-live-copies.md)を参照してください。
 
    >[!NOTE]
    >
