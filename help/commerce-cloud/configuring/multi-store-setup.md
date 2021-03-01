@@ -6,14 +6,14 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Commerce統合フレームワーク
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: 4862a09b3a0ce2f7506f4fff10639c51792db1b7
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '350'
+ht-degree: 99%
 
 ---
 
@@ -59,4 +59,4 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 * [Magento Web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF コアコンポーネント - マルチストア／サイト設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [マルチサイトマネージャの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [コンテンツの再利用：マルチサイトマネージャーとライブコピー](https://helpx.adobe.com/jp/experience-manager/6-5/sites/administering/using/msm.html)
+* [コンテンツの再利用：マルチサイトマネージャーとライブコピー](/help/sites-cloud/administering/msm/overview.md)
