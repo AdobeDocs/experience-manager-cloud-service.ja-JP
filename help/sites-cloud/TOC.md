@@ -5,10 +5,10 @@ user-guide-title: AEM as a Cloud Service のコンテンツのオーサリング
 breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 translation-type: tm+mt
-source-git-commit: 0999f7a2a915df0d58876e17ceb5e93e13b7f817
+source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 97%
+source-wordcount: '307'
+ht-degree: 94%
 
 ---
 
@@ -81,6 +81,25 @@ ht-degree: 97%
       + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [ワークフローの管理](administering/workflows-administering.md)
+   + コンテンツの再利用{#reusing-content}
+      + [MSMと翻訳](administering/msm-and-translation.md)
+      + マルチサイトマネージャー {#msm}
+         + [MSMとライブコピーの概要](administering/msm/overview.md)
+         + [ライブコピーの同期の設定](administering/msm/live-copy-sync-config.md)
+         + [ライブコピーの作成と同期](administering/msm/creating-live-copies.md)
+         + [ライブコピーの概要コンソール](administering/msm/live-copy-overview.md)
+         + [ロールアウトの競合](administering/msm/rollout-conflicts.md)
+         + [MSM のベストプラクティス](administering/msm/best-practices.md)
+         + [トラブルシューティングとFAQ](administering/msm/troubleshooting.md)
+      + 翻訳 {#translation}
+         + [多言語サイトのコンテンツの翻訳](administering/translation/overview.md)
+         + [翻訳するコンテンツの準備](administering/translation/preparation.md)
+         + [翻訳プロジェクトの管理](administering/translation/managing-projects.md)
+         + [言語コピーウィザード](administering/translation/wizard.md)
+         + [翻訳するコンテンツの特定](administering/translation/rules.md)
+         + [翻訳統合フレームワークの設定](administering/translation/integration-framework.md)
+         + [Microsoft Translator への接続](administering/translation/connect-ms-translator.md)
+         + [翻訳のベストプラクティス](administering/translation/best-practices.md)
 + AEM as a Cloud Service との統合 {#integrations}
    + [Adobe Analytics との統合](integrating/integrating-adobe-analytics.md)
    + [Adobe Target との統合](integrating/integrating-adobe-target.md)
