@@ -2,10 +2,10 @@
 title: インタラクティブ画像
 description: Dynamic Media でのインタラクティブ画像の使用方法について説明します。
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
-source-wordcount: '4246'
-ht-degree: 47%
+source-wordcount: '4245'
+ht-degree: 46%
 
 ---
 
@@ -248,7 +248,7 @@ AEM Assets に含まれる、デフォルトの標準提供インタラクティ
    1. ホットスポット管理ページの左上隅にある「**[!UICONTROL ホットスポット]**」をタップします。
    1. 画像上で、ホットスポットを表示する場所をタップします。必要に応じて、ホットスポットをドラッグして場所を調整します。または、キーボードの矢印キーを使用して、選択したホットスポットの位置を制御します。
    1. 必要に応じて、手順aとbを繰り返し追加て、より多くのホットスポットを作成します。
-   1. （オプション）ホットスポットを削除するには、そのホットスポットを画像上で選択した後、「**[!UICONTROL ホットスポット]**」見出しの下にある&#x200B;**[!UICONTROL 削除]**（ごみ箱アイコン）をタップします。
+   1. （オプション）ホットスポットを削除するには、画像上でホットスポットを選択し、「**[!UICONTROL ホットスポット]**」見出しの下の「**[!UICONTROL 削除]**（ごみ箱アイコン）」をタップします。
 
 1. 「名前」テキストフィールドにホットスポットの名前を入力します。この名前は、選択したホットスポットドロップダウンリストにも表示されます。
 1. 次のいずれかの操作をおこないます。
@@ -325,7 +325,7 @@ AEM Sites のユーザーである場合は、インタラクティブメディ�
 
 **例**
 
-[デモ Web サイトを例として](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)使用する際は、3 人の男性の写真が静的 `IMG` タグであることに注意してください。
+[デモのWebサイトを例として使用](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)すると、3人の個人の写真は静的な`IMG`タグです。
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
