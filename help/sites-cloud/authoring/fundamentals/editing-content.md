@@ -2,7 +2,7 @@
 title: ページのコンテンツの編集
 description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
 translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
 workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
@@ -367,7 +367,7 @@ ht-degree: 100%
 
 継承とは、コンポーネントからコンポーネントへコンテンツを自動的にプッシュできるメカニズムです。継承されたコンポーネントは、次のような様々なシナリオによって生成されます。
 
-* マルチサイト管理 <!--[Multi site management](/help/sites-administering/msm.md)-->
+* [マルチサイト管理](/help/sites-cloud/administering/msm/overview.md)
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)（ライブコピーをベースとしている場合）
 
 継承はキャンセル（その後再度有効化）できます。ライブコピーまたは（ライブコピーに基づいた）ローンチの一部であるページにコンポーネントがある場合は、コンポーネントに応じて、コンポーネントツールバーからこの機能を使用できます。
