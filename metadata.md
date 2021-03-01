@@ -1,18 +1,19 @@
 ---
 product: adobe experience manager
+description: これは、AEMaaCSドキュメントページに必要なメタデータです
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.ja-JP
 index: y
-type: Documentation
+type: ドキュメント
 solution-title: Adobe Experience Manager as a Cloud Service
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=ja
-getting-started-title: はじめに
+getting-started-title: 開始
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html
 tutorials-title: チュートリアル
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja
 translation-type: tm+mt
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 28de20620a7cc8a3df231abacde4b3daa98cbcdb
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '120'
 ht-degree: 70%
 
 ---
