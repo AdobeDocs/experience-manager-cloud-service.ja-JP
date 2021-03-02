@@ -3,10 +3,10 @@ title: AEM Assets as a  [!DNL Cloud Service]  と Brand Portal の連携の設�
 description: AEM Assets と Brand Portal の連携を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: db653daa2d3c271329812b35960f50ee22fb9943
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 99%
+source-wordcount: '1651'
+ht-degree: 97%
 
 ---
 
@@ -277,6 +277,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 * [AEM Assets から Brand Portal へのアセットの公開](publish-to-brand-portal.md)
 * [AEM Assets から Brand Portal へのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assets から Brand Portal へのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Brand PortalからAEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Brand Portalでアセットを発行
 * [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
