@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 2749703c569b5ce060041b1c479a465fb3d0ca01
+source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 96%
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -67,6 +67,7 @@ ht-degree: 96%
 + アセットの共有と配布 {#brand-portal}
    + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
+   + [アセット [!DNL Brand Portal] の発行元 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントと GraphQL のヘッドレス配信](content-fragments/content-fragments-graphql.md)
