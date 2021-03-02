@@ -2,10 +2,10 @@
 title: Web アプリケーションへの URL のリンク
 description: Dynamic Media で Web アプリケーションに URL をリンクする方法。
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 100%
+source-wordcount: '1265'
+ht-degree: 86%
 
 ---
 
@@ -62,7 +62,7 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
    * 画像を選択した場合は、ドロップダウンメニューで「**[!UICONTROL レンディション]**」をタップします。
 
-      「**[!UICONTROL 動的]**」ヘッダーの下にあるプリセット名をタップすると、右側のフレームにレンディションが表示されます。「動的」ヘッダーを表示するには、場合によってはレンディションリストをスクロールする必要があります。
+      「**[!UICONTROL 動的]**」ヘッダーの下にあるプリセット名をタップすると、右側のフレームにレンディションが表示されます。必要に応じて、「レンディション」リストをスクロールし、「ダイナミック」という見出しを表示します。
 
       左側のレールの下部にある「**[!UICONTROL URL]**」をタップします。
 
@@ -76,13 +76,13 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. テキストを選択し、Web ブラウザーにコピーしてアセットをプレビューするか、Web コンテンツページに追加します。
+1. アセットをプレビューする場合、またはWebコンテンツページに追加する場合は、テキストを選択してWebブラウザーにコピーします。
 
    URL ウィンドウを閉じるには、「**[!UICONTROL X]**」をタップするか、「**[!UICONTROL 閉じる]**」をタップします。
 
 ## 静的アセットの URL の取得 {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media は静的アセットの配信をサポートします。静的アセットとは、画像やビデオに留まらない追加アセットです。配信がサポートされる静的アセットの形式は以下のとおりです。
+Dynamic Mediaでは、静的アセットの配信がサポートされています。静的アセットは、画像やビデオ以外のアセットです。 配信がサポートされる静的アセットの形式は以下のとおりです。
 
 * 3D ファイル
 * アニメーション GIF
@@ -120,9 +120,9 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
 1. 「**[!UICONTROL 利用可能な設定]**」の下で、必要な設定をタップします。
 
-1. **[!UICONTROL Dynamic Media クラウドの設定]**&#x200B;ページの「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーした URL パスは後の手順で必要になります。
+1. **[!UICONTROL Dynamic Media クラウドの設定]**&#x200B;ページの「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。手順の後半で、コピーしたURLパスが必要になります。
 
-   例えば、URL パスは、次のように表示されることがあります。
+   例えば、URLパスは次のように表示されます。
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
@@ -135,13 +135,13 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 1. ページの左上隅付近で、「**[!UICONTROL Cloud Services]**」をタップしてから「AEM」アイコンをタップし、**[!UICONTROL 一般／CRXDE Lite]** に移動します。
 1. JCR（Java コンテンツリポジトリー）のビデオレンディションパス全体をコピーします。
 
-   例えば、ビデオのレンディションパスは、次のように表示されることがあります。
+   例えば、ビデオのレンディションパスは次のように表示されます。
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
    （このパスは説明のために便宜的に示しています。コピーする実際のパスではありません。）
 
-1. コピーした情報を次の順序に並べて、完全な URL パスを作成します。
+1. 完全なURLパスを作成するには、コピーした情報を次の順序で配置します。
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -149,27 +149,27 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   これは、公開されたビデオレンディションの完全なビデオ URL です。
+   このパスは、公開されたビデオレンディションの完全なビデオURLです。
 
-## アダプティブストリーミング（HLS）用のビデオ URL の取得  {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## アダプティブストリーミング(HLS)のビデオURLの取得{#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. AEM で、**[!UICONTROL ツール／デプロイメント／クラウド／Cloud Services]** に移動します。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
 1. 「**[!UICONTROL 利用可能な設定]**」の下で、必要な設定をタップします。
 1. **[!UICONTROL Dynamic Media Cloud Services を設定]**&#x200B;ページで、以下の作業をおこないます。
 
-   * 「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーした URL パスは後の手順で必要になります。例えば、URL パスは、次のように表示されることがあります。
+   * 「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。これらの手順の後半で、コピーしたURLパスが必要になります。 例えば、URLパスは次のように表示されます。
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    （このパスは説明のために便宜的に示しています。コピーする実際のパスではありません。）
 
-   * 「**[!UICONTROL 登録 ID]**」の下で、ID の最後の部分にある顧客名をコピーします。コピーした顧客名は後の手順で必要になります。
+   * 「**[!UICONTROL 登録 ID]**」の下で、ID の最後の部分にある顧客名をコピーします。コピーした顧客名は、後で必要になります。
 
       例えば、登録 ID が `87654321|demoCo` の場合、コピーする顧客名は `demoCo` です。
 
 
-1. 使用しているビデオ配信プロトコルに基づいて、それぞれのプロトコルセレクターをコピーします。コピーしたプロトコルセレクターは後の手順で必要になります。
+1. 使用しているビデオ配信プロトコルに基づいて、それぞれのプロトコルセレクターをコピーします。この手順の後半で、コピーしたプロトコルセレクターが必要になります。
 
    <table>
     <tbody>
@@ -188,7 +188,7 @@ Dynamic Media は静的アセットの配信をサポートします。静的ア
     </tbody>
    </table>
 
-1. Dynamic Media で処理される AEM のビデオアセットのフルパスをコピーします。コピーしたビデオアセットのパスは後の手順で必要になります。
+1. Dynamic Media で処理される AEM のビデオアセットのフルパスをコピーします。このコピーしたビデオアセットのパスは、後で必要になります。
 
    次に例を示します。
 
