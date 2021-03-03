@@ -2,10 +2,10 @@
 title: ローンチの編集
 description: 'ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。 '
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 97%
+source-wordcount: '555'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 97%
 ページを編集すると、上部のツールバーに、「**終了**」および「**ナビゲート**」オプションと共に表示されます。
 
 ![ページエディターからの「終了」と「ローンチをナビゲート」](/help/sites-cloud/authoring/assets/launches-edit-01.png)
+
+>[!NOTE]
+>
+>開始内でページを移動することはできません。 この操作を試みると、次の警告メッセージが表示されます：
+>
+>* 警告：このページは開始のソースです。 ページの移動は許可されません。
+
 
 ### ライブコピーへのローンチページサブジェクトの編集 {#editing-launch-pages-subject-to-a-live-copy}
 
