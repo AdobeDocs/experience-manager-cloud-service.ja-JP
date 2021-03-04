@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 5b702dd33169939d7b16df07f29f8149cafa82bd
+source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 12%
+source-wordcount: '1167'
+ht-degree: 11%
 
 ---
 
@@ -109,6 +109,20 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 * 一部のパイプラインエラーは、誤ってパイプラインエラーとして報告されました。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
+
+### リリース日 {#release-date-ctt-march}
+
+コンテンツ転送ツールv1.3.0のリリース日は2021年3月4日です。
+
+### コンテンツ転送ツールの新機能{#what-is-new-ctt-march}
+
+* CTTは、`/libs`の代わりに`/apps`にインストールされるようになりました。特定のページへのブラウザーのブックマークが無効になる場合があります。
+* CTTがインストールされている場合、ユーザーはコンテンツ転送ページに移動するために別のレベルに移動する必要があります。 詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)を参照してください。
+
+### バグ修正 {#bug-fixes-ctt-march}
+
+* 特定のパスからコンテンツを移行する際に、CTTは関連のないリソースを取り込んでいました。 修正済み
+
 
 ### リリース日 {#release-date-ctt}
 
