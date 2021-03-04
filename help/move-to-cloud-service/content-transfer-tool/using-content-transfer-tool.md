@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: b4bc29dbea7a765ff41752d4b680cbbc3df51a0b
+source-git-commit: d93961304d01db960c68bd49603d86a30e62223f
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 92%
+source-wordcount: '1916'
+ht-degree: 91%
 
 ---
 
@@ -55,9 +55,13 @@ ht-degree: 92%
 
 この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。
 
-1. Adobe Experience Manager を選択し、ツール／**運営**／**コンテンツ転送**&#x200B;に移動します。
+1. Adobe Experience Managerを選択し、ツール/**操作** -> **コンテンツの移行**&#x200B;に移動します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content1.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+
+1. **コンテンツの移行**&#x200B;ウィザードから「**コンテンツの転送**」オプションを選択します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
 1. 最初の移行セットを作成すると、次のコンソールが表示されます。「**移行セットを作成**」をクリックして、新しい移行セットを作成します。
 
