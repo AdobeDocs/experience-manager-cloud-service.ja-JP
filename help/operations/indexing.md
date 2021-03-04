@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 translation-type: tm+mt
-source-git-commit: 610615534cb5a798e37d34fadb9a3bf341565526
+source-git-commit: c915580247e1b99db8a9f5228eec8cffece8a003
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
@@ -38,14 +38,6 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 1. 制限事項：現在、AEM as a Cloud Service のインデックス管理は、lucene 型のインデックスに対してのみサポートされています。
 
-<!-- ## Sizing Considerations {#sizing-considerations}
-
-AEM as a Cloud Service comes with a default capacity model to provide sufficient performance for average web applications. This "average" measure relates to the repository size and even more relevant to the indexing size. If we have reasons to believe that we need extended capacity for a specific customer project, an evaluation with SREs and Engineering will take place to determine the required capacity settings.
-
-AS NOTE: the above is internal for now.
-
--->
-
 ## 使用方法 {#how-to-use}
 
 インデックスの定義は、次の 3 つのユースケース で構成できます。
@@ -63,8 +55,6 @@ AS NOTE: the above is internal for now.
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。現在、サブルートフォルダーはサポートされていません。
-
-<!-- need to review and link info on naming convention from https://wiki.corp.adobe.com/display/WEM/Merging+Customer+and+OOTB+Index+Changes?focusedCommentId=1784917629#comment-1784917629 -->
 
 上記のサンプルのパッケージは、`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` としてビルドされます。
 
