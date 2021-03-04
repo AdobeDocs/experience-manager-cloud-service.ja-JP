@@ -2,10 +2,10 @@
 title: Dynamic MediaビューアとAdobe AnalyticsおよびExperience Platform Launchの統合
 description: platform launchビューアおよびDynamic Mediaビューア5.13用のDynamic Mediaビューア拡張機能を使用すると、Adobe AnalyticsおよびPlatform launchのお客様は、Platform launch設定でビューアに固有のイベントやデータを使用できます。
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: ef20224c59a6282ca6a78b2dfc9d777c67de5cb1
 workflow-type: tm+mt
-source-wordcount: '6684'
-ht-degree: 50%
+source-wordcount: '6658'
+ht-degree: 49%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 50%
 
 Experience Platform Launchとの統合の主な使用例は、Experience ManagerアセットとExperience Managerサイトの両方を使用するお客様です。 このような場合は、Experience Manager作成者ノードとExperience Platform Launchの標準的な統合を設定し、サイトインスタンスをExperience Platform Launchプロパティに関連付けることができます。 その後、Site ページに追加された Dynamic Media WCM コンポーネントは、ビューアのデータとイベントを追跡します。
 
-詳しくは、[Experience ManagerサイトでのDynamic Mediaビューアの追跡について](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites)を参照してください。
+[Experience ManagerサイトでのDynamic Mediaビューアの追跡](#tracking-dynamic-media-viewers-in-aem-sites)を参照してください。
 
 統合でサポートされる二次的な使用例は、Experience Managerアセットのみ、またはDynamic Mediaクラシックを使用するお客様です。 その場合、ビューアの埋め込みコードを取得して、Web サイトページに追加します。次に、Experience Platform LaunchからExperience Platform Launchライブラリの実稼働URLを取得し、Webページコードに手動で追加します。
 
-[埋め込みコードを使用した Dynamic Media ビューアのトラッキングについて](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)を参照してください。
+詳しくは、[埋め込みコードを使用したDynamic Mediaビューアの追跡](#tracking-dynamic-media-viewers-using-embed-code)を参照してください。
 
 ## 統合でのデータとイベントのトラッキングの仕組み {#how-data-and-event-tracking-works-in-the-integration}
 
