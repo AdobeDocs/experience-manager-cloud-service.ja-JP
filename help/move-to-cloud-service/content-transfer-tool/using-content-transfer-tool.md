@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 176662819767d11e0407baee1224b61dbbb1b33e
+source-git-commit: 8887aff8924da538c94f2ca6ebde64518b4aa019
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 88%
+source-wordcount: '2055'
+ht-degree: 84%
 
 ---
 
@@ -65,16 +65,23 @@ ht-degree: 88%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
+
 1. 最初の移行セットを作成すると、次のコンソールが表示されます。「**移行セットを作成**」をクリックして、新しい移行セットを作成します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/01-migration-set-overview.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
+
 
    >[!NOTE]
    >既存の移行セットがある場合、コンソールには既存の移行セットのリストが表示され、現在のステータスが表示されます
 
-1. **コンテンツ移行セットの詳細**&#x200B;画面のフィールドに、以下のように値を入力します。
+   さらに、**ユーザーマッピング設定を作成**&#x200B;をクリックして、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)にアクセスします。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/02-migration-set-creation.png)
+1. 以下の説明に従って、**コンテンツ移行セット**&#x200B;画面のフィールドに値を入力します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+
+   >[!NOTE]
+   >上の図で強調表示されているように、「**IMSユーザーおよびグループからのマッピングを含める**」を選択します。 詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
 
 
    1. **名前**：移行セットの名前を入力します。
@@ -119,7 +126,6 @@ ht-degree: 88%
    * *黄色のアイコン*&#x200B;は、その既存の移行セットが同じインスタンス内の他のユーザーによって作成されたことを示しています。
 
 1. 概要ページで移行セットを選択し、「**プロパティ**」をクリックして、移行セットのプロパティを表示または編集します。プロパティの編集中は、コンテナ名またはサービス URL を変更できません。
-
 
 
 ### コンテンツ転送の抽出プロセス {#extraction-process}
@@ -174,6 +180,7 @@ ht-degree: 88%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
 
+
 1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
@@ -188,13 +195,15 @@ ht-degree: 88%
 
 インジェストプロセスが完了したら、追加インジェスト方式を使用して差分コンテンツを転送できます。それには、次の手順に従います。
 
-1. *概要*&#x200B;ページに移動し、追加取得の実行対象となる移行セットを選択します。「**取得**」をクリックして、追加取得を開始します。**移行セットの取得**&#x200B;ダイアログボックスが表示されます。
+1. *概要*&#x200B;ページに移動し、追加取得の実行対象となる移行セットを選択します。「**取得**」をクリックして、追加取得を開始します。**移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
    >
    >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。
-   >
-   >![画像](/help/move-to-cloud-service/content-transfer-tool/assets/16-topup-ingestion.png)
+
+   さらに、カスタマーケアチケットに追加する方法については、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」を参照してください。
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
 
