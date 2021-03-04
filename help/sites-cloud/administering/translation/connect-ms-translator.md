@@ -2,17 +2,21 @@
 title: Microsoft Translator への接続
 description: AEMをMicrosoft Translatorに接続して、すぐに使用できる状態で翻訳ワークフローを自動化する方法を説明します。
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 39%
+source-wordcount: '476'
+ht-degree: 36%
 
 ---
 
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
-AEMページのコンテンツ、コミュニティのコンテンツ、またはアセットの翻訳にMicrosoft Translatorアカウントを使用するための[Microsoft Translator](https://hub.microsofttranslator.com)クラウドサービスの設定を作成します。
+AEMページのコンテンツやアセットの翻訳にMicrosoft Translationアカウントを使用するための[Microsoft Translator](https://hub.microsofttranslator.com)クラウドサービスの設定を作成します。
+
+>[!NOTE]
+>
+>AEMは、月に最大2,000,000文字の無料翻訳文字を使用できる試用版のMicrosoft翻訳アカウントを提供しています。 実稼働システムに適したアカウント購読を入手するには、[『Microsoft Translator体験版ライセンス設定のアップグレード](#upgrading-the-microsoft-translator-trial-license-configuration)』を参照してください。
 
 | プロパティ | 説明 |
 |---|---|
