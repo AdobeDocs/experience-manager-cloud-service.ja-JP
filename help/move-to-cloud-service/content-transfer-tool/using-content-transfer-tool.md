@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 495a292eceb7abf6439df15a092d71b58cf2f2f3
+source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 84%
@@ -178,7 +178,7 @@ ht-degree: 84%
    >[!IMPORTANT]
    >**取り込み前にクラウドインスタンス上の既存のコンテンツをワイプ**&#x200B;オプションが有効な場合、既存のリポジトリ全体が削除され、コンテンツを取り込む新しいリポジトリが作成されます。 つまり、ターゲットCloud Serviceインスタンスに対する権限を含むすべての設定がリセットされます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/12-content-ingestion.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
 
 
 1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
