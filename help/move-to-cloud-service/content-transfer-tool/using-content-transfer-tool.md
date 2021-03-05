@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
+source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
 workflow-type: tm+mt
-source-wordcount: '2049'
+source-wordcount: '2057'
 ht-degree: 84%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 84%
 
       1. **バージョンを含める**：必要に応じて選択します。
 
-      1. **IMSユーザーおよびグループからのマッピングを含める**:オプションを選択します。詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
+      1. **IMSユーザーおよびグループからのマッピングを含める**:「IMSユーザーとグループ」からマッピングを含めるオプションを選択します。詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
 
