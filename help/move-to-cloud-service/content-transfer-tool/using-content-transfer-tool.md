@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
+source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 83%
@@ -199,7 +199,7 @@ ht-degree: 83%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、**カスタマーケア**&#x200B;をクリックして、前の図に示すように、チケットをログに記録します。
+   >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、**カスタマーケア**&#x200B;をクリックして、前の図のようにチケットをログに記録します。
 
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
