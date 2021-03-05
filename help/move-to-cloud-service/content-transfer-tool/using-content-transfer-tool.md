@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
+source-git-commit: c1c352712d88667faa2364160bdb60cc7ef94f63
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 84%
+source-wordcount: '2068'
+ht-degree: 83%
 
 ---
 
@@ -176,7 +176,7 @@ ht-degree: 84%
    >[!IMPORTANT]
    >**取り込み前にクラウドインスタンス上の既存のコンテンツをワイプ**&#x200B;オプションが有効な場合、既存のリポジトリ全体が削除され、コンテンツを取り込む新しいリポジトリが作成されます。 つまり、ターゲットCloud Serviceインスタンスに対する権限を含むすべての設定がリセットされます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    さらに、**カスタマーケア**&#x200B;をクリックして、上の図のようにチケットをログに記録します。 詳しくは、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」も参照してください。
 
@@ -199,7 +199,7 @@ ht-degree: 84%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。
+   >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、**カスタマーケア**&#x200B;をクリックして、前の図に示すように、チケットをログに記録します。
 
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
