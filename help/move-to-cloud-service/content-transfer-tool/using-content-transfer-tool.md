@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
+source-git-commit: cef8c78e5fec840ea1cc4d391240e3bf9a4d7c02
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2053'
 ht-degree: 84%
 
 ---
@@ -171,13 +171,14 @@ ht-degree: 84%
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 
-1. *概要*&#x200B;ページで移行セットを選択し、「**取得**」をクリックして取得を開始します。**移行セットの取得**&#x200B;ダイアログボックスが表示されます。「**取得**」をクリックして、取得段階を完了します。デモのために、「**コンテンツをオーサーインスタンスに取り込み**」オプションは無効になっています。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
+1. *概要*&#x200B;ページで移行セットを選択し、「**取得**」をクリックして取得を開始します。**移行セットの取得**&#x200B;ダイアログボックスが表示されます。「**取得**」をクリックして、取得段階を完了します。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
 
    >[!IMPORTANT]
    >**取り込み前にクラウドインスタンス上の既存のコンテンツをワイプ**&#x200B;オプションが有効な場合、既存のリポジトリ全体が削除され、コンテンツを取り込む新しいリポジトリが作成されます。 つまり、ターゲットCloud Serviceインスタンスに対する権限を含むすべての設定がリセットされます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
+   さらに、**カスタマーケア**&#x200B;をクリックして、上の図のようにチケットをログに記録します。 詳しくは、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」も参照してください。
 
 1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
 
@@ -198,10 +199,8 @@ ht-degree: 84%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >
    >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。
 
-   さらに、**カスタマーケア**&#x200B;をクリックして、上の図のようにチケットをログに記録します。 詳しくは、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」も参照してください。
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
 
