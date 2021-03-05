@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 2e059ab3fea8bc80c697fe8190a8166483803821
+source-git-commit: f780bcf645fb4c1f0bce377f95028888161ee7ae
 workflow-type: tm+mt
 source-wordcount: '2068'
-ht-degree: 83%
+ht-degree: 82%
 
 ---
 
@@ -111,7 +111,7 @@ ht-degree: 83%
          >* `/etc` (一部の `/etc` パスはCTTで選択できます)。
 
 
-1. **コンテンツ移行セットの詳細**&#x200B;画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
+1. **移行セットを作成**&#x200B;の詳細画面のすべてのフィールドに入力したら、「**保存**」をクリックします。
 
 1. 移行セットが&#x200B;*概要*&#x200B;ページに表示されます。
 
