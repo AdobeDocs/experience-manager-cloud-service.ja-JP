@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: e6a35e20dbbcbaa8385abe7ea36973418978ef04
+source-git-commit: 4a328148fc169b6ee134ea3924e0315e44cda052
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2065'
 ht-degree: 84%
 
 ---
@@ -201,7 +201,7 @@ ht-degree: 84%
    >
    >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。
 
-   さらに、カスタマーケアチケットへの追加方法については、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」を参照してください。
+   さらに、**カスタマーケア**&#x200B;をクリックして、上の図のようにチケットをログに記録します。 詳しくは、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」も参照してください。
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
 
