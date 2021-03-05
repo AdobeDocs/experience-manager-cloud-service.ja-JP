@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: e3fe8daf8f40d3fe98bdbb7bf19ad1df5aa670ae
+source-git-commit: 87b6ae52ae25130f9abca6bfe0e8fb0caa90a348
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2049'
 ht-degree: 84%
 
 ---
@@ -76,13 +76,9 @@ ht-degree: 84%
 
    さらに、**ユーザーマッピング設定を作成**&#x200B;をクリックして、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)にアクセスします。
 
-1. 以下の説明に従って、**コンテンツ移行セット**&#x200B;画面のフィールドに値を入力します。
+1. 以下の説明に従って、**移行セットを作成**&#x200B;画面のフィールドに値を入力します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
-
-   >[!NOTE]
-   >上の図で強調表示されているように、「**IMSユーザーおよびグループからのマッピングを含める**」を選択します。 詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
-
 
    1. **名前**：移行セットの名前を入力します。
       >[!NOTE]
@@ -102,6 +98,8 @@ ht-degree: 84%
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
       1. **バージョンを含める**：必要に応じて選択します。
+
+      1. **IMSユーザーおよびグループからのマッピングを含める**:オプションを選択します。詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)を参照してください。
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
 
@@ -178,7 +176,7 @@ ht-degree: 84%
    >[!IMPORTANT]
    >**取り込み前にクラウドインスタンス上の既存のコンテンツをワイプ**&#x200B;オプションが有効な場合、既存のリポジトリ全体が削除され、コンテンツを取り込む新しいリポジトリが作成されます。 つまり、ターゲットCloud Serviceインスタンスに対する権限を含むすべての設定がリセットされます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04b.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/top-ingestion-image01.png)
 
 
 1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
