@@ -3,10 +3,10 @@ title: アセット、フォルダー、コレクションをリンクとして�
 description: この記事では、 [!DNL Experience Manager Assets] 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c023451f2b5c5e1ce2cbc9eddb858f96bd28cbd6
+source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 67%
+source-wordcount: '739'
+ht-degree: 60%
 
 ---
 
@@ -169,7 +169,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### デスクトップアクションのデスクトップアプリでの有効化 {#desktop-actions}
 
-ブラウザーの[!DNL Assets]ユーザーインターフェイス内から、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。 これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、[AEM Web インターフェイスでのデスクトップアクションの有効化](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#desktopactions-v2)を参照してください。
+ブラウザーの[!DNL Assets]ユーザーインターフェイス内から、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。 これらのオプションはデスクトップアクションと呼ばれ、有効にするには、[Webインターフェイス](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#desktopactions-v2)で [!DNL Assets] デスクトップアクションを有効にするを参照してください。
 
 ![デスクトップアプリで作業する際の、デスクトップアクションのショートカットとしての有効化](assets/enable_desktop_actions.png)
 
@@ -183,6 +183,8 @@ Adobe Asset Link を使用すると、コンテンツ作成プロセスでのク
 
 * 名前に空白を含むアセットフォルダーまたはコレクションは共有されない可能性があります。
 * ユーザーが共有アセットをダウンロードできない場合は、AEM 管理者に[ダウンロード制限](#maxdatasize)を確認してください。
+* リンク共有を使用して共有されるビデオをプレビューするには、そのビデオに静的ビデオレンディションがリポジトリ内のビデオのノードの`/jcr:content/renditions`場所で使用できる必要があります。 プレビューは、[!DNL Dynamic Media]レンディションの利用に依存しません。
+* リンク共有を介してビデオアセットをダウンロードする場合、[!DNL Dynamic Media]レンディションはダウンロードされたアーカイブに含まれません。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
