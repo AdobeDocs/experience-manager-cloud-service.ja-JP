@@ -3,10 +3,10 @@ title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
+source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 93%
+source-wordcount: '1000'
+ht-degree: 76%
 
 ---
 
@@ -72,23 +72,34 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
-Adobe Experience Manager(AEM)アセットのこのXMP書き戻し機能は、アセットのメタデータ変更をアセットのレンディションに複製します。
-
-AEM Assets 内からアセットのメタデータを変更した場合、またはアセットをアップロードした場合、変更は最初に CRXDE のアセットノードに保存されます。
-
-XMPの書き戻し機能は、アセットのすべてのレンディションまたは特定のレンディションにメタデータの変更を反映します。
+[!DNL Adobe Experience Manager Assets]のこのXMP書き戻し機能は、メタデータの変更を元のアセットのレンディションに複製します。 アセットのメタデータを[!DNL Assets]内から変更した場合、またはアセットのアップロード中に変更内容がリポジトリのアセットノード内に最初に保存されます。 XMPの書き戻し機能は、アセットのすべてのレンディションまたは特定のレンディションにメタデータの変更を反映します。
 
 「`Classic Leather`」というタイトルのアセットの「[!UICONTROL タイトル]」プロパティを「`Nylon`」に変更するシナリオについて考えます。
 
 ![メタデータ](assets/metadata.png)
 
-この場合、AEM Assets ではこの「**[!UICONTROL タイトル]**」プロパティへの変更が、アセット階層に格納されたアセットメタデータ用の `dc:title` パラメーターに保存されます。
+この場合、[!DNL Assets]は、アセット階層に保存されているアセットメタデータの`dc:title`パラメーターに&#x200B;**[!UICONTROL Title]**&#x200B;プロパティの変更を保存します。
 
 ![metadata_stored](assets/metadata_stored.png)
 
-ただし、AEM Assets では、メタデータの変更はアセットのレンディションに自動的に反映されません。
+ただし、[!DNL Assets]は、メタデータの変更をアセットのレンディションに自動的に反映しません。
 
-XMPの書き戻し機能を使用すると、メタデータの変更をアセットのすべてのレンディションまたは特定のレンディションに反映できます。 ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイル内に変更内容が埋め込まれます。
+XMPの書き戻し機能を使用すると、メタデータの変更をアセットのすべてのレンディションまたは特定のレンディションに反映できます。 ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイルに変更が埋め込まれます。
+
+[!DNL Assets]では、書き戻し機能はデフォルトで有効になっていません。 [メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。
+
+### XMPの書き戻しを有効にする{#enable-xmp-writeback}
+
+[!UICONTROL DAMメタデータの] 書き戻しワークフローは、アセットのメタデータの書き戻しに使用されます。書き戻しを有効にするには、次の手順に従います。
+
+1. 管理者として、**[!UICONTROL ツール]**/**[!UICONTROL ワークフロー]**/**[!UICONTROL ランチャー]**&#x200B;にアクセスします。
+1. **[!UICONTROL ワークフロー]**&#x200B;列に&#x200B;**[!UICONTROL DAM MetaDataの書き戻し]**&#x200B;を表示する[!UICONTROL ランチャー]を選択します。 ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
+
+   ![DAMメタデータ書き戻しランチャーを選択して、プロパティを変更し、アクティブ化します](assets/launcher-properties-metadata-writeback1.png)
+
+1. [!UICONTROL ランチャーのプロパティ]ページで「**[!UICONTROL アクティブ化]**」を選択します。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+
+このワークフローをアセットに1回だけ適用するには、左側のパネルからワークフロー[!UICONTROL DAMメタデータの書き戻し]を適用します。 アップロードしたアセットにワークフローを適用するには、ワークフローを後処理プロファイルに追加します。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
@@ -125,8 +136,3 @@ For the XMP write-back feature to propagate metadata to the rendition thumbnails
 
 The metadata changes are propagated to the renditions renditions thumbnail.140.100.png and thumbnail.319.319.png of the asset, and not the others.
 -->
-
->[!MORELIKETHIS]
->
->* [アドビの XMP 仕様](https://www.adobe.com/devnet/xmp.html)
-
