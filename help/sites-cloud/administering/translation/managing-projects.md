@@ -2,10 +2,10 @@
 title: 翻訳プロジェクトの管理
 description: AEMで機械翻訳と人力翻訳の両方のプロジェクトを作成および管理する方法を学びます。
 translation-type: tm+mt
-source-git-commit: b22d972adeaec6af4f15e11fa3359758a1ed77c3
+source-git-commit: 9518a3ddb253ede2e9b713b4a7d0077e8ba3f7e0
 workflow-type: tm+mt
-source-wordcount: '3799'
-ht-degree: 37%
+source-wordcount: '3825'
+ht-degree: 36%
 
 ---
 
@@ -52,6 +52,10 @@ AEM では、翻訳プロジェクトがコンテンツの初期翻訳用に作�
 選択したページの子ページも選択されるように指定できます。この場合、子ページのコピーも各プロジェクトに追加され、翻訳されます。子ページが異なる翻訳統合フレームワークの設定に関連付けられている場合、AEMは追加のプロジェクトを作成します。
 
 また、[手動で翻訳プロジェクト](#creating-a-translation-project-using-the-projects-console)を作成することもできます。
+
+>[!NOTE]
+>
+>プロジェクトを作成するには、アカウントが`project-administrators`グループのメンバである必要があります。
 
 ### 初期翻訳と翻訳の更新 {#initial-and-updating}
 
@@ -208,6 +212,10 @@ AEMの翻訳プロジェクトは、標準の[AEMプロジェクトコンソー�
 ### Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 
 サイトコンソールの代わりにプロジェクトコンソールを使用したい場合は、手動で翻訳プロジェクトを作成できます。
+
+>[!NOTE]
+>
+>プロジェクトを作成するには、アカウントが`project-administrators`グループのメンバである必要があります。
 
 翻訳プロジェクトを手動で作成する場合は、[基本のプロパティ](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)に加えて、翻訳に関連する以下のプロパティに値を指定する必要があります。
 
