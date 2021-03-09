@@ -2,9 +2,9 @@
 title: プログラムの作成 —Cloud Service
 description: プログラムの作成 —Cloud Service
 translation-type: tm+mt
-source-git-commit: 5658b2cc853ff7e6222a7f35e56527577d2c7324
+source-git-commit: d85c0e9035ee09cf86aeea1cae20d545823eaca0
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '607'
 ht-degree: 3%
 
 ---
@@ -27,10 +27,6 @@ Cloud Managerへの初回アクセスのイベント、またはテナントに�
 
 ![](assets/create-sandbox.png)
 
->[!NOTE]
->プログラムが既に存在する場合は、次の図に示すように、ランディングページの右上に&#x200B;**追加プログラム**&#x200B;が表示されます。
-
-![](assets/create-program-add.png)
 
 ## サンドボックスプログラムの作成 {#create-sandbox-program}
 
