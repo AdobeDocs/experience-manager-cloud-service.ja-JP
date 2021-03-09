@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 3ccf56939f444ce57669b289f4997084828fd0a5
+source-git-commit: 4482fe36339db0c544b0b550e0bd414b2a47809e
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 49%
+source-wordcount: '685'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +20,12 @@ ht-degree: 49%
    + [ユーザーとロールの追加](what-is-required/add-users-roles.md)
    + [役割に基づく権限](what-is-required/role-based-permissions.md)
    + [ソースコードリポジトリー](what-is-required/source-code-repository.md)
++ 移行プロセスの諸段階 {#phases}
+   + [計画](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/planning.html)
+   + [実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/execution.html)
+   + [運用開始後](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/post-go-live.html)
 + クラウド内の AEM へのアクセス {#getting-access}
+   + [AEMをCloud Serviceとして使用する場合：プロビジョニングプロセスの概要](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
    + [Adobe Experience Manager as a Cloud Service へのアクセス](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Service のプログラム {#cloud-service-programs}
       + [プログラムへのアクセス](getting-access-to-aem-in-cloud/first-time-login.md)
@@ -83,6 +88,7 @@ ht-degree: 49%
       + [リリースノート（2020.4.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
       + [リリースノート（2020.3.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
       + [リリースノート（2020.2.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + [役割と責任について](getting-access-to-aem-in-cloud/roles-responsibilities.md)
 + データのプライバシーと保護への対応 {#data-privacy}
    + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
    + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](data-privacy-and-protection-readiness/foundation-readiness.md)
