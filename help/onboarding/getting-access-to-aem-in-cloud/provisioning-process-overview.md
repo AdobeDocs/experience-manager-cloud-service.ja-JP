@@ -1,11 +1,15 @@
 ---
-source-git-commit: d2a24f55d5b89f1abe64702d5f1ad39f793429d5
-workflow-type: tm+mt
+title: プロビジョニングプロセス — 概要
+description: プロビジョニングプロセス — 概要
 translation-type: tm+mt
-source-wordcount: '334'
-ht-degree: 11%
+source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
+
+
 # AEMをCloud Serviceとして使用する場合：オンボーディングとアクセス
 
 このページでは、Cloud ServiceとしてのExperience Manager用のプロビジョニングプロセスに関するセルフヘルプリソースをリストします。
@@ -46,7 +50,7 @@ ht-degree: 11%
 
 ### 2.Adobe Admin Consoleへの船上機関
 
- >   ![processoverview2.jpg](./assets/processOverview2.jpg)
+>   ![processoverview2.jpg](./assets/processOverview2.jpg)
 * システム管理者:
    * AEMプログラムと環境のプロビジョニング。
    * 管理タスクのAdmin Consoleに移動します。
@@ -70,5 +74,5 @@ ht-degree: 11%
 
 ## ヘルプとリソース
 
-[初回ログイン - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)\
-[Cloud ServiceとしてのAEMへのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [初回ログイン - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
+* [Cloud ServiceとしてのAEMへのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
