@@ -1,13 +1,16 @@
 ---
-source-git-commit: 8d15605dd696f0163229a677b57aa0837dc11704
-workflow-type: tm+mt
+title: 役割と責任
+description: 役割と責任
 translation-type: tm+mt
-source-wordcount: '417'
+source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+workflow-type: tm+mt
+source-wordcount: '423'
 ht-degree: 21%
 
 ---
 
-# Cloud ServiceとしてのAdobe Experience Manager:役割と責任
+
+# Cloud ServiceとしてのAdobe Experience Manager:役割と責任{#roles-responsibilities}
 
 <br></br>
 Adobeは、Cloud ServiceとしてExperience Managerのプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供します。ソリューションの開発と展開を可能な限り効率的に進めるためには、お客様とお客様が、以下に説明するように、その役割を理解し、果たすことが重要です。
@@ -49,5 +52,8 @@ Adobeは、Cloud ServiceとしてExperience Managerのプロビジョニング�
 | 実稼動 | Cloud ServiceアプリケーションとしてのAEMの更新 |  |  | 所有者 |  |
 | 実稼動 | 本番バックアップと災害復旧 |  |  | 所有者 |  |
 
-<br></br>
-上記では、Premier Supportが含まれていると想定しています。この表は、お客様とお客様の間の合意に基づいて変更される場合があります。 上記の内容を明確にする必要がある場合は、Adobeのセールスチームやカスタマイズチームに相談することをお勧めします。 カスタマイズを自分で処理したくない場合は、AdobeのプロフェッショナルサービスチームまたはExperience Managerパートナーのサービスを受ける必要があります。 高品質レベルを維持するために、Adobeでは、Cloud Service開発プロジェクトとしてExperience Managerに従事するパートナーに、Experience Managerソフトの高度開発者認定を取得した少なくとも1人の個人を配置する必要があります。
+>[!NOTE]
+>
+> 上記では、Premier Supportが含まれていると想定しています。 この表は、お客様とお客様の間の合意に基づいて変更される場合があります。 上記の内容を明確にする必要がある場合は、Adobeのセールスチームやカスタマイズチームに相談することをお勧めします。
+> カスタマイズを自分で処理したくない場合は、AdobeのプロフェッショナルサービスチームまたはExperience Managerパートナーのサービスを受ける必要があります。
+>高品質レベルを維持するために、Adobeでは、Cloud Service開発プロジェクトとしてExperience Managerに従事するパートナーに、Experience Managerソフトの高度開発者認定を取得した少なくとも1人の個人を配置する必要があります。
