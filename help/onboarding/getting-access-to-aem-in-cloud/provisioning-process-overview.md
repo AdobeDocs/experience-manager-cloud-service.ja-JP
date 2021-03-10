@@ -46,7 +46,7 @@ ht-degree: 11%
 
 ### 2.Adobe Admin Consoleへの船上機関
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+ >   ![processoverview2.jpg](./assets/processOverview2.jpg)
 * システム管理者:
    * AEMプログラムと環境のプロビジョニング。
    * 管理タスクのAdmin Consoleに移動します。
