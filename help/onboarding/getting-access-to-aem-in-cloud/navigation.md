@@ -1,16 +1,16 @@
 ---
-title: ナビゲーション
-description: ナビゲーション —Cloud Service
+title: Cloud ServiceとしてのAEM版Cloud Managerへのアクセス
+description: Cloud ServiceとしてのAEM版Cloud Managerへのアクセス
 translation-type: tm+mt
-source-git-commit: c5ee964fad3e1430e7c08f0cca76aecfae8bd44f
+source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service へのアクセス {#navigation}
+# Cloud Service{#navigation}としてAEM版Cloud Managerにアクセスする
 
 システム管理者からCloud Managerへのアクセス権が付与されると、Cloud Managerのログインページが表示されます。このページは[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)からもアクセスできます。
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## SysAdminタスク{#sysadmin-tasks}
 
-SysAdminロールのユーザーは、ロールと権限を管理し、AEMインスタンスにアクセスするために、Admin Consoleに直接アクセスできるようになりました。
+SysAdminロールのユーザーは、**「アクセスを管理**」を選択して、ロールと権限を管理し、AEMインスタンスにアクセスするAdmin Consoleに直接アクセスできます。
 
 ### ロールの管理{#manage-roles}
 
