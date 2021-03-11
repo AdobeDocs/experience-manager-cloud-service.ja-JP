@@ -2,9 +2,9 @@
 title: Cloud ServiceとしてのAEM版Cloud Managerへのアクセス
 description: Cloud ServiceとしてのAEM版Cloud Managerへのアクセス
 translation-type: tm+mt
-source-git-commit: 55f3b8bd1c21197fd004073cfabd9092678cfdcd
+source-git-commit: 4904d7728befd3562940b35c7d44dbf9cae87fee
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,10 @@ SysAdminロールのユーザーは、**Admin Console**&#x200B;への1クリッ�
 
 「**プログラム追加**」ボタンが表示されず、Cloud Serviceへのアクセスに関するご質問は、Adobeの担当者にお問い合わせください。
 
-詳細は、[既存のプログラムとのCloud Serviceでの新しいプログラムの追加](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#existing-program)を参照してください。
-
 ## 新規Cloud Serviceのお客様向け{#new-cloud-services}
 
 Cloud Serviceを初めてお使いの場合は、空のランディングページの右上隅に「**追加プログラム**」ボタンが表示されます。 Cloud Serviceに新しいプログラムを追加する必要があります。
 
-詳細は、[既存のプログラムを持たないCloud Serviceに新しいプログラムを追加する](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md#no-program)を参照してください。
-
+Cloud Managerでプログラムを追加する方法については、次を参照してください。
+* [実稼働プログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [サンドボックスプログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
