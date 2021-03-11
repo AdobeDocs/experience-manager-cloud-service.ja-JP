@@ -2,10 +2,10 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 92%
+source-wordcount: '1065'
+ht-degree: 91%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 92%
    * **カスタム機能テスト**:パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
       詳しくは、「[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)」を参照してください。
 
-   * **カスタムUIテスト**:この手順はオプションの機能で、お客様はアプリケーションのUIテストを作成し、自動的に実行できます。UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。詳しくは、「カスタムUIテスト」を参照してください。
+   * **カスタムUIテスト**:この手順はオプションの機能で、お客様はアプリケーションのUIテストを作成し、自動的に実行できます。UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。詳しくは、[カスタムUIテスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing)を参照してください。
 
 
    * **エクスペリエンスの監査**:パイプライン内のこのステップは常に存在し、スキップできません。実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。設定されたページがサービスに送信され、評価されます。結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
