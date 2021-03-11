@@ -2,10 +2,10 @@
 title: Cloud Managerのホームページ
 description: Cloud Managerのホームページ
 translation-type: tm+mt
-source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
+source-git-commit: 2f5b15a4fcd46114f923a387fa71da22d143dfc1
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 47%
+source-wordcount: '280'
+ht-degree: 34%
 
 ---
 
@@ -33,11 +33,10 @@ ht-degree: 47%
 [!UICONTROL Cloud Manager]に正常にログインすると、ランディングページに、組織内の既存のプログラムのカードが表示されます。
 
 >[!NOTE]
->
->Cloud Service 上のプログラムは、次に示すように、サブタイトル **Experience Manager クラウド**（AMS プログラムの **Experience Manager** とは異なります）で示されます。
+>Cloud Service 上のプログラムは、サブタイトル **Experience Manager クラウド**（AMS プログラムの **Experience Manager** とは異なります）で示されます。
+>例えば、下の図では、**We.Retailグローバル**&#x200B;はAMSプログラムで、**We.Retail-Prodプログラム- Prod**&#x200B;はCloud Serviceを介して使用できるプログラムです。
 
 ![](assets/first_timelogin1.png)
-
 
 状況に応じて、次の 2 つのオプションのいずれかが表示されます。
 
@@ -54,9 +53,6 @@ ht-degree: 47%
 
 ![](assets/first_timelogin1.png)
 
->[!NOTE]
->Cloud Service 上のプログラムは、サブタイトル **Experience Manager クラウド**（AMS プログラムの **Experience Manager** とは異なります）で示されます。
->例えば、上のスクリーンショットでは、**We.Retail Global** は AMS プログラム、**We.Retail-Prod Program - Prod** は Cloud Service を通じて利用可能なプログラムです。
 
 Cloud Managerでプログラムを追加する方法については、次を参照してください。
 
