@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 137be7fd0fe89429c0d1f028d81e54ce69cc4ef1
+source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1532'
 ht-degree: 11%
 
 ---
@@ -82,7 +82,7 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 ### 新機能 {#what-is-new-march}
 
-* IP許可リスト、SSL証明書、カスタムドメイン名に関する既存のCDN設定を持つ環境のお客様には、次のメッセージが表示され、UIを介してセルフサービスを行うことができます。
+* IP許可リスト、SSL証明書、カスタムドメイン名に関する既存のCDN設定を持つ環境のお客様には、以前に設定した内容に関するメッセージが表示され、UIを介してセルフサービスが可能になります。
 
 * 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービス方式で次の操作を行うことができます。
 
