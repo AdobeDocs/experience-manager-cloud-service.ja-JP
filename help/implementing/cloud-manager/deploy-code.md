@@ -2,10 +2,10 @@
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
 translation-type: tm+mt
-source-git-commit: dc006d50d703a17a84e3dc6631bc423f5de37f88
+source-git-commit: 533707b9073231ed16757884afeb968ace0785b3
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 100%
+source-wordcount: '1054'
+ht-degree: 92%
 
 ---
 
@@ -50,14 +50,18 @@ ht-degree: 100%
       ![](assets/stage-deployment.png)
    **ステージテスト**&#x200B;には、以下のステップが含まれます。
 
-   * 製品機能テスト：Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。詳しくは、「[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)」を参照してください。
+   * **製品機能のテスト**:Cloud Managerのパイプライン実行では、ステージ環境に対して実行するテストの実行がサポートされます。詳しくは、「[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)」を参照してください。
 
-   * カスタム機能テスト：パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
+   * **カスタム機能テスト**:パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
       詳しくは、「[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)」を参照してください。
 
+   * **カスタムUIテスト**:この手順はオプションの機能で、お客様はアプリケーションのUIテストを作成し、自動的に実行できます。UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。詳しくは、「カスタムUIテスト」を参照してください。
 
-   * エクスペリエンス監査：パイプライン内のこのステップは常に存在し、スキップできません。実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。設定されたページがサービスに送信され、評価されます。結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
+
+   * **エクスペリエンスの監査**:パイプライン内のこのステップは常に存在し、スキップできません。実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。設定されたページがサービスに送信され、評価されます。結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
 詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」を参照してください。
+
+      ![](assets/stage-testing.png)
 
 
 
