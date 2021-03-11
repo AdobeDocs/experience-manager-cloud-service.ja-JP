@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 81%
+ht-degree: 80%
 
 ---
 
@@ -113,8 +113,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->
-この機能は、実稼動用に設定された通常のプログラムの実稼働／ステージング環境セットには使用できません。ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
+>この機能は、実稼働用に設定された実稼働環境内の実稼働/ステージプログラムセットには使用できません。 ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
 
 ## アクセスの管理 {#managing-access}
 
