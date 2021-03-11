@@ -2,7 +2,7 @@
 title: プログラムとプログラムのタイプについて
 description: プログラムとプログラムのタイプについて —Cloud Services
 translation-type: tm+mt
-source-git-commit: e1d805e1e5b5850ecf3154cd69a3955c4dbe1e65
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 3%
@@ -26,6 +26,6 @@ Cloud Managerでは、最上部にテナントエンティティがあり、こ�
 詳しくは、[実稼働プログラムの紹介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
 
 
-* *Sandboxプログラム*は、通常、トレーニング、デモ、有効化、POC、ドキュメントの実行の目的で作成されます。 ライブトラフィックを運ぶことを目的としたものではなく、通常のプログラムでは行われないという制限を受けます。 サイトとアセットが含まれ、サンプルコード、開発環境、非実稼働パイプラインを含むGitブランチが自動入力されて配信されます。
+* *Sandboxプログラム*は、通常、トレーニング、デモ、有効化、POC、ドキュメントの実行の目的で作成されます。 ライブトラフィックを運ぶことを目的としたものではなく、実稼動プログラムが行わないという制限が課されます。 サイトとアセットが含まれ、サンプルコード、開発環境、非実稼働パイプラインを含むGitブランチが自動入力されて配信されます。
 詳しくは、[Sandboxプログラムの紹介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。
 
