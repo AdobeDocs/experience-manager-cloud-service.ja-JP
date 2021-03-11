@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
+source-git-commit: 5cc16391573b6f65990c771667d4c393aa5eb38b
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 45%
+source-wordcount: '692'
+ht-degree: 46%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 45%
 + クラウド内の AEM へのアクセス {#getting-access}
    + [Cloud ServiceとしてのAEM版Cloud Managerへのアクセス](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Manager へのアクセス{#cloud-service-programs}
-      + [Cloud Managerのホームページ](getting-access-to-aem-in-cloud/first-time-login.md)
+      + [Cloud Manager ランディングページ](getting-access-to-aem-in-cloud/first-time-login.md)
       + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
       + 本番プログラム{#production-programs}
          + [概要](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
