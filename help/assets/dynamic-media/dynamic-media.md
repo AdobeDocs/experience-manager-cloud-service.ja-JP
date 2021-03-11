@@ -2,10 +2,10 @@
 title: Dynamic Media の操作
 description: Dynamic Media を使用して、Web、モバイルおよびソーシャルサイトで使用するためにアセットを配信する方法を学習します。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '397'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 [Dynamic Media ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)は、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信するもので、これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
-Dynamic Media は、ズーム、360 度スピン、ビデオなどのインタラクティブな閲覧エクスペリエンスを提供します。Dynamic Media は Adobe Experience Manager デジタルアセット管理（AEM アセット）ソリューションのワークフローを独自に取り込むことで、デジタルキャンペーン管理プロセスを簡易化し、効率化します。
+Dynamic Mediaは、ズーム、360度スピン、ビデオなどのインタラクティブなビューを提供します。Dynamic Mediaは、Adobe Experience Managerのデジタルアセット管理(Assets)ソリューションのワークフローを組み込み、デジタルキャンペーン管理プロセスをシンプル化および合理化しています。
 
 <!-- >[!NOTE]
 >
@@ -74,7 +74,7 @@ Dynamic Media を有効にしている場合、画像アセットをクリック
 
 ### PTIFF レンディション {#ptiff-renditions}
 
-Dynamic Media 対応のアセットには `pyramid.tiffs` が含まれています。
+Dynamic Mediaが有効にしたアセットには`pyramid.tiffs`が含まれます。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
