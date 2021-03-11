@@ -2,9 +2,9 @@
 title: '実稼働プログラムの編集 '
 description: '実稼働プログラムの編集 '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ ht-degree: 0%
 
 次の手順に従って、実稼働プログラムを編集します。
 
-1. **プログラムの編集**&#x200B;ページに移動します。
+1. 
+   1. Cloud Managerの&#x200B;*概要*&#x200B;ページから、**プログラムの編集**&#x200B;ページに移動します。
 
 1. **プログラムの編集**&#x200B;ページには、実稼働環境とSandboxプログラムの両方に対して2つのタブ（「一般」および「ソリューション」）が表示されます。
 
