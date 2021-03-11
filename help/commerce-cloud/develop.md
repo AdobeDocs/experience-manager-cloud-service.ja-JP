@@ -2,16 +2,16 @@
 title: AEM Commerce for AEM as a Cloud Service の開発
 description: AEM プロジェクトアーキタイプを使用してコマース対応の AEM プロジェクトを生成する方法を説明します。AEM as a Cloud Service SDK でプロジェクトを構築してローカル開発環境にデプロイする方法を説明します。
 topics: Commerce, Development
-feature: Commerce Integration Framework
+feature: Commerce統合フレームワーク
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 9d8d7c3c8c1ac3cb843ce74b3ccdb6904bbfaa05
+source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 94%
+source-wordcount: '969'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づ�
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as a Cloud Service 環境用に提供された CIF アドオンは、ローカル開発にも使用できます。このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からダウンロードできます。
+CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM用に提供されたCIF追加-OnをCloud Serviceとして使用することも、地域開発にも利用できます。 このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からダウンロードできます。
 
 CIF アドオンは Sling 機能アーカイブとして提供されます。ソフトウェア配布ポータルで利用できる zip ファイルには、2 つの Sling 機能アーカイブファイルが含まれています。1 つは AEM オーサー用、もう 1 つは AEM パブリッシュインスタンス用です。
 
@@ -137,6 +137,12 @@ CIF コアコンポーネントは、提供されている `all` パッケージ
 <dependency>
     <groupId>com.adobe.commerce.cif</groupId>
     <artifactId>core-cif-components-apps</artifactId>
+    <type>zip</type>
+    <version>x.y.z</version>
+</dependency>
+<dependency>
+    <groupId>com.adobe.commerce.cif</groupId>
+    <artifactId>core-cif-components-config</artifactId>
     <type>zip</type>
     <version>x.y.z</version>
 </dependency>
