@@ -1,26 +1,34 @@
 ---
-title: 初回ログイン - Cloud Service
-description: 初回ログイン - Cloud Service
+title: Cloud Managerのホームページ
+description: Cloud Managerのホームページ
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '284'
+ht-degree: 70%
 
 ---
 
 
-# プログラムへのアクセス {#first-time-login}
+# Cloud Managerのホームページ{#first-time-login}
 
+Cloud Managerにアクセスするには：
+
+1. Adobe IDを使って[Experience Cloud](https://experience.adobe.com/)に移動します。
+1. **Experience Manager**を選択します。
+   ![](assets/landing-page1.png)
+
+1. Cloud Managerカードの「**Launch**」をクリックします。
 [!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
+   ![](assets/landing-page2.png)
 
->[!NOTE]
->
->[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
+   >[!NOTE]
+   >
+   >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
 ## Cloud Manager ランディングページ {#landing-page}
 
-[!UICONTROL Cloud Manager] に正常にログインすると、次の図に示すランディングページが表示されます。
+[!UICONTROL Cloud Manager]に正常にログインすると、ランディングページに、組織内の既存のプログラムのカードが表示されます。
 
 >[!NOTE]
 >
@@ -34,6 +42,7 @@ ht-degree: 100%
 * **Cloud Manager にプログラムが存在しません**
 
 * **プログラムは既に Cloud Manager に存在します**
+
 
 ## 既存のプログラムを使用しない Cloud Service への新規プログラムの追加 {#no-program}
 
@@ -54,6 +63,9 @@ ht-degree: 100%
    >[!NOTE]
    >例えば、上のスクリーンショットでは、**We.Retail Global** は AMS プログラム、**We.Retail-Prod Program - Prod** は Cloud Service を通じて利用可能なプログラムです。
 
-1. Cloud Service で新規プログラムを作成するために&#x200B;**プログラムと製品**&#x200B;画面からプログラムを追加する方法については、[プログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-a-program.md)を参照してください。
+1. **プログラムと製品**&#x200B;画面からプログラムを追加して、Cloud Serviceで新しいプログラムを作成する方法については、以下を参照してください。
+
+   * [実稼働プログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+   * [サンドボックスプログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
