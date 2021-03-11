@@ -2,10 +2,10 @@
 title: Web アプリケーションへの URL のリンク
 description: Dynamic Media で Web アプリケーションに URL をリンクする方法。
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '1265'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,7 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 
 >[!NOTE]
 >
->URL 文字列は、アセットの動的レンディションでのみ使用できます。現時点では、Dynamic Media サーバーではなく DAM に存在する静的アセットには URL 文字列を使用できません。静的なレンディションに対しては「URL」ボタンが表示されません。
+>URL文字列は、アセットの動的レンディションでのみ使用できます。現在、これらの指標は、DAM内に存在し、Dynamic Mediaサーバーに存在しない静的アセットには使用できません。静的なレンディションでは、「URL」ボタンは表示されません。
 
 [Web ページへのビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
 
