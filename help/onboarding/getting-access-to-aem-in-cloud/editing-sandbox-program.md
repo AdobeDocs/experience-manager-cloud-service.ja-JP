@@ -2,9 +2,9 @@
 title: 'サンドボックスプログラムの編集 '
 description: 'サンドボックスプログラムの編集 '
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,11 @@ ht-degree: 0%
 
 サンドボックスプログラムを編集するには、次の手順に従います。
 
-1. **プログラムの編集**&#x200B;ページに移動します。
+1. Cloud Managerの&#x200B;*概要*&#x200B;ページから、**プログラムの編集**&#x200B;ページに移動します。
 
 1. **プログラムの編集**ページには、実稼働環境とSandboxプログラムの両方のタブ（「一般」および「ソリューション」）が2つ表示されます。
    ![](assets/edit-program.png)
 
-   >[!NOTE]
-   >サイトとアセットの両方が表示されますが、購入済みと未使用の購入内容に基づいて、いずれかが無効になる場合があります。 特に、特定のソリューションに対して未使用の権利付与がない場合は、そのソリューションが表示されますが、無効になります。
 
 ## プログラムの編集時の考慮事項{#considerations-editing}
 
