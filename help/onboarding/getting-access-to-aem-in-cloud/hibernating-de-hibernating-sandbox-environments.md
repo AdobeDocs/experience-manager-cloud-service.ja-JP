@@ -2,10 +2,10 @@
 title: 'サンドボックス環境の休止と休止解除 '
 description: 'サンドボックス環境の休止と休止解除 '
 translation-type: tm+mt
-source-git-commit: 213a7237abd4de75be43af430181f4aa914196f4
+source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 サンドボックスプログラム環境は、一定期間アクティビティが検出されなかった場合、*休止モードに入ります*。
 
 >[!NOTE]
->休止状態は、サンドボックスプログラム環境に固有のものです。標準プログラム環境は休止状態になりません。
+>休止状態は、サンドボックスプログラム環境に固有のものです。実稼働プログラムの環境は休止状態になりません。
 
 ## 休止状態 {#hibernation-introduction}
 
