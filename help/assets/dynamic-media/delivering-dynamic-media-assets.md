@@ -2,10 +2,10 @@
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 84%
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 Dynamic Mediaでは、次のいくつかの方法があります。
 
-* Web サイトが AEM 上にホストされている場合は、Dynamic Media アセットを直接ページに追加します。
+* WebサイトがAEMでホストされている場合は、Dynamic Mediaのアセットを直接ページに追加する必要があります。
 * Web サイトが AEM 上にない場合は、次のいずれかの方法を選択します。
 
    * ビデオまたは画像を Web サイトに埋め込みます。
