@@ -4,10 +4,10 @@ user-guide-title: AEM as a Cloud Service のオンボーディング
 breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 translation-type: tm+mt
-source-git-commit: 4e1f06e38fd968f8bcf240a5a30cf3362e562294
+source-git-commit: 6bbcbb75076a537a78b92415549f631842f028ce
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 48%
+source-wordcount: '691'
+ht-degree: 45%
 
 ---
 
@@ -15,19 +15,26 @@ ht-degree: 48%
 # オンボーディング {#onboarding}
 
 + [AEM as a Cloud Service のオンボーディング](/help/onboarding/home.md)
-+ 要件 {#what-is-required}
++ Cloud ServiceとしてAEMを使い始める{#what-is-required}
    + [アクセス権の付与](what-is-required/access-rights-granted.md)
    + [ユーザーとロールの追加](what-is-required/add-users-roles.md)
    + [役割に基づく権限](what-is-required/role-based-permissions.md)
    + [ソースコードリポジトリー](what-is-required/source-code-repository.md)
 + クラウド内の AEM へのアクセス {#getting-access}
-   + [プロビジョニングプロセスの概要](getting-access-to-aem-in-cloud/provisioning-process-overview.md)
-   + [Adobe Experience Manager as a Cloud Service へのアクセス](getting-access-to-aem-in-cloud/navigation.md)
+   + [Cloud ServiceとしてのAEM版Cloud Managerへのアクセス](getting-access-to-aem-in-cloud/navigation.md)
    + Cloud Manager へのアクセス{#cloud-service-programs}
       + [Cloud Managerのホームページ](getting-access-to-aem-in-cloud/first-time-login.md)
       + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + [プログラムの作成](getting-access-to-aem-in-cloud/creating-a-program.md)
-      + [サンドボックスプログラム](getting-access-to-aem-in-cloud/sandbox-programs.md)
+      + 本番プログラム{#production-programs}
+         + [概要](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+         + [実稼働プログラムの作成](getting-access-to-aem-in-cloud/creating-production-program.md)
+         + [実稼働プログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + サンドボックスプログラム {#sandbox-programs}
+         + [概要](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+         + [サンドボックスプログラムの作成](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+         + [サンドボックスプログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+         + [Sandboxプログラムの削除](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+         + [サンドボックス環境の休止と休止解除](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + [環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)
       + [CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
@@ -71,7 +78,8 @@ ht-degree: 48%
       + [IP 許可リストの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html)
       + [IP許可リストのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html)
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.2.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.3.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [リリースノート（2021.2.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
       + [リリースノート（2021.1.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
       + [リリースノート（2020.12.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
       + [リリースノート（2020.11.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
