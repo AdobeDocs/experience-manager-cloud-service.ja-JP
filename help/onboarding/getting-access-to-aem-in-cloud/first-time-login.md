@@ -2,17 +2,19 @@
 title: Cloud Managerのホームページ
 description: Cloud Managerのホームページ
 translation-type: tm+mt
-source-git-commit: 78bc94f7e3dab37b7f83f480ef5438165e1897bc
+source-git-commit: 94740ff155aeea8f912598bedc4c17d4bc9d00e6
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 70%
+source-wordcount: '306'
+ht-degree: 47%
 
 ---
 
 
-# Cloud Managerのホームページ{#first-time-login}
+# Cloud Manager ランディングページ {#first-time-login}
 
-Cloud Managerにアクセスするには：
+システム管理者からCloud Managerへのアクセス権が付与されると、Cloud Managerのログインページに移動する電子メールが届きます。
+
+次の手順に従ってCloud Managerにアクセスします。
 
 1. Adobe IDを使って[Experience Cloud](https://experience.adobe.com/)に移動します。
 1. **Experience Manager**を選択します。
@@ -26,7 +28,7 @@ Cloud Managerにアクセスするには：
    >
    >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-## Cloud Manager ランディングページ {#landing-page}
+## Cloud Managerのプログラム{#cloud-manager-landing-page}
 
 [!UICONTROL Cloud Manager]に正常にログインすると、ランディングページに、組織内の既存のプログラムのカードが表示されます。
 
@@ -44,28 +46,21 @@ Cloud Managerにアクセスするには：
 * **プログラムは既に Cloud Manager に存在します**
 
 
-## 既存のプログラムを使用しない Cloud Service への新規プログラムの追加 {#no-program}
-
-
-次の図に示すように、ランディングページは最初のプログラムを作成するよう指示します。
+組織にプログラムが存在しない場合は、次の図に示すように、ランディングページから最初のプログラムの作成が指示されます。
 ![](assets/first_timelogin0.png)
 
 
-## 既存のプログラムを使用した Cloud Service への新規プログラムの追加 {#existing-program}
+組織にプログラムが既に存在する場合は、次の図に示すように、ランディングページから別のプログラムを追加するよう指示され、既存のプログラムもすべて表示されます。
 
+![](assets/first_timelogin1.png)
 
-1. **Adobe [!UICONTROL Experience Cloud]** にログインすると、**プログラムと製品**&#x200B;のリストが表示されます。
+>[!NOTE]
+>Cloud Service 上のプログラムは、サブタイトル **Experience Manager クラウド**（AMS プログラムの **Experience Manager** とは異なります）で示されます。
+>例えば、上のスクリーンショットでは、**We.Retail Global** は AMS プログラム、**We.Retail-Prod Program - Prod** は Cloud Service を通じて利用可能なプログラムです。
 
-   ![](assets/first_timelogin1.png)
+Cloud Managerでプログラムを追加する方法については、次を参照してください。
 
-   Cloud Service 上のプログラムは、サブタイトル **Experience Manager クラウド**（AMS プログラムの **Experience Manager** とは異なります）で示されます。
-
-   >[!NOTE]
-   >例えば、上のスクリーンショットでは、**We.Retail Global** は AMS プログラム、**We.Retail-Prod Program - Prod** は Cloud Service を通じて利用可能なプログラムです。
-
-1. **プログラムと製品**&#x200B;画面からプログラムを追加して、Cloud Serviceで新しいプログラムを作成する方法については、以下を参照してください。
-
-   * [実稼働プログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
-   * [サンドボックスプログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* [実稼働プログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+* [サンドボックスプログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
 
 
