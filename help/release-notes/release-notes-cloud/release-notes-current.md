@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: aadfc38f62a1e3543810447e91910cf71fa93583
+source-git-commit: 137be7fd0fe89429c0d1f028d81e54ce69cc4ef1
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1528'
 ht-degree: 11%
 
 ---
@@ -72,6 +72,52 @@ Customers using the Connected Assets feature can now easily view and track asset
 * CIF コアコンポーネント v1.8.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0)を参照してください。
 
 ## Cloud Manager {#cloud-manager}
+
+このページでは、AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノートの概要を説明しています。
+
+## リリース日 {#release-date-cm-march}
+
+AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日です。
+
+
+### 新機能 {#what-is-new-march}
+
+* IP許可リスト、SSL証明書、カスタムドメイン名に関する既存のCDN設定を持つ環境のお客様には、次のメッセージが表示され、UIを介してセルフサービスを行うことができます。
+
+* 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービス方式で次の操作を行うことができます。
+
+* パイプライン実行画面とアクティビティ画面の両方に、AEM Push Update」ラベルが表示されるようになりました。
+
+* 環境が休止状態になっているが、AEMの更新も使用可能な場合、「休止状態」のステータスは「利用可能な更新」よりも優先されます。
+
+* 統合シェルのユーザープロファイルアイコン（右上）に移動した後、「表示Cloud Managerロール」オプションを選択すると、Cloud Managerロールを表示できるようになりました。
+
+* ラベル「Application for Approval」が「Production Approval」にラベル変更され、より明確になりました。
+
+* 「Version」ラベルが、実稼働パイプラインの実行画面で「Git Tag」に再ラベル付けされました。
+
+* 重要な指標が定義したしきい値を満たさない場合の動作を定義するラベルは、実際の動作（「すぐにキャンセル」および「すぐに承認」）を反映するようにラベルが変更されました。
+
+* AEMCloud ServiceSDKのバージョン`2021.3.4997.20210303T022849Z-210225`に基づいて、クラスとメソッドの非推奨リストが更新されました。
+
+* Cloud Manager実稼働パイプラインに、カスタムUIテスト機能が含まれるようになりました。
+
+### バグ修正 {#bug-fixes-cm-march}
+
+* AEMのプッシュアップグレード中に、パッケージのバージョン管理がスキップされる場合がありました。
+
+* 他のパッケージにパッケージが埋め込まれた場合に、品質の問題が正しく検出されない場合がありました。
+
+* 不明確な状況では、プログラムダイアログを開いたときに生成される追加デフォルトのプログラム名は、既存のプログラム名の重複の場合があります。
+
+* 場合によっては、パイプラインの開始直後にパイプラインの実行ページから移動すると、実際に実行が開始したにもかかわらず、アクションが失敗したことを示すエラーメッセージが表示されます。
+
+* お客様のビルドで無効なパッケージが生成された場合、ビルド手順が不必要に再開されました。
+
+* 場合によっては、IP許可リストの横に緑色の「アクティブ」ステータスが表示される場合があります。このステータスは、その設定が展開されていない場合でも表示されます。
+
+* 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
+
 
 ### リリース日 {#release-date-cm}
 
