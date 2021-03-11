@@ -2,7 +2,7 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法に関する情報です。
 translation-type: tm+mt
-source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
+source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
 workflow-type: tm+mt
 source-wordcount: '3883'
 ht-degree: 64%
@@ -33,7 +33,7 @@ ht-degree: 64%
 >* [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
 >* [キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 >* [ホットリンクの保護](/help/assets/dynamic-media/hotlink-protection.md)
->* [HTTP/2コンテンツの配信](/help/assets/dynamic-media/http2faq.md)
+>* [コンテンツの HTTP/2 配信](/help/assets/dynamic-media/http2faq.md)
 >* CDNレベルでのURLリダイレクト
 >* Akamai ChinaCDN(中国での最適な配信のため)
 
@@ -230,7 +230,7 @@ Image Server 画面では、画像を配信するためのデフォルト設定�
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
-Dynamic Media カラーマネジメントを使用すると、アセットをカラー補正できます。カラー補正により、取り込まれたアセットは、カラースペース（RGB、CMYK、グレー）および埋め込みカラープロファイルを維持します。動的レンディションを要求した場合、画像の色は、CMYK、RGB またはグレー出力を使用するターゲットのカラースペースに補正されます。[画像プリセットの設定](/help/assets/dynamic-media/managing-image-presets.md)を参照してください。
+Dynamic Mediaのカラーマネジメントを使用すると、正しいアセットをカラーマネジメントできます。 カラー補正により、取り込まれたアセットは、カラースペース（RGB、CMYK、グレー）および埋め込みカラープロファイルを維持します。動的レンディションを要求した場合、画像の色は、CMYK、RGB またはグレー出力を使用するターゲットのカラースペースに補正されます。[画像プリセットの設定](/help/assets/dynamic-media/managing-image-presets.md)を参照してください。
 
 画像を要求する際にカラー補正を有効にするための初期設定のカラープロパティを設定するには：
 
