@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 translation-type: tm+mt
-source-git-commit: 901a660424f5e1fded654ddb09f3d872b7cd01b7
+source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
 workflow-type: tm+mt
-source-wordcount: '3221'
-ht-degree: 75%
+source-wordcount: '3299'
+ht-degree: 73%
 
 ---
 
@@ -611,6 +611,9 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 **最初の対象バージョン**：バージョン 2019.6.0
 
 複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。その結果、どの設定が使用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
+
+>[!NOTE]
+>このルールは、同じ設定が複数のパッケージで定義される場合、例えば、構築されたパッケージの全体的なリストで同じパッケージが複製される場合を含め、同じ設定が同じパスで定義される問題を生み出します。 例えば、ビルドで`com.myco:com.myco.ui.apps`と`com.myco:com.myco.all`という名前のパッケージが作成され、`com.myco:com.myco.all`が`com.myco:com.myco.ui.apps`を埋め込む場合、`com.myco:com.myco.ui.apps`内のすべての設定が重複としてレポートされます。 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/aem-project-content-package-structure.md)に従わない場合が一般的です。この例では、パッケージ`com.myco:com.myco.ui.apps`に`<cloudManagerTarget>none</cloudManagerTarget>`プロパティがありません。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
