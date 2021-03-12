@@ -3,10 +3,10 @@ title: AEM Assets as a  [!DNL Cloud Service]  と Brand Portal の連携の設�
 description: AEM Assets と Brand Portal の連携を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
-source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
+source-git-commit: b6283cfff0a0476cc45eb9da75a3a9b2bfdef7bd
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 97%
+source-wordcount: '2248'
+ht-degree: 71%
 
 ---
 
@@ -15,9 +15,162 @@ ht-degree: 97%
 
 Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスから Brand Portal に公開し、Brand Portal ユーザーに配信できます。
 
-**設定ワークフロー**
+## Cloud Managerを使用してBrand Portalをアクティブ化{#activate-brand-portal}
 
-AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携は、Adobe 開発者コンソールを通じて設定されます。このコンソールでは、Brand Portal テナントの認証に使用する Adobe Identity Management サービス（IMS）アカウントトークンを調達します。この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
+Cloud Managerユーザーは、[!DNL Cloud Service]インスタンスとして、AEM Assetsのブランドポータルをアクティブにします。 アクティベーションワークフローは、バックエンドに必要な設定（認証トークン、IMS設定およびBrand Portalクラウドサービス）を作成し、Cloud ManagerのBrand Portalテナントのステータスを反映します。
+
+**前提条件**
+
+[!DNL Cloud Service]インスタンスとしてAEM AssetsでBrand Portalをアクティブにするには、以下が必要です。
+
+* 実行中の AEM Assets as a [!DNL Cloud Service] インスタンス.
+* Cloud Managerにアクセスできるユーザーで、Cloud Manager製品のプロファイルに割り当てられます。 詳しくは、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager)へのアクセスを参照してください。
+
+>[!NOTE]
+>
+>[!DNL Cloud Service]インスタンスとしてのAEM Assetsは、1つのBrand Portalテナントにのみ接続する権利があります。 [!DNL Cloud Service]インスタンスとして、AEM Assets用に複数の環境（開発、制作、ステージ）を作成できます。Brand Portalは1つの環境でのみ有効になります。
+
+**ブランドポータルをアクティブ化する手順**
+
+Brand Portalは、AEM Assetsの環境を[!DNL Cloud Service]インスタンスとして作成するとき、または個別に作成するときにアクティブ化できます。 環境が既に作成済みで、Brand Portalをアクティブにする必要があるとします。
+
+1. Adobeクラウドマネージャーにログインし、**[!UICONTROL 環境]**&#x200B;に移動します。
+
+   **[!UICONTROL 環境]**&#x200B;ページには、既存の環境のリストが表示されます。
+
+1. 環境の詳細を表示するリストから環境を（1つずつ）選択します。
+
+   Brand Portalには利用可能な環境の1つの権利が付与され、**[!UICONTROL 環境情報]**&#x200B;に反映されます。
+
+   Brand Portalに関連付けられている環境を見つけたら、「**[!UICONTROL Brand Portalをアクティブにする]**」ボタンをクリックして、アクティベーションワークフローを開始します。
+
+   ![Brand Portal のライセンス認証](assets/create-environment4.png)
+
+1. アクティベーションワークフローがバックエンドで必要な設定を作成するので、Brand Portalテナントのアクティブ化に数分かかる場合があります。 Brand Portalテナントがアクティブ化されると、ステータスが「アクティブ化済み」に変わります。
+
+   ![表示ステータス](assets/create-environment5.png)
+
+**関連トピック**:
+* [AEM Assetsの追加Cloud Serviceとしてのユーザーと役割](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+
+* [Cloud Managerでの環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+
+
+**Brand Portalテナントにログイン**:
+
+Cloud ManagerでBrand Portalテナントをアクティベーションした後、Admin Consoleから、またはテナントURLを直接使用してBrand Portalにログインできます。
+
+Brand PortalテナントのデフォルトURLは次のとおりです。`https://<tenant-id>.brand-portal.adobe.com/`.
+
+ブランドポータルのURLが不明な場合は、次の手順を実行します。
+
+1. [Admin Console](http://adminconsole.adobe.com/)にログインし、**[!UICONTROL 製品]**&#x200B;に移動します。
+1. 左のナビゲーションバーの[**[!UICONTROL Adobe Experience Managerブランドポータル — ブランドポータル]**]を選択します。
+1. 「**[!UICONTROL ブランドポータルに移動]**」をクリックして、ブラウザーでブランドポータルを直接開きます。
+
+   または、Brand PortalテナントURLをコピーしてブラウザーに貼り付け、Brand Portalインターフェイスを開きます。
+
+   ![ブランドポータルにアクセス](assets/access-bp-on-cloud.png)
+
+
+**接続をテストします。**
+
+次の手順を実行して、[!DNL Cloud Service]インスタンスとしてのAEM AssetsとBrand Portalテナントの接続を検証します。
+
+1. AEM Assets にログインします。
+
+1. **ツール**&#x200B;パネルで、**[!UICONTROL 導入]**／**[!UICONTROL 配布版]**&#x200B;に移動します。
+
+   ![](assets/test-bpconfig1.png)
+
+   Brand Portal 配布エージェント（**[!UICONTROL bpdistributionagent0]**）は、「**[!UICONTROL Brand Portal に公開]**」の下に作成されます。
+
+   ![](assets/test-bpconfig2.png)
+
+
+1. 「**[!UICONTROL Brand Portal に公開]**」をクリックして、配布エージェントを開きます。
+
+   「**[!UICONTROL ステータス]**」タブに配布キューが表示されます。
+
+   配布エージェントには、次の 2 つのキューが含まれます。
+   * **processing-queue**：Brand Portal へのアセット配布用。
+
+   * **error-queue**：配布が失敗したアセット用。
+   >[!NOTE]
+   >
+   >エラーを確認し、**error-queue** を定期的に消去することをお勧めします。
+
+   ![](assets/test-bpconfig3.png)
+
+1. AEM Assets as a [!DNL Cloud Service] と Brand Portal の間の接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
+
+   ![](assets/test-bpconfig4.png)
+
+   *テストパッケージが正常に配信された*&#x200B;ことを示すメッセージが表示されます。
+
+   >[!NOTE]
+   >
+   >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
+
+[!DNL Cloud Service]インスタンスとしてのAEM AssetsとBrand Portalテナントの間の接続を検証するには、AEM AssetsからBrand Portalにアセットを発行します。 接続に成功すると、公開されたアセットがBrand Portalインターフェイスに表示されます。
+
+
+次の操作が可能になっています。
+
+* [AEM Assets から Brand Portal へのアセットの公開](publish-to-brand-portal.md)
+* [AEM Assets から Brand Portal へのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [AEM Assets から Brand Portal へのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Brand PortalからAEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Brand Portalでアセットを発行
+* [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+
+詳しくは、[Brand Portal ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/home.html)を参照してください。
+
+**配布ログ**
+
+配布エージェントのログで、アセット発行ワークフローを監視できます。
+
+例えば、AEM Assets から Brand Portal にアセットを発行し、設定を検証したとします。
+
+1. [設定のテスト](#test-configuration)節で示した手順（1～4）に従い、配布エージェントページに移動します。
+1. 「**[!UICONTROL ログ]** 」をクリックして、処理ログとエラーログを表示します。
+
+   ![](assets/test-bpconfig5.png)
+
+配布エージェントは次のログを生成します。
+
+* 情報：これは、配布エージェントの構成が正常に完了したときにトリガーされるシステムが生成するログです。
+* DSTRQ1（リクエスト 1）：テスト接続時にトリガーされます。
+
+アセットの公開時に、次の要求および応答ログが生成されます。
+
+**配布エージェントの要求**：
+
+* DSTRQ2（リクエスト 2）：アセットの公開リクエストがトリガーされます。
+* DSTRQ3（リクエスト 3）：アセットが存在する AEM Assets フォルダーの公開と、Brand Portal でのフォルダーの複製をおこなう別の要求がトリガーされます。
+
+**配布エージェントの応答**：
+
+* queue-bpdistributionagent0（DSTRQ2）：アセットが Brand Portal に公開されます。
+* queue-bpdistributionagent0（DSTRQ3）：システムは、Brand Portal 内のアセットを含む AEM Assets フォルダーを複製します。
+
+上記の例では、追加の要求と応答がトリガーされます。アセットが初めて発行されたので、Brand Portal で親フォルダー（追加パス）が見つからなかったため、アセットが発行された Brand Portal で同じ名前の親フォルダーを作成する追加の要求をトリガーします。
+
+>[!NOTE]
+>
+>親フォルダーが Brand Portal に存在しない場合や AEM Assets で変更された場合には、追加のリクエストが生成されます。
+
+AEM Assetsのブランドポータルを[!DNL Cloud Service]としてアクティブ化する自動ワークフローに加え、Adobe開発者コンソールを使用して、AEM AssetsをBrand Portalとして[!DNL Cloud Service]に手動で設定する方法もありますが、これは推奨されません。
+
+>[!NOTE]
+>
+>Brand Portalテナントのアクティブ化中に問題が発生した場合は、Adobeサポートに問い合わせる必要があります。
+
+## Adobe開発者コンソールを使用した手動設定{#manual-configuration}
+
+次の節では、Adobe開発者コンソールを使用して、Brand Portalを使用してAEM Assetsを[!DNL Cloud Service]として手動で設定する方法について説明します。
+
+以前は、[!DNL Cloud Service]としてのAEM Assetsは、Adobeデベロッパーコンソールを介してBrand Portalで手動で設定されていました。このコンソールは、Brand Portalテナントの認証用にAdobeのIdentity Managementサービス(IMS)アカウントトークンを調達します。 この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
 
 1. AEM Assets で、IMS アカウントを作成して公開鍵（証明書）を生成します。
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。
@@ -31,7 +184,7 @@ AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携は、Adobe 開�
 >
 >AEM Assets as a [!DNL Cloud Service] インスタンスには、1 つの Brand Portal テナントとの連携のみ設定する必要があります。
 
-## 前提条件 {#prerequisites}
+**前提条件**
 
 AEM Assets と Brand Portal の連携を設定するには以下が必要です。
 
@@ -47,7 +200,6 @@ AEM Assets と Brand Portal の連携を設定するには以下が必要です�
 1. [サービスアカウント（JWT）接続の作成](#createnewintegration)
 1. [IMS アカウントの設定](#create-ims-account-configuration)
 1. [Cloud Service の設定](#configure-the-cloud-service)
-1. [設定のテスト](#test-configuration)
 
 ### IMS 設定の作成 {#create-ims-configuration}
 
@@ -233,89 +385,94 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
    これで、AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの連携が設定されました。
 
-### 設定のテスト {#test-configuration}
+これで、配布エージェントを確認し、ブランドポータルにアセットを発行することで、設定をテストできます。
 
-設定を検証するには、次の手順を実行します。
+<!--
+### Test configuration {#test-configuration}
 
-1. AEM Assets にログインします。
+Perform the following steps to validate the configuration:
 
-1. **ツール**&#x200B;パネルで、**[!UICONTROL 導入]**／**[!UICONTROL 配布版]**&#x200B;に移動します。
+1. Log in to AEM Assets.
 
-   ![](assets/test-bpconfig1.png)
+1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
-   Brand Portal 配布エージェント（**[!UICONTROL bpdistributionagent0]**）は、「**[!UICONTROL Brand Portal に公開]**」の下に作成されます。
+    ![](assets/test-bpconfig1.png)
+
+   A Brand Portal distribution agent (**[!UICONTROL bpdistributionagent0]**) is created under **[!UICONTROL Publish to Brand Portal]**.
 
    ![](assets/test-bpconfig2.png)
 
 
-1. 「**[!UICONTROL Brand Portal に公開]**」をクリックして、配布エージェントを開きます。
+1. Click **[!UICONTROL Publish to Brand Portal]** to open the distribution agent. 
 
-   「**[!UICONTROL ステータス]**」タブに配布キューが表示されます。
+   You can see the distribution queues under the **[!UICONTROL Status]** tab. 
+   
+   A distribution agent contains two queues: 
+   * **processing-queue**: for the distribution of assets to Brand Portal. 
 
-   配布エージェントには、次の 2 つのキューが含まれます。
-   * **processing-queue**：Brand Portal へのアセット配布用。
-
-   * **error-queue**：配布が失敗したアセット用。
+   * **error-queue**: for the assets where distribution has failed. 
+   
    >[!NOTE]
    >
-   >エラーを確認し、**error-queue** を定期的に消去することをお勧めします。
+   >It is recommended to review the failures and  clear the **error-queue** periodically.  
 
    ![](assets/test-bpconfig3.png)
 
-1. AEM Assets as a [!DNL Cloud Service] と Brand Portal の間の接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
+1. To verify the connection between AEM Assets as a [!DNL Cloud Service] and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
    ![](assets/test-bpconfig4.png)
 
-   *テストパッケージが正常に配信された*&#x200B;ことを示すメッセージが表示されます。
+   A message appears that your *test package is successfully delivered*.
 
    >[!NOTE]
    >
-   >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
+   >Avoid disabling the distribution agent, as it can cause the distribution of the assets (running-in-queue) to fail.
 
-次の操作が可能になっています。
+You can now:
 
-* [AEM Assets から Brand Portal へのアセットの公開](publish-to-brand-portal.md)
-* [AEM Assets から Brand Portal へのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [AEM Assets から Brand Portal へのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand PortalからAEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Brand Portalでアセットを発行
-* [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publish assets from AEM Assets to Brand Portal](publish-to-brand-portal.md)
+* [Publish folders from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Publish collections from AEM Assets to Brand Portal](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Publish assets from Brand Portal to AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) - Asset Sourcing in Brand Portal
+* [Publish presets, schemas, and facets to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Publish tags to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-詳しくは、[Brand Portal ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/home.html)を参照してください。
+See [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) for more information.
 
-## 配布ログ {#distribution-logs}
+## Distribution logs {#distribution-logs}
 
-配布エージェントのログで、アセット発行ワークフローを監視できます。
+You can monitor the distribution agent logs for the asset publishing workflow. 
 
-例えば、AEM Assets から Brand Portal にアセットを発行し、設定を検証したとします。
+For example, we have published an asset from AEM Assets to Brand Portal to validate the configuration. 
 
-1. [設定のテスト](#test-configuration)節で示した手順（1～4）に従い、配布エージェントページに移動します。
-1. 「**[!UICONTROL ログ]** 」をクリックして、処理ログとエラーログを表示します。
+1. Follow the steps (from 1 to 4) as shown in the [Test Configuration](#test-configuration) section and navigate to the distribution agent page.
+1. Click **[!UICONTROL Logs]** to view the processing and error logs.
 
    ![](assets/test-bpconfig5.png)
 
-配布エージェントは次のログを生成します。
+The distribution agent has generated the following logs:
 
-* 情報：これは、配布エージェントの構成が正常に完了したときにトリガーされるシステムが生成するログです。
-* DSTRQ1（リクエスト 1）：テスト接続時にトリガーされます。
+* INFO: This is a system-generated log that triggers on successful configuration of the distribution agent. 
+* DSTRQ1 (Request 1): Triggers on test connection.
 
-アセットの公開時に、次の要求および応答ログが生成されます。
+On publishing the asset, the following request and response logs are generated:
 
-**配布エージェントの要求**：
+**Distribution agent request**:
 
-* DSTRQ2（リクエスト 2）：アセットの公開リクエストがトリガーされます。
-* DSTRQ3（リクエスト 3）：アセットが存在する AEM Assets フォルダーの公開と、Brand Portal でのフォルダーの複製をおこなう別の要求がトリガーされます。
+* DSTRQ2 (Request 2): The asset publishing request is triggered.
+* DSTRQ3 (Request 3): The system triggers another request to publish the AEM Assets folder (in which the asset exists) and replicates the folder in Brand Portal.
 
-**配布エージェントの応答**：
+**Distribution agent response**:
 
-* queue-bpdistributionagent0（DSTRQ2）：アセットが Brand Portal に公開されます。
-* queue-bpdistributionagent0（DSTRQ3）：システムは、Brand Portal 内のアセットを含む AEM Assets フォルダーを複製します。
+* queue-bpdistributionagent0 (DSTRQ2): The asset is published to Brand Portal.
+* queue-bpdistributionagent0 (DSTRQ3): The system replicates the AEM Assets folder (containing the asset) in Brand Portal.
 
-上記の例では、追加の要求と応答がトリガーされます。アセットが初めて発行されたので、Brand Portal で親フォルダー（追加パス）が見つからなかったため、アセットが発行された Brand Portal で同じ名前の親フォルダーを作成する追加の要求をトリガーします。
+In the above example, an additional request and response is triggered. The system could not find the parent folder (Add Path) in Brand Portal because the asset was published for the first time, therefore, it triggered an additional request to create a parent folder with the same name in Brand Portal where the asset is published.  
 
 >[!NOTE]
 >
->親フォルダーが Brand Portal に存在しない場合や AEM Assets で変更された場合には、追加のリクエストが生成されます。
+>Additional request is generated in case the parent folder does not exist in Brand Portal or has been modified in AEM Assets. 
+-->
 
 <!--
 
