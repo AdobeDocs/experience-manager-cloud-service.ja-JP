@@ -2,10 +2,10 @@
 title: 'サンドボックスプログラムの作成 '
 description: 'サンドボックスプログラムの作成 '
 translation-type: tm+mt
-source-git-commit: 5773683a75254855687266929a3e1876c8f06e61
+source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 6%
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
@@ -13,6 +13,13 @@ ht-degree: 6%
 # サンドボックスプログラムの作成 {#create-sandbox-program}
 
 サンドボックスプログラムを作成するには、次の手順に従います。
+
+1. Cloud Managerのランディングページーを起動し、画面の右上隅にある「**追加プログラム**」をクリックします。
+
+   ![](assets/first_timelogin1.png)
+
+   >[!NOTE]
+   >Cloud Managerへのアクセス方法について詳しくは、[Cloud Managerランディングページ](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)を参照してください。
 
 1. プログラムの作成ウィザードで、「**サンドボックスを設定**」を選択します。 ユーザーは、プログラム名を送信してから&#x200B;**「作成**」を選択します。
 
