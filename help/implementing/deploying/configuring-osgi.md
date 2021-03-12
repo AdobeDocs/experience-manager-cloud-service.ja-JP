@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 translation-type: tm+mt
-source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 100%
@@ -180,7 +180,7 @@ OSGi 設定ファクトリのファイル名には、`<PID>-<factory-name>.cfg.j
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
 
-### AEM SDK Quickstart を使用した OSGi 設定の生成  {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}
+### AEM SDK Quickstart を使用した OSGi 設定の生成  {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネントの設定、および JSON として OSGi 設定を書き出すために使用できます。これは、OSGi プロパティとその値の形式が AEM プロジェクトで OSGi 設定を定義する開発者には理解されない可能性のある、AEM が提供する OSGi コンポーネントを設定する場合に役立ちます。AEM Web コンソールの設定 UI を使用すると、リポジトリーに `.cfg.json` ファイルが書き込まれるので、AEM プロジェクト定義の OSGi 設定が生成される設定と異なる場合、ローカル開発中の予期しない動作を回避するために、これに注意が必要です。
 
