@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 translation-type: tm+mt
-source-git-commit: 0a2d44a63c3d26460c0836ab6b28989a0aad72da
+source-git-commit: a04935b3b71cff9f5f0fbc85b4d3db4dd96a28fc
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 100%
@@ -164,11 +164,11 @@ To add a new configuration to the repository you need to know the following:
 
    If so, this configuration can be copied to ` /apps/<yourProject>/`, then customized in the new location. -->
 
-## OSGi 設定の作成
+## OSGi 設定の作成  {#creating-sogi-configurations}
 
 以下に説明するように、新しい OSGi 設定を作成する方法は 2 つあります。前者の方法は、通常、開発者によってよく知られている OSGi のプロパティと値を持つカスタム OSGi コンポーネントの設定に使用され、後者は AEM が提供する OSGi コンポーネントの設定に使用されます。
 
-### OSGi 設定の書き込み
+### OSGi 設定の書き込み  {#writing-osgi-configurations}
 
 JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、よく知られている OSGi コンポーネント、特に、設定を定義する同じ開発者が設計および開発したカスタム OSGi コンポーネントに対して、OSGi 設定をすばやく作成する方法です。この方法は、同じ OSGi コンポーネントの設定を様々な実行モードフォルダーにコピー／貼り付け、更新する場合にも利用できます。
 
@@ -180,7 +180,7 @@ OSGi 設定ファクトリのファイル名には、`<PID>-<factory-name>.cfg.j
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
 
-### AEM SDK Quickstart を使用した OSGi 設定の生成
+### AEM SDK Quickstart を使用した OSGi 設定の生成  {#generating-osgi-configuratuions-using-the-aem-sdk-quickstart}
 
 AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネントの設定、および JSON として OSGi 設定を書き出すために使用できます。これは、OSGi プロパティとその値の形式が AEM プロジェクトで OSGi 設定を定義する開発者には理解されない可能性のある、AEM が提供する OSGi コンポーネントを設定する場合に役立ちます。AEM Web コンソールの設定 UI を使用すると、リポジトリーに `.cfg.json` ファイルが書き込まれるので、AEM プロジェクト定義の OSGi 設定が生成される設定と異なる場合、ローカル開発中の予期しない動作を回避するために、これに注意が必要です。
 
@@ -203,7 +203,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
 
 
-## OSGi 構成プロパティの形式
+## OSGi 構成プロパティの形式  {#osgi-configuration-property-formats}
 
 ### インライン値 {#inline-values}
 
