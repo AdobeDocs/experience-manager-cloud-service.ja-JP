@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+source-git-commit: 40ea422718a3613889d73fcf30d6482e9c82907d
 workflow-type: tm+mt
 source-wordcount: '1926'
 ht-degree: 100%
@@ -203,7 +203,7 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 
 Cloud Manager または AEM as a Cloud Service 環境としてアクセスするには、Cloud Manager 製品のプロファイルに割り当てられている必要があります。
 
-Cloud Manager の特定の機能の可用性を管理するユーザーの役割について詳しくは、[役割の定義](/help/onboarding/what-is-required/add-users-roles.md#role-definitions)を参照してください。
+Cloud Manager の特定の機能の可用性を管理するユーザーの役割について詳しくは、[役割の定義](/help/onboarding/what-is-required/access-rights-granted.md##role-definitions)を参照してください。
 
 >[!NOTE]
 >Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。特定の権限、事前設定済みのタスク、または各役割に関連付けられた権限を持つ各役割について詳しくは、[役割に基づく権限](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.translate.html)を参照してください。
