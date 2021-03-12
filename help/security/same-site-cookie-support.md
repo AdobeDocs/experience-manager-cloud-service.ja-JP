@@ -2,7 +2,7 @@
 title: Cloud Serviceと同じサイトでのAdobe Experience Managerのcookieサポート
 description: Cloud ServiceとしてのAdobe Experience ManagerのISameサイトcookieサポート
 translation-type: tm+mt
-source-git-commit: d9a7836034134fac91529a1996c8f05a48a5f4fd
+source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -26,5 +26,5 @@ ht-degree: 0%
 1. 次の図に示すように、login-token cookie **の** SameSite属性を`None`に設定します
    ![サメサイト](/help/security/assets/samesite1.png)
 1. 「保存」をクリックします。
-1. AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configuratuions-using-the-aem-sdk-quickstart)を使用したOSGi設定の生成で説明されている手順に従って、この特定の設定のJSON形式の設定を生成します。[
+1. AEM SDK Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)を使用したOSGi設定の生成で説明されている手順に従って、この特定の設定のJSON形式の設定を生成します。[
 1. [Cloud Manager API Format for Setting Properties](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) OSGiドキュメントの手順に従って設定を適用します。
