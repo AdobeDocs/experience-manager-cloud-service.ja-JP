@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 translation-type: tm+mt
-source-git-commit: 852a4742a17065b9d38bd78d1e68a92854001842
+source-git-commit: 6c9a0779cfb9c3c2088a17e67437c76b589276f0
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 44%
+source-wordcount: '696'
+ht-degree: 41%
 
 ---
 
@@ -52,6 +52,10 @@ AEM管理のCDN設定では、デフォルトで、実稼働環境用と非実�
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
 
+>[!NOTE]
+>
+>独自のCDNを管理するお客様は、AEM CDN経由で送信されるヘッダーの整合性を確保する必要があります。 例えば、すべての`X-Forwarded-*`ヘッダーを消去し、既知の値と制御値に設定することをお勧めします。 例えば、`X-Forwarded-For`にはクライアントのIPアドレスを含め、`X-Forwarded-Host`にはサイトのホストを含める必要があります。
+
 お客様のCDNからAEM管理のCDNへのホップは効率的ですが、ホップの増加に伴いパフォーマンスの低下が生じる可能性があります。
 
 この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
@@ -63,7 +67,7 @@ AEMが管理するCDNは、次の情報を含む各リクエストにヘッダ�
 * 国コード：`x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
 
-国コードの値は、[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明されるアルファ2コードです。
+国コードの値は、Alpha-2コード（[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明）です。
 
 大陸コードの値は次のとおりです。
 
