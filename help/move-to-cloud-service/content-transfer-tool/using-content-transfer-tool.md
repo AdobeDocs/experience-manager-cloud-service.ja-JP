@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 translation-type: tm+mt
-source-git-commit: 7d51252abcc5fe2def9a55c6324bf75479ef449a
+source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 73%
+source-wordcount: '2307'
+ht-degree: 72%
 
 ---
 
@@ -208,6 +208,8 @@ ht-degree: 73%
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
 
+各手順(抽出と取り込み)が完了したら、ログをチェックし、エラーを探します。  エラーは、報告された問題に対処するか、Adobeサポートに問い合わせて、即座に対処する必要があります。
+
 既存の移行セットのログを&#x200B;*概要*&#x200B;ページから表示できます。それには、次の手順に従います。
 
 1. *概要*&#x200B;ページに移動し、ログを表示する移行セットを選択し、アクションバーの「**ログを表示**」をクリックします。
@@ -266,6 +268,7 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 詳しくは、[Oak Runnable Jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)（Oak 実行可能 Jar）を参照してください。
 
 整合性チェックのために上記で指定された *OUT_DIR* に作成されたファイルを調べて、不明なバイナリのパスや必要なアクション（バックアップからの復元、パスの削除、インデックスの再作成など）を確認できます。
+
 
 ### UI の動作 {#ui-behavior}
 
