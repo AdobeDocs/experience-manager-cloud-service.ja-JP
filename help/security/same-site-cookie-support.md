@@ -2,9 +2,9 @@
 title: Cloud Serviceと同じサイトでのAdobe Experience Managerのcookieサポート
 description: Cloud Serviceと同じサイトでのAdobe Experience Managerのcookieサポート
 translation-type: tm+mt
-source-git-commit: 4f25aa54bd40644912e0e430a81f1a17d545e3f8
+source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 この設定のデフォルト値(`SameSite=Lax`)は、AEMインスタンスまたはサービス間の認証が機能しない原因になる場合があります。 これは、これらのサービスのドメインやURL構造が、このcookieポリシーの制約に該当しない可能性があるからです。
 
-この問題を回避するには、ログイントークンのSameSite cookieを`None`に設定する必要があります。
+これを回避するには、ログイントークンのSameSite cookie属性を`None`に設定する必要があります。
 
 これを行うには、次の手順に従います。
 
