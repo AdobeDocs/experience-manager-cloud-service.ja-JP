@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: fb0700f2b25917dd97381e0270995d7cef646edb
+source-git-commit: 608c512831ea7b0a516a4100a2d76e91f47ec73c
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1667'
 ht-degree: 10%
 
 ---
@@ -210,13 +210,20 @@ Best Practices Analyzer v2.1.2のリリース日は2021年2月19日です。
 
 ### コードリファクタリングツールの新機能{#what-is-new-crt}
 
-* AIO-CLIプラグインの新しいバージョンがリリースされました。 このプラグインの最新バージョンには、リポジトリの最新化機能に関するいくつかのバグ修正が含まれています。
-このプラグインの詳細については、[統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)を参照してください。
+* AIO-CLIプラグインの新しいバージョンがリリースされました。 このプラグインの最新バージョンには、Repository ModenizerとDispatcher Converterの新機能とバグ修正が含まれています。    このプラグインの詳細については、[統合エクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=en#benefits)を参照してください。
 
-### バグ修正 {#bug-fixes-crt}
+* Repository Modernizerの新機能および機能強化。 [GitHubリソースを参照：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
+   * OSGi設定（RepoInit設定を除く）を推奨の.cfg.json形式に正規化します。
+   * OSGi configフォルダの名前を指定した形式に変更します。
+   * ui.apps.structureプロジェクトを生成します。
+   * 分析モジュールを作成します。
 
-* リポジトリの最新化で行われたいくつかのバグ修正。
-[GitHubリソースを参照：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
+* Dispatcher Converterの新機能および機能強化です。 [GitHubリソースを参照：ディスパッチャーコンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
+   * コンテンツのライニングの代わりに、異なる挿入用に別々のファイルを作成する。
+   * vhostsのフォルダーパスとvhostファイルへのパスの両方を処理できます。
+   * 600件以上の範囲の大規模な顧客構成を持つファーム・ファイルの生成
+
+
 
 
 
