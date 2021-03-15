@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# Markdown{#markdown}
+# Markdown {#markdown}
 
 [オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)中に、コンテンツフラグメントエディターは *Markdown* 構文を使用してユーザーがコンテンツを簡単に記述できるようにします。
 
