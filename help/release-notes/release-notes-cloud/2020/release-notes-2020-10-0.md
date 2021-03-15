@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。'
 translation-type: tm+mt
 source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
@@ -94,7 +94,7 @@ AEM as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020 �
 
 * 何も存在しない場合、環境ページにパブリッシュセグメントと Dispatcher セグメントが表示されることがありました。
 
-## Adobe Experience Manager as a Cloud Service の基礎 {#cloud-service-foundation}
+## Adobe Experience Manager as a Cloud Service の基盤 {#cloud-service-foundation}
 
 ### ワークフロー {#workflows}
 
