@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
 workflow-type: tm+mt
 source-wordcount: '2284'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ### ログ {#logs}
 
-ローカル開発の場合、ログエントリは    `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
+ローカル開発の場合、ログエントリは       `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
 クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -220,8 +220,8 @@ AEM as a Cloud Service では、送信メールを暗号化する必要があり
 デフォルトでは、送信電子メールは無効になっています。有効にするには、以下を含んだサポートチケットを送信します。
 
 1. メールサーバーの完全修飾ドメイン名（例：`smtp.sendgrid.net`）
-1. 使用するポート。メールサーバーでサポートされている場合はポート465、それ以外の場合はポート587にする必要があります。ポート587は、メールサーバーで必要な場合にのみ使用でき、そのポートでTLSを適用します
-1. メールアウトする環境のプログラムIDと環境ID
+1. 使用するポート。メールサーバーでサポートされている場合は、ポート 465 にしてください。サポートされていない場合は、ポート 587 にします。ポート 587 を使用できるのは、メールサーバーがそのポートで TLS を要求し適用する場合のみです
+1. メールの送信元となる環境のプログラム ID と環境 ID
 1. オーサー、パブリッシュ、またはその両方で SMTP アクセスが必要かどうか
 
 ### 電子メールの送信 {#sending-emails}
@@ -238,7 +238,7 @@ AEM CS では、ポート 465 でメールを送信する必要があります�
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/notification.html)を参照してください。AEMをCloud Serviceとして使用する場合は、`com.day.cq.mailer.DefaultMailService OSGI`サービスに対して次の調整を行う必要があります。
+電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/notification.html)を参照してください。AEM as a Cloud Service では、`com.day.cq.mailer.DefaultMailService OSGI` サービスに対して次の調整をおこなう必要があります。
 
 ポート 465 がリクエストされた場合：
 
@@ -250,4 +250,4 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://docs.adobe.com
 * `smtp.port` を `587` に設定
 * `smtp.ssl` を `false` に設定
 
-`smtp.starttls`プロパティは、実行時にAEMによって適切な値にCloud Serviceとして自動的に設定されます。 したがって、`smtp.tls`がtrueに設定された場合、`smtp.startls`は無視されます。 `smtp.ssl`がfalseに設定されている場合、`smtp.starttls`はtrueに設定されます。 これは、OSGI設定で設定されている`smtp.starttls`値に関係なく、
+`smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.tls` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
