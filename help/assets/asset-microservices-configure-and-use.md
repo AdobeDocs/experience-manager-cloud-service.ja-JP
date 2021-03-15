@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 57ae02b90d1e78e8a940b65d195bc2077feec2d2
 workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Experience Manager では、次のレベルの処理が可能です。
 
 処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、 [!DNL Adobe Asset Link] [ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
 
-### 標準プロファイル{#create-standard-profile}を作成
+### 標準プロファイルの作成 {#create-standard-profile}
 
 標準の処理プロファイルを作成するには、次の手順に従います。
 
@@ -108,7 +108,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 画像、ビデオ、ドキュメントおよびその他のファイル形式を、サムネール、抽出したテキストおよびメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は[!DNL Asset Compute Service]を使って[カスタムアプリケーション](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja)を作成し、サポートされている使用例に対応できます。 [!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
+デベロッパーは、[!DNL Asset Compute Service] を使用して、サポートされる使用例に応じた[カスタムアプリケーションを作成](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=ja)できます。[!DNL Experience Manager]は、管理者が設定したカスタムプロファイルを使用して、これらのカスタムアプリケーションをユーザーインターフェイスから呼び出すことができます。[!DNL Asset Compute Service] は、外部サービスを呼び出す次の使用例をサポートしています。
 
 * [!DNL Adobe Photoshop] の [ImageCutout API](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) を使用して、結果をレンディションとして保存します。
 * サードパーティシステムを呼び出して、PIM システムなどのデータをアップデートします。
@@ -180,24 +180,24 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 後処理ワークフロー {#post-processing-workflows}
 
-アセットの追加処理が必要で、処理プロファイルを使用して処理できない場合は、後処理ワークフローを設定に追加できます。 これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
+処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
 
-後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、[!DNL Experience Manager] で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動でワークフローにトリガーする必要はありません。 次に例を示します。
+後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、[!DNL Experience Manager] で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動で追加してワークフローをトリガーする必要はありません。次に例を示します。
 
 * アセットを処理するためのカスタムワークフロー手順。
 * 外部システムから提供されるアセット（製品やプロセスの情報など）にメタデータやプロパティを追加するための統合機能。
 * 外部サービスによる追加処理。
 
-後処理ワークフローの設定を[!DNL Experience Manager]に追加するには、次の手順に従います。
+後処理ワークフロー設定を [!DNL Experience Manager] に追加するには、次の手順に従います。
 
-* 1 つ以上のワークフローモデルの作成。このドキュメントでは、これらのカスタムモデルを&#x200B;*後処理ワークフローモデル*&#x200B;と呼びます。 これらは、通常の[!DNL Experience Manager]ワークフローモデルです。
-* これら追加のモデルに必要なワークフロー手順です。 デフォルトのワークフローの手順を確認し、必要なデフォルトの手順をすべてカスタムワークフローに追加します。 手順は、ワークフローモデルの設定に基づいてアセットに対して実行されます。例えば、アセットのアップロード時に自動的にスマートタグを実行する場合は、カスタムの後処理ワークフローモデルに手順を追加します。
+* 1 つ以上のワークフローモデルを作成します。このドキュメントでは、これらのカスタムモデルを&#x200B;*後処理ワークフローモデル*&#x200B;と呼びます。これらは、通常の [!DNL Experience Manager] ワークフローモデルです。
+* 必要なワークフローステップをこれらのモデルに追加します。デフォルトワークフローのステップを確認し、必要なデフォルトステップをすべてカスタムワークフローに追加します。手順は、ワークフローモデルの設定に基づいてアセットに対して実行されます。例えば、アセットのアップロード時に自動的にスマートタグ付けを実行する場合は、そのステップをカスタムの後処理ワークフローモデルに追加します。
 * [!UICONTROL DAM アセットの更新ワークフロー完了プロセス]ステップを最後に追加します。この手順を追加すると、Experience Manager がいつ処理が終了したかを把握して、アセットを処理済みとしてマークできるので、アセットに&#x200B;*新規*&#x200B;が表示されます。
 * Custom Workflow Runner サービスの設定を作成すると、パス（フォルダーの場所）または正規表現で後処理ワークフローモデルの実行を設定できます。
 
 ### 後処理ワークフローモデルの作成 {#create-post-processing-workflow-models}
 
-後処理ワークフローモデルは、通常の [!DNL Experience Manager] ワークフローモデルです。リポジトリの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
+後処理ワークフローモデルは、通常の [!DNL Experience Manager] ワークフローモデルです。リポジトリーの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
 処理ステップは、ニーズに応じて追加する必要があります。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
 
@@ -207,9 +207,9 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 アセットマイクロサービスの処理が終了した後に、システム内でアップロードまたは更新されたアセットに対して実行する後処理ワークフローモデルを設定するには、Custom Workflow Runner サービスを設定する必要があります。
 
-Adobe CQDAMカスタムワークフローランナー(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)はOSGiサービスで、次の2つの設定オプションを提供します。
+Adobe CQ カスタム DAM ワークフローランナー（`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`）は OSGi サービスであり、次の 2 つの設定オプションを提供します。
 
-* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリパスに基づいて、複数のワークフローモデルをリストアップできます。パスとモデルはコロンで区切る必要があります。単純なリポジトリパスがサポートされており、`/var` パス内のワークフローモデルにマッピングされる必要があります。例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
+* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。パスとモデルはコロンで区切る必要があります。単純なリポジトリーパスがサポートされており、`/var` パス内のワークフローモデルにマッピングされる必要があります。例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
 
 >[!NOTE]
@@ -223,7 +223,7 @@ Adobe CQDAMカスタムワークフローランナー(`com.adobe.cq.dam.processo
 
 * ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。[!DNL Experience Manager] を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
 * 現在、サポートはレンディションの生成に限られています。新しいアセットの生成はサポートされていません。
-* 現在、メタデータ抽出のファイルサイズの上限は約10 GBです。 非常に大きなアセットをアップロードする場合、メタデータの抽出操作に失敗することがあります。
+* 現在、メタデータ抽出のファイルサイズ制限は約 10 GBです。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 
 >[!MORELIKETHIS]
 >
