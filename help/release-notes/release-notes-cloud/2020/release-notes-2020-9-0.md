@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service の 2020.9.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.9.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート。'
 translation-type: tm+mt
 source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
