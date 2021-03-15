@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8f36e2f6978ee7723c53496ef83bb2959bbc58bc
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12
 
 ### 新機能 {#what-is-new}
 
-* [SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
+* [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
 
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
+* [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)のセルフサービス管理。
 
-* **環境**&#x200B;の詳細ページが更新され、環境上のカスタムドメイン名とIP許可リストを管理できるようになりました。
+* **環境**&#x200B;の詳細ページが更新され、環境のカスタムドメイン名と IP 許可リストを管理できるようになりました。
 
 
 ### バグ修正 {#bug-fixes}
