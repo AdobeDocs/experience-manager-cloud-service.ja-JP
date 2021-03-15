@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 さらに、[!DNL Experience Manager Assets] は、プレビューとレンディションの生成、およびフルテキストインデックス用のメタデータとテキストの抽出をサポートする拡張機能を提供します。この拡張サポートは、[アセットマイクロサービス](asset-microservices-configure-and-use.md)を使用して提供されます。
 
-アセットマイクロサービスを使用したアセットの変換の主な要素は次のとおりです。
+アセットマイクロサービスを使用したアセット変換のハイライトは次のとおりです。
 
 * アドビのアプリケーションおよびサービス（ または PDF など）で生成される主要な [Adobe ファイル形式](#adobe-formats)（[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]、および [!DNL Adobe Acrobat] または PDF。
 * 主要な[イメージングファイル形式](#image-formats)。
@@ -25,7 +25,7 @@ ht-degree: 93%
 * Microsoft Office 形式や OpenDocument 形式などの一般的な[ドキュメント形式](#document-formats)。
 * 各種の[ビデオ](#video-formats)および[オーディオ](#audio-formats)形式。
 
-次の凡例で、各形式のサポートレベルを説明します。
+次の凡例は、各形式に対するサポートのレベルを表しています。
 
 | サポートレベル | 説明 |
 | ------------- | --------------------------- |
@@ -92,7 +92,7 @@ ht-degree: 93%
 
 ## 3D 形式 {#support-3d-formats}
 
-次の3D形式がサポートされています。
+次の 3D 形式がサポートされています。
 
 [Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)も参照してください。
 
@@ -226,7 +226,7 @@ ht-degree: 93%
 
 ## ヒントと制限事項 {#limitations-and-tips}
 
-* 現在、メタデータ抽出のファイルサイズの上限は約10 GBです。 非常に大きなアセットをアップロードする場合、メタデータの抽出操作に失敗することがあります。
+* 現在、メタデータ抽出のファイルサイズ制限は約 10 GBです。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 
 >[!MORELIKETHIS]
 >
