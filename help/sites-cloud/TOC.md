@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: e381c83eb37e3b2ede1de20eb2f7e3a6eb51ce5e
 workflow-type: tm+mt
 source-wordcount: '307'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 94%
       + [コンポーネントコンソール](authoring/features/components-console.md)
       + [レスポンシブレイアウト](authoring/features/responsive-layout.md)
       + [タグの使用](authoring/features/tags.md)
-      + [プログレッシブWebアプリ機能を有効にする](authoring/features/enable-pwa.md)
+      + [プログレッシブ Web アプリ機能の有効化](authoring/features/enable-pwa.md)
    + プロジェクト {#projects}
       + [プロジェクトの操作](authoring/projects/overview.md)
       + [プロジェクトの管理](authoring/projects/managing.md)
