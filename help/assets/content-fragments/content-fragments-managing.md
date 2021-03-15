@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 33f0980b138959ab4bc13eb5fe80733a0b4ef3a2
 workflow-type: tm+mt
 source-wordcount: '1593'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# コンテンツフラグメントの管理{#managing-content-fragments}
+# コンテンツフラグメントの管理 {#managing-content-fragments}
 
 コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
@@ -69,9 +69,9 @@ ht-degree: 89%
 1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
    >[!NOTE]
-   >コンソールの&#x200B;**リスト**&#x200B;モードでは、**表示設定**&#x200B;を更新して&#x200B;**コンテンツフラグメントモデル**&#x200B;列を有効にできます。
+   >コンソールの&#x200B;**リスト**&#x200B;モードでは、**表示設定**&#x200B;を更新して「**コンテンツフラグメントモデル**」列を有効にできます。
 
-## アセットコンソールのコンテンツフラグメントに対するアクション{#actions-for-a-content-fragment-assets-console}
+## Assets コンソールでコンテンツフラグメントに対して使用できるアクション {#actions-for-a-content-fragment-assets-console}
 
 **Assets** コンソールでは、次のいずれかからコンテンツフラグメントに対して様々なアクションを使用できます。
 
@@ -143,13 +143,13 @@ ht-degree: 89%
    >
    >「**保存して閉じる**」または「**キャンセル**」のどちらをクリックした場合も、エディターが終了します。これらの両方のオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、キャンセルおよびバージョン](#save-cancel-and-versions)を参照してください。
 
-## コンテンツフラグメントエディターのモードとアクション{#modes-actions-content-fragment-editor}
+## コンテンツフラグメントエディターのモードとアクション {#modes-actions-content-fragment-editor}
 
 コンテンツフラグメントエディターからは、様々なモードとアクションを使用できます。
 
-### コンテンツフラグメントエディター{#modes-in-the-content-fragment-editor}のモード
+### コンテンツフラグメントエディターのモード {#modes-in-the-content-fragment-editor}
 
-サイドパネルのアイコンを使用して、様々なモードを切り替えます。
+サイドパネルのアイコンを使用して、様々なモード間を移動できます。
 
 * バリエーション：[コンテンツの編集](#editing-the-content-of-your-fragment)と[バリエーションの管理](#creating-and-managing-variations-within-your-fragment)
 
@@ -161,25 +161,25 @@ ht-degree: 89%
 
 ![モード](assets/cfm-managing-04.png)
 
-### コンテンツフラグメントエディターのツールバーアクション{#toolbar-actions-in-the-content-fragment-editor}
+### コンテンツフラグメントエディターのツールバーアクション {#toolbar-actions-in-the-content-fragment-editor}
 
 上部のツールバーには、複数のモードから使用できる機能があります。
 
 ![モード](assets/cfm-managing-top-toolbar.png)
 
-* フラグメント名の下に、現在のフラグメントの作成に使用されている[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)の名前が表示されます。
+* フラグメント名の下に、現在のフラグメントの作成に使用された[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)の名前が表示されます。
 
-   * また、この名前はモデルエディタを開くリンクでもあります。
+   * また、この名前はモデルエディターを開くリンクでもあります。
 
-* フラグメントのステータスを確認する。例えば、作成、変更、公開の日時に関する情報です。 ステータスも色分けされています。
+* 例えば、フラグメントの作成、変更、公開の日時については、フラグメントのステータスを参照してください。また、ステータスは次のように色分けもされています。
 
    * 新規：灰色
    * ドラフト：青
-   * 発行済み：緑
-   * 変更日：オレンジ
-   * 非アクティブ：red
+   * 公開済み：緑
+   * 変更：オレンジ
+   * アクティベートを解除済み：赤
 
-* **[フラグメントを](#publishing-and-referencing-a-fragment)** 発行します。
+* フラグメントを&#x200B;**[公開](#publishing-and-referencing-a-fragment)**&#x200B;できます。
 
 ## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
 
@@ -309,7 +309,7 @@ ht-degree: 89%
 
 ![比較](assets/cfm-managing-06.png)
 
-## 特定のバージョンに戻す  {#reverting-to-a-version}
+## 特定のバージョンへの復帰 {#reverting-to-a-version}
 
 次の方法で特定のバージョンのフラグメントに戻すことができます。
 
@@ -327,8 +327,8 @@ ht-degree: 89%
 
 コンテンツフラグメントを使用するには、パブリッシュ環境で公開する必要があります。次の方法で公開できます。
 
-* 創造後アセットコンソール](#actions-for-a-content-fragment-assets-console)で使用可能な[アクションを使用して
-* [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から
+* 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
+* [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
 * [フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
 
 >[!CAUTION]
