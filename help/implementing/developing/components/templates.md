@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: 73e7f9a5b0976ebd5228c182d47c1058290f7629
 workflow-type: tm+mt
 source-wordcount: '3296'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # ページテンプレート {#page-templates}
 
-ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートによって、結果ページの構造、すべての初期コンテンツ、使用可能なコンポーネント（設計プロパティ）が定義されます。これにはいくつかの利点があります。
+ページを作成する場合は、テンプレートを選択する必要があります。ページテンプレートは、新しいページのベースとして使用されます。テンプレートによって、結果ページの構造、すべての初期コンテンツ、使用可能なコンポーネント（設計プロパティ）が定義されます。これには、次のようないくつかの利点があります。
 
 * ページテンプレートによって、専門的な作成者が[テンプレートを作成および編集](/help/sites-cloud/authoring/features/templates.md)できます。
    * このような専門的な作成者は、**テンプレート作成者**&#x200B;と呼ばれます。
@@ -99,7 +99,7 @@ ht-degree: 96%
 
    テンプレート作成者がテンプレートを有効にする方法について詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author)を参照してください。
 
-   テンプレートの有効化に関する技術的な詳細については、このドキュメントの「[Enabling and Allowing a Template for Us](#enabling-and-allowing-a-template-for-use)e」を参照してください。
+   テンプレートの有効化の技術的な詳細については、このドキュメントの[使用するテンプレートの有効化と許可](#enabling-and-allowing-a-template-for-use)を参照してください。
 
 1. テンプレートを使用してコンテンツページを作成します。
 
@@ -112,13 +112,13 @@ ht-degree: 96%
 
 >[!TIP]
 >
->国際化する必要がある情報は、テンプレートに含めないでください。内部化の目的では、コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)の[ローカライゼーション機能を推奨します。
+>国際化する必要がある情報は、テンプレートに含めないでください。国際化のためには、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja)の利用をお勧めします。
 
 >[!NOTE]
 >
->テンプレートは、ページ作成ワークフローを合理化する強力なツールです。 ただし、テンプレートが多すぎると作成者を圧倒し、ページ作成を混乱させる可能性があります。 テンプレートの数を100未満に抑えるのが一般的です。
+>テンプレートは、ページ作成ワークフローを効率化する強力なツールです。ただし、テンプレートが多すぎると作成者が圧倒され、ページ作成がを混乱するおそれがあります。経験上、テンプレートの数を 100 未満に抑えるのがよいでしょう。
 >
->Adobeでは、パフォーマンスに影響が及ぶ可能性があるので、1000を超えるテンプレートを使用することはお勧めしません。
+>パフォーマンスに影響が及ぶ可能性があるので、1000 個を超えるテンプレートを用意することはお勧めしません。
 
 >[!NOTE]
 >
@@ -499,7 +499,7 @@ GitHub のコード
 
 1. **許可されたテンプレート**
 
-   * 適切なページまたはサブブランチのルートページの[**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
+   * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
       `cq:allowedTemplates` 
 を 
@@ -543,7 +543,7 @@ GitHub のコード
          * このノードの `cq:policy` プロパティは、実際のコンテンツポリシーを指します（すなわち、このプロパティは、そのコンポーネントのデザイン設定を保持しています）。
             * このため、同じコンテンツポリシー設定を再利用する複数のテンプレートを持つことができます。
 
-### Template Availability {#template-availability}
+### 使用可能なテンプレート {#template-availability}
 
 サイト管理インターフェイスで新しいページを作成する場合、使用可能なテンプレートのリストは、新しいページの場所と、各テンプレートで指定されている配置制限によって異なります。
 
