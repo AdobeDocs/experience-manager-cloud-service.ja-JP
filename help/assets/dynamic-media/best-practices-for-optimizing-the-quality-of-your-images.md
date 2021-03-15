@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
 workflow-type: tm+mt
 source-wordcount: '1452'
-ht-degree: 89%
+ht-degree: 92%
 
 ---
 
@@ -41,7 +41,7 @@ AEM には、画像をチューニングおよび最適化して結果をレン�
 
 画像のシャープニングは、Web サイト上の画像を管理するうえで最も難しい操作であり、多くの誤りが発生するところです。次の補助的なリソースを参照して、AEM でのシャープニングおよびアンシャープニングマスクの仕組みについて詳しく確認してください。
 
-* ベストプラクティスに関するホワイトペーパー[AdobeDynamic Mediaクラシック](/help/assets/dynamic-media/assets/sharpening_images.pdf)のシャープの適用もAEMに適用されます。
+* ベストプラクティスに関するホワイトペーパー [Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf) は AEM にも当てはまります。
 
 * [AEM ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)での画像へのシャープの適用をご覧ください。
 
@@ -66,7 +66,7 @@ AEM を使用すれば、取り込み時、配信時またはその両方で画�
 
       画像のシャープニングに関する AEM ヘルプトピック。
 
-      ベストプラクティスに関するホワイトペーパー[AdobeDynamic Mediaクラシック画質とシャープのベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)
+      ベストプラクティスに関するホワイトペーパー [Adobe Dynamic Media Classic (Scene7) Image Quality and Sharpening Best Practices](/help/assets/dynamic-media/assets/sharpening_images.pdf)。
 
       * AEM では第 4 パラメーターの monochrome（0,1）も制御できます。このパラメーターでは、アンシャープマスクをそれぞれの色成分に個別に適用するか（値が 0 の場合）、または画像の明るさ／明度に対して適用するか（値が 1 の場合）を指定します。
 
@@ -119,7 +119,7 @@ JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用し�
 
 テストする際に、ワークフローを最適化するには、次の一般的な推奨事項が役立ちます。
 
-* 様々なパラメーターをリアルタイムで、直接URLでテストします。
+* 様々なパラメーターを直接 URL 上でリアルタイムにテストします。
 * ベストプラクティスとしては、Dynamic Media 画像サービングコマンドを画像プリセット内にまとめることができます。画像プリセットは基本的に、`$thumb_low$` や `&product_high$` といったカスタムプリセット名が付けられた URL コマンドマクロです。URLパス内のカスタムプリセット名は、これらのプリセットを呼び出します。 この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
 * また、Experience Managerは、画質を微調整するためのより高度な方法も提供します。例えば、取り込み時に画像にシャープを適用できます。 レンダリング結果を調整して最適化するために、[Adobe Professional Services](https://www.adobe.com/jp/experience-cloud/consulting-services.html)は、カスタマイズされたインサイトとベストプラクティスを支援します。
 
