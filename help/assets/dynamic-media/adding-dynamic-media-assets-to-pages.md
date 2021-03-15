@@ -197,8 +197,8 @@ Dynamic Media コンポーネントでは、画像セット、スピンセット
 
    ビューア修飾子を使用して、例えば次の操作を行うことができます。
 
-   * ビデオにキャプションファイルを関連付ける：[キャプション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * ビデオにキャプションファイルを関連付ける：[キャプション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=ja)
+   * ビデオにナビゲーションファイルを関連付ける：[ナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=ja)
 
       コンポーネントの「**[!UICONTROL 編集]**」をクリックして、次の詳細設定を編集できます。
 
@@ -317,7 +317,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
 ### コンポーネント：ビデオ 360 メディア {#video-media-component}
 
-**[!UICONTROL ビデオ360メディア]**&#x200B;コンポーネントを使用して、Webページに等角形のビデオをレンダリングします。 これにより、部屋、プロパティ、場所、横置き、または医療の手順を没頭させることなく視聴できます。
+**[!UICONTROL ビデオ360メディア]**&#x200B;コンポーネントを使用して、Webページに等角形のビデオをレンダリングします。 これにより、部屋、プロパティ、場所、横置き、または医療の手順を没頭させた状態で視聴できます。
 
 フラットディスプレイでの再生中は、ユーザが画角を制御します。携帯端末での再生は、通常、組み込みのジャイロコントロールを使用します。
 
