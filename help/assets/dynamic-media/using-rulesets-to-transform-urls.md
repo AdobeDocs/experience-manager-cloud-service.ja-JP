@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
 workflow-type: tm+mt
 source-wordcount: '767'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ Dynamic Media でルールセットをデプロイして、URL を変換でき�
 * MIME タイプのサフィックスの付加。多くのサービスや Web サイトでは、`.jpg` を URL に付加するなど、画像のサフィックスが必要です。
 * SEO（検索エンジン最適化）のための URL へのフォルダーパスの作成。
 
-   「[AdobeDynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)」を参照してください。
+   「[Adobe Dynamic Media Classic が SEO をサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)」を参照してください。
 
 * SEO（検索エンジン最適化）のための URL へのメタデータの付加。
 
-   「[AdobeDynamic MediaクラシックがSEOをサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)」を参照してください。
+   「[Adobe Dynamic Media Classic が SEO をサポートする方法](/help/assets/dynamic-media/assets/s7_seo.pdf)」を参照してください。
 
 * ダウンロードを開始するためのコンテンツ処理方法の設定。
 * パーソナライゼーションのための画像サービングテンプレーティング URL の簡略化。例えば、`rgb{XX,YY,ZZ}` を RTF 対応の `\redXX\greenYY\blueZZ` に変換します。
@@ -36,13 +36,13 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 >
 >ルールセットを使用する場合は、Dynamic Media のコンテンツが Web サイトに表示されなくなる可能性があるので、注意してください。
 
-用意されているサンプルルールセットを使用して、独自のルールセットを作成できます。[ルールセットのリファレンス](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)を参照してください。
+用意されているサンプルルールセットを使用して、独自のルールセットを作成できます。[ルールセットのリファレンス](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=ja)を参照してください。
 
 すべてのルールセットの作成と同様に、xmlvalid などの XML バリデータープログラムを使用して、XML ファイルが有効であることを確認してからアップロードしてください。[ルールセットのトラブルシューティング](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)も参照してください。
 
 また、最初は実稼動環境に影響を与えないステージング環境でルールセットをテストしてください。通常、実稼動環境とステージング環境では異なるログイン情報が必要となります。
 
-ログイン情報については、[AdobeDynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)を参照してください。
+ログイン情報については、「[Adobe Dynamic Media クラシックにサインイン](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#sign-in-dmc-app)」を参照してください。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -52,9 +52,9 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 
 **XML ルールセットをデプロイするには：**
 
-1. [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
+1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
 
-   資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
+   資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
 
 1. 次の手順を実行して、ルールセットファイルをアップロードします。
 
