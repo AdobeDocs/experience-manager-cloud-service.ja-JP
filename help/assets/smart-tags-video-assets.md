@@ -1,24 +1,24 @@
 ---
 title: ビデオアセットのスマートタグ
-description: Experience Managerは、 [!DNL Adobe Sensei]を使用して、文脈依存の、説明的なスマートタグをビデオに自動的に追加します。
+description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
 translation-type: tm+mt
 source-git-commit: ceaa9546be160e01b124154cc827e6b967388476
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # ビデオアセットのスマートタグ {#video-smart-tags}
 
-新しいコンテンツに対するニーズが高まる中で、人手による作業を減らしつつ、人を惹きつけるデジタルエクスペリエンスをすぐに届ける必要があります。[!DNL Adobe Experience Manager] は、人工知能を使用したビデオアセットの自動タグ付けを [!DNL Cloud Service] サポートしています。ビデオの手動のタグ付けには時間がかかる場合があります。ただし、[!DNL Adobe Sensei]の動力付きビデオスマートタグ機能では、人工知能モデルを使用してビデオコンテンツを分析し、ビデオアセットにタグを追加します。 DAM ユーザーが顧客に豊富なエクスペリエンスを提供するまでの時間を短縮できます。Adobe の機械学習サービスは、ビデオに対して 2 組のタグを生成します。1 組は、そのビデオ内のオブジェクト、シーンおよび属性に対応し、もう 1 組は、飲む、走る、ジョギングするなどのアクションに対応します。
+新しいコンテンツに対するニーズが高まる中で、人手による作業を減らしつつ、人を惹きつけるデジタルエクスペリエンスをすぐに届ける必要があります。[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、人工知能を使用したビデオアセットの自動タグ付けをサポートしています。ビデオの手動のタグ付けには時間がかかる場合があります。しかし、[!DNL Adobe Sensei] を活用したビデオスマートタグ付け機能では、人工知能モデルを使用してビデオコンテンツを分析し、ビデオアセットにタグを追加します。DAM ユーザーが顧客に豊富なエクスペリエンスを提供するまでの時間を短縮できます。Adobe の機械学習サービスは、ビデオに対して 2 組のタグを生成します。1 組は、そのビデオ内のオブジェクト、シーンおよび属性に対応し、もう 1 組は、飲む、走る、ジョギングするなどのアクションに対応します。
 
-ビデオタグ付けは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ではデフォルトで有効になっています。ただし、フォルダーの[ビデオのスマートタグをオプトアウト](#opt-out-video-smart-tagging)できます。新しいビデオをアップロードするか、既存のビデオを再処理する場合、ビデオは自動タグ付けされます。 [!DNL Experience Manager] また、サムネールを作成し、ビデオファイルのメタデータを抽出します。スマートタグは、アセット[プロパティ](#confidence-score-video-tag)内で[!UICONTROL 信頼性スコア]の降順で表示されます。
+ビデオタグ付けは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ではデフォルトで有効になっています。ただし、フォルダーの[ビデオのスマートタグをオプトアウト](#opt-out-video-smart-tagging)できます。新しいビデオをアップロードする場合や、既存のビデオを再処理する場合、ビデオは自動的にタグ付けされます。また、[!DNL Experience Manager] では、ビデオファイルのサムネールを作成し、メタデータを抽出します。スマートタグは、アセット[プロパティ](#confidence-score-video-tag)内で[!UICONTROL 信頼性スコア]の降順で表示されます。
 
 ## アップロードのビデオのスマートタグ {#smart-tag-assets-on-ingestion}
 
-[ビデオアセット](add-assets.md#upload-assets)を[!DNL Cloud Service]として[!DNL Adobe Experience Manager]にアップロードすると、ビデオが処理されます。 処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei]を利用してこれらのスマートタグを作成します。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] に[ビデオアセットをアップロード](add-assets.md#upload-assets)すると、ビデオが処理されます。処理が完了したら、アセット[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブを参照してください。スマートタグは、ビデオの[!UICONTROL スマートタグ]に自動的に追加されます。アセットマイクロサービスは、[!DNL Adobe Sensei] を利用してこれらのスマートタグを作成します。
 
 ![スマートタグはビデオに追加され、アセットプロパティの「基本」タブに表示されます](assets/smart-tags-added-to-videos.png)
 
@@ -46,7 +46,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 <!-- TBD: Limit size -->
 
-![アセットを再処理して、既存のDAMリポジトリにタグを追加する](assets/reprocess.gif)
+![アセットの再処理をおこない、DAM リポジトリー既存のするビデオにタグを追加する](assets/reprocess.gif)
 
 プロセスが完了したら、フォルダー内の任意のビデオアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score-video-tag)の降順で並べ替えられます。
 
@@ -125,13 +125,13 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 ## 制限事項 {#video-smart-tagging-limitations}
 
-* 特定のビデオを使用するビデオにスマートタグを適用するサービスをトレーニングすることはできません。 デフォルトの[!DNL Adobe Sensei]設定で動作します。
+* 特定のビデオを使用して、ビデオにスマートタグを適用するサービスをトレーニングすることはできません。デフォルトの [!DNL Adobe Sensei] 設定で機能します。
 
 * タグ付けの進行状況は表示されません。
 
-* ファイルサイズが300 MB未満のビデオのみが自動タグ付けされます。 [!DNL Adobe Sensei]サービスは、サイズが大きいビデオファイルをスキップします。
+* ファイルサイズが 300 MB 未満のビデオのみ自動的にタグ付けされます。[!DNL Adobe Sensei] サービスは、サイズが大きいビデオファイルをスキップします。
 
-* [スマートタグ](/help/assets/smart-tags.md#smart-tags-supported-file-formats)で言及されている、ファイル形式のビデオとサポートされているコーデックのみがタグ付けされます。
+* [スマートタグ](/help/assets/smart-tags.md#smart-tags-supported-file-formats)で言及されているファイル形式とサポート対象コーデックのビデオのみタグ付けされます。
 
 >[!MORELIKETHIS]
 >
