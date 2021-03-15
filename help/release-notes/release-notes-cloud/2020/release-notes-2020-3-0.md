@@ -22,7 +22,7 @@ Experience Manager as a Cloud Service 2020.3.0 のリリース日は 2020 年 3 
 
 AEM as a Cloud Service リリース 2020.3.0 の Cloud Manager の新機能と更新点について説明します。
 
-### 新情報 {#what-is-new}
+### 新機能 {#what-is-new}
 
 * ビルドステップのログを、ビルドステップの実行中に使用できるようになりました。
 * パイプライン実行の詳細ページの一部のメッセージを編集し、わかりやすくしました。
