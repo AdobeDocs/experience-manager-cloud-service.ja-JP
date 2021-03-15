@@ -1,5 +1,5 @@
 ---
-title: AEM Assets as a  [!DNL Cloud Service]  と Brand Portal の連携の設定
+title: AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携の設定
 description: AEM Assets と Brand Portal の連携を設定します。
 contentOwner: Vishabh Gupta
 translation-type: tm+mt
@@ -234,7 +234,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
    ![証明書を作成](assets/ims-config2.png)
 
-1. 「**[!UICONTROL 公開鍵]**&#x200B;をダウンロード」アイコンをクリックし、公開鍵(CRT)ファイルをコンピューターに保存します。
+1. **[!UICONTROL 公開鍵をダウンロード]**&#x200B;アイコンをクリックして、公開鍵（CRT）ファイルをローカルマシンに保存します。
 
    公開鍵は、後でBrand PortalテナントのAPIを設定し、Adobeデベロッパーコンソールでサービスアカウント資格情報を生成するために使用します。
 
