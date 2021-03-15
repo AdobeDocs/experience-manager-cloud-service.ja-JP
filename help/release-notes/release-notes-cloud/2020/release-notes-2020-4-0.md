@@ -18,7 +18,7 @@ ht-degree: 100%
 
 [!DNL Experience Manager] as a Cloud Service 2020.4.0 のリリース日は 2020 年 4 月 9 日です。
 
-## Assets の新機能{#assets}
+## Assets の新機能 {#assets}
 
 現在のリリースの [!DNL Experience Manager Assets] および [!DNL Dynamic Media] の新機能、機能強化、バグ修正について詳しく説明します。
 
