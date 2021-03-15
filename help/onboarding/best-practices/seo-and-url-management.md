@@ -10,13 +10,13 @@ ht-degree: 100%
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス{#seo-and-url-management-best-practices-for-aem}
+# Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス {#seo-and-url-management-best-practices-for-aem}
 
 検索エンジン最適化（SEO）は、多くのマーケティング担当者にとって重要な課題となっています。その結果、多くの Adobe Experience Manager (AEM) as a Cloud Service プロジェクトで SEO の懸念に対処する必要があります。
 
 このドキュメントでは、まず、AEM as a Cloud Service の実装でこうした目的を達成するための [SEO のベストプラクティス](#seo-best-practices)および推奨事項を説明します。その次に、最初の節で提示するより[複雑な実装手順](#aem-configurations)のいくつかについて詳しく説明していきます。
 
-## SEO のベストプラクティス  {#seo-best-practices}
+## SEO のベストプラクティス     {#seo-best-practices}
 
 ここでは、SEO の一般的なベストプラクティスを説明します。
 
@@ -47,9 +47,8 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
    * ページでセレクターを使用する場合、セマンティック値を提供するセレクターが推奨されます。
    * ユーザーが理解できない URL は、検索エンジンでも理解できません。
    * 次に例を示します。
-
       `mybrand.com/products/product-detail.product-category.product-name.html`
-の方が  より望ましい 
+の方が より望ましい 
 `mybrand.com/products/product-detail.1234.html`
 
 * 検索エンジンではサブドメインは異なるエンティティとして扱われ、サイトの SEO 値が分断されるので、可能な限りサブドメインの使用は避けます。
@@ -290,7 +289,7 @@ AEM で受信要求のマッピングまたはページ上の URL の書き換�
 
 これまでに、URL をページに出力するときに、定義したマッピングを使用するために、マッピングをロジックとともにコンポーネントに実装しました。
 
-最後の手順は、短縮された URL の Dispatcher での処理です。ここでは、`mod_rewrite` を使用します。`mod_rewrite` を使用する最大の利点は、URL が、Dispatcher モジュールに送信される前に長い形式に再びマッピングされる点です。**&#x200B;つまり、Dispatcher は公開サーバーに長い URL を要求し、それに応じて URL をキャッシュします。したがって、公開サーバーからの Dispatcher フラッシュ要求により、そのコンテンツを正常に無効にすることができます。
+最後の手順は、短縮された URL の Dispatcher での処理です。ここでは、`mod_rewrite` を使用します。`mod_rewrite` を使用する最大の利点は、URL が、Dispatcher モジュールに送信される&#x200B;*前に*&#x200B;長い形式に再びマッピングされる点です。つまり、Dispatcher は公開サーバーに長い URL を要求し、それに応じて URL をキャッシュします。したがって、公開サーバーからの Dispatcher フラッシュ要求により、そのコンテンツを正常に無効にすることができます。
 
 このようなルールを実装するには、Apache HTTP Server の設定で仮想ホストに `RewriteRule` 要素を追加します。前述の例の短縮された URL を拡張する場合は、次のようなルールを実装できます。
 
@@ -342,7 +341,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### 開発環境を保護するための robots.txt の実装 {#implementing-robots-txt-to-protect-development-environments}
 
-検索エンジンでは、サイトをクロールする前に、サイトのルートに *ファイルがあるかどうかがチェックされる*`robots.txt`はずです。ただし、Google、Yahoo、Bing などの主要な検索エンジンではすべてこの点が考慮されるのに対し、なじみのない検索エンジンの中には、この点が考慮されないものもあります。
+検索エンジンでは、サイトをクロールする前に、サイトのルートに *ファイルがあるかどうかがチェックされる*&#x200B;はず`robots.txt`です。ただし、Google、Yahoo、Bing などの主要な検索エンジンではすべてこの点が考慮されるのに対し、なじみのない検索エンジンの中には、この点が考慮されないものもあります。
 
 サイト全体へのアクセスをブロックするための最も簡単な方法は、`robots.txt` というファイルに次の内容を指定して、サイトのルートに配置することです。
 
@@ -365,8 +364,8 @@ Disallow: /
 >
 >Sling サーブレットを登録すると、拡張子 `sitemap` のセレクター `xml` をリスンできます。これにより、末尾が以下のようになっている URL が要求されると、サーブレットによってリクエストが処理されます。
 >    `/<path-to>/page.sitemap.xml`
->その後、要求されたリソースをリクエストから取得し、JCR API を使用してコンテンツツリーのその地点からサイトマップを生成できます。
->このようなアプローチは、複数のサイトを同じインスタンスから処理している場合にメリットがあります。`/content/siteA.sitemap.xml` に対するリクエストでは `siteA` 用のサイトマップが生成され、`/content/siteB.sitemap.xml` のリクエストでは `siteB` 用のサイトマップが生成されます。コードを追加する必要はありません。
+その後、要求されたリソースをリクエストから取得し、JCR API を使用してコンテンツツリーのその地点からサイトマップを生成できます。
+このようなアプローチは、複数のサイトを同じインスタンスから処理している場合にメリットがあります。`/content/siteA.sitemap.xml` に対するリクエストでは `siteA` 用のサイトマップが生成され、`/content/siteB.sitemap.xml` のリクエストでは `siteB` 用のサイトマップが生成されます。コードを追加する必要はありません。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 
