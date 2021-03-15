@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 68%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->このページは、次の内容と共に読む必要があります。
+>このページと併せて、次の記事も参照してください。
 >
 >* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)
 >* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
@@ -29,7 +29,7 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 * サンプルコンテンツフラグメント構造（コンテンツフラグメントモデルと関連するコンテンツフラグメント）に基づくいくつかの[サンプル GraphQL クエリ](#graphql-sample-queries)
 
-## AEM用のGraphQL — 拡張子の概要{#graphql-extensions}
+## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
 
 AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
 
@@ -37,42 +37,42 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
    * モデル名（例：city）を使用します
 
 * 結果のリストを想定している場合：
-   * モデル名に`List`を追加；例：`cityList`
-   * [サンプルクエリ — すべての市区町村に関するすべての情報](#sample-all-information-all-cities)を参照
+   * モデル名に `List` を付け加えます（例：`cityList`）
+   * [サンプルクエリ - すべての都市に関するすべての情報](#sample-all-information-all-cities)を参照してください
 
 * 論理和（OR）を使用する場合：
    * ` _logOp: OR` を使用します
-   * [サンプルクエリ- &quot;Jobs&quot;または&quot;Smith&quot;](#sample-all-persons-jobs-smith)の名前を持つすべての人を参照
+   * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](#sample-all-persons-jobs-smith)を参照してください
 
 * 論理積（AND）も存在しますが、（多くの場合）暗黙的です
 
 * コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
-   * [サンプルクエリ-会社のCEOおよび従業員の詳細](#sample-full-details-company-ceos-employees)を参照
+   * [サンプルクエリ - ある会社の CEO と従業員の詳細](#sample-full-details-company-ceos-employees)を参照してください
 
 * モデルのフィールドに加えて、システム生成フィールドがいくつかあります（前にアンダースコアが付いています）。
 
    * コンテンツの場合：
 
       * `_locale`：言語を表示します（言語マネージャーに基づく）
-         * [特定のロケールの複数のコンテンツフラグメントに対するサンプルクエリ](#sample-wknd-multiple-fragments-given-locale)を参照
+         * [特定ロケールの複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-given-locale)を参照してください
       * `_metadata`：フラグメントのメタデータを表示します
-         * [メタデータのサンプルクエリ — 賞のメタデータのリスト（タイトル：GB](#sample-metadata-awards-gb)）を参照
-      * `_model` :コンテンツフラグメントモデルのクエリを許可（パスとタイトル）
-         * 「[モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)」を参照してください。
+         * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](#sample-metadata-awards-gb)を参照してください
+      * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
+         * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)を参照してください
       * `_path` :リポジトリ内のコンテンツフラグメントへのパス
-         * [サンプルクエリ — 単一の特定の都市のフラグメント](#sample-single-specific-city-fragment)を参照
+         * [サンプルクエリ - 1 つの特定の都市フラグメント](#sample-single-specific-city-fragment)を参照してください
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
-         * [参照が事前に取得された複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照
+         * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照してください
       * `_variation`：コンテンツフラグメント内の特定のバリエーションを表示します
-         * [サンプルクエリ — 名前の付いたバリエーションのあるすべての市区町村](#sample-cities-named-variation)を参照
+         * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](#sample-cities-named-variation)を参照してください
    * 操作の場合：
 
-      * `_operator` :特定の演算子を適用する； `EQUALS`,  `EQUALS_NOT`,  `GREATER_EQUAL`,  `LOWER`,  `CONTAINS`
-         * [サンプルクエリ- &quot;Jobs&quot;の名前を持たないすべての人を参照](#sample-all-persons-not-jobs)
+      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します
+         * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
-         * [サンプルクエリ — 少なくとも1回は](#sample-array-item-occur-at-least-once)を含むアレイのフィルタを参照
+         * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
-         * [サンプルクエリ — 名前にSANが含まれるすべての都市（大文字と小文字を区別しない）を参照](#sample-all-cities-san-ignore-case)
+         * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](#sample-all-cities-san-ignore-case)を参照してください
 
 
 
@@ -85,11 +85,11 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * GraphQL のユニオン型がサポートされています
 
    * `... on` を使用します
-      * 「[コンテンツ参照を使用した特定のモデルのコンテンツフラグメントのサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)」を参照してください。
+      * [特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)を参照してください
 
 ## GraphQL - サンプルコンテンツフラグメント構造を使用したサンプルクエリ {#graphql-sample-queries-sample-content-fragment-structure}
 
-作成クエリの図とサンプル結果については、以下のサンプルクエリを参照してください。
+クエリの作成とサンプル結果については、これらのサンプルクエリを参照してください。
 
 >[!NOTE]
 >
@@ -99,11 +99,11 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 >[!NOTE]
 >
->サンプルクエリは、GraphQL](#content-fragment-structure-graphql)で使用する[サンプルコンテンツフラグメント構造に基づいています
+>サンプルクエリは、[GraphQL で使用するコンテンツフラグメント構造のサンプル](#content-fragment-structure-graphql)に基づいています。
 
 ### サンプルクエリ - 使用可能なすべてのスキーマとデータタイプ {#sample-all-schemes-datatypes}
 
-これは、使用可能なすべてのスキーマのすべての`types`を返します。
+このクエリでは、使用可能なすべてのスキーマのすべての `types` を返します。
 
 **サンプルクエリ**
 
@@ -327,7 +327,7 @@ query {
 }
 ```
 
-### サンプルクエリ- 1つの特定の都市フラグメント{#sample-single-specific-city-fragment}
+### サンプルクエリ - 1 つの特定の都市フラグメント {#sample-single-specific-city-fragment}
 
 これは、リポジトリ内の特定の場所にある単一のフラグメントエントリの詳細を返すクエリです。
 
@@ -1104,12 +1104,12 @@ query {
 
 ## WKND プロジェクトを使用したサンプルクエリ {#sample-queries-using-wknd-project}
 
-これらのサンプルクエリは WKND プロジェクトに基づいています。これには次のものがあります。
+これらのサンプルクエリは WKND プロジェクトに基づいています。これには次のものが含まれています。
 
-* コンテンツフラグメントモデルは次の場所で利用できます。
+* 次の URL で入手できるコンテンツフラグメントモデル：
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* 次の場所で利用可能なコンテンツフラグメント（およびその他のコンテンツ）
+* 次の URL で入手できるコンテンツフラグメント（およびその他のコンテンツ）：
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
@@ -1201,8 +1201,8 @@ query {
 
 このサンプルクエリでは次のものを検索します。
 
-* 特定のパスにあるタイプ`article`の単一のコンテンツフラグメント
-   * その中で、コンテンツのすべての形式を次のように指定します。
+* 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
+   * その中の、次のすべてのコンテンツ形式
       * HTML
       * Markdown
       * プレーンテキスト
@@ -1227,11 +1227,11 @@ query {
 }
 ```
 
-### モデル{#sample-wknd-content-fragment-model-from-model}からのコンテンツフラグメントモデルのサンプルクエリ
+### モデルからのコンテンツフラグメントモデルのサンプルクエリ {#sample-wknd-content-fragment-model-from-model}
 
 このサンプルクエリでは次のものを検索します。
 
-* 単一のコンテンツフラグメント用
+* 1 つのコンテンツフラグメントについて
    * 基になるコンテンツフラグメントモデルの詳細
 
 **サンプルクエリ**
@@ -1255,12 +1255,12 @@ query {
 
 このクエリでは次のものを検索します。
 
-* 特定のパスにあるタイプ`article`の単一のコンテンツフラグメント
-   * その中で、参照先（ネストされた）フラグメントのパスと作成者
+* 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
+   * その中の、参照されている（ネストされた）フラグメントのパスと作成者
 
 >[!NOTE]
 >
->フィールド`referencearticle`のデータ型は`fragment-reference`です。
+>フィールド `referencearticle` のデータタイプは `fragment-reference` です。
 
 **サンプルクエリ**
 
@@ -1283,12 +1283,12 @@ query {
 
 このクエリでは次のものを検索します。
 
-* タイプ`bookmark`の複数のコンテンツフラグメント
-   * を、特定のモデルタイプ`article`および`adventure`の他のフラグメントへのフラグメント参照と共に使用します。
+* `bookmark` タイプの複数のコンテンツフラグメントについて
+   * 特定のモデルタイプ `article` および `adventure` の他のフラグメントへのフラグメント参照を含むもの
 
 >[!NOTE]
 >
->フィールド`fragments`のデータタイプは`fragment-reference`で、モデル`Article`、`Adventure`が選択されています。
+>フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。
 
 ```xml
 {
@@ -1309,21 +1309,21 @@ query {
 }
 ```
 
-### コンテンツ参照を含む特定のモデルのコンテンツフラグメントのサンプルクエリ{#sample-wknd-fragment-specific-model-content-reference}
+### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ {#sample-wknd-fragment-specific-model-content-reference}
 
-このクエリには2種類あります。
+このクエリには次の 2 種類があります。
 
-1. すべてのコンテンツ参照を返す場合。
-1. `attachments`型の特定のコンテンツ参照を返す。
+1. すべてのコンテンツ参照を返すもの。
+1. `attachments` タイプの特定のコンテンツ参照を返すもの。
 
-次のクエリが問い合わされます。
+これらのクエリでは次のものを検索します。
 
-* タイプ`bookmark`の複数のコンテンツフラグメント
-   * （他のフラグメントへのコンテンツ参照を含む）
+* `bookmark` タイプの複数のコンテンツフラグメントについて
+   * 他のフラグメントへのコンテンツ参照を含むもの
 
 #### プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ {#sample-wknd-multiple-fragments-prefetched-references}
 
-次のクエリは、`_references`を使用して、すべてのコンテンツ参照を返します。
+次のクエリは、`_references` を使用して、すべてのコンテンツ参照を返します。
 
 ```xml
 {
@@ -1357,13 +1357,13 @@ query {
 }
 ```
 
-#### 添付ファイル付き複数のコンテンツフラグメントのサンプルクエリ{#sample-wknd-multiple-fragments-attachments}
+#### 添付ファイルを含んだ複数のコンテンツフラグメントのサンプルクエリ {#sample-wknd-multiple-fragments-attachments}
 
-次のクエリは、すべての`attachments` — タイプ`content-reference`の特定のフィールド（サブグループ）を返します。
+次のクエリは、すべての `attachments`（`content-reference` タイプの特定のフィールド（サブグループ））を返します。
 
 >[!NOTE]
 >
->フィールド`attachments`のデータ型は`content-reference`で、様々なフォームが選択されています。
+>フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
 
 ```xml
 {
@@ -1400,12 +1400,12 @@ query {
 
 このクエリでは次のものを検索します。
 
-* 特定のパスにあるタイプ`bookmark`の単一のコンテンツフラグメント
-   * その中で、RTEインライン参照
+* 特定のパスにある `bookmark` タイプの 1 つのコンテンツフラグメントについて
+   * その中の RTE インライン参照
 
 >[!NOTE]
 >
->RTEインライン参照は、`_references`内で水和されます。
+>RTE インライン参照は、`_references` 内に含まれます。
 
 **サンプルクエリ**
 
@@ -1446,8 +1446,8 @@ query {
 
 このクエリでは次のものを検索します。
 
-* 特定のパスにあるタイプ`article`の単一のコンテンツフラグメント
-   * その中で、変動に関連するデータが次のようになります。`variation1`
+* 特定のパスにある `article` タイプの 1 つのコンテンツフラグメントについて
+   * その中の、バリエーション `variation1` に関するデータ
 
 **サンプルクエリ**
 
@@ -1472,7 +1472,7 @@ query {
 
 このクエリでは次のものを検索します。
 
-* 特定のバリエーションを持つ`article`タイプのコンテンツフラグメントの場合：`variation1`
+* 特定のバリエーション `variation1` を持つ `article` タイプのコンテンツフラグメント
 
 **サンプルクエリ**
 
@@ -1497,7 +1497,7 @@ query {
 
 このクエリでは次のものを検索します。
 
-* `fr`ロケール内のタイプ`article`のコンテンツフラグメント
+* `fr` ロケール内の `article` タイプのコンテンツフラグメント
 
 **サンプルクエリ**
 
@@ -1518,9 +1518,9 @@ query {
 }
 ```
 
-## サンプルコンテンツフラグメント構造（GraphQLで使用） {#content-fragment-structure-graphql}
+## GraphQL で使用するコンテンツフラグメント構造のサンプル {#content-fragment-structure-graphql}
 
-サンプルクエリは次の構造に基づいています。この構造では、次の値を使用します。
+サンプルクエリは次の構造に基づいています。
 
 * 1 つ以上の[サンプルコンテンツフラグメントモデル](#sample-content-fragment-models-schemas) - GraphQL スキーマの基盤となります
 
