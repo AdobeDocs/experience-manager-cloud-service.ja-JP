@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ AEM as a Cloud Service では、コンテンツモデル、コンテンツフラ
 
 ![AEM 実装モデル](assets/aem-implementation-models.png)
 
-## ヘッドフルとヘッドレスの比較{#headful-headless}
+## ヘッドフルとヘッドレスの比較 {#headful-headless}
 
-このドキュメントでは、AEMの完全なヘッドレス実装モデルに焦点を当てます。 ただし、headfulとheadlessは、AEMではバイナリの選択である必要はありません。 ヘッドレス機能を使用すると、コンテンツを管理して様々なエンドポイントに配信すると同時に、コンテンツ作成者が単一ページのアプリを編集できるようになります。 すべてAEMで。
+このドキュメントでは、AEM の完全なヘッドレス実装モデルを重点的に説明します。ただし、AEM でヘッドフルとヘッドレスは二者択一である必要はありません。ヘッドレス機能を使用すると、コンテンツを管理し様々なエンドポイントに配信できると同時に、コンテンツ作成者が単一ページアプリケーションを編集できるようになります。すべてが AEM にあります。
 
 >[!TIP]
 >
->詳しくは、AEM](/help/implementing/developing/headful-headless.md)のドキュメント[ヘッドフルとヘッドレスを参照してください。
+>詳しくは、[AEM におけるヘッドフルとヘッドレス](/help/implementing/developing/headful-headless.md)を参照してください。
 
 ## AEM as a Cloud Service とヘッドレス {#aem-headless}
 
