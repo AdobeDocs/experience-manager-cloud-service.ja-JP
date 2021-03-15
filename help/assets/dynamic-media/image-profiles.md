@@ -113,7 +113,7 @@ ht-degree: 74%
 
    [スマート切り抜きとスマートスウォッチオプション](#crop-options)および[アンシャープマスク](#unsharp-mask)も参照してください。
 
-   ![crop](assets/crop.png)
+   ![切り抜き](assets/crop.png)
 
 1. 「**[!UICONTROL 保存]**」をタップします。新しく作成されたプロファイルが、使用可能なプロファイルのリストに表示されます。
 
