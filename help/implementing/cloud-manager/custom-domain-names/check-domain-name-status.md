@@ -2,10 +2,10 @@
 title: ドメイン名ステータスの確認
 description: ドメイン名ステータスの確認
 translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 72%
+source-wordcount: '298'
+ht-degree: 59%
 
 ---
 
@@ -41,3 +41,12 @@ TXT の検証に成功しました。ただし、CDN のデプロイメントは
 * **削除失敗**
 カスタムドメイン名の削除に失敗しました。再試行する必要があります。詳しくは、[カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)を参照してください。
 
+
+## IP許可リストの既存のCDN設定{#pre-existing-cdn}
+
+IP許可リストのCDN設定（SSL証明書またはカスタムドメイン名）が既に存在する環境を使用しているお客様の場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。
+
+![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+
+既存の設定を表示および管理するには、UIから追加する必要があります。
+![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
