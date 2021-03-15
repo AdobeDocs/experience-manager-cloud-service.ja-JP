@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 472f691cf8b2ec502611ee88bc4abdcabb6d8412
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 97%
    * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
 -->
 
-1. AEMにCloud Serviceとしてログインし、GraphicQLインターフェイスにアクセスします。
+1. AEM as a Cloud Service にログインし、GraphiQL インターフェイスにアクセスします。
    * 例：`https://<host>:<port>/content/graphiql.html`
 
 1. GraphiQL は、GraphQL のブラウザー内のクエリエディターです。クエリを構築して、コンテンツフラグメントを取得し、それらを JSON としてヘッドレスに配信できます。
