@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
 workflow-type: tm+mt
 source-wordcount: '4245'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -338,9 +338,9 @@ AEM Sites のユーザーである場合は、インタラクティブメディ�
 
 レスポンシブ環境用のショップ可能なインタラクティブ画像に「切り抜き」を適用するには、パスにインタラクティブ画像設定属性`ZoomView.iscommand`を含めます。 この場合、`ZoomView`コンポーネントが呼び出され、`iscommand`は適用する「切り抜き」画像サービングコマンドです。
 
-[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 設定属性を参照してください。
+[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=ja) 設定属性を参照してください。
 
-[crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 画像サービングコマンドを参照してください。
+[crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=ja) 画像サービングコマンドを参照してください。
 
 これで、インタラクティブ画像をWebサイト上の既存のクイック表示と統合する準備が整いました。
 
