@@ -2,10 +2,10 @@
 title: SSL 証明書のステータスの確認 - SSL 証明書の管理
 description: SSL 証明書のステータスの確認 - SSL 証明書の管理
 translation-type: tm+mt
-source-git-commit: ddee11fdfa8cadfcd63472fd3c94cd8af555c856
+source-git-commit: 0b04d43c8b5bb28286e616f0bd902c05ec56ec05
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 69%
+source-wordcount: '233'
+ht-degree: 59%
 
 ---
 
@@ -27,7 +27,7 @@ SSL 証明書のステータスは、次の配色で識別できます。
 
 ## IP許可リストの既存のCDN設定{#pre-existing-cdn}
 
-IP許可リスト、SSL証明書、またはカスタムドメイン名のCDN設定を含む環境を使用しているお客様の場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。
+IP許可リスト、SSL証明書、またはカスタムドメイン名のCDN設定を含む環境を使用しているお客様の場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。 UIに表示されるメッセージは、お客様がUIを介して既存の環境設定をすべて移行した後、消えます。メッセージが消えるまでに1 ～ 2営業日かかる場合があります。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
