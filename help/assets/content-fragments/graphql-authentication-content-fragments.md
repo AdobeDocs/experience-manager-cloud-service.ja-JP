@@ -1,43 +1,43 @@
 ---
-title: リモートAEM GraphコンテンツフラグメントでのQLクエリの認証
-description: Remote AEM GraphQLクエリに必要な認証について説明します。
+title: コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証
+description: リモート AEM GraphQL クエリに必要な認証について説明します。
 translation-type: tm+mt
 source-git-commit: 42ca0c70f7018a6e3c9be68ef13adefafc987864
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# コンテンツフラグメントでのリモートAEM GraphQLクエリの認証{#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Cloud Service(AEM) GraphQL API for Content Fragment配信](/help/assets/content-fragments/graphql-api-content-fragments.md)としての[Adobe Experience Managerが、サードパーティのアプリケーションまたはサービスからリモートクエリを受け入れる場合の主な使用例です。  これらのリモートクエリには、認証済みAPIアクセスが必要な場合があります。
+[コンテンツフラグメント配信用の Adobe Experience Manager as a Cloud Service（AEM）GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) の主な使用例は、サードパーティのアプリケーションやサービスからリモートクエリを受け入れることです。これらのリモートクエリには、認証済み API アクセスが必要な場合があります。
 
 >[!NOTE]
 >
->テストおよび開発の場合は、[GraphiQLインターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)を使用してAEM GraphQL APIに直接アクセスすることもできます。
+>テストおよび開発の場合は、[GraphiQL インターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)を使用して AEM GraphQL API に直接アクセスすることもできます。
 
-認証の場合、サードパーティのサービスは[アクセストークン](#access-token)を使用する必要があります。その後、[をGraphQL要求](#use-access-token-in-graphql-request)で使用できます。
+認証のために、サードパーティのサービスは[アクセストークン](#access-token)を使用する必要があります。その後、このトークンは [GraphQL リクエストで使用](#use-access-token-in-graphql-request)できます。
 
-## アクセストークン{#retrieving-access-token}を取得中
+## アクセストークンの取得 {#retrieving-access-token}
 
-詳しくは、[サーバー側APIのアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)を参照してください。
+詳しくは、[サーバー側 API のアクセストークンの生成](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)を参照してください。
 
-## GraphQLリクエスト{#use-access-token-in-graphql-request}でのアクセストークンの使用
+## GraphQL リクエストでのアクセストークンの使用 {#use-access-token-in-graphql-request}
 
-サードパーティのサービスがAEMインスタンスと接続するには、*アクセストークン*&#x200B;が必要です。 次に、サービスは、このトークンをPOSTリクエストの`Authorization`ヘッダーに追加する必要があります。
+サードパーティのサービスが AEM インスタンスに接続するには、*アクセストークン*&#x200B;が必要です。サービスは次に、このトークンを POST リクエストの `Authorization` ヘッダーに追加する必要があります。
 
-例えば、GraphQL Authorization Headerは次のようになります。
+例えば、GraphQL の Authorization ヘッダーは次のようになります。
 
 ```xml
 Authorization: Bearer <access_token>
 ```
 
-## 権限の要件{#permission-requirements}
+## 権限の要件 {#permission-requirements}
 
-アクセストークンを使用して行われたすべてのリクエストは、実際には、トークン&#x200B;*を生成したユーザーアカウントによって*&#x200B;行われます。
+アクセストークンを使用しておこなわれるすべてのリクエストは、実際には、*そのトークンを生成したユーザーアカウントによって*&#x200B;おこなわれます。
 
-つまり、GraphQLクエリを実行するために必要な権限がアカウントにあることを確認する必要があります。
+つまり、GraphQL クエリの実行に必要な権限がアカウントにあることを確認する必要があります。
 
-これは、ローカルインスタンスでGraphiciQLを使用して確認できます。
+この確認は、ローカルインスタンスで GraphiQL を使用しておこなえます。
