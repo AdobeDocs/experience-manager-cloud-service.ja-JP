@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
 workflow-type: tm+mt
 source-wordcount: '3720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -316,38 +316,38 @@ AEM 内のコンポーネントは、**リソースタイプの階層**&#x200B;�
 
 AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリツールを使用すると、特定のプロパティまたは子ノードを簡単に検索できます。
 
-### コンポーネントプレースホルダ{#component-placeholders}
+### コンポーネントプレースホルダー {#component-placeholders}
 
-コンポーネントにコンテンツがない場合でも、コンポーネントは常に、作成者に表示される一部のHTMLをレンダリングする必要があります。 そうしないと、視覚的にエディターのインターフェイスから見えなくなり、技術的には表示されますが、ページやエディターには表示されなくなります。 この場合、作成者は空のコンポーネントを選択して操作することができません。
+コンポーネントは、コンテンツがない場合でも必ず、作成者に表示される一部の HTML をレンダリングする必要があります。そうしないと、エディターのインターフェイスから視覚的に消えてしまい、技術的には存在しても、ページやエディターには表示されなくなります。この場合、作成者は空のコンポーネントを選択して操作することができません。
 
-このため、ページがページエディターでレンダリングされる（WCMモードが`edit`または`preview`の場合）際に、コンポーネントは表示された出力をレンダリングしない限り、プレースホルダーをレンダリングする必要があります。
-プレースホルダーの一般的なHTMLマークアップは次のとおりです。
+このため、ページがページエディターでレンダリングされる（WCM モードが `edit` または `preview` の場合）際に、コンポーネントは、表示された出力をレンダリングしない限り、プレースホルダーをレンダリングする必要があります。
+プレースホルダーの一般的な HTML マークアップは次のとおりです。
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-上記のプレースホルダーHTMLをレンダリングする一般的なHTLスクリプトは次のとおりです。
+上記のプレースホルダー HTML をレンダリングする一般的な HTL スクリプトは次のとおりです。
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
      data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
 ```
 
-前の例では、`isEmpty`は変数で、コンポーネントにコンテンツがなく、作成者には見えない場合にのみtrueになります。
+前の例では、`isEmpty` は、コンポーネントにコンテンツがなくて作成者には見えない場合にのみ true になる変数です。
 
-繰り返しを避けるために、Adobeでは、コンポーネントの実装者に対して、コアコンポーネントが提供するプレースホルダーのように[HTLテンプレートをこれらのプレースホルダーに使用するように推奨します。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+繰り返しを避けるために、アドビは、これらのプレースホルダーに、[コアコンポーネントが提供するような](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html) HTL テンプレートを使用することをコンポーネントの実装者に推奨します。
 
-その後、前のリンクでのテンプレートの使用は、次のHTL行で行います。
+その後、前のリンクでのテンプレートの使用は、次の HTL 行でおこないます。
 
 ```HTML
 <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
      data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
 ```
 
-前の例では、`model.text`は変数で、コンテンツが含まれ、表示されている場合にのみtrueになります。
+前の例では、`model.text` はコンテンツが含まれていて表示されている場合にのみ true になる変数です。
 
-このテンプレートの使用例は、コアコンポーネント[（タイトルコンポーネントなど）で確認できます。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+このテンプレートの使用例は、コアコンポーネント[（タイトルコンポーネントなど）](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)で確認できます。
 
 ### cq:EditConfig の子ノードを使用した設定 {#configuring-with-cq-editconfig-child-nodes}
 
@@ -437,19 +437,19 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 ### フィールドの検証 {#field-validation}
 
-Granite UI および Granite UI ウィジェットでのフィールド検証は、`foundation-validation` API を使用して実行します。詳しくは、[`foundation-valdiation`Granite のドキュメント](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)を参照してください。
+Granite UI および Granite UI ウィジェットでのフィールド検証は、`foundation-validation` API を使用して実行します。詳しくは、[`foundation-valdiation`Granite のドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)を参照してください。
 
-### ダイアログの可用性の検出{#dialog-ready}
+### ダイアログの可用性の検出 {#dialog-ready}
 
-ダイアログが使用可能で準備が整ったときにのみ実行する必要があるカスタムJavaScriptがある場合は、`dialog-ready`イベントをリッスンする必要があります。
+ダイアログが使用可能で準備が整ったときにのみ実行する必要があるカスタム JavaScript がある場合は、`dialog-ready` イベントをリッスンする必要があります。
 
-このイベントは、ダイアログが読み込まれ（または再読み込み）、使用の準備ができたときにトリガーされます。つまり、ダイアログのDOMに変更（作成/更新）がある場合に必ずトリガーされます。
+このイベントは、ダイアログが読み込まれて（または再度読み込まれて）、使用の準備ができたときにトリガーされます。つまり、ダイアログの DOM に変更（作成／更新）がある場合に必ずトリガーされます。
 
-`dialog-ready` は、ダイアログ内のフィールドや類似のタスクをカスタマイズするJavaScriptカスタムコードをフックするために使用できます。
+`dialog-ready` は、ダイアログ内のフィールドや類似のタスクをカスタマイズする JavaScript カスタムコードをフックするために使用できます。
 
 ## プレビュー動作 {#preview-behavior}
 
-プレビューモードに切り替えると、ページが更新されなくても [WCM モード](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
+プレビューモードに切り替えると、ページが更新されなくても [WCM モード](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
 
 レンダリングが WCM モードの影響を受けるコンポーネントの場合は、明確にそのコンポーネントを更新し、この Cookie の値を使用するように定義する必要があります。
 
