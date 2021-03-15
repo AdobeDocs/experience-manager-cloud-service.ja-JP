@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d4b7aed89e587750b96b13d07a9252ecabee6c03
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,14 +21,14 @@ Dispatcher の設定にルールを適用して、デフォルトのキャッシ
 
 ### HTML/Text {#html-text}
 
-* デフォルトでは、apacheレイヤーによって発行された`cache-control`ヘッダーに基づいて、ブラウザーによって5分間キャッシュされます。 CDN はこの値も順守します。
-* デフォルトのHTML/テキストのキャッシュ設定は、`global.vars`に`DISABLE_DEFAULT_CACHING`変数を定義することで無効にできます。
+* デフォルトでは、Apache レイヤーで生成される `cache-control` ヘッダーに基づいて、ブラウザーによって 5 分間キャッシュされます。CDN はこの値も順守します。
+* デフォルトの HTML/Text キャッシュ設定は、`global.vars` で `DISABLE_DEFAULT_CACHING` 変数を次のように定義することで無効にできます。
 
 ```
 Define DISABLE_DEFAULT_CACHING
 ```
 
-これは、例えば、ビジネスロジックで、デフォルトで年齢ヘッダーが0に設定されているので、年齢ヘッダーの微調整（カレンダー日に基づく値）が必要な場合に便利です。 ただし、**デフォルトのキャッシュをオフにする場合は注意が必要です。**
+これは、例えば、デフォルトで年齢ヘッダーが 0 に設定されているので、ビジネスロジックで（カレンダー日に基づいた値による）年齢ヘッダーの微調整が必要な場合に便利です。ただし、**デフォルトのキャッシュをオフにする場合は注意が必要です。**
 
 * AEM as a Cloud Service の SDK Dispatcher ツールを使用して、`global.vars` の `EXPIRATION_TIME` 変数を定義することにより、すべての HTML/Text コンテンツに対して上書きできます。
 * 次の apache mod_headers ディレクティブを使用して、より詳細なレベルで上書きできます。
