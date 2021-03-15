@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノート
 translation-type: tm+mt
-source-git-commit: 707c5daf5c48b2054fd684b4557143fbd8d873c7
+source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 18%
+source-wordcount: '456'
+ht-degree: 16%
 
 ---
 
@@ -17,12 +17,16 @@ ht-degree: 18%
 ## リリース日 {#release-date}
 
 AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日です。
+次回のリリースは2021年4月8日に予定されています。
 
 ## Cloud Manager {#cloud-manager}
 
 ### 新機能 {#what-is-new}
 
-* IP許可リスト、SSL証明書、カスタムドメイン名に関する既存のCDN設定を持つ環境のお客様には、以前に設定した内容に関するメッセージが表示され、UIを介してセルフサービスが可能になります。
+* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)の既存のカスタムドメイン名を設定している環境のお客様は、既存の設定に関するメッセージを表示し、UIを使用して自己提供できます。 ユーザーは、次の操作を実行できます。
+   * アセットを追加持つ既存のプログラム（またはその逆）に対するサイトソリューション
+   * サイトとアセットの両方を含む既存のプログラムからサイト（またはアセット）を削除します。
+   * 2つ目追加は、使用されていないソリューションのエンタイトルメントを既存のプログラムに対して、または新しいプログラムとして使用することです。
 
 * 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービス方式で次の操作を行うことができます。
 
@@ -56,4 +60,4 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 * 場合によっては、IP許可リストの横に緑色の「アクティブ」ステータスが表示される場合があります。このステータスは、その設定が展開されていない場合でも表示されます。
 
-* 既存のすべての実稼働パイプラインは、「エクスペリエンス監査」の手順で自動的に有効になります。
+* 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
