@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6dcf891fbe4a58f357fb429fc13cdd16bce7e3d0
 workflow-type: tm+mt
 source-wordcount: '679'
-ht-degree: 46%
+ht-degree: 51%
 
 ---
 
@@ -22,11 +22,11 @@ Dynamic Mediaアセットは、高速配信を実現するために、CDN(コン
 >
 >これらの手順は、AEM 6.5、Service Pack 5 以前の Dynamic Media にのみ適用されます。<!-- If you are using Dynamic Media in AEM as a Cloud Service, [use the new steps found here](/help/assets/invalidate-cdn-cache-dynamic-media.md). -->
 
-「[Dynamic Mediaクラシック](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)のキャッシュの概要」も参照してください。
+[Dynamic Media Classic のキャッシュの概要](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)も参照してください。
 
 **Dynamic Media Classic を使用して CDN キャッシュを無効にするには：**
 
-1. [Dynamic Mediaクラシックデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにサインインします。
+1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
 
    資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
 
