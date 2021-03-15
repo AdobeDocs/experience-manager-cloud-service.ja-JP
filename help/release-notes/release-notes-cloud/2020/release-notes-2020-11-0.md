@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.11.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。'
 translation-type: tm+mt
 source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 99%
 
 ### [!DNL Assets] と [!DNL Dynamic Media] の新機能 {#what-is-new-assets}
 
-* **アセットの一括取り込み**：アセットマイクロサービスなど、[!DNL Experience Manager] as a Cloud Service アーキテクチャを活用する拡張可能でクラウドネイティブな取り込みサービスを提供します。主なユースケースとしては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールでおこなえることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
+* **アセットの一括取り込み**：アセットマイクロサービスなど、[!DNL Experience Manager] as a Cloud Service アーキテクチャを活用する拡張可能でクラウドネイティブな取り込みサービスを提供します。主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールでおこなえることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
 
 
    このツールは、システム管理者、コンサルタント、実装パートナーのいずれかのペルソナを対象としています。この機能により、大規模な取り込みが可能になります。これは、初回の取り込み時や大量の取り込みをおこなうときに使用するのが理想的です。より小規模な取り込みジョブの場合は、[Assets ユーザーインターフェイスを使用したアップロード](/help/assets/add-assets.md#upload-assets)または[[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用します。
@@ -113,7 +113,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 
 ### SDK ビルドアナライザー {#analyzers}
 
-AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグインでは、依存関係の欠落など、Maven プロジェクトの問題を検出します。これを使用すると、ローカル開発中に、Cloud Manager でクラウド環境にデプロイする前に開発者が問題を見つけることができます。詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)や[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk)のドキュメントを参照してください。
+AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグインでは、依存関係の欠落など、Maven プロジェクトの問題を検出します。これを使用すると、ローカル開発中に、Cloud Manager でクラウド環境にデプロイする前に開発者が問題を見つけることができます。詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)や[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja#building-for-the-sdk)のドキュメントを参照してください。
 
 ### その他 {#others-foundation}
 
