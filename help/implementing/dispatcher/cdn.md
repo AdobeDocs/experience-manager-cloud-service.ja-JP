@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
 workflow-type: tm+mt
 source-wordcount: '695'
-ht-degree: 33%
+ht-degree: 70%
 
 ---
 
@@ -18,24 +18,24 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ## AEM 管理による CDN {#aem-managed-cdn}
 
-次の節に従って、Cloud ManagerセルフサービスUIを使用し、AEMの標準搭載のCDNを使用してコンテンツ配信の準備を行います。
+次の節に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備を行います。
 
-1. [SSL証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **トラフィックの制限**
 
-AEM管理のCDN設定では、デフォルトで、実稼働環境用と非実稼働環境（開発およびステージ環境）用の両方の環境について、すべてのパブリックトラフィックが公開サービスに到達できます。 特定の環境の発行サービスへのトラフィックを制限する場合（例えば、一定のIPアドレスでステージングを制限する場合）、Cloud Manager UIを使用して、セルフサービスでこの操作を行うことができます。
+デフォルトでは、AEM 管理による CDN セットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境のパブリッシュサービスへのトラフィックを制限する場合（例えば、一定の IP アドレスでステージングを制限する場合）、Cloud Manager UI を使用して、セルフサービスでこの操作をおこなうことができます。
 
-詳しくは、[IP許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
+詳しくは、「[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)」を参照してください。
 
 >[!CAUTION]
 >
->許可されているIPからの要求のみ、AEMの管理対象CDNで処理されます。 AEMが管理するCDNに対して独自のCDNを指定する場合は、CDNのIPが許可リストに含まれていることを確認します。
+>許可されている IP からの要求のみが AEM 管理による CDN で処理されます。AEMが管理するCDNに対して独自のCDNを指定する場合は、CDNのIPが許可リストに含まれていることを確認します。
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
-顧客が既存のCDNを使用する必要がある場合は、そのCDNを管理し、AEMが管理するCDNを指すように指定できます。ただし、次の条件が満たされている必要があります。
+顧客が既存の CDN を使用する必要がある場合は、自社でその CDN を管理して AEM 管理による CDN を参照できます。ただし、次の条件を満たす必要があります。
 
 * 顧客は、交換するのに手間がかかる既存 CDN を保有している。
 * 顧客が自社で管理している。
@@ -46,8 +46,8 @@ AEM管理のCDN設定では、デフォルトで、実稼働環境用と非実�
 設定手順：
 
 1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。
-1. ホストヘッダーを、AEM CDNの入力である接触チャネルドメインに設定します。 この値はアドビから取得されます。
-1. SNI ヘッダーを接触チャネルに送信します。ホストヘッダーと同様に、SNIヘッダーは接触チャネルドメインである必要があります。
+1. ホストヘッダーをオリジンドメインに設定します（AEM CDN の入口）。この値はアドビから取得されます。
+1. SNI ヘッダーをオリジンに送信します。ホストヘッダーと同様に、SNIヘッダーは接触チャネルドメインである必要があります。
 1. AEMサーバーへのトラフィックの正しいルーティングに必要な`X-Edge-Key`または`X-AEM-Edge-Key`を設定します（CDNがX-Edge-*をストリップする場合）。 この値はアドビから取得されます。AdobeCDNの入力に直接アクセスする場合（`X-Edge-Key`が存在しない場合はブロックする）は、Adobeに通知してください。
 
 ライブトラフィックを受け入れる前に、Adobeのカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
@@ -56,27 +56,27 @@ AEM管理のCDN設定では、デフォルトで、実稼働環境用と非実�
 >
 >独自のCDNを管理するお客様は、AEM CDN経由で送信されるヘッダーの整合性を確保する必要があります。 例えば、すべての`X-Forwarded-*`ヘッダーを消去し、既知の値と制御値に設定することをお勧めします。 例えば、`X-Forwarded-For`にはクライアントのIPアドレスを含め、`X-Forwarded-Host`にはサイトのホストを含める必要があります。
 
-お客様のCDNからAEM管理のCDNへのホップは効率的ですが、ホップの増加に伴いパフォーマンスの低下が生じる可能性があります。
+顧客 CDN から AEM 管理による CDN へのホップは効率的ですが、ホップの増加に伴い、パフォーマンスがわずかに低下する可能性があります。
 
 このお客様のCDN設定は発行層でサポートされていますが、作成者層の前ではサポートされていません。
 
-## 位置情報ヘッダー{#geo-headers}
+## 位置情報ヘッダー {#geo-headers}
 
 AEMが管理するCDNは、次のコマンドを使用して各リクエストにヘッダーを追加します。
 
-* 国コード：`x-aem-client-country`
+* 国コード: `x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
 
-国コードの値は、Alpha-2コード（[ここ](https://en.wikipedia.org/wiki/ISO_3166-1)で説明）です。
+国コードの値は、Alpha-2 コード（[ここ](https://ja.wikipedia.org/wiki/ISO_3166-1)で説明）です。
 
 大陸コードの値は次のとおりです。
 
-* AFアフリカ
-* 南極大陸
-* ASアジア
-* EUヨーロッパ
-* 北米
-* オクセアニア
-* 南アメリカ南部
+* AF - アフリカ
+* AN - 南極大陸
+* AS - アジア
+* EU - ヨーロッパ
+* NA - 北米
+* OC - オセアニア
+* SA - 中南米
 
-この情報は、リクエストの接触チャネル（国）に基づいて別のURLにリダイレクトするなどの使用例に役立ちます。 地域情報に依存するキャッシュ応答には、Varyヘッダーを使用します。 例えば、特定の国のランディングページにリダイレクトする場合は、常に`Vary: x-aem-client-country`を含める必要があります。 必要に応じて、`Cache-Control: private`を使用してキャッシュを防ぐことができます。 [キャッシュ](/help/implementing/dispatcher/caching.md#html-text)も参照してください。
+この情報は、リクエストのオリジン（国）に基づいて別の URL にリダイレクトするなどの使用例に役立ちます。地域情報に依存するキャッシュ応答には、Varyヘッダーを使用します。 例えば、特定の国のランディングページにリダイレクトする場合は、常に`Vary: x-aem-client-country`を含める必要があります。 必要に応じて、`Cache-Control: private` を使用してキャッシュを防ぐことができます。「[キャッシュ](/help/implementing/dispatcher/caching.md#html-text)」も参照してください。
