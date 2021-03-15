@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
 workflow-type: tm+mt
 source-wordcount: '2027'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# コンテンツフラグメントの操作{#working-with-content-fragments}
+# コンテンツフラグメントの操作 {#working-with-content-fragments}
 
 [Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
 
@@ -26,7 +26,7 @@ ht-degree: 97%
       * ページオーサリング用のより構造化されたコンテンツを用意するためや、アプリケーションに配信するために使用できます。
    * 入れ子
       * 使用可能な参照データ型を使用して、コンテンツをネストできます。
-      * アプリへの配信に使用される傾向があります。
+      * アプリケーションへの配信に使用される傾向があります。
 
 コンテンツフラグメントは、AEM コアコンポーネントの Sling Model（JSON）書き出し機能を使用して、JSON 形式で配信することもできます。この形式の配信では次のことが可能です。
 
@@ -111,7 +111,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!NOTE]
 >
->AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、[Translating Assets](/help/assets/translate-assets.md)を参照してください。
+>AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「[アセットの翻訳](/help/assets/translate-assets.md)」を参照してください。
 
 ## コンテンツタイプ {#content-type}
 
@@ -294,10 +294,10 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 AEM as a Cloud Service の習得に役立つ [WKND サイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)サンプルが用意されています。
 
-WKNDプロジェクトには、次のものが含まれます。
+WKND プロジェクトには、次のものが含まれます。
 
-* コンテンツフラグメントモデルは次の場所で利用できます。
+* 次の URL で入手できるコンテンツフラグメントモデル：
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* 次の場所で利用可能なコンテンツフラグメント（およびその他のコンテンツ）
+* 次の URL で入手できるコンテンツフラグメント（およびその他のコンテンツ）：
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
