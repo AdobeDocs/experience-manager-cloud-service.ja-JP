@@ -5,18 +5,18 @@ translation-type: tm+mt
 source-git-commit: c5f041f29133718a4260a289255e21b535cde12f
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
 
 # GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Adobe Experience Manager (AEM) as a Cloud Service を使用すると、AEM GraphQL API（標準 GraphQL に基づくカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツを配信できます。単一のAPIクエリをカスタマイズする機能により、レンダリングする必要がある/必要な特定のコンテンツを(単一のAPIクエリに対する応答として)取得して配信できます。
+Adobe Experience Manager (AEM) as a Cloud Service を使用すると、AEM GraphQL API（標準 GraphQL に基づくカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツを配信できます。単一の API クエリをカスタマイズする機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
 
 >[!NOTE]
 >
->AEM Sites as a Cloud Service 向けヘッドレス開発の紹介については、「[ヘッドレスと AEM](/help/implementing/developing/headless/introduction.md)」を参照してください。
+>AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/implementing/developing/headless/introduction.md)を参照してください。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用すると、AEM Graph
 
 ヘッドレスコンテンツ管理システム（CMS）とは次のことを意味します。
 
-* 「*ヘッドレスコンテンツ管理システム（ヘッドレス CMS）は、バックエンド専用のコンテンツ管理システム（CMS）であり、API 経由でコンテンツにアクセスして、任意のデバイスに表示できます。*
+* 「*ヘッドレスコンテンツ管理システム（ヘッドレス CMS）は、バックエンド専用のコンテンツ管理システム（CMS）であり、API 経由でコンテンツにアクセスして、任意のデバイスに表示できます。*」
 
    [ウィキペディア](https://en.wikipedia.org/wiki/Headless_content_management_system)を参照してください。
 
@@ -44,7 +44,7 @@ AEM のコンテンツフラグメントのオーサリングとは、次のこ�
 
 GraphQL とは次のことを意味します。
 
-* &quot;*...APIのクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイム。*&quot;
+* 「*...API のクエリ言語と、既存のデータを使用してこれらのクエリを満たすランタイムです。*」
 
    [GraphQL.org](https://graphql.org) を参照
 
@@ -52,7 +52,7 @@ GraphQL とは次のことを意味します。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-クラウドエクスペリエンスとしてのAdobeエクスペリエンスの場合、標準のGraphQL APIのカスタマイズ実装が開発されました。 詳しくは、[AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)を参照してください。
+Adobe Experience as a Cloud Experience には、標準の GraphQL API のカスタマイズ実装が開発されています。詳しくは、「[コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)」を参照してください。
 
 AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.org/code/#java)に基づいています。
 
@@ -78,7 +78,7 @@ AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.or
 
 [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)は、
 
-* [スキーマ](https://graphql.org/learn/schema/)の生成に使用します。1回は&#x200B;**有効**&#x200B;です。
+* **有効**&#x200B;にされると、[スキーマ](https://graphql.org/learn/schema/)の生成に使用されます。
 
 * GraphQL に必要なデータタイプとフィールドを提供します。アプリケーションが、可能なことだけを要求して期待するものを受け取るようにします。
 
@@ -100,12 +100,12 @@ AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.or
 
 ### JSON プレビュー {#json-preview}
 
-コンテンツフラグメントモデルの設計と開発に役立つように、[JSON出力](/help/assets/content-fragments/content-fragments-json-preview.md)をプレビューできます。
+コンテンツフラグメントモデルの設計と開発に役立つように、[JSON 出力](/help/assets/content-fragments/content-fragments-json-preview.md)をプレビューできます。
 
-## AEM での GraphQL の使用方法 - コンテンツとクエリの例 {#learn-graphql-with-aem-sample-content-queries}
+## AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
 AEM GraphQL API の使い方の紹介は、「[AEM での GraphQL の使用方法 - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)」を参照してください。
 
-## チュートリアル — AEM ヘッドレスと GraphQL をはじめる前に
+## チュートリアル - AEM ヘッドレスと GraphQL をはじめる前に
 
 実践的なチュートリアルを探している場合は、AEM の GraphQL API を使用し、外部アプリで使用するコンテンツをヘッドレス CMS シナリオで構築して公開する方法を示す「[AEM ヘッドレスと GraphQL をはじめる前に](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)」のエンドツーエンドのチュートリアルをご覧ください。
