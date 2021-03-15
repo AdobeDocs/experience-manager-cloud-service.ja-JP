@@ -10,7 +10,7 @@ ht-degree: 81%
 ---
 
 
-# Adobe Target との統合{#integrating-with-adobe-target}
+# Adobe Target との統合 {#integrating-with-adobe-target}
 
 Adobe Experience Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルでターゲット設定と測定をおこない、コンテンツの関連性を高めることができます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
 
