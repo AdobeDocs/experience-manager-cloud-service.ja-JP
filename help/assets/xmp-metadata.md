@@ -3,10 +3,10 @@ title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0aac16705342f9652f38beef956a55d3f8f5df7d
+source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 76%
+source-wordcount: '1003'
+ht-degree: 74%
 
 ---
 
@@ -21,7 +21,7 @@ XMP では、すべてのファイル形式に埋め込むことができる共�
 
 AEM Assets は、XMP メタデータ標準をネイティブにサポートしています。XMP は、デジタルアセット内の標準化されたメタデータと独自メタデータを処理および格納するための規格です。XMP は、複数のアプリケーションでメタデータを効率的に使用するための共通規格となるよう設計されています。
 
-例えば制作のプロフェッショナルは、アドビのアプリケーションに組み込まれた XMP サポートを使用して、複数のファイル形式に情報を渡します。AEM Assets リポジトリでは、XMP メタデータを抽出し、そのデータをコンテンツのライフサイクルの管理に使用します。自動化ワークフローを作成することもできます。
+例えば制作のプロフェッショナルは、アドビのアプリケーションに組み込まれた XMP サポートを使用して、複数のファイル形式に情報を渡します。AEM Assets リポジトリーでは、XMP メタデータを抽出し、そのデータをコンテンツのライフサイクルの管理に使用します。自動化ワークフローを作成することもできます。
 
 XMP が提供するデータモデル、ストレージモデルおよびスキーマを使用して、メタデータの定義、作成および処理方法を規格化できます。これらの概念は、すべてこの節で説明します。
 
@@ -31,13 +31,13 @@ XMP のメタデータは、一連のプロパティで構成されます。こ�
 
 XMP によって定義される[メタデータ](https://en.wikipedia.org/wiki/Metadata)モデルは、任意の定義済みメタデータ項目のセットと併用できます。また、XMP によって、リソースで複数の処理手順がおこなわれる際にその履歴を記録するうえで便利な基本的なプロパティに対して、特定の[スキーマ](https://en.wikipedia.org/wiki/XML_schema)も定義されます。処理手順は、撮影、[スキャン](https://en.wikipedia.org/wiki/Image_scanner)またはテキスト作成から、画像編集手順（[切り抜き](https://en.wikipedia.org/wiki/Cropping_%28image%29)やカラー調整など）を経て、最終的な画像へのアセンブリまでです。XMP の処理中に、各ソフトウェアプログラムまたはデバイスでデジタルリソースに独自の情報を付加できます。この情報は、最終的なデジタルファイルで保持されます。
 
-XMP のシリアライズおよび格納は、通常 [W3C](https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework)（RDF）のサブセットを使用して実行され、[XML](https://ja.wikipedia.org/wiki/XML) で表記されます。
+XMP のシリアライズおよび格納は、通常 [W3C](https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://ja.wikipedia.org/wiki/Resource_Description_Framework)（RDF）のサブセットを使用して実行され、[XML](https://ja.wikipedia.org/wiki/XML) で表記されます。
 
 ### XMP の利点 {#advantages-of-xmp}
 
 XMP には、他のエンコーディング規格およびエンコーディングスキーマに比べて次の利点があります。
 
-* XMP ベースのメタデータは利便性が高く、細かく分類されています。  
+* XMP ベースのメタデータは利便性が高く、細かく分類されています。
 * XMP では 1 つのプロパティに複数の値を指定できます。
 * XMP の規格化されたエンコーディングによって、メタデータを簡単にやり取りできます。
 * XMP は拡張可能です。アセットに詳細情報を追加できます。
@@ -72,21 +72,19 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]のこのXMP書き戻し機能は、メタデータの変更を元のアセットのレンディションに複製します。 アセットのメタデータを[!DNL Assets]内から変更した場合、またはアセットのアップロード中に変更内容がリポジトリのアセットノード内に最初に保存されます。 XMPの書き戻し機能は、アセットのすべてのレンディションまたは特定のレンディションにメタデータの変更を反映します。
+[!DNL Adobe Experience Manager Assets]のこのXMP書き戻し機能は、メタデータの変更を元のアセットのレンディションに複製します。 アセットのメタデータを[!DNL Assets]内から変更した場合、またはアセットのアップロード中に変更内容がリポジトリのアセットノード内に最初に保存されます。 ただし、[!DNL Assets]は、メタデータの変更をアセットのレンディションに自動的に反映しません。 XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。更新は、アセット階層のメタデータノードに保存されます。 この機能では、レンディションのバイナリファイルに更新が埋め込まれます。 この機能は、`jcr`名前空間を使用するメタデータプロパティのみを書き戻します。
 
-「`Classic Leather`」というタイトルのアセットの「[!UICONTROL タイトル]」プロパティを「`Nylon`」に変更するシナリオについて考えます。
+例えば、`Classic Leather`というアセットの[!UICONTROL Title]プロパティを`Nylon`に変更するシナリオを考えてみましょう。
 
 ![メタデータ](assets/metadata.png)
 
 この場合、[!DNL Assets]は、アセット階層に保存されているアセットメタデータの`dc:title`パラメーターに&#x200B;**[!UICONTROL Title]**&#x200B;プロパティの変更を保存します。
 
-![metadata_stored](assets/metadata_stored.png)
+![リポジトリのアセットノードに保存されたメタデータ](assets/metadata_stored.png)
 
-ただし、[!DNL Assets]は、メタデータの変更をアセットのレンディションに自動的に反映しません。
-
-XMPの書き戻し機能を使用すると、メタデータの変更をアセットのすべてのレンディションまたは特定のレンディションに反映できます。 ただし、変更はアセット階層の metadata ノード以下には保存されません。代わりに、この機能によって、レンディションのバイナリファイルに変更が埋め込まれます。
-
-[!DNL Assets]では、書き戻し機能はデフォルトで有効になっていません。 [メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。
+>[!NOTE]
+>
+>[!DNL Assets]では、書き戻し機能はデフォルトで有効になっていません。 [メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。
 
 ### XMPの書き戻しを有効にする{#enable-xmp-writeback}
 
@@ -97,9 +95,9 @@ XMPの書き戻し機能を使用すると、メタデータの変更をアセ�
 
    ![DAMメタデータ書き戻しランチャーを選択して、プロパティを変更し、アクティブ化します](assets/launcher-properties-metadata-writeback1.png)
 
-1. [!UICONTROL ランチャーのプロパティ]ページで「**[!UICONTROL アクティブ化]**」を選択します。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. **[!UICONTROL ランチャーのプロパティ]**&#x200B;ページで「**[!UICONTROL アクティブ化]**」を選択します。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-このワークフローをアセットに1回だけ適用するには、左側のパネルからワークフロー[!UICONTROL DAMメタデータの書き戻し]を適用します。 アップロードしたアセットにワークフローを適用するには、ワークフローを後処理プロファイルに追加します。
+このワークフローをアセットに1回だけ適用するには、左側のパネルからワークフロー[!UICONTROL DAMメタデータの書き戻し]を適用します。 アップロードされたすべてのアセットにワークフローを適用するには、ワークフローを後処理プロファイルに追加します。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
