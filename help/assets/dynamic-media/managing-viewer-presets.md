@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: dce527d5798ef003dc499baec97b169debab445a
 workflow-type: tm+mt
 source-wordcount: '4239'
-ht-degree: 70%
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja)』も参照してください。
+[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja)も参照してください。
 
 ここでは、ビューアプリセットを作成、編集および管理する方法について説明します。アセットをプレビューする際は、いつでもビューアプリセットを適用できます。詳しくは、[ビューアプリセットの適用](#applying-a-viewer-preset-to-an-asset)を参照してください。
 
@@ -35,7 +35,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
-[キーボードのアクセシビリティとナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)も参照してください。
+[キーボードのアクセシビリティとナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=ja)も参照してください。
 
 ## ビューアプリセットの管理 {#managing-viewer-presets-1}
 
@@ -51,7 +51,7 @@ Adobe Experience Managerで&#x200B;**[!UICONTROL ツール]**（ハンマーの�
 
 Web ページごとに異なるニーズがあります。例えば、個別のブラウザーウィンドウで HTML5 ビューアを開くリンクを示す Web ページが必要な場合や、ホストページ上に直接HTML5ビューアを埋め込む必要がある場合もあります。 後者の場合は、Webページは静的レイアウトです。 また、「レスポンシブ」で、デバイスごと、ブラウザーウィンドウのサイズごとに表示方法が変わります。 これらのニーズに対応するために、Dynamic Media に付属する事前定義済みの標準提供 HTML5 ビューアはすべて、静的な Web ページとレスポンシブデザイン Web ページの両方をサポートしています。
 
-レスポンシブビューアを Web ページに埋め込む方法について詳しくは、 Dynamic Media 画像サービングおよびレンダリング API ヘルプの[レスポンシブ静的画像ライブラリ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html#about-responsive-image-library)を参照してください&#x200B;*。*
+レスポンシブビューアを Web ページに埋め込む方法について詳しくは、 Dynamic Media 画像サービングおよびレンダリング API ヘルプの[レスポンシブ静的画像ライブラリ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=ja#about-responsive-image-library)を参照してください&#x200B;*。*
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 次の表に、Dynamic Media に付属するすべての事前定義済みの標準提供ビューアプリセットについて示します。
 
-関連トピック [ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)。
+関連トピック [ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)。
 
 ビューアでサポートされている Web ブラウザーとオペレーティングシステムのバージョンについては、ビューアのリリースノートに記載されています。
 
@@ -419,13 +419,13 @@ Experience Managerは、**[!UICONTROL 詳細表示/ビューア]**&#x200B;から
 
         Visual Editor を使用すると、特定のプロパティがスタイルに与える効果を確認できます。エディタの左側のサンプルを使用して、プロパティを設定または調整し、ビューアに対する効果を即時に確認します。
 
-      各タイプのビューアプリセットに対するCSSスタイルプロパティは、[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)の「ビューアのカスタマイズ」ヘルプトピックで説明されています。 *`<viewer name>`*&#x200B;例えば、`Mixed_Media` タイプのビューアプリセットを作成している場合、プロパティのリストと各プロパティの説明については、[混在メディアビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)を参照してください。
+      各タイプのビューアプリセットに対するCSSスタイルプロパティは、[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)の「ビューアのカスタマイズ」ヘルプトピックで説明されています。 *`<viewer name>`*&#x200B;例えば、`Mixed_Media` タイプのビューアプリセットを作成している場合、プロパティのリストと各プロパティの説明については、[混在メディアビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=ja)を参照してください。
 
    * 別のCSSファイルにスタイル設定を定義した場合は、CSSファイルをExperience Managerアセットにアップロードできます。 アップロードしたCSSファイルを見つけて、ビューアプリセットと関連付けるには、**[!UICONTROL 選択したタイプ]**&#x200B;のプルダウンメニューの下の&#x200B;**[!UICONTROL CSS]**&#x200B;を読み込みをタップします（必要に応じて、ビジュアルエディターを上にスクロールして表示します）。
 
         CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。例えば、ズームビューアを作成している場合、読み込むすべての CSS ルールが、親のビューアエレメントに定義されているズームビューアのクラス名 `.s7mixedmediaviewer` を使用して定義されている必要があります。
 
-      指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)』の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについては、[ズームビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)を参照してください）。ただし、ビジュアルエディターでは、一部のCSS値を理解できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
+      指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)』の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについては、[ズームビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=ja)を参照してください）。ただし、ビジュアルエディターでは、一部のCSS値を理解できない場合があります。 そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
    >[!NOTE]
    >
    >CSSを生のフォームで直接編集する場合は、「選択したタイプ」プルダウンメニューの下の「**[!UICONTROL CSSを表示/非表示]**」をタップします（必要に応じて、ビジュアルエディターを上にスクロールして表示します）。
@@ -441,7 +441,7 @@ Experience Managerは、**[!UICONTROL 詳細表示/ビューア]**&#x200B;から
 
    Visual Editor 内の多くのコンポーネントには、詳しい説明が関連付けられています。この説明は、コンポーネントを展開して関連パラメーターを表示したときに、青いボックス内に示されます。
 
-   一部のビューアタイプには、「**[!UICONTROL IS コマンド]**」テキストフィールドに画像サービングコマンドを指定できるコンポーネントがあります。使用できるコマンドのリストについては、[画像サービング API リファレンス（英語）](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)を参照してください。
+   一部のビューアタイプには、「**[!UICONTROL IS コマンド]**」テキストフィールドに画像サービングコマンドを指定できるコンポーネントがあります。使用できるコマンドのリストについては、[画像サービング API リファレンス（英語）](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=ja)を参照してください。
 
    >[!NOTE]
    >
