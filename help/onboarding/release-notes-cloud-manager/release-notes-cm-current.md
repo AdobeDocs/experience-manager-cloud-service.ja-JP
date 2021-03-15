@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノート
 translation-type: tm+mt
-source-git-commit: 5dabb0f9f119d8c56c4b1b64e1528f03e1a92fac
+source-git-commit: 36e5e90785a1bc9a4f4f8d4febd462e00252a0ea
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '454'
 ht-degree: 16%
 
 ---
@@ -23,12 +23,12 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 ### 新機能 {#what-is-new}
 
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)の既存のカスタムドメイン名を設定している環境のお客様は、既存の設定に関するメッセージを表示し、UIを使用して自己提供できます。 ユーザーは、次の操作を実行できます。
+* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)の既存のカスタムドメイン名を設定している環境のお客様は、既存の設定に関するメッセージを表示し、UIを使用して自己提供できます。
+
+* 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービスの方法で次の操作を行うことができます。
    * アセットを追加持つ既存のプログラム（またはその逆）に対するサイトソリューション
    * サイトとアセットの両方を含む既存のプログラムからサイト（またはアセット）を削除します。
    * 2つ目追加は、使用されていないソリューションのエンタイトルメントを既存のプログラムに対して、または新しいプログラムとして使用することです。
-
-* 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービス方式で次の操作を行うことができます。
 
 * パイプライン実行画面とアクティビティ画面の両方に、AEM Push Update」ラベルが表示されるようになりました。
 
