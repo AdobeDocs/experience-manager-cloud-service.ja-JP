@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: bafb952cd984885e0f309b8a78a96ae48320b7df
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 94%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [ [!DNL Assets]  as a [!DNL Cloud Service]](assets-cloud-changes.md) の主な変更点
++ [ [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md) の主な変更点
 + [[!DNL Assets] アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
-+ [ [!DNL Assets]](accessibility.md) のアクセシビリティ
++ [ [!DNL Assets]](accessibility.md) でのアクセシビリティ
 + デジタルアセットの管理 {#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
@@ -30,9 +30,9 @@ ht-degree: 94%
    + [アセットの検索](search-assets.md)
    + [一般的なアセット管理タスク](manage-digital-assets.md)
    + [画像のスマートタグ付け](smart-tags.md)
-   + [ビデオアセットのスマートタグ付け](smart-tags-video-assets.md)
+   + [ビデオアセットのスマートタグ](smart-tags-video-assets.md)
    + [アセットの整理方法](organize-assets.md)
-   + [AEM での  [!DNL Adobe Stock]  アセットの使用](aem-assets-adobe-stock.md)
+   + [AEM での [!DNL Adobe Stock] アセットの使用](aem-assets-adobe-stock.md)
    + [コレクションの管理](manage-collections.md)
    + [メタデータの概要](manage-metadata.md)
    + [ [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md) との統合
@@ -56,7 +56,7 @@ ht-degree: 94%
    + [Assets HTTP API](mac-api-assets.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
    + [コンテンツフラグメント用 AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
-   + [リモートAEM GraphコンテンツフラグメントでのQLクエリの認証](content-fragments/graphql-authentication-content-fragments.md)
+   + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](content-fragments/graphql-authentication-content-fragments.md)
    + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
@@ -65,7 +65,7 @@ ht-degree: 94%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での  [!DNL Assets]  の設定
+   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での [!DNL Assets] の設定
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
    + [アセット [!DNL Brand Portal] の発行元 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
 + コンテンツフラグメント {#content-fragments}
@@ -125,5 +125,5 @@ ht-degree: 94%
    + [Dynamic Media での選択的公開の操作](dynamic-media/selective-publishing.md)
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [コンテンツの HTTP/2 配信の FAQ](dynamic-media/http2faq.md)
-   + [Flashビューアの提供終了](dynamic-media/flash-viewers-eol.md)
+   + [Flash ビューアの提供終了](dynamic-media/flash-viewers-eol.md)
    + [DHTMLビューアの提供終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
