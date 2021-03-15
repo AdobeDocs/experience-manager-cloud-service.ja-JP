@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
 workflow-type: tm+mt
 source-wordcount: '2901'
-ht-degree: 61%
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 
 * REST で API リクエストの反復を回避
 * 特定の要件に限定された配信を確保
-* 単一のAPIクエリに対する応答としてレンダリングに必要なものを一括配信できます。
+* 1 つの API クエリへの応答としてレンダリングに必要なものだけを一括配信
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ GraphQL とは次のことを意味します。
 
    「[Explore GraphQL](https://www.graphql.com)」を参照
 
-* *&quot;...2012年にFacebookが内部で開発したデータクエリ言語および仕様。2015年には公開される。開発者の生産性を高め、転送データの量を最小限に抑えるために、REST ベースのアーキテクチャに代わる手段を提供します。GraphQLは、数百の組織が実稼働環境で使用しています。*
+* *「...2012 年に Facebook 社内で開発されたデータクエリ言語および仕様です。その後、2015 年には公式にオープンソースとなりました。開発者の生産性を高め、転送データの量を最小限に抑えるために、REST ベースのアーキテクチャに代わる手段を提供します。GraphQL は、あらゆる規模の数百の組織により実稼働環境で使用されています...」*
 
-   [GraphQL Foundation](https://foundation.graphql.org/)を参照してください。
+   [GraphQL Foundation](https://foundation.graphql.org/) を参照してください。
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -76,27 +76,27 @@ GraphQL では次を使用します。
 
 * **[クエリ](https://graphql.org/learn/queries/)**
 
-* **[スキーマとタイプ](https://graphql.org/learn/schema/)**:
+* **[スキーマとタイプ](https://graphql.org/learn/schema/)**：
 
-   * スキーマは、コンテンツフラグメントモデルに基づいてAEMによって生成されます。
-   * GraphQLでは、スキーマを使用して、AEM向けのGraphQLの実装で許可されるタイプと操作を示します。
+   * スキーマは、コンテンツフラグメントモデルに基づいて AEM で生成されます。
+   * GraphQL では、スキーマを使用して、AEM 用 GraphQL の実装で使用可能なタイプと操作を提供します。
 
 * **[フィールド](https://graphql.org/learn/queries/#fields)**
 
-* **[GraphQLエンドポイント](#graphql-aem-endpoint)**
-   * GraphQLクエリに応答し、GraphQLスキーマにアクセスできるAEM内のパス。
+* **[GraphQL エンドポイント](#graphql-aem-endpoint)**
+   * GraphQL クエリに応答し、GraphQL スキーマへのアクセスを提供する AEM 内のパス。
 
-   * 詳しくは、[GraphQLエンドポイントの有効化](#enabling-graphql-endpoint)を参照してください。
+   * 詳しくは、[GraphQL エンドポイントの有効化](#enabling-graphql-endpoint)を参照してください。
 
 [ベストプラクティス](https://graphql.org/learn/best-practices/)を含む包括的な詳細については、「[(GraphQL.org) GraphQL の概要](https://graphql.org/learn/)」を参照してください。
 
 ### GraphQL クエリタイプ {#graphql-query-types}
 
-GraphQLを使用すると、次のいずれかを返すクエリを実行できます。
+GraphQL では、次のいずれかを返すクエリを実行できます。
 
-* **単一のエントリ**
+* **1 つのエントリ**
 
-* エントリ](https://graphql.org/learn/schema/#lists-and-non-null)**の**[&#x200B;リスト
+* **[エントリのリスト](https://graphql.org/learn/schema/#lists-and-non-null)**
 
 <!--
 You can also perform:
@@ -104,7 +104,7 @@ You can also perform:
 * [Persisted Queries, that are cached](#persisted-queries-caching)
 -->
 
-## AEMエンドポイント用のGraphQL {#graphql-aem-endpoint}
+## AEM 用 GraphQL のエンドポイント {#graphql-aem-endpoint}
 
 エンドポイントは、AEM 用 GraphQL へのアクセスに使用するパスです。このパスを使用すると、以下が可能になります。
 
@@ -112,101 +112,101 @@ You can also perform:
 * GraphQL クエリの送信
 * （GraphQL クエリに対する）応答の受信
 
-AEMエンドポイント用のGraphQLのリポジトリパスは次のとおりです。
+AEM 用 GraphQL エンドポイントのリポジトリーパスは次のとおりです。
 
 `/content/cq:graphql/global/endpoint`
 
-アプリは、リクエストURLで次のパスを使用できます。
+アプリは、リクエスト URL で次のパスを使用できます。
 
 `/content/_cq_graphql/global/endpoint.json`
 
-AEMでGraphQLのエンドポイントを有効にするには、次の操作が必要です。
+AEM 用 GraphQL のエンドポイントを有効にするには、次の操作が必要です。
 
 >[!CAUTION]
 >
 >これらの手順は近い将来変更される可能性があります。
 
-* [GraphQLエンドポイントの有効化](#enabling-graphql-endpoint)
+* [GraphQL エンドポイントの有効化](#enabling-graphql-endpoint)
 * [追加設定の実行](#additional-configurations-graphql-endpoint)
 
-### GraphQLエンドポイントの有効化{#enabling-graphql-endpoint}
+### GraphQL エンドポイントの有効化 {#enabling-graphql-endpoint}
 
 >[!NOTE]
 >
->Adobeが提供するパッケージの詳細については、[サポートするパッケージ](#supporting-packages)を参照してください。
+>これらの手順を簡単にするためにアドビから提供されるパッケージについて詳しくは、[サポートパッケージ](#supporting-packages)を参照してください。
 
-AEMでGraphQLクエリを有効にするには、エンドポイントを`/content/cq:graphql/global/endpoint`に作成します。
+AEM で GraphQL クエリを有効にするには、`/content/cq:graphql/global/endpoint` にエンドポイントを作成します。
 
-* ノード`cq:graphql`と`global`はタイプ`sling:Folder`でなければなりません。
-* ノード`endpoint`はタイプ`nt:unstructured`で、`graphql/sites/components/endpoint`の`sling:resourceType`を含む必要があります。
+* ノード `cq:graphql` および `global` は `sling:Folder` タイプにする必要があります。
+* ノード `endpoint` は `nt:unstructured` タイプで、`graphql/sites/components/endpoint` の `sling:resourceType` を含んでいる必要があります。
 
 >[!CAUTION]
 >
->エンドポイントは、すべてのユーザーがアクセスできます。 これは、特にパブリッシュインスタンスでは、GraphQLクエリがサーバーに大きな負荷をかける可能性があるので、セキュリティ上の問題を引き起こす可能性があります。
+>エンドポイントは、すべてのユーザーがアクセスできます。そのため、GraphQL クエリがサーバーに大きな負荷をかける可能性があるので、特にパブリッシュインスタンスでは、セキュリティ上の問題が発生するおそれがあります。
 >
->エンドポイントで、使用事例に応じたACLを設定できます。
+>使用例に適した ACL をエンドポイントに設定できます。
 
 >[!NOTE]
 >
->エンドポイントはそのまま使用できません。 [GraphQLエンドポイント](#additional-configurations-graphql-endpoint)の追加設定は別途行う必要があります。
+>エンドポイントはそのままでは機能しません。[GraphQL エンドポイントの追加設定](#additional-configurations-graphql-endpoint)を別途おこなう必要があります。
 
 >[!NOTE]
->また、[GraphiQL IDE](#graphiql-interface)を使用して、GraphQLクエリのテストとデバッグを行うこともできます。
+>また、[GraphiQL IDE](#graphiql-interface) を使用して、GraphQL クエリのテストとデバッグをおこなうこともできます。
 
-### GraphQLエンドポイント{#additional-configurations-graphql-endpoint}の追加設定
+### GraphQL エンドポイントの追加設定 {#additional-configurations-graphql-endpoint}
 
 >[!NOTE]
 >
->Adobeが提供するパッケージの詳細については、[サポートするパッケージ](#supporting-packages)を参照してください。
+>これらの手順を簡単にするためにアドビから提供されるパッケージについて詳しくは、[サポートパッケージ](#supporting-packages)を参照してください。
 
-追加の設定が必要です。
+必要な追加設定は次のとおりです。
 
-* Dispatcher:
-   * 必要なURLを許可するには
+* Dispatcher：
+   * 必要な URL を許可します
    * 必須
-* バニティー URL:
-   * エンドポイントの簡易URLを割り当てるには
+* バニティー URL：
+   * エンドポイントの簡略版 URL を割り当てます
    * オプション
-* OSGi 設定:
-   * GraphQLサーブレット設定：
-      * エンドポイントへの要求を処理します
-      * 構成名は`org.apache.sling.graphql.core.GraphQLServlet`です。 OSGiファクトリ設定として提供する必要があります
-      * `sling.servlet.extensions` に設定する必要がある  `[json]`
-      * `sling.servlet.methods` に設定する必要がある  `[GET,POST]`
-      * `sling.servlet.resourceTypes` に設定する必要がある  `[graphql/sites/components/endpoint]`
+* OSGi 設定：
+   * GraphQL サーブレットの設定：
+      * エンドポイントへのリクエストを処理します
+      * 設定名は `org.apache.sling.graphql.core.GraphQLServlet` です。OSGi ファクトリ設定として提供する必要があります
+      * `sling.servlet.extensions` を `[json]` に設定する必要があります
+      * `sling.servlet.methods` を `[GET,POST]` に設定する必要があります
+      * `sling.servlet.resourceTypes` を `[graphql/sites/components/endpoint]` に設定する必要があります
       * 必須
-   * スキーマサーブレット設定：
-      * GraphQLスキーマを作成します
-      * 構成名は`com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet`です。 OSGiファクトリ設定として提供する必要があります
-      * `sling.servlet.extensions` に設定する必要がある  `[GQLschema]`
-      * `sling.servlet.methods` に設定する必要がある  `[GET]`
-      * `sling.servlet.resourceTypes` に設定する必要がある  `[graphql/sites/components/endpoint]`
+   * スキーマサーブレットの設定：
+      * GraphQL スキーマを作成します
+      * 設定名は `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet` です。OSGi ファクトリ設定として提供する必要があります
+      * `sling.servlet.extensions` を `[GQLschema]` に設定する必要があります
+      * `sling.servlet.methods` を `[GET]` に設定する必要があります
+      * `sling.servlet.resourceTypes` を `[graphql/sites/components/endpoint]` に設定する必要があります
       * 必須
-   * CSRFの設定：
+   * CSRF の設定：
       * エンドポイントのセキュリティ保護
-      * 構成名は`com.adobe.granite.csrf.impl.CSRFFilter`です
-      * 除外パス追加の既存のリストへの`/content/cq:graphql/global/endpoint` (`filter.excluded.paths`)
+      * 設定名は `com.adobe.granite.csrf.impl.CSRFFilter` です
+      * 除外するパスの既存リスト（`filter.excluded.paths`）に `/content/cq:graphql/global/endpoint` を追加します
       * 必須
 
-### サポートパッケージ{#supporting-packages}
+### サポートパッケージ {#supporting-packages}
 
-GraphQLエンドポイントの設定を簡単にするために、Adobeは[GraphQL Sample Project](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip)パッケージを提供します。
+GraphQL エンドポイントの設定を簡単にするために、アドビは [GraphQL サンプルプロジェクト](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip)パッケージを提供します。
 
-このアーカイブには、[必要な追加設定](#additional-configurations-graphql-endpoint)と[GraphQLエンドポイント](#enabling-graphql-endpoint)の両方が含まれます。 プレーンAEMインスタンスにインストールすると、完全に動作するGraphQLエンドポイントが`/content/cq:graphql/global/endpoint`に表示されます。
+このアーカイブには、[必要な追加設定](#additional-configurations-graphql-endpoint)と [GraphQL エンドポイント](#enabling-graphql-endpoint)の両方が含まれています。プレーン AEM インスタンスにインストールすると、完全に機能する GraphQL エンドポイントが `/content/cq:graphql/global/endpoint` に表示されます。
 
-このパッケージは、独自のGraphQLプロジェクトの設計図を作成するためのものです。 パッケージの使い方の詳細は、パッケージ&#x200B;**README**&#x200B;を参照してください。
+このパッケージは、独自の GraphQL プロジェクトのブループリントとなることを想定したものです。このパッケージの使用方法について詳しくは、パッケージの **README** を参照してください。
 
-必要な設定を手動で作成したい場合は、Adobeから専用の[GraphQL Endpoint Content Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)も提供されます。 このコンテンツパッケージには、GraphQLエンドポイントのみが含まれ、設定は含まれません。
+必要な設定を手動で作成する場合に備えて、専用の [GraphQL エンドポイントコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)も提供されています。このコンテンツパッケージには、GraphQL エンドポイントのみが含まれ、設定は含まれていません。
 
-## GraphicQL インターフェイス {#graphiql-interface}
+## GraphiQL インターフェイス {#graphiql-interface}
 
 <!--
 AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
 -->
 
-標準の[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)インターフェイスの実装は、AEM GraphQLで使用できます。 これは、AEM](#installing-graphiql-interface)と共に[インストールできます。
+標準の [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) インターフェイスの実装は、AEM GraphQL で使用できます。これは [AEM と共にインストール](#installing-graphiql-interface)できます。
 
-このインターフェイスを使用すると、クエリを直接入力およびテストできます。
+このインターフェイスを使用すると、クエリを直接入力しテストできます。
 
 例えば、次のようなものです。
 
@@ -214,22 +214,22 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 
 構文のハイライト表示機能、オートコンプリート、自動候補表示などの機能と共に、履歴およびオンラインドキュメントが提供されています。
 
-![GraphicQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
+![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
-### AEM GraphicQLインターフェイスのインストール{#installing-graphiql-interface}
+### AEM GraphiQL インターフェイスのインストール {#installing-graphiql-interface}
 
-GraphiQLユーザーインターフェイスは、専用のパッケージを使用してAEMにインストールできます。[GraphicQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)パッケージ。
+GraphiQL ユーザーインターフェイスは、専用のパッケージ（[GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)パッケージ）で AEM にインストールできます。
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
 -->
 
-## オーサー環境とパブリッシュ環境のユースケース {#use-cases-author-publish-environments}
+## オーサー環境とパブリッシュ環境の使用例 {#use-cases-author-publish-environments}
 
-ユースケースは、AEM as a Cloud Service 環境のタイプに応じて異なる場合があります。
+使用例は、AEM as a Cloud Service 環境のタイプに応じて異なる場合があります。
 
 * パブリッシュ環境の使用目的：
-   * JS アプリケーションのデータのクエリ（標準ユースケース）
+   * JS アプリケーションのデータのクエリ（標準の使用例）
 
 * オーサー環境の使用目的：
    * 「コンテンツ管理用」のデータのクエリ：
@@ -246,13 +246,13 @@ GraphQL は、厳密に型指定された API です。つまり、データは�
 
 GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。そのタスクをおこなうには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
 
-コンテンツフラグメントの場合、GraphQLスキーマ（構造と型）は、**有効** [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)とそのデータ型に基づきます。
+コンテンツフラグメントの場合、GraphQL スキーマ（構造とタイプ）は、**有効**&#x200B;な[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)とそれらのデータタイプに基づいています。
 
 >[!CAUTION]
 >
->（**Enabled**&#x200B;に設定されているコンテンツフラグメントモデルから派生した）すべてのGraphQLスキーマは、GraphQLエンドポイントを介して読み取り可能です。
+>（**有効**&#x200B;になっているコンテンツフラグメントモデルから派生した）すべての GraphQL スキーマは、GraphQL エンドポイントを通じて読み取り可能です。
 >
->つまり、こうやって漏れ出す可能性があるので、機密データが存在しないことを確認する必要があるのです。たとえば、これにはモデル定義のフィールド名として存在する可能性のある情報が含まれます。
+>つまり、漏洩するおそれがあるので、機密データが使用可能になっていないことを確認する必要があります。例えば、これには、モデル定義のフィールド名として存在する可能性のある情報が含まれます。
 
 例えば、ユーザーが `Article` という名前のコンテンツフラグメントモデルを作成した場合、AEMは `ArticleModel` 型のオブジェクト `article` を生成します。この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。
 
@@ -316,7 +316,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
 | 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します。 |
 | 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
-| ブール値 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
+| ブール型 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します |
 | 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
@@ -360,7 +360,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 }
 ```
 
-[サンプルクエリ — 単一の特定の都市のフラグメント](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)を参照してください。
+[サンプルクエリ - 1 つの特定の都市フラグメント](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)を参照してください。
 
 #### メタデータ {#metadata}
 
@@ -438,7 +438,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 GraphQL では、クエリに変数を含めることができます。詳しくは、](https://graphql.org/learn/queries/#variables)GraphQL の GraphiQL に関するドキュメント[を参照してください。
 
-例えば、特定のバリエーションを持つタイプ`Article`のすべてのコンテンツフラグメントを取得するには、GraphiQLで変数`variation`を指定します。
+例えば、特定のバリエーションを持つ `Article` タイプのコンテンツフラグメントをすべて取得するには、次のように、GraphiQL で変数 `variation` を指定します。
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
@@ -490,7 +490,7 @@ GraphQL クエリでフィルタリングを使用して、特定のデータを
 
 フィルタリングでは、論理演算子と論理式に基づいた構文を使用します。
 
-例えば、次の（基本）クエリフィルターは、`Jobs`または`Smith`の名前を持つすべての人をします。
+例えば、次の（基本的な）クエリでは、`Jobs` または `Smith` という名前を持つすべての人を抜き出します。
 
 ```xml
 query {
@@ -515,13 +515,13 @@ query {
 }
 ```
 
-その他の例は、次を参照してください。
+その他の例については、以下を参照してください。
 
 * [AEM 用 GraphQL の拡張機能](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)の詳細
 
 * [このサンプルコンテンツおよび構造を使用したサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
-   * サンプルクエリで使用するために用意されている[サンプルコンテンツと構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+   * さらに、サンプルクエリ用に準備されている[サンプルコンテンツおよび構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 
 * [WKND プロジェクトに基づいたサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
@@ -849,18 +849,18 @@ CORSの設定に加えて、サードパーティのホストからのアクセ�
 >
 >* 信頼できるドメインにのみアクセスを許可する
 >* 機密情報が公開されていないことを確認する
->* ワイルドカード[*]構文を使用しないこれにより、GraphQLエンドポイントへの認証済みアクセスが無効になり、世界中に公開されます。
+>* ワイルドカードの [*] 構文を使用しない。これを使用すると、GraphQL エンドポイントへの認証済みアクセスが無効になり、エンドポイントが世界中に公開されることになります。
 
 
 >[!CAUTION]
 >
->GraphQL [スキーマ](#schema-generation) （**有効**&#x200B;になっているコンテンツフラグメントモデルから派生）はすべて、GraphQLエンドポイントを通じて読み取り可能です。
+>（**有効**&#x200B;になっているコンテンツフラグメントモデルから派生した）すべての GraphQL [スキーマ](#schema-generation)は、GraphQL エンドポイントを通じて読み取り可能です。
 >
->つまり、こうやって漏れ出す可能性があるので、機密データが存在しないことを確認する必要があるのです。たとえば、これにはモデル定義のフィールド名として存在する可能性のある情報が含まれます。
+>つまり、漏洩するおそれがあるので、機密データが使用可能になっていないことを確認する必要があります。例えば、これには、モデル定義のフィールド名として存在する可能性のある情報が含まれます。
 
 ## 認証 {#authentication}
 
-「[コンテンツフラグメントでのリモートAEM GraphQLクエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)」を参照してください。
+[コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)を参照してください。
 
 <!-- to be addressed later -->
 
