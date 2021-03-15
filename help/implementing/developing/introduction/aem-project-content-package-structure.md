@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 1a282bdaca02f47d7936222da8522e74831a4572
+source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
 workflow-type: tm+mt
-source-wordcount: '2828'
-ht-degree: 100%
+source-wordcount: '2850'
+ht-degree: 99%
 
 ---
 
@@ -87,6 +87,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
          + グループ
          + ACL（権限）
 
+
 ### コンテンツパッケージ
 
 + `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。  コンテンツパッケージには、`ui.apps` または `ui.config` パッケージに含まれないすべてのノード定義が含まれます。言い換えれば、`/apps` または `/oak:index` に含まれないすべてが含まれます。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
@@ -138,9 +139,10 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 パッケージは、宣言済みのパッケージタイプでマークされる必要があります。
 
-+ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。
++ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージにOSGiバンドル、OSGi設定を直接含めることはできません。また、[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)を使用することはできません。
 + コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
 + コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
+
 
 詳しくは、[Apache Jackrabbit FileVault - Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) のドキュメントと、以下の [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager)を参照してください。
 
