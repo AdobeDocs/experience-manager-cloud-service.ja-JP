@@ -1,44 +1,44 @@
 ---
-title: サーバー側APIのアクセストークンの生成
-description: セキュアなJWTトークンを生成し、サードパーティのサーバーとAEM間のCloud Serviceを容易にする方法を学びます。
+title: サーバー側 API のアクセストークンの生成
+description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 translation-type: tm+mt
 source-git-commit: 41b4bb3a63089c05750a40e910ee7578727d8b15
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 0%
+ht-degree: 88%
 
 ---
 
 
 # 概要 {#introduction}
 
-一部のアーキテクチャは、AEMインフラストラクチャの外部のサーバにホストされるアプリケーションから、AEMへのCloud Serviceとしてのコールを行うことに依存しています。 例えば、サーバーを呼び出し、AEMにCloud ServiceとしてAPIリクエストを送信するモバイルアプリケーションです。
+一部のアーキテクチャでは、AEM インフラストラクチャの外部にあるサーバーにホストされているアプリケーションから AEM as a Cloud Service への呼び出しの実行がベースになっています。例えば、モバイルアプリケーションがサーバーを呼び出し、その後、サーバーが AEM as a Cloud Service に対して API リクエストをおこなうといった形です。
 
-サーバー間のフローを以下に示し、開発のためのシンプルなフローを示します。 Cloud Service[Developer Console](development-guidelines.md#crxde-lite-and-developer-console)としてのAEMは、認証プロセスに必要なトークンの生成に使用されます。
+サーバー間フローと簡略化した開発フローを以下に示します。認証プロセスに必要なトークンの生成には、AEM as a Cloud Service [開発者コンソール](development-guidelines.md#crxde-lite-and-developer-console)を使用します。
 
 >[!NOTE]
 >
->このドキュメントに加えて、[AEM用のトークンベースの認証(Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)として)に関するチュートリアルも参照できます。
+>このドキュメントに加えて、[AEM as a Cloud Service に対するトークンベースの認証](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication)に関するチュートリアルも参照してください。
 
-## サーバ間のフロー{#the-server-to-server-flow}
+## サーバー間フロー {#the-server-to-server-flow}
 
-IMS組織管理者の役割を持つユーザーは、AEM資格情報をCloud Service資格情報として生成できます。この資格情報は、AEMをCloud Service環境管理者の役割として持つユーザーが取得でき、サーバーにインストールする必要があり、秘密キーとして慎重に扱う必要があります。 このJSON形式のファイルには、AEMとの統合に必要なCloud ServiceAPIとしてのすべてのデータが含まれています。 データは、署名付きJWTトークンの作成に使用され、IMSアクセストークンと交換されます。 その後、このアクセストークンをベアラ認証トークンとして使用し、AEMにCloud Serviceとしてリクエストを行うことができます。
+IMS 組織管理者の役割を持つユーザーは、AEM as a Cloud Service 資格情報を生成できます。その後、この資格情報は、AEM as a Cloud Service 環境管理者の役割を持つユーザーに取得され、サーバーにインストールされることになります。資格情報は秘密鍵として慎重に扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して署名済み JWT トークンが作成され、IMS との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストをおこなうことができます。
 
-サーバー間のフローは次の手順で行います。
+サーバー間フローは次のステップで構成されます。
 
-* 開発者コンソールからAEMをCloud Service資格情報として取得する
-* AEMに対して呼び出しを行う非AEMサーバー上に、Cloud Service資格情報としてAEMをインストールします
-* JWTトークンを生成し、AdobeのIMS APIを使用してアクセストークンとそのトークンを交換する
-* アクセストークンをベアラ認証トークンとして使用してAEM APIを呼び出す
-* AEM環境で、テクニカルアカウントユーザーに適切な権限を設定します
+* 開発者コンソールから AEM as a Cloud Service 資格情報を取得する
+* AEM に対して呼び出しをおこなう AEM 以外のサーバーに AEM as a Cloud Service 資格情報をインストールする
+* JWT トークンを生成し、そのトークンをアドビの IMS API を使用してアクセストークンと交換する
+* アクセストークンをベアラー認証トークンに使用して AEM API を呼び出す
+* AEM 環境のテクニカルアカウントユーザーに適切な権限を設定する
 
-### AEMをCloud Service資格情報として取得{#fetch-the-aem-as-a-cloud-service-credentials}
+### AEM as a Cloud Service 資格情報の取得 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Cloud Service開発者コンソールとしてAEMにアクセスできるユーザーには、特定の環境用の「統合」タブと2つのボタンがDeveloper Consoleに表示されます。 AEMをCloud Service環境管理者ロールとして持つユーザーは、「**サービス資格情報を取得**」ボタンをクリックして、サービス資格情報を表示できます。jsonには、ポッドの選択に関係なく、AEM以外の環境の作成者層と公開層の設定が含まれます。
+AEM as a Cloud Service 開発者コンソールにアクセスできるユーザーには、特定の環境用の「統合」タブのほか、2 つのボタンが開発者コンソールに表示されます。AEM as a Cloud Service 環境管理者の役割を持つユーザーは、「**サービス資格情報を取得**」ボタンをクリックして、サービス資格情報の JSON を表示できます。この JSON には、ポッドの選択に関係なく、クライアント ID、クライアントシークレット、秘密鍵、証明書、環境のオーサー層とパブリッシュ層の設定など、AEM 以外のサーバーに必要な情報がすべて含まれています。
 
-![JWT生成](assets/JWTtoken3.png)
+![JWT の生成](assets/JWTtoken3.png)
 
-出力結果は次のようになります。
+出力は次のようになります。
 
 ```
 {
@@ -62,17 +62,17 @@ Cloud Service開発者コンソールとしてAEMにアクセスできるユー�
 
 >[!IMPORTANT]
 >
->IMS組織管理者(通常、Cloud Managerを介して環境をプロビジョニングした同じユーザー)は、まずデベロッパーコンソールにアクセスし、「**サービス資格情報を取得**」ボタンをクリックして、Cloud Service環境としてAEMに資格情報を生成し、後で取得します。 IMS組織管理者がこの操作を行っていない場合は、IMS組織管理者の役割が必要であることを通知するメッセージが表示されます。
+>資格情報を生成して、AEM as a Cloud Service 環境への管理者権限を持つユーザーが後で取得できるようにするには、IMS 組織管理者（通常は、Cloud Manager を介して環境をプロビジョニングしたユーザーと同じ）が、まず開発者コンソールにアクセスして「**サービス資格情報を取得**」ボタンをクリックする必要があります。IMS 組織管理者がこの操作をまだおこなっていない場合は、IMS 組織管理者の役割が必要であることを通知するメッセージが表示されます。
 
-### AEMサービス資格情報をAEM以外のサーバーにインストールする{#install-the-aem-service-credentials-on-a-non-aem-server}
+### AEM 以外のサーバーへの AEM サービス資格情報のインストール {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-AEMに対して呼び出しを行うAEM以外のアプリケーションは、AEMにCloud Service資格情報としてアクセスでき、暗号鍵として扱う必要があります。
+AEM に対して呼び出しをおこなう AEM 以外のアプリケーションは、AEM as a Cloud Service 資格情報にアクセスしてそれをシークレットとして扱える必要があります。
 
-### JWTトークンを生成し、アクセストークンと交換する{#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### JWT トークンの生成とアクセストークンとの交換 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-AdobeのIMSサービスへの呼び出しで秘密鍵証明書を使用してJWTトークンを作成し、アクセストークンを取得します。この認証は24時間有効です。
+アクセストークンを取得するには、アドビの IMS サービスへの呼び出しで資格情報を使用して JWT トークンを作成します。このトークンは 24 時間有効です。
 
-AEM CSサービスの資格情報は、この目的で設計されたクライアントライブラリを使用して、アクセストークンと交換できます。 クライアントライブラリは、[AdobeのパブリックGitHubリポジトリ](https://github.com/adobe/aemcs-api-client-lib)から入手できます。このリポジトリには、より詳細なガイダンスと最新の情報が含まれています。
+AEM CS サービス資格情報は、専用のクライアントライブラリを使用して、アクセストークンと交換できます。このクライアントライブラリは、[アドビが公開している GitHub リポジトリー](https://github.com/adobe/aemcs-api-client-lib)から入手可能です。このリポジトリーには、より詳細なガイダンスと最新の情報が含まれています。
 
 ```
 /*jshint node:true */
@@ -92,54 +92,54 @@ exchange(config).then(accessToken => {
 });
 ```
 
-同じ交換は、正しい形式で署名済みJWTトークンを生成し、IMS Token Exchange APIを呼び出すことのできる任意の言語で実行できます。
+同じ交換は、正しい形式の署名済み JWT トークンの生成と IMS トークン交換 API の呼び出しが可能な任意の言語で実行できます。
 
-アクセストークンは、有効期限を定義します（通常は24時間）。 gitリポジトリには、アクセストークンを管理し、期限が切れる前に更新するためのサンプルコードがあります。
+アクセストークンには有効期限が定義されます（通常は 24 時間です）。Git リポジトリーには、アクセストークンを管理して期限切れの前に更新するサンプルコードが含まれています。
 
-### AEM API {#calling-the-aem-api}を呼び出しています
+### AEM API の呼び出し {#calling-the-aem-api}
 
-アクセストークンを含め、AEMに対する適切なサーバー間API呼び出しをCloud Service環境として作成します。 したがって、&quot;Authorization&quot;ヘッダーには`"Bearer <access_token>"`の値を使用します。 例えば、`curl`を使用します。
+ヘッダーにアクセストークンを含めて、AEM as a Cloud Service 環境に対して適切なサーバー間 API 呼び出しをおこないます。そのため、「Authorization」ヘッダーには `"Bearer <access_token>"` の値を使用します。例えば、`curl` を使用して次のように呼び出します。
 
 ```curlc
 curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e23423423.adobeaemcloud.com/content/dam.json
 ```
 
-### AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}のテクニカルアカウントユーザーに適切な権限を設定します
+### AEM のテクニカルアカウントユーザーに対する適切な権限の設定 {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-テクニカルアカウントユーザがAEMで作成されたら(これは、対応するアクセストークンを持つ最初のリクエストの後に発生します)、テクニカルアカウントユーザは&#x200B;**AEMで適切に権限**&#x200B;を付与される必要があります。
+テクニカルアカウントユーザーが AEM に作成されたら（これは、対応するアクセストークンを含んだ初回リクエストの後でおこなわれます）、AEM **内の**&#x200B;適切な権限がテクニカルアカウントユーザーに付与される必要があります。
 
-デフォルトでは、AEM Authorサービスでは、技術アカウントユーザーが読み取りアクセスを提供するContributorsユーザーグループに追加されます。
+デフォルトでは、テクニカルアカウントユーザーは AEM オーサーサービスで寄稿者ユーザーグループに追加されます。このグループは AEM への読み取りアクセスが可能です。
 
-AEMのこのテクニカルアカウントユーザーは、通常の方法を使用して、権限を付与することができます。
+AEM のこのテクニカルアカウントユーザーには、通常の方法を使用して、さらに権限を付与することができます。
 
-## 開発者フロー{#developer-flow}
+## 開発者フロー {#developer-flow}
 
-開発者は、Cloud Service開発環境として開発AEMに要求を行うAEM以外のアプリケーション（ラップトップ上で実行しているか、ホストされている）の開発インスタンスを使用してテストを行うと考えられます。 ただし、開発者は必ずしもIMS管理ロールの権限を持っていないので、通常のサーバー間フローで説明されているJWTベアラーを生成できるとは想定できません。 したがって、AEMへのリクエストで、開発者がアクセス権を持つCloud Service環境として使用できるアクセストークンを直接生成するメカニズムを提供する。
+開発者は、AEM as a Cloud Service 開発環境に対してリクエストをおこなう AEM 以外のアプリケーションの開発インスタンス（ラップトップ上で動作するか他でホストされている）を使用してテストをおこなうことになります。ただし、開発者は必ずしも IMS 管理者ロールの権限を持ってはいないので、通常のサーバー間フローで説明されている JWT ベアラーを開発者が生成できるとは想定できません。したがって、アクセスできる AEM as a Cloud Service 環境へのリクエストで使用できるアクセストークンを開発者が直接生成するメカニズムが用意されています。
 
-AEMをCloud Service開発者コンソールとして使用するために必要な権限については、[開発者ガイドラインドキュメント](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を参照してください。
+AEM as a Cloud Service 開発者コンソールの使用に必要な権限については、[開発者ガイドラインドキュメント](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)を参照してください。
 
 >[!NOTE]
 >
 >ローカル開発アクセストークンは、最大24時間有効です。その後、同じ方法で再生成する必要があります。
 
-開発者は、このトークンを使用して、AEM以外のテストアプリケーションからAEMにCloud Service環境として呼び出しを行うことができます。 通常、開発者は、AEM以外のアプリケーションで、自分のノートブックPCにこのトークンを使用します。 また、クラウドとしてのAEMは、通常実稼働以外の環境です。
+開発者は、このトークンを使用して AEM 以外のテストアプリケーションから AEM as a Cloud Service 環境に呼び出しをおこなうことができます。通常、開発者は自分のノート PC で動作する AEM 以外のアプリケーションでこのトークンを使用します。また、AEM as a Cloud Service は通常、非実稼働環境です。
 
-開発者のフローは次の手順で構成されます。
+開発者フローは次のステップで構成されます。
 
-* Developer Consoleからのアクセストークンの生成
-* アクセストークンでAEMアプリケーションを呼び出します。
+* 開発者コンソールからアクセストークンを生成する
+* そのアクセストークンを指定して AEM アプリケーションを呼び出す
 
-また、開発者は、ローカルマシン上で実行しているAEMプロジェクトに対してAPI呼び出しを行うこともできます。この場合、アクセストークンは必要ありません。
+また、開発者は、ローカルマシン上で動作している AEM プロジェクトに対して API 呼び出しをおこなうこともできます。この場合、アクセストークンは不要です。
 
-### アクセストークンの生成{#generating-the-access-token}
+### アクセストークンの生成 {#generating-the-access-token}
 
-アクセストークンを生成するには、Developer Consoleで「**Get Local Development Token**」ボタンをクリックします。
+アクセストークンを生成するには、開発者コンソールで「**ローカル開発トークンを取得**」ボタンをクリックします。
 
-### アクセストークン{#call-the-aem-application-with-an-access-token}を使用して、次にAEMアプリケーションを呼び出す
+### アクセストークンを指定した AEM アプリケーションの呼び出し {#call-the-aem-application-with-an-access-token}
 
-Cloud Service環境として、AEM以外のアプリケーションからAEMに対する適切なサーバー間API呼び出しを行います。ヘッダーにアクセストークンを含めます。 したがって、&quot;Authorization&quot;ヘッダーには`"Bearer <access_token>"`の値を使用します。
+ヘッダーにアクセストークンを含めて、AEM 以外のアプリケーションから AEM as a Cloud Service 環境に対して適切なサーバー間 API 呼び出しをおこないます。そのため、「Authorization」ヘッダーには `"Bearer <access_token>"` の値を使用します。
 
-## サービス資格情報の失効{#service-credentials-revocation}
+## サービス資格情報の失効 {#service-credentials-revocation}
 
 資格情報を取り消す必要がある場合は、次の手順に従って、カスタマーサポートにリクエストを送信する必要があります。
 
