@@ -69,34 +69,34 @@ ht-degree: 99%
           [Viewing video renditions](/help/assets/video-renditions.md)
           [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
 
-    * [Manage viewer presets](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [Publishing assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+    * [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)
+    * [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
     
-    * Work with video metadata
+    * ビデオのメタデータの操作
 
 <!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
           [Viewing video rendition properties](/help/assets/video-renditions.md) -->
 
-    * Edit the properties of video such as the title, description, and tags, custom metadata fields:
-    [Editing video properties](/help/assets/manage-digital-assets.md#editing-properties)
+    * ビデオのタイトル、説明、タグ、カスタムメタデータフィールドなどのプロパティの編集：
+    [ビデオのプロパテのを編集](/help/assets/manage-digital-assets.md#editing-properties)
     
-    * [Managing metadata for digital assets](/help/assets/manage-metadata.md)
-    * [Metadata schemas](/help/assets/metadata-schemas.md)
+    * [デジタルアセットのメタデータの管理](/help/assets/manage-metadata.md)
+    * [メタデータスキーマ](/help/assets/metadata-schemas.md)
     
-    * Review, approve, and annotate videos, and maintain full version control
+    * ビデオのレビュー、承認、注釈付け。完全なバージョン管理
     
-    * [Annotating videos](/help/assets/manage-video-assets.md#annotate-video-assets) or [Annotating assets](/help/assets/manage-digital-assets.md#annotating)
+    * [ビデオの注釈付け](/help/assets/manage-video-assets.md#annotate-video-assets) または [アセットの注釈付け](/help/assets/manage-digital-assets.md#annotating)
     
-    * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+    * [バージョンの作成](/help/assets/manage-digital-assets.md#asset-versioning)
+    * [アセットでのワークフローの開始](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
 <!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
         * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
         * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 -->
 
-    * [Review folder assets](/help/assets/bulk-approval.md)
-    * [Projects](/help/sites-cloud/authoring/projects/overview.md)
+    * [フォルダアセットのレビュー](/help/assets/bulk-approval.md)
+    * [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
 
 1. 次のいずれかの操作をおこなって、**Dynamic Media ビデオを公開します。**
 
@@ -146,7 +146,7 @@ Dynamic Media のビデオは、高品質のアダプティブビデオを簡単
 * 効率的なビデオアセット管理のための、メタデータが完全にサポートされたビデオの整理、参照および検索。
 * Web やデスクトップおよびモバイルデバイス（iPhone、iPad、Android、Blackberry および Windows Phone を含む）へのアダプティブビデオセットの配信。
 
-アダプティブビデオのストリーミングは、各種 iOS プラットフォームでサポートされています。詳しくは、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html)を参照してください。
+アダプティブビデオのストリーミングは、各種 iOS プラットフォームでサポートされています。詳しくは、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=ja)を参照してください。
 
 Dynamic Media では、MP4 H.264 ビデオのモバイルビデオ再生がサポートされています。このビデオ形式をサポートする Blackberry デバイスについては、[Blackberry でサポートされているビデオ形式](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)のページで確認できます。
 
@@ -337,7 +337,7 @@ Dynamic Mediaを有効にしてビデオクラウドサービスを設定して�
 
 * **[!UICONTROL 可変ビットレートエンコーディング]**（VBR） - VBR エンコーディングでは、圧縮形式で必要となるデータに基づいて、データのレートが設定した下限から上限の範囲内で調整されます。つまり、VBR エンコーディングプロセスでは、メディアファイルのビットレートが、そのニーズに応じて動的に増減します。VBR は、CBR よりエンコードに時間がかかりますが、生成されるメディアファイルは最高品質となります。VBR は、ビデオコンテンツの HTTP プログレッシブ配信に最も一般的に使用されます。
 
-VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選択するべきかという話になると、ほとんどの場合、メディアファイルには VBR を使用することをお勧めします。VBR は、優位性のあるビットレートで CBR より高品質のファイルを生成します。VBR を使用するときは、2 パスエンコーディングを使用し、最大ビットレートをターゲットビデオのビットレートの 1.5 倍に設定してください。
+VBR と CBR のどちらを使用するべきかVBR と CBR のどちらを選択するべきかという話になると、ほとんどの場合、メディアファイルには VBR を使用することをお勧めします。VBR は、優位性のあるビットレートで CBR より高品質のファイルを生成します。VBR を使用するときは、2 パスエンコーディングを使用し、最大ビットレートをターゲットビデオのビットレートの 1.5 倍に設定してください。
 
 ビデオエンコーディングプリセットを選択するときには、ターゲットのエンドユーザーの接続速度を考慮してください。その速度の 80％のデータレートを持つプリセットを選択してください。例えば、ターゲットのエンドユーザーの接続速度が 1,000 Kbps の場合の最適なプリセットは、ビデオデータレートが 800 Kbps のプリセットです。
 
@@ -399,7 +399,7 @@ VBR と CRB のどちらを使用するべきかVBR と CBR のどちらを選�
 
 | ビデオタイプ | 幅 x 高さ | 幅の比率 | 高さの比率 |
 |--- |--- |--- |--- |
-| ソース | 1,920 x 1,080 | 1 | 1 |
+| ソース | 1,920 x 1,080 | 1 | 3 |
 | エンコード | 960 x 540 | 2 | 2 |
 | エンコード | 640 x 360 | 3 | 3 |
 | エンコード | 480 x 270 | 4 | 4 |
@@ -1049,7 +1049,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 Dynamic Media には、キャプションファイルを JSON（JavaScript Object Notation）形式に変換する機能があります。このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。この後、検索エンジンがコンテンツをクロールしてインデックスを作成できます。これにより、ビデオを検索しやすくなり、ビデオコンテンツの詳細がユーザーに提供されます。
 
-URL での JSON 機能の使用について詳しくは、[静的な（画像以外の）コンテンツの提供](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)を参照してください。
+URL での JSON 機能の使用について詳しくは、[静的な（画像以外の）コンテンツの提供](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=ja#image-serving-api)を参照してください。
 
 **ビデオにキャプションまたはサブタイトルを追加するには:**
 
