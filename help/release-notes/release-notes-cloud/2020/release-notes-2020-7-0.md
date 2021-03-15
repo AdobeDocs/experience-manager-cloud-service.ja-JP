@@ -1,5 +1,5 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート.'
 translation-type: tm+mt
 source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
@@ -36,7 +36,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 * [!DNL Asset Compute Service] は、アセットを処理するための拡張性に優れたサービスです。管理者は、[!DNL Asset Compute Service] を使用して作成したカスタムアプリケーションを呼び出すように [!DNL Experience Manager] を設定できます。デベロッパーはこのサービスを使用して、複雑な使用例に対応する特殊なカスタムアプリケーションを作成できます。この Web サービスでは、様々なファイルタイプのサムネールを生成したり、アドビファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前段階としてのフルテキストの抽出を行ったり、利用可能なすべての [!DNL Sensei] サービスでアセットを実行できます。詳しくは、「[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md)」を参照してください。
 
-* [!DNL Experience Manager] As a Cloud Service の [!DNL Dynamic Media] の初期設定が改善され、より堅牢になりました。管理者にプロセスの進行状況が提供されます。
+* [!DNL Experience Manager] as a Cloud Service の [!DNL Dynamic Media] の初期設定が改善され、より堅牢になりました。管理者にプロセスの進行状況が提供されます。
 
 * [!DNL Dynamic Media] へのアセットの発行は、アセットマイクロサービスを使用するアセット処理パイプライン全体で不可欠な要素とし、バッチ発行バックエンドを改善することで、簡単になり、より堅牢になっています。
 
@@ -119,7 +119,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * コードカバレッジの計算方法の変更により、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンは 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照している場合は、コード品質プロセスでエラーメッセージが表示されます。
 
-## Adobe Experience Manager as a Cloud Service の基礎 {#cloud-foundation}
+## Adobe Experience Manager as a Cloud Service の基盤 {#cloud-foundation}
 
 ### 新機能 {#what-is-new-foundations}
 
