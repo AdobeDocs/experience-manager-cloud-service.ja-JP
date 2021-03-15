@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 translation-type: tm+mt
-source-git-commit: 450d78be9472c854a13ba35965ac10f806aba3d9
+source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
 workflow-type: tm+mt
-source-wordcount: '3210'
-ht-degree: 100%
+source-wordcount: '3229'
+ht-degree: 99%
 
 ---
 
@@ -62,6 +62,8 @@ AEM as a Cloud Service アプリケーション用に作成されたコンテン
 ブルーグリーンデプロイメントパターンによるアプリケーション変更はスイッチで有効になるので、サービスユーザー、ACL、ノードタイプ、インデックス定義の変更を除き、可変リポジトリ内の変更に応じておこなうことはできません。
 
 コードベースが既にある場合は、AEM ドキュメントに記載されているリポジトリ再構築の演習を完了して、以前 /etc の配下にあったコンテンツが適切な場所に確実に移動されるようにすることが重要です。
+
+これらのコードパッケージには、[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)など、追加の制限が適用されます。
 
 ## OSGi 設定 {#osgi-configuration}
 
