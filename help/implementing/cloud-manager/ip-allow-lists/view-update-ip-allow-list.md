@@ -1,16 +1,16 @@
 ---
-title: 表示と更新 — Cloud ManagerでのIP許可リスト
-description: 表示と更新 — Cloud ManagerでのIP許可リスト
+title: 表示と更新 - Cloud Manager での IP 許可リスト
+description: 表示と更新 - Cloud Manager での IP 許可リスト
 translation-type: tm+mt
 source-git-commit: 7fdfa626147a72f3d7fb98b89a19a871fc7a13ca
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
-# IP許可リストの表示と更新{#view-update}
+# IP 許可リストの表示または更新 {#view-update}
 
 IP 許可リストを表示および更新できるシナリオは、次のとおりです。
 
@@ -29,7 +29,7 @@ IP 許可リストを更新するには、ビジネスオーナーまたはデ�
 
 IP 許可リストを更新するには、次の手順に従います。
 
-1. **環境**&#x200B;画面から&#x200B;**IP許可リスト**&#x200B;ページに移動します。
+1. **環境**&#x200B;画面で **IP 許可リスト**&#x200B;ページに移動します。
 1. 表示／更新する IP 許可リストルールが表示されている行を見つけます。
 1. 行の右端から **...** メニューを選択します。
 1. 「**表示と更新**」オプションを選択します。
@@ -40,4 +40,4 @@ IP 許可リストを更新するには、次の手順に従います。
 * 新しい IP 範囲を IP 許可リストに追加すると、対応するすべての環境サービスにその IP 範囲が自動的に適用されます。
 * IP 許可リストから IP 範囲を削除すると、対応するすべての環境サービスからその IP 範囲の適用が自動的に解除されます。
 * 先行する更新が進行中で、まだ完了していない場合、IP 許可リストの更新はおこなえません。
-* 先行する更新でエラーが発生した場合、IP 許可リストの更新はおこなえません。その場合は、更新を再試行してエラーをクリアする必要があります。詳しくは、[IP許可リストステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)を参照してください。
+* 先行する更新でエラーが発生した場合、IP 許可リストの更新はおこなえません。その場合は、更新を再試行してエラーをクリアする必要があります。詳しくは、「[IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)」を参照してください。
