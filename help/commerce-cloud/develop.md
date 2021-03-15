@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: a9c9a866c03bc15ebddddc7f2086f1f3ffd38a07
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づ�
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM用に提供されたCIF追加-OnをCloud Serviceとして使用することも、地域開発にも利用できます。 このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)からダウンロードできます。
+CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM用に提供されたCIF追加-OnをCloud Serviceとして使用することも、地域開発にも利用できます。 このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。
 
 CIF アドオンは Sling 機能アーカイブとして提供されます。ソフトウェア配布ポータルで利用できる zip ファイルには、2 つの Sling 機能アーカイブファイルが含まれています。1 つは AEM オーサー用、もう 1 つは AEM パブリッシュインスタンス用です。
 
@@ -38,7 +38,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 
 以下をローカルにインストールしておく必要があります。
 
-- [AEM as a Cloud Service の SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service の SDK](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)（3.3.9 以降）
 - [Node.js v10 以降](https://nodejs.org/ja/)
@@ -83,7 +83,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   この変数は、AEMがコマースシステムに接続する際に使用します。 さらに、CIFアドオンには、MagentoGraphQLエンドポイントをローカルで使用できるローカルリバースプロキシが含まれています。 これは、CIFオーサリングツール（製品コンソールおよびピッカー）や、GraphQLの直接呼び出しを行うCIFクライアント側コンポーネントで使用されます。
+   この変数は、AEM でコマースシステムへの接続に使用されます。さらに、CIF アドオンには、Magento GraphQL エンドポイントをローカルで使用できるようにするローカルリバースプロキシが含まれています。これは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しをおこなう CIF クライアント側コンポーネントにも使用されます。
 
    この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
