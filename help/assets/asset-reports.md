@@ -3,17 +3,17 @@ title: 使用状況および共有に関するレポート
 description: デジタルアセットの使用状況、アクティビティ、共有を理解するのに役立つ、 [!DNL Adobe Experience Manager Assets]  でのアセットに関するレポートです。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: dc6823d9a0dabcc4fe1537073d90ca53da205556
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 82%
+source-wordcount: '869'
+ht-degree: 78%
 
 ---
 
 
 # アセットレポート {#asset-reports}
 
-アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、ダウンロードされたアセットや共有されているアセットなどに関する有用な情報が提供されます。
+アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートには、システムの使用状況、ユーザーによるアセットの操作方法、および<!-- downloaded and -->共有されているアセットに関する有用な情報が表示されます。
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
@@ -21,14 +21,13 @@ ht-degree: 82%
 
 直観的なレポート管理インターフェイスに備わっているきめ細かなオプションやコントロールを使用すれば、アーカイブされたレポートにアクセスしたり、レポートの実行ステータス（成功、失敗および待機中）を表示したりすることができます。
 
-レポートが生成されると、<!-- through an email (optional) and -->インボックス通知を通じて通知されます。 それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除をおこなうことができます。
+レポートが生成されると、<!-- through an email (optional) and -->インボックス通知を通じて通知されます。 レポート一覧ページでは、以前に生成されたすべてのレポートが表示されるレポートの表示、ダウンロードまたは削除が可能です。
 
 ## レポートの生成 {#generate-reports}
 
 [!DNL Experience Manager Assets] では、次の標準レポートが生成されます。
 
 * アップロード
-* ダウンロード
 * 有効期限
 * 変更
 * 公開
@@ -36,6 +35,18 @@ ht-degree: 82%
 * ディスク使用量
 * ファイル
 * リンク共有
+
+<!-- Removed download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Disk Usage
+* Files
+* Link Share
+-->
 
 [!DNL Adobe Experience Manager] 管理者は、これらのレポートを手軽に生成し、実装に合わせて容易にカスタマイズできます。レポートを生成するには、以下の手順に従います。
 
@@ -47,20 +58,6 @@ ht-degree: 82%
 1. **[!UICONTROL レポートを作成]**&#x200B;ページで、作成するレポートを選択し、「**[!UICONTROL 次へ]**」をクリックします。
 
    ![レポートタイプの選択](assets/choose_report.png)
-
-<!-- TBD: How do enable this in CS now? Is it done using some OSGi config now?
-   >[!NOTE]
-   >
-   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
--->
-
->[!NOTE]
->
->デフォルトでは、コンテンツフラグメントとリンク共有は、アセット[!UICONTROL ダウンロード]レポートに含まれます。 適切なオプションを選択して、リンク共有のレポートを作成するか、ダウンロードレポートからコンテンツフラグメントを除外します。
-
->[!NOTE]
->
->[!UICONTROL ダウンロード]レポートには、個別に選択した後、またはクイックアクションを使用してダウンロードされたアセットの詳細のみが表示されます。ただし、ダウンロードされたフォルダー内のアセットの詳細は含まれません。
 
 1. タイトル、説明、サムネール、CRX リポジトリ内のフォルダーパス（レポートの保存場所）など、レポートの詳細を設定します。デフォルトでは、フォルダーパスは `/content/dam` です。別のパスを指定することもできます。
 
@@ -111,6 +108,16 @@ ht-degree: 82%
 
 次のレポートにカスタム列を追加し、独自の要件に応じてさらに多くのデータを表示することができます。
 
+<!-- Remove download report.
+* Upload
+* Download
+* Expiration
+* Modification
+* Publish
+* [!DNL Brand Portal] publish
+* Files
+-->
+
 * アップロード
 * ダウンロード
 * 有効期限
@@ -152,6 +159,24 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## トラブルシューティング情報とヒント{#tips-troubleshoot}
+## トラブルシューティング情報{#tips-troubleshoot}
 
 * [!UICONTROL ディスク使用状況レポート]が生成されない場合、および[!DNL Dynamic Media]を使用している場合は、すべてのアセットが正しく処理されることを確認します。 解決するには、アセットを再処理し、レポートを再生成します。
+
+<!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
+
+TBD: How do enable this in CS now? Is it done using some OSGi config now?
+   >[!NOTE]
+   >
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. From the web console (`https://[aem_server]:[port]/system/console/configMgr`), open the **[!UICONTROL Day CQ DAM Event Recorder]** configuration, and select the **[!UICONTROL Asset Downloaded (DOWNLOADED)]** option in Event Types if not already selected.
+-->
+
+<!-- Removed download report.
+   >[!NOTE]
+   >
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Select the appropriate option to create a report of link shares or to exclude Content Fragments from the download report.
+
+   >[!NOTE]
+   >
+   >The [!UICONTROL Download] report displays details of only those assets which are downloaded after selecting individually or are downloaded using Quick Action. However, it does not include the details of the assets that are inside a downloaded folder.
+-->
