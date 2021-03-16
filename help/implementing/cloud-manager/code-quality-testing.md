@@ -2,7 +2,7 @@
 title: コード品質テスト - Cloud Services
 description: コード品質テスト - Cloud Services
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 100%
@@ -21,7 +21,7 @@ ht-degree: 100%
 コード品質テストでは、ソースコードが一定の品質基準を満たしていることを確認するためにスキャンされます。現在、これは SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されています。汎用の Java ルールと AEM 固有のルールを組み合わせた 100 以上のルールがあります。AEM 固有のルールの一部は、AEM エンジニアリングのベストプラクティスに基づいて作成され、[カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md)と呼ばれます。
 
 >[!NOTE]
->[ここ](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)からルールの完全なリストをダウンロードできます。
+>[ここ](/help/implementing/cloud-manager/assets/CodeQuality-rules-CS.xlsx)からルールの完全なリストをダウンロードできます。
 
 **三段門**
 
