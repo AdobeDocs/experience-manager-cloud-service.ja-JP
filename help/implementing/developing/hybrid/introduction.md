@@ -80,10 +80,8 @@ SPA の背後にある主な考え方は、SPA がネイティブアプリケー
 >AEM での SPA の動作方法に関する技術的な詳細は、次の記事を参照してください。
 >* [React を使用した AEM での SPA の概要](getting-started-react.md)
 >* [Angular を使用した AEM での SPA の概要](getting-started-angular.md)
-
 >
->
-SPA エディターのデザイン、アーキテクチャ、技術的なワークフローについて詳しくは、次の記事を参照してください。
+>SPA エディターのデザイン、アーキテクチャ、技術的なワークフローについて詳しくは、次の記事を参照してください。
 >* [SPA エディターの概要](editor-overview.md).
 
 
