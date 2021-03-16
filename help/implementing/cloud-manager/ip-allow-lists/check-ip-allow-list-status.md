@@ -2,10 +2,10 @@
 title: IP 許可リストのステータスの確認
 description: IP 許可リストのステータスの確認
 translation-type: tm+mt
-source-git-commit: c6fe5e9dab0e119271c6cea272dddabe7babb1e4
+source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 79%
+source-wordcount: '463'
+ht-degree: 78%
 
 ---
 
@@ -45,10 +45,11 @@ ht-degree: 79%
 
 IP許可リスト、SSL証明書、またはカスタムドメイン名のCDN設定を含む環境を使用しているお客様の場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。 UIに表示されるメッセージは、お客様がUIを介して既存の環境設定をすべて移行した後、消えます。メッセージが消えるまでに1 ～ 2営業日かかる場合があります。
 
+>[!NOTE]
+>既存の設定を表示および管理するには、UIから追加する必要があります。 詳しくは、[IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)を参照してください。
+
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
 
->[!NOTE]
->既存の設定を表示および管理するには、次の図に示すように、UIを使用して追加する必要があります。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
 
