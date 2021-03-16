@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 7059f0868fec3bbc665725c9ad2cc252805d8916
+source-git-commit: ebd2e870255dc0a62a4369e0eead9f6981856746
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 20%
+source-wordcount: '1704'
+ht-degree: 19%
 
 ---
 
@@ -40,6 +40,8 @@ ht-degree: 20%
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ## [!DNL Assets] の新機能 {#what-is-new-assets}
+
+* [!DNL Experience Manager Assets] の値 [!DNL Cloud Service] は、事前設定済み [!DNL Brand Portal] インスタンスを持つ権利が付与されます。[!DNL Cloud Manager]ユーザーは、[!DNL Experience Manager Assets]の[!DNL Brand Portal]を[!DNL Cloud Service]としてアクティベートできます。 「[ブランドポータルのアクティブ化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)」を参照してください。
 
 * [!DNL Brand Portal]を使用してアセットのソースを行えるようになりました。 アセットソーシング機能は、[!DNL Brand Portal]を活用して、新しいマーケティングキャンペーン、フォトシュート、プロジェクトのソースアセットに対して、顧客がエージェンシーユーザーと関わるよう支援します。 [ [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)のアセットソーシングを参照してください。
 
