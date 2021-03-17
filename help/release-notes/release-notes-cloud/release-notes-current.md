@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 7736f2d4d283ebab5e2f9254dd1a093f7b90056c
+source-git-commit: eeb9dfba87a6fa980c2f44b52813e4d3ca8e3e57
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1758'
 ht-degree: 19%
 
 ---
@@ -229,7 +229,7 @@ Best Practices Analyzer v2.1.2のリリース日は2021年2月19日です。
 
 ### 既知の問題 {#known-issues-foundation}
 
-**ローカルビルドアナライザープラグインの問題が原因で、一部のビルドが失敗する場合があります**
+**Build Analyzer Pluginの問題が原因で、一部のビルドが失敗する場合があります**
 
 `aemanalyser-maven-plugin`の実行中にプロジェクトのビルドが失敗し、次のエラーメッセージが表示される場合があります。
 
