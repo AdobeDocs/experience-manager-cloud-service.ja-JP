@@ -2,7 +2,7 @@
 title: ドメイン名ステータスの確認
 description: ドメイン名ステータスの確認
 translation-type: tm+mt
-source-git-commit: f3df4b23dc4542e7a194c979a7894bda1b728572
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 71%
@@ -49,6 +49,6 @@ IP許可リスト、SSL証明書、またはカスタムドメイン名のCDN設
 >[!NOTE]
 >既存の設定を表示および管理するには、UIから追加する必要があります。 詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
