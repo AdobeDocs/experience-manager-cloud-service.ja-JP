@@ -2,7 +2,7 @@
 title: IP 許可リストのステータスの確認
 description: IP 許可リストのステータスの確認
 translation-type: tm+mt
-source-git-commit: 46004eb1925533545605a09f62bbd0e7945227e0
+source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 78%
@@ -48,8 +48,7 @@ IP許可リスト、SSL証明書、またはカスタムドメイン名のCDN設
 >[!NOTE]
 >既存の設定を表示および管理するには、UIから追加する必要があります。 詳しくは、[IP許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)を参照してください。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-1.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
-
-![](/help/implementing/cloud-manager/assets/ip-allow-list-2.png)
+![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
 
