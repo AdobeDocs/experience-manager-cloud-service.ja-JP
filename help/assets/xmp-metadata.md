@@ -3,10 +3,10 @@ title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46f5ffbdce0bf555e9576126acec61cdae0a1de0
+source-git-commit: c3da535db4bf2b0f71e338f542d388437d6c1623
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 74%
+source-wordcount: '979'
+ht-degree: 76%
 
 ---
 
@@ -72,7 +72,10 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]のこのXMP書き戻し機能は、メタデータの変更を元のアセットのレンディションに複製します。 アセットのメタデータを[!DNL Assets]内から変更した場合、またはアセットのアップロード中に変更内容がリポジトリのアセットノード内に最初に保存されます。 ただし、[!DNL Assets]は、メタデータの変更をアセットのレンディションに自動的に反映しません。 XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。更新は、アセット階層のメタデータノードに保存されます。 この機能では、レンディションのバイナリファイルに更新が埋め込まれます。 この機能は、`jcr`名前空間を使用するメタデータプロパティのみを書き戻します。
+[!DNL Adobe Experience Manager Assets]のこのXMP書き戻し機能は、メタデータの変更を元のアセットのレンディションに複製します。
+アセット内から、またはアセットのアップロード中に、アセットのメタデータを変更すると、変更は最初にアセット階層のメタデータノードに保存されます。
+
+XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。この機能は、`jcr`名前空間を使用するメタデータプロパティ、つまり`dc:title`という名前のプロパティのみを書き戻しますが、`mytitle`という名前のプロパティは書き戻しません。
 
 例えば、`Classic Leather`というアセットの[!UICONTROL Title]プロパティを`Nylon`に変更するシナリオを考えてみましょう。
 
