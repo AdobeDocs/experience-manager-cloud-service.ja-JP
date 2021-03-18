@@ -7,14 +7,14 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Commerce統合フレームワーク
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '2592'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -183,7 +183,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    **clientlib-cif** - これは、 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)から必要な依存関係を単純に埋め込んだ空のクライアントライブラリでもあります。カテゴリは `venia.cif` です。
 
-   **clientlib-grid** - AEM レスポンシブグリッド機能を有効にするために必要な CSS が含まれます。AEM グリッドを使用すると、AEM エディターで[レイアウトモード](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/operations/configuring-responsive-layout.translate.html#include-the-responsive-css)が有効になり、コンテンツ作成者はコンポーネントのサイズを変更できます。カテゴリは `venia.grid` で、 `venia.base` ライブラリに埋め込まれます。
+   **clientlib-grid** - AEM レスポンシブグリッド機能を有効にするために必要な CSS が含まれます。AEM グリッドを使用すると、AEM エディターで[レイアウトモード](/help/sites-cloud/authoring/features/responsive-layout.md)が有効になり、コンテンツ作成者はコンポーネントのサイズを変更できます。カテゴリは `venia.grid` で、 `venia.base` ライブラリに埋め込まれます。
 
 1. `ui.apps/src/main/content/jcr_root/apps/venia/components/page` の `customheaderlibs.html` ファイルと `customfooterlibs.html` ファイルを検査します。
 
@@ -256,7 +256,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 ## ページテンプレートによるクライアントライブラリの追加 {#client-library-inclusion-pagetemplates}
 
-クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、生成されたプロジェクトに、[ページテンプレート](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/developing/platform/templates/page-templates-editable.html)を介してどのように `clientlib-site` ライブラリがインクルードされるかを調べます。
+クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、生成されたプロジェクトに、[ページテンプレート](/help/implementing/developing/components/templates.md)を介してどのように `clientlib-site` ライブラリがインクルードされるかを調べます。
 
 1. AEM エディター内でサイトの&#x200B;**ホームページ**（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）に移動します。 
 
@@ -474,7 +474,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 
-[AEM スタイルシステム](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/developing/components/style-system.html)を使用して 、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。「[スタイルシステムを使用した開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)」では、この作業をおこなう方法に関する詳細な手順と情報が説明されています。
+[AEM スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用して 、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。「[スタイルシステムを使用した開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)」では、この作業をおこなう方法に関する詳細な手順と情報が説明されています。
 
 ![ボーナスチャレンジ - スタイルシステム](../assets/style-cif-component/bonus-challenge.png)
 
