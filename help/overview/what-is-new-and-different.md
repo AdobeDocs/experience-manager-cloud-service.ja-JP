@@ -2,7 +2,7 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: '相違点と新機能 - Adobe Experience Manager（AEM） as a Cloud Service。 '
 translation-type: tm+mt
-source-git-commit: 4f43736ae80eeb57efe7d480993efd9a7ad193bf
+source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 98%
@@ -37,7 +37,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->オンプレミス版および Managed Services 版について詳しくは、[AEM 6.5](https://helpx.adobe.com/jp/support/experience-manager/6-5.html) のドキュメントセットを参照してください。
+>オンプレミス版および Managed Services 版について詳しくは、[AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=ja) のドキュメントセットを参照してください。
 
 ## アーキテクチャ {#architecture}
 
