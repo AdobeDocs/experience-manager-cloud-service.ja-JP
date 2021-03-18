@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツ�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテンツを作成するためにリッチテキストエディターを設定します。'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739dde6f9a6a7f4fe773e27e53f23a395f2881dc
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -131,8 +131,10 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 >* **名前**：`configPath`
 >* **型**：`String`
 >* **値**：実際の設定を含むノードのパス
+
 >
->RTE 設定ノードの名前を `config` にしないでください。この名前にすると、RTE 設定が管理者に対してのみ有効になり、グループ `content-author` のユーザーに対して有効になりません。
+>
+RTE 設定ノードの名前を `config` にしないでください。この名前にすると、RTE 設定が管理者に対してのみ有効になり、グループ `content-author` のユーザーに対して有効になりません。
 
 ダイアログ編集モードで適用する次のプロパティを設定します。
 
@@ -159,8 +161,10 @@ RTE プラグインの設定について詳しくは、[RTE プラグインの�
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
->独自のテキストコンポーネントを作成するには、上記のコンポーネントを直接編集するのではなく、コピーしてください。
+>
+独自のテキストコンポーネントを作成するには、上記のコンポーネントを直接編集するのではなく、コピーしてください。
 
 ## RTE ツールバーの設定  {#dialogfullscreen}
 
@@ -283,5 +287,4 @@ RTE ツールバーに表示される Coral アイコンと使用可能なコマ
 >* [RTE プラグインの設定](configure-rich-text-editor-plug-ins.md)
 >* [リッチテキストエディターをオーサリングに使用](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [RTE をアクセス可能なサイト用に設定](rte-accessible-content.md)
->* [複合マルチフィールドコンポーネントを作成するためのチュートリアルサンプル](https://experience-aem.blogspot.com/2019/05/aem-65-touchui-composite-multifield-with-coral3-rte-rich-text.html)
 
