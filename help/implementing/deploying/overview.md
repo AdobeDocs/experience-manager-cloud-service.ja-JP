@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 translation-type: tm+mt
-source-git-commit: 9c1fc1f1d5b744497673db5e96104d5cf1f570ce
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3229'
-ht-degree: 99%
+source-wordcount: '3246'
+ht-degree: 97%
 
 ---
 
@@ -102,7 +102,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
    * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）
 
-`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。推奨されるプロジェクト再構築について詳しくは、[AEM ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)を参照してください。
+`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5で行われ、推奨されるプロジェクト再構築に関する詳細は、[AEM 6.5のドキュメントを参照してください。](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 > コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、パッケージマネージャーを使用して手動でインストールする必要があります。
@@ -111,7 +111,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
 
 サードパーティパッケージが含まれている場合は、それらが AEM as a Cloud Service と互換性があるかどうかを検証する必要があります。互換性がない場合は、それらのパッケージを組み込むとデプロイメントエラーが発生します。
 
-前述のように、コードベースが既にある場合は、[AEM ドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/sites/deploying/using/repository-restructuring.html)に記載されているリポジトリ再構築の演習に準拠する必要があります。
+上記のように、既存のコードベースを使用するお客様は、[AEM 6.5ドキュメントで説明されている6.5リポジトリの変更に必要なリストラの実行に従う必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## repoinit {#repoinit}
 
