@@ -2,10 +2,10 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 translation-type: tm+mt
-source-git-commit: d843182585a269b5ebb24cc31679b77fb6b6d697
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '3720'
-ht-degree: 100%
+source-wordcount: '3675'
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ AEM コンポーネントの構造は強力で柔軟性があります。以下�
 
 コンポーネントのアイコンまたは省略形は、デベロッパーがコンポーネントを作成する際にコンポーネントの JCR プロパティで定義します。これらのプロパティは、次の順番で評価され、最初に見つかった有効なプロパティが使用されます。
 
-1. `cq:icon` - コンポーネントブラウザーで表示するための [Coral UI ライブラリ](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)の標準的なアイコンを指定する String プロパティ
+1. `cq:icon` - コンポーネントブラウザーで表示するための [Coral UI ライブラリ](https://opensource.adobe.com/coral-spectrum/examples/#icon)の標準的なアイコンを指定する String プロパティ
    * Coral アイコンの HTML 属性の値を使用します。
 1. `abbreviation` - コンポーネントブラウザーでのコンポーネント名の省略形をカスタマイズするための String プロパティ
    * 省略形は最大 2 文字までにする必要があります。
@@ -230,15 +230,13 @@ AEM コンポーネントのダイアログ：
 
 AEM のルックアンドフィールは Coral UI と Granite UI で定義されています。
 
-* [Coral UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) はすべてのクラウドソリューションに一貫性ある UI を提供します。
+* [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) はすべてのクラウドソリューションに一貫性ある UI を提供します。
 * [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) は、コンソールおよびダイアログの構築用に Coral UI マークアップを Sling コンポーネントにラップして提供します。
 
 Granite UI で提供される幅広い基本ウィジェットは、オーサー環境でダイアログを作成するために使用されます。必要な場合には、選択したウィジェットを拡張し、独自のウィジェットを作成することができます。
 
 以下のリソースについても参照してください。
 
-* [Coral UI ガイド](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Granite UI ドキュメント](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [AEM UI の構造](/help/implementing/developing/introduction/ui-structure.md)
 
 ### ダイアログフィールドのカスタマイズ {#customizing-dialog-fields}
@@ -389,7 +387,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 * 対象となるフィールドを、指定された CSS クラス（フック）でマークします。
 * クライアントライブラリ内で、その CSS クラス名に対してフックされる JS リスナーを定義します（これによって、カスタムロジックの範囲がそのフィールドのみに限定され、同じタイプの他のフィールドに影響を与えなくなります）。
 
-これを実現するには、やり取りする、基になるウィジェットライブラリについて理解する必要があります。[反応するイベントの識別については、Coral UI ドキュメント](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)を参照してください
+これを実現するには、やり取りする、基になるウィジェットライブラリについて理解する必要があります。[反応するイベントの識別については、Coral UI ドキュメント](https://opensource.adobe.com/coral-spectrum/documentation/)を参照してください
 
 `cq:listeners` ノード（ノードタイプ `cq:EditListenersConfig`）では、コンポーネントでアクションを実行する前後の処理を定義します。次の表では、使用する可能性のあるプロパティ値の定義を示します。
 
@@ -449,7 +447,7 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ## プレビュー動作 {#preview-behavior}
 
-プレビューモードに切り替えると、ページが更新されなくても [WCM モード](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
+プレビューモードに切り替えると、ページが更新されなくても [WCM モード](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
 
 レンダリングが WCM モードの影響を受けるコンポーネントの場合は、明確にそのコンポーネントを更新し、この Cookie の値を使用するように定義する必要があります。
 
