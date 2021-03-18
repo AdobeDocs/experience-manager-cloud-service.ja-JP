@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の SDK
 description: AEM as a Cloud Service ソフトウェア開発キットの概要
 translation-type: tm+mt
-source-git-commit: 0b46cc8ce4229138df84c70193cf9068e1200f0a
+source-git-commit: 6b754a866be7979984d613b95a6137104be05399
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 100%
+source-wordcount: '1179'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 ## AEM as a Cloud Service の SDK へのアクセス {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * AEM Admin Console の「**Adobe Experience Manager について**」アイコンで、実稼動環境で実行している AEM のバージョンを確認できます。
-* クイックスタート JAR と Dispatcher ツールは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)から zip ファイルとしてダウンロードできます。なお、SDK リストにアクセスできるのは、AEM Managed Services 環境または AEM as a Cloud Service 環境のあるユーザーに限られます。
+* クイックスタート JAR と Dispatcher ツールは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)から zip ファイルとしてダウンロードできます。なお、SDK リストにアクセスできるのは、AEM Managed Services 環境または AEM as a Cloud Service 環境のあるユーザーに限られます。
 * Java API JAR と Javadoc JAR は、Maven ツール（コマンドラインまたは推奨 IDE）を使用してダウンロードできます。
 * Maven プロジェクトの POM では、以下の API JAR パッケージを参照する必要があります。サブパッケージのあらゆる POM でも、この依存関係を参照する必要があります。
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 
 SDK を頻繁に（例えば、隔週など）更新し、完全なローカル状態を毎日破棄して、アプリケーション内のステートフルデータに誤って依存しないようにすることをお勧めします。
 
-（[AEM の Cloud Services または SMTP メールサービスの認証情報を設定するか、アプリケーションで CryptoSupport API を使用して）](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/crypto/CryptoSupport.html)CryptoSupport に基づいている場合、暗号化されるプロパティは、AEM 環境の初回起動時に自動生成されるキーで暗号化されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
+（[AEM の Cloud Services または SMTP メールサービスの認証情報を設定するか、アプリケーションで CryptoSupport API を使用して）](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)CryptoSupport に基づいている場合、暗号化されるプロパティは、AEM 環境の初回起動時に自動生成されるキーで暗号化されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
 
 デフォルトでは、AEM はデータフォルダー内に鍵データを保存するように設定されていますが、開発時に再利用しやすいように、「`-Dcom.adobe.granite.crypto.file.disable=true`」を使用して AEM プロセスを初回起動時に初期化できます。これにより、「`/etc/key`」に暗号化データが生成されます。
 
