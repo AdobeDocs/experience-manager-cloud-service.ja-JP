@@ -2,9 +2,9 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 translation-type: tm+mt
-source-git-commit: e99e802873b805b06e401880bd98c90dc88846c6
+source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2836'
 ht-degree: 99%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 >[!TIP]
 >
->[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)の基本的な使用法と、[FileVault コンテンツパッケージ Maven プラグイン](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)について説明します。この記事では、これらの概念の理解を前提としています。
+>[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja/experience-manager-core-components/using/developing/archetype/overview.html)の基本的な使用法と、[FileVault コンテンツパッケージ Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)について説明します。この記事では、これらの概念の理解を前提としています。
 
 この記事では、AEM as a Cloud Service との互換性を保つために Adobe Experience Manager Maven プロジェクトに必要な変更について説明します。互換性を保つには、プロジェクトが可変コンテンツと不変コンテンツの分離に従っていること、矛盾のない決定論的なデプロイメントの作成に必要な依存関係が設定されていること、デプロイ可能な構造にプロジェクトがパッケージ化されていることが必要です。
 
@@ -619,5 +619,5 @@ Maven ビルドの前にターゲットディレクトリをクリーンアッ�
 
 ## その他のリソース {#additional-resources}
 
-+ [Maven を使用したパッケージの管理](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/vlt-mavenplugin.html)
++ [Maven を使用したパッケージの管理](/help/implementing/developing/tools/maven-plugin.md)
 + [FileVault コンテンツパッケージ Maven プラグイン](http://jackrabbit.apache.org/filevault-package-maven-plugin/)
