@@ -2,9 +2,9 @@
 title: 移行後段階
 description: 移行後段階
 translation-type: tm+mt
-source-git-commit: 5a90db8791dd92cceb811b9ed2beda3ecb4a974d
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '226'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ス
 >[!IMPORTANT]
 >実行時に `/libs` や `/apps` などの不変リポジトリに書き込むと、エラーが発生します。また、ユーザーはステージング環境と実稼動環境用の開発者ツールにはアクセスできません。
 
-CRXDE Lite を使用して AEM アプリケーションを開発する方法については、[CRXDE Lite による開発](https://docs.adobe.com/help/ja-JP/experience-manager-65/developing/devtools/developing-with-crxde-lite.html)を参照してください。
+CRXDE Lite を使用して AEM アプリケーションを開発する方法については、[CRXDE Lite による開発](/help/implementing/developing/tools/crxde.md)を参照してください。
 
 ## ログの管理 {#managing-logs}
 
