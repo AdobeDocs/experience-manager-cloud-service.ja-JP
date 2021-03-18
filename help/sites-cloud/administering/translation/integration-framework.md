@@ -2,9 +2,9 @@
 title: 翻訳統合フレームワークの設定
 description: サードパーティの翻訳サービスと統合するためのTranslation Integration Frameworkの設定方法を説明します。
 translation-type: tm+mt
-source-git-commit: 66b2fb19cbc4c8aa480f1ace31a7f973dc7fb0f7
+source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1381'
 ht-degree: 41%
 
 ---
@@ -37,7 +37,6 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 
 コネクターパッケージをインストールしたら、コネクター用のクラウド設定を作成できます。通常は、翻訳サービスで認証をおこなうための資格情報を指定する必要があります。Microsft Translator コネクター用のクラウド設定の追加については、[Microsoft Translator との統合](connect-ms-translator.md)を参照してください。
 
