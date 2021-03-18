@@ -2,9 +2,9 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 translation-type: tm+mt
-source-git-commit: 78d9c1345ed0642f7cb493a50ff117c5fad7632a
+source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
 workflow-type: tm+mt
-source-wordcount: '3299'
+source-wordcount: '3278'
 ht-degree: 73%
 
 ---
@@ -747,7 +747,7 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMクライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。 [Using Preprocessors](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors)で説明されているように、プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、発行インスタンスで効果的に参照するために、resourcesという名前の子フォルダーに格納する必要があります。
+AEMクライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。 [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)で説明されているように、プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、発行インスタンスで効果的に参照するために、resourcesという名前の子フォルダーに格納する必要があります。
 
 #### 準拠していないコード {#non-compliant-proxy-enabled}
 
@@ -793,7 +793,7 @@ AEMCloud Service上でアセット処理を行うためにAssetマイクロサ�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、静的テンプレートの使用はAEMプロジェクトで非常に一般的でしたが、編集可能なテンプレートは最も柔軟性があり、静的なテンプレートにはない追加機能をサポートするので、非常にお勧めします。 詳しくは、[ページテンプレート — 編集可能](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=en)を参照してください。 静的なテンプレートから編集可能なテンプレートへの移行は、[AEM最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)を使用して、大幅に自動化できます。
+従来、静的テンプレートの使用はAEMプロジェクトで非常に一般的でしたが、編集可能なテンプレートは最も柔軟性があり、静的なテンプレートにはない追加機能をサポートするので、非常にお勧めします。 詳しくは、[ページテンプレートを参照してください。](/help/implementing/developing/components/templates.md) 静的なテンプレートから編集可能なテンプレートへの移行は、 [AEM最新化ツールを使用して大幅に自動化できます](https://opensource.adobe.com/aem-modernize-tools/)。
 
 ### OakPAL — 従来の基盤コンポーネントの使用は推奨されません{#oakpal-usage-legacy}
 
