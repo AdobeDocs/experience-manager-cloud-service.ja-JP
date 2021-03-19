@@ -1,10 +1,12 @@
 ---
 title: 混在メディアセット
 description: Dynamic Media での混在メディアセットの使用方法について説明します。。
+feature: 混在メディアセット
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1469'
 ht-degree: 75%
 
 ---
