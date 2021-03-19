@@ -2,10 +2,11 @@
 title: Dynamic Media のセットアップ
 description: Dynamic Mediaを設定するには、Dynamic Mediaを設定し、画像とビューアプリセットを管理する必要があります。
 contentOwner: Rick Brough
+topic: Administrator
 translation-type: tm+mt
-source-git-commit: 58aa2f416aac6fa6b260e846fc5265bdf62a1949
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '180'
 ht-degree: 76%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 76%
 Dynamic Media の管理者には、次のトピックが参考になります。
 
 * [Dynamic Media の設定](config-dm.md)
-* [画像プリセットの管理 ](managing-image-presets.md)
+* [画像プリセットの管理](managing-image-presets.md)
 * [ビューアプリセットの管理](managing-viewer-presets.md)
 * [Dynamic Media のトラブルシューティング](troubleshoot-dm.md)
 
