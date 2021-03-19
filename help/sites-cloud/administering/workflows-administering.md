@@ -1,10 +1,12 @@
 ---
 title: ワークフローインスタンスの管理
 description: ワークフローインスタンスの管理方法について説明します。
+feature: 管理
+role: Administrator
 translation-type: tm+mt
-source-git-commit: c19079b1be36c4e87962491f263ddf97ab98f831
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '936'
 ht-degree: 100%
 
 ---
