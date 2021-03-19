@@ -1,10 +1,12 @@
 ---
 title: インタラクティブビデオ
 description: Dynamic Media でインタラクティブビデオとショッパブルビデオを使用する方法を説明します。
+feature: インタラクティブビデオ
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: dfd225bbef6d3244130aca2f18dbef4006f2ae65
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '6062'
+source-wordcount: '6066'
 ht-degree: 49%
 
 ---
@@ -21,7 +23,7 @@ ht-degree: 49%
 
 ## インタラクティブビデオの使用例  {#interactive-video-in-action}
 
-インタラクティブなショッパブルビデオの動作を確認するには、「[ライブデモ](https://landing.adobe.com/jp/na/dynamic-media/ctir-2755/live-demos.html)」をクリックし、ページの「**[!UICONTROL ショッパブルメディア]**」見出しまでスクロールして、ショッパブルビデオをクリックして再生を開始します。
+インタラクティブなショッパブルビデオの動作を確認するには、「[ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)」をクリックし、ページの「**[!UICONTROL ショッパブルメディア]**」見出しまでスクロールして、ショッパブルビデオをクリックして再生を開始します。
 
 * 再生中にビデオ内で製品が使用されると、同じ製品のサムネール画像が右側に表示されます。
 
@@ -278,7 +280,7 @@ Experience Managerの導入でeコマースを使用している場合は、こ�
 
       ビデオの最後に到達するまで、セグメントを追加するタイムラインのポイントで、ビデオの再生と停止を続けます。
 
-1. （オプション）**[!UICONTROL タイムラインスケールスライダ]**&#x200B;の左側のバーをドラッグしてズームインし、右にドラッグしてズームアウトします。 この操作により、追加したセグメントの詳細表示を制御できます。
+1. （オプション）**[!UICONTROL タイムラインスケールスライダ]**&#x200B;の左側のバーをドラッグしてズームインし、右にドラッグしてズームアウトします。 この操作により、追加したセグメントの詳細を表示する量を制御できます。
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
