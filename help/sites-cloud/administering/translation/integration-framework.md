@@ -1,10 +1,12 @@
 ---
 title: 翻訳統合フレームワークの設定
 description: サードパーティの翻訳サービスと統合するためのTranslation Integration Frameworkの設定方法を説明します。
+feature: 言語コピー
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 22437576d55073d51967e2e638fd8786dee18c78
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1384'
 ht-degree: 41%
 
 ---
