@@ -2,10 +2,10 @@
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
 description: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ。
 translation-type: tm+mt
-source-git-commit: 6a60238b13d66ea2705063670295a62e3cbf6255
+source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 97%
+source-wordcount: '1742'
+ht-degree: 95%
 
 ---
 
@@ -67,12 +67,14 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](#sample-cities-named-variation)を参照してください
    * 操作の場合：
 
-      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します
+      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します, `STARTS_WITH`
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
+         * [サンプルクエリ- `_path`が特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)で始まるすべての冒険を参照
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
          * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
          * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](#sample-all-cities-san-ignore-case)を参照してください
+
 
 
 
@@ -653,6 +655,51 @@ query {
         {
           "name": "Caulfield",
           "firstName": "Max"
+        }
+      ]
+    }
+  }
+}
+```
+
+### サンプルクエリ- `_path`が特定のプレフィックス{#sample-wknd-all-adventures-cycling-path-filter}で始まるすべてのアドベンチャー
+
+`_path`が特定のプレフィックス(`/content/dam/wknd/en/adventures/cycling`)で始まるすべての`adventures`。
+
+**サンプルクエリ**
+
+```xml
+query {
+  adventureList(
+    filter: {
+      _path: {
+        _expressions: [
+        {
+          value: "/content/dam/wknd/en/adventures/cycling"
+         _operator: STARTS_WITH
+        }]
+       }
+    })
+    {
+    items {
+      _path
+    }
+  }
+}
+```
+
+**サンプル結果**
+
+```xml
+{
+  "data": {
+    "adventureList": {
+      "items": [
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-southern-utah/cycling-southern-utah"
+        },
+        {
+          "_path": "/content/dam/wknd/en/adventures/cycling-tuscany/cycling-tuscany"
         }
       ]
     }
