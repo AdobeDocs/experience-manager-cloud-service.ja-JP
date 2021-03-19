@@ -1,10 +1,12 @@
 ---
 title: '画像プリセットの管理 '
-description: 画像プリセットの概要と、画像プリセットを作成、変更および管理する方法について説明します.
+description: 「画像プリセットと、画像プリセットを作成、変更および管理する方法について説明します。」
+feature: 画像プリセット，ビューア，レンディション
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '3640'
+source-wordcount: '3646'
 ht-degree: 72%
 
 ---
