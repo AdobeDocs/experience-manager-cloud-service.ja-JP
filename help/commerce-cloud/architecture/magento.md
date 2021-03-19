@@ -3,7 +3,7 @@ title: コマース統合フレームワークを使用した、AEM と Magento 
 description: AEM と Magento は、コマース統合フレームワーク（CIF）を使用してシームレスに統合されます。CIF を使用すると、AEM は Magento インスタンスにアクセスし、GraphQL を介して Magento と通信できます。また、AEM オーサーは、製品とカテゴリの選択機能と製品コンソールを使用して、Magento からオンデマンドで取得した製品とカテゴリデータを参照できます。さらに、CIF には標準搭載のストアフロントが用意されており、コマースプロジェクトの迅速化に役立ちます。
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: 36e0fd66c9119571cde5c8791862abed8b552d5a
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 88%
