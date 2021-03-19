@@ -3,11 +3,14 @@ sub-product: AEM as a Cloud Service への移行
 user-guide-title: AEM as a Cloud Service への移行
 breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
+feature-set: Experience Manager Sites
+feature: デプロイ
+role: アーキテクト、開発者
 translation-type: tm+mt
-source-git-commit: b729e3fe4ef572877ae185c37f30b9b1fc78fc2a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 100%
+source-wordcount: '90'
+ht-degree: 97%
 
 ---
 
