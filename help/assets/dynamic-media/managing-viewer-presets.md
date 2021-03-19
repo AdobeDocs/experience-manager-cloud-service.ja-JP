@@ -1,10 +1,12 @@
 ---
 title: ビューアプリセットの管理
-description: ビューアプリセットの作成方法と管理方法（Dynamic Media 内）
+description: Dynamic Mediaでビューアプリセットを作成および管理する方法について説明します。
+feature: ビューアプリセット、ビューア
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: dce527d5798ef003dc499baec97b169debab445a
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '4239'
+source-wordcount: '4245'
 ht-degree: 71%
 
 ---
