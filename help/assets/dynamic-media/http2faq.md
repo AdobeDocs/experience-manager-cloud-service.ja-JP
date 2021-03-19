@@ -1,11 +1,12 @@
 ---
 title: コンテンツの HTTP/2 配信の FAQ
 description: HTTP/2 コンテンツ配信について説明します。
+topic: 「管理者、実業家」
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 73%
+source-wordcount: '789'
+ht-degree: 72%
 
 ---
 
