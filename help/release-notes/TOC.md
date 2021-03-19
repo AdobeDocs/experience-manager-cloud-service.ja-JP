@@ -3,11 +3,14 @@ sub-product: AEM as a Cloud Service のリリースノート
 user-guide-title: AEM as a Cloud Service のリリースノート
 breadcrumb-title: リリースノート
 user-guide-description: このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。
+feature-set: Experience Manager
+feature: リリース情報
+role: リーダー、アーキテクト、開発者、データ・アーキテクト、データ・エンジニア、管理者、実業家
 translation-type: tm+mt
-source-git-commit: fe26fe183c437d6ffe18e1db7fcdb74ad9448982
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '119'
+ht-degree: 91%
 
 ---
 
