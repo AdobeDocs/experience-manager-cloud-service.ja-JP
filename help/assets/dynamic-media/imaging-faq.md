@@ -1,10 +1,12 @@
 ---
 title: スマートイメージング
-description: スマートイメージングでは、各ユーザー固有の視聴特性を適用して、エクスペリエンスに最適化された適切な画像を自動的に提供し、パフォーマンスとエンゲージメントを向上させます。
+description: 「各ユーザー独自の表示特性を適用して、エクスペリエンスに最適化された適切な画像を自動的に提供することで、パフォーマンスとエンゲージメントを向上させるスマートイメージングについて説明します。」
+feature: アセット管理，レンディション
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: 20e37c385c2d3df91e37095bcf8a630fbfccbd16
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1863'
 ht-degree: 54%
 
 ---
