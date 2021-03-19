@@ -2,10 +2,10 @@
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
 translation-type: tm+mt
-source-git-commit: 79cdc4f453efe5b251891c09934e2dcb823f645c
+source-git-commit: 2e40a5a1cfe3919d678abeef2726fbc303c2e6b2
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 81%
+source-wordcount: '1042'
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Cloud に含まれている Adobe Target を使用すると、�
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
 * [Adobe Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/intro/get-started/quick-start.html) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
 
-Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。エクスペリエンスフラグメントを Target にエクスポートする場合は、Adobe Target 設定と IMS のみが必要です。
+Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。エクスペリエンスフラグメントをターゲットに書き出す場合は、Adobe Target設定とIMSのみが必要です。
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Target 設定を編集するには、次の手順に従います。
 
 ## Adobe Launch を使用して、AEM サイトに Adobe Target を統合する {#integrate-target-launch}
 
-AEM は、Experience Platform Launch との標準の統合を提供します。Experience Platform Launch に Adobe Target 拡張機能を追加することで、AEM Web ページ上で Adobe Target の機能を使用できます。Target ライブラリは、Launch を使用した場合にのみレンダリングされます。
+AEM は、Experience Platform Launch との標準の統合を提供します。Experience Platform LaunchにAdobe Target拡張機能を追加すると、AEM WebページでAdobe Targetの機能を使用できます。 ターゲットライブラリは、「起動」を使用した場合にのみレンダリングされます。
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ AEM は、Experience Platform Launch との標準の統合を提供します。E
 
 ### Launch プロパティの作成 {#create-property}
 
-プロパティは、拡張機能、ルール、データ要素が入力されるコンテナです。
+プロパティは、拡張子、ルール、データ要素が埋め込まれたコンテナです。
 
 1. 「**新規プロパティ**」ボタンを選択します。
 2. プロパティの名前を指定します。
-3. ドメインに応じて、Launch ライブラリを読み込む IP／ホストを入力します。
+3. ドメインとして、起動ライブラリを読み込むIPアドレスまたはホスト名を入力します。
 4. 「**保存**」ボタンを選択します。
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### 必要な拡張機能の追加 {#add-extension}
 
-**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の Web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target** と **Adobe ContextHub** の両方の拡張機能を追加する必要があります。
+**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の Web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target**&#x200B;拡張子と&#x200B;**AdobeContextHub**&#x200B;拡張子の両方を追加する必要があります。
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
 2. 「**Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
@@ -124,7 +124,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。E
 
 ### ページルールの作成 {#page-rule}
 
-**ルール**&#x200B;では、ターゲット設定を達成するために、一連のアクション（サイトで実行される）を定義し、順序を決めます。
+**ルール**&#x200B;では、サイトで実行される一連のアクションを定義し、順序を付けて、ターゲティングを達成します。
 
 1. スクリーンショットに示されたように、一連のアクションを追加します。
    ![アクション](assets/rules1.png "アクション")
@@ -139,8 +139,8 @@ AEM は、Experience Platform Launch との標準の統合を提供します。E
 
 | **変更点** | **クラシック UI の設定** | **タッチ操作対応 UI の設定** | **結果** |
 |---|---|---|---|
-| ターゲット設定の場所。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 以前は、/etc/cloudservices/testandtarget 内に複数の設定が存在していましたが、現在は 1 つの設定がテナントの下に存在します。 |
+| ターゲット設定の場所。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 以前は、/etc/cloudservices/testandtargetに複数の設定が存在していましたが、現在はテナントの下に1つの設定が存在しています。 |
 
 >[!NOTE]
 >
->既存顧客のレガシー設定は引き続きサポートされます（編集オプション新規作成オプションはありません）。レガシー設定は、VSTS を使用して顧客がアップロードしたコンテンツパッケージの一部です。
+>既存のお客様は、既存の設定を引き続きサポートします（新しい設定を編集または作成するオプションはありません）。 既存の設定は、VSTSを使用してお客様がアップロードしたコンテンツパッケージの一部です。
