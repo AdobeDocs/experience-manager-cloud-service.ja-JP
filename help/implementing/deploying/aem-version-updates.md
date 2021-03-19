@@ -1,10 +1,11 @@
 ---
 title: AEM バージョンのアップデート
 description: 'AEM バージョンのアップデート '
+feature: デプロイ
 translation-type: tm+mt
-source-git-commit: 78c0802a0703e81941013347a3f4b57cb106c927
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
