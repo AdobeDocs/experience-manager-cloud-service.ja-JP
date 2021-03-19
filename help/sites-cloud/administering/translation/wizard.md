@@ -1,16 +1,18 @@
 ---
 title: 言語コピーウィザード
 description: AEM での言語コピーウィザードの使用について説明します。
+feature: 言語コピー
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 31%
+source-wordcount: '251'
+ht-degree: 32%
 
 ---
 
 
-# 言語コピーウィザード  {#language-copy-wizard}
+# 言語コピーウィザード {#language-copy-wizard}
 
 言語コピーウィザードは、多言語コンテンツ構造を作成および実装するためのガイド付きの操作です。 ウィザードを使用すると、言語コピーを簡単かつ迅速に作成できます。
 
