@@ -3,11 +3,14 @@ sub-product: AEM as a Cloud Service の概要
 user-guide-title: AEM as a Cloud Service の概要
 breadcrumb-title: 概要ガイド
 user-guide-description: ソリューションの紹介、用語など、Adobe Experience Manager as a Cloud Service の概要については、まずこちらを参照してください。
+feature-set: Experience Manager
+feature: リリース情報
+role: リーダー、アーキテクト、開発者、データ・アーキテクト、データ・エンジニア、管理者、実業家
 translation-type: tm+mt
-source-git-commit: 8b6d4f424fcc943c981d5883877cb533c8d63353
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 100%
+source-wordcount: '72'
+ht-degree: 86%
 
 ---
 
