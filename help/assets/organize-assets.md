@@ -2,11 +2,13 @@
 title: デジタルアセットの整理
 description: Adobe Experience Manager Assets に用意されている様々な手段を使用して、デジタルアセットを整理します。
 contentOwner: AG
+feature: アセット管理
+topic: 「管理者、実業家」
 translation-type: tm+mt
-source-git-commit: 9c5dd93be316417014fc665cc813a0d83c3fac6f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 100%
+source-wordcount: '450'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +28,7 @@ AEM Assets では、コンテンツを整理するための方法が複数サポ
 >`sling:OrderedFolder` タイプの（Marketing Cloud 内の）Assets フォルダーの共有はサポートされていません。フォルダーを共有する場合は、フォルダーを作成するときに「Ordered」を選択しないでください。
 
 1. 新しいフォルダーを作成するデジタルアセットフォルダーの場所に移動します。
-1. メニューで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL 新規フォルダ]**」を選択します。
+1. メニューで、「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL 新規フォルダー]**」を選択します。
 1. 「**[!UICONTROL タイトル]**」フィールドにフォルダー名を入力します。デフォルトでは、フォルダー名として指定したタイトルが使用されます。フォルダーが作成されると、デフォルトのフォルダー名を上書きして、別のフォルダー名を指定できます。
 1. 「**[!UICONTROL 作成]**」をクリックします。作成したフォルダーがデジタルアセットフォルダーに表示されます。
 
