@@ -1,11 +1,12 @@
 ---
 title: クイック表示を使用したカスタムポップアップの作成
-description: デフォルトのクイック表示はeコマースエクスペリエンスで使用され、eコマースエクスペリエンスでは、購入を促すために製品情報と共にポップアップが表示されます。 このようなポップアップにカスタムコンテンツが表示されるように設定できます。
+description: 「eコマースエクスペリエンスでデフォルトのクイック表示がどのように使用され、購入を促す製品情報がポップアップウィンドウに表示されるかについて説明します。 カスタムコンテンツをトリガーしてポップアップウィンドウに表示できます。」
+topic: 「開発者、管理者、実業家」
 translation-type: tm+mt
-source-git-commit: ad626d9722f1942249197d96aa5fac3d8f7ed947
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 45%
+source-wordcount: '1032'
+ht-degree: 44%
 
 ---
 
