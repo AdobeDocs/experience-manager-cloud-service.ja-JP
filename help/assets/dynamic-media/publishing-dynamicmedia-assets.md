@@ -2,11 +2,13 @@
 title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法を学習します。
 contentOwner: Rick Brough
+feature: アセット管理
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 99%
 
 ---
 
@@ -33,6 +35,7 @@ Dynamic Media アセットを公開するには、既にアップロード済み
 >
 >* アセットの URL を使用するためには、そのアセットを公開する必要があります。アセットが公開されていない場合、URL をコピーして Web ブラウザーに貼り付けても機能しません。
 >* ライブ配信をするには、画像プリセットおよびビューアプリセットをアクティベートして公開する必要があります。
+
 >
 
 
