@@ -1,11 +1,12 @@
 ---
 title: AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.1.0 Cloud Manager のリリースノート
+feature: リリース情報
 translation-type: tm+mt
-source-git-commit: 3bf7defc9aa36c831e061e7209a765f2d60cfb33
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 44%
+source-wordcount: '132'
+ht-degree: 100%
 
 ---
 
@@ -16,14 +17,14 @@ ht-degree: 44%
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2021.1.0のリリース日は2021年1月14日です。
+AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 月 14 日です。
 
 ## Cloud Manager {#cloud-manager}
 
 ### バグ修正 {#bug-fixes}
 
-* アセット実稼動インスタンスでは、場合によっては、環境&#x200B;**ユーザー**&#x200B;の詳細ページにブランドポータルのステータスが&#x200B;*保留*&#x200B;として表示されます。ユーザーは何も操作を行えません。
+* アセット実稼動インスタンスでは、**環境**&#x200B;の詳細ページに Brand Portal のステータスが&#x200B;*保留中*&#x200B;と表示され、ユーザーがアクションを実行できない場合があります。
 
-* Cloud Managerから非休止状態をトリガーすると、非休止状態が正常に開始された場合でも、エラーメッセージが表示されることがありました。
+* Cloud Manager から休止状態の解除をトリガーすると、解除が正常に開始された場合でも、エラーメッセージが表示されることがありました。
 
-* 環境の作成または削除でエラーが発生した場合は、まれに対処しました。
+* 環境の作成または削除でまれにエラーが発生する問題に対処しました。
