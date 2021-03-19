@@ -1,15 +1,16 @@
 ---
 title: Dynamic Media での選択的公開の操作
-description: Dynamic Media での選択的公開の操作方法に関する情報です。
+description: Dynamic Mediaの一部のみの発行を使用する方法について説明します。
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: 04f40452ca89bc5298341b4338bc1d7762b908c2
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '2922'
-ht-degree: 100%
+source-wordcount: '2923'
+ht-degree: 99%
 
 ---
 
