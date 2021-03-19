@@ -1,11 +1,13 @@
 ---
 title: パノラマ画像
 description: Dynamic Media でのパノラマ画像の使用方法を学習します。
+feature: パノラマ画像
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: 83ad14d49a5250c3070eed4d4962443da6faf5f5
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 100%
+source-wordcount: '151'
+ht-degree: 98%
 
 ---
 
