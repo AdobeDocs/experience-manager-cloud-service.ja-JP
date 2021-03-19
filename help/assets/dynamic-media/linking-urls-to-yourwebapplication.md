@@ -1,11 +1,12 @@
 ---
 title: Web アプリケーションへの URL のリンク
-description: Dynamic Media で Web アプリケーションに URL をリンクする方法。
+description: URLをDynamic MediaのWebアプリケーションにリンクする方法を説明します。
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: a8eb6a88b889facca8518c05a80051fc17dd0617
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 83%
+source-wordcount: '1268'
+ht-degree: 82%
 
 ---
 
