@@ -1,10 +1,12 @@
 ---
 title: 翻訳するコンテンツの準備
 description: 翻訳するコンテンツを準備する方法について説明します。
+feature: 言語コピー
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 4fc4dbe2386d571fa39fd6d10e432bb2fc060da1
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '733'
 ht-degree: 37%
 
 ---
