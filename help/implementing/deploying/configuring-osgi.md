@@ -1,10 +1,11 @@
 ---
 title: Cloud ServiceとしてのAdobe Experience Manager用のOSGiの設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
+feature: デプロイ
 translation-type: tm+mt
-source-git-commit: 7195709a96422eb701722ef6b398d6577e080058
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2730'
 ht-degree: 59%
 
 ---
@@ -251,7 +252,7 @@ OSGi プロパティで、作成者とパブリッシュで異なる値が必要
 
 ### 設定例 {#configuration-examples}
 
-以下の例では、ステージ環境とprod環境に加えて、3つの開発があると仮定します。
+次の例では、ステージ環境とprod環境に加えて、3つの開発があると仮定します。
 
 **例 1**
 
