@@ -1,11 +1,13 @@
 ---
 title: Dynamic Media でのホットリンク保護の有効化
-description: Dynamic Media でホットリンク保護を有効化する方法について説明します。
+description: Dynamic Mediaでホットリンク保護を有効にする方法を説明します。
+feature: アセット管理
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: 5c221505c6a56411b17b52c70ce941258993bfb3
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 25%
 
 ---
 
