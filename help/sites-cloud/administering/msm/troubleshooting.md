@@ -1,10 +1,12 @@
 ---
 title: MSMの問題とFAQのトラブルシューティング
 description: MSMに関する最も一般的な問題のトラブルシューティング方法と、MSMに関する最も一般的な質問に対する回答を得る方法を説明します。
+feature: マルチサイトマネージャー
+role: Administrator
 translation-type: tm+mt
-source-git-commit: b33e13814403af1383b46b1f34737e8aa75d8213
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
