@@ -1,11 +1,13 @@
 ---
 title: ページへの Dynamic Media アセットの追加
-description: Adobe Experience Manager as a Cloud Service で Dynamic Media コンポーネントをページに追加する方法。
+description: Adobe Experience ManagerのページにCloud ServiceとしてDynamic Mediaコンポーネントを追加する方法を学びます。
 contentOwner: Rick Brough
+feature: アセット管理
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3087'
 ht-degree: 69%
 
 ---
@@ -317,7 +319,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
 ### コンポーネント：ビデオ 360 メディア {#video-media-component}
 
-**[!UICONTROL ビデオ360メディア]**&#x200B;コンポーネントを使用して、Webページに等角形のビデオをレンダリングします。 これにより、部屋、プロパティ、場所、横置き、または医療の手順を没頭させた状態で視聴できます。
+**[!UICONTROL ビデオ360メディア]**&#x200B;コンポーネントを使用して、Webページに等角形のビデオをレンダリングします。 これにより、部屋、プロパティ、場所、横置き、または医療の手順を没頭させることなく視聴できます。
 
 フラットディスプレイでの再生中は、ユーザが画角を制御します。携帯端末での再生は、通常、組み込みのジャイロコントロールを使用します。
 
