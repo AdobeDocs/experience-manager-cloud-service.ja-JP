@@ -1,11 +1,13 @@
 ---
 title: Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み
 description: Web ページに Dynamic Media ビデオまたは画像アセットを埋め込む方法を説明します。
+feature: アセット管理
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 97%
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
