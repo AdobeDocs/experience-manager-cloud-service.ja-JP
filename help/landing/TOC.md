@@ -1,11 +1,14 @@
 ---
 sub-product: Adobe Experience Manager as a Cloud Service のヘルプ
 user-guide-title: Adobe Experience Manager as a Cloud Service のヘルプ
+feature-set: Experience Manager
+feature: リリース情報
+role: リーダー、アーキテクト、開発者、データ・アーキテクト、データ・エンジニア、管理者、実業家
 translation-type: tm+mt
-source-git-commit: 14c553f2b9e8cbaf27be74ba7efefc68ef740d3e
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '212'
+ht-degree: 95%
 
 ---
 
