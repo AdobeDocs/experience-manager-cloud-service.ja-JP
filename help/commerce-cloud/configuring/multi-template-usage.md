@@ -6,14 +6,14 @@ version: cloud-service
 doc-type: feature-video
 activity: use
 audience: marketer
-feature: Commerce Integration Framework
+feature: Commerce統合フレームワーク
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 100%
+source-wordcount: '105'
+ht-degree: 97%
 
 ---
 
