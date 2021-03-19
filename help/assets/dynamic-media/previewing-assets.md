@@ -1,11 +1,13 @@
 ---
 title: アセットのプレビュー
 description: Dynamic Media のアセットをプレビューする方法について説明します。。
+feature: アセット管理
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: fd75af0bf0c16e20c3b98703af14f329ea6c6371
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 100%
+source-wordcount: '1217'
+ht-degree: 99%
 
 ---
 
@@ -61,8 +63,8 @@ ht-degree: 100%
       </tr>
       <tr>
       <td><p>画像</p> </td>
-      <td>可</td>
-      <td>可</td>
+      <td>はい</td>
+      <td>はい</td>
       <td><p><strong>特定のレンディションでアセットをプレビューするには：</strong></p>
         <ul>
         <li>ページの左上隅近くにあるアイコンをクリックして、ドロップダウンリストを表示します。リストから「<strong>レンディション</strong>」をクリックし、プレビューする特定のレンディションを選択します。</li>
@@ -73,8 +75,8 @@ ht-degree: 100%
       </tr>
       <tr>
       <td>マルチメディア</td>
-      <td>可</td>
-      <td>可</td>
+      <td>はい</td>
+      <td>はい</td>
       <td><p><strong>特定のレンディションでアセットをプレビューするには：</strong></p>
         <ul>
         <li>ページの左上隅近くにあるアイコンをクリックして、ドロップダウンリストを表示します。リストから「<strong>レンディション</strong>」をクリックし、プレビューする特定のレンディションを選択します。</li>
@@ -121,8 +123,8 @@ ht-degree: 100%
       </tr>
       <tr>
       <td>360 ビデオ<br /> </td>
-      <td>可</td>
-      <td>可</td>
+      <td>はい</td>
+      <td>はい</td>
       <td><p><strong>特定のレンディションでアセットをプレビューするには：</strong></p>
         <ul>
         <li>ページの左上隅近くにあるアイコンをタップして、ドロップダウンリストを表示します。「<strong>レンディション</strong>」を選択した後、プレビューするレンディションを選択します。</li>
