@@ -4,11 +4,12 @@ description: Dynamic Media および Dynamic Media ビューアでのアクセ�
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+topic: 開業医
 translation-type: tm+mt
-source-git-commit: cf607bd27463f23de29d0d6770940a01f3e36c87
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 67%
+source-wordcount: '613'
+ht-degree: 66%
 
 ---
 
