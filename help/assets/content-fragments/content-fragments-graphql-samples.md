@@ -2,9 +2,9 @@
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
 description: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ。
 translation-type: tm+mt
-source-git-commit: 3377c69710cec2687347a23bb0e8f54e87dad831
+source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1741'
 ht-degree: 95%
 
 ---
@@ -69,7 +69,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します, `STARTS_WITH`
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
-         * [サンプルクエリ- `_path`が特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)で始まるすべての冒険を参照
+         * [サンプルクエリ — 特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)を持つ`_path`開始が出現するすべての冒険を参照
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
          * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
@@ -664,7 +664,7 @@ query {
 
 ### サンプルクエリ- `_path`が特定のプレフィックス{#sample-wknd-all-adventures-cycling-path-filter}で始まるすべてのアドベンチャー
 
-`_path`が特定のプレフィックス(`/content/dam/wknd/en/adventures/cycling`)で始まるすべての`adventures`。
+`_path`開始に特定のプレフィックス(`/content/dam/wknd/en/adventures/cycling`)を付けるすべての`adventures`。
 
 **サンプルクエリ**
 
