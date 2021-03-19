@@ -1,10 +1,11 @@
 ---
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 49b2f4abf64e404fcda7ea8d35e3ab9dc5fec90f
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '4119'
+source-wordcount: '4120'
 ht-degree: 100%
 
 ---
