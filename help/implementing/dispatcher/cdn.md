@@ -1,10 +1,11 @@
 ---
 title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: c71117de502b1ee756e06e756a643c987113ea45
+source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '696'
 ht-degree: 70%
 
 ---
