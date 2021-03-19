@@ -1,10 +1,12 @@
 ---
 title: Microsoft Translator への接続
 description: AEMをMicrosoft Translatorに接続して、すぐに使用できる状態で翻訳ワークフローを自動化する方法を説明します。
+feature: 言語コピー
+role: Administrator
 translation-type: tm+mt
-source-git-commit: 5902e026c47aac0c1ea62a2b74be6109b216fb74
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '479'
 ht-degree: 36%
 
 ---
