@@ -4,9 +4,9 @@ description: AEM Sites では、コンテンツ作成者がコーディングの
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 54c4755207d84f6f11effea72e94e20027446ba9
+source-git-commit: 8fa74c2c575409659f482c669c4939a623ef6707
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2032'
 ht-degree: 75%
 
 ---
@@ -208,7 +208,6 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 AEM Sites では PWA 機能の一部が利用できます。これらには、いくつかの顕著な制限があります。
 
-* オフラインでキャッシュするには、ユーザーは少なくとも 1 回ページを参照する必要があります。
 * ユーザーがアプリケーションを使用していない場合、ページは自動的に同期または更新されません。
 
 また、PWAを導入する際に、Adobeが次の推奨事項を作成します。
