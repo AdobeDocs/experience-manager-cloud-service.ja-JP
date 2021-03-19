@@ -1,10 +1,12 @@
 ---
 title: Dynamic Media ニュースレター
 description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップショップニュースレターでは、貴重なナレッジビルディングリソースをご利用いただけます。 例えば、ハウツービデオやソリューションの概要があります。 画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部について説明します。 '
+feature: アセット管理
+topic: 「管理者、実業家」
 translation-type: tm+mt
-source-git-commit: 193201670e5e78235025885f52215cca730ce556
+source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1155'
 ht-degree: 69%
 
 ---
