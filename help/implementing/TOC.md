@@ -3,10 +3,13 @@ sub-product: AEM as a Cloud Service の実装
 user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
+feature-set: Experience Manager
+feature: 開発者ツール
+role: 開発者、アーキテクト
 translation-type: tm+mt
-source-git-commit: 7b17605ceb794969b079c21a639dd145f8e028af
+source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '876'
 ht-degree: 99%
 
 ---
