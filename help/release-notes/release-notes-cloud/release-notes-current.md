@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 25b998014f9706da7de7b7ed6e2c8a03404d1950
+source-git-commit: 5d3a183efcd1355c1c5dc34519fbabee34e87578
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1837'
 ht-degree: 19%
 
 ---
@@ -200,6 +200,14 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 * 移行セットの作成時に、`/etc` 下の特定のパスを選択できます。
 
 ## ベストプラクティスアナライザー {#best-practices-analyzer}
+
+### リリース日 {#release-date-bpa-march}
+
+Best Practices Analyzer v2.1.8のリリース日は2021年3月22日です。
+
+### ベストプラクティスアナライザの新機能{#what-is-new-bpa-march}
+
+* UIのBPAレポート、およびCSVファイルとしてエクスポートされたレポートから、ACSコモンズの結果をフィルタで除外できます。
 
 ### リリース日 {#release-date-bpa}
 
