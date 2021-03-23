@@ -4,7 +4,7 @@ description: Dynamic Media でビデオを使用する方法について説明�
 feature: ビデオプロファイル
 topic: 開業医
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '9512'
 ht-degree: 70%
@@ -550,9 +550,9 @@ YouTube にビデオを公開するには、1 つ以上のチャネルが必要�
 YouTube チャンネルを作成するには：
 
 1. [https://www.youtube.com](https://www.youtube.com/) にアクセスし、Google アカウントの資格情報を使用してログインします。
-1. YouTubeページの右上隅にあるプロファイルの画像をクリックし（べた塗りの円内に文字として表示することもできます）、**[!UICONTROL YouTube設定]**（丸い歯車アイコン）をクリックします。
-1. 概要ページの「その他の機能」で、「**[!UICONTROL チャネルをすべて表示するか、新しいチャネルを作成する]**」をクリックします。
-1. チャネルページで、「**[!UICONTROL 新しいチャネルを作成]**」をクリックします。
+1. YouTubeページの右上隅にあるプロファイルの画像をクリックし（単色の円内に文字として表示することもできます）、**[!UICONTROL YouTube設定]**（丸い歯車アイコン）をタップします。
+1. 概要ページの「追加機能」の見出しの下で、**[!UICONTROL 「すべてのチャネルを表示」をタップするか、新しいチャネルを作成します]**。
+1. チャネルページで、「**[!UICONTROL 新しいチャネルを作成]**」をタップします。
 1. ブランドアカウントページで、「ブランドアカウント名」フィールドに、ビジネス名や、ビデオアセットの公開先となる他のチャネル名を入力し、「**[!UICONTROL 作成]**」をクリックします。
 
    ここに入力した名前は、Experience ManagerでYouTubeを設定する際に再入力する必要があるので、覚えておいてください。
