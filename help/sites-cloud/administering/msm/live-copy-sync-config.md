@@ -4,10 +4,10 @@ description: 使用可能な強力なLive Copy同期オプションと、プロ�
 feature: マルチサイトマネージャー
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: fff94f476124d8a2a84c60c478fef624090192d1
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 33%
+source-wordcount: '2340'
+ht-degree: 32%
 
 ---
 
@@ -43,7 +43,11 @@ Adobe Experience Managerでは、すぐに使用できる多数の同期設定�
 
 ### ロールアウト設定 {#rollout-configurations}
 
-次の表に、AEMに付属のロールアウト設定を示します。 表には各ロールアウト設定のトリガーと同期アクションが含まれます。インストールされるロールアウト設定のアクションが要件を満たさない場合は、[新しいロールアウト設定を作成](#creating-a-rollout-configuration)できます。
+次の表に、AEMに付属のロールアウト設定を示します。 表には各ロールアウト設定のトリガーと同期アクションが含まれます。
+
+<!--
+If the installed rollout configuration actions do not meet your requirements, you can [create a new rollout configuration](#creating-a-rollout-configuration).
+-->
 
 | 名前 | 説明 | トリガー | [同期アクション](#synchronization-actions) |
 |---|---|---|---|
