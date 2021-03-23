@@ -2,9 +2,9 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] ガイド'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] セルフサービスのリソースとドキュメントのリンク'
 translation-type: tm+mt
-source-git-commit: 58d99c33105b132570d0ca133ffa164373f53ad7
+source-git-commit: 332ca27c060a46d41e4f6e891f6fd98170d10d9f
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 54%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 54%
 
 # [!DNL Assets] を [!DNL Cloud Service] ガイドとして  {#aem-assets-guide}
 
-[!DNL Experience Manager Assets]の[!DNL Cloud Service]のセルフヘルプリソースを以下に示します。
+[!DNL Experience Manager Assets]には、次のセルフヘルプリソースが[!DNL Cloud Service]として提供されています。
 
 ## キー[!DNL Assets]記事{#key-articles}
 
