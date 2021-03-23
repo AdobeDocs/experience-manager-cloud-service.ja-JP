@@ -1,110 +1,91 @@
 ---
-title: ' [!DNL Assets] とメディアライブラリの比較'
-description: ' [!DNL Experience Manager Assets] とメディアライブラリの機能を比較し、違いを理解している。'
+title: 基本的なデジタルアセット管理にメディアライブラリを使用する
+description: '[!DNL Experience Manager Assets] およびアセット管理用のメディアライブラリ。'
 contentOwner: AG
+role: 建築家、リーダー
 translation-type: tm+mt
-source-git-commit: 93735a59dac1a0d674c0292ce268a8662f3b0b91
+source-git-commit: 82650c72f9abbdf6c83c585af7b4f7d17b8dcd08
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 19%
+source-wordcount: '447'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Experience Manager Assets] 対 [!DNL Experience Manager] 応メディアライブラリ  {#aem-assets-vs-aem-medialibrary}
+<!--
 
-[!DNL Adobe Experience Manager Assets] は、 [!DNL Experience Manager] プラットフォームの不可欠な部分です。このスムーズな統合は[!DNL Experience Manager]の主な利点と見なされ、コンテンツ管理の一貫性とコンテンツ作成者の生産性の高さを保証します。
+Define Media Lib
+Define req for it
+Define use cases
+Define what is not included
 
-## [!DNL Assets]とは{#what-is-aem-assets}
+-->
 
-[!DNL Assets] は、webベース [!DNL Experience Manager] のリポジトリでデジタルアセット(画像、ビデオ、ドキュメント、オーディオクリップなど)を管理できる機能です。[!DNL Assets] には、メタデータのサポート、レンディション、アセットファインダー、管理インターフェイスが含まれます。アセットを処理するクラウドネイティブのマイクロサービスが含まれます。
+# 基本的なアセット管理にメディアライブラリを使用{#manage-assets-using-media-library}
 
-## [!DNL Experience Manager]メディアライブラリとは{#what-is-the-aem-media-library}
+[!DNL Adobe Experience Manager] プラットフォームは、デジタルアセットを管理するための様々な機能を提供します。Media Libraryを使用すると、少数のアセットをリポジトリにアップロードし、Webページ内でアセットを検索して使用し、アセットに対する単純なアセット管理タスクを実行できます。
 
-[!DNL Experience Manager]メディアライブラリは、[!DNL Experience Manager] WCMコンテンツリポジトリの指定された部分です。このリポジトリには、画像や他の共有リソースが格納されます。 メディアライブラリは、WCMに基本的なデジタルアセット管理機能を提供します。
+Media Libraryは、[!DNL Adobe Experience Manager Sites]ライセンスを補完する軽量のDigital Asset Management(DAM)ソリューションです。 [!DNL Sites] は、Webコンテンツ管理(WCM)の製品です。メディアライブラリは、Experience Managerのすべての機能と連携します。
 
-## WCMに含まれない[!DNL Assets]から得る情報{#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+[!DNL Adobe Experience Manager Assets] ライセンスは別途購入可能です。[!DNL Experience Manager Assets] 企業の使用例を介したアセットの堅牢な処理、メタデータ、スキーマ、検索、ユーザーインターフェイスのカスタマイズ、およびMedia Libraryの機能を超える多数の機能を利用できます。
 
-[!DNL Assets]のお客様のみが利用できる独自の機能は次のとおりです。
+## ライセンス要件{#avail-media-library-license}
 
-* タイトル、タグ、説明以外のメタデータを抽出および編集する機能。
-* [!DNL Assets]管理者。スタートアップスクリーンから利用できます。
-* アップロードと取り込み、削除、サブアセット処理、メタデータ管理、処理プロファイルなど、デジタルアセット管理に関連するすべてのワークフロー手順。
-* パッケージ領域に`dam`を含むライブラリ。
+[!DNL Sites]ライセンスを持つお客様は、Media Libraryを使用する権利が与えられます。 [!DNL Experience Manager]の全てのコンポーネントで機能します。
 
-これらの機能を使用するには、[!DNL Assets]の有効なライセンスが必要です。
+メディアライブラリがサイトの一部としてインストールされます。 サイトのライセンスおよびインストール以外に追加のライセンスまたはパッケージは必要ありません。
 
-## [!DNL Assets]は別のパッケージとして提供されていますか？{#is-aem-assets-available-as-a-separate-package}
+## [!DNL Assets] 対するメディアライブラリ  {#assets-and-media-library}
 
-いいえ。インストールと導入を容易にするために、すべての[!DNL Experience Manager]アプリケーションとアドオンは、すべての機能を含む1つのパッケージで提供されます。 これは、パッケージに含まれるすべての機能の使用権がユーザーにあることを表すわけではありません。
+Experience Managerアセットは、エンタープライズグレードのDAM機能を提供します。 アセット機能は、[!DNL Experience Manager]と共に1つのパッケージとして提供されます。 ただし、アセットライセンスを購入していないユーザーは、高度なDAM機能を使用する権利を持ちません。 アセットライセンスがない場合は、メディアライブラリDAM機能のみが使用できます。
 
-## デジタルアセットのメタデータを編集したいのですが、[!DNL Assets]が必要ですか？{#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+ライセンスを取得していない[!DNL Assets]機能の意図しない使用を防ぐには、[!DNL Assets]固有のワークフロー、コンポーネント、分類、オプション、および[!DNL Assets]管理者をすべて[!DNL Experience Manager]から削除します。 これにより、ライセンスを取得していない[!DNL Assets]機能を誤ってユーザが使用するのを防ぐことができます。
 
-タイトル、説明、タグ以外のメタデータを編集する場合は、[!DNL Assets]のライセンスを取得する必要があります。
+## メディアライブラリユーザーが使用できる機能{#media-library-features}
 
-## Web サイトでカテゴリ述語を使用したいのですが、[!DNL Assets]が必要ですか？{#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+Media Libraryは、次の使用例を大まかにカバーしています。
 
-はい、カテゴリ述語は[!DNL Assets]の一部で、[!DNL Assets]ライセンスが必要です。
+* [!DNL Adobe Experience Manager Sites]を使用して作成したWebページに、基本的なDAM機能を提供します。
+* [!DNL Adobe Experience Manager Forms]を使用して作成されたアダプティブフォームと通信
+* [!DNL Adobe Experience Manager Screens]を使用して作成されたデジタル画面の操作。
+* [!DNL Assets] HTTP REST API（ヘッドレス操作用）
 
-## 画像を読み込むときに自動的にサイズ変更したいのですが、[!DNL Assets]が必要ですか？{#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-はい。画像のサイズ変更とワークフローに基づく自動変換、およびレンディションの管理機能は[!DNL Assets]の一部であり、[!DNL Experience Manager Assets]ライセンスが必要です。
+* Basic metadata properties
+* Tag management
+* Version control
+* Static renditions
+* Projects, tasks, workflow authoring
+* Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
+* Comments and annotation
+-->
 
-## カスタマイズされた画像コンポーネントを使用して画像をサイズ変更したいのですが、[!DNL Assets]が必要ですか？{#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+メディアライブラリ機能を使用するには、デフォルトの[!DNL Experience Manager]ユーザーインターフェイスを使用できます。 Media Libraryは[!DNL Experience Manager Sites]インストールの一部であり、別のインターフェイスやアドオンを必要としません。 既存のインターフェイスを使用すると、Media Libraryユーザーは次のタスクを実行する権利を付与されます。
 
-画像コンポーネントは WCM に含まれています。画像コンポーネント（および[!DNL Assets]によって使用される）のグラフィックスライブラリは、[!DNL Experience Manager]プラットフォームの一部であり、[!DNL Assets]ライセンスは必要ありません。
+* フォルダーを作成してアセットを整理します。
+* アセットのアップロード.
+* アセットの公開.
+* アセットの編集、移動およびコピーを行います。
+* アセットの参照、フィルタリングおよび検索（類似性検索を含む）を行います。
+* ア追加セットの[!UICONTROL プロパティ]ページの「[!UICONTROL 基本]」タブで使用可能なメタデータフィールドを、デフォルトで編集します。<!-- excluding Smart Tags -->
+* 静的レンディションの追加削除を行います。
+* フォルダ、アセット、アセットレンディションをダウンロードします。
+* アセットのバージョンを作成します。
+* アセットに対してレビュータスクを作成し、実行します。
+* アセットに注釈を付けます。
+* コンテン追加ツファインダーを使用して[!DNL Sites]ページにアセットを追加。
+* 使用方法 [!DNL Content Fragments].
 
-## [!DNL Assets]のライセンスを取得しなかった場合、ユーザーが[!DNL Assets]を使用するのを防ぐにはどうすればよいですか。{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+-->
 
-[!DNL Assets]に固有のワークフロー、コンポーネント、分類、オプション、および[!DNL Assets]管理者をすべて[!DNL Experience Manager]から削除できます。 これにより、ライセンスを取得していない[!DNL Assets]機能を誤ってユーザが使用するのを防ぐことができます。
-
-## ページに画像を追加し、その画像の切り抜きやサイズ変更を実行したいのですが、[!DNL Assets]が必要ですか？{#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
-
-この場合、[!DNL Assets]を購入する必要はありません。スマート画像コンポーネントを使用して画像をページに直接アップロードできるので、メディアライブラリを使用してWebサイト上の画像を使用する必要はありません。
-
-## [!DNL Assets]とメディアライブラリ{#listoffeatures}で使用できる機能の詳細リスト
-
-[!DNL Experience Manager Assets]
-
-* コレクションと Lightbox
-* 高度なメタデータプロパティと管理
-* Adobe Asset Link（Creative Cloud エンタープライズ版への接続）
-* [!DNL Experience Manager] デスクトップアプリケーション
-* 処理プロファイルとクラウドネイティブのアセットマイクロサービス
-* [!DNL Adobe InDesign Server] 統合
-* アセットテンプレートとカタログプロデューサーフレームワーク
-* [!DNL Adobe Photoshop]、 [!DNL Adobe Illustrator]および [!DNL Adobe InDesign] 統合
-* 多言語アセット管理
-* PIM との統合
-* 権限管理
-* Camera Raw支持
-* 検索ファセットの管理と設定
-* 事前定義済み DAM ワークフロー（写真撮影など）
-* 「インサイト」と呼ばれるアセットレポートと分析
-* 3次元資産管理
-* Connected Assets
-* Brand Portal
-* セルフサービスアクセス
-* 参照、検索、ダウンロード
-* コレクションとフォルダーの共有
-* 管理ツールとインターフェイス
-* スマートタグ付け
-* ビジュアル検索
-
-**Media Library**
-
-* 基本的なメタデータプロパティ
-* tag management
-* バージョン管理
-* 静的レンディション
-* プロジェクト，タスク，ワークフローオーサリング
-* アクティビティストリーム（タイムライン）
-* クエリビルダー（API）
-* Marketing Cloud統合
-* UIのカスタマイズと拡張
-* コメントと注釈
+[!DNL Experience Manager Assets] ドキュメントの [[!DNL Assets] ホームページで調査できる他の多くの使用例を満たします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja)。上記に挙げていない使用例は、メディアライブラリでは利用できません。
 
 >[!MORELIKETHIS]
 >
->* [Cloud Serviceの製品説明としてのExperience Manager](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 製品の説明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
 
