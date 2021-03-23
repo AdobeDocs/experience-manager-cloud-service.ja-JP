@@ -2,12 +2,12 @@
 title: Dynamic Media ビューアプリセットの適用
 description: Dynamic Media でのビューアプリセットの適用方法について説明します。
 feature: ビューアプリセット、ビューア
-topic: 開業医
+topic: 管理者、実業家
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 97%
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ビューアプリセットは、ユーザーのコンピューター画面やモバイルデバイスでのリッチメディアアセットの表示方法を決定する様々な設定のコレクションです。作成者は、管理者がアセットに対して作成した任意のビューアプリセットを適用できます。
 
-ビューアプリセットの管理、作成、並べ替え、削除をおこなう必要のある管理者は、[ビューアプリセットの管理](managing-viewer-presets.md)を参照してください。
+管理者で、ビューアプリセットを管理、作成、並べ替えおよび削除する必要がある場合は、[ビューアプリセットの管理](managing-viewer-presets.md)を参照してください。
 
 [ビューアプリセットの公開](managing-viewer-presets.md#publishing-viewer-presets)も参照してください。
 
