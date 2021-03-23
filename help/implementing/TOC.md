@@ -7,10 +7,10 @@ feature-set: Experience Manager
 feature: 開発者ツール
 role: 開発者、アーキテクト
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: d4aacc8d5f0b355cae9f79c10de496f26b3e395a
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 99%
+source-wordcount: '880'
+ht-degree: 98%
 
 ---
 
@@ -121,6 +121,7 @@ ht-degree: 99%
       + [モデルルーティング](developing/hybrid/routing.md)
       + [RemotePage コンポーネント](developing/hybrid/remote-page.md)
       + [AEM 内での外部 SPA の編集](developing/hybrid/editing-external-spa.md)
+      + [SPAの複合コンポーネント](developing/hybrid/composite-components.md)
       + [サーバーサイドレンダリング](developing/hybrid/ssr.md)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [ローンチの統合](developing/hybrid/launch-integration.md)
