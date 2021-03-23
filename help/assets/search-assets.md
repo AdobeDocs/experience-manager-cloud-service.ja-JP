@@ -4,10 +4,10 @@ description: フィルターパネルを使用した [!DNL Adobe Experience Mana
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: 0e5d49b8781ebe0c5785a14800bcaec223da809c
 workflow-type: tm+mt
-source-wordcount: '4741'
-ht-degree: 100%
+source-wordcount: '4755'
+ht-degree: 98%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 100%
 
 [!DNL Experience Manager Assets] は次の使用例をサポートしています。ここでは、これらの使用例での使用法、概念、設定、制限事項、トラブルシューティングについて説明します。
 
-| アセットの検索 | 設定と管理 | 検索結果の操作 |
+| アセットの検索 | 検索機能の設定と管理 | 検索結果の操作 |
 |---|---|---|
 | [基本検索](#searchbasics) | [検索インデックス](#searchindex) | [結果の並べ替え](#sort) |
-| [検索 UI について](#searchui) |  | [アセットのプロパティとメタデータの確認](#checkinfo) |
+| [検索 UI について](#searchui) | [テキスト抽出](#extracttextupload) | [アセットのプロパティとメタデータの確認](#checkinfo) |
 | [検索候補](#searchsuggestions) | [必須メタデータ](#mandatorymetadata) | [ダウンロード](#download) |
 | [検索結果および動作について](#searchbehavior) | [検索ファセットの変更](#searchfacets) | [メタデータの一括更新](#metadataupdates) |
-| [検索ランキングおよびブースト](#searchrank) | [テキスト抽出](#extracttextupload) | [スマートコレクション](#collections) |
-| [詳細検索：検索のフィルタリングと範囲](#scope) | [カスタム述語](#custompredicates) | [予期しない結果の理解とトラブルシューティング](#unexpectedresults) |
-| [他のソリューションおよびアプリから検索](#beyondomnisearch)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager デスクトップアプリ](#desktopapp)</li><li>[Adobe Stock 画像](#adobestock)</li><li>[Dynamic Media アセット](#dynamicmedia)</li></ul> |  |  |
+| [検索ランキングおよびブースト](#searchrank) | [カスタム述語](#custompredicates) | [スマートコレクション](#collections) |
+| [詳細検索：検索のフィルタリングと範囲](#scope) |  | [予期しない結果の理解とトラブルシューティング](#unexpectedresults) |
+| [他のソリューションおよびアプリから検索](#beyondomnisearch)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager デスクトップアプリ](#desktop-app)</li><li>[Adobe Stock 画像](#adobe-stock)</li><li>[Dynamic Media アセット](#search-dynamic-media-assets)</li></ul> |  |  |
 | [アセットセレクター](#assetselector) |  |  |
 | [制限事項](#tips)と[ヒント](#limitations) |  |  |
 | [例を使った説明](#samples) |  |  |
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 *Figure: Find similar images using the option in the card view*
 -->
 
-### Adobe Stock 画像 {#adobestock}
+### Adobe Stock 画像 {#adobe-stock}
 
 AEM のユーザーインターフェイス内から [Adobe Stock アセット](/help/assets/aem-assets-adobe-stock.md)を検索し、必要なアセットのライセンスを取得できます。オムニサーチバーに「`Location: Adobe Stock`」を追加します。また、フィルターパネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。
 
@@ -147,9 +147,9 @@ AEM のユーザーインターフェイス内から [Adobe Stock アセット](
 
 **[!UICONTROL フィルター]**&#x200B;パネルから **[!UICONTROL Dynamic Media／セット]**&#x200B;を選択して、Dynamic Media 画像をフィルタリングすることができます。画像セット、カルーセル、混在メディアセット、スピンセットなどのアセットがフィルタリングされて表示されます。
 
-### メタデータフィールドの特定の値を使用した検索 {#gqlsearch}
+### メタデータフィールドに特定の値を使用したGQL検索{#gql-search}
 
-タイトル、説明、作成者など、特定のメタデータフィールドの正確な値に基づいてアセットを検索できます。GQL 全文検索機能では、メタデータ値が検索クエリと完全に一致するアセットのみを取得できます。プロパティの名前（author や title など）と値は、大文字と小文字が区別されます。
+タイトル、説明、作成者など、メタデータフィールドの正確な値に基づいてアセットを検索できます。 GQL 全文検索機能では、メタデータ値が検索クエリと完全に一致するアセットのみを取得できます。プロパティの名前（作成者、タイトルなど）と値の大文字と小文字は区別されます。
 
 | メタデータフィールド | ファセット値と使用法 |
 |---|---|
@@ -175,7 +175,10 @@ AEM のユーザーインターフェイス内から [Adobe Stock アセット](
 | 画像の高さ | height:lowerbound..上の |
 | Person | person:John |
 
-path、limit、size および orderby の各プロパティを他のプロパティと OR で結合することはできません。
+`path`、`limit`、`size`、および`orderby`の各プロパティは、他のプロパティとORできません。
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 ユーザー生成プロパティのキーワードは、プロパティエディターにおけるフィールドラベルからスペースを削除して小文字で表記したものです。
 
@@ -197,19 +200,19 @@ Adobe Experience Manager（AEM）では、DAM リポジトリを他の様々な 
 
 クリエイティブプロフェッショナルは、Adobe Asset Link を使用して、サポートされている Adobe Creative Cloud アプリケーション内から、AEM Assets に保存されているコンテンツにアクセスできるようになりました。また、Photoshop、Illustrator、InDesign などの Creative Cloud アプリ内のパネルを使用して、アセットをシームレスに参照、検索、チェックアウトおよびチェックインすることができます。また、Asset Link を使用すると、視覚的に類似した結果を検索できます。ビジュアル検索の表示結果は、Adobe Sensei の機械学習アルゴリズムを活用しており、見た目に類似した画像を見つけやすくなっています。詳しくは、[Adobe Asset Link を使用したアセットの検索と参照](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)を参照してください。
 
-### AEM デスクトップアプリケーションでのアセットの検索 {#desktopapp}
+### Experience Managerデスクトップアプリ{#desktop-app}でのアセットの検索
 
 デスクトップアプリケーションを使用すると、クリエイティブプロフェッショナルは、ローカルデスクトップ（Windows または Mac）で AEM Assets を容易に検索および利用できるようになります。目的のアセットを Mac Finder や Windows エクスプローラーで表示し、デスクトップアプリケーションで開き、ローカルで変更することが容易にできます。変更内容は AEM に書き戻され、リポジトリ内に新しいバージョンが作成されます。1 つ以上のキーワード、ワイルドカード * および ？、AND 演算子を使用した基本検索がサポートされています。[デスクトップアプリケーションでのアセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。
 
-### Brand Portal でのアセットの検索 {#brandportal}
+### Brand Portal でのアセットの検索 {#brand-portal}
 
 マーケティング担当者や事業部門のユーザーは、Brand Portal を使用して、承認済みのデジタルアセットを、広範な社内チーム、パートナーおよび販売店と効率的かつ安全に共有します。詳しくは、[Brand Portal でのアセットの検索](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=ja)を参照してください。
 
-### Adobe Stock 画像の検索 {#adobestock-1}
+### Adobe Stock 画像の検索 {#adobe-stock2}
 
 AEM のユーザーインターフェイス内から Adobe Stock アセットを検索し、必要なアセットのライセンスを取得できます。オムニサーチフィールドに「`Location: Adobe Stock`」を追加します。また、**[!UICONTROL フィルター]**&#x200B;パネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。詳しくは、[AEM での Adobe Stock 画像の管理](/help/assets/aem-assets-adobe-stock.md#usemanage)を参照してください。
 
-### Dynamic Media アセットの検索 {#dynamicmedia}
+### Dynamic Media アセットの検索 {#search-dynamic-media-assets}
 
 **[!UICONTROL フィルター]**&#x200B;パネルから **[!UICONTROL Dynamic Media]**／**[!UICONTROL セット]**&#x200B;を選択して、Dynamic Media 画像をフィルタリングすることができます。画像セット、カルーセル、混在メディアセット、スピンセットなどのアセットがフィルタリングされて表示されます。Web ページの作成時に、作成者はコンテンツファインダー内でセットを検索できます。セットのフィルターは、ポップアップメニューで使用できます。
 
@@ -255,6 +258,7 @@ AEM 検索機能では、コレクションの検索とコレクション内の�
 * 検索結果からアセットのプロパティを選択すると、検索をキャンセルした後も、検索用語が [!DNL Experience Manager] に引き続き表示される場合があります。<!-- (CQ-4273540) -->
 * フォルダーまたはファイルとフォルダーを検索する場合、どのパラメーターでも検索結果を並べ替えることはできません。
 * オムニサーチバーで何も入力せずに `Return` を選択すると、[!DNL Experience Manager] はファイルのみのリストを返し、フォルダーは返しません。キーワードを使用せずに特定のフォルダーを検索した場合は、[!DNL Experience Manager] は結果をかえしません。
+* フォルダーに対してフルテキスト検索を実行できます。 検索が機能する検索語句を指定します。
 
 ビジュアル検索または類似検索には、次の制限事項があります。
 
