@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法を説明します。
 topic: Administrator
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: eb00eb6edaebc4dd0a16a99e1223bb806fa7abd9
 workflow-type: tm+mt
-source-wordcount: '3883'
-ht-degree: 65%
+source-wordcount: '4017'
+ht-degree: 57%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 65%
 
 新しいアーキテクチャでは、Experience Managerは主要なソースアセットを管理し、Dynamic Mediaと同期してアセットの処理と公開を行います。
 
-1. プライマリソースアセットが AEM にアップロードされると、Dynamic Media にレプリケートされます。その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
-1. レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスおよびプレビューできます（バイナリは AEM インスタンスに送り返されません）。
+1. 主要なソース資産がCloud ServiceとしてAdobe Experience Managerにアップロードされると、Dynamic Mediaに複製されます。 その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
+1. レンディションの生成後、Cloud ServiceとしてのExperience Managerは、リモートのDynamic Mediaレンディションに安全にアクセスし、プレビューできます(バイナリがCloud ServiceインスタンスとしてExperience Managerに送り返されることはありません)。
 1. コンテンツの公開と承認の準備が整ったら、Dynamic Mediaサービスはコンテンツを配信サーバーにプッシュして、CDNでコンテンツをキャッシュするようトリガーします。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
@@ -43,11 +43,11 @@ ht-degree: 65%
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-If you are upgrading AEM Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
+If you are upgrading Experience Manager as a Cloud Service Dynamic Media from 6.3 to 6.4 or 6.5 (which now includes the ability for zero downtime deployments), you are required to run the following curl command to migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
 >[!NOTE]
 >
->If you run your AEM instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
+>If you run your Experience Manager as a Cloud Service instance in compatibility mode--that is, you have the compatibility packaged installed--you do not need to run these commands.
 
 For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux curl command:
 
@@ -63,7 +63,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 <!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
-1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
+1. Cloud ServiceとしてのExperience Managerで、Experience ManagerをCloud Serviceのロゴとしてタップし、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側で、ツールアイコンをタップし、**[!UICONTROL Cloud Services/Dynamic Media設定]**&#x200B;をタップします。
 1. Dynamic Media構成ブラウザーページの左ペインで、**[!UICONTROL グローバル]**&#x200B;をタップします（**[!UICONTROL グローバル]**&#x200B;の左にあるフォルダーアイコンはタップまたは選択しないでください）。 次に、「**[!UICONTROL 作成]**」をタップします。
 1. **[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。この情報は、プロビジョニング用の電子メールにAdobeが提供します。 この電子メールを受信しなかった場合は、Adobeカスタマーケアにお問い合わせください。
@@ -93,8 +93,8 @@ To migrate any custom viewer presets and configurations that you have created fr
    |---|---|
    | 会社 | Dynamic Media アカウントの名前です。様々なサブブランド、部門、ステージング/実稼動環境用に複数のDynamic Mediaアカウントを持つ可能性があります。 |
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
-   | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**:URL/埋め込みリンクを指定する前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 一部のみの発行&#x200B;]**:アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用にDMS7に公開せずに、AEMに明示的に公開することもできます。 今後、このオプションでは、相互に排他的な関係で、AEMにアセットを公開し、Dynamic Mediaにアセットを公開する予定です。 つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用に AEM でのみアセットを公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために DMS7 で公開されません。 |
-   | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、AEM は、リモートの Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリは AEM インスタンスに送り返されません）。<br>独自の会社のサーバーまたは特別なサーバーを使用する特別な設定がない限り、Adobeはこの設定を指定のままにすることをお勧めします。 |
+   | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**:URL/埋め込みリンクを指定する前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 一部のみの発行&#x200B;]**:アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用にDMS7に公開することなく、Cloud ServiceとしてExperience Managerに明示的に公開することもできます。 今後は、Cloud ServiceとしてExperience Managerにアセットを公開し、お互いに排他的にDynamic Mediaにアセットを公開する予定です。 つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用のCloud Serviceとして、Experience Manager内のアセットのみをプレビュー用のアセットとして公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために、DMS7で公開されません。 |
+   | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションの生成後、Cloud ServiceとしてのExperience Managerは、リモートのDynamic Mediaレンディションに安全にアクセスし、プレビューできます(バイナリがCloud ServiceインスタンスとしてExperience Managerに送り返されることはありません)。<br>独自の会社のサーバーまたは特別なサーバーを使用する特別な設定がない限り、Adobeはこの設定を指定のままにすることをお勧めします。 |
    | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**：フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**：選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをDynamic Mediaと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」をタップします。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。*&#x200B;関連項目：[Dynamic Media のフォルダーレベルでの選択的公開の設定。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。ツールチップを介した継承されたショーの詳細なステータス。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:Dynamic Mediaと同期するために、このサブツリーの内容をすべて含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーに対して無効&#x200B;]**:このサブツリーのすべてをDynamic Mediaに同期から除外します。 |
 
    >[!NOTE]
@@ -111,19 +111,18 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    >[!IMPORTANT]
    >
-   >新しいDynamic Media設定がセットアップを完了すると、AEMインボックス内にステータス通知が表示されます。
+   >新しいDynamic Media構成のセットアップが完了すると、Cloud ServiceのインボックスとしてExperience Manager内にステータス通知が届きます。
    >
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
    > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
 
-1. Dynamic Mediaコンテンツを公開する前に安全にプレビューするには、AEM作成者インスタンスを「許可リスト」してDynamic Mediaに接続する必要があります。 このアクションを設定するには、次の手順を実行します。
+1. Dynamic Mediaコンテンツが公開される前に安全にプレビューできるように、Cloud ServiceとしてのExperience Managerはデフォルトでトークンベースの認証を使用します。 ただし、より多くのIPを「許可リスト」して、安全なプレビューコンテンツへのアクセスをユーザーに提供することもできます。 このアクションを設定するには、次の手順を実行します。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
-   * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定/アプリケーション設定/公開設定/Image Server]**&#x200B;をクリックします。
-
-   * Image Server 公開ページの「公開コンテキスト」ドロップダウンリストで、「**[!UICONTROL 画像サービングをテスト]**」を選択します。
+   * [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。資格情報とログインの詳細は、プロビジョニング時にAdobeから提供されました。 この情報がない場合は、Adobeカスタマーケアにお問い合わせください。
+   * ページの右上隅近くにあるナビゲーションバーで、**[!UICONTROL 設定]**/**[!UICONTROL アプリケーション設定]**/**[!UICONTROL 公開設定]**/**[!UICONTROL Image Server]**&#x200B;をタップします。
+   * Image Server公開ページの&#x200B;**[!UICONTROL 公開コンテキスト]**&#x200B;ドロップダウンリストで、「**[!UICONTROL 画像サービングをテスト]**」を選択します。
    * 「クライアントアドレスフィルター」で、**[!UICONTROL 「追加」]**&#x200B;をタップします。
-   * アドレスを有効（有効）にするには、チェックボックスをオンにし、（ディスパッチャーIPではなく）AEM作成者インスタンスのIPアドレスを入力します。
+   * アドレスを有効（有効）にするには、チェックボックスを選択し、Experience Manager作成者インスタンスのIPアドレスを入力します（ディスパッチャーIPではありません）。
    * 「**[!UICONTROL 保存]**」をクリックします。
 
 これで基本設定は完了です。Dynamic Media を使用する準備が整いました。
@@ -132,7 +131,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ### 新しい Dynamic Media 設定のトラブルシューティング {#troubleshoot-dm-config}
 
-新しいDynamic Media設定がセットアップを完了すると、AEMインボックス内にステータス通知が表示されます。 この通知は、以下の各インボックス画像に示すように、設定が成功したかどうかを知らせるものです。
+新しいDynamic Media構成のセットアップが完了すると、Cloud ServiceのインボックスとしてExperience Manager内にステータス通知が届きます。 この通知は、以下の各インボックス画像に示すように、設定が成功したかどうかを知らせるものです。
 
 ![Experience Managerインボックス成功](/help/assets/dynamic-media/assets/dmconfig-inbox-success.png)
 
@@ -142,7 +141,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 **新しい Dynamic Media 設定のトラブルシューティングをおこなうには：**
 
-1. AEM ページの右上隅付近にあるベルアイコンをタップし、「**[!UICONTROL すべて表示]**」をタップします。
+1. Experience Managerの右上隅近くにあるCloud Serviceページでベルのアイコンをタップし、「**[!UICONTROL 表示」「すべて]**」をタップします。
 1. インボックスページで成功通知をタップして、設定のステータスとログの概要を読み取ります。
 
    設定に失敗した場合は、次のスクリーンショットに示すような失敗通知をタップします。
@@ -168,7 +167,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 変更したパスワードは、**[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたときに保存されます。
 
-1. AEM で、AEM ロゴをタップして、グローバルナビゲーションコンソールにアクセスします。
+1. Cloud ServiceとしてのExperience Managerで、Experience ManagerをCloud Serviceのロゴとしてタップし、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側で、ツールアイコンをタップし、**[!UICONTROL Cloud Services/Dynamic Media設定をタップします。]**
 1. [Dynamic Media構成ブラウザ]ページの左ペインで、**[!UICONTROL グローバル]**&#x200B;をタップします。**[!UICONTROL グローバル]**&#x200B;の左にあるフォルダーアイコンをタップまたは選択しないでください。次に、「**[!UICONTROL 編集」をタップします。]**
 1. **[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページで「**[!UICONTROL パスワード]**」フィールドのすぐ下の「**[!UICONTROL パスワードを変更]**」をタップします。
@@ -225,8 +224,9 @@ Image Server 画面では、画像を配信するためのデフォルト設定�
 
 アプリケーションの一般設定ページを開くには、Dynamic Media Classic グローバルナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をクリックします。
 
-**[!UICONTROL サーバー -]**&#x200B;アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、WebサイトやアプリケーションのURL文字列の作成に使用されます。 これらの URL 呼び出しは、アカウントに固有です。AEM サポートによって明示的に指示されない限り、サーバー名は変更しないでください。**[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダにアップロードされたアセット、または元のアセットとは異なるファイル拡張子を持つアセットに影響を与えます。
-**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは最も厳格な置換規則です。置き換え画像は、元の画像と同じフォルダにアップロードし、元の画像と同じファイル拡張子を持つ必要があります。 これらの要件が満たされない場合は、重複する画像が作成されます。AEM との一貫性を維持するには、｢**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]**｣を常に選択します。**[!UICONTROL 任意のフォルダでベース名と拡張子が同じファイルを上書き]**  — 置き換え画像と元の画像のファイル拡張子が同じである必要があります。例えば、chair.jpgはchair.jpgを置き換える必要があり、chair.tifは置き換えません。 ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります.
+**[!UICONTROL サーバー -]**アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、WebサイトやアプリケーションのURL文字列の作成に使用されます。 これらの URL 呼び出しは、アカウントに固有です。Cloud ServiceサポートとしてExperience Managerからサーバー名を指示された場合を除き、サーバー名は一切変更しないでください。
+**[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダにアップロードされたアセット、または元のアセットとは異なるファイル拡張子を持つアセットに影響を与えます。
+**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは最も厳格な置換規則です。置き換え画像は、元の画像と同じフォルダにアップロードし、元の画像と同じファイル拡張子を持つ必要があります。 これらの要件が満たされない場合は、重複する画像が作成されます。Cloud ServiceーとしてのExperience Managerとの一貫性を維持するには、常に「現在のフォルダーでベース名と拡張子が同じ&#x200B;**[!UICONTROL を上書き」を選択します。]****[!UICONTROL 任意のフォルダでベース名と拡張子が同じファイルを上書き]**  — 置き換え画像と元の画像のファイル拡張子が同じである必要があります。例えば、chair.jpgはchair.jpgを置き換える必要があり、chair.tifは置き換えません。 ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります.
 **[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を元の画像とは別のフォルダにアップロードしたり、ファイル拡張子が異なるファイルをアップロードしたり、元のファイルと置き換えたりできます。 元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。**[!UICONTROL 初期設定のカラープロファイル]** - 詳細については、[カラーマネジメントの設定](#configuring-color-management)を参照してください。デフォルトでは、アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択した場合 15 個のレンディションが表示され、「**[!UICONTROL ビューア]**」を選択した場合 15 個のビューアプリセットが表示されます。この制限は増やすことができます。[表示する画像プリセット数を増減する](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)または[表示するビューアプリセット数を増減する](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)を参照してください。
 
 #### カラーマネジメントの設定 {#configuring-color-management}
@@ -273,7 +273,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 **サポートされる形式の MIME タイプを編集するには**
 
-1. AEM で、AEM ロゴをクリックしてグローバルナビゲーションコンソールにアクセスして、**[!UICONTROL 一般／CRXDE Lite]** をクリックします。
+1. Cloud ServiceとしてのExperience Managerで、Experience ManagerをCloud Serviceのロゴとしてクリックしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL 一般/CRXDE Lite]**&#x200B;をクリックします。
 1. 左側のパネルで、次の場所に移動します。
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -291,7 +291,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
    * 手順3 ～ 4を繰り返して、さらにMIMEタイプを編集します。
    * CRXDE Lite ページのメニューバーで、「**[!UICONTROL すべて保存]**」をクリックします。
 
-1. ページの左上隅で、「**[!UICONTROL CRXDE Lite]**」をタップして AEM に戻ります。
+1. ページの左上隅にある&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;をタップすると、Cloud ServiceとしてExperience Managerに戻ります。
 
 #### サポートされていない形式のカスタム MIME タイプの追加 {#adding-mime-types-for-unsupported-formats}
 
@@ -299,7 +299,7 @@ Experience Managerアセットで、サポートされていない形式のカ�
 
 **サポートされていない形式のカスタム MIME タイプを追加するには**
 
-1. AEM で、**[!UICONTROL ツール／運営／Web コンソール]**&#x200B;をタップします。
+1. Cloud ServiceとしてExperience Managerから、**[!UICONTROL ツール/操作/Webコンソールをタップします。]**
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -325,8 +325,8 @@ Experience Managerアセットで、サポートされていない形式のカ�
 
    この時点で、Adobe Experience Manager Web コンソール設定ページが開いているブラウザータブを閉じることができます。
 
-1. AEM コンソールを開いているブラウザータブに戻ります。
-1. AEM で、**[!UICONTROL ツール／一般／CRXDE Lite]** をタップします。
+1. Cloud Serviceコンソールとして開いているExperience Managerを持つブラウザタブに戻ります。
+1. Cloud ServiceとしてExperience Managerから、**[!UICONTROL ツール/一般/CRXDE Lite]**&#x200B;をタップします。
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -439,11 +439,11 @@ Scene7 アップロード接続を更新するには：:
 
 ### (Optional) Filtering assets for replication {#optional-filtering-assets-for-replication}
 
-In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. This workflow is necessary because the AEM publish servers also deliver the assets.
+In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your Experience Manager as a Cloud Service author environment to the Experience Manager as a Cloud Service publish node. This workflow is necessary because the Experience Manager as a Cloud Service publish servers also deliver the assets.
 
-However, in Dynamic Media deployments, because assets are delivered by way of the cloud service, there is no need to replicate those same assets to AEM publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the AEM publish nodes.
+However, in Dynamic Media deployments, because assets are delivered by way of the cloud service, there is no need to replicate those same assets to Experience Manager as a Cloud Service publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the Experience Manager as a Cloud Service publish nodes.
 
-The filters provide a way for you to *exclude* assets from being replicated to the AEM publish node.
+The filters provide a way for you to *exclude* assets from being replicated to the Experience Manager as a Cloud Service publish node.
 
 #### Using default asset filters for replication {#using-default-asset-filters-for-replication}
 
@@ -484,7 +484,7 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
 
 #### Customizing asset filters for replication {#customizing-asset-filters-for-replication}
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In Experience Manager as a Cloud Service, tap the Experience Manager as a Cloud Service logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
