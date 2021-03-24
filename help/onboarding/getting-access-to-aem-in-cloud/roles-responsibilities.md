@@ -2,15 +2,22 @@
 title: 役割と責任
 description: 役割と責任
 translation-type: tm+mt
-source-git-commit: 843e425e446a4e9ce140fe7d7111b69bd9f4545e
+source-git-commit: 34eecf5d210376c534ad3c1918db466226c2f9c5
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 21%
+source-wordcount: '500'
+ht-degree: 17%
 
 ---
 
 
 # Cloud ServiceとしてのAdobe Experience Manager:役割と責任{#roles-responsibilities}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_raci"
+>title="役割と責任"
+>abstract="Adobeは、Cloud ServiceとしてExperience Managerのプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供します。 ソリューションの開発と展開を可能な限り効率的に進めるためには、ここで説明するように、お客様とお客様がその役割を理解し、果たすことが重要です。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="適切な人、適切な役割の選択"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPIの調整"
 
 <br></br>
 Adobeは、Cloud ServiceとしてExperience Managerのプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供します。ソリューションの開発と展開を可能な限り効率的に進めるためには、お客様とお客様が、以下に説明するように、その役割を理解し、果たすことが重要です。
