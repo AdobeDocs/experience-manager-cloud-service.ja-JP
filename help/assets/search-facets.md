@@ -2,9 +2,9 @@
 title: 検索ファセット。
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 836e4e7fa727e350ef757984306b32df25921663
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Adobe Experience Manager (AEM) Assets の企業全体のデプロイメントに
 
 フルテキスト検索の場合は、`Fulltext` 述語をフォームに追加します。「プロパティの述語」を使用すると、ユーザーが指定した 1 つのプロパティと一致するアセットが検索されます。「オプションの述語」を使用すると、特定のプロパティについて 1 つ以上の値と一致するアセットが検索されます。「日付の範囲の述語」を追加すると、指定した期間内に作成されたアセットが検索されます。
 
-1. AEM のロゴをタップまたはクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 一般]**／**[!UICONTROL 検索フォーム]**&#x200B;に移動します。
+1. AEM のロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL 一般]**／**[!UICONTROL 検索フォーム]**&#x200B;の順に移動します。
 1. 検索フォームページで、「**[!UICONTROL アセット管理者の検索レール]**」を選択し、「**編集**」![aemassets_edit](assets/aemassets_edit.png) をタップします。
 
    ![アセット管理者の検索レールを探して選択](assets/assets_admin_searchrail.png)
