@@ -7,9 +7,9 @@ feature-set: Experience Manager
 feature: リリース情報
 role: リーダー、アーキテクト、開発者、データ・アーキテクト、データ・エンジニア、管理者、実業家
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 1d64fe00e9694721073fa6a47a9b2cbd82e5b8ae
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '122'
 ht-degree: 91%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 91%
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [リリースノート（2021.2.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [リリースノート（2021.1.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
    + 2020 {#2020}
       + [リリースノート（2020.12.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-12-0.md)
