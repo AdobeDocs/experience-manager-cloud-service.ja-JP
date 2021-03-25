@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
 description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の主な変更点。'
 translation-type: tm+mt
-source-git-commit: 6dc6445e4019664525629fe2204d255cfee37a81
+source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 61%
+source-wordcount: '757'
+ht-degree: 57%
 
 ---
 
@@ -31,14 +31,6 @@ ht-degree: 61%
 * 以前のバージョンの [!DNL Experience Manager] に用意されていたデフォルトの **[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローは使用できなくなりました。代わりに、デフォルトのアセット処理（レンディション、メタデータ抽出、インデックス作成用のテキスト抽出）のほとんどに対応できる、拡張性と可用性の高いサービスをアセットマイクロサービスが提供します。
    * 詳しくは、[アセットマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
    * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます。
-* メタデータの書き戻しはサポートされていません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)の[メタデータの書き戻しを参照してください。
-* Package Managerを使用してアップロードされるアセットは、[!DNL Assets]ユーザーインターフェイスの&#x200B;**[!UICONTROL アセットを再処理]**&#x200B;アクションを使用して手動で再処理する必要があります。
-* [!DNL Assets] は、アップロードされたアセットのMIMEタイプを自動的に検出しません。拡張子のないデジタルアセットや誤った拡張子のデジタルアセットは、希望どおりには処理されません。例えば、そのようなアセットをアップロードすると、何も発生しないか、誤った処理プロファイルがアセットに適用されることがあります。ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。
-* [!DNL Experience Manager] 」は、複合アセットのサブアセットを生成し [!DNL Cloud Service] ません。 [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)の[サブアセットの作成を参照してください。
-* [!DNL Assets] ホームページエクスペリエンスを使用できません。[[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照してください。
-* 重複資産の検出は、[ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作とは異なる動作をします。
-* 配置専用(FPO)レンディションの生成方法は、以前の[!DNL Experience Manager]バージョンとは異なります。 [ [!DNL Cloud Service]](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html)として [!DNL Experience Manager] のFPOレンディションを参照してください。
-* ZIPアーカイブをアップロードする場合、[!DNL Experience Manager]は[!DNL Cloud Service]としてアーカイブにバンドルされているアセットは抽出されません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)の[ZIP抽出を参照してください。
 
 アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、アセットリポジトリノードに下位互換性のある方法で保存されます。
 
@@ -50,9 +42,22 @@ Asset Microservicesは、Cloud Managerで管理されるお客様のプログラ
 
 コードとプロセス（アセットの取り込みや処理を含む）のエンドツーエンドの検証をおこなうには、コードの変更を[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)を使用してクラウド開発環境にデプロイし、アセットマイクロサービスの処理をすべて実行してテストします。
 
-## クラシック UI の削除 {#classic-ui}
 
-クラシックUIは、[!DNL Experience Manager]では[!DNL Cloud Service]として使用できなくなりました。 タッチ対応UIのみを使用できます。
+## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}との機能パリティ
+
+[!DNL Experience Manager] には、既存の機能が動作するための多くの新機能とパフォーマンスの高い方法が [!DNL Cloud Service] 導入されています。ただし、[!DNL Experience Manager] 6.5から[!DNL Cloud Service]に移行する場合、機能が異なるか、使用できないか、一部しか使用できないことに気づくかもしれません。 [!DNL Experience Manager]次に、そのような機能のリストを示します。
+
+| 機能または使用例 | [!DNL Experience Manager]のステータス([!DNL Cloud Service]) | コメント |
+|-----|-----|-----|
+| [重複資産の検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作が異なります。 | [ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作を参照してください。 |
+| [配置のみ(FPO)レンディション](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 動作が異なる |  |
+| メタデータの書き戻し | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)の[メタデータの書き戻しを参照 |
+| Package Managerを使用してアップロードしたアセットの処理 | 手動の介入が必要です。 | **[!UICONTROL アセットの再処理]**&#x200B;アクションを使用して手動で再処理します。 |
+| MIMEタイプの検出 | サポートされていない。 | 拡張子が付いていない、または正しくない拡張子を持つデジタルアセットをアップロードした場合は、必要に応じて処理されない場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。 |
+| 複合アセットのサブアセットの生成 | サポートされていない。 | 従属的な使用例は満たされません。 例えば、複数ページのPDFファイルの注釈は影響を受けます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)の[サブアセットの作成を参照してください。 |
+| ホームページ | サポートされていない。 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照 |
+| ZIPアーカイブからのアセットの抽出 | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)の[ZIP抽出を参照してください。 |
+| クラシック UI | サポートされていない。 | タッチ対応UIのみ使用できます。 |
 
 >[!MORELIKETHIS]
 >
