@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] へのデジタルアセットの追加。'
 translation-type: tm+mt
-source-git-commit: d66377444815123d7a4db3c5e9e04b2970841b13
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1950'
 ht-degree: 99%
 
 ---
@@ -116,7 +116,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >アセットインサイトによる [!DNL Adobe Analytics] でのインプレッション数やクリック数の追跡が有効になっている場合は、再生成されたアセット ID により、[!DNL Analytics] から取得したアセットのデータが無効になります。
 
-[!DNL Assets] で重複アセットを保持するには、「**[!UICONTROL 保持]**」をクリックします。アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をタップまたはクリックします。
+[!DNL Assets] で重複アセットを保持するには、「**[!UICONTROL 保持]**」をクリックします。アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をクリックします。
 
 ### ファイル名の処理と禁止文字 {#filename-handling}
 
