@@ -6,7 +6,7 @@ user-guide-description: Adobe Experience Manager Assets as a Cloud Service の�
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 96%
@@ -72,9 +72,9 @@ ht-degree: 96%
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントと GraphQL のヘッドレス配信](content-fragments/content-fragments-graphql.md)
-   + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
    + [インスタンスに対するコンテンツフラグメント機能の有効化](content-fragments/content-fragments-configuration-browser.md)
    + [コンテンツフラグメントモデル](content-fragments/content-fragments-models.md)
+   + [コンテンツフラグメントの管理](content-fragments/content-fragments-managing.md)
    + [バリエーション - フラグメントコンテンツのオーサリング](content-fragments/content-fragments-variations.md)
    + [コンテンツフラグメントを関連付けられたコンテンツ](content-fragments/content-fragments-assoc-content.md)
    + [メタデータ - フラグメントのプロパティ](content-fragments/content-fragments-metadata.md)
