@@ -2,10 +2,10 @@
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
 description: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ。
 translation-type: tm+mt
-source-git-commit: 482e98e36d9e26aed31fc95fbb66a5168af49cf1
+source-git-commit: b50bef1fd94396e9b9089933744a95f3f7d389f8
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 95%
+source-wordcount: '1396'
+ht-degree: 97%
 
 ---
 
@@ -29,65 +29,6 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 
 * サンプルコンテンツフラグメント構造（コンテンツフラグメントモデルと関連するコンテンツフラグメント）に基づくいくつかの[サンプル GraphQL クエリ](#graphql-sample-queries)
 
-## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
-
-AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
-
-* 結果が 1 つだけ必要な場合：
-   * モデル名（例：city）を使用します
-
-* 結果のリストを想定している場合：
-   * モデル名に `List` を付け加えます（例：`cityList`）
-   * [サンプルクエリ - すべての都市に関するすべての情報](#sample-all-information-all-cities)を参照してください
-
-* 論理和（OR）を使用する場合：
-   * ` _logOp: OR` を使用します
-   * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](#sample-all-persons-jobs-smith)を参照してください
-
-* 論理積（AND）も存在しますが、（多くの場合）暗黙的です
-
-* コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
-   * [サンプルクエリ - ある会社の CEO と従業員の詳細](#sample-full-details-company-ceos-employees)を参照してください
-
-* モデルのフィールドに加えて、システム生成フィールドがいくつかあります（前にアンダースコアが付いています）。
-
-   * コンテンツの場合：
-
-      * `_locale`：言語を表示します（言語マネージャーに基づく）
-         * [特定ロケールの複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-given-locale)を参照してください
-      * `_metadata`：フラグメントのメタデータを表示します
-         * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](#sample-metadata-awards-gb)を参照してください
-      * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
-         * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)を参照してください
-      * `_path` :リポジトリ内のコンテンツフラグメントへのパス
-         * [サンプルクエリ - 1 つの特定の都市フラグメント](#sample-single-specific-city-fragment)を参照してください
-      * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
-         * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照してください
-      * `_variation`：コンテンツフラグメント内の特定のバリエーションを表示します
-         * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](#sample-cities-named-variation)を参照してください
-   * 操作の場合：
-
-      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します, `STARTS_WITH`
-         * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
-         * [サンプルクエリ — 特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)を持つ`_path`開始が出現するすべての冒険を参照
-      * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
-         * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
-      * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
-         * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](#sample-all-cities-san-ignore-case)を参照してください
-
-
-
-
-
-
-
-
-
-
-* GraphQL のユニオン型がサポートされています
-
-   * `... on` を使用します
-      * [特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)を参照してください
 
 ## GraphQL - サンプルコンテンツフラグメント構造を使用したサンプルクエリ {#graphql-sample-queries-sample-content-fragment-structure}
 
