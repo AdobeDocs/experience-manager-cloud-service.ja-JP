@@ -3,9 +3,9 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法を説明します。
 topic: Administrator
 translation-type: tm+mt
-source-git-commit: 5772a62c52af9db3cf94f4a2fff66f540b43d010
+source-git-commit: 0e951053a690d091d9b6462138042fd0c59fe5d3
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4054'
 ht-degree: 56%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 56%
 
 1. 主要なソース資産がCloud ServiceとしてAdobe Experience Managerにアップロードされると、Dynamic Mediaに複製されます。 その時点で、Dynamic Media は、ビデオエンコーディングおよび画像の動的バリアントなど、すべてのアセットの処理とレンディションの生成を扱います。
 1. レンディションの生成後、Cloud ServiceとしてのExperience Managerは、リモートのDynamic Mediaレンディションに安全にアクセスし、プレビューできます(バイナリがCloud ServiceインスタンスとしてExperience Managerに送り返されることはありません)。
-1. コンテンツの公開と承認の準備が整ったら、Dynamic Mediaサービスはコンテンツを配信サーバーにプッシュして、CDNでコンテンツをキャッシュするようトリガーします。
+1. コンテンツの公開と承認の準備が整ったら、Dynamic Mediaサービスは配信サーバーにコンテンツをプッシュして、CDN(コンテンツ配信ネットワーク)でコンテンツをキャッシュするようトリガーします。
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
@@ -374,7 +374,9 @@ Adobeでは、PDF、PostScript®およびPSDファイルに対して、次の「
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+これらのパラメーターを更新するには、[サポートされる形式のMIMEタイプの編集](#editing-mime-types-for-supported-formats)を参照してください。
+
+[サポートされていない形式に対するMIMEタイプの追加](#adding-mime-types-for-unsupported-formats)も参照してください。
 
 #### Granite の一時的なワークフローキューの更新 {#updating-the-granite-transient-workflow-queue}
 
