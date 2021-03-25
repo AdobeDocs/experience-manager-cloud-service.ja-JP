@@ -2,10 +2,10 @@
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 translation-type: tm+mt
-source-git-commit: 8d1e5891b72a9d3587957df5b2553265d66896d5
+source-git-commit: b0bfcacb35f520045ee6ed6d427467490e012912
 workflow-type: tm+mt
-source-wordcount: '2901'
-ht-degree: 91%
+source-wordcount: '3233'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ AEM の GraphQL API を使用すると、ヘッドレス CMS 実装の JavaScrip
 >
 >GraphQLは現在、Adobe Experience Manager(AEM)の2つの（個別の）シナリオでCloud Serviceとして使用されています。
 >
->* [AEMコマースは、GraphQLを介してコマースプラットフォームのデータを使用します](/help/commerce-cloud/architecture/magento.md)。
+>* [AEMコマースは、GraphQLを介してコマースプラットフォームのデータを使用し](/help/commerce-cloud/architecture/magento.md)、
 >* AEMコンテンツフラグメントは、AEM GraphQL API（標準のGraphQLに基づいてカスタマイズされた実装）と連携して、アプリケーションで使用するために構造化されたコンテンツを配信します。
 
 
@@ -167,30 +167,10 @@ AEM で GraphQL クエリを有効にするには、`/content/cq:graphql/global/
 * バニティー URL：
    * エンドポイントの簡略版 URL を割り当てます
    * オプション
-* OSGi 設定：
-   * GraphQL サーブレットの設定：
-      * エンドポイントへのリクエストを処理します
-      * 設定名は `org.apache.sling.graphql.core.GraphQLServlet` です。OSGi ファクトリ設定として提供する必要があります
-      * `sling.servlet.extensions` を `[json]` に設定する必要があります
-      * `sling.servlet.methods` を `[GET,POST]` に設定する必要があります
-      * `sling.servlet.resourceTypes` を `[graphql/sites/components/endpoint]` に設定する必要があります
-      * 必須
-   * スキーマサーブレットの設定：
-      * GraphQL スキーマを作成します
-      * 設定名は `com.adobe.aem.graphql.sites.adapters.SlingSchemaServlet` です。OSGi ファクトリ設定として提供する必要があります
-      * `sling.servlet.extensions` を `[GQLschema]` に設定する必要があります
-      * `sling.servlet.methods` を `[GET]` に設定する必要があります
-      * `sling.servlet.resourceTypes` を `[graphql/sites/components/endpoint]` に設定する必要があります
-      * 必須
-   * CSRF の設定：
-      * エンドポイントのセキュリティ保護
-      * 設定名は `com.adobe.granite.csrf.impl.CSRFFilter` です
-      * 除外するパスの既存リスト（`filter.excluded.paths`）に `/content/cq:graphql/global/endpoint` を追加します
-      * 必須
 
 ### サポートパッケージ {#supporting-packages}
 
-GraphQL エンドポイントの設定を簡単にするために、アドビは [GraphQL サンプルプロジェクト](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-sample.zip)パッケージを提供します。
+GraphQLエンドポイントの設定を簡単にするために、Adobeは[GraphQL Sample Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip)パッケージを提供します。
 
 このアーカイブには、[必要な追加設定](#additional-configurations-graphql-endpoint)と [GraphQL エンドポイント](#enabling-graphql-endpoint)の両方が含まれています。プレーン AEM インスタンスにインストールすると、完全に機能する GraphQL エンドポイントが `/content/cq:graphql/global/endpoint` に表示されます。
 
@@ -218,7 +198,7 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 
 ### AEM GraphiQL インターフェイスのインストール {#installing-graphiql-interface}
 
-GraphiQL ユーザーインターフェイスは、専用のパッケージ（[GraphiQL Content Package v0.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphiql-0.0.4.zip)パッケージ）で AEM にインストールできます。
+GraphiQLユーザーインターフェイスは、専用のパッケージを使用してAEMにインストールできます。[GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)パッケージ。
 
 <!--
 See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
@@ -273,6 +253,14 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 
 AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
 
+<!--
+>[!NOTE]
+>
+>AEM does not use the concept of namespacing for Content Fragment Models. 
+>
+>If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
+-->
+
 Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を確保できます。
 
 例えば、次のようになります。
@@ -292,6 +280,16 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 >REST API を使用してコンテンツフラグメントモデルの一括更新をおこなう場合などには、この点に留意することが大切です。
 
 スキーマは、GraphQL クエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子 `GQLschema` で呼び出されることに対処します。例えば、`/content/cq:graphql/global/endpoint.GQLschema` で単純な `GET` リクエストを実行すると、`text/x-graphql-schema;charset=iso-8859-1` の Content-type を持つスキーマが出力されます。
+
+### スキーマの生成 — 未公開モデル{#schema-generation-unpublished-models}
+
+コンテンツフラグメントがネストされている場合、親のコンテンツフラグメントモデルは発行されるが、参照されているモデルは発行されない可能性があります。
+
+>[!NOTE]
+>
+>AEM UIはこのような状況を防ぎますが、プログラムやコンテンツパッケージを使用して公開する場合は、この状況が発生する可能性があります。
+
+この場合、AEMは親コンテンツフラグメントモデルに対して&#x200B;*不完全な*&#x200B;スキーマを生成します。 これは、未公開のモデルに依存するフラグメント参照がスキーマから削除されることを意味します。
 
 ## フィールド {#fields}
 
@@ -313,7 +311,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
+| 1行テキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
 | 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します。 |
 | 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
 | ブール型 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
@@ -517,13 +515,73 @@ query {
 
 その他の例については、以下を参照してください。
 
-* [AEM 用 GraphQL の拡張機能](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-extensions)の詳細
+* [AEM 用 GraphQL の拡張機能](#graphql-extensions)の詳細
 
 * [このサンプルコンテンツおよび構造を使用したサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
    * さらに、サンプルクエリ用に準備されている[サンプルコンテンツおよび構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 
 * [WKND プロジェクトに基づいたサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## AEM 用の GraphQL - 拡張機能の概要 {#graphql-extensions}
+
+AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様に従います。AEM での GraphQL クエリには、次のような拡張機能があります。
+
+* 結果が 1 つだけ必要な場合：
+   * モデル名（例：city）を使用します
+
+* 結果のリストを想定している場合：
+   * モデル名に `List` を付け加えます（例：`cityList`）
+   * [サンプルクエリ - すべての都市に関するすべての情報](#sample-all-information-all-cities)を参照してください
+
+* 論理和（OR）を使用する場合：
+   * ` _logOp: OR` を使用します
+   * [サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物](#sample-all-persons-jobs-smith)を参照してください
+
+* 論理積（AND）も存在しますが、（多くの場合）暗黙的です
+
+* コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
+   * [サンプルクエリ - ある会社の CEO と従業員の詳細](#sample-full-details-company-ceos-employees)を参照してください
+
+* モデルのフィールドに加えて、システム生成フィールドがいくつかあります（前にアンダースコアが付いています）。
+
+   * コンテンツの場合：
+
+      * `_locale`：言語を表示します（言語マネージャーに基づく）
+         * [特定ロケールの複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-given-locale)を参照してください
+      * `_metadata`：フラグメントのメタデータを表示します
+         * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](#sample-metadata-awards-gb)を参照してください
+      * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
+         * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)を参照してください
+      * `_path` :リポジトリ内のコンテンツフラグメントへのパス
+         * [サンプルクエリ - 1 つの特定の都市フラグメント](#sample-single-specific-city-fragment)を参照してください
+      * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
+         * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照してください
+      * `_variation`：コンテンツフラグメント内の特定のバリエーションを表示します
+         * [サンプルクエリ - 名前付きバリエーションを持つすべての都市](#sample-cities-named-variation)を参照してください
+   * 操作の場合：
+
+      * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します, `STARTS_WITH`
+         * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
+         * [サンプルクエリ — 特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)を持つ`_path`開始が出現するすべての冒険を参照
+      * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
+         * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
+      * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
+         * [サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）](#sample-all-cities-san-ignore-case)を参照してください
+
+
+
+
+
+
+
+
+
+
+* GraphQL のユニオン型がサポートされています
+
+   * `... on` を使用します
+      * [特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)を参照してください
 
 <!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
