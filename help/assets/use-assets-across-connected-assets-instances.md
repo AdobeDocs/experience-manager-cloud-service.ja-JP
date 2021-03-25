@@ -3,10 +3,10 @@ title: Connected Assets を使用した [!DNL Sites] での DAM アセットの�
 description: リモート [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f3c02cc79d5d56b67224761efd6a70ae597fe7fe
+source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 98%
+source-wordcount: '2898'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 98%
 
 作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターで使用します。ドキュメントが `Download` コンポーネントに追加され、画像が `Image` コンポーネントに追加されます。作成者は、デフォルトの `Download` または `Image` コンポーネントを拡張するカスタム [!DNL Experience Manager] コンポーネントにもリモートアセットを追加します。サポートされる形式は以下の通りです。
 
-* **画像形式**：[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja)がサポートする形式。[!DNL Dynamic Media] 画像はサポートされていません。
+* **画像形式**：[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja)がサポートする形式。
 * **ドキュメント形式**：詳しくは、[サポートされるドキュメント形式](file-format-support.md#document-formats)を参照してください。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
@@ -111,6 +111,23 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 ![設定済み Connected Assets の接続テスト [!DNL Sites]](assets/connected-assets-multiple-config.png)
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
+
+## [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメント間の接続の設定 {#sites-dynamic-media-connected-assets}
+
+[!DNL Sites]展開と[!DNL Dynamic Media]展開の間の接続を設定すると、Webページ作成者がWebページで[!DNL Dynamic Media]画像を使用できるようになります。 Webページのオーサリング時に、リモートアセットとリモート[!DNL Dynamic Media]デプロイメントの使用経験は同じです。 これにより、接続されたアセット機能（スマート切り抜きや画像プリセットなど）を使用した[!DNL Dynamic Media]機能を利用できます。
+
+この接続を設定するには、次の手順に従います。
+
+1. 上記の説明に従って、接続されたアセットの設定を作成します。 ダイアログボックスで「**[!UICONTROL 接続されたアセット]**&#x200B;のオリジナルのレンディションを取得」チェックボックスを選択します。[!DNL Dynamic Media]
+
+1. ローカル[!DNL Sites]およびリモート[!DNL Assets]の展開に対して[!DNL Dynamic Media]を構成します。 [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services)の指示に従います。
+
+   * すべての設定で同じ会社名を使用します。
+   * ローカル[!DNL Sites]の[!UICONTROL Dynamic Media同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。 Sites展開で必要なのは、[!DNL Dynamic Media]アカウントへの読み取り専用アクセスのみです。
+   * ローカル[!DNL Sites]の「**[!UICONTROL アセットを発行]**」オプションで、「**[!UICONTROL 一部のみの発行]**」を選択します。 「**[!UICONTROL すべてのコンテンツを同期]**」は選択しないでください。
+   * リモート[!DNL Assets]デプロイメントの場合、[!UICONTROL Dynamic Media同期モード]で、「**[!UICONTROL デフォルトで有効]**」を選択します。
+
+1. Image Coreコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)で[[!DNL Dynamic Media] サポートを有効にします。 この機能を使用すると、ローカル[!DNL Sites]展開のWebページの作成者が[!DNL Dynamic Media]画像を使用する場合に、デフォルトの画像コンポーネントで[!DNL Dynamic Media]画像を表示できます。
 
 ## リモートアセットの使用 {#use-remote-assets}
 
@@ -184,7 +201,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * ローカルアセットは、リモートデプロイメントの元のアセットと同期されません。DAM デプロイメント上での編集、削除または権限の失効は、ローカル側には一切伝播されません。
 * ローカルアセットは読み取り専用のコピーです。[!DNL Experience Manager] コンポーネントは、アセットに対して非破壊編集をおこないます。その他のいかなる編集もできません。
 * ローカルで取得されたアセットは、オーサリング用途でのみ使用できます。アセット更新ワークフローの適用やメタデータの編集はおこなえません。
-* 画像とリストに表示されるドキュメント形式のみがサポートされます。[!DNL Dynamic Media]、アセット、コンテンツフラグメントおよびエクスペリエンスフラグメントはサポートされません。
+* 画像とリストに表示されるドキュメント形式のみがサポートされます。コンテンツフラグメントとエクスペリエンスフラグメントはサポートされていません。
 * Adobe [!DNL Experience Manager] はメタデータスキーマを取得しません。つまり、取得されたすべてのメタデータが表示されない可能性があります。スキーマがを別途更新されると、すべてのプロパティが表示されます。
 * [!DNL Sites] 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズするための API サポートはありません。
