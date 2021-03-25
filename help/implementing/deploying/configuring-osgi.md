@@ -3,9 +3,9 @@ title: Cloud ServiceとしてのAdobe Experience Manager用のOSGiの設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: デプロイ
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2737'
 ht-degree: 59%
 
 ---
@@ -113,7 +113,7 @@ OSGi では、インライン OSGi 設定値を使用する場合が多くあり
 * 値はコードデプロイメントに暗黙的に結び付けられる
 * デプロイメントに関する検討事項や調整を追加する必要がない
 
-OSGi設定値を定義する場合は常に、インライン値を持つ開始で、必要に応じてシークレット設定または環境固有の設定を選択する必要があります。
+OSGi設定値を定義する場合は常に、インライン値を持つ開始を指定し、必要に応じて、シークレット設定または環境固有の設定を選択する必要があります。
 
 ### 非シークレットの環境固有の設定値を使用する場合 {#when-to-use-non-secret-environment-specific-configuration-values}
 
@@ -195,6 +195,10 @@ use $[env:ENV_VAR_NAME]
 
 お客様は、カスタムコードに関連するOSGI設定プロパティに対してのみ、この手法を使用する必要があります。Adobe定義のOSGI設定を上書きする場合は使用しないでください。
 
+>[!NOTE]
+>
+>[repoint文](/help/implementing/deploying/overview.md#repoinit)ではプレースホルダーを使用できません。
+
 ### シークレットの設定値 {#secret-configuration-values}
 
 OSGi 設定では、環境ごとに定義するシークレットにプレースホルダーを割り当てる必要があります。
@@ -252,7 +256,7 @@ OSGi プロパティで、作成者とパブリッシュで異なる値が必要
 
 ### 設定例 {#configuration-examples}
 
-次の例では、ステージ環境とprod環境に加えて、3つの開発があると仮定します。
+以下の例では、ステージ環境とprod環境に加えて、3つの開発があると仮定します。
 
 **例 1**
 
