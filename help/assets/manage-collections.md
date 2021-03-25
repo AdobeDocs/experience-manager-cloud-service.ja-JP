@@ -4,7 +4,7 @@ description: Adobe Experience Manager Assets におけるコレクションの�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
 workflow-type: tm+mt
 source-wordcount: '2397'
 ht-degree: 97%
@@ -184,7 +184,7 @@ Adobe Experience Manager Assets を使用すると、多数のコレクション
 
 >[!NOTE]
 >
->一括編集メソッドはコレクションで使用可能なアセットに対して機能します。フォルダー全体で使用可能なアセットまたは共通の基準に一致するアセットについては、[検索後にメタデータを一括更新する](/help/assets/search-assets.md#metadataupdates)ことが可能です。
+>一括編集メソッドはコレクションで使用可能なアセットに対して機能します。フォルダー全体で使用可能なアセットまたは共通の基準に一致するアセットについては、[検索後にメタデータを一括更新する](/help/assets/search-assets.md#metadata-updates)ことが可能です。
 
 1. コレクションコンソールで、編集するコレクションを選択します。
 1. ツールバーで「**[!UICONTROL プロパティ]**」をタップまたはクリックして、選択したコレクションの[!UICONTROL プロパティ]ページを開きます。
