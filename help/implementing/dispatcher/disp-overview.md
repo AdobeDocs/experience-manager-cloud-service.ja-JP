@@ -3,10 +3,10 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 100%
+source-wordcount: '4113'
+ht-degree: 75%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 100%
 ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。Dispatcher について詳しくは、[AEM Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
 
 >[!NOTE]
->Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
+>Windowsユーザーは、DockerをサポートするWindows 10 Professionalまたは他のディストリビューションを使用する必要があります。 これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
 
 ## Dispatcher ツール {#dispatcher-sdk}
 
 Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下を提供します。
 
-* Dispatcher 用の Maven プロジェクトにインクルードする設定ファイルを含んだバニラファイル構造。
-* AEM as a Cloud Service でサポートされているディレクティブのみ Dispatcher 設定に含まれていることを顧客が検証するためのツール。また、ツールでは、Apache を開始が正常に起動できるように、構文が正しいかどうかも検証されます。
-* Dispatcher をローカルで実行する Docker イメージ。
+* ディスパッチャー用のMavenプロジェクトに含める設定ファイルを含むバニラファイル構造です。
+* Cloud ServiceがサポートするディレクティブとしてAEMのみがディスパッチャー設定に含まれていることを検証するツール。        また、ツールでは、Apache を開始が正常に起動できるように、構文が正しいかどうかも検証されます。
+* ディスパッチャーをローカルに表示するDockerイメージ。
 
 ## ツールのダウンロードと抽出 {#extracting-the-sdk}
 
-[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に含まれている Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルで zip ファイルとしてダウンロードできます。新しい Dispatcher ツールバージョンで利用可能な新しい設定は、そのバージョン以降の AEM が実行されているクラウド環境にデプロイするときに使用できます。
+[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に含まれている Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルで zip ファイルとしてダウンロードできます。新しいディスパッチャーツールのバージョンで利用できる新しい設定は、そのバージョンのAEMを実行するクラウド環境に、クラウド内以降でデプロイするために使用できます。
 
 SDK を解凍します。SDK には、macOS／Linux と Windows の両方の Dispatcher ツールがバンドルされています。
 
-**macOS／Linux の場合**：Dispatcher ツールのアーティファクトを実行可能にして実行します。保存先のディレクトリ（`version` は Dispatcher ツールのバージョン）の下にある、Dispatcher ツールファイルが自己解凍されます。
+**macOS/Linuxの場合**、ディスパッチャーツールのアーティファクトを実行可能にして実行します。これは、保存先のディレクトリの下にあるディスパッチャーツールファイルを自己抽出します（`version`は、ディスパッチャーツールのバージョンです）。
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -47,7 +47,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## ファイル構造 {#file-structure}
 
-プロジェクトの Dispatcher サブフォルダーの構造を以下に示します。これを、Maven プロジェクトの Dispatcher フォルダーにコピーする必要があります。
+プロジェクトのDispatcherサブフォルダーの構造は以下のとおりで、mavenプロジェクトのDispatcherフォルダーにコピーする必要があります。
 
 ```bash
 ./
@@ -104,7 +104,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 >[!NOTE]
 >
->現時点では、サイト固有のファイルではなく、単一の書き換えファイルを使用する必要があります。ファイルサイズは 1 MB 未満にする必要があります。
+>現在、サイト固有のファイルではなく、単一の書き換えファイルを使用する必要があります。 原則として、カスタマイズ可能なファイルの内容の合計は1 MB未満である必要があります。
 
 * `conf.d/variables/custom.vars`
 
@@ -112,11 +112,11 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.d/variables/global.vars`
 
-このファイルは、`dispatcher_vhost.conf` ファイル内からインクルードされます。このファイルで Dispatcher の変更とログレベルの書き換えができます。
+このファイルは、`dispatcher_vhost.conf` ファイル内からインクルードされます。このファイルでは、ディスパッチャーを変更し、ログレベルを書き換えることができます。
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-これらのファイルは 1 つ以上持つことができます。ファイルにはホスト名と一致するファームが含まれ、Dispatcher モジュールに異なるルールで各ファームを処理することを可能にします。ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。`.farm` ファイルから、フィルター、キャッシュルールなどその他のファイルがインクルードされます。
+これらのファイルを1つ以上持つことができます。また、これらのファイルにはホスト名と一致するファームが含まれ、ディスパッチャーモジュールで各ファームを異なる規則で処理できます。 ファイルは `available_farms` ディレクトリ内に作成され、`enabled_farms` ディレクトリ内のシンボリックリンクで有効になります。`.farm` ファイルから、フィルター、キャッシュルールなどその他のファイルがインクルードされます。
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -134,13 +134,13 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 このファイルは、`.farm` ファイル内からインクルードされます。グロブマッチングで一致するホスト名または URI パスのリストが含まれます。これにより、リクエストの処理に使用するバックエンドが決まります。
 
-上記のファイルは、以下に示す不変設定ファイルを参照します。不変設定ファイルに対する変更は、クラウド環境の Dispatcher によって処理されません。
+上記のファイルは、以下に示す不変設定ファイルを参照します。不変ファイルに対する変更は、Cloud環境のディスパッチャーは処理しません。
 
 **不変設定ファイル**
 
 これらのファイルは基本フレームワークの一部であり、標準とベストプラクティスを補強します。ファイルをローカルで変更または削除しても、クラウドインスタンスに転送されず、デプロイメントに影響を与えないので、これらのファイルは不変と見なされます。
 
-上記のファイルは、以下に示す不変ファイルを参照し、その後に追加のステートメントまたはオーバーライドを参照することをお勧めします。Dispatcher 設定をクラウド環境にデプロイすると、ローカル開発で使用されたバージョンに関係なく、不変ファイルの最新バージョンが使用されます。
+上記のファイルは、以下に示す不変ファイルを参照し、その後に追加のステートメントまたはオーバーライドを参照することをお勧めします。クラウド環境にディスパッチャー設定をデプロイすると、ローカル開発で使用されたバージョンに関係なく、不変ファイルの最新バージョンが使用されます。
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -156,7 +156,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.dispatcher.d/available_farms/default.farm`
 
-サンプルの Dispatcher ファームが含まれています。ユーザー自身のファームの場合は、このファイルのコピーを作成してカスタマイズし、`conf.d/enabled_farms` に移動して、カスタマイズしたコピーのシンボリックリンクを作成します。
+サンプルのディスパッチャーファームが含まれます。 ユーザー自身のファームの場合は、このファイルのコピーを作成してカスタマイズし、`conf.d/enabled_farms` に移動して、カスタマイズしたコピーのシンボリックリンクを作成します。
 
 * `conf.dispatcher.d/cache/default_invalidate.any`
 
@@ -172,7 +172,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.dispatcher.d/dispatcher.any`
 
-基本フレームワークの一部です。Dispatcher ファームのインクルード方法を説明するために使用します。
+基本フレームワークの一部。ディスパッチャーファームを含める方法を示すために使用されます。
 
 * `conf.dispatcher.d/filters/default_filters.any`
 
@@ -188,7 +188,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 >[!NOTE]
 >
->AEM as a Cloud Service の Maven アーキタイプは、同じ Dispatcher 設定ファイル構造を生成します。
+>Cloud ServicemavenアーキタイプとしてのAEMでは、同じディスパッチャー設定ファイル構造が生成されます。
 
 以下では、内部リリースのデプロイ時に Cloud Manager で関連付けられた品質ゲートを渡せるように、設定をローカルで検証する方法について説明します。
 
@@ -198,7 +198,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 次のように呼び出します：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-このツールでは、パターン `conf.d/enabled_vhosts/*.vhost` に一致するすべてのファイルをスキャンして、AEM as a Cloud Service でサポートされている適切なディレクティブが Dispatcher 設定で使用されているかどうかを検証します。Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
+パターン`conf.d/enabled_vhosts/*.vhost`のすべてのファイルをスキャンし、AEMがクラウドサービスとしてサポートする適切なディレクティブをディスパッチャーの設定が使用しているかどうかを検証します。 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
 
 ```
 $ validator allowlist
@@ -340,11 +340,12 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 **非推奨の設定レイアウトを検出したので互換モードを有効にします**
 
-このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
+このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。後方向の
+の互換性を確認する場合は、新しいレイアウトに切り替える必要があります。
 
-## Apache httpd を起動するための Dispatcher 設定構文のローカル検証 {#local-validation}
+## Apache httpdが開始{#local-validation}を実行できるように、ディスパッチャー設定構文のローカル検証
 
-サポートされているディレクティブのみ Dispatcher モジュール設定に含まれていることがわかったら、Apache を起動できるように、構文が正しいことを確認してください。このテストをおこなうには、Docker をローカルにインストールする必要があります。AEM が動作している必要はありません。
+ディスパッチャーモジュール設定に、サポートされているディレクティブのみが含まれていると判断したら、Apacheが開始できるように構文が正しいことを確認する必要があります。 このテストをおこなうには、Docker をローカルにインストールする必要があります。AEM が動作している必要はありません。
 
 `validate.sh` スクリプトを次のように使用します。
 
@@ -371,7 +372,7 @@ Phase 2 finished
 
 1. 前の節で説明したバリデーターを実行して、サポートされているディレクティブのみ含まれていることを確認します。設定が有効でない場合、スクリプトは失敗します。
 2. Apache httpd を起動できるように、`httpd -t command` を実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています。
-3. 「[ファイル構造](#file-structure)」節で説明されているようにで不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。これは、Dispatcher ツールバージョン 2.0.36 を含む AEM SDK バージョン v2021.1.4738 で導入された新しいチェックです。この更新前には、これらの不変ファイルのローカル SDK での変更がクラウド環境にも適用されると誤って想定されていました。
+3. [ファイル構造セクション](#file-structure)で説明されているように不変にする予定のディスパッチャーSDK設定ファイルのサブセットが変更されていないことを確認します。 これは、Dispatcher ツールバージョン 2.0.36 を含む AEM SDK バージョン v2021.1.4738 で導入された新しいチェックです。この更新前には、これらの不変ファイルのローカル SDK での変更がクラウド環境にも適用されると誤って想定されていました。
 
 Cloud Manager によるデプロイ中に、`httpd -t syntax` のチェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
@@ -379,7 +380,7 @@ Cloud Manager によるデプロイ中に、`httpd -t syntax` のチェックも
 
 Apache と Dispatcher の設定をローカルでテストすることもできます。前述のように、Docker をローカルにインストールし、設定が検証に合格する必要があります。
 
-すべての Dispatcher 設定ファイルを含んだフォルダーを出力する `-d` パラメーターを使用して、検証ツール（前述の `validator.sh` とは異なります）を実行します。次に、そのフォルダーを引数として渡して `docker_run.sh` スクリプトを実行します。Dispatcher エンドポイントを公開するためのポート番号（ここでは 8080）を指定することで、Docker コンテナが起動され、所定の設定で Dispatcher が実行されます。
+すべてのディスパッチャー設定ファイルを含むフォルダーを出力する`-d`パラメーターを使用して、検証ツールを実行します（前述の`validator.sh`とは異なる点に注意してください）。 次に、そのフォルダーを引数として渡して `docker_run.sh` スクリプトを実行します。ポート番号を指定する（次を参照）。8080)を使用してディスパッチャーエンドポイントを公開するために、Dockerコンテナが開始され、設定と共にディスパッチャーを実行します。
 
 ```
 $ validator full -d out src/dispatcher
@@ -394,11 +395,11 @@ Starting httpd server
 ...
 ```
 
-これにより、コンテナ内の Dispatcher が開始し、そのバックエンドは、ローカルの Mac OS マシンのポート 4503 で実行される AEM インスタンスを指すようになります。
+これは、コンテナ内のディスパッチャーを開始し、バックエンドが、ローカルのMac OSマシンのポート4503で実行されているAEMインスタンスを指しています。
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-次の方法を使用して、Dispatcher モジュールのログ出力を増やし、`RewriteRule` 評価の結果をローカル環境とクラウド環境の両方で確認できます。
+次の方法を使用して、ディスパッチャーモジュールのログ出力を増やし、`RewriteRule`評価の結果をローカルとクラウドの両方の環境で確認できます。
 
 これらのモジュールのログレベルは、変数の `DISP_LOG_LEVEL` と `REWRITE_LOG_LEVEL` によって定義されます。これらは、`conf.d/variables/global.vars` ファイルに設定できます。関連する箇所は以下のとおりです。
 
@@ -424,13 +425,13 @@ Starting httpd server
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+ディスパッチャーをローカルで実行すると、ログは端末出力に直接出力されます。 ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
 
-クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
+クラウド環境のログは、Cloud Managerで利用可能なログサービスを通じて公開されます。
 
 ## 環境ごとに異なる Dispatcher 設定 {#different-dispatcher-configurations-per-environment}
 
-現時点では、すべての AEM as a Cloud Service 環境に同じ Dispatcher 設定が適用されます。ランタイムには、現在の実行モード（dev、stage または prod）と定義を含む環境変数 `ENVIRONMENT_TYPE` が含まれます。定義は、`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`、または `ENVIRONMENT_PROD` のいずれかです。Apache 設定では、変数を式に直接使用できます。または、定義を使用してロジックをビルドできます。
+現在、同じディスパッチャー設定が、Cloud Service環境としてすべてのAEMに適用されます。 ランタイムには、現在の実行モード（dev、stage または prod）と定義を含む環境変数 `ENVIRONMENT_TYPE` が含まれます。定義は、`ENVIRONMENT_DEV`、`ENVIRONMENT_STAGE`、または `ENVIRONMENT_PROD` のいずれかです。Apache 設定では、変数を式に直接使用できます。または、定義を使用してロジックをビルドできます。
 
 ```
 # Simple usage of the environment variable
@@ -497,11 +498,12 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Dispatcher 設定の AMS から AEM as a Cloud Service への移行に関するガイドライン
 
-Dispatcher 設定の構造は、Managed Services と AEM as a Cloud Service との間に違いがあります。以下に、AMS Dispatcher の設定バージョン 2 から AEM as a Cloud Service への移行方法を順を追って示します。
+ディスパッチャーの設定構造は、Cloud ServiceとしてのManaged ServicesとAEMでは異なります。 以下に、AMS Dispatcher の設定バージョン 2 から AEM as Cloud Service への移行方法を順を追って示します。
 
-## AMS を AEM as a Cloud service の Dispatcher 設定に変換する方法
+## AMSをクラウドサービスのディスパッチャー設定としてAEMに変換する方法
 
-AMS 設定を変換する方法を順を追って説明します。ここでは、[Cloud Manager の Dispatcher 設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同様な構造のアーカイブがあることを前提としています。
+次の節では、AMSコンフィギュレーションを変換する手順を順を追って説明します。 これは、
+[Cloud Manager Dispatcherの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同じ構造のアーカイブがある
 
 ### アーカイブを抽出し、最終的なプレフィックスを削除する
 
@@ -517,7 +519,7 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 ### ポート 80 を参照しない仮想ホストセクションを削除またはコメント化する
 
-仮想ホストファイルに、ポート 80 以外のポートを排他的に参照するセクションが、次のように残っている場合：
+仮想ホストファイルに、ポート80以外のポートを排他的に参照するセクションが残っている場合は、次のようになります。
 
 ```
 <VirtualHost *:443>
@@ -535,7 +537,8 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 `conf.d/rewrites` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `rewrite.rules` に変更します。また、仮想ホストファイル内にそのファイルを参照する `Include` ステートメントを必ず追加するようにしてください。
 
-ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
+ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合、その内容は
+`Include`ステートメントにコピーされ、仮想ホストファイル内のこれらを参照しています。
 
 ### 変数を確認する
 
@@ -545,7 +548,8 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 `conf.d/variables` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `custom.vars` に変更します。また、仮想ホストファイル内にそのファイルを参照する `Include` ステートメントを必ず追加するようにしてください。
 
-ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合は、そのファイルの内容を、仮想ホストファイル内のファイルを参照する `Include` ステートメントにコピーする必要があります。
+ただし、フォルダーに複数の仮想ホスト固有のファイルが含まれている場合、その内容は
+`Include`ステートメントにコピーされ、仮想ホストファイル内のこれらを参照しています。
 
 ### 許可リストの削除
 
@@ -559,7 +563,7 @@ AMS 設定を変換する方法を順を追って説明します。ここでは�
 
 ### バリデーターを実行して状態を確認する
 
-ディレクトリ内の Dispatcher バリデーターをサブコマンド `httpd` と共に実行します。
+`httpd`サブコマンドを使用して、ディレクトリ内のディスパッチャーバリデーターを実行します。
 
 ```
 $ validator httpd .
@@ -583,15 +587,19 @@ $ validator httpd .
 
 `ams_` のプレフィックスが付いたファイルを削除します。
 
-`conf.dispatcher.d/cache` が空になった場合は、標準の Dispatcher 設定からこのフォルダーに `conf.dispatcher.d/cache/rules.any` ファイルをコピーします。標準の Dispatcher 設定は、この SDK の `src` フォルダーにあります。ファームファイル内の `ams_*_cache.any` ルールファイルを参照する `$include` ステートメントも、必ず適応させます。
+`conf.dispatcher.d/cache`が空の場合は、ファイル`conf.dispatcher.d/cache/rules.any`をコピーします
+標準のディスパッチャー設定からこのフォルダーに移動します。 標準のディスパッチャー
+設定は、このSDKの`src`フォルダーにあります。 ファームファイル内の `ams_*_cache.any` ルールファイルを参照する `$include` ステートメントも、必ず適応させます。
 
 `conf.dispatcher.d/cache` ではなく、サフィックス付きの単一のファイル `_cache.any` が含まれている場合、`rules.any` に名前変更し、ファームファイル内のそのファイルを参照する `$include` ステートメントも必ず適応させます。
 
-ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
+ただし、そのパターンを持つ複数のファーム固有のファイルがフォルダに含まれている場合は、そのファイルの内容
+を`$include`ステートメントにコピーして、ファームファイル内のこれらを参照する必要があります。
 
 `_invalidate_allowed.any` サフィックスを持つファイルを削除します。
 
-Cloud Dispatcher 設定のデフォルト AEM からその場所に `conf.dispatcher.d/cache/default_invalidate_any` ファイルをコピーします。
+ファイル`conf.dispatcher.d/cache/default_invalidate_any`をデフォルトの
+AEMをクラウドディスパッチャー設定に追加します。
 
 各ファームファイルで、`cache/allowedClients` セクション内のコンテンツを削除し、次と置き換えます。
 
@@ -607,11 +615,13 @@ $include "../cache/default_invalidate.any"
 
 `conf.dispatcher.d/clientheaders` に、サフィックス付きの単一のファイル `_clientheaders.any` が含まれている場合、`clientheaders.any` に名前変更し、ファームファイル内のそのファイルを参照する `$include` ステートメントも必ず適応させます。
 
-ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
+ただし、そのパターンを持つ複数のファーム固有のファイルがフォルダに含まれている場合は、そのファイルの内容
+を`$include`ステートメントにコピーして、ファームファイル内のこれらを参照する必要があります。
 
-デフォルトの AEM as a Cloud Service の Dispatcher 設定からその場所に `conf.dispatcher/clientheaders/default_clientheaders.any` ファイルをコピーします。
+ファイル`conf.dispatcher/clientheaders/default_clientheaders.any`をデフォルトの
+AEMをCloud Serviceディスパッチャーの設定としてその場所に送信します。
 
-各ファームファイルで、次のような clientheader インクルードステートメントを置き換えます。
+各ファームファイルで、次のようなclientheader includeステートメントを置き換えます。
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"
@@ -632,11 +642,13 @@ $include "../clientheaders/default_clientheaders.any"
 
 `conf.dispatcher.d/filters` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `filters.any` に変更します。また、ファームファイル内にそのファイルを参照する `$include` ステートメントを必ず追加するようにしてください。
 
-ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
+ただし、そのパターンを持つ複数のファーム固有のファイルがフォルダに含まれている場合は、そのファイルの内容
+を`$include`ステートメントにコピーして、ファームファイル内のこれらを参照する必要があります。
 
-デフォルトの AEM as a Cloud Service の Dispatcher 設定からその場所に `conf.dispatcher/filters/default_filters.any` ファイルをコピーします。
+ファイル`conf.dispatcher/filters/default_filters.any`をデフォルトの
+AEMをCloud Serviceディスパッチャーの設定としてその場所に送信します。
 
-各ファームファイルで、次のようなフィルターインクルードステートメントを置き換えます。
+各ファームファイルで、次のようなフィルタインクルードステートメントを置き換えます。
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/filters/ams_publish_filters.any"
@@ -654,7 +666,8 @@ $include "../filters/default_filters.any"
 
 フォルダー内のすべてのファイルを削除します。
 
-デフォルトの AEM as a Cloud Service の Dispatcher 設定からその場所に `conf.dispatcher.d/renders/default_renders.any` ファイルをコピーします。
+ファイル`conf.dispatcher.d/renders/default_renders.any`をデフォルトの
+AEMをCloud Serviceディスパッチャーの設定としてその場所に送信します。
 
 各ファームファイルで、`renders` セクション内のコンテンツを削除し、次と置き換えます。
 
@@ -670,11 +683,13 @@ $include "../renders/default_renders.any"
 
 `conf.dispatcher.d/virtualhosts` に 1 つのファイルのみ含まれる場合は、そのファイルの名前を `virtualhosts.any` に変更します。また、ファームファイル内にそのファイルを参照する `$include` ステートメントを必ず追加するようにしてください。
 
-ただし、フォルダーにそのパターンを持つファーム固有のファイルが複数含まれている場合は、そのファイルの内容を、ファームファイル内のファイルを参照する `$include` ステートメントにコピーする必要があります。
+ただし、そのパターンを持つ複数のファーム固有のファイルがフォルダに含まれている場合は、そのファイルの内容
+を`$include`ステートメントにコピーして、ファームファイル内のこれらを参照する必要があります。
 
-デフォルトの AEM as a Cloud Service の Dispatcher 設定からその場所に `conf.dispatcher/virtualhosts/default_virtualhosts.any` ファイルをコピーします。
+ファイル`conf.dispatcher/virtualhosts/default_virtualhosts.any`をデフォルトの
+AEMをCloud Serviceディスパッチャーの設定としてその場所に送信します。
 
-各ファームファイルで、次のようなフィルターインクルードステートメントを置き換えます。
+各ファームファイルで、次のようなフィルタインクルードステートメントを置き換えます。
 
 ```
 $include "/etc/httpd/conf.dispatcher.d/vhosts/ams_publish_vhosts.any"
@@ -688,7 +703,7 @@ $include "../virtualhosts/default_virtualhosts.any"
 
 ### バリデーターを実行して状態を確認する
 
-ディレクトリ内の AEM as a Cloud Service Dispatcher バリデーターをサブコマンド `dispatcher` と共に実行します。
+`dispatcher`サブコマンドを使用して、ディレクトリ内でCloud ServiceディスパッチャーバリデーターとしてAEMを実行します。
 
 ```
 $ validator dispatcher .
@@ -712,9 +727,10 @@ validator full -d out .
 
 設定を完全に検証し、`out` にデプロイメント情報が生成されます。
 
-### 手順 2：生成されたデプロイメント情報を使用して、Docker イメージで Dispatcher を起動する
+### 手順2:Dockerイメージ内のディスパッチャーとそのデプロイメント情報との開始
 
-AEM パブリッシュサーバーを macOS コンピューター上で実行し、ポート 4503 をリッスンしている場合は、次のように、そのサーバーの前で Dispatcher を実行できます。
+macOSコンピューター上でAEMパブリッシュサーバーが実行され、ポート4503でリッスンしている場合、
+次のように、そのサーバーの前でディスパッチャーの開始を実行できます。
 
 ```
 $ docker_run.sh out docker.for.mac.localhost:4503 8080
@@ -722,7 +738,7 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 これにより、コンテナが起動し、ローカルポート 8080 で Apache が公開されます。
 
-### 新しい Dispatcher 設定を使用する
+### 新しいディスパッチャー設定の使用
 
 バリデーターが問題を報告しなくなり、Docker コンテナがエラーや警告を出さずに起動した場合、設定を git リポジトリのサブディレクトリ `dispatcher/src` に移動する準備が整いました。
 
