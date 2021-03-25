@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] へのデジタルアセットの追加。'
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: a81fe4a2c7d3c4e0471a961fb51249ac03f27e9c
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2017'
+ht-degree: 95%
 
 ---
 
@@ -173,8 +173,20 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 模擬実行]：一括取得のテスト実行を呼び出します。
    * [!UICONTROL 実行]：選択した設定を実行します。
    * [!UICONTROL 停止]：アクティブな設定を終了します。
+   * [!UICONTROL スケジュール]:アセットを取り込むための1回限りのスケジュールまたは定期的なスケジュールを設定します。
    * [!UICONTROL ジョブのステータス]：進行中のインポートジョブで使用された場合、または完了したジョブで使用された場合の構成のステータスを表示します。
+   * [!UICONTROL ジョブ履歴]:ジョブの以前のインスタンス。
    * [!UICONTROL アセット表示]：ターゲットフォルダーが存在する場合は、表示します。
+
+   ![インジェスタ構成用のツールバーオプション](assets/bulk-ingest-toolbar-options.png)
+
+1回限りの一括インポートまたは定期的な一括インポートをスケジュールするには、次の手順に従います。
+
+1. 一括インポート設定を作成します。
+1. 設定を選択し、ツールバーから「**[!UICONTROL スケジュール]**」を選択します。
+1. 1回のみのインジェストを設定するか、1時間ごと、1日ごと、または1週間ごとのスケジュールを設定します。 「**[!UICONTROL 送信]**」をクリックします。
+
+   ![バルクインジェスタジョブのスケジュール](assets/bulk-ingest-schedule1.png)
 
 ## デスクトップクライアントを使用したアセットのアップロード {#upload-assets-desktop-clients}
 
