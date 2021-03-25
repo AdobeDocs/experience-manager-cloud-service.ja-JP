@@ -3,10 +3,10 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 35df3f9c1b8a919de0c8c614bd0169d3418da1d0
+source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
 workflow-type: tm+mt
-source-wordcount: '4113'
-ht-degree: 75%
+source-wordcount: '4169'
+ht-degree: 74%
 
 ---
 
@@ -198,7 +198,21 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 次のように呼び出します：`validator full [-d folder] [-w allowlist] zip-file | src folder`
 
-パターン`conf.d/enabled_vhosts/*.vhost`のすべてのファイルをスキャンし、AEMがクラウドサービスとしてサポートする適切なディレクティブをディスパッチャーの設定が使用しているかどうかを検証します。 Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
+パターン`conf.d/enabled_vhosts/*.vhost`のすべてのファイルをスキャンし、AEMがクラウドサービスとしてサポートする適切なディレクティブをディスパッチャーの設定が使用しているかどうかを検証します。
+
+Windowsでは、ディスパッチャーバリデーターは大文字と小文字が区別されます。 したがって、設定が存在するパスの大文字と小文字が区別されない場合は、設定の検証が失敗する可能性があります。例えば、次のようになります。
+
+```
+bin\validator.exe full src
+Cloud manager validator 2.0.xx
+2021/03/15 18:15:40 Dispatcher configuration validation failed:
+  conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
+  
+```
+
+このエラーを回避するには、Windowsエクスプローラからパスをコピーして貼り付け、`cd`コマンドを使用してコマンドプロンプトを表示します。
+
+Apache の設定ファイルで許可されているディレクティブは、バリデーターの許可リストコマンドを実行すると表示できます。
 
 ```
 $ validator allowlist
