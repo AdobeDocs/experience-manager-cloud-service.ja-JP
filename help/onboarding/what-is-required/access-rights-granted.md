@@ -2,10 +2,10 @@
 title: アクセス権が付与された — 必要なもの
 description: アクセス権が付与された — 必要なもの
 translation-type: tm+mt
-source-git-commit: 4b62401fd1d0654cf758092176bd815a7fa56159
+source-git-commit: 8259bf4e7f2004d76fd985ec7ad7c416b6f8d491
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 51%
+source-wordcount: '576'
+ht-degree: 50%
 
 ---
 
@@ -41,8 +41,6 @@ Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://
 
 これらの権限を付与されると、管理者は、シングルサインオン（Adobe ID を使用）で [!UICONTROL Experience Cloud] サービスへのアクセス、AEM クラウド環境へのログイン、[!UICONTROL Cloud Manager] の使用をおこなえるように設定されます。
 
-## ユーザーとロール {#users-roles}
-
 [!UICONTROL Cloud Manager] の多くの機能には、使用するための特定の権限が必要です。
 
 [!UICONTROL Cloud Manager] では、現在、特定の機能を使用できるかどうかを制御する次の 4 つのユーザーロールを定義しています。
@@ -53,7 +51,6 @@ Adobe ID の使用を開始するには、[Adobe ID タイプの管理](https://
 * デベロッパー
 
 >[!CAUTION]
->
 >[!UICONTROL Cloud Manager]を使用するには、Cloud Service製品コンテキストとして、Adobe IDとAdobe Experience Managerが必要です。
 
 ### ロールの定義 {#role-definitions}
