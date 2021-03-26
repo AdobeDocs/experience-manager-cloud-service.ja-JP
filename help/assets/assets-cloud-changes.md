@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
 description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の主な変更点。'
 translation-type: tm+mt
-source-git-commit: 201abba4352362b1bb97b6a25bd84f95e8ed8483
+source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 57%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Asset Microservicesは、Cloud Managerで管理されるお客様のプログラ
 | MIMEタイプの検出 | サポートされていない。 | 拡張子が付いていない、または正しくない拡張子を持つデジタルアセットをアップロードした場合は、必要に応じて処理されない場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。 |
 | 複合アセットのサブアセットの生成 | サポートされていない。 | 従属的な使用例は満たされません。 例えば、複数ページのPDFファイルの注釈は影響を受けます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)の[サブアセットの作成を参照してください。 |
 | ホームページ | サポートされていない。 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照 |
-| ZIPアーカイブからのアセットの抽出 | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.htmln#extractzip)の[ZIP抽出を参照してください。 |
+| ZIPアーカイブからのアセットの抽出 | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)の[ZIP抽出を参照してください。 |
 | クラシック UI | サポートされていない。 | タッチ対応UIのみ使用できます。 |
 
 >[!MORELIKETHIS]
