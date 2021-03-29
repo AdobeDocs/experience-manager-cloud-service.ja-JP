@@ -1,11 +1,11 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
-description: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポートについて説明します。
+description: AEMのヘッドレス配信機能の重要な部分、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
 translation-type: tm+mt
-source-git-commit: 8563a87bdfc251166590210993b7d9e4cbdee385
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 98%
 
 ---
 
@@ -14,14 +14,18 @@ ht-degree: 100%
 
 ## 概要 {#overview}
 
+AEMのヘッドレス配信機能の重要な部分、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
+
 >[!NOTE]
 >
 >[Assets HTTP API](/help/assets/mac-api-assets.md) には次の API が含まれます。
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
+
 >
->現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
+>
+現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
 [Assets REST API](/help/assets/mac-api-assets.md) を使用すると、Adobe Experience Manager as a Cloud Service の開発者は、HTTP API 経由で CRUD 操作（作成、読み取り、更新、削除）を介して、（AEM に保存された）コンテンツに直接アクセスできます。
 
@@ -63,7 +67,6 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
 
 >[!NOTE]
->
 >アクセス経由：
 >
 >* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
@@ -146,6 +149,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -310,21 +314,18 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 関連する状況で次のステータスコードが表示されることがあります。
 
 * **200** （OK）
-
-   は次の場合に返されます。
+は次の場合に返されます。
 
    * `GET` でコンテンツフラグメントを要求する
    * `PUT` でコンテンツフラグメントを正常に更新する
 
 * **201**（作成済み）
-
-   は次の場合に返されます。
+は次の場合に返されます。
 
    * `POST` でコンテンツフラグメントを正常に作成する
 
 * **404**（Not Found）
-
-   は次の場合に返されます。
+は次の場合に返されます。
 
    * 要求されたコンテンツフラグメントが存在しない
 
