@@ -1,16 +1,18 @@
 ---
 title: コンテンツフラグメントの管理
-description: コンテンツフラグメントは Assets として保存されるので、主に Assets コンソールから管理します。
+description: アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 93%
+source-wordcount: '1640'
+ht-degree: 91%
 
 ---
 
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
+
+アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
 
 コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
