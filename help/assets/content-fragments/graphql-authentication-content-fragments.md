@@ -1,18 +1,18 @@
 ---
 title: コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証
-description: リモート AEM GraphQL クエリに必要な認証について説明します。
+description: ヘッドレスコンテンツ配信を保護するために、リモートAEM GraphQLクエリに必要な認証を理解します。
 translation-type: tm+mt
-source-git-commit: 42ca0c70f7018a6e3c9be68ef13adefafc987864
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 86%
 
 ---
 
 
 # コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-[コンテンツフラグメント配信用の Adobe Experience Manager as a Cloud Service（AEM）GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) の主な使用例は、サードパーティのアプリケーションやサービスからリモートクエリを受け入れることです。これらのリモートクエリには、認証済み API アクセスが必要な場合があります。
+[コンテンツフラグメント配信用の Adobe Experience Manager as a Cloud Service（AEM）GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) の主な使用例は、サードパーティのアプリケーションやサービスからリモートクエリを受け入れることです。これらのリモートクエリは、ヘッドレスコンテンツの配信を保護するために、認証済みのAPIアクセスが必要になる場合があります。
 
 >[!NOTE]
 >
