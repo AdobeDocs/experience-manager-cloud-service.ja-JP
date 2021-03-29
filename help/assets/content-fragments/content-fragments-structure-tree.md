@@ -1,16 +1,18 @@
 ---
 title: コンテンツフラグメント構造ツリー
-description: コンテンツフラグメントエディターで構造ツリーを表示できます。
+description: AEMのコンテンツフラグメントエディターの構造ツリー機能を使用して、ヘッドレスコンテンツをより深く理解します。
 translation-type: tm+mt
-source-git-commit: 46e179faa7875c4b3e9da30356d2b82d4b25b130
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 100%
+source-wordcount: '78'
+ht-degree: 53%
 
 ---
 
 
 # コンテンツフラグメント構造ツリー {#content-fragment-structure-tree}
+
+AEMのコンテンツフラグメントエディターの構造ツリー機能を使用して、ヘッドレスコンテンツをより深く理解します。
 
 コンテンツフラグメントエディターで「構造ツリー」アイコンを選択できます。
 
