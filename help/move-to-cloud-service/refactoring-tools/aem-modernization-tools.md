@@ -2,17 +2,17 @@
 title: AEM Modernization Tools
 description: 'AEM最新化ツール '
 translation-type: tm+mt
-source-git-commit: 3478827949356c4a4f5133b54c6cf809f416efef
+source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '131'
+ht-degree: 77%
 
 ---
 
 
 # AEM Modernization Tools {#aem-moderization-tools}
 
-AEM Modernization Tools は、現在使用されている従来の AEM 機能を現在サポートされている最新の機能に変換するツールを AEM 開発チームに提供します。
+AEM Modernizationツールは、従来のAEM機能をCloud ServiceとしてAEMの最新のサポートされる機能に変換するために使用できるユーティリティスイートを提供します。
 
 
 ## 概要 {#introduction}
