@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: デプロイ
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、クラウド環境のパッケージマネージャーでパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージはすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
 
-AEM as a Cloud Service アプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。分離に従わない場合、Cloud Manager がビルドに失敗し、次のようなメッセージを出力します。
+AEM用にCloud Serviceアプリケーションとして書かれたコンテンツパッケージは、不変コンテンツと可変コンテンツを明確に区切る必要があり、Cloud Managerは可変コンテンツのみをインストールし、次のようなメッセージを出力します。
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
