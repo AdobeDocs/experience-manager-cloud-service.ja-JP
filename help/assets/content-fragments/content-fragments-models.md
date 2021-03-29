@@ -1,18 +1,18 @@
 ---
 title: コンテンツフラグメントモデル
-description: コンテンツフラグメントモデルは、構造化コンテンツを含むコンテンツフラグメントを作成するために使用します。
+description: コンテンツフラグメントモデルがAEMのヘッドレスコンテンツの基盤となる仕組みと、構造化されたコンテンツを使用してコンテンツフラグメントを作成する方法について説明します。
 translation-type: tm+mt
-source-git-commit: 243b7509661cbb9da670bdc15b68378db43b423a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 96%
+source-wordcount: '2199'
+ht-degree: 94%
 
 ---
 
 
 # コンテンツフラグメントモデル {#content-fragment-models}
 
-コンテンツフラグメントモデルは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)のコンテンツの構造を定義します。
+AEMのコンテンツフラグメントモデルは、[コンテンツフラグメントの構造を定義します。](/help/assets/content-fragments/content-fragments.md)は、ヘッドレスコンテンツの基盤となります。
 
 コンテンツフラグメントモデルを使用するには、以下をおこないます。
 
