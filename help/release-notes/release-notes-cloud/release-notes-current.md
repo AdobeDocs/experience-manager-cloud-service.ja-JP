@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 translation-type: tm+mt
-source-git-commit: 3a21441f11d59a8d2a706bda8e1676aa072650b3
+source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 14%
@@ -84,7 +84,7 @@ AEM Formsは、多くの組織が長年にわたって素晴らしいオンボ�
 
 この節では、AEMのCloud ManagerのリリースノートをCloud Service2021.3.0として概要を説明します。
 
-## リリース日 {#release-date-cm-march}
+### リリース日 {#release-date-cm-march}
 
 AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日です。
 次回のリリースは2021年4月8日に予定されています。
