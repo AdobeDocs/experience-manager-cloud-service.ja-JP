@@ -1,18 +1,18 @@
 ---
 title: アセットフォルダーのヘッドレス作成のクイック開始ガイド
-description: コンテンツフラグメントモデルは、コンテンツフラグメントの構造を定義します。コンテンツフラグメントはアセットフォルダーに保存されます。
+description: AEMコンテンツフラグメントモデルを使用して、ヘッドレスコンテンツの基になるコンテンツフラグメントの構造を定義します。
 translation-type: tm+mt
-source-git-commit: 259d54a225f8dee5929f62b784e28f3fc2bb794a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 90%
 
 ---
 
 
 # アセットフォルダーのヘッドレス作成のクイック開始ガイド {#creating-an-assets-folder}
 
-コンテンツフラグメントモデルは、コンテンツフラグメントの構造を定義します。コンテンツフラグメントはアセットフォルダーに保存されます。
+AEMコンテンツフラグメントモデルを使用して、ヘッドレスコンテンツの基になるコンテンツフラグメントの構造を定義します。 コンテンツフラグメントはアセットフォルダーに保存されます。
 
 ## アセットフォルダーとは {#what-is-an-assets-folder}
 
