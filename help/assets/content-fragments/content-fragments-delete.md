@@ -1,16 +1,18 @@
 ---
 title: コンテンツフラグメント - 削除に関する考慮事項
-description: コンテンツフラグメント - 削除に関する考慮事項
+description: AEMでコンテンツフラグメント削除ポリシーを定義する前に、次の重要な考慮事項を確認してください。 コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールであり、コンテンツを削除することの意味を注意深く考慮する必要があります。
 translation-type: tm+mt
-source-git-commit: bb3d90def8855e8dffdc584c0805da120faf7b12
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 85%
 
 ---
 
 
-# コンテンツフラグメント - 削除に関する考慮事項{#content-fragments-delete-considerations}
+# コンテンツフラグメント - 削除に関する考慮事項 {#content-fragments-delete-considerations}
+
+AEMでコンテンツフラグメント削除ポリシーを定義する前に、次の重要な考慮事項を確認してください。 コンテンツフラグメントはヘッドレスコンテンツを配信する強力なツールであり、コンテンツを削除することの意味を注意深く考慮する必要があります。
 
 ## 権限 - 削除または削除禁止 {#permissions-delete-or-not-delete}
 
