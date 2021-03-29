@@ -1,16 +1,18 @@
 ---
 title: コンテンツフラグメント - 設定ブラウザー
-description: 設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
+description: AEMの強力なヘッドレス配信機能を利用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
 translation-type: tm+mt
-source-git-commit: 260578950833b96616a2a3928d206e6f9e0a206a
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '271'
+ht-degree: 84%
 
 ---
 
 
 # コンテンツフラグメント - 設定ブラウザー {#content-fragments-configuration-browser}
+
+AEMの強力なヘッドレス配信機能を利用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
 
 ## インスタンスに対するコンテンツフラグメント機能の有効化 {#enable-content-fragment-functionality-instance}
 
