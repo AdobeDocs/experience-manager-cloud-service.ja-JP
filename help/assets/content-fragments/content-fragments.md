@@ -1,18 +1,18 @@
 ---
 title: コンテンツフラグメントの操作
-description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
+description: Cloud ServiceとしてのAdobe Experience Manager(AEM)のコンテンツフラグメントでは、ページに依存しないコンテンツをデザイン、作成、キュレーション、および使用でき、ヘッドレス配信に最適です。
 translation-type: tm+mt
-source-git-commit: 6f8264ae53b30afac0cc523c312aea8918e5eafa
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '2027'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 96%
 
 ---
 
 
 # コンテンツフラグメントの操作 {#working-with-content-fragments}
 
-[Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、公開が可能になります。](/help/sites-cloud/authoring/fundamentals/content-fragments.md)複数の場所、複数のチャネル上で使用可能なコンテンツを用意できるようになります。
+Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、コンテンツフラグメントを使用して、ページに依存しないコンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md)をデザイン、作成、キュレーション、[公開できます。複数の場所で使用できるコンテンツを複数のチャネルで準備でき、ヘッドレス配信に最適です。
 
 コンテンツフラグメントには、構造化されたコンテンツが含まれます。
 
@@ -78,8 +78,10 @@ ht-degree: 100%
 >**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
 >* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+
 >
->エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
+>
+エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 >
 >詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
