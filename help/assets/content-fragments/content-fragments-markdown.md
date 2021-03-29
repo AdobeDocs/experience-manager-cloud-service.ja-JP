@@ -1,18 +1,18 @@
 ---
 title: Markdown
-description: オーサリング中に、コンテンツフラグメントエディターは Markdown 構文を使用してユーザーがコンテンツを簡単に記述できるようにします。
+description: コンテンツフラグメントエディターでマークダウン構文を使用してヘッドレスコンテンツを簡単に作成する方法を理解します。
 translation-type: tm+mt
-source-git-commit: 05e2ccd53749fe7b0ac516688a1d205d46fc3492
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 
 # Markdown {#markdown}
 
-[オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)中に、コンテンツフラグメントエディターは *Markdown* 構文を使用してユーザーがコンテンツを簡単に記述できるようにします。
+[オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)を行う場合、コンテンツフラグメントエディターでは&#x200B;*markdown*&#x200B;構文を使用して、ヘッドレスコンテンツを簡単に書き込むことができます。
 
 ![Markdown エディター](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
