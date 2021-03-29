@@ -1,18 +1,18 @@
 ---
 title: AEM Sites as a Cloud Service 向けヘッドレス開発
-description: AEM as a Cloud Service では、コンテンツモデル、コンテンツフラグメント、GraphQL API などの強力な機能を利用して、エクスペリエンスを一元的に管理し、あらゆるチャネルに提供できます。
+description: コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてAEMがどのように連携し、エクスペリエンスを一元的に管理し、チャネル全体で提供できるかを学びます。
 translation-type: tm+mt
-source-git-commit: e1db93e8f4cf8ef881b274879e800c9993753a66
+source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 88%
 
 ---
 
 
 # AEM Sites as a Cloud Service 向けヘッドレス開発 {#headless-development}
 
-AEM as a Cloud Service では、コンテンツモデル、コンテンツフラグメント、GraphQL API などの強力な機能を利用して、エクスペリエンスを一元的に管理し、あらゆるチャネルに提供できます。
+コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてAEMがどのように連携し、エクスペリエンスを一元的に管理し、チャネル全体で提供できるかを学びます。
 
 ## 概要 {#overview}
 
