@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 40a0380c6d149d8565dd41a7f48858383c22c5c0
+source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -19,10 +19,14 @@ ht-degree: 98%
 ここでは、以下を重点的に扱った主要な記事を紹介します。
 
 * Cloud ServiceとしてのAEM使用の手引き
-* 特定の機能の使用の可否を管理するユーザーロールの概要
-* Cloud Manager の Git リポジトリのセットアップ
+
+* 特定の機能の可用性を制御するユーザーの役割について理解する
+
+* Cloud Managerのgitリポジトリの設定
+
 * Adobe Experience Manager as a Cloud Service へのアクセス
-* データの保護とプライバシーに関する規制に対応する基盤
+
+* データ保護とプライバシーに関する規制の基盤
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
