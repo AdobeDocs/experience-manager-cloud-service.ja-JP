@@ -2,7 +2,7 @@
 title: Adobe IDを取得
 description: Adobe IDを取得
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# {#adobe-id}Adobe IDを取得中
+# Adobe IDを入手{#adobe-id}
 
 このガイドでは、Cloud Managerの使用を迅速に開始できるように、チェックリストを提供します。 割り当てられたロール(Admin Consoleの製品プロファイルと呼ばれる)と関連する権限にユーザーをCloud Managerに追加するには、Adobe IDとシステム管理者の支援が必要です。 システム管理者がAdmin Consoleを使用してこれを行う方法については、説明しています。
 
