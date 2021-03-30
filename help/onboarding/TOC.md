@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: デプロイ
 role: アーキテクト、開発者
 translation-type: tm+mt
-source-git-commit: 974c7d20d7896b749e07b05d0149ed16dc7e0cd5
+source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 93%
+source-wordcount: '672'
+ht-degree: 91%
 
 ---
 
@@ -19,24 +19,22 @@ ht-degree: 93%
 
 + [AEM as a Cloud Service のオンボーディング](/help/onboarding/home.md)
 + Cloud ServiceとしてAEMを使い始める{#what-is-required}
-   + [アクセス権の付与](what-is-required/access-rights-granted.md)
-   + [役割に基づく権限](what-is-required/role-based-permissions.md)
-   + [ソースコードリポジトリー](what-is-required/source-code-repository.md)
-+ クラウド内の AEM へのアクセス {#getting-access}
-   + [Cloud ServiceとしてのAEM版Cloud Managerへのアクセス](getting-access-to-aem-in-cloud/navigation.md)
-   + Cloud Manager へのアクセス{#cloud-service-programs}
-      + [Cloud Manager ランディングページ](getting-access-to-aem-in-cloud/first-time-login.md)
-      + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
-      + 本番プログラム{#production-programs}
-         + [概要](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
-         + [実稼働プログラムの作成](getting-access-to-aem-in-cloud/creating-production-program.md)
-         + [実稼働プログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
-      + サンドボックスプログラム {#sandbox-programs}
-         + [概要](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-         + [サンドボックスプログラムの作成](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
-         + [サンドボックスプログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
-         + [Sandboxプログラムの削除](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
-         + [サンドボックス環境の休止と休止解除](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
+   + [Adobe IDの入手](what-is-required/get-your-adobe-id.md)
+   + [ユーザーの追加とCloud Managerのロールへの割り当て](what-is-required/add-users-assign-cm-roles.md)
+   + [Cloud Managerへの移動](what-is-required/navigate-to-cloud-manager.md)
+   + [AEMインスタンスへのアクセス](/help/onboarding/what-is-required/accessing-aem-instance.md)
++ Cloud Manager プログラム {#getting-access}
+   + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
+   + 本番プログラム{#production-programs}
+      + [概要](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
+      + [実稼働プログラムの作成](getting-access-to-aem-in-cloud/creating-production-program.md)
+      + [実稼働プログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+   + サンドボックスプログラム {#sandbox-programs}
+      + [概要](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+      + [サンドボックスプログラムの作成](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+      + [サンドボックスプログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-sandbox-program.md)
+      + [Sandboxプログラムの削除](getting-access-to-aem-in-cloud/deleting-sandbox-program.md)
+      + [サンドボックス環境の休止と休止解除](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + [環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)
       + [CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja)
