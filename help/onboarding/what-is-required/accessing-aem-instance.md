@@ -2,7 +2,7 @@
 title: 'AEMインスタンスへのアクセス '
 description: AEMインスタンスにアクセスする方法については、このページに従ってください
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 1%
