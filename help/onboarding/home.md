@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: 06764b9e908a96f9cee26d7312bfc7c100da85a4
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '649'
 ht-degree: 55%
 
 ---
@@ -24,24 +24,24 @@ AEMをCloud Serviceとしてジャーニーを開始して、ありがとうご�
 
 1. 組織のシステム管理者にご案内の電子メールが届き、ユーザーの追加、ロールへの割り当て、Cloud Managerへの適切なアクセス権の付与など、[管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)の実行が許可されます。
 
-1. システム管理者が追加したユーザーには、Cloud Managerへのアクセス権があることを知らせるご案内の電子メールが送信されます。 Cloud Managerのジャーニーは、ここから開始できます。
+1. システム管理者が追加したユーザーには、Cloud Managerへのアクセス権があることを知らせるご案内の電子メールが送信されます。 ユーザーは、[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)を使用してログインし、ここからCloud Managerとのジャーニーを開始できます。
 
 1. また、開発のためにAEMインスタンス](/help/onboarding/what-is-required/accessing-aem-instance.md)に対する[アクセス権をユーザーに与えることもできます。
 
-**チーム、ロール、権限**
+**[チーム、ロール、権限](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
 システム管理者は、ユーザーを追加し、Cloud Managerの役割に割り当てることができます。 この節では、[Cloud Managerの役割](/help/onboarding/what-is-required/user-roles-permissions.md#user-roles)とは何か、およびその役割に関連付けられている[権限](/help/onboarding/what-is-required/user-roles-permissions.md#permissions)を理解してから、操作を開始する際に役立ちます。
 
-**システム管理者のタスク**
+**[システム管理者のタスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
 システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 次のドキュメントページには、基本的な組織タスク（[ユーザーの追加、Cloud Managerの役割と権限の割り当て](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)）を説明する情報が含まれています
 
 
-**Cloud Manager に移動する**
+**[Cloud Manager に移動する](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
 Cloud Managerにアクセスして、AEMでCloudジャーニーを使い始めます。 ユーザーとして追加され、Cloud Managerの役割に割り当てられたので、[プログラム](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)の作成、[環境](/help/implementing/cloud-manager/manage-environments.md)の追加、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセス、[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)の設定、[コードのデプロイなど、様々なタスクを行えます/>。](/help/implementing/cloud-manager/deploy-code.md)
 
-**AEMインスタンスへのアクセス**
+**[AEMインスタンスへのアクセス](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
