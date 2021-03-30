@@ -2,15 +2,15 @@
 title: Cloud Managerへの移動
 description: Cloud Managerランディングページに移動する方法については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: e77fb8bc94d8be2d8613075f4b1638aab1d2fcbe
+source-git-commit: 55239d6f973f9fbe5a728321ddbe702d74a8a8a7
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
 
-# Cloud Managerへの移動{#cloud-manager}
+# Cloud Manager に移動する {#cloud-manager}
 
 システム管理者からCloud Managerへのアクセス権が付与されると、Cloud Managerのログインページが表示されます。このページは[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)からもアクセスできます。
 
