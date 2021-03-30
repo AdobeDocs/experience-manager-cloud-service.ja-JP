@@ -2,7 +2,7 @@
 title: '実稼働プログラムの作成 '
 description: '実稼働プログラムの作成 '
 translation-type: tm+mt
-source-git-commit: 3884529aaa717b13f2771095a4f7e8102abfd1ec
+source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
    ![](assets/first_timelogin1.png)
 
    >[!NOTE]
-   >Cloud Managerへのアクセス方法について詳しくは、[Cloud Managerランディングページ](/help/onboarding/getting-access-to-aem-in-cloud/first-time-login.md)を参照してください。
+   >Cloud Managerへのアクセス方法について詳しくは、[Cloud Managerランディングページ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
 
 1. プログラムの作成ウィザードで「**実稼働用に設定**」を選択して、実稼働プログラムを作成します。 ユーザーは、デフォルトのプログラム名を受け入れるか、**続行**&#x200B;を選択する前に編集できます。
 
