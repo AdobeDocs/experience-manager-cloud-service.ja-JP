@@ -2,10 +2,10 @@
 title: ユーザーの役割と権限
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: f09b688db23024d59f39b53766060b6f3b14e564
+source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 54%
+source-wordcount: '624'
+ht-degree: 44%
 
 ---
 
@@ -18,6 +18,10 @@ Adobeは、AdobeIdentity Managementシステム(IMS)に、会社の&#x200B;**組
 
 Cloud Manager の多くの機能には、使用するための特定の権限が必要です。
 
+Cloud Managerの多くの機能では、操作に特定の権限が必要となり、割り当てられたロールと権限に基づいてユーザーインターフェイス内で行うアクションが制限されます。 アクションを実行する権限がない場合、インターフェイスコントロールは存在しますが、無効になっています。
+
+実行したい操作があるが、実行できない場合は、[ロール定義](#permissions)に関連付けられている権限を確認してください。 目標に応じて、システム管理者に問い合わせて、必要なロールを要求できます。
+
 Cloud Manager では、現在、特定の機能を使用できるかどうかを制御する次の 4 つのユーザーロールを定義しています。
 
 * ビジネスオーナー
@@ -28,6 +32,8 @@ Cloud Manager では、現在、特定の機能を使用できるかどうかを
 >[!NOTE]
 >Admin Console の「開発者」ペルソナは、[!UICONTROL Cloud Manager] の「デベロッパー」ロールとは無関係です。
 
+## ロールの定義 {#role-definitions}
+
 ロールの概要を次の表に示します。
 
 | [!UICONTROL Cloud Manager] のロール | 説明 |
@@ -37,6 +43,12 @@ Cloud Manager では、現在、特定の機能を使用できるかどうかを
 | デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。CI/CD パイプラインを編集できます。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
 | デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリにアクセスして、コードをコミットできます。 |
 | コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、AEM にアクセスできます。 |
+
+### 役割の表示{#view-roles}
+
+Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサインインし、右上隅のプロファイルアイコンを選択し、下の図のように「**ユーザーロール**」を選択します。
+
+![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### 統合製品プロファイル{#integration-product-profile}
 
