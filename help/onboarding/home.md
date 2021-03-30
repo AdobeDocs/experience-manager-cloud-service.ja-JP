@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: b3f9d750c2103f2af97b8348dcdb24a80a06fa06
+source-git-commit: 7271f8146af09dc340a608f1e48f7b9f59dbb5ad
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 52%
@@ -13,6 +13,8 @@ ht-degree: 52%
 # Adobe Experience Manager as a Cloud Service のオンボーディング {#aem-onboarding-guide}
 
 AEMをCloud Serviceとしてジャーニーを開始して、ありがとうございます。 新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Serviceに対する成功の準備ができるようにするための出発点として機能します。
+
+![](/help/onboarding/getting-access-to-aem-in-cloud/assets/customer-journey.png)
 
 ## オンボーディングに関する主要な記事 {#key-articles}
 
