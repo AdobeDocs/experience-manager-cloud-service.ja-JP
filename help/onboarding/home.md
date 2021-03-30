@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: 99417790e5770d7b340baf78539f5985056dc0f7
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 51%
@@ -34,7 +34,7 @@ AEMをCloud Serviceとしてジャーニーを開始して、ありがとうご�
 
 **[システム管理者のタスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 次のドキュメントページには、基本的な組織タスク（[ユーザーの追加、Cloud Managerの役割と権限の割り当て](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)）を説明する情報が含まれています
+システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 以下のドキュメントページには、基本的な組織のタスク、つまり[ユーザーの追加とCloud Managerのロールと権限](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)へのユーザーの割り当てに関する情報が含まれています。
 
 **[Cloud Manager に移動する](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
