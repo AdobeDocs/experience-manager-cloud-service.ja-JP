@@ -2,7 +2,7 @@
 title: Cloud Managerへの移動
 description: Cloud Managerランディングページに移動する方法については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: 1faadf46f38c5c6ac2e2fbc56f0c82214e0bfb6c
+source-git-commit: 159a1619e2cb1243e056dcc6182abceeeff01730
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 15%
@@ -54,7 +54,7 @@ ht-degree: 15%
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-ここから、Cloud Managerのビジネス所有者の役割など、適切な権限を持つユーザーは、**追加プログラム**&#x200B;を選択してウィザードを起動できます。
+ここから、Cloud Managerのビジネス所有者の役割など、適切な権限を持つユーザーは、**プログラム追加**&#x200B;を選択して[ウィザード](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)を起動できます。
 
 Cloud Managerでプログラムを追加する方法については、次を参照してください。
 
