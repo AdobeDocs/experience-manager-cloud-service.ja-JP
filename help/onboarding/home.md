@@ -2,31 +2,46 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 952a6f279a8a9e64a4f13d080f54af10af443606
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 92%
+source-wordcount: '642'
+ht-degree: 55%
 
 ---
 
 
 # Adobe Experience Manager as a Cloud Service のオンボーディング {#aem-onboarding-guide}
 
-ここでは、Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースの一覧を示します。
+AEMをCloud Serviceとしてジャーニーを開始して、ありがとうございます。 新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、Cloud Serviceを最適化し、成功に備えるための出発点として機能します。
 
 ## オンボーディングに関する主要な記事 {#key-articles}
 
-ここでは、以下を重点的に扱った主要な記事を紹介します。
+ここでは、AEMをCloud Serviceとして使用する場合の、ジャーニーに重点を置いた主要記事について説明します。
 
-* Cloud ServiceとしてのAEM使用の手引き
+**オンボーディング中の期待事項**
 
-* 特定の機能の可用性を制御するユーザーの役割について理解する
+契約書に署名すると、次のイベントが行われます。
 
-* Cloud Managerのgitリポジトリの設定
+1. 組織のシステム管理者にご案内の電子メールが届き、ユーザーの追加、ロールへの割り当て、Cloud Managerへの適切なアクセス権の付与など、[管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)の実行が許可されます。
 
-* Adobe Experience Manager as a Cloud Service へのアクセス
+1. システム管理者が追加したユーザーには、Cloud Managerへのアクセス権があることを知らせるご案内の電子メールが送信されます。 Cloud Managerのジャーニーは、ここから開始できます。
 
-* データ保護とプライバシーに関する規制の基盤
+1. また、開発のためにAEMインスタンス](/help/onboarding/what-is-required/accessing-aem-instance.md)に対する[アクセス権をユーザーに与えることもできます。
+
+**チーム、ロール、権限**
+
+システム管理者は、ユーザーを追加し、Cloud Managerの役割に割り当てることができます。 この節では、*Cloud Managerの役割*&#x200B;とは何か、およびその役割に関連付けられている権限を理解してから、操作を開始する際に役立ちます。
+
+**システム管理者のタスク**
+
+システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 次のドキュメントページには、基本的な組織タスク（[ユーザーの追加、Cloud Managerの役割と権限の割り当て](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)）を説明する情報が含まれています
+
+
+**Cloud Manager に移動する**
+
+Cloud Managerにアクセスして、AEMでCloudジャーニーを使い始めます。 ユーザーとして追加され、Cloud Managerロールに割り当てられたので、プログラムの作成、環境の追加、Gitの管理、パイプラインの設定、コードのデプロイなど、様々なタスクを行うことができます。
+
+**AEMインスタンスへのアクセス**
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
