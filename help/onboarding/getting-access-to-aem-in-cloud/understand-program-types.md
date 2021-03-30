@@ -2,10 +2,10 @@
 title: プログラムとプログラムのタイプについて
 description: プログラムとプログラムのタイプについて —Cloud Services
 translation-type: tm+mt
-source-git-commit: 5a4353cb31337882a1c13b0ed830ea64f617181a
+source-git-commit: 6e8cf08ec3f85437a8472a45895f3818e473e98c
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 3%
+source-wordcount: '329'
+ht-degree: 13%
 
 ---
 
@@ -17,6 +17,23 @@ Cloud Managerでは、最上部にテナントエンティティがあり、こ�
 次の図に、Cloud Managerのエンティティの階層を示します。
 
 ![画像](assets/program-types1.png)
+
+## ソースコードリポジトリ {#source-code-repository}
+
+Cloud Managerプログラムは、独自のgitリポジトリで自動プロビジョニングされます。
+
+ユーザーがCloud Managerのgitリポジトリにアクセスするには、Gitクライアントとコマンドラインツール、スタンドアロンのビジュアルGitクライアント、またはEclipse、IntelliJ、NetBeansなどのユーザーのIDEを使用する必要があります。
+
+Gitクライアントを設定すると、Cloud Manager UIからgitリポジトリを管理できます。 Cloud Manager UIを使用してGitを管理する方法については、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセスを参照してください。
+
+AEM Cloudアプリケーションの開発を開始するには、Cloud Managerリポジトリから、リポジトリを作成するローカルコンピューター上の場所にアプリケーションコードのローカルコピーをチェックアウトして作成する必要があります。
+
+```java
+$ git clone {URL}
+```
+
+>[!NOTE]
+>ユーザーは、自分のコードのコピーをチェックアウトし、ローカルコードリポジトリで変更をおこなうことができます。準備ができたら、ユーザーはコードの変更内容を Cloud Manager のリモートコードリポジトリにコミットして戻すことができます。
 
 ## プログラムタイプ{#program-types}
 
