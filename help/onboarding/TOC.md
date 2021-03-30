@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: デプロイ
 role: アーキテクト、開発者
 translation-type: tm+mt
-source-git-commit: 307a471be8b1fb2a19cb7315a91a8e55cbe40f4b
+source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 91%
+source-wordcount: '671'
+ht-degree: 92%
 
 ---
 
@@ -19,9 +19,10 @@ ht-degree: 91%
 
 + [AEM as a Cloud Service のオンボーディング](/help/onboarding/home.md)
 + Cloud ServiceとしてAEMを使い始める{#what-is-required}
-   + [Adobe IDの入手](what-is-required/get-your-adobe-id.md)
-   + [ユーザーの追加とCloud Managerのロールへの割り当て](what-is-required/add-users-assign-cm-roles.md)
-   + [Cloud Managerへの移動](what-is-required/navigate-to-cloud-manager.md)
+   + [Adobe IDを取得](what-is-required/get-your-adobe-id.md)
+   + [ユーザーの役割と権限](what-is-required/user-roles-permissions.md)
+   + [システム管理者のタスク](what-is-required/add-users-assign-cm-roles.md)
+   + [Cloud Manager に移動する](what-is-required/navigate-to-cloud-manager.md)
    + [AEMインスタンスへのアクセス](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager プログラム {#getting-access}
    + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
