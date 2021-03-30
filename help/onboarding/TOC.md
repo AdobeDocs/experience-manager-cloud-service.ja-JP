@@ -7,10 +7,10 @@ feature-set: Experience Manager Sites
 feature: デプロイ
 role: アーキテクト、開発者
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 92%
+source-wordcount: '674'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
    + [ユーザーの役割と権限](what-is-required/user-roles-permissions.md)
    + [システム管理者のタスク](what-is-required/add-users-assign-cm-roles.md)
    + [Cloud Manager に移動する](what-is-required/navigate-to-cloud-manager.md)
-   + [AEMインスタンスへのアクセス](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [AEMインスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager プログラム {#getting-access}
    + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
    + 本番プログラム{#production-programs}
