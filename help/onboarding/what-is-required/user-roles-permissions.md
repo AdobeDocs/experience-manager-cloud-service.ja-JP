@@ -2,10 +2,10 @@
 title: ユーザーの役割と権限
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 30%
+source-wordcount: '449'
+ht-degree: 28%
 
 ---
 
@@ -14,11 +14,9 @@ ht-degree: 30%
 
 ## ユーザーのロール {#user-roles}
 
-Cloud Manager の多くの機能には、使用するための特定の権限が必要です。
-
 Cloud Managerの多くの機能では、操作に特定の権限が必要となり、割り当てられたロールと権限に基づいてユーザーインターフェイス内で行うアクションが制限されます。 アクションを実行する権限がない場合、インターフェイスコントロールは存在しますが、無効になっています。
 
-実行したい操作があるが、実行できない場合は、[ロール定義](#permissions)に関連付けられている権限を確認してください。 目標に応じて、システム管理者に問い合わせて、必要なロールを要求できます。
+実行したい操作があるが、実行できない場合は、[ユーザーの役割と権限](#permissions)の下のセクションを確認してください。 目標に応じて、システム管理者に問い合わせて、必要なロールを要求できます。
 
 Cloud Manager では、現在、特定の機能を使用できるかどうかを制御する次の 4 つのユーザーロールを定義しています。
 
@@ -34,6 +32,9 @@ Cloud Manager では、現在、特定の機能を使用できるかどうかを
 
 Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサインインし、右上隅のプロファイルアイコンを選択し、下の図のように「**ユーザーロール**」を選択します。
 
+>[!NOTE]
+>Cloud Managerへのログインについて詳しくは、[Cloud Managerへの移動](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
+
 ![](/help/onboarding/what-is-required/assets/admin-console-9.png)
 
 ### 統合製品プロファイル{#integration-product-profile}
@@ -41,7 +42,7 @@ Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサ
 上記に加えて、Cloud Managerでは「Integrations -Cloud Service」という製品プロファイルが自動的に作成されます。 この製品プロファイルは、Adobe Experience Manager製品と他のAdobe製品との統合に使用されます。 この製品プロファイル&#x200B;**は削除できません。** 誤ってこのプロファイルを削除した場合は、手動で再作成する必要があります。 このプロファイルの表示名&#x200B;**は**`CM_CS_DEFAULT`でなければなりません。
 
 
-## ロール定義に関連付けられている権限{#permissions}
+## ユーザーの役割と権限{#permissions}
 
 [!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーは異なる権限を持ち、プログラムの追加と編集、環境の追加、および配置の承認を行うことができます。
 
