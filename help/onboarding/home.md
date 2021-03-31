@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
+source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '905'
 ht-degree: 43%
 
 ---
@@ -28,7 +28,7 @@ AEMをCloud Serviceとしてジャーニーを開始して、ありがとうご�
 
 契約書に署名すると、次のイベントが行われます。
 
-1. Adobeは、お客様の組織のプロビジョニングを完了します。このメールが送信され、[管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)にユーザーの追加、ロールへの割り当て、適切なCloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)へのアクセスを通知します。[
+1. Adobeは、組織のシステム管理者にご案内の電子メールを受け取り、[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)にユーザーの追加、ロールへの割り当て、Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)への適切なアクセスを行うことができます。[
 
 1. システム管理者が追加したユーザーには、Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)への[アクセス権があることを知らせるご案内の電子メールが送信されます。 ユーザーは、[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)を使用してログインし、ここからCloud Managerとのジャーニーを開始できます。
 
