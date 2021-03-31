@@ -2,11 +2,13 @@
 title: アセットマイクロサービスを使用したアセットの処理
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
+feature: asset computeマイクロサービス，ワークフロー，リリース情報，アセット処理
+role: アーキテクト，管理者
 translation-type: tm+mt
-source-git-commit: 85dc85fbface3d1ee26d01f48bb1f2445306419d
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 98%
 
 ---
 
