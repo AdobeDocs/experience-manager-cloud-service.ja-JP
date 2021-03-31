@@ -1,10 +1,12 @@
 ---
 title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: headlessコンテンツを配信する際に、AEMコンテンツフラグメントをGraphQLと共に使用する方法を学びます。
+feature: コンテンツフラグメント
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '720'
 ht-degree: 85%
 
 ---
