@@ -1,11 +1,12 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: AEMのヘッドレス配信機能の重要な部分、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
+feature: コンテンツフラグメント，アセットHTTP API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 98%
+source-wordcount: '1958'
+ht-degree: 97%
 
 ---
 
