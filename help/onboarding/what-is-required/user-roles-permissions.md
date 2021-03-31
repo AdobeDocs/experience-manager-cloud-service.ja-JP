@@ -2,7 +2,7 @@
 title: ユーザーの役割と権限
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: 98c7105aed1b9092a72005cf2cfab4bcf227601f
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 44%
@@ -12,7 +12,7 @@ ht-degree: 44%
 
 # ユーザーの役割と権限{#user-roles-permissions}
 
-Adobeは、AdobeIdentity Managementシステム(IMS)に、会社の&#x200B;**組織** IDを作成します。このIDでは、すべてのユーザーとユーザーの権限を管理できます。 この組織のメンバーである必要があり、[!UICONTROL Experience Cloud]サービスへのアクセスを許可される各ユーザーは、独自の&#x200B;**Adobe ID**&#x200B;を持つ必要があります。
+Adobeは、AdobeIdentity Managementシステム(IMS)に、会社の&#x200B;**組織** IDを作成します。このIDでは、すべてのユーザーとユーザーの権限を管理できます。 この組織のメンバーである必要があり、[!UICONTROL Experience Cloud]サービスへのアクセスを許可される各ユーザーは、独自の&#x200B;**[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**&#x200B;を持つ必要があります。
 
 ## ユーザーのロール {#user-roles}
 
