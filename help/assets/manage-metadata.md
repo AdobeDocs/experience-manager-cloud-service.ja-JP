@@ -3,11 +3,13 @@ title: デジタルアセットのメタデータの管理
 description: メタデータのタイプと、 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager]  でメタデータに基づいてアセットを自動的に整理および処理できる方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
+feature: アセット管理，メタデータ
+role: 実業家，建築家，管理者
 translation-type: tm+mt
-source-git-commit: bd02261e62de28860c6c95794cd69e6529240b6d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 98%
+source-wordcount: '1861'
+ht-degree: 97%
 
 ---
 
