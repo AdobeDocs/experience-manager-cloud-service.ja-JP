@@ -2,7 +2,7 @@
 title: Cloud Managerへの移動
 description: Cloud Managerランディングページに移動する方法については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 20%
@@ -27,7 +27,7 @@ Cloud Managerは、Cloud ServiceとしてAEMの重要な部分です。 これ�
 
 1. Cloud Managerカードの「**Launch**」をクリックします。
 [!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager ランディングページ {#cloud-manager-landing}
