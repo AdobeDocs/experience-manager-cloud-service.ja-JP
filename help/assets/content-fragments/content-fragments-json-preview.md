@@ -1,11 +1,13 @@
 ---
 title: プレビュー - JSON 表現
 description: AEMヘッドレスソリューションを実装する際に、コンテンツフラグメントのJSON表現を簡単にプレビューする方法を説明します。
+feature: コンテンツフラグメント
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 57%
+source-wordcount: '117'
+ht-degree: 58%
 
 ---
 
