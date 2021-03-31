@@ -1,11 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
 description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の主な変更点。'
+feature: リリース情報
+role: 実業家，リーダー，アーキテクト，管理者
 translation-type: tm+mt
-source-git-commit: ab8cc0e3d685b5aba29e3320453ed7789f53083a
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '764'
+ht-degree: 57%
 
 ---
 
