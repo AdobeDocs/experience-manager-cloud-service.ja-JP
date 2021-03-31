@@ -2,11 +2,12 @@
 title: Dynamic Media Classic を使用した CDN キャッシュの無効化
 description: 「CDN(コンテンツ配信ネットワーク)キャッシュコンテンツを無効にして、キャッシュの期限が切れるのを待たずに、Dynamic Mediaから配信されるアセットをすばやく更新する方法を説明します。」
 feature: アセット管理，Dynamic Mediaクラシック
-topic: 開業医
+topic: 業務担当者
+role: 管理者、実業家
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '693'
 ht-degree: 46%
 
 ---
