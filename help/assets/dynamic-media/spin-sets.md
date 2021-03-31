@@ -2,11 +2,12 @@
 title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。。
 feature: スピンセット
-topic: 開業医
+topic: 業務担当者
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1833'
 ht-degree: 77%
 
 ---
