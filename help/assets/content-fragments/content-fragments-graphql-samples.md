@@ -1,11 +1,12 @@
 ---
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
 description: AEMでGraphQLを使用し、サンプルコンテンツとクエリを調べることで、コンテンツを無理に処理する方法を学びます。
+feature: コンテンツフラグメント，GraphQL API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 95%
+source-wordcount: '1422'
+ht-degree: 94%
 
 ---
 
