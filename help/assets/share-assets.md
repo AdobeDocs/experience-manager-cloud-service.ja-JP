@@ -2,10 +2,12 @@
 title: アセット、フォルダー、コレクションをリンクとして共有
 description: ここでは、Adobe [!DNL Experience Manager Assets] 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
 contentOwner: AG
+feature: アセット管理，コラボレーション，アセットの配布
+role: 業務担当者、管理者
 translation-type: tm+mt
-source-git-commit: 77170e7ea2e75215a4615e7cd560179756005b6f
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '747'
 ht-degree: 89%
 
 ---
