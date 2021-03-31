@@ -4,9 +4,9 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
-feature-set: Experience Manager Assets
+feature-set: Experience Manager Assets, Experience Manager
 translation-type: tm+mt
-source-git-commit: 9f47f53524ab89c368ab260bc0d16e47ee81a230
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 96%
