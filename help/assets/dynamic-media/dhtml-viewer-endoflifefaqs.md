@@ -1,12 +1,13 @@
 ---
 title: DHTML ビューアのサポート終了
 description: 2014年1月31日をもって、DHTMLビューアプラットフォームは正式に提供終了となります。
-topic: 開業医
+topic: 業務担当者
+role: 管理者、実業家
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 54%
+source-wordcount: '47'
+ht-degree: 55%
 
 ---
 
