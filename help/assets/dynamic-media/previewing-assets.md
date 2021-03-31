@@ -2,12 +2,13 @@
 title: アセットのプレビュー
 description: Dynamic Media のアセットをプレビューする方法について説明します。。
 feature: アセット管理
-topic: 開業医
+topic: 業務担当者
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1215'
+ht-degree: 82%
 
 ---
 
