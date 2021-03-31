@@ -2,11 +2,12 @@
 title: Dynamic Media のトラブルシューティング
 description: Dynamic Media 使用時のトラブルシューティングのヒント
 topic: 「管理者、実業家」
+role: 管理者、実業家
 translation-type: tm+mt
-source-git-commit: 15cf59ccc5cef515bfbda2da790fa5eaf0247721
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 78%
+source-wordcount: '996'
+ht-degree: 77%
 
 ---
 
