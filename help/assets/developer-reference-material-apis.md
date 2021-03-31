@@ -2,10 +2,12 @@
 title: ' [!DNL Assets] の開発者向けリファレンス'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
 contentOwner: AG
+feature: API，アセットHTTP API
+role: 開発者，アーキテクト，管理者
 translation-type: tm+mt
-source-git-commit: 044740339ea7f164dd4c28650fe71a5eb11615d6
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1395'
 ht-degree: 93%
 
 ---
