@@ -2,11 +2,13 @@
 title: Connected Assets を使用した [!DNL Sites] での DAM アセットの共有
 description: リモート [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
+feature: アセット管理，接続されたアセット，アセットの配布
+role: 管理者，業務従事者，アーキテクト
 translation-type: tm+mt
-source-git-commit: 0f42ba52f8e9f593e95fc4187c6461a660ff696d
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 92%
+source-wordcount: '2908'
+ht-degree: 91%
 
 ---
 
