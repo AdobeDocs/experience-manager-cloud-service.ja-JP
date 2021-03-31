@@ -1,10 +1,12 @@
 ---
 title: コンテンツフラグメント - 設定ブラウザー
 description: AEMの強力なヘッドレス配信機能を利用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
+feature: コンテンツフラグメント
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '275'
 ht-degree: 84%
 
 ---
