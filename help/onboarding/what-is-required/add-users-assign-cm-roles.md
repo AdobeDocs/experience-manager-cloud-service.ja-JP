@@ -2,15 +2,21 @@
 title: 'システム管理者のタスク '
 description: このページで、ユーザーを追加し、システム管理者としてCloud Managerの役割に割り当てる方法を学習します
 translation-type: tm+mt
-source-git-commit: fdf8416b281b14e3dd49d1e28c3c241ddfd2d342
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 
 # システム管理者タスク{#add-users-assign}
+
+システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 このユーザーは、Admin ConsoleおよびCloud Manager内でタスクを行う開始に初めてアクセスできます。
+システム管理者は、次の組織タスクを実行します。
+
+* ユーザーの追加
+* Cloud Managerのロールと権限へのユーザーの割り当て
 
 ## ユーザーの追加{#add-users}
 
