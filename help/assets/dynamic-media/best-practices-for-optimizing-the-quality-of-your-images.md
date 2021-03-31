@@ -3,11 +3,12 @@ title: 画質最適化のベストプラクティス
 description: Dynamic Media で画像アセットの画質の最適化に使用できるベストプラクティスについて説明します。
 contentOwner: Rick Brough
 feature: アセット管理
-topic: 開業医
+topic: 業務担当者
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1458'
 ht-degree: 92%
 
 ---
