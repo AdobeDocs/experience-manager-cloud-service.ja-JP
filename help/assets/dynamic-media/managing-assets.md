@@ -2,11 +2,12 @@
 title: Dynamic Media アセットの管理について
 description: Dynamic Media アセットの操作方法について説明します。
 feature: アセット管理
-topic: 開業医
+topic: 業務担当者
+role: 管理者、実業家
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '126'
 ht-degree: 69%
 
 ---
