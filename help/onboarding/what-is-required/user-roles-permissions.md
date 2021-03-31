@@ -2,17 +2,15 @@
 title: ユーザーの役割と権限
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
+source-git-commit: 683e660bace4bf2d21ab6b373c75f78e306f5206
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 44%
+source-wordcount: '445'
+ht-degree: 30%
 
 ---
 
 
 # ユーザーの役割と権限{#user-roles-permissions}
-
-Adobeは、AdobeIdentity Managementシステム(IMS)に、会社の&#x200B;**組織** IDを作成します。このIDでは、すべてのユーザーとユーザーの権限を管理できます。 この組織のメンバーである必要があり、[!UICONTROL Experience Cloud]サービスへのアクセスを許可される各ユーザーは、独自の&#x200B;**[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**&#x200B;を持つ必要があります。
 
 ## ユーザーのロール {#user-roles}
 
@@ -32,18 +30,6 @@ Cloud Manager では、現在、特定の機能を使用できるかどうかを
 >[!NOTE]
 >Admin Console の「開発者」ペルソナは、[!UICONTROL Cloud Manager] の「デベロッパー」ロールとは無関係です。
 
-## ロールの定義 {#role-definitions}
-
-ロールの概要を次の表に示します。
-
-| [!UICONTROL Cloud Manager] のロール | 説明 |
-|--- |--- |
-| ビジネスオーナー | KPI の定義、実稼動デプロイメントの承認、重大な 3 層エラーのオーバーライドを担当します。 |
-| プログラムマネージャー | [!UICONTROL Cloud Manager] を使用して、チームの設定、ステータスのレビュー、KPI の確認をおこないます。重大な 3 層エラーを承認することができます。 |
-| デプロイメントマネージャー | デプロイメント作業を管理します。[!UICONTROL Cloud Manager] を使用して、ステージング環境または実稼動環境へのデプロイメントを実行します。CI/CD パイプラインを編集できます。重大な 3 層エラーを承認することができます。Git リポジトリにアクセスできます。 |
-| デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリにアクセスして、コードをコミットできます。 |
-| コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、AEM にアクセスできます。 |
-
 ## 役割の表示{#view-roles}
 
 Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサインインし、右上隅のプロファイルアイコンを選択し、下の図のように「**ユーザーロール**」を選択します。
@@ -57,8 +43,7 @@ Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサ
 
 ## ロール定義に関連付けられている権限{#permissions}
 
-[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーには、主要業績評価指標（KPI）を定義しデプロイメントを承認できる様々な権限があります。
-
+[!UICONTROL Cloud Manager] には、適切な権限を持つ事前設定済みのロールが用意されています。例えば、デベロッパーには、開発したコードを **Git リポジトリ**&#x200B;にプッシュする権限があります。また、ビジネスオーナーは異なる権限を持ち、プログラムの追加と編集、環境の追加、および配置の承認を行うことができます。
 
 各ロールには、それぞれのロールに関連付けられた特定の権限があります。 次の表に、ロール、使用可能な関数のリスト、および関数を実行できるロールの概要を示します。
 
