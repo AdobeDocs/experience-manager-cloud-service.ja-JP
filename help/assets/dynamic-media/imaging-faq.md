@@ -2,11 +2,12 @@
 title: スマートイメージング
 description: 「各ユーザー独自の表示特性を適用して、エクスペリエンスに最適化された適切な画像を自動的に提供することで、パフォーマンスとエンゲージメントを向上させるスマートイメージングについて説明します。」
 feature: アセット管理，レンディション
-topic: 開業医
+topic: 業務担当者
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1865'
 ht-degree: 54%
 
 ---
