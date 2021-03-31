@@ -2,11 +2,12 @@
 title: 360/VR ビデオ
 description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを操作する方法を学びます。
 feature: 360 VR ビデオ
-topic: 開業医
+topic: 業務担当者
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '946'
 ht-degree: 63%
 
 ---
