@@ -2,10 +2,10 @@
 title: Cloud Managerへの移動
 description: Cloud Managerランディングページに移動する方法については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: 3df1e327b2e0ce4239ad522848bdf2877cd86451
+source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 20%
+source-wordcount: '445'
+ht-degree: 24%
 
 ---
 
@@ -14,24 +14,22 @@ ht-degree: 20%
 
 Cloud Managerは、Cloud ServiceとしてAEMの重要な部分です。 これにより、組織はクラウド内のExperience Managerを自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI/CDパイプラインの設定とキックオフを行うことができます。
 
-システム管理者からCloud Managerへのアクセス権が付与されると、Cloud Managerのログインページが表示されます。このページは[Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)からもアクセスできます。
+システム管理者からCloud Managerへのアクセス権が付与されると、[Adobe Experience Cloud](https://experience.adobe.com)ホームページに連絡する電子メールが届きます。
 
 >[!NOTE]
->ユーザーとして追加され、Admin Console管理者によってCloud Managerのロール(製品プロファイル)に割り当てられる必要があります。
+>ユーザーとして追加され、システム管理者によって少なくとも1つのCloud Managerロール(Admin Console内の製品プロファイル)に割り当てられる必要があります。
 
 1. 次の図に示すように、ご案内の電子メールで、**「開始**」をクリックします。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   または、
+   >[!NOTE]
+   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 [!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。詳しくは、下の[Cloud Managerランディングページ](#cloud-manager-landing)の節を参照してください。
 
-   1. [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに移動します。
+1. **Experience Manager**を選択します。
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
-   1. **Experience Manager**を選択します。
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
-
-   1. Cloud Managerカードの「**Launch**」をクリックします。
-[!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
-      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+1. Cloud Managerカードの「**Launch**」をクリックします。 [!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager ランディングページ {#cloud-manager-landing}
