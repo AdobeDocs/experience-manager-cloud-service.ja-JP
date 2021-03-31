@@ -2,10 +2,12 @@
 title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
 description: 障害を持つユーザーにとって  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  のアクセシビリティ機能がどのように役立つかを説明します。
 contentOwner: AG
+feature: アクセシビリティ，アセット管理
+role: 実業家，建築家，リーダー
 translation-type: tm+mt
-source-git-commit: d2ab7f8de4d18b48c312c9beabc58c77da7b2dfc
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1919'
 ht-degree: 99%
 
 ---
