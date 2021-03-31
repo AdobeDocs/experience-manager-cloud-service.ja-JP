@@ -2,11 +2,13 @@
 title: アセットの透かしの設定
 description: デジタルアセットへの透かしの追加。
 contentOwner: AG
+feature: アセット管理，発行
+role: 業務担当者、管理者
 translation-type: tm+mt
-source-git-commit: 5be8ab734306ad1442804b3f030a56be1d3b5dfa
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 100%
+source-wordcount: '200'
+ht-degree: 98%
 
 ---
 
