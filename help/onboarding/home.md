@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: 7271f8146af09dc340a608f1e48f7b9f59dbb5ad
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 52%
+source-wordcount: '770'
+ht-degree: 50%
 
 ---
 
@@ -37,18 +37,20 @@ AEMをCloud Serviceとしてジャーニーを開始して、ありがとうご�
 
 **[システム管理者のタスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 次のドキュメントには、組織の基本的なタスク（以下を含む）についての情報が含まれています。
+システム管理者は、アクセスから権限まで、ユーザーのあらゆる側面を管理します。 このユーザーは、Admin ConsoleおよびCloud Manager内でタスクを行う開始に初めてアクセスできます。
+次のドキュメントページには、基本的な組織のタスクを説明する情報が含まれています。
 
 * ユーザーの追加
 * Cloud Managerのロールと権限へのユーザーの割り当て
 
 **[Cloud Manager に移動する](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-Cloud Managerにアクセスして、AEMでCloudジャーニーを使い始めます。 ユーザーとして追加され、Cloud Managerの役割に割り当てられたので、[プログラム](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)の作成、[環境](/help/implementing/cloud-manager/manage-environments.md)の追加、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセス、[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)の設定、[コードのデプロイなど、様々なタスクを行えます/>。](/help/implementing/cloud-manager/deploy-code.md)
+ユーザーとして追加され、Cloud Managerロールに割り当てられたので、Cloud Managerにアクセスして、AEMでCloudジャーニーを使い始めることができます。 [プログラム](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)の作成、[環境](/help/implementing/cloud-manager/manage-environments.md)の追加、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセス、[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)の設定、[コード](/help/implementing/cloud-manager/deploy-code.md)の導入など、様々なタスクを行う準備が整っています。
+Cloud Managerは、Cloud ServiceとしてAEMの重要な部分です。 これにより、組織はクラウド内のExperience Managerを自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI/CDパイプラインの設定とキックオフを行うことができます。
 
 **[AEMインスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-このセクションでは、システム管理者がAEMインスタンスへのアクセスをユーザーに許可する方法、または環境を作成したユーザーが他のユーザーにAEMインスタンスへのアクセスを許可する方法について説明します。
+このセクションでは、システム管理者または環境を作成したユーザが、他のユーザにAEMインスタンスへのアクセス権を与える方法について説明します。
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
