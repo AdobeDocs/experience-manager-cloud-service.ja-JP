@@ -2,10 +2,12 @@
 title: ' [!DNL Assets]内のファイルのチェックインとチェックアウト'
 description: 編集のためにアセットをチェックアウトし、変更が完了した後にアセットをチェックインする方法について説明します。
 contentOwner: AG
+feature: アセット管理
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: 8db9f899cee8f01a4c2aac93ccecc052f9780bc0
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '435'
 ht-degree: 49%
 
 ---
