@@ -2,9 +2,9 @@
 title: 'AEMインスタンスへのユーザーアクセスの許可 '
 description: システム管理者がAEMインスタンスへのアクセス権をユーザーに付与する方法については、次のページを参照してください
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 580ac3f734042b3116f505c34629cee0331c0bac
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # AEMインスタンスへのユーザーアクセスの許可{#accessing-aem-instance}
 
-システム管理者として、次の手順に従ってAEMインスタンスへのアクセスをユーザーに許可します。
+システム管理者として、次の手順に従ってAEMインスタンスへのユーザーアクセスを許可します。
 
 1. Cloud Managerに移動し、次に示すように、**環境**&#x200B;カードの&#x200B;**「アクセスを管理**」ボタンをクリックします。
 
