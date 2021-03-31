@@ -2,7 +2,7 @@
 title: ユーザーの役割と権限
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: 2779b20f3b4c13ef604fa2ad61f17c836e228422
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 44%
@@ -44,7 +44,7 @@ Cloud Manager では、現在、特定の機能を使用できるかどうかを
 | デベロッパー | カスタムアプリケーションコードを開発およびテストします。主に [!UICONTROL Cloud Manager] を使用してステータスを確認します。Git リポジトリにアクセスして、コードをコミットできます。 |
 | コンテンツ作成者 | 通常は、[!UICONTROL Cloud Manager] を操作しません。（[!UICONTROL Experience Cloud] からナビゲートした）[!UICONTROL Cloud Manager] プログラムスイッチャーを使用して、AEM にアクセスできます。 |
 
-### 役割の表示{#view-roles}
+## 役割の表示{#view-roles}
 
 Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサインインし、右上隅のプロファイルアイコンを選択し、下の図のように「**ユーザーロール**」を選択します。
 
