@@ -5,11 +5,12 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-topic: 開業医
+topic: 業務担当者
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: bd7734c0f132b660c15a7eba0a6f92042e377a63
+source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2939'
 ht-degree: 52%
 
 ---
