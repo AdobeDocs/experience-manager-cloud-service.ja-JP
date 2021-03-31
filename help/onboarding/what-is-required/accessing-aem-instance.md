@@ -2,9 +2,9 @@
 title: 'AEMインスタンスへのユーザーアクセスの許可 '
 description: システム管理者がAEMインスタンスへのアクセス権をユーザーに付与する方法については、次のページを参照してください
 translation-type: tm+mt
-source-git-commit: 56bbc31bd20f0cf8034a8486efb965a64a040c51
+source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 1. Cloud Managerに移動し、次に示すように、**環境**&#x200B;カードの&#x200B;**「アクセスを管理**」ボタンをクリックします。
 
    >[!NOTE]
-   >Admin Consoleにユーザを追加するには、システム管理者または環境を作成したユーザである必要があります。 環境を作成する権限を持つのは、Business Owner（ビジネス所有者）またはDeployment Manager（デプロイメントマネージャー）のロールのみです。 ロールと関連付けられた権限の詳細については、「[ユーザーの追加とCloud Managerロールの割り当て](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)」を参照してください。
+   >Admin Consoleにユーザを追加するには、システム管理者または環境を作成したユーザである必要があります。 環境を作成する権限を持つのは、Business Owner（ビジネス所有者）またはDeployment Manager（デプロイメントマネージャー）のロールのみです。 役割と関連付けられた権限の詳細については、[ユーザーの役割と権限](/help/onboarding/what-is-required/user-roles-permissions.md)を参照してください。 また、環境の詳細については、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/sys-admin6.png)
 
