@@ -2,16 +2,18 @@
 title: アセットメタデータの一括読み込みおよび書き出し
 description: この記事では、メタデータの読み込みおよび書き出しを一括でおこなう方法について説明します。
 contentOwner: AG
+feature: メタデータ
+role: 業務担当者、管理者
 translation-type: tm+mt
-source-git-commit: 8110259a910c891a5bcf7507cfa9897603a45c91
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '669'
 ht-degree: 100%
 
 ---
 
 
-# アセットメタデータの一括読み込みおよび書き出し  {#import-and-export-asset-metadata-in-bulk}
+# アセットメタデータの一括読み込みおよび書き出し {#import-and-export-asset-metadata-in-bulk}
 
 AEM Assets では、CSV ファイルを使用して、アセットのメタデータを一括で読み込むことができます。CSV ファイルを読み込むことで、最近アップロードされたアセットや既存のアセットの一括更新をおこなうことができます。また、サードパーティシステムから CSV 形式でアセットメタデータを一括で取り込むこともできます。
 
