@@ -2,7 +2,7 @@
 title: Cloud Managerへの移動
 description: Cloud Managerランディングページに移動する方法については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: 9fa8c6632188874036ccfe7570e53a6971ff74b4
+source-git-commit: eeee28ac5889f18ae147d390e6dc8c2d7cb96591
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 20%
@@ -19,15 +19,19 @@ Cloud Managerは、Cloud ServiceとしてAEMの重要な部分です。 これ�
 >[!NOTE]
 >ユーザーとして追加され、Admin Console管理者によってCloud Managerのロール(製品プロファイル)に割り当てられる必要があります。
 
-1. ご案内の電子メールで、**「はじめに」**&#x200B;をクリックするか、[Cloud Manager](https://experience.adobe.com)に移動して、Adobe IDを使用してログインします。\
+1. 次の図に示すように、ご案内の電子メールで、**「開始**」をクリックします。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-1. **Experience Manager**を選択します。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+   または、
 
-1. Cloud Managerカードの「**Launch**」をクリックします。
+   1. [Adobe Experience Cloud](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに移動します。
+
+   1. **Experience Manager**を選択します。
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+
+   1. Cloud Managerカードの「**Launch**」をクリックします。
 [!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+      ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager ランディングページ {#cloud-manager-landing}
