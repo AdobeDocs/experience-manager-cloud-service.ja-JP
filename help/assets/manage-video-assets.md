@@ -2,11 +2,13 @@
 title: ビデオアセットの管理
 description: ' [!DNL Adobe Experience Manager] でビデオアセットをアップロード、プレビュー、注釈、公開します。'
 contentOwner: AG
+feature: アセット管理，公開，コラボレーション，ビデオ
+role: 業務担当者
 translation-type: tm+mt
-source-git-commit: deab2183447e64e8a98f3072ceab2ef2216c4528
+source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '626'
+ht-degree: 99%
 
 ---
 
