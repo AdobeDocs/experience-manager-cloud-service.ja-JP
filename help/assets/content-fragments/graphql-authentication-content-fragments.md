@@ -1,11 +1,12 @@
 ---
 title: コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証
 description: ヘッドレスコンテンツ配信を保護するために、リモートAEM GraphQLクエリに必要な認証を理解します。
+feature: コンテンツフラグメント，GraphQL API
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 86%
+source-wordcount: '235'
+ht-degree: 84%
 
 ---
 
