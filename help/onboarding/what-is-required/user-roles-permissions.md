@@ -2,7 +2,7 @@
 title: Cloud Manager のロール
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: f518cab23b1dadceee5800b3454f74d341e941c4
+source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 19%
@@ -65,7 +65,7 @@ Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサ
 | プログラム追加<br>プログラムの編集 | 追加新しいプログラム。<br>プログラムの編集 — ソリュ追加ーションまたはアドオンの | x |  |  |  |
 | 環境の作成 | Prod+Stage、Dev、環境を作成します。 | x | x |  |  |
 | 環境の更新 | Prod+Stage、Dev、環境を更新します。 | x | x |  |  |
-| 環境を削除 | 非prod、開発、環境を削除します。 | x | x |  |  |
+| 開発環境の削除 | 開発環境を削除します。 | x | x |  |  |
 | パイプライン設定 | パイプラインの設定または編集を参照してください。 |  | x |  |  |
 | パイプラインの実行 | パイプラインの開始。 | x | x |  |  |
 | パイプラインの実行 | 重要な3層のエラーを拒否/承認します。 | x | x | x |  |
