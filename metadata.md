@@ -5,8 +5,10 @@ git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.
 index: y
 type: ドキュメント
 solution: Experience Manager
+version: Cloud Service
+cloud: Experience Cloud
 translation-type: tm+mt
-source-git-commit: 1140a05a137ecebb443f69c9c93d9d82f5d4815c
+source-git-commit: 6908b5215dcbff0692d4e03dd1588ca5d34aeffe
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 69%
