@@ -2,9 +2,9 @@
 title: 'システム管理者のタスク '
 description: このページで、ユーザーを追加し、システム管理者としてCloud Managerの役割に割り当てる方法を学習します
 translation-type: tm+mt
-source-git-commit: f1f5766a41763634e0aaba44e55471ac2ea5dc8f
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -44,17 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >前述の[ユーザーの役割と権限](#user-roles)および[役割の定義に関連付けられている権限](#permissions)の節を参照し、適切なAdmin Consoleに&#x200B;****&#x200B;で適切な役割が割り当てられていることを確認してください。
+   >[ユーザーの役割と権限](#user-roles)および[役割の定義に関連付けられている権限](#permissions)を参照し、適切なAdmin Consoleに&#x200B;****&#x200B;で適切な役割が割り当てられていることを確認してください。
 
    これで、ユーザーをCloud Service製品コンテキストとしてAdobe Experience Managerに追加し、適切なロールまたは製品プロファイルを使用してセットアップします。
 
-   例えば、次の
-
-   * ***Business Owner***：新しいプログラムに対する権限、またはプログラムの編集、環境の追加または更新、パイプラインの追加/編集/削除、パイプラインの実行、AEM環境またはコード品質へのコードのデプロイを行うことができます。
-
-   * ***Deployment Manager***、環境の追加または更新、パイプラインの実行、AEM環境またはコード品質へのコードのデプロイを行う権限があります。
-
-   * ***開発者***、Gitにアクセスする個人アクセストークンを生成する権限があります。
-
-      >[!NOTE]
-      > 1人のユーザーを複数のロールに割り当てることができます。 例えば、ビジネス所有者ロールとDeployment Managerロールの両方をユーザーに割り当てると、これらの権限の組み合わせまたは合計が表示されます。
