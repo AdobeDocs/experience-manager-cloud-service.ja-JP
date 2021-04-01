@@ -2,7 +2,7 @@
 title: Cloud Manager のロール
 description: このページでは、ユーザーの役割と権限について説明します。 ユーザーを追加し、Cloud Managerのロールに割り当てる方法を学ぶには、このページに従います。
 translation-type: tm+mt
-source-git-commit: e5754366cd0efa08af4c3717481743ab94dc2099
+source-git-commit: 7b5973aef0d3296a54bcf1e57bda616cdd618346
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 19%
@@ -30,7 +30,7 @@ Cloud Manager では、現在、特定の機能を使用できるかどうかを
 
 ## 役割の表示{#view-roles}
 
-Cloud Managerで自分のロールを表示するには、Cloud Manager UIにサインインし、右上隅のプロファイルアイコンを選択し、下の図のように「**ユーザーロール**」を選択します。
+Cloud Managerでロールを表示するには、Cloud Manager UIにサインインし、右上隅のプロファイルアイコンを選択し、下の図のように「**ユーザーロール**」を選択します。
 
 >[!NOTE]
 >Cloud Managerへのログインについて詳しくは、[Cloud Managerへの移動](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
