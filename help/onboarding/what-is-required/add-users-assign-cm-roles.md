@@ -2,9 +2,9 @@
 title: 'システム管理者のタスク '
 description: このページで、ユーザーを追加し、システム管理者としてCloud Managerの役割に割り当てる方法を学習します
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 3afed5a76c7dd82952ed15f582b7f2c7a36b9db9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    ![](/help/onboarding/what-is-required/assets/admin-console-3.png)
 
    >[!NOTE]
-   >[ユーザーの役割と権限](#user-roles)および[役割の定義に関連付けられている権限](#permissions)を参照し、適切なAdmin Consoleに&#x200B;****&#x200B;で適切な役割が割り当てられていることを確認してください。
+   >Cloud Managerで提供される役割と権限について詳しくは、[Cloud Managerの役割](/help/onboarding/what-is-required/user-roles-permissions.md)を参照してください。
 
    これで、ユーザーをCloud Service製品コンテキストとしてAdobe Experience Managerに追加し、適切なロールまたは製品プロファイルを使用してセットアップします。
 
