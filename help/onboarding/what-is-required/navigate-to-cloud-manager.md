@@ -2,10 +2,10 @@
 title: Cloud Managerへの移動
 description: Cloud Managerランディングページに移動する方法については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: 4b9476b094438acd08c945f0102b029b6792cb88
+source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 24%
+source-wordcount: '458'
+ht-degree: 23%
 
 ---
 
@@ -58,7 +58,7 @@ Cloud Managerは、Cloud ServiceとしてAEMの重要な部分です。 これ�
 
    ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-ここから、Cloud Managerのビジネス所有者の役割など、適切な権限を持つユーザーは、**プログラム追加**&#x200B;を選択して[ウィザード](/help/onboarding/getting-access-to-aem-in-cloud/using-the-wizard.md)を起動できます。
+ここから、Cloud Managerのビジネス所有者の役割など、適切な権限を持つユーザーは、**追加プログラム**&#x200B;を選択して、[追加プログラムウィザード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)を起動できます。
 
 Cloud Managerでプログラムを追加する方法については、次を参照してください。
 
