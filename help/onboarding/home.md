@@ -2,9 +2,9 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 translation-type: tm+mt
-source-git-commit: b48be794da0b91722fb45ccefbe83e2b0b22d2a9
+source-git-commit: 6ce8b5c53de45d6466c5a835eea27a5acfff0a40
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 42%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 42%
 
 AEMをCloud Serviceとしてジャーニーを開始して、ありがとうございます。 新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Serviceに対する成功の準備ができるようにするための出発点として機能します。
 
-このガイドは、Cloud Managerの使い始めを迅速に行う際に役立ちます。 Cloud Managerに追加されたユーザーに、割り当てられたロール(Admin Consoleの製品プロファイル)と関連する権限を与えるには、Adobe IDおよびシステム管理者の支援が必要です。 システム管理者がAdmin Consoleを使用してこれを行う方法については、説明しています。 Cloud Managerの役割のリスト(Admin Consoleでは製品プロファイルと呼ばれる)と、その関連する権限について詳しく説明し、組織の様々なユーザーにどの役割が必要かを判断できます。
+このガイドは、Cloud Managerの使い始めを迅速に行う際に役立ちます。 Cloud Managerに追加されたユーザーに、割り当てられたロール(Admin Consoleの製品プロファイルと呼ばれる)と関連する権限を与えるには、Adobe IDおよびシステム管理者の支援が必要です。 システム管理者がAdmin Consoleを使用してこれを行う方法については、説明しています。 Cloud Managerの役割のリスト(Admin Consoleでは製品プロファイルと呼ばれる)と、その関連する権限について詳しく説明し、組織の様々なユーザーにどの役割が必要かを判断できます。
 
 次の図は、Cloud Service管理者が受け取ったご案内の電子メールから始まり、AEM用Cloud Managerにとしてアクセスするユーザーを最終的に管理しているオンボーディングジャーニーを示しています。
 
@@ -28,7 +28,7 @@ AEMをCloud Serviceとしてジャーニーを開始して、ありがとうご�
 
 契約書に署名すると、次のイベントが行われます。
 
-1. Adobeは、組織のプロビジョニングを完了します。システム管理者は、ユーザーの追加、ロールへの割り当て、Cloud Managerへの適切なアクセス権の付与など、[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)を行うように通知する電子メールを受け取ります。
+1. Adobeは、組織のプロビジョニングを完了します。システム管理者は、ユーザーの追加、ロールへの割り当て、Cloud Managerへの適切なアクセス権限の付与など、[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)を行うように通知する電子メールを受け取ります。
 
 1. システム管理者が追加したユーザーにはご案内の電子メールが送信され、ユーザーは[Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)に正常に移動できます。 ユーザーはAdobe IDを使用してログインし、ここからCloud Managerとのジャーニーを開始できます。
 
