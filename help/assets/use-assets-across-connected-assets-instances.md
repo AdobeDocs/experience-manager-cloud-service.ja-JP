@@ -5,10 +5,10 @@ contentOwner: AG
 feature: アセット管理，接続されたアセット，アセットの配布
 role: 管理者，業務従事者，アーキテクト
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '2908'
-ht-degree: 91%
+source-wordcount: '2902'
+ht-degree: 92%
 
 ---
 
@@ -120,9 +120,9 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
 この接続を設定するには、次の手順に従います。
 
-1. 上記の説明に従って、接続されたアセットの設定を作成します。 ダイアログボックスで「**[!UICONTROL 接続されたアセット]**&#x200B;のオリジナルのレンディションを取得」チェックボックスを選択します。[!DNL Dynamic Media]
+1. 上記の説明に従って、接続されたアセットの設定を作成します。 機能を設定する際に、「**[!UICONTROL Dynamic Mediaに接続されたアセット用にオリジナルのレンディションを取得]**」オプションを選択します。
 
-1. ローカル[!DNL Sites]およびリモート[!DNL Assets]の展開に対して[!DNL Dynamic Media]を構成します。 [configure [!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#configuring-dynamic-media-cloud-services)の指示に従います。
+1. ローカル[!DNL Sites]およびリモート[!DNL Assets]の展開に対して[!DNL Dynamic Media]を構成します。 [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)の指示に従います。
 
    * すべての設定で同じ会社名を使用します。
    * ローカル[!DNL Sites]の[!UICONTROL Dynamic Media同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。 Sites展開で必要なのは、[!DNL Dynamic Media]アカウントへの読み取り専用アクセスのみです。
