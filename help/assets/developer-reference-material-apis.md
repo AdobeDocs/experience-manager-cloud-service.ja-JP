@@ -5,15 +5,15 @@ contentOwner: AG
 feature: API，アセットHTTP API
 role: 開発者，アーキテクト，管理者
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 70068609e51f96c010204b8915593a52f610aded
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 93%
+source-wordcount: '1397'
+ht-degree: 92%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] API と開発者向けリファレンス資料 {#assets-cloud-service-apis}
+# [!DNL Adobe Experience Manager Assets] 開発者用の使用例、APIおよびリファレンス資料  {#assets-cloud-service-apis}
 
 このドキュメントは、[!DNL Assets] as a [!DNL Cloud Service] のデベロッパー向けリファレンス資料およびリソースが含まれています。新しいアップロードモジュール、API リファレンス、後処理ワークフローで提供されるサポートに関する情報が含まれています。
 
