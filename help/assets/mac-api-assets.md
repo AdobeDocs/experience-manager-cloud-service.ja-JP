@@ -4,14 +4,14 @@ description: ' [!DNL Experience Manager Assets] の HTTP API を使用した、�
 contentOwner: AG
 feature: アセットHTTP API,API
 role: 開発者，アーキテクト，管理者
+exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 70%
+source-wordcount: '1522'
+ht-degree: 69%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] HTTP API {#assets-http-api}
 
@@ -268,6 +268,8 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 ## ヒント、ベストプラクティス、制限事項{#tips-limitations}
 
 * [!UICONTROL オフタイム]の経過後、アセットとそのレンディションは、[!DNL Assets] Web インターフェイスでも HTTP API でも使用できません。[!UICONTROL オンタイム]が未来の場合、または[!UICONTROL オフタイム]が過去の場合、API は 404 エラーメッセージを返します。
+
+* アセットHTTP APIは、完全なメタデータを返しません。 名前空間はハードコードされ、これらの名前空間のみが返されます。 完全なメタデータについては、アセットのパス`/jcr_content/metadata.json`を参照してください。
 
 * APIを使用して更新した場合、フォルダーまたはアセットの一部のプロパティが別のプレフィックスにマップされます。 `jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 
