@@ -3,10 +3,10 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
+source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 98%
+source-wordcount: '925'
+ht-degree: 96%
 
 ---
 
@@ -54,8 +54,8 @@ ht-degree: 98%
     <td>毎日</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
-    <td>コードサンプル1ベルを参照してください。</td>
+    <td>下の場所1を参照</td>
+    <td>以下のコードサンプル 1 を参照してください。</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（この値は変更しないでください）</li>
@@ -67,7 +67,7 @@ ht-degree: 98%
     <td>毎週</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_weekly</code></td>
+    <td>下の場所2を参照</td>
     <td>以下のコードサンプル 2 を参照してください。</td>
      <td>
     <ul>
@@ -81,7 +81,7 @@ ht-degree: 98%
     <td>毎月</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_monthly</code></td>
+    <td>下の場所3を参照</td>
     <td>以下のコードサンプル 3 を参照してください。</td>
      <td>
     <ul>
@@ -93,6 +93,14 @@ ht-degree: 98%
     </ul> </td> 
   </tr>
 </table>
+
+ロケーション:
+
+1. /apps/settings/granite/operations/maintenance/granite_daily
+2. /apps/settings/granite/operations/maintenance/granite_weekly
+3. /apps/settings/granite/operations/maintenance/granite_monthly
+
+コードサンプル：
 
 コードサンプル 1
 
