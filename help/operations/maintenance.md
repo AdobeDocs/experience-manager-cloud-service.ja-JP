@@ -1,14 +1,14 @@
 ---
 title: AEM as a Cloud Service のメンテナンスタスク
-description: 'AEM as a Cloud Service のメンテナンスタスク '
+description: AEM as a Cloud Service のメンテナンスタスク
+exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+source-git-commit: d53d34e86b5e5bac6a66be8d288cf4ab8fb00ac4
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 98%
 
 ---
-
 
 # AEM as a Cloud Service のメンテナンスタスク
 
@@ -54,8 +54,8 @@ ht-degree: 100%
     <td>毎日</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td><code>/apps/settings/granite/operations/maintenance/granite_daily </code></td>
-    <td>以下のコードサンプル 1 を参照してください。</td>
+    <td>/apps/settings/granite/operations/maintenance/granite_daily</td>
+    <td>コードサンプル1ベルを参照してください。</td>
    <td>
     <ul>
     <li><strong>windowSchedule</strong> = daily（この値は変更しないでください）</li>
