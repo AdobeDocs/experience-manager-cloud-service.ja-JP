@@ -1,14 +1,14 @@
 ---
 title: コンテンツフラグメントのヘッドレス作成のクイック開始ガイド
 description: AEMコンテンツフラグメントを使用して、ヘッドレス配信用にページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法について説明します。
+exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+source-git-commit: 088fa5c90d549c52ca2832bd026be4fcddb31b78
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 90%
+source-wordcount: '392'
+ht-degree: 89%
 
 ---
-
 
 # コンテンツフラグメントのヘッドレス作成のクイック開始ガイド {#creating-content-fragments}
 
@@ -43,7 +43,7 @@ AEMコンテンツフラグメントを使用して、ヘッドレス配信用�
 1. コンテンツフラグメントエディターで、コンテンツフラグメントの詳細を指定します。
 
    ![コンテンツフラグメントエディター](../assets/content-fragment-edit.png)
-1. 「**保存して閉じる**」をタップまたはクリックします。
+1. 「**保存**」または「**保存して閉じる**」をタップまたはクリックします。
 
 コンテンツフラグメントは他のコンテンツフラグメントを参照でき、必要に応じてネストされたコンテンツ構造を作成できます。
 
