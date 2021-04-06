@@ -3,20 +3,30 @@ title: コンテンツフラグメントの管理
 description: アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
 feature: コンテンツフラグメント
 role: 業務担当者
+exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 91%
+source-wordcount: '1748'
+ht-degree: 78%
 
 ---
-
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
 
 アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
 
-コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
+[コンテンツフラグメントモデル](#creating-a-content-model)を定義したら、これらを使用して[コンテンツフラグメント](#creating-a-content-fragment)を作成できます。
+
+[コンテンツフラグメントエディター](#opening-the-fragment-editor)は、様々な[モード](#modes-in-the-content-fragment-editor)を提供し、以下を実行できます。
+
+* [コンテンツの編集](#editing-the-content-of-your-fragment) とバリエーションの [管理](#creating-and-managing-variations-within-your-fragment)
+* [フラグメントへの注釈の追加](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [コンテンツをフラグメントに関連付ける](#associating-content-with-your-fragment)
+* [メタデータの設定](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [構造ツリーの表示](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [JSON表現のプレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
@@ -25,6 +35,10 @@ ht-degree: 91%
 >* ページのオーサリング時 -「[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)」を参照してください。
 >* [GraphQL でコンテンツフラグメントを使用するヘッドレスコンテンツ配信用。](/help/assets/content-fragments/content-fragments-graphql.md)
 
+
+>[!NOTE]
+>
+>コンテンツフラグメントは **Assets** として保存されるので、主に **Assets** コンソールから管理します。
 
 ## コンテンツフラグメントの作成 {#creating-content-fragments}
 
@@ -135,11 +149,15 @@ ht-degree: 91%
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
 
-1. 変更を加えた後、必要に応じて&#x200B;**「保存して閉じる」**&#x200B;または&#x200B;**「キャンセル」**&#x200B;を使用します。
+1. 変更を加えた後、**保存**、**保存して閉じる**、または&#x200B;**閉じる**&#x200B;を必要に応じて使用します。
 
    >[!NOTE]
    >
-   >**「保存して閉じる」**&#x200B;と「**キャンセル**」は共にエディターを終了します。両方のオプションがコンテンツフラグメントに対してどのように機能するかについては、[保存、キャンセル、バージョン](#save-cancel-and-versions)を参照してください。
+   >**保存して** 閉じる機能は、Savedropdownで使用でき **** ます。
+
+   >[!NOTE]
+   >
+   >**保存して閉じる**&#x200B;と&#x200B;**閉じる**&#x200B;はどちらもエディターを終了します。コンテンツフラグメントに対する各種オプションの動作について詳しくは、[保存、閉じる、バージョン](#save-close-and-versions)を参照してください。
 
 ## コンテンツフラグメントエディターのモードとアクション {#modes-actions-content-fragment-editor}
 
@@ -181,21 +199,29 @@ ht-degree: 91%
    * **変更済み**:オレンジ
    * **非アクティブ**:red
 
+* **[** 保存]: [ **保存して** 閉じる]オプションにアクセスできます。
+
 * 3つのドット(**...**)ドロップダウンを使用して、次の追加のアクションにアクセスできます。
+   * **ページ参照の更新**
+      * これにより、すべてのページ参照が更新されます。
    * **[クイック公開](#publishing-and-referencing-a-fragment)**
    * **[公開を管理](#publishing-and-referencing-a-fragment)**
 
-## 保存、キャンセルおよびバージョン {#save-cancel-and-versions}
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+## 保存、閉じる、バージョン{#save-close-and-versions}
 
 >[!NOTE]
 >
 >バージョン[を作成／比較したり元に戻したりする操作は、タイムラインから](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)もおこなえます。
 
-エディターには次の 2 つのオプションがあります。
+エディタには、次の様々なオプションがあります。
 
-* **保存**
+* **** 保存して **保存して閉じる**
 
-   最後の変更を保存し、エディターを終了します。
+   * **** 保存すると、最新の変更が保存され、エディタに残ります。
+   * **保存して** 閉じると、最新の変更が保存され、エディターが終了します。
 
    >[!CAUTION]
    >
@@ -203,20 +229,19 @@ ht-degree: 91%
 
    >[!NOTE]
    >
-   >エディターを開いたまま、一連の変更を加えてから「**保存**」を選択することもできます。
+   >保存する前に、一連の変更を行ってエディターにとどまることができます。
 
    >[!CAUTION]
    >
-   >変更を保存するだけでなく、**Save**&#x200B;も参照を更新し、必要に応じてディスパッチャーをフラッシュします。 これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+   >変更を保存するだけでなく、アクションによって参照も更新され、必要に応じてディスパッチャーがフラッシュされます。 これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
    >
-   >
-   >「**保存**」を使用する際はこの点に留意し、フラグメントエディターを迅速に開いて、変更をおこない、保存してください。
+   >**「保存して**&#x200B;を閉じる」を使用し、フラグメントエディターにすばやく戻って変更を加え、保存する場合は、この点に注意してください。
 
-* **キャンセル**
+* **閉じる**
 
-   最後の変更を保存せずにエディターを終了します。
+   最新の変更（最後の&#x200B;**保存**&#x200B;以降に行われた変更）を保存せずに、エディタを終了します。
 
-コンテンツフラグメントを編集する際には、AEM によって自動的にバージョンが作成されます。これにより、変更内容を&#x200B;**キャンセル**&#x200B;しても以前のコンテンツを復元できるようになります。
+コンテンツフラグメントの編集中にAEMでは、変更をキャンセルした場合（保存せずに&#x200B;**閉じる**&#x200B;を使用）、以前のコンテンツを復元できるようにバージョンが自動的に作成されます。
 
 1. コンテンツフラグメントを開いて編集しようとすると、AEM は&#x200B;*編集セッション*&#x200B;が存在しているかどうかを示す cookie ベースのトークンの存在を確認します。
 
@@ -232,7 +257,7 @@ ht-degree: 91%
    >デフォルト値については、以下を参照してください。
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. ユーザーが「**キャンセル**」を選択して編集をキャンセルすると、編集セッションの開始時に作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
+3. ユーザーが編集をキャンセルすると、編集セッションの開始で作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
 4. ユーザーが編集内容の「**保存**」を選択すると、更新された要素とバリエーションが保存され、トークンが削除されて編集セッションが終了します。
 
 ## フラグメントのコンテンツの編集 {#editing-the-content-of-your-fragment}
@@ -296,7 +321,7 @@ ht-degree: 91%
 
 * 選択されたバージョン **v&lt;*x.y*>**（右）
 
-これらは左右に並んで表示されます。この画面について以下で説明します。
+これらは並べて表示されます。ここでは、
 
 * すべての相違点がハイライト表示されます
 
