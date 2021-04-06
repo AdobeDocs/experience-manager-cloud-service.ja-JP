@@ -1,14 +1,14 @@
 ---
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
+exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # コンテンツフラグメントのカスタマイズと拡張 {#customizing-and-extending-content-fragments}
 
@@ -296,7 +296,7 @@ Assets コアと統合するには：
 技術的には、すべての編集は、他のすべての AEM の編集と同様、*ライブ*&#x200B;コンテンツでおこなわれます。編集セッションが開始されると、現在の未編集ステータスのバージョンが作成されます。ユーザーが編集をキャンセルすると、そのバージョンが復元されます。ユーザーが「**保存**」をクリックした場合、特定の操作はおこなわれません。すべての編集が&#x200B;*ライブ*&#x200B;コンテンツで実行されたので、すべての変更が既に保持されているからです。また、「**保存**」をクリックすると、一部のバックグラウンド処理（全文検索情報の作成や混在メディアアセットの処理など）がトリガーされます。
 
 エッジケースには、いくつかの安全対策があります（例：ユーザーが編集セッションを保存またはキャンセルせずにエディターを終了しようとした場合など）。また、データの損失を防ぐために、定期的な自動保存を使用できます。
-2 人のユーザーが同じコンテンツフラグメントを同時に編集できるので、他のユーザーが変更した内容が上書きされる場合があります。これを防ぐには、フラグメントに DAM 管理の*チェックアウト*&#x200B;アクションを適用して、コンテンツフラグメントをロックする必要があります。
+2人のユーザーが同じコンテンツフラグメントを同時に編集できるので、互いの変更が上書きされる場合があることに注意してください。 これを防ぐには、DAM管理の*Checkout*&#x200B;アクションをフラグメントに適用して、コンテンツフラグメントをロックする必要があります。
 
 ## 例 {#examples}
 
@@ -332,7 +332,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 ### 例：自動保存間隔の指定  {#example-specifying-the-auto-save-interval}
 
-[自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-cancel-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
+[自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
 
 * ノード：`<conf-root>/settings/dam/cfm/jcr:content`
 * プロパティ名：`autoSaveInterval`
