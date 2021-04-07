@@ -1,20 +1,20 @@
 ---
 title: '登録、ログイン、ユーザープロファイル '
-description: パブリッシュ層での登録、ログイン、ユーザープロファイルについて説明します
+description: Cloud ServiceとしてのAEMの登録、ログイン、ユーザーデータ、およびグループ同期について説明します。
+exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 translation-type: tm+mt
-source-git-commit: 2c00c3723c3c84365044b5cd2fe6779de0360736
+source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1177'
+ht-degree: 94%
 
 ---
-
 
 # 登録、ログイン、ユーザープロファイル {#registration-login-and-userprofile}
 
 ## 概要 {#introduction}
 
-Web アプリケーションは、多くの場合、Web サイトへの登録用のアカウント管理機能を提供します。この機能は、ユーザープロファイル情報を保持するので、ユーザーは登録後のログインで一貫した操作を楽しむことができます。この記事では、以下について説明します。
+Web アプリケーションは、多くの場合、Webサイトへの登録用のアカウント管理機能を提供します。この機能はユーザーデータ情報を保持し、将来ログインして一貫した操作を楽しむことができます。 この記事では、AEMをCloud Serviceとして使用する場合の次の概念について説明します。
 
 * 登録
 * ログイン
