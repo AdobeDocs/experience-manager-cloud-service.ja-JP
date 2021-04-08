@@ -1,14 +1,14 @@
 ---
 title: 'サンドボックスプログラムの編集 '
-description: 'サンドボックスプログラムの編集 '
+description: サンドボックスプログラムの編集
+exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
-
 
 # サンドボックスプログラムの編集{#create-sandbox-program}
 
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 1. Cloud Managerの&#x200B;*概要*&#x200B;ページから、**プログラムの編集**&#x200B;ページに移動します。
 
-1. **プログラムの編集**ページには、実稼働環境とSandboxプログラムの両方のタブ（「一般」および「ソリューション」）が2つ表示されます。
-   ![](assets/edit-program.png)
+1. **プログラムを編集**&#x200B;ページには、本番用とSandbox用の3つのプログラム（**サイト**、**コマース**、**アセット**）が表示されます。
+   ![](assets/edit-prg.png)
 
 
 ## プログラムの編集時の考慮事項{#considerations-editing}
