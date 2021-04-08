@@ -3,15 +3,15 @@ title: ビューアプリセットの管理
 description: Dynamic Mediaでビューアプリセットを作成および管理する方法について説明します。
 feature: ビューアプリセット、ビューア
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4245'
 ht-degree: 71%
 
 ---
-
 
 # ビューアプリセットの管理 {#managing-viewer-presets}
 
