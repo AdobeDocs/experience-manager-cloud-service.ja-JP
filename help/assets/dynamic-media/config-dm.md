@@ -2,15 +2,15 @@
 title: Dynamic Media Cloud Service の設定
 description: Adobe Experience ManagerのDynamic MediaをCloud Serviceとして設定する方法を説明します。
 topic: Administrator
-role: 管理者、実業家
+role: Administrator,Business Practitioner
+exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4057'
-ht-degree: 56%
+source-wordcount: '4054'
+ht-degree: 54%
 
 ---
-
 
 # Dynamic Media Cloud Service の設定について {#configuring-dynamic-media}
 
@@ -80,7 +80,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    必要に応じて、パスワードの目のアイコンをタップしてパスワードを表示し、入力または再入力したパスワードのスペルを確認できます。アイコンをもう一度タップすると、パスワードが非表示になります。
 
-1. 「**[!UICONTROL パスワードの繰り返し]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」をタップします。
+1. 「**[!UICONTROL パスワードを繰り返す]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」をタップします。
 
    新しいパスワードは、**[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたときに保存されます。
 
@@ -96,7 +96,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
    | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**:URL/埋め込みリンクを指定する前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 一部のみの発行&#x200B;]**:アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用にDMS7に公開することなく、Cloud ServiceとしてExperience Managerに明示的に公開することもできます。 今後は、Cloud ServiceとしてExperience Managerにアセットを公開し、お互いに排他的にDynamic Mediaにアセットを公開する予定です。 つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、プレビュー用のCloud Serviceとして、Experience Manager内のアセットのみをプレビュー用のアセットとして公開することもできます。これらの同じアセットは、パブリックドメインでの配信のために、DMS7で公開されません。 |
    | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションの生成後、Cloud ServiceとしてのExperience Managerは、リモートのDynamic Mediaレンディションに安全にアクセスし、プレビューできます(バイナリがCloud ServiceインスタンスとしてExperience Managerに送り返されることはありません)。<br>独自の会社のサーバーまたは特別なサーバーを使用する特別な設定がない限り、Adobeはこの設定を指定のままにすることをお勧めします。 |
-   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**：フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**：選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをDynamic Mediaと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」をタップします。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。*&#x200B;関連項目：[Dynamic Media のフォルダーレベルでの選択的公開の設定。](/help/assets/dynamic-media/selective-publishing.md)<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。ツールチップを介した継承されたショーの詳細なステータス。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:Dynamic Mediaと同期するために、このサブツリーの内容をすべて含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーに対して無効&#x200B;]**:このサブツリーのすべてをDynamic Mediaに同期から除外します。 |
+   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**：フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]**：選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーをDynamic Mediaと同期するようにマークするには、アセットフォルダーを選択し、ツールバーで「 **[!UICONTROL プロパティ]**」をタップします。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」をタップします。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。* Dynamic Mediaのフォルダーレベルでの一部のみの発行の [操作も参照してください](/help/assets/dynamic-media/selective-publishing.md)。<br>**[!UICONTROL 継承&#x200B;]**:フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、またはクラウド設定のデフォルトモードから同期値を継承します。ツールチップを介した継承されたショーの詳細なステータス。<br>**[!UICONTROL サブフォルダーに対して有効にする]**:Dynamic Mediaと同期するために、このサブツリーの内容をすべて含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーに対して無効&#x200B;]**:このサブツリーのすべてをDynamic Mediaに同期から除外します。 |
 
    >[!NOTE]
    >
@@ -169,18 +169,18 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 変更したパスワードは、**[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたときに保存されます。
 
 1. Cloud ServiceとしてのExperience Managerで、Experience ManagerをCloud Serviceのロゴとしてタップし、グローバルナビゲーションコンソールにアクセスします。
-1. コンソールの左側で、ツールアイコンをタップし、**[!UICONTROL Cloud Services/Dynamic Media設定をタップします。]**
-1. [Dynamic Media構成ブラウザ]ページの左ペインで、**[!UICONTROL グローバル]**&#x200B;をタップします。**[!UICONTROL グローバル]**&#x200B;の左にあるフォルダーアイコンをタップまたは選択しないでください。次に、「**[!UICONTROL 編集」をタップします。]**
-1. **[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページで「**[!UICONTROL パスワード]**」フィールドのすぐ下の「**[!UICONTROL パスワードを変更]**」をタップします。
+1. コンソールの左側で、ツールアイコンをタップし、**[!UICONTROL Cloud Services/Dynamic Media設定]**&#x200B;をタップします。
+1. [Dynamic Media構成ブラウザ]ページの左ペインで、**[!UICONTROL グローバル]**&#x200B;をタップします。**[!UICONTROL グローバル]**&#x200B;の左にあるフォルダーアイコンをタップまたは選択しないでください。次に、「**[!UICONTROL 編集]**」をタップします。
+1. **[!UICONTROL Dynamic Media設定]**&#x200B;を編集ページの&#x200B;**[!UICONTROL パスワード]**&#x200B;フィールドのすぐ下で、**[!UICONTROL パスワードの変更]**&#x200B;をタップします。
 1. **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスで以下をおこないます。
 
    * 「**[!UICONTROL 新しいパスワード]**」フィールドに、新しいパスワードを入力します。
 
       「**[!UICONTROL 現在のパスワード]**」フィールドは、意図的に事前入力され、操作から隠されています。
 
-   * 「**[!UICONTROL パスワードの繰り返し]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」をタップします。
+   * 「**[!UICONTROL パスワードを繰り返す]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」をタップします。
 
-1. **[!UICONTROL Dynamic Media 設定を編集]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップしたあと、「**[!UICONTROL OK]**」をタップします。
+1. **[!UICONTROL Dynamic Media設定を編集]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップし、「**[!UICONTROL OK]**」をタップします。
 
 ## （オプション）Dynamic Media での詳細設定 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -247,7 +247,7 @@ Dynamic Mediaのカラーマネジメントを使用すると、正しいアセ�
    | CMYK の初期設定カラースペース | 初期設定の CMYK カラープロファイルの名前。 |
    | Grayscale Default Color Space | 初期設定のグレーカラープロファイルの名前。 |
    | RGB の初期設定カラースペース | 初期設定の RGB カラープロファイルの名前。 |
-   | カラー変換レンダリングインテント | レンダリングインテントを指定します。指定できる値は、**[!UICONTROL 知覚的]**、**[!UICONTROL 相対的な色域を維持]**、**[!UICONTROL 彩度]**、**[!UICONTROL 絶対的な色域を維持です。]**&#x200B;アドビでは、デフォルトとして&#x200B;**[!UICONTROL 相対]**&#x200B;をお勧めします。 |
+   | カラー変換レンダリングインテント | レンダリングインテントを指定します。指定できる値は、**[!UICONTROL 知覚的]**、**[!UICONTROL 相対的な色域を維持]**、**[!UICONTROL 彩度]**、**[!UICONTROL 絶対的な色域を維持]**&#x200B;です。アドビでは、デフォルトとして&#x200B;**[!UICONTROL 相対]**&#x200B;をお勧めします。 |
 
 1. 「**[!UICONTROL 保存]**」をタップします。
 
@@ -300,7 +300,7 @@ Experience Managerアセットで、サポートされていない形式のカ�
 
 **サポートされていない形式のカスタム MIME タイプを追加するには**
 
-1. Cloud ServiceとしてExperience Managerから、**[!UICONTROL ツール/操作/Webコンソールをタップします。]**
+1. Cloud ServiceとしてExperience Managerから、**[!UICONTROL ツール/操作/Webコンソール]**&#x200B;をタップします。
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -546,4 +546,3 @@ If you are using Dynamic Media for imaging and/or video, then you can use the de
    If you only wanted to replicate the original, then you would enter `+original`.
 
    -->
-
