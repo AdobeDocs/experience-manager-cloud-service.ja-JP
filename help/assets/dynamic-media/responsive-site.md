@@ -3,15 +3,15 @@ title: レスポンシブサイト用に最適化された画像の配信
 description: レスポンシブコード機能を使用して、最適化された画像を Dynamic Media から配信する方法を説明します。
 feature: アセット管理
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 99%
 
 ---
-
 
 # レスポンシブサイト用に最適化された画像の配信 {#delivering-optimized-images-for-a-responsive-site}
 
