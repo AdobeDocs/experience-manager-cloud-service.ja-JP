@@ -4,15 +4,15 @@ description: 「Dynamic Media画像ファイルとビデオアセットファイ
 contentOwner: Rick Brough
 feature: アセット管理，画像プロファイル，ビデオプロファイル
 topic: 業務担当者
-role: 管理者、実業家
+role: Administrator,Business Practitioner
+exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 62%
+source-wordcount: '501'
+ht-degree: 63%
 
 ---
-
 
 # イメージプロファイルまたはビデオプロファイルを使用するためのデジタルアセット編成のベストプラクティス{#best-practices-for-organizing-your-digital-assets-for-using-profiles}
 
@@ -26,7 +26,7 @@ Dynamic Media のイメージプロファイルまたはビデオプロファイ
 
 * ファイルを格納するフォルダーではなく、ファイルに追加するメタデータに基づいてファイルを編成します。これは、メタデータプロファイルを追加することで達成できます。
 
-   * [メタデータプロファイル](/help/assets/metadata-profiles.md)を参照してください。
+   * 詳しくは、[メタデータプロファイル](/help/assets/metadata-profiles.md)を参照してください。
    * [デジタルアセット管理のためのメタデータ](/help/assets/manage-metadata.md)を参照してください。
 
 * 通常、デジタルアセットの収集は増え続けます。 そのため、早い時期に、アップロードするすべてのアセットについて、メタデータの使用方法、フォルダー構造およびファイル命名規則を形式化することが重要です。これらの事項を標準化することで、デジタルアセットのプールが拡大しても、より高い精度と一貫性を保ってフォルダーに処理プロファイルを適用できます。
@@ -44,4 +44,3 @@ Dynamic Media のイメージプロファイルまたはビデオプロファイ
 
 * 割り当てられたプロファイルが解除されないように、簡単に変更されないフォルダーのディレクトリを作成します。
 * アセットが既に公開済みで、次にAdobe Experience Managerを使用してアセットを別のフォルダに移動し、新しい場所から再公開するとします。 新しく再公開したアセットと共に、元の公開済みアセットの場所は引き続き使用できます。 ただし、元の公開済みアセットはExperience Managerに対して「失われる」ので、非公開にすることはできません。 したがって、ベストプラクティスとして、アセットを別のフォルダーに移動する前に、アセットを非公開にします。
-
