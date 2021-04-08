@@ -3,15 +3,15 @@ title: ' [!DNL Assets] での [!DNL Adobe Stock] アセットの管理。'
 description: ' [!DNL Adobe Experience Manager] 内から [!DNL Adobe Stock] アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
 contentOwner: AG
 feature: 検索、Adobe Stock
-role: 管理者、実業家
+role: Administrator,Business Practitioner
+exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 0da8eb0eac0c58b5212aa264c9042523460e474e
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 99%
+source-wordcount: '995'
+ht-degree: 93%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] での [!DNL Adobe Stock] アセットの使用 {#use-adobe-stock-assets-in-aem-assets}
 
@@ -31,11 +31,11 @@ ht-degree: 99%
 
 1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL ツール]**／**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。「**[!UICONTROL 作成]**」をクリックし、**[!UICONTROL クラウドソリューション]**／**[!UICONTROL Adobe Stock]** を選択します。
 1. 既存の証明書を再使用するか、「**[!UICONTROL 新しい証明書を作成]**」を選択します。
-1. 「**[!UICONTROL 証明書を作成]**」をクリックします。証明書を作成したら、公開鍵をダウンロードします。「**[!UICONTROL 次へ]**」をクリックします。
-1. ダウンロードした公開鍵を [!DNL Adobe Developer Console] サービスアカウントに追加します。「**[!UICONTROL 次へ]**」をクリックします。すぐに値を指定する場合は、[!UICONTROL Adobe IMS テクニカルアカウント設定]画面を開いたままにします。
+1. 「**[!UICONTROL 証明書を作成]**」をクリックします。証明書を作成したら、公開鍵をダウンロードします。「**[!UICONTROL 次へ]**」をクリックします。[!UICONTROL AdobeIMSテクニカルアカウント設定]画面は開いたままにし、必要な値を間もなく指定します。
 1. [アドビ開発者コンソール](https://console.adobe.io)にアクセスします。自身のアカウントに、統合するために必要な、組織の管理者権限があることを確認します。
-1. 「**[!UICONTROL 新しいプロジェクトを作成]**」をクリックし、「**[!UICONTROL API を追加]**」をクリックします。使用可能な API のリストから **[!UICONTROL Adobe Stock]** を選択します。「[!UICONTROL OAUTH 2.0 Web]」を選択します。表示される様々な値を設定およびコピーします。
-1. [!DNL Experience Manager] で、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL API キー]**」、「**[!UICONTROL クライアントの秘密鍵]**」および「**[!UICONTROL ペイロード]**」の各フィールドに適切な値を指定します。これらの値について詳しくは、[JWT 認証クイックスタート](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)を参照してください。
+1. 「**[!UICONTROL 新しいプロジェクトを作成]**」をクリックし、「**[!UICONTROL API を追加]**」をクリックします。使用可能な API のリストから **[!UICONTROL Adobe Stock]** を選択します。「[!UICONTROL OAUTH 2.0 Web]」を選択します。
+1. **[!UICONTROL デフォルトのリダイレクトURI]**&#x200B;と&#x200B;**[!UICONTROL リダイレクトURIパターン]**&#x200B;の値を指定します。 「**[!UICONTROL 設定済み API を保存]**」をクリックします。生成されたIDとシークレットをコピーします。
+1. [!UICONTROL AdobeIMSテクニカルアカウント設定]画面で、「**[!UICONTROL タイトル]**」、「**[!UICONTROL 認証サーバー]**」、「**[!UICONTROL APIキー]**」、「**[!UICONTROL クライアントシークレット]**」、「&lt;a10/」の各ボックスに値を入力します。ペイロード&#x200B;]**。**[!UICONTROL &#x200B;これらの値について詳しくは、[JWT認証クイック開始](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)を参照してください。
 
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
