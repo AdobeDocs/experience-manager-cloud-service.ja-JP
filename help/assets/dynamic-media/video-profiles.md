@@ -3,15 +3,15 @@ title: Dynamic Media ビデオプロファイル
 description: Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。また、ビデオにスマート切り抜きを追加することもできます。
 feature: アセット管理，ビデオプロファイル，レンディション
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '3668'
+source-wordcount: '3666'
 ht-degree: 70%
 
 ---
-
 
 # Dynamic Media ビデオプロファイル {#video-profiles}
 
@@ -37,7 +37,7 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 >
 >メタデータは、アセットの検索時に役に立ちます。サムネールは、エンコーディング中に生成される静的なビデオ画像です。カード表示、検索結果表示およびアセットリスト表示でビデオを視覚的に識別するのに役立てるために、Experience Managerシステムに必要で、ユーザーインターフェイスで使用されます。 生成されたサムネールは、エンコードされたビデオのレンディションアイコン（ペインターのパレット）をタップすると表示されます。
 
-ビデオプロファイルの作成が完了したら、1つまたは複数のフォルダにビデオフォルダを適用します。[ビデオプロファイルのフォルダーへの適用を参照してください。](#applying-a-video-profile-to-folders)
+ビデオプロファイルの作成が完了したら、1つまたは複数のフォルダにビデオフォルダを適用します。[ビデオプロファイルのフォルダーへの適用](#applying-a-video-profile-to-folders)を参照してください。
 
 他のアセットタイプへの高度な処理パラメーターの定義については、[アセット処理の設定](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing)を参照してください。
 
@@ -423,4 +423,3 @@ Dynamic Media には、最高の閲覧エクスペリエンスを実現できる
 1. Experience Managerのロゴをタップまたはクリックし、**[!UICONTROL アセット]**&#x200B;に移動して、ビデオプロファイルを削除するフォルダーに移動します。
 1. チェックマークをタップまたはクリックして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をタップします。
 1. 「**[!UICONTROL ビデオプロファイル]**」タブを選択し、ドロップダウンメニューから「**[!UICONTROL なし]**」を選択して、「**[!UICONTROL 保存して閉じる]**」をクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
-
