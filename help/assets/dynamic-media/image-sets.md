@@ -3,15 +3,15 @@ title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
 feature: 画像セット
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 68%
+source-wordcount: '2051'
+ht-degree: 67%
 
 ---
-
 
 # 画像セット {#image-sets}
 
@@ -43,11 +43,11 @@ ht-degree: 68%
    >
    >バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
-1. [複数ビュー用のプライマリソース画像をアップロードします。](#uploading-assets-in-image-sets)
+1. [複数の表示用のプライマリソース画像をアップロードします](#uploading-assets-in-image-sets)。
 
    画像セット用の画像をアップロードします。ユーザは画像セットビューアで画像をズームできます。 そのため、画像は慎重に選択してください。 最大サイズで 2,000 ピクセル以上の画像を使用してください。Experience Managerアセットは、多くの画像ファイル形式をサポートしていますが、可逆圧縮形式のTIFF、PNG、EPS画像を使用することをお勧めします。
 
-1. [画像セットを作成します。](#creating-image-sets)
+1. [画像セットの作成](#creating-image-sets)。
 
    画像セットで、画像セットビューア内のサムネール画像をクリックします。
 
@@ -64,11 +64,11 @@ ht-degree: 68%
    ビューアプリセットを作成または編集するには、**[!UICONTROL ツール/アセット/ビューアプリセット]**&#x200B;を参照してください。
 
 1. （オプション）バッチセットプリセットを使用して作成した[画像セットの表示](/help/assets/dynamic-media/image-sets.md#viewing-image-sets)
-1. [画像セットをプレビューします。](/help/assets/dynamic-media/previewing-assets.md)
+1. [プレビュー画像セット](/help/assets/dynamic-media/previewing-assets.md)。
 
    画像セットを選択すると、プレビューできます。選択したビューアで画像セットを確認するには、サムネールアイコンをタップします。 **[!UICONTROL ビューア]**&#x200B;メニューから様々なビューアを選択できます。このメニューは、左側のパネルのドロップダウンリストから利用できます。
 
-1. [画像セットを公開します。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [画像セットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    画像セットを公開すると、URL と埋め込み文字列がアクティベートされます。さらに、作成した[カスタムビューアプリセットを公開する](/help/assets/dynamic-media/managing-viewer-presets.md)必要があります。既製のビューアプリセットが既に公開されています。
 
@@ -80,7 +80,7 @@ ht-degree: 68%
 
    詳しくは、[Web ページへの画像セットのリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)および[ビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
-画像セットを編集するには、[画像セットの編集](#editing-image-sets)を参照してください。また、[画像セットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)を表示および編集することができます。
+画像セットを編集する方法については、[画像セットの編集](#editing-image-sets)を参照してください。 を参照してください。また、[画像セットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)を表示および編集することができます。
 
 セットの作成で問題が発生した場合は、[Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md#images-and-sets)の「画像とセット」を参照してください。
 
