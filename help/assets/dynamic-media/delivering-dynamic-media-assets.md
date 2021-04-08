@@ -3,15 +3,15 @@ title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
 feature: アセット管理
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 78%
+source-wordcount: '319'
+ht-degree: 74%
 
 ---
-
 
 # Dynamic Media アセットの配信 {#delivering-dynamic-media-assets}
 
@@ -24,7 +24,7 @@ Dynamic Mediaでは、次のいくつかの方法があります。
 
    * ビデオまたは画像を Web サイトに埋め込みます。
    * Web アプリケーションに URL をリンクします。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、リンク機能を使用します。
-   * レスポンシブサイトの場合は、[最適化された画像を配信できます。](/help/assets/dynamic-media/responsive-site.md)
+   * サイトがレスポンシブな場合は、[最適化された画像](/help/assets/dynamic-media/responsive-site.md)を配信できます。
 
 >[!NOTE]
 >
