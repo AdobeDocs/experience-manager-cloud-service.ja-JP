@@ -3,15 +3,15 @@ title: カルーセルバナー
 description: Dynamic Media のカルーセルバナーの操作方法を説明します。
 feature: カルーセルバナー
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4567'
+source-wordcount: '4565'
 ht-degree: 49%
 
 ---
-
 
 # カルーセルバナー {#carousel-banners}
 
@@ -74,11 +74,11 @@ Web サイトではカルーセルバナーは次のように表示されます�
 
    Assets でカルーセルセットを作成するには、「**[!UICONTROL 作成]**」をタップし、「**[!UICONTROL カルーセルセット]**」を選択します。アセットをスライドに追加し、「**[!UICONTROL 保存]**」をタップします。エディター内で、カルーセルの外観と動作を直接編集することもできます。
 
-1. [画像バナーにホットスポットまたは画像マップを追加します。](#adding-hotspots-or-image-maps-to-an-image-banner)
+1. [追加ホットスポットまたは画像の画像バナーへのマッピング](#adding-hotspots-or-image-maps-to-an-image-banner)。
 
    1つ追加以上のホットスポットまたは画像マップを画像バナーに表示します。 次に、各アクションをリンク、クイック表示、エクスペリエンスフラグメントなどのアクションに関連付けます。 ホットスポットまたは画像マップを追加した後は、カルーセルセットを公開してタスクを終了します。公開によって埋め込みコードが生成されます。これは、コピーして Web サイトのランディングページに適用するために使用できます。
 
-   [（オプション）カルーセルバナーのプレビュー](#optional-previewing-carousel-banners)を参照してください。必要に応じて、カルーセルセットの表示を確認して、インタラクティビティをテストすることができます。
+   [（オプション）カルーセルバナーのプレビュー](#optional-previewing-carousel-banners)を参照してください（オプション）。必要に応じて、カルーセルセットの表示を確認して、インタラクティビティをテストすることができます。
 
 1. [カルーセルバナーを公開します。](#publishing-carousel-banners)
 
@@ -92,7 +92,7 @@ Web サイトではカルーセルバナーは次のように表示されます�
    * [Experience Manager内追加のWebサイトのカルーセルバナー。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)Experience Managerサイトのお客様は、インタラクティブメディアコンポーネントを使用してカルーセルセットを直接ページに追加できます。
 
 
-カルーセルセットを編集する必要がある場合は、[カルーセルセットの編集を参照してください。](#editing-carousel-sets)を参照してください。また、[カルーセルセットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)を表示および編集することができます。
+カルーセルセットを編集する必要がある場合は、[カルーセルセットの編集](#editing-carousel-sets)を参照してください。 を参照してください。また、[カルーセルセットのプロパティ](/help/assets/manage-digital-assets.md#editing-properties)を表示および編集することができます。
 
 ## ホットスポットと画像マップの変数の識別 {#identifying-hotspot-and-image-map-variables}
 
@@ -367,7 +367,7 @@ Web サイトではカルーセルバナーは次のように表示されます�
 
 カルーセルバナーは、プレビューを使用して、ユーザーにとってどのような外観を持つかを確認できます。 また、プレビューを使用すると、カルーセルバナーのホットスポットと画像マップをテストして、期待どおりに動作するかを確認できます。
 
-カルーセルバナーの設定が完了したら、このカルーセルバナーを公開できます。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+カルーセルバナーの設定が完了したら、このカルーセルバナーを公開できます。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対 URL のリンク（特に AEM Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへのDynamic Mediaアセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
 カルーセルバナーは、カルーセルエディター（推奨）または&#x200B;**[!UICONTROL ビューア]**&#x200B;リストでプレビューできます。
 
