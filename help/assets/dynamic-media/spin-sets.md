@@ -3,15 +3,15 @@ title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。。
 feature: スピンセット
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 77%
+source-wordcount: '1831'
+ht-degree: 75%
 
 ---
-
 
 # スピンセット {#spin-sets}
 
@@ -39,11 +39,11 @@ ht-degree: 77%
    >
    >バッチセットは、アセットの取り込みの一環として IPS（Image Production System）で作成されます。
 
-1. [複数ビュー用の画像をアップロードします。](#uploading-assets-for-spin-sets)
+1. [複数の表示用に画像をアップロードします](#uploading-assets-for-spin-sets)。
 
    1次元スピンセットを使用するには、少なくとも8 ～ 12枚の写真が必要で、2次元スピンセットには16 ～ 24枚の写真が必要です。アイテムが回転したり反転したりしているように見せるには、一定の間隔でアイテムを撮影する必要があります。 例えば、1次元スピンセットに12枚の写真を含める場合は、アイテムを30°(360°/12)単位で回転させて撮影します。
 
-1. [スピンセットを作成します。](#creating-spin-sets)
+1. [スピンセットの作成](#creating-spin-sets)。
 
    スピンセットを作成するには、**[!UICONTROL 作成／スピンセット]**&#x200B;を選択し、セットの名前を付け、アセットを選択し、画像の表示順を選択します。
 
@@ -59,11 +59,11 @@ ht-degree: 77%
 
    バッチセットプリセットを使用して作成したセットを表示したり、それらのセットにアクセスしたりするには、3 つの方法があります（バッチセットプリセットを使用して作成したセットは、ユーザーインターフェイスに表示&#x200B;*されません*）。
 
-1. [スピンセットをプレビューします。](/help/assets/dynamic-media/previewing-assets.md)
+1. [プレビュースピンセット](/help/assets/dynamic-media/previewing-assets.md)。
 
    スピンセットを選択すると、プレビューできます。スピンセットを回転します。**[!UICONTROL ビューア]**&#x200B;メニューから様々なビューアを選択できます。このメニューは左側のレールのドロップダウンメニューにあります。
 
-1. [スピンセットを公開します。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+1. [スピンセットを公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)。
 
    スピンセットを公開すると、URL と埋め込み文字列がアクティベートされます。また、[ビューアプリセットを公開](/help/assets/dynamic-media/managing-viewer-presets.md)する必要があります。
 
@@ -138,7 +138,7 @@ ht-degree: 77%
 
    必要に応じて、アセットのファイル名の右側にあるアセットの並べ替えアイコンをドラッグし、設定したリストの上下に画像を並べ替えます。
 
-   ![スピンセットのフレーム 11 を新しい位置にドラッグして並べ替える](assets/6_5_spinset-reorderassets.png)
+   ![スピンセット内のフレーム11を新しい位置にドラッグして並べ替え](assets/6_5_spinset-reorderassets.png)
 
    スピンセットのフレーム 11 を新しい位置にドラッグして並べ替える
 
