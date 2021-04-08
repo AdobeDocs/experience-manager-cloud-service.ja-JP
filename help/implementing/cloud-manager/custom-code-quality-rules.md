@@ -1,14 +1,14 @@
 ---
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
+exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
 workflow-type: tm+mt
 source-wordcount: '3278'
 ht-degree: 73%
 
 ---
-
 
 # カスタムコード品質ルール {#custom-code-quality-rules}
 
@@ -613,7 +613,7 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。その結果、どの設定が使用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
 
 >[!NOTE]
->このルールは、同じ設定が複数のパッケージで定義される場合、例えば、構築されたパッケージの全体的なリストで同じパッケージが複製される場合を含め、同じ設定が同じパスで定義される問題を生み出します。 例えば、ビルドで`com.myco:com.myco.ui.apps`と`com.myco:com.myco.all`という名前のパッケージが作成され、`com.myco:com.myco.all`が`com.myco:com.myco.ui.apps`を埋め込む場合、`com.myco:com.myco.ui.apps`内のすべての設定が重複としてレポートされます。 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/aem-project-content-package-structure.md)に従わない場合が一般的です。この例では、パッケージ`com.myco:com.myco.ui.apps`に`<cloudManagerTarget>none</cloudManagerTarget>`プロパティがありません。
+>このルールは、同じ設定が複数のパッケージで定義される場合、例えば、構築されたパッケージの全体的なリストで同じパッケージが複製される場合を含め、同じ設定が同じパスで定義される問題を生み出します。 例えば、ビルドで`com.myco:com.myco.ui.apps`と`com.myco:com.myco.all`という名前のパッケージが作成され、`com.myco:com.myco.all`が`com.myco:com.myco.ui.apps`を埋め込む場合、`com.myco:com.myco.ui.apps`内のすべての設定が重複としてレポートされます。 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従わない場合が一般的です。この例では、パッケージ`com.myco:com.myco.ui.apps`に`<cloudManagerTarget>none</cloudManagerTarget>`プロパティがありません。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
@@ -914,9 +914,3 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`
 **最初の対象バージョン**：バージョン 2021.2.0
 
 AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）にreindexという名前のプロパティを含めることを禁止しています。 AEMCloud Serviceに移行する前に、このプロパティを使用するインデックス作成を更新する必要があります。 詳しくは、[コンテンツの検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
-
-
-
-
-
-
