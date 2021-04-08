@@ -3,7 +3,7 @@ title: '実稼働プログラムの作成 '
 description: 実稼働プログラムの作成
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -23,18 +23,17 @@ ht-degree: 0%
    >[!NOTE]
    >Cloud Managerへのアクセス方法について詳しくは、[Cloud Managerランディングページ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
 
-1. プログラムの作成ウィザードで「**実稼働用に設定**」を選択して、実稼働プログラムを作成します。 ユーザーは、デフォルトのプログラム名を受け入れるか、**続行**&#x200B;を選択する前に編集できます。
+1. プログラムの作成ウィザードで「**実稼働用に設定**」を選択して、実稼働プログラムを作成します。 ユーザーは、デフォルトのプログラム名を受け入れるか、**「作成**」を選択する前に編集できます。
 
    ![](assets/create-prod1.png)
 
 1. 上の画面の後に表示される画面にプログラムに含めるソリューションを選択します。
 
 
-   ![](assets/set-up-prod2.png)
+   ![](assets/set-up-prod-2.png)
 
 1. ソリューションを選択したら、「**作成**」をクリックします。
 
-   ![](assets/set-up-prod3.png)
 
 1. ランディングページにプログラムカードが表示されたら、その上にマウスポインターを置いてCloud Managerアイコンを選択し、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動します。
 
@@ -45,5 +44,4 @@ ht-degree: 0%
 
 
    >[!NOTE]
-   >
    >実稼働プログラムには&#x200B;**自動セットアップ**&#x200B;機能がありません。
