@@ -3,15 +3,15 @@ title: 混在メディアセット
 description: Dynamic Media での混在メディアセットの使用方法について説明します。。
 feature: 混在メディアセット
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1471'
-ht-degree: 75%
+source-wordcount: '1469'
+ht-degree: 74%
 
 ---
-
 
 # 混在メディアセット {#mixed-media-sets}
 
@@ -33,7 +33,7 @@ ht-degree: 75%
 
    まずは混在メディアセット用の画像およびビデオをアップロードします。必要に応じて、[画像セット](/help/assets/dynamic-media/image-sets.md)と[スピンセット](/help/assets/dynamic-media/spin-sets.md)を作成します。ユーザは混在メディアセットビューアで画像をズームできるので、画像を選択する際はズームに注意してください。 最大サイズで 2,000 ピクセル以上の画像を使用してください。
 
-1. [混在メディアセットを作成します。](#creating-mixed-media-sets)
+1. [混在メディアセットの作成](#creating-mixed-media-sets)。
 
    アセットページで混在メディアセットを作成するには、**[!UICONTROL 作成／混在メディアセット]**&#x200B;をタップし、セットの名前を付け、アセットを選択し、さらに画像の表示順を選択します。
 
@@ -47,11 +47,11 @@ ht-degree: 75%
 
    詳しくは、[ビューアプリセットの追加と編集](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 
-1. [混在メディアセットをプレビューします。](#previewing-mixed-media-sets)
+1. [プレビュー混在メディアセット](#previewing-mixed-media-sets)。
 
    混在メディアセットを選択すると、プレビューできます。選択したビューアで混在メディアセットを確認するには、サムネールアイコンをクリックします。 **[!UICONTROL ビューア]**&#x200B;メニューから様々なビューアを選択できます。このメニューは左側のレールのドロップダウンメニューにあります。
 
-1. [混在メディアセットを公開します。](#publishing-mixed-media-sets)
+1. [混在メディアセットの公開](#publishing-mixed-media-sets)。
 
    混在メディアセットを公開すると、URL と埋め込み文字列がアクティベートされます。また、[ビューアプリセットを公開](/help/assets/dynamic-media/managing-viewer-presets.md#publishing-viewer-presets)する必要があります。
 
@@ -174,4 +174,3 @@ ht-degree: 75%
 >[!NOTE]
 >
 >混在メディアセットが初めて公開したときに、完全には配信サービスで終了しない場合は、混在メディアセットを2回目に公開します。
-
