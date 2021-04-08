@@ -1,14 +1,14 @@
 ---
 title: '実稼働プログラムの作成 '
-description: '実稼働プログラムの作成 '
+description: 実稼働プログラムの作成
+exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # 本番プログラムの作成{#create-production-program}
 
@@ -29,11 +29,6 @@ ht-degree: 0%
 
 1. 上の画面の後に表示される画面にプログラムに含めるソリューションを選択します。
 
-
-
-   >[!NOTE]
-   >
-   >次の画面は、複数のソリューションを購入した顧客のセグメントに対してのみ表示されます。 1つのソリューションのみを購入したお客様の場合、下のソリューション選択画面は表示されません。
 
    ![](assets/set-up-prod2.png)
 
