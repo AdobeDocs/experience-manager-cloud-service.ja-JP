@@ -3,9 +3,9 @@ title: '実稼働プログラムの作成 '
 description: 実稼働プログラムの作成
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 translation-type: tm+mt
-source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
+source-git-commit: 8766b6fc6044a292b6dc7c2d9203a70d082edb01
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,14 @@ ht-degree: 0%
 
    ![](assets/create-prod1.png)
 
-1. 上の画面の後に表示される画面にプログラムに含めるソリューションを選択します。
+1. 上の画面の後に表示される画面にプログラムに含めるソリューションを選択します。 必要なソリューションを選択したら、「**作成**」をクリックします。
 
 
-   ![](assets/set-up-prod-2.png)
+   ![](assets/setup-prod-select.png)
 
-1. ソリューションを選択したら、「**作成**」をクリックします。
+   また、次の図に示すように、**サイト**&#x200B;の下の&#x200B;**コマース**&#x200B;アドオンオプションを選択し、**作成**&#x200B;をクリックすることもできます。
 
+   ![](assets/setup-prod-commerce.png)
 
 1. ランディングページにプログラムカードが表示されたら、その上にマウスポインターを置いてCloud Managerアイコンを選択し、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動します。
 
