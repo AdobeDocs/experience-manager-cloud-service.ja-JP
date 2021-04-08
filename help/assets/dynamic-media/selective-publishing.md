@@ -6,15 +6,15 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 52%
+source-wordcount: '2937'
+ht-degree: 44%
 
 ---
-
 
 # Dynamic Media のフォルダーレベルでの選択的公開の設定 {#selective-publish-configure-folder}
 
@@ -34,40 +34,40 @@ ht-degree: 52%
 
 後でフォルダー内の「**[!UICONTROL 選択的公開]**」設定を変更すると、その変更の影響を受けるのは、その時点からそのフォルダーにアップロードする新しいアセットだけです。フォルダー内の既存のアセットの公開状態は、**[!UICONTROL クイック公開]**&#x200B;または&#x200B;**[!UICONTROL 公開を管理]**&#x200B;ダイアログボックスから手動で変更するまで、そのままになります。
 
-「**[!UICONTROL Dynamic Media 公開モード]**」フォルダーレベルのオプションでは、**[!UICONTROL Dynamic Media 設定の「**[!UICONTROL &#x200B;アセットを&#x200B;]**公開」設定にある値が常にデフォルト値になります。]**&#x200B;ただし、このトピックの次の手順では、フォルダーレベルで手動でこのデフォルト値を変更して、**[!UICONTROL Dynamic Media 設定]**&#x200B;値を上書きする方法を示します（次の手順で説明します）。
+フォルダーレベル&#x200B;**[!UICONTROL Dynamic Media発行モード]**&#x200B;オプションは、常に、**[!UICONTROL Dynamic Media構成]**&#x200B;の&#x200B;**[!UICONTROL 発行アセット]**&#x200B;設定にある値にデフォルト設定されます。 ただし、このトピックの次の手順では、フォルダーレベルで手動でこのデフォルト値を変更して、**[!UICONTROL Dynamic Media 設定]**&#x200B;値を上書きする方法を示します（次の手順で説明します）。
 
 信頼できるかどうかに関係なく、次の処理を行います。
 
 * **[!UICONTROL Dynamic Media設定]**&#x200B;に設定された&#x200B;**[!UICONTROL アセットを発行]**&#x200B;値
 * または、フォルダーレベルのプロパティで設定された&#x200B;**[!UICONTROL Dynamic Media公開モード]**&#x200B;値
 
-「**[!UICONTROL すぐに]**」、「**[!UICONTROL アクティベーション]**」、または「**[!UICONTROL 一部のみの公開」を選択できます。]** 例えば、 **[!UICONTROL Dynamic Media]** 設定の「 **[!UICONTROL 発行アセット」の値を「アクティベーション]** 時」に設定でき ****&#x200B;ます。また、**[!UICONTROL Dynamic Media発行]**&#x200B;モードの値をフォルダーレベルで&#x200B;**[!UICONTROL 一部の発行]**&#x200B;に設定したり、逆に設定したりできます。
+「**[!UICONTROL すぐに]**」、「**[!UICONTROL アクティベーション]**」、または「**[!UICONTROL 一部のみの発行]**」を選択できます。 例えば、**[!UICONTROL Dynamic Media設定]**&#x200B;の&#x200B;**[!UICONTROL 発行アセット]**&#x200B;の値を&#x200B;**[!UICONTROL アクティベーション]**&#x200B;に設定できます。 また、**[!UICONTROL Dynamic Media発行]**&#x200B;モードの値をフォルダーレベルで&#x200B;**[!UICONTROL 一部の発行]**&#x200B;に設定したり、逆に設定したりできます。
 
 フォルダーで選択的公開を設定した後、次の操作をおこなうことができます。
 
-* [「パブリケーションの管理」を使用して、Dynamic MediaまたはExperience Managerにアセットを選択して公開する。](#selective-publish-manage-publication)
-* [「パブリケーションの管理」を使用して、Dynamic MediaまたはExperience Managerからアセットを選択して非公開にします。](#selective-unpublish-manage-publication)
-* [クイック公開を使用したDynamic MediaまたはExperience Managerへのアセットの公開](#quick-publish-aem-dm)
-* [検索結果を使用して、アセットを選択的に公開または非公開にする。](#selective-publish-unpublish-search-results)
+* [「パブリケーションの管理](#selective-publish-manage-publication)」を使用して、Dynamic MediaまたはExperience Managerにアセットを選択して公開する。
+* [「パブリケーションの管理](#selective-unpublish-manage-publication)」を使用して、Dynamic MediaまたはExperience Managerからアセットを選択して非公開にします。
+* [クイック公開を使用したDynamic MediaまたはExperience Managerへのアセットの公開](#quick-publish-aem-dm)。
+* [検索結果を使用して、アセットを選択して公開または非公開にする](#selective-publish-unpublish-search-results)。
 
 **Dynamic Media のフォルダーレベルで選択的公開を設定するには**
 
-1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側の（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット／ファイル]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
 1. 次のいずれかの操作をおこないます。
-   * 既存フォルダーのプロパティの編集 - **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、プロパティを編集するフォルダーに移動します。フォルダーを選択し、ツールバーで「**[!UICONTROL プロパティ]**」をタップします。
-   * 新しいフォルダーのプロパティを編集します。**[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、**[!UICONTROL リスト表示]**&#x200B;の中で、ページの右上隅近くの&#x200B;**[!UICONTROL 作成／フォルダー]**&#x200B;をタップします。**[!UICONTROL フォルダーの作成]**&#x200B;ダイアログボックスで、フォルダーのタイトル（必須）を入力し、「**[!UICONTROL 作成]**」をタップします。フォルダーを選択し、ツールバーで「**[!UICONTROL プロパティ]**」をタップします。
+   * 既存フォルダーのプロパティの編集 - **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、プロパティを編集するフォルダーに移動します。フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL プロパティ]**&#x200B;をタップします。
+   * 新しいフォルダーのプロパティを編集します。**[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、ページ右上隅近くの&#x200B;**[!UICONTROL 作成/フォルダー]**&#x200B;をタップします。 **[!UICONTROL フォルダーを作成]**&#x200B;ダイアログボックスで、フォルダーのタイトル（必須）を入力し、「**[!UICONTROL 作成]**」をタップします。 フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL プロパティ]**&#x200B;をタップします。
 
 1. 「**[!UICONTROL 同期モード]**」ドロップダウンリストで、次のいずれかを選択します。
 
    | 同期モード | 説明 |
    | --- | --- |
-   | **[!UICONTROL 継承]** | フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つ、または **[!UICONTROL Dynamic Media 設定]** 継承の詳細なステータスは、ツールチップを介して **** 表示されます。 |
-   | **[!UICONTROL このフォルダーサブツリーのすべてをDynamic Mediaに同期]** | Dynamic Media への公開を続行するには、アセットを Dynamic Media と同期する必要があります。このオプションを選択すると、このサブツリー内のすべてのアセットが含まれ、Dynamic Mediaと同期されます。 フォルダー固有の設定は、**[!UICONTROL Dynamic Media 設定]**&#x200B;のデフォルト設定に優先します。 |
+   | **[!UICONTROL 継承]** | フォルダーに明示的な同期値がありません。代わりに、フォルダーは、その上位フォルダーの1つ、または&#x200B;**[!UICONTROL Dynamic Media設定]**&#x200B;で設定されているデフォルトモードから同期値を継承します。 **[!UICONTROL 継承]**&#x200B;の詳細なステータスは、ツールチップを介して表示されます。 |
+   | **[!UICONTROL このフォルダーサブツリーのすべてをDynamic Mediaに同期]** | Dynamic Media への公開を続行するには、アセットを Dynamic Media と同期する必要があります。このオプションを選択すると、このサブツリー内のすべてのアセットが含まれ、Dynamic Mediaと同期されます。 フォルダー固有の設定は、**[!UICONTROL Dynamic Media構成]**&#x200B;のデフォルト設定に優先します。 |
    | **[!UICONTROL このフォルダーサブツリー内のすべてをDynamic Media同期から除外する]** | このサブツリー内のすべてのアセットを、Dynamic Mediaとの同期から除外します。 |
 
    ![フォルダーレベルの選択的公開](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. 「**[!UICONTROL Dynamic Media 公開モード]**」ドロップダウンリストで、オプションを選択します。**[!UICONTROL Dynamic Media公開モード]**&#x200B;オプションは、常に&#x200B;**[!UICONTROL Dynamic Media設定で設定された値をデフォルトにします。]**&#x200B;ただし、次のいずれかのオプションを使用して、手動でこのデフォルトの **[!UICONTROL Dynamic Media 設定]**&#x200B;値を上書きできます。
+1. 「**[!UICONTROL Dynamic Media 公開モード]**」ドロップダウンリストで、オプションを選択します。**[!UICONTROL Dynamic Media公開モード]**&#x200B;オプションは、常に&#x200B;**[!UICONTROL Dynamic Media設定]**&#x200B;で設定された値にデフォルト設定されます。 ただし、次のいずれかのオプションを使用して、手動でこのデフォルトの **[!UICONTROL Dynamic Media 設定]**&#x200B;値を上書きできます。
 
    >[!IMPORTANT]
    >
@@ -125,15 +125,15 @@ ht-degree: 52%
    | **[!UICONTROL 今すぐ]** | アセットを直ちに公開する場合に選択します。 |
    | **[!UICONTROL 後で]** | 特定の日時にアセットを公開する場合に選択します。 |
 
-1. **[!UICONTROL 公開を管理]**&#x200B;ページの右上隅にある「**[!UICONTROL 次へ]**」をタップします。
+1. **[!UICONTROL パブリケーションの管理]**&#x200B;ページの右上隅にある&#x200B;**[!UICONTROL 「次へ]**」をタップします。
 1. **[!UICONTROL 公開を管理 -範囲]**&#x200B;ページで、次のいずれかの操作をおこないます。
    * 必要に応じて、公開から削除する 1 つ以上のアセットを選択します。
-   * **[!UICONTROL 公開を管理 - 範囲]**&#x200B;ページの右上隅にある「**[!UICONTROL 公開]**」または「**[!UICONTROL Dynamic Media に公開]**」をタップします。
+   * **[!UICONTROL パブリケーションの管理 — スコープ]**&#x200B;ページの右上隅にある&#x200B;**[!UICONTROL 発行]**&#x200B;または&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;に発行をタップします。
 1. 「**[!UICONTROL OK]**」をタップします。
 
 ### パブリケーションの管理{#selective-unpublish-manage-publication}を使用して、Dynamic MediaまたはExperience Managerからアセットを選択して非公開にする
 
-1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側の（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット／ファイル]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、次のいずれかの操作をおこないます。
    * アセットを非公開にするフォルダーに移動します。フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL パブリケーションの管理]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスを簡単に確認できます。
    * アセットを非公開にするフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーで、**[!UICONTROL パブリケーションの管理]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスを簡単に確認できます。
@@ -156,10 +156,10 @@ ht-degree: 52%
    | **[!UICONTROL 今すぐ]** | アセットを直ちに非公開にする場合に選択します。 |
    | **[!UICONTROL 後で]** | 特定の日時にアセットを非公開にする場合に選択します。 |
 
-1. **[!UICONTROL 公開を管理]**&#x200B;ページの右上隅にある「**[!UICONTROL 次へ]**」をタップします。
+1. **[!UICONTROL パブリケーションの管理]**&#x200B;ページの右上隅にある&#x200B;**[!UICONTROL 「次へ]**」をタップします。
 1. **[!UICONTROL 公開を管理 -範囲]**&#x200B;ページで、次のいずれかの操作をおこないます。
    * 非公開から削除する 1 つ以上のアセットを選択します。
-   * **[!UICONTROL 公開を管理 - 範囲]**&#x200B;ページの右上隅にある「**[!UICONTROL 非公開]**」または「**[!UICONTROL Dynamic Media から非公開]**」をタップします。
+   * **[!UICONTROL パブリケーションの管理 — スコープ]**&#x200B;ページの右上隅にある&#x200B;**[!UICONTROL 非公開]**&#x200B;または&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;から非公開をタップします。
 1. 「**[!UICONTROL OK]**」をタップします。
 
 ## クイック発行を使用したDynamic MediaまたはExperience Managerへのアセットの発行{#quick-publish-aem-dm}
@@ -170,7 +170,7 @@ ht-degree: 52%
 >
 >**[!UICONTROL クイック発行]**&#x200B;を使用して、アセットをDynamic MediaまたはExperience Managerに発行するには、**[!UICONTROL Dynamic Media設定]**&#x200B;または選択したフォルダーのフォルダープロパティで、**[!UICONTROL 一部の発行]**&#x200B;を有効にします。
 
-**クイック公開を使用してDynamic MediaまたはExperience Managerにアセットを公開するには**
+**クイック公開を使用してDynamic MediaまたはExperience Managerにアセットを公開するには：**
 
 1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、ページの右側で&#x200B;**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、次のいずれかの操作をおこないます。
@@ -264,7 +264,7 @@ Experience Managerで&#x200B;**[!UICONTROL タイムライン]**&#x200B;と&#x20
 1. Experience Managerで、ページの左上隅にあるExperience Managerロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、または&#x200B;**[!UICONTROL リスト表示]**（下のスクリーンショットは&#x200B;**[!UICONTROL リスト表示]**&#x200B;のアセットを示しています）で、公開または非公開にしたアセットを含むフォルダーを開きます。
 1. チェックマークが付くようにアセットを選択します。例については、下のスクリーンショットを参照してください。
-1. ページの左上隅付近にあるドロップダウンメニューで「**[!UICONTROL タイムライン」をクリックします。]**&#x200B;左側のパネルの「**[!UICONTROL ステータス]**」領域には、選択したアセットの公開状態が表示されます。
+1. ページの左上隅近くにあるドロップダウンメニューで、「**[!UICONTROL タイムライン]**」を選択します。 左側のパネルの「**[!UICONTROL ステータス]**」領域には、選択したアセットの公開状態が表示されます。
 **[!UICONTROL リスト表示]**&#x200B;を使用すると、**[!UICONTROL Dynamic Media]**&#x200B;の公開状態に余分な列が表示されます。
    * Dynamic Mediaと同期するように構成されたフォルダーには、デフォルトで&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;列が表示されます。
    * **がDynamic Mediaと同期するように構成されていないフォルダーは、Dynamic Media列を表示しません。
@@ -275,4 +275,3 @@ Experience Managerで&#x200B;**[!UICONTROL タイムライン]**&#x200B;と&#x20
 Dynamic Media に同期されず、Dynamic Media の公開アクションがトリガーされたアセットは、次のエラーメッセージとソリューションが発生します。
 
 ![選択的公開エラー](/help/assets/assets-dm/selective-publish-error.png)
-
