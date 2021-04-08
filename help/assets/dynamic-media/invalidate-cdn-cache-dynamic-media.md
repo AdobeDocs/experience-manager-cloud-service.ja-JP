@@ -3,15 +3,15 @@ title: Dynamic Media を使用した CDN キャッシュの無効化
 description: 「CDN(コンテンツ配信ネットワーク)キャッシュコンテンツを無効にして、キャッシュの期限が切れるのを待たずに、Dynamic Mediaから配信されるアセットをすばやく更新する方法を説明します。」
 feature: アセット管理
 topic: 業務担当者
-role: 管理者、実業家
+role: Administrator,Business Practitioner
+exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 64%
+source-wordcount: '1303'
+ht-degree: 60%
 
 ---
-
 
 # Dynamic Media を使用した CDN キャッシュの無効化 {#invalidating-cdn-cache-for-dm-assets-in-aem-cs}
 
@@ -27,7 +27,7 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 
 *パート 1 / 2：CDN 無効化テンプレートの作成*
 
-1. AEM as a Cloud Service で、**[!UICONTROL ツール／アセット／CDN 無効化テンプレート]**&#x200B;をタップします。
+1. AEMでCloud Serviceとして、**[!UICONTROL ツール/アセット/CDN無効化テンプレート]**&#x200B;をタップします。
 
    ![CDN 検証機能](/help/assets/assets-dm/cdn-invalidation-template.png)
 
@@ -40,12 +40,12 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 
    ![CDN 無効化テンプレート - 作成](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. 「**[!UICONTROL CDN 無効化テンプレート]**」ページの右上隅にある「**[!UICONTROL 保存]**」をタップし、「**[!UICONTROL OK]**<br>」をタップします。
+1. **[!UICONTROL CDN無効化テンプレート]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」をタップし、「**[!UICONTROL OK]**」をタップします。<br>
 
    *パート 2 / 2：CDN 無効化オプションの設定*
    <br>
 
-1. AEM as a Cloud Service で、**[!UICONTROL ツール／アセット／CDN 無効化]**&#x200B;をタップします。
+1. AEMで、Cloud Serviceとして&#x200B;**[!UICONTROL ツール/アセット/CDN無効化]**&#x200B;をタップします。
 
    ![CDN 検証機能](/help/assets/assets-dm/cdn-invalidation-path.png)
 
@@ -65,7 +65,7 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
    | **[!UICONTROL アセットを追加]** | アセットピッカーを使用して、無効にするアセットを選択します。公開済みまたは非公開のアセットを選択できます。<br>CDN でのキャッシュは、アセットベースではなく URL ベースです。したがって、Web サイト上での完全な URL を認識しておく必要があります。これらの URL を決定したら、テンプレートに追加できます。それから、アセットを選択して追加し、ワンステップで URL を無効にできます。<br>このオプションは、CDN内のアセットに関連付けられた画像プリセットを **[!UICONTROL 無効にする、またはテンプレートに基づく]**&#x200B;無効化 ****、あるいはその両方で使用します。 |
    | **[!UICONTROL URL を追加]** | CDN キャッシュを無効にする Dynamic Media セットに、完全な URL パスを手動で追加または貼り付けます。***パート 1 / 2：CDN 無効化テンプレートの作成***&#x200B;で CDN 無効化テンプレートを作成しておらず、無効にするアセットが数個の場合にこのオプションを使用します。<br>**重要：**&#x200B;追加する各 URL は、それぞれ別の行に記述する必要があります。<br>一度に 1000 個までの URL を無効にできます。「**[!UICONTROL URL を追加]**」テキストフィールドの URL 数が 1000 を超える場合、「**[!UICONTROL 次へ]**」をタップできません。その場合、選択したアセットの右側の **[!UICONTROL X]** をタップするか、手動で追加した URL をタップして、アセットを無効化リストから削除する必要があります。<br>画像スマートトリミングのURLは、CDN無効化テンプレートまたはこのURL **** 追加テキストフィールドで指定します。 |
 
-1. ページの右上隅にある「**[!UICONTROL 次へ]**」をタップします。
+1. ページの右上隅近くにある「**[!UICONTROL 次へ]**」をタップします。
 1. **[!UICONTROL CDN無効化]** - **[!UICONTROL 確認]**&#x200B;ページの&#x200B;**[!UICONTROL URL]**&#x200B;リストボックスに、先ほど作成したCDN無効化テンプレートから生成された1つ以上のURLと、先ほど追加したアセットのリストが表示されます。
 
    例えば、前の手順で示した CDN 無効化テンプレートの例を使用して、`spinset` という名前のアセットを 1 つ追加したとします。**[!UICONTROL ツール/アセット/CDN無効化]**&#x200B;をタップすると、**[!UICONTROL CDN無効化 — 確認]**&#x200B;ユーザーインターフェイスで以下の5つの生成されたURLが生成されます。
@@ -85,7 +85,7 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 | *選択されたアセットのURLを取得できませんでした。* | 次のいずれかのシナリオが満たされた場合に発生します：<br> - Dynamic Media 設定が見つかりません。<br>-Dynamic Media設定の読み取りに使用するサービスユーザーを取得中に例外が発生しました。<br> - URL の形成に使用するパブリッシュサーバーまたは会社ルートが Dynamic Media の設定にありません。 |
 | *一部の URL が正しく定義されていません。修正して再送信します。* | IPS CDNキャッシュ無効化APIがエラーを返した場合に発生します。 このエラーは、URLが別の会社を参照しているか、IPS cdnCacheInvalidation APIによる検証に従ってURLが有効でないことを示します。 |
 | *CDN キャッシュを無効にできませんでした。* | CDN キャッシュの無効化リクエストがその他の理由で失敗した場合に発生します。 |
-| *無効にするURLが入力されていません。* | **[!UICONTROL CDN 無効化]** - **[!UICONTROL 確認]**&#x200B;ページに URL が存在せず、「**[!UICONTROL 送信]**」をタップした場合に発生します。 |
+| *無効にするURLが入力されていません。* | **[!UICONTROL CDN無効化]** - **[!UICONTROL 確認]**&#x200B;ページにURLが存在しない場合に発生します。その際、**[!UICONTROL 送信]**&#x200B;をタップします。 |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->
