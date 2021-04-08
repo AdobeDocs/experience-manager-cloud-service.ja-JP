@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8331ecb0797f878067a4f83d97e6ec2f62bb551a
+source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 14%
+source-wordcount: '1585'
+ht-degree: 12%
 
 ---
-
 
 # Cloud Service{#release-notes}としての[!DNL Adobe Experience Manager]の最新のリリースノート
 
@@ -82,12 +82,49 @@ AEM Formsは、多くの組織が長年にわたって素晴らしいオンボ�
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEMのCloud ManagerのリリースノートをCloud Service2021.3.0として概要を説明します。
+この節では、AEMのCloud ManagerのリリースノートをCloud Service2021.4.0および2021.3.0として概要を説明します。
+
+### リリース日 {#release-date-cm-april}
+
+AEMのCloud ManagerのCloud Service2021.4.0のリリース日は2021年4月8日です。
+次回のリリースは2021年5月6日に予定されています。
+
+### 新機能 {#what-is-new-april}
+
+* UIが更新され、プログラムワークフロー追加と編集がより直感的になりました。
+
+* 必要な権限を持つユーザーが、UIを介してコマースエンドポイントを送信できるようになりました。
+
+* 環境変数は、作成者または発行の特定のサービスに対してスコープできるようになりました。 AEMバージョン`2021.03.5104.20210328T185548Z`以上が必要です。
+
+* パイプラインが設定されていない場合でも、**Gitを管理**&#x200B;ボタンがパイプラインカードに表示されます。
+
+* Cloud Managerで使用されるAEMプロジェクトのアーキタイプのバージョンが、バージョン27に更新されました。
+
+* Cloud Managerで作成されたAdobe I/Oデベロッパーコンソールのプロジェクトを誤って編集または削除できなくなりました。
+
+* ユーザが新しい環境を追加すると、環境が作成された後は、別の領域に移動できないという通知が表示されます。
+
+* 環境変数は、作成者または発行の特定のサービスに対してスコープできるようになりました。 AEMバージョン2021.03.5104.20210328T185548Z以上が必要です。
+
+* 環境が削除されたときにパイプラインを開始したときのエラーメッセージが明確になりました。
+
+* Eclipseプロジェクトで提供されるOSGiバンドルは、ルール`CQBP-84--dependencies`から除外されるようになりました。
+
+### バグ修正 {#bug-fixes-cm-april}
+
+* パイプラインのエクスペリエンス監査ページを編集する際に、スラッシュ`( / )`で始まる入力パスによって、ステップが保留状態のままになることはなくなりました。
+
+* 新しい実稼動パイプラインが作成された場合、コンテンツ監査の上書きがユーザーによって追加されない場合、デフォルトのホームページは監査されませんでした。
+
+* `CloudServiceIncompatibleWorkflowProcess`の問題は、ダウンロード可能な雑誌号CSVファイル内で誤った重大度になっていました。
+
+* `Runmode`チェックは、非フォルダーノードで偽陽性を生み出していました。
+
 
 ### リリース日 {#release-date-cm-march}
 
 AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日です。
-次回のリリースは2021年4月8日に予定されています。
 
 ### 新機能 {#what-is-new-march}
 
