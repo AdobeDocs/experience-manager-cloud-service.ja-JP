@@ -1,64 +1,53 @@
 ---
-title: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノート
+title: AEM as a Cloud Service Release 2021.4.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2021.4.0 Cloud Manager のリリースノート
 feature: リリース情報
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: 69694f2067c53667803d38bbf7bc752f3b3afac6
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 16%
+source-wordcount: '327'
+ht-degree: 18%
 
 ---
 
+# Adobe Experience Manager as a Cloud Service 2021.4.0 の Cloud Manager のリリースノート {#release-notes}
 
-# Adobe Experience Manager as a Cloud Service 2021.3.0 の Cloud Manager のリリースノート {#release-notes}
-
-このページでは、AEM as a Cloud Service Release 2021.3.0 Cloud Manager のリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2021.4.0 Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
-AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日です。
-次回のリリースは2021年4月8日に予定されています。
+AEMのCloud ManagerのCloud Service2021.4.0のリリース日は2021年4月8日です。
+次回のリリースは2021年5月6日に予定されています。
 
-## Cloud Manager {#cloud-manager}
+### 新機能 {#what-is-new-april}
 
-### 新機能 {#what-is-new}
+* UIが更新され、プログラムワークフロー追加と編集がより直感的になりました。
 
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)の既存のカスタムドメイン名を設定している環境のお客様は、既存の設定に関するメッセージを表示し、UIを使用して自己提供できます。
+* 必要な権限を持つユーザーが、UIを介してコマースエンドポイントを送信できるようになりました。
 
-* 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービスの方法で次の操作を行うことができます。
-   * ア追加セットを持つ既存のプログラムに対するサイトソリューション、またはアセットを持つ既存のに対するサイトソリューション。
-   * サイトとアセットの両方を含む既存のプログラムからサイトまたはアセットを削除します。
-   * 2つ目追加は、使用されていないソリューションのエンタイトルメントを既存のプログラムに対して、または新しいプログラムとして使用することです。
+* 環境変数は、作成者または発行の特定のサービスに対してスコープできるようになりました。 AEMバージョン`2021.03.5104.20210328T185548Z`以上が必要です。
 
-* **パイプライン実行画面とアクティビティ画面の両方にAEM Push** Updatelabelが表示されるようになりました。
+* パイプラインが設定されていない場合でも、**Gitを管理**&#x200B;ボタンがパイプラインカードに表示されます。
 
-* 環境が休止状態になっているが、AEMの更新も使用可能な場合、**Hibernated**&#x200B;ステータスは&#x200B;**Update available**&#x200B;よりも優先されます。
+* Cloud Managerで使用されるAEMプロジェクトのアーキタイプのバージョンが、バージョン27に更新されました。
 
-* 統合シェルのユーザープロファイルアイコン（右上）に移動した後、「表示Cloud Managerロール」オプションを選択すると、Cloud Managerロールを表示できるようになりました。
+* Cloud Managerで作成されたAdobe I/Oデベロッパーコンソールのプロジェクトを誤って編集または削除できなくなりました。
 
-* ラベル&#x200B;**承認申請**&#x200B;が&#x200B;**実稼動承認**&#x200B;にラベル変更され、より明確になりました。
+* ユーザが新しい環境を追加すると、環境が作成された後は、別の領域に移動できないという通知が表示されます。
 
-* **バージョン**&#x200B;ラベルが、実稼動パイプライン実行画面の&#x200B;**Gitタグ**&#x200B;に再ラベル付けされました。
+* 環境変数は、作成者または発行の特定のサービスに対してスコープできるようになりました。 AEMバージョン2021.03.5104.20210328T185548Z以上が必要です。
 
-* 重要な指標が定義されたしきい値を満たさない場合の動作を定義するラベルは、その真の動作を反映するために再ラベル付けされています。**すぐにキャンセル**&#x200B;と&#x200B;**すぐに承認**。
+* 環境が削除されたときにパイプラインを開始したときのエラーメッセージが明確になりました。
 
-* AEMCloud ServiceSDKのバージョン`2021.3.4997.20210303T022849Z-210225`に基づいて、クラスとメソッドの非推奨リストが更新されました。
+* Eclipseプロジェクトで提供されるOSGiバンドルは、ルール`CQBP-84--dependencies`から除外されるようになりました。
 
-* Cloud Manager実稼動パイプラインに、[カスタムUIテスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)機能が追加されました。
+### バグ修正 {#bug-fixes-cm-april}
 
-### バグ修正 {#bug-fixes}
+* パイプラインのエクスペリエンス監査ページを編集する際に、スラッシュ`( / )`で始まる入力パスによって、ステップが保留状態のままになることはなくなりました。
 
-* AEMのプッシュアップグレード中に、パッケージのバージョン管理がスキップされる場合がありました。
+* 新しい実稼動パイプラインが作成された場合、コンテンツ監査の上書きがユーザーによって追加されない場合、デフォルトのホームページは監査されませんでした。
 
-* 他のパッケージにパッケージが埋め込まれた場合に、品質の問題が正しく検出されない場合がありました。
+* `CloudServiceIncompatibleWorkflowProcess`の問題は、ダウンロード可能な雑誌号CSVファイル内で誤った重大度になっていました。
 
-* 不明確な状況では、プログラムダイアログを開いたときに生成される追加デフォルトのプログラム名は、既存のプログラム名の重複の場合があります。
-
-* 場合によっては、パイプラインの開始直後にパイプラインの実行ページから移動すると、実際に実行が開始したにもかかわらず、アクションが失敗したことを示すエラーメッセージが表示されます。
-
-* お客様のビルドで無効なパッケージが生成された場合、ビルド手順が不必要に再開されました。
-
-* 場合によっては、IP許可リストの横に緑色の「アクティブ」ステータスが表示される場合があります。このステータスは、その設定が展開されていない場合でも表示されます。
-
-* 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
+* `Runmode`チェックは、非フォルダーノードで偽陽性を生み出していました。
