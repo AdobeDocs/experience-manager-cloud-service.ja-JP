@@ -6,10 +6,10 @@ topic: 業務担当者
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt
-source-git-commit: e1ca8c3a26fae6e421a087ade03cfeddc7a94a0e
+source-git-commit: 4f2aa7d444d46aef959abc953e7a943f00cbb0c1
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 47%
+source-wordcount: '1924'
+ht-degree: 46%
 
 ---
 
@@ -45,11 +45,11 @@ ht-degree: 47%
 
 * 最新のスマートイメージングを使用するWebページのGoogle SEOランキングを改善しました。
 * 最適化されたコンテンツをすぐに（実行時に）提供します。
-* Adobe Sensei テクノロジーを使用して、イメージリクエストで指定された品質（qlt）に従って変換します。
-* スマートイメージングは、「bfc」 URL パラメータを使用してオフにできます。
+* Adobe Senseiテクノロジを使用して、イメージリクエストで指定された画質(`qlt`)に従って変換します。
+* スマートイメージングは、`bfc` URLパラメータを使用してオフにできます。
 * TTL（Time To Live）独立。以前は、スマートイメージングを機能させるには、最小 TTL 値 12 時間が必要でした。
 * 以前は、元の画像と派生画像の両方がキャッシュされており、キャッシュを無効にする2つの手順が必要でした。 最新のスマートイメージングでは、派生物のみがキャッシュされ、1ステップのキャッシュ無効化プロセスが可能です。
-* ルールセットでカスタムヘッダーを使用するお客様。 例えば、[画像応答へのカスタム接触チャネル値の追加|Dynamic Mediaクラシック](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html))で推奨される「Timing Allow Header」、「X-Robot」などは、最新のスマートイメージングからメリットを得られます。 これらのヘッダーは、以前のバージョンのスマートイメージングとは異なり、ブロックされません。
+* ルールセットでカスタムヘッダーを使用するお客様は、以前のバージョンのSmart Imagingとは異なり、最新のスマートイメージングを利用できます。これらのヘッダーはブロックされないためです。 例えば、[画像応答へのカスタム接触チャネル値の追加|Dynamic Mediaクラシック](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)で推奨される「Timing Allow Header」、「X-Robot」などです。
 
 ## スマートイメージングにはライセンス費用がかかりますか？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
