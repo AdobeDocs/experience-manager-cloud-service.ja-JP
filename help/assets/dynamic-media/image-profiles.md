@@ -3,15 +3,15 @@ title: Dynamic Media イメージプロファイル
 description: 「アンシャープマスク、スマート切り抜き、スマートスウォッチ、またはその両方の設定を含むDynamic Media画像プロファイルを作成する方法について説明します。 次に、プロファイルを画像アセットのフォルダに適用します。」
 feature: アセット管理，画像プロファイル，レンディション
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 74%
+source-wordcount: '2705'
+ht-degree: 73%
 
 ---
-
 
 # Dynamic Media イメージプロファイル {#image-profiles}
 
@@ -96,7 +96,7 @@ ht-degree: 74%
  </tbody>
 </table>
 
-シャープニングについては、[画像のシャープニング](/help/assets/dynamic-media/assets/sharpening_images.pdf)で説明しています。
+シャープニングについては、[画像のシャープニング](/help/assets/dynamic-media/assets/sharpening_images.pdf)を参照してください。
 
 ## Dynamic Media イメージプロファイルの作成 {#creating-image-profiles}
 
@@ -248,7 +248,7 @@ ht-degree: 74%
       * 画像にスマート切り抜きまたはスマートスウォッチのみが含まれている場合は、画像上で切り抜きボックスの隅のハンドルをドラッグします。切り抜き表示可能領域のサイズを調整します。
       * 画像にスマート切り抜きとスマートスウォッチの両方が含まれている場合は、画像上で切り抜きボックスの隅のハンドルをドラッグします。切り抜き表示可能領域のサイズを調整します。 または、画像の下のスマートスウォッチをタップし（カラースウォッチは静的です）、切り抜きボックスの隅のハンドルをドラッグします。 スウォッチの表示可能領域のサイズを調整します。
 
-      ![画像のスマート切り抜きのサイズ変更。](assets/edit_smart_crops-resize.png)
+      ![画像のスマート切り抜きのサイズを変更します](assets/edit_smart_crops-resize.png)。
 
    * スマート切り抜きボックスを移動します。次のいずれかの操作をおこないます。
 
