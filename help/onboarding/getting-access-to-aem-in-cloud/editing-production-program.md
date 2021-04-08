@@ -3,7 +3,7 @@ title: '実稼働プログラムの編集 '
 description: 実稼働プログラムの編集
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 26cbd2369762050eb2e85d714b8f6b0ff129f171
+source-git-commit: 6ad0e83f865572ff6eb1c20ee6851c3eb48f2311
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    ![](assets/edit-program-general.png)
 
-   「**ソリューション&amp;追加オン**」タブには、本番用とSandbox用の両方のプログラムに対して、**サイト**&#x200B;と&#x200B;**アセット**&#x200B;の2つのオプションが表示されます。 また、次の図に示すように、**[サイト]**&#x200B;で利用できる[コマース]**アドオンオプションを選択することもできます。**
+   「**ソリューション&amp;追加オン**」タブには、本番用とSandbox用の両方のプログラムに対して、**サイト**&#x200B;と&#x200B;**アセット**&#x200B;の2つのオプションが表示されます。 また、次の図に示すように、**コマース**&#x200B;アドオンオプション（**サイト**&#x200B;で利用可能）を選択することもできます。
 
    ![](assets/edit-prg.png)
 
