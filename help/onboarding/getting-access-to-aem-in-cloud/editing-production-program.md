@@ -1,14 +1,14 @@
 ---
 title: '実稼働プログラムの編集 '
-description: '実稼働プログラムの編集 '
+description: 実稼働プログラムの編集
+exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: c34b9cbd019ee74059e13be4f19c1bb9a54fa2ba
+source-git-commit: 6a5882a942511a07b9dcdd2e2bf47eb311235f92
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # 本番プログラムの編集{#create-production-program}
 
@@ -25,12 +25,10 @@ ht-degree: 0%
 
 1. Cloud Managerの&#x200B;*概要*&#x200B;ページから、**プログラムの編集**&#x200B;ページに移動します。
 
-1. **プログラムの編集**&#x200B;ページには、実稼働環境とSandboxプログラムの両方に対して2つのタブ（「一般」および「ソリューション」）が表示されます。
+1. **プログラムを編集**&#x200B;ページに、実稼動環境とSandboxプログラムの両方に対して、3つのオプション（**サイト**、**コマース**、**アセット**）が表示されます。
 
-   ![](assets/edit-program.png)
+   ![](assets/edit-prg.png)
 
-   >[!NOTE]
-   >サイトとアセットの両方が表示されますが、購入済みと未使用の購入内容に基づいて、いずれかが無効になる場合があります。 特に、特定のソリューションに対して未使用の権利付与がない場合は、そのソリューションが表示されますが、無効になります。
 
 ## プログラムの編集時の考慮事項{#considerations-editing}
 
