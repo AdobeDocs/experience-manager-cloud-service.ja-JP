@@ -3,15 +3,15 @@ title: インタラクティブ画像
 description: Dynamic Media でのインタラクティブ画像の使用方法について説明します。
 feature: インタラクティブ画像
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4251'
+source-wordcount: '4249'
 ht-degree: 47%
 
 ---
-
 
 # インタラクティブ画像 {#interactive-images}
 
@@ -47,8 +47,7 @@ ht-degree: 47%
 
 1. **イメージバナーへのホットスポットの追加**。イメ追加ージバナーの1つ以上のホットスポット。各ハイパーリンクを、ハイパーリンク、クイック表示、エクスペリエンスフラグメントなどのアクションに関連付けます。 ホットスポットを追加した後は、インタラクティブ画像を公開するとタスクが終了します。[画像バナーへのホットスポットの追加](#adding-hotspots-to-an-image-banner)を参照してください。[（オプション）インタラクティブ画像のプレビュー](#optional-previewing-interactive-images)を参照してください。必要に応じて、ショッパブルバナーの表示を確認して、インタラクティビティをテストすることができます。インタラクティブ画像アセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
-1. **WebサイトまたはExperience Managerー内のWebサイトにインタラクティブ画像を追加する**。サイト、eコマース、またはその両方を使用する場合は、インタラクティブExperience ManagerをWebページに直接追加できます。 インタラクティブメディアコンポーネントをページにドラッグします。 [ページへの Dynamic Media アセットの追加を参照してください。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-Experience ManagerAssetsとDynamic Mediaスタンドアロンを使用する場合は、Webサイトの埋め込みコードをコピーします。次に、既存のクイック表示と統合します。 [インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。サードパーティのWCM(Web Content Manager)を使用する場合は、新しいインタラクティブビデオをWebサイトで使用している既存のクイック表示と統合します。 [インタラクティブ表示と既存のクイック画像の統合](#integrating-an-interactive-image-with-an-existing-quickview)を参照してください。
+1. **WebサイトまたはExperience Managerー内のWebサイトにインタラクティブ画像を追加する**。サイト、eコマース、またはその両方を使用する場合は、インタラクティブExperience ManagerをWebページに直接追加できます。 インタラクティブメディアコンポーネントをページにドラッグします。 [ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。Experience ManagerAssetsとDynamic Mediaスタンドアロンを使用する場合は、Webサイトの埋め込みコードをコピーします。 次に、既存のクイック表示と統合します。 [インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。サードパーティのWCM(Web Content Manager)を使用する場合は、新しいインタラクティブビデオをWebサイトで使用している既存のクイック表示と統合します。 [インタラクティブ表示と既存のクイック画像の統合](#integrating-an-interactive-image-with-an-existing-quickview)を参照してください。
 
 ## （オプション）ホットスポットの変数の識別 {#optional-identifying-hotspot-variables}
 
