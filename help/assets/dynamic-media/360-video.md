@@ -3,15 +3,15 @@ title: 360/VR ビデオ
 description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを操作する方法を学びます。
 feature: 360 VR ビデオ
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 63%
+source-wordcount: '944'
+ht-degree: 61%
 
 ---
-
 
 # 360/VR ビデオ {#vr-video}
 
@@ -101,7 +101,7 @@ Start by uploading 360 Videos.
 360 ビデオの設定が完了したら、このビデオを公開できます。
 
 [Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対URLを持つリンク(特にExperience Managerサイトページへのリンク)がある場合、URLベースのリンク方法は使用できません。
-[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+[ページへのDynamic Mediaアセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
 **360 ビデオをプレビューするには**
 
@@ -135,4 +135,4 @@ Start by uploading 360 Videos.
 360ビデオを使用するには、公開する必要があります。 360 ビデオを公開すると、URL と埋め込みコードがアクティベートされます。また、スケーラブルで効率の良い配信のために CDN と統合された Dynamic Media クラウドにも、360 ビデオが公開されます。
 
 360 ビデオの公開方法について詳しくは、[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)も参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)も参照してください。インタラクティブコンテンツに相対URLを持つリンク(特にExperience Managerサイトページへのリンク)がある場合、URLベースのリンク方法は使用できません。
-[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
+[ページへのDynamic Mediaアセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
