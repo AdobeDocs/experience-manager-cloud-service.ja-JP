@@ -3,7 +3,7 @@ title: '実稼働プログラムの編集 '
 description: 実稼働プログラムの編集
 exl-id: 745c10af-f0a0-49e9-bb79-3fd058fad16c
 translation-type: tm+mt
-source-git-commit: 9de1b85f8909709c08cb7358414c18c813aac684
+source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
    >[!NOTE]
    >1人のプログラムに対して少なくとも1つのソリューションを選択する必要があります。つまり、プログラムの編集ワークフローでは、すべてのソリューションの選択を解除できません。
 
-1. 「**保存**」をクリックして、編集プログラムのワークフローを完了します。
+1. 「**保存**」をクリックして、プログラムの編集ワークフローを完了します。
 
 
 ## プログラムの編集時の考慮事項{#considerations-editing}
