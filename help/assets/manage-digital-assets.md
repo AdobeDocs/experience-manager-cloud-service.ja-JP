@@ -4,15 +4,15 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 feature: アセット管理，公開，コラボレーション，アセット処理
-role: 実業家，建築家，管理者
+role: Business Practitioner,Architect,Administrator
+exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '4346'
+source-wordcount: '4342'
 ht-degree: 99%
 
 ---
-
 
 # アセットの管理 {#manage-assets}
 
@@ -285,7 +285,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 <!--
 >[!NOTE]
 >
->For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets.](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+>For more information specific to Dynamic Media, see [Publishing Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 -->
 
 1. 公開するアセットまたはフォルダーの場所に移動します。
