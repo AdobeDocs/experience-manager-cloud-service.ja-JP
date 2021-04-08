@@ -3,15 +3,15 @@ title: インタラクティブビデオ
 description: Dynamic Media でインタラクティブビデオとショッパブルビデオを使用する方法を説明します。
 feature: インタラクティブビデオ
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '6068'
+source-wordcount: '6066'
 ht-degree: 49%
 
 ---
-
 
 # インタラクティブビデオ {#interactive-videos}
 
@@ -81,7 +81,7 @@ There was a link here that showed the video frame of an interactive video and wh
 (インタラクティブコンテンツに相対URLを持つリンク、特にExperience Managerサイトページへのリンクが含まれる場合、URLベースのリンク方式は使用できません)。
 インタラクティブビデオアセットを公開して作業は完了です。公開すると、埋め込みコードまたはURLが作成され、最終的にコピーしてWebサイトのランディングページに適用されます。 [ビデオへのインタラクティビティの追加](#adding-interactivity-to-your-video)を参照してください。[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
-1. **インタラクティブビデオのWebサイトまたはExperience Manager内のWebサイトへの追加** -Experience Managerサイト、Experience Managereコマースまたはその両方を使用している場合、Experience Manager内のWebページに直接インタラクティブビデオを追加できます。インタラクティブメディアコンポーネントをページにドラッグします。 [ページへの Dynamic Media アセットの追加を参照してください。](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+1. **インタラクティブビデオのWebサイトまたはExperience Manager内のWebサイトへの追加** -Experience Managerサイト、Experience Managereコマースまたはその両方を使用している場合、Experience Manager内のWebページに直接インタラクティブビデオを追加できます。インタラクティブメディアコンポーネントをページにドラッグします。 [ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 埋め込みコードまたは URL を使用して、インタラクティブビデオを Web サイトエクスペリエンスに統合します。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website)を参照してください。サードパーティのWCM(Web Content Manager)を使用する場合は、新しいインタラクティブビデオを、Webサイトで使用されている既存のクイック表示実装と統合する必要があります。 詳しくは、[インタラクティブビデオと既存のクイック表示の統合](#integrating-an-interactive-video-with-an-existing-quickview)を参照してください。
    [ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
@@ -281,7 +281,7 @@ Experience Managerの導入でeコマースを使用している場合は、こ�
 
       ビデオの最後に到達するまで、セグメントを追加するタイムラインのポイントで、ビデオの再生と停止を続けます。
 
-1. （オプション）**[!UICONTROL タイムラインスケールスライダ]**&#x200B;の左側のバーをドラッグしてズームインし、右にドラッグしてズームアウトします。 この操作により、追加したセグメントの詳細を表示する量を制御できます。
+1. （オプション）**[!UICONTROL タイムラインスケールスライダ]**&#x200B;の左側のバーをドラッグしてズームインし、右にドラッグしてズームアウトします。 この操作により、追加したセグメントの詳細表示を制御できます。
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
