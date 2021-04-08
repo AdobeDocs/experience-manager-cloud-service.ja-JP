@@ -3,25 +3,25 @@ title: Web ページへの Dynamic Media ビデオビューアまたは画像ビ
 description: Web ページに Dynamic Media ビデオまたは画像アセットを埋め込む方法を説明します。
 feature: アセット管理
 topic: 業務担当者
-role: 業務担当者
+role: Business Practitioner
+exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 96%
+source-wordcount: '376'
+ht-degree: 84%
 
 ---
-
 
 # Web ページへの Dynamic Media ビデオ、画像ビューア、またはディメンショナルビューアの埋め込み {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Web ページに埋め込んでビデオを再生したりアセットを表示したりする場合は、**[!UICONTROL 埋め込みコード]**&#x200B;機能を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
-AEM を WCM として使用&#x200B;_していない_&#x200B;場合に限り、URL の埋め込みを実行します。AEM を WCM として使用している場合は、[ページに直接アセットを追加](adding-dynamic-media-assets-to-pages.md)します。
+AEMをWCMとして使用して&#x200B;__&#x200B;しない場合にのみ、URLを埋め込みます。AEMをWCMとして使用している場合、[アセットをページ](adding-dynamic-media-assets-to-pages.md)に直接追加します。
 
-[Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)を参照してください。
+[Web アプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)を参照してください。
 
-[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)を参照してください。
+詳しくは、[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
