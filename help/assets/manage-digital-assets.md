@@ -7,10 +7,10 @@ feature: アセット管理，公開，コラボレーション，アセット�
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: e12638fdda7da178e8dc22163d5ffb822bd980bf
+source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 94%
+source-wordcount: '4508'
+ht-degree: 91%
 
 ---
 
@@ -624,4 +624,24 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 * 1 つのコレクションにはアセットへの参照のみが含まれるので、様々な場所のアセットを含めることができます。各コレクションは、アセットの参照整合性を維持します。
 * コレクションは、特権レベル（編集、表示など）の異なる複数のユーザー間で共有できます。
 
-コレクションの管理について詳しくは、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
+コレクション管理の詳細については、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
+
+## デスクトップアプリまたはAdobeのアセットリンク{#hide-expired-assets-via-acp-api}でアセットを表示する際に、期限切れのアセットを非表示にする
+
+[!DNL Experience Manager] デスクトップアプリでは、WindowsまたはMacデスクトップからDAMリポジトリにアクセスできます。Adobeアセットリンクを使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
+
+[!DNL Experience Manager]ユーザーインターフェイス内からアセットを参照する場合、期限切れのアセットは表示されません。 デスクトップアプリとアセットリンクからアセットを参照する際に、期限切れのアセットの表示、検索および取得を防ぐために、管理者は次の設定を行うことができます。 この設定は、管理者権限に関係なく、すべてのユーザーで機能します。
+
+次のCURLコマンドを実行します。 アセットにアクセスするユーザーの`/conf/global/settings/dam/acpapi/`で読み取りアクセス権を確認します。 `dam-user`グループに属するユーザーは、デフォルトで権限を持っています。
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+詳しくは、デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を使用して[DAMアセットを参照する方法および[Adobeアセットリンク](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)の使用方法を参照してください。
