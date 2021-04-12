@@ -4,7 +4,7 @@ description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: b063fee5e088d6dfe5bd6be2b842e6bae48ee4a9
+source-git-commit: 3d0f58754aaff3a0c505f60a9c24b4712c2e4c30
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 64%
