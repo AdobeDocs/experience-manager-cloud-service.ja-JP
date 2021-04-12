@@ -4,10 +4,10 @@ description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 translation-type: tm+mt
-source-git-commit: 753d023e1b2c5b76ed5c402c002046cc2c5c1de4
+source-git-commit: 16a0f4de0d7a32032abd4742cc06a086038d032b
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 63%
+ht-degree: 64%
 
 ---
 
@@ -46,10 +46,10 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 設定手順：
 
-1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。例：`X-Forwarded-Host: example.com`
+1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。例：`X-Forwarded-Host:example.com`
 1. ホストヘッダーをオリジンドメインに設定します（AEM CDN の入口）。例：`Host: publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`
 1. SNI ヘッダーをオリジンに送信します。ホストヘッダーと同様に、SNIヘッダーは接触チャネルドメインである必要があります。
-1. `X-Edge-Key`または`X-AEM-Edge-Key`を設定します（CDNが`X-Edge-*`を取り除く場合）。値はAdobeから取得する必要があります。
+1. `X-Edge-Key`または`X-AEM-Edge-Key`を設定します（CDNが`X-Edge-*`を取り除く場合）。 この値はアドビから取得されます。
    * これは、AdobeCDNがリクエストのソースを検証し、`X-Forwarded-*`ヘッダーをAEMアプリケーションに渡すために必要です。 例えば、AEMは`X-Forwarded-Host`を使用してホストヘッダーを決定し、`X-Forwarded-For`を使用してクライアントIPを決定します。 したがって、`X-Forwarded-*`ヘッダの正確性を保証するのは、信頼できる呼び出し元（例：お客様管理のCDN）の責任になります（下記の注意を参照）。
    * 必要に応じて、`X-Edge-Key`が存在しない場合にAdobeCDNの入力へのアクセスをブロックできます。 AdobeCDNの入力に直接アクセスする必要がある場合（ブロックする場合）は、Adobeに通知してください。
 
