@@ -3,15 +3,15 @@ title: ' [!DNL Assets] のデジタル著作権管理'
 description: ' [!DNL Experience Manager]  as a  [!DNL Cloud Service] でライセンスされているアセットの有効期限の状態と情報を管理する方法について説明します。'
 contentOwner: AG
 feature: アセット管理，DRM
-role: 業務担当者、管理者
+role: Business Practitioner,Administrator
+exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 99%
+source-wordcount: '1345'
+ht-degree: 98%
 
 ---
-
 
 # アセットのデジタル著作権管理 {#digital-rights-management-in-assets}
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 検索パネルで、有効期限切れのアセット（有効期限切れのサブアセットを含む）を検索できます。
 
-1. [!DNL Assets] コンソールで、ツールバーの「**[!UICONTROL 検索]**」をクリックしてオムニサーチボックスを表示します。
+1. [!DNL Assets]コンソールで、ツールバーの「**[!UICONTROL 検索]**」をクリックして、「[!DNL Experience Manager]検索」ボックスを表示します。
 
 1. オムニサーチボックスにカーソルを置いて、`Enter` キーを押すと検索結果ページが表示されます。
 
