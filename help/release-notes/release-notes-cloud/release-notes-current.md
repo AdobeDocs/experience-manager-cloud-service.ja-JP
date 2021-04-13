@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: bea158d45f8f66febe47d0580074358ec2b69c16
+source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1588'
 ht-degree: 12%
 
 ---
@@ -195,11 +195,13 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 ### リリース日 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.8のリリース日は2021年3月22日です。
+Best Practices Analyzer v2.1.12のリリース日は2021年4月12日です。
 
-### ベストプラクティスアナライザの新機能{#what-is-new-bpa}
+### バグ修正 {#bug-fixes-bpa-april}
 
-* UIのBPAレポート、およびCSVファイルとしてエクスポートされたレポートから、ACSコモンズの結果をフィルタで除外できます。
+* BPAレポートで重複行が見つかりました。 この問題が修正されました。
+* AEMバージョン6.4.2のBPA UIで、「レポートの生成」ボタンを無効にしていたJSエラーが発生していました。 修正済み
+
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
