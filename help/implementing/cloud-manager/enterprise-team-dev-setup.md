@@ -2,10 +2,10 @@
 title: エンタープライズチーム開発セットアップ —Cloud Services
 description: エンタープライズチーム開発セットアップの詳細については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: ad72ea45681169551f5ce6801cec59d6c106b346
+source-git-commit: 833f8d5bcfb88a6a4c9c945c433bbb731bb5d8a2
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 0%
+source-wordcount: '1525'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Managerは、企業のニーズに合わせて調整できる柔軟なマ�
 
 各企業には、異なるチームの設定、プロセス、開発ワークフローなど、異なる要件があります。 以下に説明する設定は、AEMの上にCloud Serviceとしてエクスペリエンスを提供するいくつかのプロジェクトで、Adobeが使用します。
 
-例えば、Adobe PhotoshopやAdobe IllustratorなどのAdobe Creative Cloudアプリケーションには、エンドユーザが使用できるチュートリアル、サンプル、ガイドなどのコンテンツリソースが含まれています。 このコンテンツは、AEMをヘッドレス&#x200B;*のCloud Serviceとして使用するクライアントアプリケーションで消費されます。AEM Cloudの公開層にAPI呼び出しを行い、構造化されたコンテンツをJSONストリームとして取得し、AEM CDNを活用して、最適なパフォーマンスで提供します。*
+例えば、Adobe PhotoshopやAdobe IllustratorなどのAdobe Creative Cloudアプリケーションには、エンドユーザが使用できるチュートリアル、サンプル、ガイドなどのコンテンツリソースが含まれています。 このコンテンツは、AEMをヘッドレス&#x200B;*のCloud Serviceとして使用するクライアントアプリケーションで消費されます。AEM Cloudの公開層にAPI呼び出しを行い、構造化されたコンテンツをJSONストリームとして取得し、AEMの[Content Network(CDN)をCloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=ja#content-delivery)として活用し、最適なパフォーマンスです。*
 
 このプロジェクトに貢献するチームは、以下の手順に従います。
 
@@ -68,13 +68,13 @@ Cloud Managerのgitリポジトリの設定には、次の2つの分岐があり
 * *安定したリリースブランチ*。すべてのチームの実稼働コードが含まれます。
 * *開発ブランチ*。すべてのチームの開発コードが含まれます。
 
-開発または安定したブランチのチームのgitリポジトリに対するすべてのプッシュが、[githubアクション](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)をトリガーします。 すべてのプロジェクトは、安定ブランチに対して同じ設定に従います。 プロジェクトの安定したブランチのプッシュは、Cloud Managerのgitリポジトリの安定したブランチに自動的にプッシュされます。 Cloud Managerの実稼動パイプラインは、安定したブランチへのプッシュによってトリガーされるように設定されています。 したがって、プロダクションパイプラインはチームの各プッシュによって安定したブランチに実行され、すべての品質ゲートが通過すると、プロダクションのデプロイメントが更新されます。
+開発または安定したブランチのチームのgitリポジトリに対するすべてのプッシュが、[githubアクション](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)をトリガーします。 すべてのプロジェクトは、安定ブランチに対して同じ設定に従います。 プロジェクトの安定したブランチへのプッシュは、Cloud Managerのgitリポジトリの安定したブランチに自動的にプッシュされます。 Cloud Managerの実稼動パイプラインは、安定したブランチへのプッシュによってトリガーされるように設定されています。 したがって、プロダクションパイプラインはチームの各プッシュによって安定したブランチに実行され、すべての品質ゲートが通過すると、プロダクションのデプロイメントが更新されます。
 
 ![](assets/team-setup2.png)
 
 開発ブランチへのプッシュの処理方法が変わります。 チームのgitリポジトリ内の開発者ブランチへのプッシュによってGitHubアクションがトリガーされ、コードがCloud Managerのgitリポジトリ内の開発ブランチに自動的にプッシュされる場合、非実稼動パイプラインはコードのプッシュによって自動的にトリガーされません。 Cloud Managerのapiへの呼び出しによってトリガーされます。
 実稼働パイプラインの実行には、提供された品質ゲートを介してすべてのチームのコードをチェックすることも含まれます。 コードがステージにデプロイされると、テストと監査が実行され、すべてが期待どおりに動作することが確認されます。 すべてのゲートが通過すると、変更は中断やダウンタイムを発生させることなく、本番環境に展開されます。
-ローカル開発では、Cloud Service用SDKが使用されます。 SDKを使用すると、ローカルの作成者、発行、およびディスパッチャーを設定できます。 これにより、オフラインでの開発と迅速な再開が可能になります。 開発にはauthorしか使用されない場合もありますが、ディスパッチャーと発行をすばやく設定すると、gitリポジトリにプッシュする前にすべてをローカルでテストできます。 各チームのメンバーは、通常、の共有gitからコードおよび独自のプロジェクトコードをチェックアウトします。 プロジェクトは独立しているので、他のプロジェクトをチェックアウトする必要はありません。
+ローカル開発では、[Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja#developing)としてのAEM用SDKが使用されます。 SDKを使用すると、ローカルの作成者、発行、およびディスパッチャーを設定できます。 これにより、オフラインでの開発と迅速な再開が可能になります。 開発にはauthorしか使用されない場合もありますが、ディスパッチャーと発行をすばやく設定すると、gitリポジトリにプッシュする前にすべてをローカルでテストできます。 各チームのメンバーは、通常、の共有gitからコードおよび独自のプロジェクトコードをチェックアウトします。 プロジェクトは独立しているので、他のプロジェクトをチェックアウトする必要はありません。
 
 ![](assets/team-setup3.png)
 
