@@ -1,14 +1,14 @@
 ---
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
+exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+source-git-commit: 800c6db7fed43d706dcf1c26235b2f88ed0a5b62
 workflow-type: tm+mt
-source-wordcount: '2836'
-ht-degree: 99%
+source-wordcount: '2873'
+ht-degree: 97%
 
 ---
-
 
 # AEM プロジェクトの構造
 
@@ -86,6 +86,10 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
          + サービスユーザー
          + グループ
          + ACL（権限）
+
+>[!NOTE]
+>
+>すべての環境に同じコードを導入する必要があります。 これは、ステージ環境上の信頼性検証のレベルを実稼動環境でも確実に行うために必要です。 詳しくは、[ロールバックの保守的なコーディング](/help/implementing/deploying/overview.md#conservative-coding-for-rollbacks)を参照してください。
 
 
 ### コンテンツパッケージ
