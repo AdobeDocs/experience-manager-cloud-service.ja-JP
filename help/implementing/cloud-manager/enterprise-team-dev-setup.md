@@ -2,9 +2,9 @@
 title: エンタープライズチーム開発セットアップ —Cloud Services
 description: エンタープライズチーム開発セットアップの詳細については、このページを参照してください
 translation-type: tm+mt
-source-git-commit: 1695f98cdf10c3bf35d651bd165fb9f2ee113abe
+source-git-commit: 45425a824f33f9454a4a0481befbbcaf5fc36c8d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
@@ -63,12 +63,12 @@ Cloud Managerは、企業のニーズに合わせて調整できる柔軟なマ�
 
 機能が成熟すると、その機能が開発ブランチに統合され、機能ブランチで開発が行われます。 完成および検証済みの機能は、開発ブランチから選択され、安定したブランチに統合されます。 すべての変更はプル要求(PR)を通じて行われます。 各PRは、品質ゲートによって自動的に検証される。 Sonarはコードの品質チェックに使用され、新しいコードが回帰を導入していないことを確認するためのテストスイートのセットが実行されます。
 
-Cloud Manager Gitリポジトリのセットアップには、次の2つのブランチがあります。
+Cloud Managerのgitリポジトリの設定には、次の2つの分岐があります。
 
 * *安定したリリースブランチ*。すべてのチームの実稼働コードが含まれます。
 * *開発ブランチ*。すべてのチームの開発コードが含まれます。
 
-開発または安定したブランチのチームのgitリポジトリに対するすべてのプッシュが、[githubアクション](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)をトリガーします。 すべてのプロジェクトは、安定ブランチに対して同じ設定に従います。プロジェクトの安定したブランチをプッシュすると、Cloud Managers gitリポジトリの安定したブランチに自動的にプッシュされます。 Cloud Managerの実稼動パイプラインは、安定したブランチへのプッシュによってトリガーされるように設定されています。 したがって、プロダクションパイプラインはチームの各プッシュによって安定したブランチに実行され、すべての品質ゲートが通過すると、プロダクションのデプロイメントが更新されます。
+開発または安定したブランチのチームのgitリポジトリに対するすべてのプッシュが、[githubアクション](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html?lang=en#managing-code)をトリガーします。 すべてのプロジェクトは、安定ブランチに対して同じ設定に従います。 プロジェクトの安定したブランチのプッシュは、Cloud Managers gitリポジトリの安定したブランチに自動的にプッシュされます。 Cloud Managerの実稼動パイプラインは、安定したブランチへのプッシュによってトリガーされるように設定されています。 したがって、プロダクションパイプラインはチームの各プッシュによって安定したブランチに実行され、すべての品質ゲートが通過すると、プロダクションのデプロイメントが更新されます。
 
 ![](assets/team-setup2.png)
 
