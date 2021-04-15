@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: b412ec6b554684b9b41fe6c8991124bc76e200af
+source-git-commit: baa9f84e8a32bbfdfa6717225fb706ea81b94e06
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1678'
 ht-degree: 12%
 
 ---
@@ -169,6 +169,21 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 * 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
+
+### リリース日 {#release-date-ctt-april}
+
+コンテンツ転送ツールv1.3.8のリリース日は2021年4月16日です。
+
+### バグ修正 {#bug-fixes-ctt-april}
+
+* CTTがアセットのテキストレンディションを作成しない。 アセットをCloud Serviceに移行する際、テキストコンテンツで検索できるように、テキストレンディションが必要です。 この問題は修正されました。
+
+* wipe=trueのCTTで、ターゲットCloud Serviceインスタンスのカウンターインデックスが正しくない問題を修正しました。 この問題が修正されました。
+
+* CTT UIの自動更新機能が原因で複数のバグが発生していた問題を修正しました。 これらの問題は修正されました。
+
+* CTT UIのテキストヘッダーが重なっていました。 この問題が修正されました。
+
 
 ### リリース日 {#release-date-ctt}
 
