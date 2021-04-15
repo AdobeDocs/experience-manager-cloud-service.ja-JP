@@ -1,14 +1,14 @@
 ---
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
+exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: fd2009eab27ac14e722f2e9da28fc734834ab892
+source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
 workflow-type: tm+mt
 source-wordcount: '1738'
 ht-degree: 73%
 
 ---
-
 
 # コンテンツの検索とインデックス作成 {#indexing}
 
@@ -169,7 +169,7 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ### 変更の取り消し{#undoing-a-change}
 
-インデックス定義の変更を元に戻す必要がある場合があります。 原因は、誤って変更が行われたか、変更が不要になったことです。 例えば、インデックス定義`damAssetAssetLucene-8-custom-3`は誤って作成され、既に展開されています。 そのため、以前のインデックス定義`damAssetAssetLucene-8-custom-2`に戻した方がよい場合があります。 これを行うには、前のインデックス`damAssetAssetLucene-8-custom-2`の定義を含む`damAssetAssetLucene-8-custom-4`という新しいインデックスを追加する必要があります。
+インデックス定義の変更を元に戻す必要がある場合があります。 原因は、誤って変更が行われたか、変更が不要になったことです。 例えば、インデックス定義`damAssetLucene-8-custom-3`は誤って作成され、既に展開されています。 そのため、以前のインデックス定義`damAssetLucene-8-custom-2`に戻した方がよい場合があります。 これを行うには、前のインデックス`damAssetLucene-8-custom-2`の定義を含む`damAssetLucene-8-custom-4`という新しいインデックスを追加する必要があります。
 
 ### インデックスの削除 {#removing-an-index}
 
@@ -198,7 +198,7 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
     </acme.product-custom-3>
 ```
 
-そのまま使用できるインデックスをカスタマイズする必要がなくなった場合は、そのまま使用できるインデックス定義をコピーする必要があります。 例えば、既に`damAssetAssetLucene-8-custom-3`を展開していて、カスタマイズが不要になり、デフォルトの`damAssetAssetLucene-8`インデックスに戻す場合は、`damAssetAssetLucene-8`のインデックス定義を含むインデックス`damAssetAssetLucene-8-custom-4`を追加する必要があります。
+そのまま使用できるインデックスをカスタマイズする必要がなくなった場合は、そのまま使用できるインデックス定義をコピーする必要があります。 例えば、既に`damAssetLucene-8-custom-3`を展開していて、カスタマイズが不要になり、デフォルトの`damAssetLucene-8`インデックスに戻す場合は、`damAssetLucene-8`のインデックス定義を含むインデックス`damAssetLucene-8-custom-4`を追加する必要があります。
 
 ### インデックスの可用性とフォルト・トレランス{#index-availability-and-fault-tolerance}
 
