@@ -3,14 +3,14 @@ title: ライブコピーの作成と同期
 description: ライブコピーを作成および同期して、サイト全体でコンテンツを再利用する方法を説明します。
 feature: マルチサイトマネージャー
 role: Administrator
+exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
 workflow-type: tm+mt
 source-wordcount: '4192'
 ht-degree: 40%
 
 ---
-
 
 # ライブコピーの作成と同期 {#creating-and-synchronizing-live-copies}
 
@@ -238,7 +238,7 @@ Blueprintページ（BluePrint設定で参照）は、現在の(BluePrint)ペー
 
 #### 参照レールからのブループリントのロールアウト {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. **サイト**&#x200B;コンソールで、Blueprintのページを選択し、**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開きます（ツールバーから）。
+1. **サイト**&#x200B;コンソールで、ライブコピーのページを選択し、**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開きます（ツールバーから）。
 1. リストから「**ブループリント**」オプションを選択し、このページに関連付けられているブループリントを表示します。
 1. リストから必要なブループリントを選択します。
 1. 「**ロールアウト**」をクリックまたはタップします。
