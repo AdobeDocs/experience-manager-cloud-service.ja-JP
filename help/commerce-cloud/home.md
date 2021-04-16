@@ -1,24 +1,24 @@
 ---
-title: AEM Commerce as a Cloud Service
-description: AEM Commerce as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
+title: AEMコンテンツとコマース
+description: AEMコンテンツとコマースのセルフヘルプリソースとドキュメントのリンク
+exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: b458d6d8c7a87495267a1132155ac58a30fb3458
+source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '356'
+ht-degree: 85%
 
 ---
 
+# AEMコンテンツとコマース{#commerce-guide}
 
-# AEM Commerce as a Cloud Service {#commerce-guide}
+このページでは、AEMコンテンツとコマースに関するセルフヘルプリソースをリストします。
 
-ここでは、AEM Commerce as a Cloud Service に関するセルフヘルプリソースの一覧を示します。
+## 主要コンテンツとコマースの記事{#key-articles}
 
-## Commerce の主要記事 {#key-articles}
-
-* [AEM Commerce as a Cloud Service の概要](overview.md)
-* [AEM Commerce as a Cloud Service のアーキテクチャ](architecture/magento.md)
-* [概要](getting-started.md)
+* [AEMコンテンツとコマースの概要](introduction.md)
+* [AEMコンテンツとコマースの使用の手引き](/help/commerce-cloud/getting-started.md)
+* [AEMコンテンツとコマースの開発](/help/commerce-cloud/develop.md)
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
