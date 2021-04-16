@@ -6,17 +6,17 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: Commerce統合フレームワーク
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 100%
+source-wordcount: '792'
+ht-degree: 98%
 
 ---
-
 
 # 高度な URL 設定 {#url}
 
@@ -32,7 +32,7 @@ SEO 要件と必要性に従って `UrlProvider` サービスを設定するに�
 >
 > 下記の [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL の使用方法を示す設定例が含まれています。
 
-### 製品ページの URL テンプレート {#product}
+### 製品ページURLテンプレート{#product}
 
 次のプロパティを使用して製品ページの URL を設定します。
 
@@ -43,7 +43,7 @@ SEO 要件と必要性に従って `UrlProvider` サービスを設定するに�
 * **製品識別子の場所**：製品データの取得に使用される識別子の場所を定義します。デフォルト値は `SELECTOR` です。もう 1 つの有効な値は `SUFFIX` です。前の例の URL では、ID `chaz-kangeroo-hoodie` を使用して製品データを取得します。
 * **製品識別子の種類**：製品データを取得する際に使用する識別子のタイプを定義します。デフォルト値は `URL_KEY` です。もう 1 つの有効な値は `SKU` です。前の例の URL では、`filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}` のような Magento GraphQL フィルターを使用して製品データを取得します。
 
-### 製品リストページの URL テンプレート {#product-list}
+### 製品リストページのURLテンプレート{#product-list}
 
 次のプロパティを使用して、カテゴリページまたは製品リストページの URL を設定します。
 
