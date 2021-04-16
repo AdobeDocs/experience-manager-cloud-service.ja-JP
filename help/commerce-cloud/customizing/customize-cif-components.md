@@ -7,14 +7,15 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: Commerce統合フレームワーク
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
+exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 translation-type: tm+mt
-source-git-commit: 72d98c21a3c02b98bd2474843b36f499e8d75a03
+source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2554'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +40,7 @@ Venia ブランドは最近、持続可能な資材を使用して一部の製�
 
 また、コード例やチュートリアルを実行するには、[GraphiQL](https://github.com/graphql/graphiql) またはブラウザー拡張機能などの GraphQL IDE が必要です。ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。Google Chrome の [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) は、ジョブを実行できる拡張機能の 1 つです。
 
-## Venia プロジェクトのクローン {#clone-venia-project}
+## ベニアプロジェクトのコピー{#clone-venia-project}
 
 Venia プロジェクト[のクローンを作成して](https://github.com/adobe/aem-cif-guides-venia)、デフォルトのスタイルを上書きします。
 
@@ -84,13 +85,13 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    >[!NOTE]
    >
-   > ダイアログ（*レンチ*&#x200B;アイコンをクリック）を使用してコンポーネントを設定することで、表示された製品を設定することもできます。
+   > ダイアログ（_レンチ_&#x200B;アイコンをクリック）を使用してコンポーネントを設定することで、表示された製品を設定することもできます。
 
 4. これで、製品ティーザーによって製品が表示されます。製品名と製品の価格は、表示されるデフォルトの属性です。
 
    ![製品ティーザー - デフォルトスタイル](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Magento カスタム属性の追加 {#add-custom-attribute}
+## Magento追加{#add-custom-attribute}のカスタム属性
 
 AEM に表示された製品と製品データは Magento に格納されます。次に、Magento UI を使用して設定する製品属性の一部として、新しい&#x200B;**エコフレンドリー**&#x200B;属性を追加します。
 
@@ -108,7 +109,7 @@ AEM に表示された製品と製品データは Magento に格納されます�
 1. 次の値を使用して&#x200B;**新規属性**&#x200B;フォームに入力します（他の値はデフォルト設定のままにします）。
 
    | フィールドセット | フィールドラベル | 値 |
-   |-----------|-------------|---------|
+   | ----------------------------- | ------------------ | ---------------- |
    | 属性プロパティ | 属性ラベル | **エコフレンドリー** |
    | 属性プロパティ | カタログ入力タイプ | **はい／いいえ** |
    | 高度な属性プロパティ | 属性コード | **eco_friendly** |
@@ -136,7 +137,7 @@ AEM に表示された製品と製品データは Magento に格納されます�
    >
    > キャッシュ管理の詳細については、『[Magento ユーザーガイド](https://docs.magento.com/user-guide/system/cache-management.html)』を参照してください。
 
-## GraphQL IDE を使用した属性の検証 {#use-graphql-ide}
+## GraphQL IDEを使用した属性の検証{#use-graphql-ide}
 
 AEM コードを始める前に、GraphQL IDE を使用して [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) を調べてみると役に立ちます。AEM との Magento 統合は、主に一連の GraphQL クエリを介して実行されます。GraphQL クエリを理解し変更することは、CIF コアコンポーネントを拡張するのに重要なことの 1 つです。
 
@@ -163,17 +164,17 @@ AEM コードを始める前に、GraphQL IDE を使用して [Magento GraphQL](
 
    ```json
    {
-   "data": {
+     "data": {
        "products": {
-           "items": [
-               {
-               "name": "Valeria Two-Layer Tank",
-               "sku": "VT11",
-               "eco_friendly": 1
-               }
-           ]
+         "items": [
+           {
+             "name": "Valeria Two-Layer Tank",
+             "sku": "VT11",
+             "eco_friendly": 1
            }
+         ]
        }
+     }
    }
    ```
 
@@ -331,7 +332,7 @@ Sling モデルは Java として実装され、生成されたプロジェク�
 
    Sling モデルがアップデートされたので、Sling モデルに基づいて&#x200B;**エコフレンドリー**&#x200B;という指標を実際に表示するには、コンポーネントマークアップをアップデートする必要があります。
 
-## 製品ティーザーのマークアップのカスタマイズ {#customize-markup-product-teaser}
+## 製品ティーザーのマークアップのカスタマイズ{#customize-markup-product-teaser}
 
 AEM コンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。これは、コンポーネントがマークアップのレンダリングに使用する [HTL スクリプト](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)を上書きすることでおこなわれます 。HTML Template Language（HTL）は、AEM コンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。例えば、製品ティーザーを何度も繰り返し使用すれば、異なる製品を表示できます。
 
@@ -357,11 +358,13 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    ```html
    <!--/* productteaser.html */-->
-   <sly data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
-       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-       data-sly-use.actionsTpl="actions.html"
-       data-sly-test.isConfigured="${properties.selection}"
-       data-sly-test.hasProduct="${product.url}">
+   <sly
+     data-sly-use.product="com.venia.core.models.commerce.MyProductTeaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.actionsTpl="actions.html"
+     data-sly-test.isConfigured="${properties.selection}"
+     data-sly-test.hasProduct="${product.url}"
+   ></sly>
    ```
 
    `MyProductTeaser` の Sling モデルが使用され、 `product` 変数に割り当てられていることに注意してください。
@@ -370,15 +373,21 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    ```html
    ...
-   <div data-sly-test="${isConfigured && hasProduct}" class="item__root" data-cmp-is="productteaser" data-virtual="${product.virtualProduct}">
-       <div data-sly-test="${product.showBadge}" class="item__badge">
-           <span>${properties.text || 'New'}</span>
-       </div>
-       <!--/* Insert call to Eco Friendly here */-->
-       <div data-sly-test="${product.ecoFriendly}" class="item__eco">
-           <span>Eco Friendly</span>
-       </div>
-   ...
+   <div
+     data-sly-test="${isConfigured && hasProduct}"
+     class="item__root"
+     data-cmp-is="productteaser"
+     data-virtual="${product.virtualProduct}"
+   >
+     <div data-sly-test="${product.showBadge}" class="item__badge">
+       <span>${properties.text || 'New'}</span>
+     </div>
+     <!--/* Insert call to Eco Friendly here */-->
+     <div data-sly-test="${product.ecoFriendly}" class="item__eco">
+       <span>Eco Friendly</span>
+     </div>
+     ...
+   </div>
    ```
 
    Sling モデルメソッドを HTL で呼び出すと、メソッドの `get` および `is` 部分が削除され、最初の文字が小文字に変換されます。`isShowBadge()` は `.showBadge` となり、`isEcoFriendly` は `.ecoFriendly` となります。`.isEcoFriendly()` から返されるブール値に基づいて、`<span>Eco Friendly</span>` が表示されるかどうかを決定します。
@@ -423,7 +432,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
    >
    > また、ティーザーで使用される製品が属性セットの一部としての `eco_friendly` 属性を持たない場合は、スタックトレースが表示されることがあります。
 
-## エコフレンドリーバッジにスタイルを追加 {#add-styles}
+## 環境に優しいバッジ追加のスタイル{#add-styles}
 
 この時点で、**エコフレンドリー**&#x200B;バッジを表示するタイミングのロジックは機能していますが、プレーンテキストなのでスタイルを設定できます。次に、`ui.frontend` モジュールにアイコンとスタイルを追加し、実装を完了します。
 
@@ -453,7 +462,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
            width: 45px;
            height: 45px;
            text-indent: -9999px;
-           background: no-repeat center center url('../resources/images/eco_friendly.svg'); 
+           background: no-repeat center center url('../resources/images/eco_friendly.svg');
            }
        }
    ...
@@ -487,8 +496,8 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 ## その他のリソース {#additional-resources}
 
-* [AEM アーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)
-* [AEM CIF コアコンポーネントのカスタマイズ](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-* [コアコンポーネントのカスタマイズ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/customizing.html)
-* [AEM Sites 使用の手引き](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [AEM アーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)
+- [AEM CIF コアコンポーネントのカスタマイズ](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
+- [コアコンポーネントのカスタマイズ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/customizing.html)
+- [AEM Sites 使用の手引き](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
