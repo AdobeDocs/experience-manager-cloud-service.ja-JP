@@ -1,5 +1,5 @@
 ---
-title: マルチストアの設定
+title: コマースマルチストアの設定
 description: 複数のストア表示を Magento から AEM にマッピングする方法を説明します。これにより、マルチテナントおよび多言語のユースケースをプロジェクトでサポートできます。
 sub-product: Commerce
 version: cloud-service
@@ -9,16 +9,16 @@ audience: administrator
 feature: Commerce統合フレームワーク
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
 translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 99%
+source-wordcount: '382'
+ht-degree: 89%
 
 ---
 
-
-# マルチストアの設定 {#multi-store}
+# コマースマルチストアのセットアップ{#multi-store}
 
 AEM CIF コアコンポーネントは複数の AEM サイト構造で使用でき、基盤となる GraphQL クライアントの実装は異なる Magento ストア／ストア表示に接続できます。これにより、複雑なマルチストア／マルチサイトの設定をプロジェクトに実装できます。
 
@@ -45,6 +45,10 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
    * 上記のポイント 2 で説明した手順を使用して、新しい設定を作成します。
 
    この新しい設定は、基本設定の子設定として作成されます。ツール／一般／設定ブラウザーに移動して、設定を作成できるようになっています。
+
+   >[!TIP]
+   >
+   > コマースカタログは、IDまたはUIDを使用してアドレス指定できます。 UIDはMagento2.4.2で導入されました。コマースバックエンドがバージョン2.4.2以降のGraphQLスキーマをサポートしている場合にのみ有効にしてください。
 
 4. AEM Sites に子設定を割り当てます。
 
