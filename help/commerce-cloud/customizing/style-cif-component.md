@@ -10,9 +10,9 @@ audience: developer
 feature: Commerce統合フレームワーク
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 75df606f-b22f-4f7e-bd8a-576d215f72bc
+exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 translation-type: tm+mt
-source-git-commit: 1bbe48c772f6e664a6afaff450da7d7987061562
+source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 96%
