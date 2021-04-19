@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager] へのデジタルアセットの追加。'
 description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] へのデジタルアセットの追加。'
 feature: アセット管理，アップロード
-role: 業務担当者、管理者
+role: Business Practitioner,Administrator
+exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 95%
+source-wordcount: '2059'
+ht-degree: 93%
 
 ---
-
 
 # Adobe Experience Manager へのデジタルアセットの追加 {#add-assets-to-experience-manager}
 
@@ -222,6 +222,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 ## API を使用したアセットのアップロードまたは取り込み {#upload-using-apis}
 
 アップロード API およびプロトコルの技術的詳細、およびオープンソース SDK とサンプルクライアントへのリンクについては、開発者向けリファレンスの[アセットアップロード](developer-reference-material-apis.md#asset-upload-technical)に関する節に記載されています。
+
+## ヒント、ベストプラクティス、制限事項{#tips-limitations}
+
+* Adobeでは、[!DNL Experience Manager Assets]の各フォルダーに最大1000個のアセットを追加することを推奨します。 フォルダーにアセットを追加することはできますが、フォルダーへの移動速度の低下など、パフォーマンスの問題が発生する可能性があります。
 
 >[!MORELIKETHIS]
 >
