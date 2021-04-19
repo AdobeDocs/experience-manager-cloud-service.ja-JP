@@ -7,9 +7,9 @@ feature: アセット管理，公開，コラボレーション，アセット�
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 translation-type: tm+mt
-source-git-commit: 78bddc170d2deacc39fd0bd32a65803987dc6a49
+source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4505'
 ht-degree: 91%
 
 ---
@@ -47,8 +47,6 @@ ht-degree: 91%
 
 DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
 
-![重複アセット検出の OSGi 設定](assets/duplicate-detection.png)
-
 設定ファイル `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` をカスタムコードで追加し、ファイルに次の内容を含めることができます。
 
 ```json
@@ -58,7 +56,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 }
 ```
 
-有効にすると、Experience Manager は重複アセットの通知をインボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
+有効にすると、Experience Managerは重複アセットの通知をExperience Managerのインボックスに送信します。 これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
 
 ![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
 
