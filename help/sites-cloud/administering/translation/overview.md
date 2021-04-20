@@ -1,7 +1,7 @@
 ---
 title: 多言語サイトのコンテンツの翻訳
 description: 多言語サイトのコンテンツを翻訳する方法の概要を説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

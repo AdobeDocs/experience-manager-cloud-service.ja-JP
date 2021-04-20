@@ -1,8 +1,8 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します。
-feature: 画像セット
-topic: 業務担当者
+feature: Image Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 translation-type: tm+mt

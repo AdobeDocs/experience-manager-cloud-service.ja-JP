@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
-feature: アセット管理
-topic: 業務担当者
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 translation-type: tm+mt

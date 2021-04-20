@@ -1,8 +1,8 @@
 ---
 title: コンテンツフラグメントの操作
 description: Cloud ServiceとしてのAdobe Experience Manager(AEM)のコンテンツフラグメントでは、ページに依存しないコンテンツをデザイン、作成、キュレーション、および使用でき、ヘッドレス配信に最適です。
-feature: コンテンツフラグメント
-role: 業務担当者
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: 翻訳するコンテンツの特定
 description: 翻訳ルールが翻訳を必要とするコンテンツを識別する方法を学びます。
-feature: 言語コピー
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

@@ -1,7 +1,7 @@
 ---
 title: 翻訳プロジェクトの管理
 description: AEMで機械翻訳と人力翻訳の両方のプロジェクトを作成および管理する方法を学びます。
-feature: 言語コピー
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4

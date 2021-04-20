@@ -1,9 +1,9 @@
 ---
 title: アセットのプレビュー
 description: Dynamic Media のアセットをプレビューする方法について説明します。。
-feature: アセット管理
-topic: 業務担当者
-role: 業務担当者
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

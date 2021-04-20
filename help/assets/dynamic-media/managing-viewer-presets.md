@@ -1,8 +1,8 @@
 ---
 title: ビューアプリセットの管理
 description: Dynamic Mediaでビューアプリセットを作成および管理する方法について説明します。
-feature: ビューアプリセット、ビューア
-topic: 業務担当者
+feature: Viewer Presets,Viewers
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 translation-type: tm+mt

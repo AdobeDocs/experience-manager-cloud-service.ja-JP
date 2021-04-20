@@ -1,7 +1,7 @@
 ---
 title: Cloud ServiceとしてのAdobe Experience Manager用のOSGiの設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
-feature: デプロイ
+feature: Deploying
 translation-type: tm+mt
 source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
 workflow-type: tm+mt

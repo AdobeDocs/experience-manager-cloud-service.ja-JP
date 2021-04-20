@@ -1,9 +1,9 @@
 ---
 title: Dynamic MediaビューアとAdobe AnalyticsおよびExperience Platform Launchの統合
 description: platform launchビューアおよびDynamic Mediaビューア5.13用のDynamic Mediaビューア拡張機能について説明します。Adobe AnalyticsおよびPlatform launchのお客様は、Platform launchの設定で、ビューアに固有のイベントやデータを使用できます。
-feature: アセットレポート
-topic: 「データ・エンジニア、管理者、実業家」
-role: 管理者、実業家
+feature: Asset Reports
+topic: "Data Engineer,Administrator,Business Practitioner"
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

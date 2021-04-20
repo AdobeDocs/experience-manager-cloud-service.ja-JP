@@ -1,8 +1,8 @@
 ---
 title: レスポンシブサイト用に最適化された画像の配信
 description: レスポンシブコード機能を使用して、最適化された画像を Dynamic Media から配信する方法を説明します。
-feature: アセット管理
-topic: 業務担当者
+feature: Asset Management
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 translation-type: tm+mt

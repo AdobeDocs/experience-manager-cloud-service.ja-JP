@@ -2,7 +2,7 @@
 title: アセットインサイト
 description: サードパーティWebサイト、マーケティングキャンペーンおよびAdobeのクリエイティブソリューションで使用される画像のユーザー評価と使用状況の統計を追跡します。
 contentOwner: AG
-feature: アセットインサイト，アセットレポート
+feature: Asset Insights,Asset Reports
 role: Business Practitioner
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt

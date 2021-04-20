@@ -2,8 +2,8 @@
 title: AI 生成タグを使用したアセットの自動タグ付け
 description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する人工知能サービスによってアセットにタグ付けします。'
 contentOwner: AG
-feature: スマートタグ，タグ付け
-role: 管理者、実業家
+feature: Smart Tags,Tagging
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

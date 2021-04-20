@@ -2,8 +2,8 @@
 title: アセットの透かしの設定
 description: デジタルアセットへの透かしの追加。
 contentOwner: AG
-feature: アセット管理，発行
-role: 業務担当者、管理者
+feature: Asset Management,Publishing
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

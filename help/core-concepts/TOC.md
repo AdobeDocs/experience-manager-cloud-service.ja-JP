@@ -4,8 +4,8 @@ user-guide-title: AEM as a Cloud Service の中心概念
 breadcrumb-title: コアコンセプトガイド
 user-guide-description: このガイドでは、この新しいサービスのアーキテクチャなど、Adobe Experience Manager as a Cloud Service の中心概念について紹介します。
 feature-set: Experience Manager
-feature: リリース情報
-role: アーキテクト
+feature: Release Information
+role: Architect
 translation-type: tm+mt
 source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
 workflow-type: tm+mt

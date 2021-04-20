@@ -1,7 +1,7 @@
 ---
 title: 翻訳のベストプラクティス
 description: Adobeエンジニアリングチームやコンサルティングチームがコンパイルし、翻訳プロジェクトを立ち上げて実行する際に役立つ、ベストプラクティスについて説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

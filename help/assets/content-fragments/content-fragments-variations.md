@@ -1,8 +1,8 @@
 ---
 title: バリエーション - フラグメントコンテンツのオーサリング
 description: フラグメントのコンテンツを作成し、目的に応じてそのコンテンツのバリエーションを作成することで、バリエーションがAEMでヘッドレスコンテンツをさらに柔軟にできる方法を理解します。
-feature: コンテンツフラグメント
-role: 業務担当者
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

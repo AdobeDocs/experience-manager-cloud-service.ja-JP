@@ -6,7 +6,7 @@ topics: Development
 version: cloud-service
 activity: develop
 audience: developer
-feature: Commerce統合フレームワーク
+feature: Commerce Integration Framework
 translation-type: tm+mt
 source-git-commit: 0f2747190523613d2fa1f4710dee1c28d4a5148f
 workflow-type: tm+mt

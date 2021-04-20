@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Creative Cloud] との統合のベストプラクティス'
 description: Experience Manager デプロイメントを Adobe Creative Cloud と統合して、アセット転送ワークフローを効率化し、効率を最大限に高めるためのベストプラクティス。
 contentOwner: AG
 mini-toc-levels: 1
-feature: コラボレーション，Adobeアセットリンク，デスクトップアプリ
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 translation-type: tm+mt

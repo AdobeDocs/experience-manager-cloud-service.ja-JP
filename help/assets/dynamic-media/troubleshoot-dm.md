@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media のトラブルシューティング
 description: Dynamic Media 使用時のトラブルシューティングのヒント
-topic: 「管理者、実業家」
+topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 translation-type: tm+mt

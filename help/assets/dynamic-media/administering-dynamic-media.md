@@ -3,7 +3,7 @@ title: Dynamic Media のセットアップ
 description: Dynamic Mediaを設定するには、Dynamic Mediaを設定し、画像とビューアプリセットを管理する必要があります。
 contentOwner: Rick Brough
 topic: Administrator
-role: 管理者、実業家
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

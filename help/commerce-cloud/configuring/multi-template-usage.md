@@ -6,7 +6,7 @@ version: cloud-service
 doc-type: feature-video
 activity: use
 audience: marketer
-feature: Commerce統合フレームワーク
+feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt

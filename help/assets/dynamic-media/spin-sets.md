@@ -1,8 +1,8 @@
 ---
 title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。。
-feature: スピンセット
-topic: 業務担当者
+feature: Spin Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt

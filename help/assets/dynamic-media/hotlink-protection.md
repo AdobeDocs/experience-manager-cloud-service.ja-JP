@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media でのホットリンク保護の有効化
 description: Dynamic Mediaでホットリンク保護を有効にする方法を説明します。
-feature: アセット管理
-topic: 業務担当者
-role: 業務担当者
+feature: Asset Management
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: 言語コピーウィザード
 description: AEM での言語コピーウィザードの使用について説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

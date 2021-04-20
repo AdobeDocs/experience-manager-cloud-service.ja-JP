@@ -1,8 +1,8 @@
 ---
 title: カルーセルバナー
 description: Dynamic Media のカルーセルバナーの操作方法を説明します。
-feature: カルーセルバナー
-topic: 業務担当者
+feature: Carousel Banners
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt

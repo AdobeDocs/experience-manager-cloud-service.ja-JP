@@ -1,8 +1,8 @@
 ---
 title: コンテンツフラグメントの管理
 description: アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
-feature: コンテンツフラグメント
-role: 業務担当者
+feature: Content Fragments
+role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562

@@ -1,8 +1,8 @@
 ---
 title: 混在メディアセット
 description: Dynamic Media での混在メディアセットの使用方法について説明します。。
-feature: 混在メディアセット
-topic: 業務担当者
+feature: Mixed Media Sets
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 translation-type: tm+mt

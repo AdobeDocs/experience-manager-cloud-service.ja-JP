@@ -1,7 +1,7 @@
 ---
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
-feature: 管理
+feature: Administering
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4

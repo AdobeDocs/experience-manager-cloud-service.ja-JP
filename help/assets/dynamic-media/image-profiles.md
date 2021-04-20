@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media イメージプロファイル
 description: 「アンシャープマスク、スマート切り抜き、スマートスウォッチ、またはその両方の設定を含むDynamic Media画像プロファイルを作成する方法について説明します。 次に、プロファイルを画像アセットのフォルダに適用します。」
-feature: アセット管理，画像プロファイル，レンディション
-topic: 業務担当者
+feature: Asset Management,Image Profiles,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 translation-type: tm+mt

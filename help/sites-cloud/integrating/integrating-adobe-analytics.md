@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics との統合
 description: 'Adobe Analytics との統合 '
-feature: 管理
+feature: Administering
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

@@ -2,8 +2,8 @@
 title: Assets HTTP API
 description: ' [!DNL Experience Manager Assets] の HTTP API を使用した、デジタルアセットの作成、読み取り、更新、削除、管理について説明します。'
 contentOwner: AG
-feature: アセットHTTP API,API
-role: 開発者，アーキテクト，管理者
+feature: Assets HTTP API,APIs
+role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 translation-type: tm+mt
 source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb

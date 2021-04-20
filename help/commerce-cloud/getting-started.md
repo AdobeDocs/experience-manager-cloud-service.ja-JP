@@ -2,7 +2,7 @@
 title: AEM Commerce as a Cloud Service - はじめに
 description: 実行中の AEM as a Cloud Service 環境にコマース対応の AEM プロジェクトをデプロイする方法を説明します。Adobe Cloud Manager の機能と CI／CD パイプラインを使用すると、実行中の環境に対する Venia 参照ストアフロントを構築できます。
 topics: Commerce
-feature: Commerce Integration Framework、Cloud Manager
+feature: Commerce Integration Framework, Cloud Manager
 version: cloud-service
 doc-type: tutorial
 kt: 4947

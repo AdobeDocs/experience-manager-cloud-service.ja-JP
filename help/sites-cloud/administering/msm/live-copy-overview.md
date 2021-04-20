@@ -1,7 +1,7 @@
 ---
 title: ライブコピーの概要コンソール
 description: ライブコピーの概要コンソールの基本事項について説明し、コンテンツを同期するためのライブコピーの状態をすばやく把握します。
-feature: マルチサイトマネージャー
+feature: Multi Site Manager
 role: Administrator
 translation-type: tm+mt
 source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1

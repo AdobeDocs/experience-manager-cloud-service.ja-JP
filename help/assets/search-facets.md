@@ -2,7 +2,7 @@
 title: 検索ファセット。
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
 feature: Search,Metadata
-role: 業務担当者、管理者
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

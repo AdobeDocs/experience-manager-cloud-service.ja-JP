@@ -3,7 +3,7 @@ product: adobe experience manager
 description: Cloud ServiceドキュメントとしてのAdobe Experience Manager。
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.ja-JP
 index: y
-type: ドキュメント
+type: Documentation
 solution: Experience Manager
 version: Cloud Service
 cloud: Experience Cloud

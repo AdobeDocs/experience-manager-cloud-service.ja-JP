@@ -1,8 +1,8 @@
 ---
 title: コンテンツフラグメントモデル
 description: コンテンツフラグメントモデルがAEMのヘッドレスコンテンツの基盤となる仕組みと、構造化されたコンテンツを使用してコンテンツフラグメントを作成する方法について説明します。
-feature: コンテンツフラグメント
-role: 業務担当者
+feature: Content Fragments
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

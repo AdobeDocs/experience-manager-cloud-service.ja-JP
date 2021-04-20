@@ -1,9 +1,9 @@
 ---
 title: パノラマ画像
 description: Dynamic Media でのパノラマ画像の使用方法を学習します。
-feature: パノラマ画像
-topic: 業務担当者
-role: 業務担当者
+feature: Panoramic Images
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

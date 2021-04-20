@@ -1,8 +1,8 @@
 ---
 title: スマートイメージング
 description: 「各ユーザー独自の表示特性を適用して、エクスペリエンスに最適化された適切な画像を自動的に提供することで、パフォーマンスとエンゲージメントを向上させるスマートイメージングについて説明します。」
-feature: アセット管理，レンディション
-topic: 業務担当者
+feature: Asset Management,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 translation-type: tm+mt

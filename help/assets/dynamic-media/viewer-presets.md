@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media ビューアプリセットの適用
 description: Dynamic Media でのビューアプリセットの適用方法について説明します。
-feature: ビューアプリセット、ビューア
-topic: 管理者、実業家
-role: 業務担当者
+feature: Viewer Presets,Viewers
+topic: Administrator,Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
 workflow-type: tm+mt

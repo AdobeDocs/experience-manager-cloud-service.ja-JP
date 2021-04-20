@@ -1,9 +1,9 @@
 ---
 title: Dynamic Media 画像プリセットの適用
 description: Dynamic Media での画像プリセットの適用方法を説明します。
-feature: 画像プリセット，ビューア，レンディション
-topic: 業務担当者
-role: 業務担当者
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
 workflow-type: tm+mt

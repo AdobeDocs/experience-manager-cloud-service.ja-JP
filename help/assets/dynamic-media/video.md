@@ -1,8 +1,8 @@
 ---
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します.
-feature: ビデオプロファイル
-topic: 業務担当者
+feature: Video Profiles
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt

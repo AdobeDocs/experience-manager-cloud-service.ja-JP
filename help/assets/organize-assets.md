@@ -2,8 +2,8 @@
 title: デジタルアセットの整理
 description: Adobe Experience Manager Assets に用意されている様々な手段を使用して、デジタルアセットを整理します。
 contentOwner: AG
-feature: アセット管理，タグ付け，アセットの配布
-role: 業務担当者
+feature: Asset Management,Tagging,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

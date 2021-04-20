@@ -2,8 +2,8 @@
 title: Dynamic Media のイメージプロファイルまたはビデオプロファイルを使用するためのデジタルアセット編成のベストプラクティス
 description: 「Dynamic Media画像ファイルとビデオアセットファイルの命名、整理、管理に関するヒントとベストプラクティス」
 contentOwner: Rick Brough
-feature: アセット管理，画像プロファイル，ビデオプロファイル
-topic: 業務担当者
+feature: Asset Management,Image Profiles,Video Profiles
+topic: Business Practitioner
 role: Administrator,Business Practitioner
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
 translation-type: tm+mt

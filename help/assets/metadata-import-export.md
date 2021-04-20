@@ -2,8 +2,8 @@
 title: アセットメタデータの一括読み込みおよび書き出し
 description: この記事では、メタデータの読み込みおよび書き出しを一括でおこなう方法について説明します。
 contentOwner: AG
-feature: メタデータ
-role: 業務担当者、管理者
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

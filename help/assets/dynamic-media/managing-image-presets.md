@@ -1,8 +1,8 @@
 ---
 title: '画像プリセットの管理 '
 description: 「画像プリセットと、画像プリセットを作成、変更および管理する方法について説明します。」
-feature: 画像プリセット，ビューア，レンディション
-topic: 業務担当者
+feature: Image Presets,Viewers,Renditions
+topic: Business Practitioner
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
 translation-type: tm+mt

@@ -1,9 +1,9 @@
 ---
 title: クイック表示を使用したカスタムポップアップの作成
 description: 「eコマースエクスペリエンスでデフォルトのクイック表示がどのように使用され、購入を促す製品情報がポップアップウィンドウに表示されるかについて説明します。 カスタムコンテンツをトリガーしてポップアップウィンドウに表示できます。」
-topic: 「開発者、管理者、実業家」
-feature: インタラクティブ画像，インタラクティブビデオ，カルーセルバナー
-role: 管理者、実業家
+topic: "Developer,Administrator,Business Practitioner"
+feature: Interactive Images,Interactive Videos,Carousel Banners
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: AEM Commerce for AEM as a Cloud Service の開発
 description: AEM プロジェクトアーキタイプを使用してコマース対応の AEM プロジェクトを生成する方法を説明します。AEM as a Cloud Service SDK でプロジェクトを構築してローカル開発環境にデプロイする方法を説明します。
 topics: Commerce, Development
-feature: Commerce統合フレームワーク
+feature: Commerce Integration Framework
 version: cloud-service
 doc-type: tutorial
 kt: 5826
