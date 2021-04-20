@@ -3,7 +3,7 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
+source-git-commit: 0c7f413be7b7f2222c5487426b74f2a954d0b21f
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 96%
@@ -56,9 +56,9 @@ ht-degree: 96%
     <td>JCR ノード定義</td>
     <td>下の場所1を参照</td>
     <td>以下のコードサンプル 1 を参照してください。</td>
-   <td>
-    <strong>windowSchedule</strong> = daily（この値は変更しないでください）<strong>windowStartTime</strong> = HH:MM（24 時間形式）  日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<strong>windowEndTime</strong> = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。
-    </td> 
+  <td>
+  <strong>windowSchedule</strong> = daily（この値は変更しないでください）<strong>windowStartTime</strong> = HH:MM（24 時間形式）  日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<strong>windowEndTime</strong> = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。
+  </td> 
   </tr>
   <tr>
     <td>毎週</td>
@@ -66,13 +66,9 @@ ht-degree: 96%
     <td>JCR ノード定義</td>
     <td>下の場所2を参照</td>
     <td>以下のコードサンプル 2 を参照してください。</td>
-     <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = weekly（この値は変更しないでください）</li>
-    <li><strong>windowStartTime</strong> = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</li>
-    <li><strong>windowEndTime</strong> = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
-    <li><strong>windowScheduleWeekdays = 1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</li>
-    </ul> </td> 
+    <td>
+    <strong>windowSchedule</strong> = weekly（この値は変更しないでください）<strong>windowStartTime</strong> = HH:MM（24 時間形式）  週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<strong>windowEndTime</strong> = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。<strong>windowScheduleWeekdays = 1 ～ 7 の 2 つの値の配列（例：[5,5]）</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。
+    </td> 
   </tr>
   <tr>
     <td>毎月</td>
