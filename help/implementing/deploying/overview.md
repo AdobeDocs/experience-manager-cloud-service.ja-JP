@@ -2,14 +2,14 @@
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: デプロイ
+exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: a5717e36c347e89f6b9e2f4f7dffc72dcab0b7d7
+source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3266'
 ht-degree: 96%
 
 ---
-
 
 # AEM as a Cloud Service へのデプロイ {#deploying-to-aem-as-a-cloud-service}
 
@@ -101,7 +101,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。このドキュメントには、インストールフックに関する情報が含まれています。このフックには、ユーザーによる実行が許可されています)。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5で行われ、推奨されるプロジェクト再構築に関する詳細は、[AEM 6.5のドキュメントを参照してください。](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
@@ -112,7 +112,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
 
 サードパーティパッケージが含まれている場合は、それらが AEM as a Cloud Service と互換性があるかどうかを検証する必要があります。互換性がない場合は、それらのパッケージを組み込むとデプロイメントエラーが発生します。
 
-上記のように、既存のコードベースを使用するお客様は、[AEM 6.5ドキュメントで説明されている6.5リポジトリの変更に必要なリストラの実行に従う必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+上記のように、既存のコードベースを使用するお客様は、[AEM 6.5ドキュメントで説明されている6.5リポジトリの変更に必要なリストラの実行に従う必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)
 
 ## repoinit {#repoinit}
 
