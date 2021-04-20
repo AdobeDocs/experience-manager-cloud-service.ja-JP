@@ -3,10 +3,10 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 90b35554b1238b51ca181c720c86f4062c6d9592
+source-git-commit: 65df5f3fa9db0a37fa3ed10f952c811e1177eafe
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 96%
+source-wordcount: '1004'
+ht-degree: 94%
 
 ---
 
@@ -135,3 +135,7 @@ ht-degree: 96%
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+| メンテナンスウィンドウの設定 | 設定の所有者 | 設定の種類 | 場所 | 例 | パラメーター |
+|---|---|---|---|---|---|
+| 毎日 | 顧客 | JCR ノード定義 | 下の場所2を参照 | 以下のコードサンプル 2 を参照してください。 | **windowSchedule=daily** （この値は変更しないでください）。  <br> **** windowStartTime = HH:MM（24 時間形式）日別メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<br> **** windowEndTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。 |
