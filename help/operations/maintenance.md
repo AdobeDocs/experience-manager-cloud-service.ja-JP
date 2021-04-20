@@ -3,10 +3,10 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 256363d166591137b53d4a6b5a31436064dfb3d2
+source-git-commit: 7700ad89b1c2a3009c4b64c1af899a0130708a32
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 94%
+source-wordcount: '1122'
+ht-degree: 90%
 
 ---
 
@@ -138,4 +138,6 @@ ht-degree: 94%
 
 | メンテナンスウィンドウの設定 | 設定の所有者 | 設定の種類 | 場所 | 例 | パラメーター |
 |---|---|---|---|---|---|
-| 毎日 | 顧客 | JCR ノード定義 | 下の場所2を参照 | 以下のコードサンプル 2 を参照してください。 | `windowSchedule= daily` （この値は変更しないでください）。  <br> `windowStartTime=HH:MM` 24時間形式で使用します。日別メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<br> **** windowEndTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。 |
+| 毎日 | 顧客 | JCR ノード定義 | 下の場所1を参照 | 以下のコードサンプル 1 を参照してください。 | **windowSchedule= daily** （この値は変更しないでください）。  <br> **** windowStartTime = HH:MM（24 時間形式）日別メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<br> **** windowEndTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。 |
+| 毎週 | 顧客 | JCR ノード定義 | 下の場所2を参照 | 以下のコードサンプル 2 を参照してください。 | **windowSchedule= weekly** （この値は変更しないでください）。  <br> **** windowStartTime = HH:MM（24 時間形式）週単位のメンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<br> **** windowEndTime = HH:MM（24 時間形式）週単位のメンテナンスウィンドウに関連付けられたメンテナンスタスクが、まだ完了していない場合に、その実行を停止するタイミングを定義します。<br> **windowScheduleWeekdays= 1**  ～ 7の2つの値の配列(例：  [5,5])。 配列の最初の値はジョブがスケジュールされる開始日で、2 番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。 |
+
