@@ -3,7 +3,7 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 8fbed9ddc872b8caf0a9b15a7578e34a817e4e42
+source-git-commit: c74da6ebf54f9455f427d5fdcfe55415543f4c73
 workflow-type: tm+mt
 source-wordcount: '925'
 ht-degree: 96%
@@ -57,11 +57,8 @@ ht-degree: 96%
     <td>下の場所1を参照</td>
     <td>以下のコードサンプル 1 を参照してください。</td>
    <td>
-    <ul>
-    <li><strong>windowSchedule</strong> = daily（この値は変更しないでください）</li>
-    <li><strong>windowStartTime</strong> = HH:MM（24 時間形式）  日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</li>
-    <li><strong>windowEndTime</strong> = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</li>
-    </ul> </td> 
+    <strong>windowSchedule</strong> = daily（この値は変更しないでください）<strong>windowStartTime</strong> = HH:MM（24 時間形式）  日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<strong>windowEndTime</strong> = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。
+    </td> 
   </tr>
   <tr>
     <td>毎週</td>
