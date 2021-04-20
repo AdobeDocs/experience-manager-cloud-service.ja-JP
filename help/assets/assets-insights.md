@@ -1,17 +1,17 @@
 ---
 title: アセットインサイト
-description: アセットインサイト機能を使用して、サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザーのレーティングと使用状況統計を追跡する方法について説明します。
+description: サードパーティWebサイト、マーケティングキャンペーンおよびAdobeのクリエイティブソリューションで使用される画像のユーザー評価と使用状況の統計を追跡します。
 contentOwner: AG
 feature: アセットインサイト，アセットレポート
-role: 業務担当者
+role: Business Practitioner
+exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: a42138cd009a85a92e74d98dd808578014361e1d
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 99%
+source-wordcount: '795'
+ht-degree: 96%
 
 ---
-
 
 # アセットインサイト {#asset-insights}
 
