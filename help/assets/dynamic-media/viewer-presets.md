@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media ビューアプリセットの適用
 description: Dynamic Media でのビューアプリセットの適用方法について説明します。
-feature: Viewer Presets,Viewers
-topic: Administrator,Business Practitioner
+feature: ビューアプリセット、ビューア
 role: Business Practitioner
+exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 89%
+source-wordcount: '218'
+ht-degree: 90%
 
 ---
-
 
 # Dynamic Media ビューアプリセットの適用 {#applying-viewer-presets}
 
