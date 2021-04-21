@@ -1,14 +1,13 @@
 ---
 title: スピンセット
 description: Dynamic Media でのスピンセットの操作方法について説明します。。
-feature: Spin Sets
-topic: Business Practitioner
+feature: スピンセット
 role: Business Practitioner
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1829'
 ht-degree: 75%
 
 ---
