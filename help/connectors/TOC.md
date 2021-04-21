@@ -3,13 +3,12 @@ sub-product: AEM as a Cloud Service のコネクタ
 user-guide-title: AEM as a Cloud Service のコネクタ
 breadcrumb-title: コネクタガイド
 user-guide-description: Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。
-feature-set: Experience Manager
-feature: Developer Tools
+feature: 開発者ツール
 role: Developer
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '51'
 ht-degree: 100%
 
 ---
