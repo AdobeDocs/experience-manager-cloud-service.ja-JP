@@ -1,14 +1,13 @@
 ---
 title: カルーセルバナー
 description: Dynamic Media のカルーセルバナーの操作方法を説明します。
-feature: Carousel Banners
-topic: Business Practitioner
+feature: カルーセルバナー
 role: Business Practitioner
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '4565'
+source-wordcount: '4563'
 ht-degree: 49%
 
 ---
