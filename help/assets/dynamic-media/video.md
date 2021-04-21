@@ -1,14 +1,13 @@
 ---
 title: ビデオ
 description: Dynamic Media でビデオを使用する方法について説明します.
-feature: Video Profiles
-topic: Business Practitioner
+feature: ビデオプロファイル
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '9512'
+source-wordcount: '9510'
 ht-degree: 70%
 
 ---
@@ -417,11 +416,11 @@ Dynamic Media では、MP4 H.264 ビデオエンコーディングプリセッ�
 
 Experience Managerアセットで管理されているビデオアセットは、以前に作成したYouTubeチャネルに直接公開できます。
 
-ビデオアセットをYouTubeに公開するには、Experience Managerアセット内のビデオアセットにタグを付けます。 これらのタグを YouTube チャンネルに関連付けます。ビデオアセットのタグが YouTube チャンネルのタグと一致する場合、ビデオが YouTube に公開されます。YouTube への公開は、関連するタグが使用されている限り、ビデオの通常公開と一緒におこなわれます。
+ビデオアセットをYouTubeに公開するには、タグを付けて、Experience Managerアセット内のビデオアセットにタグを付けます。 これらのタグを YouTube チャンネルに関連付けます。ビデオアセットのタグが YouTube チャンネルのタグと一致する場合、ビデオが YouTube に公開されます。YouTube への公開は、関連するタグが使用されている限り、ビデオの通常公開と一緒におこなわれます。
 
-YouTube は独自のエンコーディングをおこないます。したがって、Experience Managerにアップロードされた元のビデオファイルは、Dynamic Mediaのエンコーディングで作成されたビデオレンディションではなく、YouTubeに公開されます。 Dynamic Mediaを使用してビデオを処理する必要はありませんが、再生にビューアプリセットが必要な場合に備えて処理する必要があります。
+YouTube は独自のエンコーディングをおこないます。したがって、Dynamic Mediaのエンコーディングで作成されたビデオレンディションの代わりに、Experience Managerにアップロードされた元のビデオファイルがYouTubeに公開されます。 Dynamic Mediaを使用してビデオを処理する必要はありませんが、再生にビューアプリセットが必要な場合に備えて処理する必要があります。
 
-ビデオ処理プロファイルを省略してYouTubeに直接投稿する場合は、単に、Experience Managerアセット内のビデオアセットに表示可能なサムネールが表示されないことを意味します。 また、エンコードされていないビデオは、Dynamic Mediaのアセットタイプでは動作しません。
+ビデオ処理プロファイルを省略してYouTubeに直接公開する場合は、単にExperience Managerアセット内のビデオアセットに表示可能なサムネールが表示されないことを意味します。 また、エンコードされていないビデオは、Dynamic Mediaのアセットタイプでは動作しません。
 
 ビデオアセットの YouTube サーバーへの公開において、YouTube との安全でセキュアなサーバー間認証をおこなうには、次のタスクを実行する必要があります。
 
@@ -438,11 +437,11 @@ YouTube は独自のエンコーディングをおこないます。したがっ
 
 ### Google Cloud 設定 {#configuring-google-cloud-settings}
 
-YouTubeに投稿するには、Googleアカウントが必要です。GMAILアカウントをお持ちの場合は、既にGoogleアカウントをお持ちです。Googleアカウントを持っていない場合は、簡単に作成できます。YouTubeにビデオアセットを公開するには、資格情報が必要なので、アカウントが必要です。 既にアカウントを作成済みの場合は、このタスクをスキップして [YouTube チャンネルの作成](#creating-a-youtube-channel)タスクに進んでください。
+YouTubeに投稿するには、Googleアカウントが必要です。GMAILアカウントをお持ちの場合は、既にGoogleアカウントをお持ちです。Googleアカウントを持っていない場合は、簡単に作成できます。ビデオアセットをYouTubeに公開するには、資格情報が必要なので、アカウントが必要です。 既にアカウントを作成済みの場合は、このタスクをスキップして [YouTube チャンネルの作成](#creating-a-youtube-channel)タスクに進んでください。
 
 Google Cloud で使用するアカウントと YouTube に使用する Google アカウントは、必ずしも同じである必要はありません。
 
-Googleはユーザーインターフェイスを定期的に変更します。 そのため、YouTubeにビデオを投稿する手順は、以下に記載されている手順とは少し異なる場合があります。 これは、ビデオが YouTube にアップロードされるかどうかを確認する場合にも当てはまります。
+Googleはユーザーインターフェイスを定期的に変更します。 そのため、YouTubeにビデオを公開する手順は、以下に記載する手順とは少し異なる場合があります。 これは、ビデオが YouTube にアップロードされるかどうかを確認する場合にも当てはまります。
 
 >[!NOTE]
 >
@@ -467,7 +466,7 @@ Google Cloud を設定するには：
 
 1. 新しいプロジェクトダイアログボックスで、「プロジェクト名」フィールドに新しいプロジェクトの名前を入力します。
 
-   プロジェクトIDは、プロジェクト名に基づきます。 そのため、プロジェクト名は慎重に選んでください。プロジェクト名を後で変更することはできません。また、後でYouTubeをExperience Managerして設定する場合は、同じプロジェクトIDを再度入力する必要があります。 だから書き留めておいて。
+   プロジェクトIDは、プロジェクト名に基づきます。 そのため、プロジェクト名は慎重に選んでください。プロジェクト名を後で変更することはできません。また、後でExperience ManagerでYouTubeを設定する場合は、同じプロジェクトIDを再入力する必要があります。 だから書き留めておいて。
 
 1. 「**[!UICONTROL 作成]**」をクリックします。
 
@@ -525,7 +524,7 @@ Google Cloud を設定するには：
 
 1. 「**[!UICONTROL ユーザーに表示される製品名]**」の下のテキストフィールドに、同意画面に表示する内容を入力します。
 
-   同意画面は、Experience Manager管理者がYouTubeに対して認証を行うときに表示されます。 Experience ManagerがYouTubeにアクセスして許可を取得しています。
+   同意画面は、Experience Manager管理者がYouTubeに対して認証を行うときに表示されます。 Experience ManagerはYouTubeに許可を求めて連絡を取る。
 
 1. 「**[!UICONTROL 続行]**」をクリックします。
 1. プロジェクトへの認証情報の追加ページの手順 4 で、「**[!UICONTROL 認証情報をダウンロードする]**」の下の「**[!UICONTROL ダウンロード]**」をタップします。
@@ -546,17 +545,17 @@ YouTube にビデオを公開するには、1 つ以上のチャネルが必要�
 
 >[!CAUTION]
 >
->Experience Managerの「YouTube設定」にチャネルを追加する前に、YouTube **&#x200B;に1つ以上のチャネルが既に設定されていることを確認してください(下の[Experience Manager](#setting-up-youtube-in-aem)でのYouTubeの設定を参照)。 チャネルの設定に失敗した場合、既存のチャネルが存在しないことを警告することはありません。 ただし、それでも、チャネルを追加する際に Google 認証がおこなわれますが、ビデオの送信先となるチャネルを選択するオプションがありません。
+>*YouTube*&#x200B;のの前に1つ以上のチャネルを既に設定していることを確認してください(下の[Experience Manager](#setting-up-youtube-in-aem)でのYouTubeの設定を参照)。 チャネルの設定に失敗した場合、既存のチャネルが存在しないことを警告することはありません。 ただし、それでも、チャネルを追加する際に Google 認証がおこなわれますが、ビデオの送信先となるチャネルを選択するオプションがありません。
 
 YouTube チャンネルを作成するには：
 
 1. [https://www.youtube.com](https://www.youtube.com/) にアクセスし、Google アカウントの資格情報を使用してログインします。
-1. YouTubeページの右上隅にあるプロファイルの画像をクリックし（単色の円内に文字として表示することもできます）、**[!UICONTROL YouTube設定]**（丸い歯車アイコン）をタップします。
+1. YouTubeのページの右上隅で、プロファイルの画像をクリックし（色付きの円の中に文字として表示することもできます）、**[!UICONTROL YouTube設定]**（丸い歯車のアイコン）をタップします。
 1. 概要ページの「追加機能」の見出しの下で、**[!UICONTROL 「すべてのチャネルを表示」をタップするか、新しいチャネルを作成します]**。
 1. チャネルページで、「**[!UICONTROL 新しいチャネルを作成]**」をタップします。
 1. ブランドアカウントページで、「ブランドアカウント名」フィールドに、ビジネス名や、ビデオアセットの公開先となる他のチャネル名を入力し、「**[!UICONTROL 作成]**」をクリックします。
 
-   ここに入力した名前は、Experience ManagerでYouTubeを設定する際に再入力する必要があるので、覚えておいてください。
+   Experience ManagerでYouTubeをセットアップする際に再入力する必要があるので、ここに入力した名前を覚えておいてください。
 
 1. （オプション）必要に応じて、さらにチャネルを追加します。
 
@@ -564,13 +563,13 @@ YouTube チャンネルを作成するには：
 
 ### 公開用タグの追加 {#adding-tags-for-publishing}
 
-ビデオにYouTubeに投稿するには、Experience Managerがタグを1つ以上のYouTubeチャネルに関連付けます。 公開用タグの追加については、[タグの管理](/help/sites-cloud/authoring/features/tags.md)を参照してください。
+ビデオをYouTubeに公開するために、Experience Managerはタグを1つ以上のYouTubeチャネルに関連付けます。 公開用タグの追加については、[タグの管理](/help/sites-cloud/authoring/features/tags.md)を参照してください。
 
-または、Experience Managerでデフォルトのタグを使用する場合は、このタスクをスキップして、[Experience Manager](#setting-up-youtube-in-aem)でのYouTubeの設定に移動できます。
+または、Experience Managerでデフォルトのタグを使用する場合は、このタスクをスキップして[Experience Manager](#setting-up-youtube-in-aem)でのYouTubeの設定に移動できます。
 
 >[!NOTE]
 >
->Cloud Serviceを設定した後は、この時点でYouTube Publish複製エージェントを有効にするために、他の設定は必要ありません。 これは、Cloud Service設定が保存されたときに有効になっていたためです。
+>Cloud Serviceを設定した後は、この時点でYouTube発行レプリケーションエージェントを有効にするために、他の設定は必要ありません。 これは、Cloud Service設定が保存されたときに有効になっていたためです。
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -584,21 +583,21 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 ###  Experience Manager での YouTube のセットアップ{#setting-up-youtube-in-aem}
 
-Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定する新しいタッチユーザーインターフェイス手法が導入されました。 使用しているExperience Managerのインストール済みインスタンスに基づいて、次のいずれかの操作を行います。
+Experience Manager6.4から、新しいタッチユーザーインターフェイス方式が導入され、Experience ManagerでのYouTubeパブリッシングが設定されました。 使用しているExperience Managerのインストール済みインスタンスに基づいて、次のいずれかの操作を行います。
 
-* 6.4より前のExperience ManagerでYouTubeを設定する方法については、[6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)より前のExperience ManagerでのYouTubeの設定を参照してください。
+* 6.4より前のExperience ManagerでYouTubeを設定するには、[6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before)より前のExperience ManagerでのYouTubeの設定を参照してください。
 * Experience Manager6.4以降でYouTubeを設定するには、[Experience Manager6.4以降でのYouTubeの設定](#setting-up-youtube-in-aem-and-later)を参照してください。
 
-#### Experience Manager6.4以降でのYouTubeの設定{#setting-up-youtube-in-aem-and-later}
+#### Experience Manager6.4以降でのYouTubeのセットアップ{#setting-up-youtube-in-aem-and-later}
 
 1. Dynamic Media のインスタンスに管理者としてログインしてください。
-1. Experience Managerの左上隅にあるExperience Managerのロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーアイコン）/**[!UICONTROL Cloud Services]**/**[!UICONTROL YouTube Publishing Configuration]**&#x200B;をタップします。
+1. Experience Managerの左上隅にあるExperience Managerのロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーアイコン）/**[!UICONTROL Cloud Services]**/**[!UICONTROL YouTubeパブリッシング設定]**&#x200B;をタップします。
 1. 「**[!UICONTROL グローバル]**」をタップします（選択しないでください）。
 
 1. グローバルページの右上隅にある「**[!UICONTROL 作成]**」をタップします。
 1. YouTube 設定を作成ページの「Google Cloud Platform 設定」で、「**[!UICONTROL アプリケーション名]**」フィールドに Google プロジェクト ID を入力します。
 
-   このプロジェクト ID は、先ほど Google Cloud 設定をおこなったときに指定したものです。YouTube設定を作成ページは開いたままにします。すぐに戻る
+   このプロジェクト ID は、先ほど Google Cloud 設定をおこなったときに指定したものです。「YouTube設定を作成」ページは開いたままにします。すぐに戻る
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -607,7 +606,7 @@ Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定�
 1. YouTube アカウント設定ダイアログボックスに戻ります。「**[!UICONTROL JSON 設定]**」フィールドに JSON テキストを貼り付けます。
 1. ページの右上隅にある「**[!UICONTROL 保存]**」をタップします。
 
-   Experience ManagerでYouTubeチャネルを設定します。
+   次に、Experience ManagerでYouTubeチャネルを設定します。
 
 1. 「**[!UICONTROL チャンネルを追加]**」をタップします。
 1. 「チャネル名」フィールドに、前に「**[!UICONTROL YouTube への 1 つ以上のチャネルの追加]**」タスクで作成したチャネルの名前を入力します。
@@ -640,19 +639,19 @@ Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定�
 1. Dynamic Media のインスタンスに管理者としてログインしてください。
 
 1. Experience Managerの左上隅にあるExperience Managerのロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL 展開]**/**[!UICONTROL Cloud Services]**&#x200B;をタップします。
-1. 「Third-Party Services」という見出しの「YouTube」の下にある「**[!UICONTROL 今すぐ設定]**」をタップします。
+1. 「Third-Party Services」の見出しの「YouTube」で、「**[!UICONTROL 今すぐ設定]**」をタップします。
 1. 設定を作成ダイアログボックスで、タイトル（必須）と名前（オプション）をそれぞれのフィールドに入力します。
 1. 「**[!UICONTROL 作成]**」をタップします。
 1. YouTube アカウント設定ダイアログボックスで、「**[!UICONTROL アプリケーション名]**」フィールドに Google プロジェクト ID を入力します。
 
-   このプロジェクト ID は、先ほど [Google Cloud 設定をおこなった](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)ときに指定したものです。YouTubeのアカウント設定ダイアログボックスは開いたままにします。すぐに戻る
+   このプロジェクト ID は、先ほど [Google Cloud 設定をおこなった](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings)ときに指定したものです。[YouTubeアカウント設定]ダイアログボックスは開いたままにします。すぐに戻る
 
 1. 任意のテキストエディターを使用して、「Google Cloud 設定」のタスクでダウンロードして保存しておいた JSON ファイルを開きます。
 1. この JSON テキスト全体を選択してコピーします。
 1. YouTube アカウント設定ダイアログボックスに戻ります。「**[!UICONTROL JSON 設定]**」フィールドに JSON テキストを貼り付けます。
 1. 「**[!UICONTROL OK]**」をタップします。
 
-   Experience ManagerでYouTubeチャネルを設定します。
+   次に、Experience ManagerでYouTubeチャネルを設定します。
 
 1. 「**[!UICONTROL 利用可能なチャネル]**」の右にある「**+**」（プラス記号のアイコン）をタップします。
 1. YouTube チャンネル設定ダイアログボックスの「タイトル」フィールドに、前の「**[!UICONTROL YouTube への 1 つ以上のチャネルの追加]**」タスクで作成したチャネルの名前を入力します。
@@ -684,7 +683,7 @@ Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定�
 
 ビデオをアップロードする際に YouTube プロパティの設定を自動化することもできます。Experience Managerでメタデータ処理プロファイルを作成します。
 
-メタデータ処理プロファイルを作成するには、まず「**[!UICONTROL フィールドラベル]**」、「**[!UICONTROL プロパティにマッピング]**」、「**[!UICONTROL 選択肢]**」の各フィールドの値をコピーします。これらはすべてビデオのメタデータスキーマで見つかります。次に、YouTubeビデオメタデータ処理プロファイルにこれらの値を追加して作成します。
+メタデータ処理プロファイルを作成するには、まず「**[!UICONTROL フィールドラベル]**」、「**[!UICONTROL プロパティにマッピング]**」、「**[!UICONTROL 選択肢]**」の各フィールドの値をコピーします。これらはすべてビデオのメタデータスキーマで見つかります。次に、YouTubeのビデオメタデータ処理プロファイルにこれらの値を追加して作成します。
 
 アップロードしたビデオのデフォルト YouTube プロパティの設定を自動化するには：
 
@@ -718,7 +717,7 @@ Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定�
    * （オプション）**[!UICONTROL セクションヘッダー]**&#x200B;というラベルのコンポーネントを左にドラッグして、フォーム領域にドロップします。
    * （オプション）「**[!UICONTROL フィールドラベル]**」をクリックして、コンポーネントを選択します。
    * （オプション）ページの右側にある「設定」タブで、「フィールドラベル」テキストフィールドに「`YouTube Publishing`」と入力します。
-   * 「**[!UICONTROL フォームをビルド]**」タブをクリックし、「**[!UICONTROL 複数値テキスト]**」というラベルのコンポーネントをドラッグして、作成した&#x200B;**[!UICONTROL YouTube Publishing]**&#x200B;見出しの下にドロップします。
+   * 「**[!UICONTROL フォームをビルド]**」タブをクリックし、「**[!UICONTROL 複数値テキスト]**」というラベルのコンポーネントをドラッグして、作成した&#x200B;**[!UICONTROL YouTube発行]**&#x200B;見出しの下にドロップします。
 
    * コンポーネントを選択するには、「**[!UICONTROL フィールドラベル]**」をクリックします。
    * ページの右側にある「設定」タブで、先ほどコピーした「YouTube への公開」の値（フィールドラベル値と、プロパティにマッピング値）をフォームのそれぞれのフィールドに貼り付けます。選択肢値を「デフォルト値」フィールドに貼り付けます。
@@ -729,7 +728,7 @@ Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定�
    * （オプション）**[!UICONTROL セクションヘッダー]**&#x200B;というラベルのコンポーネントを左にドラッグして、フォーム領域にドロップします。
    * （オプション）「**[!UICONTROL フィールドラベル]**」をクリックして、コンポーネントを選択します。
    * （オプション）ページの右側にある「設定」タブで、「フィールドラベル」テキストフィールドに「`YouTube Privacy`」と入力します。
-   * 「**[!UICONTROL Build Form]**」タブをクリックし、「**[!UICONTROL 複数値テキスト]**」というラベルのコンポーネントをドラッグして、作成した「**[!UICONTROL YouTube Privacy]**」見出しの下にドロップします。
+   * 「**[!UICONTROL Build Form]**」タブをクリックし、「**[!UICONTROL Multi Value Text]**」というラベルのコンポーネントをドラッグして、作成した「**[!UICONTROL YouTubeプライバシー]**」という見出しの下にドロップします。
 
    * コンポーネントを選択するには、「**[!UICONTROL フィールドラベル]**」をクリックします。
    * ページの右側にある「設定」タブで、先ほどコピーした「YouTube への公開」の値（フィールドラベル値と、プロパティにマッピング値）をフォームのそれぞれのフィールドに貼り付けます。選択肢値を「デフォルト値」フィールドに貼り付けます。
@@ -741,22 +740,22 @@ Experience Manager6.4以降、Experience ManagerでのYouTubeの投稿を設定�
 
 ### YouTube チャンネルへのビデオの公開  {#publishing-videos-to-your-youtube-channel}
 
-次は、前の手順で追加したタグを、ビデオアセットに関連付けます。このプロセスにより、Experience ManagerはYouTubeチャネルに投稿するアセットを知ることができます。
+次は、前の手順で追加したタグを、ビデオアセットに関連付けます。このプロセスにより、Experience Managerは、YouTubeチャネルに発行するアセットを知ることができます。
 
 >[!NOTE]
 >
->今すぐ投稿すると、YouTubeに自動的には投稿されません。 Dynamic Media が設定されている場合は、**[!UICONTROL 即時]**&#x200B;と&#x200B;**[!UICONTROL アクティベーション時]**&#x200B;の 2 つの公開オプションがあります。
+>即時公開は、YouTubeに自動的には公開されません。 Dynamic Media が設定されている場合は、**[!UICONTROL 即時]**&#x200B;と&#x200B;**[!UICONTROL アクティベーション時]**&#x200B;の 2 つの公開オプションがあります。
 >
 >**[!UICONTROL 即時公開する]**&#x200B;の場合、アップロードされたアセットは、IPS と同期された後、配信システムに自動的に公開されます。これは Dynamic Media には当てはまりますが、YouTube には当てはまりません。YouTubeに投稿するには、Experience Manager作成者を通じて投稿する必要があります。
 
 >[!NOTE]
-Experience Managerは、YouTubeからコンテンツを投稿するために、**[!UICONTROL YouTubeに投稿]**&#x200B;ワークフローを使用します。このワークフローを使用すると、進行状況を監視し、失敗情報を表示できます。
+Experience Managerは、YouTubeからコンテンツを公開するために、**[!UICONTROL YouTubeに公開]**&#x200B;ワークフローを使用します。このワークフローを使用すると、進行状況を監視し、失敗情報を表示できます。
 詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
 詳細な進行状況については、レプリケーション下の YouTube ログを監視できます。ただし、このような監視には管理者アクセスが必要です。
 
 **YouTube チャンネルにビデオを公開するには：**
 
-1. Experience Managerで、YouTubeチャネルに投稿するビデオアセットに移動します。
+1. Experience Managerで、YouTubeチャネルに公開するビデオアセットに移動します。
 1. ビデオアセット（アダプティブビデオセット）を選択します。
 1. ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「基本」タブの「メタデータ」で、「タグ」フィールドの右側にある「**[!UICONTROL 選択ダイアログを開く]**」をクリックします。
@@ -797,17 +796,17 @@ Web アプリケーションに YouTube URL をリンクするには：
 
 1. ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「**[!UICONTROL 詳細]**」タブをクリックします。
-1. 「YouTube Publishing」という見出しの「YouTube URL」リストで、URLテキストを選択してWebブラウザーにコピーし、アセットにプレビューしたり、Webコンテンツページに追加したりします。
+1. 「YouTube発行」の見出しの下のYouTubeURLリストで、URLテキストを選択してWebブラウザーにコピーし、アセットをプレビューしたり、Webコンテンツページに追加したりします。
 
 ### ビデオを非公開にして YouTube から削除 {#unpublishing-videos-to-remove-them-from-youtube}
 
  Experience Manager のビデオアセットを非公開にすると、そのビデオは YouTube から削除されます。
 
 >[!CAUTION]
-YouTube内からビデオを直接削除した場合、Experience Managerは気づかず、ビデオがまだYouTubeに投稿されているかのように動作し続けます。 ビデオアセットは常にExperience Managerを介してYouTubeから非公開にします。
+ビデオをYouTube内から直接削除すると、Experience Managerは気づかず、ビデオがまだYouTubeに投稿されているかのように動作し続けます。 ビデオアセットは常にExperience Managerを介してYouTubeから非公開にします。
 
 >[!NOTE]
-YouTubeからコンテンツを削除するには、Experience Managerで「**[!UICONTROL YouTubeから非公開]**」ワークフローを使用します。このワークフローを使用すると、進行状況を監視し、失敗情報を表示できます。
+Experience Managerは、YouTubeからコンテンツを削除するために、**[!UICONTROL YouTubeから非公開]**&#x200B;ワークフローを使用します。これにより、進行状況を監視し、失敗情報を表示できます。
 詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。
 
 ビデオを非公開にして YouTube から削除するには：
@@ -821,7 +820,7 @@ YouTubeからコンテンツを削除するには、Experience Managerで「**[!
 
 ## ビデオエンコーディングと YouTube への公開の進行状況の監視  {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-ビデオエンコーディングが適用されているフォルダーに新しいビデオをアップロードする場合、またはYouTubeにビデオを公開する場合は、ビデオエンコーディング/YouTubeの公開の進行状況（または失敗状況）を監視します。 YouTubeの実際の公開の進行状況は、ログを介してのみ利用できます。 しかし、失敗したか成功したかは、次の手順で説明する他の方法で示されます。 さらに、YouTubeの投稿ワークフローまたはビデオエンコーディングが完了または中断された場合に、電子メール通知を受信します。
+ビデオエンコーディングが適用されているフォルダーまたはビデオを公開する場合は、ビデオエンコーディング/Youtubeへの公開の進行（または失敗）を監視します。 実際のYouTube発行の進捗状況は、ログを通してのみ利用できます。 しかし、失敗したか成功したかは、次の手順で説明する他の方法で示されます。 さらに、YouTubeの公開ワークフローまたはビデオエンコーディングが完了または中断された場合に、電子メール通知を受信します。
 
 ### 進行状況の監視 {#monitoring-progress}
 
