@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media Classic を使用した CDN キャッシュの無効化
 description: 「CDN(コンテンツ配信ネットワーク)キャッシュコンテンツを無効にして、キャッシュの期限が切れるのを待たずに、Dynamic Mediaから配信されるアセットをすばやく更新する方法を説明します。」
-feature: Asset Management,Dynamic Media Classic
-topic: Business Practitioner
+feature: アセット管理，Dynamic Mediaクラシック
 role: Administrator,Business Practitioner
+exl-id: 7e488699-5633-437f-9e2e-58c98aa13145
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '688'
 ht-degree: 46%
 
 ---
-
 
 # Dynamic Media Classic を使用した CDN キャッシュの無効化 {#invalidating-your-cdn-cached-content}
 
@@ -62,4 +61,3 @@ Dynamic Mediaアセットは、高速配信を実現するために、CDN(コン
    >アセットを選択し、**[!UICONTROL ファイル/CDNを無効にする]**&#x200B;をタップすると、Dynamic MediaはCDNを無効にするテンプレートを使用して、CDNから無効にするURLを自動的に作成します。 「**[!UICONTROL CDN 無効化テンプレート]**」テキストボックスに何も入力していないと、空白の URL リストが返されます。CDN におけるキャッシュは、アセットベースではありません。URL ベースです。したがって、Web サイト上での完全な URL を認識しておく必要があります。URL を特定した後は、上記の手順で、それらの URL を「**[!UICONTROL CDN 無効化テンプレート]**」テキストボックスに追加できます。これにより、アセットを選択し、ワンステップで URL を無効化することができます。
    >
    >もう 1 つのオプションとして、完全な URL を **[!UICONTROL CDN 無効化]**&#x200B;リストに追加する方法があります。この方法に従う場合は、**[!UICONTROL ファイル／CDN を無効にする]**&#x200B;オプションに進む前に Dynamic Media Classic でアセットを選択する必要はありません。
-
