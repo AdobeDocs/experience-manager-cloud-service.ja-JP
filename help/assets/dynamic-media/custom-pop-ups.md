@@ -1,17 +1,16 @@
 ---
 title: クイック表示を使用したカスタムポップアップの作成
 description: 「eコマースエクスペリエンスでデフォルトのクイック表示がどのように使用され、購入を促す製品情報がポップアップウィンドウに表示されるかについて説明します。 カスタムコンテンツをトリガーしてポップアップウィンドウに表示できます。」
-topic: "Developer,Administrator,Business Practitioner"
-feature: Interactive Images,Interactive Videos,Carousel Banners
+feature: インタラクティブ画像，インタラクティブビデオ，カルーセルバナー
 role: Administrator,Business Practitioner
+exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1034'
 ht-degree: 44%
 
 ---
-
 
 # クイック表示を使用したカスタムポップアップウィンドウの作成{#using-quickviews-to-create-custom-pop-ups}
 
@@ -262,4 +261,3 @@ mappingMap変数と、クイック表示に含まれるSKU値と汎用変数：
    `s7interactiveimageviewer.init()`
 
    ビューアをホストページに埋め込んだ後は、必ずビューアインスタンスを作成してください。 また、`init()`を使用してビューアを呼び出す前に、ハンドラーが読み込まれていることを確認してください。
-
