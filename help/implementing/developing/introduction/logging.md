@@ -1,16 +1,16 @@
 ---
-title: ログ
-description: 一元的なログサービスのグローバルパラメーターの設定、個々のサービスに特有の設定、またはデータのログ記録の要求をおこなう方法を学習します。
+title: Cloud ServiceとしてのAEMのログ
+description: 中央ログサービスのグローバルパラメーターの設定方法、個々のサービスの固有の設定、またはAEMでCloud Serviceとしてデータログを要求する方法について説明します。
+exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 translation-type: tm+mt
-source-git-commit: 17ba5068b0df0724bcebeecb2323b7dcdc8d8cfa
+source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 95%
+source-wordcount: '2332'
+ht-degree: 94%
 
 ---
 
-
-# ログ {#logging}
+# Cloud Service{#logging-for-aem-as-a-cloud-service}としてAEMにログ記録
 
 AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能です。
 
