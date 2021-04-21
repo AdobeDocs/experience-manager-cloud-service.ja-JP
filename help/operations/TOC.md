@@ -3,13 +3,12 @@ sub-product: 'AEM as a Cloud Service の運用と保守 '
 user-guide-title: 'AEM as a Cloud Service の運用と保守 '
 breadcrumb-title: 操作ガイド
 user-guide-description: インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。
-feature-set: Experience Manager Sites
-feature: Configuring
+feature: 設定
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 80a59a02067d478713aa7dcdb436ad1345d89c1a
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '63'
 ht-degree: 100%
 
 ---
