@@ -1,16 +1,15 @@
 ---
 title: コンテンツの HTTP/2 配信の FAQ
 description: HTTP/2 コンテンツ配信について説明します。
-topic: "Administrator,Business Practitioner"
 role: Administrator,Business Practitioner
+exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 72%
+source-wordcount: '786'
+ht-degree: 73%
 
 ---
-
 
 # コンテンツの HTTP/2 配信の FAQ{#http-delivery-of-content-faq}
 
