@@ -1,16 +1,15 @@
 ---
 title: ルールセットを使用した URL の変換
 description: URLを変換するためにDynamic Mediaにルールセットをデプロイする方法について説明します。 ルールセットは、XMLデータを評価し、特定の条件を満たす場合に特定のアクションを実行するスクリプティング言語（JavaScript™など）で記述された一連の命令です。
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 85%
 
 ---
-
 
 # ルールセットを使用した URL の変換 {#using-rulesets-to-transform-urls}
 
@@ -78,4 +77,3 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
    ルールセットの条件が現在の Dynamic Media の Image Server へのリクエストに適用されます。
 
    ルールセットファイルを変更すると、更新したルールセットファイルを再アップロードして再公開すると、変更が直ちに適用されます。
-
