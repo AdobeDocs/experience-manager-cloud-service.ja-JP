@@ -1,16 +1,15 @@
 ---
 title: Flash ビューアのサポート終了に関する通知
 description: 2017年1月31日をもって、Flashビューアプラットフォームのサポートは正式に終了となります。
-topic: Business Practitioner
 role: Administrator,Business Practitioner
+exl-id: d1f34d22-abcc-422e-b6da-3fa8097078b0
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 51%
+source-wordcount: '47'
+ht-degree: 53%
 
 ---
-
 
 # Flash ビューアの提供終了 {#flash-viewers-end-of-life-notice}
 
