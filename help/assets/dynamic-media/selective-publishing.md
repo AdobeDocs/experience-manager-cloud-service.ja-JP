@@ -5,13 +5,12 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-topic: Business Practitioner
 role: Business Practitioner
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2935'
 ht-degree: 44%
 
 ---
