@@ -3,13 +3,12 @@ sub-product: AEM as a Cloud Service のセキュリティ
 user-guide-title: AEM as a Cloud Service のセキュリティ
 breadcrumb-title: セキュリティーガイド
 user-guide-description: Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。
-feature-set: Experience Manager Sites
-feature: Configuring
+feature: 設定
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '63'
 ht-degree: 84%
 
 ---
