@@ -2,17 +2,16 @@
 title: 画質最適化のベストプラクティス
 description: Dynamic Media で画像アセットの画質の最適化に使用できるベストプラクティスについて説明します。
 contentOwner: Rick Brough
-feature: Asset Management
-topic: Business Practitioner
+feature: アセット管理
 role: Business Practitioner
+exl-id: 2efc4a27-01d7-427f-9701-393497314402
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1454'
 ht-degree: 92%
 
 ---
-
 
 # 画質最適化のベストプラクティス {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -125,4 +124,3 @@ JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用し�
 * 様々なパラメーターを直接 URL 上でリアルタイムにテストします。
 * ベストプラクティスとしては、Dynamic Media 画像サービングコマンドを画像プリセット内にまとめることができます。画像プリセットは基本的に、`$thumb_low$` や `&product_high$` といったカスタムプリセット名が付けられた URL コマンドマクロです。URLパス内のカスタムプリセット名は、これらのプリセットを呼び出します。 この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
 * また、Experience Managerは、画質を微調整するためのより高度な方法も提供します。例えば、取り込み時に画像にシャープを適用できます。 レンダリング結果を調整して最適化するために、[Adobe Professional Services](https://www.adobe.com/jp/experience-cloud/consulting-services.html)は、カスタマイズされたインサイトとベストプラクティスを支援します。
-
