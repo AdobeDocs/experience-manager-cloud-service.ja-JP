@@ -3,9 +3,8 @@ sub-product: Cloud ServiceとしてのAEMコンテンツとコマース
 user-guide-title: Cloud ServiceとしてのAEMコンテンツとコマース
 breadcrumb-title: AEMコンテンツおよびコマースガイド
 user-guide-description: Experience ManagerコンテンツとコマースをCloud Serviceとして使用および管理する方法を理解します。
-feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 4b4741926381818e44b2293f9bed86782e689c49
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 25%
