@@ -1,14 +1,13 @@
 ---
 title: インタラクティブビデオ
 description: Dynamic Media でインタラクティブビデオとショッパブルビデオを使用する方法を説明します。
-feature: Interactive Videos
-topic: Business Practitioner
+feature: インタラクティブビデオ
 role: Business Practitioner
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 translation-type: tm+mt
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '6066'
+source-wordcount: '6064'
 ht-degree: 49%
 
 ---
@@ -54,7 +53,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ### アドビカスタマーサクセスウェビナー {#adobe-customer-success-webinar}
 
-[Experience Managerアセットでのインタラクティブビデオの使用、リンクの共有、YouTubeの共有](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)ウェビナーでは、インタラクティブビデオや他の機能を使用して、コンバージョンに依存するイベントをビデオマーケティングコンテンツに結び付ける方法について説明します。
+[Experience Managerアセットでのインタラクティブビデオ、リンク共有、YouTube共有の使用](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)ウェビナーでは、インタラクティブビデオや他の機能を使用して、コンバージョンに依存するイベントをビデオマーケティングコンテンツに結び付ける方法について説明します。
 
 ## クイックスタート：インタラクティブビデオ {#quick-start-interactive-videos}
 
@@ -281,7 +280,7 @@ Experience Managerの導入でeコマースを使用している場合は、こ�
 
       ビデオの最後に到達するまで、セグメントを追加するタイムラインのポイントで、ビデオの再生と停止を続けます。
 
-1. （オプション）**[!UICONTROL タイムラインスケールスライダ]**&#x200B;の左側のバーをドラッグしてズームインし、右にドラッグしてズームアウトします。 この操作により、追加したセグメントの詳細表示を制御できます。
+1. （オプション）**[!UICONTROL タイムラインスケールスライダ]**&#x200B;の左側のバーをドラッグしてズームインし、右にドラッグしてズームアウトします。 この操作により、追加したセグメントの詳細を表示する量を制御できます。
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
