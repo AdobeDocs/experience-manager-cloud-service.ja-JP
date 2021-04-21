@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media アセットの管理について
 description: Dynamic Media アセットの操作方法について説明します。
-feature: Asset Management
-topic: Business Practitioner
+feature: アセット管理
 role: Administrator,Business Practitioner
+exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 69%
+source-wordcount: '121'
+ht-degree: 70%
 
 ---
-
 
 # Dynamic Media アセットの管理について {#managing-assets}
 
@@ -27,4 +26,3 @@ Dynamic Mediaアセット（画像、ビデオ、インタラクティブアセ�
 * [Dynamic Media アセットのプレビュー](previewing-assets.md)
 * [Dynamic Media アセットの公開](publishing-dynamicmedia-assets.md)
 * [セレクターの操作](working-with-selectors.md)
-
