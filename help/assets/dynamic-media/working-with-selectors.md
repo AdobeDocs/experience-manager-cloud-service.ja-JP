@@ -1,16 +1,15 @@
 ---
 title: セレクターの操作
 description: Dynamic Media でインタラクティブ画像、インタラクティブビデオ、カルーセルバナーのアセットを選択する方法について説明します。
-topic: Business Practitioner
 role: Business Practitioner
+exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '751'
 ht-degree: 52%
 
 ---
-
 
 # Dynamic Media でのセレクターの操作 {#working-with-selectors}
 
