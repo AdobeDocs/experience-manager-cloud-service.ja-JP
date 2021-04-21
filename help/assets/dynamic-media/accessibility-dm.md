@@ -4,14 +4,13 @@ description: Dynamic Media および Dynamic Media ビューアでのアクセ�
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-topic: Business Practitioner
-feature: Accessibility
+feature: アクセシビリティ
 role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 66%
+source-wordcount: '612'
+ht-degree: 67%
 
 ---
 
