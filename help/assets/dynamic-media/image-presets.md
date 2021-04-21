@@ -1,17 +1,16 @@
 ---
 title: Dynamic Media 画像プリセットの適用
 description: Dynamic Media での画像プリセットの適用方法を説明します。
-feature: Image Presets,Viewers,Renditions
-topic: Business Practitioner
+feature: 画像プリセット，ビューア，レンディション
 role: Business Practitioner
+exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '309'
 ht-degree: 70%
 
 ---
-
 
 # Dynamic Media 画像プリセットの適用 {#applying-image-presets}
 
@@ -51,4 +50,3 @@ ht-degree: 70%
    >アセット&#x200B;*と*&#x200B;の画像プリセットがまだ公開されていない場合は、**[!UICONTROL URL]**&#x200B;ボタン（または、該当する場合はURLとRESSボタン）は使用できません。
    >
    >また、Dynamic Media S7 サーバーでは画像プリセットが自動的に公開されることにも注意してください。
-
