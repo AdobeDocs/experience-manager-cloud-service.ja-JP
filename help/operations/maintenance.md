@@ -3,10 +3,10 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 4c1c14fae5819e7f7e1bf5d04350c54b6cbe80bb
+source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 81%
+source-wordcount: '914'
+ht-degree: 82%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 81%
 ユーザーは、ワークフローの削除、アドホックタスクの削除およびプロジェクトの削除のメンテナンスタスクのそれぞれを、日別、週別、月別の保守期間中に実行するようにスケジュールできます。これらの設定は、ソース管理で直接編集する必要があります。次の表に、各ウィンドウで使用可能な設定パラメータを示します。
 
 <table>
+ <tbody>
   <tr>
     <th>メンテナンスウィンドウの設定</th>
     <th>設定の所有者</th>
@@ -54,11 +55,11 @@ ht-degree: 81%
     <td>毎日</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td>下の場所1を参照</td>
+    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
     <td>以下のコードサンプル 1 を参照してください。</td>
-  <td>
-  <strong>windowSchedule= daily</strong> （この値は変更しないでください）
-  <strong>windowStartTime= HH:</strong> MM（24時間制）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。<strong></strong>windowEndTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。
+  <td><p><code>windowSchedule= daily</code></p> （この値は変更しないでください）。
+  <p><code>windowStartTime= HH:MM</code> 24時間形式で使用します。 日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
+  <p><code>windowEndTime= HH:MM</code> 24時間形式で使用します。 日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
   </td> 
   </tr>
   <tr>
@@ -83,6 +84,7 @@ ht-degree: 81%
     <strong>windowStartTime= HH:</strong> MM（24時間制）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。<strong></strong>windowEndTime = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。<strong>windowScheduleWeekdays = 1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値は、ジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。<strong>windowFirstLastStartDay= 0/10（月の最初の週にスケジュールを設定）または1</strong> が月の最後の週にスケジュールを設定（月の最後の週にスケジュールを設定）値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。
     </td> 
     </tr>
+    </tbody>
 </table>
 
 ロケーション:
