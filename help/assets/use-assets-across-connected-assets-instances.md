@@ -2,20 +2,20 @@
 title: Connected Assets を使用した [!DNL Sites] での DAM アセットの共有
 description: リモート [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
-feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
+feature: アセット管理，接続されているアセット，アセットの配布，ユーザーとグループ
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 translation-type: tm+mt
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
 workflow-type: tm+mt
 source-wordcount: '2932'
-ht-degree: 85%
+ht-degree: 81%
 
 ---
 
 # Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。1 つの理由は、連携して動作する必要がある既存のデプロイメントを地理的に分散させることができます。もう 1 つの理由は、親会社が一緒に使用したい異種インフラストラクチャをもたらす買収です。
+大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。1つの理由は、統合的に動作するために必要な既存の配置を地理的に分散させることができます。 もう 1 つの理由は、親会社が一緒に使用したい異種インフラストラクチャをもたらす買収です。
 
 ユーザーは、[!DNL Experience Manager Sites] で Web ページを作成できます。[!DNL Experience Manager Assets] は、Web サイトに必要なアセットを提供するデジタルアセット管理（DAM）システムです。[!DNL Experience Manager] では、[!DNL Sites] と [!DNL Assets] の統合により、上記の使用事例をサポートできるようになりました。
 
@@ -53,7 +53,7 @@ ht-degree: 85%
 |------|--------|-----------|-----|----------|
 | [!DNL Sites] administrator | ローカル | [!DNL Experience Manager] `administrators` | `admin` | [!DNL Experience Manager]を設定し、リモート [!DNL Assets] デプロイメントとの統合を設定します。 |
 | DAM ユーザー | ローカル | `Authors` | `ksaner` | `/content/DAM/connectedassets/` の取得済みアセットを表示／複製するために使用されます。 |
-| [!DNL Sites] 作成者 | ローカル | <ul><li>`Authors`（リモート DAM での読み取りアクセス権とローカル [!DNL Sites] での作成者アクセス権を持つ） </li> <li>ローカル [!DNL Sites] の `dam-users`</li></ul> | `ksaner` | エンドユーザーは、この統合を使用してコンテンツの速度を向上させる [!DNL Sites] 作成者です。作成者は、[!UICONTROL コンテンツファインダー]や、ローカル Web ページ内の必要な画像を使用して、リモート DAM 内のアセットを検索および閲覧します。`ksaner` DAM ユーザーの資格情報が使用されます。 |
+| [!DNL Sites] 作成者 | ローカル | <ul><li>`Authors`（リモート DAM での読み取りアクセス権とローカル [!DNL Sites] での作成者アクセス権を持つ） </li> <li>ローカル [!DNL Sites] の `dam-users`</li></ul> | `ksaner` | エンドユーザーは[!DNL Sites]人の作成者で、この統合を使用してコンテンツ速度を向上させます。 作成者は、[!UICONTROL コンテンツファインダー]を使用し、ローカルWebページで必要な画像を使用して、リモートDAM内のアセットを検索および参照できます。 `ksaner` DAM ユーザーの資格情報が使用されます。 |
 | [!DNL Assets] 管理者 | リモート | [!DNL Experience Manager] `administrators` | リモート [!DNL Experience Manager] の `admin` | クロスオリジンリソース共有（CORS）を設定します。 |
 | DAM ユーザー | リモート | `Authors` | リモート [!DNL Experience Manager] の `ksaner` | リモート [!DNL Experience Manager] デプロイメントでの作成者の役割。[!UICONTROL コンテンツファインダー]を使用して Connected Assets 内のアセットを検索／参照します。 |
 | DAM ディストリビューター（テクニカルユーザー） | リモート | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | リモート [!DNL Experience Manager] の `ksaner` | リモートデプロイメント上に存在するこのユーザーは、（[!DNL Sites] 作成者の役割ではなく）[!DNL Experience Manager] ローカルサーバーによって、[!DNL Sites] 作成者の代わりにリモートアセットを取得するために使用されます。この役割は、上の 2 つの `ksaner` の役割とは異なり、別のユーザーグループに属しています。 |
@@ -119,7 +119,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
 ## [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメント間の接続の設定 {#sites-dynamic-media-connected-assets}
 
-[!DNL Sites]展開と[!DNL Dynamic Media]展開の間の接続を設定すると、Webページ作成者がWebページで[!DNL Dynamic Media]画像を使用できるようになります。 Webページのオーサリング時に、リモートアセットとリモート[!DNL Dynamic Media]デプロイメントの使用経験は同じです。 これにより、接続されたアセット機能（スマート切り抜きや画像プリセットなど）を使用した[!DNL Dynamic Media]機能を利用できます。
+[!DNL Sites]展開と[!DNL Dynamic Media]展開の間の接続を設定すると、Webページ作成者がWebページで[!DNL Dynamic Media]画像を使用できるようになります。 Webページのオーサリング中、リモートアセットとリモート[!DNL Dynamic Media]デプロイメントの使用経験は同じです。 これにより、接続されたアセット機能（スマート切り抜きや画像プリセットなど）を使用した[!DNL Dynamic Media]機能を利用できます。
 
 この接続を設定するには、次の手順に従います。
 
@@ -148,7 +148,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 1. リモートデプロイメントの [!DNL Assets] インターフェイスに移動するには、[!DNL Experience Manager] Workspace から **[!UICONTROL Assets]**／**[!UICONTROL ファイル]**&#x200B;にアクセスします。または、ブラウザーで `https://[assets_servername_ams]:[port]/assets.html/content/dam` にアクセスします。選択したアセットをアップロードします。
 1. [!DNL Sites] デプロイメントの右上隅にあるプロファイルアクティベーターで、「**[!UICONTROL 別のユーザーとして実行する]**」をクリックします。ユーザー名として `ksaner` を入力し、提供されたオプションを選択し、「**[!UICONTROL OK]**」をクリックします。
-1. **[!UICONTROL Sites]**／**[!UICONTROL We.Retail]**／**[!UICONTROL us]**／**[!UICONTROL en]** で、We.Retail Web サイトページを開きます。ページを編集します。または、ブラウザーで `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` にアクセスしてページを編集します。
+1. **[!UICONTROL サイト]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**&#x200B;で`We.Retail`のWebサイトを開きます。 ページを編集します。または、ブラウザーで `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` にアクセスしてページを編集します。
 
    ページの左上隅にある「**[!UICONTROL サイドパネルを切り替え]**」をクリックします。
 
@@ -182,7 +182,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 ### Web ページ間でのアセットの使用の確認 {#asset-usage-references}
 
-[!DNL Experience Manager] DAM ユーザーは、アセットへのすべての参照を確認できます。リモートの [!DNL Sites] および複合アセット内のアセットの使用状況を理解し、管理するのに役立ちます。[!DNL Experience Manager Sites] のデプロイメントの Web ページの作成者の多くは、異なる Web ページのリモート [!DNL Assets] にあるアセットを使用できます。アセット管理を単純化し、参照が壊れないようにするには、DAM ユーザーはローカルおよびリモートの Web ページ全体でのアセットの使用を確認することが重要です。アセットの[!UICONTROL プロパティ]ページの「[!UICONTROL 参照]」タブは、アセットのローカル参照とリモート参照をリストします。
+[!DNL Experience Manager] DAM ユーザーは、アセットへのすべての参照を確認できます。リモートの [!DNL Sites] および複合アセット内のアセットの使用状況を理解し、管理するのに役立ちます。[!DNL Experience Manager Sites]展開のWebページの作成者の多くは、異なるWebページのリモートDAMでアセットを使用できます。 アセット管理を単純化し、参照が壊れないようにするには、DAM ユーザーはローカルおよびリモートの Web ページ全体でのアセットの使用を確認することが重要です。アセットの[!UICONTROL プロパティ]ページの「[!UICONTROL 参照]」タブは、アセットのローカル参照とリモート参照をリストします。
 
 [!DNL Assets] デプロイメントで参照を表示および管理するには、次の手順に従います。
 
@@ -191,7 +191,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
    ![アセットのプロパティページのリモート参照](assets/connected-assets-remote-reference.png)
 
-1. [!DNL Sites] ページの参照は、各ローカル [!DNL Sites] の参照の合計数を表示します。すべての参照を見つけて、参照の総数を表示するのは時間がかかる場合があります。
+1. [!DNL Sites]ページの参照は、各ローカル[!DNL Sites]の参照の合計数を表示します。 すべての参照を見つけて、参照の総数を表示するのは時間がかかる場合があります。
 1. 参照のリストはインタラクティブで、DAM ユーザーは参照をクリックして参照ページを開くことができます。何らかの理由でリモート参照を取得できない場合は、失敗の通知が表示されます。
 1. ユーザーはアセットを移動または削除できます。アセットを移動または削除すると、選択したすべてのアセット／フォルダーの参照の合計数が警告ダイアログに表示されます。参照がまだ表示されていないアセットを削除すると、警告ダイアログが表示されます。
 
@@ -227,7 +227,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * 取得されたアセットに対しては、単純な非破壊編集と、 `Image` コンポーネント経由でサポートされている編集をおこなえます。アセットは読み取り専用です。
 * アセットを再取得する唯一の方法は、アセットをページにドラッグすることです。アセットを再取得して更新するための API サポートなどの手段はありません。
 * アセットが DAM から廃止されても、それらは引き続き [!DNL Sites] ページで使用されます。
-* アセットのリモート参照エントリは、非同期で取得されます。参照と合計数はリアルタイムではないので、DAM ユーザーが参照を表示しているときに Sites の作成者がアセットを使用した場合は、多少異なる場合があります。DAM ユーザーは、ページを更新して数分後に再試行し、合計数を取得できます。
+* アセットのリモート参照エントリは、非同期で取得されます。 参照と合計数はリアルタイムではなく、[!DNL Sites]作成者がDAMユーザーが参照を表示している間にアセットを使用すると、多少異なる場合があります。 DAM ユーザーは、ページを更新して数分後に再試行し、合計数を取得できます。
 
 ## 問題のトラブルシューティング {#troubleshoot}
 
