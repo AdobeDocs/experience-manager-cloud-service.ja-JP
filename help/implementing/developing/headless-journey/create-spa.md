@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 34%
@@ -19,7 +19,7 @@ ht-degree: 34%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-この[AEM Headless Developerジャーニーのオプションの続きでは、AEMが従来のフルスタックCMS機能とヘッドレス配信を組み合わせる方法、AEM Editor frameworkを使用して編集可能なSPAを作成する方法、外部SPAを使用し、必要に応じて編集機能を実現します。](#overview.md)
+この[AEM Headless Developerジャーニーのオプションの続きでは、AEMが従来のフルスタックCMS機能とヘッドレス配信を組み合わせる方法、AEM Editor frameworkを使用して編集可能なSPAを作成する方法、外部SPAを使用し、必要に応じて編集機能を実現します。](overview.md)
 
 ## {#story-so-far}
 
