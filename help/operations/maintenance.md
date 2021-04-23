@@ -3,9 +3,9 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 503983b81cfe84b0bafe328d4fb7faeff000c7dd
+source-git-commit: 5351b4b9ceed04c572bafc02f47d6fa666e5580d
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '925'
 ht-degree: 82%
 
 ---
@@ -55,11 +55,11 @@ ht-degree: 82%
     <td>毎日</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td> <code>/apps/settings/granite/operations/maintenance/granite_daily</code></td>
+    <td>下の場所1を参照</td>
     <td>以下のコードサンプル 1 を参照してください。</td>
-  <td><p><code>windowSchedule= daily</code></p> （この値は変更しないでください）。
-  <p><code>windowStartTime= HH:MM</code> 24時間形式で使用します。 日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
-  <p><code>windowEndTime= HH:MM</code> 24時間形式で使用します。 日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
+  <td><p><strong>windowSchedule= daily</strong></p> （この値は変更しないでください）。
+  <p><strong></strong>windowStartTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
+  <p><strong></strong>windowEndTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
   </td> 
   </tr>
   <tr>
