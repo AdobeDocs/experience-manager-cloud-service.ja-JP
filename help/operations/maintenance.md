@@ -3,9 +3,9 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: 5892ef2998b8bb0e955998662a3cbe8aaa624e97
+source-git-commit: a1cf75a9ef6ebf6b61916296ec766255f0b549e0
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '902'
 ht-degree: 87%
 
 ---
@@ -47,16 +47,12 @@ ht-degree: 87%
     <th>メンテナンスウィンドウの設定</th>
     <th>設定の所有者</th>
     <th>設定の種類</th>
-    <th>場所</th>
-    <th>例</th>
     <th>パラメーター</th>
   </tr>
   <tr>
     <td>毎日</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td>1</td>
-    <td>3</td>
   <td>
   <p><strong></strong>windowSchedule = daily（この値は変更しないでください）</p>
   <p><strong></strong>windowStartTime = HH:MM（24 時間形式）日次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
@@ -67,8 +63,6 @@ ht-degree: 87%
     <td>毎週</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td>下の場所2を参照</td>
-    <td>以下のコードサンプル 2 を参照してください。</td>
     <td>
     <p><strong></strong>windowSchedule = weekly（この値は変更しないでください）</p>
     <p><strong></strong>windowStartTime = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
@@ -80,8 +74,6 @@ ht-degree: 87%
     <td>毎月</td>
     <td>顧客</td>
     <td>JCR ノード定義</td>
-    <td>下の場所3を参照</td>
-    <td>以下のコードサンプル 3 を参照してください。</td>
     <td>
     <p><strong></strong>windowSchedule = daily（この値は変更しないでください）</p>
     <p><strong></strong>windowStartTime = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
