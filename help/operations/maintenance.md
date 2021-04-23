@@ -3,7 +3,7 @@ title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 translation-type: tm+mt
-source-git-commit: df44a73b71c26cc9c6488fac14edba5d898eba2f
+source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 84%
@@ -78,7 +78,7 @@ ht-degree: 84%
     <p><strong></strong>windowSchedule = daily（この値は変更しないでください）</p>
     <p><strong></strong>windowStartTime = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
     <p><strong></strong>windowEndTime = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
-    <p><strong>windowScheduleWeekdays = 1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値は、ジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowScheduleWeekdays=1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値は、ジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     <p><strong>windowFirstLastStartDay= 0/10（月の最初の週にスケジュールを設定）または1</strong> が月の最後の週にスケジュールを設定（月の最後の週にスケジュールを設定）値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。</p>
     </td> 
     </tr>
