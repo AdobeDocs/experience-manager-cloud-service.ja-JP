@@ -1,11 +1,12 @@
 ---
 title: RemotePage コンポーネント
 description: RemotePage コンポーネントは、AEM 内のリモート React SPA を編集するためのカスタムページコンポーネントです。
+exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: 9a1048f6d185d2d3229bab05b8e827845444d11c
+source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 74%
+source-wordcount: '340'
+ht-degree: 53%
 
 ---
 
@@ -28,10 +29,15 @@ AEMの編集可能な外部SPAの詳細については、「AEM](editing-externa
 * 開発での CORS の有効化
 * ページプロパティでのリモート URL の設定
 * AEM での SPA のレンダリング
+* Webアプリケーションは、次のいずれかのBundlerアセットマニフェストを使用し、読み込まれるすべてのCSSおよびJSファイルの`entrypoints property`内のリストが持つドメインルートに`asset-manifest.json`ファイルを公開する必要があります。
+   * https://github.com/shellscape/webpack-manifest-plugin
+   * https://github.com/webdeveric/webpack-assets-manifest
+   * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+      ![entrypointsプロパティの例](assets/asset-manifest-entrypoints.png)
+* アプリケーションは、`body`要素の下の`<div id="root"></div>`で初期化できる必要があります。 アプリがインスタンス化されるために別のマークアップが必要な場合は、`sling:resourceSuperType="spa-project-core/components/remotepage`を持つプロキシコンポーネントのHTLスクリプトで、これに応じて調整する必要があります。
 
 ## 制限事項 {#limitations}
 
-* 現在の RemotePage コンポーネントの実装では、リモートの React アプリケーションのみがサポートされています。
 * AEM でリモートレンダリングをおこなう場合、アプリケーションのルート HTML ファイルに定義された内部 CSS と、ルート DOM ノードのインライン CSS は使用できません。
 
 ## 技術的詳細 {#technical-details}
