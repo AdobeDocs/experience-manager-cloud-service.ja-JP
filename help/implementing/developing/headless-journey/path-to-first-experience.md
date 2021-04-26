@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニーのこの部分では、計画に関する考慮事項を含む、AEMで初めてのヘッドレス体験を実装する手順を理解し、パスをできるだけスムーズにするベストプラクティスを学ぶ予定です。](#overview.md)
+[AEMヘッドレス開発者ジャーニーのこの部分では、計画に関する考慮事項を含む、AEMで初めてのヘッドレス体験を実装する手順を理解し、パスをできるだけスムーズにするベストプラクティスを学ぶ予定です。](overview.md)
 
 ## {#story-so-far}
 
