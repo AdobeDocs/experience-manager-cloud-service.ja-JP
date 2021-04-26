@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 5fd190b50f52a3182365a31e1539c5864f42afb4
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1671'
 ht-degree: 4%
 
 ---
@@ -241,6 +241,7 @@ tbc...
 
 ## その他のリソース {#additional-resources}
 
+* [AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)  — はじめに — データモデリングやGraphQLなどのAEM headless機能の使い方の概要を説明する短いビデオチュートリアルシリーズ
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)  — コンテンツフラグメントのリードインページ
    * [設定ブラウザーのコンテンツフラグメント](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 設定ブラウザーのコンテンツフラグメント機能を有効にする
    * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)  — コンテンツフラグメントモデルの作成と編集
