@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 52%
@@ -19,7 +19,7 @@ ht-degree: 52%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニーのこの部分では、](#overview.md)がGraphQLクエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を学びます。
+[AEMヘッドレス開発者ジャーニーのこの部分では、](overview.md)がGraphQLクエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を学びます。
 
 ## {#story-so-far}
 
