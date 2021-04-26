@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 6097cb8961f604ec2d3f5f6d602c927efc7344d5
+source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 53%
+source-wordcount: '764'
+ht-degree: 52%
 
 ---
 
@@ -130,6 +130,7 @@ AEM GraphQL API を使用すると、コンテンツフラグメントで（複�
 
 ## その他のリソース {#additional-resources}
 
+* [AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)  — はじめに — データモデリングやGraphQLなどのAEM headless機能の使い方の概要を説明する短いビデオチュートリアルシリーズ
 * [GraphQL.org](https://graphql.org)
    * [スキーマ](https://graphql.org/learn/schema/)
    * [GraphQL Javaライブラリ](https://graphql.org/code/#java)
