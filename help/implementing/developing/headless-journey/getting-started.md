@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '3087'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニーのこの部分では、](#overview.md)は、自分のプロジェクトをAEMヘッドレスで開始するために必要なものについて学びます。
+[AEMヘッドレス開発者ジャーニーのこの部分では、](overview.md)は、自分のプロジェクトをAEMヘッドレスで開始するために必要なものについて学びます。
 
 ## {#story-so-far}
 
