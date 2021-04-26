@@ -6,9 +6,9 @@ user-guide-description: 開発およびデプロイメントに関するトピ�
 feature: 開発者ツール
 role: Developer, Architect
 translation-type: tm+mt
-source-git-commit: eb404db0cf45bf2ef5003c6e4c07c29758c8166b
+source-git-commit: f0357bb2b19d7d44066bf868c3ea3ce0dcf42461
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '972'
 ht-degree: 89%
 
 ---
@@ -168,6 +168,7 @@ ht-degree: 89%
    + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
+   + [リンク外部化装置](/help/implementing/developing/tools/externalizer.md)
 + パーソナライゼーション {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub の設定](developing/personalization/configuring-contexthub.md)
