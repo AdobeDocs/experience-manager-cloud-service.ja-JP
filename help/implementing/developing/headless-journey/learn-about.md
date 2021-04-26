@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: 1b6dbf401ff921964537f6c79d12544789e93c92
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニーのこの部分では、](#overview.md)はヘッドレス技術と使用する理由を学びます。
+[AEMヘッドレス開発者ジャーニーのこの部分では、](overview.md)はヘッドレス技術と使用する理由を学びます。
 
 ## 目的 {#objective}
 
