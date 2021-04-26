@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 translation-type: tm+mt
-source-git-commit: d17583399b6792583e3e210005b62d360b91d05a
+source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニー](#overview.md)のこの部分では、コンテンツ構造をモデル化する方法を学習できます。 次に、コンテンツフラグメントモデルとコンテンツフラグメントを使用して、チャネル間で再利用するAdobe Experience Manager(AEM)の構造を実現します。
+[AEMヘッドレス開発者ジャーニー](overview.md)のこの部分では、コンテンツ構造をモデル化する方法を学習できます。 次に、コンテンツフラグメントモデルとコンテンツフラグメントを使用して、チャネル間で再利用するAdobe Experience Manager(AEM)の構造を実現します。
 
 ## {#story-so-far}
 
