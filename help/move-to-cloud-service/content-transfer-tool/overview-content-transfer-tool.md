@@ -1,16 +1,23 @@
 ---
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
+exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 60e236eadea8983fcf087b94ce908e55421214ae
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '813'
+ht-degree: 84%
 
 ---
 
-
 # 概要 {#overview-content-transfer-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_overview"
+>title="概要"
+>abstract="コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたはAMS）からターゲットAEMCloud Serviceインスタンスに移動するのに使用できます。 プリンシパル（ユーザーやグループ）も自動的に転送されます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="抽出プロセス"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="取り込みプロセス"
 
 コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。
 
@@ -49,6 +56,12 @@ ht-degree: 100%
 
 
 ## ガイドラインとベストプラクティス {#best-practices}
+
+>id=&quot;aemcloud_ctt_guidelines&quot;
+>title=&quot;Guidelines and Best Practices&quot;
+>abstract=&quot;Review guidelines and best practices to use the Content Transfer tool including cleanup and Disk space considerations and more.&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Important Considerations for using Content Transfer Tool&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Important Considerations for using User Mapping Tool&quot;
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
