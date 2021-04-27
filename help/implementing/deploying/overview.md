@@ -1,13 +1,13 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
-feature: Deploying
+feature: デプロイ
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 translation-type: tm+mt
-source-git-commit: 9ff68805d4deabaf637cee9ab81ba9b366a8e762
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '3266'
-ht-degree: 96%
+source-wordcount: '3334'
+ht-degree: 94%
 
 ---
 
@@ -163,6 +163,12 @@ repoinit について詳しくは、[Sling のドキュメント](https://sling.
 above appears to be internal, to confirm with Brian -->
 
 ### 可変コンテンツパッケージに対するパッケージマネージャーの「1 回限り」の使用 {#package-manager-oneoffs-for-mutable-content-packages}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_packagemanager"
+>title="Package Manager — 可変コンテンツパッケージの移行"
+>abstract="実稼動環境の問題をデバッグするために、実稼動環境からステージング環境への特定のコンテンツのインポート、AEMクラウド環境への小さなコンテンツパッケージの転送など、コンテンツパッケージを「1つ」としてインストールする使用例を探します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="コンテンツ転送ツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境でパッケージマネージャーを使用できます。
 
