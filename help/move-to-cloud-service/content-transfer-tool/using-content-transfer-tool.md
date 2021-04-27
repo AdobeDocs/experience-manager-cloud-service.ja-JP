@@ -1,18 +1,24 @@
 ---
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
+exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: 23943db6fbdf82a1d1be47e5a8777064b3750a95
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 79%
+source-wordcount: '2685'
+ht-degree: 73%
 
 ---
-
 
 # コンテンツ転送ツールの使用 {#using-content-transfer-tool}
 
 ## コンテンツ転送ツール使用時の重要な考慮事項 {#pre-reqs}
+
+>id=&quot;aemcloud_ctt_prereqs&quot;
+>title=&quot;Important Considerations for using Content Transfer Tool&quot;
+>abstract=&quot;JavaとAEMのバージョン、サポートされているデータストアタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールを使用する際に重要な考慮事項を確認してください。&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices&quot; text=&quot;Best Practices and Guidelines&quot;
+>additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability&quot; text=&quot;Download Content Transfer Tool&quot;
 
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
@@ -49,12 +55,26 @@ ht-degree: 79%
 
 ## 入手方法 {#availability}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_download"
+>title="ダウンロード"
+>abstract="コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="リリースノート"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
+
 コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.translate.html)」を参照してください。
 
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_demo"
+>title="コンテンツ転送ツールの実行"
+>abstract="コンテンツ転送ツールを使用して、コンテンツをCloud ServiceとしてAEMに移行する方法（作成者/公開）を説明します。"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを参照"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル — コンテンツ転送ツールの使用"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
@@ -132,6 +152,13 @@ ht-degree: 79%
 
 ### コンテンツ転送の抽出プロセス {#extraction-process}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction"
+>title="コンテンツ抽出"
+>abstract="抽出とは、ソースAEMインスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。 移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="取り込みプロセス"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="トップアップ抽出"
+
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 
 1. *概要*&#x200B;ページで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。**移行セットの抽出**&#x200B;ダイアログボックスが表示されるので、「**抽出**」をクリックして抽出段階を完了します。
@@ -173,6 +200,13 @@ ht-degree: 79%
 
 ### コンテンツ転送のインジェストプロセス {#ingestion-process}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_ingestion"
+>title="コンテンツの取り込み"
+>abstract="インジェストとは、*ターゲットセット*&#x200B;から移行Cloud Serviceインスタンスにコンテンツを取り込むことです。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="抽出プロセス"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="追加インジェスト"
+
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 
 1. *概要*&#x200B;ページで移行セットを選択し、「**取得**」をクリックして取得を開始します。**移行セットの取得**&#x200B;ダイアログボックスが表示されます。「**取得**」をクリックして、取得段階を完了します。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
@@ -207,6 +241,13 @@ ht-degree: 79%
 
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_logs"
+>title="ログの表示"
+>abstract="取り込みの抽出が完了したら、ログでエラーや警告がないか確認します。 エラーは、報告された問題に対処するか、Adobeサポートに問い合わせて、即座に対処する必要があります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="トラブルシューティング"
+>additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="アドビサポートのご案内"
 
 各手順(抽出と取り込み)が完了したら、ログをチェックし、エラーを探します。  エラーは、報告された問題に対処するか、Adobeサポートに問い合わせて、即座に対処する必要があります。
 
@@ -275,5 +316,3 @@ java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO
 コンテンツ転送ツールのユーザーインターフェイス（UI）に次のような動作が見られることがあります。
 
 * コンテンツ転送ツール UI のアイコンが、このガイドに示すスクリーンショットとは異なって表示される場合や、ソース AEM インスタンスのバージョンによっては表示されない場合があります。
-
-
