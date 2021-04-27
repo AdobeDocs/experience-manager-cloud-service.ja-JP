@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 translation-type: tm+mt
-source-git-commit: 486e60c0287d6693de028b8b5457814e36b32185
+source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 40%
+source-wordcount: '1003'
+ht-degree: 39%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 40%
 >id="aemcloud_onboarding_overview"
 >title="オンボーディングの概要"
 >abstract="新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Serviceに対する成功の準備ができるようにするための出発点として機能します。 Cloud Managerに追加されたユーザーに、割り当てられたロールと関連付けられた権限を与えるには、Adobe IDおよびシステム管理者の支援が必要です。"
+>additional-url="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/SLAExhibit-AEMCloudService-2019DEC12.pdf" text="サービスレベルの展示 —Cloud ServiceとしてのAEM"
 
 AEMをCloud Serviceとしてジャーニーを開始して、ありがとうございます。 新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Serviceに対する成功の準備ができるようにするための出発点として機能します。
 
