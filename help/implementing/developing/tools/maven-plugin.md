@@ -1,14 +1,14 @@
 ---
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
+exl-id: d631d6df-7507-4752-862b-9094af9759a0
 translation-type: tm+mt
-source-git-commit: 2cdbbe9b8f6608cbdd299889be515d421e3d9ad3
+source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 100%
+source-wordcount: '1855'
+ht-degree: 98%
 
 ---
-
 
 # Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
-AEM 6.5 は、オンプレミス実装と AMS 実装の最新の AEM プロジェクトアーキタイプで実装されているパッケージ管理とプロジェクト構造の最新のベストプラクティスに従っています。
+AEMは、最新のAEMプロジェクトアーキタイプによって実装された、パッケージ管理とプロジェクト構造に関する最新のベストプラクティスに従っています。
 
 >[!TIP]
 >
