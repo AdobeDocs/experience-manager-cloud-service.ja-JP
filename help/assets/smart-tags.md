@@ -1,14 +1,15 @@
 ---
-title: AI 生成タグを使用したアセットの自動タグ付け
-description: ' [!DNL Adobe Sensei] サービスを使用して、状況依存や説明的なビジネスタグを適用する人工知能サービスによってアセットにタグ付けします。'
+title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセットの自動タグ付け'
+description: コンテキストおよび説明的なビジネスタグを適用する、人工的にインテリジェントなサービスでアセットにタグ付けします。
 contentOwner: AG
-feature: Smart Tags,Tagging
+feature: スマートタグ，タグ付け
 role: Administrator,Business Practitioner
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 87%
+source-wordcount: '2709'
+ht-degree: 84%
 
 ---
 
@@ -19,21 +20,19 @@ ht-degree: 87%
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
 
-背景には、この機能は、[Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html)の人工的に知的なフレームワークを使用して、タグ構造とビジネスタクソノミに画像認識アルゴリズムをトレーニングしています。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。
+背景には、この機能は、[Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html)の人工的に知的なフレームワークを使用して、タグ構造とビジネスタクソノミに画像認識アルゴリズムをトレーニングしています。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。より古いデプロイメントでは、管理者は[スマートタグ統合の設定](/help/assets/smart-tags-configuration.md#aio-integration)を手動でおこなえます。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-次のタイプのアセットにタグを付けることができます。
-
-* **画像**：多くの形式の画像が、Adobe Sensei のスマートコンテンツサービスを使用してタグ付けされます。[トレーニングモデルを作成](#train-model)し、画像に[スマートタグを適用](#tag-assets)します。
-* **ビデオアセット**：ビデオタグ付けは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ではデフォルトで有効になっています。[新しいビデオをアップロードしたり、既存のビデオを再処理したりすると、ビデオは自動](/help/assets/smart-tags-video-assets.md) タグ付けされます。
-* **テキストベースのアセット**： [!DNL Experience Manager Assets] は、アップロード時に、サポートされているテキストベースのアセットに自動タグ付けをおこないます。[テキストベースのアセット](#smart-tag-text-based-assets)のタグ付けについての詳細を説明します。
-
 ## サポートされているアセットタイプ {#smart-tags-supported-file-formats}
 
-スマートタグは、JPG および PNG 形式のレンディションを生成する、サポートされるファイル形式に適用されます。この機能は、次のタイプのアセットに対してサポートされています。
+次のタイプのアセットにタグを付けることができます。
+
+* **画像**：多くの形式の画像が、Adobe Sensei のスマートコンテンツサービスを使用してタグ付けされます。[トレーニングモデルを作成](#train-model)し、画像に[スマートタグを適用](#tag-assets)します。スマートタグは、JPG および PNG 形式のレンディションを生成する、サポートされるファイル形式に適用されます。
+* **テキストベースのアセット**： [!DNL Experience Manager Assets] は、アップロード時に、サポートされているテキストベースのアセットに自動タグ付けをおこないます。[テキストベースのアセット](#smart-tag-text-based-assets)のタグ付けについての詳細を説明します。
+* **ビデオアセット**：ビデオタグ付けは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] ではデフォルトで有効になっています。[新しいビデオをアップロードしたり、既存のビデオを再処理したりすると、ビデオは自動](/help/assets/smart-tags-video-assets.md) タグ付けされます。
 
 | 画像（MIME タイプ） | テキストベースのアセット（ファイル形式） | ビデオアセット（ファイル形式とコーデック） |
 |----|-----|------|
@@ -58,15 +57,10 @@ ht-degree: 87%
 
 [!DNL Experience Manager] ではデフォルトで、スマートタグがテキストベースのアセットとビデオに自動的に追加されます。画像にスマートタグを自動追加するには、次のタスクを実行します。
 
-* [ [!DNL Adobe Experience Manager] Adobe 開発者コンソールとの統合](#integrate-aem-with-aio)。
 * [タグモデルとガイドラインの理解](#understand-tag-models-guidelines)。
 * [モデルのトレーニング](#train-model)。
 * [デジタルアセットのタグ付け](#tag-assets)。
 * [タグと検索の管理](#manage-smart-tags-and-searches)。
-
->[!TIP]
->
->スマートタグは、[!DNL Adobe Experience Manager Assets] の顧客にのみ適用できます。スマートタグは、[!DNL Experience Manager] のアドオンとして購入できます。
 
 <!-- TBD: Is there a link to buy SCS or initiate a sales call. How are AIO services sold? Provide a CTA here to buy or contacts Sales team. -->
 
@@ -75,14 +69,6 @@ ht-degree: 87%
 サポートされているテキストベースのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動タグ付けされます。これはデフォルトで有効になっています。スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。テキストベースのアセットの場合、スマートタグはテキストに表示されるキーワードですが、アセットを説明するのに最適なキーワードです。サポートされているアセットの場合、[!DNL Experience Manager] は既にテキストを抽出しており、インデックス化してアセットの検索に使用しています。しかし、テキスト内のキーワードに基づくスマートタグは、フル検索インデックスに比べて、アセット検出を改善するために使用される専用の、構造化された、より優先度の高い検索ファセットを提供します。
 
 画像およびビデオの場合、スマートタグは視覚的な観点に基づいて生成されます。
-
-## [!DNL Experience Manager] と Adobe 開発者コンソールの統合 {#integrate-aem-with-aio}
-
->[!IMPORTANT]
->
->新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。より古いデプロイメントでは、管理者は[スマートタグ統合の設定](/help/assets/smart-tags-configuration.md#aio-integration)を手動でおこなえます。
-
-[!DNL Adobe Developer Console] を使用して、[!DNL Adobe Experience Manager] とスマートタグを統合できます。この設定を使用して、[!DNL Experience Manager] 内からスマートタグサービスにアクセスします。スマートタグを設定するタスクについては、[configure [!DNL Experience Manager] to tag assets](smart-tags-configuration.md)を参照してください。 バックエンドでは、スマートタグサービスに要求を転送する前に、[!DNL Experience Manager] サーバーが Adobe 開発者コンソールのゲートウェイでサービスの資格情報を認証します。
 
 ## タグモデルとガイドラインの理解 {#understand-tag-models-guidelines}
 
@@ -155,7 +141,7 @@ ht-degree: 87%
 
 アセットのトレーニングセット内のタグに関するスマートタグサービスのトレーニングが実施されたかどうかを確認するには、レポートコンソールでトレーニングワークフローレポートを調べます。
 
-1. [!DNL Experience Manager] インターフェイスで、[!UICONTROL ツール]／[!UICONTROL アセット]／**[!UICONTROL レポート]**&#x200B;に移動します。
+1. [!DNL Experience Manager]インターフェイスで、**[!UICONTROL ツール]** > **[!UICONTROL アセット]** > **[!UICONTROL レポート]**&#x200B;に移動します。
 1. **[!UICONTROL アセットレポート]**&#x200B;ページで、「**[!UICONTROL 作成]**」をクリックします。
 1. 「**[!UICONTROL スマートタグトレーニング]**」レポートを選択し、ツールバーで「**[!UICONTROL 次へ]**」をクリックします。
 1. レポートのタイトルと説明を指定します。「**[!UICONTROL レポートをスケジュール]**」で、「**[!UICONTROL 今すぐ]**」オプションを選択したままにします。レポートを後で生成するようにスケジュールするには、「**[!UICONTROL 後で]**」を選択し、日時を指定します。次に、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
@@ -165,7 +151,7 @@ ht-degree: 87%
 
 ## アセットのタグ付け {#tag-assets}
 
-スマートタグサービスのトレーニングが完了したら、タグ付けワークフローを実行して、類似するアセットの個々のセットに適切なタグを自動的に適用することができます。タグ付けワークフローは、定期的に適用することも、必要に応じて適用することもできます。タグ付けワークフローは、アセットとフォルダーの両方に対して適用されます。
+スマートタグサービスのトレーニングを終えたら、タグ付けワークフローをトリガーして、異なるアセットにタグを自動的に適用できます。 タグ付けワークフローは、オンデマンドで適用したり、定期的に実行するようにスケジュールしたりできます。 タグ付けワークフローは、アセットとフォルダーの両方に対して適用されます。
 
 ### ワークフローコンソールからのアセットのタグ付け {#tagging-assets-from-the-workflow-console}
 
@@ -224,7 +210,7 @@ ht-degree: 87%
 
 1. アセットの[!UICONTROL プロパティ]ページに移動します。昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
-### スマートタグ付き AEM 検索結果について           {#understandsearch}
+### スマートタグ付き AEM 検索結果について           {#understand-search}
 
 デフォルトでは、検索用語同士を `AND` 句で組み合わせて AEM 検索がおこなわれます。スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用したスマートタグ内の検索用語を検索するための`OR`句が追加されます。 例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
