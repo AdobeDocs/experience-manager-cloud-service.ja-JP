@@ -1,14 +1,14 @@
 ---
 title: ライブコピーの作成と同期
 description: ライブコピーを作成および同期して、サイト全体でコンテンツを再利用する方法を説明します。
-feature: Multi Site Manager
+feature: マルチサイトマネージャー
 role: Administrator
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 translation-type: tm+mt
-source-git-commit: 1ba90d9ccbae70c612e223835fbeb4dfdaf60975
+source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
 workflow-type: tm+mt
-source-wordcount: '4192'
-ht-degree: 40%
+source-wordcount: '4277'
+ht-degree: 39%
 
 ---
 
@@ -42,7 +42,15 @@ ht-degree: 40%
 
 設計図の設定を使用する場合、ソース/設計図のライブコピーを同期する方法を決定するロールアウト設定に関連付けることができます。 [使用するロールアウト設定の指定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)を参照してください。
 
-### ブループリント設定の作成  {#creating-a-blueprint-configuration}
+### Blueprint設定の作成と編集{#creating-editing-blueprint-configurations}
+
+Blueprintの設定は不変データと見なされ、実行時に編集することはできません。 このため、構成の変更はすべて、CI/CDパイプラインを使用してGit経由で展開する必要があります。
+
+詳しくは、「[Adobe Experience Manager(AEM)の主な変更点」を参照してください。](/help/release-notes/aem-cloud-changes.md)
+
+次の手順は、ローカル開発インスタンスの管理者がテストおよび開発の目的でのみ使用できます。 これらのオプションは、AEMaCSクラウドインスタンスでは使用できません。
+
+#### Blueprint構成をローカルに作成する{#creating-a-blueprint-configuration}
 
 ブループリント設定を作成するには：
 
@@ -61,7 +69,7 @@ ht-degree: 40%
 
 1. 「**作成**」を選択すると、指定した内容に基づいてブループリント設定が作成されます。
 
-### ブループリント設定の編集または削除  {#editing-or-deleting-a-blueprint-configuration}
+### ブループリント設定の編集または削除 ローカル{#editing-or-deleting-a-blueprint-configuration}
 
 既存のブループリント設定を編集または削除できます。
 
