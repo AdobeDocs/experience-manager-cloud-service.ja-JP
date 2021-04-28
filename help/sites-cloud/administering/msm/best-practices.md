@@ -1,16 +1,16 @@
 ---
 title: MSM のベストプラクティス
 description: AEM Multi Site Managerを使い始めるのに役立つ、Adobeエンジニアリングチームやコンサルティングチームによってコンパイルされたベストプラクティスを紹介します。
-feature: Multi Site Manager
+feature: マルチサイトマネージャー
 role: Administrator
+exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+source-git-commit: 184de9c1391ade3abbf2c6d73f09a324e6fa7e3e
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1436'
 ht-degree: 32%
 
 ---
-
 
 # MSM のベストプラクティス {#msm-best-practices}
 
@@ -37,6 +37,10 @@ MSM は、コンテンツのデプロイメントを自動化するための設�
 設計図の構成が参照されていない場合、ロールアウトはライブコピーからのみ開始でき、基本的にはソースからコンテンツを取り込みます。
 
 Live Copyを使用して新しいサイトを作成する場合は、フルMSM機能セットを確実に使用できるように、ブループリント設定を作成すると便利です。
+
+>[!NOTE]
+>
+> 「権限」タブのCUGは、Blueprintsからライブコピーにロールアウトできません。 ライブコピーを設定する際には、この点を考慮してください。
 
 ## コンポーネントとコンテナの同期 {#components-and-container-synchronization}
 
