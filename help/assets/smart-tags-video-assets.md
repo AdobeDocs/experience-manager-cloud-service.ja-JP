@@ -1,16 +1,16 @@
 ---
 title: ビデオアセットのスマートタグ
 description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
-feature: Smart Tags,Tagging
+feature: スマートタグ，タグ付け
 role: Administrator,Business Practitioner
+exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1186'
 ht-degree: 99%
 
 ---
-
 
 # ビデオアセットのスマートタグ {#video-smart-tags}
 
@@ -64,7 +64,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 検索結果には、指定したタグに基づいてビデオアセットが表示されます。
 
-検索結果は、メタデータ内の検索されたキーワードを含むビデオアセットと、検索されたキーワードでスマートタグ付けされたビデオアセットを組み合わせたものです。ただし、メタデータフィールド内のすべての検索用語に一致する検索結果が最初に表示され、スマートタグ内の検索用語のいずれかに一致する検索結果はその後に表示されます。詳しくは、「[スマートタグを使用した [!DNL Experience Manager] 検索結果について](smart-tags.md#understandsearch)」を参照してください。
+検索結果は、メタデータ内の検索されたキーワードを含むビデオアセットと、検索されたキーワードでスマートタグ付けされたビデオアセットを組み合わせたものです。ただし、メタデータフィールド内のすべての検索用語に一致する検索結果が最初に表示され、スマートタグ内の検索用語のいずれかに一致する検索結果はその後に表示されます。詳しくは、「[スマートタグを使用した [!DNL Experience Manager] 検索結果について](smart-tags.md#understand-search)」を参照してください。
 
 ## ビデオスマートタグのモデレート {#moderate-video-smart-tags}
 
