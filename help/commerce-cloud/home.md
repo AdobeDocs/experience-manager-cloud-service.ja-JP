@@ -3,16 +3,21 @@ title: AEMコンテンツとコマース
 description: AEMコンテンツとコマースのセルフヘルプリソースとドキュメントのリンク
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 translation-type: tm+mt
-source-git-commit: d1eb326bd704b15616e9e7f09158e77127ac8d28
+source-git-commit: 5eba36477fff65bae40ab14daada027fba5dc5db
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 85%
+source-wordcount: '377'
+ht-degree: 80%
 
 ---
 
 # AEMコンテンツとコマース{#commerce-guide}
 
 このページでは、AEMコンテンツとコマースに関するセルフヘルプリソースをリストします。
+
+>[!NOTE]
+>
+>AEM 6.5および従来のCIFを使用したAEMコンテンツとコマースについては、[AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)を参照してください。
+
 
 ## 主要コンテンツとコマースの記事{#key-articles}
 
