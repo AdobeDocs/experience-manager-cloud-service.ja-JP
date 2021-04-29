@@ -1,14 +1,14 @@
 ---
 title: SPA およびサーバーサイドレンダリング
 description: SPA でサーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
+exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 translation-type: tm+mt
-source-git-commit: fc61f13fbf976c43fcdd6921178a9bd4e82fc68d
+source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 97%
+source-wordcount: '1502'
+ht-degree: 92%
 
 ---
-
 
 # SPA およびサーバーサイドレンダリング {#spa-and-server-side-rendering}
 
@@ -45,7 +45,9 @@ Adobe I/O Runtime について詳しくは、以下を参照してください�
 
 >[!NOTE]
 >
->AEM 環境（オーサー、パブリッシュ、ステージなど）ごとに個別の Adobe I/O Runtime インスタンスを作成することをお勧めします。
+>Adobeでは、環境（ステージ、実行、テストなど）ごとに別々のAdobe I/O Runtimeワークスペースを使用することを推奨します。 これにより、異なる環境にデプロイされた単一アプリケーションの異なるバージョンを持つ、一般的なSDLC(System Development Life Cycle)パターンが可能になります。 詳細は、ドキュメント[CI/CD for Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)を参照してください。
+>
+>インスタンスタイプごとのランタイム実装に違いがない限り、インスタンス（作成者、発行）ごとに個別のワークスペースは必要ありません。
 
 ## リモートレンダラーの設定 {#remote-content-renderer-configuration}
 
