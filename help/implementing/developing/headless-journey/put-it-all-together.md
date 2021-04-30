@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
 translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: e8eb9d2c96d24601e50c48f6846a8c8bac8b0252
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '892'
 ht-degree: 1%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 1%
 
 ## 目的 {#objective}
 
+* AEMのローカル開発ワークフローについて理解する
 * AEM SDKをインストールして、コンテンツのテストに使用できるローカル開発ランタイムを取得します。
-* 必要な開発ツールについて説明します。
-* 本番環境に移行する前に、コードとコンテンツをローカルでテストします。
+* ローカル開発ランタイムの横で作業する必要がある開発ツールについて説明します。
 
 ## ローカル開発ワークフロー{#the-local-development-workflow}
 
