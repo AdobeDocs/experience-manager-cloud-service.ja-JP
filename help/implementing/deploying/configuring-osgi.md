@@ -1,15 +1,15 @@
 ---
 title: Cloud ServiceとしてのAdobe Experience Manager用のOSGiの設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
-feature: Deploying
+feature: デプロイ
+exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 translation-type: tm+mt
-source-git-commit: a91743ba97f9b18c7f67208e7f1dcd873a3bbd65
+source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
-source-wordcount: '2737'
-ht-degree: 59%
+source-wordcount: '2850'
+ht-degree: 56%
 
 ---
-
 
 # Cloud Service{#configuring-osgi-for-aem-as-a-cloud-service}としてのAdobe Experience Manager用のOSGiの設定
 
@@ -117,7 +117,7 @@ OSGi設定値を定義する場合は常に、インライン値を持つ開始�
 
 ### 非シークレットの環境固有の設定値を使用する場合 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-非シークレットの設定値に対しては、開発環境間で値が異なる場合にのみ、環境固有の設定（`$[env:ENV_VAR_NAME]`）を使用してください。これには、地域開発事例や、Cloud Service開発環境としてのAdobe Experience Managerが含まれます。 Cloud Serviceステージまたは実稼動環境として、Adobe Experience Managerに対して秘密でない環境固有の設定を使用しないでください。
+非シークレットの設定値に対しては、開発環境間で値が異なる場合にのみ、環境固有の設定（`$[env:ENV_VAR_NAME]`）を使用してください。これには、ローカル開発インスタンスと、Cloud Service開発環境としてのAdobe Experience Managerが含まれます。 Cloud Serviceステージまたは実稼動環境として、Adobe Experience Managerに対して秘密でない環境固有の設定を使用しないでください。
 
 * ローカル開発インスタンスなど、開発環境間で異なる設定値に対しては、非シークレットの環境固有の設定のみを使用します。
 * 代わりに、ステージングと実稼働の非シークレット値の OSGi 設定では、標準のインライン値を使用します。関連して、実行時にStageおよびProduction環境に対して設定を簡単に変更するために、環境固有の設定を使用することはお勧めしません。これらの変更は、ソースコード管理を通じて導入する必要があります。
@@ -150,7 +150,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 >[!NOTE]
 >
->AEM Webコンソールの設定UIは、`.cfg.json`ファイルをリポジトリに書き込みます。 したがって、AEMプロジェクト定義のOSGi設定が生成された設定と異なる場合に、ローカル開発時に予期しない動作が発生する可能性を回避するために、この点に注意してください。
+>AEM Webコンソールの設定UIは、`.cfg.json`ファイルをリポジトリに書き込みます。 したがって、AEMプロジェクト定義のOSGi設定が生成された設定と異なる場合に、ローカル開発中に予期しない動作が発生する可能性を回避するために、この点に注意してください。
 
 1. AEM SDK Quickstart Jar の AEM Web コンソールに管理者ユーザーとしてログインします。
 1. OSGi／設定に移動します。
@@ -219,6 +219,10 @@ use $[secret:SECRET_VAR_NAME]
 
 変数の値は2048文字以下にする必要があります。
 
+>[!NOTE]
+>
+>`INTERNAL_`のプリフィックスが付いた変数名は、Adobeで予約されています。 このプレフィックスを持つ開始のある顧客セット変数は無視されます。
+
 ### デフォルト値 {#default-values}
 
 環境固有の設定値とシークレットの設定値の両方に次のことが適用されます。
@@ -252,7 +256,10 @@ export ENV_VAR_NAME=my_value
 OSGi プロパティで、作成者とパブリッシュで異なる値が必要な場合：
 
 * `config.author`と`config.publish`のOSGiフォルダーは別々に使用する必要があります。詳しくは、[Runmode Resolutionセクション](#runmode-resolution)を参照してください。
-* 独立した変数名を使用する必要があります。 変数名が同じである場合は、`author_<variablename>` および `publish_<variablename>` などのプレフィックスを使用することをお勧めします。
+* 独立変数名を作成する場合は、次の2つの方法があります。
+   * 最初のオプションを選択します。この方法をお勧めします。異なる値を定義するために宣言されたすべてのOSGIフォルダ（`config.author`や`config.publish`など）で、同じ変数名を使用します。 例：
+      `$[env:ENV_VAR_NAME;default=<value>]`の場合、デフォルト値はその層のデフォルト値（authorまたはpublish）に対応します。[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)経由またはクライアント経由で環境変数を設定する場合、この[APIリファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して階層を区別します。 「service」パラメータは、変数の値を適切なOSGI層にバインドします。
+   * 2つ目のオプションは、`author_<samevariablename>`や`publish_<samevariablename>`などのプレフィックスを使用して異なる変数を宣言します。
 
 ### 設定例 {#configuration-examples}
 
