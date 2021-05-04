@@ -3,10 +3,10 @@ title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
 translation-type: tm+mt
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 84%
+source-wordcount: '803'
+ht-degree: 85%
 
 ---
 
@@ -57,11 +57,12 @@ ht-degree: 84%
 
 ## ガイドラインとベストプラクティス {#best-practices}
 
->id=&quot;aemcloud_ctt_guidelines&quot;
->title=&quot;Guidelines and Best Practices&quot;
->abstract=&quot;Review guidelines and best practices to use the Content Transfer tool including cleanup and Disk space considerations and more.&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs&quot; text=&quot;Important Considerations for using Content Transfer Tool&quot;
->additional-url=&quot;https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations&quot; text=&quot;Important Considerations for using User Mapping Tool&quot;
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_guidelines"
+>title="ガイドラインとベストプラクティス"
+>abstract="リビジョンのクリーンアップタスク、ディスク容量の考慮事項など、コンテンツ転送ツールの使用に関するガイドラインとベストプラクティスを確認します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="コンテンツ転送ツールを使用する際の重要な考慮事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="ユーザーマッピングツールを使用する際の重要な考慮事項"
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
