@@ -3,23 +3,16 @@ title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: ca03de9095a5b85bd93edba93097356fbcd2e9c8
+source-git-commit: faf48392bd842d2706b9a07b92e9a3e60eefcdc7
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 73%
+source-wordcount: '2616'
+ht-degree: 75%
 
 ---
 
 # コンテンツ転送ツールの使用 {#using-content-transfer-tool}
 
 ## コンテンツ転送ツール使用時の重要な考慮事項 {#pre-reqs}
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_prereqs"
->title="コンテンツ転送ツールを使用する際の重要な考慮事項"
->abstract="JavaおよびAEMのバージョン、サポートされているデータストアタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールを使用する際の重要な考慮事項を確認します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="ベストプラクティスとガイドライン"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="コンテンツ転送ツールのダウンロード"
 
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
