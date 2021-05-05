@@ -4,14 +4,14 @@ description: AEMヘッドレス開発者ジャーニーのこの部分では、R
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '327'
 ht-degree: 3%
 
 ---
-
 
 # AEM AssetsAPIを使用したコンテンツの更新方法{#update-your-content}
 
@@ -23,12 +23,13 @@ ht-degree: 3%
 
 ## {#story-so-far}
 
-以前のドキュメントのAEM headlessジャーニーでは、[AEM配信APIを介したコンテンツへのアクセス方法](access-your-content.md)で、AEMのheadlessコンテンツへのアクセス方法を学びましたが、次の操作を行う必要があります。
+以前のドキュメントのAEM headlessジャーニーでは、[AEM配信APIを介したコンテンツへのアクセス方法](access-your-content.md)で、AEM GraphQL APIを介したAEMのheadlessコンテンツへのアクセス方法を学び、次の点に注意してください。
 
-* GraphQLとは何かとAEM GraphQL APIの仕組みを理解します。
+* GraphQLについて高レベルの理解を得る。
+* AEM GraphQL APIの仕組みを理解します。
 * 実際的なサンプルクエリをいくつか理解します。
 
-この記事は、これらの基本事項に基づいて構築されているので、APIを使用してAEMの既存のヘッドレスコンテンツを更新する方法を理解している必要があります。
+この記事は、これらの基本事項に基づいて構築されているので、REST APIを使用してAEMの既存のヘッドレスコンテンツを更新する方法を理解しています。
 
 ## 目的 {#objective}
 
@@ -44,7 +45,7 @@ ht-degree: 3%
 AEMヘッドレス開発者ジャーニーのこの部分が完了したら、次の作業を行う必要があります。
 
 * AEM AssetsHTTP APIについて説明します。
-* APIでのコンテンツフラグメントのサポート方法を理解します。
+* このAPIでコンテンツフラグメントがどのようにサポートされているかを理解します。
 * サンプルコードの経験があり、APIの実際の動作を理解している。
 
 AEMのヘッドレスジャーニーは、次にドキュメント[How to Put It All Togeter - Your App and Your Content in AEM Headless](put-it-all-together.md)を確認し、AEMヘッドレスプロジェクトの取り組みと運用準備を進めて行く必要があります。
