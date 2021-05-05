@@ -4,14 +4,14 @@ description: AEMヘッドレス開発者ジャーニーのこの部分では、�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 3d5ea8df4cefdb8c2bebe26333002a4680fa9fd4
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 4%
 
 ---
-
 
 # コンテンツのモデリング方法{#model-your-content}
 
@@ -51,7 +51,7 @@ ht-degree: 4%
 
 ## データモデリング{#data-modeling}
 
-*大きな悪い世界です*。
+*大きくて悪い世界です*。
 
 おそらくそうではないかもしれませんが、確かに大きな&#x200B;***複雑な***&#x200B;世界です。データモデリングを使って、ある目的に必要な特定の情報を使って、非常に（非常に）小さなサブセクションの簡略表現を定義します。
 
@@ -241,10 +241,10 @@ tbc...
 
 ## その他のリソース {#additional-resources}
 
-* [AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)  — はじめに — データモデリングやGraphQLなどのAEM headless機能の使い方の概要を説明する短いビデオチュートリアルシリーズ
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)  — コンテンツフラグメントのリードインページ
    * [設定ブラウザーのコンテンツフラグメント](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 設定ブラウザーのコンテンツフラグメント機能を有効にする
    * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)  — コンテンツフラグメントモデルの作成と編集
    * [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)  — コンテンツフラグメントの作成とオーサリング、このページでは、他の詳細なセクションを紹介します。
 * [AEM GraphQLスキーマ](/help/implementing/developing/headless-journey/access-your-content.md) - GraphQLがモデルを実現する方法
 * [サンプルコンテンツフラグメント構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)  — はじめに — データモデリングやGraphQLなど、AEM headless機能の使い方の概要を説明する短いビデオチュートリアルシリーズ
