@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: affe1f0be3f3448e15787cdd831474e0a9d5de6b
+source-git-commit: 9743b5a80a8554e375561093e8554455b3a6b8f5
 workflow-type: tm+mt
 source-wordcount: '1588'
 ht-degree: 12%
@@ -80,7 +80,7 @@ AEM Formsは、多くの組織が長年にわたって素晴らしいオンボ�
 * CIF コアコンポーネント v1.9.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)を参照してください。
 
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager {#c-manager}
 
 この節では、AEMのCloud ManagerのリリースノートをCloud Service2021.4.0および2021.3.0として概要を説明します。
 
@@ -164,7 +164,7 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 * お客様のビルドで無効なパッケージが生成された場合、ビルド手順が不必要に再開されました。
 
-* 場合によっては、IP許可リストの横に緑色の「アクティブ」ステータスが表示される場合があります。このステータスは、その設定が展開されていない場合でも表示されます。
+* 場合によっては、IP許可リストの横に緑色の「アクティブ」ステータスが表示される場合があります。このステータスが表示されない場合もあります。
 
 * 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
 
@@ -184,7 +184,7 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 ### コンテンツ転送ツールの新機能{#what-is-new-ctt-march}
 
-* CTTは、`/libs`の代わりに`/apps`にインストールされるようになりました。特定のページへのブラウザーのブックマークが無効になる場合があります。
+* CTTは、`/libs`の代わりに`/apps`にインストールされるようになりました。特定のページへのブラウザーのブックマークが無効になる可能性があります。
 * CTTがインストールされている場合、ユーザーはコンテンツ転送ページに移動するために別のレベルに移動する必要があります。 詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)を参照してください。
 
 ### バグ修正 {#bug-fixes-ctt-march}
