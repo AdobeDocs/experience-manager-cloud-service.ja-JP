@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 31%
+source-wordcount: '2120'
+ht-degree: 32%
 
 ---
 
@@ -146,24 +146,6 @@ AEM GraphQL APIの使用例は、Cloud Service環境としてのAEMのタイプ�
 ### JSON プレビュー {#json-preview}
 
 コンテンツフラグメントモデルの設計と開発に役立つように、コンテンツフラグメントエディターでJSON出力をプレビューできます。
-
-### コンテンツフラグメントモデルとコンテンツフラグメントの作成{#creating-content-fragment-models-and-content-fragments}
-
-最初に、サイトでコンテンツフラグメントモデルが有効になるように設定するには、設定ブラウザーで行います。
-
-![設定の定義](assets/cfm-configuration.png)
-
-次に、コンテンツフラグメントモデルをモデル化します。
-
-![コンテンツフラグメントモデル](assets/cfm-model.png)
-
-適切なモデルを選択すると、コンテンツフラグメントが開き、コンテンツフラグメントエディターで編集できます。
-
-![コンテンツフラグメントエディター](assets/cfm-editor.png)
-
->[!NOTE]
->
->「コンテンツフラグメントの操作」を参照してください。
 
 ## コンテンツフラグメントからのGraphQLスキーマ生成{#graphql-schema-generation-content-fragments}
 
