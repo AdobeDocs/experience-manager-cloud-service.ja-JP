@@ -3,12 +3,13 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 9a2b52a873e4e0662da252bba2af6ac2a46cd08e
+source-git-commit: 6e21c6ffe50d6c030873650e7dd26246dea76b59
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 12%
+source-wordcount: '1473'
+ht-degree: 6%
 
 ---
+
 
 # Cloud Service{#release-notes}としての[!DNL Adobe Experience Manager]の最新のリリースノート
 
@@ -23,66 +24,125 @@ ht-degree: 12%
 
 ## リリース日 {#release-date}
 
-Cloud Service2021.3.0の[!DNL Adobe Experience Manager]のリリース日は2021年3月25日です。
-次のリリース(2021.4.0)は、2021年4月29日にリリースされます。
+Cloud Service2021.4.0の[!DNL Adobe Experience Manager]のリリース日は2021年5月6日です。
+次のリリース(2021.5.0)は、2021年5月27日に予定されています。
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## AEM as a Cloud Service の基盤{#aem-as-a-cloud-service-foundation}
 
-* 簡単な設定で、[プログレッシブ Web アプリ（PWA）版のサイト](/help/sites-cloud/authoring/features/enable-pwa.md)がプロジェクトレベルで有効化できるようになりました。
-* コンテンツフラグメントモデルの拡張機能 — 複数行テキストデータ型を複数フィールドリストとして定義できるようになりました。
-* コンテンツフラグメントエディターのUX拡張 — ネストされた子フラグメントがパンくずリストに表示されるようになりました。また、公開、保存、保存および保存と終了のアクションの表示が向上しました。
+### 新機能 {#what-is-new-foundation}
 
-## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+* [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)  — 新しいワークフローモデルと手順により、コンテンツの詳細な階層を公開する際のパフォーマンスが向上しました。
+
+## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### [!DNL Sites] の新機能 {#what-is-new-sites}
+
+* GraphQLエンドポイント — 新しいGraphQL Console UIを使用して、個々のAEM Sites設定に対してAEM GraphQL APIを有効にし、それらの設定に対してカスタムのGraphQLエンドポイントを作成できるようになりました。 また、UIを使用してGraphQLエンドポイントを管理することもできます。
+
+* コンテンツモデル、Date&amp;Timeデータ型の強化 — Date&amp;Timeデータ型を設定して、日付、時間、または日時の情報のみをオーサリングできるようになりました。
+
+* コンテンツモデルの強化されたタグデータ型 — タグデータ型を設定して、単一または複数のタグを作成できるようになりました。
+
+* コンテンツモデル、新しいタブプレースホルダーデータ型 — 新しいタブプレースホルダーデータ型を使用すると、データ型を、コンテンツフラグメントエディターのタブの下にレンダリングされるセクションにグループ化できます。
+
+### [!DNL Sites] {#bug-fixes-sites}のバグ修正
+
+* コンテンツフラグメント — コンテンツフラグメントまたはフォルダーを移動すると、フラグメント内のネストされた参照が更新されるようになりました。(CQ-4320815)
+
+* GraphQL — 持続的なクエリで、AEM Sites設定に固有のユーザー定義エンドポイントがサポートされるようになりました。(CQ-4315928)
+
+## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
-<!-- TBD: refine this list of features and enh. for Feb release.
+* [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能強化により、ダウンロードを高速化できます。
 
-Customers using the Connected Assets feature can now easily view and track assets used on remote Sites instances. This affords customers a complete view of being used across all Sites powered pages, allowing for better tracking, management, and brand consistency.  
+* リンク共有オプションを使用してアセットをダウンロードする場合、レンディションをダウンロードするか、ダウンロードしないかを選択できるようになりました。 以前は、すべてのアセットレンディションがダウンロードされていました。
 
-Indicators for expired, approved, and rejected statuses now available for assets in Column view.
+* 管理者は、バルクアセットの取り込みを実行した後にアセットのソースを削除するように[!DNL Experience Manager]を設定できます。 [バルクアセットの取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
 
-Ability to select a root path. select if a minimum number of tags is required. 
+* ヘルスチェックを実行してアセットを一括読み込む際に、Experience Managerがエラーの詳細な理由を示すようになりました。 [バルクアセットの取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
 
-Add a Boolean or radio widget type to metadata schema setup. -->
+* 一括読み込みツールを使用してアセットを読み込む場合、読み込みが成功した後に、管理者がソースファイルを削除するオプションを持つようになりました。 [バルクアセットの取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
 
-* [!DNL Experience Manager] は、接続されたアセット機能を拡張して、サポートされるコアコンポーネントでの [!DNL Dynamic Media] 画像の使用をサポートします。[接続されたアセットの使用](/help/assets/use-assets-across-connected-assets-instances.md)を参照してください。
-* Experience Manager管理者は、バルクアセットのインジェクションを特定の日時にスケジュールできます。 また、管理者は、日時に基づいて定期的なインジメンションをスケジュールすることもできます。 [バルクアセットの取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
+* メタデータスキーマを編集する際に、新しいルートパスセレクターフィールドを使用すると、すばやく簡単に選択できるので、設定時間を短縮できます。
+
+* 多くのアセットのメタデータは、CSVファイルを使用して一括で読み込むことができ、CSVファイルに書き出すことができます。 デフォルトの日付形式は、現在は`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`です。 列見出しを更新することで、別の形式を使用できます。 例えば、CSVファイルの列ヘッダーに`Date`という語ではなく`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`を追加します。
+
+* 列表示でアセットを参照する場合、各アセットの承認済みまたは拒否済みのステータスが視覚的なインジケーターに表示されます。
+
+* 列表示でアセットを参照するとき、期限切れのアセットに関する視覚的なインジケーターが表示されます。
 
 ### [!DNL Assets] {#bug-fixes-assets}のバグ修正
 
-* 権限が付与された複数のアセットをダウンロードしようとすると、著作権ページが表示されない。 (CQ-4314403)
-* INDDファイルの編集を選択した場合、解像度が予期せず変更される。 (CQ-4317376)
-* PDFレンダリングには、InDesignテンプレートの最後のページのみが含まれます。 (CQ-4317305)
-* ピッカーが複雑なメタデータスキーマの一部である場合、タグピッカーが開くのに時間がかかります。 (CQ-4316426)
-* 既存のファイル名と同じファイル名のアセットをアップロードする場合、名前の競合ダイアログが表示されず、バージョンの作成を促すメッセージが表示されません。 (CQ-4315424)
-* フォルダーのメタデータプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。 選択内容がリポジトリに保存されている間は、フォルダーメタデータプロパティを再度開いても表示されません。 (CQ-4314429)
-* スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。 (CQ-4318381)
+* 複数のアセットまたはフォルダーを移動しようとすると、コンソールにエラーが記録され、移動操作が完了しません。 タイトルを更新できない場合、移動操作は失敗します。 (CQ-4322080)
+
+* メタデータフィールドは、定義済みの条件を満たした場合に必須でないようなルールに基づいて非表示にできます。 ただし、このような非表示のメタデータフィールドは、必須フィールドとして表示されます。 (CQ-4321285)
+
+* 日付形式が正しくないため、バルクメタデータの読み込みに失敗しました。 (CQ-4319014)
+
+* プロパティページでメタデータを更新するように選択した場合、スキーマが提供する多くのオプションがあると、インターフェイスの応答が遅くなります。 (CQ-4318538)
+
+* 1行のテキストフィールドにあるメタデータ値を更新および保存すると、ドロップダウンメニューで編集が無効になっている場合でも、ドロップダウンメニューの値は削除されます。 (CQ-4317077)
+
+* 注釈として省略記号を使用して、アセットを確認できます。 小さな楕円を使用すると、楕円は印刷版の注釈の数と重なります。 (CQ-4316792)
 
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
-AEM Formsは、多くの組織が長年にわたって素晴らしいオンボーディングや入学経験を提供するのを助けてきた。 これらのエクスペリエンスは、組織がリードを販売に転換したり、取り込んだ顧客データを処理したり、オーディエンスプロファイルに基づいてレスポンシブなエクスペリエンスを提供するのに役立っています。 現在、AEM Formsはクラウドサービスとして利用できます。
+### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-[AEM FormsをCloud Service](https://experienceleague.corp.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)として使用して、デジタルフォームの作成、既存のデータソースへのフォームの接続、Adobe Signとのフォームの統合、フォームへの電子署名の追加、レコードのドキュメント(DoR)の生成を行い、送信済みのフォームをPDFファイルとしてアーカイブできます。 また、このサービスでは、既存のPDF formsをデジタルフォームに変換することもできます。 標準的なAEM Formsの機能に加えて、自動拡張、アップグレードのダウンタイムゼロ、クラウドネイティブの開発環境など、クラウドネイティブの機能をいくつかオファーしています。 [このブログ記事](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)を読み、Cloud ServiceとしてのAEM Formsの能力や特徴を知る。
+* **Adobe Sign対応アダプティブFormsで政府IDのID認証方法を使用**
 
-デモを見るか、サービスに新規登録するには、Adobeの担当者にお問い合わせください。
+   高度な機械学習アルゴリズムを活用したAdobe Signの政府機関IDプロセスは、世界中の会社に、受信者のIDに関する高品質な認証を保護する機能を提供します。 現在は、Adobe Signが有効にしたアダプティブFormsで、政府IDのID認証方法を使用できます。
+
+   政府IDは、受信者に対して、政府発行のIDドキュメント（運転免許証、国民ID、パスポート）](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)の画像をアップロードするよう指示し、そのドキュメントを評価して、認証済みのIDを確認するプレミアムID認証方式です。[
+
+* **非同期アダプティブフォーム送信でのフォーム内署名エクスペリエンスの使用のサポート**
+
+   非同期のアダプティブフォーム送信で、フォーム内の署名エクスペリエンスを使用できるようになりました。 アダプティブフォームを[!DNL Experience Manager Sites]ページに埋め込み、アダプティブフォーム送信でフォーム内署名の使用を行うこともできます。
+
+* **「タスクの割り当て」手順でアダプティブフォームを事前入力する際に、変数を使用して添付ファイルを指定するためのサポート**
+
+   アダプティブフォームを「タスクの割り当て」手順用に事前入力する際に、ドキュメントタイプ変数を使用してアダプティブフォームの入力添付ファイルを選択できるようになりました。
+
+* **リテラルオプションを使用してJSON型の変数の値を設定できるようになりました。**
+
+   AEMワークフローの設定変数の手順で、リテラルオプションを使用してJSON型の変数の値を設定できます。 リテラルオプションを使用すると、文字列の形式でJSONを指定できます。
+
+* **ローカル開発環境を使用したレコードのドキュメントの作成(DoR)**
+
+   XDPをCloud Serviceインスタンスのレコードテンプレートのドキュメントとして使用し、AEM FormsをCloud ServiceSDK(ローカル開発環境)として使用できます。 以前は、サポートがCloud Serviceインスタンスにのみ制限されていました。
+
+### [!DNL Forms] {#bug-fixes-forms}のバグ修正
+
+* レコードのドキュメントを生成しないように設定されたアダプティブフォームが、レコードのドキュメントを生成するように設定されたAEMワークフローに送信された場合、エラーメッセージは表示されず、タスクは送信に失敗します。
+
+### その他の更新{#misc-2021-04-0-forms}
+
+* コンテンツの認識を容易にするために、XDP、ダイナミックPDF、スキーマファイル用のライブサムネールがサービスで生成されるようになりました。
+* PDFファイルを追加AEM FormsUIのフォルダに移動する機能。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* Magento2.4.2のサポート
+* カテゴリUIDのサポート —カテゴリIDに文字列を使用するシステムのサードパーティコマース統合をロック解除します。
 
-* 任意のコンテンツページで、製品詳細コンポーネントを使用および設定できるようになりました。
+* AEMPWA Studio用の拡張機能（内） 例えば、統合
 
-* 最新の CIF コアコンポーネント v1.9.0 を含んだ CIF Venia 参照サイト 2021.03.25 をリリースしました。詳しくは、[CIF Venia 参照サイト](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25)を参照してください。
+* WCMナビゲーションコアコンポーネントを拡張する新しいCIFナビゲーションコアコンポーネント
 
-* CIF コアコンポーネント v1.9.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0)を参照してください。
+* AEMストアフロントのステージ済みカタログデータの視覚的なインジケーター
 
+* Cloud Manager UIを使用してコマースエンドポイントを設定できるようになりました。
+
+### バグ修正 {#bug-fixes-commerce}
+
+* カテゴリページのページプロパティの「コマース」タブに、ルートカテゴリフィールドが表示されませんでした。
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEMのCloud ManagerのリリースノートをCloud Service2021.4.0および2021.3.0として概要を説明します。
+この節では、AEMのCloud ManagerのリリースノートをCloud Service2021.4.0として概要を説明します。
 
 ### リリース日 {#release-date-cm-april}
 
@@ -121,76 +181,6 @@ AEMのCloud ManagerのCloud Service2021.4.0のリリース日は2021年4月8日�
 
 * `Runmode`チェックは、非フォルダーノードで偽陽性を生み出していました。
 
-
-### リリース日 {#release-date-cm-march}
-
-AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日です。
-
-### 新機能 {#what-is-new-march}
-
-* [IP許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)の既存のカスタムドメイン名を設定している環境のお客様は、既存の設定に関するメッセージを表示し、UIを使用して自己提供できます。
-
-* 必要な権限を持つユーザーは、プログラムを編集でき、セルフサービスの方法で次の操作を行うことができます。
-
-   * ア追加セットを持つ既存のプログラムに対するサイトソリューション、またはアセットを持つ既存のに対するサイトソリューション。
-   * サイトとアセットの両方を含む既存のプログラムからサイトまたはアセットを削除します。
-   * 2つ目追加は、使用されていないソリューションのエンタイトルメントを既存のプログラムに対して、または新しいプログラムとして使用することです。
-
-* **パイプライン実行画面とアクティビティ** 画面の両方にAEM Push  *Updatelabelが表示されるようにな*  ** りました。
-
-* 環境が休止状態になっているが、AEMの更新も使用可能な場合、**Hibernated**&#x200B;ステータスは&#x200B;**Update available**&#x200B;よりも優先されます。
-
-* 統合シェルのユーザープロファイルアイコン（右上）に移動した後、「表示Cloud Managerロール」オプションを選択すると、Cloud Managerロールを表示できるようになりました。
-
-* ラベル&#x200B;**承認申請**&#x200B;が&#x200B;**実稼動承認**&#x200B;にラベル変更され、より明確になりました。
-
-* **バージョン**&#x200B;ラベルが、実稼動パイプライン実行画面の&#x200B;**Gitタグ**&#x200B;に再ラベル付けされました。
-
-* 重要な指標が定義されたしきい値を満たさない場合の動作を定義するラベルは、その真の動作を反映するために再ラベル付けされています。**すぐにキャンセル**&#x200B;と&#x200B;**すぐに承認**。
-
-* AEMCloud ServiceSDKのバージョン`2021.3.4997.20210303T022849Z-210225`に基づいて、クラスとメソッドの非推奨リストが更新されました。
-
-* Cloud Manager実稼動パイプラインに、[カスタムUIテスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)機能が追加されました。
-
-### バグ修正 {#bug-fixes-cm-march}
-
-* AEMのプッシュアップグレード中に、パッケージのバージョン管理がスキップされる場合がありました。
-
-* 他のパッケージにパッケージが埋め込まれた場合に、品質の問題が正しく検出されない場合がありました。
-
-* 不明確な状況では、プログラムダイアログを開いたときに生成される追加デフォルトのプログラム名は、既存のプログラム名の重複の場合があります。
-
-* 場合によっては、パイプラインの開始直後にパイプラインの実行ページから移動すると、実際に実行が開始したにもかかわらず、アクションが失敗したことを示すエラーメッセージが表示されます。
-
-* お客様のビルドで無効なパッケージが生成された場合、ビルド手順が不必要に再開されました。
-
-* 場合によっては、IP許可リストの横に緑色の「アクティブ」ステータスが表示される場合があります。このステータスが表示されない場合もあります。
-
-* 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
-
-## コンテンツ転送ツール {#content-transfer-tool}
-
-### リリース日 {#release-date-ctt}
-
-コンテンツ転送ツールv1.3.4のリリース日は2021年3月20日です。
-
-### バグ修正 {#bug-fixes-ctt}
-
-* CTTが、同じ名前で名前にハイフンが含まれるフォルダーからコンテンツをスキップしていました。 この問題が修正されました。
-
-### リリース日 {#release-date-ctt-march}
-
-コンテンツ転送ツールv1.3.0のリリース日は2021年3月4日です。
-
-### コンテンツ転送ツールの新機能{#what-is-new-ctt-march}
-
-* CTTは、`/libs`の代わりに`/apps`にインストールされるようになりました。特定のページへのブラウザーのブックマークが無効になる可能性があります。
-* CTTがインストールされている場合、ユーザーはコンテンツ転送ページに移動するために別のレベルに移動する必要があります。 詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)を参照してください。
-
-### バグ修正 {#bug-fixes-ctt-march}
-
-* 特定のパスからコンテンツを移行する際に、CTTは関連のないリソースを取り込んでいました。 修正済み
-
 ## ベストプラクティスアナライザー {#best-practices-analyzer}
 
 ### リリース日 {#release-date-bpa}
@@ -202,18 +192,3 @@ Best Practices Analyzer v2.1.12のリリース日は2021年4月12日です。
 * BPAレポートで重複行が見つかりました。 この問題が修正されました。
 * AEMバージョン6.4.2のBPA UIで、「レポートの生成」ボタンを無効にしていたJSエラーが発生していました。 修正済み
 
-
-## コードリファクタリングツール {#code-refactoring-tools}
-
-### コードリファクタリングツールの新機能{#what-is-new-crt}
-
-* Repository Modernizerの新機能および機能強化。 [GitHubリソースを参照：Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
-   * OSGi設定（RepoInit設定を除く）を推奨の.cfg.json形式に正規化します。
-   * OSGi configフォルダの名前を指定した形式に変更します。
-   * ui.apps.structureプロジェクトを生成します。
-   * 分析モジュールを作成します。
-
-* Dispatcher Converterの新機能および機能強化です。 [GitHubリソースを参照：ディスパッチャーコンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)
-   * コンテンツのライニングの代わりに、異なる挿入用に別々のファイルを作成する。
-   * vhostsのフォルダーパスとvhostファイルへのパスの両方を処理できます。
-   * 600件以上の範囲の大規模な顧客構成を持つファーム・ファイルの生成
