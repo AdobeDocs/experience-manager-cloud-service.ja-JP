@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 feature: リリース情報
 translation-type: tm+mt
-source-git-commit: 8428c46295020c40d62311a86e1691b08fd8a00d
+source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '386'
+ht-degree: 17%
 
 ---
 
@@ -35,11 +35,11 @@ AEMのCloud ManagerのCloud Service2021.5.0のリリース日は2021年5月6日�
 
 * コマースアドオンは、編集プログラムワークフロー中にSandboxプログラムに適用できるようになりました。
 
-* プログラムの編集エクスペリエンスが更新されました。
+* *編集プログラム*&#x200B;のエクスペリエンスが更新されました。
 
 * 環境の詳細ページの「ドメイン名」テーブルには、最大250個のドメイン名がページ番号を使用して表示されます。
 
-* プログラムおよびプログラムの編集ワークフローの「追加ソリューション」タブに、プログラムで使用できるソリューションが1つだけであっても、ソリューションが表示されます。
+* **追加プログラム**&#x200B;と&#x200B;**プログラム**&#x200B;の追加編集ワークフローの&#x200B;**ソリューション&amp;オン**&#x200B;タブは、プログラムで使用できるソリューションが1つだけであっても、ソリューションを表示します。
 
 * ビルドでデプロイ済みのコンテンツパッケージが生成されなかった場合のビルド手順ログのエラーメッセージが不明確でした。
 
