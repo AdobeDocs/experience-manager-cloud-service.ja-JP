@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: 861ef15a0060d51fd32e2d056871d1679f77a21e
+source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 36%
+source-wordcount: '2181'
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 36%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニーのこの部分では、](overview.md)GraphQLクエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を学ぶことができます。
+[AEMヘッドレス開発者ジャーニーのこの部分では、](overview.md)GraphQLクエリを使用してコンテンツフラグメントのコンテンツにアクセスし、アプリに送る方法(ヘッドレス配信)を学習できます。
 
 ## {#story-so-far}
 
@@ -135,9 +135,7 @@ AEM GraphQL APIの使用例は、Cloud Service環境としてのAEMのタイプ�
 
 **フラグメント参照**&#x200B;は、
 
-* GraphQL との関連で特に興味深いものです。
-
-* コンテンツフラグメントモデルの定義時に使用できる特定のデータタイプです。
+* は、コンテンツフラグメントモデルの定義時に使用できる特定のデータ型です。
 
 * 特定のコンテンツフラグメントモデルに依存する別のフラグメントを参照します。
 
@@ -148,6 +146,24 @@ AEM GraphQL APIの使用例は、Cloud Service環境としてのAEMのタイプ�
 ### JSON プレビュー {#json-preview}
 
 コンテンツフラグメントモデルの設計と開発に役立つように、コンテンツフラグメントエディターでJSON出力をプレビューできます。
+
+### コンテンツフラグメントモデルとコンテンツフラグメントの作成{#creating-content-fragment-models-and-content-fragments}
+
+最初に、サイトでコンテンツフラグメントモデルが有効になるように設定するには、設定ブラウザーで行います。
+
+![設定の定義](assets/cfm-configuration.png)
+
+次に、コンテンツフラグメントモデルをモデル化します。
+
+![コンテンツフラグメントモデル](assets/cfm-model.png)
+
+適切なモデルを選択すると、コンテンツフラグメントが開き、コンテンツフラグメントエディターで編集できます。
+
+![コンテンツフラグメントエディター](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>「コンテンツフラグメントの操作」を参照してください。
 
 ## コンテンツフラグメントからのGraphQLスキーマ生成{#graphql-schema-generation-content-fragments}
 
@@ -239,7 +255,96 @@ Assets へのアクセスに必要な権限です。
 
 ![GraphiQL インターフェイス](assets/graphiql-interface.png "GraphiQL インターフェイス")
 
-## AEM GraphQL APIの使用{#using-aem-graphiql}
+## AEM GraphQL APIの実際の使用{#actually-using-aem-graphiql}
+
+AEM GraphQL APIをクエリで実際に使用するには、次の2つの非常に基本的なコンテンツフラグメントモデル構造を使用します。
+
+* 会社情報
+   * 名前
+   * CEO（担当者）
+   * 従業員（個人）
+* Person
+   * name
+   * firstName
+
+「CEO」フィールドと「従業員」フィールドは、「個人」フラグメントを参照します。
+
+フラグメントモデルが使用されます。
+
+* コンテンツフラグメントエディターでコンテンツを作成する場合
+* クエリするGraphQLスキーマを生成するには
+
+クエリは、GraphiciQLインターフェイスで入力できます。例えば、次のURLで入力できます。
+
+* `http://localhost:4502/content/graphiql.html `
+
+単刀直入なクエリは、会社スキーマ内のすべてのエントリの名前を返すことです。 ここでは、すべての会社名のリストをリクエストします。
+
+```xml
+query {
+  companyList {
+    items {
+      name
+    }
+  }
+}
+```
+
+もう少し複雑なクエリは、「ジョブ」という名前を持たないすべての人を選ぶことです。 これにより、ジョブという名前を持たないすべての人がフィルターされます。 これは、EQUALS_NOT演算子を使用して達成できます（その他多数あります）。
+
+```xml
+query {
+  personList(filter: {
+    name: {
+      _expressions: [
+        {
+          value: "Jobs"
+          _operator: EQUALS_NOT
+        }
+      ]
+    }
+  }) {
+    items {
+      name
+      firstName
+    }
+  }
+}
+```
+
+また、より複雑なクエリを作成することもできます。 例えば、「Smith」という名前の従業員が少なくとも1人いるすべての会社に対するクエリです。 次のクエリは、「Smith」という名前の任意の人のフィルター処理を示し、ネストされたフラグメント全体から情報を返します。
+
+```xml
+query {
+  companyList(filter: {
+    employees: {
+      _match: {
+        name: {
+          _expressions: [
+            {
+              value: "Smith"
+            }
+          ]
+        }
+      }
+    }
+  }) {
+    items {
+      name
+      ceo {
+        name
+        firstName
+      }
+      employees {
+        name
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- need code / curl / cli examples-->
 
 AEM GraphQL APIを使用し、必要な要素を設定する方法の詳細については、次を参照してください。
 
