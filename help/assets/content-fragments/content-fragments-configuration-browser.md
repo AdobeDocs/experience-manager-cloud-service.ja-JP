@@ -1,16 +1,16 @@
 ---
 title: コンテンツフラグメント - 設定ブラウザー
 description: AEMの強力なヘッドレス配信機能を利用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
-feature: Content Fragments
+feature: コンテンツフラグメント
 role: Business Practitioner
+exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 84%
+source-wordcount: '287'
+ht-degree: 73%
 
 ---
-
 
 # コンテンツフラグメント - 設定ブラウザー {#content-fragments-configuration-browser}
 
@@ -25,7 +25,11 @@ AEMの強力なヘッドレス配信機能を利用するために、設定ブ�
 
 >[!CAUTION]
 >
->**コンテンツフラグメントモデル**&#x200B;を有効にしないと、新しいモデルを作成するための「**作成**」オプションを使用できません。
+>**コンテンツフラグメントモデル**&#x200B;を有効にしない場合：
+>
+>* **「作成**」オプションは、新しいモデルを作成する際には使用できません。
+>* [テナントを選択して、関連するエンドポイント](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)を作成することはできません。
+
 
 コンテンツフラグメント機能を有効にするには、次の操作を実行する必要があります。
 
