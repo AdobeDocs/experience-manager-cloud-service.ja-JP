@@ -3,10 +3,10 @@ title: RemotePage コンポーネント
 description: RemotePage コンポーネントは、AEM 内のリモート React SPA を編集するためのカスタムページコンポーネントです。
 exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 translation-type: tm+mt
-source-git-commit: a46a2b3951d2fcc8468b29b4fa2c1faada643243
+source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 53%
+source-wordcount: '352'
+ht-degree: 55%
 
 ---
 
@@ -38,6 +38,7 @@ AEMの編集可能な外部SPAの詳細については、「AEM](editing-externa
 
 ## 制限事項 {#limitations}
 
+* 現在の RemotePage コンポーネントの実装では、リモートの React アプリケーションのみがサポートされています。
 * AEM でリモートレンダリングをおこなう場合、アプリケーションのルート HTML ファイルに定義された内部 CSS と、ルート DOM ノードのインライン CSS は使用できません。
 
 ## 技術的詳細 {#technical-details}
