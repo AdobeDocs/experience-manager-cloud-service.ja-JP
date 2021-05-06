@@ -1,15 +1,15 @@
 ---
 title: コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証
 description: ヘッドレスコンテンツ配信を保護するために、リモートAEM GraphQLクエリに必要な認証を理解します。
-feature: Content Fragments,GraphQL API
+feature: コンテンツフラグメント，GraphQL API
+exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 84%
+ht-degree: 75%
 
 ---
-
 
 # コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
@@ -19,7 +19,7 @@ ht-degree: 84%
 >
 >テストおよび開発の場合は、[GraphiQL インターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)を使用して AEM GraphQL API に直接アクセスすることもできます。
 
-認証のために、サードパーティのサービスは[アクセストークン](#access-token)を使用する必要があります。その後、このトークンは [GraphQL リクエストで使用](#use-access-token-in-graphql-request)できます。
+認証の場合、サードパーティのサービスはアクセストークン[を取得する必要があります。取得したは、GraphQL要求](#use-access-token-in-graphql-request)で[使用できます。](#retrieving-access-token)
 
 ## アクセストークンの取得 {#retrieving-access-token}
 
