@@ -1,15 +1,16 @@
 ---
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信のAEM GraphQL APIとのCloud Serviceとして使用する方法を説明します。
-feature: Content Fragments,GraphQL API
+feature: コンテンツフラグメント，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: 1e005f7eace2fa2c40acddc215833606342a9357
+source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
 workflow-type: tm+mt
-source-wordcount: '3257'
-ht-degree: 83%
+source-wordcount: '3901'
+ht-degree: 72%
 
 ---
+
 
 # コンテンツフラグメントと共に使用する AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
 
@@ -101,11 +102,12 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 
 * **[エントリのリスト](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-<!--
-You can also perform:
+また、次の操作も実行できます。
 
-* [Persisted Queries, that are cached](#persisted-queries-caching)
--->
+* [（キャッシュされる）永続的クエリ](#persisted-queries-caching)
+
+>[!NOTE]
+>[GraphiQL IDE](#graphiql-interface)を使用して、GraphQLクエリのテストとデバッグを行うことができます。
 
 ## AEM 用 GraphQL のエンドポイント {#graphql-aem-endpoint}
 
@@ -115,77 +117,83 @@ You can also perform:
 * GraphQL クエリの送信
 * （GraphQL クエリに対する）応答の受信
 
-AEM 用 GraphQL エンドポイントのリポジトリーパスは次のとおりです。
+AEMには、次の2種類のエンドポイントがあります。
+
+* グローバル
+   * すべてのサイトで使用可能。
+   * このエンドポイントは、すべてのテナントからすべてのコンテンツフラグメントモデルを使用できます。
+   * テナント間で共有する必要のあるコンテンツフラグメントモデルがある場合は、それらをグローバルテナントの下に作成する必要があります。
+* テナント:
+   * [構成ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されているテナント構成に対応します。
+   * 指定したサイト/プロジェクトに固有。
+   * テナント固有のエンドポイントは、その特定のテナントのコンテンツフラグメントモデルを、グローバルテナントのコンテンツフラグメントモデルと共に使用します。
+
+>[!CAUTION]
+>
+>コンテンツフラグメントエディターでは、あるテナントのコンテンツフラグメントが別のテナントのコンテンツフラグメントを（ポリシーを介して）参照できるようにします。
+>
+>この場合、テナント固有のエンドポイントを使用してすべてのコンテンツを取得できるわけではありません。
+>
+>コンテンツ作成者は、このシナリオを制御する必要があります。例えば、共有コンテンツフラグメントモデルをグローバルテナントの下に配置することを検討すると便利です。
+
+AEMグローバルエンドポイント用のGraphQLのリポジトリパスは、次のとおりです。
 
 `/content/cq:graphql/global/endpoint`
 
-アプリは、リクエスト URL で次のパスを使用できます。
+アプリがリクエストURLで次のパスを使用できるようにします。
 
 `/content/_cq_graphql/global/endpoint.json`
 
-AEM 用 GraphQL のエンドポイントを有効にするには、次の操作が必要です。
-
->[!CAUTION]
->
->これらの手順は近い将来変更される可能性があります。
+AEMでGraphQLのエンドポイントを有効にするには、次の操作が必要です。
 
 * [GraphQL エンドポイントの有効化](#enabling-graphql-endpoint)
-* [追加設定の実行](#additional-configurations-graphql-endpoint)
+* [GraphQLエンドポイントの公開](#publishing-graphql-endpoint)
 
 ### GraphQL エンドポイントの有効化 {#enabling-graphql-endpoint}
 
->[!NOTE]
->
->これらの手順を簡単にするためにアドビから提供されるパッケージについて詳しくは、[サポートパッケージ](#supporting-packages)を参照してください。
-
-AEM で GraphQL クエリを有効にするには、`/content/cq:graphql/global/endpoint` にエンドポイントを作成します。
-
-* ノード `cq:graphql` および `global` は `sling:Folder` タイプにする必要があります。
-* ノード `endpoint` は `nt:unstructured` タイプで、`graphql/sites/components/endpoint` の `sling:resourceType` を含んでいる必要があります。
+GraphQLエンドポイントを有効にするには、まず適切な設定が必要です。 「[コンテンツフラグメント — 設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md)」を参照してください。
 
 >[!CAUTION]
 >
->エンドポイントは、すべてのユーザーがアクセスできます。そのため、GraphQL クエリがサーバーに大きな負荷をかける可能性があるので、特にパブリッシュインスタンスでは、セキュリティ上の問題が発生するおそれがあります。
+>[コンテンツフラグメントモデルの使用が有効になっていない](/help/assets/content-fragments/content-fragments-configuration-browser.md)場合、「**作成**」オプションは使用できません。
+
+対応するエンドポイントを有効にするには：
+
+1. **ツール**、**サイト**&#x200B;に移動し、**GraphQL**&#x200B;を選択します。
+1. 「**作成**」を選択します。
+1. 「**新しいGraphQLエンドポイントを作成**」ダイアログが開きます。 ここで指定できる内容は次のとおりです。
+   * **名前**:エンドポイントの名前；任意のテキストを入力できます。
+   * **GraphQLスキーマを使用します。提供元**:ドロップダウンを使用して、必要なサイト/プロジェクトを選択します。
+
+   >[!NOTE]
+   >
+   >ダイアログに次の警告が表示されます。
+   >
+   >* *慎重に管理しない場合、GraphQL エンドポイントによりデータのセキュリティとパフォーマンスで問題が発生する可能性があります。エンドポイントを作成した後で、適切な権限を設定するようにしてください。*
+
+
+1. **作成**&#x200B;で確認します。
+1. **次の手順**&#x200B;ダイアログには、セキュリティコンソールへの直接リンクが表示され、新しく作成したエンドポイントに適切な権限を持たせることができます。
+
+   >[!CAUTION]
+   >
+   >エンドポイントは、すべてのユーザーがアクセスできます。そのため、GraphQL クエリがサーバーに大きな負荷をかける可能性があるので、特にパブリッシュインスタンスでは、セキュリティ上の問題が発生するおそれがあります。
+   >
+   >使用例に適した ACL をエンドポイントに設定できます。
+
+### GraphQLエンドポイントの公開{#publishing-graphql-endpoint}
+
+新しいエンドポイントを選択し、「**発行**」を選択して、すべての環境で完全に使用可能にします。
+
+>[!CAUTION]
 >
->使用例に適した ACL をエンドポイントに設定できます。
-
->[!NOTE]
+>エンドポイントは、すべてのユーザーがアクセスできます。
 >
->エンドポイントはそのままでは機能しません。[GraphQL エンドポイントの追加設定](#additional-configurations-graphql-endpoint)を別途おこなう必要があります。
-
->[!NOTE]
->また、[GraphiQL IDE](#graphiql-interface) を使用して、GraphQL クエリのテストとデバッグをおこなうこともできます。
-
-### GraphQL エンドポイントの追加設定 {#additional-configurations-graphql-endpoint}
-
->[!NOTE]
+>パブリッシュインスタンスでは、GraphQLクエリがサーバに大きな負荷をかける可能性があるので、セキュリティ上の問題が生じる可能性があります。
 >
->これらの手順を簡単にするためにアドビから提供されるパッケージについて詳しくは、[サポートパッケージ](#supporting-packages)を参照してください。
-
-必要な追加設定は次のとおりです。
-
-* Dispatcher：
-   * 必要な URL を許可します
-   * 必須
-* バニティー URL：
-   * エンドポイントの簡略版 URL を割り当てます
-   * オプション
-
-### サポートパッケージ {#supporting-packages}
-
-GraphQLエンドポイントの設定を簡単にするために、Adobeは[GraphQL Sample Project (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphql-sample1.zip)パッケージを提供します。
-
-このアーカイブには、[必要な追加設定](#additional-configurations-graphql-endpoint)と [GraphQL エンドポイント](#enabling-graphql-endpoint)の両方が含まれています。プレーン AEM インスタンスにインストールすると、完全に機能する GraphQL エンドポイントが `/content/cq:graphql/global/endpoint` に表示されます。
-
-このパッケージは、独自の GraphQL プロジェクトのブループリントとなることを想定したものです。このパッケージの使用方法について詳しくは、パッケージの **README** を参照してください。
-
-必要な設定を手動で作成する場合に備えて、専用の [GraphQL エンドポイントコンテンツパッケージ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faemcloud%2Fpublic%2Faem-graphql%2Fgraphql-global-endpoint.zip)も提供されています。このコンテンツパッケージには、GraphQL エンドポイントのみが含まれ、設定は含まれていません。
+>エンドポイントの使用事例に適したACLを設定する必要があります。
 
 ## GraphiQL インターフェイス {#graphiql-interface}
-
-<!--
-AEM Graph API includes an implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface. This allows you to directly input, and test, queries.
--->
 
 標準の [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) インターフェイスの実装は、AEM GraphQL で使用できます。これは [AEM と共にインストール](#installing-graphiql-interface)できます。
 
@@ -202,10 +210,6 @@ AEM Graph API includes an implementation of the standard [GraphiQL](https://grap
 ### AEM GraphiQL インターフェイスのインストール {#installing-graphiql-interface}
 
 GraphiQLユーザーインターフェイスは、専用のパッケージを使用してAEMにインストールできます。[GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)パッケージ。
-
-<!--
-See the package **README** for full details; including full details of how it can be installed on an AEM instance - in a variety of scenarios.
--->
 
 ## オーサー環境とパブリッシュ環境の使用例 {#use-cases-author-publish-environments}
 
@@ -255,14 +259,6 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)を参照してください。
 
 AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
-
-<!--
->[!NOTE]
->
->AEM does not use the concept of namespacing for Content Fragment Models. 
->
->If required, you can edit the **[GraphQL](/help/assets/content-fragments/content-fragments-models.md#content-fragment-model-properties)** properties of a Model to assign specific names.
--->
 
 Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を確保できます。
 
@@ -315,10 +311,10 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
 | 1行テキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
-| 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します。 |
+| 複数行テキスト | 文字列 |  記事の本文などのテキストを出力するために使用します。 |
 | 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
 | ブール型 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
-| 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します |
+| 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します：選択したタイプに応じて、AEM GraphQLで使用できる3つのフレーバーがあります。`onlyDate`、`onlyTime`、`dateTime` |
 | 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 |  文字列 |  AEM 内の別のアセットへのパスを表示するために使用します |
@@ -437,7 +433,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ## GraphQL 変数 {#graphql-variables}
 
-GraphQL では、クエリに変数を含めることができます。詳しくは、](https://graphql.org/learn/queries/#variables)GraphQL の GraphiQL に関するドキュメント[を参照してください。
+GraphQL では、クエリに変数を含めることができます。詳しくは、[変数](https://graphql.org/learn/queries/#variables)のGraphQLドキュメントを参照してください。
 
 例えば、特定のバリエーションを持つ `Article` タイプのコンテンツフラグメントをすべて取得するには、次のように、GraphiQL で変数 `variation` を指定します。
 
@@ -580,27 +576,50 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 
 
-
 * GraphQL のユニオン型がサポートされています
 
    * `... on` を使用します
       * [特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ](#sample-wknd-fragment-specific-model-content-reference)を参照してください
 
-<!--
-## Persisted Queries (Caching) {#persisted-queries-caching}
+## 永続的クエリ（キャッシュ） {#persisted-queries-caching}
 
-After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
+POST リクエストを使用してクエリを準備した後、HTTP キャッシュまたは CDN でキャッシュできる GET リクエストを使用して、そのクエリを実行できます。
 
-This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
+このようにする必要があるのは、POST クエリが通常はキャッシュされないからです。クエリをパラメーターとして GET を使用する場合、HTTP サービスや中間ステップにとってパラメーターが大きくなりすぎるという重大なリスクがあります。
 
-Here are the steps required to persist a given query:
+持続的なクエリは、常に[適切な（テナント）構成](#graphql-aem-endpoint)に関連するエンドポイントを使用する必要があります。そのため、どちらかまたは両方を使用できます。
+
+* グローバル設定とエンドポイント
+クエリは、すべてのコンテンツフラグメントモデルにアクセスできます。
+* 特定のテナント構成とエンドポイント
+特定のテナント構成に対して永続化されたクエリを作成するには、対応するテナント固有のエンドポイントが必要です（関連するコンテンツフラグメントモデルへのアクセスを提供するため）。
+例えば、WKNDテナント専用の永続的なクエリを作成するには、対応するWKND固有のテナント構成と、WKND固有のエンドポイントを事前に作成する必要があります。
 
 >[!NOTE]
->Prior to this the **GraphQL Persistence Queries** need to be enabled, for the appropriate configuration. See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
+>
+>詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
+>
+>適切なテナント構成に対して、**GraphQL Persistenceクエリ**&#x200B;を有効にする必要があります。
 
-1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
+例えば、`my-query`という名前の特定のクエリがあり、テナント構成`my-conf`のモデル`my-model`を使用する場合は、次のようになります。
 
-   For example, create a persisted query:
+* `my-conf`個別のエンドポイントを使用してクエリを作成すると、クエリは次のように保存されます。
+   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* `global`エンドポイントを使用して同じクエリを作成できますが、クエリは次のように保存されます。
+   `/conf/global/settings/graphql/persistentQueries/my-query`
+
+>[!NOTE]
+>
+>これら2つは異なるクエリで、異なるパスで保存されます。
+>
+>同じモデルが使用されるだけで、異なる端点を介して使用されます。
+
+
+特定のクエリを永続化するために必要な手順は次のとおりです。
+
+1. 新しいエンドポイント URL `/graphql/persist.json/<config>/<persisted-label>` に PUT してクエリを準備します。
+
+   例えば、次のようにして、永続的クエリを作成します。
 
    ```xml
    $ curl -X PUT \
@@ -621,32 +640,32 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. At this point, check the response.
+1. この段階で、応答を確認します。
 
-   For example, check for success:
+   例えば、以下が成功するかどうかを確認します。
 
-     ```xml
-     {
-       "action": "create",
-       "configurationName": "wknd",
-       "name": "plain-article-query",
-       "shortPath": "/wknd/plain-article-query",
-       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-     }
-     ```
+   ```xml
+   {
+     "action": "create",
+     "configurationName": "wknd",
+     "name": "plain-article-query",
+     "shortPath": "/wknd/plain-article-query",
+     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+   }
+   ```
 
-1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
+1. その後、URL `/graphql/execute.json/<shortPath>` を GET して、永続的クエリを再生できます。
 
-   For example, use the persisted query:
+   例えば、次のような永続的クエリを使用します。
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Update a persisted query by POSTing to an already existing query path.
+1. 既存のクエリパスに POST して、永続的クエリを更新します。
 
-   For example, use the persisted query:
+   例えば、次のような永続的クエリを使用します。
 
    ```xml
    $ curl -X POST \
@@ -670,9 +689,9 @@ Here are the steps required to persist a given query:
    }'
    ```
 
-1. Create a wrapped plain query.
+1. ラップされたプレーンクエリを作成します。
 
-   For example:
+   次に例を示します。
 
    ```xml
    $ curl -X PUT \
@@ -683,9 +702,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Create a wrapped plain query with cache control.
+1. キャッシュコントロール付きのラップされたプレーンクエリを作成します。
 
-   For example:
+   次に例を示します。
 
    ```xml
    $ curl -X PUT \
@@ -696,9 +715,9 @@ Here are the steps required to persist a given query:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. Create a persisted query with parameters:
+1. パラメーター付きの永続的クエリを作成します。
 
-   For example:
+   次に例を示します。
 
    ```xml
    $ curl -X PUT \
@@ -722,62 +741,62 @@ Here are the steps required to persist a given query:
      }'
    ```
 
-1. Executing a query with parameters.
+1. パラメーター付きのクエリを実行します。
 
-   For example:
+   次に例を示します。
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-
+   
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. To execute the query on publish, the related persist tree need to replicated
+1. パブリッシュでクエリを実行するには、関連する永続的ツリーをレプリケートする必要があります。
 
-   * Using a POST for replication:
+   * レプリケーションに POST を使用する場合：
 
-     ```xml
-     $curl -X POST   http://localhost:4502/bin/replicate.json \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-       -F cmd=activate
-     ```
+      ```xml
+      $curl -X POST   http://localhost:4502/bin/replicate.json \
+        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+        -F cmd=activate
+      ```
 
-   * Using a package:
-     1. Create a new package definition.
-     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-     1. Build the package.
-     1. Replicate the package.
+   * パッケージを使用する場合：
+      1. 新しいパッケージ定義を作成します。
+      1. 設定（例：`/conf/wknd/settings/graphql/persistentQueries`）を含めます。
+      1. パッケージをビルドします。
+      1. パッケージをレプリケートします。
+   * レプリケーション／配布ツールを使用する場合：
+      1. 配布ツールに移動します。
+      1. 設定のツリーアクティベーション（例：`/conf/wknd/settings/graphql/persistentQueries`）を選択します。
+   * （ワークフローランチャーの設定を通じて）ワークフローを使用する場合：
+      1. 様々なイベント（例：作成、変更など）で設定をレプリケートするワークフローモデルを実行するためのワークフローランチャールールを定義します。
 
-   * Using replication/distribution tool.
-     1. Go to the Distribution tool.
-     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-   * Using a workflow (via workflow launcher configuration):
-     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
-
-   >[!NOTE]
-   >
-   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
-   >
-   >If that is not the case it will not be able to execute.
+1. クエリの設定がいったん公開されると、パブリッシュエンドポイントを使用するだけで、同じ原則が適用されます。
 
    >[!NOTE]
    >
-   >Any semicolons (";") in the URLs need to be encoded.
+   >匿名アクセスの場合は、ACL で「全員」にクエリ設定へのアクセスが許可されているとシステムが想定します。
    >
-   >For example, as in the request to Execute a persisted query:
+   >そうでない場合は、実行できなくなります。
+
+   >[!NOTE]
    >
-   >```xml
+   >URL 内のセミコロン（「;」）はすべてエンコードする必要があります。
+   >
+   >例えば、永続的クエリを実行するリクエストの場合と同様に、次のようにします。
+   >
+   >
+   ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
--->
 
 ## 外部 Web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
@@ -796,13 +815,8 @@ GraphQLエンドポイントにアクセスするには、お客様のGitリポ�
 
 この設定では、アクセスを許可する必要がある信頼できるWebサイト接触チャネル`alloworigin`または`alloworiginregexp`を指定する必要があります。
 
-<!--
-For example, to grant access to the GraphQL endpoint and persisted queries endpoint for `https://my.domain` you can use:
--->
+例えば、`https://my.domain`のGraphQLエンドポイントと持続クエリエンドポイントへのアクセスを許可するには、次を使用します。
 
-例えば、`https://my.domain`のGraphQLエンドポイントへのアクセスを許可するには、次を使用します。
-
-<!--
 ```xml
 {
   "supportscredentials":true,
@@ -832,39 +846,6 @@ For example, to grant access to the GraphQL endpoint and persisted queries endpo
   "allowedpaths":[
     "/content/_cq_graphql/global/endpoint.json",
     "/graphql/execute.json/.*"
-  ]
-}
-```
--->
-
-```xml
-{
-  "supportscredentials":true,
-  "supportedmethods":[
-    "GET",
-    "HEAD",
-    "POST"
-  ],
-  "exposedheaders":[
-    ""
-  ],
-  "alloworigin":[
-    "https://my.domain"
-  ],
-  "maxage:Integer":1800,
-  "alloworiginregexp":[
-    ""
-  ],
-  "supportedheaders":[
-    "Origin",
-    "Accept",
-    "X-Requested-With",
-    "Content-Type",
-    "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
-  ],
-  "allowedpaths":[
-    "/content/_cq_graphql/global/endpoint.json"
   ]
 }
 ```
