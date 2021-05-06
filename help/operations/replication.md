@@ -1,14 +1,14 @@
 ---
 title: レプリケーション
 description: 配布とレプリケーションのトラブルシューティング。
+exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 39%
 
 ---
-
 
 # レプリケーション {#replication}
 
@@ -42,6 +42,76 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
    ![配布](assets/distribute.png "配布")
 4. パスブラウザーでパスを選択し、必要に応じてノードやツリーの追加または削除を選択し、「**送信**」をクリックします。
+
+### コンテンツツリーの公開ワークフロー{#publish-content-tree-workflow}
+
+次に示すように、**ツール→ワークフロー→モデル**&#x200B;を選択し、**公開コンテンツツリー**&#x200B;の既成のワークフローモデルをコピーして、ツリー複製をトリガーできます。
+
+![](/help/operations/assets/publishcontenttreeworkflow.png)
+
+元のモデルを修正または呼び出さないでください。 代わりに、まずモデルをコピーし、その後、そのコピーを修正または呼び出します。
+
+すべてのワークフローと同様、APIを介して呼び出すこともできます。 詳しくは、[ワークフローとの対話プログラムによる](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=en#extending-aem)を参照してください。
+
+または、`Publish Content Tree`処理手順を使用するワークフローモデルを作成して、これを達成することもできます。
+
+1. AEMのCloud Serviceホームページから、**ツール→ワークフロー→モデル**&#x200B;に移動します。
+1. ワークフローモデルページの画面右上隅にある&#x200B;**作成**&#x200B;キーを押します
+1. モデル追加のタイトルと名前。 詳しくは、「[ワークフローモデルの作成](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)」を参照してください。
+1. リストから新しく作成したモデルを選択し、**編集**&#x200B;を押します
+1. 次のウィンドウで、処理手順を現在のモデルフローにドラッグ&amp;ドロップします。
+
+   ![プロセスステップ](/help/operations/assets/processstep.png)
+
+1. フローの処理手順をクリックし、レンチアイコンを押して「**設定**」を選択します
+1. 「**プロセス**」タブをクリックし、ドロップダウンリストから「`Publish Content Tree`」を選択します
+
+   ![Treeactivation](/help/operations/assets/newstep.png)
+
+1. **Arguments**&#x200B;フィールドに追加のパラメーターを設定します。 複数のコンマ区切りの引数を弦できます。 次に例を示します。
+
+   `enableVersion=true,agentId=publish`
+
+
+   >[!NOTE]
+   >
+   >パラメーターのリストについては、下の&#x200B;**パラメーター**&#x200B;の節を参照してください。
+
+1. 「**完了**」を押して、ワークフローモデルを保存します。
+
+**パラメーター**
+
+* `replicateAsParticipant` （boolean値、デフォルト） `false`)をクリックします。`true`として設定された場合、レプリケーションは、参加者の手順を実行したプリンシパルの`userid`を使用します。
+* `enableVersion` （boolean値、デフォルト） `true`)をクリックします。このパラメーターは、レプリケーション時に新しいバージョンを作成するかどうかを指定します。
+* `agentId` （string value, defaultは、有効なすべてのエージェントが使用されることを意味します）。
+* `filters` （string value, defaultは、すべてのパスがアクティブ化されることを意味します）。次の値を指定できます。
+   * `onlyActivated`  — アクティブ化とマークされていないパスのみがアクティブ化されます。
+   * `onlyModified`  — 既にアクティブ化され、アクティベーション日より後の変更日を持つパスのみをアクティブ化します。
+   * 上記はパイプ&quot;|&quot;でORできます。 （例：`onlyActivated|onlyModified`）。
+
+**ログ**
+
+ツリーアクティベーションのワークフロー手順の開始時に、設定パラメータがINFOログレベルに記録されます。 パスがアクティブ化されると、INFO文も記録されます。
+
+ワークフローステップがすべてのパスを複製した後、最後のINFOステートメントが記録されます。
+
+さらに、`com.day.cq.wcm.workflow.process.impl`の下のロガーのログレベルをDEBUG/TRACEに上げて、より多くのログ情報を得ることができます。
+
+エラーが発生した場合、ワークフローステップは`WorkflowException`で終了し、基になる例外をラップします。
+
+公開コンテンツツリーのサンプルワークフロー中に生成されるログの例を以下に示します。
+
+```
+21.04.2021 19:14:55.566 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.treeactivation.TreeActivationWorkflowProcess TreeActivation options: replicateAsParticipant=false(userid=workflow-process-service), agentId=publish, chunkSize=100, filter=, enableVersion=false
+```
+
+```
+21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
+```
+
+**サポートの再開**
+
+ワークフローは、コンテンツをチャンク単位で処理します。各チャンクは、発行されるフルコンテンツのサブセットを表します。 何らかの理由でワークフローがシステムによって停止された場合は、ワークフローが再起動され、まだ処理されていないチャンクが処理されます。 ログステートメントには、コンテンツが特定のパスから再開されたことが示されます。
 
 ## トラブルシューティング {#troubleshooting}
 
