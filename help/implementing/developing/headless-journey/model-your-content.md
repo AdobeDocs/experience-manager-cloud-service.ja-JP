@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: f872839b-2401-4ea4-9e09-e5dda18afd09
 translation-type: tm+mt
-source-git-commit: 49e2141cd55a2d277d0e1d2d622097fa5f08a464
+source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1752'
 ht-degree: 4%
 
 ---
@@ -209,6 +209,20 @@ AEMでは、次のデータ型を使用してコンテンツをモデリング�
    * 参照先フラグメントの直接編集
    * 適切なモデルに基づいた新しいコンテンツフラグメントの作成
 
+### コンテンツフラグメントモデルの作成{#creating-content-fragment-models}
+
+最初に、サイトでコンテンツフラグメントモデルが有効になるように設定するには、設定ブラウザーで行います。
+
+![設定の定義](assets/cfm-configuration.png)
+
+次に、コンテンツフラグメントモデルをモデル化します。
+
+![コンテンツフラグメントモデル](assets/cfm-model.png)
+
+>[!NOTE]
+>
+>「コンテンツフラグメントの操作」を参照してください。
+
 ## モデルを使用したコンテンツフラグメントを含むコンテンツのオーサリング{#use-content-to-author-content}
 
 コンテンツフラグメントは、常にコンテンツフラグメントモデルに基づいています。 モデルが構造を提供し、フラグメントにはコンテンツが保持されます。
@@ -228,6 +242,16 @@ AEMでは、次のデータ型を使用してコンテンツをモデリング�
 * メタデータを編集します。
 * ツリー構造を表示します。
 * JSON表現のプレビュー。
+
+### コンテンツフラグメントの作成 {#creating-content-fragments}
+
+適切なモデルを選択すると、コンテンツフラグメントが開き、コンテンツフラグメントエディターで編集できます。
+
+![コンテンツフラグメントエディター](assets/cfm-editor.png)
+
+>[!NOTE]
+>
+>「コンテンツフラグメントの操作」を参照してください。
 
 ## 使用の手引き{#getting-started-examples}
 
