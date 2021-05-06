@@ -1,16 +1,16 @@
 ---
 title: コンテンツフラグメントモデル
 description: コンテンツフラグメントモデルがAEMのヘッドレスコンテンツの基盤となる仕組みと、構造化されたコンテンツを使用してコンテンツフラグメントを作成する方法について説明します。
-feature: Content Fragments
+feature: コンテンツフラグメント
 role: Business Practitioner
+exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 94%
+source-wordcount: '2309'
+ht-degree: 89%
 
 ---
-
 
 # コンテンツフラグメントモデル {#content-fragment-models}
 
@@ -61,7 +61,7 @@ AEMのコンテンツフラグメントモデルは、[コンテンツフラグ�
    >
    >あるフィールドを&#x200B;**必須**&#x200B;として指定した場合、左側のウィンドウに表示される&#x200B;**ラベル**&#x200B;にアスタリスク（*****）が付きます。
 
-   ![プロパティ](assets/cfm-models-03.png)
+![プロパティ](assets/cfm-models-03.png)
 
 1. **フィールドを追加するには**
 
@@ -111,6 +111,7 @@ AEMのコンテンツフラグメントモデルは、[コンテンツフラグ�
    * フラグメント作成者がタグの領域にアクセスして選択できるようにする
 * **コンテンツ参照**
    * 任意の種類の他のコンテンツを参照し、[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
+   * 画像が参照されている場合、サムネールの表示をオプトできます
 * **フラグメント参照**
    * 他のコンテンツフラグメントの参照を、[ネストされたコンテンツの作成](#using-references-to-form-nested-content)に使用可能
    * フラグメント作成者が次の操作をおこなえるようにデータタイプを設定可能
@@ -121,6 +122,13 @@ AEMのコンテンツフラグメントモデルは、[コンテンツフラグ�
       * 別のサービスからコピー＆ペーストした JSON を AEM に直接保存できるようにする。
       * JSON が渡され GraphQL で JSON として出力される。
       * コンテンツフラグメントエディターに JSON 構文のハイライト表示機能、オートコンプリート、エラーのハイライト表示が組み込まれている。
+* **タブプレースホルダー**
+   * コンテンツフラグメントコンテンツの編集時に使用するタブを導入できます。
+これは、コンテンツデータタイプのリストのセクションを区切る、モデルエディターの区切りとして表示されます。 各インスタンスは、新しいタブの開始を表します。
+フラグメントエディターでは、各インスタンスがタブとして表示されます。
+
+      >[!NOTE]
+      このデータ型は純粋に形式設定に使用され、AEM GraphQLスキーマでは無視されます。
 
 ## プロパティ {#properties}
 
@@ -164,6 +172,8 @@ CF モデルエディターでフィールドの「変換可能」チェック�
    * フィールドのプロパティ名がまだ存在しない場合は、翻訳設定のコンテキスト `/content/dam/<tenant>` に確実に追加されます。
    * GraphQL の場合：「コンテンツフラグメント」フィールドの `<translatable>` プロパティを `yes` に設定して、変換可能なコンテンツのみを含む JSON を出力するための GraphQL クエリフィルターを許可します。
 
+* 特定のデータ型とそのプロパティの詳細については、「**[コンテンツ参照](#content-reference)**」を参照してください。
+
 * 特定のデータタイプとそのプロパティについて詳しくは、**[フラグメント参照（ネストされたフラグメント）](#fragment-reference-nested-fragments)**&#x200B;を参照してください。
 
 ## 検証 {#validation}
@@ -180,12 +190,6 @@ CF モデルエディターでフィールドの「変換可能」チェック�
    * 定義済みの幅または高さ（ピクセル単位）の範囲に収まる画像のみを参照できます。
 * **フラグメント参照**
    * 特定のコンテンツフラグメントモデルをテストします。
-
-<!--
-  * Only predefined file types can be referenced.
-  * No more than the predefined number of assets can be referenced. 
-  * No more than the predefined number of fragments can be referenced.
--->
 
 ## 参照の使用によるネストされたコンテンツの作成 {#using-references-to-form-nested-content}
 
@@ -218,12 +222,14 @@ AEM では次のものの繰り返しを防止できます。
 
 標準プロパティに加えて、次のものを指定できます。
 
-* 参照される任意のコンテンツの&#x200B;**ルートパス**
-* 参照可能なコンテンツタイプ。
+* 参照されるコンテンツの&#x200B;**ルートパス**
+* 参照可能なコンテンツタイプ
 * ファイルサイズの制限
-* 画像の制限
-   <!-- Check screenshot - might need update -->
-   ![コンテンツ参照](assets/cfm-content-reference.png)
+* 画像が参照される場合：
+   * サムネールを表示
+   * 画像の高さと幅の制限
+
+![コンテンツ参照](assets/cfm-content-reference.png)
 
 ### フラグメント参照（ネストされたフラグメント） {#fragment-reference-nested-fragments}
 
@@ -271,7 +277,6 @@ type CompanyModel {
 
    * **fragmentreferencecomposite** - フラグメント作成者が複数のフラグメントを選択して複合フラグメントを作成できるようになります。
 
-   <!-- Check screenshot - might need update -->
    ![フラグメント参照](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
@@ -402,17 +407,3 @@ GraphQL にも、フラグメント参照の繰り返し防止機能がありま
    * **タグ**
    * **説明**
    * **画像をアップロード**
-
-<!--
-* **GraphQL**
-  
-  >[!CAUTION]
-  >
-  >These properties are only required for [development purposes](/help/assets/content-fragments/graphql-api-content-fragments.md#schema-generation).
-  >
-  >Updating these properties can impact dependent applications.
-
-  * **API Name**
-  * **Single Query Field Name**
-  * **Multiple Query Field Name**
--->
