@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート。'
+exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 translation-type: tm+mt
-source-git-commit: 2920ab75fca1eaa3b8e3b1f75e9126632a026b6b
+source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
-
 
 
 # [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
@@ -55,13 +55,13 @@ ht-degree: 38%
 
 * アセットは[!DNL Experience Manager Assets Brand Portal]を使用してソースにできます。 新しいマーケティングキャンペーン、フォトシュート、プロジェクトに関して、エージェンシーユーザーからアセットをソース化するのに役立ちます。
 
-* [!DNL Experience Manager Assets] の値 [!DNL Cloud Service] は、事前設定済み [!DNL Brand Portal] インスタンスを持つ権利が付与されます。[!DNL Cloud Manager]ユーザーは、[!DNL Experience Manager Assets]の[!DNL Brand Portal]を[!DNL Cloud Service]としてアクティベートできます。 「[ブランドポータルのアクティブ化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)」を参照してください。
+* [!DNL Experience Manager Assets] の値 [!DNL Cloud Service] は、事前設定済み [!DNL Brand Portal] インスタンスを持つ権利が付与されます。[!DNL Cloud Manager]ユーザーは、[!DNL Experience Manager Assets]の[!DNL Brand Portal]を[!DNL Cloud Service]としてアクティベートできます。 「[ブランドポータルのアクティブ化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=ja)」を参照してください。
 
 * [!DNL Brand Portal]を使用してアセットのソースを行えるようになりました。 アセットソーシング機能は、[!DNL Brand Portal]を活用して、新しいマーケティングキャンペーン、フォトシュート、プロジェクトのソースアセットに対して、顧客がエージェンシーユーザーと関わるよう支援します。 [ [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)のアセットソーシングを参照してください。
 
 * [!DNL Brand Portal]使用状況レポートには、アクティブなユーザーのみが表示されるようになりました。 非アクティブなユーザーは現在表示されません。 アクティブユーザーとは、[!DNL Admin Console]内の製品プロファイルにアカウントが割り当てられているユーザーです。 [[!DNL Brand Portal] レポート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)を参照してください。
 
-* [!DNL Brand Portal]には、新しいダウンロード設定が導入されています。この設定を使用すると、フォルダーやコレクションなどをダウンロードする際に、アセットごとに個別のフォルダーを作成できます。 [ダウンロード設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)を参照してください。
+* [!DNL Brand Portal]には、新しいダウンロード設定が導入されています。この設定を使用すると、フォルダーやコレクションなどをダウンロードする際に、アセットごとに個別のフォルダーを作成できます。 詳しくは、[ダウンロード設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)を参照してください。
 
 ## [!DNL Assets] {#bug-fixes-assets}のバグ修正
 
@@ -164,4 +164,3 @@ Best Practices Analyzer v2.1.2のリリース日は2021年2月19日です。
 
 * リポジトリの最新化で行われたいくつかのバグ修正。
 [GitHubリソースを参照：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)を参照してください。
-
