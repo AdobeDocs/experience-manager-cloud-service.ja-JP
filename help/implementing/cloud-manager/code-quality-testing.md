@@ -1,16 +1,21 @@
 ---
 title: コード品質テスト - Cloud Services
 description: コード品質テスト - Cloud Services
+exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 translation-type: tm+mt
-source-git-commit: 5a945cbb138aea64ecc6da3728827531569d6d63
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '869'
 ht-degree: 100%
 
 ---
 
-
 # コード品質テスト {#code-quality-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_codequalitytests"
+>title="コード品質テスト"
+>abstract="コード品質テストでは、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。"
 
 コード品質テストでは、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼働および実稼働のすべてのパイプラインのビルド手順の直後に実行されます。
 
