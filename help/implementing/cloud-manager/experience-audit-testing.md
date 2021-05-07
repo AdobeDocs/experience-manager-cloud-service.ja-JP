@@ -1,16 +1,21 @@
 ---
 title: エクスペリエンス監査テスト - Cloud Services
 description: エクスペリエンス監査テスト - Cloud Services
+exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
 translation-type: tm+mt
-source-git-commit: c1ce44fb8a7b12818b58ff5ef661b9b447b9cd5c
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '577'
 ht-degree: 100%
 
 ---
 
-
 # エクスペリエンス監査テスト {#experience-audit-testing}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_expaudittesting"
+>title="エクスペリエンス監査テスト"
+>abstract="エクスペリエンス監査は、Google のオープンソースツールである Google Lighthouse を利用した Cloud Manager Sites 実稼働パイプラインで使用できる機能です。この機能は、すべての Cloud Manager 実稼働パイプラインで有効です。"
 
 エクスペリエンス監査は、Google のオープンソースツールである Google Lighthouse を利用した Cloud Manager Sites 実稼働パイプラインで使用できる機能です。この機能は、すべての Cloud Manager 実稼働パイプラインで有効です。
 
@@ -61,4 +66,3 @@ Cloud Manager のエクスペリエンス監査を使用すると、サイト上
 個々のページの詳細をクリックすると、評価されたページの要素に関する情報が表示され、改善の機会が検出された場合は、問題の修正に関するガイダンスが示されます。テストと関連ガイダンスの詳細は、Google Lighthouse から提供されます。
 
 ![](/help/implementing/cloud-manager/assets/exp-audit-2.png)
-
