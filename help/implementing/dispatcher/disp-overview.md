@@ -2,16 +2,21 @@
 title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
+exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 translation-type: tm+mt
-source-git-commit: c11d8e36fe8ba120847c675f40e09a0388943d51
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '4169'
+source-wordcount: '4211'
 ht-degree: 74%
 
 ---
 
-
 # クラウド内の Dispatcher {#Dispatcher-in-the-cloud}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispoverview"
+>title="クラウド内の Dispatcher"
+>abstract="ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。"
 
 ## Apache および Dispatcher の設定とテスト {#apache-and-dispatcher-configuration-and-testing}
 
@@ -743,7 +748,7 @@ validator full -d out .
 
 ### 手順2:Dockerイメージ内のディスパッチャーとそのデプロイメント情報との開始
 
-macOSコンピューター上でAEMパブリッシュサーバーが実行され、ポート4503でリッスンしている場合、
+macOSコンピューターでAEMパブリッシュサーバーが実行され、ポート4503でリッスンしている場合、
 次のように、そのサーバーの前でディスパッチャーの開始を実行できます。
 
 ```
