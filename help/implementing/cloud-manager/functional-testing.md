@@ -1,18 +1,25 @@
 ---
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
+exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 translation-type: tm+mt
-source-git-commit: 765334cff443d56e37f578647af4bcd133509481
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 56%
+source-wordcount: '865'
+ht-degree: 55%
 
 ---
 
-
 # 機能テスト {#functional-testing}
 
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_functionaltesting"
+>title="機能テスト"
+>abstract="機能テストは、製品機能テスト、カスタム機能テスト、カスタムUIテストの3種類に分類されます。"
+
 機能テストは次の3つのタイプに分類されます。
+
 
 * 製品機能テスト
 * カスタム機能テスト
@@ -124,4 +131,3 @@ UIテストを作成して実行するには、UIテスト用のmavenサブモ�
 * `sling.it.instance.runmode.2 - should be set to publish`
 * `sling.it.instance.adminUser.2 - should be set to the publish admin user, for example, admin`
 * `sling.it.instance.adminPassword.2 - should be set to the publish admin password`
-
