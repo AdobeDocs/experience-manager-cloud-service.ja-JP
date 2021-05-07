@@ -1,16 +1,21 @@
 ---
 title: AEM Dispatcher コンバーターツール
 description: AEM Dispatcher コンバーターツール
+exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
 translation-type: tm+mt
-source-git-commit: 50d26dbec8281afec07ca56595b4b2a7b915eca9
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-
 # AEM Dispatcher コンバーター {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_dispconverter"
+>title="AEM Dispatcher コンバーター"
+>abstract="Adobe Experience Manager Dispatcher コンバーターは、既存の AEM Dispatcher 設定を AEM as a Cloud Service Dispatcher 設定に変換します。"
 
 Adobe Experience Manager Dispatcher コンバーターは、既存の AEM Dispatcher 設定を AEM as a Cloud Service Dispatcher 設定に変換します。
 
@@ -45,4 +50,3 @@ AEM Dispatcher コンバーターは、既存のオンプレミスまたは Adob
 
 >[!IMPORTANT]
 >AEM Dispatcher コンバーターは、NodeJS を使用して開発されました。NodeJS 10.0 以降をインストールすることをお勧めします。
-
