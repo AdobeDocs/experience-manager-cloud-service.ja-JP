@@ -1,14 +1,14 @@
 ---
 title: Repository Modernizer
 description: Repository Modenizer
+exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 translation-type: tm+mt
-source-git-commit: 5da0d4cc8c6d8781dd7cce8bbbde207568a6d10b
+source-git-commit: 0ed18aad48f33fb0504d59a5f583b5a3dbea59f6
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # Repository Modernizer {#repo-modernizer}
 
@@ -22,7 +22,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 
 * `ui.apps` パッケージは `/apps` にデプロイされ、すべてのコードが含まれます。
 
-* `ui.content` パッケージは実行時に書き込み可能な領域（例：`/content`、 `/conf`、`/home`のいずれか、または `/apps` 以外）にデプロイされ、すべてのコンテンツと設定が含まれます。
+* `ui.content` パッケージは、実行時に書き込み可能な領域( `/content`、 `/conf`、、 `/home`または何も含まない `/apps`)、およびすべてのコンテンツと設定が含まれます。
 
 * `all` パッケージは、`ui.apps` サブパッケージおよび `ui.content` サブパッケージを含むコンテナパッケージです。
 
@@ -30,6 +30,8 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 >プロジェクト構造は、パッケージおよびその `pom.xml/filter.xml files` に対して、*アーキタイプ 24* に基づいています。詳細は、「[アーキタイプ 24](https://github.com/adobe/aem-project-archetype)」を参照してください。
 
 ## Repository Modernizer の使用 {#using-repo-modernizer}
+
+>[!VIDEO](https://video.tv.adobe.com/v/333057/?quality=12&learn=on)
 
 * Adobe I/O CLI 経由：`aio-cli-plugin-aem-cloud-service-migration`（AEM as a Cloud Service の Adobe I/O CLI 用のコードリファクタリングプラグイン）を介して Repository Modenizer を使用することをお勧めします。
 
