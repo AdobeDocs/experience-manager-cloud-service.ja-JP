@@ -3,15 +3,19 @@ title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 translation-type: tm+mt
-source-git-commit: d4fb51aa1b5f0bc469c961b0e7287758ec17e9e9
+source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 73%
+source-wordcount: '3302'
+ht-degree: 74%
 
 ---
 
 # カスタムコード品質ルール {#custom-code-quality-rules}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_nonbpa_customcodequalityrules"
+>title="カスタムコード品質ルール"
+>abstract="このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。"
 
 このページでは、AEM エンジニアリングチームのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて説明します。
 
