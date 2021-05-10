@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 26bd32d88b04d107a24e5e601af6e01d309b8e0e
+source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1879'
+ht-degree: 5%
 
 ---
 
@@ -90,6 +90,8 @@ Cloud Service2021.4.0の[!DNL Adobe Experience Manager]のリリース日は2021
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
+
+[AEM FormsをCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)として使用して、デジタルフォームの作成、既存のデータソースへのフォームの接続、Adobe Signとのフォームの統合、フォームへの電子署名の追加、レコードのドキュメント(DoR)の生成を行い、送信済みのフォームをPDFファイルとしてアーカイブできます。 また、このサービスでは、既存のPDF formsをデジタルフォームに変換することもできます。 標準的なAEM Formsの機能に加えて、自動拡張、アップグレードのダウンタイムゼロ、クラウドネイティブの開発環境など、クラウドネイティブの機能をいくつかオファーしています。 [このブログ記事](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)を読み、Cloud ServiceとしてのAEM Formsの能力や特徴を知る。
 
 * **Adobe Sign対応アダプティブFormsで政府IDのID認証方法を使用**
 
