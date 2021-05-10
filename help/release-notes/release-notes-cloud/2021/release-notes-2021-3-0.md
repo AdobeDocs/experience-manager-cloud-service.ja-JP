@@ -147,7 +147,7 @@ AEMのCloud ManagerのCloud Service2021.3.0のリリース日は2021年3月11日
 
 ### コンテンツ転送ツールの新機能{#what-is-new-ctt-march}
 
-* CTTは、`/libs`の代わりに`/apps`にインストールされるようになりました。特定のページへのブラウザーのブックマークが無効になる場合があります。
+* CTTは、`/libs`の代わりに`/apps`にインストールされるようになりました。特定のページへのブラウザーのブックマークが無効になる可能性があります。
 * CTTがインストールされている場合、ユーザーはコンテンツ転送ページに移動するために別のレベルに移動する必要があります。 詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)を参照してください。
 
 ### バグ修正 {#bug-fixes-ctt-march}
