@@ -8,8 +8,8 @@ role: Architect, Developer
 translation-type: tm+mt
 source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '677'
+ht-degree: 92%
 
 ---
 
