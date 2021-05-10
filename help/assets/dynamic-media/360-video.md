@@ -5,10 +5,10 @@ feature: 360 VR ビデオ
 role: Business Practitioner
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 61%
+source-wordcount: '941'
+ht-degree: 58%
 
 ---
 
@@ -28,7 +28,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 ## 360 ビデオの視聴  {#video-in-action}
 
-「[Space Station 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」をタップして、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中に、ポインタを新しい位置にドラッグして、表示角度を変更します。
+「[Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)」をタップして、ブラウザーウィンドウを開き、360 度ビデオを視聴します。ビデオ再生中に、ポインタを新しい位置にドラッグして、表示角度を変更します。
 
 ![360 ビデオのサンプル](assets/6_5_360videoiss_simplified.png)
 *Space Station 360（国際宇宙ステーションの 360 度ビデオ）のビデオフレーム*
@@ -93,7 +93,7 @@ Start by uploading 360 Videos.
 
 ## 360 ビデオのプレビュー {#previewing-video}
 
-プレビューを使用すれば、360 ビデオがお客様にどのように表示されるかを確認し、ビデオが期待どおりに動作していることを確認できます。
+プレビューを使用して、360ビデオが顧客にどのように表示されるかを確認し、期待どおりに動作していることを確認できます。
 
 [ビューアプリセットの編集](/help/assets/dynamic-media/managing-viewer-presets.md#editing-viewer-presets)も参照してください。
 
