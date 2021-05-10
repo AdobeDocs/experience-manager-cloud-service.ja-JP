@@ -3,10 +3,10 @@ title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
 translation-type: tm+mt
-source-git-commit: d55eb86afd9973e428c8738db181f79dcd55accb
+source-git-commit: 42c6d904fb484435572544147936b50b9a277dcf
 workflow-type: tm+mt
-source-wordcount: '2675'
-ht-degree: 73%
+source-wordcount: '2731'
+ht-degree: 72%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 73%
 
 * オーサーの&#x200B;*インジェスト段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにしてください。
 
+* ソースAEMシステムのデータストアとして`Amazon S3`または`Azure`を使用する場合は、保存されているBLOBを削除（ガベージコレクション）できないようにデータストアを設定する必要があります。 これは、インデックスデータの整合性を確保するためです。 この方法で構成しないと、このインデックスデータの整合性が欠けているため、抽出に失敗する可能性があります。
 
 ## 入手方法 {#availability}
 
