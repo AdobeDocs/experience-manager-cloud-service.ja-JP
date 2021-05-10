@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
+source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 68%
+source-wordcount: '1270'
+ht-degree: 57%
 
 ---
 
@@ -55,102 +55,99 @@ Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バ�
 
 ## Assets HTTP API {#assets-http-api}
 
-[Assets HTTP API](/help/assets/mac-api-assets.md) には次の API が含まれます。
+Assets HTTP API には次の API が含まれます。
 
 * Assets REST API
 * コンテンツフラグメントをサポートしています。
 
-現在の Assets HTTP API の実装は、**REST** アーキテクチャスタイルに基づいています。
-
-Assets REST APIを使用すると、開発者はCloud ServiceとしてAdobe Experience Managerのコンテンツ(AEMに保存されている)に、**CRUD**&#x200B;操作（作成、読み取り、更新、削除）経由で直接アクセスできます。
+アセットHTTP APIの現在の実装は、**REST**&#x200B;アーキテクチャスタイルに基づいており、**CRUD**&#x200B;操作（作成、読み取り、更新、削除）を介して(AEMに保存された)コンテンツにアクセスできます。
 
 この操作により、APIはJavaScriptフロントエンドアプリケーションにContent Servicesを提供することで、ヘッドレスCMS(コンテンツ管理システム)としてAdobe Experience ManagerをCloud Serviceとして操作できます。 または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。例えば、単一ページアプリ(SPA)、フレームワークベースまたはカスタムの場合、API経由で提供されるコンテンツは、多くの場合JSON形式で提供する必要があります。
 
+<!--
 >[!NOTE]
 >
->Assets REST API からの JSON 出力はカスタマイズできません。
+>It is not possible to customize JSON output from the Assets REST API. 
 
-Assets REST API は、
+The Assets REST API:
 
-* HATEOAS の原則に従っています。
-* SIREN 形式を実装しています。
+* follows the HATEOAS principle
+* implements the SIREN format
 
-## 主要な概念 {#key-concepts}
+## Key Concepts {#key-concepts}
 
-アセットREST APIオファーは、AEMインスタンス内に保存されたアセットにREST形式でアクセスします。
+The Assets REST API offers REST-style access to assets stored within an AEM instance. 
 
-`/api/assets` エンドポイントを使用しており、アクセスするにはアセットのパス（先頭の `/content/dam` を除く）が必要です。
+It uses the `/api/assets` endpoint and requires the path of the asset to access it (without the leading `/content/dam`). 
 
-* つまり、次の場所のアセットにアクセスするには
-   * `/content/dam/path/to/asset`
-* 次のリクエストが必要です。
-   * `/api/assets/path/to/asset`
+* This means that to access the asset at:
+  * `/content/dam/path/to/asset`
+* You need to request:
+  * `/api/assets/path/to/asset` 
 
-例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
-
->[!NOTE]
->アクセス経由：
->
->* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
->* `/content/path/to/page` は `.model` セレクターを使用する&#x200B;**必要があります**。
-
-
-実行する操作は HTTP メソッドで決まります。
-
-* **GET**：アセットまたはフォルダーの JSON 表現を取得します
-* **POST**：新しいアセットまたはフォルダーを作成します
-* **PUT**：アセットまたはフォルダーのプロパティを更新します
-* **DELETE**：アセットまたはフォルダーを削除します
+For example, to access `/content/dam/wknd/en/adventures/cycling-tuscany`, request `/api/assets/wknd/en/adventures/cycling-tuscany.json` 
 
 >[!NOTE]
+>Access over:
 >
->リクエスト本文または URL パラメーターは、これらの操作の一部を設定するために使用できます。例えば、フォルダーまたはアセットを **POST** リクエストで作成するように定義できます。
+>* `/api/assets` **does not** need the use of the `.model` selector.
+>* `/content/path/to/page` **does** require the use of the `.model` selector.
 
-サポートされているリクエストの正確な形式は、『API リファレンス』ドキュメントで定義されています。
+The HTTP method determines the operation to be executed:
 
-### トランザクション動作 {#transactional-behavior}
-
-すべてのリクエストはアトミックです。
-
-つまり、後続の（`write`）リクエストを結合して、単一のエンティティとして成功または失敗する単一のトランザクションにすることはできません。
-
-### セキュリティ {#security}
-
-特定の認証要件がない環境で Assets REST API が使用される場合は、AEM の CORS フィルターを正しく設定する必要があります。
+* **GET** - to retrieve a JSON representation of an asset or a folder
+* **POST** - to create new assets or folders
+* **PUT** - to update the properties of an asset or folder
+* **DELETE** - to delete an asset or folder
 
 >[!NOTE]
 >
->詳しくは、次のセクションを参照してください。
->
->* CORS／AEM の説明
->* ビデオ - AEM を使用した CORS 向け開発
+>The request body and/or URL parameters can be used to configure some of these operations; for example, define that a folder or an asset should be created by a **POST** request.
 
+The exact format of supported requests is defined in the API Reference documentation. 
 
-特定の認証要件がある環境では、OAuth を推奨します。
+### Transactional Behavior {#transactional-behavior}
 
-## 使用可能な機能 {#available-features}
+All requests are atomic.
 
-コンテンツフラグメントは特定のアセットタイプです。コンテンツフラグメントの操作を参照してください。
+This means that subsequent (`write`) requests cannot be combined into a single transaction that could succeed or fail as a single entity.
 
-API を通じて使用できる機能について詳しくは、以下を参照してください。
+### Security {#security}
 
-* アセットREST API（その他のリソース）
-* エンティティタイプ。（コンテンツフラグメントに関連した）サポートされる各タイプに固有の機能について説明します。
-
-### ページング {#paging}
-
-Assets REST API では、URL パラメーターを介して（GET リクエストの）ページングをサポートしています。
-
-* `offset` - 取得する最初の（子）エンティティの数
-* `limit` - 返されるエンティティの最大数
-
-応答には、SIREN 出力の `properties` セクションの一部としてページング情報が含まれます。この `srn:paging` プロパティには、リクエストで指定されている、（子）エンティティの総数（`total`）、オフセット（`offset`）および制限（`limit`）が含まれています。
+If the Assets REST API is used within an environment without specific authentication requirements, AEM's CORS filter needs to be configured correctly.
 
 >[!NOTE]
 >
->ページングは通常、コンテナエンティティ（つまり、レンディションのあるフォルダーやアセット）に適用されます。要求されたエンティティの子に関係するからです。
+>For further information see:
+>
+>* CORS/AEM explained
+>* Video - Developing for CORS with AEM
 
-#### 例：ページング {#example-paging}
+In environments with specific authentication requirements, OAuth is recommended.
+
+## Available Features {#available-features}
+
+Content Fragments are a specific type of Asset, see Working with Content Fragments.
+
+For further information about features available through the API see:
+
+* The Assets REST API (Additional Resources) 
+* Entity Types, where the features specific to each supported type (as relevant to Content Fragments) are explained 
+
+### Paging {#paging}
+
+The Assets REST API supports paging (for GET requests) via the URL parameters:
+
+* `offset` - the number of the first (child) entity to retrieve
+* `limit` - the maximum number of entities returned
+
+The response will contain paging information as part of the `properties` section of the SIREN output. This `srn:paging` property contains the total number of (child) entities ( `total`), the offset and the limit ( `offset`, `limit`) as specified in the request.
+
+>[!NOTE]
+>
+>Paging is typically applied on container entities (i.e. folders or assets with renditions), as it relates to the children of the requested entity.
+
+#### Example: Paging {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -168,33 +165,34 @@ Assets REST API では、URL パラメーターを介して（GET リクエス�
 ...
 ```
 
-## エンティティタイプ {#entity-types}
+## Entity Types {#entity-types}
 
-### フォルダー {#folders}
+### Folders {#folders}
 
-フォルダーは、アセットやその他のフォルダーのコンテナとして機能します。AEM コンテンツリポジトリの構造を反映しています。
+Folders act as containers for assets and other folders. They reflect the structure of the AEM content repository.
 
-Assets REST API は、フォルダーのプロパティ（名前、タイトルなど）へのアクセスを公開します。アセットは、フォルダーの子エンティティ、およびサブフォルダーとして公開されます。
+The Assets REST API exposes access to the properties of a folder; for example its name, title, etc. Assets are exposed as child entities of folders, and sub-folders.
 
 >[!NOTE]
 >
->子アセットとフォルダーのアセットタイプによっては、それぞれの子エンティティを定義するすべてのプロパティが、子エンティティのリストに既に含まれている場合があります。または、この子エンティティリストのエンティティに対して、一部のプロパティのみ公開される場合もあります。
+>Depending on the asset type of the child assets and folders the list of child entities may already contain the full set of properties that defines the respective child entity. Alternatively, only a reduced set of properties may be exposed for an entity in this list of child entities.
 
-### アセット {#assets}
+### Assets {#assets}
 
-アセットが要求されると、アセットのメタデータ（タイトルや名前など、それぞれのアセットスキーマで定義される情報）が応答で返されます。
+If an asset is requested, the response will return its metadata; such as title, name and other information as defined by the respective asset schema.
 
-アセットのバイナリデータは、`content` タイプの SIREN リンクとして公開されます。
+The binary data of an asset is exposed as a SIREN link of type `content`.
 
-アセットには複数のレンディションを含めることができます。通常、これらは子エンティティとして公開されます。ただし、サムネールレンディションは例外です。これは、`thumbnail` タイプ（`rel="thumbnail"`）のリンクとして公開されます。
+Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
+-->
 
-### コンテンツフラグメント {#content-fragments}
+## アセットHTTP APIとコンテンツフラグメント{#assets-http-api-content-fragments}
 
-コンテンツフラグメントは、特別な種類のアセットです。 コンテンツフラグメントを使用すれば、テキスト、数値、日付など様々な要素を含む構造化データにアクセスできます。
+コンテンツフラグメントはヘッドレス配信に使用され、コンテンツフラグメントは特殊なアセットです。 テキスト、数字、日付などの構造化されたデータにアクセスするために使用されます。
 
 標準アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。**
 
-#### 表現  {#representation}
+### 表現  {#representation}
 
 コンテンツフラグメント：
 
@@ -203,21 +201,54 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 * アトミックと見なされます。つまり、エレメントとバリエーションは、リンクまたは子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。これにより、フラグメントのペイロードに効率的にアクセスできます。
 
-#### コンテンツモデルとコンテンツフラグメント  {#content-models-and-content-fragments}
+### コンテンツモデルとコンテンツフラグメント  {#content-models-and-content-fragments}
 
 現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、*コンシューマー*&#x200B;は（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなどは定義の一部だからです。
 
 新しいコンテンツフラグメントを作成するには、（内部リポジトリ）モデルのパスを指定する必要があります。
 
-#### 関連コンテンツ {#associated-content}
+### 関連コンテンツ {#associated-content}
 
 関連コンテンツは現在公開されていません。
 
 ## アセットREST APIの使用{#using-aem-assets-rest-api}
 
+### アクセス {#access}
+
+アセットREST APIは`/api/assets`エンドポイントを使用し、アセットにアクセスするにはアセットのパスが必要です（先頭に`/content/dam`を付けません）。
+
+* つまり、次の場所のアセットにアクセスするには
+   * `/content/dam/path/to/asset`
+* 次のリクエストが必要です。
+   * `/api/assets/path/to/asset`
+
+例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
+
+>[!NOTE]
+>アクセス経由：
+>
+>* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
+>* `/content/path/to/page` は `.model` セレクターを使用する&#x200B;**必要があります**。
+
+
+### 操作 {#operation}
+
+実行する操作は HTTP メソッドで決まります。
+
+* **GET**：アセットまたはフォルダーの JSON 表現を取得します
+* **POST**：新しいアセットまたはフォルダーを作成します
+* **PUT**：アセットまたはフォルダーのプロパティを更新します
+* **DELETE**：アセットまたはフォルダーを削除します
+
+>[!NOTE]
+>
+>リクエスト本文または URL パラメーターは、これらの操作の一部を設定するために使用できます。例えば、フォルダーまたはアセットを **POST** リクエストで作成するように定義できます。
+
+サポートされているリクエストの正確な形式は、『API リファレンス』ドキュメントで定義されています。
+
 使用方法は、特定の使用例以外にも、AEM オーサーを使用するかパブリッシュ環境を使用するかで異なることがあります。
 
-* 作成をオーサーインスタンスに結び付けることを強くお勧めします（[現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)）。
+* 作成をオーサーインスタンスに結び付けることを強くお勧めします（現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません）。
 * 配信は、どちらからも可能です。AEM では、要求されたコンテンツを JSON 形式でのみ提供するからです。
 
    * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからの格納と配信で十分です。
@@ -230,7 +261,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 >[!NOTE]
 >
->詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>詳細については、『API リファレンス』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 読み取り／配信 {#read-delivery}
 
@@ -299,6 +330,7 @@ AEMのヘッドレスジャーニーは、次にドキュメント[How to Put It
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [コンテンツフラグメント REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
+* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 * [AEM コアコンポーネント](https://docs.adobe.com/content/help/ja/experience-manager-core-components/using/introduction.html)
 * [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
