@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 0c47dec1e96fc3137d17fc3033f05bf1ae278141
+source-git-commit: 787af0d4994bf1871c48aadab74d85bd7c3c94fb
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 71%
+source-wordcount: '1668'
+ht-degree: 68%
 
 ---
 
@@ -51,6 +51,8 @@ ht-degree: 71%
 
 Assets HTTP APIではコンテンツを&#x200B;**読み取り**&#x200B;できますが、**作成**、**更新**、**削除**&#x200B;コンテンツ（GraphQL APIでは不可能）も実行できます。
 
+Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バージョンの標準インストールで利用できます。
+
 ## Assets HTTP API {#assets-http-api}
 
 [Assets HTTP API](/help/assets/mac-api-assets.md) には次の API が含まれます。
@@ -62,28 +64,16 @@ Assets HTTP APIではコンテンツを&#x200B;**読み取り**&#x200B;できま
 
 Assets REST APIを使用すると、開発者はCloud ServiceとしてAdobe Experience Managerのコンテンツ(AEMに保存されている)に、**CRUD**&#x200B;操作（作成、読み取り、更新、削除）経由で直接アクセスできます。
 
-この API では、コンテンツサービスを JavaScript フロントエンドアプリケーションに提供することで、Adobe Experience Manager as a Cloud Service をヘッドレス CMS（コンテンツ管理システム）として動作させることができます。または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。
-
-例えば、単一ページアプリ(SPA)、フレームワークベースまたはカスタムの場合、API経由で提供されるコンテンツは、多くの場合JSON形式で提供する必要があります。
-
-AEM コアコンポーネントは、この目的に必要な読み取り操作を提供できる非常に包括的で柔軟性の高いカスタマイズ可能な API を提供し、その JSON 出力もカスタマイズできますが、実装には AEM WCM（Web コンテンツ管理）のノウハウが必要です。専用の AEM テンプレートに基づいた（API）ページでこれらのコンポーネントをホストする必要があるからです。すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
-
-これが可能なのは、Assets REST API が使用できる場合です。この場合は、アセット（画像やコンテンツフラグメントなど）に直接アクセスでき、その際に、ページにアセットを埋め込んでからコンテンツをシリアル化 JSON 形式で配信する必要はありません
+この操作により、APIはJavaScriptフロントエンドアプリケーションにContent Servicesを提供することで、ヘッドレスCMS(コンテンツ管理システム)としてAdobe Experience ManagerをCloud Serviceとして操作できます。 または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。例えば、単一ページアプリ(SPA)、フレームワークベースまたはカスタムの場合、API経由で提供されるコンテンツは、多くの場合JSON形式で提供する必要があります。
 
 >[!NOTE]
 >
 >Assets REST API からの JSON 出力はカスタマイズできません。
 
-また、Assets REST API を使用すると、アセット、コンテンツフラグメント、フォルダーの新規作成、更新、削除のいずれかの操作でコンテンツを変更することもできます。
-
 Assets REST API は、
 
 * HATEOAS の原則に従っています。
 * SIREN 形式を実装しています。
-
-## 前提条件 {#prerequisites}
-
-Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バージョンの標準インストールで利用できます。
 
 ## 主要な概念 {#key-concepts}
 
@@ -124,53 +114,6 @@ Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バ�
 
 つまり、後続の（`write`）リクエストを結合して、単一のエンティティとして成功または失敗する単一のトランザクションにすることはできません。
 
-### AEM（Assets）REST API と AEM コンポーネントの比較 {#aem-assets-rest-api-versus-aem-components}
-
-<table>
- <thead>
-  <tr>
-   <td>項目</td>
-   <td>Assets REST API<br/> </td>
-   <td>AEM コンポーネント<br/>（Sling モデルを使用するコンポーネント）</td>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>サポートされている使用例</td>
-   <td>汎用。</td>
-   <td><p>単一ページアプリケーション（SPA）またはその他の任意の（コンテンツ利用）コンテキストにおける使用に最適化されています。</p> <p>レイアウト情報を含むこともできます。</p> </td>
-  </tr>
-  <tr>
-   <td>サポートされている操作</td>
-   <td><p>作成、読み取り、更新、削除。</p> <p>エンティティタイプに応じて、その他の操作も可能です。</p> </td>
-   <td>読み取り専用。</td>
-  </tr>
-  <tr>
-   <td>アクセス</td>
-   <td><p>直接アクセスできます。</p> <p><code>/api/assets </code> エンドポイントを使用し、（リポジトリ内の）<code>/content/dam</code> にマッピングします。</p> 
-   <p>パスの例を次に示します。 <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
-   </td>
-    <td><p>AEM ページ上の AEM コンポーネントを通じて参照する必要があります。</p> <p><code>.model</code> セレクターを使用して JSON 表現を作成します。</p> <p>パスの例を次に示します。<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
-   </td>
-  </tr>
-  <tr>
-   <td>セキュリティ</td>
-   <td><p>複数のオプションが可能です。</p> <p>OAuth が推奨されます。標準セットアップとは別に設定できます。</p> </td>
-   <td>AEM の標準セットアップを使用します。</td>
-  </tr>
-  <tr>
-   <td>アーキテクチャに関する補足</td>
-   <td><p>書き込みアクセスは通常、オーサーインスタンスを対象にします。</p> <p>読み取りはパブリッシュインスタンスを対象にする場合もあります。</p> </td>
-   <td>このアプローチは読み取り専用なので、通常はパブリッシュインスタンスに使用されます。</td>
-  </tr>
-  <tr>
-   <td>出力</td>
-   <td>JSON ベースの SIREN 出力：詳細ながら強力です。コンテンツ内のナビゲーションが可能です。</td>
-   <td>JSON ベースの独自出力。Sling モデルを通じて設定可能です。コンテンツ構造のナビゲーションは実装が困難です（ただし、必ずしも不可能ではありません）。</td>
-  </tr>
- </tbody>
-</table>
-
 ### セキュリティ {#security}
 
 特定の認証要件がない環境で Assets REST API が使用される場合は、AEM の CORS フィルターを正しく設定する必要があります。
@@ -182,9 +125,6 @@ Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バ�
 >* CORS／AEM の説明
 >* ビデオ - AEM を使用した CORS 向け開発
 
->
-
-
 
 特定の認証要件がある環境では、OAuth を推奨します。
 
@@ -194,7 +134,7 @@ Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バ�
 
 API を通じて使用できる機能について詳しくは、以下を参照してください。
 
-* Assets REST API
+* アセットREST API（その他のリソース）
 * エンティティタイプ。（コンテンツフラグメントに関連した）サポートされる各タイプに固有の機能について説明します。
 
 ### ページング {#paging}
@@ -275,16 +215,74 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 ## アセットREST APIの使用{#using-aem-assets-rest-api}
 
+使用方法は、特定の使用例以外にも、AEM オーサーを使用するかパブリッシュ環境を使用するかで異なることがあります。
+
+* 作成をオーサーインスタンスに結び付けることを強くお勧めします（[現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません](/help/assets/content-fragments/assets-api-content-fragments.md#limitations)）。
+* 配信は、どちらからも可能です。AEM では、要求されたコンテンツを JSON 形式でのみ提供するからです。
+
+   * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからの格納と配信で十分です。
+
+   * ライブ Web 配信の場合は、AEM パブリッシュインスタンスをお勧めします。
+
+>[!CAUTION]
+>
+>AEM クラウドインスタンス上の Dispatcher 設定により、`/api` へのアクセスがブロックされる場合があります。
+
+>[!NOTE]
+>
+>詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+
+### 読み取り／配信 {#read-delivery}
+
+使用方法は次のとおりです。
+
+`GET /{cfParentPath}/{cfName}.json`
+
+次に例を示します。
+
+`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
+
+応答は、コンテンツがコンテンツフラグメントに構造化されたシリアル化 JSON です。参照は参照 URL として配信されます。
+
+次の 2 通りの読み取り操作が可能です。
+
+* 特定のコンテンツフラグメントをパスで読み取る。この場合は、コンテンツフラグメントの JSON 表現が返されます。
+* コンテンツフラグメントのフォルダーをパスで読み取る。この場合は、フォルダー内のすべてのコンテンツフラグメントの JSON 表現が返されます。
+
+### 作成 {#create}
+
+使用方法は次のとおりです。
+
+`POST /{cfParentPath}/{cfName}`
+
+本文には、作成するコンテンツフラグメントの JSON 表現を含める必要があります。これには、コンテンツフラグメント要素に設定する必要がある初期コンテンツも含まれます。`cq:model` プロパティの設定が必須で、このプロパティが有効なコンテンツフラグメントモデルを指している必要があります。そうしないと、エラーが発生します。また、`Content-Type` ヘッダーを追加することも必要です。これは `application/json` に設定されます。
+
+### 更新 {#update}
+
+使用方法は次のとおりです。
+
+`PUT /{cfParentPath}/{cfName}`
+
+本文には、特定コンテンツフラグメントの更新内容の JSON 表現を含める必要があります。
+
+これには、コンテンツフラグメントのタイトルや説明、単一のエレメント、またはすべての要素値やメタデータを使用できます。
+
+### 削除 {#delete}
+
+使用方法は次のとおりです。
+
+`DELETE /{cfParentPath}/{cfName}`
+
 AEM AssetsREST APIの使用の詳細については、次を参照してください。
 
-* Adobe Experience ManagerアセットHTTP API
-* AEM Assets HTTP API でのコンテンツフラグメントのサポート 
+* Adobe Experience ManagerアセットHTTP API（その他のリソース）
+* AEM AssetsHTTP APIでのコンテンツフラグメントのサポート（追加リソース）
 
 ## 次の作業{#whats-next}
 
 AEMヘッドレス開発者ジャーニーのこの部分が完了したら、次の作業を行う必要があります。
 
-* AEM AssetsHTTP APIについて説明します。
+* AEM AssetsHTTP APIの基本について説明します。
 * このAPIでコンテンツフラグメントがどのようにサポートされているかを理解します。
 
 <!--
