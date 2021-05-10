@@ -5,8 +5,8 @@ feature: リリース情報
 translation-type: tm+mt
 source-git-commit: e2d4bb7649fad3ee172c6f049ecfdedc71417ee2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '327'
+ht-degree: 18%
 
 ---
 
