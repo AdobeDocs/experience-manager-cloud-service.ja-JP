@@ -3,10 +3,10 @@ title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 translation-type: tm+mt
-source-git-commit: 28c3fb4c5c0da175ee84463d7c100bdb1b93bb30
+source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 73%
+source-wordcount: '1761'
+ht-degree: 72%
 
 ---
 
@@ -57,6 +57,12 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。現在、サブルートフォルダーはサポートされていません。
 
 上記のサンプルのパッケージは、`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` としてビルドされます。
+
+>[!NOTE]
+>
+>インデックス定義を含むコンテンツパッケージは、コンテンツパッケージのプロパティファイル内の`/META-INF/vault/properties.xml`に次のプロパティを設定する必要があります。
+>
+>`noIntermediateSaves=true`
 
 ### 索引定義のデプロイ {#deploying-index-definitions}
 
@@ -165,7 +171,7 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 >[!NOTE]
 >
->AEM上のCloud Serviceとしてのインデックス定義は、ローカル開発インスタンス上のインデックス定義と完全には一致しない場合があります。 開発インスタンスにはTika設定はありませんが、AEMのCloud ServiceインスタンスにはTika設定があります。 Tika構成でインデックスをカスタマイズする場合は、Tika構成を維持してください。
+>AEM上のCloud Serviceとしてのインデックス定義は、ローカル開発インスタンス上のインデックス定義と完全に一致しない場合があります。 開発インスタンスにはTika設定はありませんが、AEMのCloud ServiceインスタンスにはTika設定があります。 Tika構成でインデックスをカスタマイズする場合は、Tika構成を維持してください。
 
 ### 変更の取り消し{#undoing-a-change}
 
