@@ -6,9 +6,9 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: dd30bbb57d2746a7b16cb0546b90df0758fc3740
+source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2155'
 ht-degree: 32%
 
 ---
@@ -239,6 +239,14 @@ Assets へのアクセスに必要な権限です。
 
 ## AEM GraphQL APIの実際の使用{#actually-using-aem-graphiql}
 
+コンテンツのクエリを開始する前に、次の操作を行う必要があります。
+
+* エンドポイントを有効にする
+   * ツール/サイト/GraphQLを使用
+
+* GraphiQLのインストール（必要な場合）
+   * 専用パッケージとしてインストール
+
 AEM GraphQL APIをクエリで実際に使用するには、次の2つの非常に基本的なコンテンツフラグメントモデル構造を使用します。
 
 * 会社情報
@@ -346,6 +354,8 @@ AEM GraphQL APIを使用してヘッドレスコンテンツにアクセスし�
    * [GraphQL Javaライブラリ](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
 * [AEMでのGraphQLの使用方法](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * [GraphQL エンドポイントの有効化](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [AEM GraphiQL インターフェイスのインストール](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 * [サンプルコンテンツフラグメント構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    * [サンプルクエリ - 1 つの特定の都市フラグメント](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
