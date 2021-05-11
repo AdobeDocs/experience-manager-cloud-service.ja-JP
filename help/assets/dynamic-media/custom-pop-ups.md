@@ -1,18 +1,18 @@
 ---
 title: クイック表示を使用したカスタムポップアップの作成
-description: 「eコマースエクスペリエンスでデフォルトのクイック表示がどのように使用され、購入を促す製品情報がポップアップウィンドウに表示されるかについて説明します。 カスタムコンテンツをトリガーしてポップアップウィンドウに表示できます。」
+description: 「eコマースエクスペリエンスでデフォルトのクイック表示がどのように使用され、購入を促す製品情報がポップアップウィンドウに表示されるかについて説明します。 カスタムコンテンツをトリガーして、ポップアップWindows®に表示できます。」
 feature: インタラクティブ画像，インタラクティブビデオ，カルーセルバナー
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
 workflow-type: tm+mt
 source-wordcount: '1034'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
-# クイック表示を使用したカスタムポップアップウィンドウの作成{#using-quickviews-to-create-custom-pop-ups}
+# クイック表示を使用したカスタムポップアップWindows® {#using-quickviews-to-create-custom-pop-ups}の作成
 
 デフォルトのクイック表示はeコマースエクスペリエンスで使用され、eコマースエクスペリエンスでは、購入を促すために製品情報と共にポップアップが表示されます。 ただし、このようなポップアップにカスタムコンテンツが表示されるように設定できます。使用するビューアに応じて、ユーザーはホットスポット、サムネール画像、画像マップをタップして、情報や関連するコンテンツを表示できます。
 
@@ -24,7 +24,7 @@ ht-degree: 44%
 
 各ビューアの機能は異なりますが、クイック表示の作成プロセスは、サポートされる3つのビューアすべてで同じです。
 
-**クイック表示を使用してカスタムポップアップウィンドウを作成するには**
+**クイック表示を使用してカスタムポップアップWindows®を作成するには：**
 
 1. アップロードしたアセットのクイック表示を作成する。
 
@@ -101,8 +101,8 @@ ht-degree: 44%
 
    `setHandlers()` メソッドについて詳しくは、以下を参照してください。
 
-   * インタラクティブ画像ビューア：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=ja)
-   * インタラクティブビデオビューア：[sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=ja)
+   * インタラクティブ画像ビューア — [セットハンドラ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=ja)
+   * インタラクティブビデオビューア — [セットハンドラ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=ja)
 
 1. 次に`quickViewActivate`ハンドラを設定します。
 
