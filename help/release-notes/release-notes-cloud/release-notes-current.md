@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
+source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '2002'
 ht-degree: 5%
 
 ---
@@ -223,6 +223,22 @@ AEMのCloud ManagerのCloud Service2021.4.0のリリース日は2021年4月8日�
 * `CloudServiceIncompatibleWorkflowProcess`の問題は、ダウンロード可能な雑誌号CSVファイル内で誤った重大度になっていました。
 
 * `Runmode`チェックは、非フォルダーノードで偽陽性を生み出していました。
+
+## コンテンツ転送ツール {#content-transfer-tool}
+
+### リリース日 {#release-date-ctt}
+
+コンテンツ転送ツールv1.4.0のリリース日は2021年5月11日です。
+
+### 新機能 {#what-is-new-ctt-may}
+
+* このバージョンのコンテンツ転送ツールでは、Cloud Serviceに移行するアセットのテキストレンディションが作成されます。 取り込んだアセットでフルテキスト検索をサポートするには、テキストレンディションが必要です。
+* ユーザーが作成できるコンテンツ転送ツールの移行セットの最大数が4から10に増えました。
+
+### バグ修正 {#bug-fixes-ctt-may}
+
+* コンテンツ転送ツールUIの自動更新機能に関する複数のバグ修正が行われました。
+* `wipe=true`を含むコンテンツ転送ツールで、ターゲットのカウンターインデックスが正しくありませんでした。 この問題が修正されました。
 
 ## ベストプラクティスアナライザー {#best-practices-analyzer}
 
