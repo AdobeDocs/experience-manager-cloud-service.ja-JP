@@ -5,9 +5,9 @@ feature: コンテンツフラグメント
 role: Business Practitioner
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 translation-type: tm+mt
-source-git-commit: f0e484dbe8549dadc48cc82713861c591a1c5661
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 73%
 
 ---
@@ -28,7 +28,7 @@ AEMの強力なヘッドレス配信機能を利用するために、設定ブ�
 >**コンテンツフラグメントモデル**&#x200B;を有効にしない場合：
 >
 >* **「作成**」オプションは、新しいモデルを作成する際には使用できません。
->* [テナントを選択して、関連するエンドポイント](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)を作成することはできません。
+>* [サイト構成を選択して関連するエンドポイント](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)を作成することはできません。
 
 
 コンテンツフラグメント機能を有効にするには、次の操作を実行する必要があります。
