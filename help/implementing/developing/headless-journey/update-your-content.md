@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: 7732a291d070a5d93a6f490877b909e1331be1e2
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '1270'
-ht-degree: 57%
+source-wordcount: '1115'
+ht-degree: 51%
 
 ---
 
@@ -190,26 +190,28 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 コンテンツフラグメントはヘッドレス配信に使用され、コンテンツフラグメントは特殊なアセットです。 テキスト、数字、日付などの構造化されたデータにアクセスするために使用されます。
 
-標準アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。**
+<!--
+As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 
-### 表現  {#representation}
+### Representation {#representation}
 
-コンテンツフラグメント：
+Content fragments:
 
-* バイナリデータを公開しません。
-* JSON 出力（`properties` プロパティ内）に完全に含まれます。
+* Do not expose any binary data.
+* Are completely contained in the JSON output (within the `properties` property).
 
-* アトミックと見なされます。つまり、エレメントとバリエーションは、リンクまたは子エンティティとしてではなく、フラグメントのプロパティの一部として公開されます。これにより、フラグメントのペイロードに効率的にアクセスできます。
+* Are also considered atomic, i.e. the elements and variations are exposed as part of the fragment's properties vs. as links or child entities. This allows for efficient access to the payload of a fragment.
 
-### コンテンツモデルとコンテンツフラグメント  {#content-models-and-content-fragments}
+### Content Models and Content Fragments {#content-models-and-content-fragments}
 
-現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、*コンシューマー*&#x200B;は（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなどは定義の一部だからです。
+Currently the models that define the structure of a content fragment are not exposed through an HTTP API. Therefore the *consumer* needs to know about the model of a fragment (at least a minimum) - although most information can be inferred from the payload; as data types, etc. are part of the definition.
 
-新しいコンテンツフラグメントを作成するには、（内部リポジトリ）モデルのパスを指定する必要があります。
+To create a new content fragment, the (internal repository) path of the model has to be provided.
 
-### 関連コンテンツ {#associated-content}
+### Associated Content {#associated-content}
 
-関連コンテンツは現在公開されていません。
+Associated content is currently not exposed.
+-->
 
 ## アセットREST APIの使用{#using-aem-assets-rest-api}
 
