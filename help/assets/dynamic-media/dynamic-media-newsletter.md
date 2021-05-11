@@ -1,14 +1,14 @@
 ---
 title: Dynamic Media ニュースレター
-description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップショップニュースレターでは、貴重なナレッジビルディングリソースをご利用いただけます。 例えば、ハウツービデオやソリューションの概要があります。 画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部について説明します。 '
+description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic MediaとDynamic Mediaクラシックを素早く使いこなせるように設計されており、価値をすぐに実感できます。 このワンストップショップニュースレターでは、貴重なナレッジビルディングリソースをご利用いただけます。 例えば、ハウツービデオやソリューションの概要があります。 画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部について説明します。 '
 feature: アセット管理
 role: Business Practitioner
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 69%
+source-wordcount: '1147'
+ht-degree: 67%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 69%
    * 通常よりも訪問者トラフィックが多い日への備えに関する Dynamic Media チームからの支援について
    * 最近の 2 つのスキルビルダー Web セミナーを受講できるセカンドチャンス
    * デジタルアセットの不正コピーからの保護に関するオンデマンド Web セミナーの視聴
-   * Bridget Roman 氏（Adobe Experience Manager Assets 担当シニアプロダクトマーケティングマネージャー）へのインタビュー
+   * Bridget Roman 氏（ Experience Manager Assets 担当シニアプロダクトマーケティングマネージャー）へのインタビュー
    * Experience League での Dynamic Media および Dynamic Media Classic のすばやい習得
 
 * **[2019 年 8 月、第 08 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
@@ -112,7 +112,7 @@ ht-degree: 69%
    この号の主な内容：
 
    * Dynamic Media にアップグレードした場合にのみ利用できる有用な機能の紹介
-   * Adobe Experience Manager Assets と Dynamic Media をすばやく習得できるように工夫されている Web セミナーシリーズの概要
+   *  Experience Manager Assets と Dynamic Media をすばやく習得できるように工夫されている Web セミナーシリーズの概要
    * Dynamic Media で価値を実現する取り組みの出発点としての Experience League
    * 訪問者がリッチメディアとどのようにやり取りしているかを分析できる強力な統合機能（今年 9 月にリリース予定）のプレビュー
    * PieterJan Pieper 氏（Dynamic Media テクニカルサポートエキスパート）へのインタビュー
@@ -124,7 +124,7 @@ ht-degree: 69%
    * 価値の高いアセットを適切に管理して、訪問者の再訪を維持できるエクスペリエンスを自信を持って提供するためのリソースと情報
    * デジタルアセットの保護に関する今後の Web セミナーの紹介
    * 情報満載の Adobe Insider Tour の次のステップ
-   * Adobe Experience Manager Assets（AEM Assets）内に Dynamic Media が組み込まれている場合に利用できる優れた機能
+   *  Experience Manager Assets（AEM Assets）内に Dynamic Media が組み込まれている場合に利用できる優れた機能
    * Web サイトへの 360 度ビデオとカスタムビデオサムネールの追加
    * Andrew Hathaway 氏（AEM Assets 内 Dynamic Media 担当主任ソリューションコンサルタント）へのインタビュー
 
@@ -151,7 +151,7 @@ ht-degree: 69%
 
 * **[2019 年 4 月、第 04 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Dynamic Mediaニュースレターの発表の問題へようこそ。 Adobeの新しい月刊ニュースレターは、ニュース、イベント、リソースでいっぱいです。 コンテンツは、Adobe Experience ManagerアセットやAdobeDynamic MediaクラシックのDynamic Mediaのユーザ向けです。
+   Dynamic Mediaニュースレターの発表の問題へようこそ。 Adobeの新しい月刊ニュースレターは、ニュース、イベント、リソースでいっぱいです。 コンテンツは、Experience Manager資産およびAdobeDynamic Mediaクラシック内のDynamic Mediaのユーザー向けです。
 
    この号の主な内容：
 
