@@ -4,10 +4,10 @@ description: HTTP/2 コンテンツ配信について説明します。
 role: Administrator,Business Practitioner
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 73%
+source-wordcount: '794'
+ht-degree: 69%
 
 ---
 
@@ -17,15 +17,13 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->この機能を使用するには、Adobe Experience ManagerDynamic Mediaにバンドルされている標準搭載のCDNを使用する必要があります。 この機能では、その他のカスタムCDNはサポートされません。
+>この機能を使用するには、Adobe Experience Manager-Dynamic Mediaにバンドルされている標準搭載のコンテンツ配信ネットワークを使用する必要があります。 この機能では、他のカスタムコンテンツ配信ネットワークはサポートされていません。
 
 ## HTTP/2 とは {#what-is-http}
 
 HTTP/2 によりブラウザーとサーバーの通信が改善され、必要な処理能力を抑えながら情報をより高速に転送できます。
 
-HTTP/2 とその利点については、次の Web サイトで簡潔に説明されています。
-
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+Webサイトの記事[HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)について知っておく必要のあることは、HTTP/2とその利点を簡単かつシンプルに説明しています。
 
 ## コンテンツ配信を HTTP/2 に移行する主なメリット {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
