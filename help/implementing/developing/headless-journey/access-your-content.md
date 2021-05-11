@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: d21d5a496d4a82dd569e582b5b7d7425bd50077f
+source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 32%
+source-wordcount: '846'
+ht-degree: 15%
 
 ---
 
@@ -50,194 +50,198 @@ Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM Grap
 >
 >AEM GraphQL APIは、標準のGraphQL API仕様に基づいてカスタマイズされた実装です。
 
-## GraphQL — 入門{#graphql-introduction}
+<!--
+## GraphQL - An Introduction {#graphql-introduction}
 
-GraphQLは、次の機能を提供するオープンソース仕様です。
+GraphQL is an open-source specification that provides:
 
-* 構造化オブジェクトから特定のコンテンツを選択できるクエリ言語。
-* 構造化コンテンツでこれらのクエリを満たすランタイム。
+* a query language that enables you to select specific content from structured objects.
+* a runtime to fulfill these queries with your structured content.
 
-GraphQLは&#x200B;*厳密に*&#x200B;型指定されたAPIです。 つまり、*すべての*&#x200B;コンテンツは、タイプ別に明確に構成、整理されていなければならないので、GraphQL *は、何にアクセスし、何にアクセスするかと、どのようにしてアクセスするかを理解している必要があります。*&#x200B;データフィールドはGraphQLスキーマ内で定義され、コンテンツオブジェクトの構造を定義します。
+GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
 
-次に、GraphQLエンドポイントは、GraphQLクエリに応答するパスを提供します。
+GraphQL endpoints then provide the paths that respond to the GraphQL queries.
 
-つまり、アプリをAEMで使用する場合に必要なコンテンツだけを、正確かつ信頼性の高い方法で効率的に選択できます。
+All this means that your app can accurately, reliably and efficiently select the content that it needs - just what you need when used with AEM.
 
 >[!NOTE]
 >
->*GraphQL*.orgおよび&#x200B;*GraphQL*.comを参照してください。
+>See *GraphQL*.org and *GraphQL*.com.
 
-## AEMとGraphQL {#aem-graphql}
+## AEM and GraphQL {#aem-graphql}
 
-GraphQLはAEMのさまざまな場所で使用され、例：
+GraphQL is used in various locations in AEM; for example:
 
-* コンテンツフラグメント
-   * このユースケース用にカスタマイズされたAPIが開発されました(アプリに対するヘッドレス配信)。
-      * これはAEM GraphQL APIです。
+* Content Fragments
+  * A customized API has been developed for this use-case (Headless Delivery to your app).
+    * This is the AEM GraphQL API.
 * Commerce
-   * AEMコマースは、GraphQLを介してコマースプラットフォームのデータを使用します。
-   * AEMと様々なサードパーティのコマースソリューション間にはGraphQL統合が存在し、CIFコアコンポーネントが提供する拡張フックと共に使用されます。
-      * AEM GraphQL APIは使用しません。
+  * AEM Commerce consumes data from a Commerce platform via GraphQL.
+  * There are GraphQL integrations between AEM and various third-party commerce solutions, used with the extension hooks provided by the CIF Core Components.
+    * This does not use the AEM GraphQL API.
 
 >[!NOTE]
 >
->ヘッドレスジャーニーのこの手順は、AEM GraphQL APIとコンテンツフラグメントに関するものです。
+>This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-AEM GraphQL APIは、標準のGraphQL API仕様に基づいてカスタマイズされたバージョンで、コンテンツフラグメントに対して（複雑な）クエリを実行できるように特別に設定されています。
+The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
 
-コンテンツフラグメントは、コンテンツがコンテンツフラグメントのモデルに従って構造化されているので使用されます。 これは、GraphQLの基本的な要件を満たします。
+Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
 
-* コンテンツフラグメントモデルは、1つ以上のフィールドで構成されています。
-   * 各フィールドはデータ型に従って定義されます。
-* コンテンツフラグメントモデルは、対応するAEM GraphQLスキーマの生成に使用されます。
+* A Content Fragment Model is built up of one, or more, fields. 
+  * Each field is defined according to a Data Type.
+* Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
 
-AEM用のGraphQL（およびコンテンツ）に実際にアクセスするには、エンドポイントを使用してアクセスパスを提供します。
+To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
 
-AEM GraphQL APIを介して返されたコンテンツは、アプリケーションで使用できます。
+The content returned, via the AEM GraphQL API, can then be used by your applications. 
 
 >[!NOTE]
 >
->AEM GraphQL API の実装は、GraphQL Java ライブラリに基づいています。
+>The AEM GraphQL API implementation is based on the GraphQL Java libraries.
 
-### オーサー環境とパブリッシュ環境の使用例 {#use-cases-author-publish-environments}
+### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
-AEM GraphQL APIの使用例は、Cloud Service環境としてのAEMのタイプに応じて異なります。
+The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
 
-* パブリッシュ環境の使用目的：
-   * JSアプリケーションのクエリコンテンツ（標準の使用例）
+* Publish environment; used to: 
+  * Query content for JS application (standard use-case)
 
-* オーサー環境の使用目的：
-   * 「コンテンツ管理目的」のクエリコンテンツ：
-      * AEM as a Cloud Service の GraphQL は現在読み取り専用の API です。
-      * CR（U）D 操作には REST API を使用できます。
+* Author environment; used to: 
+  * Query content for "content management purposes":
+    * GraphQL in AEM as a Cloud Service is currently a read-only API.
+    * The REST API can be used for CR(u)D operations.
 
-## AEM GraphQL API で使用するコンテンツフラグメント {#content-fragments-use-with-aem-graphql-api}
+## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
 
-コンテンツフラグメントは、AEMスキーマやクエリのGraphQLの基盤として、次のように使用できます。
+Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
 
-* ページに依存しないコンテンツをデザイン、作成、キュレーションおよび公開できます。
-* これらはコンテンツフラグメントモデルに基づいています。コンテンツフラグメントモデルでは、定義済みのデータ型を使用して、結果のフラグメントの構造を事前に定義します。
-* 構造の追加のレイヤーは、フラグメント参照データ型を使用して作成できます。このデータ型は、モデルの定義時に使用できます。
+* They enable you to design, create, curate and publish page-independent content.
+* They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment by means of defined data types.
+* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
+ 
+### Content Fragment Models {#content-fragments-models}
 
-### コンテンツフラグメントモデル {#content-fragments-models}
+These Content Fragment Models:
 
-コンテンツフラグメントモデルは、
+* Are used to generate the Schemas, once **Enabled**.
 
-* **有効**&#x200B;にされると、スキーマの生成に使用されます。
+* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
 
-* GraphQL に必要なデータタイプとフィールドを提供します。アプリケーションが、可能なことだけを要求して期待するものを受け取るようにします。
+* The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
 
-* データタイプ&#x200B;**フラグメント参照**&#x200B;は、別のコンテンツフラグメントを参照するためにモデル内で使用できるので、構造レベルを追加します。
+### Fragment References {#fragment-references}
 
-### フラグメント参照 {#fragment-references}
+The **Fragment Reference**:
 
-**フラグメント参照**&#x200B;は、
+* Is a specific data type available when defining a Content Fragment Model.
 
-* は、コンテンツフラグメントモデルの定義時に使用できる特定のデータ型です。
+* References another fragment, dependent on a specific Content Fragment Model.
 
-* 特定のコンテンツフラグメントモデルに依存する別のフラグメントを参照します。
+* Allows you to create, and then retrieve, structured data.
 
-* 構造化データを作成し、取得できます。
+  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 
-   * **マルチフィード**&#x200B;として定義した場合、複数のサブフラグメントをプライムフラグメントで参照（取得）できます。
+### JSON Preview {#json-preview}
 
-### JSON プレビュー {#json-preview}
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-コンテンツフラグメントモデルの設計と開発に役立つように、コンテンツフラグメントエディターでJSON出力をプレビューできます。
+## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
-## コンテンツフラグメントからのGraphQLスキーマ生成{#graphql-schema-generation-content-fragments}
+GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
 
-GraphQLは、厳密に型指定されたAPIです。つまり、コンテンツは型別に明確に構造化、整理する必要があります。 GraphQLの仕様には、特定のインスタンスのコンテンツを調査するための堅牢なAPIの作成方法に関する一連のガイドラインが記載されています。 そのタスクをおこなうには、クライアントはスキーマを取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
-
-コンテンツフラグメントの場合、GraphQL スキーマ（構造とタイプ）は、**有効**&#x200B;なコンテンツフラグメントモデルとそれらのデータタイプに基づいています。
+For Content Fragments, the GraphQL schemas (structure and types) are based on **Enabled** Content Fragment Models and their data types.
 
 >[!CAUTION]
 >
->（**有効**&#x200B;になっているコンテンツフラグメントモデルから派生した）すべての GraphQL スキーマは、GraphQL エンドポイントを通じて読み取り可能です。
+>All the GraphQL schemas (derived from Content Fragment Models that have been **Enabled**) are readable through the GraphQL endpoint.
 >
->つまり、機密データがGraphQLエンドポイントを介して公開されないようにするために、機密コンテンツが利用できないことを確認する必要があります。たとえば、これにはモデル定義のフィールド名として存在する可能性のある情報が含まれます。
+>This means that you need to ensure that no sensitive content is available, to ensure that no sensitive data is exposed via GraphQL endpoints; for example, this includes information that could be present as field names in the model definition.
 
-例えば、ユーザーが `Article` という名前のコンテンツフラグメントモデルを作成した場合、AEMは `ArticleModel` 型のオブジェクト `article` を生成します。この型に含まれるフィールドは、モデルで定義されているフィールドとデータ型に対応しています。
+For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
 
-1. コンテンツフラグメントモデル：
+1. A Content Fragment Model:
 
-   ![GraphQL で使用するコンテンツフラグメントモデル](assets/graphqlapi-cfmodel.png "GraphQL で使用するコンテンツフラグメントモデル")
+   ![Content Fragment Model for use with GraphQL](assets/graphqlapi-cfmodel.png "Content Fragment Model for use with GraphQL")
 
-1. 対応するGraphQLスキーマ（GraphiQLの自動ドキュメントからの出力）:
-   ![コンテンツフラグメントモデルに基づく GraphQL スキーマ](assets/graphqlapi-cfm-schema.png "コンテンツフラグメントモデルに基づく GraphQL スキーマ")
+1. The corresponding GraphQL schema (output from GraphiQL automatic documentation):
+   ![GraphQL Schema based on Content Fragment Model](assets/graphqlapi-cfm-schema.png "GraphQL Schema based on Content Fragment Model")
 
-   この図では、生成された型 `ArticleModel` に複数の[フィールド](#fields)が含まれていることがわかります。
+   This shows that the generated type `ArticleModel` contains several [fields](#fields). 
+   
+   * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
-   * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
-   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、前に`_`が付いています。
+1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the Sample Queries.md#graphql-sample-queries) (based on a sample Content Fragment structure for use with GraphQL.
 
-1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、Sampleクエリ.md#graphql-sample-クエリを参照してください（GraphQLで使用するサンプルコンテンツフラグメント構造に基づきます）。
+In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
-AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
+The Sites GraphQL service listens (in the background) for any modifications made to a Content Fragment Model. When updates are detected, only that part of the schema is regenerated. This optimization saves time and provides stability.
 
-Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を確保できます。
+So for example, if you:
 
-例えば、次のようになります。
+1. Install a package containing `Content-Fragment-Model-1` and `Content-Fragment-Model-2`:
+ 
+   1. GraphQL types for `Model-1` and `Model-2` will be generated.
 
-1. `Content-Fragment-Model-1` と `Content-Fragment-Model-2` を含んだパッケージをインストールすると、
+1. Then modify `Content-Fragment-Model-2`:
 
-   1. `Model-1` と `Model-2` の GraphQL 型が生成されます。
+   1. Only the `Model-2` GraphQL type will get updated.
 
-1. 次に `Content-Fragment-Model-2` を変更すると、
-
-   1. `Model-2` GraphQL 型だけが更新されます。
-
-   1. 一方、`Model-1` は同じままです。
+   1. Whereas `Model-1` will remain the same. 
 
 >[!NOTE]
 >
->REST API を使用してコンテンツフラグメントモデルの一括更新をおこなう場合などには、この点に留意することが大切です。
+>This is important to note in case you want to do bulk updates on Content Fragment Models through the REST api, or otherwise.
 
-スキーマは、GraphQL クエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子 `GQLschema` で呼び出されることに対処します。例えば、`/content/cq:graphql/global/endpoint.GQLschema` で単純な `GET` リクエストを実行すると、`text/x-graphql-schema;charset=iso-8859-1` の Content-type を持つスキーマが出力されます。
+The schema is served through the same endpoint as the GraphQL queries, with the client handling the fact that the schema is called with the extension `GQLschema`. For example, performing a simple `GET` request on `/content/cq:graphql/global/endpoint.GQLschema` will result in the output of the schema with the Content-type: `text/x-graphql-schema;charset=iso-8859-1`.
 
-### スキーマの生成 — 未公開モデル{#schema-generation-unpublished-models}
+### Schema Generation - Unpublished Models {#schema-generation-unpublished-models}
 
-コンテンツフラグメントがネストされている場合、親のコンテンツフラグメントモデルは発行されるが、参照されているモデルは発行されない可能性があります。
+When Content Fragments are nested it can happen that a parent Content Fragment Model is published, but a referenced model is not.
 
 >[!NOTE]
 >
->AEM UIはこのような状況を防ぎますが、プログラムやコンテンツパッケージを使用して公開する場合は、この状況が発生する可能性があります。
+>The AEM UI prevents this happening, but if publishing is made programmatically, or with content packages, it can occur.
 
-この場合、AEMは親コンテンツフラグメントモデルに対して&#x200B;*不完全な*&#x200B;スキーマを生成します。 これは、未公開のモデルに依存するフラグメント参照がスキーマから削除されることを意味します。
+When this happens, AEM generates an *incomplete* Schema for the parent Content Fragment Model. This means that the Fragment Reference, which is dependent on the unpublished model, is removed from the schema.
 
-## AEM GraphQLエンドポイント{#aem-graphql-endpoints}
+## AEM GraphQL Endpoints {#aem-graphql-endpoints}
 
-<!--
-need details/examples
+An endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
+
+* access the GraphQL schemas,
+* send your GraphQL queries,
+* receive the responses (to your GraphQL queries).
+
+AEM allows for:
+
+* A global endpoint - available for use by all sites.
+* Endpoints for specific Sites configurations - that you can configure (in the Configuration Browser), specific to a specified site/project.
+
+## Permissions {#permissions}
+
+The permissions are those required for accessing Assets.
+
+## The AEM GraphiQL Interface {#aem-graphiql-interface}
+
+To help you directly input, and test queries, an implementation of the standard GraphiQL interface is available for use with AEM GraphQL. This can be installed with AEM.
+
+>[!NOTE]
+>
+>GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
+
+It provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation.
+
+![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 -->
 
-エンドポイントは、AEM用のGraphQLへのアクセスに使用するパスです。 このパスを使用すると、以下が可能になります。
-
-* GraphQLスキーマへのアクセス、
-* GraphQL クエリの送信
-* （GraphQL クエリに対する）応答の受信
-
-AEMでは次のことが可能です。
-
-* グローバルエンドポイント — すべてのサイトで使用できます。
-* テナントエンドポイント — 指定したサイト/プロジェクトに固有の、設定可能なエンドポイント。
-
-## 権限 {#permissions}
-
-Assets へのアクセスに必要な権限です。
-
-## AEM GraphicQL Interface {#aem-graphiql-interface}
-
-クエリを直接入力し、テストする際に役立つように、標準のGraphiQLインターフェイスをAEM GraphQLで使用できます。 これは AEM と共にインストールできます。
-
-構文の強調表示、オートコンプリート、オートコンプリートなどの機能と、履歴およびオンラインドキュメントが提供されます。
-
-![GraphiQL インターフェイス](assets/graphiql-interface.png "GraphiQL インターフェイス")
-
 ## AEM GraphQL APIの実際の使用{#actually-using-aem-graphiql}
+
+### 初期設定 {#initial-setup}
 
 コンテンツのクエリを開始する前に、次の操作を行う必要があります。
 
@@ -246,6 +250,8 @@ Assets へのアクセスに必要な権限です。
 
 * GraphiQLのインストール（必要な場合）
    * 専用パッケージとしてインストール
+
+### サンプル構造{#sample-structure}
 
 AEM GraphQL APIをクエリで実際に使用するには、次の2つの非常に基本的なコンテンツフラグメントモデル構造を使用します。
 
@@ -264,9 +270,13 @@ AEM GraphQL APIをクエリで実際に使用するには、次の2つの非常�
 * コンテンツフラグメントエディターでコンテンツを作成する場合
 * クエリするGraphQLスキーマを生成するには
 
+### クエリのテスト場所{#where-to-test-your-queries}
+
 クエリは、GraphiciQLインターフェイスで入力できます。例えば、次のURLで入力できます。
 
 * `http://localhost:4502/content/graphiql.html `
+
+### クエリ使用の手引き{#getting-Started-with-queries}
 
 単刀直入なクエリは、会社スキーマ内のすべてのエントリの名前を返すことです。 ここでは、すべての会社名のリストをリクエストします。
 
