@@ -6,10 +6,10 @@ feature: スマートタグ，タグ付け
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 translation-type: tm+mt
-source-git-commit: d86581f61c9dd7339f7deb8ee1f5e469ce2b5f7c
+source-git-commit: 2633a8fdd8301a38cd044ba822494ed54c564863
 workflow-type: tm+mt
-source-wordcount: '2707'
-ht-degree: 84%
+source-wordcount: '2401'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 84%
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
 
-背景には、この機能は、[Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html)の人工的に知的なフレームワークを使用して、タグ構造とビジネスタクソノミに画像認識アルゴリズムをトレーニングしています。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。新しい [!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。これにより、スマートタグ機能を迅速に設定できます。より古いデプロイメントでは、管理者は[スマートタグ統合の設定](/help/assets/smart-tags-configuration.md#aio-integration)を手動でおこなえます。
+背景には、この機能は、[Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html)の人工的に知的なフレームワークを使用して、タグ構造とビジネスタクソノミに画像認識アルゴリズムをトレーニングしています。 その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。[!DNL Experience Manager Assets] のデプロイメントは、デフォルト [!DNL Adobe Developer Console] でと統合されます。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -151,40 +151,42 @@ ht-degree: 84%
 
 ## アセットのタグ付け {#tag-assets}
 
-スマートタグサービスのトレーニングを終えたら、タグ付けワークフローをトリガーして、異なるアセットにタグを自動的に適用できます。 タグ付けワークフローは、オンデマンドで適用したり、定期的に実行するようにスケジュールしたりできます。 タグ付けワークフローは、アセットとフォルダーの両方に対して適用されます。
+Smart Tagsサービスのトレーニングを終えると、アップロードされたアセットは自動的にタグ付けされます。 [!DNL Experience Manager] 適切なタグをほぼリアルタイムで適用します。タグ付けワークフローは、オンデマンドで適用したり、定期的に実行するようにスケジュールしたりできます。 タグ付けワークフローは、アセットとフォルダーの両方に対して適用されます。
 
-### ワークフローコンソールからのアセットのタグ付け {#tagging-assets-from-the-workflow-console}
+<!--
+### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
 
-1. [!DNL Experience Manager]インターフェイスで、**[!UICONTROL ツール]** > **[!UICONTROL ワークフロー]** > **[!UICONTROL モデル]**&#x200B;に移動します。
-1. **[!UICONTROL ワークフローモデル]**&#x200B;ページで、「**[!UICONTROL DAM スマートタグアセット]**」ワークフローを選択し、ツールバーの「**[!UICONTROL ワークフローを開始]**」をクリックします。
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. **[!UICONTROL ワークフローを実行]**&#x200B;ダイアログで、タグを自動的に適用するアセットが格納されているペイロードフォルダーを参照します。
-1. ワークフローのタイトルとオプションのコメントを指定します。「**[!UICONTROL 実行]**」をクリックします。
+1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Specify a title for the workflow and an optional comment. Click **[!UICONTROL Run]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   *図：アセットフォルダーに移動し、タグを確認して、アセットが正しくタグ付けされているかどうかを確認します。詳しくは、[スマートタグの管理](#manage-smart-tags-and-searches)を参照してください。*
+   *Figure: Navigate to the asset folder and review the tags to verify whether your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).*
 
-### タイムラインからのアセットのタグ付け {#tagging-assets-from-the-timeline}
+### Tag assets from the timeline {#tagging-assets-from-the-timeline}
 
-1. [!DNL Assets]ユーザーインターフェイスから、スマートタグを適用するアセットまたは特定のアセットを含むフォルダーを選択します。
-1. 左上隅から、**[!UICONTROL タイムライン]**&#x200B;を開きます。
-1. 左側のサイドバーの下部からアクションを開き、「**[!UICONTROL 開始ワークフロー]**」をクリックします。
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. From upper-left corner, open the **[!UICONTROL Timeline]**.
+1. Open actions from the bottom of the left sidebar and click **[!UICONTROL Start Workflow]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. 「**[!UICONTROL DAM スマートタグアセット]**」ワークフローを選択し、ワークフローのタイトルを指定します。
-1. 「**[!UICONTROL 開始]**」をクリックします。ワークフローによってアセットにタグが適用されます。アセットフォルダーに移動し、タグを確認して、アセットが適切にタグ付けされていることを確認します。詳しくは、[スマートタグの管理](#manage-smart-tags-and-searches)を参照してください。
+1. Select the **[!UICONTROL DAM Smart Tag Assets]** workflow, and specify a title for the workflow.
+1. Click **[!UICONTROL Start]**. The workflow applies your tags on assets. Navigate to the asset folder and review the tags to verify that your assets are tagged properly. For details, see [manage smart tags](#manage-smart-tags-and-searches).
 
 >[!NOTE]
 >
->後続のタグ付けサイクルでは、変更済みのアセットのみが、新しく学習したタグで再度タグ付けされます。 ただし、タグ付けワークフローの前回と現在のタグ付けサイクルの間隔が 24 時間を超えている場合は、変更されていないアセットもタグ付けされます。定期的なタグ付けワークフローの場合、タイムギャップが6か月を超えると、変更されていないアセットにタグが付けられます。
+>In the subsequent tagging cycles, only the modified assets are tagged again with newly trained tags. However, even unaltered assets are tagged if the gap between the last and current tagging cycles for the tagging workflow exceeds 24 hours. For periodic tagging workflows, unaltered assets are tagged when the time gap exceeds six months.
 
-### アップロードしたアセットのタグ付け {#tag-uploaded-assets}
+### Tag uploaded assets {#tag-uploaded-assets}
 
-[!DNL Experience Manager] は、DAM にアップロードするアセットに自動的にタグ付けすることができます。そのためには、管理者はワークフローを設定して、アセットにタグを付けるための使用可能なステップを追加します。 [アップロードしたアセットのスマートタグを有効にする方法](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets)を参照してください。
+[!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
+-->
 
 ## スマートタグとアセット検索の管理 {#manage-smart-tags-and-searches}
 
@@ -247,7 +249,6 @@ ht-degree: 84%
 
 >[!MORELIKETHIS]
 >
->* [スマートタグ [!DNL Experience Manager] の設定](smart-tags-configuration.md)
 >* [スマートタグによるアセット管理の仕組み](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
->* [ビデオアセットのスマートタグ](smart-tags-video-assets.md)
+>* [ビデオアセットのスマートタグ付け](smart-tags-video-assets.md)
 
