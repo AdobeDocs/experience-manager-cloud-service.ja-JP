@@ -5,10 +5,10 @@ breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 96%
+source-wordcount: '482'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 96%
    + [開発者向けドキュメントと API リファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
    + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
-   + [画像のスマートタグの設定](smart-tags-configuration.md)
    + [多言語アセットと翻訳](translate-assets.md)
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
@@ -67,7 +66,7 @@ ht-degree: 96%
 + アセットの共有と配布 {#brand-portal}
    + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での [!DNL Assets] の設定
    + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
-   + [アセット [!DNL Brand Portal] の発行元 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en)
+   + [アセット [!DNL Brand Portal] の発行元 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントと GraphQL のヘッドレス配信](content-fragments/content-fragments-graphql.md)
