@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート.'
+exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '1050'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート {#release-notes}
 
@@ -30,7 +30,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * アセットマイクロサービスでビデオのトランスコーディングがサポートされるようになりました。[!UICONTROL 処理プロファイル]設定の新しいセクションで、ビデオのビットレートとサイズを設定できます。出力形式は、H.264 コーデックを使用した MP4 です。詳しくは、[ビデオアセットの管理](/help/assets/manage-video-assets.md#transcode-video)を参照してください。その他のトランスコーディングオプションとビデオ配信については、[!DNL Dynamic Media] アドオンを使用してください。
 
-* 新しい Adobe [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。[!DNL Adobe Developer Console] と手動で統合する必要はありません。既存のデプロイメントでは、管理者が以前と同様に[スマートタグ統合の設定](/help/assets/smart-tags-configuration.md#aio-integration)をおこないます。
+* 新しい Adobe [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。[!DNL Adobe Developer Console] と手動で統合する必要はありません。既存のデプロイメントでは、管理者が以前と同様にスマートタグ統合の設定をおこないます。
 
 * 新しい[アセットダウンロードエクスペリエンス](/help/assets/download-assets-from-aem.md)には以下の特長があります。
 
