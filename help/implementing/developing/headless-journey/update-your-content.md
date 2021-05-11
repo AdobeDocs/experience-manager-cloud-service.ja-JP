@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 51%
+source-wordcount: '1130'
+ht-degree: 49%
 
 ---
 
@@ -324,11 +324,10 @@ AEMヘッドレス開発者ジャーニーのこの部分が完了したら、�
 
 AEMのヘッドレスジャーニーは、次にドキュメント[How to Put It All Togeter - Your App and Your Content in AEM Headless](put-it-all-together.md)を確認し、AEMヘッドレスプロジェクトの取り組みと運用準備を進めて行く必要があります。
 
+[How to Create Single Page Applications (SPA) with ](create-spa.md) AEMでは、AEMのSPA Editorフレームワークを使用して編集可能なSPAを作成する方法や、外部SPAを統合し、必要に応じて編集機能を有効にする方法も示します。
+
 ## その他のリソース {#additional-resources}
 
-* [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-* [HATEOASの原則](https://en.wikipedia.org/wiki/HATEOAS)
-* [SIREN形式](https://github.com/kevinswiber/siren)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [コンテンツフラグメント REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
