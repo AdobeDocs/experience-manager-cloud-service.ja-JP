@@ -5,7 +5,7 @@ feature: コンテンツフラグメント
 role: Business Practitioner
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 translation-type: tm+mt
-source-git-commit: 9e299db2d111087bbca05624276e212d457d76d1
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 89%
@@ -169,7 +169,7 @@ AEMのコンテンツフラグメントモデルは、[コンテンツフラグ�
 * **変換可能**：
 CF モデルエディターでフィールドの「変換可能」チェックボックスをオンにすると、
 
-   * フィールドのプロパティ名がまだ存在しない場合は、翻訳設定のコンテキスト `/content/dam/<tenant>` に確実に追加されます。
+   * フィールドのプロパティ名がまだ存在しない場合は、翻訳設定のコンテキスト `/content/dam/<sites-configuration>` に確実に追加されます。
    * GraphQL の場合：「コンテンツフラグメント」フィールドの `<translatable>` プロパティを `yes` に設定して、変換可能なコンテンツのみを含む JSON を出力するための GraphQL クエリフィルターを許可します。
 
 * 特定のデータ型とそのプロパティの詳細については、「**[コンテンツ参照](#content-reference)**」を参照してください。
