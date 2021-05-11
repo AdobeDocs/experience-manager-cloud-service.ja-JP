@@ -1,14 +1,14 @@
 ---
 title: TXT レコードの追加
 description: カスタムドメイン名の追加
+exl-id: d441de29-af41-4d3e-9155-531af9702841
 translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 100%
 
 ---
-
 
 # TXT レコードの追加 {#adding-txt}
 
@@ -27,8 +27,8 @@ TXT レコードを作成する前に、次の手順に従う必要がありま�
 
 | ドメイン | 名前 | TXT 値 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Cloud Manager UI に表示され、ドメインと Cloud Manager 環境に固有 |
-| `test.example.com` | `_aemverification.test.example.com` | Cloud Manager UI に表示され、ドメインと Cloud Manager 環境に固有 |
+| `example.com` | `_aemverification` | Cloud Manager UI に表示され、ドメインと Cloud Manager 環境に固有 |
+| `test.example.com` | `_aemverification` | Cloud Manager UI に表示され、ドメインと Cloud Manager 環境に固有 |
 
 完了したら、`dig _aemverification.[yourdomainname] -t txt` を実行して結果を確認できます。
 期待される結果には、Cloud Manager UI で指定された TXT 値が表示されます。
@@ -37,4 +37,3 @@ TXT レコードを作成する前に、次の手順に従う必要がありま�
 
 >[!NOTE]
 >また、様々な [DNS 検索ツール](https://www.ultratools.com/tools/dnsLookup)があります。Google DoH を使用すると、TXT レコードのエントリを参照し、TXT レコードがないか、エラーがあるかを識別できます。
-
