@@ -5,9 +5,9 @@ feature: アセット管理
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '377'
 ht-degree: 84%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 Web ページに埋め込んでビデオを再生したりアセットを表示したりする場合は、**[!UICONTROL 埋め込みコード]**&#x200B;機能を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
-AEMをWCMとして使用して&#x200B;__&#x200B;しない場合にのみ、URLを埋め込みます。AEMをWCMとして使用している場合、[アセットをページ](adding-dynamic-media-assets-to-pages.md)に直接追加します。
+URLを埋め込むのは、WCMとしてAdobe Experience Managerを使用&#x200B;_して_&#x200B;いない場合のみです。 WCMとしてExperience Managerを使用している場合は、[アセットをページ](adding-dynamic-media-assets-to-pages.md)に直接追加します。
 
 [Web アプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)を参照してください。
 
@@ -32,7 +32,7 @@ AEMをWCMとして使用して&#x200B;__&#x200B;しない場合にのみ、URL�
 >
 >[画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-**Dynamic Media ビデオビューアまたは画像ビューアを Web ページに埋め込むには**
+**Dynamic Media ビデオビューアまたは画像ビューアを Web ページに埋め込むには:**
 
 1. 埋め込みコードをコピーする&#x200B;*公開済み*&#x200B;のビデオまたは画像アセットに移動します。
 
