@@ -4,9 +4,9 @@ description: Adobe Experience Manager(AEM)のコンテンツフラグメント�
 feature: コンテンツフラグメント，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 translation-type: tm+mt
-source-git-commit: dab4c9393c26f5c3473e96fa96bf7ec51e81c6c5
+source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3935'
 ht-degree: 72%
 
 ---
@@ -121,20 +121,20 @@ AEMには、次の2種類のエンドポイントがあります。
 
 * グローバル
    * すべてのサイトで使用可能。
-   * このエンドポイントは、すべてのテナントからすべてのコンテンツフラグメントモデルを使用できます。
-   * テナント間で共有する必要のあるコンテンツフラグメントモデルがある場合は、それらをグローバルテナントの下に作成する必要があります。
-* テナント:
-   * [構成ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されているテナント構成に対応します。
+   * このエンドポイントは、すべてのサイト構成（[構成ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義）のすべてのコンテンツフラグメントモデルを使用できます。
+   * サイト設定間で共有する必要のあるコンテンツフラグメントモデルがある場合は、それらをグローバルサイト設定の下に作成する必要があります。
+* サイトの設定：
+   * [構成ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されているサイト構成に対応します。
    * 指定したサイト/プロジェクトに固有。
-   * テナント固有のエンドポイントは、その特定のテナントのコンテンツフラグメントモデルを、グローバルテナントのコンテンツフラグメントモデルと共に使用します。
+   * サイト構成固有のエンドポイントは、そのサイト構成のコンテンツフラグメントモデルを、グローバルサイト構成のコンテンツフラグメントモデルと共に使用します。
 
 >[!CAUTION]
 >
->コンテンツフラグメントエディターでは、あるテナントのコンテンツフラグメントが別のテナントのコンテンツフラグメントを（ポリシーを介して）参照できるようにします。
+>コンテンツフラグメントエディターを使用すると、1つのサイト構成のコンテンツフラグメントから別のサイト構成のコンテンツフラグメントを（ポリシーを介して）参照できます。
 >
->この場合、テナント固有のエンドポイントを使用してすべてのコンテンツを取得できるわけではありません。
+>この場合、サイト構成固有のエンドポイントを使用してすべてのコンテンツを取得できるわけではありません。
 >
->コンテンツ作成者は、このシナリオを制御する必要があります。例えば、共有コンテンツフラグメントモデルをグローバルテナントの下に配置することを検討すると便利です。
+>コンテンツ作成者は、このシナリオを制御する必要があります。例えば、共有コンテンツフラグメントモデルをグローバルサイト設定の下に配置することを検討すると便利です。
 
 AEMグローバルエンドポイント用のGraphQLのリポジトリパスは、次のとおりです。
 
@@ -196,6 +196,10 @@ GraphQLエンドポイントを有効にするには、まず適切な設定が�
 ## GraphiQL インターフェイス {#graphiql-interface}
 
 標準の [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) インターフェイスの実装は、AEM GraphQL で使用できます。これは [AEM と共にインストール](#installing-graphiql-interface)できます。
+
+>[!NOTE]
+>
+>GraphiQLは、グローバルエンドポイントに連結されています（特定のサイト設定では、他のエンドポイントと連動しません）。
 
 このインターフェイスを使用すると、クエリを直接入力しテストできます。
 
@@ -587,21 +591,21 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 
 このようにする必要があるのは、POST クエリが通常はキャッシュされないからです。クエリをパラメーターとして GET を使用する場合、HTTP サービスや中間ステップにとってパラメーターが大きくなりすぎるという重大なリスクがあります。
 
-持続的なクエリは、常に[適切な（テナント）構成](#graphql-aem-endpoint)に関連するエンドポイントを使用する必要があります。そのため、どちらかまたは両方を使用できます。
+持続的なクエリは、常に[適切なサイト構成](#graphql-aem-endpoint)に関連するエンドポイントを使用する必要があります。そのため、どちらかまたは両方を使用できます。
 
 * グローバル設定とエンドポイント
 クエリは、すべてのコンテンツフラグメントモデルにアクセスできます。
-* 特定のテナント構成とエンドポイント
-特定のテナント構成に対して永続化されたクエリを作成するには、対応するテナント固有のエンドポイントが必要です（関連するコンテンツフラグメントモデルへのアクセスを提供するため）。
-例えば、WKNDテナント専用の永続的なクエリを作成するには、対応するWKND固有のテナント構成と、WKND固有のエンドポイントを事前に作成する必要があります。
+* 特定のサイトの設定とエンドポイント
+特定のサイト設定用に永続化されたクエリを作成するには、対応するサイト設定固有のエンドポイントが必要です（関連するコンテンツフラグメントモデルにアクセスできるようにするため）。
+例えば、WKNDサイト構成専用の永続的なクエリを作成するには、WKND固有のサイト構成に対応し、WKND固有のエンドポイントを事前に作成する必要があります。
 
 >[!NOTE]
 >
 >詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
 >
->適切なテナント構成に対して、**GraphQL Persistenceクエリ**&#x200B;を有効にする必要があります。
+>適切なサイト構成に対して、**GraphQL Persistenceクエリ**&#x200B;を有効にする必要があります。
 
-例えば、`my-query`という名前の特定のクエリがあり、テナント構成`my-conf`のモデル`my-model`を使用する場合は、次のようになります。
+例えば、`my-query`という名前の特定のクエリがあり、これがサイト構成`my-conf`のモデル`my-model`を使用する場合、次のようになります。
 
 * `my-conf`個別のエンドポイントを使用してクエリを作成すると、クエリは次のように保存されます。
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
