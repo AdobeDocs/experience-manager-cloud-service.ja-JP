@@ -4,16 +4,16 @@ description: Dynamic Media を使用して、Web、モバイルおよびソー�
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 87%
+source-wordcount: '399'
+ht-degree: 72%
 
 ---
 
 # Dynamic Media の操作 {#working-with-dynamic-media}
 
-[Dynamic Media ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)は、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信するもので、これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
+[Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)は、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信するもので、これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
 Dynamic Mediaは、ズーム、360度スピン、ビデオなどのインタラクティブなビューを提供します。Dynamic Mediaは、Adobe Experience Managerのデジタルアセット管理(Assets)ソリューションのワークフローを組み込み、デジタルキャンペーン管理プロセスをシンプル化および合理化しています。
 
@@ -38,7 +38,7 @@ Dynamic Media 限定の機能は次のとおりです。
 * [ビデオ](video.md)
 * [Dynamic Media アセットの配信 ](delivering-dynamic-media-assets.md)
 * [アセットの管理](managing-assets.md)
-* [クイック表示を使用したカスタムポップアップウィンドウの作成](custom-pop-ups.md)
+* [クイック表示を使用したカスタムポップアップWindows®の作成](custom-pop-ups.md)
 
 [Dynamic Media の設定](administering-dynamic-media.md)も参照してください。
 
@@ -81,7 +81,7 @@ Dynamic Mediaが有効にしたアセットには`pyramid.tiffs`が含まれま�
 
 ### アセットのビューの変化 {#asset-views-change}
 
-Dynamic Media を有効にすると、「`+`」ボタンをクリックしてズームインし、「`-`」ボタンをクリックしてズームアウトすることができます。クリックまたはタップして、特定の領域にズームインすることもできます。元に戻すアイコンをクリックすると元のバージョンに戻ります。また、斜めの矢印をクリックすると、画像を全画面表示にすることができます。Dynamic Media を有効にした場合の画面は次のようになります。
+Dynamic Mediaを有効にすると、`+`ボタンと`-`ボタンをクリックして、ズームインおよびズームアウトできます。また、クリック/タップして特定の領域にズームインすることもできます。元に戻すと、元のバージョンに戻り、斜めの矢印をクリックして画像をフルスクリーンにすることができます。 Dynamic Mediaを有効にすると、次のように表示されます。
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
