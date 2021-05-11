@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 translation-type: tm+mt
-source-git-commit: 8ca3fe045aba4ec9e546fee0700d1bec08e337fb
+source-git-commit: 92de2936fd6eb66198f0a096dd2e0020f14fccb8
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1906'
 ht-degree: 5%
 
 ---
@@ -72,6 +72,8 @@ Cloud Service2021.4.0の[!DNL Adobe Experience Manager]のリリース日は2021
 * 列表示でアセットを参照する場合、各アセットの承認済みまたは拒否済みのステータスが視覚的なインジケーターに表示されます。
 
 * 列表示でアセットを参照するとき、期限切れのアセットに関する視覚的なインジケーターが表示されます。
+
+* テキスト領域のデータ型は、[!DNL Assets]メタデータエディターで使用できるようになります。 このオプションを使用すると、ユーザーがフリーフォームテキストフィールドにメタデータを入力できるようになります。
 
 ### [!DNL Assets] {#bug-fixes-assets}のバグ修正
 
