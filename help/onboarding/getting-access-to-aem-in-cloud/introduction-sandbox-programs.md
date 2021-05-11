@@ -1,14 +1,14 @@
 ---
 title: 'Sandboxプログラムの概要 '
-description: 'Sandboxプログラムの概要 '
+description: Sandboxプログラムの概要
+exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 translation-type: tm+mt
-source-git-commit: d98e3ba930690627bfbe9b90ce5cb93328c30503
+source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 79%
+source-wordcount: '303'
+ht-degree: 69%
 
 ---
-
 
 # Sandboxプログラムの紹介{#sandbox-programs}
 
@@ -37,4 +37,6 @@ Sandboxプログラムは、AEMCloud Serviceで使用できる2種類のプロ�
 
 1. **AEM アップデート：** AEM のアップデートは、サンドボックスプログラム内の環境に手動で適用します。自動でプッシュされることはありません。詳しくは、[Sandbox環境へのAEMの更新](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)を参照してください。
 
-1. **休止状態：**&#x200B;サンドボックスプログラム内の環境は、特定の期間、アクティビティが検出されなかった場合、自動的に休止状態になります。休止状態の環境は、手動で休止を解除できます。詳しくは、[サンドボックス環境の休止と休止解除](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)を参照してください。
+1. **休止状態：**&#x200B;サンドボックスプログラム内の環境は、特定の期間、アクティビティが検出されなかった場合、自動的に休止状態になります。サンドボックスは、8時間操作が実行されなかった場合に休止ノードに配置され、その後、非休止状態にすることができます。 休止状態の環境は、手動で休止を解除できます。詳しくは、[サンドボックス環境の休止と休止解除](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)を参照してください。
+
+1. **削除**:サンドボックスは、連続ハイバーネーションモードになってから6か月後に削除され、その後再作成できます。
