@@ -6,10 +6,10 @@ hidefromtoc: true
 index: false
 exl-id: 5ef557ff-e299-4910-bf8c-81c5154ea03f
 translation-type: tm+mt
-source-git-commit: c9b8e14a3beca11b6f81f2d5e5983d6fd801bf3f
+source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 15%
+source-wordcount: '1381'
+ht-degree: 18%
 
 ---
 
@@ -50,24 +50,24 @@ Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM Grap
 >
 >AEM GraphQL APIは、標準のGraphQL API仕様に基づいてカスタマイズされた実装です。
 
-<!--
-## GraphQL - An Introduction {#graphql-introduction}
+## GraphQL — 入門{#graphql-introduction}
 
-GraphQL is an open-source specification that provides:
+GraphQLは、次の機能を提供するオープンソース仕様です。
 
-* a query language that enables you to select specific content from structured objects.
-* a runtime to fulfill these queries with your structured content.
+* 構造化オブジェクトから特定のコンテンツを選択できるクエリ言語。
+* 構造化コンテンツでこれらのクエリを満たすランタイム。
 
-GraphQL is a *strongly* typed API. This means that *all* content must be clearly structured and organized by type, so that GraphQL *understands* what to access and how. The data fields are defined within GraphQL schemas, that define the structure of your content objects. 
+GraphQLは&#x200B;*厳密に*&#x200B;型指定されたAPIです。 つまり、*すべての*&#x200B;コンテンツは、タイプ別に明確に構成、整理されていなければならないので、GraphQL *は、何にアクセスし、何にアクセスするかと、どのようにしてアクセスするかを理解している必要があります。*&#x200B;データフィールドはGraphQLスキーマ内で定義され、コンテンツオブジェクトの構造を定義します。
 
-GraphQL endpoints then provide the paths that respond to the GraphQL queries.
+次に、GraphQLエンドポイントは、GraphQLクエリに応答するパスを提供します。
 
-All this means that your app can accurately, reliably and efficiently select the content that it needs - just what you need when used with AEM.
+つまり、アプリをAEMで使用する場合に必要なコンテンツだけを、正確かつ信頼性の高い方法で効率的に選択できます。
 
 >[!NOTE]
 >
->See *GraphQL*.org and *GraphQL*.com.
+>*GraphQL*.orgおよび&#x200B;*GraphQL*.comを参照してください。
 
+<!--
 ## AEM and GraphQL {#aem-graphql}
 
 GraphQL is used in various locations in AEM; for example:
@@ -83,25 +83,29 @@ GraphQL is used in various locations in AEM; for example:
 >[!NOTE]
 >
 >This step of the Headless Journey is only concerned with the AEM GraphQL API and Content Fragments.
+-->
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
+AEM GraphQL APIは、標準のGraphQL API仕様に基づいてカスタマイズされたバージョンで、コンテンツフラグメントに対して（複雑な）クエリを実行できるように特別に設定されています。
 
-Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
+コンテンツフラグメントは、コンテンツがコンテンツフラグメントのモデルに従って構造化されているので使用されます。 これは、GraphQLの基本的な要件を満たします。
 
-* A Content Fragment Model is built up of one, or more, fields. 
-  * Each field is defined according to a Data Type.
-* Content Fragment Models are used to generate the corresponding AEM GraphQL Schemas.
+* コンテンツフラグメントモデルは、1つ以上のフィールドで構成されています。
+   * 各フィールドはデータ型に従って定義されます。
+* コンテンツフラグメントモデルは、対応するAEM GraphQLスキーマの生成に使用されます。
 
-To actually access GraphQL for AEM (and the content) an endpoint is used to provide the access path. 
+AEM用のGraphQL（およびコンテンツ）に実際にアクセスするには、エンドポイントを使用してアクセスパスを提供します。
 
-The content returned, via the AEM GraphQL API, can then be used by your applications. 
+AEM GraphQL APIを介して返されたコンテンツは、アプリケーションで使用できます。
+
+クエリを直接入力し、テストする際に役立つように、標準のGraphiQLインターフェイスの実装もAEM GraphQLで使用できます(AEMと共にインストールできます)。 構文の強調表示、オートコンプリート、オートコンプリートなどの機能と、履歴およびオンラインドキュメントが提供されます。
 
 >[!NOTE]
 >
->The AEM GraphQL API implementation is based on the GraphQL Java libraries.
+>AEM GraphQL API の実装は、GraphQL Java ライブラリに基づいています。
 
+<!--
 ### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
@@ -113,41 +117,41 @@ The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud S
   * Query content for "content management purposes":
     * GraphQL in AEM as a Cloud Service is currently a read-only API.
     * The REST API can be used for CR(u)D operations.
+-->
 
-## Content Fragments for use with the AEM GraphQL API {#content-fragments-use-with-aem-graphql-api}
+## AEM GraphQL API で使用するコンテンツフラグメント {#content-fragments-use-with-aem-graphql-api}
 
-Content Fragments can be used as a basis for GraphQL for AEM schemas and queries as:
+コンテンツフラグメントは、AEMスキーマやクエリのGraphQLの基盤として、次のように使用できます。
 
-* They enable you to design, create, curate and publish page-independent content.
-* They are based on a Content Fragment Model, which pre-defines the structure for the resulting fragment by means of defined data types.
-* Additional layers of structure can be achieved with the Fragment Reference data type, available when defining a model.
- 
-### Content Fragment Models {#content-fragments-models}
+* ヘッドレスに配信できるページに依存しないコンテンツのデザイン、作成、キュレーションおよび公開が可能です。
+* これらはコンテンツフラグメントモデルに基づいています。コンテンツフラグメントモデルでは、選択したデータ型を使用して、結果のフラグメントの構造を事前に定義します。
+* 構造の追加のレイヤーは、フラグメント参照データ型を使用して作成できます。このデータ型は、モデルの定義時に使用できます。
 
-These Content Fragment Models:
+### コンテンツフラグメントモデル {#content-fragments-models}
 
-* Are used to generate the Schemas, once **Enabled**.
+コンテンツフラグメントモデルは、
 
-* Provide the data types and fields required for GraphQL. They ensure that your application only requests what is possible, and receives what is expected.
+* **有効**&#x200B;にされると、スキーマの生成に使用されます。
+* GraphQL に必要なデータタイプとフィールドを提供します。アプリケーションが、可能なことだけを要求して期待するものを受け取るようにします。
+* データタイプ&#x200B;**フラグメント参照**&#x200B;は、別のコンテンツフラグメントを参照するためにモデル内で使用できるので、構造レベルを追加します。
 
-* The data type **Fragment References** can be used in your model to reference another Content Fragment, and so introduce additional levels of structure.
+### フラグメント参照 {#fragment-references}
 
-### Fragment References {#fragment-references}
+**フラグメント参照**&#x200B;は、
 
-The **Fragment Reference**:
+* は、コンテンツフラグメントモデルの定義時に使用できる特定のデータ型です。
+* 特定のコンテンツフラグメントモデルに依存する別のフラグメントを参照します。
+* 構造化データを作成し、取得できます。
 
-* Is a specific data type available when defining a Content Fragment Model.
+   * **マルチフィード**&#x200B;として定義した場合、複数のサブフラグメントをプライムフラグメントで参照（取得）できます。
 
-* References another fragment, dependent on a specific Content Fragment Model.
+### JSON プレビュー {#json-preview}
 
-* Allows you to create, and then retrieve, structured data.
+コンテンツフラグメントモデルの設計と開発に役立つように、コンテンツフラグメントエディターでJSON出力をプレビューできます。
 
-  * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
+![JSON ](assets/cfm-model-json-preview.png "PreviewJSONプレビュー")
 
-### JSON Preview {#json-preview}
-
-To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
-
+<!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}
 
 GraphQL is a strongly typed API, which means that content must be clearly structured and organized by type. The GraphQL specification provides a series of guidelines on how to create a robust API for interrogating content on a certain instance. To do this, a client needs to fetch the Schema, which contains all the types necessary for a query. 
@@ -247,21 +251,23 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 * エンドポイントを有効にする
    * ツール/サイト/GraphQLを使用
+   * [GraphQL エンドポイントの有効化](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * GraphiQLのインストール（必要な場合）
    * 専用パッケージとしてインストール
+   * [AEM GraphiQL インターフェイスのインストール](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
 
 ### サンプル構造{#sample-structure}
 
 AEM GraphQL APIをクエリで実際に使用するには、次の2つの非常に基本的なコンテンツフラグメントモデル構造を使用します。
 
 * 会社情報
-   * 名前
-   * CEO（担当者）
-   * 従業員（個人）
+   * 名前 — テキスト
+   * CEO（人） — フラグメント参照
+   * 従業員（個人） — フラグメント参照
 * Person
-   * name
-   * firstName
+   * 名前 — テキスト
+   * 名 — テキスト
 
 「CEO」フィールドと「従業員」フィールドは、「個人」フラグメントを参照します。
 
@@ -275,6 +281,8 @@ AEM GraphQL APIをクエリで実際に使用するには、次の2つの非常�
 クエリは、GraphiciQLインターフェイスで入力できます。例えば、次のURLで入力できます。
 
 * `http://localhost:4502/content/graphiql.html `
+
+![GraphiQL インターフェイス](assets/graphiql-interface.png "GraphiQL インターフェイス")
 
 ### クエリ使用の手引き{#getting-Started-with-queries}
 
