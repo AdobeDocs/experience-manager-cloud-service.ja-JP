@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
+exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 99%
 
 ---
-
 
 # AEM as a Cloud Service 2020.6.0 のリリースノート {#release-notes}
 
@@ -110,7 +110,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 拡張スマートタグを使用すると、組織はスマートタグモデルに対して、汎用のスマートタグに加えて、顧客固有のビジネスタグに基づいて画像を認識するようにトレーニングすることができます。
 
 このリリースでは、一連の顧客固有のタグに対するスマートタグのトレーニングを設定し、アセットを使用してトレーニングする新しいガイド付きのユーザーエクスペリエンスが提供されます。これは、今後認識され、タグ付けされることになります。エクスペリエンスは、より直感的になりました。
-拡張スマートタグをトレーニングして、スマートタグの直感的なトレーニングを実施します。[アセットにスマートタグを追加する方法](/help/assets/smart-tags.md)と[スマートタグの設定](/help/assets/smart-tags-configuration.md)を参照してください。
+拡張スマートタグをトレーニングして、スマートタグの直感的なトレーニングを実施します。詳しくは、[アセットへのスマートタグの追加方法](/help/assets/smart-tags.md)を参照してください。
 
 **3D コンテンツの取得、プレビュー、配信のサポート**
 
