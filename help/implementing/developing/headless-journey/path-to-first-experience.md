@@ -4,14 +4,14 @@ description: AEMヘッドレス開発者ジャーニーのこの部分では、�
 hide: true
 hidefromtoc: true
 index: false
+exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
 translation-type: tm+mt
-source-git-commit: 9fb18dbe60121f46dba1e11d4133e5264a6d538d
+source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # AEMヘッドレスを使用した最初のエクスペリエンスへのパス{#path-to-first-experience}
 
@@ -137,7 +137,14 @@ AEMヘッドレス開発者ジャーニーのこの部分が完了したら、�
 * 必要なツールとAEMの設定を把握する。
 * ヘッドレスなジャーニーをスムーズにし、コンテンツ生成を効率的に維持し、コンテンツを迅速に配信するためのベストプラクティスを知っている。
 
-AEMでコンテンツ構造をモデル化する方法を学習した「[How to Model Your Content as AEM Content Models](model-your-content.md)」ドキュメントを見て、AEMのヘッドレスジャーニーを続行する必要があります。
+AEMヘッドレスの機能と柔軟性を十分に理解し、独自のプロジェクトで活用できるように、この基本的な知識を基に構築していただきたいと思います。 これを行うには、オプションがあります。
+
+### 自分のアドベンチャーを選択{#choose-your-path}
+
+Adobeは、どのような学習スタイルを使用しても、AEMヘッドレスプロジェクトの使い始めに成功することを望んでいます。
+
+* headless concepts and AEM headless technologies **を引き続き学ぶ場合は、AEMでコンテンツ構造をモデル化する方法を学ぶ「How to Model Your Content as AEM Content Models](model-your-content.md)」ドキュメントを次に見直して、AEMのヘッドレスジャーニーを継続する必要があります。**[
+* **学びたい場合は、**『AEM Headlessハンズオンチュートリアル』](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)で、AEMヘッドレスのコンテンツを公開する簡単なプロジェクトを実装してAEMヘッドレス開発に直接飛び込みます。[
 
 ## その他のリソース {#additional-resources}
 
