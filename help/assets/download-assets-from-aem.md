@@ -2,16 +2,16 @@
 title: アセットのダウンロード
 description: ' [!DNL Adobe Experience Manager Assets]  からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。'
 contentOwner: AG
-feature: Asset Management
+feature: アセット管理
 role: Business Practitioner
+exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 translation-type: tm+mt
-source-git-commit: 497952b1b6679eca301839d1435924e16a2e2438
+source-git-commit: a14d5ec69889ef3d89e595cd837f182c499d0ebc
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 99%
+source-wordcount: '921'
+ht-degree: 93%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] からのアセットのダウンロード {#download-assets-from-aem}
 
@@ -68,7 +68,7 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
-Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用すると、認証済みユーザーは、任意の大きさの同時ダウンロードリクエストを発行してアセットの ZIP ファイルを作成できます。ダウンロードの準備でパフォーマンスに影響が及ぶ場合や、サーバーやネットワークに過重な負荷がかかる場合があります。この機能で生じる可能性がある DoS に似たリスクを軽減するため、パブリッシュインスタンスに対して `AssetDownloadServlet` OSGi コンポーネントが無効になっています。
+Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用すると、認証済みユーザーは、任意の大きさの同時ダウンロードリクエストを発行してアセットの ZIP ファイルを作成できます。ダウンロードの準備でパフォーマンスに影響が及ぶ場合や、サーバーやネットワークに過重な負荷がかかる場合があります。この機能で生じる可能性がある DoS に似たリスクを軽減するため、パブリッシュインスタンスに対して `AssetDownloadServlet` OSGi コンポーネントが無効になっています。作成者インスタンスにダウンロード機能を必要としない場合は、作成者のサーブレットを無効にします。
 
 例えば Asset Share Commons やポータルのような実装などを使用する場合に DAM からアセットをダウンロードできるようにするには、OSGi 設定を通じてサーブレットを手動で有効にします。日常的なダウンロードの要件に影響を与えない範囲で、許容ダウンロードサイズをできるだけ小さく設定することをお勧めします。この値を大きくすれば、パフォーマンスに影響を与える可能性があります。
 
@@ -86,7 +86,7 @@ Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用す
 
 ## アセットダウンロードサーブレットの無効化 {#disable-asset-download-servlet}
 
- パブリッシュインスタンスの `Asset Download Servlet` を無効にするには、アセットダウンロード要求をすべてブロックするように Dispatcher 設定を更新します。[!DNL Experience Manager]サーブレットは、OSGi コンソールから手動で直接無効にすることもできます。
+ダウンロード機能が不要な場合は、サーブレットを無効にして、DoSに似たリスクを回避します。 `Asset Download Servlet`は、[!DNL Experience Manager]作成者インスタンスと発行インスタンスで無効にできます。無効にするには、ディスパッチャー設定を更新してアセットのダウンロード要求をブロックします。 サーブレットは、OSGi コンソールから手動で直接無効にすることもできます。
 
 1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring)に新しいルールを追加します。
 
