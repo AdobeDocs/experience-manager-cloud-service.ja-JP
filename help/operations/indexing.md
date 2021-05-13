@@ -2,11 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-translation-type: tm+mt
-source-git-commit: 1139b9f7014e68ab3d6ea7d720242e95786cc9e6
+source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 72%
+source-wordcount: '1829'
+ht-degree: 69%
 
 ---
 
@@ -49,6 +48,10 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 上記のポイント 1 と 2 の両方について、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。詳しくは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)ドキュメントを参照してください。
 
 ### 新しいインデックス定義の準備{#preparing-the-new-index-definition}
+
+>[!NOTE]
+>
+>初期設定のインデックス（例：`damAssetLucene-6`）をカスタマイズする場合は、*Cloud Service環境*&#x200B;から初期設定のインデックス定義の最新のものをコピーし、カスタマイズ内容を上に追加してください。 例えば、`/oak:index/damAssetLucene-6/tika`の下の`tika`ノードは必須のノードで、カスタマイズしたインデックスの一部にする必要があり、Cloud SDKには存在しません。
 
 次の命名パターンに従って、実際のインデックス定義を含む新しいインデックス定義パッケージを準備する必要があります。
 
