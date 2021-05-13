@@ -5,11 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-translation-type: tm+mt
-source-git-commit: dc4f1e916620127ebf068fdcc6359041b49891cf
+source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 2%
+source-wordcount: '1811'
+ht-degree: 1%
 
 ---
 
@@ -33,38 +32,97 @@ ht-degree: 2%
 
 このドキュメントは、AEMヘッドレスパブリケーションのパイプラインと、アプリケーションの運用に当たる前に注意が必要なパフォーマンス上の考慮事項を理解するのに役立ちます。
 
+* AEM SDKと必要な開発ツールについて説明します。
+* ローカル開発ランタイムを設定して、本番運用開始前にコンテンツをシミュレートします。
 * AEMコンテンツのレプリケーションとキャッシュの基本について
-* ヘッドレスアプリケーションでGo Liveをシミュレートするために必要なツールを設定
 * 起動前のアプリケーションのセキュリティと拡張
 * パフォーマンスとデバッグの問題の監視
 
-## コンテンツのレプリケーションとキャッシュの基礎{#content-replication-and-caching}
+## AEM SDK {#the-aem-sdk}
 
-完全なAEM環境は、作成者、発行、およびディスパッチャーで構成されます。
+次のアーティファクトが含まれます。
+
+* Quickstart jar — 作成者インスタンスと発行インスタンスの両方を設定するのに使用できる実行可能なjarファイル
+* ディスパッチャーツール — WindowsおよびUNIXベースのシステムのディスパッチャーモジュールとその依存関係
+* Java API Jar - AEMに対する開発に使用できる、許可されているすべてのJava APIを公開するJava Jar/Maven依存関係
+* Javadoc jar - Java API jarのjavadoc
+
+## 開発ツール {#development-tools}
+
+AEM SDKに加えて、コードとコンテンツをローカルで開発およびテストするための追加ツールが必要になります。
+
+* Java
+* AEM SDK
+* Git
+* Apache Maven
+* Node.jsライブラリ
+* 選択したIDE
+
+AEMはJavaアプリケーションなので、AEMをCloud Serviceとして開発するためには、JavaとJava SDKをインストールする必要があります。
+
+AEM SDKは、カスタムコードを構築しデプロイするために使用します。 これは、運用開始前にヘッドレスアプリをテストするために必要な主なツールです。
+
+Gitは、ソース管理の管理、Cloud Managerへの変更のチェックイン、実稼働インスタンスへの展開に使用するものです。
+
+AEMでは、AEM Mavenプロジェクトアーキタイプから生成されたプロジェクトを作成する際にApache Mavenを使用します。 主要なIDEはすべてMavenの統合サポートを提供します。
+
+Node.jsは、AEMプロジェクトのui.frontendサブプロジェクトのフロントエンドアセットを操作するために使用されるJavaScriptランタイム環境です。 Node.jsはnpmと共に配布され、JavaScriptの依存関係を管理するために使用される、事実上のNode.jsパッケージマネージャーです。
+
+## AEMシステムのコンポーネントの概要{#components-of-an-aem-system-at-a-glance}
+
+完全なAEM環境は、作成者、発行、およびディスパッチャーで構成されます。 ライブにする前に、コードとコンテンツのプレビューを簡単にするために、これらの同じコンポーネントをローカル開発ランタイムで使用できるようになります。
 
 * **Author** サービスでは、内部ユーザーがコンテンツを作成、管理、プレビューします。
 
-* **発行** サービスは「ライブ」環境と見なされ、通常はエンドユーザーが操作します。コンテンツは、Authorサービスで編集および承認された後、Publishサービスに配信されます。
+* **発行** サービスは「ライブ」環境と見なされ、通常はエンドユーザーが操作します。コンテンツは、Authorサービスで編集および承認された後、Publishサービスに配信されます。 AEMヘッドレスアプリケーションで最も一般的なデプロイメントパターンは、実稼働版のアプリケーションをAEM Publishサービスに接続させることです。
 
 * **ディス** パッチャーは、AEMディスパッチャーモジュールで拡張された静的なWebサーバーです。パブリッシュインスタンスで生成された Web ページをキャッシュしてパフォーマンスを向上します。
 
-AEMヘッドレスアプリケーションで最も一般的なデプロイメントパターンは、実稼働版のアプリケーションをAEM Publishサービスに接続させることです。
+## ローカル開発ワークフロー{#the-local-development-workflow}
 
-## 要件と構成{#requirements-and-configuration}
+ローカル開発プロジェクトはApache Mavenを基に構築されており、ソース管理にGitを使用しています。 プロジェクトを更新するために、開発者はEclipse、Visual Studio Code、IntelliJなどの望ましい統合開発環境を使用できます。
 
-1. [AEMをクラウドサービスSDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)として使用して、[ローカルランタイム](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#install-java)をセットアップします
-2. [WKNDサンプルコンテンツ](/help/implementing/developing/introduction/develop-wknd-tutorial.md)とそれ以降のGraphQLエンドポイントをインストールします
-3. [静的ノードサーバー](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/production-deployment.html?lang=en#static-server)を展開し、設定します。
+ヘッドレスアプリケーションで取り込まれるコードまたはコンテンツの更新をテストするには、AEM作成者のローカルインスタンスと発行サービスを含むローカルAEMランタイムに更新を展開する必要があります。
 
-## {#secure-and-scale-before-launch}を起動する前にヘッドレスアプリケーションを保護し、拡張する
+アップデートが最も重要な場所でテストすることが重要なので、ローカルAEMランタイムの各コンポーネント間の違いを必ず書き留めてください。 例えば、作成者でコンテンツの更新をテストしたり、発行インスタンスで新しいコードをテストしたりします。
 
-1. [トークンベースの認証](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)の設定
-2. 安全なWebフック
-3. キャッシュとスケーラビリティの構成
+実稼働システムでは、ディスパッチャーとhttp Apacheサーバーは、常にAEM発行インスタンスの前に配置されます。 また、AEMシステムのキャッシュおよびセキュリティサービスを提供するので、ディスパッチャーに対してコードおよびコンテンツの更新をテストすることもお勧めします。
+
+すべてのテストが完了し、正しく機能していることを確認したら、Cloud Managerの中央のGitリポジトリにコードの更新をプッシュする準備が整います。
+
+アップデートは、Cloud Managerにアップロードされた後、Cloud ManagerのCI/CDパイプラインを使用して、AEMにCloud Serviceとしてデプロイできます。
+
+## ローカル開発環境{#previewing-your-code-and-content-locally-with-the-local-development-environment}を使用したコードとコンテンツのローカルプレビュー
+
+AEMヘッドレスプロジェクトを起動用に準備するには、プロジェクトの構成要素がすべて正常に機能していることを確認する必要があります。
+
+そのためには、すべてをまとめる必要があります。コード、コンテンツ、設定を行い、ローカル開発環境でテストして、運用準備を実現します。
+
+ローカル開発環境は、
+
+1. AEMプロジェクト —AEM開発者が作業するすべてのカスタムコード、設定、コンテンツが含まれます。
+1. Local AEM Runtime - AEMプロジェクトからコードをデプロイするために使用されるAEM作成者サービスおよび発行サービスのローカルバージョン
+1. Local Dispatcher Runtime - Dispatcherモジュールを含むApache httpd Webサーバーのローカルバージョンです。
+
+ローカル開発環境を設定したら、静的なノードサーバーをローカルにデプロイすることで、Reactアプリに対するコンテンツサービングをシミュレートできます。
+
+ローカル開発環境の設定とコンテンツプレビューに必要なすべての依存関係について詳しく調べるには、[AEM発行サービスを使用した実稼働環境のデプロイメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)を参照してください。
 
 ## 実稼動へのデプロイ {#deploy-to-production}
 
-すべてのコードとコンテンツをローカルでテストしたら、AEMで実稼働環境のデプロイメントを開始する準備が整いました。
+すべてのコードとコンテンツをローカルでテストしたら、AEMで実稼働環境のデプロイメントを開始する準備が整います。
+
+Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を開始できます。このパイプラインについては、[ここ](/help/implementing/deploying/overview.md)で詳しく説明しています。
+
+## AEM Go-Live用ヘッドレスアプリケーションの準備{#prepare-your-aem-headless-application-for-golive}
+
+次に示すベストプラクティスに従って、AEMのヘッドレスアプリケーションを起動できる状態にします。
+
+### {#secure-and-scale-before-launch}を起動する前にヘッドレスアプリケーションを保護し、拡張する
+
+1. [トークンベースの認証](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)の設定
+1. 安全なWebフック
+1. キャッシュとスケーラビリティの構成
 
 ### モデル構造とGraphQL出力{#structure-vs-output}
 
@@ -89,9 +147,9 @@ AEMヘッドレスアプリケーションで最も一般的なデプロイメ�
 * `Last-modified-since`を利用してリソースを更新します。
 * 完全なJSONファイルを解析することなく、JSONファイル内の`_reference`出力を使用して、開始によるアセットのダウンロードを行う。
 
-## 監視 {#monitoring}
+## パフォーマンスの監視 {#performance-monitoring}
 
-### 全体的なパフォーマンスの確認方法{#check-overall-performance}
+AEMヘッドレスアプリケーションを使用する場合、ユーザーが最高のエクスペリエンスを得られるようにするには、主要なパフォーマンス指標を以下に示すように監視することが重要です。
 
 * アプリのプレビュー版と実稼働版を検証する
 * 現在のサービスの可用性の状態に関するAEMステータスページの確認
@@ -111,7 +169,7 @@ AEMヘッドレスアプリケーションで最も一般的なデプロイメ�
 
 ### デバッグ {#debugging}
 
-起動前にアプリケーションが正しく機能していることを確認するには、デバッグの一般的なアプローチとして、次の手順に従うことをお勧めします。
+デバッグの一般的なアプローチとして、次のベストプラクティスに従います。
 
 * アプリケーションのプレビュー版で機能とパフォーマンスを検証する
 * アプリケーションの実稼働バージョンでの機能とパフォーマンスの検証
@@ -140,3 +198,8 @@ AEMヘッドレス開発者ジャーニーのこの部分が完了したら、�
 次に、ヘッドレス体験の維持方法を学んだドキュメント[起動後](post-launch.md)を確認して、AEMのヘッドレスジャーニーを続ける必要があります。
 
 ## その他のリソース {#additional-resources}
+
+* [AEMヘッドレス実稼働環境の導入の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Cloud ServiceとしてのAEMへのデプロイの概要](/help/implementing/deploying/overview.md)
+* [ローカルAEM環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Cloud Managerを使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
