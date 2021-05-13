@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 0960c354eb9a5156d9200b2c6f54761f1a8383a2
+source-git-commit: 309fae113f98111e8dc548226a7fba1b72f16248
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 1%
+source-wordcount: '1836'
+ht-degree: 2%
 
 ---
 
@@ -199,7 +199,8 @@ AEMヘッドレス開発者ジャーニーのこの部分が完了したら、�
 
 ## その他のリソース {#additional-resources}
 
-* [AEMヘッドレス実稼働環境の導入の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Cloud ServiceとしてのAEMへのデプロイの概要](/help/implementing/deploying/overview.md)
 * [ローカルAEM環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [Cloud ServiceとしてのAEMへのデプロイの概要](/help/implementing/deploying/overview.md)
 * [Cloud Managerを使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
+* [Cloud Manager Git Repositoryを外部Gitリポジトリと統合し、プロジェクトをAEMにCloud Serviceとしてデプロイする](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
