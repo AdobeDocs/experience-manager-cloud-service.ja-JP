@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 16afabcd80f9014684a5d3428a65d8b2c41c69c8
+source-git-commit: eae25dc48a7cd5d257e23b515f497588a13917ea
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 69%
+source-wordcount: '1780'
+ht-degree: 71%
 
 ---
 
@@ -208,7 +208,3 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 ```
 
 そのまま使用できるインデックスをカスタマイズする必要がなくなった場合は、そのまま使用できるインデックス定義をコピーする必要があります。 例えば、既に`damAssetLucene-8-custom-3`を展開していて、カスタマイズが不要になり、デフォルトの`damAssetLucene-8`インデックスに戻す場合は、`damAssetLucene-8`のインデックス定義を含むインデックス`damAssetLucene-8-custom-4`を追加する必要があります。
-
-### インデックスの可用性とフォルト・トレランス{#index-availability-and-fault-tolerance}
-
-重要な機能の重複インデックスを作成することをお勧めします（上述のインデックスの命名規則に従ってください）。インデックスの破損や予期しないイベントが発生した場合は、クエリに応答するためのフォールバックインデックスが使用できます。
