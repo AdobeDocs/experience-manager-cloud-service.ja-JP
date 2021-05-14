@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 feature: アセット管理
 role: Business Practitioner
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 51%
+source-wordcount: '464'
+ht-degree: 49%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 51%
 
 Dynamic Media アセットを公開するには、既にアップロード済みのアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」をタップします。Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
 
-また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。[Dynamic Media の設定](config-dm.md)を参照してください。または、フォルダーレベルで&#x200B;**[!UICONTROL 一部の発行]**&#x200B;を使用して、相互に排他的なDynamic MediaまたはAdobe Experience Managerに選択的にアセットを発行することもできます。 詳しくは、[Dynamic Mediaの一部の発行を使用する](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
+また、ユーザの介入なしで、アップロードしたアセットを即座に公開することもできます。 または、選択してアセットを公開することもできます。[Dynamic Media の設定](config-dm.md)を参照してください。または、フォルダーレベルで&#x200B;**[!UICONTROL 一部の発行]**&#x200B;を使用して、相互に排他的なDynamic MediaまたはAdobe Experience Managerに選択的にアセットを発行することもできます。 詳しくは、[Dynamic Mediaの一部の発行を使用する](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
 
 **[!UICONTROL カード表示]**&#x200B;で、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さな地球アイコンが表示されます。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
