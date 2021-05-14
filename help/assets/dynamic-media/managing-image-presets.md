@@ -4,11 +4,10 @@ description: 「画像プリセットと、画像プリセットを作成、変�
 feature: 画像プリセット，ビューア，レンディション
 role: Business Practitioner
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 72%
+source-wordcount: '3653'
+ht-degree: 69%
 
 ---
 
@@ -30,7 +29,7 @@ ht-degree: 72%
 
 各画像プリセットはマクロと同様に、サイズおよびフォーマットのコマンドに関する事前定義済みのコレクションが、特定の名前で保存されたものです。画像プリセットの機能を理解するために、Webサイトで、デスクトップとモバイル配信用に、各製品の画像を様々なサイズ、様々な形式および圧縮率で表示する必要があるとします。
 
-デスクトップバージョン（500 x 500 ピクセル）とモバイルバージョン（150 x 150 ピクセル）の 2 つの画像プリセットを作成できます。2 つの画像プリセットを作成します。つまり、500 x 500 ピクセルで画像を表示するための `Enlarge` プリセットとで、150 x 150 ピクセルで画像を表示するための `Thumbnail` プリセットです。画像を`Enlarge`サイズと`Thumbnail`サイズで配信する場合、Experience Managerは「Enlarge Image」プリセットと「Thumbnail Image」プリセットの定義を参照します。 次に、Experience Managerは各画像プリセットのサイズおよび形式仕様で画像を動的に生成します。
+デスクトップバージョン（500 x 500 ピクセル）とモバイルバージョン（150 x 150 ピクセル）の 2 つの画像プリセットを作成できます。2 つの画像プリセットを作成します。つまり、500 x 500 ピクセルで画像を表示するための `Enlarge` プリセットとで、150 x 150 ピクセルで画像を表示するための `Thumbnail` プリセットです。画像を`Enlarge`および`Thumbnail`サイズで配信するために、Experience Managerは「Enlarge Image Preset」と「Thumbnail Image Preset」の定義を探します。 次に、Experience Managerは各画像プリセットのサイズおよび形式仕様で画像を動的に生成します。
 
 この場合、動的に配信されるときに画像のサイズを削減すると、シャープさと細部の表現が失われる可能性があります。この理由で、各画像プリセットには、画像を特定のサイズで配信するときに最適化するためのフォーマット用のコントロールが含まれています。これらのコントロールによって、Web サイトまたはアプリケーションに画像が配信されるときに、画像がシャープでクリアに表示されるようになります。
 
@@ -38,7 +37,7 @@ ht-degree: 72%
 
 ## 画像プリセットの管理 {#managing-image-presets-1}
 
-Experience Managerで画像プリセットを管理するには、Experience Managerのロゴをタップまたはクリックしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして&#x200B;**[!UICONTROL アセット/画像プリセット]**&#x200B;に移動します。
+Experience Managerで画像プリセットを管理するには、Experience Managerのロゴをタップまたはクリックしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして&#x200B;**[!UICONTROL アセット]**/**[!UICONTROL 画像プリセット]**&#x200B;に移動します。
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -63,7 +62,7 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。Experi
 * Adobe Illustrator のドキュメントは複数のレイヤーを持つ単一のページで構成されます。各レイヤーは、メインのIllustratorアセットの下にあるPNGサブアセットとして抽出されます。
 * PDF のドキュメントは 1 つ以上のページで構成されます。各ページは、複数ページのメインPDFドキュメントの下に、単一のページPDFサブアセットとして抽出されます。
 
-サブアセットは、`Create Sub Asset process`コンポーネントによって`DAM Update Asset`ワークフロー全体内に作成されます。 ワークフローにこのプロセスコンポーネントを表示するには、**[!UICONTROL ツール／ワークフロー／モデル／DAM アセットの更新／編集]**&#x200B;をタップします。
+サブアセットは、`Create Sub Asset process`コンポーネントによって`DAM Update Asset`ワークフロー全体内に作成されます。 ワークフローにこのプロセスコンポーネントを表示するには、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL モデル]**／**[!UICONTROL DAM アセットの更新]**／**[!UICONTROL 編集]**&#x200B;をタップします。
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
@@ -88,7 +87,7 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。Experi
 
 `Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントのオプションには、`DAM Update Asset` ワークフローを通じてアクセスします。
 
-左上の Adobe Experience Manager をタップし、**[!UICONTROL ツール／ワークフロー／モデル]**&#x200B;に移動します。ワークフローモデルページで「**[!UICONTROL DAM アセットの更新]**」を選択し、ツールバーの「**[!UICONTROL 編集]**」をタップします。DAM アセットの更新ワークフローページで、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントをダブルタップして、ステップのプロパティダイアログボックスを開きます。
+左上のAdobe Experience Managerをタップし、**[!UICONTROL ツール]** > **[!UICONTROL ワークフロー]** > **[!UICONTROL モデル]**&#x200B;に移動します。 ワークフローモデルページで「**[!UICONTROL DAM アセットの更新]**」を選択し、ツールバーの「**[!UICONTROL 編集]**」をタップします。DAM アセットの更新ワークフローページで、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントをダブルタップして、ステップのプロパティダイアログボックスを開きます。
 
 #### PDF/AI 画像プレビューレンディションをラスタライズのオプション {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -96,41 +95,18 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。Experi
 
 PDF または AI ワークフローのラスタライズの引数
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>プロセス引数</strong></td>
-   <td><strong>デフォルト設定</strong></td>
-   <td><strong>説明</strong></td>
-  </tr>
-  <tr>
-   <td>MIME タイプ</td>
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td>
-   <td>PDF または Illustrator のドキュメントと見なされるドキュメントの MIME タイプのリスト。<br /> </td>
-  </tr>
-  <tr>
-   <td>最大の幅</td>
-   <td>2048</td>
-   <td>生成されたプレビューレンディションの最大の幅（ピクセル単位）。<br /> </td>
-  </tr>
-  <tr>
-   <td>最大の高さ</td>
-   <td>2048</td>
-   <td>生成されたプレビューレンディションの最大の高さ（ピクセル単位）。<br /> </td>
-  </tr>
-  <tr>
-   <td>解像度</td>
-   <td>72</td>
-   <td>最初のページをラスタライズする解像度（ppi（インチあたりピクセル数）単位）</td>
-  </tr>
- </tbody>
-</table>
+| プロセス引数 | デフォルト設定 | 説明 |
+|---|---|---|
+| MIME タイプ | application/pdf<br>application/<br>postscriptapplication/illustrator | PDF または Illustrator のドキュメントと見なされるドキュメントの MIME タイプのリスト。 |
+| 最大の幅 | 2048 | 生成されたプレビューレンディションの最大の幅（ピクセル単位）。 |
+| 最大の高さ | 2048 | 生成されたプレビューレンディションの最大の高さ（ピクセル単位）。 |
+| 解像度 | 72 | 最初のページをラスタライズする解像度（ppi（インチあたりピクセル数）単位） |
 
 デフォルトのプロセス引数を使用して、PDF/AI ドキュメントの最初のページが 72 ppi でラスタライズされ、生成されたプレビュー画像のサイズは 2048 x 2048 ピクセルになります。一般的なデプロイメントの場合は、解像度を150 ppi以上に増やすことができます。 例えば、300 ppi の US Letter サイズのドキュメントの幅と高さにはそれぞれ最大で 2550 x 3300 ピクセルが必要です。
 
   ラスタライズする解像度を制限する最大の幅と最大の高さ。例えば、最大値が変更されず、解像度が 300 ppi に設定された場合、US Letter のドキュメントは 186 ppi でラスタライズされます。つまり、ドキュメントは 1581 x 2046 ピクセルになります。
 
-`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントには、メモリに過度に大きな画像が作成されないように、最大値が定義されています。このようなサイズの大きな画像は、JVM（Java Virtual Machine）で提供されているメモリをオーバーフローさせることがあります。それぞれ設定された最大サイズで画像を作成可能なワークフローを、設定した数だけ並行して管理するのに十分なメモリを JVM に提供する必要があります。
+`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントには、メモリに過度に大きな画像が作成されないように、最大値が定義されています。このような大きな画像は、JVM (Java™ Virtual Machine)に提供されているメモリをオーバーフローする可能性があります。 それぞれ設定された最大サイズで画像を作成可能なワークフローを、設定した数だけ並行して管理するのに十分なメモリを JVM に提供する必要があります。
 
 ### InDesign（INDD）ファイル形式  {#indesign-indd-file-format}
 
@@ -148,30 +124,12 @@ DAM アセットの更新ワークフローのメディア抽出プロセスコ�
 
 Dynamic Media 統合では、以下のスクリプトが使用されます。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>ExtendScript名</strong></td>
-   <td><strong>デフォルト</strong></td>
-   <td><strong>説明</strong></td>
-  </tr>
-  <tr>
-   <td>ThumbnailExport.jsx</td>
-   <td>はい</td>
-   <td><code>Dynamic Media Process Image Assets</code> プロセスコンポーネントによって最適化され PTIFF レンディションに変換される 300 ppi の <code>thumbnail.jpg</code> レンディションを生成します。<br /> </td>
-  </tr>
-  <tr>
-   <td>JPEGPagesExport.jsx</td>
-   <td>はい</td>
-   <td>各ページに対して300 ppiのJPEGサブアセットを生成します。 JPEGサブアセットは、InDesignアセットの下に保存される実際のアセットです。 また、<code>DAM Update Asset</code> ワークフローで最適化され PTIFF に変換されます。<br /> </td>
-  </tr>
-  <tr>
-   <td>PDFPagesExport.jsx</td>
-   <td>いいえ</td>
-   <td>各ページのPDFサブアセットを生成します。 PDFサブアセットは、前述のとおりに処理されます。 PDFには1ページしか含まれないので、サブアセットは生成されません。<br /> </td>
-  </tr>
- </tbody>
-</table>
+
+| ExtendScript名 | デフォルト | 説明 |
+|---|---|---|
+| ThumbnailExport.jsx | はい | `thumbnail.jpg` プロセスコンポーネントによって最適化され PTIFF レンディションに変換される 300 ppi の `Dynamic Media Process Image Assets` レンディションを生成します。 |
+| JPEGPagesExport.jsx | はい | 各ページに対して300 ppiのJPEGサブアセットを生成します。 JPEGサブアセットは、InDesignアセットの下に保存される実際のアセットです。 また、`DAM Update Asset` ワークフローで最適化され PTIFF に変換されます。 |
+| PDFPagesExport.jsx | いいえ | 各ページのPDFサブアセットを生成します。 PDFサブアセットは、前述のとおりに処理されます。 PDFには単一ページのみが含まれるので、サブアセットは生成されません。 |
 
 ### 画像のサムネールサイズの設定 {#configuring-image-thumbnail-size}
 
@@ -194,7 +152,7 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 
 **画像のサムネールサイズを設定するには**：
 
-1. **[!UICONTROL ツール／ワークフロー／モデル／DAM アセットの更新／編集]**&#x200B;をタップします。
+1. **[!UICONTROL ツール]**/**[!UICONTROL ワークフロー]**/**[!UICONTROL モデル]**/**[!UICONTROL DAM更新アセット]**/**[!UICONTROL 編集]**&#x200B;をタップします。
 1. **[!UICONTROL Dynamic Media プロセスの画像アセット]**&#x200B;のステップをタップし、「**[!UICONTROL サムネール]**」タブをタップします。必要に応じてサムネールのサイズを変更し、「**[!UICONTROL OK]**」をタップします。
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
@@ -211,7 +169,7 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 
 作成した画像プリセットは、アセットをプレビューする際の動的レンディションとして使用できます。Experience Managerは、**[!UICONTROL 詳細表示/レンディション]**&#x200B;からアセットを表示する際に、様々なダイナミックレンディションを表示します。 表示されるレンディション数の制限を増減させることができます。
 
-**表示される画像プリセット数を増減させるには**：：
+**表示される画像プリセット数を増減させるには**：:
 
 1. CRXDE Lite（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）に移動します。
 1. 画像プリセットリストノード（`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`）に移動します。
@@ -239,11 +197,12 @@ AI、PDF、EPSファイルの取り込みをサポートしてこれらのファ
 [Adobe Illustrator(AI)、PostScript®(EPS)、PDFファイル形式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)を参照してください。
 
 INDDファイルの取り込みをサポートして、このファイル形式のダイナミックレンディションを生成できるようにする場合は、画像プリセットを作成する前に、次の情報を確認してください。
+
 [InDesign（INDD）ファイル形式](#indesign-indd-file-format)を参照してください。
 
-**画像プリセットを作成するには**：：
+**画像プリセットを作成するには**：:
 
-1. Experience Managerで、Experience Managerのロゴをタップしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール/アセット/画像プリセット]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**/**[!UICONTROL 画像プリセット]**&#x200B;をタップします。
 1. 「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL 画像プリセットを編集]**&#x200B;ウィンドウが開きます。
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -318,7 +277,7 @@ INDDファイルの取り込みをサポートして、このファイル形式�
       「<strong>PDF</strong>」、「<strong>TIFF</strong>」または「<strong>アルファ付き TIFF</strong>」を選択すると、以下の追加オプションを入力できます。
     </div>
     <ul>
-     <li><strong>圧縮</strong> - 圧縮アルゴリズムを選択します。PDF 用のアルゴリズムオプションは、「<strong>なし</strong>」、「<strong>Zip</strong>」および「<strong>JPEG</strong>」です。TIFF の場合は、「<strong>なし</strong>」、「<strong>LZW</strong>」、「<strong>JPEG</strong>」および「<strong>Zip</strong>」です。アルファ付き TIFF の場合は、「<strong>なし</strong>」、「<strong>LZW</strong>」および「<strong>Zip</strong>」です。</li>
+     <li><strong>圧縮</strong> - 圧縮アルゴリズムを選択します。PDFのアルゴリズムオプションは、<strong>なし</strong>、<strong>郵便番号</strong>、<strong>Jpeg</strong>です。TIFFの場合は、<strong>なし</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>、<strong>Zip</strong>です。また、アルファ付きTIFFの場合は<strong>なし</strong>、<strong>LZW</strong>、<strong>Zip</strong>です。</li>
     </ul> <p>「<strong>PNG</strong>」、「<strong>アルファ付き PNG</strong>」または「<strong>EPS</strong>」を選択した場合は、追加オプションはありません。</p> </td>
   </tr>
   <tr>
@@ -350,7 +309,7 @@ INDDファイルの取り込みをサポートして、このファイル形式�
     <ul>
      <li>「<strong>知覚的</strong>」は、元の画像の 1 つ以上の色が対象のカラースペースの色域外であるときに、一方のカラースペースの全色域をもう一方のカラースペースの色域に圧縮する場合に選択します。</li>
      <li>現在のカラースペースの色がターゲットのカラースペースの色域外にある場合は、「<strong>相対的な色域を保持</strong>」を選択します。また、他の色に影響を与えることなく、ターゲットカラースペースのガマット内で最も近い色にマップする必要があります。 </li>
-     <li>「<strong>彩度</strong>」は、対象のカラースペースに変換するときに元の画像の色の彩度を再現する場合に選択します。 </li>
+     <li>ターゲットのカラースペースに変換する際に元の画像のカラー彩度を再現する場合は、「<strong>彩度</strong>」を選択します。 </li>
      <li>「<strong>絶対的な色域を維持</strong>」は、画像の明るさを変える白点と黒点の調整なしで色を完全に一致させる場合に選択します。</li>
     </ul> </td>
   </tr>
@@ -366,9 +325,9 @@ INDDファイルの取り込みをサポートして、このファイル形式�
    <td><strong>シャープタイプ</strong></td>
    <td><p>「<strong>なし</strong>」、「<strong>シャープ</strong>」または「<strong>アンシャープマスク</strong>」を選択します。 </p>
     <ul>
-     <li>「<strong>なし</strong>」を選択すると、シャープが無効になります。</li>
+     <li>シャープを無効にする場合は、「<strong>なし</strong>」を選択します。</li>
      <li>「<strong>シャープ</strong>」を選択すると、すべての拡大縮小の実行後、画像に対して基本的なシャープフィルターが適用されます。シャープにより、画像を異なるサイズで表示した場合に発生するぼかしを補うことができます。 </li>
-     <li>「<strong>アンシャープマスク</strong>」を選択して、最終的なダウンサンプル画像に対するシャープフィルター効果を微調整します。 効果の適用度、効果の半径（ピクセル単位）および無視されるコントラストのしきい値を制御できます。 この効果では、Photoshop の「アンシャープマスク」フィルターと同じオプションが使用されます。</li>
+     <li>最終的なダウンサンプル画像に対するシャープフィルター効果を微調整する場合は、「<strong>アンシャープマスク</strong>」を選択します。 効果の適用度、効果の半径（ピクセル単位）および無視されるコントラストのしきい値を制御できます。 この効果では、Photoshop の「アンシャープマスク」フィルターと同じオプションが使用されます。</li>
     </ul> <p>「<strong>アンシャープマスク</strong>」には次のオプションがあります。</p>
     <ul>
      <li><strong>量</strong> - 端のピクセルに適用されるコントラストを制御します。デフォルトの実数値は 1.0 です。高解像度の画像に対しては、この値を 5.0 まで増やすことができます。「量」は、フィルター強度の尺度だと考えてください。</li>
@@ -465,7 +424,7 @@ INDDファイルの取り込みをサポートして、このファイル形式�
 
 ### 画像プリセットの編集 {#modifying-image-presets}
 
-1. Experience Managerで、Experience Managerのロゴをタップしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール/アセット/画像プリセット]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**/**[!UICONTROL アセット]**/**[!UICONTROL 画像プリセット]**&#x200B;をタップします。
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -478,5 +437,5 @@ INDDファイルの取り込みをサポートして、このファイル形式�
 
 ### 画像プリセットの削除 {#deleting-image-presets}
 
-1. Experience Managerで、Experience Managerのロゴをタップしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして、**[!UICONTROL アセット/画像プリセット]**&#x200B;に移動します。
+1. Experience Managerで、Experience Managerのロゴをタップしてグローバルナビゲーションコンソールにアクセスし、ツールアイコンをタップまたはクリックして、**[!UICONTROL アセット]**/**[!UICONTROL 画像プリセット]**&#x200B;に移動します。
 1. プリセットを選択し、「**[!UICONTROL 削除]**」をクリックします。プリセットを削除してよいか確認するメッセージが表示されます。「**[!UICONTROL 削除]**」をタップして削除するか、「**[!UICONTROL キャンセル]**」をタップして中止します。
