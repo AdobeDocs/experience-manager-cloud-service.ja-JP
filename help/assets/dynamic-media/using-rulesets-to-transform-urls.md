@@ -3,11 +3,10 @@ title: ルールセットを使用した URL の変換
 description: URLを変換するためにDynamic Mediaにルールセットをデプロイする方法について説明します。 ルールセットは、XMLデータを評価し、特定の条件を満たす場合に特定のアクションを実行するスクリプティング言語（JavaScript™など）で記述された一連の命令です。
 role: Business Practitioner
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
@@ -31,7 +30,7 @@ Dynamic Media でルールセットをデプロイして、URL を変換でき�
 
    [URL からの特殊文字の削除](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)を参照してください。
 
-Dynamic Media のコンテキストで、XML ベースのシステムを使用してアセット情報を管理する Web サイトは、XML ファイルを Dynamic Media にアップロードできます。これらのファイルのいずれかを、Dynamic Media のアセットを処理するための前処理ルールセットファイルとして指定できます。このファイルは、Dynamic Media と統合するシステムのビジネスロジックを満たすよう、標準 URL プロトコル形式を再構成します。XML ファイルをルールセット定義ファイルのパスとして指定します。
+Dynamic Media のコンテキストで、XML ベースのシステムを使用してアセット情報を管理する Web サイトは、XML ファイルを Dynamic Media にアップロードできます。これらのファイルのいずれかを、Dynamic Media のアセットを処理するための前処理ルールセットファイルとして指定できます。このファイルは、Dynamic Mediaと統合されるシステムの会社ロジックに合わせて、標準URLプロトコル形式を再構成します。 XML ファイルをルールセット定義ファイルのパスとして指定します。
 
 >[!CAUTION]
 >
@@ -68,7 +67,7 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
    * ページ右下隅の「**[!UICONTROL アップロードを送信]**」をクリックします。
    * グローバルナビゲーションバーの「**[!UICONTROL ジョブ]**」をクリックして、アップロードジョブのステータスを確認します。**[!UICONTROL ジョブ]**&#x200B;ページの「**[!UICONTROL ステータス]**」列に「アップロード完了」と表示されたら、次のステップに進みます。
 
-1. ページ上部付近のナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** をクリックします。
+1. ページ上部近くのナビゲーションバーで、**[!UICONTROL 設定]**/**[!UICONTROL アプリケーション設定]**/**[!UICONTROL 公開設定]**/**[!UICONTROL Image Server]**&#x200B;をクリックします。
 1. **[!UICONTROL Image Server 公開]**&#x200B;ページの「**[!UICONTROL カタログ管理]**」グループで、**[!UICONTROL ルールセット定義ファイルのパス]**&#x200B;を探し、「**[!UICONTROL 選択]**」をクリックします。
 1. **[!UICONTROL ルールセット定義ファイル（XML）を選択]**&#x200B;ページでルールセットファイルを参照し、ページ右下隅の「**[!UICONTROL 選択]**」をクリックします。
 1. 設定ページの右下隅の「**[!UICONTROL 閉じる]**」をクリックします。
