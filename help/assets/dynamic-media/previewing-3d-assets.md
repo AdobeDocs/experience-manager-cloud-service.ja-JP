@@ -1,11 +1,10 @@
 ---
 title: 3D アセットのプレビュー
 description: Dynamic Media の 3D アセットのプレビュー方法について説明します。
-translation-type: tm+mt
-source-git-commit: 2fd39221eca36f520d0095339423ac2c6a0c322e
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 63%
+source-wordcount: '562'
+ht-degree: 55%
 
 ---
 
@@ -25,7 +24,7 @@ Experience Manager内のインタラクティブ3Dプレビューは、次のフ
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
 | GLB | バイナリ GL 伝送 | model/gltf-binary |  |
-| GLTF | GL 伝送形式 | model/gltf+json | 下記の&#x200B;**備考**&#x200B;を参照。 |
+| GLTF | GL 伝送形式 | model/gltf+json | 下の&#x200B;**注意**&#x200B;を参照してください。 |
 | OBJ | WaveFront 3D オブジェクトファイル | application/x-tgif |  |
 | STL | ステレオリソグラフィ | application/vnd.ms-pki.stl |  |
 | DN | Adobe Dimension | model/x-adobe-dn | 取り込みのみサポート。プレビューは使用できません。 |
@@ -46,18 +45,18 @@ Experience Manager内のインタラクティブ3Dプレビューは、次のフ
 
 アセットの詳細表示ページで 3D アセットを開くときにかかる時間は、帯域幅、画像の複雑さ、サーバーの待ち時間など、いくつかの要因によって異なります。
 
-さらに、カメラをインタラクティブに操作する際に、ワークステーション、ノートパソコン、モバイルタッチデバイスなどのクライアントコンピューターの性能を考慮することも重要です。グラフィック性能に優れ、ある程度パワフルなシステムなら、インタラクティブな 3D 表示をよりスムーズで満足なものにすることができます。
+また、ワークステーション、ノート、モバイルタッチデバイスなどのクライアントコンピューターの機能も、カメラをインタラクティブに操作する場合に考慮する必要があります。 グラフィック性能に優れ、ある程度パワフルなシステムなら、インタラクティブな 3D 表示をよりスムーズで満足なものにすることができます。
 
 **Experience Manager内の3Dアセットをプレビューするには：**
 
 1. 3D アセットが Experience Manager にアップロードされていることを確認します。詳しくは、[3D プレビューでサポートされるファイル形式](#supported-3d-previewing-assets)と[アセットのアップロード](/help/assets/manage-digital-assets.md#uploading-assets)を参照してください。
-1. Experience Manager の&#x200B;**[!UICONTROL ナビゲーション]**&#x200B;ページで&#x200B;**[!UICONTROL アセット／ファイル]**&#x200B;をタップします。
+1. Experience Managerの&#x200B;**[!UICONTROL ナビゲーション]**&#x200B;ページで、**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 
    ![ナビゲーションページ](/help/assets/dynamic-media/assets/navigation-assets.png)
 
 1. ページの右上隅付近にある「表示」ドロップダウンリストで「**[!UICONTROL カード表示]**」をタップし、プレビューする 3D アセットに移動します。
 
-   ![3D カードの選択](/help/assets/dynamic-media/assets/3d-card-select.png)
+   ![3Dカードの選択](/help/assets/dynamic-media/assets/3d-card-select.png)
    _カード表示で、プレビューする 3D アセットのカードをタップ_
 
 1. 3Dアセットのカードをタップします。
