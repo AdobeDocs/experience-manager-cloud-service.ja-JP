@@ -3,10 +3,9 @@ title: セレクターの操作
 description: Dynamic Media でインタラクティブ画像、インタラクティブビデオ、カルーセルバナーのアセットを選択する方法について説明します。
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 52%
 
 ---
@@ -59,7 +58,7 @@ ht-degree: 52%
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. **[!UICONTROL プレビュー]**&#x200B;モードの場合は、ホットスポットまたは画像マップをタップして、クイック表示の外観を確認できます。
+1. **[!UICONTROL プレビュー]**&#x200B;モードの場合は、ホットスポットまたは画像マップをタップして、クイック表示の表示を確認できます。
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
