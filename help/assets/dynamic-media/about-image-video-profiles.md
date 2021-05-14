@@ -4,8 +4,7 @@ description: イメージプロファイルまたはビデオプロファイル�
 feature: アセット管理，画像プロファイル，ビデオプロファイル
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-translation-type: tm+mt
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 67%
@@ -90,7 +89,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 （オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、平均アセットサイズと、再処理が実行されるアセットのMIMEタイプによって制御されます。 値を大きくすると、1回の再処理ジョブに多数のファイルが含まれます。 したがって、処理用バナーはExperience Managerアセット上に長い時間残ります。 ただし、平均ファイルサイズが1 MB以下の場合は、値を100個まで増やすことを推奨しますが、Adobeは1000個以下にすることをお勧めします。 平均ファイルサイズが数百MBの場合は、Adobeでは、バッチサイズを10まで下げることを推奨します。
 
-**必要に応じて、再処理ワークフローのバッチ・サイズを調整する手順は**、次のとおりです。
+**再処理ワークフローのバッチサイズを調整するには（オプション）**：:
 
 1. Adobe Experience Manager で、「**[!UICONTROL Adobe Experience Manager]**」をタップしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**（ハンマーアイコン）／**[!UICONTROL ワークフロー／モデル]**&#x200B;をタップします。
 1. ワークフローモデルページのカード表示またはリスト表示で、「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
