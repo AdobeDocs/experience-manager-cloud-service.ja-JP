@@ -4,15 +4,14 @@ description: Dynamic Media でビデオを使用する方法について説明�
 feature: ビデオプロファイル
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '9510'
-ht-degree: 70%
+source-wordcount: '9475'
+ht-degree: 67%
 
 ---
 
-# ビデオ {#video}
+# ビデオ{#video}
 
 ここでは、Dynamic Media でのビデオの操作方法について説明します。
 
@@ -164,7 +163,7 @@ Dynamic Mediaは、MP4 H.264ビデオのモバイルビデオ再生をサポー�
 
 詳しくは、[動的なビデオ再生](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)の例を参照してください。
 
-『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=ja)』の「Experience Managerアセットのビューア」および「Dynamic Mediaクラシック](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja#viewers-aem-assets-dmc)」および「Experience Managerアセットのビューアのみ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=ja#viewers-for-aem-assets-only)」も参照してください。[[
+『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)』の「Experience Managerアセットのビューア」および「Dynamic Mediaクラシック](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja#viewers-aem-assets-dmc)」および「Experience Managerアセットのビューアのみ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=ja#viewers-for-aem-assets-only)」も参照してください。[[
 
 ## ベストプラクティス：HTML5 ビデオビューアの使用 {#best-practice-using-the-html-video-viewer}
 
@@ -176,7 +175,7 @@ Dynamic MediaのHTML5ビデオビューアプリセットは堅牢なビデオ�
 
 HTML5とCSSを使用して再生コンポーネントを設計する機能を1つのプレーヤーに組み合わせることができます。 埋め込み再生が可能で、ブラウザの機能に応じてアダプティブストリーミングとプログレッシブストリーミングを使用できます。 これらの機能は、リッチメディアコンテンツの提供先をデスクトップとモバイルの両方のユーザーに拡張でき、ビデオの効率化を実現します。
 
-『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)』の「Experience Managerアセットのビューアのみ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)」も参照してください。[
+『[Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)』の「Experience Managerアセットのビューアのみ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)」も参照してください。[
 
 ### HTML5 ビデオビューアを使用した、デスクトップコンピューターおよびモバイルデバイス上でのビデオ再生 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -281,10 +280,10 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
 
 ここでは、ソースビデオファイルのエンコードにおけるベストプラクティスのヒントを説明します。
 
-ビデオエンコーディングに関するアドバイスについては、以下を参照してください。
+<!-- For advice about video encoding, see the following:
 
-* [ストリーミング 101：基本 - コーデック、帯域幅、データレートおよび解像度](https://www.adobe.com/go/learn_s7_streaming101_jp)。
-* [ビデオエンコーディングの基本](https://www.adobe.com/go/learn_s7_encoding_jp)。
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+* [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### ソースビデオファイル {#source-video-files}
 
@@ -354,7 +353,7 @@ VBRとCBRを選択する場合は、ほとんどの場合、メディアファ�
 | 2,000 | 一般的なブロードバンドデスクトップ接続。この接続では、800～2,000 Kbps の範囲のデータレートがターゲットとなります。大部分のターゲットは、平均 1,200～1,500 Kbps です。 |
 | 5,000 | 一般的な高帯域幅接続。この高帯域幅の範囲でのエンコードは推奨されません。ほとんどのユーザーに対して、この速度でビデオを配信することはできません。 |
 
-### 解像度 {#resolution}
+### 解決方法 {#resolution}
 
 **解像度**&#x200B;は、ビデオファイルの高さと幅をピクセル単位で表したものです。ほとんどのソースビデオは、1,920 x 1,080 などの高解像度で保存されます。ストリーミング用のソースビデオは、比較的低い解像度（640 x 480 以下）に圧縮されます。
 
@@ -367,11 +366,11 @@ VBRとCBRを選択する場合は、ほとんどの場合、メディアファ�
 
 640 x 480 のファイルのフレームあたりピクセル数は 4 倍あります。これら 2 つの解像度例で同じデータレートを達成するには、640 x 480 のファイルに対して 4 倍の圧縮率を適用します。その結果、ビデオの品質が低下する可能性があります。つまり、250 Kbps のビデオデータレートの場合、320 x 240 の解像度では高品質の表示が可能ですが、640 x 480 の解像度では高品質の表示は期待できません。
 
-一般に、データレートが高いほどビデオ画質が向上し、解像度が高いほど、（低解像度と比較して）表示画質を維持する必要があるデータレートが高くなります。
+一般に、データレートが高いほどビデオがよく表示され、解像度が高いほど、（低解像度よりも）表示画質を維持する必要があるデータレートが高くなります。
 
 解像度とデータレートには関連があるので、ビデオをエンコードする際には次の 2 つの方法から選択できます。
 
-* データレートを選択してから、選択したデータレートできれいに表示される最高の解像度でエンコードします。
+* データレートを選択し、選択したデータレートに適した最高の解像度でエンコードします。
 * 解像度を選択してから、選択した解像度で高品質のビデオを配信するために必要になるデータレートでエンコードします。
 
 プライマリソースビデオファイルのビデオエンコーディングプリセットを選択（または作成）する場合は、次の表を使用して正しい解像度をターゲットにします。
@@ -422,15 +421,15 @@ YouTube は独自のエンコーディングをおこないます。したがっ
 
 ビデオ処理プロファイルを省略してYouTubeに直接公開する場合は、単にExperience Managerアセット内のビデオアセットに表示可能なサムネールが表示されないことを意味します。 また、エンコードされていないビデオは、Dynamic Mediaのアセットタイプでは動作しません。
 
-ビデオアセットの YouTube サーバーへの公開において、YouTube との安全でセキュアなサーバー間認証をおこなうには、次のタスクを実行する必要があります。
+ビデオアセットをYouTubeサーバに公開するには、YouTubeとの安全で安全なサーバ間検証を確実に行うために、次のタスクを実行する必要があります。
 
 1. [Google Cloud 設定](#configuring-google-cloud-settings)
 1. [YouTube チャンネルの作成](#creating-a-youtube-channel)
 1. [公開用タグの追加](#adding-tags-for-publishing)
 1. [ Experience Manager での YouTube のセットアップ](#setting-up-youtube-in-aem)
-1. [（オプション）アップロードしたビデオのデフォルト YouTube プロパティ設定の自動化](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [（オプション）アップロードしたビデオのデフォルト YouTube プロパティ設定の自動化 ](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [YouTube チャンネルへのビデオの公開](#publishing-videos-to-your-youtube-channel)
-1. [（オプション）YouTube での公開済みビデオの確認](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
+1. [（オプション）YouTube での公開済みビデオの確認 ](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Web アプリケーションへの YouTube URL のリンク](#linking-youtube-urls-to-your-web-application)
 
 また、[ビデオを非公開にして YouTube から削除する](#unpublishing-videos-to-remove-them-from-youtube)こともできます。
@@ -447,7 +446,7 @@ Googleはユーザーインターフェイスを定期的に変更します。 �
 >
 >以下の手順は、このドキュメントを執筆している時点で正確なものです。Google は、Web サイトを予告なく定期的に更新します。したがって、これらの手順は少し異なる場合があります。
 
-Google Cloud を設定するには：
+**Google Cloud を設定するには：**
 
 1. Googleアカウントを作成します。
    [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
@@ -505,7 +504,7 @@ Google Cloud を設定するには：
 
    例：`https://1a2b3c.mycompany.com:4321`
 
-   **注意**：上記のパスは入力例です。
+   **注意**:上記のパスの例は、説明を目的としたものです。
 
    ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
 
@@ -515,7 +514,7 @@ Google Cloud を設定するには：
 
    例：`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **注意**：上記のパスは入力例です。
+   **注意**:上記のパスの例は、説明を目的としたものです。
 
 1. 「**[!UICONTROL OAuth クライアント ID の作成]**」をクリックします。
 1. **[!UICONTROL プロジェクトへの認証情報の追加]**&#x200B;ページの手順 3 で、「**[!UICONTROL OAuth 2.0 同意画面を設定する]**」の下で、現在使用している Gmail 電子メールアドレスを選択します。
@@ -545,17 +544,17 @@ YouTube にビデオを公開するには、1 つ以上のチャネルが必要�
 
 >[!CAUTION]
 >
->*YouTube*&#x200B;のの前に1つ以上のチャネルを既に設定していることを確認してください(下の[Experience Manager](#setting-up-youtube-in-aem)でのYouTubeの設定を参照)。 チャネルの設定に失敗した場合、既存のチャネルが存在しないことを警告することはありません。 ただし、それでも、チャネルを追加する際に Google 認証がおこなわれますが、ビデオの送信先となるチャネルを選択するオプションがありません。
+>*YouTube*&#x200B;のの前に1つ以上のチャネルを既に設定していることを確認してください(下の[Experience Manager](#setting-up-youtube-in-aem)でのYouTubeの設定を参照)。 チャネルの設定に失敗した場合、既存のチャネルが存在しないことを警告することはありません。 ただし、チャネルを追加してもGoogle検証は引き続き発生しますが、ビデオを送信するチャネルを選択するオプションはありません。
 
-YouTube チャンネルを作成するには：
+**YouTube チャンネルを作成するには：**
 
 1. [https://www.youtube.com](https://www.youtube.com/) にアクセスし、Google アカウントの資格情報を使用してログインします。
 1. YouTubeのページの右上隅で、プロファイルの画像をクリックし（色付きの円の中に文字として表示することもできます）、**[!UICONTROL YouTube設定]**（丸い歯車のアイコン）をタップします。
 1. 概要ページの「追加機能」の見出しの下で、**[!UICONTROL 「すべてのチャネルを表示」をタップするか、新しいチャネルを作成します]**。
 1. チャネルページで、「**[!UICONTROL 新しいチャネルを作成]**」をタップします。
-1. ブランドアカウントページで、「ブランドアカウント名」フィールドに、ビジネス名や、ビデオアセットの公開先となる他のチャネル名を入力し、「**[!UICONTROL 作成]**」をクリックします。
+1. ブランドアカウントページの「ブランドアカウント名」フィールドに、ビデオアセットの公開先を選択する会社名または他のチャネル名を入力し、「**[!UICONTROL 作成]**」をクリックします。
 
-   Experience ManagerでYouTubeをセットアップする際に再入力する必要があるので、ここに入力した名前を覚えておいてください。
+   ここに入力した名前を覚えておいてください。Experience ManagerでYouTubeを設定する必要がある場合は、もう一度入力する必要があります。
 
 1. （オプション）必要に応じて、さらにチャネルを追加します。
 
@@ -575,7 +574,7 @@ YouTube チャンネルを作成するには：
 
 After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, then a listing of those is displayed as part of the test.
 
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Replication]** &gt; **[!UICONTROL Agents on Author]**.
+1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
 1. On the Agents of Author page, click **[!UICONTROL YouTube Publish (youtube)]**.
 1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Enabled]** checkbox to turn on the replication agent.
@@ -614,7 +613,7 @@ Experience Manager6.4から、新しいタッチユーザーインターフェ�
    オプションで、必要に応じて説明を追加できます。
 
 1. 「**[!UICONTROL 追加]**」をタップします。
-1. YouTube／Google 認証が表示されます。Google Cloud アカウントにまだログインしていない場合は、この手順をスキップしてください。
+1. YouTube/Googleの検証が表示されます。 Google Cloud アカウントにまだログインしていない場合は、この手順をスキップしてください。
 
    * 前述の Google プロジェクト ID と JSON テキストに関連付けられた Google ユーザー名とパスワードを入力します。
    * アカウントに存在するチャネルの数によっては、2 つ以上の項目が表示されます。チャネルを選択してください。電子メールアドレスはチャネルではないので、選択しないでください。
@@ -659,7 +658,7 @@ Experience Manager6.4から、新しいタッチユーザーインターフェ�
    オプションで、必要に応じて説明を追加できます。
 
 1. 「**[!UICONTROL OK]**」をタップします。
-1. YouTube／Google 認証が表示されます。Google Cloud アカウントにまだログインしていない場合は、この手順をスキップしてください。
+1. YouTube/Googleの検証が表示されます。 Google Cloud アカウントにまだログインしていない場合は、この手順をスキップしてください。
 
    * 前述の Google プロジェクト ID と JSON テキストに関連付けられた Google ユーザー名とパスワードを入力します。
    * アカウントに存在するチャネルの数によっては、2 つ以上の項目が表示されます。チャネルを選択してください。電子メールアドレスはチャネルではないので、選択しないでください。
@@ -685,7 +684,7 @@ Experience Manager6.4から、新しいタッチユーザーインターフェ�
 
 メタデータ処理プロファイルを作成するには、まず「**[!UICONTROL フィールドラベル]**」、「**[!UICONTROL プロパティにマッピング]**」、「**[!UICONTROL 選択肢]**」の各フィールドの値をコピーします。これらはすべてビデオのメタデータスキーマで見つかります。次に、YouTubeのビデオメタデータ処理プロファイルにこれらの値を追加して作成します。
 
-アップロードしたビデオのデフォルト YouTube プロパティの設定を自動化するには：
+**アップロードしたビデオのデフォルト YouTube プロパティの設定を自動化するには：**
 
 1. Experience Managerの左上隅でExperience Managerのロゴをクリックし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]**/**[!UICONTROL メタデータスキーマ]**&#x200B;をクリックします。
 1. 「**[!UICONTROL デフォルト値]**」をクリックします（「デフォルト値」の左側にある選択ボックスにチェックマークを追加しないでください）。
@@ -813,7 +812,7 @@ Experience Managerは、YouTubeからコンテンツを削除するために、*
 
 1. YouTube チャンネルで非公開にするビデオアセットの場所に移動します。
 1. アセット選択モードで、1 つ以上の公開済みビデオアセットを選択します。
-1. ツールバーで「**[!UICONTROL 公開を管理]**」をクリックします。必要に応じて、3つのドットアイコン(...) をタップして、**[!UICONTROL 公開を管理]**&#x200B;を表示する必要があります。
+1. ツールバーで「**[!UICONTROL 公開を管理]**」をクリックします。必要に応じて、ツールバーの3つのドットのアイコン(`. . .`)をタップし、「**[!UICONTROL パブリケーションの管理]**」と表示されます。
 1. 「公開を管理」ページで、「**[!UICONTROL 非公開]**」をタップします。
 1. ページの右上隅にある「**[!UICONTROL 次へ]**」をタップします。
 1. ページの右上隅にある「**[!UICONTROL 非公開]**」をタップします。
@@ -824,7 +823,7 @@ Experience Managerは、YouTubeからコンテンツを削除するために、*
 
 ### 進行状況の監視 {#monitoring-progress}
 
-進行状況を監視するには（エンコーディング／YouTube の公開の失敗を含む）：
+**エンコードの失敗やYouTubeの公開など進行状況を監視するには：**
 
 1. アセットフォルダー内のビデオエンコーディングの進行状況を表示します。
 
@@ -901,11 +900,11 @@ Experience Managerは、YouTubeからコンテンツを削除するために、*
 
 How you configure notification depends on whether you want notifications for YouTube publishing jobs.
 
-* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
+* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
 
 For YouTube publishing jobs, do the following:
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL Workflow]** &gt; **[!UICONTROL Models]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
 1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
 1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
@@ -1050,7 +1049,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 使用するビデオプレーヤーがキャプションの表示に対応する必要があります。
 
-Dynamic Mediaは、キャプションファイルをJSON(JavaScript™ Object Notation)形式に変換できます。 このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。検索エンジンは、コンテンツをクロールしてインデックスを付けることで、ビデオが見つかりやすくなり、顧客にビデオコンテンツに関する詳細を示すことができます。
+Dynamic Mediaは、キャプションファイルをJSON(JavaScript™ Object Notation)形式に変換できます。 このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。検索エンジンは、コンテンツをクロール/インデックス付けして、ビデオが見つかりやすくなり、顧客にビデオコンテンツに関する詳細を示すことができます。
 
 URL での JSON 機能の使用について詳しくは、[静的な（画像以外の）コンテンツの提供](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=ja#image-serving-api)を参照してください。
 
@@ -1060,7 +1059,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    WebVTT（Web Video Text Tracks）標準に従ってファイルを作成してください。キャプションのファイル名拡張子は.VTTです。 WebVTT キャプション標準をよく確認してください。
 
-   [WebVTT：Web Video Text Tracks 形式（英語）](https://dev.w3.org/html5/webvtt/)を参照してください。
+   [WebVTT：Web Video Text Tracks 形式（英語）](https://w3c.github.io/webvtt/)を参照してください。
 
    Dynamic Media の外部でキャプション／サブタイトルのファイルを作成するための無料ツールや有料ツールがあります。例えば、スタイル設定なしの単純なビデオキャプションファイルを作成するには、次に示すキャプションの作成および編集用の無償オンラインツールを使用できます。
 
@@ -1070,7 +1069,7 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
    ツールの「**[!UICONTROL ビデオファイルの URL を入力]**」フィールドにビデオファイルの URL をコピーして貼り付け、「**[!UICONTROL 読み込み]**」をクリックします。[アセットの URL の取得](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)を参照して、ビデオファイルそのものの URL を取得し、それを「**[!UICONTROL ビデオファイルの URL を入力]**」フィールドに貼り付けてください。その後、Internet Explorer、Chrome、または Safari で、ビデオを再生できます。
 
-   ここで、サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。完了したら、キャプションファイルのコンテンツをコピーしてプレーンテキストエディターに貼り付け、.VTTのファイル名拡張子で保存します。
+   ここで、サイトの画面に表示される指示に従って、WebVTT ファイルを作成して保存します。完了したら、キャプションファイルのコンテンツをコピーしてプレーンテキストエディターに貼り付け、VTTのファイル名拡張子で保存します。
 
    >[!NOTE]
    複数の言語によるビデオサブタイトルをグローバルサポートするために、WebVTT規格では、サポートする言語ごとに個別の.vttファイルを作成し、呼び出す必要があります。
@@ -1090,17 +1089,17 @@ URL での JSON 機能の使用について詳しくは、[静的な（画像以
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      キャプションパスの末尾にある `,1` に注意します。パス内のファイル名拡張子.VTTの直後に、ビデオプレーヤーバーのクローズドキャプションボタンを`,1`または`,0`にそれぞれ設定して、有効（オン）または無効（オフ）にすることができます。
+      キャプションパスの末尾にある `,1` に注意します。パス内のファイル名拡張子VTTの直後に、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）または無効（オフ）を切り替えるには、それぞれ`,1`または`,0`に設定します。
 
    * 埋め込みビデオビューアエクスペリエンスの場合、「**[!UICONTROL 埋め込みコード]**」をタップします。埋め込みコードダイアログボックスで、埋め込みコードを選択してクリップボードにコピーし、単純なテキストエディターに貼り付けます。 コピーした埋め込みコードを次の構文で追加します。
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      キャプションパスの末尾にある `,1` に注意します。パス内のファイル名拡張子.VTTの直後に、ビデオプレーヤーバーのクローズドキャプションボタンを`,1`または`,0`にそれぞれ設定して、有効（オン）または無効（オフ）にすることができます。
+      キャプションパスの末尾にある `,1` に注意します。パス内のファイル名拡張子VTTの直後に、ビデオプレーヤーバーのクローズドキャプションボタンの有効（オン）または無効（オフ）を切り替えるには、それぞれ`,1`または`,0`に設定します。
 
 ## ビデオへのチャプターマーカーの追加 {#adding-chapter-markers-to-video}
 
-1 つのビデオまたはアダプティブビデオセットにチャプターマーカーを追加すると、長編ビデオの視聴と操作が簡単になります。ユーザーがビデオを再生するときに、ビデオタイムライン（ビデオスクラバーとも呼ばれます）上のチャプターマーカーをクリックできます。 ユーザーは、目標地点に簡単に移動したり、新しいコンテンツ、デモ、チュートリアルにすぐに移動したりできます。
+1 つのビデオまたはアダプティブビデオセットにチャプターマーカーを追加すると、長編ビデオの視聴と操作が簡単になります。ユーザーがビデオを再生するときに、ビデオタイムライン（ビデオスクラバーとも呼ばれます）上のチャプターマーカーをクリックできます。 ユーザーは、目標地点に簡単に移動したり、新しいコンテンツ、トレーニング、デモンストレーションにすぐに移動したりできます。
 
 >[!NOTE]
 ビデオプレーヤーが、チャプターマーカーの使用をサポートしている必要があります。Dynamic Mediaビデオプレーヤーはチャプターマーカーをサポートしていますが、サードパーティのビデオプレーヤーを使用できない場合があります。
@@ -1133,11 +1132,11 @@ Cost-efficient access to rapidly evolving technology.
 
  HTML5 ビデオビューアを使用するので、作成するチャプターファイルが WebVTT（Web Video Text Tracks）標準に準拠していることを確認してください。チャプターのファイル名拡張子は.VTTです。 WebVTT キャプション標準をよく確認してください。
 
- 詳しくは、[WebVTT: The Web Video Text Tracks Format](https://dev.w3.org/html5/webvtt/) を参照してください。
+[WebVTT：Web Video Text Tracks 形式（英語）](https://w3c.github.io/webvtt/)を参照してください。
 
 **ビデオにチャプターマーカーを追加するには：**
 
-1. チャプタータイトルテキストの文字レンダリングの問題を回避するため、.VTTファイルをUTF8エンコードで保存します。
+1. チャプタータイトルテキストの文字レンダリングの問題を回避できるように、VTTファイルをUTF8エンコーディングで保存します。
 
     一般に、チャプター VTT ファイルの名前には、ビデオファイルと同じ名前を付けて、名前の末尾にチャプターを追加します。そうしておくと、既存の Web コンテンツ管理システムを使用してビデオの URL を自動的に生成する際に役立ちます。
 1. Experience Managerで、WebVTTチャプターファイルをアップロードします。
@@ -1157,7 +1156,7 @@ Cost-efficient access to rapidly evolving technology.
        <li>左側のレールで、ビデオビューアプリセット名をタップまたはクリックします。ビデオのプレビューが別のページで開きます。</li>
        <li>左側のレールの下部にある「<strong>URL</strong>」をクリックします。</li>
        <li>URL ダイアログボックスで、URL を選択してクリップボードにコピーし、その URL を単純なテキストエディターに貼り付けます。</li>
-       <li>コピーしたビデオの URL を次の構文と共に追加し、コピーした URL とチャプターファイルに関連付けます。<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>コピーしたビデオのURLを次の構文と共に追加し、コピーしたURLとチャプターファイルに関連付けることができます。<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
@@ -1169,7 +1168,7 @@ Cost-efficient access to rapidly evolving technology.
        <li>左側のレールで、ビデオビューアプリセット名をタップまたはクリックします。ビデオのプレビューが別のページで開きます。</li>
        <li>左側のレールの下部にある「<strong>埋め込み</strong>」をクリックします。</li>
        <li>埋め込みコードダイアログボックスで、コード全体を選択してクリップボードにコピーし、単純なテキストエディターに貼り付けます。</li>
-       <li>ビデオの埋め込みコードを次の構文と共に追加し、コピーした URL とチャプターファイルに関連付けます。<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       <li>ビデオの埋め込みコードを次の構文と共に追加して、コピーしたチャプターファイルのURLに関連付けることができます。<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt>"</code></li>
        </ol> </td>
       </tr>
      </tbody>
@@ -1270,11 +1269,11 @@ See [Adding a video thumbnail](#adding-a-video-thumbnail).
 
 **To configure the default time interval that video thumbnails are generated,**
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** &gt; **[!UICONTROL General]** &gt; **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
 1. In the CRXDE Lite page, in the directory panel on the left, navigate t `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   if the directory panel is not visible, you may need to tap the &gt;&gt; icon to the left of the Home tab.
+   if the directory panel is not visible, you may need to tap the >> icon to the left of the Home tab.
 
 1. On the lower-right panel, in the Properties tab, double-tap `thumbnailtime`.
 1. In the Edit thumbnailtime dialog box, use the text fields to enter interval values as percentages.
