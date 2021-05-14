@@ -7,17 +7,16 @@ content-type: reference
 docset: aem65
 role: Business Practitioner
 exl-id: a5a2df68-be13-45a6-ad80-09fbd2fea8f2
-translation-type: tm+mt
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 44%
 
 ---
 
 # Dynamic Media のフォルダーレベルでの選択的公開の設定 {#selective-publish-configure-folder}
 
-**[!UICONTROL パブリケーションの管理]**&#x200B;または&#x200B;**[!UICONTROL クイック発行]**&#x200B;を使用して、Adobe Experience ManagerまたはDynamic Mediaに対して、またはフォルダーレベルでアセットを公開/非公開にすることができます。 この発行方法は、Dynamic Mediaインスタンス内のすべてのフォルダに対してグローバルな設定を持つ&#x200B;**[!UICONTROL Dynamic Mediaの設定]**&#x200B;だけに依存しないので便利です。
+Adobe Experience ManagerまたはDynamic Mediaに対して、またはから、アセットの公開と非公開を選択できます。 これは、**[!UICONTROL パブリケーションの管理]**&#x200B;または&#x200B;**[!UICONTROL クイック発行]**&#x200B;を使用して、フォルダーレベルで行うことができます。 この発行方法は、Dynamic Mediaインスタンス内のすべてのフォルダに対してグローバルな設定を持つ&#x200B;**[!UICONTROL Dynamic Mediaの設定]**&#x200B;だけに依存しないので便利です。
 
 例えば、選択的公開を使用して、まだ実行されていない製品のアセットを操作できます。その場合、マーケティングチームは、Dynamic Mediaと同期されたスマートな切り抜き画像と動的なレンディションにアクセスできます。プロモーション用の資料を作れるので、Dynamic Mediaに資産を発行しなくてもグローバル配信が可能です。
 
@@ -40,7 +39,7 @@ ht-degree: 44%
 * **[!UICONTROL Dynamic Media設定]**&#x200B;に設定された&#x200B;**[!UICONTROL アセットを発行]**&#x200B;値
 * または、フォルダーレベルのプロパティで設定された&#x200B;**[!UICONTROL Dynamic Media公開モード]**&#x200B;値
 
-「**[!UICONTROL すぐに]**」、「**[!UICONTROL アクティベーション]**」、または「**[!UICONTROL 一部のみの発行]**」を選択できます。 例えば、**[!UICONTROL Dynamic Media設定]**&#x200B;の&#x200B;**[!UICONTROL 発行アセット]**&#x200B;の値を&#x200B;**[!UICONTROL アクティベーション]**&#x200B;に設定できます。 また、**[!UICONTROL Dynamic Media発行]**&#x200B;モードの値をフォルダーレベルで&#x200B;**[!UICONTROL 一部の発行]**&#x200B;に設定したり、逆に設定したりできます。
+「**[!UICONTROL すぐに]**」、「**[!UICONTROL アクティベーション]**」、または「**[!UICONTROL 一部のみの発行]**」を選択できます。 例えば、**[!UICONTROL Dynamic Media設定]**&#x200B;の&#x200B;**[!UICONTROL アセットを発行]**&#x200B;の値を&#x200B;**[!UICONTROL アクティベーション]**&#x200B;に設定できます。 また、**[!UICONTROL Dynamic Media発行]**&#x200B;モードの値をフォルダーレベルで&#x200B;**[!UICONTROL 一部の発行]**&#x200B;に設定したり、逆に設定したりできます。
 
 フォルダーで選択的公開を設定した後、次の操作をおこなうことができます。
 
@@ -49,9 +48,9 @@ ht-degree: 44%
 * [クイック公開を使用したDynamic MediaまたはExperience Managerへのアセットの公開](#quick-publish-aem-dm)。
 * [検索結果を使用して、アセットを選択して公開または非公開にする](#selective-publish-unpublish-search-results)。
 
-**Dynamic Media のフォルダーレベルで選択的公開を設定するには**
+**Dynamic Media のフォルダーレベルで選択的公開を設定するには:**
 
-1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンの真上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 1. 次のいずれかの操作をおこないます。
    * 既存フォルダーのプロパティの編集 - **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、プロパティを編集するフォルダーに移動します。フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL プロパティ]**&#x200B;をタップします。
    * 新しいフォルダーのプロパティを編集します。**[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、ページ右上隅近くの&#x200B;**[!UICONTROL 作成/フォルダー]**&#x200B;をタップします。 **[!UICONTROL フォルダーを作成]**&#x200B;ダイアログボックスで、フォルダーのタイトル（必須）を入力し、「**[!UICONTROL 作成]**」をタップします。 フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL プロパティ]**&#x200B;をタップします。
@@ -99,9 +98,9 @@ ht-degree: 44%
 >
 >フォルダー間でアセットを&#x200B;*コピー*&#x200B;すると、これらのアセットの公開状態がクリアされます。ただし、フォルダープロパティが「**[!UICONTROL 選択的公開]**」に設定されているフォルダー間でアセットを&#x200B;*移動*&#x200B;すると、それらのアセットの公開状態は維持されます。
 
-**「パブリケーションの管理」を使用して、アセットを選択してDynamic MediaまたはExperience ManagerにCloud Serviceとして発行するには**
+**「パブリケーションの管理」を使用して、アセットを選択してDynamic MediaまたはExperience ManagerにCloud Serviceとして発行するには：**
 
-1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンの真上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、次のいずれかの操作をおこないます。
    * アセットを公開するフォルダーに移動します。フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL パブリケーションの管理]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスを簡単に確認できます。
    * アセットを公開するフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーで、**[!UICONTROL パブリケーションの管理]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスを簡単に確認できます。
@@ -132,7 +131,7 @@ ht-degree: 44%
 
 ### パブリケーションの管理{#selective-unpublish-manage-publication}を使用して、Dynamic MediaまたはExperience Managerからアセットを選択して非公開にする
 
-1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 左側で、（ツールアイコンの真上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、次のいずれかの操作をおこないます。
    * アセットを非公開にするフォルダーに移動します。フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL パブリケーションの管理]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスを簡単に確認できます。
    * アセットを非公開にするフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーで、**[!UICONTROL パブリケーションの管理]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスを簡単に確認できます。
@@ -171,7 +170,7 @@ ht-degree: 44%
 
 **クイック公開を使用してDynamic MediaまたはExperience Managerにアセットを公開するには：**
 
-1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、ページの右側で&#x200B;**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
+1. Experience Managerで、Experience Managerのロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、ページの右側で&#x200B;**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**&#x200B;または&#x200B;**[!UICONTROL リスト表示]**&#x200B;で、次のいずれかの操作をおこないます。
    * アセットを公開するフォルダーに移動します。フォルダーを選択し、ツールバーで&#x200B;**[!UICONTROL クイック発行]**&#x200B;をタップします。 **[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のフォルダーの公開ステータスを簡単に確認できます。
    * アセットを公開するフォルダーに移動します。フォルダーを開き、1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL クイック公開]**」をタップします。**[!UICONTROL リスト表示]**&#x200B;を使用すると、特定のアセットの公開ステータスを簡単に確認できます。
@@ -190,7 +189,7 @@ ht-degree: 44%
    | Brand Portal に公開 | 選択したアセットをすぐに&#x200B;**[!UICONTROL ブランドポータル]**&#x200B;に公開します。<br>このオプションは、Experience Managerアセットインスタンスで **[!UICONTROL ブランドポータルが既に設定されている場合にのみ使用]** できます。 |
    | Dynamic Media に公開 | 選択したアセットを直ちに Dynamic Media に公開します。<br>アセットは既にDynamic Mediaに同期されている必要があります。必要に応じて、フォルダーのプロパティ内の&#x200B;**[!UICONTROL 同期モード]**&#x200B;が既に&#x200B;**[!UICONTROL 同期されていることを確認します。このフォルダーサブツリー内のすべてをDynamic Media]**&#x200B;に同期します。 |
 
-1. 「**[!UICONTROL OK,]**」をタップし、「**[!UICONTROL 閉じる]**」をタップします。
+1. 「**[!UICONTROL OK]**」をタップし、「**[!UICONTROL 閉じる]**」をタップします。
 
 ## 検索結果を使用して、アセットを選択的に公開または非公開にする{#selective-publish-unpublish-search-results}
 
@@ -198,9 +197,9 @@ ht-degree: 44%
 
 [Experience Manager](/help/assets/search-assets.md)内のアセットの検索も参照してください。
 
-**検索結果を使用して、アセットを選択的に公開または非公開にするには**
+**検索結果を使用して、アセットを選択的に公開または非公開にするには:**
 
-1. Experience Managerで、ページの左上隅にあるExperience Managerロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
+1. Experience Managerで、ページの左上隅にあるExperience Managerロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 1. ページ右上隅近くにある、ツールバーの検索アイコン（虫めがね）をタップします。
 1. 「**[!UICONTROL 検索するタイプ]**」テキストフィールドにキーワードを入力し、**[!UICONTROL Enter]**&#x200B;キーを押します。
 1. ページの左上隅付近にある「**[!UICONTROL リスト表示]**」をタップします。
@@ -258,9 +257,9 @@ ht-degree: 44%
 
 Experience Managerで&#x200B;**[!UICONTROL タイムライン]**&#x200B;と&#x200B;**[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、または&#x200B;**[!UICONTROL リスト表示]**&#x200B;を使用して、アセットの公開状態をすばやく確認できます。
 
-**アセットの公開ステータスを確認するには**
+**アセットの公開ステータスを確認するには:**
 
-1. Experience Managerで、ページの左上隅にあるExperience Managerロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット/ファイル]**&#x200B;をタップします。
+1. Experience Managerで、ページの左上隅にあるExperience Managerロゴをタップして、グローバルナビゲーションコンソールにアクセスします。 ページの左側で、（ツールアイコンのすぐ上にある）ナビゲーションアイコンをタップし、**[!UICONTROL アセット]**/**[!UICONTROL ファイル]**&#x200B;をタップします。
 1. **[!UICONTROL カード表示]**、**[!UICONTROL 列表示]**、または&#x200B;**[!UICONTROL リスト表示]**（下のスクリーンショットは&#x200B;**[!UICONTROL リスト表示]**&#x200B;のアセットを示しています）で、公開または非公開にしたアセットを含むフォルダーを開きます。
 1. チェックマークが付くようにアセットを選択します。例については、下のスクリーンショットを参照してください。
 1. ページの左上隅近くにあるドロップダウンメニューで、「**[!UICONTROL タイムライン]**」を選択します。 左側のパネルの「**[!UICONTROL ステータス]**」領域には、選択したアセットの公開状態が表示されます。
