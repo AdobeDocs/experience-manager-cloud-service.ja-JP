@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 9fdc139f5a945de931a2bebb95e5ea006e5b91be
+source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
 workflow-type: tm+mt
 source-wordcount: '2762'
-ht-degree: 66%
+ht-degree: 65%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 66%
    1. **クラウドサービス設定**：移行先の AEM as a Cloud Service オーサーの URL を入力します。
 
       >[!NOTE]
-      >コンテンツ転送をおこなう際は、一度に最大 4 つの移行セットを作成し維持管理できます。
+      >コンテンツ転送アクティビティ中に、一度に10個までの移行セットを作成し、維持できます。
       >さらに、特定の環境（*ステージング*、*開発*、*実稼動*&#x200B;のいずれか）ごとに個別に移行セットを作成する必要があります。
 
    1. **アクセストークン**：アクセストークンを入力します。
