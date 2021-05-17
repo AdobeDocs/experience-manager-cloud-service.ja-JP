@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 257fc173-6bfb-4b60-b66c-6d6bdd5cf13f
-translation-type: tm+mt
-source-git-commit: 635768f63c604d1c1892de57c55693da6a0fe954
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -74,7 +73,7 @@ AEMには、次の3種類の環境があります。開発、ステージング�
 
 開発段階では、開発およびステージング環境と連携することをお勧めします。 パフォーマンス・テストに移行する際は、本番環境に移行する必要があります。
 
-### 開発者とコンテンツ作成者の協力{#cooperation}
+### 開発者及びコンテンツ作成者の協力 {#cooperation}
 
 開発者は、コンテンツモデルを入力したAEM開発環境を設定する必要があります。 開発者はAEMのコンテンツをヘッドレスで消費するクライアントを開発します。このクライアントは、コンテンツ作成者がコンテンツを作成し続けているときに使用されます。 これがAPIの定義が非常に重要な理由です。 開発者はAEM SDKを利用して、テストフックを作成し、クライアントと単体テストを作成して、クライアントがコンテンツを正しくレンダリングできることを確認できます。
 
@@ -122,7 +121,7 @@ AEMでヘッドレス機能を使い始める前に、必要な機能がすべ�
 * 他のコンテンツ制作者を招待してコンテンツをレビューし、注釈とコメントを付けてフィードバックを行います。注釈はコンテンツフラグメントエディター内で、コンテンツフラグメント管理コンソールのフラグメント全体で使用できます。
 * 必須の要素をできるだけ少なくして、物事を移動させます。 必須の要素は、ワークフローをブロックできます。
 
-### グローバルコンテンツのオーサリング{#localization}
+### グローバルコンテンツのオーサリング {#localization}
 
 * コンテンツ翻訳のルールとガバナンスを確立します。 システムの負荷を軽減するには、より長い間隔で実行できる非同期プロセスとして変換を確立します。 ローカライゼーション品質管理とバグ修正に時間を割く。
 * 翻訳メモリなどのAEMと統合できる翻訳テクノロジシステムが提供するすべての機能を活用します。
@@ -141,9 +140,9 @@ AEMヘッドレスの機能と柔軟性を十分に理解し、独自のプロ�
 
 ### 自分のアドベンチャーを選択{#choose-your-path}
 
-Adobeは、どのような学習スタイルを使用しても、AEMヘッドレスプロジェクトの使い始めに成功することを望んでいます。
+Adobeは、どの学習スタイルを使用しても、AEMヘッドレスプロジェクトを始める際に成功を望みます。
 
-* headless concepts and AEM headless technologies **を引き続き学ぶ場合は、AEMでコンテンツ構造をモデル化する方法を学ぶ「How to Model Your Content as AEM Content Models](model-your-content.md)」ドキュメントを次に見直して、AEMのヘッドレスジャーニーを継続する必要があります。**[
+* headless concepts and AEM headless technologies **の学習を続ける場合は、次にAEMでコンテンツ構造をモデル化する方法を学習する「How to Model Your Content as AEM Content Models](model-your-content.md)」ドキュメントを確認して、AEMのジャーニーを続行する必要があります。**[
 * **学びたい場合は、**『AEM Headlessハンズオンチュートリアル』](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)で、AEMヘッドレスのコンテンツを公開する簡単なプロジェクトを実装してAEMヘッドレス開発に直接飛び込みます。[
 
 ## その他のリソース {#additional-resources}
