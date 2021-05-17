@@ -4,14 +4,13 @@ description: AEMの強力で柔軟なヘッドレス機能、その機能、初�
 hide: true
 hidefromtoc: true
 index: false
-translation-type: tm+mt
-source-git-commit: 3fd695cbe77873fa57373d91249b71d8c4be8a08
+exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
+source-git-commit: 3554c4a4ea1858ea5b4ffbe0fd223a540261cb5c
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 8%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
-
 
 # AEMヘッドレス開発者ジャーニー{#aem-headless-developer-journey}
 
@@ -19,11 +18,11 @@ ht-degree: 8%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-AEMの強力で柔軟なヘッドレス機能、その機能、初めての開発プロジェクトでのそれらを活用する方法を通じて、ガイド付きジャーニーに開始します。
+AEMの強力で柔軟なヘッドレス機能、その機能、初めてのヘッドレス開発プロジェクトでのそれを活用する方法を通じて、ガイド付きジャーニーに開始します。
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
-ヘッドレス実装は、オーディエンスの場所やチャネルに関係なく、オーディエンスにエクスペリエンスを提供する上で、ますます重要になってきています。
+ヘッドレス実装は、どこにいても、チャネルに関係なく、オーディエンスにエクスペリエンスを配信するためにますます重要になっています。
 
 従来のフルスタックソリューションと同様に、ページやコンポーネントの管理をヘッドレスで実装し、チャネル中立で再利用可能なコンテンツのフラグメントとそのクロスチャネル配信の作成に重点を置いています。 これは、Web エクスペリエンスを実装するための最新の動的な開発パターンです。
 
@@ -52,3 +51,14 @@ AEMの強力で柔軟なヘッドレス機能、その機能、初めての開�
 | 8 | [ヘッドレスアプリケーションの使い方](go-live.md) | アプリケーションをライブでデプロイし、ローカルコードをGitに移動して、CI/CDパイプライン用にCloud Manager Gitに移動する方法を説明します。 |
 | 9 | [開始後](post-launch.md) | 頭を重ねずに体験を維持する方法を学びます。 |
 | 10 | [オプション — AEMでシングルページアプリ(SPA)を作成する方法](create-spa.md) | AEMのヘッドレス機能を理解したら、ヘッドレス機能とヘッドレス配信を組み合わせる方法を学び、AEM SPA Editorフレームワークを使用して編集可能なSPAを作成する方法を学びます。 |
+
+## 次の作業{#what-is-next}
+
+これで、Adobeヘッドレスジャーニーを使い始める準備が整いました。 ジャーニーの次の部分に進み、[CMSヘッドレス開発についての説明を読むことをお勧めします。](learn-about.md)
+
+### 自分のアドベンチャーを選択{#choose-your-path}
+
+ただし、Adobeは、学習スタイルに関係なく、AEMヘッドレスプロジェクトを開始して成功することを望んでいます。 この2つの選択肢を考えて下さい
+
+* headless concepts and AEM headless technologies **の学習を続ける場合は、次にAEMでコンテンツ構造をモデル化する方法を学ぶ「How to Model Your Content as AEM Content Models](model-your-content.md)」ドキュメントを見て、AEMのヘッドレスジャーニーを続行する必要があります。**[
+* **学びたい場合は、**『AEM Headlessハンズオンチュートリアル』](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)で、AEMヘッドレスのコンテンツを公開する簡単なプロジェクトを実装してAEMヘッドレス開発に直接飛び込みます。[
