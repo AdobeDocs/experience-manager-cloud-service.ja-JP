@@ -2,11 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-translation-type: tm+mt
-source-git-commit: d2b0fa9448ec3c1150d3c35860ffddb9e4d60d3e
+source-git-commit: 3b89e701e080f27f490a6c8a7bb38792c07d6abc
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 72%
+source-wordcount: '2769'
+ht-degree: 71%
 
 ---
 
@@ -54,6 +53,8 @@ ht-degree: 72%
 * オーサーの&#x200B;*インジェスト段階*&#x200B;では、オーサーのデプロイメント全体がスケールダウンされます。つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにしてください。
 
 * ソースAEMシステムのデータストアとして`Amazon S3`または`Azure`を使用する場合は、保存されているBLOBを削除（ガベージコレクション）できないようにデータストアを設定する必要があります。 これにより、インデックスデータの整合性が確保され、この方法を構成できない場合、このインデックスデータの整合性が失われ、抽出に失敗する可能性があります。
+
+* カスタムインデックスを使用する場合は、コンテンツ転送ツールを実行する前に、`tika`ノードでカスタムインデックスを設定する必要があります。 詳細は、[新しいインデックス定義の準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)を参照してください。
 
 ## 入手方法 {#availability}
 
