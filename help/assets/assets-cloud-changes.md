@@ -1,16 +1,15 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
 description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] の主な変更点。'
-feature: Release Information
+feature: リリース情報
 role: Business Practitioner,Leader,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 70068609e51f96c010204b8915593a52f610aded
+exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
+source-git-commit: bcb747517595943e1ed65d19424f002136877903
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 57%
 
 ---
-
 
 # [!DNL Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点 {#notable-changes}
 
@@ -53,7 +52,7 @@ Asset Microservicesは、Cloud Managerで管理されるお客様のプログラ
 |-----|-----|-----|
 | [重複資産の検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作が異なります。 | [ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作を参照してください。 |
 | [配置のみ(FPO)レンディション](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 動作が異なる |  |
-| メタデータの書き戻し | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/xmp-writeback.html)の[メタデータの書き戻しを参照 |
+| メタデータの書き戻し | 動作が異なる | デフォルトで無効. 必要に応じて、対応するワークフローランチャーを有効にします。 書き戻しは、アセットマイクロサービスで処理されます。 |
 | Package Managerを使用してアップロードしたアセットの処理 | 手動の介入が必要です。 | **[!UICONTROL アセットの再処理]**&#x200B;アクションを使用して手動で再処理します。 |
 | MIMEタイプの検出 | サポートされていない。 | 拡張子が付いていない、または正しくない拡張子を持つデジタルアセットをアップロードした場合は、必要に応じて処理されない場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。 |
 | 複合アセットのサブアセットの生成 | サポートされていない。 | 従属的な使用例は満たされません。 例えば、複数ページのPDFファイルの注釈は影響を受けます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)の[サブアセットの作成を参照してください。 |
@@ -66,10 +65,10 @@ Asset Microservicesは、Cloud Managerで管理されるお客様のプログラ
 >[!DNL Experience Manager]の[!DNL Cloud Service]には次のリソースがあります。
 >
 >* [廃止/削除された機能のリスト](/help/release-notes/deprecated-removed-features.md)
->* [紹介](/help/overview/introduction.md)
->* [新機能と相違点](/help/overview/what-is-new-and-different.md)
->* [建築](/help/core-concepts/architecture.md)
->* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
->* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
->* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+* [紹介](/help/overview/introduction.md)
+* [新機能と相違点](/help/overview/what-is-new-and-different.md)
+* [建築](/help/core-concepts/architecture.md)
+* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
+* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 
