@@ -1,18 +1,17 @@
 ---
 title: コードのデプロイ - Cloud Services
 description: コードのデプロイ - Cloud Services
-translation-type: tm+mt
-source-git-commit: 751f611ecccc39ef4650a1c7a9941655a6b2aedd
+exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
+source-git-commit: 782035708467693ec7648b1fd701c329a0b5f7c8
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 91%
+source-wordcount: '1071'
+ht-degree: 90%
 
 ---
 
-
 # コードのデプロイ {#deploy-your-code}
 
-## Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
+## Cloud Service{#deploying-code-with-cloud-manager}としてのAEMでのCloud Managerでのコードのデプロイ
 
 実稼働パイプライン（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
 
@@ -124,5 +123,3 @@ AEM サイト訪問者への影響を最小限に抑えるために、実稼動�
 1. AEM パッケージを publish2 にデプロイし、Dispatcher パッケージを dispatcher2 にデプロイして、Dispatcher キャッシュをフラッシュします。
 1. dispatcher2 をロードバランサーに戻します。
 このプロセスは、デプロイメントがトポロジのすべてのパブリッシャーおよび Dispatcher に到達するまで続行されます。
-
-
