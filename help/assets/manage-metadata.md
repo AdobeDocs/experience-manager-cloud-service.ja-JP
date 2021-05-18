@@ -3,26 +3,19 @@ title: デジタルアセットのメタデータの管理
 description: メタデータのタイプと、 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager]  でメタデータに基づいてアセットを自動的に整理および処理できる方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Metadata
+feature: アセット管理，メタデータ
 role: Business Practitioner,Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
+source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1857'
 ht-degree: 97%
 
 ---
 
-
 # デジタルアセットのメタデータの管理 {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] では、あらゆるアセットのメタデータを保持します。したがって、アセットの分類と編成が容易にでき、特定のアセットを検索しやすくなります。メタデータ管理は、[!DNL Experience Manager Assets] にアップロードされるファイルからメタデータを抽出する機能と共に、クリエイティブワークフローに統合されます。アセットの任意のメタデータを保持して管理する機能によって、メタデータに基づいてアセットを自動的に編成および処理できます。
-
->[!MORELIKETHIS]
->
->* [XMP メタデータ](xmp-metadata.md)
->* [メタデータの編集と追加](meta-edit.md)
-
 
 <!-- 
 * [Metadata Schemata Reference](meta-ref.md)
@@ -234,3 +227,9 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * ワークフローで画像にタイトルがあるかチェックできます。タイトルがない場合、システムはタイトルを追加するよう通知します。
 * ワークフローでアセットの著作権情報によって配布が許可されているかをチェックできます。そのため、システムはアセットを 1 台のサーバーまたは他のサーバーに送信します。
 * ワークフローでは、定義済みの必須のメタデータがないアセット、または&#x200B;*無効な*&#x200B;メタデータを持つアセットがないことを確認できます。
+
+>[!MORELIKETHIS]
+>
+>* [XMP メタデータ](xmp-metadata.md)
+* [メタデータの編集と追加](meta-edit.md)
+
