@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 4524c92a-8f19-497a-b4f2-c3e23f555d37
-source-git-commit: 83ed6295d2b29581025f5410236f2618ceb59012
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '772'
 ht-degree: 3%
 
 ---
@@ -55,8 +55,7 @@ AEMの強力で柔軟なヘッドレス機能、その機能、初めてのヘ�
 | 6 | [AEMアセットAPIを使用したコンテンツの更新方法](update-your-content.md) | REST APIを使用してコンテンツフラグメントのコンテンツにアクセスし、更新する方法を説明します。 |
 | 7 | [すべてを組み合わせる方法 — アプリとコンテンツをAEMヘッドレスで](put-it-all-together.md) | コンテンツフラグメント、GraphQL呼び出し、REST API呼び出し、アプリケーションを含むAEMプロジェクトを実行し、運用に備える方法を説明します。 |
 | 8 | [ヘッドレスアプリケーションの使い方](go-live.md) | アプリケーションをライブでデプロイし、ローカルコードをGitに移動して、CI/CDパイプライン用にCloud Manager Gitに移動する方法を説明します。 |
-| 9 | [開始後](post-launch.md) | 頭を重ねずに体験を維持する方法を学びます。 |
-| 10 | [オプション — AEMでシングルページアプリ(SPA)を作成する方法](create-spa.md) | AEMのヘッドレス機能を理解したら、ヘッドレス機能とヘッドレス配信を組み合わせる方法を学び、AEM SPA Editorフレームワークを使用して編集可能なSPAを作成する方法を学びます。 |
+| 9 | [オプション — AEMでシングルページアプリ(SPA)を作成する方法](create-spa.md) | AEMのヘッドレス機能を理解したら、ヘッドレス機能とヘッドレス配信を組み合わせる方法を学び、AEM SPA Editorフレームワークを使用して編集可能なSPAを作成する方法を学びます。 |
 
 ## 次の作業{#what-is-next}
 
