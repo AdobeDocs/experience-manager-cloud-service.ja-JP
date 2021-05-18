@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: 4c743eede23f09f285d9da84b149226f7288fcc3
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1886'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 >
 >作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
 
-[AEMヘッドレス開発者ジャーニーのこの部分では、](overview.md)は、ヘッドレスアプリケーションをライブにデプロイする方法を学びます。これには、ローカルコードをGitに取り込み、CI/CDパイプライン用にCloud Manager Gitに移動します。
+[AEM Headless Developerジャーニー](overview.md)のこの部分では、ヘッドレスアプリケーションをライブにデプロイする方法を学びます。ここでは、ローカルコードをGitに取り込み、CI/CDパイプライン用にCloud Manager Gitに移動します。
 
 ## {#story-so-far}
 
@@ -40,19 +40,18 @@ ht-degree: 2%
 
 ## AEM SDK {#the-aem-sdk}
 
-次のアーティファクトが含まれます。
+AEM SDKは、カスタムコードを構築しデプロイするために使用します。 これは、運用を開始する前にヘッドレスアプリケーションを開発し、テストするために必要な主なツールです。 次のアーティファクトが含まれます。
 
 * Quickstart jar — 作成者インスタンスと発行インスタンスの両方を設定するのに使用できる実行可能なjarファイル
 * ディスパッチャーツール — WindowsおよびUNIXベースのシステムのディスパッチャーモジュールとその依存関係
 * Java API Jar - AEMに対する開発に使用できる、許可されているすべてのJava APIを公開するJava Jar/Maven依存関係
 * Javadoc jar - Java API jarのjavadoc
 
-## 開発ツール {#development-tools}
+## その他の開発ツール{#additional-development-tools}
 
 AEM SDKに加えて、コードとコンテンツをローカルで開発およびテストするための追加ツールが必要になります。
 
 * Java
-* AEM SDK
 * Git
 * Apache Maven
 * Node.jsライブラリ
@@ -60,15 +59,15 @@ AEM SDKに加えて、コードとコンテンツをローカルで開発およ�
 
 AEMはJavaアプリケーションなので、AEMをCloud Serviceとして開発するためには、JavaとJava SDKをインストールする必要があります。
 
-AEM SDKは、カスタムコードを構築しデプロイするために使用します。 これは、運用開始前にヘッドレスアプリをテストするために必要な主なツールです。
-
 Gitは、ソース管理の管理、Cloud Managerへの変更のチェックイン、実稼働インスタンスへの展開に使用するものです。
 
 AEMでは、AEM Mavenプロジェクトアーキタイプから生成されたプロジェクトを作成する際にApache Mavenを使用します。 主要なIDEはすべてMavenの統合サポートを提供します。
 
-Node.jsは、AEMプロジェクトのui.frontendサブプロジェクトのフロントエンドアセットを操作するために使用されるJavaScriptランタイム環境です。 Node.jsはnpmと共に配布され、JavaScriptの依存関係を管理するために使用される、事実上のNode.jsパッケージマネージャーです。
+Node.jsは、AEMプロジェクトの`ui.frontend`サブプロジェクトのフロントエンドアセットを操作するために使用されるJavaScriptランタイム環境です。 Node.jsはnpmと共に配布され、JavaScriptの依存関係を管理するために使用される、事実上のNode.jsパッケージマネージャーです。
 
 ## AEMシステムのコンポーネントの概要{#components-of-an-aem-system-at-a-glance}
+
+次に、AEM環境の構成要素を見てみましょう。
 
 完全なAEM環境は、作成者、発行、およびディスパッチャーで構成されます。 ライブにする前に、コードとコンテンツのプレビューを簡単にするために、これらの同じコンポーネントをローカル開発ランタイムで使用できるようになります。
 
@@ -88,10 +87,6 @@ Node.jsは、AEMプロジェクトのui.frontendサブプロジェクトのフ�
 
 実稼働システムでは、ディスパッチャーとhttp Apacheサーバーは、常にAEM発行インスタンスの前に配置されます。 また、AEMシステムのキャッシュおよびセキュリティサービスを提供するので、ディスパッチャーに対してコードおよびコンテンツの更新をテストすることもお勧めします。
 
-すべてのテストが完了し、正しく機能していることを確認したら、Cloud Managerの中央のGitリポジトリにコードの更新をプッシュする準備が整います。
-
-アップデートは、Cloud Managerにアップロードされた後、Cloud ManagerのCI/CDパイプラインを使用して、AEMにCloud Serviceとしてデプロイできます。
-
 ## ローカル開発環境{#previewing-your-code-and-content-locally-with-the-local-development-environment}を使用したコードとコンテンツのローカルプレビュー
 
 AEMヘッドレスプロジェクトを起動用に準備するには、プロジェクトの構成要素がすべて正常に機能していることを確認する必要があります。
@@ -106,13 +101,7 @@ AEMヘッドレスプロジェクトを起動用に準備するには、プロ�
 
 ローカル開発環境を設定したら、静的なノードサーバーをローカルにデプロイすることで、Reactアプリに対するコンテンツサービングをシミュレートできます。
 
-ローカル開発環境の設定とコンテンツプレビューに必要なすべての依存関係について詳しく調べるには、[AEM発行サービスを使用した実稼働環境のデプロイメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)を参照してください。
-
-## 実稼動へのデプロイ {#deploy-to-production}
-
-すべてのコードとコンテンツをローカルでテストしたら、AEMで実稼働環境のデプロイメントを開始する準備が整います。
-
-Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を開始できます。このパイプラインについては、[ここ](/help/implementing/deploying/overview.md)で詳しく説明しています。
+ローカル開発環境の設定と、コンテンツプレビューに必要なすべての依存関係について詳しく調べるには、[実稼働環境の導入ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)を参照してください。
 
 ## AEM Go-Live用ヘッドレスアプリケーションの準備{#prepare-your-aem-headless-application-for-golive}
 
@@ -120,9 +109,8 @@ Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を�
 
 ### {#secure-and-scale-before-launch}を起動する前にヘッドレスアプリケーションを保護し、拡張する
 
-1. [トークンベースの認証](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)の設定
-1. 安全なWebフック
-1. キャッシュとスケーラビリティの構成
+1. GraphQLリクエストで[トークンベースの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)を設定
+1. [キャッシュ](/help/implementing/dispatcher/caching.md)を構成します。
 
 ### モデル構造とGraphQL出力{#structure-vs-output}
 
@@ -133,8 +121,8 @@ Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を�
 ### CDNキャッシュヒット率の最大化{#maximize-cdn}
 
 * サーフェスからライブコンテンツをリクエストする場合を除き、直接GraphQLクエリを使用しないでください。
-   * その代わりに、持続的なクエリを使用します。
-   * CDNがキャッシュできるように、600秒を超えるCDN TTLを指定します。
+   * 持続的なクエリは可能な限り使用してください。
+   * CDNがキャッシュするCDNのTTLを600秒以上にします。
    * AEMでは、既存のクエリに対するモデル変更の影響を計算できます。
 * JSONファイル/GraphQLクエリを低コンテンツ変更率と高コンテンツ変更率の間で分割し、CDNへのクライアントトラフィックを減らし、より高いTTLを割り当てます。 これにより、接触チャネルサーバーでJSONを再検証するCDNが最小化されます。
 * CDNからコンテンツをアクティブに無効にするには、「ソフトパージ」を使用します。 これにより、CDNは、キャッシュミスを招くことなく、コンテンツを再ダウンロードできます。
@@ -146,6 +134,14 @@ Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を�
 * JSONおよび参照されるアーティファクトをホストするために使用されるドメインの数を最小限に抑えます。
 * `Last-modified-since`を利用してリソースを更新します。
 * 完全なJSONファイルを解析することなく、JSONファイル内の`_reference`出力を使用して、開始によるアセットのダウンロードを行う。
+
+## 実稼動へのデプロイ {#deploy-to-production}
+
+すべての動作がテスト済みで正常に動作していることを確認したら、Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)の[中央管理されたGitリポジトリにコードの更新をプッシュする準備が整います。
+
+アップデートがCloud Managerにアップロードされた後、[Cloud ManagerのCI/CDパイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、AEMにCloud Serviceーとして展開できます。
+
+Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を開始できます。このパイプラインについては、[ここ](/help/implementing/deploying/overview.md)で詳しく説明しています。
 
 ## パフォーマンスの監視 {#performance-monitoring}
 
@@ -207,16 +203,10 @@ AEMヘッドレス開発者ジャーニーのこの部分が完了したら、�
 * AEM Headlessプロジェクトとの連携方法。
 * ゴーライブの後はどうしますか。
 
-最初のAEM Headlessプロジェクトを既に起動しているか、または必要な知識がすべて揃っています。 素晴らしい仕事！
-
-AEMのヘッドレスストアは、ここで停止する必要はありません。 ジャーニー](getting-started.md#integration-levels)の[はじめにでは、AEMがヘッドレス配信と従来のフルスタックモデルをサポートするだけでなく、両方の利点を組み合わせたハイブリッドモデルをサポートする方法について簡単に説明しました。
-
-このような柔軟性がプロジェクトに必要なものであれば、ジャーニー[AEMを使ってシングルページアプリを作成する方法(SPA)の追加部分に進んでください。](create-spa.md)
-
 ## その他のリソース {#additional-resources}
 
-* [ローカルAEM環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Cloud ServiceとしてのAEMへのデプロイの概要](/help/implementing/deploying/overview.md)
-* [Cloud Managerを使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
-* [Cloud Manager Git Repositoryを外部Gitリポジトリと統合し、プロジェクトをAEMにCloud Serviceとしてデプロイする](https://git.corp.adobe.com/AdobeDocs/experience-manager-cloud-service.en/blob/master/help/implementing/developing/headless-journey/access-your-content.md)
+* [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+* [ローカルAEM環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+* [Cloud Managerを使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Cloud Manager Git Repositoryを外部Gitリポジトリと統合し、プロジェクトをAEMにCloud Serviceとしてデプロイする](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
