@@ -4,10 +4,10 @@ description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Ex
 feature: リリース情報
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bcb747517595943e1ed65d19424f002136877903
+source-git-commit: 1fa5b6e183cf9c292cd5485e20a2406576a40319
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 57%
+source-wordcount: '778'
+ht-degree: 56%
 
 ---
 
@@ -46,7 +46,7 @@ Asset Microservicesは、Cloud Managerで管理されるお客様のプログラ
 
 ## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}との機能パリティ
 
-[!DNL Experience Manager] には、既存の機能が動作するための多くの新機能とパフォーマンスの高い方法が [!DNL Cloud Service] 導入されています。ただし、[!DNL Experience Manager] 6.5から[!DNL Cloud Service]に移行する場合、機能が異なるか、使用できないか、一部しか使用できないことに気づくかもしれません。 [!DNL Experience Manager]次に、そのような機能のリストを示します。
+[!DNL Experience Manager] には、既存の機能が動作するための多くの新機能とパフォーマンスの高い方法が [!DNL Cloud Service] 導入されています。ただし、[!DNL Experience Manager] 6.5から[!DNL Cloud Service]に移行する場合、機能が異なるか、使用できないか、一部しか使用できないことに気づくかもしれません。 [!DNL Experience Manager]次に、このような機能のリストを示します。 また、[廃止および削除された機能](/help/release-notes/deprecated-removed-features.md)も参照してください。
 
 | 機能または使用例 | [!DNL Experience Manager]のステータス([!DNL Cloud Service]) | コメント |
 |-----|-----|-----|
