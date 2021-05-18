@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 74816a99a74b86330efb5ff8ca37b4fe64fdbe8c
+source-git-commit: e0c6a79e6a088423cbc47046f285fb1ac241c476
 workflow-type: tm+mt
-source-wordcount: '2762'
-ht-degree: 65%
+source-wordcount: '2721'
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 65%
 >title="コンテンツ転送ツールを使用する際の重要な考慮事項"
 >abstract="JavaおよびAEMのバージョン、サポートされているデータストアタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールを使用する際の重要な考慮事項を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="ベストプラクティスとガイドライン"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#availability" text="コンテンツ転送ツールのダウンロード"
 
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
@@ -159,7 +158,6 @@ ht-degree: 65%
 >id="aemcloud_ctt_extraction"
 >title="コンテンツ抽出"
 >abstract="抽出とは、ソースAEMインスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。 移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="取り込みプロセス"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="トップアップ抽出"
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
@@ -206,8 +204,7 @@ ht-degree: 65%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
->abstract="インジェストとは、*ターゲットセット*&#x200B;から移行Cloud Serviceインスタンスにコンテンツを取り込むことです。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="抽出プロセス"
+>abstract="インジェストとは、ターゲットセットから移行Cloud Serviceインスタンスにコンテンツを取り込むことです。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="追加インジェスト"
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
