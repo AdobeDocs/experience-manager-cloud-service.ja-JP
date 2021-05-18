@@ -5,10 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-translation-type: tm+mt
-source-git-commit: 77668ff0937c2af24d73da7f8d6b3c8956acb350
+source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 89%
 
 ---
@@ -31,14 +30,14 @@ ht-degree: 89%
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
    + [通知について](cloud-manager/notifications.md)
    + SSL 証明書の管理 {#manage-ssl-certificates}
-      + [概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+      + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
       + [SSL 証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)
       + [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
       + [SSL 証明書の表示、更新、置換](/help/implementing/cloud-manager/managing-ssl-certifications/view-update-replace-ssl-certificate.md)
       + [SSL 証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md)
       + [SSL 証明書の削除](/help/implementing/cloud-manager/managing-ssl-certifications/delete-ssl-certificate.md)
    + カスタムドメイン名の管理 {#custom-domain-names}
-      + [概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+      + [はじめに](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
       + [カスタムドメイン名の取得](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
       + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
       + [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -49,7 +48,7 @@ ht-degree: 89%
       + [カスタムドメイン名の SSL 証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
       + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
    + IP 許可リストの管理 {#ip-allow-lists}
-      + [概要](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+      + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
       + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
       + [IP 許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
       + [IP 許可リストの適用](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
@@ -65,7 +64,7 @@ ht-degree: 89%
    + [Cloud ServiceとしてのAEM用エンタープライズチーム開発セットアップ](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service 向けの開発 {#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
-   + [AEM プロジェクトリポジトリーの構造パッケージ](developing/introduction/repository-structure-package.md)
+   + [AEM プロジェクトリポジトリの構造パッケージ](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [ログ](developing/introduction/logging.md)
@@ -83,7 +82,6 @@ ht-degree: 89%
       + [AEMアセットAPIを使用したコンテンツの更新方法](developing/headless-journey/update-your-content.md)
       + [まとめ方](developing/headless-journey/put-it-all-together.md)
       + [ヘッドレスアプリケーションの使い方](developing/headless-journey/go-live.md)
-      + [開始後](developing/headless-journey/post-launch.md)
       + [オプション — AEMでシングルページアプリを作成する方法](developing/headless-journey/create-spa.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
@@ -116,7 +114,7 @@ ht-degree: 89%
          + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
-      + [Java API のガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
+      + [Java API ガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
    + ハイブリッド AEM 開発 {#hybrid}
       + [AEM でのハイブリッドと SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
@@ -164,7 +162,7 @@ ht-degree: 89%
          + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ja)
          + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ja)
 + デベロッパーツール {#developer-tools}
-   + [AEM Developer Tools for Eclipse](/help/implementing/developing/tools/eclipse.md)
+   + [AEM Developer Tools for Eclipse ](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
@@ -187,7 +185,7 @@ ht-degree: 89%
    + [検索フォームの設定](developing/extending/search-forms.md)
    + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
    + [RTE プラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
-   + [アクセシブルなサイトの作成に向けた RTE の設定 ](/help/implementing/developing/extending/rte-accessible-content.md)
+   + [アクセシブルなサイトの作成に向けた RTE の設定](/help/implementing/developing/extending/rte-accessible-content.md)
 + AEM as a Cloud Service へのデプロイ {#deploying}
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
    + [AEM バージョンのアップデート](deploying/aem-version-updates.md)
