@@ -2,16 +2,15 @@
 title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として AEM で使用されます。
 contentOwner: AG
-feature: Metadata
+feature: メタデータ
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
+source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 76%
+source-wordcount: '1000'
+ht-degree: 75%
 
 ---
-
 
 # XMP メタデータ {#xmp-metadata}
 
@@ -75,9 +74,7 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
 [!DNL Adobe Experience Manager Assets]のこのXMP書き戻し機能は、メタデータの変更を元のアセットのレンディションに複製します。
-アセット内から、またはアセットのアップロード中に、アセットのメタデータを変更すると、変更は最初にアセット階層のメタデータノードに保存されます。
-
-XMP の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。この機能は、`jcr`名前空間を使用するメタデータプロパティ、つまり`dc:title`という名前のプロパティのみを書き戻しますが、`mytitle`という名前のプロパティは書き戻しません。
+アセットのメタデータを[!DNL Assets]内から変更した場合、またはアセットのアップロード中に変更内容が最初にアセット階層のメタデータノードに保存されます。  の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。この機能は、`jcr`名前空間を使用するメタデータプロパティ、つまり`dc:title`という名前のプロパティのみを書き戻しますが、`mytitle`という名前のプロパティは書き戻しません。
 
 例えば、`Classic Leather`というアセットの[!UICONTROL Title]プロパティを`Nylon`に変更するシナリオを考えてみましょう。
 
@@ -93,7 +90,13 @@ XMP の書き戻し機能によって、メタデータの変更が、アセッ�
 
 ### XMPの書き戻しを有効にする{#enable-xmp-writeback}
 
-[!UICONTROL DAMメタデータの] 書き戻しワークフローは、アセットのメタデータの書き戻しに使用されます。書き戻しを有効にするには、次の手順に従います。
+[!UICONTROL DAMメタデータの] 書き戻しワークフローは、アセットのメタデータの書き戻しに使用されます。書き戻しを有効にするには、次の3つの方法のいずれかを実行します。
+
+* ランチャーを使用します。
+* 手動開始`DAM MetaData Writeback`ワークフロー。
+* 後処理に含めるワークフローを設定します。
+
+ランチャーを使用するには、次の手順に従います。
 
 1. 管理者として、**[!UICONTROL ツール]**/**[!UICONTROL ワークフロー]**/**[!UICONTROL ランチャー]**&#x200B;にアクセスします。
 1. **[!UICONTROL ワークフロー]**&#x200B;列に&#x200B;**[!UICONTROL DAM MetaDataの書き戻し]**&#x200B;を表示する[!UICONTROL ランチャー]を選択します。 ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
@@ -102,16 +105,14 @@ XMP の書き戻し機能によって、メタデータの変更が、アセッ�
 
 1. **[!UICONTROL ランチャーのプロパティ]**&#x200B;ページで「**[!UICONTROL アクティブ化]**」を選択します。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
-このワークフローをアセットに1回だけ適用するには、左側のパネルからワークフロー[!UICONTROL DAMメタデータの書き戻し]を適用します。 アップロードされたすべてのアセットにワークフローを適用するには、ワークフローを後処理プロファイルに追加します。
+ワークフローをアセットに1回だけ手動で適用するには、左側のパネルから[!UICONTROL DAMメタデータの書き戻し]ワークフローを適用します。
+
+アップロードされたすべてのアセットにワークフローを適用するには、ワークフローを後処理プロファイルに追加します。
 
 <!-- Commenting for now. Need to document how to enable metadata writeback. See CQDOC-17254.
 
 ### Enable XMP writeback {#enable-xmp-writeback}
--->
 
-<!-- asgupta, Engg: Need attention here to update the configuration manager changes. -->
-
-<!-- 
 To enable the metadata changes to be propagated to the renditions of the asset when uploading it, modify the **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuration in Configuration Manager.
 
 1. To open Configuration Manager, access `https://[aem_server]:[port]/system/console/configMgr`.
