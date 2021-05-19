@@ -5,7 +5,7 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 254fb9dd-36c8-43ce-aaea-ceb4d079503d
-source-git-commit: 58617913f967abbab31054ea9cdb691a9b29415f
+source-git-commit: 5932ece1297512e726ece09217565957da4bda75
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 # AEMヘッドレスSDK — 準備中{#coming-soon}
 
-このページでは、すべての新しいAEMヘッドレスSDKを使用したローカル開発プロジェクトの設定方法に関するガイダンスを提供します。 SDKを公開してから、より多くのコンテンツに合わせてチューニングを続けます。
+このページでは、すべての新しいAEMヘッドレスSDKを使用したローカル開発プロジェクトの設定方法に関するガイダンスを提供します。 SDKが公開されてから、さらに詳しい情報をご確認ください。
