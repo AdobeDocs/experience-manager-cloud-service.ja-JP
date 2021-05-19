@@ -5,10 +5,9 @@ hide: true
 hidefromtoc: true
 index: false
 exl-id: 8d133b78-ca36-4c3b-815d-392d41841b5c
-translation-type: tm+mt
-source-git-commit: 4a36cd3206784c0e4e3ed3d7007c83f44f1d5ee0
+source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1117'
 ht-degree: 49%
 
 ---
@@ -290,7 +289,7 @@ Associated content is currently not exposed.
 
 本文には、作成するコンテンツフラグメントの JSON 表現を含める必要があります。これには、コンテンツフラグメント要素に設定する必要がある初期コンテンツも含まれます。`cq:model` プロパティの設定が必須で、このプロパティが有効なコンテンツフラグメントモデルを指している必要があります。そうしないと、エラーが発生します。また、`Content-Type` ヘッダーを追加することも必要です。これは `application/json` に設定されます。
 
-### 更新 {#update}
+### アップデート {#update}
 
 使用方法は次のとおりです。
 
@@ -322,7 +321,11 @@ AEMヘッドレス開発者ジャーニーのこの部分が完了したら、�
 * Have experience with sample code and know how the API works in practice.
 -->
 
-AEMのヘッドレスジャーニーは、次にドキュメント[How to Put It All Togeter - Your App and Your Content in AEM Headless](put-it-all-together.md)を確認し、AEMヘッドレスプロジェクトの取り組みと運用準備を進めて行く必要があります。
+<!-- The "How to put it all together" page isn't going to be published until the first public release of the Headless SDK. Temporarily commenting out the reference below. -->
+
+<!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
+
+次に、AEMヘッドレス・プロジェクトを実際に稼働させるドキュメント[How to Go Live with Your Headless Application](go-live.md)を見て、AEMのヘッドレス・ジャーニーを続ける必要があります。
 
 [How to Create Single Page Applications (SPA) with ](create-spa.md) AEMでは、AEMのSPA Editorフレームワークを使用して編集可能なSPAを作成する方法や、外部SPAを統合し、必要に応じて編集機能を有効にする方法も示します。
 
