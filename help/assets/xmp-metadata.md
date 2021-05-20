@@ -5,10 +5,10 @@ contentOwner: AG
 feature: メタデータ
 role: Business Practitioner,Administrator
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
-source-git-commit: 1dc639265570b54c42d04f61178d8d2faec1b433
+source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 75%
+source-wordcount: '1016'
+ht-degree: 74%
 
 ---
 
@@ -84,9 +84,9 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ![リポジトリのアセットノードに保存されたメタデータ](assets/metadata_stored.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->[!DNL Assets]では、書き戻し機能はデフォルトで有効になっていません。 [メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。
+>[!DNL Assets]では、書き戻し機能はデフォルトで有効になっていません。 [メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。 デジタルアセットのMSMは、メタデータの書き戻しが有効になっている場合は機能しません。 書き戻し時に、継承が中断します。
 
 ### XMPの書き戻しを有効にする{#enable-xmp-writeback}
 
