@@ -3,10 +3,9 @@ title: ' [!DNL Adobe Creative Cloud] との統合のベストプラクティス'
 description: Experience Manager デプロイメントを Adobe Creative Cloud と統合して、アセット転送ワークフローを効率化し、効率を最大限に高めるためのベストプラクティス。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Collaboration,Adobe Asset Link,Desktop App
+feature: コラボレーション，Adobeアセットリンク，デスクトップアプリ
 role: Architect,Business Practitioner,Administrator
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-translation-type: tm+mt
 source-git-commit: 522d0363c0207afbed2c51e9d54d921ce9b66c70
 workflow-type: tm+mt
 source-wordcount: '3300'
@@ -72,7 +71,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 
 アセット配布使用例をサポートするには、他のソリューションを考慮に入れる必要があります。
 
-* [AEM Assetsブランド](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) ポータルを使用して、アセットを公開するための設定可能なアドオンを設定できます。
+* [AEM Assets Brand ](https://helpx.adobe.com/experience-manager/brand-portal/user-guide.html) Portal ：アセットを公開するための、Assetsへの設定可能なアドオン。
 
 * カスタムソリューションは [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) のコードベースに基づいて作成される。
 * AEM [リンク共有](/help/assets/share-assets.md)：リンクを使用してアドホックでアセットを共有する。
