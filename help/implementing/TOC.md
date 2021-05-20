@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: a2588f420258522cc3a4b7b10f4ab52f2dd669d8
+source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 89%
+source-wordcount: '981'
+ht-degree: 88%
 
 ---
 
@@ -55,13 +55,13 @@ ht-degree: 89%
       + [IP 許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+   + [Cloud Managerに関するFAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
    + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [Cloud ServiceとしてのAEM用エンタープライズチーム開発セットアップ](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+   + [AEM as aCloud Service用のエンタープライズチーム開発設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service 向けの開発 {#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
    + [AEM プロジェクトリポジトリの構造パッケージ](developing/introduction/repository-structure-package.md)
@@ -73,16 +73,16 @@ ht-degree: 89%
    + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [サーバー側 API のアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + ヘッドレス開発者ジャーニー{#headless-journey}
-      + [AEMのヘッドレスを理解する](developing/headless-journey/overview.md)
-      + [CMSヘッドレス開発について](developing/headless-journey/learn-about.md)
-      + [Cloud ServiceとしてのAEMヘッドレスの使用の手引き](developing/headless-journey/getting-started.md)
+      + [AEMのヘッドレスについて](developing/headless-journey/overview.md)
+      + [CMSヘッドレス開発の詳細](developing/headless-journey/learn-about.md)
+      + [AEM Headless as aCloud Serviceの概要](developing/headless-journey/getting-started.md)
       + [AEMヘッドレスを使用した最初のエクスペリエンスへのパス](developing/headless-journey/path-to-first-experience.md)
-      + [AEMコンテンツモデルとしてコンテンツをモデル化する方法](developing/headless-journey/model-your-content.md)
-      + [AEM配信APIを使用したコンテンツへのアクセス方法](developing/headless-journey/access-your-content.md)
-      + [AEMアセットAPIを使用したコンテンツの更新方法](developing/headless-journey/update-your-content.md)
+      + [コンテンツをAEMコンテンツモデルとしてモデル化する方法](developing/headless-journey/model-your-content.md)
+      + [AEM Delivery APIを使用したコンテンツへのアクセス方法](developing/headless-journey/access-your-content.md)
+      + [AEM assets APIを使用したコンテンツの更新方法](developing/headless-journey/update-your-content.md)
       + [まとめ方](developing/headless-journey/put-it-all-together.md)
-      + [ヘッドレスアプリケーションの使い方](developing/headless-journey/go-live.md)
-      + [オプション — AEMでシングルページアプリを作成する方法](developing/headless-journey/create-spa.md)
+      + [ヘッドレスアプリケーションの運用方法](developing/headless-journey/go-live.md)
+      + [オプション — AEMを使用した単一ページアプリケーションの作成方法](developing/headless-journey/create-spa.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
       + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)
@@ -138,7 +138,9 @@ ht-degree: 89%
       + [SPA リファレンスドキュメント](developing/hybrid/reference-materials.md)
    + ヘッドレスエクスペリエンス管理 {#headless}
       + [ヘッドレスと AEM](developing/headless/introduction.md)
+      + [ヘッドレス開発者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
       + 「はじめる前に」ガイド {#getting-started}
+         + [はじめに](developing/headless/getting-started/introduction.md)
          + [設定の作成](developing/headless/getting-started/create-configuration.md)
          + [コンテンツフラグメントモデルの作成](developing/headless/getting-started/create-content-model.md)
          + [アセットフォルダーの作成](developing/headless/getting-started/create-assets-folder.md)
@@ -166,7 +168,7 @@ ht-degree: 89%
    + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
-   + [リンク外部化](/help/implementing/developing/tools/externalizer.md)
+   + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + パーソナライゼーション {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub の設定](developing/personalization/configuring-contexthub.md)
