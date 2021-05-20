@@ -1,20 +1,19 @@
 ---
 title: オーサリングに関する概念
-description: AEM でのオーサリングの概念です
-translation-type: tm+mt
-source-git-commit: 92434d0dc29ac5fe1b395a2d34c8e48e2fdb7c97
+description: AEM でのオーサリングの概念
+exl-id: ee9e4952-e075-4398-b31f-d7886153efff
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 100%
 
 ---
 
-
 # オーサリングに関する概念 {#authoring-concepts}
 
 AEM インストールは、通常、少なくとも次の 2 つの環境で構成されます。
 
-* オーサー
+* 作成者
 * 公開
 
 これらの環境が相互に影響することで、コンテンツが Web サイト上に公開され、訪問者がアクセスできるようになります。
