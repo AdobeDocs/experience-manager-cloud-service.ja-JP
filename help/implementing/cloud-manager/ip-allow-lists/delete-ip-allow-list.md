@@ -1,14 +1,13 @@
 ---
 title: 'IP 許可リストの削除 '
 description: IP 許可リストの削除
-translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+exl-id: 34414915-0078-4acb-94df-b84043ce63d8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 100%
 
 ---
-
 
 # IP 許可リストの削除 {#delete-allow-list}
 
@@ -22,4 +21,3 @@ IP 許可リストを削除するには、次の手順に従います。
 
 >[!NOTE]
 >IP 許可リストを削除すると、その IP 範囲がすべてのサービスから自動的に適用解除され、テーブルからも削除されます。
-
