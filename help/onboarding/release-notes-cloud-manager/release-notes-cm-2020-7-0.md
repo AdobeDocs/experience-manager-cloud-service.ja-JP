@@ -1,15 +1,14 @@
 ---
 title: AEM as a Cloud Service Release 2020.7.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2020.7.0 Cloud Manager のリリースノート
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+feature: リリース情報
+exl-id: b5ac4dd4-18c6-4867-b2df-53711555007f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 2020.7.0 Cloud Manager のリリースノート {#release-notes}
 
