@@ -1,14 +1,13 @@
 ---
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
-translation-type: tm+mt
-source-git-commit: abb45225e880f3d08b9d26c29e243037564acef0
+exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 100%
 
 ---
-
 
 # ページの公開 {#publishing-pages}
 
@@ -93,7 +92,7 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 * [クイック公開](#quick-publish)
 * [公開を管理](#manage-publication)
 
-#### クイック公開  {#quick-publish}
+#### クイック公開 {#quick-publish}
 
 **クイック公開**&#x200B;は、単純な場合のためのもので、選択したページが即座に公開されます。他に何か操作する必要はありません。このため、すべての非公開の参照も自動的に公開されます。
 
@@ -212,7 +211,7 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 * [ページエディターから](#unpublishing-from-the-editor)
 * [サイトコンソールから](#unpublishing-from-the-console)
 
-### エディターから非公開にする  {#unpublishing-from-the-editor}
+### エディターから非公開にする {#unpublishing-from-the-editor}
 
 ページを編集する際に、そのページを非公開にする場合、[ページを公開](#publishing-from-the-editor)するときと同じように、**ページ情報**&#x200B;メニューで「**ページを非公開にする**」を選択します。
 
