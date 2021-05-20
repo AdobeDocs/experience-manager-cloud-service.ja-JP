@@ -1,14 +1,13 @@
 ---
 title: カスタムドメイン名の取得
 description: カスタムドメイン名の取得
-translation-type: tm+mt
-source-git-commit: e2c6d9ca969140448a0c57bcf8788421073500f5
+exl-id: c4d2ad8e-06fc-4591-af92-8edc96d04e44
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
-
 
 # カスタムドメイン名の取得 {#getting-cdn}
 
