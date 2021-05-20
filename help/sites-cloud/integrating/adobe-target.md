@@ -1,14 +1,13 @@
 ---
 title: Adobe Target との統合
-description: 'Adobe Target との統合 '
-translation-type: tm+mt
-source-git-commit: bffc335fdafe6bf12a66bcd2f7aacf029fce567e
+description: Adobe Target との統合
+exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
@@ -53,6 +52,7 @@ Target に統合するには、次のタスクを実行します。
 >
 >* 3.x は [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) のように設定します。
 >* 4.x は [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) のように設定します。
+
 >
 
 
@@ -85,6 +85,7 @@ AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、A
 >* エクスペリエンス：2,000
 >* 指標：50
 >* レポートのセグメント：50
+
 >
 
 
