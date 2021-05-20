@@ -2,7 +2,6 @@
 title: SPA およびサーバーサイドレンダリング
 description: SPA でサーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-translation-type: tm+mt
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
 workflow-type: tm+mt
 source-wordcount: '1502'
@@ -18,7 +17,7 @@ ht-degree: 92%
 
 ## SSR を使用するタイミング {#when-to-use-ssr}
 
-SSR が必要なのは一部のプロジェクトだけです。AEMはSPA向けにJS SSRを完全にサポートしていますが、Adobeは、すべてのプロジェクトに対して体系的にJS SSRを実装することをお勧めしません。
+SSR が必要なのは一部のプロジェクトだけです。AEMはSPA向けにJS SSRを完全にサポートしていますが、Adobeでは、すべてのプロジェクトに対して体系的にJS SSRを実装することをお勧めしません。
 
 SSR を実装することに決めたら、長期的なメンテナンスを含め、SSRを追加することがプロジェクトにとって現実的にどのような複雑さ、労力、コストをもたらすかをまず評価する必要があります。SSR アーキテクチャは、付加価値が予測コストを明確に上回る場合にのみ選択する必要があります。
 
@@ -45,9 +44,9 @@ Adobe I/O Runtime について詳しくは、以下を参照してください�
 
 >[!NOTE]
 >
->Adobeでは、環境（ステージ、実行、テストなど）ごとに別々のAdobe I/O Runtimeワークスペースを使用することを推奨します。 これにより、異なる環境にデプロイされた単一アプリケーションの異なるバージョンを持つ、一般的なSDLC(System Development Life Cycle)パターンが可能になります。 詳細は、ドキュメント[CI/CD for Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)を参照してください。
+>Adobeでは、環境（ステージング、実稼動、テストなど）ごとに個別のAdobe I/O Runtimeワークスペースを使用することをお勧めします。 これにより、異なる環境にデプロイされた単一アプリケーションの異なるバージョンを使用する、一般的なシステム開発ライフサイクル(SDLC)パターンを使用できます。 詳しくは、[CI/CD for Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)のドキュメントを参照してください。
 >
->インスタンスタイプごとのランタイム実装に違いがない限り、インスタンス（作成者、発行）ごとに個別のワークスペースは必要ありません。
+>インスタンスタイプごとのランタイム実装に違いがない限り、インスタンス（オーサー、パブリッシュ）ごとに個別のワークスペースは必要ありません。
 
 ## リモートレンダラーの設定 {#remote-content-renderer-configuration}
 
@@ -60,7 +59,7 @@ AEM は、リモートレンダリングされたコンテンツをどこで取�
 この設定では、次のフィールドを使用できます。
 
 * **コンテンツパスパターン** - 必要に応じて、コンテンツの一部を一致させるための正規表現。
-* **リモートエンドポイントURL**  — コンテンツの生成を担当するエンドポイントのURL
+* **リモートエンドポイントURL**  — コンテンツの生成を担当するエンドポイントのURL。
    * ローカルネットワークにない場合は、保護された HTTPS プロトコルを使用します。
 * **追加の要求ヘッダー** - リモートエンドポイントに送信される要求に追加するヘッダー。
    * パターン：`key=value`
