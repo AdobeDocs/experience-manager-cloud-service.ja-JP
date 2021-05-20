@@ -1,14 +1,13 @@
 ---
 title: 実行段階
 description: 実行段階
-translation-type: tm+mt
-source-git-commit: 0dd05c1f6dc197daf154d4df6e6661e00455b233
+exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
-
 
 # 実行 {#execution-phase}
 
@@ -25,7 +24,7 @@ Cloud Manager を使用すると、組織がクラウド内の AEM を自己管�
 * [Adobe Experience Manager as a Cloud Service の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/security/ims-support.html#aem-configuration)：Admin Console での製品とユーザーアクセスの管理
 
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 Cloud Service への移行の正確な手順は、購入したシステムと準拠するソフトウェア開発ライフサイクル手法によって異なります。
 
