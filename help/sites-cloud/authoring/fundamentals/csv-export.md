@@ -1,14 +1,13 @@
 ---
 title: CSV ファイルへの書き出し
 description: ページの情報をローカルシステムの CSV ファイルに書き出します
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 
 ---
-
 
 # CSV ファイルへの書き出し {#export-to-csv}
 
