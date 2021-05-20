@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
 description: Adobe Experience Manager (AEM) as a Cloud Service の主な変更点
-translation-type: tm+mt
-source-git-commit: 515e462e942d58758a11e0a9bd3b1c3990a4dcf9
+exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 93%
 
 ---
-
 
 # Adobe Experience Manager (AEM) as a Cloud Service の主な変更点 {#notable-changes-aem-cloud}
 
@@ -18,10 +17,10 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 >このドキュメントでは、AEM as a Cloud Service 全体の主な変更点について重点的に説明します。詳細およびソリューション固有の変更点については、以下を参照してください。
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
->* Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
->* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
->* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
+* Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
+* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 
 
 主な違いは次の点にあります。
@@ -65,7 +64,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ## パブリッシュリポジトリに対する変更は禁止 {#changes-to-publish-repo}
 
-発行層の`/home`フォルダーの下の変更以外に、発行Cloud Serviceーに直接変更を加えることはできません。 以前のバージョンのオンプレミスAEMまたはAMS上のAEMでは、コードの変更を発行リポジトリに直接行うことができました。 次の方法で、一部の制限を緩和できます。
+パブリッシュ層の`/home`フォルダーの下での変更の他に、パブリッシュリポジトリに対する直接の変更はAEMCloud Serviceでは許可されません。 オンプレミスAEMまたはAMS上のAEMの以前のバージョンでは、コードをパブリッシュリポジトリに直接変更できました。 一部の制限は、次の方法で軽減できます。
 
 * コンテンツおよびコンテンツベースの設定については、オーサーインスタンス上で変更をおこなって公開します。
 * コードと設定については、Git リポジトリ内で変更をおこない、CI/CD パイプラインを実行して変更をロールアウトします。
