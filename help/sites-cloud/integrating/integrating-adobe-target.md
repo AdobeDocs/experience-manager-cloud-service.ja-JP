@@ -1,16 +1,15 @@
 ---
 title: Adobe Target との統合
 description: 'Adobe Target との統合 '
-feature: Administering
+feature: 管理
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 69c865dbc87ca021443e53b61440faca8fa3c4d4
+exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1043'
 ht-degree: 67%
 
 ---
-
 
 # Adobe Target との統合 {#integrating-with-adobe-target}
 
@@ -19,7 +18,7 @@ Adobe Experience Cloud に含まれている Adobe Target を使用すると、�
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
 * [Adobe Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/intro/get-started/quick-start.html) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
 
-Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。エクスペリエンスフラグメントをターゲットに書き出す場合は、Adobe Target設定とIMSのみが必要です。
+Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。エクスペリエンスフラグメントをTargetに書き出す場合は、Adobe Target設定とIMSのみが必要です。
 
 >[!NOTE]
 >
@@ -41,25 +40,25 @@ Target を AEM および Launch と適切に統合するには、Launch と Targ
 
 ### Adobe TargetテナントIDとAdobe Targetクライアントコード{#tenant-client}
 
-Adobe TargetテナントIDとAdobe Targetクライアントコードのフィールドを設定する場合は、次の点に注意してください。
+「 Adobe TargetテナントID 」フィールドと「 Adobe Targetクライアントコード」フィールドを設定する際は、次の点に注意してください。
 
-1. ほとんどのお客様の場合、テナントIDとクライアントコードは同じです。 つまり、両方のフィールドに同じ情報が含まれ、同じ情報が含まれます。 両方のフィールドにテナントIDを必ず入力してください。
-2. 従来の目的では、テナントIDとクライアントコードのフィールドに異なる値を入力することもできます。
+1. ほとんどのお客様の場合、テナントIDとクライアントコードは同じです。 つまり、両方のフィールドに同じ情報が含まれ、同一です。 両方のフィールドにテナントIDを必ず入力してください。
+2. 従来の方法では、「テナントID 」フィールドと「クライアントコード」フィールドに異なる値を入力することもできます。
 
 どちらの場合も、次の点に注意してください。
 
-* デフォルトでは、（最初に追加された場合は）クライアントコードもテナントIDフィールドに自動的にコピーされます。
+* デフォルトでは、クライアントコード（最初に追加された場合）もテナントIDフィールドに自動的にコピーされます。
 * デフォルトのテナントIDセットを変更するオプションがあります。
-* したがって、ターゲットへのバックエンド呼び出しはテナントIDに基づき、ターゲットへのクライアント側呼び出しはクライアントコードに基づきます。
+* したがって、Targetへのバックエンド呼び出しはテナントIDに基づき、Targetへのクライアント側呼び出しはクライアントコードに基づきます。
 
-前述したように、最初のケースはCloud ServiceとしてAEMで最も一般的です。 どちらの方法でも、**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
+前述のとおり、最初のケースはAEM as aCloud Serviceで最も一般的です。 どちらの場合も、必ず&#x200B;**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
 
 >[!NOTE]
 >
-> 既存のターゲット設定を変更する場合：
+> 既存のTarget設定を変更する場合：
 >
 > 1. テナントIDを再入力します。
-> 2. ターゲットに再接続します。
+> 2. Targetに再接続します。
 > 3. 設定を保存します。
 
 
@@ -78,7 +77,7 @@ Target 設定を編集するには、次の手順に従います。
 
 ## Adobe Launch を使用して、AEM サイトに Adobe Target を統合する {#integrate-target-launch}
 
-AEM は、Experience Platform Launch との標準の統合を提供します。Experience Platform LaunchにAdobe Target拡張機能を追加すると、AEM WebページでAdobe Targetの機能を使用できます。 ターゲットライブラリは、「起動」を使用した場合にのみレンダリングされます。
+AEM は、Experience Platform Launch との標準の統合を提供します。Adobe Target拡張機能をExperience Platform Launchに追加すると、AEM WebページでAdobe Targetの機能を使用できます。 Targetライブラリは、Launchを使用してのみレンダリングされます。
 
 >[!NOTE]
 >
@@ -94,17 +93,17 @@ AEM は、Experience Platform Launch との標準の統合を提供します。E
 
 ### Launch プロパティの作成 {#create-property}
 
-プロパティは、拡張子、ルール、データ要素が埋め込まれたコンテナです。
+プロパティは、拡張機能、ルール、データ要素が入力されるコンテナです。
 
 1. 「**新規プロパティ**」ボタンを選択します。
 2. プロパティの名前を指定します。
-3. ドメインとして、起動ライブラリを読み込むIPアドレスまたはホスト名を入力します。
+3. 「ドメイン」に、Launchライブラリを読み込むIP/ホストを入力します。
 4. 「**保存**」ボタンを選択します。
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### 必要な拡張機能の追加 {#add-extension}
 
-**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の Web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target**&#x200B;拡張子と&#x200B;**AdobeContextHub**&#x200B;拡張子の両方を追加する必要があります。
+**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の Web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target**&#x200B;と&#x200B;**AdobeContextHub**&#x200B;の両方の拡張機能を追加する必要があります。
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
 2. 「**Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
@@ -126,7 +125,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。E
 
 ### ページルールの作成 {#page-rule}
 
-**ルール**&#x200B;では、サイトで実行される一連のアクションを定義し、順序を付けて、ターゲティングを達成します。
+**ルール**&#x200B;では、ターゲティングを実現するために、一連のアクションを定義し、順序を指定します。このアクションは、サイトで実行されます。
 
 1. スクリーンショットに示されたように、一連のアクションを追加します。
    ![アクション](assets/rules1.png "アクション")
@@ -141,8 +140,8 @@ AEM は、Experience Platform Launch との標準の統合を提供します。E
 
 | **変更点** | **クラシック UI の設定** | **タッチ操作対応 UI の設定** | **結果** |
 |---|---|---|---|
-| ターゲット設定の場所。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 以前は、/etc/cloudservices/testandtargetに複数の設定が存在していましたが、現在はテナントの下に1つの設定が存在しています。 |
+| ターゲット設定の場所。 | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | 以前は、 /etc/cloudservices/testandtargetに複数の設定が存在していましたが、現在は1つの設定がテナントの下に存在しています。 |
 
 >[!NOTE]
 >
->既存のお客様は、既存の設定を引き続きサポートします（新しい設定を編集または作成するオプションはありません）。 既存の設定は、VSTSを使用してお客様がアップロードしたコンテンツパッケージの一部です。
+>既存のお客様は、従来の設定を引き続きサポートできます（新しい設定を編集または作成するオプションはありません）。 従来の設定は、VSTSを使用して顧客がアップロードしたコンテンツパッケージの一部です。
