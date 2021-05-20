@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
 description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '14060'
 ht-degree: 100%
 
 ---
-
 
 # アクセシブルなコンテンツ（WCAG 2.1 適合）の作成 {#creating-accessible-content-wcag-conformance}
 
@@ -287,7 +286,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [達成基準 1.2.5 について](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 * [達成基準 1.2.5 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded)
 
-### 適応可能（1.3）  {#adaptable}
+### 適応可能（1.3） {#adaptable}
 
 [ガイドライン 1.3 適応可能：情報および構造を損なうことなく、様々な方法（例えば、よりシンプルなレイアウト）で提供できるようにコンテンツを制作している。](https://www.w3.org/TR/WCAG/#adaptable)
 
@@ -358,6 +357,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
       >
       >* `<b>` の代わりに `<strong>` を使用
       >* `<i>` の代わりに `<em>` を使用
+
       >
       >それぞれ実質的には同じですが、好ましいのは、意味的に正しい HTML である `<strong>` と `<em>` です。開発チームがプロジェクトインスタンスを作成する際に、`<strong>` と `<em>` ではなく `<b>` と `<i>` を使用するように RTE を設定できます。
 
@@ -459,7 +459,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 * [達成基準 1.3.3 について](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 * [達成基準 1.3.3 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics)
 
-### 判別可能（1.4）  {#distinguishable}
+### 判別可能（1.4） {#distinguishable}
 
 [ガイドライン 1.4 判別可能：コンテンツを、利用者にとって見やすく、聞きやすいものにします。これには、前景と背景を区別することも含む。](https://www.w3.org/TR/WCAG/#distinguishable)
 
@@ -633,7 +633,7 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
 これは、キーボードを使用してすべての機能のアクセスを確保することを目的としています。
 
-### キーボード（2.1.1） {#keyboard}
+### キーボード（2.1.1）   {#keyboard}
 
 * 達成基準 2.1.1
 * レベル A
@@ -762,7 +762,7 @@ Web ページの機能によって、フォーカスがコンテンツのサブ�
 * [達成基準 2.3.1 について](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)
 * [達成基準 2.3.1 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)
 
-### ナビゲーション可能（2.4） {#navigable}
+### ナビゲーション可能（2.4）  {#navigable}
 
 [ガイドライン 2.4 ナビゲーション可能：ユーザーのナビゲーション、コンテンツの検索、位置の特定に役立つ方法を提供します。](https://www.w3.org/TR/WCAG/#navigable)
 
@@ -1044,7 +1044,7 @@ span 要素を適切な言語で追加するには、RTE のソース編集モ�
 * [達成基準 3.1.2 について](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html)
 * [達成基準 3.1.2 の達成方法](https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts)
 
-### 予測可能（3.2） {#predictable}
+### 予測可能（3.2）  {#predictable}
 
 [ガイドライン 3.2 予測可能：Web ページを予測可能な方法で表示および操作できるようにします。](https://www.w3.org/TR/WCAG/#predictable)
 
@@ -1277,13 +1277,13 @@ AEM WKND デモプロジェクトでは、**テキストフィールド**&#x200B
 
 [原則 4：堅牢 - コンテンツは、支援テクノロジーを含む様々なユーザーエージェントが確実に解釈できるように十分に堅牢でなければならない。](https://www.w3.org/TR/WCAG/#robust)
 
-### 互換性（4.1） {#compatible}
+### 互換性（4.1）  {#compatible}
 
 [ガイドライン 4.1 互換性：支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大化します。](https://www.w3.org/TR/WCAG/#compatible)
 
 支援テクノロジーを含む、現在および将来のユーザーエージェントとの互換性を最大化します。
 
-### 構文解析（4.1.1） {#parsing}
+### 構文解析（4.1.1）   {#parsing}
 
 * 達成基準 4.1.1
 * レベル A
