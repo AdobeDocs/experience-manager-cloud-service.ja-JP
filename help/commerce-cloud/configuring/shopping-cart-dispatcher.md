@@ -1,7 +1,6 @@
 ---
 title: 買い物かごおよび Dispatcher の設定
 description: 買い物かごおよび Dispatcher の設定
-translation-type: tm+mt
 source-git-commit: cdeef662947c502a70b89b6565b347030b286b85
 workflow-type: tm+mt
 source-wordcount: '141'
