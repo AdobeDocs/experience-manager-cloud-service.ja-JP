@@ -1,36 +1,35 @@
 ---
 title: URL の外部化
-description: ExternalizerはOSGiサービスです。このサービスを使用すると、リソースパスをプログラム的に外部URLと絶対URLに変換できます。
-translation-type: tm+mt
-source-git-commit: 4c584ceadaa358120d1d4b4cabd7e21ced814b31
+description: Externalizerは、プログラムによってリソースパスを外部URLおよび絶対URLに変換できるOSGiサービスです。
+exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 16%
 
 ---
 
-
 # URL の外部化 {#externalizing-urls}
 
-AEMでは、**Externalizer**&#x200B;はOSGiサービスで、リソースパス(例えば、`/path/to/my/page`)を外部URLや絶対URL（例えば`https://www.mycompany.com/path/to/my/page`）に埋め込みます。
+AEMの&#x200B;**Externalizer**&#x200B;は、リソースパス(例えば、`/path/to/my/page`)を外部URLと絶対URL（例えば、`https://www.mycompany.com/path/to/my/page`）に埋め込みます。
 
-AEMのCloud Serviceインスタンスは、外部から表示されるURLを認識できず、要求範囲外でリンクを作成する必要がある場合があるので、このサービスは、これらの外部URLを設定して構築するための中央の場所を提供します。
+AEM as a Cloud Serviceインスタンスは、外部から表示されるURLを認識できず、場合によってはリクエスト範囲外でリンクを作成する必要があるので、このサービスは、外部URLを設定して作成するための一元的な場所を提供します。
 
-この記事では、Externalizerサービスの設定方法と使用方法を説明します。 サービスの技術的な詳細については、[Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)を参照してください。
+この記事では、Externalizerサービスの設定方法と使用方法を説明します。 このサービスの技術的な詳細については、[Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)を参照してください。
 
-## 外部化子のデフォルト動作と上書き方法{#default-behavior}
+## Externalizerのデフォルトの動作と{#default-behavior}のオーバーライド方法
 
-標準で、Externalizerサービスには`author-p12345-e6789.adobeaemcloud.com`や`publish-p12345-e6789.adobeaemcloud.com`などの値が既に設定されており、何の介入もなく、AEMをCloud Serviceインストールとして使用する場合にカスタムドメインが使用されます。
+Externalizerサービスには、介入なしにカスタムCloud Serviceが使用されるように、`author-p12345-e6789.adobeaemcloud.com`や`publish-p12345-e6789.adobeaemcloud.com`などの値が既に設定されています。
 
-この値を上書きするには、「[AEM用のOSGiのCloud Serviceとしての設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)」の説明に従って、Cloud Manager環境変数を使用し、事前定義された`AEM_CDN_DOMAIN_AUTHOR`変数と`AEM_CDN_DOMAIN_PUBLISH`変数を設定します。
+このような値を上書きするには、 AEM用のOSGiのCloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って、Cloud Manager環境変数を使用し、事前定義された`AEM_CDN_DOMAIN_AUTHOR`変数と`AEM_CDN_DOMAIN_PUBLISH`変数を設定します。[
 
 ## Externalizerサービスの設定{#configuring-the-externalizer-service}
 
-Externalizerサービスを使用すると、リソースパスをプログラム的にプレフィックス付けするのに使用できるドメインを一元的に定義できます。 Externalizerサービスは、1つのドメインを持つアプリケーションにのみ使用する必要があります。
+Externalizerサービスを使用すると、リソースパスにプログラム的にプレフィックスを付けるのに使用できるドメインを一元的に定義できます。 Externalizerサービスは、1つのドメインを持つアプリケーションにのみ使用する必要があります。
 
 >[!NOTE]
 >
->AEM用の[OSGi設定をCloud Serviceとして適用する場合と同様に、](/help/implementing/deploying/overview.md#osgi-configuration)次の手順は、ローカル開発者インスタンスに対して実行し、配置用にプロジェクトコードにコミットする必要があります。
+>AEM as aCloud Serviceに[OSGi設定を適用する場合と同様に、](/help/implementing/deploying/overview.md#osgi-configuration)次の手順をローカル開発者インスタンスで実行し、デプロイメント用にプロジェクトコードにコミットする必要があります。
 
 Externalizer サービスのドメインマッピングを定義するには：
 
@@ -38,13 +37,13 @@ Externalizer サービスのドメインマッピングを定義するには：
 
    `https://<host>:<port>/system/console/configMgr`
 
-1. 「**Day CQ Link Externalizer**」をクリックして、設定ダイアログボックスを開きます。
+1. **Day CQ Link Externalizer**&#x200B;をクリックして、設定ダイアログボックスを開きます。
 
    ![Externalizer OSGiの設定](./assets/externalizer-osgi.png)
 
    >[!NOTE]
    >
-   >構成への直接リンクは`https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`です
+   >設定への直接リンクは`https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`です。
 
 1. **ドメイン**&#x200B;マッピングを定義します。 マッピングは、ドメイン、スペース、ドメインを参照するコードで使用できる一意の名前で構成されます。
 
@@ -52,17 +51,17 @@ Externalizer サービスのドメインマッピングを定義するには：
 
    ここで、
 
-   * **`scheme`** は、通常httpまたはhttpsですが、別のプロトコルにすることもできます。
+   * **`scheme`** は通常、httpまたはhttpsですが、別のプロトコルを指定することもできます。
 
       * httpsリンクを強制するには、httpsを使用することをお勧めします。
       * URLの外部化を要求する際に、クライアントコードがスキームを上書きしない場合に使用されます。
    * **`server`** はホスト名（ドメイン名またはipアドレス）です。
    * **`port`** （オプション）はポート番号です。
-   * **`contextpath`** （オプション）は、AEMがwebappとして別のコンテキストパスでインストールされている場合にのみ設定されます。
+   * **`contextpath`** （オプション）は、AEMがWebアプリとして別のコンテキストパスでインストールされている場合にのみ設定されます。
 
    例：`production https://my.production.instance`
 
-   次のマッピング名は事前に定義されており、AEMがそれらに依存しているため、常に設定する必要があります。
+   次のマッピング名は事前に定義されており、AEMがこれらを利用するため常に設定する必要があります。
 
    * `local`  — ローカルインスタンス
    * `author`  — オーサリングシステムのDNS
@@ -70,7 +69,7 @@ Externalizer サービスのドメインマッピングを定義するには：
 
    >[!NOTE]
    >
-   >カスタム設定を使用すると、`production`、`staging`などの新しいカテゴリや、`my-internal-webservice`などの外部のAEM以外のシステムを追加できます。 プロジェクトのコードベース内の異なる場所にまたがるこのようなURLのハードコーディングを避けると便利です。
+   >カスタム設定を使用すると、`production`、`staging`などの新しいカテゴリや、`my-internal-webservice`などの外部のAEM以外のシステムを追加できます。 このようなURLをプロジェクトのコードベースの異なる場所にハードコーディングするのを防ぐのに役立ちます。
 
 1. 「**保存**」をクリックして変更を保存します。
 
@@ -80,7 +79,7 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 >[!NOTE]
 >
->HTMLのコンテキストでは絶対リンクを作成しないでください。 したがって、このユーティリティはこのような場合には使用しないでください。
+>HTMLのコンテキストでは絶対リンクを作成しないでください。 したがって、このユーティリティは、このような場合には使用しないでください。
 
 * **「publish」ドメインを付与してパスを外部化する：**
 
@@ -88,11 +87,11 @@ Externalizer サービスのドメインマッピングを定義するには：
    String myExternalizedUrl = externalizer.publishLink(resolver, "/my/page") + ".html";
    ```
 
-   ドメインマッピングの前提：
+   ドメインマッピングが次のような場合：
 
    * `publish https://www.website.com`
 
-   * `myExternalizedUrl` は次の値で終わります。
+   * `myExternalizedUrl` 値で終わる
 
    * `https://www.website.com/contextpath/my/page.html`
 
@@ -102,11 +101,11 @@ Externalizer サービスのドメインマッピングを定義するには：
    String myExternalizedUrl = externalizer.authorLink(resolver, "/my/page") + ".html";
    ```
 
-   ドメインマッピングの前提：
+   ドメインマッピングが次のような場合：
 
    * `author https://author.website.com`
 
-   * `myExternalizedUrl` は次の値で終わります。
+   * `myExternalizedUrl` 値で終わる
 
    * `https://author.website.com/contextpath/my/page.html`
 
@@ -116,11 +115,11 @@ Externalizer サービスのドメインマッピングを定義するには：
    String myExternalizedUrl = externalizer.externalLink(resolver, Externalizer.LOCAL, "/my/page") + ".html";
    ```
 
-   ドメインマッピングの前提：
+   ドメインマッピングが次のような場合：
 
    * `local https://publish-3.internal`
 
-   * `myExternalizedUrl` は次の値で終わります。
+   * `myExternalizedUrl` 値で終わる
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
