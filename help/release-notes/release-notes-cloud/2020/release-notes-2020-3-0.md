@@ -1,14 +1,13 @@
 ---
 title: リリースノート（2020.3.0）
 description: リリースノート（2020.3.0）
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.3.0 のリリースノート {#release-notes}
 
@@ -36,4 +35,3 @@ AEM as a Cloud Service リリース 2020.3.0 の Cloud Manager の新機能と�
 * 同じ Cloud Service プログラムで開発環境を同時に作成すると、1 つだけ正常に作成できたという状況が発生する場合がありました。
 * Cloud Service プログラムの Experience Cloud 通知が一貫して受信されなかった。
 * 特定のプロジェクトでは、*ResourceResolver オブジェクトを常に閉じる必要があり*、Null Pointer 例外が発生していましたが、パイプラインの実行には影響しませんでした。
-
