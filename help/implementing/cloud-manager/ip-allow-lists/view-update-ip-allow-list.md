@@ -1,14 +1,13 @@
 ---
 title: 表示と更新 - Cloud Manager での IP 許可リスト
 description: 表示と更新 - Cloud Manager での IP 許可リスト
-translation-type: tm+mt
-source-git-commit: 7fdfa626147a72f3d7fb98b89a19a871fc7a13ca
+exl-id: 9f9aebcd-b6d0-497a-b262-0a24b4938b45
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 100%
 
 ---
-
 
 # IP 許可リストの表示または更新 {#view-update}
 
