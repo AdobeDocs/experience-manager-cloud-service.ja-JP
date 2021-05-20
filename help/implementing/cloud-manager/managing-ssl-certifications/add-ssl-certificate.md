@@ -2,17 +2,17 @@
 title: SSL 証明書の追加 - SSL 証明書の管理
 description: SSL 証明書の追加 - SSL 証明書の管理
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '552'
+ht-degree: 97%
 
 ---
 
 # SSL 証明書の追加 {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。
+>AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。AEM as aCloud Serviceは、ドメインに対してワイルドカードSSL証明書を受け入れます。
 
 証明書のプロビジョニングには数日かかるので、数か月前からでも証明書をプロビジョニングすることをお勧めします。詳しくは、「[SSL 証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)」を参照してください。
 
