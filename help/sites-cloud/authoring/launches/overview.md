@@ -1,14 +1,13 @@
 ---
 title: ローンチ
 description: ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
-translation-type: tm+mt
-source-git-commit: 21f14d1f4e0ae26e097d4b31fe6811f1d089813d
+exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 100%
 
 ---
-
 
 # ローンチ {#launches}
 
