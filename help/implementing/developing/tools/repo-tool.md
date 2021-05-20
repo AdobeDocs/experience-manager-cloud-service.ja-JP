@@ -1,14 +1,13 @@
 ---
 title: AEM Repo ツール
 description: AEM Repo ツールは、FTP に相当するコマンドラインを使用してローカルファイルシステムと AEM サーバーの間で JCR コンテンツを転送するためのシンプルなソリューションです。
-translation-type: tm+mt
-source-git-commit: c40d668cb6dcf5c3e2d09504b547457306a99c85
+exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
 
 ---
-
 
 # AEM Repo ツール {#aem-repo-tool}
 
