@@ -1,14 +1,13 @@
 ---
 title: コンテンツ配信フローの概要
 description: コンテンツ配信フローの概要
-translation-type: tm+mt
-source-git-commit: 0080ace746f4a7212180d2404b356176d5f2d72c
+exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
 
 ---
-
 
 # コンテンツ配信フロー{#content-delivery}
 
