@@ -1,14 +1,13 @@
 ---
 title: ローンチでのページの管理
-description: 'ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。 '
-translation-type: tm+mt
-source-git-commit: 14fb0cfc39bbb1322edd4e6ae9d1d15db4e54483
+description: ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。
+exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
 
 ---
-
 
 # ローンチ内のページの管理 {#managing-pages-in-launch}
 
