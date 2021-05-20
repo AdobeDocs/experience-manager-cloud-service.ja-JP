@@ -1,14 +1,13 @@
 ---
 title: 命名規則
 description: リポジトリのノードは、Java コンテンツリポジトリの命名規則の対象です
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 94%
 
 ---
-
 
 # 命名規則{#naming-conventions}
 
