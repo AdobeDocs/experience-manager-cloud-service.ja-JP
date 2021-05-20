@@ -1,14 +1,13 @@
 ---
 title: 計画段階
 description: 計画段階
-translation-type: tm+mt
-source-git-commit: df3eb65817a00fe31eff466565b9de5e0a72ccae
+exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 100%
 
 ---
-
 
 # 計画 {#planning-phase}
 
@@ -60,4 +59,3 @@ Cloud Service への移行に必要な作業レベルを推定したら、リソ
 主要業績評価指標（KPI）をまだ設定していない場合は、最も重要なことにチームが専念できるように、Adobe Experience Manager（AEM）の実装に関する KPI を設定することをお勧めします。
 
 ビジネス目標に合った適切な KPI を選択する方法については、[KPI の策定に関するドキュメント](https://guided.adobe.com/welcome/aem/part6.html)を参照してください。
-
