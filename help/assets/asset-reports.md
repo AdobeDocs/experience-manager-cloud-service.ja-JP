@@ -2,20 +2,19 @@
 title: 使用状況および共有に関するレポート
 description: デジタルアセットの使用状況、アクティビティ、共有を理解するのに役立つ、 [!DNL Adobe Experience Manager Assets]  でのアセットに関するレポートです。
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: アセットレポート，アセット管理
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 77%
+source-wordcount: '873'
+ht-degree: 78%
 
 ---
 
-
 # アセットレポート {#asset-reports}
 
-アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートには、システムの使用状況、ユーザーによるアセットの操作方法、および<!-- downloaded and -->共有されているアセットに関する有用な情報が表示されます。
+アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートには、システムの使用状況、ユーザーによるアセットの操作方法、<!-- downloaded and -->共有されているアセットに関する有用な情報が表示されます。
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
@@ -23,7 +22,7 @@ ht-degree: 77%
 
 直観的なレポート管理インターフェイスに備わっているきめ細かなオプションやコントロールを使用すれば、アーカイブされたレポートにアクセスしたり、レポートの実行ステータス（成功、失敗および待機中）を表示したりすることができます。
 
-レポートが生成されると、<!-- through an email (optional) and -->インボックス通知を通じて通知されます。 レポート一覧ページでは、以前に生成されたすべてのレポートが表示されるレポートの表示、ダウンロードまたは削除が可能です。
+レポートが生成されると、<!-- through an email (optional) and -->インボックス通知で通知されます。 レポートのリストページで、以前に生成されたすべてのレポートが表示されるレポートの表示、ダウンロードまたは削除を行うことができます。
 
 ## レポートの生成 {#generate-reports}
 
@@ -93,11 +92,11 @@ ht-degree: 77%
 
 1. **[!UICONTROL 列を構成]**&#x200B;ページでは、いくつかの列がデフォルトでレポートに表示されるように選択されています。追加の列を選択できます。列の選択をキャンセルして、レポートから除外します。
 
-   ![レポート列の選択を選択またはキャンセル](assets/configure_columns.png)
+   ![レポート列の選択を選択またはキャンセルする](assets/configure_columns.png)
 
    カスタムの列名やプロパティパスを表示するには、CRX のノード下のアセットバイナリのプロパティを設定します。`jcr:content`または、プロパティパスピッカーを使用してパスを追加します。
 
-   ![レポート列の選択を選択またはキャンセル](assets/custom_columns.png)
+   ![レポート列の選択を選択またはキャンセルする](assets/custom_columns.png)
 
 1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
 1. [!UICONTROL アセットレポート]ページのレポート生成ステータスはジョブの現在の状態（「[!UICONTROL 成功]」「[!UICONTROL 失敗]」「[!UICONTROL キューに追加済み]」、「[!UICONTROL スケジュール済み]」など）に基づきます。通知インボックスにも同じステータスが表示されます。レポートページを表示するには、レポートのリンクをクリックします。または、レポートを選択し、ツールバーの「**[!UICONTROL 表示]**」をクリックします。
@@ -106,7 +105,7 @@ ht-degree: 77%
 
    ツールバーの「**[!UICONTROL ダウンロード]**」をクリックすると、レポートを CSV 形式でダウンロードできます。
 
-## レポートの追加カスタム列{#add-custom-columns}
+## レポートにカスタム列を追加{#add-custom-columns}
 
 次のレポートにカスタム列を追加し、独自の要件に応じてさらに多くのデータを表示することができます。
 
@@ -133,11 +132,11 @@ ht-degree: 77%
 1. [!DNL Manager interface] で、 **[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL レポート]**&#x200B;をクリックします 。
 1. [!UICONTROL アセットレポート]ページで、ツールバーの「**[!UICONTROL 作成]**」をクリックします。
 
-1. **[!UICONTROL レポートの作成]**&#x200B;ページから、作成するレポートを選択します。 「**[!UICONTROL Next]**」をクリックします。
+1. **[!UICONTROL レポートを作成]**&#x200B;ページから、作成するレポートを選択します。 「**[!UICONTROL 次へ]**」をクリックします。
 
-1. 必要に応じて、タイトル、説明、サムネール、フォルダーパス、日付範囲などのレポートの詳細を設定します。 「**[!UICONTROL Next]**」をクリックします。
+1. タイトル、説明、サムネール、フォルダーパス、期間など、該当するレポートの詳細を設定します。 「**[!UICONTROL 次へ]**」をクリックします。
 
-1. 「**[!UICONTROL デフォルトの列]**」のリストから、該当する情報を選択します。 カスタム列を表示するには、**[!UICONTROL カスタム列]**&#x200B;の下に列の名前を指定します。
+1. 「**[!UICONTROL デフォルトの列]**」のリストから、該当する情報を選択します。 カスタム列を表示するには、「**[!UICONTROL カスタム列]**」で列の名前を指定します。
 
    ![レポートのカスタム列の名前を指定](assets/custom_columns-1.png)
 
@@ -145,9 +144,9 @@ ht-degree: 77%
 
    ![jcr:content 内のパスからプロパティパスをマップします。](assets/property_picker.png)
 
-   カスタム列をさらに追加するには、**[!UICONTROL 追加]**&#x200B;をクリックし、上記の手順を繰り返します。
+   カスタム列をさらに追加するには、「**[!UICONTROL 追加]**」をクリックし、上記の手順を繰り返します。
 
-1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを通知するメッセージが表示されます。
+1. ツールバーから「**[!UICONTROL 作成]**」をクリックします。レポートの生成が開始されたことを示すメッセージが表示されます。
 
 <!-- TBD: How to configure purge now? Is it using OSGi configurations?
 
@@ -163,7 +162,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## トラブルシューティング情報{#tips-troubleshoot}
 
-* [!UICONTROL ディスク使用状況レポート]が生成されない場合、および[!DNL Dynamic Media]を使用している場合は、すべてのアセットが正しく処理されることを確認します。 解決するには、アセットを再処理し、レポートを再生成します。
+* [!UICONTROL ディスク使用量レポート]が生成されない場合や、[!DNL Dynamic Media]を使用している場合は、すべてのアセットが正しく処理されていることを確認します。 解決するには、アセットを再処理し、レポートを再度生成します。
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 
