@@ -1,20 +1,19 @@
 ---
 title: コンテンツフラグメント構造ツリー
-description: AEMのコンテンツフラグメントエディターの構造ツリー機能を使用して、ヘッドレスコンテンツをより深く理解します。
-feature: Content Fragments
+description: AEMのコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
+feature: コンテンツフラグメント
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 56%
+source-wordcount: '80'
+ht-degree: 55%
 
 ---
 
-
 # コンテンツフラグメント構造ツリー {#content-fragment-structure-tree}
 
-AEMのコンテンツフラグメントエディターの構造ツリー機能を使用して、ヘッドレスコンテンツをより深く理解します。
+AEMのコンテンツフラグメントエディターの構造ツリー機能を使用すると、ヘッドレスコンテンツをより深く理解できます。
 
 コンテンツフラグメントエディターで「構造ツリー」アイコンを選択できます。
 
