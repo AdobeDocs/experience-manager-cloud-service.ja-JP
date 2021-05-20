@@ -3,7 +3,6 @@ title: Dynamic Media の操作
 description: Dynamic Media を使用して、Web、モバイルおよびソーシャルサイトで使用するためにアセットを配信する方法を学習します。
 role: Administrator,Business Practitioner
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-translation-type: tm+mt
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '399'
@@ -15,7 +14,7 @@ ht-degree: 72%
 
 [Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)は、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信するもので、これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
-Dynamic Mediaは、ズーム、360度スピン、ビデオなどのインタラクティブなビューを提供します。Dynamic Mediaは、Adobe Experience Managerのデジタルアセット管理(Assets)ソリューションのワークフローを組み込み、デジタルキャンペーン管理プロセスをシンプル化および合理化しています。
+Dynamic Mediaは、ズーム、360度スピン、ビデオなど、インタラクティブな視聴エクスペリエンスを提供します。Dynamic Mediaは、Adobe Experience Managerデジタルアセット管理(Assets)ソリューションのワークフローを独自に組み込むことで、デジタルキャンペーン管理プロセスをシンプル化し、合理化します。
 
 <!-- >[!NOTE]
 >
@@ -36,9 +35,9 @@ Dynamic Media 限定の機能は次のとおりです。
 
 * [スピンセット](spin-sets.md)
 * [ビデオ](video.md)
-* [Dynamic Media アセットの配信 ](delivering-dynamic-media-assets.md)
+* [Dynamic Media アセットの配信](delivering-dynamic-media-assets.md)
 * [アセットの管理](managing-assets.md)
-* [クイック表示を使用したカスタムポップアップWindows®の作成](custom-pop-ups.md)
+* [クイックビューを使用したカスタムポップアップWindows®の作成](custom-pop-ups.md)
 
 [Dynamic Media の設定](administering-dynamic-media.md)も参照してください。
 
@@ -75,13 +74,13 @@ Dynamic Media を有効にしている場合、画像アセットをクリック
 
 ### PTIFF レンディション {#ptiff-renditions}
 
-Dynamic Mediaが有効にしたアセットには`pyramid.tiffs`が含まれます。
+Dynamic Mediaが有効なアセットには`pyramid.tiffs`が含まれます。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### アセットのビューの変化 {#asset-views-change}
 
-Dynamic Mediaを有効にすると、`+`ボタンと`-`ボタンをクリックして、ズームインおよびズームアウトできます。また、クリック/タップして特定の領域にズームインすることもできます。元に戻すと、元のバージョンに戻り、斜めの矢印をクリックして画像をフルスクリーンにすることができます。 Dynamic Mediaを有効にすると、次のように表示されます。
+Dynamic Mediaを有効にすると、`+`ボタンと`-`ボタンをクリックして、ズームインおよびズームアウトできます。クリックまたはタップして、特定の領域にズームインすることもできます。元に戻す：元のバージョンに戻り、斜めの矢印をクリックして画像を全画面表示にできます。 Dynamic Media有効は次のように表示されます。
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
