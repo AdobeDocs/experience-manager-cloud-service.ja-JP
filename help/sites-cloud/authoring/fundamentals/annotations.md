@@ -1,14 +1,13 @@
 ---
 title: ページ注釈の追加
 description: コンテンツに直接関連する多くのコンポーネントでは、注釈を追加できます
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
 
 ---
-
 
 # ページ注釈の追加 {#adding-page-annotations}
 
