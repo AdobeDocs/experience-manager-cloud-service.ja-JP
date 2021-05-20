@@ -2,16 +2,15 @@
 title: メタデータの編集と追加
 description: ' [!DNL Experience Manager Assets]  のアセットメタデータを編集する様々な方法について説明します。'
 contentOwner: AG
-feature: Metadata
+feature: メタデータ
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 100%
 
 ---
-
 
 # メタデータの編集と追加 {#how-to-edit-or-add-metadata}
 
