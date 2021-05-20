@@ -1,14 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。'
-translation-type: tm+mt
-source-git-commit: ef8df0176c0541acc3cb6cb52d564d9bfee0bfea
+exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
 
@@ -28,7 +27,7 @@ ht-degree: 100%
 
 * **ロールアウトに使用可能なライブコピーページの並べ替え**：ロールアウトに使用できるライブコピーページを、[!UICONTROL 名前]、[!UICONTROL 最終変更日]、[!UICONTROL 前回のロールアウト日]の各プロパティを使用して並べ替える新しいオプションが追加されました。ページの[!UICONTROL 前回のロールアウト日]は、新しく導入されたプロパティです。
 
-## [!DNL Adobe Experience Manager Assets] Cloud Serviceとして  {#assets}
+## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
 
 ### [!DNL Assets] と [!DNL Dynamic Media] の新機能 {#what-is-new-assets}
 
