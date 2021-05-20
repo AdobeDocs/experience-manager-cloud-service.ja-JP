@@ -1,21 +1,20 @@
 ---
-sub-product: Cloud ServiceとしてのAEMコンテンツとコマース
-user-guide-title: Cloud ServiceとしてのAEMコンテンツとコマース
-breadcrumb-title: AEMコンテンツおよびコマースガイド
-user-guide-description: Experience ManagerコンテンツとコマースをCloud Serviceとして使用および管理する方法を理解します。
-translation-type: tm+mt
+sub-product: AEM Content and Commerce as a Cloud Service
+user-guide-title: AEM Content and Commerce as aCloud Service
+breadcrumb-title: AEM Content and Commerce ガイド
+user-guide-description: Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 25%
+ht-degree: 69%
 
 ---
 
 
-# AEMコンテンツとコマース{#content-and-commerce}
+# AEM のコンテンツとコマース {#content-and-commerce}
 
-+ [AEMコンテンツとコマース](/help/commerce-cloud/home.md)
-+ [Cloud ServiceとしてのAEMコンテンツとコマースに関する注目すべき変更](changes.md)
++ [AEM のコンテンツとコマース](/help/commerce-cloud/home.md)
++ [AEM Content and Commerce as aCloud Serviceの主な変更点](changes.md)
 + [概要と概要](introduction.md)
 + 統合 {#integrations}
    + [Adobe Commerce](integrating/magento.md)
