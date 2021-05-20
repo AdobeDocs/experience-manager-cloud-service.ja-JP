@@ -7,11 +7,10 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: Commerce Integration Framework
+feature: コマース統合フレームワーク
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-translation-type: tm+mt
 source-git-commit: 7adef41690044067ef4fe6af31fcb2f6ea222d83
 workflow-type: tm+mt
 source-wordcount: '2567'
@@ -37,7 +36,7 @@ ht-degree: 96%
 
 このチュートリアルを完了するには、ローカルの開発環境が必要です。これには、Magento インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。
 
-## ベニアプロジェクトのコピー{#clone-venia-project}
+## Veniaプロジェクトのクローン{#clone-venia-project}
 
 Venia プロジェクト[のクローンを作成して](https://github.com/adobe/aem-cif-guides-venia)、デフォルトのスタイルを上書きします。
 
@@ -82,7 +81,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 ## ティーザースタイルのアップデート {#ui-frontend-module}
 
-次に、Teaserスタイルを少し変更して、`ui.frontend`モジュールとクライアントライブラリの動作を確認します。 [任意の IDE](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用したクリーンショットは、[Visual Studio Code IDE](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) からのものです。
+次に、ティーザーのスタイルを少し変更して、`ui.frontend`モジュールとクライアントライブラリの動作を確認します。 [任意の IDE](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用したクリーンショットは、[Visual Studio Code IDE](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) からのものです。
 
 1. **ui.frontend** モジュールに移動して展開し、フォルダー階層を次のように展開します：`ui.frontend/src/main/styles/commerce`。
 
@@ -136,7 +135,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    ![コンパイル済みサイト CSS](../assets/style-cif-component/comiled-site-css.png)
 
-   ファイルは、プロジェクト内のすべてのSassファイルのコンパイルおよび縮小版です。
+   このファイルは、プロジェクト内のすべてのSassファイルのコンパイル済みおよび縮小版です。
 
    >[!NOTE]
    >
@@ -228,7 +227,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    ![公開済みとして表示](../assets/style-cif-component/view-as-published.png)
 
-   これにより、AEM 作成者の javascript が読み込まれない状態で、公開されたサイトに表示されるようにページが開きます。URLにはクエリパラメーター`?wcmmode=disabled`が追加されています。 CSS と JavaScript を開発する場合は、このパラメーターを使用して AEM 作成者が提供した内容を含めずにページを簡略化することをお勧めします。
+   これにより、AEM 作成者の javascript が読み込まれない状態で、公開されたサイトに表示されるようにページが開きます。このURLにはクエリーパラメーター`?wcmmode=disabled`が追加されています。 CSS と JavaScript を開発する場合は、このパラメーターを使用して AEM 作成者が提供した内容を含めずにページを簡略化することをお勧めします。
 
 1. ページソースを表示し、次のクライアントライブラリをいくつか識別できるようにします。
 
@@ -254,7 +253,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    `venia/clientlibs/clientlib-site.min.css` と `venia/clientlibs/clientlib-site.min.js` に注意してください。これらは、`ui.frontend` モジュールから派生したコンパイル済みの CSS ファイルと JavaScript ファイルです。
 
-## ページテンプレートを含むクライアントライブラリの追加{#client-library-inclusion-pagetemplates}
+## ページテンプレートによるクライアントライブラリの追加{#client-library-inclusion-pagetemplates}
 
 クライアントサイドライブラリを含める方法には、いくつかのオプションがあります。次に、生成されたプロジェクトに、[ページテンプレート](/help/implementing/developing/components/templates.md)を介してどのように `clientlib-site` ライブラリがインクルードされるかを調べます。
 
@@ -331,7 +330,7 @@ webpack-dev-server は、AEM のローカルインスタンスから画像と一
 
    >[!CAUTION]
    >
-   > Sass関連のエラーが発生した場合は、サーバを停止し、`npm rebuild node-sass`コマンドを実行して上記の手順を繰り返します。 これは、`npm` と `node` のバージョンが、プロジェクトの `aem-cif-guides-venia/pom.xml` で指定されたバージョンと異なる場合に発生する可能性があります。
+   > Sass関連のエラーが発生した場合は、サーバーを停止し、コマンド`npm rebuild node-sass`を実行して、上記の手順を繰り返します。 これは、`npm` と `node` のバージョンが、プロジェクトの `aem-cif-guides-venia/pom.xml` で指定されたバージョンと異なる場合に発生する可能性があります。
 
 1. AEM のログインインスタンスと同じブラウザーを使用して、新しいタブで [http://localhost:8080/](http://localhost:8080/) に移動します。Venia ホームページは webpack-dev-server で確認できます。
 
