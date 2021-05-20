@@ -1,14 +1,13 @@
 ---
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
-translation-type: tm+mt
-source-git-commit: b7a2e86de27dbfcdecaf3a2bc1984678b7b69375
+exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 100%
 
 ---
-
 
 # エクスペリエンスフラグメント {#experience-fragments}
 
@@ -77,7 +76,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
    >
    >エクスペリエンスフラグメントの構造をサイトのページ構造に合わせる必要はありません。
 
-* [許可されたテンプレートをフォルダーレベルで割り当てる](#configure-allowed-templates-folder)。
+* [許可されたテンプレートをフォルダーレベルで割り当てる。](#configure-allowed-templates-folder)
 
    >[!NOTE]
    >
