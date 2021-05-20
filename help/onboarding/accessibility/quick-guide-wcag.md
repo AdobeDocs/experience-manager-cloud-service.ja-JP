@@ -1,14 +1,13 @@
 ---
 title: WCAG 2.1 クイックガイド
 description: WCAG 2.1 クイックガイド
-translation-type: tm+mt
-source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
+exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 100%
 
 ---
-
 
 # WCAG 2.1 クイックガイド{#quick-guide-to-wcag}
 
