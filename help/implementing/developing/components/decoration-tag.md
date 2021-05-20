@@ -1,14 +1,13 @@
 ---
-title: '装飾タグ   '
-description: Web ページのコンポーネントがレンダリングされる際に、レンダリングしたコンポーネントをラッピングする HTML 要素を生成できます。AEM は、開発者向けに、含まれているコンポーネントをラップする装飾タグを制御する明確でシンプルなロジックを提供します。
-translation-type: tm+mt
-source-git-commit: 0799a817095558edd49b53ddc915c9474181fef7
+title: 装飾タグ
+description: Web ページのコンポーネントがレンダリングされる際に、レンダリングしたコンポーネントをラッピングする HTML 要素を生成できます。AEM では、含まれているコンポーネントをラップする装飾タグを制御する明確でシンプルなロジックを開発者向けに提供しています。
+exl-id: a90fd619-eff6-466f-9178-90374f988b5d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
 
 ---
-
 
 # 装飾タグ     {#decoration-tag}
 
