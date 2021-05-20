@@ -1,8 +1,8 @@
 ---
 title: 'カスタムドメイン名の SSL 証明書の更新 '
 description: カスタムドメイン名の SSL 証明書の更新
-translation-type: tm+mt
-source-git-commit: f11cb3b56f51046779300626d1deb037dd687309
+exl-id: 652f7568-dc6a-4ac6-b06f-4ea1540498fa
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
