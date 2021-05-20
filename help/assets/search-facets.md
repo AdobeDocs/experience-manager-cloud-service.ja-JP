@@ -1,16 +1,15 @@
 ---
 title: 検索ファセット。
 description: この記事では、AEM で検索ファセットを作成、変更および使用する方法について説明します。
-feature: Search,Metadata
+feature: 検索，メタデータ
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2378'
 ht-degree: 99%
 
 ---
-
 
 # 検索ファセット {#search-facets}
 
