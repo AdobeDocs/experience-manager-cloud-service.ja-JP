@@ -1,14 +1,13 @@
 ---
 title: パーソナライズとコンテンツのターゲティング
 description: パーソナライズされたコンテンツを AEM で作成する方法を説明します。
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
-
 
 # パーソナライズとコンテンツのターゲティング {#personalization}
 
@@ -40,7 +39,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 1 つのアクティビティに複数のエクスペリエンスを定義できます。[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console)または[ターゲットモード](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)を使用して、アクティビティにエクスペリエンスを追加できます。
 
-## オファー  {#offers}
+## オファー {#offers}
 
 オファーは、それぞれのエクスペリエンスでページ上に表示されるコンテンツです。オーディエンス向けコンテンツの効果を最大限に高めるには、異なるエクスペリエンスに異なるオファーを使用します。
 
