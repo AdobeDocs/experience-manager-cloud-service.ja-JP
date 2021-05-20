@@ -1,14 +1,13 @@
 ---
 title: ローンチの昇格
-description: 'コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。 '
-translation-type: tm+mt
-source-git-commit: 645d25753e4baa03ba4df0645a266b793ec64a49
+description: コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。
+exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 100%
 
 ---
-
 
 # ローンチの昇格 {#promoting-launches}
 
@@ -39,6 +38,7 @@ ht-degree: 100%
 >
 >* 構造に複数のローンチがあるときは、[ネストされたローンチの昇格](#promoting-a-nested-launch)。
 >* 自動昇格および公開について詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)。
+
 >
 
 
