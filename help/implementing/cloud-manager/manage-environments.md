@@ -1,14 +1,13 @@
 ---
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
-translation-type: tm+mt
-source-git-commit: 1aca6f0b23aa328ca364f7ab1d4c722bb5cbca9a
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 97%
 
 ---
-
 
 # 環境の管理 {#manage-environments}
 
@@ -113,7 +112,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->この機能は、実稼働用に設定された実稼働環境内の実稼働/ステージプログラムセットには使用できません。 ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
+>この機能は、実稼動用に設定された実稼動プログラムの実稼動/ステージング環境セットには使用できません。 ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
 
 ## アクセスの管理 {#managing-access}
 
@@ -159,9 +158,9 @@ ht-degree: 97%
 
 1. [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [カスタムドメイン](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 名または [SSL証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)。
+1. [カスタムドメイン名またはSSL証](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 明書のステー [タスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)
 
-1. [IP許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+1. [IPステータスの確認許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
@@ -190,5 +189,3 @@ IP 許可リストの適用を解除するには、次の手順に従います�
 1. 適用を解除する IP 許可リスト規則が一覧表示されている行を識別します。
 1. 行の右端から **...** メニューを選択します。
 1. 「**適用解除**」オプションを選択し、送信を確認します。
-
-
