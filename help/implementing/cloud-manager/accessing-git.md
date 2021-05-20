@@ -3,14 +3,13 @@ title: Git へのアクセス
 seo-title: Git へのアクセス
 description: このページでは、Git リポジトリにアクセスして管理する方法について説明します。
 seo-description: Git リポジトリにアクセスして管理する方法については、このページに従ってください。
-translation-type: tm+mt
-source-git-commit: 114bc678fc1c6e3570d6d2a29bc034feb68aa56d
+exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
-
 
 # Git へのアクセス {#accessing-git}
 
@@ -45,4 +44,3 @@ Cloud Manager で Git を管理するうえで重要な考慮事項は次のと�
 >[!NOTE]
 >
 >ユーザーは、自分のコードのコピーをチェックアウトし、ローカルコードリポジトリで変更をおこなうことができます。準備ができたら、ユーザーはコードの変更内容を Cloud Manager のリモートコードリポジトリにコミットして戻すことができます。
-
