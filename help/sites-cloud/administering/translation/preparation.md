@@ -1,22 +1,21 @@
 ---
 title: 翻訳するコンテンツの準備
 description: 翻訳するコンテンツを準備する方法について説明します。
-feature: Language Copy
+feature: 言語コピー
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: afc577a2-2791-481a-ac77-468011e4302e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 37%
 
 ---
-
 
 # 翻訳するコンテンツの準備 {#preparing-content-for-translation}
 
 通常、多言語の Web サイトは、ある程度の量のコンテンツを複数の言語で提供します。サイトは 1 つの言語でオーサリングされてから、他の言語に翻訳されます。通常、多言語サイトはページのブランチで構成されます。各ブランチには、異なる言語のサイトのページが含まれています。
 
-[WKNDチュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)には、複数の言語の分岐が含まれ、次の構造を使用します。
+[WKNDチュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)には、複数の言語ブランチが含まれ、次の構造を使用します。
 
 ```text
 /content
@@ -49,15 +48,15 @@ ht-degree: 37%
 
 サイトのコンテンツを最初にオーサリングするための言語コピーが言語マスターです。言語マスターは、他の言語に翻訳されるソースです。
 
-サイトの各言語ブランチは言語コピーと呼ばれます。言語コピーのルートページ（言語ルート）では、言語コピー内のコンテンツの言語を識別します。例えば、`/content/wknd/fr`はフランス語のコピーの言語ルートです。 言語コピーでは、ソースサイトの翻訳を実行する際に正しい言語がターゲットになるように、[正しく設定された言語ルート](preparation.md#creating-a-language-root)を使用する必要があります。
+サイトの各言語ブランチは言語コピーと呼ばれます。言語コピーのルートページ（言語ルート）では、言語コピー内のコンテンツの言語を識別します。例えば、`/content/wknd/fr`はフランス語の言語コピーの言語ルートです。 ソースサイトの翻訳の実行時に正しい言語がターゲットになるように、言語コピーは、[正しく設定された言語ルート](preparation.md#creating-a-language-root)を使用する必要があります。
 
 翻訳するサイトを準備するには、次の手順を使用します。
 
-1. 言語マスターの言語ルートを作成します。例えば、英語版のWKNDデモサイトの言語ルートは`/content/wknd/language-masters/en`です。 [言語ルートの作成](preparation.md#creating-a-language-root)の情報に従って言語ルートが正しく設定されていることを確認します。
+1. 言語マスターの言語ルートを作成します。例えば、英語のWKNDデモサイトの言語ルートは`/content/wknd/language-masters/en`です。 [言語ルートの作成](preparation.md#creating-a-language-root)の情報に従って言語ルートが正しく設定されていることを確認してください。
 1. 言語マスターのコンテンツをオーサリングします。
-1. サイトの各言語コピーの言語ルートを作成します。例えば、WKNDサンプルサイトのフランス語コピーは`/content/wknd/language-masters/fr`です。
+1. サイトの各言語コピーの言語ルートを作成します。例えば、WKNDサンプルサイトのフランス語の言語コピーは`/content/wknd/language-masters/fr`です。
 
-翻訳用にコンテンツを準備した後、言語コピーや関連する翻訳プロジェクトに、見つからないページを自動的に作成できます。（「[翻訳プロジェクトの作成](managing-projects.md)」を参照）。AEMでのコンテンツ翻訳プロセスの概要については、「[多言語Webサイト用のコンテンツの翻訳](overview.md)」を参照してください。
+翻訳するコンテンツを準備したら、言語コピーおよび関連する翻訳プロジェクトに、見つからないページを自動的に作成できます。（[翻訳プロジェクトの作成](managing-projects.md)を参照） AEMのコンテンツ翻訳プロセスの概要については、[多言語Webサイトのコンテンツの翻訳](overview.md)を参照してください。
 
 ## 言語ルートの作成 {#creating-a-language-root}
 
@@ -65,19 +64,19 @@ ht-degree: 37%
 
 言語ルートを作成するには、ページを作成し、**Name**&#x200B;プロパティの値としてISO言語コードを使用します。言語コードは、次のいずれかの形式にする必要があります。
 
-* `<language-code>`  — サポートされる言語コードは、ISO-639-1で定義される2文字のコードです。例えば、次のようになり `en`ます。
-* `<language-code>_<country-code>` または `<language-code>-<country-code>`  — サポートされる国コードは、ISO 3166で定義される小文字または大文字の2文字のコードです(例：、、 `en_US` `en_us` `en_GB` `en-gb`、)。
+* `<language-code>`  — サポートされている言語コードは、ISO-639-1で定義されている2文字のコードです(例： `en`)。
+* `<language-code>_<country-code>` また `<language-code>-<country-code>` は — ISO 3166で定義されている小文字または大文字の2文字コード(例： `en_US`、 `en_us`、 `en_GB`、 `en-gb`)がサポートされています。
 
-グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、WKNDサイトのフランス語コピーのルートページには、**Name**&#x200B;プロパティとして`fr`が含まれています。 **Name**&#x200B;プロパティはリポジトリ内のページノードの名前として使用されるので、ページのパス(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)を決定します。
+グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、WKNDサイトのフランス語の言語コピーのルートページの`fr`は、**Name**&#x200B;プロパティとして表示されます。 **Name**&#x200B;プロパティは、リポジトリ内のページノードの名前として使用され、ページのパス(`http://<host>:<4502>/content/wknd/language-masters/fr.html`)を決定します。
 
 1. サイトに移動します。
 1. 言語コピーを作成するサイトをクリックまたはタップします。
 1. 「**作成**」をクリックまたはタップし、「**ページ**」をクリックまたはタップします。
 
-   ![ページの作成](../assets/create-page.png)
+   ![ページを作成](../assets/create-page.png)
 
 1. ページテンプレートを選択し、「**次へ**」をクリックまたはタップします。
-1. **名前**&#x200B;フィールドに、`<language-code>`または`<language-code>_<country-code>`の形式で国コードを入力します。例：`en`、`en_US`、`en_us`、`en_GB`、`en_gb`。 ページのタイトルを入力します。
+1. 「**名前**」フィールドに、国コードを`<language-code>`または`<language-code>_<country-code>`の形式で入力します（例：`en`、`en_US`、`en_us`、`en_GB`、`en_gb`）。 ページのタイトルを入力します。
 
    ![言語ルートページの作成](../assets/create-language-root.png)
 
@@ -85,17 +84,17 @@ ht-degree: 37%
 
 ## 言語ルートのステータスの確認  {#seeing-the-status-of-language-roots}
 
-AEMは、作成された言語ルートのリストを示す&#x200B;**参照**&#x200B;レールを提供します。
+AEMには、作成された言語ルートのリストを表示する&#x200B;**参照**&#x200B;レールが用意されています。
 
 ![言語ルート](../assets/language-roots.png)
 
-[パネルセレクターを使用したページの言語コピーを次の手順表示に従います。](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+[パネルセレクターを使用して、ページの言語コピーを表示する手順は次のとおりです。](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
 1. サイトコンソールで、サイトのページを選択し、「**参照**」をクリックまたはタップします。
 
    ![参照レールを開く](../assets/opening-references-rail.png)
 
-1. 参照レールで、「**言語コピー**」をクリックまたはタップします。 パネルには、Webサイトの言語コピーが表示されます。
+1. 参照レールで、「**言語コピー**」をクリックまたはタップします。 レールには、Webサイトの言語コピーが表示されます。
 
 ## 複数のレベルの言語コピー {#multiple-levels}
 
@@ -131,7 +130,7 @@ AEMは、作成された言語ルートのリストを示す&#x200B;**参照**&#
 
 >[!NOTE]
 >
->1 レベルのみ許可されます。例えば、次のように指定すると`es`ページは言語コピーに解決されません。
+>1 レベルのみ許可されます。例えば、次の例では、`es`ページを言語コピーに解決できません。
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
@@ -142,4 +141,4 @@ AEMは、作成された言語ルートのリストを示す&#x200B;**参照**&#
 
 >[!TIP]
 >
->このような設定では、言語ルートは、言語のISOコードだけでなく、任意のページ名を持つことができます。 AEMは常に最初にパスと名前を確認しますが、ページ名が言語を識別しない場合、AEMはページの`cq:language`プロパティを調べて言語の識別を確認します。
+>このような設定では、言語ルートは、言語のISOコードだけでなく、任意のページ名を持つことができます。 AEMは常に最初にパスと名前を確認しますが、ページ名が言語を識別しない場合、AEMはページの`cq:language`プロパティで言語の識別を確認します。
