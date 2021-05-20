@@ -2,7 +2,6 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-translation-type: tm+mt
 source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
@@ -89,7 +88,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 >[!NOTE]
 >
->すべての環境に同じコードを導入する必要があります。 これは、ステージ環境上の信頼性検証のレベルを実稼動環境でも確実に行うために必要です。 詳しくは、[Runmodes](/help/implementing/deploying/overview.md#runmodes)の節を参照してください。
+>同じコードをすべての環境にデプロイする必要があります。 これは、ステージ環境での信頼性検証のレベルが実稼動環境でも確実におこなわれるようにするために必要です。 詳しくは、[実行モード](/help/implementing/deploying/overview.md#runmodes)の節を参照してください。
 
 
 ### コンテンツパッケージ
@@ -143,7 +142,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 パッケージは、宣言済みのパッケージタイプでマークされる必要があります。
 
-+ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージにOSGiバンドル、OSGi設定を直接含めることはできません。また、[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)を使用することはできません。
++ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには、OSGiバンドル、OSGi設定を直接含めることはできません。また、[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)を使用することはできません。
 + コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
 + コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
 
@@ -206,7 +205,7 @@ Repo Init スクリプトの全語彙は、[Apache Sling Repo Init ドキュメ�
 >
 >完全なスニペットについては、この後の [POM XML スニペット](#xml-repository-structure-package)の節を参照してください。
 
-## コンテナパッケージへのサブパッケージの埋め込み {#embeddeds}
+## コンテナパッケージへのサブパッケージの埋め込み{#embeddeds}
 
 コンテンツパッケージまたはコードパッケージは、特別な「サイドカー」フォルダーに格納され、FileVault Maven プラグインの `<embeddeds>` 設定を使用して、AEM オーサーと AEM パブリッシュのどちらか一方または両方へのインストールの対象とすることができます。`<subPackages>` 設定は使用しないでください。
 
