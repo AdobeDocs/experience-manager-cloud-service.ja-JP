@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.5.0 のリリースノート
 description: Experience Manager 2020.5.0 のリリースノート
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service 2020.5.0 のリリースノート {#release-notes}
 
@@ -49,5 +48,3 @@ AEM as a Cloud Service リリース 2020.5.0 の Cloud Manager の新機能と�
 * Safari で、環境を作成ダイアログが正しくレンダリングされていませんでした。
 * 概要ページの一部のカードで、エンティティ名が正しく表示されていませんでした。
 * 場合によっては、「イメージのビルド」で顧客パッケージを正常にダウンロードできないことがありました。
-
-
