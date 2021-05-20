@@ -1,7 +1,6 @@
 ---
 title: 設定と設定ブラウザー
 description: AEM 設定と、AEM でのワークスペース設定の管理方法について理解します。
-translation-type: tm+mt
 source-git-commit: 47d2ff211b5c00457793dc7bd321df1139cfc327
 workflow-type: tm+mt
 source-wordcount: '1496'
