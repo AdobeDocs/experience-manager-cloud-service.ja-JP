@@ -2,10 +2,9 @@
 title: サポートされているファイル形式と MIME タイプ
 description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service] でサポートされているファイル形式と MIME タイプ。'
 contentOwner: AG
-feature: Asset Management,Renditions
+feature: アセット管理，レンディション
 role: Business Practitioner,Administrator
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-translation-type: tm+mt
 source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
 workflow-type: tm+mt
 source-wordcount: '821'
@@ -39,17 +38,17 @@ ht-degree: 98%
 
 | ファイル形式 | サムネールの生成 | フルテキスト抽出 | メタデータ抽出 | 幅/高さ |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
-| AI | kid | - | kid | kid |
-| Collage | - | - | kid | - |
-| DN | kid | - | kid | kid |
-| Ideas | - | - | kid | - |
-| INDD | kid | - | kid | ✓ * |
-| INDT | - | - | kid | - |
-| PDF | kid | kid | kid | kid |
-| Proto | - | - | kid | - |
-| PSB | kid | - | kid | kid |
-| PSD | kid | - | kid | kid |
-| XD | kid | - | kid | kid |
+| AI | ✓ | - | ✓ | ✓ |
+| Collage | - | - | ✓ | - |
+| DN | ✓ | - | ✓ | ✓ |
+| Ideas | - | - | ✓ | - |
+| INDD | ✓ | - | ✓ | ✓ * |
+| INDT | - | - | ✓ | - |
+| PDF | ✓ | ✓ | ✓ | ✓ |
+| Proto | - | - | ✓ | - |
+| PSB | ✓ | - | ✓ | ✓ |
+| PSD | ✓ | - | ✓ | ✓ |
+| XD | ✓ | - | ✓ | ✓ |
 
 \* [!DNL Adobe InDesign] ファイル（INDD）の場合、レンディションのサイズは INDD ファイルに埋め込まれたプレビューで決まります。より大きなレンディションを埋め込むには、[!DNL InDesign] で環境の設定をおこないます（**[!UICONTROL 環境設定／ファイル管理／ドキュメントのプレビュー画像を常に保存／プレビューサイズ]**）。
 
@@ -57,29 +56,29 @@ ht-degree: 98%
 
 | ファイル形式 | サムネールの生成 | メタデータ抽出 | 幅/高さ | 切り抜き |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
-| BMP | kid | - | kid | kid |
-| EPS | - | kid | - | - |
-| GIF | kid | kid | kid | kid |
-| JPEG | kid | kid | kid | kid |
-| PNG | kid | kid | kid | kid |
-| RGB | kid | kid | kid | kid |
-| RGBA | kid | kid | kid | kid |
-| SGI | kid | kid | kid | kid |
-| SVG | kid | - | kid | kid |
-| TIFF | kid | kid | kid | - |
+| BMP | ✓ | - | ✓ | ✓ |
+| EPS | - | ✓ | - | - |
+| GIF | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ |
+| PNG | ✓ | ✓ | ✓ | ✓ |
+| RGB | ✓ | ✓ | ✓ | ✓ |
+| RGBA | ✓ | ✓ | ✓ | ✓ |
+| SGI | ✓ | ✓ | ✓ | ✓ |
+| SVG | ✓ | - | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | - |
 
 ## [!DNL Dynamic Media] での画像形式 {#image-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | kid | - | - | - | - |
-| EPS | kid | kid | kid | kid | kid |
-| GIF | kid | kid | kid | kid | kid |
-| JPEG | kid | kid | kid | kid | kid |
-| PICT | kid | - | - | - | - |
-| PNG | kid | kid | kid | kid | kid |
-| PSD   ‡ | kid | - | - | - | - |
-| TIFF | kid | kid | kid | kid | kid |
+| BMP | ✓ | - | - | - | - |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PICT | ✓ | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PSD   ‡ | ✓ | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ‡ 結合された画像は PSD ファイルから抽出されます。この画像は [!DNL Adobe Photoshop] によって生成され、PSD ファイルに含まれます。設定によって、結合された画像は実際の画像である場合とそうでない場合があります。
 
@@ -96,48 +95,48 @@ ht-degree: 98%
 
 次の 3D 形式がサポートされています。
 
-「[Dynamic Media](/help/assets/dynamic-media/assets-3d.md)の3Dアセットの操作」も参照してください。
+[Dynamic Mediaでの3Dアセットの操作](/help/assets/dynamic-media/assets-3d.md)も参照してください。
 
 | 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3D プレビュー | Dynamic Media の配信 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | kid | kid | kid | - | kid | kid | - | - |
-| gLB | kid | kid | kid | kid | kid | - | kid | kid |
-| gLTF | kid | kid | kid | - | kid | - | kid | - |
-| OBJ | kid | kid | kid | kid | kid | - | kid | kid |
-| STL | kid | kid | kid | kid | kid | - | kid | kid |
-| USDz | kid | kid | kid | kid | kid | - | - | kid |
+| DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 
 ## [!DNL Camera RAW] 形式 {#camera-raw-formats}
 
 | ファイル形式 | サムネールの生成 | メタデータ抽出 | 幅/高さ |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3FR | kid | kid | kid |
-| ARW | kid | kid | kid |
-| CR2 | kid | kid | kid |
-| CR3 | kid | kid | kid |
-| CRW | kid | kid | kid |
-| DCR | kid | kid | kid |
-| DNG | kid | kid | kid |
-| ERF | kid | kid | kid |
-| FFF | kid | kid | kid |
-| GPR | kid | kid | kid |
-| IIQ | kid | kid | kid |
-| KDC | kid | kid | kid |
-| MEF | kid | kid | kid |
-| MFW | kid | kid | kid |
-| MOS | kid | kid | kid |
-| MRW | kid | kid | kid |
-| NEF | kid | kid | kid |
-| NRW | kid | kid | kid |
-| ORF | kid | kid | kid |
-| PEF | kid | kid | kid |
-| RAF | kid | kid | kid |
-| RAW | kid | kid | kid |
-| RW2 | kid | kid | kid |
-| RWL | kid | kid | kid |
-| SRF | kid | kid | kid |
-| SRW | kid | kid | kid |
-| X3F | kid | kid | kid |
+| 3FR | ✓ | ✓ | ✓ |
+| ARW | ✓ | ✓ | ✓ |
+| CR2 | ✓ | ✓ | ✓ |
+| CR3 | ✓ | ✓ | ✓ |
+| CRW | ✓ | ✓ | ✓ |
+| DCR | ✓ | ✓ | ✓ |
+| DNG | ✓ | ✓ | ✓ |
+| ERF | ✓ | ✓ | ✓ |
+| FFF | ✓ | ✓ | ✓ |
+| GPR | ✓ | ✓ | ✓ |
+| IIQ | ✓ | ✓ | ✓ |
+| KDC | ✓ | ✓ | ✓ |
+| MEF | ✓ | ✓ | ✓ |
+| MFW | ✓ | ✓ | ✓ |
+| MOS | ✓ | ✓ | ✓ |
+| MRW | ✓ | ✓ | ✓ |
+| NEF | ✓ | ✓ | ✓ |
+| NRW | ✓ | ✓ | ✓ |
+| ORF | ✓ | ✓ | ✓ |
+| PEF | ✓ | ✓ | ✓ |
+| RAF | ✓ | ✓ | ✓ |
+| RAW | ✓ | ✓ | ✓ |
+| RW2 | ✓ | ✓ | ✓ |
+| RWL | ✓ | ✓ | ✓ |
+| SRF | ✓ | ✓ | ✓ |
+| SRW | ✓ | ✓ | ✓ |
+| X3F | ✓ | ✓ | ✓ |
 
 ## ドキュメント形式 {#document-formats}
 
@@ -145,61 +144,61 @@ ht-degree: 98%
 
 | ファイル形式 | サムネールの生成 | フルテキスト抽出 | 幅/高さ | メタデータの管理 | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | kid | kid |
-| DOCX | kid | kid | kid | kid | kid |
-| EPUB | - | kid | - | - | - |
-| HTML | - | kid | - | kid | kid |
-| ODF | kid | kid | kid | - | - |
-| ODM | kid | kid | kid | - | - |
-| ODP | kid | kid | kid | - | - |
-| ODS | kid | kid | kid | - | - |
-| ODT | kid | kid | kid | kid | kid |
-| OFG | kid | kid | kid | - | - |
-| PDF | kid | kid | kid | kid | kid |
-| PPT | - | - | - | kid | kid |
-| PPTX | kid | kid | kid | kid | kid |
-| PS | - | - | kid | - | - |
-| RTF | - | kid | - | kid | kid |
-| TXT | - | kid | - | kid | kid |
-| XLS | - | - | - | kid | kid |
-| XLSX | kid | kid | kid | kid | kid |
-| XML | - | kid | - | - | - |
+| DOC | - | - | - | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ |
+| ODF | ✓ | ✓ | ✓ | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
+| OFG | ✓ | ✓ | ✓ | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ |
+| TXT | - | ✓ | - | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - |
 
 ## [!DNL Dynamic Media] でのドキュメント形式 {#document-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| 愛 | kid | - | - | - | - |
-| INDD | kid | - | - | - | - |
-| PDF | kid | kid | kid | kid | kid |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## ビデオ形式 {#video-formats}
 
 | ファイル形式 | サムネールの生成 | メタデータ抽出 | 幅/高さ |
 | ----------- | -------------------- | ------------------- | ------------ |
-| 3G2 | - | kid | - |
-| 3GP | - | kid | - |
-| AVI | kid | kid | kid |
-| DIVX | kid | - | kid |
-| F4V | kid | kid | kid |
-| FLV | kid | kid | kid |
-| M2T | kid | - | kid |
-| M2TS | kid | - | kid |
-| M2V | kid | - | kid |
-| M4V | kid | kid | kid |
-| MKV | kid | - | kid |
-| MOV | kid | kid | kid |
-| MP4 | kid | kid | kid |
-| MPEG | kid | kid | kid |
-| MPG | kid | kid | kid |
-| MTS | kid | - | kid |
-| MXF | kid | - | kid |
-| OGV | kid | - | kid |
-| QT | kid | - | kid |
-| R3D | - | kid | kid |
-| SWF | kid | - | kid |
-| WebM | kid | - | kid |
-| WMV | kid | kid | kid |
+| 3G2 | - | ✓ | - |
+| 3GP | - | ✓ | - |
+| AVI | ✓ | ✓ | ✓ |
+| DIVX | ✓ | - | ✓ |
+| F4V | ✓ | ✓ | ✓ |
+| FLV | ✓ | ✓ | ✓ |
+| M2T | ✓ | - | ✓ |
+| M2TS | ✓ | - | ✓ |
+| M2V | ✓ | - | ✓ |
+| M4V | ✓ | ✓ | ✓ |
+| MKV | ✓ | - | ✓ |
+| MOV | ✓ | ✓ | ✓ |
+| MP4 | ✓ | ✓ | ✓ |
+| MPEG | ✓ | ✓ | ✓ |
+| MPG | ✓ | ✓ | ✓ |
+| MTS | ✓ | - | ✓ |
+| MXF | ✓ | - | ✓ |
+| OGV | ✓ | - | ✓ |
+| QT | ✓ | - | ✓ |
+| R3D | - | ✓ | ✓ |
+| SWF | ✓ | - | ✓ |
+| WebM | ✓ | - | ✓ |
+| WMV | ✓ | ✓ | ✓ |
 
 ## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式 {#video-dynamic-media-transcoding}
 
@@ -233,5 +232,5 @@ ht-degree: 98%
 >[!MORELIKETHIS]
 >
 >* [アセットマイクロサービスを使用したアセット処理](asset-microservices-overview.md)
->* [テキストベースのアセットのスマートタグ付けに対応しているファイル形式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+* [テキストベースのアセットのスマートタグ付けに対応しているファイル形式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 
