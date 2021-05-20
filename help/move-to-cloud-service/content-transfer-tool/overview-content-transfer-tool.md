@@ -14,9 +14,9 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="概要"
->abstract="コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたはAMS）からターゲットAEMCloud Serviceインスタンスに移動するのに使用できます。 プリンシパル（ユーザーやグループ）も自動的に転送されます。"
+>abstract="コンテンツ転送ツールは、Adobeが開発したツールで、既存のコンテンツをソースAEMインスタンス（オンプレミスまたはAMS）からターゲットAEMCloud Serviceインスタンスに移動するために使用できます。 プリンシパル（ユーザーやグループ）も自動的に転送されます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="抽出プロセス"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="取り込みプロセス"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="インジェストプロセス"
 
 コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。
 
@@ -38,7 +38,7 @@ ht-degree: 77%
 
 *移行セット*&#x200B;には次の特性があります。
 
-* コンテンツ転送アクティビティ中に一度に10個までのマイグレーションセットを作成し、管理できます。
+* コンテンツ転送中に一度に作成および管理できる移行セットは最大10個です。
 * 各移行セットには、一意の名前を付ける必要があります。
 * 移行セットが 30 日以上非アクティブになっている場合は、自動的に削除されます。
 * 移行セットは、作成すると常に特定の環境に関連付けられます。同じ環境のオーサーまたはパブリッシュインスタンスにのみ取り込むことができます。
@@ -60,9 +60,9 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_guidelines"
 >title="ガイドラインとベストプラクティス"
->abstract="リビジョンのクリーンアップタスク、ディスク容量の考慮事項など、コンテンツ転送ツールの使用に関するガイドラインとベストプラクティスを確認します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="コンテンツ転送ツールを使用する際の重要な考慮事項"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="ユーザーマッピングツールを使用する際の重要な考慮事項"
+>abstract="リビジョンクリーンアップタスク、ディスク容量に関する考慮事項など、コンテンツ転送ツールを使用する際のガイドラインとベストプラクティスを確認します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="ユーザーマッピングツール使用時の重要な考慮事項"
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
@@ -81,4 +81,4 @@ ht-degree: 77%
    * *node store size*：セグメントストアディレクトリのサイズまたは MongoDB データベースのサイズ。
 したがって、セグメントストアのサイズが 20 GB の場合、必要な空きディスク容量は 94 GB になります。
 
-* コンテンツのトップアップをサポートするには、コンテンツ転送アクティビティ全体で移行セットを維持する必要があります。 コンテンツ転送アクティビティ中に一度に10個までの移行セットを作成および管理できるので、移行セットが不足しないように、それに応じてコンテンツリポジトリを分割することをお勧めします。
+* コンテンツの追加をサポートするには、コンテンツ転送アクティビティ全体を通じて移行セットを維持する必要があります。 コンテンツ転送中に一度に10個の移行セットを作成および管理できるので、移行セットが不足しないようにコンテンツリポジトリを分割することをお勧めします。
