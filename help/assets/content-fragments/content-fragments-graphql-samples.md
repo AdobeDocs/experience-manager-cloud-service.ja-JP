@@ -1,27 +1,26 @@
 ---
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
-description: AEMでGraphQLを使用し、サンプルコンテンツとクエリを調べることで、コンテンツを無理に処理する方法を学びます。
-feature: Content Fragments,GraphQL API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+description: GraphQLをAEMと共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を学びます。
+feature: コンテンツフラグメント，GraphQL API
+exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 94%
 
 ---
 
-
 # AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
-AEMでGraphQLを使用し、サンプルコンテンツとクエリを調べることで、コンテンツを無理に処理する方法を学びます。
+GraphQLをAEMと共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を学びます。
 
 >[!NOTE]
 >
 >このページと併せて、次の記事も参照してください。
 >
 >* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)
->* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
->* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 GraphQL クエリの基本と、AEM コンテンツフラグメントとの連携方法を学ぶには、いくつかの実践的な例が参考になります。
@@ -38,14 +37,11 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 クエリの作成とサンプル結果については、これらのサンプルクエリを参照してください。
 
 >[!NOTE]
->
->インスタンスによっては、[AEM GraphQL API に付属している Graph *i* QL インターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)に直接アクセスして、クエリの送信とテストをおこなうことができます。
->
->例：`http://localhost:4502/content/graphiql.html`
+インスタンスによっては、[AEM GraphQL API に付属している Graph *i* QL インターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)に直接アクセスして、クエリの送信とテストをおこなうことができます。
+例：`http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
->
->サンプルクエリは、[GraphQL で使用するコンテンツフラグメント構造のサンプル](#content-fragment-structure-graphql)に基づいています。
+サンプルクエリは、[GraphQL で使用するコンテンツフラグメント構造のサンプル](#content-fragment-structure-graphql)に基づいています。
 
 ### サンプルクエリ - 使用可能なすべてのスキーマとデータタイプ {#sample-all-schemes-datatypes}
 
@@ -606,9 +602,9 @@ query {
 }
 ```
 
-### サンプルクエリ- `_path`が特定のプレフィックス{#sample-wknd-all-adventures-cycling-path-filter}で始まるすべてのアドベンチャー
+### サンプルクエリ — `_path`が特定のプレフィックス{#sample-wknd-all-adventures-cycling-path-filter}で始まるすべてのアドベンチャー
 
-`_path`開始に特定のプレフィックス(`/content/dam/wknd/en/adventures/cycling`)を付けるすべての`adventures`。
+`_path`が特定のプレフィックス(`/content/dam/wknd/en/adventures/cycling`)で始まるすべての`adventures`。
 
 **サンプルクエリ**
 
@@ -1104,8 +1100,7 @@ query {
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
->
->結果は膨大な量になる可能性があるので、ここでは再現されていません。
+結果は膨大な量になる可能性があるので、ここでは再現されていません。
 
 ### 特定モデルのコンテンツフラグメントのうち指定のプロパティを持つものをすべて取得するサンプルクエリ {#sample-wknd-all-model-properties}
 
@@ -1250,8 +1245,7 @@ query {
    * その中の、参照されている（ネストされた）フラグメントのパスと作成者
 
 >[!NOTE]
->
->フィールド `referencearticle` のデータタイプは `fragment-reference` です。
+フィールド `referencearticle` のデータタイプは `fragment-reference` です。
 
 **サンプルクエリ**
 
@@ -1278,8 +1272,7 @@ query {
    * 特定のモデルタイプ `article` および `adventure` の他のフラグメントへのフラグメント参照を含むもの
 
 >[!NOTE]
->
->フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。
+フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。
 
 ```xml
 {
@@ -1353,8 +1346,7 @@ query {
 次のクエリは、すべての `attachments`（`content-reference` タイプの特定のフィールド（サブグループ））を返します。
 
 >[!NOTE]
->
->フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
+フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
 
 ```xml
 {
@@ -1395,8 +1387,7 @@ query {
    * その中の RTE インライン参照
 
 >[!NOTE]
->
->RTE インライン参照は、`_references` 内に含まれます。
+RTE インライン参照は、`_references` 内に含まれます。
 
 **サンプルクエリ**
 
@@ -1535,7 +1526,7 @@ query {
 |--- |--- |--- |
 | name（会社名） | 1 行のテキスト |  |
 | ceo（最高経営責任者） | フラグメント参照（1 つ） | [Person](#model-person) |
-| employees（従業員） | フラグメント参照（複数フィールド） | [人](#model-person) |
+| employees（従業員） | フラグメント参照（複数フィールド） | [ユーザー](#model-person) |
 
 #### Person {#model-person}
 
@@ -1597,7 +1588,7 @@ query {
 | id | title |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | ゲームスター |
+|  GS | 配偶星 |
 |  OSC | Oscar |
 
 #### 市区町村{#fragment-city}
