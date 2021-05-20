@@ -4,7 +4,6 @@ description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用し
 feature: スマートタグ，タグ付け
 role: Administrator,Business Practitioner
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-translation-type: tm+mt
 source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
 workflow-type: tm+mt
 source-wordcount: '1186'
@@ -138,5 +137,5 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 >[!MORELIKETHIS]
 >
 >* [スマートタグとアセット検索の管理](smart-tags.md#manage-smart-tags-and-searches)
->* [スマートタグサービスのトレーニングと画像のタグ付け](smart-tags.md)
+* [スマートタグサービスのトレーニングと画像のタグ付け](smart-tags.md)
 
