@@ -1,14 +1,13 @@
 ---
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
-translation-type: tm+mt
-source-git-commit: 625e56efdab2f41026988fb90b72c31ff876db57
+exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 97%
 
 ---
-
 
 # エクスペリエンスフラグメント{#experience-fragments}
 
@@ -96,7 +95,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
-これにより、ユーザーは、エクスペリエンスフラグメントを/content/experience-fragments内に 
+これにより、ユーザーは、 /content/experience-fragmentsに 
 `cq:allowedTemplates` このフォルダーのプロパティには、で始まる名前を持つすべてのテンプレートが含まれ `experience-fragment`ます。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
@@ -289,8 +288,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 このメソッドは入力として次のパラメーターを受け取ります。
 
-* `link`
- 
+* `link`  
 `String` 現在処理中のリンクの表現。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`：
