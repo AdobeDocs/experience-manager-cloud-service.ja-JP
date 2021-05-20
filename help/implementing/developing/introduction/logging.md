@@ -1,8 +1,7 @@
 ---
-title: Cloud ServiceとしてのAEMのログ
-description: 中央ログサービスのグローバルパラメーターの設定方法、個々のサービスの固有の設定、またはAEMでCloud Serviceとしてデータログを要求する方法について説明します。
+title: AEM as aCloud Serviceのログ
+description: 中央のログサービスのグローバルパラメーター、個々のサービスに固有の設定、AEM as aCloud Serviceでのデータログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-translation-type: tm+mt
 source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
 workflow-type: tm+mt
 source-wordcount: '2332'
@@ -10,7 +9,7 @@ ht-degree: 94%
 
 ---
 
-# Cloud Service{#logging-for-aem-as-a-cloud-service}としてAEMにログ記録
+# AEMのCloud Service{#logging-for-aem-as-a-cloud-service}としてのログ
 
 AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能です。
 
@@ -121,7 +120,7 @@ AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定�
 </tr>
 <tr>
 <td>ログレベル</td>
-<td>DEBUG</td>
+<td>デバッグ</td>
 </tr>
 <tr>
 <td>スレッド</td>
@@ -381,7 +380,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>ユーザーエージェント</td>
-<td>"Mozilla/5.0 (Macintosh;Intel Mac OS X 10_15_4)AppleWebKit/537.36 （KHTML、Geckoなど） Chrome/81.0.4044.122 Safari/537.36"</td>
+<td>"Mozilla/5.0 (Macintosh;Intel Mac OS X 10_15_4) AppleWebKit/537.36（GeckoなどKHTML）Chrome/81.0.4044.122 Safari/537.36インチ</td>
 </tr>
 </tbody>
 </table>
@@ -599,11 +598,11 @@ Splunk に送信されるログに関連付けられるネットワーク帯域�
 >
 >サンドボックスプログラム環境の Splunk 転送はサポートされていません。
 
-最初のリクエストに、stage/prod環境に加えて、有効にする必要がある開発環境がすべて含まれていることを確認してください。
+最初のリクエストに、ステージ環境/実稼動環境に加えて、有効にする必要があるすべての開発環境が含まれていることを確認する必要があります。
 
-最初の要求の後に新たに作成された開発環境がSplunk転送を行うもので、有効にしていない場合は、追加の要求を行う必要があります。
+最初のリクエストの後に作成された新しい開発環境で、Splunk転送が有効になっていない場合は、追加のリクエストを実行する必要があります。
 
-また、開発環境がリクエストされた場合、リクエストに含まれていない他の開発環境や、サンドボックス環境でさえSplunk転送が有効になり、Splunkインデックスを共有する可能性があります。 ユーザーは`aem_env_id`フィールドを使用して、これらの環境を区別できます。
+また、開発環境がリクエストされた場合、リクエストに含まれていない他の開発環境やサンドボックス環境でもSplunk転送が有効になり、Splunkインデックスが共有される可能性があります。 お客様は、`aem_env_id`フィールドを使用してこれらの環境を区別できます。
 
 以下に、カスタマーサポートへの依頼サンプルを示します。
 
