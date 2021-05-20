@@ -3,7 +3,6 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: デプロイ
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-translation-type: tm+mt
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '3334'
@@ -13,7 +12,7 @@ ht-degree: 94%
 
 # AEM as a Cloud Service へのデプロイ {#deploying-to-aem-as-a-cloud-service}
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Managed Services ソリューション上の AEM の場合と同様です。開発者はコードを作成しローカルでテストします。コードはその後、リモートの AEM as a Cloud Service 環境にプッシュされます。Cloud Manager（Managed Services のオプションのコンテンツ配信ツール）が必要です。これが、AEM as a Cloud Service 環境にコードをデプロイするための唯一のメカニズムになりました。
 
@@ -50,7 +49,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、クラウド環境のパッケージマネージャーでパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージはすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
 
-AEM用にCloud Serviceアプリケーションとして書かれたコンテンツパッケージは、不変コンテンツと可変コンテンツを明確に区切る必要があり、Cloud Managerは可変コンテンツのみをインストールし、次のようなメッセージを出力します。
+AEM as a Contentアプリケーション用に記述されたコンテンツパッケージは、不変コンテンツと可変コンテンツを明確に分離する必要があり、Cloud Managerは可変コンテンツのみをインストールし、次のようなメッセージを出力します。
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -101,9 +100,9 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。このドキュメントには、インストールフックに関する情報が含まれています。このフックには、ユーザーによる実行が許可されています)。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。このドキュメントには、ユーザーが実行できるインストールフックが含まれています。
 
-`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5で行われ、推奨されるプロジェクト再構築に関する詳細は、[AEM 6.5のドキュメントを参照してください。](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5でおこなわれ、推奨されるプロジェクト再構築の詳細については、[AEM 6.5のドキュメントを参照してください。](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 >[!NOTE]
 > コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、パッケージマネージャーを使用して手動でインストールする必要があります。
@@ -112,7 +111,7 @@ Cloud Manager で可変リポジトリにデプロイされるコンテンツ、
 
 サードパーティパッケージが含まれている場合は、それらが AEM as a Cloud Service と互換性があるかどうかを検証する必要があります。互換性がない場合は、それらのパッケージを組み込むとデプロイメントエラーが発生します。
 
-上記のように、既存のコードベースを使用するお客様は、[AEM 6.5ドキュメントで説明されている6.5リポジトリの変更に必要なリストラの実行に従う必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)
+前述のように、コードベースが既にある場合は、[AEM 6.5のドキュメントに記載されている6.5リポジトリの変更に伴うリポジトリ再構築の演習に準拠する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)
 
 ## repoinit {#repoinit}
 
@@ -166,8 +165,8 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Package Manager — 可変コンテンツパッケージの移行"
->abstract="実稼動環境の問題をデバッグするために、実稼動環境からステージング環境への特定のコンテンツのインポート、AEMクラウド環境への小さなコンテンツパッケージの転送など、コンテンツパッケージを「1つ」としてインストールする使用例を探します。"
+>title="パッケージマネージャー — 可変コンテンツパッケージの移行"
+>abstract="パッケージマネージャーの使用例を参照して、実稼動環境での問題のデバッグ、オンプレミス環境からAEM Cloud環境への小さなコンテンツパッケージの転送などのために、特定のコンテンツを実稼動環境からステージング環境に読み込むなど、コンテンツパッケージを「1回限り」としてインストールします。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="コンテンツ転送ツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境でパッケージマネージャーを使用できます。
