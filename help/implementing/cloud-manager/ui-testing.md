@@ -2,7 +2,6 @@
 title: UI テスト - Cloud Services
 description: UI テスト - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '1087'
@@ -20,8 +19,8 @@ ht-degree: 96%
 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。Docker イメージは、標準ツールを使用して作成できますが、実行時には特定の規則に従う必要があります。Docker イメージを実行すると、Selenium サーバーが自動的にプロビジョニングされます。以下に説明する実行時規則に従うと、テストコードが Selenium サーバーにもテスト対象の AEM インスタンスにもアクセスできます。
 
 >[!NOTE]
-> 2021年2月10日より前に作成されたステージパイプラインと実稼働パイプラインを更新して、このページで説明するUIテストを使用する必要があります。
-> パイプラインの設定については、[CI-CDパイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)を参照してください。
+> UIテストを使用するには、このページで説明するように、2021年2月10日より前に作成されたステージングパイプラインと実稼動パイプラインを更新する必要があります。
+> パイプラインの設定について詳しくは、[CI-CDパイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)を参照してください。
 
 ## UI テストの作成 {#building-ui-tests}
 
