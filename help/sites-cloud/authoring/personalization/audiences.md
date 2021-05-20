@@ -1,14 +1,13 @@
 ---
 title: オーディエンスの管理
 description: オーディエンスコンソールを使用して、Adobe Target アカウント用のオーディエンスを作成、整理および管理したり、ContextHub 用のセグメントを管理したりできます。
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 100%
 
 ---
-
 
 # オーディエンスの管理{#managing-audiences}
 
