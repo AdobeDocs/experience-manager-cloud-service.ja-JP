@@ -1,14 +1,13 @@
 ---
 title: AEM におけるヘッドフルとヘッドレス
 description: AEMプロジェクトはヘッドフルモデルでもヘッドレスモデルで実装できますが、二者択一ではありません。AEM は、1 つのプロジェクトで両方のモデルのメリットを活用できる柔軟性を備えています。
-translation-type: tm+mt
-source-git-commit: 772717b7ad3baa17a58e251c128663035eb89931
+exl-id: 709850ca-7757-47ab-9625-f411121cde2c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 100%
 
 ---
-
 
 # AEM におけるヘッドフルとヘッドレス {#headful-headless}
 
