@@ -1,14 +1,13 @@
 ---
 title: AEM コネクタの実装
 description: AEM コネクタの実装
-translation-type: tm+mt
-source-git-commit: b77113ccc55f2063c684d49e2babdd7563b9d6fc
+exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
-
 
 AEM コネクタの実装
 =============================
@@ -62,7 +61,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 
 さらに、`/libs` にコードを書き込むのはアドビだけで、ユーザーとパートナーは `/apps` にコードを書き込みます。
 
-既存のコネクタの場合、一度 `/etc` に配置した設定を他の最上位フォルダー（`/conf` など）に移動するには、コネクタのリファクタリングも必要になる可能性があります。この再構築はAEM 6.5の一部として行われ、[AEM 6.5ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)で説明されています。
+既存のコネクタの場合、一度 `/etc` に配置した設定を他の最上位フォルダー（`/conf` など）に移動するには、コネクタのリファクタリングも必要になる可能性があります。この再構築はAEM 6.5の一部としておこなわれ、 AEM 6.5のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)で説明されています。[
 
 複数のコネクタを持つユーザー向けにクリーンなリポジトリ構造を推進するには、コネクタコードの大部分を `/apps/connectors/<vendor>` の配下に格納することをお勧めします。
 
