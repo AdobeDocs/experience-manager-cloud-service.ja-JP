@@ -1,14 +1,13 @@
 ---
 title: Sling アダプターの使用
 description: Sling には、Adaptable インターフェイスを実装するオブジェクトを適切に変換するアダプターパターンが用意されています
-translation-type: tm+mt
-source-git-commit: 639bf1add463c0e62982a44ecdca834e2c7c53fe
+exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2234'
 ht-degree: 100%
 
 ---
-
 
 # Sling アダプターの使用 {#using-sling-adapters}
 
@@ -72,7 +71,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
 
 最初の例では、javadocs に何の `adaptTo-targets` が可能かが示されます。ただし、JCR ベースのリソースなどの特定のサブクラスでは、多くの場合、これは不可能です。後者の場合、`AdapterFactory` の実装は通常、バンドルのプライベートクラスの一部なので、クライアント API で公開されず、Javadoc にも表示されません。理論的には、[OSGi](/help/implementing/deploying/configuring-osgi.md) サービスランタイムからすべての `AdapterFactory` 実装にアクセスし、「アダプタブル」（ソースとターゲット）の設定を調べることは可能ですが、相互にマッピングすることはできません。最終的には、これは内部ロジックに依存し、ドキュメントに記載する必要があります。従って、参照はこちらです。
 
-## リファレンス {#reference}
+## 参照 {#reference}
 
 ### Sling {#sling}
 
@@ -276,7 +275,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
  </tbody>
 </table>
 
-#### WCM  {#wcm}
+#### WCM {#wcm}
 
 **[Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html)** は次の項目に適応します。
 
@@ -340,7 +339,7 @@ null のケースを問題なく処理することが重要です。JSP レン�
 |---|---|
 | [ReplicationStatus](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/replication/ReplicationStatus.html) | ユーザーまたはホームノードのレプリケーションステータスを返します。 |
 
-#### DAM  {#dam}
+#### DAM {#dam}
 
 **Asset** は次の項目に適応します。
 
@@ -358,6 +357,6 @@ null のケースを問題なく処理することが重要です。JSP レン�
 | [ノード](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | タグのノード。 |
 | ... | タグのリソースが適応可能なすべての項目。 |
 
-#### その他  {#other}
+#### その他 {#other}
 
 さらに、Sling、JCR、OCM では、カスタム OCM（[`AdapterFactory`](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)Object Content Mapping）オブジェクト用の [](https://jackrabbit.apache.org/object-content-mapping.html) も提供しています。
