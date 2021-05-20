@@ -1,14 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。'
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート {#release-notes}
 
@@ -28,7 +27,7 @@ ht-degree: 100%
 
 * **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：ContextHub オファーターゲティング機能に使用するオーディエンスセグメントを容易に整理、検索、選択するためのオーディエンスフォルダーを作成できます。
 
-## [!DNL Adobe Experience Manager Assets] Cloud Serviceとして  {#assets}
+## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
 
 * **[!DNL Adobe Sensei]を活用したビデオスマートタグ**：AI モデルを活用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報を利用して適切なエクスペリエンスを顧客に提供することに多くの時間を割くことができます。[ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
 
