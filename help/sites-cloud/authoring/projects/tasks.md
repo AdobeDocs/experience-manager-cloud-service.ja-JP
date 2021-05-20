@@ -1,14 +1,13 @@
 ---
 title: タスクの操作
 description: タスクは、コンテンツで実行するべき作業項目を表し、プロジェクトで現在のタスクの完了レベルを判断するために使用されます。
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 
 ---
-
 
 # タスクの操作 {#working-with-tasks}
 
@@ -71,7 +70,7 @@ ht-degree: 100%
 
 1. 「**作成**」をタップまたはクリックします。
 
-## インボックス内でのタスクの使用 {#working-with-tasks-in-the-inbox}
+## インボックス内でのタスクの使用  {#working-with-tasks-in-the-inbox}
 
 タスクにアクセスするもう 1 つの方法は、インボックスからアクセスすることです。インボックスからコンテンツを開いて、必要な変更を実行することができます。変更が完了したら、タスクのステータスを「完了」に変更します。所属するユーザーグループにタスクが割り当てられた場合も、そのタスクがインボックスに表示されます。この場合、グループのいずれかのメンバーが作業を実行し、タスクを完了することができます。
 
