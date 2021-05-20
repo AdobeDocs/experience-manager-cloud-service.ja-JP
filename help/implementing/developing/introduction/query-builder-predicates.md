@@ -1,14 +1,13 @@
 ---
 title: Query Builder の述語リファレンス
 description: Query Builder API の述語リファレンスです。
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2219'
 ht-degree: 99%
 
 ---
-
 
 # Query Builder の述語リファレンス {#query-builder-predicate-reference}
 
@@ -140,7 +139,7 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601 形式�
 * **`upperOperation`** - `<`（より前）または `<=`（以前）。`upperBound` に適用されます。デフォルトは `<` です
 * **`timeZone`** - ISO-8601 の日付文字列で指定されていない場合に使用するタイムゾーンの ID。デフォルトは、システムのデフォルトのタイムゾーンです。
 
-### excludepaths  {#excludepaths}
+### excludepaths {#excludepaths}
 
 パスが正規表現に一致するノードを結果から除外します。
 
