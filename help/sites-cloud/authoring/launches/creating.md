@@ -1,14 +1,13 @@
 ---
 title: ローンチの作成
 description: 今後のアクティベートのために既存の Web ページの新しいバージョンを更新できるように、ローンチを作成できます。
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 98%
 
 ---
-
 
 # ローンチの作成 {#creating-launches}
 
@@ -84,7 +83,7 @@ ht-degree: 98%
    * **ローンチタイトル**：ローンチの名前。作成者にとって意味のある名前にしてください。
    * **既存のコンテンツを使用**：元のコンテンツを使用してローンチを作成します。
    * **新しいテンプレートを使用してページを置き換える**：詳しくは、[新しいテンプレートでのローンチの作成](#create-launch-with-new-template)を参照してください。
-   * **ソースページのライブデータを継承**：ソースページに変更があったときにローンチページのコンテンツを自動的に更新する場合は、このオプションを選択します。このオプションは、起動を[ライブコピー](/help/sites-cloud/administering/msm/overview.md)にすることでこれを実現します。 デフォルトでは、このオプションは選択されています。—>
+   * **ソースページのライブデータを継承**：ソースページに変更があったときにローンチページのコンテンツを自動的に更新する場合は、このオプションを選択します。このオプションは、ローンチを[ライブコピー](/help/sites-cloud/administering/msm/overview.md)にすることでこれを実現します。 デフォルトでは、このオプションが選択されています。—>
    * **ローンチ日**：ローンチコピーがアクティベートされる日付と時間（「**実稼動準備完了**」フラグによって変わります。[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください）。
 
    ![ローンチのプロパティ](/help/sites-cloud/authoring/assets/launches-properties.png)
