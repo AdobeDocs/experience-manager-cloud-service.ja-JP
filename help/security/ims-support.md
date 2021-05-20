@@ -2,7 +2,6 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-translation-type: tm+mt
 source-git-commit: 75071cb1793b9b670ebbc029bf9fb41f4de119f9
 workflow-type: tm+mt
 source-wordcount: '2009'
@@ -12,7 +11,7 @@ ht-degree: 92%
 
 # Adobe Experience Manager as a Cloud Service に対する IMS のサポート {#ims-support-for-aem-as-a-cloud-service}
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 * AEM as a Cloud Service の Admin Console では、AEM インスタンスと、Adobe Identity Management System（IMS）ベースの認証をサポートしてます。
 * Admin Console を使用すると、管理者がすべての Experience Cloud ユーザーを一元的に管理できます。
@@ -20,7 +19,7 @@ ht-degree: 92%
 
 >[!TIP]
 >
->AdobeIMSを使用してCloud ServiceとしてAEMを認証する方法、およびAdobeIMSユーザー、ユーザーグループ、製品プロファイルを使用してAEMへのアクセスを制御する方法については、Experience Leagueのコース[管理者用のAEMへのアクセスの設定](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)を参照してください。 Adobe IDは必要とした。
+>AdobeIMSを使用してAEMにCloud Serviceとして認証する方法と、AEMとその機能へのアクセスを制御するためにAdobeのIMSユーザー、ユーザーグループ、製品プロファイルを使用する方法については、 Experience Leagueのコース[管理者向けのAEMへのアクセスの設定](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)を参照してください。 Adobe IDが必要。
 
 ## 主なハイライト {#key-highlights}
 
@@ -129,7 +128,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 ### Admin Console での製品とユーザーアクセスの管理 {#managing-products-and-user-access-in-admin-console}
 
-製品管理者がAdmin Consoleにログインすると、AEMの複数のインスタンスがCloud Service製品コンテキストとして表示されます（以下を参照）。 例えば、**概要**&#x200B;ページから任意の製品を選択します。
+製品管理者がAdmin Consoleにログインすると、以下に示すように、AEMの複数のインスタンスがCloud Service製品コンテキストとして表示されます。 例えば、**概要**&#x200B;ページから任意の製品を選択します。
 
 ![インスタンスへのログイン](/help/security/assets/ims6.png)
 
@@ -137,7 +136,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 ![インスタンスへのログイン 2](/help/security/assets/ims7.png)
 
-各製品コンテキストインスタンスの下に、実稼動、ステージ、または開発の各環境にわたって、作成者サービスまたは発行サービスにまたがるインスタンスが存在します。 各インスタンスは、製品プロファイルまたはCloud Managerのロールに関連付けられます。 これらの製品プロファイルは、必要な権限を持つユーザーおよびグループへのアクセス権を割り当てるために使用されます。
+各製品コンテキストインスタンスの下に、実稼動、ステージ、または開発環境全体でオーサーサービスまたはパブリッシュサービスにまたがるインスタンスがあります。 各インスタンスは、製品プロファイルまたはCloud Managerの役割に関連付けられます。 これらの製品プロファイルは、必要な権限を持つユーザーおよびグループにアクセス権を割り当てるために使用されます。
 
 **Administrator_xxx** プロファイルは、関連する AEM インスタンスで管理者特権を付与するために使用されるのに対して、**User_xxx** プロファイルは、通常のユーザーを追加するために使用されます。
 
