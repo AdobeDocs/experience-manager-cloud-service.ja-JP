@@ -2,16 +2,15 @@
 title: ' [!DNL Assets] のアーキテクチャ'
 description: Adobe Experience Manager Assets as a  [!DNL Cloud Service] のアーキテクチャ
 contentOwner: AG
-feature: Asset Management,Asset Compute Microservices
+feature: アセット管理，Asset computeマイクロサービス
 role: Architect
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '91'
 ht-degree: 94%
 
 ---
-
 
 # AEM Assets as a [!DNL Cloud Service] ソリューションのアーキテクチャ {#assets-architecture}
 
@@ -22,6 +21,6 @@ Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] は [!DNL Adobe
 >[!MORELIKETHIS]
 >
 >* [概要と新機能](/help/assets/overview.md)
->* [サポートされているファイル形式と MIME タイプ](file-format-support.md)
->* [アセットマイクロサービスの概要](asset-microservices-overview.md)
+* [サポートされているファイル形式と MIME タイプ](file-format-support.md)
+* [アセットマイクロサービスの概要](asset-microservices-overview.md)
 
