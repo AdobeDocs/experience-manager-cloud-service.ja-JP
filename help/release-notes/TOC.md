@@ -5,7 +5,6 @@ breadcrumb-title: リリースノート
 user-guide-description: このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。
 feature: リリース情報
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
 source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
 workflow-type: tm+mt
 source-wordcount: '115'
@@ -35,7 +34,7 @@ ht-degree: 100%
       + [リリースノート（2020.4.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
       + [リリースノート（2020.3.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
       + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-+ [新機能](what-is-new.md)
++ [新機能?](what-is-new.md)
 + [AEM Cloud Service の主要な変更点](aem-cloud-changes.md)
 + [既知の問題](known-issues.md)
 + [廃止される機能および削除された機能](deprecated-removed-features.md)
