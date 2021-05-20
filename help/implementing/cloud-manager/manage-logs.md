@@ -1,14 +1,13 @@
 ---
 title: ログの管理 - Cloud Services
 description: ログの管理 - Cloud Services
-translation-type: tm+mt
-source-git-commit: b67bafd9edb06a6d333e1a5bde0687994c30ea81
+exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 
 ---
-
 
 # ログへのアクセスと管理 {#manage-logs}
 
