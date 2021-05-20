@@ -43,32 +43,32 @@ ht-degree: 55%
 
 ## カスタム UI テスト {#custom-ui-testing}
 
-AEMは、Cloud Managerの品質ゲートを統合してお客様に提供し、アプリケーションの更新をスムーズに行います。 特に、ITテストゲートにより、お客様はAEM APIを使用する独自のテストを作成および自動化できます。
+AEMは、アプリケーションをスムーズに更新できるように、Cloud Managerの品質ゲートの統合スイートをお客様に提供します。 特に、ITテストゲートを使用すると、既にAEM APIを使用する独自のテストを作成し自動化できます。
 
-カスタムUIテスト機能は、オプションの機能[お客様オプトイン](#customer-opt-in)です。これにより、お客様は、アプリケーションのUIテストを作成し、自動的に実行できます。 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。UIの作成方法とUIテストの作成方法について詳しくは、こちらを参照してください。 また、AEMプロジェクトアーキタイプを使用すると、UIテストプロジェクトを簡単に生成できます。
+カスタムUIテスト機能は、お客様がアプリケーションのUIテストを作成して自動的に実行できるオプションの機能[顧客オプトイン](#customer-opt-in)です。 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。UIの構築方法とUIテストの書き込み方法について詳しくは、こちらを参照してください。 さらに、AEM Project Archetypeを使用すると、UIテストプロジェクトを簡単に生成できます。
 
-ユーザーは、（GIT経由で）カスタムテストを作成し、UIのテストスイートを作成できます。 UIテストは、各Cloud Managerパイプラインの特定の品質ゲートの一部として、それぞれのステップとフィードバック情報と共に実行されます。 回帰や新しい機能を含むすべてのUIテストにより、エラーを検出し、顧客のコンテキスト内でレポートできます。
+お客様は、（Gitを介して）カスタムテストを作成し、UIのテストスイートをテストできます。 UIテストは、各Cloud Managerパイプラインの特定の品質ゲートの一部として、特定の手順とフィードバック情報と共に実行されます。 回帰や新機能を含むすべてのUIテストを使用すると、お客様のコンテキスト内でエラーを検出し、報告できます。
 
-お客様のUIテストは、「カスタムUIテスト」の手順の下の実稼働パイプラインで自動的に実行されます。
+顧客UIテストは、「カスタムUIテスト」手順の実稼動パイプラインで自動的に実行されます。
 
-Javaで記述されたHTTPテストであるカスタム機能テストとは異なり、UIテストは、[UIテストの作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests)で定義されている規則に従う限り、任意の言語で記述されたテストを含むドッカー画像にすることができます。
+Javaで記述されたHTTPテストであるカスタム機能テストとは異なり、UIテストは、[UIテスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=en#building-ui-tests)の作成で定義されている規則に従う限り、任意の言語で記述されたテストを含むDockerイメージにすることができます。
 
 >[!NOTE]
->[AEMプロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)に便利な構造と言語&#x200B;*（jsとwdio）*&#x200B;を基にして作業を開始することをお勧めします。
+>[AEMプロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)に記載されている構造と言語&#x200B;*（jsとwdio）*&#x200B;を出発点として使用することをお勧めします。
 
-### お客様オプトイン{#customer-opt-in}
+### 顧客オプトイン{#customer-opt-in}
 
-UIテストを作成して実行するには、UIテスト用のmavenサブモジュール（UI testsサブモジュールのpom.xmlファイルの横）の下にファイルを追加し、このファイルが構築された`tar.gz`ファイルのルートにあることを確認して、「オプトイン」する必要があります。
+UIテストを構築して実行するには、（UIテストサブモジュールのpom.xmlファイルの横にある） UIテスト用のmavenサブモジュールの下にファイルを追加し、このファイルが構築された`tar.gz`ファイルのルートにあることを確認して、「オプトイン」する必要があります。
 
 *ファイル名*: `testing.properties`
 
 *目次*: `one line: ui-tests.version=1`
 
-これがビルドされた`tar.gz`ファイルに含まれていない場合、UIテストのビルドと実行はスキップされます
+このファイルがビルドされた`tar.gz`ファイルにない場合、UIテストのビルドと実行はスキップされます
 
 >[!NOTE]
->2021年2月10日より前に作成された実稼働用パイプラインは、この節で説明するUIテストを使用するために更新する必要があります。 つまり、ユーザーは実稼働パイプラインを編集し、変更が行われなかった場合でも、UIから「**保存**」をクリックする必要があります。
->パイプラインの設定の詳細については、[CI-CDパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
+>この節で説明するように、UIテストを使用するには、2021年2月10日より前に作成された実稼動パイプラインを更新する必要があります。 つまり、ユーザーは実稼動パイプラインを編集し、変更が加えられていなくても、UIから「**保存**」をクリックする必要があります。
+>パイプラインの設定について詳しくは、[CI-CDパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
 
 ### 機能テストの作成 {#writing-functional-tests}
 
