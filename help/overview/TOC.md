@@ -5,7 +5,6 @@ breadcrumb-title: 概要ガイド
 user-guide-description: ソリューションの紹介、用語など、Adobe Experience Manager as a Cloud Service の概要については、まずこちらを参照してください。
 feature: リリース情報
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '62'
