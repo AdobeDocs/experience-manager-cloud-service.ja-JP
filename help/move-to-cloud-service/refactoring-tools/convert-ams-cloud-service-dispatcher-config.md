@@ -1,7 +1,6 @@
 ---
 title: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
 description: AMS を Adobe Experience Manager as a Cloud Service Dispatcher 設定に変換する方法
-translation-type: tm+mt
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '1342'
@@ -12,7 +11,7 @@ ht-degree: 100%
 
 # AMS を Adobe Experience Manager（AEM）as a Cloud Service Dispatcher 設定に変換する方法
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 この節では、AMS 設定を変換する方法を順を追って説明します。
 
