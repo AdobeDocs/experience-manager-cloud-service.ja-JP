@@ -1,14 +1,13 @@
 ---
 title: Angular を使用した AEM での SPA の概要
 description: この記事では、サンプルの SPA アプリケーションを紹介し、その設定方法を説明するほか、Angular フレームワークを使用して独自の SPA の運用をすぐに開始する方法についても説明します。
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 100%
 
 ---
-
 
 # Angular を使用した AEM での SPA の概要 {#getting-started-with-spas-in-aem-using-angular}
 
@@ -20,7 +19,7 @@ SPA オーサリング機能には、AEM 内で SPA をサポートするため�
 >
 >この記事は Angular フレームワークに基づいています。対応する React フレームワークのドキュメントについては、「 [AEM での SPA の使用 - React](getting-started-react.md)」を参照してください。
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 この記事では、シンプルな SPA の基本的な機能と、SPA を運用するための最低条件の概要を説明します。
 
