@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン
 description: Adobe Experience Manager as a Cloud Service と Web アクセシビリティガイドラインの概要
-translation-type: tm+mt
-source-git-commit: 9b52d37a5af866dfb1bce6ee18b524a0f6ede19e
+exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service と Web アクセシビリティのガイドライン {#aem-and-the-web-accessibility-guidelines}
 
@@ -66,4 +65,3 @@ Adobe Experience Manager を使用すると、コンテンツ作成者や Web �
 ## Adobe におけるアクセシビリティ {#accessibility-at-adobe}
 
 詳しくは、[アドビのアクセシビリティリソースセンター](https://www.adobe.com/accessibility/)にアクセスしてください。
-
