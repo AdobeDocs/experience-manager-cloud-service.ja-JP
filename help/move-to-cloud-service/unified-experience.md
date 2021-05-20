@@ -1,14 +1,13 @@
 ---
 title: コードリファクタリングツール用 Unified Experience
 description: コードリファクタリングツール用 Unified Experience
-translation-type: tm+mt
-source-git-commit: 5d2b14c827603297a59cba7180fc1a68de0c841a
+exl-id: 856bce12-7d5e-4f8c-b252-7752bcbeebc4
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
 
 ---
-
 
 # コードリファクタリングツール用 Unified Experience{#unified-experience}
 
