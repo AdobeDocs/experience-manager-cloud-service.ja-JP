@@ -1,9 +1,8 @@
 ---
-title: Cloud ServiceとしてのAdobe Experience Manager用のOSGiの設定
+title: Adobe Experience Manager用のOSGiのCloud Service
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: デプロイ
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-translation-type: tm+mt
 source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
 workflow-type: tm+mt
 source-wordcount: '2850'
@@ -11,11 +10,11 @@ ht-degree: 56%
 
 ---
 
-# Cloud Service{#configuring-osgi-for-aem-as-a-cloud-service}としてのAdobe Experience Manager用のOSGiの設定
+# Adobe Experience Manager用のOSGiをCloud Serviceとして設定{#configuring-osgi-for-aem-as-a-cloud-service}
 
 [OSGi](https://www.osgi.org/) は Adobe Experience Manager（AEM）のテクノロジースタックの基本要素です。AEM とその設定の複合バンドルを制御するために使用されます。
 
-OSGiは、小規模で再利用可能なコラボレーションコンポーネントからアプリケーションを構築できるようにする、標準化されたプリミティブを提供します。これらのコンポーネントは、アプリケーションに組み込んでデプロイすることができます。 これにより、OSGi バンドルの管理が容易になり、バンドルを個別に停止、インストール、開始できます。相互依存関係は自動的に処理されます。各 OSGi コンポーネントは、様々なバンドルの 1 つに含まれています。詳しくは、[OSGi の仕様](https://www.osgi.org/Specifications/HomePage)を参照してください。
+OSGiは、小規模で再利用可能な協調コンポーネントからアプリケーションを構築できる、標準化されたプリミティブを提供します。これらのコンポーネントは、アプリケーションに構成し、デプロイできます。 これにより、OSGi バンドルの管理が容易になり、バンドルを個別に停止、インストール、開始できます。相互依存関係は自動的に処理されます。各 OSGi コンポーネントは、様々なバンドルの 1 つに含まれています。詳しくは、[OSGi の仕様](https://www.osgi.org/Specifications/HomePage)を参照してください。
 
 AEM コードプロジェクトに含まれる設定ファイルを使用して、OSGi コンポーネントの設定を管理できます。
 
@@ -27,7 +26,7 @@ AEM コードプロジェクトに含まれる設定ファイルを使用して�
 
 OSGi設定ファイルの形式は、Apache Slingプロジェクトで定義されている`.cfg.json`形式を使用したJSONベースです。
 
-OSGi設定ターゲットOSGiコンポーネントは、そのPersistent Identity(PID)を介してコンポーネントを設定します。デフォルトでは、OSGiコンポーネントのJava™クラス名が使用されます。 例えば、OSGi サービス用の OSGi 設定を提供するには、次のように実装します。
+OSGi設定は、永続ID(PID)を介してOSGiコンポーネントをターゲットに設定します。デフォルトは、OSGiコンポーネントのJava™クラス名です。 例えば、OSGi サービス用の OSGi 設定を提供するには、次のように実装します。
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -47,19 +46,19 @@ cfg.json OSGi 設定形式に従います。
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
-configフォルダー名で定義されたrunmodeがAEMで使用されるrunmodeと一致する場合、このようなフォルダー内のOSGi設定が使用されます。
+configフォルダー名で定義された実行モードがAEMで使用される実行モードと一致する場合は、このようなフォルダー内のOSGi設定が使用されます。
 
-例えば、AEMがrunmodes authorとdevを使用している場合、`/apps/example/config.author/`と`/apps/example/config.author.dev/`の設定ノードは適用され、`/apps/example/config.publish/`と`/apps/example/config.author.stage/`の設定ノードは適用されません。
+例えば、AEMがオーサーと開発の実行モードを使用している場合、`/apps/example/config.author/`と`/apps/example/config.author.dev/`の設定ノードが適用され、`/apps/example/config.publish/`と`/apps/example/config.author.stage/`の設定ノードは適用されません。
 
 同じ PID に複数の設定が該当する場合は、一致する実行モードの数が最も大きい設定が適用されます。
 
-このルールの精度は PID レベルです。つまり、`/apps/example/config.author/` で同じ PID の一部のプロパティと、`/apps/example/config.author.dev/` で同じ PID のより具体的なプロパティを定義することはできません。一致するランモードの数が最も多い設定は、PID全体に対して有効です。
+このルールの精度は PID レベルです。つまり、`/apps/example/config.author/` で同じ PID の一部のプロパティと、`/apps/example/config.author.dev/` で同じ PID のより具体的なプロパティを定義することはできません。一致する実行モードの数が最も多い設定は、PID全体に対して有効です。
 
-ローカルで開発する場合、runmode起動パラメータを渡して、OSGIのどのrunmode設定が使用されるかを指定できます。
+ローカルで開発する場合は、実行モード起動パラメーターを渡して、使用する実行モードOSGI設定を指定できます。
 
 ## OSGi 設定値のタイプ {#types-of-osgi-configuration-values}
 
-OSGiの設定値には3種類あり、Adobe Experience ManagerをCloud Serviceとして使用できます。
+Adobe Experience ManagerをCloud Serviceとして使用できるOSGi設定値は3種類あります。
 
 1. **インライン値**：OSGi 設定にハードコーディングされ、Git に保存される値です。次に例を示します。
 
@@ -69,7 +68,7 @@ OSGiの設定値には3種類あり、Adobe Experience ManagerをCloud Service�
    }
    ```
 
-1. **シークレット値**（セキュリティ上の理由からGitに保存しない値）。次に例を示します。
+1. **シークレット値**：セキュリティ上の理由からGitに保存しない値です。以下に例を示します。
 
    ```json
    {
@@ -77,7 +76,7 @@ OSGiの設定値には3種類あり、Adobe Experience ManagerをCloud Service�
    } 
    ```
 
-1. **環境固有の値**。開発環境間で変化する値であり、したがって実行モードでは正確にターゲット化できません(Adobe Experience ManagerにはCloud Serviceとして1つの `dev` runmodeが存在するため)。次に例を示します。
+1. **環境固有の値**：開発環境間で異なる値なので、実行モードで正確にターゲットを設定できません(Adobe Experience ManagerにはCloud Serviceとしての実行モードが1つだけあるの `dev` で)。次に例を示します。
 
    ```json
    {
@@ -113,33 +112,33 @@ OSGi では、インライン OSGi 設定値を使用する場合が多くあり
 * 値はコードデプロイメントに暗黙的に結び付けられる
 * デプロイメントに関する検討事項や調整を追加する必要がない
 
-OSGi設定値を定義する場合は常に、インライン値を持つ開始を指定し、必要に応じて、シークレット設定または環境固有の設定を選択する必要があります。
+OSGi設定値を定義する場合は、インライン値で始め、必要に応じてシークレット設定または環境固有の設定を選択する必要があります。
 
 ### 非シークレットの環境固有の設定値を使用する場合 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-非シークレットの設定値に対しては、開発環境間で値が異なる場合にのみ、環境固有の設定（`$[env:ENV_VAR_NAME]`）を使用してください。これには、ローカル開発インスタンスと、Cloud Service開発環境としてのAdobe Experience Managerが含まれます。 Cloud Serviceステージまたは実稼動環境として、Adobe Experience Managerに対して秘密でない環境固有の設定を使用しないでください。
+非シークレットの設定値に対しては、開発環境間で値が異なる場合にのみ、環境固有の設定（`$[env:ENV_VAR_NAME]`）を使用してください。これには、ローカル開発インスタンスと、Cloud Service開発環境としてのAdobe Experience Managerが含まれます。 Adobe Experience Managerの非シークレットの環境固有の設定を、環境ステージ環境または実稼動環境として使用するCloud Serviceは避けてください。
 
 * ローカル開発インスタンスなど、開発環境間で異なる設定値に対しては、非シークレットの環境固有の設定のみを使用します。
-* 代わりに、ステージングと実稼働の非シークレット値の OSGi 設定では、標準のインライン値を使用します。関連して、実行時にStageおよびProduction環境に対して設定を簡単に変更するために、環境固有の設定を使用することはお勧めしません。これらの変更は、ソースコード管理を通じて導入する必要があります。
+* 代わりに、ステージングと実稼働の非シークレット値の OSGi 設定では、標準のインライン値を使用します。関連して、実行時にステージ環境と実稼動環境に対して設定を変更しやすくするために、環境固有の設定を使用することはお勧めしません。これらの変更は、ソースコード管理を通じて導入する必要があります。
 
 ### シークレットの環境固有の設定値を使用する場合 {#when-to-use-secret-environment-specific-configuration-values}
 
-Cloud ServiceとしてAdobe Experience Managerを使用するには、セキュリティ上の理由から、パスワード、プライベートAPIキー、またはGitに保存できない他の値など、秘密のOSGi設定値に環境固有の設定(`$[secret:SECRET_VAR_NAME]`)を使用する必要があります。
+Adobe Experience Manager as aCloud Serviceでは、セキュリティ上の理由から、パスワード、プライベートAPIキー、Gitに保存できないその他の値など、シークレットのOSGi設定値に対して環境固有の設定(`$[secret:SECRET_VAR_NAME]`)を使用する必要があります。
 
-シークレット環境固有の設定を使用して、StageやProductionなどのCloud Service環境としてすべてのAdobe Experience Managerにシークレットの値を保存します。
+シークレットの環境固有の設定を使用して、ステージングや実稼動を含むCloud Service環境としてすべてのAdobe Experience Managerにシークレットの値を保存します。
 
 ## OSGi 設定の作成 {#creating-sogi-configurations}
 
-OSGi設定を作成するには、次の2つの方法があります。 前者の方法は、通常、開発者によってよく知られている OSGi のプロパティと値を持つカスタム OSGi コンポーネントの設定に使用され、後者は AEM が提供する OSGi コンポーネントの設定に使用されます。
+OSGi設定を作成する方法は2つあります（以下で説明します）。 前者の方法は、通常、開発者によってよく知られている OSGi のプロパティと値を持つカスタム OSGi コンポーネントの設定に使用され、後者は AEM が提供する OSGi コンポーネントの設定に使用されます。
 
 ### OSGi 設定の書き込み  {#writing-osgi-configurations}
 
-JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、多くの場合、よく知られているOSGiコンポーネント、特に、設定を定義する同じ開発者が設計および開発したカスタムOSGiコンポーネント用のOSGi設定を最もすばやく作成する方法です。 この方法は、同じOSGiコンポーネントの設定を様々なrunmodeフォルダーにコピー/貼り付け、更新する場合にも使用できます。
+JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、多くの場合、よく知られているOSGiコンポーネント、特に、設定を定義する同じ開発者が設計および開発したカスタムOSGiコンポーネントのOSGi設定をすばやく作成する方法です。 この方法は、同じOSGiコンポーネントの設定を様々な実行モードフォルダーにコピー/貼り付け、更新する場合にも使用できます。
 
-1. IDEで`ui.apps`プロジェクトを開き、新しいOSGi構成を有効にするために実行モードをターゲットする設定フォルダ(`/apps/.../config.<runmode>`)を探すか、作成します
-1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PIDはOSGiコンポーネントの永続的なIDです。通常、OSGiコンポーネント実装の完全なクラス名です。 次に例を示します。
+1. IDEで`ui.apps`プロジェクトを開き、新しいOSGi構成を有効にする必要がある実行モードをターゲットに設定するconfigフォルダー(`/apps/.../config.<runmode>`)を探すか作成します
+1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PIDは、OSGiコンポーネントの永続的なIDです。通常、OSGiコンポーネントの実装の完全なクラス名です。 以下に例を示します。
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-OSGi設定ファクトリのファイル名には、 `<PID>-<factory-name>.cfg.json` 命名規則が使用されます
+OSGi設定ファクトリのファイル名には、命名規則が使用さ `<PID>-<factory-name>.cfg.json` れます。
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
@@ -154,17 +153,17 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 1. AEM SDK Quickstart Jar の AEM Web コンソールに管理者ユーザーとしてログインします。
 1. OSGi／設定に移動します。
-1. 設定するには、OSGiコンポーネントを見つけ、タイトルをタップして編集します
+1. 設定するには、OSGiコンポーネントを探し、タイトルをタップして編集します
    ![OSGi 設定](./assets/configuring-osgi/configuration.png)
 1. 必要に応じて Web UI を使用して OSGi 設定プロパティの値を編集します。
-1. 安全な場所に永続ID(PID)を記録します。 これは後でOSGi設定JSONの生成に使用されます
+1. 安全な場所に永続ID(PID)を記録します。 これは、後でOSGi設定JSONを生成するために使用されます
 1. 「保存」をタップします。
 1. OSGi／OSGi インストーラー設定プリンターに移動します。
 1. 手順 5 でコピーした PID に貼り付け、シリアル化形式が「OSGi Configurator JSON」に設定されていることを確認します。
-1. 「印刷」をタップします
+1. 印刷をタップ
 1. JSON 形式の OSGi 設定は、「シリアライズされた設定プロパティ」セクションに表示されます。
    ![OSGi インストーラー設定プリンター](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
-1. IDEで`ui.apps`プロジェクトを開き、新しいOSGi構成を有効にする必要があるrunmodesのターゲットを指定するか、configフォルダ(`/apps/.../config.<runmode>`)を作成します。
+1. IDEで`ui.apps`プロジェクトを開き、新しいOSGi構成を有効にする実行モードをターゲットに設定するconfigフォルダー(`/apps/.../config.<runmode>`)を探すか作成します。
 1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PID は、手順 5 と同じ値です。
 1. 手順 10 のシリアライズされた設定プロパティを `.cfg.json` ファイルに貼り付けます。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
@@ -175,7 +174,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 
 ### インライン値 {#inline-values}
 
-インライン値は、標準のJSON構文に従って、標準の名前と値のペアとして形式設定されます。 次に例を示します。
+インライン値は、標準のJSON構文に従って、標準の名前と値のペアとして形式設定されます。 以下に例を示します。
 
 ```json
 {
@@ -185,7 +184,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 }
 ```
 
-### 環境固有の構成値{#environment-specific-configuration-values}
+### 環境固有の設定値{#environment-specific-configuration-values}
 
 OSGi 設定では、環境ごとに定義する変数にプレースホルダーを割り当てる必要があります。
 
@@ -193,11 +192,11 @@ OSGi 設定では、環境ごとに定義する変数にプレースホルダー
 use $[env:ENV_VAR_NAME]
 ```
 
-お客様は、カスタムコードに関連するOSGI設定プロパティに対してのみ、この手法を使用する必要があります。Adobe定義のOSGI設定を上書きする場合は使用しないでください。
+この手法は、カスタムコードに関連するOSGi設定プロパティにのみ使用する必要があります。Adobe定義のOSGI設定を上書きする場合は、このメソッドを使用しないでください。
 
 >[!NOTE]
 >
->[repoint文](/help/implementing/deploying/overview.md#repoinit)ではプレースホルダーを使用できません。
+>[repoinitステートメント](/help/implementing/deploying/overview.md#repoinit)ではプレースホルダーを使用できません。
 
 ### シークレットの設定値 {#secret-configuration-values}
 
@@ -211,35 +210,35 @@ use $[secret:SECRET_VAR_NAME]
 
 環境固有の設定値とシークレットの設定値の両方に次のことが適用されます。
 
-変数名は、次の規則に従う必要があります。
+変数名は、次のルールに従う必要があります。
 
 * 最小長：2
 * 最大長：100
-* Must match regex:`[a-zA-Z_][a-zA-Z_0-9]*`
+* 正規表現と一致する必要があります。`[a-zA-Z_][a-zA-Z_0-9]*`
 
 変数の値は2048文字以下にする必要があります。
 
 >[!NOTE]
 >
->`INTERNAL_`のプリフィックスが付いた変数名は、Adobeで予約されています。 このプレフィックスを持つ開始のある顧客セット変数は無視されます。
+>`INTERNAL_`のプレフィックスが付いた変数名は、Adobeで予約されます。 このプレフィックスで始まる顧客セット変数は無視されます。
 
 ### デフォルト値 {#default-values}
 
 環境固有の設定値とシークレットの設定値の両方に次のことが適用されます。
 
-環境単位の値を設定しない場合、プレースホルダーは実行時に置き換えられず、補間が行われないので、配置されたままになります。 これを回避するには、プレースホルダーの一部として次の構文でデフォルト値を指定します。
+環境単位の値を設定しない場合、補間がおこなわれないので、プレースホルダーは実行時に置き換えられず、配置されたままになります。 これを回避するには、プレースホルダーの一部として次の構文でデフォルト値を指定します。
 
 ```
 $[env:ENV_VAR_NAME;default=<value>]
 ```
 
-デフォルト値が指定されている場合、プレースホルダーは、環境ごとの値（指定されている場合）またはデフォルト値に置き換えられます。
+デフォルト値を指定すると、プレースホルダーは環境ごとの値（指定した場合）または指定したデフォルト値に置き換えられます。
 
 ### ローカル開発 {#local-development}
 
 環境固有の設定値とシークレットの設定値の両方に次のことが適用されます。
 
-変数は、実行時にローカル AEM によって取得されるように、ローカル環境で定義できます。例えば、Linux®では次のようになります。
+変数は、実行時にローカル AEM によって取得されるように、ローカル環境で定義できます。Linux®の場合：
 
 ```bash
 export ENV_VAR_NAME=my_value
@@ -247,27 +246,27 @@ export ENV_VAR_NAME=my_value
 
 設定で使用される環境変数を設定し、AEM を起動する前に実行する、単純な bash スクリプトを記述することをお勧めします。[https://direnv.net/](https://direnv.net/) などのツールを使うと、このアプローチを簡略化できます。すべてのユーザー間で共有できる場合は、値のタイプに応じて、値をソースコード管理にチェックインできることがあります。
 
-シークレットの値はファイルから読み取られます。したがって、シークレットを使用するプレースホルダごとに、シークレット値を含むテキストファイルを作成する必要があります。
+シークレットの値はファイルから読み取られます。したがって、シークレットを使用するプレースホルダーごとに、シークレット値を含むテキストファイルを作成する必要があります。
 
-例えば、`$[secret:server_password]`を使用する場合は、**server_password**&#x200B;という名前のテキストファイルを作成する必要があります。 これらのシークレットファイルはすべて同じディレクトリに保存する必要があり、フレームワークプロパティ`org.apache.felix.configadmin.plugin.interpolation.secretsdir`はそのローカルディレクトリで構成する必要があります。
+例えば、`$[secret:server_password]`を使用する場合は、**server_password**&#x200B;という名前のテキストファイルを作成する必要があります。 これらのシークレットファイルはすべて同じディレクトリに保存する必要があり、フレームワークプロパティ`org.apache.felix.configadmin.plugin.interpolation.secretsdir`は、そのローカルディレクトリを使用して設定する必要があります。
 
 ### オーサーとパブリッシュの設定 {#author-vs-publish-configuration}
 
 OSGi プロパティで、作成者とパブリッシュで異なる値が必要な場合：
 
-* `config.author`と`config.publish`のOSGiフォルダーは別々に使用する必要があります。詳しくは、[Runmode Resolutionセクション](#runmode-resolution)を参照してください。
-* 独立変数名を作成する場合は、次の2つの方法があります。
-   * 最初のオプションを選択します。この方法をお勧めします。異なる値を定義するために宣言されたすべてのOSGIフォルダ（`config.author`や`config.publish`など）で、同じ変数名を使用します。 例：
-      `$[env:ENV_VAR_NAME;default=<value>]`の場合、デフォルト値はその層のデフォルト値（authorまたはpublish）に対応します。[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)経由またはクライアント経由で環境変数を設定する場合、この[APIリファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して階層を区別します。 「service」パラメータは、変数の値を適切なOSGI層にバインドします。
-   * 2つ目のオプションは、`author_<samevariablename>`や`publish_<samevariablename>`などのプレフィックスを使用して異なる変数を宣言します。
+* [実行モードの解決の節](#runmode-resolution)で説明しているように、個別の`config.author`と`config.publish` OSGiフォルダーを使用する必要があります。
+* 独立変数名を作成する場合、次の2つのオプションを使用できます。
+   * 最初のオプション（推奨）:異なる値を定義するように宣言されたすべてのOSGIフォルダー（`config.author`と`config.publish`など）で、同じ変数名を使用します。 例：
+      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)またはクライアントを使用して設定する場合は、この[APIリファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。 「service」パラメーターは、変数の値を適切なOSGI層にバインドします。
+   * 2つ目のオプション。`author_<samevariablename>`や`publish_<samevariablename>`などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
 
-以下の例では、ステージ環境とprod環境に加えて、3つの開発があると仮定します。
+以下の例では、ステージ環境と実稼動環境に加えて、3つの開発環境があると仮定します。
 
 **例 1**
 
-目的は、OSGIプロパティ`my_var1`の値をステージとprodで同じにすることですが、3つの開発環境ごとに異なります。
+OSGiプロパティ`my_var1`の値を、ステージングと実稼動環境で同じ値、3つの開発環境でそれぞれ異なる値にします。
 
 <table>
 <tr>
@@ -310,12 +309,12 @@ config.dev
 
 **例 2**
 
-目的は、OSGIプロパティ`my_var1`の値がステージ、prod、および3つの開発環境のそれぞれで異なることです。 したがって、各開発環境に対して`my_var1`の値を設定するには、Cloud Manager APIを呼び出す必要があります。
+OSGiプロパティ`my_var1`の値を、ステージング、実稼働、3つの開発環境でそれぞれ異なる値にします。 したがって、各開発環境の`my_var1`の値を設定するには、Cloud Manager APIを呼び出す必要があります。
 
 <table>
 <tr>
 <td>
-<b>フォルダ</b>
+<b>フォルダー</b>
 </td>
 <td>
 <b>myfile.cfg.json の内容</b>
@@ -356,7 +355,7 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1":"$[env:my_var1]"
+ "my_var1" :"$[env:my_var1]"
  "my_var2":"abc",
  "my_var3":500
 }
@@ -367,12 +366,12 @@ config.dev
 
 **例 3**
 
-OSGi プロパティ `my_var1` の値をステージング、実稼働、1 つの開発環境で同じ値、他の 2 つの開発環境では異なる値にします。この場合、Cloud Manager APIを呼び出して各開発環境の値`my_var1`を設定する必要があります。この値は、開発環境用（ステージと実稼働と同じ値を持つ必要がある開発環境用を含む）に対して設定します。 フォルダー **config** に設定された値は継承されません。
+OSGi プロパティ `my_var1` の値をステージング、実稼働、1 つの開発環境で同じ値、他の 2 つの開発環境では異なる値にします。この場合、Cloud Manager APIを呼び出して各開発環境の値`my_var1`を設定する必要があります。この値は、ステージングと実稼動と同じ値にする必要がある開発環境も含まれます。 フォルダー **config** に設定された値は継承されません。
 
 <table>
 <tr>
 <td>
-<b>フォルダ</b>
+<b>フォルダー</b>
 </td>
 <td>
 <b>myfile.cfg.json の内容</b>
@@ -399,7 +398,7 @@ config.dev
 <td>
 <pre>
 { 
- "my_var1":"$[env:my_var1]"
+ "my_var1" :"$[env:my_var1]"
  "my_var2":"abc",
  "my_var3":500
 }
@@ -413,7 +412,7 @@ config.dev
 <table>
 <tr>
 <td>
-<b>フォルダ</b>
+<b>フォルダー</b>
 </td>
 <td>
 <b>myfile.cfg.json の内容</b>
@@ -458,7 +457,7 @@ API の設定方法については、[こちらのページ](https://www.adobe.i
 
 ### API を使用した値の設定 {#setting-values-via-api}
 
-APIを呼び出すと、一般的なカスタマーコードの導入パイプラインと同様、新しい変数と値がクラウド環境にデプロイされます。 オーサーとパブリッシュサービスは再起動され、新しい値が参照されます（通常、数分かかります）。
+APIを呼び出すと、一般的な顧客コードのデプロイメントパイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。 オーサーとパブリッシュサービスは再起動され、新しい値が参照されます（通常、数分かかります）。
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -480,7 +479,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 ```
 
 >[!NOTE]
->デフォルトの変数は、APIを介してではなく、OSGiプロパティ自体に設定されます。
+>デフォルトの変数はAPI経由ではなく、OSGiプロパティ自体に設定されます。
 >
 >詳しくは、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Environment_Variables/patchEnvironmentVariables)を参照してください。
 
@@ -532,20 +531,20 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 1 つの環境につき最大 200 個の変数を宣言できます。
 
-## シークレットおよび環境固有の設定値{#deployment-considerations-for-secret-and-environment-specific-configuration-values}に関するデプロイメントの考慮事項
+## シークレットおよび環境固有の設定値のデプロイメントに関する考慮事項{#deployment-considerations-for-secret-and-environment-specific-configuration-values}
 
-秘密と環境固有の設定値はGitの外部に存在し、したがって、Cloud Service展開メカニズムとしての正式なAdobe Experience Managerには含まれないので、Cloud Service展開プロセスとしての管理、管理、Adobe Experience Managerへの統合を行う必要があります。
+秘密鍵や環境固有の設定値はGitの外部に存在するので、Cloud Serviceデプロイメントメカニズムとしての正式なAdobe Experience Managerには含まれていないので、Cloud ServiceデプロイメントプロセスとしてAdobe Experience Managerを管理、管理、統合する必要があります。
 
-前述したように、APIを呼び出すと、一般的なカスタマーコードの導入パイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。 オーサーとパブリッシュサービスは再起動され、新しい値が参照されます（通常、数分かかります）。通常のコードのデプロイメント中に Cloud Manager によって実行される品質ゲートおよびテストは、このプロセス中は実行されません。
+前述したように、 APIを呼び出すと、一般的な顧客コードのデプロイメントパイプラインと同様に、新しい変数と値がクラウド環境にデプロイされます。 オーサーとパブリッシュサービスは再起動され、新しい値が参照されます（通常、数分かかります）。通常のコードのデプロイメント中に Cloud Manager によって実行される品質ゲートおよびテストは、このプロセス中は実行されません。
 
 通常、Cloud Manager で API を使用するコードをデプロイする前に、API を呼び出して環境変数を設定します。場合によっては、コードが既にデプロイされた後で既存の変数を変更する必要があります。
 
 >[!NOTE]
 >
->パイプラインが使用中の場合、その時点でエンドツーエンドパイプラインのどの部分が実行されているかに応じて、AEMのアップデートまたはお客様のデプロイメントが成功しない場合があります。 エラーの応答は、リクエストが成功しなかったことを示しますが、理由は示しません。
+>APIは、AEMの更新または顧客のデプロイメントなど、パイプラインが使用中の場合、その時点でエンドツーエンドパイプラインのどの部分が実行されているかに応じて、成功しない場合があります。 エラーの応答は、リクエストが成功しなかったことを示しますが、理由は示しません。
 
-予定されている顧客コードのデプロイメントが、新しい値を持つ既存の変数に依存している場合があります。これは、現在のコードには適していません。これが問題となる場合は、変数の変更を加える方法をお勧めします。 そのためには、古いコードが新しい値を参照しないように、古い変数の値を変更する代わりに、新しい変数名を作成します。後日、新しいカスタマーリリースが安定したら、古い値を削除できます。
+予定されている顧客コードのデプロイメントが、新しい値を持つ既存の変数に依存している場合があります。これは、現在のコードには適していません。これが問題となる場合は、変数の変更を加えることをお勧めします。 そのためには、古いコードが新しい値を参照しないように、古い変数の値を変更する代わりに、新しい変数名を作成します。後日、新しいカスタマーリリースが安定したら、古い値を削除できます。
 
-同様に、変数の値はバージョン管理されないので、コードのロールバックによって、新しい値を参照することで問題を引き起こす場合があります。前述の加法変数戦略もこの場で役立ちます。
+同様に、変数の値はバージョン管理されないので、コードのロールバックによって、新しい値を参照することで問題を引き起こす場合があります。前述の変数の加算方法もここで役立ちます。
 
 この変数の加算方式戦略は、数日前のコードを再デプロイする必要がある災害復旧シナリオにも役立ちます。コードが参照する変数名と値は変わりません。これは、顧客が古い変数を削除する前に数日間待機するという手法に依存しています。この手法を使用していない場合、古いコードには参照できる適切な変数はありません。
