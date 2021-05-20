@@ -1,14 +1,13 @@
 ---
 title: ドメイン名ステータスの確認
 description: ドメイン名ステータスの確認
-translation-type: tm+mt
-source-git-commit: e99c8552e2afff677c08c859dd1044287053a40e
+exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 71%
 
 ---
-
 
 # ドメイン名ステータスの確認 {#check-status}
 
@@ -44,10 +43,10 @@ TXT の検証に成功しました。ただし、CDN のデプロイメントは
 
 ## IP許可リストの既存のCDN設定{#pre-existing-cdn}
 
-IP許可リスト、SSL証明書、またはカスタムドメイン名のCDN設定を含む環境を使用しているお客様の場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。 UIに表示されるメッセージは、お客様がUIを介して既存の環境設定をすべて移行した後、消えます。メッセージが消えるまでに1 ～ 2営業日かかる場合があります。
+IP許可リスト、SSL証明書またはカスタムドメイン名の既存のCDN設定を含む環境を使用している場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。 顧客がUIを介して既存のすべての環境設定を完全に移行すると、UIに表示されるメッセージが消えます。メッセージが消えるまでに1 ～ 2営業日かかる場合があります。
 
 >[!NOTE]
->既存の設定を表示および管理するには、UIから追加する必要があります。 詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
+>既存の設定を表示および管理するには、UIを使用して追加する必要があります。 詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
 
 ![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
 
