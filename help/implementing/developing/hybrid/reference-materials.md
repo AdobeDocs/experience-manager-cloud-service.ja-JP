@@ -1,14 +1,13 @@
 ---
 title: SPA 参照資料
 description: 単一ページアプリケーション API リファレンスとソースコードリポジトリーの概要
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
 
 ---
-
 
 # SPA 参照資料 {#spa-reference-materials}
 
