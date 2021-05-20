@@ -1,14 +1,13 @@
 ---
 title: ContextHub
 description: ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。
-translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+exl-id: 604477c6-d96a-441f-b5fc-5def93832478
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub {#contexthub}
 
@@ -45,6 +44,6 @@ ContextHub ストアは、コンテキストデータをクライアント上に
 * デベロッパーは、[カスタムストアタイプを作成](extending-contexthub.md#creating-custom-store-candidates)できます。
 * 開発者は、JavaScript を使用して[ストアデータにアクセス](adding-contexthub.md#interacting-with-contexthub-stores)できます。
 
-## セグメント化  {#segmentation}
+## セグメント化 {#segmentation}
 
 ContextHub には、セグメントの管理や、現在のコンテキストで解決されるセグメントの判断をするセグメント化エンジンが含まれています。いくつかのセグメントが定義されています。JavaScript API を使用して、[解決されたセグメントを判断](adding-contexthub.md#determining-resolved-contexthub-segments)できます。
