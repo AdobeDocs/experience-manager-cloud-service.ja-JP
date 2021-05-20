@@ -1,14 +1,13 @@
 ---
 title: Query Builder 用のカスタム述語エバリュエーターの実装
 description: AEM の Query Builder を使用すると、コンテンツリポジトリーへのクエリをカスタマイズして簡単に実行できます
-translation-type: tm+mt
-source-git-commit: 6b754a866be7979984d613b95a6137104be05399
+exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '667'
+ht-degree: 96%
 
 ---
-
 
 # Query Builder 用のカスタム述語エバリュエーターの実装 {#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
