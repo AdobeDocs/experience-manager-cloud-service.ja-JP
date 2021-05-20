@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要
-description: 'Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。 '
-translation-type: tm+mt
-source-git-commit: 6b68c52235bae033b429a2d4c84f7c31c75b0fa2
+description: Adobe Experience Manager as a Cloud Service のアーキテクチャの概要。
+exl-id: fb169e85-ac19-4962-93d9-abaed812f948
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service のアーキテクチャの概要 {#an-introduction-to-the-architecture-adobe-experience-manager-as-a-cloud-service}
 
@@ -82,7 +81,7 @@ AEM プログラムは、次のものを含んだコンテナです。
 |  プログラム要素 |  数 |
 |--- |--- |
 | コードリポジトリー（Git） |  1 |
-| ベースラインイメージ（Sites または Assets） |  3 |
+| ベースラインイメージ（Sites または Assets） |  1 |
 | ステージ環境と実稼動環境のセット（1 対 1 対応） | 0 または 1 |
 | 非実稼動環境（開発またはデモ） | 0～N |
 | 各環境のパイプライン | 0 または 1 |
