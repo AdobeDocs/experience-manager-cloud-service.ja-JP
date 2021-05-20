@@ -1,14 +1,13 @@
 ---
 title: DNS レコードのステータスの確認
 description: DNS レコードのステータスの確認
-translation-type: tm+mt
-source-git-commit: b76a22469f248dde316dcaa514a906fe4361afd1
+exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 100%
 
 ---
-
 
 # DNS レコードのステータスの確認 {#check-dns-record-status}
 
