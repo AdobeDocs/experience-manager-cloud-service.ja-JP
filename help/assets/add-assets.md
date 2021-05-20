@@ -4,7 +4,6 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: アセット管理，アップロード
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-translation-type: tm+mt
 source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
 workflow-type: tm+mt
 source-wordcount: '2067'
@@ -12,9 +11,9 @@ ht-degree: 85%
 
 ---
 
-# [!DNL Adobe Experience Manager]追加 [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}としてにデジタルアセット
+# [!DNL Adobe Experience Manager]に[!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}としてデジタルアセットを追加する
 
-[!DNL Adobe Experience Manager Assets] 様々な種類のデジタルアセットを様々なソースから受け取ることができます。バイナリと作成されたレンディションを保存し、様々なワークフローと[!DNL Adobe Sensei]サービスを使用してアセット処理を行い、多くのサーフェスに多数のチャネルを配信できます。
+[!DNL Adobe Experience Manager Assets] では、様々な種類のデジタルアセットを様々なソースから受け取ります。バイナリと作成されたレンディションを格納し、様々なワークフローと[!DNL Adobe Sensei]サービスを使用してアセット処理を実行し、多くのサーフェスにわたる多数のチャネルを通じて配布できます。
 
 [!DNL Adobe Experience Manager] は、アップロードされたデジタルファイルのバイナリコンテンツを、リッチメタデータ、スマートタグ、レンディションおよびその他のデジタルアセット管理（DAM）サービスで強化します。画像、ドキュメント、生の画像ファイルなど、様々な種類のファイルを、ローカルフォルダーまたはネットワークドライブから [!DNL Experience Manager Assets] にアップロードできます。
 
@@ -24,13 +23,13 @@ ht-degree: 85%
 
 アップロードしたアセットに対して追加の処理をおこなうように選択することもできます。アセットのアップロード先のフォルダーに様々なアセット処理プロファイルを設定して、特定のメタデータ、レンディションまたは画像処理サービスを追加することができます。「[アップロード時のアセットの処理](#process-when-uploaded)」を参照してください。
 
-[!DNL Assets] には、次のアップロードメソッドが用意されています。使用する前に、アップロードオプションの使用事例と適用性を理解することをお勧めします。
+[!DNL Assets] には、次のアップロード方法が用意されています。使用する前に、アップロードオプションの使用事例と適用性を理解することをお勧めします。
 
 | アップロード方法 | 用途 | メインユーザー |
 |---------------------|----------------|-----------------|
 | [Assets コンソールユーザーインターフェイス](#upload-assets) | 不定期アップロード、操作の容易さ、ファインダーアップロード。大量のアセットをアップロードする場合は、使用しないでください。 | すべてのユーザー |
 | [アップロード API](#upload-using-apis) | アップロード中の動的な決定。 | デベロッパー |
-| [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | 容量の少ないアセットの取り込み。ただし、移行には適用されません。 | 管理者、マーケター |
+| [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja) | 容量の少ないアセットの取り込み。ただし、移行用ではありません。 | 管理者、マーケター |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) | クリエイティブやマーケターが、サポートされる [!DNL Creative Cloud] デスクトップアプリ内でアセットを操作する場合に役立ちます。 | クリエイティブ、マーケター |
 | [アセット一括取得ツール](#asset-bulk-ingestor) | 大規模な移行や、不定期に行われる一括取得に推奨。サポートされるデータストアに対してのみ。 | 管理者、デベロッパー |
 
@@ -104,7 +103,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * 既存アセットの置換：既存のアセットを置き換えると、アセットのメタデータと、既存のアセットに対して以前におこなった変更内容（注釈、切り抜きなど）は削除されます。
 * 別のバージョンの作成：既存のアセットの新しいバージョンがリポジトリに作成されます。[!UICONTROL タイムライン]に 2 つのバージョンを表示でき、必要に応じて、以前のバージョンに戻すことができます。
-* 両方を保持：両方のアセットを保持する場合は、新しいアセットの名前が変更されます。
+* 次の両方を保持します。両方のアセットを保持することを選択した場合、新しいアセットの名前が変更されます。
 
 [!DNL Assets] で重複アセットを保持するには、「**[!UICONTROL 保持]**」をクリックします。アップロードした重複アセットを削除するには、「**[!UICONTROL 削除]**」をクリックします。
 
@@ -168,15 +167,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL ジョブ履歴]:ジョブの以前のインスタンス。
    * [!UICONTROL アセット表示]：ターゲットフォルダーが存在する場合は、表示します。
 
-   ![インジェスタ構成用のツールバーオプション](assets/bulk-ingest-toolbar-options.png)
+   ![取り込み元構成のツールバーオプション](assets/bulk-ingest-toolbar-options.png)
 
-1回限りの一括インポートまたは定期的な一括インポートをスケジュールするには、次の手順に従います。
+1回限りの一括インポートまたは繰り返しの一括インポートをスケジュールするには、次の手順に従います。
 
 1. 一括インポート設定を作成します。
-1. 設定を選択し、ツールバーから「**[!UICONTROL スケジュール]**」を選択します。
-1. 1回のみのインジェストを設定するか、1時間ごと、1日ごと、または1週間ごとのスケジュールを設定します。 「**[!UICONTROL 送信]**」をクリックします。
+1. 設定を選択し、ツールバーの「**[!UICONTROL スケジュール]**」を選択します。
+1. 1回限りの取り込みを設定するか、1時間ごと、1日ごと、または1週間ごとのスケジュールを設定します。 「**[!UICONTROL 送信]**」をクリックします。
 
-   ![バルクインジェスタジョブのスケジュール](assets/bulk-ingest-schedule1.png)
+   ![一括取り込みジョブのスケジュール](assets/bulk-ingest-schedule1.png)
 
 ## デスクトップクライアントを使用したアセットのアップロード {#upload-assets-desktop-clients}
 
@@ -213,15 +212,15 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## ヒント、ベストプラクティス、制限事項{#tips-limitations}
 
-* バイナリの直接アップロードは、アセットをアップロードする新しい方法です。 [!DNL Experience Manager]ユーザーインターフェイス、[!DNL Adobe Asset Link]、[!DNL Experience Manager]デスクトップアプリなど、製品の機能とクライアントによって、デフォルトでサポートされています。 お客様のテクニカルチームがカスタマイズまたは拡張したカスタムコードでは、新しいアップロードAPIとプロトコルを使用する必要があります。
+* 直接バイナリアップロードは、アセットをアップロードする新しい方法です。 [!DNL Experience Manager]ユーザーインターフェイス、[!DNL Adobe Asset Link]、[!DNL Experience Manager]デスクトップアプリケーションなど、製品の機能とクライアントでは、この機能がデフォルトでサポートされています。 お客様の技術チームがカスタマイズまたは拡張するカスタムコードは、新しいアップロードAPIおよびプロトコルを使用する必要があります。
 
-* Adobeでは、[!DNL Experience Manager Assets]の各フォルダーに1000個以下のアセットを追加することを推奨します。 フォルダーにアセットを追加することはできますが、フォルダーへの移動速度の低下など、パフォーマンスの問題が発生する可能性があります。
+* Adobeでは、[!DNL Experience Manager Assets]の各フォルダーに1,000個以下のアセットを追加することをお勧めします。 フォルダーにアセットをさらに追加することもできますが、フォルダーへの移動速度の低下など、パフォーマンスの問題が発生する可能性があります。
 
-* [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)が[!DNL Adobe Analytics]でインプレッション数またはクリック数の追跡を有効にしている場合、再生成されたアセットIDは、[!DNL Analytics]でアセットにキャプチャされたデータを無効にします。
+* [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)で[!DNL Adobe Analytics]のインプレッション数またはクリック数の追跡が有効になっている場合、再生成されたアセットIDは、[!DNL Analytics]上のアセットに対して取り込まれたデータを無効化します。
 
-* 一部のアップロード方法では、ファイル名に[禁止文字](#filename-handling)を含むアセットのアップロードが中止されません。 文字は`-`記号に置き換えられます。
+* 一部のアップロード方法では、ファイル名に[禁止文字](#filename-handling)が含まれるアセットをアップロードしないようにする必要があります。 文字は`-`記号に置き換えられます。
 
-* ブラウザを使用したアセットのアップロードは、フラットファイルリストのみサポートし、ネストされたフォルダ階層はサポートしません。 ネストされたフォルダー内にすべてのアセットをアップロードするには、[デスクトップアプリ](#upload-assets-desktop-clients)を使用します。
+* ブラウザーを使用したアセットのアップロードでは、フラットなファイルリストのみがサポートされ、ネストされたフォルダー階層はサポートされません。 ネストされたフォルダー内のすべてのアセットをアップロードするには、[デスクトップアプリケーション](#upload-assets-desktop-clients)を使用することを検討してください。
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
