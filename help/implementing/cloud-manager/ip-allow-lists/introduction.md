@@ -1,14 +1,13 @@
 ---
 title: 概要 - Cloud Manager での IP 許可リスト
 description: 概要 - Cloud Manager での IP 許可リスト
-translation-type: tm+mt
-source-git-commit: 1304a0cfa67c38943b1a36c105fbd5eafb3f8c4f
+exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 
 ---
-
 
 # はじめに {#introduction}
 
