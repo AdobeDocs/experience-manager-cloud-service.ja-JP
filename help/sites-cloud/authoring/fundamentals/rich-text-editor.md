@@ -1,14 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  のリッチテキストエディターを使用して、コンテンツを作成します。'
 description: ' [!DNL Experience Manager]  リッチテキストエディターを使用したコンテンツのオーサリング'
-translation-type: tm+mt
-source-git-commit: fee73b5f5ba69422494efe554ac5aa62c046ad86
+exl-id: 15c175f8-11de-4475-87a9-920219a4c004
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 100%
 
 ---
-
 
 # リッチテキストエディターを使用したコンテンツのオーサリング {#use-rich-text-editor-to-author-content}
 
