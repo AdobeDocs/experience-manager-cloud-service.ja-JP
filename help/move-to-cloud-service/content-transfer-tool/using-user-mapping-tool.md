@@ -2,7 +2,6 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-translation-type: tm+mt
 source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
 workflow-type: tm+mt
 source-wordcount: '1185'
@@ -16,9 +15,9 @@ ht-degree: 58%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="ユーザマッピングツール"
->abstract="コンテンツ転送ツールを使用すると、ユーザーとグループを既存のAEMシステムからAEMにCloud Serviceとして移動できます。 Cloud Service作成者インスタンス上の重複ユーザーとグループを回避するために、既存のユーザーとグループをIMS IDにマッピングする必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="ユーザーマッピングツールを使用する際の重要な考慮事項"
+>title="ユーザーマッピングツール"
+>abstract="コンテンツ転送ツールを使用すると、ユーザーとグループを既存のAEMシステムからAEMにCloud Serviceとして移動できます。 Cloud Serviceオーサーインスタンス上でユーザーとグループが重複しないように、既存のユーザーとグループをIMS IDにマッピングする必要があります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="ユーザーマッピングツール使用時の重要な考慮事項"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="ユーザーマッピングツールの使用"
 
 
@@ -28,35 +27,35 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 ## 重要な検討事項 {#important-considerations}
 
-### 例外ケース{#exceptional-cases}
+### 例外的なケース{#exceptional-cases}
 
 次の特定のケースがログに記録されます。
 
 1. ユーザーの&#x200B;*jcr*&#x200B;ノードの`profile/email`フィールドに電子メールアドレスがない場合、該当するユーザーまたはグループは移行されますが、マッピングされません。
 
-1. 使用する組織IDのAdobeIdentity Managementシステム(IMS)システムで特定の電子メールが見つからない場合（または、別の理由でIMS IDを取得できない場合）、該当するユーザーまたはグループは移行されますが、マッピングされません。
+1. 使用する組織IDのIdentity Managementシステム(IMS)Adobeで特定の電子メールが見つからない場合（または別の理由でIMS IDを取得できない場合）、該当するユーザーまたはグループは移行されますが、マッピングされません。
 
 1. ユーザーが現在無効になっている場合は、無効になっていない場合と同じように扱われます。通常どおりマッピングおよび移行され、クラウドインスタンス上では無効のままになります。
 
-1. ターゲットAEMCloud Serviceインスタンスに、ソースAEMインスタンスのユーザーの1人と同じユーザー名(rep:principalName)のユーザーが存在する場合、問題のユーザーまたはグループは移行されません。
+1. ターゲットAEMCloud Serviceインスタンス上に、ソースAEMインスタンス上のユーザーと同じユーザー名(rep:principalName)を持つユーザーが存在する場合、該当するユーザーまたはグループは移行されません。
 
 ### その他の考慮事項{#additional-considerations}
 
-* **取り込み前にクラウドインスタンス上の既存のコンテンツをワイプ**&#x200B;という設定が設定されている場合、既存のリポジトリ全体と共に転送済みのCloud Serviceが削除され、コンテンツを取り込む新しいリポジトリが作成されます。 また、これにより、ターゲットCloud Serviceインスタンスに対する権限を含むすべての設定もリセットされ、**administrators**&#x200B;グループに追加された管理者ユーザーに対してtrueになります。 CTTのアクセストークンを取得するには、管理者ユーザーを&#x200B;**administrators**&#x200B;グループに再度追加する必要があります。
+* 「**取得前にCloudインスタンス上の既存のCloud Serviceを消去**」設定が指定されている場合、既に転送されたユーザーは既存のリポジトリ全体と共に削除され、コンテンツを取り込むための新しいリポジトリが作成されます。 また、ターゲットCloud Serviceインスタンスに対する権限を含むすべての設定もリセットされ、管理者ユーザーが&#x200B;**administrators**&#x200B;グループに追加された場合はtrueになります。 CTTのアクセストークンを取得するには、管理者ユーザーを&#x200B;**administrators**&#x200B;グループに再追加する必要があります。
 
-* ユーザーマッピングを使用してCTTを実行する前に、ターゲットCloud ServiceAEMインスタンスから既存のユーザーを削除することをお勧めします。 これは、ソースAEMインスタンスからターゲットAEMインスタンスに移行するユーザー間で競合が発生するのを防ぐためです。 ソースAEMインスタンスとターゲットAEMインスタンスに同じユーザが存在する場合、取り込み中に競合が発生します。
+* ユーザーマッピングを使用してCTTを実行する前に、ターゲットCloud ServiceのAEMインスタンスから既存のユーザーを削除することをお勧めします。 これは、ユーザーをソースのAEMインスタンスからターゲットのAEMインスタンスに移行する際の競合を防ぐためです。 ソースAEMインスタンスとターゲットAEMインスタンスに同じユーザーが存在する場合、取り込み中に競合が発生します。
 
-* コンテンツのトップアップを行う場合、前回の転送以降変更がないのでコンテンツが転送されないと、その間にユーザやグループが変更された場合でも、そのコンテンツに関連付けられたユーザやグループも転送されません。 これは、ユーザーとグループが、関連付けられているコンテンツと共に移行されるためです。
+* コンテンツ追加を行う際、前回の転送以降に変更がなかったのでコンテンツが転送されない場合、その間にユーザやグループが変更されても、そのコンテンツに関連付けられたユーザやグループも転送されない。 これは、ユーザーとグループが、関連付けられているコンテンツと共に移行されるためです。
 
-* 取り込みは、次のシナリオで失敗します。
+* 取り込みは次のシナリオで失敗します。
 
-1. ターゲットAEMCloud Serviceインスタンスに、異なるユーザー名を持ち、ソースAEMインスタンスのユーザーの1人と同じ電子メールアドレスを持つユーザーが含まれる場合。
+1. ターゲットのAEMCloud Serviceインスタンスに、別のユーザー名を持つが、ソースのAEMインスタンスのユーザーの1人と同じEメールアドレスを持つユーザーがいる場合。
 
-1. ソースAEMインスタンスに2人のユーザーが存在し、ユーザー名は異なり、電子メールアドレスは同じ場合。 AEMをCloud Serviceとして使用する場合、2人のユーザーに同じ電子メールアドレスを割り当てることはできません。
+1. ソースAEMインスタンス上に、ユーザー名は異なり、Eメールアドレスが同じ2人のユーザーがいる場合。 AEM as aCloud Serviceでは、2人のユーザーに同じ電子メールアドレスを割り当てることはできません。
 
 ## ユーザーマッピングツールの使用 {#using-user-mapping-tool}
 
-ユーザーマッピングツールはAPIを使用し、AdobeIdentity Managementシステム(IMS)ユーザーを電子メールで検索し、IMS IDを返すことができます。 この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
+Adobeマッピングツールは、Identity Management System(IMS)ユーザーを電子メールで検索し、そのIMS IDを返すAPIを使用します。 この API では、ユーザーが自分の組織のクライアント ID、クライアントシークレット、アクセスまたはベアラートークンを作成する必要があります。
 
 これを設定するには、次の手順に従います。
 
