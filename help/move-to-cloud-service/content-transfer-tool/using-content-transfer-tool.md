@@ -15,29 +15,29 @@ ht-degree: 66%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_prereqs"
->title="コンテンツ転送ツールを使用する際の重要な考慮事項"
->abstract="JavaおよびAEMのバージョン、サポートされているデータストアタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールを使用する際の重要な考慮事項を確認します。"
+>title="コンテンツ転送ツール使用時の重要な考慮事項"
+>abstract="JavaとAEMのバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="ベストプラクティスとガイドライン"
 
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
-* コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。AEMより前のバージョンを使用している場合は、コンテンツ転送ツールを使用するには、コンテンツリポジトリをAEM 6.5にアップグレードする必要があります。
+* コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。AEMより古いバージョンの場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリをAEM 6.5にアップグレードする必要があります。
 
-* AEM環境上でJavaを設定する必要があります。これにより、AEMを開始するユーザーが`java`コマンドを実行できるようになります。
+* AEMを起動するユーザーが`java`コマンドを実行できるように、AEM環境でJavaを設定する必要があります。
 
-* バージョン1.3.0のインストール時には、古いバージョンのコンテンツ転送ツールをアンインストールすることをお勧めします。これは、ツールに大きなアーキテクチャ変更があったためです。 1.3.0では、新しいマイグレーションセットを作成し、新しいマイグレーションセットで抽出と取り込みを再実行する必要もあります。
+* バージョン1.3.0をインストールする際は、古いバージョンのコンテンツ転送ツールをアンインストールすることをお勧めします。これは、ツールに大きなアーキテクチャ変更があったためです。 1.3.0では、新しい移行セットを作成し、新しい移行セットに対して抽出と取り込みを再実行する必要もあります。
 
 * コンテンツ転送ツールは、ファイルデータストア、S3 データストア、共有 S3 データストア、Azure Blob Store データストアと共に使用できます。
 
 * *サンドボックス環境*&#x200B;を使用している場合は、環境が最新で最新のリリースにアップグレードされていることを確認してください。*実稼動環境*&#x200B;を使用している場合、環境は自動的に更新されます。
 
-* コンテンツ転送ツールを使用するには、ソースインスタンスの管理者ユーザーで、コンテンツの転送先のCloud ServiceインスタンスのローカルAEM **administrators**&#x200B;グループに属している必要があります。 権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
+* コンテンツ転送ツールを使用するには、ソースインスタンスの管理者で、コンテンツの転送先のCloud ServiceインスタンスのローカルAEM **administrators**&#x200B;グループに属している必要があります。 権限のないユーザーは、コンテンツ転送ツールを使用するアクセストークンを取得できません。
 
-* **「取り込み前にクラウドインスタンス上の既存のコンテンツをワイプ**」オプションが有効になっている場合、既存のリポジトリ全体が削除され、コンテンツを取り込む新しいリポジトリが作成されます。 つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**管理者**&#x200B;グループに追加された管理者ユーザーに対しても同じです。 CTTのアクセストークンを取得するには、ユーザーを&#x200B;**administrators**&#x200B;グループに再度追加する必要があります。
+* 「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを有効にすると、既存のリポジトリ全体が削除され、コンテンツを取り込む新しいリポジトリが作成されます。 つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、管理者ユーザーが&#x200B;**administrators**&#x200B;グループに追加された場合にも当てはまります。 CTTのアクセストークンを取得するには、ユーザーを&#x200B;**administrators**&#x200B;グループに再追加する必要があります。
 
-* アクセストークンは、特定の期間の後、または Cloud Service 環境のアップグレード後に、定期的に期限切れになる場合があります。アクセストークンの有効期限が切れると、Cloud Serviceインスタンスに接続できなくなり、新しいアクセストークンを取得する必要があります。 既存の移行セットに関連付けられているステータスアイコンが赤の雲アイコンに変わり、その上にカーソルを置くとメッセージが表示されます。
+* アクセストークンは、特定の期間の後、または Cloud Service 環境のアップグレード後に、定期的に期限切れになる場合があります。アクセストークンの有効期限が切れている場合、Cloud Serviceインスタンスに接続できなくなり、新しいアクセストークンを取得する必要があります。 既存の移行セットに関連付けられているステータスアイコンが赤の雲アイコンに変わり、その上にカーソルを置くとメッセージが表示されます。
 
-* コンテンツ転送ツール(CTT)は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、何らかのコンテンツ分析を実行しません。 例えば、CTTは、コンテンツを公開環境に取り込む際に、公開済みコンテンツと未公開コンテンツを区別しません。 移行セットで指定されている内容は何でも、選択したターゲットインスタンスに取り込まれます。 移行セットを作成者インスタンス、発行インスタンス、またはその両方に取り込むことができます。 コンテンツを実稼動インスタンスに移動する際に、コンテンツをターゲット作成者インスタンスに移動するには、CTTをソース作成者インスタンスにインストールし、同様に、コンテンツをターゲット発行インスタンスに移動するには、ソース発行インスタンスにCTTをインストールすることをお勧めします。
+* コンテンツ転送ツール(CTT)は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。 例えば、CTTは、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。 移行セットで指定されたコンテンツは、選択したターゲットインスタンスに取り込まれます。 ユーザーは、移行セットをオーサーインスタンス、パブリッシュインスタンス、またはその両方に取り込むことができます。 コンテンツを実稼動インスタンスに移動する際に、CTTをソースオーサーインスタンスにインストールして、コンテンツをターゲットオーサーインスタンスに移動し、同様にCTTをソースパブリッシュインスタンスにインストールして、コンテンツをターゲットパブリッシュインスタンスに移動します。
 
 * コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーやグループを IMS ID に自動的にマッピングする場合は、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を参照してください。
 
@@ -49,9 +49,9 @@ ht-degree: 66%
       * データの取り込み先として予定している環境のタイプ（ステージングまたは実稼働）
       * プログラム ID
 
-* 作成者の&#x200B;*インジェストフェーズ*&#x200B;は、作成者の展開全体を縮小します。 つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにしてください。
+* オーサーの&#x200B;*インジェストフェーズ*&#x200B;は、オーサーのデプロイメント全体をスケールダウンします。 つまり、オーサー AEM インスタンスは、インジェストプロセス全体で使用できなくなります。また、*取り込み*&#x200B;段階の実行中に Cloud Manager パイプラインが実行されないようにしてください。
 
-* ソースAEMシステムのデータストアとして`Amazon S3`または`Azure`を使用する場合は、保存されているBLOBを削除（ガベージコレクション）できないようにデータストアを設定する必要があります。 これにより、インデックスデータの整合性が確保され、この方法を構成できない場合、このインデックスデータの整合性が失われ、抽出に失敗する可能性があります。
+* ソースAEMシステム上のデータストアとして`Amazon S3`または`Azure`を使用する場合は、保存されたBLOBを削除（ガベージコレクション）できないように、データストアを設定する必要があります。 これにより、インデックスデータの整合性が確保され、この方法を構成できないと、このインデックスデータの整合性が欠落したために抽出が失敗する可能性があります。
 
 * カスタムインデックスを使用する場合は、コンテンツ転送ツールを実行する前に、`tika`ノードでカスタムインデックスを設定する必要があります。 詳細は、[新しいインデックス定義の準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#preparing-the-new-index-definition)を参照してください。
 
@@ -74,8 +74,8 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="コンテンツ転送ツールの実行"
->abstract="コンテンツ転送ツールを使用して、コンテンツをCloud ServiceとしてAEMに移行する方法（作成者/公開）を説明します。"
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを参照"
+>abstract="コンテンツ転送ツールを使用して、コンテンツをCloud Service（オーサー/パブリッシュ）としてAEMに移行する方法を説明します。"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" デモを見る"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration" text="チュートリアル — コンテンツ転送ツールの使用"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
@@ -83,11 +83,11 @@ ht-degree: 66%
 
 この節では、コンテンツ転送ツールを使用してコンテンツを AEM as a Cloud Service（オーサー／パブリッシュ）に移行する方法について説明します。
 
-1. Adobe Experience Managerを選択し、ツール/**操作** -> **コンテンツの移行**&#x200B;に移動します。
+1. Adobe Experience Managerを選択し、ツール/ **操作** -> **コンテンツの移行**&#x200B;に移動します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
 
-1. **コンテンツの移行**&#x200B;ウィザードから「**コンテンツの転送**」オプションを選択します。
+1. **コンテンツ移行**&#x200B;ウィザードで「**コンテンツ転送**」オプションを選択します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
 
@@ -100,9 +100,9 @@ ht-degree: 66%
    >[!NOTE]
    >既存の移行セットがある場合、コンソールには既存の移行セットのリストが表示され、現在のステータスが表示されます
 
-   さらに、**ユーザーマッピング設定を作成**&#x200B;をクリックして、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)にアクセスします。
+   さらに、「**ユーザーマッピング設定を作成**」をクリックして、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool)にアクセスします。
 
-1. 以下の説明に従って、**移行セットを作成**&#x200B;画面のフィールドに値を入力します。
+1. **移行セットを作成**&#x200B;画面のフィールドに、以下のように値を入力します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
 
@@ -113,19 +113,19 @@ ht-degree: 66%
    1. **クラウドサービス設定**：移行先の AEM as a Cloud Service オーサーの URL を入力します。
 
       >[!NOTE]
-      >コンテンツ転送アクティビティ中に、一度に10個までの移行セットを作成し、維持できます。
+      >コンテンツ転送アクティビティ中に、一度に10個までの移行セットを作成および管理できます。
       >さらに、特定の環境（*ステージング*、*開発*、*実稼動*&#x200B;のいずれか）ごとに個別に移行セットを作成する必要があります。
 
    1. **アクセストークン**：アクセストークンを入力します。
 
       >[!NOTE]
-      >「**アクセストークンを開く**」ボタンを使用してアクセストークンを取得できます。ターゲットCloud Serviceインスタンスで、AEM管理者のグループに属していることを確認する必要があります。
+      >「**アクセストークンを開く**」ボタンを使用してアクセストークンを取得できます。ターゲット管理者インスタンスのAEM管理者のグループに属していることを確認する必要があります。Cloud Service
 
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
       1. **バージョンを含める**：必要に応じて選択します。
 
-      1. **IMSユーザーおよびグループからのマッピングを含める**:「IMSユーザーとグループ」からマッピングを含めるオプションを選択します。詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
+      1. **IMSユーザーおよびグループからのマッピングを含める**:「 」オプションを選択して、IMSユーザーとグループのマッピングを含めます。詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
 
@@ -137,16 +137,16 @@ ht-degree: 66%
          >* `/etc` (一部の `/etc` パスはCTTで選択できます)。
 
 
-1. **移行セットを作成**&#x200B;の詳細画面のすべてのフィールドに入力したら、「**保存**」をクリックします。
+1. **移行セットを作成**&#x200B;の詳細画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
 
 1. 移行セットが&#x200B;*概要*&#x200B;ページに表示されます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
 
-   この画面に表示される既存のマイグレーションセットはすべて、*概要*&#x200B;ページに表示され、現在のステータスとステータス情報が表示されます。 以下に示すアイコンの一部が表示されます。
+   既存の移行セットはすべて、*概要*&#x200B;ページに、現在のステータスとステータス情報と共に表示されます。 以下に示すアイコンの一部が表示されます。
 
    * *赤い雲*&#x200B;は、抽出プロセスを完了できないことを示しています。
-   * *緑のクラウド*&#x200B;は、抽出プロセスを完了できることを示します。
+   * *緑の雲*&#x200B;は、抽出プロセスを完了できることを示します。
    * *黄色のアイコン*&#x200B;は、その既存の移行セットが同じインスタンス内の他のユーザーによって作成されたことを示しています。
 
 1. 概要ページで移行セットを選択し、「**プロパティ**」をクリックして、移行セットのプロパティを表示または編集します。プロパティの編集中は、コンテナ名またはサービス URL を変更できません。
@@ -156,9 +156,9 @@ ht-degree: 66%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
->title="コンテンツ抽出"
+>title="コンテンツの抽出"
 >abstract="抽出とは、ソースAEMインスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。 移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="トップアップ抽出"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-extraction-process" text="追加抽出"
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 
@@ -204,7 +204,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
 >title="コンテンツの取り込み"
->abstract="インジェストとは、ターゲットセットから移行Cloud Serviceインスタンスにコンテンツを取り込むことです。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
+>abstract="取り込みとは、移行セットからターゲットCloud Serviceインスタンスにコンテンツを取り込むことです。 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#top-up-ingestion-process" text="追加インジェスト"
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
@@ -212,11 +212,11 @@ ht-degree: 66%
 1. *概要*&#x200B;ページで移行セットを選択し、「**取得**」をクリックして取得を開始します。**移行セットの取得**&#x200B;ダイアログボックスが表示されます。「**取得**」をクリックして、取得段階を完了します。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
 
    >[!IMPORTANT]
-   >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリー全体が削除され、コンテンツの取り込み先となる新しいリポジトリーが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**管理者**&#x200B;グループに追加された管理者ユーザーに対しても同じです。
+   >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリー全体が削除され、コンテンツの取り込み先となる新しいリポジトリーが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、管理者ユーザーが&#x200B;**administrators**&#x200B;グループに追加された場合にも当てはまります。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
-   さらに、**カスタマーケア**&#x200B;をクリックして、上の図のようにチケットをログに記録します。 詳しくは、「[コンテンツ転送ツールの使用に関する重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)」も参照してください。
+   さらに、上の図に示すように、「**カスタマーケア**」をクリックして、チケットをログに記録します。 詳しくは、 [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)の使用に関する重要な考慮事項を参照してください。
 
 1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
 
@@ -237,7 +237,7 @@ ht-degree: 66%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
    >[!IMPORTANT]
-   >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、**カスタマーケア**&#x200B;をクリックして、前の図のようにチケットをログに記録します。
+   >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、前の図に示すように、「**カスタマーケア**」をクリックして、チケットをログに記録します。
 
 
 ### 移行セットのログの表示 {#viewing-logs-migration-set}
@@ -245,11 +245,11 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_logs"
 >title="ログの表示"
->abstract="取り込みの抽出が完了したら、ログでエラーや警告がないか確認します。 エラーは、報告された問題に対処するか、Adobeサポートに問い合わせて、即座に対処する必要があります。"
+>abstract="取得の抽出が完了したら、エラーや警告がないかログを確認します。 エラーが発生した場合は、報告された問題に対処するか、Adobeサポートに問い合わせて、直ちに対処する必要があります。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#troubleshooting" text="トラブルシューティング"
 >additional-url="https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/support-for-experience-cloud.ug.html" text="アドビサポートのご案内"
 
-各手順(抽出と取り込み)が完了したら、ログをチェックし、エラーを探します。  エラーは、報告された問題に対処するか、Adobeサポートに問い合わせて、即座に対処する必要があります。
+各手順（抽出と取り込み）が完了すると、ログを確認してエラーを探します。  エラーが発生した場合は、報告された問題に対処するか、Adobeサポートに問い合わせて、直ちに対処する必要があります。
 
 既存の移行セットのログを&#x200B;*概要*&#x200B;ページから表示できます。それには、次の手順に従います。
 
