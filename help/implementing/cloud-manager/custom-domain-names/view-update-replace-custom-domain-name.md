@@ -1,14 +1,13 @@
 ---
 title: カスタムドメイン名の表示、更新、置換
 description: カスタムドメイン名の表示、更新、置換
-translation-type: tm+mt
-source-git-commit: d1301d4414f87b30f5ab732eacbb61c96f102262
+exl-id: 33da9270-b73c-46e5-9cd4-5b4eb3928396
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 100%
 
 ---
-
 
 # カスタムドメイン名の表示、更新、置換 {#view-update-replace-cdn}
 
@@ -16,5 +15,3 @@ ht-degree: 100%
 
 >[!NOTE]
 >SSL 証明書は有効で、カスタムドメイン名を含んでいる必要があります。
-
-
