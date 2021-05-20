@@ -1,14 +1,13 @@
 ---
 title: 既知の問題
 description: リリースノート（Adobe Experience Manager as a Cloud Service の既知の問題）
-translation-type: tm+mt
-source-git-commit: 165dc4af656ce1bc431d2f921775ebda4cf4de9f
+exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 100%
 
 ---
-
 
 # 既知の問題 {#known-issues}
 
@@ -44,6 +43,6 @@ Adobe Experience Manager Assets の機能のうち、基盤機能をベースに
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager（AEM）as a Cloud Service の主な変更点](aem-cloud-changes.md)
->* [廃止される機能および削除された機能](deprecated-removed-features.md)
->* [リリースノート](home.md)
+* [非推奨（廃止予定）の機能と削除された機能](deprecated-removed-features.md)
+* [リリースノート](home.md)
 
