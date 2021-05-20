@@ -1,21 +1,20 @@
 ---
 title: AEM Modernization Tools
-description: 'AEM最新化ツール '
-translation-type: tm+mt
-source-git-commit: 20aba41de904cf765037ef70fc137773fc602bc0
+description: AEM Modernization Tools
+exl-id: bc6efab1-cea0-4808-9bd4-495cd871bd75
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 77%
 
 ---
 
-
 # AEM Modernization Tools {#aem-moderization-tools}
 
-AEM Modernizationツールは、従来のAEM機能をCloud ServiceとしてAEMの最新のサポートされる機能に変換するために使用できるユーティリティスイートを提供します。
+AEM Modernization Toolsは、従来のAEM機能を、AEM as a Modernization and Supportedの最新の機能に変換するためのユーティリティスイートを提供します。
 
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 AEM Modernization Tools を使用すると、以下の変換を容易におこなえるようになります。
 
@@ -32,4 +31,3 @@ AEM Modernize Tools を使用した計画、設定、開発について詳しく
 ## AEM Modernization Tools のインストールと実装 {#installing-implementing}
 
 インストールと実装については、**[Git リソース：AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools)**&#x200B;を参照してください。
-
