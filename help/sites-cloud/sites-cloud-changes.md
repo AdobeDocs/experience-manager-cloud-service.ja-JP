@@ -1,14 +1,13 @@
 ---
 title: AEM Cloud Service の AEM Sites の主な変更点
-description: 'AEM Cloud Service の AEM Sites の主な変更点 '
-translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+description: AEM Cloud Service の AEM Sites の主な変更点
+exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
 ---
-
 
 # AEM Sites as a Cloud Service の主な変更点 {#notable-changes}
 
@@ -18,12 +17,12 @@ AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud
 >このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
->* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
->* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
->* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
->* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
+* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
+* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
+* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
+* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
+* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/cloud-service/overview.html)
 
 
 AEM Sites as a Cloud Service の変更点と追加機能は次のとおりです。
@@ -41,8 +40,7 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 こうしたアクションを開始したユーザーは、新しい UI（`/mnt/overlay/dam/gui/content/asyncjobs.html`）でアクションのステータスを確認できます。
 
 >[!NOTE]
->
->この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
+この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 
