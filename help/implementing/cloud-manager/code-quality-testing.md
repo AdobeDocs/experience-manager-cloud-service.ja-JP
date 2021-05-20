@@ -2,7 +2,6 @@
 title: コード品質テスト - Cloud Services
 description: コード品質テスト - Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '869'
