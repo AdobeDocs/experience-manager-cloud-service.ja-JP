@@ -1,14 +1,13 @@
 ---
 title: SPA エディターの概要
 description: この記事では、SPA エディターの包括的な概要と動作の仕組み（AEM 内での SPA エディターの詳細なインタラクションワークフローなど）を説明します。
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1641'
 ht-degree: 100%
 
 ---
-
 
 # SPA エディターの概要 {#spa-editor-overview}
 
