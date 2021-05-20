@@ -1,14 +1,13 @@
 ---
 title: AEM 向け SPA の開発
 description: この記事では、フロントエンド開発者が AEM 向けの SPA を開発する際に考慮すべき重要な問題と、開発済み SPA を AEM にデプロイする際に念頭に置くべきな SPA に関する AEM のアーキテクチャの概要を説明します。
-translation-type: tm+mt
-source-git-commit: dc6dc07fe62d3387e2c4bd9459734247dfe9c9b0
+exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 100%
 
 ---
-
 
 # AEM 向け SPA の開発 {#developing-spas-for-aem}
 
