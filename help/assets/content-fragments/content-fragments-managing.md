@@ -1,28 +1,27 @@
 ---
 title: コンテンツフラグメントの管理
-description: アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
-feature: Content Fragments
+description: アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法、およびヘッドレスコンテンツの基礎について説明します。
+feature: コンテンツフラグメント
 role: Business Practitioner
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-translation-type: tm+mt
 source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1746'
 ht-degree: 78%
 
 ---
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
 
-アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法を学習します。この方法は、ヘッドレスコンテンツの基盤です。
+アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法、およびヘッドレスコンテンツの基礎について説明します。
 
-[コンテンツフラグメントモデル](#creating-a-content-model)を定義したら、これらを使用して[コンテンツフラグメント](#creating-a-content-fragment)を作成できます。
+[コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して[コンテンツフラグメント](#creating-a-content-fragment)を作成できます。
 
-[コンテンツフラグメントエディター](#opening-the-fragment-editor)は、様々な[モード](#modes-in-the-content-fragment-editor)を提供し、以下を実行できます。
+[コンテンツフラグメントエディター](#opening-the-fragment-editor)には、次の操作を行うための様々な[モード](#modes-in-the-content-fragment-editor)が用意されています。
 
-* [コンテンツの編集](#editing-the-content-of-your-fragment) とバリエーションの [管理](#creating-and-managing-variations-within-your-fragment)
-* [フラグメントへの注釈の追加](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [コンテンツをフラグメントに関連付ける](#associating-content-with-your-fragment)
+* [コンテンツの編](#editing-the-content-of-your-fragment) 集とバリエ [ーションの管理](#creating-and-managing-variations-within-your-fragment)
+* [フラグメントに注釈を付ける](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [フラグメントにコンテンツを関連付ける](#associating-content-with-your-fragment)
 * [メタデータの設定](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [構造ツリーの表示](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [JSON表現のプレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
@@ -145,19 +144,19 @@ ht-degree: 78%
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
 
-1. フラグメントエディターが開きます。 必要に応じて変更を行います。
+1. フラグメントエディターが開きます。 必要に応じて変更を加えます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
 
-1. 変更を加えた後、**保存**、**保存して閉じる**、または&#x200B;**閉じる**&#x200B;を必要に応じて使用します。
+1. 変更を加えた後、必要に応じて&#x200B;**「保存**」、**「保存して閉じる」、**「**閉じる**」を使用します。
 
    >[!NOTE]
    >
-   >**保存して** 閉じる機能は、Savedropdownで使用でき **** ます。
+   >**保存して閉じ** るには、Savedropdownを使用 **** します。
 
    >[!NOTE]
    >
-   >**保存して閉じる**&#x200B;と&#x200B;**閉じる**&#x200B;はどちらもエディターを終了します。コンテンツフラグメントに対する各種オプションの動作について詳しくは、[保存、閉じる、バージョン](#save-close-and-versions)を参照してください。
+   >「**保存して閉じる**」と「**閉じる**」の両方がエディターを終了します。コンテンツフラグメントの様々なオプションの動作について詳しくは、「[保存、閉じる、バージョン](#save-close-and-versions)」を参照してください。
 
 ## コンテンツフラグメントエディターのモードとアクション {#modes-actions-content-fragment-editor}
 
@@ -195,14 +194,14 @@ ht-degree: 78%
 
    * **新規**:灰色
    * **ドラフト**:青
-   * **発行済み**:緑
+   * **公開済み**:緑
    * **変更済み**:オレンジ
    * **非アクティブ**:red
 
-* **[** 保存]: [ **保存して** 閉じる]オプションにアクセスできます。
+* **** 「保存」は、「保 **存して閉じる」オプションにアク** セスします。
 
-* 3つのドット(**...**)ドロップダウンを使用して、次の追加のアクションにアクセスできます。
-   * **ページ参照の更新**
+* 3つのドット(**...**)ドロップダウンから、追加のアクションにアクセスできます。
+   * **ページ参照を更新**
       * これにより、すべてのページ参照が更新されます。
    * **[クイック公開](#publishing-and-referencing-a-fragment)**
    * **[公開を管理](#publishing-and-referencing-a-fragment)**
@@ -216,12 +215,12 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 >
 >バージョン[を作成／比較したり元に戻したりする操作は、タイムラインから](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)もおこなえます。
 
-エディタには、次の様々なオプションがあります。
+エディターには、様々なオプションがあります。
 
-* **** 保存して **保存して閉じる**
+* **** 保存して保 **存して閉じる**
 
    * **** 保存すると、最新の変更が保存され、エディタに残ります。
-   * **保存して** 閉じると、最新の変更が保存され、エディターが終了します。
+   * **保存して閉じ** ると、最新の変更内容が保存され、エディターが終了します。
 
    >[!CAUTION]
    >
@@ -229,19 +228,19 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   >保存する前に、一連の変更を行ってエディターにとどまることができます。
+   >保存する前に、エディターに留まって一連の変更を加えることができます。
 
    >[!CAUTION]
    >
-   >変更を保存するだけでなく、アクションによって参照も更新され、必要に応じてディスパッチャーがフラッシュされます。 これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+   >変更を保存するだけでなく、アクションは参照を更新し、必要に応じてDispatcherがフラッシュされます。 これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
    >
-   >**「保存して**&#x200B;を閉じる」を使用し、フラグメントエディターにすばやく戻って変更を加え、保存する場合は、この点に注意してください。
+   >**「保存して閉じる」**&#x200B;を使用する場合は、この点に留意してから、フラグメントエディターにすばやく戻って、さらに変更を加えて保存してください。
 
 * **閉じる**
 
-   最新の変更（最後の&#x200B;**保存**&#x200B;以降に行われた変更）を保存せずに、エディタを終了します。
+   最新の変更を保存せずにエディターを終了します（**保存**&#x200B;以降に行った変更）。
 
-コンテンツフラグメントの編集中にAEMでは、変更をキャンセルした場合（保存せずに&#x200B;**閉じる**&#x200B;を使用）、以前のコンテンツを復元できるようにバージョンが自動的に作成されます。
+コンテンツフラグメントの編集中にAEMは自動的にバージョンを作成し、変更をキャンセルすると（保存せずに&#x200B;**閉じる**&#x200B;を使用して）以前のコンテンツを復元できるようにします。
 
 1. コンテンツフラグメントを開いて編集しようとすると、AEM は&#x200B;*編集セッション*&#x200B;が存在しているかどうかを示す cookie ベースのトークンの存在を確認します。
 
@@ -257,7 +256,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    >デフォルト値については、以下を参照してください。
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. ユーザーが編集をキャンセルすると、編集セッションの開始で作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
+3. ユーザーが編集をキャンセルすると、編集セッションの開始時に作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
 4. ユーザーが編集内容の「**保存**」を選択すると、更新された要素とバリエーションが保存され、トークンが削除されて編集セッションが終了します。
 
 ## フラグメントのコンテンツの編集 {#editing-the-content-of-your-fragment}
@@ -321,7 +320,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 選択されたバージョン **v&lt;*x.y*>**（右）
 
-これらは並べて表示されます。ここでは、
+これらは並べて表示され、次の場所に表示されます。
 
 * すべての相違点がハイライト表示されます
 
@@ -354,7 +353,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
 まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
-コンテンツフラグメントは、公開環境で使用するために公開する必要があります。 次の方法で公開できます。
+コンテンツフラグメントをパブリッシュ環境で使用するには、コンテンツフラグメントを公開する必要があります。 次の方法で公開できます。
 
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
