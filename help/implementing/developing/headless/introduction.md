@@ -1,18 +1,18 @@
 ---
 title: AEM Sites as a Cloud Service 向けヘッドレス開発
-description: コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてAEMがどのように連携し、エクスペリエンスを一元的に管理し、チャネル全体で提供できるかを学びます。
-translation-type: tm+mt
-source-git-commit: e7ca6dc841ba777384be74021a27d523d530a956
+description: コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてのAEMが連携し、エクスペリエンスを一元管理して複数のチャネルで提供する方法を説明します。
+exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
+source-git-commit: 469579cfe10227ab22bbe055d4c503d8ea978150
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 88%
+source-wordcount: '489'
+ht-degree: 61%
 
 ---
 
 
 # AEM Sites as a Cloud Service 向けヘッドレス開発 {#headless-development}
 
-コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてAEMがどのように連携し、エクスペリエンスを一元的に管理し、チャネル全体で提供できるかを学びます。
+コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてのAEMが連携し、エクスペリエンスを一元管理して複数のチャネルで提供する方法を説明します。
 
 ## 概要 {#overview}
 
@@ -47,28 +47,12 @@ AEM as a Cloud Service は、次の 3 つの強力なサービスを提供する
    * AEM Assets REST API では、コンテンツフラグメントの CRUD 操作をサポートしています。
    * [コンテンツフラグメントコアコンポーネントの JSON エクスポート](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)を使用すると、直接コンテンツ配信も可能です。
 
-## ヘッドレス入門ガイド {#getting-started}
+## AEMヘッドレスを使用した最初の手順{#first-steps}
 
-ヘッドレス入門ガイドでは、AEM as a Cloud Service を使用したエクスペリエンスの作成、管理、配信の簡単な道筋を 5 つの手順に分けて示します。各ガイドは前のガイドに基づいているので、じっくり順番に検討することをお勧めします。
+AEMヘッドレス機能を使い始めるには、様々なリソースを利用できます。 これらは様々な使用例を対象としていますが、すべてでAEMヘッドレス機能の明確な概要を示しています。
 
-1. [設定の作成](getting-started/create-configuration.md)
-1. [コンテンツフラグメントモデルの作成](getting-started/create-content-model.md)
-1. [アセットフォルダーの作成](getting-started/create-assets-folder.md)
-1. [コンテンツフラグメントの作成](getting-started/create-content-fragment.md)
-1. [コンテンツフラグメントへのアクセスと配信](getting-started/create-api-request.md)
-
-## 対象者 {#audience}
-
-[ヘッドレス入門ガイド](#getting-started)で説明されているタスクは、AEM のヘッドレス機能の基本的な包括的デモに必要です。テスト用 AEM インスタンスへの管理者アクセス権を持つユーザーは誰でも、これらのガイドに従って AEM でのヘッドレスな配信を理解できますが、開発者の経験を持つユーザーが最適です。
-
-ただし、実稼働状況では、これらのタスクは様々なペルソナによって実行され、実行回数も様々です。次に例を示します。
-
-* **管理者**：コンテンツの初期設定とフォルダー構造を、通常は 1 回のみまたは散発的にセットアップする必要があります。
-* **情報アーキテクト**：通常、組織のニーズの変化に応じて新しいモデルを追加します。
-* **コンテンツ作成者**：アーキテクトが定義したモデルに基づいて、新しいコンテンツをコンテンツフラグメントとして継続的に作成します。
-
-このヘッドレス入門ガイドでは、上記のタスクを一般に誰がどのような頻度で実行するかを説明します。
-
-## 次のステップ {#next-step}
-
-詳細に入る準備ができましたか？それでは、まず、ヘッドレス入門ガイドの第 1 部[設定の作成](getting-started/create-configuration.md)に目を通しましょう。
+| リソース | 説明 | タイプ | 対象者 | Est. 時刻 |
+|---|---|---|---|---|
+| [ヘッドレス開発者ジャーニー](/help/implementing/developing/headless-journey/overview.md) | 最初のヘッドレスプロジェクトでの運用を開始するまでのヘッドレス理論のAEMヘッドレス機能の包括的な概要については、まずこちらを参照してください。 | ガイド | 開発者向け | 1時間 |
+| [ヘッドレス入門ガイド](/help/implementing/developing/headless/getting-started/introduction.md) | 主なAEMヘッドレス機能の概要については、このクイックスタートの概要を参照してください。 | クイックスタート | 開発者、管理者 | 20 分 |
+| [AEMヘッドレス実践チュートリアルの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | 実践的なアプローチをお勧めする場合、このチュートリアルでは、シンプルなヘッドレスプロジェクトの作成に直接取り組みます。 | チュートリアル | 開発者向け | 2時間 |
