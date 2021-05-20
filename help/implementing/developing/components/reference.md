@@ -1,14 +1,13 @@
 ---
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
-translation-type: tm+mt
-source-git-commit: f9a6dbec25b8154fda8069ff213aaaaa1d443ca1
+exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '3675'
 ht-degree: 99%
 
 ---
-
 
 # コンポーネントリファレンスガイド {#components-reference-guide}
 
