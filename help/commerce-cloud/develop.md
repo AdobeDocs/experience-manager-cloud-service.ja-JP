@@ -2,14 +2,13 @@
 title: AEM Commerce for AEM as a Cloud Service の開発
 description: AEM プロジェクトアーキタイプを使用してコマース対応の AEM プロジェクトを生成する方法を説明します。AEM as a Cloud Service SDK でプロジェクトを構築してローカル開発環境にデプロイする方法を説明します。
 topics: Commerce, Development
-feature: Commerce Integration Framework
+feature: コマース統合フレームワーク
 version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 85%
@@ -28,7 +27,7 @@ AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づ�
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM用に提供されたCIF追加-OnをCloud Serviceとして使用することも、地域開発にも利用できます。 このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。
+CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as aCloud Service用に提供されたCIFアドオンもローカル開発に使用できます。 このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。
 
 CIF アドオンは Sling 機能アーカイブとして提供されます。ソフトウェア配布ポータルで利用できる zip ファイルには、2 つの Sling 機能アーカイブファイルが含まれています。1 つは AEM オーサー用、もう 1 つは AEM パブリッシュインスタンス用です。
 
@@ -83,11 +82,11 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
    ```
 
-   この変数は、AEM でコマースシステムへの接続に使用されます。また、CIFアドオンには、ローカルのリバースプロキシが含まれているので、Commerce GraphQLエンドポイントをローカルで使用できます。 これは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しをおこなう CIF クライアント側コンポーネントにも使用されます。
+   この変数は、AEM でコマースシステムへの接続に使用されます。また、CIFアドオンにはローカルリバースプロキシが含まれ、Commerce GraphQLエンドポイントがローカルで使用可能になります。 これは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しをおこなう CIF クライアント側コンポーネントにも使用されます。
 
    この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
-1. （オプション）ステージングされたカタログ機能を有効にするには、Magentoインスタンス用の統合トークンを作成する必要があります。 [概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
+1. （オプション）ステージングされたカタログ機能を有効にするには、Magentoインスタンスの統合トークンを作成する必要があります。 [概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
 
    `COMMERCE_AUTH_HEADER` という名前の OSGi シークレットを次の値に設定します。
 
@@ -101,7 +100,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
 >[!NOTE]
 >
->手順5で環境変数が設定されたのと同じターミナルウィンドウで、AEMをCloud ServiceSDKとして開始していることを確認してください。 別のターミナルウィンドウで開始する場合、または.jarファイルを重複クリックして環境変数が表示されていることを確認します。
+>手順5で設定した環境変数と同じターミナルウィンドウで、AEM as aCloud ServiceSDKを必ず起動します。 別のターミナルウィンドウで起動するか、.jarファイルをダブルクリックして、環境変数が表示されていることを確認します。
 
 OSGI コンソールを使用して設定を確認します：`http://localhost:4502/system/console/osgi-installer`。このリストには、機能モデルファイルで定義されている CIF アドオン関連バンドル、コンテンツパッケージ、OSGI 設定が含まれている必要があります。
 
@@ -135,7 +134,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIFコアコンポーネントは、付属の`all`パッケージを含めるか、CIFコンテンツパッケージと関連OSGIバンドルを個別に使用することで、どのプロジェクトでも使用できます。 CIF コアコンポーネントを手動でプロジェクトに追加するには、次の依存関係を使用します。
+CIFコアコンポーネントは、提供されている`all`パッケージを含めるか、CIFコンテンツパッケージと関連するOSGIバンドルを個別に使用することで、任意のプロジェクトで使用できます。 CIF コアコンポーネントを手動でプロジェクトに追加するには、次の依存関係を使用します。
 
 ```java
 <dependency>
@@ -169,7 +168,7 @@ CIFコアコンポーネントは、付属の`all`パッケージを含めるか
 
 ### AEM Venia 参照用ストアの使用
 
-CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、例のベストプラクティスのセットであり、独自の機能を開発するための開始点となる可能性があります。
+CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、ベストプラクティスの例と、独自の機能を開発するための潜在的な出発点として意図されています。
 
 Venia 参照用ストアを使い始めるには、Git リポジトリーをコピーし、必要に応じてプロジェクトをカスタマイズする開始を作成します。
 
