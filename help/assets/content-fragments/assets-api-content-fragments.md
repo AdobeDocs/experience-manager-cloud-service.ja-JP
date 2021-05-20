@@ -1,21 +1,20 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
-description: AEMのヘッドレス配信機能の重要な部分、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
-feature: Content Fragments,Assets HTTP API
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+description: AEMヘッドレス配信機能の重要な部分である、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
+feature: コンテンツフラグメント、Assets HTTP API
+exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 97%
 
 ---
 
-
 # AEM Assets HTTP API でのコンテンツフラグメントのサポート {#content-fragments-support-in-aem-assets-http-api}
 
 ## 概要 {#overview}
 
-AEMのヘッドレス配信機能の重要な部分、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
+AEMヘッドレス配信機能の重要な部分である、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
 
 >[!NOTE]
 >
@@ -209,7 +208,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 >
 >子アセットとフォルダーのアセットタイプによっては、それぞれの子エンティティを定義するすべてのプロパティが、子エンティティのリストに既に含まれている場合があります。または、この子エンティティリストのエンティティに対して、一部のプロパティのみ公開される場合もあります。
 
-### アセット {#assets}
+### Assets {#assets}
 
 アセットが要求されると、アセットのメタデータ（タイトルや名前など、それぞれのアセットスキーマで定義される情報）が応答で返されます。
 
@@ -221,9 +220,9 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。コンテンツフラグメントを使用すれば、テキスト、数値、日付など様々な要素を含む構造化データにアクセスできます。
 
-標準アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。**
+*標準*&#x200B;アセット（画像やオーディオなど）との違いがいくつかあるので、それらの処理には追加のルールが適用されます。
 
-#### 表現  {#representation}
+#### 表現 {#representation}
 
 コンテンツフラグメント：
 
@@ -286,7 +285,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 本文には、作成するコンテンツフラグメントの JSON 表現を含める必要があります。これには、コンテンツフラグメント要素に設定する必要がある初期コンテンツも含まれます。`cq:model` プロパティの設定が必須で、このプロパティが有効なコンテンツフラグメントモデルを指している必要があります。そうしないと、エラーが発生します。また、`Content-Type` ヘッダーを追加することも必要です。これは `application/json` に設定されます。
 
-### 更新 {#update}
+### アップデート {#update}
 
 使用方法は次のとおりです。
 
@@ -376,7 +375,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
    }
    ```
 
-## API リファレンス  {#api-reference}
+## API リファレンス {#api-reference}
 
 詳細な API リファレンスについては、こちらを参照してください。
 
@@ -392,4 +391,3 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 * [Assets HTTP API ドキュメント](/help/assets/mac-api-assets.md)
 * [AEM Gem セッション：OAuth](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
