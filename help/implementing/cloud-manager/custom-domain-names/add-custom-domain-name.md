@@ -1,14 +1,13 @@
 ---
 title: カスタムドメイン名の追加
 description: カスタムドメイン名の追加
-translation-type: tm+mt
-source-git-commit: 148a1f478aeabea970e46e7e565fccca7db6a7e9
+exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 100%
 
 ---
-
 
 # カスタムドメイン名の追加 {#adding-cdn}
 
