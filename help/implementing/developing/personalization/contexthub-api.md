@@ -1,14 +1,13 @@
 ---
 title: ContextHub JavaScript API リファレンス
 description: ContextHub コンポーネントをページに追加すると、ContextHub JavaScript API がスクリプトで使用できるようになります
-translation-type: tm+mt
-source-git-commit: 3277d7470c1abdcc1f759c87e2c1a7ffb3390f47
+exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub JavaScript API リファレンス {#contexthub-javascript-api-reference}
 
@@ -118,7 +117,7 @@ ContextHub セグメントを表します。`ContextHub.SegmentEngine.SegmentMan
 
 セグメント名を String 値として返します。
 
-#### getPath()  {#getpath}
+#### getPath() {#getpath}
 
 セグメント定義のリポジトリパスを String 値として返します。
 
@@ -198,7 +197,7 @@ ContextHub ストアのベースクラス。
 
 このストアに対する `ready` イベントを発生させます。この関数にパラメーターはなく、値を返しません。
 
-#### clean()  {#clean}
+#### clean() {#clean}
 
 すべてのデータをストアから削除します。この関数にパラメーターおよび戻り値はありません。
 
@@ -402,7 +401,7 @@ JSONP サービスへの最後の呼び出し以降キャッシュされてい�
 
 未加工の応答を表すオブジェクト。
 
-#### getServiceDetails()  {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 この ContextHub.Store.JSONPStore オブジェクトのサービスオブジェクトを取得します。サービスオブジェクトには、サービス URL を作成するのに必要なすべての情報が格納されています。
 
@@ -843,7 +842,7 @@ ContextHub.Utils.JSON.stringify({
 
 結合されたデータを格納したオブジェクト。
 
-#### cleanup()  {#cleanup}
+#### cleanup() {#cleanup}
 
 オブジェクトのコピーを作成し、値を含まないか、null 値または undefined 値を含むデータツリーの項目を探して削除し、コピーを返します。
 
@@ -855,7 +854,7 @@ ContextHub.Utils.JSON.stringify({
 
 クリーンアップされたツリーのコピー。
 
-#### getItem()  {#getitem}
+#### getItem() {#getitem}
 
 キーに対する値をオブジェクトから取得します。
 
@@ -912,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys()  {#getkeys}
+#### getKeys() {#getkeys}
 
 オブジェクトのデータツリーからすべてのキーを取得します。オプションで、特定のキーの子のキーのみを取得できます。オプションで、取得したキーのソート順を指定することもできます。
 
@@ -1097,7 +1096,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 登録されているストア候補を表すオブジェクト。要求されたストアタイプが登録されていない場合は、エラーがスローされます。
 
-#### getSupportedStoreTypes()  {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 ストア候補として登録されているストアタイプの名前を返します。この関数にパラメーターは必要ありません。
 
