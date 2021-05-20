@@ -1,7 +1,6 @@
 ---
 title: レスポンシブデザイン
 description: レスポンシブデザインを使用すると、同じエクスペリエンスを複数のデバイスで、複数の向きで効果的に表示できます。
-translation-type: tm+mt
 source-git-commit: a3b2a66958fd8d3a68b450938c5c18053f00b998
 workflow-type: tm+mt
 source-wordcount: '492'
@@ -32,7 +31,7 @@ ht-degree: 100%
 
 レスポンシブデザインの動作の実装について詳しくは、次のトピックを参照してください。
 
-* [メディアクエリ](#using-media-queries)
+* [メディアクエリー](#using-media-queries)
 * [可変グリッド](#developing-a-fluid-grid)
 * [アダプティブ画像](#using-adaptive-images)
 
