@@ -1,14 +1,13 @@
 ---
 title: レスポンシブレイアウト
 description: AEM では、ページにレスポンシブレイアウトを作成できます
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 99%
 
 ---
-
 
 # レスポンシブレイアウト {#responsive-layout}
 
@@ -231,9 +230,9 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
    >
    >上記の例では、フロートと非表示のアクションが使用可能になっています。これは、このレイアウトコンテナが親レイアウトコンテナ内にネストされているからです。
 
-   * **Unhide**
-components親コンポーネントを選択し、 
-**「非表示の** コンポーネントを表示」オプションこの例では、2 つのコンポーネントが非表示にされています。
+   * **コンポ**
+ーネントを表示親コンポーネントを選択し、 
+**「非表示のコンポーネ** ントを表示」オプションこの例では、2 つのコンポーネントが非表示にされています。
 
       ![コンポーネントの再表示](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    「**非表示のコンポーネントを表示**」オプションを選択すると、現在非表示のコンポーネントが元の場所で青色で表示されます。
