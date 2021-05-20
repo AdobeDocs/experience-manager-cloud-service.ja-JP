@@ -1,14 +1,13 @@
 ---
 title: AEM 技術基盤
 description: AEM の構造化および JCR、Sling、OSGi などの基本的なテクノロジーを含む、AEM の技術基盤の概要です。
-translation-type: tm+mt
-source-git-commit: 750fded1564de2b11f6c104cc70befc4453405b4
+exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 100%
 
 ---
-
 
 # AEM 技術基盤 {#aem-technical-foundations}
 
