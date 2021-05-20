@@ -1,14 +1,13 @@
 ---
 title: ローンチの編集
-description: 'ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。 '
-translation-type: tm+mt
-source-git-commit: ba7a8f5027b71ebdee7c84ed35d374fe22645a5a
+description: ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。
+exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 91%
 
 ---
-
 
 # ローンチの編集 {#editing-launches}
 
@@ -25,14 +24,14 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->開始内でページを移動することはできません。 この操作を試みると、次の警告メッセージが表示されます：
+>ローンチ内でページを移動することはできません。 この操作を試みると、次の警告メッセージがトリガーされます：
 >
->* 警告：このページは開始のソースです。 ページの移動は許可されません。
+>* 警告：このページはローンチのソースです。 ページの移動は許可されていません。
 
 
 ### ライブコピーへのローンチページサブジェクトの編集 {#editing-launch-pages-subject-to-a-live-copy}
 
-起動が[ライブコピー](/help/sites-cloud/administering/msm/overview.md)に基づいている場合は、次の操作を行います。
+ローンチが[ライブコピー](/help/sites-cloud/administering/msm/overview.md)に基づいている場合は、次のようになります。
 
 * コンポーネント（コンテンツやプロパティ）を編集するときにロック記号（小さな鍵アイコン）が表示されます。
 * 「**ライブコピー**」タブが&#x200B;**ページのプロパティ**&#x200B;に表示されます。
