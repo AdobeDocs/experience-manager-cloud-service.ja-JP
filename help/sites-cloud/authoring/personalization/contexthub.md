@@ -1,14 +1,13 @@
 ---
 title: ContextHub データを使用したページのプレビュー
 description: ContextHub ツールバーは、ContextHub ストアからのデータを表示し、ストアデータを変更することができ、コンテンツのプレビューに立ちます。
-translation-type: tm+mt
-source-git-commit: e361f24b943eff68982a37ac0dc2597f92450026
+exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub データを使用したページのプレビュー {#previewing-pages-using-contexthub-data}
 
