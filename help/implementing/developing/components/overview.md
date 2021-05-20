@@ -1,14 +1,13 @@
 ---
 title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
-translation-type: tm+mt
-source-git-commit: 83c27daae4e8ae2ae6a8f115c9da9527971c6ecb
+exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 
 ---
-
 
 # コンポーネントの概要 {#components-overview}
 
@@ -64,4 +63,3 @@ AEM インスタンスで利用可能なすべてのコンポーネントの概�
    `//element(*, cq:Component)`
 
 1. 「**[!UICONTROL 実行]**」をクリックするとコンポーネントがリストされます。
-
