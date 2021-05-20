@@ -4,7 +4,6 @@ description: Web ページに Dynamic Media ビデオまたは画像アセット
 feature: アセット管理
 role: Business Practitioner
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-translation-type: tm+mt
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '377'
@@ -16,11 +15,11 @@ ht-degree: 84%
 
 Web ページに埋め込んでビデオを再生したりアセットを表示したりする場合は、**[!UICONTROL 埋め込みコード]**&#x200B;機能を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
-URLを埋め込むのは、WCMとしてAdobe Experience Managerを使用&#x200B;_して_&#x200B;いない場合のみです。 WCMとしてExperience Managerを使用している場合は、[アセットをページ](adding-dynamic-media-assets-to-pages.md)に直接追加します。
+Adobe Experience ManagerをWCMとして使用して&#x200B;__&#x200B;しない場合にのみ、URLを埋め込みます。 WCMとしてExperience Managerを使用している場合は、[ページ](adding-dynamic-media-assets-to-pages.md)に直接アセットを追加します。
 
-[Web アプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)を参照してください。
+[WebアプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)を参照してください。
 
-詳しくは、[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)を参照してください。
+[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
@@ -44,7 +43,7 @@ URLを埋め込むのは、WCMとしてAdobe Experience Managerを使用&#x200B;
 
    [画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-1. 左側のレールで、ドロップダウンリストを選択し、「**[!UICONTROL ビューア]**」をタップします。
+1. 左側のレールで、ドロップダウンリストを選択して「**[!UICONTROL ビューア]**」をタップします。
 1. 左側のレールで、ビューアプリセット名をタップします。ビューアプリセットがアセットに適用されます。
 1. 「**[!UICONTROL 埋め込み]**」をタップします。
 1. **[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスで、コード全体をクリップボードにコピーしてから、「**[!UICONTROL 閉じる]**」をタップします。
