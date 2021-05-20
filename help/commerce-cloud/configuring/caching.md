@@ -1,9 +1,8 @@
 ---
 title: キャッシュとパフォーマンス
 description: GraphQL とコンテンツキャッシュを有効にしてコマース実装のパフォーマンス最適化に利用できる様々な設定について説明します。
-exl-id: 8b969821-5073-4540-a997-95c74a11e4f0
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '848'
 ht-degree: 99%
@@ -12,7 +11,7 @@ ht-degree: 99%
 
 # キャッシュとパフォーマンス {#caching}
 
-## コンポーネントとGraphQL応答のキャッシュ{#graphql}
+## コンポーネントおよびGraphQLの応答キャッシュ {#graphql}
 
 AEM CIF コアコンポーネントには、個々のコンポーネントの GraphQL 応答をキャッシュするための組み込みのサポートが既にあります。この機能は、GraphQL バックエンド呼び出しの数を大幅に減らすために使用できます。効果的なキャッシュは、特に、ナビゲーションコンポーネントのカテゴリツリーを取得したり、製品検索ページやカテゴリページに表示される利用可能なすべての集計／ファセット値を取得するなど、繰り返しクエリで実現できます。
 
