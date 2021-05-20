@@ -1,14 +1,13 @@
 ---
 title: セグメント化について
 description: セグメント化は、キャンペーンを作成するときの主要な考慮事項です。
-translation-type: tm+mt
-source-git-commit: 16725342c1a14231025bbc1bafb4c97f0d7cfce8
+exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 100%
 
 ---
-
 
 # セグメント化について {#understanding-segmentation}
 
