@@ -1,16 +1,15 @@
 ---
 title: ページへのワークフローの適用
 description: オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
-translation-type: tm+mt
-source-git-commit: b551a0b0d85d264feabf78942a381c4239fdbadb
+exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
 ---
 
-
-# ページへのワークフローの適用  {#applying-workflows-to-pages}
+# ページへのワークフローの適用 {#applying-workflows-to-pages}
 
 オーサリングでは、ワークフローを呼び出して、ページにアクションを実行することができます。複数のワークフローを適用することもできます。
 
