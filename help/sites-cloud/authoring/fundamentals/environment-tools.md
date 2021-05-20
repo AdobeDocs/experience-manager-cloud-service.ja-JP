@@ -1,14 +1,13 @@
 ---
 title: オーサリング環境とツール
 description: AEM のオーサリング環境は、コンテンツを編成および編集するための様々なメカニズムを提供しています
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 99%
 
 ---
-
 
 # オーサリング環境とツール {#authoring-the-environment-and-tools}
 
@@ -191,7 +190,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
    ![コンテンツツリー編集ボタン](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* [livecopy](/help/sites-cloud/administering/msm/overview.md)に含まれるページで、コンポーネントは別のページから継承されます。
+* [ライブコピー](/help/sites-cloud/administering/msm/overview.md)の一部であるページ。コンポーネントは別のページから継承されます。
 
 >[!NOTE]
 >
@@ -226,7 +225,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 * **参照**&#x200B;コンポーネントを使用した借りたコンテンツおよび貸したコンテンツのインスタンス（ここから参照元／参照先ページに移動可能）
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)（関連するローンチへのアクセスを提供）
 * [](/help/sites-cloud/administering/msm/overview.md)ライブコピー（選択したリソースに基づくすべてのライブコピーのパスを表示）
-* [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，詳細と様々なアクションを提供
+* [ブループリント](/help/sites-cloud/administering/msm/best-practices.md)（詳細と様々なアクションを提供）
 * [言語コピー](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)（詳細と各種アクションを提供）
 
 ## イベント - タイムライン {#events-timeline}
@@ -251,8 +250,8 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 * [ページをロールアウト](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
 * [ワークフローを開始](/help/sites-cloud/authoring/workflows/applying.md#starting-a-workflow-from-the-page-editor)
 * [ページをロック](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)
-* [ページを公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
-* [ページを非公開にする](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
+* [ページを発行](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-pages-1)
+* [ページを非公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)
 * [テンプレートを編集](/help/sites-cloud/authoring/features/templates.md)
 * [公開済みとして表示](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 * [管理画面で表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
