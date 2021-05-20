@@ -6,19 +6,18 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: コマース統合フレームワーク
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-translation-type: tm+mt
-source-git-commit: 577e5cb9d465c794f29e1b7ed11d26a954e1c072
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 89%
 
 ---
 
-# コマースマルチストアのセットアップ{#multi-store}
+# コマースマルチストアの設定{#multi-store}
 
 AEM CIF コアコンポーネントは複数の AEM サイト構造で使用でき、基盤となる GraphQL クライアントの実装は異なる Magento ストア／ストア表示に接続できます。これにより、複雑なマルチストア／マルチサイトの設定をプロジェクトに実装できます。
 
@@ -48,7 +47,7 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 
    >[!TIP]
    >
-   > コマースカタログは、IDまたはUIDを使用してアドレス指定できます。 UIDはMagento2.4.2で導入されました。コマースバックエンドがバージョン2.4.2以降のGraphQLスキーマをサポートしている場合にのみ有効にしてください。
+   > コマースカタログは、IDまたはUIDを使用して対処できます。 UIDはMagento2.4.2で導入されました。コマースバックエンドがバージョン2.4.2以降のGraphQLスキーマをサポートしている場合にのみ、これを有効にしてください。
 
 4. AEM Sites に子設定を割り当てます。
 
