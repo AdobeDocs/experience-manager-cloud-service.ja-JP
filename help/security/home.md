@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のセキュリティ
 description: Adobe Experience Manager as a Cloud Service のセキュリティに関するセルフヘルプリソースおよびドキュメントリンク
-translation-type: tm+mt
-source-git-commit: 24f26a5cc77158ea20a09b1f40cf3d849a70591f
+exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
+source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 97%
+source-wordcount: '430'
+ht-degree: 88%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service のセキュリティ {#aem-security-guide}
 
@@ -16,9 +15,9 @@ ht-degree: 97%
 
 ## セキュリティに関する主要な記事 {#key-articles}
 
-* [AEM as a Cloud Service のセキュリティ概要](/help/security/cloud-service-security-overview.md)
+* [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)
 * [AEM as a Cloud Service の IMS サポート ](ims-support.md)
-* [Cloud Serviceと同じサイトのAEM Cookieサポート](same-site-cookie-support.md)
+* [AEM as aCloud Serviceと同じサイトcookieのサポート](same-site-cookie-support.md)
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
@@ -32,7 +31,8 @@ ht-degree: 97%
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。 |
 | [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します。 |
-| [実装ユーザーガイド](/help/implementing/home.md) | 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。 |
+| [実装ユーザーガイド](/help/implementing/home.md) | AEMの強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
+| [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) | AEMの強力で柔軟なヘッドレス機能を通じて、このガイド付きジャーニーを調べ、最初のヘッドレスプロジェクトに備えます。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
