@@ -1,14 +1,13 @@
 ---
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
-translation-type: tm+mt
-source-git-commit: e70135d7f59fc46c24f73f109d027f3536ffbbd7
+exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2283'
 ht-degree: 96%
 
 ---
-
 
 # AEM as a Cloud Service の開発ガイドライン {#aem-as-a-cloud-service-development-guidelines}
 
@@ -86,7 +85,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ### ログ {#logs}
 
-ローカル開発の場合、ログエントリは       `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
+ローカル開発の場合、ログエントリは `/crx-quickstart/logs` フォルダーのローカルファイルに書き込まれます。
 
 クラウド環境では、開発者は Cloud Manager を使用してログをダウンロードするか、コマンドラインツールを使用してログを追跡することができます。<!-- See the [Cloud Manager documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Note that custom logs are not supported and so all logs should be output to the error log. -->
 
@@ -126,7 +125,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ローカル開発の場合、開発者は CRXDE Lite（`/crx/de`）と AEM Web コンソール（`/system/console`）に完全にアクセスできます。
 
-ローカル開発（SDKを使用）では、`/apps`と`/libs`を直接書き込むことができますが、これは、最上位環境ーが不変のCloudフォルダーとは異なります。
+（SDKを使用する）ローカル開発時に、`/apps`と`/libs`に直接書き込むことができます。これは、最上位フォルダーが不変なクラウド環境とは異なります。
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
@@ -158,7 +157,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムは、Developer ConsoleへのアクセスをAdmin Consoleの「Cloud Manager - Developer Role」で定義しますが、Sandboxプログラムの場合、AEMへのアクセスをCloud Serviceとして提供する製品プロファイルを持つユーザーは、Developer Consoleを利用できます。 すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスはAdmin Consoleの「Cloud Manager - Developer Role」で定義されます。サンドボックスプログラムの場合、開発者コンソールは、AEMへのアクセス権をCloud Serviceとして付与されている製品プロファイルを持つ任意のユーザーが利用できます。 すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
 
 ### AEM のステージング環境および実稼動環境用サービス {#aem-staging-and-production-service}
 
