@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート
 description: Experience Manager 2020.4.0 のリリースノート
-translation-type: tm+mt
-source-git-commit: 13774cc8684166c98f85bf4096d2c7de8d257746
+exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート {#release-notes}
 
