@@ -11,7 +11,7 @@ ht-degree: 90%
 
 # コードのデプロイ {#deploy-your-code}
 
-## Cloud Service{#deploying-code-with-cloud-manager}としてのAEMでのCloud Managerでのコードのデプロイ
+## AEM as aCloud Service{#deploying-code-with-cloud-manager}でのCloud Managerを使用したコードのデプロイ
 
 実稼働パイプライン（リポジトリ、環境、テスト環境）を設定したら、コードをデプロイする準備が整います。
 
@@ -49,15 +49,15 @@ ht-degree: 90%
       ![](assets/stage-deployment.png)
    **ステージテスト**&#x200B;には、以下のステップが含まれます。
 
-   * **製品機能のテスト**:Cloud Managerのパイプライン実行では、ステージ環境に対して実行するテストの実行がサポートされます。詳しくは、「[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)」を参照してください。
+   * **製品機能テスト**:Cloud Managerのパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。詳しくは、「[製品機能テスト](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)」を参照してください。
 
    * **カスタム機能テスト**:パイプライン内のこのステップは常に存在し、スキップできません。ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。\
       詳しくは、「[カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)」を参照してください。
 
-   * **カスタムUIテスト**:この手順はオプションの機能で、お客様はアプリケーションのUIテストを作成し、自動的に実行できます。UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。詳しくは、[カスタムUIテスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing)を参照してください。
+   * **カスタムUIテスト**:この手順は、お客様がアプリケーションのUIテストを作成し、自動的に実行できるオプションの機能です。UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。詳しくは、[カスタムUIテスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/functional-testing.html?lang=en#custom-ui-testing)を参照してください。
 
 
-   * **エクスペリエンスの監査**:パイプライン内のこのステップは常に存在し、スキップできません。実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。設定されたページがサービスに送信され、評価されます。結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
+   * **エクスペリエンス監査**:パイプライン内のこのステップは常に存在し、スキップできません。実稼働パイプラインの実行時に、チェックを実行するカスタム機能テストの後に、エクスペリエンスの監査手順が含まれます。設定されたページがサービスに送信され、評価されます。結果は情報提供であり、ユーザーはスコアおよび現在のスコアと以前のスコアの変化を確認できます。このインサイトは、現在のデプロイメントで前のバージョンになかった不具合が導入されるかどうかを判断するのに役立ちます。
 詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」を参照してください。
 
       ![](assets/stage-testing.png)
