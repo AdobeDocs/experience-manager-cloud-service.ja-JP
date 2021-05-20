@@ -1,14 +1,13 @@
 ---
 title: 'IP 許可リストの適用解除 '
 description: IP 許可リストの適用解除
-translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+exl-id: a8763120-9683-4805-bd10-3863a0e4ff6f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 100%
 
 ---
-
 
 # IP 許可リストの適用解除 {#apply-allow-list}
 
