@@ -2,16 +2,15 @@
 title: アセットマイクロサービスを使用したアセットの処理
 description: クラウドネイティブかつスケーラブルなアセット処理マイクロサービスを使用して、デジタルアセットを処理します。
 contentOwner: AG
-feature: Asset Compute Microservices,Workflow,Release Information,Asset Processing
+feature: asset computeマイクロサービス，ワークフロー，リリース情報，アセット処理
 role: Architect,Administrator
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 98%
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
-
 
 # アセットマイクロサービスを使用したアセットの取り込みと処理の概要 {#asset-microservices-overview}
 
@@ -80,8 +79,8 @@ Adobe Experience Manager は、アセット処理の完了後に後処理ワー�
 >[!MORELIKETHIS]
 >
 >* [アセットマイクロサービスの基本](asset-microservices-configure-and-use.md)
->* [サポートされているファイル形式](file-format-support.md)
->* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
->* [直接バイナリアクセスに関する Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
+* [サポートされているファイル形式](file-format-support.md)
+* [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)
+* [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
+* [直接バイナリアクセスに関する Apache Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)
 
