@@ -1,14 +1,13 @@
 ---
 title: ContextHub の設定
 description: Context Hub の設定方法について説明します。
-translation-type: tm+mt
-source-git-commit: b8bc27b51eefcfcfa1c23407a4ac0e7ff068081e
+exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub の設定 {#configuring-contexthub}
 
@@ -113,7 +112,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 | [aem.segmentation](sample-stores.md#aem-segmentation-sample-store-candidate) | 解決済みおよび未解決の ContextHub セグメントを格納します。ContextHub SegmentManager からセグメントを自動的に取得します |
 | [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) | ブラウザーの場所の緯度と経度を格納します。 |
 | [granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) | 多数のデバイスのプロパティと機能を定義し、現在のクライアントデバイスを検出します |
-| [granite.プロファイル](sample-stores.md#granite-profile-sample-store-candidate) | 現在のユーザーのプロファイルデータを格納します |
+| [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 現在のユーザーのプロファイルデータを格納します |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | デバイス情報、ブラウザーの種類、画面の向きなど、クライアントに関する情報を格納します |
 
 1. Experience Manager レールで、ツール／サイト／ContextHub をクリックまたはタップします。
