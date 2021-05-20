@@ -8,7 +8,6 @@ content-type: reference
 feature: 3D アセット
 role: Business Practitioner
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '2248'
@@ -22,11 +21,11 @@ Dynamic Media を使用すると、3D アセットを、没入感のあるエク
 
 * 3D アセットをワンクリックで公開（ツールバーの&#x200B;**[!UICONTROL クイック公開]**&#x200B;を使用）して URL を生成。
 * Adobe Dimension を使用した、高品質でインタラクティブなディメンショナルビューアプリセットで、3D アセットの表示のサポートを最適化。
-* 3D Media WCMコンポーネントを使用すると、3DアセットをAdobe Experience Manager Sitesのページに簡単に追加できます。
+* 3DメディアWCMコンポーネントを使用すると、3DアセットをAdobe Experience Manager Sitesページに簡単に追加できます。
 
 Dynamic Media で 3D アセットを使用するときに、追加のインストールは必要ありません。
 
-![3D靴](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
+![3Dの靴](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -49,7 +48,7 @@ Dynamic Media は、次の 3D ファイル形式をサポートしています�
 
 Dynamic Media の 3D アセットを操作する前に、Experience Manager の管理者が既に Dynamic Media Cloud Services を有効にして設定を完了していることを確認してください。
 
-「[Dynamic MediaCloud Servicesの設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)」を参照してください。
+[Dynamic MediaCloud Servicesの設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)を参照してください。
 
 1. **3D アセットのアップロード**
 
@@ -84,7 +83,7 @@ Dynamic Media の 3D アセットを操作する前に、Experience Manager の�
 
 このインタラクティブ 3D ビューアには、3D アセットをオービット、ズームおよびパンできる、インタラクティブなカメラコントロールのコレクションが含まれます。
 
-アセットの詳細ページの表示で3Dアセットを開くのにかかる時間は、複数の要因によって異なります。 以下の要因が含まれます。
+アセットの詳細ページビューで3Dアセットを開くのにかかる時間は、いくつかの要因に依存します。 以下の要因が含まれます。
 
 * サーバーの帯域幅
 * サーバーの待ち時間
@@ -96,7 +95,7 @@ Dynamic Media の 3D アセットを操作する前に、Experience Manager の�
 >
 >ディメンショナルビューアプリセットをビューアプリセットエディターで開いて、3D ファイルをアップロードせずに 3D アセット内を移動する練習ができます。ディメンショナルビューアプリセットには、操作できる組み込みの 3D アセットがあります。
 >
->詳しくは、[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
+>[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 
 ## アセットの詳細ページからの 3D アセットの表示とインタラクション {#viewing-three-d-assets-from-asset-details-page}
 
@@ -106,7 +105,7 @@ Dynamic Media の 3D アセットを操作する前に、Experience Manager の�
 
 1. 3D アセットが Experience Manager にアップロードされていることを確認します。
 
-   詳しくは、[Dynamic Media](/help/assets/add-assets.md#upload-assets)で使用する3Dアセットのアップロードを参照してください。
+   [Dynamic Media](/help/assets/add-assets.md#upload-assets)で使用する3Dアセットのアップロードを参照してください。
 
 1. Experience Manager の&#x200B;**[!UICONTROL ナビゲーション]**&#x200B;ページで&#x200B;**[!UICONTROL アセット／ファイル]**&#x200B;をタップします。
 1. ページの右上隅付近にある「**[!UICONTROL 表示]**」ドロップダウンリストで「**[!UICONTROL カード表示]**」をタップします。
@@ -116,12 +115,12 @@ Dynamic Media の 3D アセットを操作する前に、Experience Manager の�
 
    | 表示 | 説明 | マウス操作 | タッチスクリーンアクション |
    | --- | --- | --- | --- |
-   | **カメラを回す** | 3D シーンとオブジェクトの周囲でビューを周回させます。 | 左クリックしながらドラッグします。 | 一本指で押しながらドラッグします。 |
-   | **カメラのパン** | 表示を左、右、上または下にパンします。 | 右クリックしながらドラッグします。 | 2本指で押しながらドラッグします。 |
-   | **カメラのズーム** | 3Dシーンの領域の内外を移動します。 | スクロールホイール | 2本指のピンチ。 |
-   | **カメラを再入力** | 3Dシーン内のオブジェクト上の点にカメラを再入力します。 | ダブルクリック. | ダブルタップ. |
-   | **リセット** | ページ右下隅近くにあるリセットアイコンをタップして、表示ターゲットポイントを3Dアセットの中央に戻します。 リセットを使用しても、アセット全体を表示したり、適切な表示サイズで表示するために、カメラを近づけたり遠ざけたりできます。 |  |  |
-   | **全画面表示モード** | フルスクリーンモードに切り替えるには、ページ右下隅のフルスクリーンアイコンをタップします。 |  |  |
+   | **カメラを回す** | 3D シーンとオブジェクトの周囲でビューを周回させます。 | 左クリックしながらドラッグします。 | 1本指で押しながらドラッグします。 |
+   | **カメラをパン** | ビューを左右上下にパンします。 | 右クリックしながらドラッグします。 | 2本指で押しながらドラッグします。 |
+   | **カメラをズーム** | 3Dシーンの領域の内外を移動します。 | ホイールをスクロールします。 | 2本指でピンチ。 |
+   | **カメラ視野の中心を変更** | 3Dシーン内のオブジェクト上の1点をカメラの中心に戻します。 | ダブルクリック. | ダブルタップ. |
+   | **リセット** | ページの右下隅付近にあるリセットアイコンをタップして、視野のターゲットポイントを3Dアセットの中心に戻します。 リセットを使用しても、アセット全体を表示したり、適切な表示サイズで表示するために、カメラを近づけたり遠ざけたりできます。 |  |  |
+   | **全画面表示モード** | 全画面表示モードに入るには、ページの右下隅にある全画面表示アイコンをタップします。 |  |  |
 
 1. ページの右上隅にある「**[!UICONTROL 閉じる]**」をタップして、アセットページに戻ります。
 
@@ -139,7 +138,7 @@ Web ページが&#x200B;**[!UICONTROL 編集]**&#x200B;モードの場合、3D �
 
 1. Web ページが&#x200B;**[!UICONTROL 編集]**&#x200B;モードの間に、次のいずれかの操作をおこないます。
 
-   * ページ右上近くにある「**[!UICONTROL プレビュー]**」をクリックして、**[!UICONTROL プレビュー]**&#x200B;モードに入ります。
+   * ページの右上付近にある「**[!UICONTROL プレビュー]**」をクリックして、**[!UICONTROL プレビュー]**&#x200B;モードに入ります。
    * ブラウザーのページ URL から `/editor.html` を削除します。
 
 プレビューモードで表示された完全にインタラクティブな 3D アセット    ![3D メディアコンポーネント内に表示される 3D アセット](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)
@@ -149,12 +148,12 @@ Web ページが&#x200B;**[!UICONTROL 編集]**&#x200B;モードの場合、3D �
 
    | 表示 | 説明 | マウス操作 | タッチスクリーンアクション |
    | --- | --- | --- | --- |
-   | **カメラを回す** | 3D シーンとオブジェクトの周囲でビューを周回させます。 | 左クリックしながらドラッグします。 | 一本指で押しながらドラッグします。 |
-   | **カメラのパン** | 表示を左、右、上または下にパンします。 | 右クリックしながらドラッグします。 | 2本指で押しながらドラッグします。 |
-   | **カメラのズーム** | 3Dシーンの領域の内外を移動します。 | スクロールホイール | 2本指のピンチ。 |
-   | **カメラを再入力** | 3Dシーン内のオブジェクト上の点にカメラを再入力します。 | ダブルクリック. | ダブルタップ. |
-   | **リセット** | ページ右下隅近くにあるリセットアイコンをタップして、表示ターゲットポイントを3Dアセットの中央に戻します。 リセットを使用しても、アセット全体を表示したり、適切な表示サイズで表示するために、カメラを近づけたり遠ざけたりできます。 |  |  |
-   | **全画面表示モード** | フルスクリーンモードに切り替えるには、ページ右下隅のフルスクリーンアイコンをタップします。 |  |  |
+   | **カメラを回す** | 3D シーンとオブジェクトの周囲でビューを周回させます。 | 左クリックしながらドラッグします。 | 1本指で押しながらドラッグします。 |
+   | **カメラをパン** | ビューを左右上下にパンします。 | 右クリックしながらドラッグします。 | 2本指で押しながらドラッグします。 |
+   | **カメラをズーム** | 3Dシーンの領域の内外を移動します。 | ホイールをスクロールします。 | 2本指でピンチ。 |
+   | **カメラ視野の中心を変更** | 3Dシーン内のオブジェクト上の1点をカメラの中心に戻します。 | ダブルクリック. | ダブルタップ. |
+   | **リセット** | ページの右下隅付近にあるリセットアイコンをタップして、視野のターゲットポイントを3Dアセットの中心に戻します。 リセットを使用しても、アセット全体を表示したり、適切な表示サイズで表示するために、カメラを近づけたり遠ざけたりできます。 |  |  |
+   | **全画面表示モード** | 全画面表示モードに入るには、ページの右下隅にある全画面表示アイコンをタップします。 |  |  |
 
 ## 3D メディアコンポーネントの操作について {#working-with-three-d-media-component}
 
@@ -170,7 +169,7 @@ Dynamic Media には、Dynamic Media 3D メディアコンポーネントが含�
 1. **[!UICONTROL ツール／一般／テンプレート]**&#x200B;に移動します。
 1. 3D コンポーネントを有効にするページテンプレートに移動し、テンプレートを選択します。
 1. テンプレートを開くには、「**[!UICONTROL 編集]**」をタップします。
-1. ページの右上付近にあるドロップダウンメニューで、**[!UICONTROL 構造]**&#x200B;モードを選択します（まだアクティブでない場合）。
+1. ページの右上付近にあるドロップダウンメニューで、「**[!UICONTROL 構造]**」モードを選択します（まだアクティブでない場合）。
 
    ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
@@ -183,7 +182,7 @@ Dynamic Media には、Dynamic Media 3D メディアコンポーネントが含�
 
 ## Web ページへの 3D メディアコンポーネントの追加 {#adding-the-three-d-media-component-to-a-web-page}
 
-Experience ManagerをWebコンテンツ管理システムとして使用している場合は、3D Mediaコンポーネントを使用してWebページに3Dアセットを追加できます。
+Webコンテンツ管理システムとしてExperience Managerを使用している場合は、3Dメディアコンポーネントを使用してWebページに3Dアセットを追加できます。
 
 [ページへのDynamic Mediaアセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
 
@@ -202,7 +201,7 @@ Experience ManagerをWebコンテンツ管理システムとして使用して�
 
 これで、3D アセットをコンポーネントに割り当てる準備が整いました。
 
-「[3Dメディアコンポーネントへの3Dアセットの割り当て](#assigning-a-three-d-asset-to-the-component)」を参照してください。
+[3Dメディアコンポーネントへの3Dアセットの割り当て](#assigning-a-three-d-asset-to-the-component)を参照してください。
 
 ### オプション — 3Dメディアコンポーネントの設定{#configuring-the-three-d-component}
 
@@ -236,7 +235,7 @@ Web ページに 3D メディアコンポーネントを追加した後、3D ア
 
 ## 静的 Dynamic Media 3D アセットの公開 {#publishing-three-d-assets}
 
-Dynamic Mediaは、Dynamic Mediaで&#x200B;*静的コンテンツ*&#x200B;としてサポートされている様々な3Dファイル形式を受け入れます。 静的コンテンツとは、3D アセットをアップロードして公開することはできますが、3D アセットに関連付けられた *Dynamic* Imaging や画像の再編集はサポートされていないことを意味します。これは、Dynamic Media Imaging サーバーが 3D 形式を認識しないためです。したがって、Dynamic Media で 3D アセットを公開すると、インスタント URL をコピーできます。3D アセットの URL は、通常の Dynamic Media の URL 構造に従います。ただし、Dynamic Media 内の従来の画像アセットとは異なり、アセットの URL 内のパラメーターは編集できません。
+Dynamic Mediaは、Dynamic Mediaで&#x200B;*静的コンテンツ*&#x200B;としてサポートされる様々な3Dファイル形式を受け入れます。 静的コンテンツとは、3D アセットをアップロードして公開することはできますが、3D アセットに関連付けられた *Dynamic* Imaging や画像の再編集はサポートされていないことを意味します。これは、Dynamic Media Imaging サーバーが 3D 形式を認識しないためです。したがって、Dynamic Media で 3D アセットを公開すると、インスタント URL をコピーできます。3D アセットの URL は、通常の Dynamic Media の URL 構造に従います。ただし、Dynamic Media 内の従来の画像アセットとは異なり、アセットの URL 内のパラメーターは編集できません。
 
 [静的アセットのURLの取得](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)も参照してください。
 
@@ -248,10 +247,10 @@ WCM として Experience Manager を使用している場合は、この公開�
 
 [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)も参照してください。
 
-**静的なDynamic Media3Dアセットをパブリッシュするには：**
+**静的Dynamic Media 3Dアセットを公開するには：**
 
 1. 3Dアセット（GLB、OBJ、またはSTLファイル形式）を開きます。
-1. 詳細ページのツールバーで、**[!UICONTROL クイック発行]**&#x200B;をタップします。
+1. 詳細ページのツールバーで、「**[!UICONTROL クイック公開]**」をタップします。
 
    ![3d-asset-quick-publish](/help/assets/dynamic-media/assets/3d-asset-quick-publisha.png)
 
@@ -260,23 +259,23 @@ WCM として Experience Manager を使用している場合は、この公開�
 
    ![3d-asset-renditions](/help/assets/dynamic-media/assets/3d-asset-renditionsa.png)
 
-1. 「**[!UICONTROL オリジナル]**」をタップします。3Dアセットが公開（または「アクティブ化」）されると、次の3Dアセットの条件がすべて満たされた場合に、ページの左下隅近くに「**[!UICONTROL URL]**」ボタンが表示されます。
+1. 「**[!UICONTROL オリジナル]**」をタップします。3Dアセットが公開（「アクティブ化」）されると、次の3Dアセットの条件がすべて満たされた場合、「**[!UICONTROL URL]**」ボタンがページの左下隅近くに表示されます。
    * 3D アセットがサポートされている形式（GLB、OBJ、STL、USDZ）。
    * 3D アセットが Dynamic Media 画像制作システム（IPS）に取り込まれている。
    * 3D アセットが公開されている。
 
    ![3d-asset-url](/help/assets/dynamic-media/assets/3d-asset-urla.png)
 
-1. 3Dアセットの直接実稼動URLを表示し、Webページにコピーして使用できるようにするには、**[!UICONTROL URL]**&#x200B;をタップします。
+1. Webページにコピーして使用できる3Dアセットの直接実稼動URLを表示するには、「**[!UICONTROL URL]**」をタップします。
 
 ### ディメンショナルビューアを使用した、Dynamic Media 3D アセットの代替の公開方法 {#alternate-publish-methods}
 
 Experience Manager を WCM として使用して&#x200B;*いない*&#x200B;場合は、次の 2 つの方法で Dynamic Media 3D アセットを公開します。
 
-* **[!UICONTROL URL]**  ****  — サードパーティのWebコンテンツ管理ーシステムを使用していて、Dynamic Media3DアセットをWebページにDimensional Viewerでリンクする場合は、URLを使用します。
+* **[!UICONTROL URL]**  — サードパーティのWebコンテンツ管理システムを使用し **** ていて、ディメンショナルビューアを使用してDynamic Media 3DアセットをWebページにリンクする場合は、URLを使用します。
 
    [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)を参照してください。
 
-* **[!UICONTROL 埋め込み]** - Webページに埋め込まれたDynamic Media3Dアセットをディメンションビューアを使用して表示する場合は、 **** 埋め込みを使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込み]**&#x200B;ダイアログボックスでは、コードの編集はできません。
+* **[!UICONTROL 埋め込み]**  - Webペ **** ージに埋め込まれたDynamic Media 3Dアセットをディメンショナルビューアで表示する場合に、「埋め込み」を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込み]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
-   詳しくは、[WebページへのDynamic Mediaビデオ、画像ビューア、またはディメンションビューアの埋め込み](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)を参照してください。
+   [WebページへのDynamic Mediaビデオ、画像ビューア、またはディメンショナルビューアの埋め込み](/help/assets/dynamic-media/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)を参照してください。
