@@ -1,14 +1,13 @@
 ---
 title: ContextHub ストア候補のサンプル
 description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
-translation-type: tm+mt
-source-git-commit: c3f69e4b03819fea9a1842a87cad38bd1e485d83
+exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub ストア候補のサンプル  {#sample-contexthub-store-candidates}
 
