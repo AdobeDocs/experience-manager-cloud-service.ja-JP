@@ -1,16 +1,15 @@
 ---
 title: Adobe Analytics との統合
 description: 'Adobe Analytics との統合 '
-feature: Administering
+feature: 管理
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 0f2b7176b44bb79bdcd1cecf6debf05bd652a1a1
+exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '540'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Analytics との統合{#integrating-with-adobe-analytics}
 
