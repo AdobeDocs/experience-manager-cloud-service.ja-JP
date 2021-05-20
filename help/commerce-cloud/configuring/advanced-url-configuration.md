@@ -6,12 +6,11 @@ version: cloud-service
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Commerce Integration Framework
+feature: コマース統合フレームワーク
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 363cb465-c50a-422f-b149-b3f41c2ebc0f
-translation-type: tm+mt
-source-git-commit: 97574c964e757ffa4d108340f6a4d1819050d79a
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
+source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 98%
@@ -32,7 +31,7 @@ SEO 要件と必要性に従って `UrlProvider` サービスを設定するに�
 >
 > 下記の [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL の使用方法を示す設定例が含まれています。
 
-### 製品ページURLテンプレート{#product}
+### 製品ページのURLテンプレート {#product}
 
 次のプロパティを使用して製品ページの URL を設定します。
 
