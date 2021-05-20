@@ -1,14 +1,13 @@
 ---
 title: オーサー層の保護
 description: オーサー層の保護
-translation-type: tm+mt
-source-git-commit: e772687c4034a364912aa426a133134571246db9
+exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 100%
 
 ---
-
 
 # オーサー層の保護 {#securing-the-author-tier}
 
