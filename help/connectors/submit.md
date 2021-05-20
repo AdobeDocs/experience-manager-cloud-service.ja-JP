@@ -1,14 +1,13 @@
 ---
 title: AEM コネクタの登録
 description: AEM コネクタの登録
-translation-type: tm+mt
-source-git-commit: d4e376ab30bb3e1fb533ed32f6ac43580775787c
+exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 100%
 
 ---
-
 
 AEM コネクタの登録
 ===========================
