@@ -1,7 +1,6 @@
 ---
 title: Adobe AEM Target HTTP ウィンドウ
 description: 'Adobe AEM Target HTTP ウィンドウ '
-translation-type: tm+mt
 source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
 workflow-type: tm+mt
 source-wordcount: '195'
@@ -10,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# 概要 {#introduction}
+# はじめに {#introduction}
 
 このページでは、Adobe AEM Target HTTP ウィンドウに表示される設定可能なパラメーターについて説明します。
 
