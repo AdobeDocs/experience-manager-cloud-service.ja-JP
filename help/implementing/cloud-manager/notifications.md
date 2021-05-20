@@ -1,14 +1,13 @@
 ---
 title: 通知 - クラウドサービス
 description: 通知 - クラウドサービス
-translation-type: tm+mt
-source-git-commit: 0f9d9cc0c1a7a50e5ac5fb1da2227537e75ac8ed
+exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 100%
 
 ---
-
 
 # 通知について {#notifications}
 
