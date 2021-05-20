@@ -3,14 +3,13 @@ title: デジタルアセットの管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Publishing,Collaboration,Asset Processing
+feature: アセット管理，公開，コラボレーション，アセット処理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-translation-type: tm+mt
 source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
 workflow-type: tm+mt
 source-wordcount: '4505'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +55,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 }
 ```
 
-有効にすると、Experience Managerは重複アセットの通知をExperience Managerのインボックスに送信します。 これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
+有効にすると、Experience Managerは重複アセットの通知をExperience Managerインボックスに送信します。 これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
 
 ![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
 
@@ -278,28 +277,28 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 [ からのアセットのダウンロード [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)を参照してください。
 
-## アセットの発行または非公開{#publish-assets}
+## アセットの公開または非公開{#publish-assets}
 
-1. 公開するアセットまたはアセット環境の場所、または公開フォルダから削除する（非公開にする）アセットフォルダに移動します。
+1. 公開するアセットまたはアセットフォルダーの場所、またはパブリッシュ環境から削除する（非公開にする）アセットフォルダーに移動します。
 
-1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーから「パブリケーションの管理&#x200B;**[!UICONTROL ![パブリケーションの管理](assets/do-not-localize/globe-publication.png)」オプションを選択します。]**&#x200B;または、すばやく公開するには、ツールバーから「**[!UICONTROL クイック公開]**」オプションを選択します。 公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
+1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]** ![公開を管理](assets/do-not-localize/globe-publication.png) 」オプションを選択します。 また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。 公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
 
-1. 必要に応じて、「**[!UICONTROL 発行]**」または「**[!UICONTROL 非公開]**」オプションを選択します。
+1. 必要に応じて、「**[!UICONTROL 公開]**」または「**[!UICONTROL 非公開]**」オプションを選択します。
 
    ![非公開アクション](assets/unpublish_action.png)
-   *図：公開と非公開のオプションと、スケジュールオプション。*
+   *図：公開および非公開のオプションとスケジュールオプション。*
 
-1. すぐにアセットを操作する場合は「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールする場合は「**[!UICONTROL 後で]**」を選択します。 「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。 「**[!UICONTROL Next]**」をクリックします。
+1. すぐにアセットに対処するには「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールするには「**[!UICONTROL 後で]**」を選択します。 「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
 
-1. 発行時に、アセットが他のアセットを参照している場合、その参照はウィザードに表示されます。 表示されるのは、非公開または最後に公開されてから変更された参照のみです。 公開する参照を選択します。
+1. 公開時に、アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。 非公開になっているか、前回の公開以降に変更された参照のみが表示されます。 公開する参照を選択します。
 
-1. 非公開にする場合、アセットが他のアセットを参照している場合は、非公開にする参照を選択します。 「**[!UICONTROL 非公開]**」をクリックします。 確認ダイアログで、「**[!UICONTROL キャンセル]**」をクリックして操作を停止するか、「**[!UICONTROL 非公開]**」をクリックしてアセットを指定した日付に非公開にすることを確認します。
+1. 非公開にする際に、アセットが他のアセットを参照する場合は、非公開にする参照を選択します。 「**[!UICONTROL 非公開]**」をクリックします。 確認ダイアログで、「**[!UICONTROL キャンセル]**」をクリックしてアクションを停止するか、「**[!UICONTROL 非公開]**」をクリックして、指定した日付にアセットを非公開にすることを確認します。
 
-アセットやフォルダーの公開または非公開に関する次の制限事項とヒントについて説明します。
+アセットやフォルダーの公開または非公開に関する以下の制限事項とヒントを理解します。
 
-* [!UICONTROL パブリケーションの管理]のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
-* 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は、他の発行済みアセットによって参照される可能性があるので、参照の公開を取り消さないでください。
-* 空のフォルダーは発行されません。
+* 「[!UICONTROL 公開を管理]」のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
+* 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照される可能性があるので、非公開にしないでください。
+* 空のフォルダーは公開されません。
 * 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 
 ## 閉じられたユーザーグループ {#closed-user-group}
@@ -622,15 +621,15 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 * 1 つのコレクションにはアセットへの参照のみが含まれるので、様々な場所のアセットを含めることができます。各コレクションは、アセットの参照整合性を維持します。
 * コレクションは、特権レベル（編集、表示など）の異なる複数のユーザー間で共有できます。
 
-コレクション管理の詳細については、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
+コレクション管理について詳しくは、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
 
-## デスクトップアプリまたはAdobeのアセットリンク{#hide-expired-assets-via-acp-api}でアセットを表示する際に、期限切れのアセットを非表示にする
+## デスクトップアプリケーションまたはAdobeアセットリンクで期限切れアセットを表示しない{#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] デスクトップアプリでは、WindowsまたはMacデスクトップからDAMリポジトリにアクセスできます。Adobeアセットリンクを使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
+[!DNL Experience Manager] デスクトップアプリケーションを使用すると、WindowsまたはMacデスクトップからDAMリポジトリーにアクセスできます。Adobeアセットリンクを使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
 
-[!DNL Experience Manager]ユーザーインターフェイス内からアセットを参照する場合、期限切れのアセットは表示されません。 デスクトップアプリとアセットリンクからアセットを参照する際に、期限切れのアセットの表示、検索および取得を防ぐために、管理者は次の設定を行うことができます。 この設定は、管理者権限に関係なく、すべてのユーザーで機能します。
+[!DNL Experience Manager] ユーザーインターフェイス内からアセットを参照すると、期限切れのアセットは表示されません。デスクトップアプリと Assets リンクからアセットを参照する際に、期限切れのアセットが表示、検索、および取得される防ぐために、管理者は次の設定をおこなうことができます。この設定は、管理者権限に関係なく、すべてのユーザーで機能します。
 
-次のCURLコマンドを実行します。 アセットにアクセスするユーザーの`/conf/global/settings/dam/acpapi/`で読み取りアクセス権を確認します。 `dam-user`グループに属するユーザーは、デフォルトで権限を持っています。
+次のCURLコマンドを実行します。 アセットにアクセスするユーザーの`/conf/global/settings/dam/acpapi/`に対する読み取りアクセス権を確保します。 `dam-user`グループに属するユーザーは、デフォルトで権限を持っています。
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -642,4 +641,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-詳しくは、デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を使用して[DAMアセットを参照する方法および[Adobeアセットリンク](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)の使用方法を参照してください。
+詳しくは、デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を使用したDAMAdobeの参照方法と、アセットリンク](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)を使用したDAMアセットの参照方法を参照してください。[[
