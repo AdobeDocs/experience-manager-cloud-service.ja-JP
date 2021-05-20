@@ -33,7 +33,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent packageco-maven-plugin:prepare-agent package`
-* Mavenは、settings.xmlファイルを持つシステムレベルで設定されます。このファイルには、`adobe-public`という名前のプロファイルーを使用して、パブリックAdobe **Artifact**&#x200B;リポジトリが自動的に含まれます。 （詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
+* Mavenは、settings.xmlファイルを使用してシステムレベルで設定されます。このファイルには、`adobe-public`という名前のプロファイルを使用して、パブリックAdobe **Artifact**&#x200B;リポジトリが自動的に含まれます。 （詳しくは、[アドビの公開 Maven リポジトリ](https://repo.adobe.com/)を参照してください）。
 
 >[!NOTE]
 >Cloud Manager では、`jacoco-maven-plugin` の特定のバージョンは定義されませんが、`0.7.5.201505241946` 異常のバージョンを使用する必要があります。
