@@ -5,7 +5,6 @@ breadcrumb-title: コネクタガイド
 user-guide-description: Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。
 feature: 開発者ツール
 role: Developer
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '51'
