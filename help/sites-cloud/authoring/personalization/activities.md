@@ -1,14 +1,13 @@
 ---
 title: アクティビティの管理
 description: アクティビティコンソールでは、ブランドのマーケティングアクティビティを作成、整理、管理できます。次のことができます。
-translation-type: tm+mt
-source-git-commit: dba848cb8d7bc42f37fb64131150c136e07dd24e
+exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 100%
 
 ---
-
 
 # アクティビティの管理 {#managing-activities}
 
@@ -39,10 +38,12 @@ ht-degree: 100%
 >使用可能なアクティビティの種類は、次のオプションによって決まります。
 >
 >* Adobe Target の接続に AEM 側で使用される Adobe Target テナント（clientcode）で `xt_only` オプションがオンになっている場合は、XT アクティビティ&#x200B;**のみ**&#x200B;を AEM で作成できます。
+   >
+   >
+* Adobe Target テナント（clientcode）で `xt_only` オプションが&#x200B;**オフ**&#x200B;になっている場合は、XT アクティビティと A/B アクティビティの&#x200B;**両方**&#x200B;を AEM で作成できます。
 >
->* Adobe Target テナント（clientcode）で `xt_only` オプションが&#x200B;**オフ**&#x200B;になっている場合は、XT アクティビティと A/B アクティビティの&#x200B;**両方**&#x200B;を AEM で作成できます。
 >
->**追加のメモ：**`xt_only` オプションは特定の Target テナント（clientcode）に適用される設定で、Adobe Target でのみ直接編集できます。このオプションは AEM で有効および無効にすることはできません。
+**追加のメモ：**`xt_only` オプションは特定の Target テナント（clientcode）に適用される設定で、Adobe Target でのみ直接編集できます。このオプションは AEM で有効および無効にすることはできません。
 
 >[!CAUTION]
 >
