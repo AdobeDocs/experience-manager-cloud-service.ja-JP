@@ -1,14 +1,13 @@
 ---
 title: AEM コネクタの保守
 description: AEM コネクタの保守
-translation-type: tm+mt
-source-git-commit: 629de3a9f55d2e4c52ef91c9e0bb5d439aebe84f
+exl-id: 8122a8c8-6577-4907-8f6e-52711eed3970
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 100%
 
 ---
-
 
 AEM コネクタの保守
 ============================
