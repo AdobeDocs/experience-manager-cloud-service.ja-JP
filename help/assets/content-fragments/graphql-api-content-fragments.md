@@ -1,9 +1,8 @@
 ---
 title: コンテンツフラグメントと共に使用する AEM GraphQL API
-description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信のAEM GraphQL APIとのCloud Serviceとして使用する方法を説明します。
+description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信用のAEM GraphQL APIを備えたCloud Serviceとして使用する方法について説明します。
 feature: コンテンツフラグメント，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-translation-type: tm+mt
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '3935'
@@ -14,11 +13,11 @@ ht-degree: 72%
 
 # コンテンツフラグメントと共に使用する AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
 
-Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信のAEM GraphQL APIとのCloud Serviceとして使用する方法を説明します。
+Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信用のAEM GraphQL APIを備えたCloud Serviceとして使用する方法について説明します。
 
-AEMは、コンテンツフラグメントと共に使用されるCloud ServiceGraphQL APIとして、標準のオープンソースのGraphQL APIに大きく基づいています。
+コンテンツフラグメントと共に使用されるAEM as aCloud ServiceGraphQL APIは、標準のオープンソースGraphQL APIに大きく基づいています。
 
-AEMでGraphQL APIを使用すると、ヘッドレスCMS実装のJavaScriptクライアントに対して、コンテンツフラグメントを効率的に配信できます。
+AEMでGraphQL APIを使用すると、ヘッドレスCMS実装のJavaScriptクライアントにコンテンツフラグメントを効率的に配信できます。
 
 * REST で API リクエストの反復を回避
 * 特定の要件に限定された配信を確保
@@ -26,10 +25,10 @@ AEMでGraphQL APIを使用すると、ヘッドレスCMS実装のJavaScriptク�
 
 >[!NOTE]
 >
->GraphQLは現在、Adobe Experience Manager(AEM)の2つの（個別の）シナリオでCloud Serviceとして使用されています。
+>GraphQLは、現在、Adobe Experience Manager(AEM)では次の2つのシナリオでCloud Serviceとして使用されています。
 >
->* [AEMコマースは、GraphQLを介してコマースプラットフォームのデータを使用し](/help/commerce-cloud/integrating/magento.md)、
->* AEMコンテンツフラグメントは、AEM GraphQL API（標準のGraphQLに基づいてカスタマイズされた実装）と連携して、アプリケーションで使用するために構造化されたコンテンツを配信します。
+>* [AEM Commerceは、GraphQLを介してコマースプラットフォームからデータを使用します](/help/commerce-cloud/integrating/magento.md)。
+>* AEMコンテンツフラグメントは、AEM GraphQL API（標準のGraphQLに基づくカスタマイズされた実装）と連携して、アプリケーションで使用するために構造化されたコンテンツを配信します。
 
 
 ## GraphQL API {#graphql-api}
@@ -107,7 +106,7 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 * [（キャッシュされる）永続的クエリ](#persisted-queries-caching)
 
 >[!NOTE]
->[GraphiQL IDE](#graphiql-interface)を使用して、GraphQLクエリのテストとデバッグを行うことができます。
+>[GraphiQL IDE](#graphiql-interface)を使用して、GraphQLクエリのテストとデバッグをおこなうことができます。
 
 ## AEM 用 GraphQL のエンドポイント {#graphql-aem-endpoint}
 
@@ -120,38 +119,38 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 AEMには、次の2種類のエンドポイントがあります。
 
 * グローバル
-   * すべてのサイトで使用可能。
-   * このエンドポイントは、すべてのサイト構成（[構成ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義）のすべてのコンテンツフラグメントモデルを使用できます。
-   * サイト設定間で共有する必要のあるコンテンツフラグメントモデルがある場合は、それらをグローバルサイト設定の下に作成する必要があります。
-* サイトの設定：
-   * [構成ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されているサイト構成に対応します。
+   * すべてのサイトで使用できます。
+   * このエンドポイントは、（[設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義された）すべてのSites設定のすべてのコンテンツフラグメントモデルを使用できます。
+   * Sites設定間で共有する必要があるコンテンツフラグメントモデルがある場合は、それらをグローバルSites設定の下に作成する必要があります。
+* サイト設定：
+   * [設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)で定義されているSites設定に対応します。
    * 指定したサイト/プロジェクトに固有。
-   * サイト構成固有のエンドポイントは、そのサイト構成のコンテンツフラグメントモデルを、グローバルサイト構成のコンテンツフラグメントモデルと共に使用します。
+   * Sites設定固有のエンドポイントは、その特定のSites設定のコンテンツフラグメントモデルと、グローバルSites設定のコンテンツフラグメントモデルを使用します。
 
 >[!CAUTION]
 >
->コンテンツフラグメントエディターを使用すると、1つのサイト構成のコンテンツフラグメントから別のサイト構成のコンテンツフラグメントを（ポリシーを介して）参照できます。
+>コンテンツフラグメントエディターを使用すると、あるSites設定のコンテンツフラグメントから、別のSites設定のコンテンツフラグメントを（ポリシーを介して）参照できます。
 >
->この場合、サイト構成固有のエンドポイントを使用してすべてのコンテンツを取得できるわけではありません。
+>この場合、Sites設定固有のエンドポイントを使用してすべてのコンテンツを取得できるわけではありません。
 >
->コンテンツ作成者は、このシナリオを制御する必要があります。例えば、共有コンテンツフラグメントモデルをグローバルサイト設定の下に配置することを検討すると便利です。
+>コンテンツ作成者がこのシナリオを制御する必要があります。例えば、共有コンテンツフラグメントモデルをグローバルサイト設定の下に配置することを検討すると便利です。
 
-AEMグローバルエンドポイント用のGraphQLのリポジトリパスは、次のとおりです。
+AEMグローバルエンドポイントのGraphQLのリポジトリパスは次のとおりです。
 
 `/content/cq:graphql/global/endpoint`
 
-アプリがリクエストURLで次のパスを使用できるようにします。
+リクエストURLでアプリが次のパスを使用できる対象となるもの：
 
 `/content/_cq_graphql/global/endpoint.json`
 
-AEMでGraphQLのエンドポイントを有効にするには、次の操作が必要です。
+AEM用のGraphQLのエンドポイントを有効にするには、次の操作が必要です。
 
 * [GraphQL エンドポイントの有効化](#enabling-graphql-endpoint)
 * [GraphQLエンドポイントの公開](#publishing-graphql-endpoint)
 
 ### GraphQL エンドポイントの有効化 {#enabling-graphql-endpoint}
 
-GraphQLエンドポイントを有効にするには、まず適切な設定が必要です。 「[コンテンツフラグメント — 設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md)」を参照してください。
+GraphQLエンドポイントを有効にするには、まず適切な設定が必要です。 [コンテンツフラグメント — 設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md)を参照してください。
 
 >[!CAUTION]
 >
@@ -161,19 +160,19 @@ GraphQLエンドポイントを有効にするには、まず適切な設定が�
 
 1. **ツール**、**サイト**&#x200B;に移動し、**GraphQL**&#x200B;を選択します。
 1. 「**作成**」を選択します。
-1. 「**新しいGraphQLエンドポイントを作成**」ダイアログが開きます。 ここで指定できる内容は次のとおりです。
-   * **名前**:エンドポイントの名前；任意のテキストを入力できます。
-   * **GraphQLスキーマを使用します。提供元**:ドロップダウンを使用して、必要なサイト/プロジェクトを選択します。
+1. **新しいGraphQLエンドポイントを作成**&#x200B;ダイアログが開きます。 ここでは、次を指定できます。
+   * **名前**:エンドポイントの名前。任意のテキストを入力できます。
+   * ****&#x200B;が提供するGraphQLスキーマを使用する：ドロップダウンを使用して、必要なサイト/プロジェクトを選択します。
 
    >[!NOTE]
    >
-   >ダイアログに次の警告が表示されます。
+   >ダイアログには次の警告が表示されます。
    >
    >* *慎重に管理しない場合、GraphQL エンドポイントによりデータのセキュリティとパフォーマンスで問題が発生する可能性があります。エンドポイントを作成した後で、適切な権限を設定するようにしてください。*
 
 
-1. **作成**&#x200B;で確認します。
-1. **次の手順**&#x200B;ダイアログには、セキュリティコンソールへの直接リンクが表示され、新しく作成したエンドポイントに適切な権限を持たせることができます。
+1. **作成**&#x200B;で確定します。
+1. **次の手順**&#x200B;ダイアログには、新しく作成したエンドポイントに適切な権限が付与されるように、セキュリティコンソールへの直接リンクが表示されます。
 
    >[!CAUTION]
    >
@@ -181,17 +180,17 @@ GraphQLエンドポイントを有効にするには、まず適切な設定が�
    >
    >使用例に適した ACL をエンドポイントに設定できます。
 
-### GraphQLエンドポイントの公開{#publishing-graphql-endpoint}
+### GraphQLエンドポイント{#publishing-graphql-endpoint}の公開
 
-新しいエンドポイントを選択し、「**発行**」を選択して、すべての環境で完全に使用可能にします。
+新しいエンドポイントを選択し、「 **公開** 」を選択して、すべての環境で完全に使用できるようにします。
 
 >[!CAUTION]
 >
 >エンドポイントは、すべてのユーザーがアクセスできます。
 >
->パブリッシュインスタンスでは、GraphQLクエリがサーバに大きな負荷をかける可能性があるので、セキュリティ上の問題が生じる可能性があります。
+>パブリッシュインスタンスでは、GraphQLクエリがサーバーに大きな負荷をかける可能性があるので、セキュリティ上の問題となる可能性があります。
 >
->エンドポイントの使用事例に適したACLを設定する必要があります。
+>エンドポイントの使用例に適したACLを設定する必要があります。
 
 ## GraphiQL インターフェイス {#graphiql-interface}
 
@@ -199,7 +198,7 @@ GraphQLエンドポイントを有効にするには、まず適切な設定が�
 
 >[!NOTE]
 >
->GraphiQLは、グローバルエンドポイントに連結されています（特定のサイト設定では、他のエンドポイントと連動しません）。
+>GraphiQLはグローバルエンドポイントにバインドされます（特定のSites設定の他のエンドポイントでは機能しません）。
 
 このインターフェイスを使用すると、クエリを直接入力しテストできます。
 
@@ -213,7 +212,7 @@ GraphQLエンドポイントを有効にするには、まず適切な設定が�
 
 ### AEM GraphiQL インターフェイスのインストール {#installing-graphiql-interface}
 
-GraphiQLユーザーインターフェイスは、専用のパッケージを使用してAEMにインストールできます。[GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)パッケージ。
+GraphiQLユーザーインターフェイスは、専用のパッケージと共にAEMにインストールできます。[GraphiQLコンテンツパッケージv0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip)パッケージ。
 
 ## オーサー環境とパブリッシュ環境の使用例 {#use-cases-author-publish-environments}
 
@@ -251,20 +250,20 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 
    ![GraphQL で使用するコンテンツフラグメントモデル](assets/cfm-graphqlapi-01.png "GraphQL で使用するコンテンツフラグメントモデル")
 
-1. 対応するGraphQLスキーマ（GraphiQLの自動ドキュメントからの出力）:
+1. 対応するGraphQLスキーマ（GraphQL自動ドキュメントからの出力）:
    ![コンテンツフラグメントモデルに基づく GraphQL スキーマ](assets/cfm-graphqlapi-02.png "コンテンツフラグメントモデルに基づく GraphQL スキーマ")
 
    この図では、生成された型 `ArticleModel` に複数の[フィールド](#fields)が含まれていることがわかります。
 
    * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
 
-   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、前に`_`が付いています。
+   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、前の`_`にマークされ、ユーザーが定義した内容と自動生成した内容を区別します。
 
 1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)を参照してください。
 
 AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
 
-Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を確保できます。
+Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を実現します。
 
 例えば、次のようになります。
 
@@ -284,15 +283,15 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 スキーマは、GraphQL クエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子 `GQLschema` で呼び出されることに対処します。例えば、`/content/cq:graphql/global/endpoint.GQLschema` で単純な `GET` リクエストを実行すると、`text/x-graphql-schema;charset=iso-8859-1` の Content-type を持つスキーマが出力されます。
 
-### スキーマの生成 — 未公開モデル{#schema-generation-unpublished-models}
+### スキーマの生成 — 未公開のモデル{#schema-generation-unpublished-models}
 
-コンテンツフラグメントがネストされている場合、親のコンテンツフラグメントモデルは発行されるが、参照されているモデルは発行されない可能性があります。
+コンテンツフラグメントがネストされると、親のコンテンツフラグメントモデルは公開されますが、参照モデルは公開されません。
 
 >[!NOTE]
 >
->AEM UIはこのような状況を防ぎますが、プログラムやコンテンツパッケージを使用して公開する場合は、この状況が発生する可能性があります。
+>AEM UIはこのような問題を回避しますが、プログラムを使用して、またはコンテンツパッケージを使用して公開すると、この問題が発生する可能性があります。
 
-この場合、AEMは親コンテンツフラグメントモデルに対して&#x200B;*不完全な*&#x200B;スキーマを生成します。 これは、未公開のモデルに依存するフラグメント参照がスキーマから削除されることを意味します。
+この場合、AEMは親コンテンツフラグメントモデルの&#x200B;*不完全な*&#x200B;スキーマを生成します。 つまり、非公開のモデルに依存するフラグメント参照がスキーマから削除されます。
 
 ## フィールド {#fields}
 
@@ -314,11 +313,11 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
-| 1行テキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
-| 複数行テキスト | 文字列 |  記事の本文などのテキストを出力するために使用します。 |
+| 1行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
+| 複数行テキスト | 文字列 |  記事の本文などのテキストを出力するために使用します |
 | 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
 | ブール型 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
-| 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します：選択したタイプに応じて、AEM GraphQLで使用できる3つのフレーバーがあります。`onlyDate`、`onlyTime`、`dateTime` |
+| 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します：選択したタイプに応じて、AEM GraphQLで使用できるフレーバーは次の3つです。`onlyDate`、`onlyTime`、`dateTime` |
 | 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 |  文字列 |  AEM 内の別のアセットへのパスを表示するために使用します |
@@ -437,7 +436,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ## GraphQL 変数 {#graphql-variables}
 
-GraphQL では、クエリに変数を含めることができます。詳しくは、[変数](https://graphql.org/learn/queries/#variables)のGraphQLドキュメントを参照してください。
+GraphQL では、クエリに変数を含めることができます。詳しくは、変数](https://graphql.org/learn/queries/#variables)の[GraphQLのドキュメントを参照してください。
 
 例えば、特定のバリエーションを持つ `Article` タイプのコンテンツフラグメントをすべて取得するには、次のように、GraphiQL で変数 `variation` を指定します。
 
@@ -546,7 +545,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
    * [サンプルクエリ - ある会社の CEO と従業員の詳細](#sample-full-details-company-ceos-employees)を参照してください
 
-* モデルのフィールドに加えて、システム生成フィールドがいくつかあります（前にアンダースコアが付いています）。
+* モデルのフィールドに加えて、システム生成フィールド（前にアンダースコアが付く）がいくつかあります。
 
    * コンテンツの場合：
 
@@ -566,7 +565,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
       * `_operator`：特定の演算子（`EQUALS`、`EQUALS_NOT`、`GREATER_EQUAL`、`LOWER`、`CONTAINS`）を適用します, `STARTS_WITH`
          * [サンプルクエリ - 「Jobs」という名前を持たないすべての人物](#sample-all-persons-not-jobs)を参照してください
-         * [サンプルクエリ — 特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)を持つ`_path`開始が出現するすべての冒険を参照
+         * [サンプルクエリ — `_path`が特定のプレフィックス](#sample-wknd-all-adventures-cycling-path-filter)で始まるすべてのアドベンチャーを参照してください。
       * `_apply`：特定の条件（例：`AT_LEAST_ONCE`）を適用します
          * [サンプルクエリ - 少なくとも 1 回は現れる項目を含んだ配列をフィルタリング](#sample-array-item-occur-at-least-once)を参照してください
       * `_ignoreCase`：クエリの実行時に大文字と小文字を区別しません
@@ -591,32 +590,32 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 
 このようにする必要があるのは、POST クエリが通常はキャッシュされないからです。クエリをパラメーターとして GET を使用する場合、HTTP サービスや中間ステップにとってパラメーターが大きくなりすぎるという重大なリスクがあります。
 
-持続的なクエリは、常に[適切なサイト構成](#graphql-aem-endpoint)に関連するエンドポイントを使用する必要があります。そのため、どちらかまたは両方を使用できます。
+持続的なクエリでは、常に[適切なSites設定](#graphql-aem-endpoint)に関連するエンドポイントを使用する必要があります。つまり、どちらかまたは両方を使用できます。
 
 * グローバル設定とエンドポイント
 クエリは、すべてのコンテンツフラグメントモデルにアクセスできます。
-* 特定のサイトの設定とエンドポイント
-特定のサイト設定用に永続化されたクエリを作成するには、対応するサイト設定固有のエンドポイントが必要です（関連するコンテンツフラグメントモデルにアクセスできるようにするため）。
-例えば、WKNDサイト構成専用の永続的なクエリを作成するには、WKND固有のサイト構成に対応し、WKND固有のエンドポイントを事前に作成する必要があります。
+* 特定のSites設定およびエンドポイント
+特定のSites設定用の永続クエリを作成するには、対応するSites設定固有のエンドポイント（関連するコンテンツフラグメントモデルへのアクセスを提供）が必要です。
+例えば、WKND Sites設定専用の永続クエリを作成するには、対応するWKND固有のSites設定と、WKND固有のエンドポイントを事前に作成する必要があります。
 
 >[!NOTE]
 >
 >詳しくは、[設定ブラウザーでのコンテンツフラグメント機能の有効化](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)を参照してください。
 >
->適切なサイト構成に対して、**GraphQL Persistenceクエリ**&#x200B;を有効にする必要があります。
+>適切なSites設定に対して、**GraphQL永続性クエリ**&#x200B;を有効にする必要があります。
 
-例えば、`my-query`という名前の特定のクエリがあり、これがサイト構成`my-conf`のモデル`my-model`を使用する場合、次のようになります。
+例えば、`my-query`という特定のクエリがあり、このクエリがサイト設定`my-conf`のモデル`my-model`を使用する場合は、次のようになります。
 
-* `my-conf`個別のエンドポイントを使用してクエリを作成すると、クエリは次のように保存されます。
+* `my-conf`特定のエンドポイントを使用してクエリを作成すると、クエリは次のように保存されます。
    `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * `global`エンドポイントを使用して同じクエリを作成できますが、クエリは次のように保存されます。
    `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
->これら2つは異なるクエリで、異なるパスで保存されます。
+>これらは2つの異なるクエリで、異なるパスで保存されます。
 >
->同じモデルが使用されるだけで、異なる端点を介して使用されます。
+>同じモデルを使用しているだけですが、異なるエンドポイントを介しています。
 
 
 特定のクエリを永続化するために必要な手順は次のとおりです。
@@ -807,7 +806,7 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 外部WebサイトからGraphQLエンドポイントにアクセスするには、次の項目を設定する必要があります。
 
 * [CORSフィルター](#cors-filter)
-* [転送者フィルタ](#referrer-filter)
+* [リファラーフィルター](#referrer-filter)
 
 ### CORSフィルタ{#cors-filter}
 
@@ -815,11 +814,11 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 >
 >AEM での CORS リソース共有ポリシーについて詳しくは、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))を参照してください。
 
-GraphQLエンドポイントにアクセスするには、お客様のGitリポジトリでCORSポリシーを設定する必要があります。 これは、目的のエンドポイントに適切なOSGi CORS設定ファイルを追加することで行います。
+GraphQLエンドポイントにアクセスするには、顧客GitリポジトリでCORSポリシーを設定する必要があります。 これは、目的のエンドポイントに対して適切なOSGi CORS設定ファイルを追加することでおこなわれます。
 
-この設定では、アクセスを許可する必要がある信頼できるWebサイト接触チャネル`alloworigin`または`alloworiginregexp`を指定する必要があります。
+この設定では、アクセスを許可する信頼できるWebサイトの接触チャネル`alloworigin`または`alloworiginregexp`を指定する必要があります。
 
-例えば、`https://my.domain`のGraphQLエンドポイントと持続クエリエンドポイントへのアクセスを許可するには、次を使用します。
+例えば、`https://my.domain`のGraphQLエンドポイントと永続クエリエンドポイントへのアクセスを許可するには、次を使用できます。
 
 ```xml
 {
@@ -854,18 +853,18 @@ GraphQLエンドポイントにアクセスするには、お客様のGitリポ�
 }
 ```
 
-エンドポイントのバニティパスを設定した場合は、`allowedpaths`でも使用できます。
+エンドポイントのバニティーパスを設定した場合は、`allowedpaths`でも使用できます。
 
-### 転送者フィルタ{#referrer-filter}
+### リファラーフィルター{#referrer-filter}
 
-CORSの設定に加えて、サードパーティのホストからのアクセスを許可する転送者フィルターを設定する必要があります。
+CORSの設定に加えて、リファラーフィルターも、サードパーティホストからのアクセスを許可するように設定する必要があります。
 
-これは、次の適切なOSGi転送者フィルタ設定ファイルを追加することで行います。
+これは、次の適切なOSGiリファラーフィルター設定ファイルを追加することでおこなわれます。
 
-* 信頼できるwebサイトのホスト名を指定します。`allow.hosts`または`allow.hosts.regexp`、
-* このホスト名に対するアクセスを許可します。
+* 信頼できるwebサイトのホスト名を指定します。`allow.hosts`または`allow.hosts.regexp`
+* このホスト名へのアクセスを許可します。
 
-例えば、転送者`my.domain`を使用してリクエストへのアクセスを許可するには、次の操作を行います。
+例えば、リファラー`my.domain`を使用して要求へのアクセスを許可するには、次の操作を実行します。
 
 ```xml
 {
@@ -928,6 +927,6 @@ CORSの設定に加えて、サードパーティのホストからのアクセ�
 
    * **A**：「AEM GraphQL API *は JSON 出力の完全な制御が可能であり、コンテンツをクエリするための業界標準になっています。今後、AEM GraphQL API への投資が計画されています。*」
 
-## チュートリアル - AEM ヘッドレスおよび GraphQL 入門 {#tutorial}
+## チュートリアル - AEM ヘッドレスと GraphQL をはじめる前に {#tutorial}
 
-実践チュートリアルをお探しですか？AEM の GraphQL API を使用し、外部アプリで使用するコンテンツをヘッドレス CMS シナリオで構築して公開する方法を示す「[AEM ヘッドレスと GraphQL をはじめる前に](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)」のエンドツーエンドのチュートリアルをご覧ください。
+実践的なチュートリアルを探している場合は、AEM の GraphQL API を使用し、外部アプリで使用するコンテンツをヘッドレス CMS シナリオで構築して公開する方法を示す「[AEM ヘッドレスと GraphQL をはじめる前に](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)」のエンドツーエンドのチュートリアルをご覧ください。
