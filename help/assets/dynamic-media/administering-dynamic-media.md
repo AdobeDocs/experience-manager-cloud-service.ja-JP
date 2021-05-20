@@ -4,7 +4,6 @@ description: Dynamic Mediaを設定するには、Dynamic Mediaを設定し、�
 contentOwner: Rick Brough
 role: Administrator,Business Practitioner
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-translation-type: tm+mt
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '181'
@@ -29,8 +28,8 @@ ht-degree: 58%
 Dynamic Media の管理者には、次のトピックが参考になります。
 
 * [Dynamic Media の設定](config-dm.md)
-* [画像プリセットの管理](managing-image-presets.md)
-* [ビューアプリセットの管理](managing-viewer-presets.md)
+* [画像プリセットの管理 ](managing-image-presets.md)
+* [ビューアプリセットの管理 ](managing-viewer-presets.md)
 * [Dynamic Media のトラブルシューティング](troubleshoot-dm.md)
 
 次のトピックも参照してください。
@@ -42,5 +41,5 @@ Dynamic Media の管理者には、次のトピックが参考になります。
 >
 >**アップグレードする場合：**
 >
->* Adobe Experience Managerを起動して実行した後は、アップロードしたアセットはすべて自動的に有効になります（ただし、システム管理者が明示的に無効にしていない場合）。 Experience Managerのアップグレードインスタンスを使用し、Dynamic Mediaに初めてアクセスする場合は、アセットをDynamic Media対応にするために再処理する必要があります。 詳しくは、[フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
+>* Adobe Experience Managerを起動して実行した後、アップロードしたアセットはすべて、Dynamic Mediaが自動的に有効になります（システム管理者によって明示的に無効にされていない限り）。 アップグレードされたExperience ManagerインスタンスでDynamic Mediaを初めて使用する場合、Dynamic Mediaを有効にするには、アセットを再処理する必要がある可能性が高くなります。 詳しくは、[フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
