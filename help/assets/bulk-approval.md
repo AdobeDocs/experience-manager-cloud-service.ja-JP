@@ -2,16 +2,15 @@
 title: フォルダー内およびコレクション内のアセットの確認
 description: フォルダー内またはコレクション内のアセットに対してレビューワークフローを設定し、それをレビュー担当者またはクリエイティブパートナーと共有してフィードバックを得ることができます。
 contentOwner: AG
-feature: Collections,Collaboration
+feature: コレクション，共同作業
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 99%
 
 ---
-
 
 # フォルダー内およびコレクション内のアセットの確認 {#review-folder-assets-and-collections}
 
@@ -109,4 +108,3 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
    **リスト表示**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
-
