@@ -1,14 +1,13 @@
 ---
 title: AEM as a Cloud Service でのクライアントサイドライブラリの使用
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
-translation-type: tm+mt
-source-git-commit: d4c031e17c0c83e44b687474502252c89ed37922
+exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service でのクライアントサイドライブラリの使用 {#using-client-side-libraries}
 
