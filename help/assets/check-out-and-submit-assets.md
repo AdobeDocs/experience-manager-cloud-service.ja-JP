@@ -2,31 +2,30 @@
 title: ' [!DNL Assets]内のファイルのチェックインとチェックアウト'
 description: 編集のためにアセットをチェックアウトし、変更が完了した後にアセットをチェックインする方法について説明します。
 contentOwner: AG
-feature: Asset Management
+feature: アセット管理
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 49%
+source-wordcount: '433'
+ht-degree: 50%
 
 ---
 
+# [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}のファイルのチェックインとチェックアウト
 
-# [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}のチェックインおよびチェックアウトファイル
-
-[!DNL Adobe Experience Manager Assets] では、編集のためにアセットをチェックアウトし、変更終了後にアセットをチェックインすることができます。アセットをチェックアウトした後は、その人だけがアセットを編集、注釈、公開、移動、削除できるようになります。アセットのチェックアウトでアセットにロックがかかることになります。[!DNL Assets]に再度チェックインするまで、他のユーザーはアセットに対してこれらの操作を実行できません。 ただし、ロックされたアセットのメタデータは変更することができます。
+[!DNL Adobe Experience Manager Assets] では、編集のためにアセットをチェックアウトし、変更終了後にアセットをチェックインすることができます。アセットをチェックアウトした後は、その人だけがアセットを編集、注釈、公開、移動、削除できるようになります。アセットのチェックアウトでアセットにロックがかかることになります。アセットを[!DNL Assets]に再度チェックインするまで、他のユーザーはアセットに対してこれらの操作を実行できません。 ただし、ロックされたアセットのメタデータは変更することができます。
 
 アセットをチェックイン／チェックアウトするには、アセットへの書き込み権限が必要です。
 
 この機能は、複数のユーザーが複数のチームにわたるワークフローの編集で共同作業をする際、ある作成者が変更した内容を他のユーザーが書き換えてしまう事態を防ぐのに役立ちます。
 
-## アセットをチェックアウト{#checking-out-assets}
+## アセットのチェックアウト{#checking-out-assets}
 
-1. [!DNL Assets]ユーザーインターフェイスから、チェックアウトするアセットを選択します。 チェックアウトしたいアセットは複数選択することもできます。
+1. [!DNL Assets]ユーザーインターフェイスで、チェックアウトするアセットを選択します。 チェックアウトしたいアセットは複数選択することもできます。
 
-1. ツールバーで、**[!UICONTROL チェックアウト]**&#x200B;をクリックします。 **[!UICONTROL Checkout]**&#x200B;オプションは、**[!UICONTROL Checkin]**に切り替わります。
-チェックアウトしたアセットを他のユーザーが編集できるかを確認するには、別のユーザーとしてログインします。チェックアウトしたアセットのサムネールに、![チェックアウトのロックアイコン](assets/do-not-localize/checkout_lock.png)が表示されます。
+1. ツールバーの「**[!UICONTROL チェックアウト]**」をクリックします。 「**[!UICONTROL Checkout]**」オプションが「**[!UICONTROL Checkin]**」に変わります。
+チェックアウトしたアセットを他のユーザーが編集できるかを確認するには、別のユーザーとしてログインします。チェックアウトしたアセットのサムネールに、「![チェックアウトロックアイコン](assets/do-not-localize/checkout_lock.png)」が表示されます。
 
    ![カード表示のチェックアウトアイコン](assets/checkout-icon-card-view.png)
 
@@ -34,31 +33,31 @@ ht-degree: 49%
 
    ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 
-   ロックされたアセットのメタデータを編集するには、**[!UICONTROL 表示のプロパティ]**&#x200B;をクリックします。
+   ロックされたアセットのメタデータを編集するには、「**[!UICONTROL プロパティを表示]**」をクリックします。
 
 1. 「**[!UICONTROL 編集]**」をクリックして、アセットを編集モードで開きます。
 
 1. アセットを編集して、変更内容を保存します。例えば、画像を切り抜いて保存します。アセットに注釈を付けたり公開したりすることもできます。
 
-1. [!DNL Assets]インターフェイスから編集済みのアセットを選択し、ツールバーの&#x200B;**[!UICONTROL チェックイン]**&#x200B;をクリックします。 変更されたアセットは[!DNL Assets]にチェックインされ、他のユーザーが編集できます。
+1. [!DNL Assets]インターフェイスで編集したアセットを選択し、ツールバーの「**[!UICONTROL チェックイン]**」をクリックします。 変更されたアセットは[!DNL Assets]にチェックインされ、他のユーザーが編集できるようになります。
 
 ## 強制チェックイン{#forced-check-in}
 
 管理者は他のユーザーがチェックアウトしたアセットをチェックインできます。
 
-1. [!DNL Assets]に管理者としてログインします。
+1. 管理者として [!DNL Assets] にログインします。
 1. [!DNL Assets]ユーザーインターフェイスから、他のユーザーがチェックアウトした1つ以上のアセットを選択します。
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. ツールバーで、**[!UICONTROL 「ロックを解除]**」をクリックします。 アセットはチェックインされ、他のユーザーが編集できるようになります。
+1. ツールバーの「**[!UICONTROL ロックを解除]**」をクリックします。 アセットはチェックインされ、他のユーザーが編集できるようになります。
 
 ## ベストプラクティスと制限事項 {#tips-limitations}
 
-* チェックアウトされたアセットファイルを含む&#x200B;*フォルダ*&#x200B;を削除できます。 フォルダーを削除する前に、デジタルアセットがユーザーによってチェックアウトされていないことを確認します。
+* チェックアウトされたアセットファイルを含む&#x200B;*フォルダー*&#x200B;を削除できます。 フォルダーを削除する前に、ユーザーがチェックアウトしているデジタルアセットがないことを確認します。
 
 >[!MORELIKETHIS]
 >
->* [チェックインとチェックアウトの理解を深め [!DNL Experience Manager] る](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [チェックインとチェックアウトについて理解するためのビデオチュートリアル [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [チェックインとチェックアウトの理解( [!DNL Experience Manager] Indescktop App)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [チェックインとチェックアウトについて説明するビデオチュートリアル [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
