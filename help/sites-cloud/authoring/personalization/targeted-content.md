@@ -1,14 +1,13 @@
 ---
 title: ターゲットモードを使用したターゲットコンテンツのオーサリング
 description: ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。
-translation-type: tm+mt
-source-git-commit: 10aba35c0795ef946edce02e9396947fc6348514
+exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '5348'
 ht-degree: 100%
 
 ---
-
 
 # ターゲットモードを使用したターゲットコンテンツのオーサリング  {#authoring-targeted-content-using-targeting-mode}
 
