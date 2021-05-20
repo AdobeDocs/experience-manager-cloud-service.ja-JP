@@ -1,9 +1,9 @@
 ---
 title: AEMヘッドレス開発者ジャーニー
 description: AEMの強力で柔軟なヘッドレス機能、その機能、および最初の開発プロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 1ac93a066f808e7dd2ed7e34aa7635e9914a4ea9
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '736'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ AEMの強力で柔軟なヘッドレス機能、その機能、最初のヘッ�
 | 4 | [コンテンツのモデル化方法](model-your-content.md) | コンテンツ構造のモデル化方法を説明します。 次に、チャネル間での再利用のために、コンテンツフラグメントモデルとコンテンツフラグメントを使用したAdobe Experience Manager(AEM)の構造を実現します。 |
 | 5 | [AEM Delivery APIを使用したコンテンツへのアクセス方法](access-your-content.md) | GraphQLクエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。 |
 | 6 | [AEM assets APIを使用したコンテンツの更新方法](update-your-content.md) | REST APIを使用してコンテンツフラグメントのコンテンツにアクセスし、更新する方法を説明します。 |
-| 7 | [すべてをまとめる方法 — アプリとコンテンツをAEMヘッドレスに配置する方法](put-it-all-together.md) | コンテンツフラグメント、GraphQL呼び出し、REST API呼び出し、アプリケーションを含むAEMプロジェクトを実行し、運用に備える方法を説明します。 |
+| 7 | [すべてをまとめる方法 — アプリとコンテンツをAEMヘッドレスに配置する方法](put-it-all-together.md) | AEMヘッドレスSDKを使用してAEMプロジェクトを運用する準備をする方法について説明します。 |
 | 8 | [ヘッドレスアプリケーションの運用方法](go-live.md) | アプリケーションをライブデプロイし、ローカルコードをGitに取り込んで、Cloud Manager Gitに移動し、CI/CDパイプライン用に使用する方法を説明します。 |
 | 9 | [オプション — AEMを使用したシングルページアプリケーション(SPA)の作成方法](create-spa.md) | AEMのヘッドレス機能を理解したら、ヘッドフル配信とヘッドレス配信を組み合わせ、AEM SPA Editorフレームワークを使用して編集可能なSPAを作成する方法を学びます。 |
 
