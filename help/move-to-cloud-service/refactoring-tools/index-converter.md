@@ -1,14 +1,13 @@
 ---
 title: インデックスコンバーター
 description: インデックスコンバーター
-translation-type: tm+mt
-source-git-commit: 3fe19282f9e96d503f4e8be05553c6f48a6f19b6
+exl-id: e6a3ec6d-cc02-4f5b-8b1d-ea481d6884ca
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
 
 ---
-
 
 # インデックスコンバーター {#index-converter}
 
@@ -42,6 +41,3 @@ AEM as a Cloud Service では Ensure 定義がサポートされていないこ�
 * スタンドアロンユーティリティとして：インデックスコンバーターは、スタンドアロンユーティリティとして実行することもできます。
 
    このツールの使用方法については、**[Git リソース：aem-cs-source-migration-index-converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)** を参照してください。
-
-
-
