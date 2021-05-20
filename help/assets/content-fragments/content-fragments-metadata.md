@@ -1,20 +1,19 @@
 ---
 title: メタデータ - フラグメントのプロパティ
-description: AEMのコンテンツフラグメントのメタデータプロパティを表示および編集して、ヘッドレスコンテンツを調整する方法を参照してください。
-feature: Content Fragments
+description: ヘッドレスコンテンツを調整するために、AEMのコンテンツフラグメントのメタデータプロパティを表示および編集する方法を参照してください。
+feature: コンテンツフラグメント
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 6fa911f39d707687e453de270bc0f3ece208d380
+exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 72%
+source-wordcount: '142'
+ht-degree: 71%
 
 ---
 
-
 # メタデータ - フラグメントのプロパティ {#metadata-fragment-properties}
 
-AEMのコンテンツフラグメントのメタデータプロパティを表示および編集して、ヘッドレスコンテンツを調整する方法を参照してください。
+ヘッドレスコンテンツを調整するために、AEMのコンテンツフラグメントのメタデータプロパティを表示および編集する方法を参照してください。
 
 ## プロパティ／メタデータの編集 {#editing-properties-meta-data}
 
