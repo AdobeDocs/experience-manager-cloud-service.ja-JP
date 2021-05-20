@@ -1,14 +1,13 @@
 ---
 title: 'DNS 設定の指定 '
 description: DNS 設定の指定
-translation-type: tm+mt
-source-git-commit: 1c51560886515e092680c23db3e128758dcd7d99
+exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 100%
 
 ---
-
 
 # DNS 設定の指定 {#configure-dns}
 
