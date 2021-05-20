@@ -1,20 +1,19 @@
 ---
 title: アセットワークフロー移行ツール
-description: 'アセットワークフロー移行ツール '
-translation-type: tm+mt
-source-git-commit: 3a438de3c460d4dc5a8b8617f0ec0eefc56f1665
+description: アセットワークフロー移行ツール
+exl-id: 18490295-ead6-4691-8983-a6d4054e4264
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
 ---
 
-
 # アセットワークフロー移行ツール {#asset-workflow-migration}
 
 アセットワークフロー移行ツールを使用すると、アセット処理ワークフローを AEM のオンプレミスデプロイメントまたは AMS デプロイメントから処理プロファイルおよび OSGi 設定に自動的に移行して AEM Assets as a Cloud Service で使用できるようになります。
 
-## 概要 {#introduction}
+## はじめに {#introduction}
 
 ここでは、アセットワークフロー移行ツールに関するリソースと実装の詳細について説明します。
 
