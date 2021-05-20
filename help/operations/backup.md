@@ -1,14 +1,13 @@
 ---
 title: AEM as a Cloud Service のバックアップと復元
-description: 'AEM as a Cloud Service のバックアップと復元 '
-translation-type: tm+mt
-source-git-commit: c3af507716ef60541ecca8dafb797651e8ece9d3
+description: AEM as a Cloud Service のバックアップと復元
+exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
 
 ---
-
 
 # AEM as a Cloud Service のバックアップと復元
 
