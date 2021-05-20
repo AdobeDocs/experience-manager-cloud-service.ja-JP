@@ -2,7 +2,6 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-translation-type: tm+mt
 source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
 workflow-type: tm+mt
 source-wordcount: '920'
@@ -39,7 +38,7 @@ ht-degree: 84%
 | ワークフローのパージ | 顧客 | Github でおこなう必要があります。<br> `/apps/settings/granite/operations/maintenance/granite_weekly` フォルダーまたは `granite_daily` フォルダーにプロパティを作成することで、`/libs` 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。<br> 上記のノードの下に別のノードを追加し（`granite_WorkflowPurgeTask` という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。<br> OSGI プロパティの設定については、[AEM 6.5 メンテナンスタスクドキュメント](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)を参照してください。 |
 | プロジェクトのパージ | 顧客 | Github でおこなう必要があります。<br> `/apps/settings/granite/operations/maintenance/granite_weekly` フォルダーまたは `granite_daily` フォルダーにプロパティを作成することで、`/libs` 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。<br>上記のノードの下に適切なプロパティを持つノードを追加し（`granite_ProjectPurgeTask` と命名します）、メンテナンスタスクを有効にします。<br> OSGI プロパティの設定については、[AEM 6.5 メンテナンスタスクドキュメント](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)を参照してください。 |
 
-ユーザーは、ワークフローの削除、アドホックタスクの削除およびプロジェクトの削除のメンテナンスタスクのそれぞれを、日別、週別、月別の保守期間中に実行するようにスケジュールできます。これらの設定は、ソース管理で直接編集する必要があります。 次の表に、各ウィンドウで使用可能な設定パラメータを示します。表の後に示す場所とコードサンプルも参照してください。
+ユーザーは、ワークフローの削除、アドホックタスクの削除およびプロジェクトの削除のメンテナンスタスクのそれぞれを、日別、週別、月別の保守期間中に実行するようにスケジュールできます。これらの設定は、ソース管理で直接編集する必要があります。 次の表に、各ウィンドウで使用可能な設定パラメータを示します。また、表の後に示す場所とコードサンプルも参照してください。
 
 <table>
  <tbody>
@@ -67,7 +66,7 @@ ht-degree: 84%
     <p><strong></strong>windowSchedule = weekly（この値は変更しないでください）</p>
     <p><strong></strong>windowStartTime = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行を開始するタイミングを定義します。</p>
     <p><strong></strong>windowEndTime = HH:MM（24 時間形式）週次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
-    <p><strong>windowScheduleWeekdays= 1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値は、ジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowScheduleWeekdays= 1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
     </td>
   </tr>
   <tr>
@@ -78,8 +77,8 @@ ht-degree: 84%
     <p><strong></strong>windowSchedule = daily（この値は変更しないでください）</p>
     <p><strong></strong>windowStartTime = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクの実行をいつ開始するかを定義します。</p>
     <p><strong></strong>windowEndTime = HH:MM（24 時間形式）月次メンテナンスウィンドウに関連付けられたメンテナンスタスクがまだ完了していない場合に、その実行を停止するタイミングを定義します。</p>
-    <p><strong>windowScheduleWeekdays=1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値は、ジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
-    <p><strong>windowFirstLastStartDay= 0/10（月の最初の週にスケジュールを設定）または1</strong> が月の最後の週にスケジュールを設定（月の最後の週にスケジュールを設定）値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。</p>
+    <p><strong>windowScheduleWeekdays=1 ～ 7の2つの値の配列(例：[5,5])</strong> 配列の最初の値はジョブがスケジュールされる開始日で、2番目の値はジョブが停止される終了日です。開始と終了の正確な時刻は、それぞれ windowStartTime と windowEndTime で管理されます。</p>
+    <p><strong>windowFirstLastStartDay= 0/1</strong>  0（月の最初の週にスケジュールを設定）、1（月の最後の週にスケジュールを設定）。値を指定しないと、毎月 windowScheduleWeekdays の規定に従って、事実上ジョブを毎日スケジュールします。</p>
     </td> 
     </tr>
     </tbody>
@@ -88,12 +87,12 @@ ht-degree: 84%
 **ロケーション**:
 
 * 毎日 — /apps/settings/granite/operations/maintenance/granite_daily
-* 毎週 — /apps/settings/granite/operations/maintenance/granite_weekly
-* 毎月 — /apps/settings/granite/operations/maintenance/granite_monthly
+* 週別 — /apps/settings/granite/operations/maintenance/granite_weekly
+* 月別 — /apps/settings/granite/operations/maintenance/granite_monthly
 
 **コードサンプル**:
 
-コード例1 （毎日）
+コードサンプル1（日単位）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,7 +122,7 @@ ht-degree: 84%
    windowStartTime="14:30"/>
 ```
 
-コードサンプル3（月別）
+コードサンプル3（月単位）
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
