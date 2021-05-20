@@ -1,7 +1,6 @@
 ---
 title: Enterprise DevOps
 description: デプロイメントやコラボレーションを簡単にするために必要なプロセス、メソッドおよびコミュニケーションについて学習します。
-translation-type: tm+mt
 source-git-commit: 5fe4eb9f9cad4ad2f1d259ebb5fa0302ea5c515f
 workflow-type: tm+mt
 source-wordcount: '1001'
@@ -10,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# エンタープライズ開発運用{#enterprise-devops}
+# Enterprise DevOps{#enterprise-devops}
 
 DevOps は、以下の目的で必要なプロセス、メソッドおよびコミュニケーションをカバーしています。
 
@@ -57,7 +56,7 @@ Adobe Experience Manager (AEM) as a Cloud Service は通常、次のような複
 
 この環境は、品質保証チームが新しいシステムのデザインと機能を包括的にテストするために使用されます。適切なコンテンツを持つオーサー環境とパブリッシュ環境の両方を含み、完全なテストを実施するために必要なすべてのサービスを提供する必要があります。
 
-### ステージング  {#staging}
+### ステージング {#staging}
 
 ステージング環境は、設定、コードおよびコンテンツに関して、実稼動環境のミラーである必要があります。
 
@@ -76,7 +75,7 @@ Adobe Experience Manager (AEM) as a Cloud Service は通常、次のような複
 
 プロジェクトの規模によりますが、多くの場合は複数のオーサーインスタンスやパブリッシュインスタンスで構成されます。下位レベルでは、リポジトリが複数のインスタンスにクラスター化される場合もあります。
 
-#### オーサー  {#author}
+#### 作成者 {#author}
 
 オーサーインスタンスは、通常、内部ファイアウォールの内側に配置されます。この環境では、ユーザーやユーザーの同僚が、以下のようなオーサリングタスクを実行します。
 
