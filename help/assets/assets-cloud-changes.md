@@ -33,41 +33,41 @@ ht-degree: 56%
    * 詳しくは、[アセットマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
    * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます。
 
-アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、アセットリポジトリノードに下位互換性のある方法で保存されます。
+アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、後方互換性のある方法でアセットリポジトリノードに保存されます。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
 アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（ImageMagick など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。ImageMagick の複雑な設定は、[!UICONTROL 処理プロファイル]の設定に使用できません。ビデオの高度な FFmpeg トランスコードに [!DNL Dynamic Media] を使用し、[MP4 ビデオの基本的なトランスコード](/help/assets/manage-video-assets.md#transcode-video)に処理プロファイルを使用します。
 
-Asset Microservicesは、Cloud Managerで管理されるお客様のプログラムーや環境ーで、自動的に[!DNL Experience Manager]にプロビジョニングされ、配線されるクラウドネイティブのサービスです。 [!DNL Experience Manager]を拡張またはカスタマイズするには、開発者は、クラウド環境で生成されたレンディションを含む既存のコンテンツまたはアセットを使用し、アセットの使用、表示、ダウンロードを使用したコードのテストと検証を行います。
+アセットマイクロサービスは、Cloud Managerで管理される顧客プログラムと環境の[!DNL Experience Manager]に自動的にプロビジョニングおよび接続される、クラウドネイティブなサービスです。 [!DNL Experience Manager]を拡張またはカスタマイズするには、開発者は、クラウド環境で生成されたレンディションを含む既存のコンテンツやアセットを使用し、アセットを使用してコードをテストおよび検証できます。
 
 コードとプロセス（アセットの取り込みや処理を含む）のエンドツーエンドの検証をおこなうには、コードの変更を[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)を使用してクラウド開発環境にデプロイし、アセットマイクロサービスの処理をすべて実行してテストします。
 
 
-## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}との機能パリティ
+## [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}と同等の機能
 
-[!DNL Experience Manager] には、既存の機能が動作するための多くの新機能とパフォーマンスの高い方法が [!DNL Cloud Service] 導入されています。ただし、[!DNL Experience Manager] 6.5から[!DNL Cloud Service]に移行する場合、機能が異なるか、使用できないか、一部しか使用できないことに気づくかもしれません。 [!DNL Experience Manager]次に、このような機能のリストを示します。 また、[廃止および削除された機能](/help/release-notes/deprecated-removed-features.md)も参照してください。
+[!DNL Experience Manager] as  [!DNL Cloud Service] では、既存の機能の多くの新機能とより高いパフォーマンスの方法を紹介しています。ただし、[!DNL Experience Manager] 6.5から[!DNL Experience Manager]に[!DNL Cloud Service]として移行すると、一部の機能は、動作が異なる、使用できない、または部分的に使用できない、という点に気が付く場合があります。 次に、そのような機能のリストを示します。 また、[非推奨（廃止予定）の機能と削除された機能](/help/release-notes/deprecated-removed-features.md)も参照してください。
 
-| 機能または使用例 | [!DNL Experience Manager]のステータス([!DNL Cloud Service]) | コメント |
+| 機能または使用例 | [!DNL Experience Manager]の状態([!DNL Cloud Service]) | コメント |
 |-----|-----|-----|
-| [重複資産の検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作が異なります。 | [ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作を参照してください。 |
-| [配置のみ(FPO)レンディション](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 動作が異なる |  |
-| メタデータの書き戻し | 動作が異なる | デフォルトで無効. 必要に応じて、対応するワークフローランチャーを有効にします。 書き戻しは、アセットマイクロサービスで処理されます。 |
-| Package Managerを使用してアップロードしたアセットの処理 | 手動の介入が必要です。 | **[!UICONTROL アセットの再処理]**&#x200B;アクションを使用して手動で再処理します。 |
-| MIMEタイプの検出 | サポートされていない。 | 拡張子が付いていない、または正しくない拡張子を持つデジタルアセットをアップロードした場合は、必要に応じて処理されない場合があります。 ユーザーは、DAMに拡張子を付けずにバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。 |
-| 複合アセットのサブアセットの生成 | サポートされていない。 | 従属的な使用例は満たされません。 例えば、複数ページのPDFファイルの注釈は影響を受けます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)の[サブアセットの作成を参照してください。 |
+| [重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作は異なります。 | [ [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html)での動作を参照してください。 |
+| [配置専用(FPO)レンディション](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/configure-aem-assets-for-asset-link.ug.html#configfporendition) | 動作が異なる |  |
+| メタデータの書き戻し | 動作が異なる | デフォルトで無効. 必要に応じて、対応するワークフローランチャーを有効にします。 書き戻しは、アセットマイクロサービスによって処理されます。 |
+| パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要です。 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して、手動で再処理します。 |
+| MIMEタイプの検出 | サポートされていない。 | 拡張子がない、または誤った拡張子を持つデジタルアセットをアップロードした場合、必要に応じて処理されないことがあります。 ユーザーは、DAMに拡張子なしでバイナリファイルを保存できます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html)の[MIMEタイプ検出を参照してください。 |
+| 複合アセットのサブアセットの生成 | サポートされていない。 | 従属使用例は満たされません。 例えば、複数ページのPDFファイルの注釈に影響が出ます。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets)での[サブアセットの作成を参照してください。 |
 | ホームページ | サポートされていない。 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html)を参照 |
 | ZIPアーカイブからのアセットの抽出 | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)の[ZIP抽出を参照してください。 |
-| クラシック UI | サポートされていない。 | タッチ対応UIのみ使用できます。 |
+| クラシック UI | サポートされていない。 | タッチ操作対応UIのみ使用できます。 |
 
 >[!MORELIKETHIS]
 >
->[!DNL Experience Manager]の[!DNL Cloud Service]には次のリソースがあります。
+>[!DNL Experience Manager]では、次のリソースを[!DNL Cloud Service]として使用できます。
 >
->* [廃止/削除された機能のリスト](/help/release-notes/deprecated-removed-features.md)
-* [紹介](/help/overview/introduction.md)
+>* [非推奨（廃止予定）および削除された機能のリスト](/help/release-notes/deprecated-removed-features.md)
+* [はじめに](/help/overview/introduction.md)
 * [新機能と相違点](/help/overview/what-is-new-and-different.md)
-* [建築](/help/core-concepts/architecture.md)
+* [アーキテクチャ](/help/core-concepts/architecture.md)
 * [主要な変更点](/help/release-notes/aem-cloud-changes.md)
 * [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 * [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
