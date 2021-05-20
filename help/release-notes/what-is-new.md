@@ -1,14 +1,13 @@
 ---
 title: 新機能
-description: 'Adobe Experience Manager (AEM) as a Cloud Service の新機能。 '
-translation-type: tm+mt
-source-git-commit: e381807d7c199113689304e9481dfe2022ee5f93
+description: Adobe Experience Manager (AEM) as a Cloud Service の新機能。
+exl-id: f854aaf8-e84d-4904-832f-f72433590920
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
 ---
-
 
 # 新機能 {#what-is-new}
 
