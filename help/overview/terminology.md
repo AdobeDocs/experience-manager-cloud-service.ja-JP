@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の概要 - 用語
-description: 'Adobe Experience Manager as a Cloud Service の概要 - 用語。 '
-translation-type: tm+mt
-source-git-commit: 465172db5bbc3b1dc3b42164d759a45e0ff13a8e
+description: Adobe Experience Manager as a Cloud Service の概要 - 用語。
+exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service - 用語 {#adobe-experience-manager-as-a-cloud-service-terminology}
 
