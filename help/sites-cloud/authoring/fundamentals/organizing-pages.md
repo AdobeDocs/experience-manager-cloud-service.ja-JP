@@ -1,14 +1,13 @@
 ---
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
-translation-type: tm+mt
-source-git-commit: 95ac5e5f6c49d5a2d7aef5dcf30d8298fd459457
+exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 100%
 
 ---
-
 
 # ページの作成と整理 {#creating-and-organizing-pages}
 
