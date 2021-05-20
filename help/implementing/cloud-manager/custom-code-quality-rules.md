@@ -2,7 +2,6 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '3302'
@@ -617,7 +616,7 @@ AEM コンテンツリポジトリ内の /libs コンテンツツリーを読み
 複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。その結果、どの設定が使用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
 
 >[!NOTE]
->このルールは、同じ設定が複数のパッケージで定義される場合、例えば、構築されたパッケージの全体的なリストで同じパッケージが複製される場合を含め、同じ設定が同じパスで定義される問題を生み出します。 例えば、ビルドで`com.myco:com.myco.ui.apps`と`com.myco:com.myco.all`という名前のパッケージが作成され、`com.myco:com.myco.all`が`com.myco:com.myco.ui.apps`を埋め込む場合、`com.myco:com.myco.ui.apps`内のすべての設定が重複としてレポートされます。 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従わない場合が一般的です。この例では、パッケージ`com.myco:com.myco.ui.apps`に`<cloudManagerTarget>none</cloudManagerTarget>`プロパティがありません。
+>このルールでは、同じ設定が同じパスで複数のパッケージで定義される問題が発生します。これには、ビルドパッケージの全体的なリストで同じパッケージが複製される場合も含まれます。 例えば、`com.myco:com.myco.ui.apps`および`com.myco:com.myco.all`という名前のパッケージをビルドで生成し、`com.myco:com.myco.all`が`com.myco:com.myco.ui.apps`を埋め込む場合、`com.myco:com.myco.ui.apps`内のすべての設定が重複としてレポートされます。 これは通常、[コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従わない場合です。この例では、パッケージ`com.myco:com.myco.ui.apps`に`<cloudManagerTarget>none</cloudManagerTarget>`プロパティがありません。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
@@ -741,7 +740,7 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
-### OakPAL — プロキシ対応のクライアントライブラリに含まれるリソースは、{#oakpal-resources-proxy}という名前のフォルダーに存在する必要があります。
+### OakPAL — プロキシ対応クライアントライブラリに含まれるリソースは、resources {#oakpal-resources-proxy}という名前のフォルダーに格納する必要があります。
 
 **キー**:ClientlibProxyResource
 
@@ -751,7 +750,7 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMクライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。 [Using Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)で説明されているように、プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、発行インスタンスで効果的に参照するために、resourcesという名前の子フォルダーに格納する必要があります。
+AEMクライアントライブラリには、画像やフォントなどの静的リソースが含まれる場合があります。 [Preprocessors](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)の使用で説明されているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するには、これらの静的リソースをresourcesという名前の子フォルダーに格納する必要があります。
 
 #### 準拠していないコード {#non-compliant-proxy-enabled}
 
@@ -775,7 +774,7 @@ AEMクライアントライブラリには、画像やフォントなどの静�
         + myimage.jpg
 ```
 
-### OakPAL -Cloud Serviceに互換性のないワークフロープロセスの使用{#oakpal-usage-cloud-service}
+### OakPAL — 互換性のないCloud Serviceプロセスの使用{#oakpal-usage-cloud-service}
 
 **キー**:CloudServiceIncompatibleWorkflowProcess
 
@@ -785,9 +784,9 @@ AEMクライアントライブラリには、画像やフォントなどの静�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Service上でアセット処理を行うためにAssetマイクロサービスに移行すると、AEMのオンプレミスバージョンとAMSバージョンで使用されていたワークフロープロセスが、サポートされなくなるか不要になります。 [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)にある移行ツールを使用して、AEMCloud Serviceの移行中にワークフローモデルを更新できます。
+AEMCloud Serviceでのアセット処理のためにアセットマイクロサービスに移行すると、オンプレミスおよびAMSバージョンのAEMで使用されていたいくつかのワークフロープロセスが、サポート対象外または不要になります。 [aem-cloud-migration](https://github.com/adobe/aem-cloud-migration)の移行ツールを使用して、AEMCloud Serviceの移行中にワークフローモデルを更新できます。
 
-### OakPAL — 静的テンプレートの使用は、編集可能なテンプレートに対して推奨されません{#oakpal-static-template}
+### OakPAL — 静的テンプレートの使用は、編集可能なテンプレートを優先する場合は推奨されません{#oakpal-static-template}
 
 **キー**:StaticTemplateUsage
 
@@ -797,9 +796,9 @@ AEMCloud Service上でアセット処理を行うためにAssetマイクロサ�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、静的テンプレートの使用はAEMプロジェクトで非常に一般的でしたが、編集可能なテンプレートは最も柔軟性があり、静的なテンプレートにはない追加機能をサポートするので、非常にお勧めします。 詳しくは、[ページテンプレートを参照してください。](/help/implementing/developing/components/templates.md) 静的なテンプレートから編集可能なテンプレートへの移行は、 [AEM最新化ツールを使用して大幅に自動化できます](https://opensource.adobe.com/aem-modernize-tools/)。
+静的テンプレートの使用は、AEMプロジェクトでは従来から非常に一般的でしたが、編集可能なテンプレートは、静的テンプレートにはない追加機能を最も柔軟に提供し、サポートするので、強くお勧めします。 詳しくは、[ページテンプレートを参照してください。](/help/implementing/developing/components/templates.md) 静的テンプレートから編集可能テンプレートへの移行は、 [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)を使用して大幅に自動化できます。
 
-### OakPAL — 従来の基盤コンポーネントの使用は推奨されません{#oakpal-usage-legacy}
+### OakPAL — レガシー基盤コンポーネントの使用は推奨されません{#oakpal-usage-legacy}
 
 **キー**:LegacyFoundationComponentUsage
 
@@ -809,9 +808,9 @@ AEMCloud Service上でアセット処理を行うためにAssetマイクロサ�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-WCMコアコンポーネントを優先する複数のAEMリリースでは、従来の基盤コンポーネント（`/libs/foundation`の下のコンポーネントなど）は廃止されました。 オーバーレイまたは継承によるカスタムコンポーネントの基盤としての従来の基盤コンポーネントの使用はお勧めしません。対応するコアコンポーネントに変換する必要があります。 この変換は、[AEM最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
+WCMコアコンポーネントを優先して、いくつかのAEMリリースでは、従来の基盤コンポーネント（`/libs/foundation`の下のコンポーネント）が非推奨（廃止予定）になりました。 オーバーレイまたは継承によるカスタムコンポーネントの基礎としての従来の基盤コンポーネントの使用は推奨されないので、対応するコアコンポーネントに変換する必要があります。 この変換は、[AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)で容易におこなえます。
 
-### OakPAL — サポートされている実行モード名と順序のみを使用{#oakpal-supported-runmodes}
+### OakPAL — サポートされている実行モード名と順序のみを使用する{#oakpal-supported-runmodes}
 
 **キー**:SupportedRunmode
 
@@ -821,9 +820,9 @@ WCMコアコンポーネントを優先する複数のAEMリリースでは、�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceは、runmode名に厳密な命名ポリシーを適用し、それらのrunmodeに厳密な命名を付けます。 サポートされている実行モードのリストは[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)で確認でき、これから逸脱した場合は問題と見なされます。
+AEMCloud Serviceでは、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を適用します。 サポートされている実行モードのリストは[実行モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#runmodes)に記載されており、これからの逸脱は問題と見なされます。
 
-### OakPAL — カスタム検索インデックス定義ノードは、/oak:index {#oakpal-custom-search}の直接の子である必要があります
+### OakPAL — カスタム検索インデックス定義ノードは、/oak:index {#oakpal-custom-search}の直接の子である必要があります。
 
 **キー**:OakIndexLocation
 
@@ -833,9 +832,9 @@ AEMCloud Serviceは、runmode名に厳密な命名ポリシーを適用し、そ
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryIndexDefinitionタイプのノード）が`/oak:index`の直接の子ノードである必要があります。 他の場所のインデックスは、AEMCloud Serviceと互換性を持たせるために移動する必要があります。 検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
+AEMCloud Serviceでは、カスタム検索インデックス定義（例：oak:QueryIndexDefinitionタイプのノード）が`/oak:index`の直接の子ノードである必要があります。 他の場所のインデックスは、AEMCloud Serviceと互換性を持たせるために移動する必要があります。 検索インデックスについて詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードのcompatVersion 2 {#oakpal-custom-search-compatVersion}が必要
+### OakPAL — カスタム検索インデックス定義ノードにはcompatVersion 2 {#oakpal-custom-search-compatVersion}が必要
 
 **キー**:IndexCompatVersion
 
@@ -845,9 +844,9 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryI
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryIndexDefinitionタイプのノード）のcompatVersionプロパティを2に設定する必要があります。 その他の値は、AEMCloud Serviceではサポートされていません。 検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)を参照してください。
+AEMCloud Serviceでは、カスタム検索インデックス定義（つまり、タイプoak:QueryIndexDefinitionのノード）でcompatVersionプロパティを2に設定する必要があります。 その他の値は、AEMCloud Serviceではサポートされません。 検索インデックスについて詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured {#oakpal-descendent-nodes}でなければなりません
+### OakPAL — カスタム検索インデックス定義ノードの子孫ノードは、nt:unstructured {#oakpal-descendent-nodes}型である必要があります。
 
 **キー**:IndexDescendantNodeType
 
@@ -857,9 +856,9 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryI
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-カスタムの検索インデックス定義ノードに順序が指定されていない子ノードがある場合、問題のトラブルシューティングが難しくなる可能性があります。 これを避けるために、`oak:QueryIndexDefinition`ノードの子孫ノードはすべてnt:unstructuredのタイプにすることをお勧めします。
+カスタム検索インデックス定義ノードに順序がない子ノードがある場合、問題のトラブルシューティングが困難になる可能性があります。 これを避けるために、`oak:QueryIndexDefinition`ノードの子ノードはすべてnt:unstructured型にすることをお勧めします。
 
-### OakPAL — カスタム検索インデックス定義ノードに、{#oakpal-custom-search-index}子を持つindexRulesという名前の子ノードを含める必要があります
+### OakPAL — カスタム検索インデックス定義ノードには、子{#oakpal-custom-search-index}を持つindexRulesという子ノードが必要です。
 
 **キー**:IndexRulesNode
 
@@ -869,9 +868,9 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryI
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-適切に定義されたカスタム検索インデックス定義ノードには、indexRulesという名前の子ノードが含まれている必要があります。このノードには、少なくとも1つの子が必要です。 詳細については、[Oakドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
+適切に定義されたカスタム検索インデックス定義ノードには、indexRulesという名前の子ノードが必要です。このノードには、少なくとも1つの子が必要です。 詳しくは、[Oakドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードは命名規則に従う必要があります{#oakpal-custom-search-definitions}
+### OakPAL — カスタム検索インデックス定義ノードは、命名規則{#oakpal-custom-search-definitions}に従う必要があります。
 
 **キー**:IndexName
 
@@ -881,9 +880,9 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryI
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（つまり、タイプ`oak:QueryIndexDefinition`のノード）に、[コンテンツ検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)で説明されている特定のパターンに従って名前を付ける必要があります。
+AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）を、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)で説明されている特定のパターンに従って名前を付ける必要があります。
 
-### OakPAL — カスタム検索インデックス定義ノードはインデックスタイプlucene {#oakpal-index-type-lucene}を使用する必要があります
+### OakPAL — カスタム検索インデックス定義ノードは、インデックスタイプlucene {#oakpal-index-type-lucene}を使用する必要があります。
 
 **キー**:IndexType
 
@@ -893,9 +892,9 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（つまり�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryIndexDefinitionタイプのノード）に、**lucene**&#x200B;に設定された値を持つtypeプロパティが必要です。 既存のインデックスの種類を使用したインデックス作成は、AEMCloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEMCloud Serviceでは、カスタム検索インデックス定義（つまり、タイプoak:QueryIndexDefinitionのノード）に、値が&#x200B;**lucene**&#x200B;に設定されたtypeプロパティが必要です。 従来のインデックスタイプを使用するインデックス作成は、AEM Indexに移行する前に更新する必要があります。Cloud Service 詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードにseed {#oakpal-property-name-seed}という名前のプロパティを含めない
+### OakPAL — カスタム検索インデックス定義ノードにシード{#oakpal-property-name-seed}という名前のプロパティを含めない
 
 **キー**:IndexSeedProperty
 
@@ -905,9 +904,9 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（oak:QueryI
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）にseedという名前のプロパティを含めることを禁止しています。 AEMCloud Serviceに移行する前に、このプロパティを使用するインデックス作成を更新する必要があります。 詳しくは、[コンテンツの検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEMCloud Serviceは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）がseedという名前のプロパティを含まないように禁止します。 このプロパティを使用するインデックス作成は、AEMCloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
 
-### OakPAL — カスタム検索インデックス定義ノードにreindex {#oakpal-reindex-property}という名前のプロパティを含めることはできません
+### OakPAL — カスタム検索インデックス定義ノードにreindex {#oakpal-reindex-property}という名前のプロパティを含めない
 
 **キー**:IndexReindexProperty
 
@@ -917,4 +916,4 @@ AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMCloud Serviceでは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）にreindexという名前のプロパティを含めることを禁止しています。 AEMCloud Serviceに移行する前に、このプロパティを使用するインデックス作成を更新する必要があります。 詳しくは、[コンテンツの検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEMCloud Serviceは、カスタム検索インデックス定義（タイプ`oak:QueryIndexDefinition`のノード）がreindexという名前のプロパティを含まないように禁止します。 このプロパティを使用するインデックス作成は、AEMCloud Serviceに移行する前に更新する必要があります。 詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
