@@ -2,7 +2,6 @@
 title: AEM Dispatcher コンバーターツール
 description: AEM Dispatcher コンバーターツール
 exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
-translation-type: tm+mt
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '341'
