@@ -1,51 +1,51 @@
 ---
-title: ヘッドレスアプリケーションの使い方
-description: AEMヘッドレス開発者ジャーニーのこの部分では、ローカルコードをGitに取り込み、CI/CDパイプライン用にCloud Manager Gitに移動して、ヘッドレスアプリケーションをライブにデプロイする方法を説明します。
+title: ヘッドレスアプリケーションの運用開始方法
+description: AEMヘッドレス開発者ジャーニーのこのパートでは、ローカルコードをGitに取り込み、CI/CDパイプライン用にCloud Manager Gitに移動することで、ヘッドレスアプリケーションをライブデプロイする方法を説明します。
 hide: true
 hidefromtoc: true
 index: false
 exl-id: f79b5ada-8f59-4706-9f90-bc63301b2b7d
-source-git-commit: 7c30a7415cc424e7f417d92bad9eeb01877994d2
+source-git-commit: 9e06419f25800199dea92b161bc393e6e9670697
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1815'
 ht-degree: 2%
 
 ---
 
-# ヘッドレスアプリケーションの使い方{#go-live}
+# ヘッドレスアプリケーションでの運用方法{#go-live}
 
 >[!CAUTION]
 >
->作業中 — このドキュメントの作成は現在進行中で、完全なもの、最終的なもの、または実稼働目的で使用するものとして理解してはなりません。
+>古い — このドラフトコンテンツは、新しい[ヘッドレス開発者ジャーニードキュメントに置き換えられました。](/help/journey-headless/developer/overview.md)
 
-[AEM Headless Developerジャーニー](overview.md)のこの部分では、ヘッドレスアプリケーションをライブにデプロイする方法を学びます。ここでは、ローカルコードをGitに取り込み、CI/CDパイプライン用にCloud Manager Gitに移動します。
+[AEMヘッドレス開発者ジャーニー](overview.md)のこのパートでは、ヘッドレスアプリケーションをライブにデプロイする方法について説明します。そのためには、ローカルコードをGitで取得し、CI/CDパイプライン用にCloud Manager Gitに移動します。
 
-## {#story-so-far}
+## {#story-so-far}までの話
 
-以前のドキュメントのAEM headlessジャーニーでは、[AEM AssetsAPIを使用したコンテンツの更新方法](update-your-content.md)で、AEMの既存のheadlessコンテンツを更新する方法を学びました。今後は、次の操作を行う必要があります。
+AEMヘッドレスジャーニーの前のドキュメント、[AEM Assets APIを使用したコンテンツの更新方法](update-your-content.md)では、APIを使用してAEMの既存のヘッドレスコンテンツを更新する方法を学習し、次の操作をおこなう必要があります。
 
-* AEM AssetsHTTP APIについて説明します。
+* AEM Assets HTTP APIについて
 
-この記事は、これらの基本事項に基づいて構築されているので、独自のAEMヘッドレスプロジェクトを実稼動に備える方法を理解しています。
+この記事は、これらの基本事項に基づいて構築されるので、独自のAEMヘッドレスプロジェクトを運用に備える方法を理解できます。
 
 ## 目的 {#objective}
 
-このドキュメントは、AEMヘッドレスパブリケーションのパイプラインと、アプリケーションの運用に当たる前に注意が必要なパフォーマンス上の考慮事項を理解するのに役立ちます。
+このドキュメントでは、AEMヘッドレス公開パイプラインと、アプリケーションの運用を開始する前に考慮する必要があるパフォーマンスに関する考慮事項について説明します。
 
-* AEM SDKと必要な開発ツールについて説明します。
-* ローカル開発ランタイムを設定して、本番運用開始前にコンテンツをシミュレートします。
+* AEM SDKと必要な開発ツールについて説明します
+* 本番運用開始前にローカル開発をシミュレートするコンテンツランタイムの設定
 * AEMコンテンツのレプリケーションとキャッシュの基本について
-* 起動前のアプリケーションのセキュリティと拡張
+* 起動前のアプリケーションのセキュリティ保護と拡張
 * パフォーマンスとデバッグの問題の監視
 
 ## AEM SDK {#the-aem-sdk}
 
-AEM SDKは、カスタムコードを構築しデプロイするために使用します。 これは、運用を開始する前にヘッドレスアプリケーションを開発し、テストするために必要な主なツールです。 次のアーティファクトが含まれます。
+AEM SDKは、カスタムコードの作成とデプロイに使用されます。 運用を開始する前にヘッドレスアプリケーションを開発およびテストするために必要な主なツールです。 次のアーティファクトが含まれます。
 
-* Quickstart jar — 作成者インスタンスと発行インスタンスの両方を設定するのに使用できる実行可能なjarファイル
-* ディスパッチャーツール — WindowsおよびUNIXベースのシステムのディスパッチャーモジュールとその依存関係
-* Java API Jar - AEMに対する開発に使用できる、許可されているすべてのJava APIを公開するJava Jar/Maven依存関係
-* Javadoc jar - Java API jarのjavadoc
+* クイックスタートjar — オーサーインスタンスとパブリッシュインスタンスの両方を設定するために使用できる実行可能なjarファイル
+* Dispatcherツール — WindowsおよびUNIXベースのシステム用のDispatcherモジュールとその依存関係
+* Java API JAR - AEMに対する開発に使用できる、許可されたすべてのJava APIを公開するJava JAR/Maven依存関係
+* Javadoc jar - Java API jarのJavadoc
 
 ## その他の開発ツール{#additional-development-tools}
 
@@ -57,108 +57,108 @@ AEM SDKに加えて、コードとコンテンツをローカルで開発およ�
 * Node.jsライブラリ
 * 選択したIDE
 
-AEMはJavaアプリケーションなので、AEMをCloud Serviceとして開発するためには、JavaとJava SDKをインストールする必要があります。
+AEMはJavaCloud Serviceなので、AEM as a Applicationの開発をサポートするために、JavaとJava SDKをインストールする必要があります。
 
-Gitは、ソース管理の管理、Cloud Managerへの変更のチェックイン、実稼働インスタンスへの展開に使用するものです。
+Gitは、ソース管理の管理や、Cloud Managerに対する変更のチェックイン、実稼動インスタンスへのデプロイに使用する機能です。
 
-AEMでは、AEM Mavenプロジェクトアーキタイプから生成されたプロジェクトを作成する際にApache Mavenを使用します。 主要なIDEはすべてMavenの統合サポートを提供します。
+AEMは、AEM Mavenプロジェクトアーキタイプから生成されたプロジェクトを作成するためにApache Mavenを使用します。 主要なIDEはすべてMavenの統合サポートを提供します。
 
-Node.jsは、AEMプロジェクトの`ui.frontend`サブプロジェクトのフロントエンドアセットを操作するために使用されるJavaScriptランタイム環境です。 Node.jsはnpmと共に配布され、JavaScriptの依存関係を管理するために使用される、事実上のNode.jsパッケージマネージャーです。
+Node.jsは、AEMプロジェクトの`ui.frontend`サブプロジェクトのフロントエンドアセットを操作するために使用されるJavaScriptランタイム環境です。 Node.jsはnpmと共に配布され、JavaScriptの依存関係の管理に使用される事実上のNode.jsパッケージマネージャーです。
 
 ## AEMシステムのコンポーネントの概要{#components-of-an-aem-system-at-a-glance}
 
 次に、AEM環境の構成要素を見てみましょう。
 
-完全なAEM環境は、作成者、発行、およびディスパッチャーで構成されます。 ライブにする前に、コードとコンテンツのプレビューを簡単にするために、これらの同じコンポーネントをローカル開発ランタイムで使用できるようになります。
+完全なAEM環境は、オーサー、パブリッシュ、ディスパッチャーで構成されます。 ライブにする前にコードとコンテンツを簡単にプレビューできるように、これらの同じコンポーネントがローカル開発ランタイムで使用可能になります。
 
-* **Author** サービスでは、内部ユーザーがコンテンツを作成、管理、プレビューします。
+* **Authorサービス** は、内部ユーザーがコンテンツを作成、管理、プレビューする場所です。
 
-* **発行** サービスは「ライブ」環境と見なされ、通常はエンドユーザーが操作します。コンテンツは、Authorサービスで編集および承認された後、Publishサービスに配信されます。 AEMヘッドレスアプリケーションで最も一般的なデプロイメントパターンは、実稼働版のアプリケーションをAEM Publishサービスに接続させることです。
+* **パブリッシュサ** ービスは「ライブ」環境と見なされ、通常はエンドユーザーがやり取りします。コンテンツは、オーサーサービスで編集および承認された後、パブリッシュサービスに配信されます。 AEMヘッドレスアプリケーションで最も一般的なデプロイメントパターンは、実稼動版のアプリケーションをAEMパブリッシュサービスに接続させることです。
 
-* **ディス** パッチャーは、AEMディスパッチャーモジュールで拡張された静的なWebサーバーです。パブリッシュインスタンスで生成された Web ページをキャッシュしてパフォーマンスを向上します。
+* **Dispatcherは** AEM Dispatcherモジュールで拡張された静的Webサーバーです。パブリッシュインスタンスで生成された Web ページをキャッシュしてパフォーマンスを向上します。
 
 ## ローカル開発ワークフロー{#the-local-development-workflow}
 
-ローカル開発プロジェクトはApache Mavenを基に構築されており、ソース管理にGitを使用しています。 プロジェクトを更新するために、開発者はEclipse、Visual Studio Code、IntelliJなどの望ましい統合開発環境を使用できます。
+ローカル開発プロジェクトはApache Mavenを基に構築され、ソース管理にGitを使用しています。 プロジェクトを更新するために、開発者は、Eclipse、Visual Studio Code、IntelliJなど、好みの統合開発環境を使用できます。
 
-ヘッドレスアプリケーションで取り込まれるコードまたはコンテンツの更新をテストするには、AEM作成者のローカルインスタンスと発行サービスを含むローカルAEMランタイムに更新を展開する必要があります。
+ヘッドレスアプリケーションによって取り込まれるコードまたはコンテンツの更新をテストするには、AEMオーサーサービスとパブリッシュサービスのローカルインスタンスを含む、ローカルのAEMランタイムに更新をデプロイする必要があります。
 
-アップデートが最も重要な場所でテストすることが重要なので、ローカルAEMランタイムの各コンポーネント間の違いを必ず書き留めてください。 例えば、作成者でコンテンツの更新をテストしたり、発行インスタンスで新しいコードをテストしたりします。
+最も重要な場所で更新をテストすることが重要なので、ローカルAEMランタイムの各コンポーネントの違いに注意してください。 例えば、オーサーインスタンスでコンテンツの更新をテストしたり、パブリッシュインスタンスで新しいコードをテストしたりします。
 
-実稼働システムでは、ディスパッチャーとhttp Apacheサーバーは、常にAEM発行インスタンスの前に配置されます。 また、AEMシステムのキャッシュおよびセキュリティサービスを提供するので、ディスパッチャーに対してコードおよびコンテンツの更新をテストすることもお勧めします。
+実稼動システムでは、DispatcherとHTTP Apacheサーバーは常にAEMパブリッシュインスタンスの前に配置されます。 AEMシステムのキャッシュとセキュリティサービスを提供するので、Dispatcherに対するコードとコンテンツの更新もテストすることが最も重要です。
 
-## ローカル開発環境{#previewing-your-code-and-content-locally-with-the-local-development-environment}を使用したコードとコンテンツのローカルプレビュー
+## ローカル開発環境{#previewing-your-code-and-content-locally-with-the-local-development-environment}でのコードとコンテンツのローカルでのプレビュー
 
 AEMヘッドレスプロジェクトを起動用に準備するには、プロジェクトの構成要素がすべて正常に機能していることを確認する必要があります。
 
-そのためには、すべてをまとめる必要があります。コード、コンテンツ、設定を行い、ローカル開発環境でテストして、運用準備を実現します。
+それには、すべてをまとめる必要があります。コード、コンテンツ、設定を実稼動環境でテストし、ローカル開発環境で運用開始準備を行う。
 
-ローカル開発環境は、
+ローカル開発環境は、次の3つの主な領域で構成されます。
 
-1. AEMプロジェクト —AEM開発者が作業するすべてのカスタムコード、設定、コンテンツが含まれます。
-1. Local AEM Runtime - AEMプロジェクトからコードをデプロイするために使用されるAEM作成者サービスおよび発行サービスのローカルバージョン
-1. Local Dispatcher Runtime - Dispatcherモジュールを含むApache httpd Webサーバーのローカルバージョンです。
+1. AEMプロジェクト — AEM開発者が作業するすべてのカスタムコード、設定およびコンテンツが含まれます。
+1. Local AEM Runtime - AEMプロジェクトからコードをデプロイする際に使用される、AEMオーサーサービスとパブリッシュサービスのローカルバージョン
+1. Local Dispatcher Runtime - Dispatcherモジュールを含むApache httpd Webサーバーのローカルバージョン
 
-ローカル開発環境を設定したら、静的なノードサーバーをローカルにデプロイすることで、Reactアプリに対するコンテンツサービングをシミュレートできます。
+ローカル開発環境を設定したら、静的なNodeサーバーをローカルにデプロイすることで、Reactアプリに対するコンテンツサービングをシミュレートできます。
 
-ローカル開発環境の設定と、コンテンツプレビューに必要なすべての依存関係について詳しく調べるには、[実稼働環境の導入ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)を参照してください。
+ローカル開発環境と、コンテンツのプレビューに必要なすべての依存関係の設定について詳しくは、[実稼動環境のデプロイメントに関するドキュメント](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/production-deployment.html?lang=en#prerequisites)を参照してください。
 
-## AEM Go-Live用ヘッドレスアプリケーションの準備{#prepare-your-aem-headless-application-for-golive}
+## AEM Headless Application for Go-Liveの準備{#prepare-your-aem-headless-application-for-golive}
 
-次に示すベストプラクティスに従って、AEMのヘッドレスアプリケーションを起動できる状態にします。
+次に、以下に示すベストプラクティスに従って、AEMヘッドレスアプリケーションを起動に備えます。
 
 ### {#secure-and-scale-before-launch}を起動する前にヘッドレスアプリケーションを保護し、拡張する
 
-1. GraphQLリクエストで[トークンベースの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)を設定
-1. [キャッシュ](/help/implementing/dispatcher/caching.md)を構成します。
+1. GraphQLリクエストで[トークンベースの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)を設定します
+1. [キャッシュ](/help/implementing/dispatcher/caching.md)を設定します。
 
 ### モデル構造とGraphQL出力{#structure-vs-output}
 
-* 15 KBを超えるJSON（gzip圧縮）を出力するクエリは作成しないでください。 長いJSONファイルは、クライアントアプリケーションが解析する際にリソースを大量に消費します。
-* 5つ以上の階層化されたフラグメント階層を避けます。 レベルが上がると、コンテンツ作成者は変更の影響を考慮するのが困難になります。
-* モデル内の依存関係クエリを持つクエリをモデリングする代わりに、マルチオブジェクト階層を使用します。 これにより、多くのコンテンツの変更を行うことなく、JSON出力を再構築できる柔軟性が長期にわたって高まります。
+* 15 kbを超えるJSON（gzip圧縮）を出力するクエリを作成しないでください。 長いJSONファイルは、クライアントアプリケーションが解析する際にリソースを集中的に消費します。
+* フラグメント階層のネストされたレベルを5つ以上回避します。 レベルを増やすと、コンテンツ作成者は変更の影響を考慮するのが困難になります。
+* モデル内の依存関係階層を持つクエリをモデリングする代わりに、複数オブジェクトクエリを使用します。 これにより、多くのコンテンツ変更を行うことなく、JSON出力を再構築する際に、より長期的な柔軟性を実現します。
 
-### CDNキャッシュヒット率の最大化{#maximize-cdn}
+### CDNキャッシュヒット率を最大化{#maximize-cdn}
 
 * サーフェスからライブコンテンツをリクエストする場合を除き、直接GraphQLクエリを使用しないでください。
-   * 持続的なクエリは可能な限り使用してください。
-   * CDNがキャッシュするCDNのTTLを600秒以上にします。
-   * AEMでは、既存のクエリに対するモデル変更の影響を計算できます。
-* JSONファイル/GraphQLクエリを低コンテンツ変更率と高コンテンツ変更率の間で分割し、CDNへのクライアントトラフィックを減らし、より高いTTLを割り当てます。 これにより、接触チャネルサーバーでJSONを再検証するCDNが最小化されます。
-* CDNからコンテンツをアクティブに無効にするには、「ソフトパージ」を使用します。 これにより、CDNは、キャッシュミスを招くことなく、コンテンツを再ダウンロードできます。
+   * 可能な限り、永続化されたクエリを使用します。
+   * CDNがキャッシュするために、CDNのTTL値を600秒を超える値に設定します。
+   * AEMは、既存のクエリに対するモデルの変更の影響を計算できます。
+* JSONファイル/GraphQLクエリを低コンテンツ変更率と高コンテンツ変更率の間で分割し、CDNへのクライアントトラフィックを減らし、より高いTTLを割り当てます。 これにより、CDNでのオリジンサーバーとのJSONの再検証が最小限に抑えられます。
+* CDNからのコンテンツをアクティブに無効にするには、ソフトパージを使用します。 これにより、CDNは、キャッシュミスを引き起こすことなく、コンテンツを再ダウンロードできます。
 
-### ヘッドレスコンテンツのダウンロード時間の短縮{#improve-download-time}
+### ヘッドレスコンテンツのダウンロード時間を短縮{#improve-download-time}
 
 * HTTPクライアントがHTTP/2を使用していることを確認します。
-* HTTPクライアントがgzipに対するヘッダ要求を受け入れることを確認します。
-* JSONおよび参照されるアーティファクトをホストするために使用されるドメインの数を最小限に抑えます。
+* gzipに対するHTTPクライアントのAccept Headersリクエストを確認します。
+* JSONおよび参照されるアーティファクトをホストするために使用するドメインの数を最小限に抑えます。
 * `Last-modified-since`を利用してリソースを更新します。
-* 完全なJSONファイルを解析することなく、JSONファイル内の`_reference`出力を使用して、開始によるアセットのダウンロードを行う。
+* JSONファイルの`_reference`出力を使用すると、完全なJSONファイルを解析することなく、アセットのダウンロードを開始できます。
 
 ## 実稼動へのデプロイ {#deploy-to-production}
 
-すべての動作がテスト済みで正常に動作していることを確認したら、Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)の[中央管理されたGitリポジトリにコードの更新をプッシュする準備が整います。
+すべてのテストが完了し、正しく動作していることを確認したら、Cloud Managerの[一元化されたGitリポジトリにコードの更新をプッシュする準備が整います。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)
 
-アップデートがCloud Managerにアップロードされた後、[Cloud ManagerのCI/CDパイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、AEMにCloud Serviceーとして展開できます。
+更新内容がCloud Managerにアップロードされたら、[Cloud ManagerのCI/CDパイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)を使用して、AEMにCloud Serviceとしてデプロイできます。
 
-Cloud ManagerのCI/CDパイプラインを活用して、コードの展開を開始できます。このパイプラインについては、[ここ](/help/implementing/deploying/overview.md)で詳しく説明しています。
+Cloud Manager CI/CDパイプラインを活用して、コードのデプロイを開始できます。このパイプラインについては、[ここ](/help/implementing/deploying/overview.md)で詳しく説明します。
 
 ## パフォーマンスの監視 {#performance-monitoring}
 
-AEMヘッドレスアプリケーションを使用する場合、ユーザーが最高のエクスペリエンスを得られるようにするには、主要なパフォーマンス指標を以下に示すように監視することが重要です。
+AEMヘッドレスアプリケーションを使用する際に、ユーザーが最高のエクスペリエンスを得るためには、次に説明するように、主要なパフォーマンス指標を監視することが重要です。
 
-* アプリのプレビュー版と実稼働版を検証する
-* 現在のサービスの可用性の状態に関するAEMステータスページの確認
+* アプリのプレビューバージョンと実稼動バージョンの検証
+* AEMステータスページで現在のサービス可用性ステータスを確認する
 * パフォーマンスレポートへのアクセス
    * 配信パフォーマンス
-      * CDN(Fastly)パフォーマンス — 呼び出し数、キャッシュ率、エラー率、ペイロードトラフィックの確認
-      * 接触チャネルサーバ — 呼び出し数、エラー率、CPU負荷、ペイロードトラフィック
-   * 発言者の実績
-      * ユーザー数、要求数、読み込み数の確認
-* AppおよびSpace固有のパフォーマンスレポートへのアクセス
-   * サーバーが起動したら、一般的な指標が緑/オレンジ/赤かどうかを確認し、特定のアプリの問題を特定します。
-   * 上記と同じレポートを開き、アプリまたはスペースにフィルタリング(Photoshopのデスクトップ、ペイウォールなど)
-   * SplunkログAPIを使用してサービスとアプリケーションのパフォーマンスにアクセスする
+      * CDN(Fastly)パフォーマンス — 呼び出し数、キャッシュレート、エラー率、ペイロードトラフィックを確認します。
+      * オリジンサーバー — 呼び出し数、エラー率、CPU負荷、ペイロードトラフィック
+   * 作成者のパフォーマンス
+      * ユーザー数、リクエスト数、読み込み数の確認
+* アプリおよびスペース固有のパフォーマンスレポートへのアクセス
+   * サーバーが稼働したら、一般的な指標が緑/オレンジ/赤かどうかを確認し、特定のアプリの問題を特定します
+   * 上記のフィルターを適用した同じレポートを開く(Photoshopデスクトップ、ペイウォールなど)
+   * SplunkログAPIを使用したサービスとアプリケーションのパフォーマンスへのアクセス
    * その他の問題が発生した場合は、カスタマーサポートにお問い合わせください。
 
 ## トラブルシューティング {#troubleshooting}
@@ -167,37 +167,37 @@ AEMヘッドレスアプリケーションを使用する場合、ユーザー�
 
 デバッグの一般的なアプローチとして、次のベストプラクティスに従います。
 
-* アプリケーションのプレビュー版で機能とパフォーマンスを検証する
-* アプリケーションの実稼働バージョンでの機能とパフォーマンスの検証
-* コンテンツフラグメントエディターのJSONプレビューで検証
-* クライアントアプリケーションでJSONをInspectし、クライアントアプリケーションまたは配信の問題の存在を確認
-* GraphQLを使用したJSONのInspectによる、キャッシュされたコンテンツまたはAEMに関する問題の存在の確認
+* アプリケーションのプレビューバージョンを使用した機能とパフォーマンスの検証
+* 実稼動版のアプリケーションで機能とパフォーマンスを検証する
+* コンテンツフラグメントエディターのJSONプレビューを使用して検証する
+* クライアントアプリケーションでJSONをInspectして、クライアントアプリケーションまたは配信の問題の有無を確認します。
+* GraphQLを使用したJSONの確認(キャッシュされたコンテンツまたはAEMに関する問題の有無の確認)
 
 ### サポートを使用したバグのログ{#logging-a-bug-with-support}
 
-さらなる支援が必要な場合に備えて、サポートにバグを効率的に記録するには、次の手順に従います。
+サポートが必要な場合にサポートに関するバグを効率的に記録するには、次の手順に従います。
 
-* 必要に応じて、問題のスクリーンショットを取得します。
-* 問題を再現する方法をドキュメントする
-* 雑誌号が再現するコンテンツのドキュメント
-* 適切な優先順位を持つAEMサポートポータルから問題をログに記録します。
+* 必要に応じて、問題のスクリーンショットを取る
+* 問題の再現方法を文書化する
+* 問題が再現するコンテンツを文書化する
+* 適切な優先度でAEMサポートポータルから問題を記録します。
 
-## ジャーニーは終了しますか。それとも終了しますか。{#journey-ends}
+## ジャーニーが終了するか、終了するか。{#journey-ends}
 
-バリデーターがAEMヘッドレス開発者ジャーニーが完了しました。 これで、次の内容を理解できるようになります。
+バリデーターがAEMヘッドレス開発者ジャーニーが完了しました。 これで、次の内容について理解できるはずです。
 
-* ヘッドレスコンテンツとヘッドフルコンテンツの配信の違い。
+* ヘッドレスコンテンツ配信とヘッドフルコンテンツ配信の違い。
 * AEMヘッドレス機能
-* ヘッドレスプロジェクトの編成とAEM化の方法。
+* ヘッドレスプロジェクトの整理とAEMの方法。
 * AEMでヘッドレスコンテンツを作成する方法。
 * AEMでヘッドレスコンテンツを取得して更新する方法。
-* AEM Headlessプロジェクトとの連携方法。
-* ゴーライブの後はどうしますか。
+* AEMヘッドレスプロジェクトの運用方法。
+* 運用開始後の作業
 
 ## その他のリソース {#additional-resources}
 
-* [Cloud ServiceとしてのAEMへのデプロイの概要](/help/implementing/deploying/overview.md)
+* [AEM as aCloud Serviceへのデプロイの概要](/help/implementing/deploying/overview.md)
 * [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [ローカルAEM環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Cloud Managerを使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Cloud Manager Git Repositoryを外部Gitリポジトリと統合し、プロジェクトをAEMにCloud Serviceとしてデプロイする](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+* [Cloud Manager Gitリポジトリを外部Gitリポジトリと統合し、プロジェクトをAEMにCloud Serviceとしてデプロイします](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
