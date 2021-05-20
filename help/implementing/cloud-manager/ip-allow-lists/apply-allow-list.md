@@ -1,14 +1,13 @@
 ---
 title: 'IP 許可リストの適用 '
 description: IP 許可リストの適用
-translation-type: tm+mt
-source-git-commit: e6a8d69ea87ac56a51cde2f131c4accff1bea527
+exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 100%
 
 ---
-
 
 # IP 許可リストの適用 {#apply-allow-list}
 
@@ -22,4 +21,3 @@ IP 許可リストを適用するには、次の手順に従います。
 1. **環境**&#x200B;画面から特定の環境の詳細ページに移動し、IP 許可リストテーブルに移動します。
 1. IP 許可リストテーブルの上部にある入力フィールドを使用して、IP 許可リストと、その適用先となるオーサーサービスまたはパブリッシュサービスを選択します。
 1. 「**適用**」をクリックし、送信を確認します。
-
