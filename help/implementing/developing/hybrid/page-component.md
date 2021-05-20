@@ -1,14 +1,13 @@
 ---
 title: SPA ページコンポーネント
 description: SPA では、ページコンポーネントは子コンポーネントの HTML 要素を提供せず、代わりに SPA フレームワークに委任します。このドキュメントでは、これにより SPA のページコンポーネントがどのように一意になるかを説明します。
-translation-type: tm+mt
-source-git-commit: cdd92032c627740c66de7b2f3836fa1dcd2ee2ca
+exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 100%
 
 ---
-
 
 # SPA ページコンポーネント {#spa-page-component}
 
