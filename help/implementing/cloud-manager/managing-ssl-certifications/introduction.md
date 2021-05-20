@@ -1,16 +1,15 @@
 ---
 title: 概要 — SSL 証明書の管理
 description: 概要 — SSL 証明書の管理
-translation-type: tm+mt
-source-git-commit: 4ab944ad15390f9399138672a024aa30cf4aede8
+exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 100%
 
 ---
 
-
-# 概要 {#introduction}
+# はじめに {#introduction}
 
 Cloud Manager では、セルフサービス機能を使用して、Cloud Manager UI から SSL 証明書をインストールできます。Cloud Manager は、Platform TLS サービスを使用して、SSL 証明書と、通常はサードパーティの証明機関（例：「*Let’s Encrypt*」）から取得して顧客が所有しする秘密鍵を管理します。
 
