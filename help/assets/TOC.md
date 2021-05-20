@@ -4,10 +4,9 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager Assets
-translation-type: tm+mt
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '480'
 ht-degree: 98%
 
 ---
@@ -17,11 +16,11 @@ ht-degree: 98%
 
 + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
 + [概要と新機能](overview.md)
-+ [ [!DNL Assets] as a [!DNL Cloud Service]](assets-cloud-changes.md) の主な変更点
++ [ [!DNL Assets] as a [!DNL Cloud Service] の主な変更点](assets-cloud-changes.md)
 + [[!DNL Assets] アーキテクチャ](architecture.md)
 + [サポートされているファイル形式](file-format-support.md)
 + [アセットマイクロサービスの概要](asset-microservices-overview.md)
-+ [ [!DNL Assets]](accessibility.md) でのアクセシビリティ
++ [ [!DNL Assets] でのアクセシビリティ](accessibility.md)
 + デジタルアセットの管理 {#manage}
    + [アセットの共有](share-assets.md)
    + [アクティビティと DAM タスクの監視](assets-activity-history.md)
@@ -35,7 +34,7 @@ ht-degree: 98%
    + [AEM での [!DNL Adobe Stock] アセットの使用](aem-assets-adobe-stock.md)
    + [コレクションの管理](manage-collections.md)
    + [メタデータの概要](manage-metadata.md)
-   + [ [!DNL Adobe Creative Cloud]](aem-cc-integration-best-practices.md) との統合
+   + [ [!DNL Adobe Creative Cloud] との統合](aem-cc-integration-best-practices.md)
    + [メタデータの追加と編集](meta-edit.md)
    + [フォルダーのアセットとコレクションのレビュー](bulk-approval.md)
    + [アセットインサイトの使用と設定](assets-insights.md)
@@ -64,9 +63,9 @@ ht-degree: 98%
    + [AEM MediaLibrary の機能](medialibrary.md)
    + [アセットメタデータの読み込みと書き出し](metadata-import-export.md)
 + アセットの共有と配布 {#brand-portal}
-   + [ [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md) での [!DNL Assets] の設定
-   + [ [!DNL Brand Portal]](publish-to-brand-portal.md) へのアセットの公開
-   + [アセット [!DNL Brand Portal] の発行元 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
+   + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](configure-aem-assets-with-brand-portal.md)
+   + [ [!DNL Brand Portal] へのアセットの公開](publish-to-brand-portal.md)
+   + [からにアセットを公 [!DNL Brand Portal] 開する [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントと GraphQL のヘッドレス配信](content-fragments/content-fragments-graphql.md)
@@ -86,7 +85,7 @@ ht-degree: 98%
    + [Dynamic Media の操作](dynamic-media/dynamic-media.md)
    + [Dynamic Media の設定](dynamic-media/config-dm.md)
    + [Dynamic Media のトラブルシューティング](dynamic-media/troubleshoot-dm.md)
-   + [Dynamic Media でのアクセシビリティ](dynamic-media/accessibility-dm.md)
+   + [Dynamic Media のアクセシビリティ ](dynamic-media/accessibility-dm.md)
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
@@ -125,4 +124,4 @@ ht-degree: 98%
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [コンテンツの HTTP/2 配信の FAQ](dynamic-media/http2faq.md)
    + [Flash ビューアの提供終了](dynamic-media/flash-viewers-eol.md)
-   + [DHTMLビューアの提供終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
+   + [DHTMLビューアのサポート終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
