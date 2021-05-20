@@ -1,14 +1,13 @@
 ---
 title: Experience Manager as a Cloud Service への移行
 description: Experience Manager as a Cloud Service への移行
-translation-type: tm+mt
-source-git-commit: dc2d529c6bbdb4e0fd963021e40bc333b321c95c
+exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2117'
 ht-degree: 99%
 
 ---
-
 
 # Adobe Experience Manager as a Cloud Service への移行 {#Overview}
 
@@ -86,7 +85,7 @@ AEM as a Cloud Service 環境を設定およびデプロイする方法につい
 
 1. [デバッグのヒントとテクニック](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=ja#debugging-aem-as-a-cloud-service)
 2. [デベロッパーコンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#debugging)
-3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=ja#debugging) (ローカルSDKおよびExperience Managerクラウド開発環境でのみ使用可能)
+3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=ja#debugging) (ローカルSDKおよびExperience ManagerCloud開発環境でのみ使用可能)
 4. [ログとログ作成](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)
    * [CM ログ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=ja#debugging)（build-unit-testing、code-scanning、build-image、deploy）
    * [Experience Manager Cloud Service ログ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)（aemerror、aemaccess、aemrequest、aemdispatcher、httpderror、httpaccess）
