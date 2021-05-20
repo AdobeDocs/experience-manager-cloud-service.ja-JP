@@ -6,7 +6,6 @@ breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 feature: オーサリング
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '308'
@@ -18,7 +17,7 @@ ht-degree: 95%
 # Sites {#sites}
 
 + [AEM Sites as a Cloud Service](/help/sites-cloud/home.md)
-+ [AEM Cloud Service における AEM Sites の主要な変更点](sites-cloud-changes.md)
++ [AEM Cloud Service の AEM Sites の主な変更点](sites-cloud-changes.md)
 + オーサリング {#authoring}
    + 概要 {#getting-started}
       + [ページのオーサリングのクイックスタートガイド](authoring/getting-started/quick-start.md)
@@ -52,7 +51,7 @@ ht-degree: 95%
       + [コンポーネントコンソール](authoring/features/components-console.md)
       + [レスポンシブレイアウト](authoring/features/responsive-layout.md)
       + [タグの使用](authoring/features/tags.md)
-      + [プログレッシブ Web アプリ機能の有効化](authoring/features/enable-pwa.md)
+      + [プログレッシブ Web アプリケーション機能の有効化](authoring/features/enable-pwa.md)
    + プロジェクト {#projects}
       + [プロジェクトの操作](authoring/projects/overview.md)
       + [プロジェクトの管理](authoring/projects/managing.md)
@@ -71,7 +70,7 @@ ht-degree: 95%
       + [ワークフローへの参加](authoring/workflows/participating.md)
    + パーソナライゼーション {#personalization}
       + [パーソナライゼーションの概要](authoring/personalization/overview.md)
-      + [ContextHub データを使用したページのプレビュー ](authoring/personalization/contexthub.md)
+      + [ContextHub データを使用したページのプレビュー](authoring/personalization/contexthub.md)
       + [ターゲットモードを使用したターゲットコンテンツのオーサリング](authoring/personalization/targeted-content.md)
       + [マルチサイトでのターゲットコンテンツの操作](authoring/personalization/multisite-targeted-content.md)
       + [ターゲットコンテンツ用マルチサイト管理の構造](authoring/personalization/multisite-structure.md)
@@ -83,7 +82,7 @@ ht-degree: 95%
       + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [ワークフローの管理](administering/workflows-administering.md)
-   + コンテンツの再利用{#reusing-content}
+   + コンテンツ{#reusing-content}の再利用
       + [MSMと翻訳](administering/msm-and-translation.md)
       + マルチサイトマネージャー {#msm}
          + [MSMとライブコピーの概要](administering/msm/overview.md)
