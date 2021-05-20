@@ -1,14 +1,13 @@
 ---
 title: SSL 証明書の取得 - SSL 証明書の管理
 description: SSL 証明書の取得 - SSL 証明書の管理
-translation-type: tm+mt
-source-git-commit: 40119f7b3bdf36af668b79afbcb2802a0b2a6033
+exl-id: a3a247e5-164a-4c9c-aeed-bde882635e6f
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
 ---
-
 
 # SSL 証明書の取得 {#getting-an-ssl-certificate}
 
@@ -19,4 +18,3 @@ ht-degree: 100%
 >[!NOTE]
 >AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）または自己署名証明書は受け付けられません。OV 証明書と EV 証明書は、CA で検証された追加の情報をユーザーに提供します。ユーザーは、この情報を使用して、Web サイトの所有者、電子メールの送信者、実行可能なコードや PDF ドキュメントのデジタル署名者の信頼性を判断できます。DV 証明書は一般的なもので、安価です。ただし、これを使用しても、所有権の検証はおこなえません。
 >さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。
-
