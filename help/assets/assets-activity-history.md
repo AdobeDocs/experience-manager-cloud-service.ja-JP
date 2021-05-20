@@ -2,16 +2,15 @@
 title: タイムラインのアクティビティストリーム
 description: この記事では、アセットのアクティビティログをタイムラインに表示する方法について説明します。
 contentOwner: AG
-feature: Asset Reports,Asset Management
+feature: アセットレポート，アセット管理
 role: Administrator,Business Practitioner
-translation-type: tm+mt
-source-git-commit: 8093f6cec446223af58515fd8c91afa5940f9402
+exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 96%
+source-wordcount: '213'
+ht-degree: 98%
 
 ---
-
 
 # アクティビティストリームでのアセット操作ログの表示 {#activity-stream-in-timeline}
 
