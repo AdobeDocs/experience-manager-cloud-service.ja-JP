@@ -1,14 +1,13 @@
 ---
 title: ContextHub でのセグメント化の設定
 description: ContextHub を使用してセグメントを設定する方法を説明します。
-translation-type: tm+mt
-source-git-commit: c9c7176f6c3bf70529b761183341a2490d4ecbfc
+exl-id: fbc38611-dbee-426e-b823-df64b6730c45
+source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 100%
 
 ---
-
 
 # ContextHub でのセグメント化の設定 {#configuring-segmentation-with-contexthub}
 
