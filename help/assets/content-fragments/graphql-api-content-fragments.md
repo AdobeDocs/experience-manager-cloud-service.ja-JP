@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
 workflow-type: tm+mt
 source-wordcount: '3935'
-ht-degree: 72%
+ht-degree: 78%
 
 ---
 
@@ -25,10 +25,10 @@ AEMでGraphQL APIを使用すると、ヘッドレスCMS実装のJavaScriptク�
 
 >[!NOTE]
 >
->GraphQLは、現在、Adobe Experience Manager(AEM)では次の2つのシナリオでCloud Serviceとして使用されています。
+>GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
 >* [AEM Commerceは、GraphQLを介してコマースプラットフォームからデータを使用します](/help/commerce-cloud/integrating/magento.md)。
->* AEMコンテンツフラグメントは、AEM GraphQL API（標準のGraphQLに基づくカスタマイズされた実装）と連携して、アプリケーションで使用するために構造化されたコンテンツを配信します。
+>* AEM コンテンツフラグメントが、AEM GraphQL API（標準の GraphQL に基づくカスタム実装）と連携して、アプリケーションで使用するための構造化コンテンツを配信する。
 
 
 ## GraphQL API {#graphql-api}
@@ -234,7 +234,7 @@ Assets へのアクセスに必要な権限です。
 
 GraphQL は、厳密に型指定された API です。つまり、データは型別に明確に構造化され編成される必要があります。
 
-GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。そのタスクをおこなうには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
+GraphQL の仕様には、特定のインスタンス上のデータをクエリするための堅牢な API を作成する方法に関する一連のガイドラインが用意されています。そのタスクを行うには、クライアントは[スキーマ](#schema-generation)を取得する必要があります。この中には、クエリに必要なすべての型が定義されています。
 
 コンテンツフラグメントの場合、GraphQL スキーマ（構造とタイプ）は、**有効**&#x200B;な[コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)とそれらのデータタイプに基づいています。
 
@@ -250,20 +250,20 @@ GraphQL の仕様には、特定のインスタンス上のデータをクエリ
 
    ![GraphQL で使用するコンテンツフラグメントモデル](assets/cfm-graphqlapi-01.png "GraphQL で使用するコンテンツフラグメントモデル")
 
-1. 対応するGraphQLスキーマ（GraphQL自動ドキュメントからの出力）:
+1. 対応する GraphQLスキーマ（GraphiQL 自動生成ドキュメントからの出力）:
    ![コンテンツフラグメントモデルに基づく GraphQL スキーマ](assets/cfm-graphqlapi-02.png "コンテンツフラグメントモデルに基づく GraphQL スキーマ")
 
    この図では、生成された型 `ArticleModel` に複数の[フィールド](#fields)が含まれていることがわかります。
 
    * そのうちの 3 つ（`author`、`main`、`referencearticle`）は、ユーザーが管理しています。
 
-   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、前の`_`にマークされ、ユーザーが定義した内容と自動生成した内容を区別します。
+   * その他のフィールド（この例では `_path`、`_metadata`、`_variations`）は AEM によって自動的に追加されたもので、特定のコンテンツフラグメントに関する情報を提供する便利な手段となっています。これらの[ヘルパーフィールド](#helper-fields)は、ユーザーが定義したものと自動生成されたものを区別するために、先頭に `_` が付いています。
 
 1. ユーザーが Article モデルに基づいてコンテンツフラグメントを作成すると、GraphQL を使用してそれをクエリできます。例については、（[GraphQL で使用するコンテンツフラグメント構造のサンプル](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)に基づいた）[サンプルクエリ](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries)を参照してください。
 
 AEM 用 GraphQL では、スキーマには柔軟性があります。つまり、コンテンツフラグメントモデルを作成、更新、削除するたびに、スキーマが自動生成されます。また、コンテンツフラグメントモデルを更新すると、データスキーマキャッシュも更新されます。
 
-Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間を節約し、安定性を実現します。
+Sites GraphQL サービスは、コンテンツフラグメントモデルに対する変更を（バックグラウンドで）リッスンします。更新が検出されると、スキーマのその部分だけが再生成されます。この最適化により、時間が節約され、安定性も確保されます。
 
 例えば、次のようになります。
 
@@ -279,7 +279,7 @@ Sites GraphQL サービスは、コンテンツフラグメントモデルに対
 
 >[!NOTE]
 >
->REST API を使用してコンテンツフラグメントモデルの一括更新をおこなう場合などには、この点に留意することが大切です。
+>REST API を使用してコンテンツフラグメントモデルの一括更新を行う場合などには、この点に留意することが大切です。
 
 スキーマは、GraphQL クエリと同じエンドポイントを通じて提供され、クライアントはスキーマが拡張子 `GQLschema` で呼び出されることに対処します。例えば、`/content/cq:graphql/global/endpoint.GQLschema` で単純な `GET` リクエストを実行すると、`text/x-graphql-schema;charset=iso-8859-1` の Content-type を持つスキーマが出力されます。
 
@@ -545,7 +545,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 * コンテンツフラグメントモデル内のフィールドに対応するフィールド名に対してクエリを実行できます
    * [サンプルクエリ - ある会社の CEO と従業員の詳細](#sample-full-details-company-ceos-employees)を参照してください
 
-* モデルのフィールドに加えて、システム生成フィールド（前にアンダースコアが付く）がいくつかあります。
+* モデルのフィールドに加えて、次のようなシステム生成フィールドがあります（フィールド名の先頭にアンダースコアが付きます）。
 
    * コンテンツの場合：
 
@@ -555,7 +555,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](#sample-metadata-awards-gb)を参照してください
       * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
          * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)を参照してください
-      * `_path` :リポジトリ内のコンテンツフラグメントへのパス
+      * `_path`：リポジトリー内のコンテンツフラグメントへのパス
          * [サンプルクエリ - 1 つの特定の都市フラグメント](#sample-single-specific-city-fragment)を参照してください
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
          * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照してください
@@ -803,20 +803,20 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 
 ## 外部 Web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
-外部WebサイトからGraphQLエンドポイントにアクセスするには、次の項目を設定する必要があります。
+外部 Web サイトから GraphQL エンドポイントにアクセスするには、次の項目を設定する必要があります。
 
-* [CORSフィルター](#cors-filter)
+* [CORS フィルター](#cors-filter)
 * [リファラーフィルター](#referrer-filter)
 
-### CORSフィルタ{#cors-filter}
+### CORS フィルター {#cors-filter}
 
 >[!NOTE]
 >
 >AEM での CORS リソース共有ポリシーについて詳しくは、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))を参照してください。
 
-GraphQLエンドポイントにアクセスするには、顧客GitリポジトリでCORSポリシーを設定する必要があります。 これは、目的のエンドポイントに対して適切なOSGi CORS設定ファイルを追加することでおこなわれます。
+GraphQL エンドポイントにアクセスするには、顧客の Git リポジトリーに CORS ポリシーを設定する必要があります。それには、目的のエンドポイントに適した OSGi CORS 設定ファイルを追加します。
 
-この設定では、アクセスを許可する信頼できるWebサイトの接触チャネル`alloworigin`または`alloworiginregexp`を指定する必要があります。
+この設定では、アクセスを許可する必要がある信頼できる Web サイトオリジン `alloworigin` または `alloworiginregexp` を指定する必要があります。
 
 例えば、`https://my.domain`のGraphQLエンドポイントと永続クエリエンドポイントへのアクセスを許可するには、次を使用できます。
 
@@ -853,18 +853,18 @@ GraphQLエンドポイントにアクセスするには、顧客Gitリポジト�
 }
 ```
 
-エンドポイントのバニティーパスを設定した場合は、`allowedpaths`でも使用できます。
+エンドポイントのバニティーパスを設定した場合は、`allowedpaths` でも使用できます。
 
-### リファラーフィルター{#referrer-filter}
+### リファラーフィルター {#referrer-filter}
 
-CORSの設定に加えて、リファラーフィルターも、サードパーティホストからのアクセスを許可するように設定する必要があります。
+CORS 設定に加えて、サードパーティホストからのアクセスを許可するために、リファラーフィルターを設定する必要があります。
 
-これは、次の適切なOSGiリファラーフィルター設定ファイルを追加することでおこなわれます。
+それには、以下を行う適切な OSGi Referrer Filter 設定ファイルを追加します。
 
-* 信頼できるwebサイトのホスト名を指定します。`allow.hosts`または`allow.hosts.regexp`
-* このホスト名へのアクセスを許可します。
+* 信頼できる Web サイトのホスト名（`allow.hosts` または `allow.hosts.regexp`）を指定する。
+* この名前のホストに対するアクセスを許可する。
 
-例えば、リファラー`my.domain`を使用して要求へのアクセスを許可するには、次の操作を実行します。
+例えば、リファラー `my.domain` を持つリクエストにアクセスを許可するには、次の操作を行います。
 
 ```xml
 {
@@ -890,7 +890,7 @@ CORSの設定に加えて、リファラーフィルターも、サードパー�
 
 >[!CAUTION]
 >
->以下は顧客の責任でおこなう必要があります。
+>以下は顧客の責任で行う必要があります。
 >
 >* 信頼できるドメインにのみアクセスを許可する
 >* 機密情報が公開されていないことを確認する
