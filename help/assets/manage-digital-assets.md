@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: アセット管理，公開，コラボレーション，アセット処理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 05c090a198cc241c6e466254416880dd6406900f
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '4505'
-ht-degree: 92%
+source-wordcount: '4502'
+ht-degree: 90%
 
 ---
 
@@ -250,9 +250,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 削除するアセットの場所に移動します。
 
-1. アセットを選択し、ツールバーの「**[!UICONTROL 削除]**」アイコンをタップまたはクリックします。
-
-   ![delete_icon](assets/delete_icon.png)
+1. アセットを選択し、ツールバーの「**[!UICONTROL 削除]**![削除アイコン](assets/do-not-localize/delete-icon.png)」をクリックします。
 
 1. 確認ダイアログで、次のいずれかをクリックします。
 
@@ -260,7 +258,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * **[!UICONTROL 削除]**：アクションの実行を確定します。
 
       * アセットに参照がない場合は、アセットが削除されます。
-      * アセットに参照がある場合は、「**1 つ以上のアセットが参照されています。**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
+      * アセットに参照がある場合は、エラーメッセージが表示され、**[!UICONTROL 1つ以上のアセットが参照されている]**&#x200B;というメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
 
    >[!NOTE]
    >
@@ -268,14 +266,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。
-   >
-   >
-   >また、オーバーレイを使用して「削除を強制」ボタンを無効にすることで、参照元のアセットの削除と壊れたリンクの放置を禁止します。
+   >他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。参照元のアセットを削除するとリンクが壊れるので、この操作を禁止できます。 オーバーレイを使用して「削除を強制」ボタンを無効にします。
 
 ## アセットのダウンロード {#download-assets}
 
-[ からのアセットのダウンロード [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)を参照してください。
+[ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)からのアセットのダウンロードを参照してください。
 
 ## アセットの公開または非公開{#publish-assets}
 
