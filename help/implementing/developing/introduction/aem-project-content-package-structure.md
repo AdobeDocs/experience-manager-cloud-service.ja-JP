@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
 workflow-type: tm+mt
 source-wordcount: '2873'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 AEM アプリケーションのデプロイメントは、単一の AEM パッケージで構成する必要があります。次に、そのパッケージには、コード、設定、補助的なベースラインコンテンツなど、アプリケーションが機能するのに必要なあらゆるもので構成されるサブパッケージが含まれている必要があります。
 
-AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分離する必要があります。つまり、リポジトリの `/apps` と実行時に書き込み可能な領域（例：`/content`、`/conf`、`/home`、その他 `/apps` 以外のすべて）の&#x200B;**両方**&#x200B;に 1 つのコンテンツパッケージをデプロイすることは&#x200B;**できません**。代わりに、アプリケーションを AEM にデプロイするには、コードとコンテンツを別々のパッケージに分離する必要があります。
+AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分離する必要があります。つまり、リポジトリーの `/apps` と実行時に書き込み可能な領域（例：`/content`、`/conf`、`/home`、その他 `/apps` 以外のすべて）の&#x200B;**両方**&#x200B;に 1 つのコンテンツパッケージをデプロイすることは&#x200B;**できません**。代わりに、アプリケーションを AEM にデプロイするには、コードとコンテンツを別々のパッケージに分離する必要があります。
 
 このドキュメントで概要を説明しているパッケージ構造は、ローカル開発デプロイメントと AEM as a Cloud Service デプロイメントの&#x200B;**両方**&#x200B;に対応しています。
 
@@ -27,11 +27,11 @@ AEM では、**コンテンツ**&#x200B;と&#x200B;**コード**&#x200B;を分�
 >
 >このドキュメントで概要を説明している設定は、[AEM プロジェクト Maven アーキタイプ 24 以降](https://github.com/adobe/aem-project-archetype/releases)で提供されます。
 
-## リポジトリの可変領域と不変領域 {#mutable-vs-immutable}
+## リポジトリーの可変領域と不変領域 {#mutable-vs-immutable}
 
 `/apps` と `/libs` は AEM の&#x200B;**不変**&#x200B;領域と見なされます。AEM の起動後（例：実行時）に変更（作成、更新、削除）できないからです。実行時に不変領域を変更しようとすると失敗します。
 
-リポジトリ内のそれ以外の領域（`/content`、`/conf`、`/var`、`/etc`、`/oak:index`、`/system`、`/tmp`、など）はすべて&#x200B;**可変**&#x200B;領域です。つまり、実行時に変更できます。
+リポジトリー内のそれ以外の領域（`/content`、`/conf`、`/var`、`/etc`、`/oak:index`、`/system`、`/tmp`、など）はすべて&#x200B;**可変**&#x200B;領域です。つまり、実行時に変更できます。
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 ### コンテンツパッケージ
 
-+ `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。  コンテンツパッケージには、`ui.apps` または `ui.config` パッケージに含まれないすべてのノード定義が含まれます。言い換えれば、`/apps` または `/oak:index` に含まれないすべてが含まれます。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
++ `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。コンテンツパッケージには、`ui.apps` または `ui.config` パッケージに含まれないすべてのノード定義が含まれます。言い換えれば、`/apps` または `/oak:index` に含まれないすべてが含まれます。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + コンテキスト対応の設定
       + `/conf`
    + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義された過去のベースラインコンテンツの構造に基づいて構築され、拡張されるコンテンツの構築。）
@@ -109,7 +109,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
    `<subPackages>` 設定ではなく、[FileVault パッケージ Maven プラグインの埋め込み設定](#embeddeds)を使用して、パッケージが組み込まれるようになりました。
 
-   Adobe Experience Manager の複雑なデプロイメントの場合は、AEM 内の具体的なサイトまたはテナントを表す複数の `ui.apps``ui.config` および `ui.content` プロジェクト／パッケージを作成するほうが望ましいことがあります。その場合は、必ず、可変コンテンツと不変コンテンツの分割に従い、必要なコンテンツパッケージおよび OSGi バンドル JAR ファイルを `all` コンテナコンテンツパッケージにサブパッケージとして埋め込みます。
+   Adobe Experience Manager の複雑なデプロイメントの場合は、AEM 内の具体的なサイトまたはテナントを表す複数の `ui.apps`、`ui.config` および `ui.content` プロジェクト／パッケージを作成するほうが望ましいことがあります。その場合は、必ず、可変コンテンツと不変コンテンツの分割に従い、必要なコンテンツパッケージおよび OSGi バンドル JAR ファイルを `all` コンテナコンテンツパッケージにサブパッケージとして埋め込みます。
 
    複雑なデプロイメントコンテンツパッケージ構造は、例えば、次のようになります。
 
@@ -124,7 +124,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `site-b.ui.config`：サイト B に必要な OSGi 設定をデプロイします
       + `site-b.ui.content`：サイト B に必要なコンテンツと設定をデプロイします
 
-### 追加のアプリケーションパッケージ{#extra-application-packages}
+### 追加のアプリケーションパッケージ {#extra-application-packages}
 
 独自のコードとコンテンツパッケージで構成される他の AEM プロジェクトを AEM のデプロイメントで使用する場合は、そのコンテナパッケージをプロジェクトの `all` パッケージに埋め込む必要があります。
 
@@ -142,7 +142,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 パッケージは、宣言済みのパッケージタイプでマークされる必要があります。
 
-+ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには、OSGiバンドル、OSGi設定を直接含めることはできません。また、[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)を使用することはできません。
++ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージに OSGi バンドルや OSGi 設定を直接含めることはできません。また、コンテナパッケージで[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)を使用することはできません。
 + コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
 + コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
 
@@ -191,15 +191,15 @@ Repo Init スクリプトの全語彙は、[Apache Sling Repo Init ドキュメ�
 >
 >完全なスニペットについては、この後の [Repo Init スニペット](#snippet-repo-init)の節を参照してください。
 
-## リポジトリ構造パッケージ {#repository-structure-package}
+## リポジトリー構造パッケージ {#repository-structure-package}
 
-コードパッケージでは、（あるコードパッケージが別のコードパッケージをオーバーライドしないように）正しい構造的依存関係を確保する `<repositoryStructurePackage>` を参照するように、FileVault Maven プラグインの設定を指定する必要があります。[プロジェクト用に独自のリポジトリ構造パッケージを作成](repository-structure-package.md)することができます。
+コードパッケージでは、（あるコードパッケージが別のコードパッケージをオーバーライドしないように）正しい構造的依存関係を確保する `<repositoryStructurePackage>` を参照するように、FileVault Maven プラグインの設定を指定する必要があります。[プロジェクト用に独自のリポジトリー構造パッケージを作成](repository-structure-package.md)することができます。
 
 これは、コードパッケージ（`<packageType>application</packageType>` でマークされた任意のパッケージ）**にのみ必要**&#x200B;です。
 
-アプリケーション用のリポジトリ構造パッケージの作成方法については、[リポジトリ構造パッケージの作成](repository-structure-package.md)を参照してください。
+アプリケーション用のリポジトリー構造パッケージの作成方法については、[リポジトリー構造パッケージの作成](repository-structure-package.md)を参照してください。
 
-なお、コンテンツパッケージ（`<packageType>content</packageType>`）には、このリポジトリ構造パッケージは必要&#x200B;**ありません**。
+なお、コンテンツパッケージ（`<packageType>content</packageType>`）には、このリポジトリー構造パッケージは必要&#x200B;**ありません**。
 
 >[!TIP]
 >
@@ -234,7 +234,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
    >慣例により、サブパッケージが埋め込まれるフォルダーの名前には、`-packages` というサフィックスが付けられます。これにより、デプロイメントコードパッケージとコンテンツパッケージが任意のサブパッケージの対象フォルダー `/apps/<app-name>/...` にデプロイ&#x200B;**されなくなり**、破壊的な循環インストール動作を避けることができます。
 
 + 第 3 レベルのフォルダーは、
-   `application`、`content`、 `container`
+   `application`、`content`、`container`
    + `application` フォルダーにはコードパッケージが格納されます。
    + `content` フォルダーにはコンテンツパッケージが格納されます。
    + `container` フォルダーには、AEM アプリケーションに含まれる可能性のある[追加のアプリケーションパッケージ](#extra-application-packages)が格納されます。
@@ -268,7 +268,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
 
 ## サードパーティパッケージの埋め込み {#embedding-3rd-party-packages}
 
-すべてのパッケージは、[アドビが公開している Maven アーティファクトリポジトリ](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)または公開されている参照可能なサードパーティ Maven アーティファクトリポジトリを通じて入手できる必要があります。
+すべてのパッケージは、[アドビが公開している Maven アーティファクトリポジトリー](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)または公開されている参照可能なサードパーティ Maven アーティファクトリポジトリーを通じて入手できる必要があります。
 
 **アドビが公開している Maven アーティファクトリポジトリー**&#x200B;にサードパーティパッケージがある場合、Adobe Cloud Manager でアーティファクトを解決するための設定は、それ以上必要ありません。
 
@@ -429,9 +429,9 @@ scripts=["
 
 `scripts` OSGi プロパティには、[Apache Sling の Repo Init 言語](https://sling.apache.org/documentation/bundles/repository-initialization.html#the-repoinit-repository-initialization-language)で定義されたディレクティブが含まれます。
 
-### リポジトリ構造パッケージ {#xml-repository-structure-package}
+### リポジトリー構造パッケージ {#xml-repository-structure-package}
 
-`ui.apps/pom.xml` と、コードパッケージ（`<packageType>application</packageType>`）を宣言する他の任意の `pom.xml` で、次のリポジトリ構造パッケージ設定を FileVault Maven プラグインに追加します。[プロジェクト用に独自のリポジトリ構造パッケージを作成](repository-structure-package.md)することができます。
+`ui.apps/pom.xml` と、コードパッケージ（`<packageType>application</packageType>`）を宣言する他の任意の `pom.xml` で、次のリポジトリー構造パッケージ設定を FileVault Maven プラグインに追加します。[プロジェクト用に独自のリポジトリー構造パッケージを作成](repository-structure-package.md)することができます。
 
 ```xml
 ...
@@ -543,13 +543,13 @@ scripts=["
 
 埋め込まれるターゲットで複数の `/apps/*-packages` が使用されている場合は、それらをすべてここに列挙する必要があります。
 
-### サードパーティ Maven リポジトリ {#xml-3rd-party-maven-repositories}
+### サードパーティ Maven リポジトリー {#xml-3rd-party-maven-repositories}
 
 >[!WARNING]
 >
->Maven リポジトリをさらに追加すると、Maven リポジトリの依存関係がチェックされるので、Maven のビルド時間が延長される場合があります。
+>Maven リポジトリーをさらに追加すると、Maven リポジトリーの依存関係がチェックされるので、Maven のビルド時間が延長される場合があります。
 
-公開されているサードパーティ Maven リポジトリで必要なものがあれば、それらのリポジトリディレクティブをリアクタープロジェクトの `pom.xml` に追加します。完全な `<repository>` 設定は、サードパーティリポジトリプロバイダから入手できるはずです。
+公開されているサードパーティ Maven リポジトリーで必要なものがあれば、それらのリポジトリーディレクティブをリアクタープロジェクトの `pom.xml` に追加します。完全な `<repository>` 設定は、サードパーティリポジトリープロバイダから入手できるはずです。
 
 ```xml
 <repositories>
