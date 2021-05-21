@@ -7,7 +7,7 @@ exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 84%
+ht-degree: 87%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Experience ManagerをWCMとして使用して&#x200B;__&#x200B;しない�
 
    [画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-1. 左側のレールで、ドロップダウンリストを選択して「**[!UICONTROL ビューア]**」をタップします。
+1. 左側のレールでドロップダウンリストを選択して、「**[!UICONTROL ビューア]**」をタップします。
 1. 左側のレールで、ビューアプリセット名をタップします。ビューアプリセットがアセットに適用されます。
 1. 「**[!UICONTROL 埋め込み]**」をタップします。
 1. **[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスで、コード全体をクリップボードにコピーしてから、「**[!UICONTROL 閉じる]**」をタップします。
