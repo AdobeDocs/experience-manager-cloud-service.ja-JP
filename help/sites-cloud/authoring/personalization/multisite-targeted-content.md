@@ -5,7 +5,7 @@ exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2900'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->ターゲットコンテンツ用マルチサイト管理は、上級者向けの機能です。この機能を使用するには、[マルチサイトマネージャー](/help/sites-cloud/administering/msm/overview.md)および[Adobe TargetとAEMの統合](/help/sites-cloud/integrating/integrating-adobe-target.md)に精通している必要があります。
+>ターゲットコンテンツ用マルチサイト管理は、上級者向けの機能です。この機能を使用するには、[マルチサイトマネージャー](/help/sites-cloud/administering/msm/overview.md)や、AEM と [Adobe Target の統合](/help/sites-cloud/integrating/integrating-adobe-target.md)に関する詳しい知識が必要です。
 
 このドキュメントでは次の内容について説明します。
 
@@ -48,6 +48,7 @@ ht-degree: 99%
 >
 >* ロールアウトまたはライブコピーを利用する場合は MSM ライセンスが必要です。
 >* Adobe Target への同期を利用する場合は、Adobe Target ライセンスが必要です。
+
 >
 
 
@@ -235,6 +236,7 @@ AEM でこれを実現するには、次の作業をおこないます。
 >
 >* 休止または分離できるのは、アクティビティ内のライブコピーだけです。
 >* 継承されたアクティビティを拡張するために、ライブコピーを休止または分離する必要はありません。そのアクティビティ用の&#x200B;**新しい**&#x200B;ローカルなエクスペリエンスやオファーをいつでも作成できます。既存のアクティビティを変更する場合は、継承を休止する必要があります。
+
 >
 
 
