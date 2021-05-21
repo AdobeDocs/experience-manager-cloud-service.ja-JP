@@ -8,7 +8,7 @@ exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 74%
+ht-degree: 83%
 
 ---
 
@@ -30,7 +30,7 @@ EXIF、ID3、Microsoft Office などの従来のメタデータは、すべて�
 
 XMP のメタデータは、一連のプロパティで構成されます。これらのプロパティは、常にリソースと呼ばれる特定のエンティティに関連付けられます。つまり、プロパティはリソースの「説明」です。XMP の場合、リソースとなるのは常にアセットです。
 
-XMP によって定義される[メタデータ](https://en.wikipedia.org/wiki/Metadata)モデルは、任意の定義済みメタデータ項目のセットと併用できます。また、XMP によって、リソースで複数の処理手順がおこなわれる際にその履歴を記録するうえで便利な基本的なプロパティに対して、特定の[スキーマ](https://en.wikipedia.org/wiki/XML_schema)も定義されます。処理手順は、撮影、[スキャン](https://en.wikipedia.org/wiki/Image_scanner)またはテキスト作成から、画像編集手順（[切り抜き](https://en.wikipedia.org/wiki/Cropping_%28image%29)やカラー調整など）を経て、最終的な画像へのアセンブリまでです。XMP の処理中に、各ソフトウェアプログラムまたはデバイスでデジタルリソースに独自の情報を付加できます。この情報は、最終的なデジタルファイルで保持されます。
+XMP によって定義される[メタデータ](https://en.wikipedia.org/wiki/Metadata)モデルは、任意の定義済みメタデータ項目のセットと併用できます。また、XMP によって、リソースで複数の処理手順が行われる際にその履歴を記録するうえで便利な基本的なプロパティに対して、特定の[スキーマ](https://en.wikipedia.org/wiki/XML_schema)も定義されます。処理手順は、撮影、[スキャン](https://en.wikipedia.org/wiki/Image_scanner)またはテキスト作成から、画像編集手順（[切り抜き](https://en.wikipedia.org/wiki/Cropping_%28image%29)やカラー調整など）を経て、最終的な画像へのアセンブリまでです。XMP の処理中に、各ソフトウェアプログラムまたはデバイスでデジタルリソースに独自の情報を付加できます。この情報は、最終的なデジタルファイルで保持されます。
 
 XMP のシリアライズおよび格納は、通常 [W3C](https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://ja.wikipedia.org/wiki/Resource_Description_Framework)（RDF）のサブセットを使用して実行され、[XML](https://ja.wikipedia.org/wiki/XML) で表記されます。
 
@@ -73,24 +73,23 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ## レンディションへの XMP の書き戻し {#xmp-writeback-to-renditions}
 
-[!DNL Adobe Experience Manager Assets]のこのXMPの書き戻し機能は、メタデータの変更を元のアセットのレンディションにレプリケートします。
-[!DNL Assets]内から、またはアセットのアップロード中に、アセットのメタデータを変更すると、変更は最初にアセット階層のメタデータノードに保存されます。  の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。この機能は、`jcr`名前空間を使用するメタデータプロパティ（`dc:title`という名前のプロパティは書き戻されますが、`mytitle`という名前のプロパティは書き戻されません）のみを書き戻します。
+[!DNL Adobe Experience Manager Assets] の XMP 書き戻し機能では、メタデータの変更内容を元のアセットのレンディションに複製します。[!DNL Assets]内から、またはアセットのアップロード中に、アセットのメタデータを変更すると、変更は最初にアセット階層のメタデータノードに保存されます。  の書き戻し機能によって、メタデータの変更が、アセットのすべてのレンディションまたは特定のレンディションに反映されます。この機能は、`jcr`名前空間を使用するメタデータプロパティ（`dc:title`という名前のプロパティは書き戻されますが、`mytitle`という名前のプロパティは書き戻されません）のみを書き戻します。
 
 例えば、「`Classic Leather`」というタイトルのアセットの[!UICONTROL Title]プロパティを`Nylon`に変更するシナリオを考えてみましょう。
 
 ![メタデータ](assets/metadata.png)
 
-この場合、[!DNL Assets]は、 **[!UICONTROL Title]**&#x200B;プロパティに対する変更を、アセット階層に格納されたアセットメタデータ用の`dc:title`パラメーターに保存します。
+この場合、[!DNL Assets] ではこの「**[!UICONTROL タイトル]**」プロパティへの変更が、アセット階層に格納されているアセットメタデータの `dc:title` パラメーターに保存されます。
 
 ![リポジトリのアセットノードに格納されたメタデータ](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->[!DNL Assets]では、書き戻し機能はデフォルトで有効になっていません。 [メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。 MSM for digital assetsは、メタデータの書き戻しが有効になっている場合は機能しません。 書き戻し時に、継承が中断されます。
+>[!DNL Assets] では、書き戻し機能はデフォルトでは有効になっていません。[メタデータの書き戻しを有効にする方法](#enable-xmp-writeback)を参照してください。MSM for digital assetsは、メタデータの書き戻しが有効になっている場合は機能しません。 書き戻し時に、継承が中断されます。
 
-### XMPの書き戻し{#enable-xmp-writeback}を有効にする
+### XMP の書き戻しの有効化 {#enable-xmp-writeback}
 
-[!UICONTROL DAMメタデータの書き戻] しワークフローは、アセットのメタデータの書き戻しに使用されます。書き戻しを有効にするには、次の3つの方法のいずれかを実行します。
+アセットのメタデータの書き戻しには、[!UICONTROL DAM メタデータの書き戻し]ワークフローが使用されます。書き戻しを有効にするには、次の3つの方法のいずれかを実行します。
 
 * ランチャーを使用します。
 * `DAM MetaData Writeback`ワークフローを手動で開始します。
@@ -98,12 +97,12 @@ XMP には、`xml:lang` プロパティをテキストプロパティに追加�
 
 ランチャーを使用するには、次の手順に従います。
 
-1. 管理者は、**[!UICONTROL ツール]** / **[!UICONTROL ワークフロー]** / **[!UICONTROL ランチャー]**&#x200B;にアクセスします。
-1. [!UICONTROL Launcher]を選択します。このランチャーで、**[!UICONTROL Workflow]**&#x200B;列に&#x200B;**[!UICONTROL DAM MetaDataの書き戻し]**&#x200B;が表示されます。 ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
+1. 管理者として、**[!UICONTROL ツール]**／**[!UICONTROL ワークフロー]**／**[!UICONTROL ランチャー]**&#x200B;にアクセスします。
+1. 「**[!UICONTROL ワークフロー]**」列に **[!UICONTROL DAM メタデータの書き戻し]**&#x200B;が表示されている[!UICONTROL ランチャー]を選択します。ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 
    ![「 DAMメタデータの書き戻しランチャー」を選択して、そのプロパティを変更し、アクティブ化します。](assets/launcher-properties-metadata-writeback1.png)
 
-1. **[!UICONTROL ランチャーのプロパティ]**&#x200B;ページで「**[!UICONTROL アクティブ化]**」を選択します。 「**[!UICONTROL 保存して閉じる]**」をクリックします。
+1. **[!UICONTROL ランチャーのプロパティ]**&#x200B;ページで「**[!UICONTROL アクティベート]**」を選択します。「**[!UICONTROL 保存して閉じる]**」をクリックします。
 
 ワークフローを手動で1回だけアセットに適用するには、左側のレールから[!UICONTROL DAMメタデータの書き戻し]ワークフローを適用します。
 
