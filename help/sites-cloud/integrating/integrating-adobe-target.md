@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 67%
+ht-degree: 82%
 
 ---
 
@@ -38,27 +38,27 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/integration-ims-adobe-io.translate.html)を参照してください。
 
-### Adobe TargetテナントIDとAdobe Targetクライアントコード{#tenant-client}
+### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
-「 Adobe TargetテナントID 」フィールドと「 Adobe Targetクライアントコード」フィールドを設定する際は、次の点に注意してください。
+Adobe Target テナント ID と Adobe Target クライアントコードのフィールドを設定する場合は、次の点に注意してください。
 
-1. ほとんどのお客様の場合、テナントIDとクライアントコードは同じです。 つまり、両方のフィールドに同じ情報が含まれ、同一です。 両方のフィールドにテナントIDを必ず入力してください。
-2. 従来の方法では、「テナントID 」フィールドと「クライアントコード」フィールドに異なる値を入力することもできます。
+1. ほとんどのお客様の場合、テナント ID とクライアントコードは同じです。つまり、両方のフィールドに同じ情報が含まれ、フィールドは同じになります。両方のフィールドにテナント ID を必ず入力してください。
+2. 従来の目的では、テナント ID とクライアントコードのフィールドに異なる値を入力することもできます。
 
 どちらの場合も、次の点に注意してください。
 
 * デフォルトでは、クライアントコード（最初に追加された場合）もテナントIDフィールドに自動的にコピーされます。
-* デフォルトのテナントIDセットを変更するオプションがあります。
-* したがって、Targetへのバックエンド呼び出しはテナントIDに基づき、Targetへのクライアント側呼び出しはクライアントコードに基づきます。
+* デフォルトのテナント ID 設定を変更するオプションがあります。
+* これにより、バックエンドから Target への呼び出しはテナント ID に基づいておこなわれ、クライアントサイドから Target への呼び出しはクライアントコードに基づいておこなわれます。
 
-前述のとおり、最初のケースはAEM as aCloud Serviceで最も一般的です。 どちらの場合も、必ず&#x200B;**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
+前述したように、AEM as a Cloud Service では最初のケースが最も一般的です。どちらの場合も、必ず&#x200B;**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
 
 >[!NOTE]
 >
-> 既存のTarget設定を変更する場合：
+> 既存の Target 設定を変更する場合：
 >
-> 1. テナントIDを再入力します。
-> 2. Targetに再接続します。
+> 1. テナント ID を再入力します。
+> 2. Target に再接続します。
 > 3. 設定を保存します。
 
 
@@ -73,7 +73,7 @@ Target 設定を編集するには、次の手順に従います。
 
 ### サイトへの設定の追加 {#add-configuration}
 
-タッチ操作対応 UI 設定をサイトに適用するには、**サイト**&#x200B;に移動して、**任意のサイトページを選択し、****プロパティ**／**詳細**／**設定**&#x200B;で、選設定テナントを選択します。
+タッチ操作対応 UI 設定をサイトに適用するには、**Sites** に移動して、**任意のサイトページを選択し**、**プロパティ**／**詳細**／**設定**&#x200B;で、設定テナントを選択します。
 
 ## Adobe Launch を使用して、AEM サイトに Adobe Target を統合する {#integrate-target-launch}
 
