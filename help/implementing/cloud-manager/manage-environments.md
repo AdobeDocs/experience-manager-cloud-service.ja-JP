@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 100%
    >実稼動以外のパイプラインをまだセットアップしていない場合は、*概要*&#x200B;画面に、実稼動以外のパイプラインの作成に使用できるカードが表示されます。
 
 
-## 環境の表示 {#viewing-environment}
+## 環境の詳細{#viewing-environment}
 
 概要ページの&#x200B;**環境**&#x200B;カードは、最大 3 環境を一覧表示します。
 
@@ -111,7 +111,6 @@ ht-degree: 100%
 
 
 >[!NOTE]
->
 >この機能は、実稼動用に設定された実稼動プログラムの実稼働／ステージング環境セットには使用できません。ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
 
 ## アクセスの管理 {#managing-access}
