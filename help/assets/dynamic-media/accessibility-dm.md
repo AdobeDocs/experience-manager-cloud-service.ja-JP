@@ -1,5 +1,5 @@
 ---
-title: 'Dynamic Media のアクセシビリティ '
+title: Dynamic Media のアクセシビリティ
 description: Dynamic Media および Dynamic Media ビューアでのアクセシビリティについて説明します。
 contentOwner: Rick Brough
 topic-tags: introduction
@@ -9,29 +9,29 @@ role: Administrator,Business Practitioner
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 
-# Dynamic Media でのアクセシビリティ {#accessibility-in-dm}
+# Dynamic Media のアクセシビリティ {#accessibility-in-dm}
 
 Dynamic Media では、オーサリングユーザーインターフェイス全体でキーボードコントロールおよび支援テクノロジー（JAWS スクリーンリーダーや NVDA スクリーンリーダーなど）をサポートしています。
 
 ## Dynamic Media でのキーボードアクセシビリティのサポート  {#keyboard-support-in-dm}
 
-Dynamic MediaはExperience ManagerAssetsのプラグインなので、キーボード制御の動作のほとんどはExperience ManagerAssetsの動作と同じです。 例えば、Dynamic Mediaの`Cancel`ボタンは、Experience Managerアセットと同じフォーカスハイライトを持ちます。 また、「Experience Managerアセット」の場合と同様に、「`Spacebar`」キーにも反応します。 Assetsの[キーボードショートカットを参照してください。](/help/assets/accessibility.md#keyboard-shortcuts)
+Dynamic Media は Adobe Experience Manager Assets のプラグインなので、キーボードコントロールの動作のほとんどは Experience Manager Assets の場合と同じです。例えば、Dynamic Media の `Cancel` ボタンのフォーカスうハイライトは、Experience Manager Assets と同じです。また、Experience Manager Assets と同様に`Spacebar` キーにも対応します。[Assets のキーボードショートカット](/help/assets/accessibility.md#keyboard-shortcuts)を参照してください。
 
-Dynamic Mediaの個々のユーザーインターフェイス要素でサポートされているキーストロークは、ほとんどの場合、明らかで見つけやすいものです。 Dynamic Media のキーボードコントロールは、以下の機能があります。
+Dynamic Media の個々のユーザーインターフェイス要素でサポートされているキー操作は、ほとんどの場合、明確で見つけやすくなっています。Dynamic Media のキーボードコントロールは、以下の機能があります。
 
 * `Tab` と `Shift+Tab` のキー操作を使用して、ページ上のインタラクティブ要素間を移動できます。`Tab` を使用すると、タブ順序における次のユーザーインターフェイス要素に入力フォーカスが進みます。`Shift+Tab` を使用すると、入力フォーカスが前のユーザーインターフェイス要素に戻ります。フォーカストラバーサルは、画面上のユーザーインターフェイス要素の自然な位置に従い、左から右、上から下の順に移動します。また、フィールドにエラーがある場合は、`Tab` を押して、そのフィールドにフォーカスを移動できます。
-* `Spacebar`キーと`Enter`キーを使用して、ボタンやドロップダウンリストなどの標準的なユーザーインターフェイス要素をアクティブ化する機能。
-* アクティブな要素にキーボードフォーカスのハイライト表示をおこなえます。入力フォーカスを有するユーザインタフェース要素は、ユーザインタフェース要素の周囲に描画される境界として視覚的フォーカス表示を受け付ける。
-* ホットスポットエディターでは、矢印キーなどのいくつかのカスタムキー操作を使用して複雑なユーザインターフェイス要素を操作し、ホットスポットの位置を変更できます。
-* インタラクティブビデオエディターでは、`Spacebar` を使用して画像を選択し、それをセグメントに追加できます。さらに、`Backspace`キーを使用して、「**[!UICONTROL コンテンツ]**」タブから選択した項目を削除できます。 また、必要に応じて `Tab` キーを押して、ページ上のインタラクティブ要素間を移動できます。
-* 画像切り抜き/スマート切り抜きエディターで、次の操作を実行できます。
-   * フレームサイズの切り抜き、画像の位置の変更、またはその両方に矢印キーを使用します。
-   * 最初の `Tab` ストップで画像フレーム全体がハイライト表示されます。その後、キーボードの矢印キーを使用して、フレームの位置を変更できます。
+* `Spacebar` キーと `Enter` キーを使用して、ボタン、ドロップダウンリストなどの標準的なユーザーインターフェイス要素をアクティブにできます。
+* アクティブな要素にキーボードフォーカスのハイライト表示をおこなえます。入力フォーカスのあるユーザーインターフェイス要素には、その要素の周りにボーダーをレンダリングして視覚的なフォーカス表示をおこなうことができます。
+* ホットスポットエディターでは、矢印キーなどのいくつかのカスタムキー操作を使用して複雑なユーザーインターフェイス要素を操作し、ホットスポットの位置を変更できます。
+* インタラクティブビデオエディターでは、`Spacebar` を使用して画像を選択し、それをセグメントに追加できます。さらに、`Backspace` キーを使用して、選択した項目を「**[!UICONTROL コンテンツ]**」タブから削除できます。また、必要に応じて `Tab` キーを押して、ページ上のインタラクティブ要素間を移動できます。
+* 画像切り抜き／スマート切り抜きエディターで、次の操作を実行できます。
+   * 矢印キーを使用して、フレームサイズの切り抜きや画像位置の変更、またはその両方をおこないます。
+   * 最初の `Tab` ストップで画像フレーム全体がハイライト表示されます。その場合、キーボードの矢印キーを使用してフレームの位置を変更できます。
    * その次の 4 つの `Tab` ストップはフレームの四隅です。フレームの隅をフォーカスすると、その隅がハイライト表示されます。この場合も、キーボードの矢印キーを使用して、フォーカスされた隅を移動できます。詳しくは、[単一の画像のスマート切り抜きまたはスマートスウォッチの編集](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)を参照してください。
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
@@ -44,13 +44,13 @@ Dynamic Mediaの個々のユーザーインターフェイス要素でサポー�
 
 ## Dynamic Media での支援テクノロジーのサポート {#assistive-technology=support-for-dm}
 
-Dynamic Media のユーザーインターフェイス要素は、スクリーンリーダーなどの支援テクノロジーと連携動作します。例えば、キーボードショートカット`D`を使用してランドマークを移動するとき、またはキーボードショートカット`R`を使用して領域を移動すると、ページ上のランドマークが認識されます。 また、見出しのキーボードショートカット `H` を使用して移動する際に、見出しの読み上げもおこなわれます。
+Dynamic Media のユーザーインターフェイス要素は、スクリーンリーダーなどの支援テクノロジーと連携動作します。例えば、キーボードショートカット `D` を使用してランドマークを移動するときや、キーボードショートカット `R` を使用して領域を移動するときに、ページのランドマークが認識されます。また、見出しのキーボードショートカット `H` を使用して移動する際に、見出しの読み上げもおこなわれます。
 
 ## Dynamic Media ビューアでのキーボードアクセシビリティのサポート {#keyboard-accessibility-for-dm-viewers}
 
 標準で用意されているすべての Dynamic Media ビューアコンポーネントでは、顧客向けのキーボードアクセシビリティをサポートしています。
 
-『Dynamic Mediaビューアリファレンスガイド』の[キーボードアクセシビリティとナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=ja)を参照してください。
+詳しくは、『Dynamic Media ビューアリファレンスガイド』の[キーボードのアクセシビリティとナビゲーション](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=ja)を参照してください。
 
 ## Dynamic Media ビューアでの支援テクノロジーのサポート {#assistive-technology=support-for-dm-viewers}
 
