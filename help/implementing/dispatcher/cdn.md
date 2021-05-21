@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 66%
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ## AEM 管理による CDN {#aem-managed-cdn}
 
-次の節に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備を行います。
+次のセクションの説明に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備をおこないます。
 
 1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 >[!CAUTION]
 >
->許可されている IP からの要求のみが AEM 管理による CDN で処理されます。独自のCDNをAEM管理CDNを指す場合は、CDNのIPが設定に含まれていることを確認しま許可リストす。
+>許可されている IP からの要求のみが AEM 管理による CDN で処理されます。AEM 管理による CDN に対して独自の CDN を指定する場合は、CDN の IP が許可リストに含まれていることを確認します。
 
 ## 顧客 CDN で AEM 管理 CDN を参照する {#point-to-point-CDN}
 
@@ -54,26 +54,26 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。例：`X-Forwarded-Host:example.com`
 1. ホストヘッダーをオリジンドメインに設定します（AEM CDN の入口）。例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`
-1. SNI ヘッダーをオリジンに送信します。ホストヘッダーと同様に、SNIヘッダーは接触チャネルドメインである必要があります。
+1. SNI ヘッダーをオリジンに送信します。ホストヘッダーと同様に、SNI ヘッダーはオリジンドメインです。
 1. `X-Edge-Key`または`X-AEM-Edge-Key`（CDNで`X-Edge-*`がストリップされている場合）を設定します。 この値はアドビから取得されます。
    * これは、AdobeCDNがリクエストのソースを検証し、`X-Forwarded-*`ヘッダーをAEMアプリケーションに渡すために必要です。 例えば、AEMでは`X-Forwarded-Host`を使用してホストヘッダーを決定し、`X-Forwarded-For`を使用してクライアントIPを決定します。 したがって、`X-Forwarded-*`ヘッダーが正しいことを確認する（以下の注を参照）のは、信頼できる呼び出し元（顧客が管理するCDN）の責任となります。
    * 必要に応じて、`X-Edge-Key`が存在しない場合、AdobeCDNの入口へのアクセスをブロックできます。 AdobeCDNの入力に直接アクセスする必要がある場合は、Adobeに通知してください（ブロックする場合）。
 
-ライブトラフィックを受け入れる前に、Adobeのカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
+ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
 
 >[!NOTE]
 >
->独自のCDNを管理するお客様は、AEM CDNを介して送信されるヘッダーの整合性を確保する必要があります。 例えば、`X-Forwarded-*`ヘッダーをすべて消去し、既知の制御値に設定することをお勧めします。 例えば、`X-Forwarded-For`にはクライアントのIPアドレスを、`X-Forwarded-Host`にはサイトのホストを含める必要があります。
+>独自の CDN を管理している場合は、AEM CDN 経由で送信されるヘッダーの整合性を確保する必要があります。例えば、すべての `X-Forwarded-*` ヘッダーを消去し、既知の値と制御値に設定することをお勧めします。例えば、`X-Forwarded-For` にはクライアントの IP アドレスを含め、`X-Forwarded-Host` にはサイトのホストを含める必要があります。
 
 顧客 CDN から AEM 管理による CDN へのホップは効率的ですが、ホップの増加に伴い、パフォーマンスがわずかに低下する可能性があります。
 
-この顧客CDN設定は、パブリッシュ層に対してはサポートされていますが、オーサー層の前ではサポートされていないことに注意してください。
+この顧客 CDN 設定は、パブリッシュ層に対してサポートされていますが、オーサー層の前ではサポートされていません。
 
 ## 位置情報ヘッダー {#geo-headers}
 
-AEMが管理するCDNは、次の情報を使用して各要求にヘッダーを追加します。
+AEM が管理する CDN は、次の情報を含む各リクエストにヘッダーを追加します。
 
-* 国コード: `x-aem-client-country`
+* 国コード：`x-aem-client-country`
 * 大陸コード：`x-aem-client-continent`
 
 国コードの値は、Alpha-2 コード（[ここ](https://ja.wikipedia.org/wiki/ISO_3166-1)で説明）です。
@@ -88,4 +88,4 @@ AEMが管理するCDNは、次の情報を使用して各要求にヘッダー�
 * OC - オセアニア
 * SA - 中南米
 
-この情報は、リクエストのオリジン（国）に基づいて別の URL にリダイレクトするなどの使用例に役立ちます。地域情報に依存する応答をキャッシュする場合は、 Varyヘッダーを使用します。 例えば、特定の国のランディングページにリダイレクトする場合は、常に`Vary: x-aem-client-country`を含める必要があります。 必要に応じて、`Cache-Control: private` を使用してキャッシュを防ぐことができます。「[キャッシュ](/help/implementing/dispatcher/caching.md#html-text)」も参照してください。
+この情報は、リクエストのオリジン（国）に基づいて別の URL にリダイレクトするなどの使用例に役立ちます。地域情報に依存するキャッシュ応答には、Vary ヘッダーを使用します。例えば、特定の国のランディングページにリダイレクトする場合は、常に `Vary: x-aem-client-country` を含める必要があります。必要に応じて、`Cache-Control: private` を使用してキャッシュを防ぐことができます。「[キャッシュ](/help/implementing/dispatcher/caching.md#html-text)」も参照してください。
