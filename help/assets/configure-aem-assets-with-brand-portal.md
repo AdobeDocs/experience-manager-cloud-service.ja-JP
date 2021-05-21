@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
 workflow-type: tm+mt
 source-wordcount: '2416'
-ht-degree: 66%
+ht-degree: 99%
 
 ---
 
@@ -16,78 +16,78 @@ ht-degree: 66%
 
 Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスから Brand Portal に公開し、Brand Portal ユーザーに配信できます。
 
-## Cloud Manager {#activate-brand-portal}を使用してBrand Portalをアクティブ化します。
+## Cloud Manager を使用して Brand Portal をライセンス認証する {#activate-brand-portal}
 
-Cloud Managerのユーザーは、AEM AssetsのBrand Portalを[!DNL Cloud Service]インスタンスとしてアクティブ化します。 アクティベーションワークフローは、必要な設定(認証トークン、IMS設定およびBrand Portal Cloud Service)をバックエンドに作成し、Cloud ManagerのBrand Portalテナントのステータスを反映します。 Brand Portalをアクティベートすると、AEM Assetsユーザーは、Brand Portalにアセットを公開し、Brand Portalユーザーに配布できます。
+Cloud Manager ユーザーは、AEM Assets as a [!DNL Cloud Service] インスタンスで、Brand Potal をライセンス認証します。アクティベーションワークフローは、バックエンドに必要な設定（認証トークン、IMS 設定および Brand Portal クラウドサービス）を作成し、Cloud Manager の Brand Portal テナントのステータスを反映します。Brand Portal をライセンス認証すると、AEM Assets のユーザは Brand Portal にアセットを公開して、Brand Portal ユーザーに配信できます。
 
 **前提条件**
 
-AEM Assets上のBrand Portalを[!DNL Cloud Service]インスタンスとしてアクティブ化するには、次が必要です。
+AEM Assets as a [!DNL Cloud Service] インスタンスで Brand Portal をライセンス認証するには、以下が必要です。
 
-* 実行中の AEM Assets as a [!DNL Cloud Service] インスタンス.
-* Cloud Managerへのアクセス権を持つユーザーで、Cloud Manager製品のプロファイルに割り当てられます。 詳しくは、[Cloud Managerへのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#accessing-cloud-manager)を参照してください。
+* 実行中の AEM Assets as a [!DNL Cloud Service] インスタンス。
+* Cloud Manager 製品のプロファイルに割り当てられている、Cloud Manager にアクセスできるユーザー。詳しくは、[Cloud Manager へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja#accessing-cloud-manager)を参照してください。
 
 >[!NOTE]
 >
->AEM Assets as a [!DNL Cloud Service]インスタンスは、1つのBrand Portalテナントにのみ接続できます。 AEM Assets用に複数の環境（開発、実稼動、ステージング）を[!DNL Cloud Service]インスタンスとして持つことができます。この場合、Brand Portalは1つの環境で有効化されます。
+>AEM Assets as a [!DNL Cloud Service] インスタンスは、1 つの Brand Portal テナントとのみ接続できます。AEM Assets as a [!DNL Cloud Service] インスタンスに複数の環境（開発、実稼動、ステージ）を設定できます。この場合、Brand Portal は 1 つの環境でアクティブになります。
 
-**Brand Portalのアクティブ化の手順**
+**Brand Portal のライセンス認証手順**
 
-AEM Assetsの環境を[!DNL Cloud Service]インスタンスとして作成する際に、または個別にBrand Portalをアクティブ化できます。 環境が既に作成済みで、Brand Portalをアクティブ化する必要があるとします。
+Brand Portal は、AEM Assets as a [!DNL Cloud Service] のインスタンス用に環境を作成するか、または個別に作成するときにライセンス認証できます。環境が既に作成され、Brand Portal をライセンス認証する必要があるとします。
 
-1. Adobe Cloud Manager にログインし、**[!UICONTROL 環境]**&#x200B;に移動します。
+1. Adobe Cloud Manager にログインし、「**[!UICONTROL 環境]**」に移動します。
 
    **[!UICONTROL 環境]**&#x200B;ページには、既存の環境のリストが表示されます。
 
-1. リストから環境を（1 つずつ）選択して、環境の詳細を表示します。
+1. 環境の詳細を表示するリストから環境を（1 つずつ）選択します。
 
-   Brand Portalは、使用可能な環境の1つに対して権利を付与され、**[!UICONTROL 環境情報]**&#x200B;に反映されます。
+   Brand Portal には利用可能な環境のうちいずれかの権利が付与され、**[!UICONTROL 環境情報]**&#x200B;に反映されます。
 
-   Brand Portal に関連付けられている環境が見つかったら、「**[!UICONTROL Brand Portal をアクティベート]**」ボタンをクリックしてアクティベーションワークフローを開始します。
+   Brand Portal に関連付けられている環境を見つけたら、「**[!UICONTROL Brand Portal のライセンス認証]**」ボタンをクリックして、アクティベーションワークフローを開始します。
 
    ![Brand Portal のライセンス認証](assets/create-environment4.png)
 
-1. アクティベーションワークフローがバックエンドで必要な設定を作成するので、Brand Portalテナントのアクティベートには数分かかります。 Brand Portal テナントがアクティベートされると、ステータスが「アクティベート済み」に変わります。
+1. アクティベーションワークフローがバックエンドで必要な設定を作成するので、Brand Portal テナントのライセンス認証に数分かかります。Brand Portal テナントがライセンス認証されると、ステータスが「アクティベート済み」に変わります。
 
-   ![ステータスの表示](assets/create-environment5.png)
+   ![表示ステータス](assets/create-environment5.png)
 
 
 >[!NOTE]
 >
->Brand Portalは、AEM Assetsと同じIMS組織上で[!DNL Cloud Service]インスタンスとしてアクティブ化する必要があります。
+>Brand Portal は、AEM Assets as a [!DNL Cloud Service] インスタンスと同じ IMS 組織でライセンス認証する必要があります。
 >
->IMS組織(org1-existing)に対して既存のBrand Portal Cloud Configuration([Adobe開発者コンソール](#manual-configuration)を使用して手動で設定)をおこない、AEM Assetsを別のIMS組織(org2-new)に対して設定した場合、Cloud ManagerからBrand Portalをアクティブ化すると、Brand Portal IMS組織が`org2-new`にリセットされます。 [!DNL Cloud Service]`org1-existing`上で手動で設定したクラウド設定はAEM Assetsオーサーインスタンスに表示されますが、Cloud ManagerからBrand Portalをアクティブ化すると、使用されなくなります。
+>IMS 組織（org1-existing）に既存の Brand Portal のクラウド設定（[Adobe 開発者コンソールを使用して手動で設定](#manual-configuration)）があり、AEM Assets as a [!DNL Cloud Service]インスタンスが別の IMS 組織（org2-new）に設定されている場合、Cloud Manager から Brand Portal のライセンス認証をおこなうと、Brand Portal IMS 組織が `org2-new` にリセットされます。`org1-existing` で手動で設定したクラウド設定は、AEM Assets のオーサーインスタンスには表示されますが、Cloud Manager で Brand Portal をアクティベートすると使用できなくなります。
 >
->既存のBrand Portalクラウド設定とAEM Assets as a [!DNL Cloud Service]インスタンスが同じIMS組織(org1)を使用している場合は、Cloud ManagerからBrand Portalをアクティブ化するだけです。
+>既存の Brand Portal クラウド設定と AEM Assets as a [!DNL Cloud Service] インスタンスが同じ IMS 組織（org1）を使用している場合は、Cloud Manager から Brand Portal をライセンス認証するだけで済みます。
 
 **関連トピック**:
-* [AEM Assetsでのユーザーと役割のCloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
+* [AEM Assets as a Cloud Service でのユーザーと役割を追加する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/add-users-roles.html?lang=en#role-definitions)
 
-* [Cloud Managerでの環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#adding-environments)
+* [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)
 
 
-**Brand Portalテナントにログインします**。
+**Brand Portal テナントへのログイン**
 
-Cloud ManagerでBrand Portalテナントをアクティブ化したら、Admin Consoleから、またはテナントURLを使用して直接Brand Portalにログインできます。
+Cloud Manager で Brand Portal テナントをライセンス認証した後、Admin Console から、またはテナント URL を使用して直接 Brand Portal にログインできます。
 
-Brand PortalテナントのデフォルトURLは次のとおりです。`https://<tenant-id>.brand-portal.adobe.com/`.
+Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-portal.adobe.com/` です。
 
-ここで、テナントIDはIMS組織です。
+ここで、テナント ID は IMS 組織です。
 
-Brand PortalのURLが不明な場合は、次の手順を実行します。
+ブランドポータルの URL が不明な場合は、次の手順を実行します。
 
-1. [Admin Console](http://adminconsole.adobe.com/)にログインし、**[!UICONTROL 製品]**&#x200B;に移動します。
-1. 左側のレールから、「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
-1. 「**[!UICONTROL Brand Portal]**&#x200B;に移動」をクリックして、ブラウザーでBrand Portalを直接開きます。
+1. [Admin Console](http://adminconsole.adobe.com/)にログインし、「**[!UICONTROL 製品]**」に移動します。
+1. 左パネルの「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
+1. 「**[!UICONTROL Brand Portal に移動]**」をクリックして、ブラウザーで直接 Brand Portal を開きます。
 
-   または、**[!UICONTROL Brand Portal]**&#x200B;リンクからBrand PortalテナントURLをコピーし、ブラウザーに貼り付けてBrand Portalインターフェイスを開きます。
+   または、**[!UICONTROL Brand Portal へ移動]**&#x200B;リンクから Brand Portal テナント URL をコピーし、ブラウザーに貼り付けて Brand Portal インターフェイスを開きます。
 
-   ![Access Brand Portal](assets/access-bp-on-cloud.png)
+   ![Brand Portal にアクセス](assets/access-bp-on-cloud.png)
 
 
 **接続をテストします。**
 
-次の手順を実行して、AEM Assets as a [!DNL Cloud Service]インスタンスとBrand Portalテナントの間の接続を検証します。
+次の手順を実行して、AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの接続を検証します。
 
 1. AEM Assets にログインします。
 
@@ -124,7 +124,7 @@ Brand PortalのURLが不明な場合は、次の手順を実行します。
    >
    >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
 
-AEM Assets as a [!DNL Cloud Service]インスタンスとBrand Portalテナントの間の接続を検証するには、AEM AssetsからBrand Portalにアセットを公開します。 接続に成功すると、公開済みのアセットがBrand Portalインターフェイスに表示されます。
+AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの間の接続を検証するには、AEM Assets から Brand Portal にアセットを公開します。接続に成功すると、公開されたアセットが Brand Portal インターフェイスに表示されます。
 
 
 次の操作が可能になっています。
@@ -132,7 +132,7 @@ AEM Assets as a [!DNL Cloud Service]インスタンスとBrand Portalテナン�
 * [AEM Assets から Brand Portal へのアセットの公開](publish-to-brand-portal.md)
 * [AEM Assets から Brand Portal へのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
 * [AEM Assets から Brand Portal へのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand PortalからAEM Assetsへのアセットの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)  - Brand Portalでのアセットソーシング
+* [Brand Portal から AEM Assets への公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja) - Brand Portal でのアセットのソーシング
 * [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Brand Portal へのタグの公開](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
@@ -142,16 +142,16 @@ AEM Assets as a [!DNL Cloud Service]インスタンスとBrand Portalテナン�
 
 配布エージェントのログで、アセット発行ワークフローを監視できます。
 
-次に、AEM AssetsからBrand Portalにアセットを公開し、ログを確認します。
+次に、AEM Assets から Brand Portal にアセットを公開し、ログを確認します。
 
-1. **接続のテスト**&#x200B;節で示す手順(1 ～ 4)に従い、配布エージェントページに移動します。
+1. 「**設定のテスト**」節で示した手順（1 ～ 4）に従い、配布エージェントページに移動します。
 1. 「**[!UICONTROL ログ]** 」をクリックして、処理ログとエラーログを表示します。
 
    ![](assets/test-bpconfig5.png)
 
 配布エージェントは次のログを生成します。
 
-* 情報：配布エージェントの設定が成功した場合にトリガーを生成する、システム生成ログです。
+* 情報：これは、配布エージェントの構成が正常に完了したときにトリガーされるシステムが生成するログです。
 * DSTRQ1（リクエスト 1）：テスト接続時にトリガーされます。
 
 アセットの公開時に、次の要求および応答ログが生成されます。
@@ -172,17 +172,17 @@ AEM Assets as a [!DNL Cloud Service]インスタンスとBrand Portalテナン�
 >
 >親フォルダーが Brand Portal に存在しない場合や AEM Assets で変更された場合には、追加のリクエストが生成されます。
 
-AEM Assets上のBrand Portalを[!DNL Cloud Service]としてアクティブ化する自動化ワークフローに加えて、AEM Assetsを[!DNL Cloud Service]としてBrand Portalと共に手動で設定する方法もありますが、これは非推奨です。
+自動処理ワークフローを使用して AEM Assets as a [!DNL Cloud Service] で Brand Portal のライセンス認証をおこなう方法以外に、Adobe 開発者コンソールを使用して、AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携を手動設定する方法もありますが、この方法は推奨されません。
 
 >[!NOTE]
 >
->Brand Portalテナントのアクティブ化中に問題が発生した場合は、Adobeサポートにお問い合わせください。
+>Brand Portal テナントのライセンス認証中に問題が発生した場合は、Adobe サポートにお問い合わせください。
 
-## Adobe開発者コンソール{#manual-configuration}を使用した手動設定
+## Adobe 開発者コンソールを使用した手動設定 {#manual-configuration}
 
-次の節では、Adobe開発者コンソールを使用して、Brand Portalを[!DNL Cloud Service]として手動で設定する方法について説明します。
+次の節では、Adobe 開発者コンソールを使用して、AEM Assets as a [!DNL Cloud Service]と Brand Portal の連携を手動で設定する方法について説明します。
 
-以前は、AEM Assets as a [!DNL Cloud Service]は、Adobe開発者コンソールを通じてBrand Portalで手動で設定されていました。開発者コンソールは、Brand Portalテナントの認証用のAdobeIdentity Managementサービス(IMS)アカウントトークンを取得します。 この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
+AEM Assets as a [!DNL Cloud Service] と Brand Portal の連携は、Adobe 開発者コンソールを通じて設定されます。このコンソールでは、Brand Portal テナントの認証に使用する Adobe Identity Management サービス（IMS）アカウントトークンを調達します。この機能を使用するには、AEM Assets および Adobe 開発者コンソールの両方の設定が必要です。
 
 1. AEM Assets で、IMS アカウントを作成して公開鍵（証明書）を生成します。
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。
@@ -237,7 +237,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
 1. **[!UICONTROL 公開鍵をダウンロード]**&#x200B;アイコンをクリックして、公開鍵（CRT）ファイルをローカルマシンに保存します。
 
-   公開鍵は、後でBrand PortalテナントのAPIを設定し、Adobe開発者コンソールでサービスアカウント資格情報を生成するために使用されます。
+   この公開鍵を後で使用して、Brand Portal テナントの API を設定し、Adobe 開発者コンソールでサービスアカウント資格情報を生成が次の値である。
 
    ![証明書をダウンロード](assets/ims-config3.png)
 
@@ -397,7 +397,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
    これで、AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの連携が設定されました。
 
-これで、配布エージェントを確認し、Brand Portalにアセットを公開することで、設定をテストできます。
+これで、配布エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
 
 <!--
 ### Test configuration {#test-configuration}
