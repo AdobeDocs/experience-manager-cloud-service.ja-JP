@@ -7,7 +7,7 @@ exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '9475'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -276,7 +276,7 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
 
 ## ビデオエンコーディングのベストプラクティス {#best-practices-for-encoding-videos}
 
-Dynamic Mediaを有効にし、ビデオCloud Servicesを設定済みの場合、**Dynamic Media Encode Video**&#x200B;ワークフローがビデオをエンコードします。 このワークフローは、ワークフローの処理履歴とエラー情報を取り込みます。詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。Dynamic Mediaを有効にし、ビデオCloud Servicesを設定済みの場合、ビデオをアップロードすると、 **[!UICONTROL Dynamic Mediaエンコーディングビデオ]**&#x200B;ワークフローが自動的に有効になります。 (Dynamic Mediaを使用していない場合は、**[!UICONTROL DAMアセットの更新]**&#x200B;ワークフローが有効になります)。
+Dynamic Mediaを有効にし、ビデオCloud Servicesを設定済みの場合、**Dynamic Media Encode Video**&#x200B;ワークフローがビデオをエンコードします。 このワークフローは、ワークフローの処理履歴とエラー情報を取り込みます。詳しくは、[ビデオエンコーディングと YouTube への公開の進行状況の監視](#monitoring-video-encoding-and-youtube-publishing-progress)を参照してください。Dynamic Mediaを有効にし、ビデオCloud Servicesを設定済みの場合、ビデオをアップロードすると、 **[!UICONTROL Dynamic Mediaエンコーディングビデオ]**&#x200B;ワークフローが自動的に有効になります。 （Dynamic Media を使用していない場合は、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローが有効になります）。
 
 ここでは、ソースビデオファイルのエンコードにおけるベストプラクティスのヒントを説明します。
 
@@ -766,7 +766,7 @@ YouTubeからコンテンツを公開するために、Experience Managerでは�
 1. ビデオのプロパティページの右上隅にある「**[!UICONTROL 保存して閉じる]**」をクリックします。
 1. ツールバーの「**[!UICONTROL クイック公開]**」をクリックします。
 
-   [Experience Managerサイトでの公開管理の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)も参照してください。
+   [Experience Managerサイトでの公開管理の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ja#page-authoring)も参照してください。
 
    オプションで、YouTube チャンネルで公開済みビデオを確認できます。
 
@@ -1160,7 +1160,7 @@ Cost-efficient access to rapidly evolving technology.
        </ol> </td>
       </tr>
       <tr>
-       <td>埋め込みビデオビューアエクスペリエンスの場合 <br /> </td>
+       <td>埋め込みビデオビューアエクスペリエンスの場合<br /> </td>
        <td>
        <ol>
        <li>アップロードしたチャプターファイルを関連付ける、<i>公開済み</i>ビデオアセットに移動します。URL をコピーするには、その<i>前に</i>アセットを<i>公開</i>しておく必要があります。<a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">アセットの公開</a>を参照してください。</li>
