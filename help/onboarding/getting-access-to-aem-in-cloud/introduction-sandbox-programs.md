@@ -5,19 +5,19 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 3b57acc47dd60d050ceebebb12bd9080b7fc5cf5
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 69%
+ht-degree: 88%
 
 ---
 
-# サンドボックスプログラムの概要{#sandbox-programs}
+# サンドボックスプログラムの概要 {#sandbox-programs}
 
 ## はじめに {#introduction}
 
-サンドボックスプログラムは、AEM Sandboxで使用可能な2種類のプログラムの1つで、もう1つは実稼動Cloud Serviceプログラムです。
+サンドボックスプログラムは、AEM Cloud Service で使用できる 2 種類のプログラムの 1 つで、もう 1 つは実稼動プログラムです。
 
 サンドボックスは、通常、トレーニング、デモの実行、使用可能性、またはコンセプトの配達確認（POC）といった目的を満たすために作成され、ライブトラフィックを運ぶためのものではありません。サンドボックスは、[AEM as a Cloud Service のコミットメント](https://www.adobe.com/jp/legal/service-commitments.html)には従いません。
 
-サンドボックスで作成された環境は、自動スケール用に設定されません。したがって、これらの環境はパフォーマンスや負荷テストには適していません。
+サンドボックスで作成された環境は、自動スケール用に設定されません。したがって、パフォーマンスや負荷テストには適しません。
 
 サンドボックスプログラムには Sites と Assets が含まれ、Git リポジトリー、開発環境、実稼働以外のパイプラインが自動入力されます。Git リポジトリーには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
 
@@ -34,7 +34,7 @@ ht-degree: 69%
 
 1. **ソリューション：**&#x200B;サンドボックスプログラムには、AEM Sites と Assets が含まれます。
 
-1. **AEM アップデート：** AEM のアップデートは、サンドボックスプログラム内の環境に手動で適用します。自動でプッシュされることはありません。詳しくは、[サンドボックス環境のAEMアップデート](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)を参照してください。
+1. **AEM アップデート：** AEM のアップデートは、サンドボックスプログラム内の環境に手動で適用します。自動でプッシュされることはありません。詳しくは、[サンドボックス環境への AEM アップデートの適用](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)を参照してください。
 
 1. **休止状態：**&#x200B;サンドボックスプログラム内の環境は、特定の期間、アクティビティが検出されなかった場合、自動的に休止状態になります。サンドボックスは、8時間操作が実行されなかった後に休止ノードに配置され、その後、休止解除できます。 休止状態の環境は、手動で休止を解除できます。詳しくは、[サンドボックス環境の休止と休止解除](/help/onboarding/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md)を参照してください。
 
