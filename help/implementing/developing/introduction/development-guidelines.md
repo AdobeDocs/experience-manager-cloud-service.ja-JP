@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2283'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -157,7 +157,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスはAdmin Consoleの「Cloud Manager - Developer Role」で定義されます。サンドボックスプログラムの場合、開発者コンソールは、AEMへのアクセス権をCloud Serviceとして付与されている製品プロファイルを持つ任意のユーザーが利用できます。 すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
 
 ### AEM のステージング環境および実稼動環境用サービス {#aem-staging-and-production-service}
 
