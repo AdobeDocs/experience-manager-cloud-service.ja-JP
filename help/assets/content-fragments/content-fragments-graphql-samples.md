@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -271,7 +271,7 @@ query {
 
 ### サンプルクエリ - 1 つの特定の都市フラグメント {#sample-single-specific-city-fragment}
 
-これは、リポジトリ内の特定の場所にある単一のフラグメントエントリの詳細を返すクエリです。
+これは、リポジトリー内の特定の場所にある 1 つのフラグメントエントリの詳細を返すクエリです。
 
 **サンプルクエリ**
 
