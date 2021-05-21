@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 97%
 
 
 「**更新**」オプションは、**環境**カードから利用できます。
-このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合にも使用できます。**環境**&#x200B;ページが開き、「開発」環境を選択したら、「**....**」をクリックして「**更新**」を選択します。次の図を参照してください。
+このオプションは、**環境**&#x200B;カードで「**詳細**」をクリックした場合にも使用できます。**環境**&#x200B;ページが開き、「開発」環境を選択したら、「**...**」をクリックして「**更新**」を選択します。次の図を参照してください。
 
 ![](assets/environ-update2.png)
 
@@ -112,7 +112,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->この機能は、実稼動用に設定された実稼動プログラムの実稼動/ステージング環境セットには使用できません。 ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
+>この機能は、実稼動用に設定された実稼動プログラムの実稼働／ステージング環境セットには使用できません。ただし、サンドボックスプログラムの実稼働／ステージング環境には使用できます。
 
 ## アクセスの管理 {#managing-access}
 
@@ -158,9 +158,9 @@ ht-degree: 97%
 
 1. [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
 
-1. [カスタムドメイン名またはSSL証](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) 明書のステー [タスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)
+1. [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)または [SSL 証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)
 
-1. [IPステータスの確認許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+1. [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
