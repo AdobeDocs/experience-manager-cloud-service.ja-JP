@@ -8,7 +8,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -170,7 +170,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### デスクトップアクションのデスクトップアプリでの有効化 {#desktop-actions}
 
-ブラウザーの [!DNL Assets] ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。これらのオプションはデスクトップアクションと呼ばれ、これを有効にするには、 [!DNL Assets] Webインターフェイス](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#desktopactions-v2)の「デスクトップアクションの有効化」を参照してください。[
+ブラウザーの [!DNL Assets] ユーザーインターフェイスから、アセットの場所を参照したり、アセットをチェックアウトしてデスクトップアプリケーションで編集用に開いたりできます。これらのオプションはデスクトップアクションと呼ばれます。これを有効にするには、[ [!DNL Assets] Web インターフェイスでのデスクトップアクションの有効化](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#desktopactions-v2)を参照してください。
 
 ![デスクトップアプリで作業する際の、デスクトップアクションのショートカットとしての有効化](assets/enable_desktop_actions.png)
 
@@ -184,8 +184,8 @@ Adobe Asset Link を使用すると、コンテンツ作成プロセスでのク
 
 * 名前に空白を含むアセットフォルダーまたはコレクションは共有されない可能性があります。
 * ユーザーが共有アセットをダウンロードできない場合は、AEM 管理者に[ダウンロード制限](#maxdatasize)を確認してください。
-* ユーザーがリンク共有を使用して共有されるビデオをプレビューするには、リポジトリ内のビデオのノードの`/jcr:content/renditions`場所で静的ビデオレンディションを使用できる必要があります。 プレビューは、[!DNL Dynamic Media]レンディションの使用可否に依存しません。
-* リンク共有を使用してビデオアセットをダウンロードする場合、[!DNL Dynamic Media]レンディションはダウンロードされたアーカイブに含まれません。
+* リンク共有を使用して共有されているビデオをプレビューするには、リポジトリー内でそのビデオノードの場所 `/jcr:content/renditions` に静的ビデオレンディションが必要です。プレビューは、[!DNL Dynamic Media] レンディションの有無には依存しません。
+* リンク共有を介してビデオアセットをダウンロードする場合、ダウンロードされたアーカイブに [!DNL Dynamic Media] レンディションは含まれません。
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your AEM administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
