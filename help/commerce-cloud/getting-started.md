@@ -2,7 +2,7 @@
 title: AEM Commerce as a Cloud Service - はじめに
 description: 実行中の AEM as a Cloud Service 環境にコマース対応の AEM プロジェクトをデプロイする方法を説明します。Adobe Cloud Manager の機能と CI／CD パイプラインを使用すると、実行中の環境に対する Venia 参照ストアフロントを構築できます。
 topics: Commerce
-feature: コマース統合フレームワーク、Cloud Manager
+feature: コマース統合フレームワーク Cloud Manager
 version: cloud-service
 doc-type: tutorial
 kt: 4947
@@ -11,7 +11,7 @@ exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 1. AEM Commerce as a Cloud Service を有効にし、CIF アドオンをプロビジョニングする
 2. AEM CommerceをコマースソリューションとCloud Serviceとして接続する
 
-最初のオンボーディング手順は、Adobeがおこないます。 価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
+最初のオンボーディング手順はアドビがおこないます。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
 CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、新しく作成する必要があります。詳しくは、「[プログラムの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)」を参照してください。
 
