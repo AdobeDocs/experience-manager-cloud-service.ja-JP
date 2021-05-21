@@ -90,7 +90,7 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 ![ユーザー同期ツール](/help/security/assets/ims5.png)
 
-ユーザー同期ツールは、[この場所](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)にある Adobe GitHub リポジトリを通じて配布されます。
+ユーザー同期ツールは、[この場所](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)にある Adobe GitHub リポジトリーを通じて配布されます。
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ AEM では、IMS から同期されたユーザーグループを既存のロー
 ![ACL3](/help/security/assets/ims18.png)
 
 
-### Cloud Manager へのアクセス{#accessing-cloud-manager}
+### Cloud Manager へのアクセス {#accessing-cloud-manager}
 
 Cloud Manager または AEM as a Cloud Service 環境としてアクセスするには、Cloud Manager 製品のプロファイルに割り当てられている必要があります。
 
