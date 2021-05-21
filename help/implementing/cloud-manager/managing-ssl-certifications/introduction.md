@@ -2,10 +2,10 @@
 title: 概要 — SSL 証明書の管理
 description: 概要 — SSL 証明書の管理
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '314'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,9 @@ Cloud Manager では、セルフサービス機能を使用して、Cloud Manage
 
 * AEM as a Cloud Service は、セキュリティで保護された `https` サイトのみをサポートしています。複数のカスタムドメインがある場合、ドメインを追加するたびに証明書をアップロードしたくはありません。したがって、複数のドメインを持つ 1 つの証明書を取得することで、顧客にはメリットが得られます。
 
-* AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。AEM as aCloud Serviceは、ドメインに対してワイルドカードSSL証明書を受け入れます。
+* AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。
+
+* AEM as aCloud Serviceは、ドメインに対してワイルドカードSSL証明書を受け入れます。
 
 Cloud Manager では、次の顧客向け SSL 証明書の要件をサポートしています。
 
