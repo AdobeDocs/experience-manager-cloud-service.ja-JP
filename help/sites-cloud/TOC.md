@@ -9,7 +9,7 @@ role: Business Practitioner
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 95%
       + [CSV ファイルへの書き出し](authoring/fundamentals/csv-export.md)
       + [コンポーネント](authoring/fundamentals/components.md)
       + [モバイルデバイス向けのオーサリング](authoring/fundamentals/mobile.md)
-      + [アクセシブルなコンテンツ（WCAG 2.1 適合）の作成 ](authoring/fundamentals/accessible-content.md)
+      + [アクセシブルなコンテンツ（WCAG 2.1 適合）の作成](authoring/fundamentals/accessible-content.md)
       + [トラブルシューティング](authoring/fundamentals/troubleshooting.md)
       + [キーボードショートカット](authoring/fundamentals/keyboard-shortcuts.md)
    + オーサリング機能 {#features}
@@ -68,8 +68,8 @@ ht-degree: 95%
       + [ワークフローの操作](authoring/workflows/overview.md)
       + [ページへのワークフローの適用](authoring/workflows/applying.md)
       + [ワークフローへの参加](authoring/workflows/participating.md)
-   + パーソナライゼーション {#personalization}
-      + [パーソナライゼーションの概要](authoring/personalization/overview.md)
+   + パーソナライズ機能 {#personalization}
+      + [パーソナライズ機能の概要](authoring/personalization/overview.md)
       + [ContextHub データを使用したページのプレビュー](authoring/personalization/contexthub.md)
       + [ターゲットモードを使用したターゲットコンテンツのオーサリング](authoring/personalization/targeted-content.md)
       + [マルチサイトでのターゲットコンテンツの操作](authoring/personalization/multisite-targeted-content.md)
@@ -82,16 +82,16 @@ ht-degree: 95%
       + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
    + [ワークフローの管理](administering/workflows-administering.md)
-   + コンテンツ{#reusing-content}の再利用
-      + [MSMと翻訳](administering/msm-and-translation.md)
+   + コンテンツの再利用 {#reusing-content}
+      + [MSM と翻訳](administering/msm-and-translation.md)
       + マルチサイトマネージャー {#msm}
-         + [MSMとライブコピーの概要](administering/msm/overview.md)
+         + [MSM とライブコピーの概要](administering/msm/overview.md)
          + [ライブコピーの同期の設定](administering/msm/live-copy-sync-config.md)
          + [ライブコピーの作成と同期](administering/msm/creating-live-copies.md)
          + [ライブコピーの概要コンソール](administering/msm/live-copy-overview.md)
          + [ロールアウトの競合](administering/msm/rollout-conflicts.md)
          + [MSM のベストプラクティス](administering/msm/best-practices.md)
-         + [トラブルシューティングとFAQ](administering/msm/troubleshooting.md)
+         + [トラブルシューティングと FAQ](administering/msm/troubleshooting.md)
       + 翻訳 {#translation}
          + [多言語サイトのコンテンツの翻訳](administering/translation/overview.md)
          + [翻訳するコンテンツの準備](administering/translation/preparation.md)
