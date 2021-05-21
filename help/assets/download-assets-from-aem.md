@@ -5,10 +5,10 @@ contentOwner: AG
 feature: アセット管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 715e6e56294172989aa8e512b5cbc6679312e379
+source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 93%
+source-wordcount: '921'
+ht-degree: 88%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 93%
 
 Adobe Experience Manager アセットをダウンロードするには、次のいずれかの方法を使用します。
 
-* [Adobe Experience Manager ユーザーインターフェイス](#download-in-aem)
+* [Adobe Experience Manager ユーザーインターフェイス](#download-assets)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)
 * [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#download-assets)
 
-## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-in-aem}
+## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-assets}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。サイズの大きいファイルは非同期でダウンロードされ、ユーザーは、インボックスに届く Adobe Experience Manager 通知で完了を知らされます。詳しくは、[Adobe Experience Manager インボックスについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ja)を参照してください。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、高速なダウンロードが可能になります。 サイズの大きいファイルは非同期でダウンロードされ、[!DNL Experience Manager]はインボックスに通知を介して完了を通知します。 [理解 [!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
 
 ![ダウンロード通知](assets/download-notification.png)
 
