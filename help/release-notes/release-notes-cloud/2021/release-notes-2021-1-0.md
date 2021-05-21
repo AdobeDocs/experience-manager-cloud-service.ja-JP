@@ -16,7 +16,8 @@ ht-degree: 100%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 のリリース日は 2021 年 2 月 3 日です。次回のリリース（2021.2.0）は、2021 年 2 月 25 日に予定されています。
+[!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 のリリース日は 2021 年 2 月 3 日です。
+次回のリリース（2021.2.0）は、2021 年 2 月 25 日に予定されています。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
