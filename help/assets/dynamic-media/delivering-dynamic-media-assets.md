@@ -7,7 +7,7 @@ exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 64%
+ht-degree: 79%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
 
-Dynamic Mediaを使用する場合、次のいくつかのオプションがあります。
+Dynamic Media を使用する場合、次の複数のオプションがあります。
 
 * WebサイトがAdobe Experience Manager上でホストされている場合、Dynamic Mediaアセットを直接ページに追加する必要があります。
 * WebサイトがExperience Manager上にない場合は、次のいずれかを選択できます。
@@ -26,7 +26,7 @@ Dynamic Mediaを使用する場合、次のいくつかのオプションがあ�
 
 >[!NOTE]
 >
->スマートイメージングは既存の画像プリセットと連携します。 配信の最後のミリ秒のインテリジェンスを使用して、ブラウザーまたはネットワーク接続の速度に基づいて画像ファイルのサイズをさらに小さくします。 詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
+>スマートイメージングは、既存の画像プリセットと連携して動作します。配信の最後のミリ秒の情報を使用して、ブラウザーまたはネットワークの接続速度に基づいて、画像ファイルのサイズをさらに小さくします。詳しくは、[スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
 
 詳しくは、次のトピックを参照してください。
 
@@ -35,7 +35,7 @@ Dynamic Mediaを使用する場合、次のいくつかのオプションがあ�
 * [Dynamic Media でのホットリンク保護の有効化](/help/assets/dynamic-media/hotlink-protection.md)
 * [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [レスポンシブサイト用に最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)
-* [コンテンツの HTTP/2 配信の](/help/assets/dynamic-media/http2faq.md)
+* [コンテンツの HTTP/2 配信](/help/assets/dynamic-media/http2faq.md)
 * [Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
 * [Dynamic Media Classic を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
 * [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
@@ -44,4 +44,4 @@ Dynamic Mediaを使用する場合、次のいくつかのオプションがあ�
 
 Experience Managerは、HTTP/2を介したすべてのDynamic Mediaコンテンツ（画像とビデオ）の配信をサポートするようになりました。 つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
-詳しくは、[HTTP/2配信のコンテンツに関するよくある質問](/help/assets/dynamic-media/http2faq.md)を参照してください。
+詳しくは、[HTTP/2 配信のコンテンツに関するよくある質問](/help/assets/dynamic-media/http2faq.md)を参照してください。
