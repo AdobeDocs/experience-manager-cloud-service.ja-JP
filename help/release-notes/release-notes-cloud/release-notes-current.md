@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 7f4b26fc7aca570fb1b1922a51ed77879c3b89b9
+source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '1996'
 ht-degree: 5%
 
 ---
@@ -54,19 +54,17 @@ ht-degree: 5%
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能強化により、ダウンロードを高速化できます。
+* [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能強化により、ダウンロードを高速化できます。 [アセットのダウンロード](/help/assets/download-assets-from-aem.md)を参照してください。
 
-* リンク共有オプションを使用してアセットをダウンロードする場合、レンディションをダウンロードするかどうかを選択できるようになりました。 以前は、すべてのアセットレンディションがダウンロードされていました。
-
-* 管理者は、一括アセット取り込みの後にアセットのソースを削除するように[!DNL Experience Manager]を設定できます。 [一括アセット取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
+* リンク共有オプションを使用してアセットをダウンロードする場合、レンディションをダウンロードするかどうかを選択できるようになりました。 以前は、すべてのアセットレンディションがダウンロードされていました。 [ダウンロードオプション](/help/assets/download-assets-from-aem.md)を参照してください。
 
 * ヘルスチェックを実行してアセットを一括で読み込む際に、Experience Managerにエラーの詳細な情報が表示されるようになりました。 [一括アセット取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
 
 * 一括読み込みツールを使用してアセットを読み込む場合、管理者は、読み込みが成功した後でソースファイルを削除するオプションが追加されました。 [一括アセット取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
 
-* メタデータスキーマを編集する際に、管理者がすばやく簡単に選択できる新しいルートパスセレクターフィールドを使用すると、設定時間を短縮できます。
+* 管理者は、メタデータスキーマを編集する際に、新しいルートパスセレクターフィールドを使用して、すばやく簡単に選択できます。 この機能強化により、メタデータの設定時間を短縮できます。
 
-* 多くのアセットのメタデータは、CSVファイルを使用して一括で読み込んだり、CSVファイルに書き出したりできます。 デフォルトの日付形式は`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`になりました。 ユーザーは、列ヘッダーを更新することで、別の形式を利用できます。 例えば、CSVファイルの列ヘッダーとして`Date`という単語ではなく`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`を追加します。
+* 多くのアセットのメタデータは、CSVファイルを使用して一括で読み込んだり、CSVファイルに書き出したりできます。 デフォルトの日付形式は`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`になりました。 ユーザーは、列ヘッダーを更新することで、別の形式を利用できます。 例えば、CSVファイルの列ヘッダーとして`Date`という単語ではなく`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`を追加します。 [メタデータのインポート](/help/assets/metadata-import-export.md)を参照してください。
 
 * 列表示でアセットを参照すると、各アセットの承認ステータスまたは却下ステータスが視覚的なインジケーターで表示されます。
 
