@@ -4,75 +4,73 @@ description: プロビジョニングプロセス — 概要
 source-git-commit: bb5a84c915e9b94bed021dacefd75b4e18fa9eb3
 workflow-type: tm+mt
 source-wordcount: '340'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
 
-# AEM as aCloud Service:オンボーディングとアクセス
+# AEM as a Cloud Service：オンボーディングとアクセス
 
-このページでは、プロビジョニングプロセスをCloud Serviceとして使用するためのセルフヘルプExperience Managerを示します。
+ここでは、Adobe Experience Manager as a Cloud Service のプロビジョニングプロセスに関するセルフヘルプリソースの一覧を示します。
 
-## AEM as aCloud Serviceプロビジョニングプロセスの概要
+## AEM as a Cloud Service プロビジョニングプロセスの概要
 
 ここでは、以下を重点的に扱った主要な記事を紹介します。
 
-* AEM as aCloud Serviceへのアクセス
-* Adobe Experience Manager as aCloud Serviceのオンボーディングおよびプロビジョニングプロセス
+* AEM as a Cloud Service へのアクセス
+* Adobe Experience Manager as a Cloud Service のオンボーディングとプロビジョニングプロセス
 * ヘルプとリソース
 
 
-### AEM as aCloud Serviceへのアクセス
+### AEM as a Cloud Service へのアクセス
 
-自動プロビジョニングが完了したら、次の手順に従います。
+自動プロビジョニングが完了すると、次のようになります。
 
-* アクセス権の付与 —Adobeは、AdobeIdentity Managementシステム(IMS)内に組織を作成します
-* 指定された管理者には、デフォルトで管理者権限が付与されます
-* 管理者は、Admin Consoleを使用して、追加のチームメンバーのユーザーとロールを追加できます
-* ユーザーがCloud Managerで権限の割り当てを決定するための、役割に基づく権限の確認
+* アクセス権が付与され、アドビは、Adobe Identity Management System（IMS）内に組織を作成する
+* 指定された管理者は、デフォルトで管理者権限を持つ
+* 管理者は、Admin Console を使用して、追加のチームメンバーにユーザーと役割を追加できる
+* 役割に基づいたユーザーの権限を確認し、Cloud Manager で権限の割り当てを決定する
 
 > ![processoverview.jpg](./assets/processOverview.jpg)
 
 
-詳しくは、[Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=en)のCloud ServiceとしてのExperience Managerのオンボーディングを参照してください。
+詳しくは、Experience Leagueue の [Experience Manager as a Cloud Service へのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ja)を参照してください。
 
 ### リソースとリンク
 
-・ [AEM as aCloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)のIMSサポート\
-・ [Cloud Managerのロールに基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=en#what-is-required)\
-• [Adobe Experience Manager as a Cloud Service へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=en#getting-access)
+• [AEM as a Cloud Service の IMS サポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)\
+• [Cloud Manager での役割ベースの権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=ja#what-is-required)\
+• [Adobe Experience Manager as a Cloud Service へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#getting-access)
 
 
-## Adobe Experience Manager as aCloud Serviceのオンボーディングプロセス
+## Adobe Experience Manager as a Cloud Service のオンボーディングプロセス
 
-### 1.発注トリガーの自動プロビジョニング。
+### 1. 購入注文によって自動プロビジョニングがトリガーされます。
 
-### 2.組織をAdobe Admin Consoleにオンボーディングする
+### 2. Adobe Admin Console への組織がオンボーディングされます。
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
-
-* システム管理者:
-   * AEMプログラムと環境のプロビジョニング
-   * 管理タスクのAdmin Consoleに移動します。
-   * ドメインを要求して各ドメインの所有権を確認
+* システム管理者：
+   * AEM プログラムと環境をプロビジョニングします。
+   * Admin Console に移動して管理タスクを実行します。
+   * 各ドメインの所有権を確認するドメインをリクエストします。
    * ユーザーディレクトリを設定します。
-   * IDP設定
-* AEM 管理者:
-   * ローカルグループ、権限、および権限を管理します。
+   * IDP を設定します。
+* AEM 管理者：
+   * ローカルグループ、許可および権限を管理します。
 
-### 3.ユーザーのオンボーディングとAdmin Consoleでのアクセスの管理
+### 3. Admin Console でユーザーをオンボーディングし、アクセスを管理します。
 
 >   ![processoverview3.jpg](./assets/processOverview3.jpg)
 
-ユーザーをオンボーディングする方法は、サイズと環境設定に応じて3つあります。
-* ユーザーの手動作成Admin Console
-* .csvファイルのアップロード
-* エンタープライズアクティブからのユーザーの同期
-ディレクトリ
+サイズと環境に応じて、3 つの方法でユーザーをオンボードします。
+* Admin Console から手動でユーザーを作成する
+* .csv ファイルをアップロードする
+* エンタープライズ Active Directory からユーザーを同期する
 
-### 4.管理者は、組織を設定し、環境へのユーザーとグループのアクセス権を付与します
+### 4. 管理者が組織を設定し、ユーザーとグループに環境へのアクセスを許可します。
 
 ## ヘルプとリソース
 
-* [初回ログイン - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html#getting-access)
-* [AEM as aCloud Serviceへのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#accessing)
+* [初回ログイン - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=ja#getting-access)
+* [AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja#accessing)
