@@ -1,58 +1,58 @@
 ---
-title: KPIへのアクセス
-description: KPIへのアクセス
+title: KPI へのアクセス
+description: KPI へのアクセス
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# 最も重要なものを測っているの？
+# 最も重要な指標を測定していますか？
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assesskpis"
->title="KPIの評価"
->abstract="Adobe Experience Managerのローンチを開始する前に、プロジェクトに関心を持つすべてのユーザーが、上位3つのKPIの概要とそれが重要な理由を把握する必要があります。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=en" text="KPIの整列"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=en" text="適切なチームの選択"
+>title="KPI の評価"
+>abstract="Adobe Experience Manager をローンチする前に、プロジェクトの関係者全員が、上位 3 つの主要業績評価指標（KPI）と、それが重要な理由を理解する必要があります。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ja" text="KPI の調整"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ja" text="適切なチームの選択"
 
-Adobe Experience Managerのローンチを開始する前に、プロジェクトに関心を持つすべてのユーザーが、上位3つのKPIの概要とそれが重要な理由を把握する必要があります。
+Adobe Experience Manager をローンチする前に、プロジェクトの関係者全員が、上位 3 つの主要業績評価指標（KPI）と、それが重要な理由を理解する必要があります。
 
-**適切なKPIを使用すると、Adobe Experience Managerからより多くの価値を引き出すことができます**
+**適切な KPI は、Adobe Experience Manager からより多くの価値を得るのに役立ちます。**
 
 
-2018年の調査で、IDCは、Adobe Experience Managerを使用する際に多くの大企業が見たビジネス価値を分析しました。 Experience Managerサイトを使用する組織は、平均して、デジタルエクスペリエンスチームの生産性を23%向上させ、小規模な編集変更をおこなうのに必要な時間を64%短縮し、月別のサイト訪問回数を10%増やしました。 Experience Managerアセットを使用する企業は、デジタルアセットチームの生産性を19%向上させ、新しいアセットの作成時間を47%短縮し、マーケティングキャンペーンの開始時間を20%短縮しました。
+2018 年の調査で、IDC は、複数の大企業が Adobe Experience Manager の使用によって得られたビジネス価値を分析しました。Experience Manager Sites を使用する組織では、平均してデジタルエクスペリエンスチームの生産性が 23％向上、小さな編集上の変更に要する時間が 64％短縮、月別のサイト訪問回数が 10％増加しました。Experience Manager Assets を使用する会社では、デジタルアセットチームの生産性が 19％向上、新しいアセットの作成時間が 47％短縮、マーケティングキャンペーンの開始時間が 20％短縮しました。
 
-同じ劇的な効果を実現するには、組織がExperience Manager実装の明確な目標を持っている必要があります。 そして、誰もが目標に集中するのに役立つKPIが必要です。
+同じ劇的な効果を実現するため、組織では、Experience Manager の実装に関する明確な目標を持つ必要があります。そして、全員がその目標に集中できるように KPI を設ける必要があります。
 
-## KPIへのアクセス
+## KPI へのアクセス
 
-KPIを評価する際に、以下を確認します。
+KPI の評価では、次の点を確認します。
 
-1. KPIは、具体的にはソリューション(Experience Manager)に関連しています。
-1. KPIは、エグゼクティブチームが極めて重要と判断する目標と密接に結び付いています。
-1. この目標は、少なくとも1人のCレベルのエグゼクティブが支持するビジネス目標を直接サポートします。
-1. 現在の状況と、Experience Managerを起動した後に表示される結果を比較する必要があるベースラインデータがあります。
-1. KPIは、一定の間隔で測定可能なものを追跡します。
+1. KPI が、具体的にはソリューション（Experience Manager）に関連している。
+1. KPI が、エグゼクティブチームが極めて重要と認める目標と密接に結びつけられている。
+1. この目標は、少なくとも 1 人の経営幹部が設定したビジネス目標を直接サポートしている。
+1. 現在の状況と Experience Manager の起動後に表示される結果を比較するために必要なベースラインデータがある。
+1. KPI は、定期的に、確実に測定可能な項目を追跡していする。
 
-適切なKPIを持っていることを確認したら、各KPIに関するレポートを作成する方法とタイミングを、関連する関係者に知らせる必要があります。
+適切な KPI を設定していることを確認したら、関連する利害関係者に各 KPI を報告する方法と時期を把握する必要があります。
 
-レポートプロセスを定義する際には、次の質問を考慮します。
+レポートプロセスを定義する際は、次の質問を考慮します。
 
-1. このKPIレポートのオーディエンスは誰ですか？ 各KPIについて、エグゼクティブスポンサー（自分とその指標に対して責任を負う他のチームを含む）を特定し、通常のレポートを受け取る必要のある人のリストを広げていることを確認します。
-1. このKPIに関するレポートの頻度
-1. このKPIはどのように追跡されますか？ 誰がデータを取り込むのか。 そのユーザーまたはチームはどのデータソースを使用しますか。 そのプロセスを容易にするために今できることはありますか？
-1. レポートの形式は何になりますか。
-1. レポートの配信方法
+1. この KPI レポートのオーディエンスは誰ですか？各 KPI について、エグゼクティブスポンサー（その指標の責任者と残りのチームメンバー）を特定し、さらに、通常の報告を受ける人の幅広いリストを確認してください。
+1. この KPI に関するレポートの頻度
+1. この KPI はどのように追跡されますか？データを引き出すのは誰ですか？データを引き出したユーザーまたはチームはどのデータソースを使用しますか。そのプロセスを容易にするために今できることはありますか？
+1. レポートの形式は何ですか。
+1. レポートはどのように配信されますか。
 
-Experience Managerを立ち上げた後、強力なKPIのセットによって、適切な状況にあるかどうかを把握できます。 KPIの1つを満たしていない場合は、チームでのExperience Managerの使用方法を調整する必要があります。 KPI目標の1つをすぐに超えると、それはお祝いになります。しかし、ターゲットを再調整して、さらに良い結果を得たいと思うでしょう。
+Experience Manager のローンチ後、強力な KPI のセットを用いることで、自分たちが適切な状況にあるかどうかをすぐに把握できます。KPI のいずれか満たしていない場合は、チームによる Experience Manager の使用方法を調整する必要があります。KPI ターゲットの 1 つをすぐに超えてしまう場合は、めでたい事ではありますが、より良い結果を得られるよう、ターゲットを調整する必要があります。
 
 >[!TIP]
 >
-> KPIに関する追加のヘルプが必要な場合は、[Adobeコンサルティングサービス](https://www.adobe.com/jp/experience-cloud/consulting-services.html)または実装パートナーにお問い合わせください。
+> KPI に関する追加のサポートが必要な場合は、[Adobe コンサルティングサービス](https://www.adobe.com/jp/experience-cloud/consulting-services.html)または実装パートナーにお問い合わせください。
 
-Adobe Experience Managerを使用した大手企業の結果のタイプの詳細な例については、IDCのレポートをダウンロードしてください。
-* [Adobe Experience Manager Sitesのビジネス価値](https://www.adobe.com/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
-* [Adobe Experience Manager Assetsのビジネス価値](https://wwwimages2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
+Adobe Experience Manager を使用した主要企業の業績のタイプの他の例については、IDC のレポートをダウンロードしてください。
+* [Adobe Experience Manager Sites の事業価値](https://www.adobe.com/content/dam/acom/en/modal-offers/idc-aem-sites-q218/pdfs/22037555.en.aem.whitepaper.IDCBusinessValueAEMSites.pdf)
+* [Adobe Experience Manager Assets の事業価値](https://www.images2.adobe.com/content/dam/acom/en/modal-offers/idc-aem-Assets-q218/pdfs/220380622.en.aem.whitepaper.IDCBusinessValueAEMAssets.pdf)
