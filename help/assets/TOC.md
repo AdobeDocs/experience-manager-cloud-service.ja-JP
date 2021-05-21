@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 98%
    + [アセットのダウンロード](download-assets-from-aem.md)
    + [編集するアセットのチェックアウトとチェックイン](check-out-and-submit-assets.md)
    + [アセットのデジタル著作権管理](drm.md)
-   + [アセットへの透かしの適用 ](watermark-assets.md)
+   + [アセットへの透かしの適用](watermark-assets.md)
 + [!DNL Assets] の設定、管理、拡張 {#admin}
    + [開発者向けドキュメントと API リファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
@@ -65,7 +65,7 @@ ht-degree: 98%
 + アセットの共有と配布 {#brand-portal}
    + [ [!DNL Assets]  での [!DNL Brand Portal]の設定](configure-aem-assets-with-brand-portal.md)
    + [ [!DNL Brand Portal] へのアセットの公開](publish-to-brand-portal.md)
-   + [からにアセットを公 [!DNL Brand Portal] 開する [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
+   + [アセットを  [!DNL Brand Portal]  から [!DNL Assets] に公開する](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja)
 + コンテンツフラグメント {#content-fragments}
    + [コンテンツフラグメントの操作](content-fragments/content-fragments.md)
    + [コンテンツフラグメントと GraphQL のヘッドレス配信](content-fragments/content-fragments-graphql.md)
@@ -85,7 +85,7 @@ ht-degree: 98%
    + [Dynamic Media の操作](dynamic-media/dynamic-media.md)
    + [Dynamic Media の設定](dynamic-media/config-dm.md)
    + [Dynamic Media のトラブルシューティング](dynamic-media/troubleshoot-dm.md)
-   + [Dynamic Media のアクセシビリティ ](dynamic-media/accessibility-dm.md)
+   + [Dynamic Media のアクセシビリティ](dynamic-media/accessibility-dm.md)
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
@@ -124,4 +124,4 @@ ht-degree: 98%
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [コンテンツの HTTP/2 配信の FAQ](dynamic-media/http2faq.md)
    + [Flash ビューアの提供終了](dynamic-media/flash-viewers-eol.md)
-   + [DHTMLビューアのサポート終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
+   + [DHTML ビューアの提供終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
