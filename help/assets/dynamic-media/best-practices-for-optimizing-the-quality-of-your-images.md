@@ -8,7 +8,7 @@ exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
 workflow-type: tm+mt
 source-wordcount: '1478'
-ht-degree: 78%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Managerには、画像とレンダリング結果を調整お�
 
 * JPG または PNG は、管理しやすいサイズと重さで良い画質の画像を配信するための最適な選択肢です。
 * URL に format コマンドが含まれていない場合、Dynamic Media 画像配信のデフォルトは JPG の配信になります。
-* JPG は 10:1 の比率で圧縮をおこない、通常は比較的小さい画像ファイルサイズになります。PNGは、画像に白の背景が含まれる場合を除き、約2:1の比率で圧縮されます。 ただし、通常は PNG ファイルのサイズは JPG ファイルよりも大きくなります。
+* JPG は 10:1 の比率で圧縮をおこない、通常は比較的小さい画像ファイルサイズになります。PNG は約 2:1 の比率で圧縮されます（画像に白の背景が含まれている場合を除く）。ただし、通常は PNG ファイルのサイズは JPG ファイルよりも大きくなります。
 * JPG では非可逆圧縮が使用されます。非可逆圧縮では、圧縮中に画素（ピクセル）が失われます。これに対して、PNG では可逆圧縮が使用されます。
 * JPG では多くの場合、写真画像が、エッジやコントラストがシャープな合成画像よりも高い忠実度で圧縮されます。
 * 画像に透明部が含まれている場合は PNG を使用します。JPG では透明化がサポートされていません。
@@ -44,9 +44,9 @@ Adobe Experience Managerには、画像とレンダリング結果を調整お�
 
 * ベストプラクティスに関するホワイトペーパー[Dynamic Media Classicの画質とシャープのベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)もExperience Managerに適用されます。
 
-* [Experience Managerでの画像シャープニングの使用 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)を視聴します。
+* [Experience Managerでの画像シャープニングの使用 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=ja#dynamic-media)を視聴します。
 
-Experience Managerを使用すると、取り込み時、配信時またはその両方で画像をシャープにできます。 ただし、通常は、一方の方法のみを使用して画像をシャープにするのが最適です。両方を使用することはできません。 一般に、配信時に URL 上で画像をシャープにすることで、最適な結果が得られます。
+Experience Managerを使用すると、取り込み時、配信時またはその両方で画像をシャープにできます。 ただし、通常は、両方の方法ではなくどちらか一方のみを使用して画像をシャープにすることをお勧めします。一般に、配信時に URL 上で画像をシャープにすることで、最適な結果が得られます。
 
 画像のシャープニングでは、次の 2 つの方法を使用できます。
 
@@ -118,8 +118,8 @@ JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用し�
 
 シャープニングの結果でも満足できない場合は、radius の小数点以下を増やします。小数点以下を増やすごとに、amount を 1.75 からやり直し、4 まで少しずつ増やします。求めている結果になるまで、このプロセスを繰り返します。これらの値は、制作スタジオで実際に検証した手法ではありますが、初期値として別の値を使用し、他の戦略に従っても問題ありません。結果が満足できるものであるかは主観的な問題ですので、構造化された実験をおこなうことが重要です。
 
-実験を行う際に、ワークフローを最適化するには、次の一般的な推奨事項が役立ちます。
+実験する際には、次の一般的な推奨事項がワークフローの最適化に役に立ちます。
 
 * 様々なパラメーターを直接 URL 上でリアルタイムにテストします。
-* ベストプラクティスとしては、Dynamic Media 画像サービングコマンドを画像プリセット内にまとめることができます。画像プリセットは基本的に、`$thumb_low$` や `&product_high$` といったカスタムプリセット名が付けられた URL コマンドマクロです。URLパス内のカスタムプリセット名は、これらのプリセットを呼び出します。 この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
-* Experience Managerには、取り込み時に画像をシャープに適用するなど、画質を調整するより高度な方法も用意されています。 レンダリング結果を調整し最適化するために、[Adobeのコンサルティングサービス](https://business.adobe.com/customers/consulting-services/main.html)は、カスタマイズされたインサイトとベストプラクティスを提供するのに役立ちます。
+* ベストプラクティスとしては、Dynamic Media 画像サービングコマンドを画像プリセット内にまとめることができます。画像プリセットは基本的に、`$thumb_low$` や `&product_high$` といったカスタムプリセット名が付けられた URL コマンドマクロです。URL パス内にカスタムプリセット名を指定すると、これらのプリセットが呼び出されます。この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
+* Adobe Experience Manager では、取り込み時に画像のシャープニングを適用するなど、高度な画質調整機能も提供しています。レンダリング結果を調整し最適化するために、[Adobeのコンサルティングサービス](https://business.adobe.com/customers/consulting-services/main.html)は、カスタマイズされたインサイトとベストプラクティスを提供するのに役立ちます。
