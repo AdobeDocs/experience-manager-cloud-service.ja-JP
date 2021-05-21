@@ -5,7 +5,7 @@ exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->ローンチ内でページを移動することはできません。 この操作を試みると、次の警告メッセージがトリガーされます：
+>ローンチ内でページを移動することはできません。この操作を試みると、次の警告メッセージが表示されます：
 >
->* 警告：このページはローンチのソースです。 ページの移動は許可されていません。
+>* 警告：このページはローンチのソースです。ページの移動は許可されません。
 
 
 ### ライブコピーへのローンチページサブジェクトの編集 {#editing-launch-pages-subject-to-a-live-copy}
 
-ローンチが[ライブコピー](/help/sites-cloud/administering/msm/overview.md)に基づいている場合は、次のようになります。
+ローンチが[ライブコピー](/help/sites-cloud/administering/msm/overview.md)に基づく場合は、次のようになります。
 
 * コンポーネント（コンテンツやプロパティ）を編集するときにロック記号（小さな鍵アイコン）が表示されます。
 * 「**ライブコピー**」タブが&#x200B;**ページのプロパティ**&#x200B;に表示されます。
@@ -66,7 +66,7 @@ ht-degree: 91%
 1. 次のいずれかの方法を使用して、ローンチにアクセスして選択します。
    * [ローンチコンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)：
       * 「**編集**」を選択します。
-   * [「参照」（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)：使用可能なアクションを表示します。
+   * [「参照」（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)：使用可能なアクションを表示します。
       * 「**ローンチを編集**」を選択します。
       * ソースページが表示されます。
 1. 必要な変更を加え、「**保存**」で確定します。
@@ -82,7 +82,7 @@ ht-degree: 91%
 1. 次のいずれかの方法を使用して、ローンチにアクセスして選択します。
    * [ローンチコンソール](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)：
       * 「**プロパティ**」を選択します。
-   * [「参照」（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)：使用可能なアクションを表示します。
+   * [「参照」（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)：使用可能なアクションを表示します。
       * 「**プロパティを編集**」を選択します。
       * 詳細が表示されます。
 1. 必要な変更を加え、「**保存**」で確定します。
@@ -90,6 +90,6 @@ ht-degree: 91%
 
 ## ページのローンチステータスの確認  {#discovering-the-launch-status-of-a-page}
 
-「参照」タブから特定のローンチを選択すると、ステータスが表示されます（[「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)を参照）。
+「参照」タブから特定のローンチを選択すると、ステータスが表示されます（[「参照」のローンチ（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)を参照）。
 
 ![ローンチステータスの確認](/help/sites-cloud/authoring/assets/launches-status.png)
