@@ -8,7 +8,7 @@ exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -35,11 +35,11 @@ Media Libraryは、[!DNL Adobe Experience Manager Sites]ライセンスを補完
 
 Media LibraryがSitesの一部としてインストールされます。 Sitesのライセンスとインストール以外に、追加のライセンスやパッケージは必要ありません。
 
-## [!DNL Assets] Media Library  {#assets-and-media-library}
+## [!DNL Assets] と  Media Library {#assets-and-media-library}
 
 Experience Managerアセットは、エンタープライズグレードのDAM機能を提供します。 アセット機能は、1つのパッケージに[!DNL Experience Manager]と共に提供されます。 ただし、Assetsライセンスを購入していないユーザーは、高度なDAM機能を使用する権利はありません。 Assetsライセンスがない場合、[Media Library機能](#use-media-library)のみ使用できます。
 
-ライセンスを所有していない[!DNL Assets]機能を意図しない使用を防ぐには、[!DNL Assets]固有のワークフロー、コンポーネント、分類、オプションおよび[!DNL Assets]管理を[!DNL Experience Manager]からすべて削除します。 これにより、ライセンスを所有していない[!DNL Assets]機能をユーザーが誤って使用するのを防ぎます。
+ライセンスを所有していない[!DNL Assets]機能を意図しない使用を防ぐには、[!DNL Assets]固有のワークフロー、コンポーネント、分類、オプションおよび[!DNL Assets]管理を[!DNL Experience Manager]からすべて削除します。 これによって、ユーザーがライセンスを所持していない [!DNL Assets] の機能を誤って使用することを防ぐことができます。
 
 ## Media Library {#use-media-library}を使用
 
@@ -92,5 +92,5 @@ Media Library機能を使用するには、デフォルトの[!DNL Experience Ma
 >[!MORELIKETHIS]
 >
 >* [のDAM機能 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=ja)
->* [[!DNL Experience Manager] as a [!DNL Cloud Service] 製品説明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] as a [!DNL Cloud Service] 製品説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
 
