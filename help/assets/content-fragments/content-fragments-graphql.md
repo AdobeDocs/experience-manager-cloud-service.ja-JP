@@ -7,7 +7,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -21,10 +21,10 @@ Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM Grap
 
 >[!NOTE]
 >
->GraphQLは、現在、Adobe Experience Manager(AEM)では次の2つのシナリオでCloud Serviceとして使用されています。
+>GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
->* [AEM Commerceは、GraphQLを介してコマースプラットフォームからデータを使用します](/help/commerce-cloud/integrating/magento.md)。
->* [AEMコンテンツフラグメントは、AEM GraphQL API（標準のGraphQLに基づくカスタマイズされた実装）と連携して、アプリケーションで使用するために構造化されたコンテンツを配信します](/help/assets/content-fragments/graphql-api-content-fragments.md)。
+>* [AEM コマースは、GraphQL 経由でコマースプラットフォームのデータを使用します](/help/commerce-cloud/integrating/magento.md)。
+>* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/assets/content-fragments/graphql-api-content-fragments.md)。
 
 
 ## ヘッドレス CMS {#headless-cms}
