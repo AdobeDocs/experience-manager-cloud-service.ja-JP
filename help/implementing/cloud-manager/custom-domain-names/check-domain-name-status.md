@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '343'
-ht-degree: 71%
+ht-degree: 92%
 
 ---
 
@@ -41,9 +41,9 @@ TXT の検証に成功しました。ただし、CDN のデプロイメントは
 カスタムドメイン名の削除に失敗しました。再試行する必要があります。詳しくは、「[カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)」を参照してください。
 
 
-## IP許可リストの既存のCDN設定{#pre-existing-cdn}
+## IP 許可リストの既存の CDN 設定 {#pre-existing-cdn}
 
-IP許可リスト、SSL証明書またはカスタムドメイン名の既存のCDN設定を含む環境を使用している場合、**IP許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページで次のメッセージが表示されます。 顧客がUIを介して既存のすべての環境設定を完全に移行すると、UIに表示されるメッセージが消えます。メッセージが消えるまでに1 ～ 2営業日かかる場合があります。
+IP 許可リスト、SSL 証明書、カスタムドメイン名のいずれかについて CDN 設定が既に存在している環境のユーザーの場合、**IP 許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページに以下のメッセージが表示されます。UI に表示されるメッセージは、顧客が UI から既存の環境設定をすべて移行した後に消えます。メッセージが消えるまでに 1 ～ 2 営業日かかる場合があります。
 
 >[!NOTE]
 >既存の設定を表示および管理するには、UIを使用して追加する必要があります。 詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
