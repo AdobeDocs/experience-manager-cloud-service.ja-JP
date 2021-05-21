@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] ガイド'
-description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] セルフヘルプリソースおよびドキュメントリンク'
+description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のセルフヘルプリソースとドキュメントリンク'
 feature: アセット管理
 role: Business Practitioner,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 47%
+ht-degree: 82%
 
 ---
 
@@ -15,30 +15,30 @@ ht-degree: 47%
 
 [!DNL Experience Manager Assets]では、次のセルフヘルプリソースを[!DNL Cloud Service]として使用できます。
 
-## 主な[!DNL Assets]記事{#key-articles}
+## [!DNL Assets] に関する主要な記事 {#key-articles}
 
 * [概要と新機能](overview.md)
 * [主要な変更点](/help/assets/assets-cloud-changes.md)
-* [ [!DNL Assets] as a [!DNL Cloud Service]のアーキテクチャ](architecture.md)
+* [ [!DNL Assets] AEM as a [!DNL Cloud Service] のアーキテクチャ](architecture.md)
 * [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
 
-## [!DNL Experience Manager] ガイド  {#aem-guides}
+## [!DNL Experience Manager] ガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [[!DNL Experience Manager] as a [!DNL Cloud Service] ホーム](/help/landing/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として完全にドキュメント化。 |
-| [概要](/help/overview/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として紹介する概要と用語集。 |
+| [[!DNL Experience Manager] as a [!DNL Cloud Service] ホーム](/help/landing/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の完全なドキュメント。 |
+| [概要](/help/overview/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の概要と用語集。 |
 | [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止される機能および削除された機能、既知の問題について説明します。 |
-| [中心概念](/help/core-concepts/home.md) | このガイドでは、新しいサービスのアーキテクチャなど、[!DNL Experience Manager]を[!DNL Cloud Service]として扱う中心概念の紹介を提供します。 |
-| [セキュリティユーザーガイド](/help/security/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として扱う際のセキュリティに関する重要なトピックについて説明します。 |
-| [オンボーディング](/help/onboarding/home.md) | [!DNL Experience Manager]を[!DNL Cloud Service]として使い始める — 重要なデータにアクセスし、保護します。 |
-| [Sites ユーザーガイド](/help/sites-cloud/home.md) | [!DNL Experience Manager Sites]を[!DNL Cloud Service]として使用し、管理する方法を理解します。 |
+| [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の中心概念について紹介します。 |
+| [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
+| [オンボーディング](/help/onboarding/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の基本を学ぶ - 重要なデータへのアクセスと保護について説明します。 |
+| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a [!DNL Cloud Service] を使用したオーサリングおよび管理方法について説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | AEMの強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
 | [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) | AEMの強力で柔軟なヘッドレス機能を通じて、このガイド付きジャーニーを調べ、最初のヘッドレスプロジェクトに備えます。 |
-| [Adobe  [!DNL Experience Manager] Toas a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) | [!DNL Experience Manager]への移行プロセスを[!DNL Cloud Service]として理解します。 |
-| [コネクタユーザーガイド](/help/connectors/home.md) | [!DNL Cloud Service]として[!DNL Experience Manager]にコネクタを統合する方法を説明します。 |
-| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、[!DNL Experience Manager]の[!DNL Cloud Service]としてのバックエンド運用について説明します。 |
-| [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager] as a [!DNL Cloud Service] の Commerce Integration Framework について説明します。 |
+| [Adobe  [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) への移行 | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] への移行プロセスについて説明します。 |
+| [コネクタユーザーガイド](/help/connectors/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] にコネクタを統合する方法を説明します。 |
+| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のバックエンド運用について説明します。 |
+| [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のコマース統合フレームワークについて説明します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
