@@ -5,7 +5,7 @@ exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager ページはレスポンシブレイアウトに基づ�
 
 >[!NOTE]
 >
->既存の標準サイトに基づいたモバイルサイトを作成するには、標準サイトのライブコピーを作成します。[ライブコピーの作成](/help/sites-cloud/administering/msm/creating-live-copies.md)を参照してください。
+>既存の標準サイトに基づいたモバイルサイトを作成するには、標準サイトのライブコピーを作成します。詳しくは、[ライブコピーの作成](/help/sites-cloud/administering/msm/creating-live-copies.md)を参照してください。
 >
 >AEM 開発者は、新しいデバイスグループを作成できます。「デバイスグループフィルターの作成」を参照してください。
 
@@ -31,7 +31,7 @@ Adobe Experience Manager ページはレスポンシブレイアウトに基づ�
 
 1. グローバルナビゲーションから&#x200B;**サイト**&#x200B;コンソールを開きます。
 1. コンテンツページを編集します。
-1. ページ上部のエミュレーターアイコンをクリックして、目的のエミュレーターに切り替えます。****
+1. ページ上部のエミュレーターアイコンをクリックして、目的のエミュレーターに切り替えます&#x200B;**。**
 
    ![エミュレーターアイコン](/help/sites-cloud/authoring/assets/emulator.png)
 
