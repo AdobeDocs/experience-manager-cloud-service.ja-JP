@@ -5,7 +5,7 @@ exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 88%
 ## セキュリティに関する主要な記事 {#key-articles}
 
 * [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)
-* [AEM as a Cloud Service の IMS サポート ](ims-support.md)
-* [AEM as aCloud Serviceと同じサイトcookieのサポート](same-site-cookie-support.md)
+* [AEM as a Cloud Service の IMS サポート](ims-support.md)
+* [AEM as a Cloud Service の サイト Cookie サポートポリシー](same-site-cookie-support.md)
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
