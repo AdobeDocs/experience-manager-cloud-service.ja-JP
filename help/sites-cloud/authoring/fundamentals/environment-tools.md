@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2152'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ## サイトの管理 {#managing-your-site}
 
-**サイト**&#x200B;コンソールでは、ヘッダーバー、ツールバー、アクションアイコン（選択されたリソースに対して適用）、パンくず、選択時のセカンダリレール（例：タイムラインや参照）を使用して Web サイト内を移動および管理できます。
+**Sites** コンソールでは、ヘッダーバー、ツールバー、アクションアイコン（選択されたリソースに対して適用）、パンくず、選択時のセカンダリレール（例：タイムラインや参照）を使用して Web サイト内を移動および管理できます。
 
 例えば、列表示では次のようになります。
 
@@ -190,7 +190,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
    ![コンテンツツリー編集ボタン](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
-* [ライブコピー](/help/sites-cloud/administering/msm/overview.md)の一部であるページ。コンポーネントは別のページから継承されます。
+* または、](/help/sites-cloud/administering/msm/overview.md)ライブコピー[の一部を構成するページが開かれます。ここではコンポーネントが別のページから継承されます。
 
 >[!NOTE]
 >
@@ -224,13 +224,13 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 * **被リンク**（当該ページを参照するページのリストと、特定のリンクを選択したときにそれらのページのいずれかを&#x200B;**編集**&#x200B;できる直接アクセスを提供）
 * **参照**&#x200B;コンポーネントを使用した借りたコンテンツおよび貸したコンテンツのインスタンス（ここから参照元／参照先ページに移動可能）
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md)（関連するローンチへのアクセスを提供）
-* [](/help/sites-cloud/administering/msm/overview.md)ライブコピー（選択したリソースに基づくすべてのライブコピーのパスを表示）
-* [ブループリント](/help/sites-cloud/administering/msm/best-practices.md)（詳細と様々なアクションを提供）
+* [ライブコピー](/help/sites-cloud/administering/msm/overview.md)（選択したリソースに基づくすべてのライブコピーのパスを表示）
+* [ブループリント](/help/sites-cloud/administering/msm/best-practices.md)（詳細と各種アクションを提供）
 * [言語コピー](/help/sites-cloud/administering/translation/managing-projects.md#creating-translation-projects-using-the-references-panel)（詳細と各種アクションを提供）
 
 ## イベント - タイムライン {#events-timeline}
 
-該当するリソース（例：**サイト**&#x200B;コンソールからのページ、**アセット**&#x200B;コンソールからのアセット）では、[タイムラインを使用して、選択した項目に対する最近のアクティビティを表示できます](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)。
+該当するリソース（例：**Sites** コンソールからのページ、**Assets** コンソールからのアセット）では、[タイムラインを使用して、選択した項目に対する最近のアクティビティを表示できます](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)。
 
 必要なコンソールを開いたら、必要なリソースに移動し、次を使用して「**タイムライン**」を開きます。
 
@@ -307,7 +307,7 @@ AEM のオーサリング環境は、コンテンツを編成および編集す�
 
 ### パスブラウザー {#path-browser}
 
-パスブラウザーは、サイトコンソールの[列表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)のように整理されており、リソースをより詳細に選択できます。
+パスブラウザーは、Sites コンソールの[列表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view)のように整理されており、リソースをより詳細に選択できます。
 
 ![パスブラウザー](/help/sites-cloud/authoring/assets/path-browser.png)
 
