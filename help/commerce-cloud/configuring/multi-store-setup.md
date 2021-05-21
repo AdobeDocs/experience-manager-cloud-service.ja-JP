@@ -1,7 +1,7 @@
 ---
 title: コマースマルチストアの設定
 description: 複数のストア表示を Magento から AEM にマッピングする方法を説明します。これにより、マルチテナントおよび多言語のユースケースをプロジェクトでサポートできます。
-sub-product: Commerce
+sub-product: コマース
 version: cloud-service
 doc-type: technical-video
 activity: setup
@@ -13,7 +13,7 @@ exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30
 source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -62,4 +62,4 @@ AEM サイトと AEM CIF コアコンポーネントを専用のストア表示�
 * [Magento Web サイト、ストア、表示](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF コアコンポーネント - マルチストア／サイト設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [マルチサイトマネージャの使用](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
-* [コンテンツの再利用：マルチサイトマネージャーとライブコピー](/help/sites-cloud/administering/msm/overview.md)
+* [コンテンツの再利用：マルチサイトマネージャとライブコピー](/help/sites-cloud/administering/msm/overview.md)
