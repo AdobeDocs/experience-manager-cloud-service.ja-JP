@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: a902fda5b5ecaa438c690082f65ed9f9cba9a1ee
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 88%
       + [IP 許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [Cloud Managerに関するFAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+   + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
@@ -127,7 +127,7 @@ ht-degree: 88%
       + [SPA エディターの概要](developing/hybrid/editor-overview.md)
       + [SPA ブループリント](developing/hybrid/blueprint.md)
       + [SPA ページコンポーネント](developing/hybrid/page-component.md)
-      + [コンポーネントマッピングの動的モデル ](developing/hybrid/model-to-component-mapping.md)
+      + [コンポーネントマッピングの動的モデル](developing/hybrid/model-to-component-mapping.md)
       + [モデルルーティング](developing/hybrid/routing.md)
       + [RemotePage コンポーネント](developing/hybrid/remote-page.md)
       + [AEM 内での外部 SPA の編集](developing/hybrid/editing-external-spa.md)
@@ -169,7 +169,7 @@ ht-degree: 88%
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
    + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
-+ パーソナライゼーション {#personalization}
++ パーソナライズ機能 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
    + [ContextHub の設定](developing/personalization/configuring-contexthub.md)
    + [ページへの ContextHub の追加](developing/personalization/adding-contexthub.md)
