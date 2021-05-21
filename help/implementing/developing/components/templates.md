@@ -488,6 +488,7 @@ GitHub のコード
    * `jcr:content` ノードの status プロパティを設定する。
 
       * 例：
+
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * プロパティの定義
@@ -500,6 +501,7 @@ GitHub のコード
 
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
+
       `cq:allowedTemplates` 
 を 
 必要なブランチの `jcr:content` ノードに設定します。
@@ -581,12 +583,10 @@ GitHub のコード
 >したがって、アドビでは、次の項目を定義して、単純に開始することをお勧めします。
 >
 >* プロパティは `cq:allowedTemplates` のみ
-   >
-   >
-* サイトのルートにのみ
 >
+>* サイトのルートにのみ
 >
-例については、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)のコンテンツ `/content/wknd/jcr:content` を参照してください。
+>例については、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)のコンテンツ `/content/wknd/jcr:content` を参照してください。
 >
 >プロパティ `allowedPaths`、`allowedParents`、`allowedChildren` をテンプレートに配置して、より高度なルールを定義することもできます。ただし、可能な場合、許可されるテンプレートをさらに制限する必要がある場合は、サイトのサブセクションでさらに `cq:allowedTemplates` プロパティを定義する方が&#x200B;*はるかに*&#x200B;簡単です。
 >
