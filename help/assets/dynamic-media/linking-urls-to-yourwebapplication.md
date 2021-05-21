@@ -6,7 +6,7 @@ exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 68%
+ht-degree: 85%
 
 ---
 
@@ -20,7 +20,7 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 
 >[!NOTE]
 >
->URL文字列は、アセットの動的レンディションでのみ使用できます。現在、DAMに存在し、Dynamic Mediaサーバーに存在しない静的アセットに対しては使用できません。静的なレンディションには「URL」ボタンが表示されません。
+>URL 文字列は、アセットの動的レンディションでのみ使用できます。現時点では、Dynamic Media サーバーではなく DAM に存在する静的アセットには URL 文字列を使用できません。静的なレンディションに対しては「URL」ボタンが表示されません。
 
 [Web ページへのビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
 
@@ -62,7 +62,7 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
    * 画像を選択した場合は、ドロップダウンメニューで「**[!UICONTROL レンディション]**」をタップします。
 
-      「**[!UICONTROL 動的]**」ヘッダーの下にあるプリセット名をタップすると、右側のフレームにレンディションが表示されます。必要に応じて、レンディションリストをスクロールし、「動的」見出しを表示します。
+      「**[!UICONTROL 動的]**」ヘッダーの下にあるプリセット名をタップすると、右側のフレームにレンディションが表示されます。「動的」ヘッダーを表示するには、必要に応じて、レンディションリストをスクロールします。
 
       左側のレールの下部にある「**[!UICONTROL URL]**」をタップします。
 
@@ -76,13 +76,13 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. アセットをプレビューするか、Webコンテンツページに追加するには、「 」を選択してWebブラウザーにテキストをコピーします。
+1. アセットをプレビューする場合やアセットを Web コンテンツページに追加する場合は、テキストを選択して Web ブラウザーにコピーします。
 
    URL ウィンドウを閉じるには、「**[!UICONTROL X]**」をタップするか、「**[!UICONTROL 閉じる]**」をタップします。
 
 ## 静的アセットの URL の取得 {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Mediaでは、静的アセット（画像やビデオ以外の他のアセット）の配信をサポートしています。 配信がサポートされる静的アセットの形式は以下のとおりです。
+Dynamic Media では静的アセットの配信をサポートしています。静的アセットとは、画像やビデオに留まらないその他のアセットです。配信がサポートされる静的アセットの形式は以下のとおりです。
 
 * 3D ファイル
 * アニメーション GIF
@@ -120,9 +120,9 @@ Dynamic Mediaでは、静的アセット（画像やビデオ以外の他のア�
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
 1. 「**[!UICONTROL 利用可能な設定]**」の下で、必要な設定をタップします。
 
-1. **[!UICONTROL Dynamic Media クラウドの設定]**&#x200B;ページの「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーしたURLパスは後の手順で必要になります。
+1. **[!UICONTROL Dynamic Media クラウドの設定]**&#x200B;ページの「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーした URL パスは後の手順で必要になります。
 
-   例えば、URLパスは次のようになります。
+   例えば、次のような URL パスです。
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
@@ -135,13 +135,13 @@ Dynamic Mediaでは、静的アセット（画像やビデオ以外の他のア�
 1. ページの左上隅付近で、「**[!UICONTROL Cloud Services]**」をタップし、Experience Managerアイコンをタップして、**[!UICONTROL 一般]**/**[!UICONTROL CRXDE Lite]**&#x200B;に移動します。
 1. JCR(Java™ Content Repository)からビデオレンディションパス全体をコピーします。
 
-   例えば、ビデオのレンディションパスは次のようになります。
+   例えば、ビデオのレンディションパスは次のようなものです。
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
    (上記のパスは説明の目的でのみ使用します。コピーする実際のパスではありません)。
 
-1. 完全なURLパスを作成するには、コピーした情報を次の順序で並べます。
+1. 完全な URL パスを作成するには、コピーした情報を次の順序で並べます。
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -149,16 +149,16 @@ Dynamic Mediaでは、静的アセット（画像やビデオ以外の他のア�
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   このパスは、公開されたビデオレンディションの完全なビデオURLです。
+   このパスは、公開されたビデオレンディションの完全なビデオ URL です。
 
-## アダプティブストリーミング(HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}のビデオURLの取得
+## アダプティブストリーミング（HLS）用のビデオ URL の取得 {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Experience Managerで、**[!UICONTROL ツール]** / **[!UICONTROL デプロイメント]** / **[!UICONTROL Cloud]** / **[!UICONTROL Cloud Services]**&#x200B;に移動します。
 1. **[!UICONTROL Cloud Services]** ページで、「**[!UICONTROL Dynamic Media Cloud Services]**」見出しまでスクロールダウンして、「**[!UICONTROL 設定を表示]**」をタップします。
 1. 「**[!UICONTROL 利用可能な設定]**」の下で、必要な設定をタップします。
 1. **[!UICONTROL Dynamic Media Cloud Services を設定]**&#x200B;ページで、以下の作業をおこないます。
 
-   * 「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーしたURLパスは後の手順で必要になります。 例えば、URLパスは次のようになります。
+   * 「**[!UICONTROL ビデオサービスの URL]**」の下で、URL パス全体をコピーします。コピーした URL パスは後の手順で必要になります。例えば、次のような URL パスです。
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
@@ -188,7 +188,7 @@ Dynamic Mediaでは、静的アセット（画像やビデオ以外の他のア�
     </tbody>
    </table>
 
-1. Dynamic Mediaで処理されるように、ビデオアセットの完全なパスをExperience Managerにコピーします。 このコピーしたビデオアセットのパスは、後の手順で必要になります。
+1. Dynamic Mediaで処理されるように、ビデオアセットの完全なパスをExperience Managerにコピーします。 コピーしたビデオアセットパスは後の手順で必要になります。
 
    次に例を示します。
 
