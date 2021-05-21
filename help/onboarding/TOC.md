@@ -8,7 +8,7 @@ role: Architect, Developer
 source-git-commit: 54c68264dfc900604bbddace09bb8986b4fa4010
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 # オンボーディング {#onboarding}
 
 + [AEM as a Cloud Service のオンボーディング](/help/onboarding/home.md)
-+ AEM as aCloud Serviceの概要{#what-is-required}
++ AEM as a Cloud Service - はじめに {#what-is-required}
    + [Adobe ID](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager のロール](what-is-required/user-roles-permissions.md)
    + [システム管理者のタスク](what-is-required/add-users-assign-cm-roles.md)
@@ -24,10 +24,10 @@ ht-degree: 92%
    + [AEMインスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager プログラム {#getting-access}
    + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
-   + 実稼動プログラム{#production-programs}
+   + 実稼動プログラム {#production-programs}
       + [はじめに](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)
       + [実稼動プログラムの作成](getting-access-to-aem-in-cloud/creating-production-program.md)
-      + [実稼動プログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
+      + [実稼働プログラムの編集](/help/onboarding/getting-access-to-aem-in-cloud/editing-production-program.md)
    + サンドボックスプログラム {#sandbox-programs}
       + [はじめに](getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
       + [サンドボックスプログラムの作成](getting-access-to-aem-in-cloud/creating-sandbox-program.md)
@@ -104,7 +104,7 @@ ht-degree: 92%
    + [Adobe Experience Manager as a Cloud Service への移行](migration-methodology/getting-started.md)
 + ベストプラクティス {#best-practices}
    + [SEO と URL の管理](best-practices/seo-and-url-management.md)
-   + [KPIの評価](best-practices/assessing-kpis.md)
-   + [KPIの整列](best-practices/aligning-kpis.md)
-   + [適切なチームを選択](best-practices/choose-right-team.md)
+   + [KPI の評価](best-practices/assessing-kpis.md)
+   + [KPI の調整](best-practices/aligning-kpis.md)
+   + [適切なチームの選択](best-practices/choose-right-team.md)
 + [ツールコンソールの概要](tools-consoles.md)
