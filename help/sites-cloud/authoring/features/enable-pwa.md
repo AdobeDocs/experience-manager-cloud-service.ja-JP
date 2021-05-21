@@ -5,7 +5,7 @@ exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2032'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->このドキュメントで説明する機能は、AEMの2021年3月リリースでCloud Serviceとして使用できるようになる予定です。](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)[
+>このドキュメントで説明する機能は、[ AEM as a Cloud Service の 2021 年 3 月リリース](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)で利用可能になる予定です。
 
 ## はじめに {#introduction}
 
@@ -49,18 +49,18 @@ PWA では、ユーザーはサイトのローカルコピーを保持するの�
 
 サイトで PWA 機能を使用するには、プロジェクト環境に必要な要件が ２ つあります。
 
-1. [この機能を活](#adjust-components) 用するには、コアコンポーネントを使用します
+1. [コアコンポーネント](#adjust-components)を使用してこの機能を利用する
 1. [Dispatcher ルールを調整](#adjust-dispatcher)して、必要なファイルを公開する
 
 これらは、作成者が開発チームと連携する必要がある技術的な手順です。これらの手順は、サイトごとに 1 回だけ必要です。
 
-### コアコンポーネントの使用 {#adjust-components}
+### コアコンポーネントを使用する {#adjust-components}
 
-コアコンポーネントリリース2.15.0以降は、AEMサイトのPWA機能を完全にサポートします。 AEMaaCSには常に最新バージョンのコアコンポーネントが含まれているので、PWA機能をすぐに利用できます。 AEMaCSプロジェクトは、この要件を自動的に満たします。
+コアコンポーネントリリース 2.15.0 以降は、AEM Sites の PWA 機能を完全にサポートしています。AEMaaCS には常に最新バージョンのコアコンポーネントが含まれているので、標準搭載のPWA 機能を活用できます。AEMaaCS プロジェクトは、この要件を自動的に満たします。
 
 >[!NOTE]
 >
->Adobeは、カスタムコンポーネントのPWA機能の使用や、古いコンポーネントから拡張された[コンポーネントの使用はお勧めしません。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja)
+>アドビは、カスタムコンポーネントまたは[コアコンポーネントから拡張](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja)されていないコンポーネントで PWA 機能を使用することはお勧めしません。
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -97,7 +97,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-プロジェクトに応じて、様々なタイプの拡張機能を書き換えルールに含めることができます。 `webmanifest`拡張は、リクエストを非表示にして`/content/<projectName>`にリダイレクトするルールを導入した際に、書き換え条件に含めると便利です。
+プロジェクトに応じて、書き換えルールに様々なタイプの拡張を含めることができます。`webmanifest` 拡張は、リクエストを非表示にして `/content/<projectName>` にリダイレクトするルールを導入した場合に、書き換え条件を含めるのに便利です。
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -139,8 +139,8 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 これで、[PWA をサポートするようにサイトを設定できたので、](#enabling-pwa-for-your-site)体験してみてください。
 
 1. [サポートされているブラウザー](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
-1. ブラウザーのアドレスバーに、サイトをローカルアプリとしてインストールできることを示す新しいアイコンが表示されます。
-   * ブラウザーによってはアイコンが異なる場合があり、ブラウザーには、ローカルアプリとしてインストールできることを示す通知（バナーやダイアログボックスなど）が表示される場合もあります。
+1. ブラウザーのアドレスバーに新しいアイコンが表示され、サイトがローカルアプリケーションとしてインストールできることが示されます。
+   * ブラウザーによってアイコンは異なり、ローカルアプリケーションとしてインストールできることを示す通知（バナーやダイアログボックスなど）が表示される場合もあります。
 1. AEM Desktop App をインストールします。
 1. アプリケーションがデバイスのホーム画面にインストールされます。
 1. アプリケーションを開いてしばらく作業して、ページがオフラインで使用できることを確認してください。
@@ -182,7 +182,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * アイコンは、サイズが 512x512 ピクセルの png ファイルである必要があります。
    * アイコンは [DAM に保存](/help/assets/overview.md)されている必要があります。
 
-### キャッシュ管理 (詳細) {#offline-configuration}
+### キャッシュ管理（詳細） {#offline-configuration}
 
 これらの設定により、このサイトの一部はオフラインで使用できるようになり、訪問者のデバイスでローカルに使用できるようになります。Web アプリケーションのキャッシュを制御してネットワークリクエストを最適化し、オフラインエクスペリエンスをサポートできます。
 
@@ -201,31 +201,31 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 >
 >デベロッパーチームは、オフライン設定の設定方法に関する貴重な情報を得られる可能性が高くなります。
 
-## 制限事項とRecommendations {#limitations-recommendations}
+## 制限と Recommendations {#limitations-recommendations}
 
 AEM Sites では PWA 機能の一部が利用できます。これらには、いくつかの顕著な制限があります。
 
 * ユーザーがアプリケーションを使用していない場合、ページは自動的に同期または更新されません。
 
-Adobeは、実装時に次の推奨事項もおこないます。PWA
+また、アドビは、PWA を実装する際に次のような推奨をしています。
 
-### プリキャッシュするリソースの数を最小限に抑えます。{#minimize-precache}
+### 事前キャッシュするリソースの数を最小限に抑える {#minimize-precache}
 
-Adobeでは、キャッシュ前のページ数を制限するようお勧めします。
+アドビでは、事前キャッシュするページ数を制限するよう勧めています。
 
-* ライブラリを埋め込んで、プリキャッシュ時に管理するエントリ数を減らします。
-* 画像のバリエーション数をプリキャッシュに制限します。
+* ライブラリを埋め込むと、事前キャッシュ時に管理するエントリの数を減らすことができます。
+* 事前キャッシュする画像のバリエーション数を制限します。
 
-### PWAは、プロジェクトスクリプトとスタイルシートを安定化した後に有効にします。{#pwa-stabilized}
+### プロジェクトスクリプトやスタイルシートが安定した後で PWA を有効にする {#pwa-stabilized}
 
-クライアントライブラリは、次のパターン`lc-<checksumHash>-lc`を観察するキャッシュセレクターを追加して提供されます。 ライブラリを構成するファイル（および依存関係）の1つが変更されるたびに、このセレクターが変更されます。 service-workerによって事前にキャッシュされるクライアントライブラリを一覧表示し、新しいバージョンを参照する場合は、手動でエントリを取得して更新します。 そのため、プロジェクトのスクリプトとスタイルシートを安定化させた後に、サイトをPWAにするように設定することをお勧めします。
+クライアントライブラリにはキャッシュセレクタが追加され、`lc-<checksumHash>-lc` のようなパターンで配信されます。ライブラリを構成するファイル（および依存関係）が変更されるたびに、このセレクターは変更されます。サービスワーカーが事前にキャッシュするクライアントライブラリを一覧表示し、新しいバージョンを参照する場合は、手動でエントリを取得して更新します。その結果、プロジェクトスクリプトやスタイルシートが安定した後は、サイトを PWA に設定することをお勧めします。
 
-### 画像のバリエーションの数を最小限に抑えます。{#minimize-variations}
+### 画像バリエーションの数を最小限に抑える {#minimize-variations}
 
-AEMコアコンポーネントの画像コンポーネントは、取得する最適なレンディションのフロントエンドを決定します。 このメカニズムには、そのリソースの最終変更時刻に対応するタイムスタンプも含まれます。 このメカニズムは、PWAのプリキャッシュの設定を複雑にします。
+AEM コアコンポーネントの画像コンポーネントは、取得に最適な、フロントエンドのレンディションを 1 つ決定します。このメカニズムには、そのリソースの最終変更時刻に対応するタイムスタンプも含まれます。このメカニズムにより、PWA の事前キャッシュの設定が複雑になります。
 
-プリキャッシュを設定する場合、ユーザーは、取得可能なすべてのパスバリエーションをリストする必要があります。 これらのバリエーションは、画質や幅などのパラメーターで構成されます。 これらのバリエーションの数を、最大3つ（小、中、大）に減らすことを強くお勧めします。 それには、[画像コンポーネントのコンテンツポリシーダイアログを使用します。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja)
+事前キャッシュの設定では、取得可能なすべてのパスのバリエーションをリストする必要があります。これらのバリエーションは、画質や幅などのパラメーターで構成されます。これらのバリエーションの数を、最大 3 つ（小、中、大）に減らすことを強くお勧めします。それには、[画像コンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=ja)のコンテンツポリシーダイアログを使用します。
 
-慎重に設定しないと、メモリとネットワークの消費がPWAのパフォーマンスに大きな影響を与える可能性があります。 また、50個の画像をプリキャッシュし、1つの画像に3つの幅を持つ場合、サイトを維持するユーザーは、ページプロパティの「PWAプリキャッシュ」セクションで最大150個のエントリのリストを維持する必要があります。
+慎重に設定しないと、メモリとネットワークの消費が PWA のパフォーマンスに大きな影響を与える可能性があります。例えば、50 枚の画像を事前キャッシュし、画像ごとに 3 つの幅がある場合、サイトを管理するユーザーは、ページプロパティの PWA 事前キャッシュセクションに、最大 150 個のエントリのリストを保持する必要があります。
 
-Adobeでは、画像のプロジェクト使用を安定させた後に、サイトをPWAにするように設定することもお勧めします。
+また、アドビでは、プロジェクトでの画像の使用が安定してから、サイトを PWA に設定することを勧めています。
