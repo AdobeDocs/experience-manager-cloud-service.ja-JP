@@ -9,7 +9,7 @@ ht-degree: 36%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service のオンボーディング {#aem-onboarding-guide}
+# Experience Manager as a Cloud Service のオンボーディング {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
