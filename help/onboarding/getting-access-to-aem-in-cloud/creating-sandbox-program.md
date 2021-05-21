@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -13,39 +13,39 @@ ht-degree: 5%
 
 サンドボックスプログラムを作成するには、次の手順に従います。
 
-1. Cloud Managerのランディングページを起動し、画面の右上隅にある「**プログラムを追加**」をクリックします。
+1. Cloud Manager のランディングページを開いて、画面の右上隅にある「**プログラムを追加**」をクリックします。
 
    ![](assets/first_timelogin1.png)
 
    >[!NOTE]
-   >Cloud Managerへのアクセス方法について詳しくは、 [Cloud Managerのランディングページ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
+   >Cloud Manager へのアクセス方法について詳しくは、[Cloud Manager のランディングページ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
 
-1. プログラムの作成ウィザードで、「**サンドボックスを設定**」を選択します。 ユーザーは、「**作成**」を選択する前にプログラム名を送信します。
+1. プログラム作成ウィザードで、「**サンドボックスを設定する**」を選択します。プログラム名を送信してから「**作成**」を選択します。
 
    ![](assets/create-sandbox.png)
 
-1. ランディングページに新しいサンドボックスプログラムカードが表示され、その上にマウスポインターを置いてCloud Managerアイコンを選択し、 Cloud Managerの概要ページに移動できます。 カードは、新しく作成されたサンドボックスプログラムの自動セットアップのステータスをユーザーに通知します。 進行状況が表示されます。
+1. 新しいサンドボックスプログラムカードがランディングページに表示されます。そのカードにマウスポインターを置き、Cloud Manager アイコンを選択すると Cloud Manager の概要ページに移動できます。カードには、新しく作成したサンドボックスプログラムの自動セットアップのステータスが通知されます。進行状況が表示されます。
 
    ![](assets/program-create-setupdemo2.png)
 
-1. プログラムの設定とプロジェクトの作成手順が完了したら、次の図に示すように、「**Git**&#x200B;を管理」リンクにアクセスできます。
+1. プログラムのセットアップとプロジェクトの作成手順が完了したら、次の図に示すように、「**Git を管理」**&#x200B;リンクにアクセスできます。
 
    ![](assets/create-program4.png)
 
    >[!NOTE]
    >
-   >Cloud Manager UIのセルフサービスGitアカウント管理を使用したGitリポジトリへのアクセスと管理について詳しくは、 [Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセスを参照してください。
+   >Cloud Manager UI のセルフサービス Git アカウント管理を使用して Git リポジトリーにアクセスし管理する方法について詳しくは、[Git へのアクセス](/help/implementing/cloud-manager/accessing-git.md)を参照してください。
 
 
-1. 開発環境が作成されたら、次の図に示すように、ユーザーは&#x200B;**AEM**&#x200B;リンクにアクセスできます。
+1. 開発環境が作成されると、次の図のように、「**AEM にアクセス**」リンクが表示されます。
 
    ![](assets/create-program-5.png)
 
-1. 開発への非実稼動パイプラインのデプロイが完了すると、ウィザードに従って、（開発時に）AEMにアクセスするか、開発環境にコードをデプロイします。
+1. 実稼動以外のパイプラインを開発環境にデプロイしたら、ウィザードに従って、AEM にアクセスしたり（開発時）開発環境にコードをデプロイしたりできます。
 
    ![](assets/create-program-setup-deploy.png)
 
    >[!NOTE]
-   >次に示すように、 Cloud Managerの概要ページから、プログラムの編集、切り替え、追加をおこなうこともできます。
+   >また、次に示すように、Cloud Manager の概要ページからプログラムの編集、切り替え、追加を行うこともできます。
 
    ![](assets/create-program-a1.png)
