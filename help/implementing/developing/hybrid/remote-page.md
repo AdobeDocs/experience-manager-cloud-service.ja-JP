@@ -5,23 +5,23 @@ exl-id: d3465592-0392-49b0-b49d-de93983c1d6e
 source-git-commit: eaa59b6ecfa50c4a6b4e316e5e305e48cb3d5676
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
 # RemotePage コンポーネント {#remote-page-component}
 
-外部 SPA と AEM の間で[どのレベルの統合](/help/implementing/developing/headful-headless.md)を行うかを決める際に、AEM 内で SPA を表示して編集できる必要があることはよくあります。RemotePage コンポーネントは、この目的のためのカスタムページコンポーネントです。
+外部 SPA と AEM の間で[どのレベルの統合](/help/implementing/developing/headful-headless.md)をおこなうかを決める際に、AEM 内で SPA を表示して編集できる必要があることはよくあります。RemotePage コンポーネントは、この目的のためのカスタムページコンポーネントです。
 
 ## 概要 {#overview}
 
 RemotePage コンポーネントは、アプリケーションで生成された `asset-manifest.json` から必要なアセットをすべて取得し、これを使用して AEM 内の SPA +をレンダリングします。
 
-* RemotePageを使用すると、AEM Pageコンポーネントの本文にSPAのスクリプトとスタイルシートを挿入できます。
-* 仮想フロントエンドコンポーネントを使用すると、AEM SPA Editorで編集可能としてセクションをマークできます。
-* 一緒に、別のドメインでホストされるSPAをAEMで編集可能にできます。
+* RemotePage を使用すると、AEM ページコンポーネントの本文に SPA のスクリプトやスタイルシートを挿入できます。
+* 仮想フロントエンドコンポーネントを使用すると、AEM SPA エディターでセクションを編集可能としてマークできます。
+* これとともに、異なるドメインでホストされている SPA を AEM で編集可能にすることができます。
 
-AEMでの編集可能な外部SPAについて詳しくは、 AEM](editing-external-spa.md)内での外部SPAの編集の記事[を参照してください。
+AEM の編集可能な外部 SPA の詳細については、](editing-external-spa.md)AEM 内の外部 SPA の編集[を参照してください。
 
 ## 要件 {#requirements}
 
