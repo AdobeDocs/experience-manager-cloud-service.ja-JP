@@ -28,9 +28,9 @@ ht-degree: 100%
 並列比較による差分表示では、次のものを比較できます。
 
 * [バージョン](/help/sites-cloud/authoring/features/page-versions.md#comparing-a-version-with-current-page) - ページの以前のバージョンとその現在の状態
-* [](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page)ライブコピー - ライブコピーとそのブループリント
+* [ライブコピー](/help/sites-cloud/administering/msm/creating-live-copies.md#comparing-a-live-copy-page-with-a-blueprint-page) - ライブコピーとそのブループリント
 * [ローンチ](/help/sites-cloud/authoring/launches/editing.md#comparing-a-launch-page-to-its-source-page) - ローンチとそのソース
-* [](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies)言語コピー - （再）翻訳前と（再）翻訳後のページ
+* [言語コピー](/help/sites-cloud/administering/translation/managing-projects.md#comparing-language-copies) - （再）翻訳前と（再）翻訳後のページ
 
 それらのコンテキスト内で差分の確認を開始する方法については、それぞれのトピックを参照してください。
 
