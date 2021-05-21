@@ -50,7 +50,8 @@ ht-degree: 11%
 ### 2.組織をAdobe Admin Consoleにオンボーディングする
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
->* システム管理者:
+
+* システム管理者:
    * AEMプログラムと環境のプロビジョニング
    * 管理タスクのAdmin Consoleに移動します。
    * ドメインを要求して各ドメインの所有権を確認
