@@ -2,10 +2,10 @@
 title: 非推奨（廃止予定）の機能と削除された機能
 description: リリースノート( [!DNL Adobe Experience Manager] の非推奨（廃止予定）の機能と削除された機能) a [!DNL Cloud Service]
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 49%
+source-wordcount: '448'
+ht-degree: 48%
 
 ---
 
@@ -43,4 +43,4 @@ ht-degree: 49%
 | [!DNL Dynamic Media] | [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=ja#integration)と[Dynamic Mediaハイブリッドモード](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=ja#dynamic)との以前の統合は、[!DNL Experience Manager]では[!DNL Cloud Service]として使用できません。 | [!DNL Experience Manager]に付属する[Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)を[!DNL Cloud Service]として使用します。 |
 | [!DNL Sites] | Portal Director とポートレットコンポーネント | これらの機能は[!DNL Experience Manager] 6.4で廃止され、[!DNL Experience Manager]から削除されました。 |
 | [!DNL Sites] | デザインインポーター | [!DNL Experience Manager]リポジトリの不変セクションは実行時にアクセスできないので、この機能は削除されました。 |
-| [!DNL Assets] | [[!DNL Assets] Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの の共有](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/configure-assets-cc-integration.html)は使用できません。 | [!DNL Adobe Creative Cloud]との統合には、[Adobeアセットリンク](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を使用します。 |
+| [!DNL Assets] | [!DNL Assets]Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの の共有は使用できません。 | [!DNL Adobe Creative Cloud]との統合には、[Adobeアセットリンク](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を使用します。 |
