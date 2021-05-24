@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: デプロイ
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7bdf8f1e6d8ef1f37663434e7b14798aeb8883f4
+source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
 workflow-type: tm+mt
-source-wordcount: '3334'
-ht-degree: 95%
+source-wordcount: '3350'
+ht-degree: 94%
 
 ---
 
@@ -100,7 +100,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。このドキュメントには、ユーザーが実行できるインストールフックが含まれています。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。 AEM CSは現在、Filevaultバージョン3.4.0を使用しています（これは、インストールフックを管理者ユーザー、システムユーザー、管理者グループのメンバーに限定します）。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5でおこなわれ、推奨されるプロジェクト再構築の詳細については、[AEM 6.5のドキュメントを参照してください。](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
