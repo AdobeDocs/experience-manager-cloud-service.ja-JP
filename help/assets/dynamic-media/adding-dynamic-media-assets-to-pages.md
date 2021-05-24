@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: アセット管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 84%
+source-wordcount: '3242'
+ht-degree: 80%
 
 ---
 
@@ -165,6 +165,17 @@ Dynamic Media コンポーネントでは、画像セット、スピンセット
 
    コンポーネントの「**[!UICONTROL 編集]**」をタップして、次の詳細設定を編集できます。
 
+* **[!UICONTROL 高解像度デバイス向けに最適化]**  - DPR（デバイスピクセル比）の最適化を許可する場合は、このチェックボックスをオン（デフォルト）にします。
+
+   [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
+
+   Adobe Experience Manager Dynamic MediaスマートイメージングDPRの値は無視されます。
+
+   **[!UICONTROL 高解像度デバイス向けの最適化]**&#x200B;オプションは、次の条件が満たされる場合にのみ表示されます。
+   * 「プリセットの種類」で、「**[!UICONTROL 画像プリセット]**」を選択し、「**[!UICONTROL 画像プリセット]**」ドロップダウンリストから「**[!UICONTROL RESS_IP]**」を選択します。
+
+   ![画像プリセットのデバイスピクセル比設定](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+
 * **[!UICONTROL タイトル]**  — 画像のタイトルを変更します。
 
 * **[!UICONTROL 代替テキスト]**  — グラフィックの表示をオフにしているユーザー向けのタイトルを画像に追加します。
@@ -178,7 +189,6 @@ Dynamic Media コンポーネントでは、画像セット、スピンセット
 * **[!UICONTROL 幅]**  — 画像を固定サイズで表示する場合は、値をピクセル単位で入力します。この値を空にすると、アダプティブなアセットになります。
 
 * **[!UICONTROL 高さ]**  — 画像を固定サイズで表示する場合は、値をピクセル単位で入力します。この値を空にすると、アダプティブなアセットになります。
-
 
 #### ビデオを操作する場合 {#when-working-with-video}
 
@@ -232,6 +242,18 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
    コンポーネントの「**[!UICONTROL 編集]**」をクリックして、次の詳細設定を編集できます。
 
 * **[!UICONTROL 縦横比の一致を有効にする]**  — 元の画像の縦横比に最も適した縦横比のスマート切り抜きレンディションをDynamic Mediaで選択できるようにするには、このオプションを選択します。
+
+* **[!UICONTROL 高解像度デバイス向けに最適化]**  - DPR（デバイスピクセル比）の最適化を許可する場合は、このチェックボックスをオン（デフォルト）にします。
+
+   [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
+
+   Adobe Experience Manager Dynamic MediaスマートイメージングDPRの値は無視されます。
+
+   **[!UICONTROL 高解像度デバイス向けの最適化]**&#x200B;オプションは、次の条件が満たされる場合にのみ表示されます。
+
+   * 「プリセットの種類」で、「**[!UICONTROL スマート切り抜き]**」オプションが選択されます。
+
+   ![スマート切り抜きのデバイスピクセル比設定](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
 * **[!UICONTROL タイトル]**  — スマート切り抜き画像のタイトルを変更します。
 
