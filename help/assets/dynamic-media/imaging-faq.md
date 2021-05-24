@@ -4,10 +4,10 @@ description: Adobe Sensei AIを使用したスマートイメージングで、�
 feature: アセット管理，レンディション
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: eef1760407986e47876416c90df6dfb6f5693c1a
+source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
 workflow-type: tm+mt
 source-wordcount: '2634'
-ht-degree: 53%
+ht-degree: 52%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 53%
 
 ## スマートイメージングにはライセンス費用がかかりますか？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-いいえ。スマートイメージングは、既存のライセンスに含まれています。この規則は、Dynamic Media Classic または Experience ManagerDynamic Media（オンプレミス、AMS、および Experience Manager as a Cloud Service）に当てはまります。
+いいえ。スマートイメージングは、既存のライセンスに含まれています。このルールは、Dynamic Media ClassicまたはExperience Manager-Dynamic Media(オンプレミス、AMS、Cloud ServiceとしてのExperience Manager)に当てはまります。
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ドメインを見つけるには、[Dynamic Media Classicデスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、会社のアカウントにログインします。
 
-**[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;をタップします。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在汎用ドメインを使用している場合は、独自のカスタムドメインに移動するようにリクエストできます。技術サポートチケットを送信したら、このトランジションリクエストを作成します。
+**[!UICONTROL 設定]** / **[!UICONTROL アプリケーション設定]** / **[!UICONTROL 一般設定]**&#x200B;をタップします。 「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在汎用ドメインを使用している場合は、独自のカスタムドメインに移動するようにリクエストできます。技術サポートチケットを送信したら、このトランジションリクエストを作成します。
 
 最初のカスタムドメインは、Dynamic Media ライセンスを使用する場合、追加費用はかかりません。
 
