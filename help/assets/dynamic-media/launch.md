@@ -4,9 +4,9 @@ description: platform launchおよびDynamic Mediaビューア5.13のDynamic Med
 feature: アセットレポート
 role: Administrator,Business Practitioner
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 2fa40e8ee71f881df68337c99ccdb3437d50a0f3
 workflow-type: tm+mt
-source-wordcount: '6661'
+source-wordcount: '6662'
 ht-degree: 94%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 94%
 
 ## Adobe Analytics と Experience Platform Launch および Dynamic Media ビューアの統合とは {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch -->
+<!-- Leave this hidden path here; it points to the topic source from Sasha https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=~oufimtse&title=Dynamic+Media+Viewers+integration+with+Adobe+Launch 
+
+name used to be Experience Platform Launch. Changed to Experience Platform Data Collection-->
 
 Platform Launch および Dynamic Media Viewers 5.13 用の *Dynamic Media ビューア*&#x200B;拡張機能を使用すると、Adobe Analytics および Platform Launch のお客様は、Platform Launch の設定で閲覧者に固有のイベントやデータを使用できます。
 
@@ -668,7 +670,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. Adobe IMC 設定ページの左上隅付近にある「**[!UICONTROL 作成]**」をクリックします。
-1. **[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページの「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで、「**[!UICONTROL Experience Platform Launch]**」をクリックします。
+1. **[!UICONTROL AdobeIMSテクニカルアカウント設定]**&#x200B;ページの「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで、「**[!UICONTROL Experience Platformデータ収集]**」をクリックします。
 1. 「**[!UICONTROL 新しい証明書を作成]**」を有効にし、テキストフィールドに証明書に意味のある値を入力します。例えば、*AdobeLaunchIMSCert* と入力します。「**[!UICONTROL 証明書を作成]**」をクリックします。
 
    次の情報メッセージが表示されます。
