@@ -1,7 +1,7 @@
 ---
 title: コンテンツのモデル化方法
 description: AEMヘッドレス開発者ジャーニーのこのパートでは、コンテンツフラグメントモデルとコンテンツフラグメントを使用したコンテンツモデリングを使用して、AEMヘッドレス配信用のコンテンツをモデル化する方法について説明します。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 最初の[CMSヘッドレス開発](learn-about.md)では、ヘッドレスコンテンツ配信を説明し、使用する理由を説明します。 次に、[Cloud ServiceとしてのAEMヘッドレスの使用の手引き](getting-started.md)独自のプロジェクトのコンテキストでAEMヘッドレスを説明しました。
 
-AEMヘッドレスジャーニーの前のドキュメント([AEMヘッドレスを使用した初めてのエクスペリエンスへのパス](/help/implementing/developing/headless-journey/path-to-first-experience.md))では、最初のプロジェクトの実装に必要な手順を学びました。 読み終えた後は、次の操作を行う必要があります。
+AEMヘッドレスジャーニーの前のドキュメント([AEMヘッドレスを使用した初めてのエクスペリエンスへのパス](path-to-first-experience.md))では、最初のプロジェクトの実装に必要な手順を学びました。 読み終えた後は、次の操作を行う必要があります。
 
 * コンテンツを設計する際の計画に関する重要な考慮事項の理解
 * 統合レベルの要件に応じて、ヘッドレスを実装する手順を理解します。
@@ -51,7 +51,7 @@ AEMヘッドレスジャーニーの前のドキュメント([AEMヘッドレス
 >
 >AEMではコンテンツを扱うので、データモデリングをコンテンツモデリングと呼びます。
 
-以下に例を示します。
+次に例を示します。
 
 多くの学校がありますが、それぞれに共通点があります。
 
@@ -203,7 +203,7 @@ AEMでは、コンテンツをモデル化するための次のデータタイ�
 
 ### コンテンツフラグメントモデルの作成{#creating-content-fragment-models}
 
-サイトのコンテンツフラグメントモデルを最初に有効にする必要がある場合は、設定ブラウザーでおこないます。ツール/一般/設定ブラウザーで、次の操作を行います。 グローバルエントリを設定するか、新しい設定を作成できます。 以下に例を示します。
+サイトのコンテンツフラグメントモデルを最初に有効にする必要がある場合は、設定ブラウザーでおこないます。ツール/一般/設定ブラウザーで、次の操作を行います。 グローバルエントリを設定するか、新しい設定を作成できます。 次に例を示します。
 
 ![設定の定義](assets/cfm-configuration.png)
 
@@ -211,7 +211,7 @@ AEMでは、コンテンツをモデル化するための次のデータタイ�
 >
 >設定ブラウザーの「その他のリソース — コンテンツフラグメント」を参照してください。
 
-その後、コンテンツフラグメントモデルを作成し、構造を定義できます。 これは、ツール/アセット/コンテンツフラグメントモデルで実行できます。 以下に例を示します。
+その後、コンテンツフラグメントモデルを作成し、構造を定義できます。 これは、ツール/アセット/コンテンツフラグメントモデルで実行できます。 次に例を示します。
 
 ![コンテンツフラグメントモデル](assets/cfm-model.png)
 
@@ -271,6 +271,6 @@ tbc...
    * [設定ブラウザーのコンテンツフラグメント](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 設定ブラウザーでコンテンツフラグメント機能を有効にします。
    * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)  — コンテンツフラグメントモデルの作成と編集
    * [コンテンツフラグメントの管理](/help/assets/content-fragments/content-fragments-managing.md)  — コンテンツフラグメントの作成とオーサリングこのページでは、その他の詳細な節を示します
-* [AEM GraphQLスキーマ](/help/implementing/developing/headless-journey/access-your-content.md)  - GraphQLによるモデルの実現方法
+* [AEM GraphQLスキーマ](access-your-content.md)  - GraphQLによるモデルの実現方法
 * [サンプルコンテンツフラグメント構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEMヘッドレスの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)  — コンテンツモデリングやGraphQLなど、AEMヘッドレス機能の使用の概要を説明する短いビデオチュートリアルシリーズです。
