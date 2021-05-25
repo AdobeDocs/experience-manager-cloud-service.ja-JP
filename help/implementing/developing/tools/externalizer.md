@@ -2,9 +2,9 @@
 title: URL の外部化
 description: Externalizerは、プログラムによってリソースパスを外部URLおよび絶対URLに変換できるOSGiサービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '569'
 ht-degree: 16%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Serviceインスタンスは、外部から表示されるURLを�
 
 ## Externalizerのデフォルトの動作と{#default-behavior}のオーバーライド方法
 
-Externalizerサービスには、介入なしにカスタムCloud Serviceが使用されるように、`author-p12345-e6789.adobeaemcloud.com`や`publish-p12345-e6789.adobeaemcloud.com`などの値が既に設定されています。
+Externalizerサービスは、初期設定で`author-p12345-e6789.adobeaemcloud.com`や`publish-p12345-e6789.adobeaemcloud.com`などの値を持ちます。
 
 このような値を上書きするには、 AEM用のOSGiのCloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って、Cloud Manager環境変数を使用し、事前定義された`AEM_CDN_DOMAIN_AUTHOR`変数と`AEM_CDN_DOMAIN_PUBLISH`変数を設定します。[
 
