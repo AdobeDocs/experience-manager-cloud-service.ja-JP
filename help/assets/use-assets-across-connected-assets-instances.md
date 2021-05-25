@@ -5,18 +5,18 @@ contentOwner: AG
 feature: アセット管理，Connected Assets，アセット配布，ユーザーとグループ
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: bbc396fbe7b3c11f8011a32fa78577957422fcf2
+source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
 workflow-type: tm+mt
-source-wordcount: '2932'
-ht-degree: 81%
+source-wordcount: '2966'
+ht-degree: 78%
 
 ---
 
 # Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。1つの理由は、連携が必要な既存のデプロイメントを地理的に分散させることができます。 もう 1 つの理由は、親会社が一緒に使用したい異種インフラストラクチャをもたらす買収です。
+大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。1つの理由は、連携が必要な既存のデプロイメントを地理的に分散させることができます。 もう1つの理由は、異なる[!DNL Experience Manager]バージョンを含む異種インフラストラクチャを導く買収で、親会社が一緒に使用したい場合です。
 
-ユーザーは、[!DNL Experience Manager Sites] で Web ページを作成できます。[!DNL Experience Manager Assets] は、Web サイトに必要なアセットを提供するデジタルアセット管理（DAM）システムです。[!DNL Experience Manager] では、[!DNL Sites] と [!DNL Assets] の統合により、上記の使用事例をサポートできるようになりました。
+Connected Assetsの機能は、[!DNL Experience Manager Sites]と[!DNL Experience Manager Assets]を統合することで、上記の使用例をサポートします。 ユーザーは、別の[!DNL Assets]デプロイメントのデジタルアセットを使用するWebページを[!DNL Sites]に作成できます。
 
 ## Connected Assets の概要 {#overview-of-connected-assets}
 
@@ -127,7 +127,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 1. ローカル[!DNL Sites]およびリモート[!DNL Assets]デプロイメントに[!DNL Dynamic Media]を設定します。 [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)の指示に従います。
 
    * すべての設定で同じ会社名を使用します。
-   * ローカルの[!DNL Sites]の[!UICONTROL Dynamic Media同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。 Sitesデプロイメントでは、[!DNL Dynamic Media]アカウントに対する読み取り専用アクセスのみ必要です。
+   * ローカルの[!DNL Sites]の[!UICONTROL Dynamic Media同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。 [!DNL Sites]デプロイメントでは、[!DNL Dynamic Media]アカウントに対する読み取り専用アクセスのみ必要です。
    * ローカルの[!DNL Sites]の「**[!UICONTROL アセットを公開]**」オプションで、「**[!UICONTROL 選択的公開]**」を選択します。 「**[!UICONTROL すべてのコンテンツを同期]**」は選択しないでください。
    * リモート[!DNL Assets]デプロイメントの[!UICONTROL Dynamic Media同期モード]で、「**[!UICONTROL デフォルトで有効]**」を選択します。
 
@@ -205,8 +205,9 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 * ローカルアセットは、リモートデプロイメントの元のアセットと同期されません。DAM デプロイメント上での編集、削除または権限の失効は、ローカル側には一切伝播されません。
 * ローカルアセットは読み取り専用のコピーです。[!DNL Experience Manager] コンポーネントは、アセットに対して非破壊編集をおこないます。その他のいかなる編集もできません。
 * ローカルで取得されたアセットは、オーサリング用途でのみ使用できます。アセット更新ワークフローの適用やメタデータの編集はおこなえません。
-* 画像とリストに表示されるドキュメント形式のみがサポートされます。コンテンツフラグメントとエクスペリエンスフラグメントはサポートされていません。
-* Adobe [!DNL Experience Manager] はメタデータスキーマを取得しません。つまり、取得されたすべてのメタデータが表示されない可能性があります。スキーマがを別途更新されると、すべてのプロパティが表示されます。
+* [!DNL Sites]ページで[!DNL Dynamic Media]を使用する場合、元のアセットを取得してローカルデプロイメントに保存することはできません。 `dam:Asset`ノード、メタデータ、および[!DNL Assets]デプロイメントで生成されたレンディションは、すべて[!DNL Sites]デプロイメントで取得されます。
+* 画像とリストに表示されるドキュメント形式のみがサポートされます。[!DNL Content Fragments] およびはサ [!DNL Experience Fragments] ポートされていません。
+* Adobe [!DNL Experience Manager] はメタデータスキーマを取得しません。つまり、取得されたすべてのメタデータが表示されない可能性があります。[!DNL Sites]デプロイメント上でスキーマが個別に更新されると、すべてのメタデータプロパティが表示されます。
 * [!DNL Sites] 作成者は全員、リモート DAM デプロイメントへのアクセス権限を持っていなくても、取得されたコピーに対する読み取り権限を持ちます。
 * 統合をカスタマイズするための API サポートはありません。
 * この機能は、リモートアセットのシームレスな検索および使用をサポートします。多くのリモートアセットをローカルデプロイメントで一度に利用できるようにするには、リモートアセットの移行を検討します。
@@ -216,8 +217,8 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 * [!DNL Adobe Managed Services] での [!DNL Assets] のデプロイメントはサポートされています。
 * [!DNL Sites] は一度に 1 つのリポジトリに接続できます。[!DNL Assets]
-* リモートリポジトリとして動作する [!DNL Assets] の 1 つのライセンス。
-* ローカルオーサリングデプロイメントとして動作する [!DNL Sites] の 1 つ以上のライセンス。
+* リモートリポジトリとして動作する[!DNL Assets]のライセンスが必要です。
+* ローカルオーサリングデプロイメントとして動作する[!DNL Sites]の1つ以上のライセンスが必要です。
 
 ### 使用方法 {#usage}
 
