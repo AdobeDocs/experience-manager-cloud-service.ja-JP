@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Assets HTTP API,API
 role: Developer,Architect,Administrator
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: b989833b7f1fa0c3de91f96e28a21859d97294cb
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 79%
@@ -27,7 +27,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->[!DNL Experience Manager]のデプロイメントでは、一般的な（レンディションなどの）アセットやバイナリのアップロードまたは更新に関連するAPI呼び出しは、すべて[!DNL Cloud Service]として非推奨（廃止予定）となりました。 バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload-technical) を使用します。
+>[!DNL Experience Manager]のデプロイメントでは、一般的な（レンディションなどの）アセットやバイナリのアップロードまたは更新に関連するAPI呼び出しは、すべて[!DNL Cloud Service]として非推奨（廃止予定）となりました。 バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload) を使用します。
 
 ## コンテンツフラグメント {#content-fragments}
 
