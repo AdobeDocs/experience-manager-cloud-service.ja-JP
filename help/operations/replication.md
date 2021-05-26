@@ -2,9 +2,9 @@
 title: レプリケーション
 description: 配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: eb92c66f2b9e8e6ec859114da2de049747ec251e
+source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 39%
 
 ---
@@ -67,7 +67,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
    ![Treeactivation](/help/operations/assets/newstep.png)
 
-1. **引数**&#x200B;フィールドに追加のパラメーターを設定します。 複数のコンマ区切りの引数を弦でつなぐことができます。 以下に例を示します。
+1. **引数**&#x200B;フィールドに追加のパラメーターを設定します。 複数のコンマ区切りの引数を弦でつなぐことができます。 次に例を示します。
 
    `enableVersion=true,agentId=publish`
 
@@ -82,7 +82,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 * `replicateAsParticipant` (ブール値、デフォルト： `false`)をクリックします。`true`として設定した場合、レプリケーションは、参加者ステップを実行したプリンシパルの`userid`を使用します。
 * `enableVersion` (ブール値、デフォルト： `true`)をクリックします。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
-* `agentId` （文字列値。デフォルトは、有効なエージェントがすべて使用されることを意味します）。
+* `agentId` （文字列値。デフォルトは、有効なエージェントがすべて使用されることを意味します）。agentIdを明示しておくことをお勧めします。例えば、値を次のように設定します。公開
 * `filters` （文字列値。デフォルトは、すべてのパスがアクティブ化されることを意味します）。使用できる値は次のとおりです。
    * `onlyActivated`  — アクティブ化されていないパスのみがアクティブ化されます。
    * `onlyModified`  — 既にアクティブ化され、有効化日より後の変更日を持つパスのみをアクティブ化します。
