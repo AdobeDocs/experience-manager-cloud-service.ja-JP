@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,Assets HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 597098cd94d1e40dc45870fd2c0b986f80eb2038
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1407'
 ht-degree: 92%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 92%
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-[!DNL Experience Manager] JVM内ではなく、外部アプリケーションでこれらの手順を実行します。
+[!DNL Experience Manager] JVM内ではなく、外部アプリケーションで上記の手順を実行します。
 
 このアプローチで、アセットのアップロードをスケーラブルかつより効率的に処理できます。[!DNL Experience Manager] 6.5 と比較した場合の違いは次のとおりです。
 
