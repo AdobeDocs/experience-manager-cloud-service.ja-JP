@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: アセット管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 0824f77c35fc97a5bf703036d299c37b75935301
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '3242'
-ht-degree: 80%
+source-wordcount: '3226'
+ht-degree: 78%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 80%
 
 Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加します。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
 
-Adobe Experience Manager を WCM として使用している場合は、Dynamic Media アセットを直接ページに追加します。サードパーティの製品を WCM として使用している場合は、アセットの[リンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)または[埋め込み](/help/assets/dynamic-media/embed-code.md)を行います。サードパーティのレスポンシブ Web サイトの場合は、[レスポンシブサイトへの最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)を参照してください。
+WCMとして[!DNL Adobe Experience Manager]を使用している場合は、Dynamic Mediaアセットを直接ページに追加します。 サードパーティの製品を WCM として使用している場合は、アセットの[リンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)または[埋め込み](/help/assets/dynamic-media/embed-code.md)を行います。サードパーティのレスポンシブ Web サイトの場合は、[レスポンシブサイトへの最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
->Adobe Experience Manager でページに追加する前にアセットを必ず公開してください。[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+>アセットを[!DNL Experience Manager]のページに追加する前に、必ずアセットを公開してください。 [Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
 ## ページへの Dynamic Media コンポーネントの追加 {#adding-a-dynamic-media-component-to-a-page}
 
@@ -28,7 +28,7 @@ Adobe Experience Manager を WCM として使用している場合は、Dynamic 
 
 **Dynamic Mediaコンポーネントをページに追加するには：**
 
-1. Dynamic Media コンポーネントを追加するページを Experience Manager で開きます。
+1. [!DNL Experience Manager]で、Dynamic Mediaコンポーネントを追加するページを開きます。
 1. 左側のウィンドウで、「**[!UICONTROL コンポーネント]**」アイコンをタップし、「ダイナミックメディア」でフィルタリングします。
 
    Dynamic Media コンポーネントのリストがない場合は、使用する Dynamic Media コンポーネントを有効にしなければならない可能性があります。詳しくは、[Dynamic Media コンポーネントの有効化](#enabling-dynamic-media-components)を参照してください。
@@ -55,7 +55,7 @@ Adobe Experience Manager を WCM として使用している場合は、Dynamic 
 
 ページに追加できる Dynamic Media コンポーネントがない場合は、使用するコンポーネントを有効にしなければならない可能性があります。
 
-1. Dynamic Media コンポーネントを追加するページを Experience Manager で開きます。
+1. [!DNL Experience Manager]で、Dynamic Mediaコンポーネントを追加するページを開きます。
 1. ページ上部付近のツールバーの左側にあるページ情報アイコンをタップした後、ドロップダウンリストから「**[!UICONTROL テンプレートを編集]**」をタップします。
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -106,7 +106,7 @@ Dynamic Media コンポーネントのローカライズの方法は 2 つあり
 
 >[!NOTE]
 >
->これらのコンポーネントはデフォルトでは使用できないので、使用前にテンプレートエディターで使用可能にする必要があります。テンプレートエディターでコンポートを使用可能にした後は、他の Experience Manager コンポーネントの場合と同様にページに追加することができます。
+>これらのコンポーネントはデフォルトでは使用できないので、使用前にテンプレートエディターで使用可能にする必要があります。テンプレートエディターでコンポーネントを使用できるようになったら、他の[!DNL Experience Manager]コンポーネントと同様に、コンポーネントをページに追加できます。
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
@@ -169,7 +169,7 @@ Dynamic Media コンポーネントでは、画像セット、スピンセット
 
    [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
 
-   Adobe Experience Manager Dynamic MediaスマートイメージングDPRの値は無視されます。
+   [!DNL Experience Manager] Dynamic MediaスマートイメージングDPRの値は無視されます。
 
    **[!UICONTROL 高解像度デバイス向けの最適化]**&#x200B;オプションは、次の条件が満たされる場合にのみ表示されます。
    * 「プリセットの種類」で、「**[!UICONTROL 画像プリセット]**」を選択し、「**[!UICONTROL 画像プリセット]**」ドロップダウンリストから「**[!UICONTROL RESS_IP]**」を選択します。
@@ -247,7 +247,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
    [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
 
-   Adobe Experience Manager Dynamic MediaスマートイメージングDPRの値は無視されます。
+   [!DNL Experience Manager] Dynamic MediaスマートイメージングDPRの値は無視されます。
 
    **[!UICONTROL 高解像度デバイス向けの最適化]**&#x200B;オプションは、次の条件が満たされる場合にのみ表示されます。
 
