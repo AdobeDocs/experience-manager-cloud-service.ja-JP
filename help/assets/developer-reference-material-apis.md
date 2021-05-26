@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API,Assets HTTP API
 role: Developer,Architect,Administrator
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1406'
 ht-degree: 92%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 92%
 | フォルダーをコピー | ✓ | ✓ | - | ✓ | - | - |
 | フォルダーを移動 | ✓ | ✓ | - | ✓ | - | - |
 
-## アセットのアップロード {#asset-upload-technical}
+## アセットのアップロード {#asset-upload}
 
 [!DNL Experience Manager]では、HTTP APIを使用して、アセットをクラウドストレージに直接アップロードできます。 [!DNL Cloud Service]バイナリファイルをアップロードする手順は次のとおりです。
 
@@ -73,6 +73,9 @@ ht-degree: 92%
 1. [HTTP リクエストを送信して、バイナリのコンテンツが正常にアップロードされたことをサーバーに通知します。](#complete-upload)
 
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
+
+>[!IMPORTANT]
+[!DNL Experience Manager] JVM内ではなく、外部アプリケーションでこれらの手順を実行します。
 
 このアプローチで、アセットのアップロードをスケーラブルかつより効率的に処理できます。[!DNL Experience Manager] 6.5 と比較した場合の違いは次のとおりです。
 
