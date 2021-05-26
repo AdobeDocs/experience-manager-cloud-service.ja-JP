@@ -2,14 +2,20 @@
 title: 非推奨（廃止予定）の機能と削除された機能
 description: リリースノート( [!DNL Adobe Experience Manager] の非推奨（廃止予定）の機能と削除された機能) a [!DNL Cloud Service]
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8c26dbcc77113b86ab28ab52e0b6564fa5ed538a
+source-git-commit: 725cc82aa5794b53e5a43d95359fe1fd148b59ac
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 48%
+source-wordcount: '484'
+ht-degree: 44%
 
 ---
 
 # 非推奨（廃止予定）の機能と削除された機能 {#deprecated-and-removed-features}
+
+>[!CONTEXTUALHELP]
+>id="aem_cloud_deprecated_features"
+>title="AEM as aCloud Serviceの非推奨（廃止予定）および削除された機能"
+>abstract="AEM as aCloud Serviceには、クラウドネイティブなデプロイメントモデルがあります。 一部の機能や機能は、クラウドネイティブな対応する機能に置き換えられ、このタブにはこれらの機能が表示されます。"
+
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。また、[!DNL Adobe Experience Manager]は[!DNL Cloud Service]としてクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな対応する機能に置き換えられました。
 
