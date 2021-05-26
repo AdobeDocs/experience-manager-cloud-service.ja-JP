@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: アセット管理，アップロード
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 5657d53b37ec3db5338cc44177d3e7100188c5d0
+source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 85%
@@ -126,7 +126,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 アップロードするファイル数を増やすには、次のいずれかの方法を使用します。[使用例とメソッド](#upload-methods-comparison)も参照してください。
 
-* [アセットアップロード API](developer-reference-material-apis.md#asset-upload-technical)：必要に応じて、API を利用したカスタムアップロードスクリプトまたはツールを使用して、アセットの処理（メタデータの翻訳やファイル名の変更など）を追加します。
+* [アセットアップロード API](developer-reference-material-apis.md#asset-upload)：必要に応じて、API を利用したカスタムアップロードスクリプトまたはツールを使用して、アセットの処理（メタデータの翻訳やファイル名の変更など）を追加します。
 * [[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)：ローカルファイルシステムからアセットをアップロードするクリエイティブの専門家やマーケターに役立ちます。ローカルで使用可能なネストされたフォルダーをアップロードするために使用します。
 * [一括取得ツール](#asset-bulk-ingestor)：大量のアセットを取得する場合、不定期に取得するためや [!DNL Experience Manager] をデプロイ時に最初に取得するために使用します。
 
@@ -208,7 +208,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ## API を使用したアセットのアップロードまたは取り込み {#upload-using-apis}
 
-アップロード API およびプロトコルの技術的詳細、およびオープンソース SDK とサンプルクライアントへのリンクについては、開発者向けリファレンスの[アセットアップロード](developer-reference-material-apis.md#asset-upload-technical)に関する節に記載されています。
+アップロード API およびプロトコルの技術的詳細、およびオープンソース SDK とサンプルクライアントへのリンクについては、開発者向けリファレンスの[アセットアップロード](developer-reference-material-apis.md#asset-upload)に関する節に記載されています。
 
 ## ヒント、ベストプラクティス、制限事項{#tips-limitations}
 
@@ -230,5 +230,5 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >* [[!DNL Adobe Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)
 >* [ [!DNL Adobe Asset Link] について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 詳細を見る](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [アセットのアップロードに関するテクニカルリファレンス](developer-reference-material-apis.md#asset-upload-technical)
+>* [アセットのアップロードに関するテクニカルリファレンス](developer-reference-material-apis.md#asset-upload)
 
