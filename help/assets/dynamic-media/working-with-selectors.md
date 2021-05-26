@@ -3,10 +3,10 @@ title: セレクターの操作
 description: Dynamic Media でインタラクティブ画像、インタラクティブビデオ、カルーセルバナーのアセットを選択する方法について説明します。
 role: Business Practitioner
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 52%
+source-wordcount: '731'
+ht-degree: 62%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 52%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-ホットスポットまたは画像マップのリンク先を（手動で入力せずに）選択するときに、セレクターを使用します。サイトセレクターは、Adobe Experience Manager Sitesのユーザーの場合にのみ機能します。 製品セレクターには、Experience Managerコマースも必要です。
+ホットスポットまたは画像マップのリンク先を（手動で入力せずに）選択するときに、セレクターを使用します。サイトセレクターは、[!DNL Adobe Experience Manager Sites]のユーザーの場合にのみ機能します。 製品セレクターには[!DNL Experience Manager Commerce]も必要です。
 
 ## Dynamic Media での商品の選択 {#selecting-products}
 
@@ -42,11 +42,11 @@ ht-degree: 52%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   **[!UICONTROL 「]**&#x200B;を参照」をタップして別のフォルダーに移動することで、Experience Managerが商品データを参照する場所を変更できます。
+   **[!UICONTROL 参照]**&#x200B;をタップして別のフォルダーに移動することで、[!DNL Experience Manager]が商品データを参照する場所を変更できます。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   「**[!UICONTROL 並べ替え]**」をタップして、Experience Managerの並べ替え順を新しい順に変更するか、古い順に変更します。
+   「****&#x200B;ソート順」をタップして、 で新しい順に表示するか古い順に表示するかを変更します。[!DNL Experience Manager]
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,7 +64,7 @@ ht-degree: 52%
 
 ## Dynamic Media でのサイトの選択 {#selecting-sites}
 
-サイトセレクターを使用してWebページを選択するのは、ホットスポットまたは画像マップを、Experience Managerサイト内で管理されるWebページにリンクする場合です。
+サイトセレクターを使用してWebページを選択するのは、ホットスポットまたは画像マップを[!DNL Experience Manager]サイト内で管理されているWebページにリンクする場合です。
 
 1. カルーセルセット、インタラクティブ画像、インタラクティブビデオのいずれかに移動し、「**[!UICONTROL アクション]**」タブ（ホットスポットまたは画像マップを定義した場合のみ選択できる）をタップします。
 
@@ -72,7 +72,7 @@ ht-degree: 52%
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. **[!UICONTROL サイトセレクター]**&#x200B;アイコン(虫眼鏡の付いたExperience Managerー)をタップし、ホットスポットまたは画像マップをリンクするフォルダーサイト内のページに移動します。
+1. **[!UICONTROL サイトセレクター]**&#x200B;アイコン（フォルダーと虫眼鏡）をタップし、ホットスポットまたは画像マップのリンク先となる Sites 内のページに移動します。[!DNL Experience Manager]
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -80,7 +80,7 @@ ht-degree: 52%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. **[!UICONTROL プレビュー]**&#x200B;モードで、ホットスポットまたは画像マップをタップした場合は、指定したExperience Managerサイトページに移動します。
+1. **[!UICONTROL プレビュー]**&#x200B;モードでは、ホットスポットまたは画像マップをタップすると、指定した サイトページに移動します。[!DNL Experience Manager]
 
 ## Dynamic Media でのアセットの選択 {#selecting-assets}
 
@@ -97,7 +97,7 @@ ht-degree: 52%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   「**[!UICONTROL パス]**」フィールドで別のExperience Managerーに移動して、アセットを参照する場所を変更できます。
+   「**[!UICONTROL パス]**」フィールドで別のフォルダーに移動して、[!DNL Experience Manager]がアセットを参照する場所を変更できます。
 
    コレクション内のアセットのみを検索するには、「**[!UICONTROL コレクション]**」をタップします。
 
