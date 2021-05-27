@@ -5,10 +5,10 @@ breadcrumb-title: リリースノート
 user-guide-description: このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。
 feature: リリース情報
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: 1916ff5f9cd6227e548d809c0cb1a584d76afb75
+source-git-commit: d27f9d394edef827a119212c9024ecfaf46d2ce8
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '122'
+ht-degree: 96%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 100%
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [リリースノート（2021.4.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-4-0.md)
       + [リリースノート（2021.3.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-3-0.md)
       + [リリースノート（2021.2.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-2-0.md)
       + [リリースノート（2021.1.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-1-0.md)
@@ -38,3 +39,5 @@ ht-degree: 100%
 + [AEM Cloud Service の主要な変更点](aem-cloud-changes.md)
 + [既知の問題](known-issues.md)
 + [廃止される機能および削除された機能](deprecated-removed-features.md)
++ [非推奨API](deprecated-apis.md)
++ [プレリリースチャネル](prerelease.md)
