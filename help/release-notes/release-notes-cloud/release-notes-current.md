@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
+source-git-commit: 37e431d70bc7e11097b9d59faed4b654b9087656
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 8%
+source-wordcount: '986'
+ht-degree: 13%
 
 ---
 
@@ -23,128 +23,85 @@ ht-degree: 8%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager]のCloud Service2021.4.0のリリース日は2021年5月6日です。
-次のリリース(2021.5.0)は2021年5月28日に予定されています。
+[!DNL Adobe Experience Manager]のCloud Service2021.5.0のリリース日は2021年5月27日です。
+次のリリース(2021.6.0)は、2021年6月25日に予定されています。
 
-## AEM as a Cloud Service の基盤{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service の基盤 {#foundation}
 
-### 新機能 {#what-is-new-foundation}
+### AEM as a Cloud Service基盤の新機能{#what-is-new-foundation}
 
-* [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)  — 新しいワークフローモデルと手順により、コンテンツの深い階層を公開する際のパフォーマンスが向上します。
+* [プレリリースチャネル](/help/release-notes/prerelease.md):本番運用開始前の1ヶ月間に予定されている機能のプレビュー
+
+* [APIの廃止](/help/release-notes/deprecated-apis.md):AEM as a Experienceの最新の非推奨APIのリストをご利用いただけます。Cloud Service
+
+* [AEM as aCloud ServiceSDK Build Analyzer Mavenプラグイン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):非推奨のJava APIチェックやその他の改善点を含む、Mavenプロジェクトを最新バージョンに更新します。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### [!DNL Sites] の新機能 {#what-is-new-sites}
 
-* GraphQLエンドポイント — 新しいGraphQLコンソールUIを使用して、個々のAEM Sites設定に対してAEM GraphQL APIを有効にし、これらの設定に対してカスタムGraphQLエンドポイントを作成できるようになりました。 また、UIではGraphQLエンドポイントを管理できます。
-
-* コンテンツモデル、日付と時刻のデータタイプの強化 — 日付と時刻のみ、時間、または日時の情報をオーサリングできるように、日付と時刻のデータタイプを設定できるようになりました。
-
-* コンテンツモデル、タグデータタイプの機能強化 — 1つまたは複数のタグのオーサリングを許可するように、タグデータタイプを設定できるようになりました。
-
-* コンテンツモデル、新しいタブプレースホルダーデータタイプ — 新しいタブプレースホルダーデータタイプを使用すると、データタイプを、コンテンツフラグメントエディターのタブの下にレンダリングされるセクションにグループ化できます。
-
-### [!DNL Sites] のバグ修正 {#bug-fixes-sites}
-
-* コンテンツフラグメント — コンテンツフラグメントまたはフォルダーを移動すると、フラグメント内のネストされた参照が更新されるようになりました(CQ-4320815)
-
-* GraphQL — 永続化されたクエリで、AEM Sites設定に固有のユーザー定義エンドポイントがサポートされるようになりました(CQ-4315928)
+* 近日中に、新しい[プレビュー層](/help/sites-cloud/authoring/fundamentals/previewing-content.md)でコンテンツを検証して、パブリッシュ層と同じように最終的なエクスペリエンスのルックアンドフィールをシミュレートできます。 これは、AEM Sites Managed Publishionウィザードで有効になり、公開またはプレビューのどちらかの公開先を選択できるようになりました。 プレビュー時のエクスペリエンスは、専用のURLからアクセスできます。 プレビューでの検証後、通常どおりコンテンツをオーサーからパブリッシュに公開できます。 AEM as a Cloud Service環境でのPreview Serviceの有効化は、今後数週間で徐々に展開される予定です。
 
 ## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能強化により、ダウンロードを高速化できます。 [アセットのダウンロード](/help/assets/download-assets-from-aem.md)を参照してください。
+* リンク共有機能を使用して、共有したアセットをダウンロードできます。 このダウンロードでは、非同期サービスを使用するようになり、非常に大きなダウンロードでも、高速で中断のないダウンロードを提供します。 [アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)を参照してください。
 
-* リンク共有オプションを使用してアセットをダウンロードする場合、レンディションをダウンロードするかどうかを選択できるようになりました。 以前は、すべてのアセットレンディションがダウンロードされていました。 [ダウンロードオプション](/help/assets/download-assets-from-aem.md)を参照してください。
+   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
 
-* ヘルスチェックを実行してアセットを一括で読み込む際に、Experience Managerにエラーの詳細な情報が表示されるようになりました。 [一括アセット取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
+### プレリリースチャネルで使用できる新機能{#what-is-new-assets-prerelease}
 
-* 一括読み込みツールを使用してアセットを読み込む場合、管理者は、読み込みが成功した後でソースファイルを削除するオプションが追加されました。 [一括アセット取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
+* メタデータスキーマは、フォルダーのプロパティに直接適用できます。
 
-* 管理者は、メタデータスキーマを編集する際に、新しいルートパスセレクターフィールドを使用して、すばやく簡単に選択できます。 この機能強化により、メタデータの設定時間を短縮できます。
+   ![フォルダープロパティからのメタデータスキーマの追加](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* 多くのアセットのメタデータは、CSVファイルを使用して一括で読み込んだり、CSVファイルに書き出したりできます。 デフォルトの日付形式は`yyyy-MM-dd'T'HH:mm:ss.SSSXXX`になりました。 ユーザーは、列ヘッダーを更新することで、別の形式を利用できます。 例えば、CSVファイルの列ヘッダーとして`Date`という単語ではなく`Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`を追加します。 [メタデータのインポート](/help/assets/metadata-import-export.md)を参照してください。
+* アセット一括取り込みツールを使用すると、一括取り込み中にメタデータを追加できます。
 
-* 列表示でアセットを参照すると、各アセットの承認ステータスまたは却下ステータスが視覚的なインジケーターで表示されます。
+* ユーザーエクスペリエンスの機能強化では、フォルダー内に存在するアセットの数が表示されます。 1つのフォルダー内のアセットが1000個を超える場合、[!DNL Assets]には1000以上と表示されます。
 
-* 列表示でアセットを参照すると、有効期限切れのアセットに関するインジケーターが表示されます。
+   ![フォルダー内のアセット数がインターフェイスに表示されます](/help/assets/assets/browse-folder-number-of-assets.png)
 
-* テキスト領域のデータタイプは、[!DNL Assets]メタデータエディターで使用できます。 このオプションを使用すると、ユーザーが自由形式のテキストフィールドにメタデータを入力できるようになります。
+### [!DNL Assets] で修正されたバグ {#assets-bugs-fixed}
 
-### [!DNL Assets] のバグ修正 {#bug-fixes-assets}
+* 非常に大きなファイルをアップロードすると、[!DNL Experience Manager desktop app]がクラッシュします。 （CQ-4320942）
+* フォルダー内で同じコレクションが選択されている場合と、検索結果から同じコレクションが選択されている場合で、ツールバーのオプションは異なります。 （CQ-4321406）
 
-* 複数のアセットまたはフォルダーを移動しようとすると、エラーがコンソールに記録され、移動操作が完了しません。 タイトルを更新できない場合、移動操作は失敗します。 （CQ-4322080）
+#### Dynamic Mediaの新機能{#what-is-new-dm}
 
-* 定義済みの条件を満たした場合にメタデータが必須でないように、ルールに基づいてメタデータフィールドを非表示にできます。 ただし、非表示のメタデータフィールドは、必須フィールドとして表示されます。 （CQ-4321285）
+* スマートイメージングDPR(Device Pixel Ratio)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 詳しくは、[スマートイメージングのFAQ](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
 
-* 日付形式が正しくないため、一括メタデータの読み込みに失敗します。 （CQ-4319014）
+   >[!NOTE]
+   >
+   >上記のスマートイメージング機能強化のリリースタイムラインは、次のとおりです。
+   >
+   >* 北米2021年5月24日、NA、
+      >
+      >
+   * ヨーロッパ、中東、アフリカ2021年6月25日、
+      >
+      >
+   * アジア太平洋2021年7月19日。
 
-* プロパティページでメタデータを更新するように選択すると、スキーマで多くのオプションが提供される場合、インターフェイスの応答が遅くなります。 （CQ-4318538）
 
-* 1行のテキストフィールドでメタデータ値を更新および保存すると、ドロップダウンメニューで編集が無効になっている場合でも、ドロップダウンメニューの値が削除されます。 （CQ-4317077）
+* Dynamic Media配信で、次世代画像形式AVIFのサポートが導入されました（fmt URL修飾子）。
 
-* アセットをレビューする際には、省略記号を注釈として使用できます。 小さな楕円を使用すると、楕円は印刷版の注釈の数と重なります。 （CQ-4316792）
-
-## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
-
-### [!DNL Forms] の新機能 {#what-is-new-forms}
-
-[AEM FormsをCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)として使用して、デジタルフォームの作成、既存のデータソースへのフォームの接続、Adobe Signとのフォームの統合、フォームへの電子署名の追加、レコードのドキュメント(DoR)の生成を行い、送信されたフォームをPDFファイルとしてアーカイブできます。 また、変換サービスを使用して、既存のPDF formsをデジタルフォームに変換することもできます。 このサービスは、AEM Formsの標準的な機能に加えて、自動スケーリング、アップグレードのダウンタイムなし、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。 AEM Forms as aCloud Serviceの機能については、[このブログ記事](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)を参照してください。
-
-* **Adobe Sign対応アダプティブFormsで政府機関ID認証方法を使用する**
-
-   高度な機械学習アルゴリズムを活用したAdobe Signの政府IDプロセスにより、世界中の企業が受信者のIDの高品質な認証を保護できます。 Adobe Sign対応のアダプティブFormsで、政府機関ID認証方式を使用できるようになりました。
-
-   政府IDは、政府発行のID文書（運転免許証、国別ID、パスポート）](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)の画像を[アップロードし、その文書を評価して、正当なID認証方式です。
-
-* **非同期のアダプティブフォーム送信に対してフォーム内署名機能を使用するサポート**
-
-   非同期のアダプティブフォーム送信に対して、フォーム内署名機能を使用できるようになりました。 アダプティブフォームを[!DNL Experience Manager Sites]ページに埋め込み、アダプティブフォーム送信時にフォーム内署名機能を使用することもできます。
-
-* **変数を使用して添付ファイルを指定し、アダプティブフォームにタスクの割り当て手順を事前入力する際のサポート**
-
-   アダプティブフォームをタスクの割り当て手順用に事前入力する際に、ドキュメントタイプ変数を使用してアダプティブフォームの入力添付ファイルを選択できるようになりました。
-
-* **リテラルオプションを使用してJSONタイプの変数の値を設定する機能をサポート**
-
-   リテラルオプションを使用して、AEM Workflowの変数設定手順でJSONタイプの変数の値を設定できます。 リテラルオプションを使用すると、文字列の形式でJSONを指定できます。
-
-* **ローカル開発環境を使用したレコードのドキュメント(DoR)の作成**
-
-   XDPを、Cloud Serviceインスタンス上のレコードのドキュメントテンプレートとして使用し、AEM FormsをCloud ServiceSDK(ローカル開発環境)として使用できます。 以前は、サポートはCloud Serviceインスタンスのみに制限されていました。
-
-### [!DNL Forms] のバグ修正 {#bug-fixes-forms}
-
-* レコードのドキュメントを生成しないように設定されたアダプティブフォームが、レコードのドキュメントを生成するように設定されたAEMワークフローに送信された場合、エラーメッセージは表示されず、タスクの送信に失敗します。
-
-### その他の更新{#misc-2021-04-0-forms}
-
-* コンテンツを認識しやすくするために、サービスでXDP、ダイナミックPDF、スキーマファイル用のライブサムネールが生成されるようになりました。
-* AEM Forms UIで、PDFファイルを配置されたフォルダーに移動する機能を追加しました。
-
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
-
-### 新機能 {#what-is-new-commerce}
-
-* カテゴリUIDのサポート — カテゴリIDに文字列を使用するシステム用のサードパーティコマース統合のロックを解除します
-
-* AEM extension forPWA Studio（を含む） 統合の例
-
-* WCMナビゲーションコアコンポーネントを拡張する新しいCIFナビゲーションコアコンポーネント
-
-* AEMストアフロントのステージング済みカタログデータの視覚的インジケーター
-
-* コマースエンドポイントがCloud Manager UIから設定できるようになりました。
-
-### バグ修正 {#bug-fixes-commerce}
-
-* カテゴリページのページプロパティの「コマース」タブに、ルートカテゴリフィールドが表示されなかった問題を修正しました。
+   >[!NOTE]
+   >
+   >AVIFサポートのリリースタイムラインは次のとおりです。
+   >
+   >* 北米2021年5月10日、
+      >
+      >
+   * ヨーロッパ、中東、アフリカ2021年5月24日、
+      >
+      >
+   * アジア太平洋2021年6月24日。
 
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as aCloud Service2021.5.0および2021.4.0のCloud Managerのリリースノートの概要を説明します。
+この節では、AEM as a Cloud Service 2021.5.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
 ### リリース日 {#release-date-cm-may}
 
@@ -185,42 +142,6 @@ AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6�
 
 * サンドボックスプログラムの設定中に、サンプルコードを含むプロジェクトが正常に作成されると、「 Gitを管理」が概要ページのヒーローカードからのリンクとして表示されます。
 
-### リリース日 {#release-date-cm-april}
-
-AEM as aCloud Service2021.4.0のCloud Managerのリリース日は2021年4月8日です。
-
-### 新機能 {#what-is-new-april}
-
-* プログラムの追加と編集ワークフローのUIが更新され、より直感的になりました。
-
-* 必要な権限を持つユーザーが、UIを使用してコマースエンドポイントを送信できるようになりました。
-
-* 環境変数を、オーサーまたはパブリッシュのいずれかの特定のサービスに対してスコープできるようになりました。 AEMのバージョン`2021.03.5104.20210328T185548Z`以降が必要です。
-
-* パイプラインが設定されていない場合でも、「 **Gitを管理** 」ボタンがパイプラインカードに表示されます。
-
-* Cloud Managerで使用されるAEMプロジェクトのアーキタイプのバージョンが、バージョン27に更新されました。
-
-* Cloud Managerで作成されたAdobe I/O開発者コンソールのプロジェクトは、意図せず編集または削除できなくなりました。
-
-* ユーザーが新しい環境を追加すると、環境を作成した後は別の地域に移動できないという通知が表示されます。
-
-* 環境変数を、オーサーまたはパブリッシュのいずれかの特定のサービスに対してスコープできるようになりました。 AEMバージョン2021.03.5104.20210328T185548Z以降が必要です。
-
-* 環境が削除されたときにパイプラインを開始する際に発生するエラーメッセージがわかりやすくなりました。
-
-* Eclipseプロジェクトで提供されるOSGiバンドルがルール`CQBP-84--dependencies`から除外されるようになりました。
-
-### バグ修正 {#bug-fixes-cm-april}
-
-* パイプラインのエクスペリエンス監査ページを編集する際に、スラッシュ`( / )`で始まる入力パスによって、ステップが保留中ステータスのままにならなくなりました。
-
-* 新しい実稼動パイプラインが作成された際に、ユーザーがコンテンツ監査の上書きを追加しなかった場合、デフォルトのホームページは監査されませんでした。
-
-* `CloudServiceIncompatibleWorkflowProcess`の問題は、ダウンロード可能な問題のCSVファイルで間違った重大度を持っていました。
-
-* `Runmode`チェックが、非フォルダーノードで偽陽性を生成していました。
-
 ## コンテンツ転送ツール {#content-transfer-tool}
 
 ### リリース日 {#release-date-ctt}
@@ -237,14 +158,14 @@ AEM as aCloud Service2021.4.0のCloud Managerのリリース日は2021年4月8�
 * コンテンツ転送ツールUIの自動更新機能に関する複数のバグ修正がおこなわれました。
 * `wipe=true`を含むコンテンツ転送ツールがターゲットのカウンターインデックスに正しくなかった問題を修正しました。 この問題が修正されました。
 
-## ベストプラクティスアナライザー {#best-practices-analyzer}
+## Commerce アドオン {#cloud-services-commerce}
 
-### リリース日 {#release-date-bpa}
+### 新機能 {#what-is-new-commerce}
 
-Best Practices Analyzer v2.1.12のリリース日は2021年4月13日です。
+* 製品コンソールのプロパティでの関連コンテンツのページネーションのサポート
 
-### バグ修正 {#bug-fixes-bpa-april}
+### バグ修正 {#bug-fixes-commerce}
 
-* BPAレポートで、重複した行が見つかりました。 この問題が修正されました。
-* AEMバージョン6.4.2のBPA UIで、「レポートの生成」ボタンを無効にするJSエラーが発生していました。 この問題が修正されました。
+* 製品プロパティの「アセット」タブにアセットサムネールが表示されない
 
+* 製品コンソールのプレビューデータをリセットするパンくずリスト
