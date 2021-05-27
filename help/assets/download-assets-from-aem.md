@@ -5,16 +5,16 @@ contentOwner: AG
 feature: アセット管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1069bbe8483a6504305f48cad43aec9e1c0d5169
+source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 88%
+source-wordcount: '1016'
+ht-degree: 78%
 
 ---
 
 # [!DNL Adobe Experience Manager] からのアセットのダウンロード {#download-assets-from-aem}
 
-静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。または、アセットへのリンクを含む電子メールを [!DNL Adobe Experience Manager Assets] から直接送信できます。ダウンロードされたアセットは、ZIP ファイルにバンドルされています。書き出しジョブ用に圧縮する ZIP ファイルの最大サイズは 1 GB です。書き出しジョブあたり、最大で 500 個のアセットの合計を指定できます。
+静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。または、アセットへのリンクを含む電子メールを [!DNL Adobe Experience Manager Assets] から直接送信できます。ダウンロードされたアセットは、ZIP ファイルにバンドルされています。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
 >[!NOTE]
 >
@@ -25,6 +25,7 @@ ht-degree: 88%
 Adobe Experience Manager アセットをダウンロードするには、次のいずれかの方法を使用します。
 
 * [Adobe Experience Manager ユーザーインターフェイス](#download-assets)
+* [リンク共有](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)
 * [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#download-assets)
@@ -63,6 +64,16 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
    | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを[画像プリセット](/help/assets/dynamic-media/image-presets.md)リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
+
+## リンク共有{#link-share-download}を使用して共有されたアセットをダウンロードする
+
+リンクを使用したアセットの共有は、関心のある人が[!DNL Assets]にログインしなくても利用できる便利な方法です。 アセットを共有するURLを生成するには、[リンク共有機能](/help/assets/share-assets.md#sharelink)を使用します。
+
+ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets]は非同期サービスを使用して、すばやく中断のないダウンロードを実現します。 ダウンロードされるアセットは、管理可能なファイルサイズのZIPアーカイブのインボックス内のバックグラウンドにキューに入れられます。 非常に大きなダウンロードの場合、ダウンロードは100 GBのファイルにまとめられます。
+
+インボックスに各アーカイブの処理ステータスが表示されます。 処理が完了したら、インボックスからアーカイブをダウンロードできます。
+
+![ダウンロードインボックス](assets/download-inbox.png)
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
