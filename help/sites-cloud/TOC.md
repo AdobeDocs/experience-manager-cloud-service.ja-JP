@@ -6,10 +6,10 @@ breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 feature: オーサリング
 role: Business Practitioner
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: e736b80e0bee80b5f3df6451b63b306c546d0912
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 100%
+source-wordcount: '310'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 100%
       + [ページのコンテンツの編集](authoring/fundamentals/editing-content.md)
       + [リッチテキストエディター](authoring/fundamentals/rich-text-editor.md)
       + [ページプロパティ](authoring/fundamentals/page-properties.md)
+      + [コンテンツのプレビュー](authoring/fundamentals/previewing-content.md)
       + [ページの公開](authoring/fundamentals/publishing-pages.md)
       + [コンテンツフラグメント](authoring/fundamentals/content-fragments.md)
       + [エクスペリエンスフラグメント](authoring/fundamentals/experience-fragments.md)
