@@ -1,14 +1,14 @@
 ---
-title: アセット、フォルダー、コレクションをリンクとして共有
-description: ここでは、Adobe [!DNL Experience Manager Assets] 内のアセット、フォルダー、コレクションをハイパーリンクとして共有する方法について説明します。
+title: アセット、フォルダーおよびコレクションの配布と共有
+description: リンクとして共有、ダウンロード、経由 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]などの方法を使用して、デジタルアセットを配布します。
 contentOwner: AG
 feature: アセット管理，コラボレーション，アセット配布
 role: Business Practitioner,Administrator
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 98%
+source-wordcount: '754'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 [!DNL Adobe Experience Manager Assets] では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] のアセットを共有するには、次の方法を使用します。
 
-* リンクとして共有。
+* [リンクとして共有](#sharelink).
 * [アセットをダウンロードし、個別に共有します。](/help/assets/download-assets-from-aem.md)
 * [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用して共有します。
 * [[!DNL Adobe Asset Link]](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)を使用して共有します。
@@ -26,10 +26,12 @@ ht-degree: 98%
 
 ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクによるアセットの共有は、外部の関係者が [!DNL Assets] にログインすることなくリソースを利用するための便利な方法です。
 
+![リンク共有ダイアログ](assets/link-share-dialog.png)
+
 >[!NOTE]
 >
 >* リンクとして共有するフォルダーやアセットに対する編集の ACL 権限が必要です。
->* リンクをユーザーと共有する前に、[送信電子メールが有効](/help/implementing/developing/introduction/development-guidelines.md#sending-email)になっていることを確認します。そうでない場合は、エラーが発生します。
+>* ユーザーとリンクを共有する前に、[送信電子メール](/help/implementing/developing/introduction/development-guidelines.md#sending-email)を有効にします。 そうでない場合は、エラーが発生します。
 
 
 1. [!DNL Assets] のユーザーインターフェイスで、リンクとして共有するアセットを選択します。
