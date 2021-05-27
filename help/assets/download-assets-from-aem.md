@@ -5,10 +5,10 @@ contentOwner: AG
 feature: アセット管理
 role: Business Practitioner
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 6480ae8abe194dc5561658ccbd87a30447959721
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 78%
+source-wordcount: '896'
+ht-degree: 88%
 
 ---
 
@@ -24,8 +24,9 @@ ht-degree: 78%
 
 Adobe Experience Manager アセットをダウンロードするには、次のいずれかの方法を使用します。
 
+<!-- * [Link Share](#link-share-download) -->
+
 * [Adobe Experience Manager ユーザーインターフェイス](#download-assets)
-* [リンク共有](#link-share-download)
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)
 * [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#download-assets)
@@ -65,15 +66,17 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-## リンク共有{#link-share-download}を使用して共有されたアセットをダウンロードする
+<!-- TBD: Commenting from May release because the feature is moved to June release 2021.6.0.
+## Download assets shared using link sharing {#link-share-download}
 
-リンクを使用したアセットの共有は、関心のある人が[!DNL Assets]にログインしなくても利用できる便利な方法です。 アセットを共有するURLを生成するには、[リンク共有機能](/help/assets/share-assets.md#sharelink)を使用します。
+Sharing assets using a link is a convenient way to make it available to interested people without them having to first log in to [!DNL Assets]. To generate a URL to share assets, use the [Link Share functionality](/help/assets/share-assets.md#sharelink). 
 
-ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets]は非同期サービスを使用して、すばやく中断のないダウンロードを実現します。 ダウンロードされるアセットは、管理可能なファイルサイズのZIPアーカイブのインボックス内のバックグラウンドにキューに入れられます。 非常に大きなダウンロードの場合、ダウンロードは100 GBのファイルにまとめられます。
+When users download assets from shared links, [!DNL Assets] uses an asynchronous service that offers faster and and uninterrupted downloads. The assets to be downloaded are queued in the background in an inbox into ZIP archives of manageable file size. For very large downloads, the download is chunked into files of 100 GB in size.
 
-インボックスに各アーカイブの処理ステータスが表示されます。 処理が完了したら、インボックスからアーカイブをダウンロードできます。
+The inbox displays the processing status of each archive. Once the processing is complete, you can download the archives from the inbox.
 
-![ダウンロードインボックス](assets/download-inbox.png)
+![Download inbox](assets/download-inbox.png)
+-->
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
