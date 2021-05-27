@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 740b710cf21ef967f140ef1984268d9e82ea4059
+source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 13%
+source-wordcount: '939'
+ht-degree: 14%
 
 ---
 
@@ -61,9 +61,9 @@ ht-degree: 13%
 * 非常に大きなファイルをアップロードすると、[!DNL Experience Manager desktop app]がクラッシュします。 （CQ-4320942）
 * フォルダー内で同じコレクションが選択されている場合と、検索結果から同じコレクションが選択されている場合で、ツールバーのオプションは異なります。 （CQ-4321406）
 
-#### Dynamic Mediaの新機能{#what-is-new-dm}
+#### [!DNL Dynamic Media] の新機能 {#what-is-new-dm}
 
-* スマートイメージングDPR(Device Pixel Ratio)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 詳しくは、[スマートイメージングのFAQ](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
+* スマートイメージングデバイスのピクセル比(DPR)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 [スマートイメージングのFAQ](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ ht-degree: 13%
    * アジア太平洋2021年7月19日。
 
 
-* Dynamic Media配信で、次世代画像形式AVIFのサポートが導入されました（fmt URL修飾子）。
+* [!DNL Dynamic Media]配信での次世代画像形式AVIFのサポートが導入されました（fmt URL修飾子）。
 
    >[!NOTE]
    >
