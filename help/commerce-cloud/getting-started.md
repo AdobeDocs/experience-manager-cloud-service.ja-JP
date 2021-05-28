@@ -8,16 +8,16 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 38%
+source-wordcount: '1065'
+ht-degree: 36%
 
 ---
 
 # AEM Commerce as a Cloud Service - はじめに {#start}
 
-AEM Commerce as a Cloud Service の使用を開始するには、Experience Manager Cloud Service が Commerce Integration Framework（CIF）アドオンによりプロビジョニングされている必要があります。CIF アドオンは、[AEM Sites as a Cloud Service](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/home.html) の追加モジュールです。
+AEM Commerce as a Cloud Service の使用を開始するには、Experience Manager Cloud Service が Commerce Integration Framework（CIF）アドオンによりプロビジョニングされている必要があります。CIF アドオンは、[AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/home.html) の追加モジュールです。
 
 ## オンボーディング {#onboarding}
 
@@ -28,7 +28,7 @@ AEM Commerce as a Cloud Service のオンボーディングは、次の 2 つの
 
 最初のオンボーディング手順はアドビがおこないます。価格とプロビジョニングの詳細については、セールス担当者にお問い合わせください。
 
-CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、新しく作成する必要があります。詳しくは、「[プログラムの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)」を参照してください。
+CIF アドオンのプロビジョニングが完了すると、既存の Cloud Manager プログラムに適用されます。Cloud Manager プログラムがない場合は、新しく作成する必要があります。詳しくは、「[プログラムの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html)」を参照してください。
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定をおこなう必要があります。
 
@@ -69,7 +69,7 @@ AEMをAdobe I/OCLIを介してコマースソリューションに接続する�
 
 1. Cloud Manager プラグインと Adobe I/O CLI を取得します。
 
-   [Cloud Manager CLIAdobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)を使用して[AdobeCLI](https://github.com/adobe/aio-cli)をダウンロード、設定、使用する方法については、[Cloud Managerのドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)を参照してください。
+   [Cloud Manager CLIAdobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)を使用して[AdobeCLI](https://github.com/adobe/aio-cli)をダウンロード、設定、使用する方法については、[Cloud Managerのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)を参照してください。
 
 2. Adobe I/OCLIをAEM as aでCloud Service
 
