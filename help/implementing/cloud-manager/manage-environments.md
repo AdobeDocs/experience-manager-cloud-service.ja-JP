@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0dc99c6e5e34e6115a61e18de77cfd040057d832
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 99%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 99%
 
 **開発者コンソール**&#x200B;にアクセスできるのは、開発者ロールのユーザーだけです。サンドボックスプログラムの場合は例外で、Cloud Manager のサンドボックスプログラムにアクセスできるユーザーは誰でも、**開発者コンソール**&#x200B;にアクセスできます。
 
-詳しくは、[サンドボックス環境の休止と休止解除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)を参照してください。
+詳しくは、[サンドボックス環境の休止と休止解除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)を参照してください。
 
 
 ![](assets/environ-devconsole.png)
