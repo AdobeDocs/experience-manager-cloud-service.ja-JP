@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2512'
-ht-degree: 93%
+source-wordcount: '2506'
+ht-degree: 92%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 93%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
 ベストプラクティスアナライザー（BPA）を実行するには、次の重要事項を考慮してください。
 
-* BPA レポートは、Adobe Experience Manager（AEM）[パターン検出](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/upgrading/pattern-detector.translate.html)の出力を使用して作成されます。BPA で使用するパターン検出のバージョンは、BPA インストールパッケージに含まれています。
+* BPA レポートは、Adobe Experience Manager（AEM）[パターン検出](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)の出力を使用して作成されます。BPA で使用するパターン検出のバージョンは、BPA インストールパッケージに含まれています。
 
 * BPA は、**管理者**&#x200B;ユーザーまたは&#x200B;**管理者**&#x200B;グループのユーザーのみが実行できます。
 
@@ -47,7 +47,7 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。
 
 >[!NOTE]
-[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/jp/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
+[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
@@ -240,8 +240,8 @@ BPA キャッシュのデフォルトの有効期間は 24 時間です。レポ
 
 BPA は、パターンディテクターの実行に `repository-reader-service` と名付けられたシステムサービスユーザーアカウントを使用します。このアカウントは、AEM 6.2 以降で使用できます。AEM 6.1 では、BPA をインストールする&#x200B;*前に*、次の手順でこのアカウントを作成する必要があります。
 
-1. [新しいサービスユーザーの作成](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/security/security-service-users.translate.html#creating-a-new-service-user)の手順に従って、ユーザーを作成します。UserID を `repository-reader-service` に設定し、中間パスを空のままにして、緑のチェックマークをクリックします。
+1. [新しいサービスユーザーの作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)の手順に従って、ユーザーを作成します。UserID を `repository-reader-service` に設定し、中間パスを空のままにして、緑のチェックマークをクリックします。
 
-2. [ユーザーとグループの管理の手順](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/security/security.translate.html#managing-users-and-groups)に従います。特に、`repository-reader-service` ユーザーを `administrators` グループに追加する手順については、ユーザーをグループに追加の手順を参照してください。
+2. [ユーザーとグループの管理の手順](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)に従います。特に、`repository-reader-service` ユーザーを `administrators` グループに追加する手順については、ユーザーをグループに追加の手順を参照してください。
 
 3. パッケージマネージャーを介して BPA パッケージをソース AEM インスタンスにインストールします。（これにより、`repository-reader-service` システムサービスユーザーの ServiceUserMapper 構成に必要な構成の修正が追加されます）
