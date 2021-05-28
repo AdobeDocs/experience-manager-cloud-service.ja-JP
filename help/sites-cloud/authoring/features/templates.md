@@ -2,9 +2,9 @@
 title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義し、テンプレートエディターにより、テンプレートの作成および維持は、もはや開発者のみのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4596'
 ht-degree: 100%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 100%
 >
 >国際化する必要がある情報は、テンプレートに含めないでください。<!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->ローカライズが必要なヘッダーやフッターなどのテンプレート要素の場合は、[コアコンポーネントのローカライゼーション機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/get-started/localization.html)を利用します。
+>ローカライズが必要なヘッダーやフッターなどのテンプレート要素の場合は、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja)を利用します。
 
 ### テンプレートフォルダーの作成 - 管理者 {#creating-a-template-folder-admin}
 
@@ -532,7 +532,7 @@ ht-degree: 100%
 >
 >初期コンテンツは、コンテンツを作成するための出発点となるコンポーネントおよびページレイアウトを準備するためのものです。そのまま残す実際のコンテンツとなるものではありません。そのため、初期コンテンツは変換できません。
 >
->ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html)を使用できます。
+>ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)を使用できます。
 
 ### テンプレートの編集 - レイアウト - テンプレート作成者 {#editing-a-template-layout-template-author}
 
