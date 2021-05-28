@@ -1,9 +1,9 @@
 ---
 title: 非推奨API
 description: リリースノート( [!DNL Adobe Experience Manager] の非推奨（廃止予定）のAPIとa [!DNL Cloud Service]として削除)。
-source-git-commit: 3c4b8f8d9b252cfc90823c475a4e21eefd1dfcf7
+source-git-commit: 788727ce2e6b26f5da647c9ffd8267d958e3b226
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 7%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 7%
     <td>org.apache.sling.settings</td>
     <td>AEM as aCloud Serviceは、実行モードや実行時のファイルシステムアクセスをサポートしていません。 </td>
     <td>10/5/20</td>
-    <td>6/1/21</td>
+    <td>2021年末</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
