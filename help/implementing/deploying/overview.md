@@ -3,9 +3,9 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: デプロイ
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: abc41d6d9388a8ca63643bd2afd09982811ac490
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3290'
 ht-degree: 94%
 
 ---
@@ -20,8 +20,10 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 このドキュメントの残りの部分では、AEM as a Cloud Service のバージョンアップデートと顧客側でのアップデートの両方に対応できるように、開発者が開発のベストプラクティスをどのように適応させるべきかについて説明します。
 
+<!--
 >[!NOTE]
->コードベースが既にある場合は、[AEM ドキュメント](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)に記載されているリポジトリー再構築の演習を完了することをお勧めします。
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html).
+-->
 
 ## お客様向けリリース {#customer-releases}
 
@@ -40,8 +42,10 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
+<!--
 >[!NOTE]
->コードベースが既にある場合は、[AEM ドキュメント](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html)に記載されているリポジトリー再構築の演習を完了することをお勧めします。
+>It is recommended for customers with existing code bases, to go through the repository restructuring exercise described in the [AEM documentation](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/authoring/restructure.html). 
+-->
 
 ## Cloud Manager とパッケージマネージャーを使用したコンテンツパッケージのデプロイ {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
@@ -102,7 +106,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
    * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。 AEM CSは現在、Filevaultバージョン3.4.0を使用しています（これは、インストールフックを管理者ユーザー、システムユーザー、管理者グループのメンバーに限定します）。
 
-`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5でおこなわれ、推奨されるプロジェクト再構築の詳細については、[AEM 6.5のドキュメントを参照してください。](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5でおこなわれ、推奨されるプロジェクト再構築の詳細については、[AEM 6.5のドキュメントを参照してください。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)
 
 >[!NOTE]
 > コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、パッケージマネージャーを使用して手動でインストールする必要があります。
@@ -111,7 +115,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
 
 サードパーティパッケージが含まれている場合は、それらが AEM as a Cloud Service と互換性があるかどうかを検証する必要があります。互換性がない場合は、それらのパッケージを組み込むとデプロイメントエラーが発生します。
 
-前述のように、コードベースが既にある場合は、[AEM 6.5のドキュメントに記載されている6.5リポジトリの変更に伴うリポジトリ再構築の演習に準拠する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)
+前述のように、コードベースが既にある場合は、[AEM 6.5のドキュメントに記載されている6.5リポジトリの変更に伴うリポジトリ再構築の演習に準拠する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
 
 ## repoinit {#repoinit}
 
