@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: アセット管理，公開，コラボレーション，アセット処理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 6c1320d43b551247e63962dd52ada58d463fb92e
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '4502'
 ht-degree: 90%
@@ -116,7 +116,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Asset Insights](assets-insights.md).
+To view usage statistics for an asset, in the [!UICONTROL Properties] page, click the **[!UICONTROL Insights]** tab. For more details, see [Assets Insights](assets-insights.md).
 
 [!DNL Experience Manager] also lets you check all the incoming references to an asset, that is, the usage of an asset in remote [!DNL Sites] and in compound assets. Authors of webpages on [!DNL Experience Manager Sites] deployment can use an asset on a remote [!DNL Assets] deployment using the Connected Assets functionality. The [!UICONTROL References] tab in an asset's [!UICONTROL Properties] page lists the local and remote references of the asset. That is, the use of assets in compound assets in [!DNL Assets] and its use in remote [!DNL Sites] pages.
 
