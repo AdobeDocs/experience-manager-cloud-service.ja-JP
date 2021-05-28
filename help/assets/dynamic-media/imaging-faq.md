@@ -4,10 +4,10 @@ description: Adobe Sensei AIを使用したスマートイメージングで、�
 feature: アセット管理，レンディション
 role: Business Practitioner
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: f500dd32a3f71357ced9687800945604a3455b48
+source-git-commit: 0da466bb4036c8093056223a96258b60f19d1b78
 workflow-type: tm+mt
-source-wordcount: '2634'
-ht-degree: 52%
+source-wordcount: '1925'
+ht-degree: 71%
 
 ---
 
@@ -35,52 +35,51 @@ ht-degree: 52%
 
 上記と同様に、アドビでもライブ顧客サイトの 7,009 件の URL でテストを実施しました。JPEG 用のファイルサイズの最適化は、平均で 38%も向上しました。WebP 形式の PNG の場合、ファイルサイズの最適化を平均で 31%向上させることができました。このような最適化は、スマートイメージングの機能によって可能となります。
 
-モバイルWebでは、課題は次の2つの要因で構成されます。
+<!-- CQDOC-17915. HIDDEN CONTENT AS PER APOORVA'S EMAIL FROM MAY 28, 2021 On the mobile web, the challenges are compounded by two factors:
 
-* フォームファクタが異なり、高解像度のディスプレイを備えた多様なデバイス。
-* ネットワーク帯域幅の制限
+* Large variety of devices with different form factors and high-resolution displays.
+* Constrained network bandwidth.
 
-画像に関しては、できるだけ効率的に最高品質の画像を提供することが目標です。
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
 
-### デバイスのピクセル比の最適化について {#dpr}
+### About device pixel ratio optimization {#dpr}
 
-デバイスピクセル比(DPR)（CSSピクセル比とも呼ばれます）は、デバイスの物理ピクセルと論理ピクセルの関係です。 特に、Retina画面の出現に伴い、最新のモバイルデバイスのピクセル解像度が急速に増加しています。
+Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
-デバイスのピクセル比の最適化を有効にすると、画像が画面のネイティブ解像度でレンダリングされ、画面が鮮明に見えます。
+Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it look crisp.
 
-スマートイメージングDPR設定をオンにすると、要求の提供元となるディスプレイのピクセル密度に基づいて、要求された画像が自動的に調整されます。 現在、表示のピクセル密度はAkamai CDNヘッダー値に基づいています。
+Turning on Smart Imaging DPR configuration automatically adjusts the requested image based on pixel density of the display the request is being served from. Currently, the pixel density of the display comes from Akamai CDN header values.
 
-| 画像のURLで許可されている値 | 説明 |
+| Permitted values in the URL of an image | Description |
 |---|---|
-| `dpr=off` | 個々の画像URLレベルでDPR最適化をオフにします。 |
-| `dpr=on,dprValue` | スマートイメージングで検出されたDPR値を、カスタム値（クライアント側のロジックまたはその他の手段で検出された値）で上書きします。 `dprValue`の許容値は0より大きい任意の数です。 1.5、2または3の指定値は一般的です。 |
+| `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
+| `dpr=on,dprValue` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical. |
 
 >[!NOTE]
 >
->* 会社レベルのDPR設定がオフの場合でも、`dpr=on,dprValue`を使用できます。
->* DPRの最適化により、結果の画像がMaxPix Dynamic Media設定より大きい場合、MaxPixの幅は常に画像の縦横比を維持することで認識されます。
+>* You can use `dpr=on,dprValue` even if the company level DPR setting as off.
+>* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio.
 
-
-| 要求された画像サイズ | DPR値 | 配信される画像サイズ |
+| Requested Image size | DPR value | Delivered image size |
 |---|---|---|
 | 816x500 | 1 | 816x500 |
 | 816x500 | 2 | 1632x1000 |
 
-[画像を操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)および[スマート切り抜きを使用する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)も参照してください。
+See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### ネットワーク帯域幅の最適化について{#network-bandwidth-optimization}
+### About network bandwidth optimization {#network-bandwidth-optimization}
 
-「ネットワーク帯域幅」をオンにすると、実際のネットワーク帯域幅に基づいて提供される画質が自動的に調整されます。 ネットワーク帯域幅が不十分な場合は、既にオンになっていても、DPRの最適化は自動的にオフになります。
+Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR optimization is automatically turned off, even if it is already on.
 
-必要に応じて、画像のURLに`network=off`を付けて、個々の画像レベルでネットワーク帯域幅の最適化をオプトアウトできます。
+If desired, your company can opt out of network bandwidth optimization at the individual image level by appending `network=off` to the URL of the image.
 
-| 画像のURLで許可されている値 | 説明 |
+| Permitted value in the URL of an image | Description |
 |---|---|
-| `network=off` | 個々の画像URLレベルでネットワークの最適化をオフにします。 |
+| `network=off` | Turns off network optimization at an individual image URL level. |
 
 >[!NOTE]
 >
->DPRとネットワーク帯域幅の値は、バンドルされたCDNの検出されたクライアント側の値に基づきます。 これらの値は不正確な場合があります。 例えば、DPR=2のiPhone5とDPR=3のiPhone12は、どちらもDPR=2と表示されます。 しかし、高解像度デバイスの場合は、DPR=1を送信するよりもDPR=2を送信する方が良いです。 準備中：Adobeは、エンドユーザーのDPRを正確に判断するために、クライアント側のコードで作業を進めています。
+>DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with DPR=3, both show DPR=2. Still, for high-resolution devices, sending DPR=2 is better than sending DPR=1. Coming soon: Adobe is working on client-side code to accurately determine an end user's DPR. -->
 
 ## 最新のスマートイメージングの主要なメリットとは {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -182,15 +181,15 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 スマートイメージングを使用するリクエストを開始します。自動的には有効になりません。
 
-Dynamic Mediaの会社アカウントでは、デフォルトで、スマートイメージングDPRとネットワーク最適化が無効（オフ）になっています。 これらの標準の機能強化の1つまたは両方を有効（オン）にする場合は、以下に説明するように、サポートケースを作成します。
+<!-- CQDOC-17915 HIDE AS PER EMAIL FROM APOORVA MAY 28 2021; WILL UNHIDE LATER By default, Smart Imaging DPR and network optimization is disabled (turned off) for a Dynamic Media company account. If you want to enable (turn on) one or both of these out-of-the-box enhancements, create a support case as described below.
 
-スマートイメージングDPRおよびネットワーク最適化のリリーススケジュールは次のとおりです。
+The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| 地域  | ターゲット日 |
+| Region | Target date |
 |---|---|
-| 北米 | 2021年5月25日 |
-| ヨーロッパ、中東、アフリカ | 2021年6月26日 |
-| アジア太平洋 | 2021年7月19日 |
+| North America | 24 May 2021 | 
+| Europe, Middle East, Africa | 25 June 2021 | 
+| Asia-Pacific | 19 July 2021 | -->
 
 1. [「 」Admin Consoleを使用して、サポートケースを作成します](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
 1. サポートケースには、次の情報を記入してください。
@@ -259,9 +258,9 @@ Dynamic Mediaの会社アカウントでは、デフォルトで、スマート�
 
 はい。URL に `bfc=off` 修飾子を追加して、スマートイメージングをオフにできます。
 
-## DPRおよびネットワーク最適化を会社レベルでオフにするようにリクエストできますか？{#dpr-companylevel-turnoff}
+<!-- CQDOC-17915 HIDE AS PER EMAIL FROM APOORVA MAY 28, 2021; WILL UNHIDE LATER ## Can I request DPR and network optimization to be turned off at the company level? {#dpr-companylevel-turnoff}
 
-はい。会社でDPRとネットワークの最適化を無効にするには、このトピックで前述したように、サポートケースを作成します。
+Yes. To disable DPR and network optimization at your company, create a support case as described earlier in this topic. -->
 
 ## どの「チューニング」が使用できますか。定義できる設定やビヘイビアーはありますか。{#tuning-settings}
 
@@ -275,10 +274,10 @@ Dynamic Mediaの会社アカウントでは、デフォルトで、スマート�
 
 スマートイメージングは、変換が有益かどうかを判断します。変換結果のファイルサイズが同等の画質で小さくなる場合にのみ、新しい画像が返されます。
 
-## スマートイメージングDPRの最適化は、Adobe Experience Manager SitesコンポーネントとDynamic Mediaビューアでどのように機能しますか？
+<!-- CQDOC-17915 HIDE AS PER EMAIL FROM APOORVA MAY 28, 2021; WILL UNHIDE LATER ## How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites components and Dynamic Media viewers?
 
-* Experience Managerサイトコアコンポーネントは、DPRの最適化のためにデフォルトで設定されています。 サーバー側のスマートイメージングDPRの最適化による画像のサイズ超過を避けるために、 `dpr=off`は常にExperience ManagerサイトコアコンポーネントDynamic Media画像に追加されます。
-* Dynamic Media Foundationコンポーネントは、デフォルトでDPR最適化用に設定されているので、サーバー側のスマートイメージングDPRの最適化に伴う画像のサイズ超過を防ぐため、Dynamic Media Foundationコンポーネントの画像には常に`dpr=off`が追加されます。 お客様がDM基盤コンポーネントでDPRの最適化を選択解除しても、サーバー側のスマートイメージングDPRは開始されません。 要約すると、DM基盤コンポーネントでは、DPRの最適化はDM基盤コンポーネントレベルの設定に基づいてのみ有効になります。
-* ビューア側のDPRの最適化は、サーバ側のスマートイメージングDPRの最適化と連携して機能し、画像のサイズが大きくなることはありません。 つまり、ズーム対応ビューアのみのメインビューなど、ビューアでDPRが処理される場所であれば、サーバー側のスマートイメージングDPR値はトリガーされません。 同様に、スウォッチやサムネールなどのビューア要素にDPR処理がない場合は、サーバー側のスマートイメージングDPR値がトリガーされます。
+* Experience Manager Sites Core Components are configured by default for DPR optimization. To avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Experience Manager Sites Core Components Dynamic Media images.
+* Given Dynamic Media Foundation Component is configured by default for DPR optimization, to avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Dynamic Media Foundation Component images. Even if customer deselects DPR optimization in DM Foundation Component, server-side Smart Imaging DPR does not kick in. In summary, in the DM Foundation Component, DPR optimization comes into effect based on DM Foundation Component level setting only.
+* Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
 
-[画像を操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)および[スマート切り抜きを使用する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)も参照してください。
+See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop). -->
