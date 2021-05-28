@@ -4,10 +4,10 @@ description: 'Adobe Target との統合 '
 feature: 管理
 role: Administrator
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 82%
+source-wordcount: '1037'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 82%
 Adobe Experience Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルでターゲット設定と測定をおこない、コンテンツの関連性を高めることができます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
 
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
-* [Adobe Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/intro/get-started/quick-start.html) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
+* [Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
 
 Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。エクスペリエンスフラグメントをTargetに書き出す場合は、Adobe Target設定とIMSのみが必要です。
 
@@ -36,7 +36,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定  {#ims-configuration}
 
-Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/administering/integration/integration-ims-adobe-io.translate.html)を参照してください。
+Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)を参照してください。
 
 ### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
@@ -134,7 +134,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 ### ビルドとパブリッシュ {#build-publish}
 
-ビルドとパブリッシュの方法については、この[ページ](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)を参照してください。
+ビルドとパブリッシュの方法については、この[ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)を参照してください。
 
 ## Classic とタッチ操作対応 UI の設定の間のコンテンツ構造の変更 {#changes-content-structure}
 
