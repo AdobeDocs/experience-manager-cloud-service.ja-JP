@@ -2,9 +2,9 @@
 title: コンポーネントの概要
 description: コンポーネントは、特定の機能を実現し、Web サイトにコンテンツを提供するためのモジュールユニットです。
 exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '387'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ AEM のコンポーネント：
 * 標準化されたユーザーインターフェイスがあります。
 * 設定可能な編集動作があります。
 * Granite UI コンポーネントに基づくサブ要素を使用して構築されたダイアログボックスを使用します。
-* [HTL](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html) を使用して開発されています。
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja) を使用して開発されています。
 * デフォルトの機能を拡張するカスタマイズされたコンポーネントを作成するために開発できます。
 
 コンポーネントはモジュールなので、次のことができます。
@@ -44,7 +44,7 @@ AEM のコンポーネント：
 
 ## AEM コアコンポーネント {#aem-core-components}
 
-[AEM コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)は、AEM で Web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された Web コンテンツ管理（WCM）コンポーネントのセットです。
+[AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、AEM で Web サイトの開発時間を短縮しメンテナンスコストを削減するための、標準化された Web コンテンツ管理（WCM）コンポーネントのセットです。
 
 コアコンポーネントは、Cloud Service として AEM と共に提供され、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)では、コンポーネントの実装方法と使用方法を説明します。コンポーネントは、すべてのソースコードと共に提供されており、そのまま使用することも、コンポーネントを変更または拡張する出発点として使用することもできます。
 
