@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: アセット管理，アップロード
 role: Business Practitioner,Administrator
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 85%
@@ -216,7 +216,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 * Adobeでは、[!DNL Experience Manager Assets]の各フォルダーに1,000個以下のアセットを追加することをお勧めします。 フォルダーにアセットをさらに追加することもできますが、フォルダーへの移動速度の低下など、パフォーマンスの問題が発生する可能性があります。
 
-* [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)で[!DNL Adobe Analytics]のインプレッション数またはクリック数の追跡が有効になっている場合、再生成されたアセットIDは、[!DNL Analytics]上のアセットに対して取り込まれたデータを無効化します。
+* [!UICONTROL 名前の競合]ダイアログで「**[!UICONTROL 置換]**」を選択すると、新しいアセットのアセット ID が再生成されます。この ID は以前のアセットの ID とは異なります。[アセットインサイト](/help/assets/assets-insights.md)で[!DNL Adobe Analytics]を使用したインプレッション数またはクリック数の追跡が有効になっている場合、再生成されたアセットIDは、[!DNL Analytics]上のアセットに対して取り込まれたデータを無効化します。
 
 * 一部のアップロード方法では、ファイル名に[禁止文字](#filename-handling)が含まれるアセットをアップロードしないようにする必要があります。 文字は`-`記号に置き換えられます。
 
