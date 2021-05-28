@@ -5,10 +5,10 @@ contentOwner: AG
 feature: アセット管理，Connected Assets，アセット配布，ユーザーとグループ
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 6163b150e014ad8449e6b64a191213f72daf4410
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '2966'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -198,7 +198,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 ## 制限事項とベストプラクティス {#tip-and-limitations}
 
-* アセットの使用状況に関するインサイトを取得するには、[!DNL Sites] インスタンスで[アセットインサイト](/help/assets/assets-insights.md)機能を設定します。
+* アセットの使用状況に関するインサイトを得るには、[Assets Insight](/help/assets/assets-insights.md)機能を[!DNL Sites]インスタンスで設定します。
 
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 
