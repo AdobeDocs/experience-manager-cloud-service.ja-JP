@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 のリリースノート
 description: Experience Manager 2020.6.0 のリリースノート
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 33e92b9cd19dd49dcdb6a8c8f30feccb755f615f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 99%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service リリース 2020.6.0 の AEM Sites の新機能と更新
 
 ### 新機能 {#whats-new-2020.6.0}
 
-[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)のリリース 2.9.0 は、AEM Sites の一部として使用できるようになり、以下が含まれます。
+[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)のリリース 2.9.0 は、AEM Sites の一部として使用できるようになり、以下が含まれます。
 
 * [Adobe クライアントデータレイヤー](https://github.com/adobe/adobe-client-data-layer)とコアコンポーネントの統合
 * すべてのコンポーネント用に設定可能な HTML ID 属性
@@ -60,11 +60,11 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;の役割にあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セット内の他のものも削除されます。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
@@ -76,11 +76,11 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * 「システム管理者」の役割を持つユーザーは、Admin Console 内の場所に 1 回のクリックでアクセスできるようになりました。この場所から、ユーザーの役割や Cloud Manager への権限を管理できます。「**アクセスを管理**」ボタンが、ランディングページの「**プログラムを追加**」ボタンの横に表示されて使用できるようになりました。
 
-   詳細は、[システム管理者のタスク](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)を参照してください。
+   詳細は、[システム管理者のタスク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)を参照してください。
 
 * 「システム管理者」の役割を持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)を参照してください。
+   詳細は、[オーサーインスタンスへのアクセス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
