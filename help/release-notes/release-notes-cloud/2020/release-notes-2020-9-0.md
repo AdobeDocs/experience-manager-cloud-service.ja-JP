@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.9.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート。'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '724'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
    * 選択的公開 - マーケティングチームは、販促用のマテリアルを作成するために、 [!DNL Dynamic Media] に同期する [!DNL Dynamic Media] スマート切り抜き画像と動的レンディションにアクセスできるようになりました。すべて、グローバル配信用にアセットを [!DNL Dynamic Media] に公開する必要はありません。[!DNL Experience Manager] および [!DNL Dynamic Media] の公開は分離されており、別々におこなうことができます。「[選択的公開](/help/assets/dynamic-media/selective-publishing.md)」を参照してください。
    * 管理者は、プロビジョニング時に受け取った [!DNL Dynamic Media] Cloud Service パスワードをリセットできるようになりました。リセットは、[!DNL Dynamic Media Classic] デスクトップアプリケーションを使用せずに、 [!DNL Experience Manager] ユーザーインターフェイスで実行できます。
 
-* 以下の機能強化について詳しくは、「[AEM Assets Brand Portal の新機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-brand-portal/using/introduction/whats-new.html)」を参照してください。
+* 以下の機能強化について詳しくは、「[AEM Assets Brand Portal の新機能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)」を参照してください。
 
    * Adobe Document Cloud 表示 SDK との統合により、PDF のプレビューが強化されました。
    * シングルクリックによるダウンロード機能。
