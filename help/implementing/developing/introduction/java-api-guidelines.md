@@ -2,10 +2,10 @@
 title: Java API ガイドライン
 description: AEM は、使用可能な多数の Java API を公開する豊富なオープンソースソフトウェアスタックに基づいて構築されています。
 exl-id: 0be33ec9-a4c3-4400-99d3-ed8366c5b5f9
-source-git-commit: cbcc20e75e4a0cb6d0e060039f4945ff4a85ff5c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 100%
+source-wordcount: '179'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ Adobe Experience Manager（AEM）は、開発時に使用可能な多数の Java
 
 AEM は、優先順に次の 4 つの主要な Java API セットに基づいて構築されています。
 
-1. **[Adobe Experience Manager（AEM）](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html)** - 製品の抽象概念（ページ、アセット、ワークフローなど）。
+1. **[Adobe Experience Manager（AEM）](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html)** - 製品の抽象概念（ページ、アセット、ワークフローなど）。
 1. **[Apache Sling Web フレームワーク](https://sling.apache.org/apidocs/sling11/)** - REST およびリソースベースの抽象概念（リソース、値マップ、HTTP リクエストなど）。
 1. **[JCR（Apache Jackrabbit Oak）](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html)** - データおよびコンテンツの抽象概念（ノード、プロパティ、セッションなど）。
 1. **[OSGi（Apache Felix）](https://felix.apache.org)** - OSGi アプリケーションコンテナの抽象概念（サービスや（OSGi）コンポーネントなど）。
