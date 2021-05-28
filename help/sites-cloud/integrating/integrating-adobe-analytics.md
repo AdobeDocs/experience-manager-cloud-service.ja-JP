@@ -4,10 +4,10 @@ description: 'Adobe Analytics との統合 '
 feature: 管理
 role: Administrator
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 Adobe Analytics と AEM as a Cloud Service の統合により、Web ページのアクティビティを追跡できます。統合には次の要件が必要です。
 
 * AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できること
-* [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://docs.adobe.com/content/help/ja-JP/launch/using/intro/get-started/quick-start.html)を参照してください。
+* [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html)を参照してください。
 
 旧バージョンの AEM と比較して、フレームワークのサポートは、AEM as a Cloud Service の Analytics 設定では提供されません。代わりに、AEM サイトに Analytics 機能（JS ライブラリ）を実装するデファクトツールである Adobe Launch によって実行されます。Adobe Launch では、Adobe Analytics の拡張を設定できるプロパティが作成され、Adobe Analytics にデータを送信するルールが作成されます。Adobe Launch は、SiteCatalyst が提供する解析のタスクに代わるものです。
 
@@ -44,7 +44,7 @@ Adobe Analytics 設定ウインドウで表示される設定フィールドは�
 | ユーザー名 | Adobe Analytics API ユーザー |
 | パスワード | 認証に使用される Adobe Analytics パスワード |
 | データセンター | アカウントが関連付けられている Adobe Analytics データセンター（サンノゼやロンドンなどのサーバー） |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://docs.adobe.com/content/help/ja-JP/analytics/components/segmentation/seg-overview.html)を参照してください。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリ。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
 
 ### サイトへの設定の追加 {#add-configuration}
@@ -55,9 +55,9 @@ Adobe Analytics 設定ウインドウで表示される設定フィールドは�
 
 Adobe Analytics は、Launch プロパティで拡張機能として追加できます。マッピングの実行と、Adobe Analytics に対して POST 呼び出しをおこなうルールを定義できます。
 
-* 基本的なサイトに対して Analytics の拡張機能を Launch で設定する方法については、[このビデオ](https://docs.adobe.com/content/help/ja-JP/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)をご覧ください。
+* 基本的なサイトに対して Analytics の拡張機能を Launch で設定する方法については、[このビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)をご覧ください。
 
-* ルールを作成して Adobe Analytics にデータを送信する方法の詳細については、[このページ](https://docs.adobe.com/content/help/ja-JP/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)を参照してください。
+* ルールを作成して Adobe Analytics にデータを送信する方法の詳細については、[このページ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)を参照してください。
 
 >[!NOTE]
 >
