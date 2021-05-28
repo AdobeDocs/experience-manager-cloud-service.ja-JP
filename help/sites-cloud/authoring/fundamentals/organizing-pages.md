@@ -2,10 +2,10 @@
 title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 100%
+source-wordcount: '2552'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 Web サイトの構造は、コンテンツページを保持するツリーと見なすことができます。これらのコンテンツページの名前は、URL の作成に使用されます。一方、タイトルは、ページコンテンツを表示したときに表示されます。
 
-以下に、[WKND チュートリアル](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)サイトの例です。このサイトでは、スケートボード場（`la-skateparks`）に関する記事にアクセスします。
+以下に、[WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)サイトの例です。このサイトでは、スケートボード場（`la-skateparks`）に関する記事にアクセスします。
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
