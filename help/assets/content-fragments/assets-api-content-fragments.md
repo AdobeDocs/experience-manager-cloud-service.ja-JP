@@ -3,9 +3,9 @@ title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コン
 description: AEMヘッドレス配信機能の重要な部分である、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
 feature: コンテンツフラグメント、Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1952'
 ht-degree: 97%
 
 ---
@@ -33,7 +33,7 @@ AEMヘッドレス配信機能の重要な部分である、Assets HTTP APIで�
 
 例えば、単一ページアプリケーション（SPA）では、フレームワークベースかカスタムかを問わず、HTTP API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
 
-[AEM コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)は、この目的に必要な読み取り操作を提供できる非常に包括的で柔軟性の高いカスタマイズ可能な API を提供し、その JSON 出力もカスタマイズできますが、実装には AEM WCM（Web コンテンツ管理）のノウハウが必要です。専用の AEM テンプレートに基づいた（API）ページでこれらのコンポーネントをホストする必要があるからです。すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
+[AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、この目的に必要な読み取り操作を提供できる非常に包括的で柔軟性の高いカスタマイズ可能な API を提供し、その JSON 出力もカスタマイズできますが、実装には AEM WCM（Web コンテンツ管理）のノウハウが必要です。専用の AEM テンプレートに基づいた（API）ページでこれらのコンポーネントをホストする必要があるからです。すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
 
 これが可能なのは、Assets REST API が使用できる場合です。この場合は、アセット（画像やコンテンツフラグメントなど）に直接アクセスでき、その際に、ページにアセットを埋め込んでからコンテンツをシリアル化 JSON 形式で配信する必要はありません
 
@@ -258,7 +258,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 >[!NOTE]
 >
->詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 読み取り／配信 {#read-delivery}
 
@@ -379,7 +379,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 詳細な API リファレンスについては、こちらを参照してください。
 
-* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
