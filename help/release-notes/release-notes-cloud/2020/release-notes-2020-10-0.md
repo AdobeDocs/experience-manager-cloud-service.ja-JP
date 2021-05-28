@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -31,11 +31,11 @@ ht-degree: 100%
 
 * **[!DNL Adobe Sensei]を活用したビデオスマートタグ**：AI モデルを活用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報を利用して適切なエクスペリエンスを顧客に提供することに多くの時間を割くことができます。[ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
 
-* **Brand Portal の機能強化**：次の新機能などが [!DNL Brand Portal] で利用できます。詳しくは、[[!DNL Brand Portal] リリースノート](https://docs.adobe.com/content/help/ja/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)を参照してください。
+* **Brand Portal の機能強化**：次の新機能などが [!DNL Brand Portal] で利用できます。詳しくは、[[!DNL Brand Portal] リリースノート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)を参照してください。
 
-   * [ダウンロード機能の強化](https://docs.adobe.com/content/help/ja/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)で、ダウンロードがすばやく簡単におこなえるようになりました。追加のダウンロード設定を管理者が指定すれば、ユーザーや企業のニーズに合ったエクスペリエンスを提供できます。
-   * どのページからでもワンクリックでファイル、[コレクション](https://docs.adobe.com/content/help/ja/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)、共有リンクに移動できるようになりました。
-   * ユーザーは[特定のレンディションを選択してダウンロード](https://docs.adobe.com/content/help/ja/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)できるようになりました。アセットの詳細ページのレンディションパネルで新しいレンディションダウンロードオプションが使用可能です。
+   * [ダウンロード機能の強化](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=ja)で、ダウンロードがすばやく簡単におこなえるようになりました。追加のダウンロード設定を管理者が指定すれば、ユーザーや企業のニーズに合ったエクスペリエンスを提供できます。
+   * どのページからでもワンクリックでファイル、[コレクション](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)、共有リンクに移動できるようになりました。
+   * ユーザーは[特定のレンディションを選択してダウンロード](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)できるようになりました。アセットの詳細ページのレンディションパネルで新しいレンディションダウンロードオプションが使用可能です。
    * ゲストユーザーセッションが 15 分でタイムアウトするので、同時使用中のすべてのユーザーにとってエクスペリエンスが向上します。
 
 * **[!DNL Adobe Asset Link]バージョン 2.1**：[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign] 用の [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 拡張機能の新しいバージョンが使用可能になりました。2020 年 10 月にリリースされた最新の [!DNL Adobe Creative Cloud] 2021 アプリケーションとの互換性が追加されました。
@@ -97,11 +97,11 @@ AEM as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020 �
 
 ### ワークフロー {#workflows}
 
-* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://docs.adobe.com/content/help/ja/experience-manager-cloud-service/sites/administering/workflows-administering.html)を参照してください。
+* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)を参照してください。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-この節では、[コンテンツ転送ツール](https://docs.adobe.com/content/help/ja/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリース v1.1.12 の新機能と更新点について説明します。
+この節では、[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリース v1.1.12 の新機能と更新点について説明します。
 
 ### 新機能 {#what-is-new-ctt}
 
