@@ -2,14 +2,22 @@
 title: 概要 — SSL 証明書の管理
 description: 概要 — SSL 証明書の管理
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 8e09031d1cf17bda9d4eb379f84462b2d29e1aa5
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 95%
+source-wordcount: '386'
+ht-degree: 86%
 
 ---
 
 # はじめに {#introduction}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_sslcert"
+>title="SSL証明書の管理"
+>abstract="Cloud Manager では、セルフサービス機能を使用して、Cloud Manager UI から SSL 証明書をインストールできます。Cloud Managerは、Platform TLSサービスを使用して、顧客が所有するSSL証明書および秘密鍵を管理します。通常は、サードパーティの証明機関から取得されます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html?lang=ja" text="SSL証明書の表示、更新、置換"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html?lang=ja" text="SSL証明書のステータスの確認"
+
 
 Cloud Manager では、セルフサービス機能を使用して、Cloud Manager UI から SSL 証明書をインストールできます。Cloud Manager は、Platform TLS サービスを使用して、SSL 証明書と、通常はサードパーティの証明機関（例：「*Let’s Encrypt*」）から取得して顧客が所有しする秘密鍵を管理します。
 
