@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)'
 description: '[!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)'
-source-git-commit: 7519c937fdc36711a5f558d787257cee713baf7e
+source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 3%
 [!DNL Adobe Experience Manager] は、Cloud Serviceリリースロードマップのスケジュールに従って、月次サイクルで新しい機能を [Experience Managerに提供します](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)。翌月に公開予定の機能を理解できるように、プレリリースチャネルを購読することができます。プレリリースチャネルには、標準のプログラム開発環境またはサンドボックスプログラム環境で適切に設定することでアクセスできます。 お客様は、サイトコンソールに対する変更をプレビューし、新しいプレリリースAPIに対するコードを構築できます。
 
 特定の月のプレリリース機能のリストは、月別リリースノート[に掲載されています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+
+>[!ビデオ](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## プレリリースを有効にする方法{#enable-prerelease}
 
@@ -110,8 +112,7 @@ JavadocはMaven Centralに公開されます。
 1. ローカルで正常に動作することを確認したら、コードを開発ブランチにコミットし、 Cloud Manager非実稼動パイプラインを使用して、プレリリースチャネルをサブスクライブする環境にデプロイします
 
 >[!CAUTION]
-> 
-> `aem-prerelease-sdk-api` artifactIdは、ステージングまたは実稼動にデプロイする際には使用しないでください。 実稼動パイプラインを介してデプロイする場合は、必ずaem-sdk-apiを使用します。 同様に、プレリリースAPIを参照するコードは、実稼動パイプラインを介してデプロイしないでください。
+`aem-prerelease-sdk-api` artifactIdは、ステージングまたは実稼動にデプロイする際には使用しないでください。 実稼動パイプラインを介してデプロイする場合は、必ずaem-sdk-apiを使用します。 同様に、プレリリースAPIを参照するコードは、実稼動パイプラインを介してデプロイしないでください。
 
 [AEM CS SDK Build Analyzer maven plugin v1.0以降](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)は、依存関係を調べて、プレリリースapiがプロジェクトで使用されているかどうかを検出します。 アナライザーが検出した場合は、プレリリースsdk apiを使用してプロジェクトを分析します。
 
