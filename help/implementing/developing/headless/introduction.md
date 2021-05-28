@@ -2,10 +2,10 @@
 title: AEM Sites as a Cloud Service 向けヘッドレス開発
 description: コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてのAEMが連携し、エクスペリエンスを一元管理して複数のチャネルで提供する方法を説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 61%
+source-wordcount: '487'
+ht-degree: 59%
 
 ---
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service は、次の 3 つの強力なサービスを提供する
 1. 配信用のコンテンツ API
    * AEM GraphQL API では、コンテンツフラグメント配信をサポートしています。
    * AEM Assets REST API では、コンテンツフラグメントの CRUD 操作をサポートしています。
-   * [コンテンツフラグメントコアコンポーネントの JSON エクスポート](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)を使用すると、直接コンテンツ配信も可能です。
+   * [コンテンツフラグメントコアコンポーネントの JSON エクスポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)を使用すると、直接コンテンツ配信も可能です。
 
 ## AEMヘッドレスを使用した最初の手順{#first-steps}
 
