@@ -3,7 +3,7 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager(AEM)のコンテンツフラグメントを、ヘッドレスコンテンツ配信用のAEM GraphQL APIを備えたCloud Serviceとして使用する方法について説明します。
 feature: コンテンツフラグメント，GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0c7b66e636e36a8036a590e949aea42e33a4e289
+source-git-commit: 8be8308c15ede115c21ccca8f91a13a23356d0b1
 workflow-type: tm+mt
 source-wordcount: '3935'
 ht-degree: 78%
@@ -158,7 +158,7 @@ GraphQLエンドポイントを有効にするには、まず適切な設定が�
 
 対応するエンドポイントを有効にするには：
 
-1. **ツール**、**サイト**&#x200B;に移動し、**GraphQL**&#x200B;を選択します。
+1. **ツール**、**アセット**&#x200B;に移動し、**GraphQL**&#x200B;を選択します。
 1. 「**作成**」を選択します。
 1. **新しいGraphQLエンドポイントを作成**&#x200B;ダイアログが開きます。 ここでは、次を指定できます。
    * **名前**:エンドポイントの名前。任意のテキストを入力できます。
