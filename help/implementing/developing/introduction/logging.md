@@ -2,10 +2,10 @@
 title: AEM as aCloud Serviceのログ
 description: 中央のログサービスのグローバルパラメーター、個々のサービスに固有の設定、AEM as aCloud Serviceでのデータログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: e87b71dd5081b95ca3fd55e66455476c85a50f6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2332'
-ht-degree: 98%
+source-wordcount: '2330'
+ht-degree: 97%
 
 ---
 
@@ -549,7 +549,7 @@ AEM ログは `crx-quickstart/logs` フォルダー内にあり、次のログ�
 * AEM HTTP リクエストログ： `request.log`
 * AEM HTTP アクセスログ： `access.log`
 
-Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)を参照してください。
+Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)を参照してください。
 
 ログを取得するには、以下の手順に従います。
 
