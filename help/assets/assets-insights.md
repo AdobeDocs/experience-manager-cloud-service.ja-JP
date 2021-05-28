@@ -5,10 +5,10 @@ contentOwner: AG
 feature: アセットインサイト，アセットレポート
 role: Business Practitioner,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 212e4e7cfb93d5765f80003c42ba6afb9af45c13
+source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 76%
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 76%
 
 アセットインサイトが画像の使用状況統計を Web サイトから取得するためには、画像の埋め込みコードを Web サイトのコードに組み込む必要があります。
 
-アセットインサイトにアセットの使用状況の統計を表示するには、まず[!DNL Adobe Analytics]からレポートデータを取得するようにこの機能を設定します。 詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。この機能を使用するには、[!DNL Adobe Analytics]ライセンスを別途購入してください。
+アセットインサイトにアセットの使用状況の統計を表示するには、まず[!DNL Adobe Analytics]からレポートデータを取得するようにこの機能を設定します。 詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。 この機能を使用するには、[!DNL Adobe Analytics]ライセンスを別途購入してください。
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 76%
 
 ## 画像の統計情報の表示 {#viewing-statistics-for-an-image}
 
-メタデータページでアセットインサイトのスコアを確認できます。
+メタデータページで、アセットインサイトのスコアを表示できます。
 
 1. Assetsユーザーインターフェイスで画像を選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 1. プロパティページで、「**[!UICONTROL インサイト]**」をクリックします。
@@ -49,7 +49,7 @@ ht-degree: 76%
 
    >[!NOTE]
    >
-   >アセットインサイト機能は通常、[!DNL Adobe Analytics]からソリューションデータを定期的にフェッチするので、「ソリューション」セクションには最新のデータが表示されない場合があります。 表示されるデータが対応する期間は、アセットインサイトが Analytics のデータを取得するために実行するフェッチ操作のスケジュールによって決まります。
+   >アセットインサイト機能は通常、[!DNL Adobe Analytics]からソリューションデータを定期的にフェッチするので、「ソリューション」セクションには最新のデータが表示されない場合があります。 データが表示される期間は、アセットインサイトがAnalyticsデータを取得するために実行する取得操作のスケジュールによって異なります。
 
 1. 特定の期間のアセットのパフォーマンス統計をグラフィカルに表示するには、「**[!UICONTROL パフォーマンス統計]**」セクションで期間を選択します。クリック数やインプレッション数などの詳細がグラフの傾向線として表示されます。
 
@@ -75,7 +75,7 @@ ht-degree: 76%
 
 ## Schedule background job {#scheduling-background-job}
 
-Asset Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Asset Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
+Assets Insights fetches usage data for assets from Adobe Analytics report suites in a periodic manner. By default, Assets Insights runs a background job every 24 hours at 2 AM to the fetch data. However, you can modify both the frequency and the time by configuring the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service from the web console.
 
 1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open the **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** service configuration.
@@ -85,9 +85,9 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## アセットインサイトの設定 {#configure-asset-insights}
+## アセットインサイトの設定{#configure-asset-insights}
 
-[!DNL Experience Manager Assets] では、サードパーティ Web サイトで使用されているデジタルアセットの使用状況データを [!DNL Adobe Analytics] から取得します。アセットインサイトでこのようなデータを取得して洞察を得るためには、まず、[!DNL Adobe Analytics] と連携するようにこの機能を設定します。
+[!DNL Experience Manager Assets] では、サードパーティ Web サイトで使用されているデジタルアセットの使用状況データを [!DNL Adobe Analytics] から取得します。アセットインサイトでこのデータを取得してインサイトを生成できるようにするには、まず[!DNL Adobe Analytics]と統合するように機能を設定します。
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Asset Insights fetches usage data for assets from Adobe Analytics report suites 
 
    *図：[!DNL Experience Manager]*&#x200B;のアセットインサイトに Adobe Analytics を設定する
 
-1. 「**[!UICONTROL 認証]**」をクリックします。 [!DNL Experience Manager] によって資格情報が認証されたら、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータをフェッチする Adobe Analytics レポートスイートを選択します。「**[!UICONTROL 追加]**」をクリックします。
+1. 「**[!UICONTROL 認証]**」をクリックします。 [!DNL Experience Manager]が資格情報を認証した後、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータを取得するAdobe Analyticsレポートスイートを選択します。 「**[!UICONTROL 追加]**」をクリックします。
 1. [!DNL Experience Manager]がレポートスイートを設定したら、「**[!UICONTROL 完了]**」をクリックします。
 
 ### ページトラッカー {#page-tracker}
@@ -120,11 +120,11 @@ Adobe Analytics アカウントを設定すると、ページトラッカーコ�
 
 <!--
 
-## Using demo package for Asset Insights {#using-demo-package-for-asset-insights}
+## Using demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
-1. Configure Asset Insights using the instructions in [Configure Asset Insights](#configure-asset-insights).
+1. Configure Assets Insights using the instructions in [Configure Assets Insights](#configure-asset-insights).
 1. Download the sample [!DNL Experience Manager Assets] package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)
