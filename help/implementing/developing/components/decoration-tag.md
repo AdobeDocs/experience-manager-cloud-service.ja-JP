@@ -2,9 +2,9 @@
 title: 装飾タグ
 description: Web ページのコンポーネントがレンダリングされる際に、レンダリングしたコンポーネントをラッピングする HTML 要素を生成できます。AEM では、含まれているコンポーネントをラップする装飾タグを制御する明確でシンプルなロジックを開発者向けに提供しています。
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '789'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ AEM は、開発者向けに、含まれているコンポーネントをラッ�
 
 HTL スクリプトおよびその関連ロジックからラッパータグの動作を完全に制御できます。
 
-HTL での開発について詳しくは、[HTL ドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html)を参照してください。
+HTL での開発について詳しくは、[HTL ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)を参照してください。
 
 ### デシジョンツリー {#decision-tree}
 
