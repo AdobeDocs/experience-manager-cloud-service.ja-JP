@@ -2,9 +2,9 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3298'
 ht-degree: 99%
 
 ---
@@ -724,7 +724,7 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 
 Cloud Service のデプロイメントモデルとの互換性を維持するために、個々のコンテンツパッケージには、リポジトリーの不変領域のコンテンツ（つまり、`/apps and /libs, although /libs` を顧客コードで変更すると、別の違反を引き起こします）または可変領域（その他すべて）のいずれかを含める必要があります。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
-詳しくは、[AEM プロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)を参照してください。
+詳しくは、[AEM プロジェクト構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)を参照してください。
 
 ### リバースレプリケーションエージェントは使用しない {#oakpal-reverse-replication}
 
@@ -736,7 +736,7 @@ Cloud Service のデプロイメントモデルとの互換性を維持するた
 
 **最初の対象バージョン**：バージョン 2020.5.0
 
-[リリースノート：レプリケーションエージェントの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents)で説明されているように、リバースレプリケーションのサポートは Cloud Service のデプロイメントでは利用できません。
+[リリースノート：レプリケーションエージェントの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=ja#replication-agents)で説明されているように、リバースレプリケーションのサポートは Cloud Service のデプロイメントでは利用できません。
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
