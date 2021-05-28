@@ -2,10 +2,10 @@
 title: データ保護とデータプライバシーに関する規制 — Adobe Experience Manager as a Cloud Serviceサイト対応準備
 description: 様々なデータ保護およびデータプライバシー規制に対するCloud ServiceSitesのサポートとしてのAdobe Experience Managerについて説明します。EU一般データ保護規則(GDPR)、カリフォルニア州消費者プライバシー法、新しいAEM as a Cloud Serviceプロジェクトを実装する際の準拠方法を含みます。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 45%
+source-wordcount: '1032'
+ht-degree: 46%
 
 ---
 
@@ -75,13 +75,13 @@ Adobe Experience Managerには、ユーザーのオプトイン/オプトアウ�
 
 AEM Sitesには、Adobe Analytics On-demand Service内の機能を使用するAnalytics Foundationとのオプションの統合が含まれています。
 
-Adobe Analyticsに関連するデータ主体リクエストの管理について詳しくは、[Adobe Analyticsおよびデータプライバシー](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-view-settings.html)を参照してください。
+Adobe Analyticsに関連するデータ主体リクエストの管理について詳しくは、[Adobe Analyticsおよびデータプライバシー](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)を参照してください。
 
 ## Targetによるパーソナライゼーションの基盤{#personalization-foundation-by-target}
 
 AEM Sitesには、Adobe Target On-demand Service内の機能を使用する、Personalization Foundation by Targetとのオプションの統合が含まれています。
 
-Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)を参照してください。
+Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)を参照してください。
 
 ## ContextHub {#contexthub}
 
