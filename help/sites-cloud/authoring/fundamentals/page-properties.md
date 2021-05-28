@@ -2,9 +2,9 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1907'
 ht-degree: 99%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 99%
 
 * **ソーシャルメディア共有**
 
-   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/sharing.html)に公開します。
+   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)に公開します。
 
    * **Facebook に対してユーザー共有を有効にする**
    * **Pinterest に対してユーザー共有を有効にする**
