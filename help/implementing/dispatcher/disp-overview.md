@@ -3,9 +3,9 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '4211'
+source-wordcount: '4207'
 ht-degree: 74%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 74%
 
 ## Apache および Dispatcher の設定とテスト {#apache-and-dispatcher-configuration-and-testing}
 
-ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。Dispatcher について詳しくは、[AEM Dispatcher のドキュメント](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
+ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。また、クラウド環境でのデバッグについても説明します。Dispatcher について詳しくは、[AEM Dispatcher のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >Windowsユーザーは、DockerをサポートするWindows 10 Professionalまたはその他のディストリビューションを使用する必要があります。 これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。以下では、Mac または Linux バージョンの SDK を使用するコマンドについて説明しますが、Windows SDK も同様の方法で使用できます。
@@ -521,7 +521,7 @@ Dispatcherの設定構造には、Managed ServicesとAEM as aCloud Serviceの間
 ## AMSをAEM as a Cloud Service Dispatcher設定に変換する方法
 
 次の節では、AMS設定を変換する手順を説明します。 ここでは、
-[Cloud Manager Dispatcherの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同じ構造のアーカイブがある
+[Cloud Manager Dispatcherの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同じ構造のアーカイブがある
 
 ### アーカイブを抽出し、最終的なプレフィックスを削除する
 
