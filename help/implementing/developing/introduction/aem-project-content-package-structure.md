@@ -2,9 +2,9 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ba5817714d46511c75ec2dd796b2ebd90adecb57
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2869'
 ht-degree: 98%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 >[!TIP]
 >
->[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja/experience-manager-core-components/using/developing/archetype/overview.html)の基本的な使用法と、[FileVault コンテンツパッケージ Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)について説明します。この記事では、これらの概念の理解を前提としています。
+>[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)の基本的な使用法と、[FileVault コンテンツパッケージ Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)について説明します。この記事では、これらの概念の理解を前提としています。
 
 この記事では、AEM as a Cloud Service との互換性を保つために Adobe Experience Manager Maven プロジェクトに必要な変更について説明します。互換性を保つには、プロジェクトが可変コンテンツと不変コンテンツの分離に従っていること、矛盾のない決定論的なデプロイメントの作成に必要な依存関係が設定されていること、デプロイ可能な構造にプロジェクトがパッケージ化されていることが必要です。
 
@@ -60,7 +60,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 + OSGi バンドルの Jar ファイルが生成され、すべてのプロジェクトに直接埋め込まれます。
 
 + `ui.apps` パッケージは、デプロイされるすべてのコードを含んでおり、`/apps` にのみデプロイされます。`ui.apps` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
-   + [コンポーネントの定義と HTL](https://docs.adobe.com/content/help/ja-JP/experience-manager-htl/using/overview.html) スクリプト
+   + [コンポーネントの定義と HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja) スクリプト
       + `/apps/my-app/components`
    + JavaScript と CSS（[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)経由）
       + `/apps/my-app/clientlibs`
