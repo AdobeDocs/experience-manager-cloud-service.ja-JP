@@ -3,10 +3,10 @@ title: AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager のリリ�
 description: AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager のリリースノート
 feature: リリース情報
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 94%
 
 ---
 
@@ -22,11 +22,11 @@ AEM as a Cloud Service 2020.6.0 の Cloud Manager のリリース日は 2020 年
 
 * Cloud Manager での役割が&#x200B;*ビジネス所有者*&#x200B;のユーザーは、サンドボックスプログラムをランディングページから（プログラムカードのクイックアクションボタンを使用して）またはプログラム内から削除できるようになりました。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;の役割にあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セット内の他のものも削除されます。
 
-   詳細は、[サンドボックスプログラムの削除](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 
@@ -38,11 +38,11 @@ AEM as a Cloud Service 2020.6.0 の Cloud Manager のリリース日は 2020 年
 
 * 「システム管理者」の役割を持つユーザーは、Admin Console 内の場所に 1 回のクリックでアクセスできるようになりました。この場所から、ユーザーの役割や Cloud Manager への権限を管理できます。「**アクセスを管理**」ボタンが、ランディングページの「**プログラムを追加**」ボタンの横に表示されて使用できるようになりました。
 
-   詳細は、[システム管理者のタスク](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)を参照してください。
+   詳細は、[システム管理者のタスク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#sysadmin-tasks)を参照してください。
 
 * 「システム管理者」の役割を持つユーザーは、Cloud Manager から直接オーサーインスタンスに対して 1 回のクリックでアクセスできるようになりました。
 
-   詳細は、[オーサーインスタンスへのアクセス管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)を参照してください。
+   詳細は、[オーサーインスタンスへのアクセス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html#manage-access-aem)を参照してください。
 
 * ビルドログに、スキップされたコンテンツパッケージを含む、検出されたアーティファクトのリストが含まれるようになりました。
 
