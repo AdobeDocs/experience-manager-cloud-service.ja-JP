@@ -2,10 +2,10 @@
 title: AEM Dispatcher コンバーターツール
 description: AEM Dispatcher コンバーターツール
 exl-id: 97eb4f3f-dc03-461a-8d7e-164065bd1e4c
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 97%
 
 ---
 
@@ -25,13 +25,13 @@ Dispatcher は、Adobe Experience Manager のキャッシュやロードバラ�
 >[!NOTE]
 >Dispatcher の最も一般的な使用法は、**AEM パブリッシュインスタンス**&#x200B;からの応答をキャッシュして、外部に公開されている Web サイトの応答性とセキュリティを高めることです。
 
-Dispatcher によるキャッシュの実行、ドキュメントの返却、ロードバランシングの実行の方法については、[Dispatcher の概要](https://docs.adobe.com/content/help/ja-JP/experience-manager-dispatcher/using/dispatcher.html)を参照してください。
+Dispatcher によるキャッシュの実行、ドキュメントの返却、ロードバランシングの実行の方法については、[Dispatcher の概要](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)を参照してください。
 
 ### Apache および Dispatcher の設定とテスト {#dispatcher-configurations-cloud}
 
 ここでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法について説明します。
 
-詳しくは、[クラウド内の Dispatcher](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) を参照してください。
+詳しくは、[クラウド内の Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) を参照してください。
 
 ## AEM Dispatcher コンバーター {#aem-dispatcher-converter}
 
