@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 100%
+source-wordcount: '1265'
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 
 ### ワークフロー {#workflows}
 
-* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://docs.adobe.com/content/help/ja/experience-manager-cloud-service/sites/administering/workflows-administering.html)を参照してください。
+* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)を参照してください。
 
 ### パブリッシュ層のユーザーデータ同期 {#user-sync}
 
@@ -120,7 +120,7 @@ Cloud Manager によるビルド時には Apache および Dispatcher 設定の�
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-この節では、[コンテンツ転送ツール](https://docs.adobe.com/content/help/ja/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリース v1.1.12 の新機能と更新点について説明します。
+この節では、[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリース v1.1.12 の新機能と更新点について説明します。
 
 ### 新機能 {#what-is-new-ctt}
 
