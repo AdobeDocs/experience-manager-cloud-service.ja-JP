@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: ccac613f7ceb27c6d4dea11f5dd4fdc1aaba9781
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 77%
+source-wordcount: '858'
+ht-degree: 78%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 77%
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
 
-* [リビジョンのクリーンアップ](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/deploying/revision-cleanup.translate.html)と[データストアの整合性チェック](https://helpx.adobe.com/jp/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)を&#x200B;**ソースリポジトリ**&#x200B;で実行して、潜在的な問題を特定し、リポジトリのサイズを小さくすることをお勧めします。
+* [リビジョンのクリーンアップ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)と[データストアの整合性チェック](https://helpx.adobe.com/jp/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html)を&#x200B;**ソースリポジトリ**&#x200B;で実行して、潜在的な問題を特定し、リポジトリのサイズを小さくすることをお勧めします。
 
 * AEM as a Cloud Service オーサーのコンテンツ配信ネットワーク（CDN）に IP のホワイトリストが設定されている場合は、ソース環境と AEM as a Cloud Service 環境が相互に通信できるように、ソース環境の IP も許可リストに追加する必要があります。
 
