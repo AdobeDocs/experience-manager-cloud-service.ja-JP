@@ -2,10 +2,10 @@
 title: 計画段階
 description: 計画段階
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 100%
+source-wordcount: '470'
+ht-degree: 98%
 
 ---
 
@@ -25,13 +25,13 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ただし、AEM as a Cloud Service とオンプレミスまたは Adobe Managed Services の AEM を比較すると、両者には数々の違いがあります。
 
-重要な違いについては、[Adobe Experience Manager（AEM）as a Cloud Service の主要な変更点](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/aem-cloud-changes.html)を参照してください。
+重要な違いについては、[Adobe Experience Manager（AEM）as a Cloud Service の主要な変更点](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/aem-cloud-changes.html?lang=ja)を参照してください。
 
 ## 非推奨（廃止予定）の機能 {#deprecated-features}
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。
 
-Adobe Experience Manager as a Cloud Service で廃止される特長や機能については、[廃止される機能](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)を参照してください。
+Adobe Experience Manager as a Cloud Service で廃止される特長や機能については、[廃止される機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)を参照してください。
 
 ## 計画段階について {#introduction}
 
