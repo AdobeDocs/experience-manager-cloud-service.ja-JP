@@ -2,9 +2,9 @@
 title: コンポーネント
 description: コンポーネントは、AEM におけるコンテンツページの基本的なオーサリング構成要素です。
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 >
 >インスタンスによっては、要件に合わせて明示的に開発されたカスタマイズコンポーネントが存在する場合があります。これらは、ここで説明するいくつかのコンポーネントと同じ名前の場合があります。
 
-## 一般的な使用方法 {#general-usage}
+## 一般的な使用方法  {#general-usage}
 
 コンポーネントは、[ページの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)時にページエディターのサイドパネルの「**コンポーネント**」タブで使用できます。
 
@@ -39,7 +39,7 @@ AEM には、すぐに使用できる様々なコンポーネントが付属し�
 
 ## コアコンポーネント {#core-components}
 
-[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)は柔軟かつ機能豊富なオーサリング機能を提供します。ページを作成するうえで不可欠なコンテンツタイプが用意されています。
+[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は柔軟かつ機能豊富なオーサリング機能を提供します。ページを作成するうえで不可欠なコンテンツタイプが用意されています。
 
 これらは AEM のベストプラクティスに従って構築され、AEM オーサリングエクスペリエンスの基盤となります。コアコンポーネントは、特定のプロジェクトニーズに合わせて開発者が容易に拡張できます。
 
