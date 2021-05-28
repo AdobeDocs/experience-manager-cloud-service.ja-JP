@@ -2,10 +2,10 @@
 title: 運用開始後段階
 description: 運用開始後段階
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 79%
+source-wordcount: '314'
+ht-degree: 73%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 79%
 >id="aemcloud_golive_troubleshooting"
 >title="AEM のトラブルシューティング"
 >abstract="AEMの問題のトラブルシューティングに役立つ開発者コンソールやCRXDE Liteなどのツールと共に、継続的な開発とログの管理に関するベストプラクティスを確認します。"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="ログへのアクセスと管理"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="ログへのアクセスと管理"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
 
 
 運用開始後段階では、一時ファイルの確実なクリーンアップ、継続的な開発に関するベストプラクティスの確認、ログの管理が必要です。
@@ -32,7 +32,7 @@ AEM as a Cloud Service 環境のトラブルシューティングには、次の
 
 AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージ環境、実稼動環境の開発者コンソールでおこなえます。
 
-開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)を参照してください。
+開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)を参照してください。
 
 ## CRX/DE Lite {#crxde-lite}
 
@@ -47,7 +47,7 @@ CRX/DE Lite を使用して AEM アプリケーションを開発する方法に
 
 ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-UI を使用して、または Cloud Manager 経由で API を使用してログにアクセスしログを管理する方法については、[ログへのアクセスと管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)を参照してください。
+UI を使用して、または Cloud Manager 経由で API を使用してログにアクセスしログを管理する方法については、[ログへのアクセスと管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=ja)を参照してください。
 
 ### その他のサポート {#additional-support}
 
