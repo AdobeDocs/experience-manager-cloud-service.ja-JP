@@ -2,10 +2,10 @@
 title: 命名規則
 description: リポジトリのノードは、Java コンテンツリポジトリの命名規則の対象です
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 94%
+source-wordcount: '219'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 ### JCR ユーティリティ {#jcr-utilities}
 
-[JcrUtil](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) は JCR ユーティリティの AEM 実装です。名前の検証では特に、文字マッピングと次の点が確認されます。
+[JcrUtil](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/jcr/JcrUtil.html) は JCR ユーティリティの AEM 実装です。名前の検証では特に、文字マッピングと次の点が確認されます。
 
 * `isValidName`
    * 名前が空でなく、有効な文字のみが含まれるかどうかを確認します。
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 ### ページマネージャー {#page-manager}
 
-[ページマネージャー](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)は、[JCRUtil](#jcr-utilities) に基づいて、ページレベル操作用のメソッドを提供します。
+[ページマネージャー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html)は、[JCRUtil](#jcr-utilities) に基づいて、ページレベル操作用のメソッドを提供します。
 
 ### AEM UI の動作 {#ui-behavior}
 
