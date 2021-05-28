@@ -2,10 +2,10 @@
 title: URL の外部化
 description: Externalizerは、プログラムによってリソースパスを外部URLおよび絶対URLに変換できるOSGiサービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: ce43bdc94f14faa69add16139e22ea3f34dfc52f
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 16%
+source-wordcount: '565'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ AEMの&#x200B;**Externalizer**&#x200B;は、リソースパス(例えば、`/pat
 
 AEM as a Cloud Serviceインスタンスは、外部から表示されるURLを認識できず、場合によってはリクエスト範囲外でリンクを作成する必要があるので、このサービスは、外部URLを設定して作成するための一元的な場所を提供します。
 
-この記事では、Externalizerサービスの設定方法と使用方法を説明します。 このサービスの技術的な詳細については、[Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)を参照してください。
+この記事では、Externalizerサービスの設定方法と使用方法を説明します。 このサービスの技術的な詳細については、[Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html)を参照してください。
 
 ## Externalizerのデフォルトの動作と{#default-behavior}のオーバーライド方法
 
@@ -125,4 +125,4 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 >[!TIP]
 >
->他の例については、関連する [Javadoc](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+>他の例については、関連する [Javadoc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
