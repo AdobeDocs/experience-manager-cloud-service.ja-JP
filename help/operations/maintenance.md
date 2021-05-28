@@ -2,14 +2,21 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 068ae08fddd482e4367b4bf1c8cc3776bbb4cc6b
+source-git-commit: 22228ebfbc754551f93907502c53427ba43983b3
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 84%
+source-wordcount: '992'
+ht-degree: 85%
 
 ---
 
 # AEM as a Cloud Service のメンテナンスタスク
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_maintenance"
+>title="メンテナンスタスク"
+>abstract="メンテナンスタスクとは、リポジトリーを最適化するためにスケジュールに従って実行されるプロセスです。AEM as a Cloud Service を使用すると、顧客がメンテナンスタスクの運用プロパティを設定する必要が最小限になります。顧客は、インフラストラクチャの運用をアドビに任せて、リソースをアプリケーションレベルの懸念事項に集中させることができます。"
+>additional-url="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html" text="AEM メンテナンスガイド"
+>additional-url="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html#AutomatedMaintenanceTasks" text="運用ダッシュボードのメンテナンスタスク"
 
 メンテナンスタスクとは、リポジトリーを最適化するためにスケジュールに従って実行されるプロセスです。AEM as a Cloud Service を使用すると、顧客がメンテナンスタスクの運用プロパティを設定する必要が最小限になります。顧客は、インフラストラクチャの運用をアドビに任せて、リソースをアプリケーションレベルの懸念事項に集中させることができます。
 
