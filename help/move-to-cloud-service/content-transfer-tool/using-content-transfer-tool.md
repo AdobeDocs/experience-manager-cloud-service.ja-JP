@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d8ea69fc36a6565d245fe3c01484200b2e744c6c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2829'
 ht-degree: 76%
 
 ---
@@ -63,13 +63,13 @@ ht-degree: 76%
 >id="aemcloud_ctt_download"
 >title="ダウンロード"
 >abstract="コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。"
->additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="リリースノート"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="リリースノート"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.translate.html)」を参照してください。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
 
 >[!NOTE]
->[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
+>[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
