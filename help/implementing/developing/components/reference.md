@@ -2,9 +2,9 @@
 title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
-source-wordcount: '3675'
+source-wordcount: '3657'
 ht-degree: 99%
 
 ---
@@ -240,9 +240,13 @@ Granite UI で提供される幅広い基本ウィジェットは、オーサー
 
 ### ダイアログフィールドのカスタマイズ {#customizing-dialog-fields}
 
+<!--
+Content not found
+
 >[!TIP]
 >
->ダイアログフィールドのカスタマイズに関しては [AEM Gems セッション](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)を参照してください。
+>See the [AEM Gems session](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html) on customizing dialog fields.
+-->
 
 コンポーネントダイアログで使用する新しいウィジェットを作成するには、新しい Granite UI フィールドコンポーネントを作成する必要があります。
 
@@ -446,7 +450,7 @@ Granite UI および Granite UI ウィジェットでのフィールド検証は
 
 ## プレビュー動作 {#preview-behavior}
 
-プレビューモードに切り替えると、ページが更新されなくても [WCM モード](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
+プレビューモードに切り替えると、ページが更新されなくても [WCM モード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie が設定されます。
 
 レンダリングが WCM モードの影響を受けるコンポーネントの場合は、明確にそのコンポーネントを更新し、この Cookie の値を使用するように定義する必要があります。
 
