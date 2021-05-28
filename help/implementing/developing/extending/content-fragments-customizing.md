@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 24da05afce75a16ed2223130ac1825b10ee964e1
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 97%
+source-wordcount: '1796'
+ht-degree: 92%
 
 ---
 
@@ -101,9 +101,9 @@ Assets コアと統合するには：
 
 >[!CAUTION]
 >
->[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)。詳しくは、[コアコンポーネントの開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/developing.html)を参照してください。
+>[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)。詳しくは、[コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)を参照してください。
 
-コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
+コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
 
 * このコンポーネントは、`fragmentPath` プロパティを使用して、実際のコンテンツフラグメントを参照します。`fragmentPath` プロパティは、その他のアセットタイプの類似プロパティと同じ方法で処理されます。例えば、コンテンツフラグメントが別の場所に移動された場合などです。
 
@@ -170,7 +170,7 @@ Assets コアと統合するには：
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ Assets コアと統合するには：
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
-* **コンテンツフラグメント**（[ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
+* **コンテンツフラグメント**（[ContentFragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
    このインターフェイスでは、コンテンツフラグメントを抽象化して使用できます。
 
@@ -206,7 +206,7 @@ Assets コアと統合するには：
 
    フラグメントの主要要素を表すインターフェイスには、次のものがあります。
 
-   * **コンテンツ要素**（[ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
+   * **コンテンツ要素**（[ContentElement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
 
       * 基本データ（名前、タイトル、説明）を取得する
       * コンテンツを取得／設定する
@@ -218,7 +218,7 @@ Assets コアと統合するには：
          * バリエーションを削除する（[注意事項](#caveats)を参照）
          * バリエーションデータにアクセスする（`ContentVariation` を参照）
       * バリエーションを解決するためのショートカット（要素に指定されたバリエーションを使用できない場合は実装固有の追加のフォールバックロジックを適用）
-   * **コンテンツバリエーション**（[ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
+   * **コンテンツバリエーション**（[ContentVariation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
 
       * 基本データ（名前、タイトル、説明）を取得する
       * コンテンツを取得／設定する
@@ -248,9 +248,9 @@ Assets コアと統合するには：
 
 * `ContentElement` は、次のものに適応させることができます。
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
+   * [`ElementTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` は、次のものに適応させることができます。
 
@@ -352,4 +352,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 詳しくは、次を参照してください。
 
-* [コアコンポーネント - コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)（推奨）
+* [コアコンポーネント - コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)（推奨）
