@@ -2,10 +2,10 @@
 title: AEM Commerce Integration Framework(CIF)アドオンへの移行
 description: 古いバージョンからAEM Commerce Integration Framework(CIF)アドオンに移行する方法
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 22%
+source-wordcount: '489'
+ht-degree: 21%
 
 ---
 
@@ -27,7 +27,7 @@ CIFアドオンは、AEM 6.5でも[ソフトウェア配布ポータル](https:/
 
 ## プロジェクト構造
 
-[AEMプロジェクト構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)と、AEMのCloud Serviceとしての特性について説明します。 プロジェクトの設定を AEM as a Cloud Service レイアウトとして適応させます。
+[AEMプロジェクト構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)と、AEMのCloud Serviceとしての特性について説明します。 プロジェクトの設定を AEM as a Cloud Service レイアウトとして適応させます。
 AEM 6.5デプロイメントと比較して、主に次の2つの違いがあります。
 
 * GraphQL クライアント OSGI バンドルは、AEM プロジェクトに含める&#x200B;**べきではなく**、CIF アドオンを介してデプロイされます。
