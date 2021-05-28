@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 feature: リリース情報
-source-git-commit: 29bc3d02295fb04f3aacda41c43d1733092e1f27
+source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 17%
@@ -20,7 +20,7 @@ ht-degree: 17%
 ## リリース日 {#release-date}
 
 AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6日です。
-次回のリリースは2021年6月3日に予定されています。
+次回のリリースは2021年6月11日に予定されています。
 
 ### 新機能 {#what-is-new}
 
