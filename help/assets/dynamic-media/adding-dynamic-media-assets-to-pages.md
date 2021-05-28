@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: アセット管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 8442353b016ccd143b7265b5f20901a11bd48102
 workflow-type: tm+mt
-source-wordcount: '3226'
-ht-degree: 78%
+source-wordcount: '3084'
+ht-degree: 80%
 
 ---
 
@@ -112,7 +112,7 @@ Dynamic Media コンポーネントのローカライズの方法は 2 つあり
 
 ### コンポーネント：Dynamic Media {#dynamic-media-component}
 
-Dynamic Media コンポーネントはスマートであり、追加しているアセットが画像であるかビデオであるかに応じて、様々なオプションを使用できます。このコンポーネントは画像プリセット、画像ベースのビューア（画像セット、スピンセット、混在メディアセットなど）およびビデオをサポートします。さらに、レスポンシブビューアであるので、ビューアのサイズは画面サイズに合わせて自動的に変化します。すべてのビューアは HTML5 ビューアです。
+Dynamic Mediaコンポーネントはスマートです。画像を追加するかビデオを追加するかに関わらず、様々なオプションがあります。 このコンポーネントは画像プリセット、画像ベースのビューア（画像セット、スピンセット、混在メディアセットなど）およびビデオをサポートします。さらに、レスポンシブビューアであるので、ビューアのサイズは画面サイズに合わせて自動的に変化します。すべてのビューアは HTML5 ビューアです。
 
 >[!NOTE]
 >
@@ -165,16 +165,16 @@ Dynamic Media コンポーネントでは、画像セット、スピンセット
 
    コンポーネントの「**[!UICONTROL 編集]**」をタップして、次の詳細設定を編集できます。
 
-* **[!UICONTROL 高解像度デバイス向けに最適化]**  - DPR（デバイスピクセル比）の最適化を許可する場合は、このチェックボックスをオン（デフォルト）にします。
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
-   [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   [!DNL Experience Manager] Dynamic MediaスマートイメージングDPRの値は無視されます。
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 高解像度デバイス向けの最適化]**&#x200B;オプションは、次の条件が満たされる場合にのみ表示されます。
-   * 「プリセットの種類」で、「**[!UICONTROL 画像プリセット]**」を選択し、「**[!UICONTROL 画像プリセット]**」ドロップダウンリストから「**[!UICONTROL RESS_IP]**」を選択します。
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-   ![画像プリセットのデバイスピクセル比設定](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/dynamic-media/assets/dpr-ress-ip.png) -->
 
 * **[!UICONTROL タイトル]**  — 画像のタイトルを変更します。
 
@@ -243,17 +243,17 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
 * **[!UICONTROL 縦横比の一致を有効にする]**  — 元の画像の縦横比に最も適した縦横比のスマート切り抜きレンディションをDynamic Mediaで選択できるようにするには、このオプションを選択します。
 
-* **[!UICONTROL 高解像度デバイス向けに最適化]**  - DPR（デバイスピクセル比）の最適化を許可する場合は、このチェックボックスをオン（デフォルト）にします。
+<!-- CQDOC-17915 HIDDEN AS OF MAY 28 2021 AS PER EMAIL FROM APOORVA MAY 28 2021* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
-   [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
+  See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
 
-   [!DNL Experience Manager] Dynamic MediaスマートイメージングDPRの値は無視されます。
+  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored.
 
-   **[!UICONTROL 高解像度デバイス向けの最適化]**&#x200B;オプションは、次の条件が満たされる場合にのみ表示されます。
+  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
-   * 「プリセットの種類」で、「**[!UICONTROL スマート切り抜き]**」オプションが選択されます。
+  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-   ![スマート切り抜きのデバイスピクセル比設定](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/dynamic-media/assets/dpr-smartcrop.png) -->
 
 * **[!UICONTROL タイトル]**  — スマート切り抜き画像のタイトルを変更します。
 
@@ -273,7 +273,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
 インタラクティブメディアコンポーネントは、インタラクティビティ（ホットスポットまたは画像マップ）を含むアセット用です。インタラクティブ画像、インタラクティブビデオまたはカルーセルバナーがある場合は、**[!UICONTROL インタラクティブメディア]**&#x200B;コンポーネントを使用します。
 
-インタラクティブメディアコンポーネントはスマートであり、追加しているアセットが画像であるかビデオであるかに応じて、様々なオプションを使用できます。また、レスポンシブなビューアで、画面のサイズは画面のサイズに応じて自動的に変更されます。 すべてのビューアは HTML5 ビューアです。
+インタラクティブメディアコンポーネントはスマートです。画像を追加するかビデオを追加するかに関わらず、様々なオプションがあります。 また、レスポンシブなビューアで、画面のサイズは画面のサイズに応じて自動的に変更されます。 すべてのビューアは HTML5 ビューアです。
 
 >[!NOTE]
 >
