@@ -2,10 +2,10 @@
 title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '478'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ JSON 書き出しは、[Sling Model](https://sling.apache.org/documentation/bund
 
 >[!NOTE]
 >
->Sling Model の使用例については、[AEM での Sling Model Exporter の開発](https://docs.adobe.com/content/help/ja-JP/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)の記事を参照してください。
+>Sling Model の使用例については、[AEM での Sling Model Exporter の開発](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)の記事を参照してください。
 
 Sling Model の実装クラスに次のような注釈を付ける必要があります。
 
@@ -70,7 +70,7 @@ Model インターフェイスには、シリアル化されるメソッドを�
 
 ## 例 {#example}
 
-[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html) は、JSON 形式での書き出しをサポートしており、参考にすることができます。
+[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) は、JSON 形式での書き出しをサポートしており、参考にすることができます。
 
 例えば、画像コアコンポーネントの Sling Model 実装とその注釈されたインターフェイスを参照してください。
 
@@ -81,4 +81,4 @@ Model インターフェイスには、シリアル化されるメソッドを�
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [コアコンポーネント](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)および[コンテンツフラグメントコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/components/content-fragment-component.html)
+* [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
