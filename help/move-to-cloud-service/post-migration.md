@@ -1,10 +1,10 @@
 ---
 title: 移行後段階
 description: 移行後段階
-source-git-commit: 96aa0ef43613e6ae72bf4c454be46329abb19a0c
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '222'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ AEM as a Cloud Service 環境のトラブルシューティングには、次の
 
 AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージ環境、実稼動環境の開発者コンソールでおこなえます。
 
-開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)を参照してください。
+開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)を参照してください。
 
 ## CRXDE Lite {#crxde-lite}
 
@@ -39,7 +39,7 @@ CRXDE Lite を使用して AEM アプリケーションを開発する方法に�
 
 ユーザーは、選択した環境の使用可能なログファイルのリストにアクセスできます。
 
-UI を使用して、または Cloud Manager 経由で API を使用してログにアクセスしログを管理する方法については、[ログへのアクセスと管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html)を参照してください。
+UI を使用して、または Cloud Manager 経由で API を使用してログにアクセスしログを管理する方法については、[ログへのアクセスと管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=ja)を参照してください。
 
 ### その他のサポート {#additional-support}
 
