@@ -1,7 +1,7 @@
 ---
 title: 高度な URL 設定
 description: 製品ページとカテゴリページの URL をカスタマイズする方法について説明します。このカスタマイズにより、実装で URL を検索エンジン向けに最適化し、検出を促進できます。
-sub-product: Commerce
+sub-product: コマース
 version: cloud-service
 doc-type: technical-video
 activity: setup
@@ -10,10 +10,10 @@ feature: コマース統合フレームワーク
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 98%
+source-wordcount: '790'
+ht-degree: 97%
 
 ---
 
@@ -75,5 +75,5 @@ URL の書き換えは、AEM Dispatcher HTTP サーバーで `mod_rewrite` モ�
 ## その他のリソース
 
 * [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM リソースマッピング](https://docs.adobe.com/content/help/ja-JP/experience-manager-65/deploying/configuring/resource-mapping.translate.html)
+* [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
