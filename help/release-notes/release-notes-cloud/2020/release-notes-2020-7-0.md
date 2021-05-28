@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート.'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 100%
+source-wordcount: '1038'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 * 新しいユーザーインターフェイスの実装は、クラシック UI に基づく実装に代わるものです。
 
-* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。「[Adobe Analytics の統合](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.translate.html)」および「[Adobe Target の統合](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)」を参照してください。
+* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。「[Adobe Analytics の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html)」および「[Adobe Target の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)」を参照してください。
 
 * 設定は、Experience Manager リポジトリーの `/etc/cloudsettings` ではなく、`/conf` に保存されるようになりました。
 
@@ -55,21 +55,21 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは、「[Cloud ServiceとしてのAEMコマースの使用の手引き](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/commerce/getting-started.html)」を参照してください。
+詳しくは、「[Cloud ServiceとしてのAEMコマースの使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)」を参照してください。
 
 ## コアコンポーネント {#core-components}
 
 ### 新機能 {#what-is-new-core-components}
 
-[コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)のリリース 2.11.0 は、AEM Sites の一部として使用できるようになり、以下を含みます。
+[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)のリリース 2.11.0 は、AEM Sites の一部として使用できるようになり、以下を含みます。
 
 * 新しい [PDF ビューアコンポーネント](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html)の導入。
 
 * コアコンポーネントの Accelerated Mobile Pages（AMP）
 サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。
-詳しくは、「[コアコンポーネントの AMP サポート](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/amp.html)」を参照してください。
+詳しくは、「[コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)」を参照してください。
 
-* [Adobe Client Data Layer](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/data-layer/overview.html) のバージョン 1.0.2 との互換性。
+* [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja) のバージョン 1.0.2 との互換性。
 
 * バグの修正とコードの質の改善。
 
@@ -138,7 +138,7 @@ Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点につい�
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
-   詳しくは、[AEM 6.1 への CRA のインストール](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)を参照してください。
+   詳しくは、[AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)を参照してください。
 
 * 概要レポートに表示される有効期限のタイムスタンプが正しくありませんでした。
 
