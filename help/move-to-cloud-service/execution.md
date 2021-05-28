@@ -2,10 +2,10 @@
 title: 実行段階
 description: 実行段階
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 96%
+source-wordcount: '1028'
+ht-degree: 92%
 
 ---
 
@@ -17,11 +17,11 @@ Cloud Manager を使用すると、組織がクラウド内の AEM を自己管�
 
 詳しくは、以下のリソースを参照してください。
 
-* [Adobe Experience Manager as a Cloud Service のオンボーディング](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/onboarding/home.html)：Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースについて
+* [Adobe Experience Manager as a Cloud Service のオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)：Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースについて
 
-* [Git と Adobe Cloud Manager の統合](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)：1 つの Git リポジトリを使用してコードをデプロイする方法について
+* [Git と Adobe Cloud Manager の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)：1 つの Git リポジトリを使用してコードをデプロイする方法について
 
-* [Adobe Experience Manager as a Cloud Service の設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/security/ims-support.html#aem-configuration)：Admin Console での製品とユーザーアクセスの管理
+* [Adobe Experience Manager as a Cloud Service の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#aem-configuration)：Admin Console での製品とユーザーアクセスの管理
 
 
 ## はじめに {#introduction}
@@ -56,11 +56,11 @@ AEM as a Cloud Service に対応するために、AEM Maven プロジェクト�
 
 * リポジトリ内のそれ以外の領域（`/content`、`/conf`、`/var`、`/home`、`/etc`、`/oak:index`、`/system`、`/tmp` など）はすべて可変領域です。つまり、実行時に変更できます。
 
-詳しくは、[推奨されるパッケージ構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)を参照してください。
+詳しくは、[推奨されるパッケージ構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#recommended-package-structure)を参照してください。
 
-AEM as a Cloud Service で開発する際に留意する必要がある開発ガイドラインがさらにいくつかあります。詳しくは、[AEM as a Cloud Service の開発ガイドライン](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
+AEM as a Cloud Service で開発する際に留意する必要がある開発ガイドラインがさらにいくつかあります。詳しくは、[AEM as a Cloud Service の開発ガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja)を参照してください。
 
-Cloud Service に対応するためにリファクタリングする必要がある領域のリストを計画段階で作成する必要があります。また、Cloud Service に移行するためにコードをリファクタリングし最適化する方法について詳しくは、[開発ガイドライン](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
+Cloud Service に対応するためにリファクタリングする必要がある領域のリストを計画段階で作成する必要があります。また、Cloud Service に移行するためにコードをリファクタリングし最適化する方法について詳しくは、[開発ガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)を参照してください。
 
 コードリファクタリングタスクの一部を高速化するために、次のツールを使用できます。
 
@@ -70,7 +70,7 @@ Cloud Service に対応するためにリファクタリングする必要があ
 
 Cloud Manager Git を介して Cloud Service 環境にコードをプッシュする前に、コードをリファクタリングしローカルでテストすることをお勧めします。
 
-詳しくは、[AEM SDK](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) のドキュメントを参照してください。
+詳しくは、[AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#aem-as-a-cloud-service-sdk) のドキュメントを参照してください。
 
 その他のリソースを以下に示します。
 
@@ -82,7 +82,7 @@ Cloud Manager Git を介して Cloud Service 環境にコードをプッシュ�
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-* ローカル開発環境を設定するには、[Local Development Environment Set up](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)（ローカル開発環境のセットアップ）を参照してください。
+* ローカル開発環境を設定するには、[Local Development Environment Set up](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)（ローカル開発環境のセットアップ）を参照してください。
 
 
 移行プロセスの一環として、アクティブな AEM 上で進行中のコード開発を、コードリファクタリングタスクと共に管理するには、AEM as a Cloud Service に対応するための Maven プロジェクトの再構築が完了するまで、コードの凍結期間を予定しておくことをお勧めします。
@@ -96,19 +96,19 @@ Cloud Manager Git を介して Cloud Service 環境にコードをプッシュ�
 
 Cloud Services 用 Cloud Manager のパイプライン実行では、ステージ環境に対するテストの実行をサポートしています。
 
-テストスクリプトの作成と 50 %以上の推奨コードカバレッジについては、[コード品質テスト](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)を参照してください。
+テストスクリプトの作成と 50 %以上の推奨コードカバレッジについては、[コード品質テスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)を参照してください。
 
-さらに、AEM エンジニアリングのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルールについて](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html)を参照してください。
+さらに、AEM エンジニアリングのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルールについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html?lang=ja)を参照してください。
 
 Cloud Manager を使用する以外に、Cloud Service 環境にコードをデプロイする手段はありません。
 
 Cloud Manager を使用してコードを管理およびデプロイする方法については、次のリソースを参照してください。
 
-* [環境の管理](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
+* [環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)
 
-* [CI/CD パイプラインの設定](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html)
+* [CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja)
 
-* [コードのデプロイ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)
+* [コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja)
 
 ## 運用開始準備のベストプラクティス {#go-live}
 
