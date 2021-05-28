@@ -3,9 +3,9 @@ title: 概要と概要
 description: コンテンツとコマースの概要。 Experience Managerのコマース統合フレームワーク(CIF)は、Magentoやその他のサードパーティのコマースソリューションのコマースサービスをExperience Cloudと統合し、拡張するためのAdobeの推奨パターンです。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ AEMの強力なCIFツールを使用すると、コンテンツ作成者は、�
 
 ### 価値創出までの時間(TTV)
 
-[AEMコアコンポーネント](https://www.aemcomponents.dev/)、[AEM Venia参照ストアフロント](https://github.com/adobe/aem-cif-guides-venia)、[AEMプロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)、PWAの統合パターン（ヘッドレスコンテンツとコマース）で、プロジェクトの開発を加速します。
+[AEMコアコンポーネント](https://www.aemcomponents.dev/)、[AEM Venia参照ストアフロント](https://github.com/adobe/aem-cif-guides-venia)、[AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)、PWAの統合パターン（ヘッドレスコンテンツとコマース）で、プロジェクトの開発を加速します。
 
 CIFは、常に最新のアドオンを使用して継続的な革新を目的として構築されており、お客様は新機能や改善された機能にアクセスできます。
 
