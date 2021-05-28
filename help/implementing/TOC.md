@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: b625eb8a7f293df8022bc24fae66fe1b6825c375
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 96%
+source-wordcount: '900'
+ht-degree: 95%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 96%
    + [ログ](developing/introduction/logging.md)
    + [設定と設定ブラウザー](developing/introduction/configurations.md)
    + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service の API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
    + [サーバー側 API のアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
@@ -87,7 +87,7 @@ ht-degree: 96%
       + コンポーネントとテンプレート {#components-templates}
          + [コンポーネントの概要](developing/components/overview.md)
          + [テンプレート](developing/components/templates.md)
-         + [コアコンポーネント](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/introduction.html)
+         + [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
          + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ja)
          + [コンテンツサービス用の JSON エクスポーター](developing/components/json-exporter.md)
          + [コンポーネントの JSON 書き出しの有効化](developing/components/enabling-json-exporter.md)
