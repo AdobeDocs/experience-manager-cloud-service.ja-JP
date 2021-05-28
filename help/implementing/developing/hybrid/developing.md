@@ -2,9 +2,9 @@
 title: AEM 向け SPA の開発
 description: この記事では、フロントエンド開発者が AEM 向けの SPA を開発する際に考慮すべき重要な問題と、開発済み SPA を AEM にデプロイする際に念頭に置くべきな SPA に関する AEM のアーキテクチャの概要を説明します。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2076'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ SPA では、コンテンツの動的レンダリングのみに依存する必�
 
 ## AEM プロジェクトアーキタイプ {#aem-project-archetype}
 
-AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)を活用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を活用します。
+AEM プロジェクトでは、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)を活用します。このアーキタイプは、React または Angular を使用する SPA プロジェクトをサポートし、SPA SDK を活用します。
 
 ## SPA デザインモデル {#spa-design-models}
 
