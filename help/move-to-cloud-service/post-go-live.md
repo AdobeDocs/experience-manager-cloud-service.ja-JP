@@ -2,14 +2,22 @@
 title: 運用開始後段階
 description: 運用開始後段階
 exl-id: f9b0b2fa-e29c-4faa-a5e7-e5edd04b25ca
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 79%
 
 ---
 
 # 運用開始後 {#post-go-live}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_troubleshooting"
+>title="AEM のトラブルシューティング"
+>abstract="AEMの問題のトラブルシューティングに役立つ開発者コンソールやCRXDE Liteなどのツールと共に、継続的な開発とログの管理に関するベストプラクティスを確認します。"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html" text="ログへのアクセスと管理"
+>additional-url="https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service の開発ツール"
+
 
 運用開始後段階では、一時ファイルの確実なクリーンアップ、継続的な開発に関するベストプラクティスの確認、ログの管理が必要です。
 
@@ -43,4 +51,10 @@ UI を使用して、または Cloud Manager 経由で API を使用してログ
 
 ### その他のサポート {#additional-support}
 
-Cloud Service へのアクセスに関するご質問は、アドビ担当者または Adobe AEM CQ サポートポータルにお問い合わせください。
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_support"
+>title="ヘルプとサポート"
+>abstract="アドビのAEMサポートチームに連絡して、詳細を確認したり、懸念事項に対処したりします。"
+>additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Experience Cloudのサポート"
+
+Cloud Serviceへのアクセスに関してご質問がある場合は、Adobe担当者または[Experience Cloudのサポート](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)にお問い合わせください。
