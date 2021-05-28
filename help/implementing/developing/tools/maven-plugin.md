@@ -2,9 +2,9 @@
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 03b2237dfde6ec605d8dcd8789ec4f2aa67716ca
+source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1847'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,7 @@ AEM as a Cloud Serviceは、最新のAEMプロジェクトアーキタイプに�
 
 >[!TIP]
 >
->詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)と、[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/ja-JP/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
+>詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)と、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
 
 ## Content Package Maven Plugin の入手 {#obtaining-the-content-package-maven-plugin}
 
@@ -265,4 +265,4 @@ uninstall ゴールのすべてのパラメーターについては、[共通パ
 
 >[!TIP]
 >
->詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)と、[AEM プロジェクトアーキタイプ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
+>詳しくは、AEM as a Cloud Service のドキュメントの [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)と、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)のドキュメントを参照してください。どちらも AEM 6.5 に完全に対応しています。
