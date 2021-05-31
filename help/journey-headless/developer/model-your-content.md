@@ -1,9 +1,9 @@
 ---
 title: コンテンツのモデル化方法
 description: AEMヘッドレス開発者ジャーニーのこのパートでは、コンテンツフラグメントモデルとコンテンツフラグメントを使用したコンテンツモデリングを使用して、AEMヘッドレス配信用のコンテンツをモデル化する方法について説明します。
-source-git-commit: 816c08b9351b3ce2fd4f31974d707e9d4a4eea27
+source-git-commit: dc1ed5c55cc17bcba97972bc79d04aa3530664e7
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1830'
 ht-degree: 5%
 
 ---
@@ -274,3 +274,4 @@ tbc...
 * [AEM GraphQLスキーマ](access-your-content.md)  - GraphQLによるモデルの実現方法
 * [サンプルコンテンツフラグメント構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEMヘッドレスの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)  — コンテンツモデリングやGraphQLなど、AEMヘッドレス機能の使用の概要を説明する短いビデオチュートリアルシリーズです。
+   * [GraphQLモデリングの基礎](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  - Adobe Experience Manager(AEM)でGraphQLと共に使用するコンテンツフラグメントを定義して使用する方法を説明します。
