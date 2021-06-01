@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3452f877960a0067aa4eb1041e58a0b0e64340dd
+source-git-commit: 40897b9194de56251da73cbea8718845882f98af
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1093'
 ht-degree: 13%
 
 ---
@@ -142,7 +142,23 @@ AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6�
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-### リリース日 {#release-date-ctt}
+### リリース日 {#release-date-ctt-latest}
+
+コンテンツ転送ツールv1.4.6のリリース日は2021年5月28日です。
+
+### 新機能 {#what-is-new-ctt-latest}
+
+* ユーザーにJava実行可能ファイルに対する実行権限がない場合、新しいログ文がクイックスタートのエラーログに追加されました。
+
+* 抽出を実行したCTT UIから移行セットを削除すると、その移行セットに関連付けられている`tmp`フォルダーが削除され、領域を節約できます。
+
+### バグ修正 {#bug-fixes-ctt-latest}
+
+* 移行セットを削除する際に、CTT UIに役に立たないエラーメッセージが表示される場合があります。 この問題が修正されました。
+
+* ユーザーマッピングの実行中に、ユーザーがターゲットとホストで同じ電子メールアドレスを持っていても、ユーザー名が異なる場合、取り込み全体が失敗します。 この問題が修正されました。競合するシナリオでは、ユーザー/グループはスキップされ、競合としてログファイルに記録されます。
+
+### リリース日 {#release-date-ctt-may}
 
 コンテンツ転送ツールv1.4.0のリリース日は2021年5月11日です。
 
