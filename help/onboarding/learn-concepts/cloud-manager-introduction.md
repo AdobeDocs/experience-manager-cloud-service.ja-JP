@@ -1,9 +1,9 @@
 ---
 title: Cloud Managerについて説明します
 description: このページでは、Cloud Manager、Cloud Managerのプログラム、環境について説明します。
-source-git-commit: 7985512f664dce33aa8d3ccd7e7fdc49e63e81f8
+source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '596'
 ht-degree: 20%
 
 ---
@@ -21,7 +21,7 @@ Cloud Managerは、AEMのCloud Serviceとしての不可欠なコンポーネン
 
 ## Cloud Manager プログラム {#cloud-manager-programs}
 
-Cloud Managerプログラムは、通常、購入したサービスレベル契約(SLA)に対応する、ビジネスイニシアチブの論理的なセットをサポートするCloud Manager環境のセットを表します。 例えば、あるプログラムは、グローバルなパブリックWebサイトをサポートするAEMリソースを表し、別のプログラムは、内部のCentral DAMを表します。 詳しくは、このビデオをご覧ください。
+Cloud Managerプログラムは、通常、購入したサービスレベル契約(SLA)に対応する、ビジネスイニシアチブの論理的なセットをサポートするCloud Manager環境のセットを表します。 例えば、あるプログラムは、グローバルなパブリックWebサイトをサポートするAEMリソースを表し、別のプログラムは、内部のCentral DAMを表します。 Cloud Managerプログラムの使用について詳しくは、この[ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)をご覧ください。
 
 ユーザーは、**ｻサンドボックス**&#x200B;または&#x200B;**実稼動**&#x200B;プログラムを作成できます。
 
