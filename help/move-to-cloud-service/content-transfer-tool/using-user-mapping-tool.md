@@ -2,7 +2,7 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
+source-git-commit: a9119ac04762c91230d52d6418b7808bca7e9f9f
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 88%
@@ -26,7 +26,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 ### ユーザーマッピングツール{#mapping-tool}
 
-コンテンツ転送ツール（ユーザーマッピングなし）は、移行されるコンテンツに関連付けられているすべてのユーザーとグループを移行します。  Cloud Serviceマッピングツールはコンテンツ転送ツールの一部で、AEM as a  as a User.  これらの変更が完了すると、コンテンツ転送ツールは、指定されたコンテンツのユーザーとグループを通常どおり移行します。
+コンテンツ転送ツール（ユーザーマッピングなし）は、移行されるコンテンツに関連付けられているすべてのユーザーとグループを移行します。 Cloud Serviceマッピングツールはコンテンツ転送ツールの一部で、AEM as a  as a User. これらの変更が完了すると、コンテンツ転送ツールは、指定されたコンテンツのユーザーとグループを通常どおり移行します。
 
 ## 重要な検討事項 {#important-considerations}
 
