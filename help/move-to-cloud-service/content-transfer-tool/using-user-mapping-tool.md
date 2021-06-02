@@ -2,7 +2,7 @@
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
 exl-id: 88ce7ed3-46fe-4b3f-8e18-c7c8423faf24
-source-git-commit: 44b46358528f768476a8ec73119957bba3880d76
+source-git-commit: d7f74356db14c40ce2e1e76f96211a277fed8b93
 workflow-type: tm+mt
 source-wordcount: '1266'
 ht-degree: 88%
@@ -20,12 +20,11 @@ ht-degree: 88%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#important-considerations" text="ユーザーマッピングツール使用時の重要な考慮事項"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#using-user-mapping-tool" text="ユーザーマッピングツールの使用"
 
-
 Adobe Experience Manager（AEM）as a Cloud Service への移行の一環として、ユーザーとグループを既存の AEM システムから AEM as a Cloud Service に移行する必要があります。これには、コンテンツ転送ツールを使用します。
 
 AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用したオーサー層へのアクセスが完全に統合されていることです。それには、[Adobe Admin Console](https://helpx.adobe.com/jp/enterprise/using/admin-console.html) を使用してユーザーとユーザーグループを管理する必要があります。ユーザープロファイル情報が Adobe Identity Management System（IMS）に一元化され、すべての Adobe クラウドアプリケーションでシングルサインオンが利用可能です。詳しくは、[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=ja#identity-management) を参照してください。この変更により、Cloud Service オーサーインスタンスでのユーザーおよびグループの重複を避けるために、既存のユーザーおよびグループをそれぞれの IMS ID にマッピングする必要があります。
 
-### ユーザーマッピングツール{#user-mapping-tool}
+### ユーザーマッピングツール{#mapping-tool}
 
 コンテンツ転送ツール（ユーザーマッピングなし）は、移行されるコンテンツに関連付けられているすべてのユーザーとグループを移行します。  Cloud Serviceマッピングツールはコンテンツ転送ツールの一部で、AEM as a  as a User.  これらの変更が完了すると、コンテンツ転送ツールは、指定されたコンテンツのユーザーとグループを通常どおり移行します。
 
