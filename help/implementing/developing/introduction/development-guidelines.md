@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 07a03d603e2a5e0a7d55a64862f991fedebbf93d
+source-git-commit: b8e7bc6e68bde3e102bf304af5fb8999fccb1624
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 96%
 
 ---
@@ -250,6 +250,6 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.tls` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
-## Recommendationsと[!DNL Assets] {#use-cases-assets}のガイドライン
+## アセット開発者向けのガイドラインと推奨事項[!DNL Assets] {#use-cases-assets}
 
 Cloud ServiceとしてのAssetsの開発の使用例、推奨事項、参考資料については、[Assetsの開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。
