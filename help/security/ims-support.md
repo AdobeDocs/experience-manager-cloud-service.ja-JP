@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -163,7 +163,7 @@ AEM では引き続き、管理者ユーザーのローカルログインをサ�
 
 >[!NOTE]
 >
->IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーが Adobe ID を使用して設定されている場合、ログインには会社の ID プロバイダーを使用して認証されます。
+>IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーがFederated IDを使用して設定されている場合、ログインには会社のIDプロバイダーを使用して認証されます。
 
 その後、ユーザーは IMS ログイン画面にリダイレクトされ、認証情報を入力する必要があります。
 
