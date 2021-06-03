@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Serviceチームと製品プロファイル
 description: このページでは、AEM as a Cloud Serviceチームと製品プロファイルについて説明します。
-source-git-commit: fbf2ddff7d3b54f76afbd2431a6b5d5772620fd3
+source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -26,6 +26,8 @@ AEM as a Cloud Serviceは、AEMをサービスとして提供する、完全に�
 * **AEM管理者**:AEM管理者は、通常、開発者、特に開発環境などへのアクセス権が必要な開発者に割り当てられます。AEM Administrators製品プロファイルは、関連するAEMインスタンスで管理者権限を付与するために使用されます。
 
 * **AEMユーザー**:AEMユーザーとは、組織内で、AEMをAdobeとの契約の一部としてCloud Serviceとして使用するユーザーです。これらのメンバーは、タスクを実行するためにAEMにアクセスする必要があります。 AEMユーザー製品プロファイルは、通常、コンテンツを作成およびレビューするAEMコンテンツ作成者に割り当てられます（複数のタイプがあります）。（ページ、アセット、パブリケーションなど）をwebサイトに公開する前に設定する必要があります。 以下に示すAEM Users製品プロファイルは、これらのメンバーに割り当てられます。
+
+   ![](/help/onboarding/learn-concepts/assets/admin-console-profiles.png)
 
    >[!NOTE]
    >AEM as a Cloud製品プロファイルに割り当てられたすべてのCloud Serviceは、Cloud Managerに（読み取り専用）アクセスできます。
