@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Serviceチームと製品プロファイル
 description: このページでは、AEM as a Cloud Serviceチームと製品プロファイルについて説明します。
-source-git-commit: 02e954d294100a17fff327742fa442fc4759860c
+source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '664'
 ht-degree: 1%
 
 ---
@@ -57,4 +57,4 @@ Cloud Managerチームには、以下が含まれます。
 * 開発者1人
 
    >[!NOTE]
-   >AEM as aCloud Serviceへのアクセスを許可するには、ユーザーが`AEM Users`または`AEM Administrators`のような2つの製品プロファイルのいずれかに属している必要があります。 インスタンスに対する権限を付与されている必要があります。関連するCloud Managerを管理する権限では不十分です。
+   >AEM as aCloud Serviceへのアクセス権を付与するには、ユーザーが次の2つの製品プロファイルのいずれかに属している必要があります。`AEM Users`または`AEM Administrators`。 インスタンスに対する権限を付与されている必要があります。関連するCloud Managerを管理する権限では不十分です。
