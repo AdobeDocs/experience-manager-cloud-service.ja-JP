@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Serviceチームと製品プロファイル
 description: このページでは、AEM as a Cloud Serviceチームと製品プロファイルについて説明します。
-source-git-commit: 5c74c3f011ed8d77fc20b7a802603d37b67d2e7c
+source-git-commit: 529b70daf58a98fd5fcbe758a2c86ac8322f945b
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
