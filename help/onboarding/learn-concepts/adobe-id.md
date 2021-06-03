@@ -1,9 +1,9 @@
 ---
 title: Adobe ID
 description: このページでは、Adobe IDに関する概要について説明します。
-source-git-commit: 312b1ce7dc660d1bb4fe199be0e7403069d30161
+source-git-commit: d8e4635bba1b8a3e825e70c921a5d0c5aff52990
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -11,11 +11,9 @@ ht-degree: 1%
 
 # Adobe ID {#adobe-id}
 
-Adobe IDは、Cloud Serviceまたは任意のAdobeソリューションとしてログインし、AEMにアクセスするために使用する電子メールアドレスです。 これは、組織が所有するAdobeソリューションへのアクセスを提供するためにシステム管理者が使用する、[identity](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/identity.ug.html)に関連付けられた電子メールアドレスです。
+Adobe IDは、Cloud Serviceまたは任意のAdobeソリューションとしてログインし、AEMにアクセスするために使用する電子メールです。 これは、チームの設定時にシステム管理者が使用する電子メールIDです。 Adobe IDを使用すると、1つのアカウントに関連付けられたすべてのAdobeプランと製品を保持できます。 Adobe IDは、Adobeのアプリケーションとサービスを使用して、パーソナライズされた安全なエクスペリエンスを実現するために不可欠です。
 
->[!IMPORTANT]
->Adobe IDは、Adobeのアプリケーションやサービスを使用して、安全でパーソナライズされたエクスペリエンスを実現するために不可欠で、Adobe製品を購入する場合に必要です。 Adobe IDを使用すると、1つのアカウントに関連付けられたすべてのAdobeプランと製品を保持できます。 詳しくは、[Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID)の作成または更新を参照してください。
-
+詳しくは、[Adobe ID](https://helpx.adobe.com/ca/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID)の作成または更新を参照してください。
 
 次の3種類のAdobe IDの使用方法があります。
 
