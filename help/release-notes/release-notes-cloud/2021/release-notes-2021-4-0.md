@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: aeee895e4a4b959125d08091619988d0ffa09ace
+source-git-commit: 20bb4eaf8cdf0208b145087d27123c25c6293f9f
 workflow-type: tm+mt
-source-wordcount: '1475'
+source-wordcount: '1496'
 ht-degree: 12%
 
 ---
@@ -85,6 +85,8 @@ ht-degree: 12%
 * 1行のテキストフィールドでメタデータ値を更新および保存すると、ドロップダウンメニューで編集が無効になっている場合でも、ドロップダウンメニューの値が削除されます。 （CQ-4317077）
 
 * アセットをレビューする際には、省略記号を注釈として使用できます。 小さな楕円を使用すると、楕円は印刷版の注釈の数と重なります。 （CQ-4316792）
+
+* 検索結果からアセットを選択した場合、クイック公開オプションが表示されない。 （CQ-4317748）
 
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
