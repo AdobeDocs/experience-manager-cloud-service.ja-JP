@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 40897b9194de56251da73cbea8718845882f98af
+source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1349'
 ht-degree: 13%
 
 ---
@@ -96,6 +96,29 @@ ht-degree: 13%
       >
    * アジア太平洋2021年6月24日。
 
+
+## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
+
+### [!DNL Forms] の新機能 {#what-is-new-forms}
+
+* **コンテキストヘルプ**:アダプティブフォームエディター、テンプレートエディター、テーマエディターのコンテキストヘルプを追加し、作成者がエディターの様々な機能をより深く理解できるようにしました。
+* **プロパティブラウザーのエラーメッセージ**:アダプティブFormsのプロパティブラウザーで、各プロパティに関するエラーメッセージを追加しました。これらのメッセージは、フィールドの許可値を理解するのに役立ちます。
+
+### [!DNL Forms] {#what-is-new-forms-prerelease}の今後のベータ版機能
+
+as a Cloud Serviceの出力：出力サービスを使用すると、XDPテンプレートとXMLデータを組み合わせて様々な形式の印刷ドキュメントを生成できます。 このサービスを使用すると、同期および非同期のバッチモードでドキュメントを生成できます。 出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
+
+* テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する
+* 非インタラクティブPDF印刷ストリームを含む様々な形式で出力フォームを生成します。
+* XFA フォームの PDF ファイルから印刷用 PDF を生成する
+
+ベータ版プログラムに新規登録する場合は、 formscsbeta@adobe.comまでお書きください。
+
+### [!DNL Forms] で修正されたバグ {#forms-bugs-fixed}
+
+* AEM Forms Workflowsの「タスクの割り当て」手順で、アクションボタンのデフォルトのアイコンをCoralアイコンに置き換えると、ワークフローは動作を停止し、例外がログに記録されます。 デフォルトのアイコンが使用されている場合、ワークフローは期待どおりに実行されます。
+* レイアウトレイヤーで、列数を変更し、編集レイヤーを開いて、パネル内の一部のコンポーネントをドラッグすると、青い四角いボックスがアダプティブフォームエディターのコンテンツ領域に表示され、エディターが応答しなくなります。
+* アダプティブアセットまたは外部アセットのURLの提供に関連するルールエディターオプションのエラーメッセージが長すぎて、使いやすいものではありません。
 
 ## Cloud Manager {#cloud-manager}
 
