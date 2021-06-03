@@ -2,7 +2,7 @@
 title: ページ注釈の追加
 description: 注釈モードを使用して、注釈やスケッチをページに残し、コンテンツレビュープロセスを支援するノート注釈を使用する場合と同じようにします
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 5d533354a29237aeafc00e5570ede3ab00b721fd
+source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 35%
@@ -45,7 +45,7 @@ ht-degree: 35%
 
 1. 注釈をクリックまたはタップして注釈ダイアログを開き、詳細を表示します。
 
-   ![注釈の詳細](/help/sites-cloud/authoring/assets/annotation-sketches.png)
+   ![注釈の詳細](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
 1. 注釈モードを終了して以前に使用したモードに戻るには、上部のツールバーの右側にある「x」ボタンをタップまたはクリックします。
 
