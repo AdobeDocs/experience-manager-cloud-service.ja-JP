@@ -4,10 +4,10 @@ description: Dynamic Media でビデオを使用する方法について説明�
 feature: ビデオプロファイル
 role: Business Practitioner
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 94ee4dde39a59dff0b351a36dacf66d9f4b22872
 workflow-type: tm+mt
-source-wordcount: '9475'
-ht-degree: 68%
+source-wordcount: '9471'
+ht-degree: 67%
 
 ---
 
@@ -498,7 +498,7 @@ Googleはユーザーインターフェイスを定期的に変更します。 �
 
 1. 「**[!UICONTROL 必要な認証情報]**」をタップします。
 1. **[!UICONTROL プロジェクトへの認証情報の追加]**&#x200B;ページの手順 2 で、「**[!UICONTROL OAuth 2.0 クライアント ID を作成する]**」の下の「名前」フィールドに、必要に応じて一意の名前を入力します。または、Google で指定されるデフォルトの名前を使用することもできます。
-1. 「**[!UICONTROL 承認済みJavaScript™ origins]**」の下にあるテキストフィールドに、次のパスに従って、実際に使用するドメインとポート番号を入力します。入力が終わったら、**[!UICONTROL Enter]**&#x200B;キーを押して、パスをリストに追加します。
+1. 「**[!UICONTROL 承認済みのJavaScriptオリジン]**」の下にあるテキストフィールドに、次のパスに従って、実際に使用するドメインとポート番号を入力します。入力が終わったら、**[!UICONTROL Enter]**&#x200B;キーを押して、パスをリストに追加します。
 
    `https://<servername.domain>:<port_number>`
 
@@ -605,7 +605,7 @@ Experience Manager6.4以降、YouTubeをExperience Managerで設定するため�
 1. YouTube アカウント設定ダイアログボックスに戻ります。「**[!UICONTROL JSON 設定]**」フィールドに JSON テキストを貼り付けます。
 1. ページの右上隅にある「**[!UICONTROL 保存]**」をタップします。
 
-   次に、YouTubeチャネルをExperience Managerで設定します。
+   次に、Experience ManagerでYouTubeチャネルを設定します。
 
 1. 「**[!UICONTROL チャンネルを追加]**」をタップします。
 1. 「チャネル名」フィールドに、前に「**[!UICONTROL YouTube への 1 つ以上のチャネルの追加]**」タスクで作成したチャネルの名前を入力します。
@@ -621,7 +621,7 @@ Experience Manager6.4以降、YouTubeをExperience Managerで設定するため�
 
 1. 「**[!UICONTROL 許可]**」をタップします。
 
-   次は、公開用タグを設定します。
+   次に、公開用のタグを設定します。
 
 1. **[!UICONTROL 公開用タグの設定]** - Cloud Services／YouTube ページで、鉛筆アイコンをタップして、使用するタグのリストを編集します。
 1. 使用可能なタグのリストをExperience Managerに表示するには、ドロップダウンリストアイコン（上下逆のキャレット）をタップします。
@@ -650,7 +650,7 @@ Experience Manager6.4以降、YouTubeをExperience Managerで設定するため�
 1. YouTube アカウント設定ダイアログボックスに戻ります。「**[!UICONTROL JSON 設定]**」フィールドに JSON テキストを貼り付けます。
 1. 「**[!UICONTROL OK]**」をタップします。
 
-   次に、YouTubeチャネルをExperience Managerで設定します。
+   次に、Experience ManagerでYouTubeチャネルを設定します。
 
 1. 「**[!UICONTROL 利用可能なチャネル]**」の右にある「**+**」（プラス記号のアイコン）をタップします。
 1. YouTube チャンネル設定ダイアログボックスの「タイトル」フィールドに、前の「**[!UICONTROL YouTube への 1 つ以上のチャネルの追加]**」タスクで作成したチャネルの名前を入力します。
@@ -666,7 +666,7 @@ Experience Manager6.4以降、YouTubeをExperience Managerで設定するため�
 
 1. 「**[!UICONTROL 許可]**」をタップします。
 
-   次は、公開用タグを設定します。
+   次に、公開用のタグを設定します。
 
 1. **[!UICONTROL 公開用タグの設定]** - Cloud Services／YouTube ページで、鉛筆アイコンをタップして、使用するタグのリストを編集します。
 1. 使用可能なタグのリストをExperience Managerに表示するには、ドロップダウンリストアイコン（上下逆のキャレット）をタップします。
@@ -1049,7 +1049,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 >[!NOTE]
 使用するビデオプレーヤーがキャプションの表示に対応する必要があります。
 
-Dynamic Mediaでは、キャプションファイルをJSON(JavaScript™ Object Notation)形式に変換できます。 このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。その後、検索エンジンでコンテンツをクロール/インデックス付けして、ビデオを見つけやすくし、ビデオコンテンツに関する詳細を顧客に提供できます。
+Dynamic Mediaでは、キャプションファイルをJSON(JavaScript Object Notation)形式に変換できます。 このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。その後、検索エンジンでコンテンツをクロール/インデックス付けして、ビデオを見つけやすくし、ビデオコンテンツに関する詳細を顧客に提供できます。
 
 URL での JSON 機能の使用について詳しくは、[静的な（画像以外の）コンテンツの提供](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=ja#image-serving-api)を参照してください。
 
