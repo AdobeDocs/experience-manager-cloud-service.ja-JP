@@ -3,9 +3,9 @@ title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コン
 description: AEMヘッドレス配信機能の重要な部分である、Assets HTTP APIでのコンテンツフラグメントのサポートについて説明します。
 feature: コンテンツフラグメント、Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1956'
 ht-degree: 97%
 
 ---
@@ -258,7 +258,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 >[!NOTE]
 >
->詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>詳細については、『](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)API リファレンス[』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 読み取り／配信 {#read-delivery}
 
@@ -379,7 +379,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 詳細な API リファレンスについては、こちらを参照してください。
 
-* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
