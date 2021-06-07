@@ -1,10 +1,10 @@
 ---
 title: AEM Assets APIを使用したコンテンツの更新方法
 description: AEMヘッドレス開発者ジャーニーのこのパートでは、REST APIを使用してコンテンツフラグメントのコンテンツにアクセスし、更新する方法について説明します。
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 51%
+source-wordcount: '1053'
+ht-degree: 52%
 
 ---
 
@@ -255,7 +255,7 @@ Assets REST APIは`/api/assets`エンドポイントを使用し、アクセス�
 
 >[!NOTE]
 >
->詳細については、『API リファレンス』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
+>詳細については、『API リファレンス』を参照してください。特に、[Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)。
 
 ### 読み取り／配信 {#read-delivery}
 
@@ -325,7 +325,7 @@ AEM Assets REST APIの使用の詳細については、次を参照してくだ�
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [コンテンツフラグメント REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
    * [API リファレンス](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API - コンテンツフラグメント](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/assets-api-content-fragments/index.html)
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 * [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
