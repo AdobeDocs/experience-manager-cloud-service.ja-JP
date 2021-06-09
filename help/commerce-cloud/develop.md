@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 85%
@@ -21,13 +21,13 @@ AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づ�
 
 - [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)
 - [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service の開発ガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja)
+- [AEM as a Cloud Service の開発ガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
 
 ## AEM as a Cloud Service SDK を使用したローカル開発 {#local}
 
 >[!VIDEO](https://video.tv.adobe.com/v/39476/?quality=12&learn=on)
 
-CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as a Cloud Service 用に提供された CIF アドオンは、ローカル開発にも使用できます。このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aemcloud.html)からダウンロードできます。
+CIF プロジェクトを使用する場合は、ローカル開発環境を使用することをお勧めします。AEM as a Cloud Service 用に提供された CIF アドオンは、ローカル開発にも使用できます。このファイルは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。
 
 CIF アドオンは Sling 機能アーカイブとして提供されます。ソフトウェア配布ポータルで利用できる zip ファイルには、2 つの Sling 機能アーカイブファイルが含まれています。1 つは AEM オーサー用、もう 1 つは AEM パブリッシュインスタンス用です。
 
@@ -73,13 +73,13 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    Mac OS X の例：
 
    ```bash
-   export COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    Windows の例：
 
    ```bash
-   set COMMERCE_ENDPOINT=https://demo.magentosite.cloud/graphql
+   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
    この変数は、AEM でコマースシステムへの接続に使用されます。また、CIFアドオンにはローカルリバースプロキシが含まれ、Commerce GraphQLエンドポイントがローカルで使用可能になります。 これは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しを行う CIF クライアント側コンポーネントにも使用されます。
