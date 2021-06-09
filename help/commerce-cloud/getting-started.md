@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: de756a469f2be7b4f93d647b500cd4e8dc046342
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 36%
@@ -81,7 +81,7 @@ AEMをAdobe I/OCLIを介してコマースソリューションに接続する�
 
    詳細は、[CLI ドキュメント](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)を参照してください。
 
-   コマースGraphQLエンドポイントURLは、コマースのGraphQlサービスを指し、安全なHTTPS接続を使用する必要があります。 例：`https://demo.magentosite.cloud/graphql`
+   コマースGraphQLエンドポイントURLは、コマースのGraphQlサービスを指し、安全なHTTPS接続を使用する必要があります。 例：`https://<yourmagentosystem>/graphql`
 
 4. 認証を必要とするステージング済みカタログ機能を有効にする（オプション）
 
