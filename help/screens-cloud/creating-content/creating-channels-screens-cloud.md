@@ -4,7 +4,7 @@ description: ここでは、ScreensでチャネルをCloud Serviceとして作�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 46d1fcd548ca304563f8a0ba0410be053bcccee8
+source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 4%
@@ -33,7 +33,11 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 以下の手順に従って、ScreensでCloud Serviceとして新しいシーケンスチャネルを作成します。
 
 1. Screensコンテンツプロバイダーに移動します。
-1. SanJoseCafeなどのAEM Screensプロジェクトに移動します。
+
+1. *FirstDigitalExperience*&#x200B;など、AEM Screensプロジェクトに移動します。
+
+   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+
 1. SanJoseCafe —>チャネルなど、プロジェクトから&#x200B;**チャネル**&#x200B;フォルダーを選択します。
 1. アクションバーの「**作成**」をクリックします。
 1. **作成**&#x200B;ウィザードで&#x200B;**シーケンスチャネル**&#x200B;などのテンプレートを選択し、「**次へ**」をクリックします。
