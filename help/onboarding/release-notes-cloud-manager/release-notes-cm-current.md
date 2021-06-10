@@ -2,56 +2,58 @@
 title: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 feature: リリース情報
-source-git-commit: 13d45a02169fc99be60d73dde91dbc8c2ce03ef8
+source-git-commit: d30f81b8d12a4136d96cdfd1fb8c3e9927c015d1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '394'
 ht-degree: 17%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 2021.5.0 の Cloud Manager のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.6.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2021.6.0 Cloud Manager のリリースノートの概要を説明しています。
 
 >[!NOTE]
 >Adobe Experience Manager as aCloud Service版の最新のリリースノートを確認するには、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
 
 ## リリース日 {#release-date}
 
-AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6日です。
-次回のリリースは2021年6月11日に予定されています。
+AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10日です。
+次回のリリースは2021年7月16日に予定されています。
 
 ### 新機能 {#what-is-new}
 
-* PackageOverlaps品質ルールで、同じパッケージが複数回（同じデプロイ済みパッケージセット内の複数の埋め込み場所など）デプロイされた場合を検出するようになりました。
+* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。 お客様は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。 詳しくは、[Preview Serviceへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
-* パブリックAPIのリポジトリエンドポイントにGitのURLが含まれるようになりました。
+* ビルド手順中にダウンロードされたMavenの依存関係は、パイプライン実行の間でキャッシュされるようになりました。 この機能は、今後数週間のお客様に対して有効になる予定です。
 
-* Cloud Managerユーザーがダウンロードしたデプロイメントログは、より洞察に富み、失敗と成功シナリオに関する詳細が含まれるようになります。
+* プログラムの名前は、プログラムを編集ダイアログで編集できるようになりました。
 
-* コードをAdobeGitにプッシュ中に発生した断続的なエラーが解決されました。
+* プロジェクトの作成時と、Gitワークフローを管理するデフォルトのプッシュコマンドで使用されるデフォルトのブランチ名が`main`に変更されました。
 
-* Commerceアドオンは、プログラムの編集ワークフロー中にサンドボックスプログラムに適用できるようになりました。
+* UIでのプログラムの編集エクスペリエンスが更新されました。
 
-* *編集プログラム*&#x200B;のエクスペリエンスが更新されました。
+* 品質ルール`ImmutableMutableMixCheck`が更新され、`/oak:index`ノードが不変として分類されるようになりました。
 
-* 環境の詳細ページの「ドメイン名」テーブルには、ページネーション経由で最大250個のドメイン名が表示されます。
+* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。
 
-* プログラムで使用可能なソリューションが1つだけでも、**プログラムを追加**&#x200B;ワークフローと&#x200B;**プログラムを編集**&#x200B;ワークフローの「**ソリューションとアドオン**」タブにソリューションが表示されます。
+* 混乱を避けるために、環境の詳細ページのパブリッシュAEMとパブリッシュDispatcherのセグメント行が統合されました。
 
-* ビルドでデプロイ済みコンテンツパッケージが生成されなかった場合のビルド手順ログのエラーメッセージが不明でした。
+* `damAssetLucene`インデックスの構造を検証するための新しいコード品質ルールが追加されました。 詳しくは、[カスタムDAM Asset Lucene Oakインデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
+
+* 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。 詳しくは、[環境の詳細](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)を参照してください。
 
 ### バグ修正 {#bug-fixes}
 
-* 場合によっては、その設定がデプロイされていない場合でも、IP許可リストの横に緑色の「アクティブ」ステータスが表示されることがあります。
+* ルート要素名の後に改行を含むJCRノード定義が正しく解析されなかった問題を修正しました。
 
-* パイプライン変数APIは、「削除済み」の変数を削除する代わりに、ステータス&#x200B;**DELETED**&#x200B;のみをマークします。
+* リストリポジトリAPIは、削除されたリポジトリをフィルタリングしません。
 
-* コードスメルタイプの品質の問題の一部が、信頼性評価に誤って影響していました。
+* スケジュール手順に無効な値が指定された場合、誤ったエラーメッセージが表示されていました。
 
-* ワイルドカードドメインはサポートされていないので、UIではユーザーがワイルドカードドメインを送信できません。
+* 場合によっては、IP許可リストがデプロイされていない場合でも、その設定の横に緑色の&#x200B;*アクティブ*&#x200B;ステータスが表示されることがあります。
 
-* UTCの午前0時から午前1時の間にパイプラインの実行が開始された場合、Cloud Managerで生成されるアーティファクトのバージョンが前日に作成されたバージョンより大きくなることは保証されていませんでした。
+* 一部のプログラム編集シーケンスでは、実稼動パイプラインを作成または編集できなくなる可能性があります。
 
-* サンドボックスプログラムの設定中に、サンプルコードを含むプロジェクトが正常に作成されると、「 Gitを管理」が概要ページのヒーローカードからのリンクとして表示されます。
+* 一部のプログラム編集シーケンスでは、**概要**&#x200B;ページに、プログラム設定を再実行する際に誤解を招くようなメッセージが表示される場合があります。
