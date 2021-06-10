@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
+source-git-commit: c4e788527ab0be8b54f9a0baed2e4e2677129898
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 78%
@@ -93,11 +93,11 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
    必要な権限を持つユーザーは、プレビューサービスに対して&#x200B;*ロック解除*&#x200B;アクセスを行い、目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
 
-   1. 適切なIP許可リストを作成し、プレビューサービスに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
+   * 適切なIP許可リストを作成し、プレビューサービスに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
 
-      または,
+      *または*,
 
-   1. 「 IPの更新」許可リストワークフローを使用して、デフォルトのIPを削除し、必要に応じてIPを追加します。 詳しくは、[IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
+   * 「 IPの更新」許可リストワークフローを使用して、デフォルトのIPを削除し、必要に応じてIPを追加します。 詳しくは、[IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
 
       >[!NOTE]
       >プレビューURLに適切なメンバーがアクセスできるように、プレビューサービスのURLをチームと共有する前に、上記の手順を実行する必要があります。
