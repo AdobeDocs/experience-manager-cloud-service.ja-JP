@@ -2,10 +2,10 @@
 title: ログの管理 - Cloud Services
 description: ログの管理 - Cloud Services
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 2411c2d1472abaa2af7b2a71938d753bb98db95c
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 78%
 
 ---
 
@@ -25,6 +25,21 @@ ht-degree: 100%
 >開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
 
 ![](assets/download-logs2.png)
+
+## プレビューサービス{#download-preview-service}のログのダウンロード
+
+ユーザーは、プレビューサービスのログをダウンロードできます
+
+1. Cloud Managerの&#x200B;**概要**&#x200B;ページから&#x200B;**環境**&#x200B;カードに移動します。
+
+1. ...メニューから「ログをダウンロード」を選択します。
+
+1. 「サービス」ドロップダウンオプションから、「**プレビュー**」または「**Dispatcherのプレビュー**」を選択し、ダウンロードアイコンをクリックします。
+
+   >[!NOTE]
+   >このアクションは、環境の詳細ページからも実行できます。
+
+   ![](assets/download-preview.png)
 
 
 ## API を介したログの入手 {#logs-through-api}
