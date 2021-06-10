@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
+source-git-commit: 7e4d75d90b3f6fad024304781225dfcef6df0e2b
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 77%
+source-wordcount: '1652'
+ht-degree: 76%
 
 ---
 
@@ -96,7 +96,7 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
    必要な権限を持つユーザーは、プレビューサービスに&#x200B;*ロック解除*&#x200B;アクセスして目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
 
-   * 適切なIP許可リストを作成し、Preview Serviceに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
+   * 適切なIP許可リストを作成し、Preview Serviceに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。 詳しくは、[IP許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)を参照してください。
 
       *または*,
 
