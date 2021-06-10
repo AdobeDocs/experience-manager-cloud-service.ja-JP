@@ -2,7 +2,7 @@
 title: 'サンドボックスプログラムの編集 '
 description: サンドボックスプログラムの編集
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
-source-git-commit: ee12a6a81a6852d9ffff674cea69e36c37c0ea65
+source-git-commit: 8974217f8a3db6cfe96082fe2ed0277c243fa7e1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 46%
@@ -30,7 +30,7 @@ ht-degree: 46%
 
    「**一般**」タブに移動して、プログラムの説明を編集します。
 
-   ![](assets/edit-program-general.png)
+   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/edit-program-sandboxa.png)
 
    「**ソリューション&amp;アドオン**」タブには、**サイト**&#x200B;と&#x200B;**アセット**&#x200B;のように、実稼動版とサンドボックスの両方のプログラムの2つのオプションが表示されます。 また、**Commerce**&#x200B;アドオンオプションも選択できます。このオプションは、**Sites**&#x200B;で利用できます（下図を参照）。
 
@@ -39,7 +39,7 @@ ht-degree: 46%
    >[!NOTE]
    >プログラムに対して少なくとも1つのソリューションを選択する必要があります。つまり、ユーザーは、プログラムの編集ワークフローの間、すべてのソリューションの選択を解除できません。
 
-1. 「**保存**」をクリックして、プログラム編集ワークフローを完了します。
+1. 「**更新**」をクリックして、プログラム編集ワークフローを完了します。
 
 
 ## プログラム編集時の考慮事項 {#considerations-editing}
