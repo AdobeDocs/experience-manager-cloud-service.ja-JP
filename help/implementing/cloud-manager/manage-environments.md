@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
+source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1623'
 ht-degree: 78%
 
 ---
@@ -104,7 +104,9 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
    >[!NOTE]
    >プレビューURLに適切なメンバーがアクセスできるように、プレビューサービスのURLをチームと共有する前に、上記の手順を実行する必要があります。
 
-   プレビューサービスへのアクセスをロック解除すると、ロックアイコンは表示されなくなります。
+   プレビューサービスへのアクセスをロック解除すると、以下に示すように、ロックアイコンは表示されなくなります。
+
+   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 環境の更新 {#updating-dev-environment}
 
