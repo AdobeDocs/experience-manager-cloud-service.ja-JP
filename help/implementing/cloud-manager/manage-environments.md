@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 0a0bb01dfc2786edc4ebd331ddad44b12ca64fa2
+source-git-commit: fd142b6814e73d85a4239488bda11a662f33d9cf
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 78%
@@ -91,22 +91,22 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
 1. **デフォルトのIP許可リストロック**:最初の作成時に、アクセスを有効にするには、環境内のプレビューサービスからデフォルトのIP許可リストを積極的に適用解除する必要があります。
 
+   必要な権限を持つユーザーは、プレビューサービスに対して&#x200B;*ロック解除*&#x200B;アクセスを行い、目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
+
+   1. 適切なIP許可リストを作成し、プレビューサービスに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
+
+      または,
+
+   1. 「 IPの更新」許可リストワークフローを使用して、デフォルトのIPを削除し、必要に応じてIPを追加します。 詳しくは、[IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
+
+      >[!NOTE]
+      >プレビューURLに適切なメンバーがアクセスできるように、プレビューサービスのURLをチームと共有する前に、上記の手順を実行する必要があります。
+
+      プレビューサービスへのアクセスをロック解除すると、以下に示すように、ロックアイコンは表示されなくなります。
+
+      ![](/help/implementing/cloud-manager/assets/preview-service1.png)
+
 1. **プレビュー用にコンテンツを公開**:AEM内の「公開を管理」UIを使用して、コンテンツをプレビューサービスに公開できます。詳しくは、[コンテンツのプレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)を参照してください。
-
-必要な権限を持つユーザーは、プレビューサービスに対して&#x200B;*ロック解除*&#x200B;アクセスを行い、目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
-
-1. 適切なIP許可リストを作成し、プレビューサービスに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
-
-   または,
-
-1. 「 IPの更新」許可リストワークフローを使用して、デフォルトのIPを削除し、必要に応じてIPを追加します。 詳しくは、[IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
-
-   >[!NOTE]
-   >プレビューURLに適切なメンバーがアクセスできるように、プレビューサービスのURLをチームと共有する前に、上記の手順を実行する必要があります。
-
-   プレビューサービスへのアクセスをロック解除すると、以下に示すように、ロックアイコンは表示されなくなります。
-
-   ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
 ## 環境の更新 {#updating-dev-environment}
 
