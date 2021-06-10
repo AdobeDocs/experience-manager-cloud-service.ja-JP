@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: カスタムドメイン名の追加
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '610'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager でカスタムドメイン名を追加するには、ユーザー
 
 * AEM as aCloud Serviceは、ワイルドカードドメインをサポートしていません。
 
-* 各 Cloud Manager 環境は、1 つの環境につき最大 100 個のカスタムドメインをホストできます。
+* 各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。
 
 * 同じドメイン名を複数の環境で使用することはできません。
 
@@ -39,7 +39,7 @@ Cloud Manager でカスタムドメイン名を追加するには、ユーザー
 
 1. 「**ドメインを追加**」ボタンをクリックして、**ドメイン名を追加**&#x200B;ダイアログボックスを開きます。
 
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-create2.png)
+   ![](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
 
 1. 「**ドメイン名**」にカスタムドメイン名を入力します。
 
@@ -47,6 +47,11 @@ Cloud Manager でカスタムドメイン名を追加するには、ユーザー
    >ドメイン名を入力する際は、`http://`、`https://`、スペースを含めないでください。
 
 1. そのドメイン名と関連付けられるパブリッシュサービスを持つ&#x200B;**環境**&#x200B;を選択します。
+
+1. 「**パブリッシュ**」または「**プレビュー**」としてサービスを選択します。
+
+   >[!NOTE]
+   >パブリッシュサービスとプレビューサービスの両方で、Cloud Managerのサイトプログラムでカスタムドメイン名がサポートされるようになりました。 各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。Preview Serviceの詳細については、「[Preview Service](/help/implementing/cloud-manager/manage-environments.md#preview-service)」を参照してください。
 
 1. ドロップダウンから&#x200B;**ドメイン SSL 証明書**&#x200B;を選択し、「**続行**」をクリックします。
 
