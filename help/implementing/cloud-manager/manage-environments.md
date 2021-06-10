@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f9dbf2983bb67d60b0f89199bd8da938423b2e2c
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 99%
+source-wordcount: '1620'
+ht-degree: 78%
 
 ---
 
@@ -61,7 +61,6 @@ ht-degree: 99%
    >[!NOTE]
    >実稼動以外のパイプラインをまだセットアップしていない場合は、*概要*&#x200B;画面に、実稼動以外のパイプラインの作成に使用できるカードが表示されます。
 
-
 ## 環境の詳細{#viewing-environment}
 
 概要ページの&#x200B;**環境**&#x200B;カードは、最大 3 環境を一覧表示します。
@@ -76,8 +75,36 @@ ht-degree: 99%
 
 1. 環境の詳細を表示するリストの環境のいずれかを選択します。
 
-   ![](assets/environment-view-3.png)
+   >[!NOTE]
+   >プレビューサービスは、すべてのプログラムに周期的にデプロイされます。 お客様は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。 詳しくは、[Preview Serviceへのアクセス](#access-preview-service)の節を参照してください。
 
+   ![](assets/environ-preview1.png)
+
+
+### プレビューサービス{#access-preview-service}へのアクセス
+
+プレビューサービス機能は、Cloud Managerを介して各AEM as a Cloud Service環境に追加のプレビュー（公開）サービスを提供します。
+
+Webサイトがパブリッシュ環境に到達して公開される前に、Webサイトの最終的なエクスペリエンスをプレビューします。 Preview Serviceを確認して使用する前に、次のポインターをいくつか示します。
+
+1. **AEMバージョン**:環境がAEM以降のバージョンである `2021.5.5343.20210542T070738Z` 必要があります。これをおこなうには、更新パイプラインが環境で正常に実行されていることを確認します。
+
+1. **デフォルトのIP許可リストロック**:最初の作成時に、アクセスを有効にするには、環境内のプレビューサービスからデフォルトのIP許可リストを積極的に適用解除する必要があります。
+
+1. **プレビュー用にコンテンツを公開**:AEM内の「公開を管理」UIを使用して、コンテンツをプレビューサービスに公開できます。詳しくは、[コンテンツのプレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)を参照してください。
+
+必要な権限を持つユーザーは、プレビューサービスに対して&#x200B;*ロック解除*&#x200B;アクセスを行い、目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
+
+1. 適切なIP許可リストを作成し、プレビューサービスに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
+
+   または,
+
+1. 「 IPの更新」許可リストワークフローを使用して、デフォルトのIPを削除し、必要に応じてIPを追加します。 詳しくは、[IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
+
+   >[!NOTE]
+   >プレビューURLに適切なメンバーがアクセスできるように、プレビューサービスのURLをチームと共有する前に、上記の手順を実行する必要があります。
+
+   プレビューサービスへのアクセスをロック解除すると、ロックアイコンは表示されなくなります。
 
 ## 環境の更新 {#updating-dev-environment}
 
@@ -145,9 +172,13 @@ ht-degree: 99%
 
 ![](assets/environ-login-locally-2.png)
 
+
 ## カスタムドメイン名の管理 {#manage-cdn}
 
 環境の概要ページから&#x200B;**環境**&#x200B;の詳細ページに移動します。
+
+>[!NOTE]
+>パブリッシュサービスとプレビューサービスの両方で、Cloud Managerのサイトプログラムでカスタムドメイン名がサポートされるようになりました。 各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。
 
 使用している環境のパブリッシュサービスに対して、次のアクションを下記のとおり実行できます。
 
@@ -161,9 +192,13 @@ ht-degree: 99%
 
 1. [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
 
+
 ## IP 許可リストの管理 {#manage-ip-allow-lists}
 
 環境の概要ページから環境の詳細ページに移動します。ここで、使用している環境のパブリッシュサービスやオーサーサービスに対して次のアクションを実行できます。
+
+>[!NOTE]
+>IP許可リスト機能が、オーサー、パブリッシュ、プレビューサービス用のCloud Managerでサポートされるようになりました（Sitesプログラムで使用できます）。
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 
