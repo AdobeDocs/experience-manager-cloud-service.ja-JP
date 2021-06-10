@@ -1,17 +1,17 @@
 ---
 title: CIF製品およびカテゴリピッカーの使用
 description: 顧客コマースコンポーネントでCIF製品およびカテゴリピッカーを使用して、作成者やマーケターがコマース製品およびカタログデータを効率的に操作できるようにする方法を説明します。
-sub-product: Commerce
+sub-product: コマース
 topics: Development
 version: cloud-service
 activity: develop
 audience: developer
 feature: コマース統合フレームワーク
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 764d70db8026bad1683fffdb44092f1d2a8e8d28
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 0%
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,9 @@ AEM Content &amp; Commerce Authoringは、AEMの作成者やマーケターが�
 
 また、`name`、`fieldLabel`、`fieldDescription`などの標準のダイアグログフィールドプロパティもサポートされています。
 
-`cifproductfield`コンポーネントには、 cif.shell.picker clientlibが必要です。 clientlibをダイアログに追加するには、 extraClientlibsプロパティを使用します。
+>[!CAUTION]
+>
+>`cifproductfield`コンポーネントには`cif.shell.picker` clientlibが必要です。 clientlibをダイアログに追加するには、 extraClientlibsプロパティを使用します。
 
 `cifproductfield`の完全な動作例は、[CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)プロジェクトにあります。 AEMコアコンポーネントのドキュメントの[ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)のカスタマイズも参照してください。
 
@@ -69,6 +71,8 @@ AEM Content &amp; Commerce Authoringは、AEMの作成者やマーケターが�
 
 また、`name`、`fieldLabel`、`fieldDescription`などの標準のダイアグログフィールドプロパティもサポートされています。
 
-`cifproductfield`コンポーネントと同じように、`cifcategoryfield`コンポーネントにもcif.shell.picker clientlibが必要です。 clientlibをダイアログに追加するには、`extraClientlibs`プロパティを使用します。 AEMコアコンポーネントのドキュメントの[ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)のカスタマイズを参照してください。
+>[!CAUTION]
+>
+>`cifproductfield`コンポーネントと同じ`cifcategoryfield`コンポーネントにも`cif.shell.picker` clientlibが必要です。 clientlibをダイアログに追加するには、`extraClientlibs`プロパティを使用します。 AEMコアコンポーネントのドキュメントの[ダイアログ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)のカスタマイズを参照してください。
 
 `cifcategoryfield`の完全な動作例は、[CIFコアコンポーネント](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)プロジェクトにあります。
