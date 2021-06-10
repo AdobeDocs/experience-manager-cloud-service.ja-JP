@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8e8764dd39e2bc664a577c863a04a7e4c5e99fd0
+source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
 workflow-type: tm+mt
-source-wordcount: '1626'
-ht-degree: 78%
+source-wordcount: '1648'
+ht-degree: 77%
 
 ---
 
@@ -89,11 +89,16 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
 1. **AEMバージョン**:環境がAEM以降のバージョンである `2021.5.5343.20210542T070738Z` 必要があります。これをおこなうには、更新パイプラインが環境で正常に実行されていることを確認します。
 
-1. **デフォルトのIP許可リストロック**:最初の作成時に、アクセスを有効にするには、環境内のプレビューサービスからデフォルトのIP許可リストを積極的に適用解除する必要があります。
+1. **デフォルトのIP許可リストロック**:作成時に、プレビューサービスには、下の図に示すように、ラベル付きのデ `Preview Default [Env ID]`フォルトのIP許可リストが適用されます。
 
-   必要な権限を持つユーザーは、プレビューサービスに対して&#x200B;*ロック解除*&#x200B;アクセスを行い、目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
+   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
 
-   * 適切なIP許可リストを作成し、プレビューサービスに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
+   >[!NOTE]
+   >最初の作成時に、アクセスを有効にするには、環境内のプレビューサービスからデフォルトのIP許可リストを積極的に適用解除する必要があります。
+
+   必要な権限を持つユーザーは、プレビューサービスに&#x200B;*ロック解除*&#x200B;アクセスして目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
+
+   * 適切なIP許可リストを作成し、Preview Serviceに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。
 
       *または*,
 
