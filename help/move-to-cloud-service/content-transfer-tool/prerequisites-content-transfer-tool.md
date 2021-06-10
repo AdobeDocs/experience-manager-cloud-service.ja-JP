@@ -1,14 +1,21 @@
 ---
 title: コンテンツ転送ツールの前提条件
 description: コンテンツ転送ツールの前提条件
-source-git-commit: becb8368af8a8228bf3248bde66ad7164187a9c4
+source-git-commit: 0d664997a66d790d5662e10ac0afd0dca7cc7fac
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 1%
+source-wordcount: '322'
+ht-degree: 6%
 
 ---
 
 # コンテンツ転送ツールの前提条件 {#prerequisites}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_prereqs"
+>title="コンテンツ転送ツール使用時の重要な考慮事項"
+>abstract="JavaとAEMのバージョン、サポートされるデータストアのタイプ、ユーザーグループの考慮事項など、コンテンツ転送ツールの使用に関する重要な考慮事項を確認します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#best-practices" text="ベストプラクティスとガイドライン"
 
 次の表に、コンテンツ転送ツールを使用するための前提条件を示します。
 
