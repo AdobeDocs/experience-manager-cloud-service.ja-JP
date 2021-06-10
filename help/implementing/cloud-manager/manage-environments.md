@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: b6b1e5a1f3e16d7c9ddffb27ca8f3da039832787
+source-git-commit: 226911867b7bbed81e548ebd353dd2afce41b057
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1642'
 ht-degree: 77%
 
 ---
@@ -89,9 +89,7 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
 1. **AEMバージョン**:環境がAEM以降のバージョンである `2021.5.5343.20210542T070738Z` 必要があります。これをおこなうには、更新パイプラインが環境で正常に実行されていることを確認します。
 
-1. **デフォルトのIP許可リストロック**:作成時に、プレビューサービスには、下の図に示すように、ラベル付きのデ `Preview Default [Env ID]`フォルトのIP許可リストが適用されます。
-
-   ![](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-preview.png)
+1. **デフォルトのIP許可リストロック**:作成時に、プレビューサービスにはデフォルトのIP許可リスト（ラベル付き）が適用されま `Preview Default [Env ID]`す。
 
    >[!NOTE]
    >最初の作成時に、アクセスを有効にするには、環境内のプレビューサービスからデフォルトのIP許可リストを積極的に適用解除する必要があります。
