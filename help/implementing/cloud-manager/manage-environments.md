@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 11d12e43de7a71a59f565379e95ba57b13180fed
+source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -87,7 +87,7 @@ ht-degree: 76%
 
 Webサイトがパブリッシュ環境に到達して公開される前に、Webサイトの最終的なエクスペリエンスをプレビューします。 Preview Serviceを確認して使用する前に、次のポインターをいくつか示します。
 
-1. **AEMバージョン**:環境がAEM以降のバージョンである `2021.5.5343.20210542T070738Z` 必要があります。これをおこなうには、更新パイプラインが環境で正常に実行されていることを確認します。
+1. **AEMバージョン**:環境がAEM以降のバージョンである `2021.05.5368.20210529T101701Z` 必要があります。これをおこなうには、更新パイプラインが環境で正常に実行されていることを確認します。
 
 1. **デフォルトのIP許可リストロック**:作成時に、プレビューサービスにはデフォルトのIP許可リスト（ラベル付き）が適用されま `Preview Default [Env ID]`す。
 
