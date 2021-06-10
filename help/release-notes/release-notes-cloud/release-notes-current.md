@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 181cda0c3f4ec48262ccbe2743ba75bb0d213934
+source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 13%
+source-wordcount: '1660'
+ht-degree: 15%
 
 ---
 
@@ -122,18 +122,61 @@ as a Cloud Serviceの出力：出力サービスを使用すると、XDPテン�
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.5.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as aCloud Service2021.6.0および2021.5.0のCloud Managerのリリースノートの概要を説明します。
+
+## リリース日 {#release-date-june-cm}
+
+AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10日です。
+次回のリリースは2021年7月16日に予定されています。
+
+### 新機能 {#what-is-new-junecm}
+
+* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。 お客様は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。 詳しくは、[Preview Serviceへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
+
+* ビルド手順中にダウンロードされたMavenの依存関係は、パイプライン実行の間でキャッシュされるようになりました。 この機能は、今後数週間のお客様に対して有効になる予定です。
+
+* プログラムの名前は、プログラムを編集ダイアログで編集できるようになりました。
+
+* プロジェクトの作成時と、Gitワークフローを管理するデフォルトのプッシュコマンドで使用されるデフォルトのブランチ名が`main`に変更されました。
+
+* UIでのプログラムの編集エクスペリエンスが更新されました。
+
+* 品質ルール`ImmutableMutableMixCheck`が更新され、`/oak:index`ノードが不変として分類されるようになりました。
+
+* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。
+
+* 混乱を避けるために、環境の詳細ページのパブリッシュAEMとパブリッシュDispatcherのセグメント行が統合されました。
+
+   ![](/help/onboarding/release-notes-cloud-manager/assets/aem-dispatcher.png)
+
+* `damAssetLucene`インデックスの構造を検証するための新しいコード品質ルールが追加されました。 詳しくは、[カスタムDAM Asset Lucene Oakインデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
+
+* 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。 詳しくは、[環境の詳細](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)を参照してください。
+
+### バグ修正 {#bug-fixes-junecm}
+
+* ルート要素名の後に改行を含むJCRノード定義が正しく解析されなかった問題を修正しました。
+
+* リストリポジトリAPIは、削除されたリポジトリをフィルタリングしません。
+
+* スケジュール手順に無効な値が指定された場合、誤ったエラーメッセージが表示されていました。
+
+* 場合によっては、IP許可リストがデプロイされていない場合でも、その設定の横に緑色の&#x200B;*アクティブ*&#x200B;ステータスが表示されることがあります。
+
+* 一部のプログラム編集シーケンスでは、実稼動パイプラインを作成または編集できなくなる可能性があります。
+
+* 一部のプログラム編集シーケンスでは、**概要**&#x200B;ページに、プログラム設定を再実行する際に誤解を招くようなメッセージが表示される場合があります。
+
 
 ### リリース日 {#release-date-cm-may}
 
 AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6日です。
-次回のリリースは2021年6月11日に予定されています。
 
 ### 新機能 {#what-is-new-may}
 
-* PackageOverlaps品質ルールで、同じパッケージが複数回（同じデプロイ済みパッケージセット内の複数の埋め込み場所など）デプロイされた場合を検出するようになりました。
+* PackageOverlaps 品質ルールは、デプロイされたパッケージセットに同じパッケージが複数回（複数の埋め込み場所に）デプロイされた場合に検出するようになりました。
 
-* パブリックAPIのリポジトリエンドポイントにGitのURLが含まれるようになりました。
+* Public API のリポジトリーエンドポイントに、Git URL が含まれるようになりました。
 
 * Cloud Managerユーザーがダウンロードしたデプロイメントログは、より洞察に富み、失敗と成功シナリオに関する詳細が含まれるようになります。
 
@@ -141,7 +184,7 @@ AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6�
 
 * Commerceアドオンは、プログラムの編集ワークフロー中にサンドボックスプログラムに適用できるようになりました。
 
-* プログラムの編集エクスペリエンスが更新されました。
+* プログラムの編集エクスペリエンスが新しくなりました。
 
 * 環境の詳細ページの「ドメイン名」テーブルには、ページネーション経由で最大250個のドメイン名が表示されます。
 
@@ -155,11 +198,11 @@ AEM as aCloud Service2021.5.0のCloud Managerのリリース日は2021年5月6�
 
 * パイプライン変数APIは、「削除済み」の変数を削除する代わりに、ステータス&#x200B;**DELETED**&#x200B;のみをマークします。
 
-* コードスメルタイプの品質の問題の一部が、信頼性評価に誤って影響していました。
+* コードの臭いのタイプの品質問題が、誤って信頼性の評価に影響していました。
 
 * ワイルドカードドメインはサポートされていないので、UIではユーザーがワイルドカードドメインを送信できません。
 
-* UTCの午前0時から午前1時の間にパイプラインの実行が開始された場合、Cloud Managerで生成されるアーティファクトのバージョンが前日に作成されたバージョンより大きくなることは保証されていませんでした。
+* パイプラインの実行が午前 0 時から午前 1 時（UTC）の間に開始された場合、Cloud Manager で生成されるアーティファクトのバージョンが、前日に作成されたバージョンより大きいことが保証されませんでした。
 
 * サンドボックスプログラムの設定中に、サンプルコードを含むプロジェクトが正常に作成されると、「 Gitを管理」が概要ページのヒーローカードからのリンクとして表示されます。
 
