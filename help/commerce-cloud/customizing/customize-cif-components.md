@@ -11,10 +11,10 @@ feature: コマース統合フレームワーク
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 73822fb3b74472d48a3db59267ed133fc1a40ad6
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 96%
+source-wordcount: '2582'
+ht-degree: 95%
 
 ---
 
@@ -336,6 +336,10 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 この例では、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「エコフレンドリー」であることを示します。コンポーネントの[マークアップをカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)するデザインパターンは、AEM CIF コアコンポーネントだけでなく、すべての AEM コンポーネントに対して実際に標準です。
 
+>[!NOTE]
+>
+> この製品ティーザーやCIFページコンポーネントなど、CIF製品およびカテゴリピッカーを使用してコンポーネントをカスタマイズする場合は、必ずコンポーネントダイアログに必要な`cif.shell.picker` clientlibを含めてください。 詳しくは、[CIF製品とカテゴリピッカーの使用](use-cif-pickers.md)を参照してください。
+
 1. IDE で、`ui.apps` モジュールに移動して展開し、フォルダー階層を `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` まで展開し、`.content.xml` ファイルを検査します。
 
    ![製品ティーザー ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
@@ -499,3 +503,4 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 - [AEM CIF コアコンポーネントのカスタマイズ](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [コアコンポーネントのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [AEM Sites 使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [CIF製品およびカテゴリピッカーの使用](use-cif-pickers.md)
