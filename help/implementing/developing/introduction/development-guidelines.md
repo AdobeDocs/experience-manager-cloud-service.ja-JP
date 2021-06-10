@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 7fc99376522238f74eb24efd93f079c03f854aa1
+source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 96%
+source-wordcount: '2322'
+ht-degree: 95%
 
 ---
 
@@ -213,6 +213,10 @@ HTTP ポートと HTTPS ポートのみがサポートされます。これに�
 
 AEM as a Cloud Service では、送信メールを暗号化する必要があります。以下の節では、電子メールのリクエスト、設定、送信の方法について説明します。
 
+>[!NOTE]
+>
+>メールサービスは、OAuth2サポートを使用して設定できます。 詳しくは、[メールサービスのOAuth2サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
+
 ### アクセスの申請 {#requesting-access}
 
 デフォルトでは、送信電子メールは無効になっています。有効にするには、以下を含んだサポートチケットを送信します。
@@ -236,7 +240,7 @@ AEM CS では、ポート 465 でメールを送信する必要があります�
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)を参照してください。AEM as a Cloud Service では、`com.day.cq.mailer.DefaultMailService OSGI` サービスに対して次の調整をおこなう必要があります。
+電子メールの設定について詳しくは、[AEM 6.5のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)を参照してください。 AEM as a Cloud Service では、`com.day.cq.mailer.DefaultMailService OSGI` サービスに対して次の調整をおこなう必要があります。
 
 ポート 465 がリクエストされた場合：
 
