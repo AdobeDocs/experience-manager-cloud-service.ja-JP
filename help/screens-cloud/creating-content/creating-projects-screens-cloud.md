@@ -4,10 +4,10 @@ description: ここでは、ScreensでプロジェクトをCloud Serviceとし�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2e572e0b25e1add25016191b55a78eea050b4ad0
+source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 0%
 
 ---
 
@@ -29,35 +29,25 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
    >[!NOTE]
    >プロジェクトを作成するためにScreensコンテンツプロバイダーにアクセスする方法については、[Using Screens Content Provider](/help/screens-cloud/setting-up-project/using-screens-content-provider.md)を参照してください。
 
-1. アクションバーの右上隅にある「**作成** —> **エンティティを作成** 」をクリックします。
+1. アクションバーの右上隅にある「**Screensプロジェクト**&#x200B;を作成」をクリックします。
 
-   ![](/help/screens-cloud/assets/create-content/create-project1.png)
-
-1. ****&#x200B;を作成ウィザードで「**Screensプロジェクト**」を選択します。 「**次へ**」をクリックします。
-
-   ![](/help/screens-cloud/assets/create-content/create-project2.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
 1. **Screensプロジェクト**&#x200B;を作成ダイアログボックスに、プロジェクトの&#x200B;**タイトル**&#x200B;を入力します（例：*FirstDigitalExperience*）。
 
-   ![](/help/screens-cloud/assets/create-content/create-project3.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
    >**名前**&#x200B;フィールドは、選択したタイトルに基づいて、**Screensプロジェクトを作成**&#x200B;ダイアログボックスに自動的に入力されます。
 
-1. 「**作成**」をクリックします。*FirstDigitalExperience*&#x200B;というタイトルのScreensプロジェクトがScreensコンテンツプロバイダーに表示されます。
+1. 「**保存**」をクリックします。 *FirstDigitalExperience*&#x200B;というタイトルのScreensプロジェクトがScreensコンテンツプロバイダーに表示されます。
 
-   ![](/help/screens-cloud/assets/create-content/create-project4.png)
+   ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
+1. プロジェクトがScreensコンテンツプロバイダーに表示されます。このとき、**ロケーション**&#x200B;と&#x200B;**チャネル**&#x200B;という2つのフォルダーがあります。
 
-   または、
+   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
-   1. アクションバーの「**Screensプロジェクト**&#x200B;を作成」をクリックします。
-
-      ![](/help/screens-cloud/assets/create-content/create-project7.png)
-
-   1. プロジェクトの&#x200B;**タイトル**&#x200B;を入力します。 「**保存**」をクリックします。
-
-      ![](/help/screens-cloud/assets/create-content/create-project6.png)
    これで、AEM Screensプロジェクトが設定され、プロジェクトにチャネルと場所を追加できます。
 
 ### 既存のプロジェクトの削除{#deleting-project}
