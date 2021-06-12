@@ -4,10 +4,10 @@ description: Dynamic Media でのインタラクティブ画像の使用方法�
 feature: インタラクティブ画像
 role: Business Practitioner
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 8cf01af44621bec7edb7e710f0797a070d5bf6db
 workflow-type: tm+mt
-source-wordcount: '4263'
-ht-degree: 92%
+source-wordcount: '4245'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 92%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-上の図に示す Web ページの[実際のインタラクティブ画像](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)を参照してください。
+上の図に示す Web ページの[実際のインタラクティブ画像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)を参照してください。
 
 ## インタラクティブ画像バナーの作成方法 {#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 次のワークフローの手順説明は、Adobe Experience Manager Assetsのインタラクティブ画像をすばやく使い始めるのに役立ちます。
 
-一部のクイックスタートタスク内には「**例**」という見出しがあります。これには、[まだインタラクティブ画像が追加されていないサンプル Web ページ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)に基づいた簡単なチュートリアルが含まれています。
+一部のクイックスタートタスク内には「**例**」という見出しがあります。これには、[まだインタラクティブ画像が追加されていないサンプル Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)に基づいた簡単なチュートリアルが含まれています。
 
 
 
@@ -140,7 +140,7 @@ Mac の場合、Command + Option + I キーを押してデベロッパーツー�
 
 **例**
 
-この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)に適用できます。
+この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)に適用できます。
 
 このデモ Web ページには複数の製品サムネールがあり、それぞれのサムネールに「See More」というラベル付きのクイックビューボタンが存在します。Web ブラウザーのデバッグツールをアクティブにしたまま、各ボタンをクリックし、記録されたクイックビュー URL に注目してください。ページ上にある 4 つの製品クイックビューのすべてをアクティブにすると、バックエンドに対して実行されたクイックビューリクエストのリストは次のようになります。
 
@@ -327,13 +327,13 @@ Sitesのユーザーである場合は、Experience Managerメディアコンポ
 
 **例**
 
-[デモ Web サイトを例として](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)使用する際は、3 人の人物の写真が静的 `IMG` タグであることに注意してください。
+[デモ Web サイトを例として](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)使用する際は、3 人の人物の写真が静的 `IMG` タグであることに注意してください。
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-統合は、 `IMG`タグを削除して、Experience ManagerAssetsからコピーした埋め込みコードに置き換えるだけで簡単にできます。 その結果、[3 つの円のホットスポットがあるページにショッパブルインタラクティブ画像が表示されます](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)。
+統合は、 `IMG`タグを削除して、Experience ManagerAssetsからコピーした埋め込みコードに置き換えるだけで簡単にできます。 その結果、[3 つの円のホットスポットがあるページにショッパブルインタラクティブ画像が表示されます](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)。
 
 >[!NOTE]
 この時点では、デモ Web サイトのショッパブルインタラクティブ画像上のホットスポットは表示用で、まだ既存のクイックビューと統合されていません。
@@ -478,7 +478,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-[完全に統合されたインタラクティブ画像を含んだ最終的なデモ Web サイト](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)です。
+[完全に統合されたインタラクティブ画像を含んだ最終的なデモ Web サイト](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)です。
 
 ## クイックビューを使用したカスタムポップアップの作成 {#using-quickviews-to-create-custom-pop-ups}
 
