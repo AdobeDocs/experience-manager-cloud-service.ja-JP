@@ -4,10 +4,10 @@ description: ここでは、ScreensでチャネルをCloud Serviceとして作�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 49b7af411e26f0f56a159e288c5aa12c51b81a19
+source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 4%
+source-wordcount: '547'
+ht-degree: 15%
 
 ---
 
@@ -36,25 +36,60 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 1. *FirstDigitalExperience*&#x200B;など、AEM Screensプロジェクトに移動します。
 
-   ![](/help/screens-cloud/assets/create-content/create-channel1.png)
+1. **FirstDigitalExperience** —> **チャネル**&#x200B;など、プロジェクトから&#x200B;**チャネル**&#x200B;フォルダーを選択し、アクションバーの「**作成**」をクリックします。
 
-1. SanJoseCafe —>チャネルなど、プロジェクトから&#x200B;**チャネル**&#x200B;フォルダーを選択します。
-1. アクションバーの「**作成**」をクリックします。
+   ![](/help/screens-cloud/assets/create-content/channel-create1.png)
+
 1. **作成**&#x200B;ウィザードで&#x200B;**シーケンスチャネル**&#x200B;などのテンプレートを選択し、「**次へ**」をクリックします。
 
+   ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
    > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。 詳しくは、作成ウィザードで使用可能なテンプレートの節を参照してください。
 
-1. **LoopingChannelOne**&#x200B;など、シーケンスチャネルの名前を入力し、「**作成**」をクリックします。
-これで、AEM Screensプロジェクトのチャネルフォルダーに**LoopingChannelOne**&#x200B;が表示されます。
+1. **LoopingChannelOne**&#x200B;などのシーケンスチャネルの名前を入力し、「**作成**」をクリックします。
 
-## 既存チャネルの管理{#managing-channels}
+   ![](/help/screens-cloud/assets/create-content/channel-create3.png)
+
+   これで、AEM Screensプロジェクトのチャネルフォルダーに&#x200B;**LoopingChannelOne**&#x200B;が表示されます。
+
+1. チャネルを作成したら、チャネルにコンテンツを追加できます。 チャネルにアセット（画像/ビデオ）を追加する方法については、 [チャネルへのコンテンツの追加](#add-content)を参照してください。
+
+## チャネルの管理 {#managing-channels}
 
 プロパティおよびダッシュボードを編集および表示でき、またチャネルをコピー、プレビュー、削除できます。
+
+次の図に示すように、プロジェクトからチャネルに移動し、チャネルを選択します。 チャネルの編集、プロパティの表示、コンテンツのプレビュー、公開の管理、チャネルの削除などのオプションをアクションバーから選択できるようになりました。
+
+![](/help/screens-cloud/assets/create-content/channelprop1.png)
+
+### チャネルへのコンテンツの追加 {#add-content}
+
+チャネルにコンテンツを追加するには、下の手順に従います。
+
+1. 次の図に示すように、編集するチャネルを選択します。 アクションバーの左上隅の「**編集**」をクリックして、エディターを開きます。
+
+   ![](/help/screens-cloud/assets/create-content/edit-channel1.png)
+
+1. エディターを使用すると、公開するチャネルにアセットやコンポーネントを追加できます。
+
+1. 左側のパネルからアセットをドラッグ&amp;ドロップし、エディターに追加します。
+
+   ![](/help/screens-cloud/assets/create-content/edit-channel2.png)
+
+   >[!NOTE]
+   >「**プレビュー**」をクリックして、チャネルのコンテンツをプレビューします。
+   >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 作成ウィザードで使用可能なテンプレート{#available-templates}
 
 **チャネルの作成**&#x200B;ウィザードの使用中に、次のテンプレートを使用できます。
+
+| 使用可能なテンプレート | 説明 |
+|--- |--- |
+| チャネルフォルダー | チャネルのコレクションを格納するためのフォルダーを作成できます。 |
+| シーケンスチャネル | コンポーネントを連続して（スライドショーで 1 つずつ）再生するチャネルを作成できます。 |
+| 左／右 L バー型分割画面チャネル | コンテンツ作成者が、様々な種類のアセットを適切なサイズのゾーンに表示できます。 |
+
 
 ## 次の手順{#whats-next}
 
