@@ -4,10 +4,10 @@ description: ここでは、ScreensでチャネルをCloud Serviceとして公�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2f49c34a0d45e4fe2793f0a5bfe04f85dbb892ad
+source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 16%
 
 ---
 
@@ -32,13 +32,22 @@ AEM Screensからコンテンツを公開できます。 「公開を管理」�
 
 チャネルを公開するには、次の手順に従います。
 
-1. プロジェクトからチャネル（例：**FirstDigitalExperience** —>チャネル/ChannelFood）に移動して選択します。
+1. プロジェクトからチャネル（例：**FirstDigitalExperience** —> **Channels** —> **LoopingChannelOne** ）に移動して選択します。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-1.png)
 
 1. アクションバーの「**公開を管理**」をクリックします。
 
-1. 公開を管理ウィザードで、「公開」と「今すぐスケジュール」のアクションを選択し、「**次へ**」をクリックします。
+1. **アクション**&#x200B;を&#x200B;**公開**、**スケジュール**&#x200B;を&#x200B;**今すぐ**&#x200B;を&#x200B;**公開を管理ウィザード**&#x200B;から選択し、**次へ**&#x200B;をクリックします。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-2.png)
+
+   >[!NOTE]
+   >アクションバーの「**+ 子を含める**」をクリックし、プロジェクト内のすべてのモジュールを公開するためにすべてのオプションをオフにして、「追加」をクリックします。デフォルトでは、すべてのチェックボックスがオンになっているので、プロジェクト内のすべてのモジュールを公開するには、チェックボックスを手動でオフにする必要があります。
 
 1. **公開を管理**&#x200B;ウィザードからチャネルを選択したら、「**公開**」をクリックしてチャネルを公開します。
+
+   ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
 ## 次の手順{#whats-next}
@@ -48,4 +57,4 @@ AEM Screensからコンテンツを公開できます。 「公開を管理」�
 * Screensコンテンツプロバイダーからのロケーションの作成と管理
 * Screensサービスプロバイダーからのプレーヤーの作成と管理
 
-   次にドキュメントを確認して、ScreensをCloud Serviceネットワーク管理者のジャーニーとして続行する必要があります。
+   次にドキュメントを確認することで、ScreensをCloud Serviceのジャーニーとして継続する必要があります。
