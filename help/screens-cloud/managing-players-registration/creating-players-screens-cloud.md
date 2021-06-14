@@ -4,18 +4,22 @@ description: ここでは、Screensでプレーヤーを作成し、Cloud Servic
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8c58378660d865e90a0f5e562119c510cf86343a
+source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 13%
+source-wordcount: '282'
+ht-degree: 12%
 
 ---
 
 
 # Cloud Service{#creating-players-screens-cloud}としてのScreensでのプレーヤーの作成と管理
 
-AEM Screens Projectからチャネルを公開したら、プレーヤーを作成する必要があります。
+AEM Screensプロジェクトからチャネルを公開したら、Screensサービスプロバイダーからプレーヤーを作成する必要があります。
+
 *Player*&#x200B;は、視覚的な出力を生成するために、プレーヤーソフトウェアを実行します。 一般的なコンテンツやエクスペリエンスの切り抜き、拡大、変換の表示を制御します。スクリーン設定はディスプレイに結び付けられていますが、技術的な不具合が発生した場合には交換できます。
+
+>[!NOTE]
+>また、Screens Playerをインストールした後に、このガイドに記載されている手順を実装することもできます。
 
 ## 目的 {#objective}
 
@@ -26,10 +30,12 @@ AEM Screens Projectからチャネルを公開したら、プレーヤーを作�
 
 ## プレーヤーの作成{#creating-players}
 
-以下の手順に従って、Screens Services Providerからディスプレイを作成します。
+以下の手順に従って、Screens Services Providerからプレーヤーを作成します。
 
-1. AEM Services Providerに移動します。
-1. 左側のナビゲーションバーから「**ディスプレイ**」タブを選択し、画面の右上隅にある「作成」をクリックします。
+1. Screensサービスプロバイダーに移動します。
+
+1. 左側のナビゲーションパネルから「**ディスプレイ**」タブを選択し、画面の右上隅にある「作成」をクリックします。
+
 1. 「**表示**」を選択します。
 1. 「表示名」に「 **ChannelFoodDisplay** 」と入力し、「作成」をクリックします。
 1. 「 ChannelFoodDisplay 」というタイトルのディスプレイが、ディスプレイリストに記録されるようになります。
