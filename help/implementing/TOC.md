@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 95%
+source-wordcount: '898'
+ht-degree: 96%
 
 ---
 
@@ -55,12 +55,12 @@ ht-degree: 95%
       + [IP 許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+   + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
-   + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [複数のソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [AEM as aCloud Service用のエンタープライズチーム開発設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service 向けの開発 {#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
@@ -70,7 +70,7 @@ ht-degree: 95%
    + [ログ](developing/introduction/logging.md)
    + [設定と設定ブラウザー](developing/introduction/configurations.md)
    + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service の API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/ref/javadoc/index.html)
+   + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html)
    + [サーバー側 API のアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
