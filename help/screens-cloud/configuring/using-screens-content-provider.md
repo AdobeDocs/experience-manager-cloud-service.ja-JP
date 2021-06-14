@@ -1,12 +1,12 @@
 ---
 title: Screensコンテンツプロバイダーの使用
-description: ここでは、Screensコンテンツプロバイダーを使用する方法について説明します。
+description: ここでは、Screensコンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -32,5 +32,6 @@ Screensコンテンツプロバイダーにログインすると、コンテン�
 
 ## 次の手順{#whats-next}
 
-Screensコンテンツプロバイダーに移動する方法を学習したら、次の手順(Cloud ServiceとしてのScreensでのプロジェクトの作成と管理)に移動します。
+これで、ScreensCloud Serviceプロバイダーに移動する方法を学びました。次に、「 [Screensでのプロジェクトの作成と管理(Cloud Serviceとして) ](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md) 」のドキュメントを見て、Screensをコンテンツのジャーニーとして続行する必要があります。
+
 
