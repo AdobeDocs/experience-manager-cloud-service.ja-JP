@@ -4,10 +4,10 @@ description: ここでは、ScreensでチャネルをディスプレイにCloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2514255c20a87a2e469c1678e6aee20a517eb9ab
+source-git-commit: 8108589cb69c31e1b6d838476efc56684a97728e
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 18%
+source-wordcount: '289'
+ht-degree: 37%
 
 ---
 
@@ -18,9 +18,7 @@ ht-degree: 18%
 
 ## 目的 {#objective}
 
-このドキュメントでは、ディスプレイの準備が整い、チャネルのコンテンツが入力されたら、ディスプレイにチャネルを割り当てる方法を説明します。 読み終えた後は、次の操作を行う必要があります。
-
-* Screens Services Providerからディスプレイにチャネルを割り当てる方法を説明します。
+このドキュメントでは、ディスプレイの準備が整い、チャネルにコンテンツを追加して公開した後に、ディスプレイにチャネルを割り当てる方法を説明します。 読み終えたら、Screensサービスプロバイダーからディスプレイにチャネルを割り当てる方法を理解できるようになります。
 
 ## 前提条件 {#prerequisites}
 
@@ -35,10 +33,24 @@ ht-degree: 18%
 
 1. Screens Services Providerに移動し、左側のナビゲーションパネルから「**ディスプレイ**」を選択します。
 
-1. リストからディスプレイ（例： ChannelFoodDisplay ）を選択し、「チャネルを割り当て」をクリックして、ディスプレイにチャネルを割り当てます。
+1. 「**チャネルを割り当て**」をクリックします。
 
-1. ドロップダウンリストからチャネル（例： ChannelFood ）を選択します。 「優先度」と「アクティベーション」を設定し、「作成」をクリックします。
+   ![画像](/help/screens-cloud/assets/display/assignchannel-1.png)
+
+1. **チャネルの割り当て**&#x200B;ダイアログボックスで以下のフィールドに入力します。
+
+   1. ドロップダウンからチャネル名を選択します。
+   1. 優先度を選択します。
+
+      >[!NOTE]
+      >優先度は、複数の割り当てが再生条件に一致する場合に、割り当ての順序付けをおこなうために使用します。最高値のものが低い値よりも常に優先されます。例えば、2 つのチャネル A と B がある場合、A の優先度が 1 で B の優先度が 2 であるなら、A より優先度が高いために、チャネル B が表示されます。
+   1. **Activation**&#x200B;から開始日と終了日を選択します。
+
+      ![画像](/help/screens-cloud/assets/display/assignchannel-2.png)
+
+1. 「**作成**」をクリックします。下の図に示すように、そのディスプレイにチャネルが割り当てられたことがわかります。
+
+   ![画像](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-   「作成」をクリックすると、そのディスプレイにチャネルが割り当てられているが表示されます。
 
