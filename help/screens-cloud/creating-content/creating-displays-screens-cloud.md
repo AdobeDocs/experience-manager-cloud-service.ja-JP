@@ -4,10 +4,10 @@ description: ここでは、ScreensでディスプレイをCloud Serviceとし�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 16%
+source-wordcount: '283'
+ht-degree: 14%
 
 ---
 
@@ -53,3 +53,6 @@ ht-degree: 16%
 
 ![画像](/help/screens-cloud/assets/display/disp-5.png)
 
+## 次の手順{#whats-next}
+
+これで、プロジェクトのディスプレイの作成と管理の方法を学びました。次に、『[AEM用のScreens PlayerのCloud Serviceとしてのインストールと設定](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)』を確認し、Cloud ServiceのジャーニーとしてScreensを続行する必要があります。
