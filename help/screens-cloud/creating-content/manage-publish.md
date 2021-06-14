@@ -4,9 +4,9 @@ description: ここでは、ScreensでチャネルをCloud Serviceとして公�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0cbbeed98d38a3f22eea0a306c6c76b552aacd
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '308'
 ht-degree: 16%
 
 ---
@@ -52,9 +52,4 @@ AEM Screensからコンテンツを公開できます。 「公開を管理」�
 
 ## 次の手順{#whats-next}
 
-これで、プロジェクトでチャネルを公開したので、次の操作を実行できます。
-
-* Screensコンテンツプロバイダーからのロケーションの作成と管理
-* Screensサービスプロバイダーからのプレーヤーの作成と管理
-
-   次にドキュメントを確認することで、ScreensをCloud Serviceのジャーニーとして継続する必要があります。
+これで、プロジェクトでチャネルを公開したので、次に「 [ScreensでのCloud Serviceのインストールと設定](/help/screens-cloud/creating-content/manage-publish.md) 」のドキュメントを確認し、ScreensをCloud Serviceジャーニーとして続行する必要があります。
