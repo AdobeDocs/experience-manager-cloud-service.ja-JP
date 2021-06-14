@@ -1,18 +1,18 @@
 ---
-title: Screensサービスプロバイダーの設定
-description: ここでは、Screensサービスプロバイダーの設定について説明します。
+title: Screensサービスプロバイダーに移動
+description: ここでは、Screensサービスプロバイダーに移動する方法について説明します。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
 
-# Screensサービスプロバイダーの設定{#setup-screens-services-provider}
+# Screensサービスプロバイダー{#setup-screens-services-provider}に移動します
 
 ## はじめに {#introduction}
 
@@ -44,5 +44,5 @@ ht-degree: 1%
 
 ## 次の手順{#whats-next}
 
-Screens Services Providerの設定方法を学習したら、 Screens Content Providerに移動して詳細を確認します。
+Screens Services Providerの設定方法を学習したら、 [Screensコンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)を参照して詳細を確認します。
 
