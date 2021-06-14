@@ -4,10 +4,10 @@ description: ここでは、Screensコンテンツプロバイダーを使用し
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 864c9cf72b0c552867422ee59bf85b11b9673ac7
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,11 @@ ht-degree: 1%
 >**前提条件**
 >この節を読む前に、[Screensサービスプロバイダーの設定](/help/screens-cloud/setting-up-project/setting-up-screens-services-provider.md)を参照して、Screensサービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
 
-Screensコンテンツプロバイダーにログインすると、コンテンツ再生でコンテンツを作成する準備が整います。
+Screensコンテンツプロバイダーにログインすると、コンテンツ再生でコンテンツを作成する準備が整います。 Screensコンテンツプロバイダーを使用して、以下を作成および管理します。
+
+* プロジェクト
+* チャネル
+* ロケーション
 
 ## 次の手順{#whats-next}
 
