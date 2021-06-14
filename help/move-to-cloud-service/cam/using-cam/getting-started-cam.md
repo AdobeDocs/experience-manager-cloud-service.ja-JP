@@ -6,8 +6,8 @@ hidefromtoc: true
 index: false
 source-git-commit: beb1e635f573c6acc16c2350727c36a98fd6b6e7
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '214'
+ht-degree: 1%
 
 ---
 
@@ -29,6 +29,10 @@ Cloud Acceleration Manager(CAM)は、お客様とパートナーに対し、移�
 
 ### Cloud Acceleration Managerに移動 {#navigating}
 
+
+次の手順に従って、Cloud Acceleration Manager(CAM)に移動します。
+
+1. [Adobe Experience Cloud](https://experience.adobe.com)にログインします。
 
 
 
