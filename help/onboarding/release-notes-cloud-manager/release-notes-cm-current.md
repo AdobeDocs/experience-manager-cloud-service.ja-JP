@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 feature: リリース情報
-source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
+source-git-commit: 04195582602c0cb4cc6d359dff6abfc8dbc24614
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 17%
+source-wordcount: '419'
+ht-degree: 15%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * 品質ルール`ImmutableMutableMixCheck`が更新され、`/oak:index`ノードが不変として分類されるようになりました。
 
-* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。
+* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。 この統合の一環として、依存関係のスキャンにより、AEM Runtimeにデプロイされるサードパーティの依存関係の問題をより正確に特定できます。
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュAEMとパブリッシュDispatcherのセグメント行が統合されました。
 
