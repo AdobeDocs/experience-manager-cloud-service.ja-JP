@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3f579f6871da8e8b2fcea921e5abf57dfc14f5f8
+source-git-commit: f447303d3618eb2e9ea38873c88ed04280670218
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1685'
 ht-degree: 15%
 
 ---
@@ -143,7 +143,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * 品質ルール`ImmutableMutableMixCheck`が更新され、`/oak:index`ノードが不変として分類されるようになりました。
 
-* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。
+* 品質ルール`CQBP-84`と`CQBP-84--dependencies`は、1つのルールに統合されました。 この統合の一環として、依存関係のスキャンにより、AEM Runtimeにデプロイされるサードパーティの依存関係の問題をより正確に特定できます。
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュAEMとパブリッシュDispatcherのセグメント行が統合されました。
 
