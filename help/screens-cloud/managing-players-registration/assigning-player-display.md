@@ -4,9 +4,9 @@ description: このページでは、プレーヤーをScreensのディスプレ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '218'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 目的 {#objective}
 
-このドキュメントでは、Screensサービスプロバイダーでディスプレイを作成および管理する方法について説明します。 読んだ後、プレーヤーをディスプレイに割り当てる方法を学ぶ必要があります。
+このドキュメントでは、Screensサービスプロバイダーのディスプレイにプレーヤーを割り当てる方法について説明します。 これらは、コンテンツがCloud ServiceプレーヤーとしてScreensで再生され始める前の、最後の必須手順です。
 
 ## プレーヤーをディスプレイに割り当てる手順{#create-display}
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 1. 「選択」をクリックすると、割り当てられたディスプレイが&#x200B;**「割り当てられたディスプレイ**」パネルの下に表示されます。
 
-   これで、ディスプレイがプレーヤーに割り当てられ、チャネルのコンテンツの再生が開始されます。 これで、プレーヤーはコンテンツをダウンロードして再生を開始する必要があります。 バリデーターが
+   これで、ディスプレイがプレーヤーに割り当てられ、チャネルのコンテンツの再生が開始されます。 これで、プレーヤーはコンテンツをダウンロードして再生を開始する必要があります。 **これで完了です!**
 
    ![画像](/help/screens-cloud/assets/player/output.gif)
 
