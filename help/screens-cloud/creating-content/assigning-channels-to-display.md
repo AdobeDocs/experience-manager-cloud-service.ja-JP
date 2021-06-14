@@ -4,7 +4,7 @@ description: ここでは、ScreensでチャネルをディスプレイにCloud 
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 40%
@@ -71,4 +71,4 @@ ht-degree: 40%
 
 ## 次の手順{#whats-next}
 
-これでチャネルをディスプレイに割り当てたので、次に『**AEM用のScreens Playerのインストールと設定**』をCloud Serviceとして確認し、ScreensをCloud Serviceジャーニーとして続行する必要があります。
+これでチャネルをディスプレイに割り当てたので、次に『[AEM用のScreens Playerのインストールと設定](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)』をCloud Serviceとして確認し、ScreensをCloud Serviceジャーニーとして続行する必要があります。
