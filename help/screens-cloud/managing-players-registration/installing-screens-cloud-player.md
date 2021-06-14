@@ -1,12 +1,12 @@
 ---
-title: Cloud ServiceとしてのScreensへのプレーヤーのインストール
-description: ここでは、ScreensにプレーヤーをCloud Serviceとしてインストールする方法について説明します。
+title: ScreensでのプレーヤーのインストールとCloud Service
+description: ここでは、ScreensでプレーヤーをCloud Serviceとしてインストールおよび設定する方法について説明します。
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '271'
 ht-degree: 2%
 
 ---
@@ -48,4 +48,4 @@ ht-degree: 2%
 
 ## 次の手順{#whats-next}
 
-これで、プレーヤーをインストールし、必要な設定を指定したので、次に「**ScreensサービスプロバイダーからのCloud Serviceの作成**」のドキュメントを確認し、Screensを作成ジャーニーとして続行する必要があります。
+これで、プレーヤーをCloud Serviceモードに設定できました。次に、Screensサービスプロバイダーの「Cloud ServiceとしてのScreensへのプレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)」ドキュメントを確認し、Screensをクラウドジャーニーとして続行する必要があります。[
