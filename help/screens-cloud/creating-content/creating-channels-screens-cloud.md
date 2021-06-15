@@ -4,10 +4,10 @@ description: ここでは、ScreensでチャネルをCloud Serviceとして作�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ece3fae8b65b4dbdc38e63a211a3f55f4eb91333
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 15%
+source-wordcount: '540'
+ht-degree: 16%
 
 ---
 
@@ -19,10 +19,10 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 ## 目的 {#objective}
 
-このドキュメントでは、ScreensコンテンツプロバイダーでのAEM Screensプロジェクトのチャネルの作成と管理について説明します。 読み終えた後は、次の操作を行う必要があります。
+このドキュメントでは、ScreensコンテンツプロバイダーでのAEM Screensプロジェクトのチャネルの作成と管理について説明します。 読み終えたら、次の操作を行う必要があります。
 
-* Screensコンテンツプロバイダーへのチャネルを作成する方法を説明します。
-* 範囲に関して、AEM Screensプロジェクトでチャネルを管理できる。
+* Screens Content Providerへのチャネルを作成する方法を説明します。
+* チャネル内のコンテンツの管理と編集
 
 ## ScreensでCloud Serviceとして新しいシーケンスチャネルを作成する手順{#create-new-channel}
 
@@ -44,7 +44,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
    ![](/help/screens-cloud/assets/create-content/channel-create2.png)
    >[!NOTE]
-   > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。 詳しくは、作成ウィザードで使用可能なテンプレートの節を参照してください。
+   > **作成**&#x200B;ウィザードは、チャネルの作成時に様々なタイプのテンプレートを提供します。 詳しくは、作成ウィザードの「使用可能なテンプレート[」の節を参照してください。](#available-templates)
 
 1. **LoopingChannelOne**&#x200B;などのシーケンスチャネルの名前を入力し、「**作成**」をクリックします。
 
@@ -52,7 +52,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
    これで、AEM Screensプロジェクトのチャネルフォルダーに&#x200B;**LoopingChannelOne**&#x200B;が表示されます。
 
-1. チャネルを作成したら、チャネルにコンテンツを追加できます。 チャネルにアセット（画像/ビデオ）を追加する方法については、 [チャネルへのコンテンツの追加](#add-content)を参照してください。
+   チャネルを作成したら、チャネルにコンテンツを追加できます。 チャネルにアセット（画像/ビデオ）を追加する方法については、 [チャネルへのコンテンツの追加](#add-content)を参照してください。
 
 ## チャネルの管理 {#managing-channels}
 
