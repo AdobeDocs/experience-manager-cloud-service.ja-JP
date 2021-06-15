@@ -4,9 +4,9 @@ description: このページでは、Cloud Acceleration Managerの使用方法�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ Cloud Acceleration Manager(CAM)は、お客様とパートナーに対し、移�
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Cloud Acceleration Managerでのプロジェクトの作成{#create-project}
+### Cloud Acceleration Managerでのプロジェクトの作成と管理{#create-project}
 
 Cloud Acceleration Manager(CAM)のランディングページを使用すると、複数のプロジェクトを作成および編集できます。
 
