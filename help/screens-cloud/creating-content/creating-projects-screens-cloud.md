@@ -4,9 +4,9 @@ description: ここでは、ScreensでプロジェクトをCloud Serviceとし�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7e1e1a96b4657c536b999b6deaccfe8d537263bd
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
 
 ## 目的 {#objective}
 
-このドキュメントでは、ScreensコンテンツプロバイダーでAEM Screensプロジェクト用の新しいプロジェクトを作成する方法を説明します。 読み終えたら、範囲に関して、AEM Screensプロジェクトを作成できるようになります。
+このドキュメントでは、Screensコンテンツプロバイダーで新しいAEM Screensプロジェクトを作成する方法を説明します。 読み終えたら、範囲に関して、AEM Screensプロジェクトを作成できるようになります。
 
 ## 新しいプロジェクトの作成{#create-new-project}
 
@@ -40,13 +40,9 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
    >[!NOTE]
    >**名前**&#x200B;フィールドは、選択したタイトルに基づいて、**Screensプロジェクトを作成**&#x200B;ダイアログボックスに自動的に入力されます。
 
-1. 「**保存**」をクリックします。 *FirstDigitalExperience*&#x200B;というタイトルのScreensプロジェクトがScreensコンテンツプロバイダーに表示されます。
+1. 「**保存**」をクリックします。 *FirstDigitalExperience*&#x200B;というタイトルのScreensプロジェクトがScreensコンテンツプロバイダーに表示されます。 プロジェクトがScreensコンテンツプロバイダーに表示されます。このとき、**ロケーション**&#x200B;と&#x200B;**チャネル**&#x200B;という2つのフォルダーがあります。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
-
-1. プロジェクトがScreensコンテンツプロバイダーに表示されます。このとき、**ロケーション**&#x200B;と&#x200B;**チャネル**&#x200B;という2つのフォルダーがあります。
-
-   ![](/help/screens-cloud/assets/create-content/create-screens-project4.png)
 
    これで、AEM Screensプロジェクトが設定され、プロジェクトにチャネルと場所を追加できます。
 
