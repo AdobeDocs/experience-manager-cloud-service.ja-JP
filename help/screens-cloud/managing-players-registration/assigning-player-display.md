@@ -4,9 +4,9 @@ description: このページでは、プレーヤーをScreensのディスプレ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b9def61cb3f433d156706e8fb72c484110be3067
+source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '229'
 ht-degree: 2%
 
 ---
@@ -34,9 +34,11 @@ ht-degree: 2%
 
    ![画像](/help/screens-cloud/assets/player/register-player8.png)
 
-1. 「選択」をクリックすると、割り当てられたディスプレイが&#x200B;**「割り当てられたディスプレイ**」パネルの下に表示されます。
+## コンテンツ再生{#content-playback}
 
-   これで、ディスプレイがプレーヤーに割り当てられ、チャネルのコンテンツの再生が開始されます。 これで、プレーヤーはコンテンツをダウンロードして再生を開始する必要があります。 **これで完了です!**
+前の節で示したように、プレーヤーにディスプレイを割り当てると、割り当てられたディスプレイが&#x200B;**ASSIGNED DISPLAY**&#x200B;パネルに表示されます。
 
-   ![画像](/help/screens-cloud/assets/player/output.gif)
+これで、ディスプレイがプレーヤーに割り当てられ、チャネルのコンテンツの再生が開始されます。 これで、プレーヤーはコンテンツをダウンロードして再生を開始する必要があります。 **これで完了です!**
+
+![画像](/help/screens-cloud/assets/player/output.gif)
 
