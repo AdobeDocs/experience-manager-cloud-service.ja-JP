@@ -4,9 +4,9 @@ description: このページでは、Cloud Acceleration Managerの準備段階�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
    * 「詳細」アイコンを使用して、各レポートの結果の詳細を表示します
    * 新しいレポートをアップロードすると、すべての評価がリセットされます
 
-## 計画と設定の使用{#planning-setup}
+## カード{#planning-setup}の計画と設定の使用
 
 この節では、「計画と設定」アクティビティカードを参照します。
 
