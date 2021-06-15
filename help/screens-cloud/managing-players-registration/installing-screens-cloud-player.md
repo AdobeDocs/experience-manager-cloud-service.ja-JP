@@ -4,9 +4,9 @@ description: ここでは、ScreensでプレーヤーをCloud Serviceとして�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '270'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Cloud Service{#installing-players-screens-cloud}としてのScreensへのプレーヤーのインストールと設定
 
-次の節では、オンプレミスのAEMインスタンスに登録されているAEM Screens Playerのインストール方法について説明します。 さらに、既存のプレーヤーのファクトリリセットを実行し、新しいプレーヤーをAEM Screensに対してCloud Serviceとして登録する必要があります。
+この節では、オンプレミスのAEMインスタンスに登録されているAEM Screens Playerのインストール方法について説明します。 さらに、既存のプレーヤーのファクトリリセットを実行し、新しいプレーヤーをAEM ScreensにCloud Serviceとして登録する必要があります。
 
 ## 目的 {#objective}
 
@@ -44,8 +44,8 @@ ht-degree: 2%
 
    ![画像](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. クラウドモードに切り替えると、プレーヤーの登録が解除される「**確認**」をクリックします。
+1. クラウドモードに切り替えると、**確認**&#x200B;をクリックすると、プレーヤーの登録が解除されます。
 
 ## 次の手順{#whats-next}
 
-これで、プレーヤーをCloud Serviceモードに設定できました。次に、Screensサービスプロバイダーの「Cloud ServiceとしてのScreensへのプレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)」ドキュメントを確認し、Screensをクラウドジャーニーとして続行する必要があります。[
+これで、プレーヤーをCloud Serviceモードに設定できました。次に、Screensサービスプロバイダーの[Cloud ServiceとしてのScreensへのプレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)ドキュメントを確認し、Screensをクラウドジャーニーとして続行する必要があります。
