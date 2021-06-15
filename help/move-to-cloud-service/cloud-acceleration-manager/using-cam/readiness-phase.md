@@ -4,9 +4,9 @@ description: このページでは、Cloud Acceleration Managerの準備段階�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b1be8759dd246a8819e8546e3c72f391e26a8dc5
+source-git-commit: 5af319d30198329fd2312c11d88bf326bc4cdae7
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '312'
 ht-degree: 3%
 
 ---
@@ -18,20 +18,20 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 準備段階には、次の内容が含まれます。
 
-* ベストプラクティス分析
-* 計画と設定
+* [ベストプラクティス分析](#best-practices-analysis)
+* [計画と設定](#planning-setup)
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
-## ベストプラクティス分析の使用{#best-practices-analysis}
+## ベストプラクティス分析カード{#best-practices-analysis}の使用
 
-ベストプラクティス分析を使用するには、次の手順に従います。
+以下の手順に従って、ベストプラクティス分析カードを使用します。
 
 1. **ベストプラクティス分析**&#x200B;カードの「**レビュー**」ボタンをクリックします。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 次の手順に従って、ベストプラクティスアナライザーをダウンロードし、AEMシステムのクローンで実行します。
+1. 次の手順に従って、ベストプラクティスアナライザー(BPA)をダウンロードし、AEMシステムのクローンで実行します。
 
    1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルに移動し、ベストプラクティスアナライザーをzipファイルとしてダウンロードします。
 
@@ -46,9 +46,9 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 1. CAMのベストプラクティス分析ダッシュボードを確認し、確認します。
 
-   * 各カードをクリックすると、関連するタブが開きます
-   * すべてのレポートタブ（フィルタリングを含む）は、共有用または今後の取得用にブックマークできます
-   * 詳細アイコンを使用して、各レポート結果の詳細を表示します
+   * 各カードをクリックして、関連するタブを開きます。
+   * 共有または将来の取得のために、すべてのレポートタブ（フィルタリングを含む）をブックマークに追加できます
+   * 「詳細」アイコンを使用して、各レポートの結果の詳細を表示します
    * 新しいレポートをアップロードすると、すべての評価がリセットされます
 
 ## 計画と設定の使用{#planning-setup}
@@ -66,8 +66,5 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 ## 次の手順{#whats-next}
 
 Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順（実装フェーズの使用）を確認する準備が整いました。
-
-
-
 
 
