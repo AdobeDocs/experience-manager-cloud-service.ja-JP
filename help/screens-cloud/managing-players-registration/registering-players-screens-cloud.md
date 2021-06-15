@@ -4,9 +4,9 @@ description: ここでは、Screensにプレーヤーを登録する方法につ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c65eeaf74ddfd81d37eb7090b84c8bf6f876dc72
+source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ Screens用のプレーヤーをインストールしてCloud Serviceに設定し
 
 ## 目的 {#objective}
 
-このドキュメントは、Screensサービスプロバイダーへのプレーヤーの登録について説明します。 読み終えた後は、次の操作を行う必要があります。
+このドキュメントは、Screensサービスプロバイダーへのプレーヤーの登録について説明します。 読み終えた後、次の操作を実行できます。
 
-* プレーヤーの登録方法を説明します。
-* 範囲に関して、AEM Screensプロジェクトでチャネルを管理できる。
+* プレーヤーの登録方法を理解する
+* Screens Services Providerからの登録プロセスを完了する方法
 
 ## Screens Playerの登録手順{#register-players}
 
@@ -66,3 +66,6 @@ Screens用のプレーヤーをインストールしてCloud Serviceに設定し
 
    ![画像](/help/screens-cloud/assets/player/register-player6.png)
 
+## 次の手順{#whats-next}
+
+これで、プレーヤーをCloud Serviceモードに設定できました。次に、Screensサービスプロバイダーの「Cloud ServiceとしてのScreensのディスプレイへのプレーヤーの割り当て[」のドキュメントを確認し、Screensをクラウドジャーニーとして続行する必要があります。](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
