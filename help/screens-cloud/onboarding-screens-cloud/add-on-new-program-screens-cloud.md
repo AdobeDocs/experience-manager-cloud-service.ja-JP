@@ -4,9 +4,9 @@ description: ここでは、Screens用Cloud Managerの新しいプログラム�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9d3c43f863cff3117186cd6bcf358a7069a6b255
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '311'
 ht-degree: 11%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 11%
 
 以下の手順に従って、Cloud Managerの新しいプログラムにScreensをアドオンとして追加します。
 
-1. Cloud Manager に移動する.
+1. [Cloud Manager](https://my.cloudmanager.adobe.com/)に移動します。
 
    >[!NOTE]
    >Cloud Managerについて詳しくは、[Cloud Managerの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)を参照してください。
@@ -50,5 +50,5 @@ ht-degree: 11%
 
 ## 次の手順{#whats-next}
 
-既存のCloud ManagerプログラムにScreensをアドオンとして追加する方法を学習し、Cloud Managerのプログラムと製品でプログラムを確認したら、オンボーディングプロセスの次の手順（Cloud Managerでプロジェクトのブランチを作成する[）に進みます。](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
+既存のCloud ManagerプログラムにScreensをアドオンとして追加する方法を学習し、Cloud Managerのプログラムと製品でプログラムを確認したら、オンボーディングプロセスの次の手順（[Cloud Managerでプロジェクトのブランチを作成する](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)）に進みます。
 
