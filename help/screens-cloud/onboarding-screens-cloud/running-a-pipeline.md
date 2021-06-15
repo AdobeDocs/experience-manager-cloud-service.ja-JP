@@ -4,7 +4,7 @@ description: ここでは、Cloud ManagerでScreensのパイプラインをCloud
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 371cfaeb0e526197fdf98dea65ed5bc2ca0481a2
+source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 7%
@@ -59,4 +59,4 @@ ht-degree: 7%
 
 ## 次の手順{#whats-next}
 
-Cloud Managerでプログラムのパイプラインを実行する方法を学習したら、次の手順に進む準備が整いました。 次の手順は、 Screensプロジェクトの設定と設定です。
+Cloud Managerでプログラムの環境を設定する方法を学習したら、オンボーディングプロセスの次の手順（[Screensサービスプロバイダー](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)に移動）に進む準備が整いました。
