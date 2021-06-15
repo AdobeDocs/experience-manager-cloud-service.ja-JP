@@ -4,9 +4,9 @@ description: このページでは、Cloud Acceleration Managerの使用方法�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: a8e6b9e2c001c135bf2739ef873e75c22b8c025e
+source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '480'
 ht-degree: 4%
 
 ---
@@ -54,14 +54,41 @@ Cloud Acceleration Manager(CAM)のランディングページを使用すると�
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
 
-   プロジェクトを選択し、プロジェクトの上にマウスポインターを置いて、プロジェクトを編集または削除します（下図を参照）。
+1. これで、プロジェクトが作成され、**Cloud Acceleration Manager**&#x200B;のランディングページに表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. プロジェクトカードをクリックして、プロジェクトに入ります。 これにより、プロジェクトのランディングページが表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
+## プロジェクトの管理{#manage-project}
+
+プロジェクト名、説明、サムネール画像を編集したり、プロジェクトを削除したりできます。
+
+### プロジェクトの編集{#edit-project}
+
+以下の手順に従って、プロジェクトを編集します。
+
+1. プロジェクトを選択し、プロジェクトの上にマウスポインターを置いて、鉛筆アイコンをクリックし、次の図に示すように、プロジェクトを編集します。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. プロジェクト名や説明を編集したり、新しい画像をアップロードしたり、**プロジェクト**&#x200B;を編集ダイアログボックスから既存の画像を編集したりできます。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+
+1. 「**更新**」をクリックして、変更をコミットします。
+
+### プロジェクト{#delete-project}の削除
+
+以下の手順に従って、プロジェクトを削除します。
+
+1. プロジェクトを選択し、プロジェクトの上にマウスポインターを置いて、バケットアイコンをクリックすると、次の図に示すように、プロジェクトが削除されます。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+
+1. 「**削除**」をクリックして、手順を確定します。
 
 ## 次の手順{#whats-next}
 
