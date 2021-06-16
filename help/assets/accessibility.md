@@ -5,7 +5,7 @@ contentOwner: AG
 feature: アクセシビリティ，アセット管理
 role: Business Practitioner,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 99%
@@ -86,7 +86,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 | [!DNL Assets] ユーザーインターフェイスの列表示 | 上向き矢印キーと下向き矢印キー | 同じ階層内のファイルやフォルダーに移動します。 |
 | [!DNL Assets] ユーザーインターフェイスの列表示 | 左向き矢印キーと右向き矢印キー | 現在のフォルダーの上または下のファイルとフォルダーに移動します。 |
 | [!DNL Assets] 内のフォルダーの参照 | `/` | オムニサーチボックスを開いて検索を呼び出します。 |
-| [!DNL Assets] コンソール | ` | サイドパネルを切り替えます。 |
+| [!DNL Assets] コンソール |  | サイドパネルを切り替えます。 |
 | [!DNL Assets] コンソール | `Alt + 1` | コンテンツツリーを開きます。 |
 | [!DNL Assets] コンソール | `Alt + 2` | 左側のパネルで[!UICONTROL ナビゲーション]を開きます。 |
 | [!DNL Assets] コンソール | `Alt + 3` | 選択したアセットの[!UICONTROL タイムライン]を表示します。 |
