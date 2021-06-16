@@ -4,10 +4,10 @@ description: コンテンツフラグメントエディターがMarkdown構文�
 feature: コンテンツフラグメント
 role: Business Practitioner
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 93%
+source-wordcount: '524'
+ht-degree: 90%
 
 ---
 
@@ -165,7 +165,7 @@ ht-degree: 93%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-コードの範囲を示すには、バッククォート（`）で囲みます。事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
+コードの範囲を示すには、逆引用符(&amp;grave;)で囲みます。 事前に書式設定されたコードブロックとは異なり、コード範囲は通常の段落内のコードを示します。
 
 次に例を示します。
 
