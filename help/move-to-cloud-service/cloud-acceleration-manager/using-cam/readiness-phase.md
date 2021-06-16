@@ -4,10 +4,10 @@ description: このページでは、Cloud Acceleration Managerの準備段階�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 92c1119682ab381a7e107b15470abdc8444bd18c
+source-git-commit: 991ead30264d40bc222b852aa1578787bc27bee3
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 3%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
@@ -68,6 +68,8 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 ベストプラクティス分析レポートページで使用可能な次のカードを確認します。
 
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
 >[!NOTE]
 > 各カードには、次の機能があります。
 >* 各カードをクリックして、関連するタブを開きます。
@@ -77,11 +79,26 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 #### レポートのプロパティ {#report-properties}
 
-このカードは、レポートの日付、期間、フィルター、アップロード日など、レポートのプロパティの情報を提供します。
+このカードには、レポートの日付、期間、フィルター、アップロード日、Adobe Experience Manager(AEM)の詳細など、レポートのプロパティに関する情報が表示されます。
+
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### レポートの概要{#report-overview}
 
 このカードは、レポートの結果を示します
+
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
+
+次の図に示すように、このレポートをクリックすると、「**レポート**」タブが開きます。
+
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
+
+重要度、サブタイプまたはカウントに基づいてレポートをフィルタリングできます。
+
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
+
+>[!NOTE]
+>結果カテゴリと重要度レベルについては、 [Best Practices Analyzer Report](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en)の解釈を参照してください。
 
 #### ベストプラクティス評価{#best-practices-assessment}
 
