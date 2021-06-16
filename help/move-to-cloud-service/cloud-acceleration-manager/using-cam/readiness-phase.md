@@ -4,9 +4,9 @@ description: このページでは、Cloud Acceleration Managerの準備段階�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: 8f219a2b59f3526824cf4c93cb7a0f6fe99eabc7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '441'
 ht-degree: 3%
 
 ---
@@ -21,12 +21,18 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 * [ベストプラクティス分析](#best-practices-analysis)
 * [計画と設定](#planning-setup)
 
-プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**準備**」セクションに移動します（下図を参照）。
+次の手順に従って、準備段階に進みます。
 
-![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+1. プロジェクトカードをクリックして、プロジェクトのランディングページを開きます。
 
->[!NOTE]
->詳しくは、 Cloud Acceleration Managerの[プロジェクトの作成と管理](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)を参照してください。
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
+
+1. 次の図に示すように、**準備**&#x200B;セクションに移動します。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
+
+   >[!NOTE]
+   >詳しくは、 Cloud Acceleration Managerの[プロジェクトの作成と管理](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)を参照してください。
 
 ## ベストプラクティス分析カード{#best-practices-analysis}の使用
 
@@ -49,12 +55,35 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
-1. CAMのベストプラクティス分析ダッシュボードを確認し、確認します。
+1. 新しいレポートをアップロードすると、ベストプラクティス分析レポートが表示されます。
 
-   * 各カードをクリックして、関連するタブを開きます。
-   * 共有または将来の取得のために、すべてのレポートタブ（フィルタリングを含む）をブックマークに追加できます
-   * 「詳細」アイコンを使用して、各レポートの結果の詳細を表示します
-   * 新しいレポートをアップロードすると、すべての評価がリセットされます
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
+
+1. CAMのベストプラクティス分析ダッシュボードを確認し、確認します。 詳しくは、以下の[ベストプラクティス分析レポートのレビュー](#analysis-report)の節を参照してください。
+
+### ベストプラクティス分析レポートのレビュー{#analysis-report}
+
+レポートページで使用可能な次のカードを参照します。
+
+>[!NOTE]
+>新しいレポートをアップロードすると、すべての評価がリセットされます。
+
+1. **レポートのプロパティ**:このカードは、レポートの日付、期間、フィルター、アップロード日など、レポートのプロパティの情報を提供します。
+
+1. **レポートの概要**:
+
+   このカードは、レポートの結果を示します
+
+1. **ベストプラクティス評価**
+
+1. **移行の複雑さの評価**
+
+   >[!NOTE]
+   > さらに、次の機能も備えています。
+   >* 各カードをクリックして、関連するタブを開きます。
+   >* 共有または将来の取得のために、すべてのレポートタブ（フィルタリングを含む）をブックマークします。
+   >* 「詳細」アイコンを使用して、各レポートの結果の詳細を表示します
+
 
 ## カード{#planning-setup}の計画と設定の使用
 
