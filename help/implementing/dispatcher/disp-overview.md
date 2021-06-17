@@ -3,10 +3,10 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
+source-git-commit: cf42e530136d5eb8afe7204ae0af1353b1f31cbd
 workflow-type: tm+mt
 source-wordcount: '4247'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -36,7 +36,7 @@ Dispatcher ツールは、AEM as a Cloud Service の SDK の一部で、以下�
 
 [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) に含まれている Dispatcher ツールは、[ソフトウェア配布](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aemcloud.html)ポータルで zip ファイルとしてダウンロードできます。新しいDispatcherツールバージョンで使用可能な新しい設定は、そのバージョン以降のAEMを実行するクラウド環境にデプロイするために使用できます。
 
-SDK を解凍します。SDK には、macOS／Linux と Windows の両方の Dispatcher ツールがバンドルされています。
+SDKを解凍します。このSDKは、macOS、Linux、Windowsの両方のDispatcherツールをバンドルします。
 
 **macOS/Linuxの場合**、Dispatcherツールのアーティファクトを実行可能にして実行します。保存先のディレクトリ（`version`はDispatcherツールのバージョン）の下にあるDispatcherツールファイルが自己抽出されます。
 
@@ -112,7 +112,7 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 * `conf.d/variables/custom.vars`
 
-このファイルは、`.vhost` ファイル内からインクルードされます。Apache 変数用の定義をこの場所に配置できます。
+このファイルは、`.vhost` ファイル内からインクルードされます。この場所に、Apache変数用の定義を追加できます。
 
 * `conf.d/variables/global.vars`
 
@@ -361,7 +361,7 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 **非推奨の設定レイアウトを検出したので互換モードを有効にします**
 
-このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方に対して引き続きサポートされますが、
+このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方向に対して引き続きサポートされますが、
 互換性がある場合は、新しいレイアウトに切り替える必要があります。
 
 ## Apache httpdが{#local-validation}を起動できるようにDispatcher設定構文をローカルで検証
