@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b1266893cde4001366df153d0302282f7612c6ed
 workflow-type: tm+mt
-source-wordcount: '2864'
-ht-degree: 100%
+source-wordcount: '2876'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 次に、これらのパネルで使用できるオプションについて説明します。
 
-### ナビゲーションパネル  {#navigation-panel}
+### ナビゲーションパネル {#navigation-panel}
 
 ナビゲーションパネル：
 
@@ -71,7 +71,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 | プロジェクト | プロジェクトコンソールでは、プロジェクトに直接アクセスできます。[プロジェクトは、チームの構築に使用できる仮想ダッシュボード](/help/sites-cloud/authoring/projects/overview.md)です。その後、そのチームがリソース、ワークフローおよびタスクにアクセスできるようになるので、チームメンバーが共通の目標に向かって作業できます。 |
 | サイト | サイトコンソールでは、AEM インスタンス上で実行される[サイトの作成、表示、管理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)をおこなえます。このコンソールを通じて、ページの作成、編集、コピー、移動および削除や、ワークフローの開始、ページの公開をおこなうことができます。 |
 | エクスペリエンスフラグメント | [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)は、チャネル間で再利用でき、バリエーションのあるスタンドアロンエクスペリエンスです。エクスペリエンスやエクスペリエンスの一部を繰り返しコピー＆ペーストする手間を省きます。 |
-| Assets | Assets コンソールでは、画像、ビデオ、ドキュメント、オーディオファイルなどのデジタルアセットを読み込んで、それらのデジタルアセットを管理できます。同じ AEM インスタンス上で実行されているどのサイトでも、これらのアセットを使用できます。<!--add some kind of assets link--> |
+| Assets | アセットコンソールでは、画像、ビデオ、ドキュメント、オーディオファイルなどの[デジタルアセットを読み込み、管理できます。](/help/assets/overview.md) 同じ AEM インスタンス上で実行されているどのサイトでも、これらのアセットを使用できます。また、アセットコンソールから[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)を作成および管理することもできます。 |
 | パーソナライズ機能 | このコンソールには、[ターゲットとなるコンテンツをオーサリングして、パーソナライズされたエクスペリエンスを提供](/help/sites-cloud/authoring/personalization/overview.md)するためのツールのフレームワークが用意されています。 |
 
 ## ツールパネル {#tools-panel}
@@ -202,7 +202,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
    >すべてのキーボードショートカットの概要については、次のドキュメントを参照してください。
    >
    >* [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+   * [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ## アクションツールバー {#actions-toolbar}
@@ -222,8 +222,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 ![その他のオプション](/help/sites-cloud/authoring/assets/additional-options.png)
 
 >[!NOTE]
->
->利用可能な個々のアイコンについては、それぞれのコンソール、機能、シナリオに関連するページで説明しています。
+利用可能な個々のアイコンについては、それぞれのコンソール、機能、シナリオに関連するページで説明しています。
 
 ## クイックアクション  {#quick-actions}
 
@@ -244,8 +243,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 * [リスト表示](#list-view)
 
 >[!NOTE]
->
->デフォルトでは、AEM Assets は、UI のどの表示でもアセットの元のレンディションをサムネールとして表示しません。管理者の場合、オーバーレイを使用して AEM Assets で元のレンディションをサムネールとして表示するように設定できます。
+デフォルトでは、AEM Assets は、UI のどの表示でもアセットの元のレンディションをサムネールとして表示しません。管理者の場合、オーバーレイを使用して AEM Assets で元のレンディションをサムネールとして表示するように設定できます。
 
 ### リソースの選択  {#selecting-resources}
 
@@ -375,8 +373,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 * リストの各項目の右端にある縦の点線マークを使用して項目の順序を変更します。
 
    >[!NOTE]
-   >
-   >順序を変更できるのは、`jcr:primaryType` 値が `sling:OrderedFolder` である順序付きフォルダーの内部のみです。
+   順序を変更できるのは、`jcr:primaryType` 値が `sling:OrderedFolder` である順序付きフォルダーの内部のみです。
 
    ![列の順序](/help/sites-cloud/authoring/assets/column-order.png)
 
@@ -395,8 +392,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 コンテンツのみが選択されている場合は、パネルアイコンのみが表示されます。他のオプションが選択されている場合は、パネルアイコンの隣にオプション名が表示されます。
 
 >[!NOTE]
->
->[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を使用してパネル表示オプションをすばやく切り替えることができます。
+[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を使用してパネル表示オプションをすばやく切り替えることができます。
 
 ### コンテンツツリー {#content-tree}
 
@@ -407,9 +403,8 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 ![コンテンツツリー](/help/sites-cloud/authoring/assets/content-tree.png)
 
 >[!NOTE]
->
->階層表示でエントリを選択すると、矢印キーを使用して階層をすばやく移動できます。
->詳しくは、[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。
+階層表示でエントリを選択すると、矢印キーを使用して階層をすばやく移動できます。
+詳しくは、[キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。
 
 ### タイムライン {#timeline}
 
