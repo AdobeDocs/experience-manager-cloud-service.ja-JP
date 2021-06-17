@@ -3,9 +3,9 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 6eb200fe661873374258a5953a07b38b2251da43
+source-git-commit: 7b8b9ca2881d07482888ac2a53b8c3bdff02b6dd
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4247'
 ht-degree: 74%
 
 ---
@@ -253,6 +253,7 @@ Allowlisted directives:
 | `mod_rewrite` | [https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html) |
 | `mod_security` | [https://modsecurity.org/](https://modsecurity.org/) |
 | `mod_setenvif` | [https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html) |
+| `mod_ssl (only the SSLProxyEngine directive)` | [https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslproxyengine) |
 | `mod_substitute` | [https://httpd.apache.org/docs/2.4/mod/mod_substitute.html](https://httpd.apache.org/docs/2.4/mod/mod_substitute.html) |
 | `mod_userdir` | [https://httpd.apache.org/docs/2.4/mod/mod_userdir.html](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) |
 
