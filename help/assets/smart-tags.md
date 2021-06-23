@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセットの自動タグ付け'
 description: コンテキストタグと説明的なビジネスタグを適用する人工知能サービスを使用したアセットのタグ付け。
 contentOwner: AG
-feature: スマートタグ，タグ付け
+feature: スマートタグ、タグ付け
 role: Administrator,Business Practitioner
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1451147d50eb6166841ae809b49bdb95cc197f8
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 92%
@@ -175,7 +175,7 @@ ht-degree: 92%
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## スマートタグ付きアセットのタグ付け{#tag-assets}
+## スマートタグ付きアセットのタグ付け {#tag-assets}
 
 サポートされているすべてのタイプのアセットは、アップロード時に[!DNL Experience Manager Assets]によって自動的にタグ付けされます。 タグ付けはデフォルトで有効になっています。 [!DNL Experience Manager] 適切なタグをほぼリアルタイムで適用します。  <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
@@ -207,7 +207,7 @@ ht-degree: 92%
 
 1. アセットの[!UICONTROL プロパティ]ページに移動します。昇格したタグに高い関連性が割り当てられていること、その結果として検索結果の上位に表示されることを確認します。
 
-### スマートタグ付きの[!DNL Experience Manager]検索結果を理解する{#understand-search}
+### スマートタグ付きの[!DNL Experience Manager]検索結果について {#understand-search}
 
 デフォルトでは、[!DNL Experience Manager]検索は、検索用語を`AND`句で組み合わせます。 スマートタグを使用しても、このデフォルトの動作は変わりません。スマートタグを使用すると、適用されたスマートタグ内にある検索用語のいずれかを探すための `OR` 句が追加されます。例えば、「`woman running`」を検索する場合を考えます。デフォルトでは、「`woman`」のみ、または「`running`」のみがメタデータに含まれているアセットは、検索結果に表示されません。しかし、スマートタグを使って「`woman`」または「`running`」のどちらかがタグ付けされているアセットは、そうした検索クエリに表示されます。つまり、検索結果は、以下を組み合わせたものになります。
 
