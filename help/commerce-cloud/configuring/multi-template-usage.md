@@ -1,7 +1,7 @@
 ---
 title: 複数のカテゴリページと製品ページの作成
 description: ターゲティングされたマーケティングコンテンツを使用してカテゴリランディングページと製品詳細ページを充実させる方法について説明します。
-sub-product: Commerce
+sub-product: コマース
 version: cloud-service
 doc-type: feature-video
 activity: use
@@ -10,10 +10,10 @@ feature: コマース統合フレームワーク
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
+source-git-commit: 4c6f7cafba4be20d7501fbe33b38c843a638305c
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 97%
+source-wordcount: '134'
+ht-degree: 79%
 
 ---
 
@@ -26,3 +26,7 @@ ht-degree: 97%
 このトピックの詳細については、次のリソースを参照してください。
 
 - [AEM CIF コアコンポーネント - マルチカタログページの設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+
+## 関連リソース
+
+また、ページの特定の領域を動的にターゲットにし、同じテンプレートを再利用することもできます。 [製品データを関連するAEMコンテンツとエンリッチメントする方法を説明します。](./enrich-product-associated-content.md)
