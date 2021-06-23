@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 86%
+source-wordcount: '891'
+ht-degree: 85%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されて
 
 AEM が管理する CDN は、ほとんどの顧客のパフォーマンスとセキュリティに関する要件を満たします。パブリッシュ層では、オプションとして、顧客は独自の CDN からそれらを参照することもできますが、その場合は自社で管理する必要があります。このオプションは、放棄が困難な CDN ベンダーとのレガシー統合を保有する顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づき、ケースバイケースで使用できます。
 
-## AEM 管理による CDN {#aem-managed-cdn}
+## AEM 管理による CDN  {#aem-managed-cdn}
 
 次のセクションの説明に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備をおこないます。
 
@@ -69,6 +69,10 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 >[!NOTE]
 >
 >独自の CDN を管理している場合は、AEM CDN 経由で送信されるヘッダーの整合性を確保する必要があります。例えば、すべての `X-Forwarded-*` ヘッダーを消去し、既知の値と制御値に設定することをお勧めします。例えば、`X-Forwarded-For` にはクライアントの IP アドレスを含め、`X-Forwarded-Host` にはサイトのホストを含める必要があります。
+
+>[!NOTE]
+>
+>サンドボックスプログラム環境は、顧客が提供するCDNをサポートしていません。
 
 顧客 CDN から AEM 管理による CDN へのホップは効率的ですが、ホップの増加に伴い、パフォーマンスがわずかに低下する可能性があります。
 
