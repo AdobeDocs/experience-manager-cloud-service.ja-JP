@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 71f05dda4ccd52c66bbf1d9025900976f07227f3
+source-git-commit: cff7454e2b6a1d55accef31d20d85378f08dfe0c
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 94%
+source-wordcount: '810'
+ht-degree: 89%
 
 ---
 
@@ -114,10 +114,4 @@ AMS 上やオンプレミスでのインストールからプロジェクトを�
 
 ## アセットの操作と配信 {#asset-handling}
 
-Assets as a Cloud Service では、アセットのアップロード、処理、ダウンロードが最適化されて効率がアップし、拡張性とアップロード／ダウンロード速度が向上しました。ただし、これによって、一部の既存カスタムコードが影響を受ける可能性があります。
-
-* 以前のバージョンの AEM に用意されていたデフォルトの **DAM アセットの更新**&#x200B;ワークフローは使用できなくなりました。
-* **変換を行わずに**&#x200B;バイナリを配信する Web サイトコンポーネントでは、直接ダウンロードを使用する必要があります。
-   * Sling Get Servlet は、デフォルトで直接ダウンロードを行うように変更されました。
-* （サーブレットを介したサイズ変更などの）**変換を行って**&#x200B;バイナリを配信する Web サイトコンポーネントは、引き続きそのまま動作します。
-* パッケージマネージャーで取り込まれたアセットについては、Assets インターフェイスの「**アセットを再処理**」アクションを使用して、手動で再処理する必要があります。
+アセットのアップロード、処理およびダウンロードは、Assets as a AssetsでCloud Serviceとして最適化されます。 より効率的になり、拡張性が向上し、アップロード/ダウンロードが高速化されました。 また、既存のカスタムコードや一部の操作にも影響します。 [の [!DNL Assets]](/help/assets/assets-cloud-changes.md)への変更を参照してください。
