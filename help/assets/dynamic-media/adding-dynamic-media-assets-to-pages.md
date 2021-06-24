@@ -5,14 +5,14 @@ contentOwner: Rick Brough
 feature: アセット管理
 role: Business Practitioner
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 33d5e756379af671f345e6f4e02d4a955f73a3c9
+source-git-commit: 230c5a20696684ec69ab154f97609139dbddfea4
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3222'
 ht-degree: 77%
 
 ---
 
-# ページへの Dynamic Media アセットの追加 {#adding-dynamic-media-assets-to-pages}
+# ページへの Dynamic Media アセットの追加{#adding-dynamic-media-assets-to-pages}
 
 Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加します。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
 
@@ -172,9 +172,9 @@ Dynamic Media コンポーネントでは、画像セット、スピンセット
 
    ![画像プリセットのデバイスピクセル比設定](/help/assets/dynamic-media/assets/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr).
+   [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
 
-  Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   [!DNL Experience Manager] Dynamic MediaスマートイメージングDPRの値は無視されます。
 
 * **[!UICONTROL タイトル]**  — 画像のタイトルを変更します。
 
@@ -251,9 +251,9 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
    ![スマート切り抜きのデバイスピクセル比設定](/help/assets/dynamic-media/assets/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/dynamic-media/imaging-faq.md#dpr). -->
+   [デバイスのピクセル比の最適化](/help/assets/dynamic-media/imaging-faq.md#dpr)についても参照してください。
 
-<!--   Note that any [!DNL Experience Manager] Dynamic Media Smart Imaging DPR values are ignored. -->
+   [!DNL Experience Manager] Dynamic MediaスマートイメージングDPRの値は無視されます。
 
 * **[!UICONTROL タイトル]**  — スマート切り抜き画像のタイトルを変更します。
 
