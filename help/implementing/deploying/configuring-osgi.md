@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: デプロイ
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 7baacc953c88e1beb13be9878b635b6e5273dea2
+source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
 workflow-type: tm+mt
-source-wordcount: '2850'
-ht-degree: 94%
+source-wordcount: '2927'
+ht-degree: 95%
 
 ---
 
@@ -53,6 +53,10 @@ config フォルダー名で定義された実行モードが AEM で使用さ�
 同じ PID に複数の設定が該当する場合は、一致する実行モードの数が最も大きい設定が適用されます。
 
 このルールの精度は PID レベルです。つまり、`/apps/example/config.author/` で同じ PID の一部のプロパティと、`/apps/example/config.author.dev/` で同じ PID のより具体的なプロパティを定義することはできません。一致する実行モードの数が最も多い設定は、PID 全体に対して効果的です。
+
+>[!NOTE]
+>
+>`config.preview` OSGI設定フォルダー&#x200B;**は、`config.publish`を宣言する場合と同じように**&#x200B;宣言できません。 代わりに、プレビュー層はパブリッシュ層の値からOSGI設定を継承します。
 
 ローカルで開発する場合は、実行モード起動パラメーターを渡して、使用する実行モード OSGi 設定を指定できます。
 
@@ -112,14 +116,14 @@ OSGi では、インライン OSGi 設定値を使用する場合が多くあり
 * 値はコードデプロイメントに暗黙的に結び付けられる
 * デプロイメントに関する検討事項や調整を追加する必要がない
 
-OSGi設定値を定義する場合は、インライン値で始め、必要に応じてシークレット設定または環境固有の設定を選択する必要があります。
+OSGi 設定値を定義する場合は、インライン値から開始し、必要な場合にのみシークレット設定または環境固有の設定を選択します。
 
 ### 非シークレットの環境固有の設定値を使用する場合 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-非シークレットの設定値に対しては、開発環境間で値が異なる場合にのみ、環境固有の設定（`$[env:ENV_VAR_NAME]`）を使用してください。これには、ローカル開発インスタンスと、Adobe Experience Manager as a Cloud Service 開発環境が含まれます。非シークレットの環境固有の設定を、Adobe Experience Manager as a Cloud Service のステージングまたは実稼働環境に使用しないでください。
+非シークレットの設定値に対しては、プレビュー層で値が異なる場合や、開発環境間で値が異なる場合にのみ、環境固有の設定(`$[env:ENV_VAR_NAME]`)を使用してください。 これには、ローカル開発インスタンスと、Adobe Experience Manager as a Cloud Service 開発環境が含まれます。プレビュー層に一意の値を設定する以外に、Adobe Experience Managerの非シークレットの環境固有の設定をCloud Serviceステージ環境または実稼動環境として使用しないでください。
 
-* ローカル開発インスタンスなど、開発環境間で異なる設定値に対しては、非シークレットの環境固有の設定のみを使用します。
-* 代わりに、ステージングと実稼働の非シークレット値の OSGi 設定では、標準のインライン値を使用します。これに関連して、ステージング環境と実稼働環境に対して、環境固有の設定を使用して、実行時に設定を変更しやすくすることは勧められません。これらの変更は、ソースコード管理を通じて導入する必要があります。
+* 非シークレットの環境固有の設定は、パブリッシュ層とプレビュー層で異なる設定値、または開発環境(ローカル開発インスタンスを含む)で異なる値に対してのみ使用します。
+* プレビュー層をパブリッシュ層と異なる必要がある場合のシナリオの他に、ステージと実稼動の非シークレット値のOSGi設定で標準のインライン値を使用します。 これに関連して、ステージング環境と実稼働環境に対して、環境固有の設定を使用して、実行時に設定を変更しやすくすることは勧められません。これらの変更は、ソースコード管理を通じて導入する必要があります。
 
 ### シークレットの環境固有の設定値を使用する場合 {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -131,7 +135,7 @@ Adobe Experience Manager as a Cloud Service では、セキュリティ上の理
 
 以下に説明するように、OSGi 設定を作成する方法は 2 とおりあります。前者の方法は、通常、開発者によってよく知られている OSGi のプロパティと値を持つカスタム OSGi コンポーネントの設定に使用され、後者は AEM が提供する OSGi コンポーネントの設定に使用されます。
 
-### OSGi 設定の書き込み  {#writing-osgi-configurations}
+### OSGi 設定の書き込み {#writing-osgi-configurations}
 
 JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、よく知られている OSGi コンポーネント、特に、設定を定義した同じ開発者により設計および開発されたカスタム OSGi コンポーネントに対して、OSGi 設定をすばやく作成する方法です。この方法は、同じ OSGi コンポーネントの設定を様々な実行モードフォルダーにコピー／貼り付け、更新する場合にも使用できます。
 
@@ -143,7 +147,7 @@ OSGi 設定ファクトリのファイル名には `<PID>-<factory-name>.cfg.jso
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
 
-### AEM SDK Quickstart を使用した OSGi 設定の生成  {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### AEM SDK Quickstart を使用した OSGi 設定の生成 {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネントの設定、および JSON として OSGi 設定を書き出すために使用できます。これが役に立つのは、AEM 提供の OSGi コンポーネントを設定する際に、その OSGi プロパティと値の形式を、AEM プロジェクトで OSGi 設定を定義する開発者がよく理解できない可能性がある場合です。
 
@@ -170,7 +174,7 @@ AEM SDK Quickstart Jar の AEM Web コンソールは、OSGi コンポーネン�
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
 
 
-## OSGi 構成プロパティの形式  {#osgi-configuration-property-formats}
+## OSGi 構成プロパティの形式 {#osgi-configuration-property-formats}
 
 ### インライン値 {#inline-values}
 
@@ -196,7 +200,7 @@ use $[env:ENV_VAR_NAME]
 
 >[!NOTE]
 >
->[repoinitステートメント](/help/implementing/deploying/overview.md#repoinit)ではプレースホルダーを使用できません。
+>[repoinit ステートメント](/help/implementing/deploying/overview.md#repoinit)ではプレースホルダーを使用できません。
 
 ### シークレットの設定値 {#secret-configuration-values}
 
@@ -220,7 +224,7 @@ use $[secret:SECRET_VAR_NAME]
 
 >[!NOTE]
 >
->`INTERNAL_`のプレフィックスが付いた変数名は、Adobeで予約されます。 このプレフィックスで始まる顧客セット変数は無視されます。
+>`INTERNAL_` プレフィックスが付いた変数名は、アドビによって予約されています。このプレフィックスで始まる顧客セット変数は無視されます。
 
 ### デフォルト値 {#default-values}
 
@@ -255,10 +259,10 @@ export ENV_VAR_NAME=my_value
 OSGi プロパティで、作成者とパブリッシュで異なる値が必要な場合：
 
 * [実行モードの解決](#runmode-resolution)の節で説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
-* 独立変数名を作成する場合、次の2つのオプションを使用できます。
-   * 最初のオプション（推奨）:異なる値を定義するように宣言されたすべてのOSGIフォルダー（`config.author`と`config.publish`など）で、同じ変数名を使用します。 例：
-      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)またはクライアントを使用して設定する場合は、この[APIリファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。 「service」パラメーターは、変数の値を適切なOSGI層にバインドします。
-   * 2つ目のオプション。`author_<samevariablename>`や`publish_<samevariablename>`などのプレフィックスを使用して個別の変数を宣言します。
+* 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
+   * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
+      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
+   * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
 
@@ -453,7 +457,7 @@ config.dev
 API の設定方法については、[こちらのページ](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)を参照してください。
 >[!NOTE]
 >
->使用している Cloud Manager API に「デプロイメントマネージャー - Cloud Service」という役割が割り当てられていることを確認します。その他の役割では、必ずしも以下のすべてのコマンドを実行できるわけではありません。
+>使用している Cloud Manager API に「デプロイメントマネージャー - Cloud Service」というロールが割り当てられていることを確認します。その他のロールでは、必ずしも以下のすべてのコマンドを実行できるわけではありません。
 
 ### API を使用した値の設定 {#setting-values-via-api}
 
