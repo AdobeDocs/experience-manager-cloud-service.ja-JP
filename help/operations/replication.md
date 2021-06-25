@@ -1,11 +1,11 @@
 ---
 title: レプリケーション
-description: 配布とレプリケーションのトラブルシューティング。
+description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1ba960a930e180f4114f78607a3eb4bd5ec3edaf
+source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 39%
+source-wordcount: '1071'
+ht-degree: 28%
 
 ---
 
@@ -42,7 +42,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
    ![配布](assets/distribute.png "配布")
 4. パスブラウザーでパスを選択し、必要に応じてノードやツリーの追加または削除を選択し、「**送信**」をクリックします。
 
-### コンテンツツリーの公開ワークフロー{#publish-content-tree-workflow}
+### コンテンツツリーの公開ワークフロー {#publish-content-tree-workflow}
 
 次に示すように、 **ツール/ワークフロー/モデル**&#x200B;を選択し、「**コンテンツツリーを公開**」という標準のワークフローモデルをコピーして、ツリーレプリケーションをトリガーできます。
 
@@ -82,11 +82,11 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 * `replicateAsParticipant` (ブール値、デフォルト： `false`)をクリックします。`true`として設定した場合、レプリケーションは、参加者ステップを実行したプリンシパルの`userid`を使用します。
 * `enableVersion` (ブール値、デフォルト： `true`)をクリックします。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
-* `agentId` （文字列値。デフォルトは、有効なエージェントがすべて使用されることを意味します）。agentIdを明示しておくことをお勧めします。例えば、値を次のように設定します。公開
+* `agentId` （文字列値。デフォルトは、パブリッシュのエージェントのみが使用されることを意味します）。agentIdを明示しておくことをお勧めします。例えば、値を次のように設定します。公開します。 エージェントを`preview`に設定すると、プレビューサービスにパブリッシュされます
 * `filters` （文字列値。デフォルトは、すべてのパスがアクティブ化されることを意味します）。使用できる値は次のとおりです。
    * `onlyActivated`  — アクティブ化されていないパスのみがアクティブ化されます。
    * `onlyModified`  — 既にアクティブ化され、有効化日より後の変更日を持つパスのみをアクティブ化します。
-   * 上記は、パイプ( | )でOR付けできます。 （例：`onlyActivated|onlyModified`）。
+   * 上記は、パイプ( | )でOR付けできます。 例：`onlyActivated|onlyModified`
 
 **ログ**
 
@@ -111,6 +111,66 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 **サポートの再開**
 
 ワークフローは、コンテンツをチャンク単位で処理し、それぞれが公開する完全なコンテンツのサブセットを表します。 何らかの理由でワークフローがシステムによって停止された場合、ワークフローは再起動し、まだ処理されていないチャンクを処理します。 コンテンツが特定のパスから再開されたことを示すログステートメントが表示されます。
+
+### レプリケーションAPI {#replication-api}
+
+AEM as a Replication APIを使用して、コンテンツを公開できます。Cloud Service
+
+詳しくは、[APIドキュメント](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html)を参照してください。
+
+**APIの基本的な使用方法**
+
+```
+@Reference
+Replicator replicator;
+@Reference
+ReplicationStatusProvider replicationStatusProvider;
+
+....
+Session session = ...
+// Activate a single page to all agents, which are active by default
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en");
+// Activate multiple pages (but try to limit it to approx 100 at max)
+replicator.replicate(session,ReplicationActionType.ACTIVATE, new String[]{"/content/we-retail/en","/content/we-retail/de"});
+
+// ways to get the replication status
+Resource enResource = resourceResolver.getResource("/content/we-retail/en");
+Resource deResource = resourceResolver.getResource("/content/we-retail/de");
+ReplicationStatus enStatus = enResource.adaptTo(ReplicationStatus.class);
+// if you need to get the status for more more than 1 resource at once, this approach is more performant
+Map<String,ReplicationStatus> allStatus = replicationStatusProvider.getBatchReplicationStatus(enResource,deResource);
+```
+
+**特定のエージェントを使用したレプリケーション**
+
+上記の例のようにリソースをレプリケートする場合は、デフォルトでアクティブなエージェントのみが使用されます。 AEM as aCloud Serviceでは、これは「パブリッシュ」と呼ばれるエージェントのみで、オーサーをパブリッシュ層に接続します。
+
+プレビュー機能をサポートするために、「プレビュー」という新しいエージェントが追加されました。このエージェントは、デフォルトではアクティブではありません。 このエージェントは、オーサーをプレビュー層に接続するために使用されます。 プレビューエージェント経由でのみレプリケートする場合は、`AgentFilter`を使用してこのプレビューエージェントを明示的に選択する必要があります。
+
+これをおこなう方法については、以下の例を参照してください。
+
+```
+private static final String PREVIEW_AGENT = "preview";
+
+ReplicationStatus beforeStatus = enResource.adaptTo(ReplicationStatus.class); // beforeStatus.isActivated == false
+
+ReplicationOptions options = new ReplicationOptions();
+options.setFilter(new AgentFilter() {
+  @Override
+  public boolean isIncluded (Agent agent) {
+    return agent.getId().equals(PREVIEW_AGENT);
+  }
+});
+// will replicate only to preview
+replicator.replicate(session,ReplicationActionType.ACTIVATE,"/content/we-retail/en", options);
+
+ReplicationStatus afterStatus = enResource.adaptTo(ReplicationStatus.class); // afterStatus.isActivated == false
+ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); // previewStatus.isActivated == true
+```
+
+このようなフィルターを指定せず、「パブリッシュ」エージェントのみを使用する場合、「プレビュー」エージェントは使用されず、レプリケーションアクションはプレビュー層に影響しません。
+
+リソースの`ReplicationStatus`全体が変更されるのは、レプリケーションアクションに、デフォルトでアクティブなエージェントが少なくとも1つ含まれている場合のみです。 上記の例では、レプリケーションは「プレビュー」エージェントを使用するだけなので、このケースは該当しません。 したがって、新しい`getStatusForAgent()`メソッドを使用して、特定のエージェントのステータスに対するクエリを実行する必要があります。 この方法は、「パブリッシュ」エージェントに対しても機能します。 指定されたエージェントを使用して実行されたレプリケーションアクションがある場合、null以外の値を返します。
 
 ## トラブルシューティング {#troubleshooting}
 
