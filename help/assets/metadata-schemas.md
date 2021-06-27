@@ -5,10 +5,10 @@ contentOwner: AG
 feature: メタデータ
 role: Business Practitioner,Administrator
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 855b8b1de11e5f986948d3144104d6b5226c2dd5
+source-git-commit: fbc8039057075248d5de4f030ee36a952592e609
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 63%
+source-wordcount: '2557'
+ht-degree: 62%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 63%
 
    アセットの MIME タイプを変更するには、カスタムメタデータスキーマフォームを使用するか、既存のフォームを変更します。詳しくは、[メタデータスキーマの編集Forms](#edit-metadata-schema-forms)を参照してください。 MIMEタイプのメタデータスキーマを変更すると、アセットとすべてのサブタイプのプロパティページレイアウトが変更されます。 例えば、`default/image` 配下の jpeg スキーマを変更すると、MIME タイプが `image/jpeg` のアセットのメタデータのレイアウト（アセットプロパティ）のみが変更されます。ただし、デフォルトスキーマを編集する場合は、すべてのタイプのアセットのメタデータのレイアウトを変更します。
 
-## メタデータスキーマフォーム{#default-metadata-schema-forms}
+## メタデータスキーマフォーム {#default-metadata-schema-forms}
 
 フォームやテンプレートのリストを表示するには、[!DNL Experience Manager]インターフェイスで&#x200B;**[!UICONTROL ツール]** / **[!UICONTROL アセット]** / **[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
 
@@ -79,7 +79,7 @@ ht-degree: 63%
 
 1. コンポーネントを設定するには、コンポーネントを選択して、「**[!UICONTROL 設定]**」タブでそのプロパティを変更します。
 
-### 「[!UICONTROL フォームを作成]」タブ内のコンポーネント{#components-within-the-build-form-tab}
+### 「[!UICONTROL フォームを作成]」タブ内のコンポーネント {#components-within-the-build-form-tab}
 
 「**[!UICONTROL フォームを作成]**」タブには、スキーマフォーム内で使用するフォーム項目が表示されます。「**[!UICONTROL 設定]**」タブに、「**[!UICONTROL フォームを作成]**」タブで選択した各項目の属性が表示されます。「**[!UICONTROL フォームを作成]**」タブで使用できるフォーム項目を次の表に示します。
 
@@ -97,8 +97,11 @@ ht-degree: 63%
 | [!UICONTROL アセットの参照元] | このアセットが参照しているアセットのリストを表示するには、このコンポーネントを追加します。 |
 | [!UICONTROL アセットの参照] | このアセットを参照しているアセットのリストを表示するには、このコンポーネントを追加します。 |
 | [!UICONTROL 製品リファレンス] | このアセットとリンクされている製品のリストを表示するには、このコンポーネントを追加します。 |
-| [!UICONTROL アセット評価] | アセットを評価するオプションを表示するには、このコンポーネントを追加します。 |
 | [!UICONTROL コンテキストメタデータ] | アセットのプロパティページにある他のメタデータタブの表示を制御するために追加します。 |
+
+<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+| [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
+-->
 
 #### メタデータコンポーネントの編集 {#edit-the-metadata-component}
 
@@ -170,11 +173,11 @@ AEM では、カスタムのスキーマフォームのみを削除できます�
 
 [!DNL Experience Manager] には、様々な MIME タイプですぐに使用できるデフォルトのフォームが用意されています。ただし、様々な MIME タイプのアセットにカスタムのフォームを追加することができます。
 
-### MIMEタイプ{#adding-new-forms-for-mime-types}用の新しいフォームの追加
+### MIMEタイプ用の新しいフォームの追加 {#adding-new-forms-for-mime-types}
 
 適切なフォームタイプの下にフォームを作成します。 例えば、`image/png`サブタイプのテンプレートを追加するには、「image」フォームの下にフォームを作成します。 スキーマフォームのタイトルはサブタイプ名です。この場合、タイトルは`png`です。
 
-#### 様々なMIMEタイプ用の既存のスキーマテンプレートを使用します。 {#use-an-existing-schema-template-for-various-mime-types}
+#### 様々なMIMEタイプ用の既存のスキーマテンプレートの使用 {#use-an-existing-schema-template-for-various-mime-types}
 
 別の MIME タイプに対して既存のテンプレートを使用できます。例えば、MIME タイプ `image/png` のアセットに対して `image/jpeg` フォームを使用します。
 
@@ -227,7 +230,7 @@ AEM では、カスタムのスキーマフォームのみを削除できます�
 1. 「**OK**」をクリックして、成功メッセージを閉じます。
 1. 変更したメタデータスキーマを適用したフォルダーに移動します。
 
-## 必須のメタデータの定義  {#defining-mandatory-metadata}
+## 必須のメタデータの定義 {#defining-mandatory-metadata}
 
 必須フィールドをフォルダーレベルで定義すると、そのフォルダーにアップロードされるアセットに強制的に適用されます。以前に定義した必須フィールドにメタデータが指定されていないアセットをアップロードすると、アセットに指定されていないメタデータをカード表示で視覚的に確認できます。
 
