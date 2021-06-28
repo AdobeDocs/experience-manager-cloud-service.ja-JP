@@ -1,10 +1,7 @@
 ---
 title: Cloud Managerでの新しいプログラムへのScreensアドオンの追加
 description: ここでは、Screens用Cloud Managerの新しいプログラムにScreensアドオンをCloud Serviceとして追加する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 11%
@@ -12,7 +9,7 @@ ht-degree: 11%
 ---
 
 
-# Cloud Managerの新しいプログラムへのアドオンとしてのScreensの追加{#create-programs-screens-cloud}
+# Cloud Managerでの新しいプログラムへのアドオンとしてのScreensの追加 {#create-programs-screens-cloud}
 
 ここでは、Cloud Managerで新しいプログラムにScreensをアドオンとして追加する方法について説明します。
 
@@ -23,7 +20,7 @@ ht-degree: 11%
 
 以下の節では、Cloud Managerで新しいプログラムにScreensをアドオンとして追加する方法について説明します。
 
-## Cloud Managerの新しいプログラムにScreensをアドオンとして追加する手順{#add-screens-add-on}
+## Cloud Managerで新しいプログラムにScreensをアドオンとして追加する手順 {#add-screens-add-on}
 
 以下の手順に従って、Cloud Managerの新しいプログラムにScreensをアドオンとして追加します。
 
@@ -48,7 +45,7 @@ ht-degree: 11%
 
    ![画像](/help/screens-cloud/assets/onboarding/onboard-screens-addon4.png)
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 既存のCloud ManagerプログラムにScreensをアドオンとして追加する方法を学習し、Cloud Managerのプログラムと製品でプログラムを確認したら、オンボーディングプロセスの次の手順（[Cloud Managerでプロジェクトのブランチを作成する](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)）に進みます。
 
