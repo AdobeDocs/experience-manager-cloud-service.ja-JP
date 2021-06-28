@@ -4,10 +4,10 @@ description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Ex
 feature: リリース情報
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 19e64cc8239afefd1f17b6cffee5e681f220a68c
+source-git-commit: e3efbaf5cb590b079ccc228a0f130ecec198d2ff
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 67%
+source-wordcount: '858'
+ht-degree: 66%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 67%
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効. 必要に応じて、対応するワークフローランチャーを有効にします。 書き戻しは、アセットマイクロサービスによって処理されます。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要です。 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して、手動で再処理します。 |
 | MIMEタイプの検出 | サポートされていない。 | 拡張子がない、または誤った拡張子を持つデジタルアセットをアップロードした場合、必要に応じて処理されないことがあります。 それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=ja)を参照してください。 |
-| 複合アセットのサブアセットの生成 | サポートされていない。 | 従属使用例は満たされません。 例えば、複数ページのPDFファイルの注釈に影響が出ます。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。 |
+| 複合アセットのサブアセットの生成または注釈の作成 | サポートされていない。 | 従属使用例は満たされません。 例えば、複数ページのPDF、INDD、PPT、PPTX、AIファイルを表示または注釈付けすることはできません。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。 |
 | ホームページ | サポートされていない。 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=ja)を参照 |
 | ZIPアーカイブからのアセットの抽出 | サポートされていない。 | [Adobe  [!DNL Experience Manager] 6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)を参照してください。 |
 | Assetsの評価 | サポートされていない。 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
