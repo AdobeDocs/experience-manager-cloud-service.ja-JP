@@ -1,10 +1,7 @@
 ---
 title: AEM Screens as aCloud Serviceの役割の定義
 description: ここでは、AEM Screens as aCloud Serviceの役割の定義について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 2%
