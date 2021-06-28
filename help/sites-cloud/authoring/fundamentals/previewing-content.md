@@ -2,9 +2,9 @@
 title: コンテンツのプレビュー
 description: AEM Preview Serviceを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
+source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,15 @@ AEMは、開発者とコンテンツ作成者が、パブリッシュ環境に�
 
 1. 「**次へ**」をクリックし、「**公開**」をクリックして確定します。
 
-プレビューコンテンツを確認し、実稼動インスタンスのパブリッシュURLに&#x200B;**preview**&#x200B;を追加します。 URLは、次のように記述します。
+1. プレビュー環境のコンテンツにアクセスするためのURLがダイアログに表示されます。
 
-```
-https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
-```
+   また、プレビューコンテンツを表示するには、実稼動インスタンスのパブリッシュURLに&#x200B;**プレビュー**&#x200B;を追加することもできます。
+
+   URLは、次のように記述します。
+
+   ```
+   https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
+   ```
 
 お使いの環境のURLを取得する方法の詳細については、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)を参照してください。
 
