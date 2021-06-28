@@ -1,18 +1,15 @@
 ---
 title: Cloud Managerの既存プログラムへのScreensアドオンの追加
 description: ここでは、Screens用Cloud Managerの既存のプログラムにCloud ServiceとしてScreensアドオンを追加する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 1%
+ht-degree: 6%
 
 ---
 
 
-# Cloud Managerの既存のプログラムへのScreensアドオンの追加{#adding-screens-program}
+# Cloud Managerの既存プログラムへのScreensアドオンの追加 {#adding-screens-program}
 
 この節では、Cloud Managerの既存のプログラムにScreensをアドオンとして追加する方法について説明します。
 
@@ -23,7 +20,7 @@ ht-degree: 1%
 
 次の手順では、Cloud Managerの既存のプログラムにScreensアドオンを追加する方法を学習できます。
 
-## Cloud Managerの既存のプログラムにScreensアドオンを追加する手順{#edit-programs-screens-cloud}
+## Cloud Managerで既存のプログラムにScreensアドオンを追加する手順 {#edit-programs-screens-cloud}
 
 次の手順に従って、既存のプログラムにScreensをアドオンとして追加します。
 
@@ -37,7 +34,7 @@ ht-degree: 1%
    ![画像](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
-   >**プログラムを編集**&#x200B;ページに、「**一般**」と「**ソリューションとアドオン**」の2つのタブが表示されます。
+   >**プログラムを編集**&#x200B;ページに、「**一般**」と「**ソリューションとアドオン**」の 2 つのタブが表示されます。
 
 1. 「**ソリューション&amp;アドオン**」タブには、「サイト」、「アセット」、「画面」などのオプションが表示されます。 **Screens**&#x200B;アドオンオプションを選択します（下図を参照）。
 
@@ -45,6 +42,6 @@ ht-degree: 1%
 
 1. オプションを選択したら、「**更新**」をクリックします。
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 既存のCloud ManagerプログラムにScreensをアドオンとして追加する方法を学習し、Cloud Managerのプログラムと製品でプログラムを確認したら、オンボーディングプロセスの次の手順（[Cloud Managerでプロジェクトのブランチを作成する](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)）に進みます。
