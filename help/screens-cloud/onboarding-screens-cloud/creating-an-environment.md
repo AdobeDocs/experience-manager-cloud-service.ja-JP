@@ -1,18 +1,15 @@
 ---
 title: ブランチの作成
 description: ここでは、Screens用Cloud ManagerでブランチをCloud Serviceとして作成する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 0042b0ba6b652a61ee0ac880bc5b4db8aa679359
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
 
-# Cloud Managerでの環境の作成{#create-environment-screens-cloud}
+# Cloud Managerでの環境の作成 {#create-environment-screens-cloud}
 
 この節では、Cloud Managerでプログラムの環境を作成する方法について説明します。
 
@@ -23,7 +20,7 @@ ht-degree: 6%
 
 次の節では、Cloud Managerでプログラムの環境を作成する方法について説明します。
 
-## Cloud ManagerでScreensプロジェクトの環境を作成する手順{#steps-branch-creation}
+## Cloud ManagerでScreensプロジェクトの環境を作成する手順 {#steps-branch-creation}
 
 プロジェクトの作成が正常に完了すると、 Cloud Managerの概要ページにコールトゥアクションカードの更新が表示されます。
 
@@ -41,7 +38,7 @@ ht-degree: 6%
 
    ![画像](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Managerでプログラムの環境を設定する方法を学習したら、オンボーディングプロセスの次の手順（[パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)）に進む準備が整いました。
 
