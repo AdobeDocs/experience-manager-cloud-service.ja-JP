@@ -1,18 +1,15 @@
 ---
 title: Cloud ServiceとしてのScreensへのプレーヤーの登録
 description: ここでは、Screensにプレーヤーを登録する方法について説明します。Cloud Service
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Cloud Service{#registering-players-screens-cloud}としてのScreensへのプレーヤーの登録
+# Cloud ServiceとしてのScreensへのプレーヤーの登録 {#registering-players-screens-cloud}
 
 Screens用のプレーヤーをインストールしてCloud Serviceに設定したら、プレーヤーを登録する必要があります。
 
@@ -23,7 +20,7 @@ Screens用のプレーヤーをインストールしてCloud Serviceに設定し
 * プレーヤーの登録方法を理解する
 * Screens Services Providerからの登録プロセスを完了する方法
 
-## Screens Playerの登録手順{#register-players}
+## Screens Playerの登録手順 {#register-players}
 
 プレーヤーをCloud ServiceとしてScreensにインストールしたら、Screensサービスプロバイダーからプレーヤーを登録する準備が整います。
 
@@ -66,6 +63,6 @@ Screens用のプレーヤーをインストールしてCloud Serviceに設定し
 
    ![画像](/help/screens-cloud/assets/player/register-player6.png)
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 これで、プレーヤーをCloud Serviceモードに設定できました。次に、Screensサービスプロバイダーの「Cloud ServiceとしてのScreensのディスプレイへのプレーヤーの割り当て[」のドキュメントを確認し、Screensをクラウドジャーニーとして続行する必要があります。](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
