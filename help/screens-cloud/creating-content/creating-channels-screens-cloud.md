@@ -1,10 +1,7 @@
 ---
 title: Cloud ServiceとしてのScreensでのチャネルの作成と管理
 description: ここでは、ScreensでチャネルをCloud Serviceとして作成および管理する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 16%
@@ -12,7 +9,7 @@ ht-degree: 16%
 ---
 
 
-# Cloud Service{#creating-channels-screens-cloud}としてのScreensでのチャネルの作成と管理
+# Cloud ServiceとしてのScreensでのチャネルの作成と管理 {#creating-channels-screens-cloud}
 
 AEM Screensプロジェクトを作成したら、チャネルを作成する必要があります。
 ***チャネル***、コンテンツのシーケンス（画像やビデオ）、Webサイトまたは単一ページアプリケーションの表示を行います。
@@ -24,7 +21,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 * Screens Content Providerへのチャネルを作成する方法を説明します。
 * チャネル内のコンテンツの管理と編集
 
-## ScreensでCloud Serviceとして新しいシーケンスチャネルを作成する手順{#create-new-channel}
+## Screensでの新しいシーケンスチャネルのCloud Service {#create-new-channel}
 
 >[!NOTE]
 >**前提条件**
@@ -80,7 +77,7 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
    >「**プレビュー**」をクリックして、チャネルのコンテンツをプレビューします。
    >![](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
-## 作成ウィザードで使用可能なテンプレート{#available-templates}
+## 作成ウィザードで使用可能なテンプレート {#available-templates}
 
 **チャネルの作成**&#x200B;ウィザードの使用中に、次のテンプレートを使用できます。
 
@@ -91,6 +88,6 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 | 左／右 L バー型分割画面チャネル | コンテンツ作成者が、様々な種類のアセットを適切なサイズのゾーンに表示できます。 |
 
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 プロジェクトでAEM Screensチャネルを設定したら、チャネルを公開する必要があります。 Screensサービスプロバイダーからプレーヤーを管理する前に、Cloud ServiceとしてのScreensの[チャネルの公開](/help/screens-cloud/creating-content/manage-publish.md)を参照してください。
