@@ -1,18 +1,15 @@
 ---
 title: Screensでのディスプレイへのチャネルの割り当て(Cloud Service)
 description: ここでは、ScreensでチャネルをディスプレイにCloud Serviceとして割り当てる方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 2ce9c1c30569edb59a0dcc8c241391e5e177b14c
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
 
-# ScreensでのディスプレイへのチャネルのCloud Service{#assign-channel-displays-screens-cloud}割り当て
+# Screensでのディスプレイへのチャネルの割り当て(Cloud Service) {#assign-channel-displays-screens-cloud}
 
 プロジェクトの設定が完了したら、チャネルをディスプレイに割り当てて、コンテンツを表示する必要があります。
 
@@ -27,7 +24,7 @@ ht-degree: 40%
 * ディスプレイの作成と管理
 * チャネルの作成と管理
 
-## ディスプレイにチャネルを割り当てる手順{#assign-channel-to-display}
+## ディスプレイにチャネルを割り当てる手順 {#assign-channel-to-display}
 
 下の手順に従ってチャネルをディスプレイに割り当てます。
 
@@ -69,6 +66,6 @@ ht-degree: 40%
    ![画像](/help/screens-cloud/assets/display/assignchannel-3.png)
 
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 これでチャネルをディスプレイに割り当てたので、次に『[AEM用のScreens Playerのインストールと設定](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)』をCloud Serviceとして確認し、ScreensをCloud Serviceジャーニーとして続行する必要があります。
