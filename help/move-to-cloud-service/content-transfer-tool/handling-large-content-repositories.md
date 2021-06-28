@@ -1,7 +1,7 @@
 ---
 title: 大きなコンテンツリポジトリの処理
 description: この節では、大規模なコンテンツリポジトリの処理について説明します
-source-git-commit: 00f189c2c446836cb3f92677516152168734c43d
+source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -38,13 +38,13 @@ ht-degree: 2%
 
 ### 0.データストア内のすべてのコンテンツの合計サイズを決定 {#determine-total-size}
 
-#### Azure Blobストレージデータストア
+#### Azure Blobストレージデータストア {#azure-blob-storage}
 
 Azureポータルのコンテナプロパティページで、「**サイズを計算**」ボタンを使用して、コンテナ内のすべてのコンテンツのサイズを決定します。 次に例を示します。
 
 ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
-#### Amazon S3 データストア
+#### Amazon S3 データストア {#amazon-data}
 
 コンテナの「指標」タブを使用して、コンテナ内のすべてのコンテンツのサイズを指定できます。 次に例を示します。
 
@@ -67,7 +67,7 @@ AzCopyのサポートは、CTT 1.5.4リリースに含まれています。 CTT�
 
 この設定ファイルの内容は、ソースAEMインスタンスがAzureとAmazon S3のどちらのデータストアを使用しているかによって異なります。
 
-#### Azure Blobストレージデータストア
+#### Azure Blobストレージデータストア {#azure-blob-storage-data}
 
 azcopy.configファイルには、次のプロパティを含める必要があります（インスタンスに対して正しいazCopyPathとazureSasを使用するようにしてください）。
 
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 データストア
+#### Amazon S3 データストア {#amazon-data-store}
 
 azcopy.configファイルには、次のプロパティを含める必要があります（インスタンスに対して正しい値を使用してください）。
 
