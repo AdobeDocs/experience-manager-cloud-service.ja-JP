@@ -2,9 +2,9 @@
 title: コンテンツのプレビュー
 description: AEM Preview Serviceを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: f5e37a4ac8b179ac869609edc87f52858607ad36
+source-git-commit: e31fd00b05832e84f87221287f79038acbdb8ec3
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ https://preview-p[programID]-e[environmentID].adobeaemcloud.com/pathtopage.html
 
 お使いの環境のURLを取得する方法の詳細については、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=en)を参照してください。
 
-また、[コンテンツツリーの公開ワークフロー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=en#publish-content-tree-workflow)を使用して、agentIdパラメーターをプレビューに設定して、または[レプリケーションAPI](/help/operations/replication.md#replication-api)を使用し、プレビュー用に設定したAgentFilterを使用して、コンテンツを公開できます。
+また、[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用して、agentIdパラメーターをプレビューに設定して、または[レプリケーションAPI](/help/operations/replication.md#replication-api)を使用し、プレビュー用に設定したAgentFilterを使用して、コンテンツを公開できます。
 
 ## プレビュー層のOSGi設定の指定 {#configuring-osgi-settings-for-the-preview-tier}
 
