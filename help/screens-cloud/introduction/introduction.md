@@ -1,10 +1,7 @@
 ---
 title: AEM Screens as aCloud Service
 description: このページは、AEM ScreensをCloud Serviceとして紹介します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 65b7bc7d911a80fa1ae03dc83eb49956b283a050
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -12,13 +9,13 @@ ht-degree: 0%
 ---
 
 
-# AEM Screens as aCloud Serviceの概要{#introduction-screens-cloud}
+# AEM Screens as aCloud Serviceの概要 {#introduction-screens-cloud}
 
 AEM ScreensをCloud Serviceとして使用すると、公共の場所で使用するための魅力的で動的なデジタルサイネージエクスペリエンスを作成できます。 これは、AEM Screens製品の次の進化であり、操作性と拡張性の大きな飛躍を表しています。
 
 AEM Screens as aCloud Serviceは、マーケターが大規模な動的なデジタルエクスペリエンスを作成および管理できるデジタルサイネージソリューションです。 さらに、包括的なデジタルマーケティング戦略の一環として、様々な種類の物理画面が必要になります。 通常のWebチャネルやモバイルチャネルを超えたAdobeのオムニチャネル機能を拡張し、あらゆる地域にデジタルサイネージチャネルが含まれるようにします。 AEM Screens as aCloud Serviceは、コンテンツの作成、コンテンツの組み立て、イベント管理、メディアの再生などを深く理解し、より関連性の高い、状況に応じた、生産的で、予測的なユーザーエクスペリエンスを実現します。
 
-## ScreensのコンポーネントをCloud Serviceとして理解する{#understanding-components}
+## ScreensのコンポーネントをCloud Serviceとして理解する {#understanding-components}
 
 Cloud ServiceとしてのScreensには、次の2つの主要なコンポーネントがあります。
 
