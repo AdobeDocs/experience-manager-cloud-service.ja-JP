@@ -1,10 +1,7 @@
 ---
 title: プレーヤーのScreensディスプレイへの割り当て(Cloud Service)
 description: このページでは、プレーヤーをScreensのディスプレイにCloud Serviceとして割り当てる方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 43192d92dd63e6db5572dad7b5f47646e5162130
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 2%
@@ -12,7 +9,7 @@ ht-degree: 2%
 ---
 
 
-# Cloud Service{#assign-player-displays-screens-cloud}としてのScreensのディスプレイへのプレーヤーの割り当て
+# プレーヤーのScreensディスプレイへの割り当て(Cloud Service) {#assign-player-displays-screens-cloud}
 
 プロジェクトの設定が完了したら、プレーヤーをディスプレイに割り当てて、コンテンツを表示する必要があります。
 
@@ -20,7 +17,7 @@ ht-degree: 2%
 
 このドキュメントでは、Screensサービスプロバイダーのディスプレイにプレーヤーを割り当てる方法について説明します。 これらは、コンテンツがCloud ServiceプレーヤーとしてScreensで再生され始める前の、最後の必須手順です。
 
-## プレーヤーをディスプレイに割り当てる手順{#create-display}
+## プレーヤーをディスプレイに割り当てる手順 {#create-display}
 
 プレーヤーを登録したら、必要なディスプレイにプレーヤーを割り当てる必要があります。そうすると、コンテンツがプレーヤーで再生され始めます。
 
@@ -34,7 +31,7 @@ ht-degree: 2%
 
    ![画像](/help/screens-cloud/assets/player/register-player8.png)
 
-## コンテンツ再生{#content-playback}
+## コンテンツ再生 {#content-playback}
 
 前の節で示したように、プレーヤーにディスプレイを割り当てると、割り当てられたディスプレイが&#x200B;**ASSIGNED DISPLAY**&#x200B;パネルに表示されます。
 
