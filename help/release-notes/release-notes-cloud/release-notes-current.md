@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c30470b321a4fba8c8de9becb62c518faff05498
+source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 24%
+source-wordcount: '1254'
+ht-degree: 22%
 
 ---
 
@@ -154,5 +154,25 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 * コマースコアコンポーネントは、AdobeCommerce Sensei Recsのデータ収集をサポートします。
 * カテゴリページのSEOに対応するURLの改善
 * サイト/設定ごとのカスタムHTTPヘッダーのサポート
+
+## コンテンツ転送ツール {#content-transfer-tool}
+
+### リリース日 {#release-date-ctt-latest}
+
+コンテンツ転送ツールv1.5.4のリリース日は2021年6月28日です。
+
+### 新機能 {#what-is-new-ctt-latest}
+
+* CTTで使用するためのオプションの[プリコピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en)手順のサポートが追加されました。 コピー前の手順を使用すると、ソースAEMインスタンスがAmazon S3またはAzure Blob Storageデータストアを使用するように設定されている場合に、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に高速化できます。
+
+* ガードレールがCTTに追加され、取得が停止するのを防ぎ、取得段階で重要なポイントに到達したデータが破損する可能性があることを防ぎます。
+
+* 抽出ログは、トラブルシューティングに役立つより説明的になりました。
+
+* UIに、より説明的な取り込みステータスメッセージを追加しました。
+
+### バグ修正 {#bug-fixes-ctt-latest}
+
+* オーサーインスタンスでインジェストを停止する際、UIは、以前に完了したパブリッシュインスタンスのインジェストを`FINISHED`から`STOPPED`に上書きしました。 この問題が修正されました。
 
 
