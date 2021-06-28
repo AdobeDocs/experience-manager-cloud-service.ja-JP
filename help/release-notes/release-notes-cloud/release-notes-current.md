@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: c7cba6217ec960219c607b76ab7f2f096af7459a
+source-git-commit: 10439fbe448152209211a8a1755ffe862f9cf48c
 workflow-type: tm+mt
 source-wordcount: '1663'
 ht-degree: 44%
@@ -69,7 +69,7 @@ ht-degree: 44%
 
 * スマートイメージングデバイスのピクセル比(DPR)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 [スマートイメージングのFAQ](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
 
-* [!DNL Dynamic Media]配信での次世代画像形式AVIFのサポートが導入されました（`fmt` URL修飾子）。 詳しくは、 [画像サービングとレンダリングAPI fmt](https://experienceleague.corp.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)を参照してください。
+* [!DNL Dynamic Media]配信での次世代画像形式AVIFのサポートが導入されました（`fmt` URL修飾子）。 詳しくは、 [画像サービングとレンダリングAPI fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html)を参照してください。
 
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
