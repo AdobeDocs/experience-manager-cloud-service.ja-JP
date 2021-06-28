@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: 64794b387efe6995cda6b58fb19ba36a04cbe577
+source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 94%
+source-wordcount: '97'
+ht-degree: 90%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 94%
    + コンテンツ転送ツール {#content-transfer-tool}
       + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [コンテンツ転送ツールの前提条件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [大きなコンテンツリポジトリの処理](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
       + [ユーザーマッピングツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + コードリファクタリングツール {#refactoring-tools}
