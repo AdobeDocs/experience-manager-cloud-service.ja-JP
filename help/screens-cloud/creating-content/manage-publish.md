@@ -1,10 +1,7 @@
 ---
 title: ScreensでのチャネルのCloud Serviceとしての公開
 description: ここでは、ScreensでチャネルをCloud Serviceとして公開する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 3da578d544ab82c61bdfecc0b470b1cd3315f996
+source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 17%
@@ -12,7 +9,7 @@ ht-degree: 17%
 ---
 
 
-# ScreensでのCloud Service{#publish-channel-screens-cloud}としてのチャネルの公開
+# ScreensでのチャネルのCloud Serviceとしての公開 {#publish-channel-screens-cloud}
 
 ## はじめに {#introduction}
 
@@ -28,7 +25,7 @@ AEM Screensからコンテンツを公開できます。 「公開を管理」�
 * チャネルの公開方法を理解する
 * 公開の管理，範囲
 
-## チャネルの公開手順{#publish-channel}
+## チャネルの公開手順 {#publish-channel}
 
 チャネルを公開するには、次の手順に従います。
 
@@ -50,6 +47,6 @@ AEM Screensからコンテンツを公開できます。 「公開を管理」�
    ![](/help/screens-cloud/assets/create-content/managepub-3.png)
 
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 これで、プロジェクトでチャネルを公開したので、次に「 [ScreensでのCloud Serviceのインストールと設定](/help/screens-cloud/creating-content/manage-publish.md) 」のドキュメントを確認し、ScreensをCloud Serviceジャーニーとして続行する必要があります。
