@@ -1,10 +1,7 @@
 ---
 title: ScreensでのプロジェクトのCloud Service
 description: ここでは、ScreensでプロジェクトをCloud Serviceとして作成する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: f0e005ddc59c575188d15986cabdbe04cb48ad03
+source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -12,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Cloud ServiceとしてのScreensプロジェクトの作成と管理{#creating-project-screens-cloud}
+# Screensでのプロジェクトの作成と管理(Cloud Service) {#creating-project-screens-cloud}
 
 Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初の手順は、新しいプロジェクトを作成することです。
 
@@ -20,14 +17,14 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
 
 このドキュメントでは、Screensコンテンツプロバイダーで新しいAEM Screensプロジェクトを作成する方法を説明します。 読み終えたら、範囲に関して、AEM Screensプロジェクトを作成できるようになります。
 
-## 新しいプロジェクトの作成{#create-new-project}
+## 新しいプロジェクトの作成 {#create-new-project}
 
 以下の手順に従って、Screensに新しいプロジェクトをCloud Serviceとして作成します。
 
 1. Screensコンテンツプロバイダーに移動します。
 
    >[!NOTE]
-   >プロジェクトを作成するためにScreensコンテンツプロバイダーにアクセスする方法については、[Using Screens Content Provider](/help/screens-cloud/setting-up-project/using-screens-content-provider.md)を参照してください。
+   >プロジェクトを作成するためにScreensコンテンツプロバイダーにアクセスする方法については、[Using Screens Content Provider]を参照してください。
 
 1. アクションバーの右上隅にある「**Screensプロジェクト**&#x200B;を作成」をクリックします。
 
@@ -46,7 +43,7 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
 
    これで、AEM Screensプロジェクトが設定され、プロジェクトにチャネルと場所を追加できます。
 
-### 既存のプロジェクトの削除{#deleting-project}
+### 既存のプロジェクトの削除 {#deleting-project}
 
 既存のScreensを削除プロジェクトとしてCloud Serviceできます。
 次の手順に従って、Screensコンテンツプロバイダーから既存のプロジェクトを削除します。
@@ -62,6 +59,6 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
    >[!NOTE]
    >複数のプロジェクトを選択できるので、1回の手順で複数のプロジェクトを削除できます。
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
-これで、AEM Screensプロジェクトを設定したので、新しいチャネルを作成し、チャネルにコンテンツを追加できます。 チャネルでのコンテンツの作成と管理の方法については、[チャネルの作成と管理](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)を参照してください。
+これで、AEM Screensプロジェクトを設定したので、新しいチャネルを作成し、チャネルにコンテンツを追加できます。 チャネルでのコンテンツの作成と管理の方法については、[チャネルの作成と管理]を参照してください。
