@@ -1,18 +1,15 @@
 ---
 title: パイプラインの実行
 description: ここでは、Cloud ManagerでScreensのパイプラインをCloud Serviceプロジェクトとして実行する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 83d2ac2d22827ebe13578b900907dd089d8d7e45
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 
-# Cloud ManagerでのCloud ServiceプログラムとしてのScreensのパイプラインの実行{#run-pipeline-screens-cloud}
+# Cloud ManagerでのScreensのパイプラインのCloud Serviceプログラムとしての実行 {#run-pipeline-screens-cloud}
 
 ここでは、パイプラインを実行し、Cloud Managerでプログラムのコードをデプロイする方法について説明します。
 
@@ -23,7 +20,7 @@ ht-degree: 7%
 
 以下の節では、CI/CDパイプラインの設定方法と、Cloud Managerでプログラムのコードのデプロイ方法について説明します。
 
-## Cloud ManagerでScreensプロジェクトのパイプラインを実行する手順{#steps-branch-creation}
+## Cloud ManagerでScreensプロジェクトのパイプラインを実行する手順 {#steps-branch-creation}
 
 1. 環境の設定が正常に完了したら、Cloud Managerの&#x200B;**概要**&#x200B;ページにコールトゥアクションカードの更新が表示されます。
 
@@ -57,6 +54,6 @@ ht-degree: 7%
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Managerでプログラムの環境を設定する方法を学習したら、オンボーディングプロセスの次の手順（[Screensサービスプロバイダー](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)に移動）に進む準備が整いました。
