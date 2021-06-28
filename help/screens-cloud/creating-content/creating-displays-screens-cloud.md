@@ -1,18 +1,15 @@
 ---
 title: Screens as a Screensでのディスプレイの作成とCloud Service
 description: ここでは、ScreensでディスプレイをCloud Serviceとして作成および管理する方法について説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 5c6f79fce71ce0fcb1f77f90faf3621000daac0f
+source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 14%
+ht-degree: 16%
 
 ---
 
 
-# Screensでのディスプレイの作成と管理(Cloud Service{#create-displays-screens-cloud})
+# Screens as a Screensでのディスプレイの作成とCloud Service {#create-displays-screens-cloud}
 
 チャネルを公開したら、Screensサービスプロバイダーでディスプレイを作成します。
 
@@ -20,11 +17,11 @@ ht-degree: 14%
 
 ## 目的 {#objective}
 
-このドキュメントでは、Screensサービスプロバイダーでディスプレイを作成および管理する方法について説明します。 読み終えた後は、次の操作を行う必要があります。
+このドキュメントでは、Screensサービスプロバイダーでディスプレイを作成および管理する方法について説明します。 ドキュメントを読めば、以下が可能です。
 
 * ディスプレイの作成方法を説明します。
 
-## ディスプレイの作成手順{#create-display}
+## ディスプレイの作成手順 {#create-display}
 
 以下の手順に従って、Screens Services Providerからディスプレイを作成します。
 
@@ -45,7 +42,7 @@ ht-degree: 14%
 
    ![画像](/help/screens-cloud/assets/display/disp-4.png)
 
-### ディスプレイ{#deleting-display}の削除
+### ディスプレイの削除 {#deleting-display}
 
 ディスプレイは、Screens Services Providerから削除できます。
 
@@ -53,6 +50,6 @@ ht-degree: 14%
 
 ![画像](/help/screens-cloud/assets/display/disp-5.png)
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 これで、プロジェクトのディスプレイの作成と管理の方法を学びました。次に、「 [ScreensのディスプレイへのCloud Serviceの割り当て](/help/screens-cloud/creating-content/assigning-channels-to-display.md) 」のドキュメントを確認し、Cloud ServiceのジャーニーとしてScreensを続行する必要があります。
