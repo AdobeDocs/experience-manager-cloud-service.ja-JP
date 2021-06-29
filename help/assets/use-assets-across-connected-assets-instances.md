@@ -5,14 +5,14 @@ contentOwner: AG
 feature: アセット管理，Connected Assets，アセット配布，ユーザーとグループ
 role: Administrator,Business Practitioner,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 192762e3efb23d84eb4378755975dc9b9d3158e8
 workflow-type: tm+mt
-source-wordcount: '2966'
+source-wordcount: '2967'
 ht-degree: 77%
 
 ---
 
-# Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Connected Assets を使用した[!DNL Experience Manager Sites] での DAM アセットの共有  {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。1つの理由は、連携が必要な既存のデプロイメントを地理的に分散させることができます。 もう1つの理由は、異なる[!DNL Experience Manager]バージョンを含む異種インフラストラクチャを導く買収で、親会社が一緒に使用したい場合です。
 
@@ -58,7 +58,7 @@ Connected Assetsの機能は、[!DNL Experience Manager Sites]と[!DNL Experienc
 | DAM ディストリビューター（テクニカルユーザー） | リモート | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | リモート [!DNL Experience Manager] の `ksaner` | リモートデプロイメント上に存在するこのユーザーは、（[!DNL Sites] 作成者の役割ではなく）[!DNL Experience Manager] ローカルサーバーによって、[!DNL Sites] 作成者の代わりにリモートアセットを取得するために使用されます。この役割は、上の 2 つの `ksaner` の役割とは異なり、別のユーザーグループに属しています。 |
 | [!DNL Sites] 技術ユーザー | ローカル | `connectedassets-sites-techaccts` | - | [!DNL Assets] デプロイメントで、[!DNL Sites] Web ページ内のアセットへの参照を検索できるようにします。 |
 
-## [!DNL Sites] デプロイメントと [!DNL Assets] デプロイメント間の接続の設定 {#configure-a-connection-between-sites-and-assets-deployments}
+## [!DNL Sites] デプロイメントと [!DNL Assets] デプロイメント間の接続の設定  {#configure-a-connection-between-sites-and-assets-deployments}
 
 [!DNL Experience Manager] 管理者はこの統合を作成できます。作成した統合を使用するうえで必要な権限は、ユーザーグループを通じて設定されます。ユーザーグループは、[!DNL Sites] デプロイメントおよび DAM デプロイメントで定義されます。
 
@@ -116,13 +116,13 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメント間の接続の設定 {#sites-dynamic-media-connected-assets}
+## [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメント間の接続の設定  {#sites-dynamic-media-connected-assets}
 
 [!DNL Sites]デプロイメントと[!DNL Dynamic Media]デプロイメントの間の接続を設定して、Webページの作成者がWebページで[!DNL Dynamic Media]イメージを使用できるようにすることができます。 Webページをオーサリングする際に、リモートアセットとリモート[!DNL Dynamic Media]デプロイメントを使用する経験は同じです。 これにより、Connected Assetsの機能（スマート切り抜きや画像プリセットなど）を使用して[!DNL Dynamic Media]機能を活用できます。
 
-この接続を設定するには、次の手順に従います。
+接続を設定するには、次の手順に従います。
 
-1. 上記の説明に従って、Connected Assets設定を作成します。 機能を設定する際に、「**[!UICONTROL Dynamic Media Connected Assetsのオリジナルのレンディションを取得]**」オプションを選択します。
+1. 前述のように、「 Connected Assets 」設定を作成します。ただし、機能を設定する場合を除き、「 **[!UICONTROL Dynamic Media Connected Assetsのオリジナルレンディションを取得]** 」オプションを選択します。
 
 1. ローカル[!DNL Sites]およびリモート[!DNL Assets]デプロイメントに[!DNL Dynamic Media]を設定します。 [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)の指示に従います。
 
