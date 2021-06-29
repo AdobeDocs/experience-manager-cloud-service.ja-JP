@@ -1,7 +1,7 @@
 ---
 title: 大きなコンテンツリポジトリの処理
 description: この節では、大規模なコンテンツリポジトリの処理について説明します
-source-git-commit: 1299a4bd4e4139c971680e439a3b366162af0de2
+source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 2%
@@ -80,7 +80,7 @@ azCopyPath=/usr/bin/azcopy
 azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--REDACTED--
 ```
 
-#### Amazon S3 データストア {#amazon-data-store}
+#### Amazon S3 データストア {#amazon-sdata-store}
 
 azcopy.configファイルには、次のプロパティを含める必要があります（インスタンスに対して正しい値を使用してください）。
 
@@ -134,7 +134,7 @@ AzCopyに問題が発生した場合、抽出は即座に失敗し、抽出ロ�
 コンテンツ転送ツール1.5.4のリリースに伴い、AzCopyのサポートがオーサーインジェストに追加されました。
 
 >[!NOTE]
-> 最初にオーサーの取り込みを単独で実行することをお勧めします。 これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
+>最初にオーサーの取り込みを単独で実行することをお勧めします。 これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
 
 取り込み中にAzCopyを利用するには、少なくともバージョン2021.6.5561のCloud ServiceバージョンとしてAEMを使用する必要があります。
 
