@@ -1,10 +1,10 @@
 ---
 title: AEM Screens as aCloud Service
 description: Adobe Experience Manager Screens as aCloud Serviceのセルフヘルプリソースおよびドキュメントリンク
-source-git-commit: 79eac4a2bf7d891dcd99c90f518fffeca279b3b7
+source-git-commit: 8d68844d67b6025b5dbb7351ed123765afe742bc
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 71%
+source-wordcount: '452'
+ht-degree: 69%
 
 ---
 
@@ -18,9 +18,11 @@ ht-degree: 71%
 
 ## 主なコンテンツとAEM Screens as aCloud Service記事 {#key-articles}
 
-* [AEM Screens as aCloud Serviceの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
-* [AEM Screens as aCloud Serviceのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
+* [オンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
+* [Screensサービスとコンテンツプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 * [ScreensでのプロジェクトのCloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* [Screens Playerのインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
