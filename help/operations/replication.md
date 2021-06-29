@@ -2,10 +2,10 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
+source-git-commit: eba9ce7c80fc785e44f13ded5227828b6f04f7bb
 workflow-type: tm+mt
 source-wordcount: '1185'
-ht-degree: 28%
+ht-degree: 26%
 
 ---
 
@@ -42,17 +42,17 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 ツリーのアクティベーションを実行するには：
 
 1. AEM 開始メニューで&#x200B;**ツール／デプロイメント／配布**&#x200B;に移動します。
-2. **forwardPublisher** カードを選択します。
-3. forwardPublisher Web コンソール UI で「**配布**」を選択します。
+2. カード&#x200B;**publish**&#x200B;を選択します。
+3. 発行WebコンソールUIで、**「配布**」を選択します。
 
-   ![配布](assets/distribute.png "配布")
+   ![配布](assets/publish-distribute.png "配布")
 4. パスブラウザーでパスを選択し、必要に応じてノードやツリーの追加または削除を選択し、「**送信**」をクリックします。
 
 ### コンテンツツリーの公開ワークフロー {#publish-content-tree-workflow}
 
 次に示すように、 **ツール/ワークフロー/モデル**&#x200B;を選択し、「**コンテンツツリーを公開**」という標準のワークフローモデルをコピーして、ツリーレプリケーションをトリガーできます。
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![](/help/operations/assets/publish-distribute.png)
 
 元のモデルを修正または呼び出さないでください。 代わりに、必ずモデルをコピーし、そのコピーを修正または呼び出してください。
 
@@ -191,13 +191,13 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 レプリケーションのトラブルシューティングをおこなうには、AEM オーサーサービス Web UI のレプリケーションキューに移動します。
 
 1. AEM 開始メニューで&#x200B;**ツール／デプロイメント／配布**&#x200B;に移動します。
-2. **forwardPublisher** カードを選択します。
-   ![ステータス](assets/status.png "ステータス")
+2. カード&#x200B;**publish**を選択します。
+   ![ステータス](assets/publish-status.png "ステータス")
 3. キューのステータスが緑色かどうかを確認します。
 4. レプリケーションサービスへの接続をテストできます。
 5. 「**ログ**」タブを選択すると、コンテンツパブリケーションの履歴が表示されます。
 
-![ログ](assets/logs.png "ログ")
+![ログ](assets/publish-logs.png "ログ")
 
 コンテンツを公開できなかった場合は、パブリケーション全体が AEM パブリッシュサービスから戻されます。
 その場合は、パブリケーションのキャンセル原因となった項目を特定するために、キューを確認する必要があります。赤色のステータスを示すキューをクリックすると、保留中の項目を含んでいるキューが表示され、必要に応じて、そのキューから 1 つまたはすべての項目をクリアできます。
