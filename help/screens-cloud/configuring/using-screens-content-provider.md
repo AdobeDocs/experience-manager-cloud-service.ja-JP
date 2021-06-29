@@ -1,10 +1,10 @@
 ---
 title: Screensコンテンツプロバイダーの使用
 description: ここでは、Screensコンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
-source-git-commit: 00a4601b9c01309425e1a8df952387024167465b
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 4%
+source-wordcount: '209'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >**前提条件**
->この節を読む前に、 Screensサービスプロバイダーの設定を参照して、Screensサービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
+>この節を読む前に、[Screensサービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)を参照して、Screensサービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
 
 Screensコンテンツプロバイダーにログインすると、コンテンツ再生でコンテンツを作成する準備が整います。 Screensコンテンツプロバイダーを使用して、以下を作成および管理します。
 
@@ -33,6 +33,6 @@ Screensコンテンツプロバイダーにログインすると、コンテン�
 
 ## 次の手順 {#whats-next}
 
-これで、ScreensCloud Serviceプロバイダーに移動する方法を学びました。次に、 Screensでのプロジェクトの作成と管理をCloud Serviceとして参照し、Screensをコンテンツのジャーニーとして継続する必要があります。
+これで、ScreensCloud Serviceプロバイダーに移動する方法を学びました。次に、「 [Screensでのプロジェクトの作成と管理(Cloud Serviceとして) ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en) 」のドキュメントを見て、Screensをコンテンツジャーニーとして続行する必要があります。
 
 
