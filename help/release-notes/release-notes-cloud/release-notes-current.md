@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
+source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1385'
 ht-degree: 21%
 
 ---
@@ -144,9 +144,9 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 * フォームデータモデル(FDM)を使用してデータをバックエンドサービスに送信する前にフィールドの検証が完了すると、検証は成功しますが、フォームデータモデルサービスは検証後にデータを呼び出せません。
 * Apple iOSデバイスから標準のHTMLアップロードフィールドを含むフォームを送信すると、ファイルのコンテンツが送信されず、0バイトのファイルがもう一方の端に届く場合があります。 これは、Apple iOSの既知の問題です。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
-## AEM Screens {#aem-screens}
+## [!DNL Adobe Experience Manager Screens] として  [!DNL Cloud Service] {#screens}
 
-ここでは、Screensのリリースノートの概要をCloud Serviceとして説明します。
+この節では、 AEM Screens as aCloud Serviceのリリースノートの概要を説明します。
 
 ### リリース日 {#release-date-june-screens}
 
