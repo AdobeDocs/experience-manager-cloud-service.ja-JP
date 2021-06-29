@@ -1,10 +1,10 @@
 ---
 title: AEM Screens as aCloud Service
 description: Adobe Experience Manager Screens as aCloud Serviceのセルフヘルプリソースおよびドキュメントリンク
-source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
+source-git-commit: a10e23901e3f7664e608089b93c95c8a73c14eba
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 71%
+source-wordcount: '429'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 71%
 
 * [AEM Screens as aCloud Serviceの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/overview/introduction.html?lang=en)
 * [AEM Screens as aCloud Serviceのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=en)
-* [プロジェクトの作成とコンテンツ作成の開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
+* プロジェクトの作成とコンテンツ作成の開始
 
 ## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
 
