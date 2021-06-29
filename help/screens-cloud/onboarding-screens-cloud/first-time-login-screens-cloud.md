@@ -1,10 +1,10 @@
 ---
 title: Cloud ServiceとしてのScreensへの初回ログイン
 description: ここでは、ScreensをCloud Serviceとして使い始める最初の手順について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3962d736778e4d17bb57296e9401503ce712a6cd
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 1%
+source-wordcount: '237'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 機能パックの可用性 {#availability}
 
-AMS-Screens-Cloud機能パックは、ソフトウェア配布ポータルから入手できます。
+AMS-Screens-Cloud機能パックは、[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)から入手できます。
 ここをクリックして、最新の機能パックをダウンロードします。
 
 ## Adobe Admin Consoleへのユーザーの追加 {#admin-console}
