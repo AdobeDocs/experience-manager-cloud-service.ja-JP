@@ -2,9 +2,9 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 3cafd809cba2d844ee4507c41eb1b5302ad5b6ba
+source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1155'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,9 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 ### クイック公開／非公開 - 計画的公開／非公開 {#publish-unpublish}
 
-これらの標準的な作成者向け AEM 機能は、AEM as a Cloud Service でも変わりません。
+これにより、公開を管理のアプローチを通じて追加のオプションを使用することなく、選択したページを直ちに公開できます。
+
+詳しくは、「[公開の管理](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)」を参照してください。
 
 ### オンタイムとオフタイム - トリガー設定 {#on-and-off-times-trigger-configuration}
 
@@ -171,6 +173,14 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 このようなフィルターを指定せず、「パブリッシュ」エージェントのみを使用する場合、「プレビュー」エージェントは使用されず、レプリケーションアクションはプレビュー層に影響しません。
 
 リソースの`ReplicationStatus`全体が変更されるのは、レプリケーションアクションに、デフォルトでアクティブなエージェントが少なくとも1つ含まれている場合のみです。 上記の例では、レプリケーションは「プレビュー」エージェントを使用するだけなので、このケースは該当しません。 したがって、新しい`getStatusForAgent()`メソッドを使用して、特定のエージェントのステータスに対するクエリを実行する必要があります。 この方法は、「パブリッシュ」エージェントに対しても機能します。 指定されたエージェントを使用して実行されたレプリケーションアクションがある場合、null以外の値を返します。
+
+### 公開を管理 {#manage-publication}
+
+公開を管理には、クイック公開よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
+
+「後で公開する」オプション用にフォルダーの子を含めると、コンテンツツリーを公開ワークフローが呼び出されます（この記事で説明）。
+
+公開の管理に関する詳細については、[公開の基本に関するドキュメント](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)を参照してください。
 
 ## トラブルシューティング {#troubleshooting}
 
