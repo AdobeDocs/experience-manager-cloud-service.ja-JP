@@ -1,9 +1,9 @@
 ---
 title: Screensコンテンツプロバイダーの使用
 description: ここでは、Screensコンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: ffeb82345ad2fe243e09f227d495afca70da5977
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '220'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ## 目的 {#objective}
 
-以下では、Screens Services Providerを設定した後のScreensコンテンツプロバイダーの使用方法について説明します。
+次の節では、[Screens Services Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)を設定した後にScreensコンテンツプロバイダーを使用する方法について説明します。
 
 ## Screensコンテンツプロバイダーの使用 {#screens-content-provider}
 
@@ -25,7 +25,9 @@ ht-degree: 3%
 >**前提条件**
 >この節を読む前に、[Screensサービスプロバイダーの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)を参照して、Screensサービスプロバイダーからこのユーザーインターフェイスに移動する方法を確認してください。
 
-Screensコンテンツプロバイダーにログインすると、コンテンツ再生でコンテンツを作成する準備が整います。 Screensコンテンツプロバイダーを使用して、以下を作成および管理します。
+Screensコンテンツプロバイダーにログインすると、コンテンツ再生でコンテンツを作成する準備が整います。
+
+以下を作成および管理するには、Screensコンテンツプロバイダーを使用する必要があります。
 
 * プロジェクト
 * チャネル
