@@ -2,19 +2,19 @@
 title: 使用状況および共有に関するレポート
 description: デジタルアセットの使用状況、アクティビティ、共有を理解するのに役立つ、 [!DNL Adobe Experience Manager Assets]  でのアセットに関するレポートです。
 contentOwner: AG
-feature: アセットレポート，アセット管理
+feature: アセットレポート、アセット管理
 role: Administrator,Business Practitioner
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 94%
+source-wordcount: '872'
+ht-degree: 100%
 
 ---
 
 # アセットレポート {#asset-reports}
 
-アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートには、システムの使用状況、ユーザーによるアセットの操作方法、<!-- downloaded and -->共有されているアセットに関する有用な情報が表示されます。
+アセットレポートを使用すると、 [!DNL Adobe Experience Manager Assets] デプロイメントのユーティリティを評価できます。[!DNL Assets] を使用すると、デジタルアセットに関する様々なレポートを生成できます。レポートでは、システムの使用状況、ユーザーによるアセットの操作方法、<!-- downloaded and -->共有されているアセットなどに関する役に立つ情報が提供されます。
 
 レポートの情報を使用して重要な成功指標を導き出し、企業やお客様における [!DNL Assets] の採用状況を測定することができます。
 
@@ -22,7 +22,7 @@ ht-degree: 94%
 
 直観的なレポート管理インターフェイスに備わっているきめ細かなオプションやコントロールを使用すれば、アーカイブされたレポートにアクセスしたり、レポートの実行ステータス（成功、失敗および待機中）を表示したりすることができます。
 
-レポートが生成されると、インボックス通知<!-- through an email (optional) and -->で通知されます。レポートのリストページで、以前に生成されたすべてのレポートが表示されるレポートの表示、ダウンロードまたは削除を行うことができます。
+レポートが生成されると、インボックス通知<!-- through an email (optional) and -->で通知されます。それまでに生成されたすべてのレポートが示されるレポートリストページで、レポートの表示、ダウンロードまたは削除をおこなうことができます。
 
 ## レポートの生成 {#generate-reports}
 
@@ -120,7 +120,6 @@ ht-degree: 94%
 -->
 
 * アップロード
-* ダウンロード
 * 有効期限
 * 変更
 * 公開
@@ -160,7 +159,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 1. Save the changes.
 -->
 
-## トラブルシューティング情報{#tips-troubleshoot}
+## トラブルシューティング情報 {#tips-troubleshoot}
 
 * [!DNL Dynamic Media] を使用していて、[!UICONTROL ディスク使用量レポート]が生成されない場合は、すべてのアセットが正しく処理されていることを確認します。問題を解決するには、アセットを再処理し、レポートを再度生成します。
 
