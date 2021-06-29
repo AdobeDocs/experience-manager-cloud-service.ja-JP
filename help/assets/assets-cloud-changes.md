@@ -4,10 +4,10 @@ description: '[!DNL Adobe Experience Manager 6.5] と比較した [!DNL Adobe Ex
 feature: リリース情報
 role: Business Practitioner,Leader,Architect,Administrator
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab40ce5b9b57f83562cf279b75979795f5433eda
+source-git-commit: 088531133faa4c7f071a8c27fe11d1ccd5f50c0b
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 61%
+source-wordcount: '970'
+ht-degree: 59%
 
 ---
 
@@ -61,6 +61,8 @@ ht-degree: 61%
 | ZIPアーカイブからのアセットの抽出 | サポートされていない。 | [Adobe  [!DNL Experience Manager] 6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip)を参照してください。 |
 | Assetsの評価 | サポートされていない。 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
 | コンテンツ配布フィルター | サポートされていない。 | `ContentDispositionFilter`の一般的な使用例は、管理者がHTMLファイルを配信し、PDFファイルをダウンロードする代わりにインラインで開くように[!DNL Experience Manager]を設定できるようにすることです。 パブリッシュインスタンスでは、Dispatcher設定を使用して廃棄を管理できます。 オーサーインスタンスでは、AdobeはContent Dispositionヘッダーの変更をお勧めしません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)の「Content Disposition」フィルターを参照してください。[ |
+| [レポートをダウンロード](/help/assets/asset-reports.md) | サポートされていない。 | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)の[ダウンロードレポートを参照してください。 |
+| 製品撮影テンプレート | サポートされていない。 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)の[製品撮影テンプレートを参照してください。 |
 | クラシック UI | サポートされていない。 | タッチ操作対応のユーザーインターフェイスのみ使用できます。 |
 
 >[!MORELIKETHIS]
