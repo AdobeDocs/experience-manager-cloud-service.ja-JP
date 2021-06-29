@@ -1,9 +1,9 @@
 ---
 title: AEM Screens as aCloud Service
 description: このページは、AEM ScreensをCloud Serviceとして紹介します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ AEM Screens as aCloud Serviceは、マーケターが大規模な動的なデジ
 
 Cloud ServiceとしてのScreensには、次の2つの主要なコンポーネントがあります。
 
-* **コンテンツプロバイダー**:AEMCloud ServiceまたはAdobe Managed Services(AMS)上で動作するScreensアドオンです。Screensコンテンツプロバイダーを使用すると、コンテンツ作成者は、チャネルを作成および管理できます。 コンテンツ作成者は、ディスプレイやプレーヤー登録の作成の詳細を気にすることなく、新しいコンテンツを追加したり、コンテンツを編集したりできます。 コンテンツプロバイダーは、コンテンツ、ディスプレイまたはプレーヤー登録の開発に関する基礎となる詳細を抽象化します。
+* **[コンテンツプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)**:AEMCloud ServiceまたはAdobe Managed Services(AMS)上で動作するScreensアドオンです。Screensコンテンツプロバイダーを使用すると、コンテンツ作成者は、チャネルを作成および管理できます。 コンテンツ作成者は、ディスプレイやプレーヤー登録の作成の詳細を気にすることなく、新しいコンテンツを追加したり、コンテンツを編集したりできます。 コンテンツプロバイダーは、コンテンツ、ディスプレイまたはプレーヤー登録の開発に関する基礎となる詳細を抽象化します。
 
-* **サービスプロバイダー**：サービスランタイムで実行されるデジタルサイネージ管理サービスです。Adobe I/OScreensサービスプロバイダーを使用すると、コンテンツ作成者、開発者および管理者は、コンテンツがチャネルに追加された後のコンテンツ再生のディスプレイとプレーヤーを管理できます。 さらに、Screensサービスプロバイダーは、コンテンツをハイレベルで再生する場所とタイミングをオーケストレーターに通知します。
+* **[サービスプロバイダー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)**：サービスランタイムで実行されるデジタルサイネージ管理サービスです。Adobe I/OScreensサービスプロバイダーを使用すると、コンテンツ作成者、開発者および管理者は、コンテンツがチャネルに追加された後のコンテンツ再生のディスプレイとプレーヤーを管理できます。 さらに、Screensサービスプロバイダーは、コンテンツをハイレベルで再生する場所とタイミングをオーケストレーターに通知します。
 
 
 ## アーキテクチャの概要 {#architectural-overview}
