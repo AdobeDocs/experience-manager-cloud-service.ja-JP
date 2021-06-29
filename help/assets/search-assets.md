@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: 検索，メタデータ，アセットの配布
 role: Business Practitioner,Administrator
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a6813cf691acb868589932719e33303871859323
 workflow-type: tm+mt
 source-wordcount: '4916'
 ht-degree: 86%
 
 ---
 
-# [!DNL Adobe Experience Manager] でのアセットの検索 {#search-assets-in-aem}
+# [!DNL Adobe Experience Manager] でのアセットの検索  {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] は、コンテンツ速度の向上を達成するのに役立つ堅牢なアセット検出方法を備えています。標準搭載の機能とカスタム方法を使用すると、シームレスでインテリジェントな検索エクスペリエンスでチームが市場投入までの時間を短縮できます。アセットの検索は、デジタルアセット管理システムの利用の中核を成します。用途は、クリエイティブ担当者によるさらなる利用、ビジネスユーザーやマーケティング担当者によるアセットの堅牢な管理、DAM 管理者による管理などです。[!DNL Assets] ユーザーインターフェイスまたは他のアプリやサーフェスで実行できる簡易検索、詳細検索、カスタム検索は、これらの使用目的を達成するのに役立ちます。
 
@@ -28,7 +28,7 @@ ht-degree: 86%
 | [検索ランキングおよびブースト](#searchrank) | [カスタム述語](#custompredicates) | [スマートコレクション](#collections) |
 | [詳細検索：検索のフィルタリングと範囲](#scope) |  | [予期しない結果の理解とトラブルシューティング](#unexpected-results) |
 | [他のソリューションおよびアプリから検索](#search-assets-other-surfaces)：<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager デスクトップアプリ](#desktop-app)</li><li>[Adobe Stock 画像](#adobe-stock)</li><li>[Dynamic Media アセット](#search-dynamic-media-assets)</li></ul> |  |  |
-| [アセットセレクター](#asset-selector) |  |  |
+| [アセットセレクター](#asset-picker) |  |  |
 | [制限事項](#limitations)と[ヒント](#tips) |  |  |
 | [例を使った説明](#samples) |  |  |
 
@@ -147,7 +147,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 **[!UICONTROL フィルター]**&#x200B;パネルから **[!UICONTROL Dynamic Media]**／**[!UICONTROL セット]**&#x200B;を選択して、Dynamic Media 画像をフィルタリングすることができます。画像セット、カルーセル、混在メディアセット、スピンセットなどのアセットがフィルタリングされて表示されます。
 
-### メタデータフィールドの特定の値を使用したGQL検索{#gql-search}
+### メタデータフィールドの特定の値を使用したGQL検索 {#gql-search}
 
 タイトル、説明、作成者など、メタデータフィールドの正確な値に基づいてアセットを検索できます。 GQL 全文検索機能では、メタデータ値が検索クエリと完全に一致するアセットのみを取得できます。プロパティの名前（作成者、タイトルなど）と値は、大文字と小文字が区別されます。
 
@@ -173,7 +173,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | タイプ | type:&quot;image\png&quot; |
 | 画像の幅 | width:lowerbound..upperbound |
 | 画像の高さ | height:lowerbound..upperbound |
-| Person | person:John |
+| 個人 | person:John |
 
 `path`、`limit`、`size`および`orderby`の各プロパティは、`OR`演算子を他のプロパティと組み合わせることはできません。
 
@@ -192,7 +192,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 * プロパティ値に特定の文字列が含まれるアセットを表示する（例：title=Basel Meeting Room）：`title:*Meeting*`
 * 特定の文字列が含まれ、特定のプロパティ値を持つアセットを表示する（例：title=John Doe のアセットで文字列「Adobe」を検索する）：`*Adobe* title:"John Doe"`
 
-## 他の[!DNL Experience Manager]製品やインターフェイス{#search-assets-other-surfaces}からアセットを検索
+## 他の[!DNL Experience Manager]製品やインターフェイスからのアセットの検索 {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] は、DAMリポジトリを他の様々なソリューションに接続し [!DNL Experience Manager] て、デジタルアセットへの迅速なアクセスを提供し、クリエイティブワークフローを効率化します。アセットの検出は、参照または検索で始まります。異なるサーフェスやソリューションでも、検索の動作はほとんど同じです。ターゲットオーディエンス、使用例、ユーザーインターフェイスは[!DNL Experience Manager]ソリューションによって異なるので、一部の検索方法は変わります。 個々のソリューションの具体的な方法については、以下のリンクを参照してください。ここでは、一般に当てはまるヒントや動作について説明しています。
 
@@ -200,19 +200,19 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 クリエイティブプロフェッショナルは、Adobeアセットリンクを使用して、サポートされているAdobe Creative Cloudアプリから、[!DNL Experience Manager Assets]に保存されたコンテンツにアクセスできるようになりました。 クリエイティブは、[!DNL Adobe Creative Cloud]アプリのアプリ内パネルを使用して、アセットをシームレスに参照、検索、チェックアウトおよびチェックインできます。[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、および[!DNL Adobe InDesign]。 また、Asset Link を使用すると、視覚的に類似した結果を検索できます。ビジュアル検索の表示結果は、Adobe Sensei の機械学習アルゴリズムを活用しており、見た目に類似した画像を見つけやすくなっています。詳しくは、[Adobe Asset Link を使用したアセットの検索と参照](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink)を参照してください。
 
-### [!DNL Experience Manager]デスクトップアプリケーション{#desktop-app}でのアセットの検索
+### [!DNL Experience Manager]デスクトップアプリケーションでのアセットの検索 {#desktop-app}
 
 クリエイティブプロフェッショナルは、デスクトップアプリケーションを使用して、[!DNL Experience Manager Assets]をローカルデスクトップ（WindowsまたはMac）で簡単に検索および利用できるようにします。 クリエイティブは、Mac FinderやWindowsエクスプローラーで目的のアセットを表示し、デスクトップアプリケーションで開いて、ローカルで変更できます。変更内容は[!DNL Experience Manager]に保存され、リポジトリーに新しいバージョンが作成されます。 このアプリケーションでは、1つ以上のキーワード、`*`および`?`ワイルドカード、`AND`演算子を使用した基本検索がサポートされています。 [デスクトップアプリケーションでのアセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。
 
-### [!DNL Brand Portal] でのアセットの検索 {#brand-portal}
+### [!DNL Brand Portal] でのアセットの検索  {#brand-portal}
 
 マーケティング担当者や事業部門のユーザーは、Brand Portal を使用して、承認済みのデジタルアセットを、広範な社内チーム、パートナーおよび販売店と効率的かつ安全に共有します。詳しくは、[Brand Portal でのアセットの検索](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=ja)を参照してください。
 
-### [!DNL Adobe Stock]画像を検索{#adobe-stock1}
+### [!DNL Adobe Stock]画像の検索 {#adobe-stock1}
 
 [!DNL Experience Manager]ユーザーインターフェイス内からAdobe Stockアセットを検索し、必要なアセットのライセンスを取得できます。 オムニサーチフィールドに「`Location: Adobe Stock`」を追加します。また、**[!UICONTROL フィルター]**&#x200B;パネルを使用して、ライセンス取得済みまたはライセンス未取得のアセットをすべて検索したり、Adobe Stock ファイル番号を使用して特定のアセットを検索したりすることもできます。[ [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage)の [!DNL Adobe Stock] 画像の管理を参照してください。
 
-### [!DNL Dynamic Media]アセット{#search-dynamic-media-assets}を検索
+### [!DNL Dynamic Media]アセットの検索 {#search-dynamic-media-assets}
 
 **[!UICONTROL フィルター]**&#x200B;パネルから **[!UICONTROL Dynamic Media]**／**[!UICONTROL セット]**&#x200B;を選択して、Dynamic Media 画像をフィルタリングすることができます。画像セット、カルーセル、混在メディアセット、スピンセットなどのアセットがフィルタリングされて表示されます。Web ページの作成時に、作成者はコンテンツファインダー内でセットを検索できます。セットのフィルターは、ポップアップメニューで使用できます。
 
