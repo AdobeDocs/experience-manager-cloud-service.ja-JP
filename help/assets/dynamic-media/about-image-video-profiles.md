@@ -1,17 +1,17 @@
 ---
 title: Dynamic Media のイメージプロファイルとビデオプロファイルについて
 description: イメージプロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。例えば、アップロードする Dynamic Media のビデオアセットに適用するビデオエンコーディングを指定できます。また、画像アセットを適切に切り抜くために Dynamic Media 画像アセットに適用するイメージプロファイルを指定できます。
-feature: アセット管理，イメージプロファイル，ビデオプロファイル
+feature: アセット管理、イメージプロファイル、ビデオプロファイル
 role: Administrator,Business Practitioner
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: fdfcaf7ba99ec54e1bdf1c97764da8c766701498
+source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 86%
+source-wordcount: '1270'
+ht-degree: 79%
 
 ---
 
-# Dynamic Media のイメージプロファイルとビデオプロファイルについて {#about-dm-image-video-profiles}
+# Dynamic Media のイメージプロファイルとビデオプロファイルについて{#about-dm-image-video-profiles}
 
 イメージプロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。例えば、アップロードする Dynamic Media のビデオアセットに適用するビデオエンコーディングを指定できます。また、画像アセットを適切に切り抜くために Dynamic Media 画像アセットに適用するイメージプロファイルを指定できます。
 
@@ -34,7 +34,7 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 >
 >同じプロファイルが割り当てられている 2 つのフォルダー間でアセットを移動する場合にも、同じことが言えます。
 
-## フォルダー内の Dynamic Media アセットの再処理 {#reprocessing-assets}
+## フォルダー内のDynamic Mediaアセットの再処理 {#reprocessing-assets}
 
 後で変更した既存の Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルが存在するフォルダー内のアセットを再処理できます。
 
@@ -44,7 +44,7 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 
 オプションで、再処理ワークフローのバッチサイズを、デフォルトの 50 アセットから最大 1,000 アセットまで調整できます。フォルダーに対して「_Scene7：アセットを再処理_」ワークフローを実行すると、アセットは一括でグループ化された後、Dynamic Media サーバーに送信されて処理されます。処理の後、バッチセット全体の各アセットのメタデータが[!DNL Adobe Experience Manager]に更新されます。 バッチサイズが大きい場合は、処理に遅延が生じる可能性があります。また、バッチサイズが小さすぎると、Dynamic Media サーバーへのラウンドトリップの数が多くなりすぎるおそれがあります。
 
-詳しくは、[再処理ワークフローのバッチサイズの調整](#adjusting-load)を参照してください。
+[再処理ワークフローのバッチサイズの調整](#adjusting-load)を参照してください。
 
 >[!NOTE]
 >
@@ -59,7 +59,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 -->
 
-**フォルダー内のDynamic Mediaアセットを再処理するには：**
+**フォルダー内の Dynamic Media アセットを再処理するには：**
+
 1. [!DNL Experience Manager]のアセットページで、イメージプロファイルまたはビデオプロファイルが割り当てられていて、**Scene7を適用するアセットフォルダーに移動します。アセット**&#x200B;ワークフローを再処理します。
 
    イメージプロファイルまたはビデオプロファイルが割り当てられているフォルダーについては、カード表示でフォルダー名のすぐ下にプロファイルの名前が表示されます。
@@ -70,39 +71,39 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * 選択したメインフォルダー内にアセットを含んだ 1 つ以上のサブフォルダーが存在する場合、ワークフローはフォルダー階層内のあらゆるアセットを再処理します。
    * ベストプラクティスとしては、1,000 個を超えるアセットを含んだフォルダー階層に対しては、このワークフローを実行しないでください。
 
-1. ページの左上隅付近にあるドロップダウンリストで「**[!UICONTROL タイムライン]**」をクリックします。
-1. ページ左下隅付近の「[!UICONTROL コメント]」フィールドの右側にあるカラットアイコン（**^**）をタップします。
+1. ページの左上隅付近にあるドロップダウンリストで、「**[!UICONTROL タイムライン]**」を選択します。
+1. ページの左下隅付近にある「 [!UICONTROL コメント] 」フィールドの右側で、カラットアイコン( **^** )を選択します。
 
    ![アセット再処理ワークフロー（その 1）](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
-1. 「**[!UICONTROL ワークフローを開始]**」をクリックします。
+1. 「**[!UICONTROL ワークフローを開始]**」を選択します。
 1. 「**[!UICONTROL ワークフローを開始]**」ドロップダウンリストから「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
 1. （オプション）「**ワークフローのタイトルを入力**」テキストフィールドに、ワークフローの名前を入力します。必要に応じて、ワークフローインスタンスを参照する名前を使用できます。
 
    ![アセット再処理ワークフロー（その 2）](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
-1. 「**[!UICONTROL 開始]**」をクリックした後、「**[!UICONTROL 確認]**」をクリックします。
+1. 「**[!UICONTROL 開始]**」を選択し、「**[!UICONTROL 確認]**」を選択します。
 
-   ワークフローを監視したり、進行状況を確認したりするには、[!DNL Experience Manager]メインコンソールページで&#x200B;**[!UICONTROL ツール/ワークフロー]**&#x200B;をクリックします。 ワークフローインスタンスページで、ワークフローを選択します。メニューバーの「**[!UICONTROL 履歴を開く]**」をクリックします。同じワークフローインスタンスページで、選択したワークフローの終了、休止、名前変更をおこなうこともできます。
+   ワークフローを監視したり、進行状況を確認したりするには、[!DNL Experience Manager]メインコンソールページで&#x200B;**[!UICONTROL ツール/ワークフロー]**&#x200B;を選択します。 ワークフローインスタンスページで、ワークフローを選択します。メニューバーで、「**[!UICONTROL 履歴を開く]**」を選択します。 同じワークフローインスタンスページで、選択したワークフローの終了、休止、名前変更を行うこともできます。
 
-### 再処理ワークフローのバッチサイズの調整 {#adjusting-load}
+### 再処理ワークフローのバッチサイズの調整（オプション） {#adjusting-load}
 
-（オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、再処理の実行対象となるアセットの平均アセットサイズと MIME タイプによって決まります。値を大きくすると、1 回の再処理ジョブのファイル数が多くなります。したがって、処理バナーは[!DNL Experience Manager]アセット上に長時間残ります。 ただし、平均ファイルサイズが小さい（1 MB以下の）場合は、値を100個（1000個以下）に増やすことをAdobeに推奨します。 平均ファイルサイズが数百MBの場合は、Adobeではバッチサイズを10まで小さくすることをお勧めします。
+（オプション）再処理ワークフローのデフォルトのバッチサイズは、1 ジョブあたり 50 アセットです。この最適なバッチサイズは、再処理の実行対象となるアセットの平均アセットサイズと MIME タイプによって決まります。値を大きくすると、1 回の再処理ジョブのファイル数が多くなります。したがって、処理バナーは[!DNL Experience Manager]アセット上に長時間残ります。 ただし、平均ファイルサイズが小さい（1 MB 以下の）場合は、値を数百個（1000 以下）に増やすことをお勧めします。平均ファイルサイズが数百 MB の場合は、バッチサイズを最大 10 までに減らすことをお勧めします。
 
-**再処理ワークフローのバッチサイズを調整するには（オプション）**：:
+**再処理ワークフローのバッチサイズを調整するには（オプション）**：
 
-1. [!DNL Experience Manager]で、**[!UICONTROL Adobe Experience Manager]**&#x200B;をタップしてグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**（ハンマー）アイコン/**[!UICONTROL ワークフロー/モデル]**&#x200B;をタップします。
+1. [!DNL Experience Manager]で、**[!UICONTROL Adobe Experience Manager]**&#x200B;を選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL ツール]**（ハンマー）アイコン/**[!UICONTROL ワークフロー/モデル]**&#x200B;を選択します。
 1. ワークフローモデルページのカード表示またはリスト表示で、「**[!UICONTROL Scene7：アセットを再処理]**」を選択します。
 
    ![カード表示で「Scene7：アセットを再処理」ワークフローが選択されたワークフローモデルページ](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
-1. ツールバーの「**[!UICONTROL 編集]**」をクリックします。新しいブラウザータブに、「Scene7：アセットを再処理」ワークフローモデルページが開きます。
-1. 「Scene7：アセットを再処理」ワークフローページで、右上隅付近の「**[!UICONTROL 編集]**」をタップして、ワークフローを「ロック解除」します。
-1. ワークフローで、Scene7 バッチアップロードコンポーネントを選択してツールバーを開き、ツールバーの「**[!UICONTROL 設定]**」をタップします。
+1. ツールバーで、「**[!UICONTROL 編集]**」を選択します。 新しいブラウザータブに、「Scene7：アセットを再処理」ワークフローモデルページが開きます。
+1. Scene7:アセット再処理ワークフローページの右上隅付近にある「**[!UICONTROL 編集]**」を選択して、ワークフローを「ロック解除」します。
+1. ワークフローで、Scene7バッチアップロードコンポーネントを選択してツールバーを開き、ツールバーの「**[!UICONTROL 設定]**」を選択します。
 
    ![Scene7 バッチアップロードコンポーネント](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
-1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]**&#x200B;ダイアログボックスで、以下の設定をおこないます。
+1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]**&#x200B;ダイアログボックスで、以下の設定を行います。
    * 「**[!UICONTROL タイトル]**」および「**[!UICONTROL 説明]**」テキストフィールドに、必要に応じて、ジョブの新しいタイトルと説明を入力します。
    * ハンドラーが次のステップに進む場合は、「**[!UICONTROL ハンドラー処理の設定]**」を選択します。
    * 「**[!UICONTROL タイムアウト]**」フィールドに、外部プロセスのタイムアウト（秒）を入力します。
@@ -112,9 +113,9 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![プロパティダイアログボックス](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]**&#x200B;ダイアログボックスの右上隅にある「**[!UICONTROL 完了]**」をタップします。
+1. **[!UICONTROL Scene7へのバッチアップロード — ステップのプロパティ]**&#x200B;ダイアログボックスの右上隅にある「**[!UICONTROL 完了]**」を選択します。
 
-1. 「Scene7：アセットを再処理」ワークフローモデルページの右上隅にある「**[!UICONTROL 同期]**」をタップします。「**[!UICONTROL 同期済み]**」と表示された場合、ワークフローランタイムモデルは正常に同期されており、フォルダー内のアセットを再処理する準備が整います。
+1. Scene7の右上隅：アセットワークフローモデルページを再処理し、「**[!UICONTROL 同期]**」を選択します。 「**[!UICONTROL 同期済み]**」と表示された場合、ワークフローランタイムモデルは正常に同期されており、フォルダー内のアセットを再処理する準備が整います。
 
    ![ワークフローモデルの同期](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
@@ -123,7 +124,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 <!-- MAY BE NEEDED IN THE FUTURE
 
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -134,12 +135,12 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, tap **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/security/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.
 
 -->
