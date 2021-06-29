@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c967d4114cae67da9e0c2cda14458329ecd7156
+source-git-commit: 2d0fc0351c62f920376c9d36f4919f827c711afc
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 22%
+source-wordcount: '1384'
+ht-degree: 21%
 
 ---
 
@@ -143,6 +143,27 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * フォームデータモデル(FDM)を使用してデータをバックエンドサービスに送信する前にフィールドの検証が完了すると、検証は成功しますが、フォームデータモデルサービスは検証後にデータを呼び出せません。
 * Apple iOSデバイスから標準のHTMLアップロードフィールドを含むフォームを送信すると、ファイルのコンテンツが送信されず、0バイトのファイルがもう一方の端に届く場合があります。 これは、Apple iOSの既知の問題です。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+
+## AEM Screens {#aem-screens}
+
+ここでは、Screensのリリースノートの概要をCloud Serviceとして説明します。
+
+### リリース日 {#release-date-june-screens}
+
+AEM Screens as aCloud Serviceのリリース日は2021年6月24日です。
+
+### 新機能 {#what-is-new-screens-june}
+
+>[!NOTE]
+>ScreensをCloud Serviceとして正常にインストール、設定、実行するために必要な基本的な知識と、詳細な概念に関する技術ドキュメントへのリンクについては、『[Cloud ServiceとしてのAEM Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=en)ガイド』を参照してください。
+
+* デバイスの一括登録管理は、大量のプレーヤーデバイスのプロビジョニングを高速化し、より効率的に行うことを意味します。
+
+* デバイス、ディスプレイ、チャネルの各在庫ビューの検索およびフィルターオプションを改善しました。
+
+* デバイスのヒーススナップショットは、重要なステータスを一目で確認することで、時間を節約します。
+
+* オブジェクトの詳細ページには、プロジェクト内の各オブジェクトに関する最も関連性の高い情報の概要が表示されます。
 
 ## CIFアドオン {#cloud-services-cif}
 
