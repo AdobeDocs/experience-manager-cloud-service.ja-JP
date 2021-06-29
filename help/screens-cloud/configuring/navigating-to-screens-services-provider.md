@@ -1,7 +1,7 @@
 ---
 title: Screensサービスプロバイダーに移動
 description: ここでは、Screensサービスプロバイダーに移動する方法について説明します。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 1. [ここ](https://experience.adobe.com/screens)からScreens Services Providerに移動します。
 
-   >[!NOTE]
+   >[!CAUTION]
    >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。 組織を変更するには、画面の右上隅にある「組織名」をクリックし、アクセス権が必要な組織を選択します。
 
 1. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
