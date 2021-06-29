@@ -1,9 +1,9 @@
 ---
 title: ScreensでのプロジェクトのCloud Service
 description: ここでは、ScreensでプロジェクトをCloud Serviceとして作成する方法について説明します。
-source-git-commit: c8c8eec6aab6e66e3e4eb96525e6f4f55633a5a0
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
 
 ## 次の手順 {#whats-next}
 
-これで、AEM Screensプロジェクトを設定したので、新しいチャネルを作成し、チャネルにコンテンツを追加できます。 チャネルでのコンテンツの作成と管理の方法については、[チャネルの作成と管理]を参照してください。
+これで、AEM Screensプロジェクトを設定したので、新しいチャネルを作成し、チャネルにコンテンツを追加できます。 チャネルでのコンテンツの作成と管理の方法については、[チャネルの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en)を参照してください。
