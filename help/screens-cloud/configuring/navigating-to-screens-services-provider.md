@@ -1,9 +1,9 @@
 ---
 title: Screensサービスプロバイダーに移動
 description: ここでは、Screensサービスプロバイダーに移動する方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '220'
 ht-degree: 2%
 
 ---
@@ -41,5 +41,5 @@ ht-degree: 2%
 
 ## 次の手順 {#whats-next}
 
-Screens Services Providerの設定方法を学習したら、 [Screensコンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)を参照して詳細を確認します。
+Screens Services Providerの設定方法を学習したら、 [Screensコンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=end)を参照して詳細を確認します。
 
