@@ -2,9 +2,9 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 405922266ed15c2db135921132c89fa459b38d1b
+source-git-commit: 1c18c0f669222d3864b1f203b423f860c200024a
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1185'
 ht-degree: 28%
 
 ---
@@ -34,6 +34,10 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 ![OSGi の On Off Trigger Configuration ダイアログ](/help/operations/assets/replication-on-off-trigger.png)
 
 ### ツリーのアクティベーション {#tree-activation}
+
+>[!NOTE]
+>
+>このアプローチは、ステータスが保持されず、他のアプローチよりも拡張性が低いので、非推奨と見なす必要があります。 Adobeでは、公開の管理またはワークフローメソッドを代わりに使用することをお勧めします
 
 ツリーのアクティベーションを実行するには：
 
