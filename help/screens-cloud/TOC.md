@@ -3,7 +3,7 @@ sub-product: AEM Screens as aCloud Service
 user-guide-title: AEM Screens as aCloud Service
 breadcrumb-title: AEM Screens as aCloud Service
 user-guide-description: AEM ScreensをCloud Serviceとして理解する。
-source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
+source-git-commit: 38c749e76ae8bc6efa72beb6963b53311ec3817e
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 9%
@@ -25,16 +25,16 @@ ht-degree: 9%
    + [ブランチの作成](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)
    + [環境の作成](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)
    + [パイプラインの実行](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md)
-   + ScreensをCloud Serviceプロジェクトとして設定する{#configure-screens-cloud}
-      + [Screensサービスプロバイダーに移動](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
-      + [Screensコンテンツプロバイダーに移動](/help/screens-cloud/configuring/using-screens-content-provider.md)
++ ScreensをCloud Serviceプロジェクトとして設定する{#configure-screens-cloud}
+   + [Screensサービスプロバイダーに移動](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
+   + [Screensコンテンツプロバイダーに移動](/help/screens-cloud/configuring/using-screens-content-provider.md)
 + コンテンツの作成 {#create-content}
    + [Screensコンテンツプロバイダーでのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
    + [Screensコンテンツプロバイダーでのチャネルの作成と管理](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
    + [公開の管理](/help/screens-cloud/creating-content/manage-publish.md)
    + [Screens Services Providerでのディスプレイの作成と管理](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [ディスプレイへのチャネルの割り当て](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
-   + プレーヤーと登録の管理{#manage-player-registration}
-      + [Screens Player のインストール](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-      + [プレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-      + [ディスプレイへのプレーヤーの割り当て](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
++ プレーヤーと登録の管理{#manage-player-registration}
+   + [Screens Player のインストール](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+   + [プレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+   + [ディスプレイへのプレーヤーの割り当て](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
