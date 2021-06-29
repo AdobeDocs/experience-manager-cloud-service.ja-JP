@@ -3,7 +3,7 @@ sub-product: AEM Screens as aCloud Service
 user-guide-title: AEM Screens as aCloud Service
 breadcrumb-title: AEM Screens as aCloud Service
 user-guide-description: AEM ScreensをCloud Serviceとして理解する。
-source-git-commit: c5e6a3a309bbb4750c8a553eba0c444ce030637b
+source-git-commit: 1d788b37d549d86270156cb43548a7c62fc1165f
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 9%
@@ -35,6 +35,6 @@ ht-degree: 9%
    + [Screens Services Providerでのディスプレイの作成と管理](/help/screens-cloud/creating-content/creating-displays-screens-cloud.md)
    + [ディスプレイへのチャネルの割り当て](/help/screens-cloud/creating-content/assigning-channels-to-display.md)
    + プレーヤーと登録の管理{#manage-player-registration}
-   + [Screens Player のインストール](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
-   + [プレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
-   + [ディスプレイへのプレーヤーの割り当て](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
+      + [Screens Player のインストール](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
+      + [プレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
+      + [ディスプレイへのプレーヤーの割り当て](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
