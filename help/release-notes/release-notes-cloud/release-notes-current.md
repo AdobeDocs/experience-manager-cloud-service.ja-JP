@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c61b24781cce58644c5f7100e5b4f47e8ac90047
+source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 21%
+source-wordcount: '1395'
+ht-degree: 20%
 
 ---
 
@@ -90,14 +90,12 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 ### [!DNL Assets]の新機能 {#ga-features-assets}
 
-* コンテンツ自動化機能を使用すると、 [!DNL Experience Manager Assets]は[!DNL Adobe Creative Cloud] APIを活用して、アセットの大規模な生産を自動化できます。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。 機能にはコードは不要で、DAM内から機能します。
+* コンテンツ自動化機能を使用すると、 [!DNL Experience Manager Assets]は[!DNL Adobe Creative Cloud] APIを活用して、アセットの大規模な生産を自動化できます。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。 この機能にはプログラミングは必要なく、DAM内から機能します。 [アセットの統合を使用したCreative Cloudのバリエーションの生成](/help/assets/cc-api-integration.md)を参照してください。
+
 * [!DNL Adobe Asset Link] 、 、のv3.0お [!DNL Adobe Photoshop]よびの [!DNL Adobe Illustrator]v2.0がリリー [!DNL Adobe InDesign]  [!DNL Adobe Asset Link]  [!DNL Adobe XD] スされました。以下を提供します。
 
    * [!DNL Assets Essentials]のサポート。
    * [!DNL Experience Manager]に[!DNL Cloud Service]または[!DNL Assets Essentials]として自動的に接続する機能。
-
-<!-- TBD: Checking with PMs if AAE release should be mentioned here.
--->
 
 ### [!DNL Assets]プレリリースチャネルで利用できる新機能 {#beta-features-assets}
 
