@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c256699a64bd68285b4110d003f3391713c7a19a
+source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1430'
 ht-degree: 20%
 
 ---
@@ -97,12 +97,23 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
    * [!DNL Assets Essentials]のサポート。
    * [!DNL Experience Manager]に[!DNL Cloud Service]または[!DNL Assets Essentials]として自動的に接続する機能。
 
+* [アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)を使用すると、一括取り込み中にメタデータを追加できます。
+
 ### [!DNL Assets]プレリリースチャネルで利用できる新機能 {#beta-features-assets}
 
 * ビュー設定が強化され、ユーザーがデフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
+
+   ![表示設定での既定の表示の設定](/help/assets/assets/view-settings-for-defaults.png)
+
 * Linkshareのダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を向上させます。
+
 * プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
-* [!DNL Experience Manager Assets] を使用してPDFビューアを埋め込み、サポートされ [!DNL Adobe Document Cloud] ているドキュメントをプレビューします。この機能を使用すると、複雑な処理をおこなわずに、PDFファイルやその他の複数ページファイルをプレビューできます。 これにより、[!DNL Experience Manager] 6.5と同等の機能が向上します。
+
+   ![検索用述語を使用した検索フォルダーのフィルタリング](/help/assets/assets/search-folders-via-predicates.png)
+
+* [!DNL Experience Manager Assets] PDFビューアを埋め込んで、サポートされるドキュメント形式をプレビューします。aemfed は [!DNL Adobe Document Cloud]. この機能を使用すると、複雑な処理をおこなわずに、PDFファイルやその他の複数ページファイルをプレビューできます。 これにより、[!DNL Experience Manager] 6.5と同等の機能が向上します。
+
+   ![PDFビューアを使用したPDFフ [!DNL Experience Manager] ァイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
 ### [!DNL Assets] で修正されたバグ  {#bugs-fixed-assets}
 
