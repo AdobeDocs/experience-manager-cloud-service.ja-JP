@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
+source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 20%
+source-wordcount: '1544'
+ht-degree: 19%
 
 ---
 
@@ -111,7 +111,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
    ![検索用述語を使用した検索フォルダーのフィルタリング](/help/assets/assets/search-folders-via-predicates.png)
 
-* [!DNL Experience Manager Assets] PDFビューアを埋め込んで、サポートされるドキュメント形式をプレビューします。aemfed は [!DNL Adobe Document Cloud]. この機能を使用すると、複雑な処理をおこなわずに、PDFファイルやその他の複数ページファイルをプレビューできます。 これにより、[!DNL Experience Manager] 6.5と同等の機能が向上します。
+* [!DNL Experience Manager Assets] PDFビューアを埋め込んで、サポートされるドキュメント形式をプレビューします。aemfed は [!DNL Adobe Document Cloud]. この機能を使用すると、複雑な処理をおこなわずに、PDFファイルやその他の複数ページファイルをプレビューできます。 [!DNL Experience Manager] 6.5と同等の機能を備えました。プレビューで使用できるコントロールは、ズーム、ページへの移動、コントロールのドッキング解除、フルスクリーン表示です。 統合PDFビューアは、AI、DOCX、INDD、PDF、PSDの各ファイル形式をサポートしています。 アセット自体にコメントを付けることはできますが、PDFファイル内のコメントと注釈はサポートされていません。
 
    ![PDFビューアを使用したPDFフ [!DNL Experience Manager] ァイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
 
