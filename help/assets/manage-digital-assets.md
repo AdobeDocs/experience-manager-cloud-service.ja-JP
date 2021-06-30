@@ -3,13 +3,13 @@ title: デジタルアセットの管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-feature: アセット管理，公開，コラボレーション，アセット処理
+feature: アセット管理、公開、共同作業、アセット処理
 role: Business Practitioner,Architect,Administrator
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
 workflow-type: tm+mt
-source-wordcount: '4502'
-ht-degree: 90%
+source-wordcount: '4550'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 }
 ```
 
-有効にすると、Experience Managerは重複アセットの通知をExperience Managerインボックスに送信します。 これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
+有効にすると、Experience Manager は重複アセットの通知を Experience Manager インボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
 
 ![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
 
@@ -250,7 +250,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 削除するアセットの場所に移動します。
 
-1. アセットを選択し、ツールバーの「**[!UICONTROL 削除]**![削除アイコン](assets/do-not-localize/delete-icon.png)」をクリックします。
+1. アセットを選択し、ツールバーの「**[!UICONTROL 削除]**」![delete_icon](assets/do-not-localize/delete-icon.png) をクリックします。
 
 1. 確認ダイアログで、次のいずれかをクリックします。
 
@@ -258,7 +258,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
    * **[!UICONTROL 削除]**：アクションの実行を確定します。
 
       * アセットに参照がない場合は、アセットが削除されます。
-      * アセットに参照がある場合は、エラーメッセージが表示され、**[!UICONTROL 1つ以上のアセットが参照されている]**&#x200B;というメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
+      * アセットに参照がある場合は、「**[!UICONTROL 1 つ以上のアセットが参照されています。]**」というエラーメッセージが表示されます。「**[!UICONTROL 削除を強制]**」または「**[!UICONTROL キャンセル]**」を選択できます。
 
    >[!NOTE]
    >
@@ -266,33 +266,33 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。参照元のアセットを削除するとリンクが壊れるので、この操作を禁止できます。 オーバーレイを使用して「削除を強制」ボタンを無効にします。
+   >他のページからの入力参照を解決または削除するには、アセットを削除する前に、関連する参照を更新します。参照元のアセットを削除するとリンクが壊れるので、この操作を禁止できます。オーバーレイを使用して「削除を強制」ボタンを無効にします。
 
 ## アセットのダウンロード {#download-assets}
 
-[ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md)からのアセットのダウンロードを参照してください。
+「[ [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md) からのアセットのダウンロード」を参照してください。
 
-## アセットの公開または非公開{#publish-assets}
+## アセットの公開または非公開 {#publish-assets}
 
 1. 公開するアセットまたはアセットフォルダーの場所、またはパブリッシュ環境から削除する（非公開にする）アセットフォルダーに移動します。
 
-1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]** ![公開を管理](assets/do-not-localize/globe-publication.png) 」オプションを選択します。 また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。 公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
+1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**![「公開を管理」オプション](assets/do-not-localize/globe-publication.png)」オプションを選択します。また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
 
-1. 必要に応じて、「**[!UICONTROL 公開]**」または「**[!UICONTROL 非公開]**」オプションを選択します。
+1. 必要に応じて「**[!UICONTROL 公開]**」オプションまたは「**[!UICONTROL 非公開]**」オプションを選択します。
 
    ![非公開アクション](assets/unpublish_action.png)
    *図：公開および非公開のオプションとスケジュールオプション。*
 
-1. すぐにアセットに対処するには「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールするには「**[!UICONTROL 後で]**」を選択します。 「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
+1. すぐにアセットに対処するには「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールするには「**[!UICONTROL 後で]**」を選択します。「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。「**[!UICONTROL 次へ]**」をクリックします。
 
-1. 公開時に、アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。 非公開になっているか、前回の公開以降に変更された参照のみが表示されます。 公開する参照を選択します。
+1. パブリッシングの際、アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。非公開になっているか、前回の公開以降に変更された参照のみが表示されます。公開する参照を選択します。
 
-1. 非公開にする際に、アセットが他のアセットを参照する場合は、非公開にする参照を選択します。 「**[!UICONTROL 非公開]**」をクリックします。 確認ダイアログで、「**[!UICONTROL キャンセル]**」をクリックしてアクションを停止するか、「**[!UICONTROL 非公開]**」をクリックして、指定した日付にアセットを非公開にすることを確認します。
+1. 非公開にする際に、アセットが他のアセットを参照する場合は、非公開にする参照を選択します。**[!UICONTROL 非公開]**&#x200B;をクリックします。確認ダイアログで、「**[!UICONTROL キャンセル]**」をクリックしてアクションを停止するか、「**[!UICONTROL 非公開]**」をクリックして、指定した日付にアセットを非公開にすることを確認します。
 
 アセットやフォルダーの公開または非公開に関する以下の制限事項とヒントを理解します。
 
 * 「[!UICONTROL 公開を管理]」のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
-* 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照される可能性があるので、非公開にしないでください。
+* 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
 * 空のフォルダーは公開されません。
 * 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 
@@ -462,6 +462,14 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 
 ### 保存された注釈の表示 {#viewing-saved-annotations}
 
+一度に表示できる注釈は1つだけです。
+
+>[!NOTE]
+>
+>複数の注釈を選択する場合は、最新の注釈がユーザーインターフェイスに表示されます。
+>
+>複数選択は、注釈付きアセットをPDFで印刷する場合にのみサポートされます。
+
 1. アセットに対して保存された注釈を表示するには、アセットの場所に移動して、そのアセットのアセットページを開きます。
 
 1. グローバルナビゲーションアイコンをタップまたはクリックし、リストから「**[!UICONTROL タイムライン]**」を選択します。
@@ -483,6 +491,10 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 アセットに注釈がある場合や、レビューワークフローの対象になっている場合は、オフラインでのレビュー用に注釈とレビューステータス付きでアセットを PDF ファイルとして印刷できます。
 
 注釈またはレビューステータスのみ印刷することも選択できます。
+
+>[!NOTE]
+>
+>注釈付きアセットをPDF形式で印刷する際に、複数の注釈を選択できます。
 
 注釈とレビューステータスを印刷するには、**[!UICONTROL 印刷]**&#x200B;アイコンをタップまたはクリックし、ウィザードの指示に従ってください。**[!UICONTROL 印刷]**&#x200B;アイコンは、アセットに注釈またはレビューステータスが少なくとも 1 つ割り当てられている場合にのみ、ツールバーに表示されます。
 
@@ -616,15 +628,15 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 * 1 つのコレクションにはアセットへの参照のみが含まれるので、様々な場所のアセットを含めることができます。各コレクションは、アセットの参照整合性を維持します。
 * コレクションは、特権レベル（編集、表示など）の異なる複数のユーザー間で共有できます。
 
-コレクション管理について詳しくは、[コレクションの管理](/help/assets/manage-collections.md)を参照してください。
+コレクション管理について詳しくは、「[コレクションの管理](/help/assets/manage-collections.md)」を参照してください。
 
-## デスクトップアプリケーションまたはAdobeアセットリンクで期限切れアセットを表示しない{#hide-expired-assets-via-acp-api}
+## デスクトップアプリケーションまたは Adobe Asset Link で期限切れアセットを表示しない {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] デスクトップアプリケーションを使用すると、WindowsまたはMacデスクトップからDAMリポジトリーにアクセスできます。Adobeアセットリンクを使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
+[!DNL Experience Manager] デスクトップアプリケーションを使用すると、Windows または Mac デスクトップから DAM リポジトリーにアクセスできます。Adobe Asset Link を使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
 
 [!DNL Experience Manager] ユーザーインターフェイス内からアセットを参照すると、期限切れのアセットは表示されません。デスクトップアプリと Assets リンクからアセットを参照する際に、期限切れのアセットが表示、検索、および取得される防ぐために、管理者は次の設定をおこなうことができます。この設定は、管理者権限に関係なく、すべてのユーザーで機能します。
 
-次のCURLコマンドを実行します。 アセットにアクセスするユーザーの`/conf/global/settings/dam/acpapi/`に対する読み取りアクセス権を確保します。 `dam-user`グループに属するユーザーは、デフォルトで権限を持っています。
+次の CURL コマンドを実行します。アセットにアクセスするユーザーの `/conf/global/settings/dam/acpapi/` に対する読み取りアクセス権を確保します。`dam-user` グループに属するユーザーは、デフォルトで権限を持っています。
 
 ```curl
 curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
@@ -636,4 +648,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-詳しくは、デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を使用したDAMAdobeの参照方法と、アセットリンク](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)を使用したDAMアセットの参照方法を参照してください。[[
+詳しくは、「[デスクトップアプリケーションを使用して DAM アセットに参照する方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)」と「[Adobe Asset Link を使用する方法](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)」を参照してください。
