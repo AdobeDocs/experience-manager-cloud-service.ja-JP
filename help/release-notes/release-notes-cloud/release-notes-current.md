@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+source-git-commit: ed24f9ad81e7686f0a33260c44011628bc7c4cf9
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1491'
 ht-degree: 20%
 
 ---
@@ -92,7 +92,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * コンテンツ自動化機能を使用すると、 [!DNL Experience Manager Assets]は[!DNL Adobe Creative Cloud] APIを活用して、アセットの大規模な生産を自動化できます。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。 この機能にはプログラミングは必要なく、DAM内から機能します。 [アセットの統合を使用したCreative Cloudのバリエーションの生成](/help/assets/cc-api-integration.md)を参照してください。
 
-* [!DNL Adobe Asset Link] 、 、のv3.0お [!DNL Adobe Photoshop]よびの [!DNL Adobe Illustrator]v2.0がリリー [!DNL Adobe InDesign]  [!DNL Adobe Asset Link]  [!DNL Adobe XD] スされました。以下を提供します。
+* [[!DNL Adobe Asset Link] 、 、の](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v3.0 [!DNL Adobe Photoshop]と、の [!DNL Adobe Illustrator]v2. [!DNL Adobe InDesign] 0 [[!DNL Adobe Asset Link] を使用で](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link-for-xd.html)  [!DNL Adobe XD] きます。以下を提供します。
 
    * [!DNL Assets Essentials]のサポート。
    * [!DNL Experience Manager]に[!DNL Cloud Service]または[!DNL Assets Essentials]として自動的に接続する機能。
@@ -114,6 +114,14 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 * [!DNL Experience Manager Assets] PDFビューアを埋め込んで、サポートされるドキュメント形式をプレビューします。aemfed は [!DNL Adobe Document Cloud]. この機能を使用すると、複雑な処理をおこなわずに、PDFファイルやその他の複数ページファイルをプレビューできます。 これにより、[!DNL Experience Manager] 6.5と同等の機能が向上します。
 
    ![PDFビューアを使用したPDFフ [!DNL Experience Manager] ァイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
+
+* ユーザーエクスペリエンスの機能強化では、フォルダー内に存在するアセットの数が表示されます。 1つのフォルダー内のアセットが1000個を超える場合、[!DNL Assets]には1000以上と表示されます。
+
+   ![フォルダー内のアセット数がインターフェイスに表示されます](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* メタデータスキーマは、[!UICONTROL プロパティ]のフォルダーに直接適用できます。
+
+   ![フォルダープロパティからのメタデータスキーマの追加](/help/assets/assets/metadata-schema-folder-properties.png)
 
 ### [!DNL Assets] で修正されたバグ  {#bugs-fixed-assets}
 
