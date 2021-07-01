@@ -1,14 +1,14 @@
 ---
 title: 画質最適化のベストプラクティス
-description: Dynamic Mediaを使用して画像アセットの品質を最適化するためのベストプラクティスについて説明します。
+description: Dynamic Mediaを使用して画像アセットの品質を最適化するのに役立つベストプラクティスを紹介します。
 contentOwner: Rick Brough
 feature: アセット管理
 role: Business Practitioner
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 1fe6ce1259972c1805d934327aa2f24cdcdc0bc8
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 84%
+source-wordcount: '1480'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 許容できる結果のレンダリングには多くの要因が関係するので、画質の最適化には時間がかかることがあります。画質に対する個人の感覚は異なるので、結果は一部主観的なものです。構造化された実験をおこなうことが重要になります。
 
-Adobe Experience Managerには、画像とレンダリング結果を調整および最適化するための、100を超えるDynamic Media画像配信コマンドが含まれています。 次のガイドラインは、一部の基本コマンドとベストプラクティスを使用してこのプロセスを効率化し、すぐに良好な結果を得るために活用できます。
+Adobe Experience Manager には、画像をチューニングおよび最適化して結果をレンダリングするための、100 を超える Dynamic Media 画像配信コマンドがあります。次のガイドラインは、一部の基本コマンドとベストプラクティスを使用してこのプロセスを効率化し、すぐに良好な結果を得るために活用できます。
 
 ## 画像形式（`&fmt=`）のベストプラクティス {#best-practices-for-image-format-fmt}
 
@@ -40,13 +40,13 @@ Adobe Experience Managerには、画像とレンダリング結果を調整お�
 
 ## 画像のシャープニングに関するベストプラクティス {#best-practices-for-image-sharpening}
 
-画像のシャープニングは、Webサイト上の画像を制御する際の最も複雑な側面で、多くのミスが生じます。 次の役立つリソースを参照し、Experience Managerでのシャープおよびアンシャープマスクの仕組みについて詳しく学んでください。
+画像のシャープ処理は、Web サイト上の画像を制御する際の最も複雑な側面で、多くのミスが生じます。次の役立つリソースを参照し、Experience Manager でのシャープおよびアンシャープマスクの仕組みについて詳しく学んでください。
 
-* ベストプラクティスに関するホワイトペーパー[Dynamic Media Classicの画質とシャープのベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)もExperience Managerに適用されます。
+* ベストプラクティスに関するホワイトペーパー『[Adobe Dynamic Media Classic の画質とシャープ処理のベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)』は Experience Manager にも当てはまります。
 
-* [Experience Managerでの画像シャープニングの使用 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=ja#dynamic-media)を視聴します。
+* [Experience Managerでの画像のシャープニングの使用 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=ja#dynamic-media)を視聴します。
 
-Experience Managerを使用すると、取り込み時、配信時またはその両方で画像をシャープにできます。 ただし、通常は、両方の方法ではなくどちらか一方のみを使用して画像をシャープにすることをお勧めします。一般に、配信時に URL 上で画像をシャープにすることで、最適な結果が得られます。
+Experience Manager を使用すれば、取得時、配信時またはその両方で画像をシャープにすることができます。ただし、通常は、両方の方法ではなくどちらか一方のみを使用して画像をシャープにすることをお勧めします。一般に、配信時に URL 上で画像をシャープにすることで、最適な結果が得られます。
 
 画像のシャープニングでは、次の 2 つの方法を使用できます。
 
@@ -65,11 +65,11 @@ Experience Managerを使用すると、取り込み時、配信時またはそ�
 
       フィルターを使用したベストプラクティスを含む、これら 3 つのパラメーターの設定方法について詳しくは、次のリソースを参照してください。
 
-      * ベストプラクティスに関するホワイトペーパー[Dynamic Media Classicの画質とシャープのベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)もExperience Managerに適用されます。
+      * ベストプラクティスに関するホワイトペーパー『[Adobe Dynamic Media Classic の画質とシャープ処理のベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)』は Experience Manager にも当てはまります。
 
-      * [Experience Managerでの画像シャープニングの使用 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)を視聴します。
+      * [Experience Managerでの画像のシャープニングの使用 — Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)を視聴します。
 
-      * Experience Managerでは、4番目のパラメーターを制御することもできます。モノクロ(0、1) このパラメーターは、アンシャープマスクを各カラーコンポーネントに個別に適用するか（値0を使用）、画像の明るさ/強さを適用するか（値1を使用）を決定します。
+      * Experience Manager では第 4 パラメーターの monochrome (0,1) も制御できます。このパラメーターでは、アンシャープマスクをそれぞれの色成分に個別に適用するか（値が 0 の場合）、または画像の明るさ／明度に対して適用するか（値が 1 の場合）を指定します。
 
 
 
@@ -99,7 +99,7 @@ JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用し�
 
 ## JPEG サイズ設定（`&jpegSize=`）のベストプラクティス {#best-practices-for-jpeg-sizing-jpegsize}
 
-`jpegSize`パラメーターは、メモリ容量が限られているデバイスに配信する画像が特定のサイズを超えないようにする場合に役立ちます。
+`jpegSize` パラメーターは、メモリ容量が限られているデバイスに配信される画像が特定のサイズを超えないようにしたい場合に便利です。
 
 * このパラメーターはキロバイト単位で設定します（`jpegSize=&lt;size_in_kilobytes&gt;`）。画像配信で許可される最大サイズを定義します。
 * `&jpegSize=` は、JPG 圧縮パラメーターである `&qlt=` と相互に作用します。指定された JPG 圧縮パラメーター（`&qlt=`）での JPG 応答が jpegSize の値を上回らない場合、画像は `&qlt=` で定義されたとおりに返されます。jpegSize の値を上回る場合は、`&qlt=` が少しずつ減らされ、画像のサイズが最大許容サイズ内に収められるか、またはシステムによってそのサイズ内に収まらないと判断された場合はエラーが返されます。
@@ -122,4 +122,4 @@ JPG 圧縮のベストプラクティスとしては、`&qlt=85,0` を使用し�
 
 * 様々なパラメーターを直接 URL 上でリアルタイムにテストします。
 * ベストプラクティスとしては、Dynamic Media 画像サービングコマンドを画像プリセット内にまとめることができます。画像プリセットは基本的に、`$thumb_low$` や `&product_high$` といったカスタムプリセット名が付けられた URL コマンドマクロです。URL パス内にカスタムプリセット名を指定すると、これらのプリセットが呼び出されます。この機能によって、Web サイトでの様々な画像使用パターンに応じたコマンドと画質設定を管理でき、URL の全体的な長さを短縮することができます。
-* Adobe Experience Manager では、取り込み時に画像のシャープニングを適用するなど、高度な画質調整機能も提供しています。レンダリング結果を調整し最適化するために、[Adobeのコンサルティングサービス](https://business.adobe.com/customers/consulting-services/main.html)は、カスタマイズされたインサイトとベストプラクティスを提供するのに役立ちます。
+* Adobe Experience Manager では、取り込み時に画像のシャープニングを適用するなど、高度な画質調整機能も提供しています。レンダリング結果を調整して最適化するために、[アドビのコンサルティングサービス](https://business.adobe.com/customers/consulting-services/main.html) では、カスタマイズされたインサイトとベストプラクティスを提供してユーザーを支援します。
