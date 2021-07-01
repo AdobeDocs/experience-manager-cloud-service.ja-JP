@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
+source-git-commit: 3574bc45dbcd39e3d4b6ed809cc61eb7464fe873
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 19%
+source-wordcount: '1577'
+ht-degree: 18%
 
 ---
 
@@ -211,5 +211,21 @@ AEM Screens as aCloud Serviceのリリース日は2021年6月24日です。
 ### バグ修正 {#bug-fixes-ctt-latest}
 
 * オーサーインスタンスでインジェストを停止する際、UIは、以前に完了したパブリッシュインスタンスのインジェストを`FINISHED`から`STOPPED`に上書きしました。 この問題が修正されました。
+
+## ベストプラクティスアナライザー {#best-practices-analyzer}
+
+### リリース日 {#release-date-bpa}
+
+Best Practices Analyzer v2.1.16のリリース日は2021年6月30日です。
+
+### 新機能 {#what-is-new-bpa-latest}
+
+* `/content/dam`の下のフォルダーに見つからない子ノードを検出し、報告する機能。
+
+* 使用するベストプラクティスアナライザーのバージョンを検出し、レポートする機能。
+
+### バグ修正 {#bug-fixes-bpa-latest}
+
+* サポートされていないリポジトリ構造(URS)に関するログエラーを修正しました。
 
 
