@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
+source-git-commit: f8864341be5026f7e5aaf1112f69e76bdc6cbe8f
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1524'
 ht-degree: 19%
 
 ---
@@ -138,7 +138,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms}
+### [!DNL Forms]の新機能 {#what-is-new-forms}
 
 * Forms管理者は、AEM Inboxのカスタム列をフィルタリングできます。
 * Formsの開発者は、アダプティブフォームエディターのテーマエディターとスタイルレイヤーを使用して、captchaコンポーネントのスタイルを設定できます。
@@ -152,8 +152,6 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
    * テンプレートファイルにXMLデータを入力してドキュメントを生成します。
    * 非インタラクティブPDF印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFAフォームPDFおよびAdobe Acrobatフォーム(AcroForms)から印刷用PDFを生成します。
-
-* **Variable Data Externalizer**:AEM Workflow変数のデータを、組織が管理する外部ストレージシステムに保存できます。
 
 [!DNL formscsbeta@adobe.com]に書き込んで、ベータ版プログラムにサインアップできます。
 
