@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: bed5a88a545efa4dbfe5c20f4713c0c6adb9847b
+source-git-commit: e4f49fd71451805d48d5f22dcf2f6d097a4d8d10
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1545'
 ht-degree: 19%
 
 ---
@@ -140,15 +140,16 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 ### [!DNL Forms] の新機能  {#what-is-new-forms}
 
-* AEM Inboxのカスタム列をフィルタリングする機能を追加しました。
-* アダプティブフォームエディターのテーマエディターとスタイルレイヤーを使用して、Captchaコンポーネントのスタイルを設定する機能を追加しました。
-* ソースフォーム内の論理セクションを自動的に検出し、対応するアダプティブフォームPDF formsに変換する際の速度と精度が向上しました。
-* PDFまたはXDPファイルをあるフォルダーから別のフォルダーに移動する移動アクションが追加されました。
+* Forms管理者は、AEM Inboxのカスタム列をフィルタリングできます。
+* Formsの開発者は、アダプティブフォームエディターのテーマエディターとスタイルレイヤーを使用して、captchaコンポーネントのスタイルを設定できます。
+* ソースフォーム内の論理セクションを自動的に検出し、対応するアダプティブフォームパネルに変換する際の精度が向上しました。
+* PDFまたはXDPファイルをあるフォルダーから別のフォルダーにシフトするのに役立つ移動アクションを追加しました。
+* アダプティブフォームエディターとテーマエディターの読み込み時間の短縮とパフォーマンスの向上。
 
 ### [!DNL Forms]のベータ機能 {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**:通信APIを使用すると、XDPテンプレートとXMLデータを組み合わせて様々な形式の印刷ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 APIを使用すると、次の操作を可能にするアプリケーションを作成できます。
-   * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する
+   * テンプレートファイルにXMLデータを入力してドキュメントを生成します。
    * 非インタラクティブPDF印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFAフォームPDFおよびAdobe Acrobatフォーム(AcroForms)から印刷用PDFを生成します。
 
@@ -159,7 +160,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 ### [!DNL Forms] で修正されたバグ  {#forms-bugs-fixed}
 
 * フォームデータモデル(FDM)を使用してデータをバックエンドサービスに送信する前にフィールドの検証が完了すると、検証は成功しますが、フォームデータモデルサービスは検証後にデータを呼び出せません。
-* Apple iOSデバイスから標準のHTMLアップロードフィールドを含むフォームを送信すると、ファイルのコンテンツが送信されず、0バイトのファイルがもう一方の端に届く場合があります。 これは、Apple iOSの既知の問題です。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
+* Apple iOSデバイスから標準のHTMLアップロードフィールドを含むフォームを送信すると、ファイルのコンテンツが送信されず、0バイトのファイルがもう一方の端に届く場合があります。 [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 ## [!DNL Adobe Experience Manager Screens] として  [!DNL Cloud Service] {#screens}
 
