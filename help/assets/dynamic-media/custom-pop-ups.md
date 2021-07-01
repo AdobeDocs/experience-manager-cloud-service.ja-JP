@@ -1,39 +1,39 @@
 ---
 title: クイックビューを使用したカスタムポップアップの作成
-description: 「eコマースエクスペリエンスでデフォルトのクイックビューがどのように使用され、ポップアップウィンドウに購入を促す製品情報が表示されるかを説明します。 カスタムコンテンツをトリガーして、ポップアップWindows®に表示できます。」
-feature: インタラクティブ画像，インタラクティブビデオ，カルーセルバナー
+description: 「eコマースエクスペリエンスでデフォルトのクイックビューがどのように使用され、ポップアップウィンドウに購入を促す製品情報が表示されるかについて説明します。 このようなポップアップウィンドウにカスタムコンテンツが表示されるように設定できます。」
+feature: インタラクティブ画像、インタラクティブビデオ、カルーセルバナー
 role: Administrator,Business Practitioner
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 78d85d31e03d8190c086a870f2fc2ff1cb00a320
+source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 93%
+source-wordcount: '1009'
+ht-degree: 82%
 
 ---
 
-# クイックビューを使用したカスタムポップアップWindows® {#using-quickviews-to-create-custom-pop-ups}の作成
+# クイックビューを使用したカスタムポップアップWindows®の作成 {#using-quickviews-to-create-custom-pop-ups}
 
-e コマースエクスペリエンスではデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示されます。ただし、このようなポップアップにカスタムコンテンツが表示されるように設定できます。使用するビューアに応じて、ユーザーはホットスポット、サムネール画像、画像マップにいずれかをタップして、情報や関連するコンテンツを表示できます。
+e コマースエクスペリエンスではデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示されます。ただし、このようなポップアップにカスタムコンテンツが表示されるように設定できます。使用するビューアに応じて、顧客はホットスポット、サムネール画像、画像マップを選択して、情報や関連コンテンツを表示できます。
 
-クイックビューは、Dynamic Media の以下のビューアでサポートされています。
+クイックビューは、Dynamic Mediaの次のビューアでサポートされています。
 
-* インタラクティブ画像（クリック可能なホットスポット）
-* インタラクティブビデオ（ビデオの再生中にクリック可能なサムネール画像）
-* カルーセルバナー（クリック可能なホットスポットまたは画像マップ）
+* インタラクティブ画像（選択可能なホットスポット）
+* インタラクティブビデオ（ビデオ再生中に選択可能なサムネール画像）
+* カルーセルバナー（選択可能なホットスポットまたは画像マップ）
 
 各ビューアの機能は異なりますが、サポートされる 3 つすべてのビューアでクイックビューの作成手順は同じです。
 
 **クイックビューを使用してカスタムポップアップWindows®を作成するには：**
 
-1. アップロードしたアセットのクイックビューを作成します。
+1. アップロードしたアセット用にクイックビューを作成します。
 
-   一般には、使用しているビューアで使用できるようにアセットを編集するときに、クイックビューを作成します。
+   一般には、使用しているビューアでアセットを使用するために編集するときにクイックビューを作成します。
 
    <table>
     <tbody>
     <tr>
     <td><strong>使用しているビューア</strong></td>
-    <td><strong>クイックビューを作成するために実行する手順</strong></td>
+    <td><strong>クイックビューを作成するには、次の手順を実行します</strong></td>
     </tr>
     <tr>
     <td>インタラクティブ画像</td>
@@ -73,7 +73,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
     </tbody>
    </table>
 
-1. 使用するビューアがクイックビューの使用方法を認識している必要があります。
+1. 使用するビューアは、クイックビューの使用方法を知っている必要があります。
 
    ビューアは `QuickViewActive` というハンドラーを使用します。
 
@@ -100,14 +100,14 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    `setHandlers()` メソッドについて詳しくは、以下を参照してください。
 
-   * インタラクティブ画像ビューア — [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=ja)
-   * インタラクティブビデオビューア — [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=ja)
+   * インタラクティブ画像ビューア - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=ja)
+   * インタラクティブビデオビューア - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=ja)
 
 1. 次に `quickViewActivate` ハンドラーを設定します。
 
-   `quickViewActivate` ハンドラーはビューアのクイックビューを制御します。このハンドラーには、クイックビューで使用する変数のリストと関数呼び出しが含まれています。埋め込みコードは、クイックビューの SKU 変数セットのマッピングを提供しています。また、サンプルの `loadQuickView` 関数呼び出しも行います。
+   `quickViewActivate`ハンドラーは、ビューアのクイックビューを制御します。 このハンドラーには、クイックビューで使用する変数のリストと関数呼び出しが含まれています。埋め込みコードは、クイックビューのSKU変数セット用のマッピングを提供します。 また、サンプルの `loadQuickView` 関数呼び出しも行います。
 
-   **変数マッピング**：Web ページで使用する変数を SKU 値とクイックビューに含まれる以下の汎用変数にマッピングします。
+   **変数マッピング** Web ページで使用する変数を SKU 値とクイックビューに含まれる一般変数にマッピングします。
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -115,14 +115,14 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    `var sku=inData.sku`
 
-   以下のように、クイックビューからの他の変数もマッピングします。
+   次のように、クイックビューから他の変数もマッピングします。
 
    ```
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **関数呼び出し**：ハンドラーには、クイックビューを機能させるための関数呼び出しも必要です。この関数は、ホストページからアクセスできることが前提となります。埋め込みコードは、サンプル関数呼び出しを提供します。
+   **関数呼び出し**&#x200B;ハンドラーには、クイックビューを機能させるために関数呼び出しも必要です。この関数は、ホストページからアクセスできることが前提となります。埋め込みコードは、サンプル関数呼び出しを提供します。
 
    `loadQuickView(sku)`
 
@@ -137,7 +137,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 1. 以下の操作を実行してください。
 
    * 埋め込みコードの setHandlers セクションのコメントアウトを解除します。
-   * クイックビューに含まれている追加変数をマッピングします。
+   * クイックビューに含まれる追加変数をマッピングします。
 
       * さらに変数を追加する場合は、`loadQuickView(sku,*var1*,*var2*)` 呼び出しを更新します。
    * ビューア外でページにシンプルな `loadQuickView` () 関数を作成します。
@@ -152,11 +152,11 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    * Web サーバーにテスト HTML ページをアップロードし、開きます。
 
-      クイックビューの変数がマッピングされます。関数の呼び出しが適切に行われています。また、変数値がブラウザーコンソールに書き込まれます。これは、提供されたサンプル関数を使用して行われます。
+      クイックビューの変数がマッピングされます。 関数の呼び出しが適切に行われています。また、変数値がブラウザーコンソールに書き込まれます。これは、提供されたサンプル関数を使用して行われます。
 
 
 
-1. これで、関数を使用してクイックビューでシンプルなポップアップを呼び出せるようになりました。以下の例では、ポップアップに `DIV` を使用しています。
+1. これで、関数を使用してクイックビューでシンプルなポップアップを起動できるようになりました。以下の例では、ポップアップに `DIV` を使用しています。
 1. ポップアップの `DIV` を以下のようなスタイルにします。必要に応じて、スタイル設定を追加します。
 
    ```xml
@@ -171,7 +171,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
 1. HTML ページのボディにポップアップの `DIV` を配置します。
 
-   要素の 1 つは、ユーザーがクイックビューを呼び出すと SKU 値で更新される ID に設定されます。この例にはこれに加え、ポップアップを表示後に再び隠すための単純なボタンも含まれています。
+   要素の1つに、ユーザーがクイックビューを起動したときにSKU値で更新されるIDが設定されます。 この例にはこれに加え、ポップアップを表示後に再び隠すための単純なボタンも含まれています。
 
    ```xml
    <div id="quickview_div" >
