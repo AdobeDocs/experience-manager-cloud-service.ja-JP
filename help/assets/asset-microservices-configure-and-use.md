@@ -2,13 +2,13 @@
 title: アセットマイクロサービスの設定と使用
 description: クラウドネイティブなアセットマイクロサービスを設定および使用して大規模なアセットを処理します。
 contentOwner: AG
-feature: asset computeマイクロサービス，ワークフロー，アセット処理
+feature: Asset Compute マイクロサービス、ワークフロー、アセット処理
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 99%
+source-wordcount: '2635'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 アセットマイクロサービスは、クラウドネイティブアプリケーション（「ワーカー」とも呼ばれる）を使用して、アセットの拡張性と回復性の高い処理を実現します。アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
-アセットマイクロサービスを使用すると、以前のバージョンの [!DNL Experience Manager] よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、以前は ImageMagick などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。
+アセットマイクロサービスを使用すると、以前のバージョンの [!DNL Experience Manager] よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、PSD形式とPSB形式のサムネール抽出は可能になりましたが、以前は[!DNL ImageMagick]のようなサードパーティソリューションが必要でした。
 
 アセットの処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に応じて異なります。Experience Manager には基本的な初期設定が用意されており、管理者は特定のアセット処理設定を追加できます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズを使用すると、デベロッパーはデフォルトのオファーを拡張できます。
 
@@ -33,7 +33,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## アセット処理オプションについて {#get-started}
 
-Experience Manager では、次のレベルの処理が可能です。
+[!DNL Experience Manager] では、次のレベルの処理が可能です。
 
 | オプション | 説明 | 対象となる使用例 |
 |---|---|---|
@@ -206,11 +206,14 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ### 後処理ワークフローの実行の設定 {#configure-post-processing-workflow-execution}
 
-アセットマイクロサービスの処理が終了した後に、システム内でアップロードまたは更新されたアセットに対して実行する後処理ワークフローモデルを設定するには、Custom Workflow Runner サービスを設定する必要があります。
+アセットマイクロサービスがアップロードされたアセットの処理を完了したら、後処理を定義して、一部のアセットをさらに処理できます。 ワークフローモデルを使用して後処理を設定するには、次のいずれかを実行します。
+
+* Custom Workflow Runnerサービスを設定します。
+* フォルダー[!UICONTROL プロパティ]にワークフローモデルを適用します。
 
 Adobe CQ カスタム DAM ワークフローランナー（`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`）は OSGi サービスであり、次の 2 つの設定オプションを提供します。
 
-* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。パスとモデルはコロンで区切る必要があります。単純なリポジトリーパスがサポートされており、`/var` パス内のワークフローモデルにマッピングされる必要があります。例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
+* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。コロンを使用してパスとモデルを区切ります。 単純なリポジトリパスがサポートされています。 これらを`/var`パスのワークフローモデルにマッピングします。 例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
 
 >[!NOTE]
@@ -218,13 +221,19 @@ Adobe CQ カスタム DAM ワークフローランナー（`com.adobe.cq.dam.pro
 >Custom Workflow Runner の設定は、OSGi サービスの設定になります。OSGi 設定のデプロイ方法については、[Adobe Experience Manager へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
 >OSGi Web コンソールは、[!DNL Experience Manager] のオンプレミスデプロイメントや Managed Services でのデプロイメントとは異なり、クラウドサービスデプロイメントでは直接使用できません。
 
+フォルダー[!UICONTROL Properties]にワークフローモデルを適用するには、次の手順に従います。
+
+1. ワークフローモデルを作成する.
+1. フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックして、「**[!UICONTROL アセット処理]**」タブをクリックします。
+1. 「**[!UICONTROL 自動開始ワークフロー]**」で、必要なワークフローを選択し、ワークフローのタイトルを指定して、変更を保存します。
+
 後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
 
 ## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 
 * ワークフローを設計する際には、あらゆる種類のレンディションに対するニーズを考慮します。レンディションが今後必要になることが予測されない場合は、ワークフローからレンディションの作成ステップを削除します。以後、レンディションは一括削除できません。[!DNL Experience Manager] を長時間使用した後、不要なレンディションで大量のストレージ領域が占有される場合があります。個々のアセットについては、ユーザーインターフェイスからレンディションを手動で削除できます。複数のアセットについては、特定のレンディションを削除するように [!DNL Experience Manager] をカスタマイズすることもできますし、アセットを削除して再びアップロードすることもできます。
 * 現在、サポートはレンディションの生成に限られています。新しいアセットの生成はサポートされていません。
-* 現在、メタデータ抽出のファイルサイズ制限は約 10 GBです。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
+* 現在、メタデータ抽出のファイルサイズ制限は約 10 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 
 >[!MORELIKETHIS]
 >
