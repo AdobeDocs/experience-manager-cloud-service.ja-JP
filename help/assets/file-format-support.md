@@ -2,13 +2,13 @@
 title: サポートされているファイル形式と MIME タイプ
 description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service] でサポートされているファイル形式と MIME タイプ。'
 contentOwner: AG
-feature: アセット管理，レンディション
-role: Business Practitioner,Administrator
+feature: アセット管理、レンディション
+role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b232ab512a6faaf075faa55c238dfb10c00b100
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 98%
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## [!DNL Dynamic Media] での画像形式 {#image-support-dynamic-media}
+## [!DNL Dynamic Media] での画像形式  {#image-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -95,7 +95,7 @@ ht-degree: 98%
 
 次の 3D 形式がサポートされています。
 
-[Dynamic Mediaでの3Dアセットの操作](/help/assets/dynamic-media/assets-3d.md)も参照してください。
+「[Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)」も参照してください。
 
 | 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3D プレビュー | Dynamic Media の配信 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -164,7 +164,7 @@ ht-degree: 98%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## [!DNL Dynamic Media] でのドキュメント形式 {#document-support-dynamic-media}
+## [!DNL Dynamic Media] でのドキュメント形式  {#document-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -227,7 +227,7 @@ ht-degree: 98%
 
 ## ヒントと制限事項 {#limitations-and-tips}
 
-* 現在、メタデータ抽出のファイルサイズ制限は約 10 GBです。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
+* 現在、メタデータ抽出のファイルサイズの上限は約 10 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 
 >[!MORELIKETHIS]
 >
