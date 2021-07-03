@@ -2,13 +2,13 @@
 title: 複数の言語でのデジタルアセットの作成と管理
 description: バイナリ、メタデータ、タグなどのアセットを複数の言語に翻訳するワークフローを自動化する方法を学習します。
 contentOwner: AG
-feature: アセット管理，翻訳
-role: Administrator,Business Practitioner
+feature: アセット管理、翻訳
+role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '2590'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
