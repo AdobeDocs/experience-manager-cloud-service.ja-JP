@@ -4,9 +4,9 @@ description: 様々なアセット管理および編集方法について説明�
 contentOwner: AG
 mini-toc-levels: 1
 feature: アセット管理、公開、共同作業、アセット処理
-role: Business Practitioner,Architect,Administrator
+role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 76dd50e044038859bb06a02a2b1c2131932db29c
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '4550'
 ht-degree: 98%
