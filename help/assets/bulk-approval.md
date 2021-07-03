@@ -2,13 +2,13 @@
 title: フォルダー内およびコレクション内のアセットの確認
 description: フォルダー内またはコレクション内のアセットに対してレビューワークフローを設定し、それをレビュー担当者またはクリエイティブパートナーと共有してフィードバックを得ることができます。
 contentOwner: AG
-feature: コレクション，共同作業
-role: Business Practitioner
+feature: コレクション、共同作業
+role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Manager Assets では、フォルダー内またはコレクシ
 
 レビュー担当者がレビューを終了（アセットを承認または拒否）すると、ユーザーはレビューが完了したという通知を受け取ります。
 
-## フォルダー用レビュータスクの作成  {#creating-a-review-task-for-folders}
+## フォルダー用レビュータスクの作成 {#creating-a-review-task-for-folders}
 
 1. Assets ユーザーインターフェイスで、レビュータスクを作成するフォルダーを選択します。
 1. ツールバーで「**[!UICONTROL レビュータスクを作成]**」アイコンをタップまたはクリックして、**[!UICONTROL レビュータスク]**&#x200B;ページを開きます。ツールバーにこのアイコンが表示されていない場合は、「**[!UICONTROL その他]**」をタップまたはクリックしてアイコンを選択します。
