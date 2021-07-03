@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute マイクロサービス、ワークフロー、アセット処理
 role: Architect,Administrator
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
-source-wordcount: '2635'
-ht-degree: 94%
+source-wordcount: '2678'
+ht-degree: 89%
 
 ---
 
@@ -181,7 +181,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 後処理ワークフロー {#post-processing-workflows}
 
-処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。これにより、アセットマイクロサービスを使用して、設定可能な処理の上に完全にカスタマイズされた処理を追加できます。
+処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。後処理を使用すると、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
 
 後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、[!DNL Experience Manager] で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動で追加してワークフローをトリガーする必要はありません。次に例を示します。
 
@@ -196,38 +196,41 @@ The following video demonstrates the usefulness and usage of standard profile.
 * [!UICONTROL DAM アセットの更新ワークフロー完了プロセス]ステップを最後に追加します。この手順を追加すると、Experience Manager がいつ処理が終了したかを把握して、アセットを処理済みとしてマークできるので、アセットに&#x200B;*新規*&#x200B;が表示されます。
 * Custom Workflow Runner サービスの設定を作成すると、パス（フォルダーの場所）または正規表現で後処理ワークフローモデルの実行を設定できます。
 
+後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
+
 ### 後処理ワークフローモデルの作成 {#create-post-processing-workflow-models}
 
 後処理ワークフローモデルは、通常の [!DNL Experience Manager] ワークフローモデルです。リポジトリーの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
-処理ステップは、ニーズに応じて追加する必要があります。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
+必要に応じて処理手順を追加します。 サポートされているステップと、カスタム実装されたワークフローステップの両方を使用できます。
 
 各後処理ワークフローの最後の手順が `DAM Update Asset Workflow Completed Process` であることを確認します。最後の手順は、アセットの処理が完了したことを Experience Manager が確実に把握できるようにするのに役立ちます。
 
 ### 後処理ワークフローの実行の設定 {#configure-post-processing-workflow-execution}
 
-アセットマイクロサービスがアップロードされたアセットの処理を完了したら、後処理を定義して、一部のアセットをさらに処理できます。 ワークフローモデルを使用して後処理を設定するには、次のいずれかを実行します。
+アセットマイクロサービスがアップロードされたアセットの処理を完了したら、後処理ワークフローを定義して、アセットをさらに処理できます。 ワークフローモデルを使用して後処理を設定するには、次のいずれかを実行します。
 
-* Custom Workflow Runnerサービスを設定します。
-* フォルダー[!UICONTROL プロパティ]にワークフローモデルを適用します。
+* [フォルダーのプロパティにワークフローモデルを適用します](#apply-workflow-model-to-folder)。
+* [Custom Workflow Runnerサービスを設定します](#configure-custom-workflow-runner-service)。
 
-Adobe CQ カスタム DAM ワークフローランナー（`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`）は OSGi サービスであり、次の 2 つの設定オプションを提供します。
+#### フォルダーへのワークフローモデルの適用 {#apply-workflow-model-to-folder}
 
-* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。コロンを使用してパスとモデルを区切ります。 単純なリポジトリパスがサポートされています。 これらを`/var`パスのワークフローモデルにマッピングします。 例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
-* 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
-
->[!NOTE]
->
->Custom Workflow Runner の設定は、OSGi サービスの設定になります。OSGi 設定のデプロイ方法については、[Adobe Experience Manager へのデプロイ](/help/implementing/deploying/overview.md)を参照してください。
->OSGi Web コンソールは、[!DNL Experience Manager] のオンプレミスデプロイメントや Managed Services でのデプロイメントとは異なり、クラウドサービスデプロイメントでは直接使用できません。
-
-フォルダー[!UICONTROL Properties]にワークフローモデルを適用するには、次の手順に従います。
+一般的な後処理の使用例の場合は、メソッドを使用してワークフローをフォルダーに適用することを検討してください。 フォルダー[!UICONTROL Properties]にワークフローモデルを適用するには、次の手順に従います。
 
 1. ワークフローモデルを作成する.
 1. フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックして、「**[!UICONTROL アセット処理]**」タブをクリックします。
 1. 「**[!UICONTROL 自動開始ワークフロー]**」で、必要なワークフローを選択し、ワークフローのタイトルを指定して、変更を保存します。
 
-後処理ワークフローで使用できる標準ワークフローステップについて詳しくは、開発者向けリファレンスの[後処理ワークフローのワークフローステップ](developer-reference-material-apis.md#post-processing-workflows-steps)を参照してください。
+   ![「プロパティ」でフォルダーに後処理ワークフローを適用する](assets/post-processing-profile-workflow-for-folders.png)
+
+#### Custom Workflow Runnerサービスの設定 {#configure-custom-workflow-runner-service}
+
+フォルダーにワークフローを適用することで容易に満たすことができない高度な設定に対して、カスタムワークフローランナーサービスを設定できます。 例えば、正規表現を使用するワークフローなどです。 Adobe CQ DAM Custom Workflow Runner(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)はOSGiサービスです。 設定には、次の2つのオプションが用意されています。
+
+* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。コロンを使用してパスとモデルを区切ります。 単純なリポジトリパスがサポートされています。 これらを`/var`パスのワークフローモデルにマッピングします。 例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
+* 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
+
+OSGi設定のデプロイ方法については、[ [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
 
 ## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 
