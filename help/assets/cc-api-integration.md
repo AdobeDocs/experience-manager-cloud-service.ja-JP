@@ -3,8 +3,8 @@ title: コンテンツの自動化によるCreative Cloud統合
 description: アセットの統合を使用してCreative Cloudのバリエーションを生成
 contentOwner: AG
 feature: アップロード，アセット処理，公開，Asset computeマイクロサービス，ワークフロー
-role: Business Practitioner,Administrator
-source-git-commit: ffca94ef8d93cf95011d7e3128c49929f69cdc28
+role: User,Admin
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
