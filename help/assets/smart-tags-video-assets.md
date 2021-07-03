@@ -1,13 +1,13 @@
 ---
 title: ビデオアセットのスマートタグ
 description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
-feature: スマートタグ，タグ付け
-role: Administrator,Business Practitioner
+feature: スマートタグ、タグ付け
+role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
-source-git-commit: 87d7cbb4463235a835d18fce49d06315a7c87526
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1186'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 <!-- TBD: Limit size -->
 
-![アセットの再処理をおこない、DAM リポジトリー既存のするビデオにタグを追加する](assets/reprocess.gif)
+![アセットの再処理を行い、DAM リポジトリー既存のするビデオにタグを追加する](assets/reprocess.gif)
 
 プロセスが完了したら、フォルダー内の任意のビデオアセットの[!UICONTROL プロパティ]ページに移動します。自動的に追加されたタグは、「[!UICONTROL 基本]」タブの[!UICONTROL スマートタグ]セクションに表示されます。適用されたこれらのスマートタグは、[信頼性スコア](#confidence-score-video-tag)の降順で並べ替えられます。
 
@@ -67,7 +67,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 ## ビデオスマートタグのモデレート {#moderate-video-smart-tags}
 
-[!DNL Adobe Experience Manager] では、スマートタグをキュレーションして次の操作をおこなうことができます。
+[!DNL Adobe Experience Manager] では、スマートタグをキュレーションして次の操作を行うことができます。
 
 * ブランドビデオに割り当てられている不正確なタグを削除します。
 
@@ -85,7 +85,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 ## ビデオスマートタグのオプトアウト {#opt-out-video-smart-tagging}
 
-ビデオの自動タグ付けは、サムネールの作成やメタデータの抽出など、他のアセット処理タスクと並行して実行されるので、時間がかかる場合があります。アセットの処理を迅速におこなうために、アップロード時にフォルダーレベルでビデオのスマートタグのオプトアウトをおこなうことができます。
+ビデオの自動タグ付けは、サムネールの作成やメタデータの抽出など、他のアセット処理タスクと並行して実行されるので、時間がかかる場合があります。アセットの処理を迅速に行うために、アップロード時にフォルダーレベルでビデオのスマートタグのオプトアウトを行うことができます。
 
 特定のフォルダーにアップロードされたアセットに対してビデオスマートタグオプトアウトを自動生成するには、次の手順に従います。
 
@@ -109,7 +109,7 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 
 [!DNL Adobe Experience Manager] のアクションタグとオブジェクトタグのデフォルトのしきい値は 0.7 です（0 から 1 の間の値が必要）。一部のビデオアセットが特定のタグでタグ付けされていない場合、予測されたタグに 70% 未満の信頼性があることをアルゴリズムは示しています。デフォルトのしきい値は、すべてのユーザーにとって常に最適であるとは限りません。したがって、OSGI 構成では信頼スコア値を変更できます。
 
-[!DNL Cloud Manager] を介して [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] にデプロイされたプロジェクトに信頼スコア OSGI 構成を追加するには、以下をおこないます。
+[!DNL Cloud Manager] を介して [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] にデプロイされたプロジェクトに信頼スコア OSGI 構成を追加するには、以下を行います。
 
 * [!DNL Adobe Experience Manager] プロジェクト（Archetype 24 以降は `ui.config`、それ以前は `ui.apps`）の `config.author` OSGi 構成には `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` という名前の構成ファイルが含まれ、以下がそのコンテンツです。
 
