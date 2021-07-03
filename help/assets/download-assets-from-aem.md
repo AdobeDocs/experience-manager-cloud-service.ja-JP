@@ -3,16 +3,16 @@ title: アセットのダウンロード
 description: ' [!DNL Adobe Experience Manager Assets]  からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。'
 contentOwner: AG
 feature: アセット管理
-role: Business Practitioner
+role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4c3007b9e38f8a18d61b781ddbcd00bd45b67729
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] からのアセットのダウンロード {#download-assets-from-aem}
+# [!DNL Adobe Experience Manager] からのアセットのダウンロード  {#download-assets-from-aem}
 
 静的レンディションおよび動的レンディションを含むアセットをダウンロードできます。または、アセットへのリンクを含む電子メールを [!DNL Adobe Experience Manager Assets] から直接送信できます。ダウンロードされたアセットは、ZIP ファイルにバンドルされています。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
 
@@ -31,9 +31,9 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)
 * [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#download-assets)
 
-## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-assets}
+## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード  {#download-assets}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、高速なダウンロードが可能になります。 サイズの大きいファイルは非同期でダウンロードされ、[!DNL Experience Manager]はインボックスに通知を介して完了を通知します。 [理解 [!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。サイズの大きいファイルは非同期でダウンロードされ、[!DNL Experience Manager] はインボックスに届く通知によって完了を知らさます。「[ [!DNL Experience Manager] インボックスについて](/help/sites-cloud/authoring/getting-started/inbox.md)」を参照してください。
 
 ![ダウンロード通知](assets/download-notification.png)
 
@@ -98,7 +98,7 @@ Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用す
 
 ## アセットダウンロードサーブレットの無効化 {#disable-asset-download-servlet}
 
-ダウンロード機能が必要ない場合は、サーブレットを無効にして、DoSに似たリスクを回避します。 `Asset Download Servlet`は、[!DNL Experience Manager]オーサーインスタンスとパブリッシュインスタンスで無効にできます。無効にするには、アセットダウンロード要求をすべてブロックするようにDispatcher設定を更新します。 サーブレットは、OSGi コンソールから手動で直接無効にすることもできます。
+ダウンロード機能が必要ない場合は、サーブレットを無効にして、DoS に似たリスクを回避します。オーサーおよびパブリッシュインスタンスの `Asset Download Servlet` を無効にするには、アセットダウンロードリクエストをすべてブロックするように Dispatcher 設定をアップデートします。[!DNL Experience Manager]サーブレットは、OSGi コンソールから手動で直接無効にすることもできます。
 
 1. Dispatcher 設定を通じてアセットダウンロード要求をブロックするには、`dispatcher.any` 設定を編集し、[フィルターセクション](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring)に新しいルールを追加します。
 
