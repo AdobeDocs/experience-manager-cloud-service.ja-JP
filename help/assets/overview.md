@@ -3,9 +3,9 @@ title: Assets as a [!DNL Cloud Service] の概要
 description: Assets as a [!DNL Cloud Service] の最新機能
 contentOwner: AG
 feature: アセット管理
-role: Business Practitioner,Leader,Architect
+role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 7256300afd83434839c21a32682919f80097f376
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 96%
