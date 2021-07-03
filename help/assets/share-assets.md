@@ -2,25 +2,25 @@
 title: アセット、フォルダーおよびコレクションの配布と共有
 description: リンクとして共有、ダウンロード、経由 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]などの方法を使用して、デジタルアセットを配布します。
 contentOwner: AG
-feature: アセット管理，コラボレーション，アセット配布
-role: Business Practitioner,Administrator
+feature: アセット管理、共同作業、アセット分布
+role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 9d9e8d63d0f8cca97eb5a6f2ad026b24e3c6506d
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
-# Adobe [!DNL Experience Manager] で管理されるアセットの共有と配布 {#share-assets-from-aem}
+# Adobe [!DNL Experience Manager] で管理されるアセットの共有と配布  {#share-assets-from-aem}
 
 [!DNL Adobe Experience Manager Assets] では、アセット、フォルダー、コレクションを組織内や外部（パートナーやベンダーなど）のメンバーと共有できます。Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] のアセットを共有するには、次の方法を使用します。
 
 * [リンクとして共有](#sharelink).
 * [アセットをダウンロードし、個別に共有します。](/help/assets/download-assets-from-aem.md)
-* [[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用して共有します。
-* [[!DNL Adobe Asset Link]](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)を使用して共有します。
-* [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)を使用して共有します。
+* [[!DNL Experience Manager]  デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用して共有します。
+* [[!DNL Adobe Asset Link] を使用して共有します](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)。
+* [[!DNL Brand Portal] を使用して共有します](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)。
 
 ## アセットをリンクとして共有 {#sharelink}
 
@@ -176,7 +176,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ![デスクトップアプリで作業する際の、デスクトップアクションのショートカットとしての有効化](assets/enable_desktop_actions.png)
 
-### [!DNL Adobe Asset Link] の使用設定 {#configure-asset-link}
+### [!DNL Adobe Asset Link] の使用設定  {#configure-asset-link}
 
 Adobe Asset Link を使用すると、コンテンツ作成プロセスでのクリエイターとマーケターのコラボレーションを効率化できます。[!DNL Adobe Experience Manager Assets] を [!DNL Creative Cloud] デスクトップアプリケーションである [!DNL Adobe InDesign]、[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] と接続します。[!DNL Adobe Asset Link] パネルを使用すると、[!DNL Assets] に保存されているコンテンツに対して、クリエイターが最もなじみのあるクリエイティブアプリケーションからアクセスして変更を加えることができます。
 
