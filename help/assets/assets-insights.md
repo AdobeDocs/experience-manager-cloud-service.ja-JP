@@ -1,14 +1,14 @@
 ---
 title: アセットインサイト
-description: サードパーティのWebサイト、マーケティングキャンペーン、Adobeのクリエイティブソリューションで使用される画像のユーザーの評価と使用状況の統計を追跡します。
+description: サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡します。
 contentOwner: AG
-feature: アセットインサイト，アセットレポート
-role: Business Practitioner,Leader
+feature: アセットインサイト、アセットレポート
+role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 1c841eaa49eeb021fc7583c58aeaefc1236650f9
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '796'
-ht-degree: 65%
+ht-degree: 80%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 65%
 
 アセットインサイトが画像の使用状況統計を Web サイトから取得するためには、画像の埋め込みコードを Web サイトのコードに組み込む必要があります。
 
-アセットインサイトにアセットの使用状況の統計を表示するには、まず[!DNL Adobe Analytics]からレポートデータを取得するようにこの機能を設定します。 詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。 この機能を使用するには、[!DNL Adobe Analytics]ライセンスを別途購入してください。
+アセットインサイトにアセットの使用状況の統計を表示するには、まず[!DNL Adobe Analytics]からレポートデータを取得するようにこの機能を設定します。 詳しくは、[アセットインサイトの設定](#configure-asset-insights)を参照してください。 この機能を使用するには、[!DNL Adobe Analytics] ライセンスを別途購入してください。
 
 >[!NOTE]
 >
->インサイトは、画像に対してのみサポートおよび提供されます。
+>インサイトは画像に対してのみサポートされており、提供されています。
 
 ## 画像の統計情報の表示 {#viewing-statistics-for-an-image}
 
 メタデータページで、アセットインサイトのスコアを表示できます。
 
-1. Assetsユーザーインターフェイスで画像を選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
+1. Assets ユーザーインターフェイスから、画像を選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックします。
 1. プロパティページで、「**[!UICONTROL インサイト]**」をクリックします。
 1. 「**[!UICONTROL インサイト]**」タブで、アセットの使用状況の詳細を確認します。「**[!UICONTROL スコア]**」セクションには、アセットの全体的な使用状況とパフォーマンスのスコアが表示されます。
 
@@ -42,7 +42,7 @@ ht-degree: 65%
 
    * **[!UICONTROL アセット]**：アセットが、コレクションまたは複合アセットに含まれた回数
    * **[!UICONTROL Web およびモバイル]**：アセットが Web サイトまたはアプリに含まれた回数
-   * **[!UICONTROL ソーシャル]**:アセットがなどの他のソリューションで使用された回 [!DNL Adobe Campaign]数。
+   * **[!UICONTROL ソーシャル]**：アセットが [!DNL Adobe Campaign] などの他のソリューションで使用された回数。
    * **[!UICONTROL 電子メール]**：アセットが電子メールキャンペーンで使用された回数
 
    ![usage_statistics](assets/usage_statistics.png)
@@ -59,7 +59,7 @@ ht-degree: 65%
    >
    >「ソリューション」セクションのデータとは異なり、「パフォーマンス統計」セクションには最新データが表示されます。
 
-1. パフォーマンスデータを得るためにWebサイトに組み込んだアセットの埋め込みコードを取得するには、アセットのサムネールの下の「**[!UICONTROL 埋め込みコードの取得]**」をクリックします。<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
+1. パフォーマンスデータを得るために Web サイトに組み込んだアセットの埋め込みコードを取得するには、アセットのサムネールの下の「**[!UICONTROL 埋め込みコードの取得]**」をクリックします。<!-- For more information on how to include your Embed code in third-party web pages, see [Using Page Tracker and Embed code in web pages](/help/assets/use-page-tracker.md). -->
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -68,7 +68,7 @@ ht-degree: 65%
 **[!UICONTROL インサイト表示]**&#x200B;を使用すると、フォルダー内のすべてのアセットのスコアを同時に表示できます。
 
 1. Assets UI で、インサイトを表示するアセットを含むフォルダーに移動します。
-1. ツールバーの「レイアウト」オプションをクリックし、「**[!UICONTROL インサイトビュー]**」を選択します。
+1. ツールバーの「レイアウト」オプションをクリックして、「**[!UICONTROL インサイト表示]**」を選択します。
 1. このページには、アセットの使用状況スコアが表示されます。様々なアセットのレーティングを比較して、洞察を導きます。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -85,7 +85,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 1. Specify the desired scheduler frequency and the start time for the job in the property scheduler expression. Save the changes.
 -->
 
-## アセットインサイトの設定{#configure-asset-insights}
+## アセットインサイトの設定 {#configure-asset-insights}
 
 [!DNL Experience Manager Assets] では、サードパーティ Web サイトで使用されているデジタルアセットの使用状況データを [!DNL Adobe Analytics] から取得します。アセットインサイトでこのデータを取得してインサイトを生成できるようにするには、まず[!DNL Adobe Analytics]と統合するように機能を設定します。
 
@@ -104,8 +104,8 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *図：[!DNL Experience Manager]*&#x200B;のアセットインサイトに Adobe Analytics を設定する
 
-1. 「**[!UICONTROL 認証]**」をクリックします。 [!DNL Experience Manager]が資格情報を認証した後、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータを取得するAdobe Analyticsレポートスイートを選択します。 「**[!UICONTROL 追加]**」をクリックします。
-1. [!DNL Experience Manager]がレポートスイートを設定したら、「**[!UICONTROL 完了]**」をクリックします。
+1. 「**[!UICONTROL 認証]**」をクリックします。[!DNL Experience Manager]が資格情報を認証した後、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータを取得するAdobe Analyticsレポートスイートを選択します。 「**[!UICONTROL 追加]**」をクリックします。
+1. [!DNL Experience Manager] でレポートスイートが設定されたら、「**[!UICONTROL 完了]**」をタップします。
 
 ### ページトラッカー {#page-tracker}
 
