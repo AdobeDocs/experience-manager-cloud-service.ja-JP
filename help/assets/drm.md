@@ -2,10 +2,10 @@
 title: ' [!DNL Assets] のデジタル著作権管理'
 description: ' [!DNL Experience Manager]  as a  [!DNL Cloud Service] でライセンスされているアセットの有効期限の状態と情報を管理する方法について説明します。'
 contentOwner: AG
-feature: アセット管理，DRM
+feature: アセット管理、DRM
 role: Business Practitioner,Administrator
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: d3c19e460f72a980e058ef6117f6352bda4d1e8a
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 98%
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 # アセットのデジタル著作権管理 {#digital-rights-management-in-assets}
 
-多くの場合、デジタルアセットは、利用の条件と期間を明記したライセンスに関連付けられています。[!DNL Adobe Experience Manager Assets] は [!DNL Experience Manager] プラットフォームに完全に統合されているので、アセットの有効期限に関する情報やアセットの状態を効率的に管理できます。ライセンス情報をアセットに関連付けることもできます。
+多くの場合、デジタルアセットは、利用の条件と期間を明記したライセンスに関連付けられています。[!DNL Adobe Experience Manager Assets]は[!DNL Experience Manager]プラットフォームと完全に統合されているので、アセットの有効期限に関する情報やアセットの状態を効率的に管理できます。 ライセンス情報をアセットに関連付けることもできます。
 
 ## アセットの有効期限 {#asset-expiration}
 
@@ -36,7 +36,7 @@ ht-degree: 98%
 
 検索パネルで、有効期限切れのアセット（有効期限切れのサブアセットを含む）を検索できます。
 
-1. [!DNL Assets]コンソールで、ツールバーの「**[!UICONTROL 検索]**」をクリックして、[!DNL Experience Manager]検索ボックスを表示します。
+1. [!DNL Assets] コンソールで、ツールバーの「**[!UICONTROL 検索]**」をクリックすると [!DNL Experience Manager] 検索ボックスが表示されます。
 
 1. オムニサーチボックスにカーソルを置いて、`Enter` キーを押すと検索結果ページが表示されます。
 
