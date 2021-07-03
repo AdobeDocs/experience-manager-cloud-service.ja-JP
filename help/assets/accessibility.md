@@ -2,13 +2,13 @@
 title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
 description: 障害を持つユーザーにとって  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  のアクセシビリティ機能がどのように役立つかを説明します。
 contentOwner: AG
-feature: アクセシビリティ，アセット管理
-role: Business Practitioner,Architect,Leader
+feature: アクセシビリティ、アセット管理
+role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のアクセシビリティ機能 {#accessibility-in-aem-assets}
+# [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のアクセシビリティ機能  {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] を使用すると、コンテンツクリエーターやコンテンツパブリッシャーが素晴らしいエクスペリエンスを Web 上で提供できます。アドビでは、[!DNL Experience Manager] のアクセシビリティを向上させることで、障害を持つクリエイターもこの作業に参加できるように努めています。このソフトウェアは、あらゆるタイプのユーザーのニーズに応え、視覚、聴覚、運動などの障害を持つユーザーも対象とした世界的な標準に準拠するように継続的に機能強化されています。
 
@@ -56,7 +56,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 * スイッチコントロール、更新可能な点字ディスプレイ、その他のコンピュータ入力デバイスを含む支援ハードウェア
 * UI 拡大ツール
 
-## アクセシブルな [!DNL Experience Manager Assets] の使用例 {#accessible-assets-use-cases}
+## アクセシブルな [!DNL Experience Manager Assets] の使用例  {#accessible-assets-use-cases}
 
 [!DNL Experience Manager] のアクセシビリティ機能は、[!DNL Experience Manager] ユーザーとその顧客の 2 つの主要な要件に対応しています。
 
@@ -77,7 +77,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
-### [!DNL Assets] のキーボードショートカット {#keyboard-shortcuts}
+### [!DNL Assets] のキーボードショートカット  {#keyboard-shortcuts}
 
 [!DNL Assets] の下記のアクションは、一覧に示したキーボードショートカットで動作します。[!DNL Experience Manager] コンソールに適用されるほとんどのキーボードショートカットは、[!DNL Assets] にも適用されます。詳しくは、[コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。キーボードショートカットを[有効または無効にする方法](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)を参照してください。
 
