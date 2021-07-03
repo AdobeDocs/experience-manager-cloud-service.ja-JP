@@ -2,13 +2,13 @@
 title: Assets HTTP API
 description: ' [!DNL Experience Manager Assets] の HTTP API を使用した、デジタルアセットの作成、読み取り、更新、削除、管理について説明します。'
 contentOwner: AG
-feature: Assets HTTP API,API
-role: Developer,Architect,Administrator
+feature: Assets HTTP API、API
+role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2e00b62efa07488fbdba723d283b9b76b53f6d34
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1519'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -23,25 +23,25 @@ ht-degree: 79%
 1. API サービスドキュメント（`https://[hostname]:[port]/api.json`）を開きます。
 1. `https://[hostname]:[server]/api/assets.json` への [!DNL Assets] サービスリンクをクリックします。
 
-API の応答は、一部の MIME タイプに対する JSON ファイル、およびすべての MIME タイプに対する応答コードです。JSON 応答はオプションであり、PDF ファイルなどでは利用できない場合があります。詳細な分析やアクションをおこなう場合は、応答コードを利用します。
+API の応答は、一部の MIME タイプに対する JSON ファイル、およびすべての MIME タイプに対する応答コードです。JSON 応答はオプションであり、PDF ファイルなどでは利用できない場合があります。詳細な分析やアクションを行う場合は、応答コードを利用します。
 
 >[!NOTE]
 >
->[!DNL Experience Manager]のデプロイメントでは、一般的な（レンディションなどの）アセットやバイナリのアップロードまたは更新に関連するAPI呼び出しは、すべて[!DNL Cloud Service]として非推奨（廃止予定）となりました。 バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload) を使用します。
+>アセットやバイナリ一般（レンディションなど）のアップロードまたは更新に関連する API 呼び出しはすべて、[!DNL Experience Manager] as a [!DNL Cloud Service] デプロイメントでは廃止されています。バイナリをアップロードする場合は、代わりに、[直接バイナリアップロード API](developer-reference-material-apis.md#asset-upload) を使用します。
 
 ## コンテンツフラグメント {#content-fragments}
 
-[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。テキスト、数値、日付など、構造化されたデータにアクセスするために使用できます。 `standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
+[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)は特殊なタイプのアセットです。テキスト、数値、日付などの構造化データにアクセスするために使用できます。`standard` アセット（画像やドキュメントなど）とはいくつかの違いがあるので、コンテンツフラグメントの処理にはいくつかの追加ルールが適用されます。
 
 詳しくは、[ [!DNL Experience Manager Assets]  HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
 
 ## データモデル {#data-model}
 
-[!DNL Assets] HTTP API は、フォルダーとアセット（標準アセット用）という 2 つの主要要素を公開します。また、コンテンツフラグメント内の構造化コンテンツを記述するカスタムデータモデル向けのより詳細な要素を公開します。 詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
+[!DNL Assets] HTTP API は、フォルダーとアセット（標準アセット用）という 2 つの主要要素を公開します。さらに、コンテンツフラグメント内の構造化コンテンツを記述するカスタムデータモデルに対する詳細な要素が公開されます。詳しくは、[コンテンツフラグメントのデータモデル](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments)を参照してください。
 
 ### フォルダー {#folders}
 
-フォルダーは、従来のファイルシステムと同様に、ディレクトリに似ています。 フォルダーには、アセット、フォルダーのみ、またはフォルダーとアセットを含めることができます。 フォルダーには、以下のコンポーネントがあります。
+フォルダーは、従来のファイルシステムにおけるディレクトリに似ています。フォルダーには、アセット、フォルダーのみ、またはフォルダーとアセットを含めることができます。フォルダーには、以下のコンポーネントがあります。
 
 **エンティティ**：フォルダーのエンティティはフォルダーの子要素で、フォルダーまたはアセットです。
 
@@ -65,8 +65,8 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 [!DNL Experience Manager] では、アセットには次の要素が含まれています。
 
 * アセットのプロパティとメタデータ
-* 元々アップロードされたアセットのバイナリファイル。
-* 設定に応じて複数のレンディション。 画像のサイズやエンコーディングが異なるビデオの画像、PDFや[!DNL Adobe InDesign]ファイルから抽出したページなどがあります。
+* アセットの当初アップロードされたバイナリファイル。
+* 設定に応じた複数のレンディション。サイズの異なる画像、エンコーディングが異なるビデオ、PDF または [!DNL Adobe InDesign] ファイルから抽出したページなどがあります。
 * コメント（オプション）
 
 コンテンツフラグメントの要素については、[AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)を参照してください。
@@ -95,7 +95,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!NOTE]
 >
->読みやすくするために、次の例では、cURLの表記を完全に省略しています。 この表記法は、cURL用のスクリプトラッパーである[Resty](https://github.com/micha/resty)と相関関係があります。
+>読みやすいように、以下の例では、完全な cURL 表記法を省略しています。この表記法は、cURL 用のスクリプトラッパーである [Resty](https://github.com/micha/resty) と関連があります。
 
 <!-- TBD: The Console Manager is not available now. So how to configure the below? 
 
@@ -122,14 +122,14 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## フォルダーの作成 {#create-a-folder}
 
-`sling`を作成します。`OrderedFolder`を指定されたパスに配置します。 ノード名の代わりに`*`が指定された場合、サーブレットはパラメーター名をノード名として使用します。 リクエストは、次のいずれかを受け入れます。
+指定されたパスに `sling`:`OrderedFolder` を作成します。ノード名の代わりに「`*`」が指定されている場合、サーブレットパラメーター名がノード名として使用されます。リクエストでは、次のいずれかを受け付けます。
 
-* 新しいフォルダーのSiren表現
-* `application/www-form-urlencoded`または`multipart`/`form`- `data`としてエンコードされた名前と値のペアのセット。 これらは、HTMLフォームから直接フォルダーを作成する場合に役立ちます。
+* 新しいフォルダーの Siren 表現
+* `application/www-form-urlencoded` または `multipart`/`form` - `data` としてエンコードされた名前と値のペアのセット。これらは、HTML フォームから直接フォルダーを作成する場合に役立ちます。
 
-また、フォルダーのプロパティをURLクエリパラメーターとして指定できます。
+また、フォルダーのプロパティを URL クエリパラメーターとして指定できます。
 
-指定されたパスの親ノードが存在しない場合、API 呼び出しは失敗し、応答コード `500` が返されます。フォルダーが存在する場合、呼び出しは応答コード`409`を返します。
+指定されたパスの親ノードが存在しない場合、API 呼び出しは失敗し、応答コード `500` が返されます。フォルダーが存在する場合、呼び出しは応答コード `409` を返します。
 
 **パラメーター**：`name` はフォルダー名です。
 
@@ -168,7 +168,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットレンディションの作成 {#create-an-asset-rendition}
 
-アセットのレンディションを作成します。 リクエストパラメーター名が指定されない場合、ファイル名がレンディション名として使用されます。
+アセットのレンディションを作成します。リクエストパラメーター名が指定されない場合、ファイル名がレンディション名として使用されます。
 
 **パラメーター**：パラメーターは `name`（レンディションの名前）と `file`（ファイル参照）です。
 
@@ -186,7 +186,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットレンディションの更新 {#update-an-asset-rendition}
 
-アセットレンディションを新しいバイナリデータで置き換える更新。
+アセットレンディションをそれぞれ新しいバイナリデータで置き換えて更新します。
 
 **リクエスト**：`PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
@@ -199,7 +199,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 ## アセットへのコメントの追加 {#create-an-asset-comment}
 
-**パラメーター**:パラメーターは、 `message` コメントのメッセージ本文と、JSON形 `annotationData` 式の注釈データ用です。
+**パラメーター**：パラメーターは `message`（コメントのメッセージ本文）と `annotationData`（JSON 形式の注釈データ）です。
 
 **リクエスト**：`POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
@@ -237,7 +237,7 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 * `X-Destination` - API ソリューション範囲内の、リソースのコピー先となる新しい宛先 URI
 * `X-Depth` - `infinity` か `0` のいずれか。`0` を使用すると、リソースとそのプロパティのみがコピーされ、子はコピーされません。
-* `X-Overwrite`  — 既存のリソースを強制 `T` 的に削除する場合はを、既存のリソー `F` スの上書きを防ぐ場合はを使用します。
+* `X-Overwrite` - 既存のリソースを強制的に削除する場合は `T` を、既存リソースの上書きを防ぐ場合は `F` を使用します。
 
 **リクエスト**：`MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -264,13 +264,13 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 * 412 - PRECONDITION FAILED（ルートコレクションが見つからないかアクセスできない場合）
 * 500 - INTERNAL SERVER ERROR（他に問題がある場合）
 
-## ヒント、ベストプラクティス、制限事項{#tips-limitations}
+## ヒント、ベストプラクティス、制限事項 {#tips-limitations}
 
 * [!UICONTROL オフタイム]の経過後、アセットとそのレンディションは、[!DNL Assets] Web インターフェイスでも HTTP API でも使用できません。[!UICONTROL オンタイム]が未来の場合、または[!UICONTROL オフタイム]が過去の場合、API は 404 エラーメッセージを返します。
 
-* Assets HTTP APIは完全なメタデータを返しません。 名前空間はハードコードされ、これらの名前空間のみが返されます。 完全なメタデータについては、アセットのパス`/jcr_content/metadata.json`を参照してください。
+* Assets HTTP API は完全なメタデータを返しません。名前空間はハードコードされ、これらの名前空間のみが返されます。完全なメタデータについては、アセットパス `/jcr_content/metadata.json` を参照してください。
 
-* APIを使用して更新されたフォルダーまたはアセットの一部のプロパティは、別のプレフィックスにマッピングされます。 `jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
+* API を使用して更新された場合、フォルダーまたはアセットの一部のプロパティは、異なるプレフィックスにマップされます。`jcr:title`、`jcr:description`、`jcr:language` の `jcr` プレフィックスは `dc` プレフィックスに置き換えられます。したがって、返された JSON コードで、`dc:title`、`dc:description` にはそれぞれ `jcr:title`、`jcr:description` の値が含まれています。
 
 >[!MORELIKETHIS]
 >
