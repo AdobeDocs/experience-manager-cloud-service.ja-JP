@@ -5,14 +5,14 @@ contentOwner: AG
 feature: アセット管理
 role: Business Practitioner,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7256300afd83434839c21a32682919f80097f376
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
-# Assets as a [!DNL Cloud Service] の概要 {#assets-cloud-service-introduction}
+# Assets as a [!DNL Cloud Service] の概要  {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -35,7 +35,7 @@ AEM Assets as a [!DNL Cloud Service] の主なメリットは次のとおりで�
 * **最新のソフトウェア**：常に最新で、常に更新されています。すべてのユーザーが、利用できるすべてのパッチ、機能、セキュリティ、バグ修正を含んだ最新のソフトウェアだけを使用します。開発者とインテグレーターは最新の API セットを使用して作業し、マルチバージョンのサポートに関する問題を回避できます。
 * **常にオンライン**：バックアップと冗長性を備えたクラスターにデプロイされたインスタンスのおかげで、ダウンタイムなし（0dt）を実現しています。アップグレードも 0dt です。
 * **継続的な監視**：システムの監視は自動化され、組み込みのチェックとトリガーがパフォーマンス、可用性、全体的な堅牢性の維持に役立ちます。
-* **手間のかからないデプロイメント**：AEM as a Cloud Service の操作は完全に自動化され、手動の介入は不要です。自動デプロイメントをおこなうために、カスタムコードを含んだデプロイ可能な Docker イメージのビルドを Cloud Manager（CM）コンポーネントで自動化します。
+* **手間のかからないデプロイメント**:AEMの操作は完全に自動化され、手動の介入は不要です。自動デプロイメントをおこなうために、カスタムコードを含んだデプロイ可能な Docker イメージのビルドを Cloud Manager（CM）コンポーネントで自動化します。
 
 ## 新しい Assets の機能 {#whats-new-assets}
 
