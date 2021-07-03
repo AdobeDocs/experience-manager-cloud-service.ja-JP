@@ -2,21 +2,21 @@
 title: ビデオアセットの管理
 description: ' [!DNL Adobe Experience Manager] でビデオアセットをアップロード、プレビュー、注釈、公開します。'
 contentOwner: AG
-feature: アセット管理，公開，コラボレーション，ビデオ
-role: Business Practitioner
+feature: アセット管理、公開、コラボレーション、ビデオ
+role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# ビデオアセットの管理  {#manage-video-assets}
+# ビデオアセットの管理 {#manage-video-assets}
 
 ビデオ形式は、組織のデジタルアセットの重要な部分です。[!DNL Adobe Experience Manager] は、ビデオアセットの作成後に、ビデオアセットのライフサイクル全体を管理するための充実した機能を提供しています。
 
-[!DNL Adobe Experience Manager Assets] でビデオアセットを管理および編集する方法について説明します。ビデオのエンコーディングとトランスコーディング、例えば、FFmpeg トランスコーディングは、処理プロファイルを使用し、[!DNL Dynamic Media] 統合を使用しておこなうことができます。[!DNL Experience Manager] は、[!DNL Dynamic Media] ライセンスを使用せずにビデオの基本的なサポートを提供します。例えば、FFmpeg によるトランスコード、サポートされているファイル形式のプレビューサムネールの抽出、ブラウザーでの直接の再生に対応した形式のプレビューなどが可能です。
+[!DNL Adobe Experience Manager Assets] でビデオアセットを管理および編集する方法について説明します。ビデオのエンコーディングとトランスコーディング、例えば、FFmpeg トランスコーディングは、処理プロファイルを使用し、[!DNL Dynamic Media] 統合を使用して行うことができます。[!DNL Experience Manager] は、[!DNL Dynamic Media] ライセンスを使用せずにビデオの基本的なサポートを提供します。例えば、FFmpeg によるトランスコード、サポートされているファイル形式のプレビューサムネールの抽出、ブラウザーでの直接の再生に対応した形式のプレビューなどが可能です。
 
 ## ビデオアセットのアップロードとプレビュー {#upload-and-preview-video-assets}
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 1. デジタルアセットフォルダー（またはサブフォルダー）で、デジタルアセットを追加する場所に移動します。
 1. アセットをアップロードするには、ツールバーの「**[!UICONTROL 作成]**」をクリックして、「**[!UICONTROL ファイル]**」を選択します。または、ユーザーインターフェイス上でファイルをドラッグします。詳しくは、[アセットのアップロード](manage-digital-assets.md#uploading-assets)を参照してください。
 1. カード表示でビデオをプレビューするには、ビデオアセットの&#x200B;**[!UICONTROL 再生]**![再生オプション](assets/do-not-localize/play.png)オプションをクリックします。ビデオの一時停止や再生は、カード表示でのみ可能です。リスト表示では、[!UICONTROL 再生]および[!UICONTROL 一時停止]オプションを使用できません。
-1. アセットの詳細ページでビデオをプレビューするには、カードの&#x200B;**[!UICONTROL 編集]**&#x200B;アイコンを選択します。ビデオは、ブラウザーのネイティブなビデオプレーヤーで再生されます。再生、一時停止、音量の調節およびビデオの全画面表示をおこなうことができます。
+1. アセットの詳細ページでビデオをプレビューするには、カードの&#x200B;**[!UICONTROL 編集]**&#x200B;アイコンを選択します。ビデオは、ブラウザーのネイティブなビデオプレーヤーで再生されます。再生、一時停止、音量の調節およびビデオの全画面表示を行うことができます。
 
 ## ビデオアセットを公開する {#publish-video-assets}
 
