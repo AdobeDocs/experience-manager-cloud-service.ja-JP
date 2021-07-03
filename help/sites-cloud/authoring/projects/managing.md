@@ -2,9 +2,9 @@
 title: プロジェクトの管理
 description: プロジェクトを使用すると、リソースをプロジェクトコンソールでアクセスして管理できる 1 つのエンティティにグループ化して整理できます。
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -25,8 +25,11 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 * シンプルなプロジェクト
 * メディアプロジェクト
-* 製品撮影プロジェクト
 * 翻訳プロジェクト
+
+<!-- Hiding product photoshoot via cqdoc-18072 as it is not available in Skyline.
+* Product Photo Shoot Project 
+-->
 
 プロジェクトの作成手順は、どのプロジェクトでも同じです。プロジェクトのタイプによって異なるものとしては、使用可能な[ユーザーの役割](/help/sites-cloud/authoring/projects/overview.md)と[ワークフロー](/help/sites-cloud/authoring/projects/workflows.md)があります。新しいプロジェクトを作成するには、次の手順を実行します。
 
@@ -41,7 +44,7 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 1. 「**作成**」をタップまたはクリックします。新しいプロジェクトを開くか、コンソールに戻るかを確認するメッセージが表示されます。
 
-### リソースとプロジェクトの関連付け  {#associating-resources-with-your-project}
+### リソースとプロジェクトの関連付け {#associating-resources-with-your-project}
 
 プロジェクトではリソースを 1 つのエンティティにグループ化できるので、リソースをプロジェクトに関連付けできます。これらのリソースは「**タイル**」と呼ばれます。追加できるリソースのタイプについては、[プロジェクトタイル](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。
 
@@ -135,8 +138,7 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 1. **プロジェクト**&#x200B;コンソールで、プロジェクトを開き、**プロジェクト情報**&#x200B;タイルを探します。
 
    >[!NOTE]
-   >
-   >このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
+   このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
 
 1. 「**編集**」をタップまたはクリックします。
 1. セレクターを「**アクティブ**」から「**非アクティブ**」（またはその逆）に変更します。
