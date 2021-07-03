@@ -2,20 +2,20 @@
 title: '[!DNL Assets] as a [!DNL Cloud Service] ガイド'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のセルフヘルプリソースとドキュメントリンク'
 feature: アセット管理
-role: Business Practitioner,Leader
+role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 053e857b2fb8a940618b15c394becc9594317f5a
+source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # [!DNL Assets] as a [!DNL Cloud Service] のガイド {#aem-assets-guide}
 
-[!DNL Experience Manager Assets]では、次のセルフヘルプリソースを[!DNL Cloud Service]として使用できます。
+Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には次のセルフヘルプリソースがあります。
 
-## [!DNL Assets] に関する主要な記事 {#key-articles}
+## [!DNL Assets] に関する主要な記事  {#key-articles}
 
 * [概要と新機能](overview.md)
 * [主要な変更点](/help/assets/assets-cloud-changes.md)
@@ -33,8 +33,8 @@ ht-degree: 82%
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
 | [オンボーディング](/help/onboarding/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の基本を学ぶ - 重要なデータへのアクセスと保護について説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a [!DNL Cloud Service] を使用したオーサリングおよび管理方法について説明します。 |
-| [実装ユーザーガイド](/help/implementing/home.md) | AEMの強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) | AEMの強力で柔軟なヘッドレス機能を通じて、このガイド付きジャーニーを調べ、最初のヘッドレスプロジェクトに備えます。 |
+| [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
 | [Adobe  [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) への移行 | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] への移行プロセスについて説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のバックエンド運用について説明します。 |
@@ -48,6 +48,6 @@ ht-degree: 82%
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)
 * [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a [!DNL Cloud Service] のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+* [Adobe Experience Manager as a  [!DNL Cloud Service]  のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#recommended/solutions/experience-manager)
 * [[!DNL Experience Manager] コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=ja)
