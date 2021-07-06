@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: 9e64772ac26888e5c1f4c77ffce6048286357e93
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 96%
+source-wordcount: '885'
+ht-degree: 99%
 
 ---
 
@@ -55,22 +55,22 @@ ht-degree: 96%
       + [IP 許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)
       + [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
-   + [Cloud Manager に関する FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
+   + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
    + [Git へのアクセス](cloud-manager/accessing-git.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
-   + [複数のソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [AEM as aCloud Service用のエンタープライズチーム開発設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
+   + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
+   + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service 向けの開発 {#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
-   + [AEM プロジェクトリポジトリの構造パッケージ](developing/introduction/repository-structure-package.md)
+   + [AEM プロジェクトリポジトリーの構造パッケージ](developing/introduction/repository-structure-package.md)
    + [AEM as a Cloud Service の SDK](developing/introduction/aem-as-a-cloud-service-sdk.md)
    + [AEM as a Cloud Service の開発ガイドライン](developing/introduction/development-guidelines.md)
    + [ログ](developing/introduction/logging.md)
    + [設定と設定ブラウザー](developing/introduction/configurations.md)
    + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
-   + [AEM as a Cloud Service の API](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html)
+   + [APIリファレンス資料](/help/implementing/developing/reference-materials.md)
    + [サーバー側 API のアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
@@ -103,10 +103,9 @@ ht-degree: 96%
          + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
       + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
       + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
-      + [Java API ガイドライン](/help/implementing/developing/introduction/java-api-guidelines.md)
    + ヘッドレスエクスペリエンス管理 {#headless}
       + [ヘッドレスと AEM](developing/headless/introduction.md)
-      + [ヘッドレス開発者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html)
+      + [ヘッドレスデベロッパージャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html?lang=ja)
       + 「はじめる前に」ガイド {#getting-started}
          + [はじめに](developing/headless/getting-started/introduction.md)
          + [設定の作成](developing/headless/getting-started/create-configuration.md)
@@ -147,12 +146,12 @@ ht-degree: 96%
       + [モデルルーティング](developing/hybrid/routing.md)
       + [RemotePage コンポーネント](developing/hybrid/remote-page.md)
       + [AEM 内での外部 SPA の編集](developing/hybrid/editing-external-spa.md)
-      + [SPAの複合コンポーネント](developing/hybrid/composite-components.md)
+      + [SPA の複合コンポーネント](developing/hybrid/composite-components.md)
       + [サーバーサイドレンダリング](developing/hybrid/ssr.md)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
       + [ローンチの統合](developing/hybrid/launch-integration.md)
       + [SPA リファレンスドキュメント](developing/hybrid/reference-materials.md)
-+ デベロッパーツール {#developer-tools}
++ 開発者ツール {#developer-tools}
    + [AEM Developer Tools for Eclipse ](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
