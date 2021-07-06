@@ -2,10 +2,10 @@
 title: SPA 参照資料
 description: 単一ページアプリケーション API リファレンスとソースコードリポジトリーの概要
 exl-id: c1cc2bd8-8ff1-406c-a0ce-0af001d66b53
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 92%
 
 ---
 
@@ -29,3 +29,7 @@ GitHub での SPA ライブラリのオープンソースリポジトリーは�
 * [React 編集可能コンポーネント](https://github.com/adobe/aem-react-editable-components)
 * [編集可能な Angular コンポーネント](https://github.com/adobe/aem-angular-editable-components)
 * [SPA プロジェクトコア](https://github.com/adobe/aem-spa-project-core)
+
+>[!TIP]
+>
+>すべてのAEM関連APIについては、 APIリファレンス資料を参照してください。
