@@ -1,10 +1,10 @@
 ---
 title: APIリファレンス資料
 description: AEMには、デジタルエクスペリエンスプロジェクトに活用できる広範で強力なAPIが用意されています。
-source-git-commit: 4134d87ca40f7834605c7d3496f05ef80fbab554
+source-git-commit: f8d16e515de5ce740398d45a30038793fe021b69
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 31%
+source-wordcount: '665'
+ht-degree: 30%
 
 ---
 
@@ -58,15 +58,15 @@ AEM が API を提供する場合は、それを Sling、JCR、OSGi よりも優
 
 AEMは、カスタマイズ可能なコンポーネントとコンテンツ配信オプションを提供します。
 
-| API | 説明 |
+| 機能 | 説明 |
 |---|---|
 | [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja) | AEM向けの標準化されたWebコンテンツ管理(WCM)コンポーネントにより、Webサイトの開発時間を短縮し、メンテナンスコストを削減 |
 | [JSON エクスポーター](/help/implementing/developing/components/json-exporter.md) | 任意のAEMページのコンテンツをJSONデータモデル形式で配信する |
 | [コンポーネントの JSON 書き出しの有効化](/help/implementing/developing/components/enabling-json-exporter.md) | モデラーフレームワークに基づいてコンポーネントコンテンツのJSON書き出しを生成する |
-| [Assets](/help/assets/mac-api-assets.md) | バイナリ、メタデータ、レンディション、コメントなど、アセットに対する作成、読み取り、更新、削除(CRUD)操作を許可します。 AEM Assets HTTP API を参照してください。 |
-| [コンテンツフラグメントHTTP](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD操作を介して、HTTP API経由でコンテンツフラグメントコンテンツに直接アクセスする |
-| [コンテンツフラグメントGraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) | ヘッドレスCMS実装でJavaScriptクライアントに対してコンテンツフラグメントを効率的に配信可能 |
-| [コンテンツフラグメントアセットHTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされるHTTPアセットリクエストの正確な形式 |
+| [Assets API](/help/assets/mac-api-assets.md) | バイナリ、メタデータ、レンディション、コメントなど、アセットに対する作成、読み取り、更新、削除(CRUD)操作を許可します。 AEM Assets HTTP API を参照してください。 |
+| [コンテンツフラグメントHTTP API](/help/assets/content-fragments/assets-api-content-fragments.md) | CRUD操作を介して、HTTP API経由でコンテンツフラグメントコンテンツに直接アクセスする |
+| [コンテンツフラグメントGraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) | ヘッドレスCMS実装でJavaScriptクライアントに対してコンテンツフラグメントを効率的に配信可能 |
+| [コンテンツフラグメントAssets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja) | サポートされるHTTPアセットリクエストの正確な形式 |
 
 ## SPA固有のAPI {#spa-apis}
 
