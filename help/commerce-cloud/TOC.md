@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as aCloud Service
 breadcrumb-title: AEM Content and Commerce ガイド
 user-guide-description: Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
-source-git-commit: 960fd1bc4731e180cea536ce5a835b15e42fe991
+source-git-commit: 677ac2c35fa79caf16f5f0ef3de7b0791272c44b
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 90%
+source-wordcount: '112'
+ht-degree: 88%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 90%
       + [製品データと関連コンテンツのエンリッチメント](configuring/enrich-product-associated-content.md)
       + [SEO 用の URL の設定](configuring/advanced-url-configuration.md)
       + [キャッシュオプション](configuring/caching.md)
+      + [カスタムHTTPヘッダー](/help/commerce-cloud/configuring/custom-http-headers.md)
    + 開発 {#developing}
       + [AEM Cloud Service SDK を使用した開発](develop.md)
       + [CIF コンポーネントのスタイル設定](customizing/style-cif-component.md)
