@@ -4,9 +4,9 @@ description: このページでは、Cloud Acceleration Managerの準備段階�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ed196db516a112dad8d6ac9a2917f0a90a0195f1
+source-git-commit: b5b6a4a84c57805770ec1c72741c2d56d4711309
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '594'
 ht-degree: 4%
 
 ---
@@ -102,12 +102,23 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 #### ベストプラクティス評価 {#best-practices-assessment}
 
-このカードは、
+「ベストプラクティスの評価」オプションでは、現在のAEMインスタンスの評価を提供し、AEMのベストプラクティスを採用する次の手順に関するガイダンスを提供します。 このタブでは、次の情報を確認できます。
+
+* AEMインスタンスの概要
+* カスタムコンポーネントとテンプレート
+* その他の結果
+* 処理に時間のかかるクエリ
+* メンテナンスタスク
 
 #### 移行の複雑さの評価 {#migration-complexity-assessment}
 
-このカードは
+「移行の複雑さの評価」オプションでは、既存のAEM実装をCloud ServiceとしてAEMに移行する際の複雑さを評価できます。 このタブでは、次の情報を確認できます。
 
+* AEMインスタンスの概要
+* 評価
+* コンテンツ移行に関する考慮事項
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## 計画および設定カードの使用 {#planning-setup}
 
@@ -119,10 +130,8 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 次の手順 {#whats-next}
 
 Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順（実装フェーズの使用）を確認する準備が整いました。
-
-
