@@ -4,15 +4,15 @@ description: このページでは、Cloud Acceleration Managerの実装フェ�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8641c14114c5f1f2f69a3a1b51eac38ab6f4f541
+source-git-commit: 8063afa2df9f5007f686afcc4162abde56c188ef
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 
-# Cloud Acceleration Managerの実装フェーズ{#implementation-phase-cam}
+# Cloud Acceleration Managerの実装段階 {#implementation-phase-cam}
 
 実装フェーズには、以下が含まれます。
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 >詳しくは、 Cloud Acceleration Managerの[プロジェクトの作成と管理](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)を参照してください。
 
 
-## ローカル開発カード{#local-development}の使用
+## ローカル開発カードの使用 {#local-development}
 
 ローカル開発カードには、移行ジャーニーの実装段階を開始する際に、ローカルAEM開発環境の設定に役立つ、すべての関連コンテンツが用意されています。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
-## コードリファクタリングカード{#code-refactoring}の使用
+## コードリファクタリングカードの使用 {#code-refactoring}
 
 「コードリファクタリング」アクティビティカードは、すべての関連情報を提供し、AEMをCloud Serviceとして移行する際に確認する必要があるコードリファクタリング領域を強調表示します。
 
@@ -63,7 +63,7 @@ ht-degree: 2%
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
-## AEM as a Cloud Serviceデプロイメントカード{#aem-as-a-cloud-service-deployment}の使用
+## AEM as a Cloud Serviceデプロイメントカードの使用 {#aem-as-a-cloud-service-deployment}
 
 AEM as a Cloud Serviceデプロイメントカードは、コードをAEM as aCloud Serviceにデプロイするのに役立つ、すべての関連コンテンツを提供します。
 
@@ -75,10 +75,10 @@ AEM as a Cloud Serviceデプロイメントカードは、コードをAEM as aCl
 
 1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-7.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
-## コンテンツ転送カード{#content-transfer}の使用
+## コンテンツ転送カードの使用 {#content-transfer}
 
 コンテンツ転送アクティビティカードは、コンテンツ転送ツールを使用して現在のAEMインスタンスからAEMにCloud Serviceとしてコンテンツを移動する場合に確認する必要があるガイダンスと考慮事項を提供します。
 
@@ -90,7 +90,7 @@ AEM as a Cloud Serviceデプロイメントカードは、コードをAEM as aCl
 
 1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-9.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)と[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)を確認してください。
@@ -103,6 +103,6 @@ AEMリポジトリのサイズを見積もるには、`http://HOST:PORT/etc/repo
 
 `path`パラメーター（例：`http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`）を使用して、特定のリポジトリパスのサイズを予測することもできます。
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Acceleration Managerへのログイン方法と実装段階の利用方法を学習したら、次の手順(GoLive段階の使用)を確認する準備が整いました。
