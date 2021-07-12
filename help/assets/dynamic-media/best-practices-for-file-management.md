@@ -3,9 +3,9 @@ title: Dynamic Media のイメージプロファイルまたはビデオプロ�
 description: 「Dynamic Media の画像ファイルおよびビデオアセットファイルの命名、整理および管理に関するヒントとベストプラクティス。」
 contentOwner: Rick Brough
 feature: アセット管理、画像プロファイル、ビデオプロファイル
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 82ab5432-088c-4442-a9db-9f4e0184febf
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 96%
