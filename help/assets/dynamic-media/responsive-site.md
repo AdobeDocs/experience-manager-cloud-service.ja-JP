@@ -2,12 +2,12 @@
 title: レスポンシブサイト用に最適化された画像の配信
 description: レスポンシブコード機能を使用して、最適化された画像を Dynamic Media から配信する方法を説明します。
 feature: アセット管理
-role: Business Practitioner
+role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 77%
 
 レスポンシブサービング用のコードを Web 開発者と共有する場合は、レスポンシブコード機能を使用します。レスポンシブ（**[!UICONTROL RESS]**）コードをクリップボードにコピーして、Web 開発者と共有することができます。
 
-この機能は、Web サイトがサードパーティの WCM で稼動する場合に有効です。ただし、WebサイトがAdobe Experience Manager上にある場合は、オフサイトのImage Serverが画像をレンダリングしてWebページに提供します。
+この機能は、Web サイトがサードパーティの WCM で稼動する場合に有効です。ただし、Web サイトが Adobe Experience Manager で稼動する場合は、オフサイトの画像サーバーが画像をレンダリングして Web ページに提供します。
 
 [Web ページへのビデオビューアの埋め込み](embed-code.md)も参照してください。
 
@@ -41,8 +41,8 @@ ht-degree: 77%
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. **[!UICONTROL レスポンシブ画像を埋め込む]**&#x200B;ダイアログボックスで、レスポンシブコードテキストを選択してコピーし、Webサイトに貼り付けて、レスポンシブアセットにアクセスします。
-1. 埋め込みコード内のデフォルトのブレークポイントを編集し、レスポンシブWebサイト内のデフォルトのブレークポイントとコード内の直接一致させます。 また、異なるページのブレークポイントで、異なる解像度の画像が配信されることをテストします。
+1. **[!UICONTROL レスポンシブ画像を埋め込み]**&#x200B;ダイアログボックスで、レスポンシブコードテキストを選択してコピーし Web サイトに貼り付けて、レスポンシブアセットにアクセスします。
+1. 埋め込みコード内でデフォルトのブレークポイントを編集して、コード内で直接、レスポンシブ Web サイトのブレークポイントに合わせます。また、異なるページのブレークポイントで、異なる解像度の画像が配信されることをテストします。
 
 ## HTTP/2 による Dynamic Media アセットの配信 {#using-http-to-delivery-your-dynamic-media-assets}
 
