@@ -2,9 +2,9 @@
 title: 翻訳統合フレームワークの設定
 description: サードパーティの翻訳サービスと統合するための Translation Integration Framework の設定方法を説明します。
 feature: 言語コピー
-role: Administrator
+role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 100%
@@ -45,7 +45,7 @@ AEM を翻訳サービスプロバイダーに接続するためのクラウド�
 
 接続の設定が完了したら、その接続を使用する翻訳統合フレームワーク設定を作成できます。
 
-## 翻訳統合フレームワーク設定の作成  {#creating-a-translation-integration-configuration}
+## 翻訳統合フレームワーク設定の作成 {#creating-a-translation-integration-configuration}
 
 翻訳統合フレームワーク設定を作成して、コンテンツの翻訳方法を指定します。この設定には以下の情報が含まれます。
 
@@ -77,7 +77,7 @@ Web サイトのセクションごとに翻訳要件が異なる場合は、そ�
    1. オプションとして、設定を格納するリポジトリノードに使用する&#x200B;**名前**&#x200B;を入力します。
 1. **設定の編集**&#x200B;ウィンドウで、「**Sites**」タブと「**Assets**」タブのプロパティを設定し、「**保存して閉じる**」をクリックまたはタップします。
 
-### 「Sites」の設定プロパティ {#sites-configuration-properties}
+### 「Sites」の設定プロパティ  {#sites-configuration-properties}
 
 「**Sites** 」タブは、ページのコンテンツの翻訳を実行する方法を制御します。
 
