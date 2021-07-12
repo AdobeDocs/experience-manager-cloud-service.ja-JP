@@ -2,9 +2,9 @@
 title: パノラマ画像
 description: Dynamic Media でのパノラマ画像の使用方法を学習します。
 feature: パノラマ画像
-role: Business Practitioner
+role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
@@ -80,6 +80,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 詳しくは、[アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)を参照してください。
 
-## パノラマ画像の公開  {#publishing-panoramic-images}
+## パノラマ画像の公開 {#publishing-panoramic-images}
 
 [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
