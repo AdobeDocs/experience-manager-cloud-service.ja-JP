@@ -2,18 +2,18 @@
 title: Dynamic Media アセットの管理について
 description: Dynamic Media アセットの操作方法について説明します。
 feature: アセット管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Dynamic Media アセットの管理について {#managing-assets}
 
-アップロード後のDynamic Media アセット（画像、ビデオ、インタラクティブアセット）の管理には、アセットのプレビュー、ダウンロード、公開など、多数のタスクが必要になります。
+アップロード後の Dynamic Media アセット（画像、ビデオ、インタラクティブアセット）の管理には、アセットのプレビュー、ダウンロード、公開など、多数のタスクが必要になります。
 
 プレビューをするときには、画像プリセット（画像の場合のみ）またはビューアプリセット（ビデオおよび画像の場合）を適用することもできます。この両方をアセットに適用することはできません。詳しくは、[ビューアプリセットの適用](viewer-presets.md)および[画像プリセットの適用](image-presets.md)を参照してください。
 
