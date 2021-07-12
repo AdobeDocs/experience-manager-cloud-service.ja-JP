@@ -2,9 +2,9 @@
 title: 翻訳するコンテンツの特定
 description: 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。
 feature: 言語コピー
-role: Administrator
+role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 100%
@@ -86,7 +86,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 </node>
 ```
 
-## ページからアセットを抽出するルールの構文   {#rule-syntax-for-extracting-assets-from-pages}
+## ページからアセットを抽出するルールの構文      {#rule-syntax-for-extracting-assets-from-pages}
 
 次に示すルールの構文を使用して、コンポーネントに埋め込むアセットまたはコンポーネントから参照するアセットを追加します。
 
@@ -215,7 +215,7 @@ xml での結果は、次のようになります。
 <property inherit="true" name="jcr:language" translate="false" updateDestinationLanguage="true"/>
 ```
 
-## ルールファイルの手動編集  {#editing-the-rules-file-manually}
+## ルールファイルの手動編集 {#editing-the-rules-file-manually}
 
 AEM と共にインストールされる `translation_rules.xml` ファイルには、デフォルトの翻訳ルールセットが記述されています。翻訳プロジェクトの要件をサポートするように、このファイルを編集できます。例えば、カスタムコンポーネントのコンテンツが翻訳されるように、ルールを追加できます。
 
@@ -225,7 +225,7 @@ AEM と共にインストールされる `translation_rules.xml` ファイルに
 >
 >コンテンツパッケージを作成した後は、ファイルを編集するたびにパッケージを再ビルドしてください。
 
-## 翻訳ルールファイルのサンプル  {#example-translation-rules-file}
+## 翻訳ルールファイルのサンプル {#example-translation-rules-file}
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><nodelist>
