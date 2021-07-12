@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media ビューアプリセットの適用
 description: Dynamic Media でのビューアプリセットの適用方法について説明します。
-feature: ビューアプリセット，ビューア
-role: Business Practitioner
+feature: ビューアプリセット、ビューア
+role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 73%
 
 ビューアプリセットは、ユーザーのコンピューター画面やモバイルデバイスでのリッチメディアアセットの表示方法を決定する様々な設定のコレクションです。作成者は、管理者がアセットに対して作成した任意のビューアプリセットを適用できます。
 
-ビューアプリセットの管理、作成、並べ替え、削除をおこなう必要がある管理者は、[ビューアプリセットの管理](managing-viewer-presets.md)を参照してください。
+管理者がビューアプリセットの管理、作成、並べ替え、削除を行う必要がある場合は、[ビューアプリセットの管理](managing-viewer-presets.md)を参照してください。
 
 [ビューアプリセットの公開](managing-viewer-presets.md#publishing-viewer-presets)も参照してください。
 
-使用しているパブリッシュモードに応じて、ビューアプリセットを公開する必要はありません。
+使用しているパブリッシュモードによっては、ビューアプリセットを公開する必要がない場合があります。
 
 ビューアプリセットで問題が発生した場合は、[Dynamic Media のトラブルシューティング](troubleshoot-dm.md#viewers)を参照してください。
 
@@ -32,7 +32,7 @@ ht-degree: 73%
    * 「**[!UICONTROL URL]**」ボタンと「**[!UICONTROL 埋め込み]**」ボタンは、ビューアプリセットの選択後に表示されます。
    * アセットの&#x200B;**[!UICONTROL 詳細表示]**&#x200B;で「ビューア」を選択すると、多数のビューアプリセットが表示されます。表示されるプリセットの数を増やすことができます。[表示されるビューアプリセットの数を増やす](managing-viewer-presets.md)を参照してください。
 
-1. 左側のウィンドウからビューアを選択し、右側のウィンドウに表示されるように、アセットに適用できます。 [この URL を共有用にコピー](linking-urls-to-yourwebapplication.md)して、他のユーザーと共有することもできます。
+1. 左側のウィンドウからビューアを選択してアセットに適用します。結果が右側のウィンドウに表示されます。[この URL を共有用にコピー](linking-urls-to-yourwebapplication.md)して、他のユーザーと共有することもできます。
 
 ## ビューアプリセットの URL の取得 {#obtaining-viewer-preset-urls}
 
