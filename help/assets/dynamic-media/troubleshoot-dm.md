@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media のトラブルシューティング
 description: Dynamic Media 使用時のトラブルシューティングのヒント
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -16,34 +16,34 @@ ht-degree: 77%
 
 ## 新しい Dynamic Media 設定 {#new-dm-config}
 
-[新しいDynamic Media設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)を参照してください。
+[新しい Dynamic Media 設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)を参照してください。
 
-## 一般（すべてのアセット） {#general-all-assets}
+## 一般（すべてのアセット）  {#general-all-assets}
 
 次に全般的なヒントやテクニックを示します。
 
-### アセット同期ステータスプロパティ  {#asset-synchronization-status-properties}
+### アセット同期ステータスプロパティ {#asset-synchronization-status-properties}
 
-次のアセットプロパティをCRXDE Liteで確認して、Adobe Experience ManagerからDynamic Mediaへのアセットの正常な同期を確認できます。
+CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experience Manager から Dynamic Media へのアセットの同期に成功したことが確認できます。
 
 | **プロパティ** | **例** | **説明** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | ノードが Dynamic Media にリンクされていることを示す全般的インジケーター。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** またはエラーテキスト | Dynamic Media へのアセットアップロードのステータス。 |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic MediaのリモートアセットへのURLを生成するには、を設定する必要があります。 |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media のリモートアセットへの URL を生成するには、これを入力する必要があります。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **success** または **failed:`<error text>`** | セット（スピンセット、画像セットなど）、画像プリセット、ビューアプリセット、アセットの画像マップの更新、編集された画像などの同期ステータス。 |
 
-### 同期のログ  {#synchronization-logging}
+### 同期のログ {#synchronization-logging}
 
-同期のエラーと問題は`error.log`(Experience Manager・サーバ・ディレクトリ`/crx-quickstart/logs/`)に記録されます。 ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
+同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
 ### バージョン管理 {#version-control}
 
-既存のDynamic Mediaアセット（同じ名前と場所）を置き換える場合、両方のアセットを保持するか、バージョンを置き換える/作成できます。
+既存の Dynamic Media アセット（同じ名称、同じ場所）を置換する際、双方のアセットを保持またはバージョンを置換／作成の選択が可能です。
 
-* 両方を保持すると、公開済みアセットURLの一意の名前を持つアセットが作成されます。 例えば、`image.jpg` は元のアセットで、`image1.jpg` は新しくアップロードされたアセットです。
+* 両方を保持すると、公開済みアセット URL の名前が一意なアセットが作成されます。例えば、`image.jpg` は元のアセットで、`image1.jpg` は新しくアップロードされたアセットです。
 
-* Dynamic Media ではバージョンの作成はサポートされていません。新しいバージョンは、配信中の既存のアセットを置き換えます。
+* Dynamic Media ではバージョンの作成はサポートされていません。配信の既存アセットが新しいバージョンに置き換わります。
 
 ## 画像とセット {#images-and-sets}
 
@@ -62,14 +62,14 @@ ht-degree: 77%
     <ol>
      <li><p>CRX/DE に移動します。</p>
       <ul>
-       <li>JCR 内のプリセット <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> が定義されているかどうかを確認します。この場所は、Experience Manager6.xから6.4にアップグレードし、移行をオプトアウトした場合に適用されます。 それ以外の場合、場所は<code>/conf/global/settings/dam/dm/presets/viewer</code>です。</li>
+       <li>JCR 内のプリセット <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> が定義されているかどうかを確認します。この場所は、Experience Manager 6.x から 6.4 にアップグレードし、移行をオプトアウトした場合に適用されます。それ以外の場合、場所は <code>/conf/global/settings/dam/dm/presets/viewer</code> になります。</li>
        <li>JCR のアセットに <code>dam:scene7FileStatus</code><strong> </strong> があり、それが「メタデータ」で <code>PublishComplete</code> と表示されていることを確認します。</li>
       </ul> </li>
     </ol> </td>
-   <td><p>ページを更新するか、別のページに移動して戻る（サイドレールJSPを再コンパイルする必要があります）</p> <p>それでも解決しない場合：</p>
+   <td><p>ページを更新するか、別のページに移動してから戻ります（サイドレール JSP を再コンパイルする必要があります）。</p> <p>それでも解決しない場合：</p>
     <ul>
      <li>アセットを公開します。</li>
-     <li>アセットを再アップロードして公開します。</li>
+     <li>アセットを再度アップロードして公開します。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@ ht-degree: 77%
      <li>ビデオプロファイルをフォルダーに割り当てます。</li>
      <li>エンコーディングプリセットを 2 つ以上含むよう、ビデオプロファイルを編集します。</li>
      <li>ビデオの処理が終わるのを待ちます。</li>
-     <li>ビデオを再読み込みする前に、 Dynamic Media Encode Videoワークフローが実行されていないことを確認してください。<br/> </li>
+     <li>ビデオを再度読み込む前に、「Dynamic Media エンコーディングビデオ」ワークフローが実行されていないことを確認します。<br/> </li>
      <li>ビデオを再度アップロードします。</li>
     </ol> </td>
   </tr>
@@ -132,7 +132,7 @@ ht-degree: 77%
    <td>ビデオがエンコードされていない</td>
    <td>
     <ul>
-     <li>Dynamic MediaCloud Serviceが設定されているかどうかを確認します。</li>
+     <li>Dynamic Media Cloud Service が設定されていることを確認します。</li>
      <li>ビデオプロファイルがアップロードフォルダーに関連付けられていることを確認します。</li>
     </ul> </td>
    <td>
@@ -178,7 +178,7 @@ ht-degree: 77%
   </tr>
   <tr>
    <td>ビューアプリセットが公開されていない</td>
-   <td><p>次のサンプルマネージャー診断ページに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>計算された値を確認します。正しく動作すると、次のようになります。</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+   <td><p>次のサンプルマネージャー診断ページに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>計算された値を確認します。正常に動作している場合は、次のようになります。</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
        _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>：Dynamic Media クラウドの設定後、ビューアアセットが同期するまで 10 分ほどかかることがあります。</p> <p>アクティブでないアセットが残る場合は、「<strong>アクティブでないアセットをすべて表示</strong>」ボタンのどちらかをクリックして詳細を確認してください。</p> </td>
    <td>
     <ol>
@@ -189,11 +189,11 @@ ht-degree: 77%
   </tr>
   <tr>
    <td>ビューアプリセットのアートワークが、アセット詳細のプレビューまたは URL／埋め込みコードのコピーで 404 を返す場合</td>
-   <td><p>CRXDE Lite で以下をおこないます。</p>
+   <td><p>CRXDE Lite で以下を行います。</p>
     <ol>
      <li>Dynamic Media 同期フォルダー内の <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> フォルダー（例えば <code>/content/dam/_CSS/_OOTB</code>）に移動します。</li>
      <li>問題のあるアセットのメタデータノードを見つけます（例えば <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>）。</li>
-     <li><code>dam:scene7*</code> プロパティがあることを確認します。アセットの同期と公開に成功した場合は、<code>dam:scene7FileStatus</code>が<strong>PublishComplete</strong>に設定されています。</li>
+     <li><code>dam:scene7*</code> プロパティがあることを確認します。アセットの同期と公開に成功した場合は <code>dam:scene7FileStatus</code> が <strong>PublishComplete</strong> に設定されています。</li>
      <li>次のプロパティと文字列リテラルの値を連結して Dynamic Media に直接アートワークを要求します。
       <ul>
        <li><code>dam:scene7Domain</code></li>
@@ -203,17 +203,17 @@ ht-degree: 77%
        <li>例： <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>サンプルアセットまたはビューアプリセットのアートワークが同期または公開されていない場合は、コピー/同期処理全体を再開します。</p>
+   <td><p>サンプルアセットまたはビューアプリセットのアートワークが同期されていないか、公開されてない場合は、コピー／同期処理全体をやり直します。</p>
     <ol>
      <li><code>/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code> に移動します。
      </li>
      <li>次のアクションを順に選択します。
       <ol>
        <li>「Sync」フォルダーを削除します。</li>
-       <li>Presetフォルダー（<code>/conf</code>の下）を削除します。
+       <li>「Preset」フォルダー（<code>/conf</code> の下）を削除します。
        <li>DM セットアップ非同期ジョブをトリガします。</li>
       </ol> </li>
-     <li>同期が成功したという通知がExperience Manager受信トレイに表示されるまで待ちます。
+     <li>Experience Manager インボックスで同期が成功したという通知が表示されるまで待ちます。
      </li>
     </ol> </td>
   </tr>
