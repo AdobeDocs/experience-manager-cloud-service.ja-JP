@@ -1,10 +1,10 @@
 ---
 title: 大きなコンテンツリポジトリの処理
 description: この節では、大規模なコンテンツリポジトリの処理について説明します
-source-git-commit: 3611b9ede7c7f516c4773ac4b22e8ba9b14b5220
+source-git-commit: c19878b41970f4cd34083395ab11cf82c1db667e
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 2%
+source-wordcount: '1177'
+ht-degree: 1%
 
 ---
 
@@ -12,6 +12,12 @@ ht-degree: 2%
 # 大きなコンテンツリポジトリの処理 {#handling-large-content-repositories}
 
 ## 概要 {#overview}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_precopy"
+>title="大きなコンテンツリポジトリの処理"
+>abstract="コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをCloud ServiceとしてAEMに移動するために、CTTはオプションのプリコピー手順としてAzCopyを利用できます。 この前段階が設定されたら、抽出段階で、AzCopyはAmazon S3またはAzure Blob Storageから移行セットBLOBストアにBLOBをコピーします。 取り込み段階では、AzCopyは、移行セットBLOBストアから宛先AEMにCloud ServiceBLOBストアとしてBLOBをコピーします。"
+>additional-url="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10" text="AzCopyの概要"
 
 コンテンツ転送ツール(CTT)で大量のBLOBをコピーするには、複数日かかる場合があります。
 コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをCloud ServiceとしてAEMに移動するために、CTTでは、オプションのプリコピー手順として[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)を利用できます。 このプリコピー手順は、ソースAEMインスタンスがAmazon S3またはAzure Blob Storageデータストアを使用するように設定されている場合に使用できます。  この前段階が設定されたら、抽出段階で、AzCopyはAmazon S3またはAzure Blob Storageから移行セットBLOBストアにBLOBをコピーします。 取り込み段階では、AzCopyは、移行セットBLOBストアから宛先AEMにCloud ServiceBLOBストアとしてBLOBをコピーします。
@@ -107,7 +113,7 @@ s3SecretKey=--REDACTED--
 c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy phase ***************
 ```
 
-これで、このログエントリは、設定が有効と見なされ、AzCopyは現在、ソースコンテナから移行コンテナにすべてのBLOBをコピーしていることを意味します。
+おめでとうございます。このログエントリは、設定が有効と見なされ、AzCopyは現在、ソースコンテナから移行コンテナにすべてのBLOBをコピーしていることを意味します。
 
 AzCopyのログエントリは抽出ログに表示され、先頭にc.a.g.s.m.c.azcopy.AzCopyBlobPreCopy - [AzCopy pre-copy]が付きます。
 
