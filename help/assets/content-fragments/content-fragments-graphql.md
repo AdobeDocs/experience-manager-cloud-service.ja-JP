@@ -1,19 +1,19 @@
 ---
 title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信
-description: ヘッドレスコンテンツ配信にAEMコンテンツフラグメントをGraphQLと共に使用する方法を説明します。
+description: ヘッドレスコンテンツ配信に AEM コンテンツフラグメントを GraphQL と共に使用する方法を説明します。
 feature: コンテンツフラグメント
-role: Business Practitioner
+role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 1d0343dc7940566b88ad490bb8fb08a5ad4ff5c2
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信 {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Adobe Experience Manager(AEM)をCloud Serviceとして使用すると、AEM GraphQL API（標準のGraphQLに基づいたカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用するための構造化コンテンツをヘッドレスに配信できます。 単一の API クエリをカスタマイズする機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
+Adobe Experience Manager (AEM) as a Cloud Service を使用すると、AEM GraphQL API（標準 GraphQL に基づくカスタマイズされた実装）と共にコンテンツフラグメントを使用して、アプリケーションで使用する構造化されたコンテンツを配信できます。単一の API クエリをカスタマイズする機能により、レンダリングする特定のコンテンツを（単一の API クエリに対する応答として）取得して配信できます。
 
 >[!NOTE]
 >
