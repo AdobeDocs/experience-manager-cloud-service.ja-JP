@@ -1,26 +1,26 @@
 ---
 title: メタデータ - フラグメントのプロパティ
-description: ヘッドレスコンテンツを調整するために、AEMのコンテンツフラグメントのメタデータプロパティを表示および編集する方法を参照してください。
+description: ヘッドレスコンテンツを調整するために AEM のコンテンツフラグメントのメタデータプロパティを表示および編集する方法を説明します。
 feature: コンテンツフラグメント
-role: Business Practitioner
+role: User
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 # メタデータ - フラグメントのプロパティ {#metadata-fragment-properties}
 
-ヘッドレスコンテンツを調整するために、AEMのコンテンツフラグメントのメタデータプロパティを表示および編集する方法を参照してください。
+ヘッドレスコンテンツを調整するために AEM のコンテンツフラグメントのメタデータプロパティを表示および編集する方法を説明します。
 
 ## プロパティ／メタデータの編集 {#editing-properties-meta-data}
 
 コンテンツフラグメントのメタデータ（プロパティ）を表示して編集できます。
 
 1. **Assets** コンソールで、コンテンツフラグメントの場所に移動します。
-2. 以下のどちらかの操作をおこないます。
+2. 以下のどちらかの操作を行います。
 
    * [**「プロパティを表示**」を選択してダイアログを開きます](/help/assets/manage-digital-assets.md#editing-properties)。開いて表示されたら、編集することもできます。
    * 編集するコンテンツフラグメントを開き、サイドパネルから「**メタデータ**」を選択します。
