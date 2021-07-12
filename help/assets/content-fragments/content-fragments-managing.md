@@ -1,30 +1,30 @@
 ---
 title: コンテンツフラグメントの管理
-description: アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法、およびヘッドレスコンテンツの基礎について説明します。
+description: ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 feature: コンテンツフラグメント
-role: Business Practitioner
+role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 114b38142f01b56652a7b840501f7420fdc25562
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1746'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントの管理 {#managing-content-fragments}
 
-アセットコンソールを使用してAEMコンテンツフラグメントを管理する方法、およびヘッドレスコンテンツの基礎について説明します。
+ヘッドレスコンテンツの基礎となる AEM コンテンツフラグメントを Assets コンソールを使用して管理する方法について説明します。
 
-[コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、これらを使用して[コンテンツフラグメント](#creating-a-content-fragment)を作成できます。
+[コンテンツフラグメントモデル](#creating-a-content-model)を定義した後、それらを使用して[コンテンツフラグメントを作成](#creating-a-content-fragment)できます。
 
 [コンテンツフラグメントエディター](#opening-the-fragment-editor)には、次の操作を行うための様々な[モード](#modes-in-the-content-fragment-editor)が用意されています。
 
-* [コンテンツの編](#editing-the-content-of-your-fragment) 集とバリエ [ーションの管理](#creating-and-managing-variations-within-your-fragment)
-* [フラグメントに注釈を付ける](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [フラグメントにコンテンツを関連付ける](#associating-content-with-your-fragment)
+* [コンテンツの編集](#editing-the-content-of-your-fragment)と[バリエーションの管理](#creating-and-managing-variations-within-your-fragment)
+* [フラグメントへの注釈の付加](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [コンテンツとフラグメントの関連付け](#associating-content-with-your-fragment)
 * [メタデータの設定](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [構造ツリーの表示](/help/assets/content-fragments/content-fragments-structure-tree.md)
-* [JSON表現のプレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
+* [JSON 表現のプレビュー](/help/assets/content-fragments/content-fragments-json-preview.md)
 
 
 >[!NOTE]
@@ -74,7 +74,7 @@ ht-degree: 78%
       * **説明**
 
       * **タグ**
-   * **アドバンス**
+   * **詳細**
 
       * **名前**
 
@@ -144,19 +144,19 @@ ht-degree: 78%
    * フラグメントまたはフラグメントリンクをクリック／タップ（これはコンソールビューによって異なります）。
    * フラグメントを選択してから、ツールバーの「**編集**」を選択。
 
-1. フラグメントエディターが開きます。 必要に応じて変更を加えます。
+1. フラグメントエディターが開きます。必要に応じて変更を加えます。
 
    ![フラグメントエディター](assets/cfm-managing-03.png)
 
-1. 変更を加えた後、必要に応じて&#x200B;**「保存**」、**「保存して閉じる」、**「**閉じる**」を使用します。
+1. 変更を加えた後、必要に応じて「**保存**」、「**保存して閉じる**」、「**閉じる**」のいずれかを使用します。
 
    >[!NOTE]
    >
-   >**保存して閉じ** るには、Savedropdownを使用 **** します。
+   >「**保存して閉じる**」は、**保存**&#x200B;ドロップダウンからアクセスできます。
 
    >[!NOTE]
    >
-   >「**保存して閉じる**」と「**閉じる**」の両方がエディターを終了します。コンテンツフラグメントの様々なオプションの動作について詳しくは、「[保存、閉じる、バージョン](#save-close-and-versions)」を参照してください。
+   >「**保存して閉じる**」と「**閉じる**」のどちらをクリックした場合も、エディターが終了します。様々なオプションがコンテンツフラグメントにどのように動作するかについて詳しくは、[保存、閉じる、バージョン](#save-close-and-versions)を参照してください。
 
 ## コンテンツフラグメントエディターのモードとアクション {#modes-actions-content-fragment-editor}
 
@@ -176,13 +176,13 @@ ht-degree: 78%
 
 ![モード](assets/cfm-managing-04.png)
 
-### コンテンツフラグメントエディターのツールバーアクション{#toolbar-actions-in-the-content-fragment-editor}
+### コンテンツフラグメントエディターのツールバーアクション {#toolbar-actions-in-the-content-fragment-editor}
 
 上部のツールバーには、複数のモードから使用できる機能があります。
 
 ![モード](assets/cfm-managing-top-toolbar.png)
 
-* フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。メッセージは&#x200B;**閉じる**&#x200B;ことができます。
+* フラグメントがコンテンツページで既に参照されている場合は、メッセージが表示されます。このメッセージは&#x200B;**閉じる**&#x200B;ことができます。
 
 * **サイドパネルを切り替え**&#x200B;アイコンを使用してサイドパネルを非表示／表示できます。
 
@@ -192,35 +192,35 @@ ht-degree: 78%
 
 * 例えば、フラグメントの作成、変更、公開の日時については、フラグメントのステータスを参照してください。また、ステータスは次のように色分けもされています。
 
-   * **新規**:灰色
-   * **ドラフト**:青
-   * **公開済み**:緑
-   * **変更済み**:オレンジ
-   * **非アクティブ**:red
+   * **新規**：灰色
+   * **ドラフト**：青
+   * **公開済み**：緑
+   * **変更**：オレンジ
+   * **アクティベートを解除済み**：赤
 
-* **** 「保存」は、「保 **存して閉じる」オプションにアク** セスします。
+* 「**保存**」から、「**保存して閉じる**」オプションにアクセスできます。
 
-* 3つのドット(**...**)ドロップダウンから、追加のアクションにアクセスできます。
+* 3 つのドット（**...**）ドロップダウンから、以下の追加アクションにアクセスできます。
    * **ページ参照を更新**
-      * これにより、すべてのページ参照が更新されます。
+      * すべてのページ参照が更新されます。
    * **[クイック公開](#publishing-and-referencing-a-fragment)**
    * **[公開を管理](#publishing-and-referencing-a-fragment)**
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
 
-## 保存、閉じる、バージョン{#save-close-and-versions}
+## 保存、閉じる、バージョン {#save-close-and-versions}
 
 >[!NOTE]
 >
->バージョン[を作成／比較したり元に戻したりする操作は、タイムラインから](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)もおこなえます。
+>バージョン[を作成／比較したり元に戻したりする操作は、タイムラインから](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)も行えます。
 
-エディターには、様々なオプションがあります。
+エディターには、次のような様々なオプションがあります。
 
-* **** 保存して保 **存して閉じる**
+* 「**保存**」と「**保存して閉じる**」
 
-   * **** 保存すると、最新の変更が保存され、エディタに残ります。
-   * **保存して閉じ** ると、最新の変更内容が保存され、エディターが終了します。
+   * 「**保存**」を選択すると、最新の変更が保存され、その後もエディターは開いたままです。
+   * 「**保存して閉じる**」を選択すると、最新の変更が保存された後、エディターが終了します。
 
    >[!CAUTION]
    >
@@ -228,19 +228,19 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   >保存する前に、エディターに留まって一連の変更を加えることができます。
+   >エディターを開いたまま、一連の変更を加えてから保存することもできます。
 
    >[!CAUTION]
    >
-   >変更を保存するだけでなく、アクションは参照を更新し、必要に応じてDispatcherがフラッシュされます。 これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
+   >これらの操作では、変更を保存するだけでなく、参照もすべて更新し、Dispatcher が必要に応じてフラッシュされます。これらの変更が処理されるまでに時間がかかることがあります。このため、大きなシステムや複雑なシステム、高負荷のシステムのパフォーマンスに影響することがあります。
    >
-   >**「保存して閉じる」**&#x200B;を使用する場合は、この点に留意してから、フラグメントエディターにすばやく戻って、さらに変更を加えて保存してください。
+   >「**保存して閉じる**」を使用する際はこの点に留意し、フラグメントエディターをすぐに開いて、さらに変更を加え保存してください。
 
 * **閉じる**
 
-   最新の変更を保存せずにエディターを終了します（**保存**&#x200B;以降に行った変更）。
+   最新の変更（前回の「**保存**」操作以降に行った変更）を保存せずにエディターを終了します。
 
-コンテンツフラグメントの編集中にAEMは自動的にバージョンを作成し、変更をキャンセルすると（保存せずに&#x200B;**閉じる**&#x200B;を使用して）以前のコンテンツを復元できるようにします。
+コンテンツフラグメントを編集するとき、AEM によって自動的にバージョンが作成されます。これにより、（保存せずに「**閉じる**」を使用して）変更内容を取り消した場合でも、以前のコンテンツを復元できるようになります。
 
 1. コンテンツフラグメントを開いて編集しようとすると、AEM は&#x200B;*編集セッション*&#x200B;が存在しているかどうかを示す cookie ベースのトークンの存在を確認します。
 
@@ -256,26 +256,26 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    >デフォルト値については、以下を参照してください。
    >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. ユーザーが編集をキャンセルすると、編集セッションの開始時に作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
+3. ユーザーが編集をキャンセルした場合は、編集セッションの開始時に作成されたバージョンが復元され、トークンが削除されて編集セッションが終了します。
 4. ユーザーが編集内容の「**保存**」を選択すると、更新された要素とバリエーションが保存され、トークンが削除されて編集セッションが終了します。
 
 ## フラグメントのコンテンツの編集 {#editing-the-content-of-your-fragment}
 
 フラグメントを開いたら、「[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)」タブを使用してコンテンツをオーサリングできます。
 
-## フラグメント内のバリエーションの作成と管理  {#creating-and-managing-variations-within-your-fragment}
+## フラグメント内のバリエーションの作成と管理 {#creating-and-managing-variations-within-your-fragment}
 
-マスターコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
+プライマリコンテンツを作成したら、そのコンテンツの[バリエーション](/help/assets/content-fragments/content-fragments-variations.md)を作成して管理できます。
 
-## コンテンツをフラグメントと関連付ける  {#associating-content-with-your-fragment}
+## コンテンツをフラグメントと関連付ける {#associating-content-with-your-fragment}
 
 フラグメントに[コンテンツを関連付ける](/help/assets/content-fragments/content-fragments-assoc-content.md)こともできます。これにより関連性を付加して、フラグメントをコンテンツページに追加するときに、アセット（画像など）を（オプションで）フラグメントと一緒に使用できるようになります。
 
-## フラグメントのメタデータ（プロパティ）の表示と編集  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## フラグメントのメタデータ（プロパティ）の表示と編集 {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 「[メタデータ](/help/assets/content-fragments/content-fragments-metadata.md)」タブを使用し、フラグメントのプロパティを表示して編集できます。
 
-## コンテンツフラグメントのタイムライン  {#timeline-for-content-fragments}
+## コンテンツフラグメントのタイムライン {#timeline-for-content-fragments}
 
 [タイムライン](/help/assets/manage-digital-assets.md#timeline)では標準のオプションに加え、コンテンツフラグメントに固有の情報とアクションの両方が提供されます。
 
@@ -320,7 +320,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 選択されたバージョン **v&lt;*x.y*>**（右）
 
-これらは並べて表示され、次の場所に表示されます。
+これらは左右に並んで表示されます。この画面について以下で説明します。
 
 * すべての相違点がハイライト表示されます
 
@@ -337,7 +337,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ![比較](assets/cfm-managing-06.png)
 
-## 特定のバージョンへの復帰 {#reverting-to-a-version}
+## 特定のバージョンへの復帰   {#reverting-to-a-version}
 
 次の方法で特定のバージョンのフラグメントに戻すことができます。
 
@@ -353,7 +353,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
 まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
-コンテンツフラグメントをパブリッシュ環境で使用するには、コンテンツフラグメントを公開する必要があります。 次の方法で公開できます。
+コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。次の方法で公開できます。
 
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
