@@ -2,9 +2,9 @@
 title: 多言語サイトのコンテンツの翻訳
 description: 多言語サイトのコンテンツを翻訳する方法の概要を説明します。
 feature: 言語コピー
-role: Administrator
+role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 100%
