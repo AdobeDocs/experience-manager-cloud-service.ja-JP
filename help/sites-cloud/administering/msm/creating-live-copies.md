@@ -2,12 +2,12 @@
 title: ライブコピーの作成と同期
 description: ライブコピーを作成および同期して、サイト全体でコンテンツを再利用する方法を説明します。
 feature: マルチサイトマネージャー
-role: Administrator
+role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 243e72f477f5c4b0507b80b6ef16d6f5246c739e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4277'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,15 +41,15 @@ ht-degree: 97%
 
 ブループリント設定が使用されると、それをソースやブループリントのライブコピーの同期方法を指定するロールアウト設定に関連付けることができます。[使用するロールアウト設定の指定](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use)を参照してください。
 
-### ブループリント設定の作成と編集{#creating-editing-blueprint-configurations}
+### ブループリント設定の作成と編集 {#creating-editing-blueprint-configurations}
 
-ブループリント設定は不変データと見なされ、実行時には編集できません。 この理由から、設定の変更はCI/CDパイプラインを使用してGitを介してデプロイする必要があります。
+ブループリント設定は不変データと見なされ、実行時には編集できません。この理由から、設定の変更は CI／CD パイプラインを使用して Git を介してデプロイする必要があります。
 
-詳しくは、「Adobe Experience Manager(AEM)の主なCloud Serviceの変更点」を参照してください。[](/help/release-notes/aem-cloud-changes.md)
+詳しくは、「[Adobe Experience Manager (AEM) as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)」を参照してください。
 
-以下の手順は、管理者インスタンス上で、ローカル開発および開発目的でのみ使用できます。 これらのオプションは、AEMaCSクラウドインスタンスでは使用できません。
+以下の手順は、管理者インスタンス上で、ローカル開発および開発目的でのみ使用できます。これらのオプションは、AEMaaCS クラウドインスタンスでは使用できません。
 
-#### ブループリント設定のローカル作成{#creating-a-blueprint-configuration}
+#### ローカルでのブループリント設定の作成 {#creating-a-blueprint-configuration}
 
 ブループリント設定を作成するには：
 
@@ -68,7 +68,7 @@ ht-degree: 97%
 
 1. 「**作成**」を選択すると、指定した内容に基づいてブループリント設定が作成されます。
 
-### ブループリント設定の編集または削除 ローカル{#editing-or-deleting-a-blueprint-configuration}
+### ブループリント設定の編集または削除ローカル{#editing-or-deleting-a-blueprint-configuration}
 
 既存のブループリント設定を編集または削除できます。
 
@@ -137,11 +137,11 @@ ht-degree: 97%
 1. （オプション）ライブコピーコピーに使用する 1 つ以上のロールアウト設定を指定するには、「**ロールアウトの設定**」ドロップダウンリストを使用して選択します。選択した設定がドロップダウンセレクターの下に表示されます。
 1. 「**作成**」をクリックまたはタップします。確認メッセージが表示されます。ここで「**開く**」または「**完了**」のいずれかを選択します。
 
-### ブループリント設定からのサイトのライブコピーの作成  {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### ブループリント設定からのサイトのライブコピーの作成 {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 ブループリント設定を使用してライブコピーを作成し、ブループリント（ソース）コンテンツに基づくサイトを作成します。ブループリント設定からライブコピーを作成する場合は、コピーするブループリントのソースの言語ブランチを 1 つ以上選択し、その言語ブランチからコピーするチャプターを選択します。[ブループリント設定の作成](#creating-a-blueprint-configuration)を参照してください。
 
-f一部の言語ブランチまたはライブコピーから削除した場合は、後から追加できます。詳しくは、[ライブコピー内でのライブコピーの作成（ブループリント設定）](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration)を参照してください。
+一部の言語ブランチまたはライブコピーから削除した場合は、後から追加できます。詳しくは、[ライブコピー内でのライブコピーの作成（ブループリント設定）](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration)を参照してください。
 
 >[!CAUTION]
 >
@@ -174,9 +174,9 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
    ![サイト作成時にプロパティを指定する](../assets/create-site-properties.png)
 
 1. 「**最初の章**」ドロップダウンを使用して、ライブコピーに含めるブループリントのセクションを選択します。ここでも、デフォルトでは使用可能なすべての章が含まれますが、削除できます。
-1. 残りのプロパティの値を指定して「**作成**」を選択します。確認のダイアログボックスで、「**完了**」を選択して&#x200B;**サイト**&#x200B;コンソールに戻るか、「**サイトを開く**」を選択してサイトのルートページを開きます。
+1. 残りのプロパティの値を指定して「**作成**」を選択します。確認のダイアログボックスで、「**完了**」を選択して **Sites** コンソールに戻るか、「**サイトを開く**」を選択してサイトのルートページを開きます。
 
-### ライブコピー内でのライブコピーの作成（ブループリント設定）  {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
+### ライブコピー内でのライブコピーの作成（ブループリント設定） {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
 ライブコピーを（ブループリント設定を使用して作成した）既存のライブコピー内に作成する場合は、ライブコピーが最初に作成されたときには含まれていなかった任意の言語コピーまたはチャプターを挿入できます。
 
@@ -203,7 +203,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
    ![ページプロパティの「ライブコピー」タブ](../assets/live-copy-inherit.png)
 
-   詳しくは、「ライブコピーの概要コンソール」の記事の、](live-copy-overview.md#using-the-live-copy-overview)ライブコピーの概要の使用[ を参照してください。
+   詳しくは、「ライブコピーの概要コンソール」の記事の、](live-copy-overview.md#using-the-live-copy-overview)ライブコピーの概要の使用[を参照してください。
 
 ### ブループリントページのライブコピーの確認 {#seeing-the-live-copies-of-a-blueprint-page}
 
@@ -225,7 +225,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 >
 >このような[競合はロールアウト時に処理および解決](rollout-conflicts.md)する必要があります。
 
-#### ページプロパティからのブループリントのロールアウト  {#rolling-out-a-blueprint-from-page-properties}
+#### ページプロパティからのブループリントのロールアウト {#rolling-out-a-blueprint-from-page-properties}
 
 1. **Sites** コンソールで、ブループリント内のページを選択してプロパティを開きます。
 1. 「**ブループリント**」タブを開きます。
@@ -245,7 +245,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
 #### 参照レールからのブループリントのロールアウト {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. **サイト**&#x200B;コンソールで、ライブコピーのページを選択し、**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを（ツールバーから）開きます。
+1. **Sites** コンソールで、ライブコピー内のページを選択して（ツールバーの）**[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開きます。
 1. リストから「**ブループリント**」オプションを選択し、このページに関連付けられているブループリントを表示します。
 1. リストから必要なブループリントを選択します。
 1. 「**ロールアウト**」をクリックまたはタップします。
@@ -307,7 +307,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
    確認が求められます。「**同期**」を使用して先に進みます。
 
-#### ライブコピーの概要からのライブコピーの同期  {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### ライブコピーの概要からのライブコピーの同期 {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 ライブコピーの概要では、ライブコピーページを選択して、[同期アクションを実行することもできます](live-copy-overview.md#using-the-live-copy-overview)。
 
@@ -339,7 +339,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 >
 >このような[競合はロールアウト時に処理および解決](rollout-conflicts.md)する必要があります。
 
-### ライブコピーページへのコンポーネントの追加  {#adding-components-to-a-live-copy-page}
+### ライブコピーページへのコンポーネントの追加 {#adding-components-to-a-live-copy-page}
 
 ライブコピーページにはいつでもコンポーネントを追加できます。ライブコピーとその段落システムの継承ステータスにより、コンポーネント追加の動作が変わることはありません。
 
@@ -423,7 +423,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 1. ツールバーの「**再開**」を選択します。
 1. 継承を元に戻した後にページを同期するかどうかを指定し、**ライブコピーを再開**&#x200B;ダイアログで&#x200B;**再開**&#x200B;アクションを確定します。
 
-### 継承の深度の変更（シャロー／ディープ） {#changing-inheritance-depth-shallow-deep}
+### 継承の深度の変更（シャロー／ディープ）  {#changing-inheritance-depth-shallow-deep}
 
 既存のライブコピーで、ページの深度、例：子ページが含まれるかどうか）を変更できます。
 
@@ -461,7 +461,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
 1. 「**保存**」をクリックまたはタップして更新内容を保持します。
 
-### コンポーネントの継承のキャンセル  {#cancelling-inheritance-for-a-component}
+### コンポーネントの継承のキャンセル {#cancelling-inheritance-for-a-component}
 
 コンポーネントについてライブコピーの継承をキャンセルして、コンポーネントがソースコンポーネントと同期されないようにします。必要な場合は後で継承を有効にすることができます。
 
@@ -507,7 +507,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 1. 既存のコンポーネントをページの別の場所にドラッグします。
 1. **継承をキャンセル**&#x200B;ダイアログボックスで、「**はい**」を使用してアクションを確定します。
 
-### ライブコピーページのプロパティの上書き  {#overriding-properties-of-a-live-copy-page}
+### ライブコピーページのプロパティの上書き {#overriding-properties-of-a-live-copy-page}
 
 デフォルトでは、ライブコピーページのページプロパティはソースページから継承され、編集できません。
 
@@ -532,7 +532,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
 1. **継承をキャンセル**&#x200B;確認ダイアログで、「**はい**」をクリックまたはタップします。
 
-### ライブコピーページのプロパティの復帰  {#revert-properties-of-a-live-copy-page}
+### ライブコピーページのプロパティの復帰 {#revert-properties-of-a-live-copy-page}
 
 プロパティの継承を有効にするには、プロパティの横に表示される&#x200B;**継承を復帰**&#x200B;アイコンをクリックまたはタップします。
 
@@ -557,7 +557,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
 1. **ライブコピーをリセット**&#x200B;ダイアログボックスで、「**リセット**」を選択して確定します。
 
-#### ライブコピーの概要からのライブコピーページのリセット  {#reset-a-live-copy-page-from-the-live-copy-overview}
+#### ライブコピーの概要からのライブコピーページのリセット {#reset-a-live-copy-page-from-the-live-copy-overview}
 
 ライブコピーの概要では、ライブコピーページを選択して、[**リセット**&#x200B;アクションを実行することもできます](live-copy-overview.md#using-the-live-copy-overview)。
 
@@ -638,7 +638,7 @@ f一部の言語ブランチまたはライブコピーから削除した場合�
 
 1. 確認ダイアログが表示されたら、「**分離**」を選択してアクションを完了します。
 
-### ライブコピーの概要からのライブコピーページの分離  {#detach-a-live-copy-page-from-the-live-copy-overview}
+### ライブコピーの概要からのライブコピーページの分離 {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 ライブコピーの概要では、ライブコピーページを選択して、[分離アクションを実行することもできます](live-copy-overview.md#using-the-live-copy-overview)。
 
