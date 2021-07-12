@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media の操作
 description: Dynamic Media を使用して、Web、モバイルおよびソーシャルサイトで使用するためにアセットを配信する方法を学習します。
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Dynamic Media 限定の機能は次のとおりです。
 * [ビデオ](video.md)
 * [Dynamic Media アセットの配信](delivering-dynamic-media-assets.md)
 * [アセットの管理](managing-assets.md)
-* [クイックビューを使用したカスタムポップアップWindows®の作成](custom-pop-ups.md)
+* [クイックビューを使用したカスタムポップアップウィンドウの作成](custom-pop-ups.md)
 
 [Dynamic Media の設定](administering-dynamic-media.md)も参照してください。
 
@@ -80,7 +80,7 @@ Dynamic Media 対応のアセットには `pyramid.tiffs` が含まれていま�
 
 ### アセットのビューの変化 {#asset-views-change}
 
-Dynamic Mediaを有効にすると、`+`ボタンと`-`ボタンをクリックして、ズームインおよびズームアウトできます。クリックまたはタップして、特定の領域にズームインすることもできます。元に戻す：元のバージョンに戻り、斜めの矢印をクリックして画像を全画面表示にできます。 Dynamic Media有効は次のように表示されます。
+Dynamic Media を有効にすると、「`+`」ボタンをクリックしてズームインし、「`-`」ボタンをクリックしてズームアウトすることができます。クリックまたはタップして、特定の領域にズームインすることもできます。元に戻すアイコンをクリックすると元のバージョンに戻ります。また、斜めの矢印をクリックすると、画像を全画面表示にすることができます。Dynamic Media を有効にした場合の画面は次のようになります。
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
