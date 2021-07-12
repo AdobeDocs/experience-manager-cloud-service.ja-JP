@@ -1,19 +1,19 @@
 ---
 title: 関連コンテンツ
-description: AEM関連のコンテンツ機能による接続の提供方法を理解し、フラグメントをコンテンツページに追加する際に、オプションでアセットをフラグメントと共に使用できるようにして、ヘッドレスコンテンツ配信の柔軟性を高めます。
+description: AEM 関連のコンテンツ機能によって接続を提供する方法を理解し、フラグメントをコンテンツページに追加する際に、オプションでアセットをフラグメントと共に使用できるようにして、ヘッドレスコンテンツ配信の柔軟性を高めます。
 feature: コンテンツフラグメント
-role: Business Practitioner
+role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
-# 関連コンテンツ {#associated-content}
+# 関連コンテンツ{#associated-content}
 
-AEM関連コンテンツ機能には接続が用意されており、フラグメントをコンテンツページに追加する際に、オプションでアセットをフラグメントと共に使用できます。 これにより、[ページでコンテンツフラグメントを使用する際にアクセスできるアセットの範囲を提供し、](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)によってヘッドレスコンテンツ配信の柔軟性を実現すると同時に、適切なアセットを検索するのに要する時間を短縮できます。
+AEM の関連コンテンツ機能によって関連性がわかり、フラグメントをページに追加するときに、（オプションで）アセットをフラグメントと一緒に使用できるようになります。これにより、[ページでコンテンツフラグメントを使用するときに利用できるアセットが広範になる](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)ことでヘッドレスコンテンツ配信に柔軟性が生まれると同時に、適切なアセットを検索するのに要する時間の削減にもつながります。
 
 ## 関連コンテンツの追加 {#adding-associated-content}
 
