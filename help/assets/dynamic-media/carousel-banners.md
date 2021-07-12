@@ -2,9 +2,9 @@
 title: カルーセルバナー
 description: Dynamic Media のカルーセルバナーの操作方法を説明します。
 feature: カルーセルバナー
-role: Business Practitioner
+role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: c3e8be9809fd07dcc2186a898d9689ae5565620e
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4537'
 ht-degree: 69%
