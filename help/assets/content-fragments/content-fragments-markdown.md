@@ -1,19 +1,19 @@
 ---
 title: Markdown
-description: コンテンツフラグメントエディターがMarkdown構文を使用してヘッドレスコンテンツを簡単に作成する方法を説明します。
+description: コンテンツフラグメントエディターで Markdown 構文を使用してヘッドレスコンテンツを簡単に作成する方法を説明します。
 feature: コンテンツフラグメント
-role: Business Practitioner
+role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
-source-git-commit: 67c4aabea838c1430e43f5ebaa8a52ec55362936
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
 # Markdown {#markdown}
 
-[オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)の場合、コンテンツフラグメントエディターは&#x200B;*markdown*&#x200B;構文を使用して、ヘッドレスコンテンツを簡単に記述できます。
+[オーサリング](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)中に、コンテンツフラグメントエディターは *Markdown* 構文を使用してユーザーがヘッドレスコンテンツを簡単に記述できるようにします。
 
 ![Markdown エディター](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
