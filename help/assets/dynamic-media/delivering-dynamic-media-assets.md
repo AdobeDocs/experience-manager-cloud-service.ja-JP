@@ -2,23 +2,23 @@
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
 feature: アセット管理
-role: Business Practitioner
+role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# Dynamic Media アセットの配信 {#delivering-dynamic-media-assets}
+# Dynamic Media アセットの配信{#delivering-dynamic-media-assets}
 
 ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
 
 Dynamic Media を使用する場合、次の複数のオプションがあります。
 
-* WebサイトがAdobe Experience Manager上でホストされている場合、Dynamic Mediaアセットを直接ページに追加する必要があります。
-* WebサイトがExperience Manager上にない場合は、次のいずれかを選択できます。
+* Web サイトが Adobe Experience Manager 上にホストされている場合は、Dynamic Media アセットを直接ページに追加します。
+* Web サイトが Experience Manager 上にない場合は、次のいずれかの方法を選択します。
 
    * ビデオまたは画像を Web サイトに埋め込みます。
    * Web アプリケーションに URL をリンクします。ビデオプレーヤーをポップアップウィンドウまたはモーダルウィンドウとして配信する場合には、リンク機能を使用します。
@@ -42,6 +42,6 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 
 ## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
 
-Experience Managerは、HTTP/2を介したすべてのDynamic Mediaコンテンツ（画像とビデオ）の配信をサポートするようになりました。 つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
+Experience Manager では、HTTP/2 上でのすべての Dynamic Media コンテンツ（画像とビデオ）の配信をサポートするようになりました。つまり、画像やビデオの公開済み URL や埋め込みコードは、ホストされるアセットを受け取るアプリケーションとの統合に使用できます。その公開済みアセットは、その後、HTTP/2 プロトコルで配信されます。この配信方法により、ブラウザーとサーバーの通信が向上し、すべての Dynamic Media アセットの応答時間と読み込み時間が短くなります。
 
 詳しくは、[HTTP/2 配信のコンテンツに関するよくある質問](/help/assets/dynamic-media/http2faq.md)を参照してください。
