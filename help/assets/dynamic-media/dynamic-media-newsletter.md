@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media ニュースレター
-description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic MediaとDynamic Media Classicをすばやく習得して、すぐに価値を実現できるように設計されています。 このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。 '
+description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。 '
 feature: アセット管理
-role: Business Practitioner
+role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 1ad89be4ebddec0705c6f557fed3d697b9f1f3a7
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ ht-degree: 96%
 
    この号の主な内容：
 
-   * ブログ投稿でDynamic Media Classicの隠された機能トップ10を調べます。
+   * ブログ投稿で Dynamic Media Classic の隠された機能のトップ 10 を学びます。
    * Experience League の主なハウツービデオの視聴
    * 今後の Adobe Insider Tour の紹介
    * リッチメディア戦略を更新するには、3 部構成のブログシリーズをご覧ください。
