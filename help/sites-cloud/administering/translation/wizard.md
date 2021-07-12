@@ -2,9 +2,9 @@
 title: 言語コピーウィザード
 description: AEM での言語コピーウィザードの使用について説明します。
 feature: 言語コピー
-role: Administrator
+role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
