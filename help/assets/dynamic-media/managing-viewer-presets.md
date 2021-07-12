@@ -1,17 +1,17 @@
 ---
 title: ビューアプリセットの管理
-description: Dynamic Mediaでビューアプリセットを作成および管理する方法について説明します。
-feature: ビューアプリセット，ビューア
-role: Business Practitioner
+description: Dynamic Media でビューアプリセットを作成および管理する方法について説明します。
+feature: ビューアプリセット、ビューア
+role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: d3ee23917eba4a2e4ae1f2bd44f5476d2ff7dce1
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '4236'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# ビューアプリセットの管理 {#managing-viewer-presets}
+# ビューアプリセットの管理{#managing-viewer-presets}
 
 ビューアプリセットは、ユーザーのコンピューター画面やモバイルデバイスでのリッチメディアアセットの表示方法を決定する様々な設定のコレクションです。管理者は、ビューアプリセットを作成できます。設定は、幅広いビューア設定オプションで使用できます。例えば、ビューアの表示サイズやズームの動作を変更できます。
 
@@ -24,7 +24,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 -->
 
-[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)も参照してください。
+[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja)も参照してください。
 
 ここでは、ビューアプリセットを作成、編集および管理する方法について説明します。アセットをプレビューする際は、いつでもビューアプリセットを適用できます。詳しくは、[ビューアプリセットの適用](#applying-a-viewer-preset-to-an-asset)を参照してください。
 
@@ -32,7 +32,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 >
 >*事前に定義された標準提供ビューアプリセット*&#x200B;を編集するシナリオはサポートされていません。標準提供ビューアプリセットを編集しようとすると、そのビューアプリセットを新しい名前で保存するように指示されます。
 
-## ビューアのキーボードアクセシビリティ  {#keyboard-accessibility-for-viewers}
+## ビューアのキーボードアクセシビリティ {#keyboard-accessibility-for-viewers}
 
 すべての標準提供ビューアでキーボードアクセシビリティがサポートされています。
 
@@ -59,16 +59,16 @@ Web ページごとに異なるニーズがあります。例えば、個別の�
 >あらかじめ用意されている標準のビューアはすべて、使用する前に公開します。
 >[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
-### ビューアプリセットのシステム互換性 {#viewer-preset-system-compatibility}
+### ビューアプリセットのシステム互換性   {#viewer-preset-system-compatibility}
 
 Dynamic Media に付属するすべての標準提供ビューアプリセットは、次のシステムと完全に互換します。
 
 * デスクトップ
 * Apple iPhone
 * Apple iPad
-* Android™スマートフォン
-* Android™ Tablet
-* ビデオの場合、[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)と[Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)でMP4の再生が追加でサポートされます。
+* Android™ スマートフォン
+* Android™ タブレット
+* ビデオについては、[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) と [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx) で MP4 の再生が追加でサポートされています。
 
 ### ビューアプリセットのリッチメディアタイプ {#rich-media-types-for-viewer-presets}
 
@@ -78,7 +78,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  <tbody>
   <tr>
    <td><strong>カルーセルセット</strong><br /> </td>
-   <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。顧客は画像を左右にパンし、画像のホットスポットをクリックして詳細を表示したり、Webサイトのランディングページ、カテゴリページまたはホームページから直接購入したりできます。</p> </td>
+   <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。顧客は画像を左右にパンし、画像のホットスポットをクリックしてさらに詳細情報を入力したり、Web サイトのランディングページ、カテゴリページまたはホームページから直接購入したりできます。</p> </td>
   </tr>
     <tr>
    <td><strong>ディメンション</strong><br /> </td>
@@ -98,11 +98,11 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   </tr>
   <tr>
    <td><strong>インタラクティブ画像</strong></td>
-   <td>画像の一部にホットスポットが追加されます。このホットスポットは、顧客がクリックして詳細を表示したり、Webサイトのランディングページ、カテゴリページまたはホームページから直接購入したりできます。</td>
+   <td>ユーザーがクリックしてさらに詳細情報を入力したり、Web サイトのランディングページ、カテゴリページまたはホームページから直接購入したりするためのホットスポットが画像の一部に追加されます。</td>
   </tr>
   <tr>
    <td><strong>インタラクティブビデオ</strong></td>
-   <td>ユーザーがクリックして詳細を表示したり、Webサイトのランディングページ、カテゴリページまたはホームページから直接購入したりするためのサムネールをビデオのタイムラインセグメントに追加します。</td>
+   <td>ユーザーがクリックしてさらに詳細情報を入力したり、Web サイトのランディングページ、カテゴリページまたはホームページから直接購入したりするためのサムネールがビデオ内のタイムラインセグメントに追加されます。</td>
   </tr>
   <tr>
    <td><strong>混在メディア</strong></td>
@@ -147,7 +147,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  </tbody>
 </table>
 
-### 標準提供ビューアプリセットのリスト  {#list-of-out-of-the-box-viewer-presets}
+### 標準提供ビューアプリセットのリスト {#list-of-out-of-the-box-viewer-presets}
 
 次の表に、Dynamic Media に付属するすべての事前定義済みの標準提供ビューアプリセットについて示します。
 
@@ -273,7 +273,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
    <td><code>html5_videoviewer.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360_social</p> <p>（基本的なビデオ再生制御を含んでいます。ビデオレンダリングはステレオモードでおこなわれます。手動の視点制御はオフですが、ジャイロスコープ制御はオンです。ソーシャルメディア機能はありません）</p> </td>
+   <td><p>Video360_social</p> <p>（基本的なビデオ再生制御を含んでいます。ビデオレンダリングはステレオモードで行われます。手動の視点制御はオフですが、ジャイロスコープ制御はオンです。ソーシャルメディア機能はありません）</p> </td>
    <td>ビデオ 360</td>
    <td><code>html5_video360viewersocial.css</code></td>
   </tr>
@@ -312,7 +312,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 ### サポートされているモバイルビューアのジェスチャーに関する表 {#supported-mobile-viewers-gestures-matrix}
 
-次の表に、iOS、Android™ 2.xおよびAndroid™ 3.xデバイスでサポートされているモバイルビューアのジェスチャーを示します。
+iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされているモバイルビューアジェスチャーを次の表に示します。
 
 <table>
  <tbody>
@@ -343,14 +343,14 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   <tr>
    <td><p><strong>ピンチオープン</strong></p> </td>
    <td><p>適用なし</p> </td>
-   <td><p>ズームイン(iOSおよびAndroid™ 3xのみ)</p> </td>
-   <td><p>ズームイン(iOSおよびAndroid™ 3xのみ)</p> </td>
+   <td><p>ズームイン（iOS、Android™ 3x のみ）</p> </td>
+   <td><p>ズームイン（iOS、Android™ 3x のみ）</p> </td>
   </tr>
   <tr>
    <td><p><strong>ピンチクローズ</strong></p> </td>
    <td><p>適用なし</p> </td>
-   <td><p>ズームアウト(iOSおよびAndroid™ 3xのみ)</p> </td>
-   <td><p>ズームアウト(iOSおよびAndroid™ 3xのみ)</p> </td>
+   <td><p>ズームアウト（iOS、Android™ 3x のみ）</p> </td>
+   <td><p>ズームアウト（iOS、Android™ 3x のみ）</p> </td>
   </tr>
   <tr>
    <td><p><strong>スワイプ</strong></p> </td>
@@ -371,7 +371,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 **[!UICONTROL 詳細ビュー／ビューア]**&#x200B;でアセットを表示したとき、Adobe Experience Manager には様々なビューアプリセットが表示されます。表示されるビューアの数を増減できます。
 
-**表示されるビューアプリセットの数を増やすには：**
+**表示されるビューアプリセットの数を増減させるには：**
 
 1. CRXDE Lite（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）に移動します。
 1. ビューアプリセットリストノード（`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`）に移動します。
@@ -414,7 +414,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
    [ビューアプリセットのリッチメディアタイプ](#rich-media-types-for-viewer-presets)を参照してください。
 
 1. ビューアプリセットエディターページで、「**[!UICONTROL 外観]**」タブをタップします。
-1. 次のいずれかの操作をおこないます。
+1. 次のいずれかの操作を行います。
 
    * 「**[!UICONTROL 選択したタイプ]**」プルダウンメニューで、ビジュアルデザインをカスタマイズするコンポーネントを選択します。または、設定するビジュアル要素をビューアでタップまたはクリックして選択することもできます。
 
@@ -456,11 +456,11 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
    [ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
-### インタラクティブビデオのビューアプリセットの作成に関する考慮事項  {#special-considerations-for-creating-an-interactive-viewer-preset}
+### インタラクティブビデオのビューアプリセットの作成に関する考慮事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **パネル内の画像サムネールのディスプレイモードについて:**
 
-インタラクティブビデオビューアプリセットを作成または編集する場合は、使用する表示モード設定を選択できます。この選択をおこなうのは、「**[!UICONTROL 動作]**」タブの「**[!UICONTROL 選択したコンポーネント]**」プルダウンメニューから `InteractiveSwatches` を選択したときです。選択するディスプレイモードは、ビデオの再生中にサムネールを表示する方法とタイミングに影響します。`segment` ディスプレイモード（デフォルト）または `continuous` ディスプレイモードのいずれかを選択できます。
+インタラクティブビデオビューアプリセットを作成または編集する場合は、使用する表示モード設定を選択できます。この選択を行うのは、「**[!UICONTROL 動作]**」タブの「**[!UICONTROL 選択したコンポーネント]**」プルダウンメニューから `InteractiveSwatches` を選択したときです。選択するディスプレイモードは、ビデオの再生中にサムネールを表示する方法とタイミングに影響します。`segment` ディスプレイモード（デフォルト）または `continuous` ディスプレイモードのいずれかを選択できます。
 
 <table>
  <tbody>
@@ -489,7 +489,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
 ビューアプリセットで「**[!UICONTROL 自動スクロール]**」を有効（チェックボックスをオン）にすると、ビデオの再生中、セグメントの開始時に、ビデオセグメントに割り当てられたサムネール画像まで表示がスクロールされます。ただし、セグメントによっては特定のサムネールが前後のサムネールの 2 倍の時間表示されることもあります。この動作は、セグメント内のサムネールの数がパネルに表示される数よりも多く、均等に分割できないことが原因で発生します。
 
-例えば、30秒のビデオセグメントが1つあるとします。 30 秒の間に表示されるサムネールは合計で 9 個です。ブラウザーは 4 つのサムネールがディスプレイパネルに表示できるようにサイズ設定されています。30秒のビデオ時間セグメントは、3つのサブセグメントに分割されます。 次の表に、指定の時間サブセグメントに表示されるサムネールの内訳を示します。
+説明のために、30 秒のビデオセグメントが 1 つあるとします。30 秒の間に表示されるサムネールは合計で 9 個です。ブラウザーは 4 つのサムネールがディスプレイパネルに表示できるようにサイズ設定されています。30 秒のビデオの時間セグメントは 3 つのサブセグメントに分割されています。次の表に、指定の時間サブセグメントに表示されるサムネールの内訳を示します。
 
 | **ビデオサブセグメント** | **サブセグメント時間（秒単位）** | **パネルに表示されるサムネール** |
 |---|---|---|
@@ -506,7 +506,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 * サムネールの数 = 次のサムネールに切り上げ（サムネールの数／ビデオサブセグメントの数）前述の表の例では、「9 サムネール / 3 ビデオサブセグメント = 3 サムネール」になります。
 
 * サブセグメントの表示時間 = ビデオの合計再生時間 / ビデオサブセグメントの数
-上の表の例では、30秒/ 3ビデオサブセグメント=各ビデオサブセグメントの10秒の表示になっています。
+前述の表の例では、「30 秒 / 3 ビデオサブセグメント = 各ビデオサブセグメントで 10 秒」の再生時間になります。
 
 #### カルーセルバナーのビューアプリセットの作成に関する特別な考慮事項 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
@@ -543,7 +543,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 1. 公開するビューアプリセットを 1 つ以上選択します。
 1. ツールバーの&#x200B;**[!UICONTROL 公開]**&#x200B;アイコンをタップします。
 
-## ビューアプリセットの並べ替え  {#sorting-viewer-presets}
+## ビューアプリセットの並べ替え {#sorting-viewer-presets}
 
 1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
 1. 「**[!UICONTROL プリセットのタイトル]**」、「**[!UICONTROL タイプ]**」、「**[!UICONTROL 公開]**」または「**[!UICONTROL 状態]**」をクリックして、その見出しの列でソートします。例えば、「**[!UICONTROL タイプ]**」をクリックすると、ビューアプリセットのタイプが、アルファベット順で、またはアルファベットの逆の順序でソートされます。
@@ -561,7 +561,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 
    「**[!UICONTROL 外観]**」タブで、ビューアプリセットエディターページの左上隅近くにある「**[!UICONTROL デスクトップ]**」、「**[!UICONTROL タブレット]**」、「**[!UICONTROL 電話]**」のいずれかをタップして、アセットの表示モードを変更します。
 
-1. ページの右上隅近くで、次のいずれかの操作をおこないます。
+1. ページの右上隅近くで、次のいずれかの操作を行います。
 
    * 「**[!UICONTROL 保存]**」をタップして変更内容を保存し、ビューアプリセットページに戻ります。
    * 「**[!UICONTROL キャンセル]**」をタップして変更内容をキャンセルし、ビューアプリセットページに戻ります。
