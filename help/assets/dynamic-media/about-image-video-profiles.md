@@ -2,9 +2,9 @@
 title: Dynamic Media のイメージプロファイルとビデオプロファイルについて
 description: イメージプロファイルまたはビデオプロファイルは、フォルダーにアップロードするアセットに適用するオプションの手法です。例えば、アップロードする Dynamic Media のビデオアセットに適用するビデオエンコーディングを指定できます。また、画像アセットを適切に切り抜くために Dynamic Media 画像アセットに適用するイメージプロファイルを指定できます。
 feature: アセット管理、イメージプロファイル、ビデオプロファイル
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 5e9cf9494ce9d54dd1d3b7818b3b975b2acb4e3c
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '1270'
 ht-degree: 79%
