@@ -2,9 +2,9 @@
 title: Microsoft Translator への接続
 description: AEM を Microsoft Translator に接続して翻訳ワークフローを自動化する方法を説明します。
 feature: 言語コピー
-role: Administrator
+role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
@@ -66,7 +66,7 @@ Microsoft Translation 設定ページには、Microsoft Translator エンジン�
 1. 「**編集**」をタップまたはクリックします。
 1. **設定を編集**&#x200B;ウィンドウで、「**トランスレーターをカスタマイズ**」をタップまたはクリックします。表示された Microsoft の Web ページを使用して、サービスをカスタマイズします。
 
-## 翻訳サービス設定のアクティベート  {#activating-the-translator-service-configurations}
+## 翻訳サービス設定のアクティベート {#activating-the-translator-service-configurations}
 
 パブリッシュインスタンスでレプリケーションされる翻訳コンテンツをサポートするには、クラウドサービス設定をアクティベートする必要があります。[ツリーの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#publishing-and-unpublishing-a-tree)方法を使用して、Microsoft Translator 設定を格納するリポジトリーノードをアクティベートします。このノードは以下に示す親ノードの下にあります。
 
