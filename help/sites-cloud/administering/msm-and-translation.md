@@ -2,9 +2,9 @@
 title: マルチサイトマネージャと翻訳
 description: プロジェクトをまたいでコンテンツを再利用し、AEM で多言語 Web サイトを管理する方法について説明します。
 feature: 管理
-role: Administrator
+role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
