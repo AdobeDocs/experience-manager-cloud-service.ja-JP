@@ -44,8 +44,7 @@ ht-degree: 100%
 
 次に例を示します。
 
-![全画面表示エディ
-ター](assets/cfm-variations-02.png)
+![全画面表示エディター](assets/cfm-variations-02.png)
 次の操作が可能です。
 
 * 「**バリエーション**」タブで直接編集できます。
