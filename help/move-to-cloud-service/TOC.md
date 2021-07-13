@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: a3a90868b64a0639f8a065c8c4d6ef6410094f3d
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 90%
+source-wordcount: '125'
+ht-degree: 69%
 
 ---
 
@@ -17,9 +17,18 @@ ht-degree: 90%
 
 + [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md)
 + 移行プロセスの諸段階 {#phases}
-   + [計画](/help/move-to-cloud-service/planning.md)
-   + [実行](/help/move-to-cloud-service/execution.md)
-   + [運用開始後](/help/move-to-cloud-service/post-go-live.md)
+   + [準備](/help/move-to-cloud-service/migration-readiness.md)
+   + [実装](/help/move-to-cloud-service/migration-implementation.md)
+   + [運用開始後](/help/move-to-cloud-service/migration-post-go-live.md)
++ Cloud Acceleration Manager {#cloud-acceleration-manager}
+   + Cloud Acceleration Managerの概要{#introduction-cam}
+      + [概要](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
+      + [メリット](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
+   + Cloud Acceleration Managerの使用{#using-cam}
+      + [Cloud Acceleration Managerの概要](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+      + [準備段階](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
+      + [実装段階](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
+      + [ライブフェーズへ](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + クラウド移行ツール {#cloud-migration}
    + ベストプラクティスアナライザー {#best-practices-analyzer}
       + [概要](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
