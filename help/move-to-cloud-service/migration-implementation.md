@@ -2,10 +2,10 @@
 title: 実装段階
 description: 実装段階
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 91%
+source-wordcount: '950'
+ht-degree: 94%
 
 ---
 
@@ -110,17 +110,4 @@ Cloud Manager を使用してコードを管理およびデプロイする方法
 
 * [コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja)
 
-## 運用開始準備のベストプラクティス {#go-live}
 
->[!CONTEXTUALHELP]
->id="aemcloud_golive_prep"
->title="運用開始準備"
->abstract="AEMをCloud Serviceとしてスムーズかつ正常に運用し続けるには、コードとコンテンツの凍結期間、繰り返しのテスト、コンテンツの追加、パフォーマンステスト、セキュリティテストなどを計画する必要があります。"
-
-AEM as a Cloud Service 上でうまくスムーズに運用を開始できるようにするには、次の手順を実行することを検討してください。
-
-* コードとコンテンツの凍結期間のスケジュール設定
-* 最終コンテンツ追加の実行
-* 反復テストの完了
-* パフォーマンステストとセキュリティテストの実行
-* カットオーバー
