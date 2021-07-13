@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Managerの実装段階
 description: このページでは、Cloud Acceleration Managerの実装フェーズの概要を説明します。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '585'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->詳しくは、 Cloud Acceleration Managerのプロジェクトの作成と管理を参照してください。
+>詳しくは、 Cloud Acceleration Managerの[プロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project)を参照してください。
 
 
 ## ローカル開発カードの使用 {#local-development}
@@ -102,4 +102,4 @@ AEMリポジトリのサイズを見積もるには、`http://HOST:PORT/etc/repo
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Managerへのログイン方法と実装段階の利用方法を学習したら、次の手順(GoLive段階の使用)を確認する準備が整いました。
+Cloud Acceleration Managerへのログイン方法と実装段階の利用方法を学習したら、次の手順[Go Live段階](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)の使用を確認する準備が整いました。
