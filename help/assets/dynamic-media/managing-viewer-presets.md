@@ -4,16 +4,16 @@ description: Dynamic Media でビューアプリセットを作成および管�
 feature: ビューアプリセット、ビューア
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
 workflow-type: tm+mt
-source-wordcount: '4236'
-ht-degree: 100%
+source-wordcount: '4233'
+ht-degree: 76%
 
 ---
 
 # ビューアプリセットの管理{#managing-viewer-presets}
 
-ビューアプリセットは、ユーザーのコンピューター画面やモバイルデバイスでのリッチメディアアセットの表示方法を決定する様々な設定のコレクションです。管理者は、ビューアプリセットを作成できます。設定は、幅広いビューア設定オプションで使用できます。例えば、ビューアの表示サイズやズームの動作を変更できます。
+ビューアプリセットは、ユーザーがコンピューターの画面やモバイルデバイスでリッチメディアアセットを表示する方法を決定する設定の集まりです。管理者は、ビューアプリセットを作成できます。設定は、ビューア設定オプションの配列で使用できます。例えば、ビューアの表示サイズやズーム動作を変更できます。
 
 <!-- OBSOLETE SDK withdrawn from public view. Available internally only at `http://staging.scene7.com/s7sdk/3.8/docs/jsdoc/symbols/_s7sdk.html` 
 
@@ -26,7 +26,7 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 [Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja)も参照してください。
 
-ここでは、ビューアプリセットを作成、編集および管理する方法について説明します。アセットをプレビューする際は、いつでもビューアプリセットを適用できます。詳しくは、[ビューアプリセットの適用](#applying-a-viewer-preset-to-an-asset)を参照してください。
+ここでは、ビューアプリセットを作成、編集および管理する方法について説明します。アセットをプレビューする際は、いつでもビューアプリセットを適用できます。[ビューアプリセットの適用](#applying-a-viewer-preset-to-an-asset)を参照してください。
 
 >[!NOTE]
 >
@@ -40,13 +40,13 @@ For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](
 
 ## ビューアプリセットの管理 {#managing-viewer-presets-1}
 
-Adobe Experience Manager でビューアプリセットの追加、編集、削除、公開、非公開およびプレビューを実行できます。そのためには、**[!UICONTROL ツール（ハンマーアイコン）]**／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
+Adobe Experience Managerでビューアプリセットの追加、編集、削除、公開、非公開およびプレビューを実行できます。それには、**[!UICONTROL ツール]**（ハンマーアイコン）/**[!UICONTROL アセット]/[!UICONTROL ビューアプリセット]**&#x200B;に移動します。
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
 >[!NOTE]
 >
->デフォルトで、アセットの詳細ビューでビューアを選択するときに、15 個のビューアプリセットが表示されます。この制限は増やすことができます。[表示されるビューアプリセットの数を増やす](#increasing-the-number-of-viewer-presets-that-display)を参照してください。
+>デフォルトで、アセットの詳細ビューでビューアを選択するときに、15 個のビューアプリセットが表示されます。この制限は増やすことができます。[表示するビューアプリセットの数を増やす](#increasing-the-number-of-viewer-presets-that-display)を参照してください。
 
 ### レスポンシブデザイン Web ページのビューアサポート {#viewer-support-for-responsive-designed-web-pages}
 
@@ -68,7 +68,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 * Apple iPad
 * Android™ スマートフォン
 * Android™ タブレット
-* ビデオについては、[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) と [Windows® Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx) で MP4 の再生が追加でサポートされています。
+* ビデオについては、[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) と [Windows® Phone](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)) で MP4 の再生が追加でサポートされています。
 
 ### ビューアプリセットのリッチメディアタイプ {#rich-media-types-for-viewer-presets}
 
@@ -78,7 +78,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
  <tbody>
   <tr>
    <td><strong>カルーセルセット</strong><br /> </td>
-   <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。顧客は画像を左右にパンし、画像のホットスポットをクリックしてさらに詳細情報を入力したり、Web サイトのランディングページ、カテゴリページまたはホームページから直接購入したりできます。</p> </td>
+   <td><p>ホットスポットや画像マップ、またはその両方が 2 つ以上の一連の画像に追加されます。顧客は画像を左右にパンし、画像のホットスポットを選択して詳細を表示したり、Webサイトのランディングページ、カテゴリまたはホームページから直接購入したりできます。</p> </td>
   </tr>
     <tr>
    <td><strong>ディメンション</strong><br /> </td>
@@ -94,15 +94,15 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   </tr>
   <tr>
    <td><strong>画像セット</strong></td>
-   <td>画像セットビューアでは、サムネール画像をクリックしてアイテムの様々なビューやカラーを表示できます。このビューアは、画像を接近して確認するためのズームツールも提供しています。</td>
+   <td>画像セットビューアでは、サムネール画像を選択すると、項目の様々なビューやカラーのバリエーションを表示できます。 このビューアは、画像を接近して確認するためのズームツールも提供しています。</td>
   </tr>
   <tr>
    <td><strong>インタラクティブ画像</strong></td>
-   <td>ユーザーがクリックしてさらに詳細情報を入力したり、Web サイトのランディングページ、カテゴリページまたはホームページから直接購入したりするためのホットスポットが画像の一部に追加されます。</td>
+   <td>画像の一部にホットスポットが追加されます。このホットスポットは、顧客が選択して詳細を表示したり、Webサイトのランディングページ、カテゴリページまたはホームページから直接購入したりできます。</td>
   </tr>
   <tr>
    <td><strong>インタラクティブビデオ</strong></td>
-   <td>ユーザーがクリックしてさらに詳細情報を入力したり、Web サイトのランディングページ、カテゴリページまたはホームページから直接購入したりするためのサムネールがビデオ内のタイムラインセグメントに追加されます。</td>
+   <td>サムネールはビデオのタイムラインセグメントに追加されます。このサムネールは、顧客が詳細を選択したり、Webサイトのランディングページ、カテゴリページまたはホームページから直接購入したりできます。</td>
   </tr>
   <tr>
    <td><strong>混在メディア</strong></td>
@@ -142,7 +142,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
   </tr>
   <tr>
    <td><strong>ズーム</strong></td>
-   <td>ユーザーが領域をクリックしてズームインできます。ユーザーは、ズームイン、ズームアウトおよび画像をデフォルトのサイズにリセットするためのコントロールをクリックできます。</td>
+   <td>ユーザーが領域を選択してズームインできます。 ユーザーは、ズームイン、ズームアウトおよび画像をデフォルトサイズにリセットするためのコントロールを選択できます。</td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +163,7 @@ Dynamic Media に付属するすべての標準提供ビューアプリセット
 >[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 >
 >作成および追加した新しいすべてのビューアプリセットは、アクティベートされ公開されている必要があります。
-> [ビューアプリセットのアクティベートとアクティベート解除](#activating-or-deactivating-viewer-presets)と[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
+>[ビューアプリセットのアクティベートとアクティベート解除](#activating-or-deactivating-viewer-presets)および[ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
 <table>
  <tbody>
@@ -367,11 +367,11 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
  </tbody>
 </table>
 
-## 表示されるビューアプリセットの数の増減 {#increasing-the-number-of-viewer-presets-that-display}
+## 表示されるビューアプリセットの数を増やします {#increasing-the-number-of-viewer-presets-that-display}
 
-**[!UICONTROL 詳細ビュー／ビューア]**&#x200B;でアセットを表示したとき、Adobe Experience Manager には様々なビューアプリセットが表示されます。表示されるビューアの数を増減できます。
+Experience Managerには、**[!UICONTROL 詳細ビュー]** / **[!UICONTROL ビューア]**&#x200B;からアセットを表示したときの様々なビューアプリセットが表示されます。 表示されるビューアの数を増減できます。
 
-**表示されるビューアプリセットの数を増減させるには：**
+**表示されるビューアプリセットの数を増やすには：**
 
 1. CRXDE Lite（[https://localhost:4502/crx/de](https://localhost:4502/crx/de)）に移動します。
 1. ビューアプリセットリストノード（`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`）に移動します。
@@ -384,7 +384,7 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
    ![chlimage_1-222](/help/assets/dynamic-media/assets/chlimage_1-222.png)
 
 1. 「limit」プロパティの数を、目的の数（例：`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`）に変更します。
-1. 「**[!UICONTROL すべて保存]**」をタップします。
+1. 「**[!UICONTROL すべて保存]**」を選択します。
 
 ## ビューアプリセットの作成 {#creating-a-new-viewer-preset}
 
@@ -398,46 +398,46 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 [カルーセルバナーのビューアプリセットの作成に関する考慮事項](#special-considerations-for-creating-a-carousel-banner-viewer-preset)を参照してください。
 
-**ビューアプリセットを作成するには：:**
+**ビューアプリセットを作成するには：**
 
-1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
+1. Experience Managerの左上隅にあるExperience Managerロゴを選択し、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]**/**[!UICONTROL ビューアプリセット]**&#x200B;に移動します。
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
-1. ビューアプリセットページのツールバーで、「**[!UICONTROL 作成]**」をタップします。
-1. **[!UICONTROL 新規ビューアプリセット]**&#x200B;ダイアログボックスで、「**[!UICONTROL プリセット名]**」フィールドに新しいプリセットの名前を入力します。この名前は慎重に選択してください。「**[!UICONTROL 作成]**」をタップした後は編集できません。
+1. ビューアプリセットページのツールバーで、「**[!UICONTROL 作成]**」を選択します。
+1. **[!UICONTROL 新しいビューアプリセット]**&#x200B;ダイアログボックスで、「**[!UICONTROL プリセット名]**」フィールドに新しいプリセットの名前を入力します。 名前は慎重に選択してください。「**[!UICONTROL 作成]**」を選択した後は編集できません。
 
    後述の手順でプリセットを保存すると、この名前がビューアプリセットページの「プリセットのタイトル」列ヘッダーの下に表示されます。
 
-1. 「リッチメディアタイプ」ドロップダウンメニューで、作成するビューアプリセットのタイプを選択し、ページ右上隅の「**[!UICONTROL 作成]**」をタップします。
+1. 「リッチメディアタイプ」ドロップダウンメニューで、作成するビューアプリセットのタイプを選択し、ページの右上隅にある「**[!UICONTROL 作成]**」を選択します。
 
    [ビューアプリセットのリッチメディアタイプ](#rich-media-types-for-viewer-presets)を参照してください。
 
-1. ビューアプリセットエディターページで、「**[!UICONTROL 外観]**」タブをタップします。
+1. ビューアプリセットエディターページで、「**[!UICONTROL 外観]**」タブを選択します。
 1. 次のいずれかの操作を行います。
 
-   * 「**[!UICONTROL 選択したタイプ]**」プルダウンメニューで、ビジュアルデザインをカスタマイズするコンポーネントを選択します。または、設定するビジュアル要素をビューアでタップまたはクリックして選択することもできます。
+   * 「**[!UICONTROL 選択したタイプ]**」プルダウンメニューで、ビジュアルデザインをカスタマイズするコンポーネントを選択します。または、設定するビジュアル要素をビューアで選択することもできます。
 
         Visual Editor を使用すると、特定のプロパティがスタイルに与える効果を確認できます。プロパティを設定または調整すると、Visual Editor の左にあるサンプルを使用して、ビューア上での効果を瞬時に確認できます。
 
-      ビューアプリセットタイプごとの CSS スタイル設定プロパティについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)』の「*`<viewer name>`* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、`Mixed_Media` タイプのビューアプリセットを作成している場合、プロパティのリストと各プロパティの説明については、[混在メディアビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=ja)を参照してください。
+      ビューアプリセットタイプごとの CSS スタイル設定プロパティについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)』の「*`<viewer name>`* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、タイプ`Mixed_Media`のビューアプリセットを作成している場合、各プロパティのリストと説明については、 [混在メディアビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=ja)を参照してください。
 
-   * スタイル設定を別個の CSS ファイルで定義している場合は、その CSS ファイルを Adobe Experience Manager Assets にアップロードできます。アップロードした CSS ファイルを探してビューアプリセットと関連付けるには、「**[!UICONTROL 選択したタイプ]**」プルダウンメニューの下の「**[!UICONTROL CSS を読み込み]**」をタップします（必要に応じて、ビジュアルエディターを上にスクロールして表示します）。
+   * スタイル設定を別個の CSS ファイルで定義している場合は、その CSS ファイルを Adobe Experience Manager Assets にアップロードできます。アップロードしたCSSファイルを見つけて、ビューアプリセットに関連付けるには、 **[!UICONTROL 選択したタイプ]**&#x200B;プルダウンメニュー（必要に応じてVisual Editorを上にスクロールして表示）の下の「CSS ]**を読み込む」を選択します。**[!UICONTROL 
 
         CSS ファイルを読み込むと、Visual Editor は、その CSS に正しいビューアマーカーが使用されているかを確認します。例えば、ズームビューアを作成している場合、読み込むすべての CSS ルールが、親のビューアエレメントに定義されているズームビューアのクラス名 `.s7mixedmediaviewer` を使用して定義されている必要があります。
 
       指定ビューアの CSS マーカーが正しく定義された CSS であれば、自作した任意の CSS を読み込むことができます（CSS マーカーについては、『[ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)』の「*&lt;viewer name>* ビューアのカスタマイズ」のヘルプトピックを参照してください。例えば、ズームビューアの CSS マーカーについては、[ズームビューアのカスタマイズ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=ja)を参照してください）。ただし、Visual Editor が一部の CSS 値を認識できない可能性もあります。そのような場合、Visual Editor は、CSS が正常に機能するように、エラーを上書きしようとします。
    >[!NOTE]
    >
-   >RAW 形式で CSS を直接編集する場合は、「選択したタイプ」プルダウンメニューの下の「**[!UICONTROL CSS を表示／非表示]**」をタップします（必要に応じて、ビジュアルエディターを上にスクロールして表示します）。
+   >RAW形式でCSSを直接編集する場合は、「選択したタイプ」プルダウンメニュー（必要に応じてVisual Editorを上にスクロールして表示）の下の「**[!UICONTROL CSSを表示/非表示]**」を選択します。
    >Visual Editor と同様に、CSS でプロパティを直接変更すると、ビューアサンプルにその効果がすぐに反映されます。また、同時に、Visual Editor でもその同じプロパティが自動的に更新されます。このことから、RAW である CSS エディターと、Visual Editor のどちらを使用しても、また交互に使用してもかまいません。
 
    >[!NOTE]
    >
    >ボタンのアートワークの場合は、2 倍画像を選択し、高解像度のアートワークをアップロードします。インタラクティブ画像やショッパブルバナーを操作する場合は、すぐに使える様々なホットスポットボタンから選択することもできます。
 
-1. （オプション）ビューアプリセットを編集ページの最上部の近くにある「**[!UICONTROL デスクトップ]**」、「**[!UICONTROL タブレット]**」または「**[!UICONTROL 電話]**」をタップして、異なる種類のデバイスや画面のビジュアルスタイルを個別に定義します。
-1. ビューアプリセットエディターページで、「**[!UICONTROL ビヘイビアー]**」タブをタップします。または、設定するビジュアル要素をビューアでタップまたはクリックして選択することもできます。
+1. （オプション）ビューアプリセットを編集ページの上部付近で、「**[!UICONTROL デスクトップ]**」、「**[!UICONTROL タブレット]**」または「**[!UICONTROL 電話]**」を選択して、様々なデバイスや画面のビジュアルスタイルを一意に定義します。
+1. ビューアプリセットエディターページで、「**[!UICONTROL ビヘイビアー]**」タブを選択します。 または、設定するビジュアル要素をビューアで選択することもできます。
 1. 「**[!UICONTROL 選択したタイプ]**」プルダウンメニューで、動作を変更するコンポーネントを選択します。
 
    Visual Editor 内の多くのコンポーネントには、詳しい説明が関連付けられています。この説明は、コンポーネントを展開して関連パラメーターを表示したときに、青いボックス内に示されます。
@@ -449,14 +449,14 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
    >**スマートフォンやタブレットなどのタッチデバイスを使用している場合は...**
    >
    >
-   >テキストフィールドに値を入力後、ユーザーインターフェイス内をタップすると、変更内容が送信され、仮想キーボードが閉じられます。Enter キーをタップした場合は、何も実行されません。
+   >テキストフィールドに値を入力した後、ユーザーインターフェイス内の別の場所を選択して変更を送信し、仮想キーボードを閉じます。 「**[!UICONTROL Enter]**」を選択した場合、何も実行されません。
 
-1. ページの右上隅にある「**[!UICONTROL 保存]**」をタップします。
+1. ページの右上隅付近にある「**[!UICONTROL 保存]**」を選択します。
 1. 新しいビューアプリセットを公開します。プリセットを Web サイトで使用するには、まずそのプリセットを公開する必要があります。
 
    [ビューアプリセットの公開](#publishing-viewer-presets)を参照してください。
 
-### インタラクティブビデオのビューアプリセットの作成に関する考慮事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
+### インタラクティブビューアプリセットの作成に関する特別な考慮事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **パネル内の画像サムネールのディスプレイモードについて:**
 
@@ -483,7 +483,7 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 インタラクティブビデオビューア内のサムネールの自動スクロール動作は、選択したディスプレイモードとは独立して機能します。
 
-インタラクティブビデオのビューアプリセットを作成または編集するときは、「ビヘイビアー」タブから自動スクロールにアクセスします。**[!UICONTROL 選択したコンポーネント]**&#x200B;ドロップダウンメニューの「ビヘイビアー」タブで、「**[!UICONTROL InteractiveSwatches]**」をタップします。「自動スクロール」チェックボックスは「IS コマンド」テキストフィールドの下にリストされます。
+インタラクティブビデオのビューアプリセットを作成または編集するときは、「ビヘイビアー」タブから自動スクロールにアクセスします。「ビヘイビアー」タブの&#x200B;**[!UICONTROL 選択したコンポーネント]**&#x200B;ドロップダウンメニューから、**[!UICONTROL InteractiveSwatches]**&#x200B;を選択します。 「自動スクロール」チェックボックスは「IS コマンド」テキストフィールドの下にリストされます。
 
 ビューアプリセットで「**[!UICONTROL 自動スクロール」]**&#x200B;を無効（チェックボックスをオフ）にした場合、ユーザーによるビデオの再生中、パネルにはビデオの全長につき最初のサムネール画像のみが表示されます。ただし、ユーザーは必要に応じて上下の矢印アイコンを使用してサムネール間を手動でスクロールできます。
 
@@ -514,7 +514,7 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 |  | **説明** | **アクション** |
 |---|---|---|
-| **[!UICONTROL ホットスポットアイコン]** | ホットスポットに使用するアイコンを変更する | ホットスポットアイコンの画像を変更するには、「**[!UICONTROL 外観]**」タブで、「**[!UICONTROL 選択したコンポーネント]**」の「**[!UICONTROL ImageMapEffect]**」をタップします。「**[!UICONTROL アイコン]**」で「**[!UICONTROL 背景]**」を選択し、「**[!UICONTROL 画像]**」フィールドで目的に背景画像に移動します。 |
+| **[!UICONTROL ホットスポットアイコン]** | ホットスポットに使用するアイコンを変更する | ホットスポットアイコンの画像を変更するには、「**[!UICONTROL 外観]**」タブの「**[!UICONTROL 選択したコンポーネント]**」で、「**[!UICONTROL ImageMapEffect]**」を選択します。 「**[!UICONTROL アイコン]**」で「**[!UICONTROL 背景]**」を選択し、「**[!UICONTROL 画像]**」フィールドで目的に背景画像に移動します。 |
 
 ## ビューアプリセットのアクティベートとアクティベート解除 {#activating-or-deactivating-viewer-presets}
 
@@ -522,8 +522,8 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 **ビューアプリセットをアクティベートまたはアクティベート解除するには：:**
 
-1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
-1. ビューアプリセットページの「**[!UICONTROL 状態]**」列ヘッダーの下で、ビューアプリセットのアクティベートとアクティベート解除の切り替えアイコンをタップします。
+1. Experience Managerの左上隅にあるExperience Managerロゴを選択し、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]**/**[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
+1. ビューアプリセットページの&#x200B;**[!UICONTROL 状態]**&#x200B;列見出しで、ビューアプリセットのアクティベートとアクティベート解除の切り替えを選択します。
 
    アクティベートされたビューアプリセットには、（青いボックスで）右側にトグルしたアイコンが示されます。アクティベート解除されたビューアプリセットには、（薄いグレーのボックスで）左側にトグルしたアイコンが示されます。
 
@@ -539,14 +539,14 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 **ビューアプリセットを公開するには：:**
 
-1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
+1. Experience Managerの左上隅にあるExperience Managerロゴを選択し、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]/[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
 1. 公開するビューアプリセットを 1 つ以上選択します。
-1. ツールバーの&#x200B;**[!UICONTROL 公開]**&#x200B;アイコンをタップします。
+1. ツールバーの&#x200B;**[!UICONTROL 公開]**&#x200B;アイコンを選択します。
 
 ## ビューアプリセットの並べ替え {#sorting-viewer-presets}
 
-1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
-1. 「**[!UICONTROL プリセットのタイトル]**」、「**[!UICONTROL タイプ]**」、「**[!UICONTROL 公開]**」または「**[!UICONTROL 状態]**」をクリックして、その見出しの列でソートします。例えば、「**[!UICONTROL タイプ]**」をクリックすると、ビューアプリセットのタイプが、アルファベット順で、またはアルファベットの逆の順序でソートされます。
+1. Experience Managerの左上隅にあるExperience Managerロゴを選択し、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]/[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
+1. 「**[!UICONTROL プリセットのタイトル]**」、「**[!UICONTROL タイプ]**」、「**[!UICONTROL 公開済み]**」または「**[!UICONTROL 状態]**」を選択して、その列見出しで並べ替えます。 例えば、「**[!UICONTROL タイプ]**」を選択して、ビューアプリセットのタイプをアルファベット順またはアルファベットの逆の順序で並べ替えます。
 
 ## ビューアプリセットの編集 {#editing-viewer-presets}
 
@@ -554,17 +554,17 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 **ビューアプリセットを編集するには：:**
 
-1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
+1. Experience Managerの左上隅にあるExperience Managerロゴを選択し、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]**/**[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
 1. ビューアプリセットのタイトルの左側にあるチェックボックスをオンにして、プリセットを選択します。
-1. ツールバーの「**[!UICONTROL 編集]**」をタップします。
+1. ツールバーの「**[!UICONTROL 編集]**」を選択します。
 1. **[!UICONTROL ビューアプリセットエディター]**&#x200B;ページで、「**[!UICONTROL 外観]**」タブと「**[!UICONTROL 動作]**」タブのオプションを使用して、必要な変更をビューアプリセットに加えます。
 
-   「**[!UICONTROL 外観]**」タブで、ビューアプリセットエディターページの左上隅近くにある「**[!UICONTROL デスクトップ]**」、「**[!UICONTROL タブレット]**」、「**[!UICONTROL 電話]**」のいずれかをタップして、アセットの表示モードを変更します。
+   「**[!UICONTROL 外観]**」タブで、ビューアプリセットエディターページの左上隅付近にある「**[!UICONTROL デスクトップ]**」、「**[!UICONTROL タブレット]**」、「**[!UICONTROL 電話]**」のいずれかを選択して、アセットの表示モードを変更します。
 
 1. ページの右上隅近くで、次のいずれかの操作を行います。
 
-   * 「**[!UICONTROL 保存]**」をタップして変更内容を保存し、ビューアプリセットページに戻ります。
-   * 「**[!UICONTROL キャンセル]**」をタップして変更内容をキャンセルし、ビューアプリセットページに戻ります。
+   * 「**[!UICONTROL 保存]**」を選択して変更内容を保存し、ビューアプリセットページに戻ります。
+   * 「**[!UICONTROL キャンセル]**」を選択して変更内容をキャンセルし、ビューアプリセットページに戻ります。
 
 ## カスタムビューアプリセットの削除 {#deleting-custom-viewer-presets}
 
@@ -572,9 +572,9 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 **カスタムビューアプリセットを削除するには：:**
 
-1. Adobe Experience Manager の左上隅にある Adobe Experience Manager ロゴをタップし、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]／[!UICONTROL ビューアプリセット]**&#x200B;をタップします。
-1. ビューアプリセットページで、「プリセットのタイトル」のチェックボックスをオンにして、**[!UICONTROL ごみ箱]**&#x200B;アイコンをタップします。
-1. 「**[!UICONTROL 削除]**」をタップします。
+1. Experience Managerの左上隅にあるExperience Managerロゴを選択し、左側のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）/**[!UICONTROL アセット]/[!UICONTROL ビューアプリセット]**&#x200B;を選択します。
+1. ビューアプリセットページで、「プリセットのタイトル」をオンにし、**[!UICONTROL ごみ箱]**&#x200B;アイコンを選択します。
+1. 「**[!UICONTROL 削除]**」を選択します。
 
 ## アセットへのビューアプリセットの適用 {#applying-a-viewer-preset-to-an-asset}
 
@@ -582,7 +582,7 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
 **アセットにビューアプリセットを適用するには:**
 
-1. アセットを開き、ページの左上隅付近にあるドロップダウンメニュータップして、「**[!UICONTROL ビューア]**」を選択します。
+1. アセットを開き、ページの左上隅付近にあるドロップダウンメニューを選択し、「**[!UICONTROL ビューア]**」を選択します。
 
    >[!NOTE]
    >
@@ -592,8 +592,8 @@ iOS、Android™ 2.x および Android™ 3.x デバイスでサポートされ�
 
    [この URL をコピー](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)して、他のユーザーと共有できます。
 
-## ビューアプリセットを使用するアセットの配信 {#delivering-assets-with-viewer-presets}
+## ビューアプリセットを使用したアセットの配信 {#delivering-assets-with-viewer-presets}
 
-ビューアプリセットの URL を取得する方法については、[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。[Web ページへのビデオビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)も参照してください。
+ビューアプリセットのURLを取得するには、[WebアプリケーションへのURLのリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。 [Webページへのビデオビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)も参照してください。
 
-Adobe Experience Manager を WCM として使用している場合は、ビューアプリセットを使用するアセットをページに直接追加できます。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+Adobe Experience Manager を WCM として使用している場合は、ビューアプリセットを使用するアセットをページに直接追加できます。[ページへのDynamic Media Assetsの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
