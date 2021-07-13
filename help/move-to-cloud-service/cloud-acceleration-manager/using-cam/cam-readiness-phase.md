@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Managerの準備段階
 description: このページでは、Cloud Acceleration Managerの準備段階の概要を説明します。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
@@ -133,4 +133,4 @@ Cloud Acceleration Managerでプロジェクトを作成したら、準備段階
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順（実装フェーズの使用）を確認する準備が整いました。
+Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順を確認し、[実装段階](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en)を使用します。
