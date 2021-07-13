@@ -1,10 +1,7 @@
 ---
 title: Cloud Acceleration Managerの概要
 description: このページでは、Cloud Acceleration Managerの使用方法と使用開始方法の概要を説明します。
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e0088f616987dbba73674f4d430406322a7ec029
+source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 4%
@@ -12,7 +9,7 @@ ht-degree: 4%
 ---
 
 
-# Cloud Acceleration Managerの概要{#get-started-cam}
+# Cloud Acceleration Managerの概要 {#get-started-cam}
 
 Cloud Acceleration Manager(CAM)は、お客様の現在のAEM実装を評価する無料のクラウドベースアプリケーションで、Adobeが推奨する移行手法に従って、AEMへのCloud Serviceの管理に役立ちます。
 
@@ -23,7 +20,7 @@ Cloud Acceleration Manager(CAM)は、お客様の現在のAEM実装を評価す�
 * CAMへのログイン方法の理解
 * CAMのUIからプロジェクトを作成する
 
-## Cloud Acceleration Managerの使用{#using-cam}
+## Cloud Acceleration Managerの使用 {#using-cam}
 
 Cloud Acceleration Manager(CAM)は、お客様とパートナーに対し、移行ウィザードの形式で1回限りの移行操作を提供します。初期評価を提供し、AEMをCloud Serviceとして成功に導くための適切なツール、ドキュメント、ベストプラクティスを示します。
 
@@ -37,7 +34,7 @@ Cloud Acceleration Manager(CAM)は、お客様とパートナーに対し、移�
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
 
-### Cloud Acceleration Managerでのプロジェクトの作成と管理{#create-project}
+### Cloud Acceleration Managerでのプロジェクトの作成と管理 {#create-project}
 
 Cloud Acceleration Manager(CAM)のランディングページを使用すると、複数のプロジェクトを作成および編集できます。
 
@@ -62,11 +59,11 @@ Cloud Acceleration Manager(CAM)のランディングページを使用すると�
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
 
-## プロジェクトの管理{#manage-project}
+## プロジェクトの管理 {#manage-project}
 
 プロジェクト名、説明、サムネール画像を編集したり、プロジェクトを削除したりできます。
 
-### プロジェクトの編集{#edit-project}
+### プロジェクトの編集 {#edit-project}
 
 以下の手順に従って、プロジェクトを編集します。
 
@@ -80,7 +77,7 @@ Cloud Acceleration Manager(CAM)のランディングページを使用すると�
 
 1. 「**更新**」をクリックして、変更をコミットします。
 
-### プロジェクト{#delete-project}の削除
+### プロジェクトの削除 {#delete-project}
 
 以下の手順に従って、プロジェクトを削除します。
 
@@ -90,6 +87,6 @@ Cloud Acceleration Manager(CAM)のランディングページを使用すると�
 
 1. 「**削除**」をクリックして、手順を確定します。
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順（準備段階の使用）を確認する準備が整いました。
