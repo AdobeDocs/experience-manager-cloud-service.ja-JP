@@ -1,15 +1,20 @@
 ---
 title: 運用開始移行段階
 description: 運用開始移行段階
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 819a94f3ec10268bca4ebbb30f4a6f44fb460bca
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 83%
+source-wordcount: '83'
+ht-degree: 49%
 
 ---
 
 
 # 運用開始 {#golive-migration}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_golive_prep"
+>title="運用開始準備"
+>abstract="AEMをCloud Serviceとしてスムーズかつ正常に運用し続けるには、コードとコンテンツの凍結期間、繰り返しのテスト、コンテンツの追加、パフォーマンステスト、セキュリティテストなどを計画する必要があります。"
 
 AEM as a Cloud Service 上でうまくスムーズに運用を開始できるようにするには、次の手順を実行することを検討してください。
 
