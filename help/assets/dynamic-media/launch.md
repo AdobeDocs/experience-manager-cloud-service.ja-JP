@@ -1,17 +1,17 @@
 ---
-title: Dynamic Media ビューアと Adobe Analytics および Experience Platform Launch の統合
+title: Dynamic Media ViewersとAdobe AnalyticsおよびExperience Platform Launchの統合
 description: Platform Launch および Dynamic Media Viewers 5.13 用の Dynamic Media ビューア拡張機能によって、Adobe Analytics および Platform Launch のお客様は、Platform Launch の設定でビューアーに固有のイベントやデータを使用する方法を説明します。
 feature: アセットレポート
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
 workflow-type: tm+mt
-source-wordcount: '6662'
-ht-degree: 99%
+source-wordcount: '6676'
+ht-degree: 84%
 
 ---
 
-# Dynamic Media ビューアと Adobe Analytics および Experience Platform Launch の統合 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Dynamic Media ViewersとAdobe AnalyticsおよびExperience Platform Launchの統合 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Adobe Analytics と Experience Platform Launch および Dynamic Media ビューアの統合とは  {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -39,11 +39,11 @@ Platform Launch および Dynamic Media Viewers 5.13 用の *Dynamic Media ビ�
 
 Experience Platform Launch との統合の主な事例は、Experience Manager Assets と Experience Manager Sites の両方を使用する顧客です。このようなシナリオでは、Experience Manager のオーサーノードと Experience Platform Launch の間に標準的な統合を設定し、Sites インスタンスを Experience Platform Launch プロパティに関連付けることができます。その後、Site ページに追加された Dynamic Media WCM コンポーネントは、ビューアのデータとイベントを追跡します。
 
-[Experience Manager Sites での Dynamic Media ビューアのトラッキング](#tracking-dynamic-media-viewers-in-aem-sites)を参照してください。
+[Experience ManagerサイトでのDynamic Mediaビューアの追跡](#tracking-dynamic-media-viewers-in-aem-sites)を参照してください。
 
 統合の 2 番目の事例は、Experience Manager Assets のみ、または Dynamic Media Classic を使用する顧客です。その場合、ビューアの埋め込みコードを取得して、Web サイトページに追加します。次に、Experience Platform Launch から Experience Platform Launch ライブラリの実稼動用 URL を取得し、Web ページのコードに手動で追加します。
 
-[埋め込みコードを使用した Dynamic Media ビューアのトラッキング](#tracking-dynamic-media-viewers-using-embed-code)を参照してください。
+[埋め込みコード](#tracking-dynamic-media-viewers-using-embed-code)を使用したDynamic Mediaビューアの追跡を参照してください。
 
 ## 統合でのデータとイベントのトラッキングの仕組み {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -59,7 +59,7 @@ Experience Platform Launch では、*データ要素*&#x200B;と&#x200B;*ルー�
 
 Experience Platform Launch のデータ要素は、名前の付いたプロパティです。このプロパティの値は、静的に定義されるか、Web ページの状態や Dynamic Media ビューアのデータに基づいて動的に計算されます。
 
-データ要素の定義で使用できるオプションは、Experience Platform Launch プロパティにインストールされている拡張機能によって異なります。「コア」拡張機能はプレインストールされており、どのような設定でもすぐに使用できます。この「コア」拡張機能を使用すると、cookie、JavaScript™ コード、クエリ文字列、その他多くのソースから取得した値を持つデータ要素を定義できます。
+データ要素の定義で使用できるオプションは、Experience Platform Launch プロパティにインストールされている拡張機能によって異なります。「コア」拡張機能はプレインストールされており、どのような設定でもすぐに使用できます。この「コア」拡張機能を使用すると、cookie、JavaScript コード、クエリ文字列、その他多くのソースから取得した値を持つデータ要素を定義できます。
 
 Adobe Analytics でトラッキングをおこなう場合は、[拡張機能のインストールとセットアップ](#installing-and-setup-of-extensions)で説明されているように、他にいくつか拡張機能をインストールする必要があります。Dynamic Media ビューア拡張機能には、Dynamic Viewer イベントの引数である値のデータ要素を定義する機能が追加されています。例えば、ビューアのタイプや、読み込み時にビューアから報告されるアセット名、エンドユーザーがズームしたときに報告されるズームレベルなどを参照できます。
 
@@ -129,23 +129,23 @@ Experience Cloud アカウントが Adobe Analytics for Audio and Video を使�
 
 現在、ビデオトラッキングのサポートは、[トラッキングの概要](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events)で説明されているように、「コア再生」トラッキングのみに制限されます。具体的には、QoS、広告、チャプター／セグメント、エラーのトラッキングはサポートされていません。
 
-## Dynamic Media ビューア拡張機能の使用 {#using-the-dynamic-media-viewers-extension}
+## Dynamic Media Viewers拡張機能の使用 {#using-the-dynamic-media-viewers-extension}
 
 「[統合の事例](#use-cases-for-the-integration)」で説明したように、Experience Manager Sites の新規 Experience Platform Launch 統合では、埋め込みコードを使用して Dynamic Media ビューアを追跡できます。
 
-### Experience Manager Sites での Dynamic Media ビューアのトラッキング {#tracking-dynamic-media-viewers-in-aem-sites}
+### Experience ManagerサイトでのDynamic Mediaビューアの追跡 {#tracking-dynamic-media-viewers-in-aem-sites}
 
-Experience Manager Sites で Dynamic Media ビューアを追跡するには、[すべての統合ピースの設定](#configuring-all-the-integration-pieces)で説明している手順をすべて実行する必要があります。具体的には、IMS 設定と Experience Platform Launch クラウド設定を作成する必要があります。
+Experience ManagerサイトでDynamic Mediaビューアを追跡するには、 [すべての統合ピースの設定](#configuring-all-the-integration-pieces)の節に示す手順をすべて実行する必要があります。 具体的には、IMS 設定と Experience Platform Launch クラウド設定を作成する必要があります。
 
 適切な設定に従い、Dynamic Media でサポートされる WCM コンポーネントを使用して Sites ページに追加した Dynamic Media ビューアは、Adobe Analytics、Adobe Analytics for Video、またはその両方のデータを自動的に追跡します。
 
-詳しくは、[Adobe Sites 使用によるページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+[Adobeサイトを使用したページへのDynamic Media Assetsの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
-### 埋め込みコードを使用した Dynamic Media ビューアのトラッキング {#tracking-dynamic-media-viewers-using-embed-code}
+### 埋め込みコードを使用したDynamic Mediaビューアの追跡 {#tracking-dynamic-media-viewers-using-embed-code}
 
 Experience Manager Sites を使用していない、または Experience Manager Sites 以外の Web ページに Dynamic Media ビューアを埋め込んでいる、またはその両方に該当するお客様は、引き続き Experience Platform Launch 統合を使用できます。
 
-[Adobe Analytics の設定](#configuring-adobe-analytics-for-the-integration)および [Experience Platform Launch の設定](#configuring-adobe-launch-for-the-integration)の設定手順を実行してください。ただし、Experience Manager 関連の設定手順は不要です。
+[Adobe Analytics](#configuring-adobe-analytics-for-the-integration)の設定および[Experience Platform Launch](#configuring-adobe-launch-for-the-integration)の設定の手順を実行します。 ただし、Experience Manager 関連の設定手順は不要です。
 
 適切に設定すれば、Dynamic Media ビューアを使用した Web ページに Experience Platform Launch サポートを追加できます。
 
@@ -153,12 +153,12 @@ Experience Platform Launch ライブラリの埋め込みコードの使用方�
 
 Experience Manager Dynamic Media の埋め込みコード機能の使用方法について詳しくは、[Web ページへのビデオまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
-**埋め込みコードを使用して Dynamic Media ビューアを追跡するには:**
+**埋め込みコードを使用してDynamic Mediaビューアを追跡するには：**
 
 1. Dynamic Media ビューアを埋め込む Web ページを準備します。
-1. まず、Experience Platform Launch にログインして、Experience Platform Launch ライブラリの埋め込みコードを取得します（[Experience Platform Launch の設定](#configuring-adobe-launch-for-the-integration)を参照）。
-1. **[!UICONTROL プロパティ]**&#x200B;をクリックし、「**[!UICONTROL 環境]**」タブをクリックします。
-1. Web ページの環境に関連する環境レベルを取得します。次に、「**[!UICONTROL インストール]**」列のボックスアイコンをクリックします。
+1. 最初にExperience Platform Launchにログインして、Experience Platform Launchライブラリの埋め込みコードを取得します([Experience Platform Launch](#configuring-adobe-launch-for-the-integration)の設定を参照)。
+1. **[!UICONTROL プロパティ]**&#x200B;を選択し、「**[!UICONTROL 環境]**」タブを選択します。
+1. Web ページの環境に関連する環境レベルを取得します。次に、「****&#x200B;をインストール」列で、ボックスのアイコンを選択します。
 1. **[!UICONTROL Web インストール手順]**&#x200B;ダイアログボックスで、Experience Platform Launch ライブラリの埋め込みコード全体と、それを囲む `<script/>` タグをコピーします。
 
 ## Dynamic Media ビューア拡張機能リファレンスガイド {#reference-guide-for-the-dynamic-media-viewers-extension}
@@ -174,7 +174,7 @@ Experience Manager Dynamic Media の埋め込みコード機能の使用方法�
 
 また、ビューアの設定で `launch=0` パラメーターを指定して、ビューアで Experience Platform Launch の統合を明示的に無効にするオプションもあります。このパラメーターのデフォルト値は `1` です。
 
-### Dynamic Media ビューア拡張機能の設定 {#configuring-the-dynamic-media-viewers-extension}
+### Dynamic Media Viewers拡張機能の設定 {#configuring-the-dynamic-media-viewers-extension}
 
 Dynamic Media ビューア拡張機能の唯一の設定オプションは、**[!UICONTROL Adobe Media Analytics for Audio and Video を有効にする]**&#x200B;です。
 
@@ -195,7 +195,7 @@ Dynamic Media ビューア拡張機能で提供されるデータ要素タイプ
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-各ビューアタイプでサポートされるイベントのリストを照会するには、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja)を参照し、特定のビューアセクションに移動してサブセクションの「Adobe Analytics トラッキングのサポート」をクリックします。現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
+各ビューアタイプでサポートされるイベントのリストについては、 [Dynamic Mediaビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja)を参照してください。特定のビューアセクションに移動し、「 Adobe Analyticsトラッキングのサポート」サブセクションを選択します。 現在、Dynamic Media ビューアリファレンスガイドでは、イベントの引数について説明していません。
 
 次に、Dynamic Media ビューアの&#x200B;*データ要素*&#x200B;のライフサイクルを考えてみましょう。このようなデータ要素の値は、対応する Dynamic Media ビューアイベントがページで発生した後に設定されます。例えば、データ要素が **[!UICONTROL LOAD]** イベントとその「asset」引数を指しているとします。このようなデータ要素の値は、ビューアが初めて LOAD イベントを実行した後に有効なデータを受け取ります。データ要素が **[!UICONTROL ZOOM]** イベントとその「scale」引数を指している場合、このようなデータ要素の値は、ビューアが初めて **[!UICONTROL ZOOM]** イベントを送信するまで空のままです。
 
@@ -252,7 +252,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 最も簡単な方法は、次の 2 つの手順を実行することです。
 
 * まず、1 つ以上のデータ要素を定義します。各データ要素は、Dynamic Media ビューアイベントのパラメーターを表します。
-* 最後に、Adobe Analytics 拡張機能の変数設定エディターで、データ要素ピッカーアイコン（3 つの重なったディスク）をクリックし、データ要素を選択ダイアログボックスを開き、データ要素を選択します。
+* 最後に、 Adobe Analytics拡張機能の変数設定エディターで、データ要素ピッカーアイコン（3つの積み重ねディスク）を選択してデータ要素を選択ダイアログボックスを開き、そこからデータ要素を選択します。
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
@@ -262,7 +262,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-データ要素を使用する場合と、直接イベント引数の参照を使用する場合では、重要な違いがあることに注意してください。データ要素の場合、「変数を設定」トリガーがどのイベントに属していてもかまいません。ルールをトリガーするイベントは、動的ビューアとは無関係の場合があります（例えば、Core 拡張機能から Web ページをクリックする場合など）。ただし、直接引数参照を使用する場合は、ルールをトリガーするイベントが、参照するイベント引数に対応していることを確認することが重要です。
+データ要素を使用する場合と、直接イベント引数の参照を使用する場合では、重要な違いがあることに注意してください。データ要素の場合、「変数を設定」トリガーがどのイベントに属していてもかまいません。ルールをトリガーするイベントは、動的ビューアとは関係ない場合があります（Core拡張機能からWebページを選択する場合など）。 ただし、直接引数参照を使用する場合は、ルールをトリガーするイベントが、参照するイベント引数に対応していることを確認することが重要です。
 
 例えば、`%event.detail.dm.LOAD.asset%` の参照は、ルールが Dynamic Media ビューア拡張機能の **[!UICONTROL LOAD]** イベントによってトリガーされる場合、正しいアセット名を返します。ただし、他のイベントの場合は空の値を返します。
 
@@ -417,7 +417,7 @@ Dynamic Media ビューア拡張機能を使用すると、Dynamic Media ビュ�
 
 設定の一環として、Adobe Analytics と Experience Platform Launch が既に有効になっている Adobe Experience Cloud の会社にアクセスできることを確認してください。
 
-## 統合のための Adobe Analytics の設定 {#configuring-adobe-analytics-for-the-integration}
+## 統合のためのAdobe Analyticsの設定 {#configuring-adobe-analytics-for-the-integration}
 
 Adobe Analytics を設定した後、統合のために次の設定がおこなわれます。
 
@@ -429,7 +429,7 @@ Adobe Analytics を設定した後、統合のために次の設定がおこな�
 
 **統合のために Adobe Analytics を設定するには**：
 
-1. まず、Experience Cloud [ホームページ](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)から Adobe Analytics にアクセスします。メニューバーで、ページの右上隅付近にあるソリューションアイコン（3 x 3 のドットテーブル）をクリックし、**[!UICONTROL Analytics]** をクリックします。
+1. まず、Experience Cloud [ホームページ](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)から Adobe Analytics にアクセスします。メニューバーで、ページの右上隅付近にあるソリューションアイコン（3 x 3のドットテーブル）を選択し、「**[!UICONTROL Analytics]**」を選択します。
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -445,13 +445,13 @@ Adobe Analytics を設定した後、統合のために次の設定がおこな�
 
    [レポートとレポートスイート](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=ja#manage-report-suites)および[レポートスイートの作成](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja#manage-report-suites)を参照してください。
 
-   Adobe Analytics では、**[!UICONTROL 管理者／レポートスイート]**&#x200B;でレポートスイートを管理します。
+   Adobe Analyticsでは、**[!UICONTROL 管理者]** / **[!UICONTROL レポートスイート]**&#x200B;でレポートスイートを管理します。
 
    ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
    次に、Adobe Analytics 変数を設定します。
 
-### Adobe Analytics 変数の設定 {#setting-up-adobe-analytics-variables}
+### Adobe Analytics変数の設定 {#setting-up-adobe-analytics-variables}
 
 1. Web ページ上の Dynamic Media ビューアの動作を追跡するために使用する、1 つ以上の Adobe Analytics 変数を指定します。
 
@@ -461,30 +461,30 @@ Adobe Analytics を設定した後、統合のために次の設定がおこな�
 
    このドキュメントでは、カスタムトラフィック（prop）変数のみを使用します。これは、Web ページでアクションが発生した場合、数分以内に Analytics のレポートで使用できるようになるためです。
 
-   新しいカスタムトラフィック変数を有効にするには、Adobe Analytics のツールバーで、**[!UICONTROL 管理者／レポートスイート]**&#x200B;をクリックします。
+   新しいカスタムトラフィック変数を有効にするには、Adobe Analyticsのツールバーで、**[!UICONTROL 管理者]** / **[!UICONTROL レポートスイート]**&#x200B;に移動します。
 
-1. **[!UICONTROL レポートスイート管理]**&#x200B;ページで正しいレポートを選択し、ツールバーで&#x200B;****&#x200B;設定を編集／**[!UICONTROL トラフィック]**／**[!UICONTROL トラフィック変数]**&#x200B;をクリックします。
+1. **[!UICONTROL Report Suite Manager]**&#x200B;ページで正しいレポートを選択し、ツールバーで&#x200B;**[!UICONTROL 設定を編集]** / **[!UICONTROL トラフィック]** / **[!UICONTROL トラフィック変数]**&#x200B;に移動します。
 1. 未使用の変数を選択し、わかりやすい名前を付け（**[!UICONTROL ビューアアセット（prop 30）]**）、「有効」列のコンボボックスを「有効」に変更します。
 
    次のスクリーンショットは、ビューアが使用するアセット名を追跡するためのカスタムトラフィック変数（**[!UICONTROL prop30]**）の例です。
 
    ![image2019-6-26_23-6-59](/help/assets/dynamic-media/assets/image2019-6-26_23-6-59.png)
 
-1. 変数リストの下部で、「**[!UICONTROL 保存]**」をクリックします。
+1. 変数リストの下部で、「**[!UICONTROL 保存]**」を選択します。
 
 ### レポートの設定 {#setting-up-a-report}
 
 1. 一般に、Adobe Analytics でのレポートの設定は、特定のプロジェクトのニーズに左右されます。したがって、詳細なレポート設定は、この統合の範囲外です。
 
-   ただし、**[Adobe Analytics 変数の設定](#setting-up-adobe-analytics-variables)**&#x200B;でカスタムトラフィック変数を設定すると、カスタムトラフィックレポートが Adobe Analytics で自動的に使用可能になることを知っていれば十分です。
+   ただし、**[Adobe Analytics変数](#setting-up-adobe-analytics-variables)**&#x200B;の設定でカスタムトラフィック変数を設定すると、Adobe Analyticsでカスタムトラフィックレポートが自動的に使用可能になることがわかります。
 
-   例えば、**[!UICONTROL ビューアアセット（prop 30）]**&#x200B;変数のレポートは、**[!UICONTROL カスタムトラフィック／カスタムトラフィック 21～30／ビューアアセット（prop 30）]**&#x200B;下のレポートメニューから使用できます。
+   例えば、**[!UICONTROL ビューアアセット(prop 30)]**&#x200B;変数のレポートは、**[!UICONTROL カスタムトラフィック]**/**[!UICONTROL カスタムトラフィック21-30]**/**[!UICONTROL ビューアアセット(prop 30)]**&#x200B;のレポートメニューから使用できます。
 
    **[!UICONTROL ビューアアセット（prop 30）]**&#x200B;を作成した直後にこのレポートを表示すると、データが表示されません。これは、統合のこの時点で予想されることです。
 
    ![image2019-6-26_23-12-49](/help/assets/dynamic-media/assets/image2019-6-26_23-12-49.png)
 
-## 統合のための Experience Platform Launch の設定 {#configuring-adobe-launch-for-the-integration}
+## 統合のExperience Platform Launchの設定 {#configuring-adobe-launch-for-the-integration}
 
 Experience Platform Launch を設定した後、統合のために次の設定がおこなわれます。
 
@@ -495,46 +495,48 @@ Experience Platform Launch を設定した後、統合のために次の設定�
 
 **統合のために Experience Platform Launch を設定するには**：
 
-1. まず、Experience Cloud の[ホームページ](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)から Experience Platform Launch にアクセスします。メニューバーで、ページの右上隅付近にあるソリューションアイコン（3 x 3 ドットのテーブル）をクリックし、**[!UICONTROL Launch]** をクリックします。
+1. まず、Experience Cloud の[ホームページ](https://exc-home.experiencecloud.adobe.com/exc-home/home.html#/)から Experience Platform Launch にアクセスします。メニューバーで、ページの右上隅付近にあるソリューションアイコン（3 x 3ドットのテーブル）を選択し、「**[!UICONTROL Launch]**」を選択します。
 
    また、[Experience Platform Launch を直接開く](https://launch.adobe.com/)こともできます。
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
-### Experience Platform Launch でのプロパティの作成 {#creating-a-property-in-adobe-launch}
+### Experience Platform Launch {#creating-a-property-in-adobe-launch}
 
 Experience Platform Launch のプロパティは、すべての設定をまとめた名前付きの設定です。構成設定のライブラリが様々な環境レベル（開発、ステージングおよび実稼動）で生成され、公開されます。
 
 「[Launch プロパティの作成](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html?lang=ja#configure-launch)」も参照してください。
 
-1. Experience Platform Launch で、「**[!UICONTROL 新しいプロパティ]**」をクリックします。
+**Experience Platform Launch:**
+
+1. Experience Platform Launchで、「**[!UICONTROL 新しいプロパティ]**」を選択します。
 1. **[!UICONTROL プロパティを作成]**&#x200B;ダイアログボックスの「**[!UICONTROL 名前]**」フィールドに、Web サイトのタイトルなど、わかりやすい名前を入力します。例：`DynamicMediaViewersProp.`
 1. 「**[!UICONTROL ドメイン]**」フィールドに、Web サイトのドメインを入力します。
 1. 使用したい拡張機能（この場合は *Dynamic Media ビューア*）がまだリリースされていない場合に備えて、「**[!UICONTROL 詳細オプション]**」ドロップダウンで、**[!UICONTROL 拡張機能の開発用に設定（後で変更できません）]**&#x200B;を有効にします。
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
-1. 「**[!UICONTROL 保存]**」をクリックします。
+1. 「**[!UICONTROL 保存]**」を選択します。
 
-   新しく作成されたプロパティをクリック、*拡張機能のインストールとセットアップ*&#x200B;に進みます。
+   新しく作成されたプロパティを選択し、「*拡張機能のインストールと設定*」に進みます。
 
 ### 拡張機能のインストールとセットアップ {#installing-and-setup-of-extensions}
 
-Experience Platform Launch で使用可能なすべての拡張機能は、**[!UICONTROL 拡張機能／カタログ]**&#x200B;に一覧表示されます。
+Experience Platform Launchで使用可能なすべての拡張機能は、**[!UICONTROL 拡張機能]** > **[!UICONTROL カタログ]**&#x200B;の下に表示されます。
 
-拡張機能をインストールするには、「**[!UICONTROL インストール]**」をクリックします。必要に応じて、1 回限りの拡張機能の設定を実行し、「**[!UICONTROL 保存]**」をクリックします。
+拡張機能をインストールするには、「****&#x200B;をインストール」を選択します。 必要に応じて、1回限りの拡張設定を実行し、「**[!UICONTROL 保存]**」を選択します。
 
 必要に応じて、次の拡張機能をインストールし、設定する必要があります。
 
 * （必須）*Experience Cloud ID サービス*&#x200B;拡張機能
 
-追加の設定は必要ありません。提案されたあらゆる値を受け入れます。完了したら、必ず「**[!UICONTROL 保存]**」をクリックします。
+追加の設定は必要ありません。提案されたあらゆる値を受け入れます。完了したら、必ず「**[!UICONTROL 保存]**」を選択します。
 
 詳しくは、[Experience Cloud ID サービス拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=ja#extensions-ref)を参照してください。
 
 * （必須）*Adobe Analytics*&#x200B;拡張機能
 
-この拡張機能を設定するには、Adobe Analytics の&#x200B;**[!UICONTROL 管理者／レポートスイート]**&#x200B;の「**[!UICONTROL レポートスイート ID]**」列見出しにある、レポートスイート ID が必要です。
+この拡張機能を設定するには、Adobe Analyticsの&#x200B;**[!UICONTROL 管理者]** / **[!UICONTROL レポートスイート]**&#x200B;の下にある、**[!UICONTROL レポートスイートID]**&#x200B;列ヘッダーにあるレポートスイートIDが必要です。
 
 （以下のスクリーンショットでは、デモ目的のために、**[!UICONTROL DynamicMediaViewersExtensionDoc]** レポートスイートのレポートスイート ID を使用しています。この ID は、以前の[レポートスイートの選択](#selecting-a-report-suite)で作成および使用されていました）
 
@@ -548,7 +550,7 @@ Experience Platform Launch で使用可能なすべての拡張機能は、**[!U
 
 **[!UICONTROL 拡張機能のインストール]**&#x200B;ページで、「**[!UICONTROL 一般]**」を展開し、「トラッキングサーバー」を指定します。トラッキングサーバーはテンプレート `<trackingNamespace>.sc.omtrdc.net` に従います。`<trackingNamespace>` は、プロビジョニング電子メールで取得した情報です。
 
-「**[!UICONTROL 保存]**」をクリックします。
+「**[!UICONTROL 保存]**」を選択します。
 
 詳しくは、[Adobe Analytics 拡張機能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=ja#extensions-ref)を参照してください。
 
@@ -566,7 +568,7 @@ Experience Platform Launch で使用可能なすべての拡張機能は、**[!U
 
 このドキュメントの作成時点では、*Dynamic Media ビューア*&#x200B;拡張機能は、Experience Platform Launch プロパティが開発用に作成されている場合にのみ使用できます。
 
-[Experience Platform Launch でのプロパティの作成](#creating-a-property-in-adobe-launch)を参照してください。
+[Experience Platform Launch](#creating-a-property-in-adobe-launch)でのプロパティの作成を参照してください。
 
 拡張機能のインストールと設定が完了すると、少なくとも次の 5 つの拡張機能（ビデオをトラッキングしていない場合は 4 つ）が拡張機能／インストール領域に表示されます。
 
@@ -580,7 +582,7 @@ Experience Platform Launch を使用したトラッキングの概要につい�
 
 ビューアの読み込み時にアセット名を追跡する方法を示す Experience Platform Launch のサンプル設定については、[サンプル設定](#sample-configuration)を参照してください。
 
-拡張機能の機能について詳しくは、[Dynamic Media ビューア拡張機能の設定](#configuring-the-dynamic-media-viewers-extension)を参照してください。
+拡張機能の機能について詳しくは、 [Dynamic Mediaビューア拡張機能の設定](#configuring-the-dynamic-media-viewers-extension)を参照してください。
 
 ### ライブラリの公開 {#publishing-a-library}
 
@@ -595,11 +597,11 @@ Experience Platform Launch 環境について詳しくは、[環境](https://exp
 * 必要な変更（新しい変更や更新）をすべてライブラリに含めて、新しいライブラリを追加して構築。
 * 様々な環境レベルを通じてライブラリを移動（開発からステージングおよび実稼動へ）。
 
-#### 新しいライブラリの追加と構築 {#adding-and-building-a-new-library}
+#### 新しいライブラリの追加とビルド {#adding-and-building-a-new-library}
 
 1. Experience Platform Launch で初めて「公開」タブを開くと、ライブラリリストは空になります。
 
-   左の列で、「**[!UICONTROL 新しいライブラリを追加]**」をクリックします。
+   左側の列で、「**[!UICONTROL 新しいライブラリを追加]**」を選択します。
 
    ![image2019-7-15_14-43-17](assets/image2019-7-15_14-43-17.png)
 
@@ -607,11 +609,11 @@ Experience Platform Launch 環境について詳しくは、[環境](https://exp
 
    *DynamicMediaViewersLib*
 
-   「環境」ドロップダウンリストから、環境レベルを選択します。最初は、選択できるのは開発レベルのみです。ページの左下近くにある「**[!UICONTROL 変更されたすべてのリソースを追加]**」をクリックします。
+   「環境」ドロップダウンリストから、環境レベルを選択します。最初は、選択できるのは開発レベルのみです。ページの左下近くにある「**[!UICONTROL 変更されたすべてのリソースを追加]**」を選択します。
 
    ![image2019-7-15_14-49-41](assets/image2019-7-15_14-49-41.png)
 
-1. ページの右上隅にある「**[!UICONTROL 開発用に保存してビルド]**」をクリックします。
+1. ページの右上隅付近にある「**[!UICONTROL 開発用に保存してビルド]**」を選択します。
 
    数分でライブラリが作成され、使用できる状態になります。
 
@@ -619,36 +621,36 @@ Experience Platform Launch 環境について詳しくは、[環境](https://exp
 
    >[!NOTE]
    >
-   >次に Experience Platform Launch の設定を変更するときは、**[!UICONTROL プロパティ]**&#x200B;設定の下の「**[!UICONTROL 公開]**」タブに移動し、以前に作成したライブラリをクリックします。
+   >次回Experience Platform Launch設定を変更する際に、**[!UICONTROL プロパティ]**&#x200B;設定の下の「**[!UICONTROL 公開]**」タブに移動し、以前に作成したライブラリを選択します。
    >
    >
-   >ライブラリの公開画面で、「**[!UICONTROL 変更されたすべてのリソースを追加]**」をクリックし、「**[!UICONTROL 開発用に保存してビルド]**」をクリックします。
+   >ライブラリの公開画面で、「**[!UICONTROL 変更されたすべてのリソースを追加]**」を選択し、「**[!UICONTROL 開発用に保存してビルド]**」を選択します。
 
-#### 環境レベルを通じてライブラリを移動 {#moving-a-library-up-through-environment-levels}
+#### 環境レベルでのライブラリの上への移動 {#moving-a-library-up-through-environment-levels}
 
-1. 新しいライブラリが追加されると、そのライブラリはまず開発環境に表れます。これをステージング環境レベル（「送信済み」列に対応）に移動するには、ライブラリのドロップダウンメニューで「**[!UICONTROL 承認用に送信]**」をクリックします。
+1. 新しいライブラリが追加されると、そのライブラリはまず開発環境に表れます。これをステージング環境レベル（「送信済み」列に対応）に移動するには、ライブラリのドロップダウンメニューから「**[!UICONTROL 承認用に送信]**」を選択します。
 
    ![image2019-7-15_15-52-37](assets/image2019-7-15_15-52-37.png)
 
-1. 確認ダイアログボックスで、「**[!UICONTROL 送信]**」をクリックします。
+1. 確認ダイアログボックスで、「**[!UICONTROL 送信]**」を選択します。
 
-   ライブラリが「送信済み」列に移動した後、ライブラリのドロップダウンメニューで、「**[!UICONTROL ステージング用にビルド]**」をクリックします。
+   ライブラリが「送信済み」列に移動したら、ライブラリのドロップダウンメニューから、「**[!UICONTROL ステージング用にビルド]**」を選択します。
 
    ![image2019-7-15_15-54-37](assets/image2019-7-15_15-54-37.png)
 
 1. ステージング環境から実稼動環境（「発行済み」列）にライブラリを移動するには、同様のプロセスに従います。
 
-   まず、ドロップダウンメニューの「**[!UICONTROL 公開の承認]**」をクリックします。
+   まず、ドロップダウンメニューから「**[!UICONTROL 公開の承認]**」を選択します。
 
    ![image2019-7-15_16-7-39](assets/image2019-7-15_16-7-39.png)
 
-1. ドロップダウンメニューの「**[!UICONTROL ビルドして実稼動環境に公開]**」をクリックします。
+1. ドロップダウンメニューから、「**[!UICONTROL ビルドして実稼動環境に公開]**」を選択します。
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
    Experience Platform Launch での公開プロセスについて詳しくは、[公開](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html#publish)を参照してください。
 
-## 統合のための Adobe Experience Manager の設定 {#configuring-adobe-experience-manager-for-the-integration}
+## 統合のためのAdobe Experience Managerの設定 {#configuring-adobe-experience-manager-for-the-integration}
 
 <!-- Prerequisites list below should be verified by Sasha -->
 
@@ -663,40 +665,40 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 * Experience Manager IMS の設定。
 * Experience Platform Launch クラウドの設定。
 
-### Experience Manager IMS の設定 {#configuring-aem-ims}
+### Experience ManagerIMSの設定 {#configuring-aem-ims}
 
-1. Experience Manager オーサーで、ツールアイコン（ハンマー）をクリックし、**[!UICONTROL セキュリティ／Adobe IMS 設定]**&#x200B;をクリックします。
+1. Experience Managerオーサーで、ツールアイコン（ハンマー）を選択し、**[!UICONTROL セキュリティ]** /**[!UICONTROL AdobeIMS設定]**&#x200B;に移動します。
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
-1. Adobe IMC 設定ページの左上隅付近にある「**[!UICONTROL 作成]**」をクリックします。
-1. **[!UICONTROL AdobeIMSテクニカルアカウント設定]**&#x200B;ページの「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで、「**[!UICONTROL Experience Platformデータ収集]**」をクリックします。
-1. 「**[!UICONTROL 新しい証明書を作成]**」を有効にし、テキストフィールドに証明書に意味のある値を入力します。例えば、*AdobeLaunchIMSCert* と入力します。「**[!UICONTROL 証明書を作成]**」をクリックします。
+1. AdobeIMC設定ページの左上隅付近で、「**[!UICONTROL 作成]**」を選択します。
+1. **[!UICONTROL AdobeIMSテクニカルアカウント設定]**&#x200B;ページの「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで、「**[!UICONTROL Experience Platformデータ収集]**」を選択します。
+1. 「**[!UICONTROL 新しい証明書を作成]**」を有効にし、テキストフィールドに証明書に意味のある値を入力します。例えば、*AdobeLaunchIMSCert* と入力します。「**[!UICONTROL 証明書を作成]**」を選択します。
 
    次の情報メッセージが表示されます。
 
    *有効なアクセストークンを取得するには、新しい証明書の公開鍵を Adobe I/O のテクニカルアカウントに追加する必要があります*
 
-   情報ダイアログボックスを閉じるには、「**[!UICONTROL OK]**」をクリックします。
+   [情報]ダイアログボックスを閉じるには、[**[!UICONTROL OK]**]を選択します。
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. 「**[!UICONTROL 公開鍵をダウンロード]**」をクリックして、公開鍵ファイル（`*.crt`）をローカルシステムにダウンロードします。
+1. 「 **[!UICONTROL 公開鍵をダウンロード]** 」を選択して、公開鍵ファイル(`*.crt`)をローカルシステムにダウンロードします。
 
    >[!NOTE]
    >
-   >この時点で、**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページを&#x200B;***開いたまま***&#x200B;にします。ページは&#x200B;***閉じずに***、「次へ」もクリック&#x200B;***しません***。このページには、手順の後半で戻ってきます。
+   >この時点で、******&#x200B;を開いたまま&#x200B;**[!UICONTROL AdobeIMSテクニカルアカウント設定]**&#x200B;ページを開きます。***ページを閉じない***&#x200B;で、***閉じない***&#x200B;で「**[!UICONTROL 次へ]**」を選択します。 このページには、手順の後半で戻ってきます。
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
 1. 新しいブラウザータブで、[Adobe I/O コンソール](https://console.adobe.io/integrations)に移動します。
 
-1. **[!UICONTROL Adobe I/O コンソール統合]**&#x200B;ページの右上隅近くにある「**[!UICONTROL 新規の統合]**」をクリックします。
-1. **[!UICONTROL 統合の新規作成]**&#x200B;ダイアログボックスで、「**[!UICONTROL API へのアクセス]**」ラジオボタンが選択されていることを確認し、「**[!UICONTROL 続行]**」をクリックします。
+1. **[!UICONTROL Adobe I/Oコンソールの統合]**&#x200B;ページの右上隅付近で、「**[!UICONTROL 新しい統合]**」を選択します。
+1. **[!UICONTROL 新しい統合を作成]**&#x200B;ダイアログボックスで、「**[!UICONTROL API]**&#x200B;にアクセス」ラジオボタンが選択されていることを確認し、「**[!UICONTROL 続行]**」を選択します。
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. **[!UICONTROL 統合の新規作成]**&#x200B;の 2 ページ目で、「**[!UICONTROL Experience Platform Launch API]**」ラジオボタンを有効（オン）にします。ページの右下隅にある「**[!UICONTROL 続行]**」をクリックします。
+1. **[!UICONTROL 統合の新規作成]**&#x200B;の 2 ページ目で、「**[!UICONTROL Experience Platform Launch API]**」ラジオボタンを有効（オン）にします。ページの右下隅にある「**[!UICONTROL 続行]**」を選択します。
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -714,8 +716,8 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
-1. 「**[!UICONTROL 統合を作成]**」をクリックします。
-1. **[!UICONTROL 統合が作成された]**&#x200B;ページで、「**[!UICONTROL 統合の詳細を続行]**」をクリックします。
+1. 「**[!UICONTROL 統合を作成]**」を選択します。
+1. **[!UICONTROL 作成された統合]**&#x200B;ページで、「**[!UICONTROL 統合の詳細を続行]**」を選択します。
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
@@ -728,9 +730,9 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
    _統合の詳細ページ_
 
-1. 前に開いておいた **[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページに戻ります。ページの右上隅にある「**[!UICONTROL 次へ]**」をクリックして、**[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ウィンドウで&#x200B;**[!UICONTROL アカウント]**&#x200B;ページを開きます。
+1. 前に開いておいた **[!UICONTROL Adobe IMS テクニカルアカウント設定]**&#x200B;ページに戻ります。ページの右上隅にある「**[!UICONTROL 次へ]**」を選択して、**[!UICONTROL AdobeIMSテクニカルアカウント設定]**&#x200B;ウィンドウで&#x200B;**[!UICONTROL アカウント]**&#x200B;ページを開きます。
 
-   先に誤ってページを閉じてしまった場合は、Experience Manager オーサーに戻って、**[!UICONTROL ツール／セキュリティ／Adobe IMS 設定]**&#x200B;をクリックします。「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL クラウドソリューション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL Experience Platform Launch]**」を選択します。「**[!UICONTROL 証明書]**」ドロップダウンリストで、以前に作成した証明書の名前を選択します。
+   (前にページを閉じた場合は、Experience Manager作成者に戻り、**[!UICONTROL ツール]** / **[!UICONTROL セキュリティ]** / **[!UICONTROL AdobeIMS設定]**&#x200B;に移動します。 「**[!UICONTROL 作成]**」を選択します。**[!UICONTROL クラウドソリューション]**&#x200B;ドロップダウンリストから、「**[!UICONTROL Experience Platform Launch]**」を選択します。「**[!UICONTROL 証明書]**」ドロップダウンリストで、以前に作成した証明書の名前を選択します。
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
    _Adobe IMS テクニカルアカウント設定 - 証明書ページ_
@@ -743,7 +745,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 1. **[!UICONTROL アカウント]**&#x200B;ページで以下のフィールドに入力します。
 
    * **[!UICONTROL タイトル]** - 説明的なアカウントのタイトルを入力します。
-   * **[!UICONTROL 認証サーバー]** - 以前に開いた統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブをクリックします。次に示すように、サーバー名（パスを除く）をコピーします。
+   * **[!UICONTROL 認証サーバー]** - 以前に開いた統合の詳細ページに戻ります。「**[!UICONTROL JWT]**」タブを選択します。 次に示すように、サーバー名（パスなし）をコピーします。
 
 （サーバー名の例は説明用です）   **[!UICONTROL アカウント]**ページに戻り、その名前を各フィールドに貼り付けます。
 例：`https://ims-na1.adobelogin.com/`（サーバー名の例は説明用です）。
@@ -751,14 +753,14 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
    _統合の詳細ページ - 「JWT」タブ_
 
-1. **[!UICONTROL API キー]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブをクリックし、「**[!UICONTROL API キー（クライアント ID）]**」フィールドの右にある「**[!UICONTROL コピー]**」をクリックします。
+1. **[!UICONTROL API キー]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブを選択し、「**[!UICONTROL APIキー（クライアントID）]**」フィールドの右側にある「**[!UICONTROL コピー]**」を選択します。
 
    **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
    _統合の詳細ページ_
 
-1. **[!UICONTROL クライアントシークレット]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブで、「**[!UICONTROL クライアントシークレットを取得]**」をクリックします。「**[!UICONTROL クライアントシークレット]**」フィールドの右側の「**[!UICONTROL コピー]**」をクリックします。
+1. **[!UICONTROL クライアントシークレット]** - 統合の詳細ページに戻ります。「**[!UICONTROL 概要]**」タブで、「**[!UICONTROL クライアントシークレットを取得]**」を選択します。 「**[!UICONTROL クライアントシークレット]**」フィールドの右側で、「**[!UICONTROL コピー]**」を選択します。
 
    **[!UICONTROL アカウント]**&#x200B;ページに戻り、キーを各フィールドに貼り付けます。
 
@@ -773,15 +775,15 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. **[!UICONTROL アカウント]**&#x200B;ページの右上隅にある「**[!UICONTROL 作成]**」をクリックします。
+1. **[!UICONTROL アカウント]**&#x200B;ページの右上隅近くにある「**[!UICONTROL 作成]**」を選択します。
 
    Experience Manager IMS が設定され、**[!UICONTROL Adobe IMS 設定]**&#x200B;に新しい IMS アカウントが表示されます。
 
    ![image2019-7-15_14-17-54](assets/image2019-7-15_14-17-54.png)
 
-## 統合のための Experience Platform Launch クラウドの設定 {#configuring-adobe-launch-cloud-for-the-integration}
+## 統合のためのExperience Platform Launchクラウドの設定 {#configuring-adobe-launch-cloud-for-the-integration}
 
-1. Experience Manager オーサーの左上隅近くにあるツールアイコン（ハンマー）をクリックし、**[!UICONTROL Cloud Services／Experience Platform Launch の設定]**&#x200B;をクリックします。
+1. Experience Manager作成者の左上隅付近にあるツールアイコン（ハンマー）を選択し、**[!UICONTROL Cloud Services]** /**[!UICONTROL Experience Platform Launch設定]**&#x200B;に移動します。
 
    ![2019-07-26_12-10-38](assets/2019-07-26_12-10-38.png)
 
@@ -791,12 +793,12 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-1. ページの左上隅近くにある「**[!UICONTROL 作成]**」をクリックします。
+1. ページの左上隅付近にある「**[!UICONTROL 作成]**」を選択します。
 1. **[!UICONTROL Experience Platform Launch の設定の作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL 一般]**&#x200B;ページ（1/3 ページ）で、次のフィールドに入力します。
 
    * **[!UICONTROL タイトル]** - 説明的な設定のタイトルを入力します。例： `We.Retail Launch cloud configuration`
 
-   * **[!UICONTROL 関連付けられた Adobe IMS 設定]** - [Experience Manager IMS の設定](#configuring-aem-ims)で前に作成した IMS 設定を選択します。
+   * **[!UICONTROL 関連するAdobeのIMS設定]**  -Experience ManagerのIMSの設定で作成したIMS設定を [選択します](#configuring-aem-ims)。
 
    * **[!UICONTROL 会社]** - 「**[!UICONTROL 会社]**」ドロップダウンリストから、Experience Cloud の会社を選択します。リストが自動的に入力されます。
 
@@ -805,7 +807,7 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)
 
-1. 左上隅近くにある「**[!UICONTROL 次へ]**」をクリックします。
+1. 左上隅付近で、「**[!UICONTROL 次へ]**」を選択します。
 1. **[!UICONTROL Experience Platform Launch の設定の作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL ステージング]**&#x200B;ページ（2/3 ページ）で、次のフィールドに入力します。
 
    「**[!UICONTROL ライブラリ URI]**」フィールドで、Experience Platform Launch ライブラリのステージングバージョンの場所を確認します。Experience Manager によってこのフィールドに自動的に入力されます。
@@ -823,13 +825,13 @@ Experience Manager 設定は、次の 2 つの主な手順で構成されます�
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
-1. 右上隅近くにある「**[!UICONTROL 次へ]**」をクリックします。
+1. 右上隅付近にある「**[!UICONTROL 次へ]**」を選択します。
 1. 必要に応じて、**[!UICONTROL Experience Platform Launch 設定の作成]**&#x200B;ウィンドウの&#x200B;**[!UICONTROL 実稼動]**&#x200B;ページ（3/3 ページ）で、前の&#x200B;**[!UICONTROL ステージング]**&#x200B;ページでおこなったのと同様に、自動入力された実稼動 URI を修正します。
-1. 右上隅近くにある「**[!UICONTROL 作成]**」をクリックします。
+1. 右上隅付近にある「**[!UICONTROL 作成]**」を選択します。
 
    これで、新しい Experience Platform Launch クラウド設定が作成され、Web サイトの隣に表示されます。
 
-1. 新しい Experience Platform Launch クラウド設定を選択します（設定タイトルを選択すると、設定タイトルの左側にチェックマークが表示されます）。ツールバーの「**[!UICONTROL 公開]**」をクリックします。
+1. 新しい Experience Platform Launch クラウド設定を選択します（設定タイトルを選択すると、設定タイトルの左側にチェックマークが表示されます）。ツールバーで、「**[!UICONTROL 公開]**」を選択します。
 
    ![image2019-7-15_15-47-6](assets/image2019-7-15_15-47-6.png)
 
