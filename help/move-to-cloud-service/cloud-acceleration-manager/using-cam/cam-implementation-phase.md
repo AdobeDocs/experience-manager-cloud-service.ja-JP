@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Managerの実装段階
 description: このページでは、Cloud Acceleration Managerの実装フェーズの概要を説明します。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '610'
 ht-degree: 4%
 
 ---
@@ -37,14 +37,14 @@ ht-degree: 4%
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
 
-1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
+1. コンテンツカルーセルに、移行ジャーニーのこのフェーズに関連する情報が表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## コードリファクタリングカードの使用 {#code-refactoring}
 
-「コードリファクタリング」アクティビティカードは、すべての関連情報を提供し、AEMをCloud Serviceとして移行する際に確認する必要があるコードリファクタリング領域を強調表示します。
+「コードリファクタリング」アクティビティカードは、関連するすべての情報を提供し、AEMをCloud Serviceとして移行する際に確認し解決する必要があるコードリファクタリング領域を強調表示します。
 
 この節では、コードリファクタリングアクティビティカードについて説明します。
 
@@ -70,7 +70,7 @@ AEM as a Cloud Serviceデプロイメントカードは、コードをAEM as aCl
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
 
-1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
+1. コンテンツカルーセルに、移行ジャーニーのこのフェーズに関連する情報が表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
@@ -85,16 +85,19 @@ AEM as a Cloud Serviceデプロイメントカードは、コードをAEM as aCl
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
 
-1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
+1. コンテンツカルーセルに、移行ジャーニーのこのフェーズに関連する情報が表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en)と[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en)を確認してください。
 
-### コンテンツ転送ツールアクティビティの見積もり {#calculating}
+### コンテンツ転送時間の見積もり {#calculating}
 
 コンテンツ転送アクティビティの完了に要する時間を見積もるための新しいコンテンツ転送ツール計算ツールが提供されました。 コンテンツリポジトリのサイズスライダーを使用して、プロジェクトに適用するサイズを選択できます。 転送時間は、抽出段階とインジェスト段階によって異なります。
+
+>[!NOTE]
+>この時間は推定値に過ぎない。 ネットワークの速度やインスタンスのスケールアップ時間などの要因は、これらの予測では考慮されていません。
 
 AEMリポジトリのサイズを見積もるには、`http://HOST:PORT/etc/reports/diskusage.html`の下でDisk Usage Reportを実行します。
 
@@ -102,4 +105,4 @@ AEMリポジトリのサイズを見積もるには、`http://HOST:PORT/etc/repo
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Managerへのログイン方法と実装段階の利用方法を学習したら、次の手順[Go Live段階](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)の使用を確認する準備が整いました。
+Cloud Acceleration Managerへのログイン方法と実装段階の利用方法を学習したら、次の手順（[ライブフェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=en)へ移行）を確認します。
