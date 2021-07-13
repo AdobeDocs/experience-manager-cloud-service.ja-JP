@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Managerの概要
 description: このページでは、Cloud Acceleration Managerの使用方法と使用開始方法の概要を説明します。
-source-git-commit: c9fb45208ea8611ec8bcbc641ea23ad21ebfe09e
+source-git-commit: 1e13df5c6dfb9c0d28a540ce089cf722978bd8d3
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '508'
 ht-degree: 4%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 4%
 
 # Cloud Acceleration Managerの概要 {#get-started-cam}
 
-Cloud Acceleration Manager(CAM)は、お客様の現在のAEM実装を評価する無料のクラウドベースアプリケーションで、Adobeが推奨する移行手法に従って、AEMへのCloud Serviceの管理に役立ちます。
+Cloud Acceleration Managerは、Cloud Serviceの計画から運用開始まで、移行プロセス全体を通じてITチームを導くように設計されたクラウドベースのアプリケーションです。 Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、AEMへのCloud Serviceとしてのジャーニーの各段階で役立つように、チームを設定し、移行を成功に導きます。
 
 ## 目的 {#objective}
 
@@ -22,13 +22,15 @@ Cloud Acceleration Manager(CAM)は、お客様の現在のAEM実装を評価す�
 
 ## Cloud Acceleration Managerの使用 {#using-cam}
 
-Cloud Acceleration Manager(CAM)は、お客様とパートナーに対し、移行ウィザードの形式で1回限りの移行操作を提供します。初期評価を提供し、AEMをCloud Serviceとして成功に導くための適切なツール、ドキュメント、ベストプラクティスを示します。
+Cloud Acceleration Manager(CAM)は、ガイド付きジャーニーの形で移行をワンストップで実現します。初期評価を提供し、適切なツール、ドキュメント、ベストプラクティスを示し、AEMをCloud Serviceとして実稼動させることを保証します。
 
 ### Cloud Acceleration Managerに移動 {#navigating}
 
 次の手順に従って、Cloud Acceleration Manager(CAM)に移動します。
 
 1. [Adobe Experience Cloud](https://experience.adobe.com)にログインします。
+
+1. **Experience Manager**&#x200B;カードをクリックします。
 
 1. **Cloud Acceleration Manager**&#x200B;カードで&#x200B;**Launch**&#x200B;をクリックして、ランディングページを開きます。
 
@@ -45,7 +47,7 @@ Cloud Acceleration Manager(CAM)のランディングページを使用すると�
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
-   >CAMを初めて使用するユーザーには、新しいプロジェクトを作成するためのダイアログボックスが表示されます。 過去にCAMを使用したユーザーには、デフォルトのプロジェクトが表示されます。
+   >CAMを初めて使用するユーザーには、新しいプロジェクトを作成するためのダイアログボックスが表示されます。 以前にCAMを使用したユーザーには、デフォルトのプロジェクトまたは以前に作成したプロジェクトが表示されます。
 
 1. プロジェクトの&#x200B;**名前**&#x200B;と&#x200B;**説明**&#x200B;を入力し、「**作成**」をクリックします。
 
@@ -89,4 +91,4 @@ Cloud Acceleration Manager(CAM)のランディングページを使用すると�
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順（準備段階の使用）を確認する準備が整いました。
+Cloud Acceleration Managerへのログイン方法とプロジェクトの作成方法を学習したら、次の手順（[準備段階](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en)）を確認します。
