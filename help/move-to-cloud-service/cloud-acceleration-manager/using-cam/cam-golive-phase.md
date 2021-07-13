@@ -1,10 +1,10 @@
 ---
 title: Cloud Acceleration Managerの運用開始フェーズ
 description: このページでは、Cloud Acceleration Managerの運用開始フェーズの概要を説明します。
-source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
+source-git-commit: 22ee20401a8c576ae56547cf678b9f5c0d69362d
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 1%
+source-wordcount: '150'
+ht-degree: 2%
 
 ---
 
@@ -12,8 +12,6 @@ ht-degree: 1%
 # Cloud Acceleration Managerの運用開始フェーズ {#golive-phase-cam}
 
 Go Liveカードは、AEM as a Cloud Service上での運用をスムーズかつ成功に導くための準備、実行すべき特定のアクション、十分な考慮事項を示す、すべての関連コンテンツを提供します。
-
-GoLiveフェーズには、[Go Live](#go-live)が含まれます。
 
 プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**Go Live**」セクションに移動します（下図を参照）。
 
@@ -31,6 +29,6 @@ GoLiveフェーズには、[Go Live](#go-live)が含まれます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
-1. 移行ジャーニーのこのフェーズに関連する情報を含むコンテンツカルーセルが表示されます。
+1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関連する情報が表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
