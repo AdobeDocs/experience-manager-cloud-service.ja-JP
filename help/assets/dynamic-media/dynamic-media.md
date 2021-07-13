@@ -1,16 +1,16 @@
 ---
-title: Dynamic Media の操作
+title: Dynamic Mediaの使用
 description: Dynamic Media を使用して、Web、モバイルおよびソーシャルサイトで使用するためにアセットを配信する方法を学習します。
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Dynamic Media の操作 {#working-with-dynamic-media}
+# Dynamic Mediaの使用 {#working-with-dynamic-media}
 
 [Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)は、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信するもので、これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
