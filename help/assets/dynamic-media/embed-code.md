@@ -1,25 +1,25 @@
 ---
-title: Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み
+title: WebページにDynamic Mediaビデオビューアまたは画像ビューアを埋め込む
 description: Web ページに Dynamic Media ビデオまたは画像アセットを埋め込む方法を説明します。
 feature: アセット管理
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 6933f053e11320d8201922723879983084c52209
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
-# Web ページへの Dynamic Media ビデオ、画像ビューア、またはディメンショナルビューアの埋め込み {#embedding-the-video-or-image-viewer-on-a-web-page}
+# WebページにDynamic Mediaビデオ、画像ビューア、またはディメンショナルビューアを埋め込む {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Web ページに埋め込んでビデオを再生したりアセットを表示したりする場合は、**[!UICONTROL 埋め込みコード]**&#x200B;機能を使用します。埋め込みコードをクリップボードにコピーして、Web ページに貼り付けることができます。**[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスでは、コードの編集はできません。
 
 Adobe Experience Manager を WCM として使用&#x200B;_していない_&#x200B;場合に限り、URL の埋め込みを実行します。Experience Manager を WCM として使用している場合は、[ページに直接アセットを追加します。](adding-dynamic-media-assets-to-pages.md)
 
-「[Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)」を参照してください。
+[WebアプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)を参照してください。
 
-「[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)」を参照してください。
+[レスポンシブサイト用に最適化された画像の配信](responsive-site.md)を参照してください。
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Adobe Experience Manager を WCM として使用&#x200B;_していない_&#x200B
 
    [画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
-1. 左側のレールでドロップダウンリストを選択して、「**[!UICONTROL ビューア]**」をタップします。
-1. 左側のレールで、ビューアプリセット名をタップします。ビューアプリセットがアセットに適用されます。
-1. 「**[!UICONTROL 埋め込み]**」をタップします。
-1. **[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスで、コード全体をクリップボードにコピーしてから、「**[!UICONTROL 閉じる]**」をタップします。
+1. 左側のレールで、ドロップダウンリストを選択し、「**[!UICONTROL ビューア]**」を選択します。
+1. 左側のレールで、ビューアプリセット名を選択します。 ビューアプリセットがアセットに適用されます。
+1. 「**[!UICONTROL 埋め込み]**」を選択します。
+1. **[!UICONTROL 埋め込みコード]**&#x200B;ダイアログボックスで、コード全体をクリップボードにコピーし、「**[!UICONTROL 閉じる]**」を選択します。
 1. 埋め込みコードを Web ページに貼り付けます。
 
-## HTTP/2 を使用した Dynamic Media アセットの配信 {#using-http-to-deliver-your-dynamic-media-assets}
+## HTTP/2を使用したDynamic Mediaアセットの配信 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。HTTP/2 上で Dynamic Media アセットの配信が可能になり、応答時間と読み込み時間が短縮されました。
 
