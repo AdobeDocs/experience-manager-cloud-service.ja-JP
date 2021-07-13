@@ -1,10 +1,10 @@
 ---
 title: Cloud Acceleration Managerの運用開始フェーズ
 description: このページでは、Cloud Acceleration Managerの運用開始フェーズの概要を説明します。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ GoLiveフェーズには、[Go Live](#go-live)が含まれます。
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
->詳しくは、 Cloud Acceleration Managerのプロジェクトの作成と管理を参照してください。
+>詳しくは、 Cloud Acceleration Managerの[プロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en#create-project)を参照してください。
 
 
 ## Go Liveアクティビティカードの使用 {#go-live}
