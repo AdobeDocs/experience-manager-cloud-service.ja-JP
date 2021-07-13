@@ -1,7 +1,7 @@
 ---
 title: 移行後段階
 description: 移行後段階
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 96%
@@ -19,8 +19,7 @@ AEM as a Cloud Service 環境のトラブルシューティングには、次の
 * **CRXDE Lite**
 * **ログの管理**
 
-
-## 開発者コンソール {#developer-console}
+## デベロッパーコンソール {#developer-console}
 
 AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージ環境、実稼動環境の開発者コンソールでおこなえます。
 
