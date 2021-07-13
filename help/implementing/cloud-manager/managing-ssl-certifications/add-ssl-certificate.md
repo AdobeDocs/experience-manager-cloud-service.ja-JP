@@ -2,17 +2,17 @@
 title: SSL 証明書の追加 - SSL 証明書の管理
 description: SSL 証明書の追加 - SSL 証明書の管理
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: e8848a006a28e87a622779ae62bc43c159b2b20c
+source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 97%
+source-wordcount: '578'
+ht-degree: 92%
 
 ---
 
 # SSL 証明書の追加 {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。AEM as aCloud Serviceは、ドメインに対してワイルドカードSSL証明書を受け入れます。
+>AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け付けます。
 
 証明書のプロビジョニングには数日かかるので、数か月前からでも証明書をプロビジョニングすることをお勧めします。詳しくは、「[SSL 証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)」を参照してください。
 
@@ -38,7 +38,8 @@ SSL ファイルの形式を PEM に変換するには、次の手順に従い�
 
 * Cloud Manager で SSL 証明書をインストールするには、ユーザーがビジネスオーナーまたはデプロイメントマネージャーの役割を持っている必要があります。
 
-* Cloud Manager では、1 つ以上の環境に関連付けることができる SSL 証明書は、証明書の有効期限が切れている場合でも、プログラム全体で常に最大 10 個まで許可されます。ただし、Cloud Manager UI では、最大 50 個までの SSL 証明書をプログラムにインストールできます。
+* Cloud Manager では、1 つ以上の環境に関連付けることができる SSL 証明書は、証明書の有効期限が切れている場合でも、プログラム全体で常に最大 10 個まで許可されます。ただし、Cloud Manager UI では、最大 50 個までの SSL 証明書をプログラムにインストールできます。通常、証明書は複数のドメイン（最大100個のSAN）を対象とする場合があるので、同じ証明書で複数のドメインをグループ化して、この制限内に収めることを検討してください。
+
 
 ## 証明書の追加 {#adding-a-cert}
 
@@ -86,4 +87,4 @@ SSL ファイルの形式を PEM に変換するには、次の手順に従い�
 
 ### 証明書の有効期限 {#certificate-validity-dates}
 
-Cloud Manager で想定している SSL 証明書の有効期間は少なくとも 90 日間です。：証明書チェーンの有効期限を確認します。
+Cloud Managerでは、SSL証明書が今後90日以上有効になる予定です。 証明書チェーンの有効期限を確認します。
