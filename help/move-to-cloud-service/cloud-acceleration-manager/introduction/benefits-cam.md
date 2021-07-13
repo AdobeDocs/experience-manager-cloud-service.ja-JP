@@ -1,9 +1,9 @@
 ---
 title: Cloud Acceleration Managerを使用するメリット
 description: このページでは、Cloud Acceleration Managerを使用する主なメリットについて説明します。
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ Cloud Acceleration Managerを使用する主なメリットは次のとおりで
 
 ## 次の作業 {#whats-next}
 
-Cloud Acceleration Managerの概要を学習したら、 Cloud Acceleration Managerを使用し、使用を開始する準備が整いました。
+Cloud Acceleration Managerの概要を理解したら、次にを使用し、Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)を使い始めます。[
