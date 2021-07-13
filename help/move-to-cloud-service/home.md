@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service への移行
 description: Adobe Experience Manager as a Cloud Service への移行に関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
+source-git-commit: 4041e3fd9a479a64ed38e2bf1a6251fda39e55c2
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 74%
+source-wordcount: '694'
+ht-degree: 70%
 
 ---
 
@@ -27,10 +27,10 @@ AEM as a Cloud Service を使用すると、チームは製品アップグレー
 
 移行プロセスには、次のフェーズが含まれます。Cloud Serviceへの移行プロセス
 
-* 準備
-* 実装
+* [準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-readiness.html?lang=en)
+* [実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-implementation.html?lang=en)
 * 運用開始
-* 運用開始後
+* [運用開始後](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/phases/migration-post-go-live.html?lang=en)
 
 移行をうまくスムーズに行うには、適切な計画を立て、本ガイドで概要を説明しているベストプラクティスに従う必要があります。
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service を使用すると、チームは製品アップグレー
 
 Cloud Acceleration Managerは、Cloud Serviceの計画から運用開始まで、移行プロセス全体を通じてITチームを導くように設計されたクラウドベースのアプリケーションです。 Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、AEMへのCloud Serviceとしてのジャーニーの各段階で役立つように、チームを設定し、移行を成功に導きます。
 
-移行ジャーニーを開始するには、 Cloud Acceleration Manager使用の手引きを参照してください。
+移行プロセスを開始するには、 [Cloud Acceleration Managerの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)を参照してください。
 
 ## Experience ManagerガイドとしてのCloud Service {#aem-guides}
 
