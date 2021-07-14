@@ -2,10 +2,10 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: e6e5fb6eebcd39b46dc4234999e18de9b8e3950e
+source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 65%
+source-wordcount: '1189'
+ht-degree: 61%
 
 ---
 
@@ -200,4 +200,4 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 ![ログ](assets/publish-logs.png "ログ")
 
 コンテンツを公開できなかった場合は、パブリケーション全体が AEM パブリッシュサービスから戻されます。
-その場合は、パブリケーションのキャンセル原因となった項目を特定するために、キューを確認する必要があります。赤色のステータスを示すキューをクリックすると、保留中の項目を含んでいるキューが表示され、必要に応じて、そのキューから 1 つまたはすべての項目をクリアできます。
+この場合、メインの編集可能なキューに赤いステータスが表示され、パブリッシュのキャンセルの原因となった項目を特定するために、レビューする必要があります。 そのキューをクリックすると、保留中の項目が表示され、必要に応じて1つの項目またはすべての項目をクリアできます。
