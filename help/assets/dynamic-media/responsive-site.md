@@ -4,10 +4,10 @@ description: レスポンシブコード機能を使用して、最適化され�
 feature: アセット管理
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 100%
 
 この機能は、Web サイトがサードパーティの WCM で稼動する場合に有効です。ただし、Web サイトが Adobe Experience Manager で稼動する場合は、オフサイトの画像サーバーが画像をレンダリングして Web ページに提供します。
 
-[Web ページへのビデオビューアの埋め込み](embed-code.md)も参照してください。
+[Webページへのビデオビューアの埋め込み](embed-code.md)も参照してください。
 
-[Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)も参照してください。
+[WebアプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)も参照してください。
 
 **レスポンシブサイトに最適化された画像を配信するには：**
 
-1. レスポンシブコードを提供する画像の場所に移動して、ドロップダウンメニューで「**[!UICONTROL レンディション]**」をタップします。
+1. レスポンシブコードを提供する画像の場所に移動し、ドロップダウンメニューで「**[!UICONTROL レンディション]**」を選択します。
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ ht-degree: 100%
    >
    >画像プリセットは自動的に公開されます。
 
-1. 「**[!UICONTROL RESS]**」をタップします。
+1. **[!UICONTROL RESS]**&#x200B;を選択します。
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
