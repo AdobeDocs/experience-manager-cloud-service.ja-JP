@@ -4,9 +4,9 @@ description: 画像プリセットの概要と、画像プリセットの作成�
 feature: 画像プリセット、ビューア、レンディション
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
+source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
 workflow-type: tm+mt
-source-wordcount: '3634'
+source-wordcount: '3633'
 ht-degree: 81%
 
 ---
@@ -87,7 +87,7 @@ Adobe Illustrator のファイル形式は PDF のバリアントです。Adobe 
 
 `Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントのオプションには、`DAM Update Asset` ワークフローを通じてアクセスします。
 
-左上のAdobe Experience Managerで「**[!UICONTROL ツール]** / **[!UICONTROL ワークフロー]** / **[!UICONTROL モデル]** 」に移動します。 ワークフローモデルページで、「**[!UICONTROL DAMアセットの更新]**」を選択し、ツールバーで「**[!UICONTROL 編集]**」を選択します。 DAM アセットの更新ワークフローページで、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントをダブルタップして、ステップのプロパティダイアログボックスを開きます。
+左上のAdobe Experience Managerを選択し、**[!UICONTROL ツール]** / **[!UICONTROL ワークフロー]** / **[!UICONTROL モデル]**&#x200B;に移動します。 ワークフローモデルページで、「**[!UICONTROL DAMアセットの更新]**」を選択し、ツールバーで「**[!UICONTROL 編集]**」を選択します。 DAM アセットの更新ワークフローページで、`Rasterize PDF/AI Image Preview Rendition` プロセスコンポーネントをダブルタップして、ステップのプロパティダイアログボックスを開きます。
 
 #### PDF/AI 画像プレビューレンディションをラスタライズのオプション {#rasterize-pdf-ai-image-preview-rendition-options}
 
