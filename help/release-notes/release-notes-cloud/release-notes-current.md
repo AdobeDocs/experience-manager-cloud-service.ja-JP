@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 18%
+source-wordcount: '1585'
+ht-degree: 21%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 18%
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.6.0 および 2021.5.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as a Cloud Service 2021.6.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
 ### リリース日 {#release-date-june-cm}
 
@@ -62,7 +62,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * 品質ルール `ImmutableMutableMixCheck` が更新され、`/oak:index` ノードが不変として分類されるようになりました。
 
-* 品質ルール `CQBP-84` と `CQBP-84--dependencies` は、1 つのルールに統合されました。この統合の一環として、依存関係のスキャンにより、AEM Runtimeにデプロイされるサードパーティの依存関係の問題をより正確に特定できます。
+* 品質ルール `CQBP-84` と `CQBP-84--dependencies` は、1 つのルールに統合されました。この統合の一環として、AEM ランタイムにデプロイされるサードパーティの依存関係の問題を、依存関係のスキャンでより正確に特定できます。
 
 * 混乱を避けるために、環境の詳細ページのパブリッシュAEMとパブリッシュDispatcherのセグメント行が統合されました。
 
