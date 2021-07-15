@@ -5,9 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
+source-git-commit: 6176665d17432999409baca46c46503d20f8f06b
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 96%
 
 ---
@@ -180,6 +180,7 @@ ht-degree: 96%
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
    + [AEM バージョンのアップデート](deploying/aem-version-updates.md)
    + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
+   + [OSGi設定API](deploying/osgi-configuration-api.md)
 + オーサー層 {#author-tier}
    + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [オーサー層の保護](/help/implementing/author-tier/securing-the-author-tier.md)
