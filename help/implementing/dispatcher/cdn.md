@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 6c48b25d78ecbf3e30f42b2c2e69687b1f3094b8
+source-git-commit: 12bcc10094151cc8666ed169c2b65e2b5379e616
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -20,19 +20,18 @@ ht-degree: 85%
 
 AEM as Cloud Service の出荷時には、組み込みの CDN が搭載されています。その主な目的は、ブラウザーの近くの CDN エッジノードからキャッシュ可能なコンテンツを配信することで、待ち時間を減らすことです。AEM アプリケーションの最適なパフォーマンスを得るために、完全に管理および設定されています。
 
-
 AEM が管理する CDN は、ほとんどの顧客のパフォーマンスとセキュリティに関する要件を満たします。パブリッシュ層では、オプションとして、顧客は独自の CDN からそれらを参照することもできますが、その場合は自社で管理する必要があります。このオプションは、放棄が困難な CDN ベンダーとのレガシー統合を保有する顧客など（ただし、これに限定されない）、特定の前提条件を満たしていることに基づき、ケースバイケースで使用できます。
 
 ## AEM 管理による CDN  {#aem-managed-cdn}
 
-次のセクションの説明に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備をおこないます。
+次のセクションの説明に従って、Cloud Manager セルフサービス UI を使用し、AEM の標準搭載 CDN を使用してコンテンツ配信の準備を行います。
 
 1. [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 **トラフィックの制限**
 
-デフォルトでは、AEM 管理による CDN セットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境のパブリッシュサービスへのトラフィックを制限する場合（例えば、一定の IP アドレスでステージングを制限する場合）、Cloud Manager UI を使用して、セルフサービスでこの操作をおこなうことができます。
+デフォルトでは、AEM 管理による CDN セットアップの場合、すべてのパブリックトラフィックは、実稼動版と非実稼動版（開発およびステージング）環境の両方で、パブリッシュサービスに到達できます。特定の環境のパブリッシュサービスへのトラフィックを制限する場合（例えば、一定の IP アドレスでステージングを制限する場合）、Cloud Manager UI を使用して、セルフサービスでこの操作を行うことができます。
 
 詳しくは、「[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)」を参照してください。
 
@@ -60,9 +59,9 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 1. `X-Forwarded-Host` ヘッダーをドメイン名で設定します。例：`X-Forwarded-Host:example.com`
 1. ホストヘッダーをオリジンドメインに設定します（AEM CDN の入口）。例：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`
 1. SNI ヘッダーをオリジンに送信します。ホストヘッダーと同様に、SNI ヘッダーはオリジンドメインです。
-1. `X-Edge-Key`または`X-AEM-Edge-Key`（CDNで`X-Edge-*`がストリップされている場合）を設定します。 この値はアドビから取得されます。
-   * これは、AdobeCDNがリクエストのソースを検証し、`X-Forwarded-*`ヘッダーをAEMアプリケーションに渡すために必要です。 例えば、AEMでは`X-Forwarded-Host`を使用してホストヘッダーを決定し、`X-Forwarded-For`を使用してクライアントIPを決定します。 したがって、`X-Forwarded-*`ヘッダーが正しいことを確認する（以下の注を参照）のは、信頼できる呼び出し元（顧客が管理するCDN）の責任となります。
-   * 必要に応じて、`X-Edge-Key`が存在しない場合、AdobeCDNの入口へのアクセスをブロックできます。 AdobeCDNの入力に直接アクセスする必要がある場合は、Adobeに通知してください（ブロックする場合）。
+1. `X-Edge-Key` または `X-AEM-Edge-Key`（CDNで `X-Edge-*` がストリップされる場合）を設定します。この値はアドビから取得されます。
+   * これは、Adobe CDN でリクエストのソースを検証し、`X-Forwarded-*` ヘッダーを AEM アプリケーションに渡すために必要です。例えば、AEM で `X-Forwarded-Host` を使用してホストヘッダーを決定し、`X-Forwarded-For` を使用してクライアント IP を決定します。したがって、`X-Forwarded-*` ヘッダーが正しいことを確認するのは、信頼できる呼び出し元（顧客が管理する CDN）の責任となります（以下のメモを参照）。
+   * 必要に応じて、`X-Edge-Key` が存在しない場合に Adobe CDN の入口へのアクセスをブロックできます。Adobe CDNの入力に直接アクセスする必要がある場合（ブロックする場合）は、アドビにお知らせください。
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
 
