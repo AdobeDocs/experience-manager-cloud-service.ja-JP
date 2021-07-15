@@ -3,14 +3,14 @@ title: AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノート
 feature: リリース情報
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 673ac234f0e9bfc0f5e6878abf5d01d38cbe918f
+source-git-commit: 06dca3b3e94b27f592681e661cd5c9883c0f6422
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 24%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.6.0 の Cloud Manager のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.7.0 の Cloud Manager のリリースノート {#release-notes}
 
 このページでは、AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノートの概要を説明しています。
 
