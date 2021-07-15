@@ -1,7 +1,7 @@
 ---
 title: Cloud Acceleration Managerの実装段階
 description: このページでは、Cloud Acceleration Managerの実装フェーズの概要を説明します。
-source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
+source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 5%
@@ -54,9 +54,9 @@ ht-degree: 5%
 
 1. このページには、重大度レベル別に整理されたコードリファクタリングアクティビティのリストが表示されます。 ハイライト表示された2つのアイコンをクリックすると、詳細を確認できます。
 
-   このページには、3つの異なるタブにコードリファクタリングの考慮事項が表示されます。
+   このページには、次の3つのタブにコードリファクタリングの考慮事項が表示されます。
 
-   * 概要:
+   * 概要
    * Dispatcher
    * テスト
 
