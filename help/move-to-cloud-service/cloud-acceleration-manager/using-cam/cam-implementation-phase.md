@@ -1,10 +1,10 @@
 ---
 title: Cloud Acceleration Managerの実装段階
 description: このページでは、Cloud Acceleration Managerの実装フェーズの概要を説明します。
-source-git-commit: b1a2b7b78349524e842e30f69729fb3351765582
+source-git-commit: 83da3b647e47022a41160f2007d90dc7b23db671
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 4%
+source-wordcount: '689'
+ht-degree: 5%
 
 ---
 
@@ -54,10 +54,27 @@ ht-degree: 4%
 
 1. このページには、重大度レベル別に整理されたコードリファクタリングアクティビティのリストが表示されます。 ハイライト表示された2つのアイコンをクリックすると、詳細を確認できます。
 
+   このページには、3つの異なるタブにコードリファクタリングの考慮事項が表示されます。
+
+   * 概要:
+   * Dispatcher
+   * テスト
+
+   「**概要**」タブに、コードリファクタリングアクティビティのリストが表示されます。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+
+   「**Dispatcher**」タブには、AEMをCloud ServiceのApacheおよびDispatcher設定として構造化する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法が表示されます。 また、クラウド環境でのデバッグについても説明します。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+
+   「**テスト**」タブには、機能、エクスペリエンス監査、UIテストに関する情報が表示されます。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+
+
    >[!NOTE]
    >さらに、ページのタブの内容を確認して、ベストプラクティスアナライザーで扱われていないその他の領域について理解してください。
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5.png)
 
 
 ## AEM as a Cloud Serviceデプロイメントカードの使用 {#aem-as-a-cloud-service-deployment}
