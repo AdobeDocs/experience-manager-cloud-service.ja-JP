@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノート
 feature: リリース情報
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 40e5d00abc3caceadbbb26097d6891f62e2cdbd6
+source-git-commit: e24610cef6d134ddf9ce8abe9a5893deac08eeb6
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 23%
+source-wordcount: '349'
+ht-degree: 24%
 
 ---
 
@@ -34,7 +34,7 @@ AEM as aCloud Service2021.7.0のCloud Managerのリリース日は2021年7月15�
 
 * 設定できるドメインの最大数は、環境ごとに500に増えました。
 
-* **「Gitを管理」**&#x200B;ボタンのタイトルが&#x200B;**「Git情報にアクセス**」に変更され、ダイアログが視覚的に更新されました。
+* **「Gitを管理」**&#x200B;ボタンのタイトルが&#x200B;**「Git情報にアクセス」**&#x200B;に変更され、ダイアログが視覚的に更新されました。
 
 * Cloud Managerで使用されるAEMプロジェクトアーキタイプのバージョンがバージョン28に更新されました。
 
@@ -46,11 +46,9 @@ AEM as aCloud Service2021.7.0のCloud Managerのリリース日は2021年7月15�
 
 * SSL証明書の最大数に達した場合に表示されるエラーメッセージは役に立ちませんでした。
 
-* 状況によっては、概要ページのパイプラインカードに表示されるリリースバージョンに矛盾が生じる場合がありました。
+* 状況によっては、**概要**&#x200B;ページのパイプラインカードに表示されるリリースバージョンに矛盾が生じる場合があります。
 
 * プログラムの追加ウィザードで、作成後に名前を変更できないと誤って表示されていた問題を修正しました。
-
-* IP環境をバインドする際に、「プレビュー」オプションが使用できない許可リストが発生することがありました。
 
 ### 既知の問題 {#known-issues}
 
