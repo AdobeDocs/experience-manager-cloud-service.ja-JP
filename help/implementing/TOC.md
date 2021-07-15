@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: cde8552925a6b0ceb2c30694f127233b05dcc73c
+source-git-commit: 1b52e4af946239309da6eb44d326106d6f552490
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 99%
+source-wordcount: '910'
+ht-degree: 96%
 
 ---
 
@@ -186,5 +186,8 @@ ht-degree: 99%
 + コンテンツ配信の概要 {#content-delivery}
    + [コンテンツ配信フロー](dispatcher/overview.md)
    + [クラウド内の Dispatcher](dispatcher/disp-overview.md)
+   + [Dispatcherツールを使用した検証とデバッグ](dispatcher/validation-debug.md)
+   + [AMSからAEM as aCloud ServiceへのDispatcher設定の移行](dispatcher/ams-aem.md)
+   + [Dispatcherツールを使用した検証とデバッグ（従来）](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service での CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service でのキャッシュ](dispatcher/caching.md)
