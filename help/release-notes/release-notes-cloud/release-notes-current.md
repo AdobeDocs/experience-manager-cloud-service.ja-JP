@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d5cb722a47d9776e186aa2b47b142d0c22be8511
+source-git-commit: 96f2c99caebd446288720adaf4ac929bbc41950f
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 21%
+source-wordcount: '1858'
+ht-degree: 18%
 
 ---
 
@@ -41,7 +41,44 @@ ht-degree: 21%
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.6.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as a Cloud Service 2021.7.0 および 2021.6.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+
+### リリース日 {#release-cm-july}
+
+AEM as aCloud Service2021.7.0のCloud Managerのリリース日は2021年7月15日です。
+次回のリリースは2021年8月13日に予定されています。
+
+### 新機能 {#what-is-new-cm-july}
+
+* お客様は、Cloud ManagerのビルドプロセスにAzul 8および11 JDKを使用できるようになり、ツールチェーン互換のMavenプラグインに対してこれらのJDKの1つを使用するか、Mavenプロセスの実行全体を&#x200B;*または*&#x200B;使用するかを選択できます。
+
+* 送信エグレスIPがビルドステップログファイルに記録されます。
+
+* 古いバージョンのAEMを実行しているステージ環境と実稼動環境で、ステータスが&#x200B;**Update Available**&#x200B;とレポートされるようになりました。
+
+* サポートされるSSL証明書の最大数が、プログラムあたり20に増えました。
+
+* 設定できるドメインの最大数は、環境ごとに500に増えました。
+
+* **「Gitを管理」**&#x200B;ボタンのタイトルが&#x200B;**「Git情報にアクセス」**&#x200B;に変更され、ダイアログが視覚的に更新されました。
+
+* Cloud Managerで使用されるAEMプロジェクトアーキタイプのバージョンがバージョン28に更新されました。
+
+### バグ修正 {#bug-fixes-cm-july}
+
+* IP環境をバインドする際に、「プレビュー」オプションが使用できない許可リストが発生することがありました。
+
+* 存在しない実行の実行の詳細ページに手動で移動しても、エラーが表示されず、無限の読み込み画面のみが表示されていた問題を修正しました。
+
+* SSL証明書の最大数に達した場合に表示されるエラーメッセージは役に立ちませんでした。
+
+* 状況によっては、**概要**&#x200B;ページのパイプラインカードに表示されるリリースバージョンに矛盾が生じる場合があります。
+
+* プログラムの追加ウィザードで、作成後に名前を変更できないと誤って表示されていた問題を修正しました。
+
+### 既知の問題 {#known-issues-cm-july}
+
+Azul JDKを使用するように切り替えるお客様は、Azul JDKでエラーなしにコンパイルされるとは限らないことに注意する必要があります。 切り替える前に、ローカルでテストすることを強くお勧めします。
 
 ### リリース日 {#release-date-june-cm}
 
