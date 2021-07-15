@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ed7436ed0dec228898cfe6795c698e98499f94c9
+source-git-commit: 06de896e0f8180dc1acbbf490345527b92c15d40
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -61,13 +61,13 @@ ht-degree: 76%
    >[!NOTE]
    >実稼動以外のパイプラインをまだセットアップしていない場合は、*概要*&#x200B;画面に、実稼動以外のパイプラインの作成に使用できるカードが表示されます。
 
-## 環境の詳細{#viewing-environment}
+## 環境の詳細 {#viewing-environment}
 
 概要ページの&#x200B;**環境**&#x200B;カードは、最大 3 環境を一覧表示します。
 
 1. 「**すべてを表示**」ボタンを選択して&#x200B;**環境**&#x200B;の概要ページに移動し、環境の完全なリストをテーブルに表示します。
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. **環境**&#x200B;ページには、既存の環境のリストが表示されます。
 
@@ -81,7 +81,7 @@ ht-degree: 76%
    ![](assets/environ-preview1.png)
 
 
-### プレビューサービス{#access-preview-service}へのアクセス
+### Preview Serviceへのアクセス {#access-preview-service}
 
 プレビューサービス機能は、Cloud Managerを介して各AEM as a Cloud Service環境に追加のプレビュー（公開）サービスを提供します。
 
@@ -207,7 +207,7 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 
-IP 許可リストを適用すると、許可リストの定義に含まれているすべての IP 範囲が環境のオーサーサービスまたはパブリッシュサービスに関連付けられます。IP 許可リストを適用するには、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つユーザーがログインする必要があります。
+IP 許可リストを適用すると、許可リストの定義に含まれているすべての IP 範囲が環境のオーサーサービスまたはパブリッシュサービスに関連付けられます。IP 許可リストを適用するには、ビジネスオーナーまたはデプロイメントマネージャーのロールを持つユーザーがログインする必要があります。
 
 >[!NOTE]
 >IP 許可リストを環境サービスに適用するには、その IP 許可リストが Cloud Manager に存在する必要があります。Cloud Manager での IP 許可リストについて詳しくは、[概要 - Could Manager での IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)を参照してください。
@@ -220,7 +220,7 @@ IP 許可リストを適用するには、次の手順に従います。
 
 ### IP 許可リストの適用解除 {#unapply-ip-allow-list}
 
-「IP 許可リストの適用解除」は、許可リストの定義に含まれるすべての IP 範囲が、環境のオーサーサービスやパブリッシュサービスとの関連付けを解除されるプロセスです。IP 許可リストの適用を解除するには、ビジネス所有者またはデプロイメントマネージャーの役割を持つユーザーがログインしている必要があります。
+「IP 許可リストの適用解除」は、許可リストの定義に含まれるすべての IP 範囲が、環境のオーサーサービスやパブリッシュサービスとの関連付けを解除されるプロセスです。IP 許可リストの適用を解除するには、ビジネス所有者またはデプロイメントマネージャーのロールを持つユーザーがログインしている必要があります。
 
 IP 許可リストの適用を解除するには、次の手順に従います。
 
