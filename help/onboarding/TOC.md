@@ -5,10 +5,10 @@ breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: fca1c30cfd321581eda3ed7e4514fd428e11cfad
+source-git-commit: 673ac234f0e9bfc0f5e6878abf5d01d38cbe918f
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 95%
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 95%
    + [AEM as a Cloud Serviceチームと製品プロファイル](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobeサポート](/help/onboarding/learn-concepts/onboarding-help-resources.md)
 + AEM as a Cloud Service - はじめに {#what-is-required}
-   + [Adobe ID](what-is-required/get-your-adobe-id.md)
-   + [Cloud Manager の役割](what-is-required/user-roles-permissions.md)
-   + [システム管理者のタスク](what-is-required/add-users-assign-cm-roles.md)
-   + [Cloud Manager に移動する](what-is-required/navigate-to-cloud-manager.md)
-   + [AEMインスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)
+   + [Adobe ID の取得](what-is-required/get-your-adobe-id.md)
+   + [Cloud Manager のロール](what-is-required/user-roles-permissions.md)
+   + [システム管理者タスク](what-is-required/add-users-assign-cm-roles.md)
+   + [Cloud Manager への移動](what-is-required/navigate-to-cloud-manager.md)
+   + [AEM インスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + Cloud Manager プログラム {#getting-access}
    + [プログラムとプログラムの種類について](getting-access-to-aem-in-cloud/understand-program-types.md)
    + 実稼動プログラム {#production-programs}
@@ -59,14 +59,14 @@ ht-degree: 95%
       + [プロジェクトの設定](getting-access-to-aem-in-cloud/setting-up-project.md)
       + [ビルド環境について](getting-access-to-aem-in-cloud/build-environment-details.md)
    + SSL 証明書の管理 {#manage-ssl-certificates}
-      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html?lang=ja)
+      + [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/introduction.html?lang=ja)
       + [SSL 証明書の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/get-ssl-certificate.html?lang=ja)
       + [SSL 証明書の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=ja)
       + [SSL 証明書の表示、更新、置換](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html?lang=ja)
       + [SSL 証明書のステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html?lang=ja)
       + [SSL 証明書の削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/delete-ssl-certificate.html?lang=ja)
    + カスタムドメイン名の管理 {#custom-domain-names}
-      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html?lang=ja)
+      + [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/introduction.html?lang=ja)
       + [カスタムドメイン名の取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/get-custom-domain-name.html?lang=ja)
       + [カスタムドメイン名の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name.html?lang=ja)
       + [TXT レコードの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=ja)
@@ -77,7 +77,7 @@ ht-degree: 95%
       + [カスタムドメイン名の SSL 証明書の更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/update-cdn-ssl-certificate.html?lang=ja)
       + [カスタムドメイン名の削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/delete-custom-domain-name.html?lang=ja)
    + IP 許可リストの管理 {#ip-allow-lists}
-      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html?lang=ja)
+      + [はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/introduction.html?lang=ja)
       + [IP 許可リストの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=ja)
       + [IP 許可リストの表示と更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=ja)
       + [IP 許可リストの適用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list.html?lang=ja)
@@ -85,7 +85,8 @@ ht-degree: 95%
       + [IP 許可リストの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html?lang=ja)
       + [IP 許可リストのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html?lang=ja)
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.6.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.7.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [リリースノート（2021.6.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
       + [リリースノート（2021.5.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
       + [リリースノート（2021.4.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [リリースノート（2021.3.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
