@@ -2,10 +2,10 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 891658143d44d5bbb0e46c488e078892e2484c08
+source-git-commit: 4f647b76860eac8e7c76df4a4ccb7f069534aea4
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 61%
+source-wordcount: '1229'
+ht-degree: 59%
 
 ---
 
@@ -55,6 +55,10 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
    ![配布](assets/publish-distribute.png "配布")
 4. パスブラウザーでパスを選択し、必要に応じてノードやツリーの追加または削除を選択し、「**送信**」をクリックします。
+
+最高のパフォーマンスを得るには、この機能を使用する際に次のガイドラインに従ってください。
+* レプリケーション用に生成されるコンテンツパッケージの合計サイズは5 MB未満にする必要があります。
+* 一度にレプリケートするパスは100個未満にし、パスのハードリミットを500個にすることをお勧めします。
 
 ### コンテンツツリーの公開ワークフロー {#publish-content-tree-workflow}
 
