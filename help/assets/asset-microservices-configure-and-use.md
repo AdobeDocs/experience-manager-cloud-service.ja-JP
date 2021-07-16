@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute マイクロサービス、ワークフロー、アセット処理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
 workflow-type: tm+mt
 source-wordcount: '2678'
 ht-degree: 89%
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理者は、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
 1. フォルダーに適用する際に、プロファイルを一意に識別するのに役立つ名前を指定します。
-1. FPO レンディションを生成するには、「**[!UICONTROL 標準]**」タブで「**[!UICONTROL FPO レンディションを作成]**」を有効にします。1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
+1. FPOレンディションを生成するには、「**[!UICONTROL 画像]**」タブで、「**[!UICONTROL FPOレンディションを作成]**」を有効にします。 1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
 1. 他のレンディションを生成するには、「**[!UICONTROL 新規追加]**」をクリックし、次の情報を入力します。
 
    * 各レンディションのファイル名。
