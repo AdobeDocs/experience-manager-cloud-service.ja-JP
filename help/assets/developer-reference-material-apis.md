@@ -5,10 +5,10 @@ contentOwner: AG
 feature: API、Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: b7034a98b0c64ffb407240b5d17e1dd02faa6eb4
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 97%
+source-wordcount: '1433'
+ht-degree: 95%
 
 ---
 
@@ -187,21 +187,45 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードしたユーザーは、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が非常に簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。
-
-[!DNL Experience Manager] as a [!DNL Cloud Service] でサポートされているワークフローステップは次のとおりです。
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+以前のバージョンの[!DNL Experience Manager]からアップグレードする場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java APIリファレンス](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)を参照してください。
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
+
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+
+<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -235,7 +259,7 @@ Adobe [!DNL Experience Manager] の以前のバージョンからアップグレ
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
-* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+-->
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
