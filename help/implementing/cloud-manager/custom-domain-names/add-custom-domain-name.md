@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: カスタムドメイン名の追加
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 1eb9423b0128c952bc16cf0b8dff95b0e86964a0
+source-git-commit: bee18f13a7261077821205cad1df5e68a63638e0
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ Cloud Manager でカスタムドメイン名を追加するには、ユーザー
 
 * 一度に追加できるドメイン名は 1 つだけです。ただし、ドメインにワイルドカードを含めることはできません。オーサー側のカスタムドメインはサポートされていません。
 
-* AEM as aCloud Serviceは、ワイルドカードドメインをサポートしていません。
+* AEM as a Cloud Service は、ワイルドカードドメインをサポートしていません。
 
-* 各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。
+* 各 Cloud Manager 環境は、1 つの環境につき最大 500 個のカスタムドメインをホストできます。
 
 * 同じドメイン名を複数の環境で使用することはできません。
 
