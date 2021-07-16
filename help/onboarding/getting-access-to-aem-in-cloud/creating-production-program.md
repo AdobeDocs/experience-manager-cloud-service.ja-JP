@@ -2,10 +2,10 @@
 title: '実稼動プログラムの作成 '
 description: 実稼動プログラムの作成
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: ca960361bea8f62d908a9b6f1408a99722552c75
+source-git-commit: 410986233a599638cb1c2a69f33c94ea67c530fb
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 92%
+source-wordcount: '245'
+ht-degree: 93%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 92%
 
 *実稼動*&#x200B;プログラムは、AEM と Cloud Manager に精通し、コードを実稼動版に展開する目的で、コードの記述、構築、テストを開始する準備が整っているユーザーを対象としています。
 
-Cloud Managerでプログラムを作成する方法については、以下の2部構成のチュートリアルビデオをご覧ください。
+Cloud Managerでプログラムを作成する方法については、2部構成のチュートリアルビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
