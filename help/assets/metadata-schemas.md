@@ -5,10 +5,10 @@ contentOwner: AG
 feature: メタデータ
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 100%
+source-wordcount: '2562'
+ht-degree: 97%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 100%
 | [!UICONTROL 製品リファレンス] | このアセットとリンクされている製品のリストを表示するには、このコンポーネントを追加します。 |
 | [!UICONTROL コンテキストメタデータ] | アセットのプロパティページにある他のメタデータタブの表示を制御するために追加します。 |
 
-<!-- TBD: Ratings are not available in AEM as a Cloud Service. Removed via cqdoc-18089 ticket. 
+<!-- TBD: Ratings are not available in Experience Manager as a Cloud Service. Removed via cqdoc-18089 ticket. 
 | [!UICONTROL Asset Rating]        | Add to display options for rating the asset.                                       |
 -->
 
@@ -155,7 +155,7 @@ ht-degree: 100%
 
 ## メタデータスキーマフォームの削除 {#deleting-metadata-schema-forms}
 
-AEM では、カスタムのスキーマフォームのみを削除できます。デフォルトのスキーマフォームまたはテンプレートを削除することはできません。ただし、これらのフォームでのカスタムの変更内容は削除できます。
+Experience Managerでは、カスタムのスキーマフォームのみを削除できます。 デフォルトのスキーマフォームまたはテンプレートを削除することはできません。ただし、これらのフォームでのカスタムの変更内容は削除できます。
 
 フォームを削除するには、フォームを選択して削除アイコンをクリックします。
 
@@ -236,16 +236,16 @@ AEM では、カスタムのスキーマフォームのみを削除できます�
 
 >[!NOTE]
 >
->メタデータフィールドは、別のフィールドの値に基づいて、必須フィールドとして定義できます。AEM のカード表示では、このような必須メタデータフィールドのメタデータがなくても警告メッセージは表示されません。
+>メタデータフィールドは、別のフィールドの値に基づいて、必須フィールドとして定義できます。カード表示では、Experience Managerに、そのような必須メタデータフィールドのメタデータが見つからないことに関する警告メッセージは表示されません。
 
-1. AEM のロゴをクリックし、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページが表示されます。
+1. Experience Managerのロゴをクリックし、**[!UICONTROL ツール]** / **[!UICONTROL アセット]** / **[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。 **[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページが表示されます。
 1. デフォルトのメタデータフォームをカスタムフォームとして保存します。例えば、`my_default` として保存します。
 1. カスタムフォームを編集します。必須フィールドを追加します。例えば、「**[!UICONTROL カテゴリ]**」フィールドを追加して、それを必須フィールドにします。
 1. 「**[!UICONTROL 保存]**」をクリックします。変更されたフォームは&#x200B;**[!UICONTROL メタデータスキーマフォーム]**&#x200B;ページにリストされます。フォームを選択し、ツールバーの「**[!UICONTROL フォルダーに適用]**」をクリックまたはタップしてカスタムメタデータをフォルダーに適用します。
 1. フォルダーに移動し、カスタムフォームに追加した必須フィールドにメタデータが指定されていないアセットをアップロードします。必須フィールドの指定されていないメタデータに関するメッセージが、アセットのカード表示に表示されます。
-1. （オプション）`https://[server]:[port]/system/console/components/` にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。AEM がアセット上にあるメタデータの妥当性をチェックする頻度を設定します。
+1. （オプション）`https://[server]:[port]/system/console/components/` にアクセスします。`com.day.cq.dam.core.impl.MissingMetadataNotificationJob` コンポーネントを設定して有効にします。このコンポーネントはデフォルトで無効になっています。アセット上のメタデータの有効性をExperience Managerがチェックする頻度を設定します。
 
-   この設定により、`hasValidMetadata` プロパティがアセットの `jcr:content` に追加されます。AEM はこのプロパティを使用して検索の結果をフィルターできます。
+   この設定により、`hasValidMetadata` プロパティがアセットの `jcr:content` に追加されます。このプロパティを使用すると、Experience Managerは検索の結果をフィルタリングできます。
 
    >[!NOTE]
    >
