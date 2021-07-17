@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute マイクロサービス、ワークフロー、リリース情報、アセット処理
 role: Architect,Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 84%
+ht-degree: 82%
 
 ---
 
@@ -43,7 +43,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * WebブラウザーやAdobeのAsset Linkなどのクライアントは、[!DNL Experience Manager]にアップロードリクエストを送信し、バイナリクラウドストレージへのバイナリの直接アップロードを開始します。
 * 直接バイナリアップロードが完了すると、クライアントは[!DNL Experience Manager]に通知します。
 * [!DNL Experience Manager] は、処理リクエストをアセットマイクロサービスに送信します。リクエストの内容は、生成するレンディションを指定する[!DNL Experience Manager]内の処理プロファイル設定に応じて異なります。
-* アセットマイクロサービスのバックエンドがリクエストを受け取り、リクエストに応じて 1 つ以上のマイクロサービスにリクエストをディスパッチします。各マイクロサービスは、バイナリクラウドストア内の元のバイナリに直接アクセスします。
+* アセットマイクロサービスのバックエンドがリクエストを受け取り、リクエストに基づいて1つ以上のマイクロサービスにリクエストをディスパッチします。 各マイクロサービスは、バイナリクラウドストア内の元のバイナリに直接アクセスします。
 * レンディションなどの処理結果がバイナリクラウドストレージに保存されます。
 * Experience Manager には、生成されたバイナリ（レンディション）への直接ポインターと共に処理が完了したことが通知されます。生成されたレンディションは、アップロードされたアセットに対して[!DNL Experience Manager]で使用できます。
 
