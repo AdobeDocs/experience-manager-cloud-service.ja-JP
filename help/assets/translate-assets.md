@@ -5,20 +5,20 @@ contentOwner: AG
 feature: アセット管理、翻訳
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 100%
+source-wordcount: '2587'
+ht-degree: 92%
 
 ---
 
 # 多言語のアセット {#multilingual-assets}
 
-多言語アセットとは、複数の言語のバイナリ、メタデータ、タグを含むアセットです。通常、アセットのバイナリ、メタデータ、タグに使用される言語は 1 つですが、多言語プロジェクト用に他の言語へと翻訳されます。Adobe Experience Manager（AEM）Assets を使用して、アセット（バイナリ、メタデータ、タグを含む）に対する翻訳ワークフローを自動化し、多言語プロジェクトで使用するために他の言語のアセットを生成できます。
+多言語アセットとは、複数の言語のバイナリ、メタデータ、タグを含むアセットです。通常、アセットのバイナリ、メタデータ、タグに使用される言語は 1 つですが、多言語プロジェクト用に他の言語へと翻訳されます。Adobe Experience Manager Assetsを使用すると、アセット（バイナリ、メタデータ、タグを含む）に対する翻訳ワークフローを自動化して、多言語プロジェクトで使用するために他の言語のアセットを生成できます。
 
-翻訳ワークフローを自動化するには、翻訳サービスプロバイダーと AEM とを統合して、アセットを複数の言語に翻訳するためのプロジェクトを作成します。AEM では人間による翻訳と機械翻訳のワークフローがサポートされます。
+翻訳ワークフローを自動化するには、翻訳サービスプロバイダーをExperience Managerと統合し、アセットを複数の言語に翻訳するためのプロジェクトを作成します。 Experience Managerは、人間による翻訳と機械翻訳のワークフローをサポートしています。
 
-人間による翻訳：翻訳済みアセットが返され、AEM に読み込まれます。翻訳プロバイダーと AEM を連携すると、AEM と翻訳プロバイダーとの間でアセットが自動的に送信されます。
+人間による翻訳：翻訳されたアセットが返され、Experience Managerに読み込まれます。 翻訳プロバイダーをExperience Managerと統合すると、翻訳プロバイダーと翻訳プロバイダーの間でアセットが自動的にExperience Managerされます。
 
 機械翻訳：機械翻訳サービスでは、アセットのメタデータとタグがすぐに翻訳されます。
 
@@ -36,13 +36,13 @@ One of these articles is a copy of [Preparing Content for Translation](https://e
 <!-- 
 Translating assets includes the following:
 
-1. [Connecting AEM with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
+1. [Connecting Experience Manager with the translation service provider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Creating translation integration framework configurations](/help/sites-administering/tc-tic.md)
 1. [Preparing assets for translation](prepare-assets-for-translation.md)
 1. [Applying translation cloud services to folders](transition-cloud-services.md)
 1. [Create translation projects](translation-projects.md)
 
-If your translation service provider does not provide a connector to integrate with AEM, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
+If your translation service provider does not provide a connector to integrate with Experience Manager, use an [alternative process](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Also see, [Creating translation projects for content fragments](creating-translation-projects-for-content-fragments.md).
 
@@ -52,7 +52,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 
 多言語アセットとは、複数の言語のバイナリ、メタデータ、タグを含むアセットです。通常、アセットのバイナリ、メタデータ、タグに使用される言語は 1 つですが、多言語プロジェクト用に他の言語へと翻訳されます。
 
-Adobe Experience Manager（AEM）Assets では、多言語アセットはフォルダーに含まれ、各フォルダーに異なる言語のアセットが格納されます。
+Adobe Experience Manager Assetsでは、多言語アセットはフォルダーに含まれ、各フォルダーには異なる言語のアセットが格納されます。
 
 各言語のフォルダーは言語コピーと呼ばれます。言語コピーのルートフォルダー（言語ルート）が、言語コピー内のコンテンツの言語を識別します。例えば、`/content/dam/it` はイタリア語の言語コピー用のイタリア語言語ルートです。ソースアセットの翻訳の実行時に適切な言語がターゲットになるように、言語コピーは、[正しく設定された言語ルート](#create-a-language-root)を使用する必要があります。
 
@@ -89,7 +89,7 @@ Adobe Experience Manager（AEM）Assets では、多言語アセットはフォ�
 
 ### 言語ルートの表示 {#view-language-roots}
 
-タッチ対応 UI には参照パネルがあります。このパネルには、AEM Assets 内で作成された言語ルートのリストが表示されます。
+タッチ操作向けUIには参照パネルが用意されており、[!DNL Assets]内で作成された言語ルートのリストが表示されます。
 
 1. アセットコンソールで、言語コピーを作成する言語プライマリを選択します。
 1. グローバルナビゲーションアイコンをクリックまたはタップして、「**[!UICONTROL 参照]**」を選択して参照パネルを開きます。
@@ -169,9 +169,9 @@ Adobe Experience Manager（AEM）Assets では、多言語アセットはフォ�
 
 ### 一時的な言語コピーの作成 {#creating-temporary-language-copies}
 
-翻訳ワークフローを実行して、元のアセットを編集したバージョンで言語コピーを更新するとき、翻訳済みアセットをユーザーが承認するまで、既存の言語コピーが維持されます。AEM Assets は、新たに翻訳されたアセットを一時的な場所に格納しておき、ユーザーがアセットを明示的に承認した後で既存の言語コピーを更新します。ユーザーがアセットを承認しないと、言語コピーは変更されません。
+翻訳ワークフローを実行して、元のアセットを編集したバージョンで言語コピーを更新するとき、翻訳済みアセットをユーザーが承認するまで、既存の言語コピーが維持されます。[!DNL Assets] は、新たに翻訳されたアセットを一時的な場所に格納しておき、ユーザーがアセットを明示的に承認した後で既存の言語コピーを更新します。ユーザーがアセットを承認しないと、言語コピーは変更されません。
 
-1. 言語コピーを既に作成した「**[!UICONTROL 言語コピー]**」の下のソースルートフォルダーをクリックまたはタップしてから、「**[!UICONTROL アセットで表示]**」をクリックまたはタップしてフォルダーを AEM Assets で開きます。
+1. 言語コピーを作成した「**[!UICONTROL 言語コピー]**」の下のソースルートフォルダーをクリックまたはタップし、「**[!UICONTROL アセットで表示]**」をクリックまたはタップして[!DNL Assets]でフォルダーを開きます。
 1. Assets UI で、既に翻訳したアセットを選択し、ツールバーの「**[!UICONTROL 編集]**」アイコンをクリックまたはタップしてアセットを編集モードで開きます。
 1. アセットを編集して、変更内容を保存します。
 1. [既存の翻訳プロジェクトに追加](#add-to-existing-translation-project)の手順 2～14 を実行して、言語コピーを更新します。
@@ -234,7 +234,7 @@ For tips on translating metadata for assets efficiently, see [5 Steps to efficie
 
 ## フォルダーへの翻訳クラウドサービスの適用 {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager（AEM）では、選択した翻訳プロバイダーのクラウドベースの翻訳サービスを利用して、確実に要件に基づいてアセットを翻訳できます。
+Adobe Experience Managerでは、任意の翻訳プロバイダーからクラウドベースの翻訳サービスを利用して、要件に基づいてアセットを翻訳できます。
 
 翻訳クラウドサービスをアセットフォルダーに直接適用できるので、翻訳ワークフローの間もずっとアセットを利用できます。
 
@@ -263,7 +263,7 @@ Adobe Experience Manager（AEM）では、選択した翻訳プロバイダー�
 翻訳ワークフローで使用する翻訳サービスにカスタムコネクタを適用する場合、カスタムコネクタを適用するには、まずパッケージマネージャーからコネクタをインストールします。次に、クラウドサービスコンソールからコネクタを設定します。コネクタを設定すると、[翻訳サービスの適用](#applying-the-translation-services)で説明されている「クラウドサービス」タブのコネクタのリストに表示されるようになります。カスタムコネクタを適用し、翻訳ワークフローを実行すると、翻訳プロジェクトの「**[!UICONTROL 翻訳の概要]**」タイルの「**[!UICONTROL プロバイダー]**」と「**[!UICONTROL メソッド]**」という見出しの下にコネクタの詳細が表示されます。
 
 1. パッケージマネージャーからコネクタをインストールします。
-1. AEM のロゴをクリックまたはタップし、**[!UICONTROL ツール／デプロイメント／クラウドサービス]**&#x200B;に移動します。
+1. Experience Managerのロゴをクリックまたはタップし、**[!UICONTROL ツール/導入/Cloud Services]**&#x200B;に移動します。
 1. インストールしたコネクタを&#x200B;**[!UICONTROL クラウドサービス]**&#x200B;ページの「**[!UICONTROL サードパーティのサービス]**」の下で探します。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
