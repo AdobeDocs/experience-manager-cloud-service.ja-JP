@@ -4,7 +4,7 @@ description: アセットの統合を使用してCreative Cloudのバリエー�
 contentOwner: AG
 feature: アップロード，アセット処理，公開，Asset computeマイクロサービス，ワークフロー
 role: User,Admin
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: f21f8bf7975fd4e82785a4c368cf4956096608d4
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,8 @@ ht-degree: 0%
 
 1. 「**[!UICONTROL クリエイティブ]**」タブを選択し、出力フォルダーを指定して、「**[!UICONTROL 新規追加]**」を選択し、クリエイティブ設定を追加します。
 
-1. 「**[!UICONTROL レンディション名]**」（または出力名）、「**[!UICONTROL 拡張子]**」（またはファイルタイプ）、「**[!UICONTROL 画質]**」（または出力パラメーター）、「**[!UICONTROL 次を含む]**」および「**[!UICONTROL MIMEタイプを除外]**」を選択し、必要なクリエイティブ操作。
+1. 「**[!UICONTROL レンディション名]**」（または出力名）、「**[!UICONTROL 拡張子]**」（またはファイルタイプ）、「**[!UICONTROL 画質]**」（または出力パラメーター）、「**[!UICONTROL 次を含む]**」および「**[!UICONTROL MIMEタイプを除外]**」を選択し、必要なクリエイティブ操作です。<br/>
+
    ![処理プロファイルの「クリエイティブ」タブ](assets/creative-processing-profile.png)
 
 1. 一部の操作では、追加のパラメーター（アセット）が必要です。 必要に応じて、これらの追加のパラメーターの値を指定します。
