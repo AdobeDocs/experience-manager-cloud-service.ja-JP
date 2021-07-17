@@ -4,10 +4,10 @@ description: 'Experience League 提供の Dynamic Media ニュースレターは
 feature: アセット管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 100%
+source-wordcount: '1150'
+ht-degree: 96%
 
 ---
 
@@ -123,15 +123,15 @@ ht-degree: 100%
    * 価値の高いアセットを適切に管理して、訪問者の再訪を維持できるエクスペリエンスを自信を持って提供するためのリソースと情報
    * デジタルアセットの保護に関する今後の Web セミナーの紹介
    * 情報満載の Adobe Insider Tour の次のステップ
-   *  Experience Manager Assets（AEM Assets）内に Dynamic Media が組み込まれている場合に利用できる優れた機能
+   * Experience Managerアセット(Experience Managerアセット)内にDynamic Mediaがある場合に利用できる優れた機能。
    * Web サイトへの 360 度ビデオとカスタムビデオサムネールの追加
-   * Andrew Hathaway 氏（AEM Assets 内 Dynamic Media 担当主任ソリューションコンサルタント）へのインタビュー
+   * Andrew Hathaway氏(Experience Manager・アセット内Dynamic Media担当主任ソリューション・コンサルタント)へのインタビュー
 
 * **[2019 年 6 月、第 06 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    この号の主な内容：
 
-   * AEM Assets 内 Dynamic Media へのアップグレードの大きなメリットを紹介するビデオについて
+   * Assets内でのDynamic Mediaへのアップグレードの大きなメリットを紹介するビデオをごExperience Managerください。
    * Experience League の主なハウツービデオの視聴
    * 今後の Adobe Insider Tour の詳細
    * デジタルアセットを不正コピーから保護する方法について
