@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service 2020.4.0 のリリースノート
 description: Experience Manager 2020.4.0 のリリースノート
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '646'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 現在のリリースの [!DNL Experience Manager Assets] および [!DNL Dynamic Media] の新機能、機能強化、バグ修正について詳しく説明します。
 
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) は、Experience Manager Assets のアセット配布使用例をサポートします。[!DNL Brand Portal] は、組織が承認済みのブランドおよび製品アセットを外部の代理店、パートナー、内部チーム、販売店などがダウンロードできるように安全に配布し、マーケティングニーズに応えるうえで役に立ちます。
-   * [!DNL Brand Portal] 設定は、[!DNL Adobe I/O] コンソールを通じておこなわれます。[Brand Portal の設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)を参照してください。
+   * [!DNL Brand Portal] 設定は、[!DNL Adobe I/O] コンソールを通じて行われます。[Brand Portal の設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)を参照してください。
    * [!DNL Brand Portal] でのアセットソーシングは、[!DNL Experience Manager] as a Cloud Service ではまだサポートされていません。
 
 * [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) v2.0 は、[!DNL Experience Manager] as a Cloud Service として機能します。[!DNL Adobe Asset Link] は、アプリ内パネル [!DNL Asset Link] を使用して、[!DNL Experience Manager Assets] と [!DNL Creative Cloud] デスクトップアプリの [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign] の連携を実現し、コンテンツ作成プロセスにおいてのクリエイティブとマーケターのコラボレーションを効率化します。
@@ -50,7 +50,7 @@ ht-degree: 95%
 >* [Adobe Asset Link について](https://www.adobe.com/jp/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [Brand Portal の設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
 >* [Asset Link を使用するための Experience Manager の設定](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [アセットのマイクロサービスを使用した、Experience Manager でのワークフロー作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [アセットマイクロサービスを使用したExperience Managerでのワークフローの作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
 
 
 ## Cloud Manager の新機能 {#whats-new-cloud-manager}
