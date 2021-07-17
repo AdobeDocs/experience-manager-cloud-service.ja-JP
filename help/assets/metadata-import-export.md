@@ -5,16 +5,16 @@ contentOwner: AG
 feature: メタデータ
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 98%
+source-wordcount: '669'
+ht-degree: 92%
 
 ---
 
 # アセットメタデータの一括読み込みおよび書き出し {#import-and-export-asset-metadata-in-bulk}
 
-AEM Assets では、CSV ファイルを使用して、アセットのメタデータを一括で読み込むことができます。CSV ファイルを読み込むことで、最近アップロードされたアセットや既存のアセットの一括更新をおこなうことができます。また、サードパーティシステムから CSV 形式でアセットメタデータを一括で取り込むこともできます。
+Adobe Experience Manager Assetsでは、CSVファイルを使用してアセットメタデータを一括で読み込むことができます。 CSV ファイルを読み込むことで、最近アップロードされたアセットや既存のアセットの一括更新をおこなうことができます。また、サードパーティシステムから CSV 形式でアセットメタデータを一括で取り込むこともできます。
 
 ## メタデータの読み込み {#import-metadata}
 
@@ -47,7 +47,7 @@ AEM Assets では、CSV ファイルを使用して、アセットのメタデ�
 
 ## メタデータの書き出し {#export-metadata}
 
-複数のアセットのメタデータを CSV 形式で書き出すことができます。メタデータは非同期的に書き出され、システムのパフォーマンスに影響を及ぼしません。メタデータを書き出すため、AEM はアセットノード `jcr:content/metadata` とその子ノードのプロパティを走査し、メタデータプロパティを CSV ファイルに書き出します。
+複数のアセットのメタデータを CSV 形式で書き出すことができます。メタデータは非同期的に書き出され、システムのパフォーマンスに影響を及ぼしません。メタデータを書き出すために、Experience Managerはアセットノード`jcr:content/metadata`とその子ノードのプロパティを走査し、メタデータのプロパティをCSVファイルに書き出します。
 
 メタデータの一括書き出しの使用例は次のとおりです。
 
