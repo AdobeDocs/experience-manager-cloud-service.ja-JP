@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: レンディション
 exl-id: null
-source-git-commit: f6e1ee3a9640f0853d4f518e816cfee4bd5cb20f
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 8%
