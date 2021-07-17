@@ -4,9 +4,9 @@ description: アセットの統合を使用してCreative Cloudのバリエー�
 contentOwner: AG
 feature: アップロード，アセット処理，公開，Asset computeマイクロサービス，ワークフロー
 role: User,Admin
-source-git-commit: cf2cd9726150a286d3328e68cf52857fb262e805
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 コンテンツ自動化アドオンは、[!DNL Adobe Experience Manager Assets as a Cloud Service] APIと[!DNL Adobe Creative Cloud] APIを統合し、アセットを大規模に作成処理します。 [!DNL Experience Manager] は、クラウドベースのアセ [ッ](/help/assets/asset-microservices-overview.md) トマイクロサービスを使用して、 [!DNL Adobe Creative Cloud] 機能を使用し、アセットの作成とメディア処理を自動化します。
 
-[!DNL Adobe Photoshop]と[!DNL Adobe Lightroom]のアセットを編集する場合、[!DNL Experience Manager Assets]からアセットをダウンロードし、編集して、再度アップロードする必要はありません。 [!DNL Experience Manager]で処理プロファイルを作成して設定し、プロファイルをフォルダーに適用して、アセットをフォルダーにアップロードするだけです。 アップロードしたアセットは、処理プロファイルに基づいて再処理され、これらのアセットのバリエーションを取得します。 一貫性が高く、容易な一括処理により、手作業を省き、優れたクリエイティブスキルを必要とせずに、コンテンツの速度を向上させます。 また、開発者やパートナーは、これらのAPIに直接アクセスしてアセットマイクロサービスを拡張し、カスタムロジックを含めることができます。
+[!DNL Adobe Photoshop]と[!DNL Adobe Lightroom]のアセットを編集する場合、[!DNL Experience Manager Assets]からアセットをダウンロードし、編集して、再度アップロードする必要はありません。 [!DNL Experience Manager]で処理プロファイルを作成して設定し、そのプロファイルをフォルダーに適用して、そのフォルダーにアセットをアップロードします。 アップロードしたアセットは、処理プロファイルに基づいて再処理され、これらのアセットのバリエーションを取得します。 一貫性が高く、容易な一括処理により、手作業を省き、優れたクリエイティブスキルを必要とせずに、コンテンツの速度を向上させます。 また、開発者とパートナーは、これらのAPIに直接アクセスしてアセットマイクロサービスを拡張し、カスタムロジックを含めることができます。
 
 ユーザーは、処理プロファイルを作成して、アセットに対する次のクリエイティブ操作を自動化できます。\
 ![Adobe PhotoshopとAdobeLightroomの操作の自動化](assets/content-automation.png)
