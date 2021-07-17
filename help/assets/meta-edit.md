@@ -5,10 +5,10 @@ contentOwner: AG
 feature: メタデータ
 role: User,Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 100%
+source-wordcount: '427'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
    * アセットのサムネールから、「**[!UICONTROL プロパティを表示]**」クイックアクションを選択します。
    * アセットページから、ツールバーの「**[!UICONTROL プロパティを表示]**」をクリックまたはタップします。
 
-   アセットページに、アセットのメタデータがすべて表示されます。このメタデータは、AEM Assets にアップロードされた（取り込まれた）ときに、自動的に抽出されたものです。
+   アセットページに、アセットのメタデータがすべて表示されます。このメタデータは、Assetsにアップロード（取り込み）されたときに、自動的に抽出されたExperience Managerです。
 
 1. 様々なタブで必要に応じてメタデータを編集したら、ツールバーの「**[!UICONTROL 保存]**」をクリックまたはタップして、変更内容を保存します。「**[!UICONTROL 閉じる]**」をクリックまたはタップして、Assets Web インターフェイスに戻ります。
 
@@ -36,7 +36,7 @@ ht-degree: 100%
    >
    >テキストフィールドが空の場合、現在設定されているメタデータはありません。フィールドに値を入力して保存すると、そのメタデータプロパティを追加できます。
 
-アセットのメタデータへの変更内容は、XMP データの一部として元のバイナリに書き戻されます。この操作は、AEM のメタデータ書き戻しワークフローで実行されます。既存のプロパティ（`dc:title` など）への変更は上書きされ、新しく作成されたプロパティ（`cq:tags` などのカスタムプロパティを含む）はスキーマとともに追加されます。
+アセットのメタデータへの変更内容は、XMP データの一部として元のバイナリに書き戻されます。これは、Experience Managerメタデータ書き戻しワークフローを使用しておこないます。 既存のプロパティ（`dc:title` など）への変更は上書きされ、新しく作成されたプロパティ（`cq:tags` などのカスタムプロパティを含む）はスキーマとともに追加されます。
 
 <!-- XMP write-back is supported and enabled for the platforms and file formats described in technical requirements. -->
 
@@ -44,9 +44,9 @@ ht-degree: 100%
 
 メタデータスキーマの編集方法について詳しくは、[メタデータスキーマフォームの編集](metadata-schemas.md#edit-metadata-schema-forms)を参照してください。
 
-## AEM 内でのカスタム名前空間の登録 {#registering-a-custom-namespace-within-aem}
+## カスタム名前空間のExperience Manager {#registering-a-custom-namespace-within-aem}
 
-AEM 内での独自の名前空間を追加できます。cq、jcr、sling など事前に定義された名前空間があるように、リポジトリメタデータと xml 処理用の名前空間を設定できます。
+独自の名前空間をExperience Managerに追加できます。 cq、jcr、sling など事前に定義された名前空間があるように、リポジトリメタデータと xml 処理用の名前空間を設定できます。
 
 1. ノードタイプ管理ページ（*https://&lt;host>:&lt;port>/crx/explorer/nodetypes/index.jsp*）に移動します。
 1. ページ上部の「**[!UICONTROL 名前空間]**」をクリックまたはタップします。ウィンドウに名前空間管理ページが表示されます。
