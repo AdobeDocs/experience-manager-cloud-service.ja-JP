@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f3d2fafa4f10cb6538ba3e814987f75b466080fc
+source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 99%
+source-wordcount: '479'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
    + [画像のスマートタグ付け](smart-tags.md)
    + [ビデオアセットのスマートタグ](smart-tags-video-assets.md)
    + [アセットの整理方法](organize-assets.md)
-   + [AEM での [!DNL Adobe Stock] アセットの使用](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] アセットを使用する](aem-assets-adobe-stock.md)
    + [コレクションの管理](manage-collections.md)
    + [メタデータの概要](manage-metadata.md)
    + [ [!DNL Adobe Creative Cloud] との統合](aem-cc-integration-best-practices.md)
@@ -54,9 +54,9 @@ ht-degree: 99%
    + [検索ファセット](search-facets.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [Assets HTTP API でのコンテンツフラグメントのサポート](content-fragments/assets-api-content-fragments.md)
-   + [コンテンツフラグメント用 AEM GraphQL API](content-fragments/graphql-api-content-fragments.md)
-   + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](content-fragments/graphql-authentication-content-fragments.md)
-   + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [コンテンツフラグメント用 GraphQL API](content-fragments/graphql-api-content-fragments.md)
+   + [コンテンツフラグメントに対するリモート GraphQL クエリの認証](content-fragments/graphql-authentication-content-fragments.md)
+   + [GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
