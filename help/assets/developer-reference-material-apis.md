@@ -5,10 +5,10 @@ contentOwner: AG
 feature: API、Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 97%
+source-wordcount: '1436'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 | × | サポートされていない。使用しないでください。 |
 | - | 使用不可 |
 
-| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [AEM／Sling／JCR](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling / ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **元のバイナリ** |  |  |  |  |  |  |
 | オリジナルを作成 | ✓ | × | - | × | × | - |
@@ -69,7 +69,7 @@ ht-degree: 97%
 [!DNL Experience Manager] as a [!DNL Cloud Service] では、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順を以下に示します。 [!DNL Experience Manager] JVM内ではなく、外部アプリケーションでこれらの手順を実行します。
 
 1. [HTTP リクエストを送信します](#initiate-upload)。その結果、新しいバイナリをアップロードする意図が [!DNL Experience Manage]r デプロイメントに通知されます。
-1. [開始リクエストで提供される 1 つ以上の URI にバイナリのコンテンツを POST 送信します。](#upload-binary)
+1. [開始リクエストで提](#upload-binary) 供される1つ以上のURIにバイナリのコンテンツをPUTします。
 1. [HTTP リクエストを送信して、バイナリのコンテンツが正常にアップロードされたことをサーバーに通知します。](#complete-upload)
 
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
@@ -113,7 +113,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 }
 ```
 
-* `completeURI`（文字列）：バイナリのアップロードが完了したら、この URI を呼び出します。URI は絶対 URI でも相対 URI でも構いません。クライアントはどちらでも処理できるはずです。つまり、値は `"https://author.acme.com/content/dam.completeUpload.json"` または `"/content/dam.completeUpload.json"` でも構いません。[アップロードの完了](#complete-upload)を参照してください。
+* `completeURI`（文字列）：バイナリのアップロードが完了したら、この URI を呼び出します。URI は絶対 URI でも相対 URI でも構いません。クライアントはどちらでも処理できるはずです。つまり、値は `"https://[aem_server]:[port]/content/dam.completeUpload.json"` または `"/content/dam.completeUpload.json"` でも構いません。[アップロードの完了](#complete-upload)を参照してください。
 * `folderPath`（文字列）：バイナリがアップロードされるフォルダーの完全なパス。
 * `(files)`（配列）：開始リクエストで提供されるバイナリ情報のリストの長さと順序に一致する要素のリスト。
 * `fileName`（文字列）：対応するバイナリの名前（開始リクエストで指定されたもの）。この値は、完了リクエストに含まれます。
@@ -125,7 +125,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ### バイナリのアップロード {#upload-binary}
 
-アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数の URI を指定した場合、クライアント側でバイナリを複数の部分に分割し、各部分の POST リクエストを各 URI に順に送信します。すべての URI を使用します。各部分のサイズが、開始応答で指定された最小サイズと最大サイズの範囲内に収まっている必要があります。CDN エッジノードを使用すると、要求されたバイナリアップロードを高速化できます。
+アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数のURIを指定した場合、クライアントはバイナリを複数の部分に分割し、各部分のPUTリクエストを各URIに順に送信します。 すべての URI を使用します。各部分のサイズが、開始応答で指定された最小サイズと最大サイズの範囲内に収まっている必要があります。CDN エッジノードを使用すると、要求されたバイナリアップロードを高速化できます。
 
 これを実現するには、API で提供されるアップロード URI の数に基づいて各部分のサイズを計算する方法があります。例えば、バイナリの合計サイズが 20,000 バイトで、アップロード URI の数が 2 だとします。この場合は次の手順に従います。
 
@@ -154,9 +154,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
-バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。アセットは、アップロードプロセスの完了後に処理されます。アセットのバイナリファイルが完全にアップロードされても、アップロードプロセスが完了していなければ、処理は開始しません。
-
-成功した場合、サーバーは応答として `200` ステータスコードを返します。
+バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。アセットは、アップロードプロセスの完了後に処理されます。アセットのバイナリファイルが完全にアップロードされても、アップロードプロセスが完了していなければ、処理は開始しません。アップロードが成功した場合、サーバーは応答として`200`ステータスコードを返します。
 
 ### オープンソースアップロードライブラリ {#open-source-upload-library}
 
@@ -187,21 +185,45 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードしたユーザーは、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が非常に簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。
-
-[!DNL Experience Manager] as a [!DNL Cloud Service] でサポートされているワークフローステップは次のとおりです。
-
-* `com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess`
-* `com.day.cq.dam.core.impl.process.CreateAssetLanguageCopyProcess`
-* `com.day.cq.wcm.workflow.process.CreateVersionProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
-* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
-* `com.day.cq.dam.core.impl.process.TranslateAssetLanguageCopyProcess`
-* `com.day.cq.dam.core.impl.process.UpdateAssetLanguageCopyProcess`
-* `com.adobe.cq.workflow.replication.impl.ReplicationWorkflowProcess`
-* `com.day.cq.dam.core.impl.process.DamUpdateAssetWorkflowCompletedProcess`
+以前のバージョンの[!DNL Experience Manager]からアップグレードする場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java APIリファレンス](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)を参照してください。
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
+
+* `com.day.cq.dam.cameraraw.process.CameraRawHandlingProcess`
+* `com.day.cq.dam.core.process.CommandLineProcess`
+* `com.day.cq.dam.pdfrasterizer.process.PdfRasterizerHandlingProcess`
+* `com.day.cq.dam.core.process.AddPropertyWorkflowProcess`
+* `com.day.cq.dam.core.process.CreateSubAssetsProcess`
+* `com.day.cq.dam.core.process.DownloadAssetProcess`
+* `com.day.cq.dam.word.process.ExtractImagesProcess`
+* `com.day.cq.dam.word.process.ExtractPlainProcess`
+* `com.day.cq.dam.ids.impl.process.IDSJobProcess`
+* `com.day.cq.dam.indd.process.INDDMediaExtractProcess`
+* `com.day.cq.dam.indd.process.INDDPageExtractProcess`
+* `com.day.cq.dam.core.impl.lightbox.LightboxUpdateAssetProcess`
+* `com.day.cq.dam.pim.impl.sourcing.upload.process.ProductAssetsUploadProcess`
+* `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.StartTrainingProcess`
+* `com.day.cq.dam.similaritysearch.internal.workflow.smarttags.TransferTrainingDataProcess`
+* `com.day.cq.dam.switchengine.process.SwitchEngineHandlingProcess`
+* `com.day.cq.dam.core.process.GateKeeperProcess`
+* `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
+* `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
+* `com.day.cq.dam.video.FFMpegTranscodeProcess`
+* `com.day.cq.dam.core.process.ThumbnailProcess`
+* `com.day.cq.dam.video.FFMpegThumbnailProcess`
+* `com.day.cq.dam.core.process.CreateWebEnabledImageProcess`
+* `com.day.cq.dam.core.process.CreatePdfPreviewProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoUserUploadedThumbnailProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoThumbnailDownloadProcess`
+* `com.day.cq.dam.s7dam.common.process.VideoProxyServiceProcess`
+* `com.day.cq.dam.scene7.impl.process.Scene7UploadProcess`
+* `com.day.cq.dam.s7dam.common.process.S7VideoThumbnailProcess`
+* `com.day.cq.dam.core.process.MetadataProcessorProcess`
+* `com.day.cq.dam.core.process.AssetOffloadingProcess`
+* `com.adobe.cq.dam.dm.process.workflow.DMImageProcess`
+
+<!-- Commenting the previous list documented at the time of GA. Replacing it with the updated list via cqdoc-18231.
 
 * `com.day.cq.dam.core.process.DeleteImagePreviewProcess`
 * `com.day.cq.dam.s7dam.common.process.DMEncodeVideoWorkflowCompletedProcess`
@@ -235,7 +257,7 @@ Adobe [!DNL Experience Manager] の以前のバージョンからアップグレ
 * `com.day.cq.dam.core.process.ScheduledPublishBPProcess`
 * `com.day.cq.dam.core.process.ScheduledUnPublishBPProcess`
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
-* `com.day.cq.dam.core.impl.process.SendTransientWorkflowCompletedEmailProcess`
+-->
 
 <!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
