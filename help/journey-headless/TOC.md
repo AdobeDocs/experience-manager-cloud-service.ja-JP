@@ -1,28 +1,36 @@
 ---
-sub-product: AEMヘッドレス開発者ジャーニー
-user-guide-title: AEMヘッドレス開発者ジャーニー
-breadcrumb-title: AEMヘッドレス開発者ジャーニー
+sub-product: AEM ヘッドレスデベロッパージャーニー
+user-guide-title: AEM ヘッドレスデベロッパージャーニー
+breadcrumb-title: AEM ヘッドレスデベロッパージャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
+source-git-commit: bc7a8460c10706e9dd398f1aa2a0b3fc608fdafb
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 1%
+source-wordcount: '158'
+ht-degree: 77%
 
 ---
 
 
-# AEMヘッドレスジャーニー{#headless-journey}
+# AEM ヘッドレスジャーニー {#headless-journey}
 
-+ AEMヘッドレス開発者ジャーニー{#developer}
-   + [AEMのヘッドレスについて](developer/overview.md)
-   + [CMSヘッドレス開発の詳細](developer/learn-about.md)
-   + [AEM Headless as aCloud Serviceの概要](developer/getting-started.md)
-   + [AEMヘッドレスを使用した最初のエクスペリエンスへのパス](developer/path-to-first-experience.md)
-   + [コンテンツをAEMコンテンツモデルとしてモデル化する方法](developer/model-your-content.md)
-   + [AEM Delivery APIを使用したコンテンツへのアクセス方法](developer/access-your-content.md)
-   + [AEM assets APIを使用したコンテンツの更新方法](developer/update-your-content.md)
-   + [まとめ方](developer/put-it-all-together.md)
-   + [ヘッドレスアプリケーションの運用方法](developer/go-live.md)
-   + [オプション — AEMを使用した単一ページアプリケーションの作成方法](developer/create-spa.md)
++ AEM ヘッドレスデベロッパージャーニー {#developer}
+   + [AEM のヘッドレスについて](developer/overview.md)
+   + [CMS ヘッドレス開発について](developer/learn-about.md)
+   + [AEM Headless as a Cloud Service - はじめに](developer/getting-started.md)
+   + [AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](developer/path-to-first-experience.md)
+   + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](developer/model-your-content.md)
+   + [AEM 配信 APIを使用してコンテンツにアクセスする方法](developer/access-your-content.md)
+   + [AEM Assets API を使用してコンテンツを更新する方法](developer/update-your-content.md)
+   + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](developer/put-it-all-together.md)
+   + [ヘッドレスアプリケーションの運用開始方法](developer/go-live.md)
+   + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](developer/create-spa.md)
++ AEMヘッドレスローカリゼーションジャーニー{#localization}
+   + [AEMのヘッドレスローカリゼーションについて](localization/overview.md)
+   + [AEMヘッドレスローカリゼーションの概要](localization/getting-started.md)
+   + [ヘッドレスコンテンツとAEMでのローカライズ方法について説明します。](localization/learn-about.md)
+   + [翻訳コネクタの設定](localization/configure-connector.md)
+   + [翻訳ルールの設定](localization/translation-rules.md)
+   + [コンテンツを翻訳](localization/translate-content.md)
+   + [翻訳コンテンツの公開](localization/publish-content.md)
