@@ -6,7 +6,7 @@ topic-tags: introduction
 content-type: reference
 feature: アクセシビリティ
 role: Admin,User
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 93%
@@ -34,7 +34,7 @@ Dynamic Media の個々のユーザーインターフェイス要素でサポー
    * 最初の `Tab` ストップで画像フレーム全体がハイライト表示されます。その場合、キーボードの矢印キーを使用してフレームの位置を変更できます。
    * その次の 4 つの `Tab` ストップはフレームの四隅です。フレームの隅をフォーカスすると、その隅がハイライト表示されます。この場合も、キーボードの矢印キーを使用して、フォーカスされた隅を移動できます。詳しくは、[単一の画像のスマート切り抜きまたはスマートスウォッチの編集](/help/assets/dynamic-media/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)を参照してください。
 
-<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (Experience Manager 6.5) or Coral Spectrum (in Skyline)) as entire Experience Manager Assets.  -->
+<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
