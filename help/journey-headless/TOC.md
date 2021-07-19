@@ -5,10 +5,10 @@ breadcrumb-title: AEM ヘッドレスデベロッパージャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: bc7a8460c10706e9dd398f1aa2a0b3fc608fdafb
+source-git-commit: 0048cd094b24c7ef1fb326c6a7419b700e87df23
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 77%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +26,3 @@ ht-degree: 77%
    + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](developer/put-it-all-together.md)
    + [ヘッドレスアプリケーションの運用開始方法](developer/go-live.md)
    + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](developer/create-spa.md)
-+ AEMヘッドレスローカリゼーションジャーニー{#localization}
-   + [AEMのヘッドレスローカリゼーションについて](localization/overview.md)
-   + [AEMヘッドレスローカリゼーションの概要](localization/getting-started.md)
-   + [ヘッドレスコンテンツとAEMでのローカライズ方法について説明します。](localization/learn-about.md)
-   + [翻訳コネクタの設定](localization/configure-connector.md)
-   + [翻訳ルールの設定](localization/translation-rules.md)
-   + [コンテンツを翻訳](localization/translate-content.md)
-   + [翻訳コンテンツの公開](localization/publish-content.md)
