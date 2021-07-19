@@ -5,10 +5,10 @@ contentOwner: AG
 feature: メタデータ
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 97%
+source-wordcount: '1236'
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 97%
 
 **メタデータプロファイルをグローバルに適用するには、次のいずれかを行います。**
 
-* `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` に移動して適切なプロファイル適用し、「**[!UICONTROL 保存]**」をクリックします。
+* `https://<AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` に移動して適切なプロファイル適用し、「**保存**」をクリックします。
 
 * CRXDE Lite で、`/content/dam/jcr:content` ノードに移動します。プロパティ `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` を追加し、「**すべて保存**」をクリックします。
 
@@ -109,7 +109,7 @@ ht-degree: 97%
 
 ### プロファイルユーザーインターフェイスを使用したフォルダーからのメタデータプロファイルの削除 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Experience Managerのロゴをクリックし、**[!UICONTROL ツール/アセット/メタデータプロファイル]**&#x200B;に移動します。
+1. AEM のロゴをクリックし、**[!UICONTROL ツール／アセット／メタデータプロファイル]**&#x200B;に移動します。
 1. 1 つまたは複数のフォルダーから削除するメタデータプロファイルを選択します。
 1. 「**[!UICONTROL フォルダーからメタデータプロファイルを削除]**」をクリックし、プロファイルを削除する 1 つまたは複数のフォルダーを選択して、「**[!UICONTROL 完了]**」をクリックします。
 
@@ -117,6 +117,6 @@ ht-degree: 97%
 
 ### 「プロパティ」を使用したフォルダーからのメタデータプロファイルの削除  {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Experience Managerのロゴをクリックし、「**[!UICONTROL アセット]**」に移動した後、メタデータプロファイルを削除するフォルダーに移動します。
+1. AEM のロゴをクリックして「**[!UICONTROL アセット]**」に移動した後、メタデータプロファイルを削除するフォルダーに移動します。
 1. チェックマークをクリックして対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「**[!UICONTROL メタデータプロファイル]**」タブを選択し、ドロップダウンメニューから「**[!UICONTROL なし]**」を選択して、「**[!UICONTROL 保存]**」をクリックします。既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
