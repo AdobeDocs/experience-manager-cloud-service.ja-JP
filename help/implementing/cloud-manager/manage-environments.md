@@ -2,7 +2,7 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 76%
@@ -67,7 +67,7 @@ ht-degree: 76%
 
 1. 「**すべてを表示**」ボタンを選択して&#x200B;**環境**&#x200B;の概要ページに移動し、環境の完全なリストをテーブルに表示します。
 
-   ![](assets/environment-view-1.png)
+   ![](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. **環境**&#x200B;ページには、既存の環境のリストが表示されます。
 
