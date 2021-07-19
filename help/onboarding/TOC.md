@@ -5,9 +5,9 @@ breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '710'
 ht-degree: 97%
 
 ---
@@ -85,7 +85,8 @@ ht-degree: 97%
       + [IP 許可リストの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/delete-ip-allow-list.html?lang=ja)
       + [IP 許可リストのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/check-ip-allow-list-status.html?lang=ja)
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.6.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.7.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [リリースノート（2021.6.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
       + [リリースノート（2021.5.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
       + [リリースノート（2021.4.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
       + [リリースノート（2021.3.0）](/help/onboarding/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
