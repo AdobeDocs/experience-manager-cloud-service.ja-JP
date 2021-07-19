@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 8b8e65c68d8a835e19ddf34fe30981da7ad265d8
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 91%
+source-wordcount: '772'
+ht-degree: 98%
 
 ---
 
@@ -116,7 +116,7 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 1. Cloud Manager のホーム画面から「**非実稼動パイプライン**」タイルにアクセスします。
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](assets/configure-pipeline6.png)
 
 1. 「**追加**」ボタンをクリックして、「パイプライン名」、「パイプラインタイプ」、「Git ブランチ」を指定します。
 
@@ -124,15 +124,13 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
    ![](assets/non-prod-pipe1.png)
 
-1. 「**保存**」をクリックすると、パイプラインがホーム画面のカードに5つのアクションと共に表示されます（下図を参照）。
+1. 「**保存**」をクリックすると、パイプラインがホーム画面上のカードに次の 3 つのアクションと共に表示されます（下図を参照）。
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](assets/configure-pipeline8.png)
 
    * **編集** - パイプライン設定を編集できます
-   * **詳細**  — パイプライン実行の詳細を提供します。
    * **ビルド** - 実行ページに移動し、そこからパイプラインを実行できるようになります
-   * **リポジトリ情報にアクセス**  - Cloud Manager Gitリポジトリへのアクセスに必要な情報をユーザーが取得できます
-   * **詳細情報**  - CI/CDパイプラインのドキュメントリソースに関する理解に進みます。
+   * **Git を管理** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします
 
 ## 次の手順 {#the-next-steps}
 
