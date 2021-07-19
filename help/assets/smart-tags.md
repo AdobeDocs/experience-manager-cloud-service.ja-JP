@@ -5,10 +5,10 @@ contentOwner: AG
 feature: スマートタグ、タグ付け
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 568c25d77eb42f7d5fd3c84d71333e083759712d
+source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 96%
+source-wordcount: '2346'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 自然言語語彙と比較して、ビジネス上の分類に基づいたタグ付けでは、デジタルアセットを会社のビジネスと容易に連携させることができ、関連性の最も高いアセットが検索で表示されるようになります。例えば、自動車メーカーでは、プロモーションキャンペーンを計画するために様々なモデルの画像を検索する際、関連性の高い画像のみが表示されるように、モデル名を使用して車の画像をタグ付けすることができます。
 
-そのバックグラウンドで、機能は [Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングをおこないます。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。[!DNL Experience Manager Assets] は、デフォルトで、アップロードされたアセットにスマートタグを自動的に適用します。
+そのバックグラウンドで、機能は [Adobe Sensei](https://www.adobe.com/jp/sensei/experience-cloud-artificial-intelligence.html) の人工知能フレームワークを使用して、タグ構造とビジネス上の分類に基づいて画像認識アルゴリズムのトレーニングをおこないます。その後、このコンテンツインテリジェンスを使用して、アセットの個々のセットに関連性の高いタグが適用されます。[!DNL Experience Manager Assets] デプロイメントは、デフォルトで [!DNL Adobe Developer Console] と統合されます。
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
@@ -179,11 +179,11 @@ ht-degree: 96%
 
 ## スマートタグ付きアセットのタグ付け {#tag-assets}
 
-サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効で、機能します。 [!DNL Experience Manager] は適切なタグをほぼリアルタイムで適用します。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+サポートされているすべてのタイプのアセットは、アップロード時に [!DNL Experience Manager Assets] によって自動的にタグ付けされます。タグ付けはデフォルトで有効になっています。[!DNL Experience Manager] は適切なタグをほぼリアルタイムで適用します。 <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
-* 画像やビデオの場合、スマートタグは視覚的要素に基づいています。
+画像およびビデオの場合、スマートタグは視覚的な観点に基づいて生成されます。
 
-* テキストベースのアセットの場合、スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。テキストベースのアセットの場合、スマートタグはテキストに表示されるキーワードですが、アセットを説明するのに最適なキーワードです。サポートされているアセットの場合、[!DNL Experience Manager] は既にテキストを抽出しており、インデックス化してアセットの検索に使用しています。しかし、テキスト内のキーワードに基づくスマートタグは、フル検索インデックスに比べて、アセット検出を改善するために使用される専用の、構造化された、より優先度の高い検索ファセットを提供します。
+テキストベースのアセットの場合、スマートタグの有効性は、アセット内のテキストの量に依存するのではなく、アセットのテキスト内に存在する関連キーワードまたは関連エンティティに依存します。テキストベースのアセットの場合、スマートタグはテキストに表示されるキーワードですが、アセットを説明するのに最適なキーワードです。サポートされているアセットの場合、[!DNL Experience Manager] は既にテキストを抽出しており、インデックス化してアセットの検索に使用しています。しかし、テキスト内のキーワードに基づくスマートタグは、フル検索インデックスに比べて、アセット検出を改善するために使用される専用の、構造化された、より優先度の高い検索ファセットを提供します。
 
 ## スマートタグとアセット検索の管理 {#manage-smart-tags-and-searches}
 
