@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute マイクロサービス、ワークフロー、アセット処理
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 00bea8b6a32bab358dae6a8c30aa807cf4586d84
+source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 89%
+source-wordcount: '2709'
+ht-degree: 86%
 
 ---
 
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理者は、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
 1. フォルダーに適用する際に、プロファイルを一意に識別するのに役立つ名前を指定します。
-1. FPO レンディションを生成するには、「**[!UICONTROL 標準]**」タブで「**[!UICONTROL FPO レンディションを作成]**」を有効にします。1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
+1. FPOレンディションを生成するには、「**[!UICONTROL 画像]**」タブで、「**[!UICONTROL FPOレンディションを作成]**」を有効にします。 1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
 1. 他のレンディションを生成するには、「**[!UICONTROL 新規追加]**」をクリックし、次の情報を入力します。
 
    * 各レンディションのファイル名。
@@ -160,8 +160,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 次のいずれかの方法を使用して、処理プロファイルをフォルダーに適用します。
 
 * 管理者が、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
-* ユーザーがアセットユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL 処理プロファイル]**」タブのポップアップリストでそのフォルダーに適した処理プロファイルを選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
+* ユーザーは、Assetsユーザーインターフェイスでフォルダーを選択し、**[!UICONTROL プロパティ]**&#x200B;アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL アセット処理]**」タブをクリックして、[!UICONTROL 処理プロファイル]リストで適切な処理プロファイルを選択します。 変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
    ![「アセットのプロパティ」タブからのフォルダーへの処理プロファイルの適用](assets/folder-properties-processing-profile.png)
+
+* ユーザーは、Assetsユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用し、上部にあるオプションから「![アセット再処理アイコン](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL アセットを再処理]** 」オプションを選択できます。
 
 >[!TIP]
 >
