@@ -1,13 +1,13 @@
 ---
-title: Dynamic Mediaを使用してCDN（コンテンツ配信ネットワーク）キャッシュを無効にする
+title: Dynamic Mediaを使用したコンテンツ配信ネットワークキャッシュの無効化
 description: CDN（コンテンツ配信ネットワーク）にキャッシュされたコンテンツを無効にして、Dynamic Mediaから配信されるアセットをすばやく更新する方法について説明します。キャッシュの期限が切れるのを待つ必要はありません。
 feature: アセット管理
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: c9944b1ac561b54ad2e2870ab0da967c005f105f
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 82%
+source-wordcount: '1331'
+ht-degree: 76%
 
 ---
 
@@ -34,9 +34,13 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
    | シナリオ | オプション |
    | --- | --- |
    | Dynamic Media Classic を使用して、以前に CDN 無効化テンプレートを作成したことがある。 | 「**[!UICONTROL テンプレートを作成]**」テキストフィールドに、テンプレートデータが事前に入力されています。この場合は、テンプレートを編集するか、続行して次の手順に進みます。 |
-   | テンプレートを作成する必要がある。何を入力すればよいか？ | 「**[!UICONTROL テンプレートを作成]**」テキストフィールドに、次の例のように、特定の画像 ID ではなく `<ID>` を参照する画像 URL（画像プリセットまたは修飾子を含む）を入力します。<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>テンプレートに `<ID>` だけが含まれる場合は、Dynamic Media が `https://<publishserver_name>/is/image/<company_name>/<ID>` を入力します。ここで、`<publishserver_name>` はDynamic Media Classic の一般設定で定義されているパブリッシュサーバーの名前です。`<company_name>` は、この Experience Manager インスタンスに関連付けられている会社ルートの名前で、`<ID>` は、アセットピッカーで選択した無効化するアセットです。<br>`<ID>` に続くプリセット／修飾子はすべて、URL 定義内にそのままコピーされます。<br>テンプレートに基づいて自動形成できるのは画像のみ、すなわち `/is/image` のみです。<br>`/is/content/` の場合、アセットピッカーを使用してビデオや PDF などのアセットを追加しても、URL は自動生成されません。代わりに、CDN 無効化テンプレートでそのようなアセットを指定するか、*パート 2 / 2 CDN 無効化オプションの設定*&#x200B;で、URL を手動で追加する必要があります。<br>**例：**<br>&#x200B;最初の例では、無効化テンプレートに `<ID>` と、`/is/content` を持つアセット URL が含まれます。例えば、`http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>` のようになります。Dynamic Media は、このパスに基づいて URL を作成し、`<ID>` は、アセットピッカーを使用して選択された、無効にするアセットとなります。<br>2 つ目の例では、無効化テンプレートに、`/is/content` が用いられ、Web プロパティで使用されるアセットの完全な URL が含まれます（アセットピッカーに依存しません）。例えば、`http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` の backpack はアセット ID です。<br>Dynamic Media でサポートされているアセット形式は、無効化の対象となります。CDN の無効化で&#x200B;*サポートされない*&#x200B;アセットファイルタイプには、PostScript®、Encapsulated PostScript®、Adobe Illustrator、Adobe InDesign、Microsoft PowerPoint、Microsoft Excel、Microsoft Word、リッチテキスト形式などがあります。<br>テンプレートを作成する際は、構文と入力ミスに注意する必要があります。Dynamic Media では、テンプレートの検証は行われません。<br>画像スマートトリミングの URL は、この CDN 無効化テンプレート、またはパート 2：CDN 無効化オプションの設定の「**[!UICONTROL URL を追加]**」テキストフィールドのいずれかで指定します&#x200B;*。*<br>**重要：** CDN 無効化テンプレートの各エントリは、それぞれ別の行にする必要があります。<br>*次のテンプレートの例は説明用のものです。* |
+   | テンプレートを作成する必要がある。何を入力すればよいか？ | 「**[!UICONTROL テンプレートを作成]**」テキストフィールドに、次の例のように、特定の画像 ID ではなく `<ID>` を参照する画像 URL（画像プリセットまたは修飾子を含む）を入力します。<br>`https://my.publishserver.com/is/image/company_name/<ID>?$product$`<br>テンプレートに `<ID>` だけが含まれる場合は、Dynamic Media が `https://<publishserver_name>/is/image/<company_name>/<ID>` を入力します。ここで、`<publishserver_name>` はDynamic Media Classic の一般設定で定義されているパブリッシュサーバーの名前です。`<company_name>` は、この Experience Manager インスタンスに関連付けられている会社ルートの名前で、`<ID>` は、アセットピッカーで選択した無効化するアセットです。<br>`<ID>` に続くプリセット／修飾子はすべて、URL 定義内にそのままコピーされます。<br>テンプレートに基づいて自動形成できるのは画像のみ、すなわち `/is/image` のみです。<br>`/is/content/` の場合、アセットピッカーを使用してビデオや PDF などのアセットを追加しても、URL は自動生成されません。代わりに、CDN 無効化テンプレートでそのようなアセットを指定するか、*パート 2 / 2 CDN 無効化オプションの設定*&#x200B;で、URL を手動で追加する必要があります。<br>**例：**<br>&#x200B;最初の例では、無効化テンプレートに `<ID>` と、`/is/content` を持つアセット URL が含まれます。例えば、`http://my.publishserver.com:8080/is/content/dms7snapshot/<ID>` のようになります。Dynamic Media は、このパスに基づいて URL を作成し、`<ID>` は、アセットピッカーを使用して選択された、無効にするアセットとなります。<br>2 つ目の例では、無効化テンプレートに、`/is/content` が用いられ、Web プロパティで使用されるアセットの完全な URL が含まれます（アセットピッカーに依存しません）。例えば、`http://my.publishserver.com:8080/is/content/dms7snapshot/backpack` の backpack はアセット ID です。<br>Dynamic Media でサポートされているアセット形式は、無効化の対象となります。CDN の無効化で&#x200B;*サポートされない*&#x200B;アセットファイルタイプには、PostScript®、Encapsulated PostScript®、Adobe Illustrator、Adobe InDesign、Microsoft PowerPoint、Microsoft Excel、Microsoft Word、リッチテキスト形式などがあります。<br><br>・テンプレートを作成する際は、構文と入力ミスに注意する必要があります。Dynamic Mediaでは、テンプレートの検証はおこなわれません。<br>・ CDN無効化テンプレートは、テキストを最大2500文字保存できます。<br>・このCDN無効化テンプレート、またはパート2の「 URLを追 **[!UICONTROL 加」テキス]** トフィールドで、画像スマート切り抜きのURLを *指定します。CDN無効化オプションの設定。*<br>・ CDN無効化テンプレートの各エントリは、それぞれ別の行にする必要があります。<br>・次のCDN無効化テンプレートの例は、デモ目的でのみ使用します。 |
 
    ![CDN 無効化テンプレート - 作成](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
+
+   >[!NOTE]
+   >
+   >CDN無効化テンプレートは、最大2500文字のテキストを保存できます。
 
 1. **[!UICONTROL CDN無効化テンプレート]**&#x200B;ページの右上隅にある「**[!UICONTROL 保存]**」を選択し、「**[!UICONTROL OK]**」を選択します。<br>
 
