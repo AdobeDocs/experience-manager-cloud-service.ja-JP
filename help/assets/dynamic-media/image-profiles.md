@@ -4,9 +4,9 @@ description: アンシャープマスクの設定、スマート切り抜きと�
 feature: アセット管理、画像プロファイル、レンディション
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: b6f25c59e7b0cd239a91dc9eb629957905a77574
 workflow-type: tm+mt
-source-wordcount: '2711'
+source-wordcount: '2714'
 ht-degree: 78%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 78%
 
 #### 「プロパティ」からのフォルダーへのDynamic Mediaイメージプロファイルの適用 {#applying-image-profiles-to-folders-from-properties}
 
-1. Experience Managerのロゴを選択し、**[!UICONTROL Assets]**&#x200B;に移動した後、イメージプロファイルを適用するフォルダーに移動します。
+1. AEMのロゴをタップし、**[!UICONTROL Assets]**&#x200B;に移動します。 次に、イメージプロファイルを適用するフォルダーの親フォルダーに移動します。
 1. チェックマークを選択して対象のフォルダーを選択し、「**[!UICONTROL プロパティ]**」を選択します。
 1. 「**[!UICONTROL イメージプロファイル]**」タブを選択します。「**[!UICONTROL プロファイル名]**」ドロップダウンリストからプロファイルを選択し、「**[!UICONTROL 保存して閉じる]**」を選択します。 既にプロファイルが割り当てられているフォルダーには、フォルダー名のすぐ下にプロファイルの名前が表示されます。
 
