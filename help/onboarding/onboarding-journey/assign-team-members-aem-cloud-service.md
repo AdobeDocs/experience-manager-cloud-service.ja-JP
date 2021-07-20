@@ -4,7 +4,7 @@ description: このページでは、チームメンバーをAEM as a Cloud Serv
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 目的 {#objective}
 
-このドキュメントでは、チームメンバーをCloud Service製品プロファイルとしてAEMに割り当てるためにシステム管理者がおこなう必要がある手順と、AEM作成者がAEMを使用してジャーニーを開始できるようにすることが重要な理由を説明します。
+このドキュメントでは、チームメンバーをCloud Service製品プロファイルとしてAEMに割り当てるためにシステム管理者が実行する必要がある手順と、AEM作成者がAEMを使用してジャーニーを開始できるようにすることが重要な理由を説明します。
 
 この節を読むと、次の操作が行われます。
 
