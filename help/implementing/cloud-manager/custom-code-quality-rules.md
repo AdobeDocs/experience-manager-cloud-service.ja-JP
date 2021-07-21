@@ -2,10 +2,10 @@
 title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bd9cb35016b91e247f14a851ad195a48ac30fda0
+source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
 workflow-type: tm+mt
-source-wordcount: '3403'
-ht-degree: 96%
+source-wordcount: '3520'
+ht-degree: 94%
 
 ---
 
@@ -500,7 +500,7 @@ public void doThis() {
 }
 ```
 
-### /apps および /libs パスをハードコーディングしない {#avoid-hardcoded-apps-and-libs-paths}
+### /apps および /libs パスをハードコーディングしない  {#avoid-hardcoded-apps-and-libs-paths}
 
 **キー**：CQRules:CQBP-71
 
@@ -566,9 +566,9 @@ Cloud Manager で実行される OakPAL 関連チェックについて、以下�
 >[!NOTE]
 >OakPAL は AEM パートナー（2019 年の AEM Rockstar North America の優勝者）により開発されたフレームワークで、スタンドアロンの Oak リポジトリーを使用してコンテンツパッケージを検証します。
 
-### @ProviderType の注釈が付いた製品 API は、お客様による実装または拡張はできない {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### @ProviderType の注釈が付いた製品 API は、お客様による実装または拡張はできない  {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
-**キー**:CQBP-84
+**キー**：CQBP-84
 
 **タイプ**：バグ
 
@@ -592,7 +592,88 @@ public class DontDoThis implements Page {
 }
 ```
 
-### カスタムDAM Asset Lucene Oakインデックスが適切に構造化されている{#oakpal-damAssetLucene-sanity-check}
+### カスタムLucene OakインデックスにTika設定が必要 {#oakpal-indextikanode}
+
+**キー**:IndexTikaNode
+
+**タイプ**：バグ
+
+**重大度**：ブロッカー
+
+****&#x200B;以降：2021.8.0
+
+標準提供のAEM Oakインデックスの複数には、tika設定が含まれ、これらのインデックスのカスタマイズ&#x200B;**にtika設定が含まれている必要があります。** このルールは、 `damAssetLucene`、 `lucene`および`graphqlConfig`インデックスのカスタマイズをチェックし、 `tika`  ノードが見つからないか、`tika`ノードに`config.xml`という名前の子ノードがない場合。
+
+インデックス定義のカスタマイズの詳細については、[インデックス作成に関するドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#preparing-the-new-index-definition)を参照してください。
+
+#### 準拠していないコード {#non-compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+```
+
+#### 準拠しているコード {#compliant-code-indextikanode}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### カスタムLucene Oakインデックスは同期してはいけません {#oakpal-indexasync}
+
+**キー**:IndexAsyncProperty
+
+**タイプ**：バグ
+
+**重大度**：ブロッカー
+
+****&#x200B;以降：2021.8.0
+
+luceneタイプのOakインデックス  は常に非同期でインデックスを作成する必要があります。 これを行わないと、システムが不安定になる可能性があります。 Luceneインデックスの構造に関する詳細は、[Oakのドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)を参照してください。
+
+#### 準拠していないコード {#non-compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+#### 準拠しているコード {#compliant-code-indexasync}
+
+```+ oak:index
+    + damAssetLucene-1-custom-2
+      - async: [async]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
+      + tika
+        + config.xml
+```
+
+### カスタムDAM Asset Lucene Oakインデックスが正しく構造化されている  {#oakpal-damAssetLucene-sanity-check}
 
 **キー**:IndexDamAssetLucene
 
@@ -602,38 +683,31 @@ public class DontDoThis implements Page {
 
 ****&#x200B;以降：2021.6.0
 
-AEM Assetsでアセット検索が正しく機能するには、`damAssetLucene` Oakインデックスが一連のガイドラインに従う必要があります。 このルールは、特に`damAssetLucene`を含むインデックスについて、次のパターンをチェックします。
-
-この名前は、ここで説明するインデックス定義のカスタマイズに関するガイドラインに従う必要があります。
-
-* 具体的には、`damAssetLucene-<indexNumber>-custom-<customerVersionNumber>`の後に名前を付ける必要があります。
-
-* インデックス定義には、値`visualSimilaritySearch`を含む、タグという複数の値を持つプロパティが必要です。
-
-* インデックス定義には`tika`という子ノードが必要で、その子ノードにはconfig.xmlという子ノードが必要です。
+AEM Assetsでアセット検索が正しく機能するようにするには、 `damAssetLucene` Oakインデックスのカスタマイズが、このインデックスに固有の一連のガイドラインに従う必要があります。 このルールは、インデックス定義に`visualSimilaritySearch`という値を含む、`tags`という複数の値を持つプロパティが必要かどうかをチェックします。
 
 #### 準拠していないコード {#non-compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - type: lucene
+    + damAssetLucene-1-custom
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - type: lucene
+      + tika
+        + config.xml
 ```
 
 #### 準拠しているコード {#compliant-code-damAssetLucene}
 
 ```+ oak:index
-    + damAssetLucene-1-custom-2
-      - async: [async, nrt]
-      - evaluatePathRestrictions: true
-      - includedPaths: /content/dam
-      - reindex: false
-      - reindexCount: -6952249853801250000
-      - tags: [visualSimilaritySearch]
-      - type: lucene
+    + damAssetLucene-1-custom-2
+      - async: [async, nrt]
+      - evaluatePathRestrictions: true
+      - includedPaths: /content/dam
+      - reindex: false
+      - tags: [visualSimilaritySearch]
+      - type: lucene
       + tika
         + config.xml
 ```
@@ -684,7 +758,7 @@ AEM コンテンツリポジトリー内の /libs コンテンツツリーを読
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### /config および /install フォルダーには OSGi ノードのみ含める {#oakpal-config-install}
+### /config および /install フォルダーには OSGi ノードのみ含める  {#oakpal-config-install}
 
 **キー**：ConfigAndInstallShouldOnlyContainOsgiNodes
 
@@ -843,7 +917,7 @@ AEM Cloud Service 上でアセット処理をおこなうためにアセット�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、[ページテンプレートを参照してください。](/help/implementing/developing/components/templates.md)静的なテンプレートから編集可能なテンプレートへの移行は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)を使用して、大幅に自動化できます。
+従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、[ページテンプレートを参照してください。](/help/implementing/developing/components/templates.md)静的なテンプレートから編集可能なテンプレートへの移行は、[AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
 ### OakPAL - 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
@@ -929,15 +1003,15 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)に記載されているパターンに従った名前を付ける必要があります。
 
-### OakPAL - カスタム検索インデックス定義ノードはインデックスタイプ lucene を使用する {#oakpal-index-type-lucene}
+### OakPAL - カスタム検索インデックス定義ノードはインデックスタイプ lucene を使用する   {#oakpal-index-type-lucene}
 
 **キー**：IndexType
 
-**タイプ**：コードスメル
+**タイプ**：バグ
 
-**深刻度**：軽度
+**重大度**：ブロッカー
 
-**最初の対象バージョン**：バージョン 2021.2.0
+****&#x200B;以降：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
 
 AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）に、値が **lucene** に設定された type プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
 
