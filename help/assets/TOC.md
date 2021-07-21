@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 98%
+source-wordcount: '481'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 98%
    + [アセットのデジタル著作権管理](drm.md)
    + [アセットへの透かしの適用](watermark-assets.md)
    + [ [!DNL Creative Cloud] APIを使用したアセットの処理](cc-api-integration.md)
-+ [!DNL Assets] の設定、管理、拡張 {#admin}
++ [!DNL Assets] {#admin}の設定、管理、拡張
    + [開発者向けドキュメントと API リファレンス](developer-reference-material-apis.md)
    + [フォルダーメタデータスキーマ](folder-metadata-schema.md)
    + [イメージプロファイルとビデオプロファイルの操作](/help/assets/dynamic-media/about-image-video-profiles.md)
@@ -112,7 +112,7 @@ ht-degree: 98%
    + [インタラクティブ画像](dynamic-media/interactive-images.md)
    + [インタラクティブビデオ](dynamic-media/interactive-videos.md)
    + [360 VR ビデオ](dynamic-media/360-video.md)
-   + [Dynamic Media ビューアと Adobe Analytics および Adobe Launch の統合](dynamic-media/launch.md)
+   + [Dynamic Media ViewersとAdobe AnalyticsおよびAdobe Experience Platformタグの統合](dynamic-media/tags.md)
    + [クイックビューを使用したカスタムポップアップの作成](dynamic-media/custom-pop-ups.md)
    + [レスポンシブサイト用に最適化された画像の配信](dynamic-media/responsive-site.md)
    + [Dynamic Media アセットのプレビュー](dynamic-media/previewing-assets.md)
