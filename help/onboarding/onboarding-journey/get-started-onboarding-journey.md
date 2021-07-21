@@ -4,9 +4,9 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '500'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,13 @@ ht-degree: 2%
 この節を読むと、次のことが可能になります。
 
 * Admin Console
-* Admin Console
 * システム管理者としての権限をAdmin Consoleで確認する
 
-## Admin Console {#login-admin-console}
-
-契約に署名した後、Adobe Managed Services(AMS)は顧客のオンボーディングを開始します。
-
-契約が署名されると、Adobeは組織のプロビジョニングを完了します。組織のシステム管理者は、ユーザーの追加や役割への割り当てなど、システム管理者のタスクを実行できるようにお知らせメールを受け取ります。
-
-AdobeAdmin Consoleは、Adobe製品ライセンスとユーザーを管理および管理するための一元的な場所です。 システム管理者がAdobeAdmin Consoleにログインして、ユーザーなどを追加または削除します。 [ここ](https://adminconsole.adobe.com/)をクリックして、Adobe管理コンソールにアクセスします。
+>[!NOTE]
+>オンボーディングプロセスを開始する前に、必ずAdobe Admin Consoleについて学んでください。 AdobeAdmin Consoleは、Adobe製品ライセンスとユーザーを管理および管理するための一元的な場所です。 システム管理者がAdobeAdmin Consoleにログインして、ユーザーなどを追加または削除します。 詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)を参照してください。
 
 
-## Admin Consoleへのログイン手順 {#steps-admin-console}
+## Admin Consoleへのログイン {#steps-admin-console}
 
 次の手順に従って、Admin Consoleに移動し、Admin Consoleでシステム管理者の役割を確認します。
 
