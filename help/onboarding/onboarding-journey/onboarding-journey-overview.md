@@ -4,10 +4,10 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb0931d0a6c53c850013b0162b9c027daec39ceb
+source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 12%
+source-wordcount: '709'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 | # | 記事 | 説明 |
 |---|---|---|
 | 0 | オンボーディングジャーニー | このドキュメントでは、以下について説明します。 |
-| 1 | <br>システム管理者<br>Admin Console<br>AdobeIdentity Managementシステム<br>Adobe ID<br>Cloud Manager<br>AEM as aCloud Serviceチームと製品プロファイル<br>Adobeサポートの概要など、オンボーディングの概念について説明します。 | オンボーディングの概念について説明します。 |
+| 1 | 次のようなオンボーディングの概念を学習します。<br>[System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[AdobeIdentity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[AEM as a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[Cloud Service as a Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobeサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | オンボーディングの概念について説明します。 |
 | 2 | オンボーディングの概要 | システムへのログインとAdmin Console管理者としてのプロファイルの確認について説明します |
 | 3 | Cloud Manager製品プロファイルへのチームメンバーの割り当て | Cloud Manager製品プロファイルを確認し、Cloud Manager製品プロファイルにチームメンバーを割り当てる方法を学びます。 |
 | 4 | Cloud Managerを使用したクラウドリソースの設定 | クラウドリソースの作成方法と実行者について説明します。 さらに、クラウドプログラムと環境の作成方法についても説明します。 |
