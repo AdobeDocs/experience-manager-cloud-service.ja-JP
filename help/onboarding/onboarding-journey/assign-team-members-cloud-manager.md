@@ -4,7 +4,7 @@ description: このページでは、チームメンバーをCloud Manager製品
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 3dbcc5dd09479a84ed13aad0ee3d8c229520e10f
+source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 2%
@@ -91,7 +91,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
    >[!NOTE]
    >[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を参照して、以下に示すように、適切なAdmin Consoleに適切な役割が割り当てられていることを確認します。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!NOTE]
    >ユーザーがCloud Managerにアクセスできるように、少なくとも1つの製品プロファイルにユーザーを割り当てます。 自分（システム管理者）を必ずビジネスオーナーに割り当ててください。
@@ -121,7 +121,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
    >[!NOTE]
    >[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を参照して、以下に示すように、適切なAdmin Consoleに適切な役割が割り当てられていることを確認します。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png)
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
    >[!IMPORTANT]
    >ユーザーは、Cloud Managerリソースの作成後にDeployment Manager製品プロファイルに追加できます。
@@ -147,7 +147,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
    >[!NOTE]
    >[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を参照して、以下に示すように、適切なAdmin Consoleに適切な役割が割り当てられていることを確認します。
 
-   ![](/help/onboarding/onboarding-journey/assets/assign-team5.png).
+   ![](/help/onboarding/onboarding-journey/assets/assign-team6.png).
 
 
    >[!IMPORTANT]
