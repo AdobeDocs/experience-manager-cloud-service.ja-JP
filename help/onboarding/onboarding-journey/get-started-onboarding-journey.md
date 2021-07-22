@@ -1,17 +1,17 @@
 ---
-title: オンボーディングジャーニーの概要
+title: オンボーディングプロセスの概要
 description: このページでは、オンボーディングジャーニーの概要について説明します
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 806a5a50dee4addc4acd2be50ee501a3985e32d0
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 2%
 
 ---
 
-# オンボーディングジャーニーの概要 {#getting-started}
+# オンボーディングプロセスの概要 {#getting-started}
 
 オンボーディングとは、指定されたシステム管理者が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 この節を読むと、次のことが可能になります。
 
-* Admin Console
+* Admin Consoleへのアクセスとログイン
 * システム管理者としての権限をAdmin Consoleで確認する
 
 >[!NOTE]
@@ -67,5 +67,5 @@ ht-degree: 2%
 
 ## 次の手順 {#whats-next}
 
-これで、Admin Consoleにログインし、プロファイルをシステム管理者として確認したので、次にCloud Manager製品プロファイルへのチームメンバーの割り当てドキュメントを確認して、オンボーディングジャーニーを続行する必要があります。
+これで、Admin Consoleにログインし、システム管理者としてプロファイルを確認したので、次にCloud Manager製品プロファイルへのチームメンバーの割り当てドキュメントを確認して、オンボーディングジャーニーを続行する必要があります。
 
