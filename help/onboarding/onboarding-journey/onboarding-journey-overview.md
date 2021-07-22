@@ -4,10 +4,10 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 491ee21a31ec8496d28b88ba52770516bccc7388
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 11%
+source-wordcount: '646'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 
 ## はじめに {#introduction}
 
-このガイドでは、最も重要なトピックを順を追って説明し、読者が完了すると次のようになります。
+このガイドでは、最も重要なトピックを順を追って説明し、完了時に以下をおこないます。
 
 * AEM as a Cloud Service onboarding journeyの期待事項を完全に理解しておく。
 * AEM as a Contentアプリケーションのコンテンツを作成および開発する方法を学ぶための最初の手順を、チームが起動および実行できるようにしました。
@@ -31,18 +31,13 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 
 ## 対象者 {#audience}
 
-オンボーディングとは、指定されたシステム管理者が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
+オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
 
 オンボーディングジャーニーを以下に示します。ジャーニーの各手順について、以降の節で詳しく説明します。
 
 ## オンボーディングジャーニー {#exploring-onboarding-journey}
 
-
 このジャーニーでは、多くのトピックを参照します。次の記事では、AEM as aCloud Serviceのオンボーディング手順に関する基礎知識を提供します。 ジャーニーの特定の部分に直接移動することはできますが、多くの概念はそれ以前の記事の概念に基づいて構築されています。したがって、初めてオンボーディングする場合は、最初から順に開始し、順番に進むことをお勧めします。
-
-このジャーニーでは、多くのトピックを参照します。以下の記事では、オンボーディングプロセスに必要な基本的な知識と詳細な技術ドキュメントへのリンクを示します。
-
-ジャーニーの特定の部分に直接移動することはできますが、多くの概念はそれ以前の記事の概念に基づいて構築されています。したがって、オンボーディングを初めておこなう場合は、まず、ガイドの「オンボーディングの概念について」の節に記載されている記事を確認することをお勧めします。
 
 | # | 記事 | 説明 |
 |---|---|---|
