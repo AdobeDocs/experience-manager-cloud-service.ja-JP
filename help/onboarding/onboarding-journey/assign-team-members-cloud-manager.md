@@ -4,9 +4,9 @@ description: このページでは、チームメンバーをCloud Manager製品
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 8b30fc9494e152aa742cf17c02f982f5c9479473
+source-git-commit: 57b29f8ef6c65b5a752aca680557e75ba55f64bd
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1299'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Cloud Manager製品プロファイルへのチームメンバーの割り当て {#assign-team-members}
 
-Admin Consoleへのログイン方法を学習し、システム管理者としての権限を確認したら、チームメンバーをCloud Manager製品プロファイルに割り当てる準備が整いました。
+[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)へのログイン方法を学習し、[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)として権限を確認したら、Cloud Manager製品プロファイルにチームメンバーを割り当てる準備が整いました。
 
 ## 目的 {#objective}
 
@@ -24,27 +24,46 @@ Admin Consoleへのログイン方法を学習し、システム管理者とし�
 
 * チームメンバーを追加する必要がある理由と方法を理解します。
 * ビジネスオーナー、デプロイメントマネージャー、開発者など、3種類のCloud Manager製品プロファイルについて説明します。
-* チームメンバーをCloud Manager製品プロファイル（ビジネスオーナー、デプロイメントマネージャー、開発者）に割り当てます。
+* チームメンバーをCloud Manager製品プロファイル（ビジネスオーナー、デプロイメントマネージャー、開発者など）に割り当てます。
+
+## 前提条件 {#prerequisites}
+
+この節を開始する前に、次の前提条件を考慮する必要があります。 次の条件を満たす必要があります。
+
+* システム管理者で、[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)について理解している必要があります。
+* [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)の基本を理解します。
+* チームメンバーの詳細を入力する必要があります。 システム管理者は、AEM as aCloud Serviceへのアクセスを必要とするチームメンバーの名前と電子メールアドレス、役割と責任を持っている必要があります。
+
+   >[!NOTE]
+   >オンボーディングを目的として、最初に管理者、開発者、コンテンツ作成者など、即時タスクに参加するユーザーを追加することをお勧めします。 すべてのユーザーを追加することなく、残りのオンボーディングを続行できます。 オンボーディングが完了したら、後でより多くのユーザーに拡大できます。
 
 ## Cloud Manager製品プロファイルの確認 {#review-product-profiles}
 
 Admin Consoleから、Cloud Managerのプロファイルのリストを確認できます。
 
 >[!NOTE]
->Admin ConsoleからCloud Manager製品プロファイルを確認する前に、利用可能なCloud Manager製品プロファイルを確認することをお勧めします。
+>Admin ConsoleのCloud Manager製品プロファイルを確認する前に、利用可能な[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を確認することをお勧めします。
 
 次の手順に従って、Cloud Managerプロファイルのリストを表示します。
 
-1. Adobe Admin Consoleにログインします。 **概要**&#x200B;ページで、「製品とサービス」カードからAdobe Experience Manager as a Cloud Serviceを選択します。
+1. [Adobe Admin Console](https://adminconsole.adobe.com/)にログインします。 **概要**&#x200B;ページで、**Cloud Serviceとサービス**&#x200B;カードから&#x200B;**Adobe Experience Managerを製品**&#x200B;として選択します。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
    >[!NOTE]
    >Admin Consoleの使用方法については、Admin Consoleへのログインを参照してください。
 
 
-1. すべてのインスタンスのリストを含むテーブルからCloud Managerインスタンスに移動します。 事前設定済みのCloud Manager製品プロファイルのリストが表示されます。
+1. すべてのインスタンスのリストを含むテーブルから&#x200B;**Cloud Manager**&#x200B;インスタンスに移動します。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team2.png)
+
+1. 事前設定済みの[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)のリストが表示されます。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
-## ユーザーをビジネスオーナー製品プロファイルに割り当てる {#assign-users-business-owner}
+## ビジネスオーナー製品プロファイルへのユーザーの割り当て {#assign-users-business-owner}
 
 これで、ユーザーを追加して、Cloud Managerビジネスオーナー製品プロファイルに割り当てる準備が整いました。
 
@@ -102,7 +121,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
 
 *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
 >[!NOTE]
->Cloud Managerにログインしてアクセスする方法については、 Cloud Managerへの移動を参照してください。
+>Cloud Managerにログインしてアクセスする方法については、 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)への移動を参照してください。
 
 ビジネスオーナーロールのCloud Managerユーザーは、プログラムと環境を含むクラウドリソースにログインし、設定できます。 これにより、エキスパートチームができるだけ早くAEMにCloud Serviceとしてアクセスできるようになります。
 ビジネスオーナーがクラウドリソースを設定したら、Cloud Manager製品プロファイルに正常に追加された開発者とデプロイメントマネージャーは、Cloud Managerにアクセスし、学習パスを続行する方法を把握できます。
