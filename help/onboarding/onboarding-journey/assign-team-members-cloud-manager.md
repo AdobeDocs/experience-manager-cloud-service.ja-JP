@@ -4,9 +4,9 @@ description: このページでは、チームメンバーをCloud Manager製品
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 21fae2eff51e46ee026cebe135c8a16625ed8f10
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1384'
 ht-degree: 2%
 
 ---
@@ -155,12 +155,11 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
 
 ## 次の作業 {#whats-next}
 
-*ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
->[!NOTE]
->Cloud Managerにログインしてアクセスする方法については、 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)への移動を参照してください。
+1. *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。 Cloud Managerにログインしてアクセスする方法については、 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)への移動を参照してください。
 
-ビジネスオーナーロールのCloud Managerユーザーは、プログラムと環境を含むクラウドリソースにログインし、設定できます。 これにより、エキスパートチームができるだけ早くAEMにCloud Serviceとしてアクセスできるようになります。
-ビジネスオーナーがクラウドリソースを設定したら、Cloud Manager製品プロファイルに正常に追加された開発者とデプロイメントマネージャーは、Cloud Managerにアクセスし、学習パスを続行する方法を把握できます。
+1. 次に、*ビジネスオーナー*&#x200B;の役割を持つCloud Managerユーザーが、クラウドプログラムや環境を含むクラウドリソースにログインして設定できます。 これにより、エキスパートチームができるだけ早くAEMにCloud Serviceとしてアクセスできるようになります。
+
+1. *ビジネスオーナー*&#x200B;がクラウドリソースを設定したら、Cloud Manager製品プロファイルに正常に追加された&#x200B;*開発者*&#x200B;と&#x200B;*デプロイメントマネージャー*&#x200B;は、Cloud Managerにアクセスし、学習パスの継続方法を把握できます。
 
 ## その他のリソース {#additional-resources}
 
