@@ -4,9 +4,9 @@ description: このページでは、チームメンバーをCloud Manager製品
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1414'
 ht-degree: 2%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 2%
 
 ## 前提条件 {#prerequisites}
 
-この節を開始する前に、次の前提条件を考慮する必要があります。 次の条件を満たす必要があります。
+この節を開始する前に、次の前提条件を考慮する必要があります。 以下を実行する必要があります。
 
-* システム管理者で、[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)について理解している必要があります。
+* システム管理者で、Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)について理解している必要があります。[
 * [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)の基本を理解します。
-* チームメンバーの詳細を入力する必要があります。 システム管理者は、AEM as aCloud Serviceへのアクセスを必要とするチームメンバーの名前と電子メールアドレス、役割と責任を持っている必要があります。
+* チームメンバーの詳細を確認します。 システム管理者は、AEM as aCloud Serviceへのアクセスを必要とするチームメンバーの名前と電子メールアドレス、役割と責任を持っている必要があります。
 
    >[!NOTE]
    >オンボーディングを目的として、最初に管理者、開発者、コンテンツ作成者など、即時タスクに参加するユーザーを追加することをお勧めします。 すべてのユーザーを追加することなく、残りのオンボーディングを続行できます。 オンボーディングが完了したら、後でより多くのユーザーに拡大できます。
@@ -63,7 +63,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
    ![](/help/onboarding/onboarding-journey/assets/assign-team3.png)
 
 
-## ビジネスオーナー製品プロファイルへのユーザーの割り当て {#assign-users-business-owner}
+## ユーザーをビジネスオーナー製品プロファイルに割り当てる {#assign-users-business-owner}
 
 これで、ユーザーを追加して、Cloud Managerビジネスオーナー製品プロファイルに割り当てる準備が整いました。
 
@@ -155,7 +155,9 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
 
 ## 次の作業 {#whats-next}
 
-1. *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。 Cloud Managerにログインしてアクセスする方法については、 [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)への移動を参照してください。
+これで、Business Owner、Deployment Manager、Developerなど、3つのCloud Manager製品プロファイルと、Business Owner、Deployment Manager、DeveloperなどのCloud Manager製品プロファイルに割り当てられたチームメンバーについて学びました。次に、 Cloud Managerを使用してリソースを設定します。
+
+1. *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
 
 1. 次に、*ビジネスオーナー*&#x200B;の役割を持つCloud Managerユーザーが、クラウドプログラムや環境を含むクラウドリソースにログインして設定できます。 これにより、エキスパートチームができるだけ早くAEMにCloud Serviceとしてアクセスできるようになります。
 
