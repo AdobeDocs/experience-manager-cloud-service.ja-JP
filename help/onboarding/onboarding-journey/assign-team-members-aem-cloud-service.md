@@ -4,15 +4,15 @@ description: このページでは、チームメンバーをAEM as a Cloud Serv
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
 
 
-# AEM as a Cloud Service製品プロファイルへの割り当て {#assign-team-members-cloud-service}
+# チーム・メンバーのAEM as a Cloud Service製品プロファイルへの割り当て {#assign-team-members-cloud-service}
 
 ## 目的 {#objective}
 
