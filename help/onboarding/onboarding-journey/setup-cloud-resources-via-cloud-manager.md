@@ -4,25 +4,25 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 021146e4e1d65c7fe81ed3dba70b32daf34b9704
+source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 1%
+source-wordcount: '939'
+ht-degree: 2%
 
 ---
 
 # Cloud Managerを使用したクラウドリソースの設定 {#setup-cloud-resources}
 
-「ビジネスオーナー」の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。 その後、「ビジネスオーナー」製品プロファイルに割り当てられたチームメンバーは、Cloud Managerにログインし、クラウドプログラムと環境を作成して、エキスパートチームが始められるようにする必要があります。
+*ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。 その後、*ビジネスオーナー*&#x200B;製品プロファイルに割り当てられたチームメンバーは、Cloud Managerにログインし、クラウドプログラムと環境を作成して、エキスパートチームが作業を開始できるようにする必要があります。
 
 ## 目的 {#objective}
 
 このドキュメントでは、クラウドリソースの作成方法と実行者について説明します。
 
-この節を読むと、次の操作が行われます。
+この節を読むと、次の内容を理解できます。
 
-* 「ビジネスオーナー」の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする最初の管理者である必要があります。
-* クラウドプログラムと環境の作成方法を理解します。
+* *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする最初のユーザーである必要があります。
+* クラウドプログラムと環境の作成方法。
 
 ## はじめに {#introduction}
 
@@ -32,34 +32,45 @@ ht-degree: 1%
 
 ### 前提条件 {#prerequisites}
 
-* 「ビジネスオーナー」の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
+* *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
 
-* Cloud Managerへの移動とログインの方法を説明します。
+* [Cloud Managerに移動してログインする方法を理解します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)
 
-* Cloud Manager製品プロファイルについて
+* [Cloud Managerの製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)について理解してください。
 
 * プログラムの作成に関する考慮事項を理解します。 詳しくは、このビデオをご覧ください。
 
-* Cloud Managerのプログラムと環境の概念を理解する
+* Cloud Managerの[プログラム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)と[環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)の概念を理解します。
 
 ## Cloud Manager への移動 {#navigate-cloud-manager}
 
-1. 「ビジネスオーナー」ユーザーは、開始場所からお知らせメールが届きます。また、ユーザーが見つからない場合は、experience.adobe.comに直接アクセスし、Adobe IDを使用してログインします。
+1. *ビジネスオーナー*&#x200B;ユーザーは、開始場所からお知らせメールを受け取るか、見つからない場合は[Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)に直接アクセスし、Adobe IDを使用してログインします。
 
-1. Experience Cloudのホームページで、「Experience Manager」を選択します。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
 
+1. Adobe Experience Cloudのホームページで、「**Experience Manager**」を選択します。
 
-1. これにより、AEMホームページが表示されます。 ここから、「 Cloud Manager 」を選択します。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources2.png)
 
+1. これにより、AEMホームページが表示されます。 ここから、 **Cloud Manager**&#x200B;を起動します。
 
-1. これにより、次に示すように、Cloud Managerのランディングページが表示されます。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
+1. 次の図に示すように、Cloud Managerのランディングページが表示されます。
 
-1. 次に、ビジネスオーナー製品プロファイルが割り当てられていることを確認します。 それには、次に示すように、右上のプロファイルを選択します。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
+1. ビジネスオーナー製品プロファイルが割り当てられていることを確認します。 これをおこなうには、次に示すように、右上からプロファイルを選択します。
 
-1. 次に、「ユーザーの役割」を選択し、ビジネスオーナーに割り当てられていることを確認します。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
+1. 「**ユーザーの役割**」を選択し、ビジネスオーナーに割り当てられていることを確認します。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources6.png)
+
+1. これにより、ビジネスオーナーとしてのユーザーの役割が確認されます。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources7.png)
 
    お疲れ様でした。Cloud Managerにビジネスオーナーとして正常にログインしました。
 
