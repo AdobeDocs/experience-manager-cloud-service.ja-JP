@@ -4,9 +4,9 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 6046b29408a9bd61c8bbd809b73f2ba6e5a339da
+source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '643'
 ht-degree: 8%
 
 ---
@@ -19,8 +19,8 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 
 このガイドでは、最も重要なトピックを順を追って説明し、完了時に以下をおこないます。
 
-* AEM as a Cloud Service onboarding journeyの期待事項を完全に理解しておく。
-* AEM as a Contentアプリケーションのコンテンツを作成および開発する方法を学ぶための最初の手順を、チームが起動および実行できるようにしました。
+* AEM as a Cloud Service onboarding journeyの期待事項を完全に理解している。
+* AEM as a Content Applicationのコンテンツを作成および開発する方法を学ぶための最初の手順を、チームが開始および実行できるようになりました。
 
 つまり、
 
@@ -35,6 +35,8 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 
 オンボーディングジャーニーを以下に示します。ジャーニーの各手順について、以降の節で詳しく説明します。
 
+![](/help/onboarding/onboarding-journey/assets/onboarding-journey.png)
+
 ## オンボーディングジャーニー {#exploring-onboarding-journey}
 
 このジャーニーでは、多くのトピックを参照します。次の記事では、AEM as aCloud Serviceのオンボーディング手順に関する基礎知識を提供します。 ジャーニーの特定の部分に直接移動することはできますが、多くの概念はそれ以前の記事の概念に基づいて構築されています。したがって、初めてオンボーディングする場合は、最初から順に開始し、順番に進むことをお勧めします。
@@ -47,7 +49,7 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 | 3 | Cloud Manager製品プロファイルへのチームメンバーの割り当て | Cloud Manager製品プロファイルを確認し、Cloud Manager製品プロファイルにチームメンバーを割り当てる方法を学びます。 |
 | 4 | Cloud Managerを使用したクラウドリソースの設定 | クラウドリソースの作成方法と実行者について説明します。 さらに、クラウドプログラムと環境の作成方法についても説明します。 |
 | 5 | チームメンバーを製品プロファイルとしてAEMに割り当てるCloud Service | システム管理者がチームメンバーを製品プロファイルとしてAEMに割り当てる方法をCloud Serviceします。 |
-| 6 | AEM DevelopersおよびDeployment Managerの学習パス | 開発者としてCloud Manager Gitにアクセスして管理する方法、およびCloud Managerでパイプラインを設定してコードをデプロイする方法をDeployment Managerとして説明します。 |
+| 6 | AEM DevelopersおよびDeployment Managerの学習パス | 開発者としてCloud Manager Gitにアクセスして管理する方法、およびデプロイメントマネージャーとしてCloud Managerにパイプラインを設定してコードをデプロイする方法について説明します。 |
 | 7 | AEMユーザーの学習パス | AEMオーサーとしてAEMにCloud Serviceインスタンスとしてアクセスする方法と、AEM as aCloud Service用のコンテンツのオーサリングについて説明します。 |
 
 ## 次の手順 {#what-is-next}
