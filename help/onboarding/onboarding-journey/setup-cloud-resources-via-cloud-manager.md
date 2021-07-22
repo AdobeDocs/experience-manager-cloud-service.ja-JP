@@ -4,9 +4,9 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 0af17da9f1795a2a28808e15ba18c539c74f63bf
+source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '1023'
 ht-degree: 2%
 
 ---
@@ -74,8 +74,9 @@ ht-degree: 2%
 
    お疲れ様でした。Cloud Managerにビジネスオーナーとして正常にログインしました。
 
-## Cloud Serviceプログラムの作成 {#create-cloud-service-program}
+## 作成Cloud Service {#create-cloud-service-program}
 
+Cloud Managerからクラウドサービスプログラムを作成するには、以下の手順に従います。
 
 1. 次に示すように、 Cloud Managerランディングページに移動します。
 
@@ -103,9 +104,11 @@ ht-degree: 2%
 
 ## クラウド環境の作成 {#create-cloud-environments}
 
+Cloud Managerからクラウド環境を作成するには、次の手順に従います。
+
 1. クラウドプログラムを正常に作成したら、 Cloud Managerの概要ページに移動し、環境カードから「追加」を選択して、クラウド環境を作成します。
 
-   >[!NOTE]
+   >[!IMPORTANT]
    >この手順を正常に完了するには、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つCloud Managerユーザーがログインする必要があります。
 
    さらに、クイックビデオチュートリアルでは、 Cloud Manager環境と、それらをプログラムに追加する方法についても説明しています。
@@ -121,6 +124,8 @@ ht-degree: 2%
 
 Cloud Managerを管理する権限では不十分なので、チームメンバーにインスタンスに対する権限を付与する必要があります。 クラウドリソースが作成され、チームからアクセスする準備が整ったので、システム管理者は、Admin ConsoleのCloud Service製品プロファイルとしてチームメンバーをAEMに割り当てる必要があります。
 
+次に、「チームメンバーのAEM as a Team Product Profilesへの割り当て」ドキュメントを確認して、オンボーディングジャーニーを続行する必要があります。
+
 >[!NOTE]
 >AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、2つの製品プロファイル「AEM Users」または「AEM Administrators」のいずれかに属している必要があります。 詳細情報を参照してください。
 
@@ -128,7 +133,7 @@ Cloud Managerを管理する権限では不十分なので、チームメンバ�
 
 その他のリソースでは、以下について学習します。
 
-* プログラムタイプとプログラムの追加
-* 環境タイプと環境の追加
-* Cloud Manager Gitの管理
-* Admin ConsoleからのAEM as aCloud Serviceへのアクセスの設定
+* [プログラムタイプとプログラムの追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)
+* [環境タイプと環境の追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)
+* [Cloud Manager Gitの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Admin ConsoleからのAEM as aCloud Serviceへのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=en#adobe-ims-users)
