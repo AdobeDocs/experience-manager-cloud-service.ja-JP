@@ -4,10 +4,10 @@ description: AEM のコンテンツフラグメントエディターの構造ツ
 feature: コンテンツフラグメント
 role: User
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 61e3b1d883afe0e9a873991fb8fd148de0fbcd4f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 100%
+source-wordcount: '105'
+ht-degree: 62%
 
 ---
 
@@ -19,6 +19,10 @@ AEM のコンテンツフラグメントエディターの構造ツリー機能�
 
 ![コンテンツフラグメント構造ツリー](assets/cfm-structuretree-01.png)
 
-これにより、左側のパネルにフラグメントの構造が表示されます。
+これにより、左側のウィンドウにフラグメントの構造が表示されます。 これを使用して、参照されているフラグメント間を移動したり、参照先に移動したりできます。
+
+>[!NOTE]
+>
+>メインパネルのパンくずリストを使用して、開始点に戻ることができます。
 
 ![コンテンツフラグメント構造ツリー](assets/cfm-structuretree-02.png)
