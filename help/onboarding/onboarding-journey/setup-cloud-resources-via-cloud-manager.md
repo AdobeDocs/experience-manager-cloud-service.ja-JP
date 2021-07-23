@@ -4,9 +4,9 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -83,40 +83,55 @@ Cloud Managerからクラウドサービスプログラムを作成するには�
    >[!NOTE]
    >この手順を正常に完了するには、 Cloud Managerビジネスオーナー製品プロファイルに割り当てられているチームメンバーである必要があります。
 
-1. ここから、「プログラムの追加」を選択して、プログラムの追加ウィザードを起動します。 AEMaaCSプログラムの作成方法と、プログラムを作成する前の重要な考慮事項については、ビデオをご覧ください。
+   ここから、「**プログラムの追加**」をクリックして、「プログラムの追加」ウィザードを起動します。
 
-1. プログラムの追加ウィザードの使用手順については、こちらを参照してください。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
 
-   >[!CAUTION]
-   >作成後はプログラム名を変更できないことに注意してください。 プログラムに与えたい名前を確認することをお勧めします。
+   >[!NOTE]
+   >AEM as a Cloudプログラムの作成方法と、プログラムを作成する前の重要な考慮事項については、[ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)をご覧ください。
 
-   プログラム名を変更する必要がある場合は、Adobeサポートに問い合わせるか、またはAdobe担当者に問い合わせます。 これらは、プログラムを効果的に削除するのに役立ちます。 チームが行った作業が失われる可能性があるので、再びやり直す必要があります。
+   >[!IMPORTANT]
+   >プログラムの追加ウィザードの使い方に関する詳しい手順については、[ここ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en)を参照してください。
+   >
+   >* 作成後はプログラム名を変更できないことに注意してください。 プログラムに与えたい名前を確認することをお勧めします。
+   >* プログラム名を変更する必要がある場合は、Adobeサポートに問い合わせるか、またはAdobe担当者に問い合わせます。 これらは、プログラムを効果的に削除するのに役立ちます。 チームが行った作業が失われる可能性があるので、再びやり直す必要があります。
 
-1. クラウドプログラムが正常に作成されたら、プログラムに移動して、次に示すように、プログラムの概要ページを表示できます。
 
-1. まだおこなっていない場合は、今すぐ開発者メンバーをCloud Managerチームに追加し、「開発者製品プロファイルにユーザーを追加」に移動して、概要の手順に従います。
+1. クラウドプログラムが正常に作成されたら、プログラムに移動して、以下に示すように、プログラムの&#x200B;**概要**&#x200B;ページを確認できます。
 
-1. デベロッパー製品プロファイルに割り当てられたメンバーは、 Cloud Managerにログインして、 Cloud Manager Gitを管理できます。
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources8.png)
 
+   >[!NOTE]
+   >まだおこなっていない場合は、今すぐ開発者メンバーをCloud Managerチームに追加してください。 開発者製品プロファイルへのユーザーの追加を参照し、概要の手順に従います。
+
+1. デベロッパー製品プロファイルに割り当てられたメンバーは、Cloud Managerにログインし、[Cloud Manager Gitを管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)できます。
 
    お疲れさまでした。 プログラムが正常に作成され、開発者がCloud Manager Gitにアクセスできるようになりました。
 
 
 ## クラウド環境の作成 {#create-cloud-environments}
 
+クラウドプログラムを正常に作成したら、クラウド環境を作成します。
+
 Cloud Managerからクラウド環境を作成するには、次の手順に従います。
 
-1. クラウドプログラムを正常に作成したら、 Cloud Managerの概要ページに移動し、環境カードから「追加」を選択して、クラウド環境を作成します。
+1. Cloud Managerの&#x200B;**概要**&#x200B;ページに移動し、環境カードから「**追加**」を選択します。
+
+   ![](/help/onboarding/onboarding-journey/assets/setup-resources9.png)
 
    >[!IMPORTANT]
    >この手順を正常に完了するには、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つCloud Managerユーザーがログインする必要があります。
 
-   さらに、クイックビデオチュートリアルでは、 Cloud Manager環境と、それらをプログラムに追加する方法についても説明しています。
+   さらに、 [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)のクイックチュートリアルでは、Cloud Manager環境と、それらの環境をプログラムに追加する方法についても説明しています。
 
-1. これにより、環境の追加ウィザードが起動し、環境の追加を指示します。 最初に開発環境を追加して、使い慣れてください。
+1. これにより、環境の追加ウィザードが起動し、環境の追加を指示します。 最初に開発環境を追加して、使い慣れてください。 詳しくは、[環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)の追加を参照してください。
 
-1. まだ追加していない場合は、Cloud Managerチームに開発者メンバーを追加し、「開発者製品プロファイルにユーザーを追加」に移動して、概要の手順に従います。 この方法で、開発者はCloud Managerに移動して、Cloud Manager Gitの管理を始めることができます。
+   >[!NOTE]
+   >まだおこなっていない場合は、今すぐ開発者メンバーをCloud Managerチームに追加してください。 開発者製品プロファイルへのユーザーの追加を参照し、概要の手順に従います。
 
+1. デベロッパー製品プロファイルに割り当てられたメンバーは、Cloud Managerにログインし、[Cloud Manager Gitを管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)できます。
+
+   お疲れさまでした。 プログラムが正常に作成され、開発者がCloud Manager Gitにアクセスできるようになりました。
 
    おめでとうございます。これで、クラウドプログラム環境が作成され、開発者がチームに追加されました。
 
