@@ -4,9 +4,9 @@ description: Dynamic Media でビデオを使用する方法について説明�
 feature: ビデオプロファイル
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9459'
 ht-degree: 80%
 
 ---
@@ -151,7 +151,7 @@ Dynamic Media のビデオは、高品質のアダプティブビデオを簡単
 
 Dynamic Media では、MP4 H.264 ビデオのモバイルビデオ再生がサポートされています。このビデオ形式をサポートする BlackBerry® デバイスについては、[BlackBerry® でサポートされているビデオ形式](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)のページで確認できます。
 
-このビデオ形式をサポートする Windows® デバイスについては、[Windows® Phone でサポートされているビデオ形式](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105)?redirectedfrom=MSDN)で確認できます。
+このビデオ形式をサポートするWindows®デバイスについては、次の[Windows® Phoneでサポートされているビデオ形式](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)を参照してください。
 
 * Dynamic Media ビデオビューアプリセットを使用してビデオを再生します。このビューアプリセットには、次のビューアが含まれます。
 
@@ -301,7 +301,7 @@ Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場�
 
 ビデオ編集ツールを使用してメタデータを参照するか、メタデータ取得用のアプリケーションを使用して、ファイルのメタデータを取得することができます。以下は、サードパーティアプリケーションの MediaInfo を使用してビデオファイルのメタデータを取得する手順です。
 
-1. 次の Web ページにアクセスします。[https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download)
+1. [MediaInfoのダウンロード](https://mediaarea.net/en/MediaInfo/Download)に移動します。
 1. GUI バージョンのインストーラーを選択してダウンロードし、インストール手順に従って操作します。
 1. インストールの完了後、ビデオファイルを右クリックして（Windows® のみ）MediaInfo を選択するか、MediaInfo を開いてビデオファイルをアプリケーションにドラッグします。ビデオの幅、高さ、fps など、ビデオファイルに関連するすべてのメタデータが表示されます。
 
