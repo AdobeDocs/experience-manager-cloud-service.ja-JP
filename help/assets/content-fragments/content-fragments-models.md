@@ -4,10 +4,10 @@ description: コンテンツフラグメントモデルが AEM におけるヘ�
 feature: コンテンツフラグメント
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c8462fe370045ad2dc977fdf2f8ce0a5d3e85bc1
+source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 98%
+source-wordcount: '2258'
+ht-degree: 100%
 
 ---
 
@@ -164,16 +164,17 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    >[!NOTE]
    バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
 
-* ****
-TranslatableChecking the 
-**** コンテンツフラグメントモデルエディターのフィールドのtranslatablecheckboxは、次のようになります。
-
-   * フィールドのプロパティ名が翻訳設定（コンテキスト`/content/dam/<sites-configuration>`がまだ存在しない場合）に追加されていることを確認します。
-   * GraphQL の場合：「コンテンツフラグメント」フィールドの `<translatable>` プロパティを `yes` に設定して、変換可能なコンテンツのみを含む JSON を出力するための GraphQL クエリフィルターを許可します。
-
 * 特定のデータタイプとそのプロパティについて詳しくは、**[コンテンツ参照](#content-reference)**&#x200B;を参照してください。
 
 * 特定のデータタイプとそのプロパティについて詳しくは、**[フラグメント参照（ネストされたフラグメント）](#fragment-reference-nested-fragments)**&#x200B;を参照してください。
+
+<!--
+* **Translatable**
+  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+
+  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
+  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+-->
 
 ## 検証 {#validation}
 
