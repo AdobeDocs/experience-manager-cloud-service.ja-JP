@@ -4,9 +4,9 @@ description: AEMユーザーの場合は、このページで、アクセス権�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bfed38bbb0a08e9d6484ec579c4b11d04282473b
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '335'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ AEMをCloud Serviceチームとして設定する際には、システム管理�
 
 ## 次の作業 {#whats-next}
 
-これで、ページのオーサリングと公開のための学習パスを開始する準備が整いました。 詳しくは、ページのオーサリングのクイックスタートガイドを参照してください。
+これで、ページのオーサリングと公開のための学習パスを開始する準備が整いました。 パスに従う必要があります。次に、「 AEM Usersの学習パス」ドキュメントを確認します。
 
 ## その他のリソース {#additional-resources}
 
