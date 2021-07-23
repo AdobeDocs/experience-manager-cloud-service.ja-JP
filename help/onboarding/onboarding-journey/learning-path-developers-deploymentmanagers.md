@@ -4,9 +4,9 @@ description: 開発者またはデプロイメントマネージャー(AEM)の�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: b45d5824afee9e2d540ea7cb41b199b517f26b25
+source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 6%
 
 ---
@@ -47,7 +47,7 @@ Cloud Managerへの移動方法とログイン方法を理解している
 
 ## 次の作業 {#whats-next}
 
-開発者マネージャーとデプロイメントマネージャーは、AEMaCSでのコードの開発方法を理解する準備が整いました。 詳しくは、以下の「その他のリソース」の節を参照してください。
+開発者およびデプロイメントマネージャーは、AEM as a Cloud Serviceでのコードの開発方法を理解する準備が整いました。 詳しくは、以下の「その他のリソース」の節を参照してください。
 
 ## その他のリソース {#additional-resources}
 
