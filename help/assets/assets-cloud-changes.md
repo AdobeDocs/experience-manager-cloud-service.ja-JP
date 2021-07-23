@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: リリース情報
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f0f5d04269ae01f28ce88e87c3269efaf21e657
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 72%
+source-wordcount: '963'
+ht-degree: 71%
 
 ---
 
@@ -56,13 +56,14 @@ ht-degree: 72%
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効必要に応じて、対応するワークフローランチャーを有効にします。書き戻しは、アセットマイクロサービスで処理されます。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して手動で再処理します。 |
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=ja)を参照してください。 |
-| 複合アセットのサブアセットの生成または注釈の作成 | 非対応 | 従属ユースケースが実行されません。例えば、複数ページのPDF、INDD、PPT、PPTX、AIファイルを表示または注釈付けすることはできません。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。 |
+| 複合アセットのサブアセットの生成または注釈の作成 | 非対応 | 従属ユースケースは満たされない場合があります。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。 |
 | ホームページ | 非対応 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=ja) を参照してください。 |
 | ZIP アーカイブからのアセットの抽出 | 非対応 | [Adobe  [!DNL Experience Manager] 6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja#extractzip)を参照してください。 |
 | Assetsの評価 | 非対応 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
 | コンテンツ廃棄フィルター | 非対応 | `ContentDispositionFilter`の一般的な使用例は、管理者がHTMLファイルを配信し、PDFファイルをダウンロードする代わりにインラインで開くように[!DNL Experience Manager]を設定できるようにすることです。 パブリッシュインスタンスでは、Dispatcher設定を使用して廃棄を管理できます。 オーサーインスタンスでは、AdobeはContent Dispositionヘッダーの変更をお勧めしません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)の「Content Disposition」フィルターを参照してください。[ |
 | [レポートをダウンロード](/help/assets/asset-reports.md) | 非対応 | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)の[ダウンロードレポートを参照してください。 |
 | 製品撮影テンプレート | 非対応 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)の[製品撮影テンプレートを参照してください。 |
+| スマート翻訳 | 非対応 | [スマー](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) ト翻訳は、 as aではサポー [!DNL Experience Manager] トされていま [!DNL Cloud Service]せん。 |
 | クラシック UI | 非対応 | タッチ操作対応のユーザーインターフェイスのみ使用できます。 |
 
 >[!MORELIKETHIS]
