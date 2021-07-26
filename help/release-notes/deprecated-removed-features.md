@@ -1,15 +1,15 @@
 ---
-title: 非推奨（廃止予定）の機能と削除された機能
+title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 4b9a48a053a383c2bf3cb5a812fe4bda8e7e2a5a
+source-git-commit: 1adcde525454e779adbd251b9a31f4e456b28998
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 89%
 
 ---
 
-# 非推奨（廃止予定）の機能と削除された機能 {#deprecated-and-removed-features}
+# 廃止される機能および削除された機能 {#deprecated-and-removed-features}
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
