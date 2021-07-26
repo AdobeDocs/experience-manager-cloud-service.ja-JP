@@ -2,10 +2,10 @@
 title: サーバー側 API のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 89b43e14f35e18393ffab538483121c10f6b5a01
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 100%
+source-wordcount: '1250'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
-IMS 組織管理者の役割を持つユーザーは、AEM as a Cloud Service 資格情報を生成できます。その後、この資格情報は、AEM as a Cloud Service 環境管理者の役割を持つユーザーに取得され、サーバーにインストールされることになります。資格情報は秘密鍵として慎重に扱う必要があります。この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して署名済み JWT トークンが作成され、IMS との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストをおこなうことができます。
+IMS org管理者の役割を持ち、AEMオーサー上のAEM UsersまたはAEM Administrators Product Profileのメンバーでもあるユーザーは、AEMをCloud Service資格情報として生成できます。 その後、AEM as a Cloud Service環境の管理者の役割を持つユーザーが秘密鍵証明書を取得できます。この秘密鍵証明書はサーバーにインストールする必要があり、秘密鍵として慎重に扱う必要があります。 この JSON 形式のファイルには、AEM as a Cloud Service API との統合に必要なすべてのデータが含まれています。このデータを使用して署名済み JWT トークンが作成され、IMS との間で IMS アクセストークンと交換されます。その後、このアクセストークンをベアラー認証トークンとして使用して、AEM as a Cloud Service にリクエストをおこなうことができます。
 
 サーバー間フローは次のステップで構成されます。
 
@@ -33,7 +33,7 @@ IMS 組織管理者の役割を持つユーザーは、AEM as a Cloud Service �
 
 ### AEM as a Cloud Service 資格情報の取得 {#fetch-the-aem-as-a-cloud-service-credentials}
 
-AEM as a Cloud Service 開発者コンソールにアクセスできるユーザーには、特定の環境用の「統合」タブのほか、2 つのボタンが開発者コンソールに表示されます。AEM as a Cloud Service 環境管理者の役割を持つユーザーは、「**サービス資格情報を取得**」ボタンをクリックして、サービス資格情報の JSON を表示できます。この JSON には、ポッドの選択に関係なく、クライアント ID、クライアントシークレット、秘密鍵、証明書、環境のオーサー層とパブリッシュ層の設定など、AEM 以外のサーバーに必要な情報がすべて含まれています。
+AEM as a Cloud Service 開発者コンソールにアクセスできるユーザーには、特定の環境用の「統合」タブのほか、2 つのボタンが開発者コンソールに表示されます。AEM as a Cloud Service 環境管理者のロールを持つユーザーは、「**サービス資格情報を取得**」ボタンをクリックして、サービス資格情報の JSON を表示できます。この JSON には、ポッドの選択に関係なく、クライアント ID、クライアントシークレット、秘密鍵、証明書、環境のオーサー層とパブリッシュ層の設定など、AEM 以外のサーバーに必要な情報がすべて含まれています。
 
 ![JWT の生成](assets/JWTtoken3.png)
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service 開発者コンソールにアクセスできるユーザ
 
 >[!IMPORTANT]
 >
->資格情報を生成して、AEM as a Cloud Service 環境への管理者権限を持つユーザーが後で取得できるようにするには、IMS 組織管理者（通常は、Cloud Manager を介して環境をプロビジョニングしたユーザーと同じ）が、まず開発者コンソールにアクセスして「**サービス資格情報を取得**」ボタンをクリックする必要があります。IMS 組織管理者がこの操作をまだおこなっていない場合は、IMS 組織管理者の役割が必要であることを通知するメッセージが表示されます。
+>AEMオーサーのAEM UsersまたはAEM Administrators Product ProfileのメンバーでもあるIMS組織管理者（通常はCloud Managerを使用して環境をプロビジョニングした同じユーザー）は、まず開発者コンソールにアクセスし、 AEMに対する管理者権限を持つユーザーが資格情報を取得Cloud Service環境 **** IMS 組織管理者がこの操作をまだおこなっていない場合は、IMS 組織管理者のロールが必要であることを通知するメッセージが表示されます。
 
 ### AEM 以外のサーバーへの AEM サービス資格情報のインストール {#install-the-aem-service-credentials-on-a-non-aem-server}
 
