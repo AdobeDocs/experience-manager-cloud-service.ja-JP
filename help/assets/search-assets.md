@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: 検索、メタデータ、アセットの配布
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '4911'
-ht-degree: 99%
+source-wordcount: '4902'
+ht-degree: 98%
 
 ---
 
@@ -226,11 +226,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## アセットセレクター {#asset-picker}
 
->[!NOTE]
->
->アセットセレクターは、以前のバージョンの [!DNL Adobe Experience Manager] では[アセットピッカー](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)という名前でした。。
-
-アセットセレクターを使用すると、DAM アセットを特別な方法で検索、フィルタリングおよび参照できます。アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
+アセットセレクター（以前のバージョンの[!DNL Adobe Experience Manager]ではアセットピッカーと呼ばれていました）を使用すると、DAMアセットの検索、フィルタリングおよび参照を特別な方法でおこなえます。 アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
 
 アセットセレクターは、HTML5 `Window.postMessage` メッセージを使用して、選択したアセットのデータを受信者に送信します。参照モードのオムニサーチ結果ページでのみ機能します。
 
