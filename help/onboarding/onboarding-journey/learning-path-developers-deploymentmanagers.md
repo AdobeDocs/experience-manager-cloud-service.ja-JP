@@ -4,10 +4,10 @@ description: 開発者またはデプロイメントマネージャー(AEM)の�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fa61dc122cec5466827d06ffb2eca1c1c5f8bae6
+source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 6%
+source-wordcount: '407'
+ht-degree: 5%
 
 ---
 
@@ -51,19 +51,19 @@ Cloud Managerへの移動方法とログイン方法を理解している
 
 ## その他のリソース {#additional-resources}
 
-* Cloud ManagerからGitおよびGitのアカウント管理にアクセスする
+* [Cloud ManagerからGitおよびGitのアカウント管理にアクセスする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* AEM as aCloud Serviceのローカル開発環境
+* [AEM as aCloud Serviceのローカル開発環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
-* AEM Sites使用の手引き（チュートリアル）
+* [AEM Sites使用の手引き（チュートリアル）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
-* AEM SPA EditorおよびReactの概要 | Adobe Experience Manager
+* [AEM SPA EditorおよびReactの概要 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
 
-* AEM SPA エディターと Angular の使用の手引き
+* [AEM SPA エディターと Angular の使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
 
-* AEMヘッドレスの概要 — GraphQL
+* [AEMヘッドレスの概要 — GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
 
-* AEM SPA Editorを使い始める（開発者向け）
+* [AEM SPA Editorの概要（開発者向け）](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 ### Experience Leagueコース {#experience-league-courses}
 
