@@ -1,9 +1,9 @@
 ---
 title: ScreensでのScreensビデオレンディションの作成(Cloud Service)
 description: ここでは、ScreensでScreensビデオレンディションをCloud Serviceとして作成する方法について説明します。
-source-git-commit: b8691bb77079eeb7efd141ce89c44c5a312262b3
+source-git-commit: ec939ac6a91523a9ba64a555943eba8e6da071eb
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,24 @@ ht-degree: 1%
 
 ## ScreensでのScreensビデオレンディションの作成手順(Cloud Service) {#steps-creating-screens-video-renditions}
 
-1. Screens Cloud UIのチャネルに移動します。
-1. 左上隅のAdobe Experience Managerをクリックして、Screensコンテンツプロバイダー(AEM as aCloud Service)に移動します。
-1. メインナビゲーションの「ツール」セクションをクリックし、「アセット」をクリックし、「処理プロファイル」をクリックします。
+1. Screensコンテンツプロバイダー内のチャネルに移動します。
 
-1. 「作成」をクリックして、新しい処理プロファイルを作成します。
-1. 「ScreensProcessingProfile」などの名前を指定します。
-1. 「ビデオ」タブに移動してビデオエンコーディングを追加し、「新規追加」をクリックします。
+   >[!NOTE]
+   >詳しくは、[Screensコンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider)を参照してください。
+
+1. 左側のナビゲーションバーの「ツール」セクションをクリックし、「**アセット**」をクリックして、「**処理プロファイル**」をクリックします。
+
+   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+
+1. 「**作成**」をクリックして、新しい処理プロファイルを作成します。
+
+   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+
+1. 「**名前**」に、「**ScreensProcessingProfile**」のように入力します。
+
+   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+
+1. 「**ビデオ**」タブに移動してビデオエンコーディングを追加し、「**新規追加**」をクリックします。
 
 
    >[!IMPORTANT]
