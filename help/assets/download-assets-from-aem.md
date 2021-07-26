@@ -5,9 +5,9 @@ contentOwner: AG
 feature: アセット管理
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: eade8d0faf0121260b0822abcab6fae174a796e6
+source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 87%
 
 ---
@@ -109,6 +109,6 @@ Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用す
 >[!MORELIKETHIS]
 >
 >* [DRM で保護されたアセットのダウンロード](drm.md)
-* [Windows／Mac OS デスクトップで Adobe Experience Manager デスクトップアプリケーションを使用したアセットのダウンロード](https://helpx.adobe.com/jp/experience-manager/desktop-app/aem-desktop-app.html)
+* [Windows／Mac OS デスクトップで Adobe Experience Manager デスクトップアプリケーションを使用したアセットのダウンロード](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)
 * [サポートされている Adobe Creative Cloud アプリ内から Adobe Asset Link を使用したアセットのダウンロード](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
