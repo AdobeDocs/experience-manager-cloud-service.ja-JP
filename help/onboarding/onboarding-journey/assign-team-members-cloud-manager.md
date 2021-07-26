@@ -4,9 +4,9 @@ description: このページでは、チームメンバーをCloud Manager製品
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 目的 {#objective}
 
-このドキュメントでは、チームメンバーをCloud Manager製品プロファイルに割り当てる方法について概要をAdmin Consoleします。
+このドキュメントでは、Adobe Admin ConsoleからCloud Manager製品プロファイルにチームメンバーを割り当てる方法について説明します。
 
 この節を読むと、次のことが可能になります。
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 ## Cloud Manager製品プロファイルの確認 {#review-product-profiles}
 
-Admin Consoleから、Cloud Managerのプロファイルのリストを確認できます。
+Adobe Admin Consoleから、Cloud Managerのプロファイルのリストを確認できます。
 
 >[!NOTE]
 >Admin ConsoleのCloud Manager製品プロファイルを確認する前に、利用可能な[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を確認することをお勧めします。
@@ -89,7 +89,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
 1. 製品選択で、**Adobe Experience ManagerをCloud Service**&#x200B;として選択し、以下に示すように、**ビジネスオーナー**&#x200B;の製品プロファイルをユーザーに割り当てます。
 
    >[!NOTE]
-   >[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を参照して、以下に示すように、適切なAdmin Consoleに適切な役割が割り当てられていることを確認します。
+   >次に示すように、[Cloud Manager製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)を参照して、適切なAdmin Consoleに適切な役割が割り当てられていることを確認します。
 
    ![](/help/onboarding/onboarding-journey/assets/assign-team6.png)
 
@@ -98,7 +98,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
 
 1. 「**保存**」をクリックします。追加したユーザー宛に「ようこそ」の電子メールが送信されます。招待されたユーザーは、「ようこそ」の電子メールに記載されているリンクをクリックし、Adobe IDを使用してログインすることで、Cloud Managerにアクセスできます。
 
-おめでとうございます。これで、「ビジネスオーナー」の役割に割り当てられた自分自身を含む、新しく作成されたCloud Managerチームが設定されました。 メンバーには、Cloud Managerにログインしてアクセスするよう勧めるお知らせメールが届きます。 ビジネスオーナーの役割では、Cloud Managerにログインしてクラウドリソースを作成できるようになるのは、1ステップの距離にすぎません。
+   おめでとうございます。これで、「ビジネスオーナー」の役割に割り当てられた自分自身を含む、新しく作成されたCloud Managerチームが設定されました。 メンバーには、Cloud Managerにログインしてアクセスするよう勧めるお知らせメールが届きます。 ビジネスオーナーの役割では、Cloud Managerにログインしてクラウドリソースを作成できるようになるのは、1ステップの距離にすぎません。
 
 ## Deployment Manager製品プロファイルへのユーザーの割り当て {#assign-users-deployment-manager}
 
@@ -155,7 +155,7 @@ Admin Consoleから、Cloud Managerのプロファイルのリストを確認で
 
 ## 次の作業 {#whats-next}
 
-これで、Business Owner、Deployment Manager、Developerなど、3つのCloud Manager製品プロファイルと、Business Owner、Deployment Manager、DeveloperなどのCloud Manager製品プロファイルに割り当てられたチームメンバーについて学びました。次に、 Cloud Managerを使用してリソースを設定します。
+これで、Business Owner、Deployment Manager、Developerなど、3つのCloud Manager製品プロファイルと、Business Owner、Deployment Manager、DeveloperなどのCloud Manager製品プロファイルに割り当てられたチームメンバーについて学びました。次に、 Cloud Managerを使用してオンボーディングを続けます。
 
 1. *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
 
