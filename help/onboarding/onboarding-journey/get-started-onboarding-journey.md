@@ -4,16 +4,16 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9caf3447fedf13fa81bb616cc54b7cb6a08ff159
+source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 2%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
 # オンボーディングプロセスの概要 {#getting-started}
 
-オンボーディングとは、指定されたシステム管理者が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
+オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、クラウドリソースの初期プロビジョニングや、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできる職務上の責任に基づく適切な役割へのユーザーの割り当てが含まれます。
 
 ## 目的 {#objective}
 
@@ -21,8 +21,8 @@ ht-degree: 2%
 
 この節を読むと、次のことが可能になります。
 
-* Admin Consoleへのアクセスとログイン
-* システム管理者としての権限をAdmin Consoleで確認する
+* アクセスし、Admin Consoleにログインします。
+* システム管理者としての権限を、Admin Consoleで確認します。
 
 >[!NOTE]
 >オンボーディングプロセスを開始する前に、必ずAdobe Admin Consoleについて学んでください。 AdobeAdmin Consoleは、Adobe製品ライセンスとユーザーを管理および管理するための一元的な場所です。 システム管理者がAdobeAdmin Consoleにログインして、ユーザーなどを追加または削除します。 詳しくは、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)を参照してください。
@@ -42,12 +42,12 @@ ht-degree: 2%
 
    ![](/help/onboarding/onboarding-journey/assets/sys-admin-getstarted.png)
 
-1. Adobe ID でのログイン。ログインに成功すると、次に示すように、Adobe Admin Consoleの&#x200B;**概要**&#x200B;ページが表示されます。
+1. [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)を使用してログインします。 ログインに成功すると、次に示すように、Adobe Admin Consoleの&#x200B;**概要**&#x200B;ページが表示されます。
 
    ![](/help/onboarding/onboarding-journey/assets/get-started1.png)
 
    >[!NOTE]
-   >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。 組織を変更するには、アクションバーの「組織名」をクリックし、アクセスする必要がある組織を選択します（下図を参照）。
+   >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。 組織を変更するには、右上隅の組織名をクリックし、アクセスする必要がある組織を選択します（下図を参照）。
 
    ![](/help/onboarding/onboarding-journey/assets/admin-console-orgswitch.png)
 
