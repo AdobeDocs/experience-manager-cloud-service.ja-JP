@@ -4,9 +4,9 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 730dcb038a3080ff736a83963811aaf39d270845
+source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1128'
 ht-degree: 2%
 
 ---
@@ -137,12 +137,13 @@ Cloud Managerからクラウド環境を作成するには、次の手順に従�
 
 ## 次の作業 {#whats-next}
 
-Cloud Managerを管理する権限では不十分なので、チームメンバーにインスタンスに対する権限を付与する必要があります。 クラウドリソースが作成され、チームからアクセスする準備が整ったので、システム管理者は、Admin ConsoleのCloud Service製品プロファイルとしてチームメンバーをAEMに割り当てる必要があります。
+Cloud Managerを管理する権限では不十分なので、チームメンバーにインスタンスに対する権限を付与する必要があります。 クラウドリソースが作成され、チームからアクセスする準備が整ったので、システム管理者は、Adobe Admin ConsoleのCloud Service製品プロファイルとしてチームメンバーをAEMに割り当てる必要があります。
+
+>[!NOTE]
+>AEM as aCloud Serviceユーザーにアクセス権を付与するには、2つの製品プロファイル`AEM Users`または`AEM Administrators`のいずれかに属している必要があります。 詳しくは、Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)の[製品とユーザーアクセスの管理を参照してください。
 
 次に、「チームメンバーのAEM as a Team Product Profilesへの割り当て」ドキュメントを確認して、オンボーディングジャーニーを続行する必要があります。
 
->[!NOTE]
->AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、2つの製品プロファイル「AEM Users」または「AEM Administrators」のいずれかに属している必要があります。 詳細情報を参照してください。
 
 ## その他のリソース {#additional-resources}
 
