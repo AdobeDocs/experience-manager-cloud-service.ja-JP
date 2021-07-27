@@ -4,10 +4,10 @@ description: このページでは、チームメンバーをAEM as a Cloud Serv
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: c2301227eb65bedb77acd9754e2bc4b62527863d
+source-git-commit: 196af2ab4801b12017063bc2aab59faabdae45f9
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 1%
+source-wordcount: '814'
+ht-degree: 2%
 
 ---
 
@@ -44,6 +44,7 @@ AEM as aCloud Serviceユーザーに対するアクセス権を付与するに�
    >[!NOTE]
    >オンボーディングを目的として、最初に管理者、開発者、コンテンツ作成者など、即時タスクに参加するユーザーを追加することをお勧めします。 すべてのユーザーを追加することなく、残りのオンボーディングを続行できます。 オンボーディングが完了したら、後でより多くのユーザーに拡大できます。
 
+AEM as aCloud Service製品プロファイルにチームメンバーを割り当てる手順を確認する前に、次の2つの手順に従ってください。
 
 1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)にログインします。 詳しくは、「Admin Consoleへのログイン」を参照してください。
 
@@ -51,11 +52,21 @@ AEM as aCloud Serviceユーザーに対するアクセス権を付与するに�
 
 以下の手順に従って、Adobe Admin ConsoleのCloud Managerプロファイルのリストを表示します。
 
-1. Adobe Admin Consoleにログインしたら、製品とサービスカードでAdobe Experience Manager as a Cloud Serviceを選択します。
+1. [Adobe Admin Console](https://adminconsole.adobe.com/)にログインします。 **概要**&#x200B;ページで、**Cloud Serviceとサービス**&#x200B;カードから&#x200B;**Adobe Experience Managerを製品**&#x200B;として選択します。
+
+   ![](/help/onboarding/onboarding-journey/assets/assign-team1.png)
 
 1. 次の図に示すように、インスタンス（開発環境のオーサーインスタンス）に移動して選択します。
 
-   これで、AEMの役割に基づいてCloud Serviceに割り当てる必要がある製品プロファイルとしてのリストを確認できます。 これらの詳細については、 AEM as a Cloud Service製品プロファイルを参照してください。
+   ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-1.png)
+
+
+1. ユーザーの役割に基づいてCloud Serviceに割り当てる必要がある製品プロファイルとして、AEMのリストが表示されます。
+
+   >[!NOTE]
+   >これらについて詳しくは、[AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)を参照してください。
+
+   ![](/help/onboarding/onboarding-journey/assets/cloud-profiles-2.png)
 
 
 ## AEMユーザーまたはAEM管理者製品プロファイルへのチームメンバーの追加 {#add-team-members}
