@@ -1,15 +1,15 @@
 ---
-title: ScreensでのScreensビデオレンディションの作成(Cloud Service)
-description: ここでは、ScreensでScreensビデオレンディションをCloud Serviceとして作成する方法について説明します。
-source-git-commit: 0badd4209b35b4c8cdfa765a08b5d9db749f52b5
+title: ScreensでのビデオレンディションのCloud Service
+description: ここでは、ScreensでビデオレンディションをCloud Serviceとして作成する方法について説明します。
+source-git-commit: 102aab1d550e950ea880d9b9288bdab41866add6
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 
-# ScreensでのScreensビデオレンディションの作成(Cloud Service) {#creating-screens-video-renditions}
+# ScreensでのビデオレンディションのCloud Service {#creating-screens-video-renditions}
 
 ## はじめに {#introduction}
 
@@ -18,7 +18,9 @@ ht-degree: 0%
 >[!IMPORTANT]
 >Screensチャネルでビデオを使用する場合は、この節で取り上げる手順を設定する必要があります。
 
-## ScreensでのScreensビデオレンディションの作成手順(Cloud Service) {#steps-creating-screens-video-renditions}
+## ScreensでビデオレンディションをCloud Serviceとして作成する手順 {#steps-creating-screens-video-renditions}
+
+次の手順に従って、ScreensコンテンツプロバイダーからScreens as a Cloud Serviceのビデオレンディションを作成します。
 
 1. Screensコンテンツプロバイダー内のチャネルに移動します。
 
