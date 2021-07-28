@@ -55,7 +55,7 @@ ht-degree: 0%
 
 1. 「**保存**」をクリックします。
 
-1. 処理プロファイルを選択し、「**プロファイルをフォルダーに適用**」をクリックします。
+1. 処理プロファイルを選択し、「**Apply Profile to Folder(s)**」をクリックします。
 
    ![](/help/screens-cloud/assets/configure/screens-video-5.png)
 
