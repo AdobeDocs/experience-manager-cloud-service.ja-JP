@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 92%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -35,7 +35,7 @@ ht-degree: 92%
 
 * BPA レポートのコンテンツの生成には、数分から数時間まで、相当な時間がかかる場合があります。必要な時間は、AEM リポジトリーコンテンツのサイズと特性、AEM バージョン、その他の要因に大きく左右されます。
 
-* レポートのコンテンツの生成に非常に時間がかかる場合があるため、コンテンツはバックグラウンドプロセスで生成され、キャッシュに保持されます。レポートの表示とダウンロードは、期限が切れるか、レポートが明示的に更新されるまでコンテンツキャッシュを利用するので、比較的高速でおこなわれます。レポートコンテンツの生成中にブラウザータブを閉じても、キャッシュでレポートのコンテンツが使用可能になったら戻って表示できます。
+* レポートのコンテンツの生成に非常に時間がかかる場合があるため、コンテンツはバックグラウンドプロセスで生成され、キャッシュに保持されます。レポートの表示とダウンロードは、期限が切れるか、レポートが明示的に更新されるまでコンテンツキャッシュを利用するので、比較的高速で行われます。レポートコンテンツの生成中にブラウザータブを閉じても、キャッシュでレポートのコンテンツが使用可能になったら戻って表示できます。
 
 ## 入手方法 {#availability}
 
@@ -76,7 +76,7 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
 
-1. 次の図に示すように、「**CSVに書き出し**」をクリックして、レポートをコンマ区切り値(CSV)形式でダウンロードするオプションがあります。
+1. 下の図に示すように、「**CSV に書き出し**」をクリックして、レポートをコンマ区切り値（CSV）形式でダウンロードするオプションがあります。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
 
@@ -89,23 +89,23 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
 
-#### ベストプラクティスアナライザーレポートでのフィルターの使用{#bpa-filters}
+#### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}
 
-[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)に関連する結果を除外するには、次の手順に従います。
+[ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) に関連する結果を除外するには、次の手順に従います。
 
-1. ページの左側にある左側のレールアイコンをクリックします。 これにより、**ACS Commons Filter**&#x200B;が表示されます。 **ACS Commonsフィルター**&#x200B;をクリックして、下の画像に示すインタラクティブチェックボックスを表示します。
+1. ページの左側にある左レールアイコンをクリックします。**ACS Commons フィルター**&#x200B;が表示されます。**ACS Commonsフィルター**&#x200B;でクリックして、下の画像に示すインタラクティブチェックボックスを表示します。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
-左側のレールアイコンは、BPAがACS Commonsの使用を検出した場合にのみ表示されます。
+左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
-1. このボックスの選択を解除すると、ACS Commonsに関連するすべての結果が除外されます。 次の画像に示すように、レポートに&#x200B;**フィルター適用済みの検索数**&#x200B;が表示されます。 このフィルターは、コンマ区切り値(CSV)形式で書き出される場合にもレポートに適用されます。
+1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-ACS Commonsの結果は無視しないでください。AEM as aCloud Serviceとの互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
+ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
 
 
 ### Adobe Experience Manager 6.2 および 6.1 {#aem-specific-versions}
@@ -122,6 +122,7 @@ Adobe Experience Manager 6.1 では、このツールは機能せず、HTTP イ�
 id="aemcloud_bpa_interpreting"
 title="ベストプラクティスアナライザーレポートの説明"
 abstract="BPA レポート出力は UI と CSV の 2 つのオプションで表示できます。ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果として UI レポートがツールウィンドウに表示されます。レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#analysis-report" text="ベストプラクティス分析レポートの確認"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja" text="ベストプラクティスアナライザーレポートのカテゴリについて"
 
 ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
@@ -145,7 +146,7 @@ additional-url="https://experienceleague.adobe.com/docs/experience-manager-patte
 | 重要度 | 説明 |
 |--- |--- |
 | INFO | 情報提供の目的で提供されます。 |
-| ADVISORY | アップグレードに関する問題の可能性があります。さらに調査をおこなうことをお勧めします。 |
+| ADVISORY | アップグレードに関する問題の可能性があります。さらに調査を行うことをお勧めします。 |
 | MAJOR | 対処する必要があるアップグレードに関する問題の可能性があります。 |
 | CRITICAL | アップグレードの問題が発生する可能性が高く、機能やパフォーマンスの低下を防ぐために対処する必要があります。 |
 
@@ -174,7 +175,7 @@ CSV 形式レポートの列は次のとおりです。
 
 ## HTTP インターフェイス {#http-interface}
 
-BPA は HTTP インターフェイスを提供し、AEM 内でのユーザーインターフェイスの代替として使用できます。このインタフェースは、HEAD コマンドと GET コマンドの両方をサポートしています。BPA レポートを生成し、JSON、CSV、タブ区切り値（TSV）の 3 つの形式のいずれかで返す場合に使用します。
+BPA は HTTP インターフェイスを提供し、AEM 内でのユーザーインターフェイスの代替として使用できます。このインターフェイスは、HEAD コマンドと GET コマンドの両方をサポートしています。BPA レポートを生成し、JSON、CSV、タブ区切り値（TSV）の 3 つの形式のいずれかで返す場合に使用します。
 
 BPA がインストールされているサーバーの HTTP アクセスには、次の URL を使用できます。`<host>` は、ホスト名と必要に応じてポートを示します。
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` JSON 形式の場合
@@ -189,7 +190,7 @@ HTTP インターフェイスは、様々な方法で使用できます。
 
 また、`curl` や `wget` などのコマンドラインツールや、HTTP クライアントアプリケーションを使用することもできます。認証済みのセッションで「ブラウザー」タブを使用しない場合は、コメントの一部として管理ユーザー名とパスワードを指定する必要があります。
 
-これをおこなう方法の例を次に示します。
+これを行う方法の例を次に示します。
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`
 
 ### ヘッダーとパラメーター {#http-headers-and-parameters}
@@ -213,7 +214,7 @@ HTTP ヘッダーと対応するクエリパラメーターの両方が存在す
 HTTP インターフェイスを使用してレポートの生成を開始する簡単な方法は、次のコマンドを使用することです。
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`
 
-リクエストがおこなわれた後、クライアントはレポートを生成するのにアクティブである必要はありません。HTTP GET リクエストを使用して 1 つのクライアントでレポートの生成を開始し、レポートが生成された後は、別のクライアントのキャッシュや、 AEM ユーザーインターフェイスの BPA ツールから表示できます。
+リクエストが行われた後、クライアントはレポートを生成するのにアクティブである必要はありません。HTTP GET リクエストを使用して 1 つのクライアントでレポートの生成を開始し、レポートが生成された後は、別のクライアントのキャッシュや、 AEM ユーザーインターフェイスの BPA ツールから表示できます。
 
 ### 応答 {#http-responses}
 
@@ -224,7 +225,7 @@ HTTP インターフェイスを使用してレポートの生成を開始する
 * `400 Bad Request`：リクエストでエラーが発生したことを示します。詳細については、問題詳細形式のメッセージ（[RFC 7807](https://tools.ietf.org/html/rfc7807) を参照）を参照してください。
 * `401 Unauthorized`：要求が承認されなかったことを示します。
 * `500 Internal Server Error`：内部サーバーエラーが発生したことを示します。詳細については、問題詳細形式のメッセージを参照してください。
-* `503 Service Unavailable`：サーバーが別の応答でビジー状態であり、このリクエストをタイムリーに処理できないことを示します。これは、同期リクエストがおこなわれた場合にのみ発生する可能性があります。詳細については、問題詳細形式のメッセージを参照してください。
+* `503 Service Unavailable`：サーバーが別の応答でビジー状態であり、このリクエストをタイムリーに処理できないことを示します。これは、同期リクエストが行われた場合にのみ発生する可能性があります。詳細については、問題詳細形式のメッセージを参照してください。
 
 ## 管理者情報
 
