@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '921'
+ht-degree: 95%
 
 ---
 
@@ -172,7 +172,9 @@ ht-degree: 96%
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
    + [レンダリングコンポーネントのコンテンツフラグメントの設定](developing/extending/content-fragments-configuring-components-rendering.md)
-   + [検索フォームの設定](developing/extending/search-forms.md)
+   + 検索の管理Forms {#manage-search-forms}
+      + [検索フォームの設定](developing/extending/search-forms.md)
+      + [インボックス用の検索フィルターの設定](developing/extending/configure-inbox-search-rail.md)
    + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
    + [RTE プラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [アクセシブルなサイトの作成に向けた RTE の設定](/help/implementing/developing/extending/rte-accessible-content.md)
