@@ -2,10 +2,10 @@
 title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 232ef0198888e55806bd1358d12829035c140c75
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 この操作は、ページの公開と呼ばれます。パブリッシュ環境からページを削除する場合は、ページの非公開と呼ばれます。ページは、公開／非公開を切り替えても、削除するまでは、さらなる変更に備えてオーサー環境で使用できます。
 
-ページの公開または非公開は、即座におこなうことも、後で事前定義済みの日時におこなうことができます。
+ページの公開または非公開は、即座に行うことも、後で事前定義済みの日時に行うことができます。
 
 ## 用語 {#terminology}
 
-Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開に関連する様々な用語を目にするかもしれません。
+Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公開に関連する様々な用語を目にするかもしれません。
 
 * **公開／非公開**
    * 環境でコンテンツを公開する（または非公開にする）アクションに対して主に使用される用語です。
@@ -28,7 +28,7 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
    * 公開／非公開と同義です。
    * これらの用語は、以前のバージョンの AEM で使用されていました。
 * **レプリケート／レプリケーション**
-   * ページを公開する際におこなわれる、環境間でのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
+   * ページを公開する際に行われる、環境間でのデータ（ページコンテンツ、ファイル、コード、ユーザーコメントなど）の移動を表す技術用語です。
    * これらの用語は主に開発者が使用します。
 
 ## ページの公開 {#publishing-pages-1}
@@ -47,11 +47,6 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 >* ワークフローがトリガーされたことを通知するメッセージが少しの間表示されます。
 
 
-<!--
->* This [workflow may have been customized](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) by your development team.
->* A message will be displayed briefly to notify you that the workflow was triggered.
--->
-
 >[!NOTE]
 >
 > その他の可能性については、[ページプロパティの「基本」タブ](/help/sites-cloud/authoring/fundamentals/page-properties.md#basic)の「**オンタイム**」および「**オフタイム**」を参照してください。
@@ -64,7 +59,7 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 
    ![ページオプションを使用したページの公開](/help/sites-cloud/authoring/assets/publishing-page-options.png)
 
-1. 公開が必要な参照がページに含まれているかどうかに応じて、次の操作をおこないます。
+1. 公開が必要な参照がページに含まれているかどうかに応じて、次の操作を行います。
 
    * 公開する参照がない場合、ページが直接公開されます。
    * 公開が必要な参照がページに含まれている場合は、それらのリストが&#x200B;**公開**&#x200B;ウィザードに表示され、ウィザードで次のいずれかを実行できます。
@@ -112,9 +107,9 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 >
 >クイック公開は、浅い公開です。つまり、選択したページだけが公開され、子ページは公開されません。
 
-#### 公開を管理  {#manage-publication}
+#### 公開を管理 {#manage-publication}
 
-**公開を管理**&#x200B;には、クイック公開よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
+**「公** 開を管理」には、「クイック公 **開」よりも多くのオプションが用意されています**。子ページの追加、参照のカスタマイズ、適用可能なワークフローの開始、後日公開するオプションの提供が可能です。
 
 公開を管理を使用してページを公開または非公開にするには、次の手順を実行します。
 
@@ -124,46 +119,42 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;では、次のことができます。
 
-   * 選択したページの公開または非公開を選択する。
-   * そのアクションを今すぐ実行するか後日実行するかを選択する。
+   * **動作**
 
-   後で公開することを選択すると、指定した時間に選択したページを公開するワークフローが開始されます。逆に、後で非公開にすることを選択すると、特定の時間に選択したページを非公開にするワークフローが開始されます。
+      選択したページの公開または非公開を選択する。
 
-   公開／非公開を後からキャンセルする場合は、ワークフローコンソールに移動して、対応するワークフローを終了します。<!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   * **スケジュール設定**
 
+      そのアクションを今すぐ実行するか後日実行するかを選択する。
+
+      後で公開することを選択すると、指定した時間に選択したページを公開するワークフローが開始されます。逆に、後で非公開にすることを選択すると、特定の時間に選択したページを非公開にするワークフローが開始されます。
+
+      >[!NOTE]
+      >
+      >公開／非公開を後からキャンセルする場合は、[ワークフローコンソール](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)に移動して、対応するワークフローを終了します。
    ![公開を管理でのオプション](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-   「**次へ**」をクリックして次に進みます。
+1. 「**次へ**」をクリックして次に進みます。
 
 1. 公開を管理ウィザードの次の手順の&#x200B;**範囲**&#x200B;では、子ページを含めたり、参照を含めたりするなど、公開／非公開の範囲を定義できます。
 
    ![公開を管理での範囲](/help/sites-cloud/authoring/assets/publishing-manage-publication-scope.png)
 
+   **コンテンツの追加**
+
    公開を管理ウィザードを開始する前に選択し忘れた場合は、「**コンテンツを追加**」ボタンを使用して、公開するページのリストにページを追加できます。
 
-   「コンテンツを追加」ボタンをクリックすると、[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)が開き、コンテンツを選択できます。
+   「**コンテンツを追加**」ボタンを選択すると、[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)が開き、コンテンツを選択できます。
 
    必要なページを選択し、「**選択**」をクリックしてコンテンツをウィザードに追加するか、「**キャンセル**」をクリックして選択をキャンセルして、ウィザードに戻ります。
 
-   ウィザードに戻ると、リストの項目を選択して、次のような追加のオプションを設定できます。
+   **選択範囲を削除**
 
-   * その子を含める。
-   * 選択から削除する。
-   * その公開済みの参照を管理する。
+   ウィザードに戻ると、リスト内の項目を選択して、選択から削除できます。
 
    ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   「**子を含める**」をクリックすると、次のことができるダイアログが開きます。
-
-   * 直近の子のみを含める。
-   * 変更されたページのみを含める。
-   * 既に公開済みのページのみを含める。
-
-   「**追加**」をクリックして、選択オプションに基づいて公開または非公開にするページのリストに子ページを追加します。「**キャンセル**」をクリックして選択をキャンセルし、ウィザードに戻ります。
-
-   ![公開を管理での子の包含](/help/sites-cloud/authoring/assets/publishing-include-children.png)
-
-   ウィザードに戻ると、子を含めるダイアログでのオプションの選択に基づいて、ページが追加されていることを確認できます。
+   **公開済みの参照**
 
    ページを選択して「**公開済みの参照**」ボタンをクリックすると、ページに対して公開または非公開にする参照を表示および変更できます。
 
@@ -177,30 +168,42 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 
    ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
+   **子を含める**
+
+   >[!NOTE]
+   >
+   >[ツリーの公開と非公開](#publishing-and-unpublishing-a-tree)を参照してください。
+
+   「**子を含める**」をクリックすると、次の操作を行うためのダイアログボックスが開きます。
+
+   * **子を含める**
+   * **直近の子のみを含める**
+   * **変更されたページのみを含める**
+   * **既に公開済みのページのみを含める**
+
+   必要なオプションを有効にし、「**OK**」で確定して、選択オプションに基づいて公開または非公開にするページのリストに子ページを追加します。 「**キャンセル**」をクリックして選択をキャンセルし、ウィザードに戻ります。
+
+   ![公開を管理での子の包含](/help/sites-cloud/authoring/assets/publishing-include-children.png)
+
 1. 「**公開**」をクリックして完了します。
 
    サイトコンソールに戻ると、公開を確認する通知メッセージが表示されます。
 
 1. 公開したページがワークフローに関連付けられている場合、公開ウィザードの最後の&#x200B;**ワークフロー**&#x200B;ステップに表示されます。
 
+   ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-workflow.png)
+
    >[!NOTE]
    >
    >**ワークフロー**&#x200B;手順は、ユーザーの権限に基づいて表示されます。公開するための特権については、このページの前述の注意を参照してください。詳しくは、ワークフローへのアクセスの管理および[ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)を参照してください。
-   <!--
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the previous note on this page regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-cloud/authoring/workflows/applying.md) for details.
-   -->
 
    リソースは、トリガーされたワークフローでグループ化され、それぞれに次のオプションがあります。
 
    * ワークフローのタイトルを定義する。
    * ワークフローが複数のリソースをサポートする場合、ワークフローパッケージを維持する。
-
-   <!--Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
-    -->
-
    * ワークフローパッケージを維持するオプションが選択されている場合、ワークフローパッケージのタイトルを定義する。
 
-   「**公開**」または「**後で公開する**」をクリックして、公開を完了します。
+1. 「**公開**」または「**後で公開する**」をクリックして、公開を完了します。
 
 ## ページを非公開にする {#unpublishing-pages}
 
@@ -215,26 +218,30 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 
 ページを編集する際に、そのページを非公開にする場合、[ページを公開](#publishing-from-the-editor)するときと同じように、**ページ情報**&#x200B;メニューで「**ページを非公開にする**」を選択します。
 
-### コンソールから非公開にする  {#unpublishing-from-the-console}
+### コンソールから非公開にする {#unpublishing-from-the-console}
 
 [「公開を管理」オプションを使用して公開する](#manage-publication)場合と同様に、「公開を管理」オプションを使用して非公開にできます。
 
 1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;で、デフォルトオプションの&#x200B;**公開**&#x200B;の代わりに&#x200B;**非公開**&#x200B;を選択します。
 
-   ![非公開中](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![非公開 — オプション](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    後で公開することを選択するとこのバージョンのページを公開するワークフローが指定した時間に開始されるのと同じように、後でアクティベートを解除することを選択すると、選択したページを非公開にするワークフローが特定の時間に開始されます。
 
-   公開／非公開を後からキャンセルする場合は、ワークフローコンソールに移動して、対応するワークフローを終了します。<!--If you want to cancel a publish/unpublish later, go to the [Workflow Console](/help/sites-administering/workflows.md) to terminate the corresponding workflow.-->
+   >[!NOTE]
+   >
+   >公開／非公開を後からキャンセルする場合は、[ワークフローコンソール](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)に移動して、対応するワークフローを終了します。
 
 1. 非公開の操作を完了するには、[ページを公開する](#manage-publication)場合と同様にウィザードを続行します。
+
+   ![非公開 — 範囲](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## ツリーの公開と非公開 {#publishing-and-unpublishing-a-tree}
 
 多数のコンテンツページを入力または更新した場合、これらのページがすべて同じルートページの下にあれば、ツリー全体を 1 回の操作で簡単に公開できます。
 
-サイトコンソールにある「[公開を管理](#manage-publication)」オプションを使用すると、これをおこなうことができます。
+サイトコンソールにある「[公開を管理](#manage-publication)」オプションを使用すると、これを行うことができます。
 
 1. サイトコンソールで、公開または非公開するツリーのルートページを選択し、「**公開を管理**」を選択します。
 1. **公開を管理**&#x200B;ウィザードが起動します。公開または非公開と実行するタイミングを選択して、「**次へ**」を選択して続行します。
@@ -242,18 +249,18 @@ Adobe Experience Manager (AEM) as a Cloud Service を使用する場合、公開
 
    ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. **子を含める**&#x200B;ダイアログで、次のオプションのチェックボックスをオフにします。
+1. **子を含める**&#x200B;ダイアログで、次の操作を実行します。
 
-   * 直近の子のみを含める
-   * 既に公開済みのページのみを含める
+   * **子を含める**&#x200B;を選択します。
+   * **直近の子のみを含める**&#x200B;を選択解除します
+   * **既に公開されているページのみを含める**&#x200B;を選択解除します。
+   * **必要に応じて、変更されたページのみを含める**
 
-   これらのオプションは、デフォルトで選択されているので、忘れずに選択解除する必要があります。「**追加**」をクリックして、コンテンツを公開／非公開に追加します。
+   これらのオプションはデフォルトで選択されているので、忘れずに設定しておく必要があります。 「**OK**」で選択を確認し、コンテンツを公開/非公開に追加します。
 
-   ![非公開時の子の包含](/help/sites-cloud/authoring/assets/publishing-tree-children.png)
+   ![ツリーパブリッシュの子を含める](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. **公開を管理**&#x200B;ウィザードにツリーのコンテンツがリストされていることを確認します。ページを追加したりそれらの選択を削除したりすることで、選択をさらにカスタマイズできます。
-
-   ![公開を管理でのオプション](/help/sites-cloud/authoring/assets/publishing-tree-select.png)
+1. **公開を管理**&#x200B;ウィザードで、ページを追加したり、選択したページを削除したりして、さらに選択をカスタマイズできます。
 
    「**公開済みの参照**」オプションを使用して、公開する参照を確認することもできます。
 
