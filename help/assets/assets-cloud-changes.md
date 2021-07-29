@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: リリース情報
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bb4c1377da4bbca6c54ec2a0ec0a0b31f9182485
+source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 70%
+source-wordcount: '972'
+ht-degree: 71%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 70%
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効必要に応じて、対応するワークフローランチャーを有効にします。書き戻しは、アセットマイクロサービスで処理されます。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して手動で再処理します。 |
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=ja)を参照してください。 |
-| 複合アセットのサブアセットの生成 | 非対応 | 注釈などの依存ユースケースは満たされない場合があります。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。一部のファイルタイプのPDFプレビューは、2021.7.0リリース](/help/release-notes/release-notes-cloud/release-notes-current.md#beta-features-assets)の[プレリリース機能として使用できます。 [プレリリースチャネルへのアクセス方法](/help/release-notes/prerelease.md)を参照してください。 |
+| 複合アセットのサブアセットの生成 | 非対応 | 注釈などの依存ユースケースは満たされない場合があります。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。[2021.7.0リリース](/help/release-notes/release-notes-cloud/release-notes-current.md)以降、一部のファイルタイプのPDFプレビューが利用可能になりました。 |
 | ホームページ | 非対応 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=ja) を参照してください。 |
 | ZIP アーカイブからのアセットの抽出 | 非対応 | [Adobe  [!DNL Experience Manager] 6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja#extractzip)を参照してください。 |
 | Assetsの評価 | 非対応 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
