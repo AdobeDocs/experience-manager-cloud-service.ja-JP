@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ec1e83b344b0d237db479f66fbb761db2d8923d5
+source-git-commit: 21c4bf1a961ab74165f50feb78ce14cc1fa84725
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 11%
+source-wordcount: '1280'
+ht-degree: 10%
 
 ---
 
@@ -127,6 +127,30 @@ Azul JDKを使用するように切り替えるお客様は、Azul JDKでエラ�
 ### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
 API `com.day.cq.dam.api.collection.SmartCollection`は、[!DNL Cloud Service]として[!DNL Experience Manager]では使用できません。 （CQ-4326322）
+
+## [!DNL Experience Manager Screens] として  [!DNL Cloud Service] {#screens}
+
+### バグ修正 {#bug-fixes-screens}
+
+* コンテンツプロバイダーの設定は、作成または更新時に検証されるようになりました。
+
+* すべての表示にはフォルダ列があります。
+
+* Screensコンテンツ構造を展開できます。
+
+* `bulk-offline-update-service` 一部の環境のすべての権限が欠落していました。
+
+* 新しいScreensクラウドドキュメントと一致するよう、ヘルプリンクを更新してください。
+
+* 再生リストの割り当てを解除し、プレーヤーを割り当てたプレイリストの削除を許可しません。
+
+* 「すべて」のキャッシュがクリアされた場合に、プレーヤーがアセットを再ダウンロードするようになりました。
+
+* 次の日に&#x200B;*End Time*&#x200B;が設定されている場合、繰り返しスケジュールが機能するようになりました。
+
+* `Back&Forward` 現在は、Screens Cloud UIで機能します。
+
+* 同じ名前で異なる名前空間を持つタグを作成できなかった問題を修正しました。
 
 ## [!DNL Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
