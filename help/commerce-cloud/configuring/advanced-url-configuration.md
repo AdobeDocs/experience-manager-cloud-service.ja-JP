@@ -10,10 +10,10 @@ feature: コマース統合フレームワーク
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: dbf32230042f39760733b711ffe8b5b4143e0544
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 97%
+source-wordcount: '747'
+ht-degree: 48%
 
 ---
 
@@ -25,44 +25,69 @@ ht-degree: 97%
 
 ## 設定 {#configuration}
 
-SEO 要件と必要性に従って `UrlProvider` サービスを設定するには、プロジェクトで「CIF URL Provider configuration」設定用の OSGI 設定を提供し、以下の説明に従ってサービスを設定する必要があります。
+SEO要件と必要に応じて`UrlProvider`サービスを設定するには、プロジェクトで「CIF URL Provider configuration」のOSGI設定を提供する必要があります。
 
 >[!NOTE]
 >
-> 下記の [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL の使用方法を示す設定例が含まれています。
+> AEM CIFコアコンポーネントのリリース2.0.0以降、URLプロバイダー設定では、1.xリリースで提供されていたフリーテキスト設定可能な形式の代わりに、事前に定義されたURL形式のみが提供されます。 さらに、URL内のデータを渡すためのセレクターの使用は、サフィックスに置き換えられました。
 
-### 製品ページのURLテンプレート {#product}
+### 製品ページのURL形式 {#product}
 
-次のプロパティを使用して製品ページの URL を設定します。
+製品ページのURLを設定し、次のオプションをサポートします。
 
-* **製品 URL テンプレート**：一連のプレースホルダーを使用して URL の形式を定義します。デフォルト値は `{{page}}.{{url_key}}.html#{{variant_sku}}` で、最終的に `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange` のような URL が生成されます。
-   * `{{page}}` は `/content/venia/us/en/products/product-page` で置き換えられています。
-   * `{{url_key}}` は、Magento の製品の `url_key` プロパティに置き換えられています（ここでは `chaz-kangeroo-hoodie`）。
-   * `{{variant_sku}}` は、現在選択されているバリアントに置き換えられています（ここでは `MH01-M-Orange`）。
-* **製品識別子の場所**：製品データの取得に使用される識別子の場所を定義します。デフォルト値は `SELECTOR` です。もう 1 つの有効な値は `SUFFIX` です。前の例の URL では、ID `chaz-kangeroo-hoodie` を使用して製品データを取得します。
-* **製品識別子の種類**：製品データを取得する際に使用する識別子のタイプを定義します。デフォルト値は `URL_KEY` です。もう 1 つの有効な値は `SKU` です。前の例の URL では、`filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}` のような Magento GraphQL フィルターを使用して製品データを取得します。
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}`（デフォルト）
+* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-### 製品リストページのURLテンプレート{#product-list}
+ここで、[Venia参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は
 
-次のプロパティを使用して、カテゴリページまたは製品リストページの URL を設定します。
+* `{{page}}` は、  `/content/venia/us/en/products/product-page`
+* `{{sku}}` は、製品のskuに置き換えられます（例： ）。  `VP09`
+* `{{url_key}}` は、製品のプロパティに置 `url_key` き換えられます(例：  `lenora-crochet-shorts`
+* `{{url_path}}` は製品のに置き換えら `url_path`れます（例： ）。  `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` は、現在選択されているバリアントに置き換えられます(例：  `VP09-KH-S`
 
-* **カテゴリ URL テンプレート**：一連のプレースホルダーを使用して URL の形式を定義します。デフォルト値は `{{page}}.{{id}}.html` で、最終的に `/content/venia/us/en/products/category-page.3.html` のような URL が生成されます。
-   * `{{page}}` は `/content/venia/us/en/products/category-page` で置き換えられています。
-   * `{{id}}` は、カテゴリの Magento の `id` プロパティ（ここでは `3`）に置き換えられています。
-* **カテゴリ識別子の場所**：製品データの取得に使用される識別子の場所を定義します。デフォルト値は `SELECTOR` です。もう 1 つの有効な値は `SUFFIX` です。前の例の URL では、ID `3` を使用して製品データを取得します。
-* **カテゴリ識別子の種類**：製品データを取得する際に使用する識別子のタイプを定義します。`ID` はデフォルト値であり、現在サポートされている唯一の値です。前の例の URL では、`category(id:3)` のような Magento GraphQL フィルターを使用してカテゴリデータを取得します。
+上記の例のデータでは、デフォルトのURL形式を使用して書式設定された製品バリアントURLは`/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`のようになります。
 
-コンポーネントが `UrlProvider` を使用して対応するデータを設定している限り、各テンプレートにカスタムプロパティを追加できます。`ProductListItemImpl` クラスのコード例を調べて、この実装方法を確認してください。
+### カテゴリページのURL形式 {#product-list}
 
-また、`UrlProvider` サービスを完全にカスタムの OSGi サービスで置き換えることもできます。この場合、デフォルトの実装を置き換えるには、`UrlProvider` インターフェイスを実装し、それをより高いサービスランクに登録する必要があります。
+カテゴリまたは製品リストページのURLを設定し、次のオプションをサポートします。
+
+* `{{page}}.html/{{url_path}}.html`（デフォルト）
+* `{{page}}.html/{{url_key}}.html`
+
+ここで、[Venia参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は
+
+* `{{page}}` は、  `/content/venia/us/en/products/category-page`
+* `{{url_key}}` は、カテゴリのプロパティに置き換えられま `url_key` す。
+* `{{url_path}}` は、カテゴリの  `url_path`
+
+上記の例のデータでは、デフォルトのURL形式を使用して書式設定されたカテゴリページのURLは`/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`のようになります。
+
+>[!NOTE]
+> 
+> `url_path`は、製品またはカテゴリの上位層の`url_keys`と、製品またはカテゴリの`url_key`を`/`スラッシュで区切った連結です。
+
+## カスタムUrl形式 {#custom-url-format}
+
+カスタムURL形式をプロジェクトに提供するには、[`UrlFormat`インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)を実装し、asカテゴリページまたは製品ページのURL形式を使用してOSGIサービスとして実装を登録します。 `UrlFormat#PROP_USE_AS`サービスプロパティは、置き換える設定済みの事前定義済み形式ので示します。
+
+* `useAs=productPageUrlFormat`は、設定済みの製品ページのurl形式を置き換えます。
+* `useAs=categoryPageUrlFormat`は、設定済みのカテゴリページのurl形式を置き換えます。
+
+OSGIサービスとして登録されている`UrlFormat`の実装が複数ある場合、サービスランキングの高い実装が、サービスランキングの低い実装に置き換えられます。
+
+`UrlFormat`は、指定されたパラメーターのマップからURLを作成し、同じパラメーターのマップを返すURLを解析するメソッドのペアを実装する必要があります。 パラメーターは前述と同じです。カテゴリに対してのみ、追加の`{{uid}}`パラメーターが`UrlFormat`に提供されます。
 
 ## Sling マッピングとの結合 {#sling-mapping}
 
-`UrlProvider` に加え、URL の書き換えと処理をおこなうために、[Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)を設定することもできます。AEM アーキタイププロジェクトでは、ポート 4503（パブリッシュ）および 80（ディスパッチャー）の Sling マッピングを設定する[設定例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)も提供されています。
+`UrlProvider` に加え、URL の書き換えと処理を行うために、[Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)を設定することもできます。AEM アーキタイププロジェクトでは、ポート 4503（パブリッシュ）および 80（ディスパッチャー）の Sling マッピングを設定する[設定例](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish)も提供されています。
 
 ## AEM Dispatcher との統合 {#dispatcher}
 
-URL の書き換えは、AEM Dispatcher HTTP サーバーで `mod_rewrite` モジュールを使用しておこなうこともできます。[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)には、生成されたサイズに対する基本的な[書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)が含まれている参照用 AEM Dispatcher 設定が用意されています。
+URL の書き換えは、AEM Dispatcher HTTP サーバーで `mod_rewrite` モジュールを使用して行うこともできます。[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)には、生成されたサイズに対する基本的な[書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)が含まれている参照用 AEM Dispatcher 設定が用意されています。
 
 ## 例
 
@@ -70,7 +95,7 @@ URL の書き換えは、AEM Dispatcher HTTP サーバーで `mod_rewrite` モ�
 
 >[!NOTE]
 >
->この設定は、プロジェクトで使用する外部ドメインで調整する必要があります。Sling マッピングは、ホスト名とドメインに基づいて動作します。したがって、この設定はデフォルトで無効になっており、デプロイ前に有効にする必要があります。これをおこなうには、使用されているドメイン名に従って `ui.content/src/main/content/jcr_root/etc/map.publish/https` の Sling マッピング `hostname.adobeaemcloud.com` フォルダーの名前を変更し、`resource.resolver.map.location="/etc/map.publish"` をプロジェクトの `JcrResourceResolver` 設定に追加してこの設定を有効にします。
+>この設定は、プロジェクトで使用する外部ドメインで調整する必要があります。Sling マッピングは、ホスト名とドメインに基づいて動作します。したがって、この設定はデフォルトで無効になっており、デプロイ前に有効にする必要があります。これを行うには、使用されているドメイン名に従って `ui.content/src/main/content/jcr_root/etc/map.publish/https` の Sling マッピング `hostname.adobeaemcloud.com` フォルダーの名前を変更し、`resource.resolver.map.location="/etc/map.publish"` をプロジェクトの `JcrResourceResolver` 設定に追加してこの設定を有効にします。
 
 ## その他のリソース
 
