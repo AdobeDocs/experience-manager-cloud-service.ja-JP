@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 7085772d60f589418f7aeb50083906fab495c376
+source-git-commit: 08a687afa423255046dd37c55547d3615ea8276b
 workflow-type: tm+mt
 source-wordcount: '663'
-ht-degree: 54%
+ht-degree: 53%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 54%
 
 | 製品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| バージョン | 2021.06.0 |
+| バージョン | 2021.07.0 |
 | タイプ | 継続的アップデート |
 | 公開日 | 継続的アップデート |
 
@@ -45,7 +45,7 @@ Cloud Serviceとしての[!DNL Adobe Experience Manager]は、イノベーショ
 * [既知の問題](known-issues.md)
 * [非推奨（廃止予定）の機能と削除された機能](deprecated-removed-features.md)
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience ManagerガイドとしてのCloud Service {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -58,7 +58,7 @@ Cloud Serviceとしての[!DNL Adobe Experience Manager]は、イノベーショ
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。 |
 | [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを探索して、最初のヘッドレスプロジェクトの準備をしてください。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
