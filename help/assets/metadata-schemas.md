@@ -5,7 +5,7 @@ contentOwner: AG
 feature: メタデータ
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
 workflow-type: tm+mt
 source-wordcount: '2562'
 ht-degree: 97%
