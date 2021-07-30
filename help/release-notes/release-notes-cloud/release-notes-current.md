@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9ef41bc9f60f16a2fdf1900466db8bad99e619e9
+source-git-commit: 76d068de881edce2324ceb73f1a724ff0f5f585c
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1313'
 ht-degree: 10%
 
 ---
@@ -156,22 +156,21 @@ API `com.day.cq.dam.api.collection.SmartCollection`は、[!DNL Cloud Service]と
 
 ### [!DNL Forms] の新機能  {#what-is-new-forms}
 
-* automated forms conversionサービスを使用して、フランス語、ドイツ語、スペイン語のPDF formsをアダプティブフォームに変換できるようになりました。
+* automated forms conversionサービスを使用して、フランス語、ドイツ語、スペイン語のPDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)をアダプティブフォームに変換できるようになりました。[
 * アダプティブフォームのコンポーネントに関連するエラーを表示するためのパネルをテンプレートエディターに別に追加しました。 これにより、すべてのアダプティブフォームのエラーを1か所に統合し、解決に要する時間を短縮できます。
 
 ### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#beta-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**:通信APIは、XDPテンプレートとXMLデータを組み合わせて様々な形式の印刷ドキュメントを生成するのに役立ちます。このサービスを使用すると、同期モードでドキュメントを生成できます。 APIを使用すると、次の操作を可能にするアプリケーションを作成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信APIシェル](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) プでは、XDPテンプレートとXMLデータを組み合わせて、様々な形式の印刷ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 APIを使用すると、次の操作を可能にするアプリケーションを作成できます。
    * テンプレートファイルにXMLデータを入力してドキュメントを生成します。
    * 非インタラクティブPDF印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFAフォームPDFおよびAdobe Acrobatフォームから印刷用PDFファイルを生成します。
 
 * **Variable Data Externalizer**：AEM ワークフロー変数のデータを、組織で管理される外部ストレージシステムに保存できます。
 
-* **Acroformベースのレコードのドキュメント**:XFAベースのフォームテンプレート以外に、Adobe AcrobatフォームPDF(Acroform PDF)をレコードのドキュメントのテンプレートとして使用することもできます。
+* **Acroformベースのレコードのドキュメント**:また、 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) を、XFAベースのフォームテンプレート以外のレコードのドキュメントのテンプレートとして使用することもできます。
 
-* **Microsoft Azureデータストアコネクタ**:これで、フォームデータモデルをMicrosoft Azure Storageに接続できます。アダプティブフォームデータを保存し、BLOBとしてMicrosoft Azure Storageに取得することができます。
-
+* **Microsoft Azureデータストアコネクタ**:これで、フォームデ [ータモデルをMicrosoft Azure Storageに接続できます](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。アダプティブフォームデータを取得し、BLOBとしてMicrosoft Azure Storageに保存することができます。
 
 ## Cloud Acceleration Manager {#cam}
 
