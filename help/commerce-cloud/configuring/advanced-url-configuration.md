@@ -10,9 +10,9 @@ feature: コマース統合フレームワーク
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: dbf32230042f39760733b711ffe8b5b4143e0544
+source-git-commit: 490a93cfcfdac5ba209e52b1de3e1f823e80d26f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '746'
 ht-degree: 48%
 
 ---
@@ -72,7 +72,7 @@ SEO要件と必要に応じて`UrlProvider`サービスを設定するには、�
 
 ## カスタムUrl形式 {#custom-url-format}
 
-カスタムURL形式をプロジェクトに提供するには、[`UrlFormat`インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)を実装し、asカテゴリページまたは製品ページのURL形式を使用してOSGIサービスとして実装を登録します。 `UrlFormat#PROP_USE_AS`サービスプロパティは、置き換える設定済みの事前定義済み形式ので示します。
+カスタムURL形式をプロジェクトに提供するには、[`UrlFormat`インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)を実装し、カテゴリページまたは製品ページのURL形式として使用してOSGIサービスとして実装を登録します。 `UrlFormat#PROP_USE_AS`サービスプロパティは、置き換える設定済みの定義済み形式を示します。
 
 * `useAs=productPageUrlFormat`は、設定済みの製品ページのurl形式を置き換えます。
 * `useAs=categoryPageUrlFormat`は、設定済みのカテゴリページのurl形式を置き換えます。
