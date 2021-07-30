@@ -5,7 +5,7 @@ contentOwner: AG
 feature: アセット管理
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 87%
