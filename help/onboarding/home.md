@@ -2,66 +2,66 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 3e3296f2c7cbc5c960560a3a6c380875e2ca64bd
+source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 24%
+source-wordcount: '942'
+ht-degree: 86%
 
 ---
 
-# [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}へのオンボーディング
+# [!DNL Experience Manager as a Cloud Service]へのオンボーディング {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
 >title="オンボーディングの概要"
->abstract="新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Serviceを成功させる準備が整っていることを確認するための出発点として機能します。 Cloud Managerに追加されたユーザーを、割り当てられた役割と関連する権限に導くには、Adobe IDとシステム管理者のヘルプが必要です。"
+>abstract="新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Service で成功するための出発点となります。Cloud Manager にユーザーを追加し、役割と関連する権限を割り当てるには、Adobe ID とシステム管理者の助けが必要です。"
 
-AEM as aをCloud Serviceにして、ジャーニーを開始しました。 新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Serviceを成功させる準備が整っていることを確認するための出発点として機能します。
+AEM as a Cloud Service のジャーニーが始まりました。新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Service で成功するための出発点となります。
 
-このガイドは、ユーザーとチームがCloud Managerの利用をすぐに開始するのに役立ちます。 割り当てられたロール(Admin Consoleの製品プロファイル)と関連する権限にCloud Managerに追加されたユーザーを取得するには、Adobe IDとシステム管理者のヘルプが必要です。 システム管理者がシステムを使用してこれを行う方法については、Admin Consoleを参照してください。 Cloud Managerのロール(Admin Console内の製品プロファイルと呼ばれる)のリストと、それに関連する権限について詳しく説明し、組織内の様々なユーザーに必要なロールを判断できます。
+このガイドは、個人でもチームでも、Cloud Manager をすぐに使い始めるのに役立ちます。Cloud Manager にユーザーを追加し、役割（Admin Console の製品プロファイル）と関連する権限を割り当てるには、Adobe ID とシステム管理者の助けが必要です。システム管理者が Admin Console を介してこれを行う方法を説明します。Cloud Manager の役割（Admin Console では製品プロファイルと呼ぶ）のリストと、それに関連する権限について詳しく説明するので、組織内の様々なユーザーに必要な役割を判断できます。
 
-次の画像は、システム管理者が受け取ったお知らせメールから始めて、AEM用Cloud ManagerにCloud Serviceとしてアクセスするユーザーをカウントする、オンボーディングジャーニーを示しています。
+次の図は、システム管理者が受け取る「ようこそ」メールから始まり、ユーザーが AEM as a Cloud Service の Cloud Manager にアクセスするまでのオンボーディングの流れを示しています。
 
 ![](/help/onboarding/what-is-required/assets/cust-journey.png)
 
 ## オンボーディングに関する主要な記事 {#key-articles}
 
-ここでは、AEM as a Cloud Serviceを使い始める際の重要な記事を紹介します。
+ここでは、AEM as a Cloud Service を使い始める際に重要な記事を紹介します。
 
 **オンボーディング中に期待する事項**
 
-契約が結ばれると、次のイベントが発生します。
+契約が締結されると、次のイベントが発生します。
 
-1. Adobeは組織のプロビジョニングを完了し、組織のシステム管理者に「[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)」の電子メールを受け取ります。ユーザーの追加、役割への割り当て、Cloud Managerへの適切なアクセス権の付与も含まれます。
+1. アドビが組織のプロビジョニングを完了すると、組織のシステム管理者は「ようこそ」メールを受け取ります。これにより、システム管理者は「[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)」を実行して、ユーザーの追加、役割への割り当て、Cloud Manager への適切なアクセス権の付与などを行えるようになります。
 
-1. システム管理者が追加したユーザーには、「ようこそ」の電子メールが届き、ユーザーは正常に[Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)に移動できます。 Adobe IDを使用してログインし、ここからCloud Managerでジャーニーを開始できるようになりました。
+1. システム管理者が追加したユーザーは「ようこそ」メールを受け取り、[Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) にアクセスできるようになります。ユーザーは Adobe ID を使用してログインし、Cloud Manager でジャーニーを開始できるようになります。
 
-1. システム管理者は、開発目的でAEMインスタンス](/help/onboarding/what-is-required/accessing-aem-instance.md)に対するユーザーアクセスを[付与できます。
+1. システム管理者は、開発目的で [AEM インスタンスにユーザーアクセスを付与](/help/onboarding/what-is-required/accessing-aem-instance.md)できます。
 
-**[Adobe ID](/help/onboarding/what-is-required/get-your-adobe-id.md)**
+**[Adobe ID を入手](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
 
-Cloud Managerに追加されたユーザーを、割り当てられた役割に導くには、Adobe IDとシステム管理者の支援が必要です。
+ユーザーを Cloud Manager に追加して役割を割り当てるには、Adobe ID とシステム管理者の支援が必要です。
 
 **[Cloud Manager の役割](/help/onboarding/what-is-required/user-roles-permissions.md)**
 
-システム管理者は、ユーザーを追加して、Cloud Managerの役割に割り当てることができます。 この節では、導入前に、*Cloud Managerのロール*&#x200B;とは何か、およびロールに関連付けられている権限について説明します。
+システム管理者は、ユーザーを追加して、Cloud Manager の役割に割り当てることができます。この節ではまず、*Cloud Manager の役割*&#x200B;と役割に関連付けられている権限について説明します。
 
 **[システム管理者のタスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
 
-システム管理者は、アクセスから権限まで、ユーザーのすべての側面を管理します。 このユーザーは、CloudおよびCloud Manager内でタスクの実行を開始する権限を持つ最初のAdmin Consoleです。
-次のドキュメントページには、基本的な組織的タスクを説明する情報が含まれています。
+システム管理者は、アクセスから権限まで、ユーザーのすべての側面を管理します。このユーザーは、Admin Console および Cloud Manager 内でタスクの実行を開始する権限を持つ最初のユーザーです。
+次のドキュメントページには、組織の基本的なタスクを説明する情報が含まれています。
 
 * ユーザーの追加
-* Cloud Managerの役割と権限へのユーザーの割り当て
+* Cloud Manager の役割と権限へのユーザーの割り当て
 
 **[Cloud Manager に移動する](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-これで、ユーザーとして追加され、 Cloud Managerの役割に割り当てられたので、 Cloud Managerにアクセスして、AEMを使用したCloudジャーニーを開始できます。 ユーザーは、[プログラム](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)の作成、[環境](/help/implementing/cloud-manager/manage-environments.md)の追加、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセス、[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)の設定、[コード](/help/implementing/cloud-manager/deploy-code.md)のデプロイなど、様々なタスクを実行できます。
-Cloud Managerは、AEM as a Cloud Serviceの重要な部分です。 これにより、組織はクラウド内の[!DNL Experience Manager]を自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI/CDパイプラインを設定および開始できます。
+ユーザーとして追加され、 Cloud Manager の役割に割り当てられたら、 Cloud Manager にアクセスして、AEM で Cloud ジャーニーを開始できます。ユーザーは、プログラムの作成、環境の追加、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセス、[パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)など、様々なタスクを実行できます。
+Cloud Manager は、AEM as a Cloud Service の重要な部分です。これにより、組織はクラウド内の[!DNL Experience Manager]を自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI／CD パイプラインを設定および開始できます。
 
-**[AEMインスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)**
+**[AEM インスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)**
 
-この節では、システム管理者または環境を作成したユーザーが、他のユーザーにAEMインスタンスへのアクセス権を付与する方法について説明します。
+この節では、システム管理者または環境を作成したユーザーが、他のユーザーに AEM インスタンスへのアクセス権を付与する方法について説明します。
 
 ## [!DNL Experience Manager as a Cloud Service] ガイド {#aem-guides}
 
@@ -75,13 +75,13 @@ Cloud Managerは、AEM as a Cloud Serviceの重要な部分です。 これに�
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Cloud Serviceとして[!DNL Experience Manager Sites]を使用してオーサリングおよび管理する方法を理解します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | [!DNL Experience Manager Assets as a Cloud Service]の使い方と管理方法を理解します。 |
 | [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します |
-| [実装ユーザーガイド](/help/implementing/home.md) | AEMの強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) | AEMの強力で柔軟なヘッドレス機能を通じて、このガイド付きジャーニーを調べ、最初のヘッドレスプロジェクトに備えます。 |
+| [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | [!DNL Experience Manager as a Cloud Service]にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe [!DNL Experience Manager as a Cloud Service]  のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager as a Cloud Service]のCommerce Integration Frameworkについて説明します。 |
 
-## その他の[!DNL Experience Manager]リソース{#other-resources}
+## その他の[!DNL Experience Manager]リソース {#other-resources}
 
 * [最近のドキュメントの更新](https://helpx.adobe.com/jp/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
