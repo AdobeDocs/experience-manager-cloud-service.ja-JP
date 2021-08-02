@@ -1,27 +1,31 @@
 ---
-title: Dynamic Media ニュースレター
-description: 'Experience League 提供の Dynamic Media ニュースレターは月刊ニュースレターです。Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。 '
+title: Dynamic Mediaニュースレターアーカイブ
+description: 'Dynamic Mediaニュースレター(Experience League別)は月刊ニュースレターです。 Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。 '
 feature: アセット管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 96%
+source-wordcount: '1048'
+ht-degree: 81%
 
 ---
 
 # ![Dynamic Media ニュースレターのロゴ](/help/assets/dynamic-media/assets/dynamic-media-newsletter-logo.png)
 
-価値をすぐに実感できるように、このニュースレターは Dynamic Media と Dynamic Media Classic を素早く習得できるように設計されています。
+>[!NOTE]
+>
+>月刊ニュースレターの提供が終了しました。 ただし、以下のニュースレターのアーカイブには引き続きアクセスできます。
 
-ハウツービデオやソリューション概要など、貴重な知識構築リソースをご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、ソリューションの主な機能の一部を紹介します。
+Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media Classicをすばやく習得して、すぐに価値を実現できるようにすることを目的としています。
 
-## 最新情報とインスピレーション
+このワンストップショップのアーカイブされたニュースレターでは、ハウツービデオやソリューションの概要など、価値ある知識構築リソースを見つけることができます。 また、画像プリセット、ビューアプリセット、ビデオプロファイルなどの主な機能を紹介します。
 
-[新規登録](https://www.adobe.com/subscription/dynamic-media-newsletter.html)して、Dynamic Media ニュースレターを毎月インボックスに受信しましょう。
+<!-- ## Get inspired. Stay informed.
 
-## Dynamic Media ニュースレターを見逃した方のための各号の内容紹介
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Dynamic Mediaニュースレターアーカイブ
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -49,9 +53,9 @@ ht-degree: 96%
    * 無料の Dynamic Media Classic 監査の詳細
    * John Monroe 氏（カスタマーサクセスサービス担当シニアプログラムマネージャー）へのインタビュー
 
-      >[!IMPORTANT]
-      >
-      >アドビは、Dynamic Media ニュースレターを、受信を希望する人にのみお届けしたいと考えています。本号の後も引き続きニュースレターを受信するには、[こちら](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)から新規登録をお願いします。
+<!--     >[!IMPORTANT]
+    >
+    >Adobe wants to make sure that they are sending the Dynamic Media newsletter only to folks who want to receive it. To continue receiving the newsletter after this issue, sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[2020 年 2 月、第 2 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -62,7 +66,7 @@ ht-degree: 96%
    * Dynamic Media の切り抜きマジックの使い方を知る
    * Dynamic Media Classic の価値を高めるために、アドビの無料監査を活用してください。
    * Dynamic Media Classic の新しいユーザーインターフェイスの説明
-   * Georgia Myers 氏（Adobe Experience Cloud カスタマーサクセス担当マネージャー）へのインタビュー。
+   * Adobe Experience Cloudのカスタマーサクセス担当マネージャーの`Georgia Myers`様にお会いします。
 
 * **[2020 年 1 月、第 1 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
@@ -82,7 +86,7 @@ ht-degree: 96%
    * 新しい強力なセキュリティ機能
    * 休暇シーズンを無事迎えるための準備方法
    * ニュースレターを同僚と共有してチームの専門知識を構築
-   * Aporva Gupta 氏（Dynamic Media 担当シニアプロダクトマネージャー）へのインタビュー
+   * `Apoorva Gupta`氏(Dynamic Media、上級製品マネージャー)へのインタビュー
 
 * **[2019 年 10 月、第 10 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
@@ -92,7 +96,7 @@ ht-degree: 96%
    * 高画質の画像やビデオの配信で得られる驚きの結果の解説図とヒント
    * 今日の顧客の期待に応えることができるようにリッチメディア戦略を更新する方法に関する CMSwire の有用な記事
    * スキルビルダーシリーズから Dynamic Media のオンデマンド Web セミナーへのアクセス
-   * Nick Peters 氏（Adobe Experience Manager のサイトリライアビリティエンジニアリング担当マネージャー）へのインタビュー
+   * `Nick Peters`氏(Adobe Experience Manager、サイトリライアビリティエンジニアリング担当マネージャ)へのインタビュー
    * Experience League での Dynamic Media および Dynamic Media Classic のすばやい習得
 
 * **[2019 年 9 月、第 09 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
@@ -114,7 +118,7 @@ ht-degree: 96%
    *  Experience Manager Assets と Dynamic Media をすばやく習得できるように工夫されている Web セミナーシリーズの概要
    * Dynamic Media で価値を実現する取り組みの出発点としての Experience League
    * 訪問者がリッチメディアとどのようにやり取りしているかを分析できる強力な統合機能（今年 9 月にリリース予定）のプレビュー
-   * PieterJan Pieper 氏（Dynamic Media テクニカルサポートエキスパート）へのインタビュー
+   * `PieterJan Pieper`様、Dynamic Mediaのテクニカルサポートをお待ちしております。
 
 * **[2019 年 7 月、第 07 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -125,7 +129,7 @@ ht-degree: 96%
    * 情報満載の Adobe Insider Tour の次のステップ
    * Experience Managerアセット(Experience Managerアセット)内にDynamic Mediaがある場合に利用できる優れた機能。
    * Web サイトへの 360 度ビデオとカスタムビデオサムネールの追加
-   * Andrew Hathaway氏(Experience Manager・アセット内Dynamic Media担当主任ソリューション・コンサルタント)へのインタビュー
+   * Dynamic Mediaの主要ソリューションコンサルタントである`Andrew Hathaway`に、Experience Managerアセットでお会いします。
 
 * **[2019 年 6 月、第 06 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
@@ -136,7 +140,7 @@ ht-degree: 96%
    * 今後の Adobe Insider Tour の詳細
    * デジタルアセットを不正コピーから保護する方法について
    * AI を利用した画像のスマート切り抜きの紹介
-   * Alex Thiers 氏（Dynamic Media および Dynamic Media Classic の数々の優れた機能とイノベーションを推進してきたキーマンの 1 人）へのインタビュー
+   * Dynamic MediaとDynamic Media Classicの優れた機能とイノベーションの多くを支える原動力の1つである`Alex Thiers`に出会う。
 
 * **[2019 年 5 月、第 05 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
 
