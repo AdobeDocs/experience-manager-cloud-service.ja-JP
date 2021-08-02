@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: デプロイ
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '3290'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、クラウド環境のパッケージマネージャーでパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージはすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
 
-AEM as a Contentアプリケーション用に記述されたコンテンツパッケージは、不変コンテンツと可変コンテンツを明確に分離する必要があり、Cloud Managerは可変コンテンツのみをインストールし、次のようなメッセージを出力します。
+AEM as a Cloud Service アプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。Cloud Manager は可変コンテンツのみインストールし、次のようなメッセージも出力します。
 
 `Generated content-package <PACKAGE_ID> located in file <PATH> is of MIXED type`
 
@@ -63,7 +63,7 @@ AEM as a Contentアプリケーション用に記述されたコンテンツパ�
 
 不変リポジトリーに保存されるコンテンツとコードはすべて、Git にチェックインし、Cloud Manager を通じてデプロイする必要があります。つまり、現在の AEM ソリューションとは異なり、コードは実行中の AEM インスタンスには直接デプロイされません。これにより、任意のクラウド環境で特定のリリースに対して同一のコードが実行されるようになり、意図しないコード変更が実稼動環境で発生するリスクをなくすことができます。例えば、OSGi 設定は、AEM Web コンソールの Configuration Manager を通じて実行時に管理されるのではなく、ソース管理にコミットする必要があります。
 
-ブルーグリーンデプロイメントパターンによるアプリケーション変更はスイッチで有効になるので、サービスユーザー、ACL、ノードタイプ、インデックス定義の変更を除き、可変リポジトリー内の変更に応じておこなうことはできません。
+ブルーグリーンデプロイメントパターンによるアプリケーション変更はスイッチで有効になるので、サービスユーザー、ACL、ノードタイプ、インデックス定義の変更を除き、可変リポジトリー内の変更に応じて行うことはできません。
 
 コードベースが既にある場合は、AEM ドキュメントに記載されているリポジトリー再構築の演習を完了して、以前 /etc の配下にあったコンテンツが適切な場所に確実に移動されるようにすることが重要です。
 
@@ -106,7 +106,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
    * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。 AEM CSは現在、Filevaultバージョン3.4.0を使用しています（これは、インストールフックを管理者ユーザー、システムユーザー、管理者グループのメンバーに限定します）。
 
-`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築はAEM 6.5でおこなわれ、推奨されるプロジェクト再構築の詳細については、[AEM 6.5のドキュメントを参照してください。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)
+`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)を参照してください。
 
 >[!NOTE]
 > コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、パッケージマネージャーを使用して手動でインストールする必要があります。
@@ -115,7 +115,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
 
 サードパーティパッケージが含まれている場合は、それらが AEM as a Cloud Service と互換性があるかどうかを検証する必要があります。互換性がない場合は、それらのパッケージを組み込むとデプロイメントエラーが発生します。
 
-前述のように、コードベースが既にある場合は、[AEM 6.5のドキュメントに記載されている6.5リポジトリの変更に伴うリポジトリ再構築の演習に準拠する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)
+前述のように、コードベースが既にある場合は、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)に記載されている 6.5 リポジトリーの変更に伴うリポジトリー再構築演習に準拠してください。
 
 ## repoinit {#repoinit}
 
@@ -169,9 +169,9 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="パッケージマネージャー — 可変コンテンツパッケージの移行"
->abstract="パッケージマネージャーの使用例を参照して、実稼動環境での問題のデバッグ、オンプレミス環境からAEM Cloud環境への小さなコンテンツパッケージの転送などのために、特定のコンテンツを実稼動環境からステージング環境に読み込むなど、コンテンツパッケージを「1回限り」としてインストールします。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en#cloud-migration" text="コンテンツ転送ツール"
+>title="パッケージマネージャー - 可変コンテンツパッケージの移行"
+>abstract="コンテンツパッケージを「1回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を参照します。このようなユースケースには、実稼動環境での問題をデバッグするために特定のコンテンツを実稼動環境からステージング環境に読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration" text="コンテンツ転送ツール"
 
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境でパッケージマネージャーを使用できます。
 
@@ -181,7 +181,7 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 ### サードパーティパッケージの組み込み {#including-third-party}
 
-アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリーでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリーと、[パスワード保護 Maven リポジトリー](/help/onboarding/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)で説明されているパスワード保護を持つプライベートリポジトリーに対しても可能です。
+アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリーでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリーと、[パスワード保護 Maven リポジトリー](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)で説明されているパスワード保護を持つプライベートリポジトリーに対しても可能です。
 
 パッケージをリモートリポジトリーに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリーに保存できます。このリポジトリーは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。このリポジトリーは、プロジェクトの POM で次の例のように宣言されます。
 
@@ -247,7 +247,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ## インデックス {#indexes}
 
-新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順がおこなわれてから、新しいバージョン（グリーンバージョン）でトラフィックを引き受けることができるようになります。AEM as a Cloud Service でのインデックス管理について詳しくは、[この記事](/help/operations/indexing.md)を参照してください。Cloud Manager のビルドページで、インデックス作成ジョブのステータスを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
+新しいまたは変更されたインデックスがあると、インデックスの追加作成または再作成の手順が行われてから、新しいバージョン（グリーンバージョン）でトラフィックを引き受けることができるようになります。AEM as a Cloud Service でのインデックス管理について詳しくは、[この記事](/help/operations/indexing.md)を参照してください。Cloud Manager のビルドページで、インデックス作成ジョブのステータスを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 公開メカニズムは、[AEM レプリケーション Java API](https://helpx.adobe.com/jp/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.day.cq.replication.Replicator.html) と後方互換性があります。
 
-クラウド対応の AEM クイックスタートでレプリケーションを使用して開発およびテストをおこなうには、従来のレプリケーション機能をオーサー／パブリッシュ設定で使用する必要があります。クラウドで AEM オーサーの UI エントリポイントが削除された場合、ユーザーは `http://localhost:4502/etc/replication` にアクセスして設定をおこないます。
+クラウド対応の AEM クイックスタートでレプリケーションを使用して開発およびテストを行うには、従来のレプリケーション機能をオーサー／パブリッシュ設定で使用する必要があります。クラウドで AEM オーサーの UI エントリポイントが削除された場合、ユーザーは `http://localhost:4502/etc/replication` にアクセスして設定を行います。
 
 ## ローリングデプロイメントに対応する後方互換コード {#backwards-compatible-code-for-rolling-deployments}
 
@@ -269,7 +269,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ### サービスユーザーと ACL の変更 {#service-users-and-acl-changes}
 
-コンテンツやコードへのアクセスに必要なサービスユーザーや ACL を変更すると、古い AEM バージョンでエラーが発生し、その結果、古いサービスユーザーでコンテンツやコードにアクセスすることになるおそれがあります。この動作に対処するには、少なくとも 2 つのリリースに分散して変更をおこない、最初のリリースをブリッジとして機能させてから、後続のリリースでクリーンアップをおこなうことをお勧めします。
+コンテンツやコードへのアクセスに必要なサービスユーザーや ACL を変更すると、古い AEM バージョンでエラーが発生し、その結果、古いサービスユーザーでコンテンツやコードにアクセスすることになるおそれがあります。この動作に対処するには、少なくとも 2 つのリリースに分散して変更を行い、最初のリリースをブリッジとして機能させてから、後続のリリースでクリーンアップを行うことをお勧めします。
 
 ### インデックスの変更 {#index-changes}
 
