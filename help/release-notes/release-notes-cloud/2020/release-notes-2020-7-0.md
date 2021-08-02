@@ -2,14 +2,14 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート.'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 97%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート  {#release-notes}
 
 Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノートの概要を次に説明します。
 
@@ -31,7 +31,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
+### [!DNL Assets] の新機能  {#what-is-new-assets}
 
 * [!DNL Asset Compute Service] は、アセットを処理するための拡張性に優れたサービスです。管理者は、[!DNL Asset Compute Service] を使用して作成したカスタムアプリケーションを呼び出すように [!DNL Experience Manager] を設定できます。デベロッパーはこのサービスを使用して、複雑な使用例に対応する特殊なカスタムアプリケーションを作成できます。この Web サービスでは、様々なファイルタイプのサムネールを生成したり、アドビファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前段階としてのフルテキストの抽出を行ったり、利用可能なすべての [!DNL Sensei] サービスでアセットを実行できます。詳しくは、「[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md)」を参照してください。
 
@@ -77,7 +77,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 ### リリース日 {#release-date-cm}
 
-[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 09 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 9 日（PT）です。
 
 ### 新機能 {#what-is-new-cloud-manager}
 
@@ -90,11 +90,11 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 * Cloud Manager のパイプラインで、顧客が設定した変数とシークレットがサポートされるようになりました。
 
 
-   詳細は、「[パイプライン変数](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)」を参照してください。
+   詳細は、「パイプライン変数」を参照してください。
 
 * 認証バウンドのプライベート Maven リポジトリーがサポートされるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「[Java 11 サポートの使用](/help/onboarding/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」を参照してください。
+* Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11 サポートの使用」を参照してください。
 
 ### バグ修正 {#bug-fixes-cm}
 
@@ -116,7 +116,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 ### 既知の問題 {#known-issues}
 
-* コードカバレッジの計算方法の変更により、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンは 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照している場合は、コード品質プロセスでエラーメッセージが表示されます。
+* コードカバレッジの計算方法が変更されたことで、Jacoco プラグインの&#x200B;*最小*&#x200B;バージョンが 0.7.5.201505241946（2015 年 5 月リリース）になりました。古いバージョンを明示的に参照している場合は、コード品質プロセスでエラーメッセージが表示されます。
 
 ## Adobe Experience Manager as a Cloud Service の基盤 {#cloud-foundation}
 
