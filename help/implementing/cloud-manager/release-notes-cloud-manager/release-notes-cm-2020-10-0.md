@@ -1,0 +1,53 @@
+---
+title: AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノート
+feature: リリース情報
+exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
+source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 100%
+
+---
+
+# Adobe Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリースノート {#release-notes}
+
+このページでは、AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノートの概要を説明しています。
+
+## リリース日 {#release-date}
+
+AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリース日は 2020 年 10 月 1 日です。
+
+## Cloud Manager {#cloud-manager}
+
+### 新機能 {#what-is-new}
+
+* 環境ページのデザインが変更されました。
+
+* 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
+
+* Cloud Manager ビルドコンテナで、Java 8 または Java 11 を使用したプロジェクトのコンパイルがサポートされるようになりました。Java 11 のサポートは、Maven ツールチェーンシステムによって提供されます。
+
+* 環境ごとの環境変数の数が 200 に増えました。
+
+* 概要ページの環境カードには、最大 3 環境のリストが表示されます。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
+詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
+
+
+### バグ修正 {#bug-fixes-cloud-manager}
+
+* 環境が完全に作成される前に、Cloud Manager から開発者コンソールへのリンクが正しくアクティブになっていませんでした。
+
+* Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示していませんでした。
+
+* 非実稼動パイプライン編集ページの「キャンセル」ボタンおよび「保存」ボタンが常には表示されていませんでした。
+
+* コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
+
+* 新しいプログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
+
+* 一部の大規模なパイプラインステップログは、ユーザーインターフェイスから一貫性のある方法でダウンロードできませんでした。
+
+* 環境名の検証が、1 つずれていました。
+
+* 何も存在しない場合、環境ページにパブリッシュセグメントと Dispatcher セグメントが表示されることがありました。
