@@ -2,7 +2,7 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM） as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 100%
@@ -112,7 +112,7 @@ Cloud Manager の役割は次のとおりです。
 
 Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作成および設定できるセルフサービスポータルとして進化しました。
 
-* 新規プログラムの作成と管理。詳しくは、[プログラムとプログラムの種類について](/help/onboarding/getting-access-to-aem-in-cloud/understand-program-types.md)を参照してください。
+* 新規プログラムの作成と管理。詳しくは、[プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)を参照してください。
 
 * これらのプログラム内での AEM 環境の作成と管理。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
@@ -157,7 +157,7 @@ AEM as a Cloud Service を使用すると、次のように作業の多くの側
 
 >[!NOTE]
 >
->詳しくは、まず[AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)と [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を参照してください。
+>詳しくは、まず [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)と [AEM Sites の開発の手引き - WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を参照してください。
 
 AEM as a Cloud Service をサポートする新しいアーキテクチャには、開発者のエクスペリエンス全体に対するいくつかの重要な変更が含まれています。AEM as a Cloud Service の主要な目標の 1 つは、（AEM をオンプレミスまたは Adobe Managed Services のコンテキストで使用したことがある）経験豊富な顧客が、カスタマイズしたコードの大部分を書き直さずに、できるだけ迅速に AEM as a Cloud Service に移行できるようにすることです。ただし、若干の調整が必要になる可能性はあります。
 
@@ -207,7 +207,7 @@ OSGi バンドルとその関連設定を管理する Web コンソール（以�
 
 >[!NOTE]
 >
->詳しくは、まず[AEM as a Cloud Service でのバックアップと復元](/help/operations/backup.md)、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)、[AEM as a Cloud Service でのメンテナンスタスク](/help/operations/maintenance.md)を参照してください。
+>詳しくは、まず [AEM as a Cloud Service でのバックアップと復元](/help/operations/backup.md)、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)、[AEM as a Cloud Service でのメンテナンスタスク](/help/operations/maintenance.md)を参照してください。
 
 AEM as a Cloud Service では、サービスの中断が不要になるように、このような操作は自動化されています。
 
@@ -245,7 +245,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 AEM Sites についても AEM Assets についても、オーサリングユーザーインターフェイス（UI）の基本原則は、これまでに AEM を使用したことがある人にとってはなじみ深いものです。
 
-主な違いは、UI が完全にタッチ対応であることです。クラシック UIは使用できなくなりました。それ以外の点では、基本はそのまま変わらず、見た目のわずかな変更があるだけです。
+主な違いは、UI が完全にタッチ対応であることです。クラシック UI は使用できなくなりました。それ以外の点では、基本はそのまま変わらず、見た目のわずかな変更があるだけです。
 
 ## AEM Sites {#aem-sites}
 
