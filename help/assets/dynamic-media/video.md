@@ -1,12 +1,12 @@
 ---
-title: ビデオ
+title: ビデオ Dynamic Media
 description: Dynamic Media でビデオを使用する方法について説明します.
 feature: ビデオプロファイル
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 769b2da78c7bd01c77c2ee996b145fc54fddea42
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '9459'
+source-wordcount: '9499'
 ht-degree: 80%
 
 ---
@@ -40,8 +40,10 @@ ht-degree: 80%
       * [ビデオプロファイルをフォルダーに適用します](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
       * [処理プロファイルを使用するためのデジタルアセットの整理におけるベストプラクティス](/help/assets/dynamic-media/best-practices-for-file-management.md)に関する詳細
       * [デジタルアセットの整理](/help/assets/organize-assets.md)の詳細をご覧ください。
-   * フォルダーにプライマリソースビデオをアップロードします。15 GB までのビデオファイルをアップロードできます。フォルダーにビデオを追加すると、そのフォルダーに割り当てたビデオ処理プロファイルに従ってビデオがエンコードされます。
+   * フォルダーにプライマリソースビデオをアップロードします。フォルダーにビデオを追加すると、そのフォルダーに割り当てたビデオ処理プロファイルに従ってビデオがエンコードされます。
 
+      * Dynamic Mediaでは、長さが30分の短いビデオを主にサポートしています。
+      * 15 GB までのビデオファイルをアップロードできます。
       * [ビデオのアップロード](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)
       * [サポートされる入力ファイル形式](/help/assets/file-format-support.md)に関する詳細
    * アセットまたはワークフロー表示から[ビデオ処理の進行状況](#monitoring-video-encoding-and-youtube-publishing-progress)を監視します。
@@ -288,6 +290,9 @@ Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場�
 ### ソースビデオファイル {#source-video-files}
 
 ビデオファイルをエンコードするときは、可能な限り最高品質のソースビデオファイルを使用します。以前にエンコードされたビデオファイルの使用は避けてください。そのようなファイルは既に圧縮済みで、さらにエンコードすると標準を下回る品質のビデオが作成されるからです。
+
+* Dynamic Mediaでは、主に長さ30分の短いビデオをサポートしています。
+* 15 GBまでのプライマリソースビデオファイルをアップロードできます。
 
 次の表に、ソースビデオファイルのエンコード前の推奨サイズ、縦横比および最小ビットレートを示します。
 
