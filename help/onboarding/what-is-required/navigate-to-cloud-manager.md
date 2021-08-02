@@ -1,66 +1,67 @@
 ---
-title: Cloud Managerへの移動
-description: このページでは、Cloud Managerランディングページへの移動方法について説明します
+title: Cloud Manager への移動
+description: このページでは、Cloud Manager ランディングページへの移動方法について説明します
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
-# Cloud Manager に移動する {#cloud-manager}
+# Cloud Manager への移動 {#cloud-manager}
 
-Cloud Managerは、AEM as a Cloud Serviceの重要な部分です。 これにより、組織はクラウド内のExperience Managerを自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI/CDパイプラインを設定および開始できます。
+Cloud Manager は、AEM as a Cloud Service の重要な部分です。Cloud Manager を使用すると、組織がクラウド内の Experience Manager を自己管理できます。このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI／CD パイプラインを設定および開始できます。
 
-システム管理者がCloud Managerへのアクセスを許可すると、[Adobe Experience Cloud](https://experience.adobe.com)のホームページに移動する電子メールが届きます。
+Cloud Manager へのアクセスがシステム管理者から許可されると、[Adobe Experience Cloud](https://experience.adobe.com) のホームページに移動するための電子メールが届きます。
 
 >[!NOTE]
->ユーザーとして追加され、システム管理者によって1つ以上のCloud Managerロール(Admin Console内の製品プロファイル)に割り当てられる必要があります。
+>ユーザーとして追加され、システム管理者によって 1 つ以上の Cloud Manager 役割（Admin Console 内の製品プロファイル）を割り当てられる必要があります。
 
-1. 「ようこそ」の電子メールで、「**開始**」をクリックします（下図を参照）。
+1. お知らせメールで、「**使用を開始**」をクリックします（下図を参照）。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
    >[!NOTE]
-   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 [!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。詳しくは、以下の節[Cloud Managerのランディングページ](#cloud-manager-landing)を参照してください。
+   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) から Cloud Manager のログインページに直接移動することもできます。[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。詳しくは、以下の節 [Cloud Manager ランディングページ](#cloud-manager-landing)を参照してください。
 
-1. **Experience Manager**を選択します。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page1.png)
+1. **Experience Manager** を選択します。
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
 
-1. Cloud Managerカードで&#x200B;**Launch**&#x200B;をクリックします。 [!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+1. Cloud Manager カードの「**Launch**」をクリックします。
+[!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
 
 
 ## Cloud Manager ランディングページ {#cloud-manager-landing}
 
-ログインに成功すると、Cloud Managerのランディングページに移動します。
+正常にログインすると、Cloud Manager のランディングページが表示されます。
 
 >[!NOTE]
 >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-次に示す3つのオプションのいずれかが表示されます。
+次に示す 3 つのオプションのいずれかが表示されます。
 
-* **Cloud Managerにプログラムが存在しない場合**
+* **Cloud Manager にプログラムが存在しません**
 
-   組織にプログラムが存在しない場合、次の図に示すように、ランディングページから最初のプログラムを作成するよう指示されます。
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+   組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます（下図を参照）。
 
-* **プログラムが既にCloud Managerに存在する場合**
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-   組織にプログラムが既に存在する場合、ランディングページは別のプログラムを追加するよう指示し、既存のプログラムもすべて表示します（下図を参照）。
+* **プログラムは既に Cloud Manager に存在します**
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   組織にプログラムが既に存在する場合は、別のプログラムを追加するようにランディングページで指示され、既存のプログラムがすべてランディングページに表示されます（下図を参照）。
 
-* **プログラムが存在し、ユーザーがシステム管理者である場合**
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-   組織にプログラムが既に存在し、システム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
+* **プログラムが存在しユーザーがシステム管理者です**
 
-   ![](/help/onboarding/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+   組織にプログラムが既に存在し、ユーザーがシステム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
 
-ここから、Cloud Managerのビジネス所有者の役割など、適切な権限を持つユーザーが、「**プログラムを追加**」を選択して、[プログラムを追加ウィザード](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=en#getting-access)を起動できます。
+   ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
-Cloud Managerでプログラムを追加する方法については、以下を参照してください。
+ここから、Cloud Manager のビジネスオーナーの役割など、適切な権限を持つユーザーが、「**プログラムを追加**」を選択して[プログラムを追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=ja#getting-access)ウィザードを起動できます。
 
-* [実稼動プログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-production-program.md)
+Cloud Manager でプログラムを追加する方法については、以下を参照してください。
 
-* [サンドボックスプログラムの作成](/help/onboarding/getting-access-to-aem-in-cloud/creating-sandbox-program.md)
+* 実稼動プログラムの作成
+* サンドボックスプログラムの作成
