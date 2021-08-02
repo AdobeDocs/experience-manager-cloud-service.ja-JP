@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: f97e2f327aa8f49d0a15f3852aa5d8b37f960005
+source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 94%
+source-wordcount: '484'
+ht-degree: 68%
 
 ---
 
@@ -81,47 +81,47 @@ ht-degree: 94%
    + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
 + Dynamic Media {#dynamicmedia}
-   + [Experience League 提供の Dynamic Media ニュースレター](dynamic-media/dynamic-media-newsletter.md)
-   + [Dynamic Media のセットアップ](dynamic-media/administering-dynamic-media.md)
-   + [Dynamic Media の操作](dynamic-media/dynamic-media.md)
-   + [Dynamic Media の設定](dynamic-media/config-dm.md)
-   + [Dynamic Media のトラブルシューティング](dynamic-media/troubleshoot-dm.md)
+   + [Dynamic Mediaニュースレターアーカイブ(Experience League別)](dynamic-media/dynamic-media-newsletter.md)
+   + [Dynamic Mediaの設定](dynamic-media/administering-dynamic-media.md)
+   + [Dynamic Mediaの使用](dynamic-media/dynamic-media.md)
+   + [Dynamic Mediaの設定](dynamic-media/config-dm.md)
+   + [Dynamic Mediaのトラブルシューティング](dynamic-media/troubleshoot-dm.md)
    + [Dynamic Media のアクセシビリティ](dynamic-media/accessibility-dm.md)
    + [Dynamic Media アセットの管理](dynamic-media/managing-assets.md)
    + [画質最適化のベストプラクティス](dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
    + [ファイル管理のベストプラクティス](dynamic-media/best-practices-for-file-management.md)
    + [イメージプロファイル](dynamic-media/image-profiles.md)
    + [ビデオプロファイル](dynamic-media/video-profiles.md)
-   + [Dynamic Media 画像プリセットの管理](dynamic-media/managing-image-presets.md)
-   + [Dynamic Media 画像プリセットの適用](dynamic-media/image-presets.md)
-   + [Dynamic Media ビューアプリセットの管理](dynamic-media/managing-viewer-presets.md)
-   + [Dynamic Media ビューアプリセットの適用](dynamic-media/viewer-presets.md)
+   + [Dynamic Media画像プリセットの管理](dynamic-media/managing-image-presets.md)
+   + [Dynamic Media画像プリセットの適用](dynamic-media/image-presets.md)
+   + [Dynamic Mediaビューアプリセットの管理](dynamic-media/managing-viewer-presets.md)
+   + [Dynamic Mediaビューアプリセットの適用](dynamic-media/viewer-presets.md)
    + [バッチセットプリセット](dynamic-media/batch-set-presets-dm.md)
-   + [Dynamic Media を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-   + [Dynamic Media Classic を使用した CDN キャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
+   + [Dynamic Mediaを使用したCDNキャッシュの無効化](dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+   + [Dynamic Media Classicを使用したCDNキャッシュの無効化](dynamic-media/invalidate-cdn-cache-dm-classic.md)
    + [スマートイメージング](dynamic-media/imaging-faq.md)
-   + [Dynamic Media アセットの配信](dynamic-media/delivering-dynamic-media-assets.md)
-   + [Dynamic Media でのホットリンク保護の有効化](dynamic-media/hotlink-protection.md)
+   + [Dynamic Mediaアセットの配信](dynamic-media/delivering-dynamic-media-assets.md)
+   + [Dynamic Mediaでのホットリンク保護の有効化](dynamic-media/hotlink-protection.md)
    + [3D サポート](dynamic-media/assets-3d.md)
    + [画像セット](dynamic-media/image-sets.md)
    + [パノラマ画像](dynamic-media/panoramic-images.md)
    + [混在メディアセット](dynamic-media/mixed-media-sets.md)
    + [スピンセット](dynamic-media/spin-sets.md)
-   + [ビデオ](dynamic-media/video.md)
+   + [ビデオ Dynamic Media](dynamic-media/video.md)
    + [カルーセルバナー](dynamic-media/carousel-banners.md)
    + [インタラクティブ画像](dynamic-media/interactive-images.md)
    + [インタラクティブビデオ](dynamic-media/interactive-videos.md)
    + [360 VR ビデオ](dynamic-media/360-video.md)
-   + [Dynamic Media ViewersとAdobe AnalyticsおよびAdobe Experience Platformタグの統合](dynamic-media/tags.md)
+   + [Dynamic Media ViewerとAdobe AnalyticsおよびAdobe Experience Platformタグの統合](dynamic-media/tags.md)
    + [クイックビューを使用したカスタムポップアップの作成](dynamic-media/custom-pop-ups.md)
    + [レスポンシブサイト用に最適化された画像の配信](dynamic-media/responsive-site.md)
-   + [Dynamic Media アセットのプレビュー](dynamic-media/previewing-assets.md)
-   + [ページへの Dynamic Media アセットの追加](dynamic-media/adding-dynamic-media-assets-to-pages.md)
-   + [Web ページへのダイナミックビデオ／画像ビューアの埋め込み](dynamic-media/embed-code.md)
-   + [Web アプリケーションへの URL のリンク](dynamic-media/linking-urls-to-yourwebapplication.md)
-   + [ルールセットを使用した URL の変換](dynamic-media/using-rulesets-to-transform-urls.md)
-   + [Dynamic Media アセットの公開](dynamic-media/publishing-dynamicmedia-assets.md)
-   + [Dynamic Media での選択的公開の操作](dynamic-media/selective-publishing.md)
+   + [Dynamic Mediaアセットのプレビュー](dynamic-media/previewing-assets.md)
+   + [ページへのDynamic Mediaアセットの追加](dynamic-media/adding-dynamic-media-assets-to-pages.md)
+   + [Webページにダイナミックビデオビューアまたは画像ビューアを埋め込む](dynamic-media/embed-code.md)
+   + [WebアプリケーションへのURLのリンク](dynamic-media/linking-urls-to-yourwebapplication.md)
+   + [ルールセットを使用したURLの変換](dynamic-media/using-rulesets-to-transform-urls.md)
+   + [Dynamic Media Assetsの公開](dynamic-media/publishing-dynamicmedia-assets.md)
+   + [Dynamic Mediaでの選択的公開の操作](dynamic-media/selective-publishing.md)
    + [セレクターの操作](dynamic-media/working-with-selectors.md)
    + [コンテンツの HTTP/2 配信の FAQ](dynamic-media/http2faq.md)
    + [Flash ビューアの提供終了](dynamic-media/flash-viewers-eol.md)
