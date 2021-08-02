@@ -2,10 +2,10 @@
 title: Cloud Managerについて説明します
 description: このページでは、Cloud Manager、Cloud Managerのプログラム、環境について説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 22%
+source-wordcount: '616'
+ht-degree: 21%
 
 ---
 
@@ -25,10 +25,10 @@ Cloud Managerプログラムは、通常、購入したサービスレベル契�
 
 ユーザーは、**サンドボックス**&#x200B;または&#x200B;**実稼動**&#x200B;プログラムを作成できます。
 
-* *実稼動プログラム*&#x200B;が作成され、将来の適切なタイミングでライブトラフィックを利用できるようになります。詳しくは、実稼動プログラムの概要を参照してください。
+* *実稼動プログラム*&#x200B;が作成され、将来の適切なタイミングでライブトラフィックを利用できるようになります。詳しくは、[実稼動プログラムの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/introduction-production-programs.html?lang=en)を参照してください。
 
 * *サンドボックスプログラム*は、通常、トレーニング、デモの実行、イネーブルメント、POC、ドキュメントの実行の目的で作成されます。ライブトラフィックを運ぶことを目的としたものではなく、実稼動プログラムにはない制限が課されます。Sites と Assets が含まれ、サンプルコード、開発環境、非実稼動パイプラインを含む Git ブランチが自動生成されて配信されます。
-詳しくは、サンドボックスプログラムの紹介を参照してください。
+詳しくは、[サンドボックスプログラムの紹介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/introduction-sandbox-programs.html?lang=en)を参照してください。
 
 ## Cloud Manager環境 {#cloud-manager-environments}
 
