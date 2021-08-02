@@ -1,13 +1,13 @@
 ---
 title: Cloud Managerについて説明します
 description: このページでは、Cloud Manager、Cloud Managerのプログラム、環境について説明します。
-source-git-commit: 185a933e12ad81689168ad88574019ed219db06d
+exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
+source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
-
 
 # Cloud Manager の概要 {#intro-cloud-manager}
 
@@ -23,14 +23,14 @@ Cloud Managerは、AEMのCloud Serviceとしての不可欠なコンポーネン
 
 Cloud Managerプログラムは、通常、購入したサービスレベル契約(SLA)に対応する、ビジネスイニシアチブの論理的なセットをサポートするCloud Manager環境のセットを表します。 例えば、あるプログラムは、グローバルなパブリックWebサイトをサポートするAEMリソースを表し、別のプログラムは、内部のCentral DAMを表します。 Cloud Managerプログラムの使用について詳しくは、この[ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en)をご覧ください。
 
-ユーザーは、**ｻサンドボックス**&#x200B;または&#x200B;**実稼動**&#x200B;プログラムを作成できます。
+ユーザーは、**サンドボックス**&#x200B;または&#x200B;**実稼動**&#x200B;プログラムを作成できます。
 
-* *実稼動プログラム*&#x200B;が作成され、将来の適切なタイミングでライブトラフィックを利用できるようになります。詳しくは、[実稼動プログラムの概要](/help/onboarding/getting-access-to-aem-in-cloud/introduction-production-programs.md)を参照してください。
+* *実稼動プログラム*&#x200B;が作成され、将来の適切なタイミングでライブトラフィックを利用できるようになります。詳しくは、実稼動プログラムの概要を参照してください。
 
 * *サンドボックスプログラム*は、通常、トレーニング、デモの実行、イネーブルメント、POC、ドキュメントの実行の目的で作成されます。ライブトラフィックを運ぶことを目的としたものではなく、実稼動プログラムにはない制限が課されます。Sites と Assets が含まれ、サンプルコード、開発環境、非実稼動パイプラインを含む Git ブランチが自動生成されて配信されます。
-詳しくは、[サンドボックスプログラムの紹介](/help/onboarding/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)を参照してください。
+詳しくは、サンドボックスプログラムの紹介を参照してください。
 
-## Cloud Manager環境{#cloud-manager-environments}
+## Cloud Manager環境 {#cloud-manager-environments}
 
 クラウド環境は、Cloud Managerを使用して作成、アクセスおよび表示されます。 実稼動環境、ステージ環境、または開発環境を指定できます。 環境が異なれば、サポートする目的も異なり、様々なCI/CDパイプラインを使用して関与できます。 環境は、次のようなサービスで構成されます。
 
@@ -39,16 +39,16 @@ Cloud Managerプログラムは、通常、購入したサービスレベル契�
 * [Dispatcherサービス](#dispatcher-services)
 
    >[!NOTE]
-   > 使用可能な環境の詳細については、ビデオ[Using Using Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager)を参照してください。 さらに、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)を参照して、ユーザーが作成できる環境のタイプと、ユーザーが環境を作成する方法について詳しく知ってください。
+   > 使用可能な環境の詳細については、ビデオ[Using Using Cloud Manager Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja#cloud-manager)を参照してください。 さらに、[環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)を参照して、ユーザーが作成できる環境のタイプと、ユーザーが環境を作成する方法について詳しく知ってください。
 
-### AEMオーサーサービス{#author-services}
+### AEMオーサーサービス {#author-services}
 
 AEMオーサーサービスは、サイトコンテンツとデジタルアセットが作成、管理、更新される環境に含まれています。 通常、オーサーサービスにアクセスできるのは内部ユーザーのみで、ログイン画面の後ろにあります。 オーサリングサービスは、オーサリング環境とプレビュー環境の両方として設計されています。
 
-### AEMパブリッシュサービス{#publish-services}
+### AEMパブリッシュサービス {#publish-services}
 
 AEMパブリッシュサービスは、Webサイトなどのエンドユーザーエクスペリエンスをホストする環境に含まれます。 これは、サイト訪問者が表示し、操作するサービスです。 通常、パブリッシュサービスは公開されています。
 
-### AEM Dispatcherサービス{#dispatcher-services}
+### AEM Dispatcherサービス {#dispatcher-services}
 
 Dispatcherは、AEMパブリッシュサービスの前に配置されるセキュリティとパフォーマンスのレイヤーを提供する`Apache HTTP Web server`モジュールです。
