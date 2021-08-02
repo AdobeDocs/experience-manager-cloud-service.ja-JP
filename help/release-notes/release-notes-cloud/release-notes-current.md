@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d977ff765accb650daff4c35f2668489454305cd
+source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1309'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 10%
 
 追加された機能の概要については、 2021年7月リリースの概要](https://video.tv.adobe.com/v/335580)ビデオをご覧ください。[
 
-## Experience Manager基盤(Cloud Service) {#foundation}
+## [!DNL Experience Manager] 基盤とし [!DNL Cloud Service] て {#foundation}
 
 ### 新機能 {#what-is-new-foundation}
 
