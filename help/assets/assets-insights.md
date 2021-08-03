@@ -5,10 +5,10 @@ contentOwner: AG
 feature: アセットインサイト、アセットレポート
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 80%
+source-wordcount: '813'
+ht-degree: 75%
 
 ---
 
@@ -67,8 +67,8 @@ ht-degree: 80%
 
 **[!UICONTROL インサイト表示]**&#x200B;を使用すると、フォルダー内のすべてのアセットのスコアを同時に表示できます。
 
-1. Assets UI で、インサイトを表示するアセットを含むフォルダーに移動します。
-1. ツールバーの「レイアウト」オプションをクリックして、「**[!UICONTROL インサイト表示]**」を選択します。
+1. Assetsユーザーインターフェイスで、インサイトを表示するアセットを含むフォルダーに移動します。
+1. ツールバーの「**[!UICONTROL レイアウト]**」オプションをクリックし、「**[!UICONTROL インサイトビュー]**」を選択します。
 1. このページには、アセットの使用状況スコアが表示されます。様々なアセットのレーティングを比較して、洞察を導きます。
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
@@ -95,7 +95,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. [!DNL Experience Manager] で&#x200B;**[!UICONTROL ツール]**／**[!UICONTROL アセット]**&#x200B;をクリックします。
 
-   ![chlimage_1-72](assets/chlimage_1-72.png)
+   ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 「**[!UICONTROL インサイト設定]**」カードをクリックします。
 1. ウィザードで、データセンターを選択し、会社名、ユーザー名、共有暗号鍵などの資格情報を指定します。
@@ -117,6 +117,29 @@ Adobe Analytics アカウントを設定すると、ページトラッカーコ�
 
 1. **[!UICONTROL ナビゲーション]**&#x200B;ページで、「**[!UICONTROL インサイトページトラッカー]**」カードをクリックします。
 1. 「**[!UICONTROL ダウンロード]**」をクリックして、ページトラッカーコードをダウンロードします。
+
+<!--
+Add page tracker code, CQDOC-18045, 30/07/2021
+-->
+次のサンプルコードスニペットは、サンプルWebページに含まれるページトラッカーコードを示しています。
+
+```xml
+ <head>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript">
+                                assetAnalytics.attrTrackable = 'trackable';
+                assetAnalytics.defaultTrackable = false;
+                assetAnalytics.attrAssetID = 'aem-asset-id';
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.charsLimitForGET = 2000; // bytes
+                assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
+            </script>
+
+ </head>
+```
+
+
 
 <!--
 
