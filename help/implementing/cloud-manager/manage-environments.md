@@ -2,10 +2,10 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 76%
+source-wordcount: '1618'
+ht-degree: 78%
 
 ---
 
@@ -74,9 +74,6 @@ ht-degree: 76%
    ![](assets/environment-view-2.png)
 
 1. 環境の詳細を表示するリストの環境のいずれかを選択します。
-
-   >[!NOTE]
-   >プレビューサービスは、すべてのプログラムに周期的にデプロイされます。 お客様は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。 詳しくは、[Preview Serviceへのアクセス](#access-preview-service)の節を参照してください。
 
    ![](assets/environ-preview1.png)
 
