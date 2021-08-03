@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 6a7634dd96b620979b7087e1c51a829ba708a496
+source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 68%
+source-wordcount: '490'
+ht-degree: 67%
 
 ---
 
@@ -58,6 +58,7 @@ ht-degree: 68%
    + [コンテンツフラグメントに対するリモート GraphQL クエリの認証](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
+   + [Adobe InDesign用のFPOレンディションの生成](configure-fpo-renditions.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
    + [XMP メタデータ](xmp-metadata.md)
