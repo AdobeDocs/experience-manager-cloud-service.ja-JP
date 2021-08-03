@@ -2,9 +2,9 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1347'
 ht-degree: 54%
 
 ---
@@ -45,7 +45,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 >[!NOTE]
 >
->このアプローチは、ステータスが保持されず、他のアプローチよりも拡張性が低いので、非推奨と見なす必要があります。 Adobeでは、公開の管理またはワークフローメソッドを代わりに使用することをお勧めします
+>このアプローチは非推奨と見なされ、2021年9月30日以降に削除される必要があります。これは、このアプローチはステータスを保持せず、他のアプローチより拡張性が低いためです。 Adobeでは、公開の管理またはワークフローメソッドを代わりに使用することをお勧めします
 
 ツリーのアクティベーションを実行するには：
 
