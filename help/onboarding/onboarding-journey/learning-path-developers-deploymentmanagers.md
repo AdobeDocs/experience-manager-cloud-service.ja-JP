@@ -4,10 +4,10 @@ description: 開発者またはデプロイメントマネージャー(AEM)の�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: d3f721d66cc6b0c9191f8d84d4adc0326ef68d73
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 5%
+source-wordcount: '456'
+ht-degree: 7%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 5%
 
 このドキュメントは、開発者とデプロイメントマネージャーがCloud Managerにアクセスし、学習パスの準備方法を理解するのに役立ちます。
 
-ドキュメントを読めば、以下が可能です。
+このドキュメントを読んだ後、次の操作を行う必要があります。
 
-* 開発者は、Cloud Manager Gitにアクセスして管理する方法を理解できるはずです
-* デプロイメントマネージャーは、Cloud Managerでパイプラインを設定してコードをデプロイする方法を理解できるはずです
+* 開発者は、Cloud Manager Gitにアクセスして管理する方法を理解できます
+* デプロイメントマネージャーは、パイプラインの設定方法とCloud Managerでのコードのデプロイ方法を理解できます
 
 ## はじめに {#introduction}
 
@@ -39,11 +39,12 @@ Cloud Managerへの移動方法とログイン方法を理解している
 
 ## Git を管理 {#manage-git}
 
-このトピックについて詳しくは、こちらを参照してください。
+Cloud Manager UI のセルフサービス Git アカウント管理を使用して、Git リポジトリーにアクセスし、管理できます。このトピックについて詳しくは、[Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)へのアクセスを参照してください。
 
 ## セットアップパイプライン {#setup-pipeline}
 
-このトピックについて詳しくは、こちらを参照してください。
+実稼動パイプラインまたは非実稼動パイプラインは、Cloud Manager UIから設定できます。
+このトピックについて詳しくは、[CI-CDパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)を参照してください。
 
 ## 次の作業 {#whats-next}
 
