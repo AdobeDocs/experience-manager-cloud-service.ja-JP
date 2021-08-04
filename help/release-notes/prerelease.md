@@ -1,15 +1,15 @@
 ---
 title: '[!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)'
 description: '[!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)'
-source-git-commit: 4ee9a5744cdcec00dd497a00b0d8dbf288a5adcb
+exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
+source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)  {#prerelease-channel}
+# [!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル) {#prerelease-channel}
 
 
 ## はじめに {#introduction}
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 特定の月のプレリリース機能のリストは、月別リリースノート[に掲載されています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
->[!ビデオ](/help/release-notes/assets/prerelease-overview.mp4)
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
-## プレリリースを有効にする方法{#enable-prerelease}
+## プレリリースを有効にする方法 {#enable-prerelease}
 
 プレリリース機能は、様々な方法で使用できます。
 
@@ -54,7 +54,7 @@ Cloud Manager CLIも、[https://github.com/adobe/aio-cli-plugin-cloudmanager#aio
 
 ローカルのクイックスタートSDKのSitesコンソールに新機能が表示され、Maven Centralにあるプレリリース`API Jar`をMavenプロジェクトで参照させると、プレリリースの新しいAPIに対するコードを確認できます。 また、プレリリースモードで通常のクイックスタートSDKを起動すると、ローカルコンピューター上でこれらのプレリリース機能を確認できます。
 
-* ソフトウェア配布ポータルからSDKをダウンロードし、[Cloud ServiceSDKとしてのAEMへのアクセス](/help/implementing/developing/aem-as-a-cloud-service-sdk.md#accessing-the-aem-as-a-cloud-service-sdk.)の説明に従ってインストールします。
+* ソフトウェア配布ポータルからSDKをダウンロードし、[Cloud ServiceSDKとしてのAEMへのアクセス](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)の説明に従ってインストールします。
 * SDKクイックスタートを起動する際に、引数`-r prerelease`を含めます。
 * 値は&#x200B;*sticky*&#x200B;なので、最初の起動時にのみ選択できます。 SDKを再インストールして、コマンドラインオプションを変更します。
 
