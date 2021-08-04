@@ -2,10 +2,10 @@
 title: Cloud Manager への移動
 description: このページでは、Cloud Manager ランディングページへの移動方法について説明します
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 149776bdd7acce3e00710e50600d9bd1d7cc6b9b
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 87%
+source-wordcount: '506'
+ht-degree: 80%
 
 ---
 
@@ -68,7 +68,7 @@ Cloud Manager へのアクセスがシステム管理者から許可されると
 
 ここから、Cloud Manager のビジネスオーナーの役割など、適切な権限を持つユーザーが、「**プログラムを追加**」を選択して[プログラムを追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/production-programs/creating-production-program.html?lang=ja#getting-access)ウィザードを起動できます。
 
-Cloud Manager でプログラムを追加する方法については、以下を参照してください。
+Cloud Managerでプログラムを追加する方法については、次の作成を参照してください。
 
-* 実稼動プログラムの作成
-* サンドボックスプログラムの作成
+* [実稼動プログラム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)
+* [サンドボックスプログラム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sandbox-programs/creating-sandbox-program.html?lang=en)
