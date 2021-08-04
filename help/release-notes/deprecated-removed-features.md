@@ -2,10 +2,10 @@
 title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8742c4058a5b89a0d6aca0d6e58ed993b01d084d
+source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 84%
+source-wordcount: '550'
+ht-degree: 79%
 
 ---
 
@@ -52,3 +52,11 @@ ht-degree: 84%
 | [!DNL Sites] | デザインインポーター | 実行時に [!DNL Experience Manager] リポジトリーの不変セクションにアクセスできないので、この機能は削除されました。 |
 | [!DNL Assets] | [!DNL Assets]Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの の共有は使用できません。 | [!DNL Adobe Creative Cloud] との統合には、[Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用します。 |
 | [!DNL Foundation] | Apache Slingデータソース（OSGiバンドルorg.apache.sling.datasource）のサポート。 | 該当なし |
+
+## Java API {#java-api}
+
+非推奨（廃止予定）または削除されたJava APIについては、[このページ](/help/release-notes/deprecated-apis.md)を参照してください。
+
+## OSGi 設定 {#osgi-configuration}
+
+OSGiプロパティの設定に関する制限（一部は時間の経過と共に導入される可能性があります）については、[この記事](/help/implementing/deploying/osgi-configuration-api.md)を参照してください。
