@@ -4,9 +4,9 @@ description: このページでは、チームメンバーをAEM as a Cloud Serv
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: bb29126590751edcb1f99731de0ee4ee004f017d
+source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -102,7 +102,7 @@ AEM as aCloud Serviceインスタンスへのアクセス権を付与するに�
 
 ## 次の作業 {#whats-next}
 
-これで、AEMにCloud Service製品プロファイルとして割り当てたCloud Serviceは、作成者にアクセスする方法と、AEM as a Usitorのページのオーサリングについて理解する方法を学ぶ準備が整いました。 パスに従う必要があります。次に、「 AEM Usersの学習パス」ドキュメントを確認します。
+これで、AEMにCloud Service製品プロファイルとして割り当てたCloud Serviceは、作成者にアクセスする方法と、AEM as a Usitorのページのオーサリングについて理解する方法を学ぶ準備が整いました。 パスに従う必要があります。次に、「 AEMユーザーの学習パス」または「開発者およびデプロイメントマネージャーの学習パス」を確認します。
 
 ## その他のリソース {#additional-resources}
 
