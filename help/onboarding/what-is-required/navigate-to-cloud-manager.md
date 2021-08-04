@@ -2,10 +2,10 @@
 title: Cloud Manager への移動
 description: このページでは、Cloud Manager ランディングページへの移動方法について説明します
 exl-id: 9cf25d1d-a351-4ea0-b2e9-1df6ca4915b7
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 100%
+source-wordcount: '489'
+ht-degree: 87%
 
 ---
 
@@ -21,8 +21,13 @@ Cloud Manager へのアクセスがシステム管理者から許可されると
 1. お知らせメールで、「**使用を開始**」をクリックします（下図を参照）。
    ![](/help/onboarding/what-is-required/assets/get-started-email.png)
 
-   >[!NOTE]
-   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) から Cloud Manager のログインページに直接移動することもできます。[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。詳しくは、以下の節 [Cloud Manager ランディングページ](#cloud-manager-landing)を参照してください。
+
+   >[!IMPORTANT]
+   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 今後Cloud Managerのランディングページに直接移動する際に役立つように、このページをブックマークに追加してください。
+
+さらに、Adobe Experience CloudのホームページからCloud Managerの「**プログラムと製品**」ページに移動することもできます。 次の手順に従います。
+
+1. [Adobe Experience Cloud](https://experience.adobe.com)に直接移動し、Adobe IDを使用してログインします。
 
 1. **Experience Manager** を選択します。
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page1.png)
@@ -30,6 +35,8 @@ Cloud Manager へのアクセスがシステム管理者から許可されると
 1. Cloud Manager カードの「**Launch**」をクリックします。
 [!UICONTROL Cloud Manager] に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
    ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/landing-page2.png)
+
+1. 正常にログインすると、Cloud Manager のランディングページが表示されます。
 
 
 ## Cloud Manager ランディングページ {#cloud-manager-landing}
