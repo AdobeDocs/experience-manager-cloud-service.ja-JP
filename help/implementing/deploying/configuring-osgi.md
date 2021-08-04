@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: デプロイ
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: b28202a4e133f046b50477c07eb5a37271532c90
+source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
 workflow-type: tm+mt
-source-wordcount: '2927'
-ht-degree: 95%
+source-wordcount: '2934'
+ht-degree: 94%
 
 ---
 
@@ -224,7 +224,7 @@ use $[secret:SECRET_VAR_NAME]
 
 >[!NOTE]
 >
->`INTERNAL_` プレフィックスが付いた変数名は、アドビによって予約されています。このプレフィックスで始まる顧客セット変数は無視されます。
+>`INTERNAL_` プレフィックスが付いた変数名は、アドビによって予約されています。このプレフィックスで始まる顧客セット変数は無視されます。これらの変数も参照しないでください。
 
 ### デフォルト値 {#default-values}
 
