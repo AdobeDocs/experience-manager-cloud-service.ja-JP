@@ -4,9 +4,9 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
+source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1387'
 ht-degree: 15%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 15%
 1. Cloud Managerの&#x200B;**プログラムと製品**&#x200B;ページに移動します。
 
    >[!IMPORTANT]
-   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。
+   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 今後Cloud Managerのランディングページに直接移動する際に役立つように、このページをブックマークに追加してください。
 
 さらに、Adobe Experience CloudのホームページからCloud Managerの「**プログラムと製品**」ページに移動できます。 次の手順に従います。
 
@@ -92,7 +92,6 @@ ht-degree: 15%
       組織にプログラムが既に存在し、ユーザーがシステム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
 
       ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
-
 
 
 ## ユーザーの役割の確認 {#verify-user-roles}
