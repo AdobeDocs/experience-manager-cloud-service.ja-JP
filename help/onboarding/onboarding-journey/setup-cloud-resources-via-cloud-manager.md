@@ -4,10 +4,10 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 5a909976909eb7ce2c008d2eac9ffb60e906023e
+source-git-commit: 7fc39615e29a5523b4d2b0e159a10be5771f5120
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 2%
+source-wordcount: '1370'
+ht-degree: 15%
 
 ---
 
@@ -44,9 +44,21 @@ ht-degree: 2%
 
 ## Cloud Manager への移動 {#navigate-cloud-manager}
 
-1. *ビジネスオーナー*&#x200B;ユーザーは、開始場所からお知らせメールを受け取るか、見つからない場合は[Adobe Experience Cloud](https://experience.adobe.com/#/@ccs/home)に直接アクセスし、Adobe IDを使用してログインします。
+*ビジネスオーナー*&#x200B;ユーザーは、開始場所からお知らせメールを受け取るか、見つからない場合は[Adobe Experience Cloud](https://experience.adobe.com)に直接アクセスし、Adobe IDを使用してログインします。
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources1.png)
+次の手順に従って、Cloud Managerに移動します。
+
+1. お知らせメールで、「**使用を開始**」をクリックします（下図を参照）。
+   ![](/help/onboarding/onboarding-journey/assets/get-started-email.png)
+
+1. Cloud Managerの&#x200B;**プログラムと製品**&#x200B;ページに移動します。
+
+   >[!IMPORTANT]
+   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。
+
+さらに、Adobe Experience CloudのホームページからCloud Managerの「**プログラムと製品**」ページに移動できます。 次の手順に従います。
+
+1. [Adobe Experience Cloud](https://experience.adobe.com)に直接移動し、Adobe IDを使用してログインします。
 
 1. Adobe Experience Cloudのホームページで、「**Experience Manager**」を選択します。
 
@@ -56,11 +68,38 @@ ht-degree: 2%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 次の図に示すように、Cloud Managerのランディングページが表示されます。
+1. 正常にログインすると、Cloud Manager のランディングページが表示されます。
 
-   ![](/help/onboarding/onboarding-journey/assets/setup-resources4.png)
+   >[!NOTE]
+   >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-1. ビジネスオーナー製品プロファイルが割り当てられていることを確認します。 これをおこなうには、次に示すように、右上からプロファイルを選択します。
+   次に示す 3 つのオプションのいずれかが表示されます。
+
+   * **Cloud Manager にプログラムが存在しません**
+
+      組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます（下図を参照）。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+
+   * **プログラムは既に Cloud Manager に存在します**
+
+      組織にプログラムが既に存在する場合は、別のプログラムを追加するようにランディングページで指示され、既存のプログラムがすべてランディングページに表示されます（下図を参照）。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+
+   * **プログラムが存在しユーザーがシステム管理者です**
+
+      組織にプログラムが既に存在し、ユーザーがシステム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
+
+      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+
+
+
+## ユーザーの役割の確認 {#verify-user-roles}
+
+Cloud Managerに正常にログインしたら、以下の手順に従って、ビジネスオーナー製品プロファイルが割り当てられていることを確認します。
+
+1. 右上のプロファイルを選択します（下図を参照）。
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources5.png)
 
