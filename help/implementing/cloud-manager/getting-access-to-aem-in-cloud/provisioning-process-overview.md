@@ -50,6 +50,7 @@ ht-degree: 100%
 ### 2. Adobe Admin Console への組織がオンボーディングされます。
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
+
 * システム管理者：
    * AEM プログラムと環境をプロビジョニングします。
    * Admin Console に移動して管理タスクを実行します。
