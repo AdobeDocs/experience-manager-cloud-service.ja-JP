@@ -4,9 +4,9 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 7dc150c51888ff2bfd80969d901f4996805498bf
+source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1435'
 ht-degree: 15%
 
 ---
@@ -56,6 +56,8 @@ ht-degree: 15%
    >[!IMPORTANT]
    >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 今後Cloud Managerのランディングページに直接移動する際に役立つように、このページをブックマークに追加してください。
 
+1. Cloud Managerのランディングページに移動します。 詳しくは、 [Cloud Managerのプログラムの表示](#viewing-programs)の節を参照してください。
+
 さらに、Adobe Experience CloudのホームページからCloud Managerの「**プログラムと製品**」ページに移動できます。 次の手順に従います。
 
 1. [Adobe Experience Cloud](https://experience.adobe.com)に直接移動し、Adobe IDを使用してログインします。
@@ -68,30 +70,33 @@ ht-degree: 15%
 
    ![](/help/onboarding/onboarding-journey/assets/setup-resources3.png)
 
-1. 正常にログインすると、Cloud Manager のランディングページが表示されます。
+1. 正常にログインすると、Cloud Manager のランディングページが表示されます。詳しくは、 [Cloud Managerのプログラムの表示](#viewing-programs)の節を参照してください。
 
    >[!NOTE]
    >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-   次に示す 3 つのオプションのいずれかが表示されます。
+### Cloud Managerのランディングページでのプログラムの表示 {#viewing-programs}
 
-   * **Cloud Manager にプログラムが存在しません**
+正常にログインすると、Cloud Manager のランディングページが表示されます。次に示す 3 つのオプションのいずれかが表示されます。
 
-      組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます（下図を参照）。
+#### Cloud Manager にプログラムが存在しません {#no-programs}
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます（下図を参照）。
 
-   * **プログラムは既に Cloud Manager に存在します**
 
-      組織にプログラムが既に存在する場合は、別のプログラムを追加するようにランディングページで指示され、既存のプログラムがすべてランディングページに表示されます（下図を参照）。
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+#### プログラムは既に Cloud Manager に存在します {#programs-exist}
 
-   * **プログラムが存在しユーザーがシステム管理者です**
+組織にプログラムが既に存在する場合は、別のプログラムを追加するようにランディングページで指示され、既存のプログラムがすべてランディングページに表示されます（下図を参照）。
 
-      組織にプログラムが既に存在し、ユーザーがシステム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-      ![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+#### プログラムが存在しユーザーがシステム管理者です {#programs-exist-sysadmin}
+
+組織にプログラムが既に存在し、ユーザーがシステム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
+
+![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## ユーザーの役割の確認 {#verify-user-roles}
