@@ -2,10 +2,10 @@
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 006fd74a9c4f4d5321bb3d0b35b5c9d49def7bc4
+source-git-commit: cf2e206b0ad186e0f4caa4a2ec9c34faf2078b76
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 98%
+source-wordcount: '900'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="機能テスト"
->abstract="機能テストは次の3つのタイプに分類されます。製品機能テスト、カスタム機能テスト、カスタムUIテスト"
+>abstract="機能テストは、製品機能テスト、カスタム機能テスト、カスタム UI テストの 3 つのタイプに分類されます。"
 
 機能テストは次の 2 つのタイプに分類されます。
 
@@ -62,9 +62,21 @@ UI テストを作成して実行するには、UI テスト用の maven サブ�
 
 *ファイル名*：`testing.properties`
 
-*目次*：`one line: ui-tests.version=1`
+*目次*：`ui-tests.version=1`
 
 これが構築された `tar.gz` ファイルに含まれていない場合、UI テストの構築と実行はスキップされます
+
+ビルドアーティファクトに`testing.properties`ファイルを追加するには、`assembly-ui-test-docker-context.xml`ファイル（UIテストサブモジュール）に`include`ステートメントを追加します。
+
+    &quot;&#39;
+    [...]
+    &lt;includes>
+    &lt;include>&lt;/include>
+    &lt;include>Dockerfilewait-for-grid.&lt;/include>
+    &lt;include>shtesting.properties&lt;/include> &lt;!- Cloud Managerのオプトインテストモジュール —>
+    &lt;/includes>
+    [...]
+    &quot;&#39;
 
 >[!NOTE]
 >2021 年 2 月 10 日より前に作成された実稼動用パイプラインの場合、ここで説明した UI テストを使用するには、更新が必要となります。つまり、変更がない場合でも、実稼動パイプラインを編集し、UI から「**保存**」をクリックする必要があります。
