@@ -3,7 +3,7 @@ title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3296'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 ## 新しいテンプレートの作成 {#creating-a-new-template}
 
-ページテンプレートの作成は、主にテンプレート作成者が、[テンプレートコンソールおよびテンプレートエディター](/help/sites-cloud/authoring/features/templates.md)を使用しておこないます。ここでは、そのプロセスの概要を示し、技術的なレベルでどのような処理がおこなわれるかを説明します。
+ページテンプレートの作成は、主にテンプレート作成者が、[テンプレートコンソールおよびテンプレートエディター](/help/sites-cloud/authoring/features/templates.md)を使用して行います。ここでは、そのプロセスの概要を示し、技術的なレベルでどのような処理が行われるかを説明します。
 
 新しい編集可能テンプレートを作成する場合は、次の手順を実行します。
 
@@ -226,7 +226,7 @@ ht-degree: 100%
 >
 >`template-authors` グループは、新しいテンプレートを作成する必要があるユーザー専用です。
 >
->テンプレートの編集は非常に強力なので、正しくおこなわないと既存のテンプレートが壊れる場合があります。そのため、この役割には注意深く、ふさわしいユーザーだけを含めてください。
+>テンプレートの編集は非常に強力なので、正しく行わないと既存のテンプレートが壊れる場合があります。そのため、このロールには注意深く、ふさわしいユーザーだけを含めてください。
 
 次の表に、テンプレートの編集に必要な権限の詳細を示します。
 
@@ -234,7 +234,7 @@ ht-degree: 100%
  <tbody>
   <tr>
    <th>パス</th>
-   <th>役割／グループ</th>
+   <th>ロール／グループ</th>
    <th>権限<br /> </th>
    <th>説明</th>
   </tr>
@@ -477,7 +477,7 @@ GitHub のコード
 
 ページポリシーを使用して、テンプレートまたは作成されるページで、ページ（メインの parsys）の[コンテンツポリシー](#content-policies)を定義できます。
 
-### 使用するテンプレートの有効化と許可  {#enabling-and-allowing-a-template-for-use}
+### 使用するテンプレートの有効化と許可{#enabling-and-allowing-a-template-for-use}
 
 1. **テンプレートの有効化**
 
@@ -488,7 +488,6 @@ GitHub のコード
    * `jcr:content` ノードの status プロパティを設定する。
 
       * 例：
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * プロパティの定義
@@ -501,7 +500,6 @@ GitHub のコード
 
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
-
       `cq:allowedTemplates` 
 を 
 必要なブランチの `jcr:content` ノードに設定します。
@@ -515,7 +513,7 @@ GitHub のコード
 
 * テンプレートの `structure` と `initial` を統合したサブツリーを使用して作成されます。
 
-* テンプレートおよびテンプレートタイプに保持されている情報への参照を保持します。これは、次のプロパティを持つ `jcr:content` ノードを使用しておこないます。
+* テンプレートおよびテンプレートタイプに保持されている情報への参照を保持します。これは、次のプロパティを持つ `jcr:content` ノードを使用して行います。
 
    * `cq:template` - 実際のテンプレートへの動的参照を提供します。テンプレートへの変更を実際のページに反映させることができます。
 
@@ -558,7 +556,7 @@ GitHub のコード
 
 * `P` のテンプレートの `allowedChildren` プロパティ。
 
-評価は次のようにおこなわれます。
+評価は次のように行われます。
 
 * `P` で始まるページ階層を昇順にしているときに見つかった、最初の空でない `cq:allowedTemplates` プロパティは、`T` のパスと一致します。一致する値がない場合、`T` は拒否されます。
 
@@ -583,10 +581,12 @@ GitHub のコード
 >したがって、アドビでは、次の項目を定義して、単純に開始することをお勧めします。
 >
 >* プロパティは `cq:allowedTemplates` のみ
+   >
+   >
+* サイトのルートにのみ
 >
->* サイトのルートにのみ
 >
->例については、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)のコンテンツ `/content/wknd/jcr:content` を参照してください。
+例については、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)のコンテンツ `/content/wknd/jcr:content` を参照してください。
 >
 >プロパティ `allowedPaths`、`allowedParents`、`allowedChildren` をテンプレートに配置して、より高度なルールを定義することもできます。ただし、可能な場合、許可されるテンプレートをさらに制限する必要がある場合は、サイトのサブセクションでさらに `cq:allowedTemplates` プロパティを定義する方が&#x200B;*はるかに*&#x200B;簡単です。
 >
