@@ -1,65 +1,65 @@
 ---
-title: コマース統合フレームワーク(CIF)アドオンの主な変更点
-description: 古いCIFバージョンと比較した、コマース統合フレームワーク(CIF)の主な変更点です。
+title: コマース統合フレームワーク（CIF）アドオンの主な変更点
+description: 古い CIF バージョンと比較した、コマース統合フレームワーク（CIF）の主な変更点です。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 12%
+ht-degree: 98%
 
 ---
 
-# コマース統合フレームワーク(CIF)アドオンの主な変更点{#notable-changes}
+# コマース統合フレームワーク（CIF）アドオンの主な変更点{#notable-changes}
 
-Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、[Experience Managerの変更点をCloud Service](/help/release-notes/aem-cloud-changes.md)として参照してください。
+Adobe Experience Manager as a Cloud Service は、AEM プロジェクトを管理するための様々な新機能と可能性を提供します。これらの機能の詳細については、「[Experience Manager as a Cloud Service の変更点](/help/release-notes/aem-cloud-changes.md)」を参照してください。
 
-このドキュメントでは、主にCIF Classic（クイックスタート）とCIFオープンソースと呼ばれる、Commerce Integration Framework(CIF)アドオンと古いCIFバージョンの重要な違いについて説明します。
+このドキュメントでは、主に CIF Classic（Quickstart）と CIF Open-source と呼ばれる、コマース統合フレームワーク（CIF）アドオンと古い CIF バージョンの重要な相違点について説明します。
 
-## インストールと更新
+## インストールとアップデート
 
-AEM CIFアドオンは、Cloud Managerを使用してインストールされます。 インストールには、クレジットなしでCIFをインストールできるサンドボックスを除き、CIFクレジットが必要です。 クレジットは、AEM契約のCIFアドオンのプロビジョニングを通じて自動的に受け取られます。
+AEM CIF アドオンは、Cloud Manager を使用してインストールされます。インストールには、クレジットなしで CIF をインストールできるサンドボックスを除き、CIF クレジットが必要です。クレジットは、AEM 契約の CIF アドオンのプロビジョニングを通じて自動的に受け取ります。
 
-アドオンは、通常のAEM as aの更新の一環として自動的に更新され、Cloud Serviceは更新されます。
+アドオンは、通常の AEM as a Cloud Service アップデートの一環として自動的にアップデートされます。
 
-**以前のCIFバージョン**
+**以前の CIF バージョン**
 
-* CIF Classic:インストールは不要で、CIFはクイックスタートの一部でした。 CIFの更新は、通常のAEMまたはサービスパックの更新に含まれていました
-* AEM On-premises用のCIFオープンソース：GitHubを使用したインストール。 更新は、手動更新/メンテナンス作業の一部でした。
-* AEM Adobe Managed Services用のCIFオープンソース：カスタマーサクセスマネージャーを使用したインストール。 更新は、手動更新/メンテナンス作業の一部でした。
+* CIF Classic：インストールは不要で、CIF は Quickstart の一部でした。CIF のアップデートは、通常の AEM またはサービスパックのアップデートに含まれていました。
+* AEM オンプレミス用の CIF Open-source：GitHub を使用したインストール。アップデートは、手動アップデートやメンテナンス作業の一部でした。
+* AEM Adobe Managed Services 用の CIF Open-source：Customer Success Manager を使用したインストール。アップデートは、手動アップデートやメンテナンス作業の一部でした。
 
 ## エンドポイントの設定
 
-エンドポイントは、Cloud Manager UIまたはCLIを使用して設定および更新されます。
+エンドポイントは、Cloud Manager UI または CLI を使用して設定およびアップデートされます。
 
-**以前のCIFバージョン**
+**以前の CIF バージョン**
 
-* CIF Classic:AEMのOSGi設定を使用
-* CIFオープンソース：CIF設定ブラウザーを使用
+* CIF Classic：AEM の OSGi 設定を使用
+* CIF Open-source：CIF 設定ブラウザーを使用
 
-## CIF Veniaプロジェクトのデプロイメント
+## CIF Venia プロジェクトのデプロイメント
 
-プロジェクトは[Cloud Manager Gitリポジトリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)で使用でき、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja)を介してデプロイされます。
+プロジェクトは [Cloud Manager Git リポジトリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)で使用可能で、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja) を介してデプロイされます。
 
-**以前のCIFバージョン**
+**以前の CIF バージョン**
 
-* CIF Classic:AEMパッケージのインストールを使用
-* CIFオープンソース：[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)経由
+* CIF Classic：AEM パッケージのインストールを使用
+* CIF Open-source：[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) を使用
 
 ## 製品カタログデータ
 
-製品カタログデータは、必要なGraphQL APIをサポートする外部エンドポイントへのリアルタイム呼び出しを通じて、オンデマンドでリクエストされます。 これらのAPIは、任意の日付でのライブデータまたはステージングデータへのアクセスをサポートします。 レプリケーションは不要。
+製品カタログデータは、必要な GraphQL API をサポートする外部エンドポイントへのリアルタイム呼び出しを通じて、オンデマンドでリクエストされます。これらの API は、任意の日付のライブデータまたはステージングデータへのアクセスをサポートします。レプリケーションは不要です。
 
-**以前のCIFバージョン**
+**以前の CIF バージョン**
 
-* CIF Classic:ライブおよびステージングされた製品データは、完全または差分の製品読み込みを通じてAEMオーサー上のJCRに読み込まれ、保持されます。 ライブ製品データがAEMパブリッシュにレプリケートされます。
+* CIF Classic：ライブおよびステージングされた製品データは、完全または差分の製品読み込みを通じて AEM オーサー上の JCR に読み込まれ、保持されます。ライブ製品データが AEM パブリッシュにレプリケートされます。
 
-## AEMレンダリングを使用した製品カタログエクスペリエンス
+## AEM レンダリングを使用した製品カタログエクスペリエンス
 
-AEMは、製品やカテゴリに割り当てられたAEMカタログテンプレートを使用して、製品カタログのエクスペリエンスをその場でレンダリングします。 レプリケーションは不要。
+AEM は、製品やカテゴリに割り当てられた AEM カタログテンプレートを使用して、製品カタログエクスペリエンスをその場でレンダリングします。レプリケーションは不要です。
 
-**以前のCIFバージョン**
+**以前の CIF バージョン**
 
-* CIF Classic:AEMオーサーは、カタログのブループリントツールを使用して、各カテゴリ/製品のAEMページを作成します。 これらのページはAEMパブリッシュにレプリケートされます。
+* CIF Classic：AEM オーサーは、カタログのブループリントツールを使用して、各カテゴリ／製品の AEM ページを作成します。これらのページは AEM パブリッシュにレプリケートされます。
 
 >[!NOTE]
 >
