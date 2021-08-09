@@ -3,9 +3,9 @@ title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントの拡張
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1660'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 ソーシャル投稿の画像やテキストは、（構築ブロックまたはレイアウトコンテナの）任意の深さレベルの任意の画像リソースタイプまたはテキストリソースタイプから取得できます。
 
-また、ソーシャルバリエーションを使用すると、（パブリッシュ環境で）ソーシャルアクションをおこなう際に構築ブロックを考慮に入れることもできます。
+また、ソーシャルバリエーションを使用すると、（パブリッシュ環境で）ソーシャルアクションを行う際に構築ブロックを考慮に入れることもできます。
 
 的確なテキストと画像をソーシャルメディアネットワークに投稿するには、カスタマイズした独自のコンポーネントを開発する場合、いくつかの規則に従う必要があります。
 
@@ -95,8 +95,8 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
    1. テンプレートの名前は次の文字列で始まる必要があります。
       `experience-fragments`
-これにより、ユーザーは、 /content/experience-fragmentsに 
-`cq:allowedTemplates` このフォルダーのプロパティには、で始まる名前を持つすべてのテンプレートが含まれ `experience-fragment`ます。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
+これにより、ユーザーは /content/experience-fragments にエクスペリエンスフラグメントを作成できます。 
+このフォルダーの `cq:allowedTemplates` プロパティには、`experience-fragment` で始まる名前の付いたすべてのテンプレートが含まれています。ユーザーは、このプロパティを更新して、独自の命名方式やテンプレート場所を取り入れることができます。
 
 1. [使用可能なテンプレート](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder)はエクスペリエンスフラグメントコンソールで設定できます。
 
@@ -111,7 +111,7 @@ URL で `.plain.` セレクターを使用すると、プレーン HTML レン�
 
 ## エクスペリエンスフラグメントのコンポーネント {#components-for-experience-fragments}
 
-エクスペリエンスフラグメントで使用するコンポーネントの開発は、標準的な方法に従っておこないます。
+エクスペリエンスフラグメントで使用するコンポーネントの開発は、標準的な方法に従って行います。
 
 後は、コンポーネントをテンプレートで使用できるように設定するだけです。それには、コンテンツポリシーを使用します。
 
@@ -155,7 +155,7 @@ HTML ページを生成すると、Sling Rewriter パイプラインは出力に
 
 1. `html`、`head`、`body` の各要素が `div` 要素に置き換わります。`meta`、`noscript`、`title` の各要素が削除されます（これらは元の `head` 要素の子要素であり、親が `div` 要素に置き換わる場合は考慮されません）。
 
-   このような変更がおこなわれるのは、HTML Target オファーを Target アクティビティに確実に含めることができるようにするためです。
+   このような変更が行われるのは、HTML Target オファーを Target アクティビティに確実に含めることができるようにするためです。
 
 2. AEM では、HTML に存在するすべての内部リンクを変更して、公開されたリソースを指すようにします。
 
@@ -288,8 +288,9 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 このメソッドは入力として次のパラメーターを受け取ります。
 
-* `link`  
-`String` 現在処理中のリンクの表現。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
+* `link`：
+ 
+現在処理中のリンクの `String` 表現です。これは通常、オーサーインスタンス上のリソースを指す相対 URL です。
 
 * `tag`：
 現在処理中の HTML 要素の名前です。
@@ -303,7 +304,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
 ```
 
-`rewriteLink()` メソッドの呼び出しは、次のパラメーターを使用しておこないます。
+`rewriteLink()` メソッドの呼び出しは、次のパラメーターを使用して行います。
 
 ```java
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
