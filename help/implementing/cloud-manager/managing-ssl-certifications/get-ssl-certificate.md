@@ -3,7 +3,7 @@ title: SSL 証明書の取得 - SSL 証明書の管理
 description: SSL 証明書の取得 - SSL 証明書の管理
 exl-id: a3a247e5-164a-4c9c-aeed-bde882635e6f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
 ht-degree: 100%
 
