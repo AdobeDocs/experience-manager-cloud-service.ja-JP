@@ -5,11 +5,11 @@ exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service - 用語 {#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as aCloud Service — 用語 {#adobe-experience-manager-as-a-cloud-service-terminology}
 
 Adobe Experience Manager (AEM) as a Cloud Service に関連して、次の用語が使用されます。
 
