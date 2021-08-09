@@ -3,7 +3,7 @@ title: コンテンツ配信フローの概要
 description: コンテンツ配信フローの概要
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 データフローは次のとおりです。
 
 1. URL がブラウザーに追加される
-1. そのドメインへの DNS にマッピングされた CDN に対してリクエストがおこなわれる
+1. そのドメインへの DNS にマッピングされた CDN に対してリクエストが行われる
 1. コンテンツが CDN 上で完全にキャッシュされている場合、CDN はコンテンツをブラウザーに提供する
 1. コンテンツが完全にキャッシュされていない場合、CDN は Dispatcher を呼び出す（リバースプロキシ）
 1. コンテンツが Dispatcher 上で完全にキャッシュされている場合、Dispatcher はそのコンテンツを CDN に提供する
