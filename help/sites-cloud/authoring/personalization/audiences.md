@@ -27,7 +27,7 @@ ht-degree: 94%
 * CH - ContextHub セグメント
 * AT - Adobe Target オーディエンス
 
-## オーディエンスコンソールでの ContextHub セグメントの作成  {#creating-a-contexthub-segment-in-the-audiences-console}
+## オーディエンスコンソールでの ContextHub セグメントの作成 {#creating-a-contexthub-segment-in-the-audiences-console}
 
 ContextHub セグメントは、オーディエンスコンソールまたはターゲット設定プロセスで作成できます。
 
@@ -75,7 +75,7 @@ Adobe Target オーディエンスを作成するには：
 1. オーディエンス名を入力し、「**保存**」をタップまたはクリックします。
 1. 「**保存**」をタップまたはクリックします。オーディエンスが「オーディエンス」リストに表示されます。
 
-### 属性とそのオプション  {#attributes-and-their-options}
+### 属性とそのオプション {#attributes-and-their-options}
 
 以下の属性ごとに、ターゲット設定ルールを作成できます。
 
@@ -99,4 +99,4 @@ ContextHub オーディエンスは、オーディエンスコンソールから
 
 1. ナビゲーションコンソールで、「**パーソナライズ機能**」をクリックまたはタップします。「**オーディエンス**」をクリックまたはタップします。
 1. 編集する ContextHub セグメントの横のアイコンをタップまたはクリックして、「**編集**」をタップまたはクリックします。
-1. セグメントエディターで編集をおこないます。詳しくは、ContextHub のドキュメントを参照してください。<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
+1. セグメントエディターで編集を行います。詳しくは、ContextHub のドキュメントを参照してください。<!--See the [ContextHub](/help/sites-administering/contexthub-config.md) documentation for more information.-->
