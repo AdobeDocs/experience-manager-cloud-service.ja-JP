@@ -1,11 +1,11 @@
 ---
 title: '登録、ログイン、ユーザープロファイル '
-description: AEM as aCloud Serviceの登録、ログイン、ユーザーデータ、およびグループ同期について説明します
+description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ## はじめに {#introduction}
 
-Webアプリケーションは、多くの場合、エンドユーザーがWebサイトに登録するためのアカウント管理機能を提供します。Webアプリケーションは、ユーザーデータの情報を保持し、将来ログインして一貫したエクスペリエンスを楽しむことができます。 この記事では、AEM as aCloud Serviceの次の概念について説明します。
+Web アプリケーションは、多くの場合、Web サイトへの登録用のアカウント管理機能を提供します。この機能は、ユーザーデータ情報を保持するので、ユーザーは登録後のログインで一貫した操作を楽しむことができます。この記事では、AEM as a Cloud Service の以下の概念について説明します。
 
 * 登録
 * ログイン
@@ -44,7 +44,7 @@ Webアプリケーションは、多くの場合、エンドユーザーがWeb�
 
 ### 外部 Web アプリケーション {#external-managed-registration}
 
-場合によっては、AEM 以外のインフラストラクチャで登録やユーザーの作成が既におこなわれています。このシナリオでは、ログイン時に AEM にユーザーレコードが作成されます。
+場合によっては、AEM 以外のインフラストラクチャで登録やユーザーの作成が既に行われています。このシナリオでは、ログイン時に AEM にユーザーレコードが作成されます。
 
 ## ログイン {#login}
 
@@ -71,7 +71,7 @@ Webアプリケーションは、多くの場合、エンドユーザーがWeb�
 
 >[!NOTE]
 >
->IdP では、ユーザーの資格情報の初期認証のみおこないます。cookie が使用可能であれば、その後の AEM へのリクエストは AEM ログイントークン cookie を使用して実行されます。
+>IdP では、ユーザーの資格情報の初期認証のみ行います。cookie が使用可能であれば、その後の AEM へのリクエストは AEM ログイントークン cookie を使用して実行されます。
 
 [SAML 2.0 認証ハンドラー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html?lang=ja#saml-authentication-handler)について詳しくは、ドキュメントを参照してください。
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 
 ### AEM リポジトリー {#aem-repository}
 
-ユーザープロファイル情報の書き込みと読み取りは、次の 2 つの方法でおこなうことができます。
+ユーザープロファイル情報の書き込みと読み取りは、次の 2 つの方法で行うことができます。
 
 * サーバーサイドで `com.adobe.granite.security.user` インターフェイスを使用。UserPropertiesManager インターフェイスにより、`/home/users` のユーザーのノードの下にデータが配置されます。ユーザーごとに一意のページが、キャッシュされていないことを確認します。
 * [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=ja#personalization)に説明されているように、クライアントサイドで ContextHub を使用。
@@ -102,7 +102,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 
 サードパーティのサービスにリアルタイムでアクセスしてプロファイル属性を取得することはできますが、これが実質的に AEM のリクエスト処理に影響を与えないようにすることが重要です。
 
-## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
+## 権限（クローズドユーザーグループ）{#permissions-closed-user-groups}
 
 パブリッシュ層アクセスポリシー（クローズドユーザーグループ（CUG）
 とも呼ばれる）は、AEM オーサーでは[ここ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ja#applying-your-closed-user-group-to-content-pages)で説明されているとおりに定義されています。一部のユーザーから Web サイトの特定のセクションまたはページを制限するには、ここで説明されているように AEM オーサーを使用して、必要に応じて CUG を適用し、パブリッシュ層に複製します。
