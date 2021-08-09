@@ -3,7 +3,7 @@ title: Git との統合
 description: Git との統合 - クラウドサービス
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Adobe Cloud Manager には、Cloud Manager の CI/CD パイプラインを使用したコードのデプロイに使用される単一の Git リポジトリがプロビジョニングされます。お客様は、Cloud Manager の Git リポジトリをすぐに使用できます。オプションとして、オンプレミスまたは&#x200B;**顧客管理**&#x200B;の Git リポジトリを Cloud Manager と統合することもできます。
 
-## Git 統合の概要  {#git-integration-overview}
+## Git 統合の概要{#git-integration-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28710/)
 
