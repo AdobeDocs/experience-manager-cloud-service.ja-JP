@@ -3,7 +3,7 @@ title: ContextHub
 description: ContextHub は、コンテキストデータを保存、操作および表示するためのフレームワークです。
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ContextHub は、コンテキストデータを保存、操作および表示す
 
 ContextHub では、次のことができます。
 
-* コンテキストデータを使用してページを作成する際に、[プレゼンテーション、表示、ペルソナの切り替え、ユーザーエクスペリエンスのシミュレーション](#presentation)をおこないます。
+* コンテキストデータを使用してページを作成する際に、[プレゼンテーション、表示、ペルソナの切り替え、ユーザーエクスペリエンスのシミュレーション](#presentation)を行います。
 * データレイヤー表現として Web サイト上の[コンテキストデータを保持](#persistence)します。
 * 選択したコンテキストの[セグメントを管理](#segmentation)します。
 
