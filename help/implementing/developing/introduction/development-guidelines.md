@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: f5ed5561ed19938b4c647666ff7a6a470d307cf7
 workflow-type: tm+mt
 source-wordcount: '2322'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -125,7 +125,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ローカル開発の場合、開発者は CRXDE Lite（`/crx/de`）と AEM Web コンソール（`/system/console`）に完全にアクセスできます。
 
-（SDKを使用する）ローカル開発時に、`/apps`と`/libs`に直接書き込むことができます。これは、最上位フォルダーが不変なクラウド環境とは異なります。
+（SDK を使用する）ローカル開発では、`/apps` と `/libs` に直接書き込むことができます。この点が、最上位フォルダーが不変なクラウド環境とは異なります。
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
@@ -254,6 +254,6 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.tls` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
-## [!DNL Assets] 開発ガイドラインと使用例  {#use-cases-assets}
+## [!DNL Assets] 開発ガイドラインと使用例 {#use-cases-assets}
 
 Cloud ServiceとしてのAssetsの開発の使用例、推奨事項、参考資料については、[Assetsの開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。
