@@ -22,7 +22,7 @@ RTE の概念と設定に必要な手順を以下に示します。
 | [編集モードの種類](#editingmodes) | [プラグインのアクティベーション](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin) | [機能プロパティの設定](#aboutplugins) |
 | [プラグインについて](#aboutplugins) | [RTE ツールバーの設定](#dialogfullscreen) | [貼り付けモードの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles) |
 
-## 作成者が使用できるユーザーインターフェイスを理解します。{#understand-rte-ui}
+## 作成者が使用できるユーザーインターフェイスを理解します。 {#understand-rte-ui}
 
 RTE インターフェイスは、オーサリング環境に[レスポンシブデザイン](/help/sites-cloud/authoring/features/responsive-layout.md)を提供します。このインターフェイスは、タッチデバイスとデスクトップデバイスで使用できるように設計されています。
 
@@ -97,7 +97,7 @@ RTE の基本機能は、該当するプラグインのノードにある `featu
 | edit | `cut`、`copy`、`paste-default`、`paste-plaintext`、`paste-wordhtml` | [切り取り、コピーおよび 3 つの貼り付けモード](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles)。 |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`、`replace` | 検索と置換。 |
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`、`italic`、`underline` | [基本的なテキストフォーマット](configure-rich-text-editor-plug-ins.md#textstyles)。 |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 基本的な画像サポート（コンテンツまたはコンテンツファインダーからのドラッグ）。ブラウザーの種類に応じて、様々なサポート機能が提供されます |
+| [画像](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | 基本的な画像サポート（コンテンツまたはコンテンツファインダーからのドラッグ）。ブラウザーの種類に応じて、様々なサポート機能が提供されます |
 | [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | この値を定義するには、[タブサイズ](configure-rich-text-editor-plug-ins.md#tabsize)を参照してください。 |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`、`justifycenter`、`justifyright` | 段落の整列。 |
 | [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`、`unlink`、`anchor` | [ハイパーリンクおよびアンカー](configure-rich-text-editor-plug-ins.md#linkstyles)。 |
