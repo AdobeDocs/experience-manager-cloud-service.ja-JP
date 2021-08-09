@@ -3,13 +3,13 @@ title: ツールコンソール
 description: AEM の様々なツールコンソールについて説明します。
 exl-id: 9cc7c82d-62ef-4226-874a-b5d8e76604af
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
 ht-degree: 100%
 
 ---
 
-# ツールコンソール{#tools-consoles}
+# ツールコンソール {#tools-consoles}
 
 **ツール**&#x200B;コンソールを使用して、Web サイト、デジタルアセット、およびコンテンツリポジトリのその他の要素の管理に役立つ、数多くの専用ツールにアクセスできます。
 
