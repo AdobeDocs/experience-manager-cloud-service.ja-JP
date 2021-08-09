@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service に対する Same Site Cookie
 description: Adobe Experience Manager as a Cloud Service に対する Same Site Cookie の のサポート
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
 ht-degree: 100%
 
