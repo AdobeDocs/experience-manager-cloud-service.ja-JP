@@ -253,7 +253,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 サービスアカウント資格情報と JWT ペイロードを生成するには、次の手順を実行します。
 
-1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui_jp](https://www.adobe.com/go/devs_console_ui) です。
+1. IMS 組織（Brand Portal テナント）のシステム管理者権限で Adobe 開発者コンソールにログインします。デフォルトの URL は [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui) です。
 
 
    >[!NOTE]
@@ -389,7 +389,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
    [IMS アカウントの設定](#create-ims-account-configuration)時に作成した IMS 設定を選択します。
 
-   「**[!UICONTROL サービス URL]**」に、Brand Portal テナント（組織） URL を入力します。
+   「**[!UICONTROL サービス URL]**」に、Brand Portal テナント（組織）URL を入力します。
 
    ![](assets/create-cloud-service.png)
 
