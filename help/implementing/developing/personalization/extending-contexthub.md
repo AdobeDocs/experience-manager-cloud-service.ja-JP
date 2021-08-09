@@ -3,7 +3,7 @@ title: ContextHub の拡張
 description: 提供されている ContextHub ストアやモジュールのタイプがソリューションの要件を満たさない場合は、新しいタイプを定義できます
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 提供されている ContextHub ストアやモジュールのタイプがソリューションの要件を満たさない場合は、新しいタイプを定義できます。
 
-## カスタムストア候補の作成  {#creating-custom-store-candidates}
+## カスタムストア候補の作成{#creating-custom-store-candidates}
 
 ContextHub ストアは、登録済みのストア候補から作成します。カスタムストアを作成するには、ストア候補を作成して登録する必要があります。
 
@@ -43,7 +43,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-実際には、カスタムストア候補は追加の関数を定義するか、ストアの初期設定を上書きします。いくつかの[サンプルストア候補](sample-stores.md)が、`/libs/granite/contexthub/components/stores` の下にあるリポジトリにインストールされています。
+実際には、カスタムストア候補は追加の関数を定義するか、ストアの初期設定を上書きします。いくつかの[サンプルストア候補](sample-stores.md)が、`/libs/granite/contexthub/components/stores` の下にあるリポジトリーにインストールされています。
 
 ### ContextHub ストア候補の登録 {#registering-a-contexthub-store-candidate}
 
