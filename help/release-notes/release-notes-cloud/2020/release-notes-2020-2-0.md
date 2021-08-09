@@ -3,7 +3,7 @@ title: リリースノート（2020.2.0）
 description: リリースノート（2020.2.0）
 exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 
