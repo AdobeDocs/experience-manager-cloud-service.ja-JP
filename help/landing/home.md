@@ -5,15 +5,15 @@ exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
 source-git-commit: 560775956fbf8eb6376150e8fbf08af2ea9e5c1e
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 94%
+ht-degree: 90%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service のユーザーガイド {#aem-user-guide}
+# Experience Manageras aCloud Serviceユーザーガイド {#aem-user-guide}
 
 ここでは、Adobe Experience Manager as a Cloud Service のセルフヘルプユーザーガイドの一覧を示します。
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience ManagerガイドとしてのCloud Service {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -28,7 +28,7 @@ ht-degree: 94%
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | Experience Manager Commerce as a Cloud Service の使用方法と管理方法について説明します。 |
 | [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを探索して、最初のヘッドレスプロジェクトの準備をしてください。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
