@@ -1,6 +1,6 @@
 ---
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
-description: 相違点と新機能 - Adobe Experience Manager（AEM） as a Cloud Service。
+description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
 workflow-type: tm+mt
@@ -268,7 +268,7 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 * [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
 * [Adobe Experience Manager as a Cloud Service のアーキテクチャ](/help/core-concepts/architecture.md)
 * [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
-* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
