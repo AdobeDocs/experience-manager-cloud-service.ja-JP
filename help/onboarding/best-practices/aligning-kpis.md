@@ -3,7 +3,7 @@ title: KPI の調整
 description: KPI の調整
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '483'
 ht-degree: 100%
 
