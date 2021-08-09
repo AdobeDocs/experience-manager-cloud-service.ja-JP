@@ -1,30 +1,30 @@
 ---
-title: AEM のコンテンツとコマース
-description: AEMコンテンツおよびコマースに関するセルフヘルプリソースおよびドキュメントリンク
+title: AEM Content and Commerce
+description: AEM Content and Commerce に関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 71%
+ht-degree: 96%
 
 ---
 
-# AEM のコンテンツとコマース {#commerce-guide}
+# AEMコンテンツとコマース {#commerce-guide}
 
-ここでは、AEMコンテンツとコマースに関するセルフヘルプリソースの一覧を示します。
+ここでは、AEM Content and Commerce に関するセルフヘルプリソースの一覧を示します。
 
 >[!NOTE]
 >
->AEM 6.5およびクラシックCIFを使用したAEMコンテンツおよびコマースについては、[AEM 6.5のコンテンツとコマース](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html)を参照してください。
+>AEM 6.5 およびクラシック CIF を使用した AEM Content and Commerce については、「[AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html?lang=ja)」を参照してください。
 
 
-## 主なコンテンツおよびコマース記事{#key-articles}
+## 主な Content and Commerce に関する記事 {#key-articles}
 
-* [AEMコンテンツとコマースの概要](introduction.md)
-* [AEMコンテンツとコマースの概要](/help/commerce-cloud/getting-started.md)
-* [AEMコンテンツとコマースの開発](/help/commerce-cloud/develop.md)
+* [AEM Content and Commerce の概要](introduction.md)
+* [AEM Content and Commerce - はじめに](/help/commerce-cloud/getting-started.md)
+* [AEM Content and Commerce の開発](/help/commerce-cloud/develop.md)
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience ManagerガイドとしてのCloud Service {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -36,8 +36,8 @@ ht-degree: 71%
 | [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service の管理方法について説明します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の管理方法について説明します。 |
-| [実装ユーザーガイド](/help/implementing/home.md) | AEMの強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) | AEMの強力で柔軟なヘッドレス機能を通じて、このガイド付きジャーニーを調べ、最初のヘッドレスプロジェクトに備えます。 |
+| [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にソリューションを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 
