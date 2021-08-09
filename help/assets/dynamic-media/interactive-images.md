@@ -55,7 +55,7 @@ Experience Manager Assets と Dynamic Media をスタンドアロンで使用す
 >このタスクが必要になるのは次に該当する場合のみです。
 >
 >* クイックビューをトリガーして、画像にインタラクティブ機能を追加する。
->* Experience Manager の実装で、製品データを eCommerce ソリューションから Experience Manager に取り込む際に、e コマース統合フレームワークを&#x200B;*使用していない*。このようなソリューションには、IBM WebSphere® Commerce、Elastic Path、Hybris、Intershop などがあります。
+>* Experience Manager の実装で、製品データを eCommerce ソリューションから Experience Manager に取り込む際に、e コマース統合フレームワークを&#x200B;*使用していない*。このようなソリューションには、IBM WebSphere® Commerce、Elastic Path、SAP Hybris、Intershop などがあります。
 
 >
 >
