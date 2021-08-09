@@ -5,7 +5,7 @@ exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '2117'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ AEM as a Cloud Service 環境を設定およびデプロイする方法につい
 
 1. [デバッグのヒントとテクニック](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/overview.html?lang=ja#debugging-aem-as-a-cloud-service)
 2. [デベロッパーコンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja#debugging)
-3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=ja#debugging) (ローカルSDKおよびExperience ManagerCloud開発環境でのみ使用可能)
+3. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/crxde-lite.html?lang=ja#debugging)（ローカル SDK および Experience Manager クラウド開発環境でのみ使用可能）
 4. [ログとログ作成](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)
    * [CM ログ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=ja#debugging)（build-unit-testing、code-scanning、build-image、deploy）
    * [Experience Manager Cloud Service ログ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=en#debugging)（aemerror、aemaccess、aemrequest、aemdispatcher、httpderror、httpaccess）
@@ -110,7 +110,7 @@ AEM as a Cloud Service 環境を設定およびデプロイする方法につい
 
 Experience Manager as a Cloud Service を使用すると、チームは製品アップグレード計画ではなく技術革新に専念できます。新しい製品機能は徹底的にテストされ、中断することなくチームに提供されるので、常に最新のアプリケーションにアクセスできます。
 
-Cloud Service への移行プロセスには、計画、実行、運用開始後の 3 つの段階が含まれています。移行をうまくスムーズにおこなうには、適切な計画を立て、本ガイドで概要を説明しているベストプラクティスに従う必要があります。
+Cloud Service への移行プロセスには、計画、実行、運用開始後の 3 つの段階が含まれています。移行をうまくスムーズに行うには、適切な計画を立て、本ガイドで概要を説明しているベストプラクティスに従う必要があります。
 
 次の図は Cloud Service への推奨される移行プロセスを示しています。
 
