@@ -23,7 +23,7 @@ ht-degree: 97%
 >
 >式に基づいたリソースの非表示は、ACL アクセス権限の代わりにはなりません。コンテンツは編集可能なまま、表示されなくなるだけです。
 
-## 実装と使用の詳細  {#implementation-and-usage-details}
+## 実装と使用の詳細 {#implementation-and-usage-details}
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` は、フィルタリング対象のフィールドの `granite:hide` プロパティの有無と値に基づいてリソースをフィルタリングします。`/libs/cq/gui/components/authoring/dialog/dialog.jsp` の実装には、`FilteringResourceWrapper.` のインスタンスが含まれます。
 
