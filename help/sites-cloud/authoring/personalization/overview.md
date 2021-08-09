@@ -3,7 +3,7 @@ title: パーソナライズとコンテンツのターゲティング
 description: パーソナライズされたコンテンツを AEM で作成する方法を説明します。
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -47,13 +47,13 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-cloud/authoring/personalization/offers.md)を使用します。[ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)するときは、単一エクスペリエンス用のオファーを作成するか、オファーライブラリからオファーを追加します。
 
-## ターゲティングエンジン  {#targeting-engine}
+## ターゲティングエンジン{#targeting-engine}
 
 ターゲティングエンジンは、ターゲットコンテンツ用のロジックを動かすメカニズムです。使用可能なターゲティングエンジンには AEM と Adobe Target の 2 種類があり、どちらを使用するかは[アクティビティ](/help/sites-cloud/authoring/personalization/activities.md)で設定します。
 
 ### AEM {#aem}
 
-AEM は、ページリクエストの処理や、表示コンテンツの判断をおこなう組み込みのターゲティングエンジンを備えています。AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義に使用できるセグメントは、AEM で作成されるセグメントのみとなります。
+AEM は、ページリクエストの処理や、表示コンテンツの判断を行う組み込みのターゲティングエンジンを備えています。AEM ターゲティングエンジンを使用する場合、エクスペリエンスのオーディエンス定義に使用できるセグメントは、AEM で作成されるセグメントのみとなります。
 
 ### Adobe Target {#adobe-target}
 
