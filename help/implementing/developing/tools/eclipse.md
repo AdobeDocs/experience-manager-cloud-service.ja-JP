@@ -3,7 +3,7 @@ title: 'AEM Developer Tools for Eclipse '
 description: 'AEM Developer Tools for Eclipse '
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1182'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ AEM Developer Tools を使用する前に、次の作業が必要です。
 
 Eclipse では、パースペクティブによって、ウィンドウ内で使用可能なアクションやビューが決まり、Eclipse のリソースとのタスク指向のやり取りが可能になります。パースペクティブについて詳しくは、[Eclipse のドキュメント](https://help.eclipse.org)を参照してください。
 
-AEM Development Tools for Eclipse には、AEM プロジェクトおよびインスタンスを完全にコントロールできる AEM パースペクティブが用意されています。AEM パースペクティブを開くには、次の操作をおこないます。
+AEM Development Tools for Eclipse には、AEM プロジェクトおよびインスタンスを完全にコントロールできる AEM パースペクティブが用意されています。AEM パースペクティブを開くには、次の操作を行います。
 
 1. Eclipse メニューバーから、**Window**／**Perspective**／**Open Perspective**／**Other** を選択します。
 1. ダイアログで「**AEM**」を選択し、「**Open**」をクリックします。
@@ -71,7 +71,7 @@ AEM Development Tools for Eclipse には、AEM プロジェクトおよびイン
 
 ## サンプルのマルチモジュールプロジェクト {#sample-multi-module-project}
 
-AEM Developer Tools for Eclipse には、サンプルのマルチモジュールプロジェクトが同梱されています。このプロジェクトは、Eclipse でのプロジェクト設定を手早くおこなうために役立つだけでなく、いくつかの AEM 機能に対するベストプラクティスガイドの役割も果たします。プロジェクトのアーキタイプについて詳しくは、[こちら](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)を参照してください。
+AEM Developer Tools for Eclipse には、サンプルのマルチモジュールプロジェクトが同梱されています。このプロジェクトは、Eclipse でのプロジェクト設定を手早く行うために役立つだけでなく、いくつかの AEM 機能に対するベストプラクティスガイドの役割も果たします。プロジェクトのアーキタイプについて詳しくは、[こちら](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)を参照してください。
 
 次の手順を実行して、サンプルプロジェクトを作成します。
 
@@ -136,7 +136,7 @@ AEM Developer Tools for Eclipse には、サンプルのマルチモジュール
    1. 表示される `apps` フォルダーと `etc` フォルダーを削除し、その場所にコンテンツパッケージの `apps` フォルダーと `etc` フォルダーを配置します。
    1. Eclipse で `PROJECT.ui.apps` プロジェクトを右クリックし、「**Refresh**」を選択します。
 
-1. 続いて、`PROJECT.ui.content` に対して同じことをおこない、そのコンテンツフォルダーをパッケージの 1 つに置き換えます。
+1. 続いて、`PROJECT.ui.content` に対して同じことを行い、そのコンテンツフォルダーをパッケージの 1 つに置き換えます。
 
    1. Project Explorer パネルで、`PROJECT.ui.content`／`src`／`main`／`content`／`jcr_root`／`content` を展開します。
    1. 深い階層のコンテンツフォルダーを右クリックし、**Show In**／**System Explorer** を選択します。
