@@ -56,7 +56,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 各 `cq:ClientLibraryFolder` には、JS ファイルや CSS ファイルのセットと、いくつかのサポートファイルが入力されます（以下を参照）。`cq:ClientLibraryFolder` の重要なプロパティは、次のように設定されます。
 
 * `allowProxy`：すべての clientlibs は `apps` に保存する必要があるため、このプロパティを使用すると、プロキシサーブレットを介してクライアントライブラリにアクセスできます。後述の「[クライアントライブラリフォルダーの配置とプロキシクライアントライブラリサーブレットの使用](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)」を参照してください。
-* `categories`：`cq:ClientLibraryFolder` に含まれる JS ファイルや CSS ファイルのセットのカテゴリを特定します。`categories` プロパティは複数の値を取るため、ライブラリフォルダーを複数のカテゴリーの一部にすることができます（これがどのように役立つかについては以下を参照）。
+* `categories`：`cq:ClientLibraryFolder` に含まれる JS ファイルや CSS ファイルのセットのカテゴリを特定します。`categories` プロパティは複数の値を取るため、ライブラリフォルダーを複数のカテゴリの一部にすることができます（これがどのように役立つかについては以下を参照）。
 
 クライアントライブラリフォルダーに 1 つ以上のソースファイルが含まれている場合は、そのソースファイルが実行時に単一の JS ファイルや CSS ファイルに結合されます。生成されるファイルの名前はノード名で、ファイル名の拡張子は `.js` または `.css` です。例えば、`cq.jquery` という名前のライブラリノードからは、 `cq.jquery.js` または `cq.jquery.css` という名前のファイルが生成されます。
 
@@ -89,7 +89,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
    * `resources` フォルダーの下に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
-   * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスでおこなわれます。
+   * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
 1. クライアントライブラリフォルダーを選択して、**作成／ファイルを作成**&#x200B;をクリックします。
 1. ファイル名ボックスに、次のいずれかのファイル名を入力して、「OK」をクリックします。
@@ -116,7 +116,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 * clientlib（`/etc.clientlibs/myprojects/clientlibs/foo.js` を介す）
 * 静的な画像（`/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` を介す）
 
-### クライアントライブラリの読み込み（HTL 経由）{#loading-via-htl}
+### クライアントライブラリの読み込み（HTL 経由） {#loading-via-htl}
 
 clientlibs がクライアントライブラリフォルダーに正常に保存および管理されると、HTL を介してアクセスできます。
 
@@ -132,7 +132,7 @@ HTL を使用した clientlibs の読み込みについて詳しくは、[HTL �
 This is possible. Still need detail.
 -->
 
-## オーサーのクライアントライブラリ対パブリッシュのクライアントライブラリ{#clientlibs-author-publish}
+## オーサーのクライアントライブラリ対パブリッシュのクライアントライブラリ {#clientlibs-author-publish}
 
 ほとんどの clientlibs は、AEM パブリッシュインスタンスで必要です。つまり、clientlibs の大半の目的は、コンテンツのエンドユーザーエクスペリエンスを生み出すことです。パブリッシュインスタンスの clientlibs の場合、[フロントエンドビルドツール](#fed-for-aemaacs)は、[前述のように、クライアントライブラリフォルダーを介して使用およびデプロイできます。](#creating-clientlib-folders)
 
@@ -179,7 +179,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 追加のクライアントライブラリ設定は、システムコンソール（`https://<host>:<port>/system/console/configMgr`）の **Adobe Granite HTML Library Manager** パネルで制御できます。
 
-### 追加のフォルダープロパティ{#additional-folder-properties}
+### 追加のフォルダープロパティ {#additional-folder-properties}
 
 フォルダーのプロパティには、依存関係や埋め込みの制御が許可されているものもありますが、通常は不要になっており、使用はお勧めしません。
 
@@ -207,9 +207,9 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 あるクライアントライブラリから別のクライアントライブラリに、コードを埋め込むことができます。実行時に、埋め込み元のライブラリで生成される JS ファイルおよび CSS ファイルには、埋め込み先のライブラリのコードが含まれます。
 
-コードの埋め込みは、リポジトリのセキュリティ保護された領域に格納されているライブラリへのアクセスを提供する際に便利です。
+コードの埋め込みは、リポジトリーのセキュリティ保護された領域に格納されているライブラリへのアクセスを提供する際に便利です。
 
-#### アプリケーション専用のクライアントライブラリフォルダー  {#app-specific-client-library-folders}
+#### アプリケーション専用のクライアントライブラリフォルダー {#app-specific-client-library-folders}
 
 アプリケーション関連のすべてのファイルは、`/app` 内のアプリケーションフォルダーに格納することをお勧めします。Web サイト訪問者の `/app` フォルダーに対するアクセスを拒否することもお勧めします。両方のベストプラクティスを満たすには、`/etc` にクライアントライブラリフォルダーを作成して、 `/app` 内のクライアントライブラリを埋め込みます。
 
@@ -223,7 +223,7 @@ AEM のクライアントライブラリフォルダーでは、他にも多数�
 
 場合によっては、パブリッシュインスタンスによって一般的なページ用に生成される最終的な HTML に、比較的多くの `<script>` 要素が含まれていることがあります。
 
-このような場合、必要なすべてのクライアントライブラリコードを 1 つのファイルに組み合わせて、ページ読み込み時のリクエストの行き来の数を減らすと便利です。これをおこなうには、`cq:ClientLibraryFolder` ノードの embed プロパティを使用して、必要なライブラリをアプリ固有のクライアントライブラリに `embed` します。
+このような場合、必要なすべてのクライアントライブラリコードを 1 つのファイルに組み合わせて、ページ読み込み時のリクエストの行き来の数を減らすと便利です。これを行うには、`cq:ClientLibraryFolder` ノードの embed プロパティを使用して、必要なライブラリをアプリ固有のクライアントライブラリに `embed` します。
 
 #### CSS ファイル内のパス {#paths-in-css-files}
 
@@ -340,7 +340,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 GCC オプションについて詳しくは、[GCC ドキュメント](https://developers.google.com/closure/compiler/docs/compilation_levels)を参照してください。
 
-#### システムのデフォルト縮小ツールの設定  {#set-system-default-minifier}
+#### システムのデフォルト縮小ツールの設定 {#set-system-default-minifier}
 
 YUI は、AEM のデフォルト縮小ツールとして設定されています。これを GCC に変更するには、次の手順に従います。
 
