@@ -86,7 +86,7 @@ AEM のコンテンツ翻訳機能の概要については、[多言語サイト
 </node>
 ```
 
-## ページからアセットを抽出するルールの構文      {#rule-syntax-for-extracting-assets-from-pages}
+## ページからアセットを抽出するルールの構文  {#rule-syntax-for-extracting-assets-from-pages}
 
 次に示すルールの構文を使用して、コンポーネントに埋め込むアセットまたはコンポーネントから参照するアセットを追加します。
 
