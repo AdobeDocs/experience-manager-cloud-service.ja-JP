@@ -21,7 +21,7 @@ ht-degree: 76%
 
 ## サポートされるワークフロー {#migration-support-for-workflows}
 
-ワークフローは、さまざまなレベルの移行サポートを備えています。こちらの[特定のワークフローのリスト](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)を参照してください。ワークフローは、提供されるサポートに基づいて次のカテゴリに分類されます。アドビでは、`SUPPORTED`、`REQUIRED`、または `OPTIONAL` カテゴリに一覧表示されているワークフローの移行がサポートされています。他のカテゴリで説明されているワークフロー手順はサポートされていません。
+ワークフローは、様々なレベルの移行サポートを備えています。こちらの[特定のワークフローのリスト](https://github.com/adobe/aem-cloud-migration/blob/master/src/main/resources/workflowSteps.properties)を参照してください。ワークフローは、提供されるサポートに基づいて次のカテゴリに分類されます。アドビでは、`SUPPORTED`、`REQUIRED`、または `OPTIONAL` カテゴリに一覧表示されているワークフローの移行がサポートされています。他のカテゴリで説明されているワークフロー手順はサポートされていません。
 
 * `SUPPORTED`：[!DNL Experience Manager Assets] as a Cloud Service でサポートされる機能です。
 * `OPTIONAL`：[!DNL Experience Manager Assets] as a Cloud Service のオプション機能です。
@@ -32,7 +32,7 @@ ht-degree: 76%
 * `NUI_MIGRATED`：[アセット計算サービスの処理プロファイル](/help/assets/asset-microservices-configure-and-use.md)に移行済みです。
 * `UNSUPPORTED`：現在、[!DNL Experience Manager Assets] as a Cloud Service ではサポートされていません。
 
-## アセットワークフロー移行ツール{#use-workflow-migrator}を使用
+## アセットワークフロー移行ツールを使用 {#use-workflow-migrator}
 
 * **[!DNL Adobe I/O]CLI**:Adobeは、 （CLIのコードリファクタリングプラグインとして）を介し `aio-cli-plugin-aem-cloud-service-migration` てAsset Workflow Migration[!DNL Experience Manager] ツールを使用 [!DNL Cloud Service] することをお勧 [!DNL Adobe I/O] めします。このプラグインをインストールして使用する方法については、[Gitリソースを参照してください。aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)。
 
