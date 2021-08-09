@@ -1,11 +1,11 @@
 ---
 title: ヘッドレス設定の作成クイック開始ガイド
-description: AEM as aCloud Serviceでヘッドレスを使い始めるための最初の手順として設定を作成します。
+description: AEM as a Cloud Service でヘッドレスを使い始めるための最初の手順として設定を作成します。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
