@@ -1,18 +1,18 @@
 ---
 title: AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ
-description: GraphQLをAEMと共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を学びます。
-feature: コンテンツフラグメント，GraphQL API
+description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
+feature: コンテンツフラグメント、GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
-GraphQLをAEMと共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を学びます。
+GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 
 >[!NOTE]
 >
@@ -602,9 +602,9 @@ query {
 }
 ```
 
-### サンプルクエリ — `_path`が特定のプレフィックス{#sample-wknd-all-adventures-cycling-path-filter}で始まるすべてのアドベンチャー
+### サンプルクエリ - `_path` が特定のプレフィックスで始まるすべてのアドベンチャー {#sample-wknd-all-adventures-cycling-path-filter}
 
-`_path`が特定のプレフィックス(`/content/dam/wknd/en/adventures/cycling`)で始まるすべての`adventures`。
+`_path` が特定のプレフィックス（`/content/dam/wknd/en/adventures/cycling`）で始まるすべての `adventures`。
 
 **サンプルクエリ**
 
@@ -710,7 +710,7 @@ query {
 }
 ```
 
-### サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合） {#sample-all-cities-san-ignore-case}
+### サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合）{#sample-all-cities-san-ignore-case}
 
 このクエリでは、名前に `SAN` が含まれるすべての都市を、大文字と小文字を区別せずに検索します。
 
@@ -1508,7 +1508,7 @@ RTE インライン参照は、`_references` 内に含まれます。
 
 * 上記のモデルに基づく[サンプルコンテンツフラグメント](#sample-content-fragments)
 
-### サンプルコンテンツフラグメントモデル（スキーマ） {#sample-content-fragment-models-schemas}
+### サンプルコンテンツフラグメントモデル（スキーマ）{#sample-content-fragment-models-schemas}
 
 サンプルクエリでは、次のコンテンツモデルとその相互関係（参照関係「->」）を使用します。
 
@@ -1526,7 +1526,7 @@ RTE インライン参照は、`_references` 内に含まれます。
 |--- |--- |--- |
 | name（会社名） | 1 行のテキスト |  |
 | ceo（最高経営責任者） | フラグメント参照（1 つ） | [Person](#model-person) |
-| employees（従業員） | フラグメント参照（複数フィールド） | [ユーザー](#model-person) |
+| employees（従業員） | フラグメント参照（複数フィールド） | [Person](#model-person) |
 
 #### Person {#model-person}
 
@@ -1562,7 +1562,7 @@ RTE インライン参照は、`_references` 内に含まれます。
 
 適切なモデルでは次のフラグメントが使用されます。
 
-#### 会社{#fragment-company}
+#### Company {#fragment-company}
 
 | name | ceo | employees |
 |--- |--- |--- |
@@ -1570,7 +1570,7 @@ RTE インライン参照は、`_references` 内に含まれます。
 |  Little Pony, Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### ユーザー{#fragment-person}
+#### Person {#fragment-person}
 
 | name | firstName | awards |
 |--- |--- |--- |
@@ -1583,15 +1583,15 @@ RTE インライン参照は、`_references` 内に含まれます。
 | Caulfield |  Max |  Gameblitz |
 |  Jobs |  Steve |   |
 
-#### 賞{#fragment-award}
+#### Award {#fragment-award}
 
 | id | title |
 |--- |--- |
 | GB | Gameblitz |
-|  GS | 配偶星 |
+|  GS | Gamestar |
 |  OSC | Oscar |
 
-#### 市区町村{#fragment-city}
+#### City {#fragment-city}
 
 | name | country | population | categories |
 |--- |--- |--- |--- |
@@ -1599,6 +1599,6 @@ RTE インライン参照は、`_references` 内に含まれます。
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
 | Bucharest | Romania | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San Jose |  米国 |  102635 |  city:na |
+| San Jose |  USA |  102635 |  city:na |
 | Stuttgart |  Germany |  634830 |  city:emea |
 |  Zurich |  Switzerland |  415367 |  city:capital<br>city:emea |
