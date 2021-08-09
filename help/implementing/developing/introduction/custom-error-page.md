@@ -3,7 +3,7 @@ title: カスタムエラーページ
 description: AEM には、HTTP エラーを処理するための標準的なエラーハンドラーが付属しており、これはカスタマイズできます。
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ AEM には、HTTP エラーを処理するための標準的なエラーハン�
    * コピー元：`/libs/sling/servlet/errorhandler/`
    * コピー先：`/apps/sling/servlet/errorhandler/`
 
-   コピー先のパスはデフォルトでは存在しないので、この操作を初めておこなう際は作成する必要があります。
+   コピー先のパスはデフォルトでは存在しないので、この操作を初めて行う際は作成する必要があります。
 
 1. `/apps/sling/servlet/errorhandler` に移動します。次のどちらかを実行します。
 
@@ -55,7 +55,7 @@ AEM には、HTTP エラーを処理するための標準的なエラーハン�
 
 HTTP [500 内部サーバーエラー](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)は、サーバーで予期しない状況が発生したのでリクエストを処理できないといった、サーバーサイドエラーを示しています。
 
-リクエストの処理で例外が発生した場合、Apache Sling フレームワーク（AEM の基盤）は以下をおこないます。
+リクエストの処理で例外が発生した場合、Apache Sling フレームワーク（AEM の基盤）は以下を行います。
 
 * 例外をログに記録します。
 * 応答の本文で次のものを返します。
