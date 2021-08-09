@@ -5,7 +5,7 @@ exl-id: b89156a8-3d7d-4d36-89a2-beeda35bbc01
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 
 * `ui.apps` パッケージは `/apps` にデプロイされ、すべてのコードが含まれます。
 
-* `ui.content` パッケージは、実行時に書き込み可能な領域にデプロイされます(例： `/content`、 `/conf`、 `/home`またはそれ以外のもの)を含み、すべての `/apps`コンテンツと設定が含まれます。
+* `ui.content` パッケージは実行時に書き込み可能な領域（例：`/content`、 `/conf`、`/home`のいずれか、または `/apps` 以外）にデプロイされ、すべてのコンテンツと設定が含まれます。
 
 * `all` パッケージは、`ui.apps` サブパッケージおよび `ui.content` サブパッケージを含むコンテナパッケージです。
 
@@ -34,7 +34,7 @@ Repository Modenizer は、次のデプロイメント構造を作成するこ�
 
 * Adobe I/O CLI 経由：`aio-cli-plugin-aem-cloud-service-migration`（AEM as a Cloud Service の Adobe I/O CLI 用のコードリファクタリングプラグイン）を介して Repository Modenizer を使用することをお勧めします。
 
-   プラグインをインストールして使用する方法について詳しくは、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
+   このプラグインをインストールして使用する方法については、**[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** を参照してください。
 
 * スタンドアロンユーティリティとして：Repository Modernizer は、スタンドアロンユーティリティとして実行することもできます。
 
