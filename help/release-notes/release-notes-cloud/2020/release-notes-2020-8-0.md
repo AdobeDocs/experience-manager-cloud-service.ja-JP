@@ -9,14 +9,14 @@ ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート  {#release-notes}
 
 Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノートの概要を次に説明します。
 
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites] の新機能 {#what-is-new-sites}
+### [!DNL Sites] の新機能  {#what-is-new-sites}
 
 * [ページとサブページ（ページツリー）を以前のバージョンに戻す](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions)機能。
 
@@ -25,11 +25,11 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
+### [!DNL Assets] の新機能  {#what-is-new-assets}
 
 * アセットマイクロサービスでビデオのトランスコーディングがサポートされるようになりました。[!UICONTROL 処理プロファイル]設定の新しいセクションで、ビデオのビットレートとサイズを設定できます。出力形式は、H.264 コーデックを使用した MP4 です。詳しくは、[ビデオアセットの管理](/help/assets/manage-video-assets.md#transcode-video)を参照してください。その他のトランスコーディングオプションとビデオ配信については、[!DNL Dynamic Media] アドオンを使用してください。
 
-* 新しい Adobe [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。[!DNL Adobe Developer Console] と手動で統合する必要はありません。既存のデプロイメントでは、管理者が以前と同様にスマートタグ統合の設定をおこないます。
+* 新しい Adobe [!DNL Experience Manager Assets] デプロイメントでは、スマートタグ機能がデフォルトで設定されるようになりました。[!DNL Adobe Developer Console] と手動で統合する必要はありません。既存のデプロイメントでは、管理者が以前と同様にスマートタグ統合の設定を行います。
 
 * 新しい[アセットダウンロードエクスペリエンス](/help/assets/download-assets-from-aem.md)には以下の特長があります。
 
@@ -55,7 +55,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * [!DNL AEM Desktop app] 2.0.3 リリースがリリースされました。[!DNL Experience Manager] 6.5.5 サービスパックとの互換性が向上し、クライアント OS の互換性リストが更新されました。[!DNL Windows] 7 とバージョン 10.14 より前の [!DNL macOS] はサポートされていません。
 
-### [!DNL Assets] で修正されたバグ {#bugs-fixed}
+### [!DNL Assets] で修正されたバグ  {#bugs-fixed}
 
 * 「関連付け」と「関連付けを解除」のオプションが、初めてクリックしたときに応答しない。（CQ-4299022）
 * アセットをダウンロードする際に電子メールで受け取るオプションを選択した場合、電子メールが送信されない。（CQ-4299146）
@@ -72,7 +72,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 ### リリース日 {#release-date-cm}
 
-[!UICONTROL Cloud Manager] バージョン 2020.8.0 のリリース日は 2020 年 8 月 06 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.8.0 のリリース日は 2020 年 8 月 6 日（PT）です。
 
 ### 新機能 {#what-is-new-cloud-manager}
 
