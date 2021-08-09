@@ -3,7 +3,7 @@ title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 問題が発生している場合は、システム管理者にお問い合わせください。
 
-## エクスペリエンスフラグメントを使用するタイミング    {#when-should-you-use-experience-fragments}
+## エクスペリエンスフラグメントを使用するタイミング{#when-should-you-use-experience-fragments}
 
 エクスペリエンスフラグメントは次の場合に使用します。
 
@@ -68,7 +68,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 
 * [これらのフォルダーで使用可能なテンプレートを設定する](#configure-allowed-templates-folder)。
 
-フォルダーを作成すると、次の操作をおこなうことができます。
+フォルダーを作成すると、次の操作を行うことができます。
 
 * エクスペリエンスフラグメントにとって意味のある構造（例：分類に従った構造）を作成する。
 
@@ -197,7 +197,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 1. 必要なコンポーネントを[コンポーネントブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)からドラッグ＆ドロップします。
 
-1. コンポーネントに応じて以下をおこないます。
+1. コンポーネントに応じて以下を行います。
    * コンテンツやアセットを必要に応じて追加します。
    * プロパティを必要に応じて設定します。
 
@@ -282,9 +282,9 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 #### 構築ブロックの管理 {#managing-a-building-block}
 
-構築ブロックは、「**構築ブロック**」タブに表示されます。各ブロックでは、次の操作をおこなえます。
+構築ブロックは、「**構築ブロック**」タブに表示されます。各ブロックでは、次の操作を行えます。
 
-* ****&#x200B;マスターに移動（マスターバリエーションを新しいタブで開く）
+* **マスターに移動**（マスターバリエーションを新しいタブで開く）
 * **名前を変更**
 * **削除**
 
@@ -350,7 +350,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 >
 >ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
-## エクスペリエンスフラグメントの書き出し  {#exporting-experience-fragments}
+## エクスペリエンスフラグメントの書き出し{#exporting-experience-fragments}
 
 デフォルトでは、エクスペリエンスフラグメントは HTML 形式で配信され、AEM とサードパーティチャネルのどちらでも同じように使用できます。
 
