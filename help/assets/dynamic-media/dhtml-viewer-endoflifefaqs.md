@@ -14,4 +14,4 @@ ht-degree: 100%
 
 2014 年 1 月 31 日をもって、DHTML ビューアプラットフォームは正式にサポート終了となりました。
 
-サポートされている最新のビューアについては、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)を参照してください。
+サポートされている最新のビューアについては、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja)を参照してください。
