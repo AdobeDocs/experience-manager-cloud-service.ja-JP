@@ -3,7 +3,7 @@ title: 'IP 許可リストの追加 '
 description: IP 許可リストの追加
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '154'
 ht-degree: 100%
 
