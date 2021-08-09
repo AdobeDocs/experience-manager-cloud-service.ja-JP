@@ -6,7 +6,7 @@ user-guide-description: このガイドでは、この新しいサービスの�
 feature: リリース情報
 role: Architect
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
