@@ -3,7 +3,7 @@ title: KPI へのアクセス
 description: KPI へのアクセス
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
 ht-degree: 100%
 
