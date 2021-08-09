@@ -9,7 +9,7 @@ ht-degree: 99%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート  {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service 2020.9.0 の一般的なリリースノートの概要を次に説明します。
 
@@ -19,13 +19,13 @@ ht-degree: 99%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites] の新機能 {#what-is-new-sites}
+### [!DNL Sites] の新機能  {#what-is-new-sites}
 
 * 単一ページアプリケーション（SPA）エディター JavaScript SDK が[オープンソース](/help/implementing/developing/hybrid/reference-materials.md)になりました。
 
 ## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
+### [!DNL Assets] の新機能  {#what-is-new-assets}
 
 * 透かし画像ファイルは、アセットマイクロサービスで生成されるレンディションでサポートされています。処理プロファイルとして設定でき、透かしとして PNG ファイルを使用します。「[アセットの透かしの設定](/help/assets/watermark-assets.md)」を参照してください。
 
@@ -68,7 +68,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### リリース日 {#release-date-cm}
 
-[!UICONTROL Cloud Manager] バージョン 2020.9.0 のリリース日は 2020 年 9 月 03 日です。
+[!UICONTROL Cloud Manager] バージョン 2020.9.0 のリリース日は 2020 年 9 月 3 日（PT）です。
 
 ### 新機能 {#what-is-new-cloud-manager}
 
