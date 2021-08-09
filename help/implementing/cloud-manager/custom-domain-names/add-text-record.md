@@ -3,7 +3,7 @@ title: TXT レコードの追加
 description: カスタムドメイン名の追加
 exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: 4903f97c1bf0e7c8e96d604feb005d9611a7d9bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
 ht-degree: 100%
 
