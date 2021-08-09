@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service のオーバーレイ
 description: AEM as a Cloud Service は、オーバーレイという原理を利用して、開発者がコンソールおよびその他の機能を拡張し、カスタマイズできるようにします
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 オーバーレイは様々なコンテキストで使用される用語です。このコンテキスト（AEM as a Cloud Service の拡張）では、オーバーレイとは、「事前定義済みの機能に対して独自の定義を強制的に付加する（標準の機能をカスタマイズする）こと」を表します。
 
-標準インスタンスでは、定義済みの機能は `/libs` に保持され、（リソースを解決する[検索パス](#search-paths)を使用して）`/apps` ブランチの下にオーバーレイ（カスタマイズ）を定義することをお勧めします。
+標準インスタンスでは、定義済みの機能は `/libs` に保持され、（リソースを解決する[検索パス](#search-paths)を使用して）`/apps`ブランチの下にオーバーレイ（カスタマイズ）を定義することをお勧めします。
 
 * タッチ対応 UI は [Granite](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) 関連のオーバーレイを使用します。
 
@@ -40,7 +40,7 @@ Adobe Experience Manager as a Cloud Service uses the principle of overlays to al
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) および関連する手法は、[Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) と併用する場合に限り使用できます。つまり、オーバーレイをスケルトン構造で作成する方法は、標準のタッチ操作対応 UI でのみ使用できます。
+>[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) および関連する手法は、[Granite](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) と併用する場合に限り使用できます。つまり、オーバーレイをスケルトン構造で作成する方法は、標準のタッチ操作対応 UI でのみ使用できます。
 
 オーバーレイは、コンソールの設定、サイドパネル内にあるアセットブラウザーへの選択カテゴリの作成（ページのオーサリング時に使用）など、多くの変更において推奨される方法です。オーバーレイは、次の理由で必要になります。
 
