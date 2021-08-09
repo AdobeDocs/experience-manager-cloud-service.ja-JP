@@ -3,7 +3,7 @@ title: プログレッシブ Web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ Web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
 ht-degree: 100%
 
@@ -21,8 +21,10 @@ ht-degree: 100%
 >* サイトとコンテンツ構造に関する知識
 >* キャッシュ方法の理解
 >* 開発チームによるサポート
+
 >
->この機能を使用する前に、開発チームに相談して、プロジェクトに最適な利用方法を決めることをお勧めします。
+>
+この機能を使用する前に、開発チームに相談して、プロジェクトに最適な利用方法を決めることをお勧めします。
 
 >[!NOTE]
 >
@@ -30,7 +32,7 @@ ht-degree: 100%
 
 ## はじめに {#introduction}
 
-[プログレッシブ Web アプリケーション（PWA）](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps) を使用すると、AEM サイトのアプリケーションのような臨場感のあるエクスペリエンスを、ユーザーのコンピューターにローカルに保存し、オフラインでアクセスできるようになります。インターネット接続が切れた場合でも、外出中にサイトを閲覧できます。PWA を使用すると、ネットワークが失われたり不安定な状態になった場合でも、シームレスなエクスペリエンスを維持できます。
+[プログレッシブ Web アプリケーション（PWA）](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps)を使用すると、AEM サイトのアプリケーションのような臨場感のあるエクスペリエンスを、ユーザーのコンピューターにローカルに保存し、オフラインでアクセスできるようになります。インターネット接続が切れた場合でも、外出中にサイトを閲覧できます。PWA を使用すると、ネットワークが失われたり不安定な状態になった場合でも、シームレスなエクスペリエンスを維持できます。
 
 コンテンツ作成者は、サイトの再コーディングは必要なく、サイトの[ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)の追加タブとして PWA プロパティを設定できます。
 
@@ -45,7 +47,7 @@ PWA では、ユーザーはサイトのローカルコピーを保持するの�
 
 ## 前提条件 {#prerequisites}
 
-サイトで PWA 機能を使用するには、プロジェクト環境に必要な要件が ２ つあります。
+サイトで PWA 機能を使用するには、プロジェクト環境に必要な要件が 2 つあります。
 
 1. [コアコンポーネント](#adjust-components)を使用してこの機能を利用する
 1. [Dispatcher ルールを調整](#adjust-dispatcher)して、必要なファイルを公開する
@@ -54,7 +56,7 @@ PWA では、ユーザーはサイトのローカルコピーを保持するの�
 
 ### コアコンポーネントを使用する {#adjust-components}
 
-コアコンポーネントリリース 2.15.0 以降は、AEM Sites の PWA 機能を完全にサポートしています。AEMaaCS には常に最新バージョンのコアコンポーネントが含まれているので、標準搭載のPWA 機能を活用できます。AEMaaCS プロジェクトは、この要件を自動的に満たします。
+コアコンポーネントリリース 2.15.0 以降は、AEM Sites の PWA 機能を完全にサポートしています。AEMaaCS には常に最新バージョンのコアコンポーネントが含まれているので、標準搭載の PWA 機能を活用できます。AEMaaCS プロジェクトは、この要件を自動的に満たします。
 
 >[!NOTE]
 >
@@ -136,7 +138,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 これで、[PWA をサポートするようにサイトを設定できたので、](#enabling-pwa-for-your-site)体験してみてください。
 
-1. [サポートされているブラウザー](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
+1. [サポートされているブラウザー](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
 1. ブラウザーのアドレスバーに新しいアイコンが表示され、サイトがローカルアプリケーションとしてインストールできることが示されます。
    * ブラウザーによってアイコンは異なり、ローカルアプリケーションとしてインストールできることを示す通知（バナーやダイアログボックスなど）が表示される場合もあります。
 1. AEM Desktop App をインストールします。
@@ -180,7 +182,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * アイコンは、サイズが 512x512 ピクセルの png ファイルである必要があります。
    * アイコンは [DAM に保存](/help/assets/overview.md)されている必要があります。
 
-### キャッシュ管理（詳細） {#offline-configuration}
+### キャッシュ管理（詳細）{#offline-configuration}
 
 これらの設定により、このサイトの一部はオフラインで使用できるようになり、訪問者のデバイスでローカルに使用できるようになります。Web アプリケーションのキャッシュを制御してネットワークリクエストを最適化し、オフラインエクスペリエンスをサポートできます。
 
