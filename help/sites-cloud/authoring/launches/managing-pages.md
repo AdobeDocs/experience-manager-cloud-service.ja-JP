@@ -3,7 +3,7 @@ title: ローンチでのページの管理
 description: ローンチ内に新しいページを作成できます。また、不要なページを削除することもできます。
 exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '290'
 ht-degree: 100%
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 ## ローンチにページを追加する {#add-pages-to-launch}
 
-ローンチに新しいページを追加するには、以下をおこないます。
+ローンチに新しいページを追加するには、以下を行います。
 
 1. [ローンチの目的の場所に移動します](#navigate-structure-of-launch)。
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 ## ローンチからページを削除する {#remove-pages-from-launch}
 
-ローンチからページを削除するには、以下をおこないます。
+ローンチからページを削除するには、以下を行います。
 
 1. [ローンチの目的の場所に移動します](#navigate-structure-of-launch)。
 
