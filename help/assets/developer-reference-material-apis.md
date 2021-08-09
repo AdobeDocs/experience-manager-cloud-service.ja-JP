@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Assets] の開発者向けリファレンス'
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
+description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
 feature: API、Assets HTTP API
 role: Developer,Architect,Admin
