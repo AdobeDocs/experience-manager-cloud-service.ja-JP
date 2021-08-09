@@ -3,7 +3,7 @@ title: 'カスタムドメイン名の SSL 証明書の更新 '
 description: カスタムドメイン名の SSL 証明書の更新
 exl-id: 652f7568-dc6a-4ac6-b06f-4ea1540498fa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
 ht-degree: 100%
 
