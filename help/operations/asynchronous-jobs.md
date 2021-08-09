@@ -3,7 +3,7 @@ title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクを非同期的に処理することでパフォーマンスを最適化します。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '882'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 1. 「**電子メール通知を有効にする**」オプションを選択すると、このジョブステータスに関する電子メール通知を受信できます（例：成功、失敗）。
 1. 変更内容を保存します。
 
-### 非同期ページ移動操作の設定  {#configuring-asynchronous-page-move-operations}
+### 非同期ページ移動操作の設定 {#configuring-asynchronous-page-move-operations}
 
 移動するページへの参照数がしきい値を超えると、移動操作は非同期に実行されます。
 
