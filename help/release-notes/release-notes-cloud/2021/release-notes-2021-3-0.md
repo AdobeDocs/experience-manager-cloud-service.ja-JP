@@ -1,15 +1,15 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート。'
-source-git-commit: 3ff105507f4d42f5858a7e3a4c703d9135b36e5b
+exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -22,18 +22,17 @@ ht-degree: 61%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager]のCloud Service2021.3.0のリリース日は2021年3月25日です。
-次のリリース(2021.4.0)は、2021年4月30日に予定されています。
+[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリース日は 2021 年 3 月 25 日です。次回のリリース（2021.4.0）は、2021 年 4 月 29 日に予定されています。
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * 簡単な設定で、[プログレッシブ Web アプリ（PWA）版のサイト](/help/sites-cloud/authoring/features/enable-pwa.md)がプロジェクトレベルで有効化できるようになりました。
-* コンテンツフラグメントモデルの拡張 — 複数行テキストデータタイプを複数フィールドリストとして定義できるようになりました。
-* コンテンツフラグメントエディターのUXの強化 — パンくずリストにネストされた子フラグメントが表示され、公開、保存、保存および終了のアクションの表示が改善されました
+* コンテンツフラグメントモデルの拡張 - 複数行テキストデータタイプを複数フィールドリストとして定義できるようになりました。
+* コンテンツフラグメントエディターの UX の強化 - パンくずリストにネストされた子フラグメントが表示され、公開、保存、保存および終了のアクションの表示が改善されました。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
+### [!DNL Assets] の新機能  {#what-is-new-assets}
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
@@ -45,32 +44,32 @@ Ability to select a root path. select if a minimum number of tags is required.
 
 Add a Boolean or radio widget type to metadata schema setup. -->
 
-* [!DNL Experience Manager] は、Connected Assets機能を拡張して、サポートされるコアコンポーネ [!DNL Dynamic Media] ントでの画像の使用をサポートします。[Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)の使用を参照してください。
-* Experience Manager管理者は、特定の日時に一括アセット取り込みのスケジュールを設定できます。 また、管理者は、日時に基づいて定期的な取り込みのスケジュールを設定できます。 [一括アセット取り込み](/help/assets/add-assets.md#asset-bulk-ingestor)を参照してください。
+* [!DNL Experience Manager] は、Connected Assets 機能を拡張して、サポートされるコアコンポーネントでの [!DNL Dynamic Media] 画像の使用をサポートします。「[Connected Assets の使用](/help/assets/use-assets-across-connected-assets-instances.md)」を参照してください。
+* Experience Manager 管理者は、特定の日時に一括アセット取得のスケジュールを設定できます。また、管理者は、日時に基づいて定期的な取得のスケジュールを設定できます。「[一括アセット取得](/help/assets/add-assets.md#asset-bulk-ingestor)」を参照してください。
 
-### [!DNL Assets] のバグ修正 {#bug-fixes-assets}
+### [!DNL Assets] のバグ修正  {#bug-fixes-assets}
 
-* 著作権ページは、権限が管理された複数のアセットをダウンロードしようとしても表示されません。 （CQ-4314403）
-* INDDファイルの編集を選択した場合、解像度が予期せず変更されます。 （CQ-4317376）
-* PDFレンディションには、InDesignテンプレートの最後のページのみが含まれます。 （CQ-4317305）
-* ピッカーが複雑なメタデータスキーマに含まれている場合、タグピッカーが開くのに時間がかかります。 （CQ-4316426）
-* 既存のファイル名と同じファイル名を持つアセットをアップロードする場合、名前の競合ダイアログが表示されず、バージョンを作成するように求められます。 （CQ-4315424）
-* フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。 選択内容はリポジトリに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。 （CQ-4314429）
-* スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。 （CQ-4318381）
+* 権限が管理された複数のアセットのダウンロードを試行している際には著作権ページが表示されません。（CQ-4314403）
+* INDD ファイルの編集を選択した場合、解像度が予期せず変更されます。（CQ-4317376）
+* PDF レンディションには、InDesign テンプレートの最後のページのみが含まれます。（CQ-4317305）
+* ピッカーが複雑なメタデータスキーマに含まれている場合、タグピッカーが開くのに時間がかかります。（CQ-4316426）
+* 既存のファイル名と同じファイル名を持つアセットをアップロードする場合、名前の競合ダイアログが表示されず、バージョンを作成するように求められます。（CQ-4315424）
+* フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。選択内容はリポジトリーに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
+* スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。（CQ-4318381）
 
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
-AEM Formsは、多くの組織が長年にわたって素晴らしいオンボーディングと登録の経験を提供するのを支援してきました。 これらのエクスペリエンスは、組織がリードを販売に変換し、取り込んだ顧客データを処理し、オーディエンスプロファイルに基づいてレスポンシブなエクスペリエンスを提供するのに役立ちました。 現在、AEM Formsはas a Cloud Serviceとして使用できます。
+AEM Forms は、長年にわたって、優れたオンボーディングと登録のエクスペリエンスの提供で、多くの組織を支援してきました。これらのエクスペリエンスは、組織がリードを売上にコンバージョンしたり、取得した顧客データを処理したり、オーディエンスプロファイルに基づいてレスポンシブなエクスペリエンスを提供するのに役立っています。現在、AEM Forms はクラウドサービスとして提供されています。
 
-[AEM FormsをCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)として使用して、デジタルフォームの作成、既存のデータソースへのフォームの接続、Adobe Signとのフォームの統合、フォームへの電子署名の追加、レコードのドキュメント(DoR)の生成を行い、送信されたフォームをPDFファイルとしてアーカイブできます。 また、変換サービスを使用して、既存のPDF formsをデジタルフォームに変換することもできます。 このサービスは、AEM Formsの標準的な機能に加えて、自動スケーリング、アップグレードのダウンタイムなし、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。 AEM Forms as aCloud Serviceの機能については、[このブログ記事](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)を参照してください。
+[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=ja) を使用して、デジタルフォームを作成したり、フォームを既存のデータソースに接続したり、フォームを Adobe Sign と統合して電子サインをフォームに追加したり、送信されたフォームを PDF ファイルとしてアーカイブするためにレコードのドキュメント（DoR）を生成したりできます。また、既存の PDF フォームをデジタルフォームに変換することもできます。このサービスは、AEM Forms の標準的な機能に加えて、自動スケーリング、ダウンタイムなしアップグレード、クラウドネイティブ開発環境など、いくつかのクラウドネイティブ機能を提供します。AEM Forms as a Cloud Service の機能については、[このブログ記事](https://blog.adobe.com/en/publish/2021/03/11/experience-manager-forms-as-a-cloud-service.html)を参照してください。
 
-デモを受ける場合は、Adobe担当者に問い合わせるか、サービスに新規登録してください。
+デモが必要な場合は、アドビ担当者に問い合わせるか、サービスに登録してください。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新機能 {#what-is-new-commerce}
 
-* Magento2.4.2のサポート
+* Magento 2.4.2 のサポート
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 
@@ -94,8 +93,8 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 * 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下をおこなえるようになりました。
 
-   * Assetsを使用する既存のプログラムにSitesソリューションを追加する（またはその逆）。
-   * SitesとAssetsの両方を含む既存のプログラムからSitesまたはAssetsを削除します。
+   * Assets を使用している既存のプログラムに Sites サイトソリューションを追加する（またはその逆）。
+   * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
    * 使用されていない 2 つ目のソリューション使用権限を既存のプログラムに追加するか、新しいプログラムとして追加する。
 
 * *パイプラインの実行*&#x200B;画面と&#x200B;*アクティビティ*&#x200B;画面の両方に **AEM プッシュアップデート**&#x200B;ラベルが表示されるようになりました。
@@ -134,11 +133,11 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツールv1.3.4のリリース日は2021年3月20日です。
+コンテンツ転送ツール v1.3.4 のリリース日は 2021 年 3 月 19 日です。
 
 ### バグ修正 {#bug-fixes-ctt}
 
-* CTTが、同じ名前で名前にハイフンを含むフォルダーのコンテンツをスキップしていた問題を修正しました。 この問題が修正されました。
+* CTT が、名前が同じでも、名前にハイフンを含むフォルダーのコンテンツをスキップしていた問題を修正しました。この問題が修正されました。
 
 ### リリース日 {#release-date-ctt-march}
 
@@ -157,11 +156,11 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### リリース日 {#release-date-bpa}
 
-Best Practices Analyzer v2.1.8のリリース日は2021年3月23日です。
+ベストプラクティスアナライザー v2.1.8 のリリース日は 2021 年 3 月 22 日です。
 
 ### ベストプラクティスアナライザーの新機能 {#what-is-new-bpa}
 
-* UIのBPAレポートと、CSVファイルとしてエクスポートされたレポートから、ACS Commonsの結果を除外する機能。
+* UI の BPA レポートと、CSV ファイルとしてエクスポートされたレポートから、ACS Commons の結果を除外する機能。
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
