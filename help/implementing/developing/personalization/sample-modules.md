@@ -3,7 +3,7 @@ title: ContextHub UI モジュールタイプのサンプル
 description: ContextHub には、ソリューションで利用できる UI モジュールのサンプルが用意されています
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1126'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ContextHub には、ソリューションで利用できる UI モジュール�
 
 UI モジュールの ContextHub への追加については、[UI モジュールの追加](configuring-contexthub.md#adding-a-ui-module)を参照してください。UI モジュールの作成については、[ContextHub UI モジュールタイプの作成](extending-contexthub.md#creating-contexthub-ui-module-types)を参照してください。
 
-## contexthub.base UI モジュールタイプ  {#contexthub-base-ui-module-type}
+## contexthub.base UI モジュールタイプ{#contexthub-base-ui-module-type}
 
 contexthub.base UI モジュールタイプは、その他すべての UI モジュールタイプのベースタイプです。したがって、ストアデータをレンダリングするための汎用的な機能を提供します。
 
@@ -92,7 +92,7 @@ contexthub.browserinfo UI モジュールのインスタンスには、詳細設
 }
 ```
 
-## contexthub.datetime UI モジュールタイプ  {#contexthub-datetime-ui-module-type}
+## contexthub.datetime UI モジュールタイプ{#contexthub-datetime-ui-module-type}
 
 `contexthub.datetime` UI モジュールは、`contexthub.datetime` ストア候補をベースとする、datetime という名前のストアに格納されている日時を表示します。
 
@@ -160,7 +160,7 @@ contexthub.location UI モジュールのインスタンスには、詳細設定
 }
 ```
 
-## contexthub.screen-orientation UI モジュールタイプ  {#contexthub-screen-orientation-ui-module-type}
+## contexthub.screen-orientation UI モジュールタイプ{#contexthub-screen-orientation-ui-module-type}
 
 `contexthub.screen-orientation` UI モジュールは、クライアントの現在の画面の向きを表示します。デフォルトでは無効になっていますが、このモジュールは向きを選択できるポップオーバーを提供します。このモジュールは、[granite.emulators](sample-stores.md#granite-emulators-sample-store-candidate) ストア候補をベースとする、emulators という名前の ContextHub ストアから情報を取得します。
 
@@ -208,7 +208,7 @@ UI モジュールのソースは `/libs/granite/contexthub/components/modules/t
 }
 ```
 
-## granite.profile UI モジュールタイプ  {#granite-profile-ui-module-type}
+## granite.profile UI モジュールタイプ{#granite-profile-ui-module-type}
 
 `granite.profile` ContextHub UI モジュールは、現在のユーザーの表示名を表示します。ポップアップにはユーザーのログイン名が表示され、表示名の値を変更できます。この UI モジュールは、[granite.profile](sample-stores.md#granite-profile-sample-store-candidate) ストア候補をベースとする、profile という名前の ContextHub ストアから情報を取得します。
 
