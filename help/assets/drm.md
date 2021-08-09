@@ -120,7 +120,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
-> の以前のリリースにライセンスを保存するために使用されていた場所 `/etc/dam/drm/licences` は非推奨（廃止予定）となりました。[!DNL Experience Manager]
+>の以前のリリースにライセンスを保存するために使用されていた場所 `/etc/dam/drm/licences` は非推奨（廃止予定）となりました。[!DNL Experience Manager]
 >
 >ライセンスページを作成または変更する場合、または [!DNL Experience Manager] の以前のリリースから移植する場合は、ライセンスページを `/apps/settings/dam/drm/licenses` または `/conf/*/settings/dam/drm/licenses` に保存することをお勧めします。
 
