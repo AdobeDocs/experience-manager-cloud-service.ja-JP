@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート  {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12 月 10 日です。
 
-### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
+### [!DNL Cloud Manager] の新機能  {#what-is-new-cm}
 
 * [SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)と[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/introduction.md)のセルフサービス管理。
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
-### [!DNL Code Refactoring Tools] の新機能 {#what-is-new-crt}
+### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。このプラグインの詳細については、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
 
@@ -77,7 +77,7 @@ AEM as a Cloud Service 2020.12.0 Cloud Manager のリリース日は 2020 年 12
 
 コンテンツ転送ツール v1.1.20 のリリース日は 2021 年 1 月 8 日です。
 
-### [!DNL Content Transfer Tool] の新機能 {#what-is-new-ctt}
+### [!DNL Content Transfer Tool] の新機能  {#what-is-new-ctt}
 
 * コンテンツ転送ツール（CTT）ユーザーインターフェイスのステータスアイコンにマウスポインターを置くと、アクセストークンの有効期限が切れたかどうかを確認できます。また、移行セットの詳細 UI で、Cloud Service インスタンスに接続できないことが通知されます。
 
