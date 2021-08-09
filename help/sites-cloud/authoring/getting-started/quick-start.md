@@ -3,7 +3,7 @@ title: ページのオーサリングのクイックスタートガイド
 description: ページコンテンツのオーサリングに初めて取り組む際に役立つ概要レベルのクイックガイドです。
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 >オーサリング作業をより簡単にできる多くのキーボードショートカットがあります。
 >
 >* [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
->* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### ページの検索 {#finding-your-page}
@@ -83,7 +83,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 1. [新しいページの作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)に必要な情報を収集するためのウィザードが開きます。画面に表示される手順に従ってください。
 
-### その他のアクションを実行するページの選択  {#selecting-your-page-for-further-action}
+### その他のアクションを実行するページの選択{#selecting-your-page-for-further-action}
 
 アクションを実行するページを選択できます。ページを選択するとツールバーが自動的に更新され、そのリソースに関連するアクションが表示されます。
 
@@ -107,7 +107,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    ![カードの例](/help/sites-cloud/authoring/assets/card.png)
 
-### クイックアクション（カード表示／デスクトップのみ） {#quick-actions-card-view-desktop-only}
+### クイックアクション（カード表示／デスクトップのみ）{#quick-actions-card-view-desktop-only}
 
 次のようにして、[クイックアクション](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)を使用できます。
 
@@ -159,10 +159,8 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * コンポーネントを[コピー（および貼り付け）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)します。
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。必要に応じて、**コピー**&#x200B;アイコン、続いて&#x200B;**貼り付け**&#x200B;アイコンを使用します。
-
    >[!NOTE]
-   >
-   >同じページ、または別のページにコンポーネントを&#x200B;**貼り付ける**&#x200B;ことができます。切り取り／コピー操作を実行する前に開かれていたページに貼り付けるには、そのページを更新する必要があります。
+   同じページ、または別のページにコンポーネントを&#x200B;**貼り付ける**&#x200B;ことができます。切り取り／コピー操作を実行する前に開かれていたページに貼り付けるには、そのページを更新する必要があります。
 
    * コンポーネントを[削除します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
@@ -178,10 +176,9 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * 「**編集**」ドロップダウンセレクターを使用して、編集モードに戻ります（またはその他のモードを選択します）。
 
    >[!NOTE]
-   >
-   >コンテンツのリンクを使用して移動するには、[プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)を使用する必要があります。
+   コンテンツのリンクを使用して移動するには、[プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)を使用する必要があります。
 
-### ページプロパティの編集  {#editing-the-page-properties}
+### ページプロパティの編集{#editing-the-page-properties}
 
 [ページプロパティを編集する](/help/sites-cloud/authoring/fundamentals/page-properties.md)には、（主に）以下の 2 つの方法があります。
 
@@ -205,7 +202,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
       ![ページ情報ボタン](/help/sites-cloud/authoring/assets/page-information.png)
 
-### ページの公開（または非公開） {#publishing-your-page-or-unpublishing}
+### ページの公開（または非公開）{#publishing-your-page-or-unpublishing}
 
 [ページを公開する](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)（および非公開にする）には、主に 2 つの方法があります。
 
@@ -233,7 +230,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
    詳しくは、[ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages)を参照してください。
 
-### ページの移動、コピー、貼り付けまたは削除  {#move-copy-and-paste-or-delete-your-page}
+### ページの移動、コピー、貼り付けまたは削除{#move-copy-and-paste-or-delete-your-page}
 
 これらのアクションはすべて次の操作で実行できます。
 
@@ -254,12 +251,10 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * 削除：
 
       * この操作の確認が求められます。
-
    >[!NOTE]
-   >
-   >削除は、クイックアクションでは使用できません。
+   削除は、クイックアクションでは使用できません。
 
-### ページのロック（およびロック解除） {#locking-your-page-then-unlocking}
+### ページのロック（およびロック解除）{#locking-your-page-then-unlocking}
 
 [ページのロック](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page)によって、自分の作業中に他の作成者が作業するのを防ぐことができます。ロック（およびロック解除）アイコン／ボタンは次の場所にあります。
 
@@ -285,7 +280,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 
 1. 詳細を表示して適宜その他のアクションを実行するには、必要なタイプの参照をタップまたはクリックします。
 
-### ページのバージョンの作成  {#creating-a-version-of-your-page}
+### ページのバージョンの作成{#creating-a-version-of-your-page}
 
 ページの[バージョン](/help/sites-cloud/authoring/features/page-versions.md)を作成するには：
 
