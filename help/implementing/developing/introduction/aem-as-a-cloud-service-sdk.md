@@ -5,11 +5,11 @@ exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '1179'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM as a Cloud Service の SDK {#aem-as-a-cloud-service-sdk}
+# AEM as a Cloud Service SDK {#aem-as-a-cloud-service-sdk}
 
 AEM as a Cloud Service の SDK は、次のアーティファクトで構成されます。
 
@@ -61,7 +61,7 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 
 少なくとも毎月のメンテナンスリリースの後に更新することを&#x200B;*お勧め*&#x200B;します。
 
-毎日のメンテナンスリリースの後に更新する&#x200B;*オプション*&#x200B;もあります。実稼動インスタンスが新しい AEM バージョンに正常にアップグレードされると、お客様にその通知が届きます。毎日のメンテナンスリリースについては、新しい SDK に仮に変更があったとしても大幅な変更があるとは思われません。それでも、ローカルの AEM 開発環境を最新の SDK で時々更新し、カスタムアプリケーションを再ビルドしてテストすることをお勧めします。通常、毎月のメンテナンスリリースには、より影響の大きい変更が含まれるので、開発者は直ちに更新、再ビルド、テストをおこなう必要があります。
+毎日のメンテナンスリリースの後に更新する&#x200B;*オプション*&#x200B;もあります。実稼動インスタンスが新しい AEM バージョンに正常にアップグレードされると、お客様にその通知が届きます。毎日のメンテナンスリリースについては、新しい SDK に仮に変更があったとしても大幅な変更があるとは思われません。それでも、ローカルの AEM 開発環境を最新の SDK で時々更新し、カスタムアプリケーションを再ビルドしてテストすることをお勧めします。通常、毎月のメンテナンスリリースには、より影響の大きい変更が含まれるので、開発者は直ちに更新、再ビルド、テストを行う必要があります。
 
 ローカル環境を更新するお勧めの手順を以下に示します。
 
@@ -83,7 +83,7 @@ AEM as a Cloud Service SDK は、カスタムコードのビルドとデプロ�
 
 SDK を頻繁に（例えば、隔週など）更新し、完全なローカル状態を毎日破棄して、アプリケーション内のステートフルデータに誤って依存しないようにすることをお勧めします。
 
-（[AEM の Cloud Services または SMTP メールサービスの認証情報を設定するか、アプリケーションで CryptoSupport API を使用して）](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)CryptoSupport に基づいている場合、暗号化されるプロパティは、AEM 環境の初回起動時に自動生成されるキーで暗号化されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
+（[AEM の Cloud Services または SMTP メールサービスの認証情報を設定するか、アプリケーションで CryptoSupport API を使用して）](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/com/adobe/granite/crypto/CryptoSupport.html)CryptoSupport に基づいている場合、暗号化されるプロパティは、AEM 環境の初回起動時に自動生成されるキーで暗号化されます。クラウド設定では環境固有の暗号鍵の自動的な再利用に対応できますが、ローカル開発環境に暗号鍵を組み込む必要があります。
 
 デフォルトでは、AEM はデータフォルダー内に鍵データを保存するように設定されていますが、開発時に再利用しやすいように、「`-Dcom.adobe.granite.crypto.file.disable=true`」を使用して AEM プロセスを初回起動時に初期化できます。これにより、「`/etc/key`」に暗号化データが生成されます。
 
