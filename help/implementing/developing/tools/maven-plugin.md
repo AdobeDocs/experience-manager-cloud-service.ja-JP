@@ -5,11 +5,11 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
 workflow-type: tm+mt
 source-wordcount: '1847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Adobe Content Package Maven Plugin {#adobe-content-package-maven-plugin}
+# AdobeコンテンツパッケージMavenプラグイン {#adobe-content-package-maven-plugin}
 
 パッケージデプロイメントおよび管理タスクを Maven プロジェクトに組み込むには、Adobe Content Package Maven Plugin を使用します。
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 ## パッケージと AEM プロジェクト構造 {#aem-project-structure}
 
-AEM as a Cloud Serviceは、最新のAEMプロジェクトアーキタイプによって実装された、パッケージ管理とプロジェクト構造に関する最新のベストプラクティスに従っています。
+AEM as a Cloud Service は、最新の AEM プロジェクトアーキタイプによって実装された、パッケージ管理とプロジェクト構造に関する最新のベストプラクティスに従っています。
 
 >[!TIP]
 >
@@ -56,7 +56,7 @@ Content Package Maven Plugin を使用するには、POM ファイルのビル�
 
 Maven でプラグインをダウンロードできるようにするには、このページの [Content Package Maven Plugin の取得](#obtaining-the-content-package-maven-plugin)で提供されるプロファイルを使用します。
 
-## Content Package Maven Plugin のゴール  {#goals-of-the-content-package-maven-plugin}
+## Content Package Maven Plugin のゴール {#goals-of-the-content-package-maven-plugin}
 
 Content Package Plugin に用意されているゴールおよびゴールパラメーターについては、以降の節で説明します。共通パラメーターの節に示すパラメーターはほとんどのゴールに使用できます。1 つのゴールに適用するパラメーターについては、そのゴールの節を参照してください。
 
