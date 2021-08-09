@@ -26,7 +26,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
 * Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
 * Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
-* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
+* [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 
 
