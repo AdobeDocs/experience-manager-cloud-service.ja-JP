@@ -3,7 +3,7 @@ title: 'IP 許可リストの適用解除 '
 description: IP 許可リストの適用解除
 exl-id: a8763120-9683-4805-bd10-3863a0e4ff6f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
 ht-degree: 100%
 
