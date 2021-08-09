@@ -1,15 +1,15 @@
 ---
-title: ヘッドレス入門ガイド
-description: このクイックスタートガイドでは、コンテンツモデル、コンテンツフラグメント、GraphQL APIなど、Cloud Serviceの強力なヘッドレス機能としてのAEMの基本事項について説明します。
+title: ヘッドレスをはじめる前に
+description: このクイックスタートガイドでは、コンテンツモデル、コンテンツフラグメント、GraphQL API など、Cloud Service の強力なヘッドレス機能としての AEM の基本事項について説明します。
 source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
-# ヘッドレス入門ガイド {#introduction}
+# ヘッドレスをはじめる前に {#introduction}
 
 ヘッドレス入門ガイドでは、AEM as a Cloud Service を使用したエクスペリエンスの作成、管理、配信の簡単な道筋を 5 つの手順に分けて示します。各ガイドは前のガイドに基づいているので、じっくり順番に検討することをお勧めします。
 
