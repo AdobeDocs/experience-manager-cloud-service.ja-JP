@@ -18,7 +18,7 @@ ht-degree: 93%
 
 [新しいDynamic Media設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)を参照してください。
 
-## 一般（すべてのアセット）  {#general-all-assets}
+## 一般（すべてのアセット） {#general-all-assets}
 
 次に全般的なヒントやテクニックを示します。
 
