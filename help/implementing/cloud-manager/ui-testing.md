@@ -3,7 +3,7 @@ title: UI テスト - Cloud Services
 description: UI テスト - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
 ht-degree: 100%
 
@@ -30,12 +30,12 @@ UI テストは、Maven プロジェクトで生成された Docker ビルドコ
 
 ### Docker ビルドコンテキストの生成 {#generate-docker-build-context}
 
-Docker ビルドコンテキストを生成するには、次の処理をおこなう Maven モジュールが必要です。
+Docker ビルドコンテキストを生成するには、次の処理を行う Maven モジュールが必要です。
 
 - `Dockerfile`と、テストを含んだ Docker イメージの作成に必要なその他のすべてのファイルを格納したアーカイブを作成する。
 - アーカイブに `ui-test-docker-context` 分類子をタグ付けする。
 
-これをおこなうには、[Maven アセンブリプラグイン](http://maven.apache.org/plugins/maven-assembly-plugin/)を設定して Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるのが最も簡単です。
+これを行うには、[Maven アセンブリプラグイン](http://maven.apache.org/plugins/maven-assembly-plugin/)を設定して Docker ビルドコンテキストアーカイブを作成し、それに適切な分類子を割り当てるのが最も簡単です。
 
 様々なテクノロジーとフレームワークを使用して UI テストを作成できますが、この節では、プロジェクトが次のようにレイアウトされていることを前提としています。
 
@@ -139,7 +139,7 @@ Docker ビルドコンテキストを含んだアーカイブが Cloud Manager �
 テストを開始する前に、Selenium サーバーが実行状態にあることを Docker イメージ側で確認する必要があります。Selenium サービスの準備が完了するまで、次の 2 段階の手順で待機します。
 
 1. `SELENIUM_BASE_URL` 環境変数から Selenium サービスの URL を読み取ります。
-2. Selenium API で公開されている[ステータスエンドポイント](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)に対して定期的にポーリングをおこないます。
+2. Selenium API で公開されている[ステータスエンドポイント](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)に対して定期的にポーリングを行います。
 
 Selenium のステータスエンドポイントが肯定的な応答を返したら、いよいよテストを開始できます。
 
