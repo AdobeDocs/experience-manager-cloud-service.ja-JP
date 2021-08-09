@@ -1,47 +1,47 @@
 ---
-title: AEM Assets APIを使用したコンテンツの更新方法
-description: AEMヘッドレス開発者ジャーニーのこのパートでは、REST APIを使用してコンテンツフラグメントのコンテンツにアクセスし、更新する方法について説明します。
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+title: AEM Assets API を使用してコンテンツをアップデートする方法
+description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
+exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
+# AEM Assets API を使用してコンテンツをアップデートする方法 {#update-your-content}
 
-# AEM Assets APIを使用したコンテンツの更新方法{#update-your-content}
+[AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。](overview.md)
 
-[AEMヘッドレス開発者ジャーニーのこのパートでは、REST APIを使用してコンテンツフラグメントのコンテンツにアクセスし、更新する方法を説明します。](overview.md)
+## これまでの説明内容 {#story-so-far}
 
-## {#story-so-far}までの話
+以前の AEM ヘッドレスジャーニードキュメント（「[AEM Delivery API を使用してコンテンツにアクセスする方法](access-your-content.md)」）では、AEM GraphQL API を介して AEM のヘッドレスコンテンツにアクセスする方法を説明したので、次ができるはずです。
 
-AEMヘッドレスジャーニーの前のドキュメント、[AEM Delivery APIを使用したコンテンツへのアクセス方法](access-your-content.md)では、AEM GraphQL APIを使用したAEMのヘッドレスコンテンツへのアクセス方法を学習し、次の操作を行う必要があります。
+* GraphQL について大まかなレベルで理解する
+* AEM GraphQL API の仕組みを理解する
+* 実用的なサンプルクエリを理解する
 
-* GraphQLについて理解を深める。
-* AEM GraphQL APIの仕組みを理解します。
-* 実用的なサンプルクエリを理解します。
-
-この記事は、これらの基本事項に基づいて構築されているので、REST APIを使用してAEMの既存のヘッドレスコンテンツを更新する方法を理解できます。
+この記事は、これらの基本事項に基づいて構築されているので、REST API を使用して AEM の既存のヘッドレスコンテンツをアップデートする方法を理解できます。
 
 ## 目的 {#objective}
 
-* **オーディエンス**:詳細
-* **目的**:REST APIを使用して、コンテンツフラグメントのコンテンツにアクセスし更新する方法を説明します。
-   * AEM Assets HTTP APIの紹介
-   * APIでのコンテンツフラグメントのサポートを紹介し、説明します。
-   * APIの詳細を説明します。
+* **オーディエンス**：経験者
+* **目的**：REST API を使用して、コンテンツフラグメントのコンテンツにアクセスし、アップデートする方法を説明します。
+   * AEM Assets HTTP API を紹介します。
+   * API でのコンテンツフラグメントのサポートを紹介し、説明します。
+   * API の詳細を説明します。
 
 <!--
   * Look at sample code to see how things work in practice.
 -->
 
-## コンテンツフラグメント{#why-http-api}にAssets HTTP APIが必要な理由
+## コンテンツフラグメントに Assets HTTP API が必要な理由 {#why-http-api}
 
-ヘッドレスジャーニーの前の段階では、AEM GraphQL APIを使用してクエリを使用してコンテンツを取得する方法を学びました。
+ヘッドレスジャーニーの前の段階では、AEM GraphQL API を使用してクエリを使用してコンテンツを取得する方法を学びました。
 
-では、他のAPIが必要なのはなぜですか？
+では、他の API が必要なのでしょうか？
 
-Assets HTTP APIを使用すると、コンテンツを&#x200B;**読み取り**&#x200B;できますが、**作成**、**更新**&#x200B;および&#x200B;**削除**&#x200B;コンテンツ — GraphQL APIでは実行できないアクションも実行できます。
+Assets HTTP API を使用すると、コンテンツを&#x200B;**読み取る**&#x200B;ことができます。また、コンテンツを&#x200B;**作成**、**アップデート**、**削除**&#x200B;することができます。これらは、GraphQL API では実行できないアクションです。
 
 Assets REST API は、最新の Adobe Experience Manager as a Cloud Service バージョンの標準インストールで利用できます。
 
@@ -52,9 +52,9 @@ Assets HTTP API には次の API が含まれます。
 * Assets REST API
 * コンテンツフラグメントをサポートしています。
 
-現在のAssets HTTP APIの実装は、**REST**&#x200B;アーキテクチャスタイルに基づいており、**CRUD**&#x200B;操作（作成、読み取り、更新、削除）を使用して(AEMに保存された)コンテンツにアクセスできます。
+現在の Assets HTTP API の実装は、**REST** アーキテクチャスタイルに基づいており、**CRUD** 操作（作成、読み取り、アップデート、削除）を使用して（AEM に保存された）コンテンツにアクセスできます。
 
-この操作を使用すると、JavaScriptフロントエンドアプリケーションにContent Servicesを提供することで、Adobe Experience ManagerをヘッドレスCMS(Content Management System)としてCloud Serviceとして操作できます。 または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。例えば、単一ページアプリケーション(SPA)、フレームワークベースまたはカスタムでは、API経由で提供されるコンテンツ（多くの場合JSON形式）が必要です。
+これらの操作を使用して、API では、コンテンツサービスを JavaScript フロントエンドアプリケーションに提供することで、Adobe Experience Manager as a Cloud Service をヘッドレス CMS（コンテンツ管理システム）として動作させることができます。または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。例えば、単一ページアプリケーション（SPA）では、フレームワークベースかカスタムかを問わず、API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
 
 <!--
 >[!NOTE]
@@ -178,9 +178,9 @@ The binary data of an asset is exposed as a SIREN link of type `content`.
 Assets can have multiple renditions. These are typically exposed as child entities, one exception being a thumbnail rendition, which is exposed as a link of type `thumbnail` ( `rel="thumbnail"`).
 -->
 
-## アセットのHTTP APIとコンテンツフラグメント{#assets-http-api-content-fragments}
+## Assets HTTP API とコンテンツフラグメント {#assets-http-api-content-fragments}
 
-コンテンツフラグメントはヘッドレス配信に使用され、コンテンツフラグメントは特別なタイプのアセットです。 テキスト、数値、日付など、構造化されたデータにアクセスするために使用されます。
+コンテンツフラグメントはヘッドレス配信に使用される、特別なタイプのアセットです。コンテンツフラグメントを使用すれば、テキスト、数値、日付など様々な要素を含む構造化データにアクセスできます。
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
@@ -205,11 +205,11 @@ To create a new content fragment, the (internal repository) path of the model ha
 Associated content is currently not exposed.
 -->
 
-## Assets REST APIの使用{#using-aem-assets-rest-api}
+## Assets REST API の使用 {#using-aem-assets-rest-api}
 
 ### アクセス {#access}
 
-Assets REST APIは`/api/assets`エンドポイントを使用し、アクセスするにはアセットのパスが必要です（先頭の`/content/dam`を除く）。
+Assets REST API は `/api/assets` エンドポイントを使用しており、アクセスするにはアセットのパス（先頭の `/content/dam` を除く）が必要です。
 
 * つまり、次の場所のアセットにアクセスするには
    * `/content/dam/path/to/asset`
@@ -242,7 +242,7 @@ Assets REST APIは`/api/assets`エンドポイントを使用し、アクセス�
 
 使用方法は、特定の使用例以外にも、AEM オーサーを使用するかパブリッシュ環境を使用するかで異なることがあります。
 
-* 作成をオーサーインスタンスに結び付けることを強くお勧めします（現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません）。
+* 作成時にはオーサーインスタンスに結び付けることを強くお勧めします（現在は、この API を使用して公開するフラグメントをレプリケートする手段はありません）。
 * 配信は、どちらからも可能です。AEM では、要求されたコンテンツを JSON 形式でのみ提供するからです。
 
    * ファイアウォールの背後で動作するメディアライブラリアプリケーションには、AEM オーサーインスタンスからの格納と配信で十分です。
@@ -298,17 +298,17 @@ Assets REST APIは`/api/assets`エンドポイントを使用し、アクセス�
 
 `DELETE /{cfParentPath}/{cfName}`
 
-AEM Assets REST APIの使用の詳細については、次を参照してください。
+AEM Assets REST API の使用の詳細については、次を参照してください。
 
 * Adobe Experience Manager Assets HTTP API（その他のリソース）
-* AEM Assets HTTP APIでのコンテンツフラグメントのサポート（その他のリソース）
+* AEM Assets HTTP API でのコンテンツフラグメントのサポート（その他のリソース）
 
-## 次の手順{#whats-next}
+## 次の手順 {#whats-next}
 
-これで、AEMヘッドレス開発者ジャーニーのこの部分が完了し、次の作業が完了しました。
+これで、ここでの AEM ヘッドレスデベロッパージャーニーは完了です。次ができるようになったはずです。
 
-* AEM Assets HTTP APIの基本を理解します。
-* このAPIでのコンテンツフラグメントのサポート方法を説明します。
+* AEM Assets HTTP API の基本を理解する。
+* この API でコンテンツフラグメントがどのようにサポートされているかを理解する。
 
 <!--
 * Have experience with sample code and know how the API works in practice.
@@ -318,7 +318,7 @@ AEM Assets REST APIの使用の詳細については、次を参照してくだ�
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-次に、『[How to Go Live with Your Headless Application](go-live.md)』(実際にAEM Headlessプロジェクトをライブにする方法)のドキュメントを確認して、AEMヘッドレスなジャーニーを続ける必要があります。
+次に、「[実際に AEM ヘッドレスプロジェクトをライブにする方法](go-live.md)」のドキュメントを確認して、AEM ヘッドレスジャーニーを続けてください。
 
 ## その他のリソース {#additional-resources}
 
