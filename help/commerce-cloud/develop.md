@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -82,11 +82,11 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
    ```
 
-   この変数は、AEM でコマースシステムへの接続に使用されます。また、CIFアドオンにはローカルリバースプロキシが含まれ、Commerce GraphQLエンドポイントがローカルで使用可能になります。 これは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しを行う CIF クライアント側コンポーネントにも使用されます。
+   この変数は、AEM でコマースシステムへの接続に使用されます。また、CIF アドオンには、Commerce GraphQL エンドポイントをローカルで使用できるようにするローカルリバースプロキシが含まれています。これは、CIF オーサリングツール（製品コンソールおよびピッカー）で使用され、GraphQL の直接呼び出しを行う CIF クライアント側コンポーネントにも使用されます。
 
    この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
-1. （オプション）ステージングされたカタログ機能を有効にするには、Magentoインスタンスの統合トークンを作成する必要があります。 [概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
+1. （オプション）ステージング済みカタログ機能を有効にするには、Magento インスタンスの統合トークンを作成する必要があります。[概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
 
    `COMMERCE_AUTH_HEADER` という名前の OSGi シークレットを次の値に設定します。
 
@@ -100,7 +100,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
 >[!NOTE]
 >
->手順5で設定した環境変数と同じターミナルウィンドウで、AEM as aCloud ServiceSDKを必ず起動します。 別のターミナルウィンドウで起動するか、.jarファイルをダブルクリックして、環境変数が表示されていることを確認します。
+>手順 5 で設定した環境変数と同じターミナルウィンドウで、AEM as a Cloud Service SDK を起動します。別のターミナルウィンドウで起動したか .jar ファイルをダブルクリックして起動した場合、環境変数が表示されていることを確認します。
 
 OSGI コンソールを使用して設定を確認します：`http://localhost:4502/system/console/osgi-installer`。このリストには、機能モデルファイルで定義されている CIF アドオン関連バンドル、コンテンツパッケージ、OSGI 設定が含まれている必要があります。
 
@@ -134,7 +134,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-CIFコアコンポーネントは、提供されている`all`パッケージを含めるか、CIFコンテンツパッケージと関連するOSGIバンドルを個別に使用することで、任意のプロジェクトで使用できます。 CIF コアコンポーネントを手動でプロジェクトに追加するには、次の依存関係を使用します。
+CIF コアコンポーネントは、提供されている `all` パッケージを含めるか、CIF コンテンツパッケージと関連する OSGI バンドルを個別に使用することで、任意のプロジェクトで使用できます。CIF コアコンポーネントを手動でプロジェクトに追加するには、次の依存関係を使用します。
 
 ```java
 <dependency>
@@ -168,7 +168,7 @@ CIFコアコンポーネントは、提供されている`all`パッケージを
 
 ### AEM Venia 参照用ストアの使用
 
-CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、ベストプラクティスの例と、独自の機能を開発するための潜在的な出発点として意図されています。
+CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、ベストプラクティス例として意図されていて、独自機能を開発するための有望な出発点としての役割も果たします。
 
 Venia 参照用ストアを使い始めるには、Git リポジトリーをコピーし、必要に応じてプロジェクトをカスタマイズする開始を作成します。
 
