@@ -10,7 +10,7 @@ ht-degree: 100%
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート  {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service] のスマートタグ機能が拡張されて、テキストベースのアセット内のキーワードやエンティティの識別をサポートするようになりました。テキストが識別され、インデックス作成され、メタデータとして使用できるようになるので、設定をおこなわなくても検索エクスペリエンスが向上します。詳しくは、[スマートタグ](/help/assets/smart-tags.md)を参照してください。
+* [!DNL Experience Manager] as a [!DNL Cloud Service] のスマートタグ機能が拡張されて、テキストベースのアセット内のキーワードやエンティティの識別をサポートするようになりました。テキストが識別され、インデックス作成され、メタデータとして使用できるようになるので、設定を行わなくても検索エクスペリエンスが向上します。詳しくは、[スマートタグ](/help/assets/smart-tags.md)を参照してください。
 
 * MXF ファイル形式がサポートされるようになりました。詳しくは、[サポートされているファイル形式](/help/assets/file-format-support.md#video-formats)を参照してください。
 
@@ -72,7 +72,7 @@ AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 �
 
 ## コードリファクタリングツール {#code-refactoring-tools}
 
-### [!DNL Code Refactoring Tools] の新機能 {#what-is-new-crt}
+### [!DNL Code Refactoring Tools] の新機能  {#what-is-new-crt}
 
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンには、AEM Dispatcher コンバーターと Repository Modenizer のバグ修正が含まれ、新しいユーティリティインデックスコンバーターもサポートされています。このプラグインの詳細については、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 �
 
 ### 新機能 {#what-is-new-foundation}
 
-* 認証済みのサーバー間 API 呼び出し - 適切なアクセストークンを生成して、外部アプリケーションと AEM as a Cloud Service 環境の間で認証済みのサーバー間 API 呼び出しをおこないます。詳しくは、[こちらのドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)や[チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication)を参照してください。
+* 認証済みのサーバー間 API 呼び出し - 適切なアクセストークンを生成して、外部アプリケーションと AEM as a Cloud Service 環境の間で認証済みのサーバー間 API 呼び出しを行います。詳しくは、[こちらのドキュメント](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)や[チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication)を参照してください。
 
 ### SDK ビルドアナライザー {#sdk-build-analyzers}
 
@@ -107,7 +107,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 コンテンツ転送ツール v1.2.2 のリリース日は 2021 年 2 月 1 日です。
 
-### [!DNL Content Transfer Tool] の新機能 {#what-is-new-ctt}
+### [!DNL Content Transfer Tool] の新機能  {#what-is-new-ctt}
 
 * コンテンツ転送ツールに、新しい機能および UI であるユーザーマッピングツールが追加されました。この機能は、コンテンツ移行アクティビティの一環として、既存のユーザーおよびグループをそれぞれの Adobe Identity Management System ID に自動的にマッピングします。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
 * コンテンツ転送ツールは、移行セットで参照されているすべてのグループとユーザーを子も含めて移行するようになりました。
