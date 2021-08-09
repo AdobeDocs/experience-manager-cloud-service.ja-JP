@@ -3,7 +3,7 @@ title: インデックスコンバーター
 description: インデックスコンバーター
 exl-id: e6a3ec6d-cc02-4f5b-8b1d-ea481d6884ca
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
 ht-degree: 100%
 
