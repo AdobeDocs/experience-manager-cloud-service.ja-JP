@@ -13,7 +13,7 @@ ht-degree: 100%
 
 このページでは、[ページオーサリングで使用される](/help/sites-cloud/authoring/fundamentals/components.md)コンポーネントなど、Adobe Experience Manager（AEM）のコンポーネントの概要を示します。
 
-## コンポーネントとは{#what-are-components}
+## コンポーネントとは {#what-are-components}
 
 AEM のコンポーネント：
 
