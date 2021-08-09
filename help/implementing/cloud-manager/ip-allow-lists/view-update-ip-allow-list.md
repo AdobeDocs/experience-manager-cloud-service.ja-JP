@@ -3,7 +3,7 @@ title: 表示と更新 - Cloud Manager での IP 許可リスト
 description: 表示と更新 - Cloud Manager での IP 許可リスト
 exl-id: 9f9aebcd-b6d0-497a-b262-0a24b4938b45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ IP 許可リストを表示および更新できるシナリオは、次のと�
 ## IP 許可リストの更新 {#update-ip-allow-lists}
 
 
-IP 許可リストを更新するには、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つユーザーがログインする必要があります。
+IP 許可リストを更新するには、ビジネスオーナーまたはデプロイメントマネージャーのロールを持つユーザーがログインする必要があります。
 
 >[!NOTE]
 >表示と更新ウィザードに、ルールを定義する名前、IP、または IP 範囲が表示されます。また、ルールが適用される環境とサービスも表示されます。
