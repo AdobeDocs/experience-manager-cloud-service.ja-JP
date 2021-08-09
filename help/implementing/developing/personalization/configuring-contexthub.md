@@ -3,7 +3,7 @@ title: ContextHub の設定
 description: Context Hub の設定方法について説明します。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1683'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Adobe Granite ContextHub OSGi サービスを設定して、ページで [Contex
 
 ContextHub UI を表示に設定すると、AEM オーサーインスタンスのページにのみ表示されます。UI はパブリッシュインスタンスのページには表示されません。
 
-## ContextHub UI モードとモジュールの追加  {#adding-contexthub-ui-modes-and-modules}
+## ContextHub UI モードとモジュールの追加{#adding-contexthub-ui-modes-and-modules}
 
 ContextHub ツールバーに表示される UI のモードとモジュールをプレビューモードで設定します。
 
@@ -39,7 +39,7 @@ UI モードはツールバーの左側に一連のアイコンとして表示�
 
 アイコンは、[Coral UI ライブラリ](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)からの参照です。
 
-### UI モードの追加  {#adding-a-ui-mode}
+### UI モードの追加{#adding-a-ui-mode}
 
 UI モードをグループ関連の ContextHub モジュールに追加します。UI モードを作成する際に、ContextHub ツールバーに表示されるタイトルとアイコンを指定します。
 
@@ -53,12 +53,12 @@ UI モードをグループ関連の ContextHub モジュールに追加しま�
 1. 次のプロパティの値を指定します。
 
    * UI モードのタイトル：UI モードを識別するタイトル。
-   * モードアイコン：使用する [Coral UI アイコン](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)のセレクター（例：`coral-Icon--user`）。
+   * モードアイコン：使用する [Coral UI アイコン](https://helpx.adobe.com/jp/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)のセレクター（例：`coral-Icon--user`）。
    * 有効：オンにすると ContextHub ツールバーに UI モードが表示されます。
 
 1. 「保存」をクリックまたはタップします。
 
-### UI モジュールの追加  {#adding-a-ui-module}
+### UI モジュールの追加{#adding-a-ui-module}
 
 ContextHub UI モジュールを UI モードに追加し、それを ContextHub ツールバーに表示して、ページコンテンツをプレビューできるようにします。UI モジュールを追加するときは、ContextHub に登録されるモジュールタイプのインスタンスを作成します。UI モジュールを追加するには、関連するモジュールタイプの名前が必要です。
 
@@ -93,11 +93,11 @@ UI モジュールのプロパティには、モジュール固有のプロパ�
 1. （オプション）デフォルトのストアの設定をオーバーライドするには、UI モジュールを設定する JSON オブジェクトを入力します。
 1. 「保存」をクリックまたはタップします。
 
-## ContextHub ストアの作成  {#creating-a-contexthub-store}
+## ContextHub ストアの作成{#creating-a-contexthub-store}
 
 ContextHub ストアを作成してユーザーデータを保持し、必要に応じてそのデータにアクセスします。ContextHub ストアは、登録済みのストア候補に基づきます。ストアを作成する際には、ストア候補が登録された storeType の値が必要です（[カスタムストア候補の作成](extending-contexthub.md#creating-custom-store-candidates)を参照してください）。
 
-### ストアの詳細設定  {#detailed-store-configuration}
+### ストアの詳細設定{#detailed-store-configuration}
 
 ストアを設定すると、詳細設定プロパティによりストア固有のプロパティの値を指定できます。値は、ストアの `config` 関数の `init` パラメーターに基づきます。このため、この値を指定する必要があるかどうかと、指定する値の形式はストアによって変わります。
 
@@ -132,7 +132,7 @@ AEM には、ストアのベースにできる次のサンプルのストア候�
 1. （オプション）デフォルトのストアの設定をオーバーライドするには、「詳細設定（JSON）」ボックスに JSON オブジェクトを入力します。
 1. 「保存」をクリックまたはタップします。
 
-## JSONP サービスの使用例         {#example-using-a-jsonp-service}
+## JSONP サービスの使用例{#example-using-a-jsonp-service}
 
 この例は、ストアを設定して UI モジュールにデータを表示する方法を示します。この例では、ストアのデータソースとして jsontest.com サイトの MD5 サービスが使用されています。サービスが指定の文字列の MD5 ハッシュコードを JSON 形式で返します。
 
@@ -145,7 +145,7 @@ contexthub.generic-jsonp ストアがサービスコール `https://md5.jsontest
 }
 ```
 
-### contexthub.generic-jsonp ストアの作成  {#creating-a-contexthub-generic-jsonp-store}
+### contexthub.generic-jsonp ストアの作成{#creating-a-contexthub-generic-jsonp-store}
 
 contexthub.generic-jsonp のサンプルのストア候補を使用すると、JSON データを返す JSONP サービスや Web サービスからデータを取得できます。このストア候補では、そのストア設定を使用して、使用する JSONP サービスに関する詳細を指定します。
 
@@ -201,7 +201,7 @@ ContextHub ツールバーに UI モジュールを追加して、サンプル�
 
 ContextHub のデバッグモードを有効にして、トラブルシューティングに対応できます。デバッグモードは、ContextHub 設定または CRXDE のいずれかを利用して有効にできます。
 
-### 設定による有効化  {#via-the-configuration}
+### 設定による有効化{#via-the-configuration}
 
 ContextHub の設定を編集し、「**デバッグ**」オプションをオンにします。
 
