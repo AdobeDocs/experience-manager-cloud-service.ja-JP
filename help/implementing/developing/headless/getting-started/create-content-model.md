@@ -1,17 +1,17 @@
 ---
 title: コンテンツフラグメントモデルのヘッドレス作成のクイック開始ガイド
-description: コンテンツフラグメントモデルを使用して、AEMヘッドレス機能を使用して作成および提供するコンテンツの構造を定義します。
+description: コンテンツフラグメントモデルを使用して、AEM のヘッドレス機能を利用して作成および提供するコンテンツの構造を定義します。
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '472'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントモデルのヘッドレス作成のクイック開始ガイド {#creating-content-fragment-models}
 
-コンテンツフラグメントモデルを使用して、AEMヘッドレス機能を使用して作成および提供するコンテンツの構造を定義します。
+コンテンツフラグメントモデルを使用して、AEM のヘッドレス機能を利用して作成および提供するコンテンツの構造を定義します。
 
 ## コンテンツフラグメントモデルとは {#what-are-content-fragment-models}
 
