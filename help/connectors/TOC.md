@@ -6,7 +6,7 @@ user-guide-description: Adobe Experience Manager as a Cloud Service にコネク
 feature: 開発者ツール
 role: Developer
 source-git-commit: e94289bccc09ceed89a2f8b926817507eaa19968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '51'
 ht-degree: 100%
 
