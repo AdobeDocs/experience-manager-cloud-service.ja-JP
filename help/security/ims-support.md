@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: c71a27961b469f8f729394b80a804321faf597f4
 workflow-type: tm+mt
 source-wordcount: '2007'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 >[!TIP]
 >
->AdobeIMSを使用してAEMにCloud Serviceとして認証する方法と、AEMとその機能へのアクセスを制御するためにAdobeのIMSユーザー、ユーザーグループ、製品プロファイルを使用する方法については、 Experience Leagueのコース[管理者向けのAEMへのアクセスの設定](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)を参照してください。 Adobe IDが必要。
+>ユーザーが Adobe IMS を使用して AEM as a Cloud Service を認証する方法や、Adobe IMS ユーザー、ユーザーグループ、および製品プロファイルを使用して AEM およびその機能および機能性へのアクセスを制御する方法の概要については、アドビの Experience League コース「[管理者向けの AEM へのアクセスの設定](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem)」を参照してください。Adobe ID が必要です。
 
 ## 主なハイライト {#key-highlights}
 
@@ -128,7 +128,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 ### Admin Console での製品とユーザーアクセスの管理 {#managing-products-and-user-access-in-admin-console}
 
-製品管理者がAdmin Consoleにログインすると、以下に示すように、AEMの複数のインスタンスがCloud Service製品コンテキストとして表示されます。 例えば、**概要**&#x200B;ページから任意の製品を選択します。
+製品管理者が Admin Console にログインすると、以下に示すように、AEM as a Cloud Service Product Context の複数のインスタンスが表示されます。例えば、**概要**&#x200B;ページから任意の製品を選択します。
 
 ![インスタンスへのログイン](/help/security/assets/ims6.png)
 
@@ -136,7 +136,7 @@ Adobe IMS を OAuth プロバイダーとして設定することが全体的な
 
 ![インスタンスへのログイン 2](/help/security/assets/ims7.png)
 
-各製品コンテキストインスタンスの下に、実稼動、ステージ、または開発環境全体でオーサーサービスまたはパブリッシュサービスにまたがるインスタンスがあります。 各インスタンスは、製品プロファイルまたはCloud Managerの役割に関連付けられます。 これらの製品プロファイルは、必要な権限を持つユーザーおよびグループにアクセス権を割り当てるために使用されます。
+各製品コンテキストインスタンスの下に、実稼動、ステージング、または開発環境全体でオーサーサービスまたはパブリッシュサービスにまたがるインスタンスがあります。各インスタンスは、製品プロファイルまたは Cloud Manager の役割に関連付けられます。これらの製品プロファイルは、必要な特権を持つユーザーおよびグループにアクセス権を割り当てるために使用されます。
 
 **Administrator_xxx** プロファイルは、関連する AEM インスタンスで管理者特権を付与するために使用されるのに対して、**User_xxx** プロファイルは、通常のユーザーを追加するために使用されます。
 
