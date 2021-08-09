@@ -2,7 +2,7 @@
 title: Brand Portal へのアセット、フォルダーおよびコレクションの公開
 description: アセット、フォルダーおよびコレクションを Brand Portal に公開します。
 contentOwner: Vishabh Gupta
-feature: ブランドポータル、アセット配布、設定
+feature: Brand Portal、アセット配布、設定
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
 source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
