@@ -3,13 +3,13 @@ title: ContextHub ストア候補のサンプル
 description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
 ht-degree: 100%
 
 ---
 
-# ContextHub ストア候補のサンプル  {#sample-contexthub-store-candidates}
+# ContextHub ストア候補のサンプル{#sample-contexthub-store-candidates}
 
 ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています。各サンプルでは次の情報が提供されます。
 
@@ -103,7 +103,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 
 >[!NOTE]
 >
->Chrome 50.x で導入されたセキュリティポリシーでは、すべてのジオロケーション関連呼び出しは、安全な接続を使用しておこなう必要があります。そのため、AEM では、AEM が https 経由で実行されていても、ジオロケーション API 呼び出しに https の使用を強制します。その他の場合は、同一オリジンポリシーに準拠するために、http が使用されます。
+>Chrome 50.x で導入されたセキュリティポリシーでは、すべてのジオロケーション関連呼び出しは、安全な接続を使用して行う必要があります。そのため、AEM では、AEM が https 経由で実行されていても、ジオロケーション API 呼び出しに https の使用を強制します。その他の場合は、同一オリジンポリシーに準拠するために、http が使用されます。
 >
 >Chrome での変更について詳しくは、[Google のこのブログ投稿](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)を参照してください。
 
@@ -307,7 +307,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 }
 ```
 
-## granite.profile サンプルストア候補  {#granite-profile-sample-store-candidate}
+## granite.profile サンプルストア候補{#granite-profile-sample-store-candidate}
 
 現在のユーザーに関する情報を格納します。
 
