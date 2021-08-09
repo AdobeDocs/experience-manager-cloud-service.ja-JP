@@ -5,11 +5,11 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
-# コンテンツフラグメントのカスタマイズと拡張 {#customizing-and-extending-content-fragments}
+# コンテンツフラグメントのカスタマイズと拡張{#customizing-and-extending-content-fragments}
 
 Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメントは標準アセットを拡張します。
 
@@ -166,7 +166,7 @@ Assets コアと統合するには：
 
    * 各スキーマフォームは、フラグメントエディターと統合されています。
 
-## コンテンツフラグメント管理 API - サーバー側  {#the-content-fragment-management-api-server-side}
+## コンテンツフラグメント管理 API - サーバー側 {#the-content-fragment-management-api-server-side}
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
@@ -176,7 +176,7 @@ Assets コアと統合するには：
 >
 >コンテンツ構造に直接アクセスする代わりに、サーバー側 API を使用することを強くお勧めします。
 
-### 主要インターフェイス  {#key-interfaces}
+### 主要インターフェイス {#key-interfaces}
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
@@ -236,7 +236,7 @@ Assets コアと統合するには：
 
 
 
-### 適応 - adaptTo() の使用 {#adapting-using-adaptto}
+### 適応 - adaptTo() の使用  {#adapting-using-adaptto}
 
 次のものを適応させることができます。
 
@@ -295,7 +295,7 @@ Assets コアと統合するには：
 技術的には、すべての編集は、他のすべての AEM の編集と同様、*ライブ*&#x200B;コンテンツでおこなわれます。編集セッションが開始されると、現在の未編集ステータスのバージョンが作成されます。ユーザーが編集をキャンセルすると、そのバージョンが復元されます。ユーザーが「**保存**」をクリックした場合、特定の操作はおこなわれません。すべての編集が&#x200B;*ライブ*&#x200B;コンテンツで実行されたので、すべての変更が既に保持されているからです。また、「**保存**」をクリックすると、一部のバックグラウンド処理（全文検索情報の作成や混在メディアアセットの処理など）がトリガーされます。
 
 エッジケースには、いくつかの安全対策があります（例：ユーザーが編集セッションを保存またはキャンセルせずにエディターを終了しようとした場合など）。また、データの損失を防ぐために、定期的な自動保存を使用できます。
-2人のユーザーが同じコンテンツフラグメントを同時に編集できるので、変更が互いに上書きされる場合があります。 これを防ぐには、DAM管理の*チェックアウト*&#x200B;アクションをフラグメントに適用して、コンテンツフラグメントをロックする必要があります。
+2 人のユーザーが同じコンテンツフラグメントを同時に編集できるので、他のユーザーが変更した内容が上書きされる場合があります。これを防ぐには、フラグメントに DAM 管理の*チェックアウト*&#x200B;アクションを適用して、コンテンツフラグメントをロックする必要があります。
 
 ## 例 {#examples}
 
@@ -317,7 +317,7 @@ if (fragmentResource != null) {
 }
 ```
 
-### 例：新しいコンテンツフラグメントの作成  {#example-creating-a-new-content-fragment}
+### 例：新しいコンテンツフラグメントの作成 {#example-creating-a-new-content-fragment}
 
 新しいコンテンツフラグメントをプログラムで作成するには、モデルリソースから適合した `FragmentTemplate` を使用する必要があります。
 
@@ -329,7 +329,7 @@ FragmentTemplate tpl = modelRsc.adaptTo(FragmentTemplate.class);
 ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
 ```
 
-### 例：自動保存間隔の指定  {#example-specifying-the-auto-save-interval}
+### 例：自動保存間隔の指定 {#example-specifying-the-auto-save-interval}
 
 [自動保存間隔](/help/assets/content-fragments/content-fragments-managing.md#save-close-and-versions)（秒単位）は、設定マネージャー（ConfMgr）を使用して定義できます。
 
