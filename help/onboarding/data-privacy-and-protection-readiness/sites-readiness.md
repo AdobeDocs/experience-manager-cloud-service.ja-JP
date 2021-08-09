@@ -1,43 +1,43 @@
 ---
-title: データ保護とデータプライバシーに関する規制 — Adobe Experience Manager as a Cloud Serviceサイト対応準備
-description: 様々なデータ保護およびデータプライバシー規制に対するCloud ServiceSitesのサポートとしてのAdobe Experience Managerについて説明します。EU一般データ保護規則(GDPR)、カリフォルニア州消費者プライバシー法、新しいAEM as a Cloud Serviceプロジェクトを実装する際の準拠方法を含みます。
+title: データ保護およびデータプライバシーに関する規制 - Adobe Experience Manager as a Cloud Service Sites の対応
+description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 46%
+ht-degree: 98%
 
 ---
 
-# Adobe Experience Manager as a Data Protection and Data Privacy RegulationsのCloud Serviceサイト対応に関する規制{#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# データ保護およびデータプライバシー規制に対する Adobe Experience Manager as a Cloud Service Sites の対応 {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
 >このドキュメントの内容は法的な助言にはならず、その代用になるものでもありません。
 >
->データ保護およびデータプライバシー規制に関するアドバイスについては、貴社の法務部門にお問い合わせください。
+>データ保護およびデータプライバシー規制に関するアドバイスについては、自社の法務部門にお問い合わせください。
 
 >[!NOTE]
 >
->Adobeのプライバシーに関する問題への対応と、Adobeのお客様への影響について詳しくは、[Adobeのプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+>アドビのプライバシーに関する問題への対応と、アドビのお客様への影響について詳しくは、[アドビのプライバシーセンター](https://www.adobe.com/jp/privacy.html)をご覧ください。
 
-Adobe Experience Manager as aCloud ServiceSitesは、お客様がデータのプライバシーと保護に関するコンプライアンスの義務を果たすのを支援する準備が整っています。 このページでは、AEM Sitesでのこのような要求の処理手順を説明します。 プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
+Adobe Experience Manager as a Cloud Service Sites は、データのプライバシーと保護に関するコンプライアンス義務の遂行でお客様を支援する用意が整っています。このページでは、AEM Sites でこのような要求を処理する手順について説明します。プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
 
-詳しくは、[Adobeプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+詳しくは、[アドビプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
 
 >[!NOTE]
 >
->詳しくは、データ保護およびデータプライバシー規制のCloud Service対応としての[Adobe Experience Manager](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
+>詳しくは、[データ保護およびデータプライバシー規制に対する Adobe Experience Manager as a Cloud Service の対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
 
 ## AEM オーサー層 {#aem-author-tier}
 
-オーサーサーバー上のユーザーアカウントとUGCコンテンツについては、[AEM Foundationのドキュメント](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
+オーサーサーバー上のユーザーアカウントと UGC コンテンツについては、[AEM の基盤に関するドキュメント](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
 
 ## AEM パブリッシュ層 {#aem-publish-tier}
 
-サイトで訪問者の認証に使用されるユーザーアカウントと、パブリッシュサーバー上のUGCコンテンツについては、AEM Foundationのドキュメント](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。[
+サイト上で訪問者の認証に使用されるユーザーアカウント、およびパブリッシュサーバー上の UGC コンテンツについては、[AEM の基盤に関するドキュメント](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)を参照してください。
 
-デフォルトでは、AEM Sitesコンポーネントは、訪問者がパブリッシュサーバーに入力したフォームデータを保存しません。 サードパーティのシステムまたは Adobe Campaign にデータを転送してさらに処理をおこなうことをお勧めします。
+AEM Sites コンポーネントはデフォルトでは、訪問者から入力されたフォームデータをパブリッシュサーバーに保存しません。サードパーティのシステムまたは Adobe Campaign にデータを転送してさらに処理を行うことをお勧めします。
 
 ## オプトイン／オプトアウト {#opt-in-opt-out}
 
@@ -45,41 +45,41 @@ Adobe Experience Manager as aCloud ServiceSitesは、お客様がデータのプ
 AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) that can be used for managing the opt-in/opt-out for users.
 -->
 
-Adobe Experience Managerには、ユーザーのオプトイン/オプトアウトの管理に使用されるcookieオプトアウトサービスが適用されます。
+Adobe Experience Manager には、ユーザーのオプトイン／オプトアウトの管理に使用される cookie オプトアウトサービスが適用されます。
 
 オプトアウトするには：
 
 1. 次の URL に移動します。
-   [Adobeプライバシーセンター — オプトアウト](https://www.adobe.com/privacy/opt-out.html)
+   [アドビプライバシーセンター - アドビのプライバシーに関する選択肢](https://www.adobe.com/jp/privacy/opt-out.html)
 
-1. 下にスクロールして&#x200B;**サービス** - **Experience Cloudサービス使用状況データ**&#x200B;に移動します。
+1. 下にスクロールして、**サービス**／**Experience Cloud サービスの使用状況データ**&#x200B;に移動します。
 
-1. 参照先のリンクを選択します。現在、**ここ**&#x200B;にタイトルが付いています。
+1. 参照先のリンクをクリックします。現在は、**こちらから**&#x200B;というリンクになっています。
 
 1. 以下の詳細と、オプトアウトまたはオプトインのオプションが表示されます。
 
-   * このサイトへの訪問に関するデータの集計や分析をオプトアウトするには、ブラウザーにcookieをインストールする必要があります。 このCookieは、オプトアウトしたことを示します。
+   * このサイトへのユーザーの訪問に関するデータ集計および解析をオプトアウトするには、ブラウザーに cookie をインストールする必要があります。この cookie はユーザーがオプトアウトしたことを識別します。
 
-      オプトアウトCookieを削除した場合、またはコンピューターやWebブラウザーを変更した場合は、再度オプトアウトする必要があります。
+      オプトアウト cookie を削除する、またはコンピューターまたは Web ブラウザーを変更する場合は、再度オプトアウトする必要があります。
 
-      オプトアウト — 訪問者セッションの集計および分析から除外（`amcglobal.sc.omtrdc.net`オプトアウトCookieをインストール） — ここをクリックします。
+      オプトアプト - ユーザーを訪問者セッション集計や解析から除外 (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストール) - ここをクリック
 
-      オプトイン — 訪問者セッションの集計と分析に含める（`amcglobal.sc.omtrdc.net`オプトアウトCookieをインストールしない） — ここをクリックします。
+      オプトイン - ユーザーを訪問者セッション集計や解析に含める (`amcglobal.sc.omtrdc.net` オプトアウト cookie をインストールしない) - ここをクリック
    上記の手順に従って、実際のリンクにアクセスします。
 
    >[!NOTE]
    >
-   > **2には、さらに詳しい説明があります。 プライバシー.** 」の節を参照し [てください](https://www.adobe.com/jp/legal/terms.html)。
+   > **2.プライバシー**&#x200B;の節（[アドビ基本利用条件](https://www.adobe.com/jp/legal/terms.html)の第 2 条）にさらに詳しい説明があります。
 
 ## Analytics Foundation {#analytics-foundation}
 
-AEM Sitesには、Adobe Analytics On-demand Service内の機能を使用するAnalytics Foundationとのオプションの統合が含まれています。
+AEM Sites には、Adobe Analytics On-demand Services 内の機能を使用した Analytics Foundation との統合（オプション）が含まれています。
 
-Adobe Analyticsに関連するデータ主体リクエストの管理について詳しくは、[Adobe Analyticsおよびデータプライバシー](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)を参照してください。
+Adobe Analytics に関連するデータ主体からの要求の管理について詳しくは、[Adobe Analytics とデータ保護](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)を参照してください。
 
-## Targetによるパーソナライゼーションの基盤{#personalization-foundation-by-target}
+## Personalization Foundation by Target {#personalization-foundation-by-target}
 
-AEM Sitesには、Adobe Target On-demand Service内の機能を使用する、Personalization Foundation by Targetとのオプションの統合が含まれています。
+AEM Sites には、Adobe Target On-demand Services 内の機能を使用した Personalization Foundation by Target との統合（オプション）が含まれています。
 
 Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)を参照してください。
 
@@ -89,18 +89,18 @@ Adobe Target に関連する データサブジェクトリクエストの管理
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-AEMは、ContextHubを備えたオプションのデータレイヤーを提供します。 ContextHub を使用する場合、訪問者固有のデータがブラウザー内に格納され、そのデータに基づいてルールベースのパーソナライゼーションが実行されます。
+AEM には、ContextHub を使用するオプションのデータレイヤーが用意されています。ContextHub を使用する場合、訪問者固有のデータがブラウザー内に格納され、そのデータに基づいてルールベースのパーソナライゼーションが実行されます。
 
-この訪問者データはデフォルトでは AEM に格納されません。ブラウザー内でパーソナライゼーションに関する決定をおこなうためのルールが、AEM からデータレイヤーに送信されます。
+この訪問者データはデフォルトでは AEM に格納されません。ブラウザー内でパーソナライゼーションに関する決定を行うためのルールが、AEM からデータレイヤーに送信されます。
 
 ### オプトイン／オプトアウトの実装 {#implementing-opt-in-opt-out}
 
 サイトの所有者は、オプトアウトコンポーネントを実装する際、以下のガイドラインに従う必要があります。
 
-これらのガイドラインでは、デフォルトでオプトインが実装されます。したがって、Webサイトの訪問者は、個人データをブラウザーの（クライアント側の）永続性に保存する前に、明確に同意する必要があります。
+これらのガイドラインでは、デフォルトでオプトインが実装されます。そのため、Web サイトの訪問者は、個人データがブラウザーの（クライアントサイド）永続ストレージに格納される前に、明確に同意する必要があります。
 
 * オプトアウトコンポーネントは、ContextHub コンポーネントを組み込むたびに必ず組み込んでください。
-* Webサイトのデータ保護とプライバシーに関連する利用条件をWebサイトの訪問者に表示し、次の操作を許可する必要があります。
+* Web サイトのデータ保護およびプライバシーに関連する利用条件を Web サイトの訪問者に表示して、訪問者が以下を行えるようにする必要があります。
 
    * 同意
    * 拒否
@@ -118,14 +118,14 @@ AEMは、ContextHubを備えたオプションのデータレイヤーを提供�
    ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
    ```
 
-* ContextHub がオプトアウトモードで動作しているかどうかを確認するには、ブラウザーのコンソールで次の呼び出しをおこなう必要があります。
+* ContextHub がオプトアウトモードで動作しているかどうかを確認するには、ブラウザーのコンソールで次の呼び出しを行う必要があります。
 
    ```
    var isOptedOut = ContextHub.isOptedOut(true) === true;
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### ContextHub の永続性のプレビュー  {#previewing-persistence-of-contexthub}
+### ContextHub の永続性のプレビュー {#previewing-persistence-of-contexthub}
 
 ContextHub で使用されている永続性をプレビューするには、次の方法があります。
 
@@ -135,9 +135,9 @@ ContextHub で使用されている永続性をプレビューするには、次
 
       * デベロッパー ツール／Application／Storage を選択
 
-         * Local Storage／（Web サイト）／ContextHubPersistence
+         * ローカルストレージ／（Web サイト）／ContextHubPersistence
          * Session Storage／（Web サイト）／ContextHubPersistence
-         * Cookies／（Web サイト）／SessionPersistence
+         * Cookie／（Web サイト）／SessionPersistence
    * Firefox:
 
       * 開発ツールを表示／ストレージを選択
@@ -168,7 +168,7 @@ ContextHub で使用されている永続性をプレビューするには、次
 
    * ContextHub には次のデータ永続性レイヤーが用意されています。
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (デフォルト値)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -184,9 +184,9 @@ ContextHub で使用されている永続性をプレビューするには、次
 
    * Chrome の場合：デベロッパー ツール／Application／Storage を選択
 
-      * Local Storage／（Web サイト）／ContextHubPersistence
+      * ローカルストレージ／（Web サイト）／ContextHubPersistence
       * Session Storage／（Web サイト）／ContextHubPersistence
-      * Cookies／（Web サイト）／SessionPersistence
+      * Cookie／（Web サイト）／SessionPersistence
    * Firefox の場合：開発ツールを表示／ストレージを選択
 
       * ローカルストレージ／（Web サイト）／ContextHubPersistence
@@ -198,7 +198,7 @@ ContextHub で使用されている永続性をプレビューするには、次
 
    * ContextHub には次のデータ永続性レイヤーが用意されています。
 
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (デフォルト値)
+      * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
       * `ContextHub.Utils.Persistence.Modes.SESSION`
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
@@ -213,7 +213,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### ContextHub の永続性の解除  {#clearing-persistence-of-contexthub}
+### ContextHub の永続性の解除 {#clearing-persistence-of-contexthub}
 
 ContextHub の永続性を解除するには：
 
@@ -243,7 +243,7 @@ ContextHub の永続性を解除するには：
 
 * ContextHub のすべての永続性レイヤーを解除するには、以下のすべてのレイヤーに対して適切なコードを呼び出す必要があります。
 
-   * `ContextHub.Utils.Persistence.Modes.LOCAL` (デフォルト値)
+   * `ContextHub.Utils.Persistence.Modes.LOCAL`（デフォルト）
    * `ContextHub.Utils.Persistence.Modes.SESSION`
    * `ContextHub.Utils.Persistence.Modes.COOKIE`
    * `ContextHub.Utils.Persistence.Modes.WINDOW`
