@@ -3,7 +3,7 @@ title: ローンチの作成
 description: 今後のアクティベートのために既存の Web ページの新しいバージョンを更新できるように、ローンチを作成できます。
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -25,7 +25,8 @@ ht-degree: 100%
 >
 >* `/libs/launches/templates/outofscope`
 >
->これらのページは編集できません。次のメッセージが表示されます。
+>
+これらのページは編集できません。次のメッセージが表示されます。
 >
 >* **このページはローンチに含まれていません。実稼動ページに移動**
 
@@ -117,7 +118,7 @@ ht-degree: 100%
 >
 >このメカニズムを使用して、[既存のページ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page)のテンプレートを変更できます。ただし、コンテンツが失われることは考慮する必要があります。
 
-### ネストされたローンチの作成  {#creating-a-nested-launch}
+### ネストされたローンチの作成{#creating-a-nested-launch}
 
 ネストされたローンチを作成（ローンチをローンチ内に作成）して、既存のローンチからローンチを作成できます。これにより、作成者は各ローンチで同じ変更を複数回加えることなく、既に加えられた変更を活用できます。
 
