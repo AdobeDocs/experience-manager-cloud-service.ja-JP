@@ -3,7 +3,7 @@ title: 既知の問題
 description: リリースノート（Adobe Experience Manager as a Cloud Service の既知の問題）
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
 ht-degree: 100%
 
