@@ -155,7 +155,7 @@ ht-degree: 98%
    * **優先 XF バリエーション**
       * ページのメタデータの生成に使用されるエクスペリエンスフラグメントのバリエーションを定義します
 
-### Cloud Services  {#cloud-services}
+### Cloud Services {#cloud-services}
 
 * **クラウドサービスの設定** - Cloud Services のプロパティを定義します
 
