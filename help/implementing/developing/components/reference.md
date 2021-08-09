@@ -5,7 +5,7 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -297,7 +297,7 @@ Content not found
 
 定義されるプロパティは、個々の定義によって異なります。上記と比べて複雑なプロパティの場合もありますが、なお同じ基本原則に従っています。
 
-## コンポーネントの階層および継承  {#component-hierarchy-and-inheritance}
+## コンポーネントの階層および継承 {#component-hierarchy-and-inheritance}
 
 AEM 内のコンポーネントは、**リソースタイプの階層**&#x200B;の対象となります。プロパティでコンポーネントを拡張する場合に使用されます。`sling:resourceSuperType`これにより、コンポーネントは別のコンポーネントから継承できます。
 
