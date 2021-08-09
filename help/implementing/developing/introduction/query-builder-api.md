@@ -5,7 +5,7 @@ exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
 workflow-type: tm+mt
 source-wordcount: '2039'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 91%
 
 Query Builder を使用すると、AEM のコンテンツリポジトリーへのクエリを簡単に実行できます。この機能は、Java API と REST API を通じて公開されます。この文書ではこれらの API について説明します。
 
-サーバーサイド Query Builder（[`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)）はクエリの記述を受け入れ、XPath クエリを作成して実行します。オプションで結果セットのフィルタリング、必要に応じてファセットの抽出もおこないます。
+サーバーサイド Query Builder（[`QueryBuilder`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/QueryBuilder.html)）はクエリの記述を受け入れ、XPath クエリを作成して実行します。オプションで結果セットのフィルタリング、必要に応じてファセットの抽出も行います。
 
 クエリの記述は、単に述語（[`Predicate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/Predicate.html)）のセットです。例としては、XPath の `jcr:contains()` 関数に対応するフルテキスト述語が含まれます。
 
@@ -25,7 +25,7 @@ REST API を使用すると、JSON で送信される応答を使用した HTTP 
 >
 >QueryBuilder API は JCR API を使用して構築されています。また、OSGi バンドル内から JCR API を使用して、AEM JCR をクエリすることもできます。詳しくは、[JCR API を使用した Adobe Experience Manager データのクエリ](https://helpx.adobe.com/jp/experience-manager/using/querying-experience-manager-data-using1.html)を参照してください。
 
-## Gem セッション  {#gem-session}
+## Gem セッション {#gem-session}
 
 [AEM Gems](https://helpx.adobe.com/jp/experience-manager/kt/eseminars/gems/aem-index.html) は、アドビの専門家が提供する、Adobe Experience Manager を技術的に深く掘り下げた一連のセッションです。
 
@@ -206,7 +206,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 `"Experience" and ("/content/wknd/us/en/magazine" or "/content/wknd/us/en/adventures")`
 
-例にあるグループの内部では、`path` 述語が複数回使用されています。この述語の 2 つのインスタンスの区別と順序付け（一部の述語では順序付けが必要）をおこなう場合は、述語にプレフィックス `N_` を付けます。`N` は順序を表すインデックスです。前の例では、こうして得られた述語は、`1_path` および `2_path` です。
+例にあるグループの内部では、`path` 述語が複数回使用されています。この述語の 2 つのインスタンスの区別と順序付け（一部の述語では順序付けが必要）を行う場合は、述語にプレフィックス `N_` を付けます。`N` は順序を表すインデックスです。前の例では、こうして得られた述語は、`1_path` および `2_path` です。
 
 `p` 内の `p.or` は特殊な区切り文字で、後に続くもの（このケースでは `or`）がグループの&#x200B;*パラメーター*&#x200B;であることを示します。これは、グループのサブ述語（`1_path` など）とは対照的です。
 
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-他に実行可能な方法として、Query Builder の応答に子ノードを含めることができます。これをおこなうには、
+他に実行可能な方法として、Query Builder の応答に子ノードを含めることができます。これを行うには、
 
 ```xml
 p.nodedepth=n
@@ -353,7 +353,7 @@ p.nodedepth=5
 
 このようなプリンシパルプロパティの場合は、クエリを短縮して、完全修飾バリアント `similar=/content/en` の代わりに `similar.similar=/content/en` を使用できます。完全修飾形式は、クラスのプリンシパルプロパティではないすべてのプロパティに対して使用する必要があります。
 
-## Query Builder API の使用例  {#example-query-builder-api-usage}
+## Query Builder API の使用例 {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "WKND";
@@ -502,7 +502,7 @@ com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```
 
-フィルターをおこなう述語エバリュエーターや、コンパレーターでカスタム順序を使用する述語エバリュエーターを使用するクエリがある場合は、クエリ内にそのことも記述されます。
+フィルターを行う述語エバリュエーターや、コンパレーターでカスタム順序を使用する述語エバリュエーターを使用するクエリがある場合は、クエリ内にそのことも記述されます。
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):
@@ -517,7 +517,7 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Javadoc リンク  {#javadoc-links}
+## Javadoc リンク {#javadoc-links}
 
 | **Javadoc** | **説明** |
 |---|---|
@@ -527,4 +527,4 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 | [com.day.cq.search.facets.buckets](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/buckets/package-summary.html) | バケット（ファセット内に含まれる） |
 | [com.day.cq.search.eval](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/eval/package-summary.html) | 述語エバリュエーター |
 | [com.day.cq.search.facets.extractors](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/facets/extractors/package-summary.html) | ファセット抽出（エバリュエーター用） |
-| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | Query Builder サーブレット用の JSON Result Hit Writer (`/bin/querybuilder.json`) |
+| [com.day.cq.search.writer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/search/writer/package-summary.html) | Query Builder サーブレット用の JSON Result Hit Writer（`/bin/querybuilder.json`） |
