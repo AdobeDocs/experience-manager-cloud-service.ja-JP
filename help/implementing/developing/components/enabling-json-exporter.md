@@ -22,7 +22,7 @@ JSON 書き出しは、[Sling Model](https://sling.apache.org/documentation/bund
 * [コンポーネントに Sling Model を定義する](#define-a-sling-model-for-the-component)
 * [Sling Model インターフェイスに注釈を付ける](#annotate-the-sling-model-interface)
 
-## コンポーネントに Sling Model を定義する     {#define-a-sling-model-for-the-component}
+## コンポーネントに Sling Model を定義する {#define-a-sling-model-for-the-component}
 
 まず、コンポーネントに Sling Model を定義する必要があります。
 
