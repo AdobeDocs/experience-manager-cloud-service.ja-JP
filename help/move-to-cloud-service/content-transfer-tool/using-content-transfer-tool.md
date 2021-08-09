@@ -63,7 +63,7 @@ ht-degree: 90%
 コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
 
 >[!NOTE]
->[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/ja/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
+>[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
@@ -221,7 +221,7 @@ ht-degree: 90%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
 
-   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)も参照してください。
+   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs)も参照してください。
 
 1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
 
