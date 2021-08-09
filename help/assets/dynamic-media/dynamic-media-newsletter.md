@@ -115,7 +115,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    この号の主な内容：
 
    * Dynamic Media にアップグレードした場合にのみ利用できる有用な機能の紹介
-   *  Experience Manager Assets と Dynamic Media をすばやく習得できるように工夫されている Web セミナーシリーズの概要
+   * Experience Manager Assets と Dynamic Media をすばやく習得できるように工夫されている Web セミナーシリーズの概要
    * Dynamic Media で価値を実現する取り組みの出発点としての Experience League
    * 訪問者がリッチメディアとどのようにやり取りしているかを分析できる強力な統合機能（今年 9 月にリリース予定）のプレビュー
    * `PieterJan Pieper`様、Dynamic Mediaのテクニカルサポートをお待ちしております。
@@ -154,7 +154,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
 
 * **[2019 年 4 月、第 04 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Dynamic Media ニュースレターの創刊号へようこそ。アドビの新しい月刊ニュースレターには、ニュース、イベント、リソースが多数掲載されています。コンテンツは、 Experience Manager Assets や AdobeDynamic Media Classic の Dynamic Media ユーザーを対象としています。
+   Dynamic Media ニュースレターの創刊号へようこそ。アドビの新しい月刊ニュースレターには、ニュース、イベント、リソースが多数掲載されています。コンテンツは、 Experience Manager Assets や Adobe Dynamic Media Classic の Dynamic Media ユーザーを対象としています。
 
    この号の主な内容：
 
