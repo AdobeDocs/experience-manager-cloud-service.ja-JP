@@ -3,9 +3,9 @@ title: AEM コネクタの実装
 description: AEM コネクタの実装
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 上記の静的ドキュメントに加えて、アドビおよび AEM コミュニティでは、コネクタの市場投入に役立つ以下のリソースを提供しています。
 
 * アドビコミュニティの [AEM フォーラム](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)は、同業者が質問をしたり質問に答えたりする活発なサイトです。
-* アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://partners.adobe.com/exchangeprogram/experiencecloud)を参照してください。
+* アドビのその他の技術リソースは、個々のパートナーレベルで利用できます。詳しくは、[Adobe Exchange プログラム](https://partners.adobe.com/jp/exchangeprogram/experiencecloud)を参照してください。
 * 組織が実装の支援を希望する場合は、アドビの [Professional Services](http://www.adobe.com/jp/marketing-cloud/service-support/professional-consulting-training.html) チームへの依頼を検討するか、[ソリューションパートナーファインダー](https://solutionpartners.adobe.com/home/partnerFinder.html)でアドビの世界中のパートナーのリストを確認してください。
 
 パッケージ構成ルール
@@ -61,7 +61,7 @@ Adobe Experience Manager as a Cloud Service の[ドキュメント](../overview/
 
 さらに、`/libs` にコードを書き込むのはアドビだけで、ユーザーとパートナーは `/apps` にコードを書き込みます。
 
-既存のコネクタの場合、一度 `/etc` に配置した設定を他の最上位フォルダー（`/conf` など）に移動するには、コネクタのリファクタリングも必要になる可能性があります。この再構築はAEM 6.5の一部としておこなわれ、 AEM 6.5のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)で説明されています。[
+既存のコネクタの場合、一度 `/etc` に配置した設定を他の最上位フォルダー（`/conf` など）に移動するには、コネクタのリファクタリングも必要になる可能性があります。この再構築は AEM 6.5 の一部としておこなわれ、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)で説明されています。
 
 複数のコネクタを持つユーザー向けにクリーンなリポジトリ構造を推進するには、コネクタコードの大部分を `/apps/connectors/<vendor>` の配下に格納することをお勧めします。
 
