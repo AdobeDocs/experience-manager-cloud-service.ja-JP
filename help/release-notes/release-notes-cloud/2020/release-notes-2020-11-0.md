@@ -9,7 +9,7 @@ ht-degree: 98%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート  {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites] の新機能 {#what-is-new-sites}
+### [!DNL Sites] の新機能  {#what-is-new-sites}
 
 * **[ローンチ階層管理](/help/sites-cloud/authoring/launches/managing-pages.md)と[将来へのタイムワープ](/help/sites-cloud/authoring/launches/preview.md)**：ローンチ内でページを追加／削除するための新しい UI が追加されました。また、タイムワープを使用してサイトを参照すると、ローンチからの将来の状態が表示されるようになりました。
 
@@ -29,7 +29,7 @@ ht-degree: 98%
 
 ## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
 
-### [!DNL Assets] と [!DNL Dynamic Media] の新機能 {#what-is-new-assets}
+### [!DNL Assets] と [!DNL Dynamic Media] の新機能  {#what-is-new-assets}
 
 * **アセットの一括取り込み**：アセットマイクロサービスなど、[!DNL Experience Manager] as a Cloud Service アーキテクチャを活用する拡張可能でクラウドネイティブな取り込みサービスを提供します。主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールでおこなえることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
 
@@ -46,7 +46,7 @@ ht-degree: 98%
 
    * キーボードを使用してタイムラインのナビゲーションをおこなう場合、Esc キーを押すと、フォーカスを失わずに「すべて表示」オプションを折りたたむことができます。
    * キーボードの Tab キーを使用してナビゲーションをおこなう場合、追加したタグから最後のタグを削除した後も、フォーカスはそのタグフィールドにとどまります。
-   * スクリーンリーダーで使用される名前、役割、値の適切な情報が [!DNL Experience Manager] コンポーネントに含まれるようになりました。
+   * スクリーンリーダーで使用される名前、ロール、値の適切な情報が [!DNL Experience Manager] コンポーネントに含まれるようになりました。
    * 「種類 / サイズ」コンボボックス、「リンク」コンボボックス、「言語」コンボボックス、または「テキスト」編集ボックスを削除すると、キーボードフォーカスは次または前のユーザーインターフェイス要素、またはより関連性の高いユーザーインターフェイス要素に戻ります。
    * オプションの上にポインターを置くと、「選択」や「ダウンロード」などのヒントが表示されます。拡大鏡を使用している場合は、これらのヒントが原因でファイルのサムネールが表示されないことがあります。`Escape` キーを使用してオプションを削除した後に、フォーカスを保持できるようになりました。
    * ページ内にあるグリッドからグリッドセルを選択すると、画面に表示されるアクションバーにフォーカスが移動します。
@@ -58,7 +58,7 @@ ht-degree: 98%
 
 * [!DNL Dynamic Media] では、アクセシビリティが次のように強化されました。
 
-   * 「埋め込みサイズ」メニューオプションのメニュー項目の名前、役割、状態がスクリーンリーダー（JAWS、ナレーター）で読み上げられます。
+   * 「埋め込みサイズ」メニューオプションのメニュー項目の名前、ロール、状態がスクリーンリーダー（JAWS、ナレーター）で読み上げられます。
    * ユーザーは `Tab` キーを使用して電子メールリンクダイアログ内を移動できます。
    * スクリーンリーダーの機能が強化されたので、ビデオエンコーディングプロファイルを作成するワークフローが、より使いやすくなりました。
    * インタラクティブビデオを作成するワークフローで `Tab` キーを使用してナビゲートする場合、フォーカスは適切なユーザーインターフェイス要素に移動します。
@@ -87,7 +87,7 @@ ht-degree: 98%
 
 AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 年 11 月 12 日です。
 
-### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
+### [!DNL Cloud Manager] の新機能  {#what-is-new-cm}
 
 * **環境**&#x200B;カードおよび&#x200B;**環境**&#x200B;概要ページの環境メニューオプションから、新しいメニューオプション「**ローカルログイン**」が利用できるようになりました。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#login-locally)を参照してください。
 
@@ -95,7 +95,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 
 ### バグ修正 {#bug-fixes-cloud-manager}
 
-* ビルドの実行に先立っておこなわれる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
+* ビルドの実行に先立って行われる依存関係の読み込みには、Maven プラグインのダウンロードが必要でした。
 * 言語を選択するための Cloud Manager フッターからのリンクが、正しい場所を指すようになりました。
 * コードスキャン時に SonarQube プロセスが起動しないことがあります。これが自動検出され、再起動が試行されるようになりました。
 * 「エクスペリエンス監査」ステップで既存のすべての実稼働パイプラインが自動的に有効になります。
@@ -136,7 +136,7 @@ Cloud Manager によるビルド時には Apache および Dispatcher 設定の�
 
 ベストプラクティスアナライザーのリリース日は 2020 年 11 月 13 日です。
 
-### [!DNL Best Practices Analyzer] の新機能 {#what-is-new-bpa}
+### [!DNL Best Practices Analyzer] の新機能  {#what-is-new-bpa}
 
 * Cloud Readiness Analyzer は、ベストプラクティスアナライザー（BPA）になりました。BPA は、現在の AEM 実装のベストプラクティス評価を提供し、既存の AEM インスタンスから AEM as a Cloud Service への移行の準備状況を評価するのに役立ちます。
 
