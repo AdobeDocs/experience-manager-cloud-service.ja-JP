@@ -1,17 +1,17 @@
 ---
 title: コンテンツフラグメントへのアクセスとヘッドレス配信クイック開始ガイド
-description: AEM Assets REST APIを使用して、コンテンツフラグメントと、コンテンツフラグメントコンテンツのヘッドレス配信用のGraphQL APIを管理する方法について説明します。
+description: AEM Assets REST API を使用して、コンテンツフラグメントと、コンテンツフラグメントコンテンツのヘッドレス配信用の GraphQL API を管理する方法について説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # コンテンツフラグメントへのアクセスとヘッドレス配信クイック開始ガイド {#accessing-delivering-content-fragments}
 
-AEM Assets REST APIを使用して、コンテンツフラグメントと、コンテンツフラグメントコンテンツのヘッドレス配信用のGraphQL APIを管理する方法について説明します。
+AEM Assets REST API を使用して、コンテンツフラグメントと、コンテンツフラグメントコンテンツのヘッドレス配信用の GraphQL API を管理する方法について説明します。
 
 ## GraphQL API と Assets REST API とは何ですか {#what-are-the-apis}
 
