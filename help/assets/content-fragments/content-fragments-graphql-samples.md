@@ -19,8 +19,8 @@ GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを�
 >このページと併せて、次の記事も参照してください。
 >
 >* [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)
-* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
-* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
+>* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 GraphQL クエリの基本と、AEM コンテンツフラグメントとの連携方法を学ぶには、いくつかの実践的な例が参考になります。
@@ -37,11 +37,13 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 クエリの作成とサンプル結果については、これらのサンプルクエリを参照してください。
 
 >[!NOTE]
-インスタンスによっては、[AEM GraphQL API に付属している Graph *i* QL インターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)に直接アクセスして、クエリの送信とテストをおこなうことができます。
-例：`http://localhost:4502/content/graphiql.html`
+>
+>インスタンスによっては、[AEM GraphQL API に付属している Graph *i* QL インターフェイス](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)に直接アクセスして、クエリの送信とテストをおこなうことができます。
+>例：`http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
-サンプルクエリは、[GraphQL で使用するコンテンツフラグメント構造のサンプル](#content-fragment-structure-graphql)に基づいています。
+>
+>サンプルクエリは、[GraphQL で使用するコンテンツフラグメント構造のサンプル](#content-fragment-structure-graphql)に基づいています。
 
 ### サンプルクエリ - 使用可能なすべてのスキーマとデータタイプ {#sample-all-schemes-datatypes}
 
@@ -1100,7 +1102,8 @@ query {
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
-結果は膨大な量になる可能性があるので、ここでは再現されていません。
+>
+>結果は膨大な量になる可能性があるので、ここでは再現されていません。
 
 ### 特定モデルのコンテンツフラグメントのうち指定のプロパティを持つものをすべて取得するサンプルクエリ {#sample-wknd-all-model-properties}
 
@@ -1245,7 +1248,8 @@ query {
    * その中の、参照されている（ネストされた）フラグメントのパスと作成者
 
 >[!NOTE]
-フィールド `referencearticle` のデータタイプは `fragment-reference` です。
+>
+>フィールド `referencearticle` のデータタイプは `fragment-reference` です。
 
 **サンプルクエリ**
 
@@ -1272,7 +1276,8 @@ query {
    * 特定のモデルタイプ `article` および `adventure` の他のフラグメントへのフラグメント参照を含むもの
 
 >[!NOTE]
-フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。
+>
+>フィールド `fragments` のデータタイプは `fragment-reference` で、モデル `Article` および `Adventure` が選択されています。
 
 ```xml
 {
@@ -1346,7 +1351,8 @@ query {
 次のクエリは、すべての `attachments`（`content-reference` タイプの特定のフィールド（サブグループ））を返します。
 
 >[!NOTE]
-フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
+>
+>フィールド `attachments` のデータタイプは `content-reference` で、様々なフ形式が選択されています。
 
 ```xml
 {
@@ -1387,7 +1393,8 @@ query {
    * その中の RTE インライン参照
 
 >[!NOTE]
-RTE インライン参照は、`_references` 内に含まれます。
+>
+>RTE インライン参照は、`_references` 内に含まれます。
 
 **サンプルクエリ**
 

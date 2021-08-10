@@ -51,7 +51,7 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
 >オーサリング作業をより簡単にできる多くのキーボードショートカットがあります。
 >
 >* [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+>* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
 ### ページの検索 {#finding-your-page}
@@ -159,8 +159,10 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * コンポーネントを[コピー（および貼り付け）](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)します。
 
       * タップまたはクリックしてコンポーネントツールバーを開きます。必要に応じて、**コピー**&#x200B;アイコン、続いて&#x200B;**貼り付け**&#x200B;アイコンを使用します。
+
    >[!NOTE]
-   同じページ、または別のページにコンポーネントを&#x200B;**貼り付ける**&#x200B;ことができます。切り取り／コピー操作を実行する前に開かれていたページに貼り付けるには、そのページを更新する必要があります。
+   >
+   >同じページ、または別のページにコンポーネントを&#x200B;**貼り付ける**&#x200B;ことができます。切り取り／コピー操作を実行する前に開かれていたページに貼り付けるには、そのページを更新する必要があります。
 
    * コンポーネントを[削除します。](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar)
 
@@ -176,7 +178,8 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * 「**編集**」ドロップダウンセレクターを使用して、編集モードに戻ります（またはその他のモードを選択します）。
 
    >[!NOTE]
-   コンテンツのリンクを使用して移動するには、[プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)を使用する必要があります。
+   >
+   >コンテンツのリンクを使用して移動するには、[プレビューモード](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)を使用する必要があります。
 
 ### ページプロパティの編集{#editing-the-page-properties}
 
@@ -251,8 +254,10 @@ AEM によるオーサリングについて詳しくは、以下を参照して�
    * 削除：
 
       * この操作の確認が求められます。
+
    >[!NOTE]
-   削除は、クイックアクションでは使用できません。
+   >
+   >削除は、クイックアクションでは使用できません。
 
 ### ページのロック（およびロック解除）{#locking-your-page-then-unlocking}
 

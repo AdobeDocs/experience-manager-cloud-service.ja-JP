@@ -28,8 +28,8 @@ ht-degree: 100%
 >項目タイプについて詳しくは、次の項目も参照してください。
 >
 >* [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
-* [プロジェクト - タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
-* [ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)
+>* [プロジェクト - タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
+>* [ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)
 
 
 ## ヘッダーのインボックス {#inbox-in-the-header}
@@ -39,7 +39,8 @@ ht-degree: 100%
 ![ヘッダーのインボックスの概要](/help/sites-cloud/authoring/assets/inbox-header.png)
 
 >[!NOTE]
-特定のアクションは、[適切なリソースのカード表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)にも表示されます。
+>
+>特定のアクションは、[適切なリソースのカード表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)にも表示されます。
 
 ## インボックスを開く{#opening-the-inbox}
 
@@ -55,7 +56,8 @@ AEM 通知インボックスを開くには：
    ![インボックスの表示設定](/help/sites-cloud/authoring/assets/inbox-view-settings.png)
 
 >[!NOTE]
-インボックスはコンソールとして機能するので、完了したら[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)または[検索](/help/sites-cloud/authoring/getting-started/search.md)を使用して、別の場所に移動します。
+>
+>インボックスはコンソールとして機能するので、完了したら[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)または[検索](/help/sites-cloud/authoring/getting-started/search.md)を使用して、別の場所に移動します。
 
 ### インボックス - リスト表示 {#inbox-list-view}
 
@@ -108,7 +110,8 @@ AEM 通知インボックスを開くには：
 ## 項目に対するアクションの実行 {#taking-action-on-an-item}
 
 >[!NOTE]
-複数のアイテムを選択できますが、一度に 1 つのアイテムに対してのみアクションを実行できます。
+>
+>複数のアイテムを選択できますが、一度に 1 つのアイテムに対してのみアクションを実行できます。
 
 1. 項目に対してアクションを実行するには、該当する項目のサムネールを選択します。その項目に適用可能なアクションのアイコンがツールバーに表示されます。
 
@@ -128,8 +131,9 @@ AEM 通知インボックスを開くには：
    * 項目からプロジェクトを作成する
 
    >[!NOTE]
-   詳しくは、次のセクションを参照してください。
-   * ワークフローの項目 - [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
+   >
+   >詳しくは、次のセクションを参照してください。
+   >* ワークフローの項目 - [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 
 
 2. 選択した項目に応じて、アクションが開始されます。例えば、次の操作がおこなわれます。
@@ -184,8 +188,9 @@ AEM 通知インボックスを開くには：
 1. サムネールをタップまたはクリックして、適切なタスクを選択します。
 
    >[!NOTE]
-   プロジェクトの作成に使用できるのは、**インボックス**&#x200B;の「**作成**」オプションを使用して作成されたタスクのみです。
-   （ワークフローからの）作業項目はプロジェクトの作成に使用できません。
+   >
+   >プロジェクトの作成に使用できるのは、**インボックス**&#x200B;の「**作成**」オプションを使用して作成されたタスクのみです。
+   >（ワークフローからの）作業項目はプロジェクトの作成に使用できません。
 
 1. ツールバーの「**プロジェクトを作成**」を選択してウィザードを開きます。
 1. 適切なテンプレートを選択して、「**次へ**」を選択します。
@@ -201,8 +206,10 @@ AEM 通知インボックスを開くには：
    * **アドバンス**
 
       * **名前**
+
    >[!NOTE]
-   詳しくは、[プロジェクトの作成](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)を参照してください。
+   >
+   >詳しくは、[プロジェクトの作成](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)を参照してください。
 
 1. 「**作成**」を選択してアクションを確定します。
 
@@ -221,4 +228,5 @@ AEM 通知インボックスを開くには：
    ![インボックスでの検索フィルター](/help/sites-cloud/authoring/assets/inbox-search-filter.png)
 
    >[!NOTE]
-   「[設定を表示](#inbox-view-settings)」では、[リスト表示](#inbox-list-view)を使用するときの並べ替え順を設定することもできます。
+   >
+   >「[設定を表示](#inbox-view-settings)」では、[リスト表示](#inbox-list-view)を使用するときの並べ替え順を設定することもできます。

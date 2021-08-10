@@ -51,9 +51,9 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >
 >* [コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 >* [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
-* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-* [AEM Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md)
-* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
+>* [AEM Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
@@ -75,9 +75,10 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 さらにこうしたコンテンツフラグメントを集めて組み立てることで、多様なチャネルにエクスペリエンスを提供できます。
 
 >[!NOTE]
-**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
-* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
-* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
+>
+>**コンテンツフラグメント**&#x200B;と&#x200B;**[エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)**&#x200B;は、AEM 内の異なる機能です。
+>* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
+>* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
 
 エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
 詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
@@ -99,13 +100,16 @@ AEM コンテンツフラグメントを使用して構造化コンテンツを�
 AEM コアコンポーネントの JSON 書き出し機能と共にこの構造化コンテンツを使用して、AEM コンテンツを AEM ページ以外のチャネルに配信できます。
 
 >[!NOTE]
-AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/implementing/developing/headless/introduction.md)を参照してください。
+>
+>AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/implementing/developing/headless/introduction.md)を参照してください。
 
 >[!NOTE]
-AEM はフラグメントコンテンツの翻訳もサポートしています。
+>
+>AEM はフラグメントコンテンツの翻訳もサポートしています。
 
 >[!NOTE]
-AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「[アセットの翻訳](/help/assets/translate-assets.md)」を参照してください。
+>
+>AEM はフラグメントコンテンツの翻訳もサポートしています。詳しくは、「[アセットの翻訳](/help/assets/translate-assets.md)」を参照してください。
 
 ## コンテンツタイプ {#content-type}
 
@@ -144,7 +148,8 @@ AEM はフラグメントコンテンツの翻訳もサポートしています�
    * 詳しくは、フラグメントエディターでの[フラグメントへのアセットの挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)を参照してください。
 
    >[!NOTE]
-   コンテンツフラグメント自体に挿入したビジュアルアセットは、前の段落に添付されます。このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
+   >
+   >コンテンツフラグメント自体に挿入したビジュアルアセットは、前の段落に添付されます。このコンテンツフラグメントをページに追加した場合、ビジュアルアセットは、中間コンテンツが追加されたタイミングで前の段落との関連で移動します。
 
 * **関連コンテンツ**
 
@@ -188,10 +193,12 @@ AEM はフラグメントコンテンツの翻訳もサポートしています�
    * 前のテキスト（段落）に添付されます。
 
       >[!CAUTION]
-      プレーンテキスト形式に切り替えると、アセットが（誤って）フラグメントから削除されるおそれがあります。
+      >
+      >プレーンテキスト形式に切り替えると、アセットが（誤って）フラグメントから削除されるおそれがあります。
 
       >[!NOTE]
-      ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、または Assets ブラウザー内のアセットを使用します。
+      >
+      >ページでフラグメントを使用する場合は、アセットを[追加の（中間）コンテンツ](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content)として追加することもできます。その場合は、関連コンテンツ、または Assets ブラウザー内のアセットを使用します。
 
 * **関連コンテンツ**
 
@@ -215,7 +222,8 @@ AEM はフラグメントコンテンツの翻訳もサポートしています�
          * フラグメントエディターで&#x200B;**メタデータ**&#x200B;を編集することによって
 
    >[!CAUTION]
-   メタデータ処理プロファイルは、コンテンツフラグメントには適用されません。
+   >
+   >メタデータ処理プロファイルは、コンテンツフラグメントには適用されません。
 
 * **マスター**
 
@@ -248,7 +256,8 @@ AEM はフラグメントコンテンツの翻訳もサポートしています�
 * 該当するブラウザーで使用できるアセットやコンポーネントと同様に、関連コンテンツを使用できます。
 
 >[!CAUTION]
-中間コンテンツは、ページコンテンツです。中間コンテンツはコンテンツフラグメントに保存されません。
+>
+>中間コンテンツは、ページコンテンツです。中間コンテンツはコンテンツフラグメントに保存されません。
 
 ### フラグメントを利用するための要件 {#required-by-fragments}
 

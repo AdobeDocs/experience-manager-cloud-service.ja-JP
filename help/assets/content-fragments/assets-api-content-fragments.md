@@ -22,10 +22,8 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
-
 >
->
-現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
+>現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
 [Assets REST API](/help/assets/mac-api-assets.md) を使用すると、Adobe Experience Manager as a Cloud Service のデベロッパーは、HTTP API 経由で CRUD 操作（作成、読み取り、更新、削除）を介して、（AEM に保存された）コンテンツに直接アクセスできます。
 
@@ -67,6 +65,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
 
 >[!NOTE]
+>
 >アクセス経由：
 >
 >* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
@@ -149,7 +148,6 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
