@@ -25,7 +25,7 @@ ht-degree: 100%
 | コンソール | `?` | キーボードショートカットヘルプ |
 |  | `/` | [検索](/help/sites-cloud/authoring/getting-started/search.md)を呼び出す |
 |  | `Alt+`&lt;`Number`> | 表示する[レールセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)オプションを切り替える |
-|  | ` | レールを非表示 |
+|  | &grave; | レールを非表示 |
 |  | `e` | 編集 |
 |  | `p` | プロパティ |
 |  | `m` | 移動 |
