@@ -3,7 +3,7 @@ sub-product: Adobe Experience Manager as a Cloud Service のヘルプ
 user-guide-title: Adobe Experience Manager as a Cloud Service のヘルプ
 feature: リリース情報
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 68%
@@ -27,3 +27,4 @@ ht-degree: 68%
 + [AEM as a Cloud Service のアプリケーションの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
 + [AEM as a Cloud Service のコネクタの実装 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/connectors/home.html)
 + [AEM as a Cloud Service の運用と保守 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/home.html)
+
