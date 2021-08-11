@@ -2,7 +2,7 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 08a687afa423255046dd37c55547d3615ea8276b
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 53%
@@ -70,7 +70,7 @@ Cloud Serviceとしての[!DNL Adobe Experience Manager]は、イノベーショ
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html)
-* [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
