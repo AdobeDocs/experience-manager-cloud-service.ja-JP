@@ -1,10 +1,10 @@
 ---
 title: AEM Screens as aCloud Service
 description: Adobe Experience Manager Screens as aCloud Serviceのセルフヘルプリソースおよびドキュメントリンク
-source-git-commit: 8d68844d67b6025b5dbb7351ed123765afe742bc
+source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 69%
 * [ScreensでのプロジェクトのCloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=en)
 * [Screens Playerのインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en)
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience ManagerガイドとしてのCloud Service {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -37,7 +37,7 @@ ht-degree: 69%
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service の管理方法について説明します。 |
 | [Assets ユーザーガイド](/help/assets/home.md) | Adobe Experience Manager Assets as a Cloud Service の管理方法について説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを探索して、最初のヘッドレスプロジェクトの準備をしてください。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にソリューションを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 
@@ -47,7 +47,7 @@ ht-degree: 69%
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
-* [GDPR 対応](/help/onboarding/data-privacy-and-protection-readiness/aem-readiness.md)
+* [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
