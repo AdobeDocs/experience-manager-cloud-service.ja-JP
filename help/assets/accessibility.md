@@ -5,7 +5,7 @@ contentOwner: AG
 feature: アクセシビリティ、アセット管理
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 2f9e8c00674979c4a245d410b68fd99c60eccfb4
+source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 100%
@@ -60,7 +60,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 [!DNL Experience Manager] のアクセシビリティ機能は、[!DNL Experience Manager] ユーザーとその顧客の 2 つの主要な要件に対応しています。
 
-* コンテンツデザイナーやクリエーターには、アクセシブルなコンテンツを作成して公開する機能が提供されます。作成されたコンテンツは、顧客や Web サイト訪問者によって使用されます。障害を持つユーザーは、支援テクノロジーを使用してコンテンツを使用できます。詳しくは、「[Web アクセシビリティのガイドライン](/help/onboarding/accessibility/web-accessibility.md)」を参照してください。
+* コンテンツデザイナーやクリエーターには、アクセシブルなコンテンツを作成して公開する機能が提供されます。作成されたコンテンツは、顧客や Web サイト訪問者によって使用されます。障害を持つユーザーは、支援テクノロジーを使用してコンテンツを使用できます。詳しくは、「[Web アクセシビリティのガイドライン](/help/compliance/accessibility/quick-guide-wcag.md)」を参照してください。
 * また、[!DNL Experience Manager] では、障害を持つユーザーや管理者が、コンテンツの作成と管理をおこなうためのユーザーインターフェイスやコントロールにアクセスできます。障害を持つユーザーは、支援テクノロジーを使用して、[!DNL Assets] 機能をナビゲート、使用、管理できます。
 
 [!DNL Assets] の主な機能は以前よりもアクセスしやすく、定期的にアップデートされており、グローバル標準への準拠が改善されています。[!DNL Assets] の CRUD 操作には、ある程度のアクセシビリティが組み込まれています。アセットの追加、管理、検索、配布などの DAM ワークフローには、キーボードショートカット、スクリーンリーダーテキスト、カラーコントラストなどの支援を受けてアクセスできます。
@@ -226,6 +226,6 @@ CRUD 操作、アセットのダウンロード、メタデータの追加など
 >[!MORELIKETHIS]
 >
 >* [各リリースでおこなわれた機能強化のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
->* [[!DNL Adobe Experience Manager] アクセシビリティガイダンス](/help/onboarding/accessibility/web-accessibility.md)
+>* [[!DNL Adobe Experience Manager] アクセシビリティガイダンス](/help/compliance/accessibility/web-accessibility.md)
 >* [アドビソリューションのアクセシビリティ準拠レポート（ACR）および VPAT リスト](https://www.adobe.com/accessibility/compliance.html)
 
