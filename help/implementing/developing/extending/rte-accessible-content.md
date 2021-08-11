@@ -3,8 +3,8 @@ title: アクセシブルな Web ページとサイトの作成に向けた RTE 
 description: ' [!DNL Adobe Experience Manager] でアクセシブルなサイトを作成するためのリッチテキストエディターの設定について説明します。'
 contentOwner: AG
 exl-id: 54050fc9-0348-4033-8e2b-b3897588cb62
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -147,6 +147,6 @@ In a `Table`, set the attribute to the DOM element or or remove it from the DOM 
 
 >[!MORELIKETHIS]
 >
->* [WCAG 標準規格のクイックガイド](/help/onboarding/accessibility/quick-guide-wcag.md)
+>* [WCAG 標準規格のクイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 * [Experience Manager でアクセシブルなコンテンツを作成する方法](/help/sites-cloud/authoring/fundamentals/accessible-content.md)
 
