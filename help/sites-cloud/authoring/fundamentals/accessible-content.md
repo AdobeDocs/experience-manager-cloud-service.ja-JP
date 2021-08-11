@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service 向けアクセシブルコンテンツの作成（WCAG 2.1 準拠）
 description: AEM as a Cloud Service を使用すると、障碍のあるユーザーが Web コンテンツにアクセスして利用できるようになります。
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '14050'
 ht-degree: 99%
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 さらに、詳細は次を参照してください。
 
-* アドビの [WCAG 2.1 クイックガイド](/help/onboarding/accessibility/quick-guide-wcag.md)
+* アドビの [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 * [Accessibility conformance reports for Adobe solutions](https://www.adobe.com/accessibility/compliance.html)（アドビソリューションのアクセシビリティ準拠レポート）
 * [アセット内のアクセシビリティ](/help/assets/accessibility.md)
 * [アクセス可能なコンテンツを生成するためのリッチテキストエディターの設定](/help/implementing/developing/extending/rte-accessible-content.md)
