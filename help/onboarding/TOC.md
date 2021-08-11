@@ -5,10 +5,10 @@ breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 89%
+source-wordcount: '138'
+ht-degree: 86%
 
 ---
 
@@ -30,13 +30,6 @@ ht-degree: 89%
    + [システム管理者タスク](what-is-required/add-users-assign-cm-roles.md)
    + [Cloud Manager への移動](what-is-required/navigate-to-cloud-manager.md)
    + [AEM インスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)
-+ データのプライバシーと保護への対応 {#data-privacy}
-   + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](data-privacy-and-protection-readiness/aem-readiness.md)
-   + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](data-privacy-and-protection-readiness/foundation-readiness.md)
-   + [データ保護およびデータプライバシーに関する規制に対する AEM Sites の対応](data-privacy-and-protection-readiness/sites-readiness.md)
-+ アクセシビリティ {#accessibility}
-   + [AEM as a Cloud Service と Web アクセシビリティのガイドライン](accessibility/web-accessibility.md)
-   + [WCAG 2.1 クイックガイド](accessibility/quick-guide-wcag.md)
 + 移行手法 {#migration-methodology}
    + [Adobe Experience Manager as a Cloud Service への移行](migration-methodology/getting-started.md)
 + ベストプラクティス {#best-practices}
