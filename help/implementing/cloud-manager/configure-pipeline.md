@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 95%
+source-wordcount: '955'
+ht-degree: 78%
 
 ---
 
@@ -107,6 +107,35 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
    ![](assets/configure-pipeline5.png)
 
+### 実稼動パイプラインの編集 {#editing-prod-pipeline}
+
+パイプライン設定は、**プログラムの概要**&#x200B;ページから編集できます。
+
+設定したパイプラインを編集するには、次の手順に従います。
+
+1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+
+1. **パイプライン**&#x200B;カードの&#x200B;**「**&#x200B;を編集」をクリックします。
+
+   ![](assets/configure-pipeline/edit-pipeline-1.png)
+
+1. 「**ソースコード**」タブを使用すると、リポジトリを更新できます。 「**Access Repo Info**」をクリックして、リポジトリを更新します。
+
+   >[!NOTE]
+   >Cloud Managerでリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos)を参照してください。
+
+   ![](assets/configure-pipeline/edit-pipeline-2.png)
+
+
+1. 「**環境**」タブでは、ステージおよび実稼動環境のオプションを更新できます。
+
+   ![](assets/configure-pipeline/edit-pipeline-3.png)
+
+1. 「**エクスペリエンス監査**」オプションを使用すると、新しいページを更新または追加できます。
+
+   ![](assets/configure-pipeline/edit-pipeline-4.png)
+
+1. パイプラインの編集が完了したら、「**保存**」をクリックします。
 
 ## 非実稼動パイプラインとコード品質専用パイプライン {#non-production-pipelines}
 
@@ -133,6 +162,22 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
    * **ビルド** - 実行ページに移動し、そこからパイプラインを実行できるようになります
    * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします
    * **詳細情報** - CI／CD パイプラインのドキュメントリソースの概要に移動します。
+
+### 実稼動以外のパイプラインの編集 {#editing-nonprod-pipeline}
+
+パイプライン設定は、**プログラムの概要**&#x200B;ページから編集できます。
+
+設定済みの非実稼動パイプラインを編集するには、以下の手順に従います。
+
+1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+
+1. 「**非実稼動**」タブを選択し、目的のパイプラインを選択した後、「**編集**」をクリックします。
+
+   ![](assets/configure-pipeline/non-prod-edit-1.png)
+
+1. 目的のリポジトリを選択し、「**保存**」をクリックします。
+
+   ![](assets/configure-pipeline/non-prod-edit2.png)
 
 ## 次の手順 {#the-next-steps}
 
