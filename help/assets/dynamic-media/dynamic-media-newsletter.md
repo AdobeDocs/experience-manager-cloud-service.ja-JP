@@ -4,10 +4,10 @@ description: 'Dynamic Mediaニュースレター(Experience League別)は月刊�
 feature: アセット管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: af6ff1545c3aee8b67c47e97142419f1fdf0928e
+source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 80%
+source-wordcount: '1043'
+ht-degree: 78%
 
 ---
 
@@ -51,7 +51,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * Dynamic Media Classic のオンデマンドのスキルビルダー Web セミナーの視聴
    * Online Adobe Summit 2020 の Dynamic Media セッションを表示
    * 無料の Dynamic Media Classic 監査の詳細
-   * John Monroe 氏（カスタマーサクセスサービス担当シニアプログラムマネージャー）へのインタビュー
+   * `John Monroe`様は、カスタマーサクセスサービス担当シニアプログラムマネージャーを務めます。
 
 * **[2020 年 2 月、第 2 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -72,7 +72,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * 無料の監査を活用して、Dynamic Media Classic からより多くの価値を得る
    * アドビのリッチメディア顧客にとって過去最高のホリデーショッピングシーズン
    * 今日のニーズを満たす DAM（Digital Asset Manager）の選択ガイドで、リッチメディアの新機能に備える
-   * Mark Dean 氏（デジタルメディアスペシャリスト）へのインタビュー
+   * `Mark Dean`様（デジタルメディアスペシャリスト）にお問い合わせください。
 
 * **[2019 年 11 月、第 11 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
@@ -103,7 +103,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * 通常よりも訪問者トラフィックが多い日への備えに関する Dynamic Media チームからの支援について
    * 最近の 2 つのスキルビルダー Web セミナーを受講できるセカンドチャンス
    * デジタルアセットの不正コピーからの保護に関するオンデマンド Web セミナーの視聴
-   * Bridget Roman 氏（ Experience Manager Assets 担当シニアプロダクトマーケティングマネージャー）へのインタビュー
+   * `Bridget Roman`氏(Experience Manager資産担当シニアプロダクトマーケティングマネージャー)へのインタビュー
    * Experience League での Dynamic Media および Dynamic Media Classic のすばやい習得
 
 * **[2019 年 8 月、第 08 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
