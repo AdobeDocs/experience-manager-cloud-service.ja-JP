@@ -2,7 +2,7 @@
 title: Compliance
 description: 準拠
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 91%
@@ -15,11 +15,11 @@ ht-degree: 91%
 
 ## 概要に関する主要な記事 {#key-articles}
 
-* [データ保護およびデータプライバシーに関する規制に対する の対応](aem-readiness.md)
-* [データ保護およびデータプライバシーに関する規制に対する Foundation の対応](foundation-readiness.md)
-* [データ保護およびデータプライバシーに関する規制に対する Sites の対応](sites-readiness.md)
-* [Webアクセシビリティのガイドライン](web-accessibility.md)
-* [WCAG 2.1 クイックガイド](quick-guide-wcag.md)
+* [データ保護およびデータプライバシーに関する規制に対する の対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [データ保護およびデータプライバシーに関する規制に対する Foundation の対応](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [データ保護およびデータプライバシーに関する規制に対する Sites の対応](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Webアクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
+* [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 
 ## Experience ManagerガイドとしてのCloud Service {#aem-guides}
 
