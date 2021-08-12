@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のユーザーガイド
 description: Adobe Experience Manager as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 390b06ab7bede2dfac9011ebd78f4dbd1dc62df4
+source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 90%
+source-wordcount: '430'
+ht-degree: 88%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 90%
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe Experience Manager as a Cloud Service にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe Experience Manager as a Cloud Service のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | AEM as a Cloud Service の Commerce Integration Framework について説明します。 |
+| [コンプライアンスユーザーガイド](/help/compliance/home.md) | AEM as a Complianceについて説明します。 |
 
 ## Adobe Experience Manager のその他のリソース {#other-resources}
 
