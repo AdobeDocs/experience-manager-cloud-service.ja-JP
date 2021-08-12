@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 14dc3b308a839040fdf2efe42d2fa4ce35253df0
+source-git-commit: 3f16144a95bdb3da08c15f15613031cdd069a977
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 21%
+source-wordcount: '1406'
+ht-degree: 20%
 
 ---
 
@@ -182,6 +182,21 @@ AEM as aCloud Service2021.7.0のCloud Managerのリリース日は2021年7月15�
 ### 既知の問題 {#known-issues-cm-july}
 
 Azul JDK の使用に切り替えるお客様は、すべての既存アプリケーションが Azul JDK でエラーなしにコンパイルされるとは限らないことに注意してください。切り替える前に、ローカルでテストすることを強くお勧めします。
+
+## コンテンツ転送ツール {#content-transfer-tool}
+
+### リリース日 {#release-date-ctt-latest}
+
+コンテンツ転送ツールv1.5.6のリリース日は2021年8月11日です。
+
+### バグ修正 {#bug-fixes-ctt}
+
+* 場合によっては、一部のユーザーがターゲットインスタンスに移行されないことがありました。 この修正を受けるには、ターゲットAEM as aCloud Serviceインスタンス上のaem-ethos-tools 1.2.354以降のバージョンと共に、CTT v1.5.6が必要です。
+
+* パブリッシュインスタンスへの取り込み中に、「**取り込みを停止**」ボタンが無効になっていた問題を修正しました。 パブリッシュの取り込み中にMongoの復元手順がないので、この操作は必要ありません。
+
+* CTTは、抽出が正常に完了した後、`/tmp`ディレクトリをクリーンアップしませんでした。 これにより、ディスク容量の問題が発生することがありました。
+
 
 ## Cloud Acceleration Manager {#cam}
 
