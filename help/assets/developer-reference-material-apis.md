@@ -5,9 +5,9 @@ contentOwner: AG
 feature: API、Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1438'
 ht-degree: 90%
 
 ---
@@ -185,7 +185,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-以前のバージョンの[!DNL Experience Manager]からアップグレードする場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java APIリファレンス](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)を参照してください。
+以前のバージョンの[!DNL Experience Manager]からアップグレードする場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java APIリファレンスまたはJavadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)を参照してください。
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 
