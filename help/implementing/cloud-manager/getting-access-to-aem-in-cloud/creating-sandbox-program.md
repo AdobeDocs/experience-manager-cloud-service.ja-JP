@@ -2,10 +2,10 @@
 title: 'サンドボックスプログラムの作成 '
 description: サンドボックスプログラムの作成
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >Cloud Manager UI のセルフサービス Git アカウント管理を使用して Git リポジトリーにアクセスし管理する方法について詳しくは、[Git へのアクセス](/help/implementing/cloud-manager/accessing-git.md)を参照してください。
+   >Cloud Manager UI のセルフサービス Git アカウント管理を使用して Git リポジトリーにアクセスし管理する方法について詳しくは、[Git へのアクセス](/help/implementing/cloud-manager/accessing-repos.md)を参照してください。
 
 
 1. 開発環境が作成されると、次の図のように、「**AEM にアクセス**」リンクが表示されます。
