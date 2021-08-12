@@ -2,9 +2,9 @@
 title: Cloud Managerリポジトリ
 description: Cloud Managerリポジトリ
 exl-id: Cloud Manager Repositories
-source-git-commit: bcbb0cc739c3be8e39585dd752af1b1da801a434
+source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -100,5 +100,5 @@ Gitサブモジュールを使用する場合は、次の点に注意してく�
 
 * GitのURLは、上記の構文に正確に記述する必要があります。 セキュリティ上の理由から、これらのURLに資格情報を埋め込まないでください。
 * ブランチのルートにあるサブモジュールのみがサポートされます。
-* Gitサブモジュール参照は、特定のGitコミットに保存されます。 その結果、サブモジュールリポジトリに変更を加える際に、参照されるコミットを更新する必要があります。例えば、 gitサブモジュールの更新`--remote`を使用します。
+* Gitサブモジュール参照は、特定のGitコミットに保存されます。 その結果、サブモジュールリポジトリに対して変更を加える場合、`git submodule update --remote`などを使用して、参照されるコミットを更新する必要があります。
 
