@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 feature: リリース情報
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 05cd993df7293691a0f8b91e9bde278ec7b7af69
+source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '302'
+ht-degree: 32%
 
 ---
 
@@ -25,6 +25,7 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 ### 新機能 {#what-is-new}
 
 * Cloud Serviceのお客様は、Cloud Managerでサービスレベル契約(SLA)レポートを表示できるようになりました。 これは今後数ヶ月間徐々に利用可能になる予定です。
+詳しくは、[SLAレポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)を参照してください。
 
 * IndexTypeと`IndexDamAssetLucene`品質ルールの種類と重大度が変更されました。 現在は、これらは&#x200B;*サーバー性*&#x200B;のブロッカーのバグです。
 
