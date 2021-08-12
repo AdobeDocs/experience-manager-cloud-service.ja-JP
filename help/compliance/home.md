@@ -2,14 +2,14 @@
 title: Compliance
 description: 準拠
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: b994725c4af3c108aa7c957c8669181379b6728c
+source-git-commit: 6569b98bafa98b3f85c55d95f5e6db0ec1de77f8
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 91%
+source-wordcount: '407'
+ht-degree: 89%
 
 ---
 
-# 準拠 {#aem-compliance}
+# AEM as aCloud Serviceのコンプライアンス {#aem-compliance}
 
 このページでは、Experience Managerのコンプライアンスに関する情報をCloud Serviceとして提供するセルフヘルプリソースの一覧を示します。
 
