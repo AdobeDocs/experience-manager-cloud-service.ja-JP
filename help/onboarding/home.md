@@ -2,7 +2,7 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: d022b73d84d150c156695106f4a5fe2c75d90664
+source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 86%
@@ -56,7 +56,7 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 **[Cloud Manager に移動する](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
 
-ユーザーとして追加され、 Cloud Manager の役割に割り当てられたら、 Cloud Manager にアクセスして、AEM で Cloud ジャーニーを開始できます。ユーザーは、プログラムの作成、環境の追加、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセス、[パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)など、様々なタスクを実行できます。
+ユーザーとして追加され、 Cloud Manager の役割に割り当てられたら、 Cloud Manager にアクセスして、AEM で Cloud ジャーニーを開始できます。ユーザーは、プログラムの作成、環境の追加、Gitへのアクセス、[パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)など、様々なタスクを実行できます。
 Cloud Manager は、AEM as a Cloud Service の重要な部分です。これにより、組織はクラウド内の[!DNL Experience Manager]を自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI／CD パイプラインを設定および開始できます。
 
 **[AEM インスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)**
