@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 5dfe46c6a5cacc3d1d3d863ed5990214d778a1e7
+source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 78%
@@ -177,7 +177,7 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 1. 目的のリポジトリとその他必要な更新を選択し、「**保存**」をクリックします。
 
-   ![](assets/configure-pipeline/non-prod-edit2.png)
+   ![](assets/configure-pipeline/edit-nonprodenv.png)
 
 ## 次の手順 {#the-next-steps}
 
