@@ -3,7 +3,7 @@ title: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 feature: リリース情報
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d5e7354cb76369c36ee64866bcf8aa0c148ec472
+source-git-commit: d04194bd83ced844dffc94da35c996d363c5ba30
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 32%
@@ -39,7 +39,7 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 
 * パイプラインごとにMaven依存関係キャッシュを無効にするAPIが追加されました。
 
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 28 に更新されました。
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 29 に更新されました。
 
 ### バグ修正 {#bug-fixes}
 
