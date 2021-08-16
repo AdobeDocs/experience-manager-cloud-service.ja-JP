@@ -5,7 +5,7 @@ breadcrumb-title: AEM ヘッドレスデベロッパージャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: 15ecba196c76acc0f11869ca8f91e9e268ea5601
+source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 48%
@@ -38,9 +38,9 @@ ht-degree: 48%
    + [AEMを使用したヘッドレス向けコンテンツモデリングの基本について説明します。](architect/basics.md)
    + [AEMでのコンテンツフラグメントモデルの作成について説明します。](architect/model-structure.md)
 + AEMヘッドレス翻訳ジャーニー{#translation}
-   + [AEMのヘッドレスローカリゼーションについて](translation/overview.md)
-   + [AEMヘッドレスローカリゼーションの概要](translation/getting-started.md)
-   + [ヘッドレスコンテンツとAEMでのローカライズ方法について説明します。](translation/learn-about.md)
+   + [AEMでのヘッドレス翻訳の理解](translation/overview.md)
+   + [AEMヘッドレス翻訳の概要](translation/getting-started.md)
+   + [ヘッドレスコンテンツとAEMでの翻訳方法について説明します](translation/learn-about.md)
    + [翻訳コネクタの設定](translation/configure-connector.md)
    + [翻訳ルールの設定](translation/translation-rules.md)
    + [コンテンツを翻訳](translation/translate-content.md)
