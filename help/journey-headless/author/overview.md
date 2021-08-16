@@ -4,10 +4,10 @@ description: AEMの強力で柔軟なヘッドレス機能、その機能、プ�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 27%
+source-wordcount: '734'
+ht-degree: 20%
 
 ---
 
@@ -66,3 +66,14 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
+
+## その他のリソース {#additional-resources}
+
+ドキュメントジャーニーでは、複雑で相互に関連するプロセスや機能を順を追って説明し、AEMがビジネス上の問題を解決する方法を示します。 1つのジャーニーで、複数の機能が連携して1つのビジネスニーズに対応する仕組みを説明します。
+
+このようなジャーニーは、独立して設計されています。 ただし、多くは互いに関連付けることができます。 AEMの強力な機能の連携について詳しくは、次の追加のジャーニーを参照してください。
+
+* [AEMヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md)  — このドキュメントのジャーニーでは、ヘッドレステクノロジー、AEMによるヘッドレスコンテンツの提供方法、翻訳方法を幅広く理解できます。
+* [AEMヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md)  - AEMの強力で柔軟なヘッドレス機能、その機能、最初の開発プロジェクトでの活用方法を紹介し、ガイド付きのジャーニーを見るには、ここから始めます。
+* [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md)  — ここから始めて、Cloud ServiceとしてのAdobe Experience Managerの強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の概要をご覧ください。
+* [AEM as a Cloud Service技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)  - AEMとヘッドレステクノロジーに関する十分な知識が既にある場合は、アドビの詳細な技術ドキュメントを直接参照してください。
