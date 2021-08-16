@@ -4,9 +4,9 @@ description: AEMの強力な翻訳ツールを使用してヘッドレスコン�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '1005'
 ht-degree: 8%
 
 ---
@@ -83,5 +83,7 @@ AEMを使用してヘッドレスビジネスケースを解決する方法をAd
 
 このようなジャーニーは、独立して設計されています。 ただし、多くは互いに関連付けることができます。 AEMの強力な機能の連携について詳しくは、次の追加のジャーニーを参照してください。
 
+* [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md)  - AEMの強力で柔軟なヘッドレス機能、その機能、最初のヘッドレスプロジェクトでのコンテンツのモデル化方法を、ガイド付きのジャーニーのためにここから始めます。
+* [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md)  — ここから始めて、Cloud ServiceとしてのAdobe Experience Managerの強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の概要をご覧ください。
 * [AEMヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md)  - AEMの強力で柔軟なヘッドレス機能、その機能、最初の開発プロジェクトでの活用方法を紹介し、ガイド付きのジャーニーを見るには、ここから始めます。
 * [AEM as a Cloud Service技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)  - AEMとヘッドレステクノロジーに関する十分な知識が既にある場合は、アドビの詳細な技術ドキュメントを直接参照してください。
