@@ -5,10 +5,10 @@ breadcrumb-title: AEM ヘッドレスデベロッパージャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: bcfe00727e443e2598beb4dbdeee90644447211c
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 71%
+source-wordcount: '198'
+ht-degree: 57%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 71%
    + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](developer/put-it-all-together.md)
    + [ヘッドレスアプリケーションの運用開始方法](developer/go-live.md)
    + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](developer/create-spa.md)
++ AEMヘッドレスコンテンツ作成者ジャーニー{#content-author}
+   + [AEMヘッドレスコンテンツ作成者ジャーニー — 概要](author/overview.md)
+   + [ヘッドレス向けのAEMを使用したオーサリング — はじめに](author/introduction.md)
+   + [AEMを使用したヘッドレス向けのオーサリングの基本](author/basics.md)
+   + [コンテンツフラグメントでの参照の使用について説明します](author/references.md)
+   + [コンテンツフラグメントのメタデータの定義とタグ付けについて説明します。](author/metadata-tagging.md)
 + AEMヘッドレス翻訳ジャーニー{#translation}
    + [AEMのヘッドレスローカリゼーションについて](translation/overview.md)
    + [AEMヘッドレスローカリゼーションの概要](translation/getting-started.md)
