@@ -1,20 +1,21 @@
 ---
-sub-product: AEM ヘッドレスデベロッパージャーニー
-user-guide-title: AEM ヘッドレスデベロッパージャーニー
-breadcrumb-title: AEM ヘッドレスデベロッパージャーニー
+sub-product: AEMヘッドレスジャーニー
+user-guide-title: AEMヘッドレスジャーニー
+breadcrumb-title: AEMヘッドレスジャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: c4c6da1219a110ecfc7f24a19d3a775201fb8069
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 48%
+ht-degree: 41%
 
 ---
 
 
-# AEM ヘッドレスジャーニー {#headless-journey}
+# AEMヘッドレスジャーニー {#headless-journey}
 
++ [AEMヘッドレスジャーニー](/help/journey-headless/home.md)
 + AEM ヘッドレスデベロッパージャーニー {#developer}
    + [AEM のヘッドレスについて](developer/overview.md)
    + [CMS ヘッドレス開発について](developer/learn-about.md)
