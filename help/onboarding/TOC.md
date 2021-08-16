@@ -5,10 +5,10 @@ breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 86%
+source-wordcount: '133'
+ht-degree: 85%
 
 ---
 
@@ -37,4 +37,3 @@ ht-degree: 86%
    + [KPI の評価](best-practices/assessing-kpis.md)
    + [KPI の調整](best-practices/aligning-kpis.md)
    + [適切なチームの選択](best-practices/choose-right-team.md)
-+ [ツールコンソールの概要](tools-consoles.md)
