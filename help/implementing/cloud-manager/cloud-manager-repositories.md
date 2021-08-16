@@ -2,9 +2,9 @@
 title: Cloud Managerリポジトリ
 description: Cloud Managerリポジトリ
 exl-id: Cloud Manager Repositories
-source-git-commit: d2a8329fff12be6581f2ee2caf7f9764c765d0e6
+source-git-commit: cebc603aab9c558239588f574f52568d05081b34
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Cloud Managerリポジトリ {#cloud-manager-repos}
 
 Cloud Managerで作成および使用可能なリポジトリーは、リポジトリーページで表示および管理できます。
+
+>[!NOTE]
+>特定の会社またはAdobeのIdentity Managementシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)([)のすべてのプログラムに対して、300個のリポジトリが制限されています。
 
 ## リポジトリの追加と管理 {#add-manage-repos}
 
@@ -32,6 +35,9 @@ Cloud Managerでリポジトリーを表示および管理するには、次の�
    ![](assets/repos/repo-1.png)
 
 1. 「**保存**」を選択します。次に示すように、新しく作成されたリポジトリがテーブルに表示されます。
+
+   >[!NOTE]
+   >1つの&#x200B;*プライマリ*&#x200B;リポジトリまたは任意のパイプラインのブランチがあります。 [Gitサブモジュールのサポート](#git-submodule-support)を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
 
    ![](assets/repos/create-repo3.png)
 
