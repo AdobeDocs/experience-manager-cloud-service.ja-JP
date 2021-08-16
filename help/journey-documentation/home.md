@@ -1,9 +1,9 @@
 ---
 title: AEMドキュメントのジャーニー
 description: ドキュメントのジャーニーは、複雑で異なる機能を組み合わせ、ベストプラクティス方式でビジネス目標を解決することで、AEMドキュメント内の構造を説明します。 AEMの初心者を念頭に置いて設計されたジャーニーは、AからZの目標を達成するための概念と機能を紹介します。
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: 5cfe3bf09d0f91aa2eaa493f04ae0cde1f2541d4
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1262'
 ht-degree: 2%
 
 ---
@@ -86,7 +86,8 @@ AEMを初めて使用する場合で、特定のビジネス事例を念頭に�
 | ジャーニー | 説明 |
 |---|---|
 | [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | ここから始めて、AEMがヘッドレス開発モデルをサポートする方法と、プロジェクトの計画、実装、運用開始の方法を確認します。 |
-| ヘッドレスオーサリングジャーニー | AEMでヘッドレスコンテンツを作成および管理する方法については、ここから始めてください。 |
+| [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) | AEMの強力で柔軟なヘッドレス機能、その機能、最初のヘッドレスプロジェクトでのコンテンツのモデル化方法を紹介し、ガイド付きのジャーニーを始めます。 |
+| [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) | Cloud ServiceとしてのAdobe Experience Managerの強力で柔軟なヘッドレス機能の概要と、プロジェクトのコンテンツのモデル化方法については、ここから始めてください。 |
 | [ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) | AEMでヘッドレス翻訳プロジェクトを設定および管理する方法については、ここから始めてください。 |
 | AEM Onboardingジャーニー | 準備中 |
 | AEM Commerceジャーニー | 準備中 |
