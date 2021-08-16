@@ -2,9 +2,9 @@
 title: Cloud Managerリポジトリ
 description: Cloud Managerリポジトリ
 exl-id: Cloud Manager Repositories
-source-git-commit: 1f2109731b8efd1c05941b7a7db23e6497257cbf
+source-git-commit: 8a53641745ab2e0cfabdf0b6e13b163aaf6a68bd
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Cloud Managerで作成および使用可能なリポジトリーは、リポジトリーページで表示および管理できます。
 
 >[!NOTE]
->特定の会社または[AdobeのIdentity Managementシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html)内のすべてのプログラムに対して、300個のリポジトリが制限されています。
+>特定の会社（またはIMS Org）のすべてのプログラムに対して、300個のリポジトリーの制限があります。
 
 ## リポジトリの追加と管理 {#add-manage-repos}
 
@@ -34,10 +34,10 @@ Cloud Managerでリポジトリーを表示および管理するには、次の�
 
    ![](assets/repos/repo-1.png)
 
-1. 「**保存**」を選択します。次に示すように、新しく作成されたリポジトリがテーブルに表示されます。 Cloud Managerで作成したリポジトリは、パイプラインの追加または編集手順でも選択できます。 詳しくは、[CI-CDパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)を参照してください。
+1. 「**保存**」を選択します。次に示すように、新しく作成されたリポジトリがテーブルに表示されます。
 
    >[!NOTE]
-   >1つの&#x200B;*プライマリ*&#x200B;リポジトリまたは任意のパイプラインのブランチがあります。 [Gitサブモジュールのサポート](#git-submodule-support)を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
+   >Cloud Managerで作成したリポジトリは、パイプラインの追加または編集手順でも選択できます。 詳しくは、[CI-CDパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)を参照してください。 1つの&#x200B;*プライマリ*&#x200B;リポジトリまたは任意のパイプラインのブランチがあります。 [Gitサブモジュールのサポート](#git-submodule-support)を使用すると、ビルド時に多数のセカンダリブランチを含めることができます。
 
    ![](assets/repos/create-repo3.png)
 
