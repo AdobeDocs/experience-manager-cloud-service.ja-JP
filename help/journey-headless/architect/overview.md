@@ -4,10 +4,10 @@ description: AEMの強力で柔軟なヘッドレス機能、その機能、最�
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
+source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 42%
+source-wordcount: '655'
+ht-degree: 30%
 
 ---
 
@@ -52,3 +52,14 @@ AEMの強力で柔軟なヘッドレス機能、その機能、最初のヘッ�
 ## 次の手順 {#what-is-next}
 
 これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次の部分に進み、「 AEMを使用したヘッドレスのコンテンツモデリング」の記事「[はじめに](introduction.md)」をお読みください。
+
+## その他のリソース {#additional-resources}
+
+ドキュメントジャーニーでは、複雑で相互に関連するプロセスや機能を順を追って説明し、AEMがビジネス上の問題を解決する方法を示します。 1つのジャーニーで、複数の機能が連携して1つのビジネスニーズに対応する仕組みを説明します。
+
+このようなジャーニーは、独立して設計されています。 ただし、多くは互いに関連付けることができます。 AEMの強力な機能の連携について詳しくは、次の追加のジャーニーを参照してください。
+
+* [AEMヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md)  — このドキュメントのジャーニーでは、ヘッドレステクノロジー、AEMによるヘッドレスコンテンツの提供方法、翻訳方法を幅広く理解できます。
+* [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md)  - AEMの強力で柔軟なヘッドレス機能、その機能、最初のヘッドレスプロジェクトでのコンテンツのモデル化方法を、ガイド付きのジャーニーのためにここから始めます。
+* [AEMヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md)  - AEMの強力で柔軟なヘッドレス機能、その機能、最初の開発プロジェクトでの活用方法を紹介し、ガイド付きのジャーニーを見るには、ここから始めます。
+* [AEM as a Cloud Service技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)  - AEMとヘッドレステクノロジーに関する十分な知識が既にある場合は、アドビの詳細な技術ドキュメントを直接参照してください。
