@@ -1,9 +1,10 @@
 ---
 title: コンテンツモデリングの基本を学ぶ
 description: コンテンツフラグメントを使用して、ヘッドレスCMSのコンテンツをモデリングする基本を学びます。
+index: false
 hide: true
 hidefromtoc: true
-source-git-commit: d0e870f5e49580bb95d347092a2ece4c2497a1c9
+source-git-commit: 41ad9e8ee77ae4494d28026b5ad9da45c06eaeaf
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 46%
