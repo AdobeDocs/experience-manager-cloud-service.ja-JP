@@ -1,7 +1,10 @@
 ---
 title: AEMヘッドレス翻訳の概要
 description: ヘッドレスコンテンツの整理方法とAEM翻訳ツールの仕組みについて説明します。
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 1%
