@@ -2,7 +2,7 @@
 title: コンテンツをモデル化する方法
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、コンテンツフラグメントモデルとコンテンツフラグメントとともにコンテンツモデリングを使用して、AEM ヘッドレス配信用のコンテンツをモデル化する方法について説明します。
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 98%
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## これまでの説明内容 {#story-so-far}
 
-最初の「[CMS ヘッドレス開発の詳細](learn-about.md)」では、ヘッドレスコンテンツ配信についておよびヘッドレスコンテンツ配信を使用する理由を説明しました。次に、「[AEM Headless as a Cloud Service - はじめに](getting-started.md)」では、独自のプロジェクトのコンテキストで AEM ヘッドレスを説明しました。
+最初の「[CMS ヘッドレス開発の詳細](learn-about.md)」では、ヘッドレスコンテンツ配信についておよびヘッドレスコンテンツ配信を使用する理由を説明しました。次に、「[AEM Headless as a Cloud Service - はじめに](getting-started.md)」では、独自のプロジェクトのコンテキストで AEM ヘッドレスを説明しました。。
 
 以前の AEM ヘッドレスジャーニードキュメント（「[AEM ヘッドレスを使用した初めてのエクスペリエンスへのパス](path-to-first-experience.md)」）では、初めてのプロジェクトの実装に必要な手順について説明しました。読み終えた後は、以下ができるようになるはずです。
 
