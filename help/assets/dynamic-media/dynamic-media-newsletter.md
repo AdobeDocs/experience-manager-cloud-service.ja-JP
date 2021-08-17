@@ -4,10 +4,10 @@ description: 'Dynamic Mediaニュースレター(Experience League別)は月刊�
 feature: アセット管理
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 07f7ec3fae8af6739e49d5bce55a980aca391e06
+source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 78%
+source-wordcount: '1053'
+ht-degree: 70%
 
 ---
 
@@ -42,7 +42,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
 
-* **[2020 年 4 月、第 3 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2020_April.html)**
+* **[2020 年 4 月、第 3 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html)**
 
    この号の主な内容：
 
@@ -64,7 +64,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * Dynamic Media Classic の新しいユーザーインターフェイスの説明
    * Adobe Experience Cloudのカスタマーサクセス担当マネージャーの`Georgia Myers`様にお会いします。
 
-* **[2020 年 1 月、第 1 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
+* **[2020 年 1 月、第 1 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
    この号の主な内容：
 
@@ -74,7 +74,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * 今日のニーズを満たす DAM（Digital Asset Manager）の選択ガイドで、リッチメディアの新機能に備える
    * `Mark Dean`様（デジタルメディアスペシャリスト）にお問い合わせください。
 
-* **[2019 年 11 月、第 11 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+* **[2019 年 11 月、第 11 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
    この号の主な内容：
 
@@ -84,7 +84,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * ニュースレターを同僚と共有してチームの専門知識を構築
    * `Apoorva Gupta`氏(Dynamic Media、上級製品マネージャー)へのインタビュー
 
-* **[2019 年 10 月、第 10 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[2019 年 10 月、第 10 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
    この号の主な内容：
 
@@ -95,7 +95,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * `Nick Peters`氏(Adobe Experience Manager、サイトリライアビリティエンジニアリング担当マネージャ)へのインタビュー
    * Experience League での Dynamic Media および Dynamic Media Classic のすばやい習得
 
-* **[2019 年 9 月、第 09 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[2019 年 9 月、第 09 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
    この号の主な内容：
 
@@ -106,7 +106,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * `Bridget Roman`氏(Experience Manager資産担当シニアプロダクトマーケティングマネージャー)へのインタビュー
    * Experience League での Dynamic Media および Dynamic Media Classic のすばやい習得
 
-* **[2019 年 8 月、第 08 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+* **[2019 年 8 月、第 08 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    この号の主な内容：
 
@@ -116,7 +116,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * 訪問者がリッチメディアとどのようにやり取りしているかを分析できる強力な統合機能（今年 9 月にリリース予定）のプレビュー
    * `PieterJan Pieper`様、Dynamic Mediaのテクニカルサポートをお待ちしております。
 
-* **[2019 年 7 月、第 07 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[2019 年 7 月、第 07 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    この号の主な内容：
 
@@ -127,7 +127,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * Web サイトへの 360 度ビデオとカスタムビデオサムネールの追加
    * Dynamic Mediaの主要ソリューションコンサルタントである`Andrew Hathaway`に、Experience Managerアセットでお会いします。
 
-* **[2019 年 6 月、第 06 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
+* **[2019 年 6 月、第 06 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    この号の主な内容：
 
@@ -138,7 +138,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * AI を利用した画像のスマート切り抜きの紹介
    * Dynamic MediaとDynamic Media Classicの優れた機能とイノベーションの多くを支える原動力の1つである`Alex Thiers`に出会う。
 
-* **[2019 年 5 月、第 05 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
+* **[2019 年 5 月、第 05 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html)**
 
    この号の主な内容：
 
@@ -148,7 +148,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * リッチメディア戦略を更新するには、3 部構成のブログシリーズをご覧ください。
    * AI を利用したビデオのスマート切り抜きの紹介
 
-* **[2019 年 4 月、第 04 号](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
+* **[2019 年 4 月、第 04 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html)**
 
    Dynamic Media ニュースレターの創刊号へようこそ。アドビの新しい月刊ニュースレターには、ニュース、イベント、リソースが多数掲載されています。コンテンツは、 Experience Manager Assets や Adobe Dynamic Media Classic の Dynamic Media ユーザーを対象としています。
 
