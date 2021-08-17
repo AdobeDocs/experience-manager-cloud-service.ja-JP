@@ -5,7 +5,7 @@ breadcrumb-title: AEMヘッドレスジャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: 開発者ツール
 role: Developer, Architect
-source-git-commit: 498b07fda7ead201fd3afa601d67bd19c6ad96f7
+source-git-commit: fe1d8f29e59f1f54c4f8e3a419103926005c0e48
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 41%
@@ -27,17 +27,17 @@ ht-degree: 41%
    + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](developer/put-it-all-together.md)
    + [ヘッドレスアプリケーションの運用開始方法](developer/go-live.md)
    + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](developer/create-spa.md)
-+ AEMヘッドレスコンテンツ作成者ジャーニー{#content-author}
++ AEMヘッドレスコンテンツアーキテクトジャーニー{#architect}
+   + [AEMヘッドレスコンテンツアーキテクトジャーニーの概要](architect/overview.md)
+   + [ヘッドレス向けのコンテンツモデリング(AEM) — はじめに](architect/introduction.md)
+   + [AEMを使用したヘッドレス向けコンテンツモデリングの基本について説明します。](architect/basics.md)
+   + [AEMでのコンテンツフラグメントモデルの作成について説明します。](architect/model-structure.md)
++ AEMヘッドレスコンテンツ作成者ジャーニー{#author}
    + [AEMヘッドレスコンテンツ作成者ジャーニー — 概要](author/overview.md)
    + [ヘッドレス向けのAEMを使用したオーサリング — はじめに](author/introduction.md)
    + [AEMを使用したヘッドレス向けのオーサリングの基本](author/basics.md)
    + [コンテンツフラグメントでの参照の使用について説明します](author/references.md)
    + [コンテンツフラグメントのメタデータの定義とタグ付けについて説明します。](author/metadata-tagging.md)
-+ AEMヘッドレスコンテンツアーキテクトジャーニー{#content-architect}
-   + [AEMヘッドレスコンテンツアーキテクトジャーニーの概要](architect/overview.md)
-   + [ヘッドレス向けのコンテンツモデリング(AEM) — はじめに](architect/introduction.md)
-   + [AEMを使用したヘッドレス向けコンテンツモデリングの基本について説明します。](architect/basics.md)
-   + [AEMでのコンテンツフラグメントモデルの作成について説明します。](architect/model-structure.md)
 + AEMヘッドレス翻訳ジャーニー{#translation}
    + [AEMでのヘッドレス翻訳の理解](translation/overview.md)
    + [AEMヘッドレス翻訳の概要](translation/getting-started.md)
