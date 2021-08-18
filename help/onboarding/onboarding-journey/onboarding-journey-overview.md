@@ -4,9 +4,9 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e7fd4fb6175f6aeb0c7e5cead14d1844f6f69bc5
+source-git-commit: 2ec7a48165a5e1a30026b41a8cf1d63457ab922d
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '645'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 | # | 記事 | 説明 |
 |---|---|---|
 | 0 | オンボーディングジャーニー | このドキュメントでは、以下について説明します。 |
-| 1 | 次のようなオンボーディングの概念を学習します。<br>[System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[AdobeIdentity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[AEM as a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[Cloud Service as a Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobeサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | オンボーディングの概念について説明します。 |
+| 1 | 次のようなオンボーディングの概念を学習します。<br>[System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[AdobeIdentity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[AEM as a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[Cloud Service as a Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobeサポートへのお問い合わせ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | オンボーディングの概念について説明します。 |
 | 2 | オンボーディングの概要 | システムへのログインとAdmin Console管理者としてのプロファイルの確認について説明します |
 | 3 | Cloud Manager製品プロファイルへのチームメンバーの割り当て | Cloud Manager製品プロファイルを確認し、Cloud Manager製品プロファイルにチームメンバーを割り当てる方法を学びます。 |
 | 4 | Cloud Managerを使用したクラウドリソースの設定 | クラウドリソースの作成方法と実行者について説明します。 さらに、クラウドプログラムと環境の作成方法についても説明します。 |
