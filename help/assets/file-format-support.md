@@ -5,7 +5,7 @@ contentOwner: AG
 feature: アセット管理、レンディション
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 100%
@@ -227,7 +227,7 @@ ht-degree: 100%
 
 ## ヒントと制限事項 {#limitations-and-tips}
 
-* 現在、メタデータ抽出のファイルサイズの上限は約 10 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
+* 現在、メタデータ抽出のファイルサイズの上限は約 15 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 
 >[!MORELIKETHIS]
 >
