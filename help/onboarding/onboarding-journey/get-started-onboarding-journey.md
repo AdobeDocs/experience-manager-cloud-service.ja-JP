@@ -4,7 +4,7 @@ description: このページでは、オンボーディングジャーニーの�
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 037add45b8dd11422f771057839b17eaaed1d2fe
+source-git-commit: 1ce3849cee513d061df0664ca50d400e6cf41a8d
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # オンボーディングプロセスの概要 {#getting-started}
 
-オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、クラウドリソースの初期プロビジョニングや、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできる職務上の責任に基づく適切な役割へのユーザーの割り当てが含まれます。
+オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、クラウドリソースの初期プロビジョニングや、ユーザーの職務に基づく役割の割り当てが含まれます。 その結果、各メンバーはログインし、AEM・リソースとしてCloud Serviceにアクセスできます。
 
 ## 目的 {#objective}
 
@@ -55,11 +55,11 @@ ht-degree: 1%
 
    ![](/help/onboarding/onboarding-journey/assets/get-started2.png)
 
-1. **ユーザー**&#x200B;カードで&#x200B;**管理者**&#x200B;をクリックすると、前の手順で、Adobe IDのEメール、ユーザー名、名または姓を入力して検索できます。
+1. **ユーザー**&#x200B;カードで&#x200B;**管理者**&#x200B;をクリックすると、Adobe IDの電子メール、ユーザー名、姓名を入力して検索できます。
 
    ![](/help/onboarding/onboarding-journey/assets/get-started3.png)
 
-1. 以下に示すように、検索では、**ADMIN ROLE**&#x200B;というラベルの列の下に&#x200B;**System**&#x200B;がある電子メールレコードが正常に検索されます。 これにより、システム管理者であることが確認されます。
+1. 検索で電子メールレコードが正常に見つかる必要があります。 さらに、**ADMIN ROLE**&#x200B;には、以下に示すように、**System**&#x200B;を表示する必要があります。 これにより、システム管理者であることが確認されます。 これにより、システム管理者としての役割が確認されます。
 
    ![](/help/onboarding/onboarding-journey/assets/get-started4.png)
 
