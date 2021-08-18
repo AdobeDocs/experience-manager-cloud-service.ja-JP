@@ -5,10 +5,10 @@ breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 feature: デプロイ
 role: Architect, Developer
-source-git-commit: e029e0ffc7e8b1177f83354598307e411b756642
+source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 85%
+source-wordcount: '119'
+ht-degree: 84%
 
 ---
 
@@ -32,8 +32,3 @@ ht-degree: 85%
    + [AEM インスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)
 + 移行手法 {#migration-methodology}
    + [Adobe Experience Manager as a Cloud Service への移行](migration-methodology/getting-started.md)
-+ ベストプラクティス {#best-practices}
-   + [SEO と URL の管理](best-practices/seo-and-url-management.md)
-   + [KPI の評価](best-practices/assessing-kpis.md)
-   + [KPI の調整](best-practices/aligning-kpis.md)
-   + [適切なチームの選択](best-practices/choose-right-team.md)
