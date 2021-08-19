@@ -2,9 +2,9 @@
 title: 実装段階
 description: 実装段階
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '943'
 ht-degree: 94%
 
 ---
@@ -98,7 +98,7 @@ Cloud Services 用 Cloud Manager のパイプライン実行では、ステー�
 
 テストスクリプトの作成と 50 %以上の推奨コードカバレッジについては、[コード品質テスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/understand-test-results.html#code-quality-testing)を参照してください。
 
-さらに、AEM エンジニアリングのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルールについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-code-quality-rules.html?lang=ja)を参照してください。
+さらに、AEM エンジニアリングのベストプラクティスに基づいて作成され Cloud Manager で実行されるカスタムコード品質ルールについて詳しくは、[カスタムコード品質ルールについて](/help/implementing/cloud-manager/custom-code-quality-rules.md)を参照してください。
 
 Cloud Manager を使用する以外に、Cloud Service 環境にコードをデプロイする手段はありません。
 
