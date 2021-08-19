@@ -8,7 +8,7 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: a548e33d5958c28cf4db002bc3b1d8b086f3b236
+source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 97%
@@ -37,7 +37,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 
 以下をローカルにインストールしておく必要があります。
 
-- [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/*experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)（3.3.9 以降）
 - [Node.js v10 以降](https://nodejs.org/ja/)
