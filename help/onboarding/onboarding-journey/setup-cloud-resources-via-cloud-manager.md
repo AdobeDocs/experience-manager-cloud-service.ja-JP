@@ -4,16 +4,16 @@ description: このページでは、Cloud Managerを使用してクラウドリ
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 058622fd2628656c7b2fb3a02445724ca6a62f3b
+source-git-commit: 5f599eb877565c65aad3d54af411bd8d40f4580d
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1429'
 ht-degree: 15%
 
 ---
 
 # Cloud Managerを使用したクラウドリソースの設定 {#setup-cloud-resources}
 
-*ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。 その後、*ビジネスオーナー*&#x200B;製品プロファイルに割り当てられたチームメンバーは、Cloud Managerにログインし、クラウドプログラムと環境を作成して、エキスパートチームが作業を開始できるようにする必要があります。
+ビジネスオーナーの役割に割り当てられているシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。 その後、ビジネスオーナー製品プロファイルに割り当てられたチームメンバーは、Cloud Managerにログインし、クラウドプログラムと環境を作成して、エキスパートチームが作業を開始できるようにする必要があります。
 
 ## 目的 {#objective}
 
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 この節を読むと、次の内容を理解できます。
 
-* *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする最初のユーザーである必要があります。
+* ビジネスオーナーロールに割り当てられたシステム管理者は、Cloud Managerに最初にアクセスしてログインする必要があります。
 * クラウドプログラムと環境の作成方法。
 
 ## はじめに {#introduction}
@@ -32,19 +32,17 @@ ht-degree: 15%
 
 ### 前提条件 {#prerequisites}
 
-* *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
+* ビジネスオーナーの役割に割り当てられているシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
 
 * [Cloud Managerに移動してログインする方法を理解します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=en)
 
 * [Cloud Managerの製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#cloud-manager-product-profiles)について理解してください。
 
-* プログラムの作成に関する考慮事項を理解します。 詳しくは、このビデオをご覧ください。
-
 * Cloud Managerの[プログラム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)と[環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja)の概念を理解します。
 
 ## Cloud Manager への移動 {#navigate-cloud-manager}
 
-*ビジネスオーナー*&#x200B;ユーザーは、開始場所からお知らせメールを受け取るか、見つからない場合は[Adobe Experience Cloud](https://experience.adobe.com)に直接アクセスし、Adobe IDを使用してログインします。
+ビジネスオーナーユーザーには、開始するためのリンクが記載されたお知らせメールが届きます。また、ユーザーがリンクを見つけられない場合は、[Adobe Experience Cloud](https://experience.adobe.com)に直接アクセスし、Adobe IDを使用してログインします。
 
 次の手順に従って、Cloud Managerに移動します。
 
@@ -54,7 +52,7 @@ ht-degree: 15%
 1. Cloud Managerの&#x200B;**プログラムと製品**&#x200B;ページに移動します。
 
    >[!IMPORTANT]
-   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 今後Cloud Managerのランディングページに直接移動する際に役立つように、このページをブックマークに追加してください。
+   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 今後の参照用に、またCloud Managerのランディングページに直接移動する際に役立つ情報については、このページをブックマークに追加してください。
 
 1. Cloud Managerのランディングページに移動します。 詳しくは、 [Cloud Managerのプログラムの表示](#viewing-programs)の節を参照してください。
 
@@ -167,14 +165,14 @@ Cloud Managerからクラウド環境を作成するには、次の手順に従�
 
    さらに、 [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en)のクイックチュートリアルでは、Cloud Manager環境と、それらの環境をプログラムに追加する方法についても説明しています。
 
-1. これにより、環境の追加ウィザードが起動し、環境の追加を指示します。 最初に開発環境を追加して、使い慣れてください。 詳しくは、[環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)の追加を参照してください。
+1. これにより、環境の追加手順を示す環境の追加ウィザードが起動します。 ウィザードに慣れるには、まず開発環境を追加します。 詳しくは、[環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)の追加を参照してください。
 
    >[!NOTE]
    >まだおこなっていない場合は、今すぐ開発者メンバーをCloud Managerチームに追加してください。 開発者製品プロファイルへのユーザーの追加を参照し、概要の手順に従います。
 
 1. デベロッパー製品プロファイルに割り当てられたメンバーは、Cloud Managerにログインし、[Cloud Manager Gitを管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)できます。
 
-   お疲れさまでした。 プログラムが正常に作成され、開発者がCloud Manager Gitにアクセスできるようになりました。
+   お疲れさまでした。 これで、プログラムが作成され、Cloud Manager Gitを使用して開発者がアクセスできるようになりました。
 
    おめでとうございます。これで、クラウドプログラム環境が作成され、開発者がチームに追加されました。
 
