@@ -4,9 +4,9 @@ description: このページでは、チームメンバーをAEM as a Cloud Serv
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: ae8e5bde38472f4d9bce0e69bf70acbef5932146
+source-git-commit: 85cf0d69fcc3dcaadf3259576d277698eeb826fe
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '820'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ## はじめに {#introduction}
 
-AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、`AEM Users`または`AEM Administrators`のような2つの製品プロファイルのいずれかに属している必要があります。 Cloud Managerを管理する権限では不十分なので、チームメンバーにAEMインスタンスに対する権限を付与する必要があります。 詳細情報を参照してください。
+AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、次の2つの製品プロファイルのいずれかに属している必要があります。 `AEM Users`または`AEM Administrators`。 Cloud Managerを管理する権限では不十分なので、チームメンバーにAEMインスタンスに対する権限を付与する必要があります。 詳細情報を参照してください。
 
 >[!NOTE]
 >システム管理者がAEMユーザー製品プロファイルに割り当てたすべてのユーザーは、Cloud Managerに（読み取り専用）アクセスできます。
