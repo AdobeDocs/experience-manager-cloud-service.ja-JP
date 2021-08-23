@@ -3,9 +3,9 @@ title: 'チームメンバーを製品プロファイルとしてAEMに割り当
 description: このページでは、チームメンバーをAEM as a Cloud Service製品プロファイルに割り当てる方法について説明します
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '818'
 ht-degree: 2%
 
 ---
@@ -101,7 +101,7 @@ AEM as aCloud Serviceインスタンスへのアクセス権を付与するに�
 
 ## 次の作業 {#whats-next}
 
-これで、AEMにCloud Service製品プロファイルとして割り当てたCloud Serviceは、作成者にアクセスする方法と、AEM as a Usitorのページのオーサリングについて理解する方法を学ぶ準備が整いました。 パスに従う必要があります。次に、「 AEMユーザーの学習パス」または「開発者およびデプロイメントマネージャーの学習パス」を確認します。
+これで、AEMにCloud Service製品プロファイルとして割り当てたCloud Serviceは、作成者にアクセスする方法と、AEM as a Usitorのページのオーサリングについて理解する方法を学ぶ準備が整いました。 次に、[AEM Users](/help/onboarding/onboarding-journey/learning-path-aem-users.md)または[Developers and Deployment Manager](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md)の学習パスを確認して、パスに従う必要があります。
 
 ## その他のリソース {#additional-resources}
 
