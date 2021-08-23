@@ -3,7 +3,7 @@ title: 開発者およびデプロイメントマネージャーの学習パス
 description: 開発者またはデプロイメントマネージャー(AEM)の場合は、このページで、アクセス権を取得後の次の手順を説明します
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 7%
@@ -49,7 +49,7 @@ Cloud Manager UI のセルフサービス Git アカウント管理を使用し�
 
 ## 次の作業 {#whats-next}
 
-開発者およびデプロイメントマネージャーは、AEM as a Cloud Serviceでのコードの開発方法を理解する準備が整いました。 詳しくは、以下の「その他のリソース」の節を参照してください。 コンテンツ作成者の学習ジャーニーについて詳しくは、 AEM作成者の学習パスを参照してください。
+開発者およびデプロイメントマネージャーは、AEM as a Cloud Serviceでのコードの開発方法を理解する準備が整いました。 詳しくは、以下の「その他のリソース」の節を参照してください。 コンテンツ作成者の学習ジャーニーについて詳しくは、[AEM作成者の学習パス](/help/onboarding/onboarding-journey/learning-path-aem-users.md)を参照してください。
 
 ## その他のリソース {#additional-resources}
 
