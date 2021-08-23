@@ -3,7 +3,7 @@ title: オンボーディングジャーニー
 description: このページでは、オンボーディングジャーニーの概要について説明します
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 7%
@@ -64,4 +64,4 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 
 ## 次の手順 {#what-is-next}
 
-これで、オンボーディングジャーニーを開始する準備が整いました。 このジャーニーの次の部分に進み、オンボーディングプロセスの概要に関する記事をお読みください。
+これで、オンボーディングジャーニーを開始する準備が整いました。 次の段階に進み、[Get Starting with Onboarding Process](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md)の記事をお読みください。
