@@ -3,7 +3,7 @@ title: 'Cloud Manager製品プロファイルへのチームメンバーの割�
 description: このページでは、チームメンバーをCloud Manager製品プロファイルに割り当てる方法について説明します
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 3%
@@ -157,7 +157,7 @@ Adobe Admin Consoleから、Cloud Managerのプロファイルのリストを確
 
 ## 次の作業 {#whats-next}
 
-ビジネスオーナー、デプロイメントマネージャー、開発者など、3種類のCloud Manager製品プロファイルについて学習しました。 次に、チームメンバーをCloud Manager製品プロファイル（ビジネスオーナー、デプロイメントマネージャー、開発者など）に割り当てました。 これで、次にCloud Managerを使用したクラウドリソースの設定ドキュメントを確認し、オンボーディングジャーニーを続行する準備が整いました。ここでは、以下の内容を説明します。
+ビジネスオーナー、デプロイメントマネージャー、開発者など、3種類のCloud Manager製品プロファイルについて学習しました。 次に、チームメンバーをCloud Manager製品プロファイル（ビジネスオーナー、デプロイメントマネージャー、開発者など）に割り当てました。 これで、次にCloud Manager](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md)で[クラウドリソースを設定するドキュメントを確認し、オンボーディングジャーニーを続行する準備が整いました。ここでは、以下について説明します。
 
 1. *ビジネスオーナー*&#x200B;の役割に割り当てられたシステム管理者は、Cloud Managerにアクセスしてログインする必要があります。
 
