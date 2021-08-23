@@ -3,7 +3,7 @@ title: オンボーディングプロセスの概要
 description: このページでは、オンボーディングジャーニーの概要について説明します
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -66,5 +66,5 @@ ht-degree: 1%
 
 ## 次の手順 {#whats-next}
 
-これで、Admin Consoleにログインし、システム管理者としてプロファイルを確認したので、次にCloud Manager製品プロファイルへのチームメンバーの割り当てドキュメントを確認して、オンボーディングジャーニーを続行する必要があります。
+これで、Admin Consoleにログインし、システム管理者としてプロファイルを確認したので、次に「 [Cloud Manager製品プロファイルへのチームメンバーの割り当て](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) 」のドキュメントを確認して、オンボーディングジャーニーを続行する必要があります。
 
