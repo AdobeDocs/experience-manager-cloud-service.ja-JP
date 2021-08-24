@@ -3,9 +3,9 @@ title: 開発者およびデプロイメントマネージャーの学習パス
 description: 開発者またはデプロイメントマネージャー(AEM)の場合は、このページで、アクセス権を取得後の次の手順を説明します
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '467'
 ht-degree: 7%
 
 ---
@@ -67,9 +67,3 @@ Cloud Manager UI のセルフサービス Git アカウント管理を使用し�
 
 * [AEM SPA Editorの概要（開発者向け）](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-### Experience Leagueコース {#experience-league-courses}
-
-* 従来のサイト
-* SPA Editor
-* ヘッドレス
-* コマース
