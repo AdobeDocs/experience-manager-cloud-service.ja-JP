@@ -3,9 +3,9 @@ title: Cloud Managerを使用したクラウドリソースの設定
 description: このページでは、Cloud Managerを使用してクラウドリソースを設定する方法について説明します
 hide: true
 index: false
-source-git-commit: 4ef8c167e24a18af578d58c21fd1079a080f71d1
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1428'
 ht-degree: 15%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 15%
 
 ## Cloud Manager への移動 {#navigate-cloud-manager}
 
-ビジネスオーナーユーザーには、開始するためのリンクが記載されたお知らせメールが届きます。また、ユーザーがリンクを見つけられない場合は、[Adobe Experience Cloud](https://experience.adobe.com)に直接アクセスし、Adobe IDを使用してログインします。
+ビジネスオーナーユーザーには、開始するためのリンクが記載されたお知らせメールが届きます。リンクが見つからない場合は、Adobe IDを使用して直接ログインして[Cloud Manager](https://my.cloudmanager.adobe.com/)にアクセスします。
 
 次の手順に従って、Cloud Managerに移動します。
 
