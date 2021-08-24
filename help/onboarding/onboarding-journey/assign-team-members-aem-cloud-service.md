@@ -3,9 +3,9 @@ title: 'チームメンバーを製品プロファイルとしてAEMに割り当
 description: このページでは、チームメンバーをAEM as a Cloud Service製品プロファイルに割り当てる方法について説明します
 hide: true
 index: false
-source-git-commit: 3f69a3a8775a5bf824b94d6b10dc20be4036015c
+source-git-commit: 4a6408c498b093fc8b3baf4bdf1798b4281c90c2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '833'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 ## はじめに {#introduction}
 
-AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、次の2つの製品プロファイルのいずれかに属している必要があります。 `AEM Users`または`AEM Administrators`。 Cloud Managerを管理する権限では不十分なので、チームメンバーにAEMインスタンスに対する権限を付与する必要があります。 詳細情報を参照してください。
+AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、次の2つの製品プロファイルのいずれかに属している必要があります。 `AEM Users`または`AEM Administrators`。 Cloud Managerを管理する権限では不十分なので、チームメンバーにAEMインスタンスに対する権限を付与する必要があります。
 
 >[!NOTE]
 >システム管理者がAEMユーザー製品プロファイルに割り当てたすべてのユーザーは、Cloud Managerに（読み取り専用）アクセスできます。
@@ -85,7 +85,7 @@ AEM as aCloud Serviceインスタンスへのアクセス権を付与するに�
 
    ![](/help/onboarding/onboarding-journey/assets/add-team1.png)
 
-1. 新しいタブで、環境のオーサーインスタンスにアクセスできるAdobe Admin Consoleに移動します。 *AEM Administrators*&#x200B;または&#x200B;*AEM Users*&#x200B;を、この個人が付与する必要がある権限に基づいて選択します。 [AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)の詳細をご覧ください。
+1. 新しいタブで、環境のオーサーインスタンスにアクセスできるAdobe Admin Consoleに移動します。 **AEM Administrators**&#x200B;または&#x200B;**AEM Users**&#x200B;を、この個人が付与する必要がある権限に基づいて選択します。 [AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)の詳細をご覧ください。
 
    ![](/help/onboarding/onboarding-journey/assets/add-team2.png)
 
@@ -105,5 +105,6 @@ AEM as aCloud Serviceインスタンスへのアクセス権を付与するに�
 
 ## その他のリソース {#additional-resources}
 
+* [Admin Console での製品とユーザーアクセスの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
 * [AEMへのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
 * [ページのオーサリングのクイックスタートガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
