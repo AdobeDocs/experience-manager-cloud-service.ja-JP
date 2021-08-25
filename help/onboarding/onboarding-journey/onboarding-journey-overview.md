@@ -3,7 +3,7 @@ title: オンボーディングジャーニー
 description: このページでは、オンボーディングジャーニーの概要について説明します
 hide: true
 index: false
-source-git-commit: 47524cd63e0592f20818a1918423fdaf45970115
+source-git-commit: d5a948bd296d7e6ac9aca0b7bfc72202c1046b99
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 7%
@@ -55,12 +55,12 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 |---|---|---|
 | 0 | オンボーディングジャーニー | このドキュメントでは、以下について説明します。 |
 | 1 | 次のようなオンボーディングの概念を学習します。<br>[System Administrator](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)<br>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)<br>[AdobeIdentity Management System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/ims.html?lang=en)<br>[Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)<br>[AEM as a Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)<br>[Cloud Service as a Product Profiles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en)<br>[Adobeサポートへのお問い合わせ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/onboarding-help-resources.html?lang=en) | オンボーディングの概念について説明します。 |
-| 2 | オンボーディングの概要 | システムへのログインとAdmin Console管理者としてのプロファイルの確認について説明します |
-| 3 | Cloud Manager製品プロファイルへのチームメンバーの割り当て | Cloud Manager製品プロファイルを確認し、Cloud Manager製品プロファイルにチームメンバーを割り当てる方法を学びます。 |
-| 4 | Cloud Managerを使用したクラウドリソースの設定 | クラウドリソースの作成方法と実行者について説明します。 さらに、クラウドプログラムと環境の作成方法についても説明します。 |
-| 5 | チームメンバーを製品プロファイルとしてAEMに割り当てるCloud Service | システム管理者がチームメンバーを製品プロファイルとしてAEMに割り当てる方法をCloud Serviceします。 |
-| 6 | AEM DevelopersおよびDeployment Managerの学習パス | 開発者としてCloud Manager Gitにアクセスして管理する方法、およびデプロイメントマネージャーとしてCloud Managerにパイプラインを設定してコードをデプロイする方法について説明します。 |
-| 7 | AEMユーザーの学習パス | AEMオーサーとしてAEMにCloud Serviceインスタンスとしてアクセスする方法と、AEM as aCloud Service用のコンテンツのオーサリングについて説明します。 |
+| 2 | [オンボーディングの概要](/help/onboarding/onboarding-journey/get-started-onboarding-journey.md) | システムへのログインとAdmin Console管理者としてのプロファイルの確認について説明します |
+| 3 | [Cloud Manager製品プロファイルへのチームメンバーの割り当て](/help/onboarding/onboarding-journey/assign-team-members-cloud-manager.md) | Cloud Manager製品プロファイルを確認し、Cloud Manager製品プロファイルにチームメンバーを割り当てる方法を学びます。 |
+| 4 | [Cloud Managerを使用したクラウドリソースの設定](/help/onboarding/onboarding-journey/setup-cloud-resources-via-cloud-manager.md) | クラウドリソースの作成方法と実行者について説明します。 さらに、クラウドプログラムと環境の作成方法についても説明します。 |
+| 5 | [チームメンバーを製品プロファイルとしてAEMに割り当てるCloud Service](/help/onboarding/onboarding-journey/assign-team-members-aem-cloud-service.md) | システム管理者がチームメンバーを製品プロファイルとしてAEMに割り当てる方法をCloud Serviceします。 |
+| 6 | [AEM DevelopersおよびDeployment Managerの学習パス](/help/onboarding/onboarding-journey/learning-path-developers-deploymentmanagers.md) | 開発者としてCloud Manager Gitにアクセスして管理する方法、およびデプロイメントマネージャーとしてCloud Managerにパイプラインを設定してコードをデプロイする方法について説明します。 |
+| 7 | [AEMユーザーの学習パス](/help/onboarding/onboarding-journey/learning-path-aem-users.md) | AEMオーサーとしてAEMにCloud Serviceインスタンスとしてアクセスする方法と、AEM as aCloud Service用のコンテンツのオーサリングについて説明します。 |
 
 ## 次の手順 {#what-is-next}
 
