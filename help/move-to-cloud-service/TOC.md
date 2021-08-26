@@ -1,14 +1,14 @@
 ---
-sub-product: AEM as a Cloud Service への移行
+sub-product: Move to AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service への移行
 breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
-feature: デプロイ
+feature: Deploying
 role: Architect, Developer
-source-git-commit: fadab55c0fb743cb0ce7102686b2f3f10f93d73b
+source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 70%
+source-wordcount: '130'
+ht-degree: 62%
 
 ---
 
@@ -47,3 +47,4 @@ ht-degree: 70%
    + [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
++ [パートナーのExperience ManagerとしてのCloud Serviceへの移行ガイド](/help/move-to-cloud-service/getting-started.md)
