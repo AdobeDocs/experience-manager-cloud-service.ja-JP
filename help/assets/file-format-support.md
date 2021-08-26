@@ -2,12 +2,12 @@
 title: サポートされているファイル形式と MIME タイプ
 description: ' [!DNL Experience Manager Assets] as a [!DNL Cloud Service] でサポートされているファイル形式と MIME タイプ。'
 contentOwner: AG
-feature: アセット管理、レンディション
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0c2c69423a042f6ef5b0dd0a2bdbcacc7103ddae
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '792'
 ht-degree: 100%
 
 ---
@@ -159,7 +159,7 @@ ht-degree: 100%
 | PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PS | - | - | ✓ | - | - |
 | RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | - | ✓ | - | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ |
 | XLS | - | - | - | ✓ | ✓ |
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
@@ -228,5 +228,5 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [アセットマイクロサービスを使用したアセット処理](asset-microservices-overview.md)
-* [テキストベースのアセットのスマートタグ付けに対応しているファイル形式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [テキストベースのアセットのスマートタグ付けに対応しているファイル形式](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 

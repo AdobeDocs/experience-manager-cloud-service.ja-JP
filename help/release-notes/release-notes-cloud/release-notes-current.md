@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2f08b1487c1a7fc7b94678e78f8fd72054ff51cb
+source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
 workflow-type: tm+mt
-source-wordcount: '1632'
-ht-degree: 19%
+source-wordcount: '1030'
+ht-degree: 27%
 
 ---
 
@@ -25,131 +25,75 @@ ht-degree: 19%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager]のリリース日(2021.7.0)は2021年7月29日です。
-[!DNL Cloud Service]次のリリース(2021.8.0)は2021年8月27日です。
+[!DNL Adobe Experience Manager]のリリース日(2021.8.0)は2021年8月26日です。
+[!DNL Cloud Service]次のリリース(2021.9.0)は2021年9月30日です。
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、 2021年7月リリースの概要](https://video.tv.adobe.com/v/335580)ビデオをご覧ください。[
-
-## [!DNL Experience Manager] 基盤とし [!DNL Cloud Service] て {#foundation}
-
-### 新機能 {#what-is-new-foundation}
-
-* より柔軟なDispatcher設定：プロジェクトは、より簡単に整理できます。 例えば、サイト構造を反映した複数の書き換えルールファイルを含めることができるようになりました。 [この柔](/help/implementing/dispatcher/disp-overview.md#validation-debug) 軟なモードについて説明します。このモードを活用するためにDispatcher設定を構築する方法などがあります。
-* レプリケーションエージェントの「配布」タブにあるツリーレプリケーションUIは、非推奨と見なされ、9月30日以降に削除される予定です。 [代替レプリ](/help/operations/replication.md#tree-activation) ケーション戦略について説明します。
-* Slingデータソースのサポート用のバンドル`org.apache.sling.datasource-1.0.4.jar`は、古い機能を持ち、お客様が使用していないので、削除されました。
+追加された機能の概要については、 2021年8月リリースの概要](https://video.tv.adobe.com/v/336277)ビデオをご覧ください。[
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets]の新機能 {#assets-features}
 
-* コンテンツ自動化機能を使用すると、 [!DNL Experience Manager Assets]は[!DNL Adobe Creative Cloud] APIを活用して、アセットの大規模な生産を自動化できます。 同じアセットのバリエーションを作成するのに必要な時間と繰り返しを大幅に減らし、コンテンツの速度を向上させます。 この機能にはプログラミングは必要なく、DAM内から機能します。 [アセットの統合](/help/assets/cc-api-integration.md)を使用したCreative Cloudのバリエーションの生成を参照してください。
+* デジタルアセットをリンクとして共有する場合、ユーザーはURLをすぐにクリップボードにコピーできます。 この機能強化により、アセットをより迅速かつ便利に共有できます。 この機能により、アセットを迅速かつ便利に共有できます。
 
-* [!DNL Experience Manager Assets] PDFビューアを [!DNL Document Cloud] 含めて、PDFドキュメントをネイティブにプレビューできます。この機能を使用すると、ファイルの処理や変換を行わずに、複数ページのPDFファイルをプレビューできます。 この機能により、[!DNL Experience Manager] 6.5と同等の機能が向上しました。ビューアで使用できるコントロールには、ズーム、ページへ移動、ドッキング解除の各コントロール、フルスクリーン表示などがあります。 また、ページやしおりをプレビューしたり、しおりにジャンプしたりすることもできます。 ファイル自体に対するコメントがサポートされ、PDFファイル内のコンテンツに対するコメントと注釈が今後のリリースで追加される予定です。
+   ![アセットをリンクとして共有する場合の「 URLをコピー」オプション](/help/assets/assets/link-share-copy-URL-option.png)
+   *図：アセットをリンクとして共有する場合、URLをコピーして別々に共有できるようになりました。*
 
-   ![PDFビューアを使用したPDFフ [!DNL Experience Manager] ァイルのプレビュー](/help/assets/assets/preview-pdf-file-viewer.png)
+* TXTファイルをアップロードすると、アセットマイクロサービスによって自動的にサムネールが生成されます。 PNGサムネールは、ユーザーがファイルを開かずに、コンテンツやファイルをある程度識別するのに役立つTXTファイルのレンディションです。 この機能は設定を必要とせず、デフォルトで機能します。
 
-* Linkshareのダウンロード機能は、非同期ダウンロードを使用してダウンロード速度を向上させます。 [リンク共有](/help/assets/download-assets-from-aem.md#link-share-download)を使用して共有されたアセットのダウンロードを参照してください。
+   ![TXTファイルのレンディションは、PNG形式でに自 [!DNL Assets] 動的に生成されます](/help/assets/assets/thumbnail-rendition-txt-file.png)
+   *図：TXTファイルのレンディションは、開かずにファイルを識別できるように、自動的に生成されます。*
 
-   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
+### [!DNL Assets]プレリリースチャネルの新機能 {#assets-prerelease-features}
 
-* ビュー設定が強化され、ユーザーがデフォルトのビューとデフォルトの並べ替えパラメーターを選択できるようになりました。
+* 列表示およびカード表示で、検索結果に表示されるアセットを並べ替えることができるようになりました。 並べ替えは、「名前」、「作成済み」、「変更済み」、「なし」のいずれかの列で行います。
 
-   ![表示設定でのデフォル [!UICONTROL ト表示の設定]](/help/assets/assets/view-settings-for-defaults.png)
+   ![列表示とカード表示での [!DNL Assets] 検索結果の並べ替え](/help/assets/assets/sort-searched-assets.png)
+   *図：列表示およびカード表示で [!DNL Assets] の検索結果の並べ替え*
 
-* プロパティの述語に基づいて、フォルダーを検索およびフィルタリングできます。
+### [!DNL Assets] で修正されたバグ {#assets-bugs-fixed}
 
-   ![検索用述語を使用した検索フォルダーのフィルタリング](/help/assets/assets/search-folders-via-predicates.png)
-
-### [!DNL Assets]プレリリースチャネルで利用できる新機能 {#assets-prerelease-features}
-
-<!-- TBD: Not sure about GA of these enh. Shall check with the team.
-
-* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-  ![Number of assets in a folder are displayed on the interface](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* You can directly apply a metadata schemas to a folder in its [!UICONTROL Properties].
-
-  ![Add metadata schema from folder properties](/help/assets/assets/metadata-schema-folder-properties.png)
--->
-
-* デジタルアセットをリンクとして共有する場合、ユーザーはURLをクリップボードにコピーできます。 この機能強化により、アセットをより迅速かつ便利に共有できます。
-
-### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
-
-API `com.day.cq.dam.api.collection.SmartCollection`は、[!DNL Cloud Service]として[!DNL Experience Manager]では使用できません。 （CQ-4326322）
+* 寄稿者グループのメンバーが[!DNL Assets]コンソールに移動すると、コレクションを作成するための追加の`POST`要求が生成されます。 このリクエストは必須ではなく、権限の問題が原因で失敗し、多くのエラーがログに作成されます。 （CQ-4328856）
+* ユーザーがアセットを表示し、左側のパネルのポップアップメニューから「[!UICONTROL タイムライン]」を選択すると、エラーが表示されます。 ログでは、不正なクエリが原因で多くの警告が記録されます。 （CQ-4328919）
 
 ## [!DNL Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms}
+### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* automated forms conversionサービスを使用して、フランス語、ドイツ語、スペイン語のPDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)をアダプティブフォームに変換できるようになりました。[
-* アダプティブフォームのコンポーネントに関連するエラーを表示するためのパネルをテンプレートエディターに別に追加しました。 これにより、すべてのアダプティブフォームのエラーを1か所に統合し、解決に要する時間を短縮できます。
+* automated forms conversionサービスでは、イタリア語とポルトガル語のPDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model)をアダプティブFormsに変換できます。[
 
-### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#beta-features-forms}
+* **Acroformベースのレコードのドキュメント**:AEM Forms as aCloud Serviceでは、 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、XFAベースのフォームテンプレート以外のレコードのドキュメントのテンプレートとして使用することができます。
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信APIシェル](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html) プでは、XDPテンプレートとXMLデータを組み合わせて、様々な形式の印刷ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。 APIを使用すると、次の操作を可能にするアプリケーションを作成できます。
-   * テンプレートファイルにXMLデータを入力してドキュメントを生成します。
-   * 非インタラクティブPDF印刷ストリームを含む様々な形式で出力フォームを生成します。
-   * XFAフォームPDFおよびAdobe Acrobatフォームから印刷用PDFファイルを生成します。
+* **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)できるようになりました。アダプティブフォームデータを取得して、Microsoft Azure ストレージに BLOB として保存することができます。
 
-* **Variable Data Externalizer**：AEM ワークフロー変数のデータを、組織で管理される外部ストレージシステムに保存できます。
+### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **Acroformベースのレコードのドキュメント**:また、 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) を、XFAベースのフォームテンプレート以外のレコードのドキュメントのテンプレートとして使用することもできます。
+* **アダプティブフォームでのAdobe Signの役割の使用**:Adobe Sign for business and enterpriseサービスレベルでは、署名者だけでなく、契約の受信者の役割を拡張して、ワークフロー要件に合わせることができます。契約の各受信者がアダプティブフォームでの役割を設定できるようになりました。署名者はデフォルトの役割です。
 
-* **Microsoft Azureデータストアコネクタ**:これで、フォームデ [ータモデルをMicrosoft Azure Storageに接続できます](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html)。アダプティブフォームデータを取得し、BLOBとしてMicrosoft Azure Storageに保存することができます。
+* **Analytics for Adaptive Forms**:Adobe Analyticsを介してエンドユーザーの行動をキャプチャおよび追跡し、アダプティブFormsでエンドユーザーのインサイトを収集できるようになりました。情報に基づくデータ決定をおこない、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
+
+* **AEM FormsをMicrosoft DynamicsおよびSalesforce.comに簡単に接続できます**。このサービスは、Microsoft DynamicsとSalesforce.com用の標準のデータソース設定とデータモデルを提供し、開発者がアダプティブフォームのデータソースとしてMicrosoft DynamicsとSalesforce.comをより迅速かつ簡単に設定できるようにします。
 
 ## CIFアドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* CIFコアコンポーネントv2
-   * PDP/PLP URLとSEOの構成の簡素化と改善
-   * オーサリングモードでのステージングされた製品データの視覚的インジケーターにより、今後の変更の可視性が向上
-   * コンテンツページとコマースページ用の新しいサイトマップコンポーネント
+* 新しいカテゴリピッカーUIにより、ユーザーエクスペリエンスの向上、効率の向上、複雑な製品カタログのサポートの向上を実現
 
-* 事前定義済みのレコメンデーションまたはオンザフライで作成されたレコメンデーションを使用した、AEM StorefrontのAdobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)による[AdobeコマースSensei製品レコメンデーションのサポート
+   ![新しいカテゴリピッカー](/help/assets/CIF/category-picker.png)
 
-## [!DNL Experience Manager Screens] として  [!DNL Cloud Service] {#screens}
+* CIFコアコンポーネントのサポートの向A11Y
 
-### バグ修正 {#bug-fixes-screens}
-
-* コンテンツプロバイダーの設定は、作成または更新時に検証されるようになりました。
-
-* すべての表示にはフォルダ列があります。
-
-* Screensコンテンツ構造を展開できます。
-
-* `bulk-offline-update-service` 一部の環境のすべての権限が欠落していました。
-
-* ヘルプリンクが更新され、新しいScreensクラウドドキュメントと一致するようになりました。
-
-* プレイリストの割り当てを解除し、プレイヤーを割り当てたプレイリストの削除を許可しないようになりました。
-
-* 「すべて」のキャッシュがクリアされた場合、プレーヤーがアセットを再ダウンロードするようになりました。
-
-* 次の日に&#x200B;*End Time*&#x200B;が設定されている場合、繰り返しスケジュールが機能するようになりました。
-
-* `Back&Forward` は、ScreensでCloud ServiceUIとして機能します。
-
-* 同じ名前で異なる名前空間を持つタグを以前に作成することはできませんでした。
-
-## Cloud ServiceとしてのExperience Managerに関するXMLドキュメント {#xml-documentation}
-
-### 新機能 {#what-is-new-xml-documentation}
-
-Cloud ServiceとしてのExperience ManagerのXMLドキュメントは、一般に利用できます。 Experience Managerのお客様は、Cloud ServiceとしてXMLドキュメントのアドオンを入手し、Experience Managerサイトを含む複数のチャネルにわたって技術コンテンツをインポート、作成、管理、配信できます。
-
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 この節では、AEM as a Cloud Service 2021.8.0 および 2021.7.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date-cm-aug}
 
 AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12日です。
-次回のリリースは2021年9月9日に予定されています。
+次回のリリースは 2021 年 9 月 9 日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-aug}
 
@@ -162,58 +106,21 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 
 * プログラムごとの最大SSL証明書数を50に増やします。
 
-* ユーザーがCloud Manager UIを使用して複数のリポジトリを作成および管理できるセルフサービス機能。
+* ユーザーが Cloud Manager UI を使用して複数のリポジトリを作成および管理できるセルフサービス機能。
 
-* SonarQubeがGitの履歴データを不必要に読み取っていた問題を修正しました。 大規模なコードベースでは、これにより、不要なビルドパフォーマンスの低下が生じる可能性があります。
+* SonarQubeがGitの履歴データを不必要に読み取っていた問題を修正しました。 大規模なコードベースでは、これにより、ビルドパフォーマンスが不必要に低下することがありました。
 
-* パイプラインごとにMaven依存関係キャッシュを無効にするAPIが追加されました。
+* パイプラインごとに Maven 依存関係キャッシュを無効にする API が追加されました。
 
 * Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 29 に更新されました。
 
 ### バグ修正 {#bug-fixes-aug}
 
-* 最新のリリースが現在のリリースより少ない場合は、「利用可能な更新」ステータスが表示されない。
+* 最新のリリースが現在のリリースより前の場合は、更新可能ステータスは表示されるべきではありません。
 
 * 名前が非常に長い新しい組織で、最初のオンボーディングが失敗していました。
 
-* 何らかの理由でパイプラインが2回トリガーされた場合、*はパイプライン実行ステータス*&#x200B;を更新できませんでしたが、実行の1つが失敗することがあります。
-
-### リリース日 {#release-cm-july}
-
-AEM as aCloud Service2021.7.0のCloud Managerのリリース日は2021年7月15日です。
-次回のリリースは 2021 年 8 月 12 日（PT）に予定されています。
-
-### 新機能 {#what-is-new-cm-july}
-
-* お客様は、Cloud Manager のビルドプロセスに Azul 8 および 11 JDK を使用できるようになりました。ツールチェーン対応の Maven プラグイン&#x200B;*または* Maven プロセスの実行全体に対して、これらの JDK のいずれかを使用するように選択できます。
-
-* 送信エグレス IP がビルドステップログファイルに記録されるようになりました。
-
-* 古いバージョンのAEMを実行しているステージ環境と実稼動環境で、ステータスが&#x200B;**Update Available**&#x200B;とレポートされるようになりました。
-
-* サポートされるSSL証明書の最大数が、プログラムあたり20に増えました。
-
-* 設定できるドメインの最大数は、環境ごとに500に増えました。
-
-* 「**Git を管理**」ボタンのタイトルが「**Git 情報にアクセス**」に変更され、ダイアログが視覚的に更新されました。
-
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 28 に更新されました。
-
-### バグ修正 {#bug-fixes-cm-july}
-
-* IP環境をバインドする際に、「プレビュー」オプションが使用できない許可リストが発生することがありました。
-
-* 存在しない実行の実行詳細ページに手動で移動しても、エラーが表示されず、読み込みが無限に繰り返される画面が表示されるだけでした。
-
-* SSL証明書の最大数に達した場合に表示されるエラーメッセージは役に立ちませんでした。
-
-* 状況によっては、**概要**&#x200B;ページのパイプラインカードに表示されるリリースバージョンに矛盾が生じる場合があります。
-
-* プログラムの追加ウィザードで、作成後に名前を変更できないと誤って表示されていた問題を修正しました。
-
-### 既知の問題 {#known-issues-cm-july}
-
-Azul JDK の使用に切り替えるお客様は、すべての既存アプリケーションが Azul JDK でエラーなしにコンパイルされるとは限らないことに注意してください。切り替える前に、ローカルでテストすることを強くお勧めします。
+* 何らかの理由でパイプラインが 2 回トリガーされた場合、*パイプライン実行ステータスを更新できませんでした*&#x200B;エラーで、いずれかの実行が失敗します。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -229,17 +136,3 @@ Azul JDK の使用に切り替えるお客様は、すべての既存アプリ�
 
 * CTTは、抽出が正常に完了した後、`/tmp`ディレクトリをクリーンアップしませんでした。 これにより、ディスク容量の問題が発生することがありました。
 
-
-## Cloud Acceleration Manager {#cam}
-
-### リリース日 {#release-date-july-cam}
-
-Cloud Acceleration Managerのリリース日は2021年7月15日です。
-
-### 新機能 {#what-is-new-cam}
-
-Cloud Acceleration Managerは、Cloud Serviceの計画から運用開始まで、移行プロセス全体を通じてITチームを導くように設計されたクラウドベースのアプリケーションです。 Adobeが推奨するベストプラクティス、ヒント、ドキュメント、ツールを使用して、AEMへのCloud Serviceとしてのジャーニーの各段階で役立つように、チームを設定し、移行を成功に導きます。 詳細[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)。
-
->[!NOTE]
->
-> この[Cloud Acceleration Managerのデモビデオ](https://video.tv.adobe.com/v/335547)を確認してください。

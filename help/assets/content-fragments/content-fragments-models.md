@@ -1,12 +1,12 @@
 ---
 title: コンテンツフラグメントモデル
 description: コンテンツフラグメントモデルが AEM におけるヘッドレスコンテンツの基盤となっている仕組みと、構造化コンテンツを含んだコンテンツフラグメントを作成する方法について説明します。
-feature: コンテンツフラグメント
+feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f2ddd93d9a6f8e17dc0eb75ee5adab4354249091
+source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2256'
 ht-degree: 100%
 
 ---
@@ -126,8 +126,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 フラグメントエディターでは、各インスタンスがタブとして表示されます。
 
       >[!NOTE]
-      >
-      >このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
+      このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
 
 ## プロパティ {#properties}
 
@@ -160,12 +159,10 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    例えば、コンテンツフラグメントモデルの **1 行のテキスト**&#x200B;フィールド `Country` は、2 つの依存するコンテンツフラグメントで同じ `Japan` 値を持つことはできません。2 回目に入力しようとすると、警告が表示されます。
 
    >[!NOTE]
-   >
-   >言語ルートごとに一意性が確保されます。
+   言語ルートごとに一意性が確保されます。
 
    >[!NOTE]
-   >
-   >バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
+   バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
 
 * 特定のデータタイプとそのプロパティについて詳しくは、**[コンテンツ参照](#content-reference)**&#x200B;を参照してください。
 
@@ -207,16 +204,13 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    * 構造化データを包含／取得できます。
 
       >[!NOTE]
-      >
-      >この方法は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
+      この方法は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
    * （結果のフラグメント内で）1 つまたは複数の参照に対して設定できます。
 
 >[!NOTE]
->
->AEM では次のものの繰り返しを防止できます。
->* コンテンツ参照：
->これにより、現在のフラグメントへの参照を追加できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
-
+AEM では次のものの繰り返しを防止できます。
+* コンテンツ参照：
+これにより、現在のフラグメントへの参照を追加できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
 * GraphQL でのフラグメント参照：
 相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
 
@@ -260,8 +254,7 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->これは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
+これは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
 
 標準プロパティに加えて、次のものを定義できます。
 
@@ -286,9 +279,18 @@ type CompanyModel {
    ![フラグメント参照](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
->
->繰り返し防止メカニズムが設定されます。これにより、フラグメント参照で現在のコンテンツフラグメントを選択できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
->GraphQL にも、フラグメント参照の繰り返し防止機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
+繰り返し防止メカニズムが設定されます。これにより、フラグメント参照で現在のコンテンツフラグメントを選択できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
+GraphQL にも、フラグメント参照の繰り返し防止機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
+
+## コンテンツフラグメントモデル - プロパティ {#content-fragment-model-properties}
+
+コンテンツフラグメントモデルの下記の&#x200B;**プロパティ**&#x200B;を編集できます。
+
+* **基本**
+   * **モデルタイトル**
+   * **タグ**
+   * **説明**
+   * **画像をアップロード**
 
 ## コンテンツフラグメントモデルの有効化または無効化 {#enabling-disabling-a-content-fragment-model}
 
@@ -336,8 +338,7 @@ type CompanyModel {
 コンテンツのガバナンスを実装するには、アセットフォルダーに&#x200B;**ポリシー**&#x200B;を設定して、そのフォルダーでのフラグメント作成に使用可能なコンテンツフラグメントモデルを管理します。
 
 >[!NOTE]
->
->このメカニズムは、ページの高度なプロパティでページとその子に対して[ページテンプレートを許可する](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)ことに似ています。
+このメカニズムは、ページの高度なプロパティでページとその子に対して[ページテンプレートを許可する](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)ことに似ています。
 
 **許可されているコンテンツフラグメントモデル**&#x200B;に&#x200B;**ポリシー**&#x200B;を設定するには：
 
@@ -369,8 +370,7 @@ type CompanyModel {
 ## コンテンツフラグメントモデルの削除 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->コンテンツフラグメントモデルを削除すると、依存するフラグメントが影響を受ける可能性があります。
+コンテンツフラグメントモデルを削除すると、依存するフラグメントが影響を受ける可能性があります。
 
 コンテンツフラグメントモデルを削除するには：
 
@@ -380,8 +380,7 @@ type CompanyModel {
 1. モデルを選択し、次にツールバーの「**削除**」を選択します。
 
    >[!NOTE]
-   >
-   >モデルが参照されている場合は、警告が表示されます。適切に対処します。
+   モデルが参照されている場合は、警告が表示されます。適切に対処します。
 
 ## コンテンツフラグメントモデルの公開 {#publishing-a-content-fragment-model}
 
@@ -395,8 +394,7 @@ type CompanyModel {
 1. モデルを選択し、次にツールバーの「**公開**」を選択します。公開ステータスがコンソールに示されます。
 
    >[!NOTE]
-   >
-   >まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+   まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 ## コンテンツフラグメントモデルを非公開にする {#unpublishing-a-content-fragment-model}
 
@@ -409,12 +407,28 @@ type CompanyModel {
 1. コンテンツフラグメントモデルが含まれているフォルダーに移動します。
 1. モデルを選択し、次にツールバーの「**非公開**」を選択します。公開ステータスがコンソールに示されます。
 
-## コンテンツフラグメントモデル - プロパティ {#content-fragment-model-properties}
+<!--
+## Locked Content Fragment Models {#locked-content-fragment-models}
 
-コンテンツフラグメントモデルの下記の&#x200B;**プロパティ**&#x200B;を編集できます。
+This feature provides governance for Content Fragment Models that have been published. 
 
-* **基本**
-   * **モデルタイトル**
-   * **タグ**
-   * **説明**
-   * **画像をアップロード**
+The challenge:
+
+* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+
+  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+
+  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+
+* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+
+* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+
+The solution:
+
+* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+
+* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+
+* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
+-->
