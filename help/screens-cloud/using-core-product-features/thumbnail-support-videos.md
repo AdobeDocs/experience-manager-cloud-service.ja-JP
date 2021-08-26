@@ -3,9 +3,9 @@ title: Screens as aCloud Serviceでのビデオのサムネールのサポート
 description: ここでは、ビデオのサムネールサポートをCloud ServiceとしてScreensに追加する方法について説明します。
 hide: true
 index: false
-source-git-commit: ea96e811c0164e3cc7d323e734c1617d3c0e9308
+source-git-commit: bd1efae4453e2c3a73eb962c4e6b4b4b9ba064d2
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,21 @@ ht-degree: 0%
 
    ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
-1. ビデオコンポーネントのプロパティを編集します。
+1. ビデオを選択し、*レンチ*&#x200B;アイコンをクリックして、ビデオのプロパティを開きます。
 
-1. アセットピッカーからサムネールドロップゾーンに画像をドラッグします。
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
-1. チャネルをプレビューします。
+1. **ビデオ**&#x200B;ダイアログボックスが開き、**サムネール**&#x200B;のドロップゾーンが表示されます。
 
-1. コンポーネントにビデオが設定されている場合、ビデオが再生されます。 そうでない場合、サムネールが設定され、サムネールが再生されます。 そうしないと、コンポーネントは設定されていないと見なされ、スキップされます
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+
+1. アセットピッカーからサムネール&#x200B;**ドロップゾーンに画像をドラッグ&amp;ドロップし、「**&#x200B;完了&#x200B;**」をクリックします。**
+
+   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+
+1. 「**プレビュー**」をクリックします。
+
+1. コンポーネントにビデオが設定されている場合、ビデオが再生されます。 そうでない場合、サムネールが設定され、サムネールが再生されます。 それ以外の場合、コンポーネントは設定されていないと見なされ、スキップされます。
 
 ## ビデオでサムネールを使用する際にサポートされるユースケース {#understand-use-case}
 
