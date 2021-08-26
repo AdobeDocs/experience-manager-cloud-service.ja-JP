@@ -1,10 +1,10 @@
 ---
 title: ScreensでのプレーヤーのインストールとCloud Service
 description: ここでは、ScreensでプレーヤーをCloud Serviceとしてインストールおよび設定する方法について説明します。
-source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
+source-git-commit: 1fc06f987bb40d940bbec9c37e6d58c2c1ca9266
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
@@ -74,6 +74,15 @@ AEM Screens Playerの基本的な再生監視では、次の操作を実行で�
 >|—|—|
 >|isContentRendering {boolean}|GPUが実際のコンテンツの再生を確認できる場合はtrue（ピクセル分析に基づく）|
 
+### 制限事項 {#limitations}
+
+基本的な再生監視に関する制限の一部を以下に示します。
+
+* プレーヤーがサーバーに独自の再生状態を報告するので、アクティブな接続が必要です。
+
+* 現在、GPUをチェックする`isContentRendering`プロパティは、デフォルトで有効にするためにリソースを集中的に消費しており、プレーヤーの環境設定からの明示的なオプトインが必要です。 ビデオと組み合わせて使用しないことをお勧めします。
+
+* シーケンスチャネルでサポートされています。
 
 ## 次の手順 {#whats-next}
 
