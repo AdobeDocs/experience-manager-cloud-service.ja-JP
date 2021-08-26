@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 27%
+source-wordcount: '1192'
+ht-degree: 30%
 
 ---
 
@@ -62,19 +62,32 @@ ht-degree: 27%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* automated forms conversionサービスでは、イタリア語とポルトガル語のPDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model)をアダプティブFormsに変換できます。[
+<!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
+
+* Forms as aCloud ServiceのAEMアーキタイププロジェクトに、Microsoft DynamicsとSalesforce.comの](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)用の[4つの新しいテーマとフォームデータモデルが含まれるようになりました。
 
 * **Acroformベースのレコードのドキュメント**:AEM Forms as aCloud Serviceでは、 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、XFAベースのフォームテンプレート以外のレコードのドキュメントのテンプレートとして使用することができます。
 
 * **Microsoft Azure データストアコネクタ**：[フォームデータモデルを Microsoft Azure Storage に接続](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html?lang=ja)できるようになりました。アダプティブフォームデータを取得して、Microsoft Azure ストレージに BLOB として保存することができます。
 
+### [!DNL Forms] のベータ版機能 {#aug-what-is-new-forms-prerelease}
+
+* **統合ストレージコネクタ：** 統合ストレージコネクタを使用すると、AEM FormsCloud Serviceストレージにデータを保持することなく、データソースをAEMワークフローまたはアダプティブフォームに接続できます。PII（個人を特定できる情報）を安全に処理し、情報を直接Azureデータストアに保存できます。
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ja) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、ドキュメントを同期モードで生成できます。この API により、以下の機能を備えたアプリケーションを作成できます。
+   * テンプレートファイルに XML データを入力することでドキュメントを生成する
+   * 非インタラクティブ PDF 印刷ストリームを含む様々な形式の出力フォームを生成する
+   * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成する
+
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
-* **アダプティブフォームでのAdobe Signの役割の使用**:Adobe Sign for business and enterpriseサービスレベルでは、署名者だけでなく、契約の受信者の役割を拡張して、ワークフロー要件に合わせることができます。契約の各受信者がアダプティブフォームでの役割を設定できるようになりました。署名者はデフォルトの役割です。
+* **アダプティブフォームでのAdobe Signの役割の使用**:Adobe Sign for business and enterpriseサービスレベルでは、署名者だけでなく、契約の受信者の役割を拡張して、ワークフロー要件に合わせることができます。同意書の各受信者がアダプティブフォーム](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html?#addsignerstoanadaptiveform)で自分の役割を設定できるようになりました。署名者はデフォルトの役割です。[
 
 * **Analytics for Adaptive Forms**:Adobe Analyticsを介してエンドユーザーの行動をキャプチャおよび追跡し、アダプティブFormsでエンドユーザーのインサイトを収集できるようになりました。情報に基づくデータ決定をおこない、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
-* **AEM FormsをMicrosoft DynamicsおよびSalesforce.comに簡単に接続できます**。このサービスは、Microsoft DynamicsとSalesforce.com用の標準のデータソース設定とデータモデルを提供し、開発者がアダプティブフォームのデータソースとしてMicrosoft DynamicsとSalesforce.comをより迅速かつ簡単に設定できるようにします。
+* **AEM FormsをMicrosoft DynamicsおよびSalesforce.comに簡単に接続できます**。このサービスは、Microsoft DynamicsとSalesforce.com用の標準のデータソース設定とデータモデルを提供し、開発者がMicrosoft DynamicsとSalesforce.comをアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できま [す](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)。
 
 ## CIFアドオン {#cloud-services-cif}
 
