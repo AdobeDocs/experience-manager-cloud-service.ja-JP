@@ -1,9 +1,9 @@
 ---
 title: ScreensでのプレーヤーのインストールとCloud Service
 description: ここでは、ScreensでプレーヤーをCloud Serviceとしてインストールおよび設定する方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+source-git-commit: 6afb71803ae24bed2d5d5662a7cdd4af5637e329
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,38 @@ ht-degree: 2%
    ![画像](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. クラウドモードに切り替えると、**確認**&#x200B;をクリックすると、プレーヤーの登録が解除されます。
+
+## 基本的な再生の監視 {#playback-monitoring}
+
+プレーヤーが様々な再生指標をレポートする際に、各`ping`のデフォルト値が30秒に設定されます。 指標に基づいて、動きのないエクスペリエンス、空白の画面、スケジュールの問題など、様々なエッジケースを検出できます。 これにより、デバイスの問題を把握し、トラブルシューティングでき、調査や修正の際に役立ちます。
+
+AEM Screens Playerの基本的な再生監視では、次の操作を実行できます。
+
+* プレーヤーがコンテンツを適切に再生しているかどうかをリモートで監視する
+
+* フィールド内の空白の画面や壊れたエクスペリエンスに対する反応性を向上させる
+
+* エンドユーザーに壊れたエクスペリエンスを表示するリスクを軽減する
+
+### プロパティについて {#understand-properties}
+
+各`ping`には、次のプロパティが含まれます。
+
+| プロパティ | 詳細 |
+|---|---|
+| id {string} | プレーヤー識別子 |
+| activeChannel {string} | 現在再生中のチャネルパス。何もスケジュールされていない場合はnull。 |
+| activeElements {string} | コンマ区切りの文字列。現在は、すべての再生シーケンスチャネルに表示される要素（マルチゾーンレイアウトの場合は複数） |
+| isDefaultContent {boolean} | 再生チャネルがデフォルトチャネルまたはフォールバックチャネルと見なされる（つまり、優先度が1でスケジュールが設定されていない）場合はtrue |
+| hasContentChanged {boolean} | 過去5分間にコンテンツが変更された場合はtrue 、それ以外の場合はfalse |
+| lastContentChange {string} | 前回のコンテンツ変更のタイムスタンプ |
+
+>[!NOTE]
+>オプションで、プレーヤーの環境設定（「再生監視を有効にする」）から、より高度なプロパティを有効にできます。つまり、
+>|プロパティ|説明|
+>|—|—|
+>|isContentRendering {boolean}|GPUが実際のコンテンツの再生を確認できる場合はtrue（ピクセル分析に基づく）|
+
 
 ## 次の手順 {#whats-next}
 
