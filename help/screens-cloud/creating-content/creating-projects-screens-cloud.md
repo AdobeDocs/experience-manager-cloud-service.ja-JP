@@ -1,9 +1,9 @@
 ---
 title: ScreensでのプロジェクトのCloud Service
 description: ここでは、ScreensでプロジェクトをCloud Serviceとして作成する方法について説明します。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
 1. Screensコンテンツプロバイダーに移動します。
 
    >[!NOTE]
-   >プロジェクトを作成するためにScreensコンテンツプロバイダーにアクセスする方法については、[Using Screens Content Provider]を参照してください。
+   >プロジェクトを作成するためにScreensコンテンツプロバイダーにアクセスする方法については、[Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)を参照してください。
 
 1. アクションバーの右上隅にある「**Screensプロジェクト**&#x200B;を作成」をクリックします。
 
