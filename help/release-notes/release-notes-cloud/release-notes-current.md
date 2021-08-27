@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
+source-git-commit: 6277325b80f1cdb8735f88b5ad856e405572bffe
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 30%
+source-wordcount: '1367'
+ht-degree: 27%
 
 ---
 
@@ -90,6 +90,24 @@ ht-degree: 30%
 * **Analytics for Adaptive Forms**:Adobe Analyticsを介してエンドユーザーの行動をキャプチャおよび追跡し、アダプティブFormsでエンドユーザーのインサイトを収集できるようになりました。情報に基づくデータ決定をおこない、エンドユーザーエクスペリエンスを向上させるのに役立ちます。
 
 * **AEM FormsをMicrosoft DynamicsおよびSalesforce.comに簡単に接続できます**。このサービスは、Microsoft DynamicsとSalesforce.com用の標準のデータソース設定とデータモデルを提供し、開発者がMicrosoft DynamicsとSalesforce.comをアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できま [す](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html)。
+
+## [!DNL Screens] として  [!DNL Cloud Service] {#screens}
+
+### 新機能 {#what-is-new-screens}
+
+* コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用し、コンテンツの再生とターゲティングを適切にテストできるようになりました。実際のビデオは適切なチームで確定されます。
+詳しくは、[基本的な再生監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)を参照してください。
+
+* でのビデオのサムネールのサポートが、Screens as aCloud Serviceとしてサポートされるようになりました。 コンテンツ作成者は、ビデオのサムネールを定義して、画像をプレースホルダーとして使用し、コンテンツの再生とターゲティングを適切にテストしながら、実際のビデオを適切なチームで確定できます。 ビデオの再生に失敗した場合にも、画像を使用できます。
+
+### バグ修正 {#bug-fixes-screens}
+
+* 埋め込みページのコンテンツをプレーヤーに表示できなかったので、この問題は修正されました。
+
+* ログインに成功した後、デフォルトのページ（チャネル）に移動すると、内部サーバーエラーページが表示されます。
+
+* プレイリストを削除する際に、関連するタグエントリが削除されませんでした。
+
 
 ## CIFアドオン {#cloud-services-cif}
 
