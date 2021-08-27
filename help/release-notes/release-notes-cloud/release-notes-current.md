@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 03151f72a86e708a0a91c141d5901a9fb7a311a5
+source-git-commit: 8dae2fd4b830cfe77b1f8c65a24e6f0fb7456dc8
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1197'
 ht-degree: 30%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 30%
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* Forms as aCloud ServiceのAEMアーキタイププロジェクトに、Microsoft DynamicsとSalesforce.comの](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)用の[4つの新しいテーマとフォームデータモデルが含まれるようになりました。
+* Forms as aCloud ServiceのAEMアーキタイププロジェクトに、Microsoft DynamicsおよびSalesforce.comの[Canvas 3.0テーマおよびフォームデータモデルが含まれるようになりました。](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)
 
 * **Acroformベースのレコードのドキュメント**:AEM Forms as aCloud Serviceでは、 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、XFAベースのフォームテンプレート以外のレコードのドキュメントのテンプレートとして使用することができます。
 
@@ -72,7 +72,9 @@ ht-degree: 30%
 
 ### [!DNL Forms] のベータ版機能 {#aug-what-is-new-forms-prerelease}
 
-* **統合ストレージコネクタ：** 統合ストレージコネクタを使用すると、AEM FormsCloud Serviceストレージにデータを保持することなく、データソースをAEMワークフローまたはアダプティブフォームに接続できます。PII（個人を特定できる情報）を安全に処理し、情報を直接Azureデータストアに保存できます。
+* **統合ストレージコネクタ：** 統合ストレージコネクタを使用して、顧客管理リポジトリ内の処理中のデータを外部化します。例えば、
+   * Forms Portalの保存と再開機能を有効にし、アダプティブフォームのドラフトを顧客管理データリポジトリに保存します。
+   * 顧客が管理するリポジトリに、機密性の高い個人データ(SPD)を含むプロセス内のAEM Workflowsデータ(AEM Workflow Variablesデータ)を格納します。
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ja) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、ドキュメントを同期モードで生成できます。この API により、以下の機能を備えたアプリケーションを作成できます。
    * テンプレートファイルに XML データを入力することでドキュメントを生成する
