@@ -2,9 +2,9 @@
 title: Screens as aCloud Serviceでのビデオのサムネールのサポート
 description: ここでは、ビデオのサムネールサポートをCloud ServiceとしてScreensに追加する方法について説明します。
 index: true
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: e5dc848ca58e176b89861414d0e711866f96eb0e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 * デバイスで再生の問題が発生した場合に備えて、フォールバックメカニズムを設定します。
 
 ## ビデオでのサムネールの使用 {#using-thumbnails}
+
+>[!IMPORTANT]
+>**前提条件**
+>ビデオのサムネールの使用方法を学習する前に、Screens as a Screensプロジェクトでチャネルのビデオレンディションを作成する方法を必ず学習してください。 詳しくは、[こちら](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)を参照してください。
 
 ビデオでサムネールを使用するには、以下の手順に従います。
 
@@ -68,6 +72,6 @@ ht-degree: 0%
 
 * サムネールのみが設定されたビデオコンポーネントがサムネールを再生します。
 
-* ビデオとサムネールの両方が設定されたビデオコンポーネントがビデオを再生します。
+* ビデオ（ビデオに正しいレンディションがある場合）とサムネールの両方が設定されたビデオコンポーネントがビデオを再生します。
 
 * ビデオセットを含むビデオコンポーネントは、再生エラーが発生した場合にサムネールを再生し、サムネールが設定されていない場合には次の項目にスキップします。
