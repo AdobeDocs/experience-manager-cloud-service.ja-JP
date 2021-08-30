@@ -1,10 +1,9 @@
 ---
 title: 'チームメンバーを製品プロファイルとしてAEMに割り当てるCloud Service '
 description: このページでは、チームメンバーをAEM as a Cloud Service製品プロファイルに割り当てる方法について説明します
-hide: true
 index: false
 role: Admin, User, Developer
-source-git-commit: c7f8ef3b1bb120d393118f41a21c55b52bf023e9
+source-git-commit: a9eacc44c6be9101fae131c6fb6b95612efeac53
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 2%
