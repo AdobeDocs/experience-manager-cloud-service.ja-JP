@@ -1,13 +1,13 @@
 ---
 title: Dynamic Mediaニュースレターアーカイブ
 description: 'Dynamic Mediaニュースレター(Experience League別)は月刊ニュースレターです。 Dynamic Media および Dynamic Media Classic をすばやく習得して価値の実現にすぐに着手できるように工夫されています。このワンストップのショップニュースレターでは、知識の構築に役立つ貴重なリソースをご利用いただけます。例えば、ハウツービデオやソリューションの概要をご利用いただけます。画像プリセット、ビューアプリセット、ビデオプロファイルなど、主な機能の一部を紹介します。 '
-feature: アセット管理
+feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 0cc54dd3590792b6842af030f4bb5b87e3c0fbe8
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 70%
+source-wordcount: '1050'
+ht-degree: 69%
 
 ---
 
@@ -124,7 +124,7 @@ Dynamic Media Newsletter by Experience Leagueは、Dynamic MediaとDynamic Media
    * デジタルアセットの保護に関する今後の Web セミナーの紹介
    * 情報満載の Adobe Insider Tour の次のステップ
    * Experience Managerアセット(Experience Managerアセット)内にDynamic Mediaがある場合に利用できる優れた機能。
-   * Web サイトへの 360 度ビデオとカスタムビデオサムネールの追加
+   * 360°ビデオとカスタムビデオサムネールをWebサイトに追加する。
    * Dynamic Mediaの主要ソリューションコンサルタントである`Andrew Hathaway`に、Experience Managerアセットでお会いします。
 
 * **[2019 年 6 月、第 06 号](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_06_2019_June.html)**

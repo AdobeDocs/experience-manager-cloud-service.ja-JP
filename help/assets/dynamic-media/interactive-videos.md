@@ -1,12 +1,12 @@
 ---
 title: インタラクティブビデオ
 description: Dynamic Media でインタラクティブビデオとショッパブルビデオを使用する方法を説明します.
-feature: インタラクティブビデオ
+feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '5941'
+source-wordcount: '5938'
 ht-degree: 73%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 73%
 
 * 再生中にビデオ内で製品が使用されると、同じ製品のサムネール画像が右側に表示されます。
 
-* ビデオを一時停止し、製品のクイックビューを開くには、サムネールを選択します。 例えば、ビデオ内でKitchenAidのサムネール画像を選択して、ミキサーの360度のスピンビューを表示したり、ズームインしてミキサーの詳細を表示したりできます。
+* ビデオを一時停止し、製品のクイックビューを開くには、サムネールを選択します。 例えば、ビデオ内でKitchenAidのサムネール画像を選択して、ミキサーの360°スピンビューを表示したり、ズームインしてミキサーの詳細を表示したりできます。
 
 [Dynamic Mediaでのインタラクティブビデオの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=ja#dynamic-media)も参照してください。
 
@@ -93,8 +93,7 @@ Experience Managerアセット](https://adobecustomersuccess.adobeconnect.com/p1
 >* e コマースソリューション（IBM® WebSphere® Commerce、Elastic Path、SAP Hybris、Intershop など）から Adobe Experience Manager に製品データを取り出すために、Adobe Experience Manager の実装が e コマース統合フレームワークを使用して&#x200B;*いない*。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
 
 >
->
-Adobe Experience Manager の実装で Adobe Experience Manager eCommerce を使用している場合は、このタスクをスキップして次のタスクに進みます。
+>Adobe Experience Manager の実装で Adobe Experience Manager eCommerce を使用している場合は、このタスクをスキップして次のタスクに進みます。
 
 最初に、インタラクティブビデオの作成プロセス中に製品サムネールを対応する製品クイックビューにマッピングできるように、既存のクイックビューの実装で使用している動的変数を特定します。
 

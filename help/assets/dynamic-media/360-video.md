@@ -1,19 +1,19 @@
 ---
 title: 360/VR ビデオ
 description: Dynamic Media で 360 および VR（Virtual Reality）ビデオを操作する方法を学びます。
-feature: 360 VR ビデオ
+feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 79%
+source-wordcount: '927'
+ht-degree: 76%
 
 ---
 
 # 360/VR ビデオ {#vr-video}
 
-360 度ビデオでは、すべての方向のビューが同時に記録されます。このタイプのビデオは、全方位カメラやカメラのコレクションを使用して撮影されます。フラットディスプレイでの再生時に、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイス組み込みのジャイロスコープ制御を適用します。
+360°ビデオでは、すべての方向のビューを同時に記録します。 このタイプのビデオは、全方位カメラやカメラのコレクションを使用して撮影されます。フラットディスプレイでの再生時に、ユーザーは視野角を制御できます。また、モバイルデバイスでの再生では通常、デバイス組み込みのジャイロスコープ制御を適用します。
 
 Dynamic Media には、360 ビデオアセット配信のネイティブサポートが含まれています。デフォルトでは、表示または再生するための追加設定は不要です。360 ビデオは、.mp4、.mkv、.mov といった標準のビデオ拡張子を使用して配信されます。最も一般的なコーデックは H.264 です。
 
@@ -27,7 +27,7 @@ Dynamic Media には、360 ビデオアセット配信のネイティブサポ�
 
 ## 360 ビデオの視聴 {#video-in-action}
 
-[Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)を選択して、ブラウザーウィンドウを開き、360度ビデオを視聴します。 ビデオ再生中にポインターを新しい位置にドラッグすると、表示角度が変更されます。
+[Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)を選択して、ブラウザーウィンドウを開き、360°ビデオを見ます。 ビデオ再生中にポインターを新しい位置にドラッグすると、表示角度が変更されます。
 
 ![360 ビデオのサンプル](assets/6_5_360videoiss_simplified.png)
 *Space Station 360（国際宇宙ステーションの 360 度ビデオ）のビデオフレーム*
@@ -122,7 +122,7 @@ Start by uploading 360 Videos.
 
    * 「ビューア」リストから「**[!UICONTROL Video360VR]**」を選択します。
 
-      バーチャルリアリティ（VR）ビデオは、バーチャルリアリティヘッドセットで視聴する、没入感のあるビデオコンテンツです。通常のビデオと同様に、360 度ビデオカメラを使用してビデオを録画またはキャプチャする際、最初に VR ビデオを作成します。
+      バーチャルリアリティ（VR）ビデオは、バーチャルリアリティヘッドセットで視聴する、没入感のあるビデオコンテンツです。通常のビデオと同様に、360°ビデオカメラを使用してビデオを録画またはキャプチャする際に、最初にVRビデオを作成します。
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *360 VR ビデオのスクリーンショット。*
 
