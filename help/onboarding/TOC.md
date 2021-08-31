@@ -24,7 +24,7 @@ ht-degree: 70%
    + [Cloud Manager の概要](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
    + [AEM as a Cloud Serviceチームと製品プロファイル](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
    + [Adobeサポート](/help/onboarding/learn-concepts/onboarding-help-resources.md)
-+ [オンボーディングジャーニーガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target=&quot;_blank&quot;}
++ [オンボーディングジャーニーガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html){target="_blank"}
 + AEM as a Cloud Service - はじめに {#what-is-required}
    + [Adobe ID の取得](what-is-required/get-your-adobe-id.md)
    + [Cloud Manager のロール](what-is-required/user-roles-permissions.md)
