@@ -3,9 +3,9 @@ sub-product: Onboarding Journey
 user-guide-title: オンボーディングジャーニー
 breadcrumb-title: オンボーディングジャーニー
 user-guide-description: システム管理者向けのガイド付きジャーニーについては、まず要件、手順、アプローチをレイアウトします。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
-feature: Developer Tools
+feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e58ee2d3669cfce25b354bd78047119c4132c64e
+source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
