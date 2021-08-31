@@ -4,7 +4,7 @@ description: このページでは、オンボーディングジャーニーの�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
+source-git-commit: 533e6cb780f908cfa4a30831bab7b80174872f24
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 >[!NOTE]
 >次の手順を正しく完了するには、システム管理者である必要があります。
 
-1. 次の図に示すように、「ようこそ」のEメールから&#x200B;**「開始**」をクリックして、Admin Consoleに移動するか、[ここ](https://adminconsole.adobe.com)から直接Admin Consoleに移動します。
+1. 以下の図に示すように、「お知らせメール」で&#x200B;**「**&#x200B;開始」をクリックして、Admin Consoleに移動するか、[ここ](https://adminconsole.adobe.com)から直接Admin Consoleに移動します。
 
    >[!NOTE]
    >システム管理者は、複数の電子メールを受信します。 アクセス権を付与された組織名に関する情報を提供するお知らせメールを探し、「**開始**」をクリックします。 Eメールが見つからない場合は、[Admin Console](https://adminconsole.adobe.com/)に直接移動します。
