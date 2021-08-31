@@ -4,9 +4,9 @@ description: AEMユーザーの場合は、このページで、アクセス権�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 4%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 4%
 
 このドキュメントは、AEM as a Adobe Experience Manager (AEM)にアクセスするためにCloud Serviceコンテンツ作成者が役立ちます。
 
-読み終えたら、次のことを理解する必要があります。
+読み終えたら、次の方法を理解する必要があります。
 
-* Cloud Managerへのアクセス方法。
-* AEM as a Cloud Serviceインスタンスへのアクセス方法。
+* Cloud Managerへのアクセス
+* AEM as aCloud Serviceインスタンスへのアクセス
 * AEM as aCloud Serviceのコンテンツの作成
 
 ## はじめに  {#introduction}
