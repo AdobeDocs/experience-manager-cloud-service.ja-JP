@@ -4,9 +4,9 @@ description: このページでは、オンボーディングジャーニーの�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: e7cdb26b588c1dc8a8cd9634ac45927c3cee10c6
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -35,10 +35,12 @@ ht-degree: 1%
 >[!NOTE]
 >次の手順を正しく完了するには、システム管理者である必要があります。
 
-1. お知らせメールで&#x200B;**「開始** 」をクリックしてAdmin Consoleに移動するか、[ここ](https://adminconsole.adobe.com)から直接Admin Consoleに移動します。
+1. 次の図に示すように、「ようこそ」のEメールから&#x200B;**「開始**」をクリックして、Admin Consoleに移動するか、[ここ](https://adminconsole.adobe.com)から直接Admin Consoleに移動します。
 
    >[!NOTE]
    >システム管理者は、複数の電子メールを受信します。 アクセス権を付与された組織名に関する情報を提供するお知らせメールを探し、「**開始**」をクリックします。 Eメールが見つからない場合は、[Admin Console](https://adminconsole.adobe.com/)に直接移動します。
+
+   ![](/help/journey-onboarding/assets/get-started-email.png)
 
 1. [Adobe ID](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)を使用してログインします。 ログインに成功すると、次に示すように、Adobe Admin Consoleの&#x200B;**概要**&#x200B;ページが表示されます。
 
