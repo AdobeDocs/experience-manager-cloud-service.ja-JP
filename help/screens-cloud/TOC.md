@@ -3,9 +3,9 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as aCloud Service
 breadcrumb-title: AEM Screens as aCloud Service
 user-guide-description: AEM ScreensをCloud Serviceとして理解する。
-source-git-commit: cd06e409ec085fcc77fc7bb466169de3a14dba40
+source-git-commit: 83b90b7aa51911d6aa5a76cfff7b7bca78903fe8
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -41,3 +41,4 @@ ht-degree: 9%
    + [ディスプレイへのプレーヤーの割り当て](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
 + コード製品機能{#core-product-features}の使用
    + [ビデオのサムネールのサポート](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
++ [Screens as aCloud ServiceのFAQ](/help/screens-cloud/screens-cloud-faqs.md)
