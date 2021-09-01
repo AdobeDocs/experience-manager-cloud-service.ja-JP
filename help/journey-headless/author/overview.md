@@ -1,13 +1,13 @@
 ---
 title: AEMヘッドレスコンテンツ作成者ジャーニー
 description: AEMの強力で柔軟なヘッドレス機能、その機能、プロジェクト用のコンテンツの作成方法を紹介するガイド付きのジャーニーについては、ここから始めてください。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 0d7d1150e0156f08f4289054e8fb626713c7bc79
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 20%
+source-wordcount: '868'
+ht-degree: 18%
 
 ---
 
@@ -31,6 +31,14 @@ AEMでは、これはコンテンツフラグメントで実現されます。 �
 * ヘッドレスなコンテンツ配信の概要とメリットについての基本的な理解を得る。
 * AEM ヘッドレス機能と、それらが連携してヘッドレスなエクスペリエンスを提供する仕組みを理解する。
 * AEMヘッドレスプロジェクトのコンテンツを作成する機能がある。
+
+## AEMドキュメントのジャーニー {#documentation-journeys}
+
+[Documentation Journey](/help/journey-documentation/home.md) は、AEMを初めて使用する読者が、事前のトピックやAEMに関する知識を最小限に抑えながら、ビジネス上の問題を最初から最後まで理解し、解決するのに役立つ説明を提供し、様々な複雑なトピックや機能をまとめます。
+
+ドキュメントのジャーニーは、Adobeの最新の調査、Adobeコンサルタントによる実証済みの実装経験、お客様のプロジェクトからのフィードバックに基づく、ベストプラクティスの原則に基づいて設計されています。
+
+AEMを使用してヘッドレスなビジネスケースを解決する方法をAdobeが推奨する方法を知りたい場合は、[AEMヘッドレスジャーニー](/help/journey-headless/home.md)を開始する場所にします。
 
 ## 対象者 {#audience}
 

@@ -1,10 +1,10 @@
 ---
 title: AEMヘッドレス翻訳ジャーニー
 description: AEMの強力な翻訳ツールを使用してヘッドレスコンテンツを翻訳するガイド付きのジャーニーを見るには、ここから始めてください。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 9de8b0b295808d0f0fa5bc21a74345e2ba2655d4
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 8%
@@ -38,7 +38,7 @@ AEM、ヘッドレス、翻訳について既に詳しい方は、このジャ�
 
 ドキュメントのジャーニーは、Adobeの最新の調査、Adobeコンサルタントによる実証済みの実装経験、お客様のプロジェクトからのフィードバックに基づく、ベストプラクティスの原則に基づいて設計されています。
 
-AEMを使用してヘッドレスビジネスケースを解決する方法をAdobeが推奨する方法を知るには、AEMヘッドレスジャーニーをどこから開始するかを決定します。
+AEMを使用してヘッドレスなビジネスケースを解決する方法をAdobeが推奨する方法を知りたい場合は、[AEMヘッドレスジャーニー](/help/journey-headless/home.md)を開始する場所にします。
 
 ## 対象者 {#audience}
 

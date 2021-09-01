@@ -1,14 +1,14 @@
 ---
-sub-product: AEM as a Cloud Service の実装
+sub-product: Implementing for AEM as a Cloud Service
 user-guide-title: AEM as a Cloud Service の実装
 breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
-feature: 開発者ツール
+feature: Developer Tools
 role: Developer, Architect
-source-git-commit: a9b81e6bcefc95cac305f8387928cf515939aef0
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1033'
+ht-degree: 94%
 
 ---
 
@@ -144,7 +144,7 @@ ht-degree: 0%
       + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
    + ヘッドレスエクスペリエンス管理 {#headless}
       + [ヘッドレスと AEM](developing/headless/introduction.md)
-      + [ヘッドレスデベロッパージャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html?lang=ja)
+      + [ヘッドレスドキュメントジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/home.html)
       + 「はじめる前に」ガイド {#getting-started}
          + [はじめに](developing/headless/getting-started/introduction.md)
          + [設定の作成](developing/headless/getting-started/create-configuration.md)

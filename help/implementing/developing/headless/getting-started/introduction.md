@@ -1,23 +1,29 @@
 ---
 title: ヘッドレスをはじめる前に
 description: このクイックスタートガイドでは、コンテンツモデル、コンテンツフラグメント、GraphQL API など、Cloud Service の強力なヘッドレス機能としての AEM の基本事項について説明します。
-source-git-commit: 8dc9bf522a9b1c750ae8c92659cc83b444cb3c94
-workflow-type: ht
-source-wordcount: '257'
-ht-degree: 100%
+exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
-
 # ヘッドレスをはじめる前に {#introduction}
 
-ヘッドレス入門ガイドでは、AEM as a Cloud Service を使用したエクスペリエンスの作成、管理、配信の簡単な道筋を 5 つの手順に分けて示します。各ガイドは前のガイドに基づいているので、じっくり順番に検討することをお勧めします。
+ヘッドレス入門ガイドでは、AEMをCloud Serviceとして使用したエクスペリエンスの作成、管理および配信を、AEMおよびヘッドレステクノロジーに精通しているユーザー向けの5つの手順で行うためのシンプルな手順を説明します。 各ガイドは前のガイドに基づいているので、じっくり順番に検討することをお勧めします。
 
 1. [設定の作成](create-configuration.md)
 1. [コンテンツフラグメントモデルの作成](create-content-model.md)
 1. [アセットフォルダーの作成](create-assets-folder.md)
 1. [コンテンツフラグメントの作成](create-content-fragment.md)
 1. [コンテンツフラグメントへのアクセスと配信](create-api-request.md)
+
+>[!TIP]
+>
+>この入門ガイドは、AEMとヘッドレステクノロジーの両方に関する知識を前提としています。
+>
+>AEMまたはヘッドレスを初めて使用する場合は、[ヘッドレスドキュメントのジャーニー](/help/journey-headless/home.md)で、ヘッドレスとAEMによるサポート方法の両方のエンドツーエンドの紹介を参照してください。
 
 ## 対象者 {#audience}
 

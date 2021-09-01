@@ -1,10 +1,10 @@
 ---
 title: ヘッドレスコンテンツと、AEMでの翻訳方法について説明します
 description: ヘッドレスな概念、AEMとのマッピング方法、AEM翻訳の理論について説明します。
-index: false
-hide: true
-hidefromtoc: true
-source-git-commit: 142c49b6b98dc78c3d36964dada1cfb900afee66
+index: true
+hide: false
+hidefromtoc: false
+source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 32%

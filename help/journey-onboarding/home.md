@@ -1,10 +1,10 @@
 ---
 title: オンボーディングジャーニー
 description: オンボーディングエクスペリエンスを理解するために利用できる、ガイド付きオンボーディングジャーニーの概要については、ここから始めてください。
-source-git-commit: 7a8d21e9a5cd4f1767e55aaf68114199a6a0d1cf
+source-git-commit: 9cea7a8a7adf363b6b969a1a427ebf7ff473469b
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 6%
+source-wordcount: '462'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,14 @@ AEM as a Cloud Service のジャーニーが始まりました。お客様のご
 * チームが設定され、クラウドリソースにアクセスできるようになります。
 * AEM作成者は、AEM as aCloud Service
 * AEM開発者およびデプロイメントマネージャーは、AEM as aCloud Serviceにアクセスできます。
+
+## AEMドキュメントのジャーニー {#documentation-journeys}
+
+[Documentation Journey](/help/journey-documentation/home.md) は、AEMを初めて使用する読者が、事前のトピックやAEMに関する知識を最小限に抑えながら、ビジネス上の問題を最初から最後まで理解し、解決するのに役立つ説明を提供し、様々な複雑なトピックや機能をまとめます。
+
+ドキュメントのジャーニーは、Adobeの最新の調査、Adobeコンサルタントによる実証済みの実装経験、お客様のプロジェクトからのフィードバックに基づく、ベストプラクティスの原則に基づいて設計されています。
+
+AEM as a Content Application用にチームでコンテンツを作成し続ける方法をAdobeが推奨する方法を知りたい場合は、ここから始めます。
 
 ## オーディエンス {#audiences}
 
