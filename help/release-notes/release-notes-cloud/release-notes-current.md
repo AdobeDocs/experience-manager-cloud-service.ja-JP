@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1ae9a03c76e6ef1e84ac9f3402c1e48b07fdac8c
+source-git-commit: f2c0b3cca634b10b1b39532465968619d53b4e65
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 26%
+source-wordcount: '1427'
+ht-degree: 25%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 26%
 
 ### 新機能 {#what-is-new-screens}
 
-* コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用し、コンテンツの再生とターゲティングを適切にテストできるようになりました。実際のビデオは適切なチームで確定されます。
+* Cloud ServiceとしてのScreensで、基本的な再生監視がサポートされるようになりました。 プレーヤーでは、各「ping」（デフォルトは30秒）で様々な再生指標がレポートされるようになりました。 指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白画面、スケジュールの問題など）を検出できます。 この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうか、空白の画面やフィールド内のエクスペリエンスの破損に対する反応性を向上し、エンドユーザーに壊れたエクスペリエンスを表示するリスクを低減できます。
 詳しくは、[基本的な再生監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)を参照してください。
 
 * でのビデオのサムネールのサポートが、Screens as aCloud Serviceとしてサポートされるようになりました。 コンテンツ作成者は、ビデオのサムネールを定義して、画像をプレースホルダーとして使用し、コンテンツの再生とターゲティングを適切にテストしながら、実際のビデオを適切なチームで確定できます。 ビデオの再生に失敗した場合にも、画像を使用できます。
