@@ -4,30 +4,14 @@ description: このページでは、オンボーディングジャーニーの�
 index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 792ec993bd9d628fac49b9553d5923c74195f4c7
+source-git-commit: 5a91f45b4ed933e37f5af61a194d08e204cd1514
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '532'
 ht-degree: 7%
 
 ---
 
 # オンボーディングジャーニー {#onboarding-jourrney}
-
-AEM as a Cloud Service のジャーニーが始まりました。お客様のご参加をお待ちしております。 新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、チームを設定し、AEM as aCloud Serviceにアクセスできるようにするための出発点として機能します。
-
-## はじめに {#introduction}
-
-このガイドでは、最も重要なトピックを順を追って説明し、完了時に以下をおこないます。
-
-* AEM as a Cloud Service onboarding journeyの期待事項を完全に理解している。
-* AEM as a Content Applicationのコンテンツを作成および開発する方法を学ぶための最初の手順を、チームが開始および実行できるようになりました。
-
-つまり、
-
-* チームが設定され、クラウドリソースにアクセスできるようになります。
-* AEM作成者は、AEM as aCloud Service
-* AEM開発者およびデプロイメントマネージャーは、AEM as aCloud Serviceにアクセスできます。
-
 
 ## オンボーディングエクスペリエンス {#audience}
 
