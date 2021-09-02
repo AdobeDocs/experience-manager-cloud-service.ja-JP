@@ -5,10 +5,10 @@ breadcrumb-title: オンボーディングガイド
 user-guide-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。
 feature: Deploying
 role: Admin, User, Developer
-source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 67%
+source-wordcount: '99'
+ht-degree: 65%
 
 ---
 
@@ -28,4 +28,3 @@ ht-degree: 67%
 + AEM as a Cloud Service - はじめに {#what-is-required}
    + [Cloud Manager のロール](what-is-required/user-roles-permissions.md)
    + [システム管理者タスク](what-is-required/add-users-assign-cm-roles.md)
-   + [AEM インスタンスへのユーザーアクセスの許可](/help/onboarding/what-is-required/accessing-aem-instance.md)

@@ -2,9 +2,9 @@
 title: 環境の管理 - Cloud Service
 description: 環境の管理 - Cloud Service
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 529fbdcba9fc4c1432beef1b63ff89079a900224
+source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1608'
 ht-degree: 78%
 
 ---
@@ -145,8 +145,6 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 ## アクセスの管理 {#managing-access}
 
 **環境**&#x200B;カードのドロップダウンメニューから「**アクセスを管理**」を選択します。オーサーインスタンスに直接移動して、環境のアクセスを管理できます。
-
-詳しくは、「[オーサーインスタンスへのアクセスの管理](/help/onboarding/what-is-required/accessing-aem-instance.md)」を参照してください。
 
 ![](assets/environ-access.png)
 

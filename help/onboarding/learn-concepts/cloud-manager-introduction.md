@@ -2,7 +2,7 @@
 title: Cloud Managerについて説明します
 description: このページでは、Cloud Manager、Cloud Managerのプログラム、環境について説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 900bcfd2b05b7c996c7ef51118d1f09a16020332
+source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 23%
@@ -39,7 +39,7 @@ Cloud Managerは、AEMのCloud Serviceとしての不可欠なコンポーネン
 1. Cloud Manager カードの「**Launch**」をクリックします。
 Cloud Manager に正常にログインすると、ユーザーインターフェイス（UI）を使用する準備が整います。
 
-正常にログインすると、Cloud Manager のランディングページが表示されます。
+   正常にログインすると、Cloud Manager のランディングページが表示されます。
 
 ## Cloud Manager プログラム {#cloud-manager-programs}
 
