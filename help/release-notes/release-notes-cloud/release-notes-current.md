@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 58d9022b2b65aec4709a41ebfc80cc03c4c162a6
+source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1424'
 ht-degree: 25%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 25%
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-* Forms as aCloud ServiceのAEMアーキタイププロジェクトに、Microsoft DynamicsおよびSalesforce.comの[Canvas 3.0テーマおよびフォームデータモデルが含まれるようになりました。](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)
+* Forms as aCloud ServiceのAEMアーキタイププロジェクトに、Microsoft DynamicsおよびSalesforce.comの[フォームデータモデルが含まれるようになりました。](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?#forms-cloud-service-local-development-environment)
 
 * **Acroformベースのレコードのドキュメント**:AEM Forms as aCloud Serviceでは、 [Adobe Acrobat Form PDF(Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=ja) を、XFAベースのフォームテンプレート以外のレコードのドキュメントのテンプレートとして使用することができます。
 
