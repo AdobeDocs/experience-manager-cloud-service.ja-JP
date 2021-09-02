@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e5d5e838a027af983db51a3292962200faaf3cfa
+source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 86%
+source-wordcount: '934'
+ht-degree: 87%
 
 ---
 
@@ -38,7 +38,7 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 1. システム管理者は、開発目的で [AEM インスタンスにユーザーアクセスを付与](/help/onboarding/what-is-required/accessing-aem-instance.md)できます。
 
-**[Adobe ID を入手](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/adobe-id.html?lang=en)**
+**Adobe ID を入手**
 
 ユーザーを Cloud Manager に追加して役割を割り当てるには、Adobe ID とシステム管理者の支援が必要です。
 
