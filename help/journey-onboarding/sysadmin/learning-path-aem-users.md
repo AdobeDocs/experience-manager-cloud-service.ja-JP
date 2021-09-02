@@ -1,10 +1,9 @@
 ---
 title: AEMユーザーの学習パス
 description: AEMユーザーの場合は、このページで、アクセス権を取得した後の次の手順について説明します
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 1b594017570cb2d8e144cbdf8ea56acdf8256a6d
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 4%

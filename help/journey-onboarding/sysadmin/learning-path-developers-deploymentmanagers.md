@@ -1,10 +1,9 @@
 ---
 title: 開発者およびデプロイメントマネージャーの学習パス
 description: 開発者またはデプロイメントマネージャー(AEM)の場合は、このページで、アクセス権を取得後の次の手順を説明します
-index: false
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d72ecc81e3afd68dee64e7e4934703db84df25d6
+source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 6%
