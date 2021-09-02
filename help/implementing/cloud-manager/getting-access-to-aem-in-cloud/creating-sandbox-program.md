@@ -2,10 +2,10 @@
 title: 'サンドボックスプログラムの作成 '
 description: サンドボックスプログラムの作成
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '218'
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,6 @@ ht-degree: 0%
 1. Cloud Manager のランディングページを開いて、画面の右上隅にある「**プログラムを追加**」をクリックします。
 
    ![](assets/first_timelogin1.png)
-
-   >[!NOTE]
-   >Cloud Manager へのアクセス方法について詳しくは、[Cloud Manager のランディングページ](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)を参照してください。
 
 1. プログラム作成ウィザードで、「**サンドボックスを設定する**」を選択します。プログラム名を送信してから「**作成**」を選択します。
 

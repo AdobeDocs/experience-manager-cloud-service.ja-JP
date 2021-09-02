@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 646c6884dc7397d69f40f074b6c4c1cef4510796
+source-git-commit: 786ff1c2e715869ecd12cf54ede0fb650e8ef33f
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 1. アドビが組織のプロビジョニングを完了すると、組織のシステム管理者は「ようこそ」メールを受け取ります。これにより、システム管理者は「[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)」を実行して、ユーザーの追加、役割への割り当て、Cloud Manager への適切なアクセス権の付与などを行えるようになります。
 
-1. システム管理者が追加したユーザーは「ようこそ」メールを受け取り、[Cloud Manager](/help/onboarding/what-is-required/navigate-to-cloud-manager.md) にアクセスできるようになります。ユーザーは Adobe ID を使用してログインし、Cloud Manager でジャーニーを開始できるようになります。
+1. システム管理者が追加したユーザーには、「ようこそ」の電子メールが送信され、Cloud Managerに正常に移動できるようになります。 ユーザーは Adobe ID を使用してログインし、Cloud Manager でジャーニーを開始できるようになります。
 
 1. システム管理者は、開発目的で [AEM インスタンスにユーザーアクセスを付与](/help/onboarding/what-is-required/accessing-aem-instance.md)できます。
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 * ユーザーの追加
 * Cloud Manager の役割と権限へのユーザーの割り当て
 
-**[Cloud Manager に移動する](/help/onboarding/what-is-required/navigate-to-cloud-manager.md)**
+* **Cloud Manager に移動する**
 
 ユーザーとして追加され、 Cloud Manager の役割に割り当てられたら、 Cloud Manager にアクセスして、AEM で Cloud ジャーニーを開始できます。ユーザーは、プログラムの作成、環境の追加、Gitへのアクセス、[パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)など、様々なタスクを実行できます。
 Cloud Manager は、AEM as a Cloud Service の重要な部分です。これにより、組織はクラウド内の[!DNL Experience Manager]を自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI／CD パイプラインを設定および開始できます。
