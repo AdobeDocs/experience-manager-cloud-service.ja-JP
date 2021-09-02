@@ -3,9 +3,9 @@ title: AEMユーザーの学習パス
 description: AEMユーザーの場合は、このページで、アクセス権を取得した後の次の手順について説明します
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+source-git-commit: 12ca20c750d7332ebfaf62c781cbe5ec386c2d64
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '356'
 ht-degree: 4%
 
 ---
@@ -36,18 +36,12 @@ AEMをCloud Serviceチームとして設定する際には、システム管理�
 
 次の手順に従って、作成者にアクセスします。
 
-1. [Adobe Experience Cloud](https://experience.adobe.com)に直接移動し、Adobe IDを使用してログインします。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動します。
 
-1. Adobe Experience Cloudのホームページで、「**Experience Manager**」を選択します。
+   >[!NOTE]
+   >今後の参照用に、またCloud Managerのランディングページに直接移動するのに役立つよう、 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)リンクをブックマークに追加してください。
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
-
-1. これにより、AEMホームページが表示されます。 ここから、 **Cloud Manager**&#x200B;を起動します。
-
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
-
-   >[!IMPORTANT]
-   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動することもできます。 今後の参照用に、またCloud Managerのランディングページに直接移動する際に役立つ情報については、このページをブックマークに追加してください。
+1. Cloud Managerの&#x200B;**プログラムと製品**&#x200B;ページからプログラムを選択し、**概要**&#x200B;ページを起動します。
 
 1. Cloud Managerの&#x200B;**概要**&#x200B;ページで、**環境**&#x200B;カードのオーサーリンクをクリックします。
 
