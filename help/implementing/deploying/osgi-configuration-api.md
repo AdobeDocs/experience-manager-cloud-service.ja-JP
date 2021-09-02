@@ -1,10 +1,10 @@
 ---
 title: OSGi設定API
 description: AEM as aCloud ServiceOSGi設定サーフェスの説明
-feature: デプロイ
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+feature: Deploying
+source-git-commit: 5223d57377f5c00b090aee1ddd4dbfe2d7113181
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '392'
 ht-degree: 5%
 
 ---
@@ -29,6 +29,7 @@ OSGI設定に関する追加情報は、[この場所](/help/implementing/deploy
 * **`com.day.cq.auth.impl.cug.CugSupportImpl`** (発表日：4/30/2021、施行日：7/31/2021)
 * **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (発表日：4/30/2021、施行日：7/31/2021)
 * **`org.apache.felix.http (Factory)`** (発表日：4/30/2021、施行日：7/31/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (発表日：8/25/2021、施行日：11/26/2021)
 
 ## ビルド検証ルールの対象となるOSGi設定 {#osgi-configurations-subject-to-build-validation-rules}
 
