@@ -2,10 +2,10 @@
 title: Cloud Managerについて説明します
 description: このページでは、Cloud Manager、Cloud Managerのプログラム、環境について説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 4b6d02bc93a904c8ca666d027923fa5df88d1934
+source-git-commit: 4d1d6357e26e8c3ffbadfcae99f7ae7a091db1d3
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 21%
+source-wordcount: '675'
+ht-degree: 19%
 
 ---
 
@@ -18,6 +18,17 @@ Cloud Managerは、AEMのCloud Serviceとしての不可欠なコンポーネン
 お客様がAEM as aCloud Serviceをすぐに使い始められるように、Cloud Managerは、クラウドのリソースや環境を作成する機能など、セルフサービス方式で開始するために必要なすべての機能を備えています。 この方法で、AEM開発者はCloud Managerを使用してGitリポジトリにアクセスできます。 開発チームは、Cloud Managerを使用して、セルフサービス方式で頻繁に変更をコミットするよう取り組むことができます。
 
 システム管理者は、クラウドリソースおよび開発者を作成する個人を含むCloud Managerチームの設定を担当します。 エンタープライズチーム開発設定でのCloud Managerのサポート方法については、 AEM as aCloud Service向けの[エンタープライズチーム開発設定](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)を参照してください。
+
+## Cloud Managerの概要ページへの移動 {#navigate-cloud-manager}
+
+次の手順に従って、Cloud Managerに移動します。
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)からCloud Managerのログインページに直接移動します。
+
+   >[!NOTE]
+   >今後の参照用に、またCloud Managerのランディングページに直接移動する際に役立つ情報については、このページをブックマークに追加してください。
+
+1. Cloud Managerの&#x200B;**プログラムと製品**&#x200B;ページからプログラムを選択し、**概要**&#x200B;ページを起動します。
 
 ## Cloud Manager プログラム {#cloud-manager-programs}
 
