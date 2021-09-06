@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a37b460d467e6e86394ae4baa61f044486c73b24
+source-git-commit: 5a0c744d848397d9eb9581e0a0a2cd143c5a7412
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 83%
+ht-degree: 79%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 契約が締結されると、次のイベントが発生します。
 
-1. アドビが組織のプロビジョニングを完了すると、組織のシステム管理者は「ようこそ」メールを受け取ります。これにより、システム管理者は「[システム管理者タスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)」を実行して、ユーザーの追加、役割への割り当て、Cloud Manager への適切なアクセス権の付与などを行えるようになります。
+1. Adobeは組織のプロビジョニングを完了します。組織のシステム管理者は、ユーザーの追加、役割への割り当て、Cloud Managerへの適切なアクセス権の付与など、システム管理者のタスクを実行できるようにお知らせメールを受け取ります。
 
 1. システム管理者が追加したユーザーには、「ようこそ」の電子メールが送信され、Cloud Managerに正常に移動できるようになります。 ユーザーは Adobe ID を使用してログインし、Cloud Manager でジャーニーを開始できるようになります。
 
@@ -42,11 +42,11 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 ユーザーを Cloud Manager に追加して役割を割り当てるには、Adobe ID とシステム管理者の支援が必要です。
 
-**[Cloud Manager の役割](/help/onboarding/what-is-required/user-roles-permissions.md)**
+**Cloud Manager の役割**
 
 システム管理者は、ユーザーを追加して、Cloud Manager の役割に割り当てることができます。この節ではまず、*Cloud Manager の役割*&#x200B;と役割に関連付けられている権限について説明します。
 
-**[システム管理者のタスク](/help/onboarding/what-is-required/add-users-assign-cm-roles.md)**
+**システム管理者のタスク**
 
 システム管理者は、アクセスから権限まで、ユーザーのすべての側面を管理します。このユーザーは、Admin Console および Cloud Manager 内でタスクの実行を開始する権限を持つ最初のユーザーです。
 次のドキュメントページには、組織の基本的なタスクを説明する情報が含まれています。
@@ -54,12 +54,12 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 * ユーザーの追加
 * Cloud Manager の役割と権限へのユーザーの割り当て
 
-* **Cloud Manager に移動する**
+**Cloud Manager に移動する**
 
 ユーザーとして追加され、 Cloud Manager の役割に割り当てられたら、 Cloud Manager にアクセスして、AEM で Cloud ジャーニーを開始できます。ユーザーは、プログラムの作成、環境の追加、Gitへのアクセス、[パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)、[コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)など、様々なタスクを実行できます。
 Cloud Manager は、AEM as a Cloud Service の重要な部分です。これにより、組織はクラウド内の[!DNL Experience Manager]を自己管理できます。 このサービスには継続的統合および継続的配信（CI／CD）フレームワークが備わっているので、IT チームや実装パートナーはパフォーマンスやセキュリティを妥協することなくカスタマイズや更新を迅速に配信できます。ユーザーインターフェイスを使用して、CI／CD パイプラインを設定および開始できます。
 
-* **AEM インスタンスへのユーザーアクセスの許可**
+**AEM インスタンスへのユーザーアクセスの許可**
 
 この節では、システム管理者または環境を作成したユーザーが、他のユーザーに AEM インスタンスへのアクセス権を付与する方法について説明します。
 

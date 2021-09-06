@@ -1,15 +1,15 @@
 ---
 title: AEM as a Cloud Serviceチームと製品プロファイル
 description: このページでは、AEM as a Cloud Serviceチームと製品プロファイルについて説明します。
-source-git-commit: 976fc51be0ba8c407ff7d6f7c1a6efecbbdad5c9
+exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
+source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
-
-# AEM as a Cloud Serviceチームと製品プロファイル{#product-profiles}
+# AEM as a Cloud Serviceチームと製品プロファイル {#product-profiles}
 
 ## 製品プロファイル {#profiles}
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 詳しくは、[AEM as a Cloud Product Profiles](#aem-product-profiles)および[Cloud ManagerCloud Serviceプロファイル](#cloud-manager-product-profiles)を参照し、チームのセットアップ中にこれらのプロファイルがどのように連携するかを理解してください。
 
-## AEM as a Cloud Service製品プロファイル{#aem-product-profiles}
+## AEM as a Cloud Service製品プロファイル {#aem-product-profiles}
 
 AEM as a Cloud Serviceは、AEMをサービスとして提供する、完全にクラウドネイティブな製品です。 常にオン、常に最新、常にセキュリティで保護、常に規模に応じた新しい属性を使用して、AEMをネイティブな方法で提供します。 同時に、AEMが顧客にカスタマイズ可能なプラットフォームとして提供する主な価値提案を保持し、エンタープライズグレードのチームが開発と配信の手順で統合できるようにします。 AEM as aCloud Serviceの詳細については、「 [Cloud ServiceとしてのAdobe Experience Managerの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=ja) 」を参照してください。
 
@@ -32,19 +32,19 @@ AEM as a Cloud Serviceは、AEMをサービスとして提供する、完全に�
    >[!NOTE]
    >AEM as a Cloud製品プロファイルに割り当てられたすべてのCloud Serviceは、Cloud Managerに（読み取り専用）アクセスできます。
 
-## Cloud Manager製品プロファイル{#cloud-manager-product-profiles}
+## Cloud Manager製品プロファイル {#cloud-manager-product-profiles}
 
 Cloud Managerには、事前設定済みの製品プロファイル、またはより簡単な役割ベースの権限があります。 システム管理者は、これらの製品プロファイルにを割り当ててCloud Managerチームの設定を担当します。また、これらの製品プロファイルと、それらのプロファイルを割り当てるチームメンバーについて理解しておく必要があります。
 >[!NOTE]
->詳しくは、[Cloud Managerのロールに基づく権限](/help/onboarding/what-is-required/user-roles-permissions.md)を参照してください。
+>詳しくは、[Cloud Managerのロールに基づく権限](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions)を参照してください。
 
-各製品プロファイルには、関連付けられた特定の権限があります。 例えば、の役割を持っている場合は、次のようになります。
+各製品プロファイルには、関連付けられた特定の権限があります。 以下は、ロールと権限の例です。
 
 * **ビジネスオーナー**&#x200B;になると、新しいプログラムの追加やプログラムの編集、環境の追加/更新、パイプラインの追加/編集/削除、および任意のパイプラインの実行、AEM環境またはコード品質へのコードのデプロイができます。
 
-* **Deployment Manager**&#x200B;を使用する場合は、環境の追加または更新、任意のパイプラインの実行、AEM環境またはコード品質へのコードのデプロイをおこなう権限があります。
+* **デプロイメントマネージャー** - 環境の追加またはアップデート、任意のパイプラインの実行、AEM 環境またはコード品質へのコードのデプロイをおこなう権限があります。
 
-* **開発者**&#x200B;が、Gitにアクセスするための個人用アクセストークンを生成する権限を持っている。
+* **デベロッパー** - Git にアクセスするための個人用アクセストークンを生成する権限があります。
 
 * **プログラムマネージャー**&#x200B;を使用すると、パイプラインのスケジュール、3層品質ゲートの上書き、実稼動の承認をおこなう権限を持っています。
 
