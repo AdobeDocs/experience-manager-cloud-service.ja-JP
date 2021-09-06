@@ -2,9 +2,10 @@
 title: Dispatcherツールを使用した検証とデバッグ
 description: Dispatcherツールを使用した検証とデバッグ
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
+source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2413'
 ht-degree: 67%
 
 ---
@@ -406,7 +407,7 @@ Apache Dispatcherは`./bin/docker_run.sh src/dispatcher docker.for.mac.localhost
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`
 
 クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
 
@@ -440,7 +441,7 @@ Dispatcher 設定では、同じ環境変数が使用できます。さらにロ
 設定をローカルでテストする場合、`DISP_RUN_MODE` 変数を `docker_run.sh` スクリプトに直接渡すことで、様々な環境タイプをシミュレートできます。
 
 ```
-$ DISP_RUN_MODE=stage docker_run.sh out docker.for.mac.localhost:4503 8080
+$ DISP_RUN_MODE=stage docker_run.sh src docker.for.mac.localhost:4503 8080
 ```
 
 DISP_RUN_MODE の値を渡さない場合のデフォルトの実行モードは「dev」です。
@@ -471,7 +472,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## レガシーモードからフレキシブルモードへの移行 {#migrating}
 
-Cloud Manager 2021.7.0リリースでは、新しいCloud Managerプログラムが、[AEMアーキタイプ28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=en)以降（**opt-in/USE_SOURCES_DIRECTLY**&#x200B;ファイルを含む）でMavenプロジェクト構造を生成します。 これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限がなくなり、SDKとランタイムが設定を検証およびデプロイする際にも改善されました。 Dispatcher設定にこのファイルがない場合は、移行することを強くお勧めします。 次の手順を実行して、安全な切り替えを確実におこないます。
+Cloud Manager 2021.7.0リリースでは、新しいCloud Managerプログラムが、[AEMアーキタイプ28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)以降（**opt-in/USE_SOURCES_DIRECTLY**&#x200B;ファイルを含む）でMavenプロジェクト構造を生成します。 これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限がなくなり、SDKとランタイムが設定を検証およびデプロイする際にも改善されました。 Dispatcher設定にこのファイルがない場合は、移行することを強くお勧めします。 次の手順を実行して、安全な切り替えを確実におこないます。
 
 1. **ローカルテスト。** 最新のDispatcherツールSDKを使用して、フォルダーとファイルを追加しま `opt-in/USE_SOURCES_DIRECTLY`す。この記事の「ローカル検証」の手順に従って、Dispatcherがローカルで動作するかどうかをテストします。
 2. **クラウド開発テスト：**
