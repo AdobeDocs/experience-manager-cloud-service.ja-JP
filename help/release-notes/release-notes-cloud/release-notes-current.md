@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2d75c44420c5211d99e8e2e1eabea79ebf6b5162
+source-git-commit: 56f799b7583c82694f20de096855d6c5c1741f49
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1473'
 ht-degree: 25%
 
 ---
@@ -127,7 +127,7 @@ ht-degree: 25%
 ## リリース日 {#release-date-cm-aug}
 
 AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12日です。
-次回のリリースは 2021 年 9 月 9 日（PT）に予定されています。
+次回のリリースは2021年9月9日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-aug}
 
@@ -154,7 +154,7 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 
 * 名前が非常に長い新しい組織で、最初のオンボーディングが失敗していました。
 
-* 何らかの理由でパイプラインが 2 回トリガーされた場合、*パイプライン実行ステータスを更新できませんでした*&#x200B;エラーで、いずれかの実行が失敗します。
+* 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -169,4 +169,20 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 * パブリッシュインスタンスへの取り込み中に、「**取り込みを停止**」ボタンが無効になっていた問題を修正しました。 パブリッシュの取り込み中にMongoの復元手順がないので、この操作は必要ありません。
 
 * CTTは、抽出が正常に完了した後、`/tmp`ディレクトリをクリーンアップしませんでした。 これにより、ディスク容量の問題が発生することがありました。
+
+## ベストプラクティスアナライザー {#best-practices-analyzer}
+
+### リリース日 {#release-date-bpa-latest}
+
+Best Practices Analyzer v2.1.18のリリース日は2021年9月2日です。
+
+### 新機能 {#what-is-new}
+
+* ノード数の合計を検出し、レポートする機能。
+
+* ノードストアのタイプとサイズを検出し、レポートする機能。
+
+### バグ修正 {#bug-fixes-bpa}
+
+* BPAが、コマース統合フレームワークの存在を誤って検出しました。
 
