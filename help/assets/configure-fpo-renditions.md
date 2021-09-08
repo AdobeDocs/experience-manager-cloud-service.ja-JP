@@ -3,11 +3,10 @@ title: Adobe InDesign用の配置専用レンディションを生成
 description: アセットワークフローとImageMagickを使用して、新しいアセットと既存のExperience ManagerのFPOレンディションを生成します。
 contentOwner: Vishabh Gupta
 role: Admin
-feature: レンディション
-exl-id: null
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+feature: Renditions
+source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 8%
 
 ---
