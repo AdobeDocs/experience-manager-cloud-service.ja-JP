@@ -3,7 +3,7 @@ title: AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 40%
@@ -24,6 +24,8 @@ AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09�
 
 ### 新機能 {#what-is-new}
 
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
+
 * Cloud Managerランディングページのプログラムカードと関連するエクスペリエンスが更新されました。
 
 * コード品質ステップログに、OakPalスキャンプロセスの詳細なログ情報が含まれるようになりました。
@@ -31,8 +33,6 @@ AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09�
 * アクティビティページのメニューオプションに、コードジェネレーターの実行完了時に&#x200B;**ログをダウンロード**&#x200B;するオプションが追加されました。 これを選択すると、ビルド手順のログがダウンロードされます。
 
 * 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
-
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
 
 ### バグ修正 {#bug-fixes}
 

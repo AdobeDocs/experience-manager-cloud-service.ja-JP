@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 24%
@@ -131,6 +131,8 @@ AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09�
 
 ### 新機能 {#what-is-new-cm-sept}
 
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
+
 * Cloud Managerランディングページのプログラムカードと関連するエクスペリエンスが更新されました。
 
 * コード品質ステップログに、OakPalスキャンプロセスの詳細なログ情報が含まれるようになりました。
@@ -139,7 +141,6 @@ AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09�
 
 * 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
 
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
 
 ### バグ修正 {#bug-fixes-sept}
 
