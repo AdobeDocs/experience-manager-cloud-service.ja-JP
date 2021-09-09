@@ -47,7 +47,6 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 >* オーバーレイは[検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)に依存します。
 >
 >* オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
-
 >
 >ただし、オーバーライドは `/apps` 以下に定義されるのが一般的です。AEM as a Cloud Service では、カスタマイズを `/apps` 以下に定義することがベストプラクティスとされています。なぜなら `/libs` 以下のコンテンツを変更してはならないからです。
 
@@ -130,7 +129,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
    `/libs` 定義に存在しないプロパティが `/apps` オーバーレイ／オーバーライドで必要になった場合に、プロパティを追加できます。
 
    1. `/apps` 内に、対応するノードを作成します。
-   1. このノード``で新しいプロパティを作成します。
+   1. このノード&grave;&grave;で新しいプロパティを作成します。
 
 * **プロパティの再定義（自動作成されたプロパティ以外）**
 
