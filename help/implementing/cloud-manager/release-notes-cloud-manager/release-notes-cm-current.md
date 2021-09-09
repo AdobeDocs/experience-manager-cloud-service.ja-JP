@@ -1,42 +1,52 @@
 ---
-title: AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノート
+title: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 feature: Release Information
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
+source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 40%
+source-wordcount: '300'
+ht-degree: 62%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.9.0 の Cloud Manager のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.8.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノートの概要を説明しています。
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
 
 ## リリース日 {#release-date}
 
-AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09日です。
-次回のリリースは2021年10月7日に予定されています。
+AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12日です。
+次回のリリースは2021年9月9日（PT）に予定されています。
 
 ### 新機能 {#what-is-new}
 
-* Cloud Managerランディングページのプログラムカードと関連するエクスペリエンスが更新されました。
+* Cloud Serviceのお客様は、Cloud Managerでサービスレベル契約(SLA)レポートを表示できるようになりました。 これは今後数ヶ月間徐々に利用可能になる予定です。
+詳しくは、[SLAレポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)を参照してください。
 
-* コード品質ステップログに、OakPalスキャンプロセスの詳細なログ情報が含まれるようになりました。
+* IndexTypeと`IndexDamAssetLucene`品質ルールの種類と重大度が変更されました。 現在は、これらは&#x200B;*サーバー性*&#x200B;のブロッカーのバグです。
 
-* アクティビティページのメニューオプションに、コードジェネレーターの実行完了時に&#x200B;**ログをダウンロード**&#x200B;するオプションが追加されました。 これを選択すると、ビルド手順のログがダウンロードされます。
+* 非同期およびtikaの設定をカバーする新しいOakインデックス品質ルールが導入されました。
 
-* 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
+* プログラムごとの最大SSL証明書数を50に増やします。
 
-* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
+* ユーザーが Cloud Manager UI を使用して複数のリポジトリを作成および管理できるセルフサービス機能。
+
+* SonarQubeがGitの履歴データを不必要に読み取っていた問題を修正しました。 大規模なコードベースでは、これにより、ビルドパフォーマンスが不必要に低下することがありました。
+
+* パイプラインごとに Maven 依存関係キャッシュを無効にする API が追加されました。
+
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 29 に更新されました。
 
 ### バグ修正 {#bug-fixes}
 
-* 設定可能なIP許可リストの最大数に達したプログラムに新しいIP許可リストを追加しようとすると、よりわかりやすくなるメッセージが表示されるようになりました。
+* 最新のリリースが現在のリリースより前の場合は、更新可能ステータスは表示されるべきではありません。
 
-* リポジトリ画面でURLコピーメニューオプションを選択すると、間違ったURLがコピーされていました。
+* 名前が非常に長い新しい組織で、最初のオンボーディングが失敗していました。
+
+* 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
 
 
