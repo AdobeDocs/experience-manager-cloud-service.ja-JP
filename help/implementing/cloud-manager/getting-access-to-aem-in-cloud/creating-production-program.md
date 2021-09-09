@@ -2,10 +2,10 @@
 title: '実稼動プログラムの作成 '
 description: 実稼動プログラムの作成
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: e4bb8b99ad1ff2accfb94dd94f7c9bae04d4f60b
+source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 92%
+source-wordcount: '238'
+ht-degree: 77%
 
 ---
 
@@ -41,9 +41,9 @@ Cloud Managerでプログラムを作成する方法については、2部構成
 
    ![](assets/setup-prod-commerce.png)
 
-1. ランディングページにプログラムカードが表示されたら、その上にマウスポインターを置いて Cloud Manager アイコンを選択し、Cloud Manager の「**概要**」ページに移動します。
+1. ランディングページにプログラムカードが表示されたら、「**...」を選択します。**&#x200B;をクリックして、使用可能なメニューオプションを確認します。 次の図に示すように、「**Cloud Manager**」を選択して、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動します。
 
-   ![](assets/set-up-prod4.png)
+   ![](assets/navigate-cm.png)
 
 1. メインのコールトゥアクションカードは、環境の作成、非実稼動パイプラインの作成、最後に実稼動パイプラインの作成をユーザーに指示します。
    ![](assets/set-up-prod5.png)
