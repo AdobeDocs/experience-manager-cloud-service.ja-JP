@@ -2,7 +2,7 @@
 title: 非推奨API
 description: リリースノート( [!DNL Adobe Experience Manager] の非推奨（廃止予定）のAPIとa [!DNL Cloud Service]として削除)。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 02b610b830911b737f8caa7356d0e446958bcc2f
+source-git-commit: 70ca1cce6995634d330da68cf8bce8ee12c71f1e
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 7%
@@ -40,7 +40,7 @@ ht-degree: 7%
     <td>com.day.cq.jcrclustersupport</td>
     <td>SlingのDiscovery APIを代替として使用する</td>
     <td>2015年</td>
-    <td>7/30/21</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.apache.sling.settings</td>
@@ -58,7 +58,7 @@ ht-degree: 7%
     <td>org.apache.jackrabbit.vault.util.xml.xerces.dom<br>org.apache.jackrabbit.vault.util.xml.xerces.util<br>org.apache.jackrabbit.vault.util.xml.xerces.xni<br>org.apache.jackrabbit.vault.util.xml.xerces.xni.parser</td>
     <td></td>
     <td>3/5/21</td>
-    <td>6/6/21</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.json</td>
@@ -70,7 +70,7 @@ ht-degree: 7%
     <td>org.apache.felix.cm<br>org.apache.felix.cm.file</td>
     <td>カスタム永続性マネージャーは、AEM as aCloud Serviceではサポートされていません。</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
@@ -88,7 +88,7 @@ ht-degree: 7%
     <td>org.apache.felix.systemready</td>
     <td>代わりに、Apache Felix HealthCheck APIを使用することをお勧めします</td>
     <td>4/30/21</td>
-    <td>7/30/21</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n</td>
