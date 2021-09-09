@@ -5,9 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1036'
 ht-degree: 94%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 94%
 + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
 + Cloud Manager の使用 {#using-cloud-manager}
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [リリースノート（2021.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [リリースノート（2021.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [リリースノート（2021.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
          + [リリースノート（2021.5.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
@@ -96,8 +97,8 @@ ht-degree: 94%
    + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
 + コードの管理 {#managing-code}
    + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
-   + [Cloud Managerのリポジトリ](cloud-manager/cloud-manager-repositories.md)
-   + [リポジトリへのアクセス](cloud-manager/accessing-repos.md)
+   + [Cloud Manager のリポジトリー](cloud-manager/cloud-manager-repositories.md)
+   + [リポジトリーへのアクセス](cloud-manager/accessing-repos.md)
    + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
    + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
    + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
