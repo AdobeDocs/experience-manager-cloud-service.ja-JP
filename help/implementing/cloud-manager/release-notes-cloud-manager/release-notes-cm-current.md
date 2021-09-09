@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.9.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: ae619bb5a9ecc030fd3fa486445bcca7d3386df6
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 40%
+source-wordcount: '257'
+ht-degree: 37%
 
 ---
 
@@ -32,7 +32,7 @@ AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09�
 
 * アクティビティページのメニューオプションに、コードジェネレーターの実行完了時に&#x200B;**ログをダウンロード**&#x200B;するオプションが追加されました。 これを選択すると、ビルド手順のログがダウンロードされます。
 
-* 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
+* プログラムカードを直接クリックすると、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動するようになりました。 詳しくは、[実稼動プログラムの作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=en)を参照してください。
 
 ### バグ修正 {#bug-fixes}
 
