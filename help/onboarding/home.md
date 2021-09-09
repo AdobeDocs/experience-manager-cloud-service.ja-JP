@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
+source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 58%
+source-wordcount: '542'
+ht-degree: 59%
 
 ---
 
@@ -22,7 +22,7 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
 
-オンボーディングジャーニーを以下に示します。ジャーニーの各手順について、以降の節で詳しく説明します。
+オンボーディングジャーニーを次に示します。
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
