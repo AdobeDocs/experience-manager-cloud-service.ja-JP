@@ -2,8 +2,7 @@
 title: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 feature: Release Information
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: 07a80076493070cb5e754a4cfbafe51cfcd6442e
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 62%
@@ -48,5 +47,3 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 * 名前が非常に長い新しい組織で、最初のオンボーディングが失敗していました。
 
 * 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
-
-

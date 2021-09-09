@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4a4e473639ccf10410afc07b77b1bfd880b95543
+source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 25%
+source-wordcount: '1630'
+ht-degree: 24%
 
 ---
 
@@ -122,12 +122,34 @@ ht-degree: 25%
 
 ## Cloud Manager  {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.8.0 および 2021.7.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as a Cloud Service 2021.9.0 および 2021.8.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+
+## リリース日 {#release-date-cm-sept}
+
+AEM as aCloud Service2021.9.0のCloud Managerのリリース日は2021年9月09日です。
+次回のリリースは2021年10月7日に予定されています。
+
+### 新機能 {#what-is-new-cm-sept}
+
+* Cloud Managerランディングページのプログラムカードと関連するエクスペリエンスが更新されました。
+
+* コード品質ステップログに、OakPalスキャンプロセスの詳細なログ情報が含まれるようになりました。
+
+* アクティビティページのメニューオプションに、コードジェネレーターの実行完了時に&#x200B;**ログをダウンロード**&#x200B;するオプションが追加されました。 これを選択すると、ビルド手順のログがダウンロードされます。
+
+* 「プログラム」カードを直接クリックして、 Cloud Managerの概要ページに移動するようになりました。
+
+* Cloud Manager で使用される AEM プロジェクトアーキタイプのバージョンが 30 に更新されました。
+
+### バグ修正 {#bug-fixes-sept}
+
+* 設定可能なIP許可リストの最大数に達したプログラムに新しいIP許可リストを追加しようとすると、よりわかりやすくなるメッセージが表示されるようになりました。
+
+* リポジトリ画面でURLコピーメニューオプションを選択すると、間違ったURLがコピーされていました。
 
 ## リリース日 {#release-date-cm-aug}
 
 AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12日です。
-次回のリリースは2021年9月9日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-aug}
 
