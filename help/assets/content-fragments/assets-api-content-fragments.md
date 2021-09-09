@@ -1,12 +1,12 @@
 ---
 title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コンテンツフラグメントのサポート
 description: AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて説明します。
-feature: コンテンツフラグメント、Assets HTTP API
+feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
-source-wordcount: '1956'
-ht-degree: 100%
+source-wordcount: '1951'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
+
 >
 >現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
@@ -29,7 +30,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 この API では、コンテンツサービスを JavaScript フロントエンドアプリケーションに提供することで、Adobe Experience Manager as a Cloud Service をヘッドレス CMS（コンテンツ管理システム）として動作させることができます。または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。
 
-例えば、単一ページアプリケーション（SPA）では、フレームワークベースかカスタムかを問わず、HTTP API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
+例えば、[単一ページアプリケーション(SPA)](/help/implementing/developing/hybrid/introduction.md)、フレームワークベースまたはカスタムでは、HTTP API経由で提供されるコンテンツ（多くの場合JSON形式）が必要です。
 
 [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、この目的に必要な読み取り操作を提供できる非常に包括的で柔軟性の高いカスタマイズ可能な API を提供し、その JSON 出力もカスタマイズできますが、実装には AEM WCM（Web コンテンツ管理）のノウハウが必要です。専用の AEM テンプレートに基づいた（API）ページでこれらのコンポーネントをホストする必要があるからです。すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
 
@@ -65,7 +66,6 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 例えば、`/content/dam/wknd/en/adventures/cycling-tuscany` にアクセスするには、`/api/assets/wknd/en/adventures/cycling-tuscany.json` をリクエストします。
 
 >[!NOTE]
->
 >アクセス経由：
 >
 >* `/api/assets` は `.model` セレクターを使用する&#x200B;**必要はありません**。
@@ -148,8 +148,8 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
->
 
+>
 
 
 特定の認証要件がある環境では、OAuth を推奨します。

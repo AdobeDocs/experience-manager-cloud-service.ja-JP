@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -16,10 +16,6 @@ Adobe Experience Manager as a Cloud Service 内で、コンテンツフラグメ
 * コンテンツフラグメントについて詳しくは、[コンテンツフラグメントの作成と管理](/help/assets/content-fragments/content-fragments.md)および[コンテンツフラグメントを使用したページオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)を参照してください。
 
 * 「[アセットの管理](/help/assets/manage-digital-assets.md)」を参照してください。
-
-<!-- Removing the extend-asset-editor article for now as I'm unsure of its accuracy. Hence commenting this link.
-* [Managing Assets](/help/assets/manage-digital-assets.md) and [Customizing and Extending the Asset Editor](/help/assets/extend-asset-editor.md) for further information about standard assets.
--->
 
 ## アーキテクチャ {#architecture}
 
@@ -135,7 +131,7 @@ Assets コアと統合するには：
 
 * **翻訳**
 
-   コンテンツフラグメントは、AEM の翻訳ワークフローと完全に統合されています。つまり、アーキテクチャレベルでは以下を意味します。
+   コンテンツフラグメントは、[AEM翻訳ワークフロー](/help/sites-cloud/administering/translation/overview.md)と完全に統合されています。 つまり、アーキテクチャレベルでは以下を意味します。
 
    * コンテンツフラグメントの個々の翻訳は、実際には別々のフラグメントです。例えば、以下のようになります。
 

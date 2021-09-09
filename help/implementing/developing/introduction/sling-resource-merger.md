@@ -2,8 +2,8 @@
 title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger の使用
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -24,8 +24,6 @@ Sling Resource Merger を使用すると、リソースやプロパティのオ�
 * カスタマイズされた定義のコンテンツの方が、元の定義のコンテンツよりも優先されます&#x200B;*（*&#x200B;つまり、前者が後者をオーバーレイまたはオーバーライドします&#x200B;*）*。
 
 * 必要な場合には、カスタマイズされた定義に含まれる[プロパティ](#properties)が、元の定義からマージされたコンテンツをどう使用するかを指定します。
-
-<!-- Still links to reference material in 6.5 -->
 
 >[!CAUTION]
 >
@@ -49,6 +47,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 >* オーバーレイは[検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)に依存します。
 >
 >* オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
+
 >
 >ただし、オーバーライドは `/apps` 以下に定義されるのが一般的です。AEM as a Cloud Service では、カスタマイズを `/apps` 以下に定義することがベストプラクティスとされています。なぜなら `/libs` 以下のコンテンツを変更してはならないからです。
 
@@ -243,17 +242,3 @@ Sling Resource Merger には 2 つのカスタムリソースプロバイダー�
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-<!--
-### Example of Usage {#example-of-usage}
-
-Some examples are covered:
-
-* Overlay:
-
-    * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
-    * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-
-* Override:
-
-    * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
--->
