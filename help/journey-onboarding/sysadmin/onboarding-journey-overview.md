@@ -3,24 +3,15 @@ title: オンボーディングジャーニー
 description: このページでは、オンボーディングジャーニーの概要について説明します
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: fa88a919-af6a-4266-b38c-647706decba4
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 7%
+source-wordcount: '401'
+ht-degree: 10%
 
 ---
 
 # オンボーディングジャーニー {#onboarding-jourrney}
-
-## オンボーディングエクスペリエンス {#audience}
-
-オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
-
-オンボーディングジャーニーを以下に示します。ジャーニーの各手順について、以降の節で詳しく説明します。
-
-![](/help/journey-onboarding/assets/onboarding-journey.png)
-
-このジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトします。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
 
 ## オンボーディングジャーニー {#exploring-onboarding-journey}
 

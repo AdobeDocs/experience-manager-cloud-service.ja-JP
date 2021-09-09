@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: e45f3265feb7fbe9e3de5bd8975fa28e2b8c7e13
+source-git-commit: 91b84e3c312d3f1e01ccaa9a5d541a69ef3c4da6
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 77%
+source-wordcount: '556'
+ht-degree: 58%
 
 ---
 
@@ -18,24 +18,17 @@ ht-degree: 77%
 
 AEM as a Cloud Service のジャーニーが始まりました。新しいアプリケーションをデプロイする場合でも、既存のアプリケーションを移行する場合でも、このガイドは、アプリケーションが最適化され、Cloud Service で成功するための出発点となります。
 
-このガイドは、個人でもチームでも、Cloud Manager をすぐに使い始めるのに役立ちます。Cloud Manager にユーザーを追加し、役割（Admin Console の製品プロファイル）と関連する権限を割り当てるには、Adobe ID とシステム管理者の助けが必要です。システム管理者が Admin Console を介してこれを行う方法を説明します。Cloud Manager の役割（Admin Console では製品プロファイルと呼ぶ）のリストと、それに関連する権限について詳しく説明するので、組織内の様々なユーザーに必要な役割を判断できます。
+## オンボーディングエクスペリエンス {#audience}
 
-次の図は、システム管理者が受け取る「ようこそ」メールから始まり、ユーザーが AEM as a Cloud Service の Cloud Manager にアクセスするまでのオンボーディングの流れを示しています。
+オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
 
-![](/help/onboarding/what-is-required/assets/cust-journey.png)
+オンボーディングジャーニーを以下に示します。ジャーニーの各手順について、以降の節で詳しく説明します。
 
-オンボーディングジャーニーの使用を開始するには、[オンボーディングエクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html)を参照してください。
+![](/help/journey-onboarding/assets/onboarding-journey.png)
 
->[!NOTE]
->オンボーディングジャーニーについて詳しく学ぶ前に、次のトピックに関する「オンボーディングの概念について学ぶ」の節を参照することをお勧めします。
->* [システム管理者](/help/onboarding/learn-concepts/system-administrator.md)
->* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
->* [AdobeIdentity Managementシステム](/help/onboarding/learn-concepts/ims.md)
->* [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
->* [Cloud Manager の概要](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
->* [AEM as a Cloud Serviceチームと製品プロファイル](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
->* [Adobeサポート](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+このジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトします。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
 
+オンボーディングジャーニーの使用を開始するには、[オンボーディングエクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en)を参照してください。
 
 ## [!DNL Experience Manager as a Cloud Service] ガイド {#aem-guides}
 
