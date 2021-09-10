@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7634c146ca6f8cd4a218b07dae0c063ab581f221
+source-git-commit: 993f5fa5b602354b03ab1635da660ae67fff7653
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 96%
+source-wordcount: '1572'
+ht-degree: 93%
 
 ---
 
@@ -58,7 +58,7 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 特定のコンテンツがキャッシュされないようにするには、Cache-Control ヘッダーを「*private*」に設定します。例えば、次の例では、**secure**&#x200B;という名前のディレクトリ下のhtmlコンテンツがキャッシュされないようにします。
+* CDN **で特定のコンテンツがキャッシュ**&#x200B;されないようにするには、Cache-Controlヘッダーを&#x200B;*private*&#x200B;に設定します。 例えば、次の例では、**secure**&#x200B;という名前のディレクトリ下のhtmlコンテンツがCDNでキャッシュされないようにします。
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -70,6 +70,9 @@ Define DISABLE_DEFAULT_CACHING
 
    >[!NOTE]
    >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
+
+   >[!NOTE]
+   >Dispatcherは、独自の[キャッシュルール](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html)に従ってコンテンツをキャッシュする場合があります。 コンテンツを真に非公開にするには、Dispatcherによってキャッシュされないようにする必要があります。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
