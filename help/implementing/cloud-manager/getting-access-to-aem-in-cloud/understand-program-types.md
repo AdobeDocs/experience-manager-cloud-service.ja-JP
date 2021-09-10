@@ -2,7 +2,7 @@
 title: プログラムとプログラムの種類について
 description: プログラムとプログラムの種類について - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: 81f891b579fc6fb5b6241e38fe5859605fe6f4e1
+source-git-commit: aae4d942ef1e7ffd0065de73c3fbd044a19c3e8e
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 100%
@@ -23,7 +23,7 @@ Cloud Manager プログラムには、独自の Git リポジトリーが自動�
 
 ユーザーが Cloud Manager の Git リポジトリーにアクセスするには、コマンドラインツール、スタンドアロンのビジュアル Git クライアント、または Eclipse、IntelliJ、NetBeans などの IDE を使用する必要があります。
 
-Git クライアントを設定すると、Cloud Manager UI から Git リポジトリーを管理できます。Cloud Manager UI を使用して Git を管理する方法については、「[Git へのアクセス](/help/implementing/cloud-manager/accessing-repos.md)」を参照してください。
+Git クライアントを設定すると、Cloud Manager UI から Git リポジトリーを管理できます。Cloud Manager UI を使用して Git を管理する方法については、「[Git へのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)」を参照してください。
 
 AEM Cloud アプリケーションの開発を開始するには、 Cloud Manager リポジトリーから、リポジトリーを作成するローカルコンピューター上の場所にアプリケーションコードのローカルコピーをチェックアウトして、作成する必要があります。
 

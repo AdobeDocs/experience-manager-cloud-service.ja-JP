@@ -5,7 +5,7 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9f24fb4cdf1a98aeb08248f027e2df40d844337
+source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 94%
@@ -56,6 +56,13 @@ ht-degree: 94%
       + [プロジェクトの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
       + [ビルド環境について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
    + [環境の管理](cloud-manager/manage-environments.md)
+   + コードの管理 {#managing-code}
+      + [Maven プロジェクトバージョンの処理](cloud-manager/managing-code/project-version-handling.md)
+      + [Cloud Manager のリポジトリー](cloud-manager/managing-code/cloud-manager-repositories.md)
+      + [リポジトリーへのアクセス](cloud-manager/managing-code/accessing-repos.md)
+      + [Git と Adobe Cloud Manager の統合](cloud-manager/managing-code/integrating-with-git.md)
+      + [複数ソース Git リポジトリーの操作](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](cloud-manager/managing-code/enterprise-team-dev-setup.md)
    + [CI/CD パイプラインの設定](cloud-manager/configure-pipeline.md)
    + [コードのデプロイ](cloud-manager/deploy-code.md)
    + テスト結果について {#test-results}
@@ -95,13 +102,6 @@ ht-degree: 94%
       + [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
       + [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md)
    + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
-+ コードの管理 {#managing-code}
-   + [Maven プロジェクトバージョンの処理](cloud-manager/project-version-handling.md)
-   + [Cloud Manager のリポジトリー](cloud-manager/cloud-manager-repositories.md)
-   + [リポジトリーへのアクセス](cloud-manager/accessing-repos.md)
-   + [Git と Adobe Cloud Manager の統合](cloud-manager/integrating-with-git.md)
-   + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/working-with-multiple-source-git-repositories.md)
-   + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](/help/implementing/cloud-manager/enterprise-team-dev-setup.md)
 + AEM as a Cloud Service 向けの開発 {#developing}
    + [AEM プロジェクトの構造](developing/introduction/aem-project-content-package-structure.md)
    + [AEM プロジェクトリポジトリーの構造パッケージ](developing/introduction/repository-structure-package.md)

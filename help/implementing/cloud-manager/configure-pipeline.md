@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 90d75ddd0ace3eff8c3e1cde68208cf0a483ef86
+source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 78%
@@ -122,7 +122,7 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 1. 「**ソースコード**」タブを使用すると、リポジトリを更新できます。 「**Access Repo Info**」をクリックして、リポジトリを更新します。
 
    >[!NOTE]
-   >Cloud Managerでリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/cloud-manager-repositories.md#add-manage-repos)を参照してください。
+   >Cloud Managerでリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)を参照してください。
 
    ![](assets/configure-pipeline/edit-pipeline-2.png)
 
