@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Managerの実装段階
 description: このページでは、Cloud Acceleration Managerの実装フェーズの概要を説明します。
-source-git-commit: 97833dd5b962d8f2a0f50a911d7c41ca17a1a0fe
+exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
+source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
-
 
 # Cloud Acceleration Managerの実装段階 {#implementation-phase-cam}
 
@@ -60,21 +60,16 @@ ht-degree: 5%
    * Dispatcher
    * テスト
 
-   「**概要**」タブに、コードリファクタリングアクティビティのリストが表示されます。
+>[!NOTE]
+>これらのタブの内容を確認して、ベストプラクティスアナライザーで扱われていないその他の領域について理解してください。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-1.png)
+「**Dispatcher**」タブには、AEMをCloud ServiceのApacheおよびDispatcher設定として構造化する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法が表示されます。 また、クラウド環境でのデバッグについても説明します。
 
-   「**Dispatcher**」タブには、AEMをCloud ServiceのApacheおよびDispatcher設定として構造化する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法が表示されます。 また、クラウド環境でのデバッグについても説明します。
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+「**テスト**」タブには、機能、エクスペリエンス監査、UIテストに関する情報が表示されます。
 
-   「**テスト**」タブには、機能、エクスペリエンス監査、UIテストに関する情報が表示されます。
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
-
-
-   >[!NOTE]
-   >さらに、ページのタブの内容を確認して、ベストプラクティスアナライザーで扱われていないその他の領域について理解してください。
+![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Serviceデプロイメントカードの使用 {#aem-as-a-cloud-service-deployment}
