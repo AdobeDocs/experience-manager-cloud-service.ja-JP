@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: 0354f4782ff02d0c0d890ec6a99262b6b5002729
+source-git-commit: 7f641dc31ebe6e3847c98ed5ec44c74c6bbdf6bc
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 59%
+source-wordcount: '539'
+ht-degree: 60%
 
 ---
 
@@ -22,13 +22,13 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
 
-オンボーディングジャーニーを次に示します。
+以下の図に示すオンボーディングジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトします。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
-このジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトします。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
+>[!NOTE]
+>オンボーディングジャーニーの使用を開始するには、[オンボーディングエクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en)を参照してください。
 
-オンボーディングジャーニーの使用を開始するには、[オンボーディングエクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en)を参照してください。
 
 ## [!DNL Experience Manager as a Cloud Service] ガイド {#aem-guides}
 
