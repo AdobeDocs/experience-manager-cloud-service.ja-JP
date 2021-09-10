@@ -1,19 +1,19 @@
 ---
 title: Cloud ServiceとしてのScreensでのDispatcher設定
 description: ここでは、ScreensでのDispatcherの設定をCloud Serviceとして説明します。
-source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
+source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '140'
 ht-degree: 1%
 
 ---
 
 
-# Cloud ServiceとしてのScreensでのDispatcher設定{#dispatcher-configurations-screens-cloud}
+# Cloud ServiceとしてのScreensでのDispatcher設定 {#dispatcher-configurations-screens-cloud}
 
 ここでは、ScreensをCloud Serviceとして使用する際のDispatcherの設定について説明します。
 
-## DispatcherデプロイメントとしてのScreensのCloud Service設定 {#deployment}
+## Dispatcherでのフィルターおよびキャッシュルールの追加（Screens用）をCloud Serviceデプロイメントとして {#deployment}
 
 Screensのパブリッシュインスタンス用のDispatcherで、以下のフィルターとキャッシュルールをCloud Serviceとして許可します。
 
