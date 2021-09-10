@@ -3,10 +3,10 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as aCloud Service
 breadcrumb-title: AEM Screens as aCloud Service
 user-guide-description: AEM ScreensをCloud Serviceとして理解する。
-source-git-commit: 83b90b7aa51911d6aa5a76cfff7b7bca78903fe8
+source-git-commit: 152500c0c448cd8f9e5e485a060d7e015be524dc
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 9%
+source-wordcount: '184'
+ht-degree: 8%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 9%
    + [Screensサービスプロバイダーに移動](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
    + [Screensコンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)
    + [Screensビデオレンディションの作成](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
+   + [Cloud ServiceとしてのScreens用のDispatcherの設定](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
 + コンテンツの作成 {#create-content}
    + [Screensコンテンツプロバイダーでのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
    + [Screensコンテンツプロバイダーでのチャネルの作成と管理](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
