@@ -1,12 +1,11 @@
 ---
 title: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
-feature: リリース情報
-exl-id: 42cc9cab-6e66-4976-a3b1-ecb9dbaaabf4
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+feature: Release Information
+source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 54%
+source-wordcount: '420'
+ht-degree: 53%
 
 ---
 
@@ -49,7 +48,7 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * ルート要素名の後に改行を含む JCR ノード定義が正しく解析されなかった問題を修正しました。
 
-* リストリポジトリー API は、削除されたリポジトリをフィルタリングしません。
+* リストリポジトリー API は、削除されたリポジトリーをフィルタリングしません。
 
 * スケジュール手順に無効な値が指定された場合、誤ったエラーメッセージが表示されていました。
 
