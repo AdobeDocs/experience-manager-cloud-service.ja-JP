@@ -1,10 +1,10 @@
 ---
 title: Cloud ServiceとしてのScreensでのDispatcher設定
 description: ここでは、ScreensでのDispatcherの設定をCloud Serviceとして説明します。
-source-git-commit: b00856e1be8842c4e9fa6ed4ada9129926c73ef5
+source-git-commit: f7a201ed72011df2ed603528ad80cf191c9f2d77
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 2%
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -17,9 +17,7 @@ ht-degree: 2%
 
 Screensのパブリッシュインスタンス用のDispatcherで、以下のフィルターとキャッシュルールをCloud Serviceとして許可します。
 
-### フィルター {#filters}
-
-## AEM Screens Filters
+### AEM Screens Filters {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +30,12 @@ Screensのパブリッシュインスタンス用のDispatcherで、以下のフ
 /0210 { /type "allow" /method "GET" /url "/etc.clientlibs/*" }
 ```
 
-## キャッシュルール {#cache-rules}
+### キャッシュルール {#cache-rules}
 
 * `/statfileslevel "10"`を`publish_farm.any`/の`/cache`セクションに追加します。
 
    >[!NOTE]
-   >これは、キャッシュドキュメントルートから最大10レベルのキャッシュをサポートし、すべてを無効化するのではなく、コンテンツが公開されたタイミングを無効化します。 このレベルは、コンテンツ構造の深さに基づいて変更できます。
+   >このキャッシュルールは、キャッシュドキュメントルートから最大10レベルのキャッシュをサポートし、すべてを無効化するのではなく、コンテンツが公開されるタイミングを無効化します。 このレベルは、コンテンツ構造の設定の深さに基づいて変更できます。
 
 * `publish_farm.any`の`/invalidate`セクションに次の内容を追加します。
 
@@ -56,7 +54,7 @@ Screensのパブリッシュインスタンス用のDispatcherで、以下のフ
         {
         /glob "/content/screens/*.html"
         /type "allow"
-            }
+        }
    
    ## Allow Dispatcher Cache for Screens offline manifests
    
