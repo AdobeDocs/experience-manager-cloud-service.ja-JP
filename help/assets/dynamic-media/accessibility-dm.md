@@ -4,17 +4,17 @@ description: Dynamic Media および Dynamic Media ビューアでのアクセ�
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: アクセシビリティ
+feature: Accessibility
 role: Admin,User
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 93%
+source-wordcount: '597'
+ht-degree: 91%
 
 ---
 
 
-# Dynamic Media のアクセシビリティ {#accessibility-in-dm}
+# アクセシビリティ Dynamic Media {#accessibility-in-dm}
 
 Dynamic Media では、オーサリングユーザーインターフェイス全体でキーボードコントロールおよび支援テクノロジー（JAWS スクリーンリーダーや NVDA スクリーンリーダーなど）をサポートしています。
 
@@ -54,7 +54,7 @@ Dynamic Media のユーザーインターフェイス要素は、スクリーン
 
 ## Dynamic Media ビューアでの支援テクノロジーのサポート {#assistive-technology=support-for-dm-viewers}
 
-すべての Dynamic Media ビューアコンポーネントでは、ARIA（アクセシブルリッチインターネットアプリケーション）の役割と属性をサポートして、スクリーンリーダーなどの支援テクノロジーとの統合を強化しています。詳しくは、『Dynamic Media ビューアリファレンスガイド』の「ビューアのカスタマイズ」のトピックで、**支援テクノロジーのサポート**&#x200B;に関するヘルプトピックを参照してください。例えば、ビデオビューアの[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=ja)や、インタラクティブ画像ビューアの[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=ja#viewers-for-aem-assets-only)を参照してください。
+すべての Dynamic Media ビューアコンポーネントでは、ARIA（アクセシブルリッチインターネットアプリケーション）の役割と属性をサポートして、スクリーンリーダーなどの支援テクノロジーとの統合を強化しています。詳しくは、『Dynamic Media ビューアリファレンスガイド』の「ビューアのカスタマイズ」のトピックで、**支援テクノロジーのサポート**&#x200B;に関するヘルプトピックを参照してください。例えば、ビデオビューアの[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=ja)や、インタラクティブ画像ビューアの[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)を参照してください。
 
 >[!MORELIKETHIS]
 >

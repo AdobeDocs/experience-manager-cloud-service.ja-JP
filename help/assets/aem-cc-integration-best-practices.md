@@ -3,12 +3,12 @@ title: ' [!DNL Adobe Creative Cloud] との統合のベストプラクティス'
 description: Experience Manager デプロイメントを Adobe Creative Cloud と統合して、アセット転送ワークフローを効率化し、効率を最大限に高めるためのベストプラクティス。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 共同作業、アドビのアセットリンク、デスクトップアプリ
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 09aecfac8bab0377e9e777b80e7db986d7aa4914
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '3451'
+source-wordcount: '3443'
 ht-degree: 57%
 
 ---

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e06a8d28eef4faaa23603adc846033ab5ef55000
+source-git-commit: 534fd193181fe22392fb598625d3a018a4a09e69
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1628'
 ht-degree: 24%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 24%
 詳しくは、[基本的な再生監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)を参照してください。
 
 * でのビデオのサムネールのサポートが、Screens as aCloud Serviceとしてサポートされるようになりました。 コンテンツ作成者は、ビデオのサムネールを定義して、画像をプレースホルダーとして使用し、コンテンツの再生とターゲティングを適切にテストしながら、実際のビデオを適切なチームで確定できます。 ビデオの再生に失敗した場合にも、画像を使用できます。
-詳しくは、[ビデオのサムネールのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=en)を参照してください。
+詳しくは、[ビデオのサムネールのサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html)を参照してください。
 
 ### バグ修正 {#bug-fixes-screens}
 

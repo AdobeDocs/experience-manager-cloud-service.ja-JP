@@ -1,13 +1,13 @@
 ---
 title: コンテンツフラグメントの操作
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントで、（ヘッドレス配信に最適な）ページに依存しないコンテンツをデザイン、作成、キュレーションおよび使用する方法を説明します。
-feature: コンテンツフラグメント
+feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '2037'
-ht-degree: 100%
+source-wordcount: '2033'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >* [コンテンツフラグメントを使用したページのオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
 >* [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
->* [AEM Assets HTTP API でのコンテンツフラグメントのサポート ](/help/assets/content-fragments/assets-api-content-fragments.md)
+>* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
@@ -80,8 +80,10 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >* **コンテンツフラグメント**&#x200B;は編集コンテンツで、テキスト、数値、日付などの構造化されたデータにアクセスするのに使用できます。これらは、定義と構造を備えた純粋なコンテンツですが、視覚的なデザインやレイアウトは追加されていません。
 >* **エクスペリエンスフラグメント**&#x200B;は完全にレイアウトされたコンテンツであり、Web ページのフラグメントです。
 
-エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
-詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=ja#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
+>
+>エクスペリエンスフラグメントには、コンテンツフラグメントの形式でコンテンツを含めることができますが、その逆はできません。
+>
+>詳細については、](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)AEM のコンテンツフラグメントおよびエクスペリエンスフラグメントについて[も参照してください。
 
 ## コンテンツフラグメントとコンテンツサービス {#content-fragments-and-content-services}
 

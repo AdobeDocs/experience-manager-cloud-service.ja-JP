@@ -2,9 +2,9 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 description: Adobe Experience Manager（AEM）as a Cloud Service のリリースノート。
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: bd2a2fb37b7a89a41687e15eacf9dbb767cb272f
+source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 53%
 
 ---
@@ -32,7 +32,7 @@ Cloud Serviceとしての[!DNL Adobe Experience Manager]は、イノベーショ
 
 リリースの準備をするには：
 
-1. カレンダーのマーク：[Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)の月別リリースの主な日付を確認し、リリースに備えて主要なアクティビティに備えるためにカレンダーをマークします。
+1. カレンダーのマーク：[Experience Managerリリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)の月別リリースの主な日付を確認し、リリースに備えて主要なアクティビティに備えるためにカレンダーをマークします。
 1. リリースノートを確認します。リリースおよびプレリリース機能の詳細については、[現在のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 1. 新機能にアクセスして試す：非実稼動環境で[プレリリースチャネル](/help/release-notes/prerelease.md)を有効にし、カスタム環境で評価するための機能の試みを開始します。
 1. ユーザーのトレーニング：ドキュメントとExperience Leagueのリソースを使用して、新機能を迅速かつ深く理解しているユーザーを獲得します。
