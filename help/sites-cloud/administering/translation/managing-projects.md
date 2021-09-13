@@ -1,19 +1,23 @@
 ---
 title: 翻訳プロジェクトの管理
 description: AEM で機械翻訳と人間による翻訳の両方のプロジェクトを作成および管理する方法について説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3827'
-ht-degree: 100%
+source-wordcount: '3863'
+ht-degree: 99%
 
 ---
 
 # 翻訳プロジェクトの管理 {#managing-translation-projects}
 
 翻訳プロジェクトを使用すると、AEM コンテンツの翻訳を管理できます。翻訳プロジェクトは AEM [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)の一種であり、他の言語に翻訳するリソースがその中に格納されます。これらのリソースは、言語マスターから作成される[言語コピー](preparation.md)のページとアセットです。
+
+>[!TIP]
+>
+>コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
 
 翻訳プロジェクトにリソースが追加されると、そのリソース用の翻訳ジョブが作成されます。リソースで実行される人間による翻訳と機械翻訳のワークフローの管理に使用するコマンドとステータス情報がジョブによって提供されます。
 

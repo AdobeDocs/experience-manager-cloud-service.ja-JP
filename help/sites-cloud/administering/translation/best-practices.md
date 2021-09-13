@@ -1,17 +1,21 @@
 ---
 title: 翻訳のベストプラクティス
 description: アドビのエンジニアリングおよびコンサルティングチームがまとめたベストプラクティスを確認し、翻訳プロジェクトの導入および運用に役立ててください。
-feature: 言語コピー
+feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 95%
 
 ---
 
 # 翻訳のベストプラクティス {#translation-best-practices}
+
+>[!TIP]
+>
+>コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
 
 ## 一般 {#general}
 

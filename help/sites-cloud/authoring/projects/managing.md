@@ -2,10 +2,10 @@
 title: プロジェクトの管理
 description: プロジェクトを使用すると、リソースをプロジェクトコンソールでアクセスして管理できる 1 つのエンティティにグループ化して整理できます。
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: a8d3dcb732fc137f3c92839abeefd5e0c24be6ff
+source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **プロジェクト**&#x200B;コンソールで、プロジェクトにアクセスし、アクションを実行することができます。
 
-![プロジェクトコンソール](/help/sites-cloud/authoring/assets/projects-console-detail.png)
+![プロジェクトコンソール](/help/sites-cloud/authoring/assets/projects-console.png)
 
 プロジェクトコンソールでは、プロジェクトを作成し、リソースとプロジェクトを関連付け、プロジェクトまたはリソースリンクを削除することもできます。タイルを開いてその内容を表示したり、アイテムをタイルに追加したりできます。このトピックで詳しい手順を説明します。
 
@@ -40,7 +40,7 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 1. 「**タイトル**」と「**説明**」を定義し、必要に応じて「**サムネール**」画像を追加します。ユーザーおよびユーザーが属するグループを追加または削除することもできます。さらに、「**詳細**」をクリックして、URL で使用する名前を追加します。
 
-   ![プロジェクトの詳細の追加](/help/sites-cloud/authoring/assets/projects-title.png)
+   ![プロジェクトの詳細の追加](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. 「**作成**」をタップまたはクリックします。新しいプロジェクトを開くか、コンソールに戻るかを確認するメッセージが表示されます。
 
@@ -85,13 +85,11 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 タイルに項目を追加するには：
 
-1. **プロジェクト**&#x200B;で、プロジェクトに移動し、項目を追加するタイル上の追加（+）アイコンをクリックします。
+1. **プロジェクト**&#x200B;で、プロジェクトに移動し、項目を追加するタイルの下山括弧をタップまたはクリックします。
 
-   ![タイルへの項目の追加](/help/sites-cloud/authoring/assets/projects-workflows-1.png)
+   ![タイルへの項目の追加](/help/sites-cloud/authoring/assets/project-workflows.png)
 
 1. 新しいタイルの作成時と同様にして、タイルに項目を追加します。プロジェクトタイルについては、[こちら](/help/sites-cloud/authoring/projects/overview.md#project-tiles)で説明します。この例では、別のワークフローが 1 つ追加されました。
-
-   ![別の項目がタイルに追加された状態](/help/sites-cloud/authoring/assets/projects-workflows-2.png)
 
 ### タイルを開く {#opening-a-tile}
 
@@ -99,19 +97,17 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 
 項目を表示または変更するためにタイルを開くには：
 
-1. プロジェクトコンソールで、省略記号（...）をタップまたはクリックします。
+1. プロジェクトコンソールで、省略記号（...）をタップまたはクリックします。 アイコンをクリックします。
 
-   ![タイルを開く](/help/sites-cloud/authoring/assets/projects-open-tile.png)
+   ![タイルを開く](/help/sites-cloud/authoring/assets/project-links.png)
 
 1. そのタイル内の項目が表示されます。選択モードに入って、項目を変更または削除できます。
 
-   ![開かれたタイル](/help/sites-cloud/authoring/assets/projects-opened-tile.png)
+   ![開かれたタイル](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
 ## プロジェクト統計の表示 {#viewing-project-statistics}
 
-プロジェクト統計を表示するには、**プロジェクト**&#x200B;コンソールで「**統計ビューを表示**」をクリックします。各プロジェクトの完了レベルが表示されます。「**統計ビューを表示**」を再度クリックして、**プロジェクト**&#x200B;コンソールに移動します。
-
-![プロジェクトの統計情報](/help/sites-cloud/authoring/assets/projects-stats.png)
+プロジェクトの統計は、**プロジェクト**&#x200B;コンソールで表示できます。
 
 ### プロジェクトタイムラインの表示 {#viewing-a-project-timeline}
 
@@ -138,12 +134,11 @@ AEM には次の既製のテンプレートが用意されていて、プロジ�
 1. **プロジェクト**&#x200B;コンソールで、プロジェクトを開き、**プロジェクト情報**&#x200B;タイルを探します。
 
    >[!NOTE]
-   >
-   >このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
+   このタイルがプロジェクトにまだない場合は、追加する必要があります。[タイルの追加](#adding-items-to-a-tile)を参照してください。
 
 1. 「**編集**」をタップまたはクリックします。
 1. セレクターを「**アクティブ**」から「**非アクティブ**」（またはその逆）に変更します。
 
-   ![プロジェクトのアクティブ化](/help/sites-cloud/authoring/assets/projects-activate.png)
+   ![プロジェクトのアクティブ化](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
 1. 「**完了**」をタップまたはクリックして、変更内容を保存します。

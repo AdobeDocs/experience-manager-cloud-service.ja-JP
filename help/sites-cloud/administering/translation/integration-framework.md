@@ -1,13 +1,13 @@
 ---
 title: 翻訳統合フレームワークの設定
 description: サードパーティの翻訳サービスと統合するための Translation Integration Framework の設定方法を説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 100%
 1. [クラウド設定をページに関連付けます。](#configuring-pages-for-translation)
 
 AEM のコンテンツ翻訳機能の概要については、[多言語サイトのコンテンツの翻訳](overview.md)を参照してください。
+
+>[!TIP]
+>
+>コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
 
 ## 翻訳サービスプロバイダーへの接続 {#connecting-to-a-translation-service-provider}
 

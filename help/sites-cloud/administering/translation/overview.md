@@ -1,13 +1,13 @@
 ---
 title: 多言語サイトのコンテンツの翻訳
 description: 多言語サイトのコンテンツを翻訳する方法の概要を説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '292'
+ht-degree: 86%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 
 * **人間による翻訳：**&#x200B;コンテンツが翻訳プロバイダーに送信され、専門の翻訳者によって翻訳されます。翻訳が完了すると、翻訳済みコンテンツが返されて、AEM に読み込まれます。翻訳プロバイダーが AEM と統合されると、AEM と翻訳プロバイダーとの間でコンテンツが自動的に送信されます。
 * **機械翻訳：**&#x200B;機械翻訳サービスでは、コンテンツがすぐに翻訳されます。
+
+>[!TIP]
+>
+>コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
 
 コンテンツの翻訳には次の手順が含まれます。
 

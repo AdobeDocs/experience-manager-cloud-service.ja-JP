@@ -1,19 +1,23 @@
 ---
 title: Microsoft Translator への接続
 description: AEM を Microsoft Translator に接続して翻訳ワークフローを自動化する方法を説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 92%
 
 ---
 
 # Microsoft Translator への接続 {#connecting-to-microsoft-translator}
 
 AEM ページのコンテンツまたはアセットの翻訳に Microsoft Translation アカウントを使用するには、[Microsoft Translator](https://hub.microsofttranslator.com) クラウドサービスの設定を作成します。
+
+>[!TIP]
+>
+>コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
 
 >[!NOTE]
 >

@@ -1,19 +1,23 @@
 ---
 title: 翻訳するコンテンツの準備
 description: 翻訳するコンテンツを準備する方法について説明します。
-feature: 言語コピー
+feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
 # 翻訳するコンテンツの準備 {#preparing-content-for-translation}
 
 通常、多言語の Web サイトは、ある程度の量のコンテンツを複数の言語で提供します。サイトは 1 つの言語でオーサリングされてから、他の言語に翻訳されます。通常、多言語サイトはページのブランチで構成されます。各ブランチには、異なる言語のサイトのページが含まれています。
+
+>[!TIP]
+>
+>コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
 
 [WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)には、複数の言語ブランチが含まれています。使用される構造は次のとおりです。
 
@@ -134,6 +138,7 @@ AEM には&#x200B;**参照**&#x200B;パネルがあります。このパネル�
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
+
 >
 > この `es` 言語コピーは、`en` ノードから 2 レベル離れている（`americas/central-america`）ので、検出されません。
 
