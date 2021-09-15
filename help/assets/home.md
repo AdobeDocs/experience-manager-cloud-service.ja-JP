@@ -1,13 +1,13 @@
 ---
 title: '[!DNL Assets] as a [!DNL Cloud Service] ガイド'
 description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のセルフヘルプリソースとドキュメントリンク'
-feature: アセット管理
+feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 86%
+source-wordcount: '276'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,6 @@ Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には次のセ
 | [[!DNL Experience Manager] as a [!DNL Cloud Service] ホーム](/help/landing/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の完全なドキュメント。 |
 | [概要](/help/overview/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の概要と用語集。 |
 | [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止される機能および削除された機能、既知の問題について説明します。 |
-| [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の中心概念について紹介します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
 | [オンボーディング](/help/onboarding/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の基本を学ぶ - 重要なデータへのアクセスと保護について説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a [!DNL Cloud Service] を使用したオーサリングおよび管理方法について説明します。 |

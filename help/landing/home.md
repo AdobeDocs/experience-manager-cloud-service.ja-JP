@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service のユーザーガイド
 description: Adobe Experience Manager as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 1dbeb42c-3c84-407a-bc7b-d9f0403ee73a
-source-git-commit: 90e9dd3c9c61a1e3f0aa1681475afa4e4d12106b
+source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 88%
+source-wordcount: '406'
+ht-degree: 83%
 
 ---
 
@@ -17,9 +17,8 @@ ht-degree: 88%
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [概要](/help/overview/home.md) | ソリューションの紹介、用語など、Adobe Experience Manager as a Cloud Service の概要については、まずこちらを参照してください。 |
+| [概要](/help/overview/home.md) | 概要、用語、アーキテクチャなど、Cloud ServiceとしてのExperience Managerの概要については、まずこちらを参照してください。 |
 | [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。 |
-| [中心概念](/help/core-concepts/home.md) | このガイドでは、この新しいサービスのアーキテクチャなど、Adobe Experience Manager as a Cloud Service の中心概念について紹介します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
 | [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |
