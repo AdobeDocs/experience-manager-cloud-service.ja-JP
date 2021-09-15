@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
+source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 94%
+source-wordcount: '1037'
+ht-degree: 93%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 94%
          + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ja)
          + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ja)
    + ハイブリッドおよびSPA AEMの開発{#hybrid}
-      + [AEM でのハイブリッドと SPA](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+      + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
       + [SPA の概要およびガイド](developing/hybrid/introduction.md)
       + [SPA WKND チュートリアル](developing/hybrid/wknd-tutorial.md)
