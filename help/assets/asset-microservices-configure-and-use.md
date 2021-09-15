@@ -2,12 +2,12 @@
 title: アセットマイクロサービスの設定と使用
 description: クラウドネイティブなアセットマイクロサービスを設定および使用して大規模なアセットを処理します。
 contentOwner: AG
-feature: Asset Compute マイクロサービス、ワークフロー、アセット処理
+feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 4b7dc19d691e8077600f56ce57dc72749f157234
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2704'
 ht-degree: 86%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 アセットマイクロサービスは、クラウドネイティブアプリケーション（「ワーカー」とも呼ばれる）を使用して、アセットの拡張性と回復性の高い処理を実現します。アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
-アセットマイクロサービスを使用すると、以前のバージョンの [!DNL Experience Manager] よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、PSD形式とPSB形式のサムネール抽出は可能になりましたが、以前は[!DNL ImageMagick]のようなサードパーティソリューションが必要でした。
+アセットマイクロサービスを使用すると、以前のバージョンの [!DNL Experience Manager] よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、PSD形式とPSB形式のサムネール抽出は可能になりましたが、以前は[!DNL ImageMagick]などのサードパーティソリューションが必要でした。
 
 アセットの処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に応じて異なります。Experience Manager には基本的な初期設定が用意されており、管理者は特定のアセット処理設定を追加できます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズを使用すると、デベロッパーはデフォルトのオファーを拡張できます。
 

@@ -2,13 +2,13 @@
 title: ' [!DNL Assets] での [!DNL Adobe Stock] アセットの管理。'
 description: ' [!DNL Adobe Experience Manager] 内から [!DNL Adobe Stock] アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
 contentOwner: AG
-feature: 検索、Adobe Stock
+feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '989'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager] と [!DNL Adobe Stock] の統合  {#integrate-aem-and-adobe-stock}
 
-[!DNL Experience Manager] と [!DNL Adobe Stock] の間でやり取りができるようにするには、[!DNL Experience Manager] 内で IMS 設定と [!DNL Adobe Stock] 設定を作成します。
+[!DNL Experience Manager]と[!DNL Adobe Stock]の間の通信を確立するには、[!DNL Experience Manager]にIMS設定と[!DNL Adobe Stock]設定を作成します。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 ## [!DNL Adobe Stock] での [!DNL Experience Manager] アセットの使用と管理  {#usemanage}
 
-この機能を使用すると、[!DNL Experience Manager Assets] で [!DNL Adobe Stock] アセットを操作できます。[!DNL Experience Manager] のユーザーインターフェイス内から [!DNL Adobe Stock] アセットを検索し、必要なアセットのライセンスを取得できます。
+この機能を使用すると、組織のユーザーは[!DNL Experience Manager Assets]内の[!DNL Adobe Stock]アセットを使用して作業できます。 [!DNL Experience Manager] のユーザーインターフェイス内から [!DNL Adobe Stock] アセットを検索し、必要なアセットのライセンスを取得できます。
 
 [!DNL Experience Manager] 内で [!DNL Adobe Stock] アセットのライセンスを取得すると、そのアセットを通常のアセットと同様に使用および管理できます。ユーザーは [!DNL Experience Manager] 内でアセットの検索およびプレビュー、アセットのコピーおよび公開、[!DNL Brand Portal] でのアセットの共有、[!DNL Experience Manager] デスクトップアプリケーション経由でのアセットのアクセスおよび使用を行うことができます。
 

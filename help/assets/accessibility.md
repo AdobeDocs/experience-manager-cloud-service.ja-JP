@@ -2,13 +2,13 @@
 title: ' [!DNL Experience Manager Assets] でのアクセシビリティ'
 description: 障害を持つユーザーにとって  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]  のアクセシビリティ機能がどのように役立つかを説明します。
 contentOwner: AG
-feature: アクセシビリティ、アセット管理
+feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 60acec6116f624188b484ffa1abd657cd4301e77
+source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 100%
+source-wordcount: '1911'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のアクセシビリティ機能  {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] を使用すると、コンテンツクリエーターやコンテンツパブリッシャーが素晴らしいエクスペリエンスを Web 上で提供できます。アドビでは、[!DNL Experience Manager] のアクセシビリティを向上させることで、障害を持つクリエイターもこの作業に参加できるように努めています。このソフトウェアは、あらゆるタイプのユーザーのニーズに応え、視覚、聴覚、運動などの障害を持つユーザーも対象とした世界的な標準に準拠するように継続的に機能強化されています。
+[!DNL Adobe Experience Manager] コンテンツの作成者や発行者は、Web上で素晴らしいエクスペリエンスを提供できます。アドビでは、[!DNL Experience Manager] のアクセシビリティを向上させることで、障害を持つクリエイターもこの作業に参加できるように努めています。このソフトウェアは、あらゆるタイプのユーザーのニーズに応え、視覚、聴覚、運動などの障害を持つユーザーも対象とした世界的な標準に準拠するように継続的に機能強化されています。
 
 [!DNL Experience Manager] では、準拠する標準規格、製品のアクセシビリティ機能の概要、準拠レベルを記載した準拠情報を公開しています。アクセシビリティ準拠レポートは、様々な標準規格への準拠レベルを [!DNL Experience Manager] ユーザーが理解するうえで役に立ちます。[!DNL Assets] でおこなわれた機能強化により、すべてのユーザーがキーボード、スクリーンリーダー、拡大鏡などの支援テクノロジーを使用して、インターフェイスを容易に使用できるようになりました。
 
