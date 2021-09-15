@@ -1,12 +1,12 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
 description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5の主な変更点です。'
-feature: リリース情報
+feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: b2f68acaf4c88a3a7e0768410cee53eb2d07a76e
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '970'
 ht-degree: 71%
 
 ---
@@ -71,10 +71,10 @@ ht-degree: 71%
 >Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] には次のリソースがあります。
 >
 >* [非推奨（廃止予定）の機能と削除された機能のリスト](/help/release-notes/deprecated-removed-features.md)
-* [概要紹介](/help/overview/introduction.md)
-* [新機能と相違点](/help/overview/what-is-new-and-different.md)
-* [アーキテクチャ](/help/core-concepts/architecture.md)
-* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
-* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
-* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+>* [概要紹介](/help/overview/introduction.md)
+>* [新機能と相違点](/help/overview/what-is-new-and-different.md)
+>* [アーキテクチャ](/help/overview/architecture.md)
+>* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
+>* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
+>* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 

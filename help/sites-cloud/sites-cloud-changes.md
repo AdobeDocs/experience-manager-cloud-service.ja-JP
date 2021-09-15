@@ -2,7 +2,7 @@
 title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Cloud Service の AEM Sites の主な変更点
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 97%
@@ -17,12 +17,12 @@ AEM Sites as a Cloud Service は、クラウドネイティブな AEM as a Cloud
 >このドキュメントでは、AEM Sites の主な変更点について重点的に説明します。AEM as a Cloud Service およびその他のモジュールに関する一般的な変更点については、以下を参照してください。
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
-* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
-* [Adobe Experience Manager as a Cloud Service のアーキテクチャ](/help/core-concepts/architecture.md)
-* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
-* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
-* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+>* [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
+>* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/overview/architecture.md)
+>* [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
+>* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
+>* [AEM Assets as a Cloud Service の概要](/help/assets/overview.md)
+>* [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 
 
 AEM Sites as a Cloud Service の変更点と追加機能は次のとおりです。
@@ -40,7 +40,8 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 こうしたアクションを開始したユーザーは、新しい UI（`/mnt/overlay/dam/gui/content/asyncjobs.html`）でアクションのステータスを確認できます。
 
 >[!NOTE]
-この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
+>
+>この新機能を利用するためにシステムのユーザーに必要な変更はありません。ここでは、以前のオンプレミスバージョンの AEM から動作が変更された点としてのみ記載しておきます。
 
 ## 新しい参照サイトおよびチュートリアル {#new-reference-site-and-tutorial}
 

@@ -1,15 +1,15 @@
 ---
 title: CMS ヘッドレス開発について
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、ヘッドレステクノロジーと、それを使用する理由について説明します。
-source-git-commit: ddd320ae703225584d4a2055d0f882d238d60987
-workflow-type: ht
+exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 100%
 
 ---
 
-
-# CMS ヘッドレス開発について{#learn-about}
+# CMS ヘッドレス開発について {#learn-about}
 
 [AEM ヘッドレスデベロッパージャーニー](overview.md)のこの部分では、ヘッドレステクノロジーと、それを使用する理由について説明します。
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 * ヘッドレスがなぜ必要なのか、また、いつ必要なのかを理解する
 * ヘッドレスの概念の用途とその相互関係の概要を理解する
 
-## フルスタックコンテンツ配信{#full-stack}
+## フルスタックコンテンツ配信 {#full-stack}
 
 使いやすい大規模なコンテンツ管理システム（CMS）が登場して以来、組織はこれらをメッセージング、ブランディング、コミュニケーションを管理する一元的な場所として活用してきました。CMS をエクスペリエンス管理の中心として使用することで、異なるシステムでタスクを重複させる必要がなくなり、効率が向上しました。
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 ユーザーは、プラットフォームやタッチポイントに関係なく、エンゲージメントを期待しているので、エクスペリエンスの提供方法に機敏性を必要とします。このマルチチャネルアプローチは、デジタルエクスペリエンスの標準であり、フルスタックアプローチは、ある状況下ではは柔軟性に欠けます。
 
-## ヘッドレスのヘッド{#the-head}
+## ヘッドレスのヘッド {#the-head}
 
 システムのヘッドは、通常、そのシステムの出力レンダラーです。一般的には、GUI やその他のグラフィカル出力の形式です。
 
@@ -104,7 +104,7 @@ ht-degree: 100%
 
 未来を予測するのは不可能ですが、ヘッドレスであればどんな未来にも対応できる俊敏性を獲得できます。
 
-## AEM とヘッドレス{#aem-and-headless}
+## AEM とヘッドレス {#aem-and-headless}
 
 このデベロッパージャーニーを通じて、AEM がフルスタック配信と共にヘッドレス配信をサポートする方法を学びます。
 
@@ -112,7 +112,7 @@ ht-degree: 100%
 
 このジャーニーでは、ヘッドレスのみのコンテンツ配信モデルに焦点を当てます。しかし、この基本的な知識を学べば、両方のモデルを活用する方法をさらに詳しく学ぶことができます。
 
-## 次の手順{#what-is-next}
+## 次の手順 {#what-is-next}
 
 AEM ヘッドレスジャーニーを開始していただきありがとうございます。ドキュメントを読んだので、次を理解しているはずです。
 
@@ -126,5 +126,5 @@ AEM ヘッドレスジャーニーを開始していただきありがとうご�
 
 「[AEM Headless as a Cloud Service - はじめに](getting-started.md)」ドキュメントを確認して、ヘッドレス開発のジャーニーの次の部分に進むことをお勧めします。以下は、このドキュメントで取り上げるいくつかの概念について詳しく説明する、追加のオプションリソースです。
 
-* [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/core-concepts/architecture.md) - AEM as a Cloud Service の構造について
+* [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM as a Cloud Service の構造について
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法と、適切なオプションを選択する方法を調べます。

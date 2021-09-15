@@ -2,7 +2,7 @@
 title: レプリケーション
 description: 配布とトラブルシューティングのレプリケーション。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: d00514eb3a840fe1fc5c021c84d61261f9dfe4f1
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 54%
@@ -15,7 +15,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 >[!NOTE]
 >
->詳しくは、[コンテンツ配布](/help/core-concepts/architecture.md#content-distribution)を参照してください。
+>詳しくは、[コンテンツ配布](/help/overview/architecture.md#content-distribution)を参照してください。
 
 ## コンテンツの公開方法 {#methods-of-publishing-content}
 

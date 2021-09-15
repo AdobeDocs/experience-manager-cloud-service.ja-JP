@@ -2,7 +2,7 @@
 title: AEM Headless as a Cloud Service - はじめに
 description: ここでは、AEM ヘッドレスデベロッパージャーニーのこの部分では、AEM ヘッドレスの前提条件について説明します。
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: bc56a739d8aa59d8474f47c9882662baacfdda84
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
 workflow-type: tm+mt
 source-wordcount: '3058'
 ht-degree: 77%
@@ -276,7 +276,7 @@ AEM を使用した[一般的なヘッドレス実装](#level-1)の場合、デ�
 「[AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](path-to-first-experience.md)」のドキュメントを確認して、ヘッドレス開発の次のステップに進むことをお勧めします。以下は、このドキュメントで取り上げたいくつかの概念をより深く掘り下げる追加のオプションリソースですが、ヘッドレスジャーニーの継続には必要ありません。
 
 * [AEMヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md)  — このドキュメントのジャーニーでは、ヘッドレステクノロジー、AEMによるヘッドレスコンテンツの提供方法、翻訳方法を幅広く理解できます。
-* [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/core-concepts/architecture.md) - AEM as a Cloud Service の構造について
+* [Adobe Experience Manager as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md) - AEM as a Cloud Service の構造について
 * [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - これらの実践チュートリアルでは、AEM を使用してヘッドレスエンドポイントにコンテンツを配信するための様々なオプションの使用方法と、適切なオプションを選択する方法を調べます。
 * [GraphQL API を使用したヘッドレスコンテンツ管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - AEM に実装されている GraphQL API の概要についてのコースです。Adobe ID を使用した認証が必要です。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql)（英語のみ）- この GitHub プロジェクトには、AEM の GraphQL API を紹介するためのサンプルアプリケーションが含まれています。

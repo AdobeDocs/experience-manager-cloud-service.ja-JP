@@ -2,14 +2,14 @@
 title: 新機能
 description: Adobe Experience Manager (AEM) as a Cloud Service の新機能。
 exl-id: f854aaf8-e84d-4904-832f-f72433590920
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
 ---
 
-# 新機能 {#what-is-new}
+# 新機能? {#what-is-new}
 
 <!-- For the pre-release of Adobe Experience Manager (AEM) as a Cloud Service everything is new. -->
 
@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) as a Cloud Service は、Web コンテンツお�
 
 Adobe Experience Manager as a Cloud Service の概要については、次を参照してください。
 * [AEM as a Cloud Service の概要](/help/overview/introduction.md)
-* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/core-concepts/architecture.md)
+* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/overview/architecture.md)
 * [AEM as a Cloud Service の概要 - 新機能と相違点](/help/overview/what-is-new-and-different.md)
 
 <!-- Please link to introduction or what's new of Sites. -->
