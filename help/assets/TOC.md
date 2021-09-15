@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: 69f1ac34dc24f92cae47e1bfcffb39f6f3b03b7b
+source-git-commit: 8ed1d93a11c326df449164d35c7433f21b64d187
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 67%
+source-wordcount: '483'
+ht-degree: 66%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 67%
    + [メタデータプロファイル](metadata-profiles.md)
    + [メタデータスキーマ](metadata-schemas.md)
    + [ビデオアセットの管理](manage-video-assets.md)
+   + [MSMを使用したアセットの再利用](reuse-assets-using-msm.md)
    + [アセットのダウンロード](download-assets-from-aem.md)
    + [編集するアセットのチェックアウトとチェックイン](check-out-and-submit-assets.md)
    + [アセットのデジタル著作権管理](drm.md)
@@ -58,7 +59,7 @@ ht-degree: 67%
    + [コンテンツフラグメントに対するリモート GraphQL クエリの認証](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Connected Assets](use-assets-across-connected-assets-instances.md)
-   + [Adobe InDesign用のFPOレンディションの生成](configure-fpo-renditions.md)
+   + [配置専用のレンディションを生成](configure-fpo-renditions.md)
    + [アセットレポート](asset-reports.md)
    + [カスケードメタデータ](cascading-metadata.md)
    + [XMP メタデータ](xmp-metadata.md)
