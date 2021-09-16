@@ -2,13 +2,13 @@
 title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの共有
 description: リモート [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] デプロイメントで使用可能なアセットを使用します。
 contentOwner: AG
-feature: アセット管理、Connected Assets、アセット配布，ユーザーとグループ
+feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 94%
+source-wordcount: '3046'
+ht-degree: 91%
 
 ---
 
@@ -20,9 +20,11 @@ Connected Assetsの機能は、[!DNL Experience Manager Sites]と[!DNL Experienc
 
 ## Connected Assets の概要 {#overview-of-connected-assets}
 
-[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。
+[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assetsを通じてDynamic Media画像をサイトのWebページで使用し、スマート切り抜きや画像プリセットなどのDynamic Media機能を利用することもできます。
 
 [!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットを [!DNL Sites] ローカルデプロイメントで一度に利用できるようにするには、リモートアセットを一括で移行することを検討します。
+
+SitesデプロイメントとDynamic Mediaデプロイメント間の接続を設定して、Webページの作成者がWebページでDynamic Mediaイメージを使用できるようにすることができます。 Webページをオーサリングする際に、リモートアセットとリモートDynamic Mediaデプロイメントの使用経験は同じです。 これにより、Connected Assetsの機能（スマート切り抜きや画像プリセットなど）を使用して、Dynamic Mediaの機能を活用できます。
 
 ### 前提条件とサポートされているデプロイメント {#prerequisites}
 
@@ -147,7 +149,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 1. リモートデプロイメントの [!DNL Assets] インターフェイスに移動するには、[!DNL Experience Manager] Workspace から **[!UICONTROL Assets]**／**[!UICONTROL ファイル]**&#x200B;にアクセスします。または、ブラウザーで `https://[assets_servername_ams]:[port]/assets.html/content/dam` にアクセスします。選択したアセットをアップロードします。
 1. [!DNL Sites] デプロイメントの右上隅にあるプロファイルアクティベーターで、「**[!UICONTROL 別のユーザーとして実行する]**」をクリックします。ユーザー名として `ksaner` を入力し、提供されたオプションを選択し、「**[!UICONTROL OK]**」をクリックします。
-1. **[!UICONTROL Sites]**／**[!UICONTROL We.Retail]**／**[!UICONTROL us]**／**[!UICONTROL en]** で、`We.Retail` Web サイトページを開きます。ページを編集します。または、ブラウザーで `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` にアクセスしてページを編集します。
+1. **[!UICONTROL ナビゲーション]** / **[!UICONTROL サイト]**&#x200B;でWebサイトページを開きます。 ページを編集します。または、ブラウザーで `https://[aem_server]:[port]/editor.html/content/<site page>` にアクセスしてページを編集します。
 
    ページの左上隅にある「**[!UICONTROL サイドパネルを切り替え]**」をクリックします。
 
