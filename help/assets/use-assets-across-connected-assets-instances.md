@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 69242846bcd27a4d70f31cc17688d651e4733b5f
+source-git-commit: 6e7b2dd71f7e5a820ebca5e6e3928c712dfc359c
 workflow-type: tm+mt
-source-wordcount: '3046'
-ht-degree: 91%
+source-wordcount: '3086'
+ht-degree: 90%
 
 ---
 
@@ -147,14 +147,24 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 上記のセットアップを使用してオーサリングエクスペリエンスを試し、機能を理解してください。リモート DAM デプロイメントで、選択したドキュメントまたは画像を使用します。
 
-1. リモートデプロイメントの [!DNL Assets] インターフェイスに移動するには、[!DNL Experience Manager] Workspace から **[!UICONTROL Assets]**／**[!UICONTROL ファイル]**&#x200B;にアクセスします。または、ブラウザーで `https://[assets_servername_ams]:[port]/assets.html/content/dam` にアクセスします。選択したアセットをアップロードします。
+1. リモートデプロイメントの [!DNL Assets] インターフェイスに移動するには、[!DNL Experience Manager] Workspace から **[!UICONTROL Assets]**／**[!UICONTROL ファイル]**&#x200B;にアクセスします。または、ブラウザーで `https://[assets_servername_ams]:[port]/assets.html/content/dam` にアクセスします。選択したアセットをアップロードします。&lt;>
 1. [!DNL Sites] デプロイメントの右上隅にあるプロファイルアクティベーターで、「**[!UICONTROL 別のユーザーとして実行する]**」をクリックします。ユーザー名として `ksaner` を入力し、提供されたオプションを選択し、「**[!UICONTROL OK]**」をクリックします。
 1. **[!UICONTROL ナビゲーション]** / **[!UICONTROL サイト]**&#x200B;でWebサイトページを開きます。 ページを編集します。または、ブラウザーで `https://[aem_server]:[port]/editor.html/content/<site page>` にアクセスしてページを編集します。
+=======
+1. [!DNL Sites] デプロイメントの右上隅にあるプロファイルアクティベーターで、「**[!UICONTROL 別のユーザーとして実行する]**」をクリックします。目的のユーザー名を入力し、「**[!UICONTROL OK]**」をクリックします。
+1. **[!UICONTROL ナビゲーション]**/**[サイト]**&#x200B;からWebサイトページを開きます。 ページを編集します。または、ブラウザーで `https://[aem_server]:[port]/editor.html/content/<page name>` にアクセスしてページを編集します。
+>>>>>>>>>>スタッシュ化された変更
 
-   ページの左上隅にある「**[!UICONTROL サイドパネルを切り替え]**」をクリックします。
+
+
+
+
+> 
+
+ページの左上隅にある「**[!UICONTROL サイドパネルを切り替え]**」をクリックします。
 
 1. 「[!UICONTROL Assets]」タブを開き、「**[!UICONTROL Connected Assets へのログイン]**」をクリックします。
-1. 資格情報（ユーザー名：`ksaner`、パスワード：`password`）を入力します。このユーザーには、両方の [!DNL Experience Manager] デプロイメントのオーサリング権限があります。
+1. 適切な資格情報を入力します。 このユーザーには、両方の [!DNL Experience Manager] デプロイメントのオーサリング権限があります。
 1. DAM に追加したアセットを検索します。リモートアセットは左側のパネルに表示されます。画像またはドキュメントでフィルタリングしてから、サポートされているドキュメントのタイプでさらにフィルタリングします。`Image` コンポーネント上の画像と `Download` コンポーネント上のドキュメントをドラッグします。
 
    ローカル [!DNL Sites] デプロイメントでは、取得されたアセットは読み取り専用です。[!DNL Sites] コンポーネントが提供するオプションを使用して、取得したアセットを編集できます。コンポーネントによる編集は非破壊的です。
@@ -172,12 +182,10 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 1. ページを公開すると、ページで使用されているアセットの完全なリストが [!DNL Experience Manager] に表示されます。公開時にリモートアセットが正常に取得されることを確認します。取得した各アセットのステータスを確認するには、[非同期ジョブ](/help/operations/asynchronous-jobs.md)ユーザーインターフェイスをご覧ください。
 
    >[!NOTE]
-   >
-   >1 つ以上のリモートアセットが取得されない場合でも、ページは公開されます。リモートアセットを使用するコンポーネントは空で公開されます。[!DNL Experience Manager] 通知領域では、非同期ジョブページに表示されるエラーの通知を確認できます。
+   1 つ以上のリモートアセットが取得されない場合でも、ページは公開されます。リモートアセットを使用するコンポーネントは空で公開されます。[!DNL Experience Manager] 通知領域では、非同期ジョブページに表示されるエラーの通知を確認できます。
 
 >[!CAUTION]
->
->Web ページで使用すると、取得したリモートアセットは、ローカルフォルダーへのアクセス権限を持つユーザーが検索および使用できます。取得したアセットは、ローカルフォルダー（上のウォークスルーの `connectedassets`）に保存されます。これらのアセットは、ローカルリポジトリでも[!UICONTROL コンテンツファインダー]経由で検索および表示できます。
+Web ページで使用すると、取得したリモートアセットは、ローカルフォルダーへのアクセス権限を持つユーザーが検索および使用できます。取得したアセットは、ローカルフォルダー（上のウォークスルーの `connectedassets`）に保存されます。これらのアセットは、ローカルリポジトリでも[!UICONTROL コンテンツファインダー]経由で検索および表示できます。
 
 取得されたアセットは他のローカルアセットと同じように使用できます。ただし、関連するメタデータは編集できません。
 
