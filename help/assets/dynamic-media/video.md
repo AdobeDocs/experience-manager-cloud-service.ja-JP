@@ -4,14 +4,14 @@ description: Dynamic Media でビデオを使用する方法について説明�
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
 workflow-type: tm+mt
-source-wordcount: '9497'
+source-wordcount: '9427'
 ht-degree: 80%
 
 ---
 
-# ビデオ{#video}
+# ビデオ {#video}
 
 ここでは、Dynamic Media でのビデオの操作方法について説明します。
 
@@ -37,7 +37,6 @@ ht-degree: 80%
    * ビデオ処理プロファイルを、プライマリソースビデオのアップロード先となる 1 つ以上のフォルダーに関連付けます。
 
       * [ビデオプロファイルをフォルダーに適用します](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders)。
-      * [処理プロファイルを使用するためのデジタルアセットの整理におけるベストプラクティス](/help/assets/dynamic-media/best-practices-for-file-management.md)に関する詳細
       * [デジタルアセットの整理](/help/assets/organize-assets.md)の詳細をご覧ください。
    * フォルダーにプライマリソースビデオをアップロードします。フォルダーにビデオを追加すると、そのフォルダーに割り当てたビデオ処理プロファイルに従ってビデオがエンコードされます。
 
@@ -54,9 +53,7 @@ ht-degree: 80%
 
    * ビデオアセットを整理、参照および検索します。
 
-      * [デジタルアセッ](/help/assets/organize-assets.md)
-トの整理処理プロファ [イルを使用するためのデジタルアセットの整理のベストプラクティスに関する詳細](/help/assets/dynamic-media/best-practices-for-file-management.md)
-
+      * [デジタルアセットの整理](/help/assets/organize-assets.md)
       * [ビデオアセットの検](/help/assets/search-assets.md#custompredicates) 索またはア [セットの検索](/help/assets/manage-digital-assets.md#search-assets)
    * ビデオアセットをプレビューして公開します。
 
@@ -64,41 +61,27 @@ ht-degree: 80%
          [ビデオのプレ](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ビューまた [はアセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)
          [ビデオレンディションの管理](/help/assets/manage-digital-assets.md#managing-renditions)
 
+      * [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)
+      * [アセットの発行](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * ビデオのメタデータを操作します。
 
-<!-- Commented video-renditions.md as the file is not published yet and will lead to broken link.
-        * View the source video and encoded renditions of the video along with its associated thumbnails:
-          [Previewing videos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) or [Previewing assets](/help/assets/dynamic-media/previewing-assets.md)
-          [Viewing video renditions](/help/assets/video-renditions.md)
-          [Managing video renditions](/help/assets/manage-digital-assets.md#managing-renditions) -->
+      * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
+         [ビデオプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
 
-    * [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)
-    * [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-    
-    * ビデオのメタデータの操作
+      * [デジタルアセット用のメタデータの管理](/help/assets/manage-metadata.md)
+      * [メタデータスキーマ](/help/assets/metadata-schemas.md)
+   * ビデオをレビューおよび承認し、注釈を付け、完全なバージョン管理を維持します。
 
-<!--      * View the properties of an encoded video rendition such as frame rate, audio and video bitrate, and codec:
-          [Viewing video rendition properties](/help/assets/video-renditions.md) -->
+      * [ビデオへの注釈](/help/assets/manage-video-assets.md#annotate-video-assets) の追加また [はアセットへの注釈の追加](/help/assets/manage-digital-assets.md#annotating)
 
-    * ビデオのタイトル、説明、タグ、カスタムメタデータフィールドなどのプロパティの編集：
-    [ビデオのプロパテのを編集](/help/assets/manage-digital-assets.md#editing-properties)
-    
-    * [デジタルアセットのメタデータの管理](/help/assets/manage-metadata.md)
-    * [メタデータスキーマ](/help/assets/metadata-schemas.md)
-    
-    * ビデオのレビュー、承認、注釈付け。完全なバージョン管理
-    
-    * [ビデオの注釈付け](/help/assets/manage-video-assets.md#annotate-video-assets) または [アセットの注釈付け](/help/assets/manage-digital-assets.md#annotating)
-    
-    * [バージョンの作成](/help/assets/manage-digital-assets.md#asset-versioning)
-    * [アセットでのワークフローの開始](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
+      * [バージョンの作成](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [アセットでのワークフローの開始](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-<!-- Removing assets-workflow.md file link as it is not applicable anymore. Workflows are replaced by processing profiles.
-        * [Creating a version](/help/assets/manage-digital-assets.md#asset-versioning)
-        * [Applying workflows to assets](/help/assets/assets-workflow.md) or see [Starting a workflow on an asset](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
--->
+      * [フォルダーのアセットのレビュー](/help/assets/bulk-approval.md)
+      * [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
 
-    * [フォルダーアセットのレビュー](/help/assets/bulk-approval.md)
-    * [プロジェクト](/help/sites-cloud/authoring/projects/overview.md)
+
+
 
 1. 次のいずれかの操作を行って、**Dynamic Media ビデオを公開します。**
 

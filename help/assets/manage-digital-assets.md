@@ -3,12 +3,12 @@ title: デジタルアセットの管理
 description: 様々なアセット管理および編集方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-feature: アセット管理、公開、共同作業、アセット処理
+feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '4550'
+source-wordcount: '4543'
 ht-degree: 98%
 
 ---
@@ -531,8 +531,6 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
    レンダリングされた PDF ファイルの外観を変更するには、Configuration Manager から&#x200B;**[!UICONTROL 注釈 PDF の設定]**&#x200B;を開き、必要なオプションを変更します。例えば、コメントとステータスのフォントカラー、サイズ、スタイル、背景色を変更できます。例えば、承認済みステータスの表示色を変更したり、対応フィールドのカラーコードを変更したりします。注釈のフォントカラーの変更について詳しくは、[注釈](/help/assets/manage-digital-assets.md#annotating)を参照してください。
-
-   ![chlimage_1-248](assets/chlimage_1-248.png)
 
    レンダリングされた PDF ファイルに戻り、更新します。更新された PDF に、変更が反映されています。
 

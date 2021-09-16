@@ -4,12 +4,13 @@ description: アセットワークフローとImageMagickを使用して、新�
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-source-git-commit: 1152ce8be74b5049d4c28cb49d925f55fb09585b
+source-git-commit: 7e82c3c5490c2f6d43167e6784cdbbb60f811a6f
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 8%
 
 ---
+
 
 # Adobe InDesign用の配置専用レンディションを生成 {#fpo-renditions}
 
@@ -20,7 +21,9 @@ Experience Managerの大きなサイズのアセットをAdobe InDesignドキュ
 Experience Manageras aCloud Serviceは、FPOレンディションを生成するためのクラウドネイティブなアセット処理機能を提供します。 レンディションの生成にアセットマイクロサービスを使用する。 新しくアップロードされたアセットと、アセット内に存在するアセットのレンディションの生成をExperience Managerできます。
 
 FPOレンディションを生成する手順は次のとおりです。
+
 1. [処理プロファイルの作成](#create-processing-profile)を参照してください。
+
 1. Experience Managerを設定し、このプロファイルを使用して[新しいアセット](#generate-renditions-of-new-assets)を処理します。
 1. プロファイルを使用して、既存のアセットを[処理します。](#generate-renditions-of-existing-assets)
 

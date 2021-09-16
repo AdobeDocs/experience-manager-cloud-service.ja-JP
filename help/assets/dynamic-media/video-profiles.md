@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media ビデオプロファイル
 description: Dynamic Media には、事前定義済みのアダプティブビデオエンコーディングプロファイルが最初から付属しています。この標準提供プロファイルの設定は、ユーザーができる限り最高の閲覧エクスペリエンスを得られるように最適化されています。また、ビデオにスマート切り抜きを追加することもできます。
-feature: アセット管理、ビデオプロファイル、レンディション
+feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
-source-wordcount: '3661'
+source-wordcount: '3656'
 ht-degree: 73%
 
 ---
@@ -27,7 +27,8 @@ Dynamic Media には、事前定義済みのアダプティブビデオエンコ
 
 [ビデオエンコーディングのベストプラクティス](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos)を参照してください。
 
-処理プロファイルを使用するためのデジタルアセットの整理のベストプラクティス[も参照してください。](/help/assets/dynamic-media/best-practices-for-file-management.md)
+[処理プロファイルを使用するためのデジタルアセットの編成のベストプラクティス](/help/assets/organize-assets.md)を参照してください。
+
 
 >[!NOTE]
 >
