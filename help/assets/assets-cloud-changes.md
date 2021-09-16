@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 69%
+source-wordcount: '997'
+ht-degree: 68%
 
 ---
 
@@ -64,6 +64,7 @@ ht-degree: 69%
 | [レポートをダウンロード](/help/assets/asset-reports.md) | 非対応 | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)の[ダウンロードレポートを参照してください。 |
 | 製品撮影テンプレート | 非対応 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)の[製品撮影テンプレートを参照してください。 |
 | スマート翻訳 | 非対応 | [スマー](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) ト翻訳は、 as aではサポー [!DNL Experience Manager] トされていま [!DNL Cloud Service]せん。 |
+| WebDAV | 非対応 | 代替策については、[[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md)または[Developer reference material](/help/assets/developer-reference-material-apis.md)を参照してください。 |
 | クラシック UI | 非対応 | タッチ操作対応のユーザーインターフェイスのみ使用できます。 |
 
 >[!MORELIKETHIS]
