@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: baa08b242e83d944bd7474c50e115a7c4b49900d
+source-git-commit: ab2cc4e62886eaf67099d16312d255ea38686c9d
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 68%
@@ -74,7 +74,7 @@ ht-degree: 68%
 >* [非推奨（廃止予定）の機能と削除された機能のリスト](/help/release-notes/deprecated-removed-features.md)
 >* [概要紹介](/help/overview/introduction.md)
 >* [新機能と相違点](/help/overview/what-is-new-and-different.md)
->* [アーキテクチャ](/help/core-concepts/architecture.md)
+>* [アーキテクチャ](/help/overview/architecture.md)
 >* [主要な変更点](/help/release-notes/aem-cloud-changes.md)
 >* [主要な変更点 [!DNL Sites]](/help/sites-cloud/sites-cloud-changes.md)
 >* [ビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
