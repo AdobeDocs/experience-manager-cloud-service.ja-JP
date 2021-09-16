@@ -5,7 +5,7 @@ breadcrumb-title: AEMドキュメントのジャーニー
 user-guide-description: AEMの強力で柔軟なヘッドレス機能、その機能、およびプロジェクトでの活用方法を示すガイド付きのジャーニーについては、ここから始めてください。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: de797ba7a59afa911a5a0d719b4b905d6cfcbad4
+source-git-commit: 737e03d283d5ae3d7df5b3c1ef85cf94e1e9cd45
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 16%
@@ -60,13 +60,13 @@ Please note that all links to other guides need to be absolute references with l
       + [コンテンツを翻訳](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/translate-content.html)
       + [翻訳コンテンツの公開](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/translation/publish-content.html)
    + ヘッドレスコンテンツ作成者ジャーニー{#author}
-      + [AEMヘッドレスコンテンツ作成者ジャーニー — 概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.md)
-      + [ヘッドレス向けのAEMを使用したオーサリング — はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.md)
-      + [AEMを使用したヘッドレス向けのオーサリングの基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.md)
-      + [コンテンツフラグメントでの参照の使用について説明します](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.md)
-      + [コンテンツフラグメントのメタデータの定義とタグ付けについて説明します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.md)
+      + [AEMヘッドレスコンテンツ作成者ジャーニー — 概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/overview.html)
+      + [ヘッドレス向けのAEMを使用したオーサリング — はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/introduction.html)
+      + [AEMを使用したヘッドレス向けのオーサリングの基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/basics.html)
+      + [コンテンツフラグメントでの参照の使用について説明します](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/references.html)
+      + [コンテンツフラグメントのメタデータの定義とタグ付けについて説明します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/author/metadata-tagging.html)
    + ヘッドレスコンテンツアーキテクトジャーニー{#architect}
-      + [AEMヘッドレスコンテンツアーキテクトジャーニーの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.md)
-      + [ヘッドレス向けのコンテンツモデリング(AEM) — はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.md)
-      + [AEMを使用したヘッドレス向けコンテンツモデリングの基本について説明します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.md)
-      + [AEMでのコンテンツフラグメントモデルの作成について説明します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.md)
+      + [AEMヘッドレスコンテンツアーキテクトジャーニーの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/overview.html)
+      + [ヘッドレス向けのコンテンツモデリング(AEM) — はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/introduction.html)
+      + [AEMを使用したヘッドレス向けコンテンツモデリングの基本について説明します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/basics.html)
+      + [AEMでのコンテンツフラグメントモデルの作成について説明します。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/architect/model-structure.html)
