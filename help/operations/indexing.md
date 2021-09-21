@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 10dea59cb196487adc1300b52dd9edc5afb33cb3
+source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 87%
+source-wordcount: '2057'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,9 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 1. Cloud Manager のビルドページで、顧客はインデックス作成ジョブが完了したかどうかを確認できます。新しいバージョンでトラフィックを引き受ける準備ができたら、通知を受け取ります。
 
-1. 制限事項：現在、AEM as a Cloud Service のインデックス管理は、lucene 型のインデックスに対してのみサポートされています。
+1. 制限事項：
+* 現在、AEM as aCloud Serviceのインデックス管理は、luceneタイプのインデックスに対してのみサポートされています。
+* 標準のアナライザーのみがサポートされます（つまり、製品に付属しているアナライザー）。 カスタムアナライザーはサポートされていません。
 
 ## 使用方法 {#how-to-use}
 
