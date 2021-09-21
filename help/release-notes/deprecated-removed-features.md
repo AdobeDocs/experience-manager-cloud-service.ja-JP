@@ -2,10 +2,10 @@
 title: 廃止される機能および削除された機能
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の機能と削除された機能）。
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 6a850b03501c899cf5b91fca9012036cad2a78ef
+source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 79%
+source-wordcount: '559'
+ht-degree: 78%
 
 ---
 
@@ -34,6 +34,7 @@ ht-degree: 79%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | [モデルベースの構造化コンテンツフラグメ](/help/assets/content-fragments/content-fragments-models.md) ントスノー。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
 | [!DNL Assets] | [などのコマンドラ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) インツ `DAM Asset Update` ールの呼び出しを含め、ワークフロー内の特定のワークフロー手順はサポートされていま [!DNL ImageMagick]せん。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
