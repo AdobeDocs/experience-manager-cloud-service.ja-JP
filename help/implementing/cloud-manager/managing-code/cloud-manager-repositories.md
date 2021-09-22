@@ -1,10 +1,10 @@
 ---
 title: Cloud Manager リポジトリー
 description: Cloud Manager リポジトリー
-source-git-commit: f2a93373d6f3d6e92dc170fd98315b5989b2b296
+source-git-commit: 66cc18f0449668f62c416482e27a72ea1baec0a1
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 87%
+source-wordcount: '595'
+ht-degree: 68%
 
 ---
 
@@ -39,9 +39,25 @@ Cloud Manager でリポジトリーを表示および管理するには、次の
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. リポジトリーを選択し、表の右端にあるメニューオプションをクリックして、**リポジトリーの URL をコピー**、**表示と更新**、**削除**&#x200B;のいずれかを選択できます（下図を参照）。
+1. リポジトリを選択し、表の右端にあるメニューオプションをクリックして、リポジトリのURLを&#x200B;**コピー、**&#x200B;表示と更新&#x200B;**、**&#x200B;削除&#x200B;**のいずれかを選択できます（下図を参照）。**
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
+
+## リポジトリの削除 {#delete-repo}
+
+次の手順に従って、Cloud Managerでリポジトリを削除します。
+>[!NOTE]
+>リポジトリを削除すると、次の処理が行われます。
+>1. 削除したリポジトリ名を、今後作成される可能性のある新しいリポジトリで使用できないようにします。 次に示すエラーメッセージがこの場合に表示されます。
+   >*リポジトリー名は組織内で一意にする必要があります。*
+>1. 削除したリポジトリをCloud Managerで使用できなくするため、パイプラインにリンクできなくなります。
+
+
+1. **プログラムの概要**&#x200B;ページで、「**リポジトリー**」タブをクリックし、**リポジトリー**&#x200B;ページに移動します。
+
+1. リポジトリを選択し、テーブルの右端にあるメニューオプションをクリックします。 次の図に示すように、「**削除**」をクリックして、リポジトリを削除します。
+
+   ![](/help/implementing/cloud-manager/assets/repos/delete-repo.png)
 
 
 ## Git サブモジュールのサポート {#git-submodule-support}
