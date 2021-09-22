@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 96%
+source-wordcount: '1031'
+ht-degree: 63%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 96%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### [!DNL Sites] の新機能  {#what-is-new-sites}
+### [!DNL Sites] の新機能 {#what-is-new-sites}
 
-* **[コアコンポーネント 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**：AEM as a Cloud Service には、コアコンポーネントの最新リリースへの自動アップデート機能があります。リリース 2.12.0 では、最新の機能改善がコミュニティからの貢献として含まれています。例えば、[新しい POST フォームハンドラー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data)、カスタムの CSS タグ、JavaScript タグ、メタデータタグを[コンテキスト対応の設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)で組み込む機能、カスタムコンポーネントで Adobe データレイヤーとの統合を簡単に行うための [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components) ユーティリティなどです。リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
+* **[コアコンポーネント2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**:Adobe Experience Manager as a CoreCloud Serviceは、コアコンポーネントの最新リリースに対する自動アップデートのメリットを受けます。リリース2.12.0には、コミュニティが提供する最新の機能強化が含まれています。 改善には、新しいPOSTフォームハンドラー[が含まれます。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data)カスタムCSS、JavaScript、メタデータ[タグをコンテキスト対応設定で含める機能、](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)および[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components)ユーティリティを使用して、カスタムコンポーネントでAdobeデータレイヤーを統合します。 リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
 
-* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 AEM プロジェクトを開始する際の推奨される基盤が改善され、新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを作成](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)するオプション、[プロジェクトの CSS／JS を追加するための新しい拡張ポイント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)が含まれるようになりました。
+* **[プロジェクトアーキタイプ24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**:新しいプロジェクトを開始するための推奨される基盤がExperience Managerになりました。新しい[Adobeクライアントデータレイヤー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、AMPでサイトを配信するオプション、](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)、プロジェクトCSS/JSを追加する新しい[拡張ポイントが追加されました。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)[
 
-* **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：ContextHub オファーターゲティング機能に使用するオーディエンスセグメントを容易に整理、検索、選択するためのオーディエンスフォルダーを作成できます。
+* **[ContextHubフォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**:オーディエンスフォルダーを作成して、ContextHubオファーのターゲティング機能で使用するオーディエンスセグメントを簡単に整理、検索および選択できます。
 
 ## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]を活用したビデオスマートタグ**：AI モデルを活用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報を利用して適切なエクスペリエンスを顧客に提供することに多くの時間を割くことができます。[ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
+* **[!DNL Adobe Sensei]パワービデオスマートタグ付け**:AIモデルを適用して、オブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAMユーザーは、公開されたリッチな情報を使用して、タグの追加に費やす時間を短縮し、時間を増やすことができます。次に、適切なエクスペリエンスを顧客に提供します。 [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
 
 * **Brand Portal の機能強化**：次の新機能などが [!DNL Brand Portal] で利用できます。詳しくは、[[!DNL Brand Portal] リリースノート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html)を参照してください。
 
@@ -38,7 +38,7 @@ ht-degree: 96%
    * ユーザーは[特定のレンディションを選択してダウンロード](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page)できるようになりました。アセットの詳細ページのレンディションパネルで新しいレンディションダウンロードオプションが使用可能です。
    * ゲストユーザーセッションが 15 分でタイムアウトするので、同時使用中のすべてのユーザーにとってエクスペリエンスが向上します。
 
-* **[!DNL Adobe Asset Link]バージョン 2.1**：[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign] 用の [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 拡張機能の新しいバージョンが使用可能になりました。2020 年 10 月にリリースされた最新の [!DNL Adobe Creative Cloud] 2021 アプリケーションとの互換性が追加されました。
+* **[!DNL Adobe Asset Link]バージョン 2.1**：[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign] 用の [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html) 拡張機能の新しいバージョンが使用可能になりました。2020 年 10 月にリリースされた最新の [!DNL Adobe Creative Cloud] 2021 アプリケーションとの互換性が追加されました。
 
 * **[!DNL Assets]WebP ファイルのサポート**：[!DNL Assets] as a Cloud Service では WebP 画像形式をサポートするようになりました。WebP は、Google が作成した新たな画像形式です。WebP ファイル形式の画像は、JPG ファイルや PNG ファイルと見た目に区別がつきませんが、ファイルははるかに小さくなります。アセットのファイルサイズが小さくなると、ページ読み込み時間が改善され、コンテンツクリエーターが Web エクスペリエンスを高速化するのに役立ちます。WebP の使用方法については、[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)を参照してください。
 
@@ -52,27 +52,27 @@ ht-degree: 96%
 
 ### バグ修正 {#bug-fixes-commerce}
 
-* 製品コンソールおよびピッカーでの GraphQL リクエストは、HTTP POST を使用して実行されていました。これは修正されて、Apollo GraphQL クライアントが GraphQL クライアント OSGi 設定に従って GET リクエストをサポートするようになりました（設定済みの場合）。
+* 製品コンソールとピッカーにあったGraphQL要求は、HTTPPOSTを介しておこなわれました。 この問題は、Apollo GraphQLクライアントがGraphQLクライアントOSGi設定の設定に従って、GETリクエストを設定した場合にサポートするようにするために修正されました。
 
-* CIF クラウド設定 UI で、/lib および /apps/ 内の設定に「保存して閉じる」ボタンが表示されていました。これらは読み取り専用なので、UI が修正されて「閉じる」ボタンのみ表示されるようになりました。
+* CIF クラウド設定 UI で、/lib および /apps/ 内の設定に「保存して閉じる」ボタンが表示されていました。しかし、これらのインターフェイスは読み取り専用で、「閉じる」ボタンのみを表示するように修正されたUIです。
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 ### リリース日 {#release-date-cm}
 
-AEM as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020 年 10 月 2 日です。
+Cloud Service2020.10.0としてのExperience ManagerのCloud Managerのリリース日は2020年10月2日です。
 
-### [!DNL Cloud Manager] の新機能  {#what-is-new-cm}
+### [!DNL Cloud Manager] の新機能 {#what-is-new-cm}
 
 * 環境ページのデザインが変更されました。
 
 * 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
 
-* Cloud Manager ビルドコンテナで、Java 8 または Java 11 を使用したプロジェクトのコンパイルがサポートされるようになりました。Java 11 のサポートは、Maven ツールチェーンシステムによって提供されます。
+* Cloud Managerの「ビルドコンテナ」で、Java™ 8またはJava™ 11を使用したプロジェクトのコンパイルがサポートされるようになりました。 Java™ 11のサポートは、Mavenツールチェーンシステムによって提供されます。
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
-* 概要ページの環境カードには、最大 3 環境のリストが表示されます。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
+* 概要ページの環境カードに、最大3つの環境が表示されるようになりました。 「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
 詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
@@ -85,13 +85,13 @@ AEM as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020 �
 
 * コード品質プロセスで特定のエラーが発生すると、ログファイルが正しく生成されない場合があります。
 
-* 新しいプログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
+* プログラムを作成する際に、推奨名が既存のプログラム名と重複する場合がありました。
 
 * 一部の大規模なパイプラインステップログは、ユーザーインターフェイスから一貫性のある方法でダウンロードできませんでした。
 
 * 環境名の検証が、1 つずれていました。
 
-* 何も存在しない場合、環境ページにパブリッシュセグメントと Dispatcher セグメントが表示されることがありました。
+* 何も存在しない場合、環境ページにパブリッシュセグメントとDispatcherセグメントが表示されることがありました。
 
 ## Adobe Experience Manager as a Cloud Service の基盤 {#cloud-service-foundation}
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020 �
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-この節では、[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリース v1.1.12 の新機能と更新点について説明します。
+[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリースv1.1.12の新機能と更新点について詳しくご覧ください。
 
 ### 新機能 {#what-is-new-ctt}
 
@@ -109,4 +109,4 @@ AEM as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020 �
 
 ### バグ修正 {#ctt-bug-fixes}
 
-* 移行セットに含まれているパスのファイル名が部分的に似ている場合、コンテンツ転送ツールがコンテンツファイルをスキップしていました。この問題が修正されました。
+* 移行セットに一部類似したファイル名を持つパスが含まれている場合、コンテンツ転送ツールはコンテンツファイルをスキップしていました。

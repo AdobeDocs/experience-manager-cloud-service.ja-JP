@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
-source-git-commit: 6a81e04a7de657d222cdd965fb6e2d4351b4c338
+exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
+source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 44%
+source-wordcount: '1355'
+ht-degree: 61%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
@@ -36,13 +36,13 @@ ht-degree: 44%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] の新機能  {#what-is-new-sites}
+### [!DNL Sites] の新機能 {#what-is-new-sites}
 
 * 近日中に、新しい[プレビュー層](/help/sites-cloud/authoring/fundamentals/previewing-content.md)でコンテンツを検証して、パブリッシュ層と同じように最終的なエクスペリエンスのルックアンドフィールをシミュレートできます。 これは、AEM Sites Managed Publishionウィザードで有効になり、公開またはプレビューのどちらかの公開先を選択できるようになりました。 プレビュー時のエクスペリエンスは、専用のURLからアクセスできます。 プレビューでの検証後、通常どおりコンテンツをオーサーからパブリッシュに公開できます。 AEM as a Cloud Service環境でのPreview Serviceの有効化は、今後数週間で徐々に展開される予定です。
 
 ## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] の新機能  {#what-is-new-assets}
+### [!DNL Assets] の新機能 {#what-is-new-assets}
 
 * リンク共有機能を使用して、共有したアセットをダウンロードできます。 このダウンロードでは、非同期サービスを使用するようになり、非常に大きなダウンロードでも、高速で中断のないダウンロードを提供します。 詳しくは、「[アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)」を参照してください。
 
@@ -60,68 +60,41 @@ ht-degree: 44%
 
    ![フォルダー内のアセット数がインターフェイスに表示されます](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
+### [!DNL Assets] で修正されたバグ {#assets-bugs-fixed}
 
 * 非常に大きなファイルをアップロードすると、[!DNL Experience Manager desktop app]がクラッシュします。 （CQ-4320942）
 * フォルダー内で同じコレクションが選択されている場合と、検索結果から同じコレクションが選択されている場合で、ツールバーのオプションは異なります。 （CQ-4321406）
 
 #### Dynamic Mediaの新機能 {#what-is-new-dm}
 
-* スマートイメージングDPR(Device Pixel Ratio)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 詳しくは、[スマートイメージングのFAQ](/help/assets/dynamic-media/imaging-faq.md)を参照してください。
-
-   >[!NOTE]
-   >
-   >上記のスマートイメージング機能強化のリリースタイムラインは、次のとおりです。
-   >
-   >* 北米2021年5月24日、NA、
-      >
-      >
-   * ヨーロッパ、中東、アフリカ2021年6月25日、
-      >
-      >
-   * アジア太平洋2021年7月19日。
-
-
-* Dynamic Media配信で、次世代画像形式AVIFのサポートが導入されました（fmt URL修飾子）。
-
-   >[!NOTE]
-   >
-   >AVIFサポートのリリースタイムラインは次のとおりです。
-   >
-   >* 北米2021年5月10日、
-      >
-      >
-   * ヨーロッパ、中東、アフリカ2021年5月24日、
-      >
-      >
-   * アジア太平洋2021年6月24日。
-
+* スマートイメージングDPR(Device Pixel Ratio)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 詳しくは、[スマートイメージングFAQ](/help/assets/dynamic-media/imaging-faq.md)および[次世代画像形式を使用した画像の最適化（WebPおよびAVIFを使用）を参照してください。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Dynamic Media配信で、次世代の画像形式AVIFのサポートが導入されました（fmt URL修飾子）。
 
 ## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms}
+### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **コンテキストヘルプ**:アダプティブフォームエディター、テンプレートエディター、テーマエディターのコンテキストヘルプを追加し、作成者がエディターの様々な機能をより深く理解できるようにしました。
-* **プロパティブラウザーのエラーメッセージ**:アダプティブFormsのプロパティブラウザーで、各プロパティに関するエラーメッセージを追加しました。これらのメッセージは、フィールドの許可値を理解するのに役立ちます。
+* **コンテキストヘルプ**：アダプティブフォームエディター、テンプレートエディター、テーマエディターのコンテキストヘルプが追加され、作成者がエディターの様々な機能をより深く理解できるようになりました。
+* **プロパティブラウザーのエラーメッセージ**：アダプティブフォームのプロパティブラウザーに各プロパティのエラーメッセージが追加されました。これらのメッセージは、フィールドに使用できる値を理解するのに役立ちます。
 
-### [!DNL Forms]の今後のベータ版機能 {#what-is-new-forms-prerelease}
+### [!DNL Forms] の今後リリース予定のベータ版機能 {#what-is-new-forms-prerelease}
 
-as a Cloud Serviceの出力：出力サービスを使用すると、XDPテンプレートとXMLデータを組み合わせて様々な形式の印刷ドキュメントを生成できます。 このサービスを使用すると、同期および非同期のバッチモードでドキュメントを生成できます。 出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
+Output as a Cloud Service：Output サービスでは、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期のバッチモードでドキュメントを生成できます。出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
 
 * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する
-* 非インタラクティブPDF印刷ストリームを含む様々な形式で出力フォームを生成します。
+* 非インタラクティブ PDF 印刷ストリームを含む様々な形式の出力フォームを生成する
 * XFA フォームの PDF ファイルから印刷用 PDF を生成する
 
-ベータ版プログラムに新規登録する場合は、 formscsbeta@adobe.comまでお書きください。
+ベータ版プログラムに新規登録するには、formscsbeta@adobe.com 宛てに電子メールを送信します。
 
-### [!DNL Forms] で修正されたバグ  {#forms-bugs-fixed}
+### [!DNL Forms] で修正されたバグ {#forms-bugs-fixed}
 
-* AEM Forms Workflowsの「タスクの割り当て」手順で、アクションボタンのデフォルトのアイコンをCoralアイコンに置き換えると、ワークフローは動作を停止し、例外がログに記録されます。 デフォルトのアイコンが使用されている場合、ワークフローは期待どおりに実行されます。
-* レイアウトレイヤーで、列数を変更し、編集レイヤーを開いて、パネル内の一部のコンポーネントをドラッグすると、青い四角いボックスがアダプティブフォームエディターのコンテンツ領域に表示され、エディターが応答しなくなります。
-* アダプティブアセットまたは外部アセットのURLの提供に関連するルールエディターオプションのエラーメッセージが長すぎて、使いやすいものではありません。
+* AEM Forms ワークフローの「タスクを割り当て」ステップで、アクションボタンのデフォルトのアイコンを Coral アイコンに置き換えると、ワークフローが動作しなくなり、例外がログに記録されます。デフォルトのアイコンが使用されている場合、ワークフローは想定どおりに実行されます。
+* レイアウトレイヤーで、列数を変更し、編集レイヤーを開いて、パネル内の一部のコンポーネントをドラッグすると、青いボックスがアダプティブフォームエディターのコンテンツ領域に表示されるようになり、エディターが応答しなくなります。
+* アダプティブアセットまたは外部アセットの URL の指定に関連するルールエディターオプションのエラーメッセージが長すぎて、使いやすくありません。
 
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager  {#cloud-manager}
 
 この節では、AEM as a Cloud Service 2021.5.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
