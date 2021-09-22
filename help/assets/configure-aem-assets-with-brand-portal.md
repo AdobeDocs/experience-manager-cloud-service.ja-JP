@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2402'
 ht-degree: 98%
 
 ---
@@ -59,6 +59,8 @@ Brand Portal は、AEM Assets as a [!DNL Cloud Service] のインスタンス用
 >IMS 組織（org1-existing）に既存の Brand Portal のクラウド設定（[Adobe 開発者コンソールを使用して手動で設定](#manual-configuration)）があり、AEM Assets as a [!DNL Cloud Service]インスタンスが別の IMS 組織（org2-new）に設定されている場合、Cloud Manager から Brand Portal のライセンス認証を行うと、Brand Portal IMS 組織が `org2-new` にリセットされます。`org1-existing` で手動で設定したクラウド設定は、AEM Assets のオーサーインスタンスには表示されますが、Cloud Manager で Brand Portal をアクティベートすると使用できなくなります。
 >
 >既存の Brand Portal クラウド設定と AEM Assets as a [!DNL Cloud Service] インスタンスが同じ IMS 組織（org1）を使用している場合は、Cloud Manager から Brand Portal をライセンス認証するだけで済みます。
+>
+>自動生成された設定は変更しないでください。
 
 **関連トピック**:
 * [AEM Assets as a Cloud Service でのユーザーと役割を追加する](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)
