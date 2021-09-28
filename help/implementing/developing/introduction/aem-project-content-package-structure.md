@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 798cd0f459b668dc372a88773ed6221927e7d02e
 workflow-type: tm+mt
-source-wordcount: '2869'
-ht-degree: 100%
+source-wordcount: '2880'
+ht-degree: 99%
 
 ---
 
@@ -70,6 +70,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `/apps/settings`
    + ACL（権限）
       + `/apps` の配下にある任意のパスの任意の `rep:policy`
+   + [バンドル済みの事前コンパイルスクリプト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + `ui.config` パッケージには、すべての [OSGi](/help/implementing/deploying/configuring-osgi.md) 設定が含まれます。
    + 実行モード固有の OSGi 構成定義を含む組織フォルダー
