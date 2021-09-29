@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 4c747623df70b30f4cd6c6bf6bbb950851469091
+source-git-commit: 6e8ea8c4db2004ed26ee0cd6c5c3d047c3a1815b
 workflow-type: tm+mt
-source-wordcount: '2057'
+source-wordcount: '2061'
 ht-degree: 85%
 
 ---
@@ -73,7 +73,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 >[!NOTE]
 >
->Jackrabbit Filevault Maven パッケージプラグインバージョン **1.1.0** には既知の問題があり、`<packageType>application</packageType>` のモジュール `oak:index` に追加できません。この問題に対処するには、バージョン **1.0.4 を使用してください**。
+>Jackrabbit Filevault Maven パッケージプラグインバージョン **1.1.0** には既知の問題があり、`<packageType>application</packageType>` のモジュール `oak:index` に追加できません。そのプラグインのより新しいバージョンに更新する必要があります。
 
 インデックス定義は、カスタムおよびバージョン付きとしてマークされるようになりました。
 
