@@ -2,10 +2,10 @@
 title: 'サンドボックスプログラムの概要 '
 description: サンドボックスプログラムの概要
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 42c565c8c5a3300b95a9153cb402cdb3e847f6a2
+source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 91%
+source-wordcount: '320'
+ht-degree: 85%
 
 ---
 
@@ -19,9 +19,12 @@ ht-degree: 91%
 
 サンドボックスで作成された環境は、自動スケール用に設定されません。したがって、パフォーマンスや負荷テストには適しません。
 
-サンドボックスプログラムには[!DNL Sites]と[!DNL Assets]が含まれ、Gitリポジトリ、開発環境、非実稼動パイプラインが自動入力されます。  Git リポジトリーには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
+サンドボックスプログラムには [!DNL Sites] と [!DNL Assets] が含まれ、Git リポジトリ、開発環境、非実稼動パイプラインで自動入力されます。  Git リポジトリーには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
 
-プログラムタイプの詳細については、プログラムとプログラムタイプについてを参照してください。
+>[!NOTE]
+>カスタムドメインと IP許可リストは、サンドボックスプログラムでは使用できません。
+
+プログラムタイプの詳細については、[プログラムとプログラムタイプについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en)を参照してください。
 
 ### サンドボックスプログラムの属性 {#attributes-sandbox}
 
