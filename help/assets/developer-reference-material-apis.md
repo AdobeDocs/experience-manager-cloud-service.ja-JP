@@ -2,12 +2,12 @@
 title: ' [!DNL Assets] の開発者向けリファレンス'
 description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
 contentOwner: AG
-feature: API、Assets HTTP API
+feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f993148a9f678cfdaf0693e4964f02b9163cf2ff
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1430'
 ht-degree: 90%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 90%
 | × | サポートされていない。使用しないでください。 |
 | - | 使用不可 |
 
-| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling / ](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **元のバイナリ** |  |  |  |  |  |  |
 | オリジナルを作成 | ✓ | × | - | × | × | - |
@@ -66,16 +66,16 @@ ht-degree: 90%
 
 ## アセットのアップロード {#asset-upload}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] では、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順を以下に示します。 [!DNL Experience Manager] JVM内ではなく、外部アプリケーションでこれらの手順を実行します。
+[!DNL Experience Manager] as a [!DNL Cloud Service] では、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順を以下に示します。 [!DNL Experience Manager] JVM 内ではなく、外部アプリケーションでこれらの手順を実行します。
 
 1. [HTTP リクエストを送信します](#initiate-upload)。その結果、新しいバイナリをアップロードする意図が [!DNL Experience Manage]r デプロイメントに通知されます。
-1. [開始リクエストで提](#upload-binary) 供される1つ以上のURIにバイナリのコンテンツをPUTします。
+1. [開始リクエストで提供](#upload-binary) される 1 つ以上の URI にバイナリのコンテンツをPUTします。
 1. [HTTP リクエストを送信して、バイナリのコンテンツが正常にアップロードされたことをサーバーに通知します。](#complete-upload)
 
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-[!DNL Experience Manager] JVM内ではなく、外部アプリケーションで上記の手順を実行します。
+[!DNL Experience Manager] JVM 内ではなく、外部アプリケーションで上記の手順を実行します。
 
 このアプローチで、アセットのアップロードをスケーラブルかつより効率的に処理できます。[!DNL Experience Manager] 6.5 と比較した場合の違いは次のとおりです。
 
@@ -125,7 +125,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ### バイナリのアップロード {#upload-binary}
 
-アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数のURIを指定した場合、クライアントはバイナリを複数の部分に分割し、各部分のPUTリクエストを各URIに順に送信します。 すべての URI を使用します。各部分のサイズが、開始応答で指定された最小サイズと最大サイズの範囲内に収まっている必要があります。CDN エッジノードを使用すると、要求されたバイナリアップロードを高速化できます。
+アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数の URI を指定した場合、クライアントはバイナリを複数の部分に分割し、各部分のPUTリクエストを各 URI に順におこないます。 すべての URI を使用します。各部分のサイズが、開始応答で指定された最小サイズと最大サイズの範囲内に収まっている必要があります。CDN エッジノードを使用すると、要求されたバイナリアップロードを高速化できます。
 
 これを実現するには、API で提供されるアップロード URI の数に基づいて各部分のサイズを計算する方法があります。例えば、バイナリの合計サイズが 20,000 バイトで、アップロード URI の数が 2 だとします。この場合は次の手順に従います。
 
@@ -154,7 +154,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
-バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。アセットは、アップロードプロセスの完了後に処理されます。アセットのバイナリファイルが完全にアップロードされても、アップロードプロセスが完了していなければ、処理は開始しません。アップロードが成功した場合、サーバーは応答として`200`ステータスコードを返します。
+バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。アセットは、アップロードプロセスの完了後に処理されます。アセットのバイナリファイルが完全にアップロードされても、アップロードプロセスが完了していなければ、処理は開始しません。アップロードに成功した場合、サーバーは応答として `200` ステータスコードを返します。
 
 ### オープンソースアップロードライブラリ {#open-source-upload-library}
 
@@ -185,7 +185,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-以前のバージョンの[!DNL Experience Manager]からアップグレードする場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java APIリファレンスまたはJavadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html)を参照してください。
+以前のバージョンの [!DNL Experience Manager] からアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java API リファレンスまたは Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) を参照してください。
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 

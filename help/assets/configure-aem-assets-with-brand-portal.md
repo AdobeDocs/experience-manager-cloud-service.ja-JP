@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: ab84fe6c5b1ea16de2b4dff9bf5dc55ba196fb6f
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 98%
@@ -78,7 +78,7 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 ブランドポータルの URL が不明な場合は、次の手順を実行します。
 
-1. [Admin Console](http://adminconsole.adobe.com/)にログインし、「**[!UICONTROL 製品]**」に移動します。
+1. [Admin Console](https://adminconsole.adobe.com/)にログインし、「**[!UICONTROL 製品]**」に移動します。
 1. 左パネルの「**[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**」を選択します。
 1. 「**[!UICONTROL Brand Portal に移動]**」をクリックして、ブラウザーで直接 Brand Portal を開きます。
 

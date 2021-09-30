@@ -3,13 +3,13 @@ title: デジタルアセットのメタデータの管理
 description: メタデータのタイプと、 [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager]  でメタデータに基づいてアセットを自動的に整理および処理できる方法について説明します。
 contentOwner: AG
 mini-toc-levels: 1
-feature: アセット管理、メタデータ
+feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 100%
+source-wordcount: '1854'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * Album - [!DNL Adobe Photoshop Album]。
 * CQ - [!DNL Experience Manager Assets] で使用。
 * DAM - [!DNL Experience Manager Assets] で使用。
-* DEX - [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) は、Windows オペレーティングシステム向けのメタデータおよびファイル管理向けのツールのコレクションです。
+* DEX - [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) は、Windows オペレーティングシステム向けのメタデータおよびファイル管理向けのツールのコレクションです。
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/jp/camera-raw/using/introduction-camera-raw.html)。
 * LR - [!DNL Adobe Lightroom]。
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
@@ -231,5 +231,5 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 >[!MORELIKETHIS]
 >
 >* [XMP メタデータ](xmp-metadata.md)
-* [メタデータの編集と追加](meta-edit.md)
+>* [メタデータの編集と追加](meta-edit.md)
 
