@@ -5,9 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 8ee0eef4a46b2e2ebe0e94812db68e369bc0dfd0
+source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1039'
 ht-degree: 93%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 93%
    + [ログ](developing/introduction/logging.md)
    + [設定と設定ブラウザー](developing/introduction/configurations.md)
    + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
-   + [APIリファレンス資料](/help/implementing/developing/reference-materials.md)
+   + [API リファレンス資料](/help/implementing/developing/reference-materials.md)
    + [サーバー側 API のアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
@@ -170,7 +170,7 @@ ht-degree: 93%
          + [コンテンツフラグメント GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=ja)
          + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ja)
          + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ja)
-   + ハイブリッドおよびSPA AEMの開発{#hybrid}
+   + ハイブリッドおよびSPA AEMの開発 {#hybrid}
       + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
       + [SPA の概要およびガイド](developing/hybrid/introduction.md)
@@ -192,6 +192,7 @@ ht-degree: 93%
       + [ローンチの統合](developing/hybrid/launch-integration.md)
       + [SPA リファレンスドキュメント](developing/hybrid/reference-materials.md)
 + 開発者ツール {#developer-tools}
+   + [開発者モード](/help/implementing/developing/tools/developer-mode.md)
    + [AEM Developer Tools for Eclipse ](/help/implementing/developing/tools/eclipse.md)
    + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
@@ -212,9 +213,9 @@ ht-degree: 93%
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
    + [レンダリングコンポーネントのコンテンツフラグメントの設定](developing/extending/content-fragments-configuring-components-rendering.md)
-   + 検索の管理Forms {#manage-search-forms}
+   + 検索を管理Forms {#manage-search-forms}
       + [検索フォームの設定](developing/extending/search-forms.md)
-      + [インボックス用の検索フィルターの設定](developing/extending/configure-inbox-search-rail.md)
+      + [インボックスの検索フィルターの設定](developing/extending/configure-inbox-search-rail.md)
    + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
    + [RTE プラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [アクセシブルなサイトの作成に向けた RTE の設定](/help/implementing/developing/extending/rte-accessible-content.md)
@@ -222,15 +223,15 @@ ht-degree: 93%
    + [AEM as a Cloud Service へのデプロイ](deploying/overview.md)
    + [AEM バージョンのアップデート](deploying/aem-version-updates.md)
    + [AEM as a Cloud Service の OSGi の設定](deploying/configuring-osgi.md)
-   + [OSGi設定API](deploying/osgi-configuration-api.md)
+   + [OSGi 設定 API](deploying/osgi-configuration-api.md)
 + オーサー層 {#author-tier}
    + [オーサー層へのアクセス](/help/implementing/author-tier/accessing-the-author-tier.md)
    + [オーサー層の保護](/help/implementing/author-tier/securing-the-author-tier.md)
 + コンテンツ配信の概要 {#content-delivery}
    + [コンテンツ配信フロー](dispatcher/overview.md)
    + [クラウド内の Dispatcher](dispatcher/disp-overview.md)
-   + [Dispatcherツールを使用した検証とデバッグ](dispatcher/validation-debug.md)
-   + [AMSからAEM as aCloud ServiceへのDispatcher設定の移行](dispatcher/ams-aem.md)
-   + [Dispatcherツールを使用した検証とデバッグ（従来）](dispatcher/validation-debug-legacy.md)
+   + [Dispatcher ツールを使用した検証とデバッグ](dispatcher/validation-debug.md)
+   + [AMS からAEM as aCloud Serviceへの Dispatcher 設定の移行](dispatcher/ams-aem.md)
+   + [Dispatcher ツールを使用した検証とデバッグ（従来）](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service での CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service でのキャッシュ](dispatcher/caching.md)
