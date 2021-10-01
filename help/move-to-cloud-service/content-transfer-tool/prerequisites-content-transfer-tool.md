@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの前提条件
 description: コンテンツ転送ツールの前提条件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: 40f27004e82266d363f034bb9d2858b8f3a4958d
+source-git-commit: 2c0874ca14b9dd91ef62f2af85a9961b07c1b60b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +24,14 @@ ht-degree: 13%
 
 | 検討事項 | 現在サポートされている内容 |
 |--- |--- |
-| AEM のバージョン | コンテンツ転送ツールは、AEM 6.3以降のバージョンでのみ実行できます。 AEM 6.2以前のバージョンでコンテンツ転送ツールを使用するには、コンテンツリポジトリをAEM 6.5にインプレースアップグレードする必要があります。 このためにコードをAEM 6.5にアップグレードする必要はありません。 |
-| セグメントストアのサイズ | 現在、5,500万個未満のJCRノードと、*オーサー*&#x200B;上で最大83 GB（オンライン圧縮サイズ）、*パブリッシュ*&#x200B;上で最大31 GBの既存のリポジトリがサポートされています。 サポートチケットを作成し、Adobeカスタマーケアと共に、これらの制限を超えるセグメントストアのサイズに関するオプションについて話し合います。 |
-| コンテンツリポジトリの合計サイズ&#x200B;<br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大10 TBのコンテンツを転送するように設計されています。 10 TBを超える値は、現在はサポートされていません。 10 TBを超えるコンテンツのオプションについて話し合うために、Adobeカスタマーケアとサポートチケットを作成します。 <br>Amazon S3およびAzure Data Storeタイプのデータストアの場合は、オプションのpre-copystepを使用し [て、コンテンツ転送プロセスを大幅に高速化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) し、10 TBを超えるサイズのデータストアをサポートできます。 |
-| 合計インデックスサイズ | 現在、最大25 GBの合計インデックスサイズがサポートされています。 この制限を超えるインデックスサイズのオプションについては、Adobeカスタマーケアとサポートチケットを作成してご相談ください。 |
-| ノード名の長さ | ノード名の長さは150バイト以下にする必要があります。 AEMのドキュメントノードストアでCloud Serviceとしてサポートされるように、150バイトを超えるノード名を短くして150バイト未満にする必要があります。 これらの長いノード名が修正されていない場合、取り込みは失敗します。 |
-| 不変パスのコンテンツ | コンテンツ転送ツールを使用して不変パスのコンテンツを移行することはできません。 コンテンツを`/etc`から転送するには、特定の`/etc`パスのみを選択できますが、[AEM FormsをCloud ServiceとしてAEM Formsにサポートするには](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets)のみを選択します。 その他の使用例については、 [一般的なリポジトリ再構築](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring)を参照して、リポジトリ再構築の詳細を確認してください。 |
+| AEM のバージョン | コンテンツ転送ツールは、AEM 6.3 以降のバージョンでのみ実行できます。 AEM 6.2 以前のバージョンでコンテンツ転送ツールを使用するには、コンテンツリポジトリをAEM 6.5 にインプレースアップグレードする必要があります。 このためにコードをAEM 6.5 にアップグレードする必要はありません。 |
+| セグメントストアのサイズ | 現在、5,500 万個未満の JCR ノードと、最大 83 GB（オンライン圧縮サイズ）の *オーサー* 上、最大 31 GB の *パブリッシュ* 上の既存のリポジトリがサポートされています。 サポートチケットを作成し、Adobeカスタマーケアと共に、これらの制限を超えるセグメントストアのサイズに関するオプションについて話し合います。 |
+| コンテンツリポジトリの合計サイズ <br>*（セグメントストア+データストア）* | コンテンツ転送ツールは、ファイルデータストアタイプのデータストアに対して最大 10 TB のコンテンツを転送するように設計されています。 現在、10 TB を超える容量はサポートされていません。 10 TB を超えるコンテンツのオプションについて話し合うために、Adobeカスタマーケアとサポートチケットを作成します。 <br>Amazon S3 および Azure Data Store タイプのデータストアの場合、オプションの pre-copystep を使用して、コンテンツ転送プロセスを大幅に高速化で [き、10 TB を超えるサイズのデータストアをサポートできま](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#setting-up-pre-copy-step) す。 |
+| 合計インデックスサイズ | 現在、最大 25 GB の合計インデックスサイズがサポートされています。 サポートチケットを作成し、Adobeカスタマーケアと共に、この制限を超えるインデックスサイズのオプションについて話し合います。 |
+| ノード名の長さ | ノード名の長さは 150 バイト以下にする必要があります。 AEMのドキュメントノードストアでCloud Serviceとしてサポートされるように、150 バイトを超えるノード名を &lt;= 150 バイトに短縮する必要があります。 これらの長いノード名が修正されていない場合、取り込みは失敗します。 |
+| 不変パスのコンテンツ | コンテンツ転送ツールは、不変パスのコンテンツの移行には使用できません。 コンテンツを `/etc` から転送するには、特定の `/etc` パスのみを選択できますが、[AEM FormsをCloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=en#paths-of-various-aem-forms-specific-assets) としてAEM Formsにサポートする場合にのみ選択できます。 その他の使用例については、[ 一般的なリポジトリ再構築 ](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=en#restructuring) を参照して、リポジトリ再構築の詳細を確認してください。 |
+| MongoDB のノードプロパティ値 | MongoDB に格納するノードプロパティの値は 16 MB を超えることはできません。 これは MongoDB によって適用されます。 この制限を超えるプロパティ値がある場合、取り込みは失敗します。 抽出を実行する前に、次の [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) スクリプトを実行します。 すべての大きなプロパティ値を確認し、必要に応じて検証します。 16 MB を超える値は、バイナリ値に変換する必要があります。 |
 
 ## 次の手順 {#whats-next}
 
-前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、コンテンツ転送ツールの使用時に[追加のベストプラクティスと考慮事項](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)を参照してください。
+前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、コンテンツ転送ツールの使用時に [ その他のベストプラクティスと考慮事項 ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md) を参照してください。
