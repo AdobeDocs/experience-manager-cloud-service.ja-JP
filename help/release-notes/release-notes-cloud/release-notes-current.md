@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 49e88e18e17a2675151a11339a01b3ea7b71d555
+source-git-commit: 1062b65da46d85e3777656dbef4b7667b130a6ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 39%
+source-wordcount: '1722'
+ht-degree: 38%
 
 ---
 
@@ -179,19 +179,35 @@ AEM as aCloud Service2021.8.0 の Cloud Manager のリリース日は 2021 年 8
 
 * 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
 
+
+## Cloud Acceleration Manager {#cam}
+
+### リリース日 {#release-date-october-cam}
+
+Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
+
+### 新機能 {#what-is-new-cam}
+
+* Cloud Acceleration Manager で、BPA レポートを印刷可能なプレビューで表示できるようになり、PDF への印刷や印刷が簡単に行え、共有が容易になりました。 [ ベストプラクティス分析カードの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis) の手順 6 と 7 を参照してください。
+
+
 ## コンテンツ転送ツール {#content-transfer-tool}
 
 ### リリース日 {#release-date-ctt-latest}
 
-コンテンツ転送ツール v1.5.6 のリリース日は 2021 年 8 月 11 日です。
+コンテンツ転送ツール v1.6.0 のリリース日は 2021 年 10 月 4 日です。
 
-### バグ修正 {#bug-fixes-ctt}
+### 新機能 {#what-is-new-ctt}
 
-* 場合によっては、一部のユーザーがターゲットインスタンスに移行されないことがあります。 この修正を受けるには、ターゲットAEM上の aem-ethos-tools 1.2.354 以降のバージョンと共に、Cloud Serviceインスタンスとして CTT v1.5.6 が必要です。
+* ユーザーマッピングが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが提供されました。 詳しくは、[ ユーザーマッピングツールの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#using-user-mapping-tool) を参照してください。
+   * ユーザーマッピングを実行する前に、User Management API への接続をテストする
+   * エラーを適切にスキップし、ユーザーマッピングアクティビティを続行します
+   * アクセストークンの有効期限が（24 時間後に）切れても、ユーザーマッピングが失敗しなくなりました。 ユーザーマッピングは、最後に停止した場所から再実行できます。
 
-* パブリッシュインスタンスへの取り込み中に、「**取り込みを停止**」ボタンが無効になっていた問題を修正しました。 公開の取り込み中に Mongo の復元手順がないので、この操作は不要です。
+* CTT の堅牢性を高めるために、コンテンツを一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。
 
-* CTT は、抽出が正常に完了した後に `/tmp` ディレクトリをクリーンアップしませんでした。 これにより、ディスク容量の問題が発生する場合がありました。
+* バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
+
 
 ## ベストプラクティスアナライザー {#best-practices-analyzer}
 
