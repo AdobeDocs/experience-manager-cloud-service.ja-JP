@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 36ead0181ab9d1a0eb874d8e3584df2e4c760f30
+source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 98%
+source-wordcount: '2591'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -87,6 +87,19 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
    >[!NOTE]レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+
+1. 共有しやすいように、**印刷プレビュー** アイコンをクリックします。
+
+   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
+
+1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、共有しやすいようにレポートを PDF 形式で印刷します。
+
+   >[!IMPORTANT]
+   * 上記の機能では、オプション **「PDF として保存**」を使用することをお勧めします。また、このオプションはサポートされています。
+   * ブラウザーの印刷ボタンを使用すると、1 ページだけが印刷されます。
+
+
+   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}
