@@ -2,10 +2,10 @@
 title: ページプロパティの編集
 description: ページに必要なプロパティを定義します
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 34247d8de3dc1a243eaac152b1d2036f9c237303
+source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
-source-wordcount: '1955'
-ht-degree: 97%
+source-wordcount: '1966'
+ht-degree: 93%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 97%
    > 関連する自動レプリケーションの設定方法の詳細は、「[オン／オフ時間 - トリガー構成](/help/operations/replication.md#on-and-off-times-trigger-configuration)」を参照してください。
 
    >[!NOTE]
-   >**オンタイム**&#x200B;または&#x200B;**オフタイム**&#x200B;が過去に設定され、自動レプリケーションが設定されている場合は、関連するアクションが直ちにトリガーされます。
+   >**オンタイム** または **オフタイム** が過去に設定され、自動レプリケーションが設定されている場合は、関連するアクションが直ちにトリガーされます。
 
    * **オンタイム** - 公開されたページがパブリッシュ環境で表示（レンダリング）される日時。ページは、手動または事前設定の自動レプリケーションで公開する必要があります。
 
@@ -101,14 +101,9 @@ ht-degree: 97%
    * **リダイレクト** - このページが自動的にリダイレクトするページを示します。
    * **デザイン** - 結果のサイトのページナビゲーションにページが表示されるかどうかを示します
    * **エイリアス** - このページで使用されるエイリアスを指定します
-
-   >[!NOTE]
-   >
-   >「エイリアス」は、リソースのエイリアス名を定義する `sling:alias` プロパティを設定します（これはリソースにのみ影響を及ぼし、パスには影響しません）。
-   >
-   >例えば、`/content/we-retail/spanish` ノードに `latin-lang` というエイリアスを定義した場合、このページは `/content/we-retail/latin-language` でアクセスできます。
-   >
-   >詳しくは、「SEO と URL 管理のベストプラクティス」の「ページ名のローカライズ」を参照してください。
+      * 例えば、ページ `/content/wknd/us/en/magazine/members-only` に `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` を介してもアクセスできます
+      * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定され、リソースにのみ影響を及ぼし、リポジトリパスには影響を及ぼしません。
+      * エディターでエイリアスによってアクセスされたページは公開できません。 [エディ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -221,9 +216,9 @@ ht-degree: 97%
 
 ### プレビュー {#preview}
 
-プレビュー環境が有効になっている場合は、次の画面が表示されます。
+プレビュー環境が有効な場合は、次の画面が表示されます。
 
-* プレビューURL — プレビュー環境でのコンテンツへのアクセスに使用するURL
+* プレビュー URL — プレビュー環境でのコンテンツへのアクセスに使用する URL
 
 ## ページプロパティの編集 {#editing-page-properties-1}
 
