@@ -2,10 +2,10 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: a6b3ff2ede7046e91562eff1a1eb0d86e5dd6d6f
+source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 95%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -88,18 +88,6 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
 
-1. 共有しやすいように、**印刷プレビュー** アイコンをクリックします。
-
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
-
-1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、共有しやすいようにレポートを PDF 形式で印刷します。
-
-   >[!IMPORTANT]
-   * 上記の機能では、オプション **「PDF として保存**」を使用することをお勧めします。また、このオプションはサポートされています。
-   * ブラウザーの印刷ボタンを使用すると、1 ページだけが印刷されます。
-
-
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 
 #### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}
