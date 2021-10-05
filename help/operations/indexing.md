@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: dd62f1c0a5c679508c3cf8cc8a1460d86a777759
+source-git-commit: 37e0c3865fb5be6c31e6e4bf1faa5666e77303bc
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2155'
 ht-degree: 81%
 
 ---
@@ -218,7 +218,7 @@ Apache Jackrabbit Oak を使用すると、柔軟なインデックス設定で�
 ### AEM as aCloud Serviceの Lucene 全文インデックス
 
 フルテキストインデックス `/oak:index/lucene-2` は、デフォルトでAEMリポジトリ内のすべてのノードのインデックスを作成するので、非常に大きくなる場合があります。  Adobeがこのインデックスを廃止する計画に従い、2021 年 9 月以降は、AEMでCloud Serviceとしてデプロイされなくなります。 したがって、AEM as aCloud Serviceでは製品側で使用されなくなり、顧客コードを実行する必要がなくなりました。 共通の Lucene インデックスを持つCloud Service環境としてのAEMの場合、Adobeは、このインデックスを補い、最適化されたインデックスをより適切に使用するために調整されたアプローチをお客様と個別に行います。 お客様は、Adobeからの通知なしに、何もする必要はありません。 AEM as aCloud Serviceのお客様は、この最適化に関してアクションが必要な場合、Adobeから通知を受けます。 このインデックスがカスタムクエリに必要な場合は、一時的な解決策として、このインデックスのコピーを別の名前（例：[here](/help/operations/indexing.md)）で作成する必要があります。
-`/oak:index/acme.lucene-1-custom-1`この最適化は、オンプレミスでホストされる、または Adobe Managed Services で管理される他のAEM環境には、デフォルトでは適用されません。
+`/oak:index/acme.lucene-1-custom-1`この最適化は、オンプレミスでホストされる他のAEM環境や、Adobe Managed Services で管理される他の環境には、デフォルトでは適用されません。
 
 ## クエリの最適化
 
