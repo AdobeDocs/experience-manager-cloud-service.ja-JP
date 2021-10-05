@@ -1,19 +1,19 @@
 ---
-title: Adobe開発者 App Builder を使用して、Cloud Serviceとして  [!DNL Adobe Experience Manager]  を拡張しています。
-description: Adobe開発者 App Builder を使用して、Cloud Serviceとして  [!DNL Adobe Experience Manager]  を拡張しています。
-source-git-commit: 7b8d214ebba9e8dfc89f7787b0d442752650210e
+title: ' [!DNL Adobe Experience Manager] as a Cloud Serviceを拡張 (Adobe開発者アプリビルダーを使用 )。'
+description: ' [!DNL Adobe Experience Manager] as a Cloud Serviceを拡張 (Adobe開発者アプリビルダーを使用 )。'
+source-git-commit: 9287a40518d7026d5361cb61ab3804583e22450f
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Adobe開発者 App Builder を使用したCloud Serviceとしての [!DNL Adobe Experience Manager] の拡張 {#extend-using-app-builder}
+# [!DNL Adobe Experience Manager]as a Cloud Serviceを拡張 (Adobe開発者アプリビルダーを使用 ) {#extend-using-app-builder}
 
-## AEM as aCloud Serviceの App Builder とは {#project-firefly}
+## AEM as a Cloud Serviceの App Builder とは {#project-firefly}
 
-新しいAdobe開発者アプリビルダーは、開発者がCloud Service機能としてAEMを簡単に拡張できる拡張フレームワークを提供します。
+新しいAdobe開発者アプリビルダーは、AEMas a Cloud Serviceの機能を簡単に拡張できる拡張フレームワークを開発者に提供します。
 
 App Builder は、Adobe Experience Managerを拡張するカスタムエクスペリエンスを統合および作成するための、統合されたサードパーティの拡張フレームワークを提供します。 Adobeのインフラストラクチャに基づいて構築されたこの完全な拡張フレームワークを使用すると、開発者は、カスタムマイクロサービスを構築し、Adobeソリューションとその他の IT スタックをまたいでAdobe Experience Managerを拡張し、統合できます。
 
@@ -42,26 +42,26 @@ App Builder（旧 Project Firefly）は、2020 年夏以降、デベロッパー
 
 ![アーキテクチャ](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
-App Builder のアーキテクチャの詳細については、「[ アーキテクチャの概要 ](https://www.adobe.io/project-firefly/docs/guides/)」を参照してください。
+App Builder のアーキテクチャの詳細については、「[ アーキテクチャの概要 ](https://www.adobe.io/app-builder/docs/guides/)」を参照してください。
 
 ## App Builder の概要 {#additional-resources}
 
 App Builder の使用を開始する際に役立つ一連のドキュメントを作成しました。
 
-* [App Builder はじめに](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [App Builder はじめに](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## ドキュメントで学習を続ける {#appbuilder-documentation}
 
 App Builder には、開発者向けのビデオとドキュメント（ガイドなど）と、独自のカスタムアプリケーションの開発を開始する際に役立つリファレンスドキュメントが用意されています。
 
-* [App Builder ドキュメント](https://www.adobe.io/project-firefly/docs/overview/)
+* [App Builder ドキュメント](https://www.adobe.io/app-builder/docs/overview/)
 * [App Builder ビデオ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## サンプルアプリケーションの 1 つを試してみる {#appbuilder-codesamples}
 
 開発を始める準備は？ 迅速に作業を進めるのに役立つサンプルアプリケーションが多数あります。
 
-* [App Builder コードラボ (Adobe開発者 Web サイト )](https://www.adobe.io/project-firefly/docs/resources/)
+* [App Builder コードラボ (Adobe開発者 Web サイト )](https://www.adobe.io/app-builder/docs/resources/)
 
 ## サポート {#support}
 
