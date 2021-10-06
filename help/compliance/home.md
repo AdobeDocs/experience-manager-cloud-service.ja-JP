@@ -1,27 +1,26 @@
 ---
 title: Compliance
 description: 準拠
-exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 89%
 
 ---
 
-# AEM as aCloud Serviceのコンプライアンス {#aem-compliance}
+# AEM as a Cloud Serviceのコンプライアンス {#aem-compliance}
 
-このページでは、Experience Managerのコンプライアンスに関する情報をCloud Serviceとして提供するセルフヘルプリソースの一覧を示します。
+このページでは、Experience Manageras a Cloud Serviceのコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
 
 ## 概要に関する主要な記事 {#key-articles}
 
 * [データ保護およびデータプライバシーに関する規制に対する の対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [データ保護およびデータプライバシーに関する規制に対する Foundation の対応](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [データ保護およびデータプライバシーに関する規制に対する Sites の対応](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
-* [Webアクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
+* [Web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
 * [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)
 
-## Experience ManagerガイドとしてのCloud Service {#aem-guides}
+## Experience Manageras a Cloud Serviceガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|

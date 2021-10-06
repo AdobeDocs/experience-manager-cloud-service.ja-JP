@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: bacc6335e25387933a1d39dba10c4cc930a71cdb
+source-git-commit: bcb3beb893d5e8aa6d5911866e78cb72fe7d4ae0
 workflow-type: tm+mt
-source-wordcount: '2375'
-ht-degree: 94%
+source-wordcount: '2073'
+ht-degree: 87%
 
 ---
 
@@ -167,90 +167,27 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 アドビはアプリケーションのパフォーマンスを監視し、劣化が観察された場合に対処します。現時点では、アプリケーションの指標を確認できません。
 
-## 出力専用 IP アドレス {#dedicated-egress-ip-address}
-
-AEM as a Cloud Service は要求に応じて、Java コードでプログラムされた HTTP（ポート 80）および HTTPS（ポート 443）送信トラフィック用の静的な専用 IP アドレスを提供します。
-
-### メリット {#benefits}
-
-この専用 IP アドレスは、SaaS ベンダー（CRM ベンダーなど）との統合や、IP アドレスの許可リストをオファーする AEM as a Cloud Service 以外と統合する場合のセキュリティを強化します。専用 IP アドレスを許可リストに追加することで、顧客の AEM Cloud Service からのトラフィックのみが外部サービスに送信されるようになります。これは、その他の許可されている IP からのトラフィックに加えられるものです。
-
-専用 IP アドレス機能を有効にしない場合、AEM as a Cloud Service から出ていくトラフィックは、他の顧客と共有する一連の IP を流れていきます。
-
-### 設定 {#configuration}
-
-専用 IP アドレスを有効にするには、IP アドレス情報を提供するカスタマーサポートにリクエストを送信します。最初のリクエストの後に新しい環境がこの機能を必要とする場合、各環境を指定し、追加でリクエストする必要があります。サンドボックスプログラム環境はサポートされていません。
-
-### 機能の使用 {#feature-usage}
-
-この機能は、プロキシ設定に標準の Java システムプロパティを使用する場合、送信トラフィックを発生させる Java コードまたはライブラリと互換性があります。実際には、これには最も一般的なライブラリが含まれる必要があります。
-
-次にコード例を示します。
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-  URLConnection connection = finalUrl.openConnection();
-  connection.addRequestProperty("Accept", "application/json");
-  connection.addRequestProperty("X-API-KEY", apiKey);
-
-  try (InputStream responseStream = connection.getInputStream(); Reader responseReader = new BufferedReader(new InputStreamReader(responseStream, Charsets.UTF_8))) {
-    return new JSONObject(new JSONTokener(responseReader));
-  }
-}
-```
-
-一部のライブラリでは、プロキシ設定に標準のJavaシステムプロパティを使用するために、明示的な設定が必要です。
-
-Apache HttpClientを使用する例で、
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)または
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
-
-```java
-public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
-  String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
-  URL finalUrl = endpointUri.resolve(relativeUri).toURL();
-
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
-  HttpGet request = new HttpGet(finalUrl.toURI());
-  request.setHeader("Accept", "application/json");
-  request.setHeader("X-API-KEY", apiKey);
-  HttpResponse response = httpClient.execute(request);
-  String result = EntityUtils.toString(response.getEntity());
-}
-```
-
-同じ専用 IP が、Adobe 組織内のすべての顧客プログラムと、各プログラム内のすべての環境に適用されます。オーサーサービスとパブリッシュサービスの両方に適用されます。
-
-HTTP ポートと HTTPS ポートのみがサポートされます。これには、HTTP/1.1 と、暗号化時の HTTP/2 が含まれます。
-
-### デバッグの考慮事項 {#debugging-considerations}
-
-期待される専用 IP アドレスでトラフィックが実際に送信されていることを検証するには、目的のサービスでログを確認します（可能な場合）。それ以外の場合は、呼び出し元の IP アドレスを返す [https://ifconfig.me/ip](https://ifconfig.me/ip) などのデバッグサービスを呼び出すと便利です。
-
 ## 電子メールの送信 {#sending-email}
 
 AEM as a Cloud Service では、送信メールを暗号化する必要があります。以下の節では、電子メールのリクエスト、設定、送信の方法について説明します。
 
 >[!NOTE]
 >
->メールサービスは、OAuth2サポートを使用して設定できます。 詳しくは、[メールサービスのOAuth2サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
+>メールサービスは、OAuth2 サポートを使用して設定できます。 詳しくは、[ メールサービスの OAuth2 サポート ](/help/security/oauth2-support-for-mail-service.md) を参照してください。
 
-### アクセスの申請 {#requesting-access}
+### 送信電子メールの有効化 {#enabling-outbound-email}
 
-デフォルトでは、送信電子メールは無効になっています。有効にするには、以下を含んだサポートチケットを送信します。
+デフォルトでは、送信に使用されるポートは無効になっています。 この機能を有効にするには、[ 高度なネットワーク ](/help/security/configuring-advanced-networking.md) を設定し、必要な環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのポート転送規則を設定して、トラフィックがポート 465（メールサーバーでサポートされている場合）またはポート 587（メールサーバーで TLS が必要な場合）を通じます。
 
-1. メールサーバーの完全修飾ドメイン名（例：`smtp.sendgrid.net`）
-1. 使用するポート。メールサーバーでサポートされている場合は、ポート 465 にしてください。サポートされていない場合は、ポート 587 にします。ポート 587 を使用できるのは、メールサーバーがそのポートで TLS を要求し適用する場合のみです
-1. メールの送信元となる環境のプログラム ID と環境 ID
-1. オーサー、パブリッシュ、またはその両方で SMTP アクセスが必要かどうか
+`kind` パラメーターを `flexiblePortEgress` に設定して、高度なネットワークを設定することをお勧めします。これは、Adobeが柔軟なポート出力トラフィックのパフォーマンスを最適化できるからです。 一意のエグレス IP アドレスが必要な場合は、`kind` パラメータ `dedicatedEgressIp` を選択します。 他の理由で既に VPN を設定している場合は、その高度なネットワーク変数によって提供される一意の IP アドレスも使用できます。
+
+電子メールは、電子メールクライアントに直接送信するのではなく、メールサーバーを通じて送信する必要があります。 そうしないと、E メールがブロックされる場合があります。
 
 ### 電子メールの送信 {#sending-emails}
 
 [Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーに電子メールを送信する必要があります。
 
-AEM CS では、ポート 465 でメールを送信する必要があります。TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
+AEM as a Cloud Serviceでは、ポート 465 を介してメールを送信する必要があります。 TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
 
 >[!NOTE]
 >
@@ -260,7 +197,7 @@ AEM CS では、ポート 465 でメールを送信する必要があります�
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、[AEM 6.5のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)を参照してください。 AEM as a Cloud Service では、`com.day.cq.mailer.DefaultMailService OSGI` サービスに対して次の調整をおこなう必要があります。
+電子メールの設定について詳しくは、[AEM 6.5 のドキュメント ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) を参照してください。 AEM as a Cloud Service では、`com.day.cq.mailer.DefaultMailService OSGI` サービスに対して次の調整をおこなう必要があります。
 
 ポート 465 がリクエストされた場合：
 
@@ -274,6 +211,8 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.tls` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
+メールサービスは、オプションで OAuth2 サポートを使用して設定できます。 詳しくは、[ メールサービスの OAuth2 サポート ](/help/security/oauth2-support-for-mail-service.md) を参照してください。
+
 ## [!DNL Assets] 開発ガイドラインと使用例 {#use-cases-assets}
 
-Cloud ServiceとしてのAssetsの開発の使用例、推奨事項、参考資料については、[Assetsの開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。
+Assets as a Cloud Serviceの開発の使用例、推奨事項、参考資料については、[Assets の開発者向けリファレンス ](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis) を参照してください。

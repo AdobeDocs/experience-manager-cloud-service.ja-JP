@@ -2,9 +2,9 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1cf9834d840709ed340aaef235860d7c6d26c6d5
+source-git-commit: 6548e05850d5499f1ce7d1f23f2cea2adb9d06fd
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2878'
 ht-degree: 99%
 
 ---
@@ -269,7 +269,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
 
 ## サードパーティパッケージの埋め込み {#embedding-3rd-party-packages}
 
-すべてのパッケージは、[アドビが公開している Maven アーティファクトリポジトリー](https://repo.adobe.com/nexus/content/groups/public/com/adobe/)または公開されている参照可能なサードパーティ Maven アーティファクトリポジトリーを通じて入手できる必要があります。
+すべてのパッケージは、[アドビが公開している Maven アーティファクトリポジトリー](https://repo1.maven.org/maven2/com/adobe/)または公開されている参照可能なサードパーティ Maven アーティファクトリポジトリーを通じて入手できる必要があります。
 
 **アドビが公開している Maven アーティファクトリポジトリー**&#x200B;にサードパーティパッケージがある場合、Adobe Cloud Manager でアーティファクトを解決するための設定は、それ以上必要ありません。
 

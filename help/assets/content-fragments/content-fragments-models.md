@@ -4,14 +4,18 @@ description: コンテンツフラグメントモデルが AEM におけるヘ�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c82fdc8245846c4fa5daff898aec109579acc2fc
+source-git-commit: ce6741f886cc87b1be5b32dbf34e454d66a3608b
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 100%
+source-wordcount: '2772'
+ht-degree: 81%
 
 ---
 
 # コンテンツフラグメントモデル {#content-fragment-models}
+
+>[!NOTE]
+>
+>[ ロック（公開）されたコンテンツフラグメントモデル ](#locked-published-content-fragment-models) 機能はベータ版です。
 
 AEM のコンテンツフラグメントモデルは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)のコンテンツ構造を定義するもので、ヘッドレスコンテンツの基盤となります。
 
@@ -126,8 +130,7 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
 フラグメントエディターでは、各インスタンスがタブとして表示されます。
 
       >[!NOTE]
-      >
-      >このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
+      このデータタイプは書式設定にのみ使用され、AEM GraphQL スキーマでは無視されます。
 
 ## プロパティ {#properties}
 
@@ -160,12 +163,10 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    例えば、コンテンツフラグメントモデルの **1 行のテキスト**&#x200B;フィールド `Country` は、2 つの依存するコンテンツフラグメントで同じ `Japan` 値を持つことはできません。2 回目に入力しようとすると、警告が表示されます。
 
    >[!NOTE]
-   >
-   >言語ルートごとに一意性が確保されます。
+   言語ルートごとに一意性が確保されます。
 
    >[!NOTE]
-   >
-   >バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
+   バリエーションは、同じフラグメントのバリエーションと同じ&#x200B;*一意の*&#x200B;値を持つことができますが、他のフラグメントのバリエーションで使用されている値とは異なります。
 
 * 特定のデータタイプとそのプロパティについて詳しくは、**[コンテンツ参照](#content-reference)**&#x200B;を参照してください。
 
@@ -207,17 +208,15 @@ AEM のコンテンツフラグメントモデルは、[コンテンツフラグ
    * 構造化データを包含／取得できます。
 
       >[!NOTE]
-      >
-      >この方法は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
+      この方法は、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
    * （結果のフラグメント内で）1 つまたは複数の参照に対して設定できます。
 
 >[!NOTE]
->
->AEM では次のものの繰り返しを防止できます。
->* コンテンツ参照：
->これにより、現在のフラグメントへの参照を追加できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
->* GraphQL でのフラグメント参照：
->相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
+AEM では次のものの繰り返しを防止できます。
+* コンテンツ参照：
+これにより、現在のフラグメントへの参照を追加できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
+* GraphQL でのフラグメント参照：
+相互に参照される複数のコンテンツフラグメントを返すディープクエリを作成する場合、最初に null が返されます。
 
 
 ### コンテンツ参照 {#content-reference}
@@ -259,8 +258,7 @@ type CompanyModel {
 ```
 
 >[!NOTE]
->
->これは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
+これは、[GraphQL でコンテンツフラグメントを使用したヘッドレスコンテンツ配信](/help/assets/content-fragments/content-fragments-graphql.md)との関連で特に重要になります。
 
 標準プロパティに加えて、次のものを定義できます。
 
@@ -285,9 +283,8 @@ type CompanyModel {
    ![フラグメント参照](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
->
->繰り返し防止メカニズムが設定されます。これにより、フラグメント参照で現在のコンテンツフラグメントを選択できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
->GraphQL にも、フラグメント参照の繰り返し防止機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
+繰り返し防止メカニズムが設定されます。これにより、フラグメント参照で現在のコンテンツフラグメントを選択できなくなります。この結果、空のフラグメント参照選択ダイアログが表示される場合があります。
+GraphQL にも、フラグメント参照の繰り返し防止機能があります。相互に参照する 2 つのコンテンツフラグメントにわたるディープクエリを作成すると、null が返されます。
 
 ## コンテンツフラグメントモデル - プロパティ {#content-fragment-model-properties}
 
@@ -345,8 +342,7 @@ type CompanyModel {
 コンテンツのガバナンスを実装するには、アセットフォルダーに&#x200B;**ポリシー**&#x200B;を設定して、そのフォルダーでのフラグメント作成に使用可能なコンテンツフラグメントモデルを管理します。
 
 >[!NOTE]
->
->このメカニズムは、ページの高度なプロパティでページとその子に対して[ページテンプレートを許可する](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)ことに似ています。
+このメカニズムは、ページの高度なプロパティでページとその子に対して[ページテンプレートを許可する](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)ことに似ています。
 
 **許可されているコンテンツフラグメントモデル**&#x200B;に&#x200B;**ポリシー**&#x200B;を設定するには：
 
@@ -378,8 +374,7 @@ type CompanyModel {
 ## コンテンツフラグメントモデルの削除 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
->
->コンテンツフラグメントモデルを削除すると、依存するフラグメントが影響を受ける可能性があります。
+コンテンツフラグメントモデルを削除すると、依存するフラグメントが影響を受ける可能性があります。
 
 コンテンツフラグメントモデルを削除するには：
 
@@ -389,8 +384,7 @@ type CompanyModel {
 1. モデルを選択し、次にツールバーの「**削除**」を選択します。
 
    >[!NOTE]
-   >
-   >モデルが参照されている場合は、警告が表示されます。適切に対処します。
+   モデルが参照されている場合は、警告が表示されます。適切に対処します。
 
 ## コンテンツフラグメントモデルの公開 {#publishing-a-content-fragment-model}
 
@@ -404,8 +398,7 @@ type CompanyModel {
 1. モデルを選択し、次にツールバーの「**公開**」を選択します。公開ステータスがコンソールに示されます。
 
    >[!NOTE]
-   >
-   >まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+   まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
 ## コンテンツフラグメントモデルを非公開にする {#unpublishing-a-content-fragment-model}
 
@@ -418,28 +411,82 @@ type CompanyModel {
 1. コンテンツフラグメントモデルが含まれているフォルダーに移動します。
 1. モデルを選択し、次にツールバーの「**非公開**」を選択します。公開ステータスがコンソールに示されます。
 
-<!--
-## Locked Content Fragment Models {#locked-content-fragment-models}
+1 つ以上のフラグメントで現在使用されているモデルを非公開にしようとすると、エラー警告が表示され、次の情報が示されます。
 
-This feature provides governance for Content Fragment Models that have been published. 
+![使用中のモデルを非公開にするときのコンテンツフラグメントモデルのエラーメッセージ](assets/cfm-model-unpublish-error.png)
 
-The challenge:
+このメッセージでは、[ 参照 ](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) パネルを確認して、さらに調査を行うよう提案されます。
 
-* Content Fragment Models determine the schema for GraphQL queries in AEM. 
+![参照内のコンテンツフラグメントモデル](assets/cfm-model-references.png)
 
-  * AEM GraphQL schemas are created as soon as a Content Fragment Model is created, and they can exist on both author and publish environments. 
+## ロック（公開）されたコンテンツフラグメントモデル {#locked-published-content-fragment-models}
 
-  * Schemas on publish are the most critical as they provide the foundation for live delivery of Content Fragment content in JSON format.  
+>[!NOTE]
+ロック（公開）されたコンテンツフラグメントモデル機能はベータ版です。
 
-* Problems can occur when Content Fragment Models are modified, or in other words edited. This means that the schema changes, which in turn may affect existing GraphQL queries. 
+この機能は、公開されたコンテンツフラグメントモデルのガバナンスを提供します。
 
-* Adding new fields to a Content Fragment Model should (typically) not have any detrimental effects. However, modifying existing data fields (for example, their name) or deleting field definitions, will break existing GraphQL queries when they are requesting these fields. 
+### 課題 {#the-challenge}
 
-The solution:
+* コンテンツフラグメントモデルは、AEMの GraphQL クエリのスキーマを決定します。
 
-* To make users aware of the risks when editing models that are already used for live content delivery (i.e. that have been published). Also, to avoid unintended changes. As either of these might break queries if the modified models are re-published. 
+   * AEM GraphQL スキーマは、コンテンツフラグメントモデルが作成されるとすぐに作成され、オーサー環境とパブリッシュ環境の両方に存在できます。
 
-* To address this issue, Content Fragment Models are put in a READ-ONLY mode on author - as soon as they have been published. 
+   * パブリッシュ上のスキーマは、JSON 形式のコンテンツフラグメントコンテンツのライブ配信の基盤となるので、最も重要です。
 
-* In READ-ONLY mode, users can still see contents and structure of models but they cannot edit them. 
--->
+* 問題は、コンテンツフラグメントモデルが変更された場合、つまり編集された場合に発生する可能性があります。 つまり、スキーマの変更が既存の GraphQL クエリに影響を与える可能性があります。
+
+* コンテンツフラグメントモデルに新しいフィールドを追加しても、（通常は）悪影響はありません。 ただし、既存のデータフィールド（名前など）の変更やフィールド定義の削除をおこなうと、これらのフィールドを要求する際に、既存の GraphQL クエリが壊れます。
+
+### 要件 {#the-requirements}
+
+* ライブコンテンツ配信に既に使用されているモデル（つまり、公開済みのモデル）を編集する際のリスクをユーザーに知らせるため。
+
+* また、意図しない変更を避ける。
+
+変更したモデルが再公開されると、どちらの場合でもクエリが壊れる可能性があります。
+
+### 解決策 {#the-solution}
+
+これらの問題に対処するため、コンテンツフラグメントモデルは、オーサー環境で *読み取り専用モードにロック* され、公開されるとすぐに実行されます。 これは **Locked** で示されます。
+
+![ロックされたコンテンツフラグメントモデルのカード](assets/cfm-model-locked.png)
+
+モデルが **ロック**（読み取り専用モード）の場合、モデルの内容と構造は表示されますが、編集はできません。
+
+**ロック** モデルは、コンソールまたはモデルエディターから管理できます。
+
+* コンソール
+
+   コンソールから、ツールバーの **Unlock** および **Lock** アクションを使用して、読み取り専用モードを管理できます。
+
+   ![ロックされたコンテンツフラグメントモデルのツールバー](assets/cfm-model-locked.png)
+
+   * モデルを **ロック解除** して、編集を有効にできます。
+
+      「**ロック解除**」を選択した場合は、警告が表示されます。「**ロック解除**」アクションを確認する必要があります。
+      ![コンテンツフラグメントモデルのロックを解除する際のメッセージ](assets/cfm-model-unlock-message.png)
+
+      その後、モデルを編集用に開くことができます。
+
+   * 後でモデルを **ロック** することもできます。
+   * モデルを再公開すると、すぐに **ロック**（読み取り専用）モードに戻ります。
+
+* モデルエディタ
+
+   * ロックされているモデルを開くと、警告が表示され、次の 3 つのアクションが表示されます。**キャンセル**、**読み取り専用表示**、**編集**:
+
+      ![ロックされたコンテンツフラグメントモデルを表示する際のメッセージ](assets/cfm-model-editor-lock-message.png)
+
+   * 「**読み取り専用で表示**」を選択すると、モデルの内容と構造を確認できます。
+
+      ![読み取り専用表示 — ロックされたコンテンツフラグメントモデル](assets/cfm-model-editor-locked-view-only.png)
+
+   * 「**編集**」を選択すると、更新内容を編集して保存できます。
+
+      ![編集 — ロックされたコンテンツフラグメントモデル](assets/cfm-model-editor-locked-edit.png)
+
+      >[!NOTE]
+      上部に警告が表示される場合もありますが、既存のコンテンツフラグメントでモデルが既に使用されている場合です。
+
+   * **** キャンセルすると、コンソールに戻ります。
