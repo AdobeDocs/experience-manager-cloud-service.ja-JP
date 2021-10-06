@@ -2,10 +2,10 @@
 title: DNS レコードのステータスの確認
 description: DNS レコードのステータスの確認
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: 17dffaae3beac678ce89b5fde7abea3b2dff86a8
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Cloud Manager は、ドメイン名に対して DNS 検索を実行し、次の�
 カスタムドメイン名が正常に検証およびデプロイされるまで、DNS ステータスは検出されません。このステータスは、カスタムドメイン名が削除中の場合にも表示されます。
 
 * **DNS が正しく解決されません**
-これは、DNS レコードの設定がまだ解決されていないか、またはエラーがあることを示します。Adobe の担当者に自動的に通知が送信されます。
+これは、DNS レコードの設定がまだ解決されていないか、またはエラーがあることを示します。
 
    >[!NOTE]
    >`CNAME` または `A-record` を設定するには、対応する手順に従う必要があります。詳細については、「DNS 設定の指定」を参照してください。準備が整ったら、ステータスの横にある&#x200B;**再解決**&#x200B;アイコンを選択する必要があります。
