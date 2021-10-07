@@ -1,7 +1,8 @@
 ---
 title: Compliance
 description: 準拠
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+exl-id: d346ad01-af00-48a1-96a4-e742369defff
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 89%

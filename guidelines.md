@@ -1,8 +1,8 @@
 ---
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 91%
+source-wordcount: '752'
+ht-degree: 100%
 
 ---
 # Adobe Experience Manager ドキュメントの投稿に関するガイドライン
@@ -37,9 +37,9 @@ AEM ドキュメントでは標準的な使用例を扱っています。この�
 
 AEM ドキュメントの改善に役立つアイデアの投稿を歓迎します。ただし、コメント、問題報告（イシュー）および変更修正依頼（プル要求）は、*投稿*&#x200B;専用です。これらを、AEM の使用方法や、AEM プロジェクトの実装法、また技術的な問題の解決方法についての質問に回答するために使用することはできません。
 
-AEMの使用方法や技術的な問題に関して質問がある場合は、[Experience Managerサポートポータル ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) の通常のサポートプロセスを通じて報告したり、[Experience Managerコミュニティ ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) でディスカッションしたりする必要があります。
+AEM の使用方法や技術的な問題に関して質問がある場合は、[Experience Cloud Enterprise サポートポータル](https://helpx.adobe.com/jp/contact/enterprise-support.ec.html)の通常のサポートプロセスを通じて報告したり、[Adobe Experience Manager コミュニティ](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)でディスカッションしたりする必要があります。
 
-***AEMドキュメントへの投稿は、Adobeカスタマーサポ*** ートの代わりとなるものではありません。サポート関連の質問に対する回答を求めるような投稿は拒否されます。
+***AEM ドキュメントの投稿は、アドビのサポートに代わるものではありません。***&#x200B;サポート関連の質問に対する回答を求めるような投稿は拒否されます。
 
 ### 投稿は、影響を受けるドキュメントページを明確に参照する必要があります。
 

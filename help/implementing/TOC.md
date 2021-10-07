@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 89480738357e8f26185aaa8ea1c6190e58baa644
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 92%
+source-wordcount: '1039'
+ht-degree: 93%
 
 ---
 
@@ -210,7 +210,6 @@ ht-degree: 92%
    + [Adobe Target との統合](/help/sites-cloud/integrating/adobe-target.md)
    + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-   + [Developer App Builder を使用したAdobeの拡張](developing/extending/app-builder.md)
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
    + [レンダリングコンポーネントのコンテンツフラグメントの設定](developing/extending/content-fragments-configuring-components-rendering.md)

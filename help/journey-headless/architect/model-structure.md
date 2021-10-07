@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 117d79b277118f39dfc442957989095bab5670b9
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 16%
+source-wordcount: '603'
+ht-degree: 19%
 
 ---
 
@@ -101,10 +101,6 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >作成者が、まだモデルが公開されていないコンテンツフラグメントを公開しようとすると、選択リストにその旨が示され、モデルはフラグメントと共に公開されます。
 
-モデルが公開されるとすぐに、オーサー環境では *ロック* が読み取り専用モードになります。 これは、特にパブリッシュ環境で、既存の GraphQL スキーマやクエリにエラーを引き起こす変更を防ぐことを目的としています。 コンソールには、**Locked** が表示されます。
-
-モデルが **ロック**（読み取り専用モード）の場合、モデルの内容と構造は表示されますが、直接編集することはできません。ただし、**ロック** モデルは、コンソールまたはモデルエディターから管理できます。
-
 ## 次の手順 {#whats-next}
 
 これで基本を学びました。次に、独自のコンテンツフラグメントモデルの作成を開始します。
@@ -130,8 +126,6 @@ At the very start you need to enable Content Fragment Models for your site, this
       * [コンテンツフラグメントモデルの公開](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
       * [コンテンツフラグメントモデルを非公開にする](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
-
-      * [ロック（公開）されたコンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 「はじめる前に」ガイド 
 

@@ -1,7 +1,8 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 92%

@@ -2,7 +2,7 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 090902d65a9bd4c4d83722534a2d9fb78bac314d
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 98%
@@ -87,7 +87,6 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
    >[!NOTE]レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
-
 
 
 #### ベストプラクティスアナライザーレポートでのフィルターの使用 {#bpa-filters}

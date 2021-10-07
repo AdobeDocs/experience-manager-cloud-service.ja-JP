@@ -1,7 +1,8 @@
 ---
 title: SLA レポート —Cloud Service
 description: SLA レポート —Cloud Service
-source-git-commit: 85b78564620dce8f660098a8cbaadd6f5ed0c616
+exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 19%

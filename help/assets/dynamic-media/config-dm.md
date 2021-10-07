@@ -3,10 +3,10 @@ title: 設定Dynamic MediaCloud Service
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 49302452b9544b9414ec49ce2862d9913fbfc6a6
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 76%
+source-wordcount: '4057'
+ht-degree: 77%
 
 ---
 
@@ -65,7 +65,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Experience Manageras a Cloud Serviceで、Experience Manageras a Cloud Serviceロゴを選択して、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側で、ツールアイコンを選択し、**[!UICONTROL Cloud Services/Dynamic Media設定]** に移動します。
 1. Dynamic Media設定ブラウザーページの左側のウィンドウで、「**[!UICONTROL global]**」を選択します（**[!UICONTROL global]** の左側にあるフォルダーアイコンは選択しないでください）。 次に、「**[!UICONTROL 作成]**」を選択します。
-1. **[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。この情報は、プロビジョニングの電子メールでアドビから提供されます。この電子メールを受け取っていない場合は、Adobeカスタマーサポートにお問い合わせください。
+1. **[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。この情報は、プロビジョニングの電子メールでアドビから提供されます。この電子メールを受け取っていない場合は、アドビのサポートにお問い合せください。
 1. 「**[!UICONTROL Dynamic Media に接続]**」をクリックします。
 1. **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスの「**[!UICONTROL 新しいパスワード]**」フィールドに、8～25 文字の新しいパスワードを入力します。パスワードには、次のうち少なくとも 1 つを含める必要があります。
 
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Experience Manager as a Cloud Service では、Dynamic Media コンテンツが公開される前に安全にプレビューするために、デフォルトでは、トークンベースの検証が使用されます。IP を許可リストに登録して、ユーザーがコンテンツを安全にプレビューできるようにすることもできます。この設定には、以下を実行します。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、Adobeカスタマーサポートにお問い合わせください。
+   * [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。情報が確認できない場合は、アドビのカスタマーサービスにお問い合わせください。
    * ページの右上隅付近のナビゲーションバーで、**[!UICONTROL 設定]** / **[!UICONTROL アプリケーション設定]** / **[!UICONTROL 公開設定]** / **[!UICONTROL Image Server]** に移動します。
    * Image Server 公開ページの「**[!UICONTROL 公開コンテキスト]**」ドロップダウンリストで、「**[!UICONTROL 画像サービングをテスト]**」を選択します。
    * [ クライアントアドレスフィルタ ] で、[**[!UICONTROL 追加]**] を選択します。
@@ -147,7 +147,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![Dynamic Media のセットアップの失敗](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. **[!UICONTROL DMSETUP]** ページで、失敗を説明する設定詳細を確認します。特に、エラーメッセージやエラーコードは控えておいてください。この情報については、Adobeカスタマーサポートにお問い合わせください。
+1. **[!UICONTROL DMSETUP]** ページで、失敗を説明する設定詳細を確認します。特に、エラーメッセージやエラーコードは控えておいてください。この情報については、Adobe のサポートにお問い合わせください。
 
    ![Dynamic Media 設定ページ](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -383,8 +383,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 **Granite の一時的なワークフローキューを更新するには：:**
 
-1. `http://<host>:<port>/system/console/configMgr` にある **Adobe Experience Manager Web コンソール設定** に移動します。
-1. **キューを検索：Granite 一時的なワークフローキュー**。
+1. [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) に移動して、**Queue: Granite Transient Workflow Queue** を検索します。
 
    >[!NOTE]
    >

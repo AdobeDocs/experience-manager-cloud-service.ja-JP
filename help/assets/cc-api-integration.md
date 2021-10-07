@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
+source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 処理プロファイルを使用してバリエーションを自動的に作成するには、次の手順に従います。
 
-1. [Adobeカスタマーサポート ](https://experienceleague.adobe.com/#support) に連絡して、ライセンスを受け取ります。
+1. [Adobeカスタマーケア ](https://experienceleague.adobe.com/#support) に連絡して、ライセンスを受け取ります。
 
 1. **[!UICONTROL ツール]** / **[!UICONTROL アセット]** / **[!UICONTROL 処理プロファイル]** に移動します。
 
