@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 40%
+source-wordcount: '1507'
+ht-degree: 42%
 
 ---
 
@@ -47,8 +47,11 @@ ht-degree: 40%
    ![列表示およびカード表示での [!DNL Assets] 検索結果の並べ替え](/help/assets/assets/sort-searched-assets.png)
    *図：列表示およびカード表示で [!DNL Assets] 検索結果を並べ替えます。*
 
-* アセットマイクロサービスを使用してプログラムで処理を呼び出すために、新しい API が導入されました。 開発者は、フォルダー内の 1 つ以上の特定のアセットに、既存のフォルダーレベルの処理プロファイルを適用できるようになりました。 処理プロファイルは、カスタムメタデータプロパティの更新に基づいて適用されます。 [[!DNL Experience Manager] API リファレンス ](https://www.adobe.io/experience-manager/reference-materials/) の `AssetProcessor` を参照してください。 以前と同様に、ユーザーインターフェイス ](/help/assets/asset-microservices-configure-and-use.md) からアセットマイクロサービスを使用できます。[
+<!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
+* To programmatically invoke processing using asset microservices, a new API is introduced. Developers can now apply an existing folder-level processing profile on one or more specific assets in a folder. The processing profile gets applied based on custom metadata properties updates. See `AssetProcessor` in the [[!DNL Experience Manager] API reference](https://www.adobe.io/experience-manager/reference-materials/). As before, it is possible to [use asset microservices from the user interface](/help/assets/asset-microservices-configure-and-use.md).
+
+-->
 <!-- Leave this commented.
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
