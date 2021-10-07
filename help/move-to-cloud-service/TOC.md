@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f193c4e81b9b16d07e7ccff6c2f9705b7234f80b
+source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 62%
+source-wordcount: '136'
+ht-degree: 63%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 62%
    + [運用開始](/help/move-to-cloud-service/migration-go-live.md)
    + [運用開始後](/help/move-to-cloud-service/migration-post-go-live.md)
 + Cloud Acceleration Manager {#cloud-acceleration-manager}
-   + Cloud Acceleration Managerの概要{#introduction-cam}
+   + Cloud Acceleration Manager の概要 {#introduction-cam}
       + [概要](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/overview-cam.md)
       + [メリット](/help/move-to-cloud-service/cloud-acceleration-manager/introduction/benefits-cam.md)
-   + Cloud Acceleration Managerの使用{#using-cam}
-      + [Cloud Acceleration Managerの概要](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
+   + Cloud Acceleration Manager の使用 {#using-cam}
+      + [Cloud Acceleration Manager の概要](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/getting-started-cam.md)
       + [準備段階](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-readiness-phase.md)
       + [実装段階](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-implementation-phase.md)
-      + [ライブフェーズへ](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
+      + [運用開始段階](/help/move-to-cloud-service/cloud-acceleration-manager/using-cam/cam-golive-phase.md)
 + クラウド移行ツール {#cloud-migration}
    + ベストプラクティスアナライザー {#best-practices-analyzer}
       + [概要](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
@@ -38,7 +38,10 @@ ht-degree: 62%
       + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
       + [コンテンツ転送ツールの前提条件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [大きなコンテンツリポジトリの処理](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
-      + [ユーザーマッピングツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-user-mapping-tool.md)
+      + ユーザーマッピングツール {#user-mapping-tool}
+         + [概要](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
+         + [重要な検討事項](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)
+         + [ユーザーマッピングツールの使用](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
 + コードリファクタリングツール {#refactoring-tools}
    + [Unified Experience](/help/move-to-cloud-service/unified-experience.md)
@@ -47,4 +50,4 @@ ht-degree: 62%
    + [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
    + [AEM Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
    + [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
-+ [パートナーのExperience ManagerとしてのCloud Serviceへの移行ガイド](/help/move-to-cloud-service/getting-started.md)
++ [パートナー向けExperience Manageras a Cloud Serviceの移行ガイド](/help/move-to-cloud-service/getting-started.md)
