@@ -1,10 +1,10 @@
 ---
 title: ユーザーマッピングツールの重要な考慮事項
 description: ユーザーマッピングツールの重要な考慮事項
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 71%
+source-wordcount: '521'
+ht-degree: 67%
 
 ---
 
@@ -35,3 +35,7 @@ ht-degree: 71%
 * ターゲットのAEM Cloud Serviceインスタンスのユーザー名が異なり、ソースのAEMインスタンスのユーザーの 1 人と同じ E メールアドレスを持つユーザーが存在し、ユーザーマッピングが有効な場合、エラーメッセージがログに書き込まれ、特定の E メールアドレスを持つ 1 人のユーザーのみがターゲットシステムで許可されます。
 
 * ソースAEMインスタンス上の 2 人のユーザーが同じ E メールアドレスを持ち、ユーザーマッピングが有効な場合、エラーメッセージがログに書き込まれ、1 人のソースAEMユーザーは転送されません。特定の E メールアドレスを持つ 1 人のユーザーのみがターゲットシステムで許可されます。
+
+### 次の手順 {#whats-next}
+
+重要な考慮事項と例外的なケースを学習したら、ツールを使用する準備が整いました。 詳しくは、[ ユーザーマッピングツールの使用 ](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) を参照してください。

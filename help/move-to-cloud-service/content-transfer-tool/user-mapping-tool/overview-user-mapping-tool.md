@@ -1,10 +1,10 @@
 ---
 title: ユーザーマッピングツールの概要
 description: ユーザーマッピングツールの概要
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 60e67e92f4f1ecaaf12c58f16f4324868d223934
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 71%
+source-wordcount: '363'
+ht-degree: 63%
 
 ---
 
@@ -27,3 +27,7 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 ## ユーザーマッピングツール {#mapping-tool}
 
 コンテンツ転送ツール（ユーザーマッピングなし）は、移行されるコンテンツに関連付けられているすべてのユーザーとグループを移行します。 ユーザーマッピングツールはコンテンツ転送ツールの一部で、AEM as a Cloud Serviceで使用されるシングルサインオン機能である IMS で正しく認識されるようにユーザーとグループを変更することだけが目的です。 これらの変更が完了すると、コンテンツ転送ツールは、指定したコンテンツのユーザーとグループを通常どおり移行します。
+
+### 次の手順 {#whats-next}
+
+ユーザーマッピングツールの概要を学習したら、ユーザーマッピングツールを使用する前に、重要な考慮事項や例外事例を確認する準備が整いました。 詳しくは、[ ユーザーマッピングツールの重要な考慮事項 ](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) を参照してください。
