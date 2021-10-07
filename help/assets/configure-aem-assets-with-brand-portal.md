@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '2402'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -178,7 +178,7 @@ AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナ�
 
 >[!NOTE]
 >
->Brand Portal テナントのライセンス認証中に問題が発生した場合は、Adobe サポートにお問い合わせください。
+>Brand Portalテナントのアクティベート中に問題が発生した場合は、カスタマーサポートにお問い合わせください。
 
 ## Adobe 開発者コンソールを使用した手動設定 {#manual-configuration}
 

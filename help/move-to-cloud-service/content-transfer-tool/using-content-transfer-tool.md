@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '3063'
-ht-degree: 86%
+source-wordcount: '3104'
+ht-degree: 84%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 86%
 
 * アクセストークンは、特定の期間の後、または Cloud Service 環境のアップグレード後に、定期的に期限切れになる場合があります。アクセストークンの有効期限が切れると、Cloud Service インスタンスに接続できなくなり、新しいアクセストークンを取得する必要があります。既存の移行セットに関連付けられているステータスアイコンが赤の雲アイコンに変わり、その上にカーソルを置くとメッセージが表示されます。
 
-* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツは何であれ、選択したターゲットインスタンスに取り込まれます。オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際は、ソースオーサーインスタンスに CTT をインストールしてコンテンツをターゲットオーサーインスタンスに移動し、同様に、ソースパブリッシュインスタンスに CTT をインストールしてコンテンツをターゲットパブリッシュインスタンスに移動することをお勧めします。
+* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツは何であれ、選択したターゲットインスタンスに取り込まれます。オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際は、ソースオーサーインスタンスに CTT をインストールしてコンテンツをターゲットオーサーインスタンスに移動し、同様に、ソースパブリッシュインスタンスに CTT をインストールしてコンテンツをターゲットパブリッシュインスタンスに移動することをお勧めします。詳しくは、[ パブリッシュインスタンスでのコンテンツ転送ツールの実行 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) を参照してください。
 
 * コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーやグループを IMS ID に自動的にマッピングする場合は、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を参照してください。
 
@@ -119,7 +119,7 @@ ht-degree: 86%
 
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
-      1. **バージョンを含める**：必要に応じて選択します。
+      1. **バージョンを含める**：必要に応じて選択します。バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
 
       1. **IMS ユーザーおよびグループからのマッピングを含める**：IMS ユーザーおよびグループからのマッピングを含める場合は、このオプションを選択します。
 詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
@@ -211,7 +211,7 @@ ht-degree: 86%
 >[!NOTE]
 >Amazon S3 または Azure Data Store をデータストアのタイプとして使用する場合は、オプションのプリコピー手順を実行して、取り込み段階を大幅に高速化できます。 詳細は [AzCopy での取り込み ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en#ingesting-azcopy) を参照してください。
 
-1. *概要* ページで移行セットを選択し、**取り込み** をクリックして取り込みを開始します。 **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。「**取得**」をクリックして、取得段階を完了します。コンテンツをオーサーとパブリッシュに同時に取り込むことができます。
+1. *概要* ページで移行セットを選択し、**取り込み** をクリックして取り込みを開始します。 **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。コンテンツは、一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 コンテンツの取り込み先のインスタンスを選択します。 「**取得**」をクリックして、取得段階を完了します。
 
    >[!IMPORTANT]
    >事前コピーを使用した取り込みを（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取り込みを単独で実行することをお勧めします。 これにより、後で実行した場合に、パブリッシュの取り込みが高速化されます。
@@ -219,11 +219,11 @@ ht-degree: 86%
    >[!IMPORTANT]
    >「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションが有効な場合は、既存のリポジトリー全体が削除され、コンテンツの取り込み先となる新しいリポジトリーが作成されます。つまり、ターゲットの Cloud Service インスタンスに対する権限を含むすべての設定がリセットされます。これは、**administrators** グループに追加された管理者ユーザーにも当てはまります。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs)も参照してください。
+   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs)も参照してください。
 
-1. 取得が完了すると、「**取得を公開**」フィールドのステータスが「**完了**」に更新されます。
+1. 取り込みが完了すると、ステータスが **FINISHED** に更新されます。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
 
@@ -239,7 +239,7 @@ ht-degree: 86%
 
 1. *概要*&#x200B;ページに移動し、追加取得の実行対象となる移行セットを選択します。「**取得**」をクリックして、追加取得を開始します。**移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-01.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
 
    >[!IMPORTANT]
    >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。

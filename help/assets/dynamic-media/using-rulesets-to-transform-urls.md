@@ -3,10 +3,10 @@ title: ルールセットを使用した URL の変換
 description: Dynamic Media でルールセットをデプロイして、URL を変換する方法を説明します。ルールセットはスクリプティング言語（JavaScript など）で記述された命令セットで、XML データを評価して、そのデータが特定の条件を満たす場合に特定のアクションを実行します。
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
@@ -55,7 +55,7 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 
 1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
 
-   資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
+   資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、カスタマーサポートにお問い合わせください。
 
 1. 次の手順を実行して、ルールセットファイルをアップロードします。
 

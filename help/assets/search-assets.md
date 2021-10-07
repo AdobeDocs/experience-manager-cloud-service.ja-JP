@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 7d67bdb5e0571d2bfee290ed47d2d7797a91e541
+source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 98%
 
 ---
@@ -157,7 +157,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 作成者 | creator:John |
 | 場所 | location:NA |
 | 説明 | description:&quot;Sample Image&quot; |
-| 作成ツール | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 作成ツール | creatortool:&quot;Adobe Photoshop&quot; |
 | 著作権の所有者 | copyrightowner:&quot;Adobe Systems&quot; |
 | 投稿者 | contributor:John |
 | 使用条件 | usageterms:&quot;CopyRights Reserved&quot; |
