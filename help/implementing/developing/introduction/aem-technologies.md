@@ -2,9 +2,9 @@
 title: AEM 技術基盤
 description: AEM の構造化および JCR、Sling、OSGi などの基本的なテクノロジーを含む、AEM の技術基盤の概要です。
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 8ba7968ee7f4d3c808740054bf841dbaf9dd4254
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 99%
 
 ---
@@ -34,9 +34,9 @@ AEM は、拡張性が高く柔軟なテクノロジーに基づいて構築さ�
 
 ## Java コンテンツリポジトリー {#java-content-repository}
 
-Java コンテンツリポジトリー（JCR）の規格である [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) では、コンテンツリポジトリー内で、任意の精度レベルでコンテンツに双方向アクセスするための、ベンダーにも実装にも依存しない方法が示されています。仕様を主導しているのは、Adobe Research（スイス）AG です。
+Java コンテンツリポジトリー（JCR）の規格である [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) では、コンテンツリポジトリー内で、任意の精度レベルでコンテンツに双方向アクセスするための、ベンダーにも実装にも依存しない方法が示されています。仕様を主導しているのは、Adobe Research（スイス）AG です。
 
-[JCR API 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージである `javax.jcr.*` が、リポジトリーコンテンツの直接アクセスと操作に使用されます。
+[JCR API 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) パッケージである `javax.jcr.*` が、リポジトリーコンテンツの直接アクセスと操作に使用されます。
 
 AEM は JCR 上に構築されています。
 

@@ -2,10 +2,10 @@
 title: Query Builder の述語リファレンス
 description: Query Builder API の述語リファレンスです。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 100%
+source-wordcount: '2218'
+ht-degree: 99%
 
 ---
 
@@ -166,7 +166,7 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601 形式�
 
 ### hasPermission {#haspermission}
 
-指定された [JCR 権限](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)が現在のセッションに含まれる項目に、結果を制限します。
+指定された [JCR 権限](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)が現在のセッションに含まれる項目に、結果を制限します。
 
 これはフィルターのみの述語で、検索インデックスは利用できません。ファセットの抽出には対応していません。
 
