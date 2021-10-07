@@ -1,16 +1,16 @@
 ---
-title: ルールセットを使用したURLの変換
+title: ルールセットを使用した URL の変換
 description: Dynamic Media でルールセットをデプロイして、URL を変換する方法を説明します。ルールセットはスクリプティング言語（JavaScript など）で記述された命令セットで、XML データを評価して、そのデータが特定の条件を満たす場合に特定のアクションを実行します。
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 77%
+ht-degree: 75%
 
 ---
 
-# ルールセットを使用したURLの変換 {#using-rulesets-to-transform-urls}
+# ルールセットを使用した URL の変換 {#using-rulesets-to-transform-urls}
 
 Dynamic Media でルールセットをデプロイして、URL を変換できます。ルールセットはスクリプティング言語（JavaScript など）で記述された命令セットで、XML データを評価して、そのデータが特定の条件を満たす場合に特定のアクションを実行します。各ルールは、1 つ以上の条件と 1 つ以上のアクションで構成されます。ルールは XML データを条件に対して評価し、条件を満たしている場合は適切なアクションを実行します。ルールセットの例としては、次のようなものがあります。
 
@@ -28,7 +28,7 @@ Dynamic Media でルールセットをデプロイして、URL を変換でき�
 
 * `$`、`{`、`}` などの特定の文字のエンコードと、ImageServer への特定の文字のデコードのリクエスト。例えば、Facebook は特殊文字を含む URL では正しく機能しません。
 
-   [URLから特殊文字を削除する](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)を参照してください。
+   [URL から特殊文字を削除する ](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html) を参照してください。
 
 Dynamic Media のコンテキストで、XML ベースのシステムを使用してアセット情報を管理する Web サイトは、XML ファイルを Dynamic Media にアップロードできます。これらのファイルのいずれかを、Dynamic Media のアセットを処理するための前処理ルールセットファイルとして指定できます。このファイルは、Dynamic Media と統合するシステムの会社ロジックを満たすよう、標準 URL プロトコル形式を再構成します。XML ファイルをルールセット定義ファイルのパスとして指定します。
 
@@ -36,14 +36,14 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 >
 >ルールセットを使用する場合は、Dynamic Media のコンテンツが Web サイトに表示されなくなる可能性があるので、注意してください。
 
-独自のルールセットを作成するのに役立つサンプルルールセットが用意されています。
+独自のルールセットの作成に役立つサンプルルールセットを利用できます。
 [ルールセットのリファレンス](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=ja)を参照してください。
 
-すべてのルールセットの作成と同様に、xmlvalid などの XML バリデータープログラムを使用して、XML ファイルが有効であることを確認してからアップロードしてください。[ルールセット](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)のトラブルシューティングも参照してください。
+すべてのルールセットの作成と同様に、xmlvalid などの XML バリデータープログラムを使用して、XML ファイルが有効であることを確認してからアップロードしてください。[ ルールセットのトラブルシューティング ](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html) も参照してください。
 
 また、最初は実稼動環境に影響を与えないステージング環境でルールセットをテストしてください。通常、実稼動環境とステージング環境では異なるログイン情報が必要となります。
 
-ログイン情報については、[Dynamic Media ClassicデスクトップアプリケーションのAdobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#sign-in-dmc-app)を参照してください。
+ログイン情報については、[Adobe Dynamic Media Classicデスクトップアプリケーション ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#sign-in-dmc-app) を参照してください。
 
 <!-- OBSOLETE CONTENT * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -51,26 +51,26 @@ Dynamic Media のコンテキストで、XML ベースのシステムを使用�
 
 [ルールセットでの &#39;is&#39; イメージに代わる &#39;asset&#39; の使用](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)も参照してください。
 
-## XMLルールセットのデプロイ {#deploy-xml-rule-sets}
+## XML ルールセットのデプロイ {#deploy-xml-rule-sets}
 
 1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
 
-   資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、テクニカルサポートにお問い合わせください。
+   資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、カスタマーサポートにお問い合わせください。
 
 1. 次の手順を実行して、ルールセットファイルをアップロードします。
 
    * グローバルナビゲーションバーで、「**[!UICONTROL アップロード]**」を選択します。
-   * **[!UICONTROL アップロード]**&#x200B;ページの左上隅付近にある「**[!UICONTROL 参照]**」を選択します。
+   * **[!UICONTROL アップロード]** ページの左上隅付近で、「**[!UICONTROL 参照]**」を選択します。
    * **[!UICONTROL 開く]**&#x200B;ダイアログボックスで、ルールセットファイル（XML）を参照します。
    * ファイルを選択し、「**[!UICONTROL 開く]**」を選択します。
    * **[!UICONTROL アップロード]**&#x200B;ページの右側で、ルールセットファイルの公開先フォルダーを選択します。
    * ページ下部付近の「アップロード後に公開」が選択されていることを確認します。
-   * ページの右下隅にある「**[!UICONTROL アップロードを送信]**」を選択します。
+   * ページの右下隅で、「**[!UICONTROL アップロードを送信]**」を選択します。
    * グローバルナビゲーションバーで、「**[!UICONTROL ジョブ]**」を選択して、アップロードジョブのステータスを確認します。 **[!UICONTROL ジョブ]**&#x200B;ページの「**[!UICONTROL ステータス]**」列に「アップロード完了」と表示されたら、次のステップに進みます。
 
-1. ページ上部付近のナビゲーションバーで、**[!UICONTROL 設定]** / **[!UICONTROL アプリケーション設定]** / **[!UICONTROL 公開設定]** / **[!UICONTROL Image Server]**&#x200B;に移動します。
-1. **[!UICONTROL Image Server公開]**&#x200B;ページの「**[!UICONTROL カタログ管理]**」グループで、「**[!UICONTROL ルールセット定義ファイルのパス]**」を探し、「**[!UICONTROL 選択]**」を選択します。
-1. **[!UICONTROL ルールセット定義ファイル(XML)]**&#x200B;を選択ページでルールセットファイルを参照し、ページ右下隅の「****&#x200B;を選択します。
+1. ページの上付近にあるナビゲーションバーで、**[!UICONTROL 設定]** / **[!UICONTROL アプリケーション設定]** / **[!UICONTROL 公開設定]** / **[!UICONTROL Image Server]** に移動します。
+1. **[!UICONTROL Image Server 公開]** ページの「**[!UICONTROL カタログ管理]**」グループで、「**[!UICONTROL ルールセット定義ファイルのパス]**」を探し、「**[!UICONTROL 選択]**」を選択します。
+1. **[!UICONTROL ルールセット定義ファイル (XML)]** を選択ページでルールセットファイルを参照し、ページ右下隅の「**** を選択します。
 1. 設定ページの右下隅で、「**[!UICONTROL 閉じる]**」を選択します。
 1. Image Server 公開ジョブを実行します。
 

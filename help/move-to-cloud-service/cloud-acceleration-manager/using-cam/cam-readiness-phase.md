@@ -71,10 +71,10 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備段�
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、共有しやすいようにレポートを PDF 形式で印刷します。
+1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、共有しやすいようにレポートをPDF形式で印刷します。
 
    >[!IMPORTANT]
-   >* 上記の機能では、オプション **「PDF として保存**」を使用することをお勧めします。また、このオプションはサポートされています。
+   >* 上記の機能では、「**PDFとして保存**」オプションが推奨され、サポートされています。
    >* ブラウザーの印刷ボタンを使用すると、1 ページだけが印刷されます。
 
 
@@ -101,7 +101,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備段�
 
 #### レポートの概要 {#report-overview}
 
-この **レポートの概要** カードは、次の図に示すように、AEMにCloud Serviceとして移行する準備状況を評価する際に適用されるレポートの結果と重大度レベルを示します。
+この **レポートの概要** カードは、次の図に示すように、AEM as a Cloud Serviceへの移行準備状況を評価する際に適用されるレポートの結果と重大度レベルを示します。
 
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -128,7 +128,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備段�
 
 #### 移行の複雑さの評価 {#migration-complexity-assessment}
 
-「移行の複雑さの評価」オプションでは、既存のAEM実装をCloud ServiceとしてAEMに移行する複雑さの評価を提供します。
+「移行の複雑さの評価」オプションでは、既存のAEM実装をAEM as a Cloud Serviceに移行する複雑さの評価を提供します。
 
 このタブでは、次の情報を確認できます。
 

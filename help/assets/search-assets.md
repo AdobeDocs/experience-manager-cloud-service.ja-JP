@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: aa5d529b132a4ff517950192a81a13c05fe92b4c
 workflow-type: tm+mt
-source-wordcount: '4898'
+source-wordcount: '4897'
 ht-degree: 98%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 98%
 
 ## 入力に応じて提示される検索候補 {#searchsuggestions}
 
-キーワードの入力を開始すると、Experience Managerによって、使用可能な検索キーワードまたは語句が示されます。 候補は、Experience Manager内のアセットに基づいています。 Experience Managerは、検索に役立つすべてのメタデータフィールドのインデックスを作成します。 検索候補を提示するために、以下のいくつかのメタデータフィールドの値が使用されます。検索候補の提示をおこなう場合は、次のフィールドに適切なキーワードを入力することを検討してください。
+キーワードの入力を開始すると、Experience Managerによって、検索可能なキーワードまたは語句が示されます。 候補は、Experience Manager内のアセットに基づいて表示されます。 Experience Managerは、検索に役立つすべてのメタデータフィールドのインデックスを作成します。 検索候補を提示するために、以下のいくつかのメタデータフィールドの値が使用されます。検索候補の提示をおこなう場合は、次のフィールドに適切なキーワードを入力することを検討してください。
 
 * アセットのタグ（`jcr:content/metadata/cq:tags` にマッピングされます）
 * アセットのタイトル（`jcr:content/metadata/dc:title` にマッピングされます）
@@ -157,7 +157,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 | 作成者 | creator:John |
 | 場所 | location:NA |
 | 説明 | description:&quot;Sample Image&quot; |
-| 作成ツール | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| 作成ツール | creatortool:&quot;Adobe Photoshop&quot; |
 | 著作権の所有者 | copyrightowner:&quot;Adobe Systems&quot; |
 | 投稿者 | contributor:John |
 | 使用条件 | usageterms:&quot;CopyRights Reserved&quot; |
@@ -226,7 +226,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ## アセットセレクター {#asset-picker}
 
-アセットセレクター（以前のバージョンの[!DNL Adobe Experience Manager]ではアセットピッカーと呼ばれていました）を使用すると、DAMアセットの検索、フィルタリングおよび参照を特別な方法でおこなえます。 アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
+アセットセレクター（以前のバージョンの [!DNL Adobe Experience Manager] ではアセットピッカーと呼ばれていました）を使用すると、DAM アセットの検索、フィルタリング、参照を特別な方法でおこなうことができます。 アセットセレクターは、`https://[aem_server]:[port]/aem/assetpicker.html` で利用できます。アセットセレクターを使用して選択したアセットのメタデータを取得できます。アセットタイプ（画像、ビデオ、テキスト）や選択モード（単一選択または複数選択）など、サポートされているリクエストパラメーターを使用して、アセットセレクターを起動できます。これらのパラメーターは、特定の検索インスタンスのアセットセレクターのコンテキストを設定し、選択中もそのままの状態を維持します。
 
 アセットセレクターは、HTML5 `Window.postMessage` メッセージを使用して、選択したアセットのデータを受信者に送信します。参照モードのオムニサーチ結果ページでのみ機能します。
 

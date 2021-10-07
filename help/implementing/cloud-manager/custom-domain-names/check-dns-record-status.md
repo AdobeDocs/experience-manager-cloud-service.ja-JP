@@ -4,8 +4,8 @@ description: DNS レコードのステータスの確認
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 source-git-commit: 17dffaae3beac678ce89b5fde7abea3b2dff86a8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 100%
 
 ---
 

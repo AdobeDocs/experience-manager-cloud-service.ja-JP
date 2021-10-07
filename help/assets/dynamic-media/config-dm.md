@@ -78,9 +78,9 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    必要に応じて、パスワードの目のアイコンを選択して、入力または再入力したパスワードのスペルを確認できます。 アイコンをもう一度選択すると、パスワードが非表示になります。
 
-1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+1. 「**[!UICONTROL パスワードを繰り返し]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」を選択します。
 
-   The new password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
+   新しいパスワードは、**[!UICONTROL Dynamic Media設定を作成]** ページの右上隅にある「**[!UICONTROL 保存]**」を選択すると保存されます。
 
    **[!UICONTROL パスワードを変更]** ダイアログボックスで「**[!UICONTROL キャンセル]**」を選択した場合でも、新しく作成したDynamic Media設定を保存する際には新しいパスワードを入力する必要があります。
 
@@ -105,8 +105,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    ![dynamicmediaconfiguration2updated](/help/assets/assets-dm/dynamicmediaconfigurationupdated.png)
 
-1. 「**[!UICONTROL 保存]**」を選択します。Dynamic Media の新しいパスワードと設定が保存されます。If you selected **[!UICONTROL Cancel]** instead, no password update occurs.
-1. In the **[!UICONTROL Configuring Dynamic Media]** dialog box, select **[!UICONTROL OK]** to begin the configuration.
+1. 「**[!UICONTROL 保存]**」を選択します。Dynamic Media の新しいパスワードと設定が保存されます。代わりに **[!UICONTROL キャンセル]** を選択した場合、パスワードは更新されません。
+1. **[!UICONTROL Dynamic Media]** の設定ダイアログボックスで、「**[!UICONTROL OK]**」を選択して設定を開始します。
 
    >[!IMPORTANT]
    >
@@ -176,7 +176,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
       「**[!UICONTROL 現在のパスワード]**」フィールドは意図的に事前入力されており、操作時には非表示になっています。
 
-   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+   * 「**[!UICONTROL パスワードを繰り返し]**」フィールドに新しいパスワードを再入力し、「**[!UICONTROL 完了]**」を選択します。
 
 1. **[!UICONTROL Dynamic Media設定を編集]** ページの右上隅で、「**[!UICONTROL 保存]**」を選択し、「**[!UICONTROL OK]**」を選択します。
 
@@ -203,8 +203,8 @@ Dynamic Media Classic のユーザーインターフェイスを使用し、Dyna
 
 * [Image Server の公開設定](#publishing-setup-for-image-server)
 * [アプリケーションの一般設定の構成](#configuring-application-general-settings)
-* [Configure color management](#configuring-color-management)
-* [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
+* [カラーマネジメントの設定](#configuring-color-management)
+* [サポートされる形式の MIME タイプの編集](#editing-mime-types-for-supported-formats)
 * [サポートされていない形式の MIME タイプの追加](#adding-mime-types-for-unsupported-formats)
 
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
@@ -226,7 +226,7 @@ Image Server 画面では、画像を配信するためのデフォルト設定�
 **[!UICONTROL サーバー]** - アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、Web サイトとアプリケーションの URL 文字列の生成に使用されます。これらの URL 呼び出しは、アカウントに固有です。Experience Manager as a Cloud Service のサポートから明示的に指示されない限り、サーバー名は変更しないでください。
 **[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダーにアップロードされたアセット、または元のアセットとは異なるファイル拡張子を持つアセットに影響します。**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは厳格な置換規則です。置き換え画像を元の画像と同じフォルダーにアップロードし、置き換え画像と元の画像の拡張子が同じである必要があります。これらの要件が満たされない場合は、重複する画像が作成されます。Experience Manager as a Cloud Service との一貫性を維持するには、必ず「**[!UICONTROL 現在のフォルダーでベース画像名と拡張子が同じファイルを上書き]**」を選択します。
 **[!UICONTROL 任意のフォルダーでベースアセット名／拡張子が同じファイルを上書き]** - 置き換え画像と元の画像のファイル拡張子が同じである必要があります。例えば、chair.jpg は chair.jpg を置き換えるますが、chair.tif は置き換えません。ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります。
-**[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を、元の画像と別のフォルダーにアップロードでき、ファイル拡張子が異なるファイルをアップロードして、元のファイルと置き換えることができます。元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。**[!UICONTROL 初期設定のカラープロファイル]**  — 詳しく [は、カラー管](#configuring-color-management) 理の設定を参照してください。デフォルトでは、アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択した場合 15 個のレンディションが表示され、「**[!UICONTROL ビューア]**」を選択した場合 15 個のビューアプリセットが表示されます。この制限は増やすことができます。See [Increase or decrease the number of image presets that display](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase or decrease the number of viewer presets that display](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+**[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を、元の画像と別のフォルダーにアップロードでき、ファイル拡張子が異なるファイルをアップロードして、元のファイルと置き換えることができます。元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。**[!UICONTROL 初期設定のカラープロファイル]**  — 詳しく [は、カラー管](#configuring-color-management) 理の設定を参照してください。デフォルトでは、アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択した場合 15 個のレンディションが表示され、「**[!UICONTROL ビューア]**」を選択した場合 15 個のビューアプリセットが表示されます。この制限は増やすことができます。[ 表示する画像プリセットの数を増減 ](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) または [ 表示するビューアプリセットの数を増減 ](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) を参照してください。
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
@@ -268,9 +268,9 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated PostScript® ファイル（.EPS）をラスタライズする。
 * [ビデオプ](/help/assets/dynamic-media/video-profiles.md) ロファイ [ルと](/help/assets/dynamic-media/image-profiles.md) 画像プロファイルは、それぞれビデオと画像の処理を定義するのに使用できます。
 
-See [Upload assets](/help/assets/add-assets.md).
+[ アセットのアップロード ](/help/assets/add-assets.md) を参照してください。
 
-**To edit MIME types for supported formats:**
+**サポートされている形式の MIME タイプを編集するには：**
 
 1. Experience Manageras a Cloud Serviceで、Experience Manageras a Cloud Serviceのロゴを選択してグローバルナビゲーションコンソールにアクセスし、**[!UICONTROL 一般/CRXDE Lite]** に移動します。
 1. 左側のパネルで、次の場所に移動します。
@@ -292,7 +292,7 @@ See [Upload assets](/help/assets/add-assets.md).
 
 1. ページの左上隅で、「**[!UICONTROL CRXDE Lite]**」を選択して、as a Cloud ServiceのExperience Managerに戻ります。
 
-#### Add MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
+#### サポートされていない形式の MIME タイプの追加 {#adding-mime-types-for-unsupported-formats}
 
 Experience Manager Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite に追加した新しいノードが Experience Manager によって削除されないようにするには、MIME タイプを `image_` の前に移動します。また、有効な値が **[!UICONTROL false]** に設定されていることを確認します。
 

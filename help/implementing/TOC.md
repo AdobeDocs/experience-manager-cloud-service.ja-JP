@@ -232,7 +232,7 @@ ht-degree: 92%
    + [コンテンツ配信フロー](dispatcher/overview.md)
    + [クラウド内の Dispatcher](dispatcher/disp-overview.md)
    + [Dispatcher ツールを使用した検証とデバッグ](dispatcher/validation-debug.md)
-   + [AMS からAEM as aCloud Serviceへの Dispatcher 設定の移行](dispatcher/ams-aem.md)
+   + [AMS からAEM as a Cloud Serviceへの Dispatcher 設定の移行](dispatcher/ams-aem.md)
    + [Dispatcher ツールを使用した検証とデバッグ（従来）](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service での CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service でのキャッシュ](dispatcher/caching.md)

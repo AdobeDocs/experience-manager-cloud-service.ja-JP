@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 87306ae90f6411d2d4e48f3afdb66e5e848073fe
 workflow-type: tm+mt
 source-wordcount: '2402'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -138,7 +138,7 @@ AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナ�
 * [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Brand Portal へのタグの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-詳しくは、[Brand Portal ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)を参照してください。
+詳しくは、[Brand Portal ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja)を参照してください。
 
 **配布ログ**
 
@@ -178,7 +178,7 @@ AEM Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナ�
 
 >[!NOTE]
 >
->Brand Portal テナントのライセンス認証中に問題が発生した場合は、Adobe サポートにお問い合わせください。
+>Brand Portalテナントのアクティベート中に問題が発生した場合は、カスタマーサポートにお問い合わせください。
 
 ## Adobe 開発者コンソールを使用した手動設定 {#manual-configuration}
 
