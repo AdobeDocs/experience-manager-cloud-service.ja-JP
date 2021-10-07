@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
 workflow-type: tm+mt
-source-wordcount: '3104'
-ht-degree: 84%
+source-wordcount: '3216'
+ht-degree: 81%
 
 ---
 
@@ -50,6 +50,8 @@ ht-degree: 84%
 * カスタムインデックスを使用する場合は、コンテンツ転送ツールを実行する前に、`tika` ノードでカスタムインデックスを設定する必要があります。詳細は、「[新しいインデックス定義の準備](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#preparing-the-new-index-definition)」を参照してください。
 
 * 追加の作業を行う場合は、最初の抽出を実行した時点からに行った時点まで、既存のコンテンツのコンテンツ構造を変更しないことが重要です。 最初の抽出以降に構造が変更されたコンテンツに対しては、追加は実行できません。 移行プロセス中は、必ずこの制限をおこなってください。
+
+* バージョンを移行セットの一部として含め、`wipe=false` で追加処理を実行する場合は、コンテンツ転送ツールでの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、`wipe=true` としてインジェストを実行する必要があります。
 
 ## 入手方法 {#availability}
 
@@ -120,6 +122,8 @@ ht-degree: 84%
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
       1. **バージョンを含める**：必要に応じて選択します。バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
+      >[!NOTE]
+      >バージョンを移行セットの一部として含め、`wipe=false` で追加処理を実行する場合は、コンテンツ転送ツールでの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、`wipe=true` としてインジェストを実行する必要があります。
 
       1. **IMS ユーザーおよびグループからのマッピングを含める**：IMS ユーザーおよびグループからのマッピングを含める場合は、このオプションを選択します。
 詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
@@ -132,6 +136,7 @@ ht-degree: 84%
          >* `/libs`
          >* `/home`
          >* `/etc`（`/etc` の一部のパスは CTT で選択できます）
+
 
 
 1. **移行セットを作成**&#x200B;画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
