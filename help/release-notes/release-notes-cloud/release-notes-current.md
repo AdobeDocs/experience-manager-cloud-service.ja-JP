@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: cf5fd3f483876eab8e9ec7bf22fae5dd1c6aa147
+source-git-commit: 5f80ad85ddf9ffdda7cd975d00699eb5085d2365
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 42%
+source-wordcount: '1476'
+ht-degree: 40%
 
 ---
 
@@ -75,13 +75,13 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)ようになりました。
 
-* **DocuSign を使用したアダプティブフォームの電子署名：** DocuSign を使用してアダプティブフォームの電子署名を行うことができます。このサービスは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。 「ソフトウェア配布」で使用可能なパッケージをインストールして、送信アクションをインポートできます。
+* **DocuSign を使用したアダプティブフォームの電子署名：** DocuSign を使用してアダプティブフォームの電子署名を行うことができます。このサービスは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。
 
 ### [!DNL Forms] のベータ機能 {#sep-what-is-new-forms-prerelease}
 
-* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、次のことができます。
-   * Forms ポータルの保存および再開機能を有効にし、顧客側で管理されるデータリポジトリーにアダプティブフォームのドラフトを格納する
-   * 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリーに格納する
+* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、次のことができます。 顧客が管理するリポジトリに機密の個人データ (SPD) を含むプロセス内のAEM Workflows データ (AEM Workflow Variables データ ) を格納します。
+
+   <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、ドキュメントを同期モードで生成できます。この API により、以下の機能を備えたアプリケーションを作成できます。
    * テンプレートファイルに XML データを入力することでドキュメントを生成する
