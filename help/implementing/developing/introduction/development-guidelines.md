@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: c9ebeefa2a8707cbbf43df15cf90c10aadbba45f
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2059'
 ht-degree: 87%
 
 ---
@@ -188,10 +188,6 @@ AEM as a Cloud Service では、送信メールを暗号化する必要があり
 [Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーに電子メールを送信する必要があります。
 
 AEM as a Cloud Serviceでは、ポート 465 を介してメールを送信する必要があります。 TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
-
->[!NOTE]
->
->アドビでは、一意の専用 IP アドレスを介した SMTP エグレス処理をサポートしていません。
 
 ### 設定 {#email-configuration}
 
