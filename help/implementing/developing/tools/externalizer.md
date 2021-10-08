@@ -2,10 +2,10 @@
 title: URL の外部化
 description: Externalizer は、プログラムによってリソースパスを外部 URL および絶対 URL に変換できる OSGi サービスです。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: a446efacb91f1a620d227b9413761dd857089c96
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 98%
+ht-degree: 94%
 
 ---
 
@@ -15,11 +15,11 @@ AEM の **Externalizer** は、プログラムによってリソースパス（�
 
 AEM as a Cloud Service インスタンスには自分の外部向け URL がわからず、また、場合によってはリンクをリクエストスコープの範囲外で作成する必要があるので、このサービスは、そのような外部 URL を設定して作成するための一元的な場所を提供します。
 
-この記事では、Externalizer サービスの設定方法と使用方法について説明します。このサービスの技術的な詳細については、[Javadocs](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+この記事では、Externalizer サービスの設定方法と使用方法について説明します。このサービスの技術的な詳細については、[Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 
-Externalizerサービスは、初期設定で`author-p12345-e6789.adobeaemcloud.com`や`publish-p12345-e6789.adobeaemcloud.com`などの値を持ちます。
+Externalizer サービスには、初期設定で `author-p12345-e6789.adobeaemcloud.com` や `publish-p12345-e6789.adobeaemcloud.com` などの値が含まれています。
 
 このような値を上書きするには、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って、Cloud Manager 環境変数を使用し、事前定義された `AEM_CDN_DOMAIN_AUTHOR` 変数と `AEM_CDN_DOMAIN_PUBLISH` 変数を設定します。
 
@@ -125,4 +125,4 @@ Externalizer サービスのドメインマッピングを定義するには：
 
 >[!TIP]
 >
->他の例については、関連する [Javadoc](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/commons/Externalizer.html) を参照してください。
+>他の例については、関連する [Javadoc](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html) を参照してください。

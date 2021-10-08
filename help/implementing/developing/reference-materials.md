@@ -2,10 +2,10 @@
 title: API リファレンス資料
 description: AEMには、デジタルエクスペリエンスプロジェクトに活用できる、広範で強力な API があります。
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 30%
+ht-degree: 28%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM) は、アプリケーションの開発とAEMの�
 
 | API | 説明 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/index.html) | ページ、アセット、ワークフローなどの製品の抽象概念 |
+| [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | ページ、アセット、ワークフローなどの製品の抽象概念 |
 | [Granite UI](https://helpx.adobe.com/jp/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html#) | Adobeのオープン Web スタック。様々な必須コンポーネントを提供（6.5 Granite マテリアルは AEMaaCS に適用されます） |
 | [Coral UI](https://opensource.adobe.com/coral-spectrum/documentation/) | ユーザーエクスペリエンスの一貫性を提供する、クラウド UI 用のAdobeスタイル |
 
@@ -44,7 +44,7 @@ AEM は、優先順に次の 4 つの主要な Java API セットに基づいて
 
 | 優先度 | API | 説明 |
 |---|---|---|
-| 1 | [Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/index.html) | ページ、アセット、ワークフローなどの製品の抽象概念 |
+| 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | ページ、アセット、ワークフローなどの製品の抽象概念 |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | リソース、値マップ、HTTP 要求など、REST およびリソースベースの抽象概念。 |
 | 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | ノード、プロパティ、セッションなどのデータとコンテンツの抽象化。 |
 | 4 | [Apache Felix](https://felix.apache.org／) | サービスや (OSGi) コンポーネントなどの OSGi アプリケーションコンテナの抽象概念。 |

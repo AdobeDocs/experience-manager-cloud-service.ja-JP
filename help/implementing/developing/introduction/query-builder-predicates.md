@@ -2,10 +2,10 @@
 title: Query Builder の述語リファレンス
 description: Query Builder API の述語リファレンスです。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2218'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ JCR 日付プロパティを日時の間隔と照合します。ISO8601 形式�
 
 ### memberOf {#memberof}
 
-特定の [Sling リソースコレクション](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/org/apache/sling/resource/collection/ResourceCollection.html)のメンバーである項目を検索します。
+特定の [Sling リソースコレクション](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)のメンバーである項目を検索します。
 
 これはフィルターのみの述語で、検索インデックスは利用できません。
 

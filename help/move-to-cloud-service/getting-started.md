@@ -1,15 +1,15 @@
 ---
-title: パートナーのExperience ManagerとしてのCloud Serviceへの移行ガイド
-description: パートナーのExperience ManagerとしてのCloud Serviceへの移行ガイド
+title: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
+description: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '2112'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
-# パートナーのCloud ServiceとしてのAdobe Experience Managerへの移行ガイド {#Overview}
+# パートナー向けAdobe Experience Manager as a Cloud Serviceへの移行ガイド {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
@@ -53,7 +53,7 @@ Experience Manager as a Cloud Service のデプロイメントをカスタマイ
 
 | ローカル開発セットアップ | 開始する前に知っておくべきこと |
 |-----------|------------|
-| <ol><li>詳しくは、[Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja#developing) のドキュメントを参照してください。</li><li>Dispatcher SDK のインストール方法については、「[Dispatcher SDK のインストール](https://video.tv.adobe.com/v/30601)」を視聴してください。</li><li>Dispatcher SDK の設定方法については、「[Dispatcher SDK の設定](https://video.tv.adobe.com/v/30602)」を視聴してください。</li><li>詳細については、[ローカル開発セットアップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up)のドキュメントを参照してください。</li><li>Experience Manager [ウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja#accessing)へのアクセスの設定</li></ol> | <ol><li>[開発の基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[開発のガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#developing)</li><li>[Experience Manager プロジェクト構造について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)</li><li>[Digital Foundation ブループリント](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ja#authoring)</li><li>[オーバーレイ](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager as a Cloud Service API レファレンス](https://docs.adobe.com/content/help/ja-JP/experience-manager-cloud-service-javadoc/)</li></ol> |
+| <ol><li>詳しくは、[Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja#developing) のドキュメントを参照してください。</li><li>Dispatcher SDK のインストール方法については、「[Dispatcher SDK のインストール](https://video.tv.adobe.com/v/30601)」を視聴してください。</li><li>Dispatcher SDK の設定方法については、「[Dispatcher SDK の設定](https://video.tv.adobe.com/v/30602)」を視聴してください。</li><li>詳細については、[ローカル開発セットアップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up)のドキュメントを参照してください。</li><li>Experience Manager [ウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja#accessing)へのアクセスの設定</li></ol> | <ol><li>[開発の基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[開発のガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#developing)</li><li>[Experience Manager プロジェクト構造について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)</li><li>[Digital Foundation ブループリント](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ja#authoring)</li><li>[オーバーレイ](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager as a Cloud Service API レファレンス](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
 > [WKND を開発し、ローカル Experience Manager SDK にデプロイする方法](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)に関するチュートリアルを参照してください。
