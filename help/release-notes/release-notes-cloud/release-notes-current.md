@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9eeb47dbca36f1b9f23e3ac4e0bee6594ffb7fda
+source-git-commit: 1be37bf1b6cb248bcc7d12f0d4039cfa12c90f7d
 workflow-type: tm+mt
 source-wordcount: '1488'
 ht-degree: 40%
@@ -210,14 +210,13 @@ Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
 
 ### リリース日 {#release-date-bpa-latest}
 
-Best Practices Analyzer v2.1.18 のリリース日は 2021 年 9 月 2 日です。
+Best Practices Analyzer v2.1.20 のリリース日は 2021 年 10 月 5 日です。
 
 ### 新機能 {#what-is-new}
 
-* ノード数の合計を検出し、レポートする機能。
+* ノード名の長さを検出し、レポートする機能。
 
-* ノードストアのタイプとサイズを検出し、レポートする機能。
+* 合計インデックスサイズを検出し、レポートする機能。
 
-### バグ修正 {#bug-fixes-bpa}
+* 元のレンディションがないアセットを検出し、レポートする機能。
 
-* BPA が誤ってコマース統合フレームワークの存在を検出しました。
