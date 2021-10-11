@@ -2,10 +2,10 @@
 title: コンテンツフラグメントのカスタマイズと拡張
 description: コンテンツフラグメントは、標準アセットを拡張します。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: c43b55243a73285b78447e32beb16b25608f6d3c
+source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -131,7 +131,7 @@ Assets コアと統合するには：
 
 * **翻訳**
 
-   コンテンツフラグメントは、[AEM翻訳ワークフロー](/help/sites-cloud/administering/translation/overview.md)と完全に統合されています。 つまり、アーキテクチャレベルでは以下を意味します。
+   コンテンツフラグメントは、[AEM翻訳ワークフロー ](/help/sites-cloud/administering/translation/overview.md) と完全に統合されています。 つまり、アーキテクチャレベルでは以下を意味します。
 
    * コンテンツフラグメントの個々の翻訳は、実際には別々のフラグメントです。例えば、以下のようになります。
 
@@ -166,7 +166,7 @@ Assets コアと統合するには：
 
 サーバー側 API を使用して、コンテンツフラグメントにアクセスできます。以下を参照してください。
 
-[com.adobe.cq.dam.cfm](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/package-summary.html#package.description)
 
 >[!CAUTION]
 >
@@ -176,7 +176,7 @@ Assets コアと統合するには：
 
 次の 3 つのインターフェイスが、入口の役割を果たします。
 
-* **コンテンツフラグメント**（[ContentFragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
+* **コンテンツフラグメント**（[ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)）
 
    このインターフェイスでは、コンテンツフラグメントを抽象化して使用できます。
 
@@ -202,7 +202,7 @@ Assets コアと統合するには：
 
    フラグメントの主要要素を表すインターフェイスには、次のものがあります。
 
-   * **コンテンツ要素**（[ContentElement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
+   * **コンテンツ要素**（[ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html)）
 
       * 基本データ（名前、タイトル、説明）を取得する
       * コンテンツを取得／設定する
@@ -214,7 +214,7 @@ Assets コアと統合するには：
          * バリエーションを削除する（[注意事項](#caveats)を参照）
          * バリエーションデータにアクセスする（`ContentVariation` を参照）
       * バリエーションを解決するためのショートカット（要素に指定されたバリエーションを使用できない場合は実装固有の追加のフォールバックロジックを適用）
-   * **コンテンツバリエーション**（[ContentVariation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
+   * **コンテンツバリエーション**（[ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html)）
 
       * 基本データ（名前、タイトル、説明）を取得する
       * コンテンツを取得／設定する
@@ -244,9 +244,9 @@ Assets コアと統合するには：
 
 * `ContentElement` は、次のものに適応させることができます。
 
-   * [`ElementTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
+   * [`ElementTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ElementTemplate.html) - 要素の構造に関する情報にアクセスするためのものです。
 
-* [`FragmentTemplate`](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
+* [`FragmentTemplate`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html)
 
 * `Resource` は、次のものに適応させることができます。
 
@@ -301,7 +301,7 @@ Assets コアと統合するには：
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-次に例を示します。
+例えば、次の操作が可能です。
 
 ```java
 // first, get the resource
@@ -317,7 +317,7 @@ if (fragmentResource != null) {
 
 新しいコンテンツフラグメントをプログラムで作成するには、モデルリソースから適合した `FragmentTemplate` を使用する必要があります。
 
-次に例を示します。
+例えば、次の操作が可能です。
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");
