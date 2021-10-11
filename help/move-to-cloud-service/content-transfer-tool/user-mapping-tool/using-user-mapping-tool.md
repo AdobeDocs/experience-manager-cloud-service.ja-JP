@@ -1,10 +1,10 @@
 ---
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
-source-git-commit: 9d131daf5b6a0b1530ebff48627f6130ef716f3e
+source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 61%
+source-wordcount: '596'
+ht-degree: 62%
 
 ---
 
@@ -31,20 +31,25 @@ ht-degree: 61%
 
 ユーザーマッピングツールは、コンテンツ転送ツールに統合されています。コンテンツ転送ツールは[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードできます。最新バージョンについて詳しくは、[最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を参照してください。
 
-1. Adobe Experience Managerを選択し、ツール/ **操作** -> **ユーザーマッピング** に移動します。
+1. Adobe Experience Manager を選択し、ツール／**運営**／**コンテンツ移行**&#x200B;に移動します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing1.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access1.png)
+
+1. **User Mapping** カードをクリックします。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access2.png)
 
 1. 「**ユーザーマッピング設定を作成**」をクリックします。
 
    >[!NOTE]
    >この手順をスキップすると、ユーザーおよびグループのマッピングは抽出段階でスキップされます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing2.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
    **User Management API 設定** のフィールドに、以下のように値を入力します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing3.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
+
 
    * **組織 ID**：ユーザーが移行する組織の Adobe Identity Management System（IMS）組織 ID を入力します。
 
@@ -59,6 +64,8 @@ ht-degree: 61%
       >アクセストークンの有効期限は 24 時間で切れるので、そのたびに新しいアクセストークンを作成する必要があります。新しいトークンを作成するには、[Adobe 開発者コンソール](https://console.adobe.io)に戻り、プロジェクトを選択し、「**User Management API**」をクリックして、同じ秘密鍵をボックスに貼り付けます。
 
 1. フィールドに値を入力したら、「**設定をテスト**」をクリックして、User Management API サービスへの接続をテストします。 接続に成功した場合は、「**保存**」をクリックして設定を保存できます。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
 1. 設定を保存したら、設定を選択し、「**Start User Mapping**」をクリックします。
 
