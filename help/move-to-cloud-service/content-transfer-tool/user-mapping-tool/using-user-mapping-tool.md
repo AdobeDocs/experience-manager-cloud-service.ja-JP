@@ -1,10 +1,10 @@
 ---
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
-source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
+source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 55%
+source-wordcount: '727'
+ht-degree: 52%
 
 ---
 
@@ -71,6 +71,10 @@ ht-degree: 55%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing4.png)
 
+1. ダイアログボックスで「**Start**」をクリックして、ユーザーマッピングプロセスを開始します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
 1. ユーザーマッピングが完了したら、「**結果**」をクリックして概要を表示します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
@@ -87,4 +91,22 @@ ht-degree: 55%
 * プロセス中に期限切れになったアクセストークン、または
 * 他の理由
 
-プロセスの停止場所から進行状況が保存されます。 ユーザーマッピングログを確認して、保存された進行状況を確認します。 「**ユーザーマッピングを開始**」ボタンをもう一度クリックすると、中断した場所から再開します。 再起動する前に、アクセストークンがまだ有効であるか、更新されていることを確認してください。
+   >[!NOTE]
+   >プロセスの停止場所から進行状況が保存されます。
+
+次の手順に従って、ユーザーマッピングプロセスを再開します。
+
+1. 「**ログを表示**」をクリックして、ユーザーマッピングログを確認し、保存された進行状況を確認します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
+
+1. 「**ユーザーマッピングを開始**」ボタンをもう一度クリックすると、中断した場所から再開します。
+
+   >[!NOTE]
+   >再起動する前に、アクセストークンがまだ有効であるか、更新されていることを確認してください。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
+
+1. ダイアログボックスで「**開始**」をクリックして、ユーザーマッピングプロセスを再開します。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
