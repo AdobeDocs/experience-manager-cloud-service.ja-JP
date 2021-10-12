@@ -1,10 +1,10 @@
 ---
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
-source-git-commit: 2f763f774b21b0c3b43d61964dda2d2ae596161a
+source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 62%
+source-wordcount: '680'
+ht-degree: 55%
 
 ---
 
@@ -76,4 +76,15 @@ ht-degree: 62%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。 「ユーザーマッピング」カードにステータスとタイムスタンプが表示されます。 「**コンテンツ転送**」をクリックして、抽出を実行する移行セットを作成します。 詳しくは、[ コンテンツ転送ツールの実行 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) を参照してください。
+   >* ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。 「ユーザーマッピング」カードにステータスとタイムスタンプが表示されます。 「**コンテンツ転送**」をクリックして、抽出を実行する移行セットを作成します。 詳しくは、[ コンテンツ転送ツールの実行 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) を参照してください。
+
+
+### ユーザー・マッピング・プロセスの再開 {#resume-user-mapping}
+
+次のいずれかの理由でユーザーマッピングプロセスが停止した場合：
+
+* ユーザーが「**ユーザーマッピングの停止**」を選択しました
+* プロセス中に期限切れになったアクセストークン、または
+* 何か別の理由が
+
+プロセスの停止場所から進行状況が保存されます。 ユーザーマッピングログを確認して、保存された進行状況を確認します。 「**ユーザーマッピングを開始**」ボタンをもう一度クリックすると、中断した場所から再開します。 再起動する前に、アクセストークンがまだ有効であるか、更新されていることを確認してください。

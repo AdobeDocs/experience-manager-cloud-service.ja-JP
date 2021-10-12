@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b71c624e3662129a6a081d095975ee86b60578ac
+source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 39%
+source-wordcount: '1508'
+ht-degree: 40%
 
 ---
 
@@ -197,12 +197,12 @@ Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* ユーザーマッピングが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが提供されました。 詳しくは、[ ユーザーマッピングツールの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) を参照してください。
+* ユーザーマッピングツールが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが実現しました。 詳しくは、[ ユーザーマッピングツールの使用 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html) を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストする
    * エラーを適切にスキップし、ユーザーマッピングアクティビティを続行します
-   * アクセストークンの有効期限が（24 時間後に）切れても、ユーザーマッピングが失敗しなくなりました。 ユーザーマッピングは、最後に停止した場所から再実行できます。
+   * **アクセストークン** の有効期限が 24 時間後に切れても、ユーザーマッピングが失敗しなくなりました。 ユーザーマッピングは、最後に停止した場所から再実行できます。
 
-* CTT の堅牢性を高めるために、コンテンツを一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。
+* コンテンツ転送ツールの堅牢性を高めるために、コンテンツを一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja)を参照してください。
 
 * バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
 
