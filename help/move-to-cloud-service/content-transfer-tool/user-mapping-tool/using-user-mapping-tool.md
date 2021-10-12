@@ -1,7 +1,7 @@
 ---
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
-source-git-commit: 6ab32a952a53eed612192ee8359373087e6cf624
+source-git-commit: 77c412c1050be8843e7185b0511a9d7af41669e3
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 55%
@@ -79,12 +79,12 @@ ht-degree: 55%
    >* ユーザーマッピングが完了したら、パンくずリストを使用してコンテンツ移行ページに戻ることができます。 「ユーザーマッピング」カードにステータスとタイムスタンプが表示されます。 「**コンテンツ転送**」をクリックして、抽出を実行する移行セットを作成します。 詳しくは、[ コンテンツ転送ツールの実行 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-tool) を参照してください。
 
 
-### ユーザー・マッピング・プロセスの再開 {#resume-user-mapping}
+### ユーザー・マッピング・プロセスの再開 {#resume-user-mapping-process}
 
 次のいずれかの理由でユーザーマッピングプロセスが停止した場合：
 
 * ユーザーが「**ユーザーマッピングの停止**」を選択しました
 * プロセス中に期限切れになったアクセストークン、または
-* 何か別の理由が
+* 他の理由
 
 プロセスの停止場所から進行状況が保存されます。 ユーザーマッピングログを確認して、保存された進行状況を確認します。 「**ユーザーマッピングを開始**」ボタンをもう一度クリックすると、中断した場所から再開します。 再起動する前に、アクセストークンがまだ有効であるか、更新されていることを確認してください。
