@@ -1,10 +1,10 @@
 ---
 title: ユーザーマッピングツールの使用
 description: ユーザーマッピングツールの使用
-source-git-commit: 25b4bfb624866cb615fca32377e43c05a597cd67
+source-git-commit: 32220016fbe8c0ac0f906e62098398d4508af4cd
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 52%
+source-wordcount: '734'
+ht-degree: 51%
 
 ---
 
@@ -74,6 +74,11 @@ ht-degree: 52%
 1. ダイアログボックスで「**Start**」をクリックして、ユーザーマッピングプロセスを開始します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
+
+   **ステータス** が **RUNNING** と表示されます。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
+
 
 1. ユーザーマッピングが完了したら、「**結果**」をクリックして概要を表示します。
 
