@@ -1,10 +1,10 @@
 ---
 title: コンテンツ転送ツールでの Target へのコンテンツの取り込み
 description: コンテンツ転送ツールでの Target へのコンテンツの取り込み
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 68%
+ht-degree: 66%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 68%
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-03.png)
 
-   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs)も参照してください。
+   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)も参照してください。
 
 1. 取り込みが完了すると、ステータスが **FINISHED** に更新されます。
 

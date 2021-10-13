@@ -2,9 +2,9 @@
 title: 大きなコンテンツリポジトリの処理
 description: この節では、大きなコンテンツリポジトリの処理について説明します
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
+source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1282'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ AzCopy のサポートは、CTT 1.5.4 リリースに含まれています。 CT
 
 ### 3. azcopy.config ファイルを設定する {#configure-azcopy-config-file}
 
-ソースAEMインスタンスの crx-quickstart/cloud-migration で、 azcopy.config という新しいファイルを作成します。
+ソースAEMインスタンスの `crx-quickstart/cloud-migration` で、 azcopy.config という新しいファイルを作成します。
 
 この設定ファイルの内容は、ソースAEMインスタンスが Azure とAmazon S3 のどちらのデータストアを使用しているかによって異なります。
 
@@ -106,7 +106,8 @@ s3SecretKey=--REDACTED--
 
 上記の構成ファイルを配置すると、AzCopy の事前コピーフェーズは、後続の抽出のすべての一部として実行されます。 このファイルの実行を防ぐには、このファイルの名前を変更するか、削除します。
 
-1. CTT UI からの抽出を開始します。 詳しくは、[ コンテンツ転送ツールの実行 ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#running-tool) および [ 抽出プロセス ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#extraction-process) を参照してください。
+1. CTT UI からの抽出を開始します。 詳しくは、[ コンテンツ転送ツールの概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) および [ 抽出プロセス ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) を参照してください。
+
 1. 抽出ログに次の行が印刷されていることを確認します。
 
 ```
@@ -143,7 +144,7 @@ AzCopy に問題が発生した場合、抽出は直ちに失敗し、抽出ロ�
 
 取り込み中に AzCopy を利用するには、少なくともバージョン 2021.6.5561 のAEMas a Cloud Serviceバージョンを使用する必要があります。
 
-CTT UI からのオーサーの取り込みを開始します。 詳しくは、[ インジェストプロセス ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#ingestion-process) を参照してください。
+CTT UI からのオーサーの取り込みを開始します。 詳しくは、[ インジェストプロセス ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) を参照してください。
 AzCopy のログエントリがインジェストログに表示されます。 次のようになります。
 
 ```

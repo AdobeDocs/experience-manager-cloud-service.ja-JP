@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
+source-git-commit: 8814627c3144d657b564fee839ace8e4bdcf6f78
 workflow-type: tm+mt
-source-wordcount: '1603'
-ht-degree: 37%
+source-wordcount: '1605'
+ht-degree: 36%
 
 ---
 
@@ -208,7 +208,7 @@ Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
    * エラーを適切にスキップし、ユーザーマッピングアクティビティを続行します
    * **アクセストークン** の有効期限が 24 時間後に切れても、ユーザーマッピングが失敗しなくなりました。 ユーザーマッピングは、最後に停止した場所から再実行できます。
 
-* コンテンツ転送ツールの堅牢性を高めるために、コンテンツを一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja)を参照してください。
+* コンテンツ転送ツールの堅牢性を高めるために、コンテンツを一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 詳しくは、[ コンテンツ転送ツールの概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。
 
 * バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
 
