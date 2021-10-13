@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
+source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 57%
+source-wordcount: '177'
+ht-degree: 54%
 
 ---
 
@@ -38,8 +38,12 @@ ht-degree: 57%
       + [概要](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
       + [コンテンツ転送ツールの前提条件](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
       + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-      + [コンテンツ転送ツールの概要](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [コンテンツ転送ツールの概要](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [大きなコンテンツリポジトリの処理](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
+      + [コンテンツ転送ツールでのソースからのコンテンツの抽出](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [コンテンツ転送ツールでの Target へのコンテンツの取り込み](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [移行セットのログの表示](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
+      + [移行セットの削除](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + ユーザーマッピングツール {#user-mapping-tool}
          + [概要](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
