@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 70811e1ba231dbd9a4bdf8764a4d93ba49413d0e
+source-git-commit: a309e668cb99231b274cf933c8392df873f33a81
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '151'
+ht-degree: 57%
 
 ---
 
@@ -35,9 +35,11 @@ ht-degree: 0%
       + [概要](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)
       + [ベストプラクティスアナライザーの使用](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md)
    + コンテンツ転送ツール {#content-transfer-tool}
-      + [概要](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)
-      + [コンテンツ転送ツールの前提条件](/help/move-to-cloud-service/content-transfer-tool/prerequisites-content-transfer-tool.md)
-      + [大きなコンテンツリポジトリの処理](/help/move-to-cloud-service/content-transfer-tool/handling-large-content-repositories.md)
+      + [概要](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
+      + [コンテンツ転送ツールの前提条件](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
+      + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
+      + [コンテンツ転送ツールの概要](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/gettting-started-content-transfer-tool.md)
+      + [大きなコンテンツリポジトリの処理](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
       + [コンテンツ転送ツールの使用](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)
       + ユーザーマッピングツール {#user-mapping-tool}
          + [概要](/help/move-to-cloud-service/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md)
