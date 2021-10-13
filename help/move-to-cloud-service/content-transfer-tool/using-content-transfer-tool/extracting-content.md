@@ -1,10 +1,10 @@
 ---
 title: コンテンツ転送ツールでのソースからのコンテンツの抽出
 description: コンテンツ転送ツールでのソースからのコンテンツの抽出
-source-git-commit: 5b569ab1b1cca7e5ec46b872f8726fddfc8b8d14
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 69%
+source-wordcount: '526'
+ht-degree: 63%
 
 ---
 
@@ -60,3 +60,7 @@ ht-degree: 69%
    >「**抽出時にステージングコンテナを上書き**」オプションを無効にしてください。
    >
    >![画像](/help/move-to-cloud-service/content-transfer-tool/assets/11-topup-extraction.png)
+
+## 次の手順 {#whats-next}
+
+コンテンツ転送ツールでソースからのコンテンツの抽出について学習したら、コンテンツ転送ツールでの取り込みプロセスについて学習する準備が整いました。 コンテンツ転送ツールから移行セットを取り込む方法については、[ コンテンツ転送ツールでの Target へのコンテンツの取り込み ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照してください。

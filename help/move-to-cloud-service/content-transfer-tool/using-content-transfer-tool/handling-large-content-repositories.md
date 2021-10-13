@@ -2,9 +2,9 @@
 title: 大きなコンテンツリポジトリの処理
 description: この節では、大きなコンテンツリポジトリの処理について説明します
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: 5ae76fbc3926f5e2cd7ed5597a9d4521adc9ddb1
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -174,3 +174,7 @@ Final Job Status: CompletedWithSkipped
  
 *************** Completed AzCopy pre-copy phase ***************
 ```
+
+## 次の手順 {#whats-next}
+
+大きなコンテンツリポジトリの処理を学習し、コンテンツをAEM as a Cloud Serviceに移動するために、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮したら、コンテンツ転送ツールの抽出プロセスを学習します。 コンテンツ転送ツールから移行セットを抽出する方法については、[ コンテンツ転送ツールでのソースからのコンテンツの抽出 ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) を参照してください。
