@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service用のアドバンスドネットワークの設定
 description: VPN やAEM as a Cloud Service用の専用の出力 IP アドレスなど、高度なネットワーク機能を設定する方法を説明します
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 7%
@@ -81,17 +81,15 @@ API は数秒で応答し、更新のステータスを示し、約 10 分後に
 例えば、`www.example.com:8443` に要求を送信するコード例を次に示します。
 
 ```java
-HttpsHost target = new HttpsHost("example.com", 8443, "https");
+String url = "www.example.com:8443"
+var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
  
-HttpHost proxy = new HttpHost(System.getenv("AEM_HTTPS_PROXY_HOST"),
-                              Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT")),
-                              "https");
- 
-RequestConfig config = RequestConfig.custom().setProxy(proxy).build();
- 
-HttpGet request = new HttpGet("/");
-request.setConfig(config);
-CloseableHttpResponse response = httpclient.execute(target, request);
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 ```
 
 非標準の Java ネットワークライブラリを使用する場合は、上記のプロパティを使用して、すべてのトラフィックにプロキシを設定します。
