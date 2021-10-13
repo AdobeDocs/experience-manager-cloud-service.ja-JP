@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 19c84c9acaf8202dcb96ff25b4d674555ebc2d92
+source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 70%
@@ -103,7 +103,7 @@ ht-degree: 70%
 
 1. 移行セットが **コンテンツ転送** ウィザードに表示されます（下図を参照）。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/04-item-selection-and-quick-actions.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
 
    既存のすべての移行セットが、現在のステータスとステータス情報と共に **コンテンツ転送** ウィザードに表示されます。 以下に示すアイコンの一部が表示されます。
 
