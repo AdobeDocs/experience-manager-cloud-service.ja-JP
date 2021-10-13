@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの使用
 description: コンテンツ転送ツールの使用
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: cde5514a0585dc0c882369e7603a62366d009a8c
+source-git-commit: dbca0404c310bc0fa9372347bb7b37649adf8b94
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3193'
 ht-degree: 81%
 
 ---
@@ -83,26 +83,24 @@ ht-degree: 81%
 
 1. Adobe Experience Manager を選択し、ツール／**運営**／**コンテンツ移行**&#x200B;に移動します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card01.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. **コンテンツ移行**&#x200B;ウィザードから「**コンテンツ転送**」オプションを選択します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/ctt-entry-card02.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 最初の移行セットを作成すると、次のコンソールが表示されます。「**移行セットを作成**」をクリックして、新しい移行セットを作成します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/01-create-migrationset.png)
-
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >既存の移行セットがある場合、コンソールには既存の移行セットのリストが表示され、現在のステータスが表示されます
 
-   さらに、「**ユーザーマッピング設定を作成**」をクリックして、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#using-user-mapping-tool)にアクセスします。
 
 1. **移行セットを作成**&#x200B;画面の各フィールドに、以下のように値を入力します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/migration-set-creation-04.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **名前**：移行セットの名前を入力します。
       >[!NOTE]
@@ -122,6 +120,9 @@ ht-degree: 81%
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
       1. **バージョンを含める**：必要に応じて選択します。バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
+
+      ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+
       >[!NOTE]
       >バージョンを移行セットの一部として含め、`wipe=false` で追加処理を実行する場合は、コンテンツ転送ツールでの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、`wipe=true` としてインジェストを実行する必要があります。
 
@@ -136,6 +137,7 @@ ht-degree: 81%
          >* `/libs`
          >* `/home`
          >* `/etc`（`/etc` の一部のパスは CTT で選択できます）
+
 
 
 
