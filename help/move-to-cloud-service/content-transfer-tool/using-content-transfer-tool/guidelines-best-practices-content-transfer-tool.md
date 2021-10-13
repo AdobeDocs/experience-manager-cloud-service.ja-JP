@@ -1,10 +1,10 @@
 ---
 title: コンテンツ転送ツール使用のガイドラインとベストプラクティス
 description: コンテンツ転送ツール使用のガイドラインとベストプラクティス
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 86%
+source-wordcount: '1503'
+ht-degree: 83%
 
 ---
 
@@ -80,3 +80,7 @@ ht-degree: 86%
 * 追加の作業を行う場合は、最初の抽出を実行した時点からに行った時点まで、既存のコンテンツのコンテンツ構造を変更しないことが重要です。 最初の抽出以降に構造が変更されたコンテンツに対しては、追加は実行できません。 移行プロセス中は、必ずこの制限をおこなってください。
 
 * バージョンを移行セットの一部として含め、`wipe=false` で追加処理を実行する場合は、コンテンツ転送ツールでの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、`wipe=true` としてインジェストを実行する必要があります。
+
+## 次の手順 {#whats-next}
+
+コンテンツ転送ツールの使用に関するガイドライン、ベストプラクティス、重要な考慮事項を学習したら、移行セットの作成から始めて、ツールをインストールして使用する準備が整いました。 詳しくは、[ コンテンツ転送の手引き ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。

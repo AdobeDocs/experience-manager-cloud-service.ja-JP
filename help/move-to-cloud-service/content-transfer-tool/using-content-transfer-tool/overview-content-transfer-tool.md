@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: 4715937e-4c4c-4680-af15-016db4fe7db9
-source-git-commit: bdcc5cfc229fd5b1fd1f70e37c7231ed3f727e72
+source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '496'
+ht-degree: 88%
 
 ---
 
@@ -54,4 +54,7 @@ ht-degree: 100%
 
 インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、[追加インジェスト](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md#top-up-ingestion-process)を参照してください。
 
+## 次の手順 {#whats-next}
+
+コンテンツ転送ツールの概要と、このツールを使用して既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移動する方法を学習したら、[ コンテンツ転送ツールの前提条件 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=en) を確認する必要があります。
 
