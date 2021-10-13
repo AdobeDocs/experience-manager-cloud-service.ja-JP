@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8382dc404ed8d5525e466de8ca79d1db70ce93f5
+source-git-commit: f104f67af759e76c51d9cc125be5046aa8e62711
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 40%
+source-wordcount: '1603'
+ht-degree: 37%
 
 ---
 
@@ -42,10 +42,16 @@ ht-degree: 40%
 
 ### [!DNL Assets] の新機能 {#assets-features}
 
+* Adobe Document CloudのネイティブのPDFツールと注釈ツールを使用した注釈ファイルの注釈がサポートされるようになりました。 PDFのコンテンツに注釈を付けるには、ドキュメントのプレビューウィンドウ内で、テキスト、ハイライト、付箋、図面を直接追加します。 特定のコメントをクリックして、PDFの対象ページにジャンプすることもできます
+
 * 列表示およびカード表示で、検索結果に表示されたアセットを並べ替えることができるようになりました。 並べ替えは、「名前」、「作成済み」、「変更済み」、「なし」の各列で行います。
 
    ![列表示およびカード表示での [!DNL Assets] 検索結果の並べ替え](/help/assets/assets/sort-searched-assets.png)
    *図：列表示およびカード表示で [!DNL Assets] 検索結果を並べ替えます。*
+
+### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
+
+* [!DNL Assets] には、オーディオおよびビデオの転写用の [!DNL Azure Media Services] コネクタが組み込まれました。設定すると、サポートされているファイルが自動的に書き出され、WebVTT ファイルが生成されます。 WebVTT キャプションは、サブタイトルとして使用する検索、キャプション、翻訳をより効果的に行うために使用します。
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -56,8 +62,8 @@ ht-degree: 40%
 
 ### New feature in the [!DNL Assets] prerelease channel {#assets-prerelease-features}
 
-Apparently, no new Assets features in Sep beta channel.
-A/V transcription feature via CQ-4303854 has moved to Oct beta now.
+Apparently, no new Assets features in Sep prerelease channel.
+A/V transcription feature via CQ-4303854 has moved to Oct prerelease now.
 
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
