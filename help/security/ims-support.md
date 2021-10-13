@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 270a38412c14a869676ea6aa60428b319fa6228d
+source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 97%
+source-wordcount: '2022'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->AEM as a Cloud Serviceの IMS ログインでは、Admin Console内のネストされたグループはサポートされません。
+>AEMは、現在、プロファイルへのグループの割り当てをサポートしていません。 代わりに、ユーザーは個別に追加する必要があります。
 
 ## 主なハイライト {#key-highlights}
 
