@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: 29211dd24346c10ffc634073c66881709990c6b7
+source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 50%
+source-wordcount: '178'
+ht-degree: 52%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 50%
       + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
       + [コンテンツ転送ツールの概要](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
       + [大きなコンテンツリポジトリの処理](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-      + [コンテンツ転送ツールでのソースからのコンテンツの抽出](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
-      + [コンテンツ転送ツールでの Target へのコンテンツの取り込み](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+      + [ソースからのコンテンツの抽出](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+      + [Target へのコンテンツの取り込み](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
       + [移行セットのログの表示](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
       + [移行セットの削除](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
       + [パブリッシュインスタンスでのコンテンツ転送ツールの実行](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)

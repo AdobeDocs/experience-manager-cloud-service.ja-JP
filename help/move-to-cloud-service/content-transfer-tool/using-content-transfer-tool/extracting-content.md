@@ -1,15 +1,15 @@
 ---
-title: コンテンツ転送ツールでのソースからのコンテンツの抽出
-description: コンテンツ転送ツールでのソースからのコンテンツの抽出
-source-git-commit: 0316ba8ee66695836a676ab764ce1f0cb415f95d
+title: ソースからのコンテンツの抽出
+description: ソースからのコンテンツの抽出
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 50%
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 
-# コンテンツ転送ツールでのソースからのコンテンツの抽出 {#extracting-content}
+# ソースからのコンテンツの抽出 {#extracting-content}
 
 ## コンテンツ転送ツールでの抽出プロセス {#extraction-process}
 

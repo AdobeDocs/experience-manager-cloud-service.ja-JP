@@ -1,15 +1,15 @@
 ---
-title: コンテンツ転送ツールでの Target へのコンテンツの取り込み
-description: コンテンツ転送ツールでの Target へのコンテンツの取り込み
-source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
+title: Target へのコンテンツの取り込み
+description: Target へのコンテンツの取り込み
+source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 54%
+source-wordcount: '542'
+ht-degree: 55%
 
 ---
 
 
-# コンテンツ転送ツールでの Target へのコンテンツの取り込み {#ingesting-content}
+# Target へのコンテンツの取り込み {#ingesting-content}
 
 ## コンテンツ転送ツールのインジェストプロセス {#ingestion-process}
 
