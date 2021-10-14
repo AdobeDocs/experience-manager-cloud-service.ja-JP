@@ -5,9 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1049'
 ht-degree: 92%
 
 ---
@@ -18,8 +18,9 @@ ht-degree: 92%
 + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
 + Cloud Manager の使用 {#using-cloud-manager}
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [リリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [リリースノート（2021.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [リリースノート（2021.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
          + [リリースノート（2021.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
