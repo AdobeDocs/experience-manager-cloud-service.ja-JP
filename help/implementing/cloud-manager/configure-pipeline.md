@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
+source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 77%
+source-wordcount: '1008'
+ht-degree: 74%
 
 ---
 
@@ -129,7 +129,10 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. 「**ソース**」タブでは、Web 層の設定を無視し、「**実稼動デプロイメントオプション**」から更新できます。
+   1. 「**ソース**」タブには、パイプラインの Web 層設定を無視するオプションと、「**実稼動環境へのデプロイ前に一時停止**」および「**スケジュール済み**」オプションのチェックまたはオフを切り替えるオプションがあります。****
+
+      >[!NOTE]
+      >**「Web 層の設定を無視**」をオフにした場合、パイプラインは Web 層の設定もデプロイします。
 
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
