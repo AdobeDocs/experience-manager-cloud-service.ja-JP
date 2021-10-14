@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
+source-git-commit: 0161c1f5a2dac98316abcf28aef70cb23f9a1147
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 78%
+source-wordcount: '976'
+ht-degree: 77%
 
 ---
 
@@ -25,11 +25,11 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
    詳細は、[非実稼動パイプラインとコード品質専用パイプライン](configure-pipeline.md#non-production-pipelines)を参照してください。
 
->[!NOTE]
->パイプラインを設定するには、次の操作を行う必要があります。
-> * パイプラインを開始するトリガーの定義
-> * 実稼動デプロイメントを制御するパラメーターの定義
-> * パフォーマンステストパラメーターの設定
+   >[!NOTE]
+   >パイプラインを設定するには、次の操作を行う必要があります。
+   > * パイプラインを開始するトリガーの定義
+   > * 実稼動デプロイメントを制御するパラメーターの定義
+   > * パフォーマンステストパラメーターの設定
 
 
 ## 実稼働パイプラインの設定 {#setting-up-production-pipeline}
@@ -109,37 +109,39 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 ### 実稼動パイプラインの編集 {#editing-prod-pipeline}
 
-パイプライン設定は、**プログラムの概要**&#x200B;ページから編集できます。
+パイプライン設定は、**プログラムの概要** ページで編集できます。
 
 設定したパイプラインを編集するには、次の手順に従います。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
-1. **パイプライン**&#x200B;カードの&#x200B;**「**&#x200B;を編集」をクリックします。
+1. **をクリックします…** パイプライン **カードから** を開き、**編集** をクリックします（下図を参照）。
 
-   ![](assets/configure-pipeline/edit-pipeline-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit1.png)
 
-1. 「**ソースコード**」タブを使用すると、リポジトリを更新できます。 「**Access Repo Info**」をクリックして、リポジトリを更新します。
+1. **実稼動パイプラインを編集** ダイアログボックスが表示されます。
 
-   >[!NOTE]
-   >Cloud Managerでリポジトリを追加および管理する方法については、[リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)を参照してください。
+   1. 「**設定**」タブを使用すると、**パイプライン名**、**デプロイメントトリガー**、**重要な指標の失敗動作** を更新できます。
 
-   ![](assets/configure-pipeline/edit-pipeline-2.png)
+      >[!NOTE]
+      >Cloud Manager でリポジトリを追加および管理する方法については、[ リポジトリの追加と管理 ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) を参照してください。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-1. 「**環境**」タブでは、ステージおよび実稼動環境のオプションを更新できます。
+   1. 「**ソース**」タブでは、Web 層の設定を無視し、「**実稼動デプロイメントオプション**」から更新できます。
 
-   ![](assets/configure-pipeline/edit-pipeline-3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
 
-1. 「**エクスペリエンス監査**」オプションを使用すると、新しいページを更新または追加できます。
+   1. 「**エクスペリエンス監査**」オプションを使用すると、新しいページを更新または追加できます。
 
-   ![](assets/configure-pipeline/edit-pipeline-4.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
-1. パイプラインの編集が完了したら、「**保存**」をクリックします。
+1. パイプラインの編集が完了したら、「**更新**」をクリックします。
 
 ## 非実稼動パイプラインとコード品質専用パイプライン {#non-production-pipelines}
 
-ステージングおよび実稼動環境にデプロイするメインパイプラインに加えて、顧客は、**実稼動以外のパイプライン**&#x200B;と呼ばれる追加のパイプラインを設定できます。このパイプラインでは、常にビルドステップとコード品質ステップを実行します。オプションで、AEM as a Experience Cloud環境にデプロイすることもできます。
+ステージングおよび実稼動環境にデプロイするメインパイプラインに加えて、顧客は、**実稼動以外のパイプライン**&#x200B;と呼ばれる追加のパイプラインを設定できます。このパイプラインでは、常にビルドステップとコード品質ステップを実行します。オプションで、AEM as a Cloud Service環境にデプロイすることもできます。
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
@@ -153,7 +155,7 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
    ![](assets/non-prod-pipe1.png)
 
-1. 「**保存**」をクリックすると、パイプラインがホーム画面のカードに5つのアクションと共に表示されます（下図を参照）。
+1. 「**保存**」をクリックすると、パイプラインがホーム画面のカードに 5 つのアクションと共に表示されます（下図を参照）。
 
    ![](/help/implementing/cloud-manager/assets/prod-one.png)
 
@@ -165,11 +167,11 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 ### 実稼動以外のパイプラインの編集 {#editing-nonprod-pipeline}
 
-パイプライン設定は、**プログラムの概要**&#x200B;ページから編集できます。
+パイプライン設定は、**プログラムの概要** ページで編集できます。
 
-設定済みの非実稼動パイプラインを編集するには、以下の手順に従います。
+次の手順に従って、設定済みの非実稼動パイプラインを編集します。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
 1. 「**非実稼動**」タブを選択し、目的のパイプラインを選択した後、「**編集**」をクリックします。
 
