@@ -1,10 +1,10 @@
 ---
 title: コンテンツ転送ツールでの Target へのコンテンツの取り込み
 description: コンテンツ転送ツールでの Target へのコンテンツの取り込み
-source-git-commit: d638fe0f4711bd152bd9c4be99a68662f12072e6
+source-git-commit: 253ec197947cfa3aa3f1e4f84be1226981a90fe0
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 63%
+source-wordcount: '554'
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 63%
 
 1. 取り込みが完了すると、「**作成者取り込み**」のステータスが「**完了**」に更新されます。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/15-ingestion-complete.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ingestion-05.png)
 
 ## 追加インジェスト {#top-up-ingestion-process}
 
@@ -58,9 +58,18 @@ ht-degree: 63%
 
 インジェストプロセスが完了したら、追加インジェスト方式を使用して差分コンテンツを転送できます。それには、次の手順に従います。
 
-1. *概要*&#x200B;ページに移動し、追加取得の実行対象となる移行セットを選択します。「**取得**」をクリックして、追加取得を開始します。**移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
+1. **コンテンツ転送** ウィザードに移動し、追加取り込みの実行対象となる移行セットを選択します。 「**取り込み**」をクリックして、追加インジェストを開始します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/content-ingestion-02.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest1.png)
+
+
+1. **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。
+
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/topup-ingest2.png)
 
    >[!IMPORTANT]
    >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。
+
+## 次の手順 {#whats-next}
+
+コンテンツ転送ツールでコンテンツの Target への取り込みを学習したら、各手順（抽出と取り込み）が完了したときにログを表示し、エラーを探すことができます。 詳しくは、[ 移行セットのログの表示 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) を参照してください。
