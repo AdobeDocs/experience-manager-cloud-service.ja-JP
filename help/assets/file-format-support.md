@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: a3e884347e87358d7e0ab8d0fe9d416f15b184ab
+source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '775'
 ht-degree: 100%
 
 ---
@@ -214,8 +214,6 @@ ht-degree: 100%
 | WebM | WebM | Google VP8 | - |
 | OGV、OGG | Ogg | Theora、VP3、Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM、RM | RealVideo | サポート対象外 | Real G2（RV20）、Real 8（RV30）、Real 10（RV40） |
-| MJ2 | Motion JPEG2000 | Motion JPEG 2000 codec | - |
 
 ## オーディオ形式 {#audio-formats}
 
