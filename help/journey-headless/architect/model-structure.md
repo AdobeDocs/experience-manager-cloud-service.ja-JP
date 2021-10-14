@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '700'
 ht-degree: 16%
 
 ---
@@ -100,6 +100,10 @@ At the very start you need to enable Content Fragment Models for your site, this
 >[!NOTE]
 >
 >作成者が、まだモデルが公開されていないコンテンツフラグメントを公開しようとすると、選択リストにその旨が示され、モデルはフラグメントと共に公開されます。
+
+>[!NOTE]
+>
+>ロック（公開）されたコンテンツフラグメントモデル機能はベータ版です。
 
 モデルが公開されるとすぐに、オーサー環境では *ロック* が読み取り専用モードになります。 これは、特にパブリッシュ環境で、既存の GraphQL スキーマやクエリにエラーを引き起こす変更を防ぐことを目的としています。 コンソールには、**Locked** が表示されます。
 
