@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03f9a566d56acee12e5c1855df063e5db2bc59c1
+source-git-commit: 16e3280d7eaf53d8f944a60ec93b21c6676f0133
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 74%
+source-wordcount: '1063'
+ht-degree: 64%
 
 ---
 
@@ -129,12 +129,9 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit2.png)
 
 
-   1. 「**ソース**」タブには、パイプラインの Web 層設定を無視するオプションと、「**実稼動環境へのデプロイ前に一時停止**」および「**スケジュール済み**」オプションのチェックまたはオフを切り替えるオプションがあります。****
+   1. 「**ソース**」タブには、「**実稼動環境** にデプロイする前に一時停止」および「**実稼動環境のデプロイメントオプション**」の「**スケジュール済み**」オプションをオンまたはオフにするオプションがあります。
 
-      >[!NOTE]
-      >**「Web 層の設定を無視**」をオフにした場合、パイプラインは Web 層の設定もデプロイします。
-
-      ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit3.png)
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-editnotier.png)
 
    1. 「**エクスペリエンス監査**」オプションを使用すると、新しいページを更新または追加できます。
 
@@ -148,41 +145,59 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 ホーム画面には、このパイプラインが新しいカードに一覧表示されます。
 
-1. Cloud Manager のホーム画面から「**実稼動以外のパイプライン**」タイルにアクセスします。
+1. Cloud Manager のホーム画面から **パイプライン** カードにアクセスします。 「**+追加**」をクリックし、「**非実稼動パイプラインを追加**」を選択します。
 
-   ![](/help/implementing/cloud-manager/assets/non-prod-add.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add1.png)
 
-1. 「**追加**」ボタンをクリックして、「パイプライン名」、「パイプラインタイプ」、「Git ブランチ」を指定します。
+1. **非実稼動パイプラインを追加ダ**  イアログボックスが表示されます。作成するパイプラインのタイプを、**コード品質パイプライン** または **デプロイメントパイプライン** のいずれかから選択します。
 
-   さらに、パイプラインオプションから「デプロイメントトリガー」と「重要なエラー時の動作」も設定できます。
+   さらに、**デプロイメントトリガー** から、**デプロイメントオプション** と **重要な失敗動作** を設定することもできます。 「**続行**」をクリックします。
 
-   ![](assets/non-prod-pipe1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add2.png)
 
-1. 「**保存**」をクリックすると、パイプラインがホーム画面のカードに 5 つのアクションと共に表示されます（下図を参照）。
+1. **完全なスタックコ** ードが選択されます。**リポジトリ** と **Git ブランチ** を選択できます。 「**保存**」をクリックします。
 
-   ![](/help/implementing/cloud-manager/assets/prod-one.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
 
-   * **編集** - パイプライン設定を編集できます
-   * **詳細**  — パイプライン実行の詳細を提供します。
-   * **ビルド** - 実行ページに移動し、そこからパイプラインを実行できるようになります
-   * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします
+1. 新しく作成した非実稼動パイプラインが **パイプライン** カードに表示されるようになりました。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add4.png)
+
+
+   パイプラインは、次に示すように、3 つのアクションと共にホーム画面のカードに表示されます。
+
+   * **** を追加 — 新しいパイプラインを追加できます。
+   * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします.
    * **詳細情報** - CI／CD パイプラインのドキュメントリソースの概要に移動します。
 
 ### 実稼動以外のパイプラインの編集 {#editing-nonprod-pipeline}
 
-パイプライン設定は、**プログラムの概要** ページで編集できます。
+**プログラムの概要** ページから、**パイプラインカード** からパイプライン設定を編集できます。
 
 次の手順に従って、設定済みの非実稼動パイプラインを編集します。
 
 1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 
-1. 「**非実稼動**」タブを選択し、目的のパイプラインを選択した後、「**編集**」をクリックします。
+1. 非実稼動パイプラインを選択し、「**...」をクリックします。**. 下の図に示すように、「**編集**」をクリックします。
 
-   ![](assets/configure-pipeline/non-prod-edit-1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit1.png)
 
-1. 目的のリポジトリとその他必要な更新を選択し、「**保存**」をクリックします。
+1. **実稼動パイプラインを編集** ダイアログボックスが表示されます。
 
-   ![](assets/configure-pipeline/edit-nonprodenv.png)
+   1. 「**設定**」タブを使用すると、**パイプライン名**、**デプロイメントトリガー**、**重要な指標の失敗動作** を更新できます。
+
+      >[!NOTE]
+      >Cloud Manager でリポジトリを追加および管理する方法については、[ リポジトリの追加と管理 ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) を参照してください。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit2.png)
+
+
+   1. 「**ソースコード**」タブでは、**リポジトリ** と **Git ブランチ** を更新できます。
+
+      ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
+
+1. 非実稼動パイプラインの編集が完了したら、「**更新**」をクリックします。
+
 
 ## 次の手順 {#the-next-steps}
 
