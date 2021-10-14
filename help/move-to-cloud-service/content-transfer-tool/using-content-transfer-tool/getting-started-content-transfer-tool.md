@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: eae5b6a8903f68d4736e44db9a9e598716a15b75
+source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 70%
+source-wordcount: '742'
+ht-degree: 68%
 
 ---
 
@@ -79,13 +79,11 @@ ht-degree: 70%
 
       1. **バージョンを含める**：必要に応じて選択します。バージョンを含めると、パス `/var/audit` が自動的に含まれ、監査イベントを移行します。
 
-      ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
-      >[!NOTE]
-      >バージョンを移行セットの一部として含め、`wipe=false` で追加処理を実行する場合は、コンテンツ転送ツールでの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、`wipe=true` としてインジェストを実行する必要があります。
+         >[!NOTE]
+         >バージョンを移行セットの一部として含め、`wipe=false` で追加処理を実行する場合は、コンテンツ転送ツールでの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、`wipe=true` としてインジェストを実行する必要があります。
 
-      1. **IMS ユーザーおよびグループからのマッピングを含める**：IMS ユーザーおよびグループからのマッピングを含める場合は、このオプションを選択します。
-詳しくは、[ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
 
@@ -95,8 +93,6 @@ ht-degree: 70%
          >* `/libs`
          >* `/home`
          >* `/etc`（`/etc` の一部のパスは CTT で選択できます）
-
-
 
 
 1. **移行セットを作成** の詳細画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
