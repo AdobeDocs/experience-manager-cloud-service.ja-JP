@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
+source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 45%
+source-wordcount: '1402'
+ht-degree: 40%
 
 ---
 
@@ -54,11 +54,11 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 1. **プログラムの概要** ページから **パイプライン** カードに移動します。
 **+Add** をクリックし、「**実稼動パイプラインを追加**」を選択します。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **実稼動パイプラインを** 追加ダイアログボックスが表示されます。パイプライン名を入力します。
 
-   さらに、**デプロイメントトリガー** から、**デプロイメントオプション** と **重要な失敗動作** を設定することもできます。 「**続行**」をクリックします。
+   さらに、**デプロイメントトリガー** から、**デプロイメントオプション** と **重要な指標の失敗の動作** を設定することもできます。 「**続行**」をクリックします。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
 
@@ -75,19 +75,24 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
    * **毎回確認する** - デフォルトの設定。重要なエラーが検出されたときに手動で介入する必要があります。
    * **即座に失敗**  — 重要なエラーが発生すると、常にパイプラインはキャンセルされます。このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
-   * **直ちに続行** - 重要なエラーが検出されても、常にパイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
+   * **直ちに続行**  — 重要なエラーが発生した場合は常に、パイプラインは自動的に続行されます。このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. **実稼動パイプラインを追加** ダイアログボックスには、**ソースコード** というラベルの付いた 2 番目のタブが含まれています。 **完全なスタックコ** ードが選択されます。**リポジトリ** と **Git ブランチ** を選択できます。 「**保存**」をクリックします。
+1. **実稼動パイプラインを追加** ダイアログボックスには、**ソースコード** というラベルの付いた 2 番目のタブが含まれています。 **完全なスタックコ** ードが選択されます。**リポジトリ** と **Git ブランチ** を選択できます。 以下に説明するように、「実稼動デプロイメントオプション」を選択します。 「**続行**」をクリックします。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   実稼動デプロイメントオプション：
+
+   * **実稼動環境にデプロイする前に一時停止します**。このオプションを使用すると、実稼動前にデプロイメントを一時停止できます。
+   * **スケジュール済み**:このオプションを使用すると、ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。
 
 1. **実稼動パイプラインを追加** ダイアログボックスには、**エクスペリエンス監査** というラベルの付いた 3 番目のタブが含まれています。 このオプションは、エクスペリエンス監査に常に含める必要がある URL パスの表を提供します。
 
    >[!NOTE]
    >「**ページを追加**」をクリックして、独自のカスタムリンクを定義する必要があります。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
    「**新規ページを追加**」をクリックして、エクスペリエンス監査に含める URL パスを指定します。
 
@@ -234,6 +239,28 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-edit3.png)
 
 1. 非実稼動パイプラインの編集が完了したら、「**更新**」をクリックします。
+
+### その他の非実稼動パイプラインアクション {#additional-nonprod-actions}
+
+#### 実稼動以外のパイプラインの実行 {#run-nonprod}
+
+パイプラインカードから実稼動パイプラインを実行できます。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. **をクリックします…** パイプライン **カードから** を開き、**「** を実行」をクリックします（下図を参照）。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
+
+#### 実稼動以外のパイプラインの削除 {#delete-nonprod}
+
+パイプラインカードから実稼動パイプラインを削除できます。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. **をクリックします…** パイプライン **カードから** を開き、**削除** をクリックします（下図を参照）。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-delete.png)
 
 
 ## 次の手順 {#the-next-steps}
