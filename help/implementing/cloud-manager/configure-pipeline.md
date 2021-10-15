@@ -2,7 +2,7 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
+source-git-commit: 3c9c14745e784c47eecd04ac622cc48f65d7442a
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 45%
@@ -45,7 +45,7 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 >
 >初期設定後にパイプライン設定を変更できます。
 
-## 新しい実稼動パイプラインの追加 {#adding-production-pipeline}
+### 新しい実稼動パイプラインの追加 {#adding-production-pipeline}
 
 [!UICONTROL Cloud Manager] UI を使用してプログラムを設定し、少なくとも 1 つの環境を設定したら、実稼動パイプラインを追加する準備が整います。
 
