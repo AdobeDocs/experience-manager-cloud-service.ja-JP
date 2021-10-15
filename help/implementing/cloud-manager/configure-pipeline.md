@@ -2,9 +2,9 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 03c058c17e8a9ff5a0be9203a65207bb367a02a6
+source-git-commit: eb8fb1f4134ceb9117773d01f4d97c68bd8c41a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1407'
 ht-degree: 40%
 
 ---
@@ -89,22 +89,24 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 1. **実稼動パイプラインを追加** ダイアログボックスには、**エクスペリエンス監査** というラベルの付いた 3 番目のタブが含まれています。 このオプションは、エクスペリエンス監査に常に含める必要がある URL パスの表を提供します。
 
-   >[!NOTE]
-   >「**ページを追加**」をクリックして、独自のカスタムリンクを定義する必要があります。
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+
+   >[!IMPORTANT]
+   >「**ページを追加**」をクリックして、独自のカスタムリンクを定義する必要があります。 ページのパスは `/` で始める必要があります。
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+
 
    「**新規ページを追加**」をクリックして、エクスペリエンス監査に含める URL パスを指定します。
 
-   例えば、`https://wknd.site/us/en/about-us.html` をエクスペリエンス監査に含める場合は、このフィールドにパス `us/en/about-us.html` を入力し、「**保存**」をクリックします。
+   例えば、`https://wknd.site/us/en/about-us.html` をエクスペリエンス監査に含める場合は、このフィールドにパス `/us/en/about-us.html` を入力し、「**保存**」をクリックします。
 
-   ![](assets/exp-audit4.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
    表に表示される URL は次のとおりです。
 
    `https://publish-p14253-e43686.adobeaemcloud.com/us/en/about-us.html`
 
-   ![](assets/exp-audit5.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
    最大 25 行まで含めることができます。このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
 
