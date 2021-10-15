@@ -2,10 +2,10 @@
 title: CI/CD パイプラインの設定 - Cloud Services
 description: CI/CD パイプラインの設定 - Cloud Services
 exl-id: d2024b42-9042-46a0-879e-110b214c7285
-source-git-commit: 76ddf823ea7726a686e339265e33977f9a89609c
+source-git-commit: feafcc0c3c8e32e86824efb293a1a0141a318280
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 49%
+source-wordcount: '1282'
+ht-degree: 45%
 
 ---
 
@@ -147,6 +147,32 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
       ![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-edit4.png)
 
 1. パイプラインの編集が完了したら、「**更新**」をクリックします。
+
+### その他の実稼動パイプラインのアクション {#additional-prod-actions}
+
+#### 実稼動パイプラインの実行 {#run-prod}
+
+パイプラインカードから実稼動パイプラインを実行できます。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. **をクリックします…** パイプライン **カードから** を開き、**「** を実行」をクリックします（下図を参照）。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-run.png)
+
+#### 実稼動パイプラインの削除 {#delete-prod}
+
+パイプラインカードから実稼動パイプラインを削除できます。
+
+1. **プログラムの概要** ページから **パイプライン** カードに移動します。
+
+1. **をクリックします…** パイプライン **カードから** を開き、**削除** をクリックします（下図を参照）。
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-delete.png)
+
+   >[!NOTE]
+   >デプロイメントマネージャーの役割を持つユーザーは、パイプラインカードの **削除** オプションを使用して、セルフサービス方式で実稼動パイプラインを削除できるようになりました。
+
 
 ## 非実稼動パイプラインとコード品質専用パイプライン {#non-production-pipelines}
 
