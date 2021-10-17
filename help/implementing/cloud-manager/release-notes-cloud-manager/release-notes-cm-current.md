@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2021.10.0 Cloud Manager のリリースノ
 description: AEM as a Cloud Service Release 2021.10.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: null
-source-git-commit: a519b5bd774506f50f49c8309b14d4a62c7e7ba5
+source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 21%
+source-wordcount: '405'
+ht-degree: 20%
 
 ---
 
@@ -49,4 +49,6 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 * まれに、Adobe・スタッフがお客様の環境をリストアする場合、環境が完全に稼働する前にリストアが完了したと見なされました。
 
 * 環境の作成中におこなわれた一部の内部要求が再試行されていませんでした。
+
+* ドメイン名の検証後にデプロイメントの失敗エラーが発生した場合、エラーメッセージが修正され、お客様にAdobe担当者に問い合わせるように依頼しました。
 
