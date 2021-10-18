@@ -1,24 +1,24 @@
 ---
 title: AEM as a Cloud Service 向けのログ
-description: 一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定、または AEM as a Cloud Service でのデータのログ記録をリクエストする方法について説明します。
+description: AEM as a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービスに固有の設定、またはデータログの要求を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 0c2a6753ab6c7fdf8cd8235b9071b21dcfff1e74
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 96%
+source-wordcount: '2314'
+ht-degree: 94%
 
 ---
 
 # AEM as a Cloud Service 向けのログ {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ローカル開発およびクラウド環境、特にAEM as aCloud Serviceの開発環境でのコード実行をデバッグし理解するために、ログサービスが重要な機能になります。
+AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。これを念頭に置いた上で、ローカル開発およびクラウド環境、特にAEM as a Cloud Serviceの開発環境でのコード実行をデバッグおよび理解するために、ログサービスは重要な機能です。
 
-AEMのログ設定とログレベルは、AEMプロジェクトの一部としてGitに保存され、AEMプロジェクトの一部としてCloud Managerを介してデプロイされる設定ファイルで管理されます。 AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
+AEMのas a Cloud Service的なログ設定とログレベルは、AEMプロジェクトの一部として Git に保存され、AEMプロジェクトの一部として Cloud Manager を介してデプロイされる設定ファイルで管理されます。 AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
 
-## AEM ログ {#aem-loggin}
+## AEM ログ {#aem-logging}
 
 AEM アプリケーションレベルでのログは、次の 3 つのログで処理されます。
 
@@ -209,7 +209,7 @@ AEM as a Cloud Service の HTTP リクエストログは、AEM に対して行�
 <tbody>
 <tr>
 <td>日時</td>
-<td>2020年4月29日:19:14:21 +0000</td>
+<td>2020 年 4 月 29 日 :19:14:21 +0000</td>
 </tr>
 <tr>
 <td>リクエストとレスポンスのペア ID</td>
@@ -253,7 +253,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEM as aCloud ServiceノードID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEMas a Cloud Serviceノード ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | クライアントの IP アドレス | - |
 | User | myuser@adobe.com |
@@ -314,7 +314,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 </tr>
 <tr>
 <td>日時</td>
-<td>2020年5月1日:00:09:46 +0000</td>
+<td>01/May/2020:00:09:46 +0000</td>
 </tr>
 <tr>
 <td>HTTP メソッド</td>
