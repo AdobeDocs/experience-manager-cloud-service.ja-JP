@@ -1,10 +1,10 @@
 ---
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
-source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
+source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 52%
+source-wordcount: '549'
+ht-degree: 49%
 
 ---
 
@@ -19,11 +19,14 @@ ht-degree: 52%
 >abstract="抽出とは、ソース AEM インスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
+>[!IMPORTANT]
+>ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) を参照してください。
+
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 >[!NOTE]
->Amazon S3 または Azure Data Store をデータストアのタイプとして使用する場合は、オプションのプリコピー手順を実行して、抽出段階を大幅に高速化できます。 そのためには、抽出を実行する前に `azcopy.config` ファイルを設定する必要があります。 詳しくは、[ 大きなコンテンツリポジトリの処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) を参照してください。
+>Amazon S3 または Azure Data Store をデータストアのタイプとして使用する場合は、オプションのプリコピー手順を実行して、抽出段階を大幅に高速化できます。 それには、 `azcopy.config` ファイルを作成します。 参照 [大きなコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) を参照してください。
 
-1. **コンテンツ転送** ウィザードで移行セットを選択し、「**抽出**」をクリックして抽出を開始します。
+1. 移行セットの選択元 **コンテンツ転送** ウィザードとクリック **抽出** 抽出を開始する
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-01.png)
 
@@ -34,7 +37,7 @@ ht-degree: 52%
    >[!NOTE]
    >抽出段階では、ステージングコンテナを上書きするオプションがあります。
 
-1. 「**抽出**」フィールドに「**実行中**」というステータスが表示され、抽出が進行中であることを示すようになりました。
+1. 10. **抽出** フィールドに **実行中** 「ステータス」は、抽出が進行中であることを示します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-03.png)
 
@@ -43,7 +46,7 @@ ht-degree: 52%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >UI には自動リロード機能があり、30 秒ごとに **コンテンツ転送** ウィザードをリロードします。
+   >UI には、 **コンテンツ転送** ウィザードを 30 秒ごとに実行します。
    >抽出フェーズが開始されると、書き込みロックが作成され、*60 秒*&#x200B;後に解放されます。したがって、抽出が停止した場合は、ロックが解除されるまで 1 分待ってから、抽出を再開する必要があります。
 
 ## 追加抽出 {#top-up-extraction-process}
@@ -58,11 +61,11 @@ ht-degree: 52%
 
 次の手順に従います。
 
-1. **コンテンツ転送** ウィザードに移動し、追加抽出の実行対象となる移行セットを選択します。 「**抽出**」をクリックして、追加抽出を開始します。
+1. に移動します。 **コンテンツ転送** ウィザードを開き、追加抽出の実行対象となる移行セットを選択します。 「**抽出**」をクリックして、追加抽出を開始します。
 
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-05.png)
 
-1. **移行セットの抽出** ダイアログボックスが表示されます。「**抽出**」をクリックします。
+1. 10. **移行セットの抽出** ダイアログボックスが表示されます。をクリックします。 **抽出**.
 
    >[!IMPORTANT]
    >「**抽出時にステージングコンテナを上書き**」オプションを無効にしてください。
@@ -71,4 +74,4 @@ ht-degree: 52%
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールでソースからのコンテンツの抽出について学習したら、コンテンツ転送ツールでの取り込みプロセスについて学習する準備が整いました。 コンテンツ転送ツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照してください。
+コンテンツ転送ツールでソースからのコンテンツの抽出について学習したら、コンテンツ転送ツールでの取り込みプロセスについて学習する準備が整いました。 詳しくは、 [Target へのコンテンツの取り込み](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照して、コンテンツ転送ツールから移行セットを取り込む方法を確認してください。
