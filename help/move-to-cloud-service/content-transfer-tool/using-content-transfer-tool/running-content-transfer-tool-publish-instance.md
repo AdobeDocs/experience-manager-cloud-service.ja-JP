@@ -1,7 +1,7 @@
 ---
 title: パブリッシュインスタンスでのコンテンツ転送ツールの実行
 description: パブリッシュインスタンスでのコンテンツ転送ツールの実行
-source-git-commit: 65847fc03770fe973c3bfee4a515748f7e487ab6
+source-git-commit: 86b118e05b1e6947610c6032ed973394ba4b68e5
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 29%
@@ -28,7 +28,10 @@ ht-degree: 29%
 
 * 移行セットを作成する場合は、オーサー環境のAEMas a Cloud Service環境の URL を使用します。
 
-* パブリッシュへの取り込み時に、パブリッシュ層は（オーサーとは異なり）スケールダウンされません。 予防策として、次のようなユーザーによる書き込み操作は避けてください。
+* パブリッシュへの取り込み時に、パブリッシュ層は（オーサーとは異なり）スケールダウンされません。
 
-   * その環境でのAEM as a Cloud Service Author から Publish へのコンテンツの配布
-   * パブリッシュインスタンス間のユーザー同期
+   >[!IMPORTANT]
+   >予防策として、次のようなユーザーが書き込み操作を開始するのを避けてください。
+   > * その環境でのAEM as a Cloud Service Author から Publish へのコンテンツの配布
+   > * パブリッシュインスタンス間のユーザー同期
+

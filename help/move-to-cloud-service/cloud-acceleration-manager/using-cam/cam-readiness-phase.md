@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager の準備段階
 description: このページでは、Cloud Acceleration Manager の準備段階の概要を説明します。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '782'
 ht-degree: 11%
 
 ---
@@ -67,11 +67,17 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備段�
    >[!NOTE]
    >新しいレポートをアップロードすると、すべての評価がリセットされます。
 
+### 印刷プレビューの使用 {#print-preview-cam}
+
+Cloud Acceleration Manager で、印刷プレビューオプションを選択して、レポートの印刷可能なプレビューを表示したり、PDF形式でレポートを印刷して共有しやすくすることができます。
+
+次の手順に従います。
+
 1. 下の図のように、**印刷プレビュー** アイコンをクリックします。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、共有しやすいようにレポートをPDF形式で印刷します。
+1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、レポートをPDF形式で印刷します。
 
    >[!IMPORTANT]
    >* 上記の機能では、「**PDFとして保存**」オプションが推奨され、サポートされています。
