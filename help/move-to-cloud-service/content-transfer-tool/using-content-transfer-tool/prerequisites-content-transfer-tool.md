@@ -2,9 +2,9 @@
 title: コンテンツ転送ツールの前提条件
 description: コンテンツ転送ツールの前提条件
 exl-id: ef6d0e1a-0ed2-4485-adab-df6e0cf3ac4d
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '569'
 ht-degree: 11%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 11%
 
 ## 次の手順 {#whats-next}
 
-前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、コンテンツ転送ツールの使用時に [ コンテンツ転送ツール ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en) の使用に関するガイドラインとベストプラクティスを参照してください。
+前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、[ コンテンツ転送ツール ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en) の使用に関するガイドラインとベストプラクティスを参照してください。

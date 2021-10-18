@@ -1,10 +1,10 @@
 ---
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
-source-git-commit: 6a6fa69d2eb79e41c79a0916bfd6e34ecf490d34
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 51%
+source-wordcount: '518'
+ht-degree: 52%
 
 ---
 
@@ -71,4 +71,4 @@ ht-degree: 51%
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールでソースからのコンテンツの抽出について学習したら、コンテンツ転送ツールでの取り込みプロセスについて学習する準備が整いました。 コンテンツ転送ツールから移行セットを取り込む方法については、[ コンテンツ転送ツールでの Target へのコンテンツの取り込み ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照してください。
+コンテンツ転送ツールでソースからのコンテンツの抽出について学習したら、コンテンツ転送ツールでの取り込みプロセスについて学習する準備が整いました。 コンテンツ転送ツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) を参照してください。

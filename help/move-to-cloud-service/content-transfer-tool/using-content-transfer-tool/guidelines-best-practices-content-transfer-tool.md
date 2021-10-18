@@ -1,7 +1,7 @@
 ---
 title: コンテンツ転送ツール使用のガイドラインとベストプラクティス
 description: コンテンツ転送ツール使用のガイドラインとベストプラクティス
-source-git-commit: b421cc5e6078112adecb856d723a1bae628d8ec7
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 83%
@@ -83,4 +83,4 @@ ht-degree: 83%
 
 ## 次の手順 {#whats-next}
 
-コンテンツ転送ツールの使用に関するガイドライン、ベストプラクティス、重要な考慮事項を学習したら、移行セットの作成から始めて、ツールをインストールして使用する準備が整いました。 詳しくは、[ コンテンツ転送の手引き ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。
+コンテンツ転送ツールの使用に関するガイドライン、ベストプラクティス、重要な考慮事項を学習したら、移行セットの作成から始めて、ツールをインストールして使用する準備が整いました。 詳しくは、[ コンテンツ転送ツールの概要 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。

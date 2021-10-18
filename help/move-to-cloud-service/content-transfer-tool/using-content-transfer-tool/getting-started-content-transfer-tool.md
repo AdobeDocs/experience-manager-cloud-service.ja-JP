@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 1083f3913bdf0ff64f50f6e731e4fc2804a3036e
+source-git-commit: fa7e5d07ed52a71999de95bbf6299ae5eb7af537
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 68%
+source-wordcount: '752'
+ht-degree: 67%
 
 ---
 
@@ -114,4 +114,4 @@ ht-degree: 68%
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を学習したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学習します。 これらのプロセスを学習する前に、[ 大きなコンテンツリポジトリの処理 ](help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) を参照して、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮し、コンテンツをAEM as a Cloud Serviceに移動する必要があります。
+移行セットの作成方法を学習したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学習します。 これらのプロセスを学習する前に、[ 大きなコンテンツリポジトリの処理 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) を参照して、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮し、コンテンツをAEM as a Cloud Serviceに移動する必要があります。
