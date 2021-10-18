@@ -1,15 +1,19 @@
 ---
 title: AEM as a Cloud Service用のアドバンスドネットワークの設定
-description: VPN やAEM as a Cloud Service用の専用の出力 IP アドレスなど、高度なネットワーク機能を設定する方法を説明します
-source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
+description: AEM as a Cloud Serviceの VPN や、柔軟な出力 IP アドレス、または専用の出力 IP アドレスなど、高度なネットワーク機能を設定する方法を説明します
+source-git-commit: 47803e6af4ae3c95600c75be58c907da82112e1b
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2837'
 ht-degree: 7%
 
 ---
 
 
 # AEM as a Cloud Service用のアドバンスドネットワークの設定 {#configuring-advanced-networking}
+
+この記事では、AEMas a Cloud Serviceの様々な高度なネットワーク機能（専用または柔軟に割り当て可能な VPN およびエグレス IP アドレスを含む）について説明します。
+
+## 概要 {#overview}
 
 >[!INFO]
 >
