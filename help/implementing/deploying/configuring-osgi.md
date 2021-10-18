@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
-feature: デプロイ
+feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 2555e5e1545f198a235d44f8cb07e25d7490d1d5
+source-git-commit: 9f1183430255bd4f026eedff5c9e8f76ce68b76f
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2936'
 ht-degree: 94%
 
 ---
@@ -56,7 +56,7 @@ config フォルダー名で定義された実行モードが AEM で使用さ�
 
 >[!NOTE]
 >
->`config.preview` OSGI設定フォルダー&#x200B;**は、`config.publish`を宣言する場合と同じように**&#x200B;宣言できません。 代わりに、プレビュー層はパブリッシュ層の値からOSGI設定を継承します。
+>`config.preview` OSGi 設定フォルダー **は、`config.publish` を宣言する場合と同じように** 宣言できません。 代わりに、プレビュー層は、パブリッシュ層の値から OSGi 設定を継承します。
 
 ローカルで開発する場合は、実行モード起動パラメーターを渡して、使用する実行モード OSGi 設定を指定できます。
 
@@ -120,10 +120,10 @@ OSGi 設定値を定義する場合は、インライン値から開始し、必
 
 ### 非シークレットの環境固有の設定値を使用する場合 {#when-to-use-non-secret-environment-specific-configuration-values}
 
-非シークレットの設定値に対しては、プレビュー層で値が異なる場合や、開発環境間で値が異なる場合にのみ、環境固有の設定(`$[env:ENV_VAR_NAME]`)を使用してください。 これには、ローカル開発インスタンスと、Adobe Experience Manager as a Cloud Service 開発環境が含まれます。プレビュー層に一意の値を設定する以外に、Adobe Experience Managerの非シークレットの環境固有の設定をCloud Serviceステージ環境または実稼動環境として使用しないでください。
+非シークレットの設定値に対しては、環境固有の設定 (`$[env:ENV_VAR_NAME]`) を使用するのは、値がプレビュー層で異なる場合と開発環境で異なる場合のみです。 これには、ローカル開発インスタンスと、Adobe Experience Manager as a Cloud Service 開発環境が含まれます。プレビュー層に一意の値を設定する以外に、非シークレットの環境固有の設定をAdobe Experience Manager as a Cloud Serviceステージ環境または実稼動環境に使用しないでください。
 
-* 非シークレットの環境固有の設定は、パブリッシュ層とプレビュー層で異なる設定値、または開発環境(ローカル開発インスタンスを含む)で異なる値に対してのみ使用します。
-* プレビュー層をパブリッシュ層と異なる必要がある場合のシナリオの他に、ステージと実稼動の非シークレット値のOSGi設定で標準のインライン値を使用します。 これに関連して、ステージング環境と実稼働環境に対して、環境固有の設定を使用して、実行時に設定を変更しやすくすることは勧められません。これらの変更は、ソースコード管理を通じて導入する必要があります。
+* 非シークレットの環境固有の設定は、パブリッシュ層とプレビュー層で異なる設定値、またはローカル開発環境（開発インスタンスを含む）で異なる値に対してのみ使用します。
+* プレビュー層をパブリッシュ層と異なる必要がある場合のシナリオの他に、ステージングと実稼動の非シークレット値の OSGi 設定で標準のインライン値を使用します。 これに関連して、ステージング環境と実稼働環境に対して、環境固有の設定を使用して、実行時に設定を変更しやすくすることは勧められません。これらの変更は、ソースコード管理を通じて導入する必要があります。
 
 ### シークレットの環境固有の設定値を使用する場合 {#when-to-use-secret-environment-specific-configuration-values}
 
@@ -140,9 +140,9 @@ Adobe Experience Manager as a Cloud Service では、セキュリティ上の理
 JSON 形式の OSGi 設定ファイルは、AEM プロジェクト内から直接手動で書き込むことができます。これは、よく知られている OSGi コンポーネント、特に、設定を定義した同じ開発者により設計および開発されたカスタム OSGi コンポーネントに対して、OSGi 設定をすばやく作成する方法です。この方法は、同じ OSGi コンポーネントの設定を様々な実行モードフォルダーにコピー／貼り付け、更新する場合にも使用できます。
 
 1. IDE で `ui.apps` プロジェクトを開き、新しい OSGi 設定が有効となる実行モードをターゲットに設定する config フォルダー（`/apps/.../config.<runmode>`）を探すか作成します。
-1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PID は OSGi コンポーネントの永続的な ID です。通常、OSGi コンポーネントの実装の完全なクラス名です。次に例を示します。
+1. この config フォルダーに、新しい `<PID>.cfg.json` ファイルを作成します。PID は、OSGi コンポーネントの永続 ID です。 通常は、OSGi コンポーネント実装の完全なクラス名です。 次に例を示します。
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
-OSGi 設定ファクトリのファイル名には `<PID>-<factory-name>.cfg.json` 命名規則を使用します。
+OSGi 設定ファクトリのファイル名には `<factoryPID>-<name>.cfg.json` 命名規則を使用します。
 1. 新しい `.cfg.json` ファイルを開き、[JSON OSGi 設定形式](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1)に従って、OSGi プロパティと値のペアのキー／値の組み合わせを定義します。
 1. 変更を新しい `.cfg.json` ファイルに保存します。
 1. 新しい追加 OSGi 構成ファイルを Git にコミットします。
@@ -224,7 +224,7 @@ use $[secret:SECRET_VAR_NAME]
 
 >[!NOTE]
 >
->`INTERNAL_` プレフィックスが付いた変数名は、アドビによって予約されています。このプレフィックスで始まる顧客セット変数は無視されます。これらの変数も参照しないでください。
+>`INTERNAL_` プレフィックスが付いた変数名は、アドビによって予約されています。このプレフィックスで始まる顧客セット変数は無視されます。お客様は、これらの変数も参照してはいけません。
 
 ### デフォルト値 {#default-values}
 
