@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service用のアドバンスドネットワークの設定
 description: VPN やAEM as a Cloud Service用の専用の出力 IP アドレスなど、高度なネットワーク機能を設定する方法を説明します
-source-git-commit: 1c9e83a0351d51d96998f7126f0ab76db56144ce
+source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2798'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ AEM as a Cloud Serviceには、Cloud Manager API を使用して設定できる�
 
 * [柔軟なポートエグレス](#flexible-port-egress)  — 非標準ポートからの送信トラフィックを許可するようにAEMをas a Cloud Service的に設定
 * [専用のエグレス IP アドレス](#dedicated-egress-IP-address)  — 一意の IP から発信されるようにAEM as a Cloud Serviceからのトラフィックを設定します。
-* [仮想プライベートネットワーク](#vpn) :VPN テクノロジーを持つお客様向けの、お客様のインフラストラクチャとAEM as a Cloud Service間のトラフィックを保護
+* [VPN(Virtual Private Network)](#vpn) ：お客様のインフラストラクチャとAEM as a Cloud Service間のトラフィックを保護し、VPN テクノロジーをお持ちのお客様向け
 
 この記事では、これらの各オプションの設定方法などについて詳しく説明します。 一般的な設定戦略として、`/networkInfrastructures` API エンドポイントをプログラムレベルで呼び出し、必要な高度なネットワークタイプを宣言し、各環境の `/advancedNetworking` エンドポイントを呼び出して、インフラストラクチャを有効にし、環境固有のパラメータを設定します。 各形式の構文、リクエスト例、応答例については、Cloud Manager API ドキュメントの適切なエンドポイントを参照してください。
 
