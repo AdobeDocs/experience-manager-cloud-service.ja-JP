@@ -1,10 +1,10 @@
 ---
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
-source-git-commit: 86df5e29567d9da8bc56c1c62b11ab1444586415
+source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 49%
+source-wordcount: '596'
+ht-degree: 45%
 
 ---
 
@@ -36,6 +36,10 @@ ht-degree: 49%
 
    >[!NOTE]
    >抽出段階では、ステージングコンテナを上書きするオプションがあります。
+
+   >[!IMPORTANT]
+   >ソースからコンテンツを抽出する前に、この移行セットでユーザーマッピングが実行されていない場合は、次の図に示すように、ユーザーマッピングの手順が保留中であることを示す警告が表示されます。 をクリックします。 **ユーザーのマッピング** をクリックして、ユーザーマッピングツールを実行します。
+   >![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. 10. **抽出** フィールドに **実行中** 「ステータス」は、抽出が進行中であることを示します。
 
