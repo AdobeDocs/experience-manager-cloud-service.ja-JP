@@ -1,9 +1,9 @@
 ---
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
-source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
+source-git-commit: f549a7d9e1a5732d75489bc327a8cb67876a4483
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '596'
 ht-degree: 45%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 45%
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 >[!NOTE]
->Amazon S3 または Azure Data Store をデータストアのタイプとして使用する場合は、オプションのプリコピー手順を実行して、抽出段階を大幅に高速化できます。 それには、 `azcopy.config` ファイルを作成します。 参照 [大きなコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) を参照してください。
+>Amazon S3 または Azure Data Store をデータストアのタイプとして使用する場合は、オプションのプリコピー手順を実行して、抽出段階を大幅に高速化できます。 それには、 `azcopy.config` ファイルを作成します。 Refer to [Handling Large Content Repositories](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) for more details.
 
-**ソースからコンテンツを抽出する前に**
-ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) を参照してください。
+>[!IMPORTANT]
+>You should run User Mapping tool before extracting content from source. See [Using the User Mapping Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) for more details.
 
 1. 移行セットの選択元 **コンテンツ転送** ウィザードとクリック **抽出** 抽出を開始する
 
@@ -51,7 +51,7 @@ ht-degree: 45%
    ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/extraction-04.png)
 
    >[!IMPORTANT]
-   >UI には、 **コンテンツ転送** ウィザードを 30 秒ごとに実行します。
+   >The UI has an auto-reload feature that reloads the **Content Transfer** wizard every 30 seconds.
    >抽出フェーズが開始されると、書き込みロックが作成され、*60 秒*&#x200B;後に解放されます。したがって、抽出が停止した場合は、ロックが解除されるまで 1 分待ってから、抽出を再開する必要があります。
 
 ## 追加抽出 {#top-up-extraction-process}
