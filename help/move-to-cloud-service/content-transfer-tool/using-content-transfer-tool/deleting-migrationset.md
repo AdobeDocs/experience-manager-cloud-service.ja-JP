@@ -1,10 +1,10 @@
 ---
 title: コンテンツ転送ツールでの移行セットの削除
 description: コンテンツ転送ツールでの移行セットの削除
-source-git-commit: 01c657a994e1f8d6bd71acda90cf3b0e290d826b
+source-git-commit: 6397bef5611dd75568f23c8d1adbf4afa53c5f42
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 67%
+source-wordcount: '81'
+ht-degree: 39%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 67%
 
 ## コンテンツ転送ツールから移行セットを削除する手順 {#deleting-migration-set}
 
-それには、次の手順に従います。
+次の手順に従います。
 
-1. *概要*&#x200B;ページに移動し、削除する移行セットを選択し、アクションバーの「**削除**」をクリックします。
+1. に移動します。 **コンテンツ転送** ウィザードを開き、削除する移行セットを選択し、「 **削除** をクリックします。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/delete-1.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete1.png)
 
 1. **移行セットを削除**&#x200B;ダイアログボックスの「**削除**」をクリックして、削除を確定します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets/delete-3.png)
+   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/migration-delete2.png)

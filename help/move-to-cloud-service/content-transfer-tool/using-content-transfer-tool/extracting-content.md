@@ -1,9 +1,9 @@
 ---
 title: ソースからのコンテンツの抽出
 description: ソースからのコンテンツの抽出
-source-git-commit: 6f53a4379826d7c91b977722ab2ed14d3a960d22
+source-git-commit: 5cdfa5a84e74563245d95661dc6875e16982d941
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '601'
 ht-degree: 45%
 
 ---
@@ -19,12 +19,13 @@ ht-degree: 45%
 >abstract="抽出とは、ソース AEM インスタンスから、移行セットと呼ばれる一時領域にコンテンツを抽出することです。移行セットは、アドビが提供するクラウドストレージ領域で、ソース AEM インスタンスと AEM as a Cloud Service インスタンスの間で転送されるコンテンツを一時的に保存するためのものです。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#top-up-extraction-process" text="追加抽出"
 
->[!IMPORTANT]
->ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) を参照してください。
 
 コンテンツ転送ツールで移行セットを抽出するには、次の手順に従います。
 >[!NOTE]
 >Amazon S3 または Azure Data Store をデータストアのタイプとして使用する場合は、オプションのプリコピー手順を実行して、抽出段階を大幅に高速化できます。 それには、 `azcopy.config` ファイルを作成します。 参照 [大きなコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en) を参照してください。
+
+**ソースからコンテンツを抽出する前に**
+ソースからコンテンツを抽出する前に、ユーザーマッピングツールを実行する必要があります。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=en) を参照してください。
 
 1. 移行セットの選択元 **コンテンツ転送** ウィザードとクリック **抽出** 抽出を開始する
 
