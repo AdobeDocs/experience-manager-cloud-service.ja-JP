@@ -2,7 +2,7 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 2b5186f887121568b167e2389168bdd419206b7c
+source-git-commit: 8eafe30b69014f5affad6da7e80f8f9a1c42eb38
 workflow-type: tm+mt
 source-wordcount: '2164'
 ht-degree: 81%
@@ -224,4 +224,4 @@ Apache Jackrabbit Oak を使用すると、柔軟なインデックス設定で�
 
 10. **クエリのパフォーマンス** ツールを使用すると、人気の高い JCR クエリと遅い JCR クエリの両方を観察できます。 さらに、クエリを分析し、に関する様々な情報を表示できます。特に、インデックスがこのクエリに使用されているかどうかが特に重要です。
 
-オンプレミスのAEMとは異なり、AEM as a Cloud Serviceは **クエリのパフォーマンス** 」ツールを使用します。 代わりに、（Cloud Manager の）開発者コンソールから、 [クエリ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) タブに表示されます。
+オンプレミスのAEMとは異なり、AEM as a Cloud Serviceは **クエリのパフォーマンス** 」ツールを使用します。 代わりに、（Cloud Manager の）開発者コンソールから、 [クエリ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) タブに移動します。
