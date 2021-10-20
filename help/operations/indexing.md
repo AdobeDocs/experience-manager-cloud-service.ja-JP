@@ -2,9 +2,9 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 4e1856f2bebfc22b1f2fc36258722409143b2a6f
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2164'
 ht-degree: 81%
 
 ---
@@ -213,15 +213,15 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ## インデックスの最適化 {#index-optimizations}
 
-Apache Jackrabbit Oak を使用すると、柔軟なインデックス設定で検索クエリを効率的に処理できます。 インデックスは、大きなリポジトリでは特に重要です。 すべてのクエリが適切なインデックスでバックアップされていることを確認してください。 適切なインデックスがないクエリは、何千ものノードを読み取り、警告として記録されます。 インデックス定義を最適化できるように、ログファイルを分析することで、このようなクエリを識別する必要があります。 詳しくは [ このページ ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) を参照してください。
+Apache Jackrabbit Oak を使用すると、柔軟なインデックス設定で検索クエリを効率的に処理できます。 インデックスは、大きなリポジトリでは特に重要です。 すべてのクエリが適切なインデックスでバックアップされていることを確認してください。 適切なインデックスがないクエリは、何千ものノードを読み取り、警告として記録されます。 インデックス定義を最適化できるように、ログファイルを分析することで、このようなクエリを識別する必要があります。 詳しくは、 [このページ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) を参照してください。
 
 ### AEM as a Cloud Serviceの Lucene 全文インデックス {#index-lucene}
 
-フルテキストインデックス `/oak:index/lucene-2` は、デフォルトでAEMリポジトリ内のすべてのノードのインデックスを作成するので、非常に大きくなる場合があります。  Adobeがこのインデックスを引退する予定に従い、2021 年 9 月以降、AEMas a Cloud Serviceではこのインデックスはデプロイされなくなります。 したがって、AEM as a Cloud Serviceの製品側では使用されなくなり、顧客コードを実行する必要がなくなりました。 共通の Lucene インデックスを持つAEMas a Cloud Service環境では、Adobeはお客様と個別に連携して、このインデックスを補い、最適化されたインデックスをより適切に使用するための調整されたアプローチを行っています。 お客様は、Adobeからの通知なしに、何もする必要はありません。 AEMのas a Cloud Serviceのお客様は、この最適化に関して行動が必要な場合、Adobeから通知を受けます。 このインデックスがカスタムクエリに必要な場合は、一時的な解決策として、このインデックスのコピーを別の名前（例：[here](/help/operations/indexing.md)）で作成する必要があります。
-`/oak:index/acme.lucene-1-custom-1`この最適化は、オンプレミスでホストされる他のAEM環境や、Adobe Managed Services で管理される他の環境には、デフォルトでは適用されません。
+フルテキストのインデックス `/oak:index/lucene-2` は、デフォルトでAEMリポジトリ内のすべてのノードのインデックスを作成するので、非常に大きくなる場合があります。  Adobeがこのインデックスを引退する予定に従い、2021 年 9 月以降、AEMas a Cloud Serviceではこのインデックスはデプロイされなくなります。 したがって、AEM as a Cloud Serviceの製品側では使用されなくなり、顧客コードを実行する必要がなくなりました。 共通の Lucene インデックスを持つAEMas a Cloud Service環境では、Adobeはお客様と個別に連携して、このインデックスを補い、最適化されたインデックスをより適切に使用するための調整されたアプローチを行っています。 お客様は、Adobeからの通知なしに、何もする必要はありません。 AEMのas a Cloud Serviceのお客様は、この最適化に関して行動が必要な場合、Adobeから通知を受けます。 このインデックスがカスタムクエリに必要な場合は、一時的なソリューションとして、このインデックスのコピーを別の名前（例： ）で作成する必要があります。 `/oak:index/acme.lucene-1-custom-1`（説明済み） [here](/help/operations/indexing.md).
+この最適化は、オンプレミスでホストされる他のAEM環境や、Adobe Managed Services で管理される他の環境には、デフォルトでは適用されません。
 
 ## クエリの最適化 {#index-query}
 
-**クエリパフォーマンス** ツールを使用すると、人気の高い JCR クエリと遅い JCR クエリの両方を観察できます。 さらに、クエリを分析し、に関する様々な情報を表示できます。特に、インデックスがこのクエリに使用されているかどうかが特に重要です。
+10. **クエリのパフォーマンス** ツールを使用すると、人気の高い JCR クエリと遅い JCR クエリの両方を観察できます。 さらに、クエリを分析し、に関する様々な情報を表示できます。特に、インデックスがこのクエリに使用されているかどうかが特に重要です。
 
-オンプレミスのAEMとは異なり、AEM as a Cloud Serviceの UI には **クエリパフォーマンス** ツールが表示されなくなりました。 代わりに、（Cloud Manager の）開発者コンソールの「**クエリ**」タブで使用できるようになりました。
+オンプレミスのAEMとは異なり、AEM as a Cloud Serviceは **クエリのパフォーマンス** 」ツールを使用します。 代わりに、（Cloud Manager の）開発者コンソールから、 [クエリ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) タブに移動します。
