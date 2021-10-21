@@ -2,7 +2,7 @@
 title: 実装段階
 description: 実装段階
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 82e22f0a0684491b5071fa232a0f90fb87da6992
+source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 94%
@@ -41,7 +41,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 >[!NOTE]
 >差分コンテンツ追加を頻繁におこなって、Cloud Service での運用を開始する前におこなう最後の差分コンテンツ転送に必要なコンテンツフリーズ期間を短縮することをお勧めします。
 
-詳しくは、[コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
+詳しくは、[コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
 
 >[!IMPORTANT]
 >コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリを AEM 6.5 にアップグレードする必要があります。

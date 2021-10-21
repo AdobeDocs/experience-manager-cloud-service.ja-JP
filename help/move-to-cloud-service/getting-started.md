@@ -2,7 +2,7 @@
 title: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
 description: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 96%
@@ -170,7 +170,7 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 1. [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=ja#managing-code) git へのデプロイ
 2. [Cloud Manager 品質パイプライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=ja#how-to-use)を介してカスタマーコードを実行
 3. [開発環境へのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**移行のみ**]&#x200B;パッケージまたは[コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool.md)（CTT）を使用したコンテンツの転送
+4. [**移行のみ**]&#x200B;パッケージまたは[コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)（CTT）を使用したコンテンツの転送
 5. 推奨されるテストサイクル（スモークテスト、QA など）の実行
 6. Cloud Manager 実稼働パイプラインへの昇格
 7. スモークテスト検証
