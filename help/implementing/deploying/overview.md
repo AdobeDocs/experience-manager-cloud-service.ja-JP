@@ -1,12 +1,12 @@
 ---
 title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
-feature: デプロイ
+feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
+source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 99%
+source-wordcount: '3334'
+ht-degree: 97%
 
 ---
 
@@ -104,7 +104,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit filevaultのドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。 AEM CSは現在、Filevaultバージョン3.4.0を使用しています（これは、インストールフックを管理者ユーザー、システムユーザー、管理者グループのメンバーに限定します）。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：詳しくは、 [Jackrabbit filevault ドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) インストールフックについて 現在、AEM CS は Filevault バージョン 3.4.0 を使用しています。これは、インストールフックを管理者ユーザー、システムユーザー、管理者グループのメンバーに制限しています )。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)を参照してください。
 
@@ -176,6 +176,10 @@ above appears to be internal, to confirm with Brian -->
 コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境でパッケージマネージャーを使用できます。
 
 パッケージマネージャーは実行時の概念なので、不変リポジトリーにコンテンツやコードをインストールすることはできません。そのため、これらのコンテンツパッケージは可変コンテンツ（主に `/content` または `/conf`）のみで構成する必要があります。コンテンツパッケージに混在コンテンツ（可変コンテンツと不変コンテンツの両方）が含まれている場合、可変コンテンツのみインストールされます。
+
+>[!IMPORTANT]
+>
+>パッケージマネージャーの UI で **未定義** パッケージのインストールに 10 分以上かかる場合に発生するエラーメッセージ インストールがバックグラウンドで正しく進行し、複数の同時インポートプロセスによって競合が発生する可能性があるので、再試行しないでください。
 
 Cloud Manager を使用してインストールされたコンテンツパッケージ（可変および不変）は、AEM パッケージマネージャーのユーザーインターフェイスにフリーズ状態で表示されます。これらのパッケージは再インストールや再ビルド、さらにはダウンロードもできません。また、「**cp2fm**」というサフィックス付きで表示され、そのインストールが Cloud Manager で管理されていることを示します。
 
