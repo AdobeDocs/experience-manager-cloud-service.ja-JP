@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の概要
 description: Adobe Experience Manager（AEM）as a Cloud Service の概要。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 438a43d7b57d8b1ca78873eecfd94a4b30004829
+source-git-commit: 7d5445ae4081065fd869684f2aacdb9de1951089
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 52%
+source-wordcount: '584'
+ht-degree: 54%
 
 ---
 
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)as a Cloud Serviceは、AEM製品ラインの最新
 
 AEM as a Cloud Serviceを使用すると、クラウドネイティブな方法でAEMアプリケーションを活用できるので、次のことが可能です。
 
-* で DevOps 作業を拡大 [Cloud Manager:CI/CD フレームワーク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)，自動スケーリング， API 接続，柔軟なデプロイメントモード， [コード品質ゲート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html?lang=en)、 、サービス。
+* Cloud Manager で DevOps の取り組みを拡大/縮小：CI/CD フレームワーク、自動スケーリング、API 接続、柔軟なデプロイメントモード、コード品質ゲート、サービス。
 
 * 開発者がアプリケーション開発の手法に自動化を加えられるようにする。
 
