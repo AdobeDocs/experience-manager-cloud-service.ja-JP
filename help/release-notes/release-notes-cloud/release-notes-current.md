@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 540e380b01629cb17aae9b993e871e3496a2e86b
+source-git-commit: adb0aa2812871f6efedd1fb88663170127dc59d4
 workflow-type: tm+mt
 source-wordcount: '1928'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 30%
 ## リリース日 {#release-date}
 
 のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.9.0) は 2021 年 10 月 6 日です。
-次のリリース (2021.10.0) は 2021 年 10 月 28 日です。
+次のリリース (2021.10.0) は 2021 年 11 月 5 日です。
 
 ## リリースビデオ {#release-video}
 
@@ -77,15 +77,15 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
-* **アダプティブフォーム用の Analytics**[：アダプティブフォーム用の Adobe Analytics でエンドユーザーの行動を捉えて追跡し、エンドユーザーのインサイトを収集できるようになりました。](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html)十分な情報に基づいて決定をおこない、エンドユーザーエクスペリエンスを向上させることができます。
+* **アダプティブフォーム用の Analytics**[：アダプティブフォーム用の Adobe Analytics でエンドユーザーの行動を捉えて追跡し、エンドユーザーのインサイトを収集できるようになりました。](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-aem-forms-with-adobe-analytics.html)十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 * **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)ようになりました。
 
-* **DocuSign を使用してアダプティブフォームに電子署名を行う：** [DocuSign を使用してアダプティブフォームに電子署名を行うことができます](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). このサービスは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。
+* **DocuSign を使用してアダプティブフォームに電子署名を行う：** [DocuSign を使用してアダプティブフォームに電子署名を行うことができます](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。
 
-### のベータ版機能 [!DNL Forms] {#sep-what-is-new-forms-prerelease}
+### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
-* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、次のことができます。 顧客が管理するリポジトリに機密の個人データ (SPD) を含むプロセス内のAEM Workflows データ (AEM Workflow Variables データ ) を格納します。
+* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、次のことができます。 顧客が管理するリポジトリに機密の個人データ (SPD) を含むプロセス内のAEM Workflows データ (AEM Workflow Variables データ ) を格納します。
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
