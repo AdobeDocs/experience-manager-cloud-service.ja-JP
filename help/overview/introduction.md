@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の概要
 description: Adobe Experience Manager（AEM）as a Cloud Service の概要。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 438a43d7b57d8b1ca78873eecfd94a4b30004829
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 100%
+source-wordcount: '603'
+ht-degree: 52%
 
 ---
 
@@ -13,42 +13,37 @@ ht-degree: 100%
 
 [Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html)（AEM）は as a Cloud Service として利用可能になりました。
 
-Adobe Experience Manager as a Cloud Service の特長は次のとおりです。
+Adobe Experience Manager(AEM)as a Cloud Serviceは、AEM製品ラインの最新の製品です。コンテンツ主導のパーソナライズされたエクスペリエンスを、お客様に提供し続けるのに役立ちます。 クラウドネイティブな俊敏性により、価値までの時間を短縮し、独自のビジネス要件を満たすように拡張可能です。 すべてのユースケースと機能を保持し、拡張することで、過去の投資やイノベーションを活用できます。
 
-* AEM アプリケーションのクラウドネイティブな利用手段です。
+AEM as a Cloud Serviceを使用すると、クラウドネイティブな方法でAEMアプリケーションを活用できるので、次のことが可能です。
 
-* AEM コンテンツ管理システムの機能と AEM デジタルアセット管理を組み合わせて、コンテンツ主導のパーソナライズされたエクスペリエンスをユーザーに提供できます。
+* で DevOps 作業を拡大 [Cloud Manager:CI/CD フレームワーク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)，自動スケーリング， API 接続，柔軟なデプロイメントモード， [コード品質ゲート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/code-quality-testing.html?lang=en)、 、サービス。
 
-* ダウンタイムなしのアップデートを実現する継続的配信と継続的統合を提供します。
+* 開発者がアプリケーション開発の手法に自動化を加えられるようにする。
 
-* 組み込みのコンテンツ配信ネットワーク（CDN）や他のネットワーク層のベストプラクティスを活用し、コンテンツを迅速かつ効率的に配信します。
+* 組み込みのコンテンツ配信ネットワーク (CDN) やその他のネットワーク層のベストプラクティスを使用して、コンテンツをグローバルな規模で迅速かつ効率的に配信します。
 
-* 規模を自動的に拡大／縮小できる動的アーキテクチャに基づいているので、インフラストラクチャに関する考慮が不要になります。
+* 自動的に拡張できる動的なアーキテクチャを活用して、インフラストラクチャに関する考慮事項を排除します。
 
-* セキュリティに重点を置き、自動テストを使用して一般的な脆弱性をスキャンします。
+* 自動化されたテストを使用して、一般的な脆弱性をスキャンし、脅威とセキュリティリスクを軽減します。
 
-* 自動テストを使用してユーザーコードを検証します。
+* 最適化されたパフォーマンストポロジーにより、耐障害性と効率性を最大限に高めます。
 
-* 耐障害性と効率性を最大限に高めるために、パフォーマンストポロジーが最適化されています。
+* AEM as a Cloud ServiceとAdobe Experience Cloudの深い統合を活用して、オンラインマーケティングおよび Web 分析製品に関するより優れた顧客体験を提供します。
 
-* 必要な手動設定が大幅に削減されます。
+* コードのリファクタリング、コンテンツの転送など、移行タスクを高速化するツールを利用します。
 
-* Adobe Experience Cloud と密接に統合されています。
+AEM as a Cloud Service
 
-* 次世代の Adobe Experience Manager 製品ラインを導入しており、これまでの投資と技術革新に基づき、あらゆる使用例と機能を維持および拡張します。
+* 開発者は、新しいクラウドベースの開発パターンを使用したAEMの設定と拡張に専念できます。
 
-これにより、次のようなメリットがあります。
+* コンテンツ作成者は、定期的に提供される最新のイノベーションを活用できます。
 
-* 開発者は、これまで AEM を成功に導いてきたパターンと新しいクラウドベース開発パターンに従って、AEM の設定と拡張に専念できます。
+* システム管理者は、構成とインフラストラクチャのメンテナンスに関する手動タスクを最小限に抑えることができます。
 
-* 作成者は、定期的に提供される最新のイノベーションを活用できます。
-
-* システム管理者向けの設定とインフラストラクチャが簡素化されます。
-
-* マーケティング担当者は、価値創出までの時間を短縮できます。
+* マーケティングプロフェッショナルは、価値創出までの時間を短縮できます。
 
 >[!NOTE]
->
 >AEM as a Cloud Service で導入された新しい用語の一部については、[用語](terminology.md)を参照してください。
 
 ## as a Cloud Service としての付加価値 {#value-added-as-a-cloud-service}
