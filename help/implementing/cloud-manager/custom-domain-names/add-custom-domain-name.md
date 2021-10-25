@@ -2,10 +2,10 @@
 title: カスタムドメイン名の追加
 description: カスタムドメイン名の追加
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 98c137645351c86da8680a31b4929c588863a981
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 94%
+source-wordcount: '785'
+ht-degree: 77%
 
 ---
 
@@ -13,13 +13,28 @@ ht-degree: 94%
 
 Cloud Manager でカスタムドメイン名を追加するには、ユーザーがビジネスオーナーまたはデプロイメントマネージャーでなければなりません。
 
+以下の表に示す手順を実行する必要があります。
+
+| ステップ |  | 責任 | 詳しく見る |
+|--- |--- |--- |---|
+| SLL 証明書の追加 | SLL 証明書の追加 | 顧客 | [SSL 証明書の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
+| ドメインの検証 | TXT レコードの追加 | 顧客 | [TXT レコードの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
+| ドメイン検証ステータスの確認 |  | 顧客 |  |
+|  | ステータス：ドメイン検証エラー | 顧客 | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+|  | ステータス：検証済み、展開に失敗しました | 連絡先Adobe担当者 | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
+| CNAME または APEX レコードを追加して、AEM as a Cloud Serviceを指す DNS レコードを追加する | DNS 設定の構成 | 顧客 | [DNS 設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
+| DNS レコードの状態の確認 |  | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | ステータス：DNS の状態が検出されません | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+|  | ステータス：DNS が正しく解決されない | 顧客 |  |
+
+
 ## 重要な検討事項 {#important-considerations}
 
 * カスタムドメイン名を追加する前に、カスタムドメイン名を含んだ有効な SSL 証明書をプログラムにインストールする必要があります。詳しくは、[SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)を参照してください。
 
 * 現在実行中のパイプラインが環境に接続されている間は、その環境にドメイン名を追加することはできません。
 
-* 一度に追加できるドメイン名は 1 つだけです。ただし、ドメインにワイルドカードを含めることはできません。オーサー側のカスタムドメインはサポートされていません。
+* 一度に追加できるドメイン名は 1 つだけです。オーサー側のカスタムドメインはサポートされていません。
 
 * AEM as a Cloud Service は、ワイルドカードドメインをサポートしていません。
 
@@ -48,10 +63,10 @@ Cloud Manager でカスタムドメイン名を追加するには、ユーザー
 
 1. そのドメイン名と関連付けられるパブリッシュサービスを持つ&#x200B;**環境**&#x200B;を選択します。
 
-1. 「**パブリッシュ**」または「**プレビュー**」としてサービスを選択します。
+1. サービスを **公開** または **プレビュー**.
 
    >[!NOTE]
-   >パブリッシュサービスとプレビューサービスの両方で、Cloud Managerのサイトプログラムでカスタムドメイン名がサポートされるようになりました。 各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。Preview Serviceの詳細については、「[Preview Service](/help/implementing/cloud-manager/manage-environments.md#preview-service)」を参照してください。
+   >Cloud Manager で、パブリッシュサービスとプレビューサービスの両方で、サイトプログラムのカスタムドメイン名がサポートされるようになりました。 各 Cloud Manager 環境は、1 つの環境につき最大 500 個のカスタムドメインをホストできます。Preview Service について詳しくは、 [Preview Service](/help/implementing/cloud-manager/manage-environments.md#preview-service).
 
 1. ドロップダウンから&#x200B;**ドメイン SSL 証明書**&#x200B;を選択し、「**続行**」をクリックします。
 
