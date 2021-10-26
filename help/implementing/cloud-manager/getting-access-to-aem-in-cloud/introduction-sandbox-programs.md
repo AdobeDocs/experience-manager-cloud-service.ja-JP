@@ -2,10 +2,10 @@
 title: 'サンドボックスプログラムの概要 '
 description: サンドボックスプログラムの概要
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
+source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 85%
+source-wordcount: '329'
+ht-degree: 83%
 
 ---
 
@@ -19,7 +19,10 @@ ht-degree: 85%
 
 サンドボックスで作成された環境は、自動スケール用に設定されません。したがって、パフォーマンスや負荷テストには適しません。
 
-サンドボックスプログラムには [!DNL Sites] と [!DNL Assets] が含まれ、Git リポジトリ、開発環境、非実稼動パイプラインで自動入力されます。  Git リポジトリーには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
+サンドボックスプログラムには次が含まれます。 [!DNL Sites] および [!DNL Assets] とは、Git リポジトリ、開発環境、実稼動以外のパイプラインで自動入力されます。  Git リポジトリーには、AEM プロジェクトのアーキタイプに基づくサンプルプロジェクトが入力されます。
+
+>[!IMPORTANT]
+>サンドボックスプログラムには、1 つの開発環境のみが含まれます。
 
 >[!NOTE]
 >カスタムドメインと IP許可リストは、サンドボックスプログラムでは使用できません。
@@ -35,7 +38,7 @@ ht-degree: 85%
    * 開発環境の作成
    * 開発環境にデプロイされる、実稼働以外のパイプラインの作成（開発環境へのメインブランチのデプロイ）
 
-1. **ソリューション：** サンドボックスプログラムには、AEMと [!DNL Sites] が含まれま [!DNL Assets]す。
+1. **解決策：** サンドボックスプログラムにはAEMが含まれます [!DNL Sites] および [!DNL Assets].
 
 1. **AEM アップデート：** AEM のアップデートは、サンドボックスプログラム内の環境に手動で適用します。自動でプッシュされることはありません。詳しくは、[サンドボックス環境への AEM アップデートの適用](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox)を参照してください。
 
