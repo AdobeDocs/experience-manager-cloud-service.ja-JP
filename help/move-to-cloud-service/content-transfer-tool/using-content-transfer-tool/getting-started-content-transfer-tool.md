@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
+source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -11,7 +11,7 @@ ht-degree: 59%
 
 # コンテンツ転送ツールの概要 {#getting-started-content-transfer-tool}
 
-## ソース環境の接続
+## ソース環境の接続 {#source-environment-connectivity}
 
 ソースAEMインスタンスがファイアウォールの内側で動作し、許可リストに追加された特定のホストにのみ到達できる場合があります。 抽出を正常に実行するには、AEMを実行しているインスタンスから次のエンドポイントにアクセスできる必要があります。
 
@@ -30,6 +30,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >次の場合、 `HTTP/2 200` が受信された場合、AEM as a Cloud Serviceへの接続に成功しました。
+
 
 ## 入手方法 {#availability}
 
