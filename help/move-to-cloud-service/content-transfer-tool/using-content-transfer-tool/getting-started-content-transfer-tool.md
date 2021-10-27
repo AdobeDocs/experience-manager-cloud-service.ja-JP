@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 6ee0cdc1a2c75bdf91354285c0e21ca618ceeb46
+source-git-commit: 95f65b9be7d8921bfc12980116c00aba21586f41
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -15,12 +15,9 @@ ht-degree: 59%
 
 ソースAEMインスタンスがファイアウォールの内側で動作し、許可リストに追加された特定のホストにのみ到達できる場合があります。 抽出を正常に実行するには、AEMを実行しているインスタンスから次のエンドポイントにアクセスできる必要があります。
 
-* 対象のAEMas a Cloud Service環境：
-   `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure BLOB ストレージサービス：
-   `*.blob.core.windows.net`
-* ユーザーマッピング IO エンドポイント：
-   `usermanagement.adobe.io`
+* 対象のAEMas a Cloud Service環境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Azure BLOB ストレージサービス： `*.blob.core.windows.net`
+* ユーザーマッピング IO エンドポイント： `usermanagement.adobe.io`
 
 ターゲットAEMas a Cloud Service環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します ( `program_id`, `environment_id`、および `migration_token`):
 
