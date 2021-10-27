@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: 2ff6f6be922c3c6a1d13945a4cd1c4d927829186
+source-git-commit: fc0628c2bfd345a7846d3d4fbd0fe11a459b10a1
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -25,10 +25,11 @@ ht-degree: 59%
 ターゲットAEMas a Cloud Service環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します ( `program_id`, `environment_id`、および `migration_token`):
 
 ```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+ curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
 ```
 
-次の場合、 `HTTP/2 200` が受信された場合、AEM as a Cloud Serviceへの接続に成功しました。
+>[!NOTE]
+>次の場合、 `HTTP/2 200` が受信された場合、AEM as a Cloud Serviceへの接続に成功しました。
 
 ## 入手方法 {#availability}
 
