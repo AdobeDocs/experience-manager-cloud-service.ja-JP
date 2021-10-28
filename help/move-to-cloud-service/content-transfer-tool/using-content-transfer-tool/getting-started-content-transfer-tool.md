@@ -1,8 +1,8 @@
 ---
-title: Getting Started with Content Transfer Tool
-description: Getting Started with Content Transfer Tool
+title: コンテンツ転送ツールの概要
+description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: ef699487b40c6f1479e00de99956295b5978e632
+source-git-commit: 54ecb65e78b25aed694f00eed99015ef0226f862
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -15,15 +15,13 @@ ht-degree: 59%
 
 ソースAEMインスタンスがファイアウォールの内側で動作し、許可リストに追加された特定のホストにのみ到達できる場合があります。 抽出を正常に実行するには、AEMを実行しているインスタンスから次のエンドポイントにアクセスできる必要があります。
 
-* The target AEM as a Cloud Service environment: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* 対象のAEMas a Cloud Service環境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Azure BLOB ストレージサービス： `*.blob.core.windows.net`
 * ユーザーマッピング IO エンドポイント： `usermanagement.adobe.io`
 
 ターゲットAEMas a Cloud Service環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します ( `program_id`, `environment_id`、および `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
 >次の場合、 `HTTP/2 200` が受信された場合、AEM as a Cloud Serviceへの接続に成功しました。
@@ -99,7 +97,7 @@ curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/mig
          ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >バージョンを移行セットに含める予定で、 `wipe=false`を無効にした場合、コンテンツ転送ツールの現在の制限により、バージョンのパージを無効にする必要があります。 If you prefer to keep version purge enabled and are performing top-ups into a migration set, then you must perform the ingestion as `wipe=true`.
+         >バージョンを移行セットに含める予定で、 `wipe=false`を無効にした場合、コンテンツ転送ツールの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、次のように取り込みを実行する必要があります。 `wipe=true`.
 
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
