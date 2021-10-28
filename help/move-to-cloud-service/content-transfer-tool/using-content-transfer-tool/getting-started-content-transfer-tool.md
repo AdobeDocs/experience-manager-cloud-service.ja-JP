@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: a8635ce39e2a8f8769975be22cdc431dd7f9423a
+source-git-commit: d8c9373da79b46d32f8da37b4dfeae815348ae8a
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 59%
@@ -21,9 +21,7 @@ ht-degree: 59%
 
 ターゲットAEMas a Cloud Service環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します ( `program_id`, `environment_id`、および `migration_token`):
 
-```
-curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
-```
+`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 
 >[!NOTE]
