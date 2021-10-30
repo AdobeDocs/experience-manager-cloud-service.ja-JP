@@ -1,22 +1,22 @@
 ---
-title: Dynamic Media Assetsの公開
+title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法を学習します。
 contentOwner: Rick Brough
 feature: アセット管理
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Dynamic Media Assetsの公開 {#publishing-dynamic-media-assets}
+# Dynamic Media アセットの公開 {#publishing-dynamic-media-assets}
 
-既にアップロードしたアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」を選択して、Dynamic Mediaアセットを公開します。 Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
+Dynamic Media アセットを公開するには、既にアップロード済みのアセットを選択し、「**[!UICONTROL 公開]**」または「**[!UICONTROL クイック公開]**」を選択します。Dynamic Media アセットを公開すると、URL として Web ページに含めることや、Web ページにコードを埋め込むことができます。
 
-また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。[Dynamic Mediaの設定](config-dm.md)を参照してください。 または、フォルダーレベルで「**[!UICONTROL 選択的公開]**」を使用して、相互に排他的なアセットを Dynamic Media または Adobe Experience Manager に選択的に公開することもできます。[Dynamic Mediaでの選択的公開の操作](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
+また、ユーザーの介入なしに、アップロードしたアセットを即座に公開することもできます。または、選択してアセットを公開することもできます。[Dynamic Media の設定](config-dm.md)を参照してください。または、フォルダーレベルで「**[!UICONTROL 選択的公開]**」を使用して、相互に排他的なアセットを Dynamic Media または Adobe Experience Manager に選択的に公開することもできます。詳しくは、[Dynamic Media での選択的公開の操作](/help/assets/dynamic-media/selective-publishing.md)を参照してください。
 
 **[!UICONTROL カード表示]**&#x200B;で、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さな地球アイコンが表示されます。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
@@ -26,9 +26,9 @@ ht-degree: 86%
 
 ビデオアセットをエンコードした直後に公開する場合は、エンコードが完了していることを確認してください。ビデオのエンコードが完了していない場合は、ビデオ処理ワークフローが実行中であることが通知されます。ビデオのエンコードが完了すると、ビデオレンディションをプレビューできます。その時点で、公開エラーが発生することなく、安全にビデオを公開できます。
 
-[WebアプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)も参照してください。
+[Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)も参照してください。
 
-[WebページへのDynamic Mediaビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
+[Web ページへの Dynamic Media ビデオビューアまたは画像ビューアの埋め込み](embed-code.md)も参照してください。
 
 >[!NOTE]
 >
