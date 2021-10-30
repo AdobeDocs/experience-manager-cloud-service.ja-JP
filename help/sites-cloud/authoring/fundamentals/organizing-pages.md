@@ -3,9 +3,9 @@ title: ページの作成と整理
 description: AEM でページを作成および整理する方法
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 93e0eac6e329c7a0c54cf592b097014d39a8eb17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2560'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 95%
 
 Web サイトの構造は、コンテンツページを保持するツリーと見なすことができます。これらのコンテンツページの名前は、URL の作成に使用されます。一方、タイトルは、ページコンテンツを表示したときに表示されます。
 
-以下に、[WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)サイトの例です。このサイトでは、スケートボード場（`la-skateparks`）に関する記事にアクセスします。
+以下に、[WKND チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)サイトの例です。このサイトでは、スケートボード場（`la-skateparks`）に関する記事にアクセスします。
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -262,13 +262,13 @@ AEM では、複数のテンプレートが標準提供されています。使�
    ![コピー](/help/sites-cloud/authoring/assets/copy.png)
 
 1. ページの新しいコピーを配置する場所に移動します。
-1. 表示された&#x200B;**貼り付け**&#x200B;アイコンをタップまたはクリックします。
+1. 使用可能になった「**貼り付け**」アイコンをタップまたはクリックします。
 
    ![貼り付け](/help/sites-cloud/authoring/assets/paste.png)
 
-1. 貼り付けダイアログには、貼り付けトランザクションの概要と、次の機能が表示されます。
-   * **新しいサイト名：** 貼り付けたページの名前を変更します。
-   * **子を含めずに貼り付け：** 貼り付け時に、選択したページの子ページを削除します（デフォルトでは子ページが貼り付けられます）
+1. 貼り付けダイアログには、貼り付けトランザクションの概要のほか、次の機能が表示されます。
+   * **新規サイト名**：貼り付けたページの名前を変更します。
+   * **子を含めずに貼り付け**：貼り付け時に、選択したページの子ページを除外します（デフォルトでは子ページも貼り付けられます）。
 
    ![貼り付けダイアログ](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
@@ -280,11 +280,11 @@ AEM では、複数のテンプレートが標準提供されています。使�
 
 >[!NOTE]
 >
->選択モードで貼り付け操作を開始すると、ページがコピーされるとすぐに自動的に終了します。
+>貼り付けアクションを選択モードで開始した場合は、ページがコピーされ次第、選択モードが自動的に終了します。
 
 ### ページの移動または名前の変更 {#moving-or-renaming-a-page}
 
-ページの移動または名前変更の手順は基本的に同じで、両方の操作はページの移動ウィザードで処理されます。 このウィザードでは、次の操作を行うことができます。
+ページの移動手順と名前の変更手順は基本的に同じで、どちらのアクションもページを移動ウィザードで処理されます。このウィザードでは、次の操作を行うことができます。
 
 * ページを移動せずに名前変更する
 * ページを名前変更せずに移動する
