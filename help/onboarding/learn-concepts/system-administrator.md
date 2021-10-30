@@ -1,16 +1,16 @@
 ---
 title: システム管理者
-description: このページでは、システム管理者について説明します。
-source-git-commit: c8c72bef27f2cce9a647dc8636c9cb08718f041c
-workflow-type: tm+mt
+description: ここでは、システム管理者について説明します。
+exl-id: 3a352bdb-b52c-4c14-a723-923c703892f4
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+workflow-type: ht
 source-wordcount: '105'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-
 # システム管理者 {#system-administrator}
 
-システム管理者は、組織の一部ではなく、Adobeの一部です。 このユーザーの主な職務はシステム管理者ではありませんが、このユーザーはAdmin Consoleの管理者権限を持っていることに注意するために使用されます。
+システム管理者は、アドビの一員ではなく組織の一員です。このユーザーの主な職務がシステム管理者でない可能性がある場合でも、このユーザーが Admin Console での管理者権限を持っていることを示すために、この用語が使用されます。
 
-これは、契約の署名後にAdobeから最初に連絡を受ける個人で、通常はAEMにアクセスし、Cloud Serviceリソースとして設定する最初の人です。 このユーザーは、[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)を使用して、アクセスから権限に至るまで、ユーザーのあらゆる側面を管理します。
+このユーザーは、契約の締結後にアドビから最初に連絡を受ける個人であり、通常は AEM as a Cloud Service リソースに初めてアクセスしてセットアップすることになります。このユーザーは、[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md) を使用して、アクセスから権限に至るまで、ユーザーのあらゆる面を管理します。
