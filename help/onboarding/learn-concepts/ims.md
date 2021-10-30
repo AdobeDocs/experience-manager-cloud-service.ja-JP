@@ -1,16 +1,16 @@
 ---
-title: AdobeIdentity Managementシステム
-description: このページでは、Identity Management Systemについて説明します。
-source-git-commit: d7428a9b94beb9e57eb0a0d1e61c5f98a159a1ff
-workflow-type: tm+mt
+title: Adobe Identity Management System
+description: このページでは、Identity Management System について説明します。
+exl-id: 3fd51410-7ad6-486f-bc3c-ef3d5473c19d
+source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Adobe Identity Management System {#intro-ims}
 
-# AdobeIdentity Managementシステム{#intro-ims}
+AEM as a Cloud Service には、認証用に Adobe Identity Management System（IMS）が事前設定されています。これまで AEM では、ユーザーが Active Directory や IMS などの ID プロバイダー（IDP）を設定する必要がありました。
 
-AEM as aCloud Serviceは、認証用にAdobeIdentity Managementシステム(IMS)で事前設定されています。 以前は、AEMを使用する場合、Active DirectoryやIMSなどのIDプロバイダー(IDP)を設定する必要がありました。
-
-AEM as a Cloud Serviceは、AEMと他のAdobe Experience Cloudの間のログイン操作を統合します。 複数のAdobe製品を持つ組織は、特に[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md)で役割ベースのグループを作成し、IMSを介してAEMを含む複数の製品にアクセス権を割り当てることでメリットを得ることができます。
+AEM as a Cloud Service により、AEM と他の Adobe Experience Cloud ソリューションの間でログイン操作が統一されます。複数のアドビ製品を持つ組織では、[Adobe Admin Console](/help/onboarding/learn-concepts/admin-console.md) で役割に基づくグループを作成し、IMS を使用して AEM を含む複数の製品へのアクセス権を割り当てることで、特にメリットが得られます。
