@@ -6,7 +6,7 @@ feature: アセット管理、公開、コラボレーション、ビデオ
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '624'
 ht-degree: 100%
 
