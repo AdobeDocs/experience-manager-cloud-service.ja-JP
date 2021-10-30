@@ -3,13 +3,13 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリー�
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート。'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
 ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -57,7 +57,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。選択内容はリポジトリーに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
 * スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。（CQ-4318381）
 
-## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 AEM Forms は、長年にわたって、優れたオンボーディングと登録のエクスペリエンスの提供で、多くの組織を支援してきました。これらのエクスペリエンスは、組織がリードを売上にコンバージョンしたり、取得した顧客データを処理したり、オーディエンスプロファイルに基づいてレスポンシブなエクスペリエンスを提供するのに役立っています。現在、AEM Forms はクラウドサービスとして提供されています。
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 * [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージが表示され、UI を使用してセルフサービス方式で操作できるようになります。
 
-* 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下をおこなえるようになりました。
+* 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下を行えるようになりました。
 
    * Assets を使用している既存のプログラムに Sites サイトソリューションを追加する（またはその逆）。
    * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
