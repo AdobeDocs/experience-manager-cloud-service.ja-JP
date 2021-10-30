@@ -5,9 +5,9 @@ feature: パノラマ画像
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 71%
 
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* キーワード `equirectangular`、または `spherical` と `panorama`、または `spherical` と `panoramic` でタグ付けされている必要があります。[タグ](/help/sites-cloud/authoring/features/tags.md)の使用を参照してください。
+* キーワード `equirectangular`、または `spherical` と `panorama`、または `spherical` と `panoramic` でタグ付けされている必要があります。[タグの使用](/help/sites-cloud/authoring/features/tags.md)を参照してください。
 
 縦横比とキーワードの両方の条件が、アセットの詳細ページと `Panoramic Media` WCM コンポーネントのパノラマアセットに適用されます。
 
