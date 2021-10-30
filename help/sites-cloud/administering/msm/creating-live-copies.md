@@ -5,7 +5,7 @@ feature: マルチサイトマネージャー
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4277'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 ブループリント設定は不変データと見なされ、実行時には編集できません。この理由から、設定の変更は CI／CD パイプラインを使用して Git を介してデプロイする必要があります。
 
-詳しくは、「[Adobe Experience Manager (AEM) as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)」を参照してください。
+詳しくは、[Adobe Experience Manager（AEM）as a Cloud Service の主な変更点](/help/release-notes/aem-cloud-changes.md)を参照してください。
 
 以下の手順は、管理者インスタンス上で、ローカル開発および開発目的でのみ使用できます。これらのオプションは、AEMaaCS クラウドインスタンスでは使用できません。
 
@@ -322,7 +322,7 @@ ht-degree: 100%
 
 ## ライブコピーのコンテンツの変更 {#changing-live-copy-content}
 
-ライブコピーのコンテンツを変更するには、以下をおこないます。
+ライブコピーのコンテンツを変更するには、以下を行います。
 
 * ページを段落に追加します。
 * 任意のページやコンポーネントのライブコピーの継承を削除して既存のコンテンツを更新します。
@@ -545,7 +545,7 @@ ht-degree: 100%
 * すべての継承のキャンセルが削除され、かつ
 * ページをソースページと同じ状態に戻します。
 
-リセットは、ページプロパティ、段落システムおよびコンポーネントに対しておこなった変更に適用されます。
+リセットは、ページプロパティ、段落システムおよびコンポーネントに対して行った変更に適用されます。
 
 #### ページプロパティからのライブコピーページのリセット {#reset-a-live-copy-page-from-the-page-properties}
 
@@ -600,7 +600,7 @@ ht-degree: 100%
 >
 >ライブ関係を削除し、必要に応じて後で元に戻すには、ページの[ライブコピーの継承をキャンセル](#suspending-inheritance-for-a-page)します。
 
-ツリー内で&#x200B;**分離**&#x200B;を使用する場所によって異なる処理がおこなわれます。
+ツリー内で&#x200B;**分離**&#x200B;を使用する場所によって異なる処理が行われます。
 
 * **ライブコピーコピーのルートページで分離する**
 
