@@ -1,17 +1,17 @@
 ---
-title: Dynamic Mediaの設定
+title: Dynamic Media のセットアップ
 description: Dynamic Media をセットアップするには、Dynamic Media を設定して、画像やビューアのプリセットを管理する必要があります。
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
-# Dynamic Mediaの設定 {#setting-up-dynamic-media}
+# Dynamic Media のセットアップ {#setting-up-dynamic-media}
 
 [Dynamic Media ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)では、マーチャンダイジングおよびマーケティング用のリッチなビジュアルアセットをオンデマンドで配信し、アセットを管理できます。これらのアセットは、Web、モバイルおよびソーシャルサイトでの利用に合わせて自動的に拡大縮小されます。Dynamic Media は、一連のプライマリソースアセットを使用し、パフォーマンスが最適化されスケーラビリティに優れたグローバルネットワーク経由で、複数のリッチコンテンツのバリエーションをリアルタイムで生成および配信します。
 
@@ -27,10 +27,10 @@ ht-degree: 57%
 
 Dynamic Media の管理者には、次のトピックが参考になります。
 
-* [Dynamic Mediaの設定](config-dm.md)
+* [Dynamic Media の設定](config-dm.md)
 * [画像プリセットの管理](managing-image-presets.md)
 * [ビューアプリセットの管理](managing-viewer-presets.md)
-* [Dynamic Mediaのトラブルシューティング](troubleshoot-dm.md)
+* [Dynamic Media のトラブルシューティング](troubleshoot-dm.md)
 
 次のトピックも参照してください。
 
@@ -41,5 +41,5 @@ Dynamic Media の管理者には、次のトピックが参考になります。
 >
 >**アップグレードする場合：**
 >
->* Adobe[!DNL Experience Manager]を起動して実行した後、アップロードしたアセットはDynamic Mediaを自動的に有効にします（システム管理者が明示的に無効にしていない限り）。 アップグレードされた[!DNL Experience Manager]インスタンスでDynamic Mediaを初めて使用する場合、Dynamic Mediaを有効にするには、アセットを再処理する必要がある可能性が高くなります。 [フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
+>* Adobe [!DNL Experience Manager] を実行状態にした後にアップロードしたすべてのアセットで、Dynamic Media が自動的に有効になります（システム管理者によって明示的に無効にされた場合を除く）。アップグレードされた [!DNL Experience Manager] インスタンスで Dynamic Media を新たに使用する場合、Dynamic Media を使用できるようアセットを再処理する必要が生じる可能性があります。詳しくは、[フォルダー内のアセットの再処理](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)を参照してください。
 
