@@ -5,7 +5,7 @@ feature: コンテンツフラグメント
 role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
 ht-degree: 100%
 
