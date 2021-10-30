@@ -2,7 +2,7 @@
 title: 役割と責務
 description: 役割と責務
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
 ht-degree: 100%
 
@@ -14,7 +14,8 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_raci"
 >title="役割と責務"
->abstract="アドビでは、Adobe Experience Manager as a Cloud Service のプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供しています。ソリューションの開発とデプロイメントをできるだけ効率的に進めるには、顧客とカスタマイズ担当者が、次の役割を理解し果たすことが重要です。"
+>abstract="
+アドビでは、Adobe Experience Manager as a Cloud Service のプロビジョニング、開発、ステージング、実稼働に関する一連のサービスを提供しています。ソリューションの開発とデプロイメントをできるだけ効率的に進めるには、顧客とカスタマイズ担当者が、次の役割を理解し果たすことが重要です。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=ja" text="適切な人材の選択、適切な役割"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=ja" text="KPI の調整"
 
