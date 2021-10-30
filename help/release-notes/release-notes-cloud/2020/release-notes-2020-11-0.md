@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 リリー�
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.11.0 のリリースノート。'
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1265'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 98%
 
 * **ロールアウトに使用可能なライブコピーページの並べ替え**：ロールアウトに使用できるライブコピーページを、[!UICONTROL 名前]、[!UICONTROL 最終変更日]、[!UICONTROL 前回のロールアウト日]の各プロパティを使用して並べ替える新しいオプションが追加されました。ページの[!UICONTROL 前回のロールアウト日]は、新しく導入されたプロパティです。
 
-## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets] と [!DNL Dynamic Media] の新機能  {#what-is-new-assets}
 
-* **アセットの一括取り込み**：アセットマイクロサービスなど、[!DNL Experience Manager] as a Cloud Service アーキテクチャを活用する拡張可能でクラウドネイティブな取り込みサービスを提供します。主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールでおこなえることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
+* **アセットの一括取り込み**：アセットマイクロサービスなど、[!DNL Experience Manager] as a Cloud Service アーキテクチャを活用する拡張可能でクラウドネイティブな取り込みサービスを提供します。主な使用例としては、監視、レポート、スケジュール機能を備えた大規模な取り込みや、クラウドデータストアへの初回のアセット転送を一般的なクラウドアップロードツールで行えることなどが挙げられます。詳しくは、[アセット一括取り込みツール](/help/assets/add-assets.md#asset-bulk-ingestor)の説明を参照してください。
 
 
-   このツールは、システム管理者、コンサルタント、実装パートナーのいずれかのペルソナを対象としています。この機能により、大規模な取り込みが可能になります。これは、初回の取り込み時や大量の取り込みをおこなうときに使用するのが理想的です。より小規模な取り込みジョブの場合は、[Assets ユーザーインターフェイスを使用したアップロード](/help/assets/add-assets.md#upload-assets)または[[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用します。
+   このツールは、システム管理者、コンサルタント、実装パートナーのいずれかのペルソナを対象としています。この機能により、大規模な取り込みが可能になります。これは、初回の取り込み時や大量の取り込みを行うときに使用するのが理想的です。より小規模な取り込みジョブの場合は、[Assets ユーザーインターフェイスを使用したアップロード](/help/assets/add-assets.md#upload-assets)または[[!DNL Experience Manager] デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を使用します。
 
    ![一括読み込みの設定](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -42,10 +42,10 @@ ht-degree: 98%
 
    ![アセットの並べ替え](/help/assets/assets/asset-sort-options.png)
 
-* このリリースでは、[!DNL Experience Manager Assets] のアクセシビリティに関する次の機能強化がおこなわれています。詳しくは、[ [!DNL Assets]](/help/assets/accessibility.md) のアクセシビリティ機能を参照してください。
+* このリリースでは、[!DNL Experience Manager Assets] のアクセシビリティに関する次の機能強化が行われています。詳しくは、[ [!DNL Assets]](/help/assets/accessibility.md) のアクセシビリティ機能を参照してください。
 
-   * キーボードを使用してタイムラインのナビゲーションをおこなう場合、Esc キーを押すと、フォーカスを失わずに「すべて表示」オプションを折りたたむことができます。
-   * キーボードの Tab キーを使用してナビゲーションをおこなう場合、追加したタグから最後のタグを削除した後も、フォーカスはそのタグフィールドにとどまります。
+   * キーボードを使用してタイムラインのナビゲーションを行う場合、Esc キーを押すと、フォーカスを失わずに「すべて表示」オプションを折りたたむことができます。
+   * キーボードの Tab キーを使用してナビゲーションを行う場合、追加したタグから最後のタグを削除した後も、フォーカスはそのタグフィールドにとどまります。
    * スクリーンリーダーで使用される名前、ロール、値の適切な情報が [!DNL Experience Manager] コンポーネントに含まれるようになりました。
    * 「種類 / サイズ」コンボボックス、「リンク」コンボボックス、「言語」コンボボックス、または「テキスト」編集ボックスを削除すると、キーボードフォーカスは次または前のユーザーインターフェイス要素、またはより関連性の高いユーザーインターフェイス要素に戻ります。
    * オプションの上にポインターを置くと、「選択」や「ダウンロード」などのヒントが表示されます。拡大鏡を使用している場合は、これらのヒントが原因でファイルのサムネールが表示されないことがあります。`Escape` キーを使用してオプションを削除した後に、フォーカスを保持できるようになりました。
@@ -104,7 +104,7 @@ AEM as a Cloud Service 2020.11.0 の Cloud Manager のリリース日は 2020 �
 
 ### ワークフロー {#workflows}
 
-* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)を参照してください。
+* ワークフロータイトル、ワークフローモデル、ステータス、イニシエーター、ペイロードパス、開始日に基づいてワークフローインスタンスを検索できるようになりました。詳しくは、[ワークフローインスタンスの検索](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=ja)を参照してください。
 
 ### パブリッシュ層のユーザーデータ同期 {#user-sync}
 
@@ -120,7 +120,7 @@ Cloud Manager によるビルド時には Apache および Dispatcher 設定の�
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-この節では、[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)リリース v1.1.12 の新機能と更新点について説明します。
+この節では、[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)リリース v1.1.12 の新機能と更新点について説明します。
 
 ### 新機能 {#what-is-new-ctt}
 
