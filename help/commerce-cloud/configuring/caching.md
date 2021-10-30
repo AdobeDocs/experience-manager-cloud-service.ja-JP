@@ -3,9 +3,9 @@ title: キャッシュとパフォーマンス
 description: GraphQL とコンテンツキャッシュを有効にしてコマース実装のパフォーマンス最適化に利用できる様々な設定について説明します。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '842'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ venia/components/structure/navigation:true:10:600
 
 純粋な AEM で管理されるコンテンツ CIF に加えて、通常、ページには、GraphQL を介して Magento から動的に取り込まれたコマースデータを表示できます。ページ構造自体は変更されない場合がありますが、コマースのコンテンツは変更されることがあります。例は、製品データ（名前、価格など）が Magento で変更された場合です。
 
-AEM Dispatcher で CIF ページを限られた時間だけキャッシュできるようにするため、AEM Dispatcher で CIF ページをキャッシュする場合は、[時間ベースのキャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)（TTL ベースのキャッシュとも呼ばれます）を使用することをお勧めします。この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用して AEM で設定できます。
+AEM Dispatcher で CIF ページを限られた時間だけキャッシュできるようにするため、AEM Dispatcher で CIF ページをキャッシュする場合は、[時間ベースのキャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring-time-based-cache-invalidation-enablettl)（TTL ベースのキャッシュとも呼ばれます）を使用することをお勧めします。この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用して AEM で設定できます。
 
 TTL ベースのキャッシュを使用する場合、デベロッパーは通常、選択した AEM ページに対して 1 つまたは複数のキャッシュ期間を定義します。これにより、CIF ページは設定された期間まで AEM Dispatcher にのみキャッシュされ、コンテンツは頻繁にアップデートされます。
 
@@ -63,4 +63,4 @@ TTL ベースのキャッシュを使用する場合、デベロッパーは通�
 
 - [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL キャッシュの設定](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja)
