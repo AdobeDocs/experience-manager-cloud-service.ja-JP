@@ -3,9 +3,9 @@ title: コマース統合フレームワーク（CIF）アドオンの主な変�
 description: 古い CIF バージョンと比較した、コマース統合フレームワーク（CIF）の主な変更点です。
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ AEM CIF アドオンは、Cloud Manager を使用してインストールされ�
 
 ## CIF Venia プロジェクトのデプロイメント
 
-プロジェクトは [Cloud Manager Git リポジトリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html)で使用可能で、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja) を介してデプロイされます。
+プロジェクトは [Cloud Manager Git リポジトリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html?lang=ja)で使用可能で、[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja) を介してデプロイされます。
 
 **以前の CIF バージョン**
 
