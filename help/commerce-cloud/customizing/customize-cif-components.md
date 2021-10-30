@@ -12,9 +12,9 @@ kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
 source-git-commit: 1575d5d8b06b537fc9754885905aacdfd2e33fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2582'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ AEM コードを始める前に、GraphQL IDE を使用して [Magento GraphQL](
 
 Sling モデルは Java として実装され、生成されたプロジェクトの&#x200B;**コア**&#x200B;モジュールにあります。
 
-[任意の IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用したクリーンショットは、[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) からのものです。
+[任意の IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用したクリーンショットは、[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#microsoft-visual-studio-code) からのものです。
 
 1. IDE で、**コア**&#x200B;モジュールの下に移動して、次の操作をおこないます。`core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`
 
@@ -332,11 +332,11 @@ Sling モデルは Java として実装され、生成されたプロジェク�
 
 AEM コンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。これは、コンポーネントがマークアップのレンダリングに使用する [HTL スクリプト](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)を上書きすることでおこなわれます 。HTML Template Language（HTL）は、AEM コンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。例えば、製品ティーザーを何度も繰り返し使用すれば、異なる製品を表示できます。
 
-この例では、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「エコフレンドリー」であることを示します。コンポーネントの[マークアップをカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)するデザインパターンは、AEM CIF コアコンポーネントだけでなく、すべての AEM コンポーネントに対して実際に標準です。
+この例では、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「エコフレンドリー」であることを示します。コンポーネントの[マークアップをカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-the-markup)するデザインパターンは、AEM CIF コアコンポーネントだけでなく、すべての AEM コンポーネントに対して実際に標準です。
 
 >[!NOTE]
 >
-> この製品ティーザーやCIFページコンポーネントなど、CIF製品およびカテゴリピッカーを使用してコンポーネントをカスタマイズする場合は、必ずコンポーネントダイアログに必要な`cif.shell.picker` clientlibを含めてください。 詳しくは、[CIF製品とカテゴリピッカーの使用](use-cif-pickers.md)を参照してください。
+> この製品ティーザーや CIF ページコンポーネントなど、CIF 製品およびカテゴリピッカーを使用してコンポーネントをカスタマイズする場合は、必ずコンポーネントダイアログに必要な `cif.shell.picker` clientlib を含めてください。詳しくは、[CIF 製品とカテゴリピッカーの使用](use-cif-pickers.md)を参照してください。
 
 1. IDE で、`ui.apps` モジュールに移動して展開し、フォルダー階層を `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` まで展開し、`.content.xml` ファイルを検査します。
 
@@ -352,7 +352,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
        componentGroup="Venia - Commerce"/>
    ```
 
-   上記は、プロジェクトの製品ティーザーコンポーネントのコンポーネント定義です。`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` プロパティに注目してください。これは、[プロキシコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components)の作成例です。AEM CIF コアコンポーネントからすべての製品ティーザー HTL スクリプトをコピー＆ペーストする代わりに、`sling:resourceSuperType` を使用してすべての機能を継承することができます。
+   上記は、プロジェクトの製品ティーザーコンポーネントのコンポーネント定義です。`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"` プロパティに注目してください。これは、[プロキシコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=ja#create-proxy-components)の作成例です。AEM CIF コアコンポーネントからすべての製品ティーザー HTL スクリプトをコピー＆ペーストする代わりに、`sling:resourceSuperType` を使用してすべての機能を継承することができます。
 
 1. `productteaser.html` ファイルを開きます。これは、[CIF 製品ティーザー](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)からの `productteaser.html` ファイルのコピーです。
 
@@ -392,7 +392,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
    Sling モデルメソッドを HTL で呼び出すと、メソッドの `get` および `is` 部分が削除され、最初の文字が小文字に変換されます。`isShowBadge()` は `.showBadge` となり、`isEcoFriendly` は `.ecoFriendly` となります。`.isEcoFriendly()` から返されるブール値に基づいて、`<span>Eco Friendly</span>` が表示されるかどうかを決定します。
 
-   `data-sly-test` などの HTL ブロック文の詳細については、[こちら](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html#test)を参照してください。
+   `data-sly-test` などの HTL ブロック文の詳細については、[こちら](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/block-statements.html?lang=ja#test)を参照してください。
 
 1. 変更を保存し、コマンドラインターミナルから Maven を使用して AEM にアップデートをデプロイします。
 
@@ -496,9 +496,9 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 ## その他のリソース {#additional-resources}
 
-- [AEM アーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM アーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)
 - [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)
 - [AEM CIF コアコンポーネントのカスタマイズ](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [コアコンポーネントのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
-- [AEM Sites 使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [コアコンポーネントのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja)
+- [AEM Sites 使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)
 - [CIF 製品およびカテゴリピッカーの使用](use-cif-pickers.md)
