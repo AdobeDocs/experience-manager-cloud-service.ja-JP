@@ -1,14 +1,14 @@
 ---
-title: アセット、フォルダーおよびコレクションの配布と共有
+title: アセット、フォルダー、コレクションを配布して共有する
 description: リンクとして共有、ダウンロード、経由 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]などの方法を使用して、デジタルアセットを配布します。
 contentOwner: AG
 feature: アセット管理、共同作業、アセット分布
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 89%
 >[!NOTE]
 >
 >* リンクとして共有するフォルダーやアセットに対する編集の ACL 権限が必要です。
->* ユーザーとリンクを共有する前に、[送信電子メール](/help/implementing/developing/introduction/development-guidelines.md#sending-email)を有効にします。 そうでない場合は、エラーが発生します。
+>* ユーザーとリンクを共有する前に、[電子メールの送信](/help/implementing/developing/introduction/development-guidelines.md#sending-email)を有効にします。そうでない場合は、エラーが発生します。
 
 
 1. [!DNL Assets] のユーザーインターフェイスで、リンクとして共有するアセットを選択します。
@@ -116,7 +116,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Managerユーザーである相手とアセットを共有できます。 詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
+* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
 
 * **Adobe Asset Link**：クリエイティブプロフェッショナルは、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe Photoshop] 内から直接アセットを検索および使用できます。
 
@@ -185,7 +185,7 @@ Adobe Asset Link を使用すると、コンテンツ作成プロセスでのク
 ## ベストプラクティスとトラブルシューティング {#bestpractices}
 
 * 名前に空白を含むアセットフォルダーまたはコレクションは共有されない可能性があります。
-* ユーザーが共有アセットをダウンロードできない場合は、Experience Manager管理者に[ダウンロード制限](#maxdatasize)を確認してください。
+* ユーザーが共有アセットをダウンロードできない場合は、Experience Manager 管理者に[ダウンロード制限](#maxdatasize)を確認してください。
 * リンク共有を使用して共有されているビデオをプレビューするには、リポジトリー内でそのビデオノードの場所 `/jcr:content/renditions` に静的ビデオレンディションが必要です。プレビューは、[!DNL Dynamic Media] レンディションの有無には依存しません。
 * リンク共有を介してビデオアセットをダウンロードする場合、ダウンロードされたアーカイブに [!DNL Dynamic Media] レンディションは含まれません。
 
