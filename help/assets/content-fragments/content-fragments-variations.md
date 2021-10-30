@@ -5,9 +5,9 @@ feature: コンテンツフラグメント
 role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 source-git-commit: 3c7358aa8db925e8f2493896a9d57ae13788bf8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2285'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 96%
 
    * 各データタイプには、異なる編集オプションが用意されています。
 
-* **複数行テキスト**&#x200B;フィールドの場合は、[全画面表示エディター](#full-screen-editor)を開いて次の操作をおこなうこともできます。
+* **複数行テキスト**&#x200B;フィールドの場合は、[全画面表示エディター](#full-screen-editor)を開いて次の操作を行うこともできます。
 
    * [形式](#formats)の選択
    * その他の編集オプションの表示（[リッチテキスト](#rich-text)形式の場合）
@@ -218,10 +218,10 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 >[!CAUTION]
 英語版は標準で提供されています。
 他の言語版は、パッケージ共有から言語モデルパッケージとして使用できます。
-* [フランス語（fr）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [ドイツ語（de）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [イタリア語（it）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [スペイン語（es）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+* [フランス語（fr）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [ドイツ語（de）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [イタリア語（it）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+* [スペイン語（es）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 
 
@@ -294,11 +294,11 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 * 注釈が適用されたテキスト全体を削除すると、注釈も削除されます。
 
-* 注釈の一覧表示や削除をおこなうには、フラグメントエディターで「**注釈**」タブを選択します。
+* 注釈の一覧表示や削除を行うには、フラグメントエディターで「**注釈**」タブを選択します。
 
    ![注釈](assets/cfm-variations-08.png)
 
-* 選択されたフラグメントの[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)で、注釈の表示や削除をおこなえます。
+* 選択されたフラグメントの[タイムライン](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)で、注釈の表示や削除を行えます。
 
 ### フラグメントへのアセットの挿入 {#inserting-assets-into-your-fragment}
 
@@ -308,7 +308,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 >[!CAUTION]
 参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
-ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)でおこなう必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
+ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
 >[!NOTE]
 [画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
@@ -344,7 +344,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 >[!CAUTION]
 参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
-ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)でおこなう必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
+ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
 >[!NOTE]
 [画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
@@ -427,7 +427,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 
 **プライマリ**&#x200B;はコンテンツフラグメントの必須の部分であり、定義に従ってコンテンツのプライマリコピーを保持します。一方、バリエーションはそのコンテンツの更新および適合された個別のバージョンを保持します。プライマリを更新した場合、これらの変更はバリエーションにも関連するので、バリエーションに伝播させる必要があります。
 
-バリエーションの編集時には、バリエーションの現在の要素をプライマリと同期させるアクションにアクセスできます。これにより、プライマリにおこなわれた変更内容を必要なバリエーションに自動的にコピーできます。
+バリエーションの編集時には、バリエーションの現在の要素をプライマリと同期させるアクションにアクセスできます。これにより、プライマリに行われた変更内容を必要なバリエーションに自動的にコピーできます。
 
 >[!CAUTION]
 同期を使用できるのは、変更内容を&#x200B;***プライマリ**からバリエーションに*&#x200B;コピーする場合のみです。
