@@ -6,7 +6,7 @@ feature: Assets HTTP API、API
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1519'
 ht-degree: 100%
 
@@ -274,5 +274,5 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!MORELIKETHIS]
 >
->* [開発者向けリファレンスドキュメント [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* 開発者向けリファレンスドキュメント [!DNL Assets] [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 
