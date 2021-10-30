@@ -1,8 +1,8 @@
 ---
-title: プロビジョニングプロセス — 概要
-description: プロビジョニングプロセス — 概要
+title: プロビジョニングプロセス - 概要
+description: プロビジョニングプロセス - 概要
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
 ht-degree: 100%
 
@@ -50,7 +50,6 @@ ht-degree: 100%
 ### 2. Adobe Admin Console への組織がオンボーディングされます。
 
 >   ![processoverview2.jpg](./assets/processOverview2.jpg)
-
 * システム管理者：
    * AEM プログラムと環境をプロビジョニングします。
    * Admin Console に移動して管理タスクを実行します。
