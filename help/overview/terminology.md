@@ -3,13 +3,13 @@ title: Adobe Experience Manager as a Cloud Service の概要 - 用語
 description: Adobe Experience Manager as a Cloud Service の概要 - 用語。
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
 source-git-commit: 4067db2234b29e4ffbe3e76f25afd9d8642a1973
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager as aCloud Service — 用語 {#adobe-experience-manager-as-a-cloud-service-terminology}
+# Adobe Experience Manager as a Cloud Service - 用語 {#adobe-experience-manager-as-a-cloud-service-terminology}
 
 Adobe Experience Manager (AEM) as a Cloud Service に関連して、次の用語が使用されます。
 
@@ -27,7 +27,7 @@ Adobe Experience Manager (AEM) as a Cloud Service に関連して、次の用語
 |---|---|
 | Adobe パイプライン | コンテンツをオーサーからパブリッシュに公開するためのメカニズムです。 |
 | AEM オーサー層 | Sites と Assets のオーサリング環境を表しています。 |
-| AEMプレビュー層 | Sitesのプレビュー環境を示します。 |
+| AEM プレビュー層 | Sites のプレビュー環境を表しています。 |
 | AEM パブリッシュ層 | Sites のパブリッシュ環境を表しています。 |
 
 
