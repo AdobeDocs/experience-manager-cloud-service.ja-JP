@@ -4,7 +4,7 @@ description: AEM as a Cloud Service リリース 2020.11.0 の Cloud Manager の
 feature: リリース情報
 exl-id: e2acf515-d339-4d2b-9b62-09c1dab1ffac
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Adobe Experience Manager as a Cloud Service 2020.11.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2020.11.0 の Cloud Manager リリースノートの概要を説明しています。
+ここでは、AEM as a Cloud Service Release 2020.11.0 Cloud Manager のリリースノートの概要を説明しています。
 
 ## リリース日 {#release-date}
 
