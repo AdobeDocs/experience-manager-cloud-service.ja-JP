@@ -9,9 +9,9 @@ audience: developer
 feature: コマース統合フレームワーク
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 source-git-commit: 2e0a2b543fe0b6302a5dd62055f89a8f30427e6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '627'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 
 ## 製品ピッカー {#product-picker}
 
-プロジェクトコンポーネントで製品ピッカーを使用するには、開発者がコンポーネントダイアログに `commerce/gui/components/common/cifproductfield` を追加する必要があります。例えば、cq:dialog:に対して次のように使用します。
+プロジェクトコンポーネントで製品ピッカーを使用するには、開発者がコンポーネントダイアログに `commerce/gui/components/common/cifproductfield` を追加する必要があります。例えば、cq:dialog: には以下を使用します。
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -49,7 +49,7 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 >`cifproductfield` コンポーネントには クライアントライブラリが必要です。`cif.shell.picker`ダイアログにクライアントライブラリを追加するには、extraClientlibs プロパティを使用します。
 >[!CAUTION]
 >
->CIFコアコンポーネントバージョン2.0.0以降、`id`のサポートは削除され、`uid`に置き換えられました。 製品IDとして`sku`または`slug`を使用することを強くお勧めします。 アドビでは、CIFコアコンポーネントバージョン1.xを使用するプロジェクトに対してのみ`id`を引き続きサポートします。
+>CIF コアコンポーネントのバージョン 2.0.0 以降、`id` のサポートは削除され、`uid` に置き換わりました。製品 ID としては、`sku` または `slug` を使用することを強くお勧めします。アドビでは、CIF コアコンポーネントのバージョン 1.x を使用しているプロジェクトに対してのみ、`id` を引き続きサポートします。
 
 完全に動作する `cifproductfield` の例は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)プロジェクトにあります。AEM コアコンポーネントドキュメントの[ダイアログのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-dialogs)も参照してください。
 
@@ -69,16 +69,16 @@ AEM Content &amp; Commerce Authoring には、AEM の作成者やマーケター
 
 カテゴリピッカーフィールドでは、次のオプションプロパティをサポートしています。
 
-- selectionId(id, uid, slug, urlPath, idAndUrlPath _（非推奨）_, uidAndUrlPath _（非推奨）_) — ピッカーから返されるカテゴリ属性を選択できます（デフォルト= id）。
+- selectionId（id、uid、slug、urlPath、idAndUrlPath _（廃止予定）_、uidAndUrlPath _（廃止予定）_）- ピッカーが返すカテゴリ属性を選択できます（デフォルトは id）。
 - multiple（true、false）- 1 つまたは複数のカテゴリの選択を有効にします（デフォルトは false）。
 
 また、`name`、`fieldLabel`、`fieldDescription` などの標準のダイアグログフィールドプロパティもサポートされています。
 
 >[!CAUTION]
 >
->`cifproductfield` コンポーネントと同様に、`cifcategoryfield` コンポーネントにも クライアントライブラリが必要です。`cif.shell.picker`ダイアログにクライアントライブラリを追加するには、`extraClientlibs` プロパティを使用します。AEM コアコンポーネントドキュメントの[ダイアログのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs)を参照してください。
+>`cifproductfield` コンポーネントと同様に、`cifcategoryfield` コンポーネントにも クライアントライブラリが必要です。`cif.shell.picker`ダイアログにクライアントライブラリを追加するには、`extraClientlibs` プロパティを使用します。AEM コアコンポーネントドキュメントの[ダイアログのカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-dialogs)を参照してください。
 >[!CAUTION]
 >
->CIFコアコンポーネントバージョン2.0.0以降、`id`のサポートは削除され、`uid`に置き換えられました。 カテゴリ識別子として`uid`または`urlPath`を使用することを強くお勧めします。 CIFコアコンポーネントバージョン1.xを使用するプロジェクトでのみ、引き続き`id`と`idAndUrlPath`をサポートします。
+>CIF コアコンポーネントのバージョン 2.0.0 以降、`id` のサポートは削除され、`uid` に置き換わりました。カテゴリ ID としては、`uid` または `urlPath` を使用することを強くお勧めします。アドビでは、CIF コアコンポーネントのバージョン 1.x を使用しているプロジェクトに対してのみ、`id` と `idAndUrlPath` を引き続きサポートします。
 
 完全に動作する `cifcategoryfield` の例は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)プロジェクトにあります。
