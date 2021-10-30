@@ -3,9 +3,9 @@ title: 'サンドボックスプログラムの編集 '
 description: サンドボックスプログラムの編集
 exl-id: e4545f7e-5329-40ad-81bb-a383c68f5d66
 source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
