@@ -3,15 +3,15 @@ title: AEM as a Cloud Service でのクライアントサイドライブラリ�
 description: AEM では、クライアントサイドライブラリフォルダーが提供されています。これにより、クライアントサイドコード（clientlibs）をリポジトリーに格納し、カテゴリ別に整理して、それぞれのカテゴリのコードをクライアントに提供するタイミングと方法を定義できます。
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2561'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # AEM as a Cloud Service でのクライアントサイドライブラリの使用 {#using-client-side-libraries}
 
-デジタルエクスペリエンスは、複雑な JavaScript や CSS コードを利用したクライアントサイドの処理に大きく依存しています。AEM クライアントサイドライブラリ（clientlibs）を使用すると、これらのクライアントサイドライブラリをリポジトリー内に整理し、一元的に保存できます。[AEM プロジェクトアーキタイプでフロントエンドビルドプロセスと組み合わせる](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)と、AEM プロジェクトのフロントエンドコードの管理が簡単になります。
+デジタルエクスペリエンスは、複雑な JavaScript や CSS コードを利用したクライアントサイドの処理に大きく依存しています。AEM クライアントサイドライブラリ（clientlibs）を使用すると、これらのクライアントサイドライブラリをリポジトリー内に整理し、一元的に保存できます。[AEM プロジェクトアーキタイプでフロントエンドビルドプロセスと組み合わせる](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)と、AEM プロジェクトのフロントエンドコードの管理が簡単になります。
 
 AEM で clientlibs を使用する利点は次のとおりです。
 
@@ -24,7 +24,7 @@ clientlibs は、AEM から CSS と JavaScript を配信するための組み込
 
 >[!TIP]
 >
->AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)にも慣れている必要があります。
+>AEM プロジェクト用に CSS と JavaScript を作成するフロントエンドデベロッパーは、 [AEM プロジェクトアーキタイプと、自動化されたフロントエンドビルドプロセス](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)にも慣れている必要があります。
 
 ## クライアントサイドライブラリとは {#what-are-clientlibs}
 
@@ -34,7 +34,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 
 ## AEM as a Cloud Service 向けフロントエンド開発 {#fed-for-aemaacs}
 
-すべての JavaScript、CSS、およびその他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュールで管理する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) アーキタイプの柔軟性により、最新の Web ツールを使用して、これらのリソースを作成および管理できます。
+すべての JavaScript、CSS、およびその他のフロントエンドアセットは、AEM プロジェクトアーキタイプの [ui.frontend モジュールで管理する必要があります。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) アーキタイプの柔軟性により、最新の Web ツールを使用して、これらのリソースを作成および管理できます。
 
 次に、アーキタイプは、リソースを単一の CSS ファイルと JS ファイルにコンパイルし、自動的にリポジトリーの `cq:clientLibraryFolder` に埋め込むことができます。
 
@@ -89,7 +89,7 @@ AEM は、サイトの CSS と JavaScript を 1 つのファイルに 1 つの�
 1. 静的リソースを管理する必要がある場合は、クライアントライブラリフォルダーの `resources` の下にサブフォルダーを作成します。
    * `resources` フォルダーの下に静的リソースを格納した場合、静的リソースはパブリッシュインスタンスで参照できません。
 1. 追加ソースファイルをライブラリフォルダーに格納します。
-   * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)のフロントエンドビルドプロセスで行われます。
+   * これは、通常、 [AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja)のフロントエンドビルドプロセスで行われます。
    * 必要に応じて、サブフォルダーを使用してソースファイルを整理できます。
 1. クライアントライブラリフォルダーを選択して、**作成／ファイルを作成**&#x200B;をクリックします。
 1. ファイル名ボックスに、次のいずれかのファイル名を入力して、「OK」をクリックします。
@@ -124,7 +124,7 @@ clientlibs がクライアントライブラリフォルダーに正常に保存
 
 各ヘルパーテンプレートには、必要なクライアントライブラリを参照するための `categories` オプションを指定できます。このオプションには、文字列値の配列またはコンマ区切り値のリストを含む文字列を指定できます。
 
-HTL を使用した clientlibs の読み込みについて詳しくは、[HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html#loading-client-libraries)を参照してください。
+HTL を使用した clientlibs の読み込みについて詳しくは、[HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=ja#loading-client-libraries)を参照してください。
 
 <!--
 ### Setting Cache Timestamps {#setting-cache-timestamps}
