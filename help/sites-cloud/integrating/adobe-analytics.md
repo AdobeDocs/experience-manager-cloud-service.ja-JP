@@ -2,9 +2,9 @@
 title: 'Adobe Analytics との統合 '
 description: 'Adobe Analytics との統合 '
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
 
 以下に示す記事は、統合の設定に役立ちます。なお、Experience Platform Launch は、Analytics 機能（JS ライブラリ）を備えた AEM サイトを実装するための事実上の標準ツールになっています。したがって、AEM as a Cloud Service を Launch や Adobe Analytics と統合すると、連携が強化されます。
 
-* [Adobe Analytics への接続とフレームワークの作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html) - 「Analytics フレームワーク」は AEM のレガシー機能であり、分析の作成にはクラシック UI が必要なので AEM as a Cloud Service では機能しないことに注意してください。代わりに、変数マッピングにも JS ライブラリのページへのデプロイにも Experience Platform Launch を使用してください。
-* [Experience Platform Launch の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
+* [Adobe Analytics への接続とフレームワークの作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-connect.html?lang=ja) - 「Analytics フレームワーク」は AEM のレガシー機能であり、分析の作成にはクラシック UI が必要なので AEM as a Cloud Service では機能しないことに注意してください。代わりに、変数マッピングにも JS ライブラリのページへのデプロイにも Experience Platform Launch を使用してください。
+* [Experience Platform Launch の統合](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html?lang=ja)
 * [Adobe I/O を使用した AEM と Adobe Launch の統合](https://helpx.adobe.com/jp/experience-manager/using/aem_launch_adobeio_integration.html)
 * [AEM と Experience Platform Launch、Analytics、Target の統合について](https://helpx.adobe.com/jp/experience-manager/kt/integration/using/aem-launch-integration-tutorial-understand.html)
-* [Adobe Analytics のリンクトラッキングの設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-link.html)
-* [コンポーネントデータと Adobe Analytics プロパティとのマッピング](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-mapping.html)
-* [Adobe Analytics のビデオトラッキングの設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-video.html)
-* [Adobe 分類](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-classifications.html)
+* [Adobe Analytics のリンクトラッキングの設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-link.html?lang=ja)
+* [コンポーネントデータと Adobe Analytics プロパティとのマッピング](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-mapping.html?lang=ja)
+* [Adobe Analytics のビデオトラッキングの設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-video.html?lang=ja)
+* [Adobe 分類](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/adobeanalytics-classifications.html?lang=ja)
 
 >[!CAUTION]
 >
@@ -46,12 +46,12 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
 
 次のページを参照してください。
 
-* ユーザーデータを収集するコンポーネントの開発と Adobe Analytics フレームワークのカスタマイズに関する情報については、[Adobe Analytics 統合の拡張](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html)を参照してください。「Analytics フレームワーク」は AEM のレガシー機能であり、分析の作成にはクラシック UI が必要なので AEM as a Cloud Service では機能しないことに注意してください。代わりに、変数マッピングにも JS ライブラリのページへのデプロイにも Experience Platform Launch を使用してください。
+* ユーザーデータを収集するコンポーネントの開発と Adobe Analytics フレームワークのカスタマイズに関する情報については、[Adobe Analytics 統合の拡張](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-analytics/extending-analytics.html?lang=ja)を参照してください。「Analytics フレームワーク」は AEM のレガシー機能であり、分析の作成にはクラシック UI が必要なので AEM as a Cloud Service では機能しないことに注意してください。代わりに、変数マッピングにも JS ライブラリのページへのデプロイにも Experience Platform Launch を使用してください。
 * Adobe Analytics 統合のトラブルシューティングに関する情報については、[Adobe Analytics 統合 - 問題のトラブルシューティング](https://helpx.adobe.com/jp/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)に関するナレッジベースの記事を参照してください。
 
 >[!NOTE]
 >
->Adobe Analytics をカスタムプロキシ設定で使用している場合、（例えば、Web コンソールで）**Apache HTTP Client** プロキシ設定に必要な [2 つの OSGi バンドルを設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)する必要があります。AEM の一部の機能では 3.x API を使用し、他の機能では 4.x API を使用するので、両方とも必要です。設定：
+>Adobe Analytics をカスタムプロキシ設定で使用している場合、（例えば、Web コンソールで）**Apache HTTP Client** プロキシ設定に必要な [2 つの OSGi バンドルを設定](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=ja)する必要があります。AEM の一部の機能では 3.x API を使用し、他の機能では 4.x API を使用するので、両方とも必要です。設定：
 >
 >* **Day Commons HTTP Client 3.1**（3.x API を設定）。
    >  例：[https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
