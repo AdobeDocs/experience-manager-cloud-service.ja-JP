@@ -3,9 +3,9 @@ title: アセットワークフロー移行ツール
 description: アセットワークフロー移行ツール
 exl-id: 18490295-ead6-4691-8983-a6d4054e4264
 source-git-commit: d443ab32e5d2dddded58693483a2bda825ea3048
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 76%
 * `NUI_MIGRATED`：[アセット計算サービスの処理プロファイル](/help/assets/asset-microservices-configure-and-use.md)に移行済みです。
 * `UNSUPPORTED`：現在、[!DNL Experience Manager Assets] as a Cloud Service ではサポートされていません。
 
-## アセットワークフロー移行ツールを使用 {#use-workflow-migrator}
+## アセットワークフロー移行ツールの使用 {#use-workflow-migrator}
 
-* **[!DNL Adobe I/O]CLI**:Adobeは、 （CLIのコードリファクタリングプラグインとして）を介し `aio-cli-plugin-aem-cloud-service-migration` てAsset Workflow Migration[!DNL Experience Manager] ツールを使用 [!DNL Cloud Service] することをお勧 [!DNL Adobe I/O] めします。このプラグインをインストールして使用する方法については、[Gitリソースを参照してください。aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)。
+* **[!DNL Adobe I/O]CLI**：`aio-cli-plugin-aem-cloud-service-migration`（[!DNL Adobe I/O] CLI の [!DNL Experience Manager] as a [!DNL Cloud Service] コードリファクタリングプラグイン）を介してアセットワークフロー移行ツールを使用することをお勧 めします。このプラグインのインストールおよび使用方法については、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction) を参照してください。
 
-* **スタンドアロンユーティリティ**:アセットワークフロー移行ツールは、スタンドアロンユーティリティとして実行することもできます。ソースのインストールとソースコードのビルドについて詳しくは、[Gitリソース： [!DNL Experience Manager Assets] as a [!DNL Cloud Service]  — ワークフローの移行](https://github.com/adobe/aem-cloud-migration)を参照してください。
+* **スタンドアロンユーティリティ**：アセットワークフロー移行ツールはスタンドアロンユーティリティとして実行することもできます。ソースからのコードのインストールとビルドについては、[Git リソース： [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - Workflow Migration Tool](https://github.com/adobe/aem-cloud-migration) を参照してください。
