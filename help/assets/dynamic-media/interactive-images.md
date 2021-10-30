@@ -5,9 +5,9 @@ feature: インタラクティブ画像
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4178'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 80%
 
 「ショッパブル」ホットスポットを画像にドラッグドロップすることで、静的な画像をリッチで魅力的なエクスペリエンスに簡単に変えることができます。ショッパブルホットスポットは、製品やサービスに関する追加情報と、販売に直結する「買い物かごに追加」機能や「購入」機能を組み合わせています。ホットスポットをタップすると、製品またはサービスに直接リンクされ、その製品またはサービスが買い物かごに追加されるか、Web ページにリンクされます。こうしたダイレクトなエクスペリエンスによって顧客のエンゲージメントが向上し、Web サイトでのコンバージョン率が向上します。
 
-次に、クイックビューポップアップウィンドウを含むショッパブルバナーを示します。 モデルの上の円（「ホットスポット」）をタップすると、クイックビューがアクティブになります。
+次に、クイックビューポップアップウィンドウを含むショッパブルバナーを示します。モデルの上の円（「ホットスポット」）をタップすると、クイックビューがアクティブになります。
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-上の図に示す Web ページの[実際のインタラクティブ画像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)を参照してください。
+上の図に示す Web ページの[実際のインタラクティブ画像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=ja)を参照してください。
 
 ## インタラクティブ画像バナーの作成方法 {#watch-how-interactive-image-banners-are-created}
 
@@ -29,7 +29,7 @@ ht-degree: 80%
 
 次のワークフローの手順説明は、Adobe Experience Manager Assets 内のインタラクティブ画像をすぐに使い始めることを目的としたものです。
 
-一部のクイックスタートタスク内には「**例**」という見出しがあります。これには、[まだインタラクティブ画像が追加されていないサンプル Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)に基づいた簡単なチュートリアルが含まれています。
+一部のクイックスタートタスク内には「**例**」という見出しがあります。これには、[まだインタラクティブ画像が追加されていないサンプル Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ja)に基づいた簡単なチュートリアルが含まれています。
 
 
 
@@ -37,18 +37,18 @@ ht-degree: 80%
 
 インタラクティブ画像の手順：
 
-1. **（オプション）ホットスポットの変数を識別します**。Adobe Experience Manager AssetsとDynamic Mediaをスタンドアロンで使用する場合は、既存のクイックビュー実装で使用する動的変数を特定します。 これにより、インタラクティブ画像を作成する際に、ホットスポットデータを入力できるようになります。[（オプション）ホットスポットの変数の識別](#optional-identifying-hotspot-variables)を参照してください。ただし、Experience Manager Sites または Experience Manager eCommerce（あるいは両方）を使用している場合、この手順は必要ありません。
+1. **（オプション）ホットスポットの変数を識別します**。Adobe Experience Manager アセットと Dynamic Media スタンドアロンを使用する場合は、既存のクイックビュー実装で使用する動的変数を指定します。これにより、インタラクティブ画像を作成する際に、ホットスポットデータを入力できるようになります。[（オプション）ホットスポットの変数の識別](#optional-identifying-hotspot-variables)を参照してください。ただし、Experience Manager Sites または Experience Manager eCommerce（あるいは両方）を使用している場合、この手順は必要ありません。
 
-1. **（オプション）インタラクティブ画像ビューアプリセットを作成します**。ホットスポットを表すために使用するグラフィック画像をカスタマイズします。 独自のインタラクティブ画像ビューアプリセットの作成は、標準提供のインタラクティブ画像ビューアプリセット `Shoppable_Banner` を使用する場合には必要ありません。[（オプション）インタラクティブ画像ビューアプリセットの作成](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)を参照してください。
+1. **（オプション）インタラクティブ画像ビューアプリセットを作成します**。ホットスポットを表すためのグラフィック画像をカスタマイズします。独自のインタラクティブ画像ビューアプリセットの作成は、標準提供のインタラクティブ画像ビューアプリセット `Shoppable_Banner` を使用する場合には必要ありません。[（オプション）インタラクティブ画像ビューアプリセットの作成](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)を参照してください。
 
 1. **画像バナーをアップロードします**。インタラクティブにする画像バナーをアップロードします。[画像バナーのアップロード](#uploading-an-image-banner)を参照してください。
 
-1. **画像バナーへのホットスポットの追加**&#x200B;を参照してください。画像バナーに1つ以上のホットスポットを追加します。 各アクションを、ハイパーリンク、クイックビュー、エクスペリエンスフラグメントなどのアクションに関連付けます。 ホットスポットを追加した後は、インタラクティブ画像を公開するとタスクが終了します。[画像バナーへのホットスポットの追加](#adding-hotspots-to-an-image-banner)を参照してください。[（オプション）インタラクティブ画像のプレビュー](#optional-previewing-interactive-images)を参照してください。必要に応じて、ショッパブルバナーの表示を確認して、インタラクティビティをテストすることができます。インタラクティブ画像アセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
+1. **画像バナーにホットスポットを追加します**。1 つ追加以上のホットスポットを画像バナーに追加します。各ハイパーリンクを、ハイパーリンク、クイックビュー、エクスペリエンスフラグメントなどのアクションに関連付けます。ホットスポットを追加した後は、インタラクティブ画像を公開するとタスクが終了します。[画像バナーへのホットスポットの追加](#adding-hotspots-to-an-image-banner)を参照してください。[（オプション）インタラクティブ画像のプレビュー](#optional-previewing-interactive-images)を参照してください。必要に応じて、ショッパブルバナーの表示を確認して、インタラクティビティをテストすることができます。インタラクティブ画像アセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
-1. **インタラクティブ画像をWebサイトまたはWebサイトにExperience Manager**&#x200B;で追加します。Sites、eCommerce、またはその両方を使用している場合は、Experience Manager で、Web ページにインタラクティブ画像を直接追加することができます。インタラクティブメディアのコンポーネントを Web ページにドラッグします。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
-Experience Manager Assets と Dynamic Media をスタンドアロンで使用する場合は、Web サイトの埋め込みコードをコピーします。次に、既存のクイックビューに統合します。 [インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。サードパーティのWCM(Web Content Manager)を使用する場合は、新しいインタラクティブビデオを、Webサイトで使用されている既存のクイックビューに統合します。 [インタラクティブ画像の既存のクイックビューへの統合](#integrating-an-interactive-image-with-an-existing-quickview)を参照してください。
+1. **Web サイト、または Experience Manager の Web サイトにインタラクティブ画像を追加します**。Sites、eCommerce、またはその両方を使用している場合は、Experience Manager で、Web ページにインタラクティブ画像を直接追加することができます。インタラクティブメディアのコンポーネントを Web ページにドラッグします。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+Experience Manager Assets と Dynamic Media をスタンドアロンで使用する場合は、Web サイトの埋め込みコードをコピーします。次に、既存のクイックビューと統合します。[インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。サードパーティの WCM（Web Content Manager）を使用する場合は、新しいインタラクティブビデオを、Web サイトで使用している既存のクイックビューと統合します。[インタラクティブ画像の既存のクイックビューへの統合](#integrating-an-interactive-image-with-an-existing-quickview)を参照してください。
 
-## （オプション）ホットスポットの変数を識別します。 {#optional-identifying-hotspot-variables}
+## （オプション）ホットスポットの変数の識別 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -69,34 +69,33 @@ Experience Manager Assets のバナー画像にホットスポットを追加す
 
 ホットスポットデータに使用する一連の変数を識別するには、様々な方法があります。
 
-既存のクイックビューの実装を担当するIT担当者に相談するだけで十分な場合があります。 このようなユーザーは、システムでクイックビューを識別するために必要な最小限のデータセットを把握する可能性が高くなります。 ただし、フロントエンドコードの既存の動作を分析するだけでもかまいません。
+既存のクイックビュー実装を担当している IT 担当者に問い合わせれば済む場合もあります。おそらく IT 担当者であれば、システムのクイックビューを識別するために必要な最小限のデータセットを知っている可能性が高くなります。ただし、フロントエンドコードの既存の動作を分析するだけでもかまいません。
 
-ほとんどのクイックビュー実装では、次のパラダイムを使用します。
+ほとんどのクイックビュー実装では、次のような枠組みが使用されています。
 
 * ユーザーは Web サイト上の特定のユーザーインターフェイス要素をアクティベートします。例えば、「クイックビュー」ボタンを選択します。
 * Web サイトでは、必要に応じて、クイックビューのデータまたはコンテンツを読み込むための Ajax リクエストをバックエンドに送信します。
 * クイックビューのデータは、Web ページでのレンダリングに備えて、コンテンツに変換されます。
 * 最後に、フロントエンドコードによってそのコンテンツが画面上に視覚的にレンダリングされます。
 
-次に、クイックビュー機能が実装されている既存のWebサイトの様々な領域にアクセスする方法を示します。 次に、クイックビューをトリガーし、Webページから送信されたクイックビューのデータまたはコンテンツを読み込むためのAjax URLを取得します。
+次に、クイックビュー機能が実装されている既存の Web サイトの様々な領域を参照します。次に、クイックビューをトリガーし、Web ページから送信された Ajax URL を取得して、クイックビューのデータまたはコンテンツを読み込みます。
 
 通常、専門のデバッグツールを使用する必要はありません。最新の Web ブラウザーには、十分なタスクを実行できる Web インスペクターが備わっています。Web インスペクターが搭載されている Web ブラウザーの例を次に示します。
 
-* Google Chromeで、送信されるすべてのHTTPリクエストを表示するには、F12キーを押してデベロッパーツールパネルを開き、「Network」タブを選択します。
-Macの場合、Command + Option + Iキーを押してデベロッパーツールパネルを開き、「Network」タブを選択します。
+* Google Chrome で、ブラウザーから送信されるすべての HTTP リクエストを参照するには、F12 キーを押してデベロッパーツールパネルを開き、「Network」タブを選択します。Mac の場合、Command + Option + I キーを押してデベロッパーツールパネルを開き、「Network」タブを選択します。
 
 * Firefox で F12 キーを押して、Firebug プラグインをアクティブ化し、「ネット」タブを使用します。または、組み込みのインスペクターツールと「ネットワーク」タブを使用できます。
-Macの場合、Command + Option + Iキーを押してデベロッパーツールパネルを開き、「Inspector」タブを選択します。
+Mac の場合、Command + Option + I キーを押してデベロッパーツールパネルを開き、「Inspector」タブを選択します。
 
 ブラウザーでネットワーク監視をオンにして、ページ上でクイックビューをトリガーします。
 
-次に、ネットワークログ内でクイックビューの Ajax URL を見つけ、記録された URL を今後の分析のためにコピーします。通常、クイックビューをトリガーすると、サーバーに送信される多数のリクエストがあります。 クイックビューの Ajax URL は通常、そのリスト内の最初のほうにあります。この URL には複雑なクエリ文字列部分またはパスが含まれ、その応答の MIME タイプは `text/html`、`text/xml`、`text/javascript` のいずれかになります。
+次に、ネットワークログ内でクイックビューの Ajax URL を見つけ、記録された URL を今後の分析のためにコピーします。通常、クイックビューをトリガーすると、多数のリクエストがサーバーに送信されます。クイックビューの Ajax URL は通常、そのリスト内の最初のほうにあります。この URL には複雑なクエリ文字列部分またはパスが含まれ、その応答の MIME タイプは `text/html`、`text/xml`、`text/javascript` のいずれかになります。
 
-このプロセスの実行中は、製品カテゴリや製品タイプが異なる、Web サイトの様々な領域にアクセスすることが重要です。なぜなら、クイックビューURLには、特定のWebサイトカテゴリに共通する部分を含めることができるからです。 ただし、変更されるのは、Web サイトの別の領域を訪問した場合のみです。
+このプロセスの実行中は、製品カテゴリや製品タイプが異なる、Web サイトの様々な領域にアクセスすることが重要です。クイックビュー URL には、特定の web サイトカテゴリに共通する部分を含めることができるからです。ただし、変更されるのは、Web サイトの別の領域を訪問した場合のみです。
 
 単純なケースでは、クイックビュー URL 内で変化する唯一の部分が製品 SKU となります。その場合、SKU の値が、ホットスポットをバナー画像に追加するために必要になる唯一のデータです。
 
-ただし、複雑なケースでは、クイックビューURLにSKU以外に様々な要素が含まれます。 これらの要素には、例えば、カテゴリ ID、カラーコード、サイズコードなどが含まれます。その場合、各要素は Experience Manager Assets のショッパブルインタラクティブ画像機能において、ホットスポットデータ定義内の個別の変数になります。
+ただし、複雑なケースでは、クイックビュー URL には SKU に加えて様々な要素が含まれます。これらの要素には、例えば、カテゴリ ID、カラーコード、サイズコードなどが含まれます。その場合、各要素は Experience Manager Assets のショッパブルインタラクティブ画像機能において、ホットスポットデータ定義内の個別の変数になります。
 
 次のクイックビュー URL の例と、その結果となるホットスポットの変数について見てみましょう。
 
@@ -140,9 +139,9 @@ Macの場合、Command + Option + Iキーを押してデベロッパーツール
 
 **例**
 
-この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)に適用できます。
+この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ja)に適用できます。
 
-このデモ Web ページにはいくつかの製品サムネールがあり、それぞれのサムネールには、「See More」というラベルの付いたクイックビューボタンが用意されています。Webブラウザーのデバッグツールをアクティブにしたまま、各ボタンを選択し、記録されたクイックビューのURLをメモします。 ページで使用可能な4つの製品クイックビューをすべてアクティベートすると、バックエンドに対して次のリストのクイックビューリクエストが実行されます。
+このデモ Web ページにはいくつかの製品サムネールがあり、それぞれのサムネールには、「See More」というラベルの付いたクイックビューボタンが用意されています。Web ブラウザーのデバッグツールをアクティブにしたまま各ボタンを選択し、記録されたクイックビュー URL に注目してください。そのページの 4 つの製品クイックビューをすべてアクティベートすると、バックエンドに対して次のリストのクイックビューリクエストが作成されます。
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -151,7 +150,7 @@ Macの場合、Command + Option + Iキーを押してデベロッパーツール
 
 これらのサーバーコールを見ると、製品固有の情報はリクエストパスにしか存在しないことがわかります。また、クエリ文字列がまったく使用されていないこと、2 つの異なるタイプのデータが含まれることもわかります。
 
-* 1つ目のタイプは「男性」または「女性」です。 これは「製品カテゴリ」と呼ばれます。
+* 最初のタイプは Male または Female です。これは「製品カテゴリ」と呼ばれます。
 * 2 つ目のタイプは製品名です（CamoPullover など）。これは製品の SKU であることが大半です。
 
 この情報に基づいて、全体的なクイックビュー URL は次のようなパターンであることがわかります。
@@ -172,7 +171,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 
 **インタラクティブ画像ビューアプリセットを作成するには：:**
 
-1. 左側のレールで、**[!UICONTROL ツール]** / **[!UICONTROL アセット]** / **[!UICONTROL ビューアプリセット]**&#x200B;に移動します。
+1. 左パネルで、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL ビューアプリセット]**&#x200B;に移動します。
 1. ページの右上隅にある「**[!UICONTROL 作成]**」をタップします。
 1. 新規ビューアプリセットダイアログボックスで、インタラクティブバナービューアプリセットを表す名前を入力します。
 
@@ -181,7 +180,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 1. 「リッチメディアタイプ」プルダウンメニューで、「**[!UICONTROL インタラクティブ画像]**」を選択します。
 1. 「**[!UICONTROL 作成]**」を選択します。
 1. ビューアプリセットを編集ページで、「**[!UICONTROL 外観]**」タブをタップします。
-1. 次のいずれかの操作をおこないます。
+1. 次のいずれかの操作を行います。
 
    * 画像上で使用する独自のホットスポット画像をアップロードするには、アセットピッカーアイコンをタップします。コンテンツ選択ページで、使用するホットスポット画像に移動し、その画像を選択します。右上隅のチェックマークアイコンを選択します。
    * 事前定義済みのホットスポット画像を選択するには、ホットスポットギャラリーアイコンをタップします。ホットスポットギャラリーパレットで、使用するホットスポット画像をタップします。
@@ -236,7 +235,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 **画像バナーにホットスポットを追加するには：:**
 
 1. Assets ビューで、インタラクティブにする画像バナーに移動します。
-1. 次のいずれかの操作をおこないます。
+1. 次のいずれかの操作を行います。
 
    * 画像の上にマウスポインターを置き、**[!UICONTROL 選択]**（チェックマークアイコン）をタップします。ツールバーの「**[!UICONTROL 編集]**」をタップします。
 
@@ -253,17 +252,17 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
    1. （オプション）ホットスポットを削除するには、そのホットスポットを画像上で選択した後、「**[!UICONTROL ホットスポット]**」見出しの下にある&#x200B;**[!UICONTROL 削除]**（ごみ箱アイコン）をタップします。
 
 1. 「名前」テキストフィールドにホットスポットの名前を入力します。この名前は、選択したホットスポットドロップダウンリストにも表示されます。
-1. 次のいずれかの操作をおこないます。
+1. 次のいずれかの操作を行います。
 
-   * **[!UICONTROL クイックビュー]**&#x200B;を選択します。
+   * 「**[!UICONTROL クイックビュー]**」を選択します。
 
-      * SitesまたはeコマースのExperience Managerのお客様は、製品ピッカーアイコン（虫眼鏡）を選択して、製品を選択ページを開きます。 使用する製品を選択し、ページの右上隅にある「**選択**」をタップします。 「ホットスポット管理」ページに戻ります。
+      * Experience Manager Sites または AEM eCommerce のユーザーである場合は、製品ピッカーアイコン（虫眼鏡）を選択して、製品を選択ページを開きます。使用する製品を選択し、ページの右上隅にある「**選択**」をタップします。「ホットスポット管理」ページに戻ります。
       * Experience Manager Sites または AEM eCommerce のユーザー&#x200B;*ではない*&#x200B;場合は次のようにします。
 
          * [ホットスポット変数の識別](#optional-identifying-hotspot-variables)を参照してください。これらの変数を定義する必要があります。
-         * 次に、SKU 値を手動で入力します。「SKU 値」テキストフィールドに、製品の SKU を入力します。入力したSKU値によって、クイックビューテンプレートの変数部分が自動的に入力されます。 これにより、タップされたホットスポットを特定のSKUのクイックビューに関連付けることができます。
-         * （オプション）クイックビュー内で製品をさらに識別するために使用される他の変数がある場合は、「**[!UICONTROL 汎用変数を追加]**」をタップします。 テキストフィールドに追加の変数を指定します。例えば、追加の変数として `category=Mens` などと指定します。
-   * **[!UICONTROL ハイパーリンク]**&#x200B;を選択します。
+         * 次に、SKU 値を手動で入力します。「SKU 値」テキストフィールドに、製品の SKU を入力します。入力した SKU 値によって、クイックビューテンプレートの可変部分が自動的に設定されます。タップされたホットスポットを特定の SKU のクイックビューに関連付けることができます。
+         * （オプション）クイックビュー内で製品をさらに識別するために使用する他の変数がある場合は、「**[!UICONTROL 汎用変数を追加]**」をタップします。テキストフィールドに追加の変数を指定します。例えば、追加の変数として `category=Mens` などと指定します。
+   * 「**[!UICONTROL ハイパーリンク]**」を選択します。
 
       * Experience Manager Sites を利用している場合は、サイトの選択アイコン（フォルダー）をタップします。URL に移動します。インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。
       * スタンドアロンユーザーである場合は、「HREF」テキストフィールドに、リンクされる Web ページへの完全な URL パスを指定します。
@@ -274,7 +273,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 
    * 「**[!UICONTROL エクスペリエンスフラグメント]**」を選択します。
 
-      * Sitesのユーザーである場合は、検索アイコン（虫眼鏡）を選択してExperience Managerフラグメントページを開きます。 使用するエクスペリエンスフラグメントを選択します。 次に、ページの右上隅にある「**[!UICONTROL 選択]**」をタップします。「ホットスポット管理」ページに戻ります。
+      * Adobe Experience Manager Sites のユーザーである場合は、検索アイコン（虫眼鏡）を選択してエクスペリエンスフラグメントページを開きます。使用するエクスペリエンスフラグメントを選択します。次に、ページの右上隅にある「**[!UICONTROL 選択]**」をタップします。「ホットスポット管理」ページに戻ります。
 [エクスペリエンスフラグメント](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)を参照してください。
 
       * エクスペリエンスフラグメントがバナーに表示されるときの幅と高さを指定します。
@@ -291,7 +290,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 
    ホットスポットを追加してインタラクティブ画像を公開したら、次に既存の Web サイトにその画像を追加できます。
 
-   [Webサイトへのインタラクティブ画像の統合](#integrating-an-interactive-image-with-your-website)を参照してください。
+   [インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。
 
    >[!NOTE]
    ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
@@ -300,8 +299,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 
 プレビューを使用すると、インタラクティブ画像がユーザーに対してどのように表示されるかを確認できます。また、プレビューでは、画像のホットスポットをテストして、期待どおりの動作をするかを確認することもできます。
 
-インタラクティブ画像の設定が完了したら、この画像を公開できます。[Webページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
-[WebアプリケーションへのURLのリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。 インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへのDynamic Media Assetsの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+インタラクティブ画像の設定が完了したら、この画像を公開できます。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。[Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)を参照してください。インタラクティブコンテンツに相対 URL のリンク（特に Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
 **インタラクティブ画像をプレビューするには：:**
 
@@ -314,27 +312,27 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 
 インタラクティブ画像アセットの公開方法について詳しくは、[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
-## インタラクティブ画像のWebサイトへの統合 {#integrating-an-interactive-image-with-your-website}
+## インタラクティブ画像の Web サイトへの統合 {#integrating-an-interactive-image-with-your-website}
 
 バナー画像をアップロードし、ホットスポットを画像に追加してインタラクティブ画像を公開したら、次に Web サイトページにその画像を追加できます。
 
-Adobe Experience Manager Sites のユーザーは、インタラクティブメディアコンポーネントをページにドラッグしてインタラクティブ画像を追加できます。[ページへのDynamic Media Assetsの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
+Adobe Experience Manager Sites のユーザーは、インタラクティブメディアコンポーネントをページにドラッグしてインタラクティブ画像を追加できます。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。
 
 スタンドアロンの Adobe Experience Manager Assets のユーザーは、この節で説明するようにインタラクティブ画像を手動で Web サイトに追加できます。
 
-1. 公開済みのインタラクティブ画像の埋め込みコードをコピーします。[Webページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
+1. 公開済みのインタラクティブ画像の埋め込みコードをコピーします。[Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)を参照してください。
 
 1. コピーした埋め込みコードを、Web ページ内の必要な場所に追加します。コピーされた埋め込みコードはレスポンシブ環境向けに設定されているので、追加された場所に自動的に適応します。
 
 **例**
 
-[デモ Web サイトを例として](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)使用する際は、3 人の人物の写真が静的 `IMG` タグであることに注意してください。
+[デモ Web サイトを例として](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ja)使用する際は、3 人の人物の写真が静的 `IMG` タグであることに注意してください。
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-統合は、`IMG` タグを削除して Experience Manager Assets からコピーした埋め込みコードに置き換えるだけで簡単にできます。その結果、[3 つの円のホットスポットがあるページにショッパブルインタラクティブ画像が表示されます](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)。
+統合は、`IMG` タグを削除して Experience Manager Assets からコピーした埋め込みコードに置き換えるだけで簡単にできます。その結果、[3 つの円のホットスポットがあるページにショッパブルインタラクティブ画像が表示されます](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=ja)。
 
 >[!NOTE]
 この時点では、デモ Web サイトのショッパブルインタラクティブ画像上のホットスポットは表示用で、まだ既存のクイックビューと統合されていません。
@@ -352,7 +350,7 @@ Adobe Experience Manager Sites のユーザーは、インタラクティブメ�
 >[!NOTE]
 このタスクはスタンドアロン Adobe Experience Manager Assets のユーザーにのみ当てはまります。
 
-このプロセスの最後の手順は、インタラクティブ画像を Web サイトの既存のクイックビュー実装に統合することです。すべてのケースで機能する統合のソリューションはありません。クイックビューの実装はすべて一意で、具体的なアプローチが必要です。 したがって、フロントエンドの IT 担当者の支援が役立ちます。
+このプロセスの最後の手順は、インタラクティブ画像を Web サイトの既存のクイックビュー実装に統合することです。すべてのケースで機能する統合のソリューションはありません。クイックビューの実装はそれぞれがユニークで、特定のアプローチが必要となります。したがって、フロントエンドの IT 担当者の支援が役立ちます。
 
 既存のクイックビュー実装は一般的に、Web ページ上で以下の順に発生する、相互に関連するアクションの連鎖となっています。
 
@@ -400,11 +398,11 @@ Experience Manager Assets によって返される埋め込みコードには、
 
 そのため、必要な処理は、このコードのコメントアウトを解除し、ダミーのハンドラー本体を、特定の Web ページ専用のコードに置き換えることだけです。
 
-クイックビューURLを作成するプロセスは、前述のホットスポットの変数を識別するプロセスとは反対です。
+クイックビュー URL の作成プロセスは、先ほど説明したホットスポットの変数を識別するためのプロセスとは逆のプロセスになります。
 
 [ホットスポットの変数の識別](#optional-identifying-hotspot-variables)を参照してください。
 
-以前のクイックビューURLの例を使用して、次の例でクイックビューURLの各ケースでの構築方法を確認できます。
+以前のクイックビュー URL の例を使用した場合、クイックビュー URL の各ケースでの作成方法は次の例のようになります。
 
 <table>
  <tbody>
@@ -435,7 +433,7 @@ Experience Manager Assets によって返される埋め込みコードには、
  </tbody>
 </table>
 
-クイックビューURLをトリガーし、クイックビューパネルをアクティブにする最後の手順では、作業のフロントエンドIT担当者の支援が必要です。 フロントエンド IT 担当者は、すぐに使用できるクイックビュー URL を含め、クイックビュー実装を適切な手順から正しくトリガーするための最適な方法について理解しています。
+クイックビュー URL をトリガーしてクイックビューパネルをアクティベートするための最後の手順では、フロントエンドの IT 担当者の支援が必要になります。フロントエンド IT 担当者は、すぐに使用できるクイックビュー URL を含め、クイックビュー実装を適切な手順から正しくトリガーするための最適な方法について理解しています。
 
 これらの手順をデモ Web サイトに適用してショッパブルインタラクティブ画像をクイックビューのコードに統合する方法を確認できます。先ほど、クイックビュー URL の構造を次のように識別しました。
 
@@ -479,8 +477,8 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-[完全に統合されたインタラクティブ画像を含んだ最終的なデモ Web サイト](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)です。
+[完全に統合されたインタラクティブ画像を含んだ最終的なデモ Web サイト](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=ja)です。
 
 ## クイックビューを使用したカスタムポップアップの作成 {#using-quickviews-to-create-custom-pop-ups}
 
-[クイックビューを使用してカスタムポップアップWindows®を作成する](/help/assets/dynamic-media/custom-pop-ups.md)を参照してください。
+[クイックビューを使用したカスタムポップアップウィンドウの作成](/help/assets/dynamic-media/custom-pop-ups.md)を参照してください。
