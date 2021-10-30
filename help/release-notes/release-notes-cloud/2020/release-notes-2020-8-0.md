@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリ�
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート.'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1046'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 * AEM [SPA エディター](/help/implementing/developing/hybrid/introduction.md)で[ローンチを作成](/help/sites-cloud/authoring/launches/overview.md)する機能。
 
 
-## [!DNL Adobe Experience Manager Assets] Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets] の新機能  {#what-is-new-assets}
 
@@ -40,9 +40,9 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 処理プロファイルを使用して、Compute Service でカスタムメタデータを生成できます。詳しくは、[処理プロファイルを使用したカスタムメタデータ](/help/assets/manage-metadata.md#metadata-compute-service)を参照してください。
 
-* 管理者が設定できる、Brand Portal ユーザー向けのよりシンプルなダウンロードエクスペリエンスが提供されます。詳しくは、[ダウンロードエクスペリエンスの概要](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)を参照してください。
+* 管理者が設定できる、Brand Portal ユーザー向けのよりシンプルなダウンロードエクスペリエンスが提供されます。詳しくは、[ダウンロードエクスペリエンスの概要](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja#download-configurations)を参照してください。
 
-* ネイティブで高品質な PDF ドキュメントプレビューが Brand Portal で使用できるようになりました。詳しくは、[ドキュメントビューアの概要](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)を参照してください。
+* ネイティブで高品質な PDF ドキュメントプレビューが Brand Portal で使用できるようになりました。詳しくは、[ドキュメントビューアの概要](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja#doc-viewer)を参照してください。
 
 * （[!DNL Dynamic Media Classic] を使用するのではなく）AEM の [!DNL Dynamic Media] から直接 CDN（コンテンツ配信ネットワーク）キャッシュを無効にできるようになりました。これにより、最新のアセットが数時間ではなく数分以内に提供されます。詳しくは、[Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)を参照してください。
 
