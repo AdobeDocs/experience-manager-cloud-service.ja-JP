@@ -3,9 +3,9 @@ title: コンテンツフラグメント
 description: Adobe Experience Manager as a Cloud Service のコンテンツフラグメントを使用すると、ページに依存しないコンテンツの設計、作成、キュレーション、使用が可能になります。
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1163'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    >その他の編集機能について詳しくは、次を参照してください。
    >
    >* [レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)
-   * [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
+   >* [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
 
 
 ### 要素またはバリエーションの選択 {#selecting-the-element-or-variation}
@@ -80,7 +80,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 フラグメントの&#x200B;**設定**&#x200B;ダイアログを開き、フラグメントを現在のページで使用するように設定します。ダイアログは、使用されるコンポーネントによって異なる場合があります。
 
 >[!NOTE]
-[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)も参照してください。
+>
+>[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)も参照してください。
 
 適切な設定ダイアログで、以下をはじめとする使用可能なパラメーターを選択できます。
 
@@ -93,7 +94,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
    * 使用するモデルに応じて選択を使用できます。
 
    >[!NOTE]
-   使用できるエレメントは、使用するモデルによって異なります。
+   >
+   >使用できるエレメントは、使用するモデルによって異なります。
 
 * **バリエーション**
    * デフォルトの「**マスター**」は常に利用できます。
@@ -108,7 +110,8 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 コンポーネントツールバーの&#x200B;**編集**&#x200B;アイコンを使用して、フラグメントのソースを開いて（アセットを）編集できます。この機能により、[コンテンツフラグメントを編集および管理できます](/help/assets/content-fragments/content-fragments.md)。
 
 >[!CAUTION]
-フラグメントソースの編集は、そのコンテンツフラグメントを参照するすべてのページに影響します。
+>
+>フラグメントソースの編集は、そのコンテンツフラグメントを参照するすべてのページに影響します。
 
 ### 中間コンテンツの追加 {#adding-in-between-content}
 
@@ -123,21 +126,28 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 * [関連コンテンツ](#using-associated-content)を中間コンテンツのソースとして使用する。
 
 >[!CAUTION]
-中間コンテンツは、ページコンテンツです。中間コンテンツはコンテンツフラグメントに保存されません。
+>
+>中間コンテンツは、ページコンテンツです。中間コンテンツはコンテンツフラグメントに保存されません。
 
 ![コンポーネントの挿入](/help/sites-cloud/authoring/assets/content-fragments-insert.png)
 
 >[!NOTE]
-フラグメント自体に[ビジュアルアセット（画像）を挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)することもできます。
-フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに（[混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)として）追加できます。
+>
+>フラグメント自体に[ビジュアルアセット（画像）を挿入](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)することもできます。
+>
+>フラグメント自体に挿入されたビジュアルアセットは、フラグメントの前の段落に配置されます。つまり、ビジュアルアセットと前の段落の間に中間コンテンツを配置することはできません。このレベルの接続が必要な場合は、画像をフラグメントに（[混在メディアフラグメント](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)として）追加できます。
 
 >[!CAUTION]
-ページのコンテンツフラグメントに中間コンテンツを追加した後に、基になるコンテンツフラグメントの構造をコンテンツフラグメントエディターなどで変更すると、エラーや予期しない結果を引き起こすおそれがあります。
-これが発生した場合、中間コンテンツはそのまま維持されます。
-* 中間コンポーネントは、フラグメントフローのコンポーネントのシーケンス内に絶対位置を持ちます。この位置は、フラグメント内の段落のコンテンツが変更されても変更されません。
-
+>
+>ページのコンテンツフラグメントに中間コンテンツを追加した後に、基になるコンテンツフラグメントの構造をコンテンツフラグメントエディターなどで変更すると、エラーや予期しない結果を引き起こすおそれがあります。
+>
+>これが発生した場合、中間コンテンツはそのまま維持されます。
+>
+>* 中間コンポーネントは、フラグメントフローのコンポーネントのシーケンス内に絶対位置を持ちます。この位置は、フラグメント内の段落のコンテンツが変更されても変更されません。
+>
+>  
 中間段落は隣に位置する（フラグメント）段落とコンテキスト関係を持たないので、これにより、相対位置が変更したかのように見せることができます。
-* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
+>* 2 つの段落構造が競合する場合を除きます。競合する場合、中間コンテンツは（内部的には存在していますが）表示されません。
 
 
 ### 関連コンテンツの使用 {#using-associated-content}
@@ -145,10 +155,12 @@ Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグ�
 [コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)に[コンテンツを関連付けた](/help/assets/content-fragments/content-fragments-assoc-content.md)場合、これらのアセットは（フラグメントをコンテンツページに配置した後に）サイドパネルから使用できます。関連付けられたコンテンツは、事実上、[中間コンテンツ](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)用のコンテンツの特別なソースになります。
 
 >[!NOTE]
-[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
+>
+>[ビジュアルアセット（画像など）](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)をフラグメントやページに追加するには、様々な方法があります。
 
 >[!NOTE]
-1 つのページに複数のコンテンツフラグメントがある場合、「**関連コンテンツ**」タブにすべてのフラグメントに適切なアセットが表示されます。
+>
+>1 つのページに複数のコンテンツフラグメントがある場合、「**関連コンテンツ**」タブにすべてのフラグメントに適切なアセットが表示されます。
 
 コンテンツが関連付けられたフラグメントをページに追加すると、新しいタブ（「**関連コンテンツ**」）がサイドパネルに開きます。
 
