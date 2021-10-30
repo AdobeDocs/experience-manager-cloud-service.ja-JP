@@ -1,19 +1,19 @@
 ---
-title: AMSからAEM as aCloud ServiceへのDispatcher設定の移行
-description: 'AMSからAEM as aCloud ServiceへのDispatcher設定の移行 '
+title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
+description: 'AMS から AEM as a Cloud Service への Dispatcher 設定の移行 '
 feature: Dispatcher
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# AMSからAEM as aCloud ServiceへのDispatcher設定の移行 {#Dispatcher-in-the-cloud}
+# AMS から AEM as a Cloud Service への Dispatcher 設定の移行 {#Dispatcher-in-the-cloud}
 
 ## AMS Dispatcher と AEM as a Cloud Service の主な違い {#main-differences-between-ams-dispatcher-configuration-and-aem-as-a-cloud-service}
 
-AEM as aCloud ServiceのApacheおよびDispatcherの設定は、AMSの設定と非常に似ています。 主な違いは次のとおりです。
+AEM as a Cloud Service の Apache および Dispatcher の設定は、AMS のそれらの設定と非常に似ています。主な違いは次のとおりです。
 
 * AEM as a Cloud Service では、一部の Apache ディレクティブ（例えば、`Listen` または `LogLevel`）が使用されません。
 * AEM as a Cloud Service では、Dispatcher 設定の一部のみがインクルードファイルに置かれ、名前付けが重要です。例えば、異なるホスト間で再利用するフィルタールールは、`filters/filters.any` という名前のファイルに入れる必要があります。詳しくは、参照ページを参照してください。
@@ -25,7 +25,7 @@ Dispatcher 設定の構造は、Managed Services と AEM as a Cloud Service と�
 
 ## AMS を AEM as a Cloud service の Dispatcher 設定に変換する方法
 
-AMS 設定を変換する方法を順を追って説明します。ここでは、[Cloud Manager の Dispatcher 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)で説明した構造と同様な構造のアーカイブがあることを前提としています。
+AMS 設定を変換する方法を順を追って説明します。ここでは、[Cloud Manager の Dispatcher 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=ja)で説明した構造と同様な構造のアーカイブがあることを前提としています。
 
 ### アーカイブを抽出し、最終的なプレフィックスを削除する
 
