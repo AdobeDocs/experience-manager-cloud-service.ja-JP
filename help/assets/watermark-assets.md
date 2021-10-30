@@ -6,7 +6,7 @@ feature: アセット管理、公開
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 
