@@ -5,7 +5,7 @@ feature: スマートタグ、タグ付け
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1186'
 ht-degree: 100%
 
@@ -137,5 +137,5 @@ DAM 内の既存のビデオアセットに対しては、スマートタグが�
 >[!MORELIKETHIS]
 >
 >* [スマートタグとアセット検索の管理](smart-tags.md#manage-smart-tags-and-searches)
-* [スマートタグサービスのトレーニングと画像のタグ付け](smart-tags.md)
+>* [スマートタグサービスのトレーニングと画像のタグ付け](smart-tags.md)
 
