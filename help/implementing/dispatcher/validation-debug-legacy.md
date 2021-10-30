@@ -1,36 +1,36 @@
 ---
-title: Dispatcherツール（レガシー）を使用した検証とデバッグ
-description: Dispatcherツール（レガシー）を使用した検証とデバッグ
+title: Dispatcher ツールを使用した検証とデバッグ（レガシー）
+description: Dispatcher ツールを使用した検証とデバッグ（レガシー）
 feature: Dispatcher
 hidefromtoc: true
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2305'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Dispatcherツール（レガシー）を使用した検証とデバッグ  {#Dispatcher-tools-legacy}
+# Dispatcher ツールを使用した検証とデバッグ（レガシー）  {#Dispatcher-tools-legacy}
 
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->クラウド内のDispatcherとDispatcherツールのダウンロード方法について詳しくは、クラウド内の[Dispatcherページを参照してください。](/help/implementing/dispatcher/disp-overview.md)
+>クラウド内の Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md) を参照してください。
 
-次の節では、レガシーモードのファイル構造、ローカル検証、デバッグ、およびレガシーモードから[フレキシブルモード](/help/implementing/dispatcher/validation-debug.md)に移行する方法について説明します。
+以降の節では、レガシーモードのファイル構造、ローカル検証、デバッグと、レガシーモードから[フレキシブルモード](/help/implementing/dispatcher/validation-debug.md)に移行する方法について説明します。
 
-この記事では、プロジェクトのDispatcher設定にopt-in/USE_SOURCES_DIRECTLYファイルが含まれていないことを前提としています。 その結果、次のようなファイルの数とサイズに制限があります。
+ここでは、プロジェクトの Dispatcher 設定に opt-in/USE_SOURCES_DIRECTLY ファイルが含まれていないことを前提としています。その結果、ファイルの数とサイズに次のような制限があります。
 
-* サイト固有のファイルではなく、使用する必要がある単一の書き換えファイル。
-* カスタマイズ可能なファイルの内容の合計は1 MB未満にする必要があります。
+* サイト固有のファイルではなく、単一の書き換えファイルを使用する必要があります。
+* カスタマイズ可能なファイルの内容は合計 1 MB未満にする必要があります。
 
-Cloud Manager 2021.7.0リリースの時点で、新しいCloud Managerプログラムは、前述のファイルを含む、AEMアーキタイプ28以降を使用してmavenプロジェクト構造を生成します。
+Cloud Manager 2021.7.0 リリースの時点では、新しい Cloud Manager プログラムは、AEM アーキタイプ 28 以降を使用した Maven プロジェクト構造を生成します。これには前述のファイルが含まれます。
 
-移行の節[レガシーモードからフレキシブルモードへの移行](#migrating-flexible)で説明されているように、レガシーモードからフレキシブルモードへ移行することを&#x200B;**強くお勧めします。** また、柔軟なモードを使用すると、SDKとランタイムが設定を検証し、デプロイする際に、より適切な方法が使用されます。
+移行に関する節[レガシーモードからフレキシブルモードへの移行](#migrating-flexible)で説明しているように、レガシーモードからフレキシブルモードへ移行することを&#x200B;**強くお勧めします**。また、フレキシブルモードを使用すると、SDK とランタイムによる設定の検証とデプロイが改善されます。
 
 ## ファイル構造 {#legacy-mode-file-structure}
 
-プロジェクトのDispatcherサブフォルダー（レガシーモード）の構造は次のとおりです。
+プロジェクトの Dispatcher サブフォルダー（レガシーモード）の構造は次のとおりです。
 
 ```bash
 ./
@@ -91,7 +91,7 @@ Cloud Manager 2021.7.0リリースの時点で、新しいCloud Managerプログ
 
 * `conf.d/variables/custom.vars`
 
-このファイルは、`.vhost` ファイル内からインクルードされます。この場所に、Apache変数用の定義を追加できます。
+このファイルは、`.vhost` ファイル内からインクルードされます。Apache 変数用の定義をこの場所に追加できます。
 
 * `conf.d/variables/global.vars`
 
@@ -169,14 +169,14 @@ Cloud Manager 2021.7.0リリースの時点で、新しいCloud Managerプログ
 
 デフォルトのホストグロビングです。標準プロジェクトに適しています。カスタマイズが必要な場合は、`virtualhosts.any` を変更します。**すべての**&#x200B;受信リクエストに一致することから、カスタマイズには、デフォルトのホストグロビングをインクルードしないでください。
 
-## サポートされるApacheモジュール {#apache-modules}
+## サポートされている Apache モジュール {#apache-modules}
 
-[サポートされているApacheモジュール](/help/implementing/dispatcher/disp-overview.md#supported-directives)を参照してください。
+[サポートされている Apache モジュール](/help/implementing/dispatcher/disp-overview.md#supported-directives)を参照してください。
 
 ## ローカル検証 {#local-validation-legacy-mode}
 
 >[!NOTE]
->以下の節では、MacまたはLinuxバージョンのSDKを使用するコマンドについて説明しますが、Windows SDKも同様の方法で使用できます。
+>以下では、Mac バージョンまたは Linux バージョンの SDK を使用した場合のコマンドについて説明しますが、Windows バージョンの SDK の場合でも同様の方法で使用できます。
 
 `validate.sh` スクリプトを次のように使用します。
 
@@ -215,17 +215,17 @@ Phase 3 finished
 
 このスクリプトは次の処理を行います。
 
-1. バリデーターを実行します。 設定が有効でない場合、スクリプトは失敗します。
-2. `httpd -t`コマンドを実行して、Apache httpdが起動するように構文が正しいかどうかをテストします。 テストが成功した場合は、設定をデプロイする準備が整っています.
+1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
+2. Apache httpd を起動できるように、`httpd -t` コマンドを実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています。
 3. 「[ファイル構造](##legacy-mode-file-structure)」節で説明されているようにで不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。これは、Dispatcher ツールバージョン 2.0.36 を含む AEM SDK バージョン v2021.1.4738 で導入された新しいチェックです。この更新前には、これらの不変ファイルのローカル SDK での変更がクラウド環境にも適用されると誤って想定されていました。
 
-Cloud Managerのデプロイメント中には、`httpd -t`構文チェックも実行され、エラーがCloud Managerの`Build Images step failure`ログに記録されます。
+Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
-### フェーズ1 {#first-phase}
+### フェーズ 1 {#first-phase}
 
 ディレクティブが許可リストに登録されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。また、`conf.dispatcher.d/enabled_farms/*.farm` のパターンに合うすべてのファイルをさらにスキャンし、次の内容を確認します。
 
-* `/glob`を介した許可を使用するフィルタールールは存在しません（詳しくは、 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)を参照してください）。
+* `/glob` 経由の許可を使用するフィルタールールが存在しないこと（詳しくは、[CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) を参照）。
 * 管理機能が公開されないこと。例えば、`/crx/de or /system/console` などのパスへのアクセス。
 
 検証ツールは、許可リストに登録されていない Apache ディレクティブの使用禁止を報告するのみということに注意してください。Apache 設定の構文や意味の問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
@@ -312,10 +312,9 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 **非推奨の設定レイアウトを検出したので互換モードを有効にします**
 
-このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方向に対して引き続きサポートされますが、
-互換性がある場合は、新しいレイアウトに切り替える必要があります。
+このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは下位互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
 
-第1段階は、ラッパー`validate.sh`スクリプトとは異なり、**個別に**&#x200B;実行することもできます。
+フェーズ 1 は、ラッパースクリプト `validate.sh` からではなく、**個別に実行**&#x200B;することもできます。
 
 Maven アーティファクトまたは `dispatcher/src` サブディレクトリに対して実行すると、検証エラーが報告されます。
 
@@ -340,20 +339,20 @@ Cloud manager validator 2.0.xx
 
 このエラーを回避するには、Windows エクスプローラでパスをコピーし、コマンドプロンプトで `cd` コマンドを使用してそのパスに貼り付けます。
 
-### フェーズ2 {#second-phase}
+### フェーズ 2 {#second-phase}
 
-このフェーズでは、画像でDockerを起動してApacheの構文をチェックします。 Dockerはローカルにインストールする必要がありますが、AEMを実行する必要はありません。
+このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
 
 >[!NOTE]
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
-このフェーズは、`validator full -d out src/dispatcher`を介して独立して実行することもでき、次のコマンド`bin/docker_run.sh out host.internal.docker:4503 8080`に必要なoutディレクトリを生成します。
+このフェーズは、`validator full -d out src/dispatcher` を使用して独立して実行することもできます。このコマンドは、コマンド `bin/docker_run.sh out host.internal.docker:4503 8080` に必要な out ディレクトリを生成します。
 
-Cloud Managerのデプロイメント中にも`httpd -t`構文チェックが実行され、エラーがCloud Managerビルド画像のステップのエラーログに記録されます。
+Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager のイメージのビルドステップのエラーログに記録されます。
 
-### フェーズ3 {#third-phase}
+### フェーズ 3 {#third-phase}
 
-このフェーズでエラーが発生した場合は、Adobeが1つ以上の不変ファイルを変更したことを示しているので、対応する不変ファイルをSDKの`src`ディレクトリに配信された新しいバージョンに置き換える必要があります。 次のログサンプルは、この問題を示しています。
+このフェーズでエラーが発生した場合は、アドビが 1 つ以上の不変ファイルを変更したことを示しているので、対応する不変ファイルを、SDK の `src` ディレクトリで提供されている新しいバージョンに置き換える必要があります。以下のログサンプルは、この問題を示しています。
 
 ```
 Phase 3: Immutability check
@@ -372,13 +371,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-このフェーズは、`validator full -d out src/dispatcher`を介して独立して実行することもでき、次のコマンド`bin/docker_immutability_check.sh out`に必要なoutディレクトリを生成します。
+このフェーズは、`validator full -d out src/dispatcher` を使用して独立して実行することもできます。このコマンドは、コマンド `bin/docker_immutability_check.sh out` に必要な out ディレクトリを生成します。
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-Apache Dispatcherは`./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`を使用してローカルで実行できます。
+`./bin/docker_run.sh out docker.for.mac.localhost:4503 8080` を使用すれば、Apache Dispatcher をローカルで実行できます。
 
-前述のとおり、Dockerはローカルにインストールする必要があり、AEMを実行する必要はありません。 Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
+前述のとおり、Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
 次の方法を使用して、Dispatcher モジュールのログ出力を増やし、`RewriteRule` 評価の結果をローカル環境とクラウド環境の両方で確認できます。
 
@@ -471,4 +470,4 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## レガシーモードからフレキシブルモードへの移行 {#migrating-flexible}
 
-Cloud Manager 2021.7.0リリースでは、新しいCloud Managerプログラムが、AEMアーキタイプ28以降を使用してMavenプロジェクト構造を生成します。これには、**opt-in/USE_SOURCES_DIRECTLY**&#x200B;ファイルが含まれます。 これにより、ファイルの数とサイズに関するレガシーモードの以前の制限がなくなり、SDKとランタイムが設定を検証およびデプロイする際にも改善されました。 Dispatcher設定にこのファイルがない場合は、移行することを強くお勧めします。 [フレキシブルモード](/help/implementing/dispatcher/validation-debug.md#migrating)のページで説明したメソッドを使用します。
+Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラムは、AEM アーキタイプ 28 以降を使用した Maven プロジェクト構造を生成します。これには **opt-in/USE_SOURCES_DIRECTLY** ファイルが含まれます。これにより、ファイルの数とサイズに関するレガシーモードの以前の制限事項がなくなるので、SDK とランタイムによる設定の検証とデプロイも改善されます。Dispatcher 設定にこのファイルがない場合は、移行することを強くお勧めします。[フレキシブルモード](/help/implementing/dispatcher/validation-debug.md#migrating)のページで説明した方法を使用します。
