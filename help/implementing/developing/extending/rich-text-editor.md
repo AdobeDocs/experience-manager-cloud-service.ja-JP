@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service のコンテ�
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1964'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ RTE プラグインの設定について詳しくは、[RTE プラグインの�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[コアコンポーネントのテキストコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)を使用すると、テンプレートエディターのユーザーインターフェイスを使用して多数の RTE プラグインをコンテンツポリシーとして設定でき、技術的な設定が不要になります。コンテンツポリシーは、このドキュメントで説明するように RTE UI 設定と連携させることができます。詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md)および[コアコンポーネント開発者向けドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)を参照してください。
+[コアコンポーネントのテキストコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を使用すると、テンプレートエディターのユーザーインターフェイスを使用して多数の RTE プラグインをコンテンツポリシーとして設定でき、技術的な設定が不要になります。コンテンツポリシーは、このドキュメントで説明するように RTE UI 設定と連携させることができます。詳しくは、[ページテンプレートの作成](/help/sites-cloud/authoring/features/templates.md)および[コアコンポーネント開発者向けドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
 
 >参照用として、デフォルトのテキストコンポーネント（標準インストールの一環として提供）が次の場所に用意されています。
 >
@@ -230,7 +230,7 @@ RTE フローで使用可能なオプションに関するユーザーインタ�
 * RTE のユーザーインターフェイス設定が削除されたか、どの項目も有効にしていない場合、コンテンツポリシーではその設定ができません。
 * 作成者は、ユーザーインターフェイス設定およびコンテンツポリシーによって使用可能となっている機能にのみアクセスできます。
 
-例については、[テキストコアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)を参照してください。
+例については、[テキストコアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=ja#the-text-component-and-the-rich-text-editor)を参照してください。
 
 ## ツールバーアイコンとコマンドのマッピングのカスタマイズ {#iconstoolbar}
 
@@ -284,6 +284,6 @@ RTE ツールバーに表示される Coral アイコンと使用可能なコマ
 >[!MORELIKETHIS]
 >
 >* [RTE プラグインの設定](configure-rich-text-editor-plug-ins.md)
-* [リッチテキストエディターをオーサリングに使用](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
-* [RTE をアクセス可能なサイト用に設定](rte-accessible-content.md)
+>* [リッチテキストエディターをオーサリングに使用](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
+>* [RTE をアクセス可能なサイト用に設定](rte-accessible-content.md)
 
