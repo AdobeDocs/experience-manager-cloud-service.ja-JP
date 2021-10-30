@@ -1,42 +1,42 @@
 ---
-title: Cloud Managerの既存プログラムへのScreensアドオンの追加
-description: ここでは、Screens用Cloud Managerの既存のプログラムにCloud ServiceとしてScreensアドオンを追加する方法について説明します。
+title: Cloud Manager での既存プログラムに対する Screens アドオンの追加
+description: ここでは、Cloud Manager で Screens as a Cloud Service 用に既存のプログラムに Screens アドオンを追加する方法について説明します。
 source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '269'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Managerの既存プログラムへのScreensアドオンの追加 {#adding-screens-program}
+# Cloud Manager での既存プログラムに対する Screens アドオンの追加 {#adding-screens-program}
 
-この節では、Cloud Managerの既存のプログラムにScreensをアドオンとして追加する方法について説明します。
+この節では、Cloud Manager で既存のプログラムに Screens をアドオンとして追加する方法について説明します。
 
 >[!NOTE]
->Cloud Managerプログラムの詳細については、「[プログラムとプログラムの種類について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=en)」を参照してください。
+>Cloud Manager プログラムについて詳しくは、[プログラムとプログラムタイプについて](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=ja)を参照してください。
 
 ## 目的 {#objective}
 
-次の手順では、Cloud Managerの既存のプログラムにScreensアドオンを追加する方法を学習できます。
+次の手順では、Cloud Manager で既存のプログラムに Screens アドオンを追加する方法を説明します。
 
-## Cloud Managerで既存のプログラムにScreensアドオンを追加する手順 {#edit-programs-screens-cloud}
+## Cloud Manager で既存のプログラムに Screens アドオンを追加する手順 {#edit-programs-screens-cloud}
 
-次の手順に従って、既存のプログラムにScreensをアドオンとして追加します。
+既存のプログラムに Screens をアドオンとして追加するには、次の手順に従います。
 
-1. [Cloud Manager](https://my.cloudmanager.adobe.com/)に移動します。
+1. [Cloud Manager](https://my.cloudmanager.adobe.com/) に移動します。
 
    >[!NOTE]
-   >Cloud Managerについて詳しくは、[Cloud Managerの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=en)を参照してください。
+   >Cloud Manager について詳しくは、[Cloud Manager の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja)を参照してください。
 
-1. プロジェクトに移動し、Cloud Managerの&#x200B;**概要**&#x200B;ページで「**プログラムを編集**」オプションをクリックします。
+1. プロジェクトに移動し、Cloud Manager の&#x200B;**概要**&#x200B;ページで「**プログラムを編集**」オプションをクリックします。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-onexisting1.png)
 
    >[!NOTE]
    >**プログラムを編集**&#x200B;ページに、「**一般**」と「**ソリューションとアドオン**」の 2 つのタブが表示されます。
 
-1. 「**ソリューション&amp;アドオン**」タブには、「サイト」、「アセット」、「画面」などのオプションが表示されます。 **Screens**&#x200B;アドオンオプションを選択します（下図を参照）。
+1. 「**ソリューションとアドオン**」タブには、「Sites」、「Assets」、「Screens」などのオプションが表示されます。「**Screens**」アドオンオプションを選択します（下図を参照）。
 
    ![画像](/help/screens-cloud/assets/onboarding/add-onexisting2.png)
 
@@ -44,4 +44,4 @@ ht-degree: 6%
 
 ## 次の手順 {#whats-next}
 
-既存のCloud ManagerプログラムにScreensをアドオンとして追加する方法を学習し、Cloud Managerのプログラムと製品でプログラムを確認したら、オンボーディングプロセスの次の手順（[Cloud Managerでプロジェクトのブランチを作成する](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)）に進みます。
+既存の Cloud Manager プログラムに Screens をアドオンとして追加する方法を理解し、Cloud Manager のプログラムと製品に目的のプログラムが表示されたら、オンボーディングプロセスの次のステップである [Cloud Manager でのブランチの作成](/help/screens-cloud/onboarding-screens-cloud/creating-a-branch.md)に進みます。
