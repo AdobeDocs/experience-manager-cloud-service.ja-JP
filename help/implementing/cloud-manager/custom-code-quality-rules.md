@@ -3,9 +3,9 @@ title: カスタムコード品質ルール - Cloud Services
 description: カスタムコード品質ルール - Cloud Services
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: 0217e39ddc8fdaa2aa204568be291d608aef3d0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3520'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -592,17 +592,17 @@ public class DontDoThis implements Page {
 }
 ```
 
-### カスタムLucene OakインデックスにTika設定が必要 {#oakpal-indextikanode}
+### カスタム Lucene Oak インデックスには tika 設定が必要 {#oakpal-indextikanode}
 
-**キー**:IndexTikaNode
+**キー**：IndexTikaNode
 
 **タイプ**：バグ
 
 **重大度**：ブロッカー
 
-****&#x200B;以降：2021.8.0
+**開始バージョン**：2021.8.0
 
-標準提供のAEM Oakインデックスの複数には、tika設定が含まれ、これらのインデックスのカスタマイズ&#x200B;**にtika設定が含まれている必要があります。** このルールは、 `damAssetLucene`、 `lucene`および`graphqlConfig`インデックスのカスタマイズをチェックし、 `tika`  ノードが見つからないか、`tika`ノードに`config.xml`という名前の子ノードがない場合。
+複数の標準提供の AEM Oak インデックスには tika 設定が含まれており、これらのインデックスをカスタマイズする場合は tika 設定を含める&#x200B;**必要があります**。このルールは、 `damAssetLucene`、 `lucene`、`graphqlConfig` インデックスのカスタマイズを確認し、 `tika` ノードがない場合、または `tika` ノードに `config.xml` という名前の子ノードがない場合には問題を報告します。
 
 インデックス定義のカスタマイズの詳細については、[インデックス作成に関するドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#preparing-the-new-index-definition)を参照してください。
 
@@ -632,17 +632,17 @@ public class DontDoThis implements Page {
         + config.xml
 ```
 
-### カスタムLucene Oakインデックスは同期してはいけません {#oakpal-indexasync}
+### カスタム Lucene Oak インデックスは同期してはいけない {#oakpal-indexasync}
 
-**キー**:IndexAsyncProperty
+**キー**：IndexAsyncProperty
 
 **タイプ**：バグ
 
 **重大度**：ブロッカー
 
-****&#x200B;以降：2021.8.0
+**開始バージョン**：2021.8.0
 
-luceneタイプのOakインデックス  は常に非同期でインデックスを作成する必要があります。 これを行わないと、システムが不安定になる可能性があります。 Luceneインデックスの構造に関する詳細は、[Oakのドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)を参照してください。
+Lucene タイプの Oak インデックスは常に非同期でインデックスを作成する必要があります。これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造に関する詳細は、[Oak のドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)を参照してください。
 
 #### 準拠していないコード {#non-compliant-code-indexasync}
 
@@ -673,17 +673,17 @@ luceneタイプのOakインデックス  は常に非同期でインデック�
         + config.xml
 ```
 
-### カスタムDAM Asset Lucene Oakインデックスが正しく構造化されている  {#oakpal-damAssetLucene-sanity-check}
+### カスタム DAM Asset Lucene Oak インデックスが正しく構造化されている  {#oakpal-damAssetLucene-sanity-check}
 
-**キー**:IndexDamAssetLucene
+**キー**：IndexDamAssetLucene
 
 **タイプ**：バグ
 
 **重大度**：ブロッカー
 
-****&#x200B;以降：2021.6.0
+**開始バージョン**：2021.6.0
 
-AEM Assetsでアセット検索が正しく機能するようにするには、 `damAssetLucene` Oakインデックスのカスタマイズが、このインデックスに固有の一連のガイドラインに従う必要があります。 このルールは、インデックス定義に`visualSimilaritySearch`という値を含む、`tags`という複数の値を持つプロパティが必要かどうかをチェックします。
+AEM Assets でアセット検索が正しく機能するようにするには、`damAssetLucene` Oak インデックスのカスタマイズはこのインデックスに固有の一連のガイドラインに従う必要があります。このルールは、インデックス定義に `tags` という複数の値を持つプロパティがあって `visualSimilaritySearch` という値を含むかどうかを確認します。
 
 #### 準拠していないコード {#non-compliant-code-damAssetLucene}
 
@@ -965,7 +965,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）の compatVersion プロパティを 2 に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）の compatVersion プロパティを 2 に設定する必要があります。その他の値は、AEM Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツ検索とインデックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja)を参照してください。
 
 ### OakPAL - カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
@@ -1011,9 +1011,9 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **重大度**：ブロッカー
 
-****&#x200B;以降：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
+**最初の対象バージョン**：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）に、値が **lucene** に設定された type プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが oak:QueryIndexDefinition など）に、値が **lucene** に設定された type プロパティが必要です。AEM Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ### OakPAL - カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
@@ -1025,7 +1025,7 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に seed という名前のプロパティを含めるこが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に seed という名前のプロパティを含めるこが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)を参照してください。
 
 ### OakPAL - カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めない {#oakpal-reindex-property}
 
@@ -1037,4 +1037,4 @@ AEM Cloud Service では、カスタム検索インデックス定義（ノー�
 
 **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に reindex という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)を参照してください。
+AEM Cloud Service では、カスタム検索インデックス定義（ノードのタイプが `oak:QueryIndexDefinition`）に reindex という名前のプロパティを含めることが禁止されています。AEM Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=ja#how-to-use)を参照してください。
