@@ -12,9 +12,9 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2549'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 ブランド固有のスタイルは、これらのクライアントライブラリで管理される CSS を追加および上書きして、AEM CIF コアコンポーネントに適用できます。クライアントライブラリが構造化されてページに含まれる方法を理解することが重要です。
 
-[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) は、プロジェクトのすべてのフロントエンドアセットを管理するための専用の [webpack](https://webpack.js.org/) プロジェクトです。これにより、フロントエンド開発者は、[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/) など、様々な言語やテクノロジーを使用できます。
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=ja) は、プロジェクトのすべてのフロントエンドアセットを管理するための専用の [webpack](https://webpack.js.org/) プロジェクトです。これにより、フロントエンド開発者は、[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/) など、様々な言語やテクノロジーを使用できます。
 
 `ui.frontend` モジュールは Maven モジュールでもあり、NPM モジュールの [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) を使用して、より大きなプロジェクトに統合されています。ビルド時に、`aem-clientlib-generator` はコンパイル済みの CSS ファイルと JavaScript ファイルをクライアントライブラリの `ui.apps` モジュールにコピーします。
 
@@ -81,7 +81,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
 ## ティーザースタイルのアップデート {#ui-frontend-module}
 
-次に、ティーザーのスタイルを少し変更して、`ui.frontend` モジュールとクライアントライブラリの動作を確認します。[任意の IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用したクリーンショットは、[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code) からのものです。
+次に、ティーザーのスタイルを少し変更して、`ui.frontend` モジュールとクライアントライブラリの動作を確認します。[任意の IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#set-up-the-development-ide) を使用して、Venia プロジェクトをインポートします。使用したクリーンショットは、[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#microsoft-visual-studio-code) からのものです。
 
 1. **ui.frontend** モジュールに移動して展開し、フォルダー階層を次のように展開します：`ui.frontend/src/main/styles/commerce`。
 
@@ -445,7 +445,7 @@ IDE と生成されたプロジェクトに戻ります。
    ```
 
    >[!NOTE]
-   >完全な Maven ビルドを実行せずに、プロジェクトファイルをローカル AEM インスタンスに直接同期できる追加の [IDE セットアップとツール](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)があります。
+   >完全な Maven ビルドを実行せずに、プロジェクトファイルをローカル AEM インスタンスに直接同期できる追加の [IDE セットアップとツール](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ja#set-up-an-integrated-development-environment)があります。
 
 ## アップデートされた製品ティーザーを表示 {#view-updated-product-teaser}
 
@@ -473,7 +473,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 
-[AEM スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用して 、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。「[スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)」では、この作業をおこなう方法に関する詳細な手順と情報が説明されています。
+[AEM スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用して 、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。「[スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=ja)」では、この作業をおこなう方法に関する詳細な手順と情報が説明されています。
 
 ![ボーナスチャレンジ - スタイルシステム](../assets/style-cif-component/bonus-challenge.png)
 
@@ -481,7 +481,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 * [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)
-* [ローカル AEM 開発環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [ローカル AEM 開発環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja)
 * [クライアントサイドライブラリ](/help/implementing/developing/introduction/clientlibs.md)
-* [AEM Sites 使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-* [スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [AEM Sites 使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)
+* [スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=ja)
