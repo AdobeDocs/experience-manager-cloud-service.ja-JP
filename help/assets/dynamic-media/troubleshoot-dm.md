@@ -1,22 +1,22 @@
 ---
-title: Dynamic Mediaのトラブルシューティング
-description: Dynamic Mediaを使用する際のトラブルシューティングのヒント
+title: Dynamic Media のトラブルシューティング
+description: Dynamic Media 使用時のトラブルシューティングのヒント
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '992'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Dynamic Mediaのトラブルシューティング {#troubleshooting-dynamic-media-scene-mode}
+# Dynamic Media のトラブルシューティング {#troubleshooting-dynamic-media-scene-mode}
 
 以下のトピックでは、Dynamic Media のトラブルシューティングについて説明します。
 
-## 新しいDynamic Media設定 {#new-dm-config}
+## 新しい Dynamic Media 設定 {#new-dm-config}
 
-[新しいDynamic Media設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)を参照してください。
+[新しい Dynamic Media 設定のトラブルシューティング](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)を参照してください。
 
 ## 一般（すべてのアセット） {#general-all-assets}
 
@@ -33,7 +33,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Dynamic Media のリモートアセットへの URL を生成するには、これを入力する必要があります。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **success** または **failed:`<error text>`** | セット（スピンセット、画像セットなど）、画像プリセット、ビューアプリセット、アセットの画像マップの更新、編集された画像などの同期ステータス。 |
 
-### 同期ログ {#synchronization-logging}
+### 同期のログ {#synchronization-logging}
 
 同期のエラーと問題は `error.log`（Experience Manager サーバーディレクトリの `/crx-quickstart/logs/`）に記録されます。ログにはほとんどの問題の根本原因を突き止めるのに十分な情報が記録されますが、Sling コンソール（[https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)）を通じて `com.adobe.cq.dam.ips` パッケージのログレベルをデバッグに引き上げると、さらに詳しい情報を集めることができます。
 
@@ -137,7 +137,7 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
     </ul> </td>
    <td>
     <ol>
-     <li>「Cloud Services」の下の「Dynamic Media設定」が正しく設定されていることを確認します。</li>
+     <li>クラウドサービスページで Dynamic Media 設定が正しくセットアップされていることを確認します。</li>
      <li>フォルダーにビデオプロファイルがあることを確認します。そのビデオプロファイルも確認します。</li>
     </ol> </td>
   </tr>
@@ -179,11 +179,11 @@ CRXDE Lite で次のアセットプロパティを見直すと、Adobe Experienc
   <tr>
    <td>ビューアプリセットが公開されていない</td>
    <td><p>次のサンプルマネージャー診断ページに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>計算された値を確認します。正常に動作している場合は、次のようになります。</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>：Dynamic Media クラウドの設定後、ビューアアセットが同期するまで 10 分ほどかかることがあります。</p> <p>アクティブでないアセットが残る場合は、「<strong>アクティブでないすべてのアセットをリスト</strong>」ボタンを選択して詳細を確認します。</p> </td>
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>：Dynamic Media クラウドの設定後、ビューアアセットが同期するまで 10 分ほどかかることがあります。</p> <p>アクティブでないアセットが残る場合は、「<strong>アクティブでないアセットをすべて表示</strong>」ボタンのどちらかを選択して詳細を確認してください。</p> </td>
    <td>
     <ol>
      <li>管理ツールのビューアプリセットリストに移動します。 <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>すべてのビューアプリセットを選択し、「<strong>公開</strong>」を選択します。</li>
+     <li>すべてのビューアプリセットを選択したあと、「<strong>公開</strong>」を選択します。</li>
      <li>サンプルマネージャーに戻り、アクティブでないアセット数がゼロになったことを確認します。</li>
     </ol> </td>
   </tr>
