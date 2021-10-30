@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリー�
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート.'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 source-git-commit: 596a7a41dac617e2fb57ba2e4891a2b4dce31fad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1038'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 * 新しいユーザーインターフェイスの実装は、クラシック UI に基づく実装に代わるものです。
 
-* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。「[Adobe Analytics の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html)」および「[Adobe Target の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)」を参照してください。
+* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。「[Adobe Analytics の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=ja)」および「[Adobe Target の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=ja)」を参照してください。
 
 * 設定は、Experience Manager リポジトリーの `/etc/cloudsettings` ではなく、`/conf` に保存されるようになりました。
 
@@ -55,7 +55,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは、「[Cloud ServiceとしてのAEMコマースの使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)」を参照してください。
+詳しくは、「[Cloud ServiceとしてのAEMコマースの使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja)」を参照してください。
 
 ## コアコンポーネント {#core-components}
 
@@ -138,7 +138,7 @@ Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点につい�
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
-   詳しくは、[AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)を参照してください。
+   詳しくは、[AEM 6.1 への CRA のインストール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=ja#installing-on-aem61)を参照してください。
 
 * 概要レポートに表示される有効期限のタイムスタンプが正しくありませんでした。
 
