@@ -4,7 +4,7 @@ description: AEM as a Cloud Service Release 2020.2.0 Cloud Manager のリリー�
 feature: リリース情報
 exl-id: 3f3324d9-53db-458d-9523-2e0d5d6dc3f7
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
 ht-degree: 100%
 
