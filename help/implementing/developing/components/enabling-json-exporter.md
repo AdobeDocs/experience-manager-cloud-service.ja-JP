@@ -3,9 +3,9 @@ title: コンポーネントの JSON 書き出しの有効化
 description: モデラーフレームワークに基づいてコンテンツの JSON 書き出しを生成するように、コンポーネントを適応させることができます。
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ JSON 書き出しは、[Sling Model](https://sling.apache.org/documentation/bund
 
 >[!NOTE]
 >
->Sling Model の使用例については、[AEM での Sling Model Exporter の開発](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)の記事を参照してください。
+>Sling Model の使用例については、[AEM での Sling Model Exporter の開発](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=ja)の記事を参照してください。
 
 Sling Model の実装クラスに次のような注釈を付ける必要があります。
 
@@ -64,7 +64,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 JSON エクスポーターフレームワークで認識されるようにするには、モデルインターフェイスに `ComponentExporter` インターフェイス（またはコンテナコンポーネントの場合は `ContainerExporter`）を実装する必要があります。
 
-対応する Sling Model インターフェイス（`MyComponent`）には、[Jackson 注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)を使用して注釈が付けられ、どのように書き出し（シリアル化）がおこなわれるかが定義されます。
+対応する Sling Model インターフェイス（`MyComponent`）には、[Jackson 注釈](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)を使用して注釈が付けられ、どのように書き出し（シリアル化）が行われるかが定義されます。
 
 Model インターフェイスには、シリアル化されるメソッドを定義するために適切に注釈を付ける必要があります。デフォルトでは、getter の通常の命名規則に準拠するすべてのメソッドがシリアル化され、JSON プロパティ名が getter 名からそのまま派生されます。これを回避または上書きするには、`@JsonIgnore` または `@JsonProperty` を使用して JSON プロパティの名前を変更します。
 
@@ -81,4 +81,4 @@ Model インターフェイスには、シリアル化されるメソッドを�
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 * [コンテンツフラグメントを使用したオーサリング](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)および[コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)
