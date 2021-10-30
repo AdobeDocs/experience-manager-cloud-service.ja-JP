@@ -2,9 +2,9 @@
 title: 移行後段階
 description: 移行後段階
 source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM as a Cloud Service 環境のトラブルシューティングには、次の
 
 AEM as a Cloud Service 開発者環境でのデバッグは、開発環境、ステージ環境、実稼動環境の開発者コンソールでおこなえます。
 
-開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools)を参照してください。
+開発ツールについて詳しくは、[AEM as a Cloud Service 向けの実装](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#aem-as-a-cloud-service-development-tools)を参照してください。
 
 ## CRXDE Lite {#crxde-lite}
 
