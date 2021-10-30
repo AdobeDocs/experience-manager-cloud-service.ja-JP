@@ -5,9 +5,9 @@ feature: アセット管理
 role: User
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 84%
 
 この機能は、Web サイトがサードパーティの WCM で稼動する場合に有効です。ただし、Web サイトが Adobe Experience Manager で稼動する場合は、オフサイトの画像サーバーが画像をレンダリングして Web ページに提供します。
 
-[Webページへのビデオビューアの埋め込み](embed-code.md)も参照してください。
+[Web ページへのビデオビューアの埋め込み](embed-code.md)も参照してください。
 
-[WebアプリケーションへのURLのリンク](linking-urls-to-yourwebapplication.md)も参照してください。
+[Web アプリケーションへの URL のリンク](linking-urls-to-yourwebapplication.md)も参照してください。
 
 **レスポンシブサイトに最適化された画像を配信するには：**
 
-1. レスポンシブコードを提供する画像の場所に移動し、ドロップダウンメニューで「**[!UICONTROL レンディション]**」を選択します。
+1. レスポンシブコードを提供する画像の場所に移動して、ドロップダウンメニューで「**[!UICONTROL レンディション]**」を選択します。
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,7 +37,7 @@ ht-degree: 84%
    >
    >画像プリセットは自動的に公開されます。
 
-1. **[!UICONTROL RESS]**&#x200B;を選択します。
+1. 「**[!UICONTROL RESS]**」を選択します。
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -46,6 +46,6 @@ ht-degree: 84%
 
 ## HTTP/2 による Dynamic Media アセットの配信 {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。Dynamic Media アセットの配信は HTTP/2 を使用しておこなうことができ、応答時間と読み込み時間を短縮できます。
+HTTP/2 は、ブラウザーとサーバーの交信を強化する、新しく更新された Web プロトコルです。このプロトコルを使用すれば、情報の伝送を高速化し、必要な処理能力を抑えることができます。Dynamic Media アセットの配信は HTTP/2 を使用して行うことができ、応答時間と読み込み時間を短縮できます。
 
 Dynamic Media アカウントでの HTTP/2 の使用方法について詳しくは、[コンテンツの HTTP/2 配信](http2faq.md)を参照してください。
