@@ -6,9 +6,9 @@ feature: アセット管理
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1025'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
    | ダウンロードオプション | 説明 |
    |---|---|
    | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、ダウンロードした各アセット（アセットの親フォルダーの下にネストされた子フォルダー内のアセットを含む）が、ローカルコンピューター上の 1 つのフォルダーに含まれます。このオプションを&#x200B;*選択しない場合*、デフォルトでは、フォルダー階層は無視され、すべてのアセットがローカルコンピューターの 1 つのフォルダーにダウンロードされます。 |
-   | **[!UICONTROL 電子メール]** | 受信者に電子メール通知を送信する場合は、このオプションを選択します。次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 電子メール]** | 受信者に電子メール通知を送信する場合は、このオプションを選択します。次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL アセット]** | レンディションを含めずに、元の形式でアセットをダウンロードする場合に、このオプションを選択します。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
    | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマート切り抜きレンディションが Adobe [!DNL Experience Manager] 内からダウンロードされます。スマート切り抜きレンディションを含む zip ファイルが作成され、ローカルコンピューターにダウンロードされます。 |
@@ -70,13 +70,13 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 >[!NOTE]
 >
->この機能は、リリース前のExperience Managerチャネルで使用できます。
+>この機能は、Experience Manager のプレリリースチャネルで入手できます。
 
-リンクを使用したアセットの共有は、関心のある人が[!DNL Assets]にログインしなくても利用できる便利な方法です。 アセットを共有するURLを生成するには、[リンク共有機能](/help/assets/share-assets.md#sharelink)を使用します。
+リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。アセットを共有する URL を生成するには、[リンク共有機能](/help/assets/share-assets.md#sharelink)を使用します。
 
-ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets]は非同期サービスを使用して、すばやく中断のないダウンロードを実現します。 ダウンロードされるアセットは、管理可能なファイルサイズのZIPアーカイブのインボックス内のバックグラウンドにキューに入れられます。 非常に大きなダウンロードの場合、ダウンロードは100 GBのファイルにまとめられます。
+ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、より高速で中断のないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
 
-インボックスに各アーカイブの処理ステータスが表示されます。 処理が完了したら、インボックスからアーカイブをダウンロードできます。
+インボックスには、各アーカイブの処理ステータスが表示されます。処理が完了したら、インボックスからアーカイブをダウンロードできます。
 
 ![ダウンロードインボックス](assets/download-inbox.png)
 
@@ -109,6 +109,6 @@ Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用す
 >[!MORELIKETHIS]
 >
 >* [DRM で保護されたアセットのダウンロード](drm.md)
-* [Windows／Mac OS デスクトップで Adobe Experience Manager デスクトップアプリケーションを使用したアセットのダウンロード](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)
-* [サポートされている Adobe Creative Cloud アプリ内から Adobe Asset Link を使用したアセットのダウンロード](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Windows／Mac OS デスクトップで Adobe Experience Manager デスクトップアプリケーションを使用したアセットのダウンロード](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja)
+>* [サポートされている Adobe Creative Cloud アプリ内から Adobe Asset Link を使用したアセットのダウンロード](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
