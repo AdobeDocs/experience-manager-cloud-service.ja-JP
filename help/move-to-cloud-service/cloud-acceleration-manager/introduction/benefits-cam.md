@@ -1,42 +1,42 @@
 ---
-title: Cloud Acceleration Managerを使用するメリット
-description: このページでは、Cloud Acceleration Managerを使用する主なメリットについて説明します。
+title: Cloud Acceleration Manager を使用するメリット
+description: ここでは、Cloud Acceleration Manager を使用する主なメリットについて説明します。
 source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Acceleration Managerを使用するメリット {#benefits-cam}
+# Cloud Acceleration Manager を使用するメリット {#benefits-cam}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_benefits"
->title="Cloud Acceleration Managerを使用するメリット"
->abstract="Cloud Acceleration Manager(CAM)では、チームが自信を持ってライブを開始できるよう、Adobe推奨のベストプラクティスと手法をガイド付きエクスペリエンスで提供します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en" text="Cloud Acceleration Managerの概要"
+>title="Cloud Acceleration Manager を使用するメリット"
+>abstract="Cloud Acceleration Manager（CAM）では、チームが自信を持って計画し実装して運用開始できるように、アドビ推奨のベストプラクティスと手法を案内するガイド付きエクスペリエンスを提供します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja" text="Cloud Acceleration Manager の基本を学ぶ"
 
-様々なビジネス要件とカスタマイズがあるので、クラウドへの移行は複雑なプロジェクトになる可能性があります。 Cloud Acceleration Manager(CAM)では、チームが自信を持ってライブを開始できるよう、Adobe推奨のベストプラクティスと手法をガイド付きエクスペリエンスで提供します。
+様々なビジネス要件とカスタマイズが存在するので、クラウドへの移行は複雑なプロジェクトになる可能性があります。Cloud Acceleration Manager（CAM）では、チームが自信を持って計画し実装して運用開始できるように、アドビ推奨のベストプラクティスと手法を案内するガイド付きエクスペリエンスを提供します。
 
-Cloud Acceleration Managerを使用する主なメリットは次のとおりです。
+Cloud Acceleration Manager を使用する主なメリットは次のとおりです。
 
-1. より良く、よりスマートに計画：
+1. 計画立案の改善と高機能化：
 
-   * 読みやすい結果表示を使用して、現在のインスタンスの評価を簡略化します。
+   * 読みやすい視覚的な結果を表示して、現在のインスタンスの評価を簡略化できます。
 
-   * 詳細なカスタムレポートを使用して、AEMをCloud Serviceとして移行する際の複雑さの見積もりを評価し、理解します。
+   * 詳細なカスタムレポートを使用して、AEM as a Cloud Service に移行する場合に見込まれる複雑さを評価し把握できます。
 
-1. エンド・ツー・エンドのガイダンスにより、移行を合理化：
+1. 包括的なガイダンスによる移行の効率化：
 
-   * 移行プロセスの管理には、状況に応じたヘルプを提供する組み込みのインテリジェンスが必要です。
+   * 状況に応じたヘルプをその都度提供する組み込みのインテリジェンスを利用して、移行プロセスを管理できます。
 
-   * AEM as a Compatibilityでサポートされていない領域や、互換性を確保するためにリファクタリングが必要なCloud Serviceを確認して特定します。
+   * AEM as a Cloud Service でサポートされていない分野を精査および特定したり、互換性を確保するためにリファクタリングを要求したりできます。
 
-1. 取り組みの最適化：
+1. 作業の最適化：
 
-   Adobeが推奨するベストプラクティスと自動化ツールにアクセスして、移行作業を迅速化し、移行時間を最小限に抑えるためのツールにアクセスします。
+   移行作業とツールへのアクセスを促進して移行時間を最短化するためのアドビ推奨のベストプラクティスと自動処理ツールにアクセスできます。
 
-## 次の作業 {#whats-next}
+## 次の手順 {#whats-next}
 
-Cloud Acceleration Managerの概要を理解したら、次にを使用し、Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=en)を使い始めます。[
+Cloud Acceleration Manager の概要を理解したら、[Cloud Acceleration Manager の基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja)を参照して、使用を開始できます。
