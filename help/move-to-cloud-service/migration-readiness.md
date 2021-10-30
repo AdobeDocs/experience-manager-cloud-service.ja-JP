@@ -1,11 +1,11 @@
 ---
-title: 準備段階
-description: 準備段階
+title: 準備フェーズ
+description: 準備フェーズ
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
 source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。
 
-Adobe Experience Manager as a Cloud Service で廃止される特長や機能については、[廃止される機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html#deprecated-features)を参照してください。
+Adobe Experience Manager as a Cloud Service で廃止される特長や機能については、[廃止される機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=ja#deprecated-features)を参照してください。
 
 ## 計画段階について {#introduction}
 
