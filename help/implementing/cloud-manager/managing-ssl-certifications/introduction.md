@@ -1,11 +1,11 @@
 ---
-title: 概要 — SSL 証明書の管理
-description: 概要 — SSL 証明書の管理
+title: 概要 - SSL 証明書の管理
+description: 概要 - SSL 証明書の管理
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 86%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="SSL証明書の管理"
->abstract="Cloud Manager では、セルフサービス機能を使用して、Cloud Manager UI から SSL 証明書をインストールできます。Cloud Managerは、Platform TLSサービスを使用して、顧客が所有するSSL証明書および秘密鍵を管理します。通常は、サードパーティの証明機関から取得されます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html?lang=ja" text="SSL証明書の表示、更新、置換"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html?lang=ja" text="SSL証明書のステータスの確認"
+>title="SSL 証明書の管理"
+>abstract="Cloud Manager では、セルフサービス機能を使用して、Cloud Manager UI から SSL 証明書をインストールできます。Cloud Manager は、Platform TLS サービスを使用して、SSL 証明書と、通常はサードパーティの証明機関から取得して顧客が所有しする秘密鍵を管理します。"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/view-update-replace-ssl-certificate.html?lang=ja" text="SSL 証明書の表示、更新、置換"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/check-status-ssl-certificate.html?lang=ja" text="SSL 証明書のステータスの確認"
 
 
 Cloud Manager では、セルフサービス機能を使用して、Cloud Manager UI から SSL 証明書をインストールできます。Cloud Manager は、Platform TLS サービスを使用して、SSL 証明書と、通常はサードパーティの証明機関（例：「*Let’s Encrypt*」）から取得して顧客が所有しする秘密鍵を管理します。
@@ -31,7 +31,7 @@ Cloud Manager では、セルフサービス機能を使用して、Cloud Manage
 
 * AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け入れます。
 
-* Cloud Manager では、1 つ以上の環境に関連付けることができる SSL 証明書は、証明書の有効期限が切れている場合でも、プログラム全体で常に最大 20 個まで許可されます。ただし、Cloud Manager UI では、最大 50 個までの SSL 証明書をプログラムにインストールできます。通常、証明書は複数のドメイン（最大100個のSAN）を対象とする可能性があるので、同じ証明書で複数のドメインをグループ化して、この制限を受けないようにします。
+* Cloud Manager では、1 つ以上の環境に関連付けることができる SSL 証明書は、証明書の有効期限が切れている場合でも、プログラム全体で常に最大 20 個まで許可されます。ただし、Cloud Manager UI では、最大 50 個までの SSL 証明書をプログラムにインストールできます。通常、証明書は複数のドメイン（最大 100 個の SAN）に対応できるので、この制限内に収まるように、複数のドメインを同じ証明書でグループ化することを検討してください。
 
 Cloud Manager では、次の顧客向け SSL 証明書の要件をサポートしています。
 
