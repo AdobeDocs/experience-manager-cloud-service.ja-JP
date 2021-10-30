@@ -1,17 +1,17 @@
 ---
-title: Dynamic Media Assetsの配信
+title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
 feature: アセット管理
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Dynamic Media Assetsの配信{#delivering-dynamic-media-assets}
+# Dynamic Media アセットの配信{#delivering-dynamic-media-assets}
 
 ビデオでも画像でも、Dynamic Media アセットの配信方法は、Web サイトの実装方法によって異なります。
 
@@ -30,15 +30,15 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 
 詳しくは、次のトピックを参照してください。
 
-* [WebページへのDynamic Media Assetsの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-* [Webページにビデオビューアまたは画像ビューアを埋め込む](/help/assets/dynamic-media/embed-code.md)
-* [Dynamic Mediaでのホットリンク保護の有効化](/help/assets/dynamic-media/hotlink-protection.md)
-* [WebアプリケーションへのURLのリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
+* [Web ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Web ページへのビデオビューアまたは画像ビューアの埋め込み](/help/assets/dynamic-media/embed-code.md)
+* [Dynamic Media でのホットリンク保護の有効化](/help/assets/dynamic-media/hotlink-protection.md)
+* [Web アプリケーションへの URL のリンク](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
 * [レスポンシブサイト用に最適化された画像の配信](/help/assets/dynamic-media/responsive-site.md)
 * [コンテンツの HTTP/2 配信](/help/assets/dynamic-media/http2faq.md)
-* [Dynamic Mediaを使用したCDNキャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
-* [Dynamic Media Classicを使用したCDNキャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-* [ルールセットを使用したURLの変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
+* [Dynamic Media を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
+* [Dynamic Media Classic を使用した CDN キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
+* [ルールセットを使用した URL の変換](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
 
 ## Dynamic Media アセットの HTTP/2 配信 {#http-delivery-of-dynamic-media-assets}
 
