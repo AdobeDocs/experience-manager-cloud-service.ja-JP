@@ -1,37 +1,37 @@
 ---
-title: '[!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)'
-description: '[!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル)'
+title: '[!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル'
+description: '[!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '752'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] (Cloud Serviceプレリリースチャネル) {#prerelease-channel}
+# [!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル {#prerelease-channel}
 
 
 ## はじめに {#introduction}
 
-[!DNL Adobe Experience Manager] は、Cloud Serviceリリースロードマップのスケジュールに従って、月次サイクルで新しい機能を [Experience Managerに提供します](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-as-cloud-service)。翌月に公開予定の機能を理解できるように、プレリリースチャネルを購読することができます。プレリリースチャネルには、標準のプログラム開発環境またはサンドボックスプログラム環境で適切に設定することでアクセスできます。 お客様は、サイトコンソールに対する変更をプレビューし、新しいプレリリースAPIに対するコードを構築できます。
+[!DNL Adobe Experience Manager] as a Cloud Service では、[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)のスケジュールに従って、毎月 1 回のペースで新しい機能を提供します。翌月に公開予定の機能を把握できるように、プレリリースチャネルを購読できます。プレリリースチャネルにアクセスするには、標準のプログラム開発環境または任意のサンドボックスプログラム環境で適切に設定します。ユーザーは、サイトコンソールの変更内容をプレビューできるほか、新しいプレリリース API に対応してコードをビルドできます。
 
-特定の月のプレリリース機能のリストは、月別リリースノート[に掲載されています。](/help/release-notes/release-notes-cloud/release-notes-current.md)
+特定月のプレリリース機能の一覧は、[月次リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)に掲載されています。
 
->[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)!ビデオ
 
 ## プレリリースを有効にする方法 {#enable-prerelease}
 
-プレリリース機能は、様々な方法で使用できます。
+プレリリース機能は、次のような異なる方法で使用できます。
 
-* クラウド環境（標準プログラム開発環境または任意のサンドボックスプログラム環境タイプ）
+* クラウド環境（標準プログラム開発環境または任意の種類のサンドボックスプログラム環境）
 * ローカル SDK
 
 ### クラウド環境 {#cloud-environments}
 
-クラウド開発環境のサイトコンソールの新機能と、プロジェクトのカスタマイズの結果を確認するには、次の手順を実行します。
+クラウド開発環境でのサイトコンソールの新機能と、プロジェクトのカスタマイズの結果を確認するには：
 
-* [Cloud Manager APIの環境変数エンドポイント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)を使用して、**AEM_RELEASE_CHANNEL**&#x200B;環境変数を&#x200B;**prerelease**&#x200B;に設定します。
+* [Cloud Manager API の環境変数エンドポイント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)を使用して、**AEM_RELEASE_CHANNEL** 環境変数を **prerelease** という値に設定します。
 
 ```
 PATCH /program/{programId}/environment/{environmentId}/variables
@@ -44,28 +44,28 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 ]
 ```
 
-Cloud Manager CLIも、[https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)の手順に従って使用できます。
+[https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) に記載の手順に従って、次のように、Cloud Manager CLI も使用できます。
 ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
-通常の（プレリリース以外の）チャネルの動作に環境を復元したい場合は、変数を削除するか、別の値に戻すことができます
+環境を通常の（プレリリース以外の）チャネルの動作に戻す場合は、変数を削除するか、別の値に設定し直します。
 
 ### ローカル SDK {#local-sdk}
 
-ローカルのクイックスタートSDKのSitesコンソールに新機能が表示され、Maven Centralにあるプレリリース`API Jar`をMavenプロジェクトで参照させると、プレリリースの新しいAPIに対するコードを確認できます。 また、プレリリースモードで通常のクイックスタートSDKを起動すると、ローカルコンピューター上でこれらのプレリリース機能を確認できます。
+Maven Central にあるプレリリース `API Jar` を Maven プロジェクトで参照すると、ローカル Quickstart SDK のサイトコンソールの新機能とプレリリースの新しい API に対応するコードを確認できます。また、通常の Quickstart SDK をプレリリースモードで起動すると、ローカルコンピューター上でこれらのプレリリース機能を確認することもできます。
 
-* ソフトウェア配布ポータルからSDKをダウンロードし、[Cloud ServiceSDKとしてのAEMへのアクセス](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)の説明に従ってインストールします。
-* SDKクイックスタートを起動する際に、引数`-r prerelease`を含めます。
-* 値は&#x200B;*sticky*&#x200B;なので、最初の起動時にのみ選択できます。 SDKを再インストールして、コマンドラインオプションを変更します。
+* SDK をソフトウェア配布ポータルからダウンロードし、[AEM as a Cloud Service SDK へのアクセス](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)の説明に従ってインストールします。
+* SDK Quickstart を起動する際に、引数 `-r prerelease` を含めます。
+* この値は、*sticky* なので最初の起動時にのみ選択できます。コマンドラインオプションを変更するには、SDK を再インストールします。
 
-毎月の機能リリースの間に複数のAEMメンテナンスリリースが存在する可能性があるので、これらの新しいSDKをダウンロードし、Mavenプロジェクトで新しいSDK API Jarバージョンを参照できます。 メンテナンスリリースには、プレリリース機能は追加されませんが、バグ修正、セキュリティ修正、パフォーマンス強化など、より小さな変更が含まれる場合があります。
-JavadocはMaven Centralに公開されます。
+毎月の機能リリースの間に複数の AEM メンテナンスリリースが行われる可能性があるので、これらの新しい SDK をダウンロードし、Maven プロジェクトで新しい SDK API Jar バージョンを参照するいことができます。メンテナンスリリースには、追加のプレリリース機能はありませんが、バグ修正、セキュリティ修正、パフォーマンス強化などの小規模な変更が含まれる場合があります。
+Javadoc は Maven Central に公開されます。
 
-プレリリースSDKに対してをビルドするには：
+プレリリース SDK に対応してビルドするには：
 
-1. Maven Centralに公開される、個別のプレリリースsdk api jarを参照するようにmavenプロジェクトのpom.xmlを変更します。 プレリリース機能用の新しいJava apiが含まれ、sdk api jarに依存します。 同じバージョンを使用します。
+1. Maven Central に公開される個別のプレリリース SDK API Jar を参照するように、Maven プロジェクトの pom.xml を変更します。このファイルには、プレリリース機能の新しい Java API が記載されており、SDK API Jar に対する依存関係が宣言されています。同じバージョンが使用されます。
 
-   例えば、通常のAPI JARを参照する親POMの依存関係管理セクションのスニペットを次に示します。
+   例えば、通常の API JAR を参照する親 POM の依存関係管理セクションから抜粋したコードを次に示します。
 
    ```
    <dependencyManagement>
@@ -78,7 +78,7 @@ JavadocはMaven Centralに公開されます。
         </dependency>
    ```
 
-   次に、モジュールでの使用方法を次に示します。
+   この場合、モジュールでの使用方法は次のようになります。
 
    ```
     <dependencies>
@@ -88,7 +88,7 @@ JavadocはMaven Centralに公開されます。
      </dependency>
    ```
 
-   プレリリースSDKに変更するには、次に示すように、依存関係を`com.adobe.aem:aem-sdk-api`から`com.adobe.aem:aem-prerelease-sdk-api`に変更します。
+   プレリリース SDK に変更するには、次に示すように、依存関係を `com.adobe.aem:aem-sdk-api` から `com.adobe.aem:aem-prerelease-sdk-api` に変更するだけです。
 
    ```
    <dependencyManagement>
@@ -106,22 +106,23 @@ JavadocはMaven Centralに公開されます。
       </dependency>
    ```
 
-   通常どおり、個々のプロジェクトで依存関係を使用できます。
+   通常どおり、個々のプロジェクトでこの依存関係を使用できます。
 
-1. ローカルサーバーにデプロイする
-1. ローカルで正常に動作することを確認したら、コードを開発ブランチにコミットし、 Cloud Manager非実稼動パイプラインを使用して、プレリリースチャネルをサブスクライブする環境にデプロイします
+1. ローカルサーバーにデプロイします。
+1. ローカルで想定どおりに動作することを確認したら、コードを開発ブランチにコミットし、Cloud Manager の実稼動以外のパイプラインを使用して、プレリリースチャネルをサブスクライブする環境にデプロイします。
 
 >[!CAUTION]
-`aem-prerelease-sdk-api` artifactIdは、ステージングまたは実稼動にデプロイする際には使用しないでください。 実稼動パイプラインを介してデプロイする場合は、必ずaem-sdk-apiを使用します。 同様に、プレリリースAPIを参照するコードは、実稼動パイプラインを介してデプロイしないでください。
+> 
+> ステージングまたは実稼動環境にデプロイする場合は、`aem-prerelease-sdk-api` artifactId を使用しないでください。実稼動パイプラインを使用してデプロイする場合は、必ず aem-sdk-api を使用します。同様に、プレリリース API を参照するコードは、実稼動パイプラインを使用してデプロイしないでください。
 
-[AEM CS SDK Build Analyzer maven plugin v1.0以降](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)は、依存関係を調べて、プレリリースapiがプロジェクトで使用されているかどうかを検出します。 アナライザーが検出した場合は、プレリリースsdk apiを使用してプロジェクトを分析します。
+[AEM CS SDK ビルドアナライザー Maven プラグイン v1.0 以降](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja#developing)では、依存関係を調べて、プレリリース API がプロジェクトで使用されているかどうかを検出します。アナライザーで検出された場合は、プレリリース SDK API を使用してプロジェクトの分析が行われます。
 
-## 検討事項 {#considerations}
+## 考慮事項 {#considerations}
 
 プレリリースチャネルに関しては、次の点に注意してください。
 
-* 来月のリリースで展開される一部の機能は、プレリリースチャネルには含まれない場合があります。
-* プレリリースの機能は厳しい品質保証を受け、ベータ版の品質ではなく機能を完全に実現することを目的としています。 通常のAEMリリースの機能にバグがあると思われる場合と同様に、問題が見つかった場合は報告します。
-* プレリリースチャネル用に環境が設定されているかどうかを確認するには、AEMコンソールの「**About**」ページに移動し、AEMバージョン番号に&#x200B;*prerelease*&#x200B;サフィックス（```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```など）が含まれているかどうかを確認します。
+* 翌月のリリースでロールアウトされる一部の機能は、プレリリースチャネルには含まれない場合があります。
+* プレリリースの機能は厳しい品質保証検査を通り、ベータ版の品質ではなく完全な機能を実現することを目的としています。通常の AEM リリースの機能にバグがあると思われる場合と同様に、問題に気がついた場合は報告してください。
+* 環境がプレリリースチャネル用に設定されているかどうかを確認するには、AEM コンソールの&#x200B;**バージョン情報**&#x200B;ページに移動し、AEM バージョン番号に *PRERELEASE* というサフィックスが含まれている（```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE``` など）かどうかを確認します。
 
-![概要](/help/release-notes/assets/about.png)
+![バージョン情報](/help/release-notes/assets/about.png)
