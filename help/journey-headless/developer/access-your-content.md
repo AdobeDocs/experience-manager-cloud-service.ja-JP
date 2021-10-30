@@ -1,15 +1,15 @@
 ---
-title: AEM Delivery APIを使用してコンテンツにアクセスする方法
+title: AEM Delivery API を使用してコンテンツにアクセスする方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1353'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM Delivery APIを使用してコンテンツにアクセスする方法 {#access-your-content}
+# AEM Delivery API を使用してコンテンツにアクセスする方法 {#access-your-content}
 
 [AEM ヘッドレスデベロッパージャーニー](overview.md)のこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスし、アプリにコンテンツをフィードする方法（ヘッドレス配信）について説明します。
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 コンテンツに関するクエリを開始する前に、次の操作が必要です。
 
 * エンドポイントの有効化
-   * ツール/アセット/ GraphQLを使用します。
+   * ツール／Assets／GraphQL の使用
    * [GraphQL エンドポイントの有効化](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
 * GraphiQL のインストール（必要な場合）
