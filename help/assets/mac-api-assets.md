@@ -274,5 +274,5 @@ API の応答は、一部の MIME タイプに対する JSON ファイル、お�
 
 >[!MORELIKETHIS]
 >
->* 開発者向けリファレンスドキュメント [!DNL Assets] [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [開発者向けリファレンスドキュメント [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
 
