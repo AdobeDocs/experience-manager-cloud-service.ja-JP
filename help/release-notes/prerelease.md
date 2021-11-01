@@ -18,7 +18,7 @@ ht-degree: 100%
 
 特定月のプレリリース機能の一覧は、[月次リリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)に掲載されています。
 
->[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)!ビデオ
+>[!VIDEO](/help/release-notes/assets/prerelease-overview.mp4)
 
 ## プレリリースを有効にする方法 {#enable-prerelease}
 
