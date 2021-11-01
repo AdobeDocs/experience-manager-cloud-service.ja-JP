@@ -2,9 +2,9 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: c10d04d6d423529549a760945f72fc3c64ed72ed
+source-git-commit: d706f8229cbca27ece5faedbecc4d02f58d40fb2
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1057'
 ht-degree: 64%
 
 ---
@@ -104,7 +104,7 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
-   >レポートが **トレンドラインレポート画面** は常に最近のレポート日付を持ちます。
+   >表示されるレポートは常に、最新のレポート日付を持つレポートです。
 
 1. クリック **トレンドラインを表示**（下の図を参照）。
 
@@ -124,33 +124,6 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
    >
    >次の図に示すように、ドロップダウンからグラフィカルビューを追加または変更できます。
    >![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
-
-#### レポートの削除 {#delete-trendline}
-
-トレンドラインビューからレポートを削除するには、次の手順に従います。
-
->[!IMPORTANT]
->レポートは、プロジェクトに複数のレポートがアップロードされている場合にのみ削除できます。
-
-1. プロジェクトに移動し、をクリックします。 **レビュー** から **ベストプラクティス分析** カード **準備** フェーズ。
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
-
-1. をクリックします。 **...** アイコンをクリックしてドロップダウンを表示します。
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
-
-1. クリック **トレンドラインを表示**（下の図を参照）。
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
-
-1. 次から削除アイコンをクリックします。 **トレンドラインレポート** 画面
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
-
-1. クリック **削除** 削除を確定します。
-
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 
 ### ベストプラクティス分析レポートの確認 {#analysis-report}
@@ -222,6 +195,33 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のあるすべての情報が表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
+
+### ベストプラクティス分析レポートの削除 {#delete-trendline}
+
+トレンドラインビューからレポートを削除するには、次の手順に従います。
+
+>[!IMPORTANT]
+>レポートは、プロジェクトに複数のレポートがアップロードされている場合にのみ削除できます。
+
+1. プロジェクトに移動し、をクリックします。 **レビュー** から **ベストプラクティス分析** カード **準備** フェーズ。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1a.png)
+
+1. をクリックします。 **...** アイコンをクリックしてドロップダウンを表示します。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view1.png)
+
+1. クリック **トレンドラインを表示**（下の図を参照）。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view2.png)
+
+1. 次から削除アイコンをクリックします。 **トレンドラインレポート** 画面
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+
+1. クリック **削除** 削除を確定します。
+
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
 
 ## 次の手順 {#whats-next}
 
