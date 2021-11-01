@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 5f65d9045e30e9192b7e4833d4667ab5be588e92
+source-git-commit: 399698d512252b0a683f83a06ffbc71cd606ed72
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 65%
@@ -93,7 +93,7 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 トレンドラインオプションからレポートを表示するには、次の手順に従います。
 
 >[!NOTE]
->1 つのプロジェクトに複数の BPA レポートをアップロードすると、アイコンが表示されます **...**.
+>1 つのプロジェクトに複数の BPA レポートをアップロードすると、 **...** アイコン
 
 1. プロジェクトに移動し、をクリックします。 **レビュー** から **ベストプラクティス分析** カード **準備** フェーズ。
 
