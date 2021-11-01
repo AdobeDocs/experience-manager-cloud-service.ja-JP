@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リ�
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 92%
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] の新機能 {#what-is-new-sites}
+### [!DNL Sites] の新機能  {#what-is-new-sites}
 
 * GraphQL エンドポイント - 新しい GraphQL コンソール UI を使用して、個々の AEM Sites 設定に対して AEM GraphQL API を有効にし、これらの設定に対してカスタム GraphQL エンドポイントを作成できるようになりました。また、UI で GraphQL エンドポイントを管理できます。
 
@@ -48,23 +48,23 @@ ht-degree: 92%
 
 * GraphQL - 永続化されたクエリで、AEM Sites 設定に固有のユーザー定義エンドポイントがサポートされるようになりました（CQ-4315928）。
 
-## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
+### [!DNL Assets] の新機能  {#what-is-new-assets}
 
 * [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能強化により、ダウンロードを高速化できます。
 
-* アセットがリンク共有オプションを使用してダウンロードされた場合、レンディションをダウンロードするかどうかを選択できるようになりました。 以前は、すべてのアセットレンディションがダウンロードされていました。
+* リンク共有オプションを使用してアセットをダウンロードする場合、レンディションをダウンロードするかどうかを選択できるようになりました。以前は、すべてのアセットレンディションがダウンロードされていました。
 
-* 管理者は、一括アセット取り込みの後にアセットのソースを削除するように [!DNL Experience Manager] を設定できます。 「[一括アセット取得](/help/assets/add-assets.md#asset-bulk-ingestor)」を参照してください。
+* 管理者は、アセットの一括取り込みの後でアセットのソースを削除するように [!DNL Experience Manager] を設定できます。「[一括アセット取得](/help/assets/add-assets.md#asset-bulk-ingestor)」を参照してください。
 
 * ヘルスチェックを実行してアセットを一括で読み込む際に、Experience Manager にエラーの詳細な情報が表示されるようになりました。「[一括アセット取得](/help/assets/add-assets.md#asset-bulk-ingestor)」を参照してください。
 
 * 一括読み込みツールを使用してアセットを読み込む場合、読み込みが成功した後でソースファイルを削除する管理者オプションが追加されました。「[一括アセット取得](/help/assets/add-assets.md#asset-bulk-ingestor)」を参照してください。
 
-* メタデータスキーマを編集する際に、管理者がすばやく簡単に選択できる新しいルートパスセレクターフィールドを使用すると、設定時間を短縮できます。
+* 管理者は、メタデータスキーマを編集する際に、新しいルートパスセレクターフィールドを使用して、すばやく簡単に選択できるので、設定時間が短縮されます。
 
-* メタデータスキーマを編集する際に、メタデータエディターに自由形式のテキスト領域を提供するデータ型が追加されます。 このテキスト領域を使用して、アセットのメタデータとして自由形式のテキストを入力できます。 [ メタデータスキーマエディタ ](/help/assets/metadata-schemas.md) を参照してください。
+* メタデータスキーマの編集時に、自由形式のテキスト領域を提供するデータタイプがメタデータエディターに追加されます。このテキスト領域を使用して、ユーザーは自由形式のテキストをアセットのメタデータとして入力できます。[メタデータスキーマエディター](/help/assets/metadata-schemas.md)を参照してください。
 
 * 多くのアセットのメタデータを、CSV ファイルを使用して一括で読み込んだり、CSV ファイルに書き出したりできます。デフォルトの日付形式は `yyyy-MM-dd'T'HH:mm:ss.SSSXXX` になりました。列ヘッダーをアップデートすることで、別の形式を利用できます。例えば、CSV ファイルの列ヘッダーとして `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX` ではなく `Date` を追加します。
 
@@ -86,11 +86,11 @@ ht-degree: 92%
 
 * アセットをレビューする際に、省略記号を注釈として使用できます。省略記号を使用すると、印刷したときに省略記号の数が注釈の番号になります。（CQ-4316792）
 
-* 検索結果からアセットを選択した場合、「クイック公開」オプションが表示されない。 （CQ-4317748）
+* 検索後に検索結果からアセットを選択したとき、クイック公開オプションが表示されません。（CQ-4317748）
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能 {#what-is-new-forms}
+### [!DNL Forms] の新機能  {#what-is-new-forms}
 
 * **Adobe Sign 対応アダプティブフォームでの Government ID 認証方法の使用**
 
@@ -141,7 +141,7 @@ ht-degree: 92%
 
 * カテゴリページのページプロパティの「コマース」タブに、ルートカテゴリフィールドが表示されなかった問題を修正しました。
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 この節では、AEM as a Cloud Service 2021.4.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 

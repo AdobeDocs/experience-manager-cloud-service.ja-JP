@@ -1,54 +1,54 @@
 ---
-title: ScreensでのプロジェクトのCloud Service
-description: ここでは、ScreensでプロジェクトをCloud Serviceとして作成する方法について説明します。
-source-git-commit: d9d38f5949c9590ae68276452eea28044c7e5155
+title: Screens as a Cloud Service でのプロジェクトの作成
+description: ここでは、Screens as a Cloud Service でプロジェクトを作成する方法について説明します。
+exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Screens as a Cloud Service でのプロジェクトの作成と管理 {#creating-project-screens-cloud}
 
-# Screensでのプロジェクトの作成と管理(Cloud Service) {#creating-project-screens-cloud}
-
-Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初の手順は、新しいプロジェクトを作成することです。
+Screens as a Cloud Service で新しいプロジェクトを実装するための最初の手順は、新しいプロジェクトを作成することです。
 
 ## 目的 {#objective}
 
-このドキュメントでは、Screensコンテンツプロバイダーで新しいAEM Screensプロジェクトを作成する方法を説明します。 読み終えたら、範囲に関して、AEM Screensプロジェクトを作成できるようになります。
+このドキュメントでは、Screens コンテンツプロバイダーで新しい AEM Screens プロジェクトを作成する方法を説明します。読み終えた後は、範囲の観点から AEM Screens プロジェクトを作成できるようになります。
 
 ## 新しいプロジェクトの作成 {#create-new-project}
 
-以下の手順に従って、Screensに新しいプロジェクトをCloud Serviceとして作成します。
+Screens as a Cloud Service で新しいプロジェクトを作成するには、次の手順に従います。
 
-1. Screensコンテンツプロバイダーに移動します。
+1. Screens コンテンツプロバイダーに移動します。
 
    >[!NOTE]
-   >プロジェクトを作成するためにScreensコンテンツプロバイダーにアクセスする方法については、[Using Screens Content Provider](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en)を参照してください。
+   >プロジェクト作成のために Screens コンテンツプロバイダーにアクセスする方法については、[Screens コンテンツプロバイダーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=ja)を参照してください。
 
-1. アクションバーの右上隅にある「**Screensプロジェクト**&#x200B;を作成」をクリックします。
+1. アクションバーの右上隅にある「**スクリーンプロジェクトを作成**」をクリックします。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. **Screensプロジェクト**&#x200B;を作成ダイアログボックスに、プロジェクトの&#x200B;**タイトル**&#x200B;を入力します（例：*FirstDigitalExperience*）。
+1. **スクリーンプロジェクトを作成**&#x200B;ダイアログボックスで、プロジェクトの「**タイトル**」に「*FirstDigitalExperience*」などと入力します。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >**名前**&#x200B;フィールドは、選択したタイトルに基づいて、**Screensプロジェクトを作成**&#x200B;ダイアログボックスに自動的に入力されます。
+   >**スクリーンプロジェクトを作成**&#x200B;ダイアログボックスの「**名前**」フィールドは、選択したタイトルに基づいて自動的に入力されます。
 
-1. 「**保存**」をクリックします。 *FirstDigitalExperience*&#x200B;というタイトルのScreensプロジェクトがScreensコンテンツプロバイダーに表示されます。 プロジェクトがScreensコンテンツプロバイダーに表示されます。このとき、**ロケーション**&#x200B;と&#x200B;**チャネル**&#x200B;という2つのフォルダーがあります。
+1. 「**保存**」をクリックします。*FirstDigitalExperience* というタイトルの Screens プロジェクトが Screens コンテンツプロバイダーに表示されます。このとき、Screens プロジェクトには&#x200B;**ロケーション**&#x200B;と&#x200B;**チャネル**&#x200B;という 2 つのフォルダーがあります。
 
    ![](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
-   これで、AEM Screensプロジェクトが設定され、プロジェクトにチャネルと場所を追加できます。
+   これで、AEM Screens プロジェクトを所定の位置にセットアップしたので、プロジェクトへのチャネルとロケーションの追加を始めることができます。
 
-### 既存のプロジェクトの削除 {#deleting-project}
+### 既存プロジェクトの削除 {#deleting-project}
 
-既存のScreensを削除プロジェクトとしてCloud Serviceできます。
-次の手順に従って、Screensコンテンツプロバイダーから既存のプロジェクトを削除します。
+既存の Screens as a Cloud Service プロジェクトを削除できます。
+Screens コンテンツプロバイダーから既存のプロジェクトを削除するには、次の手順に従います。
 
-1. Screensコンテンツプロバイダーに移動します。
+1. Screens コンテンツプロバイダーに移動します。
 1. 削除するプロジェクトを選択します。
 1. アクションバーの「**削除**」をクリックして、プロジェクトを削除します。
 
@@ -57,8 +57,8 @@ Cloud ServiceとしてScreensに新しいプロジェクトを実装する最初
 1. 「**削除**」をクリックして、プロジェクトの削除を確定します。
 
    >[!NOTE]
-   >複数のプロジェクトを選択できるので、1回の手順で複数のプロジェクトを削除できます。
+   >複数のプロジェクトを選択できるので、1 回の手順で複数のプロジェクトを削除できます。
 
 ## 次の手順 {#whats-next}
 
-これで、AEM Screensプロジェクトを設定したので、新しいチャネルを作成し、チャネルにコンテンツを追加できます。 チャネルでのコンテンツの作成と管理の方法については、[チャネルの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=en)を参照してください。
+これで、AEM Screens プロジェクトのセットアップが完了したので、新しいチャネルを作成し、そのチャネルにコンテンツを追加できます。チャネル内のコンテンツの作成と管理の方法については、[チャネルの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=ja)を参照してください。

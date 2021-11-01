@@ -5,7 +5,7 @@ exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service インスタンスには自分の外部向け URL がわ�
 
 ## Externalizer のデフォルトの動作とオーバーライド方法 {#default-behavior}
 
-Externalizer サービスには、初期設定で `author-p12345-e6789.adobeaemcloud.com` や `publish-p12345-e6789.adobeaemcloud.com` などの値が含まれています。
+Externalizer サービスには、標準で `author-p12345-e6789.adobeaemcloud.com` や `publish-p12345-e6789.adobeaemcloud.com` などの値があります。
 
 このような値を上書きするには、[AEM as a Cloud Service の OSGi の設定](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)の説明に従って、Cloud Manager 環境変数を使用し、事前定義された `AEM_CDN_DOMAIN_AUTHOR` 変数と `AEM_CDN_DOMAIN_PUBLISH` 変数を設定します。
 

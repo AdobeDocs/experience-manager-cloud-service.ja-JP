@@ -1,68 +1,68 @@
 ---
-title: Cloud Acceleration Manager の準備段階
-description: このページでは、Cloud Acceleration Manager の準備段階の概要を説明します。
+title: Cloud Acceleration Manager での準備フェーズ
+description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
 source-git-commit: 970c8131e73f0d5d0a3c623d621d599aba65cfbc
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 11%
+ht-degree: 86%
 
 ---
 
-# Cloud Acceleration Manager の準備段階 {#readiness-phase-cam}
+# Cloud Acceleration Manager での準備フェーズ {#readiness-phase-cam}
 
-Cloud Acceleration Manager でプロジェクトを作成したら、準備段階で現在のAEM実装の評価を開始できます。
+Cloud Acceleration Manager でプロジェクトを作成したら、準備フェーズで現在の AEM 実装の評価を開始できます。
 
-準備段階には、次の内容が含まれます。
+準備フェーズには以下が含まれます。
 
 * [ベストプラクティス分析](#best-practices-analysis)
-* [計画と設定](#planning-setup)
+* [計画とセットアップ](#planning-setup)
 
-次の手順に従って、準備段階に進みます。
+準備フェーズに移動するには、次の手順に従います。
 
 1. プロジェクトカードをクリックして、プロジェクトのランディングページを開きます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing1.png)
 
-1. 次の図に示すように、**準備** セクションに移動します。
+1. 「**準備**」セクションに移動します（下図を参照）。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >詳しくは、 Cloud Acceleration Manager でのプロジェクトの作成と管理を参照してください。
+   >詳しくは、「Cloud Acceleration Manager でのプロジェクトの作成と管理」を参照してください。
 
 ## ベストプラクティス分析カードの使用 {#best-practices-analysis}
 
-次の手順に従って、ベストプラクティス分析カードを使用します。
+ベストプラクティス分析カードを使用するには、次の手順に従います。
 
-1. 「**ベストプラクティス分析**」カードの「**レビュー**」ボタンをクリックします。
+1. **ベストプラクティス分析**&#x200B;カードの「**レビュー**」ボタンをクリックします。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-2.png)
 
-1. 次の手順に従って、ベストプラクティスアナライザー (BPA) をダウンロードします。
+1. ベストプラクティスアナライザー（BPA）をダウンロードするには、次の手順に従います。
 
    >[!NOTE]
    >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、実稼動環境にできる限り近いオーサー環境で BPA を実行することをお勧めします。または、実稼動版のオーサー環境のクローンで実行することもできます。
 
-   1. [ ソフトウェア配布 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
+   1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
 
       >[!NOTE]
-      >[ ベストプラクティスアナライザー ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en#imp-considerations) の使用を参照して、BPA の実行方法を確認してください。
+      >BPA の実行方法については、[ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#imp-considerations)を参照してください。
 
-   1. レポートを CSV 形式で書き出す
+   1. レポートを CSV 形式で書き出します。
 
-1. 「**新しいレポートをアップロード**」をクリックして、CAM で BPA レポートをアップロードします。
+1. 「**新しいレポートをアップロード**」をクリックして、BPA レポートを CAM にアップロードします。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
-   >ブラウザーの匿名モードの場合、レポートをアップロードできません。
+   >ブラウザーの匿名モードの場合は、レポートをアップロードできません。
 
-1. 新しいレポートをアップロードすると、ベストプラクティス分析レポートが表示されます。
+1. 新しいレポートをアップロードしたら、ベストプラクティス分析レポートが表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. CAM のベストプラクティス分析ダッシュボードを確認して確認します。 詳しくは、以下の [ ベストプラクティス分析レポートの確認 ](#analysis-report) の節を参照してください。
+1. CAM のベストプラクティス分析ダッシュボードを確認し、表示内容を検討します。詳しくは、次の[ベストプラクティス分析レポートの確認](#analysis-report)の節を参照してください。
 
    >[!NOTE]
    >新しいレポートをアップロードすると、すべての評価がリセットされます。
@@ -73,41 +73,41 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 
 次の手順に従います。
 
-1. 下の図のように、**印刷プレビュー** アイコンをクリックします。
+1. クリック **印刷プレビュー** アイコンに表示されます。
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. 「**印刷プレビュー**」をクリックすると、新しいタブが開き、印刷可能なプレビューでレポートが表示されます。 「**印刷**」をクリックして、レポートをPDF形式で印刷します。
+1. クリック **印刷プレビュー** 新しいタブが開き、レポートが印刷可能なプレビューで表示されます。 クリック **印刷** をクリックして、レポートをPDF形式で印刷します。
 
    >[!IMPORTANT]
-   >* 上記の機能では、「**PDFとして保存**」オプションが推奨され、サポートされています。
-   >* ブラウザーの印刷ボタンを使用すると、1 ページだけが印刷されます。
+   >* オプション **「名前を付けて保存」PDF** 上記の機能に対しては、をお勧めし、サポートしています。
+   >* ブラウザの印刷ボタンを使用すると、1 ページだけが印刷されます。
 
 
    ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/bpa-printpreview2.png)
 
 ### ベストプラクティス分析レポートの確認 {#analysis-report}
 
-ベストプラクティス分析レポートページで使用できる次のカードを確認します。
+ベストプラクティス分析レポートページで使用可能な以下のカードの情報を検討します。
 
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-bpareport.png)
 
 >[!NOTE]
 > 各カードには、次の機能があります。
->* 各カードをクリックして、関連するタブを開きます。
->* 共有または将来の取得のために、すべてのレポートタブをブックマーク（フィルタリングを含む）
->* 「詳細」アイコンを使用して、各レポートの結果の詳細を表示します
+>* 各カードをクリックして、関連するタブを開く
+>* 共有または後日取得するために、すべてのレポートタブ（フィルタリングを含む）をブックマークする
+>* 詳細アイコンを使用して、各レポートの結果の詳細を表示する
 
 
 #### レポートのプロパティ {#report-properties}
 
-**レポートのプロパティ** カードは、レポートの日付、期間、フィルター、アップロード日、Adobe Experience Manager(AEM) の詳細など、レポートのプロパティに関する情報を提供します。
+**レポートのプロパティ**&#x200B;カードでは、レポートの日付、期間、フィルター、アップロード日、Adobe Experience Manager（AEM）の詳細など、レポートのプロパティに関する情報を提供します。
 
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-properties.png)
 
 #### レポートの概要 {#report-overview}
 
-この **レポートの概要** カードは、次の図に示すように、AEM as a Cloud Serviceへの移行準備状況を評価する際に適用されるレポートの結果と重大度レベルを示します。
+この&#x200B;**レポートの概要**&#x200B;カードでは、AEM as a Cloud Service に移行するための準備状況を評価する際に適用される、レポートの結果と重大度レベルを示します（下図を参照）。
 
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview.png)
 
@@ -115,47 +115,47 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview2.png)
 
-重要度、サブタイプまたはカウントに基づいて、レポートをフィルタリングできます。
+重要度、サブタイプまたはカウントに基づいてレポートをフィルタリングできます。
 
 ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->結果カテゴリと重要度レベルについては、[Best Practices Analyzer レポートの解釈 ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=en) を参照してください。
+>結果カテゴリと重要度レベルについては、[ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja)を参照してください。
 
 #### ベストプラクティス評価 {#best-practices-assessment}
 
-「ベストプラクティスの評価」オプションでは、現在のAEMインスタンスの評価を提供し、AEMのベストプラクティスを採用するための次の手順に関するガイダンスを提供します。 このタブでは、次の情報を確認できます。
+「ベストプラクティス評価」オプションでは、現在の AEM インスタンスの評価と、次の手順で AEM のベストプラクティスを採用するうえでのガイダンスを提供します。このタブでは、次の情報を確認できます。
 
-* AEM Instance の概要
+* AEM インスタンスの概要
 * カスタムコンポーネントとテンプレート
-* その他の所見
+* その他の結果
 * 処理に時間のかかるクエリ
 * メンテナンスタスク
 
 #### 移行の複雑さの評価 {#migration-complexity-assessment}
 
-「移行の複雑さの評価」オプションでは、既存のAEM実装をAEM as a Cloud Serviceに移行する複雑さの評価を提供します。
+「移行の複雑さの評価」オプションでは、既存の AEM 実装を AEM as a Cloud Service に移行する際の複雑さの評価を示します。
 
 このタブでは、次の情報を確認できます。
 
-* AEM Instance の概要
+* AEM インスタンスの概要
 * 評価
-* コンテンツ移行に関する考慮事項
+* コンテンツの移行に関する考慮事項
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
-## 計画および設定カードの使用 {#planning-setup}
+## 「計画とセットアップ」カードの使用 {#planning-setup}
 
-この項では、「計画と設定」アクティビティ・カードを参照します。
+この節では、「計画とセットアップ」アクティビティカードについて説明します。
 
-1. **Planning And Setup** カードの **View** ボタンをクリックします。 このカードには、AEM移行の計画とセットアップに役立つすべての関連コンテンツが含まれています。
+1. **計画とセットアップ**&#x200B;カードの「**表示**」ボタンをクリックします。このカードには、AEM 移行の計画とセットアップに役立つ、すべての関連コンテンツが用意されています。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-view.png)
 
-1. コンテンツカルーセルに、移行ジャーニーのこのフェーズに関連するすべての情報が表示されます。
+1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のあるすべての情報が表示されます。
 
    ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
 ## 次の手順 {#whats-next}
 
-Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を学習したら、次の手順に進んで、[ 実装フェーズ ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en) を参照してください。
+Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を理解したら、次のステップの[実装フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=ja)に進みます。

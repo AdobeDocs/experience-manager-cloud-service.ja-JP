@@ -45,7 +45,7 @@ Experience Manager Assets は、エンタープライズグレードの DAM 機�
 
 Media Library では、次のユースケースをカバーしています。
 
-* [!DNL Adobe Experience Manager Sites] を使用して作成した Web ページに対して、基本的な DAM 機能を提供します。
+* を使用して作成された Web ページに対して、基本的な DAM 機能を提供します。 [!DNL Adobe Experience Manager Sites].
 * [!DNL Adobe Experience Manager Forms] を使用して作成されたアダプティブフォームと通信
 * [!DNL Adobe Experience Manager Screens] を使用して作成されたデジタルスクリーンエクスペリエンス
 * ヘッドレス操作用の [!DNL Assets] HTTP REST API
@@ -71,12 +71,12 @@ Media Library 機能を使用するには、デフォルトの [!DNL Experience 
 * アセットへの注釈を付け
 * コンテンツファインダーを使用した [!DNL Sites] ページへのアセットの追加
 * [!DNL Content Fragments] の使用
-* Sites ライセンスで、[!DNL Content Fragments] および参照されているメディアアセットに HTTP REST および GraphQL API を使用します。
+* HTTP REST および GraphQL API を [!DNL Content Fragments] および参照元のメディアアセット（Sites ライセンスの下）
 * Marketing Cloud 統合.
 * アセット管理ユーザーインターフェイスのカスタマイズと拡張。
 * クエリビルダー (API) にアクセスして検索機能を拡張します。
 * 静的タグを作成します。
-* プロジェクトとタスクの作成
+* プロジェクトとタスクを作成します。
 * アクティビティストリーム（タイムライン）。
 * コメントと注釈。
 
@@ -87,9 +87,9 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 >[!IMPORTANT]
 >
->DAM の高度なユースケースの多くは、[!DNL Experience Manager Assets] で処理されます。Media Library ライセンスでは、Media Library を使用して、記載されているユースケースのみを実行することができます。ユースケースがリストに表示されていない場合は、Media Library ライセンスで使用しないでください。質問がある場合は、カスタマーサポートにお問い合わせください。
+>DAM の高度なユースケースの多くは、[!DNL Experience Manager Assets] で処理されます。Media Library ライセンスでは、Media Library を使用して、記載されているユースケースのみを実行することができます。ユースケースがリストに表示されていない場合は、Media Library ライセンスで使用しないでください。ご不明な点がある場合は、カスタマーサポートにお問い合わせください。
 
-[!DNL Assets] ライセンスのないMedia Libraryにアクセスするには、スマートタグ、[!DNL Asset] リンク、[!DNL Asset] セレクター、一括タグ付け、アセットワークフローの変更、標準の [!DNL Adobe Experience Manager] ユーザーインターフェイスを使用できません。
+スマートタグは使用できません。 [!DNL Asset] リンク [!DNL Asset] セレクター、一括タグ付け、アセットワークフローの変更、標準 [!DNL Adobe Experience Manager] を使用せずにMedia Libraryにアクセスするためのユーザーインターフェイス [!DNL Assets] ライセンス。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

@@ -7,13 +7,13 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # Adobe Target との統合{#integrating-with-adobe-target}
 
-Adobe Experience Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルでターゲット設定と測定をおこない、コンテンツの関連性を高めることができます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
+Adobe Experience Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルでターゲット設定と測定を行い、コンテンツの関連性を高めることができます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
 
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
 * [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
@@ -36,7 +36,7 @@ Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／
 
 ### IMS 設定 {#ims-configuration}
 
-Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html)を参照してください。
+Target を AEM および Launch と適切に統合するには、Launch と Target の両方の IMS 設定が必要です。Launch の IMS 設定は AEM as a Cloud Service で事前に設定されていますが、Target の IMS 設定は、Target のプロビジョニング後に作成する必要があります。Target IMS 設定の作成方法については、 [このビデオ](https://helpx.adobe.com/jp/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html)および[このページ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-ims-adobe-io.html?lang=ja)を参照してください。
 
 ### Adobe Target テナント ID と Adobe Target クライアントコード {#tenant-client}
 
@@ -49,7 +49,7 @@ Adobe Target テナント ID と Adobe Target クライアントコードのフ�
 
 * デフォルトでは、（最初に追加された場合は）「クライアントコード」も「テナント ID」フィールドに自動的にコピーされます。
 * デフォルトのテナント ID 設定を変更するオプションがあります。
-* これにより、バックエンドから Target への呼び出しはテナント ID に基づいておこなわれ、クライアントサイドから Target への呼び出しはクライアントコードに基づいておこなわれます。
+* これにより、バックエンドから Target への呼び出しはテナント ID に基づいて行われ、クライアントサイドから Target への呼び出しはクライアントコードに基づいて行われます。
 
 前述したように、AEM as a Cloud Service では最初のケースが最も一般的です。どちらの場合も、**両方の**&#x200B;フィールドに、要件に応じた正しい情報が含まれていることを確認してください。
 
@@ -134,7 +134,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 ### ビルドとパブリッシュ {#build-publish}
 
-ビルドとパブリッシュの方法については、この[ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html)を参照してください。
+ビルドとパブリッシュの方法については、この[ページ](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-launch-adobe-io.html?lang=ja)を参照してください。
 
 ## Classic とタッチ操作対応 UI の設定の間のコンテンツ構造の変更 {#changes-content-structure}
 

@@ -13,7 +13,7 @@ exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0
 source-git-commit: c956aab4dbbbb7daede3e115616ae923f7a68b90
 workflow-type: tm+mt
 source-wordcount: '789'
-ht-degree: 49%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
-> 検索エンジン最適化（SEO）は、多くのマーケティング担当者にとって重要な課題となっています。その結果、多くの Adobe Experience Manager（AEM）as a Cloud Service プロジェクトで SEO の懸念に対処する必要があります。詳しくは、[SEOとURL管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html)をお読みください。
+> 検索エンジン最適化（SEO）は、多くのマーケティング担当者にとって重要な課題となっています。その結果、多くの Adobe Experience Manager（AEM）as a Cloud Service プロジェクトで SEO の懸念に対処する必要があります。お読みください [SEO および URL 管理のベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html) を参照してください。
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、製品ページとカテゴリページの URL をカスタマイズする高度な設定を提供します。多くの実装では、検索エンジン最適化（SEO）用にこれらの URL をカスタマイズします。次のビデオでは、`UrlProvider` サービスと [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)の機能を設定して、製品ページとカテゴリページの URL をカスタマイズする方法について詳しく説明します。
 
@@ -29,15 +29,15 @@ ht-degree: 49%
 
 ## 設定 {#configuration}
 
-SEO要件と必要に応じて`UrlProvider`サービスを設定するには、プロジェクトで「CIF URL Provider configuration」のOSGI設定を提供する必要があります。
+SEO の要件とニーズに応じて `UrlProvider` サービスを設定するには、プロジェクトで「CIF URL Provider configuration」の OSGI 設定を指定する必要があります。
 
 >[!NOTE]
 >
-> AEM CIFコアコンポーネントのリリース2.0.0以降、URLプロバイダー設定では、1.xリリースで提供されていたフリーテキスト設定可能な形式の代わりに、事前に定義されたURL形式のみが提供されます。 さらに、URL内のデータを渡すためのセレクターの使用は、サフィックスに置き換えられました。
+> AEM CIF コアコンポーネントのリリース 2.0.0 以降では、URL プロバイダーの設定には、1.x リリースで提供されていた設定可能なフリーテキスト形式ではなく、事前に定義された URL 形式のみが使用されます。さらに、セレクターを使用して URL 内のデータを渡すことはなくなり、代わりにサフィックスが使用されます。
 
-### 製品ページのURL形式 {#product}
+### 製品ページの URL 形式 {#product}
 
-製品ページのURLを設定し、次のオプションをサポートします。
+製品ページの URL を設定するもので、次のオプションをサポートしています。
 
 * `{{page}}.html/{{sku}}.html#{{variant_sku}}`（デフォルト）
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
@@ -45,45 +45,45 @@ SEO要件と必要に応じて`UrlProvider`サービスを設定するには、�
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-[Venia参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合：
+[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
 
-* `{{page}}` は、  `/content/venia/us/en/products/product-page`
-* `{{sku}}` は、製品のskuに置き換えられます（例： ）。  `VP09`
-* `{{url_key}}` は、製品のプロパティに置 `url_key` き換えられます(例：  `lenora-crochet-shorts`
-* `{{url_path}}` は製品のに置き換えら `url_path`れます（例： ）。  `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` は、現在選択されているバリアントに置き換えられます(例：  `VP09-KH-S`
+* `{{page}}` は `/content/venia/us/en/products/product-page` に置き換えられます
+* `{{sku}}` は製品の SKU（例：`VP09`）に置き換えられます
+* `{{url_key}}` は製品の `url_key` プロパティ（例：`lenora-crochet-shorts`）に置き換えられます
+* `{{url_path}}` は製品の `url_path`（例：`venia-bottoms/venia-pants/lenora-crochet-shorts`）に置き換えられます
+* `{{variant_sku}}` は、現在選択されているバリアント（例：`VP09-KH-S`）に置き換えられます
 
-上記の例のデータでは、デフォルトのURL形式を使用して書式設定された製品バリアントURLは`/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`のようになります。
+上記のサンプルデータでは、デフォルトの URL 形式を使用して設定された製品バリアント URL は `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` のようになります。
 
-### カテゴリページのURL形式 {#product-list}
+### カテゴリページの URL 形式 {#product-list}
 
-カテゴリまたは製品リストページのURLを設定し、次のオプションをサポートします。
+カテゴリページまたは製品リストページの URL を設定するもので、次のオプションをサポートしています。
 
 * `{{page}}.html/{{url_path}}.html`（デフォルト）
 * `{{page}}.html/{{url_key}}.html`
 
-[Venia参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合：
+[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の場合は次のとおりです。
 
-* `{{page}}` は、  `/content/venia/us/en/products/category-page`
-* `{{url_key}}` は、カテゴリのプロパティに置き換えられま `url_key` す。
-* `{{url_path}}` は、カテゴリの  `url_path`
+* `{{page}}` は `/content/venia/us/en/products/category-page` に置き換えられます
+* `{{url_key}}` はカテゴリの `url_key` プロパティに置き換えられます
+* `{{url_path}}` はカテゴリの `url_path` に置き換えられます
 
-上記の例のデータでは、デフォルトのURL形式を使用して書式設定されたカテゴリページのURLは`/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`のようになります。
+上記のサンプルデータでは、デフォルトの URL 形式を使用して設定されたカテゴリページ URL は `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html` のようになります。
 
 >[!NOTE]
 > 
-> `url_path`は、製品またはカテゴリの上位層の`url_keys`と、製品またはカテゴリの`url_key`を`/`スラッシュで区切った連結です。
+> `url_path` は、製品またはカテゴリの上位層の `url_keys` と製品またはカテゴリの `url_key` をスラッシュ `/` で区切って連結したものです。
 
-## カスタムURL形式 {#custom-url-format}
+## カスタム URL 形式 {#custom-url-format}
 
-カスタムURL形式をプロジェクトに提供するには、[`UrlFormat`インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)を実装し、カテゴリページまたは製品ページのURL形式として使用してOSGIサービスとして実装を登録します。 `UrlFormat#PROP_USE_AS`サービスプロパティは、置き換える設定済みの定義済み形式を示します。
+カスタム URL 形式を指定するには、プロジェクトで [`UrlFormat` インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)を実装し、それをカテゴリページまたは製品ページの URL 形式として使用して、実装を OSGi サービスとして登録します。`UrlFormat#PROP_USE_AS` サービスプロパティは、置き換えの対象となる設定された事前定義済み形式を示します。
 
-* `useAs=productPageUrlFormat`は、設定済みの製品ページのurl形式を置き換えます。
-* `useAs=categoryPageUrlFormat`は、設定済みのカテゴリページのurl形式を置き換えます。
+* 設定済みの製品ページ URL 形式は `useAs=productPageUrlFormat` に置き換えられます
+* 設定済みのカテゴリページ URL 形式は `useAs=categoryPageUrlFormat` に置き換えられます
 
-OSGIサービスとして登録されている`UrlFormat`の実装が複数ある場合、サービスランキングの高い実装が、サービスランキングの低い実装に置き換えられます。
+`UrlFormat` の複数の実装が OSGi サービスとして登録されている場合は、サービスランキングの低い方の実装が、サービスランキングの高い方の実装に置き換えられます。
 
-`UrlFormat`は、指定されたパラメーターのマップからURLを作成し、同じパラメーターのマップを返すURLを解析するメソッドのペアを実装する必要があります。 パラメーターは前述と同じです。カテゴリに対してのみ、追加の`{{uid}}`パラメーターが`UrlFormat`に提供されます。
+`UrlFormat` は、指定されたパラメーターマップから URL を作成するメソッドと、URL を解析して同じパラメーターマップを返すメソッドをペアで実装する必要があります。パラメーターは前述と同じです。カテゴリの場合のみ、`{{uid}}` パラメーターが `UrlFormat` に追加されます。
 
 ## Sling マッピングとの結合 {#sling-mapping}
 
@@ -104,5 +104,5 @@ URL の書き換えは、AEM Dispatcher HTTP サーバーで `mod_rewrite` モ�
 ## その他のリソース
 
 * [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=ja)
 * [Sling マッピング](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

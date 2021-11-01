@@ -1,31 +1,31 @@
 ---
-title: Dispatcherツールを使用した検証とデバッグ
-description: Dispatcherツールを使用した検証とデバッグ
+title: Dispatcher ツールを使用した検証とデバッグ
+description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Dispatcherツールを使用した検証とデバッグ {#Dispatcher-in-the-cloud}
+# Dispatcher ツールを使用した検証とデバッグ {#Dispatcher-in-the-cloud}
 
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->クラウド内のDispatcherとDispatcherツールのダウンロード方法について詳しくは、クラウド内の[Dispatcherページを参照してください。 ](/help/implementing/dispatcher/disp-overview.md)Dispatcher設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
+>クラウド内の Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md) を参照してください。Dispatcher 設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
 
-次の節では、フレキシブルモードのファイル構造、ローカル検証、デバッグ、およびレガシーモードからフレキシブルモードへの移行について説明します。
+以降の節では、フレキシブルモードのファイル構造、ローカル検証、デバッグ、レガシーモードからフレキシブルモードへの移行について説明します。
 
-この記事では、プロジェクトのDispatcher設定に`opt-in/USE_SOURCES_DIRECTLY`ファイルが含まれていることを前提としています。これにより、SDKとランタイムは、従来のモードと比較して、設定を検証およびデプロイし、ファイルの数とサイズに関する制限をなくします。
+ここでは、プロジェクトの Dispatcher 設定に `opt-in/USE_SOURCES_DIRECTLY` ファイルが含まれていることを前提としています。これにより、ファイルの数とサイズに関する制限がなくなり、SDK とランタイムによる設定の検証とデプロイが、レガシーモードと比べて改善されます。
 
-したがって、Dispatcher設定に前述のファイルが含まれていない場合は、 [レガシーモードからフレキシブルモードへの移行](#migrating)の節で説明されているように、レガシーモードからフレキシブルモードへ移行することを&#x200B;**強くお勧めします。**
+したがって、Dispatcher 設定に前述のファイルが含まれていない場合は、[レガシーモードからフレキシブルモードへの移行](#migrating)の節の説明に従って、レガシーモードからフレキシブルモードへ移行することを&#x200B;**強くお勧め**&#x200B;します。
 
 ## ファイル構造 {#flexible-mode-file-structure}
 
-プロジェクトのDispatcherサブフォルダーの構造は次のとおりです。
+プロジェクトの Dispatcher サブフォルダーの構造は次のとおりです。
 
 ```bash
 ./
@@ -85,7 +85,7 @@ ht-degree: 67%
 
 * `conf.d/variables/custom.vars`
 
-このファイルは、`.vhost` ファイル内からインクルードされます。この場所に、Apache変数用の定義を追加できます。
+このファイルは、`.vhost` ファイル内からインクルードされます。Apache 変数用の定義をこの場所に追加できます。
 
 * `conf.d/variables/global.vars`
 
@@ -113,7 +113,7 @@ ht-degree: 67%
 
 * `opt-in/USE_SOURCES_DIRECTLY`
 
-このファイルにより、より柔軟なDispatcher設定が可能になり、ファイルの数とサイズに関する以前の制限がなくなります。 また、SDKとランタイムが、より適切な方法で設定を検証およびデプロイします。
+このファイルにより、より柔軟な Dispatcher 設定が可能になり、ファイルの数とサイズに関する以前の制限がなくなります。また、SDK とランタイムによる設定の検証とデプロイも改善されます。
 
 上記のファイルは、以下に示す不変設定ファイルを参照します。不変設定ファイルに対する変更は、クラウド環境の Dispatcher によって処理されません。
 
@@ -167,14 +167,14 @@ ht-degree: 67%
 
 デフォルトのホストグロビングです。標準プロジェクトに適しています。カスタマイズが必要な場合は、`virtualhosts.any` を変更します。**すべての**&#x200B;受信リクエストに一致することから、カスタマイズには、デフォルトのホストグロビングをインクルードしないでください。
 
-## サポートされるApacheモジュール {#apache-modules}
+## サポートされている Apache モジュール {#apache-modules}
 
-[サポートされているApacheモジュール](/help/implementing/dispatcher/disp-overview.md#supported-directives)を参照してください。
+[サポートされている Apache モジュール](/help/implementing/dispatcher/disp-overview.md#supported-directives)を参照してください。
 
 ## ローカル検証 {#local-validation-flexible-mode}
 
 >[!NOTE]
->以下の節では、MacまたはLinuxバージョンのSDKを使用するコマンドについて説明しますが、Windows SDKも同様の方法で使用できます。
+>以下では、Mac バージョンまたは Linux バージョンの SDK を使用した場合のコマンドについて説明しますが、Windows バージョンの SDK の場合でも同様の方法で使用できます。
 
 `validate.sh` スクリプトを次のように使用します。
 
@@ -214,19 +214,19 @@ no immutable file has been changed - check is SUCCESSFUL
 Phase 3 finished
 ```
 
-スクリプトには次の3つのフェーズがあります。
+スクリプトには次の 3 つのフェーズがあります。
 
-1. バリデーターを実行します。 設定が有効でない場合、スクリプトは失敗します。
-2. `httpd -t`コマンドを実行して、Apache httpdが起動するように構文が正しいかどうかをテストします。 テストが成功した場合は、設定をデプロイする準備が整っています.
+1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
+2. Apache httpd を起動できるように、`httpd -t` コマンドを実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています.
 3. 「[ファイル構造](##flexible-mode-file-structure)」節で説明されているようにで不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。
 
-Cloud Managerのデプロイメント中には、`httpd -t`構文チェックも実行され、エラーがCloud Managerの`Build Images step failure`ログに記録されます。
+Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
-### フェーズ1 {#first-phase}
+### フェーズ 1 {#first-phase}
 
 ディレクティブが許可リストに登録されていない場合、ツールはエラーをログに記録し、ゼロ以外の終了コードを返します。また、`conf.dispatcher.d/enabled_farms/*.farm` のパターンに合うすべてのファイルをさらにスキャンし、次の内容を確認します。
 
-* `/glob`を介した許可を使用するフィルタールールは存在しません（詳しくは、 [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)を参照してください）。
+* `/glob` 経由の許可を使用するフィルタールールが存在しないこと（詳しくは、[CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) を参照）。
 * 管理機能が公開されないこと。例えば、`/crx/de or /system/console` などのパスへのアクセス。
 
 検証ツールは、許可リストに登録されていない Apache ディレクティブの使用禁止を報告するのみということに注意してください。Apache 設定の構文や意味の問題は報告されません。この情報は、実行中の環境の Apache モジュールでのみ利用できます。
@@ -313,10 +313,9 @@ Apache 仮想ホスト設定には、インクルードとして指定できる 
 
 **非推奨の設定レイアウトを検出したので互換モードを有効にします**
 
-このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは後方向に対して引き続きサポートされますが、
-互換性がある場合は、新しいレイアウトに切り替える必要があります。
+このメッセージは、非推奨（廃止予定）のバージョン 1 レイアウトが設定に含まれ、完全な Apache 設定と `ams_` プレフィックス付きのファイルが含まれていることを示します。これは下位互換性のために引き続きサポートされますが、新しいレイアウトに切り替える必要があります。
 
-第1段階は、ラッパー`validate.sh`スクリプトとは異なり、**個別に**&#x200B;実行することもできます。
+フェーズ 1 は、ラッパースクリプト `validate.sh` からではなく、**個別に実行**&#x200B;することもできます。
 
 Maven アーティファクトまたは `dispatcher/src` サブディレクトリに対して実行すると、検証エラーが報告されます。
 
@@ -341,20 +340,20 @@ Cloud manager validator 2.0.xx
 
 このエラーを回避するには、Windows エクスプローラでパスをコピーし、コマンドプロンプトで `cd` コマンドを使用してそのパスに貼り付けます。
 
-### フェーズ2 {#second-phase}
+### フェーズ 2 {#second-phase}
 
-このフェーズでは、画像でDockerを起動してApacheの構文をチェックします。 Dockerはローカルにインストールする必要がありますが、AEMを実行する必要はありません。
+このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
 
 >[!NOTE]
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
-このフェーズは、`bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`を介して個別に実行することもできます。
+このフェーズは、`bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080` を使用して独立に実行することもできます。
 
-Cloud Managerのデプロイメント中にも`httpd -t`構文チェックが実行され、エラーがCloud Managerビルド画像のステップのエラーログに記録されます。
+Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の「イメージのビルド」ステップのエラーログに記録されます。
 
-### フェーズ3 {#third-phase}
+### フェーズ 3 {#third-phase}
 
-このフェーズでエラーが発生した場合は、Adobeが1つ以上の不変ファイルを変更したことを示しているので、対応する不変ファイルをSDKの`src`ディレクトリに配信された新しいバージョンに置き換える必要があります。 次のログサンプルは、この問題を示しています。
+このフェーズでエラーが発生した場合は、アドビが 1 つ以上の不変ファイルを変更したことを示しているので、対応する不変ファイルを、SDK の `src` ディレクトリで提供されている新しいバージョンに置き換える必要があります。以下のログサンプルは、この問題を示しています。
 
 ```
 Phase 3: Immutability check
@@ -373,13 +372,13 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
   
 ```
 
-このフェーズは、`bin/docker_immutability_check.sh src/dispatcher`を介して個別に実行することもできます。
+このフェーズは、`bin/docker_immutability_check.sh src/dispatcher` を使用して独立に実行することもできます。
 
 ## Apache および Dispatcher 設定のデバッグ {#debugging-apache-and-dispatcher-configuration}
 
-Apache Dispatcherは`./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080`を使用してローカルで実行できます。
+`./bin/docker_run.sh src/dispatcher docker.for.mac.localhost:4503 8080` を使用すれば、Apache Dispatcher をローカルで実行できます。
 
-前述のとおり、Dockerはローカルにインストールする必要があり、AEMを実行する必要はありません。 Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
+前述のとおり、Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
 次の方法を使用して、Dispatcher モジュールのログ出力を増やし、`RewriteRule` 評価の結果をローカル環境とクラウド環境の両方で確認できます。
 
@@ -407,7 +406,7 @@ Apache Dispatcherは`./bin/docker_run.sh src/dispatcher docker.for.mac.localhost
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`
+Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。（例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`）。
 
 クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
 
@@ -472,15 +471,15 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## レガシーモードからフレキシブルモードへの移行 {#migrating}
 
-Cloud Manager 2021.7.0リリースでは、新しいCloud Managerプログラムが、[AEMアーキタイプ28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)以降（**opt-in/USE_SOURCES_DIRECTLY**&#x200B;ファイルを含む）でMavenプロジェクト構造を生成します。 これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限がなくなり、SDKとランタイムが設定を検証およびデプロイする際にも改善されました。 Dispatcher設定にこのファイルがない場合は、移行することを強くお勧めします。 次の手順を実行して、安全な切り替えを確実におこないます。
+Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラムは、[AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降を使用した Maven プロジェクト構造を生成します。これには **opt-in/USE_SOURCES_DIRECTLY** ファイルが含まれています。これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限事項がなくなるので、SDK とランタイムによる設定の検証とデプロイも改善されます。Dispatcher 設定にこのファイルがない場合は、移行することを強くお勧めします。安全な移行を確実に行うには、次の手順に従います。
 
-1. **ローカルテスト。** 最新のDispatcherツールSDKを使用して、フォルダーとファイルを追加しま `opt-in/USE_SOURCES_DIRECTLY`す。この記事の「ローカル検証」の手順に従って、Dispatcherがローカルで動作するかどうかをテストします。
+1. **ローカルテスト：**&#x200B;最新の Dispatcher ツール SDKを使用して、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。この記事の「ローカル検証」の手順に従って、Dispatcher がローカルで動作するかどうかをテストします。
 2. **クラウド開発テスト：**
-   * 実稼動以外のパイプラインでデプロイされたGitブランチに、ファイル`opt-in/USE_SOURCES_DIRECTLY`をCloud開発環境にコミットします。
-   * Cloud Managerを使用して、クラウド開発環境にデプロイします。
-   * 十分にテストします。 上位の環境に変更をデプロイする前に、ApacheおよびDispatcherの設定が期待どおりに動作することを検証することが重要です。 カスタム設定に関連するすべての動作を確認します。 デプロイされたDispatcher設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを作成します。
-3. **実稼動環境へのデプロイ：**
-   * 実稼動パイプラインによってクラウドのステージ環境および実稼動環境にデプロイされたGitブランチにファイル`opt-in/USE_SOURCES_DIRECTLY`をコミットします。
-   * Cloud Managerを使用してステージングにデプロイします。
-   * 十分にテストします。 上位の環境に変更をデプロイする前に、ApacheおよびDispatcherの設定が期待どおりに動作することを検証することが重要です。 カスタム設定に関連するすべての動作を確認します。 デプロイされたDispatcher設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを作成します。
-   * Cloud Managerを使用して、実稼動環境へのデプロイメントを続行します。
+   * 実稼動以外のパイプラインでクラウドの開発環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
+   * Cloud Manager を使用して、クラウド開発環境にデプロイします。
+   * 十分にテストします。変更内容を上位の環境にデプロイする前に、Apache および Dispatcher 設定が想定どおりに動作することを検証することが不可欠です。カスタム設定に関係するすべての動作を確認します。デプロイした Dispatcher 設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを提出します。
+3. **実稼動へのデプロイ：**
+   * 実稼動パイプラインでクラウドのステージング環境および実稼動環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
+   * Cloud Manager を使用してステージング環境にデプロイします。
+   * 十分にテストします。変更内容を上位の環境にデプロイする前に、Apache および Dispatcher 設定が想定どおりに動作することを検証することが不可欠です。カスタム設定に関係するすべての動作を確認します。デプロイした Dispatcher 設定がカスタム設定を反映していないと思われる場合は、カスタマーサポートチケットを提出します。
+   * Cloud Manager を使用して、実稼動環境へのデプロイメントを続行します。

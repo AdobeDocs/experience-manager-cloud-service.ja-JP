@@ -94,7 +94,7 @@ ht-degree: 96%
          + [MSM のベストプラクティス](administering/msm/best-practices.md)
          + [トラブルシューティングと FAQ](administering/msm/troubleshooting.md)
       + 翻訳 {#translation}
-         + [翻訳ドキュメントのジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
+         + [翻訳ドキュメントジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/translation/overview.html)
          + [多言語サイトのコンテンツの翻訳](administering/translation/overview.md)
          + [翻訳するコンテンツの準備](administering/translation/preparation.md)
          + [翻訳プロジェクトの管理](administering/translation/managing-projects.md)

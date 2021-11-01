@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ UI テストは、Java で記述された HTTP テストのカスタム機能テ
 
 ### 顧客オプトイン {#customer-opt-in}
 
-UI テストを作成して実行するには、UI テスト用の maven サブモジュール（UI テストサブモジュールの pom.xml ファイルの隣）の下のコードリポジトリにファイルを追加して「オプトイン」し、構築された `tar.gz` ファイルのルートにこのファイルがあることを確認する必要があります。
+UI テストを作成して実行するには、UI テスト用の maven サブモジュール（UI テストサブモジュールの pom.xml ファイルの隣）の下のコードリポジトリーにファイルを追加して「オプトイン」し、構築された `tar.gz` ファイルのルートにこのファイルがあることを確認する必要があります。
 
 *ファイル名*：`testing.properties`
 
@@ -66,17 +66,17 @@ UI テストを作成して実行するには、UI テスト用の maven サブ�
 
 これが構築された `tar.gz` ファイルに含まれていない場合、UI テストの構築と実行はスキップされます
 
-を追加するには `testing.properties` ビルドアーティファクトに、 `include` 陳述 `assembly-ui-test-docker-context.xml` ファイル（ UI テストサブモジュール内）:
+構築されたアーティファクトに `testing.properties` ファイルを追加するには、（UI テストサブモジュール内の）`assembly-ui-test-docker-context.xml` ファイルに次の `include` ステートメントを追加します。
 
-    &quot;&#39;
+    ```
     [...]
     &lt;includes>
     &lt;include>Dockerfile&lt;/include>
     &lt;include>wait-for-grid.sh&lt;/include>
-    &lt;include>testing.properties&lt;/include> &lt;!>- Cloud Manager のオプトインテストモジュール —>
+    &lt;include>testing.properties&lt;/include> &lt;! - opt-in test module in Cloud Manager -->
     &lt;/includes>
     [...]
-    &quot;&#39;
+    ```
 
 >[!NOTE]
 >2021 年 2 月 10 日より前に作成された実稼動用パイプラインの場合、ここで説明した UI テストを使用するには、更新が必要となります。つまり、変更がない場合でも、実稼動パイプラインを編集し、UI から「**保存**」をクリックする必要があります。

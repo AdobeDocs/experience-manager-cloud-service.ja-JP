@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 アセットマイクロサービスは、クラウドネイティブアプリケーション（「ワーカー」とも呼ばれる）を使用して、アセットの拡張性と回復性の高い処理を実現します。アドビは、様々なアセットタイプや処理オプションを最適に処理するためのサービスを管理します。
 
-アセットマイクロサービスを使用すると、以前のバージョンの [!DNL Experience Manager] よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、PSD形式とPSB形式のサムネール抽出は可能になりましたが、以前は[!DNL ImageMagick]などのサードパーティソリューションが必要でした。
+アセットマイクロサービスを使用すると、以前のバージョンの [!DNL Experience Manager] よりも多くの形式をカバーする[様々なファイルタイプ](/help/assets/file-format-support.md)を追加設定なしで処理できます。例えば、PSD形式と PSB 形式のサムネール抽出が可能になりましたが、以前は次のようなサードパーティソリューションが必要でした。 [!DNL ImageMagick].
 
 アセットの処理は、**[!UICONTROL 処理プロファイル]**&#x200B;の設定に応じて異なります。Experience Manager には基本的な初期設定が用意されており、管理者は特定のアセット処理設定を追加できます。管理者は、オプションのカスタマイズを含む、後処理ワークフローの設定を作成および管理できます。ワークフローのカスタマイズを使用すると、デベロッパーはデフォルトのオファーを拡張できます。
 
@@ -75,7 +75,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 1. 管理者は、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;にアクセスします。「**[!UICONTROL 作成]**」をクリックします。
 1. フォルダーに適用する際に、プロファイルを一意に識別するのに役立つ名前を指定します。
-1. FPOレンディションを生成するには、「**[!UICONTROL 画像]**」タブで、「**[!UICONTROL FPOレンディションを作成]**」を有効にします。 1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
+1. FPO レンディションを生成するには、「**[!UICONTROL 画像]**」タブで「**[!UICONTROL FPO レンディションを作成]**」を有効にします。1 ～ 100 の&#x200B;**[!UICONTROL 画質]**&#x200B;値を入力します。
 1. 他のレンディションを生成するには、「**[!UICONTROL 新規追加]**」をクリックし、次の情報を入力します。
 
    * 各レンディションのファイル名。
@@ -160,10 +160,10 @@ The following video demonstrates the usefulness and usage of standard profile.
 次のいずれかの方法を使用して、処理プロファイルをフォルダーに適用します。
 
 * 管理者が、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
-* ユーザーは、Assetsユーザーインターフェイスでフォルダーを選択し、**[!UICONTROL プロパティ]**&#x200B;アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL アセット処理]**」タブをクリックして、[!UICONTROL 処理プロファイル]リストで適切な処理プロファイルを選択します。 変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
+* Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL アセット処理]**」タブをクリックし、[!UICONTROL 処理プロファイル]リストでそのフォルダーに適した処理プロファイルを選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
    ![「アセットのプロパティ」タブからのフォルダーへの処理プロファイルの適用](assets/folder-properties-processing-profile.png)
 
-* ユーザーは、Assetsユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用し、上部にあるオプションから「![アセット再処理アイコン](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL アセットを再処理]** 」オプションを選択できます。
+* Assets ユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用し、上部にあるオプションから![アセット再処理アイコン](assets/do-not-localize/reprocess-assets-icon.png)「**[!UICONTROL アセットを再処理]**」オプションを選択できます。
 
 >[!TIP]
 >
@@ -183,7 +183,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 後処理ワークフロー {#post-processing-workflows}
 
-処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。後処理を使用すると、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
+処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。後処理では、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
 
 後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、[!DNL Experience Manager] で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動で追加してワークフローをトリガーする必要はありません。次に例を示します。
 
@@ -204,35 +204,35 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 後処理ワークフローモデルは、通常の [!DNL Experience Manager] ワークフローモデルです。リポジトリーの場所やアセットタイプごとに異なる処理が必要な場合は、異なるモデルを作成します。
 
-必要に応じて処理手順を追加します。 サポートされているステップと、カスタム実装されたワークフローステップの両方を使用できます。
+必要に応じて処理手順を追加します。サポートされているステップのほか、カスタム実装されたワークフローステップも使用できます。
 
 各後処理ワークフローの最後の手順が `DAM Update Asset Workflow Completed Process` であることを確認します。最後の手順は、アセットの処理が完了したことを Experience Manager が確実に把握できるようにするのに役立ちます。
 
 ### 後処理ワークフローの実行の設定 {#configure-post-processing-workflow-execution}
 
-アセットマイクロサービスがアップロードされたアセットの処理を完了したら、後処理ワークフローを定義して、アセットをさらに処理できます。 ワークフローモデルを使用して後処理を設定するには、次のいずれかを実行します。
+アセットマイクロサービスがアップロードされたアセットの処理を完了したら、後処理ワークフローを定義して、アセットをさらに処理できます。ワークフローモデルを使用して後処理を設定するには、次のいずれかを実行します。
 
-* [フォルダーのプロパティにワークフローモデルを適用します](#apply-workflow-model-to-folder)。
-* [Custom Workflow Runnerサービスを設定します](#configure-custom-workflow-runner-service)。
+* [フォルダーのプロパティにワークフローモデルを適用する](#apply-workflow-model-to-folder)。
+* [Custom Workflow Runner サービスを設定する](#configure-custom-workflow-runner-service)。
 
-#### フォルダーへのワークフローモデルの適用 {#apply-workflow-model-to-folder}
+#### フォルダーにワークフローモデルを適用する {#apply-workflow-model-to-folder}
 
-一般的な後処理の使用例の場合は、メソッドを使用してワークフローをフォルダーに適用することを検討してください。 フォルダー[!UICONTROL Properties]にワークフローモデルを適用するには、次の手順に従います。
+一般的な後処理のユースケースでは、メソッドを使用してワークフローをフォルダーに適用することを検討してください。フォルダーの[!UICONTROL プロパティ]にワークフローモデルを適用するには、次の手順に従います。
 
-1. ワークフローモデルを作成する.
+1. ワークフローモデルを作成します。
 1. フォルダーを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をクリックして、「**[!UICONTROL アセット処理]**」タブをクリックします。
 1. 「**[!UICONTROL 自動開始ワークフロー]**」で、必要なワークフローを選択し、ワークフローのタイトルを指定して、変更を保存します。
 
-   ![「プロパティ」でフォルダーに後処理ワークフローを適用する](assets/post-processing-profile-workflow-for-folders.png)
+   ![後処理ワークフローをフォルダのプロパティに適用する](assets/post-processing-profile-workflow-for-folders.png)
 
-#### Custom Workflow Runnerサービスの設定 {#configure-custom-workflow-runner-service}
+#### Custom Workflow Runner サービスの設定 {#configure-custom-workflow-runner-service}
 
-フォルダーにワークフローを適用することで容易に満たすことができない高度な設定に対して、カスタムワークフローランナーサービスを設定できます。 例えば、正規表現を使用するワークフローなどです。 Adobe CQ DAM Custom Workflow Runner(`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`)はOSGiサービスです。 設定には、次の2つのオプションが用意されています。
+フォルダーにワークフローを適用することでは実現できない高度な設定に対しては、Custom Workflow Runner サービスを設定できます。例えば、正規表現を使用するワークフローなどです。Adobe CQ DAM Custom Workflow Runner（`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`）は OSGi サービスです。設定には、次の 2 つのオプションが用意されています。
 
-* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。コロンを使用してパスとモデルを区切ります。 単純なリポジトリパスがサポートされています。 これらを`/var`パスのワークフローモデルにマッピングします。 例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
+* パスによる後処理ワークフローの設定（`postProcWorkflowsByPath`）：異なるリポジトリーパスに基づいて、複数のワークフローモデルをリストアップできます。コロンを使用してパスとモデルを区切ります。単純なリポジトリーパスがサポートされています。これらを `/var` パスのワークフローモデルにマッピングします。例：`/content/dam/my-brand:/var/workflow/models/my-workflow`
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
 
-OSGi設定のデプロイ方法については、[ [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
+OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
 
 ## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 

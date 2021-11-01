@@ -18,13 +18,13 @@ ht-degree: 100%
 AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年 3 月 11 日です。
 
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 ### 新機能 {#what-is-new}
 
 * [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージが表示され、UI を使用してセルフサービス方式で操作できるようになります。
 
-* 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下をおこなえるようになりました。
+* 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下を行えるようになりました。
    * Assets を使用している既存のプログラムに Sites サイトソリューションを追加する（またはその逆）。
    * Sites と Assets の両方を使用している既存のプログラムから Sites または Assets を削除する。
    * 使用されていない 2 つ目のソリューション使用権限を既存のプログラムに追加するか、新しいプログラムとして追加する。

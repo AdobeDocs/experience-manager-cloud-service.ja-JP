@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1769'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターで [ エイリアス ](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) によってアクセスされたページは公開できません。 エディターの「公開」オプションは、実際のパスからアクセスしたページでのみ使用できます。
+>アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで公開できません。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールからの公開 {#publishing-from-the-console}
 
@@ -113,7 +113,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 #### 公開を管理 {#manage-publication}
 
-**「公** 開を管理」には、「クイック公 **開」よりも多くのオプションが用意されています**。子ページの追加、参照のカスタマイズ、適用可能なワークフローの開始、後日公開するオプションの提供が可能です。
+**公開を管理**&#x200B;には、**クイック公開**&#x200B;よりも多くのオプションがあります。子ページを含めたり、参照をカスタマイズしたり、使用可能なワークフローを開始したり、後日公開するためのオプションを提供したりします。
 
 公開を管理を使用してページを公開または非公開にするには、次の手順を実行します。
 
@@ -123,7 +123,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;では、次のことができます。
 
-   * **動作**
+   * **アクション**
 
       選択したページの公開または非公開を選択する。
 
@@ -148,13 +148,13 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    公開を管理ウィザードを開始する前に選択し忘れた場合は、「**コンテンツを追加**」ボタンを使用して、公開するページのリストにページを追加できます。
 
-   「**コンテンツを追加**」ボタンを選択すると、[ パスブラウザー ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser) が開き、コンテンツを選択できます。
+   「**コンテンツを追加**」ボタンを選択すると、[パスブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#path-browser)が開き、コンテンツを選択できます。
 
    必要なページを選択し、「**選択**」をクリックしてコンテンツをウィザードに追加するか、「**キャンセル**」をクリックして選択をキャンセルして、ウィザードに戻ります。
 
    **選択範囲を削除**
 
-   ウィザードに戻ると、リスト内の項目を選択して、選択から削除できます。
+   ウィザードに戻ると、リストの項目を選択して、選択項目から削除できます。
 
    ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -176,16 +176,16 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    >[!NOTE]
    >
-   >[ ツリーの公開と非公開 ](#publishing-and-unpublishing-a-tree) を参照してください。
+   >[ツリーの公開と非公開](#publishing-and-unpublishing-a-tree)を参照してください。
 
-   「**子を含める**」をクリックすると、次の操作を行うためのダイアログボックスが開きます。
+   「**子を含める**」をクリックすると、次のことを行えるダイアログボックスが開きます。
 
    * **子を含める**
    * **直近の子のみを含める**
    * **変更されたページのみを含める**
    * **既に公開済みのページのみを含める**
 
-   必要なオプションを有効にし、**OK** で確定して、選択オプションに基づいて公開または非公開にするページのリストに子ページを追加します。 「**キャンセル**」をクリックして選択をキャンセルし、ウィザードに戻ります。
+   必要なオプションを有効にし、「**OK**」で確定すると、選択したオプションに基づいて、公開または非公開にするページのリストに子ページが追加されます。「**キャンセル**」をクリックすると、選択がキャンセルされ、ウィザードに戻ります。
 
    ![公開を管理での子の包含](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
@@ -224,7 +224,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターで [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) によってアクセスされたページを非公開にすることはできません。 エディターの「公開」オプションは、実際のパスからアクセスしたページでのみ使用できます。
+>アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで非公開にすることはできません。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールから非公開にする {#unpublishing-from-the-console}
 
@@ -233,7 +233,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 1. サイトコンソールで 1 つまたは複数のページを選択し、「**公開を管理**」ボタンをクリックします。
 1. **公開を管理**&#x200B;ウィザードが起動します。最初の手順の&#x200B;**オプション**&#x200B;で、デフォルトオプションの&#x200B;**公開**&#x200B;の代わりに&#x200B;**非公開**&#x200B;を選択します。
 
-   ![非公開 — オプション](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
+   ![非公開 - オプション](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
    後で公開することを選択するとこのバージョンのページを公開するワークフローが指定した時間に開始されるのと同じように、後でアクティベートを解除することを選択すると、選択したページを非公開にするワークフローが特定の時間に開始されます。
 
@@ -243,7 +243,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 1. 非公開の操作を完了するには、[ページを公開する](#manage-publication)場合と同様にウィザードを続行します。
 
-   ![非公開 — 範囲](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
+   ![非公開 - 範囲](/help/sites-cloud/authoring/assets/publishing-unpublish-scope.png)
 
 ## ツリーの公開と非公開 {#publishing-and-unpublishing-a-tree}
 
@@ -257,18 +257,18 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
    ![公開を管理でのページ選択](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. **子を含める** ダイアログで、次の操作を行います。
+1. **子を含める**&#x200B;ダイアログで、次の操作を行います。
 
-   * **子を含める** を選択します。
-   * **直近の子のみを含める**
-   * **既に公開済みのページのみを含める** を選択解除します。
-   * **必要に応じて、変更されたページのみを含める**
+   * 「**子を含める**」を選択する
+   * 「**直近の子のみを含める**」を選択解除する
+   * 「**既に公開済みのページのみを含める**」を選択解除する
+   * **変更されたページのみを含める**&#x200B;を必要に応じて設定する
 
-   これらのオプションはデフォルトで選択されているので、忘れずに設定しておく必要があります。 **OK** で選択を確定し、コンテンツを公開/非公開に追加します。
+   これらのオプションは、デフォルトで選択されているので、忘れずに設定する必要があります。「**OK**」をクリックして選択して確定すると、コンテンツが公開／非公開に追加されます。
 
-   ![ツリーパブリッシュの子を含める](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
+   ![ツリー公開に子を含める](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
-1. **公開を管理** ウィザードで、ページを追加したり、選択したページを削除したりして、選択をさらにカスタマイズできます。
+1. **公開を管理**&#x200B;ウィザードで、ページを追加したり選択から削除したりして、選択をさらにカスタマイズできます。
 
    「**公開済みの参照**」オプションを使用して、公開する参照を確認することもできます。
 

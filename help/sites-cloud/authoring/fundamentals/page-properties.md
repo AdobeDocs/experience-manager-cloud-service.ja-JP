@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 93%
    > 関連する自動レプリケーションの設定方法の詳細は、「[オン／オフ時間 - トリガー構成](/help/operations/replication.md#on-and-off-times-trigger-configuration)」を参照してください。
 
    >[!NOTE]
-   >**オンタイム** または **オフタイム** が過去に設定され、自動レプリケーションが設定されている場合は、関連するアクションが直ちにトリガーされます。
+   >次のいずれかの **オンタイム** または **オフタイム** が過去に設定され、自動レプリケーションが設定されている場合は、関連するアクションが直ちにトリガーされます。
 
    * **オンタイム** - 公開されたページがパブリッシュ環境で表示（レンダリング）される日時。ページは、手動または事前設定の自動レプリケーションで公開する必要があります。
 
@@ -101,9 +101,9 @@ ht-degree: 93%
    * **リダイレクト** - このページが自動的にリダイレクトするページを示します。
    * **デザイン** - 結果のサイトのページナビゲーションにページが表示されるかどうかを示します
    * **エイリアス** - このページで使用されるエイリアスを指定します
-      * 例えば、ページ `/content/wknd/us/en/magazine/members-only` に `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` を介してもアクセスできます
-      * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定され、リソースにのみ影響を及ぼし、リポジトリパスには影響を及ぼしません。
-      * エディターでエイリアスによってアクセスされたページは公開できません。 [エディ](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) ターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+      * 例えば、 `private` （ページの） `/content/wknd/us/en/magazine/members-only`を使用しない場合、このページには `/content/wknd/us/en/magazine/private`
+      * エイリアスを作成すると、 `sling:alias` プロパティをページノードに追加します。このプロパティはリソースにのみ影響を与え、リポジトリパスには影響を与えません。
+      * エディターでエイリアスによってアクセスされたページは公開できません。 [公開オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) エディターでは、実際のパスを使用してアクセスしたページに対してのみ使用できます。
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -144,7 +144,7 @@ ht-degree: 93%
 
 * **ソーシャルメディア共有**
 
-   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html)に公開します。
+   ページで使用可能な共有オプションを定義します。使用可能なオプションを[コアコンポーネントの共有](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=ja)に公開します。
 
    * **Facebook に対してユーザー共有を有効にする**
    * **Pinterest に対してユーザー共有を有効にする**
@@ -216,9 +216,9 @@ ht-degree: 93%
 
 ### プレビュー {#preview}
 
-プレビュー環境が有効な場合は、次の画面が表示されます。
+プレビュー環境が有効になっている場合は、次の情報が表示されます。
 
-* プレビュー URL — プレビュー環境でのコンテンツへのアクセスに使用する URL
+* プレビュー URL - プレビュー環境でコンテンツへのアクセスに使用される URL
 
 ## ページプロパティの編集 {#editing-page-properties-1}
 

@@ -2,7 +2,7 @@
 title: AEM Commerce for AEM as a Cloud Service の開発
 description: AEM プロジェクトアーキタイプを使用してコマース対応の AEM プロジェクトを生成する方法を説明します。AEM as a Cloud Service SDK でプロジェクトを構築してローカル開発環境にデプロイする方法を説明します。
 topics: Commerce, Development
-feature: コマース統合フレームワーク
+feature: Commerce Integration Framework
 version: cloud-service
 doc-type: tutorial
 kt: 5826
@@ -10,8 +10,8 @@ thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 97%
+source-wordcount: '998'
+ht-degree: 99%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 97%
 AEM as a Cloud Service 用の Commerce Integration Framework（CIF）に基づく AEM Commerce プロジェクトの開発は、AEM as a Cloud Service 上の他の AEM プロジェクトと同じルールとベストプラクティスに従います。最初に以下を確認してください。
 
 - [AEM プロジェクトの構造](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja)
-- [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service の開発ガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html)
+- [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja)
+- [AEM as a Cloud Service の開発ガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja)
 
 ## AEM as a Cloud Service SDK を使用したローカル開発 {#local}
 
@@ -31,7 +31,7 @@ CIF プロジェクトを使用する場合は、ローカル開発環境を使�
 
 CIF アドオンは Sling 機能アーカイブとして提供されます。ソフトウェア配布ポータルで利用できる zip ファイルには、2 つの Sling 機能アーカイブファイルが含まれています。1 つは AEM オーサー用、もう 1 つは AEM パブリッシュインスタンス用です。
 
-**AEM as a Cloud Service は初めてですか？** AEM as a Cloud Service SDK を使用してローカル開発環境をセットアップするための、より詳細な[ガイド](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)を参照してください。
+**AEM as a Cloud Service は初めてですか？** AEM as a Cloud Service SDK を使用してローカル開発環境をセットアップするための、より詳細な[ガイド](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja)を参照してください。
 
 ### 必要なソフトウェア
 

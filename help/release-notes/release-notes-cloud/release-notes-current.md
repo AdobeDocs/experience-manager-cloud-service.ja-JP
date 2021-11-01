@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
 workflow-type: tm+mt
 source-wordcount: '1928'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->ここから、以前のバージョンのリリースノートに移動できます。例えば、2020、2021 の場合は、
+>ここから、以前のバージョン（例えば、2020 年、2021 年のバージョンなど）のリリースノートに移動できます。
 
 >[!NOTE]
 >
@@ -25,33 +25,33 @@ ht-degree: 32%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.9.0) は 2021 年 10 月 6 日です。
-次のリリース (2021.10.0) は 2021 年 11 月 5 日です。
+のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.9.0) は 2021 年 10 月 7 日です。
+次のリリース (2021.10.0) は 2021 年 11 月 4 日です。
 
 ## リリースビデオ {#release-video}
 
-をご覧ください。 [2021 年 9 月リリースの概要](https://video.tv.adobe.com/v/337381) 追加された機能の概要に関するビデオ。
+以下をご覧ください： [2021 年 9 月リリース概要](https://video.tv.adobe.com/v/337381) 追加された機能の概要を示すビデオ。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### の新機能 [!DNL Sites] プレリリースチャネル {#sites-prerelease-features}
 
-* コンテンツフラグメントモデルは、公開後、自動的に読み取り専用の状態に設定され、編集後のモデルの再公開後に意図せずライブ API クエリが壊れるのを防ぎます。 公開済みのモデルを編集しようとすると、警告が表示されます。 警告を受け付けると、編集が可能になります。
+* コンテンツフラグメントモデルは、公開後、自動的に読み取り専用状態に設定されるようになりました。これにより、編集後のモデルの再公開後に、意図せずライブ API クエリが壊れるのを防ぎます。 公開済みのモデルを編集しようとすると、警告が表示されます。 編集は、警告を受け入れる際に可能です。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### の新機能 [!DNL Assets] {#assets-features}
+### の新機能[!DNL Assets] {#assets-features}
 
-* Adobe Document CloudのネイティブのPDFツールと注釈ツールを使用した注釈ファイルの注釈がサポートされるようになりました。 PDFのコンテンツに注釈を付けるには、ドキュメントのプレビューウィンドウ内で、テキスト、ハイライト、付箋、図面を直接追加します。 特定のコメントをクリックして、PDFの対象ページにジャンプすることもできます
+* Adobe Document CloudのネイティブのPDFツールで、注釈ファイルの注釈がサポートされるようになりました。 PDFコンテンツに注釈を付けるには、ドキュメントプレビューウィンドウ内にテキスト、ハイライト、付箋、図面を直接追加します。 特定のコメントをクリックして、PDFの関心のあるページにジャンプすることもできます
 
-* 列表示およびカード表示で、検索結果に表示されたアセットを並べ替えることができるようになりました。 並べ替えは、「名前」、「作成済み」、「変更済み」、「なし」の各列で行います。
+* 検索結果に表示されるアセットを列表示およびカード表示で並べ替えることができるようになりました。 並べ替えは、「名前」、「作成日」、「変更日」、「なし」の各列でおこなわれます。
 
    ![検索結果の並べ替え [!DNL Assets] 列表示とカード表示](/help/assets/assets/sort-searched-assets.png)
-   *図：検索結果の並べ替え [!DNL Assets] （列表示およびカード表示）。*
+   *図：検索結果の並べ替え [!DNL Assets] （列表示およびカード表示）*
 
 ### の新機能 [!DNL Assets] プレリリースチャネル {#assets-prerelease-features}
 
-* [!DNL Assets] に、 [!DNL Azure Media Services] オーディオおよびビデオの転写用。 設定すると、サポートされているファイルが自動的に書き出され、WebVTT ファイルが生成されます。 WebVTT キャプションは、サブタイトルとして使用する検索、キャプション、翻訳をより効果的に行うために使用します。
+* [!DNL Assets] に対する組み込みのコネクタが含まれるようになりました。 [!DNL Azure Media Services] オーディオおよびビデオの転写に使用します。 設定すると、サポートされているファイルが自動的に書き出され、WebVTT ファイルが生成されます。 WebVTT キャプションは、サブタイトルとして使用するための、より効果的な検索、キャプション、翻訳に使用されます。
 
 <!-- TBD: 'Unpublishing' this feature as suggested by engineering.
 
@@ -73,7 +73,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能 {#what-is-new-forms-sep-2021}
+### [!DNL Forms] の新機能  {#what-is-new-forms-sep-2021}
 
 * **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/use-adobe-sign/working-with-adobe-sign.html#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
@@ -81,18 +81,18 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=en)ようになりました。
 
-* **DocuSign を使用してアダプティブフォームに電子署名を行う：** [DocuSign を使用してアダプティブフォームに電子署名を行うことができます](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。
+* **DocuSign を使用してアダプティブフォームを電子署名する：** [DocuSign を使用して、アダプティブフォームに電子署名をすることができます](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/integrate-docusign-adaptive-forms.html). このサービスでは、アダプティブフォームで DocuSign を使用するためのカスタム送信アクションを提供します。
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
-* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、次のことができます。 顧客が管理するリポジトリに機密の個人データ (SPD) を含むプロセス内のAEM Workflows データ (AEM Workflow Variables データ ) を格納します。
+* **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、次のことができます。 お客様が管理するリポジトリに、機密の個人データ (SPD) を含むプロセス内AEM Workflows データ (AEM Workflow Variables データ ) を格納します。
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、ドキュメントを同期モードで生成できます。この API により、以下の機能を備えたアプリケーションを作成できます。
-   * テンプレートファイルに XML データを入力することでドキュメントを生成する
-   * 非インタラクティブ PDF 印刷ストリームを含む様々な形式の出力フォームを生成する
-   * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成する
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=en) では、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+   * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
+   * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
+   * XFA フォーム PDF および Adobe Acrobat フォームから印刷用 PDF ファイルを生成します。
 
 ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
 
@@ -100,29 +100,29 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### 新機能 {#what-is-new-cif}
 
-* サイトエディターの新しい「関連するコマースコンテンツ」タブでは、現在のコンテキストの関連するAEM製品コンテンツにすばやくアクセスできるので、作成者の効率が向上します。
+* サイトエディターの新しい「関連するコマースコンテンツ」タブで、現在のコンテキストに関連するAEM製品コンテンツにすばやくアクセスできるので、作成者の効率が向上しました。
 
    ![関連するコマースコンテンツ](/help/assets/CIF/associated-commerce-content.png)
 
-* 製品ピッカーの UI が改善され、ユーザーエクスペリエンスが向上し、効率が向上し、複雑な製品カタログのサポートが向上
+* 製品ピッカー UI が改善され、ユーザーエクスペリエンスが向上し、効率が向上し、複雑な製品カタログのサポートが向上しました。
 
    ![新しい製品ピッカー](/help/assets/CIF/product-picker.png)
 
-* ナビゲーションコンポーネントで「include_in_menu」プロパティを適用する
+* ナビゲーションコンポーネントの「include_in_menu」プロパティに従う
 
 ### バグ修正 {#bug-fixes-cif}
 
-* メニューキャッシュのフラッシュが期待どおりに機能しない
+* メニューキャッシュのフラッシュが期待どおりに動作しません
 
-* AEM CS のデプロイメント手順中およびクライアント側コンポーネントを使用していない場合の JS エラー
+* AEM CS のデプロイメント手順中および clientside コンポーネントを使用していない場合の JS エラー
 
-* sling:configs ノードを持つフォルダー内に CIF クラウド設定を作成できない
+* sling:configs ノードを持つフォルダー内に CIF クラウド設定を作成できません
 
 ## [!DNL Experience Manager Screens] as a [!DNL Cloud Service] {#screens}
 
 ### 新機能 {#what-is-new-screens}
 
-* Screensas a Cloud Serviceで、基本的な再生監視がサポートされるようになりました。 プレーヤーでは、各 ping（デフォルトは 30 秒）で様々な再生指標がレポートされるようになります。指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。また、空白の画面やフィールド内のエクスペリエンスの不具合に対する反応性が向上し、不具合のあるエクスペリエンスがエンドユーザーに表示されるリスクが低くなります。
+* Screens as a Cloud Serviceで、基本的な再生監視がサポートされるようになりました。 プレーヤーでは、各 ping（デフォルトは 30 秒）で様々な再生指標がレポートされるようになります。指標に基づいて、様々なエッジケース（動きのないエクスペリエンス、空白の画面、スケジュールの問題など）を検出できます。この機能を使用すると、プレーヤーがコンテンツを適切に再生しているかどうかをチームがリモートで監視できます。また、空白の画面やフィールド内のエクスペリエンスの不具合に対する反応性が向上し、不具合のあるエクスペリエンスがエンドユーザーに表示されるリスクが低くなります。
 詳しくは、[基本的な再生モニタリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=en#playback-monitoring)を参照してください。
 
 * でのビデオのサムネールのサポートが、Screens as a Cloud Serviceでサポートされるようになりました。 コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを該当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。その画像は、ビデオの再生に失敗した場合でも使用できます。
@@ -130,35 +130,35 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### バグ修正 {#bug-fixes-screens}
 
-* 埋め込みページのコンテンツをプレーヤーに表示できず、この問題が修正されました。
+* 埋め込みページからコンテンツを表示できず、この問題が修正されました。
 
-* ログインに成功した後、デフォルトのページ（チャネル）に移動すると、内部サーバーエラーページが表示されます。
+* ログインに成功した後、デフォルトのページ（チャネル）に移動すると、最終的に内部サーバーエラーページが表示されます。
 
 * プレイリストを削除する際に、関連するタグエントリが削除されませんでした。
 
 ## [!DNL Experience Manager as a Cloud Service] 基盤 {#foundation}
 
-### の新機能 [!DNL Experience Manager as a Cloud Service] {#foundation-features}
+### の新機能[!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **高度なネットワーク**
 
 >[!INFO]
 >
->高度なネットワーク機能は 2021.9.0 リリースの一部で、10 月中旬にお客様向けに有効になります。
+>高度なネットワーク機能は 2021.9.0 リリースの一部で、10 月中旬にお客様が有効になる予定です。
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、次のような高度なネットワーク機能をいくつか提供しています。
 
-* 非標準ポートからトラフィックを出力する柔軟なポート出力。 現在は、Adobe・サポートに連絡する必要はありません。
-* 固有の IP からAEMからトラフィックを出力するための、専用の出力 IP アドレスで、すべてのポートをサポートするようになりました。
-* VPN ：インフラストラクチャとAEM as a Cloud Service間のトラフィックを保護します。
+* 非標準ポートからトラフィックを出力する柔軟なポート出力。 Adobe・サポートに連絡しなくても可能になりました。
+* 固有の IP からas a Cloud ServiceのAEMからトラフィックを出力するための、専用の出力 IP アドレスで、すべてのポートをサポートするようになりました。
+* インフラストラクチャとAEM as a Cloud Service間のトラフィックを保護する VPN
 
-詳しくは、 [ドキュメント](/help/security/configuring-advanced-networking.md) Cloud Manager API を使用したプロビジョニング高度なネットワークのセルフサービス方法を含む、詳細情報。
+詳しくは、 [ドキュメント](/help/security/configuring-advanced-networking.md) Cloud Manager API を使用してプロビジョニングされたアドバンスネットワークをセルフサービスで提供する方法など、詳細について説明します。
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、フルテキストインデックス lucene-2 は、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] このリリースから。 AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するため、Adobeエンジニアリングは、お客様との間で個別かつ積極的に連携し、Lucene のフルテキストインデックスを柔軟かつ持続的に削除します。 詳しくは、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) 詳細については、お問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、フルテキストインデックス lucene-2 は、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] このリリースから。 AEMのお客様に合わせてAEM環境でこのフルテキストインデックスを削除するために、Adobeエンジニアリングは、Lucene のフルテキストインデックスを柔軟かつ持続可能に削除するために、お客様と個別かつ積極的に連携します。 次を参照してください： [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) 詳細については、お問い合わせください。
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 この節では、AEM as a Cloud Service 2021.10.0 および 2021.9.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
@@ -169,11 +169,11 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-cm-oct}
 
-* 今後の変更に備えて、既存のデプロイメントパイプラインは、 **フルスタック** パイプライン。
+* 今後の変更に備えて、既存のデプロイメントパイプラインが参照され、ユーザーインターフェイスで次のようにラベル付けされるようになりました。 **フルスタック** パイプライン。
 
-* パイプラインカードが更新され、実稼動パイプラインと非実稼動パイプラインの両方を表示する単一の統合面が表示され、各パイプラインに関連付けられたアクションメニューから直接「実行/一時停止/再開」を選択できます。
+* パイプラインカードが更新され、実稼働と非実稼働の両方のパイプラインを表示する単一の統合面が表示されるようになりました。ユーザーは、各パイプラインに関連付けられたアクションメニューから直接「実行/一時停止/再開」を選択できます。
 
-* デプロイメントマネージャーの役割を持つユーザーが、UI を使用して、セルフサービス方式で実稼動パイプラインを削除できるようになりました。
+* デプロイメントマネージャーの役割を持つユーザーが、UI を介してセルフサービス方式で実稼動パイプラインを削除できるようになりました。
 
 * パイプラインエクスペリエンスの追加と編集が更新され、使い慣れた最新のモデルを使用できるようになりました。
 
@@ -181,13 +181,13 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 
 * 年別の SLA グラフを Cloud Manager のユーザーインターフェイスからダウンロードできるようになりました。
 
-* コード品質と非実稼動パイプラインの実行で、ビルド手順中により効率的な浅いクローン作成プロセスを使用できるようになり、特に大きな Git リポジトリを持つお客様のビルド時間が短縮されます。
+* コード品質と非実稼動パイプラインの実行で、ビルド手順中により効率的な浅いクローン作成プロセスを使用するようになり、特に大規模な Git リポジトリを持つお客様のビルド時間が短縮されます。
 
-* 「IP許可リストの追加」ウィザードで、許可されている IP許可リストの最大数に達した場合に、ユーザーに通知が表示されるようになりました。
+* IP許可リストの追加ウィザードで、許可されている最大数に達した場合に、ユーザーに許可リストを送信するようになりました。
 
-* Cloud Manager API ドキュメントに、ログインしたユーザーがブラウザーで API を試すことができる、インタラクティブなプレイグラウンドが含まれるようになりました。 詳しくは、 [Cloud Manager API の再生](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
+* Cloud Manager API ドキュメントに、ログインしたユーザーがブラウザーで API を試すことができる、インタラクティブなプレイグラウンドが含まれるようになりました。 詳しくは、 [Cloud Manager API プレイグラウンド](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
 
-* 「移動先」の選択オプションが無効になっている場合は、プログラムカードのツールチップがわかりやすくなります。 「実稼動環境が存在しません」と表示されるようになりました。
+* 「移動先」の下の選択オプションが無効になっている場合は、プログラムカードのツールチップがわかりやすくなります。 「実稼動環境が存在しません」と表示されるようになりました。
 
 ## リリース日 {#release-date-cm-sept}
 
@@ -197,9 +197,9 @@ AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021 年
 
 * まれに、Adobe・スタッフがお客様の環境をリストアする場合、環境が完全に稼働する前にリストアが完了したと見なされました。
 
-* 環境の作成中におこなわれた一部の内部要求が再試行されていませんでした。
+* 環境の作成中におこなわれた一部の内部リクエストが再試行されませんでした。
 
-* ドメイン名の検証後にデプロイメントの失敗エラーが発生した場合、エラーメッセージが修正され、お客様にAdobe担当者に問い合わせるように依頼しました。
+* ドメイン名の検証後にデプロイメントの失敗エラーが発生した場合、エラーメッセージが修正され、お客様にAdobe担当者への連絡をリクエストするようになりました。
 
 
 ### 新機能 {#what-is-new-cm-sept}
@@ -210,13 +210,13 @@ AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021 年
 
 * コード品質ステップログに、OakPal スキャンプロセスの詳細なログ情報が含まれるようになりました。
 
-* アクティビティページのメニューオプションに、 **ダウンロードログ** 実行が完了した場合。 これを選択すると、ビルド手順のログがダウンロードされます。
+* アクティビティページのメニューオプションに、 **ログをダウンロード** 完了したコードジェネレーターの実行。 これを選択すると、ビルド手順のログがダウンロードされます。
 
 * 「プログラム」カードを直接クリックすると、Cloud Manager の概要ページに移動するようになりました。
 
 ### バグ修正 {#bug-fixes-sept}
 
-* 設定可能な IP許可リストの最大数に達したプログラムに新しい IP許可リストを追加しようとすると、わかりやすいメッセージが表示されるようになりました。
+* 設定可能な IP許可リストの最大数に達したプログラムに新しい IP許可リストを追加しようとすると、よりわかりやすくなるメッセージが表示されるようになりました。
 
 * リポジトリ画面で　URL　コピーメニューオプションを選択すると、間違った　URL　がコピーされていました。
 
@@ -228,7 +228,7 @@ Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や印刷をPDFに簡単に行え、共有が容易になりました。 手順 6 および 7( [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や印刷を簡単にPDFでき、共有が容易になりました。 手順 6 および 7( [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -238,12 +238,12 @@ Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* ユーザーマッピングツールが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが実現しました。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
+* ユーザーマッピングツールが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが提供されました。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
    * ユーザーマッピングを実行する前に、User Management API への接続をテストする
-   * エラーを適切にスキップし、ユーザーマッピングアクティビティを続行します
-   * 次の場合にユーザーマッピングが失敗しなくなりました。 **アクセストークン** は、24 時間後に期限切れになります。 ユーザーマッピングは、最後に停止した場所から再実行できます。
+   * エラーを適切にスキップし、「ユーザーマッピング」アクティビティに進みます
+   * 次の場合にユーザーマッピングが失敗しなくなりました： **アクセストークン** は、24 時間後に期限切れになります。 ユーザーマッピングは、最後に停止した場所から再実行できます。
 
-* コンテンツ転送ツールの堅牢性を高めるために、コンテンツを一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 詳しくは、 [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。
+* コンテンツ転送ツールの堅牢性を高めるために、コンテンツは一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 詳しくは、 [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。
 
 * バージョンが含まれる場合、パス `/var/audit` 監査イベントを移行するために、が自動的に含まれます。
 
@@ -251,7 +251,7 @@ Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
 
 ### リリース日 {#release-date-bpa-latest}
 
-Best Practices Analyzer v2.1.20 のリリース日は 2021 年 10 月 5 日です。
+ベストプラクティスアナライザー v2.1.20 のリリース日は 2021 年 10 月 5 日です。
 
 ### 新機能 {#what-is-new}
 
@@ -259,5 +259,5 @@ Best Practices Analyzer v2.1.20 のリリース日は 2021 年 10 月 5 日で�
 
 * 合計インデックスサイズを検出し、レポートする機能。
 
-* 元のレンディションがないアセットを検出し、レポートする機能。
+* 元のレンディションが欠落しているアセットを検出し、レポートする機能。
 

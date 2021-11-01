@@ -5,7 +5,7 @@ exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service は、次の 3 つの強力なサービスを提供する
 1. 配信用のコンテンツ API
    * AEM GraphQL API では、コンテンツフラグメント配信をサポートしています。
    * AEM Assets REST API では、コンテンツフラグメントの CRUD 操作をサポートしています。
-   * [コンテンツフラグメントコアコンポーネントの JSON エクスポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)を使用すると、直接コンテンツ配信も可能です。
+   * [コンテンツフラグメントコアコンポーネントの JSON エクスポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)を使用すると、直接コンテンツ配信も可能です。
 
 ## AEM ヘッドレスを使用した最初の手順 {#first-steps}
 
@@ -53,6 +53,6 @@ AEM ヘッドレス機能を使い始めるためのリソースは多数用意�
 
 | リソース | 説明 | タイプ | 対象者 | 予測時刻 |
 |---|---|---|---|---|
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | **AEMやヘッドレスステクノロジを初めて使用するユーザー向け** に、最初のヘッドレスプロジェクトでの運用を通じてヘッドレスの理論に基づく、AEMとそのヘッドレス機能の包括的な紹介を、ここから始めます。 | ガイド | デベロッパー向け  **AEMとヘッドレスが新しい** | 1 時間 |
-| [ヘッドレスをはじめる前に](/help/implementing/developing/headless/getting-started/introduction.md) | **AEMの主なヘッドレ** ス機能の概要を簡単に説明する必要がある経験豊富なAEMユーザー向けに、このクイックスタートの概要を確認してください。 | クイックスタート | デベロッパー、管理者  **AEMエクスペリエンス** | 20 分 |
-| [AEM ヘッドレスをはじめる前に：実践チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) | **実践的なアプローチを好み、AEM**&#x200B;に詳しい方は、このチュートリアルでは、シンプルなヘッドレスプロジェクトの作成に直接取り組みます。 | チュートリアル | デベロッパー向け | 2 時間 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | **AEMを初めて使用するユーザーとヘッドレスユーザー** テクノロジーについては、まず、最初のヘッドレスプロジェクトでの運用を開始することによるヘッドレス理論から、AEMとそのヘッドレス機能に関する包括的な紹介をご覧ください。 | ガイド | デベロッパー向け **AEMとヘッドレスを初めて使用する** | 1 時間 |
+| [ヘッドレスをはじめる前に](/help/implementing/developing/headless/getting-started/introduction.md) | **経験豊富なAEMユーザー向け** AEMの主要なヘッドレス機能の概要が必要なユーザーは、このクイックスタートの概要を確認してください。 | クイックスタート | デベロッパー、管理者 **AEMエクスペリエンス** | 20 分 |
+| [AEM ヘッドレスをはじめる前に：実践チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) | **実践的なアプローチを好み、AEMに精通している場合**&#x200B;このチュートリアルでは、シンプルなヘッドレスプロジェクトの作成に直接取り組みます。 | チュートリアル | デベロッパー向け | 2 時間 |

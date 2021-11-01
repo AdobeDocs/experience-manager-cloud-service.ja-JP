@@ -57,7 +57,7 @@ Sling Resource Merger を使用し、`sling:resourceSuperType` プロパティ�
 
 コンポーネントは [HTML を使用してレンダリングされます。](https://www.w3schools.com/htmL/html_intro.asp)コンポーネントでは、リクエストされたコンテンツを取得して、オーサリング環境とパブリッシュ環境の両方で必要に応じてレンダリングするために必要な HTML を定義しなければなりません。
 
-マークアップおよびレンダリングをおこなうコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
+マークアップおよびレンダリングを行うコードと、コンポーネントのコンテンツ選択に関するロジックを制御するコードは、分離しておくことをお勧めします。
 
 この方法をサポートするテンプレート言語が [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja) です。HTL では、基盤となるビジネスロジックを定義するときにのみプログラミング言語を使用します。このメカニズムは、指定された表示に対して呼び出されるコードを強調表示し、必要に応じて、同じコンポーネントの異なる表示に対して特定のロジックを使用できるようにします。
 
@@ -339,7 +339,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 繰り返しを避けるために、アドビは、これらのプレースホルダーに、[コアコンポーネントが提供するような](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html) HTL テンプレートを使用することをコンポーネントの実装者に推奨します。
 
-その後、前のリンクでのテンプレートの使用は、次の HTL 行でおこないます。
+その後、前のリンクでのテンプレートの使用は、次の HTL 行で行います。
 
 ```HTML
 <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
@@ -383,7 +383,7 @@ AEM には、既存の設定が多数あります。**CRXDE Lite** のクエリ�
 
 ### フィールドイベントの処理 - cq:listeners {#cq-listeners}
 
-ダイアログフィールドのイベントの処理は、カスタム[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)のリスナーでおこなわれます。
+ダイアログフィールドのイベントの処理は、カスタム[クライアントライブラリ](/help/implementing/developing/introduction/clientlibs.md)のリスナーで行われます。
 
 フィールドにロジックを挿入するには、以下を実行する必要があります。
 

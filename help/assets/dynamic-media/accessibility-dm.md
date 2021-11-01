@@ -9,18 +9,18 @@ role: Admin,User
 source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
 
-# アクセシビリティ Dynamic Media {#accessibility-in-dm}
+# Dynamic Media のアクセシビリティ {#accessibility-in-dm}
 
 Dynamic Media では、オーサリングユーザーインターフェイス全体でキーボードコントロールおよび支援テクノロジー（JAWS スクリーンリーダーや NVDA スクリーンリーダーなど）をサポートしています。
 
 ## Dynamic Media でのキーボードアクセシビリティのサポート {#keyboard-support-in-dm}
 
-Dynamic Mediaは[!DNL Experience Manager Assets]のプラグインなので、キーボード制御の動作のほとんどは[!DNL Experience Manager Assets]の動作と同じです。 例えば、Dynamic Mediaの`Cancel`ボタンは、[!DNL Experience Manager Assets]の場合と同じフォーカスハイライトを持ちます。 また、[!DNL Experience Manager Assets]と同様に、`Spacebar`キーにも反応します。 [Assets のキーボードショートカット](/help/assets/accessibility.md#keyboard-shortcuts)を参照してください。
+Dynamic Media は Adobe [!DNL Experience Manager Assets] のプラグインなので、キーボードコントロールの動作のほとんどは [!DNL Experience Manager Assets] の場合と同じです。例えば、Dynamic Media の「`Cancel`」ボタンのフォーカスハイライトは [!DNL Experience Manager Assets] と同じです。また、[!DNL Experience Manager Assets] の場合と同様に `Spacebar` キーにも反応します。[Assets のキーボードショートカット](/help/assets/accessibility.md#keyboard-shortcuts)を参照してください。
 
 Dynamic Media の個々のユーザーインターフェイス要素でサポートされているキー操作は、ほとんどの場合、明確で見つけやすくなっています。Dynamic Media のキーボードコントロールは、以下の機能があります。
 

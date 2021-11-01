@@ -20,7 +20,7 @@ ht-degree: 97%
 
 ## [!DNL Experience Manager] と [!DNL Adobe Stock] の統合  {#integrate-aem-and-adobe-stock}
 
-[!DNL Experience Manager]と[!DNL Adobe Stock]の間の通信を確立するには、[!DNL Experience Manager]にIMS設定と[!DNL Adobe Stock]設定を作成します。
+間で通信を確立するには [!DNL Experience Manager] および [!DNL Adobe Stock]、IMS 設定の作成および [!DNL Adobe Stock] の設定 [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ ht-degree: 97%
 
 ## [!DNL Adobe Stock] での [!DNL Experience Manager] アセットの使用と管理  {#usemanage}
 
-この機能を使用すると、組織のユーザーは[!DNL Experience Manager Assets]内の[!DNL Adobe Stock]アセットを使用して作業できます。 [!DNL Experience Manager] のユーザーインターフェイス内から [!DNL Adobe Stock] アセットを検索し、必要なアセットのライセンスを取得できます。
+この機能を使用すると、組織のユーザーは [!DNL Adobe Stock] 内のアセット [!DNL Experience Manager Assets]. [!DNL Experience Manager] のユーザーインターフェイス内から [!DNL Adobe Stock] アセットを検索し、必要なアセットのライセンスを取得できます。
 
 [!DNL Experience Manager] 内で [!DNL Adobe Stock] アセットのライセンスを取得すると、そのアセットを通常のアセットと同様に使用および管理できます。ユーザーは [!DNL Experience Manager] 内でアセットの検索およびプレビュー、アセットのコピーおよび公開、[!DNL Brand Portal] でのアセットの共有、[!DNL Experience Manager] デスクトップアプリケーション経由でのアセットのアクセスおよび使用を行うことができます。
 

@@ -1,12 +1,12 @@
 ---
 title: ロールアウトの競合
 description: マルチサイトマネージャーでのロールアウトの競合を管理および解決する方法について説明します。
-feature: マルチサイトマネージャー
+feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '923'
 ht-degree: 100%
 
 ---

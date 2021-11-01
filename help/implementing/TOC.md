@@ -8,7 +8,7 @@ role: Developer, Architect
 source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
 workflow-type: tm+mt
 source-wordcount: '1049'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -171,7 +171,7 @@ ht-degree: 92%
          + [コンテンツフラグメント GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=ja)
          + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ja)
          + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ja)
-   + ハイブリッドおよびSPA AEMの開発 {#hybrid}
+   + AEM 対応のハイブリッドおよび SPA 開発 {#hybrid}
       + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
       + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
       + [SPA の概要およびガイド](developing/hybrid/introduction.md)
@@ -211,13 +211,13 @@ ht-degree: 92%
    + [Adobe Target との統合](/help/sites-cloud/integrating/adobe-target.md)
    + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
 + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-   + [Developer App Builder を使用したAdobeの拡張](developing/extending/app-builder.md)
+   + [Extending AEM using Extending Adobe Developer App Builder](developing/extending/app-builder.md)
    + [エクスペリエンスフラグメントの拡張](developing/extending/experience-fragments.md)
    + [コンテンツフラグメントのカスタマイズと拡張](developing/extending/content-fragments-customizing.md)
    + [レンダリングコンポーネントのコンテンツフラグメントの設定](developing/extending/content-fragments-configuring-components-rendering.md)
-   + 検索を管理Forms {#manage-search-forms}
+   + 検索フォームの管理 {#manage-search-forms}
       + [検索フォームの設定](developing/extending/search-forms.md)
-      + [インボックスの検索フィルターの設定](developing/extending/configure-inbox-search-rail.md)
+      + [インボックス用の検索フィルターの設定](developing/extending/configure-inbox-search-rail.md)
    + [リッチテキストエディターの設定](/help/implementing/developing/extending/rich-text-editor.md)
    + [RTE プラグインの設定](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
    + [アクセシブルなサイトの作成に向けた RTE の設定](/help/implementing/developing/extending/rte-accessible-content.md)
@@ -233,7 +233,7 @@ ht-degree: 92%
    + [コンテンツ配信フロー](dispatcher/overview.md)
    + [クラウド内の Dispatcher](dispatcher/disp-overview.md)
    + [Dispatcher ツールを使用した検証とデバッグ](dispatcher/validation-debug.md)
-   + [AMS からAEM as a Cloud Serviceへの Dispatcher 設定の移行](dispatcher/ams-aem.md)
-   + [Dispatcher ツールを使用した検証とデバッグ（従来）](dispatcher/validation-debug-legacy.md)
+   + [AMS から AEM as a Cloud Service への Dispatcher 設定の移行](dispatcher/ams-aem.md)
+   + [Dispatcher ツールを使用した検証とデバッグ（レガシー）](dispatcher/validation-debug-legacy.md)
    + [AEM as a Cloud Service での CDN](dispatcher/cdn.md)
    + [AEM as a Cloud Service でのキャッシュ](dispatcher/caching.md)

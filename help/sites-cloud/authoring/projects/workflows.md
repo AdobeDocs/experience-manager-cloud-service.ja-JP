@@ -70,4 +70,4 @@ AEM でのワークフローの操作について詳しくは、以下を参照�
 
 ## アセットの言語コピー作成（および翻訳）ワークフロー {#create-and-translate-language-copy-workflow-for-assets}
 
-**言語コピーを作成**&#x200B;ワークフローと&#x200B;**言語コピーを作成/翻訳**&#x200B;ワークフローについて詳しくは、[アセットの言語コピーの作成を参照してください。](/help/assets/translate-assets.md)
+この **言語コピーを作成** そして **言語コピーの作成と翻訳** ワークフローについて詳しくは、 [アセットの言語コピーの作成](/help/assets/translate-assets.md)

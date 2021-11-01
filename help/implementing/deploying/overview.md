@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
 workflow-type: tm+mt
 source-wordcount: '3334'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：詳しくは、 [Jackrabbit filevault ドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) インストールフックについて 現在、AEM CS は Filevault バージョン 3.4.0 を使用しています。これは、インストールフックを管理者ユーザー、システムユーザー、管理者グループのメンバーに制限しています )。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit FileVault のドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
 
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)を参照してください。
 
@@ -179,7 +179,7 @@ above appears to be internal, to confirm with Brian -->
 
 >[!IMPORTANT]
 >
->パッケージマネージャーの UI で **未定義** パッケージのインストールに 10 分以上かかる場合に発生するエラーメッセージ インストールがバックグラウンドで正しく進行し、複数の同時インポートプロセスによって競合が発生する可能性があるので、再試行しないでください。
+>パッケージマネージャー UI で **未定義** パッケージのインストールに 10 分以上かかる場合のエラーメッセージ。 同時にインポートが実行される場合は、インストールを再試行しないでください。バックグラウンドで正しく進行し、複数のインポートプロセスで競合が発生する可能性があるからです。
 
 Cloud Manager を使用してインストールされたコンテンツパッケージ（可変および不変）は、AEM パッケージマネージャーのユーザーインターフェイスにフリーズ状態で表示されます。これらのパッケージは再インストールや再ビルド、さらにはダウンロードもできません。また、「**cp2fm**」というサフィックス付きで表示され、そのインストールが Cloud Manager で管理されていることを示します。
 

@@ -4,8 +4,8 @@ description: ドメイン名ステータスの確認
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '341'
+ht-degree: 98%
 
 ---
 

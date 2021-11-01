@@ -1,17 +1,17 @@
 ---
 title: AEM as a Cloud Service 向けのログ
-description: AEM as a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービスに固有の設定、またはデータログの要求を設定する方法について説明します。
+description: AEMas a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービスの固有の設定、またはデータログの要求方法を設定する方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
 source-wordcount: '2314'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
 # AEM as a Cloud Service 向けのログ {#logging-for-aem-as-a-cloud-service}
 
-AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。これを念頭に置いた上で、ローカル開発およびクラウド環境、特にAEM as a Cloud Serviceの開発環境でのコード実行をデバッグおよび理解するために、ログサービスは重要な機能です。
+AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログサービスは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能となります。
 
 AEMのas a Cloud Service的なログ設定とログレベルは、AEMプロジェクトの一部として Git に保存され、AEMプロジェクトの一部として Cloud Manager を介してデプロイされる設定ファイルで管理されます。 AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
 
@@ -30,7 +30,7 @@ AEM アプリケーションレベルでのログは、次の 3 つのログで�
 >
 >パブリッシュ層の Dispatcher キャッシュまたはアップストリーム CDN から提供される HTTP リクエストは、これらのログに反映されません。
 
-## AEM Java ログ {#aem-java-logging}
+## AEM Java Logging {#aem-java-logging}
 
 AEM as a Cloud Service は Java ログステートメントにアクセスできます。AEM 向けアプリケーションの開発者は、次のログレベルで、一般的な Java ログのベストプラクティス、カスタムコードの実行に関連するステートメントのログ記録に従う必要があります。
 
@@ -209,7 +209,7 @@ AEM as a Cloud Service の HTTP リクエストログは、AEM に対して行�
 <tbody>
 <tr>
 <td>日時</td>
-<td>2020 年 4 月 29 日 :19:14:21 +0000</td>
+<td>29/Apr/2020:19:14:21 +0000</td>
 </tr>
 <tr>
 <td>リクエストとレスポンスのペア ID</td>
@@ -253,7 +253,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| AEMas a Cloud Serviceノード ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| AEM as a Cloud Service のノード ID | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | クライアントの IP アドレス | - |
 | User | myuser@adobe.com |
@@ -511,7 +511,7 @@ AEM ログは `crx-quickstart/logs` フォルダー内にあり、次のログ�
 * AEM HTTP リクエストログ： `request.log`
 * AEM HTTP アクセスログ： `access.log`
 
-Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)を参照してください。
+Dispatcher を含む Apache レイヤーログは、Dispatcher を保持する Docker コンテナにあります。Dispatcher の開始方法については、[Dispatcher のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=ja)を参照してください。
 
 ログを取得するには、以下の手順に従います。
 

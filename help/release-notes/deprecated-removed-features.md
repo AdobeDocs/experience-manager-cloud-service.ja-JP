@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 78%
+ht-degree: 98%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 78%
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
->title="AEM as aCloud Serviceの非推奨（廃止予定）および削除された機能"
->abstract="AEM as aCloud Serviceには、クラウドネイティブなデプロイメントモデルがあります。 一部の機能や機能は、クラウドネイティブな対応する機能に置き換えられ、このタブにはこれらの機能が表示されます。"
+>title="AEM as a Cloud Service の非推奨（廃止予定）の機能と削除された機能"
+>abstract="AEM as a Cloud Service には、クラウドネイティブなデプロイメントモデルがあります。一部の機能や特徴は、クラウドネイティブな同等機能に置き換えられました。ここでは、それらの機能を示します。"
 
 
 アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。また、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] はクラウドネイティブなデプロイメントモデルを提供するので、一部の機能はクラウドネイティブな同等機能に置き換わりました。
@@ -34,12 +34,12 @@ ht-degree: 78%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | [モデルベースの構造化コンテンツフラグメ](/help/assets/content-fragments/content-fragments-models.md) ントスノー。 |
+| [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | [モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md) 今すぐ。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
-| [!DNL Assets] | [などのコマンドラ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) インツ `DAM Asset Update` ールの呼び出しを含め、ワークフロー内の特定のワークフロー手順はサポートされていま [!DNL ImageMagick]せん。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
+| [!DNL Assets] | [!DNL ImageMagick] などのコマンドラインツールの呼び出しを含め、`DAM Asset Update` ワークフローの[特定のワークフローステップ](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)はサポートされていません。 | [アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が多くのワークフローの代替機能となります。カスタム処理の場合は、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用します。 |
 | [!DNL Assets] | ビデオの FFmpeg トランスコード。 | FFmpeg サムネールの生成には、[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)を使用。FFmpeg トランスコードの場合は、[Dynamic Media](/help/assets/manage-video-assets.md) を使用。 |
-| [!DNL Foundation] | レプリケーションエージェントの「配布」タブの下のツリーレプリケーションUI（2021年9月30日以降に削除） | [公開の管](/help/operations/replication.md#manage-publication) 理またはコ [ンテンツツリーのワークフローアプローチの](/help/operations/replication.md#publish-content-tree-workflow) 公開 |
+| [!DNL Foundation] | レプリケーションエージェントの「配布」タブのツリーレプリケーション UI（2021 年 9 月 30 日以降に削除） | [公開を管理](/help/operations/replication.md#manage-publication)または[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)アプローチ |
 
 ## 削除された機能 {#removed-features}
 
@@ -52,12 +52,12 @@ ht-degree: 78%
 | [!DNL Sites] | Portal Director とポートレットコンポーネント | これらの機能は [!DNL Experience Manager] 6.4 で非推奨（廃止予定）となり、現在は [!DNL Experience Manager] から削除されています。 |
 | [!DNL Sites] | デザインインポーター | 実行時に [!DNL Experience Manager] リポジトリーの不変セクションにアクセスできないので、この機能は削除されました。 |
 | [!DNL Assets] | [!DNL Assets]Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの の共有は使用できません。 | [!DNL Adobe Creative Cloud] との統合には、[Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用します。 |
-| [!DNL Foundation] | Apache Slingデータソース（OSGiバンドルorg.apache.sling.datasource）のサポート。 | 該当なし |
+| [!DNL Foundation] | Apache Sling データソース（OSGi バンドル org.apache.sling.datasource）のサポート。 | 該当なし |
 
 ## Java API {#java-api}
 
-非推奨（廃止予定）または削除されたJava APIについては、[このページ](/help/release-notes/deprecated-apis.md)を参照してください。
+非推奨（廃止予定）の Java API や削除された Java API については、[このページ](/help/release-notes/deprecated-apis.md)を参照してください。
 
 ## OSGi 設定 {#osgi-configuration}
 
-OSGiプロパティの設定に関する制限（一部は時間の経過と共に導入される可能性があります）については、[この記事](/help/implementing/deploying/osgi-configuration-api.md)を参照してください。
+OSGi プロパティの設定に関する制限事項（一部は将来的に導入される可能性もあります）については、[この記事](/help/implementing/deploying/osgi-configuration-api.md)を参照してください。

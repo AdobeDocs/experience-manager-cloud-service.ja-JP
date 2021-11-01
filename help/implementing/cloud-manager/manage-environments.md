@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: c25756f16f5e86958c1cc9224e51d07c4d864da4
 workflow-type: tm+mt
 source-wordcount: '1608'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -78,35 +78,35 @@ ht-degree: 78%
    ![](assets/environ-preview1.png)
 
 
-### Preview Serviceへのアクセス {#access-preview-service}
+### プレビューサービスへのアクセス {#access-preview-service}
 
-プレビューサービス機能は、Cloud Managerを介して各AEM as a Cloud Service環境に追加のプレビュー（公開）サービスを提供します。
+プレビューサービス機能は、Cloud Manager を介して各 AEM as a Cloud Service 環境に追加のプレビュー（パブリッシュ）サービスを提供します。
 
-Webサイトがパブリッシュ環境に到達して公開される前に、Webサイトの最終的なエクスペリエンスをプレビューします。 Preview Serviceを確認して使用する前に、次のポインターをいくつか示します。
+Web サイトがパブリッシュ環境に達して公開される前に、Web サイトの最終的なエクスペリエンスをプレビューします。プレビューサービスを表示して使用するには、次の点に注意してください。
 
-1. **AEMバージョン**:環境がAEM以降のバージョンである `2021.05.5368.20210529T101701Z` 必要があります。これをおこなうには、更新パイプラインが環境で正常に実行されていることを確認します。
+1. **AEM バージョン**：お使いの環境が AEM バージョン `2021.05.5368.20210529T101701Z` 以降をベースにしている必要があります。そのためには、更新パイプラインが環境で正常に実行されていることを確認します。
 
-1. **デフォルトのIP許可リストロック**:作成時に、プレビューサービスにはデフォルトのIP許可リスト（ラベル付き）が適用されま `Preview Default [Env ID]`す。
+1. **デフォルト IP 許可リストのロック**：作成時に、プレビューサービスにはデフォルトの IP 許可リスト（`Preview Default [Env ID]` というラベルが付いています）が適用されます。
 
    >[!NOTE]
-   >最初の作成時に、アクセスを有効にするには、環境内のプレビューサービスからデフォルトのIP許可リストを積極的に適用解除する必要があります。
+   >アクセスを有効にするには、初回作成時に、環境のプレビューサービスからデフォルトの IP 許可リストの適用を能動的に解除する必要があります。
 
-   必要な権限を持つユーザーは、プレビューサービスに&#x200B;*ロック解除*&#x200B;アクセスして目的のアクセスを提供するために、次のいずれかの操作を行う必要があります。
+   プレビューサービスへのアクセスを&#x200B;*ロック解除*&#x200B;して、目的のアクセスを提供するには、必要な権限を持つユーザーが次のいずれかを行う必要があります。
 
-   * 適切なIP許可リストを作成し、Preview Serviceに適用します。 これに従うには、Preview Serviceから`Preview Default [Env ID] IP Allow List`を解除します。 詳しくは、[IP許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)を参照してください。
+   * 適切な IP 許可リストを作成して、プレビューサービスに適用する。プレビューサービスから `Preview Default [Env ID] IP Allow List` の適用を解除して、ただちにこの許可リストに従います。詳しくは、[IP 許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md)を参照してください。
 
-      *または*,
+      *または*
 
-   * 「 IPの更新」許可リストワークフローを使用して、デフォルトのIPを削除し、必要に応じてIPを追加します。 詳しくは、[IP許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
+   * IP 許可リストの更新ワークフローを使用して、デフォルトの IP を削除し、必要に応じて IP を追加する。詳しくは、[IP 許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
 
       >[!NOTE]
-      >プレビューURLに適切なメンバーがアクセスできるように、プレビューサービスのURLをチームと共有する前に、上記の手順を実行する必要があります。
+      >プレビュー URL にチームの適切なメンバーが確実にアクセスできるように、プレビューサービスの URL をチームと共有する前に、上記の手順を実行する必要があります。
 
       プレビューサービスへのアクセスをロック解除すると、ロックアイコン（下図を参照）は表示されなくなります。
 
       ![](/help/implementing/cloud-manager/assets/preview-service1.png)
 
-1. **プレビュー用にコンテンツを公開**:AEM内の「公開を管理」UIを使用して、コンテンツをプレビューサービスに公開できます。詳しくは、[コンテンツのプレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=en)を参照してください。
+1. **コンテンツをプレビュー用に公開**：AEM 内の「公開を管理」UI を使用して、コンテンツをプレビューサービスに公開できます。詳しくは、[コンテンツのプレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/previewing-content.html?lang=ja)を参照してください。
 
 ## 環境の更新 {#updating-dev-environment}
 
@@ -155,7 +155,7 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 
 **開発者コンソール**&#x200B;にアクセスできるのは、開発者ロールのユーザーだけです。サンドボックスプログラムの場合は例外で、Cloud Manager のサンドボックスプログラムにアクセスできるユーザーは誰でも、**開発者コンソール**&#x200B;にアクセスできます。
 
-詳しくは、[サンドボックス環境の休止と休止解除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html#hibernating-introduction)を参照してください。
+詳しくは、[サンドボックス環境の休止と休止解除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/sandbox-programs.html?lang=ja#hibernating-introduction)を参照してください。
 
 
 ![](assets/environ-devconsole.png)
@@ -178,7 +178,7 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 環境の概要ページから&#x200B;**環境**&#x200B;の詳細ページに移動します。
 
 >[!NOTE]
->パブリッシュサービスとプレビューサービスの両方で、Cloud Managerのサイトプログラムでカスタムドメイン名がサポートされるようになりました。 各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。
+>Cloud Manager では、Sites プログラムのパブリッシュサービスとプレビューサービスの両方でカスタムドメイン名がサポートされるようになりました。各 Cloud Manager 環境は、1 つの環境につき最大 250 個のカスタムドメインをホストできます。
 
 使用している環境のパブリッシュサービスに対して、次のアクションを下記のとおり実行できます。
 
@@ -198,7 +198,7 @@ Webサイトがパブリッシュ環境に到達して公開される前に、We
 環境の概要ページから環境の詳細ページに移動します。ここで、使用している環境のパブリッシュサービスやオーサーサービスに対して次のアクションを実行できます。
 
 >[!NOTE]
->IP許可リスト機能が、オーサー、パブリッシュ、プレビューサービス用のCloud Managerでサポートされるようになりました（Sitesプログラムで使用できます）。
+>Cloud Manager では、（Sites プログラムで使用可能な）オーサーサービス、パブリッシュサービスおよびプレビューサービスで IP 許可リスト機能がサポートされるようになりました。
 
 ### IP 許可リストの適用 {#apply-ip-allow-list}
 

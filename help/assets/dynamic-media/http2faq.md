@@ -6,7 +6,7 @@ exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 90%
+ht-degree: 93%
 
 ---
 
@@ -47,7 +47,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
    ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。
 
-   **[!UICONTROL 設定]** > **[!UICONTROL アプリケーション設定]** > **[!UICONTROL 一般設定]** に移動します。 「**公開先サーバー名**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
+   **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。「**公開先サーバー名**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
 ## Dynamic Media アカウントに対して HTTP/2 を有効にする方法  {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -60,7 +60,7 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
    ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにログインします。
 
-   **[!UICONTROL 設定]** > **[!UICONTROL アプリケーション設定]** > **[!UICONTROL 一般設定]** に移動します。 「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
+   **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
 
    * リッチメディアリクエストについて、セキュリティで保護された HTTPS を使用していることを確認します。
    * 直接的関係で管理するのではなく、アドビを介して CDN を使用していることを確認します。
@@ -68,10 +68,10 @@ HTTP/2 を使用するには、以下の要件を満たしている必要があ�
 
    ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、アカウントにログインします。
 
-   **[!UICONTROL 設定]** > **[!UICONTROL アプリケーション設定]** > **[!UICONTROL 一般設定]** に移動します。 「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
+   **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
 
-   1. カスタマーサポートは、リクエストの送信順に基づいて HTTP/2 の顧客待機リストにユーザーを追加します。
-   1. Adobeがリクエストを処理する準備が整うと、カスタマーサポートから連絡があり、移行に関する調整と目標日の設定がおこなわれます。
+   1. カスタマーサポートは、リクエストが送信された順序に基づいて HTTP/2 顧客待ちリストに追加します。
+   1. Adobeがリクエストを処理する準備が整うと、カスタマーサポートから連絡があり、移行について調整し、目標日を設定します。
    1. 完了後に通知があり、HTTP/2 への正常な切り替えを確認できます。
 
 

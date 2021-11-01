@@ -30,7 +30,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 この API では、コンテンツサービスを JavaScript フロントエンドアプリケーションに提供することで、Adobe Experience Manager as a Cloud Service をヘッドレス CMS（コンテンツ管理システム）として動作させることができます。または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。
 
-例えば、[ 単一ページアプリケーション (SPA)](/help/implementing/developing/hybrid/introduction.md)、フレームワークベースまたはカスタムでは、HTTP API を介して提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
+例： [シングルページアプリケーション (SPA)](/help/implementing/developing/hybrid/introduction.md)、フレームワークベースまたはカスタムの場合は、HTTP API を介して（多くの場合、JSON 形式で）コンテンツを提供する必要があります。
 
 [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、この目的に必要な読み取り操作を提供できる非常に包括的で柔軟性の高いカスタマイズ可能な API を提供し、その JSON 出力もカスタマイズできますが、実装には AEM WCM（Web コンテンツ管理）のノウハウが必要です。専用の AEM テンプレートに基づいた（API）ページでこれらのコンポーネントをホストする必要があるからです。すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
 
@@ -114,7 +114,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
   </tr>
   <tr>
    <td>アクセス</td>
-   <td><p>直接アクセスできます。</p> <p><code>/api/assets </code> エンドポイントを使用し、（リポジトリ内の）<code>/content/dam</code>にマッピングします。</p> 
+   <td><p>直接アクセスできます。</p> <p><code>/api/assets </code> エンドポイントを使用し、（リポジトリー内の）<code>/content/dam</code>にマッピングします。</p> 
    <p>パスの例を次に示します。 <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
     <td><p>AEM ページ上の AEM コンポーネントを通じて参照する必要があります。</p> <p><code>.model</code> セレクターを使用して JSON 表現を作成します。</p> <p>パスの例を次に示します。<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
@@ -198,7 +198,7 @@ Assets REST API では、URL パラメーターを介して（GET リクエス�
 
 ### フォルダー {#folders}
 
-フォルダーは、アセットやその他のフォルダーのコンテナとして機能します。AEM コンテンツリポジトリの構造を反映しています。
+フォルダーは、アセットやその他のフォルダーのコンテナとして機能します。AEM コンテンツリポジトリーの構造を反映しています。
 
 Assets REST API は、フォルダーのプロパティ（名前、タイトルなど）へのアクセスを公開します。アセットは、フォルダーの子エンティティ、およびサブフォルダーとして公開されます。
 
@@ -233,7 +233,7 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 現在、コンテンツフラグメントの構造を定義するモデルは、HTTP API では公開されません。そのため、*コンシューマー*&#x200B;は（最低でも）フラグメントのモデルについて理解する必要があります。ただし、ほとんどの情報はペイロードから推測することができます。データタイプなどは定義の一部だからです。
 
-新しいコンテンツフラグメントを作成するには、（内部リポジトリ）モデルのパスを指定する必要があります。
+新しいコンテンツフラグメントを作成するには、（内部リポジトリー）モデルのパスを指定する必要があります。
 
 #### 関連コンテンツ {#associated-content}
 

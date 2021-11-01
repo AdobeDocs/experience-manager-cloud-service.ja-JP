@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
-description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5の主な変更点です。'
+description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5 の主な変更点です。'
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 68%
+ht-degree: 94%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 68%
    * 詳しくは、[アセットマイクロサービスの設定と使用](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
    * 処理におけるワークフローステップをカスタマイズするには、[後処理ワークフロー](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)を使用できます。
 
-* 変換をおこなわずにバイナリファイルを配信するWebサイトコンポーネントでは、直接ダウンロードを使用できます。 SlingGETサーブレットが更新され、開発者がデフォルトでこれをおこなえるようになりました。 バイナリを何らかの変換（例えば、サーブレットを介してサイズ変更）で配信するWebサイトコンポーネントは、引き続きそのまま動作します。
+* 変換を行わずにバイナリファイルを配信する Web サイトコンポーネントでは、直接ダウンロードを使用できます。Sling Get Servlet が更新され、開発者はデフォルトでこれを行えるようになりました。何らかの変換（サーブレットを使用したサイズ変更など）を行ってバイナリを配信する Web サイトコンポーネントは、引き続きそのまま動作します。
 
 アセットマイクロサービスで生成された標準レンディションは、同じ命名規則を使用して、下位互換性のある方法でアセットリポジトリーノードに保存されます。
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
-アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスは、サードパーティのレンダリングツールやメソッド（[!DNL ImageMagick]など）が不要になり、設定が簡単になると同時に、一般的なファイルタイプに標準搭載の機能を提供します。 以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は[!DNL ImageMagick]などのサードパーティソリューションが必要だったPSD形式とPSB形式のサムネール抽出が可能になりました。 [!DNL ImageMagick]の複雑な設定は、[!UICONTROL 処理プロファイル]の設定には使用できません。 ビデオの高度な FFmpeg トランスコードに [!DNL Dynamic Media] を使用し、[MP4 ビデオの基本的なトランスコード](/help/assets/manage-video-assets.md#transcode-video)に処理プロファイルを使用します。
+アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（[!DNL ImageMagick] など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は次のようなサードパーティソリューションが必要だったPSDおよび PSB 形式を、サムネール抽出できるようになりました。 [!DNL ImageMagick]. [!DNL ImageMagick] の複雑な設定は、[!UICONTROL 処理プロファイル]の設定には使用できません。ビデオの高度な FFmpeg トランスコードに [!DNL Dynamic Media] を使用し、[MP4 ビデオの基本的なトランスコード](/help/assets/manage-video-assets.md#transcode-video)に処理プロファイルを使用します。
 
 アセットマイクロサービスは、Cloud Manager で管理されるユーザープログラムと環境にある Adobe [!DNL Experience Manager] に自動的にプロビジョニングされて接続される、クラウドネイティブなサービスです。Adobe [!DNL Experience Manager] の拡張やカスタマイズを行う場合、開発者は、既存のコンテンツまたはクラウド環境で生成されたレンディションを含んだアセットを使用して、アセットの使用、表示、ダウンロードを行うコードをテストし検証できます。
 
@@ -52,20 +52,20 @@ ht-degree: 68%
 | 機能またはユースケース | [!DNL Experience Manager] as a [!DNL Cloud Service] のステータス | コメント |
 |-----|-----|-----|
 | [重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作が異なる | [ [!DNL Experience Manager] 6.5 での動作](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=ja)を参照してください。 |
-| [プレースメント専用（FPO）レンディション](/help/assets/configure-fpo-renditions.md) | 動作が異なる | 処理プロファイルは、アセットマイクロサービスを使用してFPOレンディションを生成します。 Experience Manager6.5では、[!DNL ImageMagick]などのサードパーティソリューションを使用してレンディションを生成できました。 |
+| [プレースメント専用（FPO）レンディション](/help/assets/configure-fpo-renditions.md) | 動作が異なる | 処理プロファイルは、アセットマイクロサービスを使用して FPO レンディションを生成します。 Experience Manager6.5 では、 [!DNL ImageMagick] レンディションの生成に使用できました。 |
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効必要に応じて、対応するワークフローランチャーを有効にします。書き戻しは、アセットマイクロサービスで処理されます。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動の介入が必要 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して手動で再処理します。 |
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=ja)を参照してください。 |
-| 複合アセットのサブアセットの生成 | 非対応 | 注釈などの依存ユースケースは満たされない場合があります。 [Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。[2021.7.0リリース](/help/release-notes/release-notes-cloud/release-notes-current.md)以降、一部のファイルタイプのPDFプレビューが利用可能になりました。 |
+| 複合アセットのサブアセットの生成 | 非対応 | 注釈などの従属ユースケースが実行されない可能性があります。[Adobe  [!DNL Experience Manager] 6.5 でのサブアセットの作成](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=ja#generate-subassets)を参照してください。[2021.7.0 リリース](/help/release-notes/release-notes-cloud/release-notes-current.md)以降、一部のファイルタイプの PDF プレビューが使用可能になりました。 |
 | ホームページ | 非対応 | [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=ja) を参照してください。 |
 | ZIP アーカイブからのアセットの抽出 | 非対応 | [Adobe  [!DNL Experience Manager] 6.5 の ZIP 抽出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=ja#extractzip)を参照してください。 |
-| Assetsの評価 | 非対応 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
-| コンテンツ廃棄フィルター | 非対応 | `ContentDispositionFilter`の一般的な使用例は、管理者がHTMLファイルを配信し、PDFファイルをダウンロードする代わりにインラインで開くように[!DNL Experience Manager]を設定できるようにすることです。 パブリッシュインスタンスでは、Dispatcher設定を使用して廃棄を管理できます。 オーサーインスタンスでは、AdobeはContent Dispositionヘッダーの変更をお勧めしません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html)の「Content Disposition」フィルターを参照してください。[ |
-| [レポートをダウンロード](/help/assets/asset-reports.md) | 非対応 | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html)の[ダウンロードレポートを参照してください。 |
-| 製品撮影テンプレート | 非対応 |  [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html)の[製品撮影テンプレートを参照してください。 |
-| スマート翻訳 | 非対応 | [スマー](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html) ト翻訳は、 as aではサポー [!DNL Experience Manager] トされていま [!DNL Cloud Service]せん。 |
-| WebDAV | 非対応 | 代替策については、[[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md)または[Developer reference material](/help/assets/developer-reference-material-apis.md)を参照してください。 |
-| クラシック UI | 非対応 | タッチ操作対応のユーザーインターフェイスのみ使用できます。 |
+| アセット評価 | 非対応 | メタデータスキーマエディターの評価ウィジェットはサポートされていません。 |
+| Content Disposition フィルター | 非対応 | `ContentDispositionFilter` の一般的なユースケースは、HTML ファイルを配信するように、また PDF ファイルをダウンロードする代わりにインラインで開くように管理者が [!DNL Experience Manager] を設定できるようにすることです。パブリッシュインスタンスでは、Dispatcher 設定を使用して処理を管理できます。オーサーインスタンスでは、Content-Disposition ヘッダーの変更をお勧めしません。[Content Disposition フィルター： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=ja) を参照してください。 |
+| [レポートをダウンロード](/help/assets/asset-reports.md) | 非対応 | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。[ダウンロードレポート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=ja) を参照してください。 |
+| 製品撮影テンプレート | 非対応 | [製品撮影テンプレート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=ja) を参照してください。 |
+| スマート翻訳 | 非対応 | [スマート翻訳](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=ja)は [!DNL Experience Manager] as a [!DNL Cloud Service] ではサポートされていません。 |
+| WebDAV | 非対応 | 代替手段については、 [[!DNL Creative Cloud] 統合](/help/assets/aem-cc-integration-best-practices.md) または [開発者向けリファレンス資料](/help/assets/developer-reference-material-apis.md). |
+| クラシック UI | 非対応 | タッチ操作対応 UI のみ使用できます。 |
 
 >[!MORELIKETHIS]
 >

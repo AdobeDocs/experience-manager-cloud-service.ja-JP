@@ -7,7 +7,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Analytics 設定ウインドウで表示される設定フィールドは�
 | ユーザー名 | Adobe Analytics API ユーザー |
 | パスワード | 認証に使用される Adobe Analytics パスワード |
 | データセンター | アカウントが関連付けられている Adobe Analytics データセンター（サンノゼやロンドンなどのサーバー） |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)を参照してください。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
 
 ### サイトへの設定の追加 {#add-configuration}
@@ -55,9 +55,9 @@ Adobe Analytics 設定ウインドウで表示される設定フィールドは�
 
 Adobe Analytics は、Launch プロパティで拡張機能として追加できます。マッピングの実行と、Adobe Analytics に対して POST 呼び出しを行うルールを定義できます。
 
-* 基本的なサイトに対して Analytics の拡張機能を Launch で設定する方法については、[このビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html)をご覧ください。
+* 基本的なサイトに対して Analytics の拡張機能を Launch で設定する方法については、[このビデオ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/via-adobe-launch/basic-configuration-of-the-analytics-launch-extension.html?lang=ja)をご覧ください。
 
-* ルールを作成して Adobe Analytics にデータを送信する方法の詳細については、[このページ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html)を参照してください。
+* ルールを作成して Adobe Analytics にデータを送信する方法の詳細については、[このページ](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=ja)を参照してください。
 
 >[!NOTE]
 >

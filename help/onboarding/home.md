@@ -5,11 +5,11 @@ exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 58%
+ht-degree: 84%
 
 ---
 
-# [!DNL Experience Manager as a Cloud Service]へのオンボーディングを開始します {#aem-onboarding-guide}
+# オンボーディングを開始 [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
@@ -20,14 +20,14 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 ## オンボーディングエクスペリエンス {#audience}
 
-オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=en)が組織のCloud ServiceとしてAEMを設定するプロセスです。 これには、各メンバーがCloud Serviceリソースとしてログインし、AEMにアクセスできるクラウドリソースの初期プロビジョニングや、その後の職務責任に基づく適切な役割へのユーザーの割り当てが含まれます。
+オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=ja)が組織の AEM as a Cloud Service をセットアップするプロセスです。これには、クラウドリソースの初期プロビジョニングと、ユーザーを職務に基づいて適切な役割に割り当てる作業が含まれます。これらの役割に従って、各メンバーが AEM as a Cloud Service リソースにログインしてアクセスできるようになります。
 
-以下の図に示すオンボーディングジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトします。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
+以下の図に示すオンボーディングジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトしています。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 >[!NOTE]
->オンボーディングジャーニーの使用を開始するには、[オンボーディングエクスペリエンス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en)を参照してください。
+>詳しくは、 [オンボーディングジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) オンボーディングエクスペリエンスを開始するには：
 
 
 ## [!DNL Experience Manager as a Cloud Service] ガイド {#aem-guides}
@@ -35,25 +35,25 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 | ユーザーガイド | 説明 |
 |---|---|
 | [Adobe Experience Manager as a Cloud Service のホーム](/help/landing/home.md) | Adobe Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。 |
-| [概要](/help/overview/home.md) | このガイドでは、導入、用語、アーキテクチャなど、[!DNL Experience Manager as a Cloud Service]の概要を説明します。 |
-| [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能、削除された機能、既知の問題など、[!DNL Experience Manager as a Cloud Service]の最新リリースに関する重要な情報を提供します。 |
-| [セキュリティユーザーガイド](/help/security/home.md) | [!DNL Experience Manager as a Cloud Service]に関する重要なセキュリティトピックについて説明します。 |
-| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Cloud Serviceとして[!DNL Experience Manager Sites]を使用してオーサリングおよび管理する方法を理解します。 |
-| [Assets ユーザーガイド](/help/assets/home.md) | [!DNL Experience Manager Assets as a Cloud Service]の使い方と管理方法を理解します。 |
+| [概要](/help/overview/home.md) | このガイドでは、 [!DNL Experience Manager as a Cloud Service]（概要、用語、アーキテクチャなど）。 |
+| [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe [!DNL Experience Manager as a Cloud Service] の最新リリースに関する重要な情報を提供します。 |
+| [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager as a Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
+| [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |
+| [Assets ユーザーガイド](/help/assets/home.md) | Adobe [!DNL Experience Manager Assets as a Cloud Service] の使用および管理方法について説明します。 |
 | [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md) | AEM as a Cloud Service への移行プロセスについて説明します |
 | [実装ユーザーガイド](/help/implementing/home.md) | AEM の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | AEM の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
-| [コネクタユーザーガイド](/help/connectors/home.md) | [!DNL Experience Manager as a Cloud Service]にコネクタを統合する方法を説明します。 |
-| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe [!DNL Experience Manager as a Cloud Service]  のバックエンド運用について説明します。 |
-| [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | [!DNL Experience Manager as a Cloud Service]のCommerce Integration Frameworkについて説明します。 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | このガイド付きジャーニーを通じて AEM の強力かつ柔軟なヘッドレス機能を調べ、初めてのヘッドレスプロジェクトの準備を行います。 |
+| [コネクタユーザーガイド](/help/connectors/home.md) | Adobe [!DNL Experience Manager as a Cloud Service] にコネクタを統合する方法を説明します。 |
+| [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe [!DNL Experience Manager as a Cloud Service] のバックエンド運用について説明します。 |
+| [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | Adobe [!DNL Experience Manager as a Cloud Service] のコマース統合フレームワークについて説明します。 |
 
-## その他の[!DNL Experience Manager]リソース {#other-resources}
+## Adobe [!DNL Experience Manager] に関するその他のリソース {#other-resources}
 
 * [最近のドキュメントの更新](https://helpx.adobe.com/jp/experience-manager/documentation-updates.html#AEMasaCloudService)
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-* [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html)
+* [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=ja)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

@@ -70,7 +70,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `/apps/settings`
    + ACL（権限）
       + `/apps` の配下にある任意のパスの任意の `rep:policy`
-   + [コンパイル済みのバンドルスクリプト](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [事前にコンパイルされたバンドルされたスクリプト](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
 + `ui.config` パッケージには、すべての [OSGi](/help/implementing/deploying/configuring-osgi.md) 設定が含まれます。
    + 実行モード固有の OSGi 構成定義を含む組織フォルダー

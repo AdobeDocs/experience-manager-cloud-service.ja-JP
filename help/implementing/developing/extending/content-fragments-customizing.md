@@ -5,7 +5,7 @@ exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
 workflow-type: tm+mt
 source-wordcount: '1808'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -97,7 +97,7 @@ Assets コアと統合するには：
 
 >[!CAUTION]
 >
->[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)。詳しくは、[コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)を参照してください。
+>[コンテンツフラグメントコンポーネントは、コアコンポーネントの一部です](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ja)。詳しくは、[コアコンポーネントの開発](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=ja)を参照してください。
 
 コンテンツフラグメントは、その他のアセットタイプと同様に、AEM ページから参照できます。AEM では、**[コンテンツフラグメントコアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)**&#x200B;を利用できます。これは、[コンテンツフラグメントをページ上に含めることができるコンポーネント](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page)です。この&#x200B;**[コンテンツフラグメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**&#x200B;コアコンポーネントを拡張することもできます。
 
@@ -131,7 +131,7 @@ Assets コアと統合するには：
 
 * **翻訳**
 
-   コンテンツフラグメントは、[AEM翻訳ワークフロー ](/help/sites-cloud/administering/translation/overview.md) と完全に統合されています。 つまり、アーキテクチャレベルでは以下を意味します。
+   コンテンツフラグメントは、 [AEM翻訳ワークフロー](/help/sites-cloud/administering/translation/overview.md). つまり、アーキテクチャレベルでは以下を意味します。
 
    * コンテンツフラグメントの個々の翻訳は、実際には別々のフラグメントです。例えば、以下のようになります。
 
@@ -301,7 +301,7 @@ Assets コアと統合するには：
 
 `com.adobe.cq.dam.cfm.ContentFragment`
 
-例えば、次の操作が可能です。
+次に例を示します。
 
 ```java
 // first, get the resource
@@ -317,7 +317,7 @@ if (fragmentResource != null) {
 
 新しいコンテンツフラグメントをプログラムで作成するには、モデルリソースから適合した `FragmentTemplate` を使用する必要があります。
 
-例えば、次の操作が可能です。
+次に例を示します。
 
 ```java
 Resource modelRsc = resourceResolver.getResource("...");

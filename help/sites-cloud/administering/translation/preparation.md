@@ -17,7 +17,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->コンテンツを初めて翻訳する場合は、 AEMの強力な翻訳ツールを使用してAEM Sitesコンテンツを翻訳する際のガイドとなる[サイト翻訳ジャーニー(](/help/journey-sites/translation/overview.md))を参照してください。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
 
 [WKND チュートリアルサイト](/help/implementing/developing/introduction/develop-wknd-tutorial.md)には、複数の言語ブランチが含まれています。使用される構造は次のとおりです。
 
@@ -71,7 +71,7 @@ ht-degree: 95%
 * `<language-code>`：サポートされている言語コードは、ISO-639-1 で定義されている 2 文字のコード（例：`en`）です。
 * `<language-code>_<country-code>` または `<language-code>-<country-code>`：サポートされている国コードは、ISO 3166 で定義されている小文字または大文字 2 文字のコード（例：、`en_US`、`en_us`、`en_GB`、`en-gb`）です。
 
-グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、WKND サイトのフランス語の言語コピーのルートページの「`fr`名前&#x200B;**」プロパティは** になります。「**名前**」プロパティは、リポジトリ内の page ノードの名前として使用されるため、このプロパティによってページのパス（`http://<host>:<4502>/content/wknd/language-masters/fr.html`）が指定されます。
+グローバルサイト用に選択した構造に従って、どちらかの形式を使用できます。例えば、WKND サイトのフランス語の言語コピーのルートページの「`fr`名前&#x200B;**」プロパティは** になります。「**名前**」プロパティは、リポジトリー内の page ノードの名前として使用されるため、このプロパティによってページのパス（`http://<host>:<4502>/content/wknd/language-masters/fr.html`）が指定されます。
 
 1. サイトに移動します。
 1. 言語コピーを作成するサイトをクリックまたはタップします。

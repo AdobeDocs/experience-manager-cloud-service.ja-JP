@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 77%
+ht-degree: 92%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 77%
 
 *実稼動*&#x200B;プログラムは、AEM と Cloud Manager に精通し、コードを実稼動版に展開する目的で、コードの記述、構築、テストを開始する準備が整っているユーザーを対象としています。
 
-Cloud Managerでプログラムを作成する方法については、2部構成のチュートリアルビデオをご覧ください。
+Cloud Manager でプログラムを作成する方法については、2 部構成のチュートリアルビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/334953)
 
@@ -41,7 +41,7 @@ Cloud Managerでプログラムを作成する方法については、2部構成
 
    ![](assets/setup-prod-commerce.png)
 
-1. ランディングページにプログラムカードが表示されたら、「**...」を選択します。**&#x200B;をクリックして、使用可能なメニューオプションを確認します。 次の図に示すように、「**Cloud Manager**」を選択して、Cloud Managerの&#x200B;**概要**&#x200B;ページに移動します。
+1. ランディングページにプログラムカードが表示されたら、「**...**」を選択して、使用可能なメニューオプションを確認します。   選択 **Cloud Manager**（下の図を参照）、Cloud Manager の **概要** ページ。
 
    ![](assets/navigate-cm.png)
 

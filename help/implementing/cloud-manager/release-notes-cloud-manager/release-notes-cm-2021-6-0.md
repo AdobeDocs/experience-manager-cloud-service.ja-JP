@@ -5,7 +5,7 @@ feature: Release Information
 source-git-commit: a707968483dc1196628b737ad207bfefe63ca94b
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 53%
 
 ## リリース日 {#release-date}
 
-AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10日です。
+AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年 6 月 10 日です。
 
 ### 新機能 {#what-is-new}
 
-* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。 お客様は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。 詳しくは、[Preview Serviceへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
+* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。顧客は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。詳しくは、[プレビューサービスへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
 * ビルド手順中にダウンロードされた Maven の依存関係は、パイプライン実行から次回の実行までの間にキャッシュされるようになりました。この機能は、今後数週間にわたり、お客様に対して有効になる予定です。
 
-* プログラムの名前は、プログラムを編集ダイアログで編集できるようになりました。
+* プログラムを編集ダイアログでプログラムの名前を編集できるようになりました。
 
 * プロジェクトの作成時に使用されるデフォルトのブランチ名と、Git 管理ワークフロー経由のデフォルトのプッシュコマンドで使用されるデフォルトのブランチ名が `main` に変更されました。
 
@@ -36,13 +36,13 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * 品質ルール `CQBP-84` と `CQBP-84--dependencies` は、1 つのルールに統合されました。この統合の一環として、AEM ランタイムにデプロイされるサードパーティの依存関係の問題を、依存関係のスキャンでより正確に特定できます。
 
-* 混乱を避けるために、環境の詳細ページのパブリッシュAEMとパブリッシュDispatcherのセグメント行が統合されました。
+* 混乱を避けるために、環境の詳細ページのパブリッシュ AEM とパブリッシュ Dispatcher のセグメント行が統合されました。
 
    ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
-* `damAssetLucene`インデックスの構造を検証するための新しいコード品質ルールが追加されました。 詳しくは、[カスタムDAM Asset Lucene Oakインデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
+* `damAssetLucene` インデックスの構造を検証するための新しいコード品質ルールが追加されました。詳しくは、[カスタム DAM Asset Lucene Oak インデックス](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check)を参照してください。
 
-* 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。 詳しくは、[環境の詳細](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment)を参照してください。
+* 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。詳しくは、[環境の詳細](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#viewing-environment)を参照してください。
 
 ### バグ修正 {#bug-fixes}
 
@@ -52,8 +52,8 @@ AEM as aCloud Service2021.6.0のCloud Managerのリリース日は2021年6月10�
 
 * スケジュール手順に無効な値が指定された場合、誤ったエラーメッセージが表示されていました。
 
-* 場合によっては、IP許可リストがデプロイされていない場合でも、その設定の横に緑色の&#x200B;*アクティブ*&#x200B;ステータスが表示されることがあります。
+* 該当する設定がデプロイされていない場合でも、IP 許可リストの横に緑色の「*アクティブ*」ステータスが表示される場合がありました。
 
-* 一部のプログラム編集シーケンスでは、実稼動パイプラインを作成または編集できなくなる可能性があります。
+* 一部のプログラム編集シーケンスで実稼動パイプラインを作成または編集できなくなることがありました。
 
-* 一部のプログラム編集シーケンスでは、**概要**&#x200B;ページに、プログラム設定を再実行する際に誤解を招くようなメッセージが表示される場合があります。
+* 一部のプログラム編集シーケンスでは、**概要**&#x200B;ページに、プログラム設定を再実行する際に誤解を招くようなメッセージが表示されることがありました。

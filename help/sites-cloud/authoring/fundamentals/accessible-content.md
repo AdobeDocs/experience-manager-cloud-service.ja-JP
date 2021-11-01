@@ -5,7 +5,7 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '14050'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Web ページ上の情報はテキスト以外の様々な形式（写真、ビ�
 
 >[!NOTE]
 >
->標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**」タブ）は全コンポーネントにあります。
+>標準搭載のコアコンポーネントには、個々の画像に代替テキスト記述を追加するための「**代替テキスト**」フィールドが用意されていないもの（**[カルーセル](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=ja)**&#x200B;など）もありますが、「**ラベル**」フィールド（「**[アクセシビリティ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=ja#accessibility-tab)**」タブ）は全コンポーネントにあります。
 >
 >AEM インスタンスにこれらのバージョンを実装する場合は、作成者がコンテンツに追加できるように、開発チームは `alt` 属性をサポートするようにこれらのコンポーネントを設定する必要があります（追加の HTML 要素および属性のサポートの追加を参照）。
 >
@@ -360,7 +360,6 @@ AEM では、適切な HTML 要素を使用することにより、意味のあ�
 
       >
       >それぞれ実質的には同じですが、好ましいのは、意味的に正しい HTML である `<strong>` と `<em>` です。開発チームがプロジェクトインスタンスを作成する際に、`<strong>` と `<em>` ではなく `<b>` と `<i>` を使用するように RTE を設定できます。
-
 
 * **複雑なデータテーブル**：レベルが 2 つ以上あるヘッダーを含む複雑なテーブルがある場合など、場合によっては、基本的なテーブルのプロパティでは必要な構造情報を十分に指定できないことがあります。このような複雑なテーブルでは、**header** 属性と **id** 属性を使用して、ヘッダーとその関連セルの間に直接の関係を作成する必要があります。
 

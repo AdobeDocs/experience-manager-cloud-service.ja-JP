@@ -5,7 +5,7 @@ exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 61%
+ht-degree: 97%
 
 ---
 
@@ -22,79 +22,79 @@ ht-degree: 61%
 
 ## リリース日 {#release-date}
 
-[!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 のリリース日は 2021 年 5 月 27 日です。次のリリース(2021.6.0)は、2021年6月29日に予定されています。
+[!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 のリリース日は 2021 年 5 月 27 日です。次回のリリース（2021.6.0）は、2021 年 6 月 28 日に予定されています。
 
 ## AEM as a Cloud Service の基盤 {#foundation}
 
-### AEM as a Cloud Service基盤の新機能 {#what-is-new-foundation}
+### AEM as a Cloud Service 基盤の新機能 {#what-is-new-foundation}
 
-* [プレリリースチャネル](/help/release-notes/prerelease.md):本番運用開始前の1ヶ月間に予定されている機能のプレビュー
+* [プレリリースチャネル](/help/release-notes/prerelease.md)：本番運用開始前の 1 か月間に予定されている機能のプレビュー
 
-* [APIの廃止](/help/release-notes/deprecated-apis.md):AEM as a Experienceの最新の非推奨APIのリストをご利用いただけます。Cloud Service
+* [非推奨 API](/help/release-notes/deprecated-apis.md)：AEM as a Cloud Service の最新の非推奨 API リストが公開されています。
 
-* [AEM as aCloud ServiceSDK Build Analyzer Mavenプラグイン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html):非推奨のJava APIチェックやその他の改善点を含む、Mavenプロジェクトを最新バージョンに更新します。
+* [AEM as a Cloud Service SDK Build Analyzer Maven プラグイン](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=ja)：非推奨の Java API のチェックやその他の改善点を含む最新バージョンに、Maven プロジェクトを更新します。
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### [!DNL Sites] の新機能 {#what-is-new-sites}
+### [!DNL Sites] の新機能  {#what-is-new-sites}
 
-* 近日中に、新しい[プレビュー層](/help/sites-cloud/authoring/fundamentals/previewing-content.md)でコンテンツを検証して、パブリッシュ層と同じように最終的なエクスペリエンスのルックアンドフィールをシミュレートできます。 これは、AEM Sites Managed Publishionウィザードで有効になり、公開またはプレビューのどちらかの公開先を選択できるようになりました。 プレビュー時のエクスペリエンスは、専用のURLからアクセスできます。 プレビューでの検証後、通常どおりコンテンツをオーサーからパブリッシュに公開できます。 AEM as a Cloud Service環境でのPreview Serviceの有効化は、今後数週間で徐々に展開される予定です。
+* 近日中に、新しい[プレビュー層](/help/sites-cloud/authoring/fundamentals/previewing-content.md)でコンテンツを検証し、最終的なエクスペリエンスのルックアンドフィールをパブリッシュ層と同じようにシミュレートできるようになります。これは、AEM Sites Managed Publishion ウィザードで、公開先を公開またはプレビューから選択できるようになったことによるものです。プレビュー時のエクスペリエンスには、専用の URL からアクセスできます。プレビューで検証した後は、通常どおり作成者がコンテンツを公開できます。AEM as a Cloud Service 環境でのプレビューサービスの有効化は、今後数週間で徐々に展開される予定です。
 
-## [!DNL Adobe Experience Manager Assets] として  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] の新機能 {#what-is-new-assets}
+### [!DNL Assets] の新機能  {#what-is-new-assets}
 
-* リンク共有機能を使用して、共有したアセットをダウンロードできます。 このダウンロードでは、非同期サービスを使用するようになり、非常に大きなダウンロードでも、高速で中断のないダウンロードを提供します。 詳しくは、「[アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)」を参照してください。
+* リンク共有機能を使用して、共有アセットをダウンロードできます。このダウンロードには、非同期サービスが採用されており、大容量のダウンロードであっても、高速で中断のないダウンロードが可能になっています。詳しくは、「[アセットのダウンロード](/help/assets/download-assets-from-aem.md#link-share-download)」を参照してください。
 
-   ![ダウンロードインボックス](/help/assets/assets/download-inbox.png)
+   ![インボックスをダウンロード](/help/assets/assets/download-inbox.png)
 
 ### プレリリースチャネルで使用できる新機能 {#what-is-new-assets-prerelease}
 
 * メタデータスキーマは、フォルダーのプロパティに直接適用できます。
 
-   ![フォルダープロパティからのメタデータスキーマの追加](/help/assets/assets/metadata-schema-folder-properties.png)
+   ![フォルダープロパティからメタデータスキーマを追加する](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* アセット一括取り込みツールを使用すると、一括取り込み中にメタデータを追加できます。
+* アセット一括取得ツールを使用すると、一括取得中にメタデータを追加できます。
 
-* ユーザーエクスペリエンスの機能強化では、フォルダー内に存在するアセットの数が表示されます。 1つのフォルダー内のアセットが1000個を超える場合、[!DNL Assets]には1000以上と表示されます。
+* ユーザーエクスペリエンスが改善され、フォルダー内に存在するアセットの数が表示されます。1 つのフォルダー内のアセットが 1000 個を超える場合、[!DNL Assets] には「1000+」と表示されます。
 
    ![フォルダー内のアセット数がインターフェイスに表示されます](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### [!DNL Assets] で修正されたバグ {#assets-bugs-fixed}
+### [!DNL Assets] で修正されたバグ  {#assets-bugs-fixed}
 
-* 非常に大きなファイルをアップロードすると、[!DNL Experience Manager desktop app]がクラッシュします。 （CQ-4320942）
-* フォルダー内で同じコレクションが選択されている場合と、検索結果から同じコレクションが選択されている場合で、ツールバーのオプションは異なります。 （CQ-4321406）
+* 非常に大きなファイルをアップロードすると、[!DNL Experience Manager desktop app] がクラッシュします。（CQ-4320942）
+* 同じコレクションがフォルダー内で選択されている場合と、検索結果から選択されている場合では、ツールバーのオプションは異なります。（CQ-4321406）
 
-#### Dynamic Mediaの新機能 {#what-is-new-dm}
+#### Dynamic Media の新機能 {#what-is-new-dm}
 
-* スマートイメージングDPR(Device Pixel Ratio)とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。 詳しくは、[スマートイメージングFAQ](/help/assets/dynamic-media/imaging-faq.md)および[次世代画像形式を使用した画像の最適化（WebPおよびAVIFを使用）を参照してください。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* Dynamic Media配信で、次世代の画像形式AVIFのサポートが導入されました（fmt URL修飾子）。
+* スマートイメージング DPR（Device Pixel Ratio）とネットワーク帯域幅の最適化により、高解像度のディスプレイとネットワーク帯域幅の制約があるデバイスで、最高品質の画像を効率的に配信できます。詳しくは、 [スマートイメージングに関する FAQ](/help/assets/dynamic-media/imaging-faq.md) および [次世代の画像形式 WebP および AVIF による画像の最適化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Dynamic Media配信で、次世代の画像形式 AVIF のサポートが導入されました（fmt URL 修飾子）。
 
-## [!DNL Adobe Experience Manager Forms] として  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能 {#what-is-new-forms}
+### [!DNL Forms] の新機能  {#what-is-new-forms}
 
 * **コンテキストヘルプ**：アダプティブフォームエディター、テンプレートエディター、テーマエディターのコンテキストヘルプが追加され、作成者がエディターの様々な機能をより深く理解できるようになりました。
-* **プロパティブラウザーのエラーメッセージ**：アダプティブフォームのプロパティブラウザーに各プロパティのエラーメッセージが追加されました。これらのメッセージは、フィールドに使用できる値を理解するのに役立ちます。
+* **プロパティブラウザーのエラーメッセージ**：アダプティブフォームのプロパティブラウザーに、各プロパティに関するエラーメッセージを追加しました。これらのメッセージは、フィールドの許可値を理解するのに役立ちます。
 
-### [!DNL Forms] の今後リリース予定のベータ版機能 {#what-is-new-forms-prerelease}
+### [!DNL Forms] の今後のベータ版機能 {#what-is-new-forms-prerelease}
 
-Output as a Cloud Service：Output サービスでは、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期のバッチモードでドキュメントを生成できます。出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
+Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期の一括モードでドキュメントを生成できます。出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
 
-* テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する
-* 非インタラクティブ PDF 印刷ストリームを含む様々な形式の出力フォームを生成する
-* XFA フォームの PDF ファイルから印刷用 PDF を生成する
+* テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
+* 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成する。
+* XFA フォームの PDF ファイルから印刷用 PDF を生成する。
 
-ベータ版プログラムに新規登録するには、formscsbeta@adobe.com 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録する場合は、 formscsbeta@adobe.com までお問い合わせください。
 
-### [!DNL Forms] で修正されたバグ {#forms-bugs-fixed}
+### [!DNL Forms] で修正されたバグ  {#forms-bugs-fixed}
 
-* AEM Forms ワークフローの「タスクを割り当て」ステップで、アクションボタンのデフォルトのアイコンを Coral アイコンに置き換えると、ワークフローが動作しなくなり、例外がログに記録されます。デフォルトのアイコンが使用されている場合、ワークフローは想定どおりに実行されます。
-* レイアウトレイヤーで、列数を変更し、編集レイヤーを開いて、パネル内の一部のコンポーネントをドラッグすると、青いボックスがアダプティブフォームエディターのコンテンツ領域に表示されるようになり、エディターが応答しなくなります。
-* アダプティブアセットまたは外部アセットの URL の指定に関連するルールエディターオプションのエラーメッセージが長すぎて、使いやすくありません。
+* AEM Forms ワークフローの「タスクの割り当て」手順で、アクションボタンのデフォルトのアイコンを Coral アイコンに置き換えると、ワークフローは動作を停止し、例外がログに記録されます。デフォルトのアイコンが使用されている場合、ワークフローは期待どおりに実行されます。
+* レイアウトレイヤーで、列数を変更し、編集レイヤーを開いてパネル内の一部のコンポーネントをドラッグすると、青い四角いボックスがアダプティブフォームエディターのコンテンツ領域に表示され、エディターが応答しなくなります。
+* アダプティブアセットまたは外部アセットの URL の提供に関連するルールエディターオプションのエラーメッセージが長すぎて、使いやすいものではありません。
 
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 この節では、AEM as a Cloud Service 2021.5.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
@@ -144,15 +144,15 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 ### 新機能 {#what-is-new-ctt-latest}
 
-* ユーザーにJava実行可能ファイルに対する実行権限がない場合、新しいログ文がクイックスタートのエラーログに追加されました。
+* ユーザーに Java 実行可能ファイルの実行権限がない場合、新しいログ文がクイックスタートのエラーログに追加されました。
 
-* 抽出を実行したCTT UIから移行セットを削除すると、その移行セットに関連付けられている`tmp`フォルダーが削除され、領域を節約できます。
+* 抽出を実行した CTT UI から移行セットを削除すると、その移行セットに関連付けられている `tmp` フォルダーが削除され、領域を節約できます。
 
 ### バグ修正 {#bug-fixes-ctt-latest}
 
-* 移行セットを削除する際に、CTT UIに役に立たないエラーメッセージが表示される場合があります。 この問題が修正されました。
+* 移行セットを削除する際に、CTT UI に参考にならないエラーメッセージが表示されることがありました。この問題が修正されました。
 
-* ユーザーマッピングの実行中に、ユーザーがターゲットとホストで同じ電子メールアドレスを持っていても、ユーザー名が異なる場合、取り込み全体が失敗します。 この問題が修正されました。競合するシナリオでは、ユーザー/グループはスキップされ、競合としてログファイルに記録されます。
+* ユーザーマッピングの実行中に、ユーザーがターゲットとホストで同じ電子メールアドレスを持っていても、ユーザー名が異なる場合、取り込み全体が失敗することがありました。この問題が修正されました。このような競合が発生した場合、そのユーザー／グループはスキップされ、ログファイルに競合として記録されます。
 
 ### リリース日 {#release-date-ctt}
 
@@ -178,4 +178,4 @@ AEM as a Cloud Service 2021.5.0 Cloud Manager のリリース日は 2021 年 5 �
 
 * 製品プロパティの「アセット」タブにアセットサムネールが表示されない
 
-* 製品コンソールのプレビューデータをリセットするパンくずリスト
+* パンくずリストが製品コンソールのプレビューデータをリセットする

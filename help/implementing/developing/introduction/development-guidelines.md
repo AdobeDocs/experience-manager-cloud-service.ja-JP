@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 333ebbed52577a82eb9b65b20a173e4e65e09537
 workflow-type: tm+mt
 source-wordcount: '2177'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 ## メモリ内の状態 {#state-in-memory}
 
-状態はメモリ内ではなく、リポジトリ内に保持する必要があります。そうしないと、インスタンスが停止した場合に、状態が失われる可能性があります。
+状態はメモリ内ではなく、リポジトリー内に保持する必要があります。そうしないと、インスタンスが停止した場合に、状態が失われる可能性があります。
 
 ## ファイルシステムの状態 {#state-on-the-filesystem}
 
@@ -51,7 +51,7 @@ Sling Commons Scheduler は実行を保証できないので、スケジュー�
 
 送信 HTTP 接続では、接続および読み取りの妥当なタイムアウトを設定することを強くお勧めします。これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Service 上で動作している AEM インスタンスは、グローバルタイムアウトを強制的に適用します。一般的な次の Java ライブラリで使用される接続の場合、これらのタイムアウト値は、接続呼び出しについては 10 秒、読み取り呼び出しについては 60 秒です。
 
-HTTP 接続をおこなう場合は、提供されている [Apache HttpComponents Client 4.x ライブラリ](https://hc.apache.org/httpcomponents-client-ga/)を使用することをお勧めします。
+HTTP 接続を行う場合は、提供されている [Apache HttpComponents Client 4.x ライブラリ](https://hc.apache.org/httpcomponents-client-ga/)を使用することをお勧めします。
 
 次の代替手段は、動作することはわかっていますが、依存関係を自分で指定しなければならない可能性があります。
 
@@ -91,7 +91,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 **ログレベルの設定**
 
-クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座にはおこなわれないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
+クラウド環境のログレベルを変更するには、Sling Logging OSGi 設定を変更した後、完全に再デプロイする必要があります。これは即座には行われないので、大量のトラフィックを受け取る実稼動環境で詳細なログを有効にする場合は注意が必要です。今後、ログレベルをより迅速に変更するメカニズムが提供される可能性があります。
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
-ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリ（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
+ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
 AEM as a Cloud Service 開発者環境でデバッグするためのツールセットが開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
@@ -157,7 +157,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のステータスダンプデータを表示するには、ユーザーがそれら両方のサービスで製品の AEM ユーザープロファイルまたは AEM 管理者プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)を参照してください。
 
 ### AEM のステージング環境および実稼動環境用サービス {#aem-staging-and-production-service}
 
@@ -173,30 +173,30 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 >[!NOTE]
 >
->メールサービスは、OAuth2 サポートを使用して設定できます。 詳しくは、 [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md).
+>メールサービスは、OAuth2 サポートを使用して設定できます。詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
 
-### 送信電子メールの有効化 {#enabling-outbound-email}
+### 送信メールの有効化 {#enabling-outbound-email}
 
-デフォルトでは、E メールの送信に使用するポートは無効になっています。 ポートをアクティブにするには、 [高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定し、必要な各環境に対して、 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのポート転送規則。対象のポート（465 や 587 など）をプロキシポートにマッピングします。
+デフォルトでは、E メールの送信に使用するポートは無効になっています。 ポートをアクティブにするには、 [高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定し、必要な各環境に対して `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのポート転送規則。これは、対象のポート（465 や 587 など）をプロキシポートにマッピングします。
 
-を使用して、 `kind` パラメータが `flexiblePortEgress` Adobeは、柔軟なポートエグレストラフィックのパフォーマンスを最適化できるので、 一意のエグレス IP アドレスが必要な場合は、 `kind` パラメータ `dedicatedEgressIp`. 他の理由で既に VPN を設定している場合は、その高度なネットワーク変数によって提供される一意の IP アドレスも使用できます。
+を使用して高度なネットワークを設定することをお勧めします。 `kind` パラメータをに設定 `flexiblePortEgress` Adobeは、柔軟なポート出力トラフィックのパフォーマンスを最適化できるので、 一意のエグレス IP アドレスが必要な場合は、 `kind` のパラメータ `dedicatedEgressIp`. 他の理由で既に VPN を設定している場合は、その高度なネットワークバリエーションによって提供される一意の IP アドレスも使用できます。
 
-電子メールは、電子メールクライアントに直接送信するのではなく、メールサーバーを通じて送信する必要があります。 そうしないと、E メールがブロックされる場合があります。
+電子メールクライアントに直接送信するのではなく、メールサーバーを通じて電子メールを送信する必要があります。 そうしないと、E メールがブロックされる可能性があります。
 
 ### 電子メールの送信 {#sending-emails}
 
-[Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーに電子メールを送信する必要があります。
+[Day CQ Mail Service OSGi サービス](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja#configuring-the-mail-service)を使用してください。また、受信者に直接送信するのではなく、サポートリクエストに明示されたメールサーバーに電子メールを送信する必要があります。
 
 ### 設定 {#email-configuration}
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html) 電子メールの設定について詳しくは、 AEM as a Cloud Serviceの場合、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
+電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja)を参照してください。AEMas a Cloud Serviceの場合、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
 
 * SMTP サーバーのホスト名は$に設定する必要があります[env:AEM_PROXY_HOST]
-* SMTP サーバーポートは、アドバンスドネットワークを設定する際に、API 呼び出しで使用される portForwards パラメーターで設定された元のプロキシポートの値に設定する必要があります。 例： 30465 （465 ではなく）
+* SMTP サーバーポートは、アドバンスネットワークを設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定する必要があります。 例： 30465 （465 ではなく）
 
-また、ポート 465 が要求された場合は、次のことをお勧めします。
+また、ポート 465 がリクエストされた場合は、次のことをお勧めします。
 
 * `smtp.port` を `465` に設定
 * `smtp.ssl` を `true` に設定
@@ -209,13 +209,13 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.ssl` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
 
-メールサービスは、オプションで OAuth2 サポートを使用して設定できます。 詳しくは、 [メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md).
+メールサービスは、オプションで OAuth2 サポートを使用して設定できます。 詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
 
 ### 従来の電子メール設定 {#legacy-email-configuration}
 
-2021.9.0 リリースより前は、カスタマーサポートリクエストを通じて電子メールが設定されていました。 以下の必要な調整は、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
+2021.9.0 リリースより前は、カスタマーサポートの依頼を通じて電子メールが設定されていました。 以下に、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
 
-AEM as a Cloud Serviceでは、ポート 465 を介してメールを送信する必要があります。 TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
+AEM as a Cloud Serviceでは、ポート 465 を通じてメールを送信する必要があります。 TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
 
 ポート 465 がリクエストされた場合：
 
@@ -229,9 +229,9 @@ AEM as a Cloud Serviceでは、ポート 465 を介してメールを送信す�
 
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.ssl` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
-SMTP サーバーホストは、使用するメールサーバーのホストに設定する必要があります。
+SMTP サーバーホストは、メールサーバーのホストに設定する必要があります。
 
 
-## [!DNL Assets] 開発ガイドラインと使用例 {#use-cases-assets}
+## [!DNL Assets] 開発のガイドラインとユースケース {#use-cases-assets}
 
-Assets as a Cloud Serviceの開発ユースケース、推奨事項、リファレンス資料については、 [アセットの開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).
+AEM Assets as a Cloud Service の開発のユースケース、推奨事項、参考資料については、[Assets の開発者向けリファレンス](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)を参照してください。

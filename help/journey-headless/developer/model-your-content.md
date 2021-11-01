@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -273,4 +273,4 @@ tbc...
 * [AEM GraphQL スキーマ](access-your-content.md) - GraphQL によるモデルの実現方法
 * [サンプルコンテンツフラグメント構造](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM ヘッドレスの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) - コンテンツモデリングや GraphQL など、AEM ヘッドレス機能の使用の概要を説明する短いビデオチュートリアルシリーズです。
-   * [GraphQLモデリングの基礎](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html)  - Adobe Experience Manager(AEM)でGraphQLと共に使用するコンテンツフラグメントを定義して使用する方法を説明します。
+   * [GraphQL モデリングの基礎](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=ja) - Adobe Experience Manager（AEM）でコンテンツフラグメントを定義して使用し、GraphQL と共に使用する方法を説明します。

@@ -5,7 +5,7 @@ exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
 workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -167,7 +167,7 @@ AEM では引き続き、管理者ユーザーのローカルログインをサ�
 
 >[!NOTE]
 >
->IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーがFederated IDを使用して設定されている場合、ログインには会社の ID プロバイダーを使用して認証されます。
+>IMS で作成された任意のユーザーは、Adobe ID または Federated ID を使用して作成できます。ユーザーが Federated ID を使用して設定されている場合、ログインには会社の ID プロバイダーを使用して認証されます。
 
 その後、ユーザーは IMS ログイン画面にリダイレクトされ、認証情報を入力する必要があります。
 
@@ -213,7 +213,7 @@ Cloud Manager または AEM as a Cloud Service 環境としてアクセスする
 Cloud Manager の特定の機能の可用性を管理するユーザーの役割について詳しくは、役割の定義を参照してください。
 
 >[!NOTE]
->Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。特定の権限、事前設定済みのタスク、または各役割に関連付けられた権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html)を参照してください。
+>Cloud Manager には、適切な権限を持つ事前設定済みの役割が用意されています。特定の権限、事前設定済みのタスク、または各役割に関連付けられた権限を持つ各役割について詳しくは、[役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=ja)を参照してください。
 
 **ユーザーの追加手順**
 

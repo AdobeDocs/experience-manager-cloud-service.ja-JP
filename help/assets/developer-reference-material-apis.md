@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Assets] の開発者向けリファレンス'
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]。'
+description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 90%
 | × | サポートされていない。使用しないでください。 |
 | - | 使用不可 |
 
-| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager/Sling / ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager／Sling／JCR](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **元のバイナリ** |  |  |  |  |  |  |
 | オリジナルを作成 | ✓ | × | - | × | × | - |
@@ -59,23 +59,23 @@ ht-degree: 90%
 | バージョンを削除 | - | ✓ | - | - | - | - |
 | **フォルダー** |  |  |  |  |  |  |
 | フォルダーを作成 | ✓ | ✓ | - | ✓ | - | - |
-| フォルダを読み取り | - | ✓ | - | ✓ | - | - |
+| フォルダーを読み取り | - | ✓ | - | ✓ | - | - |
 | フォルダーを削除 | ✓ | ✓ | - | ✓ | - | - |
 | フォルダーをコピー | ✓ | ✓ | - | ✓ | - | - |
 | フォルダーを移動 | ✓ | ✓ | - | ✓ | - | - |
 
 ## アセットのアップロード {#asset-upload}
 
-[!DNL Experience Manager] as a [!DNL Cloud Service] では、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順を以下に示します。 [!DNL Experience Manager] JVM 内ではなく、外部アプリケーションでこれらの手順を実行します。
+[!DNL Experience Manager] as a [!DNL Cloud Service] では、HTTP API を使用して、アセットをクラウドストレージに直接アップロードできます。バイナリファイルをアップロードする手順は次のとおりです。これらの手順は、[!DNL Experience Manager] JVM 内ではなく、外部アプリケーションで実行します。
 
 1. [HTTP リクエストを送信します](#initiate-upload)。その結果、新しいバイナリをアップロードする意図が [!DNL Experience Manage]r デプロイメントに通知されます。
-1. [開始リクエストで提供](#upload-binary) される 1 つ以上の URI にバイナリのコンテンツをPUTします。
+1. [開始リクエストで提供される 1 つ以上の URI にバイナリのコンテンツを PUT 送信します。](#upload-binary)
 1. [HTTP リクエストを送信して、バイナリのコンテンツが正常にアップロードされたことをサーバーに通知します。](#complete-upload)
 
 ![直接バイナリアップロードプロトコルの概要](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
-[!DNL Experience Manager] JVM 内ではなく、外部アプリケーションで上記の手順を実行します。
+上記の手順は、[!DNL Experience Manager] JVM 内ではなく、外部アプリケーションで実行します。
 
 このアプローチで、アセットのアップロードをスケーラブルかつより効率的に処理できます。[!DNL Experience Manager] 6.5 と比較した場合の違いは次のとおりです。
 
@@ -125,7 +125,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ### バイナリのアップロード {#upload-binary}
 
-アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数の URI を指定した場合、クライアントはバイナリを複数の部分に分割し、各部分のPUTリクエストを各 URI に順におこないます。 すべての URI を使用します。各部分のサイズが、開始応答で指定された最小サイズと最大サイズの範囲内に収まっている必要があります。CDN エッジノードを使用すると、要求されたバイナリアップロードを高速化できます。
+アップロードを開始した場合の出力には、1 つ以上のアップロード URI 値が含まれています。複数の URI を指定した場合、クライアント側でバイナリを複数の部分に分割し、各部分の PUT リクエストを各 URI に順に送信します。すべての URI を使用します。各部分のサイズが、開始応答で指定された最小サイズと最大サイズの範囲内に収まっている必要があります。CDN エッジノードを使用すると、要求されたバイナリアップロードを高速化できます。
 
 これを実現するには、API で提供されるアップロード URI の数に基づいて各部分のサイズを計算する方法があります。例えば、バイナリの合計サイズが 20,000 バイトで、アップロード URI の数が 2 だとします。この場合は次の手順に従います。
 
@@ -147,14 +147,14 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 | `createVersion` | Boolean | オプション | これが `True` で、指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はアセットの新しいバージョンを作成します。 |
 | `versionLabel` | 文字列 | オプション | 新しいバージョンが作成される場合、アセットの新しいバージョンに関連付けられるラベル。 |
 | `versionComment` | 文字列 | オプション | 新しいバージョンが作成される場合、そのバージョンに関連付けられたコメント。 |
-| `replace` | Boolean | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
+| `replace` | ブール値 | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
 
 >[!NOTE]
 アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
 
 開始プロセスと同様に、完了リクエストデータには、複数のファイルに関する情報が含まれる場合があります。
 
-バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。アセットは、アップロードプロセスの完了後に処理されます。アセットのバイナリファイルが完全にアップロードされても、アップロードプロセスが完了していなければ、処理は開始しません。アップロードに成功した場合、サーバーは応答として `200` ステータスコードを返します。
+バイナリのアップロードプロセスは、ファイルの完了 URL が呼び出されるまで実行されません。アセットは、アップロードプロセスの完了後に処理されます。アセットのバイナリファイルが完全にアップロードされても、アップロードプロセスが完了していなければ、処理は開始しません。アップロードが正常に完了した場合、サーバーは応答として `200` ステータスコードを返します。
 
 ### オープンソースアップロードライブラリ {#open-source-upload-library}
 
@@ -179,13 +179,13 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## アセット処理ワークフローとアセット後処理ワークフロー {#post-processing-workflows}
 
-[!DNL Experience Manager] でのアセット処理は、[アセットマイクロサービス](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)を使用する&#x200B;**[!UICONTROL 処理プロファイル]**&#x200B;設定に基づいておこなわれます。処理には、開発者用の拡張機能は必要ありません。
+[!DNL Experience Manager] でのアセット処理は、[アセットマイクロサービス](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)を使用する&#x200B;**[!UICONTROL 処理プロファイル]**&#x200B;設定に基づいて行われます。処理には、開発者用の拡張機能は必要ありません。
 
 後処理ワークフローの設定には、カスタム手順を指定した標準ワークフローを使用します。
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-以前のバージョンの [!DNL Experience Manager] からアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。 クラウドネイティブなアセットマイクロサービスは、設定と使用が簡単です。 以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスについて詳しくは、[Java API リファレンスまたは Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) を参照してください。
+Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスの詳細については、 [Java API リファレンスまたは JavaDoc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 
