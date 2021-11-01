@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-#  Experience Manager と Adobe Creative Cloud の統合のベストプラクティス {#aem-and-creative-cloud-integration-best-practices}
+# Experience Manager と Adobe Creative Cloud の統合のベストプラクティス {#aem-and-creative-cloud-integration-best-practices}
 
 Adobe Experience Manager Assets は、Adobe Creative Cloud と統合できるデジタルアセット管理（DAM）ソリューションです。DAM ユーザーがクリエイティブチームと協力してコンテンツ作成プロセスでのコラボレーションを効率化できるようにサポートします。
 

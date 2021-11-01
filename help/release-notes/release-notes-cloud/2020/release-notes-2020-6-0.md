@@ -102,7 +102,7 @@ AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager の新機能と�
 
 * Cloud Manager から開発者コンソールへの直接リンクが、サンドボックスプログラムの環境を非休止／休止にするオプションを表示しない。これを解決するには、開発者コンソールで、url の末尾にパターン `#release-cm-p1234-e5678` を追加します。ここで、*1234* はプログラム ID、*5678* は環境 ID です。この問題は、今後のリリースで修正される予定です。
 
-##  の新機能 [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## の新機能 [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **拡張スマートタグに関するガイド付きユーザーエクスペリエンス（Adobe Sensei 搭載）**
 
