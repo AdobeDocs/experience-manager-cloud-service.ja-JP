@@ -2,7 +2,7 @@
 title: 実稼動パイプラインの設定
 description: 実稼動パイプラインの設定
 index: false
-source-git-commit: e0c21561a9a6e2940768ecb86da9b4d16e2fbfa8
+source-git-commit: 76cff84003576cf23eb1d23674ce6eaf082bbbb1
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 54%
@@ -99,3 +99,7 @@ ht-degree: 54%
    * **追加**  — 新しいパイプラインを追加できます。
    * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします.
    * **詳細情報** - CI／CD パイプラインのドキュメントリソースの概要に移動します。
+
+
+
+
