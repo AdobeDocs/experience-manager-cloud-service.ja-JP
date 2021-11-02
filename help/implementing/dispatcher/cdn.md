@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: cc9e305d96f1de55a8c3fa450aa41142bb0adfd1
+source-git-commit: 997caea86978a2306a5081ef26270dfd451ab8a4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '927'
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,9 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 取得後 `X-AEM-Edge-Key`に値を入力する場合は、次のようにリクエストが正しくルーティングされているかをテストできます。
 
-`https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'`
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+```
 
 なお、独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。Adobe CDN のルーティングは、デフォルトドメイン `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` を使用して行われます。
 
