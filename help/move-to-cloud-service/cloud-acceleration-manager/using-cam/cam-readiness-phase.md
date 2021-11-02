@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
+source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -112,7 +112,8 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 
 1. クリック **トレンドラインを表示** 次の図に示すように、レポートのトレンドライン表示を開きます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view3a.png)
+
 
    >[!NOTE]
    >トレンドラインレポートは、履歴 BPA レポートの結果をグラフで表示します。
@@ -217,11 +218,11 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 
 1. 次から削除アイコンをクリックします。 **トレンドラインレポート** 画面
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view5a.png)
 
 1. クリック **削除** 削除を確定します。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6.png)
+   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view6a.png)
 
 ## 次の手順 {#whats-next}
 
