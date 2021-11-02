@@ -5,10 +5,10 @@ breadcrumb-title: 移動ガイド
 user-guide-description: AEM as a Cloud Service への移行プロセスについて説明します。
 feature: Deploying
 role: Architect, Developer
-source-git-commit: f40a2f2fc885b2f81982ff8cd6883186d505d7f9
+source-git-commit: ba405db754fd6335c76180c7520ab9c08e259f6e
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 73%
+source-wordcount: '190'
+ht-degree: 72%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 73%
 # AEM as a Cloud Service への移行ガイド {#moving}
 
 + [AEM as a Cloud Service への移行](/help/move-to-cloud-service/home.md)
++ 移行ツールのリリースノート {#release-notes-migration-tools}
+   + [最新のリリースノート（2021.11.0）](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-current.md)
+   + 2021 {#2021}
+      + [リリースノート（2021.10.0）](/help/move-to-cloud-service/release-notes/release-notes-migration-tools-2021-10-0.md)
 + 移行プロセスの諸段階 {#phases}
    + [対応](/help/move-to-cloud-service/migration-readiness.md)
    + [実装](/help/move-to-cloud-service/migration-implementation.md)
