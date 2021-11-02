@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 92b8a54f585e25db807914601ea5b3c07da681fc
+source-git-commit: 612082f22895af596247f69c4d57222376d7b519
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '927'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 * 顧客は、交換するのに手間がかかる既存 CDN を保有している。
 * 顧客が自社で管理している。
-* CDN を AEM as a Cloud Service と連携するように設定できる。設定手順を以下に示します。
+* CDN をAEM as a Cloud Serviceと連携するように設定できる。設定手順を以下に示します。
 * 関連する問題が発生する事態に備えて、エンジニアリング CDN エキスパートが待機している。
 * 実稼動環境に移行する前に、負荷テストを実行し、成功している。
 
@@ -69,7 +69,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 取得後 `X-AEM-Edge-Key`に値を入力する場合は、次のようにリクエストが正しくルーティングされているかをテストできます。
 
 ```
-https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+https: //publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
 ```
 
 なお、独自の CDN を使用する場合、Cloud Manager にドメインと証明書をインストールする必要はありません。Adobe CDN のルーティングは、デフォルトドメイン `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` を使用して行われます。
