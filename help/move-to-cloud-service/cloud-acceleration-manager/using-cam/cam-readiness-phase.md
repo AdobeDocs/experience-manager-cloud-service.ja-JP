@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager での準備フェーズ
 description: このページでは、Cloud Acceleration Manager における準備フェーズの概要について説明します。
 exl-id: 91a13cae-4934-42e8-9538-896fd72f5acb
-source-git-commit: 3063a9d3a28e974300afa1b91c2b6a344b3361b8
+source-git-commit: 7737a9e6a0182fc98bf39da97c52f120139a2cc4
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 64%
@@ -124,7 +124,7 @@ Cloud Acceleration Manager で、印刷プレビューオプションを選択�
 
    >
    >次の図に示すように、ドロップダウンからグラフィカルビューを追加または変更できます。
-   >![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/trendline-view4.png)
+   >![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
 ### ベストプラクティス分析レポートの確認 {#analysis-report}
