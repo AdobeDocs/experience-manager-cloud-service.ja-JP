@@ -2,10 +2,10 @@
 title: 実稼動パイプラインの設定
 description: 実稼動パイプラインの設定
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 49%
+source-wordcount: '712'
+ht-degree: 48%
 
 ---
 
@@ -55,7 +55,10 @@ ht-degree: 49%
    * **すぐに続行**  — 重要なエラーが発生した場合は常に、パイプラインは自動的に続行されます。 このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルが付いた 2 番目のタブが含まれます **ソースコード**. 次のいずれかを選択できます。 **フルスタックコード** および **フロントエンドコード**. 次を選択できます。 **リポジトリ** そして **Git ブランチ**. 以下に説明するように、「実稼動デプロイメントオプション」を選択します。 クリック **続行**.
+1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルが付いた 2 番目のタブが含まれます **ソースコード**. 次のいずれかを選択できます。 **[フルスタックコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** または **[フロントエンドコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 次を選択できます。 **リポジトリ** そして **Git ブランチ**. 以下に説明するように、「実稼動デプロイメントオプション」を選択します。 クリック **続行**.
+
+   >[!IMPORTANT]
+   >選択した環境にフルスタックコードパイプラインが既に存在する場合、この選択は無効になります。
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
