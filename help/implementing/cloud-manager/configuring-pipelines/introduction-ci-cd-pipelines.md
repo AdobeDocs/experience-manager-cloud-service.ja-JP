@@ -2,7 +2,7 @@
 title: CI/CD パイプライン
 description: このページでは、Cloud Manager CI/CD パイプラインについて説明します
 index: false
-source-git-commit: b6749b149e2166a6f2881817368e418d8b2adb00
+source-git-commit: 65898bd90e057cf5d646c5183ba6d2c8bdcac06e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%
@@ -27,6 +27,8 @@ Cloud Manager には、次の 2 種類のパイプラインがあります。
 
 * [実稼動パイプライン](#prod-pipeline)
 * [実稼動以外のパイプライン](#non-prod-pipeline)
+
+![](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cdpipeline-overview.png)
 
 ## 実稼動パイプライン {#prod-pipeline}
 
