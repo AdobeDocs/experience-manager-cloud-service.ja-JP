@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f89fbf4e693fb1b17e8923dfcc6c9b4de92b536d
+source-git-commit: ffdd1e306ed24409fd5ef946172d95b1ca5ed7cc
 workflow-type: tm+mt
-source-wordcount: '1928'
-ht-degree: 33%
+source-wordcount: '1911'
+ht-degree: 34%
 
 ---
 
@@ -141,10 +141,6 @@ CQ-4328183 was not reported on CS so not documented here.
 ### の新機能[!DNL Experience Manager as a Cloud Service] {#foundation-features}
 
 **高度なネットワーク**
-
->[!INFO]
->
->高度なネットワーク機能は 2021.9.0 リリースの一部で、10 月中旬にお客様が有効になる予定です。
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、次のような高度なネットワーク機能をいくつか提供しています。
 
