@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: f85a4dd109459e216d23a9da67f67d4ad7aa8709
+source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '3334'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 ### Cloud Manager を使用したデプロイメント {#deployments-via-cloud-manager}
 
-お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、クラウド環境のパッケージマネージャーでパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージはすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
+お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) クラウド環境では、名前に「cp2fm」が含まれ、変換後のパッケージではすべてのメタデータが削除されます。 これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
 
 AEM as a Cloud Service アプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。Cloud Manager は可変コンテンツのみインストールし、次のようなメッセージも出力します。
 
@@ -109,7 +109,7 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
 `/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)を参照してください。
 
 >[!NOTE]
->コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、パッケージマネージャーを使用して手動でインストールする必要があります。
+>コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、を介して手動でインストールする必要があります。 [パッケージマネージャー。](/help/implementing/developing/tools/package-manager.md)
 
 また、可変コンテンツパッケージの変更を適用後にロールバックする仕組みはありません。問題を検出した場合は、次回のコードリリースで修正するか、最後の手段としてシステム全体をデプロイメント前の時点に復元するかを選択できます。
 
@@ -173,7 +173,7 @@ above appears to be internal, to confirm with Brian -->
 >abstract="コンテンツパッケージを「1回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を参照します。このようなユースケースには、実稼動環境での問題をデバッグするために特定のコンテンツを実稼動環境からステージング環境に読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration" text="コンテンツ転送ツール"
 
-コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境でパッケージマネージャーを使用できます。
+コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。次のシナリオでは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) は、AEMas a Cloud Serviceの環境で使用できます。
 
 パッケージマネージャーは実行時の概念なので、不変リポジトリーにコンテンツやコードをインストールすることはできません。そのため、これらのコンテンツパッケージは可変コンテンツ（主に `/content` または `/conf`）のみで構成する必要があります。コンテンツパッケージに混在コンテンツ（可変コンテンツと不変コンテンツの両方）が含まれている場合、可変コンテンツのみインストールされます。
 

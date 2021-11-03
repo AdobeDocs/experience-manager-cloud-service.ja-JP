@@ -2,10 +2,10 @@
 title: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
 description: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 4071bbc7b17abd3a81b231dd4e2f0025f8d520c2
+source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 96%
+source-wordcount: '2092'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Experience Manager as a Cloud Service のデプロイメントをカスタマイ
 | <ol><li>詳しくは、[Adobe Experience Manager SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=ja#developing) のドキュメントを参照してください。</li><li>Dispatcher SDK のインストール方法については、「[Dispatcher SDK のインストール](https://video.tv.adobe.com/v/30601)」を視聴してください。</li><li>Dispatcher SDK の設定方法については、「[Dispatcher SDK の設定](https://video.tv.adobe.com/v/30602)」を視聴してください。</li><li>詳細については、[ローカル開発セットアップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja#local-development-environment-set-up)のドキュメントを参照してください。</li><li>Experience Manager [ウォークスルー](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja#accessing)へのアクセスの設定</li></ol> | <ol><li>[開発の基本](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#developing)</li><li>[開発のガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ja#developing)</li><li>[Experience Manager プロジェクト構造について](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#developing)</li><li>[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)</li><li>[Digital Foundation ブループリント](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/community_31/digital_foundation_best_practices_and_documentation.zip)</li><li>[スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ja#authoring)</li><li>[オーバーレイ](/help/implementing/developing/introduction/overlays.md)</li><li>[Experience Manager as a Cloud Service API レファレンス](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/)</li></ol> |
 
 >[!TIP]
-> [WKND を開発し、ローカル Experience Manager SDK にデプロイする方法](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)に関するチュートリアルを参照してください。
+> [WKND を開発し、ローカル Experience Manager SDK にデプロイする方法](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)に関するチュートリアルを参照してください。
 
 ### デプロイ
 
@@ -151,8 +151,8 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 
 #### コンテンツの移行
 
-1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration)：既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスに移動するために使用します。
-2. [パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#package-manager)：リポジトリーの可変コンテンツのインポートおよびエクスポートに使用します。
+1. [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=ja#migration)  — 既存のコンテンツをソースAEMインスタンス（オンプレミスまたは AMS）からターゲットAEM Cloud Serviceインスタンスに移動するために使用します。
+2. パッケージマネージャー — リポジトリの可変コンテンツの読み込みと書き出しに使用します。
 
 
 #### リファクタリング／最適化
@@ -195,7 +195,7 @@ Cloud Manager を使用すると、組織がクラウド内の Experience Manage
 
 | 評価 | リファクタリング | Experience Manager の最新化 | コンテンツの移行 |
 |------------|-------------|---------------------------------|-------------------|
-| <ul><li>[ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Unified Experience プラグイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#refactoring-tools)</li></ul> | <ul><li>[静的テンプレートから編集可能テンプレートへ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[デザイン設定からポリシーへ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[基盤コンポーネントからコアコンポーネントへ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[クラシック UI からタッチ操作対応 UI へ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#cloud-migration)</li><li>[パッケージマネージャー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ja#contentmanagement)</li></ul> |
+| <ul><li>[ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#cloud-migration)</li></li> | <ul><li>[Unified Experience プラグイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#refactoring-tools)</li></ul> | <ul><li>[静的テンプレートから編集可能テンプレートへ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html)</li><li>[デザイン設定からポリシーへ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) <li>[基盤コンポーネントからコアコンポーネントへ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html)</li><li>[クラシック UI からタッチ操作対応 UI へ](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html)</li></ul> | <ul><li>[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#cloud-migration)</li><li>[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)</li></ul> |
 
 >[!NOTE]
 > その他のヘルプについては、以下を参照してください。

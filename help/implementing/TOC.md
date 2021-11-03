@@ -5,9 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 51e36bc72c74026e54f36ee41848f4f15e644d32
+source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1051'
 ht-degree: 97%
 
 ---
@@ -198,6 +198,7 @@ ht-degree: 97%
    + [Content Package Maven プラグイン](/help/implementing/developing/tools/maven-plugin.md)
    + [AEM Repo ツール](/help/implementing/developing/tools/repo-tool.md)
    + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
+   + [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)
    + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
 + パーソナライズ機能 {#personalization}
    + [ContextHub](developing/personalization/contexthub.md)
