@@ -2,9 +2,9 @@
 title: 実稼動パイプラインの編集
 description: 実稼動パイプラインの編集
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 実稼動パイプラインの編集 {#edit-prod-pipeline}
 
 パイプライン設定は、 **プログラムの概要** ページ。
+
+>[!IMPORTANT]
+>実行中のパイプラインは編集できません。
 
 設定したパイプラインを編集するには、次の手順に従います。
 

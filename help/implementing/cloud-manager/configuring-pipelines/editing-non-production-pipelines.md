@@ -2,9 +2,9 @@
 title: 実稼動以外のパイプラインの編集
 description: 実稼動以外のパイプラインの編集
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # 実稼動以外のパイプラインの編集 {#edit-non-prod-pipeline}
 
 パイプライン設定は、 **パイプラインカード** から **プログラムの概要** ページ。
+
+>[!IMPORTANT]
+>実行中のパイプラインは編集できません。
 
 設定済みの実稼動以外のパイプラインを編集するには、次の手順に従います。
 
