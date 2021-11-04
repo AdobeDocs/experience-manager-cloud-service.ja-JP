@@ -1,11 +1,11 @@
 ---
 title: 実稼動以外のパイプラインの設定
 description: このページでは、Cloud Manager での非実稼動パイプラインの設定について説明します
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 20%
+source-wordcount: '347'
+ht-degree: 19%
 
 ---
 
@@ -41,10 +41,10 @@ ht-degree: 20%
    >[!IMPORTANT]
    >選択した環境にフルスタックコードパイプラインが既に存在する場合、この選択は無効になります。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
-   >フロントエンドパイプラインの設定を開始する前に、使いやすいAEMクイックサイト作成ツールを使用して、エンドツーエンドのワークフローに対するAEMクイックサイト作成ジャーニーを参照してください。 このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
+   >フロントエンドパイプラインの設定を開始する前に、 [AEMクイックサイト作成ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 使いやすいAEM Quick Site Creation ツールを使用してエンドツーエンドのワークフローを実現する このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
 
 1. 新しく作成した非実稼動パイプラインが **パイプライン** カード。
 

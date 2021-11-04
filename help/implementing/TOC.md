@@ -5,10 +5,10 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: f9d224c1f06b424717942a8a285dd42ce746ede9
+source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 97%
+source-wordcount: '1079'
+ht-degree: 94%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 97%
 + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
 + Cloud Manager の使用 {#using-cloud-manager}
    + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-      + [最新のリリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + [最新のリリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2021 {#2021}
+         + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [リリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
          + [リリースノート（2021.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
          + [リリースノート（2021.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
@@ -64,7 +65,14 @@ ht-degree: 97%
       + [Git と Adobe Cloud Manager の統合](cloud-manager/managing-code/integrating-with-git.md)
       + [複数ソース Git リポジトリーの操作](cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
       + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](cloud-manager/managing-code/enterprise-team-dev-setup.md)
-   + [CI/CD パイプラインの設定](cloud-manager/configure-pipeline.md)
+   + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
+      + [はじめに](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+      + 実稼動パイプライン {#production-pipelines}
+         + [実稼動パイプラインの設定](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
+         + [実稼動パイプラインの編集](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + 実稼動以外のパイプライン {#non-production-pipelines}
+         + [実稼動以外のパイプラインの設定](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [実稼動以外のパイプラインの編集](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
    + [コードのデプロイ](cloud-manager/deploy-code.md)
    + テスト結果について {#test-results}
       + [概要](/help/implementing/cloud-manager/overview-test-results.md)
@@ -113,6 +121,7 @@ ht-degree: 97%
    + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
    + [API リファレンス資料](/help/implementing/developing/reference-materials.md)
    + [サーバー側 API のアクセストークンの生成](developing/introduction/generating-access-tokens-for-server-side-apis.md)
+   + [サイトのテンプレートとテーマのカスタマイズ](developing/introduction/customizing-site-templates-themes.md)
    + [AEM におけるヘッドフルとヘッドレス](developing/headful-headless.md)
    + フルスタック AEM 開発 {#full-stack}
       + [AEM Sites の開発の手引き - WKND チュートリアル](developing/introduction/develop-wknd-tutorial.md)

@@ -2,7 +2,7 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 100%
@@ -116,7 +116,7 @@ Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作�
 
 * これらのプログラム内での AEM 環境の作成と管理。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 
-* 顧客コードと関連設定を特定の環境にデプロイするためのパイプラインの作成と管理。詳しくは、[CI／CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)を参照してください。
+* 顧客コードと関連設定を特定の環境にデプロイするためのパイプラインの作成と管理。詳しくは、[CI／CD パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を参照してください。
 
 * これらのコンポーネントの重要なライフサイクルイベント（製品アップデートなど）の通知の受信。
 

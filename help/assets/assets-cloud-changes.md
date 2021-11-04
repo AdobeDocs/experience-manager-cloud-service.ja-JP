@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manage
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
+source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 94%
@@ -43,7 +43,7 @@ ht-degree: 94%
 
 アセットマイクロサービスは、Cloud Manager で管理されるユーザープログラムと環境にある Adobe [!DNL Experience Manager] に自動的にプロビジョニングされて接続される、クラウドネイティブなサービスです。Adobe [!DNL Experience Manager] の拡張やカスタマイズを行う場合、開発者は、既存のコンテンツまたはクラウド環境で生成されたレンディションを含んだアセットを使用して、アセットの使用、表示、ダウンロードを行うコードをテストし検証できます。
 
-コードとプロセス（アセットの取り込みや処理を含む）のエンドツーエンドの検証を行うには、コードの変更を[パイプライン](/help/implementing/cloud-manager/configure-pipeline.md)を使用してクラウド開発環境にデプロイし、アセットマイクロサービスの処理をすべて実行してテストします。
+コードとプロセス（アセットの取り込みや処理を含む）のエンドツーエンドの検証を行うには、コードの変更を[パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)を使用してクラウド開発環境にデプロイし、アセットマイクロサービスの処理をすべて実行してテストします。
 
 ## [!DNL Experience Manager] 6.5 と同等の機能  {#cloud-service-feature-status}
 

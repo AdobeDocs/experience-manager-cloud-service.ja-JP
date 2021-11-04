@@ -1,10 +1,10 @@
 ---
 title: 実稼動パイプラインの設定
 description: 実稼動パイプラインの設定
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '719'
 ht-degree: 48%
 
 ---
@@ -57,13 +57,14 @@ ht-degree: 48%
 
 1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルが付いた 2 番目のタブが含まれます **ソースコード**. 次のいずれかを選択できます。 **[フルスタックコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** または **[フロントエンドコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 次を選択できます。 **リポジトリ** そして **Git ブランチ**. 以下に説明するように、「実稼動デプロイメントオプション」を選択します。 クリック **続行**.
 
-   >[!IMPORTANT]
-   >選択した環境にフルスタックコードパイプラインが既に存在する場合、この選択は無効になります。
-
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
+   >[!IMPORTANT]
+   >選択した環境にフルスタックコードパイプラインが既に存在する場合、この選択は無効になります。
+   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+
    >[!NOTE]
-   >フロントエンドパイプラインの設定を開始する前に、使いやすいAEMクイックサイト作成ツールを使用して、エンドツーエンドのワークフローに対するAEMクイックサイト作成ジャーニーを参照してください。 このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
+   >フロントエンドパイプラインの設定を開始する前に、 [AEMクイックサイト作成ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 使いやすいAEM Quick Site Creation ツールを使用してエンドツーエンドのワークフローを実現する このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
 
    実稼動デプロイメントオプション:
 

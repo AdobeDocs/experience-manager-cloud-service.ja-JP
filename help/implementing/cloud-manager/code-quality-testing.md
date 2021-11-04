@@ -2,8 +2,8 @@
 title: コード品質テスト - Cloud Services
 description: コード品質テスト - Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
-workflow-type: ht
+source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 コード品質テストでは、アプリケーションコードの品質を評価します。これは、コード品質のみのパイプラインの中核となる目的で、非実稼動および実稼動のすべてのパイプラインのビルド手順の直後に実行されます。
 
-様々なタイプのパイプラインの詳細については、「[CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)」を参照してください。
+様々なタイプのパイプラインの詳細については、「[CI/CD パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)」を参照してください。
 
 ## コード品質テストについて {#understanding-code-quality-rules}
 

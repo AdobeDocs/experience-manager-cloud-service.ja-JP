@@ -2,10 +2,10 @@
 title: UI テスト - Cloud Services
 description: UI テスト - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 96%
+source-wordcount: '1122'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ UI テストは、言語とフレームワークの幅広い選択肢（Java と
 
 >[!NOTE]
 > このページで説明する UI テストを、2021 年 2 月 10 日より前に作成されたステージパイプラインと実稼動パイプラインで使用するには更新が必要となります。
-> パイプラインの設定については、[CI/CD パイプラインの設定](/help/implementing/cloud-manager/configure-pipeline.md)を参照してください。
+> 詳しくは、 [Cloud Manager の CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) パイプラインの設定について詳しくは、を参照してください。
 
 ## UI テストの作成 {#building-ui-tests}
 
