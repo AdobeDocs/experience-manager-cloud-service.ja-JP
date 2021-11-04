@@ -2,10 +2,10 @@
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 97%
+source-wordcount: '920'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 97%
 
 パイプライン内のカスタム機能テストステップは常に存在し、スキップできません。
 
-ただし、ビルドでテスト JAR が生成されない場合、テストはデフォルトで合格します。
+ビルドでは、0 または 1 つのテスト JAR を生成する必要があります。 テスト JAR がゼロになる場合、テスト手順はデフォルトで合格します。 ビルドによって複数のテスト JAR が生成される場合、どの JAR が非決定的に選択されるかは非決定的です。
 
 >[!NOTE]
 >「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。詳しくは、[ログのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。

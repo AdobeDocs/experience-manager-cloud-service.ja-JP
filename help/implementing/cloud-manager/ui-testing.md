@@ -2,10 +2,10 @@
 title: UI テスト - Cloud Services
 description: UI テスト - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
-workflow-type: ht
-source-wordcount: '1087'
-ht-degree: 100%
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+workflow-type: tm+mt
+source-wordcount: '1121'
+ht-degree: 96%
 
 ---
 
@@ -112,6 +112,8 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 また、アセンブリ記述子は、UI テストのローカル実行中に生成される可能性のある一部のファイルを除外します。これにより、アーカイブのサイズが小さくなり、ビルドが高速になります。
 
 Docker ビルドコンテキストを含んだアーカイブが Cloud Manager で自動的に選択され、テストを含んだ Docker イメージがデプロイメントパイプライン中に作成されます。最終的に、Cloud Manager は Docker イメージを実行して、アプリケーションに対する UI テストを実行します。
+
+ビルドでは、0 または 1 つのアーカイブが生成されます。 アーカイブがゼロの場合、テストステップはデフォルトで合格します。 ビルドで複数のアーカイブが生成される場合、どのアーカイブが非決定的に選択されます。
 
 ## UI テストの書き込み {#writing-ui-tests}
 
