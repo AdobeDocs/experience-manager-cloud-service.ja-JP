@@ -5,7 +5,7 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
+source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 94%
@@ -68,8 +68,8 @@ ht-degree: 94%
    + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
       + [はじめに](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + 実稼動パイプライン {#production-pipelines}
-         + [実稼動パイプラインの設定](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + [実稼動パイプラインの編集](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [実稼動パイプラインの設定](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [実稼動パイプラインの編集](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
       + 実稼動以外のパイプライン {#non-production-pipelines}
          + [実稼動以外のパイプラインの設定](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [実稼動以外のパイプラインの編集](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)

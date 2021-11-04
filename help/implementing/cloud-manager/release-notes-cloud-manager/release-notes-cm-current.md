@@ -1,54 +1,62 @@
 ---
-title: AEM as a Cloud Service Release 2021.10.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Service Release 2021.10.0 Cloud Manager のリリースノート
+title: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: null
-source-git-commit: 23b19789e9e9857c9ae3d763fc71586a5e5da25b
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 20%
+source-wordcount: '421'
+ht-degree: 22%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.10.0 の Cloud Manager のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2021.11.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service Release 2021.10.0 Cloud Manager のリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノートの概要を説明しています。
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年 10 月 14 日です。
-次回のリリースは 2021 年 11 月 4 日に予定されています。
+AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 09 日に予定されています。
 
 ### 新機能 {#what-is-new}
 
-* 今後の変更に備えて、既存のデプロイメントパイプラインが参照され、ユーザーインターフェイスで次のようにラベル付けされるようになりました。 **フルスタック** パイプライン。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
 
-* パイプラインカードが更新され、実稼働と非実稼働の両方のパイプラインを表示する単一の統合面が表示されるようになりました。ユーザーは、各パイプラインに関連付けられたアクションメニューから直接「実行/一時停止/再開」を選択できます。
+   >[!IMPORTANT]
+   >AEM版である必要があります `2021.10.5933.20211012T154732Z` を使用して、新しいフロントエンドパイプラインを活用します。
 
-* デプロイメントマネージャーの役割を持つユーザーが、UI を介してセルフサービス方式で実稼動パイプラインを削除できるようになりました。
+* AEM画像全体を構築する必要なく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。 この変更は、リリース後の数週間で徐々に適用される予定です。
 
-* パイプラインエクスペリエンスの追加と編集が更新され、使い慣れた最新のモデルを使用できるようになりました。
+* Git コミット ID がパイプライン実行の詳細に表示され、作成されたコードの追跡が容易になります。
 
-* Cloud Manager のユーザーは、 **フィードバック** ボタンをクリックします。
+* プログラムの作成は、公開されている API を通じて利用できるようになりました。
 
-* 年別の SLA グラフを Cloud Manager のユーザーインターフェイスからダウンロードできるようになりました。
+* 環境の作成は、公開されている API を介して使用できるようになりました。
 
-* コード品質と非実稼動パイプラインの実行で、ビルド手順中により効率的な浅いクローン作成プロセスを使用するようになり、特に大規模な Git リポジトリを持つお客様のビルド時間が短縮されます。
+* この `x-request-id` 応答ヘッダーが、API Playground の [www.adobe.io](https://www.adobe.io/). このヘッダーは、トラブルシューティングのためにカスタマーケアの問題を送信する際に役立ちます。
 
-* IP許可リストの追加ウィザードで、許可されている最大数に達した場合に、ユーザーに許可リストを送信するようになりました。
+* ユーザーとして、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されるのを確認します。
 
-* Cloud Manager API ドキュメントに、ログインしたユーザーがブラウザーで API を試すことができる、インタラクティブなプレイグラウンドが含まれるようになりました。 詳しくは、 [Cloud Manager API プレイグラウンド](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
+* 詳細の概要を簡単に表示できる新しいパイプラインページと、オンホバー時のステータスポップオーバーが追加されました。 パイプラインの実行に関連する詳細と共に表示できます。
 
-* 「移動先」の下の選択オプションが無効になっている場合は、プログラムカードのツールチップがわかりやすくなります。 「実稼動環境が存在しません」と表示されるようになりました。
+* パイプラインの編集 API で、デプロイフェーズで使用する環境の変更がサポートされるようになりました。
+
+* OakPal スキャンプロセスの最適化が、大きなパッケージに導入されました。
+
+* 品質の問題の CSV ファイルに、各品質の問題のタイムスタンプが含まれるようになりました。
 
 ### バグ修正 {#bug-fixes}
 
-* まれに、Adobe・スタッフがお客様の環境をリストアする場合、環境が完全に稼働する前にリストアが完了したと見なされました。
+* 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
 
-* 環境の作成中におこなわれた一部の内部リクエストが再試行されませんでした。
+* デプロイフェーズが存在しない場合、パイプラインPATCHAPI は失敗します。
 
-* ドメイン名の検証後にデプロイメントの失敗エラーが発生した場合、エラーメッセージが修正され、お客様にAdobe担当者への連絡をリクエストするようになりました。
+* この `ClientlibProxyResourceCheck` 共通のベースパスを持つクライアントライブラリがある場合、品質ルールで偽陽性の問題が発生していました。
+
+* 最大数に達したリポジトリの場合のエラーメッセージで、エラーの理由が指定されていませんでした。
+
+* まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
 
