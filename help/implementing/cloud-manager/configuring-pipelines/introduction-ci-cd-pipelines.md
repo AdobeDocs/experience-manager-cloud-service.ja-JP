@@ -2,10 +2,10 @@
 title: CI/CD パイプライン
 description: このページでは、Cloud Manager CI/CD パイプラインについて説明します
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: 71e4a9932ef89ebf263ebbc0300bf2c938fa50f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '935'
+ht-degree: 2%
 
 ---
 
@@ -50,14 +50,14 @@ Cloud Manager 内のすべてのパイプラインとその使用方法を次の
 
 | パイプラインタイプ | デプロイメントまたはコード品質 | ソースコード | 使用するタイミング | 使用する必要があるタイミングや理由 |
 |--- |--- |--- |---|---|---|
-| 実稼動または非実稼動 | デプロイメント | フロントエンド | フロントエンドコードをデプロイする場合。 フロントエンドコードは、静的ファイルとして機能する任意のコードです。 これは、AEMが提供する UI コードとは別のものです。 Sites テーマ、顧客定義SPA、Firefly SPA、その他のソリューションが含まれます。 AEM版にする必要があります。 | 迅速な導入<br> 環境ごとに複数のフロントエンドパイプラインを設定し、同時に実行できます |
-|  | デプロイメント | フルスタック | バックエンド、フロントエンド、HTTPD/Dispatcher の設定を同時にデプロイする。 一部制限が適用されます。 | フロントエンドパイプラインがまだ採用されていない場合。 |
-| 実稼動以外 | コード品質 | フロントエンド | フロントエンドコードでコード品質スキャンを実行する | 迅速な導入<br> 複数のパイプラインを設定および実行できます |
-|  | コード品質 | フルスタック | フルスタックコードでコード品質スキャンを実行する | 迅速な導入<br> 複数のパイプラインを設定および実行できます |
+| 実稼動または非実稼動 | デプロイメント | フロントエンド | 迅速な導入。<br>環境ごとに複数のフロントエンドパイプラインを設定し、同時に実行できます。<br>フロントエンドパイプラインのビルドは、ビルドをストレージにプッシュします。 html ページが提供されると、CDN がこのストレージを接触チャネルとして使用して提供するフロントエンドコード静的ファイルを参照する場合があります。 | 1 つ以上のクライアント側 UI アプリケーションを含むフロントエンドコードを排他的にデプロイする。 フロントエンドコードは、静的ファイルとして機能する任意のコードです。 これは、AEMが提供する UI コードとは別のものです。 Sites テーマ、顧客定義SPA、Firefly SPA、その他のソリューションが含まれます。<br>AEMバージョンにする必要があります `2021.10.5933.20211012T154732Z` |
+| 実稼動または非実稼動 | デプロイメント | フルスタック | フロントエンドパイプラインがまだ採用されていない場合。<br>フロントエンドコードをAEM Server コードと同時にデプロイする必要がある場合。 | 1 つ以上のAEMサーバーアプリケーションを同時に含むAEM Server コード（不変コンテンツ、Java コード、OSGi 設定、HTTPD/dispatcher 設定、repoinit、可変コンテンツ、フォント）をデプロイするには、次の手順を実行します。 |
+| 実稼動以外 | コード品質 | フロントエンド | Cloud Manager で、デプロイメントをおこなわずにビルドの成功とコードの品質を評価するよう設定する場合。<br>複数のパイプラインを設定および実行できます。 | フロントエンドコードでコード品質スキャンを実行します。 |
+| 実稼動以外 | コード品質 | フルスタック | Cloud Manager で、デプロイメントをおこなわずにビルドの成功とコードの品質を評価するよう設定する場合。<br>複数のパイプラインを設定および実行できます。 | フルスタックコードでコード品質スキャンを実行します。 |
 
 次の図に、従来の単一のフロントエンドリポジトリまたは独立したフロントエンドリポジトリを設定した Cloud Manager パイプライン設定を示します。
 
-![](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-configurations.png)
+![](/help/implementing/cloud-manager/assets/configure-pipeline/cm-setup.png)
 
 ## Cloud Manager フロントエンドパイプライン {#front-end}
 
@@ -76,8 +76,8 @@ Cloud Manager 内のすべてのパイプラインとその使用方法を次の
 
 フロントエンドパイプラインの設定方法については、次を参照してください。
 
-* 実稼動パイプラインの追加
-* 実稼動以外のパイプラインの追加
+* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
+* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ## フルスタックパイプライン {#full-stack-pipeline}
 
@@ -99,5 +99,5 @@ Cloud Manager 内のすべてのパイプラインとその使用方法を次の
 
 フルスタックパイプラインの設定方法については、以下を参照してください。
 
-* 実稼動パイプラインの追加
-* 実稼動以外のパイプラインの追加
+* [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline))
+* [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
