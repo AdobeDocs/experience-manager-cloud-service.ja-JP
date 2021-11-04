@@ -3,10 +3,10 @@ title: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノ
 description: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: null
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 22%
+source-wordcount: '461'
+ht-degree: 20%
 
 ---
 
@@ -39,6 +39,8 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 * この `x-request-id` 応答ヘッダーが、API Playground の [www.adobe.io](https://www.adobe.io/). このヘッダーは、トラブルシューティングのためにカスタマーケアの問題を送信する際に役立ちます。
 
 * ユーザーとして、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されるのを確認します。
+
+* 新しいアクティビティページが使用できるようになりました。このページでは、パイプラインやコード実行などのアクティビティに関連する詳細を表示できます。 時間が経つと、このページに示すアクティビティの範囲は、提供された詳細と共に拡大します。
 
 * 詳細の概要を簡単に表示できる新しいパイプラインページと、オンホバー時のステータスポップオーバーが追加されました。 パイプラインの実行に関連する詳細と共に表示できます。
 

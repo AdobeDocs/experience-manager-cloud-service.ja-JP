@@ -2,9 +2,9 @@
 title: 実稼動パイプラインの設定
 description: 実稼動パイプラインの設定
 index: true
-source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '765'
 ht-degree: 45%
 
 ---
@@ -55,14 +55,14 @@ ht-degree: 45%
    * **すぐに続行**  — 重要なエラーが発生した場合は常に、パイプラインは自動的に続行されます。 このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
 
-1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルが付いた 2 番目のタブが含まれます **ソースコード**. 次のいずれかを選択できます。 **[フルスタックコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** または **[フロントエンドコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. 次を選択できます。 **リポジトリ** そして **Git ブランチ**. 以下に説明するように、「実稼動デプロイメントオプション」を選択します。 クリック **続行**.
+1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルが付いた 2 番目のタブが含まれます **ソースコード**. 次のいずれかを選択できます。 **[フロントエンドコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** または **[フルスタックコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. 次を選択できます。 **リポジトリ** そして **Git ブランチ**. 以下に説明するように、「実稼動デプロイメントオプション」を選択します。 クリック **続行**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
    選択した場合 **フロントエンドコード**&#x200B;を選択する場合は、 **リポジトリ**, **Git ブランチ** および **コードの場所**（下の図を参照）。
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
-   選択した場合 **フルスタックコード**&#x200B;を選択する場合は、 **リポジトリ**, **Git ブランチ** および **実稼動デプロイメントオプション**（下の図を参照）。
+   選択した場合 **フルスタックコード**&#x200B;を選択する場合は、 **リポジトリ**, **Git ブランチ** および **実稼動デプロイメントオプション** （詳細は以下の図を参照）。
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
 
    **実稼動デプロイメントオプション:**
@@ -76,9 +76,6 @@ ht-degree: 45%
 
    >[!NOTE]
    >フロントエンドパイプラインの設定を開始する前に、 [AEMクイックサイト作成ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 使いやすいAEM Quick Site Creation ツールを使用してエンドツーエンドのワークフローを実現する このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
-
-
-
 
 
 1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルの付いた 3 番目のタブが含まれます。 **エクスペリエンス監査**. このオプションは、エクスペリエンス監査に常に含める必要がある URL パスの表を提供します。
