@@ -5,9 +5,9 @@ breadcrumb-title: リリースノート
 user-guide-description: このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: a1b29f695c108db948b8073aa4f24c260b9cc770
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '127'
 ht-degree: 100%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 100%
 + リリースノート {#release-notes}
    + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
    + 2021 {#2021}
+      + [リリースノート（2021.9.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
       + [リリースノート（2021.8.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
       + [リリースノート（2021.7.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-7-0.md)
       + [リリースノート（2021.6.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-6-0.md)

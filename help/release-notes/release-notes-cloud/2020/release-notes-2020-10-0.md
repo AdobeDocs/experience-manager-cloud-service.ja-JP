@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.10.0 のリリースノート。'
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 67%
+source-wordcount: '1195'
+ht-degree: 60%
 
 ---
 
@@ -41,6 +41,22 @@ ht-degree: 67%
 * **[!DNL Adobe Asset Link]バージョン 2.1**：[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]、[!DNL Adobe InDesign] 用の [Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html) 拡張機能の新しいバージョンが使用可能になりました。2020 年 10 月にリリースされた最新の [!DNL Adobe Creative Cloud] 2021 アプリケーションとの互換性が追加されました。
 
 * **[!DNL Assets]WebP ファイルのサポート**：[!DNL Assets] as a Cloud Service では WebP 画像形式をサポートするようになりました。WebP は、Google が作成した新たな画像形式です。WebP ファイル形式の画像は、JPG ファイルや PNG ファイルと見た目に区別がつきませんが、ファイルははるかに小さくなります。アセットのファイルサイズが小さくなると、ページ読み込み時間が改善され、コンテンツクリエーターが Web エクスペリエンスを高速化するのに役立ちます。WebP の使用方法については、[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile)を参照してください。
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+
+### [!DNL Forms] の新機能  {#what-is-new-forms-oct-2021}
+
+* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsでログイン済みとログインしていない（匿名）の両方の動作を取得および追跡して、エンドユーザーのインサイトを収集できるようになりました。 これにより、ビジネスユーザーは収集されたインサイトに基づいて、十分な情報に基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルに関する決定を下すことができます。
+
+### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
+
+* **AEM Workflow データを外部化して処理を保護**:顧客が管理するリポジトリに、機密の個人データ (SPD) 要素を含むプロセス内のAEM Workflow 変数データを保存して、処理を安全に行うことができます。 ワークフローの処理中、ワークフロー変数に保存されたデータはAEMリポジトリに保持されません。 顧客が管理するリポジトリからオンデマンドで取得されます。
+
+### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ja) は、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成する場合に役立ちます。 このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。
+
+[!DNL formscsbeta@adobe.com] に書き込んで、ベータ版プログラムにサインアップできます。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

@@ -4,18 +4,14 @@ description: コンテンツフラグメントモデルが AEM におけるヘ�
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
+source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2838'
 ht-degree: 79%
 
 ---
 
 # コンテンツフラグメントモデル {#content-fragment-models}
-
->[!NOTE]
->
->この [ロック（公開）されたコンテンツフラグメントモデル](#locked-published-content-fragment-models) 機能はベータ版です。
 
 AEM のコンテンツフラグメントモデルは、[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)のコンテンツ構造を定義するもので、ヘッドレスコンテンツの基盤となります。
 
@@ -430,9 +426,6 @@ GraphQL にも、フラグメント参照の繰り返し防止機能がありま
 ![参照内のコンテンツフラグメントモデル](assets/cfm-model-references.png)
 
 ## ロック（公開）されたコンテンツフラグメントモデル {#locked-published-content-fragment-models}
-
->[!NOTE]
-ロック（公開）されたコンテンツフラグメントモデル機能はベータ版です。
 
 この機能は、公開されたコンテンツフラグメントモデルのガバナンスを提供します。
 
