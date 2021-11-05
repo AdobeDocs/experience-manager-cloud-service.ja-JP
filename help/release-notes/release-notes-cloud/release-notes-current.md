@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a0bf314ff8f994dd77c2c124db1ab604dcae74b6
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1436'
 ht-degree: 14%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 14%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] が、サポート対象のオーディオおよびビデオアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。 [!DNL Azure Media Services]. サポートされているファイルは自動的に書き出され、テキストは WebVTT 形式で保存されます。 WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。 また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
+* [!DNL Experience Manager] が、サポート対象のオーディオおよびビデオアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。 [!DNL Azure Media Services]. この [サポートされているファイルタイプ](/help/assets/file-format-support.md#audio-video-transcription-formats) は自動的に書き込まれ、テキストは WebVTT 形式で保存されます。 WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。 また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
 
 ### の新機能 [!DNL Assets] プレリリースチャネル {#assets-prerelease-features}
 
