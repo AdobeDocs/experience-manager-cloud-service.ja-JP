@@ -2,7 +2,7 @@
 title: 実稼動以外のパイプラインの編集
 description: 実稼動以外のパイプラインの編集
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### 実稼動以外のパイプラインの削除 {#delete-nonprod}
+### 実稼動以外のパイプラインの削除 {#delete-nonprod}
 
 パイプラインカードから実稼動パイプラインを削除できます。
 
