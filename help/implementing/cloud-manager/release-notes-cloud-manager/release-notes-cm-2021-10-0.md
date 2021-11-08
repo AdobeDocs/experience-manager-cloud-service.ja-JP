@@ -19,7 +19,7 @@ ht-degree: 20%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年 10 月 14 日です。
+The Release Date for Cloud Manager in AEM as a Cloud Service 2021.10.0 is October 14, 2021.
 
 
 ### 新機能 {#what-is-new}
@@ -28,19 +28,19 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 
 * パイプラインカードが更新され、実稼働と非実稼働の両方のパイプラインを表示する単一の統合面が表示されるようになりました。ユーザーは、各パイプラインに関連付けられたアクションメニューから直接「実行/一時停止/再開」を選択できます。
 
-* デプロイメントマネージャーの役割を持つユーザーが、UI を介してセルフサービス方式で実稼動パイプラインを削除できるようになりました。
+* A user in Deployment Manager role can now delete Production pipeline in a self-service manner via the UI.
 
 * パイプラインエクスペリエンスの追加と編集が更新され、使い慣れた最新のモデルを使用できるようになりました。
 
-* Cloud Manager のユーザーは、 **フィードバック** ボタンをクリックします。
+* Users of Cloud Manager can now submit feedback directly from the user interface via the **Feedback** button on top right of the landing page.
 
 * 年別の SLA グラフを Cloud Manager のユーザーインターフェイスからダウンロードできるようになりました。
 
 * コード品質と非実稼動パイプラインの実行で、ビルド手順中により効率的な浅いクローン作成プロセスを使用するようになり、特に大規模な Git リポジトリを持つお客様のビルド時間が短縮されます。
 
-* IP許可リストの追加ウィザードで、許可されている最大数に達した場合に、ユーザーに許可リストを送信するようになりました。
+* Add IP Allow List wizard will now inform the user if maximum allowed number of IP Allow Lists has been reached.
 
-* Cloud Manager API ドキュメントに、ログインしたユーザーがブラウザーで API を試すことができる、インタラクティブなプレイグラウンドが含まれるようになりました。 詳しくは、 [Cloud Manager API プレイグラウンド](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
+* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. 詳しくは、 [Cloud Manager API プレイグラウンド](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
 
 * 「移動先」の下の選択オプションが無効になっている場合は、プログラムカードのツールチップがわかりやすくなります。 「実稼動環境が存在しません」と表示されるようになりました。
 
@@ -48,7 +48,7 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 
 * まれに、Adobe・スタッフがお客様の環境をリストアする場合、環境が完全に稼働する前にリストアが完了したと見なされました。
 
-* 環境の作成中におこなわれた一部の内部リクエストが再試行されませんでした。
+* Certain internal requests made during environment creation were not being retried.
 
-* ドメイン名の検証後にデプロイメントの失敗エラーが発生した場合、エラーメッセージが修正され、お客様にAdobe担当者への連絡をリクエストするようになりました。
+* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
 
