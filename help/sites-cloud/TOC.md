@@ -6,9 +6,9 @@ breadcrumb-title: オーサリングガイド
 user-guide-description: Adobe Experience Manager Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
 feature: Authoring
 role: User
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '325'
 ht-degree: 96%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 96%
    + オーサリングの基本事項 {#fundamentals}
       + [環境とツール](authoring/fundamentals/environment-tools.md)
       + [ページ注釈の追加](authoring/fundamentals/annotations.md)
+      + [新しいサイトの作成](authoring/fundamentals/create-site.md)
       + [ページの作成と整理](authoring/fundamentals/organizing-pages.md)
       + [ページのコンテンツの編集](authoring/fundamentals/editing-content.md)
       + [リッチテキストエディター](authoring/fundamentals/rich-text-editor.md)
@@ -82,6 +83,10 @@ ht-degree: 96%
       + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
       + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
 + 管理 {#administering}
+   + サイト作成 {#site-creation}
+      + [新しいサイトの作成](administering/site-creation/create-site.md)
+      + [サイトテンプレート](administering/site-creation/site-templates.md)
+      + [サイトテーマ](administering/site-creation/site-themes.md)
    + [ワークフローの管理](administering/workflows-administering.md)
    + コンテンツの再利用 {#reusing-content}
       + [MSM と翻訳](administering/msm-and-translation.md)
