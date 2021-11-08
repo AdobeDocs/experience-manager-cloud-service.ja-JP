@@ -2,10 +2,10 @@
 title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
-workflow-type: ht
-source-wordcount: '2881'
-ht-degree: 100%
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+workflow-type: tm+mt
+source-wordcount: '2939'
+ht-degree: 97%
 
 ---
 
@@ -391,7 +391,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ![展開されたパネルセレクター](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-例えば、**Sites** では、コンテンツのみ（デフォルト）、コンテンツツリー、タイムライン、参照またはフィルターのサイドパネルを選択できます。
+例えば、 **サイト** コンソールコンテンツのみ（デフォルト）、コンテンツツリー、タイムライン、参照、サイトの詳細またはフィルターのサイドパネルを選択できます。
 
 コンテンツのみが選択されている場合は、パネルアイコンのみが表示されます。他のオプションが選択されている場合は、パネルアイコンの隣にオプション名が表示されます。
 
@@ -458,6 +458,18 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
    * 参照コンポーネントで選択したページから借りたコンテンツや、選択したページに貸したコンテンツ
 
 ![参照の例](/help/sites-cloud/authoring/assets/references-example.png)
+
+### サイト {#site}
+
+**サイト** サイトの詳細を表示 [サイトテンプレートを使用して作成された。](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![サイトレール](../assets/site-rail.png)
+
+をタップまたはクリックします。 **テーマソースのダウンロード** をカスタマイズするには、 [サイトのテーマ。](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>テンプレートから新しいサイトを作成し、そのテーマをカスタマイズするプロセスに関するエンドツーエンドの説明は、 [クイックサイト作成ジャーニー。](/help/journey-sites/quick-site/overview.md)
 
 ### フィルター {#filter}
 
