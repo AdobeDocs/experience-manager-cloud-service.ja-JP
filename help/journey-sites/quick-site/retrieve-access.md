@@ -1,9 +1,9 @@
 ---
 title: Git リポジトリのアクセス情報の取得
 description: フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法について説明します。
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '928'
 ht-degree: 5%
 
 ---
@@ -82,19 +82,11 @@ Cloud Manager 管理者から Cloud Manager ユーザーとしてオンボーデ
 
 1. Adobe Experience Cloud( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) または「ようこそ」の電子メールに記載されているリンクをクリックします。
 
-1. ログインしたら、画面の右上隅で正しい組織に属していることを確認します。 1 つの組織のメンバーのみの場合、この手順は不要です。 次に、「 」をタップまたはクリックします。 **Experience Manager**.
-
-   ![Experience Cloudの概要](assets/experience-cloud-overview.png)
-
-1. 次のページで、 **起動** ボタンをクリックして、 **Cloud Manager** アプリを使用します。
-
-   ![Experience Managerアプリ](assets/experience-manager-apps.png)
-
-1. 次のページには、使用可能な様々なプログラムの一覧が表示されます。 Cloud Manager 管理者から提供された、アクセスする必要があるものをタップまたはクリックします。 AEMaaCS の初めてのフロントエンドプロジェクトの場合は、1 つのプログラムしか使用できない可能性があります。
+1. Cloud Manager には、使用可能な様々なプログラムのリストが表示されます。 Cloud Manager 管理者から提供された、アクセスする必要があるものをタップまたはクリックします。 AEMaaCS の初めてのフロントエンドプロジェクトの場合は、1 つのプログラムしか使用できない可能性があります。
 
    ![Cloud Manager でのプログラムの選択](assets/cloud-manager-select-program.png)
 
-これで、Cloud Manager の概要が表示されます。 ページの外観は異なりますが、次の例のようになります。
+これで、プログラムの概要が表示されます。 ページの外観は異なりますが、次の例のようになります。
 
 ![Cloud Manager の概要](assets/cloud-manager-overview.png)
 

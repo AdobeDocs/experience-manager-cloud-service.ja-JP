@@ -1,9 +1,9 @@
 ---
 title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 テーマのカスタマイズの変更をAEM Git リポジトリにコミットしたら、 [管理者が作成したパイプライン](pipeline-setup.md) をクリックして変更をデプロイします。
 
-1. Cloud Manager にアクセス [git のアクセス情報を取得する際に使用します。](retrieve-access.md) の **概要** タブには、次のカードが表示されます： **パイプライン**.
+1. Cloud Manager にログイン [git のアクセス情報の取得と同様に](retrieve-access.md) プログラムにアクセスします。 の **概要** タブには、次のカードが表示されます： **パイプライン**.
 
    ![Cloud Manager の概要](assets/cloud-manager-overview.png)
 
