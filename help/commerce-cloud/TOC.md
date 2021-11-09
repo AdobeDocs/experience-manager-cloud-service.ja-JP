@@ -2,11 +2,11 @@
 sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: AEM Content and Commerce ガイド
-user-guide-description: Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
-source-git-commit: 677ac2c35fa79caf16f5f0ef3de7b0791272c44b
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+user-guide-description: Adobe Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
+source-git-commit: 2bc33096132164b54a8206c69945f3a3fd4227db
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 96%
 
 ---
 
@@ -19,12 +19,15 @@ ht-degree: 100%
 + 統合 {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [サードパーティコマースソリューション](integrating/third-party.md)
+   + オーサリング {#authoring}
+      + [コマースエクスペリエンス](authoring/authoring-commerce-experiences.md)
+      + [製品コックピット](authoring/product-cockpit.md)
+      + [マルチテンプレートの使用](authoring/multi-template-usage.md)
+      + [製品データと関連コンテンツのエンリッチメント](authoring/enrich-product-associated-content.md)
 + AEM ストアフロント{#storefront}
    + [概要](getting-started.md)
    + 管理 {#administering}
       + [マルチストアの設定](configuring/multi-store-setup.md)
-      + [マルチテンプレートの使用](configuring/multi-template-usage.md)
-      + [製品データと関連コンテンツのエンリッチメント](configuring/enrich-product-associated-content.md)
       + [SEO 用の URL の設定](configuring/advanced-url-configuration.md)
       + [キャッシュオプション](configuring/caching.md)
       + [カスタム HTTP ヘッダー](/help/commerce-cloud/configuring/custom-http-headers.md)
