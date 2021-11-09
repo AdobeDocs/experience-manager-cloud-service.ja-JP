@@ -1,9 +1,9 @@
 ---
 title: AEMクイックサイト作成ジャーニー
 description: ここから始めて、使いやすいAEMクイックサイト作成ツールを使用し、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずにサイトをすばやくカスタマイズするガイド付きのジャーニーを実現します。
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,9 @@ AEM Quick Site Creation Tool は、サイト作成に関する開発者の知識
 
 ## ビデオの概要 {#video-overview}
 
-この機能の動作の概要については、5 分間の紹介をご覧ください。
+この機能の動作の概要を簡単に確認するには、 [この 5 分間の紹介をご覧いただけます。](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-このドキュメントのジャーニーでは、ビデオ内のすべての機能を順を追って詳しく説明し、プロセスを理解し、独自の環境でプロセスを再作成できます。
+このドキュメントのジャーニーでは、ビデオのすべての機能を順を追って詳しく説明し、ワークフローを理解し、独自の環境でプロセスを再作成できます。
 
 ## AEMドキュメントのジャーニー {#documentation-journeys}
 
