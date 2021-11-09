@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1434'
 ht-degree: 98%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 98%
 | × | サポートされていない。使用しないでください。 |
 | - | 使用不可 |
 
-| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager／Sling／JCR](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager／Sling／JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **元のバイナリ** |  |  |  |  |  |  |
 | オリジナルを作成 | ✓ | × | - | × | × | - |
@@ -185,7 +185,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスの詳細については、 [Java API リファレンスまたは JavaDoc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
+Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスの詳細については、 [Java API リファレンスまたは JavaDoc](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 
