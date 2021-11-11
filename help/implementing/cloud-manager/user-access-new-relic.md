@@ -3,21 +3,23 @@ title: New Relic へのユーザーアクセス
 description: New Relic へのユーザーアクセス
 index: false
 hide: true
-source-git-commit: e8f5a0ca99b3772665613e24b73d4ab7525a22be
+source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
 
-# AEMas a Cloud Service用 New Relic APM {#new-relic}
+# AEM as a Cloud Serviceの New Relic Application Performance Monitoring {#new-relic}
 
 ## はじめに {#introduction}
 
-Adobeは、アプリケーションの監視、可用性、パフォーマンスに大きく重点を置いています。 この目標を達成するために、AEMas a Cloud Serviceは、標準製品の一部としてカスタム New Relic 監視スイートにアクセスし、Adobe Experience ManagerのCloud Serviceシステムと環境のパフォーマンス指標を最大限に可視化できるようにします。 このホワイトペーパーでは、AEMas a Cloud Service環境で有効になる New Relic の監視機能を説明し、パフォーマンスの向上とAEM as a Cloud Serviceを最大限に活用できるようにします。
+Adobeは、アプリケーションの監視、可用性、パフォーマンスを大きく重視します。 この目標を達成するために、AEMas a Cloud Serviceは、標準製品の一部としてカスタム New Relic 監視スイートにアクセスし、Adobe Experience ManagerのCloud Serviceシステムと環境のパフォーマンス指標を最大限に可視化できるようにします。 この節では、AEMas a Cloud Service環境で有効になる New Relic の監視機能を説明します。これにより、パフォーマンスを向上させ、AEM as a Cloud Serviceを最大限に活用できるようになります。
 
 ## AEM New Relic を介したas a Cloud Serviceトランザクション監視 {#transaction-monitoring}
+
+AEM as a Cloud Serviceの New Relic Application Performance Monitoring の主な機能を次に示します。
 
 * 専用の New Relic One アカウントへの直接アクセス (Adobe・サポートが管理 )
 
@@ -31,7 +33,14 @@ Adobeは、アプリケーションの監視、可用性、パフォーマンス
 
 専用の New Relic アカウントは、カスタマーケアエンゲージメントを通じてAdobeによってプロビジョニングおよび管理されます。 Adobeは、所有者および管理者のままとなり、お客様に代わってアカウントをプロビジョニングし、専用のサブアカウントへのアクセスを提供します。
 
-AEMas a Cloud Serviceプログラムに関連付けられた New Relic サブアカウントにアクセスするには、Admin Consoleの「サポート」タブにアクセスしてリクエストを開いてください。 チケットに、プログラム ID の詳細と、New Relic へのアクセスを開くようAdobeチームにリクエストするユーザーのリストが含まれていることを確認します。 すべてのユーザーに、フルネームと有効な E メールアドレスが提供される必要があります。  AEMサポートポータルの詳細については、Experience Cloudのサポートを参照してください。
+AEMas a Cloud Serviceプログラムに関連付けられた New Relic サブアカウントにアクセスするには、次の手順を実行します。
+
+* リクエストを開くには、Admin Consoleの「サポート」タブにアクセスしてください。
+* チケットに、プログラム ID の詳細と、New Relic へのアクセスを開くようAdobeチームにリクエストするユーザーのリストが含まれていることを確認します。
+* すべてのユーザーに、フルネームと有効な E メールアドレスが提供される必要があります。
+
+   >[!NOTE]
+   >AEMサポートポータルの詳細については、Experience Cloudのサポートを参照してください。
 
 アクセス権が与えられると、New Relic は各ユーザーに確認メールを送信し、設定プロセスを完了してログインできます。 元のアカウント確認 E メールが見つからない場合は、次の手順に従います。
 
@@ -64,9 +73,13 @@ AEMas a Cloud Serviceプログラムの New Relic 製品に関するその他の
 
 ### Adobeは New Relic で何を監視しますか？ {#adobe-monitor}
 
-Adobeは、New Relic APM Java プラグインを介してAEMのas a Cloud Serviceのオーサー、パブリッシュ、プレビュー（利用可能な場合）サービスを監視します。 Adobeは、カスタムの New Relic APM テレメトリと、非実稼働および実稼働のAEMas a Cloud Service環境での監視を可能にします。 お使いの New Relic アカウントは、プライマリAdobeが管理するアカウントに添付され、複数のアプリケーションがそのアカウントにレポートされます。 AEMas a Cloud Service環境ごとに 3 つ：
+Adobeは、New Relic APM Java プラグインを介してAEMのas a Cloud Serviceのオーサー、パブリッシュ、プレビュー（利用可能な場合）サービスを監視します。 Adobeは、カスタムの New Relic APM テレメトリと、非実稼働および実稼働のAEMas a Cloud Service環境での監視を可能にします。 お使いの New Relic アカウントは、プライマリAdobeが管理するアカウントに添付され、複数のアプリケーションがそのアカウントにレポートされます。
 
-環境ごとに 1 つの Author サービス用アプリケーション Publish サービス用の 1 つのアプリケーション（Golden Publish を含む）環境ごとに 1 つの Preview サービス用のアプリケーション各アプリケーションで 1 つのライセンスキーを使用するAEMas a Cloud Service環境は、1 つの New Relic アカウントにのみレポートします。 New Relic APM とインフラストラクチャの両方の完全な監視指標とイベントは、7 日間保持されます。
+AEMas a Cloud Service環境ごとに 3 つ：
+
+* 環境ごとに 1 つの Author サービス用アプリケーション
+* 環境ごとにパブリッシュサービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
+* 各環境で Preview サービス用の 1 つのアプリケーション各アプリケーションで 1 つのライセンスキーを使用するAEMas a Cloud Service環境は、1 つの New Relic アカウントに対してのみレポートします。 New Relic APM とインフラストラクチャの両方の完全な監視指標とイベントは、7 日間保持されます。
 
 ### New Relic のCloud Service・データにアクセスできるユーザー {#access-new-relic-cloud}
 
