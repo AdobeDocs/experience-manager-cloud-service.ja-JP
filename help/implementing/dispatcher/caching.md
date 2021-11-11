@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
+source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 89%
+source-wordcount: '1528'
+ht-degree: 91%
 
 ---
 
@@ -134,7 +134,12 @@ Define DISABLE_DEFAULT_CACHING
 >
 >Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、[AEM からのキャッシュページの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja)ページで説明されている無効化手順は、AEM as a Cloud Service では無効になります。
 
-レプリケーションフラッシュエージェントを使用する必要があります。 タグの割り当ては、レプリケーション API を使用して行えます。この [レプリケーション API のドキュメントが利用できます](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html)キャッシュのフラッシュの例については、 [API の例ページ](https://helpx.adobe.com/jp/experience-manager/using/aem64_replication_api.html) ( 特に `CustomStep` 使用可能なすべてのエージェントに対して ACTIVATE タイプのレプリケーションアクションを発行する例 )。 フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
+レプリケーションフラッシュエージェントを使用する必要があります。 これは、 [レプリケーション API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
+
+<!-- Need to find a new link and/or example -->
+<!-- 
+and for an example of flushing the cache, see the [API example page](https://helpx.adobe.com/experience-manager/using/aem64_replication_api.html) (specifically the `CustomStep` example issuing a replication action of type ACTIVATE to all available agents). 
+-->
 
 次に図で示します。
 
