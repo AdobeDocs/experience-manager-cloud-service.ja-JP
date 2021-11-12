@@ -5,9 +5,9 @@ breadcrumb-title: 実装ガイド
 user-guide-description: 開発およびデプロイメントに関するトピックなど、Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法について説明します。
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
+source-git-commit: b89869223986dcc64ebefc9ae6bfb8587456d4da
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1084'
 ht-degree: 94%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 94%
       + [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
    + [ログへのアクセスと管理](cloud-manager/manage-logs.md)
    + [SLA レポート](cloud-manager/sla-reporting.md)
+   + [New Relic へのユーザーアクセス](cloud-manager/user-access-new-relic.md)
    + [通知について](cloud-manager/notifications.md)
    + SSL 証明書の管理 {#manage-ssl-certificates}
       + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
