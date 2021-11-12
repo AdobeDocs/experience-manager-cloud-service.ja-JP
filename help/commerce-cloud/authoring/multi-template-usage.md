@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: ea4009b7ab99ea8fd9def4157302b942794aa283
+source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 91%
 
 ---
 
-# 複数のカテゴリページと製品ページの作成
+# 複数のカテゴリページと製品ページの作成 {#multiple}
 
     >[！注意 ]
     >
@@ -31,6 +31,6 @@ ht-degree: 91%
 
 - [AEM CIF コアコンポーネント - マルチカタログページの設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
-## 関連リソース
+## 関連リソース {#related}
 
 また、ページの特定の領域を動的にターゲットにし、同じテンプレートを再利用することもできます。[製品データを関連する AEM コンテンツとエンリッチメントする方法を説明します。](./enrich-product-associated-content.md)
