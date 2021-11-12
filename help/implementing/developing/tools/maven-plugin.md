@@ -2,7 +2,7 @@
 title: Adobe Content Package Maven Plugin
 description: Content Package Maven Plugin を使用した AEM アプリケーションのデプロイについて説明します
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 96%
@@ -117,7 +117,7 @@ build ゴールのすべてのパラメーターについては、[共通パラ�
 以下のパラメーターに加えて、[共通パラメーター](#common-parameters)の説明も参照してください。
 
 | 名前 | 型 | 必須 | デフォルト値 | 説明 |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | いいえ | Maven プロジェクトの `artifactId` プロパティの値 | `groupId:artifactId:version[:packaging]` 形式の文字列 |
 | `artifactId` | `String` | いいえ | なし | インストールするアーティファクトの ID |
 | `groupId` | `String` | いいえ | なし | インストールするアーティファクトの `groupId` |
