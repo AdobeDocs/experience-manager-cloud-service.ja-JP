@@ -3,7 +3,7 @@ title: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノ
 description: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: null
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: ec2719fca19f366e0021fea7429e93c15e9579df
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 20%
@@ -19,7 +19,7 @@ ht-degree: 20%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 09 日に予定されています。
+AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 16 日に予定されています。
 
 ### 新機能 {#what-is-new}
 
