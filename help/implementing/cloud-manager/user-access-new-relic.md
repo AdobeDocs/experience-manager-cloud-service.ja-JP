@@ -1,9 +1,9 @@
 ---
 title: New Relic へのユーザーアクセス
-description: New Relic へのユーザーアクセス
-source-git-commit: 82ec1283bfa8cc5ff48801521c291d438ff24122
+description: このページでは、AEMas a Cloud Serviceの New Relic Application Performance Monitoring について説明します
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ AEMas a Cloud Service環境ごとに 3 つ：
 * 環境ごとにパブリッシュサービス用の 1 つのアプリケーション（ゴールデンパブリッシュを含む）
 * 環境ごとに Preview サービス用の 1 つのアプリケーション
    >[!IMPORTANT]
-   >各アプリケーションで 1 つのライセンスキーが使用され、AEMas a Cloud Service環境は 1 つの New Relic アカウントに対してのみレポートします。 New Relic APM とインフラストラクチャの両方の完全な監視指標とイベントは、7 日間保持されます。
+   >各アプリケーションで 1 つのライセンスキーが使用され、AEMas a Cloud Service環境は 1 つの New Relic アカウントに対してのみレポートします。 New Relic APM の両方の完全な監視指標およびイベントは、7 日間保持されます。
 
 ### New Relic のCloud Service・データにアクセスできるユーザー {#access-new-relic-cloud}
 
