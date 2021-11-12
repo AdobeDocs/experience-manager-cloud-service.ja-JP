@@ -3,10 +3,10 @@ title: 入門と概要
 description: AEM Content and Commerce の入門と概要。Experience Manager Commerce Integration Framework（CIF）は、Magento および他のサードパーティ製コマースソリューションのコマースサービスを Experience Cloud と統合および拡張するための推奨パターンです。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 99%
+source-wordcount: '893'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 Adobe Experience Manager の Content and Commerce を使用すると、ブランドはスケーリングとイノベーションをより迅速に行って、コマースエクスペリエンスを差別化し、加速するオンライン消費支出に対応できます。AEM Content and Commerce は、Experience Manager で提供される没入感のあるパーソナライズされたオムニチャネルエクスペリエンスを任意の数のコマースソリューションと組み合わせて、差別化されたエクスペリエンスをショッピングジャーニーのあらゆる部分に提供し、価値創出までの時間を短縮すると共にコンバージョンの向上を促します。
 
-## AEM Content and Commerce が顧客の成功にどのように役立つか
+## AEM Content and Commerce が顧客の成功にどのように役立つか {#successful}
 
 オンラインコマースエクスペリエンスに対する顧客の期待がますます高まる中、ブランドは差別化されたエクスペリエンスとより多くのコンテンツをより迅速に提供しなければならないというプレッシャーにさらされています。ただし、コンテンツ管理プラットフォームの実装には、多くの場合、カスタムコンポーネントやオーサリングツールなどの基礎的要素の開発に多くの時間と予算投資が必要で、メンテナンスやアップグレードのコストが発生します。Experience Manager Sites は、Adobe Experience Manager as a Cloud Service のアドオンモジュールとして Content and Commerce を提供します。このアドオンは、標準搭載のコマースコアコンポーネント、オーサリングツール、参照ストアフロントを提供して、運用開始を早め、チーム間のシームレスなコラボレーションを可能にし、コンバージョンを促進します。
 
@@ -40,7 +40,7 @@ Adobe Experience Manager の Content and Commerce を使用すると、ブラン
 
 ![CIF 要素](./assets/CIF/CIF_Overview.png)
 
-## 2013 年以降の CIF による顧客サポートの成功
+## 2013 年以降の CIF による顧客サポートの成功 {#support}
 
 200 社を超える顧客とのコラボレーションを通じて、CIF は、コンテンツおよびコマースプロジェクトを成功に導くための構成要素としての地位を確立しました。これにより、現在および将来にわたって IT とビジネスに価値がもたらされます。最近の顧客プロジェクトでは、CIF を「プロセスの促進と時間の節約に大きく貢献し多大な価値をもたらすもの」と説明しています。
 
@@ -50,23 +50,23 @@ CIF には、カスタムコードの必要性を軽減する標準搭載のコ�
 
 CIF アドオンは、Experience Manager に製品コンテキストを導入し、製品コンソールや製品／カテゴリピッカーなどのオーサリングツールを提供します。これらのツールをマーケターが利用すれば、開発者に頼らずに Experience Manager でショッパブルエクスペリエンスを作成して提供できます。以下のような利点があります。
 
-### エクスペリエンス
+### エクスペリエンス {#experiences}
 
 AEM の強力な CIF ツールを使用すると、コンテンツ作成者は、配信にとらわれない拡張可能な形で、機能豊富なパーソナライズされたコマースエクスペリエンスを迅速に構築して、ビジネスチャンスを十分に生かすことができます。
 
 ![CIF 要素](./assets/CIF/CIF_Product_Experience_Management.png)
 
-### 価値創出までの時間（TTV）
+### 価値創出までの時間（TTV） {#ttv}
 
 [AEM コアコンポーネント](https://www.aemcomponents.dev/)、[AEM Venia 参照ストアフロント](https://github.com/adobe/aem-cif-guides-venia)、[AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)、PWA（プログレッシブ Web アプリ）の統合パターン（ヘッドレスコンテンツおよびコマース）などで、プロジェクトの開発を促進します。
 
 CIF は、常に最新のアドオンを使用した継続的なイノベーションを目的として構築されており、顧客は新機能や改善された機能にアクセスできます。
 
-### 統合
+### 統合 {#integrations}
 
 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、マイクロサービスベースのサーバーレス PaaS、[CIF の参照実装](https://github.com/adobe/commerce-cif-graphql-integration-reference)などを使用して、エコシステム（例：コマースソリューション）を Experience Cloud に接続します。
 
-## 実証済みのパターンとベストプラクティス
+## 実証済みのパターンとベストプラクティス {#proven}
 
 CIF は、ベストプラクティスに基づく標準化された統合パターンで顧客をサポートします。顧客の現在の成功に役立つほか、顧客と共に成長し将来の要件にも対応できる柔軟性を備えています。具体的には次のとおりです。
 
@@ -76,3 +76,9 @@ CIF は、ベストプラクティスに基づく標準化された統合パタ�
    * リアルタイムの製品データおよびエクスペリエンスが必要
 * デジタル成熟度が高まると、エクスペリエンス管理が必要になります。CIF には、追加の IT 作業を行わずに増分的に組み込むことができる製品エクスペリエンス管理機能が付属しています。
 * オムニチャネルに対応：CIF は、パターン、アクセラレーター、コアコンポーネントで様々なタッチポイントテクノロジー（サーバーサイド、ハイブリッド、クライアントサイド）をサポートしています。
+
+## ジャーニー {#journey}
+
+コマースジャーニーを使用している場合は、次の手順に進んでください。
+
+* この [AEM Content Author ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

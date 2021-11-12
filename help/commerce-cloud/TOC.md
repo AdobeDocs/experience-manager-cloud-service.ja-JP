@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: AEM Content and Commerce ガイド
 user-guide-description: Adobe Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
-source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 87%
+source-wordcount: '140'
+ht-degree: 67%
 
 ---
 
@@ -16,6 +16,13 @@ ht-degree: 87%
 + [AEM Content and Commerce](/help/commerce-cloud/home.md)
 + [AEM Content and Commerce as a Cloud Service の主な変更点](changes.md)
 + [概要](introduction.md)
++ コマースジャーニー {#journeys}
+   + コンテンツ作成者ジャーニー {#author}
+      + [AEM Content and Commerce Content Authorジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
+      + [CIF オーサリングの概要](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+      + [商品カタログのページとテンプレートを管理](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+      + [段階別の製品カタログエクスペリエンスの構築](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+      + [製品エクスペリエンスの構築](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
 + 統合 {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [サードパーティコマースソリューション](integrating/third-party.md)
