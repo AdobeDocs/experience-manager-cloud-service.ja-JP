@@ -1,9 +1,9 @@
 ---
 title: 製品エクスペリエンスの構築
 description: 製品エクスペリエンスを構築する方法を説明します。
-source-git-commit: 2d981424d22e2c8d16505eb0cc77c67d5df2bc64
+source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -113,4 +113,5 @@ AEMでは、様々なタイプのコンテンツを作成し、それらを商�
 ## その他のリソース {#additional-resources}
 
 * [コマースエクスペリエンスのオーサリング](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [製品コックピット](/help/commerce-cloud/authoring/product-cockpit.md)
 * [コンテンツフラグメントコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)
