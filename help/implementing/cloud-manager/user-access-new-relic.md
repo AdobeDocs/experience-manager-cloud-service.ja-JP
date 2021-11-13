@@ -1,9 +1,9 @@
 ---
 title: New Relic へのユーザーアクセス
 description: このページでは、AEMas a Cloud Serviceの New Relic Application Performance Monitoring について説明します
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ AEMas a Cloud Serviceプログラムに関連付けられた New Relic サブア
    >[!NOTE]
    >New Relic からメールが届かない場合は、次の手順に従います。
    >以下を確認します。 [スパムフィルター](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). 該当する場合、 [メール許可リストに New Relic を追加](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >サポートチケットに関するフィードバックをお送りください。アドビのチームがお手伝いします。
+   >サポートチケットに関するフィードバックを提供してください。Adobeサポートチームがお手伝いします。
 
 1. 電子メールまたはパスワードのエラーメッセージが原因でサインアッププロセスが完了し、アカウントにログインできない場合は、次のサポートチケットを使用してログインしてください： [Admin Console](https://adminconsole.adobe.com/).
 
