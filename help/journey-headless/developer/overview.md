@@ -1,17 +1,17 @@
 ---
 title: AEM ヘッドレスデベロッパージャーニー
-description: AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を示すガイド付きのジャーニーをここから始めてください。
+description: AEMヘッドレス CMS のドキュメント。 AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を示すガイド付きのジャーニーをここから始めてください。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
+source-git-commit: d683b71d823fb6cc756f8fcf04e7393e7bf71c14
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 54%
+source-wordcount: '1223'
+ht-degree: 53%
 
 ---
 
 # AEM ヘッドレスデベロッパージャーニー {#aem-headless-developer-journey}
 
-AEM の強力で柔軟なヘッドレス機能とその能力、および最初の開発プロジェクトでの活用方法を示すガイド付きのジャーニーをここから始めてください。
+AEM の強力で柔軟なヘッドレス機能とその能力、および最初の開発プロジェクトでの活用方法を示すガイド付きのジャーニーをここから始めてください。このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なすべてのAEMヘッドレスドキュメントを提供します。
 
 ## はじめに {#introduction}
 
