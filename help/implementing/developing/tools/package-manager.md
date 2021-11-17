@@ -1,453 +1,457 @@
 ---
-title: Package Manager
-description: Learn the basics of AE; package management with Package Manager.
+title: パッケージマネージャー
+description: AE の基本を学ぶ。パッケージマネージャーを使用したパッケージ管理。
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 14%
 
 ---
 
 
-# Package Manager {#working-with-packages}
+# パッケージマネージャー {#working-with-packages}
 
-Packages enable the importing and exporting of repository content. You can use packages to install new content, transfer content between instances, and back up repository content.
+パッケージを使用すると、リポジトリコンテンツのインポートおよびエクスポートが可能になります。 パッケージを使用して、新しいコンテンツのインストール、インスタンス間でのコンテンツの転送、リポジトリコンテンツのバックアップをおこなうことができます。
 
-Using Package Manager, you can transfer packages between your AEM instance and your local file system for development purposes.
+パッケージマネージャーを使用すると、開発目的で、AEMインスタンスとローカルファイルシステムの間でパッケージを転送できます。
 
-## What are Packages? {#what-are-packages}
+## パッケージとは {#what-are-packages}
 
-A package is a zip file holding repository content in file-system serialization form, called vault serialization, providing an easy-to-use and easy-to-edit representation of files and folders. Content included in the package is defined by using filters.
+パッケージとは、リポジトリコンテンツをファイルシステムのシリアル化形式で保持する zip ファイルで、vault のシリアル化と呼ばれ、使いやすく編集しやすい形式でファイルやフォルダを表現します。 パッケージに含まれるコンテンツは、フィルターを使用して定義します。
 
-A package also contains vault meta information, including the filter definitions and import configuration information. Additional content properties, which are not used for package extraction, can be included in the package, such as a description, a visual image, or an icon. These additional content properties are for the content package consumer and for informational purposes only.
+パッケージには、フィルタ定義や読み込み設定情報などの Vault メタ情報も含まれています。 説明、視覚的な画像、アイコンなど、パッケージの抽出には使用されない追加のコンテンツプロパティをパッケージに含めることができます。 これらの追加のコンテンツプロパティは、コンテンツパッケージコンシューマー向けのもので、情報提供だけを目的としています。
 
 >[!NOTE]
 >
->Packages represent the current version of the content at the time the package is built. They do not include any previous versions of the content that AEM keeps in the repository.
+>パッケージは、そのパッケージを作成した時点におけるコンテンツの現在のバージョンを表しています。AEM がリポジトリに保持している以前のバージョンのコンテンツは含まれません。
 
 ## Packages in AEM as a Cloud Service {#aemaacs-packages}
 
-Content packages created for AEM as a Cloud Service applications must have a clean separation between immutable and mutable content. Therefore Package Manager can only be used to manage packages containing content. Any code must be deployed through Cloud Manager.
+AEMas a Cloud Serviceのアプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。 したがって、パッケージマネージャーは、コンテンツを含むパッケージの管理にのみ使用できます。 任意のコードは、Cloud Manager を使用してデプロイする必要があります。
 
 >[!NOTE]
 >
->Packages can only contain content. Any functionality (e.g. content stored under `/apps`) must be [deployed using your CI/CD pipeline in Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>パッケージには、コンテンツのみを含めることができます。 すべての機能 ( 例： `/apps`) は [Cloud Manager の CI/CD パイプラインを使用してデプロイされます。](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >
->Package Manager UI might return an **undefined** error message if a package takes longer than 10 minutes to install. Do not retry the installation if that happens, because it is proceeding correctly in the background and some conflicts could be introduced by multiple concurrent import processes.
+>パッケージマネージャー UI で **未定義** パッケージのインストールに 10 分以上かかる場合のエラーメッセージ。
+>
+>これは、インストールのエラーによるものではなく、すべての要求に対してCloud Serviceが持つタイムアウトのためです。
+>
+>このようなエラーが表示された場合は、インストールを再試行しないでください。 インストールはバックグラウンドで正しく進行しています。 インストールを再起動すると、複数の同時インポートプロセスによって競合が発生する可能性があります。
 
-For more details on how to manage packages for AEMaaCS, please review the document [Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md) in the deploying user guide.
+AEMaaCS 用のパッケージを管理する方法の詳細については、このドキュメントを参照してください [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md) （デプロイユーザーガイド）。
 
-## Package Manager {#package-manager}
+## パッケージマネージャー {#package-manager}
 
-Package Manager manages the packages on your AEM installation. After you have [assigned the necessary permissions](#permissions-needed-for-using-the-package-manager) you can use Package Manager for various actions, including configuring, building, downloading, and installing your packages.
+Package Manager manages the packages on your AEM installation. [](#permissions-needed-for-using-the-package-manager)
 
-### Required Permissions {#required-permissions}
+### 必要な権限 {#required-permissions}
 
-To create, modify, upload, and install packages, users must have the appropriate permissions on the following nodes:
+パッケージを作成、変更、アップロード、インストールするには、次のノードに対する適切な権限が必要です。
 
-* Full rights excluding delete on `/etc/packages`
+* 削除を除く完全な権限 `/etc/packages`
 * The node that contains the package contents
 
 >[!CAUTION]
 >
->Granting permissions for packages may lead to sensitive information disclosure and data loss.
+>パッケージに対する権限を付与すると、機密情報の開示やデータの損失が発生する場合があります。
 >
->To limit these risks, it is highly recommended to grant specific group permissions over dedicated subtrees only.
+>これらのリスクを制限するには、専用のサブツリーに対してのみ特定のグループ権限を付与することを強くお勧めします。
 
-### Accessing Package Manager {#accessing}
+### パッケージマネージャーへのアクセス {#accessing}
 
-You can access Package Manager in three ways:
+パッケージマネージャーには次の 3 つの方法でアクセスできます。
 
-1. From the AEM main menu -> **Tools** -> **Deployment** -> **Packages**
-1. From [CRXDE Lite](crxde.md) using the top switcher bar
-1. Directly by accessing `http://<host>:<port>/crx/packmgr/`
+1. AEMのメインメニューから —> **ツール** -> **導入** -> **パッケージ**
+1. 送信者 [CRXDE Lite](crxde.md) 上部のスイッチャーバーの使用
+1. に直接アクセス `http://<host>:<port>/crx/packmgr/`
 
-### Package Manager UI {#ui}
+### パッケージマネージャー UI {#ui}
 
-Package Manager is divided into four main functional areas:
+パッケージマネージャーは、次の 4 つの主な機能領域に分かれています。
 
-* **Left Navigation Panel** - This panel allows you to filter and sort the list of packages.
-* **Package List** - This is the list of packages on your instance filtered and sorted per selections in the Left Navigation Panel.
-* **Activity Log** - This panel is minimized at first and expands to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
-   * **Clear Log**
-   * **Show/Hide**
-* **Toolbar** - The toolbar contains refresh buttons for the Left Navigation Panel and Package list as well as buttons for searching, creating, and uploading packages.
+* **左ナビゲーションパネル**  — このパネルでは、パッケージのリストをフィルタリングおよび並べ替えることができます。
+* **パッケージリスト**  — これは、左側のナビゲーションパネルでの選択に従ってフィルタリングおよび並べ替えられた、インスタンス上のパッケージのリストです。
+* **アクティビティログ**  — このパネルは最初は最小化され、パッケージのビルド時やインストール時など、パッケージマネージャーのアクティビティの詳細を表示するように拡張されます。 「アクティビティログ」タブには、次の操作を行うための追加のボタンがあります。
+   * ****
+   * **表示／非表示**
+* **ツールバー**  — ツールバーには、左側のナビゲーションパネルとパッケージリスト用の更新ボタン、およびパッケージを検索、作成、アップロードするためのボタンが含まれています。
 
-![Package Manager UI](assets/package-manager-ui.png)
+![パッケージマネージャー UI](assets/package-manager-ui.png)
 
-Clicking an option in the Left Navigation Panel immediately filters the Package List.
+左側のナビゲーションパネルでオプションをクリックすると、パッケージリストが直ちにフィルタリングされます。
 
-Clicking a package name expands the entry in the Package List to show more detail about the package.
+パッケージ名をクリックすると、「パッケージリスト」のエントリが展開され、パッケージの詳細が表示されます。
 
-![Expanded package details](assets/package-expand.png)
+![拡張されたパッケージの詳細](assets/package-expand.png)
 
-There are number of actions that can be taken on a package via the toolbar buttons available when the package detail is expanded.
+パッケージの詳細を展開する際に使用できるツールバーボタンを使用して、パッケージで実行できるアクションは多数あります。
 
-* [Edit](#edit-package)
-* [Build](#building-a-package)
-* [Reinstall](#reinstalling-packages)
-* [Download](#downloading-packages-to-your-file-system)
+* [編集](#edit-package)
+* [ビルド](#building-a-package)
+* [再インストール](#reinstalling-packages)
+* [ダウンロード](#downloading-packages-to-your-file-system)
 
-Further actions are available beneath the **More** button.
+その他のアクションは、 **詳細** 」ボタンをクリックします。
 
-* [Delete](#deleting-packages)
-* [Coverage](#package-coverage)
-* [Contents](#viewing-package-contents-and-testing-installation)
-* [Rewrap](#rewrapping-a-package)
-* [Other Versions](#other-versions)
-* [Uninstall](#uninstalling-packages)
+* [削除](#deleting-packages)
+* [カバレッジ](#package-coverage)
+* [目次](#viewing-package-contents-and-testing-installation)
+* [再折り返し](#rewrapping-a-package)
+* [その他のバージョン](#other-versions)
+* [アンインストール](#uninstalling-packages)
 * [Test Install](#viewing-package-contents-and-testing-installation)
-* [Validate](#validating-packages)
-* [Replicate](#replicating-packages)
+* [Validate（検証）](#validating-packages)
+* [レプリケーション](#replicating-packages)
 
-### Package Status {#package-status}
+### パッケージステータス {#package-status}
 
-Each entry in the package list has a status indicator to let you know at a glance the status of the package. Hovering over the status reveals tooltip with the detail of the status.
+パッケージリスト内の各エントリには、パッケージのステータスを一目で把握できるステータスインジケーターが表示されます。 ステータスの上にマウスポインターを置くと、ステータスの詳細を示すツールチップが表示されます。
 
-![Package status](assets/package-status.png)
+![パッケージのステータス](assets/package-status.png)
 
-If the package has been changed or was never built, the status is presented as a link to take quick action to rebuild or install the package.
+パッケージが変更された、またはビルドされなかった場合、ステータスは、パッケージを再構築またはインストールするためのクイックアクションを実行するためのリンクとして表示されます。
 
-## Package Settings {#package-settings}
+## パッケージ設定 {#package-settings}
 
-A package is essentially a set of filters and the repository data based on those filters. Using the Package Manager UI, you can click on a package and then the **Edit** button to view the details of a package including the following settings.
+パッケージとは基本的に、一連のフィルターと、これらのフィルターに基づくリポジトリデータです。 パッケージマネージャーの UI を使用して、パッケージをクリックし、 **編集** ボタンをクリックすると、次の設定を含むパッケージの詳細が表示されます。
 
-* [General Settings](#general-settings)
-* [Package Filters](#package-filters)
-* [Package Dependencies](#package-dependencies)
-* [Advanced Settings](#advanced-settings)
-* [Package Screenshots](#package-screenshots)
+* [一般設定](#general-settings)
+* [パッケージフィルター](#package-filters)
+* [パッケージの依存関係](#package-dependencies)
+* [詳細設定](#advanced-settings)
+* [パッケージスクリーンショット](#package-screenshots)
 
-### General Settings {#general-settings}
+### 一般設定 {#general-settings}
 
 You can edit a variety of package settings to define information such as the package description, dependencies, and provider details.
 
-The **Package Settings** dialog is available via the **Edit** button when [creating](#creating-a-new-package) or [editing](#viewing-and-editing-package-information) a package. After any changes are made, click **Save**.
+この **パッケージ設定** ダイアログは、 **編集** ボタンを [作成中](#creating-a-new-package) または [編集中](#viewing-and-editing-package-information) パッケージ。 変更が完了したら、「 **保存**.
 
-![Edit Package dialog, general settings](assets/general-settings.png)
+![パッケージを編集ダイアログ、一般設定](assets/general-settings.png)
 
-| Field | Description |
+| フィールド | 説明 |
 |---|---|
-| Name | The name of the package |
-| Group | For organizing packages, you can type the name of a new group or select an existing group |
-| Version | Text to use for the version |
-| Description | A brief description of the package allowing HTML markup for formatting |
-| Thumbnail | The icon that appears with the package listing |
+| 名前 | The name of the package |
+| グループ | パッケージを整理するために、新しいグループの名前を入力するか、既存のグループを選択できます |
+| バージョン | Text to use for the version |
+| 説明 | 書式設定用のHTMLマークアップを許可するパッケージの簡単な説明 |
+| サムネール | パッケージリストと共に表示されるアイコン |
 
-### Package Filters {#package-filters}
+### パッケージフィルター {#package-filters}
 
-Filters identify the repository nodes to include in the package. A **Filter Definition** specifies the following information:
+****
 
-* The **Root Path** of the content to include
-* **Rules** that include or exclude specific nodes below the root path
+* ****
+* ****
 
-Add rules using the **+** button. Remove rules using the **-** button.
+を使用してルールを追加する **+** 」ボタンをクリックします。 次を使用してルールを削除： **-** 」ボタンをクリックします。
 
-Rules are applied according to their order so position them as required using the **Up** and **Down** arrow buttons.
+ルールは順序に従って適用され、必要に応じて **上** および **下** 矢印ボタン
 
 Filters can include zero or more rules. When no rules are defined, the package contains all content below the root path.
 
 You can define one or more filter definitions for a package. Use more than one filter to include content from multiple root paths.
 
-![Filters tab](assets/edit-filter.png)
+![「フィルター」タブ](assets/edit-filter.png)
 
-When creating filters, you can define a path or use a regular expression to specify all the nodes that you want to include or exclude.
+フィルターを作成する際に、パスを定義するか、正規表現を使用して、含めるまたは除外するすべてのノードを指定できます。
 
-| Rule Type | Description |
+| Rule Type | 説明 |
 |---|---|
-| include | Including a directory will include that directory and all the files and folders in that directory (i.e. the entire subtree) but **will not** include other files or folders from under the specified root path. |
+| include | **** |
 | exclude | Excluding a directory will exclude that directory and all files and folders in that directory (i.e. the entire subtree). |
 
-Package filters are most often defined when you first [create the package.](#creating-a-new-package) However they can also be edited later, after which the package should be rebuilt to update its content based on the new filter definitions.
+パッケージフィルターは、最初に [パッケージを作成します。](#creating-a-new-package) ただし、後で編集することもでき、その後、パッケージを再構築して、新しいフィルター定義に基づいてその内容を更新する必要があります。
 
 >[!TIP]
 >
 >One package can contain multiple filter definitions so that nodes from different locations can easily be combined into one package.
 
-### Dependencies {#dependencies}
+### 依存関係 {#dependencies}
 
-![Dependencies tab](assets/dependencies.png)
+![「依存関係」タブ](assets/dependencies.png)
 
-| Field | Description | Example/Details |
+| フィールド | 説明 | 例/詳細 |
 |---|---|---|
-| Tested with | The product name and version this package is targeted to or is compatible with. | `AEMaaCS` |
-| Fixed issues | A text field allowing for listing details of bugs fixed with this package, one bug per line | - |
-| Depends on | Lists other packages necessary so that the current package runs as expected when installed | `groupId:name:version` |
-| Replaces | A list of deprecated packages that this package replaces | `groupId:name:version` |
+| Tested with | このパッケージのターゲットまたは互換性のある製品名およびバージョン。 | `AEMaaCS` |
+| 修正された問題 | このパッケージで修正されたバグの詳細をリストするテキストフィールド。1 行に 1 つのバグが表示されます。 | - |
+| 依存 | 現在のパッケージがインストール時に期待どおりに実行されるように、必要なその他のパッケージをリストします | `groupId:name:version` |
+| 置き換え | このパッケージで置き換えられる、廃止されたパッケージのリスト | `groupId:name:version` |
 
-### Advanced Settings {#advanced-settings}
+### 詳細設定 {#advanced-settings}
 
-![Advanced Settings tab](assets/advanced-settings.png)
+![「詳細設定」タブ](assets/advanced-settings.png)
 
-| Field | Description | Example/Details |
+| フィールド | 説明 | 例/詳細 |
 |---|---|---|
-| Name | The name of the provider of the package | `WKND Media Group` |
+| 名前 | パッケージのプロバイダーの名前 | `WKND Media Group` |
 | URL | URL of the provider | `https://wknd.site` |
-| Link | Package-specific link to a provider page | `https://wknd.site/package/` |
-| Requires | Defines if there are any restrictions when installing the package | **Admin** - The package must only be installed with admin privileges <br>**Restart** - AEM must be restarted after installing the package |
-| AC Handling | Specifies how the access control information defined in the package is handled when the package is imported | **Ignore** - Preserve ACLs in the repository <br>**Overwrite** - Overwrite ACLs in the repository <br>**Merge** - Merge both sets of ACLs <br>**MergePreserve** - Merge access control in the content with the one provided with the package by adding the access control entries of principals not present in the content <br>**Clear** - Clear ACLs |
+| リンク | Package-specific link to a provider page | `https://wknd.site/package/` |
+| 次を必要とする | パッケージのインストール時に制限があるかどうかを定義します | **管理者**  — パッケージは管理者権限でのみインストールする必要があります&#x200B;<br>**再起動** - AEMはパッケージのインストール後に再起動する必要があります |
+| AC の処理 | Specifies how the access control information defined in the package is handled when the package is imported | **無視**  — リポジトリ内の ACL を保持&#x200B;<br>**上書き**  — リポジトリ内の ACL を上書き&#x200B;<br>**結合**  — 両方の ACL セットをマージする&#x200B;<br>**MergePreserve**  — コンテンツ内に存在しないプリンシパルのアクセス制御エントリを追加して、コンテンツ内のアクセス制御をパッケージに付属するエントリと結合します&#x200B;<br>**クリア** - ACL をクリア |
 
-### Package Screenshots {#package-screenshots}
+### パッケージスクリーンショット {#package-screenshots}
 
-You can attach multiple screenshots to your package to provide a visual representation of how the content appears.
+パッケージに複数のスクリーンショットを添付して、コンテンツがどのように表示されるかを視覚的に示すことができます。
 
-![Screenshots tab](assets/screenshots.png)
+![「スクリーンショット」タブ](assets/screenshots.png)
 
-## Package Actions {#package-actions}
+## パッケージアクション {#package-actions}
 
-There are many actions that can be taken on a package.
+1 つのパッケージで実行できるアクションは多数あります。
 
 ### Creating a Package {#creating-a-new-package}
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Click **Create Package**.
+1. 「**パッケージを作成**」をクリックします。
 
    >[!TIP]
    >
-   >If your instance has a lot of packages, there might be a folder structure in place. In such cases, it is easier to navigate to the required target folder before creating the new package.
+   >インスタンスに多数のパッケージがある場合は、フォルダー構造が存在する可能性があります。 そのような場合は、新しいパッケージを作成する前に必要なターゲットフォルダーに移動する方が簡単です。
 
-1. In the **New Package** dialog, enter the following fields:
+1. 内 **新規パッケージ** ダイアログで、次のフィールドを入力します。
 
-   ![New package dialog](assets/new-package-dialog.png)
+   ![新規パッケージダイアログ](assets/new-package-dialog.png)
 
-   * **Package Name** - Select a descriptive name to help you (and others) easily identify the contents of the package.
+   * **パッケージ名**  — パッケージのコンテンツを（その他のユーザーが）簡単に識別できるように、説明的な名前を選択します。
 
-   * **Version** - This is a textual field for you to indicate a version. This is appended to the package name to form the name of the zip file.
+   * **バージョン**  — これは、バージョンを示すためのテキストフィールドです。 これがパッケージ名に追加され、zip ファイルの名前が形成されます。
 
-   * **Group** - This is the target group (or folder) name. Groups help you organize your packages. A folder is created for the group if it does not already exist. If you leave the group name blank, it will create the package in the main package list.
+   * **グループ**  — ターゲットグループ（またはフォルダー）の名前です。 グループは、パッケージの整理に役立ちます。 グループのフォルダーがまだ存在しない場合は作成されます。 グループ名を空白のままにすると、メインのパッケージリストにパッケージが作成されます。
 
-1. Click **OK** to create the package.
+1. 「**OK**」をクリックしてパッケージを作成します。
 
-1. AEM lists the new package at the top of the list of packages.
+1. AEMでは、新しいパッケージがパッケージのリストの最上部に表示されます。
 
-   ![New package](assets/new-package.png)
+   ![](assets/new-package.png)
 
-1. Click **Edit** to define the [package contents.](#package-contents) Click **Save** after you are finished editing the settings.
+1. クリック **編集** を定義するには、 [パッケージの内容。](#package-contents)****
 
-1. You can now [Build](#building-a-package) your package.
+1. これで、パッケージを[ビルド](#building-a-package)できます。
 
-It is not compulsory to immediately build the package after creating it. An unbuilt package contains no content and consists of only the filter data and other metadata of the package.
+パッケージを作成した後すぐにビルドする必要はありません。 未ビルドパッケージにはコンテンツが含まれず、フィルターデータとパッケージの他のメタデータのみで構成されます。
 
-### Building a Package {#building-a-package}
+### パッケージのビルド {#building-a-package}
 
-A package is often built at the same time as you [create the package](#creating-a-new-package), but you can return at a later point to either build or rebuild the package. This can be useful if the content within the repository has changed or the package filters have changed.
+多くの場合、パッケージはユーザーと同時に構築されます [パッケージを作成](#creating-a-new-package)に変更された場合は、後で戻って、パッケージをビルドまたは再構築できます。 これは、リポジトリ内のコンテンツが変更された場合や、パッケージフィルターが変更された場合に役立ちます。
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. Click **Build**. A dialog asks for confirmation that you do want to build the package since any existing package contents will be overwritten.
+1. ****&#x200B;既存のパッケージの内容が上書きされるので、パッケージをビルドするかどうかを確認するダイアログが表示されます。
 
-1. Click **OK**. AEM builds the package, listing all content added to the package as it does so in the activity list. When complete AEM displays a confirmation that the package was built and (when you close the dialog) updates the package list information.
+1. 「**OK**」をクリックします。AEMがパッケージをビルドし、パッケージに追加されたすべてのコンテンツがアクティビティリストに表示されます。 パッケージの構築が完了すると、パッケージが構築されたことを示すダイアログが表示されます。また、（このダイアログを閉じると）パッケージリストの内容が更新されます。
 
-### Editing a Package {#edit-package}
+### パッケージの編集 {#edit-package}
 
-Once a package is uploaded to AEM, you can modify its settings.
+パッケージをAEMにアップロードした後は、その設定を変更できます。
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. Click **Edit** and update the **[Package Settings](#package-settings)** as required.
+1. クリック **編集** を更新し、 **[パッケージ設定](#package-settings)** 必要に応じて。
 
-1. Click **Save** to save.
+1. ****
 
-You may need to [rebuild the package](#building-a-package) to update its contents based on the changes you made.
+必要に応じて、 [パッケージを再構築します。](#building-a-package) をクリックして、変更に基づいてコンテンツを更新します。
 
-### Rewrapping a Package {#rewrapping-a-package}
+### パッケージを再度含める {#rewrapping-a-package}
 
-Once a package has been built, it can be rewrapped. Rewrapping changes the package information without such as thumbnail, description, etc., without changing the package content.
+Once a package has been built, it can be rewrapped. 再ラップは、パッケージのコンテンツを変更せずに、サムネール、説明などを含まずにパッケージ情報を変更します。
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. Click **Edit** and update the **[Package Settings](#package-settings)** as required.
+1. クリック **編集** を更新し、 **[パッケージ設定](#package-settings)** 必要に応じて。
 
-1. Click **Save** to save.
+1. クリック **保存** 保存します。
 
-1. Click **More** -> **Rewrap** and a dialog will ask for confirmation.
+1. ********
 
-### Viewing Other Package Versions {#other-versions}
+### 他のパッケージバージョンの表示 {#other-versions}
 
-Because every version of a package appears in the list as any other package, Package Manager can find other versions of a selected package.
+パッケージのすべてのバージョンは他のパッケージとしてリストに表示されるので、パッケージマネージャーは選択したパッケージの他のバージョンを検索できます。
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. Click **More** -> **Other Versions** and a dialog opens with a list of other versions of the same package with status information.
+1. クリック **詳細** -> **その他のバージョン** ダイアログが開き、同じパッケージの他のバージョンとステータス情報が表示されます。
 
-### Viewing Package Contents and Testing Installation {#viewing-package-contents-and-testing-installation}
+### パッケージコンテンツの表示とインストールのテスト {#viewing-package-contents-and-testing-installation}
 
 After a package has been built, you can view the contents.
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. To view the contents, click **More** -> **Contents**, and Package Manager lists the entire contents of the package in the activity log.
+1. コンテンツを表示するには、 **詳細** -> **内容**、およびパッケージマネージャーには、パッケージのコンテンツ全体がアクティビティログにリストされます。
 
-   ![Package Contents](assets/package-contents.png)
+   ![パッケージコンテンツ](assets/package-contents.png)
 
-1. To perform a dry run of the installation click **More** -> **Test Install** and Package Manager reports in the activity log the results as if installation were performed.
+1. インストールのドライランを実行するには、をクリックします。 **詳細** -> **インストールをテスト** 「パッケージマネージャー」レポートと「 」アクティビティで、インストールが実行された場合と同じように結果がログに記録されます。
 
-   ![Test installation](assets/test-install.png)
+   ![インストールのテスト](assets/test-install.png)
 
-### Downloading Packages to Your File System {#downloading-packages-to-your-file-system}
+### ファイルシステムへのパッケージのダウンロード {#downloading-packages-to-your-file-system}
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. Click the **Download** button or the linked file name of the package in the package details area.
+1. 次をクリック： **ダウンロード** ボタンまたはパッケージのリンクされたファイル名（パッケージの詳細領域内）
 
-1. AEM downloads the package to your computer.
+1. AEMがお使いのコンピューターにパッケージをダウンロードします。
 
-### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
+### ファイルシステムからのパッケージのアップロード {#uploading-packages-from-your-file-system}
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Select the group folder into which you want the package to be uploaded.
+1. パッケージのアップロード先となるグループフォルダーを選択します。
 
-1. Click the **Upload Package** button.
+1. 次をクリック： **パッケージをアップロード** 」ボタンをクリックします。
 
-1. Provide the necessary information about the uploaded package.
+1. アップロードしたパッケージに関する必要な情報を入力します。
 
-   ![Package upload dialog](assets/package-upload-dialog.png)
+   ![パッケージのアップロードダイアログ](assets/package-upload-dialog.png)
 
-   * **Package** - Use the **Browse...** button to select the required package from your local file system.
-   * **Force Upload** - If a package with this name already exists, this option forces the upload and overwrites the existing package.
+   * **パッケージ** - **参照…** ボタンをクリックして、必要なパッケージをローカルファイルシステムから選択します。
+   * **アップロードを強制**  — この名前のパッケージが既に存在する場合は、このオプションを選択すると、アップロードが強制され、既存のパッケージが上書きされます。
 
-1. Click **OK** and the selected package is uploaded and the package list is updated accordingly.
+1. クリック **OK** 選択したパッケージがアップロードされ、それに応じてパッケージリストが更新されます。
 
-The package content now exists on AEM, but o make the content available for use, be sure to [install the package](#installing-packages).
+パッケージコンテンツがAEMに存在しますが、コンテンツを使用できるようにするには、必ず [パッケージをインストール](#installing-packages).
 
-### Validating Packages {#validating-packages}
+### パッケージの検証 {#validating-packages}
 
-Because packages can modify existing content, it is often useful to validate these changes before installing.
+パッケージは既存のコンテンツを変更する可能性があるので、多くの場合、インストール前にこれらの変更を検証すると便利です。
 
-#### Validation Options {#validation-options}
+#### 検証オプション {#validation-options}
 
-Package Manager can perform the following validations:
+パッケージマネージャーは次の検証を実行できます。
 
-* [OSGi Package Imports](#osgi-package-imports)
-* [Overlays](#overlays)
-* [ACLs](#acls)
+* [OSGi パッケージの読み込み](#osgi-package-imports)
+* [オーバーレイ](#overlays)
+* [ACL](#acls)
 
-##### Validate OSGi Package Imports {#osgi-package-imports}
+##### OSGi パッケージの読み込みを検証 {#osgi-package-imports}
 
 >[!NOTE]
 >
->Because packages can not be used to deploy code in AEMaaCS, **OSGi Package Imports** validation is unnecessary.
+>AEMaaCS でのコードのデプロイにパッケージを使用できないので、 **OSGi パッケージのインポート** 検証は不要です。
 
-**What&#39;s Checked**
+**チェック内容**
 
-This validation inspects the package for all JAR files (OSGi bundles), extracts their `manifest.xml` (which contains the versioned dependencies on which said OSGi bundle relies), and verifies the AEM instance exports said dependencies with the correct versions.
+`manifest.xml`
 
-**How It&#39;s Reported**
+**レポート方法**
 
 Any versioned dependencies that cannot be satisfied by the AEM instance are listed in the Activity Log of Package Manager.
 
-**Error States**
+**エラーの状態**
 
-If dependencies are unsatisfied, then the OSGi bundles in the package with those dependencies will not start. This results in a broken application deployment as anything relying on the unstarted OSGi bundle will in turn not function properly.
+未解決の依存関係がある場合、それらの依存関係を持つパッケージ内の OSGi バンドルは開始しません。This results in a broken application deployment as anything relying on the unstarted OSGi bundle will in turn not function properly.
 
-**Error Resolution**
+**エラーの解決**
 
 To resolve errors due to unsatisfied OSGi bundles, the dependency version in the bundle with unsatisfied imports must be adjusted.
 
-##### Validate Overlays {#overlays}
+##### オーバーレイを検証 {#overlays}
 
 >[!NOTE]
 >
->Because packages can not be used to deploy code in AEMaaCS, **Overlays** validation is unnecessary.
+>AEMaaCS でのコードのデプロイにパッケージを使用できないので、 **オーバーレイ** 検証は不要です。
 
-**What&#39;s Checked**
+**確認内容**
 
-This validation determines if the package being installed contains a file that is already overlaid in the destination AEM instance.
+この検証では、インストールするパッケージに、宛先の AEM インスタンスにすでにオーバーレイされているファイルが含まれているかどうかを確認します。
 
-For example, given an existing overlay at `/apps/sling/servlet/errorhandler/404.jsp`, a package that contains `/libs/sling/servlet/errorhandler/404.jsp`, such that it will change the existing file at `/libs/sling/servlet/errorhandler/404.jsp`.
+`/apps/sling/servlet/errorhandler/404.jsp``/libs/sling/servlet/errorhandler/404.jsp``/libs/sling/servlet/errorhandler/404.jsp`
 
-**How It&#39;s Reported**
+**レポートの内容**
 
 Any such overlays are described in the Activity Log of Package Manager.
 
-**Error States**
+**エラー状態**
 
-An error state means that the package is attempting to deploy a file that is already overlaid, thus the changes in the package will be overridden (and thus &quot;hidden&quot;) by the overlay and not take effect.
+パッケージがすでにオーバーレイされているファイルをデプロイしようとしています。したがって、パッケージ内の変更はオーバーレイによって上書きされ（つまり「非表示」となり）、有効になりません。
 
-**Error Resolution**
+**エラーの解決**
 
-To resolve this issue, the maintainer of the overlay file in `/apps` must review the changes to the overlaid file in `/libs` and incorporate the changes as needed into the overlay ( `/apps`), and redeploy the overlaid file.
+`/apps``/libs``/apps`
 
 >[!NOTE]
 >
->The validation mechanism has no way to reconcile if the overlaid content has been properly incorporated into the overlay file. Therefore this validation will continue to report over conflicts even after the necessary changes have been made.
+>The validation mechanism has no way to reconcile if the overlaid content has been properly incorporated into the overlay file. したがって、この検証では、必要な変更が加えられた後も競合についてレポートし続けます。
 
-##### Validate ACLs {#acls}
+##### ACL を検証 {#acls}
 
-**What&#39;s Checked**
+**確認内容**
 
-This validation checks which permissions are being added, how they will be handled (merge/replace), and if the current permissions will be impacted.
+この検証では、どの権限が追加されるか、それらがどのように処理されるか（マージ／置換）、および現在の権限が影響を受けるかどうかを確認します。
 
-**How It&#39;s Reported**
+**レポートの内容**
 
 The permissions are described in the Activity Log of Package Manager.
 
-**Error States**
+**エラー状態**
 
-No explicit errors can be provided. The validation simply indicates whether any new ACL permissions will be added or impacted by installing the package.
+明示的なエラーはありません。この検証は、パッケージをインストールすることで新しい ACL 権限が追加されるか、または影響があるかどうかを示すだけです。
 
-**Error Resolution**
+**エラーの解決**
 
-Using the information provided by the validation, the impacted nodes can be reviewed in CRXDE and the ACLs can be adjusting in the package as needed.
+検証によって提供された情報を使用して、影響を受けたノードを CRXDE で確認したり、必要に応じて ACL をパッケージ内で調整したりできます。
 
 >[!CAUTION]
 >
 >As best practice it is recommended that packages should not affect AEM-provided ACLs as this may result in unexpected behavior.
 
-#### Performing Validation {#performing-validation}
+#### 検証の実行 {#performing-validation}
 
-Validation of packages can be done in two different ways:
+パッケージの検証は 2 とおりの方法で行うことができます。
 
-* [Via the Package Manager UI](#via-package-manager)
-* [Via HTTP POST request such as with cURL](#via-post-request)
+* [パッケージマネージャーの UI から](#via-package-manager)
+* [cURL などの HTTP POST リクエストを介して](#via-post-request)
 
-Validation should always occur after uploading the package but before installing it.
+検証は、パッケージをアップロードした後で、インストールする前に必ず行う必要があります。
 
 ##### Package Validation Via Package Manager {#via-package-manager}
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. To validate the package, click **More** -> **Validate**,
+1. パッケージを検証するには、 **詳細** -> **検証**,
 
-1. In the modal dialog box that then appears, use the checkboxes to select the type(s) of validation and begin the validation by clicking **Validate**.
+1. 表示されるモーダルダイアログボックスで、チェックボックスを使用して検証の種類を選択し、「**検証**」をクリックして検証を開始します。
 
-1. The chosen validation(s) is/are then run and the results are displayed in the Activity Log of Package Manager.
+1. 選択した検証が実行され、結果がパッケージマネージャーのアクティビティログに表示されます。
 
-##### Package Validation Via HTTP POST Request {#via-post-request}
+##### HTTP POST リクエストを介したパッケージ検証 {#via-post-request}
 
-The POST request takes the following form.
+POST リクエストの形式は以下のとおりです。
 
 ```
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
-The `type` parameter can be any comma-separated, unordered list consisting of:
+`type`
 
 * `osgiPackageImports`
 * `overlays`
 * `acls`
 
-The value of `type` defaults to `osgiPackageImports` if not explicitly passed.
+`type``osgiPackageImports`
 
 When using cURL, execute a statement similar to the following:
 
@@ -455,110 +459,110 @@ When using cURL, execute a statement similar to the following:
 curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'http://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
 ```
 
-When validating via POST request, the response is sent back as a JSON object.
+POSTリクエストを介して検証する場合、応答は JSON オブジェクトとして返されます。
 
-### Viewing Package Coverage {#package-coverage}
+### パッケージカバレッジの表示 {#package-coverage}
 
-Packages are defined by their filters. You can have Package Manager apply filters of a package to your existing repository content to show what content of the repository is covered by the filter definition of the package.
+パッケージは、フィルターによって定義されます。 パッケージマネージャーで既存のリポジトリコンテンツにパッケージのフィルターを適用して、パッケージのフィルター定義でカバーされるリポジトリのコンテンツを表示できます。
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details from the package list by clicking the package name.
+1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. Click **More** -> **Coverage**.
+1. クリック **詳細** -> **対象範囲**.
 
-1. The coverage details are listed in the Activity Log.
+1. 有効範囲の詳細は、アクティビティログにリストされます。
 
-### Installing Packages {#installing-packages}
+### パッケージのインストール {#installing-packages}
 
-Uploading a package only adds the package content to the repository, but it is not accessible. You must install the uploaded package in order to use the package&#39;s content.
+パッケージをアップロードすると、パッケージのコンテンツがリポジトリに追加されるだけですが、アクセスできません。 パッケージのコンテンツを使用するには、アップロードしたパッケージをインストールする必要があります。
 
 >[!CAUTION]
 >
->Installing a package can overwrite or delete existing content. Only upload a package if you are sure that it does not delete or overwrite content that you need.
+>パッケージをインストールすると、既存のコンテンツが上書きまたは削除される可能性があります。必要なコンテンツが削除または上書きされないと確認できる場合にのみ、パッケージをアップロードしてください。
 
-Prior to installation of your package, Package Manager automatically creates a snapshot package that contains the content that will be overwritten. This snapshot will be reinstalled if you uninstall your package.
+パッケージをインストールする前に、上書きされるコンテンツを含むスナップショットパッケージがパッケージマネージャーによって自動的に作成されます。 This snapshot will be reinstalled if you uninstall your package.
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details of the package you wish to install from the package list by clicking the package name.
+1. パッケージ名をクリックして、インストールするパッケージのパッケージ詳細をパッケージリストから開きます。
 
-1. Either click the **Install** button in the item details or the **Install** link in the package status.
+1. 次のいずれかをクリックします。 **インストール** 項目の詳細または **インストール** リンクをクリックします。
 
-1. A dialog will request confirmation and allow for additional options to be specified.
+1. 確認を求めるダイアログが表示され、追加のオプションを指定できます。
 
-   * **Extract Only** - Extract the package only so that no snapshot is created and therefore uninstall will not be possible
-   * **Save Threshold** - Number of transient nodes until automatic saving is triggered (increase if you encounter concurrent modification exceptions)
-   * **Extract Subpackages** - Enable automatic extraction of sub packages
-   * **Access Control Handling** - Specifies how the access control information defined in the package is handled when the package is installed (options are the same as the [advanced package settings](#advanced-settings))
-   * **Dependencies Handling** - Specify how dependencies are handled during installation
+   * **抽出のみ**  — スナップショットが作成されず、アンインストールができないように、パッケージのみを抽出します
+   * ****
+   * **サブパッケージを抽出**  — サブパッケージの自動抽出を有効にする
+   * **アクセス制御の処理**  — パッケージのインストール時に、パッケージで定義されたアクセス制御情報を処理する方法を指定します ( オプションは [詳細パッケージ設定](#advanced-settings))
+   * **依存関係の処理**  — インストール中の依存関係の処理方法を指定します
 
-1. Click **Install**.
+1. 「**インストール**」をクリックします。
 
-1. The Activity Log details the progress of the installation.
+1. インストールの進行状況の詳細は、アクティビティログに記録されます。
 
-Once the installation is complete and successful, the package list is updated and the word **Installed** appears in the package status.
+インストールが完了し、成功すると、パッケージリストが更新され、「 **インストール済み** パッケージのステータスに表示されます。
 
-### Reinstalling Packages {#reinstalling-packages}
+### パッケージの再インストール {#reinstalling-packages}
 
-Reinstalling packages performs the same steps on an already installed package that are processed when [initially installing the package.](#installing-packages)
+パッケージの再インストールは、既にインストール済みのパッケージに対して実行されます。この手順は、 [パッケージを初めてインストールします。](#installing-packages)
 
-### File System Based Upload and Installation {#file-system-based-upload-and-installation}
+### ファイルシステムベースのアップロードおよびインストール {#file-system-based-upload-and-installation}
 
-You can forego Package Manager altogether when installing packages. AEM can detect packages placed in a specific location on the local filesystem of the host machine and upload and install them automatically.
+パッケージをインストールする際に、パッケージマネージャーを完全に終了できます。 AEMは、ホストマシンのローカルファイルシステム上の特定の場所に配置されたパッケージを検出し、それらを自動的にアップロードしてインストールできます。
 
-1. Under the AEM installation folder, there is a `crx-quicksart` folder alongside the jar and `license.properties` file. Create a folder named `install` under `crx-quickstart` resulting in the path `<aem-home>/crx-quickstart/install`.
+1. AEMのインストールフォルダーに、 `crx-quicksart` jar と `license.properties` ファイル。 という名前のフォルダーを作成します。 `install` under `crx-quickstart` 結果としてパスが生成されます `<aem-home>/crx-quickstart/install`.
 
-1. In this folder, add your packages. They will automatically be uploaded and installed on your instance.
+1. このフォルダーにパッケージを追加します。 追加したパッケージは、インスタンスに自動的にアップロードおよびインストールされます。
 
-1. Once upload and installation is complete, you can see the packages in Package Manager as if you had used the Package Manager UI to install them.
+1. アップロードとインストールが完了すると、パッケージマネージャーで、パッケージマネージャー UI を使用してインストールした場合と同じようにパッケージを確認できます。
 
-If the instance is running, the upload and the installation begins immediately when you add it to the package to the `install` folder
+インスタンスが実行中の場合、パッケージに追加すると、アップロードとインストールが直ちに開始されます。 `install` フォルダー
 
-If the instance is not running, packages placed in the `install` folder are installed at startup in alphabetical order.
+インスタンスが実行されていない場合、 `install` フォルダは、起動時にアルファベット順にインストールされます。
 
-### Uninstalling Packages {#uninstalling-packages}
+### パッケージのアンインストール {#uninstalling-packages}
 
-Uninstalling package reverts the contents of the repository to the snapshot made automatically by Package Manager prior to installation.
+パッケージをアンインストールすると、リポジトリの内容が、インストール前に Package Manager が自動的に作成したスナップショットに戻ります。
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details of the package you wish to uninstall from the package list by clicking the package name.
+1. アンインストールするパッケージのパッケージ詳細をパッケージリストから開き、パッケージ名をクリックします。
 
-1. Click **More** -> **Uninstall**, to remove the contents of this package from the repository.
+1. クリック **詳細** -> **アンインストール**&#x200B;をクリックして、リポジトリからこのパッケージのコンテンツを削除します。
 
-1. A dialog will request confirmation and list all changes being made.
+1. 確認を要求するダイアログが表示され、行われたすべての変更が一覧表示されます。
 
-1. The package is removed and the snapshot is applied. Progress of the process is shown in the Activity Log.
+1. パッケージが削除され、スナップショットが適用されます。 処理の進行状況がアクティビティログに表示されます。
 
 ### Deleting Packages {#deleting-packages}
 
-Deleting a package only deletes its details from Package Manager. If this package was already installed, then the installed content will not be deleted.
+パッケージを削除すると、その詳細のみがパッケージマネージャーから削除されます。 If this package was already installed, then the installed content will not be deleted.
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details of the package you wish to delete from the package list by clicking the package name.
+1. パッケージ名をクリックして、削除するパッケージのパッケージ詳細をパッケージリストから開きます。
 
-1. AEM asks for confirmation that you want to delete the package. Click **OK** to confirm the deletion.
+1. AEM asks for confirmation that you want to delete the package. 「**OK**」をクリックして削除を確認します。
 
-1. The package information is deleted and details are reported in the Activity Log.
+1. パッケージ情報が削除され、詳細がアクティビティログに報告されます。
 
-### Replicating Packages {#replicating-packages}
+### パッケージのレプリケーション {#replicating-packages}
 
 Replicate the contents of a package to install it on the publish instance.
 
-1. [Access Package Manager.](#accessing)
+1. [パッケージマネージャーにアクセスします。](#accessing)
 
-1. Open the package details of the package you wish to replicate from the package list by clicking the package name.
+1. レプリケートするパッケージのパッケージ詳細をパッケージリストから開き、パッケージ名をクリックします。
 
-1. Click **More** -> **Replicate**.
+1. クリック **詳細** -> **複製**.
 
-1. The package is replicated and details are reported in the Activity Log.
+1. パッケージがレプリケートされ、詳細がアクティビティログにレポートされます。
 
 ## Software Distribution {#software-distribution}
 
-AEM Packages can be used to create and share content across AEMaaCS environments.
+AEMパッケージを使用して、AEMaaCS 環境全体でコンテンツを作成および共有できます。
 
-[Software Distribution](https://downloads.experiencecloud.adobe.com) provides AEM packages for use on the local development AEM SDK. AEM Packages provided on Software Distribution must not be installed on AEMaaCS cloud environments unless expressly approved by Adobe Support.
+[ソフトウェア配布](https://downloads.experiencecloud.adobe.com) には、AEM ローカル開発 SDK で使用するAEMパッケージが用意されています。 ソフトウェア配布で提供されるAEMパッケージは、Adobeサポートによって明示的に承認されない限り、AEMaaCS クラウド環境にインストールしてはなりません。
 
-For more information, have a look at the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+詳しくは、 [ソフトウェア配布ドキュメント](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).

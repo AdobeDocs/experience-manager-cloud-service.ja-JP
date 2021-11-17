@@ -3,9 +3,9 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 96%
 
 ---
@@ -179,7 +179,11 @@ above appears to be internal, to confirm with Brian -->
 
 >[!IMPORTANT]
 >
->パッケージマネージャー UI で **未定義** パッケージのインストールに 10 分以上かかる場合のエラーメッセージ。 同時にインポートが実行される場合は、インストールを再試行しないでください。バックグラウンドで正しく進行し、複数のインポートプロセスで競合が発生する可能性があるからです。
+>パッケージマネージャー UI で **未定義** パッケージのインストールに 10 分以上かかる場合のエラーメッセージ。
+>
+>これは、インストールのエラーによるものではなく、すべての要求に対してCloud Serviceが持つタイムアウトのためです。
+>
+>このようなエラーが表示された場合は、インストールを再試行しないでください。 インストールはバックグラウンドで正しく進行しています。 インストールを再起動すると、複数の同時インポートプロセスによって競合が発生する可能性があります。
 
 Cloud Manager を使用してインストールされたコンテンツパッケージ（可変および不変）は、AEM パッケージマネージャーのユーザーインターフェイスにフリーズ状態で表示されます。これらのパッケージは再インストールや再ビルド、さらにはダウンロードもできません。また、「**cp2fm**」というサフィックス付きで表示され、そのインストールが Cloud Manager で管理されていることを示します。
 
