@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Assets] での [!DNL Adobe Stock] アセットの管理。'
 description: ' [!DNL Adobe Experience Manager] 内から [!DNL Adobe Stock] アセットを、検索、取得、ライセンス、管理します。ライセンスされたアセットをその他のデジタルアセットとして使用します。'
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2426'
 ht-degree: 44%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 44%
 
 統合には次の要件が必要です。
 
+* 起動および実行 [!DNL Experience Manager Assets] as a [!DNL Cloud Service] インスタンス
 * An [enterprise [!DNL Adobe Stock] プラン](https://stockenterprise.adobe.com/)
 * デフォルトの Stock 製品プロファイルにAdmin Consoleする権限を持つユーザー
 * 統合開発者コンソールで統合を作成するための開発者アクセスプロファイルに対する権限を持つAdobe
@@ -39,7 +40,7 @@ ht-degree: 44%
 * 内でのサービスアカウント (JWT) 認証を有効にします [!DNL Adobe Developer Console] 在庫権限
 * 内からグローバルにクレジットとライセンスを管理できます [!DNL Adobe Admin Console]
 
-権限内で、 [!DNL Adobe Stock] 次に存在する [!DNL Admin Console]. 複数のプロファイルを作成でき、これらのプロファイルによって Stock アセットのライセンスを取得できるユーザーが決まります。 製品プロファイルに直接アクセスできるユーザーは、 [https://stock.adobe.com/](https://stock.adobe.com/) および Stock アセットのライセンスを取得します。 一方、Developer Access を使用して統合 (API) を作成し、間の通信を認証する方法もあります。 [!DNL Experience Manager] および [!DNL Adobe Stock].
+権限内で、 [!DNL Adobe Stock] 次に存在する [!DNL Admin Console]. 複数のプロファイルを作成でき、これらのプロファイルによって Stock アセットのライセンスを取得できるユーザーが決まります。 製品プロファイルに直接アクセスできるユーザーは、 [https://stock.adobe.com/](https://stock.adobe.com/) および Stock アセットのライセンスを取得します。 一方、Developer Access を使用して統合 (API) を作成する方法もあります。 この統合により、 [!DNL Experience Manager Assets] および [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
 公開鍵（証明書）は、製品開発者コンソールでAdobeプロファイルを認証します。
 
-1. にログインします。 [!DNL Experience Manager Assets] オーサーインスタンス。 デフォルトの URL は `http://localhost:4502/aem/start.html` です。
+1. にログインします。 [!DNL Experience Manager Assets] クラウドインスタンス。
 
 1. **[!UICONTROL ツール]**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
 
