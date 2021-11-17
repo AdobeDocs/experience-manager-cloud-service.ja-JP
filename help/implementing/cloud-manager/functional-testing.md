@@ -2,10 +2,10 @@
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 93%
+source-wordcount: '946'
+ht-degree: 87%
 
 ---
 
@@ -119,9 +119,11 @@ UI テストを作成して実行するには、UI テスト用の maven サブ�
     </plugins>
 ```
 
-この JAR ファイル内で、実行する実際のテストのクラス名は IT で終わる必要があります。
+この JAR ファイル内で、実行する実際のテストのクラス名はで終わる必要があります。 `IT`.
 
-例えば、`com.myco.tests.aem.ExampleIT` という名前のクラスは実行されますが、`com.myco.tests.aem.ExampleTest` という名前のクラスは実行されません。
+例えば、 `com.myco.tests.aem.it.ExampleIT` が実行されますが、 `com.myco.tests.aem.it.ExampleTest` そうではありません。
+
+さらに、コードスキャンのカバレッジチェックからテストコードを除外するには、テストコードをという名前のパッケージの下に置く必要があります。 `it` ( 有効範囲除外フィルターは `**/it/**/*.java`) をクリックします。
 
 テストクラスは、通常の JUnit テストにする必要があります。テストインフラストラクチャは、aem-testing-clients テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことを強くお勧めします。詳しくは、[Git リンク](https://github.com/adobe/aem-testing-clients)を参照してください。
 
