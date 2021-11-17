@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: A と B の統合の概要 [!DNL Assets] および [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 045387bc02ca5a30e0caa020885d4cf63b4e9aef
+source-git-commit: 78c9f745465bf9dd4ca268b71391c6a23b1c61e2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '888'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 [!DNL Adobe Workfront] は、作業のライフサイクル全体を 1 か所で管理するのに役立つ作業管理アプリケーションです。 次の間の統合： [!DNL Workfront] および [!DNL Adobe Experience Manager Assets] 企業は、業務とデジタルアセット管理を本質的に結び付けることで、コンテンツの速度と市場投入までの時間を改善できます。 Workfrontでの作業を管理するコンテキスト内で、ユーザーは必要なドキュメントと画像にアクセスできます。
 
-この [!DNL Workfront for Experience Manager enhanced connector] エンドツーエンドのワークフローにより、ビジネスプロセスが強化され、エンドツーエンドのクライアントエクスペリエンスと一元化されたストレージをパーソナライズできます。 の機能について詳しくは、 [!DNL enhanced connector]を参照してください。 [の新機能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+この [!DNL Workfront for Experience Manager enhanced connector] エンドツーエンドのワークフローにより、ビジネスプロセスが強化され、エンドツーエンドのクライアントエクスペリエンスと一元化されたストレージをパーソナライズできます。 Adobeは、標準コネクタと、これら 2 つのソリューションを統合する拡張コネクタを提供します。 比較については、以下のサポートされる機能を参照し、 [の新機能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] 組織では、次のことが可能です。
 
