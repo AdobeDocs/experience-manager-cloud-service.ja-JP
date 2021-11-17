@@ -3,10 +3,10 @@ title: コマース統合フレームワークを使用した、AEM と Adobe Co
 description: AEM と Adobe Commerce（Magento）は、コマース統合フレームワーク（CIF）を使用してシームレスに統合されます。CIF を使用すると、AEM は Magento インスタンスにアクセスし、GraphQL を介して Magento と通信できます。また、AEM オーサーは、製品とカテゴリの選択機能と製品コンソールを使用して、Magento からオンデマンドで取得した製品とカテゴリデータを参照できます。さらに、CIF には標準搭載のストアフロントが用意されており、コマースプロジェクトの迅速化に役立ちます。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: b6a9b515724b0a950fc399bec0d746fe273cfd33
+source-git-commit: 52cfd60cde3165fde6b0167783c16b0fc1efc950
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 94%
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ Experience Manager と Adobe Commerce（Magento）は、コマース統合フレ
 
 >[!NOTE]
 >
-> サポートされているGraphQL APIの最小バージョンは2.3.5です。一部の機能は、新しいバージョンでのみ、またはAdobeコマースエディションでのみサポートされています。
+> サポートされる GraphQL API の最小バージョンは 2.3.5 です。一部の機能は、新しいバージョンでのみ、またはAdobe Commerceエディションでのみサポートされます。
 
 >[!NOTE]
 >
@@ -34,9 +34,9 @@ Experience Manager と Adobe Commerce（Magento）は、コマース統合フレ
 
 CIF 内では、サーバーサイドとクライアントサイドの通信パターンがサポートされます。
 
-サーバーサイド API 呼び出しは、組み込みの汎用 [GraphQL クライアント](https://github.com/adobe/commerce-cif-graphql-client)と、コマース GraphQL スキーマ用に[生成された一連のデータモデル](https://github.com/adobe/commerce-cif-magento-graphql)を組み合わせて実装されます。さらに、任意の GraphQL クエリや GQL 形式のバリエーションも使用できます。
+サーバー側 API 呼び出しは、組み込みの汎用 API を使用して実装されます [GraphQL クライアント](https://github.com/adobe/commerce-cif-graphql-client) ～と組み合わせて [生成されたデータモデルのセット](https://github.com/adobe/commerce-cif-magento-graphql) コマース GraphQL スキーマの場合さらに、GraphQL クエリや GQL 形式のミューテーションを使用できます。
 
-[React](https://reactjs.org/) を使用して構築されるクライアントサイドコンポーネントの場合は、[Apollo Client](https://www.apollographql.com/docs/react/) が使用されます。
+クライアントサイドコンポーネント（を使用して構築） [React](https://reactjs.org/)、 [Apollo Client](https://www.apollographql.com/docs/react/) が使用されます。
 
 ## AEM CIF コアコンポーネントのアーキテクチャ {#cif-core-components}
 

@@ -2,10 +2,10 @@
 title: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 description: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
-workflow-type: ht
-source-wordcount: '950'
-ht-degree: 100%
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Dispatcher には、価格や在庫などの動的データはキャッシュさ
 
 ## 9. AEM Dispatcher のキャッシュ無効化は、AEM とコマースでどのように機能しますか。
 
-Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、クライアントサイドで日付をレンダリングすることをお勧めします。TTL ベースのキャッシュの無効化について詳しくは、「[AEM Dispatcher](https://helpx.adobe.com/jp/experience-manager/kb/optimizing-the-dispatcher-cache.html)」を参照してください。
+Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、データをクライアントサイドでレンダリングすることをお勧めします。 TTL ベースのキャッシュの無効化について詳しくは、「[AEM Dispatcher](https://helpx.adobe.com/jp/experience-manager/kb/optimizing-the-dispatcher-cache.html)」を参照してください。
 
 ## 10. コマースでの、AEM コンテンツをまたぐ統合検索に関して推奨事項はありますか。
 
@@ -67,7 +67,7 @@ AEM でマーケティング関連のデータとコンテンツを管理する�
 
 ## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
 
-抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには考慮されるべき点が他にもあります。Magento PCI への準拠について詳しくは、 を参照してください。<https://magento.com/pci-compliance>
+抽象化された支払い方法を使用することをお勧めします。これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには考慮されるべき点が他にもあります。Magento PCI への準拠について詳しくは、 を参照してください。[PCI コンプライアンス要件](https://magento.com/pci-compliance).
 
 ## 15. AEM バージョンと Magento クラウドバージョンを使用する場合、この共同ソリューションは PCI に準拠していますか。
 

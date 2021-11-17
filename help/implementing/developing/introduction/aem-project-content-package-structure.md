@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 98%
+source-wordcount: '2877'
+ht-degree: 96%
 
 ---
 
@@ -94,10 +94,10 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 ### コンテンツパッケージ
 
-+ `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。コンテンツパッケージには、`ui.apps` または `ui.config` パッケージに含まれないすべてのノード定義が含まれます。言い換えれば、`/apps` または `/oak:index` に含まれないすべてが含まれます。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
++ `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。コンテンツパッケージには、 `ui.apps` または `ui.config` パッケージ、つまり、 `/apps` または `/oak:index`. `ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + コンテキスト対応の設定
       + `/conf`
-   + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義された過去のベースラインコンテンツの構造に基づいて構築され、拡張されるコンテンツの構築。）
+   + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義された過去のベースラインコンテンツ構造に基づいて構築され、拡張されるコンテンツの構築。)
       + `/content`、`/content/dam` など
    + 管理されるタグ付け分類
       + `/content/cq:tags`

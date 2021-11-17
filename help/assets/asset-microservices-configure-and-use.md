@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -169,7 +169,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >1 つのフォルダーに適用できる処理プロファイルは 1 つだけです。さらにレンディションを生成するには、既存の処理プロファイルにレンディションの定義を追加します。
 
-処理プロファイルがフォルダーに適用されると、このフォルダーまたはその任意のサブフォルダー内でアップロード（または更新）された新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます。この処理は、標準のデフォルトプロファイルによる処理に加えておこなわれます。
+処理プロファイルをフォルダーに適用すると、このフォルダーまたはそのサブフォルダー内の新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます（または更新）。 この処理は、標準のデフォルトプロファイルによる処理に加えておこなわれます。
 
 >[!NOTE]
 >

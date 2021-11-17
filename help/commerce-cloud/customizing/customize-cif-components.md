@@ -1,19 +1,19 @@
 ---
 title: CIF コアコンポーネントのカスタマイズ
 description: AEM CIF コアコンポーネントをカスタマイズする方法を説明します。このチュートリアルでは、ビジネス固有の要件を満たすために、CIF コアコンポーネントを安全に拡張する方法について説明します。GraphQL クエリを拡張してカスタム属性を返し、新しい属性を CIF コアコンポーネントに表示する方法を説明します。
-sub-product: コマース
+sub-product: Commerce
 topics: Development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-feature: コマース統合フレームワーク
+feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 1575d5d8b06b537fc9754885905aacdfd2e33fbf
-workflow-type: ht
-source-wordcount: '2582'
+source-git-commit: a30006b7eedbe2bc6993f47b7e8433af6df17a07
+workflow-type: tm+mt
+source-wordcount: '2578'
 ht-degree: 100%
 
 ---
@@ -246,7 +246,7 @@ Sling モデルは Java として実装され、生成されたプロジェク�
        ...
        private AbstractProductRetriever productRetriever;
    
-       /* add this method to intialize the proudctRetriever */
+       /* add this method to initialize the productRetriever */
        @PostConstruct
        public void initModel() {
            productRetriever = productTeaser.getProductRetriever();
