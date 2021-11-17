@@ -4,10 +4,10 @@ user-guide-title: Assets as a Cloud Service ガイド
 breadcrumb-title: Assets ガイド
 user-guide-description: Adobe Experience Manager Assets as a Cloud Service の使用と管理方法について説明します。
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 96%
 
 ---
 
@@ -127,3 +127,7 @@ ht-degree: 98%
    + [コンテンツの HTTP/2 配信の FAQ](dynamic-media/http2faq.md)
    + [Flash ビューアの提供終了](dynamic-media/flash-viewers-eol.md)
    + [DHTML ビューアの提供終了](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ 他のソリューションとの統合 {#integrations}
+   + [との統合 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [インストール [!DNL enhanced connector] 対象 [!DNL Workfront]](workfront-connector-install.md)
+   + [設定 [!DNL enhanced connector] 対象 [!DNL Workfront]](workfront-connector-configure.md)
