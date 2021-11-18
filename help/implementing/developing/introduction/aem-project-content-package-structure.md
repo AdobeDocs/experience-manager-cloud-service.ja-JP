@@ -2,7 +2,7 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
+source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
 workflow-type: tm+mt
 source-wordcount: '2877'
 ht-degree: 96%
@@ -542,7 +542,7 @@ scripts=["
 <filter root="/apps/my-app-packages"/>
 ```
 
-埋め込まれるターゲットで複数の `/apps/*-packages` が使用されている場合は、それらをすべてここに列挙する必要があります。
+複数の `/apps/*-packages` は、埋め込みターゲットで使用される場合、すべてをここに列挙する必要があります。
 
 ### サードパーティ Maven リポジトリー {#xml-3rd-party-maven-repositories}
 

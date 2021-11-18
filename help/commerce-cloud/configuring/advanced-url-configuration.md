@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '790'
+ht-degree: 79%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 97%
 
 ## 設定 {#configuration}
 
-SEO の要件とニーズに応じて `UrlProvider` サービスを設定するには、プロジェクトで「CIF URL Provider configuration」の OSGI 設定を指定する必要があります。
+次の手順で `UrlProvider` SEO 要件と必要に応じて、サービスで「CIF URL Provider configuration」の OSGI 設定をプロジェクトで提供する必要があります。
 
 >[!NOTE]
 >
-> AEM CIF コアコンポーネントのリリース 2.0.0 以降では、URL プロバイダーの設定には、1.x リリースで提供されていた設定可能なフリーテキスト形式ではなく、事前に定義された URL 形式のみが使用されます。さらに、セレクターを使用して URL 内のデータを渡すことはなくなり、代わりにサフィックスが使用されます。
+> AEM CIF コアコンポーネントのリリース 2.0.0 以降、URL プロバイダー設定では、1.x リリースで知られているフリーテキスト設定可能な形式の代わりに、事前に定義された URL 形式のみが提供されます。 さらに、セレクターを使用して URL 内のデータを渡すことはなくなり、代わりにサフィックスが使用されます。
 
 ### 製品ページの URL 形式 {#product}
 
@@ -76,14 +76,14 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 
 ## カスタム URL 形式 {#custom-url-format}
 
-カスタム URL 形式を指定するには、プロジェクトで [`UrlFormat` インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html)を実装し、それをカテゴリページまたは製品ページの URL 形式として使用して、実装を OSGi サービスとして登録します。`UrlFormat#PROP_USE_AS` サービスプロパティは、置き換えの対象となる設定された事前定義済み形式を示します。
+カスタム URL 形式を提供するために、プロジェクトで [`UrlFormat` インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) を OSGi サービスとして登録し、カテゴリページまたは製品ページの url 形式のいずれかを使用して実装を登録します。 `UrlFormat#PROP_USE_AS` サービスプロパティは、置き換えの対象となる設定された事前定義済み形式を示します。
 
 * 設定済みの製品ページ URL 形式は `useAs=productPageUrlFormat` に置き換えられます
 * 設定済みのカテゴリページ URL 形式は `useAs=categoryPageUrlFormat` に置き換えられます
 
 `UrlFormat` の複数の実装が OSGi サービスとして登録されている場合は、サービスランキングの低い方の実装が、サービスランキングの高い方の実装に置き換えられます。
 
-`UrlFormat` は、指定されたパラメーターマップから URL を作成するメソッドと、URL を解析して同じパラメーターマップを返すメソッドをペアで実装する必要があります。パラメーターは前述と同じです。カテゴリの場合のみ、`{{uid}}` パラメーターが `UrlFormat` に追加されます。
+この `UrlFormat` は、指定されたパラメーターのマップから URL を作成し、同じパラメーターのマップを返すように URL を解析するために、メソッドのペアを実装する必要があります。 パラメーターは前述と同じです。カテゴリの場合のみ、`{{uid}}` パラメーターが `UrlFormat` に追加されます。
 
 ## Sling マッピングとの結合 {#sling-mapping}
 
@@ -91,17 +91,17 @@ SEO の要件とニーズに応じて `UrlProvider` サービスを設定する�
 
 ## AEM Dispatcher との統合 {#dispatcher}
 
-URL の書き換えは、AEM Dispatcher HTTP サーバーで `mod_rewrite` モジュールを使用して行うこともできます。[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)には、生成されたサイズに対する基本的な[書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)が含まれている参照用 AEM Dispatcher 設定が用意されています。
+URL の書き換えは、AEM Dispatcher HTTP サーバーを `mod_rewrite` モジュール。 [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)には、生成されたサイズに対する基本的な[書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)が含まれている参照用 AEM Dispatcher 設定が用意されています。
 
-## 例
+## 例 {#example}
 
-[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL を使用方法を示す設定例が含まれています。これにより、各プロジェクトで、SEO のニーズに応じて、製品ページとカテゴリページの個々の URL パターンを設定できます。上記の CIF `UrlProvider` と Sling マッピングの組み合わせが使用されます。
+[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)プロジェクトには、製品ページとカテゴリページでのカスタム URL を使用方法を示す設定例が含まれています。これにより、各プロジェクトで、SEO のニーズに応じて、製品ページとカテゴリページの個々の URL パターンを設定できます。 上記の CIF `UrlProvider` と Sling マッピングの組み合わせが使用されます。
 
 >[!NOTE]
 >
 >この設定は、プロジェクトで使用する外部ドメインで調整する必要があります。Sling マッピングは、ホスト名とドメインに基づいて動作します。したがって、この設定はデフォルトで無効になっており、デプロイ前に有効にする必要があります。これを行うには、使用されているドメイン名に従って `ui.content/src/main/content/jcr_root/etc/map.publish/https` の Sling マッピング `hostname.adobeaemcloud.com` フォルダーの名前を変更し、`resource.resolver.map.location="/etc/map.publish"` をプロジェクトの `JcrResourceResolver` 設定に追加してこの設定を有効にします。
 
-## その他のリソース
+## その他のリソース {#additional}
 
 * [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)
 * [AEM リソースマッピング](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=ja)
