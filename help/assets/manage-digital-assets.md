@@ -1,21 +1,21 @@
 ---
 title: デジタルアセットの管理
-description: 様々なアセット管理および編集方法について説明します。
+description: 様々なアセット管理および編集方法について説明します
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
 workflow-type: tm+mt
-source-wordcount: '4543'
-ht-degree: 100%
+source-wordcount: '4268'
+ht-degree: 99%
 
 ---
 
 # アセットの管理 {#manage-assets}
 
-ここでは、Adobe Experience Manager Assets でアセットを管理および編集する方法について説明します。コンテンツフラグメントを管理するには、[コンテンツフラグメント](content-fragments/content-fragments.md)アセットを参照してください。
+この記事では、 [!DNL Adobe Experience Manager Assets]. 管理するには [!DNL Content Fragments]を参照してください。 [[!DNL Content Fragments]](content-fragments/content-fragments.md) アセット。
 
 ## フォルダーの作成 {#creating-folders}
 
@@ -331,60 +331,61 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 * タッチデバイス：タッチ＆ホールド。例えば iPad では、アセットをタップ＆ホールドするとクイックアクションが表示されます。
 * 非タッチデバイス：マウスポインターで指す。例えばデスクトップデバイスでは、アセットのサムネールをマウスポインターで指すとクイックアクションバーが表示されます。
 
-## 画像の編集 {#editing-images}
+<!-- Hiding this topic via cqdoc-18707
 
-[!DNL Experience Manager Assets] インターフェイスの編集ツールを使用すると、画像アセットに対して細かい編集ジョブを実行できます。画像に対して切り抜き、回転、反転などの編集ジョブを実行できます。アセットに画像マップを追加することもできます。
+## Edit images {#editing-images}
+
+The editing tools in the [!DNL Experience Manager Assets] interface let you perform small editing jobs on image assets. You can crop, rotate, flip, and perform other editing jobs on images. You can also add image maps to assets.
 
 >[!NOTE]
 >
->一部のコンポーネントでは、全画面表示モードで追加のオプションも使用できます。
+>For some components, the Full Screen mode has additional options available.
 
-1. 編集モードでアセットを開くには、次のいずれかの操作をおこないます。
+1. Do one of the following to open an asset in edit mode:
 
-   * アセットを選択し、ツールバーの「**[!UICONTROL 編集]**」アイコンをクリックまたはタップします。
-   * カード表示で、アセットに表示される「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
-   * アセットページで、ツールバーの「**[!UICONTROL 編集]**」アイコンをタップまたはクリックします。
+    * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
+    * Tap/click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+    * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. 画像を切り抜くには、**切り抜き**&#x200B;アイコンをタップまたはクリックします。
+1. To crop the image, tap/click the **Crop** icon.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. リストから必要なオプションを選択します。選択したオプションに基づいて、画像に切り抜き領域が表示されます。「**フリーハンド**」オプションを使用すると、縦横比の制限に関係なく画像を切り抜くことができます。
+1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. 切り抜く領域を選択し、画像上でそのサイズまたは位置を変更します。
-1. **完了**&#x200B;アイコン（右上隅）を使用して、画像を切り抜きます。**完了**&#x200B;アイコンをクリックすると、レンディションの再生成もおこなわれます。
+1. Select the area to be cropped, and resize or reposition it on the image.
+1. Use the **Finish** icon (top right corner) to crop the image. Clicking the **Finish** icon also triggers the regeneration of renditions.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
-1. 切り抜く前の画像に戻すには、右上の&#x200B;**取り消し**&#x200B;アイコンを使用します。切り抜いた画像を保持するには、右上の&#x200B;**やり直し**&#x200B;アイコンを使用します。
+1. Use the **Undo** and **Redo** icons on the top right to revert to the uncropped image or retain the cropped image, respectively.
 
    ![chlimage_1-229](assets/chlimage_1-229.png)
 
-1. 適切な回転アイコンをタップまたはクリックして、画像を時計回りまたは反時計回りに回転します。
+1. Tap/click the appropriate Rotate icon to rotate the image clockwise or anti-clockwise.
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. 適切な反転アイコンをタップまたはクリックして、画像を水平方向または垂直方向に反転します。
+1. Tap/click the appropriate Flip icon to flip the image horizontally or vertically.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-1. **完了**&#x200B;アイコンをタップまたはクリックして変更を保存します。
+1. Tap/click the **Finish** icon to save the changes.
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 >[!NOTE]
 >
->BMP、GIF、PNG、JPEG の各ファイル形式については、画像編集がサポートされています。
-
-<!-- You can also add image maps using the image editor. For details, see [Adding Image Maps](/help/assets/image-maps.md). -->
+>Image editing is supported for BMP, GIF, PNG, and JPEG files formats.
 
 >[!NOTE]
 >
->TXT ファイルを編集するには、Configuration Manager で **Day CQ Link Externalizer** を設定します。
+>To edit a TXT file, set **Day CQ Link Externalizer** from Configuration Manager.
+-->
 
 ## タイムライン {#timeline}
 
@@ -401,7 +402,7 @@ CUG は、アセットへのアクセスを制限する追加の方法です。�
 >
 >タイムラインには、[コンテンツフラグメントに固有のオプション](content-fragments/content-fragments.md)がいくつか含まれています。
 
-## 注釈 {#annotating}
+## アセットに注釈を付ける {#annotating}
 
 注釈とは、画像やビデオに追加するコメントまたは注記です。マーケティング担当者は、注釈により、アセットについてコラボレーションし、フィードバックを残すことができます。
 
