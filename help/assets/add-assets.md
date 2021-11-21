@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
 workflow-type: tm+mt
-source-wordcount: '2168'
-ht-degree: 93%
+source-wordcount: '2192'
+ht-degree: 92%
 
 ---
 
@@ -154,6 +154,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL 最大サイズでフィルター]：アセットの最大ファイルサイズを MB 単位で指定します。
    * [!UICONTROL MIME タイプを除外]：取得から除外する MIME タイプのコンマ区切りリスト。例えば、`image/jpeg, image/.*, video/mp4` のようになります。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
    * [!UICONTROL MIME タイプを含める]:インジェストに含める MIME タイプのコンマ区切りリスト。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
+   * [!UICONTROL インポート後にソースファイルを削除]:ファイルがに読み込まれた後で元のファイルをソースデータストアから削除するには、このオプションを選択します。 [!DNL Experience Manager].
    * [!UICONTROL インポートモード]：「スキップ」、「置換」または「バージョンを作成」を選択します。スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。[バージョンオプションの置換と作成](#handling-upload-existing-file)の意味を参照してください。
    * [!UICONTROL アセットターゲットフォルダー]：アセットを取得する DAM 内の取得フォルダー。例：`/content/dam/imported_assets`
    * [!UICONTROL メタデータファイル]:読み込むメタデータファイル。CSV 形式で指定。 この CSV ファイルをソース BLOB の場所に指定し、一括取り込みツールの設定でパスを参照します。
