@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 561df1d2a2f7b900470084d28b832b4c7a568d3e
+source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 95%
+source-wordcount: '674'
+ht-degree: 94%
 
 ---
 
@@ -71,3 +71,8 @@ Adobe Experience Manager Assets では、CSV ファイルを使用して、ア�
    ![一括で書き出したメタデータを格納した CSV ファイルをダウンロードするためのダイアログ](assets/csv_download.png)
 
    *図：一括で書き出したメタデータを格納した CSV ファイルをダウンロードするためのダイアログ.*
+
+>[!MORELIKETHIS]
+>
+>* [アセットを一括で読み込む際のメタデータの読み込み](/help/assets/add-assets.md#asset-bulk-ingestor)
+

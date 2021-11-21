@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 99%
+source-wordcount: '2168'
+ht-degree: 93%
 
 ---
 
@@ -142,18 +142,23 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ![一括読み込みの設定](assets/bulk-import-config.png)
 
-1. [!UICONTROL 一括読み込み設定]ページで、必要な値を入力します。
+1. オン **[!UICONTROL 一括インポート設定]** ページで、必要な値を入力し、「 **[!UICONTROL 保存]**.
 
    * [!UICONTROL タイトル]：内容のわかるタイトルにします。
-   * [!UICONTROL ソースを読み込み]：適用するデータソースを選択します。
+   * [!UICONTROL ソースを読み込み]:適切なデータソースを選択します。
+   * [!UICONTROL Azure ストレージアカウント]:名前を [!DNL Azure] ストレージアカウント。
+   * [!UICONTROL Azure Blob コンテナ]:次を提供： [!DNL Azure] ストレージコンテナ。
+   * [!UICONTROL Azure アクセスキー]:アクセスキーをに指定 [!DNL Azure] アカウント
+   * [!UICONTROL ソースフォルダー]:このフィルターは、通常、Azure とAWSのクラウドストレージプロバイダーでサポートされます。
    * [!UICONTROL 最小サイズでフィルター]：アセットの最小ファイルサイズを MB 単位で指定します。
    * [!UICONTROL 最大サイズでフィルター]：アセットの最大ファイルサイズを MB 単位で指定します。
-   * [!UICONTROL MIME タイプを除外]：取得から除外する MIME タイプのコンマ区切りリスト。例：`image/jpeg, image/.*, video/mp4`
+   * [!UICONTROL MIME タイプを除外]：取得から除外する MIME タイプのコンマ区切りリスト。例えば、`image/jpeg, image/.*, video/mp4` のようになります。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
    * [!UICONTROL MIME タイプを含める]:インジェストに含める MIME タイプのコンマ区切りリスト。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
    * [!UICONTROL インポートモード]：「スキップ」、「置換」または「バージョンを作成」を選択します。スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。[バージョンオプションの置換と作成](#handling-upload-existing-file)の意味を参照してください。
    * [!UICONTROL アセットターゲットフォルダー]：アセットを取得する DAM 内の取得フォルダー。例：`/content/dam/imported_assets`
+   * [!UICONTROL メタデータファイル]:読み込むメタデータファイル。CSV 形式で指定。 この CSV ファイルをソース BLOB の場所に指定し、一括取り込みツールの設定でパスを参照します。
 
-1. 作成した取得ツール設定を削除、変更、実行したり、さらに作業を行ったりできます。一括インポート取得ツール設定を選択すると、ツールバーで次のオプションを使用できます。
+1. 作成した取得ツール設定を削除、変更、実行したり、さらに作業を行ったりできます。一括読み込みインジェスターの設定を選択すると、ツールバーで次のオプションを使用できます。
 
    * [!UICONTROL 編集]：選択した設定を編集します。
    * [!UICONTROL 削除]：
@@ -221,6 +226,9 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * 一部のアップロード方法では、ファイル名に[禁止文字](#filename-handling)が含まれるアセットをアップロードしないようにする必要があります。文字は `-` 記号に置き換えられます。
 
 * ブラウザーを使用したアセットのアップロードでは、フラットなファイルリストのみがサポートされ、ネストされたフォルダー階層はサポートされていません。ネストされたフォルダー内のすべてのアセットをアップロードするには、[デスクトップアプリケーション](#upload-assets-desktop-clients)を使用することを検討してください。
+
+* 一括読み込みメソッドでは、フォルダー構造全体がデータソースに存在するとおりに読み込まれます。 ただし、空でないフォルダーのみが [!DNL Experience Manager].
+
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
