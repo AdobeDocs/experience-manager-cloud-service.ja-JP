@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '661'
+ht-degree: 80%
 
 ---
 
@@ -24,10 +24,9 @@ Adobe Experience Manager Assets では、CSV ファイルを使用して、ア�
 >
 >カスタム名前空間にメタデータを読み込むには、まず、その名前空間を登録します。
 
-1. Assets ユーザーインターフェイスに移動して、ツールバーの「**[!UICONTROL 作成]**」をタップまたはクリックします。
-1. メニューから「**[!UICONTROL メタデータ]**」を選択します。
-1. **[!UICONTROL メタデータの読み込み]**&#x200B;ページで、「**[!UICONTROL ファイルを選択]**」をタップまたはクリックします。メタデータが入った CSV ファイルを選択します。
-1. 以下のパラメーターを指定します。
+1. に移動します。 [!DNL Assets] ユーザインタフェース、選択 **[!UICONTROL 作成]** ツールバーで、「 」を選択します。 **[!UICONTROL メタデータ]** を選択します。
+1. 内 **[!UICONTROL メタデータの読み込み]** ページ、クリック **[!UICONTROL ファイルを選択]**. メタデータが入った CSV ファイルを選択します。
+1. 次のパラメーターを指定します。
 
    | パラメーター | 説明 |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ Adobe Experience Manager Assets では、CSV ファイルを使用して、ア�
    | ワークフローを開始 | デフォルトでは false です。に設定する場合 `true` ( メタデータをバイナリXMPデータに書き込む )DAM メタデータ書き戻しワークフローに対しては、デフォルト設定が有効になっています。 ワークフローを有効にすると、システムの動作が遅くなります。 |
    | アセットパス列名 | アセットが含まれている、CSV ファイルの列名を定義します。 |
 
-1. ツールバーから「**[!UICONTROL インポート]**」をクリックします。メタデータが読み込まれると、通知が通知インボックスに送信されます。アセットのプロパティページに移動し、メタデータ値がアセットに正常に読み込まれたかどうかを確認します。
+1. 選択 **[!UICONTROL インポート]** をクリックします。 メタデータが読み込まれると、通知が通知インボックスに送信されます。アセットのプロパティページに移動し、メタデータ値がアセットに正常に読み込まれたかどうかを確認します。
 
-メタデータの読み込み時に日付とタイムスタンプを追加するには、日付と時刻の `YYYY-MM-DDThh:mm:ss.fff-00:00` 形式を使用します。日付と時刻は `T` で区切られます。`hh` は 24 時間形式の時間、`fff` はナノ秒、`-00:00` はタイムゾーンオフセットです。例えば、`2020-03-26T11:26:00.000-07:00` は、2020 年 3 月 26 日の午前 11:26:00.000 PST 時間です。
+1. メタデータを読み込む日付とタイムスタンプを追加するには、 `YYYY-MM-DDThh:mm:ss.fff-00:00` 日付と時刻の形式を使用します。 日付と時刻は `T` で区切られます。`hh` は 24 時間形式の時間、`fff` はナノ秒、`-00:00` はタイムゾーンオフセットです。例： `2020-03-26T11:26:00.000-07:00` は 2020 年 3 月 26 日 11 時です。:26:午前 00.000(PST)。
+
+   * 日付の形式は、列見出しとその形式によって異なります。 例えば、日付がの形式に関する苦情がある場合、 `yyyy-MM-dd'T'HH:mm:ssXXX` の場合、それぞれの列ヘッダーは `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * デフォルトの日付形式は、 `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->日付形式が `YYYY-MM-DDThh:mm:ss.fff-00:00` と一致しない場合、日付値は設定されません。書き出されたメタデータ CSV ファイルの日付形式は、`YYYY-MM-DDThh:mm:ss-00:00` 形式になります。インポートする場合は、`fff` で示すナノ秒値を追加して、有効な形式に変換します。
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## メタデータの書き出し {#export-metadata}
 

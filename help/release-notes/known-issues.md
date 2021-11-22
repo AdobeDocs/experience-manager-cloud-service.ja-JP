@@ -1,19 +1,19 @@
 ---
 title: 既知の問題
-description: リリースノート（Adobe Experience Manager as a Cloud Service の既知の問題）
+description: Adobe Experience Manager as a Cloud Serviceの既知の問題
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '186'
-ht-degree: 100%
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 33%
 
 ---
 
 # 既知の問題 {#known-issues}
 
-ここでは、Adobe Experience Manager as a Cloud Service ソリューションの既知の問題について説明します。Adobe Experience Manager のリリースのたびに、このリストは改訂され更新されます。
+この記事では、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供 このリストは、 [!DNL Experience Manager].
 
-既知の問題について詳しくは、[サポートまでお問い合わせ](https://helpx.adobe.com/jp/support/experience-manager.html)ください。
+既知の問題について詳しくは、[サポートまでお問い合わせ](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support)ください。
 
 <!-- 
 ## Platform {#platform}
@@ -21,28 +21,36 @@ ht-degree: 100%
 ## Sites {#sites}
 -->
 
-## Assets {#assets}
+## [!DNL Assets] {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-既知の問題の一部は次のとおりです。
+の既知の問題 [!DNL Assets] 次の場合：
+
+* **ダウンロード**:空のフォルダーをダウンロードする場合、 [!DNL Experience Manager] は、ZIP アーカイブの作成に関する成功メッセージを伝えますが、アーカイブは作成されません。
 
 * **メタデータスキーマ**：アセット評価ウィジェットが JSP コンパイルエラーを引き起こしていました。メタデータスキーマから削除されました。 <!-- CQ-4282865, CQ-4284633 -->
 
-### 今後予定されている Assets の機能 {#upcoming-assets-capabilities}
+また、 [～の顕著な変化 [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
 
-Adobe Experience Manager Assets の機能のうち、基盤機能をベースにしているものは、Adobe Experience Manager as a Cloud Service のデプロイメントアーキテクチャではまだ利用できず、今後有効になる予定です。
+<!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
-* コマース統合フレームワーク API との依存関係により、現段階で有効になっていない機能は次のとおりです。
-   * 写真撮影ワークフローモデル
-   * アセットのプロパティユーザーインターフェイスの「製品情報」タブに値が入力されません。
-* InDesign Server との依存関係により、現段階で有効になっていない機能は次のとおりです。
-   * アセットテンプレートとアセットカタログ
-   * Adobe InDesign ファイルの複数ページにわたるプレビュー
+### Upcoming Assets capabilities {#upcoming-assets-capabilities}
+
+A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
+
+* Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
+  * Photoshoot workflow models.
+  * Product information tab in the asset properties user interface is not populated.
+
+* Capabilities not enabled at this stage due to dependency on InDesign Server integration:
+  * Asset Templates and Asset Catalogs.
+  * Multi-page preview of Adobe InDesign files.
+-->
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager（AEM）as a Cloud Service の主な変更点](aem-cloud-changes.md)
-* [非推奨（廃止予定）の機能と削除された機能](deprecated-removed-features.md)
-* [リリースノート](home.md)
+>* [主な変更点 [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [廃止される機能および削除された機能](deprecated-removed-features.md)
+>* [リリースノート](home.md)
 
