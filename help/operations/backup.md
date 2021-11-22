@@ -2,15 +2,14 @@
 title: AEM as a Cloud Service のバックアップと復元
 description: AEM as a Cloud Service のバックアップと復元
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
-workflow-type: ht
-source-wordcount: '376'
-ht-degree: 100%
+source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
+workflow-type: tm+mt
+source-wordcount: '375'
+ht-degree: 93%
 
 ---
 
 # AEM as a Cloud Service のバックアップと復元
-
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -31,7 +30,7 @@ ht-degree: 100%
 AEM as a Cloud Service のサポートは次のとおりです。
 
 * 24 時間のポイントインタイムリカバリー。つまり、過去 24 時間の任意のポイントにシステムを復元できます。
-* 過去 7 日間、1 日に 1 回取得した、アドビが定義した特定のタイムスタンプから復元します。レプリケーションメッセージ（削除、更新、作成）はすべて保持されます。
+* 過去 7 日間、1 日に 2 回かかった特定のAdobe定義タイムスタンプから復元します。  レプリケーションメッセージ（削除、更新、作成）はすべて保持されます。
 
 どのような場合でも、カスタムコードバージョンは、復元ポイント前の、最後に正常にデプロイされた状態から取得されます。
 
@@ -39,4 +38,6 @@ AEM as a Cloud Service のサポートは次のとおりです。
 
 復元後、AEM のバージョンは最新のバージョンに更新されます。
 
-**削除した環境のデータは恒久的に失われ、復元できません。**
+>[!CAUTION]
+>
+>削除した環境のデータは恒久的に失われ、復元できません。
