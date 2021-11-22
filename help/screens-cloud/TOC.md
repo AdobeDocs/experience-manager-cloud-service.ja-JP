@@ -3,9 +3,9 @@ sub-product: AEM Screens as a Cloud Service
 user-guide-title: AEM Screens as a Cloud Service
 breadcrumb-title: AEM Screensas a Cloud Service
 user-guide-description: AEM Screens as a Cloud Service について説明します。
-source-git-commit: fc3c047c6ad08db6e992a2aedc58c9cc1478b99f
+source-git-commit: 34a072bd8e936a7cdf6c37ad7b3eea704d644fd9
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '205'
 ht-degree: 82%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 82%
 + コード製品機能の使用 {#core-product-features}
    + [ビデオのサムネールサポート](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
 + Screens での開発as a Cloud Service {#developing-screens-cloud}
-   + [Screens 用カスタムコンポーネントの開発as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
    + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
+   + [コンポーネントの作成](/help/screens-cloud/developing/creating-components.md)
+   + [Screens 用カスタムコンポーネントの開発as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
 + [Screensas a Cloud ServiceFAQ](/help/screens-cloud/screens-cloud-faqs.md)
