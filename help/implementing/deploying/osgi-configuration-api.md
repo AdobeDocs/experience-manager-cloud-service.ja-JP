@@ -3,10 +3,10 @@ title: OSGi 設定 API
 description: AEM as a Cloud Service OSGi 設定サーフェスの説明
 feature: Deploying
 exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '410'
+ht-degree: 97%
 
 ---
 
@@ -141,4 +141,14 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
    * `debug.email`
       * 型：boolean
    * `oauth.flow`
+      * 型：boolean
+* **`org.apache.sling.commons.log.LogManager.factory.config`** ( 発表日：11/16/21、施行日：2/16/21)
+   * `org.apache.sling.commons.log.level`
+      * タイプ：列挙
+      * 必須範囲：情報、デバッグ、TRACE
+   * `org.apache.sling.commons.log.names`
+      * 型：string
+   * `org.apache.sling.commons.log.file`
+      * 型：string
+   * `org.apache.sling.commons.log.additiv`
       * 型：boolean
