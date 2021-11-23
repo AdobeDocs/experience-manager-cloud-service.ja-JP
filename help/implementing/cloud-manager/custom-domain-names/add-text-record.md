@@ -2,7 +2,7 @@
 title: TXT レコードの追加
 description: カスタムドメイン名の追加
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 26ac0c63e4fba167206f43f64f046452c922c10e
+source-git-commit: 1427873fcc825a7321c96cbcb41f7839b6e78056
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 88%
@@ -27,7 +27,7 @@ TXT レコードを作成する前に、次の手順に従う必要がありま�
 | ドメイン | 名前 | TXT 値 |
 |--- |--- |---|
 | `example.com` | `_aemverification.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有です。 `Ex:adobe-aem-verification=example.com/[program]/[env]/..` |
-| `test.example.com`<br>`www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有です。 `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
+| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有です。 `Ex:adobe-aem-verification=www.example.com/[program]/[env]/..` |
 
 完了したら、`dig _aemverification.[yourdomainname] -t txt` を実行して結果を確認できます。
 期待される結果には、Cloud Manager UI で指定された TXT 値が表示されます。
