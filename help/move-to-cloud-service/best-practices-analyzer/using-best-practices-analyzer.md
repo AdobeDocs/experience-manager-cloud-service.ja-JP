@@ -2,9 +2,9 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2470'
 ht-degree: 99%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 99%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -109,13 +109,16 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。
 
 
-### Adobe Experience Manager 6.2 および 6.1 {#aem-specific-versions}
+<!--
+### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
+ 
+The Best Practices Analyzer tool is limited in Adobe Experience Manager 6.2 to a link that generates and downloads the CSV report.
 
-Adobe Experience Manager 6.2 では、ベストプラクティスアナライザーツールの CSV レポートを生成およびダウンロードするリンクのみに制限されています。
+For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP interface may be used.
 
-Adobe Experience Manager 6.1 では、このツールは機能せず、HTTP インターフェイスのみを使用できます。
-
->[!NOTE]すべてのバージョンで、付属のパターン検出は独立して実行できます。
+>[!NOTE]
+>In all versions, the included Pattern Detector may run independently.
+-->
 
 ## ベストプラクティスアナライザーレポートの説明 {#cra-report}
 
