@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 description: Adobe Experience Manager as a Cloud Service の SEO および URL 管理のベストプラクティス
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: b7ed0d16b9cd4ba9fdfaa20e17f3c3c73659f914
+source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 79%
+source-wordcount: '3787'
+ht-degree: 76%
 
 ---
 
@@ -80,7 +80,7 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
 
    * サイトが `http` 経由で提供され、ユーザーがチェックアウトまたはログインフォームを使用してページに到達した時点で、`https` に切り替わることがあります。このページからリンクするときに、ユーザーが `http` ページに戻り、`https` 経由でそれらのページにアクセスできる場合、検索エンジンでは、2 つの異なるページとして追跡されます。
 
-   * Google では現在、`https` ページの方が `http` ページよりも推奨されています。このため、多くの場合、サイト全体を`https`経由で提供する方が便利です。
+   * Google では現在、`https` ページの方が `http` ページよりも推奨されています。このため、多くの場合、サイト全体を経由で提供する方が便利です `https`.
 
 ### サーバーの設定 {#server-configuration}
 
@@ -96,7 +96,7 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
 
 ## AEM の設定 {#aem-configurations}
 
-この節では、SEOに関する以下の推奨事項に従うようにAEMを設定するために必要な実装手順について説明します。
+この節では、SEO に関する以下の推奨事項に従うようにAEMを設定するために必要な実装手順について説明します。
 
 ### Sling セレクターの使用 {#using-sling-selectors}
 
@@ -183,13 +183,13 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 #### ページ名のローカライズ {#localized-page-names}
 
-翻訳済みコンテンツのユーザーにローカライズされたページ名を表示できます。 次に例を示します。
+翻訳済みコンテンツのユーザーにローカライズされたページ名を表示することができます。 次に例を示します。
 
 * スペイン語を話すユーザーが次のページにアクセスするとします。
    `www.mydomain.com/es/home.html`
 
 * この場合、URL を次のように表示した方が効果的です。
-   `www.mydomain.com/es/casa.html`。
+   `www.mydomain.com/es/casa.html`
 
 ページ名のローカライズに伴う課題は、AEM プラットフォームで使用可能なローカリゼーションツールの多くでは、コンテンツを同期しておくためには、ロケール間でページ名を一致させる必要があるという点です。
 
@@ -357,11 +357,11 @@ Disallow: /
 
 クローラーでは、Web サイトの構造をより的確に把握するために XML サイトマップが使用されます。サイトマップを提供すれば SEO ランキングが上がるという保証はありませんが、ベストプラクティスの 1 つとして認められています。サイトマップとして使用する XML ファイルを Web サーバーで手動で管理することもできますが、作成者が新しいコンテンツを作成すると、変更内容がサイトマップに自動的に反映されるように、プログラムによってサイトマップを生成することをお勧めします。
 
-AEMは、[Apache Sling Sitemap module](https://github.com/apache/sling-org-apache-sling-sitemap)を使用してXMLサイトマップを生成します。このサイトマップは、サイトXMLサイトマップを最新の状態に保つための、開発者やエディター向けの幅広いオプションを提供します。
+AEMは [Apache Sling Sitemap モジュール](https://github.com/apache/sling-org-apache-sling-sitemap) を使用して XML サイトマップを生成します。開発者とエディターは、サイトの XML サイトマップを最新の状態に保つための様々なオプションを提供します。
 
-Apache Sling Sitemapモジュールは、最上位のサイトマップとネストされたサイトマップを区別します。両方とも、`sling:sitemapRoot`プロパティが`true`に設定されたリソースに対して生成されます。 一般に、サイトマップは、ツリーの最上位サイトマップ（他のサイトマップのルート上位要素を持たないリソース）のパスにあるセレクターを使用してレンダリングされます。 また、このトップレベルのサイトマップルートはサイトマップのインデックスも公開します。通常は、サイトの所有者が検索エンジンの設定ポータルで設定したり、サイトの`robots.txt`に追加したりします。
+Apache Sling Sitemap モジュールは、トップレベルのサイトマップとネストされたサイトマップを区別します。両方とも、 `sling:sitemapRoot` プロパティを `true`. 通常、サイトマップは、ツリーの最上位サイトマップ（他のサイトマップのルートの親を持たないリソース）のパスにあるセレクターを使用してレンダリングされます。 このトップレベルのサイトマップルートは、サイトマップのインデックスも公開します。通常は、サイトの所有者が検索エンジンの設定ポータルで設定したり、サイトの `robots.txt`.
 
-例えば、トップレベルのサイトマップルートを`my-page`に定義し、ネストされたサイトマップルートを`my-page/news`に定義するサイトで、ニュースサブツリーのページ専用のサイトマップを生成するとします。 結果として、関連するURLは次のようになります。
+例えば、最上位レベルのサイトマップルートを次の場所に定義するサイトについて考えてみましょう。 `my-page` とネストされたサイトマップのルート ( `my-page/news`:news サブツリーのページ用の専用サイトマップを生成します。 結果として、関連する URL は次のようになります。
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -369,22 +369,99 @@ Apache Sling Sitemapモジュールは、最上位のサイトマップとネス
 
 >[!NOTE]
 >
-> セレクター`sitemap`と`sitemap-index`が、カスタム実装に干渉する場合があります。 製品機能を使用しない場合は、これらのセレクターを0より大きい`service.ranking`で提供する独自のサーブレットを設定します。
+> セレクター `sitemap` および `sitemap-index` は、カスタム実装に影響を与える可能性があります。 製品機能を使用しない場合は、これらのセレクターを `service.ranking` が 0 より大きい。
 
-デフォルトの設定では、ページのプロパティダイアログに、ページをサイトマップルートとしてマークするオプションが用意されています。前述のように、ページ自体とその子孫のサイトマップを生成します。 この動作は`SitemapGenerator`インターフェイスの実装によって実装され、代替実装を追加することで拡張できます。 ただし、XMLサイトマップを再生成する頻度は、コンテンツオーサリングワークフローとワークロードに大きく依存するので、製品には`SitemapScheduler`設定は含まれていません。 これにより、機能が効果的にオプトインします。
+デフォルトの設定では、ページのプロパティダイアログには、ページをサイトマップルートとしてマークするオプションが用意されています。前述のように、ページ自体とその子孫のサイトマップを生成します。 この動作は、 `SitemapGenerator` インターフェイスとは、代替実装を追加することで拡張できます。 ただし、XML サイトマップを再生成する頻度はコンテンツオーサリングワークフローとワークロードに大きく依存するので、製品には何も付属していません `SitemapScheduler` 設定。 これにより、機能が効果的にオプトインします。
 
-XMLサイトマップを生成するバックグラウンドジョブを有効にするには、`SitemapScheduler`を設定する必要があります。 そのためには、PID `org.apache.sling.sitemap.impl.SitemapScheduler`のOSGI設定を作成します。 スケジューラー式`0 0 0 * * ?`は、1日1回午前0時にすべてのXMLサイトマップを再生成するための出発点として使用できます。
+XML サイトマップを生成するバックグラウンドジョブを有効にするには、 `SitemapScheduler` を設定する必要があります。 これをおこなうには、PID の OSGi 設定を作成します。 `org.apache.sling.sitemap.impl.SitemapScheduler`. スケジューラー式 `0 0 0 * * ?` は、すべての XML サイトマップを 1 日 1 回午前 0 時に再生成する出発点として使用できます。
 
-![Apache Sling Sitemap — スケジューラー](assets/sling-sitemap-scheduler.png)
+![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
 
-サイトマップ生成ジョブは、オーサー層とパブリッシュ層の両方のインスタンスで実行できます。 適切な正規URLしか生成できないので、ほとんどの場合は、パブリッシュ層インスタンスで生成を実行することをお勧めします（通常、Slingリソースマッピングルールはパブリッシュ層インスタンスでのみ存在するため）。 ただし、`SitemapLinkExternalizer`インターフェイスを実装して、正規URLを生成するために使用される外部化メカニズムのカスタム実装をプラグインすることは可能です。 カスタム実装でオーサー層インスタンス上にサイトマップの正規URLを生成できる場合、オーサー実行モード用に`SitemapScheduler`を設定でき、XMLサイトマップ生成ワークロードをオーサーサービスクラスターのインスタンス間で分散できます。 このシナリオでは、特に注意が必要です。まだ公開されていない、変更されている、または制限されたユーザーグループにのみ表示されるコンテンツの処理。
+サイトマップ生成ジョブは、オーサー層インスタンスとパブリッシュ層インスタンスの両方で実行できます。 適切な正規 URL はそこでのみ生成できるので、ほとんどの場合はパブリッシュ層インスタンスで生成を実行することをお勧めします（通常、Sling リソースマッピングルールはパブリッシュ層インスタンスでのみ存在するので）。 ただし、 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) インターフェイス。 カスタム実装で、オーサー層インスタンス上にサイトマップの正規 URL を生成できる場合、 `SitemapScheduler` オーサー実行モード用に設定でき、XML サイトマップ生成ワークロードをオーサーサービスクラスターのインスタンス全体に分散させることができます。 このシナリオでは、まだ公開されていない、変更されている、または制限されたユーザーグループにのみ表示されるコンテンツの処理に、特に注意が必要です。
 
-さらに、Apache Sling Sitemap拡張ポイント[SitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/SitemapGenerator.html)と[SitemapLinkExternalizer](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/common/SitemapLinkExternalizer.html)、および[SitemapExtensionProvider](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/builder/SitemapExtensionProvider.html)に加えて、AEM固有の実装は、次の拡張ポイントの2つを定義します。
+AEM Sitesには、 `SitemapGenerator` はページのツリーを横断してサイトマップを生成します。 サイトの正規 URL と代替言語（使用可能な場合）のみを出力するように事前設定されています。 また、必要に応じて、ページの最終変更日を含めるように設定することもできます。 その場合は、 _最終変更日を追加_ オプション _AdobeAEM SEO - Page Tree Sitemap Generator_ 設定および _最終変更ソース_. サイトマップがパブリッシュ層で生成される場合は、 `cq:lastModified` 日付。
 
-* [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)を実装して、AEM Sites固有のページツリーサイトマップジェネレーターで生成されたXMLサイトマップからページを削除できます
-* [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html)または[SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)を実装して、[Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)固有のサイトマップジェネレーターによって生成されたXMLサイトマップから製品やカテゴリを除外できます。
+![AdobeAEM SEO - Page Tree Sitemap Generator の設定](assets/sling-sitemap-pagetreegenerator.png)
 
-さらに、XMLサイトマップ用に実装された機能は、例えば、正規リンクや言語の代替をページの先頭に追加する場合など、様々な使用例で使用できます。 詳しくは、[SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html)インターフェイスを参照してください。
+サイトマップの内容を制限するために、必要に応じて次のサービスインターフェイスを実装できます。
+
+* の [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) を実装して、AEM Sites固有のサイトマップジェネレーターで生成された XML サイトマップからページを非表示にすることができます
+* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) または [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) を実装して、 [コマース統合フレームワーク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=ja) 特定のサイトマップジェネレーター
+
+特定の使用例でデフォルトの実装が機能しない場合、または拡張機能が十分に柔軟性を持たない場合は、カスタム `SitemapGenerator` は、生成されたサイトマップのコンテンツを完全に制御するために実装できます。 次の例は、AEM Sitesのデフォルトの実装のロジックを利用して、これをおこなう方法を示しています。 使用する [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) ページのツリーをトラバースするための開始点として、次の操作をおこないます。
+
+```
+import java.util.Optional;
+
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
+public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
+
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
+
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
+    }
+
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
+
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
+}
+```
+
+さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加するなど、様々な使用例でも使用できます。 詳しくは、 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) インターフェイスを参照してください。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 
