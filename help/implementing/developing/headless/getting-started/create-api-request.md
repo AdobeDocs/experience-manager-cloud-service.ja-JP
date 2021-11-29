@@ -2,10 +2,10 @@
 title: コンテンツフラグメントへのアクセスとヘッドレス配信クイック開始ガイド
 description: AEM Assets REST API を使用して、コンテンツフラグメントと、コンテンツフラグメントコンテンツのヘッドレス配信用の GraphQL API を管理する方法について説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+source-git-commit: 10d686134b760c2678cc3035a0e15e418cf2896d
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 96%
 
 ---
 
@@ -13,11 +13,12 @@ ht-degree: 100%
 
 AEM Assets REST API を使用して、コンテンツフラグメントと、コンテンツフラグメントコンテンツのヘッドレス配信用の GraphQL API を管理する方法について説明します。
 
-## GraphQL API と Assets REST API とは何ですか {#what-are-the-apis}
+## GraphQL API と Assets REST API とは何ですか  {#what-are-the-apis}
 
 [コンテンツフラグメントはいくつか作成したので、AEM API](create-content-fragment.md) を使用してそれらをヘッドレスで配信できます。
 
 * [GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。
+   * これを使用するには、 [エンドポイントは、AEMで定義して有効にする必要があります](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)、および必要に応じて [GraphiQL インターフェイスがインストールされています](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
 このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
@@ -25,12 +26,6 @@ AEM Assets REST API を使用して、コンテンツフラグメントと、コ
 ## GraphQL を使用したコンテンツフラグメントの配信方法 {#how-to-deliver-a-content-fragment}
 
 情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。一般に、これらのクエリは、モデルやエンドポイントごとに 1 回だけ作成する必要があります。この「はじめる前に」ガイドの目的上、1 つだけ作成します。
-
-<!-- Not in the UI yet - will need updating when it is -->
-<!--
-1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
-   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
--->
 
 1. AEM as a Cloud Service にログインし、GraphiQL インターフェイスにアクセスします。
    * 例：`https://<host>:<port>/content/graphiql.html`
