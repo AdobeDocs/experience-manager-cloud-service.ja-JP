@@ -2,9 +2,9 @@
 title: Screensas a Cloud ServiceFAQ
 description: ここでは、hScreens に関するas a Cloud Service的な FAQ について説明します。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
