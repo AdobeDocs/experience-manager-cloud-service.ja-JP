@@ -1,13 +1,13 @@
 ---
 title: Screens as a Cloud Service へのプレーヤーの登録
 description: ここでは、Screens as a Cloud Service にプレーヤーを登録する方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: ht
-source-wordcount: '395'
-ht-degree: 100%
+exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 78%
 
 ---
-
 
 # Screens as a Cloud Service へのプレーヤーの登録 {#registering-players-screens-cloud}
 
@@ -62,6 +62,11 @@ Screens as a Cloud Service にプレーヤーをインストールして設定�
 1. このプレーヤーは、左側のナビゲーションパネルの「**プレーヤー**」に表示されます。Screens サービスプロバイダーに表示されるコードは、管理 UI の&#x200B;**システム情報**&#x200B;パネルのプレーヤーコードと一致します。
 
    ![画像](/help/screens-cloud/assets/player/register-player6.png)
+
+>[!IMPORTANT]
+>**登録コードを使用する際のセキュリティのベストプラクティスに関する推奨事項
+>ベストプラクティスとして、登録コードの使用を制限できます。 登録コードに問題が生じ、100 件の登録が制限されている場合、攻撃者はその数までしか登録できませんが、それ以上登録できません。 登録コードが作成され、顧客のプレーヤーの一部が既に登録されている場合は、いつでも使用制限を更新できます。 顧客が特定の登録コードに対して異常な登録アクティビティを観察した場合、調査中に制限をリアルタイムで下げ、既に登録されているプレーヤーに影響を与えることなく、誤報の場合は数を増やすことができます。
+
 
 ## 次の手順 {#whats-next}
 

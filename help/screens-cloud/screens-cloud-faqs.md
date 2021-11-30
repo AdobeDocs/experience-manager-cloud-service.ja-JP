@@ -2,9 +2,9 @@
 title: Screensas a Cloud ServiceFAQ
 description: ここでは、hScreens に関するas a Cloud Service的な FAQ について説明します。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ AEM Screensのキャッシュ機能を活用することをお勧めしますが
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## 登録コード制限の使用方法
+
+ベストプラクティスとして、登録コードの使用を制限できます。 登録コードに問題が生じ、100 件の登録が制限されている場合、攻撃者はその数までしか登録できませんが、それ以上登録できません。 登録コードが作成され、顧客のプレーヤーの一部が既に登録されている場合は、いつでも使用制限を更新できます。 顧客が特定の登録コードに対して異常な登録アクティビティを観察した場合、調査中に制限をリアルタイムで下げ、既に登録されているプレーヤーに影響を与えることなく、誤報の場合は数を増やすことができます。
