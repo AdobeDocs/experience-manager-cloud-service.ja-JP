@@ -2,10 +2,10 @@
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 87%
+source-wordcount: '485'
+ht-degree: 80%
 
 ---
 
@@ -41,48 +41,8 @@ ht-degree: 87%
 >[!NOTE]
 >「**ログをダウンロード**」ボタンを使用すると、テスト実行詳細フォームのログを格納した ZIP ファイルにアクセスできます。これらのログには、実際の AEM ランタイムプロセスのログは含まれていません。それらについては、通常のダウンロードログまたはテールログ機能を使用してアクセスできます。詳しくは、[ログのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)を参照してください。
 
-## カスタム UI テスト {#custom-ui-testing}
 
-AEM では、Cloud Manager 統合スイートの品質ゲートを顧客に提供して、アプリケーションをスムーズに更新できるようにしています。特に、IT テストゲートを使用すると、AEM API を使用する独自のテストを作成および自動化できます。
-
-カスタム UI テスト機能は [オプション機能](#customer-opt-in) これにより、お客様は、アプリケーションの UI テストを作成し、自動的に実行できます。 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。UI の構築方法と UI テストの作成方法について詳しく学ぶことができます。また、AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。
-
-ユーザーは、（GIT 経由で）カスタムテストや、UI のテストスイートを作成できます。UI テストは、各 Cloud Manager パイプラインの特定の品質ゲートの一部として、それぞれの手順およびフィードバック情報を使用して実行されます。リグレッションや新機能を含む UI テストは、顧客の状況に応じてエラーを検出し、報告することができます。
-
-顧客 UI テストは、「カスタム UI テスト」の実稼動パイプラインで自動的に実行されます。
-
-UI テストは、Java で記述された HTTP テストのカスタム機能テストとは異なり、[UI テストの作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=ja#building-ui-tests)で定義されている規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます。
-
->[!NOTE]
->[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)で提供されている構造と言語&#x200B;*（js と wdio）*&#x200B;を基にして作業を開始することをお勧めします。
-
-### 顧客オプトイン {#customer-opt-in}
-
-UI テストを作成して実行するには、UI テスト用の maven サブモジュール（UI テストサブモジュールの pom.xml ファイルの隣）の下のコードリポジトリーにファイルを追加して「オプトイン」し、構築された `tar.gz` ファイルのルートにこのファイルがあることを確認する必要があります。
-
-*ファイル名*：`testing.properties`
-
-*目次*：`ui-tests.version=1`
-
-これが構築された `tar.gz` ファイルに含まれていない場合、UI テストの構築と実行はスキップされます
-
-構築されたアーティファクトに `testing.properties` ファイルを追加するには、（UI テストサブモジュール内の）`assembly-ui-test-docker-context.xml` ファイルに次の `include` ステートメントを追加します。
-
-    ```
-    [...]
-    &lt;includes>
-    &lt;include>Dockerfile&lt;/include>
-    &lt;include>wait-for-grid.sh&lt;/include>
-    &lt;include>testing.properties&lt;/include> &lt;! - opt-in test module in Cloud Manager -->
-    &lt;/includes>
-    [...]
-    ```
-
->[!NOTE]
->2021 年 2 月 10 日より前に作成された実稼動用パイプラインの場合、ここで説明した UI テストを使用するには、更新が必要となります。つまり、変更がない場合でも、実稼動パイプラインを編集し、UI から「**保存**」をクリックする必要があります。
->様々なタイプのパイプライン設定の詳細については、[CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
-
-### 機能テストの作成 {#writing-functional-tests}
+## 機能テストの作成 {#writing-functional-tests}
 
 ユーザーが作成する機能テストは、AEM にデプロイするアーティファクトと同じ Maven ビルドで生成される個別の JAR ファイルとしてパッケージ化する必要があります。一般に、これは別個の Maven モジュールになります。結果として生成される JAR ファイルには、必要な依存関係がすべて含まれている必要があり、通常は jar-with-dependencies 記述子を使用する maven-assembly-plugin で作成されます。
 
@@ -127,7 +87,7 @@ UI テストを作成して実行するには、UI テスト用の maven サブ�
 
 テストクラスは、通常の JUnit テストにする必要があります。テストインフラストラクチャは、aem-testing-clients テストライブラリで使用される規則との互換性を持つように設計および設定されています。開発者は、このライブラリを使用し、そのライブラリのベストプラクティスに従うことを強くお勧めします。詳しくは、[Git リンク](https://github.com/adobe/aem-testing-clients)を参照してください。
 
-### ローカルテストの実行 {#local-test-execution}
+## ローカルテストの実行 {#local-test-execution}
 
 テストクラスは JUnit テストなので、Eclipse、IntelliJ、NetBeans などの主要な Java IDE から実行できます。
 

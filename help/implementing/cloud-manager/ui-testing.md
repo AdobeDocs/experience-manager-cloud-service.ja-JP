@@ -2,9 +2,9 @@
 title: UI テスト - Cloud Services
 description: UI テスト - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1582'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,47 @@ UI テストは、言語とフレームワークの幅広い選択肢（Java と
 >[!NOTE]
 > このページで説明する UI テストを、2021 年 2 月 10 日より前に作成されたステージパイプラインと実稼動パイプラインで使用するには更新が必要となります。
 > 詳しくは、 [Cloud Manager の CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) パイプラインの設定について詳しくは、を参照してください。
+
+## カスタム UI テスト {#custom-ui-testing}
+
+AEM では、Cloud Manager 統合スイートの品質ゲートを顧客に提供して、アプリケーションをスムーズに更新できるようにしています。特に、IT テストゲートを使用すると、AEM API を使用する独自のテストを作成および自動化できます。
+
+カスタム UI テスト機能は [オプション機能](#customer-opt-in) これにより、お客様は、アプリケーションの UI テストを作成し、自動的に実行できます。 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。UI の構築方法と UI テストの作成方法について詳しく学ぶことができます。また、AEM プロジェクトアーキタイプを使用すると、UI テストプロジェクトを容易に生成できます。
+
+ユーザーは、（GIT 経由で）カスタムテストや、UI のテストスイートを作成できます。UI テストは、各 Cloud Manager パイプラインの特定の品質ゲートの一部として、それぞれの手順およびフィードバック情報を使用して実行されます。リグレッションや新機能を含む UI テストは、顧客の状況に応じてエラーを検出し、報告することができます。
+
+顧客 UI テストは、「カスタム UI テスト」の実稼動パイプラインで自動的に実行されます。
+
+UI テストは、Java で記述された HTTP テストのカスタム機能テストとは異なり、[UI テストの作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=ja#building-ui-tests)で定義されている規則に従う限り、任意の言語で記述されたテストを含む Docker イメージにすることができます。
+
+>[!NOTE]
+>[AEM プロジェクトのアーキタイプ](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)で提供されている構造と言語&#x200B;*（js と wdio）*&#x200B;を基にして作業を開始することをお勧めします。
+
+### 顧客オプトイン {#customer-opt-in}
+
+UI テストを作成して実行するには、UI テスト用の maven サブモジュール（UI テストサブモジュールの pom.xml ファイルの隣）の下のコードリポジトリーにファイルを追加して「オプトイン」し、構築された `tar.gz` ファイルのルートにこのファイルがあることを確認する必要があります。
+
+*ファイル名*：`testing.properties`
+
+*目次*：`ui-tests.version=1`
+
+これが構築された `tar.gz` ファイルに含まれていない場合、UI テストの構築と実行はスキップされます
+
+構築されたアーティファクトに `testing.properties` ファイルを追加するには、（UI テストサブモジュール内の）`assembly-ui-test-docker-context.xml` ファイルに次の `include` ステートメントを追加します。
+
+    ```
+    [...]
+    &lt;includes>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;! - opt-in test module in Cloud Manager -->
+    &lt;/includes>
+    [...]
+    ```
+
+>[!NOTE]
+>2021 年 2 月 10 日より前に作成された実稼動用パイプラインの場合、ここで説明した UI テストを使用するには、更新が必要となります。つまり、変更がない場合でも、実稼動パイプラインを編集し、UI から「**保存**」をクリックする必要があります。
+>様々なタイプのパイプライン設定の詳細については、[CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
 
 ## UI テストの作成 {#building-ui-tests}
 
@@ -149,7 +190,7 @@ Selenium のステータスエンドポイントが肯定的な応答を返し�
 
 Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テスト結果のレポートに広く使用されている形式です。Docker イメージで Java と Maven が使用される場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)と [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/)の両方が使用されます。Docker イメージが他のプログラミング言語またはテストランナーで実装されている場合は、選択したツールのドキュメントを参照して、JUnit XML レポートの生成方法を確認してください。
 
-### ファイルのアップロード {#upload-files}
+### ファイルをアップロード {#upload-files}
 
 テストでは、場合によって、テスト対象のアプリケーションにファイルをアップロードする必要があります。テストに対する Selenium デプロイメントの柔軟性を維持するため、Selenium に直接アセットをアップロードすることはできません。代わりに、以下の中間手順を経て、ファイルをアップロードします。
 
