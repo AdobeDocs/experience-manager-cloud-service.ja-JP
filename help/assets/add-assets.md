@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
-ht-degree: 92%
+source-wordcount: '2263'
+ht-degree: 89%
 
 ---
 
@@ -157,7 +157,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    * [!UICONTROL インポート後にソースファイルを削除]:ファイルがに読み込まれた後で元のファイルをソースデータストアから削除するには、このオプションを選択します。 [!DNL Experience Manager].
    * [!UICONTROL インポートモード]：「スキップ」、「置換」または「バージョンを作成」を選択します。スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。[バージョンオプションの置換と作成](#handling-upload-existing-file)の意味を参照してください。
    * [!UICONTROL アセットターゲットフォルダー]：アセットを取得する DAM 内の取得フォルダー。例：`/content/dam/imported_assets`
-   * [!UICONTROL メタデータファイル]:読み込むメタデータファイル。CSV 形式で指定。 この CSV ファイルをソース BLOB の場所に指定し、一括取り込みツールの設定でパスを参照します。
+   * [!UICONTROL メタデータファイル]:読み込むメタデータファイル。CSV 形式で指定。 ソース BLOB の場所で CSV ファイルを指定し、Bulk Ingestor ツールの設定時にパスを参照します。 このフィールドで参照される CSV ファイル形式は、 [アセットメタデータの一括読み込みと書き出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 次を選択した場合、 **インポート後にソースファイルを削除** オプション、 **除外** または **MIME タイプを含める** または **パス/ファイルでフィルター** フィールド。 正規表現を使用して、これらのフィールドの CSV ファイルをフィルタリングできます。
 
 1. 作成した取得ツール設定を削除、変更、実行したり、さらに作業を行ったりできます。一括読み込みインジェスターの設定を選択すると、ツールバーで次のオプションを使用できます。
 
