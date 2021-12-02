@@ -1,31 +1,36 @@
 ---
-title: AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート
-description: AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート
+title: AEM as a Cloud Serviceリリース2021.12.0の移行ツールのリリースノート
+description: AEM as a Cloud Serviceリリース2021.12.0の移行ツールのリリースノート
 feature: Release Information
 exl-id: null
-source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
+source-git-commit: 3bd73869fb04c82fb908a5530728040c7e573eb0
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 25%
+source-wordcount: '163'
+ht-degree: 19%
 
 ---
 
 
-# AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Serviceリリース2021.12.0の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2021.11.0の移行ツールのリリースノートの概要を説明します。
+このページでは、AEM as a Cloud Service 2021.12.0の移行ツールのリリースノートの概要を説明します。
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
 
-## コンテンツ転送ツール {#ctt-release}
+## ベストプラクティスアナライザー {#bpa-release}
 
-### リリース日 {#release-date-ctt}
+### リリース日 {#release-date-bpa}
 
-コンテンツ転送ツール v1.7.2 のリリース日は 2021 年 11 月 1 日です。
+ベストプラクティスアナライザー v2.1.22 のリリース日は 2021 年 12 月 1 日です。
 
-### 新機能 {#what-is-new-ctt}
+### 新機能 {#what-is-new-bpa}
 
-* オプションのサポート [プリコピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) ソースAEMインスタンスがファイルデータストアを使用するように設定されている場合に、コンテンツ転送ツールで使用する手順が追加され、抽出段階を大幅に高速化できます。
+* 使用する ACS コモンのバージョンを検出し、レポートする機能。
+* 1 つのグループ内のユーザーとサブグループの数を検出し、レポートする機能。
+* 16MB を超える MongoDB のノードプロパティ値を検出し、レポートする機能。
 
-* コンテンツ転送ツール UI のインジェスト段階に、インデックス作成および Mongo の回復手順が進行中である場合を示す追加の説明メッセージが追加されました。
+### バグ修正 {#bug-fixes-bpa}
+
+* 偽陰性を減らすために、基盤コンポーネントの検出を改善しました。
+* AEM Formsのお客様向けに、に関する BPA メッセージ `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Serviceで使用できない問題を修正しました。
