@@ -2,9 +2,9 @@
 title: UI テスト - Cloud Services
 description: UI テスト - Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
+source-git-commit: 710f156e606902ab5548169661d4a82c8cf4f819
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 92%
 
 ---
@@ -47,7 +47,10 @@ UI テストを作成して実行するには、UI テスト用の maven サブ�
 
 これが構築された `tar.gz` ファイルに含まれていない場合、UI テストの構築と実行はスキップされます
 
-追加するには `testing.properties` ビルドアーティファクトにファイルを追加し、 `include` ～に関する声明 `assembly-ui-test-docker-context.xml` ファイル（ UI テストサブモジュール内） プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、このファイルを編集する必要があります。 ファイルに編集しないように指示する行が含まれている場合は、その通知を無視してください。
+追加するには `testing.properties` ビルドアーティファクトにファイルを追加し、 `include` ～に関する声明 `assembly-ui-test-docker-context.xml` ファイル（ UI テストサブモジュール内）
+
+>[!NOTE]
+>プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、このファイルを編集する必要があります。 ファイルに編集しないように指示する行がある場合は、その通知を無視してください。
 
     ```
     [...]
