@@ -2,7 +2,7 @@
 title: 機能テスト - Cloud Services
 description: 機能テスト - Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
+source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 80%
@@ -20,9 +20,9 @@ ht-degree: 80%
 機能テストは次の 2 つのタイプに分類されます。
 
 
-* 製品機能テスト
-* カスタム機能テスト
-* カスタム UI テスト
+* [製品機能テスト](#product-functional-testing)
+* [カスタム機能テスト](#custom-functional-testing)
+* [カスタム UI テスト](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
 
 ## 製品機能テスト {#product-functional-testing}
 
