@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c4d664450244394a65ddbc8097731d913db59091
+source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 53%
+source-wordcount: '1525'
+ht-degree: 50%
 
 ---
 
@@ -186,3 +186,21 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 * 合計インデックスサイズを検出し、レポートする機能。
 
 * 元のレンディションが欠落しているアセットを検出し、レポートする機能。
+
+
+## ベストプラクティスアナライザー {#bpa-release}
+
+### リリース日 {#release-date-bpa}
+
+ベストプラクティスアナライザー v2.1.22 のリリース日は 2021 年 12 月 1 日です。
+
+### 新機能 {#what-is-new-bpa}
+
+* 使用する ACS コモンのバージョンを検出し、レポートする機能。
+* 1 つのグループ内のユーザーとサブグループの数を検出し、レポートする機能。
+* 16MB を超える MongoDB のノードプロパティ値を検出し、レポートする機能。
+
+### バグ修正 {#bug-fixes-bpa}
+
+* 偽陰性を減らすために、基盤コンポーネントの検出を改善しました。
+* AEM Formsのお客様向けに、に関する BPA メッセージ `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Serviceで使用できない問題を修正しました。
