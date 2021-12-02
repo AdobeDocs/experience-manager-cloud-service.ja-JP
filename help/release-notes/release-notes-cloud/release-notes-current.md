@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: f542d9423450086fcc4c0ba62f0e6f178df462e3
+source-git-commit: c4d664450244394a65ddbc8097731d913db59091
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 25%
+ht-degree: 53%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 25%
 ## リリース日 {#release-date}
 
 のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.10.0) は 2021 年 11 月 4 日です。
-次のリリース (2021.11.0) は 2021 年 12 月 2 日です。
+次のリリース (2021.11.0) は 2021 年 12 月 16 日です。
 
 ## リリースビデオ {#release-video}
 
@@ -58,22 +58,22 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms-oct-2021}
+### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsを使用してログイン済みとログインしていない（匿名）の両方の動作を取得および追跡し、エンドユーザーのインサイトを収集できるようになりました。 十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+* **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics を使用して、ログイン済みとログインしていない（匿名）状態の両方の動作を取得および追跡して、エンドユーザーのインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
-### [!DNL Forms]プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
+### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
-* **AEM Workflow データを外部化して処理を保護**:顧客が管理するリポジトリに、機密の個人データ (SPD) 要素を含むプロセス内のAEM Workflows データ (AEM Workflow Variables データ ) を保存して、安全に処理できます。 データ要素とワークフロー変数は、AEMリポジトリに格納されず、ワークフローの処理中に、顧客が管理するリポジトリからオンデマンドで取得されます。
+* **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリーに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
 
 ### [!DNL Forms] のベータ版機能 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) は、テンプレートと XML データを組み合わせて、様々な形式の印刷ドキュメントを生成する場合に役立ちます。 このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。 API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
-   * XML データを使用してテンプレートファイル (PDFおよび XDP) に入力することでドキュメントを生成します。
+   * テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
 
-[!DNL formscsbeta@adobe.com] に書き込んで、ベータ版プログラムにサインアップできます。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
 
 ## CIF アドオン {#cloud-services-cif}
 
@@ -95,7 +95,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### リリース日 {#release-date-cm-nov}
 
-AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 09 日に予定されています。
+AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 09 日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-cm-nov}
 
@@ -106,35 +106,35 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 
 * AEM画像全体を構築する必要なく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。 この変更は、リリース後の数週間で徐々に適用される予定です。
 
-* Git コミット ID がパイプライン実行の詳細に表示され、作成されたコードの追跡が容易になります。
+* パイプライン実行の詳細に Git Commit ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
 
 * プログラムの作成は、公開されている API を通じて利用できるようになりました。
 
 * 環境の作成は、公開されている API を介して使用できるようになりました。
 
-* この `x-request-id` 応答ヘッダーが、API Playground の [www.adobe.io](https://www.adobe.io/). このヘッダーは、トラブルシューティングのためにカスタマーケアの問題を送信する際に役立ちます。
+* この `x-request-id` 応答ヘッダーが、[www.adobe.io](https://www.adobe.io/) の API Playground に表示されるようになりました。このヘッダーは、トラブルシューティングのためにカスタマーケアに関する問題を送信する際に役立ちます。
 
-* ユーザーとして、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されるのを確認します。
+* ユーザーには、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されます。
 
-* 新しいアクティビティページが使用できるようになりました。このページでは、パイプラインやコード実行などのアクティビティに関連する詳細を表示できます。 時間が経つと、このページに示すアクティビティの範囲は、提供された詳細と共に拡大します。
+* 新しいアクティビティページが使用できるようになりました。このページでは、パイプラインやコード実行などのアクティビティに関連する詳細を表示できます。時間が経つと、このページに表示されるアクティビティの範囲は拡大し、詳細も表示されるようになります。
 
-* 詳細の概要を簡単に表示できる新しいパイプラインページと、オンホバー時のステータスポップオーバーが追加されました。 パイプラインの実行に関連する詳細と共に表示できます。
+* カーソルを合わせたときにステータスのポップオーバーが表示され、詳細の概要を簡単に確認できる新しいパイプラインページが追加されました。パイプラインの実行状況が、関連する詳細と共に表示されます。
 
 * パイプラインの編集 API で、デプロイフェーズで使用する環境の変更がサポートされるようになりました。
 
-* OakPal スキャンプロセスの最適化が、大きなパッケージに導入されました。
+* OakPal スキャンプロセスの最適化が、大規模パッケージに導入されました。
 
-* 品質の問題の CSV ファイルに、各品質の問題のタイムスタンプが含まれるようになりました。
+* 品質問題の CSV ファイルに、品質問題ごとのタイムスタンプが含まれるようになりました。
 
 ### バグ修正 {#bug-fixes-nov}
 
 * 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
 
-* デプロイフェーズが存在しない場合、パイプラインPATCHAPI は失敗します。
+* デプロイフェーズが存在しない場合、パイプライン PATCH API は失敗します。
 
-* この `ClientlibProxyResourceCheck` 共通のベースパスを持つクライアントライブラリがある場合、品質ルールで偽陽性の問題が発生していました。
+* 共通の基本パスを持つクライアントライブラリがある場合、`ClientlibProxyResourceCheck` 品質ルールで偽陽性の問題が発生していました。
 
-* 最大数に達したリポジトリの場合のエラーメッセージで、エラーの理由が指定されていませんでした。
+* リポジトリーの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
 
 * まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
 
