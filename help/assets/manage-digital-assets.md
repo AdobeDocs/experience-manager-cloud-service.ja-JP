@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2298aa1a3fbfbaa21d3ce81323221d68c965f7fe
+source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
 workflow-type: tm+mt
-source-wordcount: '4268'
-ht-degree: 99%
+source-wordcount: '4287'
+ht-degree: 98%
 
 ---
 
@@ -58,6 +58,10 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 有効にすると、Experience Manager は重複アセットの通知を Experience Manager インボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
 
 ![重複アセットのインボックス通知](assets/duplicate-detect-inbox-notification.png)
+
+>[!NOTE]
+>
+>アセットをリポジトリーにアップロードすると、Experience Managerは重複を検出し、最初の 100 個の重複アセットについて通知します。
 
 ## アセットのプレビュー {#previewing-assets}
 
