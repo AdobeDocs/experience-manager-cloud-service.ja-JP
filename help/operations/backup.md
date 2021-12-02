@@ -2,14 +2,14 @@
 title: AEM as a Cloud Service のバックアップと復元
 description: AEM as a Cloud Service のバックアップと復元
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 85%
+source-wordcount: '496'
+ht-degree: 64%
 
 ---
 
-# AEM as a Cloud Service のバックアップと復元
+# AEM as a Cloud Service のバックアップと復元 {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ ht-degree: 85%
 >
 >この機能は、コードまたはコンテンツに重大な問題がある場合にのみ使用してください。復元されたバックアップから現在までの最新のデータは失われます。ステージングも古いバージョンに復元されます。
 
-## 使用方法
+## 使用方法 {#how-to-use}
 
 顧客は、発生している問題を説明したサポートチケットを提出する必要があります。これにより、アドビのサポートが調査を行い、リストアが必要かどうかを判断します。
 
@@ -41,3 +41,9 @@ AEM as a Cloud Service のサポートは次のとおりです。
 >[!CAUTION]
 >
 >削除した環境のデータは恒久的に失われ、復元できません。
+
+## オフサイトバックアップ {#offsite-backup}
+
+通常のバックアップは、AEM Cloud Services 内で誤って削除された場合や技術的な障害が発生する場合のリスクもカバーしますが、地域の障害に起因する可能性のあるリスクもカバーする必要があります。 可用性に加えて、このようなデータ領域の停止に伴う最大のリスクは、主にデータの損失です。
+AEMas a Cloud Serviceは、AEMコンテンツ全体をリモート領域に継続的にコピーし、3 か月間のリカバリに利用できるようにすることで、すべてのAEM実稼動環境の標準として、このリスクをカバーします。 この機能をオフサイトバックアップと呼びます。
+ステージ環境および実稼動環境での AEM Cloud Services の復元は、データ領域の停止が発生した場合にAEM Service Reliability Engineering によって実行されます。
