@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 98%
+source-wordcount: '4067'
+ht-degree: 95%
 
 ---
 
@@ -184,7 +184,7 @@ Dynamic Media でのパスワードの有効期限は、現在のシステム日
 
 Dynamic Media のセットアップと設定をさらにカスタマイズしたり、パフォーマンスを最適化したりする場合は、次の&#x200B;*オプション*&#x200B;タスクを 1 つまたは複数実行できます。
 
-* [Dynamic Media 設定のセットアップと設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [（オプション）Dynamic Media 設定のセットアップと設定 ](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（オプション）Dynamic Media のパフォーマンスの調整](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -197,17 +197,23 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 Dynamic Media Classic のユーザーインターフェイスを使用し、Dynamic Media の設定を変更します。
 
-上記のタスクの一部では、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開いて、アカウントにログインする必要があります。
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 セットアップおよび設定タスクには、次のものが含まれます。
 
-* [Image Server の公開設定](#publishing-setup-for-image-server)
-* [アプリケーションの一般設定の指定](#configuring-application-general-settings)
+* [Image Server 用のDynamic Media公開設定の指定](#publishing-setup-for-image-server)
+* [Dynamic Mediaの一般設定](#configuring-application-general-settings)
 * [カラーマネジメントの設定](#configuring-color-management)
 * [サポートされている形式の MIME タイプの編集](#editing-mime-types-for-supported-formats)
 * [サポートされていない形式の MIME タイプの追加](#adding-mime-types-for-unsupported-formats)
 
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+
+<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
 
 #### Image Server の公開設定 {#publishing-setup-for-image-server}
 
@@ -218,6 +224,12 @@ Dynamic Media Classic のユーザーインターフェイスを使用し、Dyna
 Image Server 画面では、画像を配信するためのデフォルト設定を指定します。各設定の説明については、UI 画面を参照してください。
 
 **[!UICONTROL 要求属性]** - これらの設定は、サーバーから配信できる画像を制限します。**[!UICONTROL 初期設定の要求属性]** - これらの設定は、画像のデフォルトの表示に関係します。**[!UICONTROL 共通のサムネール属性]** - これらの設定は、サムネール画像のデフォルトの表示に関係します。**[!UICONTROL カタログフィールドの初期設定]** - これらの設定は、画像の解像度とデフォルトのサムネールの種類に関係します。**[!UICONTROL カラーマネジメント属性]** - これらの設定は、使用する ICC カラープロファイルを決定します。**[!UICONTROL 互換性の属性]** - この設定により、後方互換性の確保のためにバージョン 3.6 の場合と同様に、テキストレイヤーの先頭と末尾の段落が処理されます。**[!UICONTROL ローカライゼーションサポート]** - これらの設定によって、複数のロケール属性を管理します。また、ロケールマップ文字列を指定することもできます。これにより、ビューアのツールチップで使用する言語を指定できます。**[!UICONTROL ローカライゼーションサポート]**&#x200B;の設定について詳しくは、[アセットのローカライゼーションを設定する場合の考慮事項](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=ja#considerations-when-setting-up-localization-of-assets)を参照してください。
+
+<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
+
+See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
 
 #### アプリケーションの一般設定の指定 {#configuring-application-general-settings}
 
@@ -230,7 +242,9 @@ Image Server 画面では、画像を配信するためのデフォルト設定�
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
-Dynamic Media カラーマネジメントを使用すると、アセットをカラー補正できます。カラー補正により、取り込まれたアセットは、カラースペース（RGB、CMYK、グレー）および埋め込みカラープロファイルを維持します。動的レンディションを要求した場合、画像の色は、CMYK、RGB またはグレー出力を使用するターゲットのカラースペースに補正されます。[画像プリセットの設定](/help/assets/dynamic-media/managing-image-presets.md)を参照してください。
+Dynamic Media カラーマネジメントを使用すると、アセットをカラー補正できます。カラー補正により、取り込まれたアセットは、カラースペース（RGB、CMYK、グレー）および埋め込みカラープロファイルを維持します。動的レンディションを要求した場合、画像の色は、CMYK、RGB またはグレー出力を使用するターゲットのカラースペースに補正されます。
+
+[画像プリセットの設定](/help/assets/dynamic-media/managing-image-presets.md)を参照してください。
 
 画像を要求する際にカラー補正を有効にするためのデフォルトのカラープロパティを設定するには：
 
@@ -344,18 +358,16 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 1. CRXDE Lite ページの左上隅付近にある「**[!UICONTROL すべて保存]**」を選択します。
 
-
-
 ### （オプション）Dynamic Media のパフォーマンスの調整 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> のスムーズな実行を維持するために、アドビでは、次の同期パフォーマンス／拡張性の微調整のヒントをお勧めします。
 
-* 様々なファイル形式の処理に対応する定義済みのジョブパラメーターを更新する。
-* 事前定義済みの Granite のワークフロー（ビデオアセット）キューワーカースレッドを更新する。
-* Granite の事前定義済みの一時的なワークフロー（画像および非ビデオアセット）キューワーカースレッドを更新する。
-* Dynamic Media Classic サーバーへの最大アップロード接続数を更新する。
+* [様々なファイル形式の処理に対応する定義済みジョブパラメーターの更新](#update-job-para).
+* [事前定義済みの Granite Workflow Queue（ビデオアセット）ワーカースレッドを更新する](#update-granite-workflow-queue-worker-threads-video)
+* [事前定義済みの Granite の一時的なワークフローキュー（画像および非ビデオアセット）ワーカースレッドを更新する](#update-granite-transient-workflow-queue-worker-threads-images).
+* [Dynamic Media Classic(Scene7) サーバーへの最大アップロード接続数を更新する](#update-max-s7-upload-connections).
 
-#### 様々なファイル形式の処理に対応する定義済みジョブパラメーターの更新
+#### 様々なファイル形式の処理に対応する定義済みジョブパラメーターの更新 {#update-job-para}
 
 ジョブパラメーターを調整して、ファイルアップロード時の処理を高速化できます。例えば、PSD ファイルをアップロードしても、テンプレートとして処理しない場合は、レイヤー抽出を false（オフ）に設定できます。この場合、調整されたジョブパラメーターは次のように表示されます。`process=None&createTemplate=false`
 
@@ -377,11 +389,33 @@ PDF ファイル、PostScript® ファイル、PSD ファイルには、以下�
 
 「[サポートされていない形式のカスタム MIME タイプの追加](#adding-mime-types-for-unsupported-formats)」も参照してください。
 
-#### Granite の一時的なワークフローキューの更新 {#updating-the-granite-transient-workflow-queue}
+#### 事前定義済みの Granite Workflow Queue（ビデオアセット）ワーカースレッドを更新する {#update-granite-workflow-queue-worker-threads-video}
 
-Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローに使用されます。Dynamic Media では、画像の取り込みおよび処理に使用されます。
+Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローでビデオを処理するために使用されます。
 
-**Granite の一時的なワークフローキューを更新するには：**
+**事前定義済みの Granite Workflow Queue（ビデオアセット）ワーカースレッドを更新するには：**
+
+1. `https://<server>/system/console/configMgr` に移動して、**Queue: Granite Workflow Queue** を検索します。
+
+   >[!NOTE]
+   >
+   >OSGi PID は動的に生成されるので、ダイレクト URL ではなく、テキスト検索が必要です。
+
+1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
+
+   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4 コアサーバーでは、2 つの作業スレッドが割り当てられます。（0.0～1.0 の値は比率ベースです。1 より大きい場合は作業スレッドが割り当てられます）。
+
+   ほとんどの事例では、デフォルト設定の 0.5 で十分です。
+
+   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+
+1. 「**[!UICONTROL 保存]**」を選択します。
+
+#### 事前定義済みの Granite 一時的なワークフローキューワーカースレッドを更新する {#update-granite-transient-workflow-queue-worker-threads-images}
+
+Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローに使用されます。Dynamic Mediaでは、画像および非ビデオアセットの取り込みと処理に使用されます。
+
+**事前定義済みの Granite 一時的なワークフローキューワーカースレッドを更新するには：**
 
 1. 次に移動： **Adobe Experience Manager Web コンソール設定** 時刻 `http://<host>:<port>/system/console/configMgr`
 1. を検索 **キュー：Granite 一時的なワークフローキュー**.
@@ -402,33 +436,11 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
-#### Granite のワークフローキューの更新 {#updating-the-granite-workflow-queue}
+#### Dynamic Media Classic(Scene7) サーバーへの最大アップロード接続数を更新する {#update-max-s7-upload-connections}
 
-Granite のワークフローキューは、一時的でないワークフローに使用されます。Dynamic Media では、**[!UICONTROL Dynamic Media エンコーディングビデオ]**&#x200B;ワークフローでビデオを処理するために使用されます。
+「 Dynamic Media Classic(Scene7) 接続をアップロード」設定は、Experience ManagerアセットをDynamic Media Classicサーバーに同期します。
 
-**Granite のワークフローキューを更新するには：**
-
-1. `https://<server>/system/console/configMgr` に移動して、**Queue: Granite Workflow Queue** を検索します。
-
-   >[!NOTE]
-   >
-   >OSGi PID は動的に生成されるので、ダイレクト URL ではなく、テキスト検索が必要です。
-
-1. 「**[!UICONTROL 並列ジョブの最大数]**」フィールドで、目的の値に数値を変更します。
-
-   デフォルトでは、並列ジョブの最大数は、使用可能な CPU コア数によって異なります。例えば、4 コアサーバーでは、2 つの作業スレッドが割り当てられます。（0.0～1.0 の値は比率ベースです。1 より大きい場合は作業スレッドが割り当てられます）。
-
-   ほとんどの事例では、デフォルト設定の 0.5 で十分です。
-
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
-
-1. 「**[!UICONTROL 保存]**」を選択します。
-
-#### Scene7 アップロード接続の更新 {#updating-the-scene-upload-connection}
-
-Scene7 アップロード接続の設定は、Experience Manager Assets を Dynamic Media Classic サーバーと同期します。
-
-**Scene7 アップロード接続を更新するには：**
+**Dynamic Media Classic(Scene7) サーバーへの最大アップロード接続数を更新するには：**
 
 1. `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl` に移動します。
 1. 「**[!UICONTROL 接続数]**」フィールドおよび「**[!UICONTROL アクティブなジョブのタイムアウト]**」フィールド、またはその両方で、必要に応じて数値を変更します。
