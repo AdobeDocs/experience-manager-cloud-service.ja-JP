@@ -1,12 +1,11 @@
 ---
 title: 3D アセットのプレビュー
 description: Dynamic Media の 3D アセットのプレビュー方法について説明します。
-feature: 3D アセット
+feature: 3D Assets
 role: User
-exl-id: null
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
-source-wordcount: '565'
+source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+workflow-type: tm+mt
+source-wordcount: '563'
 ht-degree: 100%
 
 ---
