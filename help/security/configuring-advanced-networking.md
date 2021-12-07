@@ -1,7 +1,7 @@
 ---
 title: AEM as a Cloud Service用のアドバンスドネットワークの設定
 description: AEM as a Cloud Serviceの VPN や、柔軟な出力 IP アドレス、または専用の出力 IP アドレスなどの高度なネットワーク機能を設定する方法を説明します
-source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
+source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
 workflow-type: tm+mt
 source-wordcount: '2836'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 AEM as a Cloud Serviceには、Cloud Manager API を使用してユーザーが設定できる、いくつかのタイプの高度なネットワーク機能が用意されています。 有効なタイプには以下が含まれます。
 
 * [柔軟なポート出力](#flexible-port-egress)  — 非標準ポートからの送信トラフィックを許可するようにAEM as a Cloud Serviceを設定します
-* [出力専用 IP アドレス](#dedicated-egress-IP-address)  — 固有の IP から発信するAEM as a Cloud Serviceからのトラフィックを設定します
+* [出力専用 IP アドレス](#dedicated-egress-IP-address)  — 固有の IP から発信するAEM as a Cloud Serviceのトラフィックを設定します
 * [仮想プライベートネットワーク (VPN)](#vpn)  — お客様のインフラストラクチャとAEM as a Cloud Service間のトラフィックを保護し、VPN テクノロジーをお持ちのお客様向け
 
 この記事では、各オプションの設定方法など、各オプションについて詳しく説明します。 一般的な設定戦略として、 `/networkInfrastructures` API エンドポイントは、プログラムレベルで呼び出され、必要な種類の高度なネットワークを宣言した後、 `/advancedNetworking` エンドポイントを使用して、インフラストラクチャを有効にし、環境固有のパラメーターを設定します。 各形式の構文、リクエストと応答のサンプルについては、Cloud Manager API ドキュメントの適切なエンドポイントを参照してください。
@@ -159,7 +159,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 AEM Cloud Service Apache/Dispatcher 層の `mod_proxy` ディレクティブは、上記のプロパティを使用して設定できます。
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -167,7 +167,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
