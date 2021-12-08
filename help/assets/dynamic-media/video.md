@@ -1,13 +1,13 @@
 ---
 title: ビデオ（Dynamic Media 内）
-description: Dynamic Media でビデオを使用する方法について説明します.
+description: ビデオのエンコーディング、YouTubeへのビデオの公開、ビデオレポートの表示、ビデオへのクローズドキャプション、サブタイトル、チャプターマーカーの追加に関するベストプラクティスなど、Dynamic Mediaでビデオを操作する方法について説明します。
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
+source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
 workflow-type: tm+mt
-source-wordcount: '9427'
-ht-degree: 99%
+source-wordcount: '9458'
+ht-degree: 98%
 
 ---
 
@@ -1024,14 +1024,16 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## ビデオへのキャプションまたはサブタイトルの追加 {#adding-captions-to-video}
+## ビデオへのクローズドキャプションまたはサブタイトルの追加 {#adding-captions-to-video}
 
-キャプションを 1 つのビデオまたはアダプティブビデオセットに追加することにより、ビデオの提供先をグローバルマーケットまで広げることができます。キャプションを追加すると、言語ごとの音声の吹き替えの必要性、つまりネイティブスピーカーを使って音声を再録音する必要性がなくなります。ビデオは録画された言語で再生されます。外国語のサブタイトルが表示されるので、違う言語の視聴者も音声部分を理解できます。
+クローズドキャプションを単一のビデオまたはアダプティブビデオセットに追加することで、ビデオのリーチをグローバル市場に拡大できます。 クローズドキャプションを追加することで、オーディオのダビングが不要になったり、ネイティブスピーカーを使用して異なる言語ごとにオーディオを再録音する必要がなくなります。 ビデオは録画された言語で再生されます。外国語のサブタイトルが表示されるので、違う言語の視聴者も音声部分を理解できます。
 
-聴覚障害者のためのクローズドキャプションを使用することで、キャプションによってアクセシビリティを大幅に向上させることもできます。
+クローズドキャプションを使用すると、耳が聞こえない人や聞こえにくい人に対して、より高いアクセシビリティを提供できます。
 
 >[!NOTE]
-使用するビデオプレーヤーがキャプションの表示に対応する必要があります。
+使用するビデオプレーヤーは、クローズドキャプションの表示に対応している必要があります。
+
+関連トピック [Dynamic Mediaのアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md).
 
 Dynamic Media では、キャプションファイルを JSON（JavaScript Object Notation）形式に変換できます。このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。この後、検索エンジンがコンテンツをクロールまたはインデックス作成できます。これにより、ビデオを検索しやすくなり、ビデオコンテンツの詳細がユーザーに提供されます。
 

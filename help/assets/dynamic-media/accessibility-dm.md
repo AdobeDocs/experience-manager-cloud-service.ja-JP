@@ -1,15 +1,15 @@
 ---
 title: Dynamic Media のアクセシビリティ
-description: Dynamic Media および Dynamic Media ビューアでのアクセシビリティについて説明します。
+description: ビデオのエンコーディング、YouTubeへのビデオの公開、ビデオレポートの表示に関するベストプラクティスなど、Dynamic Mediaでビデオを操作する方法について説明します。 また、ビデオにクローズドキャプション、サブタイトル、チャプターマーカーを追加する方法についても説明します。
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 98%
+source-wordcount: '665'
+ht-degree: 86%
 
 ---
 
@@ -55,6 +55,13 @@ Dynamic Media のユーザーインターフェイス要素は、スクリーン
 ## Dynamic Media ビューアでの支援テクノロジーのサポート {#assistive-technology=support-for-dm-viewers}
 
 すべての Dynamic Media ビューアコンポーネントでは、ARIA（アクセシブルリッチインターネットアプリケーション）の役割と属性をサポートして、スクリーンリーダーなどの支援テクノロジーとの統合を強化しています。詳しくは、『Dynamic Media ビューアリファレンスガイド』の「ビューアのカスタマイズ」のトピックで、**支援テクノロジーのサポート**&#x200B;に関するヘルプトピックを参照してください。例えば、ビデオビューアの[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=ja)や、インタラクティブ画像ビューアの[支援テクノロジーのサポート](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)を参照してください。
+
+## でのクローズドキャプションのサポート [!DNL Dynamic Media] {#closed-caption-support}
+
+Dynamic Mediaでは、クローズドキャプションを使用したビデオおよびアダプティブビデオセットの配信がサポートされています。 キャプションは、ビデオコンテンツの上に表示する必要があります。
+
+詳しくは、 [Dynamic Mediaのビデオ — ビデオへのクローズドキャプションまたは字幕の追加](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+
 
 >[!MORELIKETHIS]
 >
