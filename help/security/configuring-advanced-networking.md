@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service用のアドバンスドネットワークの設定
 description: AEM as a Cloud Serviceの VPN や、柔軟な出力 IP アドレス、または専用の出力 IP アドレスなどの高度なネットワーク機能を設定する方法を説明します
-source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
+source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
 workflow-type: tm+mt
-source-wordcount: '2836'
+source-wordcount: '2867'
 ht-degree: 7%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 7%
 # AEM as a Cloud Service用のアドバンスドネットワークの設定 {#configuring-advanced-networking}
 
 この記事では、AEMas a Cloud Serviceの様々な高度なネットワーク機能（VPN のセルフサービスプロビジョニング、非標準ポート、専用の出力 IP アドレスなど）を紹介します。
+
+>[!INFO]
+>
+>また、このページでは、高度なネットワークオプションのそれぞれについて説明する一連の記事を紹介します [場所](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
 
 ## 概要 {#overview}
 
