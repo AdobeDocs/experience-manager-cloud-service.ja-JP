@@ -2,17 +2,17 @@
 title: SSL 証明書の追加 - SSL 証明書の管理
 description: SSL 証明書の追加 - SSL 証明書の管理
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 81%
 
 ---
 
 # SSL 証明書の追加 {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service では、OV（組織検証）証明書または EV（拡張検証）証明書のみを受け付けます。DV（ドメイン検証）証明書は受け付けられません。さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け付けます。
+>AEM as a Cloud Serviceは、OV（組織の検証）または EV（拡張検証）ポリシーに準拠する証明書のみを受け付けます。 DV（ドメイン検証）ポリシーは受け入れられません。 さらに、証明書はすべて、2048 ビットの RSA 秘密鍵と一致する信頼できる証明機関（CA）の X.509 TLS 証明書にする必要があります。AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け付けます。
 
 証明書のプロビジョニングには数日かかるので、数か月前からでも証明書をプロビジョニングすることをお勧めします。詳しくは、「[SSL 証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)」を参照してください。
 
@@ -67,6 +67,52 @@ SSL ファイルの形式を PEM に変換するには、次の手順に従い�
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## 証明書エラー {#certificate-errors}
+
+### 証明書ポリシー {#certificate-policy}
+
+「証明書ポリシーは EV または OV に準拠する必要があり、DV ポリシーには準拠しない」というエラーが表示される場合は、証明書のポリシーを確認してください。
+
+通常、証明書の種類は、ポリシーに埋め込まれた OID 値で識別されます。 これらの OID は一意であり、したがって証明書をテキスト形式に変換し、OID を検索すると、証明書が一致していると確認されます。
+
+証明書の詳細は、次のように表示されます。
+
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
+
+次の表に、識別パターンを示します。
+
+| パターン | 証明書の種類 | 許容可能 |
+|---|---|---|
+| `2.23.140.1.2.1` | DV | 不可 |
+| `2.23.140.1.2.2` | OV | 対応 |
+| `2.23.140.1.2.3` および `TLS Web Server Authentication` | IV 証明書（https に使用する権限を持つ） | 対応 |
+
+`grep`パターンに対して ping を実行すると、証明書の種類を確認できます。
+
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
+
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 ### 正しい証明書の順序 {#correct-certificate-order}
 
