@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
+source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 50%
+source-wordcount: '1619'
+ht-degree: 48%
 
 ---
 
@@ -204,3 +204,14 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 
 * 偽陰性を減らすために、基盤コンポーネントの検出を改善しました。
 * AEM Formsのお客様向けに、に関する BPA メッセージ `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Serviceで使用できない問題を修正しました。
+
+## コンテンツ転送ツール {#ctt-release}
+
+### リリース日 {#release-date-ctt}
+
+コンテンツ転送ツール v1.7.10 のリリース日は 2021 年 12 月 8 日です。
+
+### 新機能 {#what-is-new-ctt}
+
+* コンテンツ転送ツールのインジェスト段階に切り替えが追加され、ユーザーが無効にできるようになりました [プリコピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) 取り込み中に 最適な取り込み速度を得るには、小さな移行セットの場合、または最後の取り込み以降に追加された BLOB が少ない場合、取り込み中のプリコピーを無効にする必要があります。
+* ユーザーマッピングが更新され、2,000 人のユーザーを一度に取得できる改善された User Management API を使用するようになり、パフォーマンスが大幅に向上しました。
