@@ -27,7 +27,6 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 >
 >* [!DNL AEM Forms] は reCaptcha v2 のみをサポートします。その他のバージョンはサポートされません。
 >* アダプティブフォームの CAPTCHA は、[!DNL AEM Forms] アプリのオフラインモードではサポートされていません。
-
 >
 
 
