@@ -1,7 +1,7 @@
 ---
 title: AEM Commerce コンテンツ作成者ジャーニー
 description: AEM Commerce Authoring を使用したガイド付きジャーニーについては、ここから始めてください
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 15%
@@ -24,7 +24,7 @@ ht-degree: 15%
 
 ## AEMドキュメントのジャーニー {#documentation-journeys}
 
-[ドキュメントジャーニー](/help/journey-documentation/home.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な、おそらく複雑なトピックや機能を結び付けます。
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な、おそらく複雑なトピックや機能を結び付けます。
 
 ドキュメントジャーニーは、Adobeの最新の調査、Adobeコンサルタントによる実証済みの実装経験、お客様のプロジェクトからのフィードバックに基づく、ベストプラクティスの原則に基づいて設計されています。
 

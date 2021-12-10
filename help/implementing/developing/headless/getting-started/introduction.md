@@ -2,10 +2,10 @@
 title: ヘッドレスをはじめる前に
 description: このクイックスタートガイドでは、コンテンツモデル、コンテンツフラグメント、GraphQL API など、Cloud Service の強力なヘッドレス機能としての AEM の基本事項について説明します。
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 0c552c3d2c2f623c3eae8e387870bf121eb56f94
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 75%
+source-wordcount: '322'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 75%
 >
 >この入門ガイドは、AEMとヘッドレステクノロジーの両方に関する知識を前提としています。
 >
->AEMまたはヘッドレスを初めて使用する場合は、 [ヘッドレスドキュメントジャーニー](/help/journey-headless/home.md) ヘッドレスとAEMによるそのサポート方法の両方に関するエンドツーエンドの紹介。
+>AEMまたはヘッドレスを初めて使用する場合は、ヘッドレスドキュメントジャーニーを参照して、ヘッドレスとAEMによるそのサポート方法の両方に関するエンドツーエンドの概要を確認してください。
+>
+>* [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md)
+>* [ヘッドレスコンテンツアーキテクトジャーニー](/help/journey-headless/architect/overview.md)
+>* [ヘッドレスコンテンツ作成者ジャーニー](/help/journey-headless/author/overview.md)
+>* [ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md).
+
 
 ## 対象者 {#audience}
 

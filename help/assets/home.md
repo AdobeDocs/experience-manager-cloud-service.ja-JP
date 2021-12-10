@@ -4,9 +4,9 @@ description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] �
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,6 @@ Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には次のセ
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [[!DNL Experience Manager] as a [!DNL Cloud Service] ホーム](/help/landing/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の完全なドキュメント。 |
 | [概要](/help/overview/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] の概要と用語集。 |
 | [リリースノート](/help/release-notes/home.md) | リリースノート、新機能、廃止される機能および削除された機能、既知の問題について説明します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |

@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service への移行
 description: Adobe Experience Manager as a Cloud Service への移行に関するセルフヘルプリソースおよびドキュメントリンク
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '678'
 ht-degree: 97%
 
 ---
@@ -50,7 +50,6 @@ Cloud Acceleration Manager は、Cloud Serviceの計画から運用開始まで�
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [Adobe Experience Manager as a Cloud Service のホーム](/help/landing/home.md) | Adobe Experience Manager as a Cloud Service ドキュメントの概要については、まずこちらを参照してください。 |
 | [概要](/help/overview/home.md) | このガイドでは、導入、用語、アーキテクチャなど、Experience Manageras a Cloud Service の概要を説明します。 |
 | [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |

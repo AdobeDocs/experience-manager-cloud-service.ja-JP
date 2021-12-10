@@ -2,7 +2,7 @@
 title: AEM Sitesジャーニー
 description: AEMの強力なサイト機能を理解するために使用できるガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 1%
@@ -19,7 +19,7 @@ AEMの強力なサイト機能を理解するために使用できるガイド�
 
 ## AEMドキュメントのジャーニー {#documentation-journeys}
 
-[ドキュメントジャーニー](/help/journey-documentation/home.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な、おそらく複雑なトピックや機能を結び付けます。
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md) AEMを初めて使用する読者が、最初から最後までビジネス上の問題を理解し、解決するのに役立つナレーションを提供し、前のトピックやAEMの知識を最小限に抑えながら、様々な、おそらく複雑なトピックや機能を結び付けます。
 
 ドキュメントジャーニーは、Adobeの最新の調査、Adobeコンサルタントによる実証済みの実装経験、お客様のプロジェクトからのフィードバックに基づく、ベストプラクティスの原則に基づいて設計されています。
 
@@ -42,4 +42,4 @@ AEM Sitesのトピックに関する次のドキュメントジャーニーを�
 | [サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) | AEM Sitesテクノロジー、プロジェクトでの使用方法、AEMで A から Z の翻訳プロジェクトを作成および更新する方法について説明します。 | 翻訳スペシャリスト |
 | [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | ここから始めて、使いやすいAEMクイックサイト作成ツールを使用し、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずにサイトをすばやくカスタマイズするガイド付きのジャーニーを実現します。 | フロントエンド開発者 |
 
-ぜひお試しください [追加の役割をカバーする今後のジャーニー。](/help/journey-documentation/home.md#journeys)
+ぜひお試しください [追加の役割をカバーする今後のジャーニー。](/help/journey-documentation/documentation-journeys.md#journeys)
