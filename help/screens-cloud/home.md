@@ -1,10 +1,11 @@
 ---
 title: AEM Screens as a Cloud Service
 description: Adobe Experience Manager Screens as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
+landing-page-description: AEM Screens as a Cloud Service について説明します。
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '416'
 ht-degree: 95%
 
 ---

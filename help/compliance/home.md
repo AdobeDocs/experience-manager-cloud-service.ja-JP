@@ -1,10 +1,11 @@
 ---
 title: Compliance
-description: 準拠
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+description: このページでは、Experience Manageras a Cloud Serviceのコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
+landing-page-description: プライバシーやアクセシビリティなど、AEM as a Cloud Service のコンプライアンスの概要については、まずこちらを参照してください。
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 90%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 

@@ -1,11 +1,12 @@
 ---
 title: AEM Content and Commerce
 description: AEM Content and Commerce に関するセルフヘルプリソースおよびドキュメントリンク
+landing-page-description: Adobe Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 94%
+source-wordcount: '365'
+ht-degree: 95%
 
 ---
 

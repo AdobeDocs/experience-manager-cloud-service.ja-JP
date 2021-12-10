@@ -1,10 +1,11 @@
 ---
 title: AEM as a Cloud Service への移行
 description: Adobe Experience Manager as a Cloud Service への移行に関するセルフヘルプリソースおよびドキュメントリンク
+landing-page-description: AEM as a Cloud Service への移行プロセスについて説明します。
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '685'
 ht-degree: 97%
 
 ---
