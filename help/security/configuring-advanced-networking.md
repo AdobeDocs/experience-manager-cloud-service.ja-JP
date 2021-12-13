@@ -1,9 +1,9 @@
 ---
 title: AEM as a Cloud Service用のアドバンスドネットワークの設定
 description: AEM as a Cloud Serviceの VPN や、柔軟な出力 IP アドレス、または専用の出力 IP アドレスなどの高度なネットワーク機能を設定する方法を説明します
-source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
+source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2982'
 ht-degree: 7%
 
 ---
@@ -78,17 +78,17 @@ API は、更新のステータスを示し、約 10 分後にエンドポイン
 
 ### トラフィックルーティング {#flexible-port-egress-traffic-routing}
 
-ポート 80 または 443 を通じて宛先に送信される HTTP または HTTPS トラフィックは、標準の Java ネットワークライブラリが使用される場合、事前設定済みのプロキシを経由します。 他のポートを経由する http または https トラフィックの場合は、次のプロパティを使用してプロキシを設定する必要があります。
+80 または 443 以外のポートに送信される http または https トラフィックの場合、次のホストおよびポート環境変数を使用してプロキシを設定する必要があります。
 
-* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
-* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+* HTTP の場合： `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` ( デフォルトは `proxy.tunnel:3128` (AEMリリース 6094 未満 )
+* HTTPS の場合： `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` ( デフォルトは `proxy.tunnel:3128` (AEMリリース 6094 未満 )
 
 例えば、にリクエストを送信するコード例を次に示します。 `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
+int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
@@ -114,7 +114,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
     <th>宛先条件</th>
     <th>ポート</th>
     <th>「接続」</th>
-    <th>例</th>
+    <th>外部宛先の例</th>
   </tr>
 </thead>
 <tbody>
@@ -127,12 +127,13 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>次の環境変数を使用して設定された http プロキシを介した（80 または 443 以外の他のポートでの）非標準トラフィック：<br><ul>
-     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
-     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    <td>次の環境変数とプロキシポート番号を使用して設定された http プロキシを介した（80 または 443 以外の他のポートでの）非標準トラフィック。 Cloud Manager API 呼び出しの portForwards パラメーターで宛先ポートを宣言しないでください。<br><ul>
+     <li>AEM_PROXY_HOST(AEMリリースではデフォルトで「proxy.tunnel」に設定されています。6094 より前 )</li>
+     <li>AEM_HTTPS_PROXY_PORT(AEMリリースではデフォルトでポート 3128 に設定され、6094 より前 )</li>
     </ul>
     <td>80 または 443 以外のポート</td>
     <td>許可</td>
+    <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
@@ -163,15 +164,15 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 AEM Cloud Service Apache/Dispatcher 層の `mod_proxy` ディレクティブは、上記のプロパティを使用して設定できます。
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
-ProxyPass "/somepath" "http://example.com"
-ProxyPassReverse "/somepath" "http://example.com"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
+ProxyPass "/somepath" "http://example.com:8080"
+ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
 
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
+ProxyRemote "https://example.com:8443" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -204,6 +205,36 @@ Adobeはフレキシブルポートエグレストラフィックのパフォー
 
 ### トラフィックルーティング {#dedcated-egress-ip-traffic-routing}
 
+ポート 80 または 443 を通じて宛先に送信される HTTP または HTTPS トラフィックは、標準の Java ネットワークライブラリが使用される場合、事前設定済みのプロキシを経由します。 他のポートを経由する http または https トラフィックの場合は、次のプロパティを使用してプロキシを設定する必要があります。
+
+```
+AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
+AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
+```
+
+例えば、にリクエストを送信するコード例を次に示します。 `www.example.com:8443`:
+
+```java
+String url = "www.example.com:8443"
+String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
+ 
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+```
+
+非標準の Java ネットワークライブラリを使用する場合、すべてのトラフィックに対して、上記のプロパティを使用してプロキシを設定します。
+
+で宣言されたポートを介した宛先との非 http/s トラフィック `portForwards` パラメーターは、 `AEM_PROXY_HOST`マッピングされたポートと共に使用します。 次に例を示します。
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
 <table>
 <thead>
   <tr>
@@ -211,7 +242,7 @@ Adobeはフレキシブルポートエグレストラフィックのパフォー
     <th>宛先条件</th>
     <th>ポート</th>
     <th>「接続」</th>
-    <th>例</th>
+    <th>外部宛先の例</th>
   </tr>
 </thead>
 <tbody>
@@ -380,7 +411,7 @@ API が数秒で応答し、 `updating` 約 10 分後に、Cloud Manager の環�
     <th>宛先の条件</th>
     <th>ポート</th>
     <th>「接続」</th>
-    <th>例</th>
+    <th>外部宛先の例</th>
   </tr>
 </thead>
 <tbody>
