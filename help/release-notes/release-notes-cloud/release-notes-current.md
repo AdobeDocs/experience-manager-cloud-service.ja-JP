@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
+source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
 workflow-type: tm+mt
-source-wordcount: '1619'
-ht-degree: 48%
+source-wordcount: '1591'
+ht-degree: 49%
 
 ---
 
@@ -47,14 +47,6 @@ ht-degree: 48%
 ### の新機能 [!DNL Assets] プレリリースチャネル {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが、最新のSenseiサービスによって強化され、改善された切り抜きとスウォッチが生成されます。 また、同じ縦横比で異なる解像度を持つ異なる切り抜きコンテンツを生成する機能が強化されました。 また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
-
-* スマートタグは、スマートコンテンツサービスの代わりに、アセットマイクロサービスを使用して、アセットに自動的に適用されます。 タグ付けの結果を改善し、バイアスを減らすために、基になるモデルが更新されます。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
-
-<!-- Leave this commented.
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
