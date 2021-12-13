@@ -2,15 +2,15 @@
 title: AEM Commerce as a Cloud Service - はじめに
 description: 実行中の AEM as a Cloud Service 環境にコマース対応の AEM プロジェクトをデプロイする方法を説明します。Adobe Cloud Manager の機能と CI／CD パイプラインを使用すると、実行中の環境に対する Venia 参照ストアフロントを構築できます。
 topics: Commerce
-feature: コマース統合フレームワーク Cloud Manager
+feature: Commerce Integration Framework, Cloud Manager
 version: cloud-service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
-workflow-type: ht
-source-wordcount: '1104'
+source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+workflow-type: tm+mt
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -49,6 +49,8 @@ Adobe Commerce Enterprise / Cloud の場合のみ、CIF アドオンはオプシ
 
 ### Cloud Manager UI 経由（デフォルト） {#cm-ui}
 
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+
 これは、「環境の詳細」ページのダイアログを使用しておこなうことができます。コマース対応プログラムでこのページを表示すると、エンドポイントが設定されていない場合は、ボタンが表示されます。
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui.png)
@@ -62,8 +64,6 @@ Adobe Commerce Enterprise / Cloud の場合のみ、CIF アドオンはオプシ
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
 ### Adobe I/O CLI 経由  {#adobe-cli}
-
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 AEM を Adobe I/O CLI を介してコマースソリューションに接続するには、次の手順に従います。
 
