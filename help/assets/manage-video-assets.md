@@ -2,13 +2,13 @@
 title: ビデオアセットの管理
 description: ' [!DNL Adobe Experience Manager] でビデオアセットをアップロード、プレビュー、注釈、公開します。'
 contentOwner: AG
-feature: アセット管理、公開、コラボレーション、ビデオ
+feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: ht
-source-wordcount: '624'
-ht-degree: 100%
+source-git-commit: 038dbc4b0febfa58f69e05f837760162210f8689
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 97%
 
 ---
 
@@ -44,6 +44,12 @@ ht-degree: 100%
 処理プロファイルを使用してアセットを処理するには、プロファイルをフォルダーに追加します。詳しくは、[処理プロファイルを使用したアセットの処理](/help/assets/asset-microservices-configure-and-use.md#use-profiles)を参照してください。
 
 ## ビデオアセットに注釈を付ける {#annotate-video-assets}
+
+ビデオアセットに注釈を追加できます。 ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。詳しくは、[ビデオアセットの管理](manage-video-assets.md)を参照してください。
+
+>[!NOTE]
+>
+>MXF ビデオ形式は、ビデオアセットの注釈では、まだサポートされていません。
 
 1. [!DNL Assets] コンソールから、アセットカードの「**[!UICONTROL 編集]**」を選択して、アセット詳細ページを表示します。
 1. ビデオを再生するには、「**[!UICONTROL プレビュー]**」をクリックします。
