@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 477546f882197291403e59d8ba2e53dd4918a719
+source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 86%
 
 ---
@@ -193,7 +193,7 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 
 電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja)を参照してください。AEMas a Cloud Serviceの場合、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
 
-* SMTP サーバーのホスト名は$に設定する必要があります[env:AEM_PROXY_HOST]
+* SMTP サーバーのホスト名は$に設定する必要があります[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * SMTP サーバーポートは、アドバンスネットワークを設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定する必要があります。 例： 30465 （465 ではなく）
 
 また、ポート 465 がリクエストされた場合は、次のことをお勧めします。
