@@ -1,13 +1,13 @@
 ---
 title: 混在メディアセット
 description: Dynamic Media での混在メディアセットの使用方法について説明します.
-feature: 混在メディアセット
+feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
-source-wordcount: '1470'
-ht-degree: 100%
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+workflow-type: tm+mt
+source-wordcount: '1501'
+ht-degree: 97%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 100%
 1. [アセットをアップロードします](#uploading-assets)。
 
    まずは混在メディアセット用の画像およびビデオをアップロードします。必要に応じて、[画像セット](/help/assets/dynamic-media/image-sets.md)と[スピンセット](/help/assets/dynamic-media/spin-sets.md)を作成します。ユーザーは混在メディアセットビューアで画像をズームできるので、画像を選択する際には必ずズームを考慮してください。最大サイズで 2,000 ピクセル以上の画像を使用してください。
+
+   詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) 混在メディアセットでサポートされる形式のリスト
 
 1. [混在メディアセットを作成します](#creating-mixed-media-sets)。
 
@@ -72,6 +74,8 @@ ht-degree: 100%
 まずは混在メディアセット用の画像およびビデオをアップロードします。混在メディアセットビューアでは画像をズームできることに注意してください。そのため、このズーム機能を念頭に置いて画像を選択します。最大サイズで 2,000 ピクセル以上の画像を使用してください。
 
 また、混在メディアセットにスピンセットまたは画像セットを追加する場合は、それらのセットも作成します。
+
+詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) 混在メディアセットでサポートされる形式のリスト
 
 ## 混在メディアセットの作成 {#creating-mixed-media-sets}
 

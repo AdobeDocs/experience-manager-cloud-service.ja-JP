@@ -4,10 +4,10 @@ description: Dynamic Media でのスピンセットの操作方法について�
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: fa6de4e383b4de628938fce455f321911cad452c
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 99%
+source-wordcount: '1847'
+ht-degree: 97%
 
 ---
 
@@ -40,6 +40,8 @@ ht-degree: 99%
 1. [複数ビュー用の画像をアップロードします](#uploading-assets-for-spin-sets)。
 
    1 次元スピンセットを使用するには、少なくとも 8～12 枚の写真が必要です。2 次元スピンセットの場合は少なくとも 16～24 枚必要になります。アイテムが回転したり反転したりしているように見せるには、一定の間隔でアイテムを撮影する必要があります。例えば、1 次元スピンセットに 12 個の写真を含める場合、アイテムを 30 度ずつ（360/12）回転させながら写真を撮影します。
+
+   詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) ：スピンセットでサポートされる形式のリスト
 
 1. [スピンセットを作成します](#creating-spin-sets)。
 
@@ -78,6 +80,8 @@ ht-degree: 99%
 ## スピンセット用のアセットのアップロード {#uploading-assets-for-spin-sets}
 
 1 次元スピンセットを使用するには、少なくとも 8 ～ 12 枚の写真が必要です。アイテムが回転したり反転したりしているように見せるには、一定の間隔でアイテムを撮影する必要があります。例えば、1 次元スピンセットに 12 個の写真を含める場合、アイテムを 30 度ずつ（360/12）回転させながら写真を撮影します。
+
+詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) ：スピンセットでサポートされる形式のリスト
 
 スピンセット用の画像のアップロードは、[Experience Manager Assets での他のアセットのアップロード](/help/assets/manage-digital-assets.md)と同様に実行できます。
 

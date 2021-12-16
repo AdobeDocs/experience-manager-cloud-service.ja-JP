@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 479cfffd17dcde12bda7d53a7acddfbb46782a8f
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 90%
+source-wordcount: '985'
+ht-degree: 83%
 
 ---
 
@@ -67,35 +67,11 @@ ht-degree: 90%
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 
-## [!DNL Dynamic Media] での画像形式  {#image-support-dynamic-media}
-
-| 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
-| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| BMP | ✓ | - | - | - | - |
-| EPS | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PSD   ‡ | ✓ | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-‡ 結合された画像は PSD ファイルから抽出されます。この画像は [!DNL Adobe Photoshop] によって生成され、PSD ファイルに含まれます。設定によって、結合された画像は実際の画像である場合とそうでない場合があります。
-
-次のラスターイメージファイル形式のサブタイプは、[!DNL Dynamic Media] でサポートされていません。
-
-* 100 MB を超える IDAT チャンクサイズを持つ PNG ファイル。
-* PSB ファイル。
-* CMYK、RGB、グレースケール、ビットマップ以外のカラースペースを持つ PSD ファイルはサポートされません。DuoTone、Lab、インデックス化カラースペースはサポートされません。
-* 16 を超えるビット深度を持つ PSD ファイル。
-* 浮動小数点データを持つ TIFF ファイル。
-* Lab カラースペースを持つ TIFF ファイル。
-
 ## 3D 形式 {#support-3d-formats}
 
 次の 3D 形式がサポートされています。
 
-「[Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md)」も参照してください。
+関連トピック [Dynamic Mediaでの 3D アセットの操作](/help/assets/dynamic-media/assets-3d.md).
 
 | 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3D プレビュー | Dynamic Media の配信 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -164,14 +140,6 @@ ht-degree: 90%
 | XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | - | ✓ | - | - | - |
 
-## [!DNL Dynamic Media] でのドキュメント形式  {#document-support-dynamic-media}
-
-| 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
-| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
-| AI | ✓ | - | - | - | - |
-| INDD | ✓ | - | - | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-
 ## ビデオ形式 {#video-formats}
 
 | ファイル形式 | サムネールの生成 | メタデータ抽出 | 幅/高さ |
@@ -200,24 +168,6 @@ ht-degree: 90%
 | WebM | ✓ | - | ✓ |
 | WMV | ✓ | ✓ | ✓ |
 
-## をトランスコードするための [!DNL Dynamic Media] でのビデオ形式 {#video-dynamic-media-transcoding}
-
-| ビデオファイル拡張子 | コンテナ | 推奨されるビデオコーデック | サポートされないビデオコーデック |
-| --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV（DV25）、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3（IV30）、MJPEG、Microsoft Video 1（MS-CRAM） |
-| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（ベクターアニメーションファイル） |
-| M4V | Apple iTunes | H264/AVC | − |
-| MKV | Matroska | H264/AVC | - |
-| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV（DV25）、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
-| MP4 | MPEG-4 | H264/AVC（すべてのプロファイル） | - |
-| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
-| OGV、OGG | Ogg | Theora、VP3、Dirac | - |
-| WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3（v9）、WMV2（v8）、WMV1（v7）、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen（MSS2）、Microsoft Photo Story（WVP2） |
-
-‡このビデオ形式は、Dynamic Mediaのインタラクティブビデオでの使用や、Experience Manager Assetsの Annotation での使用には、まだサポートされていません。
-
 ## オーディオ形式 {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] は、AIF、ASF、M4A、MP3、WAV、WMA オーディオ形式の XMP メタデータ抽出のサポートを提供します。
@@ -238,6 +188,69 @@ ht-degree: 90%
 ## ヒントと制限事項 {#limitations-and-tips}
 
 * 現在、メタデータ抽出のファイルサイズの上限は約 15 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
+
+## Dynamic Media — トランスコードでサポートされる入力ビデオ形式 {#video-dynamic-media-transcoding}
+
+| ビデオファイル拡張子 | コンテナ | 推奨されるビデオコーデック | サポートされないビデオコーデック |
+| --- | --- | --- | --- |
+| AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV（DV25）、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3（IV30）、MJPEG、Microsoft Video 1（MS-CRAM） |
+| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（ベクターアニメーションファイル） |
+| M4V | Apple iTunes | H264/AVC | − |
+| MKV | Matroska | H264/AVC | - |
+| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV（DV25）、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
+| MP4 | MPEG-4 | H264/AVC（すべてのプロファイル） | - |
+| MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 | - |
+| MXF ‡ | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro | - |
+| OGV、OGG | Ogg | Theora、VP3、Dirac | - |
+| WebM | WebM | Google VP8 | - |
+| WMV | Windows Media 9 | WMV3（v9）、WMV2（v8）、WMV1（v7）、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen（MSS2）、Microsoft Photo Story（WVP2） |
+
+‡このビデオ形式は、Dynamic Mediaのインタラクティブビデオでの使用や、Experience Manager Assetsの Annotation での使用には、まだサポートされていません。
+
+## Dynamic Media — サポートされるドキュメント形式 {#document-support-dynamic-media}
+
+| 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
+| ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
+| AI | ✓ | - | - | - | - |
+| INDD | ✓ | - | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+## Dynamic Media — サポートされるラスターイメージ形式 {#image-support-dynamic-media}
+
+| 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード | この形式をサポートするタイプを設定 |
+| ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
+| BMP | ✓ | - | - | - | - | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| PICT | ✓ | - | - | - | - | - |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| PSD   ‡ | ✓ | - | - | - | - | - |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+
+‡ 結合された画像は PSD ファイルから抽出されます。この画像は [!DNL Adobe Photoshop] によって生成され、PSD ファイルに含まれます。設定によって、結合された画像は実際の画像である場合とそうでない場合があります。
+
+## Dynamic Media — サポートされていないラスターイメージ形式 {#unsupported-raster-image-formats-dm}
+
+次のラスターイメージファイル形式のサブタイプは、 *not* でサポート [!DNL Dynamic Media]:
+
+* 100 MB を超える IDAT チャンクサイズを持つ PNG ファイル。
+* PSB ファイル。
+* CMYK、RGB、グレースケール、ビットマップ以外のカラースペースを持つ PSD ファイルはサポートされません。DuoTone、Lab、インデックス化カラースペースはサポートされません。
+* 16 を超えるビット深度を持つ PSD ファイル。
+* 浮動小数点データを持つ TIFF ファイル。
+* Lab カラースペースを持つ TIFF ファイル。
+
+## Dynamic Media — サポートされる 3D ファイル形式 {#support-3d-formats-dynamic-media}
+
+[サポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats)も参照
+
+| 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
+|---|---|---|---|
+| GLB | バイナリ GL 伝送 | model/gltf-binary | マテリアルとテクスチャを単一のアセットとして含めます。 |
+| OBJ | WaveFront 3D オブジェクトファイル | application/x-tgif |  |
+| STL | ステレオリソグラフィ | application/vnd.ms-pki.stl |  |
+| USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | *取り込みのみサポート。表示やインタラクションは利用不可。* USDZ は独自の 3D 形式で、Safari や iOS でネイティブに表示できます。 |
 
 >[!MORELIKETHIS]
 >

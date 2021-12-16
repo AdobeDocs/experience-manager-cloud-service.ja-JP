@@ -5,13 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS and Experience Manager as a Cloud Service
 topic-tags: introduction
 content-type: reference
-feature: 3D アセット
+feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '2217'
-ht-degree: 100%
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+workflow-type: tm+mt
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Dynamic Media で 3D アセットを使用するときに、追加のインス�
 
 Dynamic Media は、次の 3D ファイル形式をサポートしています。
 
-[サポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats)も参照
+関連トピック [Experience Manager Assetsでサポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats)
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|

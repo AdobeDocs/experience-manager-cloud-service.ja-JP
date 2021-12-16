@@ -1,19 +1,19 @@
 ---
 title: 画像セット
 description: Dynamic Media の画像セットの操作方法について説明します.
-feature: 画像セット
+feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+workflow-type: tm+mt
+source-wordcount: '2041'
+ht-degree: 97%
 
 ---
 
 # 画像セット {#image-sets}
 
-画像セットは、ユーザーに対して統一された閲覧エクスペリエンスを提供します。ユーザーはこのエクスペリエンスで、サムネール画像をクリックしてアイテムの様々なビューを表示できます。画像セットによって、アイテムの代替的なビューを表示でき、ビューアでは画像をより近くで確認するためのズームツールを利用できます。
+画像セット を使用すると、統合された表示エクスペリエンスが得られ、ユーザーはサムネール画像をクリックして項目の様々な表示を表示できます。 画像セットによって、アイテムの代替的なビューを表示でき、ビューアでは画像をより近くで確認するためのズームツールを利用できます。
 
 画像セットのバナーには、「`IMAGESET`」と表示されます。また、画像セットが公開される場合は、公開日（**[!UICONTROL ワールド]**&#x200B;アイコンで示される）がバナーに表示されます。また、最終変更日（**[!UICONTROL 鉛筆]**&#x200B;アイコン）表示されます。
 
@@ -43,7 +43,9 @@ ht-degree: 100%
 
 1. [複数ビュー用のプライマリソース画像をアップロードします](#uploading-assets-in-image-sets)。
 
-   画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできます。そのため、画像は慎重に選択してください。最大サイズで 2,000 ピクセル以上の画像を使用してください。Experience Manager Assets では多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
+   画像セット用の画像をアップロードします。ユーザーは画像セットビューアで画像をズームできます。そのため、画像は慎重に選択してください。最大サイズで 2,000 ピクセル以上の画像を使用してください。
+
+   詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) 画像セットでサポートされる形式のリスト。
 
 1. [画像セットを作成します](#creating-image-sets)。
 
@@ -86,7 +88,9 @@ ht-degree: 100%
 
 まず、画像セット用の画像アセットをアップロードします。ユーザーは画像セットビューアで画像をズームできます。そのため、画像は慎重に選択してください。最適なズーム詳細には、最大サイズで 2,000 ピクセル以上の画像を使用してください。Dynamic Media では、各画像を最大 25 メガピクセルまでレンダリングできます。例えば、5,000 x 5,000 メガピクセルの画像や、その他のサイズの組み合わせを 25 メガピクセルまで使用できます。
 
-画像セットでは多くの画像ファイル形式がサポートされますが、可逆圧縮 TIFF、PNG および EPS 画像の使用が推奨されます。
+<!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
+
+詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) 画像セットでサポートされる形式のリスト。
 
 画像セット用の画像のアップロードは、[AEM Assets での他のアセットのアップロード](/help/assets/manage-digital-assets.md#uploading-assets)と同様に実行できます。
 
