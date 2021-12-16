@@ -1,63 +1,48 @@
 ---
-title: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
+title: AEM as a Cloud Service Release 2021.12.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Serviceリリース2021.12.0の Cloud Manager のリリースノートです。
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 79%
+source-wordcount: '463'
+ht-degree: 6%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 2021.11.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノートの概要を説明しています。
+# Adobe Experience Manager as a Cloud Service 2021.12.0 の Cloud Manager のリリースノート {#release-notes}
+
+このページでは、AEM as a Cloud Service 2021.12.0の Cloud Manager のリリースノートの概要を説明します。
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
+>
+>参照： [このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) (Adobe Experience Manager as a Cloud Serviceの最新のリリースノート )
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 16 日（PT）に予定されています。
+AEM as a Cloud Service 2021.12.0の Cloud Manager のリリース日は 2021 年 12 月 16 日です。 次回のリリースは 2022 年 1 月に予定されています。
 
 ### 新機能 {#what-is-new}
 
-* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
-
-   >[!IMPORTANT]
-   >AEM版である必要があります `2021.10.5933.20211012T154732Z` を使用して、新しいフロントエンドパイプラインを活用します。
-
-* AEM画像全体を構築する必要なく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。 この変更は、リリース後の数週間で徐々に適用される予定です。
-
-* パイプライン実行の詳細に Git Commit ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
-
-* プログラムの作成は、公開されている API を通じて利用できるようになりました。
-
-* 環境の作成は、公開されている API を介して使用できるようになりました。
-
-* この `x-request-id` 応答ヘッダーが、[www.adobe.io](https://www.adobe.io/) の API Playground に表示されるようになりました。このヘッダーは、トラブルシューティングのためにカスタマーケアに関する問題を送信する際に役立ちます。
-
-* ユーザーには、パイプラインがゼロのパイプラインカードから適切なガイダンスが提供されます。
-
-* 新しいアクティビティページが使用できるようになりました。このページでは、パイプラインやコード実行などのアクティビティに関連する詳細を表示できます。時間が経つと、このページに表示されるアクティビティの範囲は拡大し、詳細も表示されるようになります。
-
-* カーソルを合わせたときにステータスのポップオーバーが表示され、詳細の概要を簡単に確認できる新しいパイプラインページが追加されました。パイプラインの実行状況が、関連する詳細と共に表示されます。
-
-* パイプラインの編集 API で、デプロイフェーズで使用する環境の変更がサポートされるようになりました。
-
-* OakPal スキャンプロセスの最適化が、大規模パッケージに導入されました。
-
-* 品質問題の CSV ファイルに、品質問題ごとのタイムスタンプが含まれるようになりました。
+* UI に既に表示されているコミットハッシュも API で提供されるようになりました。
+* アクティビティページに、パイプラインの詳細の概要を一目で確認できる、実行中のパイプラインのポップオーバーが含まれるようになりました。
+* アクティビティページに表示される追加の詳細を含めるための更新が追加されました。
+* Cloud Manager の「学習」タブで、API ガイドと関連リソースにすばやくアクセスできるようになりました。
+* デプロイメントマネージャーの役割を持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリのプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
+* パイプラインの追加または編集ワークフローに属するデプロイメントマネージャーが、選択したリポジトリにブランチがない場合のブランチまたはプロジェクトの作成方法に関する情報を受け取るようになりました。
+* 次の目的で、新しい Cloud Manager セルフサービス機能が追加されました。 [環境レベルでの自由形式の変数とシークレットの追加](/help/implementing/cloud-manager/environment-variables.md)
+* 新しいリファレンスデモアドオン（2021 年 12 月 17 日に利用可能）を使用すると、AEM製品の最新のデモコードベースをインストールし、新しい [クイックサイト作成ツール](/help/journey-sites/quick-site/overview.md) （サイト内）
+* フロントエンドパイプラインでパイプライン変数がサポートされるようになりました。
+* すべてのサンドボックスに対して、プログラムの編集ダイアログで Screens を有効にできるようになりました。
+* 概要ページのコールトゥアクションカードで提供されるガイダンスが更新され、実稼動フルスタックパイプラインとの関連が正確に反映されました。
+* ソースコード、コミット ID などのパイプラインに適用できる追加の詳細を表示するため、アクティビティページが強化されました。
+* TXT エントリ（「TXT レコード」ではなく「TXT 値」）をコピーする際に、UI が若干更新され、混乱が生じる可能性がなくなりました。
+* [証明書エラーに関するドキュメント](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) のを更新し、トラブルシューティング手順と共にその他の例を取り上げました。
+* フロントエンドパイプラインの実行で、実稼動環境へのデプロイメント前にオプションを拒否または承認できるようになりました。
 
 ### バグ修正 {#bug-fixes}
 
-* 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
-
-* デプロイフェーズが存在しない場合、パイプライン PATCH API は失敗します。
-
-* 共通の基本パスを持つクライアントライブラリがある場合、`ClientlibProxyResourceCheck` 品質ルールで偽陽性の問題が発生していました。
-
-* リポジトリーの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
-
-* まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
-
+* 機能および UI テストアーティファクトがビルドステップログに含まれていませんでした。
+* 製品、機能、UI のテスト手順のログに、パブリック API からアクセスできなかった問題を修正しました。
+* まれに、環境の詳細ページからパブリッシュまたはプレビューサービスへのリンクが機能しないことがありました。
+* ユーザーが名前フィールドに別の名前を入力した場合でも、完全なスタック実稼動パイプラインの名前は「実稼動パイプライン」のままです。
