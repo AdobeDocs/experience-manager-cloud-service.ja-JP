@@ -1,14 +1,14 @@
 ---
 title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの共有
-description: リモート [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] デプロイメントで使用可能なアセットを使用します。
+description: リモートで使用可能なアセットを使用 [!DNL Adobe Experience Manager Assets] 別のページで web ページを作成する際のデプロイメント [!DNL Adobe Experience Manager Sites] デプロイメント。
 contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
+source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 99%
+source-wordcount: '3358'
+ht-degree: 87%
 
 ---
 
@@ -57,6 +57,18 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 | DAM ユーザー | リモート | `Authors` | リモート [!DNL Experience Manager] の `ksaner` | リモート [!DNL Experience Manager] デプロイメントでの作成者の役割。[!UICONTROL コンテンツファインダー]を使用して Connected Assets 内のアセットを検索／参照します。 |
 | DAM ディストリビューター（テクニカルユーザー） | リモート | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | リモート [!DNL Experience Manager] の `ksaner` | リモートデプロイメント上に存在するこのユーザーは、（[!DNL Sites] 作成者の役割ではなく）[!DNL Experience Manager]ローカルサーバーによって、[!DNL Sites] 作成者の代わりにリモートアセットを取得するために使用されます。この役割は、上の 2 つの `ksaner` の役割とは異なり、別のユーザーグループに属しています。 |
 | [!DNL Sites] 技術ユーザー | ローカル | `connectedassets-sites-techaccts` | - | [!DNL Assets] デプロイメントで、[!DNL Sites] Web ページ内のアセットへの参照を検索できるようにします。 |
+
+### Connected Assets のアーキテクチャ {#connected-assets-architecture}
+
+Experience Managerを使用すると、リモート DAM デプロイメントをソースとして複数のExperience Manager Sitesデプロイメントに接続できます。 最大 4 つの Sites デプロイメントをソースリモート DAM に接続できます。 ただし、1 つの Sites デプロイメントに接続できるリモート DAM デプロイメントは 1 つだけです。
+
+次の図に、サポートされるシナリオを示します。
+
+![Connected Assets のアーキテクチャ](assets/connected-assets-architecture.png)
+
+次の図は、サポートされていないシナリオを示しています。
+
+![Connected Assets のアーキテクチャ](assets/connected-assets-architecture-unsupported.png)
 
 ## [!DNL Sites] デプロイメントと [!DNL Assets] デプロイメント間の接続の設定  {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -199,6 +211,26 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 1. ユーザーはアセットを移動または削除できます。アセットを移動または削除すると、選択したすべてのアセット／フォルダーの参照の合計数が警告ダイアログに表示されます。参照がまだ表示されていないアセットを削除すると、警告ダイアログが表示されます。
 
    ![強制削除警告](assets/delete-referenced-asset.png)
+
+### リモート DAM でアセットの更新を管理 {#handling-updates-to-remote-assets}
+
+>[!NOTE]
+>
+>この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 」を参照してください。
+
+後 [接続の設定](#configure-a-connection-between-sites-and-assets-deployments) リモート DAM と Sites のデプロイメントの間で、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 その後、リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更および移動の操作を実行できます。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。 また、リモート DAM 上のアセットがローカルのExperience Manager Sitesページで使用されている場合、リモート DAM 上のアセットの更新がサイトページに表示されます。
+
+アセットを別の場所に移動する際に、次の点を確認します。 [参照を調整](manage-digital-assets.md) アセットがサイトページに表示されるようにします。 ローカルの Sites デプロイメントからアクセスできない場所にアセットを移動すると、そのアセットは Sites デプロイメントに表示されません。
+
+また、リモート DAM 上のアセットのメタデータプロパティを更新し、変更をローカルの Sites デプロイメントで利用できるようにします。
+
+Sites 作成者は、Sites デプロイメントで利用可能な更新をプレビューし、変更を再公開して、AEMパブリッシュインスタンスで利用できるようにします。
+
+Experience Managerに `expired` リモートアセットコンテンツファインダー内のアセットのステータス視覚的インジケーター。サイト作成者がサイトページでアセットを使用できないようにします。 アセットを `expired` のステータスが「サイト」ページに表示されている場合、そのアセットはExperience Manager発行インスタンスに表示されません。
+
+>[!NOTE]
+>
+>リモート DAM 内のアセットに対する更新は、リモート DAM および Sites デプロイメントがExperience Manageras a Cloud Service上にある場合にのみ、 Sites デプロイメントで利用できます。
 
 ## 制限事項とベストプラクティス {#tip-and-limitations}
 
