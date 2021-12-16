@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 55ed91d87d5b57d467604f7723949b4bf918f2ff
+source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 85%
+source-wordcount: '3403'
+ht-degree: 84%
 
 ---
 
@@ -754,7 +754,19 @@ ht-degree: 85%
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
-      + [Extending AEM using Extending Adobe Developer App Builder](/help/implementing/developing/extending/app-builder.md)
+      + App Builder を使用したAEMの拡張{#app-builder}
+         + [Extending AEM using Extending Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Adobe開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
+         + [SDK および CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [アプリケーションの作成](/help/implementing/developing/extending/app-builder/videos/create.md)
+         + [アクション](/help/implementing/developing/extending/app-builder/videos/actions.md)
+         + [ストレージライブラリ](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
+         + [イベント駆動型アプリケーション](/help/implementing/developing/extending/app-builder/videos/event-driven-applications.md)
+         + [フロントエンドアプリケーション](/help/implementing/developing/extending/app-builder/videos/front-end-applications.md)
+         + [セキュリティ](/help/implementing/developing/extending/app-builder/videos/security.md)
+         + [アプリケーションのデプロイ](/help/implementing/developing/extending/app-builder/videos/deploy.md)
+         + [アプリの公開](/help/implementing/developing/extending/app-builder/videos/publish.md)
       + [エクスペリエンスフラグメントの拡張](/help/implementing/developing/extending/experience-fragments.md)
       + [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
