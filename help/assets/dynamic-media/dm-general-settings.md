@@ -7,18 +7,19 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
-hide: true
-hidefromtoc: true
 mini-toc-levels: 4
-source-git-commit: 5c5588179d4ebcfb3bd16a63a273f686e348d50e
+exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
 source-wordcount: '2464'
 ht-degree: 34%
 
 ---
 
-
 # Dynamic Mediaの一般設定
+
+<!-- hide: yes
+hidefromtoc: yes -->
 
 設定 **[!UICONTROL Dynamic Media General Settings]** は、次の場合にのみ使用できます。
 

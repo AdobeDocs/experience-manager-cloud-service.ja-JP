@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
-source-wordcount: '4067'
-ht-degree: 95%
+source-wordcount: '3514'
+ht-degree: 90%
 
 ---
 
@@ -207,38 +207,19 @@ Dynamic Media Classic のユーザーインターフェイスを使用し、Dyna
 * [サポートされている形式の MIME タイプの編集](#editing-mime-types-for-supported-formats)
 * [サポートされていない形式の MIME タイプの追加](#adding-mime-types-for-unsupported-formats)
 
-<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+<!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+#### Image Server 用のDynamic Media公開設定の指定 {#publishing-setup-for-image-server}
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+Dynamic Mediaの公開設定ページでは、AdobeDynamic Mediaサーバーから Web サイトやアプリケーションにアセットを配信する方法を決定するデフォルト設定を指定します。
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
+詳しくは、 [Image Server 用のDynamic Media公開設定の指定](/help/assets/dynamic-media/dm-publish-settings.md).
 
-#### Image Server の公開設定 {#publishing-setup-for-image-server}
+#### Dynamic Mediaの一般設定 {#configuring-application-general-settings}
 
-公開設定は、アセットがデフォルトで Dynamic Media からどのように配信されるかを決定します。設定が指定されていない場合、Dynamic Media は、公開設定で定義されたデフォルト設定に従ってアセットを配信します。例えば、解像度属性が含まれていない画像を配信するように要求した場合、画像は初期設定のオブジェクト解像度設定で配信されます。
+Dynamic Mediaの設定 **[!UICONTROL 公開サーバ名]** URL と **[!UICONTROL オリジンサーバー名]** URL。 また、 **[!UICONTROL アプリケーションにアップロード]** 設定と **[!UICONTROL デフォルトのアップロードオプション]** すべて、特定の使用例に基づいておこないます。
 
-公開設定を指定するには、Dynamic Media Classic で、**[!UICONTROL 設定／アプリケーション設定／公開設定／Image Server]** に移動します。
-
-Image Server 画面では、画像を配信するためのデフォルト設定を指定します。各設定の説明については、UI 画面を参照してください。
-
-**[!UICONTROL 要求属性]** - これらの設定は、サーバーから配信できる画像を制限します。**[!UICONTROL 初期設定の要求属性]** - これらの設定は、画像のデフォルトの表示に関係します。**[!UICONTROL 共通のサムネール属性]** - これらの設定は、サムネール画像のデフォルトの表示に関係します。**[!UICONTROL カタログフィールドの初期設定]** - これらの設定は、画像の解像度とデフォルトのサムネールの種類に関係します。**[!UICONTROL カラーマネジメント属性]** - これらの設定は、使用する ICC カラープロファイルを決定します。**[!UICONTROL 互換性の属性]** - この設定により、後方互換性の確保のためにバージョン 3.6 の場合と同様に、テキストレイヤーの先頭と末尾の段落が処理されます。**[!UICONTROL ローカライゼーションサポート]** - これらの設定によって、複数のロケール属性を管理します。また、ロケールマップ文字列を指定することもできます。これにより、ビューアのツールチップで使用する言語を指定できます。**[!UICONTROL ローカライゼーションサポート]**&#x200B;の設定について詳しくは、[アセットのローカライゼーションを設定する場合の考慮事項](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=ja#considerations-when-setting-up-localization-of-assets)を参照してください。
-
-<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
-
-Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
-
-See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
-
-#### アプリケーションの一般設定の指定 {#configuring-application-general-settings}
-
-アプリケーションの一般設定ページを開くには、Dynamic Media Classic グローバルナビゲーションバーで、**[!UICONTROL 設定／アプリケーション設定／一般設定]**&#x200B;に移動します。
-
-**[!UICONTROL サーバー]** - アカウントのプロビジョニング時に、会社に割り当てられているサーバーが Dynamic Media によって自動的に提供されます。これらのサーバーは、Web サイトとアプリケーションの URL 文字列の生成に使用されます。これらの URL 呼び出しは、アカウントに固有です。Experience Manager as a Cloud Service のサポートから明示的に指示されない限り、サーバー名は変更しないでください。
-**[!UICONTROL 画像を上書き]** - Dynamic Media は、2 つのファイルが同じ名前を持つことを許可しません。各項目の URL ID（ファイル名から拡張子を取り除いた部分）は一意である必要があります。これらのオプションは、置き換えるアセットのアップロード方法、つまり元のアセットを置き換えるか、重複させるかを指定します。重複するアセット名には「-1」が付けられます（例えば、chair.tif は chair-1.tif に変更されます）。これらのオプションは、元のアセットとは別のフォルダーにアップロードされたアセット、または元のアセットとは異なるファイル拡張子を持つアセットに影響します。**[!UICONTROL 現在のフォルダーでベース名と拡張子が同じファイルを上書き]** - このオプションは厳格な置換規則です。置き換え画像を元の画像と同じフォルダーにアップロードし、置き換え画像と元の画像の拡張子が同じである必要があります。これらの要件が満たされない場合は、重複する画像が作成されます。Experience Manager as a Cloud Service との一貫性を維持するには、必ず「**[!UICONTROL 現在のフォルダーでベース画像名と拡張子が同じファイルを上書き]**」を選択します。
-**[!UICONTROL 任意のフォルダーでベースアセット名／拡張子が同じファイルを上書き]** - 置き換え画像と元の画像のファイル拡張子が同じである必要があります。例えば、chair.jpg は chair.jpg を置き換えるますが、chair.tif は置き換えません。ただし、置き換え画像を、元の画像と別のフォルダーにアップロードできます。更新された画像は新しいフォルダーにあり、元の場所のファイルはなくなります。
-**[!UICONTROL 任意のフォルダーでベース名が同じファイルを上書き]** - このオプションは最も包括的な置換規則です。置き換え画像を、元の画像と別のフォルダーにアップロードでき、ファイル拡張子が異なるファイルをアップロードして、元のファイルと置き換えることができます。元のファイルが別のフォルダーにある場合、置き換え画像は、アップロード先の新しいフォルダーに存在します。**[!UICONTROL 初期設定のカラープロファイル]** - 詳細については、[カラーマネジメントの設定](#configuring-color-management)を参照してください。デフォルトでは、アセットの詳細表示で「**[!UICONTROL レンディション]**」を選択した場合 15 個のレンディションが表示され、「**[!UICONTROL ビューア]**」を選択した場合 15 個のビューアプリセットが表示されます。この制限は増やすことができます。[表示される画像プリセットの数の増減](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)または[表示されるビューアプリセットの数の増減](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)を参照してください。
+詳しくは、 [Dynamic Mediaの一般設定](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
@@ -322,17 +303,17 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 1. ページ上で、*Adobe CQ Scene7 Asset MIME type Service* という名前まで下にスクロールします。次のスクリーンショットを参照してください。名前の右側にある&#x200B;**[!UICONTROL 設定値を編集]**（鉛筆アイコン）をタップします。
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![設定値の編集](assets/2019-08-02_16-44-56.png)
 
 1. **Adobe CQ Scene7 Asset MIME type Service** ページで、任意のプラス記号アイコン「+」を選択します。新しい MIME タイプを追加する場合に、テーブルで選択するプラス記号の場所はすぐわかります。
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![Adobe CQ Scene7 Asset Mime Type Service](assets/2019-08-02_16-27-27.png)
 
 1. 空のテキストフィールドに追加した `DWG=image/vnd.dwg` を入力します。
 
    `DWG=image/vnd.dwg` MIME タイプはサンプル用です。ここで追加する MIME タイプは、その他のサポートされていない形式でもかまいません。
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![DWG MIME タイプの追加](assets/2019-08-02_16-36-36.png)
 
 1. ページの右下隅にある「**[!UICONTROL 保存]**」を選択します。
 
@@ -341,7 +322,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 1. Experience Manager as a Cloud Service のコンソールを開いているブラウザータブに戻ります。
 1. Experience Manager as a Cloud Service で、**[!UICONTROL ツール／一般／CRXDE Lite]** に移動します。
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![ツール/一般/CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
 1. 左側のパネルで、次の場所に移動します。
 
@@ -349,12 +330,12 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 1. `image_vnd.dwg` MIME タイプをドラッグし、次のスクリーンショットに示すように、ツリー内の `image_` の上にドロップします。
 
-   ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
+   ![DWG ファイルをCRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
 1. MIME `image_vnd.dwg` を選択したまま、「**[!UICONTROL プロパティ]**」タブの&#x200B;**[!UICONTROL 有効]**&#x200B;行の&#x200B;**[!UICONTROL 値]**&#x200B;列見出しの値をダブルタップします。**[!UICONTROL 値]**&#x200B;ドロップダウンリストが開きます。
 1. フィールドに `false` と入力します（または、ドロップダウンリストから「**[!UICONTROL false]**」を選択します）。
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![CRXDE Liteでの MIME タイプの編集](assets/2019-08-02_16-60-30.png)
 
 1. CRXDE Lite ページの左上隅付近にある「**[!UICONTROL すべて保存]**」を選択します。
 
@@ -407,7 +388,7 @@ Granite のワークフローキューは、一時的でないワークフロー
 
    ほとんどの事例では、デフォルト設定の 0.5 で十分です。
 
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+   ![ジョブ処理キューの設定](assets/chlimage_1-1.jpeg)
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
@@ -451,7 +432,7 @@ Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセ
 
    ほとんどの事例では、2100 の設定で十分です。
 
-   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
 1. 「**[!UICONTROL 保存]**」を選択します。
 
