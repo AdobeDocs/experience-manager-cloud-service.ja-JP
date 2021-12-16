@@ -2,10 +2,10 @@
 title: レプリケーション
 description: コンテンツ配布とレプリケーションのトラブルシューティング。
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 100%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 1. 「**引数**」フィールドに追加のパラメーターを設定します。複数の引数はコンマでつなぐことができます。次に例を示します。
 
-   `enableVersion=true,agentId=publish`
+   `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
@@ -98,6 +98,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 **パラメーター**
 
+* `includeChildren`（ブール値、デフォルト：`false`）。false の場合、パスのみが公開されます。 true の場合、子も公開されます。
 * `replicateAsParticipant`（ブール値、デフォルト：`false`）。`true` に設定した場合、レプリケーションは、参加者ステップを実行したプリンシパルの `userid` を使用します。
 * `enableVersion`（ブール値、デフォルト：`true`）。このパラメーターは、レプリケーション時に新しいバージョンが作成されるかどうかを指定します。
 * `agentId`（文字列値。デフォルトは、パブリッシュのエージェントのみが使用されることを意味します）。agentId を明確にすることをお勧めします。例えば、値「publish」を設定します。エージェントを `preview` に設定すると、プレビューサービスに公開されます。
