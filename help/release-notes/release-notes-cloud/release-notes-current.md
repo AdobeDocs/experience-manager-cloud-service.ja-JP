@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
+source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 49%
+source-wordcount: '1047'
+ht-degree: 52%
 
 ---
 
@@ -25,65 +25,59 @@ ht-degree: 49%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.10.0) は 2021 年 11 月 4 日です。
-次のリリース (2021.11.0) は 2021 年 12 月 16 日です。
+のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.11.0) は 2021 年 12 月 16 日です。
+次のリリース (2022.1.0) は 2022 年 1 月 27 日です。
 
 ## リリースビデオ {#release-video}
 
-以下をご覧ください： [2021 年 10 月リリースの概要](https://video.tv.adobe.com/v/338253) 追加された機能の概要を示すビデオ。
-
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### の新機能 [!DNL Sites] {#sites-features}
-
-* コンテンツフラグメントモデルは、公開後、自動的に読み取り専用状態に設定されるようになりました。これにより、編集後のモデルの再公開後に、ライブ API クエリが意図せず壊れるのを防ぎます。 公開済みのモデルを編集しようとすると、警告が表示されます。 編集は、警告を受け入れる際に可能です。
+以下をご覧ください： [2021 年 12 月リリースの概要](https://video.tv.adobe.com/v/339278) 追加された機能の概要を示すビデオ。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] が、サポート対象のオーディオおよびビデオアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。 [!DNL Azure Media Services]. この [サポートされているファイルタイプ](/help/assets/file-format-support.md#audio-video-transcription-formats) は自動的に書き込まれ、テキストは WebVTT 形式で保存されます。 WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。 また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
+* Dynamic Media画像のスマート切り抜きとスウォッチに、最新のSenseiサービスが適用され、改善された切り抜きとスウォッチが生成されるようになりました。 また、同じ縦横比で異なる解像度を持つ異なる切り抜きコンテンツを生成する機能が強化されました。 また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
 
 ### の新機能 [!DNL Assets] プレリリースチャネル {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが、最新のSenseiサービスによって強化され、改善された切り抜きとスウォッチが生成されます。 また、同じ縦横比で異なる解像度を持つ異なる切り抜きコンテンツを生成する機能が強化されました。 また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
+* [!DNL Dynamic Media] - Dynamic Media Classicデスクトップアプリケーションを使用しなくても、AEM Dynamic Mediaインターフェイスを使用して、一般設定と公開設定を設定できるようになりました。
+
+* [!DNL Dynamic Media] MXF ビデオの取り込み、プレビュー、再生、公開をサポートするようになりました。 MXF ビデオの注釈とショッパブルビデオは、まだサポートされていません。
+
+* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更、移動の操作を実行できるようになりました。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
+### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics を使用して、ログイン済みとログインしていない（匿名）状態の両方の動作を取得および追跡して、エンドユーザーのインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
-
-### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
+* **Forms Portal**:以下を使用できます。 [Forms Portal](/help/forms/configure-forms-portal.md) 発行済みのアダプティブフォームをAEM Sitesページに一覧表示する。 これにより、サイト訪問者は利用可能なすべてのフォームを見つけることができます。 さらに、訪問者はフォームポータルを使用してアダプティブフォームのドラフトを保存してアクセスし、送信されたアダプティブフォームのPDFバージョンを確認することができます。
 
 * **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリーに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
 
-### [!DNL Forms] のベータ版機能 {#what-is-new-forms-oct2021-beta}
+### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+* **コミュニケーション API で作成されたレコードのドキュメントおよびPDFドキュメント用のカスタムフォント**:コミュニケーション API を使用して生成されたPDFドキュメントで、ブランド承認済みフォントを使用して、組織の要件に合わせることができるようになりました。
 
 ## CIF アドオン {#cloud-services-cif}
 
 ### 新機能 {#what-is-new-cif}
 
-* CIF アドオンは、新しい GraphQL API とスキーマを備えた最新の Commerce v2.4.3 をサポートしています
+* コマースの拡張可能な Peregrine コンポーネントに基づく myAccount コンポーネントの拡張
 
-* 作成者は、リッチテキストエディター (RTE) を使用して、テキストフィールドに製品ページやカタログページへのリンクを追加できます。 RTE ツールバーに CIF アイコンが追加され、選択者が開いて、コンテキストを離れることなく製品やカテゴリをすばやく検索および選択できるようになりました。
+![拡張された myAccount コンポーネント](/help/assets/CIF/extended-myAccount-components.png)
 
-* 既存のポップアップ買い物かごとチェックアウトは、AEM専用の買い物かごとチェックアウトページに置き換えられました。 これらのページ上のコンポーネントは、Magentoの拡張可能な Peregrine コンポーネントを使用して構築されます
+* 作成者は、追加のレコメンデーションタイプを使用してアドホックコマース製品Recommendationsを作成できます
 
-* マーチャントは、コマースバックエンドを使用して、ナビゲーション内の特定の製品カタログカテゴリを非表示にできます。 CIF ナビゲーションコアコンポーネントは、コマースバックエンド設定に従って、ナビゲーションでカテゴリを表示/非表示にする「メニューに含める」を設定します
-
-* カテゴリまたは製品ページが見つからない場合、AEM Storefront Venia は HTTP 404 エラーを返します
+* AEM Storefront でのギフトカードのサポート
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.10.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as a Cloud Service 2021.11.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
 
 ### リリース日 {#release-date-cm-nov}
 
@@ -130,56 +124,6 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 
 * まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
 
-
-## リリース日 {#release-date-cm-oct}
-
-AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年 10 月 14 日です。
-
-### 新機能 {#what-is-new-cm-oct}
-
-* 今後の変更に備えて、既存のデプロイメントパイプラインが参照され、ユーザーインターフェイスで次のようにラベル付けされるようになりました。 **フルスタック** パイプライン。
-
-* パイプラインカードが更新され、実稼動パイプラインと実稼動以外のパイプラインの両方が 1 つのカードでまとめて表示されるようになりました。ユーザーは、各パイプラインに関連付けられたアクションメニューから「実行」／「一時停止」／「再開」を直接選択することができます。
-
-* デプロイメントマネージャーの役割を持つユーザーが、UI を使用して、セルフサービス方式で実稼働パイプラインを削除できるようになりました。
-
-* パイプラインの追加操作と編集操作が更新され、使い慣れた最新のモーダルを使用するようになりました。
-
-* Cloud Manager のユーザーは、 **フィードバック** ボタンをクリックします。
-
-* 年別の SLA グラフを Cloud Manager のユーザーインターフェイスからダウンロードできるようになりました。
-
-* コード品質パイプラインと実稼動以外のパイプラインの実行で、より効率的なシャロー（shallow）クローン作成プロセスをビルドステップ中に使用するようになりました。これにより、特に大きな Git リポジトリーを使用しているお客様の場合、ビルド時間が短縮されます。
-
-* IP許可リストの追加ウィザードで、許可されている最大数に達した場合に、ユーザーに許可リストを送信するようになりました。
-
-* ログインしたユーザーがブラウザーで API を試すことができるインタラクティブなプレイグラウンドに関する説明が、Cloud Manager API ドキュメントに含まれるようになりました。詳しくは、[Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
-
-* 「移動先」の選択オプションが無効になっている場合のプログラムカードのツールヒントがわかりやすくなりました。「実稼動環境が存在しません」と表示されるようになりました。
-
-### バグ修正 {#bug-fixes-cm-oct}
-
-* まれに、Adobe・スタッフがお客様の環境をリストアする場合、環境が完全に稼働する前にリストアが完了したと見なされました。
-
-* 環境の作成中におこなわれた一部の内部リクエストが再試行されませんでした。
-
-* ドメイン名の検証後にデプロイメントの失敗エラーが発生した場合、エラーメッセージが修正され、お客様にAdobe担当者への連絡をリクエストするようになりました。
-
-## ベストプラクティスアナライザー {#best-practices-analyzer}
-
-### リリース日 {#release-date-bpa-latest}
-
-ベストプラクティスアナライザー v2.1.20 のリリース日は 2021 年 10 月 5 日です。
-
-### 新機能 {#what-is-new}
-
-* ノード名の長さを検出し、レポートする機能。
-
-* 合計インデックスサイズを検出し、レポートする機能。
-
-* 元のレンディションが欠落しているアセットを検出し、レポートする機能。
-
-
 ## ベストプラクティスアナライザー {#bpa-release}
 
 ### リリース日 {#release-date-bpa}
@@ -196,14 +140,3 @@ AEM as a Cloud Service 2021.10.0の Cloud Manager のリリース日は 2021 年
 
 * 偽陰性を減らすために、基盤コンポーネントの検出を改善しました。
 * AEM Formsのお客様向けに、に関する BPA メッセージ `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Serviceで使用できない問題を修正しました。
-
-## コンテンツ転送ツール {#ctt-release}
-
-### リリース日 {#release-date-ctt}
-
-コンテンツ転送ツール v1.7.10 のリリース日は 2021 年 12 月 8 日です。
-
-### 新機能 {#what-is-new-ctt}
-
-* コンテンツ転送ツールのインジェスト段階に切り替えが追加され、ユーザーが無効にできるようになりました [プリコピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) 取り込み中に 最適な取り込み速度を得るには、小さな移行セットの場合、または最後の取り込み以降に追加された BLOB が少ない場合、取り込み中のプリコピーを無効にする必要があります。
-* ユーザーマッピングが更新され、2,000 人のユーザーを一度に取得できる改善された User Management API を使用するようになり、パフォーマンスが大幅に向上しました。
