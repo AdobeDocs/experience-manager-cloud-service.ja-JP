@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3354'
+source-wordcount: '3362'
 ht-degree: 85%
 
 ---
@@ -292,6 +292,7 @@ ht-degree: 85%
       + [MSM を使用したアセットの再利用](/help/assets/reuse-assets-using-msm.md)
       + [アセットのダウンロード](/help/assets/download-assets-from-aem.md)
       + [編集するアセットのチェックアウトとチェックイン](/help/assets/check-out-and-submit-assets.md)
+      + [プライベートフォルダーの作成と共有](/help/assets/private-folder.md)
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
       + [アセットへの透かしの適用](/help/assets/watermark-assets.md)
       + [ [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
@@ -435,7 +436,7 @@ ht-degree: 85%
       + [データソースの設定](/help/forms/configure-data-sources.md)
       + [ [!DNL Microsoft Dynamics]  OData の設定](/help/forms/ms-dynamics-odata-configuration.md)
       + [ [!DNL Azure]  ストレージの設定](/help/forms/configure-azure-storage.md)
-      + [ [!DNL Microsoft Dynamics 365] and [!DNL Salesforce]  クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
+      + [ [!DNL Microsoft Dynamics 365]  および  [!DNL Salesforce]  クラウドサービスの設定](/help/forms/configure-msdynamics-salesforce.md)
       + [フォームデータモデルの作成](/help/forms/create-form-data-models.md)
       + [フォームデータモデルの操作](/help/forms/work-with-form-data-model.md)
       + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)

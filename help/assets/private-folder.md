@@ -4,9 +4,9 @@ description: でプライベートフォルダーを作成する方法を説明�
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: 2a05822588cdb031a1fe25429910dd44f67f2d36
+source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 8%
 >
 >プライベートフォルダーには、所有者の役割を持つメンバーが少なくとも 1 人含まれています。
 >
->プライベートフォルダーを作成するには、読み取りと変更が必要です [アクセス制御権限](/help/sites-administering/security.md#permissions-in-aem) プライベートフォルダーを作成する親フォルダーの上に配置します。 管理者でない場合、これらの権限はデフォルトでは有効になっていません。 `/content/dam`. この場合、プライベートフォルダーを作成する前に、ユーザー ID/グループに対するこれらの権限を取得してください。
+>プライベートフォルダーを作成するには、次が必要です： `Read` および `Modify` プライベートフォルダーを作成する親フォルダーに対する権限。 管理者でない場合、これらの権限はデフォルトでは有効になっていません。 `/content/dam`. この場合、プライベートフォルダーを作成する前に、ユーザー ID/グループに対するこれらの権限を取得してください。
 
 ## プライベートフォルダーを作成して共有する  {#create-share-private-folder}
 
