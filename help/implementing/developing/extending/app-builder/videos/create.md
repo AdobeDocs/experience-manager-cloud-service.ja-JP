@@ -8,7 +8,7 @@ role: Developer, Architect
 level: Beginner
 kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+source-git-commit: 9e29904775ee0ecd17ab075230e532583bbccd53
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -38,7 +38,7 @@ App Builder 開発用にローカル環境を設定する方法を説明しま�
 
 App Builder プロジェクトを初期化する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339169/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339170/?quality=12&learn=on)
 
 ## アプリケーションのビルド、実行、テスト
 

@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Beginner
 kt: 9456, 9475, 9476, 9477
 thumbnail: 327313.jpg
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+source-git-commit: 9e29904775ee0ecd17ab075230e532583bbccd53
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,6 @@ App Builder アプリケーションとして使用できるアクションを�
 
 ## アクションの作成
 
-App Builder アプリケーションを構築して実行する方法について説明します。
+App Builder アクションの作成方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)

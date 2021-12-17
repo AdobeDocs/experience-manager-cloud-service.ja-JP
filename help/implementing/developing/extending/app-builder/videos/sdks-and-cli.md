@@ -6,9 +6,9 @@ feature: App Builder
 topic: Integrations, Development
 role: Developer, Architect
 level: Beginner
-kt: 9464,
-thumbnail: 327313.jpg
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+kt: 9454, 9470
+thumbnail: 339166.jpg
+source-git-commit: 9e29904775ee0ecd17ab075230e532583bbccd53
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
