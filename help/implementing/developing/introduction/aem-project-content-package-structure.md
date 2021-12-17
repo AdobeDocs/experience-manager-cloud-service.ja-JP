@@ -2,10 +2,10 @@
 title: AEM プロジェクトの構造
 description: Adobe Experience Manager as a Cloud Service へのデプロイメント用にパッケージ構造を定義する方法について説明します。
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: ed8150e3b1e7d318a15ad84ebda7df52cf40128b
+source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2877'
-ht-degree: 96%
+source-wordcount: '2930'
+ht-degree: 93%
 
 ---
 
@@ -72,21 +72,6 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `/apps` の配下にある任意のパスの任意の `rep:policy`
    + [事前にコンパイルされたバンドルされたスクリプト](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
 
-+ `ui.config` パッケージには、すべての [OSGi](/help/implementing/deploying/configuring-osgi.md) 設定が含まれます。
-   + 実行モード固有の OSGi 構成定義を含む組織フォルダー
-      + `/apps/my-app/osgiconfig`
-   + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、共通の OSGi 設定フォルダー
-      + `/apps/my-app/osgiconfig/config`
-   + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、ターゲット固有の OSGi 設定フォルダー
-      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
-   + Repo Init OSGi 設定スクリプト
-      + AEM アプリケーションの論理的な一部である（可変）コンテンツをデプロイする方法として、[Repo Init](#repo-init) を使用することをお勧めします。Repo Init OSGi 設定は、上述のように適切な `config.<runmode>` フォルダーに配置し、次の定義に使用します。
-         + ベースラインコンテンツの構造
-         + ユーザー
-         + サービスユーザー
-         + グループ
-         + ACL（権限）
-
 >[!NOTE]
 >
 >同じコードをすべての環境にデプロイする必要があります。これは、ステージング環境と同じレベルの信頼性検証が実稼動環境でも確実におこなわれるようにするために必要です。詳しくは、「[実行モード](/help/implementing/deploying/overview.md#runmodes)」の節を参照してください。
@@ -125,6 +110,22 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `site-b.ui.config`：サイト B に必要な OSGi 設定をデプロイします
       + `site-b.ui.content`：サイト B に必要なコンテンツと設定をデプロイします
 
++ この `ui.config` パッケージにすべてを含む [OSGi 設定](/help/implementing/deploying/configuring-osgi.md):
+   + コードと見なされ、OSGi バンドルに属していますが、通常のコンテンツノードは含まれていません。 したがって、コンテナパッケージとしてマークされます
+   + 実行モード固有の OSGi 構成定義を含む組織フォルダー
+      + `/apps/my-app/osgiconfig`
+   + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、共通の OSGi 設定フォルダー
+      + `/apps/my-app/osgiconfig/config`
+   + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、ターゲット固有の OSGi 設定フォルダー
+      + `/apps/my-app/osgiconfig/config.<author|publish>.<dev|stage|prod>`
+   + Repo Init OSGi 設定スクリプト
+      + AEM アプリケーションの論理的な一部である（可変）コンテンツをデプロイする方法として、[Repo Init](#repo-init) を使用することをお勧めします。Repo Init OSGi 設定は、上述のように適切な `config.<runmode>` フォルダーに配置し、次の定義に使用します。
+         + ベースラインコンテンツの構造
+         + ユーザー
+         + サービスユーザー
+         + グループ
+         + ACL（権限）
+
 ### 追加のアプリケーションパッケージ {#extra-application-packages}
 
 独自のコードとコンテンツパッケージで構成される他の AEM プロジェクトを AEM のデプロイメントで使用する場合は、そのコンテナパッケージをプロジェクトの `all` パッケージに埋め込む必要があります。
@@ -141,14 +142,14 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 ## パッケージタイプ {#package-types}
 
-パッケージは、宣言済みのパッケージタイプでマークされる必要があります。
+パッケージは、宣言済みのパッケージタイプでマークされる必要があります。パッケージタイプは、パッケージの目的とデプロイメントを明確にするのに役立ちます。
 
-+ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージに OSGi バンドルや OSGi 設定を直接含めることはできません。また、コンテナパッケージで[インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html)を使用することはできません。
++ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには通常のノードを含めることはできません。 OSGi バンドル、設定、サブパッケージのみを使用できます。 AEM as a Cloud Serviceのコンテナは、 [フックを取り付ける](http://jackrabbit.apache.org/filevault/installhooks.html).
 + コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
 + コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
 
 
-詳しくは、[Apache Jackrabbit FileVault - Package Maven Plugin](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType) のドキュメントと、以下の [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager)を参照してください。
+詳しくは、 [Apache Jackrabbit FileVault - Package Maven Plugin ドキュメント](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit パッケージタイプ](http://jackrabbit.apache.org/filevault/packagetypes.html)、および [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager) 下
 
 >[!TIP]
 >
