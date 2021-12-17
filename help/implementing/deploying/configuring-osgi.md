@@ -3,14 +3,18 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: f947650b0872785e1f1b5f4c6542afd41fa61309
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
-source-wordcount: '2993'
-ht-degree: 96%
+source-wordcount: '3020'
+ht-degree: 95%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service の OSGi の設定 {#configuring-osgi-for-aem-as-a-cloud-service}
+
+>[!NOTE]
+>
+>AEMでは、 Cloud Manager ユーザーインターフェイスを使用して、2021.12.0リリースで標準環境変数を設定する機能が導入されました。 詳しくは、ドキュメントを参照してください。 [ここ](/help/implementing/cloud-manager/environment-variables.md).
 
 [OSGi](https://www.osgi.org/) は Adobe Experience Manager（AEM）のテクノロジースタックの基本要素です。AEM とその設定の複合バンドルを制御するために使用されます。
 
@@ -231,7 +235,7 @@ use $[secret:SECRET_VAR_NAME]
 >1. のお客様は、 `INTERNAL_` または `ADOBE_` どちらかです。
 >
 >1. プレフィックスが付く環境変数 `AEM_` は、製品でパブリック API として定義され、顧客が使用および設定します。
-   >   お客様はを使用し、プレフィックスで始まる環境変数を設定できますが、 `AEM_` 独自の変数をこのプレフィックスで定義しないでください。
+   >   お客様はを使用し、プレフィックスで始まる環境変数を設定できますが、 `AEM_` 独自の変数をこのプレフィックスで定義することはできません。
 
 
 ### デフォルト値 {#default-values}

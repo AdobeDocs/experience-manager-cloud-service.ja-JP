@@ -2,10 +2,10 @@
 title: '[!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
-workflow-type: ht
-source-wordcount: '752'
-ht-degree: 100%
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 
 環境を通常の（プレリリース以外の）チャネルの動作に戻す場合は、変数を削除するか、別の値に設定し直します。
+
+* または、 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
 
 ### ローカル SDK {#local-sdk}
 
@@ -112,7 +114,6 @@ Javadoc は Maven Central に公開されます。
 1. ローカルで想定どおりに動作することを確認したら、コードを開発ブランチにコミットし、Cloud Manager の実稼動以外のパイプラインを使用して、プレリリースチャネルをサブスクライブする環境にデプロイします。
 
 >[!CAUTION]
->
 > 
 > ステージングまたは実稼動環境にデプロイする場合は、`aem-prerelease-sdk-api` artifactId を使用しないでください。実稼動パイプラインを使用してデプロイする場合は、必ず aem-sdk-api を使用します。同様に、プレリリース API を参照するコードは、実稼動パイプラインを使用してデプロイしないでください。
 
