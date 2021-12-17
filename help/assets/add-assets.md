@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
-ht-degree: 89%
+source-wordcount: '2704'
+ht-degree: 67%
 
 ---
 
@@ -130,58 +130,111 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * [[!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)：ローカルファイルシステムからアセットをアップロードするクリエイティブの専門家やマーケターに役立ちます。ローカルで使用可能なネストされたフォルダーをアップロードするために使用します。
 * [一括取得ツール](#asset-bulk-ingestor)：大量のアセットを取得する場合、不定期に取得するためや [!DNL Experience Manager] をデプロイ時に最初に取得するために使用します。
 
-### アセット一括取得ツール {#asset-bulk-ingestor}
+### アセット一括読み込みツール {#asset-bulk-ingestor}
 
 このツールは、Azure または S3 データストアからのアセットの大規模な取得に使用する管理者グループに対してのみ提供されます。設定と取得のビデオウォークスルーを参照してください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-ツールを設定するには、次の手順に従います。
+次の図は、データストアからアセットをデータに取り込む際の様々なExperience Managerを示しています。
+
+![一括取り込みツール](assets/bulk-ingestion.png)
+
+#### 前提条件 {#prerequisites-bulk-ingestion}
+
+Experience Managerインスタンスをデータストレージに接続するには、ソース BLOB ストレージの詳細が必要です。
+
+#### 一括読み込みツールの設定 {#configure-bulk-ingestor-tool}
+
+一括読み込みツールを設定するには、次の手順に従います。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL 一括取得]**&#x200B;に移動します。「**[!UICONTROL 作成]**」オプションを選択します。
 
-![一括読み込みの設定](assets/bulk-import-config.png)
+1. 一括読み込み設定のタイトルを **[!UICONTROL タイトル]** フィールドに入力します。
 
-1. オン **[!UICONTROL 一括インポート設定]** ページで、必要な値を入力し、「 **[!UICONTROL 保存]**.
+1. データソースのタイプを **[!UICONTROL ソースを読み込み]** ドロップダウンリスト。
 
-   * [!UICONTROL タイトル]：内容のわかるタイトルにします。
-   * [!UICONTROL ソースを読み込み]:適切なデータソースを選択します。
-   * [!UICONTROL Azure ストレージアカウント]:名前を [!DNL Azure] ストレージアカウント。
-   * [!UICONTROL Azure Blob コンテナ]:次を提供： [!DNL Azure] ストレージコンテナ。
-   * [!UICONTROL Azure アクセスキー]:アクセスキーをに指定 [!DNL Azure] アカウント
-   * [!UICONTROL ソースフォルダー]:このフィルターは、通常、Azure とAWSのクラウドストレージプロバイダーでサポートされます。
-   * [!UICONTROL 最小サイズでフィルター]：アセットの最小ファイルサイズを MB 単位で指定します。
-   * [!UICONTROL 最大サイズでフィルター]：アセットの最大ファイルサイズを MB 単位で指定します。
-   * [!UICONTROL MIME タイプを除外]：取得から除外する MIME タイプのコンマ区切りリスト。例えば、`image/jpeg, image/.*, video/mp4` のようになります。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
-   * [!UICONTROL MIME タイプを含める]:インジェストに含める MIME タイプのコンマ区切りリスト。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
-   * [!UICONTROL インポート後にソースファイルを削除]:ファイルがに読み込まれた後で元のファイルをソースデータストアから削除するには、このオプションを選択します。 [!DNL Experience Manager].
-   * [!UICONTROL インポートモード]：「スキップ」、「置換」または「バージョンを作成」を選択します。スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。[バージョンオプションの置換と作成](#handling-upload-existing-file)の意味を参照してください。
-   * [!UICONTROL アセットターゲットフォルダー]：アセットを取得する DAM 内の取得フォルダー。例：`/content/dam/imported_assets`
-   * [!UICONTROL メタデータファイル]:読み込むメタデータファイル。CSV 形式で指定。 ソース BLOB の場所で CSV ファイルを指定し、Bulk Ingestor ツールの設定時にパスを参照します。 このフィールドで参照される CSV ファイル形式は、 [アセットメタデータの一括読み込みと書き出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 次を選択した場合、 **インポート後にソースファイルを削除** オプション、 **除外** または **MIME タイプを含める** または **パス/ファイルでフィルター** フィールド。 正規表現を使用して、これらのフィールドの CSV ファイルをフィルタリングできます。
+1. データソースとの接続を作成する値を指定します。 例えば、 **Azure Blob ストレージ** データソースとして、Azure ストレージアカウント、Azure BLOB コンテナ、Azure アクセスキーの値を指定します。
 
-1. 作成した取得ツール設定を削除、変更、実行したり、さらに作業を行ったりできます。一括読み込みインジェスターの設定を選択すると、ツールバーで次のオプションを使用できます。
+1. のデータソース内のアセットを格納しているルートフォルダーの名前を指定します。 **[!UICONTROL ソースフォルダー]** フィールドに入力します。
 
-   * [!UICONTROL 編集]：選択した設定を編集します。
-   * [!UICONTROL 削除]：
-選択した設定を削除します。
-   * [!UICONTROL チェック]：データストアへの接続を検証します。
-   * [!UICONTROL 模擬実行]：一括取得のテスト実行を呼び出します。
-   * [!UICONTROL 実行]：選択した設定を実行します。
-   * [!UICONTROL 停止]：アクティブな設定を終了します。
-   * [!UICONTROL スケジュール]：アセットを取得するための 1 回限りのスケジュールまたは定期的なスケジュールを設定します。
-   * [!UICONTROL ジョブのステータス]：進行中のインポートジョブで使用された場合、または完了したジョブで使用された場合の構成のステータスを表示します。
-   * [!UICONTROL ジョブ履歴]：ジョブの以前のインスタンス。
-   * [!UICONTROL アセット表示]：ターゲットフォルダーが存在する場合は、表示します。
+1. （オプション）アセットが **[!UICONTROL 最小サイズでフィルター]** フィールドに入力します。
 
-   ![取得ツール設定のツールバーオプション](assets/bulk-ingest-toolbar-options.png)
+1. （オプション）アセットを取り込む際に MB 単位の最大ファイルサイズを指定します。 **[!UICONTROL 最大サイズでフィルター]** フィールドに入力します。
 
-1 回限りのまたは繰り返しの一括読み込みをスケジュールするには、次の手順に従います。
+1. （オプション） **[!UICONTROL MIME タイプを除外]** フィールドに入力します。 例えば、`image/jpeg, image/.*, video/mp4` のようになります。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
+
+1. の取り込みから含める MIME タイプのコンマ区切りリストを **[!UICONTROL MIME タイプを含める]** フィールドに入力します。 [サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
+
+1. を選択します。 **[!UICONTROL インポート後にソースファイルを削除]** ファイルをに読み込んだ後で元のファイルをソースデータストアから削除するオプション [!DNL Experience Manager].
+
+1. を選択します。 **[!UICONTROL インポートモード]**. 選択 **スキップ**, **置換**&#x200B;または **バージョンを作成**. スキップモードがデフォルトです。このモードでは、アセットが既に存在する場合は、取得をスキップします。[バージョンオプションの置換と作成](#handling-upload-existing-file)の意味を参照してください。
+
+1. DAM 内でアセットの読み込み先となる場所を定義するパスを指定します。 **[!UICONTROL アセットのターゲットフォルダー]** フィールドに入力します。 （例：`/content/dam/imported_assets`）。
+
+1. （オプション）読み込むメタデータファイルを CSV 形式で指定し、 **[!UICONTROL メタデータファイル]** フィールドに入力します。 ソース BLOB の場所で CSV ファイルを指定し、一括読み込みツールの設定時にパスを参照します。 このフィールドで参照される CSV ファイル形式は、 [アセットメタデータの一括読み込みと書き出し](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). 次を選択した場合、 **インポート後にソースファイルを削除** オプション、 **除外** または **MIME タイプを含める** または **パス/ファイルでフィルター** フィールド。 正規表現を使用して、これらのフィールドの CSV ファイルをフィルタリングできます。
+
+1. 「**[!UICONTROL 保存]**」をクリックして、設定を保存します。
+
+#### 一括読み込みツールの設定を管理 {#manage-bulk-import-configuration}
+
+一括読み込みツールの設定を作成した後は、Experience Managerをアセットインスタンスに一括取り込む前に、設定を評価するタスクを実行できます。 次の場所で使用可能な設定を選択します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 一括読み込み]** をクリックして、一括読み込みツールの設定を管理するための使用可能なオプションを表示します。
+
+##### 設定を編集 {#edit-configuration}
+
+設定を選択し、「 **[!UICONTROL 編集]** 設定の詳細を変更する場合。 編集操作の実行中は、設定のタイトルとインポートデータソースを編集できません。
+
+##### 設定の削除 {#delete-configuration}
+
+設定を選択し、「 **[!UICONTROL 削除]** をクリックして、一括読み込み設定を削除します。
+
+##### データソースへの接続を検証する {#validate-connection}
+
+設定を選択し、「 **[!UICONTROL check]** をクリックして、データソースへの接続を検証します。 接続が成功した場合、Experience Managerには次のメッセージが表示されます。
+
+![一括インポート成功メッセージ](assets/bulk-import-success-message.png)
+
+##### 一括読み込みジョブのテスト実行を呼び出す {#invoke-test-run-bulk-import}
+
+設定を選択し、「 **[!UICONTROL ドライラン]** をクリックして、一括読み込みジョブのテスト実行を呼び出します。 Experience Managerには、一括読み込みジョブに関する次の詳細が表示されます。
+
+![ドライランの結果](assets/dry-assets-result.png)
+
+##### 1 回限りの一括インポートまたは繰り返しの一括インポートのスケジュール設定 {#schedule-bulk-import}
+
+1 回限りまたは繰り返しの一括インポートをスケジュールするには、次の手順を実行します。
 
 1. 一括読み込み設定を作成します。
 1. 設定を選択し、ツールバーの「**[!UICONTROL スケジュール]**」を選択します。
 1. 1 回限りの取得を設定するか、1 時間ごと、1 日ごと、または 1 週間ごとのスケジュールを設定します。「**[!UICONTROL 送信]**」をクリックします。
 
    ![一括取得ジョブのスケジュール](assets/bulk-ingest-schedule1.png)
+
+
+##### Assets のターゲットフォルダーの表示 {#view-assets-target-folder}
+
+設定を選択し、「 **[!UICONTROL アセットを表示]** ：一括読み込みジョブの実行後にアセットが読み込まれる Assets のターゲット場所を表示します。
+
+#### 一括読み込みツールの実行 {#run-bulk-import-tool}
+
+後 [一括読み込みツールの設定](#configure-bulk-ingestor-tool) オプションで [一括読み込みツールの設定の管理](#manage-bulk-import-configuration)を使用する場合は、設定ジョブを実行して、アセットの一括取り込みを開始できます。
+
+に移動します。 **[!UICONTROL ツール]** > **[!UICONTROL Assets]** > **[!UICONTROL 一括読み込み]**&#x200B;を選択し、 [一括読み込み設定](#configure-bulk-ingestor-tool) をクリックし、 **[!UICONTROL 実行]** をクリックして、一括読み込みプロセスを開始します。 クリック **[!UICONTROL 実行]** 再び確認します。
+
+Experience Managerがジョブのステータスをに更新します。 **処理中** および **成功** ジョブの正常な完了時。 クリック **アセットを表示** をクリックし、読み込んだアセットを「Experience Manager」に表示します。
+
+ジョブが進行中の場合は、設定を選択し、 **停止** をクリックして、一括取り込みプロセスを停止します。 クリック **実行** を再びクリックして、プロセスを再開します。 また、 **ドライラン** をクリックして、まだ読み込み待ちのアセットの詳細を確認します。
+
+#### 実行後のジョブの管理 {#manage-jobs-after-execution}
+
+Experience Managerでは、一括インポートジョブの履歴を確認できます。 ジョブ履歴は、ジョブ、ジョブ作成者、ログのステータスと、開始日時、作成日時、完了日時などのその他の詳細で構成されます。
+
+設定のジョブ履歴にアクセスするには、設定を選択し、 **[!UICONTROL ジョブ履歴]**. ジョブを選択し、 **開く**.
+
+![一括取得ジョブのスケジュール](assets/job-history-bulk-import.png)
+
+Experience Managerは、ジョブ履歴を表示します。 一括読み込みジョブの履歴ページで、 **削除** をクリックして、一括読み込み設定用のジョブを削除します。
+
 
 ## デスクトップクライアントを使用したアセットのアップロード {#upload-assets-desktop-clients}
 

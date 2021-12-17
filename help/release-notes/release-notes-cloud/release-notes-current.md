@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 51%
@@ -44,13 +44,11 @@ ht-degree: 51%
 
 * [!DNL Dynamic Media] MXF ビデオの取り込み、プレビュー、再生、公開をサポートするようになりました。 MXF ビデオの注釈とショッパブルビデオは、まだサポートされていません。
 
-* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更、移動の操作を実行できるようになりました。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。
+* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 これで、 [操作の更新、削除、名前変更、移動](../../assets/use-assets-across-connected-assets-instances.md) リモートの DAM アセットまたはフォルダー上で 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
-
-* **Forms Portal**:以下を使用できます。 [Forms Portal](/help/forms/configure-forms-portal.md) 発行済みのアダプティブフォームをAEM Sitesページに一覧表示する。 これにより、サイト訪問者は利用可能なすべてのフォームを見つけることができます。 さらに、訪問者はフォームポータルを使用してアダプティブフォームのドラフトを保存してアクセスし、送信されたアダプティブフォームのPDFバージョンを確認することができます。
 
 * **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリーに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
 
@@ -62,6 +60,8 @@ ht-degree: 51%
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
 
 * **コミュニケーション API で作成されたレコードのドキュメントおよびPDFドキュメント用のカスタムフォント**:コミュニケーション API を使用して生成されたPDFドキュメントで、ブランド承認済みフォントを使用して、組織の要件に合わせることができるようになりました。
+
+* **Forms Portal**:以下を使用できます。 [Forms Portal](/help/forms/configure-forms-portal.md) 発行済みのアダプティブフォームをAEM Sitesページに一覧表示する。 これにより、サイト訪問者は利用可能なすべてのフォームを見つけることができます。 さらに、訪問者はフォームポータルを使用してアダプティブフォームのドラフトを保存してアクセスし、送信されたアダプティブフォームのPDFバージョンを確認することができます。
 
 ## CIF アドオン {#cloud-services-cif}
 
