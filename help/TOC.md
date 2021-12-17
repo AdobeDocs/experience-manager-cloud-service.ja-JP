@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7fb63dba9a72fc04b1d4fe677f65e993ec5a1e47
+source-git-commit: 6e78e3c72bd67ca63503cf4d1710826b53994675
 workflow-type: tm+mt
 source-wordcount: '3431'
 ht-degree: 84%
@@ -87,7 +87,7 @@ ht-degree: 84%
       + [AEM as a Cloud Service 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
       + [開発者およびデプロイメントマネージャーの学習パス](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)
       + [AEM ユーザーの学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
-   + [AEM参照デモアドオンジャーニー] {#demo-add-on}
+   + AEM参照デモアドオンジャーニー {#demo-add-on}
       + [概要](/help/journey-sites/demos-add-on/overview.md)
       + [インストール](/help/journey-sites/demos-add-on/installation.md)
       + [プログラムを作成](/help/journey-sites/demos-add-on/create-program.md)
