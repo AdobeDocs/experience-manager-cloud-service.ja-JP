@@ -1,9 +1,9 @@
 ---
 title: パイプラインの設定
 description: フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # パイプラインの設定 {#set-up-your-pipeline}
 
 フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## これまでの説明内容 {#story-so-far}
 

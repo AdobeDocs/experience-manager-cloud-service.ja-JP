@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager とクイックサイト作成ワークフローについて
 description: Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けについて説明します。
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # Cloud Manager とクイックサイト作成ワークフローについて {#understand-cloud-manager}
 
 Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けについて説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 >[!TIP]
 >

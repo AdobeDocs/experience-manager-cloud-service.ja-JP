@@ -3,9 +3,9 @@ title: サイトテーマ
 description: AEMサイトのテーマを使用して、サイトのスタイルやデザインをカスタマイズする方法を説明します。
 feature: Administering
 role: Admin
-source-git-commit: 9e7ad4a640f1783be5aed75e01e860b647662f52
+source-git-commit: 0b00d579886a106f5f66cfc54d90eab9563724cd
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # サイトテーマ {#site-themes}
 
 AEMサイトのテーマを使用して、サイトのスタイルやデザインをカスタマイズする方法を説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## 概要 {#overview}
 
@@ -55,6 +51,6 @@ Adobeは、独自のテーマを作成する際の基礎として使用できる
 
 ## サイトテーマの開発 {#developing-themes}
 
-Adobeは、新しいサイトテーマを作成するための一連のスクリプトとして、およびAEM Site Theme Builder を提供します。
+Adobeは、新しいサイトテーマを作成するための一連のスクリプトとしてAEM Site Theme Builder を提供します。
 
 [AEM Site Theme Builder は、GitHub の使用方法ドキュメントと共に利用できます。](https://github.com/adobe/aem-site-theme-builder) テーマをカスタマイズするには、フロントエンド開発エクスペリエンスが必要です。

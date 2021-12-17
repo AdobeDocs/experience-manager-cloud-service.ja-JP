@@ -1,9 +1,9 @@
 ---
 title: Git リポジトリのアクセス情報の取得
 description: フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法について説明します。
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 5%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 5%
 # Git リポジトリのアクセス情報の取得 {#retrieve-access}
 
 フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法について説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## これまでの説明内容 {#story-so-far}
 

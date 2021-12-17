@@ -3,10 +3,10 @@ title: サイトの作成
 description: AEMを使用して、サイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
 feature: Administering
 role: Admin
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 0%
 # サイトの作成 {#creating-site}
 
 AEMを使用してサイトテンプレートを使用してサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## 概要 {#overview}
 

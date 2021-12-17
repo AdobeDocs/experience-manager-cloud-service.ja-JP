@@ -2,10 +2,10 @@
 title: CI/CD パイプライン
 description: このページでは、Cloud Manager CI/CD パイプラインについて説明します
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 2%
+source-wordcount: '1006'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +62,7 @@ Cloud Manager 内のすべてのパイプラインとその使用方法を次の
 
 ## Cloud Manager フロントエンドパイプライン {#front-end}
 
-フロントエンドパイプラインは、フロントエンドコードをデプロイするための高速フロントエンドパイプラインを有効にし、チームが設計と開発のプロセスを合理化するのに役立ちます。 この差別化されたパイプラインは、JavaScript と CSS をテーマとしてAEM配布レイヤーにデプロイするので、AEMランタイムから配信されたページから参照できる新しいテーマバージョンが作成されます。 フロントエンドコードは、静的ファイルとして機能する任意のコードです。 これは、AEMが提供する UI コードとは別のものです。 Sites テーマ、顧客定義SPA、Firefly SPA、その他のソリューションが含まれます。
+フロントエンドパイプラインは、フロントエンドコードをデプロイするための高速フロントエンドパイプラインを有効にし、チームが設計と開発のプロセスを合理化するのに役立ちます。 この差別化されたパイプラインは、JavaScript と CSS をテーマとしてAEM配布レイヤーにデプロイするので、AEMランタイムから配信されるページから参照できる新しいテーマバージョンが作成されます。 フロントエンドコードは、静的ファイルとして機能する任意のコードです。 これは、AEMが提供する UI コードとは別のものです。 Sites テーマ、顧客定義SPA、Firefly SPA、その他のソリューションが含まれます。
 
 >[!IMPORTANT]
 >AEM版である必要があります `2021.10.5933.20211012T154732Z ` を使用して、フロントエンドパイプラインを活用します。
@@ -74,7 +74,7 @@ Cloud Manager 内のすべてのパイプラインとその使用方法を次の
 
 ### フロントエンドパイプラインを設定する前に {#before-start}
 
-フロントエンドパイプラインの設定を開始する前に、 [AEMクイックサイト作成ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 使いやすいAEM Quick Site Creation ツールを使用してエンドツーエンドのワークフローを実現する このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
+フロントエンドパイプラインの設定を開始する前に、 [AEMクイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) 使いやすいAEM Quick Site Creation ツールを使用してエンドツーエンドのワークフローを実現する このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
 
 ### フロントエンドパイプラインの設定 {#configure-front-end}
 
@@ -82,6 +82,12 @@ Cloud Manager 内のすべてのパイプラインとその使用方法を次の
 
 * [実稼動パイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [実稼動以外のパイプラインの追加](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### フロントエンドパイプラインを使用したサイトの開発 {#developing-with-front-end-pipeline}
+
+フロントエンドパイプラインを使用すると、フロントエンド開発者により多くの独立性が与えられ、開発プロセスは大幅な速度を得ることができます。
+
+参照： [このドキュメント](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) このプロセスの機能と、このプロセスを最大限に活用するために考慮すべきいくつかの検討事項について説明します。
 
 ## フルスタックパイプライン {#full-stack-pipeline}
 

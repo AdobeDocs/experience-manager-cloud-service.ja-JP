@@ -1,10 +1,10 @@
 ---
 title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
-source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 2%
+source-wordcount: '992'
+ht-degree: 4%
 
 ---
 
@@ -12,10 +12,6 @@ ht-degree: 2%
 # カスタマイズしたテーマのデプロイ {#deploy-your-customized-theme}
 
 パイプラインを使用してサイトテーマをデプロイする方法を説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -72,7 +68,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->パイプラインの詳細ウィンドウで、をタップまたはクリックできます **ログをダウンロード** デバッグ目的でパイプラインの任意のステップを実行する場合に、いずれかのステップが失敗する可能性があります。 パイプラインのデバッグは、このジャーニーの範囲外です。 詳しくは、 [その他のリソース](#additional-resources) 」セクションに表示されます。
+>パイプラインの詳細ウィンドウで、をタップまたはクリックします **ログをダウンロード** デバッグ目的でパイプラインの任意のステップを実行する場合に、いずれかのステップが失敗する可能性があります。 パイプラインのデバッグは、このジャーニーの範囲外です。 詳しくは、 [その他のリソース](#additional-resources) 」セクションに表示されます。
 
 ## デプロイ済みのカスタマイズの検証 {#view-customizations}
 
@@ -95,11 +91,16 @@ ht-degree: 2%
 * プロキシ化されたAEMコンテンツを使用してテーマをカスタマイズおよびテストし、その変更をAEM Git にコミットする方法。
 * パイプラインを使用してフロントエンドのカスタマイズをデプロイする方法。
 
-これで、独自のAEMサイトのテーマをカスタマイズする準備が整いました。 ただし、AEMは強力なツールであり、他にも多くのオプションを使用できます。 その他のリソースについては、 [「その他のリソース」セクション](#additional-resources) このジャーニーで確認した機能の詳細を確認するには、以下を参照してください。
+これで、独自のAEMサイトのテーマをカスタマイズする準備が整いました。 ただし、複数のフロントエンドパイプラインを使用して異なるワークストリームの作成を開始する前に、ドキュメントを確認してください [フロントエンドパイプラインを使用したサイトの開発。](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 次の方法でフロントエンド開発を最大限に活用できます。
+
+* 一つの情報源を維持する。
+* 懸念の分離を維持する。
+
+AEMは強力なツールで、他にも多くのオプションを使用できます。 その他のリソースについては、 [「その他のリソース」セクション](#additional-resources) このジャーニーで確認した機能の詳細を確認するには、以下を参照してください。
 
 ## その他のリソース {#additional-resources}
 
-クイックサイト作成ジャーニーの次の部分に進むことをお勧めしますが、ドキュメントを確認してください [カスタマイズしたテーマのデプロイ](deploy-theme.md) 以下に、このドキュメントで取り上げたいくつかの概念について詳しく説明する、その他のオプションのリソースを示します。ただし、このジャーニーを続行する必要はありません。
+以下の追加リソースでは、このドキュメントで言及したいくつかの概念について詳しく説明しています。
 
 * [AEMas a Cloud Service技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)  — 既にAEMに関する十分な理解を得ている場合は、詳細な技術ドキュメントを直接参照することをお勧めします。
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager の機能の詳細については、詳細な技術ドキュメントを直接お問い合わせください。
@@ -115,3 +116,4 @@ ht-degree: 2%
 * [オンボーディングジャーニー](/help/journey-onboarding/home.md)  — このガイドは、チームが確実に設定され、AEM as a Cloud Serviceにアクセスできるようにするための出発点となります。
 * [Adobe Experience Manager Cloud Manager ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) - Cloud Manager の機能の詳細については、 Cloud Manager のドキュメントを参照してください。
 * [サイト管理ドキュメント](/help/sites-cloud/administering/site-creation/create-site.md)  — クイックサイト作成ツールの機能の詳細については、サイト作成に関する技術ドキュメントを参照してください。
+* [フロントエンドパイプラインを使用したサイトの開発](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)  — このドキュメントでは、フロントエンドパイプラインを使用してフロントエンド開発プロセスから最大限の能力を引き出すために考慮すべき事項について説明します。

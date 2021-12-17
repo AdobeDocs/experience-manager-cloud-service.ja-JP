@@ -1,9 +1,9 @@
 ---
 title: サイトテーマのカスタマイズ
 description: サイトテーマの構築方法、カスタマイズ方法、およびAEMのライブコンテンツを使用したテスト方法について説明します。
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # サイトテーマのカスタマイズ {#customize-the-site-theme}
 
 サイトテーマの構築方法、カスタマイズ方法、およびAEMのライブコンテンツを使用したテスト方法について説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## これまでの説明内容 {#story-so-far}
 

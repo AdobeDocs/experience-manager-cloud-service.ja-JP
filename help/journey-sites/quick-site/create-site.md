@@ -1,9 +1,9 @@
 ---
 title: テンプレートからサイトを作成
 description: サイトテンプレートを使用して新しいAEMサイトをすばやく作成する方法を説明します。
-source-git-commit: 73e9d1debe70aff7f53d658bbac074fc53d8f1ae
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # テンプレートからサイトを作成 {#create-site-from-template}
 
 サイトテンプレートを使用して新しいAEMサイトをすばやく作成する方法を説明します。
-
->[!CAUTION]
->
->現在、クイックサイト作成ツールはテクニカルプレビューです。 テストおよび評価の目的で使用できるようになり、Adobeサポートに同意しない限り、実稼動での使用は意図されません。
 
 ## これまでの説明内容 {#story-so-far}
 
