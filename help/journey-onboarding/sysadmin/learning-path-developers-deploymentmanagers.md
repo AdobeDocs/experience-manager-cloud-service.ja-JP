@@ -1,12 +1,13 @@
 ---
 title: 開発者およびデプロイメントマネージャーの学習パス
-description: 開発者またはデプロイメントマネージャー(AEM)の場合は、このページで、アクセス権を取得後の次の手順を説明します
+description: 開発者またはデプロイメントマネージャーがアクセス権の取得後に行う次の手順について説明します。
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 6%
+source-wordcount: '607'
+ht-degree: 82%
 
 ---
 
@@ -14,67 +15,72 @@ ht-degree: 6%
 
 ## 目的 {#objective}
 
-このドキュメントは、開発者とデプロイメントマネージャーがCloud Managerにアクセスし、学習パスの準備方法を理解するのに役立ちます。
+このドキュメントは、開発者とデプロイメントマネージャーが Cloud Manager にアクセスし、学習パスの準備方法に慣れるのに役立ちます。
 
-このドキュメントを読んだ後、次の操作を行う必要があります。
+読み終えると、以下を達成できます。
 
-* 開発者は、Cloud Manager Gitにアクセスして管理する方法を理解できます
-* デプロイメントマネージャーは、パイプラインの設定方法とCloud Managerでのコードのデプロイ方法を理解できます
+* 開発者として Cloud Manager Git へのアクセスと管理の方法を理解できる
+* デプロイメントマネージャーとして Cloud Manager でのパイプラインのセットアップ方法とコードのデプロイ方法を理解できる
 
 ## はじめに {#introduction}
 
-この節を読む場合は、開発者またはデプロイメントマネージャーの製品プロファイルに割り当てられ、オンボーディングして学習パスを続行する準備が整っている可能性があります。
+この節を参照する必要があるユーザーは、「開発者」または「デプロイメントマネージャー」の製品プロファイルに割り当てられている可能性が高く、オンボーディングして学習パスを続行する準備が整っている必要があります。
 
 >[!NOTE]
->* *デベロッパー*&#x200B;として、Cloud Managerにログインし、Gitへのアクセスに慣れてください。
->* *デプロイメントマネージャー*&#x200B;として、パイプラインの設定方法やコードのデプロイ方法を理解する必要があります。
+>* *開発者*&#x200B;の場合は、Cloud Manager にログインする必要があり、Git へのアクセスをよく理解している必要があります。
+>* *デプロイメントマネージャー*&#x200B;の場合は、パイプラインのセットアップ方法とコードのデプロイ方法をよく理解している必要があります。
 
 
 ## 前提条件 {#prerequisites}
 
-開始する前に、次の点を確認します。
+開始する前に、以下を確認します。
 
-* システム管理者が、それぞれの製品プロファイルに開発者およびデプロイメントマネージャーを割り当てました。 開発者は、 AEMユーザーまたはAEM管理者の製品プロファイルに割り当てられる必要があります。
-* クラウドリソースが設定されている。
-* Cloud Managerへの移動方法とログイン方法を理解している
+* システム管理者が、開発者とデプロイメントマネージャーをそれぞれの製品プロファイルに既に割り当ててあります。開発者は、「AEM ユーザー」または「AEM 管理者」の製品プロファイルにも割り当てられている必要があります。
+* クラウドリソースは既にセットアップされています。
 
-## GitHubの管理 {#manage-git}
+* Cloud Manager の操作方法とログイン方法を理解している必要があります。
 
-Cloud Manager UI のセルフサービス Git アカウント管理を使用して、Git リポジトリーにアクセスし、管理できます。このトピックについて詳しくは、[Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)へのアクセスを参照してください。
+## GitHub を管理 {#manage-git}
+
+Cloud Manager UI のセルフサービス Git アカウント管理を使用して、Git リポジトリーにアクセスし、管理できます。このトピックについて詳しくは、[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=ja)を参照してください。
 
 ## パイプラインを設定 {#setup-pipeline}
 
-実稼動パイプラインまたは非実稼動パイプラインは、Cloud Manager UIから設定できます。
-このトピックについて詳しくは、[CI-CDパイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)を参照してください。
+Cloud Manager UI で、実稼動パイプラインまたは実稼動以外のパイプラインを設定できます。
+このトピックについて詳しくは、[CI／CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja)を参照してください。
 
-## 次の作業 {#whats-next}
+## 次の手順 {#whats-next}
 
-開発者およびデプロイメントマネージャーは、AEM as a Cloud Serviceでのコードの開発方法を理解する準備が整いました。 詳しくは、以下の「その他のリソース」の節を参照してください。 コンテンツ作成者の学習ジャーニーについて詳しくは、[AEM作成者の学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)を参照してください。
+これで、開発者およびデプロイメントマネージャーは、AEM as a Cloud Service でのコードの開発方法を理解する準備が整いました。詳しくは、以下の「その他のリソース」の節を参照してください。コンテンツ作成者向けの学習ジャーニーについて詳しくは、 [AEM 作成者向け学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>オンボーディングされた後は、次の操作を実行できます。 [AEM Reference Demos アドオンを簡単に追加する方法を学ぶ](/help/journey-sites/demos-add-on/overview.md) AEMの設定を最小限に抑え、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできます。
 
 ## その他のリソース {#additional-resources}
 
-* [Cloud ManagerからGitおよびGitのアカウント管理にアクセスする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Cloud Manager からの Git および Git アカウント管理へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [AEM as aCloud Serviceのローカル開発環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [AEM as a Cloud Service のローカル開発環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja)
 
-* [AEM Sites使用の手引き（チュートリアル）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [AEM Sites の概要（チュートリアル）](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)
 
-* [AEM SPA EditorおよびReactの概要 | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+* [AEM SPA Editor と React の使用の手引き | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=ja)
 
-* [AEM SPA エディターと Angular の使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+* [AEM SPA Editor と Angular の使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=ja)
 
-* [AEMヘッドレスの概要 — GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
+* [AEM ヘッドレスの概要 - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja)
 
-* [AEM SPA Editorの概要（開発者向け）](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [AEM SPA Editor の概要（開発者向け）](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens?lang=ja#courses)
 
-## Experience Leagueコース {#exp-league-courses}
+## Experience League の各種コース {#exp-league-courses}
 
-詳しくは、 Experience Leagueコースを参照してください。 次のコースにアクセスするには、新規登録してください。
+詳しくは、 Experience League のコースを参照してください。 次のコースにアクセスするには、新規登録をしてください。
 
-* [従来のサイト](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [従来のサイト](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens?lang=ja#courses)
 
-* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [SPA Editor](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens?lang=ja#courses)
 
-* [ヘッドレス](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [ヘッドレス](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens?lang=ja#courses)
 
-* [コマース](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [コマース](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens?lang=ja#courses)

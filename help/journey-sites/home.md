@@ -2,9 +2,9 @@
 title: AEM Sitesジャーニー
 description: AEMの強力なサイト機能を理解するために使用できるガイド付きジャーニーの概要については、ここから始めてください。
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '420'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,8 @@ AEM Sitesのトピックに関する次のドキュメントジャーニーを�
 
 | タイトル | 説明 | プライマリ対象者 |
 |---|---|---|
-| [サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) | AEM Sitesテクノロジー、プロジェクトでの使用方法、AEMで A から Z の翻訳プロジェクトを作成および更新する方法について説明します。 | 翻訳スペシャリスト |
 | [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | ここから始めて、使いやすいAEMクイックサイト作成ツールを使用し、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずにサイトをすばやくカスタマイズするガイド付きのジャーニーを実現します。 | フロントエンド開発者 |
+| [参照デモアドオンジャーニー](/help/journey-sites/demos-add-on/overview.md) | 最小限のAEM設定でAEM Reference Demos Add-On をサンドボックス環境に簡単に追加し、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできる方法を、ガイド付きのジャーニーで開始します。 | システム管理者 |
+| [サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) | AEM Sitesテクノロジー、プロジェクトでの使用方法、AEMで A から Z の翻訳プロジェクトを作成および更新する方法について説明します。 | 翻訳スペシャリスト |
 
 ぜひお試しください [追加の役割をカバーする今後のジャーニー。](/help/journey-documentation/documentation-journeys.md#journeys)

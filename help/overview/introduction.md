@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service の概要
 description: Adobe Experience Manager（AEM）as a Cloud Service の概要。
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
-source-git-commit: 4db42a04a122306f5fa068b258913836020d2f9a
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 54%
+source-wordcount: '632'
+ht-degree: 50%
 
 ---
 
@@ -75,3 +75,9 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service の概要](/help/assets/overview.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+
+>[!TIP]
+>
+>AEM as a Cloud Serviceの概要を把握したら、 [オンボーディングジャーニー。](/help/journey-onboarding/home.md)
+>
+>AEMの機能のテストを既にオンボーディング済みか、準備はできているか。 のインストール [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) 豊富な例を使用してAEMの強力な機能を調べる

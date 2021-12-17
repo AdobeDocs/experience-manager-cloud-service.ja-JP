@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service Release 2021.12.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Serviceリリース2021.12.0の Cloud Manager のリリースノートです。
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 6%
@@ -31,7 +31,7 @@ AEM as a Cloud Service 2021.12.0の Cloud Manager のリリース日は 2021 年
 * デプロイメントマネージャーの役割を持つユーザーは、リポジトリページのアクションメニューから、ブランチのないリポジトリのプロジェクト/ブランチ作成ウィザードを開始できるようになりました。
 * パイプラインの追加または編集ワークフローに属するデプロイメントマネージャーが、選択したリポジトリにブランチがない場合のブランチまたはプロジェクトの作成方法に関する情報を受け取るようになりました。
 * 次の目的で、新しい Cloud Manager セルフサービス機能が追加されました。 [環境レベルでの自由形式の変数とシークレットの追加](/help/implementing/cloud-manager/environment-variables.md)
-* 新しいリファレンスデモアドオン（2021 年 12 月 17 日に利用可能）を使用すると、AEM製品の最新のデモコードベースをインストールし、新しい [クイックサイト作成ツール](/help/journey-sites/quick-site/overview.md) （サイト内）
+* 新しい [参照デモアドオン](/help/journey-sites/demos-add-on/overview.md) （2021 年 12 月 17 日から利用可能）AEM製品の最新のデモコードベースをインストールし、新しい [クイックサイト作成ツール](/help/journey-sites/quick-site/overview.md) （サイト内）
 * フロントエンドパイプラインでパイプライン変数がサポートされるようになりました。
 * すべてのサンドボックスに対して、プログラムの編集ダイアログで Screens を有効にできるようになりました。
 * 概要ページのコールトゥアクションカードで提供されるガイダンスが更新され、実稼動フルスタックパイプラインとの関連が正確に反映されました。
