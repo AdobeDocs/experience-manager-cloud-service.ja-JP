@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
+source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 83%
@@ -282,6 +282,7 @@ ht-degree: 83%
       + [アセットの追加とアップロード](/help/assets/add-assets.md)
       + [アセットの検索](/help/assets/search-assets.md)
       + [一般的なアセット管理タスク](/help/assets/manage-digital-assets.md)
+      + [Previewing-3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [画像のスマートタグ付け](/help/assets/smart-tags.md)
       + [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)
       + [アセットの整理方法](/help/assets/organize-assets.md)
@@ -361,7 +362,6 @@ ht-degree: 83%
       + [Dynamic Media アセットを配信する](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media でホットリンク保護を有効化する](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D サポート](/help/assets/dynamic-media/assets-3d.md)
-      + [Previewing-3d-assets](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [画像セット](/help/assets/dynamic-media/image-sets.md)
       + [パノラマ画像](/help/assets/dynamic-media/panoramic-images.md)
       + [混在メディアセット](/help/assets/dynamic-media/mixed-media-sets.md)
