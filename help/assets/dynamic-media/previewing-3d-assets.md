@@ -1,12 +1,12 @@
 ---
 title: 3D アセットのプレビュー
-description: Dynamic Media の 3D アセットのプレビュー方法について説明します。
+description: 3D アセットをプレビューする方法について、Experience Managerで説明します。
 feature: 3D Assets
 role: User
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 9ecfb0c5dceb0574114aa1acbdda2ac9c3ce2675
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
