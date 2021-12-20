@@ -1,14 +1,14 @@
 ---
-title: '[!DNL Assets] as a [!DNL Cloud Service] ガイド'
-description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] のセルフヘルプリソースとドキュメントリンク'
+title: '[!DNL Assets] as a  [!DNL Cloud Service]  のガイド'
+description: '[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] セルフヘルプリソースおよびドキュメントリンク'
 landing-page-description: Adobe Experience Manager Assets as a Cloud Service の使用および管理方法について説明します。
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '287'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には次のセ
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a [!DNL Cloud Service] を使用したオーサリングおよび管理方法について説明します。 |
 | [実装ユーザーガイド](/help/implementing/home.md) | Experience Manager の強力な機能を使用してエクスペリエンスを構築およびカスタマイズする方法を理解するには、以下の開発およびデプロイメントに関するトピックを参照してください。 |
 | [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | Experience Manager の強力で柔軟なヘッドレス機能を紹介するこのガイド付きのジャーニーを進めて、初めてのヘッドレスプロジェクトの準備をしてください。 |
-| [Adobe  [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/move-to-cloud-service/home.md) への移行 | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] への移行プロセスについて説明します。 |
+| [Adobe  [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/journey-migration/getting-started.md) への移行 | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] への移行プロセスについて説明します。 |
 | [コネクタユーザーガイド](/help/connectors/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] にコネクタを統合する方法を説明します。 |
 | [運用ユーザーガイド](/help/operations/home.md) | インデックス作成やメンテナンスタスクなど、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のバックエンド運用について説明します。 |
 | [Commerce ユーザーガイド](/help/commerce-cloud/home.md) | Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のコマース統合フレームワークについて説明します。 |

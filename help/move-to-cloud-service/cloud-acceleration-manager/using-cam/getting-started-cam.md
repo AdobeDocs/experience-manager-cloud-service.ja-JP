@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager の基本を学ぶ
 description: ここでは、Cloud Acceleration Manager の使用方法と基本事項の概要を説明します。
-source-git-commit: 6de2c5a2b7303ea3258839a36eb3939301ad68d3
-workflow-type: ht
+exl-id: 29395176-70b8-450b-b420-f9014136aaa8
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Acceleration Manager の基本を学ぶ {#get-started-cam}
 
@@ -34,7 +34,7 @@ Cloud Acceleration Manager（CAM）に移動するには、次の手順に従い
 
 1. **Cloud Acceleration Manager** カードで「**開く**」をクリックして、ランディングページを開きます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-1.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
 ### Cloud Acceleration Manager でのプロジェクトの作成と管理 {#create-project}
 
@@ -50,22 +50,22 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 
 1. ランディングページで「**プロジェクトを作成**」をクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-2.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
    >CAM を初めて使用する場合は、新しいプロジェクトを作成するためのダイアログボックスが表示されます。CAM を使用したことがある場合は、デフォルトのプロジェクトまたは以前に作成したプロジェクトが表示されます。
 
 1. プロジェクトの「**名前**」と「**説明**」を入力し、「**作成**」をクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-3.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
 1. これで、プロジェクトが作成され、**Cloud Acceleration Manager** のランディングページに表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-landing.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
 1. プロジェクトカードをクリックして、プロジェクトに入ります。これにより、プロジェクトのランディングページが表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-5.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-5.png)
 
 ## プロジェクトの管理 {#manage-project}
 
@@ -77,11 +77,11 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 
 1. プロジェクトを選択してプロジェクトの上にマウスポインターを置き、鉛筆アイコンをクリックしてプロジェクトを編集します（下図を参照）。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. **プロジェクトを編集**&#x200B;ダイアログボックスで、プロジェクト名や説明を編集したり、新しい画像をアップロードしたり、既存の画像を編集したりできます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-edit.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
 1. 「**更新**」をクリックして、変更内容をコミットします。
 
@@ -91,7 +91,7 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 
 1. プロジェクトを選択してプロジェクトの上にマウスポインターを置き、バケツアイコンをクリックしてプロジェクトを削除します（下図を参照）。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/cam-4.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. 「**削除**」をクリックして、手順を確定します。
 

@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 58%
@@ -57,16 +57,16 @@ ht-degree: 58%
 
 1. Adobe Experience Manager を選択し、ツール／**運営**／**コンテンツ移行**&#x200B;に移動します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. **コンテンツ移行**&#x200B;ウィザードから「**コンテンツ転送**」オプションを選択します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. 最初の移行セットを作成すると、次のコンソールが表示されます。「**移行セットを作成**」をクリックして、新しい移行セットを作成します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >既存の移行セットがある場合、コンソールには既存の移行セットのリストが表示され、現在のステータスが表示されます
@@ -74,7 +74,7 @@ ht-degree: 58%
 
 1. **移行セットを作成**&#x200B;画面の各フィールドに、以下のように値を入力します。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **名前**：移行セットの名前を入力します。
       >[!NOTE]
@@ -95,10 +95,10 @@ ht-degree: 58%
 
       1. **バージョンを含める**：必要に応じて選択します。バージョンが含まれる場合、パス `/var/audit` 監査イベントを移行するために、が自動的に含まれます。
 
-         ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >バージョンを移行セットに含める予定で、 `wipe=false`を無効にした場合、コンテンツ転送ツールの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加を実行する場合は、次のように取り込みを実行する必要があります。 `wipe=true`.
+         >バージョンを移行セットに含める予定で、 `wipe=false`を無効にした場合、コンテンツ転送ツールの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加アップを実行する場合は、次のように取り込みを実行する必要があります。 `wipe=true`.
 
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
@@ -115,7 +115,7 @@ ht-degree: 58%
 
 1. 移行セットが **コンテンツ転送** ウィザードに表示されます（下図を参照）。
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    既存のすべての移行セットが **コンテンツ転送** ウィザードに現在のステータスとステータスの情報が表示されます。 以下に示すアイコンの一部が表示されます。
 
@@ -125,7 +125,7 @@ ht-degree: 58%
 
 1. 移行セットを選択し、「 」をクリックします。 **プロパティ** 移行セットのプロパティを表示または編集するには、次の手順に従います。 プロパティの編集中は、 **移行セット名** または **サービス URL**.
 
-   ![画像](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## 次の手順 {#whats-next}

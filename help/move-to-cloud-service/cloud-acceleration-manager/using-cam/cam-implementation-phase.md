@@ -2,7 +2,7 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
-source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 96%
@@ -21,7 +21,7 @@ ht-degree: 96%
 
 プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**実装**」セクションに移動します（下図を参照）。
 
-![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja#create-project)を参照してください。
@@ -35,11 +35,11 @@ ht-degree: 96%
 
 1. **ローカル開発**&#x200B;カードの「**表示**」ボタンをクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## コードリファクタリングカードの使用 {#code-refactoring}
@@ -50,7 +50,7 @@ ht-degree: 96%
 
 1. **コードリファクタリング**&#x200B;アクティビティカードの「**レビュー**」ボタンをクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-4.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. このページには、コードリファクタリングアクティビティのリストが重大度レベル別に表示されます。ハイライト表示された 2 つのアイコンをクリックすると、詳細を確認できます。
 
@@ -65,11 +65,11 @@ ht-degree: 96%
 
 「**Dispatcher**」タブでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。また、クラウド環境でのデバッグについても説明します。
 
-![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![画像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 「**テスト**」タブには、機能テスト、エクスペリエンス監査、UI テストに関する情報が表示されます。
 
-![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![画像](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## AEM as a Cloud Service デプロイメントカードの使用 {#aem-as-a-cloud-service-deployment}
@@ -80,11 +80,11 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 1. **AEM as a Cloud Service デプロイメント**&#x200B;カードの「**表示**」ボタンをクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## コンテンツ転送カードの使用 {#content-transfer}
@@ -95,11 +95,11 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 1. **コンテンツ転送**&#x200B;アクティビティカードの「**表示**」ボタンをクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja)および[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)を確認してください。

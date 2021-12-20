@@ -2,7 +2,7 @@
 title: 実装フェーズ
 description: 実装フェーズ
 exl-id: 176dd79d-0d72-443c-87db-dab24fb48b96
-source-git-commit: 3b0b1a192e25958b3b049893f5b7e1001e071f69
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 
 実行フェーズに必要になる主なステップを次の図に示します。
 
-![画像](/help/move-to-cloud-service/assets/exec-image1.png)
+![画像](/help/journey-migration/assets/exec-image1.png)
 
 ## コンテンツ転送 {#content-transfer}
 
@@ -41,7 +41,7 @@ Cloud Service への移行の正確な手順は、購入したシステムと準
 >[!NOTE]
 >差分コンテンツ追加を頻繁に行って、Cloud Service での運用を開始する前に行う最後の差分コンテンツ転送に必要なコンテンツフリーズ期間を短縮することをお勧めします。
 
-詳しくは、[コンテンツ転送ツール](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
+詳しくは、[コンテンツ転送ツール](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)を参照してください。
 
 >[!IMPORTANT]
 >コンテンツ転送ツールに必要なシステム構成は、AEM 6.3 以降と Java 8 です。使用している AEM のバージョンがこれより古い場合、コンテンツ転送ツールを使用するには、コンテンツリポジトリーを AEM 6.5 にアップグレードする必要があります。
@@ -64,9 +64,9 @@ Cloud Service に対応するためにリファクタリングする必要があ
 
 コードリファクタリングタスクの一部を高速化するために、次のツールを使用できます。
 
-* [アセットワークフローの移行](/help/move-to-cloud-service/moving-to-aem-assets/asset-workflow-migration-tool.md)
-* [Dispatcher コンバーター](/help/move-to-cloud-service/refactoring-tools/dispatcher-transformation-utility-tools.md)
-* [AEM Modernization Tools](/help/move-to-cloud-service/refactoring-tools/aem-modernization-tools.md)
+* [アセットワークフローの移行](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
+* [Dispatcher コンバーター](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
+* [AEM Modernization Tools](/help/journey-migration/refactoring-tools/aem-modernization-tools.md)
 
 Cloud Manager Git を介して Cloud Service 環境にコードをプッシュする前に、コードをリファクタリングしローカルでテストすることをお勧めします。
 

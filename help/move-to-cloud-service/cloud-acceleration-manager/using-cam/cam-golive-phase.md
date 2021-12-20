@@ -1,13 +1,13 @@
 ---
 title: Cloud Acceleration Manager での運用開始フェーズ
 description: このページでは、Cloud Acceleration Manager での運用開始フェーズの概要について説明します。
-source-git-commit: 22ee20401a8c576ae56547cf678b9f5c0d69362d
-workflow-type: ht
+exl-id: 56c8e9a2-bd49-4588-b7ed-9739dd07162f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Acceleration Manager での運用開始フェーズ {#golive-phase-cam}
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 プロジェクトカードをクリックしてプロジェクトのランディングページを開き、「**運用開始**」セクションに移動します（下図を参照）。
 
-![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
+![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 >[!NOTE]
 >詳しくは、[Cloud Acceleration Manager でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=ja#create-project)を参照してください。
@@ -27,8 +27,8 @@ ht-degree: 100%
 
 1. **運用開始**&#x200B;カードの「**表示**」ボタンをクリックします。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-1.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
 1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
 
-   ![画像](/help/move-to-cloud-service/cloud-acceleration-manager/assets/golive-2.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/golive-2.png)

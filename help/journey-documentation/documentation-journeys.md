@@ -3,10 +3,10 @@ title: AEMドキュメントのジャーニー
 description: ドキュメントジャーニーは、複雑で異なる機能を組み合わせ、ベストプラクティス方式でビジネス目標を解決することで、AEMドキュメント内のナレーション構造を提供します。 AEMの初心者を念頭に置いて設計されたジャーニーでは、A から Z の目標を達成するための概念と機能を紹介しています。
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 2%
+source-wordcount: '1352'
+ht-degree: 1%
 
 ---
 
@@ -93,6 +93,6 @@ AEMを初めて使用する場合で、特定のビジネス事例を念頭に�
 | [AEM Onboardingジャーニー](/help/journey-onboarding/home.md) | 新しいAEMas a Cloud Service環境をすぐに使い始めるには、ここから始めてください。 |
 | [AEMクイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | ここから始めて、使いやすいAEMクイックサイト作成ツールを使用し、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずにサイトをすばやくカスタマイズする、ガイド付きのジャーニーをご覧ください。 |
 | AEM Commerceジャーニー | 近日開始！ |
-| AEMaaCS 移行ジャーニー | 近日開始！ |
+| [AEMas a Cloud Service移行ジャーニー](/help/journey-migration/getting-started.md) | オンプレミスまたはAdobeが管理するAEMのインストールから完全なクラウドベースのAEMas a Cloud Serviceに移行し、その多くのメリットを紹介する手順を、ここから始めてください。 |
 
 新しいジャーニーが利用可能になったら、もう一度確認して、さらにコンテンツを探します。

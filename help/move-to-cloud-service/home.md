@@ -3,7 +3,7 @@ title: AEM as a Cloud Service への移行
 description: Adobe Experience Manager as a Cloud Service への移行に関するセルフヘルプリソースおよびドキュメントリンク
 landing-page-description: AEM as a Cloud Service への移行プロセスについて説明します。
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 97%
@@ -31,7 +31,7 @@ Cloud Service への移行プロセスには、次のフェーズが含まれま
 
 次の図は AEM as a Cloud Service への推奨移行プロセスを示しています。
 
-![画像](/help/move-to-cloud-service/assets/move-aemcloud-process.png)
+![画像](/help/journey-migration/assets/move-aemcloud-process.png)
 
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}

@@ -2,7 +2,7 @@
 title: ベストプラクティスアナライザーの使用
 description: ベストプラクティスアナライザーの使用
 exl-id: 7688bc78-0ec2-4838-8ade-7db5788fb70f
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2470'
 ht-degree: 99%
@@ -15,7 +15,7 @@ ht-degree: 99%
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
 >abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -57,36 +57,36 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 
 1. Adobe Experience Manager を選択し、ツール／**操作**／**ベストプラクティスアナライザー**&#x200B;に移動します。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic1.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. 「**レポートの生成**」をクリックして、ベストプラクティスアナライザーを実行します。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic2.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. BPA がレポートを生成している間は、ツールの進行状況を画面で確認できます。分析された項目の数と、見つかった結果の数が表示されます。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic3.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
 
 1. BPA レポートが生成されると、概要と結果の数が、結果のタイプと重要度レベル別に整理された表形式で表示されます。特定の結果の詳細を取得するには、表で結果のタイプに対応する番号をクリックします。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic4.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
 
    上記のアクションは、レポート内でその結果の場所まで自動的にスクロールします。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic5.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
 
 1. 下の図に示すように、「**CSV に書き出し**」をクリックして、レポートをコンマ区切り値（CSV）形式でダウンロードするオプションがあります。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic6.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]BPA に対して「**レポートの更新**」をクリックしてキャッシュをクリアし、レポートを再生成させることができます。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic7.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
    >[!NOTE]レポートが再生成される間、完了率の観点での進行状況が次の画像のように表示されます。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/BPA_pic8.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 
 
@@ -96,14 +96,14 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 
 1. ページの左側にある左レールアイコンをクリックします。**ACS Commons フィルター**&#x200B;が表示されます。**ACS Commonsフィルター**&#x200B;でクリックして、下の画像に示すインタラクティブチェックボックスを表示します。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_1.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
 左レールアイコンは、BPA が ACS Commons の使用を検出した場合にのみ表示されます。
 
 1. このボックスの選択を解除すると、ACS Commons に関連するすべての結果が除外されます。次の画像に示すように、**フィルター適用済みの結果数**&#x200B;がレポートに表示されます。このフィルターは、レポートがコンマ区切り値（CSV）形式で書き出される場合にも適用されます。
 
-   ![画像](/help/move-to-cloud-service/best-practices-analyzer/assets/report_filter_2.png)
+   ![画像](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
 ACS Commons の結果は無視しないでください。AEM as a Cloud Service との互換性を確認するには、[ドキュメント](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility)を参照してください。

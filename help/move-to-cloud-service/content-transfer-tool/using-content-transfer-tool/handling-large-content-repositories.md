@@ -2,7 +2,7 @@
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 60%
@@ -70,14 +70,14 @@ ht-degree: 60%
 
 Azure ポータルのコンテナプロパティページで、「**サイズを計算**」ボタンを使用して、コンテナ内のすべてのコンテンツのサイズを算出します。次に例を示します。
 
-![画像](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![画像](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Amazon S3 データストア {#amazon-data}
 
 コンテナの「指標」タブを使用して、コンテナ内のすべてのコンテンツのサイズを算出できます。次に例を示します。
 
 
-![画像](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![画像](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### ファイルデータストア {#file-data-store-determine-size}
 
@@ -140,7 +140,7 @@ s3SecretKey=--REDACTED--
 
 #### ファイルデータストア {#file-data-store-azcopy-config}
 
-お使いの `azcopy.config` ファイルには、azcopyPath プロパティと、ファイルデータストアの場所を指すオプションの repository.home プロパティが含まれている必要があります。 インスタンスに正しい値を使用します。
+お使いの `azcopy.config` ファイルには、azcopyPath プロパティと、ファイルデータストアの場所を指すオプションの repository.home プロパティを含める必要があります。 インスタンスに正しい値を使用します。
 ファイルデータストア
 
 ```
@@ -150,7 +150,7 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 azcopyPath プロパティには、ソースAEMインスタンスに azCopy コマンドラインツールがインストールされている場所のフルパスを含める必要があります。 azCopyPath プロパティが見つからない場合、BLOB の事前コピー手順は実行されません。
 
-If `repository.home` プロパティが azcopy.config から見つからず、その後デフォルトのデータストアの場所が `/mnt/crx/author/crx-quickstart/repository/datastore` は、プリコピーの実行に使用されます。
+If `repository.home` プロパティが azcopy.config から見つからず、その後デフォルトのデータストアの場所が見つかりません `/mnt/crx/author/crx-quickstart/repository/datastore` は、プリコピーの実行に使用されます。
 
 ### 4. AzCopy を使用して抽出する {#extracting-azcopy}
 
@@ -242,4 +242,4 @@ AzCopy を無効にするには、 `azcopy.config` ファイル。
 
 ## 次の手順 {#whats-next}
 
-大きなコンテンツリポジトリの処理を学習し、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをAEM as a Cloud Serviceに移動する方法を学習したら、コンテンツ転送ツールで抽出プロセスを学ぶ準備が整いました。 詳しくは、 [コンテンツ転送ツールでのソースからのコンテンツの抽出](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) を参照して、コンテンツ転送ツールから移行セットを抽出する方法を確認してください。
+大きなコンテンツリポジトリの処理を学習し、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをAEM as a Cloud Serviceに移動する方法を学習したら、コンテンツ転送ツールで抽出プロセスを学ぶ準備が整いました。 詳しくは、 [コンテンツ転送ツールでのソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) を参照して、コンテンツ転送ツールから移行セットを抽出する方法を確認してください。

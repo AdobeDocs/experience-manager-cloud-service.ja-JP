@@ -2,8 +2,8 @@
 title: 準備フェーズ
 description: 準備フェーズ
 exl-id: 987cb929-7871-4fec-8ef5-4d2f5f2f2186
-source-git-commit: 6fcde5440a5e2eec57b69b14dca93192634b3c3a
-workflow-type: ht
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Adobe Experience Manager as a Cloud Service で廃止される特長や機能に
 
 計画段階で必要になる主なステップを次の図に示します。
 
-![画像](/help/move-to-cloud-service/assets/planning-phaseimg1.png)
+![画像](/help/journey-migration/assets/planning-phaseimg1.png)
 
 ### Cloud Service への対応準備状況の評価 {#access-cloud-readiness}
 
@@ -45,7 +45,7 @@ Adobe Experience Manager as a Cloud Service で廃止される特長や機能に
 
 移行プロセスで予想される作業レベルを決定するには、主要な変更点および廃止される機能に照らした現在の AEM ソースコードの包括的な評価を行う必要があります。
 
-現在の AEM バージョンでベストプラクティスアナライザーを実行すると、評価ステップを高速化できます。詳しくは、[ベストプラクティスアナライザー](/help/move-to-cloud-service/best-practices-analyzer/overview-best-practices-analyzer.md)を参照してください。
+現在の AEM バージョンでベストプラクティスアナライザーを実行すると、評価ステップを高速化できます。詳しくは、[ベストプラクティスアナライザー](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)を参照してください。
 
 >[!NOTE]
 >既に Cloud Manager と Cloud Service 環境にアクセスできる場合は、現在のコードを Cloud Manager のコード品質パイプラインで実行して、Cloud Service に対応するために必要なコード変更を評価することをお勧めします。
