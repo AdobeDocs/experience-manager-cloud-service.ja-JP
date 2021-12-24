@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9dc60e627a6770ee636ad5f8a8e0a8eb81adae9b
+source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
 workflow-type: tm+mt
-source-wordcount: '3438'
+source-wordcount: '3441'
 ht-degree: 83%
 
 ---
@@ -393,7 +393,6 @@ ht-degree: 83%
    + [はじめに](/help/forms/home.md)
    + [主な機能](/help/forms/key-features.md)
    + [主要な変更点](/help/forms/notable-changes.md)
-   + [リリースノート](/help/forms/release-notes.md)
    + サービスのセットアップと設定 {#setup-environment}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
@@ -450,7 +449,7 @@ ht-degree: 83%
       + [フォームデータモデルの使用](/help/forms/using-form-data-model.md)
    + [Adobe Sign との統合](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [DocuSign との統合](/help/forms/integrate-docusign-adaptive-forms.md)
-   + [AEM Sites との統合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
+   + [Sites との統合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Adobe Analytics との統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
    + ワークフローの作成と使用 {#create-form-centric-workflows}
       + [ワークフローとステップのリファレンスで、Forms中心のステップを使用します](/help/forms/aem-forms-workflow-step-reference.md)
@@ -459,7 +458,8 @@ ht-degree: 83%
    + Communications の使用 {#using-communications}
       + [はじめに](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通信 API](/help/forms/aem-forms-cloud-service-communications.md)
-      + [通信 API とバッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [通信 API のバッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [カスタムフォントをPDF文書で使用](/help/forms/use-custom-fonts.md)
    + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [よくある質問](/help/forms/faq.md)
    + [既知の問題](/help/forms/known-issues.md)
