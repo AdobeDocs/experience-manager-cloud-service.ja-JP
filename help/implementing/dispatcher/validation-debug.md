@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
+source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->クラウド内の Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md) を参照してください。Dispatcher 設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
+>クラウド内の Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、 [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページ。 Dispatcher 設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
 
 以降の節では、フレキシブルモードのファイル構造、ローカル検証、デバッグ、レガシーモードからフレキシブルモードへの移行について説明します。
 
@@ -174,6 +174,7 @@ ht-degree: 100%
 ## ローカル検証 {#local-validation-flexible-mode}
 
 >[!NOTE]
+>
 >以下では、Mac バージョンまたは Linux バージョンの SDK を使用した場合のコマンドについて説明しますが、Windows バージョンの SDK の場合でも同様の方法で使用できます。
 
 `validate.sh` スクリプトを次のように使用します。
@@ -335,7 +336,6 @@ bin\validator.exe -relaxed full src
 Cloud manager validator 2.0.xx
 2021/03/15 18:15:40 Dispatcher configuration validation failed:
   conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
-  
 ```
 
 このエラーを回避するには、Windows エクスプローラでパスをコピーし、コマンドプロンプトで `cd` コマンドを使用してそのパスに貼り付けます。
@@ -345,6 +345,7 @@ Cloud manager validator 2.0.xx
 このフェーズでは、イメージで Docker を起動して Apache 構文をチェックします。Docker をローカルにインストールする必要がありますが、AEM を実行する必要はありません。
 
 >[!NOTE]
+>
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
 このフェーズは、`bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080` を使用して独立に実行することもできます。
