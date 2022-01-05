@@ -1,9 +1,9 @@
 ---
-title: Experience Manager SitesページでForms Portal を作成する方法は？
+title: Experience Manager SitesページでForms Portal を作成する方法
 description: Forms Portal を作成し、標準搭載のコアコンポーネントをAEM Sitesページで使用する方法を説明します。
-source-git-commit: 4c42abfe2cc1b11aefb2b298e883406ca5c17fd2
+source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
 workflow-type: tm+mt
-source-wordcount: '1753'
+source-wordcount: '1784'
 ht-degree: 26%
 
 ---
@@ -59,22 +59,15 @@ AEM Formsでは、次のポータルコンポーネントをすぐに使用で�
 
    また、上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。
 
+1. **プレリリースで、次の手順を実行してForms Portal コンポーネントを使用します。**
+   * [プレリリースチャネルを有効にする](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en).
+   * 置換 `core-forms-components-*` 目的のプレリリースバージョン ( 例： 1.0.4-PRERELEASE-20211223) を含むバージョンを `Cloud Manager/AEM Archetype` プロジェクトを更新する `<core.forms.components.version>x.y.z</core.forms.components.version>` 最上位の `pom.xml` を作成します。
+
 1. **プロジェクトをローカル開発環境にデプロイします。** 次のコマンドを使用して、環境にデプロイできます。ローカル開発
 
    `mvn -PautoInstallPackage clean install`
 
    コマンドの完全なリストについては、「[構築とインストール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing)」を参照してください
-
-1. [コアコンポーネントのアーティファクトを含める](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds) 依存関係は次のようになります。
-
-   ```shell
-   <dependency>
-               <groupId>com.adobe.aem</groupId>
-               <artifactId>{TBD}</artifactId>
-               <type>content-package</type>
-               <version>{TBD}</version>
-   </dependency>
-   ```
 
 1. [ [!DNL AEM Forms]  as a Cloud Service 環境にコードをデプロイします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds)。
 
@@ -85,7 +78,7 @@ AEM Formsでは、次のポータルコンポーネントをすぐに使用で�
 
 ### Azure ストレージ設定の作成 {#create-azure-storage-configuration}
 
-これらの手順を実行する前に、 [!DNL Azure] ストレージアカウントと、 [!DNL Azure] ストレージアカウント。
+これらの手順を実行する前に、Azure ストレージアカウントと、へのアクセスを許可するためのアクセスキーがあることを確認してください [!DNL Azure] ストレージアカウント。
 
 1. **[!UICONTROL ツール]**／**[!UICONTROL クラウドサービス]**／**[!UICONTROL Azure ストレージ]**&#x200B;に移動します。
 1. 設定を作成するフォルダーを選択して、「**[!UICONTROL 作成]**」をタップします。
