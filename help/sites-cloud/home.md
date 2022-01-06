@@ -3,9 +3,9 @@ title: Adobe Experience Manager Sites as a Cloud Service
 description: Adobe Experience Manager Sites as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
 landing-page-description: AEM Sitesをas a Cloud Service的に使用してオーサリングおよび管理する方法を説明します。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '390'
 ht-degree: 92%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 92%
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-* [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=ja)
+* [Cloud Manager のドキュメント](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

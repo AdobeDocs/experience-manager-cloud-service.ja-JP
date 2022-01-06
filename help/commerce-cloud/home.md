@@ -3,10 +3,10 @@ title: AEM Content and Commerce
 description: AEM Content and Commerce に関するセルフヘルプリソースおよびドキュメントリンク
 landing-page-description: Adobe Experience Manager Content and Commerce as a Cloud Service の使用方法と管理方法について説明します。
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 95%
+source-wordcount: '357'
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 95%
 * [Dispatcher のドキュメント](/help/implementing/dispatcher/overview.md)
 * [HTL のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
-* [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=ja)
+* [Cloud Manager のドキュメント](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

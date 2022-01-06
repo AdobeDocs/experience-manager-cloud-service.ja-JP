@@ -1,9 +1,9 @@
 ---
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '340'
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+workflow-type: tm+mt
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
@@ -72,5 +72,5 @@ ht-degree: 100%
 
 ## ヘルプとリソース
 
-* [初回ログイン - Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=ja#getting-access)
+* [初回ログイン - Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
 * [AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja#accessing)
