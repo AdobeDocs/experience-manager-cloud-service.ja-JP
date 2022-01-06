@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 3ea19210049e49401da892021f098005759542a3
+source-git-commit: dadf4f21ebaac12386153b2a9c69dc8f10951e9c
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 79%
+source-wordcount: '916'
+ht-degree: 59%
 
 ---
 
@@ -53,6 +53,8 @@ ht-degree: 79%
 * `{{url_path}}` は製品の `url_path`（例：`venia-bottoms/venia-pants/lenora-crochet-shorts`）に置き換えられます
 * `{{variant_sku}}` は、現在選択されているバリアント（例：`VP09-KH-S`）に置き換えられます
 
+以降 `url_path` 廃止されました。事前定義済みの製品 URL 形式では、製品の `url_rewrites` を選択し、最もパスセグメントが多いセグメントを選択します。 `url_path` は使用できません。
+
 上記のサンプルデータでは、デフォルトの URL 形式を使用して設定された製品バリアント URL は `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S` のようになります。
 
 ### カテゴリページの URL 形式 {#product-list}
@@ -74,16 +76,19 @@ ht-degree: 79%
 > 
 > `url_path` は、製品またはカテゴリの上位層の `url_keys` と製品またはカテゴリの `url_key` をスラッシュ `/` で区切って連結したものです。
 
+### 特定のカテゴリ/製品ページ {#specific-pages}
+
+次を作成できます。 [複数のカテゴリページと製品ページ](../authoring/multi-template-usage.md) カタログの特定のカテゴリまたは製品のサブセットのみ。
+
+この `UrlProvider` は、オーサー層インスタンスでこのようなページへのディープリンクを生成するように事前に設定されています。 これは、編集者がプレビューモードでサイトを参照し、特定の製品またはカテゴリのページに移動して、ページを編集するために編集モードに戻るのに役立ちます。
+
+一方、パブリッシュ層インスタンスでは、例えば検索エンジンのランキングで得られる結果が失われないように、カタログページの URL を安定させる必要があります。 そのパブリッシュ層のインスタンスは、デフォルトでは特定のカタログページへのディープリンクをレンダリングしません。 この動作を変更するには、 _CIF URL プロバイダー固有のページ戦略_ は、常に特定のページ url を生成するように設定できます。
+
 ## カスタム URL 形式 {#custom-url-format}
 
-カスタム URL 形式を提供するために、プロジェクトで [`UrlFormat` インターフェイス](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) を OSGi サービスとして登録し、カテゴリページまたは製品ページの url 形式のいずれかを使用して実装を登録します。 `UrlFormat#PROP_USE_AS` サービスプロパティは、置き換えの対象となる設定された事前定義済み形式を示します。
+プロジェクトで実装できるカスタム URL 形式を指定するには、 [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) または [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) サービスインターフェイスを使用し、実装を OSGi サービスとして登録します。 これらの実装がある場合、設定済みの事前定義済みの形式が置き換えられます。 複数の実装が登録されている場合、サービスランキングが高い実装は、低いサービスランキングで置き換えられます。
 
-* 設定済みの製品ページ URL 形式は `useAs=productPageUrlFormat` に置き換えられます
-* 設定済みのカテゴリページ URL 形式は `useAs=categoryPageUrlFormat` に置き換えられます
-
-`UrlFormat` の複数の実装が OSGi サービスとして登録されている場合は、サービスランキングの低い方の実装が、サービスランキングの高い方の実装に置き換えられます。
-
-この `UrlFormat` は、指定されたパラメーターのマップから URL を作成し、同じパラメーターのマップを返すように URL を解析するために、メソッドのペアを実装する必要があります。 パラメーターは前述と同じです。カテゴリの場合のみ、`{{uid}}` パラメーターが `UrlFormat` に追加されます。
+カスタム URL 形式の実装では、指定されたパラメーターから URL を作成し、それぞれ同じパラメーターを返す URL を解析するために、メソッドのペアを実装する必要があります。
 
 ## Sling マッピングとの結合 {#sling-mapping}
 
