@@ -1,35 +1,32 @@
 ---
-title: オーサリングの基本を学ぶ
-description: コンテンツフラグメントを使用したヘッドレスCMS向けコンテンツのオーサリングの概念と仕組みについて説明します。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn Authoring Basics
+description: Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
+# Authoring Basics for Headless with AEM {#author-headless-basics}
 
-# AEMを使用したヘッドレス向けのオーサリングの基本 {#author-headless-basics}
+## The Story so Far {#story-so-far}
 
-## 今までの話 {#story-so-far}
+[](overview.md)[](introduction.md)
 
-[AEMヘッドレスコンテンツ作成者ジャーニー](overview.md)の最初に、[はじめに](introduction.md)では、ヘッドレス作成に関連する基本的な概念と用語について説明しました。
-
-この記事はこれらを基に構築され、AEMヘッドレスプロジェクト用に独自のコンテンツを作成する方法を理解できます。
+This article builds on these so you understand how to author your own content for your AEM headless project.
 
 ## 目的 {#objective}
 
 * **オーディエンス**：初心者
-* **目的**:ヘッドレスCMSオーサリングの基本を紹介します。
-   * AEMaCSを使用したオーサリングの概要
-   * コンテンツフラグメントの概要
+* ****
+   * Introduction to authoring with AEMaaCS
+   * Introduction to Content Fragments
 
 ## 基本操作 {#basic-handling}
 
-コンテンツフラグメントの操作方法を理解する前に、AEMの使用方法を簡単に紹介します。.しかし、実際には、ログインしてシステムを使用しようとする経験に代わるものはありません。
+Before you get to grips with Content Fragments, here is a (very) quick introduction to using AEM....but nothing really replaces the experience of signing in and trying to use the system.
 
 ### オーサーインスタンスとパブリッシュインスタンス {#author-preview-publish}
 
@@ -38,201 +35,201 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
 * 作成者
 * 公開
 
-ログインし、オーサー環境を使用してコンテンツを生成します。 準備が整ったら、コンテンツを公開して、一般に利用できるようにします。 ヘッドレスの場合は、他のアプリケーションに対して、Webページの場合は、Web上の読者に対して行われます。
+You log into, and use the author environment to generate your content. When ready you then publish your content so that it becomes generally available. For headless this would be to other applications, for web pages this would be to readers on the web.
 
-詳しくは、オーサリングの概念を参照してください。
+For more details see the Authoring Concepts.
 
-### ログイン {#signing-in}
+### Signing In {#signing-in}
 
-ほとんどのシステムと同様に、ログインが必要です。 作成者は、次の情報を提供します。
+As with most systems you will need to login. As an author you will be provided with:
 
-* ユーザー（アカウント）名
+* User (account) name
 * パスワード
-* ログイン画面にアクセスするためのリンク
+* Link to access the login screen
 
-お使いのアカウントは、必要な権限で設定されます。 問題がある場合は、社内プロジェクトサポートチームにお問い合わせください。
+Your account will have been configured with any privileges that you need. If you have any issues, we recommend that you contact your in-house project support team.
 
 ### ナビゲーション {#navigation}
 
-小さなオンラインチュートリアルに初めてログインすると、ユーザーインターフェイスの主な機能の一部が強調表示されます。
+The first time you log in a small online tutorial will highlight some of the main features of the user interface.
 
-その後、ナビゲーションパネルを使用して、AEMの主要な領域にアクセスできます。 コンテンツフラグメントの場合は、**アセットコンソール**&#x200B;を使用します。
+You can then use the Navigation Panel to access key areas of AEM. ****
 
-ナビゲーションパネルを開くには、左上にあるAdobeアイコンを選択し、次に小さなコンパスアイコンを選択します。
+The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
 
 ![ナビゲーションパネル](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->コンテンツフラグメントはAEM **Sites**&#x200B;の機能ですが、 **Assets**&#x200B;コンソールにあります。 これは技術的な詳細情報で、ユーザーに影響を与えることはありませんが、知っておくと役に立つ場合があります。
+>******** This is a technical detail that should not affect you, but might be useful to know.
 
-コンソール内で、コンテンツフラグメントに移動するフォルダーを選択するか、（ヘッダーの）パンくずリストを使用してツリーの上に移動します。
+Within the console you can select folders to navigate to your Content Fragment, or the breadcrumbs (in the header) to navigate back up the tree.
 
 ![パンくずリスト](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
-### アクション、選択、表示 {#actions-selecting-viewing}
+### Actions, Selecting, Viewing {#actions-selecting-viewing}
 
-**アセット**&#x200B;コンソールには、専用の&#x200B;**アクションツールバー**&#x200B;と、リソース選択後に使用できる&#x200B;**クイックアクション**（フォルダーやコンテンツフラグメントなど）があります。
+************
 
-クイックアクションは1つのリソースに対して使用できます。以下の例の&#x200B;**バーゼル**&#x200B;を参照してください。
+****
 
 ![クイックアクション](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
-アクションツールバーを使用して、現在のシナリオに適用できるすべてのアクションにアクセスできます。 使用可能なアクションは変更できます。例えば、場所や、複数のリソースを選択しているかどうかによって異なります。
+The Actions Toolbar provides access to the full range of actions - applicable for the current scenario. The actions available can change; for example, dependent on your location, or whether you have selected multiple resources:
 
 ![アクションツールバー](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
-表示セレクターを使用して、リソースを表示する形式を選択できます。
+You can select the format for viewing your resources with the View Selector:
 
 ![表示セレクター](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
-パネルセレクターを使用して、項目に関する追加情報を表示できます。 追加のアクションにアクセスすることもできます。
+You can view additional information about items using the Rail Selector. This also gives access to additional actions.
 
 ![左レール](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 
-## コンテンツフラグメントのオーサリング {#authoring-content-fragments}
+## Authoring Content Fragments {#authoring-content-fragments}
 
-これはAEMユーザーインターフェイス(UI)の簡単な紹介でしたが、ぜひ試してみてください。 次に、本当の関心を引きます — ヘッドレス用のコンテンツフラグメント。
+So, that was a very quick introduction to the AEM User Interface (UI), but hopefully you&#39;ve had a chance to try it out. Now we get down to your real interest - Content Fragments for Headless.
 
-最初から最後まで調べる必要がありますが、お使いのインスタンスには既にフォルダーやフラグメントが作成されていて、それらが別の場所にある可能性があります。 原理は同じ。
+We&#39;ll have to go through things from start to finish, but your instance might already have folders and/or fragments created, and these might be in different locations. The principles are the same.
 
-### 整理とナビゲーション {#organizing-and-navigating}
+### Organizing and Navigating {#organizing-and-navigating}
 
-コンテンツフラグメントがほとんどない場合を除き、コンテンツフラグメントを整理して、コンテンツフラグメントを（および他のユーザーが）再度見つけられるようにします。
+Unless you have very few Content Fragments you will want to organize them - so that you (and others) can find them again.
 
 #### フォルダーの作成 {#creating-folder}
 
-これをおこなうには、アセットコンソールの「**ファイル**」セクションに一連のフォルダーを作成します。 「**作成**」オプション（右上）を選択し、「**フォルダー**」を選択します。
+************
 
-![「フォルダーを作成」オプション](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-詳細を入力し、**作成**&#x200B;で確認できるダイアログが開きます。
+****
 
-![フォルダーを作成ダイアログ](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
-#### パスとタグを使用したフォルダーで使用可能なコンテンツフラグメントモデルの制限 {#tags-paths-for-models-in-folder}
+#### Using Paths and Tags to limit Content Fragment Models available in the Folder {#tags-paths-for-models-in-folder}
 
-この節は、少し進んでいます。 単に始めて試してみるだけでは必要ありませんが、フラグメントが多い場合は&#x200B;*非常に*&#x200B;便利です。 だから、まだ使っていなくても、知っておくのが良い。
+This section is slightly more advanced. ** So it&#39;s good to know about - even if you don&#39;t use it quite yet.
 
-コンテンツアーキテクトが、現在のプロジェクトに必要なすべてのコンテンツフラグメントモデルを作成し、他のプロジェクトも作成します。 自分や他の作成者が物事を簡単にできるように、特定のフォルダーで使用できるモデルのリストを制限できます。
+Your Content Architect will have created all the Content Fragment Models required for your current project, and maybe some other projects too. To help keep things simple for yourself, and other authors, you can limit the list of models available for a specific folder.
 
-フォルダーを作成したら、**Properties**&#x200B;フォルダーを開くことができます。 ここでは、フォルダーに関する情報と設定の詳細を含む様々なタブを示します。 特に、コンテンツフラグメントの場合は、「**ポリシー**」タブを使用して、このフォルダーの特定のパスやタグを定義できます。 これにより、フォルダーで使用できるコンテンツフラグメントモデルが制限されます。つまり、コンテンツフラグメントモデルをこのフォルダーでフラグメントを生成するために使用する前に、これらの要件を満たす必要があります。
+**** Here there are various tabs with information, and configuration details, about the folder. **** This limits the Content Fragment Models available for use in the folder as it means that Content Fragment Models must meet these requirements before they can be used to generate fragments in this folder.
 
-![フォルダーのプロパティの作成 — ポリシー](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
-
->[!NOTE]
->
->詳しくは、アセットフォルダーでのコンテンツフラグメントモデルの許可を参照してください。
-
-次に、これらのフォルダー内を移動して、コンテンツフラグメントを作成および編集します。
-
-#### 念のため — フォルダーCloud Servicesの設定 {#cloud-services-folder}
-
-念のため…
-
-フォルダーを作成できる初期フォルダーが与えられる可能性があります。 これは、一部の設定の詳細（通常は開発者またはシステム管理者が）をルートフォルダーに適用する必要があるためです。 これは興味を持たないでしょうが、必要に応じて、**Properties**&#x200B;フォルダーの&#x200B;**Cloud Services**&#x200B;の&#x200B;**Configuration**&#x200B;を確認できます。
-
-![フォルダーのプロパティの作成 — 設定](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
+![](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
 >[!NOTE]
 >
->詳しくは、「設定をアセットフォルダーに適用」を参照してください。
+>You can read further details under Content Fragment Models - Allowing Content Fragment Models on your Assets Folder.
+
+You then navigate through these folders to create, and edit your Content Fragments.
+
+#### Just in case - Folder Cloud Services Configuration {#cloud-services-folder}
+
+Just in case...
+
+You will probably be given an initial folder where you can create your folders. This is as some configuration details must be applied (usually by a Developer or System Administrator) to the root folder. ************
+
+![](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
+
+>[!NOTE]
+>
+>You can read more under Apply the Configuration to your Assets Folder.
 
 ### コンテンツフラグメントの作成 {#creating-fragment}
 
-コンテンツフラグメントの作成は非常に似ています。代わりに&#x200B;**コンテンツフラグメント**&#x200B;オプションを使用します。
+****
 
-![「コンテンツフラグメントを作成」オプション](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-今度はウィザードが開きます。 最初の手順は、フラグメントの基となるコンテンツフラグメントモデルを選択することです。
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
 
-![コンテンツフラグメントを作成 — 「モデル」を選択します。](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-「**次へ**」を続行すると、フラグメントの詳細（**基本**&#x200B;と&#x200B;**詳細**）を指定できます。
+************
 
-![コンテンツフラグメントを作成 — 名前を指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-**「**&#x200B;を作成」で確定すると、エディターでフラグメントを&#x200B;**開く**&#x200B;ことができます。
+********
 
-### フラグメントの編集 {#editing-fragment}
+### Editing a Fragment {#editing-fragment}
 
-フラグメントは、作成後すぐに開くことも、アセットコンソールから選択することもできます。
+You can open a fragment immediately after creating it, or by selecting it from the Assets console.
 
-エディターが最初に開くと、次の内容が表示されます。
+When the editor first opens you&#39;ll see:
 
-* 左側にあるアイコンのリスト — 様々な機能領域にアクセスできます。 エディターが「**バリエーション**」タブに開きます。このタブで、ほとんどの編集がおこなわれます。 「**注釈**」タブと「**メタデータ**」タブに興味がある場合もあります。
+* A list of icons at the left side - this gives you access to various areas of functionality. ************
 
-* フラグメントに関する情報と様々なアクションへのアクセスを含むヘッダー。
+* A header with information about the fragment, and access to various actions.
 
-* メインの編集領域 — フラグメントの作成に使用するモデルによって異なります。
+* The main editing area - this depends on the model used to create your fragment.
 
-例：
+As examples:
 
-* 複数の情報（一部は特定のタイプを持つ）のみを必要とするフラグメント。 ヘッドレスコンテンツの場合、参照は重要です。これについては、後で学習します。
+* A fragment that only requires multiple pieces of information, some with a specific type. For headless content, references are key, you&#39;ll learn about these later in your journey.
 
-   ![コンテンツフラグメントエディター — マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* テキストの長いセクションを記述できるフラグメント。 ここでは、テキストの管理および書式設定に関する追加のオプションがあります。 全画面表示エディターで個々のテキストフィールドを開くこともできます（右側の小さな画面のようなアイコンを使用）。
+* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
 
-   ![コンテンツフラグメントエディター — Alaska Spirts](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
-
->[!NOTE]
->
->作成者が一部のフィールドを正常に入力する方法の詳細を知るには、プロジェクト固有のドキュメントが必要になる場合があります。
->
->一般的な詳細については、コンテンツフラグメントモデル — データタイプとプロパティを参照してください。
-
-「**保存**」または「**保存して閉じる**」で更新内容を確認します。
+   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
->詳しくは、バリエーション — コンテンツフラグメントのオーサリングを参照してください。
+>Project specific documentation might be required to help authors with details of how to successfully complete some fields.
+>
+>See Content Fragments Models - Data Types and Properties for generic details.
 
-#### （おそらく）心配する必要がないもの {#what-you-probably-do-not-need-to-worry-about}
+********
 
-はい、これは少し奇妙な節に見えるかもしれませんが、コンテンツフラグメントエディターを開いて調査を開始すると、コンテンツ作成者としてヘッドレスなジャーニーに適用されない（おそらく）様々なオプションが表示されます。 つまり、ヘッドレスなコンテキストで無視できる内容について、簡単に説明します。
+>[!NOTE]
+>
+>For more details you can read Variations - Authoring Content Fragments.
+
+#### What you (probably) don&#39;t need to worry about {#what-you-probably-do-not-need-to-worry-about}
+
+OK, this might seem a slightly strange section, but once you open the Content Fragment Editor and start exploring you&#39;ll see various options that (probably) do not apply for your headless journey as a Content Author. So this is just a quick heads-up on what you should be able ignore in the headless context:
 
 * **コンテンツフラグメントモデル**
 
-   エディターの上部にある、フラグメント名のすぐ下にコンテンツフラグメントモデルの名前が表示されます。 これは、モデルエディターに移動するリンクでもあります。
-コンテンツフラグメントモデルは、使用する構造を定義するので、コンテンツフラグメントにとって実際に重要です。 ただし、コンテンツアーキテクトは、他のペルソナの作成と編集を担当します（通常は）。
+   You will see the name of the Content Fragment Model at the top of the editor - directly under the fragment name. This is also a link that takes you to the model editor.
+Content Fragment Models are actually vital to your Content Fragments as they define the structure that you use. However, creating and editing them is (usually) the responsibility of another persona, the Content Architect.
 
    >[!NOTE]
    >
-   >詳しくは、 AEMヘッドレスコンテンツアーキテクトのジャーニーを参照してください。
+   >If you want to learn more, you can read the AEM Headless Content Architect Journey.
 
 * **関連コンテンツ**
 
-   これはエディターのタブなので明らかです
+   This one is quite obvious as it&#39;s a tab in the editor.
 
-   コンテンツフラグメントは、AEMでは多くのバージョンで利用できます。 元々は、ページのオーサリング時に「従来」の使用で利用できるようになっていました。.そして、この文脈ではまだ使用されている。 これには、フラグメントに埋め込まれていないが、ページのオーサリング時に作成者が使用できる必要があるアセット（画像など）の関連付けが含まれる場合があります。
+   Content Fragments have been available in AEM for quite a few versions. Originally they were made available for &quot;traditional&quot; use when authoring pages....and they are still used in this context. This can involve associating assets (for example images) that although not embedded in the fragment, needs to be available to the author when authoring a page.
 
 * **プレビュー**
 
-   これはエディターのもう1つのタブで、主に開発者向けの技術ビューを提供します。
+   This is another tab in the editor and provides a technical view, primarily intended for developers.
 
 * **ページ参照を更新**
 
-   このアクションは&#x200B;**...から実行できます。**（省略記号）ドロップダウン。 ページのオーサリングに関連するので、ヘッドレスな作成者にとっては興味深いことではありません。
+   **** It is not interesting for headless authors as it relates to page authoring.
 
 ### 公開 {#publishing}
 
 <!-- needs more details -->
 
-フラグメントを完了したら、**公開**&#x200B;して、ヘッドレスアプリケーションで使用できるようにします。
+****
 
-公開アクションは、エディターで（または&#x200B;**アセット**&#x200B;コンソールのツールバーから）使用できます。
+****
 
-![コンテンツフラグメントエディター — マイフラグメント](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 ## 次の手順 {#whats-next}
 
-基本を学んだので、次の手順は[参照](references.md)について学びます。 これにより、使用可能な様々な参照が導入され、そしてフラグメント参照を使用して構造のレベルを作成する方法について説明されます。フラグメント参照はヘッドレスオーサリングの主要な部分です。
+[](references.md)This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of authoring for headless.
 
 ## その他のリソース {#additional-resources}
 
 * [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — このページは主にサイトコンソールに基づいていま **** すが、多くの機能はアセットコンソール内のコンテンツフラグメントのオーサリングにも **関** 連して **** います。
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
 
    * [ナビゲーションパネル](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
@@ -253,20 +250,20 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
       * [アセットフォルダーへの設定の適用](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [コンテンツフラグメントの作成](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [バリエーション — コンテンツフラグメントのオーサリング](/help/assets/content-fragments/content-fragments-variations.md)
+   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [コンテンツフラグメントモデル — データタイプ](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [コンテンツフラグメントモデル — プロパティ](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [コンテンツフラグメントモデル — アセットフォルダーでコンテンツフラグメントモデルを許可する](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * 「はじめる前に」ガイド 
    * [アセットフォルダーのヘッドレス作成のクイック開始ガイド](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
-* AEMヘッドレスコンテンツアーキテクトジャーニー
+* AEM Headless Content Architect Journey
 
-* AEMヘッドレス翻訳ジャーニー
+* AEM Headless Translation Journey

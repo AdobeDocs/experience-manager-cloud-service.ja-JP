@@ -1,133 +1,131 @@
 ---
-title: AEMヘッドレス翻訳の概要
-description: ヘッドレスコンテンツの整理方法とAEM翻訳ツールの仕組みについて説明します。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Get started with AEM headless translation
+description: Get to know how to organize your headless content and how AEM's translation tools work.
+exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 1%
 
 ---
 
-# AEMヘッドレス翻訳の概要 {#getting-started}
+# Get Started with AEM Headless Translation {#getting-started}
 
-ヘッドレスコンテンツの整理方法とAEM翻訳ツールの仕組みについて説明します。
+Get to know how to organize your headless content and how AEM&#39;s translation tools work.
 
 ## これまでの説明内容 {#story-so-far}
 
-AEMヘッドレス翻訳ジャーニーの前のドキュメントでは、[ヘッドレスコンテンツとAEM](learn-about.md)での翻訳方法について説明し、ヘッドレスCMSの概要を学び、次の作業を行う必要があります。
+[](learn-about.md)
 
-* ヘッドレスコンテンツ配信の基本概念を理解します。
-* ヘッドレスと翻訳のサポート方法については、AEMでの理解を深めてください。
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-この記事は、これらの基本事項に基づいて構築され、AEMがヘッドレスコンテンツを保存および管理する方法と、AEM翻訳ツールを使用してそのコンテンツを翻訳する方法を理解できます。
+This article builds on those fundamentals so you understand how AEM stores and manages headless content and how you can use AEM&#39;s translation tools to translate that content.
 
 ## 目的 {#objective}
 
-このドキュメントでは、AEMのヘッドレスコンテンツの翻訳を開始する方法を説明します。 ドキュメントを読めば、以下が可能です。
+This document helps you understand how to get started translating headless content in AEM. ドキュメントを読めば、以下が可能です。
 
-* 翻訳に対するコンテンツ構造の重要性を理解します。
-* AEMがヘッドレスコンテンツを保存する方法を理解します。
-* AEMの翻訳ツールについて
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
 ## 要件と前提条件 {#requirements-prerequisites}
 
-ヘッドレスなAEMコンテンツの翻訳を開始する前に、いくつかの要件があります。
+There are a number of requirements before you begin translating your headless AEM content.
 
 ### 知識 {#knowledge}
 
-* CMSでのコンテンツの翻訳の経験
-* 大規模なCMSの基本機能を使用した経験
-* AEMの基本操作に関する実務知識がある
-* 使用している翻訳サービスについて
-* 翻訳するコンテンツの基本的な理解を得る
+* Experience translating content in a CMS
+* Experience using the basic features of a large-scale CMS
+* Have a working knowledge of AEM basic handling
+* Understanding of the translation service you are using
+* Have a basic understanding of the content you are translating
 
 >[!TIP]
 >
->AEMのような大規模なCMSの使用に慣れていない場合は、先に進む前に、[基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)のドキュメントを確認することを検討してください。 基本操作のドキュメントはジャーニーに含まれていません。完了したら、このページに戻ってください。
+>[](/help/sites-cloud/authoring/getting-started/basic-handling.md)The Basic Handling documentation is not part of the journey, so please return to this page when complete.
 
 ### ツール {#tools}
 
-* コンテンツの翻訳をテストするためのサンドボックスアクセス
-* 目的の翻訳サービスに接続するための資格情報
-* AEMの`project-administrators`グループのメンバーである
+* Sandbox access for testing translating your content
+* Credentials to connect to your preferred translation service
+* `project-administrators`
 
-## 構造がキー {#content-structure}
+## Structure is Key {#content-structure}
 
-AEMのコンテンツは、ヘッドレスや従来のWebページであっても、構造によって左右されます。 AEMではコンテンツ構造に関していくつかの要件が課されますが、プロジェクト計画の一環としてコンテンツ階層を慎重に検討すると、翻訳がより簡単になります。
+AEM&#39;s content, be it headless or traditional web pages, is driven by its structure. AEM imposes few requirements on the content structure, but careful consideration of your content hierarchy as part of the project planning can make translation much simpler.
 
 >[!TIP]
 >
->ヘッドレスプロジェクトの最初に翻訳を計画します。 プロジェクトマネージャーやコンテンツアーキテクトとの緊密な連携を早めにおこなう。
+>Plan for translation at the very beginning of the headless project. Work closely with the project manager and content architects early.
 >
->国際化プロジェクトマネージャーは、翻訳するコンテンツと翻訳しないコンテンツ、および地域やローカルのコンテンツプロデューサーが変更する翻訳コンテンツを定義する責任を負う個人として必要になる場合があります。
+>An Internationalization Project Manager may be required as a separate persona whose responsibility it is to define what content should be translated and what not, and what translated content may be modified by regional or local content producers.
 
-## AEMによるヘッドレスコンテンツの保存方法 {#headless-content-in-aem}
+## How AEM Stores Headless Content {#headless-content-in-aem}
 
-翻訳スペシャリストにとって、AEMによるヘッドレスコンテンツの管理方法を深く理解することは重要ではありません。 ただし、後でAEM翻訳ツールを使用する際には、基本概念と用語に精通していると便利です。 最も重要なのは、効果的に翻訳するために、独自のコンテンツとその構造を理解する必要があることです。
+For the translation specialist, it is not important to understand in-depth how AEM manages headless content. However being familiar with the basic concepts and terminology will be helpful as you later use AEM&#39;s translation tools. Most importantly you need to understand your own content and how it is structured in order to effectively translate it.
 
 ### コンテンツモデル {#content-models}
 
-ヘッドレスコンテンツをチャネル、地域、言語をまたいで一貫して配信するには、コンテンツの構造が非常に強化されている必要があります。 AEMでは、コンテンツモデルを使用してこの構造を適用します。 コンテンツモデルは、ヘッドレスコンテンツを作成するためのテンプレートまたはパターンの一種と考えてください。 どのプロジェクトにも独自のニーズがあるので、すべてのプロジェクトで独自のコンテンツフラグメントモデルを定義します。 AEMには、このようなモデルに対する固定された要件や構造はありません。
+In order for headless content to be delivered consistently across channels, regions, and languages, content must be highly structured. AEM uses Content Models to enforce this structure. Think of Content Models as a kind of template or pattern for creating headless content. Because every project has its own needs, every project defines its own Content Fragment Models. AEM has no fixed requirements or structure for such models.
 
-コンテンツアーキテクトは、プロジェクトの初期段階でこの構造を定義します。 翻訳スペシャリストとして、コンテンツアーキテクトと緊密に連携し、コンテンツを理解し、整理する必要があります。
+The content architect works early in the project to define this structure. As the translation specialist, you should work closely with the content architect to understand and organize the content.
 
 >[!NOTE]
 >
->コンテンツモデルを定義するのはコンテンツアーキテクトの責任です。 翻訳スペシャリストは、次の手順で説明する構造にのみ精通している必要があります。
+>It is the responsibility of the content architect to define the Content Models. The translation specialist should only be familiar with their structure as outlined in the following steps.
 
-コンテンツモデルはコンテンツの構造を定義するので、翻訳する必要があるモデルのフィールドを把握する必要があります。 通常は、コンテンツアーキテクトと連携してこれを定義します。 コンテンツモデルのフィールドを参照するには、次の手順に従います。
+Because the Content Models define the structure of your content, you need to know which fields of your models must be translated. Generally you work with the content architect to define this. To browse the fields of your content models, follow the steps below.
 
-1. **ツール** -> **アセット** -> **コンテンツフラグメントモデル**&#x200B;に移動します。
-1. コンテンツフラグメントモデルは、通常、フォルダー構造で保存されます。 プロジェクトのフォルダーをタップまたはクリックします。
-1. モデルが表示されます。 モデルをタップまたはクリックして詳細を表示します。
+1. ************
+1. Content Fragment Models are generally stored in a folder structure. Tap or click on the folder for your project.
+1. The models are listed. Tap or click on the model to see the details.
    ![コンテンツフラグメントモデル](assets/content-fragment-models.png)
-1. **コンテンツフラグメントモデルエディター**&#x200B;が開きます。
-   1. 左側の列には、モデルのフィールドが含まれます。 この欄は私たちの興味を引く。
-   1. 右側の列には、モデルに追加できるフィールドが含まれます。 この列は無視できます。
+1. ****
+   1. The left column contains the fields of the model. This column interests us.
+   1. The right column contains the fields that can be added to the model. This column we can ignore.
       ![コンテンツフラグメントモデルエディター](assets/content-fragment-model-editor.png)
-1. モデルのフィールドの1つをタップまたはクリックします。 AEMはフィールドにマークを付け、そのフィールドの詳細が右側の列に表示されます。
-   ![コンテンツフラグメントモデルエディターの詳細](assets/content-fragment-model-editor-detail.png)
+1. Tap or click one of the fields of the model. AEM marks it and the details of that field are shown in the right column.
+   ![](assets/content-fragment-model-editor-detail.png)
 
-翻訳が必要なすべてのフィールドの&#x200B;**プロパティ名**&#x200B;フィールドをメモしておきます。 この情報は、後でジャーニーに表示されます。 これらの&#x200B;**プロパティ名**&#x200B;は、コンテンツのどのフィールドを翻訳する必要があるかをAEMに通知するために必要です。
+**** You will need this information later in the journey. ****
 
 >[!TIP]
 >
->通常、コンテンツアーキテクトは翻訳スペシャリストに翻訳に必要なすべてのフィールドの&#x200B;**プロパティ名**&#x200B;を提供します。 これらのフィールド名は、ジャーニーの後半で使用するために必要です。 以前の手順は、翻訳スペシャリストの理解を深めるために提供されています。
+>**** These field names are needed for later in the journey. The prior steps are provided for the understanding of the translation specialist.
 
 ### コンテンツフラグメント {#content-fragments}
 
-コンテンツモデルは、コンテンツ作成者が実際のヘッドレスコンテンツを作成するために使用されます。 コンテンツ作成者は、コンテンツのベースとなるモデルを選択し、コンテンツフラグメントを作成します。 コンテンツフラグメントはモデルのインスタンスで、ヘッドレスに配信される実際のコンテンツを表します。
+Content Models are used by the content authors to create the actual headless content. Content authors select which model to base their content on an then create Content Fragments. Content Fragments are instances of the models and represent actual content to be delivered headlessly.
 
-コンテンツモデルがコンテンツのパターンの場合、コンテンツフラグメントは、それらのパターンに基づく実際のコンテンツになります。 コンテンツフラグメントは、翻訳が必要なコンテンツを表します。
+If the Content Models are the patterns for the content, the Content Fragments are the actual content based on those patterns. The Content Fragments represent the content that must be translated.
 
-コンテンツフラグメントは、デジタルアセット管理(DAM)の一部としてAEMでアセットとして管理されます。 これは、すべてパス`/content/dam`の下に配置されるので、重要です。
+Content Fragments are managed as assets in AEM as part of digital asset management (DAM). `/content/dam`
 
-## 推奨されるコンテンツ構造 {#recommended-structure}
+## Recommended Content Structure {#recommended-structure}
 
-以前に推奨されたように、コンテンツアーキテクトと協力して、独自のプロジェクトに適したコンテンツ構造を決定します。 ただし、次に示す構造は、非常に効果的で、実証済みでシンプルで直感的です。
+As previously recommended, work with your content architect to determine the appropriate content structure for your own project. However the following is a proven, simple, and intuitive structure which is quite effective.
 
-`/content/dam`の下に、プロジェクトのベースフォルダーを定義します。
+`/content/dam`
 
 ```text
 /content/dam/<your-project>
 ```
 
-コンテンツをオーサリングする言語を言語ルートと呼びます。 この例では、これは英語で、このパスの下に配置する必要があります。
+The language in which your content is authored is called the language root. In our example it is English and it should be below this path.
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-ローカライズが必要になる可能性のあるプロジェクトコンテンツはすべて、言語ルートの下に配置する必要があります。
+All project content that may need to be localized should be placed under the language root.
 
 ```text
 /content/dam/<your-project>/en/<your-project-content>
 ```
 
-翻訳は、言語ルートの横に兄弟フォルダーとして作成し、その言語のISO-2言語コードを表すフォルダー名を付ける必要があります。 例えば、ドイツ語のパスは次のようになります。
+Translations should be created as sibling folders alongside the language root with their folder name representing the ISO-2 language code of the language. For example, German would have the following path.
 
 ```text
 /content/dam/<your-project>/de
@@ -135,9 +133,9 @@ AEMのコンテンツは、ヘッドレスや従来のWebページであって�
 
 >[!NOTE]
 >
->コンテンツアーキテクトは、通常、これらの言語フォルダーを作成します。 翻訳ジョブが作成されていない場合、AEMは後で翻訳ジョブを作成できません。
+>The content architect generally is responsible for creating these language folders. If they are not created, AEM will not be able to later create translation jobs.
 
-最終的な構造は次のようになります。
+The final structure may look something like the following.
 
 ```text
 /content
@@ -156,39 +154,39 @@ AEMのコンテンツは、ヘッドレスや従来のWebページであって�
         |- ...
 ```
 
-コンテンツの特定のパスは、後で翻訳を設定する際に必要になるので、メモしておく必要があります。
+You should take note of the specific path of your content as it will be required later to configure your translation.
 
 >[!NOTE]
 >
->コンテンツ構造の定義はコンテンツアーキテクトがおこないますが、翻訳スペシャリストと共同作業をおこなうことができます。
+>It is generally the responsibility of the content architect to define the content structure, but can collaborate with the translation specialist.
 >
->完全性を考慮して、ここで詳しく説明します。
+>It is detailed here for completeness.
 
 ## AEM Translation Tools {#translation-tools}
 
-コンテンツフラグメントの概要とコンテンツ構造の重要性を理解したので、このコンテンツの翻訳方法を見てみましょう。 AEMの翻訳ツールは非常に強力ですが、高いレベルで簡単に理解できます。
+Now that you understand what Content Fragments are and the importance of content structure, we can look at how to translate this content. The translation tools in AEM are quite powerful, but are simple to understand at a high level.
 
-* **翻訳コネクタ**  — コネクタは、AEMと使用する翻訳サービスの間のリンクです。
-* **翻訳ルール**  — 特定のパスの下で翻訳するコンテンツを定義します。
-* **翻訳プロジェクト**  — 翻訳プロジェクトは、単一の翻訳作業として扱う必要があるコンテンツを収集し、翻訳の進行状況を追跡します。翻訳対象のコンテンツを送信し、翻訳サービスから返送します。
+* ****
+* ****
+* ****
 
-通常、コネクタはインスタンスに対して1回だけ設定し、ルールはヘッドレスプロジェクトごとに設定します。 その後、翻訳プロジェクトを使用して、コンテンツを翻訳し、その翻訳を継続的に最新の状態に保ちます。
+You generally only set up your connector once for your instance and rules per headless project. Then you use translation projects to translate your content and keep its translations up to date on a continual basis.
 
 ## 次の手順 {#what-is-next}
 
-これで、ヘッドレスな翻訳ジャーニーのこの部分を完了しました。
+Now that you have completed this part of the headless translation journey you should:
 
-* 翻訳に対するコンテンツ構造の重要性を理解します。
-* AEMがヘッドレスコンテンツを保存する方法を理解します。
-* AEMの翻訳ツールについて
+* Understand the importance of content structure to translation.
+* Understand how AEM stores headless content.
+* Be familiar with AEM&#39;s translation tools.
 
-この知識に基づき、次にドキュメント[翻訳コネクタの設定](configure-connector.md)を確認し、AEMを翻訳サービスに接続する方法を学び、AEMヘッドレス翻訳のジャーニーを継続します。|
+[](configure-connector.md)
 
 ## その他のリソース {#additional-resources}
 
-[翻訳コネクタの設定](configure-connector.md)ドキュメントを確認して、ヘッドレス翻訳ジャーニーの次の部分に進むことをお勧めします。以下に、このドキュメントで取り上げたいくつかの概念について詳しく説明する追加のオプションリソースを示します。
+[](configure-connector.md)
 
-* [AEMの基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — コンテンツを快適に検索したり、重要なタスクを実行したりできるAEM UIの基本について説明します。
-* [翻訳するコンテンツの識別](/help/sites-cloud/administering/translation/rules.md)  — 翻訳ルールによって翻訳が必要なコンテンツが識別される方法を説明します。
-* [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md)  — サードパーティの翻訳サービスと統合するための翻訳統合フレームワークの設定方法を説明します。
-* [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md)  - AEMで機械翻訳プロジェクトと人間翻訳プロジェクトの両方を作成および管理する方法を説明します。
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)
+* [](/help/sites-cloud/administering/translation/rules.md)
+* [](/help/sites-cloud/administering/translation/integration-framework.md)
+* [](/help/sites-cloud/administering/translation/managing-projects.md)

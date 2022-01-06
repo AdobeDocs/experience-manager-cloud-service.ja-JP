@@ -1,169 +1,167 @@
 ---
-title: 翻訳コンテンツの公開
-description: 翻訳済みコンテンツを公開し、コンテンツの更新時に翻訳を更新する方法を説明します。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Publish Translated Content
+description: Learn how to publish your translated content and update the translations as the content updates.
+exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 翻訳コンテンツの公開 {#publish-content}
+# Publish Translated Content {#publish-content}
 
-翻訳済みコンテンツを公開し、コンテンツの更新時に翻訳を更新する方法を説明します。
+Learn how to publish your translated content and update the translations as the content updates.
 
 ## これまでの説明内容 {#story-so-far}
 
-AEMヘッドレス翻訳ジャーニーの前のドキュメント（[コンテンツを翻訳](configure-connector.md)）では、AEM翻訳プロジェクトを使用してヘッドレスコンテンツを翻訳する方法を学びました。 次の手順を実行します。
+[](configure-connector.md)You should now:
 
-* 翻訳プロジェクトの概要を説明します。
-* 新しい翻訳プロジェクトを作成できる。
-* 翻訳プロジェクトを使用して、ヘッドレスコンテンツを翻訳します。
+* Understand what a translation project is.
+* Be able to create new translation projects.
+* Use translation projects to translate your headless content.
 
-最初の翻訳が完了したので、この記事では、次の手順でそのコンテンツを公開し、言語ルートの基になるコンテンツの変更に応じて翻訳を更新する方法を説明します。
+Now that your initial translation is complete, this article takes you through the next step of publishing that content and what to do to update your translations as the underlying content in the language root  changes.
 
 ## 目的 {#objective}
 
-このドキュメントでは、ヘッドレスコンテンツをAEMに公開する方法と、翻訳を最新の状態に保つための継続的なワークフローを作成する方法を説明します。 このドキュメントを読んだ後、次の操作を行う必要があります。
+This document helps you understand how to publish headless content in AEM and how to create a continual workflow to keep your translations up-to-date. 読み終えると、以下を達成できます。
 
-* AEMのオーサーとパブリッシュのモデルを理解します。
-* 翻訳済みコンテンツの公開方法を理解します。
-* 翻訳済みコンテンツの継続的な更新モデルを実装できる。
+* Understand the author-publish model of AEM.
+* Know how to publish your translated content.
+* Be able to implement a continual update model for your translated content.
 
-## AEMオーサーとパブリッシュのモデル {#author-publish}
+## AEM&#39;s Author-Publish Model {#author-publish}
 
-コンテンツを公開する前に、AEMのオーサーとパブリッシュのモデルを理解しておくことをお勧めします。 簡略化された用語では、AEMはシステムのユーザーを2つのグループに分割します。
+Before you publish your content, it is a good idea to understand AEM&#39;s author-publish model. In simplified terms, AEM divides users of the system into two groups.
 
-1. コンテンツおよびシステムを作成および管理するユーザー
-1. システムからコンテンツを使用するユーザー
+1. Those who create and manage the content and the system
+1. Those who consume the content from the system
 
-したがって、AEMは物理的に2つのインスタンスに分けられます。
+AEM is therefore physically separated into two instances.
 
-1. **オーサー**&#x200B;インスタンスは、コンテンツ作成者と管理者がコンテンツの作成と管理をおこなうシステムです。
-1. **publish**&#x200B;インスタンスは、コンシューマーにコンテンツを配信するシステムです。
+1. ****
+1. ****
 
-オーサーインスタンスでコンテンツを作成したら、パブリッシュインスタンスに転送して、使用できるようにする必要があります。 オーサーからパブリッシュに転送するプロセスは、**パブリッシュ**&#x200B;と呼ばれます。
+Once content is created on the author instance, it must be transferred to the publish instance for it to be available for consumption. ****
 
-## 翻訳済みコンテンツのパブリッシュ {#publishing}
+## Publishing Your Translated Content {#publishing}
 
-翻訳されたコンテンツの状態に満足したら、ヘッドレスサービスでコンテンツを使用できるように公開する必要があります。 このタスクは通常、翻訳スペシャリストの責任ではありませんが、ワークフロー全体を説明するために、ここに記載されています。
+Once you are happy with the state of your translated content, it must be published so headless services can consume it. This task is usually not the responsibility of the translation specialist, but is documented here to illustrate the complete workflow.
 
 >[!NOTE]
 >
->一般に、翻訳が完了すると、翻訳のスペシャリストは、翻訳の公開準備が整ったことをコンテンツ所有者に通知します。 次に、コンテンツの所有者はそれらを公開します。
+>Generally when the translation is complete, the translations specialist informs the content owners that the translations are ready for publication. The content owners then publish them.
 >
->完全性を考慮して、次の手順を実行します。
+>The following steps are provided for completeness.
 
-翻訳を公開する最も簡単な方法は、プロジェクトアセットフォルダーに移動することです。
+The simplest way to publish the translations is to navigate to the project assets folder.
 
 ```text
 /content/dam/<your-project>/
 ```
 
-このパスには、各翻訳言語のサブフォルダーが含まれ、公開するフォルダーを選択できます。
+Under this path you have sub-folders for each translation language and can choose which to publish.
 
-1. **ナビゲーション** -> **アセット** -> **ファイル**&#x200B;に移動し、プロジェクトフォルダーを開きます。
-1. ここに、言語ルートフォルダーとその他すべての言語フォルダーが表示されます。 発行するローカライズ言語を選択します。
-   ![言語フォルダーを選択](assets/select-language-folder.png)
-1. 「**公開を管理**」をタップまたはクリックします。
-1. **公開を管理**&#x200B;ウィンドウで、**アクション**&#x200B;で「**公開**」が自動的に選択され、**今すぐ**&#x200B;が&#x200B;**スケジュール**&#x200B;で選択されていることを確認します。 「**次へ**」をタップまたはクリックします。
-   ![公開を管理でのオプション](assets/manage-publication-options.png)
-1. 次の&#x200B;**公開を管理**&#x200B;ウィンドウで、適切なパスが選択されていることを確認します。 「**公開**」をタップまたはクリックします。
-   ![公開を管理での範囲](assets/manage-publication-scope.png)
-1. AEMは、画面の下部にポップアップメッセージを表示して、公開アクションを確認します。
-   ![リソース公開バナー](assets/resources-published-message.png)
+1. ************
+1. Here you see the language root folder and all other language folders. Select the localized language or languages that you wish to publish.
+   ![](assets/select-language-folder.png)
+1. ****
+1. ********************「**次へ**」をタップまたはクリックします。
+   ![](assets/manage-publication-options.png)
+1. ********
+   ![](assets/manage-publication-scope.png)
+1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
+   ![](assets/resources-published-message.png)
 
-翻訳されたヘッドレスコンテンツが公開されました。 これで、ヘッドレスサービスでアクセスし、使用できるようになりました。
-
->[!TIP]
->
->複数の翻訳を一度に公開するために、公開時に複数の項目（複数の言語フォルダー）を選択できます。
-
-コンテンツを公開する際には、公開時間のスケジュールなど、このジャーニーの範囲外の追加オプションがあります。 詳しくは、ドキュメントの最後にある「[その他のリソース](#additional-resources)」の節を参照してください。
-
-## 翻訳済みコンテンツの更新 {#updating-translations}
-
-翻訳は、一度きりの練習にはなりません。 通常、コンテンツ作成者は、最初の翻訳が完了した後も、引き続き言語ルートのコンテンツをに追加および変更します。 つまり、翻訳済みコンテンツも更新する必要があります。
-
-特定のプロジェクト要件は、翻訳の更新頻度と、更新を実行する前に実行される判定プロセスを定義します。 翻訳の更新を決定したら、AEMでの処理は非常に簡単です。 最初の翻訳は翻訳プロジェクトに基づいていたので、更新もおこなわれます。
-
-ただし、以前と同様に、翻訳プロジェクトを自動的に作成するか、翻訳プロジェクトを手動で作成するかを選択した場合は、プロセスが少し異なります。
-
-### 自動作成された翻訳プロジェクトの更新 {#updating-automatic-project}
-
-1. **ナビゲーション** -> **アセット** -> **ファイル**&#x200B;に移動します。 AEMのヘッドレスコンテンツは、コンテンツフラグメントと呼ばれるアセットとして保存されます。
-1. プロジェクトの言語ルートを選択します。 この場合、`/content/dam/wknd/en`を選択します。
-1. パネルセレクターをタップまたはクリックし、**参照**&#x200B;パネルを表示します。
-1. 「**言語コピー**」をタップまたはクリックします。
-1. 「**言語コピー**」チェックボックスをオンにします。
-1. 参照パネルの下部にある「**言語コピーを更新**」セクションを展開します。
-1. **プロジェクト**&#x200B;ドロップダウンで、「**既存の翻訳プロジェクトに追加**」を選択します。
-1. **既存の翻訳プロジェクト**&#x200B;ドロップダウンで、最初の翻訳用に作成したプロジェクトを選択します。
-1. 「**開始**」をタップまたはクリックします。
-
-![既存の翻訳プロジェクトへの項目の追加](assets/add-to-existing-project.png)
-
-コンテンツが既存の翻訳プロジェクトに追加されます。 翻訳プロジェクトを表示するには：
-
-1. **ナビゲーション** -> **プロジェクト**&#x200B;に移動します。
-1. 更新したプロジェクトをタップまたはクリックします。
-1. 更新した言語をタップまたはクリックします。
-
-新しいジョブカードがプロジェクトに追加されたことがわかります。 この例では、別のスペイン語の翻訳が追加されました。
-
-![追加の翻訳ジョブが追加されました](assets/additional-translation-job.png)
-
-新しいカードに表示される統計情報（アセット数とコンテンツフラグメント数）が異なる場合があります。 これは、AEMが前回の翻訳以降に変更された内容を認識し、翻訳が必要なコンテンツのみを含むからです。 これには、更新されたコンテンツの再翻訳と、新しいコンテンツの初回翻訳が含まれます。
-
-この時点から、元の翻訳ジョブと同じように[翻訳ジョブを開始し管理します。](translate-content.md#using-translation-project)
-
-### 手動で作成した翻訳プロジェクトの更新 {#updating-manual-project}
-
-翻訳を更新するには、更新されたコンテンツを翻訳する既存のプロジェクトに新しいジョブを追加します。
-
-1. **ナビゲーション** -> **プロジェクト**&#x200B;に移動します。
-1. 更新するプロジェクトをタップまたはクリックします。
-1. ウィンドウ上部の「**追加**」ボタンをタップまたはクリックします。
-1. **タイル**&#x200B;を追加ウィンドウで、「**翻訳ジョブ**」、「**送信**」の順にタップまたはクリックします。
-
-   ![タイルを追加](assets/add-translation-job-tile.png)
-
-1. 新しい翻訳ジョブのカードで、カードの上部にある山形のボタンをタップまたはクリックし、「**ターゲットを更新**」を選択して、新しいジョブのターゲット言語を定義します。
-
-   ![ターゲットの更新](assets/update-target.png)
-
-1. **ターゲット言語を選択**&#x200B;ダイアログで、ドロップダウンを使用して言語を選択し、「**完了**」をタップまたはクリックします。
-
-   ![ターゲット言語の選択](assets/select-target-language.png)
-
-1. 新しい翻訳ジョブのターゲット言語を設定したら、ジョブカードの下部にある省略記号ボタンをタップまたはクリックして、ジョブの詳細を表示します。
-1. 最初に作成したジョブは空です。 「****&#x200B;を追加」ボタンをタップまたはクリックし、翻訳プロジェクトを最初に作成したときと同じようにパスブラウザー[を使用して、ジョブにコンテンツを追加します。](translate-content.md##manually-creating)
+Your translated headless content is now published! It can now be accessed and consumed by your headless services.
 
 >[!TIP]
 >
->パスブラウザーの強力なフィルターは、更新されたコンテンツのみを見つけるのに再び役立ちます。
+>You can select multiple items (i.e. multiple language folders) when publishing in order to publish multiple translations at one time.
+
+There are additional options when publishing your content, such as scheduling a publication time, which are beyond the scope of this journey. [](#additional-resources)
+
+## Updating Your Translated Content {#updating-translations}
+
+Translation is rarely a one-off exercise. Typically your content authors continue to add to and modify your content in the language root after initial translation is complete. This means that you need to also update your translated content.
+
+Specific project requirements define how often you need to update your translations and what decision process is followed before performing an update. Once you have decided to update your translations, the process in AEM is very simple. As the initial translation was based on a translation project, so too are any updates.
+
+However as before, the process differs slightly if you chose to automatically create your translation project or manually create your translation project.
+
+### Updating an Automatically Created Translation Project {#updating-automatic-project}
+
+1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
+1. Select the language root of your project. `/content/dam/wknd/en`
+1. ****
+1. ****
+1. ****
+1. ****
+1. ********
+1. ****
+1. ****
+
+![](assets/add-to-existing-project.png)
+
+The content is added to the existing translation project. To view the translation project:
+
+1. ********
+1. Tap or click the project that you just updated.
+1. Tap or click the language or one of the languages that you updated.
+
+You see that a new job card was added to the project. In this example, another Spanish translation was added.
+
+![](assets/additional-translation-job.png)
+
+You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
+
+[](translate-content.md#using-translation-project)
+
+### Updating a Manually Created Translation Project {#updating-manual-project}
+
+To update a translation you can add a new job to your existing project that is responsible for translating the updated content.
+
+1. ********
+1. Tap or click the project that you need to update.
+1. ****
+1. ************
+
+   ![](assets/add-translation-job-tile.png)
+
+1. ****
+
+   ![](assets/update-target.png)
+
+1. ********
+
+   ![](assets/select-target-language.png)
+
+1. Once your new translation job&#39;s target language is set, tap or click on the ellipsis button at the bottom of the job card to view the details of the job.
+1. The job is empty when first created. ****[](translate-content.md##manually-creating)
+
+>[!TIP]
 >
->パスブラウザーの詳細については、[追加リソースの節を参照してください。](#additional-resources)
+>The path browser&#39;s powerful filters can again be useful to find just the content that has been updated.
+>
+>[](#additional-resources)
 
-この時点から、元の翻訳ジョブと同じように[翻訳ジョブを開始し管理します。](translate-content.md#using-translation-project)
+[](translate-content.md#using-translation-project)
 
-## ジャーニー? {#end-of-journey}
+## End of the Journey? {#end-of-journey}
 
-おめでとうございます。ヘッドレスな翻訳のジャーニーを完了しました。 次の手順を実行します。
+おめでとうございます。You have completed the headless translation journey! You should now:
 
-* ヘッドレスコンテンツ配信の概要を説明します。
-* ヘッドレス機能についての基本的な理解を持っているAEM。
-* AEMの翻訳機能と、ヘッドレスコンテンツとの関連を理解します。
-* 独自のヘッドレスコンテンツの翻訳を開始できる。
+* Have an overview of what headless content delivery is.
+* Have a basic Understanding AEM&#39;s headless features.
+* Understand AEM&#39;s translation features and how they related to headless content.
+* Have the ability to start translating your own headless content.
 
-これで、AEMで独自のヘッドレスコンテンツを翻訳する準備が整いました。 ただし、AEMは強力なツールであり、多くの追加オプションを使用できます。 このジャーニーで確認した機能の詳細については、「[その他のリソース](#additional-resources)」の節で説明している追加リソースを参照してください。
+You are now ready to translate your own headless content in AEM. However AEM is a powerful tool and there are many additional options available. [](#additional-resources)
 
 ## その他のリソース {#additional-resources}
 
-* [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md)  — 翻訳プロジェクトの詳細と、人間による翻訳ワークフローや多言語プロジェクトなどの追加機能について説明します。
-* [オーサリングの概念](/help/sites-cloud/authoring/getting-started/concepts.md)  - AEMのオーサーとパブリッシュのモデルについて詳しく説明します。このドキュメントでは、コンテンツフラグメントではなくページのオーサリングに焦点を当てていますが、理論は依然として当てはまります。
-* [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)  — コンテンツを公開する際に使用できる追加機能について説明します。このドキュメントでは、コンテンツフラグメントではなくページのオーサリングに焦点を当てていますが、理論は依然として当てはまります。
-* [オーサリング環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)  - AEMは、堅牢なパスブラウザーを含む、コンテンツを整理および編集するための様々なメカニズムを提供します。
+* [](/help/sites-cloud/administering/translation/managing-projects.md)
+* [](/help/sites-cloud/authoring/getting-started/concepts.md)This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)

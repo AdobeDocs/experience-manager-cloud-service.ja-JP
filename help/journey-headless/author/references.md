@@ -1,99 +1,96 @@
 ---
-title: コンテンツフラグメントでの参照の使用について説明します
-description: コンテンツフラグメント、他のフラグメント、およびその他のアセット（メディア）での参照の使用について説明します。 ヘッドレスCMSオーサリングのためのネストされたフラグメントの必要性と仕組みを紹介します。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about using references in Content Fragments
+description: Learn about using references in Content Fragments, for content, other fragments and other assets (media). Introduce the necessity for, and the mechanics of, nested fragments for Headless CMS Authoring.
+exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
+# Learn about using references in Content Fragments {#author-headless-references}
 
-# コンテンツフラグメントでの参照の使用について説明します {#author-headless-references}
+## The Story so Far {#story-so-far}
 
-## 今までの話 {#story-so-far}
+[](overview.md)[](introduction.md)
 
-[AEMヘッドレスコンテンツ作成者ジャーニー](overview.md)の最初に、[はじめに](introduction.md)では、ヘッドレス作成に関連する基本的な概念と用語について説明しました。
+You have learned the basics of Headless CMS Authoring, with an introduction to authoring with AEMaaCS and in particular, authoring Content Fragments.
 
-ヘッドレスCMSオーサリングの基本、特にAEMaaCSでのオーサリングの概要、特にコンテンツフラグメントのオーサリングについて学習しました。
-
-この記事はこれらを基に構築されており、参照を使用してAEMヘッドレスプロジェクト用に独自のコンテンツを作成する方法を理解できます。
+This article builds on these so you understand how to use references to author your own content for your AEM headless project.
 
 ## 目的 {#objective}
 
 * **オーディエンス**：経験者
-* **目的**:ヘッドレスCMSオーサリングの参照の使用を紹介します。使用可能な参照の種類と目的は次のとおりです。
+* **** What sorts of references are available, and what are their purposes:
 
    * コンテンツ参照
-   * アセット/メディア参照
+   * Asset/Media References
    * フラグメント参照
-   * テキストブロック内からのアドホック参照
+   * Ad hoc references from within a text block
 
-## 参照とは {#what-are-references}
+## What are references {#what-are-references}
 
-参照は、他のコンテンツ、アセット（画像など）、その他のフラグメントなど、リソースを接続するための単なるメカニズムです。 非常に似ていますが、いくつか違いがあります。
+References are simply a mechanism for connecting your resources, be it other content, assets (as in images), or other fragments. Although very similar, there are some differences.
 
-一部の参照には専用のデータ型（コンテンツ参照やフラグメント参照など）があり、それ以外の参照は、テキストブロック内の参照として追加するだけです（アセット参照やアドホック参照など）。
+Some references have dedicated data-types (for example, Content References and Fragment References), whereas others are simply added as a reference within a text block (asset references and ad hoc references).
 
-![コンテンツフラグメント — リファレンス](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## コンテンツ参照 {#content-references}
 
-コンテンツ参照はそれを行います。コンテンツ参照を使用すると、他のコンテンツを参照できます。 これにより、コンテンツ項目を選択できるブラウザーが開きます。
+Content References do just that - they allow you to reference any other content. This will open a browser that allows you to select the content item.
 
-## アセット/メディア参照 {#assets-media-references}
+## Asset/Media References {#assets-media-references}
 
-アセット（画像やメディアなど）は、「**アセットを挿入**」オプションを使用して、テキストブロック内で参照できます。 これにより、アセットを選択できるブラウザーが開きます。
+**** This will open a browser that allows you to select the asset.
 
-![コンテンツフラグメント — アセットの挿入](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## フラグメント参照 {#fragment-references}
 
-繰り返しますが、フラグメント参照はそれだけを行い、別のフラグメントを参照できます。 これが重要な理由は、もう少し説明が必要なのです。
+Again Fragment References do just that - they allow you to reference another fragment. Why this is significant needs a bit more explanation.
 
-例えば、次のコンテンツフラグメントモデルを定義できます。
+For example, you might have the following Content Fragment Models defined:
 
 * City
 * 会社
 * Person
 * awards（受賞歴）
 
-簡単に見えるが、もちろん会社にはCEOと従業員がいる….これらはすべて人で、それぞれが人として定義されます。
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
 
-そして、1人の人に賞（または2つ）を与えることができます。
+And a Person can have an Award (or maybe two).
 
-* マイ会社 — 会社
-   * CEO — 担当者
-   * 従業員 — 個人
-      * 個人賞 — 賞
+* My Company - Company
+   * CEO - Person
+   * Employee(s) - Person
+      * Personal Award(s) - Award
 
-それはスターター向けです 複雑さに応じて、賞は会社固有の場合もあれば、会社が特定の都市に主なオフィスを持つ場合もあります。
+And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
 
-これらの相互関係は、自分（作成者）とヘッドレスアプリケーションの両方が理解できるように、フラグメント参照を使用して実現できます。
+Representing these interrelationships can be achieved with Fragment References, as they are understood by both you (the author) and the headless applications.
 
-作成者は、（コンテンツフラグメントモデルの作成時にコンテンツアーキテクトがおこなう）これらの関係の定義に対しては責任を負いませんが、参照を認識し編集する方法を理解しておく必要があります。
+As an author you&#39;re not responsible for defining these relationships (that&#39;s done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
 -->
 
-### ネストされたフラグメントの作成方法 {#author-nested-fragment}
+### How to author nested fragments {#author-nested-fragment}
 
-フラグメント参照のオーサリングは、かなり簡単です（ただし、通常、フィールドには「**フラグメント参照**」というラベルは付きません）。 参照を直接入力するか、（可能性が高い場合は）フォルダーアイコンを選択してブラウザーを開き、必要なフラグメントに移動して選択できます。
+**** You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need.
 
-![コンテンツフラグメント — リファレンス](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-コンテンツフラグメントモデルの定義では、次の操作を行います。
+The definition of the Content Fragment Model controls:
 
-* 複数の参照の追加を選択できるかどうか
-* 選択可能なコンテンツフラグメントのモデルタイプ。コンテンツフラグメントモデルは、参照で許可されるフラグメントモデルを定義するので、AEMは、これらのモデルに基づくフラグメントのみを表示します。
+* whether you can select to add multiple references
+* the model types of Content Fragments that you can select; the Content Fragment Model defines the fragment models allowed for the reference, so AEM only presents fragments based on those models.
 
-### ネストされたフラグメントのナビゲート方法 {#navigate-nested-fragment}
+### How to navigate nested fragments {#navigate-nested-fragment}
 
-コンテンツフラグメントエディターの「**構造ツリー**」タブを使用すると、フラグメントで参照されているフラグメント間を移動した後、それらに含まれる参照間を移動できます。 参照を選択すると、そのフラグメントが編集用に開きます。
+****&#x200B;参照を選択すると、そのフラグメントが編集用に開きます。
 
 >[!NOTE]
 >
@@ -101,15 +98,15 @@ ht-degree: 7%
 
 ![コンテンツフラグメント構造ツリー](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
 
-## アドホック参照 {#adhoc-references}
+## Ad Hoc References {#adhoc-references}
 
-アドホック参照は、テキストブロック内のシンプルなリンクとして追加できます。
+Ad hoc references can be added as a simple link within a block of text:
 
-![コンテンツフラグメント — アドホック参照](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
 ## 次の手順 {#whats-next}
 
-コンテンツフラグメントの参照と構造について学習したので、次の手順は[メタデータとタグ付け](metadata-tagging.md)について学習します。 コンテンツフラグメントのメタデータとタグを定義する方法を紹介し、説明します。
+[](metadata-tagging.md)This will introduce and discuss how you can define metadata and tags for your Content Fragments.
 
 ## その他のリソース {#additional-resources}
 
@@ -120,18 +117,18 @@ ht-degree: 7%
       * [アセットフォルダーへの設定の適用](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [コンテンツフラグメントの作成](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [バリエーション — コンテンツフラグメントのオーサリング](/help/assets/content-fragments/content-fragments-variations.md)
+   * [Variations - Authoring Content Fragments](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [コンテンツフラグメントモデル — データタイプ](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [コンテンツフラグメントモデル — プロパティ](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
 * 「はじめる前に」ガイド 
    * [アセットフォルダーのヘッドレス作成のクイック開始ガイド](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
 
-* AEMヘッドレスコンテンツアーキテクトジャーニー
+* AEM Headless Content Architect Journey
 
-* AEMヘッドレス翻訳ジャーニー
+* AEM Headless Translation Journey

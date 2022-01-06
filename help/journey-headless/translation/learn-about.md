@@ -1,26 +1,24 @@
 ---
-title: ヘッドレスコンテンツと、AEMでの翻訳方法について説明します
-description: ヘッドレスな概念、AEMとのマッピング方法、AEM翻訳の理論について説明します。
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+title: Learn about headless content and how to translate it in AEM
+description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
+exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 32%
 
 ---
 
-# ヘッドレスコンテンツと、AEMでの翻訳方法について説明します {#learn-about}
+# Learn about headless content and how to translate it in AEM {#learn-about}
 
-ヘッドレスな概念、AEMとのマッピング方法、AEM翻訳の理論について説明します。
+Learn headless concepts, how they map to AEM, and the theory of AEM translation.
 
 ## 目的 {#objective}
 
-このドキュメントでは、ヘッドレスコンテンツ配信、AEMによるヘッドレスのサポート、およびコンテンツの翻訳方法について説明します。 ドキュメントを読めば、以下が可能です。
+This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. ドキュメントを読めば、以下が可能です。
 
-* ヘッドレスコンテンツ配信の基本概念を理解します。
-* ヘッドレスと翻訳のサポート方法については、AEMでの理解を深めてください。
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
 ## フルスタックコンテンツ配信 {#full-stack}
 
@@ -28,18 +26,18 @@ ht-degree: 32%
 
 ![従来のフルスタック CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-フルスタックCMSでは、コンテンツを操作する機能はすべてCMS内にあります。 システムの機能は、CMS スタックの異なるコンポーネントを構成します。フルスタックソリューションには多くの利点があります。
+In a full-stack CMS, all of the functionality for manipulating content is in the CMS. システムの機能は、CMS スタックの異なるコンポーネントを構成します。フルスタックソリューションには多くの利点があります。
 
-* 維持するシステムが1つあります。
+* There is one system to maintain.
 * コンテンツを一元的に管理できる。
 * システムのすべてのサービスが統合されている。
 * コンテンツのオーサリングはシームレスである。
 
-したがって、新しいチャネルを追加する必要がある場合や、新しいタイプのエクスペリエンスをサポートする必要がある場合は、1つ以上の新しいコンポーネントをスタックに挿入でき、変更を加える場所は1つだけです。
+So if new channel must be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
 
 ![スタックへの新しいチャネルの追加](/help/journey-headless/developer/assets/adding-channel.png)
 
-ただし、スタック内の他の項目を変更に合わせて調整する必要があるので、スタック内の依存関係の複雑さがすぐに明らかになります。
+However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
 
 ## ヘッドレスのヘッド {#the-head}
 
@@ -49,34 +47,34 @@ ht-degree: 32%
 
 ![ヘッドレス CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消費サービスは、ARエクスペリエンス、Webショップ、モバイルエクスペリエンス、プログレッシブWebアプリ(PWA)などで、ヘッドレスCMSからコンテンツを取り込み、独自のレンダリングを提供します。 ヘッドレス CMS は、コンテンツに合わせて独自のヘッドを提供します。
+The consuming services, be they AR experiences, a web shop, mobile experiences, progressive web apps (PWAs), etc., take in content from the headless CMS and provide their own rendering. ヘッドレス CMS は、コンテンツに合わせて独自のヘッドを提供します。
 
 ヘッドを省略することで、複雑さが減り、CMS をシンプルになります。また、コンテンツのレンダリングの責任は、実際にコンテンツを必要とするサービスに移ります。多くの場合、サービスのほうがレンダリングに適しています。
 
-## AEMのヘッドレスコンテンツの翻訳 {#translating-in-aem}
+## Translating Headless Content in AEM {#translating-in-aem}
 
-AEMは、従来のWebページを作成、管理、配信する堅牢なツールに加えて、コンテンツの自己完結型の選択範囲を作成し、ヘッドレスで提供する機能も備えています。
+In addition to offering robust tools to create, manage, and deliver traditional webpages in the full-stack fashion, AEM also offers the ability to author self-contained selections of content and serve them headlessly.
 
-AEMの機能により、ヘッドレス、フルスタック、または両方のモデルで同時にコンテンツを配信できます。 翻訳スペシャリストの場合、同じ翻訳ツールセットを両方のタイプのコンテンツに適用でき、コンテンツを翻訳するための統一されたアプローチを提供します。
+The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
 
-このジャーニーでは、AEMによるコンテンツの翻訳方法の詳細について学習しますが、概念はシンプルです。
+Further in the journey you will learn the details about how AEM translates content, but at a high level, the concept is simple:
 
-1. 翻訳統合フレームワークを設定して、翻訳サービスへの接続を定義します。
-1. 翻訳ルールを使用して翻訳するコンテンツを定義します。
-1. 翻訳プロジェクトを作成して、コンテンツを収集し、翻訳サービスに送信して、結果を受け取ります。
-1. 翻訳済みコンテンツをレビューして公開します。
+1. Define a connection to a translation service by configuring the translation integration framework.
+1. Define which content should be translated using translation rules.
+1. Create a translation project to harvest the content, send it to the translation service, and receive the results.
+1. Review and publish the translated content.
 
 ## 次の手順 {#what-is-next}
 
-AEMヘッドレス翻訳ジャーニーを始めていただきありがとうございます。 ドキュメントを読んだので、次を理解しているはずです。
+Thanks for getting started on your AEM headless translation journey! ドキュメントを読んだので、次を理解しているはずです。
 
-* ヘッドレスコンテンツ配信の基本概念を理解します。
-* ヘッドレスと翻訳のサポート方法については、AEMでの理解を深めてください。
+* Understand the basic concepts of headless content delivery.
+* Be familiar with how AEM supports headless and translation.
 
-この知識に基づき、次に「 AEMヘッドレス翻訳の概要](getting-started.md) 」のドキュメントを確認し、AEMヘッドレスコンテンツの管理方法と翻訳ツールの理解を深めることで、AEMヘッドレス翻訳のジャーニーを継続します。[
+[](getting-started.md)
 
 ## その他のリソース {#additional-resources}
 
-[AEMヘッドレス翻訳の概要を確認して、ヘッドレス翻訳のジャーニーの次の部分に進むことをお勧めしますが、以下に、このドキュメントで取り上げたいくつかの概念について詳しく説明する、追加のオプションリソースを示します。](getting-started.md)
+[](getting-started.md)
 
-* [MSMと翻訳](/help/sites-cloud/administering/msm-and-translation.md)  - AEM Multi-Site Managerの詳細と翻訳ツールとの連携
+* [](/help/sites-cloud/administering/msm-and-translation.md)

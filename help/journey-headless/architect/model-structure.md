@@ -1,29 +1,26 @@
 ---
-title: AEMでのコンテンツフラグメントモデルの作成について説明します。
-description: コンテンツフラグメントモデルを使用して、ヘッドレス CMS のコンテンツをモデリングする際の概念と仕組みについて説明します。
-index: true
-hide: false
-hidefromtoc: false
+title: Learn about Creating Content Fragment Models in AEM
+description: Learn about the concepts and mechanics of modeling content for your Headless CMS using Content Fragments Models.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 16%
 
 ---
 
-# AEMでのコンテンツフラグメントモデルの作成について説明します。 {#architect-headless-content-fragment-models}
+# Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
 
-## 今までの話 {#story-so-far}
+## The Story so Far {#story-so-far}
 
-の最初 [AEMヘッドレスコンテンツ作成者ジャーニー](overview.md) の [AEMを使用したヘッドレス向けコンテンツモデリングの基本](basics.md) ヘッドレス向けのオーサリングに関連する基本概念と用語について説明しました。
+[](overview.md)[](basics.md)
 
-この記事はこれらを基に構築され、AEMヘッドレスプロジェクト用に独自のコンテンツフラグメントモデルを作成する方法を理解できます。
+This article builds on these so you understand how to create your own Content Fragment Models for your AEM headless project.
 
 ## 目的 {#objective}
 
 * **オーディエンス**：初心者
-* **目的**:コンテンツフラグメントモデルを使用したヘッドレス CMS のコンテンツのモデリングの概念と仕組み
+* ****
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -44,52 +41,52 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 その後、コンテンツフラグメントモデルを作成し、構造を定義できます。これは、ツール／アセット／コンテンツフラグメントモデルで実行できます。
 
-![ツールのコンテンツフラグメントモデル](assets/cfm-tools.png)
+![](assets/cfm-tools.png)
 
-これを選択した後、モデルの場所に移動し、「 」を選択します。 **作成**. ここでは、様々なキーの詳細を入力できます。
+**** Here you can enter various key details.
 
-オプション **モデルを有効にする** は、デフォルトで有効になっています。 つまり、モデルは、保存されるとすぐに（コンテンツフラグメントの作成で）使用できるようになります。 必要に応じて、この機能を無効にすることができます。既存のモデルを後で有効（または無効）にすることもできます。
+**** This means that your model will be available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
 
-![コンテンツフラグメントモデルを作成](/help/assets/content-fragments/assets/cfm-models-02.png)
+![](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-次で確認： **作成** そうすれば **開く** 構造の定義を開始するモデル。
+********
 
-## コンテンツフラグメントモデルの定義 {#defining-content-fragment-models}
+## Defining Content Fragment Models {#defining-content-fragment-models}
 
-最初に新しいモデルを開くと、左側に大きな空白スペースと、 **データタイプ** 右：
+****
 
-![空のモデル](/help/assets/content-fragments/assets/cfm-models-03.png)
+![](/help/assets/content-fragments/assets/cfm-models-03.png)
 
-では、何をすればよいのでしょうか。
+So - what&#39;s to be done?
 
-インスタンスを **データタイプ** を左側のスペースに配置します。既にモデルを定義しています。
+****
 
-![フィールドの定義](/help/assets/content-fragments/assets/cfm-models-04.png)
+![](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-データタイプを追加したら、 **プロパティ** そのフィールドの これらは、使用するタイプによって異なります。 次に例を示します。
+**** These depend on the type being used. 次に例を示します。
 
-![データプロパティ](/help/assets/content-fragments/assets/cfm-models-05.png)
+![](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-フィールドは必要な数だけ追加できます。 次に例を示します。
+You can add as many fields as you need. 次に例を示します。
 
 ![コンテンツフラグメントモデル](/help/assets/content-fragments/assets/cfm-models-07.png)
 
-### コンテンツ作成者 {#your-content-authors}
+### Your Content Authors {#your-content-authors}
 
-コンテンツ作成者には、モデルの作成に使用した実際のデータタイプとプロパティが表示されません。 つまり、特定のフィールドに対するヘルプと情報を提供する必要が生じる場合があります。 基本情報にはフィールドラベルとデフォルト値を使用できますが、プロジェクト固有のドキュメントを検討する必要がある場合もあります。
+Your content authors do not see the actual Data Types and Properties that you&#39;ve used to create your models. This means that you might have to provide help and information on how they complete specific fields. For basic information you can use the Field Label and Default Value, but more complex cases project specific documentation might need to be considered.
 
 >[!NOTE]
 >
 >「その他のリソース - コンテンツフラグメントモデル」を参照してください。
 
-## コンテンツフラグメントモデルの管理 {#managing-content-fragment-models}
+## Managing Content Fragment Models {#managing-content-fragment-models}
 
 <!-- needs more details -->
 
-コンテンツフラグメントモデルの管理には、次のものが含まれます。
+Managing your Content Fragment Models involves:
 
-* これらを有効（または無効）にする — 作成者はコンテンツフラグメントを作成する際に使用できます。
-* 削除 — 削除は常に必要ですが、コンテンツフラグメントに既に使用されているモデル、特に公開済みのフラグメントの削除に注意する必要があります。
+* Enabling (or disabling) them - this makes them available for authors when creating Content Fragments.
+* Deleting - deletion is always needed, but you need to be aware of deleting a model that is already used for Content Fragments, in particular fragments that are already published.
 
 ## 公開 {#publishing}
 
@@ -99,21 +96,21 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->作成者が、モデルがまだ公開されていないコンテンツフラグメントを公開しようとすると、選択リストにその旨が表示され、モデルはフラグメントと共に公開されます。
+>If an author tries to publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
 
-モデルが公開されるとすぐに、 *ロック済み* 作成者の読み取り専用モードに切り替えます。 これは、特にパブリッシュ環境で、既存の GraphQL スキーマやクエリにエラーを引き起こす変更を防ぐことを目的としています。 コンソールには次のように示されます。 **ロック済み**.
+** This aims to prevent changes that would result in errors to existing GraphQL schemas and queries, especially on the publish environment. ****
 
-モデルが **ロック済み** （読み取り専用モードで）モデルの内容と構造を表示できますが、直接編集することはできません。ただし、 **ロック済み** モデルをコンソールまたはモデルエディターから取得します。
+********
 
 ## 次の手順 {#whats-next}
 
-これで基本を学習したので、次の手順は独自のコンテンツフラグメントモデルの作成を開始することです。
+Now that you have learned the basics, the next step is to start creating your own Content Fragment Models.
 
 ## その他のリソース {#additional-resources}
 
 * [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)  — このページは主に次の項目に基づいています **サイト** コンソールですが、ほとんどの機能は、に移動したり、アクションを実行したりする場合にも関連します。 **コンテンツフラグメントモデル** の下に **Assets** コンソール。
+* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
 
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 
@@ -131,7 +128,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
       * [コンテンツフラグメントモデルを非公開にする](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [ロック（公開）されたコンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+      * [Locked (Published) Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 「はじめる前に」ガイド 
 
