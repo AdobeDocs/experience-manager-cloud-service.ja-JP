@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f6b9a8d09ae0bbc57ec2ba30694f3c1b0b163379
+source-git-commit: 98862df8b69657cf3a8a4a0f54d1285b3cab526f
 workflow-type: tm+mt
 source-wordcount: '3441'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -664,7 +664,7 @@ ht-degree: 83%
             + [コンポーネントの概要](/help/implementing/developing/components/overview.md)
             + [テンプレート](/help/implementing/developing/components/templates.md)
             + [コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-            + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/features/style-system.html)
+            + [スタイルシステム](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=ja)
             + [コンテンツサービス用の JSON エクスポーター](/help/implementing/developing/components/json-exporter.md)
             + [コンポーネントの JSON 書き出しの有効化](/help/implementing/developing/components/enabling-json-exporter.md)
             + [画像エディター](/help/implementing/developing/components/image-editor.md)
@@ -724,7 +724,7 @@ ht-degree: 83%
             + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ja)
       +  対応のハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
          + [SPA の概要およびガイド](/help/implementing/developing/hybrid/introduction.md)
          + [SPA WKND チュートリアル](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [React の使用を開始する](/help/implementing/developing/hybrid/getting-started-react.md)
@@ -740,7 +740,7 @@ ht-degree: 83%
          + [AEM 内での外部 SPA の編集](/help/implementing/developing/hybrid/editing-external-spa.md)
          + [SPA の複合コンポーネント](/help/implementing/developing/hybrid/composite-components.md)
          + [サーバーサイドレンダリング](/help/implementing/developing/hybrid/ssr.md)
-         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
+         + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html)
          + [ローンチの統合](/help/implementing/developing/hybrid/launch-integration.md)
          + [SPA リファレンスドキュメント](/help/implementing/developing/hybrid/reference-materials.md)
    + 開発者ツール {#developer-tools}
@@ -760,7 +760,7 @@ ht-degree: 83%
       + [ContextHub の診断](/help/implementing/developing/personalization/contexthub-diagnostics.md)
       + [ContextHub の拡張](/help/implementing/developing/personalization/extending-contexthub.md)
       + [ContextHub API](/help/implementing/developing/personalization/contexthub-api.md)
-      + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
+      + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
       + App Builder を使用したAEMの拡張{#app-builder}
          + [Extending AEM using Extending Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
