@@ -2,10 +2,10 @@
 title: 非推奨（廃止予定）の API
 description: リリースノート（ [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の非推奨（廃止予定）の API と削除された API）。
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
+source-git-commit: d7fc88481ab0d85f62ad0b9891c286cee92edfae
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 48%
+source-wordcount: '855'
+ht-degree: 47%
 
 ---
 
@@ -109,16 +109,16 @@ ht-degree: 48%
     <td>2021/7/30</td>
   </tr>
   <tr>
-    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info</td>
+    <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br></td>
     <td>Apache Felix メタタイプと SCR API は非推奨（廃止予定）です。OSGi メタタイプと Declarative Service API を代わりに使用してください。</td>
     <td>2021/5/27</td>
-    <td>2021/8/26</td>
+    <td>削除</td>
   </tr>
   <tr>
-    <td>oorg.slf4j.impl</td>
+    <td>org.slf4j.impl</td>
     <td>Log implementation classes are not compatible with AEM as a Cloud Service.</td>
     <td>7/4/21</td>
-    <td>2021/8/26</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
@@ -136,19 +136,19 @@ ht-degree: 48%
     <td>org.apache.sling.startupfilter<br>com.adobe.granite.crypto.spi<br>com.adobe.granite.crpyto.spi.base<br>com.adobe.agl.impl.data.icudt40b<br>com.adobe.agl.impl.data.icudt40b.brkitr<br>com.adobe.agl.impl.data.icudt40b.coll<br>com.adobe.agl.impl.data.icudt40b.rbnf<br>com.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
     <td>Legacy AEM 6.x API.</td>
     <td>4/8/19</td>
-    <td>09/29/21</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.apache.sling.discovery.commons<br>org.apache.sling.discovery.commons.providers<br>org.apache.sling.discovery.commons.providers.base<br>org.apache.sling.discovery.commons.providers.spi<br>org.apache.sling.discovery.commons.providers.spi.base<br>org.apache.sling.discovery.commons.providers.util</td>
     <td>This API is not supported in Cloud Service.</td>
     <td>9/30/21</td>
-    <td>10/30/21</td>
+    <td>削除</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.vault.util.xml<br>org.apache.jackrabbit.vault.util.xml.serialize</td>
     <td>Util Classes related to Apache Xerces are removed in subsequent releases causing a major version change. As these utils are for internal use in Filevault the API is getting deprecated from public API surface.</td>
     <td>9/1/21</td>
-    <td>10/30/21</td>
+    <td>削除</td>
   <tr>
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>Legacy AEM 6.x API.</td>
