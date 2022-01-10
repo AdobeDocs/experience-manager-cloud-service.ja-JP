@@ -2,13 +2,13 @@
 title: アセットインサイト
 description: サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡します。
 contentOwner: AG
-feature: アセットインサイト、アセットレポート
+feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
-workflow-type: ht
-source-wordcount: '813'
-ht-degree: 100%
+source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 89%
 
 ---
 
@@ -98,14 +98,22 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. 「**[!UICONTROL インサイト設定]**」カードをクリックします。
-1. ウィザードで、データセンターを選択し、会社名、ユーザー名、共有暗号鍵などの資格情報を指定します。
 
-   ![[!DNL Experience Manager]](assets/insights_config2.png)のアセットインサイトに Adobe Analytics を設定する
+1. Analytics Web サービスにアクセスする情報については、 **[!UICONTROL Analytics]** > **[!UICONTROL 管理者]** > **[!UICONTROL 管理ツール]** > **[!UICONTROL カンパニー設定]** > **[!UICONTROL Web サービス]** をクリックし、 **[!UICONTROL 共有暗号鍵]** キー。
+
+   ウィザードで、 **[!UICONTROL データセンター]**&#x200B;をクリックし、 **[!UICONTROL 会社]**, Web サービス **[!UICONTROL ユーザー名]**&#x200B;をクリックし、 **[!UICONTROL 共有暗号鍵]** キー。
+
+   「**[!UICONTROL 認証]**」をクリックします。
+
+   ![[!DNL Experience Manager]](assets/analytics-insight-config.png)のアセットインサイトに Adobe Analytics を設定する
 
    *図：[!DNL Experience Manager]*&#x200B;のアセットインサイトに Adobe Analytics を設定する
 
-1. 「**[!UICONTROL 認証]**」をクリックします。[!DNL Experience Manager] によって資格情報が認証されたら、**[!UICONTROL レポートスイート]**&#x200B;リストから、アセットインサイトでデータをフェッチする Adobe Analytics レポートスイートを選択します。「**[!UICONTROL 追加]**」をクリックします。
+1. 認証が成功すると、ドロップダウンにレポートスイートが表示されます。 Adobe Analytics **[!UICONTROL レポートスイート]** アセットインサイトでデータを取得する場所から。 「**[!UICONTROL 追加]**」をクリックします。
+
 1. [!DNL Experience Manager] でレポートスイートが設定されたら、「**[!UICONTROL 完了]**」をタップします。
+
+詳しくは、 [Adobe Analytics Web サービス](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### ページトラッカー {#page-tracker}
 
