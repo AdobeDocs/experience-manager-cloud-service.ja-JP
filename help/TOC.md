@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c136703a14af8a0366fb39c00b7b73f2d320a448
+source-git-commit: 95e3a8f163c0f66212cfb50b30323f63a2292ce1
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3453'
 ht-degree: 84%
 
 ---
@@ -347,6 +347,7 @@ ht-degree: 84%
       + [オプション — Dynamic Mediaの設定、一般設定](/help/assets/dynamic-media/dm-general-settings.md)
       + [オプション — Dynamic Media、公開設定の設定](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)
+      + [Dynamic Media Alias アカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)
       + [Dynamic Media のアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md)
       + [Dynamic Media アセットを管理する](/help/assets/dynamic-media/managing-assets.md)
       + [画質最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
