@@ -1,10 +1,11 @@
 ---
 title: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
-description: 'AMS から AEM as a Cloud Service への Dispatcher 設定の移行 '
+description: AMS から AEM as a Cloud Service への Dispatcher 設定の移行
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
-source-wordcount: '1447'
+source-wordcount: '1446'
 ht-degree: 100%
 
 ---
@@ -248,6 +249,6 @@ $ docker_run.sh out docker.for.mac.localhost:4503 8080
 
 ### 新しい Dispatcher 設定の使用
 
-バリデーターが問題を報告しなくなり、Docker コンテナがエラーや警告を出さずに起動した場合、設定を Git リポジトリーのサブディレクトリ `dispatcher/src` に移動する準備が整いました。
+おめでとうございます。問題を報告しなくなり、Docker コンテナがエラーや警告を出さずに起動した場合、設定を Git リポジトリーのサブディレクトリ `dispatcher/src` に移動する準備が整いました。
 
 **AMS Dispatcher 設定のバージョン 1 を使用しているお客様は、カスタマーサポートにお問い合わせください。上記の手順が実施できるように、バージョン 1 からバージョン 2 へ移行できるように支援いたします。**
