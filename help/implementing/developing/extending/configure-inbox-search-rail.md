@@ -1,7 +1,8 @@
 ---
 title: インボックスの検索フィルターを設定する方法
 description: インボックス項目の検索フィルターを設定する方法を説明します。
-source-git-commit: ee32ab3659ee4696caa55b945b6b7895d94914a9
+exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '1001'
 ht-degree: 100%
@@ -151,5 +152,3 @@ ht-degree: 100%
 ![フィルターページ](assets/apply-filters.png)
 
 述語の設定の管理について詳しくは、[検索フォームの設定](search-forms.md)を参照してください。
-
-
