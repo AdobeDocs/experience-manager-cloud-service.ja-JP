@@ -1,13 +1,13 @@
 ---
 title: Screens コンテンツプロバイダーの使用
 description: ここでは、Screens コンテンツプロバイダーを使用してコンテンツを作成する方法について説明します。
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '354'
 ht-degree: 100%
 
 ---
-
 
 # Screens コンテンツプロバイダーの使用 {#using-screens-content-provider}
 
@@ -56,8 +56,6 @@ ht-degree: 100%
    * チャネル
    * ロケーション
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 これで、Screens コンテンツプロバイダーに移動する方法を学びました。次に、「[Screens as a Cloud Service でのプロジェクトの作成と管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=ja)」ドキュメントを参照して、Screens as a Cloud Service ジャーニーを続けてください。
-
-
