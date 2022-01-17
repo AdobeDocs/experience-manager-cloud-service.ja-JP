@@ -1,14 +1,14 @@
 ---
 title: アセット、フォルダー、コレクションを配布して共有する
-description: リンクとして共有、ダウンロード、経由 [!DNL Brand Portal], [!DNL desktop app], and [!DNL Asset Link]などの方法を使用して、デジタルアセットを配布します。
+description: リンクとして共有、ダウンロード、経由などの方法を使用して、デジタルアセットを配布する [!DNL Brand Portal], [!DNL desktop app]、および [!DNL Asset Link].
 contentOwner: AG
-feature: アセット管理、共同作業、アセット分布
+feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '756'
-ht-degree: 100%
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## アセットをリンクとして共有 {#sharelink}
 
-ユーザーと共有するアセットの URL を生成するには、リンク共有ダイアログを使用します。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。リンクによるアセットの共有は、外部の関係者が [!DNL Assets] にログインすることなくリソースを利用するための便利な方法です。
+リンクによるアセットの共有は、外部の関係者が [!DNL Assets] にログインすることなくリソースを利用するための便利な方法です。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。
 
 ![リンク共有ダイアログ](assets/link-share-dialog.png)
 
@@ -35,11 +35,24 @@ ht-degree: 100%
 
 
 1. [!DNL Assets] のユーザーインターフェイスで、リンクとして共有するアセットを選択します。
-1. ツールバーの「**[!UICONTROL リンクを共有]**」をクリックします。「**[!UICONTROL リンクを共有]**」フィールドにアセットリンクが自動的に作成されます。このリンクをコピーしてユーザーと共有します。リンクのデフォルトの有効期間は 1 日です。
+1. ツールバーの「**[!UICONTROL リンクを共有]**」をクリックします。この [!UICONTROL リンク共有] ダイアログが表示され、 **[!UICONTROL リンクを共有]** フィールドに入力します。
 
-   >[!NOTE]
-   >
-   >共有アセットが別の場所に移動されると、そのリンクは機能しなくなります。リンクを再作成し、ユーザーと再共有します。
+   * 「電子メールアドレス」ボックスに、リンクを共有するユーザーの電子メール ID を入力します。リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中から電子メール ID を選択します。外部ユーザーの場合は、電子メール ID を入力し、**[!UICONTROL Enter]** キーを押します。電子メール ID がユーザーの一覧に追加されます。
+
+   * 「**[!UICONTROL 件名]**」ボックスに、共有するアセットの件名を入力します。
+   * 必要に応じて、「**[!UICONTROL メッセージ]**」ボックスにメッセージを入力します。
+   * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。デフォルトの有効期限は、リンクを共有した日から 7 日間です。
+   * 「**[!UICONTROL 元のファイルのダウンロードを許可]**」チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
+
+1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。共有リンクを含んだ電子メールがユーザーに届きます。
+
+<!--
+You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
+-->
+
+>[!NOTE]
+>
+>共有アセットが別の場所に移動されると、そのリンクは機能しなくなります。リンクを再作成し、ユーザーと再共有します。
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -116,7 +129,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 マーケティング担当者や事業部門のユーザーは、次のいずれかを使用して、承認済みアセットをクリエイティブプロフェッショナルと容易に共有できます。
 
-* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=ja)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
+* **Adobe Experience Manager デスクトップアプリケーション**：このアプリケーションは Windows と Mac で動作します。[AEM デスクトップアプリケーションの概要](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)を参照してください。承認済みのデスクトップユーザーが共有アセットに容易にアクセスできる方法については、[アセットの参照、検索、プレビュー](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#browse-search-preview-assets)を参照してください。デスクトップユーザーは、アセットを作成し、新しい画像をアップロードするなどして、Experience Manager ユーザーである相手とアセットを共有することができます。詳しくは、[デスクトップアプリケーションを使用したアセットのアップロード方法](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#upload-and-add-new-assets-to-aem)を参照してください。
 
 * **Adobe Asset Link**：クリエイティブプロフェッショナルは、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe Photoshop] 内から直接アセットを検索および使用できます。
 

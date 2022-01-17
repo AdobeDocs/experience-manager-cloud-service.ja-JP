@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 97%
+source-wordcount: '1194'
+ht-degree: 79%
 
 ---
 
@@ -33,16 +33,45 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 ## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード  {#download-assets}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。サイズの大きいファイルは非同期でダウンロードされ、[!DNL Experience Manager] はインボックスに届く通知によって完了を知らさます。「[ [!DNL Experience Manager] インボックスについて](/help/sites-cloud/authoring/getting-started/inbox.md)」を参照してください。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。
 
-![ダウンロード通知](assets/download-notification.png)
+デフォルトでは、Experience Managerは、ダウンロードトリガーの完了時に通知を送信します。 ダウンロード通知が  [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-*図：[!DNL Experience Manager] インボックスによるダウンロード通知。*
+![インボックス通知](assets/inbox-notification-for-large-downloads.png)
+
+<!--
+The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
+
+![Download notification](assets/download-notification.png)
+
+*Figure: Download notification via [!DNL Experience Manager] Inbox.*
+
+Asynchronous downloads are triggered in either of the following case:
+
+* If there are more than 10 assets or more than 100 MB to be downloaded.
+* If the download takes more than 30 seconds to prepare.
+-->
+
+### 大量のダウンロードに対する電子メール通知を有効にする {#enable-emails-for-large-downloads}
 
 非同期ダウンロードは、次のいずれかの場合にトリガーされます。
 
-* アセット数が 10 を超える場合、または 100 MB を超えるアセットをダウンロードする場合。
-* ダウンロードの準備に 30 秒以上かかる場合。
+* アセットが 10 個を超える場合
+* ダウンロードサイズが 100 MB を超える場合
+* ダウンロードの準備に 30 秒以上かかる場合
+
+バックエンドで任意のダウンロードが実行される間、ユーザーは引き続き調査をおこない、Experience Managerでさらに作業をおこなうことができます。 ダウンロードプロセスの完了時にユーザーに通知するには、あらかじめ用意されているメカニズムが必要です。 この目的を達成するために、管理者は SMTP サーバーを設定して電子メールサービスを設定できます。 詳しくは、 [メールサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+
+電子メールサービスを設定すると、管理者とユーザーは、ユーザーインターフェイスから電子メール通知をExperience Managerできます。
+
+電子メール通知を有効にするには：
+
+1. [!DNL Experience Manager Assets] にログインします。
+1. 右上隅のユーザーアイコンをクリックし、 **[!UICONTROL 環境設定]**. 「ユーザー・プリファレンス」ウィンドウが開きます。
+1. を選択します。 **[!UICONTROL アセットのダウンロードの電子メール通知]** チェックボックスをオンにして、 **[!UICONTROL 確定]**.
+
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+
 
 アセットをダウンロードするには、次の手順に従います。
 
@@ -50,8 +79,6 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 1. ダウンロードするアセットに移動します。フォルダーを選択するか、フォルダー内の 1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL ダウンロード]**」をクリックします。
 
    ![ からアセットをダウンロードする際に使用できるオプション[!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
-
-   *図：ダウンロードダイアログボックスのオプション*
 
 1. ダウンロードダイアログボックスで、目的のダウンロードオプションを選択します。
 
@@ -66,13 +93,23 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
+   大量のダウンロードに対する電子メール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を含む電子メールがインボックスに表示されます。 電子メールからダウンロードリンクをクリックして、zip フォルダーをダウンロードします。
+
+   ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
+
+   また、 [!DNL Experience Manager] インボックス。
+
+   ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+
 ## リンク共有を使用して共有されたアセットのダウンロード {#link-share-download}
 
+<!--
 >[!NOTE]
 >
->この機能は、Experience Manager のプレリリースチャネルで入手できます。
+>This functionality is available in the Experience Manager prerelease channel.
+-->
 
-リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。アセットを共有する URL を生成するには、[リンク共有機能](/help/assets/share-assets.md#sharelink)を使用します。
+リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。詳しくは、 [リンク共有機能](/help/assets/share-assets.md#sharelink).
 
 ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、より高速で中断のないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
 
