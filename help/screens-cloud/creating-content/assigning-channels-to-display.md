@@ -1,13 +1,13 @@
 ---
 title: Screens as a Cloud Service におけるディスプレイへのチャネルの割り当て
 description: ここでは、Screens as a Cloud Service でディスプレイにチャネルを割り当てる方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '452'
 ht-degree: 100%
 
 ---
-
 
 # Screens as a Cloud Service におけるディスプレイへのチャネルの割り当て {#assign-channel-displays-screens-cloud}
 
