@@ -4,9 +4,9 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3929'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -320,7 +320,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します。選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
-| コンテンツ参照 |  文字列 |  AEM 内の別のアセットへのパスを表示するために使用します |
+| コンテンツ参照 |  String |  AEM 内の別のアセットへのパスを表示するために使用します |
 | フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
 
 ### ヘルパーフィールド {#helper-fields}
@@ -811,7 +811,7 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
 
 >[!NOTE]
 >
->AEM での CORS リソース共有ポリシーについて詳しくは、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))を参照してください。
+>AEM での CORS リソース共有ポリシーについて詳しくは、[クロスオリジンリソース共有（CORS）について](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=ja#understand-cross-origin-resource-sharing-(cors))を参照してください。
 
 GraphQL エンドポイントにアクセスするには、顧客の Git リポジトリーに CORS ポリシーを設定する必要があります。それには、目的のエンドポイントに適した OSGi CORS 設定ファイルを追加します。
 
