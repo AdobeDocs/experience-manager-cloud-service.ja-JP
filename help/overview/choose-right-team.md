@@ -3,7 +3,7 @@ title: 適切な人材、適切な役割
 description: 適切な人材、適切な役割
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
 source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '825'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 組織では、複数の部門がデジタルエクスペリエンスの異なる側面を担っている可能性が高いでしょう。ガバナンスが機能しなければ、いつ果てしない論争、内輪もめ、混乱に陥ってもおかしくありません。
 
-デジタルガバナンスの出発点は、誰が何を担当し、誰がどのようなデジタル関連の業務をおこなっているかを把握することです。必要なスキルを追加するために、戦略的な雇用が必要になることもあります。それよりも大きな課題はカルチャーの転換を促進すること、つまり、新しいテクノロジーを幅広くサポートし、担当者が新しい働き方に慣れるのを手助けすることです。その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
+デジタルガバナンスの出発点は、誰が何を担当し、誰がどのようなデジタル関連の業務を行っているかを把握することです。必要なスキルを追加するために、戦略的な雇用が必要になることもあります。それよりも大きな課題はカルチャーの転換を促進すること、つまり、新しいテクノロジーを幅広くサポートし、担当者が新しい働き方に慣れるのを手助けすることです。その取り組みの重要な部分となるのが、デジタルコミュニティの立ち上げです。メンバーが互いに学び合い、支援し合うことができるコミュニティです。
 
 当面は、適切な人材を適切な職に就けて、Adobe Experience Manager デプロイメントの促進を支援することに重点を置きます。コア製品（Adobe Experience Manager Sites と Adobe Experience Manager Assets）ごとに、担当者が果たすべき役割と、それぞれの役割に必要な専門知識のスキルレベルおよび資質の一覧を示しました。
 
@@ -77,4 +77,4 @@ Adobe Experience Manager Assets の導入を成功させるために必要な人
 
 >[!TIP]
 >
-> [Experience League](https://experienceleague.adobe.com/#recommended/solutions/experience-manager) で Adobe Experience Cloud の詳細を理解し、その他の各種リソースを活用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
+> [Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/experience-manager) で Adobe Experience Cloud の詳細を理解し、その他の各種リソースを活用して、[アドビデジタルラーニング](https://learning.adobe.com/certification.html)で認定を受けることができます。
