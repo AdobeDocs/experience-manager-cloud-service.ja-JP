@@ -1,251 +1,251 @@
 ---
-title: Translate Content
-description: Use the translation connector and rules to translate your headless content.
+title: コンテンツの翻訳
+description: 翻訳コネクタおよびルールを使用して、ヘッドレスコンテンツを翻訳します。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '2174'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Translate Content {#translate-content}
+# コンテンツの翻訳 {#translate-content}
 
-Use the translation connector and rules to translate your headless content.
+翻訳コネクタおよびルールを使用して、ヘッドレスコンテンツを翻訳します。
 
 ## これまでの説明内容 {#story-so-far}
 
-[](translation-rules.md)You should now:
+AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳ルールの設定](translation-rules.md)）では、AEM の翻訳ルールを使用して翻訳コンテンツを特定する方法について説明しました。その結果、以下を達成できました。
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* 翻訳ルールの機能を理解する
+* 独自の翻訳ルールを定義できる
 
-Now that your connector and translations rules are set up, this article takes you through the next step of translating your headless content.
+コネクタと翻訳のルールがセットアップされたので、この記事では、ヘッドレスコンテンツ翻訳の次のステップについて説明します。
 
 ## 目的 {#objective}
 
-This document helps you understand how to use AEM&#39;s translation projects along with the connector and your translations rules to translate content. 読み終えると、以下を達成できます。
+このドキュメントでは、AEM 翻訳プロジェクトをコネクタおよび翻訳ルールと共に使用してコンテンツを翻訳する方法を説明します。読み終えると、以下のことが達成できます。
 
-* Understand what a translation project is.
-* Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* 翻訳プロジェクトの概要を理解する
+* 新しい翻訳プロジェクトを作成できる
+* 翻訳プロジェクトを使用してヘッドレスコンテンツを翻訳する
 
-## Creating a Translation Project {#creating-translation-project}
+## 翻訳プロジェクトの作成 {#creating-translation-project}
 
-Translation projects enable you to manage the translation of headless AEM content. A translation project gathers the content to be translated into other languages in one location for a central view of the translation effort.
+翻訳プロジェクトを使用すると、ヘッドレス AEM コンテンツの翻訳を管理できます。翻訳プロジェクトでは、他の言語に翻訳するコンテンツを 1 か所に集めて、翻訳作業を一元管理できるようにします。
 
-When content is added to a translation project, a translation job is created for it. リソースで実行される人間による翻訳と機械翻訳のワークフローの管理に使用するコマンドとステータス情報がジョブによって提供されます。
+翻訳プロジェクトにコンテンツが追加されると、そのコンテンツの翻訳ジョブが作成されます。ジョブには、リソースで実行される人間による翻訳と機械翻訳のワークフローの管理に使用するコマンドとステータス情報が含まれています。
 
-Translation projects can be created in two ways:
+翻訳プロジェクトを作成する方法は、2 つあります。
 
-1. Select the language root of the content and have AEM automatically create the translation project based on the content path.
-1. Create an empty project and manually select the content to add to the translation project
+1. コンテンツの言語ルートを選択したあと、コンテンツパスに基づいて AEM が翻訳プロジェクトを自動的に作成する
+1. 空のプロジェクトを作成し、翻訳プロジェクトに追加するコンテンツを手動で選択する
 
-Both are valid approaches usually only differing based on the persona performing the translation:
+どちらのアプローチも有効で、通常は、翻訳を実行するペルソナによって異なるだけです。
 
-* The translation project manager (TPM) often needs the flexibility of manually selecting the content to the translation project.
-* If the content owner is also responsible for translation, letting AEM automatically create the project based on the selected content path is often easier.
+* 翻訳プロジェクトマネージャー（TPM）には、翻訳プロジェクトに追加するコンテンツを手動で選択できる柔軟性が必要です。
+* コンテンツ所有者が翻訳の責任者でもある場合は、選択したコンテンツパスに基づいて AEM でプロジェクトを自動的に作成する方が、多くの場合簡単です。
 
-Both approaches are explored in the following sections.
+両方のアプローチについて、以降の節で説明します。
 
-### Automatically Creating a Translation Project Based on Content Path {#automatically-creating}
+### コンテンツパスに基づく翻訳プロジェクトの自動作成 {#automatically-creating}
 
-For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
+コンテンツ所有者が翻訳も担当する場合、AEM で翻訳プロジェクトを自動的に作成する方が、多くの場合簡単です。コンテンツパスに基づいて AEM で翻訳プロジェクトを自動的に作成するには、次の手順に従います。
 
-1. ************ Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the language root of your project. `/content/dam/wknd/en`
-1. ****
-1. ****
-1. ****
-1. ****
-1. ********
-1. Provide an appropriate title for your translation project.
-1. ****
+1. **ナビゲーション**／**アセット**／**ファイル**&#x200B;に移動します。AEM のヘッドレスコンテンツは、コンテンツフラグメントと呼ばれるアセットとして保存されています。
+1. プロジェクトの言語ルートを選択します。ここでは、`/content/dam/wknd/en` を選択しました。
+1. パネルセレクターをタップまたはクリックし、**参照**&#x200B;パネルを表示します。
+1. **言語コピー**&#x200B;をタップまたはクリックします。
+1. 「**言語コピー**」チェックボックスをオンにします。
+1. 参照パネル下部の「**言語コピーを更新**」セクションを展開します。
+1. 「**プロジェクト**」ドロップダウンで「**翻訳プロジェクトを作成**」を選択します。
+1. 翻訳プロジェクトに適したタイトルを指定します。
+1. 「**開始**」をタップまたはクリックします。
 
-![翻訳プロジェクトを作成](assets/create-translation-project.png)
+![翻訳プロジェクトの作成](assets/create-translation-project.png)
 
-You receive a message that the project was created.
+プロジェクトが作成されたことを示すメッセージが表示されます。
 
 >[!NOTE]
 >
->[](getting-started.md#content-structure)
+>翻訳言語に必要な言語構造が、[コンテンツ構造の定義](getting-started.md#content-structure)の一部として既に作成されていることを前提としています。これは、コンテンツアーキテクトと協力して行う必要があります。
 >
->If the language folders are not created ahead of time, you will not be able to create language copies as described in the previous steps.
+>前の手順で説明したように、言語フォルダーが事前に作成されていない場合は、言語コピーを作成できません。
 
-### Manually Creating a Translation Project by Selecting Your Content {#manually-creating}
+### コンテンツの選択による翻訳プロジェクトの手動作成 {#manually-creating}
 
-For translation project managers, it is often necessary to manually select specific content to include in a translation project. To create such a manual translation project, you must start by creating an empty project and then select the content to add to it.
+翻訳プロジェクトマネージャーは、多くの場合、翻訳プロジェクトに含める特定のコンテンツを手動で選択する必要があります。そうした手動翻訳プロジェクトを作成するには、まず空のプロジェクトを作成してから、そのプロジェクトに追加するコンテンツを選択する必要があります。
 
-1. ********
-1. ********
-   * This is optional, but helpful to organize your translation efforts.
-1. ************
+1. **ナビゲーション**／**プロジェクト**&#x200B;に移動します。
+1. **作成**／**フォルダー**&#x200B;をタップまたはクリックして、プロジェクトのフォルダーを作成します。
+   * これはオプションですが、翻訳作業を系統立てて行うのに役立ちます。
+1. **プロジェクトを作成**&#x200B;ウィンドウで、フォルダーの「**タイトル**」を入力して「**作成**」をタップまたはクリックします。
 
-   ![](assets/create-project-folder.png)
+   ![プロジェクトフォルダーの作成](assets/create-project-folder.png)
 
-1. Tap or click the folder to open the folder.
-1. ********
-1. Projects are based on templates. ********
+1. フォルダーをタップまたはクリックして開きます。
+1. 新規プロジェクトフォルダーで、**作成**／**プロジェクト**&#x200B;をタップまたはクリックします。
+1. プロジェクトはテンプレートを基にしています。**翻訳プロジェクト**&#x200B;テンプレートをタップまたはクリックして選択したあと、「**次へ**」をタップまたはクリックします。
 
-   ![](assets/select-translation-project-template.png)
+   ![翻訳プロジェクトテンプレートの選択](assets/select-translation-project-template.png)
 
-1. ****
+1. 「**基本**」タブで、新規プロジェクトの名前を入力します。
 
-   ![](assets/project-basic-tab.png)
+   ![プロジェクトの「基本」タブ](assets/project-basic-tab.png)
 
-1. ********「**作成**」をタップまたはクリックします。
+1. 「**詳細**」タブで、「**ターゲット言語**」ドロップダウンを使用して、コンテンツの翻訳先の言語を選択します。「**作成**」をタップまたはクリックします。
 
-   ![](assets/project-advanced-tab.png)
+   ![プロジェクトの「詳細」タブ](assets/project-advanced-tab.png)
 
-1. ****
+1. 確認ダイアログで「**開く**」をタップまたはクリックします。
 
-   ![](assets/project-confirmation-dialog.png)
+   ![プロジェクトの確認ダイアログ](assets/project-confirmation-dialog.png)
 
-The project has been created, but contains no content to translate. The next section details how the project is structured and how to add content.
+これでプロジェクトが作成されましたが、翻訳するコンテンツがまだ含まれていません。次の節では、プロジェクトを構造化する方法とコンテンツの追加方法について詳しく説明します。
 
-## Using a Translation Project {#using-translation-project}
+## 翻訳プロジェクトの使用 {#using-translation-project}
 
-Translation projects are designed to collect all of the content and tasks related to a translation effort in one place to make your translation simple and easy to manage.
+翻訳プロジェクトは、翻訳作業に関連するコンテンツとタスクをすべて 1 か所にまとめて、翻訳を簡単に管理できるように設計されています。
 
-To view the translation project:
+翻訳プロジェクトを表示するには：
 
-1. ********
-1. Tap or click the project that was created in the previous section.
+1. **ナビゲーション**／**プロジェクト**&#x200B;に移動します。
+1. 前の節で作成したプロジェクトをタップまたはクリックします。
 
 ![翻訳プロジェクト](assets/translation-project.png)
 
-The project is divided into multiple cards.
+プロジェクトは、次のような複数のカードに分かれています。
 
-* ****
-* **** Generally there is one job per language with the ISO-2 language code appended to the job name.
-* **** This journey does not cover this topic.
-* **** This journey does not cover this topic.
+* **概要** - 所有者、言語、翻訳プロバイダーなど、プロジェクトの基本的なヘッダー情報が表示されます。
+* **翻訳ジョブ** - ステータスやアセット数など、実際の翻訳ジョブの概要が表示されます。一般に、ジョブ名に ISO-2 言語コードが付加された言語ごとに 1 つのジョブが存在します。
+* **チーム** - この翻訳プロジェクトに共同で取り組んでいるユーザーが表示されます。このジャーニーでは、このトピックについては扱いません。
+* **タスク** - コンテンツの翻訳に関連する追加タスク（TODO 項目やワークフロー項目の実行など）。このジャーニーでは、このトピックについては扱いません。
 
-How you use a translation project depends on how it was created: either automatically by AEM or manually.
+翻訳プロジェクトの使用方法は、作成方法（AEM による自動作成か手動作成か）によって異なります。
 
-### Using an Automatically Created Translation Project {#using-automatic-project}
+### 自動作成された翻訳プロジェクトの使用 {#using-automatic-project}
 
-When automatically creating the translation project, AEM evaluates the headless content under the path you selected  based on the translation rules that you previously defined. Based on that evaluation, it extracts the content that requires translation into a new translation project.
+翻訳プロジェクトを自動的に作成する場合、以前定義した翻訳ルールに基づいて、選択したパスの配下にあるヘッドレスコンテンツが AEM によって評価されます。この評価に基づいて、新規翻訳プロジェクトへの翻訳が必要なコンテンツが抽出されます。
 
-To see the detail of the headless content included in this project:
+このプロジェクトに含まれているヘッドレスコンテンツの詳細を表示するには：
 
-1. ****
-1. ****
-   ![](assets/translation-job-detail.png)
-1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. **翻訳ジョブ**&#x200B;カードの下部にある省略記号ボタンをタップまたはクリックします。
+1. **翻訳ジョブ**ウィンドウには、ジョブ内のすべての項目が一覧表示されます。
+   ![翻訳ジョブの詳細](assets/translation-job-detail.png)
+1. 行をタップまたはクリックすると、その行の詳細が表示されます。なお、1 つの行が、翻訳する複数のコンテンツ項目を表している場合があることに留意してください。
+1. 行項目の選択用チェックボックスをタップまたはクリックすると、その項目をジョブから削除するオプションやコンテンツフラグメントコンソールや Assets コンソールに表示するオプションなどがさらに表示されます。
 
-![](assets/translation-job-options.png)
+![翻訳ジョブのオプション](assets/translation-job-options.png)
 
-************
+通常、翻訳ジョブのコンテンツは&#x200B;**ドラフト**&#x200B;状態で始まります。状態は、**翻訳ジョブ**&#x200B;ウィンドウの「**状態**」列に表示されます。
 
-********
+翻訳ジョブを開始するには、翻訳プロジェクトの概要に戻り、**翻訳ジョブ**&#x200B;カードの上部にある山形ボタンをタップまたはクリックして、「**開始**」を選択します。
 
-![](assets/start-translation-job.png)
+![翻訳ジョブの開始](assets/start-translation-job.png)
 
-AEM now communicates with your translation configuration and connector to send the content to the translation service. ********
+これで、AEM は 翻訳設定およびコネクタと通信して、コンテンツを翻訳サービスに送信します。翻訳の進行状況を確認するには、**翻訳ジョブ**&#x200B;ウィンドウに戻ってエントリの「**状態**」列を確認します。
 
-![](assets/translation-job-approved.png)
+![承認された翻訳ジョブ](assets/translation-job-approved.png)
 
-**** Human translation allows for more interaction, but is beyond the scope of this journey.
+機械翻訳は、自動的に&#x200B;**承認済み**&#x200B;状態で戻されます。人間による翻訳の場合は、さらにやり取りが可能ですが、それはこのジャーニーの範囲外ですので、ここでは扱いません。
 
-### Using a Manually Created Translation Project {#using-manual-project}
+### 手動で作成された翻訳プロジェクトの使用 {#using-manual-project}
 
-When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include. This allows the translation project manager the flexibility to pick-and-chose what content to translate.
+翻訳プロジェクトを手動で作成する場合、必要なジョブは AEM が作成しますが、そこに含めるコンテンツは自動的には選択されません。これにより、翻訳するコンテンツを翻訳プロジェクトマネージャーが柔軟に選択できます。
 
-To add content to a translation job:
+翻訳ジョブにコンテンツを追加するには：
 
-1. ****
-1. See that the job contains no content. ********
+1. **翻訳ジョブ**&#x200B;カードの下部にある省略記号ボタンをタップまたはクリックします。
+1. ジョブにコンテンツが含まれていないことを確認します。ウィンドウの上部にある「**追加**」ボタンをタップまたはクリックして、ドロップダウンから「**アセット / ページ**」を選択します。
 
-   ![](assets/empty-translation-job.png)
+   ![空の翻訳ジョブ](assets/empty-translation-job.png)
 
-1. A path browser opens allowing you to select specifically which content to add. Locate your content and tap or click to select.
+1. パスブラウザーが開き、追加するコンテンツを選択できます。コンテンツを探し、タップまたはクリックして選択します。
 
-   ![](assets/path-browser.png)
+   ![パスブラウザー](assets/path-browser.png)
 
-1. ****
-1. ********
+1. 「**選択**」をタップまたはクリックして、選択したコンテンツをジョブに追加します。
+1. **翻訳**&#x200B;ダイアログで、「**言語コピーを作成**」をタップまたはクリックします。
 
-   ![言語コピーを作成](assets/translate-copy-master.png)
+   ![言語コピーの作成](assets/translate-copy-master.png)
 
-1. The content is now included in the job.
+1. これで、コンテンツがジョブに追加されます。
 
-   ![](assets/content-added.png)
+   ![翻訳ジョブにコンテンツが追加された様子](assets/content-added.png)
 
-1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
+1. 行項目の選択用チェックボックスをタップまたはクリックすると、その項目をジョブから削除するオプションやコンテンツフラグメントコンソールや Assets コンソールに表示するオプションなどがさらに表示されます。
 
-![](assets/translation-job-options.png)
+![翻訳ジョブのオプション](assets/translation-job-options.png)
 
-1. Repeat these steps to include all required content in the job.
+1. 上記の手順を繰り返して、必要なコンテンツをすべてジョブに追加します。
 
 >[!TIP]
 >
->The path browser is a powerful tool allowing you to search, filter, and navigate your content. ************
+>パスブラウザーは、コンテンツの検索、フィルタリングおよびナビゲーションを行える強力なツールです。「**コンテンツのみ／フィルター**」ボタンをタップまたはクリックすると、サイドパネルが切り替わり、「**変更日**」や「**翻訳ステータス**」などの詳細フィルターが表示されます。
 >
->[](#additional-resources)
+>パスブラウザーについて詳しくは、[その他のリソース](#additional-resources)の節を参照してください。
 
-You can use the prior steps to add the necessary content to all of the languages (jobs) for the project. Once you have selected all of the content, you can start the translation.
+これまでの手順を使用して、必要なコンテンツをプロジェクトのすべての言語（ジョブ）に追加できます。コンテンツをすべて選択したら、翻訳を開始できます。
 
-************
+通常、翻訳ジョブのコンテンツは&#x200B;**ドラフト**&#x200B;状態で始まります。状態は、**翻訳ジョブ**&#x200B;ウィンドウの「**状態**」列に表示されます。
 
-********
+翻訳ジョブを開始するには、翻訳プロジェクトの概要に戻り、**翻訳ジョブ**&#x200B;カードの上部にある山形ボタンをタップまたはクリックして、「**開始**」を選択します。
 
-![](assets/start-translation-job.png)
+![翻訳ジョブの開始](assets/start-translation-job.png)
 
-AEM now communicates with your translation configuration and connector to send the content to the translation service. ********
+これで、AEM は 翻訳設定およびコネクタと通信して、コンテンツを翻訳サービスに送信します。翻訳の進行状況を確認するには、**翻訳ジョブ**&#x200B;ウィンドウに戻ってエントリの「**状態**」列を確認します。
 
-![](assets/translation-job-approved.png)
+![承認された翻訳ジョブ](assets/translation-job-approved.png)
 
-**** Human translation allows for more interaction, but is beyond the scope of this journey.
+機械翻訳は、自動的に&#x200B;**承認済み**&#x200B;状態で戻されます。人間による翻訳の場合は、さらにやり取りが可能ですが、それはこのジャーニーの範囲外ですので、ここでは扱いません。
 
-## Reviewing Translated Content {#reviewing}
+## 翻訳済みコンテンツのレビュー {#reviewing}
 
-[](#using-translation-project)**** However it is of course still possible to review the translated content.
+[前述](#using-translation-project)のとおり、機械翻訳されたコンテンツは、AEM に戻されるときに&#x200B;**承認済み**&#x200B;のステータスになっています。機械翻訳が使用されているので人間の介入は必要ないという前提があるからです。ただし、翻訳済みコンテンツをレビューすることは、もちろん可能です。
 
-Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. ****
+完了した翻訳ジョブに移動し、チェックボックスをタップまたはクリックして行項目を選択するだけです。「**コンテンツフラグメントで表示**」アイコンがツールバーに表示されます。
 
-![](assets/reveal-in-content-fragment.png)
+![コンテンツフラグメントで表示](assets/reveal-in-content-fragment.png)
 
-Tap or click that icon to open the translated content fragment in its editor console to see the details of the translated content.
+そのアイコンをタップまたはクリックすると、翻訳済みコンテンツフラグメントがエディターコンソールに開いて、翻訳済みコンテンツの詳細が表示されます。
 
-![](assets/translated-content-fragment.png)
+![翻訳済みコンテンツフラグメント](assets/translated-content-fragment.png)
 
-You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. [](#additional-resources)
+適切な権限があれば、コンテンツフラグメントを必要に応じてさらに変更できますが、コンテンツフラグメントの編集はこのジャーニーの範囲外ですので、ここでは扱いません。このトピックについて詳しくは、このドキュメントの最後にある[その他のリソース](#additional-resources)の節を参照してください。
 
-The project&#39;s purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
+プロジェクトの目的は、翻訳に関連するすべてのリソースを 1 か所に集めて、簡単にアクセスでき概要を明確に把握できるようにすることです。ただし、翻訳済み項目の詳細を確認すればわかるように、翻訳自体は翻訳言語のアセットフォルダーに戻ります。この例では、次のフォルダーです。
 
 ```text
 /content/dam/wknd/es
 ```
 
-************
+**ナビゲーション**／**ファイル**／**アセット**&#x200B;を使用してこのフォルダーに移動すると、翻訳済みコンテンツが表示されます。
 
-![](assets/translated-file-content.png)
+![翻訳済みコンテンツフォルダー構造](assets/translated-file-content.png)
 
-AEM&#39;s translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
+AEM の翻訳フレームワークは、翻訳コネクタから翻訳を受け取ると、言語ルートに基づき、コネクタから提供される翻訳を使用して、コンテンツ構造を自動的に作成します。
 
-It is important to understand that this content is not published and therefore not available to your headless services. We will learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
+このコンテンツは公開されないのでヘッドレスサービスでは使用できないことを理解しておくことが重要です。翻訳ジャーニーの次のステップでは、このオーサー-パブリッシュ構造と、翻訳済みコンテンツの公開方法について説明します。
 
-## 人間翻訳 {#human-translation}
+## 人間による翻訳 {#human-translation}
 
-If your translation service provides human translation, the review process offers more options. ****
+翻訳サービスが人間による翻訳を提供する場合は、レビュープロセスには追加のオプションが用意されています。例えば、翻訳が&#x200B;**ドラフト**&#x200B;ステータスでプロジェクトに戻った場合は、翻訳を手動でレビューし、承認または却下する必要があります。
 
-Human translation is beyond the scope of this localization journey. [](#additional-resources)However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
+人間による翻訳は、このローカライゼーションジャーニーの範囲外です。このトピックについて詳しくは、このドキュメントの最後にある[その他のリソース](#additional-resources)の節を参照してください。ただし、追加の承認オプション以外は、このジャーニーで説明しているように、人間による翻訳のワークフローは機械翻訳のものと同じです。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+これで、ヘッドレス翻訳ジャーニーのこのステップが完了し、以下を達成できました。
 
-* Understand what a translation project is.
-* Be able to create new translation projects.
-* Use translation projects to translate your headless content.
+* 翻訳プロジェクトの概要を理解する
+* 新しい翻訳プロジェクトを作成できる
+* 翻訳プロジェクトを使用してヘッドレスコンテンツを翻訳する
 
-[](publish-content.md)
+この知識を踏まえて、[翻訳済みコンテンツの公開](publish-content.md)のドキュメントを次に参照しながら、AEM ヘッドレス翻訳ジャーニーを続けてください。このドキュメントでは、翻訳済みコンテンツを公開する方法と、言語ルートコンテンツの変更に合わせてこれらの翻訳を更新する方法について説明します。
 
 ## その他のリソース {#additional-resources}
 
-[](publish-content.md)
+[翻訳済みコンテンツの公開](publish-content.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
-* [](/help/sites-cloud/administering/translation/managing-projects.md)
-* [](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection)
+* [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md) - 翻訳プロジェクトの詳細と、人間による翻訳のワークフローや多言語プロジェクトなどの追加機能について説明します。
+* [オーサリング環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM には、堅牢なパスブラウザーなど、コンテンツを整理および編集するための様々なメカニズムが用意されています。このドキュメントでは、それらについて説明します。

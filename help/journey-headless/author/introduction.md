@@ -1,84 +1,84 @@
 ---
-title: AEMヘッドレスコンテンツ作成者ジャーニー
-description: Adobe Experience Manager as a Cloud Serviceの強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツを作成する方法の紹介です。
+title: AEM ヘッドレスコンテンツ作成者ジャーニー
+description: Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをオーサリングする方法を紹介します。
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
+# AEM でのヘッドレス向けオーサリング - 概要 {#author-headless-introduction}
 
-[](overview.md)
+[AEM ヘッドレスコンテンツ作成者ジャーニー](overview.md)のこのステップでは、Adobe Experience Manager（AEM）as a Cloud Service でのヘッドレスコンテンツ配信向けコンテンツのオーサリングを理解するために必要な（基本）概念と用語について説明します。
 
 ## 目的 {#objective}
 
-* **オーディエンス**：初心者
-* **目的**:ヘッドレスオーサリングに関連する概念と用語を紹介します。
+* **対象読者**：初心者
+* **目的**：ヘッドレスオーサリングに関係する概念と用語を紹介します。
 
-## コンテンツ管理システム (CMS) {#content-management-system}
+## コンテンツ管理システム（CMS） {#content-management-system}
 
 コンテンツ管理システムとは
 
-コンテンツ管理システム (CMS) は、コンテンツの管理に使用されるコンピュータシステムです。 これは少し一般的な操作なので、より正確に言うと、（通常）Web サイトで利用できるようにするコンテンツの管理に使用されます。
+コンテンツ管理システム（CMS）は、その名のとおり、コンテンツの管理に使用されるコンピュータシステムです。もう少し正確に言えば、web サイトで公開するコンテンツの管理に（通常）使用されるものです。
 
 ## ヘッドレス CMS {#headless-cms}
 
-ヘッドレスとは、Web 上にコンテンツを表示する方法からコンテンツを効果的に分離するシステムを表すために使用される用語です。
+ヘッドレスとは、コンテンツを web 上でのコンテンツの表示方法から効果的に切り離すシステムを表す用語です。
 
-従来は CMS でコンテンツを管理し、同じ CMS が Web ページ上でのコンテンツのレンダリングを行います。
+従来は、CMS でコンテンツを管理し、web ページでのそのコンテンツのレンダリングするのも CMS でした。
 
-Now, headless means that your content-set can be managed in the CMS and then accessed by one, or more, (independent) applications.
+しかし、ヘッドレスでは、コンテンツセットを CMS で管理し、1 つ以上の（独立した）アプリケーションからそのコンテンツにアクセスすることができます。
 
-This means that your content can be delivered to any device, in a wide range of formats. This makes the whole process much more flexible, and also means that you do not need to worry about layout and formatting.
+つまり、コンテンツを様々な形式で任意のデバイスに配信できるということです。これにより、プロセス全体がはるかに柔軟になり、レイアウトや書式設定を気にする必要もなくなります。
 
 >[!NOTE]
 >
->ヘッドレス CMS の技術的な詳細について詳しくは、 CMS ヘッドレス開発についての詳細を参照してください。
+>ヘッドレス CMS の技術的な詳細については、「CMS ヘッドレス開発について」を参照してください。
 
 ## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
 
-AEMとは？
+では、AEM とは何でしょうか。
 
-最初に、AEMは幅広い機能を備えたコンテンツ管理システムで、要件に合わせてカスタマイズすることもできます。
+第一に、AEM は、要件に合わせてカスタマイズ可能な幅広い機能を備えたコンテンツ管理システムです。
 
-これは、すべてが次の形式で使用できることを意味します。
+つまり、AEM は以下のものとして使用できます。
 
 * ヘッドレス CMS
-   * ヘッドレスの場合は、コンテンツを次の形式で作成できます **コンテンツフラグメント**.
-これらは、様々なアプリケーションから直接アクセスできる、自己完結型のコンテンツ項目です。これらの項目は、 **コンテンツフラグメントモデル**.
-This means your content can reach a wide range of devices, in a wide range of formats and with a wide selection of functionality.
-( また、2 つのホワイトとして、これらのフラグメントはAEM Web ページを構築する際にも使用できます（必要に応じて）。
+   * ヘッドレスの場合、コンテンツは&#x200B;**コンテンツフラグメント**としてオーサリングできます。
+これは、様々なアプリケーションから直接アクセスできる自己完結型のコンテンツ項目で、**コンテンツフラグメントモデル**に基づいて構造が事前に定義されています。
+つまり、豊富な機能を使用して様々な形式で様々なデバイスにコンテンツを配信できます
+（さらに、必要に応じて、これらのフラグメントを AEM web ページの作成時に使用することもできます）。
 
-* &quot;Traditional&quot; CMS
-   * Content is authored for web pages, using a range of components that define how the content will be rendered on your website. Even here AEM is extremely flexible as your project team can develop customized components.
+* 「従来の」CMS
+   * コンテンツは、web サイト上でのコンテンツのレンダリング方法を定義する様々なコンポーネントを使用して、web ページ用に作成されます。ここでも AEM は、カスタマイズしたコンポーネントをプロジェクトチームが開発できるので、きわめて柔軟です。
 
 ## コンテンツモデリング {#content-modeling}
 
-つまり、コンテンツモデリング（データモデリングとも呼ばれます）はもう 1 つの技術的用語です。なぜ作成者として興味を持つ必要があるのでしょうか。
+もう 1 つの技術用語は、コンテンツモデリングです（データモデリングとも呼ばれます）。なぜ、これが作成者の関心事になるのでしょうか。
 
-ヘッドレスアプリケーションがコンテンツにアクセスし、それを使用して何らかの処理をおこなうには、コンテンツに事前に定義された構造が必要です。 コンテンツを自由形式として持つことは可能ですが、それは人生を生み出すでしょう *非常に* アプリケーションにとって複雑です。
+ヘッドレスアプリケーションがコンテンツにアクセスして何らかの処理を行えるようにするには、事前に定義された構造がコンテンツに必要です。コンテンツを自由形式にすることも可能ですが、その場合は、アプリケーション側の処理が&#x200B;*非常に*&#x200B;複雑になります。
 
-基本的に、コンテンツが準拠する構造を定義するプロセスは、モデルの設計です。これは、データモデリングと呼ばれます。
+基本的に、コンテンツが従うべき構造を定義するプロセスには、モデルの設計が不可欠です。これをデータモデリングと呼びます。
 
-AEMの場合、コンテンツアーキテクトの役割（多くの場合、別の人）は、データモデリングを実行して、様々な **コンテンツフラグメントモデル**  — その後、次を使用してコンテンツの基礎として使用します。 **コンテンツフラグメント**.
+AEM の場合は、コンテンツアーキテクトの役割（多くの場合、コンテンツ作成者とは別の人物）がデータモデリングを行い、一連の&#x200B;**コンテンツフラグメントモデル**&#x200B;を設計します。コンテンツ作成者は、この一連のモデルをコンテンツの基礎として使用します（その際に&#x200B;**コンテンツフラグメント**&#x200B;を使用します）。
 
 >[!NOTE]
 >
->データモデリングの詳細については、AEMヘッドレスコンテンツアーキテクトジャーニーを参照してください。
+>データモデリングについて詳しくは、「AEM ヘッドレスコンテンツアーキテクトジャーニー」を参照してください。
 
 ## 次の手順 {#whats-next}
 
-[](basics.md)This will introduce the basic handling of AEM together with how to author Content Fragments.
+これで、概念と用語を説明したので、次の手順は [AEM を使用したヘッドレスのオーサリングの基本](basics.md)です。ここでは、AEM の基本操作とコンテンツフラグメントのオーサリング方法を紹介します。
 
 ## その他のリソース {#additional-resources}
 
 * AEM ヘッドレスデベロッパージャーニー
    * [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
-   * [コンテンツのモデル化方法を学ぶ](/help/journey-headless/developer/model-your-content.md)
+   * [コンテンツをモデル化する方法](/help/journey-headless/developer/model-your-content.md)
 
-* AEMヘッドレスコンテンツアーキテクトジャーニー
+* AEM ヘッドレスコンテンツアーキテクトジャーニー
 
-* AEMヘッドレスコンテンツ翻訳ジャーニー
+* AEM ヘッドレス翻訳ジャーニー

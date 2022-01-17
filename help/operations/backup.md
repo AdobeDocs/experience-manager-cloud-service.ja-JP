@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のバックアップと復元
 description: AEM as a Cloud Service のバックアップと復元
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 64%
+source-wordcount: '505'
+ht-degree: 63%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 64%
 
 AEM as a Cloud Service のサポートは次のとおりです。
 
+* ステージ環境、本番環境、開発環境のバックアップとリストア
 * 24 時間のポイントインタイムリカバリー。つまり、過去 24 時間の任意のポイントにシステムを復元できます。
 * 過去 7 日間、1 日に 2 回かかった特定のAdobe定義タイムスタンプから復元します。  レプリケーションメッセージ（削除、更新、作成）はすべて保持されます。
 

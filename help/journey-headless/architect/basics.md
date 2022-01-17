@@ -1,30 +1,30 @@
 ---
-title: Learn Content Modeling Basics
-description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+title: コンテンツモデリングの基本について
+description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツモデリングの基本について説明します。
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
-# Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
+# AEM でのヘッドレス向けコンテンツモデリングの基本について {#content-modeling-headless-basics}
 
-## The Story so Far {#story-so-far}
+## これまでの説明内容 {#story-so-far}
 
-[](overview.md)[](introduction.md)
+[AEM ヘッドレスコンテンツアーキテクトジャーニー](overview.md)の冒頭の[はじめに](introduction.md)で、ヘッドレス向けコンテンツのモデリングに関連する基本概念と用語について説明しました。
 
-This article builds on these so you understand how to model your content for your AEM headless project.
+この記事ではこれらに基づいて、AEM ヘッドレスプロジェクト用にコンテンツをモデル化する方法を理解します。
 
 ## 目的 {#objective}
 
-* **オーディエンス**：初心者
-* ****
+* **対象読者**：初心者
+* **目的**：ヘッドレス CMS 向けコンテンツモデリングの概念を紹介します。
 
-## Content Modeling with Content Fragment Models {#architect-content-fragment-models}
+## コンテンツフラグメントモデルを使用したコンテンツモデリング {#architect-content-fragment-models}
 
-Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
+コンテンツ（データ）モデリングは確立された一連のテクニックで、関係データベースを開発する際によく使用されますが、AEM ヘッドレスではどのような意味を持つのでしょうか。
 
 ### 使用する理由 {#why}
 
@@ -43,9 +43,9 @@ AEM は、コンテンツフラグメントを使用して、コンテンツを�
 
 >[!NOTE]
 >
->The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
+>コンテンツフラグメントモデルは、AEM GraphQL スキーマの基礎としても使用され、コンテンツを取得するために使用されます。これについては開発者ジャーニーでさらに説明します。
 
-コンテンツのリクエストは、標準の GraphQL API のカスタマイズされた実装である AEM GraphQL API を使用しておこなわれます。The AEM GraphQL API allows applications to perform (complex) queries on your Content Fragments, with each query being according to a specific model type.
+コンテンツのリクエストは、標準の GraphQL API のカスタマイズされた実装である AEM GraphQL API を使用して行われます。AEM GraphQL API を使用すると、アプリケーションはコンテンツフラグメントで（複雑な）クエリを実行できます。各クエリは、特定のモデルタイプに従っています。
 
 返されたコンテンツは、アプリケーションで使用できます。
 
@@ -56,7 +56,7 @@ AEM は、コンテンツフラグメントを使用して、コンテンツを�
 コンテンツフラグメントモデルは、エンティティを記述します。
 
 >[!NOTE]
->Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
+>新しいモデルを作成できるように、設定ブラウザーでコンテンツフラグメント機能を有効にする必要があります。
 
 >[!TIP]
 >
@@ -70,7 +70,7 @@ AEM は、コンテンツフラグメントを使用して、コンテンツを�
 
 次に例を示します。
 
-![](assets/headless-modeling-01.png "")
+![コンテンツフラグメントを使用したコンテンツモデリング](assets/headless-modeling-01.png "コンテンツフラグメントを使用したコンテンツモデリング")
 
 ## データタイプ {#data-types}
 
@@ -89,7 +89,7 @@ AEM では、コンテンツをモデル化するための次のデータタイ�
 
 >[!NOTE]
 >
->Further details are available under Content Fragment Models - Data Types.
+>詳しくは、「コンテンツフラグメントモデル - データタイプ」を参照してください。
 
 ## 参照とネストされたコンテンツ {#references-nested-content}
 
@@ -99,58 +99,58 @@ AEM では、コンテンツをモデル化するための次のデータタイ�
 ンツの参照**&#x200B;任意のタイプの他のコンテンツへの簡単な参照を提供します。例えば、指定した場所で画像を参照できます。
 
 * **フラグメ
-ントの参照**&#x200B;他のコンテンツフラグメントへの参照を提供します。このタイプの参照は、ネストされたコンテンツを作成するために使用され、コンテンツのモデル化に必要な関係を導き出します。このデータタイプは、フラグメント作成者が次の操作をおこなえるように設定可能です。
+ントの参照**&#x200B;他のコンテンツフラグメントへの参照を提供します。このタイプの参照は、ネストされたコンテンツを作成するために使用され、コンテンツのモデル化に必要な関係を導き出します。このデータタイプは、フラグメント作成者が次の操作を行えるように設定可能です。
    * 参照先フラグメントの直接編集
    * 適切なモデルに基づいた新しいコンテンツフラグメントの作成
 
 >[!NOTE]
 >
->You can also create ad hoc references by using links within Text blocks.
+>また、テキストブロック内でリンクを使用してアドホック参照を作成することもできます。
 
-## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
+## 構造レベル（ネストされたフラグメント） {#levels-of-structure-nested-fragments}
 
-****
+コンテンツモデリングの場合、**フラグメント参照**&#x200B;データタイプを使用すると、複数の構造レベルとそれらの関係を作成できます。
 
-** This allows the headless application to follow the connections and access the content as necessary.
+このリファレンスでは、様々なコンテンツフラグメントモデルを&#x200B;*接続*&#x200B;して相互関係を表現できます。これにより、ヘッドレスアプリケーションが必要に応じて接続をたどってコンテンツにアクセスできます。
 
 >[!NOTE]
 >
->**
+>これは慎重に使用してください。「*必要なだけネストするが、できるだけ少なくする*」が、ネストに関するベストプラクティスです。
 
-Fragment References do just that - they allow you to reference another fragment.
+フラグメント参照の役割はまさにそれです。つまり、別のフラグメントを参照できるようにします。
 
-For example, you might have the following Content Fragment Models defined:
+例えば、次のコンテンツフラグメントモデルが定義されているとします。
 
-* City
-* 会社
-* Person
-* awards（受賞歴）
+* City（市区町村）
+* Company（会社）
+* Person（人物）
+* Awards（受賞歴）
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....and these are all people, each defined as a Person.
+とても簡単に見えますが、もちろん Company には CEO も Employees（従業員）もいます。これらはすべて人物で、それぞれが Person として定義されます。
 
-And a Person can have an Award (or maybe two).
+また、Person は Award（1 つまたは複数）を持っている可能性があります。
 
-* My Company - Company
+* 私の会社 - Company
    * CEO - Person
-   * Employee(s) - Person
-      * Personal Award(s) - Award
+   * 従業員 - Person
+      * 個人賞 - Award
 
-And that&#39;s just for starters. Depending on the complexity, an Award could be Company-specific, or a Company could have its main office in a specific City.
+しかし、これはほんの一例です。複雑さに応じて、Award が Company 固有のものであったり、Company が特定の City に本社を置いていたりすることがあります。
 
-Representing these interrelationships can be achieved with Fragment References, as they are understood by you (the architect), your content author and the headless applications.
+こうした相互関係は、アーキテクト、コンテンツ作成者およびヘッドレスアプリケーションが理解できるように、フラグメント参照を使用して表すことができます。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-[](model-structure.md)This will introduce and discuss the various references available, and how to create levels of structure with the Fragment References - a key part of modeling for headless.
+基本を理解したので、次のステップは [AEM でのコンテンツフラグメントモデルの作成について](model-structure.md)です。ここでは、使用可能な様々な参照を紹介し、ヘッドレス向けモデリングの重要な部分であるフラグメント参照を使用した構造レベルの作成方法について説明します。
 
 ## その他のリソース {#additional-resources}
 
 * [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [コンテンツフラグメントモデル - データタイプ](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [](/help/sites-cloud/authoring/getting-started/basic-handling.md)************
+* [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md) - このページは主に **Sites** コンソールに基づいていますが、多くの／ほとんどの機能は **Assets** コンソールでの&#x200B;**コンテンツフラグメント**&#x200B;のオーサリングにも関連しています。
 
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)

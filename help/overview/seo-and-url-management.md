@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
 source-wordcount: '3787'
-ht-degree: 76%
+ht-degree: 89%
 
 ---
 
@@ -80,7 +80,7 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
 
    * サイトが `http` 経由で提供され、ユーザーがチェックアウトまたはログインフォームを使用してページに到達した時点で、`https` に切り替わることがあります。このページからリンクするときに、ユーザーが `http` ページに戻り、`https` 経由でそれらのページにアクセスできる場合、検索エンジンでは、2 つの異なるページとして追跡されます。
 
-   * Google では現在、`https` ページの方が `http` ページよりも推奨されています。このため、多くの場合、サイト全体を経由で提供する方が便利です `https`.
+   * Google では現在、`https` ページの方が `http` ページよりも推奨されています。こうした理由から、多くの場合、サイト全体を `https` で提供する方が問題が少なくなります。
 
 ### サーバーの設定 {#server-configuration}
 
@@ -96,7 +96,7 @@ SEO に対応した URL を作成する方法について、一般的なヒン�
 
 ## AEM の設定 {#aem-configurations}
 
-この節では、SEO に関する以下の推奨事項に従うようにAEMを設定するために必要な実装手順について説明します。
+ここでは、SEO に関する前述の推奨事項に従って AEM を設定するために必要な実装手順を説明します。
 
 ### Sling セレクターの使用 {#using-sling-selectors}
 
@@ -183,7 +183,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 #### ページ名のローカライズ {#localized-page-names}
 
-翻訳済みコンテンツのユーザーにローカライズされたページ名を表示することができます。 次に例を示します。
+翻訳されたコンテンツのユーザーには、ローカライズされたページ名を表示した方がよい場合があります。次に例を示します。
 
 * スペイン語を話すユーザーが次のページにアクセスするとします。
    `www.mydomain.com/es/home.html`
@@ -357,11 +357,11 @@ Disallow: /
 
 クローラーでは、Web サイトの構造をより的確に把握するために XML サイトマップが使用されます。サイトマップを提供すれば SEO ランキングが上がるという保証はありませんが、ベストプラクティスの 1 つとして認められています。サイトマップとして使用する XML ファイルを Web サーバーで手動で管理することもできますが、作成者が新しいコンテンツを作成すると、変更内容がサイトマップに自動的に反映されるように、プログラムによってサイトマップを生成することをお勧めします。
 
-AEMは [Apache Sling Sitemap モジュール](https://github.com/apache/sling-org-apache-sling-sitemap) を使用して XML サイトマップを生成します。開発者とエディターは、サイトの XML サイトマップを最新の状態に保つための様々なオプションを提供します。
+AEM では、[Apache Sling Sitemap モジュール](https://github.com/apache/sling-org-apache-sling-sitemap)を使用して XML サイトマップを生成し、開発者とエディターがサイトの XML サイトマップを最新の状態に保つための様々なオプションを提供します。
 
-Apache Sling Sitemap モジュールは、トップレベルのサイトマップとネストされたサイトマップを区別します。両方とも、 `sling:sitemapRoot` プロパティを `true`. 通常、サイトマップは、ツリーの最上位サイトマップ（他のサイトマップのルートの親を持たないリソース）のパスにあるセレクターを使用してレンダリングされます。 このトップレベルのサイトマップルートは、サイトマップのインデックスも公開します。通常は、サイトの所有者が検索エンジンの設定ポータルで設定したり、サイトの `robots.txt`.
+Apache Sling Sitemap モジュールは、最上位のサイトマップとネストされたサイトマップを区別します。どちらも、`sling:sitemapRoot` プロパティが `true` に設定されているリソースについて生成されます。一般に、サイトマップは、ツリーの最上位のサイトマップ（他にサイトマップの上位要素を持たないリソース）のパスにあるセレクターを使用してレンダリングされます。また、この最上位のサイトマップルートはサイトマップのインデックスも公開します。このインデックスは通常、サイト所有者が検索エンジンの設定ポータルで設定したり、サイトの `robots.txt` に追加したりするものです。
 
-例えば、最上位レベルのサイトマップルートを次の場所に定義するサイトについて考えてみましょう。 `my-page` とネストされたサイトマップのルート ( `my-page/news`:news サブツリーのページ用の専用サイトマップを生成します。 結果として、関連する URL は次のようになります。
+例えば、最上位のサイトマップルートを `my-page` に定義し、ネストされたサイトマップルートを `my-page/news` に定義するサイトで、ニュースサブツリーのページ専用のサイトマップを生成するとします。これに、関連する URL は次のようになります。
 
 * https://www.mydomain.com/my-brand/my-page.sitemap-index.xml
 * https://www.mydomain.com/my-brand/my-page.sitemap.xml
@@ -369,15 +369,15 @@ Apache Sling Sitemap モジュールは、トップレベルのサイトマッ�
 
 >[!NOTE]
 >
-> セレクター `sitemap` および `sitemap-index` は、カスタム実装に影響を与える可能性があります。 製品機能を使用しない場合は、これらのセレクターを `service.ranking` が 0 より大きい。
+> セレクター `sitemap` および `sitemap-index` は、カスタム実装と干渉する可能性があります。製品機能を使用しない場合は、これらのセレクターを提供する独自のサーブレットを 0 より大きい `service.ranking` で設定します。
 
-デフォルトの設定では、ページのプロパティダイアログには、ページをサイトマップルートとしてマークするオプションが用意されています。前述のように、ページ自体とその子孫のサイトマップを生成します。 この動作は、 `SitemapGenerator` インターフェイスとは、代替実装を追加することで拡張できます。 ただし、XML サイトマップを再生成する頻度はコンテンツオーサリングワークフローとワークロードに大きく依存するので、製品には何も付属していません `SitemapScheduler` 設定。 これにより、機能が効果的にオプトインします。
+デフォルトの設定では、ページのプロパティダイアログには、ページをサイトマップルートとしてマークオプションがあり、前述したように、ページ自体とその下位要素のサイトマップを生成します。この動作は `SitemapGenerator` インターフェイスの実装によって実装されており、代替実装を追加することで拡張することができます。ただし、XML サイトマップを再生成する頻度は、コンテンツオーサリングワークフローとワークロードに大きく依存するので、製品には `SitemapScheduler` 設定は含まれていません。これにより、機能が効果的にオプトインします。
 
-XML サイトマップを生成するバックグラウンドジョブを有効にするには、 `SitemapScheduler` を設定する必要があります。 これをおこなうには、PID の OSGi 設定を作成します。 `org.apache.sling.sitemap.impl.SitemapScheduler`. スケジューラー式 `0 0 0 * * ?` は、すべての XML サイトマップを 1 日 1 回午前 0 時に再生成する出発点として使用できます。
+XML サイトマップを生成するバックグラウンドジョブを有効にするには、`SitemapScheduler` を設定する必要があります。それには、PID `org.apache.sling.sitemap.impl.SitemapScheduler` の OSGi 設定を作成します。スケジューラー式 `0 0 0 * * ?` は、1 日 1 回午前 0 時にすべての XML サイトマップを再生成するための開始点として使用できます。
 
-![Apache Sling Sitemap - Scheduler](assets/sling-sitemap-scheduler.png)
+![Apache Sling Sitemap - スケジューラー](assets/sling-sitemap-scheduler.png)
 
-サイトマップ生成ジョブは、オーサー層インスタンスとパブリッシュ層インスタンスの両方で実行できます。 適切な正規 URL はそこでのみ生成できるので、ほとんどの場合はパブリッシュ層インスタンスで生成を実行することをお勧めします（通常、Sling リソースマッピングルールはパブリッシュ層インスタンスでのみ存在するので）。 ただし、 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) インターフェイス。 カスタム実装で、オーサー層インスタンス上にサイトマップの正規 URL を生成できる場合、 `SitemapScheduler` オーサー実行モード用に設定でき、XML サイトマップ生成ワークロードをオーサーサービスクラスターのインスタンス全体に分散させることができます。 このシナリオでは、まだ公開されていない、変更されている、または制限されたユーザーグループにのみ表示されるコンテンツの処理に、特に注意が必要です。
+サイトマップ生成ジョブは、オーサー層のインスタンスとパブリッシュ層のインスタンスの両方で実行できます。適切な正規 URL はそこでのみ生成できるので、ほとんどの場合はパブリッシュ層インスタンスで生成を実行することをお勧めします（通常、Sling リソースマッピングルールはパブリッシュ層インスタンスでのみ存在するので）。 ただし、 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) インターフェイス。 カスタム実装で、オーサー層インスタンス上にサイトマップの正規 URL を生成できる場合、 `SitemapScheduler` オーサー実行モード用に設定でき、XML サイトマップ生成ワークロードをオーサーサービスクラスターのインスタンス全体に分散させることができます。 このシナリオでは、まだ公開されていない、変更されている、または制限されたユーザーグループにのみ表示されるコンテンツの処理に、特に注意が必要です。
 
 AEM Sitesには、 `SitemapGenerator` はページのツリーを横断してサイトマップを生成します。 サイトの正規 URL と代替言語（使用可能な場合）のみを出力するように事前設定されています。 また、必要に応じて、ページの最終変更日を含めるように設定することもできます。 その場合は、 _最終変更日を追加_ オプション _AdobeAEM SEO - Page Tree Sitemap Generator_ 設定および _最終変更ソース_. サイトマップがパブリッシュ層で生成される場合は、 `cq:lastModified` 日付。
 
@@ -461,7 +461,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加するなど、様々な使用例でも使用できます。 詳しくは、 [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) インターフェイスを参照してください。
+さらに、XML サイトマップ用に実装された機能は、例えば、正規リンクや代替言語をページの先頭に追加する場合など、様々なユースケースでも使用できます。詳しくは、[SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) インターフェイスを参照してください。
 
 ### レガシー URL の 301 リダイレクトの作成 {#creating-redirects-for-legacy-urls}
 

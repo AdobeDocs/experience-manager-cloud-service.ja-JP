@@ -5,7 +5,7 @@ exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: 95ea603db207d93fa025a2ae20552f790b47f27c
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 60%
+ht-degree: 89%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 60%
 
 ### [!DNL Sites] の新機能  {#what-is-new-sites}
 
-* **[コアコンポーネント2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**:Adobe Experience Manager as a Cloud Serviceは、コアコンポーネントの最新リリースに対する自動アップデートのメリットを享受できます。 リリース2.12.0には、コミュニティが提供する最新の機能強化が含まれています。 改善点は次のとおりです。 [新しいPOSTフォームハンドラ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data) カスタム CSS、JavaScript、メタデータを含める機能 [コンテキスト対応設定を介したタグ。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading) および [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components) カスタムコンポーネントでAdobeデータレイヤーを簡単に統合するためのユーティリティ。 リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
+* **[コアコンポーネント 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)**：Adobe Experience Manager as a Cloud Service には、コアコンポーネントの最新リリースへの自動アップデート機能があります。リリース 2.12.0 には、最新の機能改善がコミュニティからの貢献として含まれています。例えば、[新しい POST フォームハンドラー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=ja#post-data)、カスタムの CSS タグ、JavaScript タグ、メタデータタグを[コンテキスト対応の設定](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=ja#context-aware-loading)で組み込む機能、カスタムコンポーネントで Adobe データレイヤーとの統合を簡単に行うための [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=ja#enabling-custom-components) ユーティリティなどです。リリース 2.12.0 の[変更点の一覧](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)を参照してください。
 
-* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**:新しいプロジェクトを開始するための推奨されるExperience Managerが向上しました。 新しい [Adobeクライアントデータレイヤー](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、オプション [AMP でサイトを配信](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja) および新規 [拡張機能は、プロジェクト CSS/JS を追加するためのポイントです。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)
+* **[プロジェクトアーキタイプ 24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)**：新規 Experience Manager プロジェクトを開始する際の推奨される基盤が改善されました。新しい [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja)、[AMP でサイトを作成](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)するオプション、[プロジェクトの CSS／JS を追加するための新しい拡張ポイント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)が含まれるようになりました。
 
-* **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**:オーディエンスフォルダーを作成して、ContextHub オファーのターゲティング機能で使用するオーディエンスセグメントを簡単に整理、検索および選択できます。
+* **[ContextHub フォルダー](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：ContextHub オファーターゲティング機能に使用するオーディエンスセグメントを容易に整理、検索、選択するためのオーディエンスフォルダーを作成できます。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* **[!DNL Adobe Sensei]powered video smart tagging**:AI モデルを適用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーは、公開された豊富な情報を使用して、タグの追加に費やす時間を短縮し、より多くの時間を費やすことができます。 その結果、お客様に適切なエクスペリエンスを提供できます。 [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
+* **[!DNL Adobe Sensei]を活用したビデオスマートタグ付け**：AI モデルを適用してオブジェクトおよびアクション固有のタグのビデオコンテンツを分析することで、DAM ユーザーはタグ付けに費やす時間を短縮し、公開された豊富な情報の利用に割く時間を増やすことができます。その結果、顧客に適したエクスペリエンスを提供できるようになります。[ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)を参照してください。
 
 * **Brand Portal の機能強化**：次の新機能などが [!DNL Brand Portal] で利用できます。詳しくは、[[!DNL Brand Portal] リリースノート](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=ja)を参照してください。
 
@@ -68,15 +68,15 @@ ht-degree: 60%
 
 ### バグ修正 {#bug-fixes-commerce}
 
-* 製品コンソールとピッカーにあった GraphQL リクエストは、HTTPPOSTを介して実行されました。 この問題は、Apollo GraphQL クライアントが GraphQL クライアント OSGi 設定の設定に従って、GETリクエストを設定した場合にサポートするようにするために修正されました。
+* 製品コンソールおよびピッカーでの GraphQL リクエストが、HTTP POST を使用して実行されていました。この問題は修正されて、Apollo GraphQL クライアントが GraphQL クライアント OSGi 設定に従って GET リクエストをサポートするようになりました（設定済みの場合）。
 
-* CIF クラウド設定 UI で、/lib および /apps/ 内の設定に「保存して閉じる」ボタンが表示されていました。しかし、これらのインターフェイスは読み取り専用なので、UI は「閉じる」ボタンのみを表示するように修正されました。
+* CIF クラウド設定 UI で、/lib および /apps/ 内の設定に「保存して閉じる」ボタンが表示されていました。これらのインターフェイスは読み取り専用なので、UI が修正されて「閉じる」ボタンのみ表示されるようになりました。
 
 ## Cloud Manager {#cloud-manager}
 
 ### リリース日 {#release-date-cm}
 
-Experience Manageras a Cloud Service2020.10.0の Cloud Manager のリリース日は 2020 年 10 月 2 日です。
+Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリース日は 2020年10月02日（PT）です。
 
 ### [!DNL Cloud Manager] の新機能  {#what-is-new-cm}
 
@@ -84,11 +84,11 @@ Experience Manageras a Cloud Service2020.10.0の Cloud Manager のリリース�
 
 * 環境が休止状態になると、Cloud Manager に個別のステータスが表示されるようになりました。
 
-* Cloud Manager の「ビルドコンテナ」で、Java™ 8 または Java™ 11 を使用したプロジェクトのコンパイルがサポートされるようになりました。 Java™ 11 のサポートは、Maven ツールチェーンシステムで提供されます。
+* Cloud Manager ビルドコンテナで、Java™ 8 または Java™ 11 を使用したプロジェクトのコンパイルがサポートされるようになりました。Java™ 11 のサポートは、Maven ツールチェーンシステムによって提供されます。
 
 * 環境ごとの環境変数の数が 200 に増えました。
 
-* 概要ページの環境カードに、最大 3 つの環境が一覧表示されるようになりました。 「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
+* 概要ページの環境カードに最大 3 つの環境が表示されるようになりました。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
 詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
 
 ### バグ修正 {#bug-fixes-cloud-manager}
@@ -117,7 +117,7 @@ Experience Manageras a Cloud Service2020.10.0の Cloud Manager のリリース�
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
-の新機能と更新の詳細 [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja) リリース v1.1.12。
+[コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)のリリース v1.1.12 の新機能と更新点について説明します。
 
 ### 新機能 {#what-is-new-ctt}
 
@@ -125,4 +125,4 @@ Experience Manageras a Cloud Service2020.10.0の Cloud Manager のリリース�
 
 ### バグ修正 {#ctt-bug-fixes}
 
-* 移行セットに、部分的に類似したファイル名を持つパスが含まれている場合、コンテンツ転送ツールはコンテンツファイルをスキップしていました。
+* 移行セットに含まれているパスのファイル名が部分的に似ている場合、コンテンツ転送ツールがコンテンツファイルをスキップしていました。

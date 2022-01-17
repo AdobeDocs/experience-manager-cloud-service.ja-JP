@@ -1,46 +1,46 @@
 ---
-title: Learn about defining Metadata and Tagging for Content Fragments
-description: Learn about defining Metadata and Tagging for Content Fragments
+title: コンテンツフラグメントのメタデータとタグの定義について
+description: コンテンツフラグメントのメタデータとタグの定義について
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
+# コンテンツフラグメントのメタデータとタグの定義について {#author-headless-metadata-tagging}
 
-## The Story so Far {#story-so-far}
+## これまでの説明内容 {#story-so-far}
 
-[](overview.md)[](introduction.md)
+[AEM ヘッドレスコンテンツ作成者ジャーニー](overview.md)の冒頭の[はじめに](introduction.md)で、ヘッドレス向けのオーサリングに関連する基本概念と用語について説明しました。
 
-In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
+前のステップでは、ヘッドレス CMS オーサリング向けの参照の使用について紹介しました。使用可能な参照の種類（コンテンツ参照、アセット／メディア参照およびフラグメント参照）とその目的について説明しました。
 
-This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
+この記事ではこれらに基づいて、メタデータとタグを使用して AEM ヘッドレスプロジェクト用に独自のコンテンツをオーサリングする方法を理解します。
 
 ## 目的 {#objective}
 
 * **オーディエンス**：経験者
-* ****
+* **目的**：ヘッドレス CMS オーサリングへのメタデータとタグの使用について紹介します。
 
-## Adding Metadata and Tags {#adding-metadata-and-tags}
+## メタデータとタグの追加 {#adding-metadata-and-tags}
 
-There are three methods that you can use to add metadata and tags:
+メタデータとタグを追加する方法は 3 とおりあります。
 
-* When first creating your fragment:
+* フラグメントを初めて作成するとき：
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![コンテンツフラグメント作成 - 名前の指定](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* ********
+* コンテンツフラグメントエディターの「**メタデータ**」タブでは、メタデータの各種フィールドと定義済みの&#x200B;**タグ**&#x200B;をプロジェクトから追加できます。
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![コンテンツフラグメントエディター - メタデータ](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * ****
+   * また、これは、Assets コンソールのツールバーにある「**プロパティ**」オプションを使用して、直接アクセスすることもできます。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-Now you can put all this knowledge to use and start creating Content Fragments for your project.
+これで、これらの知識をすべて活用して、プロジェクト用のコンテンツフラグメントの作成を開始できます。
 
 ## その他のリソース {#additional-resources}
 
@@ -48,4 +48,4 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 * [タグの使用](/help/sites-cloud/authoring/features/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [コンテンツフラグメントモデル - アセットフォルダーでのコンテンツフラグメントモデルの許可](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

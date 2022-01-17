@@ -7,7 +7,7 @@ exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
 workflow-type: tm+mt
 source-wordcount: '9476'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -62,17 +62,17 @@ ht-degree: 97%
          [ビデオレンディションを管理します](/help/assets/manage-digital-assets.md#managing-renditions)。
 
       * [ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)
-      * [アセットの発行](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+      * [アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
    * ビデオのメタデータを操作します。
 
-      * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集します。
-         [ビデオプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
+      * タイトル、説明、タグ、カスタムメタデータフィールドなど、ビデオのプロパティを編集：
+         [ビデオのプロパティの編集](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [デジタルアセット用のメタデータの管理](/help/assets/manage-metadata.md)
       * [メタデータスキーマ](/help/assets/metadata-schemas.md)
    * ビデオをレビューおよび承認し、注釈を付け、完全なバージョン管理を維持します。
 
-      * [ビデオへの注釈の追加](/help/assets/manage-video-assets.md#annotate-video-assets) または [アセットへの注釈の追加](/help/assets/manage-digital-assets.md#annotating)
+      * [ビデオへの注釈](/help/assets/manage-video-assets.md#annotate-video-assets)または[アセットへの注釈](/help/assets/manage-digital-assets.md#annotating)
 
       * [バージョンの作成](/help/assets/manage-digital-assets.md#asset-versioning)
       * [アセットでのワークフローの開始](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
@@ -763,7 +763,7 @@ Experience Manager では、YouTube からのコンテンツの公開に **[!UIC
 
 公開にかかる時間は、プライマリソースビデオの形式、ファイルサイズ、アップロードトラフィックなどの多数の要因により左右されます。公開プロセスにかかる時間は、数分から数時間までの幅があります。また、高解像度の形式の方が、レンダリングの時間が長くなります。例えば、720p や 1080p の場合、表示されるまでの時間が 480p よりも長くなります。
 
-8 時間経っても「**[!UICONTROL アップロード済み (処理しています、お待ちください)]**」というステータスメッセージが表示される場合は、サイトからビデオを削除して再度アップロードしてみてください。
+8 時間経っても「**[!UICONTROL アップロード済み（処理しています、お待ちください）]**」というステータスメッセージが表示される場合は、サイトからビデオを削除して再度アップロードしてみてください。
 
 ### Web アプリケーションへの YouTube URL のリンク {#linking-youtube-urls-to-your-web-application}
 

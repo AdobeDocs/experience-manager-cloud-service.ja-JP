@@ -5,7 +5,7 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 98%
 
 [!DNL Adobe Experience Manager] as a Cloud Service の継続的なリリースモデルを使用すると、アプリケーションは継続的に自動アップデートされます。アップデートには、機能リリースと重要なアップデートの 2 種類があります。
 
-* 機能リリースは、予測可能な月次の頻度でおこなわれ、新機能と製品の革新に重点を置いています。
+* 機能リリースは、予測可能な月次の頻度で行われ、新機能と製品の革新に重点を置いています。
 * 重要なアップデートは頻繁に行われ、セキュリティ更新、バグ修正、パフォーマンスの強化に重点を置いています。これにより、[!DNL Adobe Experience Manager] as a Cloud Service は常に最新で、重要な修正が加えられます。
 
-イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備をおこなうことで、今後のリリースが組織に与える影響を評価できます。
+イノベーションのスピードに加えて、[!DNL Adobe Experience Manager] as a Cloud Service は、実稼動にリリースされる 1 か月前に今後の機能を予めプレビューできる柔軟性を備えています。独自のカスタム環境で機能をテストし、事前に内部ユーザーのトレーニング／準備を行うことで、今後のリリースが組織に与える影響を評価できます。
 
 >[!NOTE]
 >
->プレリリースは、毎月の機能リリースに対してのみおこなわれ、重要なアップデートではおこなわれません。
+>プレリリースは、毎月の機能リリースに対してのみ行われ、重要なアップデートでは行われません。
 
-リリースの準備をするには、次をおこないます。
+リリースの準備をするには、次を行います。
 
-1. カレンダーをマークする：[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)の月次リリースの主な日付を確認し、リリースに備えて主要なアクティビティに備えるためにカレンダーをマークします。
+1. カレンダーをマークする：[Experience Manager リリースロードマップ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja#aem-as-cloud-service)の月次リリースの主な日付を確認し、リリースに備えて主要なアクティビティに備えるためにカレンダーをマークします。
 1. リリースノートを確認する：リリースおよびプレリリース機能の詳細について[現在のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)を確認します。
 1. 新機能にアクセスして試す：非実稼動環境で[プレリリースチャネル](/help/release-notes/prerelease.md)を有効にし、カスタム環境で評価するための機能の試用を開始します。
 1. ユーザーのトレーニング：ドキュメントと Experience League のリソースを使用して、ユーザーが新機能を早く使いこなせるようにします。

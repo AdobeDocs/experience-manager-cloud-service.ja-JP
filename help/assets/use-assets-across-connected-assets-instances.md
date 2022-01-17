@@ -8,7 +8,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
 workflow-type: tm+mt
 source-wordcount: '3358'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ## Connected Assets の概要 {#overview-of-connected-assets}
 
-[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの Web ページでDynamic Media画像を使用し、スマート切り抜きや画像プリセットなどのDynamic Media機能を利用することもできます。
+[!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの web ページで Dynamic Media 画像を使用し、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を利用することもできます。
 
 [!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットを [!DNL Sites] ローカルデプロイメントで一度に利用できるようにするには、リモートアセットを一括で移行することを検討します。
 

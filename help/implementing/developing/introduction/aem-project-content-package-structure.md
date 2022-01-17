@@ -70,11 +70,11 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `/apps/settings`
    + ACL（権限）
       + `/apps` の配下にある任意のパスの任意の `rep:policy`
-   + [事前にコンパイルされたバンドルされたスクリプト](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [事前コンパイル済みバンドルスクリプト](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=ja)
 
 >[!NOTE]
 >
->同じコードをすべての環境にデプロイする必要があります。これは、ステージング環境と同じレベルの信頼性検証が実稼動環境でも確実におこなわれるようにするために必要です。詳しくは、「[実行モード](/help/implementing/deploying/overview.md#runmodes)」の節を参照してください。
+>同じコードをすべての環境にデプロイする必要があります。これは、ステージング環境と同じレベルの信頼性検証が実稼動環境でも確実に行われるようにするために必要です。詳しくは、「[実行モード](/help/implementing/deploying/overview.md#runmodes)」の節を参照してください。
 
 
 ### コンテンツパッケージ
@@ -157,7 +157,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 ## Adobe Cloud Manager によるデプロイメント用のパッケージのマーク {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-デフォルトでは、Adobe Cloud Manager は Maven ビルドで生成されたすべてのパッケージを組み込みますが、コンテナ（`all`）パッケージはすべてのコードパッケージおよびコンテンツパッケージを含んだ単一のデプロイメントアーティファクトなので、必ず、コンテナ（`all`）パッケージ&#x200B;**のみ**&#x200B;をデプロイします。これを確実におこなうには、Maven ビルドで生成される他のパッケージを、`<properties><cloudManagerTarget>none</cloudManageTarget></properties>` という FileVault コンテンツパッケージ Maven プラグイン設定でマークする必要があります。
+デフォルトでは、Adobe Cloud Manager は Maven ビルドで生成されたすべてのパッケージを組み込みますが、コンテナ（`all`）パッケージはすべてのコードパッケージおよびコンテンツパッケージを含んだ単一のデプロイメントアーティファクトなので、必ず、コンテナ（`all`）パッケージ&#x200B;**のみ**&#x200B;をデプロイします。これを確実に行うには、Maven ビルドで生成される他のパッケージを、`<properties><cloudManagerTarget>none</cloudManageTarget></properties>` という FileVault コンテンツパッケージ Maven プラグイン設定でマークする必要があります。
 
 >[!TIP]
 >
@@ -286,7 +286,7 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 
 ## `ui.apps` パッケージと `ui.content` パッケージの依存関係  {#package-dependencies}
 
-パッケージの適切なインストールを確実におこなうために、パッケージ間の依存関係を設定することをお勧めします。
+パッケージの適切なインストールを確実に行うために、パッケージ間の依存関係を設定することをお勧めします。
 
 一般的なルールとしては、可変コンテンツを格納したパッケージ（`ui.content`）は、可変コンテンツのレンダリングと使用をサポートする不変コード（`ui.apps`）に依存します。
 

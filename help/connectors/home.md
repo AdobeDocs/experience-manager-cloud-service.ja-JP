@@ -6,7 +6,7 @@ exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 92%
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [概要](/help/overview/home.md) | このガイドでは、導入、用語、アーキテクチャなど、Experience Manageras a Cloud Service の概要を説明します。 |
+| [概要](/help/overview/home.md) | このガイドでは、ソリューションの紹介、用語、アーキテクチャなど、Adobe Experience Manager as a Cloud Service の概要を説明します。 |
 | [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe Experience Manager as a Cloud Service の最新リリースに関する重要な情報を提供します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。 |
 | [オンボーディング](/help/onboarding/home.md) | このガイドでは、アクセス方法、データ保護に関する重要な情報など、Adobe Experience Manager as a Cloud Service の基本について概要を説明します。 |

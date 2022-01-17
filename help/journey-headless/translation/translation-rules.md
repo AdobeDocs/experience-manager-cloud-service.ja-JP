@@ -1,101 +1,101 @@
 ---
-title: Configure Translation Rules
-description: Learn how to define translation rules to identify content for translation.
+title: 翻訳ルールの設定
+description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Configure Translation Rules {#configure-translation-rules}
+# 翻訳ルールの設定 {#configure-translation-rules}
 
-Learn how to define translation rules to identify content for translation.
+翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
-[](configure-connector.md)
+AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳コネクタの設定](configure-connector.md)）では、翻訳コネクタをインストールおよび設定する方法について説明し、次のことができるようになりました。
 
-* Understand the important parameters of the Translation Integration Framework in AEM.
-* Be able to set up your own connection to your translation service.
+* AEM の翻訳統合フレームワークの重要なパラメーターを理解する
+* 翻訳サービスへの独自の接続をセットアップできる
 
-Now that your connector is set up, this article takes you through the next step of identifying what content you need to translate.
+コネクタがセットアップされたので、この記事では次のステップとして、翻訳が必要なコンテンツを特定する方法について説明します。
 
 ## 目的 {#objective}
 
-This document helps you understand how to use AEM&#39;s translation rules to identify your translation content. 読み終えると、以下を達成できます。
+このドキュメントを通じて、AEM の翻訳ルールを使用して翻訳コンテンツを特定する方法を理解できるようになります。読み終えると、以下を達成できます。
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* 翻訳ルールの機能を理解する
+* 独自の翻訳ルールを定義できる
 
 ## 翻訳ルール {#translation-rules}
 
-Content Fragments, which represent your headless content, can contain much information organized by structured fields. Depending on your project needs, it is likely that not all of the fields within a Content Fragment must to be translated.
+コンテンツフラグメントはヘッドレスコンテンツを表すものですが、その中には、構造化されたフィールドにより整理された多くの情報を含めることができます。プロジェクトのニーズによっては、コンテンツフラグメント内の必ずしもすべてのフィールドを翻訳する必要がない場合があります。
 
-Translation rules identify the content that is included in, or excluded from, translation projects. When content is translated, AEM extracts or harvests the content based on these rules. In this way only content that must be translated is sent to the translation service.
+翻訳ルールは、翻訳プロジェクトに含める、または翻訳プロジェクトから除外するコンテンツを特定します。コンテンツが翻訳されると、AEM はこれらのルールに基づいてコンテンツを抜き出すか組み込みます。このようにして、翻訳が必要なコンテンツのみが翻訳サービスに送信されます。
 
-Translation rules include the following information:
+翻訳ルールには以下の情報が含まれます。
 
-* The path of the content to which the rule applies
-   * The rule also applies to the descendants of the content
-* The names of the properties that contain the content to translate
-   * The property can be specific to a specific resource type or to all resource types
+* ルールが適用されるコンテンツのパス
+   * コンテンツの子ノードにもルールが適用されます
+* 翻訳するコンテンツを含んだプロパティの名前
+   * このプロパティは、特定のリソースタイプに固有のものでも、すべてのリソースタイプに固有のものでもかまいません
 
-Because Content Fragment Models, which define the structure of your Content Fragments, are unique to your own project, it is vital to set up translation rules so AEM knows what elements of your content models to translate.
+コンテンツフラグメントモデルは、コンテンツフラグメントの構造を定義するものであり、プロジェクトに固有のものなので、コンテンツモデルのどの要素を翻訳するかを AEM が把握できるように、翻訳ルールをセットアップすることが不可欠です。
 
 >[!TIP]
 >
->**** These names are needed to configure translation rules. [****](getting-started.md#content-modlels)
+>通常は、コンテンツアーキテクトが、翻訳が必要なすべてのフィールドの「**プロパティ名**」を翻訳担当者に提供します。これらの名前は、翻訳ルールを設定するために必要です。このジャーニーで前述したように、翻訳担当者は[これらの「**プロパティ名**」を自分でを見つけることができます](getting-started.md#content-modlels)。
 
-## Creating Translation Rules {#creating-rules}
+## 翻訳ルールの作成 {#creating-rules}
 
-Multiple rules can be created to support complex translation requirements. For example, one project you may be working on requires all fields of the model to be translated, but on another only description fields must be translated while titles are left untranslated.
+複数のルールを作成して、複雑な翻訳要件をサポートすることができます。例えば、取り組んでいるプロジェクトのうち一方では、モデルのすべてのフィールドを翻訳する必要があるのに対して、もう一方では、説明フィールドのみ翻訳が必要で、タイトルは翻訳せずにそのままにしておく、といった場合があります。
 
-Translation rules are designed to handle such scenarios. However in this example we illustrate how to create rules by focusing on a simple, single configuration.
+翻訳ルールは、このようなシナリオに対応できるように設計されています。ただし、ここでは、シンプルな単一の設定に的を絞って、ルールの作成方法を説明します。
 
-****&#x200B;コンソールにアクセスするには：
+翻訳ルールの設定に使用できる&#x200B;**翻訳設定**&#x200B;コンソールがあります。これにアクセスするには：
 
-1. ********
-1. ****
+1. **ツール**／**一般**&#x200B;に移動します。
+1. 「**翻訳設定**」をタップまたはクリックします。
 
-**** Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
+**翻訳設定** UI には、翻訳ルールに使用できるオプションが多数あります。ここでは、基本的なヘッドレスローカライゼーション設定に必要な最も一般的な手順を示します。
 
-1. ****This is the path of the content that is be affected by the rule.
-   ![](assets/add-translation-context.png)
-1. ****`/content/dam/<your-project>`
-   ![](assets/select-context.png)
-1. AEM saves the configuration.
-1. ********
-   ![](assets/translation-rules-editor.png)
-1. `/content/dam`**`/content/dam`**
-1. ****[](getting-started.md#content-models)
-   1. ****
-   1. ********
-   1. ****
-   1. Repeat these steps for all of the fields that you must translate.
+1. 「**コンテキストを追加**」をタップまたはクリックすると、パスを追加できます。これは、ルールの影響を受けるコンテンツのパスです。
+   ![コンテキストの追加](assets/add-translation-context.png)
+1. パスブラウザーを使用して必要なパスを選択し、「**確認**」ボタンをタップまたはクリックして保存します。なお、ヘッドレスコンテンツを保持するコンテンツフラグメントは、通常、`/content/dam/<your-project>` の配下に配置されます。
+   ![パスの選択](assets/select-context.png)
+1. AEM により設定が保存されます。
+1. 作成したコンテキストを選択したあと、「**編集**」をタップまたはクリックする必要があります。これにより、プロパティを設定するための&#x200B;**翻訳ルールエディター**が開きます。
+   ![翻訳ルールエディター](assets/translation-rules-editor.png)
+1. デフォルトでは、すべての設定が親パス（この例では `/content/dam`）から継承されます。設定にフィールドを追加するには、「**継承元`/content/dam`**」オプションをオフにします。
+1. オフにしたら、コンテンツフラグメントモデルのプロパティ名のうち、[翻訳対象のフィールドとして既に特定されている](getting-started.md#content-models)ものを、リストの「**一般**」セクションに追加します。
+   1. プロパティ名を「**新しいプロパティ**」フィールドに入力します。
+   1. 「**翻訳**」オプションと「**継承**」オプションが自動的にオンになります。
+   1. 「**追加**」をタップまたはクリックします。
+   1. 翻訳が必要なすべてのフィールドについて、上記の手順を繰り返します。
    1. 「**保存して閉じる**」をタップまたはクリックします。
-      ![](assets/add-property.png)
+      ![プロパティの追加](assets/add-property.png)
 
-You have now configured your translation rules.
+これで、翻訳ルールが設定されました。
 
-## Advanced Usage {#advanced-usage}
+## 高度な使用方法 {#advanced-usage}
 
-There are a number of additional properties that can be configured as part of your translation rules. In addition, you can specify your rules by hand as XML, which allows for more specificity and flexibility.
+翻訳ルールの一部として設定できる追加のプロパティが多数あります。さらに、ルールを XML として手動で指定できるので、個別の要件への対応能力と柔軟性を高めることができます。
 
-[](#additional-resources)
+このような機能は、通常、ヘッドレスコンテンツのローカライズを開始する際に必要なものではありませんが、興味があれば、[その他のリソース](#additional-resources)の節を参照して詳細を確認してください。
 
 ## 次の手順 {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+これで、ヘッドレス翻訳ジャーニーのこのステップが完了し、以下のことができるようになりましたした。
 
-* Understand what the translation rules do.
-* Be able to define your own translation rules.
+* 翻訳ルールの機能を理解する
+* 独自の翻訳ルールを定義する
 
-[](translate-content.md)
+この知識を基に、AEM ヘッドレス翻訳ジャーニーを続けてください。次に、[コンテンツの翻訳](translate-content.md)のドキュメントを参照しながら、コネクタとルールを連携させてヘッドレスコンテンツを翻訳する方法について説明します。
 
 ## その他のリソース {#additional-resources}
 
-[](translate-content.md)
+[コンテンツの翻訳](translate-content.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
-* [](/help/sites-cloud/administering/translation/rules.md)
+* [翻訳対象コンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。

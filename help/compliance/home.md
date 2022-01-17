@@ -1,21 +1,21 @@
 ---
-title: Compliance
-description: このページでは、Experience Manageras a Cloud Serviceのコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
+title: コンプライアンス
+description: ここでは、Experience Manageras a Cloud Service のコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
 landing-page-description: プライバシーやアクセシビリティなど、AEM as a Cloud Service のコンプライアンスの概要については、まずこちらを参照してください。
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 82%
+ht-degree: 95%
 
 ---
 
-# AEM as a Cloud Serviceのコンプライアンス {#aem-compliance}
+# AEM as a Cloud Service でのコンプライアンス {#aem-compliance}
 
-このページでは、Experience Manageras a Cloud Serviceのコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
+ここでは、Experience Manageras a Cloud Service のコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
 
 ## 概要に関する主要な記事 {#key-articles}
 
-* [データ保護およびデータプライバシーに関する規制への対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
+* [データ保護およびデータプライバシーに関する規制に対する の対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [データ保護およびデータプライバシーに関する規制に対する Foundation の対応](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
 * [データ保護およびデータプライバシーに関する規制に対する Sites の対応](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 * [Web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)

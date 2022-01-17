@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 95%
       * ドロップダウン機能を使用して、既存のタグを選択できます。
       * 選択ボックスのタグエントリの上にマウスポインターを合わせると、x が表示されます。これをクリックすると、対象のタグをこのページから削除できます。
       * タグについて詳しくは、[タグの使用](/help/sites-cloud/authoring/features/tags.md)を参照してください。
-   * **ナビゲーション内で非表示にする**- 使用されるサイトでページがページのナビゲーションに表示されるかどうかを示します。
+   * **ナビゲーション内で非表示にする** - 使用されるサイトでページがページのナビゲーションに表示されるかどうかを示します。
 
 * **ブランディング**
 
@@ -60,7 +60,7 @@ ht-degree: 95%
    > 関連する自動レプリケーションの設定方法の詳細は、「[オン／オフ時間 - トリガー構成](/help/operations/replication.md#on-and-off-times-trigger-configuration)」を参照してください。
 
    >[!NOTE]
-   >次のいずれかの **オンタイム** または **オフタイム** が過去に設定され、自動レプリケーションが設定されている場合は、関連するアクションが直ちにトリガーされます。
+   >「**オンタイム**」か「**オフタイム**」のいずれかが過去の日時で、自動レプリケーションが設定されている場合は、関連するアクションが直ちにトリガーされます。
 
    * **オンタイム** - 公開されたページがパブリッシュ環境で表示（レンダリング）される日時。ページは、手動または事前設定の自動レプリケーションで公開する必要があります。
 
@@ -101,9 +101,9 @@ ht-degree: 95%
    * **リダイレクト** - このページが自動的にリダイレクトするページを示します。
    * **デザイン** - 結果のサイトのページナビゲーションにページが表示されるかどうかを示します
    * **エイリアス** - このページで使用されるエイリアスを指定します
-      * 例えば、 `private` （ページの） `/content/wknd/us/en/magazine/members-only`を使用しない場合、このページには `/content/wknd/us/en/magazine/private`
-      * エイリアスを作成すると、 `sling:alias` プロパティをページノードに追加します。このプロパティはリソースにのみ影響を与え、リポジトリパスには影響を与えません。
-      * エディターでエイリアスによってアクセスされたページは公開できません。 [公開オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) エディターでは、実際のパスを使用してアクセスしたページに対してのみ使用できます。
+      * 例えば、`/content/wknd/us/en/magazine/members-only` ページに `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` からもアクセスできます。
+      * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定されます。このプロパティはリソースにのみ影響し、リポジトリーパスには影響しません。
+      * エディターからエイリアスでアクセスしたページは公開できません。エディターでは、実際のパスでアクセスしたページにのみ、[公開オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)が使用可能です。
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).

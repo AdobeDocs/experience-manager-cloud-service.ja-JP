@@ -5,7 +5,7 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 91%
 
 UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
 
-例えば、特定の環境のログファイルをダウンロードする場合、コマンドは
+例えば、特定の環境のログファイルをダウンロードする場合は、次のようなコマンドになります。
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror

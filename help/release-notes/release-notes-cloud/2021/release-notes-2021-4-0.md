@@ -147,7 +147,7 @@ ht-degree: 100%
 
 ### リリース日 {#release-date-cm-april}
 
-AEM as a Cloud Service 2021.4.0 Cloud Manager のリリース日は 2021 年 4 月 8 日です。次回のリリースは 2021 年 5 月 6 日に予定されています。
+AEM as a Cloud Service 2021.4.0 Cloud Manager のリリース日は 2021 年 4 月 8 日です。次回のリリースは 2021年5月6日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-april}
 

@@ -6,11 +6,11 @@ exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 78%
+ht-degree: 94%
 
 ---
 
-# オンボーディングを開始 [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
+# [!DNL Experience Manager as a Cloud Service] へのオンボーディングの開始 {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
@@ -23,19 +23,19 @@ AEM as a Cloud Service のジャーニーが始まりました。新しいアプ
 
 オンボーディングとは、指定された[システム管理者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=ja)が組織の AEM as a Cloud Service をセットアップするプロセスです。これには、クラウドリソースの初期プロビジョニングと、ユーザーを職務に基づいて適切な役割に割り当てる作業が含まれます。これらの役割に従って、各メンバーが AEM as a Cloud Service リソースにログインしてアクセスできるようになります。
 
-以下の図に示すオンボーディングジャーニーは、システム管理者のペルソナ向けに設計され、要件、手順、アプローチをレイアウトしています。 ジャーニーは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナを定義しますが、ジャーニーの視点は管理者のものです。
+以下の図に示すオンボーディングジャーニーは、システム管理者のペルソナ向けに設計されており、要件、手順およびアプローチを説明しています。このジャーニーでは、プロジェクトを成功させるためにシステム管理者がやり取りする必要がある追加のペルソナが定義されますが、ジャーニー自体は管理者の視点で構成されています。
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 >[!NOTE]
->詳しくは、 [オンボーディングジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) オンボーディングエクスペリエンスを開始するには：
+>オンボーディングエクスペリエンスの概要については、[オンボーディングジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=ja)を参照してください。
 
 
 ## [!DNL Experience Manager as a Cloud Service] ガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
-| [概要](/help/overview/home.md) | このガイドでは、 [!DNL Experience Manager as a Cloud Service]（概要、用語、アーキテクチャなど）。 |
+| [概要](/help/overview/home.md) | このガイドでは、基礎知識、用語、アーキテクチャなど、[!DNL Experience Manager as a Cloud Service] の概要を説明します。 |
 | [リリースノート](/help/release-notes/home.md) | このガイドでは、新機能、廃止される機能および削除された機能、既知の問題など、Adobe [!DNL Experience Manager as a Cloud Service] の最新リリースに関する重要な情報を提供します。 |
 | [セキュリティユーザーガイド](/help/security/home.md) | Adobe [!DNL Experience Manager as a Cloud Service] のセキュリティに関する重要なトピックについて説明します。 |
 | [Sites ユーザーガイド](/help/sites-cloud/home.md) | Adobe [!DNL Experience Manager Sites] as a Cloud Service を使用したオーサリングおよび管理方法について説明します。 |

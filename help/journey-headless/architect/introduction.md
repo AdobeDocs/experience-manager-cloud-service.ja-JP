@@ -1,27 +1,27 @@
 ---
-title: AEM Headless Content Architect Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
+title: AEM ヘッドレスコンテンツアーキテクトジャーニー
+description: Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法を紹介します。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
-# Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
+# AEM でのヘッドレス向けコンテンツモデリング - 概要 {#architect-headless-introduction}
 
-[](overview.md)
+[AEM ヘッドレスコンテンツアーキテクトジャーニー](overview.md)のこのステップでは、Adobe Experience Manager（AEM）as a Cloud Service でのヘッドレスコンテンツ配信向けコンテンツモデリングを理解するために必要な（基本）概念と用語について説明します。
 
-This document helps you understand headless content delivery, how AEM supports headless, and how content is modeled for headless. ドキュメントを読めば、以下が可能です。
+このドキュメントを通じて、ヘッドレスコンテンツ配信、AEM によるヘッドレスのサポートおよびコンテンツがヘッドレス向けにどのようにモデル化されるかを理解できるようになります。ドキュメントを読めば、以下が可能です。
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and content modeling.
+* ヘッドレスコンテンツ配信の基本概念を理解する。
+* AEM でのヘッドレスとコンテンツモデリングのサポート方法に詳しくなる
 
 ## 目的 {#objective}
 
-* **オーディエンス**：初心者
-* ****
+* **対象読者**：初心者
+* **目的**：ヘッドレスコンテンツモデリングに関係のある概念と用語を紹介します。
 
 ## フルスタックコンテンツ配信 {#full-stack}
 
@@ -29,18 +29,18 @@ This document helps you understand headless content delivery, how AEM supports h
 
 ![従来のフルスタック CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. システムの機能は、CMS スタックの異なるコンポーネントを構成します。フルスタックソリューションには多くの利点があります。
+フルスタック CMS では、コンテンツを操作する機能はすべて CMS 内にあります。システムの機能は、CMS スタックの異なるコンポーネントを構成します。フルスタックソリューションには多くの利点があります。
 
-* There is one system to maintain.
+* 維持管理するシステムは 1 つである。
 * コンテンツを一元的に管理できる。
 * システムのすべてのサービスが統合されている。
 * コンテンツのオーサリングはシームレスである。
 
-So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+したがって、新しいチャネルを追加したり、新しいタイプのエクスペリエンスをサポートしたりする必要がある場合は、1 つ（または複数）の新しいコンポーネントをスタックに挿入します。変更する場所は 1 つだけです。
 
 ![スタックへの新しいチャネルの追加](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
+ただし、スタック内の他の項目を、変更に合わせて調整する必要があるので、スタック内の依存関係の複雑さがすぐに明らかになります。
 
 ## ヘッドレスのヘッド {#the-head}
 
@@ -56,28 +56,28 @@ However the complexity of the dependencies within the stack quickly become appar
 
 ## コンテンツモデリング {#content-modeling}
 
-Content Modeling (also known as data modeling) is your specialty, so what needs to be considered when modeling for headless?
+コンテンツモデリング（データモデリングとも呼ばれます）はアーキテクトの専門分野です。ヘッドレス向けモデリングの際には、何を考慮すべきでしょうか。
 
-For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. **
+ヘッドレスアプリケーションがコンテンツにアクセスして何らかの処理を行えるようにするには、実のところ、コンテンツには事前に定義された構造が必要です。コンテンツを自由形式にすることも可能ですが、その場合は、アプリケーション側の処理が&#x200B;*非常に*&#x200B;複雑になります。
 
-********
+AEM の場合は、コンテンツアーキテクトがコンテンツモデリングを実行して、様々な&#x200B;**コンテンツフラグメントモデル**&#x200B;を設計します。これらのモデルは、コンテンツを保持する&#x200B;**コンテンツフラグメント**&#x200B;をコンテンツ作成者が作成する際に使用される構造を定義します。
 
-### Accessing the Content {#access-content}
+### コンテンツへのアクセス {#access-content}
 
-This is more of a development detail - but it might interest you, just to complete the story.
+これはどちらかと言えば、開発上の詳細になりますが、ストーリーを完結させるうえで興味を引くかもしれません。
 
-Once you&#39;ve created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content.
+コンテンツフラグメントモデルを作成し、作成者がそれらを使用してコンテンツを生成したら、ヘッドレスアプリケーションは、このコンテンツにアクセスする必要があります。
 
-Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. **
+Adobe Experience Manager （AEM）as a Cloud Service では、AEM GraphQL API を使用して、コンテンツフラグメントに選択的にアクセスし、必要なコンテンツのみを返すことができます。開発者は、API を使用して、特定のコンテンツを選択するクエリを作成できます。この選択プロセスは、*使用する*&#x200B;コンテンツフラグメントモデルに基づいています。
 
-This means your project can realize headless delivery of structured content for use in your applications.
+つまり、アプリケーションで使用する構造化コンテンツのヘッドレス配信をプロジェクトで実現できることになります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-[](basics.md)
+これで、概念と用語を説明したので、次のステップは [AEM でのヘッドレス向けコンテンツモデリングの基本について](basics.md)です。
 
 ## その他のリソース {#additional-resources}
 
 * AEM ヘッドレスデベロッパージャーニー
    * [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
-   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+   * [コンテンツをモデル化する方法](/help/journey-headless/developer/model-your-content.md)

@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Assets] の開発者向けリファレンス'
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments]'
+description: '[!DNL Assets] API と開発者向けリファレンスコンテンツを使用すると、バイナリファイル、メタデータ、レンディション、コメント、 [!DNL Content Fragments].'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1450'
 ht-degree: 98%
 
 ---
@@ -185,7 +185,7 @@ HTTP POST リクエストを目的のフォルダーに送信します。この�
 
 ## 後処理ワークフローでのワークフローステップのサポート {#post-processing-workflows-steps}
 
-Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされるクラスの詳細については、 [Java API リファレンスまたは JavaDoc](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+Adobe [!DNL Experience Manager] の以前のバージョンからアップグレードした場合は、アセットマイクロサービスを使用してアセットを処理できます。クラウドネイティブのアセットマイクロサービスは、設定と使用が簡単です。以前のバージョンの [!UICONTROL DAM アセットの更新]ワークフローで使用されるワークフロー手順の一部はサポートされていません。サポートされているクラスについて詳しくは、[Java API リファレンスか Javadoc](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) を参照してください。
 
 次の技術的ワークフローモデルは、アセットマイクロサービスに置き換わっているか、サポートされていません。
 

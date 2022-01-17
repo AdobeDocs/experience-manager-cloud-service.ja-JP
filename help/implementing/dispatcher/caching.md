@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
 source-wordcount: '1528'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
    ```
 
-   グローバルキャッシュコントロールヘッダーや、広い範囲の正規表現に一致するヘッダーを設定する場合は、非公開にするコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。ただし、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合、AEM as a Cloud Service によってキャッシュヘッダーが削除されます。AEMで常にキャッシュヘッダーを適用するように強制するには、 **常に** オプションは次のとおりです。
+   グローバルキャッシュコントロールヘッダーや、広い範囲の正規表現に一致するヘッダーを設定する場合は、非公開にするコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。ただし、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合、AEM as a Cloud Service によってキャッシュヘッダーが削除されます。AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **always** オプションを追加します。
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -58,7 +58,7 @@ Define DISABLE_DEFAULT_CACHING
    { /glob "*" /type "allow" }
    ```
 
-* 特定のコンテンツがキャッシュされないようにするには **CDN で**、Cache-Control ヘッダーをに設定します。 *プライベート*. 例えば、次の例では、という名前のディレクトリの下に html コンテンツが格納されないようにします。 **secure** CDN でキャッシュされる前に、以下の手順を実行します。
+* 特定のコンテンツが **CDN で**&#x200B;キャッシュされないようにするには、Cache-Control ヘッダーを *private* に設定します。例えば、次の例では、**secure** という名前のディレクトリ下の HTML コンテンツが CDN でキャッシュされないようにしています。
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -72,7 +72,7 @@ Define DISABLE_DEFAULT_CACHING
    >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
 
    >[!NOTE]
-   >Dispatcher は、独自の [キャッシュルール](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). コンテンツを真にプライベートにするには、Dispatcher によってキャッシュされないようにする必要があります。
+   >しかし、それでも Dispatcher は、独自の[キャッシュルール](https://helpx.adobe.com/jp/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html)に従ってコンテンツをキャッシュする可能性があります。コンテンツを本当にプライベートにするには、Dispatcher によってキャッシュされないようにする必要があります。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 

@@ -1,51 +1,51 @@
 ---
-title: AEM Headless Content Author Journey
-description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
+title: AEM ヘッドレスコンテンツ作成者ジャーニー
+description: AEM の強力で柔軟なヘッドレス機能とその能力およびプロジェクトのコンテンツをオーサリングする方法を説明するガイド付きジャーニーは、ここから始めてください。
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '868'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
-# AEM Headless Content Author Journey {#aem-headless-author-journey}
+# AEM ヘッドレスコンテンツ作成者ジャーニー {#aem-headless-author-journey}
 
-Start here for a guided journey through the powerful and flexible headless features of AEM, and how to author content for your headless project.
+AEM の強力で柔軟なヘッドレス機能と、ヘッドレスプロジェクトのコンテンツをオーサリングする方法を説明するガイド付きジャーニーは、ここから始めてください。
 
 ## はじめに {#introduction}
 
-Headless implementation is becoming increasingly important for delivering experiences to your audience, wherever they are and regardless of channel.
+ヘッドレス実装は、オーディエンスの場所やチャネルに関係なくオーディエンスにエクスペリエンスを提供する上で、ますます重要になってきています。
 
-Headless content is not based on the traditional structure of pages, and components. Instead it is based on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery.
+ヘッドレスコンテンツは、従来のページ構造やコンポーネントに基づいたものではありません。代わりに、チャネルに依存しない再利用可能なコンテンツの断片（フラグメント）の作成と、そのクロスチャネル配信に基づいています。
 
-In AEM this is realized with Content Fragments. You author the content in individual Content Fragments that are then made available for an application to select and use as required.
+AEM では、これはコンテンツフラグメントで実現されます。コンテンツを個々のコンテンツフラグメントでオーサリングし、それをアプリケーションで必要に応じて選択して使用できるようにします。
 
-This flexibility means that headless is a modern and dynamic development pattern for implementing digital experiences.
+ヘッドレスにはこのような柔軟性があるので、デジタルエクスペリエンスを実装するための最新の動的な開発パターンになります。
 
-このガイドでは、最も重要なトピックを順を追って説明します。完了時には次ができるようになります。
+このガイドでは、最も重要なトピックを順を追って説明します。ガイドの完了時には、以下を達成できます。
 
-* Have a basic understanding of what headless content delivery is and its benefits.
+* ヘッドレスコンテンツ配信の概要とメリットを基本的に理解する。
 * AEM ヘッドレス機能と、それらが連携してヘッドレスなエクスペリエンスを提供する仕組みを理解する。
-* Have the ability to author content for your AEM headless project.
+* AEM ヘッドレスプロジェクトのコンテンツをオーサリングできる。
 
-## AEM Documentation Journeys {#documentation-journeys}
+## AEM ドキュメントジャーニー {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)は、前提となる事前のトピックや AEM の知識を最小限に抑えながら、AEM を初めて使用することもある読者がビジネス上の問題全体を把握し解決するのに役立つ説明を提供して、複雑であろう様々なトピックや機能をひとまとめに扱っています。
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+ドキュメントジャーニーは、アドビの最新の調査、アドビのコンサルタントによる実装実績、顧客プロジェクトからのフィードバックなどに基づいて、ベストプラクティス原則を軸に設計されています。
 
-[](/help/journey-documentation/documentation-journeys.md)
+AEM を使用してヘッドレスビジネスケースを解決する方法をアドビがどのように推奨しているかを理解するには、[AEM ヘッドレスジャーニー](/help/journey-documentation/documentation-journeys.md)がその出発点になります。
 
-## 対象者 {#audience}
+## 対象読者 {#audience}
 
-This journey is designed for the Content Author persona. As a Content Author you will be creating the actual content in Content Fragments.
+このジャーニーは、コンテンツ作成者のペルソナ向けに設計されています。コンテンツ作成者は、コンテンツフラグメントで実際のコンテンツを作成します。
 
-The journey lays out the requirements, steps, and approach for authoring content for an AEM Headless project. The journey will define additional personas with which the author must interact for a successful project, but the point-of-view for the journey is that of the content author.
+このジャーニーは、AEM ヘッドレスプロジェクトのコンテンツをオーサリングするための要件、手順およびアプローチを明確にします。ジャーニーでは、プロジェクトを成功させるためにコンテンツ作成者がやり取りする必要がある追加のペルソナを定義することになりますが、ジャーニー自体はコンテンツ作成者の視点で構成されています。
 
 このジャーニーの情報は、もちろん他のペルソナにとっても役に立ちますが、特定のロールには必要ない情報も一部あります。その他のロールに対応するジャーニーが今後公開され次第、随時お知らせします。
 
-## The Headless Content Author Journey {#the-journey}
+## ヘッドレスコンテンツ作成者ジャーニー {#the-journey}
 
 このジャーニーでは、多くのトピックを参照します。以下の記事では、AEM でのヘッドレスに関する基本的な知識と、詳細な技術ドキュメントへのリンクを示します。
 
@@ -53,15 +53,15 @@ The journey lays out the requirements, steps, and approach for authoring content
 
 | # | 記事 | 説明 |
 |---|---|---|
-| 0 | AEM Headless Content Author Journey | このドキュメント |
-| 1 | [](introduction.md) | An introduction to the headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project. |
-| 2 | [](basics.md) | Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments. |
-| 3 | [](references.md) | Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Nested Fragments. |
-| 4 | [](metadata-tagging.md) | Learn about defining Metadata and Tagging for Content Fragments. |
+| 0 | AEM ヘッドレスコンテンツ作成者ジャーニー | このドキュメント |
+| 1 | [AEM Headless as a Cloud Service 向けオーサリング - 概要](introduction.md) | Adobe Experience Manager as a Cloud Service のヘッドレス機能と、プロジェクトのコンテンツをオーサリングする方法を紹介します。 |
+| 2 | [AEM を使用したヘッドレス向けのオーサリングの基本](basics.md) | コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。 |
+| 3 | [コンテンツフラグメントでの参照の使用について](references.md) | コンテンツフラグメントでの参照の使用方法について説明します。また、ネストされたフラグメントを使用して、ヘッドレス CMS の複数レベルの構造を作成および管理することもできます。 |
+| 4 | [コンテンツフラグメントのメタデータとタグの定義について](metadata-tagging.md) | コンテンツフラグメントのメタデータとタグの定義について説明します。 |
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
-これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。[](introduction.md)
+これで、Adobe ヘッドレスジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「[AEM Headless as a Cloud Service 向けオーサリング - 概要](introduction.md)」を読むことをお勧めします。
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -74,12 +74,12 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 ## その他のリソース {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+ドキュメントジャーニーでは、相互に関連する複雑なプロセスや機能をストーリーに従って読者に説明しながら、ビジネス上の問題を AEM で解決する方法を示します。1 つのジャーニーでは、複数の機能が連携して 1 つのビジネスニーズを満たす方法を示しています。
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+そのため、ジャーニーは、それぞれが独立して設計されています。ただし、その多くは互いに関連付けられています。AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
 
-* [](/help/journey-headless/translation/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
+* [AEM ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) - このドキュメントジャーニーでは、ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法について幅広く理解できます。
+* [AEM ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を説明するガイド付きジャーニーは、ここから始めてください。
+* [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。
+* [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM およびヘッドレステクノロジーを既にしっかり理解している場合は、アドビの詳細な技術ドキュメントを直接参照することをお勧めします。
+* [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - 技術指向の方が実践による学習を希望する場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。

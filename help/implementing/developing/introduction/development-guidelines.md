@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
 source-wordcount: '2180'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -175,13 +175,13 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 >
 >メールサービスは、OAuth2 サポートを使用して設定できます。詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
 
-### 送信メールの有効化 {#enabling-outbound-email}
+### 送信電子メールの有効化 {#enabling-outbound-email}
 
-デフォルトでは、E メールの送信に使用するポートは無効になっています。 ポートをアクティブにするには、 [高度なネットワーク](/help/security/configuring-advanced-networking.md)を設定し、必要な各環境に対して `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのポート転送規則。これは、対象のポート（465 や 587 など）をプロキシポートにマッピングします。
+電子メールの送信に使用されるポートは、デフォルトでは無効になっています。ポートをアクティブにするには、[高度なネットワーク機能](/help/security/configuring-advanced-networking.md)を設定して、必要な環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのポート転送ルールを必ず設定します。これは、対象となるポート（465 や 587 など）をプロキシポートにマッピングします。
 
-を使用して高度なネットワークを設定することをお勧めします。 `kind` パラメータをに設定 `flexiblePortEgress` Adobeは、柔軟なポート出力トラフィックのパフォーマンスを最適化できるので、 一意のエグレス IP アドレスが必要な場合は、 `kind` のパラメータ `dedicatedEgressIp`. 他の理由で既に VPN を設定している場合は、その高度なネットワークバリエーションによって提供される一意の IP アドレスも使用できます。
+`kind` パラメータを `flexiblePortEgress` に設定して高度なネットワーク機能を設定することをお勧めします。アドビがフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。一意のエグレス IP アドレスが必要な場合は、`kind` パラメーターを `dedicatedEgressIp` に設定します。他の理由で既に VPN を設定してある場合は、その高度なネットワークバリエーションから提供される一意の IP アドレスも使用できます。
 
-電子メールクライアントに直接送信するのではなく、メールサーバーを通じて電子メールを送信する必要があります。 そうしないと、E メールがブロックされる可能性があります。
+電子メールクライアントに直接送信するのではなく、メールサーバーを通じて電子メールを送信する必要があります。そうしないと、電子メールがブロックされる可能性があります。
 
 ### 電子メールの送信 {#sending-emails}
 
@@ -191,17 +191,17 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja)を参照してください。AEMas a Cloud Serviceの場合、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
+電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja)を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 
 * SMTP サーバーのホスト名は$に設定する必要があります[env:AEM_PROXY_HOST;default=proxy.tunnel]
-* SMTP サーバーポートは、アドバンスネットワークを設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定する必要があります。 例： 30465 （465 ではなく）
+* SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
 
 また、ポート 465 がリクエストされた場合は、次のことをお勧めします。
 
 * `smtp.port` を `465` に設定
 * `smtp.ssl` を `true` に設定
 
-ポート 587 がリクエストされた場合：
+さらに、ポート 587 がリクエストされた場合は、
 
 * `smtp.port` を `587` に設定
 * `smtp.ssl` を `false` に設定
@@ -209,27 +209,27 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.ssl` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
 
-メールサービスは、オプションで OAuth2 サポートを使用して設定できます。 詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
+オプションで、メールサービスに OAuth2 サポートを設定できます。詳しくは、[メールサービスの OAuth2 サポート](/help/security/oauth2-support-for-mail-service.md)を参照してください。
 
 ### 従来の電子メール設定 {#legacy-email-configuration}
 
-2021.9.0 リリースより前は、カスタマーサポートの依頼を通じて電子メールが設定されていました。 以下に、 `com.day.cq.mailer.DefaultMailService OSGI` サービス：
+2021.9.0 リリースより前は、カスタマーサポートへの依頼を通じて電子メールが設定されていました。`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 
-AEM as a Cloud Serviceでは、ポート 465 を通じてメールを送信する必要があります。 TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
+AEM as a Cloud Service では、ポート 465 を通じてメールを送信する必要があります。TLS オプションが有効になっている限り、メールサーバーがポート 465 をサポートしていない場合は、ポート 587 を使用できます。
 
 ポート 465 がリクエストされた場合：
 
 * `smtp.port` を `465` に設定
 * `smtp.ssl` を `true` に設定
 
-ポート 587 がリクエストされた場合：
+さらに、ポート 587 がリクエストされた場合は、
 
 * `smtp.port` を `587` に設定
 * `smtp.ssl` を `false` に設定
 
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.ssl` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
 
-SMTP サーバーホストは、メールサーバーのホストに設定する必要があります。
+SMTP サーバーホストは、メールサーバーのホストに設定してください。
 
 
 ## [!DNL Assets] 開発のガイドラインとユースケース {#use-cases-assets}

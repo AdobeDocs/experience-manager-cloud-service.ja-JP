@@ -1,140 +1,140 @@
 ---
-title: Configure the Translation Connector
-description: Learn how to connect AEM to a translation service.
+title: 翻訳コネクタの設定
+description: AEM を翻訳サービスに接続する方法を説明します。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
-# Configure the Translation Connector {#configure-connector}
+# 翻訳コネクタの設定 {#configure-connector}
 
-Learn how to connect AEM to a translation service.
+AEM を翻訳サービスに接続する方法を説明します。
 
 ## これまでの説明内容 {#story-so-far}
 
-[](learn-about.md)
+AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[AEM ヘッドレス翻訳の基本を学ぶ](learn-about.md)）では、ヘッドレスコンテンツを整理する方法と AEM の翻訳ツールの仕組みについて説明し、以下を達成しました。
 
-* Understand the importance of content structure to translation.
-* Understand how AEM stores headless content.
-* Be familiar with AEM&#39;s translation tools.
+* 翻訳におけるコンテンツ構造の重要性を理解する
+* AEM のヘッドレスコンテンツの保存方法を理解する
+* AEM の翻訳ツールに詳しくなる
 
-This article builds on those fundamentals so you can take the first configuration step and set up a translation service, which you will use later in the journey to translate your content.
+この記事ではこれらの基本事項に基づいて、最初の設定手順を実行し翻訳サービスをセットアップします。ジャーニーで後ほどそのサービスを使用して、コンテンツを翻訳します。
 
 ## 目的 {#objective}
 
-This document helps you understand how to set up an AEM connector to your chosen translation service. ドキュメントを読めば、以下が可能です。
+このドキュメントでは、選択した翻訳サービスに AEM コネクタをセットアップする方法を説明します。ドキュメントを読めば、以下が可能です。
 
-* Understand the important parameters of the Translation Integration Framework in AEM.
-* Be able to set up your own connection to your translation service.
+* AEM の翻訳統合フレームワークの重要なパラメーターを理解する
+* 翻訳サービスへの独自の接続をセットアップできる
 
-## The Translation Integration Framework {#tif}
+## 翻訳統合フレームワーク {#tif}
 
-AEM&#39;s Translation Integration Framework (TIF) integrates with third-party translation services to orchestrate the translation of AEM content. これには 3 つの基本的な手順が必要です。
+AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻訳を調整するためにサードパーティの翻訳サービスと統合されています。これには 3 つの基本的な手順が必要です。
 
 1. 翻訳サービスプロバイダーに接続します。
 1. 翻訳統合フレームワーク設定を作成します。
-1. Associate the configuration with your content.
+1. 設定をコンテンツに関連付けます。
 
-The following sections describe these steps in more detail.
+この後の節では、これらの手順を詳しく説明します。
 
 ## 翻訳サービスプロバイダーへの接続 {#connect-translation-provider}
 
-The first step is to choose which translation service you wish to use. There are many choices for human and machine translation services available to AEM. Most providers offer a translator package to be installed. [](#additional-resources)
+まず、使用する翻訳サービスを選択します。AEM で使用できる人間による翻訳サービスと機械翻訳サービスには、様々な選択肢があります。ほとんどのプロバイダーは、インストールの必要なトランスレーターパッケージを提供しています。使用可能なオプションの選択については、[その他のリソース](#additional-resources)の節を参照してください。
 
 >[!NOTE]
 >
->The translation specialist is generally responsible for choosing which translation service to use, but the administrator typically is responsible for installing the required translation connector package.
+>通常、使用する翻訳サービスを選択するのは翻訳担当者ですが、必要な翻訳コネクタパッケージをインストールするのは管理者です。
 
-For the purposes of this journey, we use the Microsoft Translator which AEM provides with a trial license out-of-the-box. [](#additional-resources)
+このジャーニーでは、AEM に体験版ライセンスが標準で付与されている Microsoft Translator を使用します。このプロバイダーについて詳しくは、[その他のリソース](#additional-resources)の節を参照してください。
 
-If you choose another provider your administrator must install the connector package as per the instructions provided by the translation service.
+別のプロバイダーを選択する場合は、管理者が、その翻訳サービスの指示に従って、コネクタパッケージをインストールする必要があります。
 
 >[!NOTE]
 >
->Using the out-of-the-box Microsoft Translator in AEM does not require additional setup and works as-is without additional connector configuration.
+>AEM に標準で搭載されている Microsoft Translator を使用する場合は、追加のセットアップは必要なく、追加のコネクタ設定なしでそのまま機能します。
 >
->[](#create-config)[](#associate)
+>テスト目的で Microsoft Translator コネクタを使用する場合は、この後の 2 つの節で示している手順を実行する必要はありません（[翻訳統合設定の作成](#create-config)および[設定とコンテンツの関連付け](#associate)）。ただし、希望するコネクタを設定する必要がある場合に備えて手順を把握しておけるように、これらの節に目を通しておくことをお勧めします。
 >
->[](#additional-resources)
+>Microsoft Translator コネクタの体験版ライセンスは、実稼動用ではありません。実稼動ライセンスを取得する場合は、システム管理者が、このドキュメントの最後にある[その他のリソース](#additional-resources)の節で紹介している記事の手順に従ってライセンスを設定する必要があります。
 
 ## 翻訳統合フレームワーク設定の作成 {#create-config}
 
-After the connector package for your preferred translation service is installed, you must create a Translation Integration Framework configuration for that service. この設定には以下の情報が含まれます。
+希望する翻訳サービスのコネクタパッケージをインストールしたら、そのサービスの翻訳統合フレームワーク設定を作成する必要があります。この設定には以下の情報が含まれます。
 
 * 使用する翻訳サービスプロバイダー
 * 人間による翻訳と機械翻訳のどちらを実行するか
-* Whether to translate other content that is associated with the Content Fragment such as tags
+* コンテンツフラグメントに関連付けられている他のコンテンツ（タグなど）を翻訳するかどうか
 
 新しい翻訳設定を作成するには：
 
-1. ************
-1. コンテンツ構造内で設定を作成する場所に移動します。This is often based on a particular project or can be global.
-   * For example, in this case, a configuration could be made globally to apply to all content, or just for the WKND project.
+1. グローバルナビゲーションメニューで、**ツール**／**クラウドサービス**／**翻訳クラウドサービス**&#x200B;をクリックまたはタップします。
+1. コンテンツ構造内で設定を作成する場所に移動します。この場所は多くの場合、特定のプロジェクトに基づいている場合もあれば、グローバルな場合もあります。
+   * 例えば、下図の場合、設定を、すべてのコンテンツに適用されるようにグローバルに作成することも、WKND プロジェクトにのみ適用されるように作成することもできます。
 
-   ![](assets/translation-configuration-location.png)
+   ![翻訳設定の場所](assets/translation-configuration-location.png)
 
-1. ****
-   1. ドロップダウンで「**設定タイプ**」を選択します。****
+1. フィールドに次の情報を入力し、「**作成**」をクリックまたはタップします。
+   1. ドロップダウンで「**設定タイプ**」を選択します。リストから「**翻訳統合**」を選択します。
    1. 設定の&#x200B;**タイトル**&#x200B;を入力します。この&#x200B;**タイトル**&#x200B;によって、**Cloud Services** コンソールおよびページプロパティのドロップダウンリストで設定が識別されます。
-   1. オプションとして、設定を格納するリポジトリノードに使用する&#x200B;**名前**&#x200B;を入力します。
+   1. オプションとして、設定を格納するリポジトリーノードに使用する&#x200B;**名前**&#x200B;を入力します。
 
    ![翻訳設定の作成](assets/create-translation-configuration.png)
 
-1. ********
+1. 「**作成**」をタップまたはクリックすると、**設定を編集**&#x200B;ウィンドウが表示されるので、そこで設定プロパティを指定できます。
 
-1. Remember that Content Fragments are stored as assets in AEM. ****
+1. なお、コンテンツフラグメントは、AEM にアセットとして保存されます。「**アセット**」タブをタップまたはクリックします。
 
-![](assets/translation-configuration.png)
+![翻訳設定のプロパティ](assets/translation-configuration.png)
 
 1. 以下の情報を入力します。
 
-   1. ************ For the purposes of this journey we assume machine translation.
-   1. ****
-   1. ****
-   1. ****
-   1. ****
-   1. ****
-   1. ****
-   1. ****
+   1. **翻訳方法** - 翻訳プロバイダーに応じて、「**機械翻訳**」または「**人間翻訳**」を選択します。このジャーニーでは、機械翻訳を想定しています。
+   1. **翻訳プロバイダー** - 翻訳サービス用にインストールしたコネクタをリストから選択します。
+   1. **コンテンツのカテゴリ** - 翻訳のターゲットを絞り込むために最も適したカテゴリを選択します（機械翻訳の場合のみ）。
+   1. **コンテンツフラグメントアセットを翻訳** - コンテンツフラグメントに関連付けられているアセットを翻訳する場合は、これをオンにします。
+   1. **アセットを翻訳** - アセットを翻訳する場合は、これをオンにします。
+   1. **メタデータを翻訳** - アセットのメタデータを翻訳する場合は、これをオンにします。
+   1. **タグを翻訳** - アセットに関連付けられているタグを翻訳する場合は、これをオンにします。
+   1. **翻訳を自動実行** - 翻訳を翻訳サービスに自動的に送信する場合は、これをオンにします。
 
 1. 「**保存して閉じる**」をタップまたはクリックします。
 
-You have now configured the connector to your translation service.
+これで、翻訳サービスにコネクタが設定されました。
 
-## Associate the Configuration with Your Content {#associate}
+## 設定とコンテンツの関連付け {#associate}
 
-AEM is a flexible and powerful tool and supports multiple, simultaneous translation services via multiple connectors and multiple configurations. Setting up such a configuration is beyond the scope of this journey. However this flexibility means that you must specify which connectors and configuration should be used to translate your content by associating ths configuration with your content.
+AEM は柔軟かつ強力なツールで、複数のコネクタと複数の設定を使用して複数の同時翻訳サービスをサポートしています。このような設定のセットアップはこのジャーニーの範囲外ですので、ここでは扱いません。ただし、このような柔軟性があるので、この設定をコンテンツに関連付けることで、コンテンツの翻訳に使用するコネクタと設定を指定する必要があります。
 
-To do this, navigate to the language root of your content. For our example purposes this is
+それには、まずコンテンツの言語ルートに移動します。この例では、言語ルートは次のとおりです。
 
 ```text
 /content/dam/<your-project>/en
 ```
 
-1. ************
-1. ****
-1. ****
-1. ********[](#connect-translation-provider)
-1. ********
+1. グローバルナビゲーションで&#x200B;**ナビゲーション**／**アセット**／**ファイル**&#x200B;に移動します。
+1. Assets コンソールで、設定する言語ルートを選択して、「**プロパティを**」をクリックまたはタップします。
+1. 「**クラウドサービス**」タブをタップまたはクリックします。
+1. 「**クラウドサービスの設定**」の「**設定を追加**」ドロップダウンで、コネクタを選択します。[前述](#connect-translation-provider)のとおりにパッケージをインストールしてある場合は、目的のコネクタがドロップダウンに表示されるはずです。
+1. 「**クラウドサービスの設定**」の「**設定を追加**」ドロップダウンで、設定も選択します。
 1. 「**保存して閉じる**」をタップまたはクリックします。
 
-![](assets/select-cloud-service-configurations.png)
+![クラウドサービス設定の選択](assets/select-cloud-service-configurations.png)
 
 ## 次の手順 {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+これで、ヘッドレス翻訳ジャーニーのこのステップが完了し、以下のことができるようになりましたした。
 
-* Understand the important parameters of the Translation Integration Framework in AEM.
-* Be able to set up your own connection to your translation service.
+* AEM の翻訳統合フレームワークの重要なパラメーターを理解する
+* 翻訳サービスへの接続をセットアップする
 
-[](translation-rules.md)
+この知識を基に、AEM ヘッドレス翻訳ジャーニーを続けてください。次に、[翻訳ルールの設定](translation-rules.md)のドキュメントを参照しながら、翻訳するコンテンツを定義する方法について説明します。
 
 ## その他のリソース {#additional-resources}
 
-[](translation-rules.md)
+[翻訳ルールの設定](translation-rules.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
-* [](/help/sites-cloud/administering/translation/integration-framework.md)
-* [](/help/sites-cloud/administering/translation/connect-ms-translator.md)
+* [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md) - 選択した翻訳コネクタのリストを示し、サードパーティの翻訳サービスと統合できるように翻訳統合フレームワークを設定する方法について説明します。
+* [Microsoft Translator への接続](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM には、テスト用に Microsoft Translation の体験版アカウントが用意されています。

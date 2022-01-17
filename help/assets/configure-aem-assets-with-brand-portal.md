@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: f1c95dd27857085a0a95a896efd2f66af346b75a
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -25,7 +25,7 @@ Cloud Manager ユーザーが Experience Manager Assets as a 用のBrand Portal�
 Experience Manager Assets as a でBrand Portalをアクティベートするには、以下が必要です。 [!DNL Cloud Service] インスタンス：
 
 * Experience Manager Assets as a の起動および実行 [!DNL Cloud Service] インスタンス。
-* Cloud Manager 製品のプロファイルに割り当てられている、Cloud Manager にアクセスできるユーザー。詳しくは、[Cloud Manager へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager)を参照してください。
+* Cloud Manager 製品のプロファイルに割り当てられている、Cloud Manager にアクセスできるユーザー。詳しくは、[Cloud Manager へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja#accessing-cloud-manager)を参照してください。
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Experience Manager Assets as a の環境を作成する際に、Brand Portalを�
 
 * [Experience Manager Assets でのユーザーと役割の追加as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)
 
-* [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
+* [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)
 
 
 **Brand Portal テナントへのログイン**
@@ -179,7 +179,7 @@ Experience Manager Assets as a Brand Portalをアクティブ化する自動化�
 
 >[!NOTE]
 >
->Brand Portalテナントのアクティベート中に問題が発生した場合は、カスタマーサポートにお問い合わせください。
+>Brand Portal テナントのライセンス認証中に問題が発生した場合は、カスタマーサポートにお問い合わせください。
 
 ## Adobe 開発者コンソールを使用した手動設定 {#manual-configuration}
 

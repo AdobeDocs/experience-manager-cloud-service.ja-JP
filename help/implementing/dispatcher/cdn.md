@@ -5,8 +5,8 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '927'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 
 ライブトラフィックを受け入れる前に、アドビカスタマーサポートに問い合わせて、エンドツーエンドのトラフィックルーティングが正しく機能していることを検証する必要があります。
 
-取得後 `X-AEM-Edge-Key`に値を入力する場合は、次のようにリクエストが正しくルーティングされているかをテストできます。
+`X-AEM-Edge-Key` を取得後、リクエストが正しくルーティングされているかどうかを、次のようにテストできます。
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'

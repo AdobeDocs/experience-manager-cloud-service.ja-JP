@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 ## 目的 {#objective}
 
-このドキュメントは、開発者とデプロイメントマネージャーが Cloud Manager にアクセスし、学習パスの準備方法に慣れるのに役立ちます。
+このドキュメントは、開発者とデプロイメントマネージャーを対象に、Cloud Manager にアクセスする方法と学習パスの準備方法を説明します。
 
 読み終えると、以下を達成できます。
 
@@ -40,7 +40,7 @@ ht-degree: 82%
 
 * Cloud Manager の操作方法とログイン方法を理解している必要があります。
 
-## GitHub を管理 {#manage-git}
+## GitHub の管理 {#manage-git}
 
 Cloud Manager UI のセルフサービス Git アカウント管理を使用して、Git リポジトリーにアクセスし、管理できます。このトピックについて詳しくは、[Git へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=ja)を参照してください。
 
@@ -51,7 +51,7 @@ Cloud Manager UI で、実稼動パイプラインまたは実稼動以外のパ
 
 ## 次の手順 {#whats-next}
 
-これで、開発者およびデプロイメントマネージャーは、AEM as a Cloud Service でのコードの開発方法を理解する準備が整いました。詳しくは、以下の「その他のリソース」の節を参照してください。コンテンツ作成者向けの学習ジャーニーについて詳しくは、 [AEM 作成者向け学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+これで、開発者およびデプロイメントマネージャーは、AEM as a Cloud Service でのコードの開発方法を理解する準備が整いました。詳しくは、以下の「その他のリソース」の節を参照してください。コンテンツ作成者の学習ジャーニーについては、[AEM ユーザーの学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)を参照してください。
 
 >[!TIP]
 >
@@ -75,7 +75,7 @@ Cloud Manager UI で、実稼動パイプラインまたは実稼動以外のパ
 
 ## Experience League の各種コース {#exp-league-courses}
 
-詳しくは、 Experience League のコースを参照してください。 次のコースにアクセスするには、新規登録をしてください。
+詳しくは、Experience League の各種コースを参照してください。次のコースにアクセスするには、新規登録をしてください。
 
 * [従来のサイト](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens?lang=ja#courses)
 

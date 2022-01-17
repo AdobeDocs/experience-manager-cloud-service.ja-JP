@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service 向けのログ
-description: AEMas a Cloud Serviceのログを使用して、中央のログサービスのグローバルパラメーター、個々のサービスの固有の設定、またはデータログの要求方法を設定する方法について説明します。
+description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
 source-wordcount: '2314'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 AEM as a Cloud Service は、カスタムコードを含めて、顧客ベースに独自のエクスペリエンスを作成する顧客のためのプラットフォームです。このことを念頭に置いた上で、ログサービスは、ローカル開発およびクラウド環境、特に AEM as a Cloud Service の開発環境をデバッグし、実行されるコードを理解するための重要な機能となります。
 
-AEMのas a Cloud Service的なログ設定とログレベルは、AEMプロジェクトの一部として Git に保存され、AEMプロジェクトの一部として Cloud Manager を介してデプロイされる設定ファイルで管理されます。 AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
+AEM as a Cloud Service のログ設定とログレベルは、AEM プロジェクトの一部として Git に保存され、AEM プロジェクトの一部として Cloud Manager を介してデプロイされる構成ファイルで管理されます。AEM as a Cloud Service のログは、次の 2 つの論理セットに分割できます。
 
 * AEM ログ。AEM アプリケーションレベルでログを実行します。
 * Apache HTTPD Web サーバー／Dispatcher ログ。パブリッシュ層で Web サーバーと Dispatcher のログを実行します。
@@ -30,7 +30,7 @@ AEM アプリケーションレベルでのログは、次の 3 つのログで�
 >
 >パブリッシュ層の Dispatcher キャッシュまたはアップストリーム CDN から提供される HTTP リクエストは、これらのログに反映されません。
 
-## AEM Java Logging {#aem-java-logging}
+## AEM Java ログ {#aem-java-logging}
 
 AEM as a Cloud Service は Java ログステートメントにアクセスできます。AEM 向けアプリケーションの開発者は、次のログレベルで、一般的な Java ログのベストプラクティス、カスタムコードの実行に関連するステートメントのログ記録に従う必要があります。
 

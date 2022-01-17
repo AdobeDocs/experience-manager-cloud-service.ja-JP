@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 51%
+ht-degree: 54%
 
 ---
 
@@ -67,13 +67,13 @@ ht-degree: 51%
 
 ### 新機能 {#what-is-new-cif}
 
-* コマースの拡張可能な Peregrine コンポーネントに基づく myAccount コンポーネントの拡張
+* コマースの拡張可能な Peregrine コンポーネントに基づくマイアカウントコンポーネントを拡張しました
 
-![拡張された myAccount コンポーネント](/help/assets/CIF/extended-myAccount-components.png)
+![拡張されたマイアカウントコンポーネント](/help/assets/CIF/extended-myAccount-components.png)
 
-* 作成者は、追加のレコメンデーションタイプを使用してアドホックコマース製品Recommendationsを作成できます
+* 作成者は、追加のレコメンデーションタイプを使用してアドホックなコマース製品レコメンデーションを作成できます
 
-* AEM Storefront でのギフトカードのサポート
+* AEM ストアフロントでのギフトカードのサポート
 
 ## Cloud Manager {#cloud-manager}
 

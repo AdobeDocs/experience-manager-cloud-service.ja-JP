@@ -1,88 +1,88 @@
 ---
-title: AEM Headless Translation Journey
-description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
+title: AEM ヘッドレス翻訳ジャーニー
+description: AEM の強力な翻訳ツールを使用してヘッドレスコンテンツを翻訳する方法を順を追って説明するガイド付きジャーニーは、ここから始めてください。
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# AEM Headless Translation Journey {#aem-headless-translation-journey}
+# AEM ヘッドレス翻訳ジャーニー {#aem-headless-translation-journey}
 
-Start here for a guided journey through translating your headless content using AEM&#39;s powerful translation tools.
+AEM の強力な翻訳ツールを使用してヘッドレスコンテンツを翻訳する方法を順を追って説明するガイド付きジャーニーは、ここから始めてください。
 
 ## はじめに {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel, region, or locale.
+ヘッドレス実装は、オーディエンスの場所やチャネル、地域またはロケールに関係なく、オーディエンスにエクスペリエンスを提供する上で、ますます重要になってきています。
 
-ヘッドレス実装は、フルスタックソリューションにおける従来のようなページおよびコンポーネント管理ではなく、チャネルに依存しない再利用可能なコンテンツフラグメントの作成とそのクロスチャネル配信に重点を置いています。By using AEM&#39;s powerful translation tools, these reusable fragments can be easily translated and delivered to your audience wherever it may be.
+ヘッドレス実装は、フルスタックソリューションにおける従来のようなページおよびコンポーネント管理ではなく、チャネルに依存しない再利用可能なコンテンツフラグメントの作成とそのクロスチャネル配信に重点を置いています。AEM の強力な翻訳ツールを使用することで、これらの再利用可能なフラグメントをたやすく翻訳し、場所を問わずオーディエンスに配信できます。
 
-This guide leads you through the most important headless translation topics so that on completion you:
+このガイドでは、ヘッドレス翻訳に関する最も重要なトピックを順を追って説明します。ガイドの完了時には、以下を達成できます。
 
-* Have an overview of what headless content delivery is.
-* Have a basic understanding AEM&#39;s headless features.
-* Understand AEM&#39;s translation features and how they related to headless content.
-* Have the ability to start translating your own headless content.
+* ヘッドレスコンテンツ配信の概要を理解する
+* AEM のヘッドレス機能を基本的に理解する
+* AEM の翻訳機能とそのヘッドレスコンテンツとの関連を理解する
+* 独自のヘッドレスコンテンツの翻訳を開始できる
 
-The goal is to give you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it. If you are not familiar with any of these topics, this is your ideal place to start.
+ヘッドレステクノロジー、AEM によるヘッドレスコンテンツの提供方法、ヘッドレスコンテンツの翻訳方法を読者が幅広く理解できるようにすることが、このジャーニーの目的です。これらのトピックのいずれかに詳しくない場合は、ここから始めるのが最適です。
 
-If you are already familiar with AEM, headless, and translation, you may already have the foundational knowledge of this journey. [](#additional-resources)
+AEM、ヘッドレスおよび翻訳に精通している方は、このジャーニーの基礎知識を既にお持ちかもしれません。その場合は、最後の[その他のリソース](#additional-resources)の節でリンクされているアドビの技術ドキュメントを参照してください。
 
-## AEM Documentation Journeys {#documentation-journeys}
+## AEM ドキュメントジャーニー {#documentation-journeys}
 
-[](/help/journey-documentation/documentation-journeys.md)
+[ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)は、前提となる事前のトピックや AEM の知識を最小限に抑えながら、AEM を初めて使用することもある読者がビジネス上の問題全体を把握し解決するのに役立つ説明を提供して、複雑であろう様々なトピックや機能をひとまとめに扱っています。
 
-Documentation Journeys are designed around best practices principles, informed by Adobe&#39;s latest research, proven implementation experience from Adobe consultants, and feedback from customer projects.
+ドキュメントジャーニーは、アドビの最新の調査、アドビのコンサルタントによる実装実績、顧客プロジェクトからのフィードバックなどに基づいて、ベストプラクティス原則を軸に設計されています。
 
-[](/help/journey-documentation/documentation-journeys.md)
+AEM を使用してヘッドレスビジネスケースを解決する方法をアドビがどのように推奨しているかを理解するには、[AEM ヘッドレスジャーニー](/help/journey-documentation/documentation-journeys.md)がその出発点になります。
 
-## 対象者 {#audience}
+## 対象読者 {#audience}
 
-This journey is designed for the translation specialist persona, often referred to as the Translation Project Manager or TPM. This journey lays out the requirements, steps, and approach to translate headless content in AEM. The journey may define additional personas with which the translation specialist must interact, but the point-of-view for the journey is that of the translation specialist.
+このジャーニーは、翻訳担当者のペルソナ（多くの場合、翻訳プロジェクトマネージャーまたは TPM と呼ばれます）向けに設計されています。このジャーニーは、AEM でヘッドレスコンテンツを翻訳するための要件、手順およびアプローチを明確にします。ジャーニーでは、翻訳担当者がやり取りする必要がある追加のペルソナを定義する場合がありますが、ジャーニー自体は翻訳担当者の視点で構成されています。
 
-This journey assumes the reader has experience translating content on a large CMS system, but assumes no knowledge of headless technology or AEM.
+このジャーニーでは、読者が大規模な CMS システム上でコンテンツを翻訳した経験を持っていることを前提としていますが、ヘッドレステクノロジーや AEM に関する知識は前提としていません。
 
-The following are the personas that interact in this journey.
+このジャーニーで相互にやり取りするペルソナの一覧を以下に示します。
 
-| ペルソナ | 説明 | Role in Journey |
+| ペルソナ | 説明 | ジャーニーでの役割 |
 |---|---|---|
-| Translation Specialist | Defines what content should be translated and manages those workflows | Audience of this journey |
-| コンテンツ作成者 | Creates and manage content that is delivered headlessly | Content Authors create content that the translation specialist must translate. |
-| 管理者 | Manages the base setup and configuration of AEM | The translation specialist works with the administrator to make configuration changes needed for translation such as installing a translation connector. |
-| Content Architect | Analyzes the requirements for the data that must be delivered headlessly and defines the structure for this data | Translation specialists work with the content architect to define the organization of the content so it can be easily translated. |
+| 翻訳担当者 | 翻訳するコンテンツを定義し、それらのワークフローを管理します。 | このジャーニーの対象読者 |
+| コンテンツ作成者 | ヘッドレスに配信されるコンテンツを作成し管理します | コンテンツ作成者は、翻訳担当者による翻訳が必要なコンテンツを作成します。 |
+| 管理者 | AEM の基本セットアップと設定を管理します。 | 翻訳担当者は管理者と協力して、翻訳コネクタのインストールなど、翻訳に必要な設定変更を行います。 |
+| コンテンツアーキテクト | ヘッドレスで配信する必要があるデータの要件を分析し、そのデータの構造を定義します。 | 翻訳担当者はコンテンツアーキテクトと協力して、翻訳しやすいようにコンテンツの構成を定義します。 |
 
-Information in this journey can of course be useful to all personas, but some information may be superfluous to certain roles. [](/help/journey-documentation/documentation-journeys.md#journeys)
+このジャーニーの情報は、もちろんすべてのペルソナにとって役に立ちますが、特定の役割には必要ない情報も一部あります。[その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。
 
-## The Headless Translation Journey {#the-journey}
+## ヘッドレス翻訳者ジャーニー {#the-journey}
 
-このジャーニーでは、多くのトピックを参照します。The following articles give you foundational knowledge of translating headless content in AEM and link out to detailed technical documentation.
+このジャーニーでは、多くのトピックを参照します。以下の記事では、AEM でのヘッドレスコンテンツの翻訳に関する基本的な知識と、詳細な技術ドキュメントへのリンクを示します。
 
-ジャーニーの特定の部分に直接移動することもできますが、多くの概念は、それまでの記事で紹介された概念に基づいています。Therefore if you are new to headless translation in AEM, we recommend that you start at the beginning and progress sequentially.
+ジャーニーの特定の部分に直接移動することもできますが、多くの概念は、それまでの記事で紹介された概念に基づいています。したがって、AEM でヘッドレス翻訳に初めて取り組む場合は、最初から順に進めていくことをお勧めします。
 
 | # | 記事 | 説明 |
 |---|---|---|
-| 0 | AEM Headless Translation Journey | このドキュメント |
-| 1 | [](learn-about.md) | Learn headless concepts, how they map to AEM, and the theory of AEM translation. |
-| 2 | [](getting-started.md) | Get to know how to organize your headless content and how AEM&#39;s translation tools work. |
-| 3 | [](configure-connector.md) | Learn how to connect AEM to a translation service. |
-| 4 | [](translation-rules.md) | Learn how to define translation rules to identify content for translation. |
-| 5 | [](translate-content.md) | Use the translation connector and rules to translate your headless content. |
-| 6 | [](publish-content.md) | Learn how to publish your translated content and update the translation when the underlying content is updated. |
+| 0 | AEM ヘッドレス翻訳ジャーニー | このドキュメント |
+| 1 | [ヘッドレスコンテンツの概要と AEM での翻訳方法について](learn-about.md) | ヘッドレスの概念、AEM へのマッピング方法、AEM 翻訳の基本概念について説明します。 |
+| 2 | [AEM ヘッドレス翻訳の基本を学ぶ](getting-started.md) | ヘッドレスコンテンツを整理する方法と AEM の翻訳ツールの仕組みについて説明します。 |
+| 3 | [翻訳コネクタの設定](configure-connector.md) | AEM を翻訳サービスに接続する方法を説明します。 |
+| 4 | [翻訳ルールの設定](translation-rules.md) | 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。 |
+| 5 | [コンテンツの翻訳](translate-content.md) | 翻訳コネクタおよびルールを使用して、ヘッドレスコンテンツを翻訳します。 |
+| 6 | [翻訳済みコンテンツの公開](publish-content.md) | 翻訳済みコンテンツを公開し、基になるコンテンツの更新時に翻訳を更新する方法を説明します。 |
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
-You are now ready to get started on your Adobe headless translation journey. [](learn-about.md)
+これで、アドビのヘッドレス翻訳ジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、「[ヘッドレスコンテンツの概要と AEM での翻訳方法について](learn-about.md)」を読むことをお勧めします。
 
 ## その他のリソース {#additional-resources}
 
-Documentation journeys show you how AEM solves a business problem by providing a narrative that guides you through complex, interrelated processes and features. A journey illustrates how multiple features work together to serve a single business need.
+ドキュメントジャーニーでは、相互に関連する複雑なプロセスや機能をストーリーに従って読者に説明しながら、ビジネス上の問題を AEM で解決する方法を示します。1 つのジャーニーでは、複数の機能が連携して 1 つのビジネスニーズを満たす方法を示しています。
 
-As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM&#39;s powerful features work together.
+そのため、ジャーニーは、それぞれが独立して設計されています。ただし、その多くは互いに関連付けられています。AEM の強力な機能の連携の仕組みについて詳しくは、次に示すその他のジャーニーを参照してください。
 
-* [](/help/journey-headless/author/overview.md)
-* [](/help/journey-headless/architect/overview.md)
-* [](/help/journey-headless/developer/overview.md)
-* [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)
-* [](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja)
+* [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力および初めてのヘッドレスプロジェクトでコンテンツをモデル化する方法を説明するガイド付きジャーニーは、ここから始めてください。
+* [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) - Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。
+* [AEM ヘッドレス開発者ジャーニー](/help/journey-headless/developer/overview.md) - AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を説明するガイド付きジャーニーは、ここから始めてください。
+* [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM およびヘッドレステクノロジーを既にしっかり理解している場合は、アドビの詳細な技術ドキュメントを直接参照することをお勧めします。
+* [AEM ヘッドレスチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=ja) - 技術指向の方が実践による学習を希望する場合は、API とフレームワーク別に整理された実践チュートリアルを利用してください。このチュートリアルでは、AEM ヘッドレスに基づくアプリケーションの作成と使用の詳細を紹介しています。

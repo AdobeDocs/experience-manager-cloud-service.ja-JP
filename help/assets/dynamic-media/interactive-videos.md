@@ -25,7 +25,7 @@ ht-degree: 99%
 
 * 再生中にビデオ内で製品が使用されると、同じ製品のサムネール画像が右側に表示されます。
 
-* ビデオを一時停止して製品のクイックビューを開くには、サムネールを選択します。例えば、ビデオ内の KitchenAid サムネール画像を選択してミキサーの 360°スピンビューを表示したり、拡大表示してミキサーの詳細を確認したりできます。
+* ビデオを一時停止して製品のクイックビューを開くには、サムネールを選択します。例えば、ビデオ内の KitchenAid のサムネール画像を選択すると、ミキサーの 360 度のスピンビューを見たり、細部を拡大表示したりすることができます。
 
 [Dynamic Media でのインタラクティブビデオの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=ja#dynamic-media)も参照してください。
 

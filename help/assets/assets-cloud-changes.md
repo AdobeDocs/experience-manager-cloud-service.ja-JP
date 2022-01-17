@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] の主な変更点'
-description: ' [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5 の主な変更点です。'
+description: の主な変更点 [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] ～に比べて [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 92%
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] は、Adobe Experience Manager プロジェクトを管理するための様々な新機能と可能性を提供します。オンプレミスまたは Adobe Managed Service としてホストされている [!DNL Experience Manager Assets] と [!DNL Experience Manager] as a [!DNL Cloud Service] には様々な違いがあります。この記事では、[!DNL Assets] 機能の重要な違いについて説明します。
 
-[!DNL Experience Manager]Adobe   6.5 との主な違いは次の点です。
+[!DNL Experience Manager] 6.5 との主な違いは次の点です。
 
 * [アセットの取り込み、アップロード、処理](#asset-ingestion)。
 * [クラウドネイティブ処理用のアセットマイクロサービス](#asset-microservices)。
@@ -39,7 +39,7 @@ ht-degree: 92%
 
 ## アセットマイクロサービスの開発とテスト {#asset-microservices}
 
-アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（[!DNL ImageMagick] など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は次のようなサードパーティソリューションが必要だったPSDおよび PSB 形式を、サムネール抽出できるようになりました。 [!DNL ImageMagick]. [!DNL ImageMagick] の複雑な設定は、[!UICONTROL 処理プロファイル]の設定には使用できません。ビデオの高度な FFmpeg トランスコードに [!DNL Dynamic Media] を使用し、[MP4 ビデオの基本的なトランスコード](/help/assets/manage-video-assets.md#transcode-video)に処理プロファイルを使用します。
+アセットマイクロサービスは、クラウドサービスを使用して、拡張性と回復性に優れたアセット処理を提供します。アドビは、様々なアセットタイプや処理オプションを最適に処理するための Cloud Services を管理します。アセットマイクロサービスを利用すると、サードパーティ製のレンダリングツールやメソッド（[!DNL ImageMagick] など）が不要になり、システムの設定が簡単になると同時に、一般的なファイルタイプにそのまま使用できる機能が提供されます。以前のバージョンの Experience Manager で可能だったよりも幅広く、[様々なファイルタイプ](/help/assets/file-format-support.md)の形式を追加設定なしで処理できるようになりました。例えば、以前は [!DNL ImageMagick] などのサードパーティソリューションが必要だった PSD 形式と PSB 形式を、サムネール抽出できるようになりました。[!DNL ImageMagick] の複雑な設定は、[!UICONTROL 処理プロファイル]の設定には使用できません。ビデオの高度な FFmpeg トランスコードに [!DNL Dynamic Media] を使用し、[MP4 ビデオの基本的なトランスコード](/help/assets/manage-video-assets.md#transcode-video)に処理プロファイルを使用します。
 
 アセットマイクロサービスは、Cloud Manager で管理されるユーザープログラムと環境にある Adobe [!DNL Experience Manager] に自動的にプロビジョニングされて接続される、クラウドネイティブなサービスです。Adobe [!DNL Experience Manager] の拡張やカスタマイズを行う場合、開発者は、既存のコンテンツまたはクラウド環境で生成されたレンディションを含んだアセットを使用して、アセットの使用、表示、ダウンロードを行うコードをテストし検証できます。
 
@@ -52,7 +52,7 @@ ht-degree: 92%
 | 機能またはユースケース | [!DNL Experience Manager] as a [!DNL Cloud Service] のステータス | コメント |
 |-----|-----|-----|
 | [重複アセットの検出](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | 動作が異なる | [ [!DNL Experience Manager] 6.5 での動作](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=ja)を参照してください。 |
-| [プレースメント専用（FPO）レンディション](/help/assets/configure-fpo-renditions.md) | 動作が異なる | 処理プロファイルは、アセットマイクロサービスを使用して FPO レンディションを生成します。 Experience Manager6.5 では、 [!DNL ImageMagick] レンディションの生成に使用できました。 |
+| [プレースメント専用（FPO）レンディション](/help/assets/configure-fpo-renditions.md) | 動作が異なる | 処理プロファイルは、アセットマイクロサービスを使用して FPO レンディションを生成します。Experience Manager 6.5 では、[!DNL ImageMagick] などのサードパーティソリューションをレンディションの生成に使用できました。 |
 | メタデータの書き戻し | 動作が異なる | デフォルトで無効必要に応じて、対応するワークフローランチャーを有効にします。書き戻しは、アセットマイクロサービスで処理されます。 |
 | パッケージマネージャーを使用してアップロードされたアセットの処理 | 手動介入が必要 | 「**[!UICONTROL アセットを再処理]**」アクションを使用して手動で再処理します。 |
 | MIME タイプの検出 | 非対応 | 拡張子のないデジタルアセットや誤った拡張子のデジタルアセットをアップロードした場合は、希望どおりには処理されない可能性があります。それでも、ユーザーは、拡張子のないバイナリファイルを DAM に保存できます。[Adobe  [!DNL Experience Manager] 6.5 の MIME タイプ検出](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=ja)を参照してください。 |
@@ -65,7 +65,7 @@ ht-degree: 92%
 | [レポートをダウンロード](/help/assets/asset-reports.md) | サポートされていない | 現時点では、アセットの使用を通知するダウンロードレポートは使用できません。[ダウンロードレポート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=ja) を参照してください。 |
 | 製品撮影テンプレート | サポートされていない | [製品撮影テンプレート： [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=ja) を参照してください。 |
 | スマート翻訳 | サポートされていない | [スマート翻訳](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=ja)は [!DNL Experience Manager] as a [!DNL Cloud Service] ではサポートされていません。 |
-| WebDAV | サポートされていない | 代替手段については、 [[!DNL Creative Cloud] 統合](/help/assets/aem-cc-integration-best-practices.md) または [開発者向けリファレンス資料](/help/assets/developer-reference-material-apis.md). |
+| WebDAV | サポートされていない | 代替手段については、[[!DNL Creative Cloud] 統合](/help/assets/aem-cc-integration-best-practices.md)または[開発者向けリファレンス資料](/help/assets/developer-reference-material-apis.md)を参照してください。 |
 | クラシック UI | サポートされていない | タッチ操作対応 UI のみ使用できます。 |
 
 >[!MORELIKETHIS]
