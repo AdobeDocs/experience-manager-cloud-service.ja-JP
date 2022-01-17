@@ -3,7 +3,7 @@ title: SPA の詳細
 description: AEM SPA エディター SDK は、一連の AEM Gems セッションで特集されました。アドビエンジニアが主催するこのシリーズは、AEM SPA エディター SDK を低レベルでより深く理解するための優れたガイドとして機能します。
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 source-git-commit: f349d4db8794f85c17e3de5abf33edf84262267f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
 ht-degree: 100%
 
