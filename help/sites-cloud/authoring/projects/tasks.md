@@ -3,9 +3,9 @@ title: タスクの操作
 description: タスクは、コンテンツで実行するべき作業項目を表し、プロジェクトで現在のタスクの完了レベルを判断するために使用されます。
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 97%
 
 #### タスクの詳細 {#task-details}
 
-特定のタスクの詳細を表示するには、「タスクリスト」でタスクをタップまたはクリックし、**「**&#x200B;を開く」を選択します。
+特定のタスクの詳細を表示するには、タスクリストでタスクをタップまたはクリックし、「**開く**」をタップまたはクリックします。
 
 ![タスクの詳細](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
