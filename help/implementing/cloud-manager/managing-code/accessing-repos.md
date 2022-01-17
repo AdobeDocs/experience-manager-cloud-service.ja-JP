@@ -5,9 +5,9 @@ description: このページでは、Git リポジトリーにアクセスして
 seo-description: Follow this page to learn how to access and manage your Git repository.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 Cloud Manager UI のセルフサービス Git アカウント管理を使用して、Git リポジトリーにアクセスし、管理できます。
 
-## セルフサービスリポジトリーのアカウント管理の使用 {#self-service-repos}
+## セルフサービスリポジトリーアカウント管理の使用 {#self-service-repos}
 
 Cloud Manager UI から利用できる「**リポジトリー情報にアクセス**」ボタンを使用します。このボタンはパイプラインカードで最も目立つ場所にあります。
 
