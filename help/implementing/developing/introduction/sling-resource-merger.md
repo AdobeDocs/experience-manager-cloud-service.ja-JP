@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger 
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## 目的 {#purpose}
 
-Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します.Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
+Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します. Sling Resource Merger は、次の両方に対して差分メカニズムを提供します。
 
 * [検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)を使用するリソースの&#x200B;**[オーバーレイ](/help/implementing/developing/introduction/overlays.md)**。
 
@@ -47,6 +47,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 >* オーバーレイは[検索パス](/help/implementing/developing/introduction/overlays.md#search-paths)に依存します。
 >
 >* オーバーライドは、検索パスに依存せず、`sling:resourceSuperType` プロパティに基づいて接続を確立します。
+
 >
 >ただし、オーバーライドは `/apps` 以下に定義されるのが一般的です。AEM as a Cloud Service では、カスタマイズを `/apps` 以下に定義することがベストプラクティスとされています。なぜなら `/libs` 以下のコンテンツを変更してはならないからです。
 
@@ -129,7 +130,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
    `/libs` 定義に存在しないプロパティが `/apps` オーバーレイ／オーバーライドで必要になった場合に、プロパティを追加できます。
 
    1. `/apps` 内に、対応するノードを作成します。
-   1. このノード&grave;&grave;で新しいプロパティを作成します。
+   1. このノード``で新しいプロパティを作成します。
 
 * **プロパティの再定義（自動作成されたプロパティ以外）**
 
@@ -157,7 +158,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
 
 * **ノードおよびその子の再定義**
 
-   `/libs` 内に定義されているノードとその子について、`/apps` オーバーレイ／オーバーライドで新しい設定が必要な場合は、再定義をおこないます。
+   `/libs` 内に定義されているノードとその子について、`/apps` オーバーレイ／オーバーライドで新しい設定が必要な場合は、再定義を行います。
 
    1. 次のアクションを両方実行します。
 
