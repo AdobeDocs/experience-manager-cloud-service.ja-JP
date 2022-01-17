@@ -3,7 +3,7 @@ title: Git との統合
 description: Git との統合 - クラウドサービス
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
 ht-degree: 100%
 
