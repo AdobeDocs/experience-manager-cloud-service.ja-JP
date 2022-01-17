@@ -3,7 +3,7 @@ title: Screens as a Cloud Service でのプレーヤーのインストールと�
 description: ここでは、Screens as a Cloud Service でプレーヤーをインストールおよび設定する方法について説明します。
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
 ht-degree: 100%
 
@@ -86,6 +86,6 @@ AEM Screens Player での基本的な再生モニタリングにより、以下�
 
 * これらの指標はユーザーにまだ完全には公開されておらず、ダッシュボードのようなレポートおよび警告メカニズムを近い将来実現するように鋭意取り組んでいるところです。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 これで、プレーヤーをクラウドサービスモードに設定できました。次に、Screens サービスプロバイダーのドキュメントの [Screens as a Cloud Service での Screens プレーヤーの登録](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)を確認し、Screens as a Cloud Service のジャーニーを続けてください。
