@@ -1,13 +1,13 @@
 ---
 title: ブランチの作成
 description: ここでは、Cloud Manager で Screens as a Cloud Service 用にブランチを作成する方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '226'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Manager でのブランチの作成 {#create-branch-screens-cloud}
 
@@ -40,6 +40,6 @@ ht-degree: 100%
 
    ![画像](/help/screens-cloud/assets/onboarding/create-branch4.png)
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 Cloud Manager でプロジェクトのブランチを作成する方法を理解したら、オンボーディングプロセスの次のステップの[環境の作成とセットアップ](/help/screens-cloud/onboarding-screens-cloud/creating-an-environment.md)に進みます。
