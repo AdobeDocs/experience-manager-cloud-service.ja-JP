@@ -1,13 +1,13 @@
 ---
 title: Screens as a Cloud Service でのビデオレンディションの作成
 description: ここでは、Screens as a Cloud Service でビデオレンディションを作成する方法について説明します。
-source-git-commit: e24c368811f0c3e61dc0a48c32ef7368f5fc00f5
+exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
-
 
 # Screens as a Cloud Service でのビデオレンディションの作成 {#creating-screens-video-renditions}
 
@@ -66,5 +66,4 @@ Screens as a Cloud Service で Screens コンテンツプロバイダーから�
    >[!NOTE]
    >* 複数の処理プロファイルを作成して、それぞれ対応するフォルダーに適用することで、それらのフォルダー内のビデオが特定のビデオレンディションを取得できるようになります。
    >* 処理プロファイルが適用されるフォルダーにビデオをアップロードすると、ビデオが処理され、設定されたレンディションが作成されます。これらのレンディションは、Screens デバイスでのビデオの再生に使用されます。
-
 
