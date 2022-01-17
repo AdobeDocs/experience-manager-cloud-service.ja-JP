@@ -3,7 +3,7 @@ title: 複数ソース Git リポジトリーの操作
 description: 複数ソース Git リポジトリーの操作 - Cloud Services
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
