@@ -5,17 +5,17 @@ feature: Asset Management
 role: User
 exl-id: 0198b3a3-173e-46ca-a845-3f58f8eab769
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Dynamic Media でホットリンク保護を有効化する {#activating-hotlink-protection-in-dynamic-media}
 
-ホットリンクは、サードパーティの Web サイトで HTML コードを使用して自社 Web サイト内の画像を表示する場合におこなわれます。訪問者のブラウザーが自社サーバーから画像に直接アクセスするので、画像が要求されるたびに帯域幅が消費されます。ホットリンク&#x200B;*保護*&#x200B;は、自社 Web サイト上の画像、CSS、JavaScript などに他の Web サイトが直接リンクできないようにするための方法です。このような保護により、Dynamic Media アカウントでの不要な帯域幅使用を減らすことができます。
+ホットリンクは、サードパーティの Web サイトで HTML コードを使用して自社 Web サイト内の画像を表示する場合に行われます。訪問者のブラウザーが自社サーバーから画像に直接アクセスするので、画像が要求されるたびに帯域幅が消費されます。ホットリンク&#x200B;*保護*&#x200B;は、自社 Web サイト上の画像、CSS、JavaScript などに他の Web サイトが直接リンクできないようにするための方法です。このような保護により、Dynamic Media アカウントでの不要な帯域幅使用を減らすことができます。
 
-[Adobeカスタマーサポート](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) は、CDN レベルでリファラーフィルターを設定できます。 これにより、Dynamic Media のコンテンツが、ドメインで許可された Web サイトのリストにある Web サイトにのみ提供されるようにします。
+[アドビカスタマーサポート](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=ja#home)では、CDN レベルでリファラーフィルターを設定できます。これにより、Dynamic Media のコンテンツが、ドメインで許可された Web サイトのリストにある Web サイトにのみ提供されるようにします。
 
 >[!NOTE]
 >
