@@ -3,9 +3,9 @@ title: 概要 - Cloud Manager での IP 許可リスト
 description: 概要 - Cloud Manager での IP 許可リスト
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 AEM as a Cloud Service はインターネットに公開されており、そのセキュリティはユーザー認証および承認を通じて処理されます。IP 許可リストは Cloud Manager の機能で、アクセスを制御して信頼できるユーザーのみに制限するために使用されます。この機能を使用すると、権限を持つユーザーは、サイトユーザーが AEM ドメインにアクセスできる信頼できる IP アドレスの許可リストを作成できます。
 
 >[!NOTE]
->プログラムには最大 50 個の IP許可リストを追加でき、各 IP許可リストには最大 50 個の IP/CIDR アドレスを追加できます。
+>プログラムには最大 50 個の IP 許可リストを追加でき、各 IP 許可リストには最大 50 個の IP／CIDR アドレスを追加できます。
 
 IP 許可リストを一度追加すると、環境のオーサーサービスやパブリッシュサービスに 1 つのユニットまたはエンティティとして何度でも適用または適用解除できます。
 
