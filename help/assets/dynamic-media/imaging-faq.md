@@ -5,9 +5,9 @@ feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2624'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Dynamic Media の会社アカウントの場合、スマートイメージング
    1. 主要連絡先の氏名、電子メールアドレス、電話番号。
    1. スマートイメージングを有効にするすべてのドメイン（`images.company.com` や `mycompany.scene7.com`）。
 
-      ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
+      ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
 
       **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
 
@@ -206,17 +206,17 @@ Dynamic Media の会社アカウントの場合、スマートイメージング
    1. 直接的な関係で管理されているのではなく、アドビを通じて CDN を使用していることを確認します。
    1. `s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` などの汎用ドメインではなく、`images.company.com` や `mycompany.scene7.com` などの専用ドメインを使用していることを確認します。
 
-      ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
+      ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
 
       **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
 
       「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media Classic ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
    1. HTTP/2 で動作させるかどうかを指定します。
 
-1. Adobeカスタマーサポートでは、要求の送信順に基づいて、スマートイメージングカスタマー待ちリストにユーザーを追加します。
-1. Adobeがリクエストを処理する準備が整うと、カスタマーサポートから連絡があり、調整して目標日を設定できます。
+1. アドビカスタマーサポートでは、要求が送信された順序に基づいて、スマートイメージングカスタマー待ちリストに貴社を追加します。
+1. リクエストを処理する準備が整った時点で、カスタマーサポートから連絡を差し上げ、調整と日取り設定を行います。
 1. **オプション**：アドビが実稼働環境にスマートイメージングをプッシュする前に、この新機能をステージングでテストするためのオプションがあります。
-1. 完了後、カスタマーサポートから通知が届きます。
+1. 完了後、カスタマーサポートから通知があります。
 1. スマートイメージングのパフォーマンス向上を最大限にするため、アドビでは、有効期間（TTL）を 24 時間以上に設定することを推奨しています。TTL によって定義されるのは、アセットが CDN によってキャッシュされる期間です。この設定を変更するには、次の手順を実行します。
 
    1. Dynamic Media Classic を使用している場合は、**[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 公開設定]**／**[!UICONTROL Image Server]** に移動します。「**[!UICONTROL 初期設定のクライアントキャッシュの有効期限]**」の値を 24 以上に設定します。
@@ -224,7 +224,7 @@ Dynamic Media の会社アカウントの場合、スマートイメージング
 
 ## 自分のアカウントでスマートイメージングが有効になるのはいつ頃ですか？  {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-リクエストは、カスタマーサポートが受け取った順序で、待ちリストに従って処理されます。
+リクエストはカスタマーサポートに到着した順序で、待ちリストに従って処理されます。
 
 >[!NOTE]
 >
@@ -285,6 +285,6 @@ Dynamic Media の会社アカウントの場合、スマートイメージング
 
 >[!MORELIKETHIS]
 >
->* [次世代の画像形式 WebP および AVIF による画像の最適化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>* [次世代の画像形式 WebP および AVIF による画像の最適化](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 >
 
