@@ -1,13 +1,13 @@
 ---
 title: Screens as a Cloud Service におけるディスプレイへのプレーヤーの割り当て
 description: ここでは、Screens as a Cloud Service でディスプレイにプレーヤーを割り当てる方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '229'
 ht-degree: 100%
 
 ---
-
 
 # Screens as a Cloud Service におけるディスプレイへのプレーヤーの割り当て {#assign-player-displays-screens-cloud}
 
@@ -38,4 +38,3 @@ ht-degree: 100%
 これで、ディスプレイがプレーヤーに割り当てられ、チャネルでコンテンツの再生が開始されます。プレーヤーがダウンロードされ、コンテンツの再生が開始されます。**これで完了です。**
 
 ![画像](/help/screens-cloud/assets/player/output.gif)
-
