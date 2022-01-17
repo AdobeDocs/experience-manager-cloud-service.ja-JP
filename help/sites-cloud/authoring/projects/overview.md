@@ -3,9 +3,9 @@ title: プロジェクト
 description: プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化でき、共通の共有環境でプロジェクトを簡単に管理できます
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 
 ![エクスペリエンス](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-アイコンは、エクスペリエンスの種類（Web サイト、モバイルアプリケーションまたは公開物）を示します。下の山形をタップまたはクリックしてタップし、エクスペリエンスを追加する **エクスペリエンスを追加** エクスペリエンスのタイプを選択します。
+アイコンは、エクスペリエンスの種類（Web サイト、モバイルアプリケーションまたは公開物）を示します。エクスペリエンスを追加するには、下向き山形記号をタップまたはクリックし、「**エクスペリエンスを追加**」をクリックして、エクスペリエンスのタイプを選択します。
 
 ![エクスペリエンスの追加](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
