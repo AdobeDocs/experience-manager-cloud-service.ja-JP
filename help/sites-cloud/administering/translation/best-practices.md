@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!TIP]
 >
->コンテンツの翻訳を初めておこなう場合は、 [サイト翻訳ジャーニー、](/help/journey-sites/translation/overview.md) AEMの強力な翻訳ツールを使用してAEM Sitesのコンテンツを翻訳する手順を示すガイド付きのツールです。AEMや翻訳の経験がないユーザーに最適です。
+>コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
 
 ## 一般 {#general}
 
