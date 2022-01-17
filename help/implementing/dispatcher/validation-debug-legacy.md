@@ -3,9 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ（レガシー�
 description: Dispatcher ツールを使用した検証とデバッグ（レガシー）
 feature: Dispatcher
 hidefromtoc: true
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
-source-wordcount: '2305'
+source-wordcount: '2304'
 ht-degree: 100%
 
 ---
@@ -405,7 +406,7 @@ immutable file 'conf.dispatcher.d/clientheaders/default_clientheaders.any' has b
 # Define REWRITE_LOG_LEVEL Warn
 ```
 
-Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`
+Dispatcher をローカルで実行すると、ログが端末に直接出力されます。ほとんどの場合、これらのログは DEBUG モードで出力すべきもので、それには、Docker の実行時にデバッグレベルをパラメーターとして渡します。（例：`DISP_LOG_LEVEL=Debug ./bin/docker_run.sh out docker.for.mac.localhost:4503 8080`）。
 
 クラウド環境のログは、Cloud Manager で利用可能なログサービスを通じて公開されます。
 
