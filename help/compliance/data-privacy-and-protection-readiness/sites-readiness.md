@@ -3,9 +3,9 @@ title: データ保護およびデータプライバシーに関する規制 - A
 description: EU 一般データ保護規則（GDPR）やカリフォルニア州消費者プライバシー法など、データ保護およびデータプライバシーに関する様々な規制に対する Adobe Experience Manager as a Cloud Service Sites のサポートと、新しい AEM as a Cloud Service プロジェクトを実装する際にこれらの規制に準拠する方法について説明します。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 Adobe Experience Manager as a Cloud Service Sites は、データのプライバシーと保護に関するコンプライアンス義務の遂行でお客様を支援する用意が整っています。このページでは、AEM Sites でこのような要求を処理する手順について説明します。プライベートデータの格納場所や、それらのデータを手動で、またはコードを使用して削除する方法について説明します。
 
-詳しくは、[アドビプライバシーセンター](https://www.adobe.com/privacy.html)を参照してください。
+詳しくは、[アドビプライバシーセンター](https://www.adobe.com/jp/privacy.html)を参照してください。
 
 >[!NOTE]
 >
@@ -69,19 +69,19 @@ Adobe Experience Manager には、ユーザーのオプトイン／オプトア�
 
    >[!NOTE]
    >
-   > **2.プライバシー**&#x200B;の節（[アドビ基本利用条件](https://www.adobe.com/jp/legal/terms.html)の第 2 条）にさらに詳しい説明があります。
+   > **2. プライバシー**&#x200B;の節（[アドビ基本利用条件](https://www.adobe.com/jp/legal/terms.html)の第 2 条）にさらに詳しい説明があります。
 
 ## Analytics Foundation {#analytics-foundation}
 
 AEM Sites には、Adobe Analytics On-demand Services 内の機能を使用した Analytics Foundation との統合（オプション）が含まれています。
 
-Adobe Analytics に関連するデータ主体からの要求の管理について詳しくは、[Adobe Analytics とデータ保護](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)を参照してください。
+Adobe Analytics に関連するデータ主体からの要求の管理について詳しくは、[Adobe Analytics とデータ保護](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ja)を参照してください。
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites には、Adobe Target On-demand Services 内の機能を使用した Personalization Foundation by Target との統合（オプション）が含まれています。
 
-Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)を参照してください。
+Adobe Target に関連する データサブジェクトリクエストの管理についての詳細は、[Adobe Target - プライバシーと一般データ保護規則](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=ja)を参照してください。
 
 ## ContextHub {#contexthub}
 
