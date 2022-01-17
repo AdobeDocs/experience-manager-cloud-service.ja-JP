@@ -1,23 +1,23 @@
 ---
-title: Cloud ServiceとしてのScreensでのDispatcher設定
-description: ここでは、ScreensでのDispatcherの設定をCloud Serviceとして説明します。
+title: Screens as a Cloud Service での Dispatcher 設定
+description: ここでは、Screens as a Cloud Service での Dispatcher 設定について説明します。
 source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Cloud ServiceとしてのScreensでのDispatcher設定 {#dispatcher-configurations-screens-cloud}
+# Screens as a Cloud Service での Dispatcher 設定 {#dispatcher-configurations-screens-cloud}
 
-ここでは、ScreensをCloud Serviceとして使用する際のDispatcherの設定について説明します。
+ここでは、Screens as a Cloud Service の Dispatcher 設定について説明します。
 
-## Dispatcherでのフィルターおよびキャッシュルールの追加（Screens用）をCloud Serviceデプロイメントとして {#deployment}
+## Screens as a Cloud Service デプロイメントの Dispatcher に対するフィルターとキャッシュルールの追加 {#deployment}
 
-Screensのパブリッシュインスタンス用のDispatcherで、以下のフィルターとキャッシュルールをCloud Serviceとして許可します。
+Screens as a Cloud Service におけるパブリッシュインスタンスの Dispatcher で次のフィルターとキャッシュルールを許可します。
 
-### AEM Screens Filters {#filters}
+### AEM Screens フィルター {#filters}
 
 ```
 ## # Content Configurations
@@ -32,12 +32,12 @@ Screensのパブリッシュインスタンス用のDispatcherで、以下のフ
 
 ### キャッシュルール {#cache-rules}
 
-* `/statfileslevel "10"`を`publish_farm.any`/の`/cache`セクションに追加します。
+* `publish_farm.any`/ の `/cache` セクションに `/statfileslevel "10"` を追加します。
 
    >[!NOTE]
-   >このキャッシュルールは、キャッシュドキュメントルートから最大10レベルのキャッシュをサポートし、すべてを無効化するのではなく、コンテンツが公開されるタイミングを無効化します。 このレベルは、コンテンツ構造の設定の深さに基づいて変更できます。
+   >このキャッシュルールでは、キャッシュの docroot から最大 10 レベルまでのキャッシュをサポートしており、すべてを無効化するのではなく、コンテンツの公開時に無効化します。このレベルは、セットアップするコンテンツ構造の深さに基づいて変更できます。
 
-* `publish_farm.any`の`/invalidate`セクションに次の内容を追加します。
+* `publish_farm.any` の `/invalidate` セクションに次の内容を追加します。
 
    ```
    /0003 {
@@ -46,7 +46,7 @@ Screensのパブリッシュインスタンス用のDispatcherで、以下のフ
    }
    ```
 
-* 次のルールを、publish_farm.anyの`/cache`の`/rules`セクションまたは`publish_farm.any`からインクルードされたファイルに追加します。
+* publish_farm.any または `publish_farm.any` からインクルードされるファイルにある `/cache` の `/rules` セクションに、次のルールを追加します。
 
    ```
    ## Allow Dispatcher Cache for Screens channels
