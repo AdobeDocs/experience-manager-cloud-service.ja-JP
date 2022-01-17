@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service に対する IMS のサポー
 description: Adobe Experience Manager as a Cloud Service に対する IMS のサポート
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->AEMは、現在、プロファイルへのグループの割り当てをサポートしていません。 代わりに、ユーザーは個別に追加する必要があります。
+>AEM では、現在、プロファイルへのグループの割り当てをサポートしていません。代わりに、ユーザーを個別に追加する必要があります。
 
 ## 主なハイライト {#key-highlights}
 
@@ -59,7 +59,7 @@ AEM のお客様は、既に組織がプロビジョニングされています�
 1. 指定されたシステム管理者が、Cloud Manager へのログインの招待を受け取ります。Cloud Manager にログインした後、システム管理者は AEM のプログラムと環境のプロビジョニングを選択するか、Admin Console に移動して管理タスクを実行することができます。
 1. システム管理者がドメインを要求して、それぞれのドメイン（この例では acme.com）の所有権を確認します。
 1. システム管理者がユーザーディレクトリを設定します。
-1. システム管理者は、シングルサインオンを設定するために Admin Console で IDP 設定をおこないます。
+1. システム管理者は、シングルサインオンを設定するために Admin Console で IDP 設定を行います。
 1. AEM 管理者が、通常どおりローカルグループと権限および特権を管理します。
 
 IDP 設定など、アドビの ID 管理の基本については、[こちら](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。
@@ -86,7 +86,7 @@ Enterprise Administration と Admin Console の使用方法については、[�
 
 ユーザー同期ツール（UST）を使用すると、法人のお客様は、Active Directory を利用してアドビユーザーを作成および管理できます。この方法は、検証済みの他の OpenLDAP ディレクトリサービスでも機能します。対象ユーザーは、このツールをインストールおよび設定できる IT ID 管理者（エンタープライズディレクトリまたはシステムの管理者）です。オープンソースツールはカスタマイズ可能なので、お客様が特定の要件に合うように変更できます。
 
-ユーザー同期が実行されると、組織の Active Directory からユーザーリストを取得し、それを Admin Console 内のユーザーリストと比較します。その後、Admin Console を組織のディレクトリと同期するために、Adobe User Management API を呼び出します。変更フローは完全に一方向です。Admin Console でおこなった編集は、ディレクトリにはプッシュされません。
+ユーザー同期が実行されると、組織の Active Directory からユーザーリストを取得し、それを Admin Console 内のユーザーリストと比較します。その後、Admin Console を組織のディレクトリと同期するために、Adobe User Management API を呼び出します。変更フローは完全に一方向です。Admin Console で行った編集は、ディレクトリにはプッシュされません。
 
 このツールを使用すると、システム管理者は、お客様のディレクトリ内のユーザーグループを、Admin Console 内の製品設定とユーザーグループにマッピングできます。
 
@@ -118,9 +118,9 @@ Adobe I/O コンソールのドキュメントについては、[こちら](http
 
 >[!NOTE]
 >
->必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的におこなわれます。ただし、管理者は、[こちら](/help/implementing/deploying/overview.md)で説明している方法を使用して、自らの要件に従って設定を変更できます。
+>必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的に行われます。ただし、管理者は、[こちら](/help/implementing/deploying/overview.md)で説明している方法を使用して、自らの要件に従って設定を変更できます。
 
-必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的におこなわれます。顧客側の管理者は、自らの要件に応じて設定の一部を変更できます。
+必要な AEM IMS 設定は、AEM の環境とインスタンスがプロビジョニングされる際に自動的に行われます。顧客側の管理者は、自らの要件に応じて設定の一部を変更できます。
 
 Adobe IMS を OAuth プロバイダーとして設定することが全体的なアプローチになります。LDAP の同期と同様に、**Apache Jackrabbit Oak Default Sync Handler** を変更できます。
 
