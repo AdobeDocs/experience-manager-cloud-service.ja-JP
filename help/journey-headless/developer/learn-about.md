@@ -3,7 +3,7 @@ title: CMS ヘッドレス開発について
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、ヘッドレステクノロジーと、それを使用する理由について説明します。
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ ht-degree: 100%
 
 このジャーニーでは、ヘッドレスのみのコンテンツ配信モデルに焦点を当てます。しかし、この基本的な知識を学べば、両方のモデルを活用する方法をさらに詳しく学ぶことができます。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEM ヘッドレスジャーニーを開始していただきありがとうございます。ドキュメントを読んだので、次を理解しているはずです。
 
