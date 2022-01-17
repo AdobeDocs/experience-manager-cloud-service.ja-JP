@@ -1,9 +1,9 @@
 ---
 title: 'カスタムフォントを使用 '
 description: 'カスタムフォントを使用 '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **Cloud Service通信のドキュメントはベータ版です**
 
-Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP ベースのPDFドキュメント、またはAcrobat Forms(AcroForms) と XML データを組み合わせて、テンプレートドキュメントを生成できます。 生成されたフォントドキュメントをレンダリングするには、Cloud Serviceフォント（Fonts に含まれるフォント）またはカスタムフォント ( 組織の承認済みPDF) を使用できます。
-
-システムフォントは既にCloud Serviceで使用できます。 Cloud Service開発プロジェクトを使用して、カスタムフォントをCloud Service環境に追加できます。
+Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP ベースのテンプレートドキュメント、またはAcrobatフォーム (AcroForms) を XML データと組み合わせてPDFドキュメントを生成できます。 生成されたフォントドキュメントをレンダリングするには、Cloud Serviceまたはカスタムフォント ( 組織の承認済みPDF) に含まれるフォントを使用できます。 Cloud Service開発プロジェクトを使用して、カスタムフォントをCloud Service環境に追加できます。
 
 ## PDF文書の動作
 
-以下が可能です。 [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) をPDFドキュメントに追加するか、単にフォント名を指定します。 フォントが埋め込まれると、PDFドキュメントはすべてのプラットフォームで同じ (Look) で表示されます。 一貫した外観と操作性を確保するために、埋め込みフォントを使用しました。 フォントが埋め込まれていない場合、PDFレンダリングクライアントはクライアントマシン上でフォントを検索します。 フォントがクライアントマシンで使用可能な場合、PDFは指定されたフォントを使用します。使用しない場合、PDFはフォールバックフォントでレンダリングされます。
+以下が可能です。 [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) をPDF文書に フォントが埋め込まれると、PDFドキュメントはすべてのプラットフォームで同じ (Look) で表示されます。 一貫した外観と操作性を確保するために、埋め込みフォントを使用しました。 フォントが埋め込まれていない場合、フォントのレンダリングは、PDFビューアクライアントのレンダリング設定に依存します。 フォントがクライアントマシンで使用可能な場合、PDFは指定されたフォントを使用します。使用しない場合、PDFはフォールバックフォントでレンダリングされます。
 
 ## Formsas a Cloud Service環境へのカスタムフォントの追加
 
