@@ -4,9 +4,9 @@ description: AEM ヘッドレス配信機能の重要な部分である、Assets
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1951'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 この API では、コンテンツサービスを JavaScript フロントエンドアプリケーションに提供することで、Adobe Experience Manager as a Cloud Service をヘッドレス CMS（コンテンツ管理システム）として動作させることができます。または、HTTP リクエストを実行して JSON 応答を処理できる他のどのようなアプリケーションにもすることができます。
 
-例： [シングルページアプリケーション (SPA)](/help/implementing/developing/hybrid/introduction.md)、フレームワークベースまたはカスタムの場合は、HTTP API を介して（多くの場合、JSON 形式で）コンテンツを提供する必要があります。
+例えば、[単一ページアプリケーション（SPA）](/help/implementing/developing/hybrid/introduction.md)では、フレームワークベースかカスタムかを問わず、HTTP API 経由で提供されるコンテンツ（多くの場合 JSON 形式）が必要です。
 
 [AEM コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、この目的に必要な読み取り操作を提供できる非常に包括的で柔軟性の高いカスタマイズ可能な API を提供し、その JSON 出力もカスタマイズできますが、実装には AEM WCM（Web コンテンツ管理）のノウハウが必要です。専用の AEM テンプレートに基づいた（API）ページでこれらのコンポーネントをホストする必要があるからです。すべての SPA 開発組織が、こうした知識にアクセスできるわけではありません。
 
