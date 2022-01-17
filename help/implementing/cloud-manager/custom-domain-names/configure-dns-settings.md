@@ -3,9 +3,9 @@ title: 'DNS 設定の指定 '
 description: DNS 設定の指定
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -18,18 +18,18 @@ ht-degree: 72%
 
 それには、カスタムドメイン名が Cloud Manager ドメイン名を指すように `CNAME` または Apex レコードに DNS 設定を指定する必要があるかどうかを決定する必要があります。`CNAME` または A レコードがプロビジョニングされると、ドメインのすべてのインターネットトラフィックが、そのレコードが指している場所にルーティングされます。その場所がトラフィックを処理するようにプロビジョニングされていない場合は、機能が一時的に停止します。テストされていない場合は、コンテンツにエラーがある可能性があります。このため、テストが完了し、顧客が運用を開始できる状態になったら、必ずこの手順を実行します。
 
-以下の表に示す手順を実行する必要があります。
+次の表に示す手順を完了する必要があります。
 
-| ステップ |  | 責任 | 詳しく見る |
+| 手順 |  | 担当 | 詳細情報 |
 |--- |--- |--- |---|
-| SLL 証明書の追加 | SLL 証明書の追加 | 顧客 | [SSL 証明書の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
-| ドメインの検証 | TXT レコードの追加 | 顧客 | [TXT レコードの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
-| ドメイン検証ステータスの確認 |  | 顧客 |  |
-|  | ステータス：ドメイン検証エラー | 顧客 | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
-|  | ステータス：検証済み、展開に失敗しました | 連絡先Adobe担当者 | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
-| CNAME または APEX レコードを追加して、AEM as a Cloud Serviceを指す DNS レコードを追加する | DNS 設定の構成 | 顧客 | [DNS 設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
-| DNS レコードの状態の確認 |  | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
-|  | ステータス：DNS の状態が検出されません | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
+| SSL 証明書を追加 | SSL 証明書を追加 | 顧客 | [SSL 証明書の追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=ja) |
+| ドメイン検証 | TXT レコードを追加 | 顧客 | [TXT レコードの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=ja) |
+| ドメイン検証ステータスを確認 |  | 顧客 |  |
+|  | ステータス：ドメイン検証エラー | 顧客 | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=ja) |
+|  | ステータス：検証済み、デプロイメントに失敗 | アドビ担当者に問い合わせ | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=ja) |
+| CNAME または APEX レコードを追加して、AEM as a Cloud Service を指す DNS レコードを追加 | DNS 設定を指定 | 顧客 | [DNS 設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=ja) |
+| DNS レコードのステータスを確認 |  | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=ja) |
+|  | ステータス：DNS ステータスが検出されない | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=ja) |
 |  | ステータス：DNS が正しく解決されない | 顧客 |  |
 
 
