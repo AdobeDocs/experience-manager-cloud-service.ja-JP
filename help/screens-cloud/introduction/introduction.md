@@ -1,13 +1,13 @@
 ---
 title: AEM Screens as a Cloud Service
 description: このページでは、AEM Screens as a Cloud Service の概要ついて説明します。
-source-git-commit: 3a636a512da40f9a577d25399d33f96d8f6ad8a0
+exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '380'
 ht-degree: 100%
 
 ---
-
 
 # AEM Screens as a Cloud Service の概要 {#introduction-screens-cloud}
 
@@ -29,4 +29,3 @@ Screens as a Cloud Service には、次の 2 つの主要なコンポーネン�
 AEM Screens as a Cloud Service のユーザーは、Screens as a Cloud Service 専用に設計されたインターフェイス（**Screens サービスプロバイダー**&#x200B;および **Screens コンテンツプロバイダー**）を使用して、チャネルへのコンテンツの追加と管理、ディスプレイとプレーヤーの登録と管理を行えます。
 
 ![画像](/help/screens-cloud/assets/architecture-screenscloud.png)
-
