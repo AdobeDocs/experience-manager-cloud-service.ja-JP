@@ -1,109 +1,109 @@
 ---
-title: 'チームメンバーを製品プロファイルとしてAEMに割り当てるCloud Service '
-description: このページでは、チームメンバーをAEM as a Cloud Service製品プロファイルに割り当てる方法について説明します
+title: AEM as a Cloud Service 製品プロファイルへのチームメンバーの割り当て
+description: ここでは、チームメンバーを AEM as a Cloud Service 製品プロファイルに割り当てる方法について説明します
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
-workflow-type: tm+mt
+exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-
-# チームメンバーを製品プロファイルとしてAEMに割り当てるCloud Service {#assign-team-members-cloud-service}
+# AEM as a Cloud Service 製品プロファイルへのチームメンバーの割り当て {#assign-team-members-cloud-service}
 
 ## 目的 {#objective}
 
-このドキュメントでは、チームメンバーをCloud Service製品プロファイルとしてAEMに割り当てるためにシステム管理者が実行する必要がある手順と、AEM作成者がAEMを使用してジャーニーを開始できるようにすることが重要な理由を説明します。
+このドキュメントでは、システム管理者がチームメンバーを AEM as a Cloud Service 製品プロファイルに割り当てるために必要な手順と、AEM 作成者が AEM のジャーニーを開始できるようにすることが重要な理由を説明します。
 
-この節を読むと、次の内容を理解できます。
+この説を読み終えると、以下を理解できます。
 
-* チームメンバーが製品プロファイルとしてAEMに割り当てられる理由と方法。
-* チームメンバーをAEM User製品プロファイルに追加する方法。
-* チームメンバーをAEM Administrators製品プロファイルに追加する方法。
+* チームメンバーを AEM as a Cloud Service 製品プロファイルに割り当てる理由と方法
+* チームメンバーを「AEM ユーザー」製品プロファイルに追加する方法
+* チームメンバーを「AEM 管理者」製品プロファイルに追加する方法
 
 
 ## はじめに {#introduction}
 
-AEM as aCloud Serviceユーザーに対するアクセス権を付与するには、次の2つの製品プロファイルのいずれかに属している必要があります。 `AEM Users`または`AEM Administrators`。 Cloud Managerを管理する権限では不十分なので、チームメンバーにAEMインスタンスに対する権限を付与する必要があります。
+ユーザーが AEM as a Cloud Service へのアクセス権を付与されるには、`AEM Users` または `AEM Administrators` のどちらかの製品プロファイルに属している必要があります。Cloud Manager を管理する権限では不十分なので、チームメンバーに AEM インスタンスに対する権限を付与する必要があります。
 
 >[!NOTE]
->システム管理者がAEMユーザー製品プロファイルに割り当てたすべてのユーザーは、Cloud Managerに（読み取り専用）アクセスできます。
+>システム管理者によって「AEM ユーザー」製品プロファイルに割り当てられたユーザーは誰でも、Cloud Manager に（読み取り専用で）アクセスできます。
 
 ## 前提条件 {#prerequisites}
 
-この節を読む前に、次の前提条件を検討する必要があります。
+この節を読む前に、次の前提条件を確認してください。
 
-* [AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)について
-* [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)について
-* Cloud Managerの製品プロファイルが必要に応じてチームメンバーに割り当てられ、クラウドリソースが設定されている
-* チームメンバーの詳細：システム管理者は、AEM as aCloud Serviceへのアクセスが必要なチームメンバーの名前と電子メールアドレス、役割と責任を持っている必要があります。
+* [AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)について理解している
+* [Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=ja) について理解している
+* Cloud Manager 製品プロファイルが必要に応じてチームメンバーに割り当てられており、クラウドリソースがセットアップされている
+* チームメンバーの詳細：システム管理者は、AEM as a Cloud Service へのアクセスを必要とするチームメンバーの名前と電子メールアドレス、役割と責務がわかっている
 
    >[!NOTE]
-   >オンボーディングを目的として、最初に管理者、開発者、コンテンツ作成者など、即時タスクに参加するユーザーを追加することをお勧めします。 すべてのユーザーを追加することなく、残りのオンボーディングを続行できます。 オンボーディングが完了したら、後でより多くのユーザーに拡大できます。
+   >オンボーディングのために、管理者、開発者、コンテンツ作成者など、当面のタスクに参加するユーザーを最初に追加することをお勧めします。すべてのユーザーを追加しなくても、残りのオンボーディングを続行できます。オンボーディングが完了したら、後でユーザーの数を増やすことができます。
 
 
    >[!IMPORTANT]
-   >AEM as aCloud Service製品プロファイルにチームメンバーを割り当てる手順を確認する前に、次の2つの手順に従ってください。
+   >AEM as a Cloud Service 製品プロファイルにチームメンバーを割り当てる手順を確認する前に、必ず次の 2 つの手順に従ってください。
    >
-   >1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en)にログインします。 詳しくは、「Admin Consoleへのログイン」を参照してください。
+   >1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=ja) にログインします。詳しくは、「Admin Console へのログイン」を参照してください。
    >
-   >1. [AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)を確認します。
+   >1. [AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)を確認します。
 
 
-以下の手順に従って、Adobe Admin ConsoleのCloud Managerプロファイルのリストを表示します。
+Adobe Admin Console で Cloud Manager プロファイルのリストを表示するには、次の手順に従います。
 
-1. [Adobe Admin Console](https://adminconsole.adobe.com/)にログインします。 **概要**&#x200B;ページで、**Cloud Serviceとサービス**&#x200B;カードから&#x200B;**Adobe Experience Managerを製品**&#x200B;として選択します。
+1. [Adobe Admin Console](https://adminconsole.adobe.com/) にログインします。**概要**&#x200B;ページで、**製品とサービス**&#x200B;カードから「**Adobe Experience Manager as a Cloud Service**」を選択します。
 
    ![](/help/journey-onboarding/assets/assign-team1.png)
 
-1. 次の図に示すように、インスタンス（開発環境のオーサーインスタンス）に移動して選択します。
+1. インスタンス（開発環境のオーサーインスタンス）に移動して選択します（下図を参照）。
 
    ![](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
 
-1. ユーザーの役割に基づいてCloud Serviceに割り当てる必要がある製品プロファイルとして、AEMのリストが表示されます。
+1. 役割に基づいてユーザーに割り当てる必要がある AEM as a Cloud Service 製品プロファイルのリストが表示されます。
 
    >[!NOTE]
-   >これらについて詳しくは、[AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)を参照してください。
+   >詳しくは、[AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)を参照してください。
 
    ![](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
 
-## AEMユーザーまたはAEM管理者製品プロファイルへのチームメンバーの追加 {#add-team-members}
+## 「AEM ユーザー」または「AEM 管理者」製品プロファイルへのチームメンバーの追加 {#add-team-members}
 
-AEM as aCloud Serviceインスタンスへのアクセス権を付与するには、ユーザーが2つの製品プロファイル`AEM Users`または`AEM Administrators`のいずれかに属している必要があります。
+AEM as a Cloud Service へのアクセス権が付与されるには、インスタンスは「`AEM Users`」または「`AEM Administrators`」のどちらかの製品プロファイルに属している必要があります。
 
 >[!NOTE]
->インスタンスに対する権限を付与されている必要があります。Cloud Managerを管理する権限では不十分です。 詳細情報を参照してください。
+>インスタンスに対する権限を付与される必要があります。Cloud Manager を管理する権限では不十分です。詳細情報を参照してください。
 
-以下の手順に従う必要があるのは、システム管理者で、ビジネスオーナーの役割も果たします。
+以下の手順は、「ビジネスオーナー」の役割も兼務しているシステム管理者が実行する必要があります。
 
-1. Cloud Managerからプログラムに移動し、次に示すように、目的の環境のコンテキストから「**アクセスを管理**」ボタンを選択します。
+1. Cloud Manager のプログラムに移動し、対象となる環境のコンテキストから「**アクセスを管理**」ボタンを選択します（下図を参照）。
 
    ![](/help/journey-onboarding/assets/add-team1.png)
 
-1. 新しいタブで、環境のオーサーインスタンスにアクセスできるAdobe Admin Consoleに移動します。 **AEM Administrators**&#x200B;または&#x200B;**AEM Users**&#x200B;を、この個人が付与する必要がある権限に基づいて選択します。 [AEM as aCloud Service製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)の詳細をご覧ください。
+1. 新しいタブで Adobe Admin Console が表示されます。ここから、環境のオーサーインスタンスにアクセスできます。ユーザーに付与すべき権限に基づいて、「**AEM 管理者**」または「**AEM ユーザー**」を選択します。詳しくは、[AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)を参照してください。
 
    ![](/help/journey-onboarding/assets/add-team2.png)
 
-1. `AEM Administrator`または`AEM User`を選択し、以下に示すように「**ユーザーを追加**」をクリックし、必要な詳細を送信してチームメンバーの追加を完了します。
+1. 「`AEM Administrator`」または「`AEM User`」を選択し、「**ユーザーを追加**」（下図を参照）をクリックして、チームメンバーの追加に必要な詳細を送信します。
 
    ![](/help/journey-onboarding/assets/add-team3.png)
 
-   追加したユーザーは、AEM as a User Authorサービスにアクセスできます。
+   追加したユーザーは、AEM as a Cloud Service のオーサーサービスにアクセスできるようになります。
 
    >[!NOTE]
-   >アクセス権を必要とするチームメンバーの情報を持っている場合は、開発、ステージング、実稼動を含むすべての環境に対して、これらの手順を繰り返します。
+   >アクセスを必要とするチームメンバーの情報があれば、開発、ステージ、実稼動などのすべての環境で、上記の手順を繰り返すことができます。
 
 
-## 次の作業 {#whats-next}
+## 次の手順 {#whats-next}
 
-これで、AEMにCloud Service製品プロファイルとして割り当てたCloud Serviceは、作成者にアクセスする方法と、AEM as a Usitorのページのオーサリングについて理解する方法を学ぶ準備が整いました。 次に、[AEM Users](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)または[Developers and Deployment Manager](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)の学習パスを確認して、パスに従う必要があります。
+これで、AEM as a Cloud Service の製品プロファイルに割り当てたユーザーは、オーサリングサービスにアクセスする方法を学び、AEM as a Cloud Service でのページのオーサリングに慣れることができます。次は、[AEM ユーザーの学習パス](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)または[開発者およびデプロイメントマネージャーの学習パス](/help/journey-onboarding/sysadmin/learning-path-developers-deploymentmanagers.md)のドキュメントを確認して、そのパスに従ってください。
 
 ## その他のリソース {#additional-resources}
 
-* [Admin Console での製品とユーザーアクセスの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#managing-products-and-user-access-in-admin-console)
-* [AEMへのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=en)
-* [ページのオーサリングのクイックスタートガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=en)
+* [Admin Console での製品とユーザーアクセスの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja#managing-products-and-user-access-in-admin-console)
+* [AEM へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=ja)
+* [ページのオーサリングのクイックスタートガイド](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=ja)
