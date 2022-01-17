@@ -3,9 +3,9 @@ title: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノ�
 description: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 feature: Release Information
 source-git-commit: 11910316836b33e886aeba84f89d1b2eebfe7de2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -18,22 +18,22 @@ ht-degree: 61%
 
 ## リリース日 {#release-date}
 
-AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12日です。
+AEM as a Cloud Service 2021.8.0 の Cloud Manager のリリース日は 2021年8月12日（PT）です。
 
 ### 新機能 {#what-is-new}
 
-* Cloud Serviceのお客様は、Cloud Managerでサービスレベル契約(SLA)レポートを表示できるようになりました。 これは今後数ヶ月間徐々に利用可能になる予定です。
-詳しくは、[SLAレポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html)を参照してください。
+* Cloud Service ユーザーは、Cloud Manager でサービスレベル契約（SLA）レポートを表示できるようになりました。これは、今後数か月で段階的に利用可能になる予定です。
+詳しくは、[SLA レポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html?lang=ja)を参照してください。
 
-* IndexTypeと`IndexDamAssetLucene`品質ルールの種類と重大度が変更されました。 現在は、これらは&#x200B;*サーバー性*&#x200B;のブロッカーのバグです。
+* IndexType および `IndexDamAssetLucene` 品質ルールのタイプと重大度が変更されました。これらはどちらも、*重大度*&#x200B;が「ブロッカー」のバグになりました。
 
-* 非同期およびtikaの設定をカバーする新しいOakインデックス品質ルールが導入されました。
+* 新しい Oak インデックス品質ルールが導入されて、非同期設定と Tika 設定に対応するようになりました。
 
-* プログラムごとの最大SSL証明書数を50に増やします。
+* プログラムごとの SSL 証明書の最大数が 50 に増えました。
 
-* ユーザーが Cloud Manager UI を使用して複数のリポジトリを作成および管理できるセルフサービス機能。
+* セルフサービス機能により、ユーザーが Cloud Manager UI を使用して複数のリポジトリーを作成および管理できるようになりました。
 
-* SonarQubeがGitの履歴データを不必要に読み取っていた問題を修正しました。 大規模なコードベースでは、これにより、ビルドパフォーマンスが不必要に低下することがありました。
+* SonarQube が Git 履歴データを不必要に読み取っていました。大規模なコードベースでは、これにより、ビルドパフォーマンスが不必要に低下することがありました。
 
 * パイプラインごとに Maven 依存関係キャッシュを無効にする API が追加されました。
 
@@ -43,6 +43,6 @@ AEM as aCloud Service2021.8.0のCloud Managerのリリース日は2021年8月12�
 
 * 最新のリリースが現在のリリースより前の場合は、更新可能ステータスは表示されるべきではありません。
 
-* 名前が非常に長い新しい組織で、最初のオンボーディングが失敗していました。
+* 名前が非常に長い新規組織で、初回のオンボーディングが失敗していました。
 
 * 何らかの理由でパイプラインが 2 回トリガーされた場合、「*パイプライン実行ステータスを更新できませんでした*」エラーで、いずれかの実行が失敗します。
