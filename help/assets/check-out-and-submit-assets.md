@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,6 +58,6 @@ ht-degree: 98%
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)でのチェックインとチェックアウトについて
+>* [ [!DNL Experience Manager] デスクトップアプリ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#how-app-works2)でのチェックインとチェックアウトについて
 >* [チェックインとチェックアウトについて説明するビデオチュートリアル [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html?lang=ja)
 
