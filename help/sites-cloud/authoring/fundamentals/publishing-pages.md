@@ -3,9 +3,9 @@ title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1769'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで公開できません。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターから[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)でアクセスしたページは公開できません。エディターでは、実際のパスでアクセスしたページにのみ、公開オプションが使用可能です。
 
 ### コンソールからの公開 {#publishing-from-the-console}
 
@@ -224,7 +224,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->アクセスしたページ [エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) エディターで非公開にすることはできません。 エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
+>エディターから[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)でアクセスしたページは非公開にはできません。エディターでは、実際のパスでアクセスしたページにのみ、公開オプションが使用可能です。
 
 ### コンソールから非公開にする {#unpublishing-from-the-console}
 
