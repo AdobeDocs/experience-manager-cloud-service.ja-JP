@@ -3,7 +3,7 @@ title: DNS レコードのステータスの確認
 description: DNS レコードのステータスの確認
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
