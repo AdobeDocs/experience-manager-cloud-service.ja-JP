@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -166,27 +166,27 @@ ht-degree: 83%
 |---|---|
 | Max Inbox Query Size | granite.workflow.inboxQuerySize |
 
-## 顧客が所有するデータストアに対するワークフロー変数の使用 {#using-workflow-variables-customer-datastore}
+## 顧客所有のデータストアに対するワークフロー変数の使用 {#using-workflow-variables-customer-datastore}
 
-ワークフローで処理されたデータは、Adobe提供ストレージ (JCR) に保存されます。 このデータは、本質的に機密性が高い場合があります。 ユーザー定義のメタデータ/データを、Adobeが提供するストレージではなく、独自の管理対象ストレージにすべて保存することができます。 これらのセクションでは、外部ストレージ用にこれらの変数を設定する方法について説明します。
+ワークフローで処理されたデータは、アドビ提供のストレージ（JCR）に保存されます。このデータは、本来、機密性が高い可能性があります。ユーザー定義のメタデータ／データをすべて、アドビ提供のストレージではなく、ユーザー管理のストレージに保存することができます。以下の節では、これらの変数を外部ストレージに設定する方法について説明します。
 
-### メタデータの外部ストレージを使用するモデルを設定 {#set-model-for-external-storage}
+### メタデータの外部ストレージを使用するようにモデルの設定 {#set-model-for-external-storage}
 
-ワークフローモデルのレベルで、モデル（およびそのランタイムインスタンス）にメタデータの外部ストレージが含まれていることを示すフラグが提供されます。 外部ストレージ用にマークされたモデルのワークフローインスタンスに対して、ワークフロー変数は JCR に保持されません。
+ワークフローモデルのレベルでは、モデル（およびそのランタイムインスタンス）にメタデータの外部ストレージが含まれていることを示すフラグが用意されています。外部ストレージ用にマークされたモデルのワークフローインスタンスに対するワークフロー変数は JCR に保持されません。
 
-プロパティ *userMetadataPersistenceEnabled* が *jcr:content ノード* ワークフローモデルの。 このフラグは、ワークフローメタデータに *cq:userMetaDataCustomPersistenceEnabled*.
+*userMetadataPersistenceEnabled* プロパティがワークフローモデルの *jcr:content* ノードに格納されます。このフラグは、ワークフローメタデータに *cq:userMetaDataCustomPersistenceEnabled* として保持されます。
 
-以下の図は、ワークフローにフラグを設定する必要があることを示しています。
+以下の図は、ワークフローにフラグを設定する方法を示しています。
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
 ### 外部ストレージ内のメタデータの API {#apis-for-metadata-external-storage}
 
-変数を外部に保存するには、ワークフローで公開する API を実装する必要があります。
+変数を外部に保存するには、ワークフローで公開している API を実装する必要があります。
 
 UserMetaDataPersistenceContext
 
-以下のサンプルは、API の使用方法を示しています。
+次のサンプルは、API の使用方法を示しています。
 
 ```
 @ProviderType
