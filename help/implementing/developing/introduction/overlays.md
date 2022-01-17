@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service のオーバーレイ
 description: AEM as a Cloud Service は、オーバーレイという原理を利用して、開発者がコンソールおよびその他の機能を拡張し、カスタマイズできるようにします
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Experience Manager as a Cloud Service では、オーバーレイの原則
 
          1:1 コピーは不要です。[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) は、必要な元の定義を相互参照するのに使用されるからです。Sling Resource Merger は、差分メカニズムによってリソースにアクセスおよびマージするためのサービスを提供します。
 
-      * 変更は `/apps` 以下でおこないます。
+      * 変更は `/apps` 以下で行います。
    * メリット
 
       * `/libs` 以下の変更に対する堅牢性が高まります。
@@ -38,7 +38,7 @@ Adobe Experience Manager as a Cloud Service では、オーバーレイの原則
 
 オーバーレイは、コンソールの設定、サイドパネル内にあるアセットブラウザーへの選択カテゴリの作成（ページのオーサリング時に使用）など、多くの変更において推奨される方法です。オーバーレイは、次の理由で必要になります。
 
-* `/libs` ブランチ&#x200B;**で変更をおこなうことは&#x200B;***できません*。
+* `/libs` ブランチ&#x200B;**で変更を行うことは&#x200B;***できません*。
 このブランチは、インスタンスにアップグレードが適用されるたびに変更される可能性が高く、その際に変更内容が失われる場合があるからです。
 
 * オーバーレイにより、変更を 1 箇所に集中させることができます。そのため、必要に応じて変更の追跡、移行、バックアップ、デバッグを実行しやすくなります。
