@@ -1,13 +1,13 @@
 ---
 title: Screens as a Cloud Service への初回ログイン
 description: ここでは、Screens as a Cloud Service を使用するための最初の手順について説明します。
-source-git-commit: 70730784bf58c57f51d7e9a6e17788861a95d726
+exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '204'
 ht-degree: 100%
 
 ---
-
 
 # Screens as a Cloud Service への初回ログイン {#first-time-login-screens-cloud}
 
@@ -24,6 +24,6 @@ Adobe Identity Management System（IMS）組織 ID のプロビジョニング�
 >[!NOTE]
 >ユーザーは AEM Cloud Service 製品プロファイルにアクセスできるので、Adobe ID または Federated ID を使用して AEM にログインできます。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 IMS 組織 ID のプロビジョニングが完了し、Adobe Admin Console のユーザーとして追加されたので、Cloud Manager で、Screens を[新しいプログラム](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md)または[既存のプログラム](/help/screens-cloud/onboarding-screens-cloud/add-on-existing-program-screens-cloud.md)へのアドオンとして追加できます。
