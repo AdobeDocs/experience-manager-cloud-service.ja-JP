@@ -1,13 +1,13 @@
 ---
 title: パイプラインの実行
 description: ここでは、Cloud Manager で Screens as Cloud Service プロジェクトのパイプラインを実行する方法について説明します。
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '320'
 ht-degree: 100%
 
 ---
-
 
 # Cloud Manager での Screens as Cloud Service のパイプラインの実行 {#run-pipeline-screens-cloud}
 
@@ -54,6 +54,6 @@ ht-degree: 100%
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 Cloud Manager でプログラムの環境を設定する方法を学習したら、オンボーディングプロセスの次の手順（[Screens サービスプロバイダー](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)への移動）に進む準備が整いました。
