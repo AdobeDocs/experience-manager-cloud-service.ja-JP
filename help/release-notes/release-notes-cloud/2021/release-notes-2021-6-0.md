@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '1440'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
@@ -46,11 +46,11 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-junecm}
 
-* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。プログラムがプレビューサービスに対して有効になると、製品内で通知されます。詳しくは、[プレビューサービスへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
+* プレビューサービスは、すべてのプログラムに周期的にデプロイされます。顧客は、プログラムがプレビューサービスに対して有効になると、製品内で通知を受けます。詳しくは、[プレビューサービスへのアクセス](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)を参照してください。
 
 * ビルド手順中にダウンロードされた Maven の依存関係は、パイプライン実行から次回の実行までの間にキャッシュされるようになりました。この機能は、今後数週間にわたり、お客様に対して有効になる予定です。
 
-* プログラム名を編集ダイアログで編集できるようになりました。
+* プログラムを編集ダイアログでプログラムの名前を編集できるようになりました。
 
 * プロジェクトの作成時に使用されるデフォルトのブランチ名と、Git 管理ワークフロー経由のデフォルトのプッシュコマンドで使用されるデフォルトのブランチ名が `main` に変更されました。
 
@@ -76,9 +76,9 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * スケジュール手順に無効な値が指定された場合、誤ったエラーメッセージが表示されていました。
 
-* 該当する設定がデプロイされていない場合でも、IP 許可リストの横に緑色の「*アクティブ*」ステータスが表示されることがありました。
+* 該当する設定がデプロイされていない場合でも、IP 許可リストの横に緑色の「*アクティブ*」ステータスが表示される場合がありました。
 
-* 一部のプログラム編集シーケンスでは、実稼動パイプラインを作成または編集できなくなる可能性があります。
+* 一部のプログラム編集シーケンスで実稼動パイプラインを作成または編集できなくなることがありました。
 
 * 一部のプログラム編集シーケンスでは、**概要**&#x200B;ページに、プログラム設定を再実行する際に誤解を招くようなメッセージが表示される場合があります。
 
@@ -207,4 +207,3 @@ AEM Screens as a Cloud Service のリリース日は 2021 年 6 月 24 日です
 ### バグ修正 {#bug-fixes-bpa-latest}
 
 * サポートされていないリポジトリー構造（URS）に関するログエラーを修正しました。
-
