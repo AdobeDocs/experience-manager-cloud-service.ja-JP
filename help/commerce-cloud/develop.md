@@ -9,9 +9,9 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '998'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ CIF アドオンは Sling 機能アーカイブとして提供されます。ソ
 
 以下をローカルにインストールしておく必要があります。
 
-- [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service の SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ja#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/)（3.3.9 以降）
 - [Node.js v10 以降](https://nodejs.org/ja/)
@@ -94,7 +94,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    Authorization: Bearer <Access Token>
    ```
 
-   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
 1. AEM as a Cloud Service SDK を開始します。
 
