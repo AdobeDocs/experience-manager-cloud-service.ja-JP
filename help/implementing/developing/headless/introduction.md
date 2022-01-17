@@ -3,9 +3,9 @@ title: AEM Sites as a Cloud Service 向けヘッドレス開発
 description: コンテンツモデル、コンテンツフラグメント、GraphQL API など、AEM as a Cloud Service の強力なヘッドレス機能が連携する仕組みと、エクスペリエンスあを一元管理して複数のチャネルで提供する方法を説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ AEM as a Cloud Service は、次の 3 つの強力なサービスを提供する
 
 AEM ヘッドレス機能を使い始めるためのリソースは多数用意されています。ユースケースはそれぞれ異なりますが、いずれも AEM ヘッドレス機能の概要を明確に説明ｓしています。
 
-| リソース | 説明 | タイプ | 対象者 | 予測時刻 |
+| リソース | 説明 | タイプ | 対象読者 | 予測時刻 |
 |---|---|---|---|---|
-| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | **AEMを初めて使用するユーザーとヘッドレスユーザー** テクノロジーについては、まず、最初のヘッドレスプロジェクトでの運用を開始することによるヘッドレス理論から、AEMとそのヘッドレス機能に関する包括的な紹介をご覧ください。 | ガイド | デベロッパー向け **AEMとヘッドレスを初めて使用する** | 1 時間 |
-| [ヘッドレスをはじめる前に](/help/implementing/developing/headless/getting-started/introduction.md) | **経験豊富なAEMユーザー向け** AEMの主要なヘッドレス機能の概要が必要なユーザーは、このクイックスタートの概要を確認してください。 | クイックスタート | デベロッパー、管理者 **AEMエクスペリエンス** | 20 分 |
-| [AEM ヘッドレスをはじめる前に：実践チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) | **実践的なアプローチを好み、AEMに精通している場合**&#x200B;このチュートリアルでは、シンプルなヘッドレスプロジェクトの作成に直接取り組みます。 | チュートリアル | デベロッパー向け | 2 時間 |
+| [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md) | **AEM とヘッドレステクノロジーを初めて使用するユーザー**&#x200B;の場合は、まずここから始めて、ヘッドレスの基本概念から初めてのヘッドレスプロジェクトの運用開始まで、AEM とそのヘッドレス機能の概要を包括的に理解してください。 | ガイド | デベロッパー向け&#x200B;**AEM とヘッドレスを初めて使用するユーザー** | 1 時間 |
+| [ヘッドレスをはじめる前に](/help/implementing/developing/headless/getting-started/introduction.md) | **AEM の経験豊富なユーザー**&#x200B;が主な AEM ヘッドレス機能の概要を知りたい場合は、このクイックスタート概要を確認してください。 | クイックスタート | デベロッパー、管理者（**AEM の使用経験あり**） | 20 分 |
+| [AEM ヘッドレスをはじめる前に：実践チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) | **AEM を熟知していて実践的なアプローチを希望する場合は、このチュートリアルでシンプルなヘッドレスプロジェクトの作成に取り組んでください。** | チュートリアル | デベロッパー向け | 2 時間 |
