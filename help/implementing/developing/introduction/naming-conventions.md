@@ -1,17 +1,17 @@
 ---
 title: 命名規則
-description: リポジトリのノードは、Java コンテンツリポジトリの命名規則の対象です
+description: リポジトリのノードは、Java コンテンツリポジトリーの命名規則の対象です
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # 命名規則{#naming-conventions}
 
-リポジトリのノードは、Java コンテンツリポジトリの命名規則の対象です。ただし、AEM によってページノード名に追加の規則が課せられます。
+リポジトリのノードは、Java コンテンツリポジトリーの命名規則の対象です。ただし、AEM によってページノード名に追加の規則が課せられます。
 
 ## ページの命名規則 {#naming-conventions-for-pages}
 
