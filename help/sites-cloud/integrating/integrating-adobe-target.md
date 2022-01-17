@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1035'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 Adobe Experience Cloud に含まれている Adobe Target を使用すると、あらゆるチャネルでターゲット設定と測定を行い、コンテンツの関連性を高めることができます。Adobe Target と AEM as a Cloud Service の統合には、次のものが必要です。
 
 * タッチ操作対応 UI を使用して、AEM as a Cloud Service で Target 設定を作成します（IMS 設定が必要）。
-* [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
+* [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja) の拡張機能として Adobe Target を追加し、設定する方法について説明します。
 
 Adobe Launch は、AEM ページの Analytics と Target（JS ライブラリ／タグ）の両方のクライアントサイドプロパティを管理するために必要です。ただし、「エクスペリエンスのターゲット設定」には、Launch との統合が必要です。エクスペリエンスフラグメントを Target にエクスポートする場合は、Adobe Target 設定と IMS のみが必要です。
 
