@@ -3,9 +3,9 @@ title: Query Builder の述語リファレンス
 description: Query Builder API の述語リファレンスです。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2218'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
