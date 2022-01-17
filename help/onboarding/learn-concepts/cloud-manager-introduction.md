@@ -3,9 +3,9 @@ title: Cloud Manager とは
 description: ここでは、Cloud Manager、Cloud Manager プログラム、環境について説明します。
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ Cloud Manager は、ユーザーが AEM as a Cloud Service をすぐに使い始
 
 Cloud Manager にアクセスするには、次の手順に従います。
 
-1. から Cloud Manager のログインページに直接移動します。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) から Cloud Manager のログインページに直接移動します。
 
    >[!NOTE]
-   >今後の参照用として、Cloud Manager のランディングページに直接移動する際に役立つように、このページにブックマークを付けてください。
+   >今後 Cloud Manager のランディングページに直接移動する際に役立つように、このページをブックマークに追加してください。
 
-1. Cloud Manager の **プログラムと製品** 起動するページ **概要** ページ。
+1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページでプログラムを選択して、**概要**&#x200B;ページを起動します。
 
-さらに、 Adobe Experience Cloudホームページから Cloud Manager のプログラムと製品ページに移動することもできます。 次の手順に従います。
+さらに、Adobe Experience Cloud のホームページから Cloud Manager のプログラムと製品ページに移動することもできます。次の手順に従います。
 
 1. [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) に直接移動し、Adobe ID を使用してログインします。
 
