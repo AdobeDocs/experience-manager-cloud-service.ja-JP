@@ -3,9 +3,9 @@ title: AEM as a Cloud Service の SDK
 description: AEM as a Cloud Service ソフトウェア開発キットの概要
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1179'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
