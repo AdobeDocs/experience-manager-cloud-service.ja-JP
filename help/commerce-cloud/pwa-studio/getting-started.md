@@ -2,15 +2,15 @@
 title: AEM Extension for PWA Studio の概要
 description: PWA Studio で、ヘッドレスの AEM Content and Commerce プロジェクトをデプロイする方法について説明します。
 topics: Commerce
-feature: コマース統合フレームワーク
+feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: 2d5207733a0ad5d88a321826727eb02440765faf
+exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
-source-wordcount: '769'
+source-wordcount: '766'
 ht-degree: 100%
 
 ---
-
 
 # AEM Extension for PWA Studio の概要 {#getting-started-pwa}
 
