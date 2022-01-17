@@ -1,13 +1,13 @@
 ---
 title: カスタム HTTP ヘッダー
 description: カスタム HTTP ヘッダーの設定
-source-git-commit: 81d6c50635813fa106f58b61c5e88560422adc65
+exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '269'
 ht-degree: 100%
 
 ---
-
 
 # カスタム HTTP ヘッダー {#custom-http-headers}
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >開発者は、GraphQL クライアント設定を使用して、カスタム HTTP ヘッダーをいつでも設定できます。
-
 
 ## 設定 {#configuration}
 
