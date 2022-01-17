@@ -3,7 +3,7 @@ title: プログラムとプログラムの種類について
 description: プログラムとプログラムの種類について - Cloud Services
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 7e51fb98c76a5913ef237aca3b66c73a8263f4ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
 ht-degree: 100%
 
