@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 0673aa4f2f0ad2f0a5205bf929de3f26aea0d879
+source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 98%
+source-wordcount: '1840'
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 通信 API は、テンプレート（XFA または PDF）と顧客データ（[XML データ](#form-data)）を組み合わせて、PDF 形式や PS、PCL、DPL、IPL、ZPL 形式などの印刷形式でドキュメントを生成するのに役立ちます。
 
-通常、Designer を使用してテンプレートを作成し、通信 API を使用してテンプレートにデータをマージします。アプリケーションは、出力ドキュメントをネットワークプリンター、ローカルプリンター、またはアーカイブ用のストレージシステムに送信できます。標準ワークフローとカスタムワークフローの例を次に示します。
+通常、テンプレートを作成するには、 [Designer](use-forms-designer.md) コミュニケーション API を使用して、データをテンプレートと結合します。 アプリケーションは、出力ドキュメントをネットワークプリンター、ローカルプリンター、またはアーカイブ用のストレージシステムに送信できます。標準ワークフローとカスタムワークフローの例を次に示します。
 
 ![通信ワークフロー](assets/communicaions-workflow.png)
 
@@ -44,13 +44,13 @@ ht-degree: 98%
 
 通信は、オンデマンドおよびバッチでのドキュメント生成用に HTTP API を提供します。
 
-* **同期 API** は、オンデマンド、低遅延、単一レコードのドキュメント生成シナリオに適しています。これらの API は、ユーザーアクションに基づいたユースケースにより適しています。例えば、ユーザーがフォームへの入力を完了した後にドキュメントを生成するような場合です。
+* **[同期 API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** は、オンデマンド、低遅延、単一レコードのドキュメント生成シナリオに適しています。これらの API は、ユーザーアクションに基づいたユースケースにより適しています。例えば、ユーザーがフォームへの入力を完了した後にドキュメントを生成するような場合です。
 
-* **バッチ API（非同期 API）**&#x200B;は、スケジュール化された、高スループットの、複数のドキュメント生成シナリオに適しています。これらの API は、バッチでドキュメントを生成します。例えば、毎月生成される電話料金、クレジットカード明細、給付計算書などです。
+* **[バッチ API（非同期 API）](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)**&#x200B;は、スケジュール化された、高スループットの、複数のドキュメント生成シナリオに適しています。これらの API は、バッチでドキュメントを生成します。例えば、毎月生成される電話料金、クレジットカード明細、給付計算書などです。
 
 ## オンボーディング 
 
-通信は、Forms as a Cloud Service のユーザー向けのスタンドアロンおよびアドオンモジュールとして利用できます。アクセス権限を要求する場合は、アドビのセールスチームまたはアドビ担当者に問い合わせてください。
+通信は、Forms as a Cloud Service のユーザー向けのスタンドアロンおよびアドオンモジュールとして利用できます。AdobeのセールスチームまたはAdobe担当者に連絡して、アクセス権を要求できます。
 
 お客様の組織で変換サービスを使用できるように設定し、組織の管理者に対して必要な権限を設定します。管理者は、API を使用するためのアクセス権限を、組織内の AEM Forms 開発者（ユーザー）に付与することができます。
 
@@ -143,7 +143,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ### フォームデータ {#form-data}
 
-通信 API は、通常 Designer で作成されるフォームデザインと、XML フォームデータを入力として受け付けます。ドキュメントにデータを入力するには、入力先となるすべてのフォームフィールドの XML フォームデータに XML 要素が存在する必要があります。XML 要素名は、フィールド名と一致する必要があります。XML 要素がフォームフィールドに対応していない場合や、XML 要素名がフィールド名と一致しない場合、XML 要素は無視されます。XML 要素の表示順序を一致させる必要はありません。対応する値で XML 要素が指定される点が重要です。
+通信 API は、通常、 [Designer](use-forms-designer.md) および XML フォームデータを入力として。 ドキュメントにデータを入力するには、入力先となるすべてのフォームフィールドの XML フォームデータに XML 要素が存在する必要があります。XML 要素名は、フィールド名と一致する必要があります。XML 要素がフォームフィールドに対応していない場合や、XML 要素名がフィールド名と一致しない場合、XML 要素は無視されます。XML 要素の表示順序を一致させる必要はありません。対応する値で XML 要素が指定される点が重要です。
 
 次のローン申し込みフォームサンプルについて考えてみましょう。
 
@@ -186,13 +186,13 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 通信 API のレンダリング機能に完全にアクセスするには、XDP ファイルを入力として使用することをお勧めします。場合によっては、PDF ファイルを使用できます。ただし、PDF ファイルを入力として使用する場合は、次のような制限があります。
 
-XFA ストリームを含んでいない PDF ドキュメントは、PostScript、PCL または ZPL としてレンダリングできません。通信 API は、XFA ストリーム（Designer で作成されたフォーム）を使用して PDF ドキュメントをレーザー形式およびラベル形式にレンダリングできます。PDF ドキュメントが署名済み、証明済み、（AEM Forms Reader Extensions サービスを使用して適用された）使用権限を含んでいる、のいずれかの場合、これらの印刷形式にはレンダリングできません。
+XFA ストリームを含んでいない PDF ドキュメントは、PostScript、PCL または ZPL としてレンダリングできません。通信 API は、XFA ストリーム ( つまり、 [Designer](use-forms-designer.md)) をレーザー形式およびラベル形式に変換する必要があります。 PDF ドキュメントが署名済み、証明済み、（AEM Forms Reader Extensions サービスを使用して適用された）使用権限を含んでいる、のいずれかの場合、これらの印刷形式にはレンダリングできません。
 
-&lt;!-* * PDF バージョンやタグ付き PDF などの実行時オプションは、Acrobat フォームではサポートされていません。これらは、XFA ストリームを含む PDF フォームに有効です。ただし、これらのフォームに署名または認証を行うことはできません。
+<!-- Run-time options such as PDF version and tagged PDF are not supported for Acrobat forms. They are valid for PDF forms that contain XFA streams; however, these forms cannot be signed or certified. 
 
-### メールのサポート {#email-support}
+### Email support {#email-support}
 
-メール機能については、Experience Manager ワークフローでメールステップを使用するプロセスを作成できます。ワークフローは、自動化の対象となるビジネスプロセスを表します。-->
+For email functionality, you can create a process in Experience Manager Workflows that uses the Email Step. A workflow represents a business process that you are automating. -->
 
 ### 印刷可能領域 {#printable-areas}
 
@@ -202,10 +202,10 @@ XFA ストリームを含んでいない PDF ドキュメントは、PostScript�
 
 ### スクリプト {#scripts}
 
-通信 API で使用されるフォームデザインには、サーバー上で実行されるスクリプトを含めることができます。フォームデザインに、クライアント上で実行されるスクリプトが含まれていないことを確認します。フォームデザインスクリプトの作成について詳しくは、Designer のヘルプを参照してください。
+通信 API で使用されるフォームデザインには、サーバー上で実行されるスクリプトを含めることができます。フォームデザインに、クライアント上で実行されるスクリプトが含まれていないことを確認します。フォームデザインスクリプトの作成について詳しくは、 [Designer ヘルプ](use-forms-designer.md).
 
-&lt;!-* #### フォントの操作
-フォントを操作する際のドキュメントに関する考慮事項>> -->
+<!-- #### Working with Fonts
+ Document Considerations for Working with Fonts>> -->
 
 ### フォントマッピング {#font-mapping}
 
@@ -250,13 +250,13 @@ Type-1 フォントと OpenType® フォントは、PCL 出力には埋め込ま
 * dpl600.xdc
 
 提供されている XDC ファイルを使用して、印刷ドキュメントを生成したり、要件に応じて変更したりできます。
-&lt;!-* ドキュメントを作成するために、これらのファイルを変更する必要はありません。ただし、ビジネス要件に合わせて変更することはできます。—>
+&lt;!-* ドキュメントを作成するために、これらのファイルを変更する必要はありません。ただし、ビジネス要件に合わせて変更することはできます。-->
 
 これらのファイルは、特定のプリンターの機能（常駐フォント、用紙トレイ、ステープル機能など）をサポートする参照 XDC ファイルです。これらの参照は、デバイスプロファイルを使用したプリンターの設定方法を理解するために提供されています。また、同じ製品ラインの類似プリンターに対応する出発点でもあります。
 
 ### XCI 設定ファイルの操作 {#working-with-xci-files}
 
-通信 API では、XCI 設定ファイルを使用して、出力を単一パネルとするかページ分割するかを制御するといったタスクを実行します。このファイル内の設定は編集できますが、通常、値を変更することはありません。&lt;!-* default.xci ファイルは svcdata\XMLFormService フォルダーにあります。—>
+通信 API では、XCI 設定ファイルを使用して、出力を単一パネルとするかページ分割するかを制御するといったタスクを実行します。このファイル内の設定は編集できますが、通常、値を変更することはありません。<!-- The default.xci file is located in the svcdata\XMLFormService folder. -->
 
 変更した XCI ファイルを通信 API の使用時に渡すことができます。その際は、デフォルトファイルのコピーを作成し、ビジネス要件に合わせて変更する必要がある値のみを変更し、変更した XCI ファイルを使用します。
 
