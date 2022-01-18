@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '885'
 ht-degree: 96%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 96%
 
    * 「**[!UICONTROL 件名]**」ボックスに、共有するアセットの件名を入力します。
    * 必要に応じて、「**[!UICONTROL メッセージ]**」ボックスにメッセージを入力します。
-   * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。デフォルトの有効期限は、リンクを共有した日から 7 日間です。
+   * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。リンクのデフォルトの有効期間は 1 日です。
    * 「**[!UICONTROL 元のファイルのダウンロードを許可]**」チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
 
 1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。共有リンクを含んだ電子メールがユーザーに届きます。

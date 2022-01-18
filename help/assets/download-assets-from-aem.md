@@ -1,14 +1,14 @@
 ---
 title: アセットのダウンロード
 description: ' [!DNL Adobe Experience Manager Assets]  からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。'
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 79%
+source-wordcount: '1196'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 ## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード  {#download-assets}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。小さいファイルは、ユーザーインターフェイスからリアルタイムでダウンロードされます。 [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。
 
 デフォルトでは、Experience Managerは、ダウンロードトリガーの完了時に通知を送信します。 ダウンロード通知が  [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -56,11 +56,11 @@ Asynchronous downloads are triggered in either of the following case:
 
 非同期ダウンロードは、次のいずれかの場合にトリガーされます。
 
-* アセットが 10 個を超える場合
+* 10 個を超えるアセットがある場合
 * ダウンロードサイズが 100 MB を超える場合
 * ダウンロードの準備に 30 秒以上かかる場合
 
-バックエンドで任意のダウンロードが実行される間、ユーザーは引き続き調査をおこない、Experience Managerでさらに作業をおこなうことができます。 ダウンロードプロセスの完了時にユーザーに通知するには、あらかじめ用意されているメカニズムが必要です。 この目的を達成するために、管理者は SMTP サーバーを設定して電子メールサービスを設定できます。 詳しくは、 [メールサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+非同期ダウンロードがバックエンドで実行される間、ユーザーは引き続き調査をおこない、Experience Managerでさらに作業をおこなうことができます。 ダウンロードプロセスの完了時にユーザーに通知するには、あらかじめ用意されているメカニズムが必要です。 この目的を達成するために、管理者は SMTP サーバーを設定して電子メールサービスを設定できます。 詳しくは、 [メールサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 電子メールサービスを設定すると、管理者とユーザーは、ユーザーインターフェイスから電子メール通知をExperience Managerできます。
 
