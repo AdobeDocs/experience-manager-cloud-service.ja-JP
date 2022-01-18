@@ -795,8 +795,7 @@ POST リクエストを使用してクエリを準備した後、HTTP キャッ�
    >
    >例えば、永続的クエリを実行するリクエストの場合と同様に、次のようにします。
    >
-   >
-   ```xml
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 

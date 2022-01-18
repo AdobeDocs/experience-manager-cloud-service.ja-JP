@@ -22,7 +22,6 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
-
 >
 >現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
@@ -148,7 +147,6 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 

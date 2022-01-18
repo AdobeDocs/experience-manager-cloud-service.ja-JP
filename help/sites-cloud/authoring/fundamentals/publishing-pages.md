@@ -136,6 +136,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
       >[!NOTE]
       >
       >公開／非公開を後からキャンセルする場合は、[ワークフローコンソール](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)に移動して、対応するワークフローを終了します。
+
    ![公開を管理でのオプション](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 「**次へ**」をクリックして次に進みます。

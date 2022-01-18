@@ -138,7 +138,6 @@ AEM には&#x200B;**参照**&#x200B;パネルがあります。このパネル�
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
-
 >
 > この `es` 言語コピーは、`en` ノードから 2 レベル離れている（`americas/central-america`）ので、検出されません。
 
