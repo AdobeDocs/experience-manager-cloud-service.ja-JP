@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
+source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 68%
+source-wordcount: '2720'
+ht-degree: 67%
 
 ---
 
@@ -102,6 +102,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 既存のアセットと同じパス（同じ名前と同じ場所）を持つアセットをアップロードできます。ただし、次のオプションを含む警告ダイアログが表示されます。
 
 * 既存アセットの置換：既存のアセットを置き換えると、アセットのメタデータと、既存のアセットに対して以前に行った変更内容（注釈、切り抜きなど）は削除されます。
+
+   >[!NOTE]
+   >
+   >アセットを置き換えるオプションは、アセットがロックされているかチェックアウトされている場合は使用できません。
+
 * 別のバージョンの作成：既存のアセットの新しいバージョンがリポジトリーに作成されます。[!UICONTROL タイムライン]に 2 つのバージョンを表示でき、必要に応じて、以前のバージョンに戻すことができます。
 * 両方を保存：両方のアセットを保存することを選択した場合、新しいアセットの名前が変更されます。
 
