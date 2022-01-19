@@ -1,47 +1,33 @@
 ---
-title: AEM as a Cloud Serviceリリース2021.12.0の移行ツールのリリースノート
-description: AEM as a Cloud Serviceリリース2021.12.0の移行ツールのリリースノート
+title: AEM as a Cloud Serviceリリース 2022.1.0 の移行ツールのリリースノート
+description: AEM as a Cloud Serviceリリース 2022.1.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 19%
+source-wordcount: '157'
+ht-degree: 26%
 
 ---
 
 
-# AEM as a Cloud Serviceリリース2021.12.0の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Serviceリリース 2022.1.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2021.12.0の移行ツールのリリースノートの概要を説明します。
+このページでは、AEM as a Cloud Service 2022.1.0 の移行ツールのリリースノートの概要を説明します。
 
 >[!NOTE]
 >Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
-
-## ベストプラクティスアナライザー {#bpa-release}
-
-### リリース日 {#release-date-bpa}
-
-ベストプラクティスアナライザー v2.1.22 のリリース日は 2021 年 12 月 1 日です。
-
-### 新機能 {#what-is-new-bpa}
-
-* 使用する ACS コモンのバージョンを検出し、レポートする機能。
-* 1 つのグループ内のユーザーとサブグループの数を検出し、レポートする機能。
-* 16MB を超える MongoDB のノードプロパティ値を検出し、レポートする機能。
-
-### バグ修正 {#bug-fixes-bpa}
-
-* 偽陰性を減らすために、基盤コンポーネントの検出を改善しました。
-* AEM Formsのお客様向けに、に関する BPA メッセージ `EMAIL_PDF_SUBMIT_ACTION` AEM as a Cloud Serviceで使用できない問題を修正しました。
 
 
 ## コンテンツ転送ツール {#ctt-release}
 
 ### リリース日 {#release-date-ctt}
 
-コンテンツ転送ツール v1.7.10 のリリース日は 2021 年 12 月 8 日です。
+コンテンツ転送ツール v1.7.18 のリリース日は 2022 年 1 月 18 日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* コンテンツ転送ツールのインジェスト段階に切り替えが追加され、ユーザーが無効にできるようになりました [プリコピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) 取り込み中に 最適な取り込み速度を得るには、小さな移行セットの場合、または最後の取り込み以降に追加された BLOB が少ない場合、取り込み中のプリコピーを無効にする必要があります。
-* ユーザーマッピングが更新され、2,000 人のユーザーを一度に取得できる改善された User Management API を使用するようになり、パフォーマンスが大幅に向上しました。
+* コンテンツ転送ツールの抽出段階に追加された切り替えを使用すると、ユーザーは [プリコピー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) 抽出中に 最適な抽出速度を得るには、小さな移行セットの場合、または最後の抽出以降に BLOB が数個だけ追加された場合は、抽出中のプリコピーを無効にする必要があります。
+
+### バグ修正 {#bug-fixes-ctt}
+
+* 抽出時の実行タイムアウトを減らすために更新されたデフォルト設定。

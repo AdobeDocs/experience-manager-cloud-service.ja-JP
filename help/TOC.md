@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 95e3a8f163c0f66212cfb50b30323f63a2292ce1
+source-git-commit: 7dd57c6e161b7276d3796d64cd37fddc60e7a5b0
 workflow-type: tm+mt
-source-wordcount: '3453'
-ht-degree: 84%
+source-wordcount: '3456'
+ht-degree: 92%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 84%
          + [リリースノート（2020.4.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [リリースノート（2020.3.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
-   + [新機能?](/help/release-notes/what-is-new.md)
+   + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [既知の問題](/help/release-notes/known-issues.md)
    + [廃止される機能および削除された機能](/help/release-notes/deprecated-removed-features.md)
@@ -63,7 +63,7 @@ ht-degree: 84%
    + [プレリリースチャネル](/help/release-notes/prerelease.md)
 + セキュリティ {#security}
    + [AEM as a Cloud Service のセキュリティ](/help/security/home.md)
-   + [AEM as a Cloud Service用のアドバンスドネットワークの設定](/help/security/configuring-advanced-networking.md)
+   + [AEM as a Cloud Service の高度なネットワーク機能の設定](/help/security/configuring-advanced-networking.md)
    + [AEM as a Cloud Service のセキュリティの概要](/help/security/cloud-service-security-overview.md)
    + [AEM as a Cloud Service の IMS サポート](/help/security/ims-support.md)
    + [AEM as a Cloud Service のサイト Cookie サポートポリシー](/help/security/same-site-cookie-support.md)
@@ -99,10 +99,11 @@ ht-degree: 84%
    + [実装段階](/help/journey-migration/implementation.md)
    + [運用開始](/help/journey-migration/go-live.md)
    + [運用開始後](/help/journey-migration/post-go-live.md)
-   + [パートナー向けExperience Manageras a Cloud Serviceの移行ガイド](/help/journey-migration/getting-started-partners.md)
+   + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + 移行ツールのリリースノート {#release-notes-migration-tools}
-      + [最新のリリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [最新のリリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021 年 {#2021}
+         + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
@@ -122,7 +123,7 @@ ht-degree: 84%
          + [概要](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
-         + [コンテンツ転送ツールの概要](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [コンテンツ転送ツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -154,11 +155,11 @@ ht-degree: 84%
          + [インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + ヘッドレスコンテンツ作成者ジャーニー {#headless-journey}
-         + [AEMヘッドレスコンテンツ作成者ジャーニー — 概要](/help/journey-headless/author/overview.md)
-         + [AEMを使用したヘッドレス向けのオーサリング — はじめに](/help/journey-headless/author/introduction.md)
-         + [AEMを使用したヘッドレス向けのオーサリングの基本](/help/journey-headless/author/basics.md)
-         + [コンテンツフラグメントでの参照の使用について説明します](/help/journey-headless/author/references.md)
-         + [コンテンツフラグメントのメタデータの定義とタグ付けについて説明します。](/help/journey-headless/author/metadata-tagging.md)
+         + [AEM ヘッドレスコンテンツ作成者ジャーニー - 概要](/help/journey-headless/author/overview.md)
+         + [AEM でのヘッドレス向けオーサリング - 概要](/help/journey-headless/author/introduction.md)
+         + [AEM を使用したヘッドレスのオーサリングの基本](/help/journey-headless/author/basics.md)
+         + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
+         + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
       + オーサリングの基本事項 {#fundamentals}
          + [環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [ページ注釈の追加](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -241,21 +242,21 @@ ht-degree: 84%
             + [トラブルシューティングと FAQ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 翻訳 {#translation}
             + サイト翻訳ジャーニー {#sites}
-               + [AEMでのサイト翻訳について](/help/journey-sites/translation/overview.md)
-               + [AEMサイト翻訳の概要](/help/journey-sites/translation/getting-started.md)
-               + [サイトのコンテンツとAEMでの翻訳方法について説明します](/help/journey-sites/translation/learn-about.md)
+               + [AEM でのサイト翻訳について](/help/journey-sites/translation/overview.md)
+               + [AEM Sites 翻訳の基本を学ぶ](/help/journey-sites/translation/getting-started.md)
+               + [サイトコンテンツの概要と AEM での翻訳方法について](/help/journey-sites/translation/learn-about.md)
                + [翻訳コネクタの設定](/help/journey-sites/translation/configure-connector.md)
                + [翻訳ルールの設定](/help/journey-sites/translation/translation-rules.md)
-               + [コンテンツを翻訳](/help/journey-sites/translation/translate-content.md)
-               + [翻訳済みコンテンツを公開](/help/journey-sites/translation/publish-content.md)
+               + [コンテンツの翻訳](/help/journey-sites/translation/translate-content.md)
+               + [翻訳済みコンテンツの公開](/help/journey-sites/translation/publish-content.md)
             + ヘッドレス翻訳ジャーニー {#headless}
-               + [AEMでのヘッドレス翻訳の理解](/help/journey-headless/translation/overview.md)
-               + [AEMヘッドレス翻訳の概要](/help/journey-headless/translation/getting-started.md)
-               + [ヘッドレスコンテンツとAEMでの翻訳方法について説明します](/help/journey-headless/translation/learn-about.md)
+               + [AEM でのヘッドレス翻訳について](/help/journey-headless/translation/overview.md)
+               + [AEM ヘッドレス翻訳の基本を学ぶ](/help/journey-headless/translation/getting-started.md)
+               + [ヘッドレスコンテンツの概要と AEM での翻訳方法について](/help/journey-headless/translation/learn-about.md)
                + [翻訳コネクタの設定](/help/journey-headless/translation/configure-connector.md)
                + [翻訳ルールの設定](/help/journey-headless/translation/translation-rules.md)
-               + [コンテンツを翻訳](/help/journey-headless/translation/translate-content.md)
-               + [翻訳済みコンテンツを公開](/help/journey-headless/translation/publish-content.md)
+               + [コンテンツの翻訳](/help/journey-headless/translation/translate-content.md)
+               + [翻訳済みコンテンツの公開](/help/journey-headless/translation/publish-content.md)
             + [多言語サイトのコンテンツの翻訳](/help/sites-cloud/administering/translation/overview.md)
             + [翻訳するコンテンツの準備](/help/sites-cloud/administering/translation/preparation.md)
             + [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -316,7 +317,7 @@ ht-degree: 84%
       + [コンテンツフラグメントに対するリモート GraphQL クエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
       + [GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
-      + [配置専用のレンディションを生成](/help/assets/configure-fpo-renditions.md)
+      + [プレースメント専用レンディションの生成](/help/assets/configure-fpo-renditions.md)
       + [アセットレポート](/help/assets/asset-reports.md)
       + [カスケードメタデータ](/help/assets/cascading-metadata.md)
       + [XMP メタデータ](/help/assets/xmp-metadata.md)
@@ -485,7 +486,7 @@ ht-degree: 84%
       + [Screens サービスプロバイダーへの移動](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md)
       + [Screens コンテンツプロバイダーの使用](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Screens ビデオレンディションの作成](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
-      + [Screens 用の Dispatcher の設定as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
+      + [Screens as a Cloud Service の Dispatcher の設定](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
    + コンテンツの作成 {#create-content}
       + [Screens コンテンツプロバイダーでのプロジェクトの作成と管理](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Screens コンテンツプロバイダーでのチャネルの作成と管理](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -502,7 +503,7 @@ ht-degree: 84%
       + [REST API](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [コンポーネントの作成](/help/screens-cloud/developing/creating-components.md)
       + [Screens 用カスタムコンポーネントの開発as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
-   + [Screensas a Cloud ServiceFAQ](/help/screens-cloud/screens-cloud-faqs.md)
+   + [Screens as a Cloud Service の FAQ](/help/screens-cloud/screens-cloud-faqs.md)
 + AEM Content and Commerce {#content-and-commerce}
    + [AEM Content and Commerce](/help/commerce-cloud/home.md)
    + [AEM Content and Commerce as a Cloud Service の主な変更点](/help/commerce-cloud/changes.md)
@@ -590,7 +591,7 @@ ht-degree: 84%
          + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
-      + Cloud Manager CI/CD パイプライン {#cicd-pipelines}
+      + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
          + [はじめに](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + 実稼動パイプライン {#production-pipelines}
             + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
@@ -691,15 +692,15 @@ ht-degree: 84%
                + [AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](/help/journey-headless/developer/path-to-first-experience.md)
                + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](/help/journey-headless/developer/model-your-content.md)
                + [AEM Delivery APIを使用してコンテンツにアクセスする方法](/help/journey-headless/developer/access-your-content.md)
-               + [AEM Assets API を使用したコンテンツの更新方法](/help/journey-headless/developer/update-your-content.md)
+               + [AEM Assets API を使用してコンテンツを更新する方法](/help/journey-headless/developer/update-your-content.md)
                + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](/help/journey-headless/developer/put-it-all-together.md)
                + [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md)
                + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](/help/journey-headless/developer/create-spa.md)
-            + AEMヘッドレスコンテンツアーキテクトジャーニー {#architect}
-               + [AEMヘッドレスコンテンツアーキテクトジャーニーの概要](/help/journey-headless/architect/overview.md)
-               + [AEMを使用したヘッドレス向けのコンテンツモデリング — はじめに](/help/journey-headless/architect/introduction.md)
-               + [AEMを使用したヘッドレス向けコンテンツモデリングの基本について説明します。](/help/journey-headless/architect/basics.md)
-               + [AEMでのコンテンツフラグメントモデルの作成について説明します。](/help/journey-headless/architect/model-structure.md)
+            + AEM ヘッドレスコンテンツアーキテクトジャーニー {#architect}
+               + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](/help/journey-headless/architect/overview.md)
+               + [AEM でのヘッドレス向けコンテンツモデリング - 概要](/help/journey-headless/architect/introduction.md)
+               + [AEM でのヘッドレス向けコンテンツモデリングの基本について](/help/journey-headless/architect/basics.md)
+               + [AEM でのコンテンツフラグメントモデルの作成について](/help/journey-headless/architect/model-structure.md)
          + ヘッドレスをはじめる前に {#getting-started}
             + [はじめに](/help/implementing/developing/headless/getting-started/introduction.md)
             + [設定の作成](/help/implementing/developing/headless/getting-started/create-configuration.md)
@@ -765,7 +766,7 @@ ht-degree: 84%
       + [ContextHub でのセグメント化の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=ja)
    + AEM as a Cloud Service の設定と拡張 {#configuring-and-extending}
       + App Builder を使用したAEMの拡張{#app-builder}
-         + [Extending AEM using Extending Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
+         + [Adobe Developer App Builder を使用した AEM の拡張](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder の概要](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe開発者コンソール](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
          + [SDK および CLI](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
@@ -814,8 +815,8 @@ ht-degree: 84%
    + [メンテナンスタスク](/help/operations/maintenance.md)
    + [バックアップと復元](/help/operations/backup.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
-+ Compliance {#compliance}
-   + [AEM as a Cloud Serviceのコンプライアンス](/help/compliance/home.md)
++ コンプライアンス {#compliance}
+   + [AEM as a Cloud Service でのコンプライアンス](/help/compliance/home.md)
    + データのプライバシーと保護への対応 {#data-privacy}
       + [データ保護およびデータプライバシーに関する規制に対する AEM の対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
       + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
