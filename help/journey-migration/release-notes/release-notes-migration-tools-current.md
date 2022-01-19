@@ -2,10 +2,10 @@
 title: AEM as a Cloud Serviceリリース 2022.1.0 の移行ツールのリリースノート
 description: AEM as a Cloud Serviceリリース 2022.1.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 26%
+source-wordcount: '134'
+ht-degree: 14%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 26%
 # AEM as a Cloud Serviceリリース 2022.1.0 の移行ツールのリリースノート {#release-notes}
 
 このページでは、AEM as a Cloud Service 2022.1.0 の移行ツールのリリースノートの概要を説明します。
-
->[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
-
 
 ## コンテンツ転送ツール {#ctt-release}
 
