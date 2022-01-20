@@ -2,10 +2,10 @@
 title: プロジェクト設定の詳細
 description: プロジェクト設定の詳細 - Cloud Services
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: b9bb9e7b63a53ea1a6ce1e126285bb84c8351083
-workflow-type: ht
-source-wordcount: '845'
-ht-degree: 100%
+source-git-commit: 4219c8ce30a0f1cd44bbf8e8de46d6be28a1ddf3
+workflow-type: tm+mt
+source-wordcount: '1254'
+ht-degree: 67%
 
 ---
 
@@ -258,3 +258,37 @@ content-package-maven-plugin では、同じようになります。
             </configuration>
         </plugin>
 ```
+
+## アーティファクトの再利用を構築 {#build-artifact-reuse}
+
+多くの場合、同じコードが複数のAEM環境にデプロイされます。 可能な限り、Cloud Manager は、複数のフルスタックパイプライン実行で同じ Git コミットが使用されていることを検出した場合に、コードベースを再構築しないようにします。
+
+実行が開始されると、ブランチパイプラインの現在のHEADコミットが抽出されます。 コミットハッシュは、UI と API で表示できます。 ビルド手順が正常に完了すると、結果のアーティファクトはそのコミットハッシュに基づいて保存され、後続のパイプライン実行で再利用できます。 再利用が発生すると、ビルドとコードの品質ステップが、元の実行の結果に効果的に置き換えられます。 ビルドステップのログファイルには、アーティファクトと、最初にアーティファクトのビルドに使用された実行情報が一覧表示されます。
+
+ログ出力の例を次に示します。
+
+```shell
+The following build artifacts were reused from the prior execution 4 of pipeline 1 which used commit f6ac5e6943ba8bce8804086241ba28bd94909aef:
+build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
+build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
+```
+
+コード品質ステップのログには、類似した情報が含まれます。
+
+### オプトアウト {#opting-out}
+
+必要に応じて、パイプライン変数を設定して、特定のパイプラインの再利用動作を無効にできます `CM_DISABLE_BUILD_REUSE` から `true`. この変数を設定した場合、コミットハッシュは抽出され、結果のアーティファクトは後で使用するために保存されますが、以前に保存されたアーティファクトは再利用されません。 この動作を理解するには、次のシナリオについて考えてみましょう。
+
+1. 新しいパイプラインが作成されます。
+1. パイプラインが実行され ( 実行#1)、現在のHEADコミットが `becdddb`. 実行が成功し、結果のアーティファクトが保存されます。
+1. この `CM_DISABLE_BUILD_REUSE` 変数が設定されている。
+1. コードを変更せずにパイプラインが再実行されます。 に関連付けられたアーティファクトが保存されていますが、 `becdddb`の場合、 `CM_DISABLE_BUILD_REUSE` 変数を使用します。
+1. コードが変更され、パイプラインが実行されます。 HEADコミットは `f6ac5e6`. 実行が成功し、結果のアーティファクトが保存されます。
+1. この `CM_DISABLE_BUILD_REUSE` 変数が削除されます。
+1. コードを変更せずに、パイプラインが再実行されます。 次に関連付けられた保管済みアーティファクトがあるので、 `f6ac5e6`の場合、それらのアーティファクトは再利用されます。
+
+### 注意事項 {#caveats}
+
+* [Maven バージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md) 実稼働パイプラインでのみ、プロジェクトのバージョンを置き換えます。 したがって、開発デプロイ実行と実稼動パイプライン実行の両方で同じコミットが使用され、開発デプロイパイプラインが最初に実行される場合、バージョンは変更されることなくステージング環境と実稼動環境にデプロイされます。 ただし、この場合、タグは引き続き作成されます。
+* 保存されたアーティファクトの取得が成功しなかった場合、ビルドステップは、アーティファクトが保存されていない場合と同様に実行されます。
+* 以外のパイプライン変数 `CM_DISABLE_BUILD_REUSE` 以前に作成したビルドアーティファクトを Cloud Manager で再利用する場合、は考慮されません。

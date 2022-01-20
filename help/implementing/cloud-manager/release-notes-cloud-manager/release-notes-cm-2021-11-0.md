@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Serviceリリース2021.11.0の Cloud Manager のリリースノートです
 feature: Release Information
-source-git-commit: d6aa3097e558d4e78f20493f214167db57f1a013
+source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 79%
+source-wordcount: '458'
+ht-degree: 67%
 
 ---
 
@@ -14,13 +14,15 @@ ht-degree: 79%
 このページでは、AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノートの概要を説明しています。
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
+>
+>参照： [このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) (Adobe Experience Manager as a Cloud Serviceの最新のリリースノート )
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 16 日（PT）に予定されています。
+AEM as a Cloud Service 2021.11.0の Cloud Manager のリリース日は 2021 年 11 月 4 日です。
+次回のリリースは 2021 年 12 月 16 日に予定されています。
 
-### 新機能 {#what-is-new}
+## 新機能 {#what-is-new}
 
 * ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
 
@@ -49,7 +51,7 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 
 * 品質問題の CSV ファイルに、品質問題ごとのタイムスタンプが含まれるようになりました。
 
-### バグ修正 {#bug-fixes}
+## バグ修正 {#bug-fixes}
 
 * 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
 
@@ -60,4 +62,3 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 * リポジトリーの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
 
 * まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
-
