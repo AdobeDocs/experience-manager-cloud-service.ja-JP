@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
-workflow-type: ht
-source-wordcount: '998'
-ht-degree: 100%
+source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    Authorization: Bearer <Access Token>
    ```
 
-   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
+   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
 
 1. AEM as a Cloud Service SDK を開始します。
 
@@ -114,23 +114,20 @@ CIF を使い始めるために事前に設定されたプロジェクトをブ�
 
 >[!TIP]
 >
->プロジェクトを生成するには、[AEM プロジェクトアーキタイプ 24 以降](https://github.com/adobe/aem-project-archetype/releases)を使用します。
+>常に最新バージョンの [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/releases) プロジェクトを生成します。
 
 AEM プロジェクトの生成方法については、AEM プロジェクトのアーキタイプの「[使用手順](https://github.com/adobe/aem-project-archetype#usage)」を参照してください。プロジェクトに CIF を含めるには、`includeCommerce` オプションを使用します。
 
 次に例を示します。
 
 ```bash
-mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=24 \
- -D aemVersion=cloud \
+ -D archetypeVersion=35 \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
- -D frontendModule=general \
- -D includeExamples=n \
  -D includeCommerce=y
 ```
 
