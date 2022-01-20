@@ -4,8 +4,8 @@ description: Dispatcher ツールを使用した検証とデバッグ（レガ�
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+workflow-type: tm+mt
 source-wordcount: '2304'
 ht-degree: 100%
 
@@ -347,7 +347,7 @@ Cloud manager validator 2.0.xx
 >[!NOTE]
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
-このフェーズは、`validator full -d out src/dispatcher` を使用して独立して実行することもできます。このコマンドは、コマンド `bin/docker_run.sh out host.internal.docker:4503 8080` に必要な out ディレクトリを生成します。
+このフェーズは、`validator full -d out src/dispatcher` を使用して独立して実行することもできます。このコマンドは、コマンド `bin/docker_run.sh out host.docker.internal:4503 8080` に必要な out ディレクトリを生成します。
 
 Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager のイメージのビルドステップのエラーログに記録されます。
 

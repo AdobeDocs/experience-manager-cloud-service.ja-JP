@@ -3,7 +3,7 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
+source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 99%
@@ -348,7 +348,7 @@ Cloud manager validator 2.0.xx
 >
 >Windows ユーザーは、Docker をサポートする Windows 10 Professional またはその他のディストリビューションを使用する必要があります。これは、ローカルコンピューターで Dispatcher を実行およびデバッグする場合に必要な前提条件です。
 
-このフェーズは、`bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080` を使用して独立に実行することもできます。
+このフェーズは、`bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080` を使用して独立に実行することもできます。
 
 Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の「イメージのビルド」ステップのエラーログに記録されます。
 
