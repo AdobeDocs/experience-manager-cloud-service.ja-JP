@@ -3,7 +3,7 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 3b69ce9236254301127dfe93dba899b565c5c642
+source-git-commit: f4dab394504676a12dea55229f2fa56efa4a0dc3
 workflow-type: tm+mt
 source-wordcount: '3952'
 ht-degree: 99%
@@ -586,7 +586,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 * ネストされたフラグメントに対するクエリ時のフォールバック：
 
-   * ネストされたフラグメントに特定のバリエーションが存在しない場合、 **マスター** バリエーションが返されます。
+   * 要求されたバリエーションがネストされたフラグメントに存在しない場合、 **マスター** バリエーションが返されます。
 
 ## 永続的クエリ（キャッシュ） {#persisted-queries-caching}
 
