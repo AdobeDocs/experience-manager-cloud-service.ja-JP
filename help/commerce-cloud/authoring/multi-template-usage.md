@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: c70adb5ea781057b478b529774c4e51786e6c9fa
+source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 91%
+source-wordcount: '187'
+ht-degree: 71%
 
 ---
 
@@ -27,8 +27,11 @@ ht-degree: 91%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
+特定の製品ページは、sku または製品のカテゴリで選択できます。 後者は、使用可能なデフォルトの製品ページの URL 形式の一部でのみサポートされます。製品の URL でカテゴリ情報をエンコードする必要があるからです。
+
 このトピックの詳細については、次のリソースを参照してください。
 
+- [高度な URL 設定](../configuring/advanced-url-configuration.md)
 - [AEM CIF コアコンポーネント - マルチカタログページの設定](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
 
 ## 関連リソース {#related}
