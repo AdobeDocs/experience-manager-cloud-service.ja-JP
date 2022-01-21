@@ -2,8 +2,8 @@
 title: コンソールのキーボードショートカット
 description: これらのキーボードショートカットを使用することで、オーサリング時の時間を節約できます
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
+workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 | コンソール | `?` | キーボードショートカットヘルプ |
 |  | `/` | [検索](/help/sites-cloud/authoring/getting-started/search.md)を呼び出す |
 |  | `Alt+`&lt;`Number`> | 表示する[レールセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)オプションを切り替える |
-|  | &grave; | レールを非表示 |
+|  | ``` ` ``` | レールを非表示 |
 |  | `e` | 編集 |
 |  | `p` | プロパティ |
 |  | `m` | 移動 |
