@@ -2,14 +2,20 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
 # AEM as a Cloud Service の開発ガイドライン {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="AEM as a Cloud Service の開発ガイドライン"
+>abstract="このタブでは、AEM as a Cloud Serviceでのコーディングに関して推奨されるベストプラクティスを確認できます。 コーディングは、AMS やオンプレミスデプロイメントとは大きく異なる場合があります。"
+>additional-url="https://video.tv.adobe.com/v/330555/" text="パッケージ構造のデモ"
 
 AEM as a Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。インスタンスはいつ停止するかわからないので、コードには特に回復力が必要です。
 
