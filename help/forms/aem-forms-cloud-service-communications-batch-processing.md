@@ -2,10 +2,10 @@
 title: Experience Manager  [!DNL Forms]  as a Cloud Service の通信バッチ処理
 description: ブランド志向のパーソナライズされたコミュニケーションを作成する方法は？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
-ht-degree: 80%
+source-wordcount: '2297'
+ht-degree: 99%
 
 ---
 
@@ -38,11 +38,11 @@ ht-degree: 80%
 
 ### バッチ操作のコンポーネント {#components-of-a-batch-operations}
 
-**クラウド設定**：Experience Manager クラウド設定は、顧客が所有する Microsoft Azure ストレージに Experience Manager インスタンスを接続する際に役立ちます。顧客が所有するMicrosoft Azure アカウントの資格情報を指定して、そのアカウントに接続できます。
+**クラウド設定**：Experience Manager クラウド設定は、顧客が所有する Microsoft Azure ストレージに Experience Manager インスタンスを接続する際に役立ちます。顧客が所有する Microsoft Azure アカウントの資格情報を指定して、そのアカウントに接続できます。
 
-**バッチデータストア設定（USC）**：バッチデータ設定は、バッチ API 用の BLOB ストレージの特定のインスタンスを設定する場合に役立ちます。顧客が所有するMicrosoft Azure BLOB ストレージ内で入力および出力の場所を指定できます。
+**バッチデータストア設定（USC）**：バッチデータ設定は、バッチ API 用の BLOB ストレージの特定のインスタンスを設定する場合に役立ちます。顧客が所有する Microsoft Azure BLOB ストレージ内で入力および出力の場所を指定できます。
 
-**バッチ API**:バッチ設定を作成し、これらの設定に基づいてバッチを実行して、PDFまたは XDP テンプレートをデータと結合し、PDF、PS、PCL、DPL、IPL、ZPL 形式の出力を生成するバッチ操作を作成および実行できます。 Forms as a Cloud Service の通信には、作成、読み取り、更新および削除操作用のバッチ API が用意されています。
+**バッチ API**：バッチ設定を作成し、この設定に基づいてバッチを実行して、PDF または XDP テンプレートをデータと結合し、PDF、PS、PCL、DPL、IPL、ZPL 形式の出力を生成するバッチ操作を作成および実行できます。Forms as a Cloud Service の通信には、作成、読み取り、更新および削除操作用のバッチ API が用意されています。
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -54,7 +54,7 @@ ht-degree: 80%
 
 バッチ操作を使用すると、複数のドキュメントをスケジュールされた間隔で生成できます。
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 バッチ操作を使用してドキュメントを生成する方法については、ビデオを参照するか、以下の手順を実行してください。ビデオで使用されている API リファレンスドキュメントは、.yaml 形式で入手できます。[バッチ API](assets/batch-api.yaml) ファイルをダウンロードし、Postman にアップロードして API の機能を確認し、ビデオの手順に従います。
 
@@ -81,7 +81,7 @@ ht-degree: 80%
 Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/ja-jp/azure/vs-azure-tools-storage-explorer-blobs)を作成し、コンテナ内の[フォルダー](https://docs.microsoft.com/ja-jp/azure/storage/blobs/storage-quickstart-blobs-portal)に[顧客データ（XML）をアップロード](https://docs.microsoft.com/ja-jp/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)します。
 >[!NOTE]
 >
->入力フォルダーを自動的に消去したり、出力フォルダーのコンテンツをスケジュールされた間隔で別の場所に移動したりするように、Microsoft Azure ストレージを設定できます。 ただし、フォルダーを参照するバッチ操作がまだ実行中の場合に、フォルダーがクリーンアップされないようにしてください。
+>Microsoft Azure ストレージを設定して、スケジュールされた間隔で、入力フォルダーを自動的に消去したり、出力フォルダーのコンテンツを別の場所に移動したりできます。ただし、フォルダーを参照するバッチ操作がまだ実行中の場合に、フォルダーが消去されないようにしてください。
 
 ### クラウド設定の作成 {#create-a-cloud-configuration}
 
@@ -92,7 +92,7 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 1. サービスに接続するための設定名と資格情報を指定します。[Microsoft Azure ストレージポータルからこれらの資格情報を取得](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)できます。
 1. 「作成」をクリックします。
 
-これで、Experience ManagerインスタンスがMicrosoft Azure Storage に接続し、必要に応じてそれを使用してコンテンツを保存および読み取る準備が整いました。
+これで、Experience Manager インスタンスを Microsoft Azure ストレージに接続し、必要に応じてコンテンツの保存と読み取りに使用する準備が整いました。
 
 ### バッチデータストア設定の作成 {#create-batch-data-store-configuration}
 
@@ -100,11 +100,11 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 設定を作成するには：
 
-1. ツール／フォーム／バッチ出力 - 統合ストレージコネクタに移動します。
+1. ツール/Forms/統合ストレージコネクタに移動します。
 1. 設定をホストするフォルダーを開き、「作成」をクリックします。グローバルフォルダーを使用するか、フォルダーを作成します。
 1. 設定のタイトルと名前を指定します。ストレージで、「Microsoft Azure ストレージ」を選択します。
 1. 「ストレージ設定のパス」で、顧客が所有する Azure ストレージアカウントの資格情報を含むクラウド設定を参照して選択します。
-1. [ ソースフォルダ ] で、Azure ストレージコンテナの名前とレコードを含むフォルダを指定します。
+1. ソースフォルダーで、Azure ストレージコンテナの名前とレコードを含むフォルダーを指定します。
 1. 出力先フォルダーで、Azure ストレージコンテナのパスと、生成されたドキュメントを保存するフォルダーを指定します。
 1. 「作成」をクリックします。
 
@@ -121,7 +121,7 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 ## バッチ API を使用したドキュメントの生成 {#use-batch-API-to-generate-documents}
 
-バッチ API を使用するには、バッチ設定を作成し、その設定に基づいて実行を実行します。 API ドキュメントには、バッチを作成および実行するための API、対応するパラメーター、考えられるエラーに関する情報が記載されています。[API 定義ファイル](assets/batch-api.yaml)をダウンロードし、[Postman](https://go.postman.co/home) または類似のソフトウェアにアップロードして、バッチ操作を作成および実行するための API をテストできます。
+バッチ API を使用するには、バッチ設定を作成し、その設定に基づいてバッチを実行します。API ドキュメントには、バッチを作成および実行するための API、対応するパラメーター、考えられるエラーに関する情報が記載されています。[API 定義ファイル](assets/batch-api.yaml)をダウンロードし、[Postman](https://go.postman.co/home) または類似のソフトウェアにアップロードして、バッチ操作を作成および実行するための API をテストできます。
 
 ### バッチの作成 {#create-a-batch}
 
@@ -130,11 +130,11 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 * **configName**：バッチの一意の名前を指定します。例：`wknd-job`
 * **dataSourceConfigUri**：バッチデータストア設定の場所を指定します。設定の相対パスまたは絶対パスを指定できます。例：`/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**：出力形式として PDF または PRINT を指定します。PRINT 出力タイプを使用する場合は、 `printedOutputOptionsList` プロパティに、少なくとも 1 つの印刷オプションを指定します。 印刷オプションはレンダリングタイプによって識別されるので、現在のところ、同じレンダリングタイプを持つ複数の印刷オプションは許可されていません。 サポートされる形式は、PS、PCL、DPL、IPL および ZPL です。
+* **outputTypes**：出力形式として PDF または PRINT を指定します。PRINT 出力タイプを使用する場合は、`printedOutputOptionsList` プロパティに、少なくとも 1 つの印刷オプションを指定します。印刷オプションはレンダリングタイプによって識別されるので、現在のところ、同じレンダリングタイプを持つ複数の印刷オプションは許可されていません。サポートされる形式は、PS、PCL、DPL、IPL および ZPL です。
 
 * **テンプレート**：テンプレートの絶対パスまたは相対パスを指定します。例：`crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
-相対パスを指定する場合は、コンテンツルートも指定します。 コンテンツルートの詳細については、 API ドキュメントを参照してください。
+相対パスを指定する場合は、コンテンツルートも指定します。コンテンツルートの詳細については、 API ドキュメントを参照してください。
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
@@ -152,7 +152,7 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 バッチステータスを取得するには、`GET /config /[configName]/execution/[execution-identifier]` を使用します。実行識別子は、バッチ実行リクエストに対する HTTP 応答のヘッダーに含まれます。例えば、次の画像は、バッチジョブの実行識別子を示しています。
 
-ステータスリクエストの応答には、ステータスセクションが含まれます。バッチジョブのステータス、既にパイプラインに存在するレコードの数（既に読み取られ、処理中）、各 outputType/renderType のステータス（処理中の項目の数、成功した項目、失敗した項目の数）に関する詳細が表示されます。 Status には、バッチジョブの開始と終了の時間、およびエラーに関する情報（存在する場合）も含まれます。 終了時間は、バッチ実行が実際に完了するまで —1 です。
+ステータスリクエストの応答には、ステータスセクションが含まれます。バッチジョブのステータス、既にパイプラインに存在する（既に読み取られ、処理中の）レコード数、各 outputType／renderType のステータス (処理中、成功、失敗した項目の数) に関する詳細が提供されます。ステータスには、バッチジョブの開始時刻と終了時刻、およびエラーに関する情報（存在する場合）も含まれます。終了時刻は、バッチ実行が実際に完了する時刻 -1 です。
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 ジョブの完了時に、生成されたドキュメントがバッチデータストア設定で指定した出力先にある `success` フォルダーに保存されます。エラーが発生した場合、サービスは `failure` フォルダーを作成します。エラーのタイプと理由に関する情報が提供されます。
 
-次の例を参考にして説明します。入力データファイルがあるとします `record1.xml` と 2 つの出力タイプ `PDF` および `PCL`. 次に、宛先の場所に 2 つのサブフォルダーが含まれます `pdf` および `pcl`（出力タイプごとに 1 つ） PDFの生成が成功し、 `pdf` サブフォルダーに `success` 次に、実際に生成されたフォルダードキュメントを含むPDFー `record1.pdf`. PCL の生成に失敗し、 `pcl` サブフォルダーに `failure` 次にエラーファイルを含むサブフォルダー `record1.error.txt` エラーの詳細を含む さらに、宛先の場所には、 `__tmp__` ：バッチ実行時に必要な特定のファイルを格納します。 宛先フォルダーを参照するアクティブなバッチ実行がない場合は、このフォルダーを削除できます。
+次の例を参考にして説明します。入力データファイル `record1.xml` と 2 つの出力タイプ `PDF` と `PCL` があるとします。次に、宛先の場所には 2 つのサブフォルダー `pdf` と `pcl`（出力タイプごとに 1 つ）が含まれます。PDF の生成が成功したとすると、`pdf` サブフォルダーに `success` サブフォルダーが含まれ、そのサブフォルダーには実際に生成された PDF ドキュメント `record1.pdf` が含まれます。PCL の生成が失敗したとすると、`pcl` サブフォルダーに `failure` サブフォルダーが含まれ、そのサブフォルダーにはエラーファイル `record1.error.txt` が含まれます。このエラーファイルにはエラーの詳細が含まれます。さらに、宛先の場所には `__tmp__` という一時フォルダーが含まれ、バッチ実行時に必要な特定のファイルを格納します。宛先フォルダーを参照するアクティブなバッチ実行がない場合は、このフォルダーを削除できます。
 
 >[!NOTE]
 >
