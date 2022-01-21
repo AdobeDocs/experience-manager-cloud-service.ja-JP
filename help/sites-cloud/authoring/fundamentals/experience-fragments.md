@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1492'
-ht-degree: 100%
+source-git-commit: 229e2d8252a9efe1e303e926bde6719387833fa9
+workflow-type: tm+mt
+source-wordcount: '1483'
+ht-degree: 99%
 
 ---
 
@@ -42,10 +42,9 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 >
 >* `experience-fragments-editors`
 >
->
-問題が発生している場合は、システム管理者にお問い合わせください。
+>問題が発生している場合は、システム管理者にお問い合わせください。
 
-## エクスペリエンスフラグメントを使用するタイミング{#when-should-you-use-experience-fragments}
+## エクスペリエンスフラグメントを使用するタイミング {#when-should-you-use-experience-fragments}
 
 エクスペリエンスフラグメントは次の場合に使用します。
 
@@ -350,8 +349,10 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 >
 >ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
-## エクスペリエンスフラグメントの書き出し{#exporting-experience-fragments}
+## エクスペリエンスフラグメントの書き出し {#exporting-experience-fragments}
 
 デフォルトでは、エクスペリエンスフラグメントは HTML 形式で配信され、AEM とサードパーティチャネルのどちらでも同じように使用できます。
 
-Adobe Target への書き出しには、JSON も使用できます。詳しくは、Adobe Target とエクスペリエンスフラグメントの統合を参照してください。<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
+Adobe Targetへの書き出しについては、 [Adobe Targetとの統合](/help/sites-cloud/integrating/integrating-adobe-target.md).
+
+<!--For export to Adobe Target, JSON can also be used. See [Target Integration with Experience Fragments](/help/sites-administering/experience-fragments-target.md) for full information.-->
