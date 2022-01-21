@@ -1,10 +1,10 @@
 ---
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,9 +38,9 @@ ht-degree: 100%
 
 ### リソースとリンク
 
-• [AEM as a Cloud Service の IMS サポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)\
-• [Cloud Manager での役割ベースの権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=ja#what-is-required)\
-• [Adobe Experience Manager as a Cloud Service へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#getting-access)
+* [AEM as a Cloud Service の IMS サポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)
+* [Cloud Manager での役割ベースの権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=ja#what-is-required)
+* [Adobe Experience Manager as a Cloud Service へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=ja#getting-access)
 
 
 ## Adobe Experience Manager as a Cloud Service のオンボーディングプロセス
@@ -49,7 +49,8 @@ ht-degree: 100%
 
 ### 2. Adobe Admin Console への組織がオンボーディングされます。
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](./assets/processOverview2.jpg)
+
 * システム管理者：
    * AEM プログラムと環境をプロビジョニングします。
    * Admin Console に移動して管理タスクを実行します。
@@ -61,7 +62,7 @@ ht-degree: 100%
 
 ### 3. Admin Console でユーザーをオンボーディングし、アクセスを管理します。
 
->   ![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](./assets/processOverview3.jpg)
 
 サイズと環境に応じて、3 つの方法でユーザーをオンボードします。
 * Admin Console から手動でユーザーを作成する
