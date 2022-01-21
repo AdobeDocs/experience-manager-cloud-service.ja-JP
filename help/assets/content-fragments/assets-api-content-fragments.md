@@ -3,8 +3,8 @@ title: Assets HTTP API での Adobe Experience Manager as a Cloud Service コン
 description: AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API でのコンテンツフラグメントのサポートについて説明します。
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
-workflow-type: ht
+source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 100%
 
@@ -22,6 +22,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 >
 >* Assets REST API
 >* コンテンツフラグメントをサポートしています。
+
 >
 >現在の Assets HTTP API の実装は、[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) アーキテクチャスタイルに基づいています。
 
@@ -147,6 +148,7 @@ Assets REST API を使用すると、AEM インスタンス内に格納された
 >
 >* [CORS／AEM の説明](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [ビデオ - AEM を使用した CORS 向け開発](https://helpx.adobe.com/jp/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -309,19 +311,22 @@ Assets REST API は、フォルダーのプロパティ（名前、タイトル�
 
 関連する状況で次のステータスコードが表示されることがあります。
 
-* **200** （OK）
-は次の場合に返されます。
+* **200**（OK）
+
+   次の場合に返されます。
 
    * `GET` でコンテンツフラグメントを要求する
    * `PUT` でコンテンツフラグメントを正常に更新する
 
-* **201**（作成済み）
-は次の場合に返されます。
+* **201**（Created）
+
+   次の場合に返されます。
 
    * `POST` でコンテンツフラグメントを正常に作成する
 
 * **404**（Not Found）
-は次の場合に返されます。
+
+   次の場合に返されます。
 
    * 要求されたコンテンツフラグメントが存在しない
 
