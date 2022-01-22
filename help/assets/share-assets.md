@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 96%
+source-wordcount: '1295'
+ht-degree: 59%
 
 ---
 
@@ -24,27 +24,72 @@ ht-degree: 96%
 
 ## アセットをリンクとして共有 {#sharelink}
 
-リンクによるアセットの共有は、外部の関係者が [!DNL Assets] にログインすることなくリソースを利用するための便利な方法です。`/var/dam/share` の場所への管理者特権または読み取り権限を持つユーザーが、共有されたリンクを表示することができます。
+リンクを通じたアセットの共有は、外部の関係者がにログインしなくてもリソースを利用できるようにする便利な方法です。 [!DNL Assets]. この機能を使用すると、匿名ユーザーは、自分と共有されているアセットにアクセスしてダウンロードできます。 ユーザーが共有リンクからアセットをダウンロードする場合、 [!DNL Assets] では、非同期サービスを使用することで、より迅速で途切れることのないダウンロードを実現します。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードの場合、ダウンロードは 100 GB のファイルにバンドルされます。
 
-![リンク共有ダイアログ](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* リンクとして共有するフォルダーやアセットに対する編集の ACL 権限が必要です。
->* ユーザーとリンクを共有する前に、[電子メールの送信](/help/implementing/developing/introduction/development-guidelines.md#sending-email)を有効にします。そうでない場合は、エラーが発生します。
+>* [送信メールを有効にする](/help/implementing/developing/introduction/development-guidelines.md#sending-email) リンクをユーザーと共有する前に、をクリックします。
 
 
-1. [!DNL Assets] のユーザーインターフェイスで、リンクとして共有するアセットを選択します。
-1. ツールバーの「**[!UICONTROL リンクを共有]**」をクリックします。この [!UICONTROL リンク共有] ダイアログが表示され、 **[!UICONTROL リンクを共有]** フィールドに入力します。
+リンク共有機能を使用してアセットを共有するには、次の 2 つの方法があります。
+
+1. 共有リンクを生成 [アセットリンクのコピーと共有](#copy-and-share-assets-link) 他のユーザーと共に使用できます。 リンクのデフォルトの有効期限は 1 日です。 コピーしたリンクを他のユーザーと共有する場合、有効期限は変更できません。
+
+1. 共有リンクを生成し、 [電子メールでアセットリンクを共有](#share-assets-link-through-email). この場合、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 電子メールアドレスを追加することで、複数のユーザーに電子メールを送信できます。
+
+![リンク共有ダイアログ](assets/link-sharing-dialog.png)
+
+### アセットリンクをコピーして共有{#copy-and-share-asset-link}
+
+アセットをパブリック URL として共有するには：
+
+1. にログインします。 [!DNL Experience Manager Assets] をクリックし、 **[!UICONTROL ファイル]**.
+1. アセットまたはアセットを含むフォルダーを選択します。 ツールバーで、 **[!UICONTROL リンクを共有]**.
+1. この **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL リンクを共有]** フィールドに入力します。
+1. アセットリンクをコピーして、ユーザーと共有します。
+
+### 電子メール通知を使用してアセットリンクを共有 {#share-assets-link-through-email}
+
+電子メールでアセットを共有するには：
+
+1. アセットまたはアセットを含むフォルダーを選択します。 ツールバーで、 **[!UICONTROL リンクを共有]**.
+1. この **[!UICONTROL リンク共有]** ダイアログが表示され、 **[!UICONTROL リンクを共有]** フィールドに入力します。
 
    * 「電子メールアドレス」ボックスに、リンクを共有するユーザーの電子メール ID を入力します。リンクを複数のユーザーと共有できます。ユーザーが組織のメンバーの場合は、ドロップダウンリストに表示される候補の中から電子メール ID を選択します。外部ユーザーの場合は、電子メール ID を入力し、**[!UICONTROL Enter]** キーを押します。電子メール ID がユーザーの一覧に追加されます。
 
-   * 「**[!UICONTROL 件名]**」ボックスに、共有するアセットの件名を入力します。
+   * 内 **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 必要に応じて、「**[!UICONTROL メッセージ]**」ボックスにメッセージを入力します。
-   * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。リンクのデフォルトの有効期間は 1 日です。
+   * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。
    * 「**[!UICONTROL 元のファイルのダウンロードを許可]**」チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
 
-1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。共有リンクを含んだ電子メールがユーザーに届きます。
+1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。ユーザーに、共有リンクが記載された電子メールが送信されます。
+
+![リンク共有メール](assets/link-sharing-email-notification.png)
+
+### アセットリンクを使用したアセットのダウンロード
+
+共有アセットリンクへのアクセス権を持つユーザーは誰でも、zip フォルダーにバンドルされたアセットをダウンロードできます。 ダウンロードプロセスは、ユーザーがコピーしたアセットリンクにアクセスしているか、電子メールで共有されたアセットリンクを使用しているかに関わらず同じです。
+
+* アセットリンクをクリックするか、ブラウザーに URL を貼り付けます。 この [!UICONTROL リンク共有] インターフェイスが開き、 [!UICONTROL カード表示] または [!UICONTROL リスト表示].
+
+* 内 [!UICONTROL カード表示]の場合は、共有アセットまたは共有アセットフォルダーにマウスポインターを置いて、アセットを選択するか、ダウンロード用にキューに入れることができます。
+
+* デフォルトでは、ユーザーインターフェイスに **[!UICONTROL ダウンロードインボックス]** オプション。 ダウンロード用にキューに登録されているすべての共有アセットまたは共有フォルダーのリストと、そのステータスが反映されます。
+
+* アセットまたはフォルダーを選択すると、 **[!UICONTROL キューのダウンロード]** オプションが画面に表示されます。 次をクリック： **[!UICONTROL キューのダウンロード]** 」オプションを使用してダウンロードプロセスを開始します。
+
+   ![キューのダウンロード](assets/queue-download.png)
+
+* ダウンロードファイルの準備が整ったら、 **[!UICONTROL ダウンロードインボックス]** オプションを使用して、ダウンロードのステータスを表示できます。 大量のダウンロードの場合は、 **[!UICONTROL 更新]** ボタンをクリックしてステータスを更新します。
+
+   ![ダウンロードインボックス](assets/link-sharing-download-inbox.png)
+
+* 処理が完了したら、 **[!UICONTROL ダウンロード]** ボタンをクリックして zip ファイルをダウンロードします。
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 >[!NOTE]
 >
 >オーサーインスタンスから外部エンティティへのリンクを共有する場合は、`GET` リクエストに対する次の URL のみ公開するようにします。オーサーインスタンスの安全性を確保するために、その他の URL はブロックします。
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`

@@ -5,10 +5,10 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 84%
+source-wordcount: '1032'
+ht-degree: 79%
 
 ---
 
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ To enable email notifications:
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。詳しくは、 [リンク共有機能](/help/assets/share-assets.md#sharelink).
+リンクを使用したアセットの共有は、にログインしなくても、関心のあるユーザーが利用できるようにする便利な方法です。 [!DNL Assets]. 詳しくは、 [リンク共有機能](/help/assets/share-assets.md#sharelink).
 
-ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、より高速で中断のないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
+ユーザーが共有リンクからアセットをダウンロードする場合、 [!DNL Assets] では、非同期サービスを使用することで、より迅速で途切れることのないダウンロードを実現します。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
 
-インボックスには、各アーカイブの処理ステータスが表示されます。処理が完了したら、インボックスからアーカイブをダウンロードできます。
+この [!UICONTROL ダウンロードインボックス] 各アーカイブの処理ステータスを表示します。 処理が完了したら、インボックスからアーカイブをダウンロードできます。
 
-![ダウンロードインボックス](assets/download-inbox.png)
+![ダウンロードインボックス](assets/link-sharing-download-inbox.png)
 
 ## アセットダウンロードサーブレットの有効化 {#enable-asset-download-servlet}
 
