@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
+source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 88%
@@ -139,7 +139,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 1. ローカル [!DNL Sites] およびリモート [!DNL Assets] デプロイメントに [!DNL Dynamic Media] を設定します。[設定 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)の指示に従います。
 
    * すべての設定で同じ会社名を使用します。
-   * ローカルの [!DNL Sites] の [!UICONTROL Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。[!DNL Sites] デプロイメントでは、[!DNL Dynamic Media] アカウントに対する読み取り専用アクセスのみ必要です。
+   * ローカルの [!DNL Sites] の [!UICONTROL Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。この [!DNL Sites] デプロイメントは、 [!DNL Dynamic Media] アカウント
    * ローカルの [!DNL Sites] の「**[!UICONTROL アセットを公開]**」オプションで、「**[!UICONTROL 選択的公開]**」を選択します。「**[!UICONTROL すべてのコンテンツを同期]**」は選択しないでください。
    * リモート [!DNL Assets] デプロイメントの [!UICONTROL  Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで有効]**」を選択します。
 
