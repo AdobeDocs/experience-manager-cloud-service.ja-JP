@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 59%
+source-wordcount: '1289'
+ht-degree: 57%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 59%
 
 ## アセットをリンクとして共有 {#sharelink}
 
-リンクを通じたアセットの共有は、外部の関係者がにログインしなくてもリソースを利用できるようにする便利な方法です。 [!DNL Assets]. この機能を使用すると、匿名ユーザーは、自分と共有されているアセットにアクセスしてダウンロードできます。 ユーザーが共有リンクからアセットをダウンロードする場合、 [!DNL Assets] では、非同期サービスを使用することで、より迅速で途切れることのないダウンロードを実現します。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードの場合、ダウンロードは 100 GB のファイルにバンドルされます。
+リンクを通じたアセットの共有は、外部の関係者がにログインしなくてもリソースを利用できるようにする便利な方法です。 [!DNL Assets]. この機能を使用すると、匿名ユーザーは、自分と共有されているアセットにアクセスしてダウンロードできます。 ユーザーが共有リンクからアセットをダウンロードする場合、 [!DNL Assets] では、非同期サービスを使用することで、より迅速で途切れることのないダウンロードを実現します。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。大規模なダウンロードの場合、ダウンロードは 100 GB のファイルにバンドルされます。
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -38,7 +38,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 
 リンク共有機能を使用してアセットを共有するには、次の 2 つの方法があります。
 
-1. 共有リンクを生成 [アセットリンクのコピーと共有](#copy-and-share-assets-link) 他のユーザーと共に使用できます。 リンクのデフォルトの有効期限は 1 日です。 コピーしたリンクを他のユーザーと共有する場合、有効期限は変更できません。
+1. 共有リンクを生成 [アセットリンクをコピーして共有する](#copy-and-share-assets-link) 他のユーザーと共に使用できます。 リンクのデフォルトの有効期限は 1 日です。 コピーしたリンクを他のユーザーと共有する場合、有効期限は変更できません。
 
 1. 共有リンクを生成し、 [電子メールでアセットリンクを共有](#share-assets-link-through-email). この場合、有効期限の日時などのデフォルト値を変更し、元のアセットとそのレンディションをダウンロードできます。 電子メールアドレスを追加することで、複数のユーザーに電子メールを送信できます。
 
@@ -65,7 +65,7 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
    * 内 **[!UICONTROL 件名]** ボックスに、共有するアセットの目的を指定する件名を入力します。
    * 必要に応じて、「**[!UICONTROL メッセージ]**」ボックスにメッセージを入力します。
    * 「**[!UICONTROL 有効期限]**」フィールドに、日付選択を使用して、リンクの有効期限を指定します。
-   * 「**[!UICONTROL 元のファイルのダウンロードを許可]**」チェックボックスをオンにして、受信者が元のレンディションをダウンロードできるようにします。
+   * を有効にします。 **[!UICONTROL 元のファイルのダウンロードを許可]** 受信者が元のレンディションをダウンロードできるようにするには、「 」チェックボックスをオンにします。
 
 1. 「**[!UICONTROL 共有]**」をクリックします。リンクをユーザーと共有することを確認するメッセージが表示されます。ユーザーに、共有リンクが記載された電子メールが送信されます。
 
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >共有アセットが別の場所に移動されると、そのリンクは機能しなくなります。リンクを再作成し、ユーザーと再共有します。
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## アセットのダウンロードと共有 {#download-and-share-assets}
+## アセットをダウンロードして個別に共有する {#download-and-share-assets}
 
 ユーザーは、必要なアセットをダウンロードして、[!DNL Experience Manager] の外部で共有することができます。詳しくは、[アセットの検索方法](/help/assets/search-assets.md)、[アセットのダウンロード方法](/help/assets/download-assets-from-aem.md)、[コレクションのダウンロード方法](manage-collections.md#download-a-collection)を参照してください。
 
