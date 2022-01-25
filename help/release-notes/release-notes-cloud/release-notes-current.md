@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
+source-git-commit: 35f153a6f094f558b6a5e1d880dde9f33dcd92fb
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 54%
@@ -26,7 +26,7 @@ ht-degree: 54%
 ## リリース日 {#release-date}
 
 のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.11.0) は 2021 年 12 月 16 日です。
-次のリリース (2022.1.0) は 2022 年 1 月 27 日です。
+次のリリース (2022.1.0) は 2022 年 2 月 4 日です。
 
 ## リリースビデオ {#release-video}
 

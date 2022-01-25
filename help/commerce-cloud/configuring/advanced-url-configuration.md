@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 78fa346cd2d6ed64c9700b7b2e611db58f7b3d11
+source-git-commit: 8c3a1366d076c009262eeab8129e4e589dc4f7c5
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2046'
 ht-degree: 40%
 
 ---
@@ -170,6 +170,8 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 | `{{page}}.html/{{sku}}/{{url_key}}.html` | ○ |  no |
 | `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | ○ | 完全一致のみ |
 | `{{page}}.html/{{sku}}/{{url_path}}.html` | ○ | ○ |
+
+{style=&quot;table-layout:auto&quot;}
 
 >[!NOTE]
 >
