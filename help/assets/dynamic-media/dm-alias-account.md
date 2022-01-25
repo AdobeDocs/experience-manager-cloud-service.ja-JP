@@ -10,7 +10,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
+source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 9%
@@ -29,11 +29,11 @@ Dynamic Mediaの会社エイリアスアカウントを使用すると、ユー�
 
 Dynamic Mediaの会社エイリアスアカウントを設定する際は、次の点に注意してください。
 
-* 次の場所で会社エイリアスアカウントを設定する場合： **[!UICONTROL Dynamic Media設定を編集]** ページでキャッシュの無効化を成功させるには、次の URL を無効にする必要があります： *両方* の **[!UICONTROL 会社]** アカウントおよび **[!UICONTROL 会社エイリアス]** 同時にアカウントを作成します。
 * 既存のDynamic Media URL またはビューア埋め込みコード *live* デジタルプロパティは、新しいエイリアス名を反映するように手動で更新する必要があります。 ただし、元のDynamic Mediaの会社名を持つ URL やビューア埋め込みコードは、既存または新しいアセットで引き続き機能します。
 * Dynamic Mediaの会社エイリアスアカウント機能は、Experience Manager Assetsオーサリングモードと配信に制限されています。 会社のエイリアス名はExperience Manager Sitesでは使用できません。 この変更では、WCM(Web Content Management) コンポーネントは更新されません。 これらのコンポーネントは、Dynamic Mediaアセットを取得する際に、元のDynamic Media会社名と引き続き連携します。
 * で設定できる会社エイリアスアカウントは 1 つだけです。 **[!UICONTROL Dynamic Media設定を編集]** ページ。 ただし、サポートケースを通じて会社のエイリアスアカウントをいくつでも作成し、必要なエイリアス名をDynamic Media URL またはビューアの埋め込みコードに手動で反映させることができます。
 * 標準搭載の [キャッシュの無効化](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md) Dynamic Mediaの機能は、Cloud ServicesのDynamic Media設定ページで設定された Company アカウントと Company Alias アカウントの両方を使用して URL を無効化します。
+* 次の場所で会社エイリアスアカウントを設定する場合： **[!UICONTROL Dynamic Media設定を編集]** ページでキャッシュの無効化を成功させるには、次の URL を無効にする必要があります： *両方* の **[!UICONTROL 会社]** アカウントおよび **[!UICONTROL 会社エイリアス]** 同時にアカウントを作成します。
 
 関連トピック [Cloud ServicesでのDynamic Media設定の作成](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)
 
