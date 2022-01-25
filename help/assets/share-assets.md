@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 3eb12e6e6a539a8f6b3cb4ccddba9d1971268c13
+source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1290'
 ht-degree: 57%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 57%
 
 ## アセットをリンクとして共有 {#sharelink}
 
-リンクを通じたアセットの共有は、外部の関係者がにログインしなくてもリソースを利用できるようにする便利な方法です。 [!DNL Assets]. この機能を使用すると、匿名ユーザーは、自分と共有されているアセットにアクセスしてダウンロードできます。 ユーザーが共有リンクからアセットをダウンロードする場合、 [!DNL Assets] では、非同期サービスを使用することで、より迅速で途切れることのないダウンロードを実現します。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。大規模なダウンロードの場合、ダウンロードは 100 GB のファイルにバンドルされます。
+リンクを通じたアセットの共有は、リソースを外部の関係者、マーケター、その他のユーザーが利用できるようにする便利な方法です [!DNL Experience Manager] ユーザー。 この機能を使用すると、匿名ユーザーは、自分と共有されているアセットにアクセスしてダウンロードできます。 共有リンクからアセットをダウンロードする場合は、 [!DNL Experience Manager Assets] では、非同期サービスを使用することで、ダウンロードを迅速かつ途切れることなく実行できます。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。大規模なダウンロードの場合、ダウンロードは、ファイルサイズあたり 100 GB の複数のファイルにバンドルされます。
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
