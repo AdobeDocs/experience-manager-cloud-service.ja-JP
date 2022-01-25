@@ -2,10 +2,10 @@
 title: '他のユーザーにワークフローを割り当て、電子メールを送信、およびワークフローで Adobe Sign を使用する方法 '
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、電子メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
-source-wordcount: '5377'
-ht-degree: 100%
+source-wordcount: '5467'
+ht-degree: 98%
 
 ---
 
@@ -28,6 +28,10 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * ワークフローモデルを様々なデータソースに接続し、データを容易に保存および取得する。
 
 * 電子メールステップを使用して、アクションの完了時やワークフローの開始時または完了時に、通知電子メールおよびその他の添付ファイルを送信する。
+
+>[!NOTE]
+>
+>ワークフローモデルが外部ストレージ用にマークされている場合、すべてのFormsワークフロー手順で、変数オプションのみを選択して、データファイルと添付ファイルを保存または取得できます。
 
 
 ## タスクを割り当てステップ {#assign-task-step}
@@ -66,7 +70,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * **[!UICONTROL 埋め込み済み]**：以下のフィールドは、タスクへの入力として使用できます。
 
    * **[!UICONTROL 次を使用して入力データファイルを選択]**：入力データファイルのパス（.json、.xml、.doc またはフォームデータモデル）。ペイロードに対する相対パスを使用して入力データファイルを取得したり、ドキュメント、XML、JSON データ型の変数に格納されたファイルを取得したりできます。例えば、ファイルには、AEM インボックスアプリケーションを介してフォームに送信されるデータが含まれています。一例として、[Payload_Directory]/workflow/data というパスを指定します。
-   * **[!UICONTROL 次を使用して入力添付ファイルを選択]**：指定した場所にある添付ファイルは、タスクに関連付けられたフォームに添付されます。必ずペイロードに対する相対パスを指定します。一例として、[Payload_Directory]/attachments/ というパスを指定します。ペイロードを基準にして添付ファイルを指定するか、ドキュメントタイプ（配列リスト／ドキュメント）変数を使用して、アダプティブフォームの入力添付ファイルを指定できます
+   * **[!UICONTROL 次を使用して入力添付ファイルを選択]**：指定した場所にある添付ファイルは、タスクに関連付けられたフォームに添付されます。パスは、ペイロードを基準とした相対パスにすることも、ドキュメントの変数に格納された添付ファイルを取得することもできます。 一例として、[Payload_Directory]/attachments/ というパスを指定します。ペイロードを基準にして添付ファイルを指定するか、ドキュメントタイプ（配列リスト／ドキュメント）変数を使用して、アダプティブフォームの入力添付ファイルを指定できます。
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -88,7 +92,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL 割り当て先]**／**[!UICONTROL 割り当てオプション]**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
-* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ワークフローを動的にユーザーに割り当てる方法](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および [Adobe Experience Manager のカスタム動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
+* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ワークフローを動的にユーザーに割り当てる方法](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および [Adobe Experience Manager のカスタム動的参加者ステップの作成](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)を参照してください。
 
 * **[!UICONTROL 参加者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、「RandomParticipantChooser」オプションのユーザーまたはグループを選択できます。
 
@@ -130,6 +134,10 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
 * **[!UICONTROL 前のステップのデータを表示します]**：以前の担当者、タスクに対して既に実行されたアクション、タスクに追加されたコメントおよび完了したタスクのレコードのドキュメント（使用可能な場合）を担当者が表示できるようにするには、このオプションを選択します。
 * **[!UICONTROL 以降のステップのデータを表示します]**：後続の担当者が実行したアクションと追加したコメントを現在の担当者が表示できるようにするには、このオプションを選択します。また、このオプションを選択すると、完了したタスクのレコードのドキュメント（使用可能な場合）を現在の担当者が表示できるようになります。
 * **[!UICONTROL データタイプの表示]**：デフォルトで、担当者は、レコードのドキュメント、担当者、実行されたアクションに加え、前の担当者および後続の担当者が追加したコメントを表示することができます。「データタイプの表示」オプションを使用すると、担当者に表示されるデータタイプが制限されます。
+
+>[!NOTE]
+>
+>外部データストレージ用のAEMワークフローモデルを設定する際、タスクの割り当て手順をドラフトとして保存し、タスクの割り当て手順の履歴を取得するオプションは無効になります。 また、インボックスでは、保存するオプションは無効になっています。
 
 ## 電子メールを送信ステップ {#send-email-step}
 

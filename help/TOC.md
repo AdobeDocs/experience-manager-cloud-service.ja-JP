@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7dd57c6e161b7276d3796d64cd37fddc60e7a5b0
+source-git-commit: 72ddcbcc714bcd33de8f4f681db57872f5ca69ac
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3460'
 ht-degree: 92%
 
 ---
@@ -400,6 +400,7 @@ ht-degree: 92%
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
       + [Forms Designer のインストールと設定](/help/forms/installing-configuring-designer.md)
+      + [統合ストレージコネクタの設定](/help/forms/configure-unified-storage-connector.md)
    + ユーザーグループ、フォームおよび関連アセットの管理 {#manage-forms-and-related-assets}
       + [グループと権限](/help/forms/forms-groups-privileges-tasks.md)
       + [アダプティブフォーム、PDF フォームおよびその他のアセットの読み込み、書き出し、整理](/help/forms/import-export-forms-templates.md)
