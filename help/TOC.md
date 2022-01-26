@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 72ddcbcc714bcd33de8f4f681db57872f5ca69ac
+source-git-commit: fb75c9099b77a397fa451b72ee997463a3f4f11e
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3466'
 ht-degree: 92%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 92%
       + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
       + [Cloud Manager の概要](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
       + [AEM as a Cloud Service チームおよび製品プロファイル](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Adobe サポート](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+      + [アドビサポート](/help/onboarding/learn-concepts/onboarding-help-resources.md)
    + オンボーディングジャーニー {#journey}
       + [オンボーディングジャーニー](/help/journey-onboarding/home.md)
       + [オンボーディングジャーニーの概要](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
@@ -816,6 +816,7 @@ ht-degree: 92%
    + [メンテナンスタスク](/help/operations/maintenance.md)
    + [バックアップと復元](/help/operations/backup.md)
    + [非同期ジョブ](/help/operations/asynchronous-jobs.md)
+   + [汎用 Lucene インデックスの削除](/help/operations/removal-generic-lucene-index.md)
 + コンプライアンス {#compliance}
    + [AEM as a Cloud Service でのコンプライアンス](/help/compliance/home.md)
    + データのプライバシーと保護への対応 {#data-privacy}
