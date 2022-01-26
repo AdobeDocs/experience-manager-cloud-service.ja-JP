@@ -3,7 +3,10 @@ title: Adobe AnalyticsとExperience Cloud自動化の統合
 description: Experience Cloud設定の自動化は、Experience Manager SitesとExperience Platform Launch、Adobe Analyticsを統合し、簡単な UI ウィザードインターフェイスで実装するための、シンプルで自動化された方法を提供します。 独自のサイトで自動セットアップを使用する方法を説明します。
 feature: Administering
 role: Admin
-source-git-commit: 75d8f2a14ea97216c48c3bf242aa6186d97d4490
+hide: true
+hidefromtoc: true
+index: false
+source-git-commit: 6c84c0eff6392f1f86c18c9daf15c402c4d9e778
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 4%
