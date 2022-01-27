@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
+source-git-commit: 2f0521831383c11e1edee8c5d719ec42f7bcfd5e
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1449'
 ht-degree: 98%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 98%
 | × | サポートされていない。使用しないでください。 |
 | - | 使用不可 |
 
-| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager／Sling／JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) _（プレビュー）_ |
+| 使用例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager／Sling／JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=ja) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=ja#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)／[POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) サーブレット | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=ja) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **元のバイナリ** |  |  |  |  |  |  |
 | オリジナルを作成 | ✓ | × | - | × | × | - |

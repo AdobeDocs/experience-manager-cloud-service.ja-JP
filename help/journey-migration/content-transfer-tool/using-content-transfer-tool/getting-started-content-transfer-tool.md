@@ -1,14 +1,14 @@
 ---
-title: コンテンツ転送ツールの概要
-description: コンテンツ転送ツールの概要
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: コンテンツ転送ツールの基本を学ぶ
+description: コンテンツ転送ツールの基本を学ぶ
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 58%
+source-wordcount: '859'
+ht-degree: 96%
 
 ---
 
-# コンテンツ転送ツールの概要 {#getting-started-content-transfer-tool}
+# コンテンツ転送ツールの基本を学ぶ {#getting-started-content-transfer-tool}
 
 
 ## 入手方法 {#availability}
@@ -25,20 +25,20 @@ ht-degree: 58%
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
 
-## ソース環境の接続 {#source-environment-connectivity}
+## ソース環境の接続性 {#source-environment-connectivity}
 
-ソースAEMインスタンスがファイアウォールの内側で動作し、許可リストに追加された特定のホストにのみ到達できる場合があります。 抽出を正常に実行するには、AEMを実行しているインスタンスから次のエンドポイントにアクセスできる必要があります。
+ソース AEM インスタンスがファイアウォールの内側で動作していて、許可リストに追加された特定のホストにしか到達できない場合があります。抽出を正常に実行するには、AEM を実行しているインスタンスから、次のエンドポイントにアクセスできる必要があります。
 
-* 対象のAEMas a Cloud Service環境： `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Azure BLOB ストレージサービス： `*.blob.core.windows.net`
-* ユーザーマッピング IO エンドポイント： `usermanagement.adobe.io`
+* ターゲット AEM as a Cloud Service 環境：`author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Azure BLOB ストレージサービス：`*.blob.core.windows.net`
+* ユーザーマッピング IO エンドポイント：`usermanagement.adobe.io`
 
-ターゲットAEMas a Cloud Service環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します ( `program_id`, `environment_id`、および `migration_token`):
+ターゲット AEM as a Cloud Service 環境への接続をテストするには、ソースインスタンスのシェルから次の cURL コマンドを発行します（`program_id`、`environment_id` および `migration_token` を実際の値に置き換えてください）。
 
 `curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
->次の場合、 `HTTP/2 200` が受信された場合、AEM as a Cloud Serviceへの接続に成功しました。
+>`HTTP/2 200` を受け取った場合は、AEM as a Cloud Service への接続に成功しました。
 
 ## コンテンツ転送ツールの実行 {#running-tool}
 
@@ -88,16 +88,16 @@ ht-degree: 58%
    1. **アクセストークン**：アクセストークンを入力します。
 
       >[!NOTE]
-      >「**アクセストークンを開く**」ボタンを使用してアクセストークンを取得できます。ターゲット Cloud Service インスタンスの AEM 管理者グループに属していることを確認する必要があります。
+      >「**アクセストークンを開く**」ボタンを使用してアクセストークンを取得できます。ターゲットCloud Serviceインスタンスの「管理者」グループに属していることを確認する必要があります。
 
    1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
 
-      1. **バージョンを含める**：必要に応じて選択します。バージョンが含まれる場合、パス `/var/audit` 監査イベントを移行するために、が自動的に含まれます。
+      1. **バージョンを含める**：必要に応じて選択します。バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
 
          ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >バージョンを移行セットに含める予定で、 `wipe=false`を無効にした場合、コンテンツ転送ツールの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加アップを実行する場合は、次のように取り込みを実行する必要があります。 `wipe=true`.
+         >バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
 
       1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
@@ -110,23 +110,23 @@ ht-degree: 58%
          >* `/etc`（`/etc` の一部のパスは CTT で選択できます）
 
 
-1. クリック **保存** 次に、 **移行セットを作成** 詳細画面。
+1. **移行セットを作成**&#x200B;画面のすべてのフィールドに値を入力したら、「**保存**」をクリックします。
 
-1. 移行セットが **コンテンツ転送** ウィザードに表示されます（下図を参照）。
+1. 移行セットが&#x200B;**コンテンツ転送**&#x200B;ウィザードに表示されます（下図を参照）。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   既存のすべての移行セットが **コンテンツ転送** ウィザードに現在のステータスとステータスの情報が表示されます。 以下に示すアイコンの一部が表示されます。
+   既存のすべての移行セットが、現在のステータスなどのステータス情報と共に&#x200B;**コンテンツ転送**&#x200B;ウィザードに表示されます。以下に示すアイコンの一部が表示されます。
 
    * *赤い雲*&#x200B;は、抽出プロセスを完了できないことを示しています。
    * *緑色の雲*&#x200B;は、抽出プロセスを完了できることを示しています。
    * *黄色のアイコン*&#x200B;は、その既存の移行セットが同じインスタンス内の他のユーザーによって作成されたことを示しています。
 
-1. 移行セットを選択し、「 」をクリックします。 **プロパティ** 移行セットのプロパティを表示または編集するには、次の手順に従います。 プロパティの編集中は、 **移行セット名** または **サービス URL**.
+1. 移行セットを選択し、「**プロパティ**」をクリックして、移行セットのプロパティを表示または編集します。プロパティの編集中は、「**移行セット名**」や「**サービス URL**」を変更できません。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-移行セットの作成方法を学習したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整いました。 これらのプロセスを学ぶ前に、 [大きなコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja) コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをAEM as a Cloud Serviceに移動する。
+移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。
