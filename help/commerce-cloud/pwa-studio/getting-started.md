@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '766'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager のコンテンツフラグメントモデルエディ�
 
 ## PWA Studio のセットアップ {#setup-pwa}
 
-PWA Studio アプリをセットアップするには、Adobe Commerce の [PWA Studio のドキュメント](https://magento.github.io/pwa-studio/tutorials/)に従います。
+PWA Studio アプリをセットアップするには、Adobe Commerce の [PWA Studio のドキュメント](https://developer.adobe.com/commerce/pwa-studio/tutorials/)に従います。
 
 PWA Studio を AEM の GraphQL エンドポイントに接続するには、[AEM Extension for PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions) を使用します。
 
@@ -60,7 +60,7 @@ PWA Studio を AEM の GraphQL エンドポイントに接続するには、[AEM
    }    
    ```
 
-   ナビゲーションコンポーネントのカスタマイズについて詳しくは、[addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) と、PWA Studio の[拡張フレームワーク](https://magento.github.io/pwa-studio/pwa-buildpack/extensibility-framework/)に関するドキュメントを参照してください。
+   ナビゲーションコンポーネントのカスタマイズについて詳しくは、[addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) と、PWA Studio の[拡張フレームワーク](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/)に関するドキュメントを参照してください。
 
 1. Apollo Client は、<https://pwa-studio/endpoint.js> に AEM GraphQL エンドポイントがあることを想定します。エンドポイントをこの場所にマッピングするには、PWA Studio アプリケーションの UPWARD 設定を次のようにカスタマイズする必要があります。
 a. AEM_CFM_GRAPHQL 変数を pwa-root/.env に追加し、AEM コンテンツフラグメントの GraphQL エンドポイントを指すように変数を調整します。
@@ -116,7 +116,7 @@ GraphQL エンドポイントを紹介するために、サンプルコンテン
 
 実稼動のセットアップは、様々な点で異なるものになる可能性があります。
 
-* Apollo Client をカスタマイズする代わりに、AEM と Magento GraphQL データを組み合わせて単一のフェデレーテッド GraphQL エンドポイントにすることができます。
+* Apollo クライアントをカスタマイズする代わりに、AEMとAdobe Commerce GraphQL のデータを組み合わせた単一のフェデレーテッド GraphQL エンドポイントを使用できます。
 * PWA Studio アプリケーションでは、UPWARD 設定のプロキシを介さずに、AEM GraphQL エンドポイント URL を直接使用することもできます。このプロキシは別のレイヤー（CDN など）に移動することもできます。
 * どのアプローチが最適かは、エンドユーザーへの PWA Studio アプリケーションの提供方法によっても大きく異なります。
 

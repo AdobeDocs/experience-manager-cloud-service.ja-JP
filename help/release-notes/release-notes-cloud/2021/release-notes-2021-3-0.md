@@ -2,10 +2,10 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート。'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
-source-wordcount: '1318'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ AEM Forms は、長年にわたって、優れたオンボーディングと登�
 
 ### 新機能 {#what-is-new-commerce}
 
-* Magento 2.4.2 のサポート
+* Adobe Commerce 2.4.2 のサポート
 
 * 製品の詳細コンポーネントを任意のコンテンツページで使用および設定できるようになりました。
 

@@ -2,10 +2,10 @@
 title: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 description: Commerce Integration Framework を使用した AEM と Commerce の統合に関する FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 89%
+source-wordcount: '964'
+ht-degree: 77%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 89%
 
 ## 1. CIF GraphQL はコマースのためにのみ使用されますか。それとも、AEM JCR で作成されたコンテンツのクエリに使用できますか。
 
-Adobeは、Magentoの GraphQL API を、すべてのコマース関連データの公式コマース API として採用しています。 したがって、AEM は、I/O Runtime を介して Magento および任意のコマースエンジンとコマースデータを交換するために GraphQL を使用します。この GraphQL API は、コンテンツフラグメントにアクセスする AE M GraphQL API とは独立しています。
+Adobeは、Adobe Commerceの GraphQL API を、すべてのコマース関連データの公式コマース API として採用しています。 したがって、AEMは、I/O Runtime を介してAdobe Commerceや任意のコマースエンジンとコマースデータを交換するために GraphQL を使用します。 この GraphQL API は、コンテンツフラグメントにアクセスする AE M GraphQL API とは独立しています。
 
-## 2. 製品アセット（画像）は、Adobe Commerce（Magento）管理者を介して AEM から保存および参照できますか。Dynamic Media のアセットはどのように使用できますか。
+## 2.製品アセット（画像）は、Adobe Commerce管理者を通じてAEMから保存および参照できますか。 Dynamic Media のアセットはどのように使用できますか。
 
-AEM Assets と Magento の統合で、正式に利用できるものはありません。[Marketplace](https://marketplace.magento.com/bounteous-dam.html)で利用できるパートナーコネクタがあります。
+公式のAEM AssetsとAdobe Commerceの統合は利用できません。 [Marketplace](https://marketplace.magento.com/bounteous-dam.html)で利用できるパートナーコネクタがあります。
 
-回避策として、製品アセット（画像）を AEM Assets に格納できますが、アセット URL を手動で Magento に格納する必要があります。Dynamic Media は AEM Assets の一部となったので、同じように機能します。
+回避策として、製品アセット（画像）をAEM Assetsに格納することもできますが、アセット URL をAdobe Commerceに手動で格納する必要があります。 Dynamic Media は AEM Assets の一部となったので、同じように機能します。
 
 ## 3. コマースソリューションをどこにデプロイするかは重要ですか（オンプレミスまたはクラウド内）。
 
@@ -35,11 +35,11 @@ AEM Cloud Service で使用する CIF アドオンでは、コマースソリュ
 
 ## 6. CIF を含んだ AEM でサポートされているカタログサイズは何ですか。
 
-これは、さらに考慮する必要がある以下のいくつかの事項によって異なります。カタログデータとページのキャッシュ率ピーク時に予想される同時リクエストの数コマースソリューションの API はどの程度拡張性が高いですか？
+これは、さらに考慮する必要がある以下のいくつかの事項によって異なります。カタログデータとページのキャッシュ率ピーク時に予想される同時リクエストの数コマースソリューションの API はどの程度の拡張性がありますか？
 
 ## 7. PIM はこのフレームワークでどのように機能しますか。
 
-PIM データは、GraphQL 要求を介して AEM およびクライアントに公開されます。PIM データをコマースエンジンから取得できるように、PIM をコマースエンジン（Magento など）と統合することをお勧めします。
+PIM データは、GraphQL 要求を介して AEM およびクライアントに公開されます。PIM データをコマースエンジンから取得できるように、PIM をコマースエンジン (Adobe Commerceなど ) と統合することをお勧めします。
 
 ## 8. Dispatcher を使用して、価格や他のデータもキャッシュしますか。キャッシュ無効化の課題が頻繁に発生しませんか。
 
@@ -59,20 +59,20 @@ CIF には、検索バーと検索結果のコンポーネントが用意され�
 
 ## 12. MSM や翻訳で製品データをどのように使用できますか。
 
-通常、製品データは PIM または Magento で既に翻訳されています。AEM-Magento 統合は、複数の Magento ストアおよびストア表示への接続をサポートします。MSM の設定では、通常、1 つの AEM サイトが 1 つの Magento ストア表示にリンクされます。
+通常、製品データは PIM またはAdobe Commerceで既に翻訳されています。 AEM - Adobe Commerce統合は、複数のAdobe Commerceストアおよびストア表示への接続をサポートします。 MSM の設定では、通常、1 つのAEMサイトが 1 つのAdobe Commerceストアビューにリンクされます。
 
 ## 13. 商業文で製品データを充実させる方法はありますか。それはどこでできますか。AEM とコマースソリューションのどちらですか。
 
-AEMでマーケティング関連のデータとコンテンツを管理することをお勧めします。 コンテンツフラグメントを使用して、コマースソリューションの製品データを追加の属性で修飾するか、非構造化コンテンツのエクスペリエンスフラグメントを作成して、製品とリンクします。
+AEM でマーケティング関連のデータとコンテンツを管理することをお勧めします。コンテンツフラグメントを使用して、コマースソリューションの製品データを追加の属性で修飾するか、構造化されていないコンテンツ用のエクスペリエンスフラグメントを作成して製品とリンクします。
 
 ## 14. プレゼンテーションレイヤー全体に AEM を使用する場合、PCI への準拠をどのように確保できますか。
 
-抽象的な支払い方法を使うことをお勧めします。 これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには考慮されるべき点が他にもあります。Magento PCI への準拠について詳しくは、 を参照してください。[PCI コンプライアンス要件](https://magento.com/pci-compliance).
+抽象化された支払い方法を使用することをお勧めします。 これにより、ブラウザークライアントは支払いゲートウェイプロバイダーと直接通信し、アドビもコマースソリューションもカード所有者データを保持したり受け渡したりしないようになります。このアプローチには レベル 3 の PCI コンプライアンスのみ必要です。しかし、従業員がシステムやデータとやり取りする方法など、完全に PCI に準拠するには考慮されるべき点が他にもあります。Adobe Commerce PCI への準拠について詳しくは、 [PCI コンプライアンス要件](https://business.adobe.com/products/magento/pci-compliance.html).
 
-## 15. AEM バージョンと Magento クラウドバージョンを使用する場合、この共同ソリューションは PCI に準拠していますか。
+## 15. AEMとAdobe Commerceのクラウドバージョンを使用している場合、この共同ソリューションは PCI に準拠していますか。
 
 はい、自己評価アンケート D とコンプライアンス証明がオンリクエストで利用できます。
 
 ## 16. I/O Runtime の体験版ライセンスをリクエストする方法を教えてください。
 
-I/O Runtime を使用するための体験版ライセンスをリクエストするには、[こちら](https://adobeio.typeform.com/to/obqgRm)をクリックしてください。
+I/O Runtime を使用するための体験版ライセンスをリクエストするには、[こちら](https://developer.adobe.com/app-builder/trial/)をクリックしてください。

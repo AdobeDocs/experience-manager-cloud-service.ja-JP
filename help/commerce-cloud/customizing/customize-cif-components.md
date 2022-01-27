@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: a30006b7eedbe2bc6993f47b7e8433af6df17a07
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '2578'
-ht-degree: 100%
+source-wordcount: '2598'
+ht-degree: 87%
 
 ---
 
 # AEM CIF コアコンポーネントのカスタマイズ {#customize-cif-components}
 
-[CIF Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用するための参照用コードベースです。このチュートリアルでは、[製品ティーザー](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser)コンポーネントをさらに拡張して、Magento のカスタム属性を表示します。また、AEM と Magento 間の GraphQL 統合、および CIF コアコンポーネントによって提供される拡張フックについても学習します。
+[CIF Venia プロジェクト](https://github.com/adobe/aem-cif-guides-venia)は、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用するための参照用コードベースです。このチュートリアルでは、 [製品ティーザー](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) Adobe Commerceのカスタム属性を表示するコンポーネント。 また、AEMとAdobe Commerceの GraphQL 統合と、CIF コアコンポーネントが提供する拡張フックについても詳しく学びます。
 
 >[!TIP]
 >
@@ -28,13 +28,13 @@ ht-degree: 100%
 
 ## 作成する内容
 
-Venia ブランドは最近、持続可能な資材を使用して一部の製品を製造し始めました。同社は、**エコフレンドリー**&#x200B;バッジを製品ティーザーの一部として表示したいと考えています。製品が&#x200B;**エコフレンドリー**&#x200B;な資材を使用しているかどうかを示す新しいカスタム属性が Magento で作成されます。次に、このカスタム属性が GraphQL クエリの一部として追加され、特定の製品の製品ティーザーに表示されます。
+Venia ブランドは最近、持続可能な資材を使用して一部の製品を製造し始めました。同社は、**エコフレンドリー**&#x200B;バッジを製品ティーザーの一部として表示したいと考えています。製品が **エコフレンドリー** 材料。 次に、このカスタム属性が GraphQL クエリの一部として追加され、特定の製品の製品ティーザーに表示されます。
 
 ![エコフレンドリーバッジの最終実装](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。これには、Magento インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、[属性を Magento 内の製品に追加](https://docs.magento.com/user-guide/catalog/product-attributes-add.html)する権限が必要になります。
+このチュートリアルを完了するには、ローカルの開発環境が必要です。これには、Adobe Commerceインスタンスに設定および接続されたAEMの実行インスタンスが含まれます。 [AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。このチュートリアルを完全に実行するには、 [製品の属性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) Adobe Commerce
 
 また、コード例やチュートリアルを実行するには、[GraphiQL](https://github.com/graphql/graphiql) またはブラウザー拡張機能などの GraphQL IDE が必要です。ブラウザー拡張機能をインストールする場合は、その拡張機能にリクエストヘッダーを設定できることを確認してください。Google Chrome の [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) は、ジョブを実行できる拡張機能の 1 つです。
 
@@ -59,11 +59,11 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. AEM インスタンスを Magento インスタンスに接続するために必要な OSGi 構成を追加するか、新しく作成されたプロジェクトに構成を追加します。
+1. AEMインスタンスをAdobe Commerceインスタンスに接続するために必要な OSGi 設定を追加するか、新しく作成されたプロジェクトに設定を追加します。
 
-1. この時点で、Magento インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
+1. この時点で、Adobe Commerceインスタンスに接続されたストアフロントの作業用バージョンが必要です。 `US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
 
-   ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、接続 Magento が機能していることが示されます。
+   ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、Adobe Commerceへの接続が機能していることが示されます。
 
    ![Venia テーマで構成されたストアフロント](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -77,7 +77,7 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    ![製品ティーザーの挿入](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを「**製品**」に切り替えます。接続された Magento インスタンスから使用可能な製品のリストが表示されます。製品を選択し、ページ上の&#x200B;**製品ティーザー**&#x200B;コンポーネントに&#x200B;**ドラッグ＆ドロップ**&#x200B;します。
+3. サイドパネルを展開し（まだ切り替えていない場合）、アセットファインダードロップダウンを「**製品**」に切り替えます。接続されたAdobe Commerceインスタンスから使用可能な製品のリストが表示されます。 製品を選択し、ページ上の&#x200B;**製品ティーザー**&#x200B;コンポーネントに&#x200B;**ドラッグ＆ドロップ**&#x200B;します。
 
    ![製品ティーザーのドラッグ＆ドロップ](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -89,15 +89,15 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
 
    ![製品ティーザー - デフォルトスタイル](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Magento カスタム属性の追加 {#add-custom-attribute}
+## Adobe Commerceでのカスタム属性の追加 {#add-custom-attribute}
 
-AEM に表示された製品と製品データは Magento に格納されます。次に、Magento UI を使用して設定する製品属性の一部として、新しい&#x200B;**エコフレンドリー**&#x200B;属性を追加します。
+AEMに表示された製品と製品データは、Adobe Commerceに保存されます。 次に、新しい属性を **エコフレンドリー** をAdobe Commerce UI を使用して設定される製品属性の一部として使用する。
 
 >[!TIP]
 >
 > 製品属性セットの一部として、既にカスタムの&#x200B;**はい／いいえ**&#x200B;属性がある場合は、それを使用して、この節をスキップしてください。
 
-1. Magento インスタンスにログインします。
+1. Adobe Commerceインスタンスにログインします。
 1. **カタログ**／**製品**&#x200B;に移動します。
 1. 検索フィルターをアップデートして、前の練習でティーザーコンポーネントに追加した場合に使用する&#x200B;**構成可能な製品**&#x200B;を見つけます。製品を編集モードで開きます。
 
@@ -124,24 +124,24 @@ AEM に表示された製品と製品データは Magento に格納されます�
 
    >[!TIP]
    >
-   > 製品属性の管理の詳細については、『[Magento ユーザーガイド](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html)』を参照してください。
+   > 管理の詳細 [製品属性は、『 Adobe Commerceユーザーガイド』を参照してください。](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. **システム**／**ツール**／**キャッシュ管理**&#x200B;に移動します。データスキーマはアップデートされたので、Magento 内のキャッシュタイプの一部を無効にする必要があります。
+1. **システム**／**ツール**／**キャッシュ管理**&#x200B;に移動します。データスキーマは更新されたので、Adobe Commerceのキャッシュタイプの一部を無効にする必要があります。
 1. 「**設定**」の横のチェックボックスをオンにして、**更新**&#x200B;用にキャッシュタイプを送信します。
 
    ![構成キャッシュタイプの更新](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > キャッシュ管理の詳細については、『[Magento ユーザーガイド](https://docs.magento.com/user-guide/system/cache-management.html)』を参照してください。
+   > 詳細： [キャッシュ管理は、Adobe Commerceユーザーガイドを参照してください](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## GraphQL IDE を使用した属性の検証 {#use-graphql-ide}
 
-AEM コードを始める前に、GraphQL IDE を使用して [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) を調べてみると役に立ちます。AEM との Magento 統合は、主に一連の GraphQL クエリを介して実行されます。GraphQL クエリを理解し変更することは、CIF コアコンポーネントを拡張するのに重要なことの 1 つです。
+AEMコードを始める前に、 [GraphQL の概要](https://devdocs.magento.com/guides/v2.4/graphql/) GraphQL IDE を使用します。 Adobe CommerceとAEMの統合は、主に一連の GraphQL クエリを介しておこなわれます。 GraphQL クエリを理解し変更することは、CIF コアコンポーネントを拡張するのに重要なことの 1 つです。
 
 次に、GraphQL IDE を使用して、`eco_friendly` 属性が製品属性セットに追加されたことを確認します。このチュートリアルのスクリーンショットは、[Altair GraphQL クライアント](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja)を使用しています。
 
-1. GraphQL IDE を開き、IDE または拡張機能の URL バーに URL `http://<magento-server>/graphql` を入力します。
+1. GraphQL IDE を開き、IDE または拡張機能の URL バーに URL `http://<commerce-server>/graphql` を入力します。
 2. 次の[製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html)を追加します。ここで、`YOUR_SKU` は、前の演習で使用した製品の **SKU** です。
 
    ```json
@@ -182,7 +182,7 @@ AEM コードを始める前に、GraphQL IDE を使用して [Magento GraphQL](
 
    >[!TIP]
    >
-   > Magento GraphQL に関する詳細なドキュメントは、[こちら](https://devdocs.magento.com/guides/v2.4/graphql/index.html)を参照してください。
+   > に関する詳細なドキュメント [Adobe Commerce GraphQL は、こちらを参照してください。](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## 製品ティーザーの Sling モデルのアップデート {#updating-sling-model-product-teaser}
 
@@ -285,7 +285,7 @@ Sling モデルは Java として実装され、生成されたプロジェク�
 
    `extendProductQueryWith` メソッドに追加すると、他の製品属性を確実にモデルの残りの部分で使用できるようになります。また、実行されるクエリの数も最小限に抑えられます。
 
-   上記のコードでは、`eco_friendly` 属性を取得するために `addCustomSimpleField` が使用されます。この例では、Magento スキーマの一部であるカスタム属性をクエリする方法を説明します。
+   上記のコードでは、`eco_friendly` 属性を取得するために `addCustomSimpleField` が使用されます。この例では、Adobe Commerceスキーマの一部であるカスタム属性をクエリする方法を示します。
 
    >[!NOTE]
    >

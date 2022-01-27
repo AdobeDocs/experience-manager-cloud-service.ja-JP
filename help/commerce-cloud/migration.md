@@ -2,10 +2,10 @@
 title: AEM Commerce Integration Framework（CIF）アドオンへの移行
 description: 旧バージョンから AEM Commerce Integration Framework（CIF）アドオンに移行する方法
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ AEM 6.5 デプロイメントと比較して、主な違いは次の 2 つです
 
 >[!TIP]
 >
->リアルタイム API を使用できない場合は、API を使用した外部製品キャッシュを統合に使用する必要があります。例：[Magento オープンソース](https://magento.com/products/magento-open-source)
+>リアルタイム API を使用できない場合は、API を使用した外部製品キャッシュを統合に使用する必要があります。例：[Magento オープンソース](https://business.adobe.com/products/magento/open-source.html)
 
 ## AEM レンダリングを使用した製品カタログエクスペリエンス
 

@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1096'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ CIF アドオンのプロビジョニングが完了すると、既存の Cloud 
 
 2 つ目の手順は、各 AEM as a Cloud Service 環境のセルフサービスです。CIF アドオンの初期プロビジョニングの後で、いくつかの追加の設定をおこなう必要があります。
 
-## AEM とコマースソリューションの接続 {#magento}
+## AEM とコマースソリューションの接続 {#solution}
 
 CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)をコマースソリューションに接続するには、Cloud Manager の環境変数で GraphQL エンドポイント URL を指定する必要があります。変数名は `COMMERCE_ENDPOINT` です。HTTPS を介した安全な接続を設定する必要があります。
 
@@ -81,7 +81,7 @@ AEM を Adobe I/O CLI を介してコマースソリューションに接続す�
 
    詳細は、[CLI ドキュメント](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)を参照してください。
 
-   コマース GraphQL エンドポイント URL は、コマースの GraphQL サービスを指し、安全な HTTPS 接続を使用する必要があります。例：`https://<yourmagentosystem>/graphql`
+   コマース GraphQL エンドポイント URL は、コマースの GraphQL サービスを指し、安全な HTTPS 接続を使用する必要があります。例：`https://<yourcommercesystem>/graphql`
 
 4. 認証を必要とするステージング済みカタログ機能を有効にする（オプション）
 
@@ -103,7 +103,7 @@ AEM を Adobe I/O CLI を介してコマースソリューションに接続す�
 
 ## ストアとカタログの設定 {#catalog}
 
-CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)は、異なるコマースストア（またはストアビューなど）に接続された複数の AEM サイト構造で使用できます。デフォルトでは、CIF アドオンは、Adobe Commerce のデフォルトのストアとカタログ（Magento）に接続するデフォルト設定でデプロイされます。
+CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components) は、異なるコマースストア（またはストア表示など）に接続された複数のAEMサイト構造で使用できます。デフォルトでは、CIF アドオンは、Adobe Commerceのデフォルトのストアおよびカタログに接続するデフォルトの設定でデプロイされます。
 
 この設定は、次の手順に従って、CIF Cloud Service 設定を使用してプロジェクトに合わせて調整できます。
 
@@ -118,7 +118,7 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 次のプロパティを設定できます。
 
 - GraphQL クライアント - コマースバックエンド通信用に設定済みの GraphQL クライアントを選択します。これは通常、デフォルトのままです。
-- ストア表示 -（Magento）ストア表示の識別子。空の場合は、デフォルトのストア表示が使用されます。
+- ストア表示 — ストア表示の識別子。 空の場合は、デフォルトのストア表示が使用されます。
 - GraphQL プロキシパス - AEM の GraphQL プロキシが、コマースバックエンドの GraphQL エンドポイントへのリクエストをプロキシするために使用する URL パス。
    >[!NOTE]
    >
@@ -126,7 +126,7 @@ CIF アドオンと [CIF コアコンポーネント](https://github.com/adobe/a
 - カタログ UID のサポートを有効にする - コマースバックエンドの GraphQL 呼び出しで、ID ではなく UID のサポートを有効にします。
    >[!NOTE]
    >
-   > UID のサポートは、Adobe Commerce（Magento）2.4.2 で導入されました。コマースバックエンドがバージョン 2.4.2 以降の GraphQL スキーマをサポートしている場合にのみ有効にします。
+   > Adobe Commerce 2.4.2 で UID のサポートが導入されました。コマースバックエンドがバージョン 2.4.2 以降の GraphQL スキーマをサポートしている場合にのみ、これを有効にしてください。
 - カタログのルートカテゴリ識別子 - ストアカタログルートの識別子（UID または ID）
    >[!CAUTION]
    >

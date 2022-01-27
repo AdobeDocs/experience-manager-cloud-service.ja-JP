@@ -1,18 +1,18 @@
 ---
-title: コマース統合フレームワークを使用した、AEM と Adobe Commerce（Magento）の統合
-description: AEM と Adobe Commerce（Magento）は、コマース統合フレームワーク（CIF）を使用してシームレスに統合されます。CIF を使用すると、AEM は Magento インスタンスにアクセスし、GraphQL を介して Magento と通信できます。また、AEM オーサーは、製品とカテゴリの選択機能と製品コンソールを使用して、Magento からオンデマンドで取得した製品とカテゴリデータを参照できます。さらに、CIF には標準搭載のストアフロントが用意されており、コマースプロジェクトの迅速化に役立ちます。
+title: Commerce Integration Framework を使用したAEMとAdobe Commerceの統合
+description: AEMとAdobe Commerceは、Commerce Integration Framework(CIF) を使用してシームレスに統合されます。 CIF を使用すると、AEMはAdobe Commerceインスタンスにアクセスし、GraphQL を介してAdobe Commerceと通信できます。 また、AEM オーサーは、製品とカテゴリの選択機能と製品コンソールを使用して、Adobe Commerceからオンデマンドで取得した製品とカテゴリのデータを参照できます。 さらに、CIF には標準搭載のストアフロントが用意されており、コマースプロジェクトの迅速化に役立ちます。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 96e7a7c38dd1275c9b0d291d12a0f768ab183c38
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 90%
+source-wordcount: '412'
+ht-degree: 68%
 
 ---
 
-# コマース統合フレームワークを使用した、AEM と Adobe Commerce（Magento）の統合 {#aem-magento-framework}
+# Commerce Integration Framework を使用したAEMとAdobe Commerceの統合 {#aem-framework}
 
-Experience Manager と Adobe Commerce（Magento）は、コマース統合フレームワーク（CIF）を使用してシームレスに統合されます。CIF を使用すると、AEM は Adobe Commerce の [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/) を使用して、コマースインスタンスに直接アクセスして通信できます。
+Experience ManagerとAdobe Commerceは、Commerce Integration Framework(CIF) を使用してシームレスに統合されます。 CIF を使用すると、AEM は Adobe Commerce の [GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql/) を使用して、コマースインスタンスに直接アクセスして通信できます。
 
 >[!NOTE]
 >

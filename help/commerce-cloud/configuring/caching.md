@@ -2,10 +2,10 @@
 title: キャッシュとパフォーマンス
 description: GraphQL とコンテンツキャッシュを有効にしてコマース実装のパフォーマンス最適化に利用できる様々な設定について説明します。
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 11ad29835688b5a6f79ee16760cc03a6ee82d6a3
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 92%
+source-wordcount: '845'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ AEM CIF コアコンポーネントの場合、キャッシュはコンポーネ
 
 コンポーネントのキャッシュを設定する場合、キャッシュ名は、プロジェクトで定義する&#x200B;**プロキシ**&#x200B;コンポーネントの名前にする必要があります。
 
-クライアントが GraphQL 要求を送信する前に、**完全に**&#x200B;同一の GraphQL 要求が既にキャッシュされているかどうかがチェックされ、キャッシュされた応答が返される場合があります。GraphQL リクエストは完全に一致する必要があります。つまり、クエリ、操作名（存在する場合）、変数（存在する場合）はすべてキャッシュされたリクエストと等しく、また、設定されているカスタム HTTP ヘッダーも同じでなければなりません。例えば、Magento `Store` ヘッダーは一致する必要があります。
+クライアントが GraphQL 要求を送信する前に、**完全に**&#x200B;同一の GraphQL 要求が既にキャッシュされているかどうかがチェックされ、キャッシュされた応答が返される場合があります。GraphQL リクエストは完全に一致する必要があります。つまり、クエリ、操作名（存在する場合）、変数（存在する場合）はすべてキャッシュされたリクエストと等しく、また、設定されているカスタム HTTP ヘッダーも同じでなければなりません。例えば、Adobe Commerce `Store` header は一致する必要があります。
 
 ### 例 {#examples}
 
@@ -41,7 +41,7 @@ GraphQl キャッシュ機能の使用を推奨する別のシナリオの例と
 venia/components/structure/navigation:true:10:600
 ```
 
-例えば、 [Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia) が使用されます。 CIF ナビゲーションコンポーネント名（ `core/cif/components/structure/navigation/v1/navigation`）では&#x200B;**なく**、コンポーネントプロキシ名（`venia/components/structure/navigation`）が使用されることに注意してください。
+[Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)の使用を検討する場合。CIF ナビゲーションコンポーネント名（ `core/cif/components/structure/navigation/v1/navigation`）では&#x200B;**なく**、コンポーネントプロキシ名（`venia/components/structure/navigation`）が使用されることに注意してください。
 
 他のコンポーネントのキャッシュは、通常は Dispatcher レベルで設定されたキャッシュと連携して、プロジェクト単位で定義する必要があります。これらのキャッシュはアクティブに無効化されないので、キャッシュ期間は慎重に設定する必要があります。すべての可能なプロジェクトや使用例に適切である「フリーサイズ」の値はありません。プロジェクトの要件に最も適したプロジェクトレベルでキャッシュ方法を定義してください。
 
@@ -49,7 +49,7 @@ venia/components/structure/navigation:true:10:600
 
 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ja) 内の AEM ページまたはフラグメントのキャッシュは、どの AEM プロジェクトに対してもベストプラクティスです。通常、AEM で変更されたコンテンツの Dispatcher での適切なアップデートは、無効化の手法に依存します。これは、AEM Dispatcher のキャッシュ方法の中心となる機能です。
 
-純粋な AEM で管理されるコンテンツ CIF に加えて、通常、ページには、GraphQL を介して Magento から動的に取り込まれたコマースデータを表示できます。ページ構造自体は変更されない場合がありますが、コマースのコンテンツは変更される場合があります。例えば、製品データ（名前、価格など）がMagentoで変更された場合などです。
+純粋なAEMで管理されるコンテンツ CIF に加えて、通常、ページには、GraphQL を介してAdobe Commerceから動的に取得されたコマースデータを表示できます。 ページ構造自体は変更されない場合がありますが、コマースのコンテンツは、例えば、製品データ（名前、価格など）が Adobe Commerceの変更点です。
 
 AEM Dispatcher で CIF ページを限られた時間だけキャッシュできるようにするため、AEM Dispatcher で CIF ページをキャッシュする場合は、[時間ベースのキャッシュの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#configuring-time-based-cache-invalidation-enablettl)（TTL ベースのキャッシュとも呼ばれます）を使用することをお勧めします。この機能は、追加の [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) パッケージを使用して AEM で設定できます。
 

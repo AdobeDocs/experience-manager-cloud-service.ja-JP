@@ -1,12 +1,12 @@
 ---
 title: 入門と概要
-description: AEM Content and Commerce の入門と概要。Experience Manager Commerce Integration Framework（CIF）は、Magento および他のサードパーティ製コマースソリューションのコマースサービスを Experience Cloud と統合および拡張するための推奨パターンです。
+description: AEM Content and Commerce の入門と概要。Experience ManagerCommerce Integration Framework(CIF) は、Adobe Commerceおよび他のサードパーティのコマースソリューションのコマースサービスをExperience Cloudと統合し、拡張するためのAdobeの推奨パターンです。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 97%
+source-wordcount: '894'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager の Content and Commerce を使用すると、ブラン
 
 * スケーリングとイノベーションの迅速化
 * エクスペリエンスのパーソナライズによるコンバージョンの促進
-* 1 回作成して、すべての場所に公開
+* 1 回の作成であらゆる場所に公開
 * 顧客のエクスペリエンスの拡充と差別化
 * コマースデータへのアクセスによるオーサリングの効率化
 
