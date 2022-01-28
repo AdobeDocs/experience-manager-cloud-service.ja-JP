@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
+source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 97%
+source-wordcount: '1547'
+ht-degree: 95%
 
 ---
 
@@ -117,7 +117,8 @@ Define DISABLE_DEFAULT_CACHING
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
-以前のバージョンの AEM と同様に、ページの公開または非公開では、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開する必要があります。
+以前のバージョンの AEM と同様に、ページの公開または非公開では、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュの問題の疑いがある場合は、問題のページを再公開し、ServerAlias localhost（Dispatcher キャッシュの無効化に必要）に一致する仮想ホストが使用可能であることを確認する必要があります。
+
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の適切なパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます（削除されるレベルは [statfilelevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level) で設定できます）。
 

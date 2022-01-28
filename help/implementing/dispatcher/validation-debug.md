@@ -3,10 +3,10 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2f4fcb2f70bc19053cf11d97dc0e021a95e782ed
+source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
 workflow-type: tm+mt
-source-wordcount: '2413'
-ht-degree: 99%
+source-wordcount: '2433'
+ht-degree: 98%
 
 ---
 
@@ -126,6 +126,8 @@ ht-degree: 99%
 * `conf.d/available_vhosts/default.vhost`
 
 仮想ホストのサンプルが含まれています。お使いの仮想ホストに対して、このファイルのコピーを作成し、カスタマイズしてから `conf.d/enabled_vhosts` に移動し、カスタマイズしたコピーのシンボリックリンクを作成します。
+
+ServerAlias &quot;\*.local&quot;に一致する仮想ホストが常に使用可能で、内部Adobeプロセスに必要な localhost も使用できることを確認します。
 
 * `conf.d/dispatcher_vhost.conf`
 
