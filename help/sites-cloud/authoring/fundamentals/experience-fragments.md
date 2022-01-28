@@ -2,9 +2,9 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1494'
 ht-degree: 99%
 
 ---
@@ -353,10 +353,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 
 デフォルトでは、エクスペリエンスフラグメントは HTML 形式で配信され、AEM とサードパーティチャネルのどちらでも同じように使用できます。
 
-Adobe Targetへの書き出しについては、以下を参照してください。
+Adobe Target への書き出しには、JSON も使用できます。次のページを参照してください。
 
 * [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [エクスペリエンスフラグメントのAdobe Targetへの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
-
-<!-- * JSON can also be used, see [Target Integration with Experience Fragments](/help/sites-cloud/authoring/fundamentals/experience-fragments-target.md)
--->
