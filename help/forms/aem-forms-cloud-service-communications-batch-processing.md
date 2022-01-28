@@ -2,10 +2,10 @@
 title: Experience Manager  [!DNL Forms]  as a Cloud Service の通信バッチ処理
 description: ブランド志向のパーソナライズされたコミュニケーションを作成する方法は？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 99%
+source-wordcount: '2250'
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 99%
 
 バッチ操作とは、一連のレコードに対して、スケジュールされた間隔で類似したタイプの複数ドキュメントを生成するプロセスです。バッチ操作には、設定（定義）と実行という 2 つの部分があります。
 
-* **設定（定義）**：バッチ設定には、生成されたドキュメントに設定する様々なアセットとプロパティに関する情報が格納されます。例えば、XDP または PDF テンプレートに関する詳細と使用する顧客データの場所、および出力 PDF ドキュメントの様々なプロパティの指定を提供します。
+* **設定（定義）**：バッチ設定には、生成されたドキュメントに設定する様々なアセットとプロパティに関する情報が格納されます。例えば、XDP または テンプレートに関する詳細と使用する顧客データの場所、および出力 PDF ドキュメントの様々なプロパティの指定を提供します。
 
-* **実行**：バッチ操作を開始するには、実行を指定し、バッチ設定名をバッチ実行 API に渡します。
+* **実行**:バッチ操作を開始するには、バッチ設定名をバッチ実行 API に渡します。
 
 ### バッチ操作のコンポーネント {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ ht-degree: 99%
 
 **バッチデータストア設定（USC）**：バッチデータ設定は、バッチ API 用の BLOB ストレージの特定のインスタンスを設定する場合に役立ちます。顧客が所有する Microsoft Azure BLOB ストレージ内で入力および出力の場所を指定できます。
 
-**バッチ API**：バッチ設定を作成し、この設定に基づいてバッチを実行して、PDF または XDP テンプレートをデータと結合し、PDF、PS、PCL、DPL、IPL、ZPL 形式の出力を生成するバッチ操作を作成および実行できます。Forms as a Cloud Service の通信には、作成、読み取り、更新および削除操作用のバッチ API が用意されています。
+**バッチ API**:バッチ設定を作成し、これらの設定に基づいてバッチを実行して、PDFまたは XDP テンプレートをデータと結合し、PDF、PS、PCL、DPL、IPL、ZPL 形式の出力を生成できます。 通信は、設定管理とバッチ実行のためのバッチ API を提供します。
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 ### バッチの作成 {#create-a-batch}
 
-バッチを作成するには、 `GET /config` API を使用します。HTTP リクエストの本文に次の必須プロパティを含めます。
-
+バッチを作成するには、 `POST /config` API を使用します。HTTP リクエストの本文に次の必須プロパティを含めます。
 
 * **configName**：バッチの一意の名前を指定します。例：`wknd-job`
 * **dataSourceConfigUri**：バッチデータストア設定の場所を指定します。設定の相対パスまたは絶対パスを指定できます。例：`/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**：出力形式として PDF または PRINT を指定します。PRINT 出力タイプを使用する場合は、`printedOutputOptionsList` プロパティに、少なくとも 1 つの印刷オプションを指定します。印刷オプションはレンダリングタイプによって識別されるので、現在のところ、同じレンダリングタイプを持つ複数の印刷オプションは許可されていません。サポートされる形式は、PS、PCL、DPL、IPL および ZPL です。
+* **outputTypes**:出力形式を指定します。PDFと印刷。 PRINT 出力タイプを使用する場合は、`printedOutputOptionsList` プロパティに、少なくとも 1 つの印刷オプションを指定します。印刷オプションはレンダリングタイプによって識別されるので、現在のところ、同じレンダリングタイプを持つ複数の印刷オプションは許可されていません。サポートされる形式は、PS、PCL、DPL、IPL および ZPL です。
 
 * **テンプレート**：テンプレートの絶対パスまたは相対パスを指定します。例：`crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-バッチを作成したら、`GET /config /[configName]/execution/[execution-identifier]` を使用してバッチの詳細を表示できます。
+以下を使用できます。 `GET /config /[configName]` をクリックして、バッチ設定の詳細を確認します。
 
 ### バッチの実行 {#run-a-batch}
 
@@ -150,14 +149,14 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 ### バッチステータスの確認 {#status-of-a-batch}
 
-バッチステータスを取得するには、`GET /config /[configName]/execution/[execution-identifier]` を使用します。実行識別子は、バッチ実行リクエストに対する HTTP 応答のヘッダーに含まれます。例えば、次の画像は、バッチジョブの実行識別子を示しています。
+バッチステータスを取得するには、`GET /config /[configName]/execution/[execution-identifier]` を使用します。実行識別子は、バッチ実行リクエストに対する HTTP 応答のヘッダーに含まれます。
 
 ステータスリクエストの応答には、ステータスセクションが含まれます。バッチジョブのステータス、既にパイプラインに存在する（既に読み取られ、処理中の）レコード数、各 outputType／renderType のステータス (処理中、成功、失敗した項目の数) に関する詳細が提供されます。ステータスには、バッチジョブの開始時刻と終了時刻、およびエラーに関する情報（存在する場合）も含まれます。終了時刻は、バッチ実行が実際に完了する時刻 -1 です。
 
 >[!NOTE]
 >
 >* 複数の PRINT 形式を要求する場合、ステータスには複数のエントリが含まれます。例えば、PRINT/ZPL、PRINT/IPL などです。
->* バッチジョブは、すべてのレコードを同時に読み取るわけではなく、ジョブはレコードを継続的に読み取り、レコード数を増分していきます。そのため、ステータスは実行ごとに異なるレコード数を返します。
+>* バッチジョブは、すべてのレコードを同時に読み取るわけではなく、ジョブはレコードを継続的に読み取り、レコード数を増分していきます。したがって、すべてのレコードが読み取られるまで、ステータスは —1 を返します。
 
 
 ### 生成されたドキュメントの表示 {#view-generated-documents}
@@ -224,8 +223,6 @@ XFA ストリームを含んでいない PDF ドキュメントは、PostScript�
 API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、API リファレンスドキュメントを参照してください。API リファレンスドキュメントは、.yaml 形式で入手できます。[バッチ API](assets/batch-api.yaml) ファイルをダウンロードし、postman にアップロードして API の機能を確認できます。
 
 ## 既知の問題 {#known-issues}
-
-* データ xml ファイルに XML 宣言ヘッダーが含まれていないことを確認してください。例：`<?xml version="1.0" encoding="UTF-8"?>`
 
 * PRINT を指定した場合、特定のレンダリングタイプは印刷オプションリストで 1 回だけ指定できます。 例えば、PCL のレンダリングタイプを指定する印刷オプションを 2 つ設定することはできません。
 

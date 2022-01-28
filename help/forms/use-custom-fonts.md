@@ -1,9 +1,9 @@
 ---
 title: 'カスタムフォントを使用 '
 description: 'カスタムフォントを使用 '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP
 
 以下が可能です。 [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) をPDF文書に フォントが埋め込まれると、PDFドキュメントはすべてのプラットフォームで同じ (Look) で表示されます。 一貫した外観と操作性を確保するために、埋め込みフォントを使用しました。 フォントが埋め込まれていない場合、フォントのレンダリングは、PDFビューアクライアントのレンダリング設定に依存します。 フォントがクライアントマシンで使用可能な場合、PDFは指定されたフォントを使用します。使用しない場合、PDFはフォールバックフォントでレンダリングされます。
 
-## Formsas a Cloud Service環境へのカスタムフォントの追加
+## Formsas a Cloud Service環境へのカスタムフォントの追加 {#custom-fonts-cloud-service}
 
 カスタムフォントをCloud Service環境に追加するには：
 
-1. セットアップし、ローカル開発プロジェクトを開きます。 任意の IDE を使用できます。
+1. を設定して、 [ローカル開発計画](setup-local-development-environment.md). 任意の IDE を使用できます。
 1. プロジェクトの最上位フォルダー構造で、カスタムフォントを保存するフォルダーを作成し、そのフォルダーにカスタムフォントを追加します。 例： fonts/src/main/resources
    ![フォントフォルダー](assets/fonts.png)
 
@@ -71,3 +71,21 @@ Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP
    ```
 
 1. 更新されたコードを確認し、 [パイプラインを実行](/help/implementing/cloud-manager/deploy-code.md) フォントを環境にデプロイする場合は、Cloud Serviceを使用します。
+
+1. コマンドプロンプトを開き、ローカルプロジェクトフォルダに移動して、次のコマンドを実行します。 フォントを.jar ファイルにパッケージ化します。 プロジェクトのローカルデプロイメントには.jar ファイルを使用できます。
+
+```shell
+mvn clean install
+```
+
+## ローカルのFormsCloud Service開発環境へのカスタムフォントの追加 {#custom-fonts-cloud-service-sdk}
+
+1. ローカル開発環境を開始します。
+1. に移動します。 [crx-repository]\install フォルダ
+1. カスタムフォントと関連するデプロイメントコードを含む.jar ファイルを install フォルダーに配置します。 .jar ファイルがない場合は、 [Formsas a Cloud Service環境へのカスタムフォントの追加](#custom-fonts-cloud-service) セクションを開いて、ファイルを生成します。
+1. を実行します。 [Docker ベースの SDK 環境](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >更新された.jar ファイルをデプロイして、ローカルデプロイメント環境にカスタムフォントを追加または削除する場合は、Docker ベースの SDK 環境を停止し、起動します。
