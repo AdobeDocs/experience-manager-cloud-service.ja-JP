@@ -1,18 +1,18 @@
 ---
-title: ページに Dynamic Media アセットを追加する
+title: ページへのDynamic Media Assets の追加
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media コンポーネントをページに追加する方法を説明します。
 contentOwner: Rick Brough
-feature: アセット管理
+feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
-source-wordcount: '3218'
-ht-degree: 100%
+source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# ページに Dynamic Media アセットを追加する{#adding-dynamic-media-assets-to-pages}
+# ページへのDynamic Media Assets の追加{#adding-dynamic-media-assets-to-pages}
 
 Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加します。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
 
@@ -120,6 +120,7 @@ Dynamic Media コンポーネントはスマートであり、追加している
 >
 >* 同じページで使用されている Dynamic Media コンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
+
 >
 >そのページの各 Dynamic Media コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされていません。
 >
@@ -279,6 +280,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 >
 >* 同じページで使用されているインタラクティブメディアコンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
+
 >
 >そのページの各インタラクティブメディアコンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされていません。
 >
@@ -319,6 +321,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 >
 >* 同じページで使用されている&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントの複数のインスタンス。
 >* 各インスタンスが同じアセットタイプを使用している。
+
 >
 >そのページの各&#x200B;**[!UICONTROL パノラマメディア]**&#x200B;コンポーネントにそれぞれ異なるビューアプリセットを割り当てることは、サポートされていません。
 >
