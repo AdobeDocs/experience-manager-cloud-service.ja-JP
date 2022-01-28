@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 96%
+source-wordcount: '2288'
+ht-degree: 92%
 
 ---
 
@@ -105,13 +105,34 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 **デバッグログレベルのアクティベート**
 
-デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、
+デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、次のプロパティを debug モードに更新します。
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-このプロパティを debug に設定してください。多くのログが生成されるので、デバッグログレベルのログを不必要に長く残さないでください。デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
+例えば、 `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` を次の値に設定します。
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+DEBUG ログレベルのログを必要以上に長く残さないでください。この場合、多数のエントリが生成されます。
+
+常に次の場所にログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、異なるAEM環境に個別のログレベルを設定できます。 `DEBUG` 開発中に 次に例を示します。
+
+|環境 |実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 | | - | - | - | |開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | |ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | |実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | ERROR |
+
+デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
+
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 ログレベルは次のとおりです。
 
