@@ -2,9 +2,9 @@
 title: Experience Manager  [!DNL Forms]  as a Cloud Service の通信バッチ処理
 description: ブランド志向のパーソナライズされたコミュニケーションを作成する方法は？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
+source-git-commit: f8f9aeb12d7a988deaf1ceed2cdf29519f8102dd
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1698'
 ht-degree: 94%
 
 ---
@@ -168,55 +168,6 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 >[!NOTE]
 >
 >バッチの処理は、入力レコードの数とテンプレートの複雑さに応じて、時間がかかる場合があります。数分待ってから、出力ファイルの保存先フォルダーを確認してください。
-
-## 検討事項  {#considerations-for-communications-apis}
-
-### フォームデータ {#form-data}
-
-通信 API は、通常 Designer で作成されるフォームデザインと、XML フォームデータの両方を入力として受け付けます。ドキュメントにデータを入力するには、入力先となるすべてのフォームフィールドの XML フォームデータに XML 要素が存在する必要があります。XML 要素名は、フィールド名と一致する必要があります。XML 要素がフォームフィールドに対応していない場合や、XML 要素名がフィールド名と一致しない場合、XML 要素は無視されます。XML 要素の表示順序を一致させる必要はありません。対応する値で XML 要素が指定される点が重要です。
-
-次のローン申し込みフォームサンプルについて考えてみましょう。
-
-![ローン申し込みフォーム](assets/loanFormData.png)
-
-このフォームデザインにデータを結合するには、フォームに対応する XML データソースを作成します。次の XML は、住宅ローン申し込みフォームサンプルに対応する XML データソースを表しています。
-
-```XML
-<?xml version="1.0" encoding="UTF-8" ?>
-- <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
-- <xfa:data>
-- <data>
-    - <Layer>
-        <closeDate>1/26/2007</closeDate>
-        <lastName>Johnson</lastName>
-        <firstName>Jerry</firstName>
-        <mailingAddress>JJohnson@NoMailServer.com</mailingAddress>
-        <city>New York</city>
-        <zipCode>00501</zipCode>
-        <state>NY</state>
-        <dateBirth>26/08/1973</dateBirth>
-        <middleInitials>D</middleInitials>
-        <socialSecurityNumber>(555) 555-5555</socialSecurityNumber>
-        <phoneNumber>5555550000</phoneNumber>
-    </Layer>
-    - <Mortgage>
-        <mortgageAmount>295000.00</mortgageAmount>
-        <monthlyMortgagePayment>1724.54</monthlyMortgagePayment>
-        <purchasePrice>300000</purchasePrice>
-        <downPayment>5000</downPayment>
-        <term>25</term>
-        <interestRate>5.00</interestRate>
-    </Mortgage>
-</data>
-</xfa:data>
-</xfa:datasets>
-```
-
-### サポートされているドキュメントタイプ {#supported-document-types}
-
-通信 API のレンダリング機能に完全にアクセスするには、XDP ファイルを入力として使用することをお勧めします。場合によっては、PDF ファイルを使用できます。ただし、PDF ファイルを入力として使用する場合は、制限があります。
-
-XFA ストリームを含んでいない PDF ドキュメントは、PostScript、PCL または ZPL としてレンダリングできません。通信 API は、XFA ストリーム（Designer で作成されたフォーム）を使用して PDF ドキュメントをレーザー形式およびラベル形式にレンダリングできます。PDF ドキュメントが署名済み、証明済み、（AEM Forms Reader Extensions サービスを使用して適用された）使用権限を含んでいる、のいずれかの場合、これらの印刷形式にはレンダリングできません。
 
 ## API リファレンスドキュメント
 
