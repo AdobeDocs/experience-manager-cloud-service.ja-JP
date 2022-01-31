@@ -1,9 +1,9 @@
 ---
 title: 'カスタムフォントを使用 '
 description: 'カスタムフォントを使用 '
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: 0bfd75e517e03110d58575b21551d1d553fa36bf
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP
 カスタムフォントをCloud Service環境に追加するには：
 
 1. を設定して、 [ローカル開発計画](setup-local-development-environment.md). 任意の IDE を使用できます。
-1. プロジェクトの最上位フォルダー構造で、カスタムフォントを保存するフォルダーを作成し、そのフォルダーにカスタムフォントを追加します。 例： fonts/src/main/resources
+1. プロジェクトの最上位のフォルダー構造で、カスタムフォントを保存し、そのフォルダーにカスタムフォントを追加するフォルダー（モジュール）を作成します。 例： fonts/src/main/resources
    ![フォントフォルダー](assets/fonts.png)
 
-1. 開発プロジェクトの最上位 pom.xml ファイルを開きます。
+1. 開発プロジェクトのフォントモジュールの pom.xml ファイルを開きます。
 1. 追加 `<Font-Archive-Version>` .pom ファイルのマニフェストエントリを次のように指定し、バージョンの値を 1 に設定します。
 
    ```xml
@@ -72,11 +72,11 @@ Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP
 
 1. 更新されたコードを確認し、 [パイプラインを実行](/help/implementing/cloud-manager/deploy-code.md) フォントを環境にデプロイする場合は、Cloud Serviceを使用します。
 
-1. コマンドプロンプトを開き、ローカルプロジェクトフォルダに移動して、次のコマンドを実行します。 フォントを.jar ファイルにパッケージ化します。 プロジェクトのローカルデプロイメントには.jar ファイルを使用できます。
+1. （オプション）コマンドプロンプトを開き、ローカルプロジェクトフォルダに移動して、次のコマンドを実行します。 このコマンドは、フォントを関連情報と共に.jar ファイルにパッケージ化します。 .jar ファイルを使用して、FormsCloud Serviceローカル開発環境にカスタムフォントを追加できます。
 
-```shell
-mvn clean install
-```
+   ```shell
+   mvn clean install
+   ```
 
 ## ローカルのFormsCloud Service開発環境へのカスタムフォントの追加 {#custom-fonts-cloud-service-sdk}
 
@@ -88,4 +88,4 @@ mvn clean install
 
    >[!NOTE]
    >
-   >更新された.jar ファイルをデプロイして、ローカルデプロイメント環境にカスタムフォントを追加または削除する場合は、Docker ベースの SDK 環境を停止し、起動します。
+   >更新されたカスタムフォント.jar ファイルをローカルデプロイメント環境にデプロイする場合は、Docker ベースの SDK 環境を再起動します。

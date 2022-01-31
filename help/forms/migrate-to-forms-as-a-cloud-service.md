@@ -7,7 +7,7 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 97%
@@ -33,7 +33,7 @@ ht-degree: 97%
 
 * [Forms — デジタル登録を有効にする](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) FormsCloud Serviceプログラムのオプション [パイプラインを実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja).
 
-![ドライランの結果](assets/enable-add-on.png)
+   ![ドライランの結果](assets/enable-add-on.png)
 
 * クラウドサービス環境では、移行ユーティリティはユーザーマッピングツールおよびコンテンツ転送ツールと連携して機能します。移行ユーティリティは、[!DNL AEM Forms] アセットをクラウドサービスと互換性のあるものにし、コンテンツ転送ツールは、コンテンツを [!DNL AEM Forms] 環境から[!DNL AEM] as a Cloud Service 環境に移行します。移行ユーティリティを使用する前に、[AEM as a Cloud Service に移行する](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=ja)プロセスを学習します。このプロセスには次の 2 つのツールがあります。
    * [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)：ユーザーマッピングツールは、対応するアドビの IMS ユーザーアカウントでユーザーをマッピングするのに役立ちます。

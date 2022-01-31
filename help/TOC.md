@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
 workflow-type: tm+mt
-source-wordcount: '3472'
-ht-degree: 92%
+source-wordcount: '3480'
+ht-degree: 91%
 
 ---
 
@@ -465,6 +465,7 @@ ht-degree: 92%
       + [通信 API](/help/forms/aem-forms-cloud-service-communications.md)
       + [通信 API のバッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [カスタムフォントをPDF文書で使用](/help/forms/use-custom-fonts.md)
+      + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
    + [よくある質問](/help/forms/faq.md)
    + [既知の問題](/help/forms/known-issues.md)

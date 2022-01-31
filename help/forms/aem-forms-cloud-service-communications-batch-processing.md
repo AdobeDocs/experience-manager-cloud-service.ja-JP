@@ -2,10 +2,10 @@
 title: Experience Manager  [!DNL Forms]  as a Cloud Service の通信バッチ処理
 description: ブランド志向のパーソナライズされたコミュニケーションを作成する方法は？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 95%
+source-wordcount: '1957'
+ht-degree: 94%
 
 ---
 
@@ -221,44 +221,3 @@ XFA ストリームを含んでいない PDF ドキュメントは、PostScript�
 ## API リファレンスドキュメント
 
 API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、API リファレンスドキュメントを参照してください。API リファレンスドキュメントは、.yaml 形式で入手できます。[バッチ API](assets/batch-api.yaml) ファイルをダウンロードし、postman にアップロードして API の機能を確認できます。
-
-## 既知の問題 {#known-issues}
-
-* PRINT を指定した場合、特定のレンダリングタイプは印刷オプションリストで 1 回だけ指定できます。 例えば、PCL のレンダリングタイプを指定する印刷オプションを 2 つ設定することはできません。
-
-* バッチの実行中に、バッチ設定で使用されるデータソース USC 設定／Azure クラウド設定を変更しないでください。実行後でも更新が必要な場合は、既存のバッチ設定で使用されている設定を更新する代わりに、設定のコピーを作成します。
-
-## ベストプラクティス {#best-practices}
-
-* Experience Manager Cloud Service が使用するクラウド領域で、データファイルの blob コンテナストアをホストすることをお勧めします。
-
-## よくある質問  {#faq}
-
-**監視フォルダーやその他のストレージメカニズムを使用して、入出力を保存することはできますか？**
-
-現時点では、Microsoft Azure ストレージを使用して、入力データと生成されたドキュメントを保存できます。Microsoft Azure ストレージは、[データ移動操作の自動化](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10)に対する様々なオプションを提供しています。
-
-**Microsoft Azure ストレージアカウントは Experience Manager Forms Cloud Service ライセンスに含まれていますか？**
-
-Microsoft Azure ストレージアカウントは、Experience Manager Forms Cloud Service ライセンスとは独立したものです。
-
-**通信 API はデータを Experience Manager Forms Cloud Service サーバーに保存しますか？**
-
-入力および出力データは、Microsoft Azure ストレージにのみ保存されます。
-
-**通信 API は Experience Manager Forms Cloud Service でのみ使用できますか？オンプレミス環境でも同様の機能を利用できますか？**
-
-AEM Forms Output サービスを使用すると、テンプレート（XFA または PDF）と顧客データを組み合わせて、PDF、PS、PCL、ZPL 形式のドキュメントを生成できます。
-
-オンプレミス環境と比較すると、Cloud Service は、自動スケーリングとコスト効率のメリットがさらに大きくなります。
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**複数のバッチ操作を同時に実行できますか？**
-はい、複数のバッチ操作を同時に実行できます。競合を避けるために、操作ごとに異なるソースフォルダーと出力先フォルダーを常に使用するようにします。

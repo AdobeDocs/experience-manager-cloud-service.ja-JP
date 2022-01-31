@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 96%
+source-wordcount: '2250'
+ht-degree: 99%
 
 ---
 
@@ -38,11 +38,11 @@ API から提供されるすべての API、パラメーター、認証方法お
 
 ## 通信の有効化
 
-Formsas a Cloud Service環境で通信を有効にするには：
+Forms as a Cloud Service 環境で通信を有効にするには：
 
-1. Cloud Manager にログインし、AEM Formsas a Cloud Serviceインスタンスを開きます。
+1. Cloud Manager にログインし、AEM Forms as a Cloud Service インスタンスを開きます。
 
-1. 「プログラムを編集」オプションを開き、「ソリューションとアドオン」タブに移動して、 **[!UICONTROL Forms — コミュニケーション]** オプション。
+1. 「プログラムを編集」オプションを開き、「ソリューションとアドオン」タブに移動して、「**[!UICONTROL Forms - 通信]**」オプションを選択します。
 
    <!-- ![Communications](assets\communications.png)
 
@@ -267,24 +267,8 @@ XCI オプションを次の表に示します。
 | config/present/pdf/tagged | 出力 PDF ドキュメントへのタグの組み込みを制御します。タグは、PDF のコンテキストでは、ドキュメントの論理構造を公開するためにドキュメントに組み込まれる追加情報です。タグは、アクセシビリティの支援や書式の再設定に役立ちます。例えば、スクリーンリーダーがテキストの途中でページ番号を読み上げてしまわないように、ページ番号を装飾としてタグ付けすることができます。タグを使用すると、ドキュメントの有用性が高まる反面、ドキュメントのサイズが大きくなり、作成にかかる処理時間も長くなります。 |
 | config/present/pdf/version | 生成する PDF ドキュメントのバージョンを指定します。 |
 
-### 既知の問題
-
-- テンプレートおよび XCI 設定ファイルのサイズが 16 KB を超えていることを確認してください。
-
-- データ xml ファイルに XML 宣言ヘッダーが含まれていないことを確認してください。例：`<?xml version="1.0" encoding="UTF-8"?>`
-
-- バッチ設定の場合、OutputType（PDF、PRINT）と RenderType（PostScript、PCL、IPL、ZPL など）の値の組み合わせのインスタンスは 1 つだけ許可されています。
-
-- バッチの実行中に、バッチ設定で使用されるデータソース USC 設定／Azure クラウド設定を変更しないでください。実行後でも更新が必要な場合は、既存のバッチ設定で使用されている設定を更新する代わりに、設定のコピーを作成します。
-
-### ベストプラクティス
-
-- AEM Cloud Service が使用するクラウド領域で、データファイルの blob コンテナストアをホストすることをお勧めします。
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
