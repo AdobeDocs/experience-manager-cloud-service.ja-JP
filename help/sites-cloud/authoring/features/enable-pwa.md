@@ -2,10 +2,10 @@
 title: プログレッシブ Web アプリケーション機能の有効化
 description: AEM Sites では、コンテンツ作成者がコーディングの代わりにシンプルな設定で、任意のサイトに対してプログレッシブ Web アプリケーション機能を有効にすることができます。
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2032'
-ht-degree: 100%
+source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+workflow-type: tm+mt
+source-wordcount: '2004'
+ht-degree: 99%
 
 ---
 
@@ -21,12 +21,9 @@ ht-degree: 100%
 >* サイトとコンテンツ構造に関する知識
 >* キャッシュ方法の理解
 >* 開発チームによるサポート
+
 >
 >この機能を使用する前に、開発チームに相談して、プロジェクトに最適な利用方法を決めることをお勧めします。
-
->[!NOTE]
->
->このドキュメントで説明する機能は、[ AEM as a Cloud Service の 2021 年 3 月リリース](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=ja)で利用可能になる予定です。
 
 ## はじめに {#introduction}
 
@@ -58,7 +55,7 @@ PWA では、ユーザーはサイトのローカルコピーを保持するの�
 
 >[!NOTE]
 >
->アドビは、カスタムコンポーネントまたは[コアコンポーネントから拡張](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja)されていないコンポーネントで PWA 機能を使用することはお勧めしません。
+>Adobeは、カスタムコンポーネントのPWA機能の使用はお勧めしません。また、カスタムコンポーネントの使用はお勧めしません。 [をコアコンポーネントから拡張しました。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -136,7 +133,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 これで、[PWA をサポートするようにサイトを設定できたので、](#enabling-pwa-for-your-site)体験してみてください。
 
-1. [サポートされているブラウザー](https://developer.mozilla.org/ja-JP/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
+1. [サポートされているブラウザー](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)でサイトにアクセスします。
 1. ブラウザーのアドレスバーに新しいアイコンが表示され、サイトがローカルアプリケーションとしてインストールできることが示されます。
    * ブラウザーによってアイコンは異なり、ローカルアプリケーションとしてインストールできることを示す通知（バナーやダイアログボックスなど）が表示される場合もあります。
 1. AEM Desktop App をインストールします。
@@ -180,7 +177,7 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * アイコンは、サイズが 512x512 ピクセルの png ファイルである必要があります。
    * アイコンは [DAM に保存](/help/assets/overview.md)されている必要があります。
 
-### キャッシュ管理（詳細）{#offline-configuration}
+### キャッシュ管理（詳細） {#offline-configuration}
 
 これらの設定により、このサイトの一部はオフラインで使用できるようになり、訪問者のデバイスでローカルに使用できるようになります。Web アプリケーションのキャッシュを制御してネットワークリクエストを最適化し、オフラインエクスペリエンスをサポートできます。
 
@@ -207,18 +204,18 @@ AEM Sites では PWA 機能の一部が利用できます。これらには、�
 
 また、アドビは、PWA を実装する際に次のような推奨をしています。
 
-### 事前キャッシュするリソースの数を最小限に抑える {#minimize-precache}
+### 事前キャッシュするリソースの数を最小限に抑える  {#minimize-precache}
 
 アドビでは、事前キャッシュするページ数を制限するよう勧めています。
 
 * ライブラリを埋め込むと、事前キャッシュ時に管理するエントリの数を減らすことができます。
 * 事前キャッシュする画像のバリエーション数を制限します。
 
-### プロジェクトスクリプトやスタイルシートが安定した後で PWA を有効にする {#pwa-stabilized}
+### プロジェクトスクリプトやスタイルシートが安定した後で PWA を有効にする  {#pwa-stabilized}
 
 クライアントライブラリにはキャッシュセレクタが追加され、`lc-<checksumHash>-lc` のようなパターンで配信されます。ライブラリを構成するファイル（および依存関係）が変更されるたびに、このセレクターは変更されます。サービスワーカーが事前にキャッシュするクライアントライブラリを一覧表示し、新しいバージョンを参照する場合は、手動でエントリを取得して更新します。その結果、プロジェクトスクリプトやスタイルシートが安定した後は、サイトを PWA に設定することをお勧めします。
 
-### 画像バリエーションの数を最小限に抑える {#minimize-variations}
+### 画像バリエーションの数を最小限に抑える  {#minimize-variations}
 
 AEM コアコンポーネントの画像コンポーネントは、取得に最適な、フロントエンドのレンディションを 1 つ決定します。このメカニズムには、そのリソースの最終変更時刻に対応するタイムスタンプも含まれます。このメカニズムにより、PWA の事前キャッシュの設定が複雑になります。
 
