@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 5%
@@ -43,11 +43,11 @@ Dynamic Mediaの公開設定ページでは、AdobeDynamic Mediaサーバーか�
 1. Image Server ページで、Image Server — 公開コンテキストを設定し、5 つのタブを使用してデフォルトの公開設定を指定します。
 
    * [画像サーバー](#image-server)
-   * [「Security」タブ](#security-tab)
-   * [カタログ管理](#catalog-management-tab) タブ
-   * [要求属性](#request-attributes-tab) タブ
-   * [共通のサムネール属性](#common-thumbnail-attributes-tab) タブ
-   * [カラーマネジメント属性](#color-management-attributes-tab) タブ
+      * [「Security」タブ](#security-tab)
+      * [カタログ管理](#catalog-management-tab) タブ
+      * [要求属性](#request-attributes-tab) タブ
+      * [共通のサムネール属性](#common-thumbnail-attributes-tab) タブ
+      * [カラーマネジメント属性](#color-management-attributes-tab) タブ
 
    ![Dynamic Media Publish Setup ページ](/help/assets/assets-dm/dm-publish-setup.png)
    *Dynamic Media公開設定ページ、**[!UICONTROL 要求属性]**」タブが選択されています。*<br><br>

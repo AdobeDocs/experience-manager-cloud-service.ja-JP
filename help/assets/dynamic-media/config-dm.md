@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
-source-wordcount: '3514'
-ht-degree: 92%
+source-wordcount: '3420'
+ht-degree: 90%
 
 ---
 
@@ -115,14 +115,15 @@ To migrate any custom viewer presets and configurations that you have created fr
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
    > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
 
-1. Experience Manager as a Cloud Service では、Dynamic Media コンテンツが公開される前に安全にプレビューするために、デフォルトでは、トークンベースの検証が使用されます。IP を許可リストに登録して、ユーザーがコンテンツを安全にプレビューできるようにすることもできます。この設定には、以下を実行します。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 公開前にDynamic Mediaコンテンツを安全にプレビューするには、Experience Manageras a Cloud Serviceではトークンベースの検証が使用されるので、Experience Manager作成者は、Dynamic Mediaコンテンツをデフォルトでプレビューできます。 ただし、次の操作は可能です。 *許可リスト* コンテンツを安全にプレビューするためのアクセスをユーザーに提供する IP の数が増えました。 このアクションをas a Cloud ServiceのExperience Managerで設定するには [Image Server 用のDynamic Media公開設定の指定 — 「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、アカウントにログインします。資格情報とログオンの詳細は、プロビジョニング時にアドビから付与されたものです。この情報をお持ちでない場合は、アドビカスタマーサポートにお問い合わせください。
-   * ページ右上付近のナビゲーションバーで、**[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 公開設定]**／**[!UICONTROL Image Server]** に移動します。
-   * Image Server 公開ページの「**[!UICONTROL 公開コンテキスト]**」ドロップダウンリストで、「**[!UICONTROL 画像サービングをテスト]**」を選択します。
-   * 「クライアントアドレスフィルター」で、**[!UICONTROL 「追加」]**&#x200B;を選択します。
-   * アドレスを有効にするには、チェックボックスをオンにし、Experience Manager オーサーインスタンスの IP アドレス（Dispatcher IP ではない）を入力します。
-   * 「**[!UICONTROL 保存]**」を選択します。
+<!--
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+    * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+    * For the Client Address Filter, select **[!UICONTROL Add]**.
+    * To enable (turn on) the address, select the check box, then enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
+    * Select **[!UICONTROL Save]**. -->
 
 これで基本設定は完了です。Dynamic Media を使用する準備が整いました。
 
@@ -229,7 +230,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 
 画像を要求する際にカラー補正を有効にするためのデフォルトのカラープロパティを設定するには：
 
-1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、プロビジョニング時に提供された資格情報を使用してアカウントにログインします。
+1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、プロビジョニング時に提供された資格情報を使用してアカウントにログインします。
 1. **[!UICONTROL 設定／アプリケーション設定]**&#x200B;に移動します。
 1. 「**[!UICONTROL 公開設定]**」領域を展開して、「**[!UICONTROL Image Server]**」を選択します。パブリッシュインスタンスのデフォルトを設定する際に、「**[!UICONTROL 公開コンテキスト]**」を「**[!UICONTROL 画像サービング]**」に設定します。
 1. 例えば「**[!UICONTROL カラーマネジメント属性]**」領域のプロパティなど、変更が必要なプロパティにスクロールします。
