@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 54%
+source-wordcount: '715'
+ht-degree: 52%
 
 ---
 
@@ -31,13 +31,13 @@ ht-degree: 54%
 
 * **基本認証**:基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。 クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。 例えば、管理者/管理者として認証するために、クライアントが基本を送信する [base64 エンコードされた文字列ユーザー名]: [base64 でエンコードされた文字列パスワード].
 
-* **トークンベースの認証：** トークンベースの認証では、アクセストークン（Bearer 認証トークン）を使用してAEMにas a Cloud Serviceのリクエストを送信します。 AEM Forms as a Cloud Serviceは、アクセストークンを安全に取得する API を提供します。 トークンを取得して使用し、要求を認証するには、次の手順を実行します。
+* **トークンベースの認証：** トークンベースの認証では、アクセストークン（Bearer 認証トークン）を使用して、as a Cloud ServiceのExperience Managerにリクエストを送信します。 AEM Forms as a Cloud Serviceは、アクセストークンを安全に取得する API を提供します。 トークンを取得して使用し、要求を認証するには、次の手順を実行します。
 
-   1. [開発者コンソールからAEMのas a Cloud Serviceの資格情報を取得します。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [環境へのAEMas a Cloud Serviceの資格情報のインストール](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). クラウドサービスにリクエストを送信（呼び出しをおこなう）ように設定された (AEM Server、Web サーバーまたはその他の非アプリケーションサーバー )。
+   1. [開発者コンソールからExperience Managerのas a Cloud Serviceの資格情報を取得します。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [環境にExperience Manageras a Cloud Serviceの資格情報をインストールする](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). クラウドサービスにリクエストを送信（呼び出しをおこなう）ように設定された (AEM Server、Web サーバーまたはその他の非アプリケーションサーバー )。
    1. [JWT トークンを生成し、アクセストークン用のAdobe IMSAPI と交換しました](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. アクセストークンを Bearer 認証トークンとして使用してAEM API を実行します。
-   1. [AEM 環境のテクニカルアカウントユーザーに適切な権限を設定する](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. アクセストークンを BearerExperience Managerトークンとして使用して認証 API を実行します。
+   1. [テクニカルアカウントユーザーに対して、Experience Manager環境で適切な権限を設定する](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ ht-degree: 54%
 
 ### 前提条件 {#pre-requisites}
 
-同期 API を使用するには、以下が必要です。
+同期 API を使用するには、次が必要です。
 
 * PDF または XDP テンプレート
 * [テンプレートと結合するデータ](#form-data)
@@ -61,9 +61,9 @@ ht-degree: 54%
 1. 作成／フォルダーをクリックし、フォルダーを作成します。フォルダーを開きます。
 1. 作成／ファイルをアップロードをクリックし、テンプレートをアップロードします。
 
-### 同期 API を使用してドキュメントを生成する
+### 同期 API を使用したドキュメントの生成
 
-個別の API を使用できるのは次の場合です。
+別の API を使用できるようになりました。
 
 * テンプレートからPDFドキュメントを生成し、そのドキュメントにデータを結合します。
 * XDP ファイルまたはPDFドキュメントから PostScript(PS)、Printer Command Language(PCL)、Zebra Printing Language(ZPL) ドキュメントを生成します。
