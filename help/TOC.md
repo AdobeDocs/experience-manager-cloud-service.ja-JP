@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 634644b55f9fbe7d0abe4038da8b8ebb37cd7892
+source-git-commit: 80483d812d8f8ee6a942d21a87a281a98feddbdd
 workflow-type: tm+mt
-source-wordcount: '3480'
+source-wordcount: '3485'
 ht-degree: 91%
 
 ---
@@ -461,9 +461,9 @@ ht-degree: 91%
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
       + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
    + Communications の使用 {#using-communications}
-      + [はじめに](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [通信 API](/help/forms/aem-forms-cloud-service-communications.md)
-      + [通信 API のバッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [はじめに 通信 API へ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [通信 API — 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
+      + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [カスタムフォントをPDF文書で使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
    + [ [!DNL AEM Forms]  as a Cloud Service への移行](/help/forms/migrate-to-forms-as-a-cloud-service.md)
