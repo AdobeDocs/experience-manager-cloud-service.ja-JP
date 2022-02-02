@@ -4,7 +4,7 @@ description: ビデオのエンコーディング、YouTubeへのビデオの公
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
+source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
 workflow-type: tm+mt
 source-wordcount: '9476'
 ht-degree: 98%
@@ -24,7 +24,6 @@ ht-degree: 98%
 >Dynamic Media のビデオを操作する前に、Adobe Experience Manager の管理者が既に Dynamic Media Cloud Services を有効にして設定を完了していることを確認してください。
 >
 >* Dynamic Media 設定の [Dynamic Media Cloud Services の設定](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)、および [Dynamic Media のトラブルシューティング](/help/assets/dynamic-media/troubleshoot-dm.md)を参照してください。
-
 >
 
 
@@ -40,7 +39,7 @@ ht-degree: 98%
       * 詳しくは、[デジタルアセットの整理](/help/assets/organize-assets.md)を参照してください。
    * フォルダーにプライマリソースビデオをアップロードします。フォルダーにビデオを追加すると、そのフォルダーに割り当てたビデオ処理プロファイルに従ってビデオがエンコードされます。
 
-      * Dynamic Mediaは主に、最大長が 30 分で、解像度が 50 x 50 を超える短形式のビデオをサポートします。
+      * Dynamic Mediaは主に、最大長が 30 分で、最小解像度が 25 x 25 を超える短形式のビデオをサポートします。
       * 15 GB までのビデオファイルをアップロードできます。
       * [ビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 詳しくは、[サポートされる入力ファイル形式](/help/assets/file-format-support.md)を参照してください。
@@ -273,7 +272,7 @@ Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場�
 
 ビデオファイルをエンコードするときは、可能な限り最高品質のソースビデオファイルを使用します。以前にエンコードされたビデオファイルの使用は避けてください。そのようなファイルは既に圧縮済みで、さらにエンコードすると標準を下回る品質のビデオが作成されるからです。
 
-* Dynamic Mediaは主に、最大長が 30 分で、解像度が 50 x 50 を超える短形式のビデオをサポートします。
+* Dynamic Mediaは主に、最大長が 30 分で、最小解像度が 25 x 25 を超える短形式のビデオをサポートします。
 * 15 GB までのプライマリソースビデオファイルをアップロードできます。
 
 次の表に、ソースビデオファイルのエンコード前の推奨サイズ、縦横比および最小ビットレートを示します。
