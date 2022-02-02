@@ -2,23 +2,22 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
+source-git-commit: fcde70f424d8e798469563397ba091547163bd77
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 78%
+source-wordcount: '1296'
+ht-degree: 65%
 
 ---
 
 # AEM Forms as a Cloud Service Communications を使用 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service通信機能はベータ版です。**
+**AEM Formsas a Cloud Service通信ドキュメント操作 API はベータ版で、実際のリリースより前に大幅に変更される場合があります。**
 
-通信機能は、ビジネス文書、ステートメント、請求処理レター、特典通知、毎月の請求書、ウェルカムキットなど、ブランド志向でパーソナライズされた標準的なドキュメントを作成するのに役立ちます。
+コミュニケーション機能により、ブランド承認、パーソナライズ、標準化されたドキュメント（ビジネス通信、明細書、請求処理レター、特典通知、月々の請求、ウェルカムキットなど）を作成できます。 この機能は、ドキュメントを生成および操作するための API を提供します。 ドキュメントをオンデマンドで生成または操作したり、バッチジョブを作成して、定義した間隔で複数のドキュメントを生成することができます。 通信 API は以下を提供します。
 
+* オンデマンドでのドキュメント生成機能とバッチドキュメント生成機能を合理化。
 
-オンデマンドでドキュメントを生成することも、バッチジョブを作成して、定義された間隔で複数のドキュメントを生成することもできます。通信 API は以下を提供します。
-
-* 合理化されたオンデマンドおよびバッチドキュメント生成機能。
+* PDFおよび XDP ドキュメントを組み合わせ、並べ替え、拡大し、PDFドキュメントに関する情報を取得
 
 * 外部システムとの統合を容易にする HTTP API。 オンデマンド（低遅延）およびバッチ操作（高スループット操作）用の個別の API が含まれます。 これにより、ドキュメントの生成が効率的になります。
 
@@ -51,13 +50,13 @@ ht-degree: 78%
 
 ### PDF ドキュメントの作成 {#create-pdf-documents}
 
-通信 API を使用して、フォームデザインと XML フォームPDFに基づくデータドキュメントを作成できます。 結果として出力されるのは非インタラクティブ PDF ドキュメントです。つまり、ユーザーはフォームデータの入力や変更はできません。基本ワークフローは、XML フォームデータをフォームデザインと結合して PDF ドキュメントを作成することです。次の図は、フォームデザインと XML フォームデータを結合して PDF ドキュメントを生成するところを示しています。
+ドキュメント生成 API を使用して、フォームデザインと XML フォームデータに基づくPDFドキュメントを作成できます。 結果として出力されるのは非インタラクティブ PDF ドキュメントです。つまり、ユーザーはフォームデータの入力や変更はできません。基本ワークフローは、XML フォームデータをフォームデザインと結合して PDF ドキュメントを作成することです。次の図は、フォームデザインと XML フォームデータを結合して PDF ドキュメントを生成するところを示しています。
 
 ![PDF ドキュメントの作成](assets/outPutPDF_popup.png)
 
 ### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
 
-通信 API を使用して、XDP フォームデザインまたは PDF ドキュメントに基づく PS、PCL および ZPL ドキュメントを作成できます。これらの API は、フォームデザインとフォームデータを結合してドキュメントを生成するのに役立ちます。 ドキュメントをファイルに保存し、カスタムプロセスを開発してファイルをプリンターに送信することができます。
+ドキュメント生成 API を使用して、XDP フォームデザインまたはPDFドキュメントに基づく PostScript(PS)、Printer Command Language(PCL) および Zebra Printing Language(ZPL) ドキュメントを作成できます。 これらの API は、フォームデザインとフォームデータを結合してドキュメントを生成するのに役立ちます。 ドキュメントをファイルに保存し、カスタムプロセスを開発してファイルをプリンターに送信することができます。
 
 <!-- ### Processing batch data to create multiple documents
 
@@ -71,7 +70,7 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### バッチデータの処理による複数のドキュメントの作成 {#processing-batch-data-to-create-multiple-documents}
 
-XML バッチデータソース内のレコードごとに、別々のドキュメントを作成できます。ドキュメントは一括モードと非同期モードで生成できます。コンバージョンの様々なパラメーターを設定し、バッチ処理を開始できます。<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+ドキュメント生成 API を使用して、XML バッチデータソース内のレコードごとに個別のドキュメントを作成できます。 ドキュメントは一括モードと非同期モードで生成できます。コンバージョンの様々なパラメーターを設定し、バッチ処理を開始できます。<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -85,7 +84,7 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 ### インタラクティブ PDF ドキュメントの統合 {#flatten-interactive-pdf-documents}
 
-通信 API を使用して、インタラクティブ PDF ドキュメント（フォームなど）を非インタラクティブ PDF ドキュメントに変換できます。インタラクティブ PDF ドキュメントでは、ユーザーは PDF ドキュメントフィールドにデータを入力したり、このフィールドのデータを変更したりできます。インタラクティブ PDF ドキュメントを非インタラクティブ PDF ドキュメントに変換するプロセスは「統合」と呼ばれます。PDF ドキュメントを統合すると、ユーザーはドキュメントのフィールドにあるデータを変更できなくなります。PDF ドキュメントを統合する理由の 1 つは、データを変更できないようにすることです。
+ドキュメント生成 API を使用して、インタラクティブPDFのドキュメント（フォームなど）を非インタラクティブPDFのドキュメントに変換できます。 インタラクティブ PDF ドキュメントでは、ユーザーは PDF ドキュメントフィールドにデータを入力したり、このフィールドのデータを変更したりできます。インタラクティブ PDF ドキュメントを非インタラクティブ PDF ドキュメントに変換するプロセスは「統合」と呼ばれます。PDF ドキュメントを統合すると、ユーザーはドキュメントのフィールドにあるデータを変更できなくなります。PDF ドキュメントを統合する理由の 1 つは、データを変更できないようにすることです。
 
 次のタイプの PDF ドキュメントを統合できます。
 
@@ -101,11 +100,30 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 通信 API を使用してこのようなインタラクティブ PDF ドキュメントを統合した場合、フォームの状態は保持されません。フォームが統合された後もフォームの状態が確実に保持されるようにするには、ブール値 _retainFormState_ を True に設定して、フォームの状態を保存し保持します。
 
+### PDF ドキュメントのアセンブリ
+
+ドキュメント製造 API を使用して、複数のPDFドキュメントを 1 つのPDFドキュメントまたはPDFPortfolioに組み立てることができます。 また、ナビゲーション支援機能やセキュリティ強化機能を PDF ドキュメントに適用することもできます。PDF ドキュメントをアセンブリする方法には、次のようなものがあります。
+
+* 単一 PDF ドキュメントのアセンブリ
+* PDF ポートフォリオの作成
+* 暗号化ドキュメントのアセンブリ
+* ベイツナンバリングを使用したドキュメントのアセンブリ
+* ドキュメントの統合およびアセンブリ
+
+### PDF ドキュメントのディスアセンブリ
+
+ドキュメントの製造 API を使用して、ディスアセンブリドキュメントをPDFできます。 また、ソースドキュメントからページを抽出したり、しおりの位置を境にソースドキュメントを分割することもできます。このタスクは、一般的に、PDF ドキュメントが最初に多数の個別ドキュメント（明細書一式など）から作成された場合に役立ちます。
+
+* ソースドキュメントからのページの抽出
+* しおりに基づいたソースドキュメントの分割
+
+### PDF/A 準拠ドキュメントに変換して検証
+
+ドキュメント作成 API を使用して、PDFドキュメントをPDF/A 準拠バージョンに変換し、PDFドキュメントがPDF/A 準拠かどうかを判断できます。 PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。また、PDF/A ドキュメントには、オーディオおよびビデオコンテンツは含まれません。
+
 ## オンボーディング 
 
-通信は、Forms as a Cloud Service のユーザー向けのスタンドアロンおよびアドオンモジュールとして利用できます。AdobeのセールスチームまたはAdobe担当者に連絡して、アクセス権を要求できます。
-
-お客様の組織で変換サービスを使用できるように設定し、組織の管理者に対して必要な権限を設定します。管理者は、API を使用するためのアクセス権限を、組織内の AEM Forms 開発者（ユーザー）に付与することができます。
+通信は、Forms as a Cloud Service のユーザー向けのスタンドアロンおよびアドオンモジュールとして利用できます。AdobeのセールスチームまたはAdobe担当者に連絡して、アクセス権を要求できます。 お客様の組織で変換サービスを使用できるように設定し、組織の管理者に対して必要な権限を設定します。管理者は、API を使用するためのアクセス権限を、組織内の AEM Forms 開発者（ユーザー）に付与することができます。
 
 転送後に、Formsas a Cloud Service環境で通信を有効にするには、次の手順を実行します。
 
