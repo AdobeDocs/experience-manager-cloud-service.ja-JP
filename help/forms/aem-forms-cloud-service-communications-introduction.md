@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fcde70f424d8e798469563397ba091547163bd77
+source-git-commit: c934eba98a9dcb74687739ccbaaedff3c0228561
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 65%
+source-wordcount: '1410'
+ht-degree: 56%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 65%
 
 **AEM Formsas a Cloud Service通信ドキュメント操作 API はベータ版で、実際のリリースより前に大幅に変更される場合があります。**
 
-コミュニケーション機能により、ブランド承認、パーソナライズ、標準化されたドキュメント（ビジネス通信、明細書、請求処理レター、特典通知、月々の請求、ウェルカムキットなど）を作成できます。 この機能は、ドキュメントを生成および操作するための API を提供します。 ドキュメントをオンデマンドで生成または操作したり、バッチジョブを作成して、定義した間隔で複数のドキュメントを生成することができます。 通信 API は以下を提供します。
+コミュニケーション機能により、ブランド承認、パーソナライズ、標準化されたドキュメント（ビジネス通信、明細書、請求処理レター、特典通知、月々の請求、ウェルカムキットなど）を作成できます。 この機能は、ドキュメントを生成および操作するための API を提供します。 ドキュメントをオンデマンドで生成または操作したり、バッチジョブを作成して、定義した間隔で複数のドキュメントを生成することができます。 通信 API は次のものを提供します。
 
 * オンデマンドでのドキュメント生成機能とバッチドキュメント生成機能を合理化。
 
-* PDFおよび XDP ドキュメントを組み合わせ、並べ替え、拡大し、PDFドキュメントに関する情報を取得
+* PDF・ドキュメントの組み合わせ、並べ替え、検証
 
 * 外部システムとの統合を容易にする HTTP API。 オンデマンド（低遅延）およびバッチ操作（高スループット操作）用の個別の API が含まれます。 これにより、ドキュメントの生成が効率的になります。
 
@@ -26,33 +26,22 @@ ht-degree: 65%
 ![クレジットカード明細書の例](assets/statement.png)
 クレジットカード明細は、通信 API を使用して作成できます。 このサンプル文は同じテンプレートを使用していますが、クレジットカードの使用状況に応じて、顧客ごとに別々のデータを使用します。
 
-## 仕組み?
+## ドキュメントの生成
 
-通信は、[XML データ](#form-data)を含む [PDF および XFA テンプレート](#supported-document-types)を利用して、オンデマンドで単一のドキュメントを生成したり、定義した間隔で複数のドキュメントをバッチジョブで生成することができます。
-
-通信 API は、テンプレート (XFA またはPDF) を顧客データ ([XML データ](#form-data)) を使用して、PS、PCL、DPL、IPL、ZPL 形式などのPDFおよび印刷形式のドキュメントを生成します。
+通信ドキュメント生成 API は、テンプレート (XFA またはPDF) と顧客データ ([XML データ](#form-data)) を使用して、PS、PCL、DPL、IPL、ZPL 形式などのPDFおよび印刷形式のドキュメントを生成します。 これらの API では、 [PDFと XFA テンプレート](#supported-document-types) と [XML データ](communications-known-issues-limitations.md#form-data) バッチジョブを使用して、1 つのドキュメントをオンデマンドで生成するか、複数のドキュメントを定義した間隔で生成する。
 
 通常、テンプレートを作成するには、 [Designer](use-forms-designer.md) コミュニケーション API を使用して、データをテンプレートと結合します。 アプリケーションは、出力ドキュメントをネットワークプリンター、ローカルプリンター、またはアーカイブ用のストレージシステムに送信できます。標準ワークフローとカスタムワークフローの例を次に示します。
 
-![通信ワークフロー](assets/communicaions-workflow.png)
+![通信ドキュメント生成ワークフロー](assets/communicaions-workflow.png)
 
-ユースケースによっては、これらのドキュメントを Web サイトまたはストレージサーバーからダウンロードできるようにすることもできます。
-
-## 通信 API
-
-通信は、オンデマンドおよびバッチでのドキュメント生成用に HTTP API を提供します。
-
-* **[同期 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** は、オンデマンド、低遅延、単一レコードのドキュメント生成シナリオに適しています。これらの API は、ユーザーアクションに基づいたユースケースにより適しています。例えば、ユーザーがフォームへの入力を完了した後にドキュメントを生成するような場合です。
-
-* **[バッチ API（非同期 API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;は、スケジュール化された、高スループットの、複数のドキュメント生成シナリオに適しています。これらの API は、バッチでドキュメントを生成します。例えば、毎月生成される電話料金、クレジットカード明細、給付計算書などです。
-
-通信 API の主な使用方法は次のとおりです。
+ユースケースによっては、これらのドキュメントを Web サイトまたはストレージサーバーからダウンロードできるようにすることもできます。ドキュメント生成 API の例を以下に示します。
 
 ### PDF ドキュメントの作成 {#create-pdf-documents}
 
 ドキュメント生成 API を使用して、フォームデザインと XML フォームデータに基づくPDFドキュメントを作成できます。 結果として出力されるのは非インタラクティブ PDF ドキュメントです。つまり、ユーザーはフォームデータの入力や変更はできません。基本ワークフローは、XML フォームデータをフォームデザインと結合して PDF ドキュメントを作成することです。次の図は、フォームデザインと XML フォームデータを結合して PDF ドキュメントを生成するところを示しています。
 
-![PDF ドキュメントの作成](assets/outPutPDF_popup.png)
+![PDF文書の作成](assets/outPutPDF_popup.png)
+図：ワークフロードキュメントを作成するための一般的なPDF
 
 ### PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントの作成 {#create-PS-PCL-ZPL-documents}
 
@@ -70,7 +59,11 @@ The following illustration shows Communications APIs processing an XML data file
 
 ### バッチデータの処理による複数のドキュメントの作成 {#processing-batch-data-to-create-multiple-documents}
 
-ドキュメント生成 API を使用して、XML バッチデータソース内のレコードごとに個別のドキュメントを作成できます。 ドキュメントは一括モードと非同期モードで生成できます。コンバージョンの様々なパラメーターを設定し、バッチ処理を開始できます。<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
+ドキュメント生成 API を使用して、XML バッチデータソース内のレコードごとに個別のドキュメントを作成できます。 ドキュメントは一括モードと非同期モードで生成できます。コンバージョンの様々なパラメーターを設定し、バッチ処理を開始できます。
+
+![PDF ドキュメントの作成](assets/ou_OutputBatchMany_popup.png)
+
+<!-- You can can also create a single document that contains all records (this functionality is the default).  Assume that an XML data source contains ten records and you have a requirement to create a separate document for each record (for example, PDF documents). You can use the Communication APIs to generate ten PDF documents. -->
 
 <!-- The following illustration shows the Communication APIs processing an XML data file that contains multiple records. However, assume that you instruct the Communication APIs to create a single PDF document that contains all data records. In this situation, the Communication APIs generate one document that contains all of the records.
 
@@ -100,6 +93,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 
 通信 API を使用してこのようなインタラクティブ PDF ドキュメントを統合した場合、フォームの状態は保持されません。フォームが統合された後もフォームの状態が確実に保持されるようにするには、ブール値 _retainFormState_ を True に設定して、フォームの状態を保存し保持します。
 
+
+## ドキュメントの操作
+
+通信ドキュメント操作 API は、通信ドキュメントの組み合わせ、並べ替え、検証に役立ちますPDF。 通常、DDX を作成し、ドキュメント管理 API に送信して、ドキュメントを組み立てたり、並べ替えたりします。 DDX ドキュメントには、ソースドキュメントを使用して一連の必須ドキュメントを作成する方法に関する手順が記載されています。 DDX リファレンスドキュメントでは、サポートされるすべての操作に関する詳細情報を提供します。 ドキュメント操作の例を以下に示します。
+
 ### PDF ドキュメントのアセンブリ
 
 ドキュメント製造 API を使用して、複数のPDFドキュメントを 1 つのPDFドキュメントまたはPDFPortfolioに組み立てることができます。 また、ナビゲーション支援機能やセキュリティ強化機能を PDF ドキュメントに適用することもできます。PDF ドキュメントをアセンブリする方法には、次のようなものがあります。
@@ -110,6 +108,9 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 * ベイツナンバリングを使用したドキュメントのアセンブリ
 * ドキュメントの統合およびアセンブリ
 
+![複数のPDFドキュメントからの簡単なPDFドキュメントのアセンブリ](assets/as_document_assembly.png)
+図：複数のPDFドキュメントからの簡単なPDFドキュメントのアセンブリ
+
 ### PDF ドキュメントのディスアセンブリ
 
 ドキュメントの製造 API を使用して、ディスアセンブリドキュメントをPDFできます。 また、ソースドキュメントからページを抽出したり、しおりの位置を境にソースドキュメントを分割することもできます。このタスクは、一般的に、PDF ドキュメントが最初に多数の個別ドキュメント（明細書一式など）から作成された場合に役立ちます。
@@ -117,9 +118,21 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 * ソースドキュメントからのページの抽出
 * しおりに基づいたソースドキュメントの分割
 
+![しおりに基づくソースドキュメントを複数のドキュメントに分割する](assets/as_intro_pdfsfrombookmarks.png)
+図：しおりに基づくソースドキュメントを複数のドキュメントに分割する
+
 ### PDF/A 準拠ドキュメントに変換して検証
 
 ドキュメント作成 API を使用して、PDFドキュメントをPDF/A 準拠バージョンに変換し、PDFドキュメントがPDF/A 準拠かどうかを判断できます。 PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。また、PDF/A ドキュメントには、オーディオおよびビデオコンテンツは含まれません。
+
+
+## 通信 API のタイプ
+
+通信は、オンデマンドおよびバッチでのドキュメント生成用に HTTP API を提供します。
+
+* **[同期 API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** は、オンデマンド、低遅延、単一レコードのドキュメント生成シナリオに適しています。これらの API は、ユーザーアクションに基づいたユースケースにより適しています。例えば、ユーザーがフォームへの入力を完了した後にドキュメントを生成するような場合です。
+
+* **[バッチ API（非同期 API）](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)**&#x200B;は、スケジュール化された、高スループットの、複数のドキュメント生成シナリオに適しています。これらの API は、バッチでドキュメントを生成します。例えば、毎月生成される電話料金、クレジットカード明細、給付計算書などです。
 
 ## オンボーディング 
 
