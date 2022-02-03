@@ -3,9 +3,9 @@ title: Dispatcher ツールを使用した検証とデバッグ
 description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
+source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2512'
 ht-degree: 95%
 
 ---
@@ -440,7 +440,7 @@ Dispatcher 設定では、同じ環境変数が使用できます。さらにロ
 }
 ```
 
-または、Cloud Manager の環境変数を httpd/dispatcher 設定で使用できます。 このメソッドは、プログラムに複数の開発環境があり、それらの開発環境の一部が httpd/dispatcher 設定の値が異なる場合に特に重要です。 上の例と同じ${VIRTUALHOST} 構文が使用されますが、上の変数ファイル内の Define 宣言は使用されません。 詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/environment-variables.md) を参照してください。
+または、Cloud Manager 環境変数を httpd/dispatcher 設定で使用できますが、環境シークレットを使用することはできません。 このメソッドは、プログラムに複数の開発環境があり、それらの開発環境の一部が httpd/dispatcher 設定の値が異なる場合に特に重要です。 上の例と同じ${VIRTUALHOST} 構文が使用されますが、上の変数ファイル内の Define 宣言は使用されません。 詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/environment-variables.md) を参照してください。
 
 設定をローカルでテストする場合、`DISP_RUN_MODE` 変数を `docker_run.sh` スクリプトに直接渡すことで、様々な環境タイプをシミュレートできます。
 
