@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 27%
@@ -52,10 +52,10 @@ ht-degree: 27%
 
    * 画像へのデジタル透かしの追加を設定します。
 
-* 管理者は、大量のダウンロード用に電子メールサービスを設定できるようになりました。 これにより、ユーザーは、 [!DNL Experience Manager Assets] インターフェイス。 ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを含む電子メール通知がユーザーに送信されます。
+* 管理者は、大量のダウンロード用に電子メールサービスを設定できるようになりました。 これにより、ユーザーは次の操作を実行できます。 [大量のダウンロード用に電子メール通知を有効にする](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) から [!DNL Experience Manager Assets] インターフェイス。 ダウンロード処理の完了時に、アーカイブされた zip フォルダーのダウンロードリンクを含む電子メール通知がユーザーに送信されます。
 
 
-* 公開を管理の機能が強化され、ユーザーインターフェイスが改善されました。 ユーザーは、選択した宛先との間でコンテンツの公開または非公開、DAM リポジトリ全体からのコンテンツの発行リストへのコンテンツの追加、選択したフォルダーのコンテンツの公開とフィルターの適用、後の日時への公開のスケジュール設定をおこなえます。
+* この [公開を管理](/help/assets/manage-publication.md) の機能が強化され、ユーザーインターフェイスが改善されました。 ユーザーは、選択した宛先に対して、コンテンツを公開または非公開にできます。 [コンテンツを追加](/help/assets/manage-publication.md#add-content) を DAM リポジトリー全体の発行リストに追加する [フォルダ設定を含める](/help/assets/manage-publication.md#include-folder-settings) 選択したフォルダーのコンテンツを公開し、フィルターを適用するには、次の手順に従います。 [公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later) を後の日時に変更する必要があります。
 
 ### バグ修正 {#bug-fixes}
 
