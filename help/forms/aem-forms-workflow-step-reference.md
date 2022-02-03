@@ -2,7 +2,7 @@
 title: '他のユーザーにワークフローを割り当て、電子メールを送信、およびワークフローで Adobe Sign を使用する方法 '
 description: Forms 中心のワークフローを使用すると、アダプティブフォームベースのワークフローを迅速に構築できます。Adobe Sign を使用して、ドキュメントへの電子サイン、フォームをベースとしたビジネスプロセスの作成、複数データソースへのデータの取得と送信、電子メール通知の送信を行うことができます
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
-source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
+source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
 workflow-type: tm+mt
 source-wordcount: '5467'
 ht-degree: 98%
@@ -92,7 +92,7 @@ Forms 中心のワークフローステップは、AEM ワークフローで AEM
     <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
 
 * **[!UICONTROL 割り当て先]**／**[!UICONTROL 割り当てオプション]**：タスクをユーザーに割り当てる方法を指定します。参加者選択スクリプトを使用してタスクを動的にユーザーまたはグループに割り当てることも、タスクを特定の AEM ユーザーまたはグループに割り当てることもできます。
-* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ワークフローを動的にユーザーに割り当てる方法](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および [Adobe Experience Manager のカスタム動的参加者ステップの作成](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?CID=RedirectAEMCommunityKautuk)を参照してください。
+* **[!UICONTROL 参加者選択]**：このオプションは、「割り当てオプション」フィールドで「**[!UICONTROL ユーザーまたはグループに動的に割り当て]**」オプションを選択した場合に使用できます。ユーザーまたはグループを動的に選択するには、ECMAScript またはサービスを使用できます。詳しくは、[ワークフローを動的にユーザーに割り当てる方法](https://helpx.adobe.com/jp/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)および [Adobe Experience Manager のカスタム動的参加者ステップの作成](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)を参照してください。
 
 * **[!UICONTROL 参加者]**：このオプションは、「**[!UICONTROL 参加者選択]**」フィールドで「**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**」オプションが選択されている場合に使用できます。このフィールドでは、「RandomParticipantChooser」オプションのユーザーまたはグループを選択できます。
 

@@ -1,13 +1,13 @@
 ---
 title: コンテンツフラグメント - 設定ブラウザー
 description: AEM の強力なヘッドレス配信機能を活用するために、設定ブラウザーで特定のコンテンツフラグメント機能を有効にする方法を説明します。
-feature: コンテンツフラグメント
+feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '288'
-ht-degree: 100%
+source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ AEM の強力なヘッドレス配信機能を活用するために、設定ブ�
 
 >[!CAUTION]
 >
->サブ設定（設定内にネストされた設定）は、コンテンツフラグメントでの使用をサポートしていません。
+>サブ設定（設定内にネストされた設定）は、コンテンツフラグメントでの使用はサポートされますが、GraphQL クエリには使用できません。
 
 1. **ツール**／**一般**&#x200B;に移動し、**設定ブラウザー**&#x200B;を開きます。
 

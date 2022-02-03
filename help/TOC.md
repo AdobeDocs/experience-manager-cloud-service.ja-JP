@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8c4261b91c16127ac86f5f469d8f309858d2f617
+source-git-commit: 13aa3d34a6e81c7711665dcf974008d9324c6753
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3495'
 ht-degree: 91%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 91%
    + リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
+         + [リリースノート（2021.11.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [リリースノート（2021.9.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [リリースノート（2021.8.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -124,6 +125,7 @@ ht-degree: 91%
          + [コンテンツ転送ツールの前提条件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [コンテンツ転送ツール使用のガイドラインとベストプラクティス](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [コンテンツ転送ツールの基本を学ぶ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
+         + [コンテンツ転送の検証](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [大規模なコンテンツリポジトリーの処理](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
          + [ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -285,6 +287,7 @@ ht-degree: 91%
       + [アセットの追加とアップロード](/help/assets/add-assets.md)
       + [アセットの検索](/help/assets/search-assets.md)
       + [一般的なアセット管理タスク](/help/assets/manage-digital-assets.md)
+      + [公開を管理](/help/assets/manage-publication.md)
       + [3D アセットのプレビュー](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [画像のスマートタグ付け](/help/assets/smart-tags.md)
       + [ビデオアセットのスマートタグ](/help/assets/smart-tags-video-assets.md)
