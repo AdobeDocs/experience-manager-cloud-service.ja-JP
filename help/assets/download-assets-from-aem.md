@@ -1,14 +1,14 @@
 ---
 title: アセットのダウンロード
 description: ' [!DNL Adobe Experience Manager Assets]  からアセットをダウンロードする方法とダウンロード機能を有効または無効にする方法について説明します。'
-contentOwner: VG
+contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: ddc79a163e328d560912550900242cc089df3958
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 79%
+source-wordcount: '1220'
+ht-degree: 67%
 
 ---
 
@@ -41,46 +41,31 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 ![インボックス通知](assets/inbox-notification-for-large-downloads.png)
 
-<!--
-The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-![Download notification](assets/download-notification.png)
-
-*Figure: Download notification via [!DNL Experience Manager] Inbox.*
-
-Asynchronous downloads are triggered in either of the following case:
-
-* If there are more than 10 assets or more than 100 MB to be downloaded.
-* If the download takes more than 30 seconds to prepare.
--->
-
-
-<!-- Go live is on 27th Jan 2022
-### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+### 大量のダウンロードに対する電子メール通知を有効にする {#enable-emails-for-large-downloads}
 
 >[!NOTE]
 >
->This functionality is available in the Experience Manager prerelease channel.
+>この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 」を参照してください。
 
-Asynchronous downloads are triggered in any of the following cases:
+非同期ダウンロードは、次のいずれかの場合にトリガーされます。
 
-* If there are more than ten assets 
-* If the download size is more than 100 MB
-* If the download takes more than 30 seconds to prepare
+* 10 個を超えるアセットがある場合
+* ダウンロードサイズが 100 MB を超える場合
+* ダウンロードの準備に 30 秒以上かかる場合
 
-While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+非同期ダウンロードがバックエンドで実行される間、ユーザーは引き続き調査をおこない、Experience Managerでさらに作業をおこなうことができます。 ダウンロードプロセスの完了時にユーザーに通知するには、あらかじめ用意されているメカニズムが必要です。 この目的を達成するために、管理者は SMTP サーバーを設定して電子メールサービスを設定できます。 詳しくは、 [メールサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
+電子メールサービスを設定すると、管理者とユーザーは、ユーザーインターフェイスから電子メール通知をExperience Managerできます。
 
-To enable email notifications:
+電子メール通知を有効にするには：
 
-1. Log in to [!DNL Experience Manager Assets].
-1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
-1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
+1. [!DNL Experience Manager Assets] にログインします。
+1. 右上隅のユーザーアイコンをクリックし、 **[!UICONTROL 環境設定]**. 「ユーザー・プリファレンス」ウィンドウが開きます。
+1. を選択します。 **[!UICONTROL アセットのダウンロードの電子メール通知]** チェックボックスをオンにして、 **[!UICONTROL 確定]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
--->
 
 アセットをダウンロードするには、次の手順に従います。
 
@@ -111,12 +96,6 @@ To enable email notifications:
    ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## リンク共有を使用して共有されたアセットのダウンロード {#link-share-download}
-
-<!--
->[!NOTE]
->
->This functionality is available in the Experience Manager prerelease channel.
--->
 
 リンクを使用したアセットの共有は、にログインしなくても、関心のあるユーザーが利用できるようにする便利な方法です。 [!DNL Assets]. 詳しくは、 [リンク共有機能](/help/assets/share-assets.md#sharelink).
 

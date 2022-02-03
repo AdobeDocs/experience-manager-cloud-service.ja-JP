@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: c49352926c67587096b8c60840e00bf379b92075
 workflow-type: tm+mt
-source-wordcount: '4320'
-ht-degree: 98%
+source-wordcount: '4063'
+ht-degree: 97%
 
 ---
 
@@ -278,27 +278,35 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## アセットの公開または非公開 {#publish-assets}
 
-1. 公開するアセットまたはアセットフォルダーの場所、またはパブリッシュ環境から削除する（非公開にする）アセットフォルダーに移動します。
+アセットおよびアセットを含むフォルダーをオーサーインスタンスからに公開できます。 [!DNL Experience Manager Assets], [!DNL Dynamic Media]、および [!DNL Brand Portal]. 次のいずれかを使用して、アセットレベルまたはフォルダーレベルでアセットを公開または非公開にできます。 **[!UICONTROL クイック公開]** または **[!UICONTROL 公開を管理]** オプションは [!DNL Experience Manager Assets] インターフェイス。
 
-1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**![「公開を管理」オプション](assets/do-not-localize/globe-publication.png)」オプションを選択します。また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
+詳しくは、 [公開を管理 [!DNL Experience Manager]](/help/assets/manage-publication.md)
 
-1. 必要に応じて「**[!UICONTROL 公開]**」オプションまたは「**[!UICONTROL 非公開]**」オプションを選択します。
+<!--
 
-   ![非公開アクション](assets/unpublish_action.png)
-   *図：公開および非公開のオプションとスケジュールオプション。*
+1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. すぐにアセットに対処するには「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールするには「**[!UICONTROL 後で]**」を選択します。「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。「**[!UICONTROL 次へ]**」をクリックします。
+1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
 
-1. パブリッシングの際、アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。非公開になっているか、前回の公開以降に変更された参照のみが表示されます。公開する参照を選択します。
+1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
-1. 非公開にする際に、アセットが他のアセットを参照する場合は、非公開にする参照を選択します。**[!UICONTROL 非公開]**&#x200B;をクリックします。確認ダイアログで、「**[!UICONTROL キャンセル]**」をクリックしてアクションを停止するか、「**[!UICONTROL 非公開]**」をクリックして、指定した日付にアセットを非公開にすることを確認します。
+   ![Unpublish action](assets/unpublish_action.png)
+   *Figure: Publish and unpublish options and the scheduling option.*
 
-アセットやフォルダーの公開または非公開に関する以下の制限事項とヒントを理解します。
+1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
 
-* 「[!UICONTROL 公開を管理]」のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
-* 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
-* 空のフォルダーは公開されません。
-* 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
+1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
+
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
+
+Understand the following limitations and tips related to publishing or unpublishing assets or folders:
+
+* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
+* Empty folders are not published.
+* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+
+-->
 
 ## 閉じられたユーザーグループ {#closed-user-group}
 
