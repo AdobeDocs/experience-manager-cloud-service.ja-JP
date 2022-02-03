@@ -10,18 +10,18 @@ feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: f45021ff09a4874d19fa7d8d40405cfd52bf8434
+source-git-commit: 13ed4f82f441daf95b80b5d015b00ea49f8d1ed2
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '186'
 ht-degree: 71%
 
 ---
 
 # 複数のカテゴリページと製品ページの作成 {#multiple}
 
-    >[！注意 ]
-    >
-    > この機能は、CIF（Venia など）に基づくストアフロントに対してのみ機能します。
+>[!NOTE]
+>
+> この機能は、CIF（Venia など）に基づくストアフロントに対してのみ機能します。
 
 [AEM CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components)を使用すると、コンテンツ作成者は、追加のカテゴリページや製品ページを作成できます。これらのページは、追加のマーケティングコンテンツで強化し、特定のカテゴリや製品をターゲットするように設定できます。次のビデオでは、この機能の設定について説明します。
 
