@@ -2,17 +2,15 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 52%
+source-wordcount: '701'
+ht-degree: 53%
 
 ---
 
 
-# AEM Formsas a Cloud Service通信 API の使用 — 同期処理 {#frequently-asked-questions}
-
-**通信機能はベータ版です。**
+# 同期処理を使用 {#sync-processing-introduction}
 
 通信サービスでは、ビジネス通信、ドキュメント、声明書、請求処理レター、給付通知、請求処理レター、月次請求書、ウェルカムキットなど、ブランド志向でパーソナライズされたコミュニケーションを作成、組み立て、提供できます。通信 API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
 

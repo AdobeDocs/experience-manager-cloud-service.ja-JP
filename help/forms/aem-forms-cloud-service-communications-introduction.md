@@ -2,16 +2,16 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2f934bb63796599d6c3cca47498c1799388a9923
+source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 51%
+source-wordcount: '1144'
+ht-degree: 39%
 
 ---
 
 # AEM Forms as a Cloud Service Communications を使用 {#frequently-asked-questions}
 
-**AEM Formsas a Cloud Service — 通信ドキュメント操作 API はベータ版で、実際のリリースより前に大幅に変更される場合があります。**
+**ドキュメント操作 API はリリース前段階にあり、実際のリリース前に変更される可能性があります。**
 
 コミュニケーション機能により、ブランド承認、パーソナライズ、標準化されたドキュメント（ビジネス通信、明細書、請求処理レター、特典通知、月々の請求、ウェルカムキットなど）を作成できます。
 
@@ -21,9 +21,9 @@ ht-degree: 51%
 
 * PDFドキュメントをオンデマンドで組み合わせ、並べ替え、検証する機能。
 
-* 外部システムとの統合を容易にする HTTP API。 オンデマンド（低遅延）およびバッチ操作（高スループット操作）用の個別の API が含まれます。 これにより、ドキュメントの生成が効率的になります。
+* 外部システムとの統合を容易にする HTTP API。 オンデマンド（低遅延）およびバッチ操作（高スループット操作）用の個別の API が含まれます。
 
-* データへのセキュリティで保護されたアクセス。通信 API は、顧客が指定したデータリポジトリにのみ接続してデータにアクセスしますが、データのローカルコピーを作成しないため、通信の安全性が高くなります。
+* データへのセキュリティで保護されたアクセス。通信 API は、顧客が指定したデータリポジトリーからのみデータに接続し、データにアクセスするので、通信の安全性が高まります。
 
 ![クレジットカード明細書の例](assets/statement.png)
 クレジットカード明細は、通信 API を使用して作成できます。 このサンプル文は同じテンプレートを使用しますが、クレジットカードの使用状況に応じて顧客ごとに別々のデータを使用します。
@@ -42,7 +42,7 @@ ht-degree: 51%
 
 ### PDF ドキュメントの作成 {#create-pdf-documents}
 
-ドキュメント生成 API を使用して、フォームデザインと XML フォームデータに基づくPDFドキュメントを作成できます。 結果として出力されるのは非インタラクティブ PDF ドキュメントです。つまり、ユーザーはフォームデータを入力または変更できません。 基本ワークフローは、XML フォームデータをフォームデザインと結合して PDF ドキュメントを作成することです。次の図は、フォームデザインと XML フォームデータを結合して PDF ドキュメントを生成するところを示しています。
+ドキュメント生成 API を使用して、フォームデザインと XML フォームデータに基づくPDFドキュメントを作成できます。 結果として出力されるのは非インタラクティブ PDF ドキュメントです。つまり、ユーザーはフォームデータを入力または変更できません。 基本ワークフローは、XML フォームデータをフォームデザインと結合して PDF ドキュメントを作成することです。次の図は、フォームデザインと XML フォームデータをマージしてPDFドキュメントを生成する方法を示しています。
 
 ![PDF文書の作成](assets/outPutPDF_popup.png)
 図：ワークフロードキュメントを作成するための一般的なPDF
@@ -57,7 +57,7 @@ Communications APIs can create separate documents for each record within an XML 
 
 The following illustration also shows Communications APIs processing an XML data file that contains multiple records. However, assume that you instruct the APIs to create a single PDF document that contains all data records. In this situation, the APIs generate one document that contains all of the records.
 
-The following illustration shows Communications APIs processing an XML data file that contains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
+The following illustration shows Communications APIs processing an XML data file that con tains multiple records. Assume that you instruct the Communications APIs to create a separate PDF document for each data record. In this situation, the APIs generates a separate PDF document for each data record.
 
  -->
 
@@ -77,34 +77,34 @@ The following illustration shows the Communication APIs processing an XML data f
 
 ![Create PDF Documents](assets/ou_OutputBatchMany_popup.png)
 
-For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. -->
+For detailed information on using Batch APIs, see Communication APIs: Processing batch data to create multiple documents. 
 
-### インタラクティブ PDF ドキュメントの統合 {#flatten-interactive-pdf-documents}
+### Flatten interactive PDF documents {#flatten-interactive-pdf-documents}
 
-ドキュメント生成 API を使用して、インタラクティブPDFのドキュメント（フォームなど）を非インタラクティブPDFのドキュメントに変換できます。 インタラクティブ PDF ドキュメントでは、ユーザーは PDF ドキュメントフィールドにデータを入力したり、このフィールドのデータを変更したりできます。インタラクティブ PDF ドキュメントを非インタラクティブ PDF ドキュメントに変換するプロセスは「統合」と呼ばれます。PDF ドキュメントを統合すると、ユーザーはドキュメントのフィールドにあるデータを変更できなくなります。PDF ドキュメントを統合する理由の 1 つは、データを変更できないようにすることです。
+You can use document generation APIs to transform an interactive PDF document (for example, a form) to a non-interactive PDF document. An interactive PDF document lets users enter or modify data located in the PDF document fields. The process of transforming an interactive PDF document to a non-interactive PDF document is called flattening. When a PDF document is flattened, a user cannot modify the data located in the document’s fields. One reason to flatten a PDF document is to ensure that data cannot be modified.
 
-次のタイプの PDF ドキュメントを統合できます。
+You can flatten the following types of PDF documents:
 
-* Designer で作成されたインタラクティブ PDF ドキュメント（XFA ストリームを含む）
+* Interactive PDF documents created in Designer (that contain XFA streams).
 
-* Acrobat PDF フォーム
+* Acrobat PDF forms
 
-非インタラクティブ PDF ドキュメントを統合しようとすると、例外が発生します。
+If you attempt to flatten a non-interactive PDF document, an exception occurs.
 
-### フォーム状態の保持 {#retain-form-state}
+### Retain Form State {#retain-form-state}
 
-インタラクティブ PDF ドキュメントには、フォームを構成する様々な要素が含まれています。これらの要素には、フィールド（データを受け取るまたは表示する）、ボタン（イベントをトリガーする）、スクリプト（特定のアクションを実行するコマンド）などがあります。ボタンをクリックすると、フィールドの状態を変更するイベントがトリガーされる可能性があります。例えば、性別オプションを選択すると、フィールドの色やフォームの外観が変わる場合があります。これは、フォームの状態変化を引き起こす手動イベントの例です。
+An interactive PDF document contains various elements that constitute a form. These elements may include fields (to accept or display data), buttons (to trigger events), and scripts (commands to perform a specific action). Clicking a button may trigger an event that changes the state of a field. For example, choosing a gender option may change the color of a field or the appearance of the form. This is an example of a manual event causing the form state to change.
 
-通信 API を使用してこのようなインタラクティブ PDF ドキュメントを統合した場合、フォームの状態は保持されません。フォームが統合された後もフォームの状態が確実に保持されるようにするには、ブール値 _retainFormState_ を True に設定して、フォームの状態を保存し保持します。
+When such an interactive PDF document is flattened using the Communications APIs, the state of the form is not retained. To ensure that the state of the form is retained even after the form is flattened, set the Boolean value _retainFormState_ to True to save and retain the state of the form. -->
 
 
-## ドキュメントの操作
+## （プレリリース）ドキュメント操作
 
 通信ドキュメント操作 API は、通信ドキュメントの組み合わせ、並べ替え、検証に役立ちますPDF。 通常、DDX を作成し、ドキュメント操作 API に送信して、ドキュメントを組み立てたり、並べ替えたりします。 DDX ドキュメントには、ソースドキュメントを使用して一連の必須ドキュメントを作成する方法に関する手順が記載されています。 DDX リファレンスドキュメントでは、サポートされるすべての操作に関する詳細情報を提供します。 ドキュメント操作の例を以下に示します。
 
 ### PDF ドキュメントのアセンブリ
 
-ドキュメント製造 API を使用して、複数のPDFドキュメントを 1 つのPDFドキュメントまたはPDFPortfolioに組み立てることができます。 PDF ドキュメントをアセンブリする方法には、次のようなものがあります。
+ドキュメント製造 API を使用して、2 つ以上のPDFまたは XDP ドキュメントを 1 つのPDFドキュメントまたはPDFPortfolioにアセンブリできます。 PDF ドキュメントをアセンブリする方法には、次のようなものがあります。
 
 * 単一 PDF ドキュメントのアセンブリ
 * PDF ポートフォリオの作成
@@ -128,6 +128,11 @@ For detailed information on using Batch APIs, see Communication APIs: Processing
 ### PDF/A 準拠ドキュメントに変換して検証
 
 ドキュメント作成 API を使用して、PDFドキュメントをPDF/A 準拠のドキュメントに変換し、PDFドキュメントがPDF/A に準拠しているかどうかを判断できます。 PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。また、PDF/A ドキュメントには、オーディオおよびビデオコンテンツは含まれません。
+
+>!![Note]
+ドキュメント操作 API を有効にして設定するには、次のルールを [Dispatcher の設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+`# Allow Forms Doc Generation requests`
+`/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 ## 通信 API のタイプ
