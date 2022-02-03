@@ -7,10 +7,8 @@ content-type: reference
 feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
-hide: true
-hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 494f6803967725ca04a1cc4512c1e553b9f0282c
+source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 9%
@@ -18,6 +16,9 @@ ht-degree: 9%
 ---
 
 # Dynamic Media会社エイリアスアカウントの設定について {#about-dm-alias-acct}
+
+<!-- hide: yes
+hidefromtoc: yes -->
 
 >[!NOTE]
 >

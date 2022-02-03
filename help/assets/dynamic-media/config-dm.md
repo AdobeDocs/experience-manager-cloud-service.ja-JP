@@ -3,16 +3,18 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
 workflow-type: tm+mt
-source-wordcount: '3420'
-ht-degree: 90%
+source-wordcount: '3438'
+ht-degree: 89%
 
 ---
 
 # Dynamic Media Cloud Service の設定について {#configuring-dynamic-media}
 
 開発、ステージング、実稼動など、様々な環境で Adobe Experience Manager を使用する場合は、環境ごとに Dynamic Media Cloud Services を設定します。
+
+関連トピック [Dynamic Media会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)
 
 ## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media}
 
@@ -90,7 +92,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | プロパティ | 説明 |
    |---|---|
-   | 会社 | Dynamic Media アカウントの名前です。異なるサブブランドや部門、またはステージングや実稼動環境のために、複数の Dynamic Media アカウントを持っている場合があります。 |
+   | 会社 | Dynamic Media アカウントの名前です。異なるサブブランドや部門、またはステージングや実稼動環境のために、複数の Dynamic Media アカウントを持っている場合があります。<br>関連トピック [Dynamic Media会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md). |
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
    | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**：URL／埋め込みリンクの提供の前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 選択的公開&#x200B;]**：アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用に DMS7 に公開することなく、Experience Manager as a Cloud Service に明示的に公開することもできます。将来的には、このオプションでアセットを相互排他的に Experience Manager as a Cloud Service に公開したり、Dynamic Media に公開したりするようになります。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、アセットを、プレビュー用に Experience Manager as a Cloud Service でのみ公開し、パブリックドメイン配信用の DMS7 で公開しないようにすることもできます。 |
    | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、Experience Manager as a Cloud Service は、リモート Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリが Experience Manager as a Cloud Service インスタンスに送り返されることはありません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、アドビでは、この設定を指定されたとおりにしておくことをお勧めします。 |
