@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
-ht-degree: 88%
+source-wordcount: '3328'
+ht-degree: 89%
 
 ---
 
@@ -213,10 +213,6 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
    ![強制削除警告](assets/delete-referenced-asset.png)
 
 ### リモート DAM でアセットの更新を管理 {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 」を参照してください。
 
 後 [接続の設定](#configure-a-connection-between-sites-and-assets-deployments) リモート DAM と Sites のデプロイメントの間で、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 その後、リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更および移動の操作を実行できます。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。 また、リモート DAM 上のアセットがローカルのExperience Manager Sitesページで使用されている場合、リモート DAM 上のアセットの更新がサイトページに表示されます。
 

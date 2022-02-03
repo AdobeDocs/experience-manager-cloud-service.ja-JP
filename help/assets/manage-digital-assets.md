@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: c49352926c67587096b8c60840e00bf379b92075
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 97%
+source-wordcount: '4356'
+ht-degree: 96%
 
 ---
 
@@ -44,16 +44,30 @@ ht-degree: 97%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。この機能を有効にするには、[!UICONTROL Adobe AEM Cloud Asset Duplication Detector を設定します]。[OSGi 設定の実行方法](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja)を参照してください。複製検出は、`jcr:content/metadata/dam:sha1` に保存された一意の `dam:sha1` 値に基づきます。つまり、ファイル名が異なる場合でも重複アセットが検出されます。
+DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
 
-設定ファイル `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` をカスタムコードで追加し、ファイルに次の内容を含めることができます。
+>[!NOTE]
+>
+>この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 」を参照してください。
 
-```json
-{
-  "enabled":true,
-  "detectMetadataField":"dam:sha1"
-}
-```
+この機能を有効にするには：
+
+1. に移動します。 **[!UICONTROL ツール/アセット/アセット設定]**.
+
+1. クリック **[!UICONTROL Asset Duplication Detector]**.
+
+1. の [!UICONTROL アセット重複検出ページ]をクリックし、 **[!UICONTROL 有効]**.
+
+   `dam:sha1` 「メタデータを検出」フィールドの値を指定すると、ファイル名が異なる場合でも重複アセットが検出されます。
+
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
+   ![Asset Duplication Detector](assets/asset-duplication-detector.png)
+
+>[!NOTE]
+>
+>を使用して複製検出を設定した場合 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定ファイル（OSGi 設定）を使用する場合は引き続き使用できますが、Adobeでは新しいメソッドを使用することをお勧めします。
+
 
 有効にすると、Experience Manager は重複アセットの通知を Experience Manager インボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
 
@@ -278,35 +292,27 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## アセットの公開または非公開 {#publish-assets}
 
-アセットおよびアセットを含むフォルダーをオーサーインスタンスからに公開できます。 [!DNL Experience Manager Assets], [!DNL Dynamic Media]、および [!DNL Brand Portal]. 次のいずれかを使用して、アセットレベルまたはフォルダーレベルでアセットを公開または非公開にできます。 **[!UICONTROL クイック公開]** または **[!UICONTROL 公開を管理]** オプションは [!DNL Experience Manager Assets] インターフェイス。
+1. 公開するアセットまたはアセットフォルダーの場所、またはパブリッシュ環境から削除する（非公開にする）アセットフォルダーに移動します。
 
-詳しくは、 [公開を管理 [!DNL Experience Manager]](/help/assets/manage-publication.md)
+1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**![「公開を管理」オプション](assets/do-not-localize/globe-publication.png)」オプションを選択します。また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
 
-<!--
+1. 必要に応じて「**[!UICONTROL 公開]**」オプションまたは「**[!UICONTROL 非公開]**」オプションを選択します。
 
-1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
+   ![非公開アクション](assets/unpublish_action.png)
+   *図：公開および非公開のオプションとスケジュールオプション。*
 
-1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. すぐにアセットに対処するには「**[!UICONTROL 今すぐ]**」を選択し、アクションをスケジュールするには「**[!UICONTROL 後で]**」を選択します。「**[!UICONTROL 後で]**」オプションを選択した場合は、日時を選択します。「**[!UICONTROL 次へ]**」をクリックします。
 
-1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
+1. パブリッシングの際、アセットが他のアセットを参照する場合は、その参照がウィザードに表示されます。非公開になっているか、前回の公開以降に変更された参照のみが表示されます。公開する参照を選択します。
 
-   ![Unpublish action](assets/unpublish_action.png)
-   *Figure: Publish and unpublish options and the scheduling option.*
+1. 非公開にする際に、アセットが他のアセットを参照する場合は、非公開にする参照を選択します。**[!UICONTROL 非公開]**&#x200B;をクリックします。確認ダイアログで、「**[!UICONTROL キャンセル]**」をクリックしてアクションを停止するか、「**[!UICONTROL 非公開]**」をクリックして、指定した日付にアセットを非公開にすることを確認します。
 
-1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
+アセットやフォルダーの公開または非公開に関する以下の制限事項とヒントを理解します。
 
-1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
-
-1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
-
-Understand the following limitations and tips related to publishing or unpublishing assets or folders:
-
-* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
-* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
-* Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
-
--->
+* 「[!UICONTROL 公開を管理]」のオプションは、レプリケーション権限を持つユーザーアカウントでのみ使用できます。
+* 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットから参照されている可能性があるので、非公開にしないでください。
+* 空のフォルダーは公開されません。
+* 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するまで待ってから公開するか、処理の完了後にアセットを公開し直してください。
 
 ## 閉じられたユーザーグループ {#closed-user-group}
 

@@ -2,13 +2,13 @@
 title: アセットの透かしの設定
 description: デジタルアセットへの透かしの追加。
 contentOwner: AG
-feature: アセット管理、公開
+feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: ht
-source-wordcount: '197'
-ht-degree: 100%
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 55%
 
 ---
 
@@ -16,22 +16,36 @@ ht-degree: 100%
 
 [!DNL Adobe Experience Manager Assets] では、画像に電子透かしを追加できます。[!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態も示せます。
 
-アセットの透かしを [!DNL Experience Manager] で設定するには、次の手順に従います。
+>[!NOTE]
+>
+>この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 」を参照してください。
 
-1. 透かしとして PNG ファイルが適用されます。このファイルを DAM リポジトリーにアップロードします。
+を設定するには、以下を実行します。 [!DNL Experience Manager] アセットに透かしを追加するには：
 
-1. 環境に関連付けられた [!DNL Cloud Manager] Git リポジトリーにアクセスします。Git リポジトリーにある、`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` という名前のファイルを、次の内容でコミットします。詳しくは、[ [!DNL Experience Manager] as a [!DNL Cloud Service]](/help/implementing/deploying/configuring-osgi.md) 内で OSGi 設定を行う方法を参照してください。
+1. 透かしとして PNG ファイルが適用されます。このファイルを DAM リポジトリにアップロードします。
 
-   ```json
-   {
-   "watermark": "/content/dam/<path-to-watermark-image.png>",
-    "width": 100
-   }
-   ```
+1. に移動します。 **[!UICONTROL ツール/アセット/アセット設定]**.
+
+1. クリック **[!UICONTROL システム透かしプロファイル]**.
+
+1. の [!UICONTROL システム透かしプロファイルページ]で、手順 1 で DAM リポジトリーにアップロードする画像のパスを指定します。
+
+1. 透かしの尺度を、レンディションの幅を基準に 0.0 ～ 1.0 の範囲で指定します ( **[!UICONTROL 拡大・縮小]** フィールドに入力します。
+
+1. 「**[!UICONTROL 保存]**」をクリックします。
+
+   ![Asset Duplication Detector](assets/system-watermarking-profile.png)
+
+   >[!NOTE]
+   >
+   >を使用してシステム透かしプロファイルを設定した場合 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定ファイル（OSGi 設定）を使用する場合は引き続き使用できますが、Adobeでは新しいメソッドを使用することをお勧めします。
+
 
 1. 透かしを適用する際にアセットマイクロサービスを利用する[処理プロファイルを作成します](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile)。
 
    ![透かしを作成するアセット処理プロファイル](assets/watermark-processing-profile.png)
+
+   必ず **[!UICONTROL 透かし]** 処理プロファイルの作成時に切り替えます。
 
 1. [フォルダーに処理プロファイルを適用して](/help/assets/asset-microservices-configure-and-use.md#use-profiles)、透かし付きのアセットを作成します。
 
