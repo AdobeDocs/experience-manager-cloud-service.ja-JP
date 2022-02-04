@@ -4,10 +4,10 @@ description: ヘッドレスコンテンツの基礎となる AEM コンテン�
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1758'
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,6 @@ ht-degree: 100%
 1. 「**作成**」を選択して操作を完了してから、編集するためにフラグメントを&#x200B;**開く**&#x200B;か、「**完了**」でコンソールに戻ります。
 
    >[!NOTE]
-   >
    >コンソールの&#x200B;**リスト**&#x200B;モードでは、**表示設定**&#x200B;を更新して「**コンテンツフラグメントモデル**」列を有効にできます。
 
 ## Assets コンソールでコンテンツフラグメントに対して使用できるアクション {#actions-for-a-content-fragment-assets-console}
@@ -296,15 +295,15 @@ This updates any page references and ensures that the Dispatcher is flushed as r
    * **削除**
 
 >[!NOTE]
+コメントは次のとおりです。
+* すべてのアセットの標準機能
+* タイムラインで追加
+* フラグメントアセットに関連付けられる
 >
->コメントは次のとおりです。
->* すべてのアセットの標準機能
->* タイムラインで追加
->* フラグメントアセットに関連付けられる
-
 注釈（コンテンツフラグメント用）は次のとおりです。
 * フラグメントエディターで入力
 * フラグメント内の選択されたテキストセグメントに固有
+>
 
 
 次に例を示します。
@@ -334,8 +333,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 「**完了**」を選択すると、コンソールに戻ります
 
 >[!NOTE]
->
->フラグメントの比較中にフラグメントコンテンツを編集することはできません。
+フラグメントの比較中にフラグメントコンテンツを編集することはできません。
 
 ![比較](assets/cfm-managing-06.png)
 
@@ -352,19 +350,23 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 ## フラグメントの公開と参照 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
->まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
+フラグメントがモデルに基づいている場合、その[モデルが公開されている](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)ことを確認してください。
+まだ公開されていないモデルのコンテンツフラグメントを公開すると、選択リストにそのことが示され、モデルがフラグメントと共に公開されます。
 
-コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。次の方法で公開できます。
+コンテンツフラグメントをパブリッシュ環境で使用するには、公開する必要があります。これは、標準の Assets 機能を使用しておこないます。
+
+* [クイック公開](/help/assets/manage-publication.md#quick-publish)
+* [公開を管理](/help/assets/manage-publication.md#manage-publication)
+
+次の場所にアクセスできます。
 
 * 作成後、[Assets コンソールで使用可能なアクション](#actions-for-a-content-fragment-assets-console)を使用して。
 * [コンテンツフラグメントエディター](#toolbar-actions-in-the-content-fragment-editor)から。
-* [フラグメントを使用するページを公開](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing)するとき。フラグメントはページ参照にリスト表示されます。
+
+また、 [フラグメントを使用するページを公開する](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing);フラグメントがページ参照にリストされます。
 
 >[!CAUTION]
->
->フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
+フラグメントが公開または参照（あるいは両方）された後に、作成者がフラグメントを開いて編集しようとすると警告が表示され、フラグメントを変更すると、参照されているページにも影響が及ぶことが警告されます。
 
 ## フラグメントの削除 {#deleting-a-fragment}
 
@@ -374,12 +376,10 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 2. フラグメントを選択します。
 
    >[!NOTE]
-   >
-   >**削除**&#x200B;アクションはクイックアクションとして実行できません。
+   **削除**&#x200B;アクションはクイックアクションとして実行できません。
 
 3. ツールバーから「**削除**」を選択します。
 4. 「**削除**」アクションを確認します。
 
    >[!CAUTION]
-   >
-   >フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。
+   フラグメントが既にページで参照されている場合は、警告メッセージが表示されます。「**削除を強制**」を選択して続行を確認する必要があります。フラグメントはコンテンツフラグメントコンポーネントと一緒に、すべてのコンテンツページから削除されます。

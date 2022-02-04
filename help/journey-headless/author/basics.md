@@ -2,9 +2,9 @@
 title: オーサリングの基本
 description: コンテンツフラグメントを使用したヘッドレス CMS のコンテンツオーサリングの概念と仕組みについて説明します。
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1698'
 ht-degree: 100%
 
 ---
@@ -242,6 +242,12 @@ AEM インストールは、通常、少なくとも次の 2 つの環境で構�
    * [リソースの表示と選択](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
    * [パネルセレクター](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+
+   * 公開
+
+      * [クイック公開](/help/assets/manage-publication.md#quick-publish)
+
+      * [公開を管理](/help/assets/manage-publication.md#manage-publication)
 
 * [コンテンツフラグメントの操作](/help/assets/content-fragments/content-fragments.md)
 
