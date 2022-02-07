@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 99%
+source-wordcount: '2260'
+ht-degree: 97%
 
 ---
 
@@ -42,9 +42,7 @@ Dynamic Media は、次の 3D ファイル形式をサポートしています�
 | STL | ステレオリソグラフィ | application/vnd.ms-pki.stl |  |
 | USDZ | 汎用シーン記述 Zip アーカイブ | model/vnd.usdz+zip | *取り込みのみサポート。表示やインタラクションは利用不可。* USDZ は独自の 3D 形式で、Safari や iOS でネイティブに表示できます。 |
 
-<!-- >[!NOTE]
->
->The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). UNHIDE 2/3/22 CQDOC-18921-->
+アセットの詳細ページの 3D メディア WCM コンポーネントと 3D プレビューは、最新バージョンの Chrome(97.x) と互換性がありません。 代わりに、3D アセットを操作するには、Firefox または Safari を使用するか、以前のバージョンの Chrome(96.x) を使用します。
 
 ## クイックスタート：Dynamic Media 内の 3D アセット {#quick-start-three-d}
 
