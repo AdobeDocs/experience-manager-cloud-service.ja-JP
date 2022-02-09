@@ -1,9 +1,9 @@
 ---
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用して、コンテンツ転送を検証します
-source-git-commit: 9705af35d4a6064c0b4ad35086d98f4b43158dec
+source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->この機能は、コンテンツ転送ツール (CTT) バージョン 1.8.x リリース以降で使用できるようになります。 AEM Cloud Serviceのターゲット環境は、バージョン 6158 以降を実行している必要があります。
+>この機能は、コンテンツ転送ツール (CTT) バージョン 1.8.x リリース以降で使用できるようになります。 AEM Cloud Serviceのターゲット環境は、バージョン 6158 以降を実行している必要があります。 また、実行するには、ソース環境を設定する必要があります [プリコピー](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). 検証機能は、ソース上の azcopy.config ファイルを探します。 このファイルが見つからない場合は、検証は実行されません。 azcopy.config ファイルの設定方法について詳しくは、 [このページ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
 コンテンツ転送の検証はオプションの機能です。 この機能を有効にすると、抽出の実行に要する時間と取り込みの実行に要する時間の両方が長くなります。 この機能を使用するには、次の手順に従って、ソースAEM環境のシステムコンソールでこの機能を有効にします。
 
