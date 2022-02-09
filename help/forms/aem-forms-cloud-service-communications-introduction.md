@@ -2,7 +2,7 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a6b6a190a59d1c2f0001fe1f28d8d7bc8353d464
+source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 39%
@@ -129,14 +129,6 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ドキュメント作成 API を使用して、PDFドキュメントをPDF/A 準拠のドキュメントに変換し、PDFドキュメントがPDF/A に準拠しているかどうかを判断できます。 PDF/A は、ドキュメントのコンテンツを長期間保存するためのアーカイブ形式です。フォントはドキュメント内に埋め込まれ、ファイルは圧縮されません。その結果、通常、PDF/A ドキュメントは標準の PDF ドキュメントよりも大きくなります。また、PDF/A ドキュメントには、オーディオおよびビデオコンテンツは含まれません。
 
->[!NOTE]
->
-> ドキュメント操作 API を有効にして設定するには、次のルールを [Dispatcher の設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
->
-> `# Allow Forms Doc Generation requests`
-> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
-
-
 ## 通信 API のタイプ
 
 通信は、オンデマンドおよびバッチでのドキュメント生成用に HTTP API を提供します。
@@ -164,6 +156,13 @@ When such an interactive PDF document is flattened using the Communications APIs
 1. 「**[!UICONTROL 更新]**」をクリックします。
 
 1. ビルドパイプラインを実行します。ビルドパイプラインが成功すると、お使いの環境で通信 API が有効になります。
+
+>[!NOTE]
+>
+> ドキュメント操作 API を有効にして設定するには、次のルールを [Dispatcher の設定](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+>
+> `# Allow Forms Doc Generation requests`
+> `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
 
 <!--
