@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 5%
 
 ---
@@ -66,6 +66,9 @@ Image Server ページでは、Image Server から画像を配信するための
 ### 「Security」タブ {#security-tab}
 
 **[!UICONTROL クライアントアドレス]** - 1 つ以上の IP アドレスまたは IP アドレスの範囲を指定できます。 指定した場合、登録されていない IP アドレスのクライアントからのこの画像カタログへの要求は拒否されます。 このルールは、画像とレンダリングされた画像の両方の配信に適用されます。
+
+![「セキュリティ」タブ&#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*IP「許可」フィールドを表示する「セキュリティ」タブ*
+
 
 ### 「カタログ管理」タブ {#catalog-management-tab}
 
