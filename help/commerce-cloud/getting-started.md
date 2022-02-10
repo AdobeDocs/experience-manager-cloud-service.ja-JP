@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 93%
+source-wordcount: '1095'
+ht-degree: 87%
 
 ---
 
@@ -43,7 +43,7 @@ CIF アドオンと [AEM CIF コアコンポーネント](https://github.com/ado
 
 AEM as a Cloud Service 環境ごとに異なる GraphQL エンドポイント URL を使用できます。この方法で、プロジェクトは AEM ステージング環境をコマースステージングシステムに、また、AEM 実稼働環境をコマース実稼働システムに接続できます。GraphQL エンドポイントは、公開されている必要があります。プライベート VPN またはローカル接続はサポートされていません。オプションで、認証が必要な追加の CIF 機能を使用するために認証ヘッダーを指定できます。
 
-Adobe Commerce Enterprise / Cloud の場合のみ、CIF アドオンはオプションで AEM 作成者向けのステージング済みカタログデータの使用をサポートします。これには、認証トークンを設定する必要があります。設定された認証トークンは、セキュリティ上の理由から、AEM オーサーインスタンスでのみ使用できます。AEM パブリッシュインスタンスでは、ステージング済みデータを表示できません。
+オプションで、Adobe Commerce Enterprise/Cloud のみで、CIF アドオンはAEM作成者向けのステージング済みカタログデータの使用をサポートします。 認証ヘッダーを設定する必要があります。 このヘッダーは、セキュリティ上の理由から、AEMオーサーインスタンスでのみ使用および使用できます。 AEM パブリッシュインスタンスでは、ステージング済みデータを表示できません。
 
 エンドポイントを設定する方法は 2 つあります。
 
@@ -59,7 +59,7 @@ Adobe Commerce Enterprise / Cloud の場合のみ、CIF アドオンはオプシ
 
 ![CM コマースエンドポイント](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-エンドポイント（オプションで、ステージング済みカタログのサポートの認証トークン）が設定されると、エンドポイントが詳細ページに表示されます。編集アイコンをクリックすると同じダイアログが開き、必要に応じてエンドポイントを変更できます。
+エンドポイントと、オプションでステージング済みカタログサポートの認証ヘッダーを設定したら、エンドポイントが詳細ページに表示されます。 編集アイコンをクリックすると同じダイアログが開き、必要に応じてエンドポイントを変更できます。
 
 ![CM 環境情報](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
