@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c135f7c0c5265110774d145bf8c5a73d44d660b1
+source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3494'
 ht-degree: 91%
 
 ---
@@ -552,6 +552,8 @@ ht-degree: 91%
    + Cloud Manager の使用 {#using-cloud-manager}
       + Cloud Manager のリリースノート {#release-notes-cloud-manager}
          + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+         + 2022 年 {#2022}
+            + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 年 {#2021}
             + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
@@ -602,12 +604,9 @@ ht-degree: 91%
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
          + [はじめに](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + 実稼動パイプライン {#production-pipelines}
-            + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-            + [実稼動パイプラインの編集](/help/implementing/cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + 実稼動以外のパイプライン {#non-production-pipelines}
-            + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-            + [実稼動以外のパイプラインの編集](/help/implementing/cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
+         + [実稼動パイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [実稼動以外のパイプラインの設定](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+         + [パイプラインの管理](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
       + [コードのデプロイ](/help/implementing/cloud-manager/deploy-code.md)
       + テスト結果について {#test-results}
          + [概要](/help/implementing/cloud-manager/overview-test-results.md)

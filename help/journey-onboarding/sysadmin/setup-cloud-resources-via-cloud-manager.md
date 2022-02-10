@@ -1,194 +1,182 @@
 ---
-title: Cloud Manager を使用したクラウドリソースの設定
-description: このページでは、Cloud Manager を使用してクラウドリソースを設定する方法について説明します
+title: Cloud Manager を使用したクラウドリソースのセットアップ
+description: Cloud Manager を使用して独自のクラウドリソースを設定および管理する方法について説明します。
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 7fe39bbc8d5e965af7f339b2a524420c76360552
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 90%
+source-wordcount: '1369'
+ht-degree: 19%
 
 ---
 
-# Cloud Manager を使用したクラウドリソースの設定 {#setup-cloud-resources}
+# Cloud Manager を使用したクラウドリソースのセットアップ {#setup-cloud-resources}
 
-ビジネスオーナーの役割に割り当てられたシステム管理者が、Cloud Manager にアクセスしてログインする。その後、ビジネスオーナー製品プロファイルに割り当てられたチームメンバーは、Cloud Manager にログインし、クラウドプログラムと環境を作成して、エキスパートチームが作業を開始できるようにする必要があります。
+Cloud Manager を使用して独自のクラウドリソースを設定および管理する方法について説明します。
 
 ## 目的 {#objective}
 
-このドキュメントでは、クラウドリソースの作成方法と作成者について説明します。
+このドキュメントでは、クラウドリソースの作成方法と作成者について説明します。 この説を読み終えると、以下を理解できます。
 
-この節を読むと、次の内容を理解できます。
-
-* ビジネスオーナーの役割に割り当てられたシステム管理者は、Cloud Manager にアクセスしてログインする最初のユーザーである必要がある。
+* システム管理者が **ビジネスオーナー** の役割は、組織で Cloud Manager にログインしてアクセスする最初の役割である必要があります。
 * クラウドプログラムと環境の作成方法。
 
 ## はじめに {#introduction}
 
-クラウドリソースの追加は、Cloud Manager ビジネスオーナー製品プロファイルに割り当てられたチームメンバーが Cloud Manager を使用して行います。通常、このユーザーは、ビジネスニーズを理解し、Cloud Manager の初期設定を完了するユーザーです。
+クラウドリソースの追加は、Cloud Manager を通じて、 **ビジネスオーナー** 製品プロファイル。 通常、このユーザーは、ビジネスニーズを理解し、Cloud Manager の初期設定を完了するユーザーです。
 
 以下の節では、 [クラウドサービスプログラム](#create-cloud-service-program) および [環境。](#create-cloud-environments)
 
 ### 前提条件 {#prerequisites}
 
-* ビジネスオーナーの役割に割り当てられたシステム管理者が、Cloud Manager にアクセスしてログインする。
+* システム管理者が **ビジネスオーナー** の役割は、Cloud Manager にログインしておく必要があります。 **ビジネスオーナー** ロールは、このドキュメントで説明されている手順を実行するために Cloud Manager にアクセスしようとします。
 
-* 以下をおこなう方法を説明します。 [Cloud Manager に移動してログインします。](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+   * に戻る [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) このジャーニーのドキュメントを参照してください。
 
-* 詳しく [Cloud Manager 製品プロファイル。](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+* 次の方法を理解する必要があります。 [Cloud Manager に移動してログインします。](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 
-* Cloud Manager の概念を理解する [プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) および [環境。](/help/implementing/cloud-manager/manage-environments.md)
+* 君は～をよく知っているべきだ。 [Cloud Manager 製品プロファイル。](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+
+* Cloud Manager の概念を理解する必要があります [プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) および [環境。](/help/implementing/cloud-manager/manage-environments.md)
+
+## システム管理者およびビジネスオーナーとして Cloud Manager にアクセス {#access-sysadmin-bo}
+
+割り当てたチームメンバーの前に **ビジネスオーナー** の役割は cloud manager にアクセスし、クラウドリソースの作成を開始できます。システム管理者には、 **ビジネスオーナー** ロールを作成し、Cloud Manager にログインします。
+
+1. システム管理者が、 **ビジネスオーナー** ロールが割り当てられました。
+
+   * このジャーニーの前の手順に戻ります。 [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) 割り当てに関する詳細 **ビジネスオーナー** の役割をシステム管理者に割り当てます（まだ割り当てていない場合）。
+
+1. で Cloud Manager にログインする [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 通常のランディングページが表示されます。
+
+を使用してシステム管理者として正常にサインインする **ビジネスオーナー** ロールを使用する場合、他のユーザーが使用する Cloud Manager を **ビジネスオーナー** 役割。 このメッセージやメッセージの確認はお送りしません。 サインインで十分です。
+
+を使用して Cloud Manager にシステム管理者としてログインするまで、 **ビジネスオーナー** 役割、 **ビジネスオーナー** ロールは、適切なロールが割り当てられている場合でも、Cloud Manager でプログラムを作成できません。
 
 ## Cloud Manager への移動 {#navigate-cloud-manager}
 
-作業を開始するためのリンクが記載された「ようこそ」電子メールがビジネスオーナーユーザーに届きます。リンクが見つからない場合は、Adobe ID を使用してログインすることで、[Cloud Manager](https://my.cloudmanager.adobe.com/) に直接アクセスします。
-
-Cloud Manager にアクセスするには、次の手順に従います。
+ユーザーの **ビジネスオーナー** の役割には、開始するためのリンクが記載された「ようこそ」の電子メールが届きます。 このようこそメールを使用して Cloud Manager に移動するには、以下の手順に従います。
 
 1. お知らせメールで、「**使用を開始**」をクリックします（下図を参照）。
-   ![](/help/journey-onboarding/assets/get-started-email.png)
+   ![電子メールの例](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Cloud Manager の&#x200B;**プログラムと製品**&#x200B;ページに移動します。
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >または、[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) から Cloud Manager の&#39;ログインページに直接移動することもできます。今後 Cloud Manager のランディングページに直接移動する際に役立つように、このページをブックマークに追加してください。
+   >また、次の場所から Cloud Manager のログインページに直接移動することもできます。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). 今後の参照用に、このページをブックマークに追加してください。
 
 1. Cloud Manager のランディングページに移動します。詳しくは、[Cloud Manager のプログラムの表示](#viewing-programs)の節を参照してください。
 
-さらに、Adobe Experience Cloud のホームページから Cloud Manager の「**プログラムと製品**」ページに移動できます。次の手順に従います。
+また、Cloud Manager の **プログラムと製品** 次の手順に従って、Adobe Experience Cloudホームページからページを開きます。
 
 1. [Adobe Experience Cloud](https://experience.adobe.com) に直接移動し、Adobe ID を使用してログインします。
 
 1. Adobe Experience Cloud のホームページで、「**Experience Manager**」を選択します。
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Experience Cloudホームページ](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. AEM ホームページが表示されます。ここから、 **Cloud Manager** を起動します。
+1. AEM ホームページが表示されます。ここから、 **起動** の **Cloud Manager** タイル。
 
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEMホームページ](/help/journey-onboarding/assets/setup-resources3.png)
 
 1. 正常にログインすると、Cloud Manager のランディングページが表示されます。詳しくは、[Cloud Manager のプログラムの表示](#viewing-programs)の節を参照してください。
 
-   >[!NOTE]
-   >
-   >[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
+Cloud Manager を使用してプログラムや製品にアクセスする方法はユーザー次第で、Cloud Manager の使用方法やプログラムの管理方法には影響しません。
 
-### Cloud Manager のランディングページでのプログラムの表示 {#viewing-programs}
+>[!NOTE]
+>
+>[!UICONTROL Cloud Manager] で割り当てられた役割とアプリケーションの状態によっては、[!UICONTROL Cloud Manager] UI の使用中に異なる画面が表示されます。
 
-正常にログインすると、Cloud Manager のランディングページが表示されます。次に示す 3 つのオプションのいずれかが表示されます。
+### プログラムの表示 {#viewing-programs}
 
-#### Cloud Manager にプログラムが存在しません {#no-programs}
+Cloud Manager に正常にアクセスすると、表示される内容は、以降の節で説明するように、プログラムの状態によって異なります。
 
-組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページで指示されます（下図を参照）。
+#### プログラムが存在しない場合 {#no-programs}
 
+組織にプログラムが存在しない場合は、最初のプログラムを作成するようにランディングページに指示されます。
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+![プログラムがありません](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-#### プログラムは既に Cloud Manager に存在します {#programs-exist}
+#### プログラムが既に存在する場合 {#programs-exist}
 
-組織にプログラムが既に存在する場合は、別のプログラムを追加するようにランディングページで指示され、既存のプログラムがすべてランディングページに表示されます（下図を参照）。
+組織にプログラムが既に存在する場合は、ランディングページに既存のプログラムが表示され、追加のプログラムを追加するボタンも表示されます。
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+![プログラムが存在します](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-#### プログラムが存在しユーザーがシステム管理者です {#programs-exist-sysadmin}
+#### プログラムが存在し、システム管理者である場合 {#programs-exist-sysadmin}
 
-組織にプログラムが既に存在し、ユーザーがシステム管理者である場合は、次の図に示すように、ランディングページに「**アクセスを管理**」ボタンと「**プログラムを追加**」オプションが表示されます。
+組織にプログラムが既に存在し、システム管理者である場合は、ランディングページが表示されます **アクセスを管理** ～と一緒に **プログラムの追加** オプション。
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+![システム管理者ビュー](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## ユーザーの役割の確認 {#verify-user-roles}
 
-Cloud Manager に正常にログインしたら、以下の手順に従って、ビジネスオーナー製品プロファイルが割り当てられていることを確認します。
+Cloud Manager に正常にログインすると、 **ビジネスオーナー** 製品プロファイル。
 
-1. 右上のプロファイルを選択します（下図を参照）。
+1. ウィンドウの右上からプロファイルを選択します。
 
-   ![](/help/journey-onboarding/assets/setup-resources5.png)
+   ![ユーザープロファイル](/help/journey-onboarding/assets/setup-resources5.png)
 
-1. 「**ユーザーの役割**」を選択し、ビジネスオーナーに割り当てられていることを確認します。
+1. 選択 **ユーザーの役割** ：ユーザーに割り当てられているロールを表示します。
 
-   ![](/help/journey-onboarding/assets/setup-resources6.png)
+   ![ユーザーの役割](/help/journey-onboarding/assets/setup-resources6.png)
 
-1. これで、ビジネスオーナーとしてのユーザーの役割を確認できました。
+1. ユーザーが **ビジネスオーナー** 役割。
 
-   ![](/help/journey-onboarding/assets/setup-resources7.png)
+   ![ユーザーの役割のリスト](/help/journey-onboarding/assets/setup-resources7.png)
 
-   お疲れ様でした。Cloud Manager にビジネスオーナーとして正常にログインしました。
+Cloud Manager にビジネスオーナーとして正常にログインしました。まだ **ビジネスオーナー** の役割については、システム管理者にお問い合わせください。
 
-## クラウドサービスプログラムの作成 {#create-cloud-service-program}
+## Cloud Serviceプログラムの作成 {#create-cloud-service-program}
 
-Cloud Manager からクラウドサービスプログラムを作成するには、以下の手順に従います。
+これで、適切なアクセス権が確保されたので、最初のプログラムを作成できます。
 
-1. 次に示すように、Cloud Manager ランディングページに移動します。
+1. Cloud Manager ランディングページ ( ) に移動します。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) にログインし、
 
-   >[!NOTE]
-   >
-   >この手順を正常に完了するには、 Cloud Manager ビジネスオーナー製品プロファイルに割り当てられているチームメンバーである必要があります。
+1. Cloud Manager のランディングページで、 **プログラムの追加** をクリックして、プログラムの追加ウィザードを起動します。
 
-   ここから、「**プログラムの追加**」をクリックして、「プログラムの追加」ウィザードを起動します。
-
-   ![](/help/journey-onboarding/assets/setup-resources4.png)
+   ![ランディングページ](/help/journey-onboarding/assets/setup-resources4.png)
 
    >[!TIP]
    >
-   >AEM as a Cloud プログラムの作成方法と、プログラムを作成する前の重要な検討事項については、[ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)をご覧ください。
+   >プログラムの追加ウィザードの使用方法に関する詳細な手順については、このドキュメントを参照してください [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) またはこれをご覧ください [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud プログラムを作成する方法と、プログラムを作成する前に重要な考慮事項について学ぶには、以下を参照してください。
 
-   >[!TIP]
-   >
-   >プログラムの追加ウィザードの使い方に関する詳しい手順については、[こちら](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md)を参照してください。
 
-1. クラウドプログラムが正常に作成されたら、プログラムに移動して、以下に示すように、プログラムの&#x200B;**概要**&#x200B;ページを確認できます。
+1. クラウドプログラムが正常に作成されたら、 Cloud Manager のランディングページからプログラムに移動して、 **概要** ページを開きます。
 
-   ![](/help/journey-onboarding/assets/setup-resources8.png)
+   ![プログラムの概要](/help/journey-onboarding/assets/setup-resources8.png)
 
-   >[!NOTE]
-   >
-   >開発者メンバーを Cloud Manager チームにまだ追加していない場合は、ここで追加するとよいでしょう。「開発者製品プロファイルへのユーザーの追加」を参照し、その手順に従います。
+1. デベロッパー製品プロファイルに割り当てられたメンバーは、 Cloud Manager にログインして、Cloud Manager の Git リポジトリを管理できます。
 
-1. デベロッパー製品プロファイルに割り当てられたメンバーは、Cloud Manager にログインし、[Cloud Manager Git を管理](/help/implementing/cloud-manager/managing-code/accessing-repos.md)できます。
+   * まだメンバーを割り当てていない場合は、今すぐ、 **開発者** の役割が Cloud Manager チームに割り当てられていることを確認します。 に戻る [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) このジャーニーのドキュメントを参照してください。
 
-   お疲れさまでした。プログラムが正常に作成され、デベロッパーが Cloud Manager Git にアクセスできるようになりました。
-
+これで、プログラムが正常に作成され、Cloud Manager の Git リポジトリを開発者が使用できるようになりました。
 
 ## クラウド環境の作成 {#create-cloud-environments}
 
 クラウドプログラムを正常に作成したら、クラウド環境を作成します。
 
-Cloud Manager からクラウド環境を作成するには、次の手順に従います。
+1. Cloud Manager ランディングページ ( ) に移動します。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) を選択し、 **追加** を設定します。
 
-1. Cloud Manager の&#x200B;**概要**&#x200B;ページに移動し、環境カードから「**追加**」を選択します。
+   ![環境を追加ボタン](/help/journey-onboarding/assets/setup-resources9.png)
 
-   ![](/help/journey-onboarding/assets/setup-resources9.png)
+1. 環境を追加ウィザードが起動し、環境の追加手順が示されます。 ウィザードに慣れるには、まず開発環境を追加してください。
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >この手順を正常に完了するには、ビジネスオーナーまたはデプロイメントマネージャーの役割を持つ Cloud Manager ユーザーがログインする必要があります。
+   >ドキュメントを参照します。 [環境の追加](/help/implementing/cloud-manager/manage-environments.md#adding-environments) 多くを学ぶ、または見る [このクイックビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) Cloud Manager 環境と、それらをプログラムに追加する方法について説明します。
 
-   さらに、[ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)のクイックチュートリアルでは、Cloud Manager 環境と、それらの環境をプログラムに追加する方法についても説明しています。
+1. に割り当てられたメンバー **開発者** 製品プロファイルは、 Cloud Manager にログインして Cloud Manager の Git リポジトリーを管理できます。
 
-1. 環境の追加ウィザードが起動し、環境の追加を指示します。ウィザードに慣れるには、まず開発環境を追加してください。詳しくは、[環境の追加](/help/implementing/cloud-manager/manage-environments.md#adding-environments)を参照してください。
-
-   >[!NOTE]
-   >
-   >開発者メンバーを Cloud Manager チームにまだ追加していない場合は、ここで追加するとよいでしょう。「開発者製品プロファイルへのユーザーの追加」を参照し、その手順に従います。
-
-1. 開発者製品プロファイルに割り当てられたメンバーは、 Cloud Manager にログインし、 [Cloud Manager Git を管理します。](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-
-   お疲れさまでした。プログラムが正常に作成され、開発者が Cloud Manager Git にアクセスできるようになりました。
-
-   おめでとうございます。これで、クラウドプログラム環境が作成され、デベロッパーがチームに追加されました。
+これで、プログラムが正常に作成され、開発者が Cloud Manager の Git にアクセスできるようになりました。
 
 ## 次の手順 {#whats-next}
 
-Cloud Manager を管理する権限では不十分なので、チームメンバーにインスタンスに対する権限を付与する必要があります。システム管理者は、クラウドリソースが作成され、チームがアクセスする準備が整ったら、Adobe Admin Console でチームメンバーを AEM as a Cloud Service 製品プロファイルに割り当てる必要があります。
+クラウドリソースが作成され、チームからアクセスする準備が整ったので、システム管理者は、チームメンバーをAdobe Admin Consoleのas a Cloud Serviceの製品プロファイルに割り当てて、それらのリソースにアクセスする必要があります。
 
->[!NOTE]
->
->AEM as a Cloud Service ユーザーにアクセス権を付与するには、`AEM Users` または `AEM Administrators` のいずれかの製品プロファイルに属している必要があります。詳しくは、](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console)Admin Console での製品とユーザーアクセスの管理[を参照してください。
-
-次にドキュメントを確認して、オンボーディングジャーニーを続行する必要があります [チームメンバーのAEMas a Cloud Service製品プロファイルへの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-
+次にドキュメントを確認して、オンボーディングジャーニーを続行する必要があります [チームメンバーのAEMas a Cloud Service製品プロファイルへの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) ここでは、チームメンバーに新しい環境へのアクセスに必要な権限を付与する方法について説明します。
 
 ## その他のリソース {#additional-resources}
 

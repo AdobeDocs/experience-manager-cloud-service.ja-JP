@@ -4,9 +4,9 @@ description: このページでは、オンボーディングジャーニーの�
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
-source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
-workflow-type: ht
-source-wordcount: '549'
+source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+workflow-type: tm+mt
+source-wordcount: '555'
 ht-degree: 100%
 
 ---
@@ -73,3 +73,8 @@ ht-degree: 100%
 ## 次の手順 {#whats-next}
 
 これで、Admin Console にログインし、システム管理者としてプロファイルを確認したので、次に [Cloud Manager 製品プロファイルへのチームメンバーの割り当て](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)のドキュメントを参照しながら、オンボーディングジャーニーを続けてください。
+
+## その他のリソース {#additional-resources}
+
+* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+* [システム管理者](/help/onboarding/learn-concepts/system-administrator.md)

@@ -1,121 +1,188 @@
 ---
 title: 実稼動パイプラインの設定
-description: 実稼動パイプラインの設定
+description: コードをビルドして実稼動環境にデプロイするための実稼動パイプラインを設定する方法について説明します。
 index: true
-source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
+source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 45%
+source-wordcount: '1367'
+ht-degree: 8%
 
 ---
 
 
 # 実稼動パイプラインの設定 {#configure-production-pipeline}
 
-実稼動パイプラインの設定はデプロイメントマネージャーが担当します。
+コードをビルドして実稼動環境にデプロイするための実稼動パイプラインを設定する方法について説明します。
+
+ユーザーが **[デプロイメントマネージャー](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** 実稼動パイプラインを設定するためのロール。
 
 >[!NOTE]
->プログラムの作成が完了し、Git リポジトリーに少なくとも 1 つのブランチがあり、実稼働とステージングの環境セットが作成されるまで、実稼動パイプラインを設定できません。
+>
+>実稼動パイプラインは、プログラムの作成が完了し、Git リポジトリに少なくとも 1 つのブランチがあり、実稼動とステージング環境のセットが作成されるまで、設定できません。
 
 コードのデプロイを開始する前に、[!UICONTROL Cloud Manager] からパイプライン設定を指定する必要があります。
 
 >[!NOTE]
->初期設定後にパイプライン設定を変更できます。
+>
+>以下が可能です。 [パイプライン設定を編集](managing-pipelines.md) を設定します。
 
 ## 新しい実稼動パイプラインの追加 {#adding-production-pipeline}
 
-プログラムを設定し、次を使用して 1 つ以上の環境を設定したら、 [!UICONTROL Cloud Manager] UI で実稼動パイプラインを追加する準備が整いました。
+プログラムを設定し、少なくとも 1 つの環境で [!UICONTROL Cloud Manager] UI で、次の手順に従って実稼動パイプラインを追加する準備が整いました。
 
-実稼動パイプラインの動作と環境を設定するには、次の手順に従います。
+>[!TIP]
+>
+>フロントエンドパイプラインを設定する前に、 [AEMクイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) を参照してください。このガイドは、使いやすいAEM Quick Site Creation ツールです。 このジャーニーは、AEM Site のフロントエンド開発を合理化するのに役立ち、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズできます。
 
-1. 次に移動： **パイプライン** カード **プログラムの概要** ページ。
-クリック **+追加** を選択し、 **実稼動パイプラインを追加**.
+1. Cloud Manager( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 適切な組織およびプログラムを選択します。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+1. 次に移動： **パイプライン** カード **プログラムの概要** ページを開き、をクリックします。 **追加** 選択 **実稼動パイプラインを追加**.
 
-1. **実稼動パイプラインを追加** ダイアログボックスが表示されます。 パイプライン名を入力します。
+   ![プログラムマネージャーの概要のパイプラインカード](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
-   また、 **デプロイメントトリガー** および **重要な指標の失敗の動作** から **デプロイメントオプション**. クリック **続行**.
+1. この **実稼動パイプラインを追加** ダイアログボックスが表示されます。 次を提供： **パイプライン名** を使用して、以下のオプションと共にパイプラインを特定します。 「**続行**」をクリックします。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-add2.png)
+   **デプロイメントトリガー**  — パイプラインを開始するデプロイメントトリガーを定義する際に、次のオプションがあります。
 
+   * **手動**  — このオプションを使用して、パイプラインを手動で開始します。
+   * **Git の変更時**  — このオプションは、設定された Git ブランチにコミットが追加されるたびに CI/CD パイプラインを開始します。 このオプションを使用すると、必要に応じてパイプラインを手動で開始できます。
 
-   パイプラインを開始するデプロイメントトリガーを定義できます。
+   **重要な指標の失敗の動作**  — パイプラインの設定または編集中に、 **デプロイメントマネージャー** には、品質ゲートのいずれかで重要なエラーが発生した場合のパイプラインの動作を定義するオプションがあります。 使用できるオプションは以下のとおりです。
 
-   * **手動** - UI を使用して、パイプラインを手動で開始します。
-   * **Git の変更時** - 設定された Git ブランチにコミットが追加されるたびに CI/CD パイプラインを開始します。このオプションを選択しても、常にパイプラインを手動で開始できます。
-
-      パイプラインのセットアップまたは編集中に、デプロイメントマネージャーは、品質ゲートのいずれかで重要なエラーが検出された場合のパイプラインの動作を定義できます。
-
-      これは、より自動化されたプロセスを求めるお客様に役に立ちます。使用できるオプションは以下のとおりです。
-   重要な失敗指標の動作を定義して、パイプラインを開始できます。
-
-   * **毎回確認する** - デフォルトの設定。重要なエラーが検出されたときに手動で介入する必要があります。
+   * **毎回確認する**  — これはデフォルトの設定で、重要なエラーが発生した場合に手動で介入する必要があります。
    * **すぐに失敗**  — 重要なエラーが発生すると、常にパイプラインはキャンセルされます。 このオプションでは、基本的に、各エラーをユーザーが手動で拒否する状況をエミュレートします。
    * **すぐに続行**  — 重要なエラーが発生した場合は常に、パイプラインは自動的に続行されます。 このオプションでは、基本的に、各エラーをユーザーが手動で承認する状況をエミュレートします。
 
+   ![実稼動パイプラインの設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルが付いた 2 番目のタブが含まれます **ソースコード**. 次のいずれかを選択できます。 **[フロントエンドコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** または **[フルスタックコード](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
+1. の **ソースコード** 「 」タブを使用して、パイプラインがコードを取得する場所と取得するコードのタイプを定義する必要があります。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+   * **[フロントエンドコード](#front-end-code)**
+   * **[フルスタックコード](#full-stack-code)**
+   * **[Web 階層設定](#web-tier-config)**
 
-   選択した場合 **フロントエンドコード**&#x200B;を選択する場合は、 **リポジトリ**, **Git ブランチ** および **コードの場所**（下の図を参照）。
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+実稼動パイプラインの作成を完了する手順は、 **ソースコード** を選択しました。 上記のリンクをたどって、このドキュメントの次の節に移動し、パイプラインの設定を完了します。
 
-   選択した場合 **フルスタックコード**&#x200B;を選択する場合は、 **リポジトリ**, **Git ブランチ** および **実稼動デプロイメントオプション** （詳細は以下の図を参照）。
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+### フロントエンドコード {#front-end-code}
 
-   **実稼動デプロイメントオプション:**
+フロントエンドコードパイプラインは、1 つ以上のクライアント側 UI アプリケーションを含むフロントエンドコードビルドをデプロイします。 ドキュメントを参照 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
 
-   * **実稼動環境にデプロイする前に一時停止します**:このオプションを使用すると、実稼動前にデプロイメントを一時停止できます。
-   * **予定**:このオプションを使用すると、ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。
+フロントエンドコード実稼動パイプラインの設定を完了するには、次の手順に従います。
 
-   >[!IMPORTANT]
-   >選択した環境にフルスタックコードパイプラインが既に存在する場合、この選択は無効になります。
-   >![](/help/implementing/cloud-manager/assets/configure-pipeline/full-stack-disabled.png)
+1. の **ソースコード** 「 」タブで、次のオプションを定義する必要があります。
 
-   >[!NOTE]
-   >フロントエンドパイプラインの設定を開始する前に、 [AEMクイックサイト作成ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) 使いやすいAEM Quick Site Creation ツールを使用してエンドツーエンドのワークフローを実現する このドキュメントサイトは、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずに、すばやくサイトをカスタマイズするのに役立ちます。
+   * **リポジトリ**  — このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
+   >[!TIP]
+   > 
+   >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
-1. クリック **続行** 次のオプションを選択したら、 **ソースコード** タブをクリックします。
+   * **Git ブランチ**  — このオプションは、選択した内のどのブランチからコードを取得するかを定義します。
+   * **コードの場所**  — このオプションは、パイプラインがコードを取得する元となる、選択したリポジトリのブランチ内のパスを定義します。
+   * **実稼動にデプロイする前に一時停止します**  — このオプションは、実稼動環境にデプロイする前にパイプラインを一時停止します。
 
-1. この **実稼動パイプラインを追加** ダイアログボックスには、次のラベルの付いた 3 番目のタブが含まれます。 **エクスペリエンス監査**. このオプションは、エクスペリエンス監査に常に含める必要がある URL パスの表を提供します。
+   ![フロントエンドコード](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
+1. クリック **保存** をクリックしてパイプラインを保存します。
 
-   >[!IMPORTANT]
-   >次をクリックする必要があります： **ページを追加** をクリックして独自のカスタムリンクを定義します。 ページのパスはで始める必要があります `/`.
-   >![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit2.png)
+パイプラインが保存され、次の操作が可能になります。 [パイプラインを管理](managing-pipelines.md) の **パイプライン** カード **プログラムの概要** ページ。
 
+### フルスタックコード {#full-stack-code}
 
-   「**新規ページを追加**」をクリックして、エクスペリエンス監査に含める URL パスを指定します。
+フルスタックコードパイプラインは、1 つ以上のAEMサーバーアプリケーションと HTTPD/Dispatcher 設定を含むバックエンドおよびフロントエンドコードビルドを同時にデプロイします。 ドキュメントを参照 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) を参照してください。
 
-   例えば、`https://wknd.site/us/en/about-us.html` をエクスペリエンス監査に含める場合は、このフィールドにパス `/us/en/about-us.html` を入力し、「**保存**」をクリックします。
+>[!NOTE]
+>
+>選択した環境にフルスタックコードパイプラインが既に存在する場合、この選択は無効になります。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
+フルスタックコード実稼動パイプラインの設定を完了するには、次の手順に従います。
 
-   表に表示される URL は次のとおりです。
+1. の **ソースコード** 「 」タブで、次のオプションを定義する必要があります。
 
-   `https://publish-p12361-e112003.adobeaemcloud.com/us/en/about-us.html`
+   * **リポジトリ**  — このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
+   >[!TIP]
+   > 
+   >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
+   * **Git ブランチ**  — このオプションは、選択した内のどのブランチからコードを取得するかを定義します。
+   * **コードの場所**  — このオプションは、パイプラインがコードを取得する元となる、選択したリポジトリのブランチ内のパスを定義します。
+   * **実稼動にデプロイする前に一時停止します**  — このオプションは、実稼動環境にデプロイする前にパイプラインを一時停止します。
+   * **スケジュール設定** - このオプションを使用すると、ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。
 
-   最大 25 行まで含めることができます。このセクションにユーザーが送信したページがない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
+   ![フルスタックコード](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-   詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」ｓを参照してください。
+1. クリック **続行** 先に進む **エクスペリエンス監査** タブを使用して、エクスペリエンス監査に常に含めるパスを定義できます。
 
-   >[!NOTE]
-   > 設定されたページはサービスに送信され、パフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ Web アプリ）のテストに従って評価されます。
+   ![エクスペリエンス監査の追加](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. 「**保存**」をクリックします。新しく作成した実稼動パイプラインが、 **パイプライン** カード。
+1. エクスペリエンス監査に含める パスを指定.
 
-   パイプラインは、次に示すように、4 つのアクションと共にホーム画面のカードに表示されます。
+   * ページのパスはで始める必要があります `/`.
+   * 例えば、 `https://wknd.site/us/en/about-us.html` 「エクスペリエンス監査」に、パスを入力します。 `/us/en/about-us.html`.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
+   ![エクスペリエンス監査のパスの定義](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-   * **追加**  — 新しいパイプラインを追加できます。
-   * **すべて表示** ：ユーザーがすべてのパイプラインを表示できます。
-   * **リポジトリー情報へアクセス** - Cloud Manager Git リポジトリーへのアクセスに必要な情報をユーザーが取得できるようにします.
-   * **詳細情報** - CI／CD パイプラインのドキュメントリソースの概要に移動します。
+1. クリック **ページを追加** パスは、環境のアドレスで自動入力され、パスのテーブルに追加されます。
 
+   ![テーブルへのパスの保存](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
+1. 必要に応じて、前の 2 つの手順を繰り返して、引き続きパスを追加します。
+
+   * 最大 25 個のパスを追加できます。
+   * パスを定義しない場合、サイトのホームページはデフォルトでエクスペリエンス監査に含まれます。
+
+1. クリック **保存** をクリックしてパイプラインを保存します。
+
+エクスペリエンス監査用に設定されたパスはサービスに送信され、パイプライン実行時のパフォーマンス、アクセシビリティ、SEO（検索エンジン最適化）、ベストプラクティス、PWA（プログレッシブ Web アプリ）のテストに従って評価されます。 詳しくは、「[エクスペリエンス監査結果について](/help/implementing/cloud-manager/experience-audit-testing.md)」ｓを参照してください。
+
+パイプラインが保存され、次の操作が可能になります。 [パイプラインを管理](managing-pipelines.md) の **パイプライン** カード **プログラムの概要** ページ。
+
+### Web 階層設定 {#web-tier-config}
+
+Web 層設定パイプラインは、HTTPD/Dispatcher 設定をデプロイします。 ドキュメントを参照 [CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) を参照してください。
+
+フルスタックコード実稼動パイプラインの設定を完了するには、次の手順に従います。
+
+1. の **ソースコード** 「 」タブで、次のオプションを定義する必要があります。
+
+   * **リポジトリ**  — このオプションは、パイプラインがコードを取得する Git リポジトリを定義します。
+   >[!TIP]
+   > 
+   >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
+
+   * **Git ブランチ**  — このオプションは、選択した内のどのブランチからコードを取得するかを定義します。
+   * **コードの場所**  — このオプションは、パイプラインがコードを取得する元となる、選択したリポジトリのブランチ内のパスを定義します。
+      * Web 層設定パイプラインの場合、通常は次を含むパスになります。 `conf.d`, `conf.dispatcher.d`、および `opt-in` ディレクトリ。
+      * 例えば、プロジェクト構造が [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) パスは次のようになります。 `/dispatcher/src`.
+   * **実稼動にデプロイする前に一時停止します**  — このオプションは、実稼動環境にデプロイする前にパイプラインを一時停止します。
+   * **スケジュール設定** - このオプションを使用すると、ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。
+
+   ![Web 層コード](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-webtier.png)
+
+1. クリック **保存** をクリックしてパイプラインを保存します。
+
+>[!NOTE]
+>
+>既存のフルスタックパイプラインが環境にデプロイされている場合、同じ環境に対して Web 層設定パイプラインを作成すると、フルスタックパイプライン内の既存の Web 層設定が無視されます。
+
+パイプラインが保存され、次の操作が可能になります。 [パイプラインを管理](managing-pipelines.md) の **パイプライン** カード **プログラムの概要** ページ。
+
+## Dispatcher パッケージをスキップ {#skip-dispatcher-packages}
+
+Dispatcher パッケージをパイプラインの一部として構築し、それらを公開してストレージを構築したくない場合は、公開を無効にすると、パイプラインの実行時間が短縮される可能性があります。
+
+次の設定で、Dispatcher パッケージの公開を無効にします。この設定は、プロジェクトを介して追加する必要があります `pom.xml` ファイル。 このフラグは、環境変数に基づいています。この変数は、Cloud Manager ビルドコンテナで設定できるフラグで、Dispatcher パッケージを無視するタイミングを定義できます。
+
+```xml
+<profile>
+  <id>only-include-dispatcher-when-it-isnt-ignored</id>
+  <activation>
+    <property>
+      <name>env.IGNORE_DISPATCHER_PACKAGES</name>
+      <value>!true</value>
+    </property>
+  </activation>
+  <modules>
+    <module>dispatcher</module>
+  </modules>
+</profile>
+```

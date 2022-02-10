@@ -1,18 +1,18 @@
 ---
-title: AEM as a Cloud Service Release 2022.01.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Serviceリリース2022.01.0の Cloud Manager のリリースノートです。
+title: AEM as a Cloud Service Release 2022.02.0 Cloud Manager のリリースノート
+description: AEM as a Cloud Serviceリリース2022.02.0の Cloud Manager のリリースノートです。
 feature: Release Information
-source-git-commit: 8da3976250c94d5858d07a83b0eb395fab9a3eda
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 12%
+source-wordcount: '274'
+ht-degree: 11%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service 2022.01.0 の Cloud Manager のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service 2022.02.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.01.0の Cloud Manager のリリースノートの概要を説明します。
+このページでは、AEM as a Cloud Service 2022.02.0の Cloud Manager のリリースノートの概要を説明します。
 
 >[!NOTE]
 >
@@ -20,18 +20,20 @@ ht-degree: 12%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年 1 月 20 日です。 次回のリリースは 2022 年 2 月 10 日に予定されています。
+AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年 2 月 10 日です。 次回のリリースは 2022 年 3 月 10 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* Cloud Manager では次の処理がおこなわれます。 [同じ git コミットが使用されたことを検出した場合は、コードベースを再構築しないでください](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 複数のフルスタックパイプライン実行で実行する場合。
-* AEM環境ログにアクセスするには、 **デプロイメントマネージャー** 製品プロファイル。 このプロファイルを持たないユーザーには、ユーザーインターフェイスに無効なボタンが表示されます。
-* Sites がソリューションとして有効になっていないプログラムに対しては、UI ではフロントエンドパイプライン設定を許可しません。
-* Git パスワードを生成すると、有効期限が表示されます。
+* 新しい加速 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) HTTPD/Dispatcher 設定のみをデプロイするためのが導入されました。
+   * AEM版である必要があります `2021.12.6151.20211217T120950Z` この機能を使用するには、をクリックします。
+   * この機能は、2022.02.0リリース以降の 2 週間にわたって段階的に展開されます。
+* Cloud Manager のランディングページエクスペリエンスが更新され、ナビゲーションの改善、グリッド/タイル表示の切り替え、プログラムの概要をすばやく表示するためのポップオーバーが簡単に実現されました。
+* 新しい失敗したしきい値 (`< D`) が [信頼性評価指標です。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)
+   * システムの安定性に影響を与える重大な品質の問題（主に無効なインデックスとワークフロープロセスに関連）を持つお客様は、その問題が解決されるまでデプロイできません。
+* の重大度 `BannedPath` [品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) がブロッカーから重大に変更されました。
+* パイプラインウィザードでは、AEM環境の更新が必要になった場合に、 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 関連付けられています。
 
 ## バグ修正 {#bug-fixes}
 
-* 一部のフロントエンドパイプラインデプロイメントで発生した Null ポインターの例外が修正されました。
-* 環境で古いバージョンのAEMが実行されている場合に、環境変数を追加、更新および削除できるようになりました。
-* まれに、スケジュール済みステップを使用したパイプラインでは、イメージのビルドステップがエラーとしてマークされなくなりました。
-* リポジトリが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリ名が表示されるようになりました。
+* 古い Git リポジトリのパスワードが、新しいパスワードの生成時に常に無効化されるようになりました。
+* API で環境変数を更新しても、まれにパイプラインの実行に干渉しなくなりました。
