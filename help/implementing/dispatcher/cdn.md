@@ -3,10 +3,10 @@ title: AEM as a Cloud Service での CDN
 description: AEM as a Cloud Service での CDN
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
+source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 97%
+source-wordcount: '946'
+ht-degree: 95%
 
 ---
 
@@ -52,6 +52,10 @@ AEM が管理する CDN は、ほとんどの顧客のパフォーマンスと�
 * CDN をAEM as a Cloud Serviceと連携するように設定できる。設定手順を以下に示します。
 * 関連する問題が発生する事態に備えて、エンジニアリング CDN エキスパートが待機している。
 * 実稼動環境に移行する前に、負荷テストを実行し、成功している。
+
+>[!NOTE]
+>
+>AdobeCDN はオプションではありません。 独自の CDN を持ち込むお客様は、AEMが管理する CDN を指す必要があります。
 
 設定手順：
 
