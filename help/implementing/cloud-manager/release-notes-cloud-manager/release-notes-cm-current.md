@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service Release 2022.02.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Serviceリリース2022.02.0の Cloud Manager のリリースノートです。
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 11%
+source-wordcount: '287'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年
 ## 新機能 {#what-is-new}
 
 * 新しい加速 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) HTTPD/Dispatcher 設定のみをデプロイするためのが導入されました。
-   * AEM版である必要があります `2021.12.6151.20211217T120950Z` この機能を使用するには、をクリックします。
+   * AEM版である必要があります `2021.12.6151.20211217T120950Z` またはそれ以降 [dispatcher ツールの柔軟なモードのオプトイン](/help/implementing/dispatcher/disp-overview.md#validation-debug) この機能を使用するには、をクリックします。
    * この機能は、2022.02.0リリース以降の 2 週間にわたって段階的に展開されます。
 * Cloud Manager のランディングページエクスペリエンスが更新され、ナビゲーションの改善、グリッド/タイル表示の切り替え、プログラムの概要をすばやく表示するためのポップオーバーが簡単に実現されました。
 * 新しい失敗したしきい値 (`< D`) が [信頼性評価指標です。](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)

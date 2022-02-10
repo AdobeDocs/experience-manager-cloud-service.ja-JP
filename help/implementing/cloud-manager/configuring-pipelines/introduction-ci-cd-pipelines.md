@@ -2,9 +2,9 @@
 title: CI/CD パイプライン
 description: Cloud Manager の CI/CD パイプラインと、それらを使用してコードを効率的にデプロイする方法について説明します。
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 3%
 
 ---
@@ -147,16 +147,18 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 
 Web 層設定パイプラインを使用すると、HTTPD/Dispatcher 設定を他のコード変更と分離して、AEMランタイムに排他的にデプロイできます。 Dispatcher 設定の変更のみをデプロイするユーザーを提供する、合理化されたパイプラインです。これは、数分で迅速にデプロイする方法です。
 
->[!IMPORTANT]
+>[!TIP]
 >
->AEM版である必要があります `X` Web 層設定パイプラインを利用する場合は、以降。
+>Web 層設定パイプラインを使用すると、Web 設定をフルスタックパイプラインと同じソースの場所に保存するか、プロジェクトに適した構造に応じて別の場所に保存するかを選択できます。
 
 次の制限が適用されます。
 
+* AEM版である必要があります `2021.12.6151.20211217T120950Z` Web 層設定パイプラインを利用する場合と、それ以降の場合があります。
+* 必ず [dispatcher ツールの柔軟なモードのオプトイン](/help/implementing/dispatcher/disp-overview.md#validation-debug) web 層設定パイプラインを活用する。
 * ユーザーは、 **デプロイメントマネージャー** の役割を使用して、パイプラインを設定または実行できます。
 * 環境ごとに、1 つの Web 層設定パイプラインのみを使用できます。
 * 対応するフルスタックパイプラインが実行中の場合、ユーザーは Web 層設定パイプラインを設定できません。
-* Web 層構造は、ドキュメントで定義されている柔軟モード構造に従う必要があります [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* Web 層構造は、ドキュメントで定義されている柔軟モード構造に従う必要があります [クラウド内の Dispatcher。](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 さらに、 [フルスタックパイプライン](#full-stack-pipeline) Web 層パイプラインを導入する際にが動作します。
 
