@@ -2,25 +2,25 @@
 title: カスタムコード品質ルール
 description: このページでは、[ コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。 これらは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 4567581eb02c928f1493defdab667cc713fc222a
+source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 51%
+source-wordcount: '3495'
+ht-degree: 50%
 
 ---
 
 # カスタムコード品質ルール {#custom-code-quality-rules}
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_customcodequalityrules"
->title="Custom Code Quality Rules"
->abstract="This page describes the custom code quality rules executed by Cloud Manager as part of code quality testing. They are based on best practices from AEM Engineering."
+>title="カスタムコード品質ルール"
+>abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。 これらは、AEM Engineering のベストプラクティスに基づいています。"
 
 このページでは、Cloud Manager が [コード品質テスト。](/help/implementing/cloud-manager/code-quality-testing.md) これらは、AEM Engineering のベストプラクティスに基づいています。
 
 >[!NOTE]
-ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQube を参照してください。 [概念ドキュメント](https://docs.sonarqube.org/7.4/user-guide/concepts/) を参照して、SonarQube の概念と品質ルールについて学んでください。
+>
+>ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQube を参照してください。 [概念ドキュメント](https://docs.sonarqube.org/7.4/user-guide/concepts/) を参照して、SonarQube の概念と品質ルールについて学んでください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -315,7 +315,8 @@ public void doThis() throws Exception {
 一般的に、INFO ログレベルは重要なアクションを区切るために使用し、デフォルトでは、AEM は INFO レベル以上をログに記録するように設定されています。GET および HEAD メソッドは読み取り専用操作に過ぎず、重要なアクションを構成しません。GET または HEAD 要求に応答して INFO レベルでログに記録すると、大量のログノイズが作成されるので、ログファイル内の有用な情報を特定するのが難しくなります。GET または HEAD 要求処理時のログへの記録は、WARN または ERROR レベル（問題が発生した場合）、または、DEBUG または TRACE レベル（詳細なトラブルシューティング情報が役立つ可能性がある場合）で行います。
 
 >[!NOTE]
-これは、 `access.log`各リクエストの —type ログ。
+>
+>これは、 `access.log`各リクエストの —type ログ。
 
 #### 準拠していないコード {#non-compliant-code-8}
 
@@ -520,7 +521,8 @@ AEM API の表面は、使用が推奨されず非推奨と見なされる API �
 以下の節では、Cloud Manager で実行される OakPAL チェックについて詳しく説明します。
 
 >[!NOTE]
-OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。 2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
+>
+>OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。 2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
 
 ### @ProviderTypeの注釈が付いた製品 API は、お客様による実装または拡張はできない {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -681,9 +683,12 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。これにより、どの設定が適用されるかがあいまいになります。 このルールは「実行モード対応」です。つまり、同じ実行モードまたは実行モードの組み合わせで同じコンポーネントが複数回設定される問題のみを識別します。
 
 >[!NOTE]
-このルールの結果、ビルド済みパッケージのリスト全体で同じパッケージが重複する場合など、同じパスの同じ設定が複数のパッケージで定義される問題が発生します。
-例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.ui.apps` が `com.myco:com.myco.all` に組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
-これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)」を選択します。この例では、パッケージ `com.myco:com.myco.ui.apps` が見つからない `<cloudManagerTarget>none</cloudManagerTarget>` プロパティ。
+>
+>このルールの結果、ビルド済みパッケージのリスト全体で同じパッケージが重複する場合など、同じパスの同じ設定が複数のパッケージで定義される問題が発生します。
+>
+>例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.ui.apps` が `com.myco:com.myco.all` に組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
+>
+>これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)」を選択します。この例では、パッケージ `com.myco:com.myco.ui.apps` が見つからない `<cloudManagerTarget>none</cloudManagerTarget>` プロパティ。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
@@ -779,7 +784,8 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 Cloud Serviceデプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域 ( つまり、 `/apps` および `/libs`) または可変領域 ( つまり、 `/apps` または `/libs`) ですが、両方ではありません。 例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
 >[!NOTE]
-ルール [顧客パッケージでは/libs 下のノードを作成または変更しない](#oakpal-customer-package) 常に適用されます。
+>
+>ルール [顧客パッケージでは/libs 下のノードを作成または変更しない](#oakpal-customer-package) 常に適用されます。
 
 詳しくは、[AEM プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)を参照してください。
 

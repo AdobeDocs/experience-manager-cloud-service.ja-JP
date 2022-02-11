@@ -2,10 +2,10 @@
 title: コード品質テスト
 description: パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: ca3c1f255b8441a8d376a55a5353d58848384b8b
+source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 20%
+source-wordcount: '1147'
+ht-degree: 19%
 
 ---
 
@@ -14,10 +14,9 @@ ht-degree: 20%
 パイプラインのコード品質テストの仕組みと、デプロイメントの品質を向上させる方法について説明します。
 
 >[!CONTEXTUALHELP]
->
 >id="aemcloud_nonbpa_codequalitytests"
->title="Code Quality Testing"
->abstract="Code quality testing evaluates your application code based on a set of quality rules. It is the primary purpose of a code-quality only pipeline and is executed immediately following the build step in all production and non-production pipelines."
+>title="コード品質テスト"
+>abstract="コード品質テストでは、一連の品質ルールに基づいてアプリケーションコードを評価します。 これは、コード品質のみのパイプラインの主な目的で、すべての実稼動および非実稼動パイプラインのビルド手順の直後に実行されます。"
 
 ## はじめに {#introduction}
 
@@ -30,7 +29,8 @@ ht-degree: 20%
 コード品質テストでは、ソースコードをスキャンして、特定の品質条件を満たしていることを確認します。 これは、SonarQube と、OakPAL を使用したコンテンツパッケージレベルの調査を組み合わせて実装されます。 汎用の Java ルールとAEM固有のルールを組み合わせた、100 を超えるルールがあります。 AEM固有のルールの一部は、AEMエンジニアリングのベストプラクティスに基づいて作成され、 [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
-ルールの完全なリストをダウンロードできます [」と入力します。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>
+>ルールの完全なリストをダウンロードできます [」と入力します。](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### 3 層の評価 {#three-tiered-gate}
 
@@ -58,10 +58,12 @@ ht-degree: 20%
 | Cloud Service の互換性 | 識別されたクラウドサービスの互換性に関する問題の数 | 情報 | > 0 |
 
 >[!NOTE]
-参照： [SonarQube の指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) を参照してください。
+>
+>参照： [SonarQube の指標の定義](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) を参照してください。
 
 >[!NOTE]
-で実行されるカスタムコード品質ルールの詳細を確認するには、以下を実行します。 [!UICONTROL Cloud Manager]（ドキュメントを参照してください） [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+>
+>で実行されるカスタムコード品質ルールの詳細を確認するには、以下を実行します。 [!UICONTROL Cloud Manager]（ドキュメントを参照してください） [カスタムコード品質ルール](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 ## 偽陽性の処理 {#dealing-with-false-positives}
 
@@ -94,10 +96,11 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 ハードコードされたパスワードを削除するのが正しい解決策です。
 
 >[!NOTE]
-`@SuppressWarnings` 注釈をできるだけ具体的にすることをお勧めします。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。ただし、クラスレベルで注釈を付けることもできます。
+>
+>`@SuppressWarnings` 注釈をできるだけ具体的にすることをお勧めします。つまり、問題の原因となっている特定のステートメントまたはブロックにのみ注釈を付けます。ただし、クラスレベルで注釈を付けることもできます。
 
 >[!NOTE]
-明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールがあります。 ドキュメントを参照します。 [AEMas a Cloud Serviceのセキュリティの概要](/help/security/cloud-service-security-overview.md) セキュリティの詳細については、Cloud Serviceを参照してください。
+>明示的なセキュリティテスト手順はありませんが、コード品質手順の間に評価されるセキュリティ関連のコード品質ルールがあります。 ドキュメントを参照します。 [AEMas a Cloud Serviceのセキュリティの概要](/help/security/cloud-service-security-overview.md) セキュリティの詳細については、Cloud Serviceを参照してください。
 
 ## コンテンツパッケージスキャンの最適化 {#content-package-scanning-optimization}
 
@@ -114,6 +117,7 @@ Cloud Manager は、品質分析プロセスの一環として、Maven ビルド
 「すべて」のコンテンツパッケージに、スキップされたコンテンツパッケージと OSGi バンドルの組み合わせが含まれている場合は、特殊なケースが発生する場合があります。 例えば、 `myco-all-1.0.0-SNAPSHOT.zip` には、前述の 2 つの埋め込みパッケージと 1 つ以上の OSGi バンドルが含まれていました。その後、OSGi バンドルのみを使用して、新しい最小限のコンテンツパッケージが構築されます。 このパッケージの名前は常にです `cloudmanager-synthetic-jar-package` 含まれるバンドルは、 `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
-* この最適化は、AEMにデプロイされるパッケージには影響しません。
-* 埋め込みコンテンツパッケージとスキップされたコンテンツパッケージの照合はファイル名に基づくので、スキップされたコンテンツパッケージの複数のファイル名が完全に同じ場合や、埋め込み中にファイル名が変更された場合は、この最適化を実行できません。
+>
+>* この最適化は、AEMにデプロイされるパッケージには影響しません。
+>* 埋め込みコンテンツパッケージとスキップされたコンテンツパッケージの照合はファイル名に基づくので、スキップされたコンテンツパッケージの複数のファイル名が完全に同じ場合や、埋め込み中にファイル名が変更された場合は、この最適化を実行できません。
 
