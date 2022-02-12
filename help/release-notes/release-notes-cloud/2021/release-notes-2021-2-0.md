@@ -2,15 +2,15 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート。'
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
-workflow-type: ht
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
+workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 100%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート  {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ### ヘッドレスコンテンツ管理 {#headless}
 
-* **[コンテンツフラグメント配信用の GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**：GraphQL 構文を使用してコンテンツフラグメントのクエリを実行する機能と、JSON 形式で出力するための、コンテンツフラグメントモデルに基づくスキーマが用意されました。
+* **[コンテンツフラグメント配信用の GraphQL API](/help/headless/graphql-api/content-fragments.md)**：GraphQL 構文を使用してコンテンツフラグメントのクエリを実行する機能と、JSON 形式で出力するための、コンテンツフラグメントモデルに基づくスキーマが用意されました。
 
-* **[GraphQL API リクエストの認証サポート](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**：サーバー側 API のアクセストークンで GraphQL API リクエストを認証できるようになりました。
+* **[GraphQL API リクエストの認証サポート](/help/headless/security/authentication.md)**：サーバー側 API のアクセストークンで GraphQL API リクエストを認証できるようになりました。
 
 * **[RemotePage コンポーネント](/help/implementing/developing/hybrid/remote-page.md)**：AEM 内で外部 SPA を表示および編集できるようになりました。
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 * [!DNL Brand Portal] には、フォルダーやコレクションなどをダウンロードする際にアセットごとに別個のフォルダーを作成できる新しいダウンロード設定が導入されました。詳しくは、[ダウンロード設定](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=ja)を参照してください。
 
-## [!DNL Assets] のバグ修正 {#bug-fixes-assets}
+## [!DNL Assets] のバグ修正  {#bug-fixes-assets}
 
 * 複数のアセットを選択してプロパティを更新すると、エラーが発生したり、選択されていないアセットのプロパティが更新されたりする場合があります。（CQ-4316532）
 * [!UICONTROL アセット管理者の検索レール]を開こうとすると、ページが空白のままで、[!UICONTROL 編集]／[!UICONTROL 設定]をクリックするとエラーが発生します。（CQ-4315079）

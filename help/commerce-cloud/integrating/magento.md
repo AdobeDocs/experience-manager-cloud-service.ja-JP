@@ -3,7 +3,7 @@ title: Commerce Integration Framework を使用したAEMとAdobe Commerceの統�
 description: AEMとAdobe Commerceは、Commerce Integration Framework(CIF) を使用してシームレスに統合されます。 CIF を使用すると、AEMはAdobe Commerceインスタンスにアクセスし、GraphQL を介してAdobe Commerceと通信できます。 また、AEM オーサーは、製品とカテゴリの選択機能と製品コンソールを使用して、Adobe Commerceからオンデマンドで取得した製品とカテゴリのデータを参照できます。 さらに、CIF には標準搭載のストアフロントが用意されており、コマースプロジェクトの迅速化に役立ちます。
 thumbnail: aem-magento-architecture.jpg
 exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bcf
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 68%
@@ -23,7 +23,7 @@ Experience ManagerとAdobe Commerceは、Commerce Integration Framework(CIF) を
 >GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
 >* このシナリオでは、CIF が GraphQL を使用してコマースと通信します。
->* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/assets/content-fragments/graphql-api-content-fragments.md)。
+>* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/headless/graphql-api/content-fragments.md)。
 
 
 ## アーキテクチャの概要 {#overview}

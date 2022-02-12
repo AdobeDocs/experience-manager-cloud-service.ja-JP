@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 リリースのリリースノート。'
 description: '[!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 のリリースノート。'
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 100%
@@ -23,9 +23,9 @@ ht-degree: 100%
 
 * **[コンテンツフラグメント HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)**：HTTP API を使用して、コンテンツフラグメントのバリエーションを追加、更新、削除する機能を追加します。
 
-* **[コンテンツフラグメント配信用の GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)**：GraphQL 構文を使用してコンテンツフラグメントのクエリを実行する機能と、JSON 形式で出力するための、コンテンツフラグメントモデルに基づくスキーマが用意されました。
+* **[コンテンツフラグメント配信用の GraphQL API](/help/headless/graphql-api/content-fragments.md)**：GraphQL 構文を使用してコンテンツフラグメントのクエリを実行する機能と、JSON 形式で出力するための、コンテンツフラグメントモデルに基づくスキーマが用意されました。
 
-* **[GraphQL API リクエストの認証サポート](/help/assets/content-fragments/graphql-authentication-content-fragments.md)**：サーバー側 API のアクセストークンで GraphQL API リクエストを認証できるようになりました。
+* **[GraphQL API リクエストの認証サポート](/help/headless/security/authentication.md)**：サーバー側 API のアクセストークンで GraphQL API リクエストを認証できるようになりました。
 
 * リッチテキストを JSON 形式で出力する機能やロケールなど、GraphQL API からの JSON 出力が強化されました。
 
@@ -107,7 +107,7 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 コンテンツ転送ツール v1.2.2 のリリース日は 2021 年 2 月 1 日です。
 
-### [!DNL Content Transfer Tool] の新機能  {#what-is-new-ctt}
+### [!DNL Content Transfer Tool] の新機能 {#what-is-new-ctt}
 
 * コンテンツ転送ツールに、新しい機能および UI であるユーザーマッピングツールが追加されました。この機能は、コンテンツ移行アクティビティの一環として、既存のユーザーおよびグループをそれぞれの Adobe Identity Management System ID に自動的にマッピングします。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
 * コンテンツ転送ツールは、移行セットで参照されているすべてのグループとユーザーを子も含めて移行するようになりました。

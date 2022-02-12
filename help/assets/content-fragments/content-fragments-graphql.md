@@ -1,12 +1,12 @@
 ---
 title: GraphQL のコンテンツフラグメントを使用したヘッドレスコンテンツ配信
 description: ヘッドレスコンテンツ配信に AEM コンテンツフラグメントを GraphQL と共に使用する方法を説明します。
-feature: コンテンツフラグメント
+feature: Content Fragments
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '718'
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
+source-wordcount: '716'
 ht-degree: 100%
 
 ---
@@ -17,14 +17,14 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用すると、AEM Gra
 
 >[!NOTE]
 >
->AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/implementing/developing/headless/introduction.md)を参照してください。
+>AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/headless/introduction.md)を参照してください。
 
 >[!NOTE]
 >
 >GraphQL は現在、Adobe Experience Manager（AEM）as a Cloud Service の、2 つの（個別の）シナリオで使用されています。
 >
 >* [AEM コマースは、GraphQL 経由でコマースプラットフォームのデータを使用します](/help/commerce-cloud/integrating/magento.md)。
->* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/assets/content-fragments/graphql-api-content-fragments.md)。
+>* [AEM コンテンツフラグメントは、AEM GraphQL API（標準の GraphQL に基づいてカスタマイズされた実装）と連携して、アプリケーションで使用する構造化コンテンツを配信します](/help/headless/graphql-api/content-fragments.md)。
 
 
 ## ヘッドレス CMS {#headless-cms}
@@ -53,7 +53,7 @@ GraphQL とは次のことを意味します。
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-Adobe Experience as a Cloud Experience には、標準の GraphQL API のカスタマイズ実装が開発されています。詳しくは、「[コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)」を参照してください。
+Adobe Experience as a Cloud Experience には、標準の GraphQL API のカスタマイズ実装が開発されています。詳しくは、「[コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)」を参照してください。
 
 AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.org/code/#java)に基づいています。
 
@@ -105,7 +105,7 @@ AEM GraphQL API の実装は、[GraphQL Java ライブラリ](https://graphql.or
 
 ## AEM での GraphQL の使用方法 - サンプルコンテンツとサンプルクエリ {#learn-graphql-with-aem-sample-content-queries}
 
-AEM GraphQL API の使い方の紹介は、「[AEM での GraphQL の使用方法 - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)」を参照してください。
+AEM GraphQL API の使い方の紹介は、「[AEM での GraphQL の使用方法 - コンテンツとクエリの例](/help/headless/graphql-api/sample-queries.md)」を参照してください。
 
 ## チュートリアル - AEM ヘッドレスと GraphQL をはじめる前に
 

@@ -2,8 +2,8 @@
 title: ヘッドレスアプリケーションの運用開始方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、Git 内のローカルコードを CI／CD パイプライン用に Cloud Manager Git に移行することでヘッドレスアプリケーションをライブ環境にデプロイする方法を説明します。
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
+workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ AEM ヘッドレスプロジェクトのローンチの準備をするには、�
 
 ### ローンチ前のヘッドレスアプリケーションのセキュリティ確保とスケーリング {#secure-and-scale-before-launch}
 
-1. GraphQL リクエストに[トークンベースの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)を設定します。
+1. GraphQL リクエストに[トークンベースの認証](/help/headless/security/authentication.md)を設定します。
 1. [キャッシュ](/help/implementing/dispatcher/caching.md)を設定します。
 
 ### モデル構造と GraphQL 出力 {#structure-vs-output}
@@ -200,5 +200,5 @@ AEM ヘッドレスアプリケーションの使用時に最高のユーザー�
 * [AEM as a Cloud Service へのデプロイの概要](/help/implementing/deploying/overview.md)
 * [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [ローカル AEM 環境のセットアップ](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=ja)
-* [Cloud Manager を使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja#how-to-use)
+* [Cloud Manager を使用したコードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Cloud Manager Git リポジトリーと外部 Git リポジトリーの統合および AEM as a Cloud Service へのプロジェクトのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=ja)

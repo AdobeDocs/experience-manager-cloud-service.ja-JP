@@ -2,10 +2,10 @@
 title: コンテンツフラグメントでの参照の使用について
 description: コンテンツ、他のフラグメントおよび他のアセット（メディア）への参照をコンテンツフラグメントで使用する方法について説明します。ヘッドレス CMS オーサリング用のネストされたフラグメントの必要性と仕組みを紹介します。
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 100%
+source-wordcount: '729'
+ht-degree: 99%
 
 ---
 
@@ -127,7 +127,7 @@ ht-degree: 100%
 
 
 * はじめる前に
-   * [アセットフォルダーのヘッドレス作成のクイックスタートガイド](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [アセットフォルダーの作成 — ヘッドレス設定](/help/headless/setup/create-assets-folder.md)
 
 * AEM ヘッドレスコンテンツアーキテクトジャーニー
 

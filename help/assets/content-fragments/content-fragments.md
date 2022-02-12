@@ -4,8 +4,8 @@ description: Adobe Experience Manager（AEM）as a Cloud Service のコンテン
 feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
-workflow-type: ht
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Adobe Experience Manager（AEM）as a Cloud Service でコンテンツフラグ�
 >* [コンテンツフラグメントのカスタマイズと拡張](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [レンダリングコンポーネントのコンテンツフラグメントの設定](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [AEM Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [コンテンツフラグメントと共に使用する AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
 
 
 通信チャネルの数は年々増加しています。通常、チャネルとは配信メカニズムのことであり、次のどちらも指します。
@@ -102,7 +102,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
 >[!NOTE]
 >
->AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/implementing/developing/headless/introduction.md)を参照してください。
+>AEM Sites as a Cloud Service 向けヘッドレス開発の概要については、[AEM Sites as a Cloud Service 向けヘッドレス開発](/help/headless/introduction.md)を参照してください。
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ AEM コアコンポーネントの JSON 書き出し機能と共にこの構造�
 
    * **コンテンツフラグメント**&#x200B;コンポーネントを使用できるのはページの作成者です。作成者は、コンテンツフラグメントコンポーネントを使用して、必要なコンテンツフラグメントを HTML または JSON 形式で参照し、配信できます。
 
-* [AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) を使用してアクセスできます。
+* [AEM GraphQL API](/help/headless/graphql-api/content-fragments.md) を使用してアクセスできます。
 
 コンテンツフラグメントは、次のようなコンテンツ構造です。
 

@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad49f5896680f191cd667b2e17ee8e81b7c424a5
+source-git-commit: 7076b5b7db75ebe4f6b381ab2330769f7dcd6904
 workflow-type: tm+mt
-source-wordcount: '3494'
-ht-degree: 91%
+source-wordcount: '3444'
+ht-degree: 90%
 
 ---
 
@@ -158,12 +158,7 @@ ht-degree: 91%
          + [アカウント環境の設定](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + ヘッドレスコンテンツ作成者ジャーニー {#headless-journey}
-         + [AEM ヘッドレスコンテンツ作成者ジャーニー - 概要](/help/journey-headless/author/overview.md)
-         + [AEM でのヘッドレス向けオーサリング - 概要](/help/journey-headless/author/introduction.md)
-         + [AEM を使用したヘッドレスのオーサリングの基本](/help/journey-headless/author/basics.md)
-         + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
-         + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
+      + [ヘッドレスコンテンツ作成者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + オーサリングの基本事項 {#fundamentals}
          + [環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [ページ注釈の追加](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -253,14 +248,7 @@ ht-degree: 91%
                + [翻訳ルールの設定](/help/journey-sites/translation/translation-rules.md)
                + [コンテンツの翻訳](/help/journey-sites/translation/translate-content.md)
                + [翻訳済みコンテンツの公開](/help/journey-sites/translation/publish-content.md)
-            + ヘッドレス翻訳ジャーニー {#headless}
-               + [AEM でのヘッドレス翻訳について](/help/journey-headless/translation/overview.md)
-               + [AEM ヘッドレス翻訳の基本を学ぶ](/help/journey-headless/translation/getting-started.md)
-               + [ヘッドレスコンテンツの概要と AEM での翻訳方法について](/help/journey-headless/translation/learn-about.md)
-               + [翻訳コネクタの設定](/help/journey-headless/translation/configure-connector.md)
-               + [翻訳ルールの設定](/help/journey-headless/translation/translation-rules.md)
-               + [コンテンツの翻訳](/help/journey-headless/translation/translate-content.md)
-               + [翻訳済みコンテンツの公開](/help/journey-headless/translation/publish-content.md)
+            + [ヘッドレス翻訳ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [多言語サイトのコンテンツの翻訳](/help/sites-cloud/administering/translation/overview.md)
             + [翻訳するコンテンツの準備](/help/sites-cloud/administering/translation/preparation.md)
             + [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -319,9 +307,6 @@ ht-degree: 91%
       + [検索ファセット](/help/assets/search-facets.md)
       + [Assets HTTP API](/help/assets/mac-api-assets.md)
       + [Assets HTTP API でのコンテンツフラグメントのサポート](/help/assets/content-fragments/assets-api-content-fragments.md)
-      + [コンテンツフラグメント用 GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md)
-      + [コンテンツフラグメントに対するリモート GraphQL クエリの認証](/help/assets/content-fragments/graphql-authentication-content-fragments.md)
-      + [GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](/help/assets/content-fragments/content-fragments-graphql-samples.md)
       + [Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md)
       + [プレースメント専用レンディションの生成](/help/assets/configure-fpo-renditions.md)
       + [アセットレポート](/help/assets/asset-reports.md)
@@ -547,6 +532,73 @@ ht-degree: 91%
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
++ ヘッドレス {#headless}
+   + [AEMヘッドレスの概要](/help/headless/introduction.md)
+   + セットアップ {#setup}
+      + [はじめに](/help/headless/setup/introduction.md)
+      + [設定](/help/headless/setup/create-configuration.md)
+      + [コンテンツフラグメントモデル](/help/headless/setup/create-content-model.md)
+      + [アセットフォルダー](/help/headless/setup/create-assets-folder.md)
+      + [コンテンツフラグメント](/help/headless/setup/create-content-fragment.md)
+      + [GraphQL エンドポイント](/help/headless/setup/create-api-request.md)
+   + コンテンツフラグメント {#content-fragments}
+      + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ja)
+      + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ja)
+      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
+      + オーサリング{#authoring}
+         + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja)
+         + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ja)
+         + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ja)
+         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
+      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
+      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
+      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+   + GraphQL API {#graphql-api}
+      + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
+      + [GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md)
+      + [GraphQL クエリの例](/help/headless/graphql-api/sample-queries.md)
+      + [永続的な GraphQL クエリ](/help/headless/graphql-api/persisted-queries.md)
+   + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
+   + セキュリティ {#security}
+      + [権限](/help/headless/security/permissions.md)
+      + [認証](/help/headless/security/authentication.md)
+   + デプロイメント {#deployment}
+      + [アーキテクチャ](/help/headless/deployment/architecture.md)
+      + [Dispatcher](/help/headless/deployment/dispatcher.md)
+      + [CORS 設定](/help/headless/deployment/cross-origin-resource-sharing.md)
+      + [リファラーフィルター](/help/headless/deployment/referrer-filter.md)
+   + ヘッドレスジャーニー {#journeys}
+      + ヘッドレスデベロッパージャーニー {#developer}
+         + [AEM のヘッドレスについて](/help/journey-headless/developer/overview.md)
+         + [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
+         + [AEM Headless as a Cloud Service - はじめに](/help/journey-headless/developer/getting-started.md)
+         + [AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](/help/journey-headless/developer/path-to-first-experience.md)
+         + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](/help/journey-headless/developer/model-your-content.md)
+         + [AEM Delivery APIを使用してコンテンツにアクセスする方法](/help/journey-headless/developer/access-your-content.md)
+         + [AEM Assets API を使用してコンテンツを更新する方法](/help/journey-headless/developer/update-your-content.md)
+         + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](/help/journey-headless/developer/put-it-all-together.md)
+         + [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md)
+         + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](/help/journey-headless/developer/create-spa.md)
+      + ヘッドレスコンテンツアーキテクトジャーニー {#architect}
+         + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](/help/journey-headless/architect/overview.md)
+         + [AEM でのヘッドレス向けコンテンツモデリング - 概要](/help/journey-headless/architect/introduction.md)
+         + [AEM でのヘッドレス向けコンテンツモデリングの基本について](/help/journey-headless/architect/basics.md)
+         + [AEM でのコンテンツフラグメントモデルの作成について](/help/journey-headless/architect/model-structure.md)
+      + ヘッドレス翻訳ジャーニー {#translation}
+         + [AEM でのヘッドレス翻訳について](/help/journey-headless/translation/overview.md)
+         + [AEM ヘッドレス翻訳の基本を学ぶ](/help/journey-headless/translation/getting-started.md)
+         + [ヘッドレスコンテンツの概要と AEM での翻訳方法について](/help/journey-headless/translation/learn-about.md)
+         + [翻訳コネクタの設定](/help/journey-headless/translation/configure-connector.md)
+         + [翻訳ルールの設定](/help/journey-headless/translation/translation-rules.md)
+         + [コンテンツの翻訳](/help/journey-headless/translation/translate-content.md)
+         + [翻訳済みコンテンツの公開](/help/journey-headless/translation/publish-content.md)
+      + ヘッドレスコンテンツ作成者ジャーニー {#author}
+         + [AEM ヘッドレスコンテンツ作成者ジャーニー - 概要](/help/journey-headless/author/overview.md)
+         + [AEM でのヘッドレス向けオーサリング - 概要](/help/journey-headless/author/introduction.md)
+         + [AEM を使用したヘッドレスのオーサリングの基本](/help/journey-headless/author/basics.md)
+         + [コンテンツフラグメントでの参照の使用について](/help/journey-headless/author/references.md)
+         + [コンテンツフラグメントのメタデータとタグの定義について](/help/journey-headless/author/metadata-tagging.md)
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
@@ -690,49 +742,7 @@ ht-degree: 91%
             + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
-      + ヘッドレスエクスペリエンス管理 {#headless}
-         + [ヘッドレスと AEM](/help/implementing/developing/headless/introduction.md)
-         + ヘッドレスジャーニー {#journeys}
-            + ヘッドレスデベロッパージャーニー {#developer}
-               + [AEM のヘッドレスについて](/help/journey-headless/developer/overview.md)
-               + [CMS ヘッドレス開発について](/help/journey-headless/developer/learn-about.md)
-               + [AEM Headless as a Cloud Service - はじめに](/help/journey-headless/developer/getting-started.md)
-               + [AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](/help/journey-headless/developer/path-to-first-experience.md)
-               + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](/help/journey-headless/developer/model-your-content.md)
-               + [AEM Delivery APIを使用してコンテンツにアクセスする方法](/help/journey-headless/developer/access-your-content.md)
-               + [AEM Assets API を使用してコンテンツを更新する方法](/help/journey-headless/developer/update-your-content.md)
-               + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](/help/journey-headless/developer/put-it-all-together.md)
-               + [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md)
-               + [オプション - AEM で単一ページアプリケーション（SPA）を作成する方法](/help/journey-headless/developer/create-spa.md)
-            + AEM ヘッドレスコンテンツアーキテクトジャーニー {#architect}
-               + [AEM ヘッドレスコンテンツアーキテクトジャーニーの概要](/help/journey-headless/architect/overview.md)
-               + [AEM でのヘッドレス向けコンテンツモデリング - 概要](/help/journey-headless/architect/introduction.md)
-               + [AEM でのヘッドレス向けコンテンツモデリングの基本について](/help/journey-headless/architect/basics.md)
-               + [AEM でのコンテンツフラグメントモデルの作成について](/help/journey-headless/architect/model-structure.md)
-         + ヘッドレスをはじめる前に {#getting-started}
-            + [はじめに](/help/implementing/developing/headless/getting-started/introduction.md)
-            + [設定の作成](/help/implementing/developing/headless/getting-started/create-configuration.md)
-            + [コンテンツフラグメントモデルの作成](/help/implementing/developing/headless/getting-started/create-content-model.md)
-            + [アセットフォルダーの作成](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
-            + [コンテンツフラグメントの作成](/help/implementing/developing/headless/getting-started/create-content-fragment.md)
-            + [コンテンツフラグメントへのアクセスと配信](/help/implementing/developing/headless/getting-started/create-api-request.md)
-         + コンテンツフラグメント {#content-fragments}
-            + [コンテンツフラグメントと GraphQL のヘッドレス配信](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=ja)
-            + [コンテンツフラグメントの操作](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ja)
-            + [インスタンスに対するコンテンツフラグメント機能の有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-configuration-browser.html?lang=ja)
-            + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ja)
-            + [コンテンツフラグメントの管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
-            + [バリエーション - フラグメントコンテンツのオーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ja)
-            + [関連コンテンツの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ja)
-            + [メタデータ - フラグメントのプロパティ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ja)
-            + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ja)
-            + [プレビュー - JSON 表現](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
-         + 配信 API {#delivery-api}
-            + [コンテンツフラグメント REST API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=ja)
-            + [コンテンツフラグメント GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=ja)
-            + [AEM GraphQL API とコンテンツフラグメント - コンテンツとクエリの例](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=ja)
-            + [コンテンツフラグメントに対するリモート AEM GraphQL クエリの認証](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-authentication-content-fragments.html?lang=ja)
+      + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
       +  対応のハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
