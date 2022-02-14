@@ -1,10 +1,10 @@
 ---
 title: リリースノート（2021.11.0） ～の放出 [!DNL Adobe Experience Manager] as a Cloud Service。
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0 リリースのリリースノート。'
-source-git-commit: 16c4b6b694ddad7854906c0d18880dd72159c02a
+source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 54%
+source-wordcount: '1114'
+ht-degree: 52%
 
 ---
 
@@ -29,6 +29,10 @@ ht-degree: 54%
 ## リリースビデオ {#release-video}
 
 以下をご覧ください： [2021 年 12 月リリースの概要](https://video.tv.adobe.com/v/339278) 2021.11.0（2021 年 11 月）リリースで追加された機能の概要を示すビデオです。
+
+## Adobe Experience Manager Sites as a Cloud Service {#sites}
+
+* この **[フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** ボタンが **サイト** ページコアコンポーネント v2 を使用するサイトの場合は、サイトコンソールのパネル。 このボタンを使用して、フロントエンドパイプラインで既存のクライアントライブラリの上にデプロイされるテーマを読み込むようにサイトを設定します。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
