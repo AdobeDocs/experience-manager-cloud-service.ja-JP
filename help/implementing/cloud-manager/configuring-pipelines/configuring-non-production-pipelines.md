@@ -2,7 +2,7 @@
 title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための非実稼動パイプラインを設定する方法を説明します。
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 8%
@@ -124,7 +124,7 @@ Web 層設定パイプラインは、HTTPD/Dispatcher 設定をデプロイし�
 >
 >選択した環境に Web 層コードパイプラインが既に存在する場合、この選択は無効になります。
 
-フルスタックコードの非実稼動パイプラインの設定を完了するには、次の手順に従います。
+Web 層コードの非実稼動パイプラインの設定を完了するには、次の手順に従います。
 
 1. の **ソースコード** 「 」タブで、次のオプションを定義する必要があります。
 
