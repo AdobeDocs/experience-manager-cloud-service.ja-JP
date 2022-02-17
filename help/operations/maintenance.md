@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 100%
+source-wordcount: '1211'
+ht-degree: 97%
 
 ---
 
@@ -39,6 +39,64 @@ ht-degree: 100%
 | プロジェクトのパージ | 顧客 | Github で行う必要があります。<br> `/apps/settings/granite/operations/maintenance/granite_weekly` フォルダーまたは `granite_daily` フォルダーにプロパティを作成することで、`/libs` 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。<br>上記のノードの下に適切なプロパティを持つノードを追加し（`granite_ProjectPurgeTask` と命名します）、メンテナンスタスクを有効にします。<br> OSGI プロパティの設定については、[AEM 6.5 メンテナンスタスクドキュメント](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html)を参照してください。 |
 
 ユーザーは、ワークフローの削除、アドホックタスクの削除およびプロジェクトの削除のメンテナンスタスクのそれぞれを、日別、週別、月別の保守期間中に実行するようにスケジュールできます。これらの設定は、ソース管理で直接編集する必要があります。次の表に、各ウィンドウで使用可能な設定パラメータを示します。また、表の後に示す場所とコードサンプルも参照してください。
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>メンテナンスタスク</th>
+    <th>設定の所有者</th>
+    <th>設定方法（オプション）</th>
+  </tr>  
+  <tr>
+    <td>データストアのガベージコレクション</td>
+    <td>アドビ</td>
+    <td>該当なし - アドビが完全所有</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>バージョンのパージ</td>
+    <td>アドビ</td>
+    <td>アドビが完全に所有していますが、将来は、顧客が特定のパラメーターを設定できるようになります。</td>
+  </td>
+  </tr>
+  <tr>
+    <td>監査ログの削除</td>
+    <td>アドビ</td>
+    <td>アドビが完全に所有していますが、将来は、顧客が特定のパラメーターを設定できるようになります。</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Lucene バイナリクリーンアップ</td>
+    <td>アドビ</td>
+    <td>未使用で、アドビによって無効にされています。</td>
+  </td>
+  </tr>
+  <tr>
+    <td>アドホックタスクの削除</td>
+    <td>顧客</td>
+    <td>
+    <p>Github で行う必要があります。 <code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。</p>
+    <p>詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。 上記のノードの下に別のノードを追加し（<code>granite_TaskPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティを設定する場合は、 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 メンテナンスタスクドキュメント</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>ワークフローのパージ</td>
+    <td>顧客</td>
+    <td>
+    <p>Github で行う必要があります。 <code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
+    <p> 上記のノードの下に別のノードを追加し（<code>granite_WorkflowPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティの設定については、 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 メンテナンスタスクドキュメント</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>プロジェクトのパージ</td>
+    <td>顧客</td>
+    <td>
+    <p>Github で行う必要があります。 <code>/libs</code> フォルダーまたは <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> フォルダーにプロパティを作成することで、<code>granite_daily</code> 内にある標準のメンテナンスウィンドウ設定ノードを上書きします。詳細な設定については、以下の「メンテナンスウィンドウ」の表を参照してください。</p>
+    <p> 上記のノードの下に別のノードを追加し（<code>granite_ProjectPurgeTask</code> という名前を付けて）、適切なプロパティを追加して、メンテナンスタスクを有効にします。OSGi プロパティの設定については、 <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">AEM 6.5 メンテナンスタスクドキュメント</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
