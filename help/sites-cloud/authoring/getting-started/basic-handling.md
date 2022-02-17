@@ -1,11 +1,11 @@
 ---
-title: 基本操作
+title: '基本操作 '
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 97%
+source-wordcount: '2954'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ AEM のユーザーインターフェイスは、タッチ操作に対応して�
 
 ![ナビゲーションパネル](/help/sites-cloud/authoring/assets/navigation.png)
 
-AEM の基本的な使用方法を適切に理解できるように、このドキュメントでは **Sites** コンソールに基づいて説明します。「**サイト**」をクリックまたはタップして開始します。
+AEM の基本的な使用方法を適切に理解できるように、このドキュメントでは **Sites** コンソールに基づいて説明します。「**Sites**」をクリックまたはタップして開始します。
 
 ## 製品ナビゲーション {#product-navigation}
 
@@ -337,7 +337,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
    ![クイックアクション](/help/sites-cloud/authoring/assets/quick-actions.png)
 
-* カードを（クイックアクションを回避するために慎重に）タップまたはクリックしてツリーの下に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して再び上に移動したりできます。
+* カードを（クイックアクションを回避するために慎重に）タップまたはクリックしてツリーの下位に移動したり、[ヘッダーのパンくずリスト](#the-header)を使用して再度上位に移動したりできます。
 
 ### リスト表示 {#list-view}
 
@@ -387,7 +387,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ## パネルセレクター {#rail-selector}
 
-**パネルセレクター**&#x200B;は、ウィンドウの左上にあり、現在のコンソールに応じてオプションを表示します。
+**レールセレクター**&#x200B;は、ウィンドウの左上にあり、現在のコンソールに応じてオプションを表示します。
 
 ![展開されたパネルセレクター](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
@@ -452,7 +452,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 * [ローンチ](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [ライブコピー](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)
 * [言語コピー](/help/sites-cloud/administering/translation/preparation.md#seeing-the-status-of-language-roots)
-* コンテンツ参照：
+* コンテンツは次の項目を参照します。
 
    * 他のページから選択ページへのリンク
    * 参照コンポーネントで選択したページから借りたコンテンツや、選択したページに貸したコンテンツ
@@ -465,7 +465,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ![サイトレール](../assets/site-rail.png)
 
-をタップまたはクリックします。 **テーマソースのダウンロード** をカスタマイズするには、 [サイトのテーマ。](/help/sites-cloud/administering/site-creation/site-themes.md)
+ドキュメントを参照 [サイトレールを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md) パネルを使用して [サイトのテーマ。](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
@@ -473,6 +473,6 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ### フィルター {#filter}
 
-これを使用すると、適切な場所フィルターが既に設定された状態で[検索](/help/sites-cloud/authoring/getting-started/search.md)と同じようにパネルが開き、表示したいコンテンツをさらにフィルタリングできます。
+これを使用すると、適切な場所フィルターが既に設定された状態で[検索](/help/sites-cloud/authoring/getting-started/search.md)と同じようなパネルが開き、表示するコンテンツをさらにフィルタリングできます。
 
 ![フィルターの例](/help/sites-cloud/authoring/assets/filter.png)
