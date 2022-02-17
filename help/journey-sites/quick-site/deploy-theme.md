@@ -1,10 +1,10 @@
 ---
 title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 4%
+source-wordcount: '1027'
+ht-degree: 7%
 
 ---
 
@@ -81,9 +81,9 @@ ht-degree: 4%
 
 ![適用された変更](assets/changes-applied.png)
 
-## ジャーニー? {#end-of-journey}
+## ジャーニーの終了 {#end-of-journey}
 
-おめでとうございます。AEM Quick Site Creation ジャーニーを完了しました。 次の手順を実行します。
+おめでとうございます。AEM Quick Site Creation ジャーニーを完了しました。 その結果、以下を達成できました。
 
 * Cloud Manager とフロントエンドパイプラインがフロントエンドカスタマイズを管理およびデプロイする仕組みを理解します。
 * テンプレートに基づいてAEMサイトを作成する方法と、サイトテーマをダウンロードする方法を説明します。
@@ -96,12 +96,13 @@ ht-degree: 4%
 * 一つの情報源を維持する。
 * 懸念の分離を維持する。
 
-AEMは強力なツールで、他にも多くのオプションを使用できます。 その他のリソースについては、 [「その他のリソース」セクション](#additional-resources) このジャーニーで確認した機能の詳細を確認するには、以下を参照してください。
+AEMは強力なツールで、他にも多くのオプションを使用できます。 このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 
 ## その他のリソース {#additional-resources}
 
 以下の追加リソースでは、このドキュメントで言及したいくつかの概念について詳しく説明しています。
 
+* [サイトレールを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md)  — サイトパネルの強力な機能を学び、テーマソースのダウンロードやテーマバージョンの管理など、サイトテーマを簡単にカスタマイズして管理するのに役立ちます。
 * [AEMas a Cloud Service技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja)  — 既にAEMに関する十分な理解を得ている場合は、詳細な技術ドキュメントを直接参照することをお勧めします。
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Cloud Manager の機能の詳細については、詳細な技術ドキュメントを直接お問い合わせください。
 * [ロールに基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager には、適切な権限を持つ事前設定済みのロールが用意されています。 これらの役割の詳細と管理方法については、このドキュメントを参照してください。

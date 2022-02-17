@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 026004564eb3085717e088381058d579d26083bd
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3451'
 ht-degree: 89%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 89%
    + リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
-         + [リリースノート（2021.11.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
+         + [ 2021.11.0 のリリースノート](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [リリースノート（2021.9.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [リリースノート（2021.8.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -105,7 +105,7 @@ ht-degree: 89%
    + 移行ツールのリリースノート {#release-notes-migration-tools}
       + [最新のリリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021 年 {#2021}
-         + [リリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+         + [ 2022.1.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -155,15 +155,15 @@ ht-degree: 89%
          + [オーサリングに関する概念](/help/sites-cloud/authoring/getting-started/concepts.md)
          + [基本操作](/help/sites-cloud/authoring/getting-started/basic-handling.md)
          + [検索](/help/sites-cloud/authoring/getting-started/search.md)
-         + [アカウント環境の設定](/help/sites-cloud/authoring/getting-started/account-environment.md)
-         + [インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)
+         + [アカウント環境の設定 ](/help/sites-cloud/authoring/getting-started/account-environment.md)
+         + [インボックス ](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + [ヘッドレスコンテンツ作成者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
       + オーサリングの基本事項 {#fundamentals}
          + [環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [ページ注釈の追加](/help/sites-cloud/authoring/fundamentals/annotations.md)
          + [新しいサイトの作成](/help/sites-cloud/authoring/fundamentals/create-site.md)
-         + [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
+         + [ページの作成と整理 ](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
          + [ページのコンテンツの編集](/help/sites-cloud/authoring/fundamentals/editing-content.md)
          + [リッチテキストエディター](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
          + [ページプロパティ](/help/sites-cloud/authoring/fundamentals/page-properties.md)
@@ -200,7 +200,7 @@ ht-degree: 89%
          + [ローンチの昇格](/help/sites-cloud/authoring/launches/promoting.md)
       + ワークフロー {#workflows}
          + [ワークフローの操作](/help/sites-cloud/authoring/workflows/overview.md)
-         + [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)
+         + [ページへのワークフローの適用 ](/help/sites-cloud/authoring/workflows/applying.md)
          + [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
       + パーソナライズ機能 {#personalization}
          + [パーソナライズ機能の概要](/help/sites-cloud/authoring/personalization/overview.md)
@@ -208,9 +208,9 @@ ht-degree: 89%
          + [ターゲットモードを使用したターゲットコンテンツのオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)
          + [マルチサイトでのターゲットコンテンツの操作](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [ターゲットコンテンツ用マルチサイト管理の構造](/help/sites-cloud/authoring/personalization/multisite-structure.md)
-         + [アクティビティの管理](/help/sites-cloud/authoring/personalization/activities.md)
-         + [オーディエンスの管理](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [オファーの作成と管理](/help/sites-cloud/authoring/personalization/offers.md)
+         + [アクティビティの管理 ](/help/sites-cloud/authoring/personalization/activities.md)
+         + [オーディエンスの管理 ](/help/sites-cloud/authoring/personalization/audiences.md)
+         + [オファーの作成と管理 ](/help/sites-cloud/authoring/personalization/offers.md)
          + [セグメント化について](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -218,6 +218,7 @@ ht-degree: 89%
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
+         + [サイトレールの使用](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEMクイックサイト作成ジャーニー {#quick-site}
@@ -463,7 +464,7 @@ ht-degree: 89%
    + トラブルシューティング {#troubleshooting-aem-forms-cloud-service}
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Dispatcher と CDN のキャッシュ ](/help/forms/troubleshooting-caching-performance.md)
-+ スクリーン {#screens-as-cloud-service}
++ Screens {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service の概要 {#overview}
       + [はじめに](/help/screens-cloud/introduction/introduction.md)
@@ -606,7 +607,7 @@ ht-degree: 89%
       + Cloud Manager のリリースノート {#release-notes-cloud-manager}
          + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 年 {#2022}
-            + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+            + [ 2022.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 年 {#2021}
             + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
