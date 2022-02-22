@@ -2,7 +2,7 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
+source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
 source-wordcount: '1906'
 ht-degree: 97%
@@ -112,7 +112,7 @@ Cloud Manager の役割は次のとおりです。
 
 Cloud Manager は、AEM as a Cloud Service の主要コンポーネントを作成および設定できるセルフサービスポータルとして進化しました。
 
-* 新規プログラムの作成と管理。詳しくは、[プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md)を参照してください。
+* 新規プログラムの作成と管理。詳しくは、[プログラムとプログラムの種類について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)を参照してください。
 
 * これらのプログラム内での AEM 環境の作成と管理。詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)を参照してください。
 

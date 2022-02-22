@@ -1,9 +1,9 @@
 ---
 title: Cloud Manager とクイックサイト作成ワークフローについて
 description: Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けについて説明します。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -82,11 +82,17 @@ Cloud Manager は、AEM as a Cloud Serviceの必須コンポーネントで、�
 
 ![Cloud Manager の構造](assets/cloud-manager-structure.png)
 
-* **テナント**  — すべての顧客にテナントがプロビジョニングされます。 **WKND Travel and Adventure Enterprises** テナントの可能性があります。
-* **プログラム**  — 各テナントには 1 つ以上のプログラムがあります。 この **WKND Travel and Adventure Enterprises** テナントは **WKND Nightlife** および **WKND Afton Projects** プログラム。
-* **環境**  — 各プログラムには、実稼動コンテンツ用の実稼動環境や、開発目的のステージング環境および開発環境など、複数の環境があります。 **WKND Nightlife** および **WKND Afton Projects** プログラムには、開発環境、ステージ環境、実稼動環境の両方があります。
+* **テナント**  — すべての顧客にテナントがプロビジョニングされます。
+* **プログラム**  — 各テナントには 1 つ以上のプログラムがあり、多くの場合、お客様がライセンスを受けたソリューションを反映しています。
+* **環境**  — 各プログラムには、実稼動コンテンツ用、ステージング用、開発用など、複数の環境があります。
 * **リポジトリ**  — 環境には git リポジトリがあり、アプリケーションとフロントエンドコードが維持されています。
 * **ツールとワークフロー**  — パイプラインは、リポジトリから環境へのコードのデプロイメントを管理します。
+
+例は、多くの場合、この階層を文脈化する際に役立ちます。
+
+* WKND Travel and Adventure Enterprises は、 **テナント** 旅行関連のメディアに焦点を当てています。
+* WKND Travel and Adventure Enterprises テナントは、2 つの **プログラム**:WKND Magazine 向けの 1 つの Sites プログラムと WKND Media 向けの 1 つの Assets プログラムです。
+* WKND Magazine と WKND Media の両方のプログラムには、開発、ステージ、実稼動が含まれます **環境**.
 
 ## クイックサイト作成フロントエンド開発フロー {#flow}
 
@@ -104,7 +110,7 @@ Cloud Manager は、AEM as a Cloud Serviceの必須コンポーネントで、�
 
 クイックサイト作成ツールを使用する主な利点は、純粋なフロントエンド開発者が実際のカスタマイズのみを担当することです。 フロントエンド開発者は、AEMとのやり取りがなく、AEMに関する知識が必要です。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Quick Site Creation ジャーニーのこの部分が完了し、次の作業をおこなう必要があります。
 

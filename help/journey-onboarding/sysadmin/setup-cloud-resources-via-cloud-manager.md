@@ -3,7 +3,7 @@ title: Cloud Manager を使用したクラウドリソースのセットアッ�
 description: Cloud Manager を使用して独自のクラウドリソースを設定および管理する方法について説明します。
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 19%
@@ -37,7 +37,7 @@ Cloud Manager を使用して独自のクラウドリソースを設定および
 
 * 君は～をよく知っているべきだ。 [Cloud Manager 製品プロファイル。](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Cloud Manager の概念を理解する必要があります [プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) および [環境。](/help/implementing/cloud-manager/manage-environments.md)
+* Cloud Manager の概念を理解する必要があります [プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) および [環境。](/help/implementing/cloud-manager/manage-environments.md)
 
 ## システム管理者およびビジネスオーナーとして Cloud Manager にアクセス {#access-sysadmin-bo}
 
@@ -141,7 +141,7 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 
    >[!TIP]
    >
-   >プログラムの追加ウィザードの使用方法に関する詳細な手順については、このドキュメントを参照してください [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) またはこれをご覧ください [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud プログラムを作成する方法と、プログラムを作成する前に重要な考慮事項について学ぶには、以下を参照してください。
+   >プログラムの追加ウィザードの使用方法に関する詳細な手順については、このドキュメントを参照してください [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) またはこれをご覧ください [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud プログラムを作成する方法と、プログラムを作成する前に重要な考慮事項について学ぶには、以下を参照してください。
 
 
 1. クラウドプログラムが正常に作成されたら、 Cloud Manager のランディングページからプログラムに移動して、 **概要** ページを開きます。
