@@ -1,9 +1,9 @@
 ---
 title: 準備段階
 description: AEMのインストールをクラウドに移行する準備ができていることを確認するために必要な手順について説明します。
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 10%
 
 ---
@@ -114,7 +114,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   <tr>
     <td>ワークフローランチャー</td>
     <td></td>
-    <td>コードから、OOTB またはカスタム DAM アセットの更新ワークフローのいずれかをトリガーしているワークフローランチャーをすべて削除します。</br>AEM as a Cloud Serviceにアップロードされたアセットはすべて、アセット処理サービスによって処理されます。 ワークフロー後処理の OSGi 設定があり、追加のカスタム処理手順のトリガーに使用できます。</td>
+    <td>コードから、OOTB またはカスタム DAM アセットの更新ワークフローのいずれかをトリガーしているワークフローランチャーをすべて削除します。</br>AEM as a Cloud Serviceにアップロードされたアセットはすべて、アセット処理サービスによって処理されます。 カスタム手順については、 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 後処理ワークフロー</a> 後処理ワークフローの設定方法を説明します。</td>
   </tr>
   <tr>
     <td>カスタムレンディション手順</td>
@@ -151,7 +151,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 ## 非推奨（廃止予定）の機能 {#deprecated-features}
 
-アドビでは、製品の機能を絶えず評価して、常に後方互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。
+アドビでは、製品の機能を絶えず評価して、常に下位互換性を慎重に考慮しながら、古い機能を作成し直したり、より近代的な機能に置き換えて、お客様にとっての全体的な価値を向上させています。
 
 アドビでは、 [廃止された機能](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=ja#deprecated-features) を参照して、AEMas a Cloud ServiceExperience Managerで非推奨とマークされている機能について確認し、デプロイメントへの影響を確認してください。
 
@@ -204,7 +204,7 @@ Cloud Serviceへの移行に必要な作業レベルを推定したら、リソ�
 
 詳しくは、 [KPI の開発](https://guided.adobe.com/welcome/aem/part6.html) ビジネス目標に合った適切な KPI を選択する方法を学ぶ
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEM as a Cloud Serviceへの移行に必要な変更の範囲を理解したら、次の手順に従います。 [コードとコンテンツクラウドの準備](/help/journey-migration/implementation.md) 実際に移行を実行する前に。
 
