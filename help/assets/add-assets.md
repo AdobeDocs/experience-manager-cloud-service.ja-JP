@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2744'
 ht-degree: 67%
 
 ---
@@ -147,7 +147,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 #### 前提条件 {#prerequisites-bulk-ingestion}
 
-Experience Managerインスタンスをデータストレージに接続するには、ソース BLOB ストレージの詳細が必要です。
+この機能を使用するには、Azure またはAWSの外部ストレージアカウントまたはバケットが必要です。
+
+>[!NOTE]
+>
+>ストレージアカウントコンテナまたはバケットをプライベートとして作成し、許可されたリクエストからのみ接続を受け入れます。 ただし、入力ネットワーク接続に関する追加の制限はサポートされていません。
 
 #### 一括読み込みツールの設定 {#configure-bulk-ingestor-tool}
 
@@ -167,7 +171,7 @@ Experience Managerインスタンスをデータストレージに接続する�
 
 1. （オプション）アセットを取り込む際に MB 単位の最大ファイルサイズを指定します。 **[!UICONTROL 最大サイズでフィルター]** フィールドに入力します。
 
-1. （オプション） **[!UICONTROL MIME タイプを除外]** フィールドに入力します。 例えば、`image/jpeg, image/.*, video/mp4` のようになります。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
+1. （オプション） **[!UICONTROL MIME タイプを除外]** フィールドに入力します。 たとえば、`image/jpeg, image/.*, video/mp4` のようになります。[サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
 
 1. の取り込みから含める MIME タイプのコンマ区切りリストを **[!UICONTROL MIME タイプを含める]** フィールドに入力します。 [サポートされるすべてのファイル形式](/help/assets/file-format-support.md)を参照してください。
 
