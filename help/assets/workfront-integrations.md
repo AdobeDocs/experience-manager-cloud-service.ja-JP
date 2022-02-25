@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]'
+title: '"[!DNL Experience Manager Assets] ～との統合 [!DNL Adobe Workfront]"'
 description: A と B の統合の概要 [!DNL Assets] および [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: edb954754f89c01a3b1a77b98f77c934f1855316
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '890'
 ht-degree: 2%
 
 ---
@@ -50,14 +50,14 @@ ht-degree: 2%
 | WorkfrontのAEM Assetsからアセットのリンクを解除 | AEMの既存のリンクされたアセットのリンクを、関連するWorkfrontドキュメントから解除できます。 AEM内の元のアセットは削除されません。 | ✓ | ✓ | ✓ |
 | WorkfrontからAEM Assetsに新しくバージョン管理されたアセットを追加 | Workfrontのドキュメントに新しく追加されたバージョンが追加された場合、ユーザーは新しいバージョンをAEMに送信して、既存のバージョンに置き換えることができます。 | ✓ | ✓ | ✓ |
 | 「直接ユーザー」をクリックしてAEMにリンクされたアセット | Workfront内から、リンクされたアセットをプレビューするためのAEMへのユーザー向けの画面です。 | ✓ | ✓ | カスタム |
-| WorkfrontでリンクされたAEMフォルダーを自動的に作成 | オブジェクトのステータスを使用して、Workfront内にリンクされたAEMフォルダーを自動的に作成します。 WorkfrontのPortfolio、プログラム、プロジェクトに基づいて、AEMフォルダーを自動的に整理します。 | 不可 | 不可 | ✓ |
-| コメントの同期 | からのアセットのコメントを自動的に同期 [!DNL Workfront] から [!DNL Assets] | 不可 | ✓ | ✓ |
+| WorkfrontでリンクされたAEMフォルダーを自動的に作成 | オブジェクトのステータスを使用して、Workfront内にリンクされたAEMフォルダーを自動的に作成します。 WorkfrontのPortfolio、プログラム、プロジェクトに基づいて、AEMフォルダーを自動的に整理します。 | 不可 | いいえ | ✓ |
+| コメントの同期 | からのアセットのコメントを自動的に同期 [!DNL Workfront] から [!DNL Assets] | いいえ | ✓ | ✓ |
 | WorkfrontのアセットメタデータのAEM Assetsへのマッピング | Workfrontオブジェクトおよびカスタムフォームプロパティは、AEMのアセットメタデータプロパティにマッピングできます。 値は、最初のアップロード/リンク時にプッシュされます。 | ✓ | ✓ | ✓ |
-| WorkfrontでドキュメントのカスタムFormsを自動的に作成 | AEMワークフローを使用して、Workfrontのドキュメント、タスクおよび問題にカスタムフォームを添付します。 | 不可 | カスタムフォームを手動で追加し、自動同期が機能する | ✓ |
-| AEM AssetsとWorkfrontの間でのメタデータの双方向の自動更新 | AEM AssetsとWorkfrontの間でメタデータを自動的に更新します。 | 不可 | ✓ | ✓ |
-| WorkfrontメタデータのAEM Assetsフォルダーへのマッピング | WorkfrontプロジェクトメタデータをリンクされたAEMフォルダーと同期します。 | 不可 | 不可 | ✓ |
-| 新しいバージョンでのAEMメタデータの更新 | AEMの設定を使用して、Workfrontの新しくバージョン管理されたアセットも、そのメタデータに加えられた変更をプッシュするかどうかを指定できます。 | 不可 | 不可 | ✓ |
-| WorkfrontのカスタムFormsに対する変更に基づいて、AEMメタデータを自動的に更新 | Workfrontは、指定したAEMのアセットメタデータプロパティがドキュメントのカスタムフォームにマッピングされるように設定されます。 アセットが最初にリンクされたとき、またはアセットが更新されたときに、これらのメタデータプロパティの値が、対応するWorkfrontドキュメントのカスタムフォームフィールドにコピーされます。 変更がAEMからAEMに送り返されるのを防ぐために、Workfrontに起因する変更と同じように、注意が必要です。 | 不可 | ✓ | ✓ |
-| リンクされたアセットに新しい配達確認バージョンを作成 | Workfrontでアセットをリンクする際に、配達確認を自動的に生成できます。 | 不可 | ✓ | カスタム |
-| Workfrontオブジェクトでのステータスの設定 | AEMワークフローを使用した、Workfrontオブジェクトのステータスに基づく設定可能な条件の設定 | 不可 | 不可 | ✓ |
-| AEM パブリッシュ環境またはBrand Portalにアセットを公開する | Workfrontユーザーに、リンクされたアセットを AEM パブリッシュ環境またはBrand Portalに自動的に公開するオプションを与えます。 | 不可 | 不可 | ✓ |
+| WorkfrontでドキュメントのカスタムFormsを自動的に作成 | AEMワークフローを使用して、Workfrontのドキュメント、タスクおよび問題にカスタムフォームを添付します。 | いいえ | カスタムフォームを手動で追加し、自動同期が機能する | ✓ |
+| AEM AssetsとWorkfrontの間でのメタデータの双方向の自動更新 | AEM AssetsとWorkfrontの間でメタデータを自動的に更新します。 | いいえ | ✓ | ✓ |
+| WorkfrontメタデータのAEM Assetsフォルダーへのマッピング | WorkfrontプロジェクトメタデータをリンクされたAEMフォルダーと同期します。 | 不可 | いいえ | ✓ |
+| 新しいバージョンでのAEMメタデータの更新 | AEMの設定を使用して、Workfrontの新しくバージョン管理されたアセットも、そのメタデータに加えられた変更をプッシュするかどうかを指定できます。 | 不可 | いいえ | ✓ |
+| WorkfrontのカスタムFormsに対する変更に基づいて、AEMメタデータを自動的に更新 | Workfrontは、指定したAEMのアセットメタデータプロパティがドキュメントのカスタムフォームにマッピングされるように設定されます。 アセットが最初にリンクされたとき、またはアセットが更新されたときに、これらのメタデータプロパティの値が、対応するWorkfrontドキュメントのカスタムフォームフィールドにコピーされます。 変更がAEMからAEMに送り返されるのを防ぐために、Workfrontに起因する変更と同じように、注意が必要です。 | いいえ | ✓ | ✓ |
+| リンクされたアセットに新しい配達確認バージョンを作成 | Workfrontでアセットをリンクする際に、配達確認を自動的に生成できます。 | いいえ | ✓ | カスタム |
+| Workfrontオブジェクトでのステータスの設定 | AEMワークフローを使用した、Workfrontオブジェクトのステータスに基づく設定可能な条件の設定 | 不可 | いいえ | ✓ |
+| AEM パブリッシュ環境またはBrand Portalにアセットを公開する | Workfrontユーザーに、リンクされたアセットを AEM パブリッシュ環境またはBrand Portalに自動的に公開するオプションを与えます。 | 不可 | いいえ | ✓ |

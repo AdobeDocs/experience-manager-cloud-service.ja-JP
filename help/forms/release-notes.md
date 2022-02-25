@@ -1,8 +1,8 @@
 ---
-title: '[!DNL AEM Forms] as a Cloud Service リリースノート'
-description: '[!DNL AEM Forms] as a Cloud Service リリースノート'
+title: '"[!DNL AEM Forms] as a Cloud Service リリースノート"'
+description: '"[!DNL AEM Forms] as a Cloud Service リリースノート"'
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 100%
@@ -52,7 +52,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](working-with-adobe-sign.md#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
-- **アダプティブフォーム用の Analytics**：アダプティブフォーム用の [Adobe Analytics でエンドユーザーの行動を捉えて追跡](integrate-aem-forms-with-adobe-analytics.md)し、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **アダプティブフォーム用の Analytics**：[アダプティブフォーム用の Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) でエンドユーザーの行動を捉えて追跡し、エンドユーザーのインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 - **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](configure-msdynamics-salesforce.md)ようになりました。
 
