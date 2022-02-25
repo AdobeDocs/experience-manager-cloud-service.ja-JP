@@ -1,10 +1,10 @@
 ---
 title: 準備段階
 description: AEMのインストールをクラウドに移行する準備ができていることを確認するために必要な手順について説明します。
-source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
+source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 10%
+source-wordcount: '2078'
+ht-degree: 11%
 
 ---
 
@@ -145,6 +145,11 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
     <td>バックアップと復元</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">AEMas a Cloud Serviceバックアップと復元</a></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>認証の変更</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service の IMS サポート</td>
+    <td>Cloud Serviceに移行する前に、オーサーとパブリッシュの両方で SAML 2.0 統合を使用していた場合、主な変更点は、AEM as a Cloud ServiceオーサーがAdobe IMSとのみ統合される点です。 ただし、AEMas a Cloud Serviceのパブリッシュ層では、SAML や他の認証統合を引き続き利用できます。 AEM as a Cloud Service では、作成者、管理者および開発者ユーザーに対してのみ IMS 認証をサポートしています。IMS 認証では、サイト訪問者などの顧客サイトの外部エンドユーザーに対してはサポートされません。</td>
   </tr>
 </tbody>
 </table>
