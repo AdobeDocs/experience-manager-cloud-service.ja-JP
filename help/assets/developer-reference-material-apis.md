@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
+source-git-commit: f5282d149e80328742ff9008441960f62cea6290
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 75%
