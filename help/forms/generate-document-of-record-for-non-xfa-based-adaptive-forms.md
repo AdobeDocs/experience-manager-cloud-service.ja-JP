@@ -2,10 +2,10 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
 workflow-type: tm+mt
-source-wordcount: '2926'
-ht-degree: 100%
+source-wordcount: '3686'
+ht-degree: 83%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 本題に入る前に、レコードのドキュメントに必要な次のアセットを理解し準備します。
 
-**基本テンプレート：** AEM Designer または Acrobat フォーム（AcroForm）で作成された XFA テンプレート（XDP ファイル）。[基本テンプレート](#base-template-of-a-document-of-record)は、レコードのドキュメントのスタイル設定とブランディング情報を指定するために使用されます。XFA テンプレート（XDP ファイル）を AEM Forms インスタンスに先にアップロードします。
+**基本テンプレート：** Forms Designer またはAcrobat Forms(AcroForms) で作成された XFA テンプレート（XDP ファイル）。 [基本テンプレート](#base-template-of-a-document-of-record)は、レコードのドキュメントのスタイル設定とブランディング情報を指定するために使用されます。XFA テンプレート（XDP ファイル）を AEM Forms インスタンスに先にアップロードします。
 
 **アダプティブフォーム：**&#x200B;レコードのドキュメントが生成されるアダプティブフォーム。
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 XFA テンプレート（XDP ファイル）を AEM Forms インスタンスにアップロードします。XFA テンプレート（XDP ファイル）をレコードのドキュメントのテンプレートとして使用するようにアダプティブフォームを設定するには、次の手順を実行します。
 
-1. AEM オーサーインスタンスで、**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をクリックします。
+1. Experience Managerオーサーインスタンスで、 **[!UICONTROL Forms]** > **[!UICONTROL Formsとドキュメント].**
 1. フォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「プロパティ」ウィンドウで、「**[!UICONTROL フォームモデル]**」をタップします。
 1. 「**[!UICONTROL フォームモデル]**」タブの「**[!UICONTROL モデルを選択]**」ドロップダウンで、「**[!UICONTROL スキーマ]**」または「**[!UICONTROL なし]**」を選択します。フォームモデルの選択は、フォームの作成時にも行うことができます。
@@ -50,7 +50,7 @@ XFA テンプレート（XDP ファイル）を AEM Forms インスタンスに�
 
 Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロードします。Adobe Acrobat PDF（AcroForm）をレコードのドキュメントのテンプレートとして使用するようにアダプティブフォームを設定するには、次の手順を実行します。
 
-1. AEM オーサーインスタンスで、**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をクリックします。
+1. Experience Managerオーサーインスタンスで、 **[!UICONTROL Forms]** > **[!UICONTROL Formsとドキュメント].**
 1. フォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「プロパティ」ウィンドウで、「**[!UICONTROL フォームモデル]**」をタップします。
 1. 「**[!UICONTROL フォームモデル]**」タブの「**[!UICONTROL モデルを選択]**」ドロップダウンで、「**[!UICONTROL スキーマ]**」または「**[!UICONTROL なし]**」を選択します。フォームモデルの選択は、フォームの作成時にも行うことができます。
@@ -64,14 +64,14 @@ Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロ�
 レコードのドキュメントを自動的に生成するようにアダプティブフォームを設定すると、フォームが変更されるたびに、そのレコードのドキュメントが直ちに更新されます。例えば、既存のアダプティブフォームからフィールドを削除すると、対応するフィールドも削除され、レコードのドキュメントには表示されません。レコードのドキュメントを自動的に生成する利点は他にも多数あります。：
 
 * フォーム開発者は、データバインディングを手動で管理する必要はありません。自動生成されたレコードのドキュメントは、データバインディング関連の更新を処理します。
-* フォーム開発者は、レコードのドキュメントから除外するようにマークされたフィールドを手動で非表示にする必要はありません。自動生成されたレコードのドキュメントは、これらのフィールドを除外するように事前設定されています。
+* フォーム開発者は、レコードのドキュメントから除外するようにマークされたフィールドを手動で非表示にする必要はありません。自動生成されたレコードのドキュメントは、そのようなフィールドを除外するように事前設定されています。
 * 自動生成されたレコードのドキュメントオプションを使用すれば、レコードのドキュメント用のフォームテンプレートの作成に要する時間を節約できます。
 * 自動生成されたレコードのドキュメントオプションでは、様々な基本テンプレートを使用して、異なるスタイルと外観を使用できます。組織のレコードのドキュメントに最適なスタイルと外観を選択するのに役立ちます。スタイル設定を指定しない場合、システムスタイルがデフォルトとして設定されます。
-* 自動生成されたレコードのドキュメントを使用すると、フォーム内の変更がレコードのドキュメントに即座に反映されます。
+* 自動生成されたレコードのドキュメントでは、フォーム内の変更がすぐにレコードのドキュメントに反映されます。
 
 レコードのドキュメントを自動生成するようアダプティブフォームを設定するには、次の手順を実行します。
 
-1. AEM オーサーインスタンスで、**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;をクリックします。
+1. Experience Managerオーサーインスタンスで、 **[!UICONTROL Forms]** > **[!UICONTROL Formsとドキュメント].**
 1. フォームを選択し、「**[!UICONTROL プロパティ]**」をクリックします。
 1. 「プロパティ」ウィンドウで、「**[!UICONTROL フォームモデル]**」をタップします。
 1. 「**[!UICONTROL フォームモデル]**」タブの「**[!UICONTROL モデルを選択]**」ドロップダウンで、「**[!UICONTROL スキーマ]**」または「**[!UICONTROL なし]**」を選択します。フォームモデルの選択は、フォームの作成時にも行うことができます。
@@ -97,7 +97,7 @@ Adobe Acrobat PDF（AcroForm）を AEM Forms インスタンスにアップロ�
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-メール送信、AEM ワークフローの送信アクションを、[レコードのドキュメントのステップ、その他の送信アクション](configuring-submit-actions.md)と組み合わせて使用し、レコードのドキュメントを受け取ることができます。
+電子メールの送信、Experience Managerワークフローの送信アクションを [レコードのドキュメントステップおよびその他の送信アクション](configuring-submit-actions.md) をクリックして、レコードのドキュメントを受け取ります。
 
 ## レコードのドキュメントテンプレートの増分更新 {#document-of-record-template-incremental-updates}
 
@@ -147,7 +147,6 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
   
-
 
 When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
 
@@ -300,7 +299,7 @@ When you select a form model, configure Document of Record using options availab
 
 * これらのフィールドのプロパティは、レコードのドキュメント内のフィールドに適用されます。これらのフィールドは、`AF_<name of field in all caps>_XFO` の命名規則に従う必要があります。例えば、チェックボックスのフィールド名は `AF_CHECKBOX_XFO` とする必要があります。
 
-基本テンプレートを作成するには、AEM Designer で次の手順を実行します。
+基本テンプレートを作成するには、Forms Designer で次の操作を実行します。
 
 1. **[!UICONTROL ファイル]**／**[!UICONTROL 新規]**&#x200B;をクリックします。
 1. 「**[!UICONTROL テンプレートに基づく]**」のオプションを選択します。
@@ -325,7 +324,7 @@ When you select a form model, configure Document of Record using options availab
 
 レコードのドキュメントの生成中に、「レコードのドキュメント」タブにあるレコードのドキュメントのブランディング情報を変更できます。「レコードのドキュメント」タブには、ロゴ、外観、レイアウト、ヘッダー、フッター、免責事項などのオプションや、選択されていないチェックボックスやラジオボタンを含めるかどうかのオプションが含まれています。
 
-「レコードのドキュメント」タブに入力されたブランディング情報をローカライズするには、ブラウザーのロケールを正しく設定してください。レコードのドキュメントのブランディング情報をカスタマイズするには、次の手順を実行します。
+「レコードのドキュメント」タブに入力するブランディング情報をローカライズするには、ブラウザーのロケールが適切に設定されていることを確認します。 レコードのドキュメントのブランディング情報をカスタマイズするには、次の手順を実行します。
 
 1. レコードのドキュメント内でパネル（ルートパネル）を選択して、![configure](assets/configure.png) をタップします。
 1. ![dortab](assets/dortab.png) をタップします。「レコードのドキュメント」タブが表示されます。
@@ -333,7 +332,7 @@ When you select a form model, configure Document of Record using options availab
 
    ![brandingtemplate](assets/brandingtemplate.png)
 
-   カスタムのテンプレートを選択する場合は、[!DNL AEM Forms] サーバーで XDP を参照して選択します。使用する [!DNL AEM Forms] サーバーにないテンプレートを使用する場合は、最初に XDP を [!DNL AEM Forms] サーバーにアップロードする必要があります。
+   カスタムのテンプレートを選択する場合は、[!DNL AEM Forms] サーバーで XDP を参照して選択します。まだ [!DNL AEM Forms] サーバー上で、最初に XDP を [!DNL AEM Forms] サーバー。
 
 1. デフォルトのテンプレートとカスタムのテンプレートのどちらを選択するかにより異なりますが、以下のプロパティの一部または全部が「レコードのドキュメント」タブに表示されます。これらを正しく設定します。
 
@@ -353,7 +352,7 @@ When you select a form model, configure Document of Record using options availab
 
    >[!NOTE]
    >
-   >バージョン 6.3 より前の Forms Designer で作成されたアダプティブフォームテンプレートを使用している場合、アクセントの色およびフォントファミリーのプロパティを適用するには、ルートサブフォームの下にあるアダプティブフォームテンプレートに以下が存在することを確認してください。
+   >6.3 より前のバージョンの Designer で作成されたアダプティブフォームテンプレートを使用している場合、Accent Color プロパティと Font Family プロパティを機能させるには、アダプティブフォームテンプレートのルートサブフォームの下に次の内容が存在することを確認します。
 
    ```xml
    <proto>
@@ -387,7 +386,7 @@ When you select a form model, configure Document of Record using options availab
 
 レコードのドキュメントの設定では、レコードのドキュメントに含めるオプションを選択できます。例えば、銀行では、名前、年齢、社会保障番号、電話番号などをフォームから受け取ります。銀行口座番号や支店の詳細は、フォーム上に生成されます。レコードのドキュメントでは、名前、社会保障番号、銀行口座、および支店の詳細のみが表示されるように選択できます。
 
-コンポーネントのレコードのドキュメント設定は、そのプロパティ内で使用できます。コンポーネントのプロパティにアクセスするには、コンポーネントを選択し、オーバーレイ内の ![cmppr](assets/cmppr.png) をクリックします。プロパティはサイドバーにリスト表示され、その中で次の設定を検索できます。
+レコードのドキュメントコンポーネントの設定は、そのプロパティで使用できます。 コンポーネントのプロパティにアクセスするには、コンポーネントを選択し、オーバーレイ内の ![cmppr](assets/cmppr.png) をクリックします。プロパティはサイドバーにリスト表示され、その中で次の設定を検索できます。
 
 **フィールドレベルの設定**
 
@@ -400,4 +399,70 @@ When you select a form model, configure Document of Record using options availab
 **フォームレベルの設定**
 
 * **バインドされていないフィールドをレコードのドキュメントに含める：**&#x200B;このプロパティを設定すると、スキーマベースのアダプティブフォームのバインドされていないフィールドがレコードのドキュメントに追加されます。デフォルトでは true になっています。
-* **非表示の場合はレコードのドキュメントからフィールドを除外**：このプロパティを設定すると、「レコードのドキュメントから除外」フィールドレベルプロパティが true でないときにその動作が上書きされます。フォームの送信時にフィールドが非表示の場合、これらのフィールドは、プロパティが true に設定されているとレコードのドキュメントから除外されます（ただし「レコードのドキュメントから除外」プロパティが設定されていない場合）。
+* **非表示の場合はレコードのドキュメントからフィールドを除外**：このプロパティを設定すると、「レコードのドキュメントから除外」フィールドレベルプロパティが true でないときにその動作が上書きされます。フォームの送信時にフィールドが非表示になっている場合、「レコードのドキュメントから除外」プロパティが設定されていない場合、プロパティが true に設定されていれば、レコードのドキュメントから除外されます。
+
+## カスタム XCI ファイルの使用
+
+>[!NOTE]
+>
+> この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 」を参照してください。
+
+XCI ファイルは、ドキュメントの様々なプロパティを設定する場合に役立ちます。 Forms as a Cloud Serviceにはマスター XCI ファイルがあります。 カスタム XCI ファイルを使用して、マスター XCI ファイルで指定された 1 つ以上のデフォルトのプロパティを上書きできます。 例えば、ドキュメントにフォントを埋め込むか、すべてのドキュメントに対してタグ付きプロパティを有効にするかを選択できます。 次の表に、XCI オプションの説明を示します。
+
+| XCI オプション | 説明 |
+|--- |--- |
+| config/present/pdf/creator | ドキュメント情報ディクショナリの Creator エントリを使用して、ドキュメント作成者を識別します。この辞書について詳しくは、 [PDFリファレンスガイド](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/producer | ドキュメント情報ディクショナリの Producer エントリを使用して、ドキュメントプロデューサーを識別します。この辞書について詳しくは、 [PDFリファレンスガイド](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/layout | 出力を単一ページとするか連続ページとするかを制御します。 |
+| config/present/pdf/compression/level | PDF ドキュメントの生成時に使用する圧縮レベルを指定します。 |
+| config/present/pdf/fontInfo/embed | 出力ドキュメントに埋め込むフォントを制御します。 |
+| config/present/pdf/scriptModel | 出力 PDF ドキュメントに XFA 固有の情報を含めるかどうかを制御します。 |
+| config/present/common/data/adjustData | 結合後に XFA アプリケーションでデータを調整するかどうかを制御します。 |
+| config/present/pdf/renderPolicy | ページコンテンツをサーバー側で生成するか、後でクライアント側で生成するかを制御します。 |
+| config/present/common/locale | 出力ドキュメントで使用するデフォルトのロケールを指定します。 |
+| config/present/destination | present 要素に含まれている場合は、出力形式を指定します。openAction 要素に含まれている場合は、インタラクティブクライアントでドキュメントを開いたときに実行されるアクションを指定します。 |
+| config/present/output/type | ファイルに適用する圧縮の種類または生成する出力の種類を指定します。 |
+| config/present/common/temp/uri | フォームの URI を指定します。 |
+| config/present/common/template/base | フォームデザインの URI のベースを指定します。この要素がない場合や空の場合は、フォームデザインの場所がベースとして使用されます。 |
+| config/present/common/log/to | ログデータまたは出力データの書き込み先を制御します。 |
+| config/present/output/to | ログデータまたは出力データの書き込み先を制御します。 |
+| config/present/script/currentPage | ドキュメントを開いたときの初期ページを指定します。 |
+| config/present/script/exclude | 無視するイベントをFormsにas a Cloud Service的に通知します。 |
+| config/present/pdf/linearized | 出力 PDF ドキュメントを線形化するかどうかを制御します。 |
+| config/present/script/runScripts | Formsが実行するスクリプトのセットを制御します。 |
+| config/present/pdf/tagged | 出力 PDF ドキュメントへのタグの組み込みを制御します。タグは、PDF のコンテキストでは、ドキュメントの論理構造を公開するためにドキュメントに組み込まれる追加情報です。タグは、アクセシビリティの支援や書式の再設定に役立ちます。例えば、スクリーンリーダーがテキストの途中でページ番号を読み上げてしまわないように、ページ番号を装飾としてタグ付けすることができます。タグを使用すると、ドキュメントの有用性が高まる反面、ドキュメントのサイズが大きくなり、作成にかかる処理時間も長くなります。 |
+| config/present/pdf/fontInfo/alwaysEmbed | 出力ドキュメントに埋め込むフォントを指定します。 |
+| config/present/pdf/fontInfo/neverEmbed | 出力ドキュメントに埋め込まないフォントを指定します。 |
+| config/present/pdf/pdfa/part | ドキュメントが準拠するPDF/A 仕様のバージョン番号を指定します。 |
+| config/present/pdf/pdfa/amd | PDF/A 仕様の修正レベルを指定します。 |
+| config/present/pdf/pdfa/conformance | PDF/A 仕様の適合レベルを指定します。 |
+| config/present/pdf/version | 生成するPDFドキュメントのバージョンを指定 |
+| config/present/pdf/version/map | ドキュメントのフォールバックフォントを指定します |
+
+### Formsas a Cloud Service環境でのカスタム XCI ファイルの使用
+
+1. 開発プロジェクトにカスタム XCI ファイルを追加します。
+1. 以下を指定します。 [inline プロパティ](/help/implementing/deploying/configuring-osgi.md):
+
+   ```JSON
+    {
+     "xciFilePath": "[path of XCI file]"
+    }
+   ```
+
+   例：
+
+   ```JSON
+    {
+     "xciFilePath": "/content/dam/formsanddocuments/customMinionProBoldAndTagged.xci"
+    }
+   ```
+
+1. プロジェクトをCloud Service環境にデプロイします。
+
+### ローカルのFormsas a Cloud Service開発環境でカスタム XCI ファイルを使用する
+
+1. XCI ファイルをアップロード環境にローカル開発します。
+1. Cloud ServiceSDK Configuration Manager を開きます。 デフォルトの URL は次のとおりです。 <http://localhost:4502/system/console/configMgr>.
+1. を探して開きます。 **[!UICONTROL アダプティブFormsおよびインタラクティブ通信 Web チャネル]** 設定。
+1. XCI ファイルのパスを指定し、「 **[!UICONTROL 保存]**.
