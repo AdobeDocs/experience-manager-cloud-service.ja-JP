@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: f624b287bf5a46d4a20991dae6cd7b521a7fe472
+source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3825'
 ht-degree: 75%
 
 ---
@@ -53,7 +53,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 この機能の設定や使用に関係する様々な役割と対応するユーザーグループについて、以下で説明します。ローカルスコープは、作成者が Web ページを作成する場合に使用します。リモートスコープは、必要なアセットをホストしている DAM デプロイメントで使用されます。[!DNL Sites] 作成者は、これらのリモートアセットを取得します。
 
 | 役割 | 対象範囲 | ユーザーグループ | 要件 |
-|------|--------|-----------|-----|----------|
+|------|--------|-----------|----------|
 | [!DNL Sites] administrator | ローカル | [!DNL Experience Manager] `administrators` | [!DNL Experience Manager]を設定し、リモート [!DNL Assets] デプロイメントとの統合を設定します。 |
 | DAM ユーザー | ローカル | `Authors` | `/content/DAM/connectedassets/` の取得済みアセットを表示／複製するために使用されます。 |
 | [!DNL Sites] 作成者 | ローカル | <ul><li>`Authors`（リモート DAM での読み取りアクセス権とローカル [!DNL Sites] での作成者アクセス権を持つ） </li> <li>ローカル [!DNL Sites] の `dam-users`</li></ul> | エンドユーザーは、この統合を使用してコンテンツの速度を向上させる [!DNL Sites] 作成者です。作成者は、[!UICONTROL コンテンツファインダー]や、ローカル Web ページ内の必要な画像を使用して、リモート DAM 内のアセットを検索および閲覧します。 |
@@ -136,7 +136,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
 [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメントの間の接続を設定して、Web ページの作成者が Web ページで [!DNL Dynamic Media] の画像を使用できるようにすることができます。Web ページをオーサリングする際に、リモートアセットとリモート [!DNL Dynamic Media] デプロイメントを使用するエクスペリエンスは同じです。これにより、Connected Assets の機能（スマート切り抜きや画像プリセットなど）を使用して [!DNL Dynamic Media] 機能を活用できます。
 
-Connected Assets では、 [!DNL Dynamic Media] リモート DAM デプロイメント上の画像アセットを処理する機能。
+Connected Assets では、 [!DNL Dynamic Media] リモート DAM デプロイメント上の画像アセットを処理します。
 
 使用する [!DNL Dynamic Media] のリモート DAM デプロイメントからの画像 [!DNL Sites] デプロイ：
 
