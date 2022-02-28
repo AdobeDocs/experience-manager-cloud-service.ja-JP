@@ -4,10 +4,10 @@ description: ビデオのエンコーディング、YouTubeへのビデオの公
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
+source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
 workflow-type: tm+mt
-source-wordcount: '9476'
-ht-degree: 98%
+source-wordcount: '9334'
+ht-degree: 93%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 98%
 
 ## Dynamic Media でのビデオの操作 {#working-with-video-in-dynamic-media}
 
-Dynamic Media のビデオは、高品質のアダプティブビデオを簡単に公開して、デスクトップ、iOS、Android™、BlackBerry®、Windows® などのモバイルデバイスを含む複数の画面にストリーミングするためのエンドツーエンドのソリューションです。アダプティブビデオセットでは、同じビデオを、400 kbps、800 kbps、1000 kbps などの様々なビットレートと形式でエンコードしたバージョンにグループ分けします。デスクトップコンピューターまたはモバイルデバイスによって、利用可能な帯域幅が検出されます。
+Dynamic Mediaのビデオは、デスクトップ、タブレット、モバイルデバイスなどの複数の画面にストリーミング用に高品質のアダプティブビデオを簡単に公開できるエンドツーエンドのソリューションです。 アダプティブビデオセットでは、同じビデオを、400 kbps、800 kbps、1000 kbps などの様々なビットレートと形式でエンコードしたバージョンにグループ分けします。デスクトップコンピューターまたはモバイルデバイスによって、利用可能な帯域幅が検出されます。
 
 例えば、iOS モバイルデバイスでは、3G、4G、Wi-Fi などの帯域幅が検出されます。次に、アダプティブビデオセット内の様々なビデオのビットレートの中から、適切なエンコード済みビデオが自動的に選択されます。そのビデオが、デスクトップ、モバイルデバイスまたはタブレットにストリーミングされます。
 
@@ -128,13 +128,13 @@ Dynamic Media のビデオは、高品質のアダプティブビデオを簡単
 
 * すべての HTML5 ビデオビューアでのビデオキャプション。
 * 効率的なビデオアセット管理のための、メタデータが完全にサポートされたビデオの整理、参照および検索。
-* Web やデスクトップおよびモバイルデバイス（iPhone、iPad、Android™、BlackBerry®、Windows® Phone など）へのアダプティブビデオセットの配信。
+* アダプティブビデオセットを Web およびデスクトップ、タブレット、モバイルデバイスに配信します。
 
 アダプティブビデオのストリーミングは、各種 iOS プラットフォームでサポートされています。詳しくは、[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=ja)を参照してください。
 
-Dynamic Media では、MP4 H.264 ビデオのモバイルビデオ再生がサポートされています。このビデオ形式をサポートする BlackBerry® デバイスについては、[BlackBerry® でサポートされているビデオ形式](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)のページで確認できます。
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-このビデオ形式をサポートする Windows® デバイスについては、[Windows® Phone でサポートされているビデオ形式](https://docs.microsoft.com/ja-jp/windows/uwp/audio-video-camera/supported-codecs)で確認できます。
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * Dynamic Media ビデオビューアプリセットを使用してビデオを再生します。このビューアプリセットには、次のビューアが含まれます。
 
@@ -239,13 +239,15 @@ HLS は、アダプティブビデオストリーミングの Apple 標準で、
    <td>Chrome（iOS）</td>
    <td>HLS</td>
   </tr>
-  <tr>
-   <td>モバイル</td>
+ </tbody>
+</table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
+   <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
- </tbody>
-</table>
+ -->
 
 ## Dynamic Media ビデオソリューションのアーキテクチャ {#architecture-of-dynamic-media-video-solution}
 
@@ -433,21 +435,19 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 **Google Cloud を設定するには：**
 
 1. Google アカウントを作成します。
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   既に Google アカウントを持っている場合は、次のステップに進んでください。
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
 1. [https://cloud.google.com/](https://cloud.google.com/) にアクセスします。
 1. Google Cloud ページの右上隅付近にある、「**[!UICONTROL コンソール]**」を選択します。
 
    必要に応じて、Google アカウントの資格情報を使用して&#x200B;**[!UICONTROL ログイン]**&#x200B;し、「]**コンソール**[!UICONTROL 」オプションを確認します。
 
-1. ダッシュボードページで、**[!UICONTROL Google Cloud Platform]** の右側にある「プロジェクト」ドロップダウンリストを選択して、プロジェクトの選択ダイアログボックスを開きます。
-1. プロジェクトの選択ダイアログボックスで、「**[!UICONTROL 新しいプロジェクト]**」を選択します。
+1. ダッシュボードページで、 **[!UICONTROL Google Cloud Platform]**」、「プロジェクト」ドロップダウンリストを選択して、 **[!UICONTROL プロジェクトを選択]** ダイアログボックス
+1. 内 **[!UICONTROL プロジェクトを選択]** ダイアログボックスで、次を選択します。 **[!UICONTROL 新規プロジェクト]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. 新しいプロジェクトダイアログボックスで、「プロジェクト名」フィールドに新しいプロジェクトの名前を入力します。
+1. 内 **[!UICONTROL 新規プロジェクト]** ダイアログボックス、 **[!UICONTROL プロジェクト名]** 「 」フィールドに、新しいプロジェクトの名前を入力します。
 
    プロジェクト ID は、プロジェクト名に基づいて付けられます。そのため、プロジェクト名は慎重に選んでください。プロジェクト名を後で変更することはできません。また、このプロジェクト ID は、後で Experience Manager で YouTube をセットアップする際にも入力する必要があります。そのため、ID を書き留めておくとよいでしょう。
 
@@ -455,72 +455,71 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
 1. 次のいずれかの操作を行います。
 
-   * プロジェクトのダッシュボードの「スタートガイド」カードで、「**[!UICONTROL API を探索して有効にする]**」を選択します。
-   * プロジェクトのダッシュボードの「API」カードで「**[!UICONTROL API の概要に移動]**」を選択します。
+   * プロジェクトのダッシュボードで、 **[!UICONTROL はじめに]** カード、選択 **[!UICONTROL API の確認と有効化]**.
+   * プロジェクトのダッシュボードで、 **[!UICONTROL API]** カード、選択 **[!UICONTROL API の概要に移動]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. API とサービスページの上部にある「**[!UICONTROL API とサービスを有効にする]**」を選択します。
-1. API ライブラリページの左側の「**[!UICONTROL カテゴリ]**」で、「**[!UICONTROL YouTube]**」を選択します。ページの右側で、「**[!UICONTROL YouTube Data API]**」を選択します。
-1. YouTube Data API v3 ページで、「**[!UICONTROL 有効にする]**」を選択します。
+1. の上中央付近 **[!UICONTROL API とサービス]** ページ、選択 **[!UICONTROL API とサービスの有効化]**.<!-- NEXT STEP BELOW IS STEP 10 -->
+1. の **[!UICONTROL API ライブラリ]** ページ（左側、下） **[!UICONTROL カテゴリ]**&#x200B;を選択します。 **[!UICONTROL YouTube]**. ページの右側で、「**[!UICONTROL YouTube]**」を選択します。
+1. の **[!UICONTROL YouTube]** ページ、選択 **[!UICONTROL YouTube Data API v3]**.
+1. の **[!UICONTROL YouTube Data API v3]** ページ、選択 **[!UICONTROL 管理]**.
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. この API を使用するには、資格情報が必要です。その場合は、「**[!UICONTROL 認証情報を作成]**」を選択します。
+1. この API を使用するには、資格情報が必要です。必要に応じて、API とサービスページの左側で、を選択します。 **[!UICONTROL 資格情報]**.
 
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. 認証情報ページの上部付近にある、「 」を選択します。 **[!UICONTROL 資格情報を作成]**&#x200B;を選択し、「 **[!UICONTROL OAuth クライアント ID]**.
 
-1. **[!UICONTROL プロジェクトへの認証情報の追加]**&#x200B;ページの手順 1 で以下を行います。
+1. の **[!UICONTROL OAuth クライアント ID を作成]** ページの **[!UICONTROL アプリケーションタイプ]** ドロップダウンリストで、「 **[!UICONTROL Web アプリケーション]**.
 
-   * 「**[!UICONTROL 使用する API]**」ドロップダウンリストから、「**[!UICONTROL YouTube Data API v3]**」を選択します。
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   * 「**[!UICONTROL API を呼び出す場所]**」ドロップダウンリストから、「**[!UICONTROL ウェブサーバー (node.js、Tomcat など)]**」を選択します。
+1. 次のいずれかの操作を行います。
 
-   * 「**[!UICONTROL アクセスするデータの種類]**」ドロップダウンリストから、「**[!UICONTROL ユーザーデータ]**」を選択します。
+   * 内 **[!UICONTROL 名前]** フィールドに、OAuth 2.0 クライアントの一意の名前を入力します。
+   * Googleが **[!UICONTROL 名前]** フィールドに入力します。
 
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
+1. 以下 **[!UICONTROL 許可された JavaScript オリジン]** 見出し、選択 **[!UICONTROL URI を追加]**.
 
-1. 「**[!UICONTROL 必要な認証情報]**」を選択します。
-1. **[!UICONTROL プロジェクトへの認証情報の追加]**&#x200B;ページの手順 2 で、「**[!UICONTROL OAuth 2.0 クライアント ID を作成する]**」の下の「名前」フィールドに、必要に応じて一意の名前を入力します。または、Google で指定されるデフォルトの名前を使用することもできます。
-1. 「**[!UICONTROL 承認済みの JavaScript 生成元]**」の下にあるテキストフィールドに、次のパスに従って、実際に使用するドメインとポート番号を入力します。入力が終わったら、**[!UICONTROL Enter]** キーを押して、パスをリストに追加します。
+   ![6_5_googleaccount-apis-nameauthorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+
+1. 内 **[!UICONTROL URI]** テキストフィールドに、次のパスに従って、パスに独自のドメインとポート番号を入力し、 **[!UICONTROL 入力]** リストにパスを追加するには、次の手順に従います。
 
    `https://<servername.domain>:<port_number>`
 
    例：`https://1a2b3c.mycompany.com:4321`
 
-   **注意**：上記のパスは入力例です。
+   >[!IMPORTANT]
+   >
+   >上記の例のパスは仮定的で、説明のためにのみ使用します。
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+1. 以下 **[!UICONTROL 承認済みのリダイレクト URI]** 」で、「 ADD URI 」を選択します。
 
-1. 「**[!UICONTROL 承認済みのリダイレクト URI]**」の下にあるテキストフィールドに、次のように、実際に使用するドメインとポート番号を入力します。入力が終わったら、**[!UICONTROL Enter]** キーを押して、パスをリストに追加します。
+1. 内 **[!UICONTROL URI]** テキストフィールドに、次のパスに従って、パスに独自のドメインとポート番号を入力し、 **[!UICONTROL 入力]** リストにパスを追加するには、次の手順に従います。
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    例：`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **注意**：上記のパスは入力例です。
+   >[!IMPORTANT]
+   >
+   >上記の例のパスは仮定的で、説明のためにのみ使用します。
 
-1. 「**[!UICONTROL OAuth クライアント ID の作成]**」を選択します。
-1. **[!UICONTROL プロジェクトへの認証情報の追加]**&#x200B;ページの手順 3 で、「**[!UICONTROL OAuth 2.0 同意画面を設定する]**」の下で、現在使用している Gmail 電子メールアドレスを選択します。
+1. の下部付近 **[!UICONTROL OAuth クライアント ID を作成]** ページ、選択 **[!UICONTROL 作成]**.
 
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+1. の **[!UICONTROL OAuth クライアントが作成されました]** ダイアログボックスで、次の操作を行います。
 
-1. 「**[!UICONTROL ユーザーに表示される製品名]**」の下のテキストフィールドに、同意画面に表示する内容を入力します。
+   * （オプション）クライアント ID とクライアント秘密鍵をコピーして保存します。
+   * 選択 **[!UICONTROL JSON をダウンロード]**&#x200B;をクリックし、JSON ファイルを保存します。
 
-   同意画面は、Experience Manager 管理者が YouTube への認証を行う際に表示されます。Experience Manager が YouTube に権限を要求します。
+   後でAdobe Experience ManagerでYouTubeを設定する際に、このダウンロードした JSON ファイルが必要になります。
 
-1. 「**[!UICONTROL 続行]**」を選択します。
-1. プロジェクトへの認証情報の追加ページの手順 4 で、「**[!UICONTROL 認証情報をダウンロードする]**」の下の「**[!UICONTROL ダウンロード]**」を選択します。
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+1. の **[!UICONTROL OAuth クライアントが作成されました]** ダイアログボックスで、次を選択します。 **[!UICONTROL OK]**.
 
-1. `client_id.json` ファイルを保存します。
-
-   このダウンロードした JSON ファイルは、後で Adobe Experience Manager で YouTube をセットアップするときに必要になります。
-
-1. 「**[!UICONTROL 完了]**」を選択します。
-
-   Google アカウントからログアウトします。次に、YouTube チャンネルを作成します。
+1. Google アカウントからログアウトします。次に、YouTube チャンネルを作成します。
 
 ### YouTube チャンネルの作成 {#creating-a-youtube-channel}
 
