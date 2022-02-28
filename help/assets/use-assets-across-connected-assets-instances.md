@@ -5,12 +5,13 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 62af8e36b050abacd2160ab09671ed237424bc9b
+source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3856'
 ht-degree: 75%
 
 ---
+
 
 # Connected Assets を使用した [!DNL Experience Manager Sites] での DAM アセットの共有  {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -132,22 +133,24 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
+## Dynamic Media Assets の使用 {#dynamic-media-assets}
+
+
+Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート DAM デプロイメントから削除し、スマート切り抜きや画像プリセットなどのDynamic Media機能を活用します。
+
+使用する [!DNL Dynamic Media] Connected Assets を使用：
+
+1. 設定 [!DNL Dynamic Media] 同期モードが有効なリモート DAM デプロイメント時。
+1. 設定 [Connected Assets](#configure-a-connection-between-sites-and-assets-deployments).
+1. 設定 [!DNL Dynamic Media] リモート DAM で設定されたのと同じ会社名を持つ Sites インスタンス上で、 Sites デプロイメントで Connected Assets を操作するには、Dynamic Mediaアカウントへの読み取り専用アクセス権が必要です。 そのため、Sites インスタンスのDynamic Media設定で同期モードを無効にする必要があります。
+
+>[!CAUTION]
+>
+>Connected Assets および [!DNL Dynamic Media] 設定： [!DNL Dynamic Media] で使用可能なローカルアセットを処理するには [!DNL Sites] デプロイメント。
+
 ## [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメント間の接続の設定  {#sites-dynamic-media-connected-assets}
 
 [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメントの間の接続を設定して、Web ページの作成者が Web ページで [!DNL Dynamic Media] の画像を使用できるようにすることができます。Web ページをオーサリングする際に、リモートアセットとリモート [!DNL Dynamic Media] デプロイメントを使用するエクスペリエンスは同じです。これにより、Connected Assets の機能（スマート切り抜きや画像プリセットなど）を使用して [!DNL Dynamic Media] 機能を活用できます。
-
-Connected Assets では、 [!DNL Dynamic Media] リモート DAM デプロイメント上の画像アセットを処理します。
-
-使用する [!DNL Dynamic Media] のリモート DAM デプロイメントからの画像 [!DNL Sites] デプロイ：
-
-1. 設定 [!DNL Dynamic Media] リモート DAM デプロイメントで、次のオプションを使用できます。
-   * 同期モード：デフォルトで有効
-   * アセットを公開：すべてのコンテンツを同期
-1. オン [!DNL Sites] デプロイ：
-   1. 設定 [!DNL Dynamic Media] 手順 1 と同じ会社を使用しています（同期モードは無効です）。
-   1. Connected Assets を設定します。
-
-   [!DNL Dynamic Media] アセットは、 [!DNL Sites] 読み取り専用モードでのデプロイメント。 その結果、 [!DNL Dynamic Media] 上のアセットを処理する [!DNL Sites] デプロイメント。
 
 接続を設定するには、次の手順に従います。
 
