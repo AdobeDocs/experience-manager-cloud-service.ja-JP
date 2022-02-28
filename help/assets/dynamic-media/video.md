@@ -4,9 +4,9 @@ description: ビデオのエンコーディング、YouTubeへのビデオの公
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 93%
 
 ---
@@ -444,9 +444,6 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
 1. ダッシュボードページで、 **[!UICONTROL Google Cloud Platform]**」、「プロジェクト」ドロップダウンリストを選択して、 **[!UICONTROL プロジェクトを選択]** ダイアログボックス
 1. 内 **[!UICONTROL プロジェクトを選択]** ダイアログボックスで、次を選択します。 **[!UICONTROL 新規プロジェクト]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. 内 **[!UICONTROL 新規プロジェクト]** ダイアログボックス、 **[!UICONTROL プロジェクト名]** 「 」フィールドに、新しいプロジェクトの名前を入力します。
 
    プロジェクト ID は、プロジェクト名に基づいて付けられます。そのため、プロジェクト名は慎重に選んでください。プロジェクト名を後で変更することはできません。また、このプロジェクト ID は、後で Experience Manager で YouTube をセットアップする際にも入力する必要があります。そのため、ID を書き留めておくとよいでしょう。
@@ -457,8 +454,6 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
    * プロジェクトのダッシュボードで、 **[!UICONTROL はじめに]** カード、選択 **[!UICONTROL API の確認と有効化]**.
    * プロジェクトのダッシュボードで、 **[!UICONTROL API]** カード、選択 **[!UICONTROL API の概要に移動]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. の上中央付近 **[!UICONTROL API とサービス]** ページ、選択 **[!UICONTROL API とサービスの有効化]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. の **[!UICONTROL API ライブラリ]** ページ（左側、下） **[!UICONTROL カテゴリ]**&#x200B;を選択します。 **[!UICONTROL YouTube]**. ページの右側で、「**[!UICONTROL YouTube]**」を選択します。
