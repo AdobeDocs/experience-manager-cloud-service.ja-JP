@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3856'
-ht-degree: 75%
+source-wordcount: '3796'
+ht-degree: 74%
 
 ---
 
@@ -148,11 +148,9 @@ Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート D
 >
 >Connected Assets および [!DNL Dynamic Media] 設定： [!DNL Dynamic Media] で使用可能なローカルアセットを処理するには [!DNL Sites] デプロイメント。
 
-## [!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメント間の接続の設定  {#sites-dynamic-media-connected-assets}
+## [!DNL Dynamic Media] の設定 {#configure-dynamic-media}
 
-[!DNL Sites] デプロイメントと [!DNL Dynamic Media] デプロイメントの間の接続を設定して、Web ページの作成者が Web ページで [!DNL Dynamic Media] の画像を使用できるようにすることができます。Web ページをオーサリングする際に、リモートアセットとリモート [!DNL Dynamic Media] デプロイメントを使用するエクスペリエンスは同じです。これにより、Connected Assets の機能（スマート切り抜きや画像プリセットなど）を使用して [!DNL Dynamic Media] 機能を活用できます。
-
-接続を設定するには、次の手順に従います。
+を設定するには、以下を実行します。 [!DNL Dynamic Media] オン [!DNL Assets] および [!DNL Sites] 配置：
 
 1. 前述のように、Connected Assets 設定を作成します。ただし、機能を設定する場合を除き、「**[!UICONTROL Dynamic Media Connected Assets 用に元のレンディションを取得]**」オプションを選択します。
 
