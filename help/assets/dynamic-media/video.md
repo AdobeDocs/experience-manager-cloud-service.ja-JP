@@ -4,10 +4,10 @@ description: ビデオのエンコーディング、YouTubeへのビデオの公
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
+source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
 workflow-type: tm+mt
-source-wordcount: '9361'
-ht-degree: 93%
+source-wordcount: '9368'
+ht-degree: 92%
 
 ---
 
@@ -440,11 +440,11 @@ Google ではユーザーインターフェイスが定期的に変更されま�
    既にGoogleアカウントをお持ちの場合は、次の手順にスキップできます。
 
 1. [https://cloud.google.com/](https://cloud.google.com/) にアクセスします。
-1. Google Cloud ページの右上隅付近にある、「**[!UICONTROL コンソール]**」を選択します。
+1. の **[!UICONTROL Google Cloud]** ページの右上隅付近で、「 」を選択します。 **[!UICONTROL コンソール]**.
 
    必要に応じて、Google アカウントの資格情報を使用して&#x200B;**[!UICONTROL ログイン]**&#x200B;し、「]**コンソール**[!UICONTROL 」オプションを確認します。
 
-1. ダッシュボードページで、 **[!UICONTROL Google Cloud Platform]**&#x200B;を選択し、 **[!UICONTROL プロジェクト]** ドロップダウンリストを使用して、 **[!UICONTROL プロジェクトを選択]** ダイアログボックス
+1. の **[!UICONTROL ダッシュボード]** ページの右 **[!UICONTROL Google Cloud Platform]**&#x200B;を選択し、 **[!UICONTROL プロジェクト]** ドロップダウンリストを使用して、 **[!UICONTROL プロジェクトを選択]** ダイアログボックス
 1. 内 **[!UICONTROL プロジェクトを選択]** ダイアログボックスで、次を選択します。 **[!UICONTROL 新規プロジェクト]**.
 1. 内 **[!UICONTROL 新規プロジェクト]** ダイアログボックス、 **[!UICONTROL プロジェクト名]** 「 」フィールドに、新しいプロジェクトの名前を入力します。
 
@@ -464,8 +464,8 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. この API を使用するには、資格情報が必要です。必要に応じて、API とサービスページの左側で、を選択します。 **[!UICONTROL 資格情報]**.
-1. 認証情報ページの上部付近にある、「 」を選択します。 **[!UICONTROL 資格情報を作成]**&#x200B;を選択し、「 **[!UICONTROL OAuth クライアント ID]**.
+1. この API を使用するには、資格情報が必要です。必要に応じて、 **[!UICONTROL API とサービス]** ページ、選択 **[!UICONTROL 資格情報]**.
+1. の **[!UICONTROL 資格情報]** ページ、上部付近で、「 」を選択します。 **[!UICONTROL 資格情報を作成]**&#x200B;を選択し、「 **[!UICONTROL OAuth クライアント ID]**.
 1. の **[!UICONTROL OAuth クライアント ID を作成]** ページの **[!UICONTROL アプリケーションタイプ]** ドロップダウンリストで、「 **[!UICONTROL Web アプリケーション]**.
 
    ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -485,9 +485,9 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
    例：`https://1a2b3c.mycompany.com:4321`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >上記の例のパスは仮定的で、説明のためにのみ使用します。
+   >上記の URI パスの例は、仮定的で、説明の目的でのみ使用します。
 
 1. 以下 **[!UICONTROL 承認済みのリダイレクト URI]** 」で、「 ADD URI 」を選択します。
 1. 内 **[!UICONTROL URI]** テキストフィールドに、次のパスに従って、パスに独自のドメインとポート番号を入力し、 **[!UICONTROL 入力]** リストにパスを追加するには、次の手順に従います。
@@ -496,14 +496,14 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
    例：`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >上記の例のパスは仮定的で、説明のためにのみ使用します。
+   >上記の URI パスの例は、仮定的で、説明の目的でのみ使用します。
 
 1. の下部付近 **[!UICONTROL OAuth クライアント ID を作成]** ページ、選択 **[!UICONTROL 作成]**.
 1. の **[!UICONTROL OAuth クライアントが作成されました]** ダイアログボックスで、次の操作を行います。
 
-   * （オプション）クライアント ID とクライアント秘密鍵をコピーして保存します。
+   * （オプション） **[!UICONTROL クライアント ID]** および **[!UICONTROL クライアント秘密鍵]** フィールドに値を入力し、保存します。
    * 選択 **[!UICONTROL JSON をダウンロード]**&#x200B;をクリックし、JSON ファイルを保存します。
 
    後でAdobe Experience ManagerでYouTubeを設定する際に、このダウンロードした JSON ファイルが必要になります。
