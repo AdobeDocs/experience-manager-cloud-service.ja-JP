@@ -1,10 +1,10 @@
 ---
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 96%
+source-wordcount: '1069'
+ht-degree: 77%
 
 ---
 
@@ -125,6 +125,44 @@ ht-degree: 96%
 1. 移行セットを選択し、「**プロパティ**」をクリックして、移行セットのプロパティを表示または編集します。プロパティの編集中は、「**移行セット名**」や「**サービス URL**」を変更できません。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### 移行セットのサイズとディスク容量の決定 {#migration-set-size}
+
+移行セットを作成した後、抽出プロセスを開始する前に、移行セットに対してサイズチェックを実行することを強くお勧めします。
+移行セットでサイズチェックを実行すると、次の操作を実行できます。
+* に十分なディスク容量があるかどうかを確認します。 `crx-quickstart` サブディレクトリの抽出が正常に完了しました。
+* 移行セットのサイズがサポート対象の製品の制限内に収まるかどうかを判断し、コンテンツの取り込みに失敗しないようにします。
+
+サイズチェックを実行するには、次の手順に従います。
+
+1. 移行セットを選択し、「 」をクリックします。 **サイズを確認**.
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. これにより、 **サイズを確認** ダイアログ。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. クリック **サイズを確認** をクリックしてプロセスを開始します。 移行セットのリストビューに戻り、次のことを示すメッセージが表示されます。 **サイズを確認** が実行中です。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. 1 回 **サイズを確認** 処理が完了した場合、ステータスは次のいずれかに変わります： **完了**. 同じ移行セットを選択し、「 」をクリックします。 **サイズを確認** をクリックして結果を表示します。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   以下は **サイズを確認** の結果は警告を含みません。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. この **サイズを確認** 結果は、ディスク容量が不足しているか、移行セットが製品の制限を超えているかを示します。 **警告** ステータスが表示されます。
+
+![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+以下は **サイズを確認** の結果と警告
+
+![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## 次のステップ {#whats-next}
