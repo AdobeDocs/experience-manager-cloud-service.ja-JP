@@ -4,9 +4,9 @@ description: ビデオのエンコーディング、YouTubeへのビデオの公
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
+source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
 workflow-type: tm+mt
-source-wordcount: '9332'
+source-wordcount: '9346'
 ht-degree: 93%
 
 ---
@@ -436,6 +436,8 @@ Google ではユーザーインターフェイスが定期的に変更されま�
 
 1. Google アカウントを作成します。
    [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+
+   既にGoogleアカウントをお持ちの場合は、次の手順にスキップできます。
 
 1. [https://cloud.google.com/](https://cloud.google.com/) にアクセスします。
 1. Google Cloud ページの右上隅付近にある、「**[!UICONTROL コンソール]**」を選択します。
