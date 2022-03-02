@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 92cb864f71b5e98bf98519a3f5be6469802be0e4
+source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 40%
@@ -177,7 +177,7 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 >
 > カテゴリ別に特定の製品ページを選択するには、 [CIF コアコンポーネント 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) 以降
 
-### デップリンク {#specific-pages-deep-linking}
+### ディープリンク {#specific-pages-deep-linking}
 
 この `UrlProvider` は、オーサー層インスタンス上の特定のカテゴリおよび製品ページへのディープリンクを生成するように事前に設定されています。 これは、編集者がプレビューモードでサイトを閲覧し、特定の製品ページまたはカテゴリーページに移動したあと編集モードに切り替えてページを編集する場合に便利な機能です。
 
@@ -199,7 +199,7 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 URL の書き換えは、AEM Dispatcher HTTP サーバーを `mod_rewrite` モジュール。 [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype)には、生成されたサイズに対する基本的な[書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)が含まれている参照用 AEM Dispatcher 設定が用意されています。
 
-## ベストプラクティス {#best-practices}
+## ベストプラクティス  {#best-practices}
 
 ### 最適な URL 形式を選択 {#choose-url-format}
 
