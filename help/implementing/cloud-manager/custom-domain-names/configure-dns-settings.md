@@ -2,8 +2,8 @@
 title: 'DNS 設定の指定 '
 description: DNS 設定の指定
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 0b24f8c8b88f476a0d1073e873e46441b1b8b821
-workflow-type: ht
+source-git-commit: 016954bc712a135886a6031deba05d92e7d5099c
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -26,10 +26,10 @@ ht-degree: 100%
 | ドメイン検証 | TXT レコードを追加 | 顧客 | [TXT レコードの追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=ja) |
 | ドメイン検証ステータスを確認 |  | 顧客 |  |
 |  | ステータス：ドメイン検証エラー | 顧客 | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=ja) |
-|  | ステータス：検証済み、デプロイメントに失敗 | アドビ担当者に問い合わせ | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=ja) |
+|  | ステータス：検証済み、デプロイメントに失敗 | アドビ担当者に問い合わせ | [ドメイン名ステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
 | CNAME または APEX レコードを追加して、AEM as a Cloud Service を指す DNS レコードを追加 | DNS 設定を指定 | 顧客 | [DNS 設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=ja) |
 | DNS レコードのステータスを確認 |  | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=ja) |
-|  | ステータス：DNS ステータスが検出されない | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=ja) |
+|  | ステータス：DNS ステータスが検出されない | 顧客 | [DNS レコードのステータスの確認](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
 |  | ステータス：DNS が正しく解決されない | 顧客 |  |
 
 

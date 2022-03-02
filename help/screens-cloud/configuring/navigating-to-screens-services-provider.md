@@ -2,10 +2,10 @@
 title: Screens サービスプロバイダーへの移動
 description: ここでは、Screens サービスプロバイダーへの移動方法について説明します。
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '220'
-ht-degree: 100%
+source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 82%
 
 ---
 
@@ -31,11 +31,22 @@ Screens サービスプロバイダーをセットアップするには、次の
    >[!CAUTION]
    >複数の組織にアクセスできる場合は、正しい組織にログインしていることを確認してください。組織を変更するには、画面の右上隅にある組織名をクリックし、アクセスする必要がある組織を選択します。
 
-1. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
+2. 「プロジェクト」（左上隅）の横の歯車アイコンをクリックします
+
+   ![画像](/help/screens-cloud/assets/configure/configure-screens0.png)
+
+3. [ 設定を編集 ] ダイアログボックスに次の詳細を入力します。
+o **ベース URL** - AEM 公開 URL o **作成者 URL** - AEM オーサー URL または **チャネルプロバイダーのパス** - /screens/channels.json
+
+   ![画像](/help/screens-cloud/assets/configure/configure-screens4.png)
+
+4. クリック **保存** Screens コンテンツプロバイダーに接続するには
+
+5. 左側のナビゲーションバーから「**チャネル**」を選択し、「**コンテンツプロバイダーで開く**」をクリックします。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-1. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
+6. Screens コンテンツプロバイダーが別のタブで開き、コンテンツを作成できるようになります。
 
    ![画像](/help/screens-cloud/assets/configure/configure-screens2.png)
 
