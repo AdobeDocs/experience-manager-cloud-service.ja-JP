@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 86b1677b79f64c2d4ddfa260f17021da068283c9
 workflow-type: tm+mt
 source-wordcount: '3434'
 ht-degree: 89%
@@ -33,7 +33,7 @@ ht-degree: 89%
    + リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2021 {#2021}
-         + [ 2021.11.0 のリリースノート](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
+         + [リリースノート（2021.11.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
          + [リリースノート（2021.9.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-9-0.md)
          + [リリースノート（2021.8.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-8-0.md)
@@ -104,8 +104,8 @@ ht-degree: 89%
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + 移行ツールのリリースノート {#release-notes-migration-tools}
       + [最新のリリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [リリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 年 {#2021}
-         + [ 2022.1.0 のリリースノート](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
@@ -607,7 +607,7 @@ ht-degree: 89%
       + Cloud Manager のリリースノート {#release-notes-cloud-manager}
          + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 年 {#2022}
-            + [ 2022.1.0 のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+            + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 年 {#2021}
             + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
             + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
