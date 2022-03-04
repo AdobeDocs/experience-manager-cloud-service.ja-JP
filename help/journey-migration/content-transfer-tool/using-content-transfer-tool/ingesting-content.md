@@ -1,17 +1,17 @@
 ---
 title: Target へのコンテンツの取り込み
 description: Target へのコンテンツの取り込み
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: 80e148aa5533963bcd6354e2117a4619bcf5b27f
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 70%
+source-wordcount: '527'
+ht-degree: 97%
 
 ---
 
 
 # Target へのコンテンツの取り込み {#ingesting-content}
 
-## コンテンツ転送ツールでの取り込みプロセス {#ingestion-process}
+## コンテンツ転送ツールの取り込みプロセス {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
@@ -21,13 +21,13 @@ ht-degree: 70%
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 >[!NOTE]
->Amazon S3 または Azure データストアをデータストアのタイプとして使用する場合は、オプションの事前コピーステップを実行して、取得段階を大幅に迅速化できます。詳しくは、[AzCopy を使用した取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#ingesting-azcopy)を参照してください。
+>オプションのプリコピー手順を実行して、取り込み段階を大幅に高速化できます。 詳しくは、[AzCopy を使用した取得](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#ingesting-azcopy)を参照してください。
 
-1. 移行セットの選択元 **コンテンツ転送** ページを開き、「 **取り込み** をクリックして取り込みを開始します。
+1. **コンテンツ転送**&#x200B;ページで移行セットを選択し、「**取得**」をクリックして取り込みを開始します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。コンテンツは、一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 コンテンツの取り込み先のインスタンスを選択します。 「**取得**」をクリックして、取得段階を完了します。
+1. **移行セットのインジェスト**&#x200B;ダイアログボックスが表示されます。コンテンツは、オーサーインスタンスかパブリッシュインスタンスのどちらかに一度に取り込むことができます。コンテンツの取り込み先のインスタンスを選択します。「**取得**」をクリックして、取得段階を完了します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
 
@@ -39,13 +39,13 @@ ht-degree: 70%
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-03.png)
 
-   さらに、 **カスタマーケア** チケットをログに記録するには、次の図を参照してください。
+   さらに、「**カスタマーケア**」をクリックしてチケットを発行します（下図を参照）。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
 
-   詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations)も参照してください。
+   詳しくは、[コンテンツ転送ツール使用時の重要な考慮事項](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja#important-considerations)も参照してください。
 
-1. 取り込みが完了すると、 **オーサーの取り込み** 更新 **完了**.
+1. 取り込みが完了すると、「**オーサーインジェスト**」フィールドのステータスが&#x200B;**完了**&#x200B;に更新されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-05.png)
 
@@ -58,7 +58,7 @@ ht-degree: 70%
 
 インジェストプロセスが完了したら、追加インジェスト方式を使用して差分コンテンツを転送できます。それには、次の手順に従います。
 
-1. 次に移動： **コンテンツ転送** ウィザードを開き、追加取得の実行対象となる移行セットを選択します。 「**取り込み**」をクリックして、追加インジェストを開始します。
+1. **コンテンツ転送**&#x200B;ウィザードに移動し、追加取り込みの実行対象となる移行セットを選択します。「**取り込み**」をクリックして、追加インジェストを開始します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/topup-ingest1.png)
 
@@ -70,6 +70,6 @@ ht-degree: 70%
    >[!IMPORTANT]
    >以前の取得アクティビティから既存のコンテンツを削除しないようにするには、「**取得前にクラウドインスタンス上の既存のコンテンツを消去**」オプションを無効にする必要があります。さらに、「**カスタマーケア**」をクリックしてチケットを発行します（上図を参照）。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-コンテンツ転送ツールで Target へのコンテンツの取り込みについて学習したら、各手順（抽出と取り込み）の完了時にログを表示し、エラーを探すことができます。 詳しくは、 [移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en) を参照してください。
+コンテンツ転送ツールで Target にコンテンツを取り込む方法を理解したら、各ステップ（抽出と取り込み）の完了時にログを表示し、エラーを探すことができます。詳しくは、[移行セットのログの表示](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=ja)を参照してください。
