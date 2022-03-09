@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b3b91da354d2c805ca89063cbd6d2d9766f1c612
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '3436'
-ht-degree: 89%
+source-wordcount: '3419'
+ht-degree: 88%
 
 ---
 
@@ -641,17 +641,17 @@ ht-degree: 89%
          + [プログラムの編集](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [環境の休止](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
       + AEM アプリケーションプロジェクトの作成 {#create-application-project}
-         + [ウィザードの使用](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [プロジェクトの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [ビルド環境について](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+         + [プロジェクト作成ウィザード](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+         + [プロジェクトのセットアップ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+         + [ビルド環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Cloud Manager のリポジトリー](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
          + [リポジトリーへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Git と Adobe Cloud Manager の統合](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [複数ソース Git リポジトリーの操作](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [AEM as a Cloud Service 向けのエンタープライズチーム開発のセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+         + [Cloud Manager での git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+         + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+         + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
       + [環境変数](/help/implementing/cloud-manager/environment-variables.md)
       + Cloud Manager CI／CD パイプライン {#cicd-pipelines}
          + [はじめに](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
@@ -668,8 +668,8 @@ ht-degree: 89%
          + [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
       + [ログへのアクセスと管理](/help/implementing/cloud-manager/manage-logs.md)
       + [SLA レポート](/help/implementing/cloud-manager/sla-reporting.md)
-      + [New Relic へのユーザーアクセス](/help/implementing/cloud-manager/user-access-new-relic.md)
-      + [通知について](/help/implementing/cloud-manager/notifications.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [通知](/help/implementing/cloud-manager/notifications.md)
       + SSL 証明書の管理 {#manage-ssl-certificates}
          + [はじめに](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [SSL 証明書の取得](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md)

@@ -1,45 +1,42 @@
 ---
 title: リポジトリーへのアクセス
-seo-title: Accessing Repositories
-description: このページでは、Git リポジトリーにアクセスして管理する方法について説明します。
-seo-description: Follow this page to learn how to access and manage your Git repository.
+description: Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
-source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: ht
-source-wordcount: '206'
-ht-degree: 100%
+source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 8%
 
 ---
 
 # リポジトリーへのアクセス {#accessing-repos}
 
-Cloud Manager UI のセルフサービス Git アカウント管理を使用して、Git リポジトリーにアクセスし、管理できます。
+Cloud Manager のセルフサービス Git アカウント管理を使用して、Git リポジトリにアクセスし、管理する方法について説明します。
 
-## セルフサービスリポジトリーアカウント管理の使用 {#self-service-repos}
+## セルフ・サービス・リポジトリ・アカウント管理の使用 {#self-service-repos}
 
-Cloud Manager UI から利用できる「**リポジトリー情報にアクセス**」ボタンを使用します。このボタンはパイプラインカードで最も目立つ場所にあります。
+Cloud Manager では、 **リポジトリ情報にアクセス** ボタンがパイプラインカード上で目立つ場所に表示されます。
 
-1. **プログラムの概要**&#x200B;ページから&#x200B;**パイプライン**&#x200B;カードに移動します。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-1. Git リポジトリーにアクセスして管理するための「**リポジトリー情報にアクセス**」オプションが表示されます。
+1. に移動します。 **パイプライン** カードから **プログラムの概要** ページで **リポジトリ情報にアクセス** ボタンをクリックして、git リポジトリにアクセスして管理します。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![環境カードの「リポジトリ情報」ボタンにアクセス](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-   さらに、「**実稼動以外**」パイプラインタブを選択すると、そこにも「**リポジトリー情報にアクセス**」オプションが表示されます。
+1. をクリックします。 **リポジトリ情報を表示** ボタンをクリックして、表示するダイアログを開きます。
 
-   ![](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
-
-   >[!NOTE]
-   >「**リポジトリー情報にアクセス**」オプションは、デベロッパーまたはデプロイメントマネージャーの役割を持つユーザーに表示されます。このボタンをクリックすると、Cloud Manager Git リポジトリーへの URL およびユーザー名とパスワードを確認できるダイアログが開きます。
+   * Cloud Manager の Git リポジトリの URL です。
+   * Git のユーザー名。
+   * git パスワード。この値は、 **パスワードを生成** 」ボタンがクリックされたときに表示されます。
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-   Cloud Manager で Git を管理するうえで重要な考慮事項は次のとおりです。
+ユーザーは、これらの資格情報を使用して、リポジトリのローカルコピーを複製し、そのローカルリポジトリで変更を加えることができます。準備が整ったら、Cloud Manager のリモートコードリポジトリにコードの変更をコミットして戻すことができます。
 
-   * **URL**：リポジトリーの URL
-   * **ユーザー名**：ユーザー名
-   * **パスワード**：「**パスワードを生成**」ボタンをクリックしたときに表示される値。
+この **リポジトリ情報にアクセス** オプションは **非実稼動** の「パイプライン」タブ **パイプライン** カード。
 
+![非実稼動タブの「リポジトリ情報」ボタンにアクセス](/help/implementing/cloud-manager/assets/repos/access-repo-nonprod.png)
 
-      >[!NOTE]
-      >ユーザーは、自分のコードのコピーをチェックアウトし、ローカルコードリポジトリーで変更を行うことができます。準備ができたら、ユーザーはコードの変更内容を Cloud Manager のリモートコードリポジトリーにコミットして戻すことができます。
+>[!NOTE]
+>
+>この **リポジトリ情報にアクセス** オプションは、 **開発者** または **デプロイメントマネージャー** 役割。

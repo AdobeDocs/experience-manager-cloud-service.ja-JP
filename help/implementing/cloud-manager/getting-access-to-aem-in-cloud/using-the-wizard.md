@@ -1,34 +1,49 @@
 ---
-title: ウィザードの使用
-description: ウィザードの使用 - Cloud Services
+title: プロジェクト作成ウィザード
+description: 実稼働プログラムを作成した後、プロジェクトをすばやく設定するのに役立つプロジェクト作成ウィザードについて説明します。
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '146'
-ht-degree: 100%
+source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 4%
 
 ---
 
-# ウィザードの使用 {#using-wizard-to-create-an-aem-application-project}
+# プロジェクト作成ウィザード {#project-creation-wizard}
 
-新規ユーザーが作業に着手しやすくなるように、Cloud Manager では、最小限の AEM プロジェクトを出発点として作成できるようになりました。このプロセスは、[**AEM プロジェクトアーキタイプ**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)に基づいておこなわれます。
+実稼働用プログラムを作成した後、Cloud Manager には、 [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 早く始めるために
+
+ウィザードを使用して Cloud Manager でAEMアプリケーションプロジェクトを作成するには、次の手順に従います。
+
+1. ドキュメント内の手順に従って、実稼働用プログラムを作成します [実稼働プログラムの作成](creating-production-programs.md)
+
+1. プログラムの設定が完了したら、 **概要** プログラムの画面と **ブランチとプロジェクトを作成** コールトゥアクションカードを上部に表示します。
+
+   ![ウィザードのコールトゥアクションケア](assets/create-wizard1.png)
+
+1. クリック **作成** ウィザードを起動し、プロジェクトの **タイトル** および **新しいブランチ名** 内 **ブランチとプロジェクトの作成** ウィンドウ
+
+   ![ブランチとプロジェクトの作成](assets/create-wizard2.png)
+
+1. 必要に応じて、ディバイダをクリックして、プロジェクトの追加のパラメータを表示します。 デフォルト値はAEMプロジェクトアーキタイプで提供され、通常は変更する必要はありません。
+
+   ![追加のプロジェクトパラメーター](assets/create-wizard5.png)
+
+1. クリック **作成** をクリックして、プロジェクト作成プロセスを開始します。
 
 
-Cloud Manager でウィザードを使用して AEM アプリケーションプロジェクトを作成するには、次の手順に従います。
+A **プロジェクトを作成中** カードが **ブランチとプロジェクトを作成** コールトゥアクションカードを **プログラムの概要** 画面
 
-1. Cloud Manager にログインし、基本的なプログラム設定が完了すると、リポジトリーが空の場合、**概要**&#x200B;画面に特別なコールトゥアクションカードが表示されます。
+![プロジェクト作成中](assets/create-wizard3.png)
 
-   ![](assets/create-wizard1.png)
+プログラムの作成が完了したら、 **環境を追加** カードが **プロジェクトを作成中** の一番上にあるカード **プログラムの概要** 画面
 
-1. 「**作成**」をクリックして、**ブランチとプロジェクトの作成**&#x200B;画面に移動します。
+![環境を追加](assets/create-wizard4.png)
 
-   ![](assets/create-wizard2.png)
+これで、AEMアーキタイプに基づくAEMプロジェクトが Git リポジトリに追加され、独自のプロジェクトの開発の基礎となります。 次に、プロジェクトコードをデプロイできる環境を作成できます。
 
-1. *プログラムの概要*&#x200B;画面に、「**プロジェクト作成中**」タイルが表示されます。
+ドキュメントを参照してください [環境の管理](/help/implementing/cloud-manager/manage-environments.md) 環境を追加または管理する方法について説明します。
 
-   ![](assets/create-wizard3.png)
-
-1. プログラムの作成が完了すると、「**環境を追加**」タイルが「*プログラムの概要*」ページに表示されます。
-   ![](assets/create-wizard4.png)
-
-   環境を追加または管理する方法については、「[環境の管理](/help/implementing/cloud-manager/manage-environments.md)」を参照してください。
+>[!NOTE]
+>
+>このウィザードは、実稼働プログラムでのみ使用できます。 理由： [サンドボックスプログラム](introduction-sandbox-programs.md#auto-creation) プロジェクトの自動作成を含めるので、ウィザードは不要です。

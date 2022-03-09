@@ -1,61 +1,62 @@
 ---
-title: ログの管理 - Cloud Services
-description: ログの管理 - Cloud Services
+title: ログへのアクセスと管理
+description: ログにアクセスして管理し、AEM as a Cloud Serviceでの開発プロセスを支援する方法について説明します。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 26%
 
 ---
 
+
 # ログへのアクセスと管理 {#manage-logs}
 
-ユーザーは、**概要**&#x200B;ページまたは環境の詳細ページの&#x200B;**環境**&#x200B;カードを使用して、選択した環境で使用可能なログファイルのリストにアクセスできます。
+ログにアクセスして管理し、AEM as a Cloud Serviceでの開発プロセスを支援する方法について説明します。
+
+選択した環境で使用可能なログファイルのリストにアクセスするには、 **環境** カード **概要** ページまたは環境の詳細ページに表示されます。
 
 ## ログのダウンロード {#download-logs}
 
 ログをダウンロードするには、次の手順に従います。
 
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
+
 1. **概要**&#x200B;ページの&#x200B;**環境**&#x200B;カードに移動します。
 
-1. **...** メニューから「**ログをダウンロード**」を選択します。
+1. 選択 **ログをダウンロード** を選択します。
 
-   ![](assets/download-logs1.png)
+   ![ログメニュー項目をダウンロード](assets/download-logs1.png)
 
-   *または*
+1. 内 **ログをダウンロード** ダイアログで、適切な **サービス** ドロップダウンメニューから
 
-   環境の詳細ページで、次の操作を行います。
+   ![ログをダウンロードダイアログ](assets/download-preview.png)
 
-   ![](assets/download-logs.png)
+1. サービスを選択したら、取得するログの横にあるダウンロードアイコンをクリックします。
 
-   >[!NOTE]
-   >開く場所によらず、同じダイアログが表示され、個々のログファイルをダウンロードできます。
+また、 **環境** ページ。
 
-1. **サービス**&#x200B;ドロップダウンメニューから、「**プレビュー**」や「**Dispatcher をプレビュー**」などのオプションを選択し、ダウンロードアイコンをクリックします。
+![環境画面からのログ](assets/download-logs.png)
 
-   ![](assets/download-preview.png)
+## API を介したログ {#logs-through-api}
 
+UI を使用したログのダウンロードに加えて、API とコマンドラインインターフェイスを通じてログを入手できます。
 
-## API を介したログの入手 {#logs-through-api}
+特定の環境のログファイルをダウンロードする場合のコマンドは次のようになります。
 
-UI でログをダウンロードする以外に、API やコマンドラインインターフェイスを介してログを入手することもできます。
-
-例えば、特定の環境のログファイルをダウンロードする場合は、次のようなコマンドになります。
-
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-次のコマンドを使用すると、ログの追跡が可能になります。
+コマンドラインインターフェイスを使用して、テールログを作成することもできます。
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-環境 ID（この例の場合は 1884）と使用可能なサービス名またはログ名のオプションを取得するには、次のコマンドを使用します。
+環境 ID（この例では 1884）と使用可能なサービスまたはログ名のオプションを取得するには、次のコマンドを使用します。
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->**ログのダウンロードは** UI でも API でも可能ですが、**ログの追跡**&#x200B;は API または CLI でのみ可能です。
 
 ### その他のリソース {#resources}
 
