@@ -4,7 +4,7 @@ description: Dynamic Media でインタラクティブビデオとショッパ�
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5966'
 ht-degree: 99%
@@ -92,7 +92,6 @@ There was a link here that showed the video frame of an interactive video and wh
 >
 >* クイックビューをトリガーして、ビデオにインタラクティブ機能を追加する。
 >* e コマースソリューション（IBM® WebSphere® Commerce、Elastic Path、SAP Hybris、Intershop など）から Adobe Experience Manager に製品データを取り出すために、Adobe Experience Manager の実装が e コマース統合フレームワークを使用して&#x200B;*いない*。<!-- See [eCommerce concepts in Experience Manager Assets](/help/sites-administering/concepts.md).-->
-
 >
 >Adobe Experience Manager の実装で Adobe Experience Manager eCommerce を使用している場合は、このタスクをスキップして次のタスクに進みます。
 
@@ -528,7 +527,7 @@ Adobe Experience Manager Sites のユーザーである場合は、インタラ�
 
 なお、次のビデオ埋め込みコードが標準で用意されています。
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7video_div.s7videoviewer{
    width:100%;
@@ -589,7 +588,7 @@ Adobe Experience Manager Sites のユーザーである場合は、インタラ�
 
 Adobe Experience Manager によって返される埋め込みコードには、そのまま使用可能なイベントハンドラーが既に含まれています。次のハイライトされたコードスニペットのように、コメントアウトされています。
 
-```xml
+```js {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -673,13 +672,13 @@ Adobe Experience Manager によって返される埋め込みコードには、�
 
 これらの手順をデモ Web サイトに適用してインタラクティブビデオをクイックビューのコードに統合する方法を確認できます。このトピックでは先ほど、クイックビュー URL の構造を次のように識別しました。
 
-```xml
+```xml {.line-numbers}
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
 この URL は `quickViewActivate` ハンドラー内で簡単に再構成できます。次のように、ビューアのコードを介してハンドラーに渡される `categoryId` オブジェクト内の `sku` フィールドと `inData` フィールドを使用します。
 
-```xml
+```js {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -687,13 +686,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 このデモ Web サイトは、単純な `loadQuickView()` 関数呼び出しを使用してクイックビューダイアログボックスを起動しています。この関数は、1 つの引数（クイックビューデータの URL）のみを受け取ります。したがって、インタラクティブビデオを統合するための最後の手順は、`quickViewActivate` ハンドラーに次のコード行を追加することです。
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 最後に、クイックビューダイアログボックスがビューアのコンテナ要素にアタッチされていることを確認します。デフォルトの埋め込みコードには、この機能を実現するためのサンプル手順が含まれています。ビューアのコンテナ要素への参照を取得するには、次のコード行を使用できます。
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 ```
@@ -704,7 +703,7 @@ var inner_container = document.getElementById(sdkContainerId);
 
 サンプル Web サイトの場合、クイックビューモーダルダイアログボックスは `DIV` として実装され、クイックビューモーダル ID がドキュメント `BODY` に直接アタッチされています。このため、このダイアログをビューアのコンテナに移動するコードは、次のとおり単純です。
 
-```xml
+```js {.line-numbers}
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
 var inner_container = document.getElementById(sdkContainerId);
 inner_container.appendChild(document.getElementById("quickview-modal"));
@@ -712,7 +711,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 完全なソースコードは以下のようになります。
 
-```xml
+```javascript {.line-numbers}
 <style type="text/css">
  #s7interactivevideo_div.s7interactivevideoviewer{
    width:100%;
@@ -760,4 +759,3 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 ## クイックビューを使用したカスタムポップアップウィンドウの作成 {#using-quickviews-to-create-custom-pop-ups}
 
 [クイックビューを使用したカスタムポップアップウィンドウの作成](/help/assets/dynamic-media/custom-pop-ups.md)を参照してください。
--->

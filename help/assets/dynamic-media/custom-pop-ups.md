@@ -1,12 +1,12 @@
 ---
 title: クイックビューを使用したカスタムポップアップの作成
 description: 「e コマースエクスペリエンスでデフォルトのクイックビューが使用され、ポップアップに購入を促す商品情報が表示される方法を説明します。このようなポップアップウィンドウにカスタムコンテンツが表示されるように設定できます。」
-feature: インタラクティブ画像、インタラクティブビデオ、カルーセルバナー
+feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+workflow-type: tm+mt
+source-wordcount: '1003'
 ht-degree: 100%
 
 ---
@@ -87,7 +87,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    **上記のサンプル埋め込みコードの例を使用すると、以下のようなコードになります。**
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
@@ -117,7 +117,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    以下のように、クイックビューからのその他の変数もマッピングします。
 
-   ```
+   ```xml {.line-numbers}
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
@@ -144,7 +144,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
       例えば、以下の場合は、ブラウザーのコンソールに SKU の値が書き込まれます。
 
-   ```xml
+   ```xml {.line-numbers}
    function loadQuickView(sku){
        console.log ("quickview sku value is " + sku);
    }
@@ -159,7 +159,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 1. これで、関数を使用してクイックビューでシンプルなポップアップを起動できるようになりました。以下の例では、ポップアップに `DIV` を使用しています。
 1. ポップアップの `DIV` を以下のようなスタイルにします。必要に応じて、スタイル設定を追加します。
 
-   ```xml
+   ```xml {.line-numbers}
    <style type="text/css">
        #quickview_div{
            position: absolute;
@@ -173,7 +173,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    要素の 1 つは、ユーザーがクイックビューを起動すると SKU 値で更新される ID に設定されます。この例にはこれに加え、ポップアップを表示後に再び隠すための単純なボタンも含まれています。
 
-   ```xml
+   ```xml {.line-numbers}
    <div id="quickview_div" >
        <table>
            <tr><td><input id="btnClosePopup" type="button" value="Close"        onclick='document.getElementById("quickview_div").style.display="none"' /><br /></td></tr>
@@ -184,7 +184,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
 1. ポップアップウィンドウの SKU 値を更新するには、関数を追加します。手順 5 で作成した単純な関数を以下に置き換えて、ポップアップウィンドウを表示します。
 
-   ```xml
+   ```xml {.line-numbers}
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
@@ -202,7 +202,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
    `initComplete` ハンドラーは、ビューアの初期化後に呼び出されます。
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
@@ -213,7 +213,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
 1. 前の手順で言及したように、ビューアにポップアップをアタッチするには、以下のコードを使用します。
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() {
        var popup = document.getElementById('quickview_div');
        popup.parentNode.removeChild(popup);
@@ -232,7 +232,7 @@ e コマースエクスペリエンスではデフォルトのクイックビュ
 
 1. setHandlers コード全体は以下のようになります（インタラクティブビデオビューアを使用しています）。
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;

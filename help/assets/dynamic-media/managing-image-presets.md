@@ -1,12 +1,12 @@
 ---
 title: 画像プリセットの管理
 description: 画像プリセットと、画像プリセットを作成、変更および管理する方法を説明します。
-feature: 画像プリセット、ビューア、レンディション
+feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
-source-wordcount: '3633'
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+workflow-type: tm+mt
+source-wordcount: '3629'
 ht-degree: 100%
 
 ---
@@ -145,7 +145,6 @@ Dynamic Media 統合では、以下のスクリプトが使用されます。
 >
 >* ビデオのサムネールサイズは「**[!UICONTROL 引数]**」の下にある「**[!UICONTROL 処理]**」タブの **[!UICONTROL FFmpeg サムネール]**&#x200B;のステップで設定します。
 >
-
 
 
 **画像のサムネールサイズを設定するには**：:
@@ -344,7 +343,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=ja) - それぞれの色成分を、画像の効果が反対になるように逆転させます。
 
-   ```xml
+   ```xml {.line-numbers}
    &op_invert=1
    ```
 
@@ -352,7 +351,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=ja) - 画像にぼかしフィルターを適用します。
 
-   ```xml
+   ```xml {.line-numbers}
    &op_blur=7
    ```
 
@@ -360,7 +359,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * コマンドの組み合わせ - op_blur と op-invert
 
-   ```xml
+   ```xml {.line-numbers}
    &op_invert=1&op_blur=7
    ```
 
@@ -368,7 +367,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=ja) - 明るさを増減させます。
 
-   ```xml
+   ```xml {.line-numbers}
    &op_brightness=58
    ```
 
@@ -376,7 +375,7 @@ INDD 形式の取り込みをサポートし、これらのファイル形式の
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=ja) - 画像の不透明度を調節します。前景の不透明度を減らすことができます。
 
-   ```xml
+   ```xml {.line-numbers}
    opac=29
    ```
 

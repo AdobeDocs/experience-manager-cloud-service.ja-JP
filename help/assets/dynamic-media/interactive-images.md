@@ -1,12 +1,12 @@
 ---
 title: インタラクティブ画像
 description: Dynamic Media でのインタラクティブ画像の使用方法について説明します。
-feature: インタラクティブ画像
+feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: ht
-source-wordcount: '4178'
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+workflow-type: tm+mt
+source-wordcount: '4176'
 ht-degree: 100%
 
 ---
@@ -137,7 +137,7 @@ Mac の場合、Command + Option + I キーを押してデベロッパーツー�
 
 **例**
 
-この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ja)に適用できます。
+この 3 つの例で使用されているものと同じアプローチを次の[デモ Web ページ](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)に適用できます。
 
 このデモ Web ページにはいくつかの製品サムネールがあり、それぞれのサムネールには、「See More」というラベルの付いたクイックビューボタンが用意されています。Web ブラウザーのデバッグツールをアクティブにしたまま各ボタンを選択し、記録されたクイックビュー URL に注目してください。そのページの 4 つの製品クイックビューをすべてアクティベートすると、バックエンドに対して次のリストのクイックビューリクエストが作成されます。
 
@@ -224,12 +224,11 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
 >[!NOTE]
 >
 >インタラクティブ画像またはカルーセルバナー内の画像にホットスポットを追加すると、ホットスポット情報は同じメタデータの場所に保存されます。この場所は、インタラクティブ画像かカルーセルバナーかに関係なく、画像の場所に対する相対的な位置になります。つまり、どちらのビューアでも、同じ画像を、定義済みのホットスポットデータとともに簡単に再使用することができます。
->ただし、カルーセルバナーでは、ホットスポットを含む画像のイメージマップをサポートしていますが、インタラクティブ画像ではサポートしていません。同じ画像を使用するインタラクティブ画像またはカルーセルバナーを作成する場合には、このことに注意してください。同じ画像の別々のコピーを使用してインタラクティブ画像とカルーセルバナーを作成することもできます。
->[カルーセルバナー](/help/assets/dynamic-media/carousel-banners.md)も参照してください。
+ただし、カルーセルバナーでは、ホットスポットを含む画像のイメージマップをサポートしていますが、インタラクティブ画像ではサポートしていません。同じ画像を使用するインタラクティブ画像またはカルーセルバナーを作成する場合には、このことに注意してください。同じ画像の別々のコピーを使用してインタラクティブ画像とカルーセルバナーを作成することもできます。
+[カルーセルバナー](/help/assets/dynamic-media/carousel-banners.md)も参照してください。
 
 >[!NOTE]
->
->ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
+ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
 
 **画像バナーにホットスポットを追加するには：:**
 
@@ -278,8 +277,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
       * エクスペリエンスフラグメントがバナーに表示されるときの幅と高さを指定します。
 
          >[!NOTE]
-         >
-         >ビューアをエクスペリエンスフラグメントに埋め込んだ場合、インタラクティブ画像のソーシャルメディア共有ツールはサポートされません。代わりに、ソーシャルメディア共有ツールを備えていないビューアプリセットを使用または作成します。このようなビューアプリセットを使用すると、ビューアをエクスペリエンスフラグメントに正常に埋め込むことができます。
+         ビューアをエクスペリエンスフラグメントに埋め込んだ場合、インタラクティブ画像のソーシャルメディア共有ツールはサポートされません。代わりに、ソーシャルメディア共有ツールを備えていないビューアプリセットを使用または作成します。このようなビューアプリセットを使用すると、ビューアをエクスペリエンスフラグメントに正常に埋め込むことができます。
 
 
 
@@ -293,8 +291,7 @@ Experience Manager Assets に含まれる、デフォルトの標準提供イン
    [インタラクティブ画像の Web サイトへの統合](#integrating-an-interactive-image-with-your-website)を参照してください。
 
    >[!NOTE]
-   >
-   >ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
+   ホットスポットを含むインタラクティブ画像を編集しているときに、画像を切り取ると、ホットスポットは削除されます。
 
 ### （オプション）インタラクティブ画像のプレビュー {#optional-previewing-interactive-images}
 
@@ -327,17 +324,16 @@ Adobe Experience Manager Sites のユーザーは、インタラクティブメ�
 
 **例**
 
-[デモ Web サイトを例として](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=ja)使用する際は、3 人の人物の写真が静的 `IMG` タグであることに注意してください。
+[デモ Web サイトを例として](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)使用する際は、3 人の人物の写真が静的 `IMG` タグであることに注意してください。
 
-```xml
+```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
 統合は、`IMG` タグを削除して Experience Manager Assets からコピーした埋め込みコードに置き換えるだけで簡単にできます。その結果、[3 つの円のホットスポットがあるページにショッパブルインタラクティブ画像が表示されます](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=ja)。
 
 >[!NOTE]
->
->この時点では、デモ Web サイトのショッパブルインタラクティブ画像上のホットスポットは表示用で、まだ既存のクイックビューと統合されていません。
+この時点では、デモ Web サイトのショッパブルインタラクティブ画像上のホットスポットは表示用で、まだ既存のクイックビューと統合されていません。
 
 レスポンシブ環境用のショッパブルインタラクティブ画像に「crop（切り抜き）」を適用するには、パスにインタラクティブ画像設定属性 `ZoomView.iscommand` を含めます。この場合、`ZoomView` コンポーネントが呼び出され、`iscommand` は適用する「crop」画像提供コマンドです。
 
@@ -350,8 +346,7 @@ Adobe Experience Manager Sites のユーザーは、インタラクティブメ�
 ## インタラクティブ画像の既存のクイックビューへの統合 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
->
->このタスクはスタンドアロン Adobe Experience Manager Assets のユーザーにのみ当てはまります。
+このタスクはスタンドアロン Adobe Experience Manager Assets のユーザーにのみ当てはまります。
 
 このプロセスの最後の手順は、インタラクティブ画像を Web サイトの既存のクイックビュー実装に統合することです。すべてのケースで機能する統合のソリューションはありません。クイックビューの実装はそれぞれがユニークで、特定のアプローチが必要となります。したがって、フロントエンドの IT 担当者の支援が役立ちます。
 
@@ -377,7 +372,7 @@ Adobe Experience Manager Sites のユーザーは、インタラクティブメ�
 
 Experience Manager Assets によって返される埋め込みコードには、次のハイライトされたコードスニペットのように、すぐに使用できるイベントハンドラーがコメントアウトされています。
 
-```xml
+```xml {.line-numbers}
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({
             "containerId" : "s7interactiveimage_div",
             "params" : {
@@ -440,13 +435,13 @@ Experience Manager Assets によって返される埋め込みコードには、
 
 これらの手順をデモ Web サイトに適用してショッパブルインタラクティブ画像をクイックビューのコードに統合する方法を確認できます。先ほど、クイックビュー URL の構造を次のように識別しました。
 
-```xml
+```xml {.line-numbers}
 /datafeed/$categoryId$-$SKU$.json
 ```
 
 この URL を `quickViewActivate` ハンドラー内に再構築するには、`categoryId` フィールドと `SKU` フィールドを使用します。これらのフィールドは、ビューアのコードによってハンドラーに渡される `inData` オブジェクトで使用できます。
 
-```xml
+```xml {.line-numbers}
 var sku=inData.sku;
 var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
@@ -454,13 +449,13 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 
 このデモ Web サイトは、単純な `loadQuickView()` 関数呼び出しを使用してクイックビューダイアログボックスを起動しています。この関数は、1 つの引数（クイックビューデータの URL）のみを受け取ります。したがって、ショッパブルインタラクティブ画像を統合するために必要な最後の手順は、`quickViewActivate` ハンドラーに次のコード行を追加することです。
 
-```xml
+```xml {.line-numbers}
 loadQuickView(quickViewUrl);
 ```
 
 次に、ソースコード全体を示します。
 
-```xml
+```xml {.line-numbers}
  var s7interactiveimageviewer = new s7viewers.InteractiveImage({
   "containerId" : "s7interactiveimage_div",
   "params" : {
