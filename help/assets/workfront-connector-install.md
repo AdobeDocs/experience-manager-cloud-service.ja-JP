@@ -3,13 +3,13 @@ title: インストール [!DNL Workfront for Experience Manager enhanced connec
 description: インストール [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8ca25f86a8d0d61b40deaff0af85e56e438efbdc
+exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
+source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 2%
+source-wordcount: '554'
+ht-degree: 1%
 
 ---
-
 
 # インストール [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
@@ -42,6 +42,23 @@ ht-degree: 2%
 
 アドオンをインストールするには、以下を実行します。 [!DNL Experience Manager] as a [!DNL Cloud Service]を使用する場合は、次の手順に従います。
 
+1. から拡張コネクタをダウンロード [Adobeソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. [アクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) Cloud Manager からAEM as a Cloud Serviceリポジトリのクローンを作成します。
+
+1. 任意の IDE を使用して、クローンされたAEMas a Cloud Serviceリポジトリを開きます。
+
+1. 手順 1 でダウンロードした拡張コネクタ zip ファイルを次のパスに配置します。
+
+   ```TXT
+      /ui.apps/src/main/resources/<zip file>
+   ```
+
+   >[!NOTE]
+   >
+   >この `resources` フォルダーが存在しません。フォルダーを作成します。
+
+
 1. 追加 `pom.xml` 依存関係：
 
    1. 親に依存関係を追加 `pom.xml`.
@@ -51,47 +68,28 @@ ht-degree: 2%
          <groupId>digital.hoodoo</groupId>
          <artifactId>workfront-tools.ui.apps</artifactId>
          <type>zip</type>
-         <version>1.7.4</version>
+         <version>enhanced connector version number</version>
+         <scope>system</scope>
+         <systemPath>${project.basedir}/ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
       </dependency>
       ```
 
-   1. すべてのモジュールに依存関係を追加 [!DNL pom.xml].
+      >[!NOTE]
+      >
+      >依存関係を親にコピーする前に、拡張コネクタのバージョン番号を必ず更新してください `pom.xml`.
+
+   1. 依存関係をに追加 `all module pom.xml`.
 
       ```XML
          <dependency>
             <groupId>digital.hoodoo</groupId>
             <artifactId>workfront-tools.ui.apps</artifactId>
             <type>zip</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../ui.apps/src/main/resources/workfront-tools.ui.apps.zip</systemPath>
          </dependency>
       ```
 
-1. 追加 `pom.xml` 認証。
-
-   1. 以下のリポジトリ設定を adobe-public プロファイル内の pom.xml に含めると、（上記の）コネクタの依存関係を（ローカルでも Cloud Manager でも）ビルド時に解決できます。 リポジトリアクセスの資格情報は、ライセンスの購入時に提供されます。 資格情報は、servers セクションの settings.xml ファイルに追加する必要があります。
-
-      ```XML
-      <repository>
-         <id>hoodoo-maven</id>
-         <name>Hoodoo Repository</name>
-         <url>https://gitlab.com/api/v4/projects/12715200/packages/maven</url>
-      </repository>
-      ```
-
-   1. という名前のファイルを作成します。 `./cloudmanager/maven/settings.xml` 」と入力します。 パスワードで保護された Maven リポジトリをサポートするには、 [プロジェクトの設定方法](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md). また、例 `settings.xml` ファイルを参照してください。 最後に、ローカルの `settings.xml` ローカルでコンパイルする場合。
-
-      ```XML
-         <server>
-            <id>hoodoo-maven</id>
-            <configuration>
-               <httpHeaders>
-                     <property>
-                        <name>Deploy-Token</name>
-                        <value>xxxxxxxxxxxxxxxx</value>
-                     </property>
-               </httpHeaders>
-            </configuration>
-         </server>
-      ```
 
 1. 追加 `pom.xml` 埋め込み を [!DNL Workfront for Experience Manager enhanced connector] パッケージ `embeddeds` セクション `pom.xml` すべてのサブプロジェクトの すべてのモジュールに組み込まれている必要がある `pom.xml`.
 
@@ -104,6 +102,12 @@ ht-degree: 2%
       <target>/apps/<path-to-project-install-folder>/install</target>
    </embedded>
    ```
+
+   埋め込みセクションのターゲットが `/apps/<path-to-project-install-folder>/install`. この JCR パス `/apps/<path-to-project-install-folder>` を `all/src/main/content/META-INF/vault/filter.xml` ファイル。 リポジトリのフィルター規則は、通常、プログラム名から派生します。 フォルダーの名前を既存のルールのターゲットとして使用します。
+
+1. 変更をリポジトリにプッシュします。
+
+1. 次の場所にパイプラインを実行 [Cloud Manager に変更をデプロイします。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. システムユーザー設定を作成するには、 `wf-workfront-users` in [!DNL Experience Manager] ユーザーグループと権限の割り当て `jcr:all` から `/content/dam`. システムユーザー `workfront-tools` が自動的に作成され、必要な権限が自動的に管理されます。 からのすべてのユーザー [!DNL Workfront] 拡張コネクタを使用するユーザーは、このグループの一部として自動的に追加されます。
 

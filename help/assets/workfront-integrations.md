@@ -1,15 +1,15 @@
 ---
-title: '"[!DNL Experience Manager Assets] ～との統合 [!DNL Adobe Workfront]"'
+title: '''[!DNL Experience Manager Assets] ～との統合 [!DNL Adobe Workfront]'''
 description: A と B の統合の概要 [!DNL Assets] および [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
+source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '926'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [!DNL Assets] ～との統合 [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 この [!DNL Workfront for Experience Manager enhanced connector] エンドツーエンドのワークフローにより、ビジネスプロセスが強化され、エンドツーエンドのクライアントエクスペリエンスと一元化されたストレージをパーソナライズできます。 Adobeは、標準コネクタと、これら 2 つのソリューションを統合する拡張コネクタを提供します。 比較については、以下のサポートされる機能を参照し、 [の新機能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
-[!DNL Workfront for Experience Manage enhanced connector] 組織では、次のことが可能です。
+[!DNL Workfront for Experience Manager enhanced connector] 組織では、次のことが可能です。
 
 * WorkfrontでリンクされたExperience Managerフォルダーを自動作成し、WorkfrontのPortfolio、プログラム、プロジェクトに基づいてフォルダーを整理します。
 * WorkfrontプロジェクトメタデータをリンクされたExperience Managerフォルダーと同期します。
@@ -32,6 +32,8 @@ ht-degree: 2%
 >Adobeには、 [!DNL Adobe Workfront for Experience Manager enhanced connector] 認定パートナーまたは [!DNL Adobe Professional Services]. 認定パートナーなしでデプロイおよび設定した場合、または [!DNL Adobe Professional Services]の場合、Adobeではサポートされません。
 >
 >Adobeが次の更新をリリースする可能性がある： [!DNL Adobe Workfront] および [!DNL Adobe Experience Manager] このコネクタを冗長にするこの場合、お客様はこのコネクタの使用から移行する必要が生じる場合があります。
+>
+>詳しくは、 [Workfront for Experience Manager Assets拡張コネクタに関するパートナー認定試験](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). 試験の詳細は、 [試験ガイド](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 ## A と B の間の異なる統合の比較 [!DNL Assets] および [!DNL Workfront] {#feature-parity-matrix}
 
