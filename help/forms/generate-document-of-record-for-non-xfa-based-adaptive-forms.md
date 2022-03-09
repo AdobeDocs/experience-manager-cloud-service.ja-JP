@@ -2,9 +2,9 @@
 title: アダプティブフォームにおけるレコードのドキュメントの生成
 description: ここでは、アダプティブフォーム向けのレコードのドキュメント（DoR）テンプレートを生成する方法について説明します。
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 83%
 
 ---
@@ -405,7 +405,7 @@ When you select a form model, configure Document of Record using options availab
 
 >[!NOTE]
 >
-> この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 」を参照してください。
+> この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) 」を参照してください。
 
 XCI ファイルは、ドキュメントの様々なプロパティを設定する場合に役立ちます。 Forms as a Cloud Serviceにはマスター XCI ファイルがあります。 カスタム XCI ファイルを使用して、マスター XCI ファイルで指定された 1 つ以上のデフォルトのプロパティを上書きできます。 例えば、ドキュメントにフォントを埋め込むか、すべてのドキュメントに対してタグ付きプロパティを有効にするかを選択できます。 次の表に、XCI オプションの説明を示します。
 
