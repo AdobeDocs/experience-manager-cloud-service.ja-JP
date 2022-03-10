@@ -1,14 +1,15 @@
 ---
 title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの共有
-description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
-contentOwner: AG
+description: リモートで使用可能なアセットを使用 [!DNL Adobe Experience Manager Assets] 別のページで web ページを作成する際のデプロイメント [!DNL Adobe Experience Manager Sites] デプロイメント。
+contentOwner: AK
+mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 8457a6eb81b5d28c264e7f75793724b40fe7eb1d
+source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
 workflow-type: tm+mt
-source-wordcount: '3796'
-ht-degree: 74%
+source-wordcount: '3770'
+ht-degree: 68%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 74%
 
 大規模企業では、Web サイトの作成に必要なインフラストラクチャが分散していることがあります。Web サイト作成機能と、それらの Web サイトの作成に使用されたデジタルアセットが、別のデプロイメントに格納されている場合もあります。その理由の1 つは、地理的に分散した既存のデプロイメントが連携して動作する必要があることです。もう 1 つの理由は、親会社が一緒に使用したい異種インフラストラクチャ（[!DNL Experience Manager] の各種バージョンなど）をもたらす買収です。
 
-Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experience Manager Assets] の統合により、上記のユースケースをサポートしています。ユーザーは、別個の [!DNL Assets] デプロイメントから得られるデジタルアセットを使用する Web ページを [!DNL Sites] に作成できます。
+Connected Assets の機能は、 [!DNL Experience Manager Sites] および [!DNL Experience Manager Assets]. ユーザーは、別個の [!DNL Assets] デプロイメントから得られるデジタルアセットを使用する Web ページを [!DNL Sites] に作成できます。
 
 >[!NOTE]
 >
@@ -27,7 +28,7 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 [!UICONTROL ページエディター]でページをターゲット先として編集する場合、作成者は、アセットのソースとして機能する別の [!DNL Assets] デプロイメントのアセットをシームレスに検索、参照および埋め込むことができます。管理者は、 [!DNL Sites] の機能を備える [!DNL Experience Manager] のデプロイメントと [!DNL Assets] の機能を備える [!DNL Experience Manager] 別のデプロイメントとの 1 回限りの統合を作成します。また、Connected Assets を通じてサイトの web ページで Dynamic Media 画像を使用し、スマート切り抜きや画像プリセットなどの Dynamic Media 機能を利用することもできます。
 
-[!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、一度に少数のリモートアセットをシームレスに検索および使用できるようサポートします。多くのリモートアセットを [!DNL Sites] ローカルデプロイメントで一度に利用できるようにするには、リモートアセットを一括で移行することを検討します。
+[!DNL Sites] 作成者の場合、リモートアセットは読み取り専用のローカルアセットとして利用できます。この機能は、サイトエディター上のリモートアセットへのシームレスな検索とアクセスをサポートします。 Sites で完全なアセットコーパスを使用する必要があるその他の使用例については、Connected Assets を活用する代わりにアセットを一括で移行することを検討してください。
 
 ### 前提条件とサポートされているデプロイメント {#prerequisites}
 
@@ -44,16 +45,16 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ### サポートされているファイル形式 {#mimetypes}
 
-作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターで使用します。ドキュメントが `Download` コンポーネントに追加され、画像が `Image` コンポーネントに追加されます。作成者は、デフォルトの `Download` または `Image` コンポーネントを拡張するカスタム [!DNL Experience Manager] コンポーネントにもリモートアセットを追加します。サポートされる形式は以下の通りです。
+作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターにドラッグします。 ドキュメントが `Download` コンポーネントに追加され、画像が `Image` コンポーネントに追加されます。作成者は、任意のカスタム [!DNL Experience Manager] デフォルトの `Download` または `Image` コンポーネント。 サポートされる形式は以下の通りです。
 
 * **画像形式**：[画像コンポーネント](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)がサポートする形式。
 * **ドキュメント形式**：詳しくは、[サポートされるドキュメント形式](file-format-support.md#document-formats)を参照してください。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
 
-この機能の設定や使用に関係する様々な役割と対応するユーザーグループについて、以下で説明します。ローカルスコープは、作成者が Web ページを作成する場合に使用します。リモートスコープは、必要なアセットをホストしている DAM デプロイメントで使用されます。[!DNL Sites] 作成者は、これらのリモートアセットを取得します。
+設定に関わる様々な役割、機能、および対応するユーザーグループについて、以下で説明します。 ローカルスコープは、作成者が Web ページを作成する場合に使用します。リモートスコープは、必要なアセットをホストしている DAM デプロイメントで使用されます。[!DNL Sites] 作成者は、これらのリモートアセットを取得します。
 
-| 役割 | 対象範囲 | ユーザーグループ | 要件 |
+| 役割 | 対象範囲 | ユーザーグループ | 説明 |
 |------|--------|-----------|----------|
 | [!DNL Sites] administrator | ローカル | [!DNL Experience Manager] `administrators` | [!DNL Experience Manager]を設定し、リモート [!DNL Assets] デプロイメントとの統合を設定します。 |
 | DAM ユーザー | ローカル | `Authors` | `/content/DAM/connectedassets/` の取得済みアセットを表示／複製するために使用されます。 |
@@ -65,9 +66,9 @@ Connected Assets 機能では、[!DNL Experience Manager Sites] と [!DNL Experi
 
 ### Connected Assets のアーキテクチャ {#connected-assets-architecture}
 
-Experience Managerを使用すると、リモート DAM デプロイメントをソースとして複数のExperience Managerに接続できます [!DNL Sites] デプロイメント。 You can connect a maximum of four [!DNL Sites] deployments to a source remote DAM. ただし、 [!DNL Sites] 1 つのリモート DAM デプロイメントのみを使用するデプロイメント。
+Experience Managerを使用すると、リモート DAM デプロイメントをソースとして複数のExperience Managerに接続できます [!DNL Sites] デプロイメント。 最大 4 つの接続が可能です [!DNL Sites] をソースリモート DAM にデプロイします。 ただし、 [!DNL Sites] 1 つのリモート DAM デプロイメントのみを使用するデプロイメント。
 
-The following diagrams illustrate the supported scenarios:
+次の図に、サポートされるシナリオを示します。
 
 ![Connected Assets のアーキテクチャ](assets/connected-assets-architecture.png)
 
@@ -81,7 +82,7 @@ The following diagrams illustrate the supported scenarios:
 
 Connected Assets とローカル [!DNL Sites] の接続を構成するには、次の手順を実行します:
 
-1. 既存の [!DNL Sites] デプロイメントにアクセスします。この [!DNL Sites] デプロイメントは Web ページのオーサリングに使用されます（例：`https://[sites_servername]:port`）。ページオーサリングは [!DNL Sites] デプロイメントで行われるので、ページオーサリングの観点から [!DNL Sites] デプロイメントをローカルとして呼びます。
+1. 既存の [!DNL Sites] デプロイメントにアクセスします。この [!DNL Sites] デプロイメントは Web ページのオーサリングに使用されます（例：`https://<sites_server_fqdn>:[port]`）。ページオーサリングは [!DNL Sites] デプロイメントで行われるので、ページオーサリングの観点から [!DNL Sites] デプロイメントをローカルとして呼びます。
 
 1. 既存の [!DNL Assets] デプロイメントにアクセスします。この [!DNL Assets] デプロイメントはデジタルアセットの管理に使用されます（例：`https://[assets_servername]:port`）。
 
@@ -96,7 +97,7 @@ Connected Assets とローカル [!DNL Sites] の接続を構成するには、�
    1. **[!UICONTROL ローカルサイト URL]** は、 [!DNL Sites] デプロイメントの場所です。[!DNL Assets] デプロイメントは、この値を使用して、この [!DNL Sites] デプロイメントによって取得されたデジタルアセットへの参照を維持します。
    1. [!DNL Sites] 技術ユーザーの資格情報。
    1. **[!UICONTROL 元のバイナリ転送最適化しきい値]**&#x200B;フィールドの値は、元のアセット（レンディションを含む）を同期的に転送するかどうかを指定します。ファイルサイズが比較的小さいアセットは簡単に取得できますが、ファイルサイズが大きいアセットは非同期で同期するのが最適です。値は、ネットワークの機能に応じて異なります。
-   1. データストアを使用してアセットを保存し、データストアが両方のデプロイメント間に共通のストレージである場合は、「**[!UICONTROL Connected Assets とデータストアを共有]**」を選択します。この場合、実際のアセットバイナリはデータストアで利用可能で、転送されないため、しきい値の制限は重要ではありません。
+   1. 選択 **[!UICONTROL Connected Assets とデータストアを共有]**&#x200B;データストアを使用してアセットを保存し、データストアが両方のデプロイメント間で共有されている場合は、 この場合、実際のアセットバイナリはデータストアで利用可能で、転送されないため、しきい値の制限は重要ではありません。
 
    ![Connected Assets 機能の典型的な設定](assets/connected-assets-typical-config.png)
 
@@ -140,9 +141,9 @@ Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート D
 
 使用する [!DNL Dynamic Media] Connected Assets を使用：
 
-1. Configure [!DNL Dynamic Media] on remote DAM deployment with Sync mode enabled.
+1. 設定 [!DNL Dynamic Media] 同期モードが有効なリモート DAM デプロイメント時。
 1. 設定 [Connected Assets](#configure-a-connection-between-sites-and-assets-deployments).
-1. Configure [!DNL Dynamic Media] on the Sites instance with the same company name as configured on the remote DAM. The Sites deployment must have read-only access to the Dynamic Media account to work with connected assets. そのため、Sites インスタンスのDynamic Media設定で同期モードを無効にする必要があります。
+1. 設定 [!DNL Dynamic Media] リモート DAM で設定されたのと同じ会社名を持つ Sites インスタンス上で、 Sites デプロイメントで Connected Assets を操作するには、Dynamic Mediaアカウントへの読み取り専用アクセス権が必要です。 そのため、Sites インスタンスのDynamic Media設定で同期モードを無効にする必要があります。
 
 >[!CAUTION]
 >
@@ -165,7 +166,7 @@ Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート D
 
 ## リモートアセットの使用 {#use-remote-assets}
 
-Web サイト作成者は、コンテンツファインダーを使用して DAM デプロイメントに接続します。Web サイト作成者は、コンポーネント内のリモートアセットを参照、検索、ドラッグできます。リモート DAM への認証を行えるよう、管理者から提供された DAM ユーザーの資格情報を手元に用意してください。
+Web サイト作成者は、コンテンツファインダーを使用して DAM デプロイメントに接続します。Web サイト作成者は、コンポーネント内のリモートアセットを参照、検索、ドラッグできます。リモート DAM に対する認証をおこなうには、管理者から提供された資格情報（存在する場合）を手元に用意します。
 
 作成者は、ローカル DAM デプロイメントで利用可能なアセットとリモート DAM デプロイメントで利用可能なアセットを、単一の Web ページ内で使用できます。コンテンツファインダーを使用すれば、ローカル DAM の検索とリモート DAM の検索を切り替えることができます。
 
@@ -183,7 +184,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
    ページの左上隅にある「**[!UICONTROL サイドパネルを切り替え]**」をクリックします。
 
-1. 「[!UICONTROL Assets]」タブを開き、「**[!UICONTROL Connected Assets へのログイン]**」をクリックします。
+1. を開きます。 [!UICONTROL Assets] 」タブ（リモートコンテンツファインダー）に移動し、 **[!UICONTROL Connected Assets にログイン]**.
 
 1. Connected Assets にログオンするための資格情報を指定します。 このユーザーには、両方の [!DNL Experience Manager] デプロイメントのオーサリング権限があります。
 
@@ -195,7 +196,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
    *図：リモート DAM でアセットを検索するときにドキュメントタイプと画像をフィルタリングするオプション*
 
-1. アセットが非同期で取得され、取得タスクが失敗した場合、サイト作成者に通知されます。オーサリング中またはオーサリング後でも、作成者は[非同期ジョブ](/help/operations/asynchronous-jobs.md)ユーザーインターフェイスで取得タスクやエラーについての詳細情報を確認できます。
+1. アセットの元のアセットが非同期で取得され、取得タスクが失敗した場合、サイト作成者に通知されます。 オーサリング中またはオーサリング後でも、作成者は[非同期ジョブ](/help/operations/asynchronous-jobs.md)ユーザーインターフェイスで取得タスクやエラーについての詳細情報を確認できます。
 
    ![バックグラウンドで発生するアセットの非同期取得に関する通知。](assets/assets_async_transfer_fails.png)
 
@@ -205,7 +206,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
    >[!NOTE]
    >
-   >1 つ以上のリモートアセットが取得されない場合でも、ページは公開されます。リモートアセットを使用するコンポーネントは空で公開されます。[!DNL Experience Manager] 通知領域では、非同期ジョブページに表示されるエラーの通知を確認できます。
+   >1 つ以上のリモートアセットが完全に取得されなくても、ページは公開されます。 [!DNL Experience Manager] 通知領域では、非同期ジョブページに表示されるエラーの通知を確認できます。
 
 >[!CAUTION]
 >
@@ -226,11 +227,11 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 1. [!DNL Sites] ページの参照は、各ローカル [!DNL Sites] の参照の合計数を表示します。すべての参照を見つけて、参照の総数を表示するのは時間がかかる場合があります。
 1. 参照のリストはインタラクティブで、DAM ユーザーは参照をクリックして参照ページを開くことができます。何らかの理由でリモート参照を取得できない場合は、失敗の通知が表示されます。
-1. ユーザーはアセットを移動または削除できます。アセットを移動または削除すると、選択したすべてのアセット／フォルダーの参照の合計数が警告ダイアログに表示されます。参照がまだ表示されていないアセットを削除すると、警告ダイアログが表示されます。
+1. ユーザーはアセットを移動または削除できます。アセットを移動または削除すると、選択したすべてのアセット／フォルダーの参照の合計数が警告ダイアログに表示されます。参照が取得されていないアセットを削除すると、警告ダイアログが表示されます。
 
    ![強制削除警告](assets/delete-referenced-asset.png)
 
-### Manage updates to assets in remote DAM {#handling-updates-to-remote-assets}
+### リモート DAM でアセットの更新を管理 {#handling-updates-to-remote-assets}
 
 後 [接続の設定](#configure-a-connection-between-sites-and-assets-deployments) リモート DAM と Sites のデプロイメントの間で、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 その後、リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更および移動の操作を実行できます。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。 また、リモート DAM 上のアセットがローカルのExperience Manager Sitesページで使用されている場合、リモート DAM 上のアセットの更新がサイトページに表示されます。
 
@@ -240,7 +241,7 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 Sites 作成者は、Sites デプロイメントで利用可能な更新をプレビューし、変更を再公開して、AEMパブリッシュインスタンスで利用できるようにします。
 
-Experience Managerに `expired` リモートアセットコンテンツファインダー内のアセットのステータス視覚的インジケーター。サイト作成者がサイトページでアセットを使用できないようにします。 If you use an asset with an `expired` status on a Sites page, the asset fails to display on the Experience Manager publish instance.
+Experience Managerに `expired` リモートアセットコンテンツファインダー内のアセットのステータス視覚的インジケーター。サイト作成者がサイトページでアセットを使用できないようにします。 アセットを `expired` のステータスが「サイト」ページに表示されている場合、そのアセットはExperience Manager発行インスタンスに表示されません。
 
 >[!NOTE]
 >
@@ -248,17 +249,17 @@ Experience Managerに `expired` リモートアセットコンテンツファイ
 
 ## よくある質問 {#frequently-asked-questions}
 
-### Should  you configure Connected Assets if you need to use assets available on your [!DNL Sites] deployment?
+### Connected Assets を設定する場合、 [!DNL Sites] 導入？
 
 この場合、Connected Assets を設定する必要はありません。 使用可能なアセットは、 [!DNL Sites] デプロイメント。
 
-### When do you need to configure the Connected Assets feature?
+### Connected Assets 機能を設定する必要があるのはいつですか？
 
 Connected Assets 機能を設定するのは、 [!DNL Sites] デプロイメント。
 
 ### 数 [!DNL Sites] デプロイメントは、Connected Assets を設定した後、リモート DAM デプロイメントに接続できますか？
 
-最大 4 つの接続が可能です [!DNL Sites] Connected Assets の設定後にリモート DAM デプロイメントにデプロイメントします。 For more information, see [Connected Assets architecture](#connected-assets-architecture).
+最大 4 つの接続が可能です [!DNL Sites] Connected Assets の設定後にリモート DAM デプロイメントにデプロイメントします。 詳しくは、 [Connected Assets のアーキテクチャ](#connected-assets-architecture).
 
 ### リモート DAM デプロイメントのうち、1 つの [!DNL Sites] Connected Assets を設定した後のデプロイメント
 
@@ -295,7 +296,6 @@ Connected Assets の設定後、 [!DNL Dynamic Media] アセットは、 [!DNL S
 
 ### 権限とアセット管理 {#permissions-and-managing-assets}
 
-* ローカルアセットは、リモートデプロイメントの元のアセットと同期されません。DAM デプロイメント上での編集、削除または権限の失効は、ローカル側には一切伝播されません。
 * ローカルアセットは読み取り専用のコピーです。[!DNL Experience Manager] コンポーネントは、アセットに対して非破壊編集を行います。その他のいかなる編集もできません。
 * ローカルで取得されたアセットは、オーサリング用途でのみ使用できます。アセット更新ワークフローの適用やメタデータの編集は行えません。
 * [!DNL Sites] ページで [!DNL Dynamic Media] を使用する場合、元のアセットは取得されず、ローカルデプロイメントにも保存されません。`dam:Asset` ノード、メタデータ、および [!DNL Assets] デプロイメントで生成されたレンディションは、すべて [!DNL Sites] デプロイメントで取得されます。
@@ -309,7 +309,7 @@ Connected Assets の設定後、 [!DNL Dynamic Media] アセットは、 [!DNL S
 ### セットアップとライセンス {#setup-licensing}
 
 * [!DNL Adobe Managed Services] での [!DNL Assets] のデプロイメントはサポートされています。
-* [!DNL Sites] は一度に 1 つのリポジトリーに接続できます。[!DNL Assets]
+* [!DNL Sites] 単一の [!DNL Assets] を一度にデプロイします。
 * リモートリポジトリーとして機能する [!DNL Assets] のライセンスが 1 つ必要です。
 * ローカルオーサリングデプロイメントとして機能する [!DNL Sites] のライセンスが 1 つ以上必要です。
 
