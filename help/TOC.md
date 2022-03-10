@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: ad7af5f68719e112a820c5def7a86ff835b5839f
+source-git-commit: 279b263b72f8b99aed3fb55c7625a3b54dd6a370
 workflow-type: tm+mt
-source-wordcount: '3425'
+source-wordcount: '3428'
 ht-degree: 88%
 
 ---
@@ -608,6 +608,7 @@ ht-degree: 88%
       + Cloud Manager のリリースノート {#release-notes-cloud-manager}
          + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
          + 2022 年 {#2022}
+            + [リリースノート（2022.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
             + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
          + 2021 年 {#2021}
             + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
