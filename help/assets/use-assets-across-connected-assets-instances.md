@@ -6,7 +6,7 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 9f90c343aad8a8eaa8624d388e31ad21ef5c02f6
+source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
 ht-degree: 68%
@@ -249,45 +249,65 @@ Experience Managerに `expired` リモートアセットコンテンツファイ
 
 ## よくある質問 {#frequently-asked-questions}
 
-### Connected Assets を設定する場合、 [!DNL Sites] 導入？
++++**Connected Assets を設定する場合、 [!DNL Sites] 導入？**
 
 この場合、Connected Assets を設定する必要はありません。 使用可能なアセットは、 [!DNL Sites] デプロイメント。
 
-### Connected Assets 機能を設定する必要があるのはいつですか？
++++
+
++++**Connected Assets 機能を設定する必要があるのはいつですか？**
 
 Connected Assets 機能を設定するのは、 [!DNL Sites] デプロイメント。
 
-### 数 [!DNL Sites] デプロイメントは、Connected Assets を設定した後、リモート DAM デプロイメントに接続できますか？
++++
+
++++**数 [!DNL Sites] デプロイメントは、Connected Assets を設定した後、リモート DAM デプロイメントに接続できますか？**
 
 最大 4 つの接続が可能です [!DNL Sites] Connected Assets の設定後にリモート DAM デプロイメントにデプロイメントします。 詳しくは、 [Connected Assets のアーキテクチャ](#connected-assets-architecture).
 
-### リモート DAM デプロイメントのうち、1 つの [!DNL Sites] Connected Assets を設定した後のデプロイメント
++++
+
++++**リモート DAM デプロイメントのうち、1 つの [!DNL Sites] Connected Assets を設定した後のデプロイメント**
 
 1 つのリモート DAM デプロイメントを [!DNL Sites] Connected Assets の設定後のデプロイメント 詳しくは、 [Connected Assets のアーキテクチャ](#connected-assets-architecture).
 
-### Adobe Analytics の [!DNL Sites] Connected Assets を設定した後のデプロイメント
++++
+
++++**Adobe Analytics の [!DNL Sites] Connected Assets を設定した後のデプロイメント**
 
 Connected Assets の設定後、 [!DNL Dynamic Media] アセットは、 [!DNL Sites] 読み取り専用モードでのデプロイメント。 その結果、 [!DNL Dynamic Media] 上のアセットを処理する [!DNL Sites] デプロイメント。 詳しくは、 [Sites デプロイメントとDynamic Mediaデプロイメント間の接続の設定](#dynamic-media-assets).
 
-### リモート DAM デプロイメントの画像およびドキュメント形式のアセットを [!DNL Sites] Connected Assets を設定した後のデプロイメント
++++
+
++++**リモート DAM デプロイメントの画像およびドキュメント形式のアセットを [!DNL Sites] Connected Assets を設定した後のデプロイメント**
 
 はい。 [!DNL Sites] Connected Assets の設定後のデプロイメント
 
-### リモート DAM デプロイメントのコンテンツフラグメントとビデオアセットを [!DNL Sites] Connected Assets を設定した後のデプロイメント
++++
+
++++**リモート DAM デプロイメントのコンテンツフラグメントとビデオアセットを [!DNL Sites] Connected Assets を設定した後のデプロイメント**
 
 いいえ。 [!DNL Sites] Connected Assets の設定後のデプロイメント
 
-### リモート DAM デプロイメントのDynamic Mediaアセットを [!DNL Sites] Connected Assets を設定した後のデプロイメント
++++
+
++++**リモート DAM デプロイメントのDynamic Mediaアセットを [!DNL Sites] Connected Assets を設定した後のデプロイメント**
 
 はい、 [!DNL Sites] Connected Assets の設定後のデプロイメント 詳しくは、 [Sites デプロイメントとDynamic Mediaデプロイメント間の接続の設定](#dynamic-media-assets).
 
-### Connected Assets の設定後、リモート DAM のアセットまたはフォルダーに対して更新、削除、名前変更、移動の操作を実行できますか？
++++
+
++++**Connected Assets の設定後、リモート DAM のアセットまたはフォルダーに対して更新、削除、名前変更、移動の操作を実行できますか？**
 
 はい。Connected Assets を設定した後、リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更、移動の操作を実行できます。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。 詳しくは、 [リモート DAM でアセットの更新を管理](#handling-updates-to-remote-assets).
 
-### Connected Assets を設定した後、 [!DNL Sites] デプロイメントを作成し、リモート DAM デプロイメントで使用できるようにしますか？
++++
+
++++**Connected Assets を設定した後、 [!DNL Sites] デプロイメントを作成し、リモート DAM デプロイメントで使用できるようにしますか？**
 
 アセットを [!DNL Sites] ただし、これらのアセットをリモート DAM デプロイメントで使用することはできません。
+
++++
 
 
 ## 制限事項とベストプラクティス {#tip-and-limitations}
