@@ -50,7 +50,6 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 >[!NOTE]
 >
 >Dynamic Media Classic から [!DNL Experience Manager] へのアセットの一括移行を実行する場合は、Dynamic Media サーバー上で移行レプリケーションエージェントを有効にします。移行が完了したら、このエージェントを必ず無効にします。
-
 >
 >再処理ワークフローが期待どおりに動作するように、Dynamic Media サーバー上で移行公開エージェントを無効にする必要があります。
 
