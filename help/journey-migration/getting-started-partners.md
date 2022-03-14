@@ -1,14 +1,15 @@
 ---
-title: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
-description: パートナー向けExperience Manageras a Cloud Serviceの移行ガイド
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+title: Experience Manager as a Cloud Service への移行ガイド（パートナー向け）
+description: Experience Manager as a Cloud Service への移行ガイド（パートナー向け）
+exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2112'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# パートナー向けAdobe Experience Manager as a Cloud Serviceへの移行ガイド {#Overview}
+# Adobe Experience Manager as a Cloud Service への移行ガイド（パートナー向け） {#Overview}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_migration_overview"
@@ -34,7 +35,7 @@ Cloud Service は、Adobe Experience Manager の豊富な機能と拡張性を�
 
 | 何が違うのか？ | アーキテクチャの概要 |
 |--------------------------|--------------------------|
-| <ul><li>[最新アーキテクチャ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html)</li><li>[自動更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/aem-version-updates.html?lang=ja#aem-version-updates)</li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)</li><li>[アセットマイクロサービス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)</li><li>[Direct-Access バイナリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja#asset-upload-with-direct-binary-access)</li><li>[コードとコンテンツの分離](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja#developing)</li><li>[サービスとしてのレプリケーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=ja)</li><li>[Admin Console、グループ／ユーザーのメンバーシップ、ACL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)</li></ul> | <ul><li>[AEM アーキテクチャの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-architecture.html?lang=ja#underlying-technology)</li><li>[環境スタック](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html)</li><li>[オーサー層](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=ja#underlying-technology)</li><li>[パブリッシュ層](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=ja#content-delivery)</li><li>[CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=ja#content-delivery) </li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)（ CI/CD）</li><li>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html) を介した [ID 管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja#onboarding-users-in-admin-console)</li><li>[Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=ja)</li></ul> |
+| <ul><li>[最新アーキテクチャ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html?lang=ja)</li><li>[自動更新](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/aem-version-updates.html?lang=ja#aem-version-updates)</li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)</li><li>[アセットマイクロサービス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)</li><li>[Direct-Access バイナリ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja#asset-upload-with-direct-binary-access)</li><li>[コードとコンテンツの分離](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=ja#developing)</li><li>[サービスとしてのレプリケーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/replication.html?lang=ja)</li><li>[Admin Console、グループ／ユーザーのメンバーシップ、ACL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja)</li></ul> | <ul><li>[AEM アーキテクチャの概要](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-architecture.html?lang=ja#underlying-technology)</li><li>[環境スタック](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/architecture.html)</li><li>[オーサー層](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=ja#underlying-technology)</li><li>[パブリッシュ層](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=en#underlying-technology)</li><li>[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html?lang=ja#content-delivery)</li><li>[CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/cdn.html?lang=ja#content-delivery) </li><li>[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)（ CI/CD）</li><li>[Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html) を介した [ID 管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja#onboarding-users-in-admin-console)</li><li>[Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/home.html?lang=ja)</li></ul> |
 
 ![AEM as a Cloud Service - ランタイムアーキテクチャ](/help/overview/assets/concepts-03.png "AEM as a Cloud Service - ランタイムアーキテクチャ")
 
@@ -132,7 +133,7 @@ Cloud Service への移行プロセスを開始する前に、Experience Manager
 </tr>
 <tr>
 <td>測定</td>
-<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html">プロジェクト KPI</a>、成功基準、プロジェクト日程を確立します。</li></ul></td>
+<td><ul><li><a href="https://experienceleague.adobe.com/welcome/aem/part6.html?lang=ja">プロジェクト KPI</a>、成功基準、プロジェクト日程を確立します。</li></ul></td>
 </tr>
 </table>
 

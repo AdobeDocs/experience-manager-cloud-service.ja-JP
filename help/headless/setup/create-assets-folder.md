@@ -5,7 +5,7 @@ exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 90%
 
 AEM コンテンツフラグメントモデルを使用すると、ヘッドレスコンテンツの基盤となるコンテンツフラグメントの構造を定義できます。コンテンツフラグメントはアセットフォルダーに保存されます。
 
-## アセットフォルダーとは  {#what-is-an-assets-folder}
+##  アセットフォルダーとは {#what-is-an-assets-folder}
 
 今後のコンテンツフラグメントに必要な構造を定義する[コンテンツフラグメントモデルを作成](create-content-model.md)できたので、フラグメントを作成するのが楽しみかと思います。
 

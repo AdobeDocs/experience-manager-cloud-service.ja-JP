@@ -3,7 +3,7 @@ title: AEM Cloud Service の AEM Sites の主な変更点
 description: AEM Cloud Service の AEM Sites の主な変更点
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ AEM Cloud Service では、従来 UI をブロックしていた操作は、バ�
 
 新しい AEM 参照サイト [WKND](https://wknd.site/) が更新および公開されて、AEM で Web サイトを構築するためのベストプラクティスや、AEM で使用可能な機能、コンポーネント、デプロイメントモデルの包括的なセットが反映されています。新しい参照サイトと[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)では、プロジェクトのセットアップ、コアコンポーネント、編集可能テンプレート、クライアントライブラリ、Adobe Experience Manager Sites を使用したコンポーネント開発などの基本的なトピックを扱っています。
 
-これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。今後、参照サイトはデフォルトではインストールされなくなります。代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリー](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)が提供されます。
+これまで、AEM と共にデフォルトで We.Retail がインストールされていました（実稼動モードで開始した場合を除く）。今後、参照サイトはデフォルトではインストールされなくなります。代わりに、更新された WKND 参照サイトコードを含んだ [Git リポジトリー](https://github.com/adobe/aem-guides-wknd/)および[付属のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)が提供されます。
 
 ## 実行時に使用できない機能 {#capabilities-not-available-at-runtime}
 

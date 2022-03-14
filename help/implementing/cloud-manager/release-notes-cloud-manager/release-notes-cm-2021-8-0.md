@@ -2,8 +2,9 @@
 title: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.8.0 Cloud Manager のリリースノート
 feature: Release Information
-source-git-commit: 11910316836b33e886aeba84f89d1b2eebfe7de2
-workflow-type: ht
+exl-id: cf1d5c4f-404a-4ced-90f2-273c710adc0f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 100%
 

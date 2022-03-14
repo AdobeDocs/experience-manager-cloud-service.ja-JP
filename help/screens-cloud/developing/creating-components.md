@@ -1,13 +1,13 @@
 ---
 title: コンポーネントの作成
 description: AEM コンポーネントを使用して、Web ページ上で使用できるコンテンツを保持、書式設定およびレンダリングします。チャネルのオーサリングとコンポーネントのレンダリングについて学習するには、このページの説明に従います。
-source-git-commit: 34a072bd8e936a7cdf6c37ad7b3eea704d644fd9
+exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
 
 ---
-
 
 # コンポーネントの作成 {#creating-components}
 

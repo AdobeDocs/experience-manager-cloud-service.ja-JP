@@ -3,13 +3,13 @@ title: サイトのテンプレートとテーマのカスタマイズ
 description: AEMのサイトテンプレートを使用して、サイトの構造と初期コンテンツを事前に定義する方法、およびサイトのスタイルを定義するテーマを使用してサイトをすばやく作成する方法について説明します。
 feature: Administering
 role: Admin
-source-git-commit: 0babdc80421c8a2a4be55d005884475dcebeda84
+exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 1%
 
 ---
-
 
 # サイトのテンプレートとテーマのカスタマイズ {#customizing-site-templates-themes}
 

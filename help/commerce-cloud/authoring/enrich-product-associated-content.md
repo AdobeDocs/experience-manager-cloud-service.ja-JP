@@ -1,5 +1,5 @@
 ---
-title: Enrich Product Data with Associated AEM Content
+title: 製品データと関連するAEMコンテンツの強化
 description: マーケターが Adobe Experience Manager の関連コンテンツを使用して製品データをエンリッチメントする方法について説明します。アセットや AEM のエクスペリエンスフラグメントなどのコンテンツをコマース製品に関連付けることができます。関連付けを行ったら、これらのコンテンツタイプを製品ページやカテゴリページ内のプレースホルダーに動的に挿入できます。これにより、画像やビデオなどの追加コンテンツを含んだ特定の製品ページのターゲットをマーケターが設定できる様々な可能性が開かれます。
 sub-product: Commerce
 version: cloud-service
@@ -17,27 +17,27 @@ ht-degree: 42%
 
 ---
 
-# Enrich Product Data with Associated AEM Content
+# 製品データと関連するAEMコンテンツの強化
 
-マーケターが Adobe Experience Manager の関連コンテンツを使用して製品データをエンリッチメントする方法について説明します。Content, like assets, Experience Fragments, and Content Fragments in AEM can be associated with commerce products. 関連付けを行ったら、これらのコンテンツタイプを製品ページやカテゴリページ内のプレースホルダーに動的に挿入できます。これにより、画像やビデオなどの追加コンテンツを含んだ特定の製品ページのターゲットをマーケターが設定できる様々な可能性が開かれます。
+マーケターが Adobe Experience Manager の関連コンテンツを使用して製品データをエンリッチメントする方法について説明します。アセット、エクスペリエンスフラグメント、AEM内のコンテンツフラグメントなどのコンテンツを、コマース製品に関連付けることができます。 関連付けを行ったら、これらのコンテンツタイプを製品ページやカテゴリページ内のプレースホルダーに動的に挿入できます。これにより、画像やビデオなどの追加コンテンツを含んだ特定の製品ページのターゲットをマーケターが設定できる様々な可能性が開かれます。
 
 ## デジタルアセット
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Digital assets can be associated with one or more product SKUs. Once associated, the digital asset can be discovered with key word searches based on the SKU. The asset will also automatically appear as associated content when editing a page that includes the relevant product, making it even easier to create your next digital experience.
+デジタルアセットは、1 つ以上の製品 SKU に関連付けることができます。 関連付けると、SKU に基づくキーワード検索でデジタルアセットを検出できます。 また、関連製品を含むページを編集する際に、アセットが関連コンテンツとして自動的に表示されるので、次のデジタルエクスペリエンスをより簡単に作成できます。
 
 ## エクスペリエンスフラグメント
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-**** Experience Fragments can be associated with a product SKU or catalog id. Once associated, marketers can easily discover related fragments based on products displayed on a page. Experience Fragments can also be dynamically included on a product catalog page through the use of a placeholder and association.
+エクスペリエンスフラグメントは、Adobe Experience Managerの機能で、マーケターが **非構造化** 再利用可能なコンテンツ。 エクスペリエンスフラグメントは、製品 SKU またはカタログ ID に関連付けることができます。 関連付けると、ページに表示される製品に基づいて、関連するフラグメントを簡単に見つけることができます。 エクスペリエンスフラグメントは、プレースホルダーと関連付けを使用して、製品カタログページに動的に含めることもできます。
 
 ## コンテンツフラグメント
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
-**** Content Fragments can be associated with a product SKU or catalog id. Once associated, marketers can easily discover related fragments based on products displayed on a page. Content Fragments can also be dynamically included on a product catalog page through the use of a placeholder and association.
+コンテンツフラグメントは、Adobe Experience Managerの機能で、マーケターが作成できます **構造化** 再利用可能なコンテンツ。 コンテンツフラグメントは、製品 SKU またはカタログ ID に関連付けることができます。 関連付けると、ページに表示される製品に基づいて、関連するフラグメントを簡単に見つけることができます。 また、プレースホルダーと関連付けを使用して、コンテンツフラグメントを製品カタログページに動的に含めることもできます。
 
 ## 関連リソース {#related}
 

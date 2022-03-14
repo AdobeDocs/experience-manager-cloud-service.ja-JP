@@ -3,7 +3,7 @@ title: プロジェクト
 description: プロジェクトを使用すると、リソースを 1 つのエンティティにグループ化でき、共通の共有環境でプロジェクトを簡単に管理できます
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%
 
@@ -26,9 +26,9 @@ ht-degree: 100%
 
 次の追加トピックを参照してください。
 
-* [プロジェクトの管理](/help/sites-cloud/authoring/projects/managing.md)
+* [プロジェクトの管理 ](/help/sites-cloud/authoring/projects/managing.md)
 * [タスクの操作](/help/sites-cloud/authoring/projects/tasks.md)
-* [プロジェクトワークフローの操作](/help/sites-cloud/authoring/projects/workflows.md)
+* [プロジェクトワークフローの操作 ](/help/sites-cloud/authoring/projects/workflows.md)
 
 ## プロジェクトコンソール {#projects-console}
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 
 ### Assets {#assets}
 
-**アセット**&#x200B;タイルでは、特定のプロジェクトに使用するすべてのアセットを集めることができます。
+**Assets** タイルでは、特定のプロジェクトに使用するすべてのアセットを集めることができます。
 
 ![アセットタイル](/help/sites-cloud/authoring/assets/projects-assets-tile.png)
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
 ### エクスペリエンス {#experiences}
 
-**エクスペリエンス**&#x200B;タイルでは、モバイルアプリ、Web サイトまたは公開物をプロジェクトに追加できます。
+**エクスペリエンス**&#x200B;タイルでは、モバイルアプリ、web サイトまたはパブリケーションをプロジェクトに追加できます。
 
 ![エクスペリエンス](/help/sites-cloud/authoring/assets/project-experiences.png)
 

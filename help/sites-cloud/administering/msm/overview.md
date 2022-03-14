@@ -1,12 +1,12 @@
 ---
 title: コンテンツの再利用 - マルチサイトマネージャーとライブコピー
 description: AEM の強力なライブコピーとマルチサイトマネージャー機能を使用してコンテンツを再利用する方法を紹介します。
-feature: マルチサイトマネージャー
+feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '2685'
+workflow-type: tm+mt
+source-wordcount: '2682'
 ht-degree: 100%
 
 ---

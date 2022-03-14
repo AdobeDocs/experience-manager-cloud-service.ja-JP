@@ -1,13 +1,13 @@
 ---
 title: Screens 用カスタムコンポーネントの開発as a Cloud Service
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
-source-git-commit: 0ca86e127569e8f6eb92654e4224a4d5da72ebf4
+exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 97%
 
 ---
-
 
 # AEM Screens as a Cloud Service用カスタムコンポーネントの開発{#developing-a-custom-component-for-aem-screens}
 

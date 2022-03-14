@@ -3,13 +3,13 @@ title: ターゲットコンテンツ用マルチサイト管理の構造
 description: 図は、ターゲットコンテンツ用マルチサイトサポートの構造を示しています。
 exl-id: c6b05c2a-0897-4514-8937-e23bfcf757d5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
 ---
 
-# ターゲットコンテンツ用マルチサイト管理の構造 {#how-multisite-management-for-targeted-content-is-structured}
+# ターゲットコンテンツ用マルチサイト管理の構造  {#how-multisite-management-for-targeted-content-is-structured}
 
 以下の図は、ターゲットコンテンツ用マルチサイト管理の構造を示しています。
 

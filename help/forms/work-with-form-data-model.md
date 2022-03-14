@@ -195,9 +195,9 @@ AEM Forms のデータ統合機能を初めて使用する場合や、これま�
    >[!NOTE]
    >
    > * 静的テンプレートを使用する場合は、head.jsp を以下の場所にオーバーレイします。
-   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * 編集可能なテンプレートを使用する場合は、aftemplatedpage.jsp を以下の場所でオーバーレイします。
-   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. リクエスト属性に [!DNL paramMap] を設定します。例えば、apps フォルダーの .jsp ファイルに以下のコードを含めます。

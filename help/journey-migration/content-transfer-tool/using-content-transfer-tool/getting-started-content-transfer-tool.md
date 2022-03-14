@@ -1,7 +1,8 @@
 ---
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
-source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
+exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 77%

@@ -2,12 +2,12 @@
 title: ' [!DNL Adobe Sensei] スマートサービスを使用したアセットの自動タグ付け'
 description: コンテキストタグと説明的なビジネスタグを適用する人工知能サービスを使用したアセットのタグ付け。
 contentOwner: AG
-feature: スマートタグ、タグ付け
+feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
-workflow-type: ht
-source-wordcount: '2379'
+workflow-type: tm+mt
+source-wordcount: '2376'
 ht-degree: 100%
 
 ---

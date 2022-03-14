@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media アセットの配信
 description: Dynamic Media アセットの配信方法について説明します。
-feature: アセット管理
+feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
-source-wordcount: '321'
+workflow-type: tm+mt
+source-wordcount: '319'
 ht-degree: 100%
 
 ---

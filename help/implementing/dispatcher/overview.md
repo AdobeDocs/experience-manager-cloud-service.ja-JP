@@ -3,13 +3,13 @@ title: コンテンツ配信フローの概要
 description: コンテンツ配信フローの概要
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
 
 ---
 
-# コンテンツ配信フロー{#content-delivery}
+# コンテンツ配信フロー {#content-delivery}
 
 このページは、AEM as a Cloud Service のパブリッシュサービスコンテンツ配信の詳細です。パブリッシュサービスコンテンツ配信には、次のものが含まれます。
 

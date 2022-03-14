@@ -2,7 +2,7 @@
 title: Enterprise DevOps
 description: デプロイメントやコラボレーションを簡単にするために必要なプロセス、メソッドおよびコミュニケーションについて学習します。
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

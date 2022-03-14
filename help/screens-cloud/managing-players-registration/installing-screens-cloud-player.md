@@ -3,7 +3,7 @@ title: Screens as a Cloud Service でのプレーヤーのインストールと�
 description: ここでは、Screens as a Cloud Service でプレーヤーをインストールおよび設定する方法について説明します。
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 100%
 

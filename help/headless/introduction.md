@@ -1,12 +1,12 @@
 ---
 title: AEMヘッドレスの概要
-description: Adobe Experience Manager(AEM) ヘッドレスセルフヘルプリソースおよびドキュメントリンク。 AEMでヘッドレスなエクスペリエンスを強化するために、コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用する方法について説明します。
-landing-page-description: ヘッドレスExperience Managerの使用と管理の方法を理解します。
+description: Adobe Experience Manager（AEM）ヘッドレスに関するセルフヘルプリソースおよびドキュメントリンク。 AEM でヘッドレスなエクスペリエンスを強化するために、コンテンツモデル、コンテンツフラグメント、GraphQL API などの機能を使用する方法について学習します。
+landing-page-description: Experience Manager Headless as a Cloud Service の使用方法と管理方法について説明します。
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 31%
+ht-degree: 38%
 
 ---
 
@@ -51,7 +51,7 @@ AEMヘッドレス機能を使い始めるためのリソースがいくつか�
 | [ヘッドレス実践チュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=ja) | **実践的なアプローチを好み、AEMに精通している場合**&#x200B;このチュートリアルでは、シンプルなヘッドレスアプリケーションの実装に直接取り組みます。 | チュートリアル | デベロッパー向け | 2 時間 |
 | [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) | **AEMを初めて使用するアーキテクトおよびヘッドレス向け** テクノロジーについては、まず、Adobe Experience Manager as a Cloud Serviceの強力で柔軟なヘッドレス機能の紹介と、プロジェクトのコンテンツをモデル化する方法を参照してください。 | ガイド | アーキテクト | 1 時間 |
 | [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) | **AEMを初めて使用するビジネスユーザーとヘッドレスユーザー** テクノロジーについては、まず、Adobe Experience Manager as a Cloud Serviceの強力で柔軟なヘッドレス機能の紹介と、プロジェクトのコンテンツをモデル化する方法を参照してください。 | ガイド | コンテンツ作成者 | 1 時間 |
-| [ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) | それらのために **ヘッドレスへのAEM翻訳アプローチに関心がある**. ヘッドレステクノロジーと、AEMで A から Z の翻訳プロジェクトを作成および更新する方法について説明します。 | ガイド | 翻訳担当者 | 1 時間 |
+| [ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) | それらのために **ヘッドレスへのAEM翻訳アプローチに関心がある**. ヘッドレステクノロジーと、AEMで A から Z の翻訳プロジェクトを作成および更新する方法について説明します。 | ガイド | 翻訳スペシャリスト | 1 時間 |
 
 ## ヘッドフルとヘッドレスの比較 {#headful-headless}
 

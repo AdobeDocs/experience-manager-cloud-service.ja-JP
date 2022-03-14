@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media を使用したコンテンツ配信ネットワークキャッシュの無効化
 description: コンテンツ配信ネットワーク（CDN）にキャッシュされたコンテンツを無効にすることで、キャッシュが期限切れになるのを待たずに、Dynamic Media で配信されるアセットをすばやく更新できるようにする方法を説明します。
-feature: アセット管理
+feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
 source-git-commit: c9944b1ac561b54ad2e2870ab0da967c005f105f
-workflow-type: ht
-source-wordcount: '1331'
+workflow-type: tm+mt
+source-wordcount: '1329'
 ht-degree: 100%
 
 ---

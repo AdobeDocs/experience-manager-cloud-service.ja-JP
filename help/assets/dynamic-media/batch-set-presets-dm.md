@@ -2,12 +2,12 @@
 title: バッチセットプリセット
 description: Dynamic Media のバッチセットプリセットを使用して画像セットとスピンセットの作成を自動化する方法を説明します。
 contentOwner: Rick Brough
-feature: 画像プリセット、ビューアプリセット
+feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '3446'
+workflow-type: tm+mt
+source-wordcount: '3442'
 ht-degree: 100%
 
 ---

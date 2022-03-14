@@ -1,13 +1,13 @@
 ---
 title: AEM参照デモアドオンジャーニー
 description: 最小限のAEM設定でAEM Reference Demos Add-On をサンドボックス環境に簡単に追加し、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできる方法を、ガイド付きのジャーニーで開始します。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 21%
 
 ---
-
 
 # AEM参照デモアドオンジャーニー {#reference-demos-add-on-journey}
 

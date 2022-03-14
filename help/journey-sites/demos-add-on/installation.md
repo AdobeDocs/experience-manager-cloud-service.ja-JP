@@ -1,13 +1,13 @@
 ---
 title: 参照デモアドオンのインストールについて
 description: Cloud Manager と、Cloud Manager を使用してアドオンをインストールする方法について説明します。
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 1%
 
 ---
-
 
 # 参照デモアドオンのインストールについて {#understand-installation}
 
@@ -94,7 +94,7 @@ AEM Site Templates は、サイト用の事前定義済みのコンテンツと�
 
 AEM Reference Demos Add-On には、様々なテストおよびデモのニーズに対応する複数のテンプレートが含まれています。 プログラムを作成し、パイプラインをデプロイしてアドオンをインストールしたら、AEMにログインして、多くのデモテンプレートに基づいてサイトを作成できます
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Reference Demos アドオンのジャーニーのこの部分が完了しました。完了したら、次の手順を実行します。
 

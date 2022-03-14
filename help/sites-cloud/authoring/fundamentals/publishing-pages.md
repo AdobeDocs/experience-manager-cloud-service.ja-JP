@@ -3,7 +3,7 @@ title: ページの公開
 description: AEM を使用してページを公開および非公開にする方法
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターから[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)でアクセスしたページは公開できません。エディターでは、実際のパスでアクセスしたページにのみ、公開オプションが使用可能です。
+>エディターから[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)でアクセスしたページは公開できません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールからの公開 {#publishing-from-the-console}
 
@@ -136,7 +136,6 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
       >[!NOTE]
       >
       >公開／非公開を後からキャンセルする場合は、[ワークフローコンソール](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance)に移動して、対応するワークフローを終了します。
-
    ![公開を管理でのオプション](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. 「**次へ**」をクリックして次に進みます。
@@ -225,7 +224,7 @@ Adobe Experience Manager（AEM）as a Cloud Service を使用する場合、公�
 
 >[!NOTE]
 >
->エディターから[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)でアクセスしたページは非公開にはできません。エディターでは、実際のパスでアクセスしたページにのみ、公開オプションが使用可能です。
+>エディターで[エイリアス](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced)を使用してアクセスしたページは、非公開にすることができません。エディターの「公開」オプションは、実際のパスからアクセスするページでのみ使用できます。
 
 ### コンソールから非公開にする {#unpublishing-from-the-console}
 

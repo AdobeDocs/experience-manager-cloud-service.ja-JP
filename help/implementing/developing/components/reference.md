@@ -3,7 +3,7 @@ title: コンポーネントリファレンスガイド
 description: コンポーネントとその構造の詳細に関するデベロッパー向けリファレンスガイド
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->このドキュメントを参照する前に、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を完了し、[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja)についてよく理解してください。
+>このドキュメントを参照する前に、[WKND チュートリアル](/help/implementing/developing/introduction/develop-wknd-tutorial.md)を完了し、[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)と[ AEM プロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)についてよく理解してください。
 
 WKND チュートリアルでは、ほとんどの使用例をカバーしているので、このドキュメントはこれらのリソースを補完する目的でのみ提供されます。AEM でのコンポーネントの構造化および設定方法に関する詳細な技術的詳細を説明するものであり、入門用ガイドとしての意図されたものではありません。
 
@@ -37,7 +37,7 @@ WKND チュートリアルでは、ほとんどの使用例をカバーしてい
 
 ### 既存コンポーネントの再利用 {#reusing-components}
 
-全く新しいコンポーネントの作成に時間を費やす前に、既存のコンポーネントのカスタマイズや拡張を検討してください。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)は、柔軟で堅牢かつ十分にテストされた実稼働用コンポーネントのセットを提供します。
+全く新しいコンポーネントの作成に時間を費やす前に、既存のコンポーネントのカスタマイズや拡張を検討してください。[コアコンポーネント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)は、柔軟で堅牢かつ十分にテストされた実稼働用コンポーネントのセットを提供します。
 
 #### コアコンポーネントの拡張 {#extending-core-components}
 

@@ -1,15 +1,15 @@
 ---
-title: インボックス
+title: 'インボックス '
 description: インボックスを使用したタスクの管理
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
 ---
 
-# インボックス {#your-inbox}
+# インボックス  {#your-inbox}
 
 ワークフローやプロジェクトなど、AEM の様々な領域から通知を受け取ることができます。例えば、以下に関する通知を受け取る場合があります。
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 >* [ワークフロー](/help/sites-cloud/authoring/workflows/overview.md)
 
 
-## ヘッダーのインボックス {#inbox-in-the-header}
+## ヘッダー内のインボックス {#inbox-in-the-header}
 
 すべてのコンソールでインボックスの現在の項目数がヘッダーに表示されます。また、インジケーターを開いて、アクションが必要なページに簡単にアクセスしたり、インボックスにアクセスしたりすることもできます。
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 >
 >特定のアクションは、[適切なリソースのカード表示](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view)にも表示されます。
 
-## インボックスを開く{#opening-the-inbox}
+## インボックスを開く {#opening-the-inbox}
 
 AEM 通知インボックスを開くには：
 
@@ -57,7 +57,7 @@ AEM 通知インボックスを開くには：
 
 >[!NOTE]
 >
->インボックスはコンソールとして機能するので、完了したら[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)または[検索](/help/sites-cloud/authoring/getting-started/search.md)を使用して、別の場所に移動します。
+>インボックスはコンソールとして機能するので、完了したら、[グローバルナビゲーション](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation)または[検索](/help/sites-cloud/authoring/getting-started/search.md)を使用して、別の場所に移動します。
 
 ### インボックス - リスト表示 {#inbox-list-view}
 
@@ -133,6 +133,7 @@ AEM 通知インボックスを開くには：
    >[!NOTE]
    >
    >詳しくは、次のセクションを参照してください。
+   >
    >* ワークフローの項目 - [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
 
 
@@ -190,6 +191,7 @@ AEM 通知インボックスを開くには：
    >[!NOTE]
    >
    >プロジェクトの作成に使用できるのは、**インボックス**&#x200B;の「**作成**」オプションを使用して作成されたタスクのみです。
+   >
    >（ワークフローからの）作業項目はプロジェクトの作成に使用できません。
 
 1. ツールバーの「**プロジェクトを作成**」を選択してウィザードを開きます。
@@ -206,7 +208,6 @@ AEM 通知インボックスを開くには：
    * **アドバンス**
 
       * **名前**
-
    >[!NOTE]
    >
    >詳しくは、[プロジェクトの作成](/help/sites-cloud/authoring/projects/managing.md#creating-a-project)を参照してください。

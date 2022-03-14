@@ -1,7 +1,8 @@
 ---
 title: コマースエクスペリエンスのオーサリング
 description: 作業コマースエクスペリエンス
-source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
+exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%

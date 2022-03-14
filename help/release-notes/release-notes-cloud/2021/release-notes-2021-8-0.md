@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.8.0 リリースのリリースノート。'
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: ht
+exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms}
+### [!DNL Forms] の新機能 {#what-is-new-forms}
 
 * 自動フォーム変換サービスで、[イタリア語とポルトガル語の PDF フォームをアダプティブフォームに変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=ja#language-specific-meta-model)できます。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 * **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できるようになりました。デフォルトの役割は署名者です。
 
-* **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics でエンドユーザーの行動を捉えて追跡し、エンドユーザーのインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+* **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics でエンドユーザーの行動を捉えて追跡し、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 * **AEM Forms と Microsoft Dynamics および Salesforce.com との簡単な接続**：Microsoft Dynamics と Salesforce.com のデータソース設定およびデータモデルが標準で提供されるので、開発者が Microsoft Dynamics と Salesforce.com をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できるようになりました。
 

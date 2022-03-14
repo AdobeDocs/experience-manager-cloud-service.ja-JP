@@ -1,13 +1,13 @@
 ---
 title: プログラムの編集
 description: 実稼動およびサンドボックスプログラムを編集し、作成後にオプションを調整する方法について説明します。
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 4%
 
 ---
-
 
 # プログラムの編集 {#editing-programs}
 

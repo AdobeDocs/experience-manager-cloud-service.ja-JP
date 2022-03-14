@@ -2,7 +2,7 @@
 title: Dynamic Media アセットの配信
 description: Dynamic Media を使用する場合、ビデオでも画像でも、Dynamic Media アセットを Web サイトに配信するオプションは複数あります。
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 100%
 
@@ -20,5 +20,5 @@ Dynamic Media を使用する場合、次の複数のオプションがありま
 
 詳しくは、次のトピックを参照してください。
 
-* [ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [ページへの Dynamic Media アセットの追加 ](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 

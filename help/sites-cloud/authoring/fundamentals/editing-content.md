@@ -1,9 +1,9 @@
 ---
-title: ページのコンテンツの編集
+title: 'ページのコンテンツの編集 '
 description: ページを作成したら、必要な変更をおこなうためにコンテンツを編集できます
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2974'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ ht-degree: 100%
 
 1. 選択したコンポーネントがページの下部に追加されます。必要に応じてコンポーネントを[編集](#edit-content)します。
 
-### アセットブラウザーを使用したコンポーネントの挿入{#inserting-a-component-using-the-assets-browser}
+### アセットブラウザーを使用したコンポーネントの挿入 {#inserting-a-component-using-the-assets-browser}
 
 [アセットブラウザー](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser)からアセットをドラッグして、ページに新しいコンポーネントを追加することもできます。この操作により、適切なタイプの新しいコンポーネント（アセットが格納される）が自動的に作成されます。
 
@@ -269,7 +269,7 @@ ht-degree: 100%
 * [編集用のコンポーネントのダイアログ](#component-edit-dialog)を開きます。
 * アセットブラウザーから[アセットをドラッグ＆ドロップ](#drag-and-drop-assets-into-component)して、コンテンツを直接追加します。
 
-### コンポーネントの編集ダイアログ{#component-edit-dialog}
+### コンポーネントの編集ダイアログ {#component-edit-dialog}
 
 [コンポーネントツールバーの編集（鉛筆）アイコン](#component-toolbar)を使用して、コンポーネントを開いてコンテンツを編集できます。
 
@@ -408,7 +408,7 @@ ht-degree: 100%
 
 [注釈](/help/sites-cloud/authoring/fundamentals/annotations.md)を使用すると、レビュー担当者や他の作成者がコンテンツに関するフィードバックを提供できます。注釈は、レビューや検証の目的でよく使用されます。
 
-## ページのプレビュー{#previewing-pages}
+## ページのプレビュー {#previewing-pages}
 
 ページをプレビューするには、以下の 2 つの方法があります。
 
@@ -492,7 +492,7 @@ AEM では、他のユーザーによるコンテンツの変更を防ぐため�
 
 ## ページ編集の取り消しとやり直し {#undoing-and-redoing-page-edits}
 
-次のアイコンを使用して、アクションの取り消しまたはやり直しをおこなうことができます。これらのアイコンは、ツールバーに適宜表示されます。
+次のアイコンを使用して、アクションの取り消しまたはやり直しを行うことができます。これらのアイコンは、ツールバーに適宜表示されます。
 
 ![取り消しボタンとやり直しボタン](/help/sites-cloud/authoring/assets/redo.png)
 

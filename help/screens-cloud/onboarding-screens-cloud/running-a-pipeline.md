@@ -3,7 +3,7 @@ title: パイプラインの実行
 description: ここでは、Cloud Manager で Screens as Cloud Service プロジェクトのパイプラインを実行する方法について説明します。
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -35,14 +35,14 @@ ht-degree: 100%
 1. **パイプラインを設定**&#x200B;ウィザードのオプションを選択します。「**保存**」をクリックします。
 
    >[!NOTE]
-   >パイプラインを設定ウィザードのオプションについて詳しくは、 [Cloud Manager からのパイプライン設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja)を参照してください。
+   >パイプラインを設定ウィザードのオプションについて詳しくは、 [Cloud Manager からのパイプライン設定の指定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en)を参照してください。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. セットアップパイプラインが完了すると、コールトゥアクションカードがアップデートされます（下図を参照）。「デプロイ」をクリックします。
 
    >[!NOTE]
-   >Cloud Manager でのデプロイメントの段階について詳しくは、[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja)を参照してください。
+   >Cloud Manager でのデプロイメントの段階について詳しくは、[コードのデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en)を参照してください。
 
    ![画像](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

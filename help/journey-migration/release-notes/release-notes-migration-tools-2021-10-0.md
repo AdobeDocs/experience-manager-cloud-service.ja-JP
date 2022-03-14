@@ -2,13 +2,13 @@
 title: AEM as a Cloud Serviceリリース2021.10.0の移行ツールのリリースノート
 description: AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 12%
+ht-degree: 71%
 
 ---
-
 
 # AEM as a Cloud Serviceリリース2021.10.0の移行ツールのリリースノート {#release-notes}
 
@@ -29,40 +29,40 @@ Cloud Acceleration Manager では、ユーザーがトレンドラインレポ�
 
 ### リリース日 {#release-date-october-cam}
 
-Cloud Acceleration Manager のリリース日は 2021 年 10 月 4 日です。
+Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や印刷を簡単にPDFでき、共有が容易になりました。 手順 6 および 7( [ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis)の手順 6 および 7 を参照してください。
 
 
 ## コンテンツ転送ツール {#ctt-release}
 
 ### リリース日 {#release-date-ctt-latest}
 
-コンテンツ転送ツール v1.6.0 のリリース日は 2021 年 10 月 4 日です。
+コンテンツ転送ツール v1.6.0 のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt-oct}
 
-* ユーザーマッピングツールが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが提供されました。 詳しくは、 [ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * ユーザーマッピングを実行する前に、User Management API への接続をテストする
-   * エラーを適切にスキップし、「ユーザーマッピング」アクティビティに進みます
-   * 次の場合にユーザーマッピングが失敗しなくなりました： **アクセストークン** は、24 時間後に期限切れになります。 ユーザーマッピングは、最後に停止した場所から再実行できます。
+* ユーザーマッピングツールが改善され、以下の機能が提供されるなど、ユーザーエクスペリエンスがシンプルになりました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=ja)を参照してください。
+   * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
+   * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
+   * **アクセストークン**&#x200B;が 24 時間後に期限切れになっても、ユーザーマッピングが失敗しなくなりました。最後に停止した位置からユーザーマッピングを再実行できます。
 
-* コンテンツ転送ツールの堅牢性を高めるために、コンテンツは一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。 詳しくは、 [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。
+* コンテンツ転送ツールの堅牢性を高めるために、オーサーインスタンスまたはパブリッシュインスタンスにコンテンツを一度に取り込むことができます。詳しくは、[コンテンツ転送ツールの基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)を参照してください。
 
-* バージョンが含まれる場合、パス `/var/audit` 監査イベントを移行するために、が自動的に含まれます。
+* バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
 
 ## ベストプラクティスアナライザー {#best-practices-analyzer}
 
 ### リリース日 {#release-date-bpa-latest}
 
-ベストプラクティスアナライザー v2.1.20 のリリース日は 2021 年 10 月 5 日です。
+ベストプラクティスアナライザー v2.1.20 のリリース日は 2021年10月5日です。
 
 ### 新機能 {#what-is-new-bpa-oct}
 
-* ノード名の長さを検出し、レポートする機能。
+* ノード名の長さを検出して通知できるようになりました。
 
-* 合計インデックスサイズを検出し、レポートする機能。
+* 合計インデックスサイズを検出して通知できるようになりました。
 
-* 元のレンディションが欠落しているアセットを検出し、レポートする機能。
+* 元のレンディションが欠落しているアセットを検出して通知できるようになりました。

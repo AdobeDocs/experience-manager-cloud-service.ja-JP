@@ -3,13 +3,13 @@ title: Adobe Identity Management System
 description: このページでは、Identity Management System について説明します。
 exl-id: 3fd51410-7ad6-486f-bc3c-ef3d5473c19d
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%
 
 ---
 
-# Adobe Identity Management System {#intro-ims}
+# AdobeIdentity Management System {#intro-ims}
 
 AEM as a Cloud Service には、認証用に Adobe Identity Management System（IMS）が事前設定されています。これまで AEM では、ユーザーが Active Directory や IMS などの ID プロバイダー（IDP）を設定する必要がありました。
 

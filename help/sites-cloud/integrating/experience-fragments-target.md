@@ -1,7 +1,8 @@
 ---
 title: エクスペリエンスフラグメントのAdobe Targetへの書き出し
 description: エクスペリエンスフラグメントのAdobe Targetへの書き出し
-source-git-commit: 6d38886bf3f87be09dd897f615a471c4b8ddd6b7
+exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 50%

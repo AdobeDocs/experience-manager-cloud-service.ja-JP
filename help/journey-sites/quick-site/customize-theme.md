@@ -1,13 +1,13 @@
 ---
 title: サイトテーマのカスタマイズ
 description: サイトテーマの構築方法、カスタマイズ方法、およびAEMのライブコンテンツを使用したテスト方法について説明します。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 1%
 
 ---
-
 
 # サイトテーマのカスタマイズ {#customize-the-site-theme}
 
@@ -123,7 +123,7 @@ AEM管理者から提供された要件に基づいて、テーマのカスタ�
 
 これで、カスタマイズ内容がAEM Git リポジトリに安全に保存されました。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Quick Site Creation ジャーニーのこの部分が完了し、次の作業をおこなう必要があります。
 

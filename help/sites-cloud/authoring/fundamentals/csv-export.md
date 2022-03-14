@@ -3,13 +3,13 @@ title: CSV ファイルへの書き出し
 description: ページの情報をローカルシステムの CSV ファイルに書き出します
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 100%
 
 ---
 
-# CSV ファイルへの書き出し {#export-to-csv}
+# CSV ファイルへの書き出し  {#export-to-csv}
 
 **CSV レポートの作成**&#x200B;では、ページの情報をローカルシステムの CSV ファイルに書き出すことができます。
 

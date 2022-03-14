@@ -1,10 +1,11 @@
 ---
 title: 製品エクスペリエンスの構築
 description: 製品エクスペリエンスを構築する方法を説明します。
-source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
+exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -100,15 +101,15 @@ AEMでは、様々なタイプのコンテンツを作成し、それらを商�
 
 ![pem が強化されたページ](assets/pem-page-enriched.png)
 
-## ジャーニー? {#end-of-journey}
+## ジャーニーの終了 {#end-of-journey}
 
-おめでとうございます。AEM Content and Commerce Developer ジャーニーが完了しました。 次の手順を実行します。
+おめでとうございます。AEM Content and Commerce Developer ジャーニーが完了しました。 その結果、以下を達成できました。
 
 * 任意のAEMコンテンツを商品カタログオブジェクトに関連付ける方法を理解する
 * 製品ページとカテゴリページを個別にエンリッチメントするためのプレースホルダーを使用
 * コンテンツをショッパブルにし、関連する「コンテンツ」タブを使用する方法を理解する
 
-これで、AEMコンテンツとコマースを使用して製品エクスペリエンスを管理する準備が整いました。 ただし、AEM Content と Commerce には、他にも多くのオプションが用意されています。 その他のリソースについては、 [「その他のリソース」セクション](#additional-resources) このジャーニーで確認した機能の詳細を確認するには、以下を参照してください。
+これで、AEMコンテンツとコマースを使用して製品エクスペリエンスを管理する準備が整いました。 ただし、AEM Content と Commerce には、他にも多くのオプションが用意されています。 このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 
 ## その他のリソース {#additional-resources}
 

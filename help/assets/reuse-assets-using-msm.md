@@ -5,13 +5,13 @@ contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
-source-git-commit: ccea7039b9e7e165da6761d0ee454b426242f8fb
-workflow-type: ht
+exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 100%
 
 ---
-
 
 # MSM for を使用したアセットの再利用[!DNL Assets] {#reuse-assets-using-msm-for-assets}
 

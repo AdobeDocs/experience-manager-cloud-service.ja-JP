@@ -1,20 +1,20 @@
 ---
-title: タグの使用
+title: 'タグの使用 '
 description: タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます。
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 100%
 
 ---
 
-# タグの使用 {#using-tags}
+# タグの使用  {#using-tags}
 
 タグを使用すると、Web サイト内のコンテンツをすばやく簡単に分類できます。タグはキーワードやラベルとしてページ、アセット、その他のコンテンツに添付し、コンテンツや関連コンテンツを検索できます。
 
 * タグの作成および管理や、タグが適用されるコンテンツについては、「タグの管理」を参照してください。<!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* タグ付けのフレームワークおよびカスタムアプリケーションにタグを追加したりタグを拡張したりする方法について詳しくは、[開発者のためのタグ付け](/help/implementing/developing/introduction/tagging-framework.md)を参照してください。
+* タグ付けのフレームワークのほか、カスタムアプリケーションでタグを追加したりタグを拡張したりする方法について詳しくは、[開発者のためのタグ付け](/help/implementing/developing/introduction/tagging-framework.md)を参照してください。
 
 ## タグを使用する 10 の理由 {#ten-reasons-to-use-tagging}
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 サイトのコンテンツ構造やアセットのメタデータスキーマを設計する際には、タグ付け機能が提供する軽量でアクセス可能なアプローチを検討してください。
 
-## タグの適用{#applying-tags}
+## タグの適用 {#applying-tags}
 
 オーサー環境では、作成者はページのプロパティにアクセスし、「**タグ／キーワード**」フィールドに 1 つ以上のタグを入力することでタグを適用できます。
 

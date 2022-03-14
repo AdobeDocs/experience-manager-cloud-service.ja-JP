@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Beginner
 kt: 9454, 9470
 thumbnail: 339166.jpg
-source-git-commit: 9e29904775ee0ecd17ab075230e532583bbccd53
+exl-id: 4aabd84b-0ccb-482b-85e7-09bacbce85c1
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
 
 ---
-
 
 # App Builder SDK および CLI
 

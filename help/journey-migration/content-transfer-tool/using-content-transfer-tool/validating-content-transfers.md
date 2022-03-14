@@ -1,13 +1,13 @@
 ---
 title: コンテンツ転送の検証
 description: コンテンツ転送ツールを使用して、コンテンツ転送を検証します
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
 
 ---
-
 
 # コンテンツ転送の検証 {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Migration validation took 0 minutes
 抽出および取り込みのダイジェストからの一部のパスは、これらのファイルのサイズを管理しやすくする目的で除外され、取り込みが完了してから 2 時間以内に移行の検証結果を計算できるようになります。
 
 現在ダイジェストから除外しているパスは次のとおりです。 `cqdam.text.txt` レンディション、内のノード `/home`、および内のノード `/jcr:system`.
-
-
-
-

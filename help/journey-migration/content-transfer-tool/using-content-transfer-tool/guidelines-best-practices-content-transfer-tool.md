@@ -1,13 +1,13 @@
 ---
 title: コンテンツ転送ツール使用のガイドラインとベストプラクティス
 description: コンテンツ転送ツール使用のガイドラインとベストプラクティス
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1503'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
-
 
 # コンテンツ転送ツール使用のガイドラインとベストプラクティス {#guidelines}
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 >id="aemcloud_ctt_guidelines"
 >title="ガイドラインとベストプラクティス"
 >abstract="リビジョンクリーンアップタスク、ディスク容量に関する考慮事項など、コンテンツ転送ツールを使用する際のガイドラインとベストプラクティスを確認します。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#pre-reqs" text="コンテンツ転送ツール使用時の重要な考慮事項"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#important-considerations" text="ユーザーマッピングツール使用時の重要な考慮事項"
 
 コンテンツ転送ツールを使用する際には、以下のガイドラインとベストプラクティスに従ってください。
@@ -39,7 +39,7 @@ ht-degree: 88%
 
 * コンテンツ追加をサポートするには、コンテンツ転送アクティビティ全体を通して移行セットを維持管理する必要があります。コンテンツ転送アクティビティで一度に作成および維持管理できる移行セットは最大 10 個なので、コンテンツリポジトリーを適宜分割して、移行セットが不足しないようにすることをお勧めします。
 
-## コンテンツ転送ツールを使用する前に考慮すべき重要事項 {#important-considerations}
+## コンテンツ転送ツール使用前の重要な考慮事項 {#important-considerations}
 
 コンテンツ転送ツールを実行する際には、次の重要事項を考慮してください。
 
@@ -59,7 +59,7 @@ ht-degree: 88%
 
 * アクセストークンは、特定の期間の後、または Cloud Service 環境のアップグレード後に、定期的に期限切れになる場合があります。アクセストークンの有効期限が切れると、Cloud Service インスタンスに接続できなくなり、新しいアクセストークンを取得する必要があります。既存の移行セットに関連付けられているステータスアイコンが赤の雲アイコンに変わり、その上にカーソルを置くとメッセージが表示されます。
 
-* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツは何であれ、選択したターゲットインスタンスに取り込まれます。オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際は、ソースオーサーインスタンスに CTT をインストールしてコンテンツをターゲットオーサーインスタンスに移動し、同様に、ソースパブリッシュインスタンスに CTT をインストールしてコンテンツをターゲットパブリッシュインスタンスに移動することをお勧めします。参照： [パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) を参照してください。
+* コンテンツ転送ツール（CTT）は、ソースインスタンスからターゲットインスタンスにコンテンツを転送する前に、どのような種類のコンテンツ分析も実行しません。例えば、CTT では、コンテンツをパブリッシュ環境に取り込む際に、公開済みコンテンツと非公開コンテンツを区別しません。移行セットで指定されているコンテンツは何であれ、選択したターゲットインスタンスに取り込まれます。オーサーインスタンスとパブリッシュインスタンスのどちらか一方または両方に移行セットを取り込むことができます。コンテンツを実稼動インスタンスに移動する際は、ソースオーサーインスタンスに CTT をインストールしてコンテンツをターゲットオーサーインスタンスに移動し、同様に、ソースパブリッシュインスタンスに CTT をインストールしてコンテンツをターゲットパブリッシュインスタンスに移動することをお勧めします。詳しくは、[パブリッシュインスタンスでのコンテンツ転送ツールの実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja#running-ctt-on-publish)を参照してください。
 
 * コンテンツ転送ツールによって転送されるユーザーとグループは、権限を満たすためにコンテンツで必要なものに限られます。*抽出*&#x200B;プロセスでは、`/home` 全体を移行セットにコピーし、*取り込み*&#x200B;プロセスでは、移行されたコンテンツ ACL で参照されているすべてのユーザーおよびグループをコピーします。既存のユーザーやグループを IMS ID に自動的にマッピングする場合は、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)を参照してください。
 
@@ -79,8 +79,8 @@ ht-degree: 88%
 
 * 追加を行う場合は、最初の抽出を実行した時点から、追加抽出を実行する時点まで、既存コンテンツのコンテンツ構造が変わらないことが不可欠です。最初の抽出以降に構造が変更されたコンテンツに対しては、追加を実行できません。移行プロセス中は、必ずこの制限を実施してください。
 
-* バージョンを移行セットに含める予定で、 `wipe=false`を無効にした場合、コンテンツ転送ツールの現在の制限により、バージョンのパージを無効にする必要があります。 バージョンのパージを有効にしたまま、移行セットへの追加アップを実行する場合は、次のように取り込みを実行する必要があります。 `wipe=true`.
+* バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-コンテンツ転送ツールの使用に関するガイドライン、ベストプラクティス、重要な考慮事項を学習したら、移行セットの作成から始めて、ツールをインストールして使用する準備が整いました。 詳しくは、 [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照してください。
+コンテンツ転送ツールの使用に関するガイドライン、ベストプラクティス、重要な考慮事項を理解したら、ツールをインストールして使用する準備が整いました。まず、移行セットの作成から始めます。詳しくは、[コンテンツ転送ツールの基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)を参照してください。

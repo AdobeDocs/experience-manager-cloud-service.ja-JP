@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  のリッチテキストエディタ�
 description: ' [!DNL Experience Manager]  リッチテキストエディターを使用したコンテンツのオーサリング'
 exl-id: 15c175f8-11de-4475-87a9-920219a4c004
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 100%
 

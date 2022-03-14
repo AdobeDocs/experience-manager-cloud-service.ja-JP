@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ AEM Sites 翻訳ジャーニーの以前のドキュメント（[AEM Sites コ�
 このドキュメントでは、AEM で Sites コンテンツの翻訳にどのように取りかかればよいかを説明します。読み終えると、以下を達成できます。
 
 * 翻訳におけるコンテンツ構造の重要性を理解する
-* AEM のコンテンツの保存方法を理解する
+* AEM でのコンテンツの保存方法を理解する
 * AEM の翻訳ツールに詳しくなる
 
 ## 要件と前提条件 {#requirements-prerequisites}
@@ -198,7 +198,7 @@ AEM のコンテンツは、その構造によって決まります。AEM では
 これで、AEM Sites 翻訳ジャーニーのこのステップが完了し、以下を達成できました。
 
 * 翻訳におけるコンテンツ構造の重要性を理解する
-* AEM のコンテンツの保存方法を理解する
+* AEM でのコンテンツの保存方法を理解する
 * AEM の翻訳ツールに詳しくなる
 
 この知識を基に、AEM Sites 翻訳ジャーニーを続けてください。次に、[翻訳コネクタの設定](configure-connector.md)のドキュメントを参照しながら、AEM を翻訳サービスに接続する方法について説明します。

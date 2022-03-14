@@ -1,10 +1,11 @@
 ---
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +61,7 @@ ht-degree: 96%
    * テスト
 
 >[!NOTE]
->これらのタブの内容を確認し、ベストプラクティスアナライザーで扱われないその他の領域を理解してください。
+>これらのタブに表示される内容を確認して、ベストプラクティスアナライザーで扱われていないその他の領域についても把握してください。
 
 「**Dispatcher**」タブでは、AEM as a Cloud Service の Apache および Dispatcher の設定を構築する方法と、クラウド環境にデプロイする前にローカルで検証および実行する方法に関する情報が表示されます。また、クラウド環境でのデバッグについても説明します。
 
@@ -114,6 +115,6 @@ AEM リポジトリーのサイズを推定するには、`http://HOST:PORT/etc/
 
 `path` パラメーターを使用して（例：`http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`）、特定のリポジトリーパスのサイズを推定することもできます。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 Cloud Acceleration Manager へのログイン方法と実装フェーズの利用方法を理解したら、次のステップの[運用開始フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=ja)に進みます。

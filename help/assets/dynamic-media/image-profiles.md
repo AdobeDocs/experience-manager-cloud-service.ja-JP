@@ -79,15 +79,15 @@ ht-degree: 78%
 
 | 画像形式 | ファイル拡張子の大文字と小文字を区別しない | MIME タイプ | サポートされる入力カラースペース | サポートされる入力ファイルの最大サイズ | サポートされている画像形式？ |
 | --- | --- | --- | --- | --- | --- |
-| BMP | `.bmp` | image/bmp | sRGB | 4 GB | 対応 |
-| EPS |  |  |  |  | 不可 |
+| BMP | `.bmp` | image/bmp | sRGB | 4 GB | はい |
+| EPS |  |  |  |  | いいえ |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | はい、レンディションには、アニメーションGIFの最初のフレームが使用されます。 最初のフレームは設定または変更できません。 |
-| JPEG | `.jpg` および `.jpeg` | image/jpeg | sRGB | 15 GB | 対応 |
-| PNG | `.png` | image/png | sRGB | 15 GB | 対応 |
-| PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | 対応 |
-| SVG |  |  |  |  | 不可 |
-| TIFF | `.tif` および `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | 対応 |
-| WebP/アニメーション WebP |  |  |  |  | 不可 |
+| JPEG | `.jpg` および `.jpeg` | image/jpeg | sRGB | 15 GB | はい |
+| PNG | `.png` | image/png | sRGB | 15 GB | はい |
+| PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | はい |
+| SVG |  |  |  |  | いいえ |
+| TIFF | `.tif` および `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | はい |
+| WebP/アニメーション WebP |  |  |  |  | いいえ |
 
 ## Dynamic Media イメージプロファイルの作成 {#creating-image-profiles}
 

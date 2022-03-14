@@ -3,7 +3,7 @@ title: AEM 内での外部 SPA の編集
 description: このドキュメントでは、スタンドアロン SPA を AEM インスタンスにアップロードし、編集可能なコンテンツのセクションを追加し、オーサリングを有効にするための推奨手順について説明します。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2127'
 ht-degree: 100%
 
@@ -286,7 +286,7 @@ mvn clean install -PautoInstallSinglePackage
 
    ![Body.html へのルート要素の追加](assets/external-spa-add-root.png)
 
-### ルーティングを使用したリアクション SPA の編集 {#editing-react-spa-with-routing} 
+### ルーティングを使用したリアクション SPA の編集   {#editing-react-spa-with-routing}
 
 外部 React SPA アプリケーションに複数のページがある場合、[レンダリングするページ／コンポーネントを決定する際にルーティングを使用できます。](/help/implementing/developing/hybrid/routing.md)基本的な使用例は、現在アクティブな URL とルートに指定されたパスを一致させることです。このようなルーティング対応アプリケーションでの編集を可能にするには、対応するパスを AEM 固有の情報に合わせて変換する必要があります。
 

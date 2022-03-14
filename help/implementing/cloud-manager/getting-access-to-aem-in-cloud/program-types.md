@@ -29,7 +29,7 @@ Cloud Manager は、エンティティの階層を中心に構築されていま
 * WKND Travel and Adventure Enterprises テナントは、2 つの **プログラム**:WKND Magazine 向けの 1 つの Sites プログラムと WKND Media 向けの 1 つの Assets プログラムです。
 * WKND Magazine と WKND Media の両方のプログラムには、開発、ステージ、実稼動が含まれます **環境**.
 
-## ソースコードリポジトリー {#source-code-repository}
+## ソースコードリポジトリ {#source-code-repository}
 
 Cloud Manager プログラムには、独自の Git リポジトリが自動プロビジョニングされます。
 

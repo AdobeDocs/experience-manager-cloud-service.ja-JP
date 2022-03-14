@@ -1,12 +1,12 @@
 ---
 title: 関連コンテンツ
 description: AEM 関連のコンテンツ機能によって接続を提供する方法を理解し、フラグメントをコンテンツページに追加する際に、オプションでアセットをフラグメントと共に使用できるようにして、ヘッドレスコンテンツ配信の柔軟性を高めます。
-feature: コンテンツフラグメント
+feature: Content Fragments
 role: User
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '246'
+workflow-type: tm+mt
+source-wordcount: '244'
 ht-degree: 100%
 
 ---

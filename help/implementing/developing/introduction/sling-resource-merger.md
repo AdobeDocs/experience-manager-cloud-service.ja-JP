@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service での Sling Resource Merger 
 description: Sling Resource Merger は、リソースのアクセスとマージのためのサービスを提供します
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ AEM で Sling Resource Merger を使用する目的は、次のとおりです�
    `/libs` 定義に存在しないプロパティが `/apps` オーバーレイ／オーバーライドで必要になった場合に、プロパティを追加できます。
 
    1. `/apps` 内に、対応するノードを作成します。
-   1. このノード&grave;&grave;で新しいプロパティを作成します。
+   1. このノード``で新しいプロパティを作成します。
 
 * **プロパティの再定義（自動作成されたプロパティ以外）**
 

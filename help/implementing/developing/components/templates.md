@@ -3,7 +3,7 @@ title: ページテンプレート
 description: ページテンプレートは、新しいページのベースとして使用するページを作成する際に使用します
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3296'
 ht-degree: 100%
 
@@ -477,7 +477,7 @@ GitHub のコード
 
 ページポリシーを使用して、テンプレートまたは作成されるページで、ページ（メインの parsys）の[コンテンツポリシー](#content-policies)を定義できます。
 
-### 使用するテンプレートの有効化と許可{#enabling-and-allowing-a-template-for-use}
+### 使用するテンプレートの有効化と許可 {#enabling-and-allowing-a-template-for-use}
 
 1. **テンプレートの有効化**
 
@@ -488,7 +488,6 @@ GitHub のコード
    * `jcr:content` ノードの status プロパティを設定する。
 
       * 例：
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * プロパティの定義
@@ -501,7 +500,6 @@ GitHub のコード
 
    * [適切なページまたはサブブランチのルートページの&#x200B;**ページプロパティ**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author)&#x200B;に対して許可されたテンプレートのパスを定義します。
    * プロパティを設定します。
-
       `cq:allowedTemplates` 
 を 
 必要なブランチの `jcr:content` ノードに設定します。

@@ -3,13 +3,13 @@ title: ContextHub ストア候補のサンプル
 description: ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 100%
 
 ---
 
-# ContextHub ストア候補のサンプル{#sample-contexthub-store-candidates}
+# ContextHub ストア候補のサンプル {#sample-contexthub-store-candidates}
 
 ContextHub には、ソリューションで利用できるサンプルストア候補がいくつか用意されています。各サンプルでは次の情報が提供されます。
 
@@ -307,7 +307,7 @@ aem.segmentation ストア候補は、[`ContextHub.Store.PersistedJSONPStore`](c
 }
 ```
 
-## granite.profile サンプルストア候補{#granite-profile-sample-store-candidate}
+## granite.profile サンプルストア候補 {#granite-profile-sample-store-candidate}
 
 現在のユーザーに関する情報を格納します。
 

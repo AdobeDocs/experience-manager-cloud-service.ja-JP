@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリー�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 リリースのリリースノート。'
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### [!DNL Forms] の新機能  {#what-is-new-forms}
+### [!DNL Forms] の新機能 {#what-is-new-forms}
 
 * **コンテキストヘルプ**：アダプティブフォームエディター、テンプレートエディター、テーマエディターのコンテキストヘルプが追加され、作成者がエディターの様々な機能をより深く理解できるようになりました。
 * **プロパティブラウザーのエラーメッセージ**：アダプティブフォームのプロパティブラウザーに、各プロパティに関するエラーメッセージを追加しました。これらのメッセージは、フィールドの許可値を理解するのに役立ちます。
@@ -82,7 +82,7 @@ ht-degree: 100%
 Output as a Cloud service：出力サービスを使用すると、XDP テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および非同期の一括モードでドキュメントを生成できます。出力サービスにより、以下のような機能を備えたアプリケーションを作成することができます。
 
 * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
-* 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成する。
+* 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
 * XFA フォームの PDF ファイルから印刷用 PDF を生成する。
 
 ベータ版プログラムに新規登録する場合は、 formscsbeta@adobe.com までお問い合わせください。

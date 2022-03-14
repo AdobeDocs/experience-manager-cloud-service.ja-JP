@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリー�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 リリースのリリースノート。'
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
 
@@ -124,16 +124,16 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 * ソース PDF フォーム内の論理セクションを自動的に検出し、対応するアダプティブフォームパネルに変換する際の速度と精度が向上しました。
 * PDF または XDP ファイルをフォルダー間で移動する移動アクションが追加されました。
 
-### [!DNL Forms] のベータ機能 {#what-is-new-forms-prerelease}
+### [!DNL Forms] のベータ版機能 {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**：通信 API を使用すると、XDP テンプレートと XML データを組み合わせて様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成する。
-   * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成する。
+   * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
    * XFA フォーム PDF および Adobe Acrobat フォーム（AcroForms）から印刷用 PDF を生成する。
 
 * **Variable Data Externalizer**：AEM ワークフロー変数のデータを、組織で管理される外部ストレージシステムに保存できます。
 
-[!DNL formscsbeta@adobe.com] に書き込んで、ベータ版プログラムにサインアップできます。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
 
 ### [!DNL Forms] で修正されたバグ  {#forms-bugs-fixed}
 

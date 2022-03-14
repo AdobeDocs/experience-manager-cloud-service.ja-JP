@@ -1,7 +1,8 @@
 ---
 title: REST API
 description: Screens as a Cloud Serviceには、 Siren の仕様に準拠するシンプルな RESTful API が用意されています。 このページの説明に従って、コンテンツ構造内を移動する方法と環境内のデバイスにコマンドを送信する方法を学習します。
-source-git-commit: fc3c047c6ad08db6e992a2aedc58c9cc1478b99f
+exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 92%

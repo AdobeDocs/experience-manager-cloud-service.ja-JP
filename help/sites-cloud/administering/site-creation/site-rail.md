@@ -3,13 +3,13 @@ title: サイトレールを使用したサイトテーマの管理
 description: サイトテーマを簡単にカスタマイズおよび管理できる、サイトパネルの強力な機能について説明します。
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # サイトレールを使用したサイトテーマの管理 {#site-rail}
 

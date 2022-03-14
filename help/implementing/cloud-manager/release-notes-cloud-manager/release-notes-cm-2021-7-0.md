@@ -2,8 +2,9 @@
 title: AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.7.0 Cloud Manager のリリースノート
 feature: Release Information
-source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: ht
+exl-id: 7ef738a5-4657-482d-848b-e95e4fb816f9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 100%
 
@@ -52,4 +53,3 @@ AEM as a Cloud Service 2021.7.0 の Cloud Manager のリリース日は 2021 年
 ### 既知の問題 {#known-issues}
 
 Azul JDK の使用に切り替えるお客様は、すべての既存アプリケーションが Azul JDK でエラーなしにコンパイルされるとは限らないことに注意してください。切り替える前に、ローカルでテストすることを強くお勧めします。
-

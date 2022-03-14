@@ -7,7 +7,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 | 使用 - Experience Manager からドキュメント内にアセットを配置する | 対応 - 埋め込み | 対応 - リンクまたは埋め込み | Experience Manager デスクトップアプリケーションでは、ローカルファイルシステム上のファイルとしてアセットにアクセスできます。ネイティブアプリでは、これらのリンクはローカルパスで表されます。 |
 | 編集 - 編集用に開く | 対応 - チェックアウトアクション | 対応 - 「開く」アクション（ネットワーク共有内） | 「[AAL でチェックアウト](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)」の場合は、デフォルトでは、アセットをユーザーの Creative Cloud ストレージアカウント（Creative Cloud アプリで同期）に保存します。 |
 | 編集 - Experience Manager の外部で作業する | 対応 - デスクトップに同期しているユーザーの Creative Cloud ストレージアカウントでアセットが入手可能です。 | 対応 |  |
-| 編集 - 変更をアップロードする | 対応 - [チェックインアクション](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)（オプションコメント付き） | 対応 |  |
+| 編集 - 変更をアップロードする | 対応 - [チェックインアクション](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)（オプションコメント付き） | 対応 |  |
 | アップロード - 単一ファイル | 対応 - 現在のアクティブなドキュメントをアップロードします | 対応 | [Web インターフェイスを使用してアップロード](/help/assets/manage-digital-assets.md#uploading-assets) |
 | アップロード - 複数ファイル／階層フォルダー構造 | 非対応 | 対応 | [Web インターフェイスを使用してアップロード](/help/assets/manage-digital-assets.md#uploading-assets)。カスタムスクリプティングまたはツール |
 | その他 - ユーザーとログイン | Creative Cloud デスクトップアプリケーションにログインした Creative Cloud ユーザーが認識されます（SSO） | Experience Manager ユーザー／ログイン | 両方のソリューションのユーザーが Experience Manager ユーザークォータに対してカウントされます。 |
@@ -74,7 +74,7 @@ Adobe Creative Cloud は、デジタルアセットの作成を支援するソ�
 
 アセット配布のユースケースをサポートするには、次のオプションを考慮します。
 
-* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja)：Assets への設定可能なアドオンでアセットの公開に使用。
+* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)：Assets への設定可能なアドオンでアセットの公開に使用。
 
 * カスタムソリューションは [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/) のコードベースに基づいて作成される。
 * Experience Manager [リンク共有](/help/assets/share-assets.md)：リンクを使用してアドホックでアセットを共有する。
@@ -185,7 +185,7 @@ DAM インスタンスへの直接アクセス権を持たない外部のエー�
 以下の戦略で最終／承認済みアセットへのアクセスを提供します。
 
 * Asset Link が機能しない場合は、デスクトップアプリケーションを使用します。
-* 外部パートナーに安全にアセットを配布するには、[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja) を使用します。
+* 外部パートナーに安全にアセットを配布するには、[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) を使用します。
 * [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) に基づいた、配布および調達用ポータルのカスタム実装を使用します。
 * Experience Manager に設定されたアクセス制御と必要なネットワークインフラストラクチャ（VPN や IP の許可リストなど）を使用して、DAM 内の専用のコンテンツ領域に外部の関係者がアクセスできるようにします。Experience Manager Web UI を使用してアセットを取得したり、新しいコンテンツを DAM にアップロードしたりできます。
 

@@ -1,13 +1,13 @@
 ---
-title: '既知の問題 '
+title: 既知の問題
 description: コミュニケーションのベストプラクティス、既知の問題、制限事項
-source-git-commit: bf7ce5850700141a8a6d1eeb90ea0fd21ff811e7
+exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 91%
 
 ---
-
 
 # 考慮事項の既知の問題とベストプラクティス {#best-practices-known-issues-and-limitations}
 

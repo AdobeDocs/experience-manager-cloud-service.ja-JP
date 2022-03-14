@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager のリリースノート
 description: AEM as a Cloud Service リリース 2020.6.0 の Cloud Manager のリリースノート
-feature: リリース情報
+feature: Release Information
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '606'
+workflow-type: tm+mt
+source-wordcount: '604'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ AEM as a Cloud Service 2020.6.0 の Cloud Manager のリリース日は 2020 年
 
 * Cloud Manager の&#x200B;*ビジネス所有者*&#x200B;または&#x200B;*デプロイメントマネージャー*&#x200B;のロールにあるサンドボックスプログラムユーザーが、Cloud Manager UI を使用して、実稼動環境とステージ環境のセットを削除できるようになりました。削除オプションが、**プログラムの概要ページの環境カード**&#x200B;と、**環境**&#x200B;ページの両方から利用できるようになりました。実稼動環境またはステージ環境で削除オプションを選択すると、セットの他の内容も削除されます。
 
-   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=ja)を参照してください。
+   詳細は、[サンドボックスプログラムの削除](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html)を参照してください。
 
 * ランディングページにコーチマークを付け、基本的なナビゲーションについてユーザーに通知し、指示します。
 

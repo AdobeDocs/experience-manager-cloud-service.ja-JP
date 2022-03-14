@@ -1,13 +1,13 @@
 ---
 title: テンプレートからサイトを作成
 description: サイトテンプレートを使用して新しいAEMサイトをすばやく作成する方法を説明します。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 1%
 
 ---
-
 
 # テンプレートからサイトを作成 {#create-site-from-template}
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 これで設定が完了しました。 コンテンツ作成者は、ジャーニーの次のステップで、フロントエンドのカスタマイズに向けて、サイトの準備が開始される際に、コンテンツの作成を開始できるようになりました。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Quick Site Creation ジャーニーのこの部分が完了し、次の作業をおこなう必要があります。
 

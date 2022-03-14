@@ -3,13 +3,13 @@ title: ContextHub でのセグメント化の設定
 description: ContextHub を使用してセグメントを設定する方法を説明します。
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 100%
 
 ---
 
-# ContextHub でのセグメント化の設定 {#configuring-segmentation-with-contexthub}
+# ContextHub でのセグメント化の設定{#configuring-segmentation-with-contexthub}
 
 キャンペーンを作成する場合、セグメント化を考えることが重要になります。セグメント化の仕組みと主な用語について詳しくは、「[セグメント化について](segmentation.md)」を参照してください。
 
@@ -112,7 +112,7 @@ AEM では、ユーザーエクスペリエンスを簡単にパーソナライ�
 1. 「**完了**」をクリックして定義を保存します。
 1. 必要に応じてその他のコンポーネントを追加します。AND 比較および OR 比較のコンテナコンポーネントを使用して、ブール式を作成できます（後述の [AND コンテナと OR コンテナの使用](#using-and-and-or-containers)を参照）。セグメントエディターでは、不要になったコンポーネントを削除したり、コンポーネントをステートメント内の別の場所へドラッグしたりすることができます。
 
-### AND コンテナと OR コンテナの使用{#using-and-and-or-containers}
+### AND コンテナと OR コンテナの使用 {#using-and-and-or-containers}
 
 AND および OR コンテナコンポーネントを使用すると、AEM で複雑なセグメントを作成できます。この際、次の基本事項に留意してください。
 
@@ -139,7 +139,7 @@ AND および OR コンテナコンポーネントを使用すると、AEM で�
 
 スクリプト参照コンポーネントを使用すると、セグメントプロパティの評価を外部スクリプトに委任できます。適切に設定したスクリプトは、セグメント条件の他のコンポーネントと同じように使用できます。
 
-#### 参照するスクリプトの定義{#defining-a-script-to-reference}
+#### 参照するスクリプトの定義 {#defining-a-script-to-reference}
 
 1. `contexthub.segment-engine.scripts` クライアントライブラリにファイルを追加します。
 1. 値を返す関数を実装します。次に例を示します。
@@ -285,6 +285,6 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. プレビューモードに切り替えてから、ContextHub を使用して、エクスペリエンスに設定されているセグメント化と一致しないペルソナに切り替えます。
 1. エクスペリエンスに設定されているセグメント化と一致するペルソナに切り替え、それに応じてエクスペリエンスが変化することを確認します。
 
-## セグメントの使用{#using-your-segment}
+## セグメントの使用 {#using-your-segment}
 
 セグメントを使用して、特定のターゲットオーディエンスに向けられた実際のコンテンツを制御することができます。オーディエンスおよびセグメントについて詳しくは、[オーディエンスの管理](audiences.md)を参照してください。オーディエンスおよびセグメントを使用したコンテンツのターゲティングについては、[ターゲットコンテンツのオーサリング](targeted-content.md)を参照してください。

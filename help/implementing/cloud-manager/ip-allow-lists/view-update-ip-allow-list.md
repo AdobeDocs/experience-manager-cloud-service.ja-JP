@@ -3,13 +3,13 @@ title: 表示と更新 - Cloud Manager での IP 許可リスト
 description: 表示と更新 - Cloud Manager での IP 許可リスト
 exl-id: 9f9aebcd-b6d0-497a-b262-0a24b4938b45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 100%
 
 ---
 
-# IP 許可リストの表示または更新 {#view-update}
+# IP 許可リストの表示と更新 {#view-update}
 
 IP 許可リストを表示および更新できるシナリオは、次のとおりです。
 

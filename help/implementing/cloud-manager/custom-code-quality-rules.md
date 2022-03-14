@@ -5,7 +5,7 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
 workflow-type: tm+mt
 source-wordcount: '3495'
-ht-degree: 50%
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 50%
 >title="カスタムコード品質ルール"
 >abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。 これらは、AEM Engineering のベストプラクティスに基づいています。"
 
-このページでは、Cloud Manager が [コード品質テスト。](/help/implementing/cloud-manager/code-quality-testing.md) これらは、AEM Engineering のベストプラクティスに基づいています。
+このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて[説明します。](/help/implementing/cloud-manager/code-quality-testing.md) これらは、AEM Engineering のベストプラクティスに基づいています。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 50%
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-メソッド `Thread.stop()` および `Thread.interrupt()` は再現が困難な問題を引き起こし、場合によってはセキュリティの脆弱性を引き起こす可能性があります。 その使用状況は、厳密に監視および検証する必要があります。一般的に、似た目標を達成するにはメッセージを渡すとより安全です。
+`Thread.stop()` と `Thread.interrupt()` のメソッドは、再現が困難な問題を引き起こし、場合によってはセキュリティの脆弱性を生み出す可能性があります。その使用状況は、厳密に監視および検証する必要があります。一般的に、似た目標を達成するにはメッセージを渡すとより安全です。
 
 #### 準拠していないコード {#non-compliant-code}
 
@@ -176,16 +176,16 @@ public void orDoThis() {
 }
 ```
 
-### ResourceResolver オブジェクトを常に閉じる必要がある {#resourceresolver-objects-should-always-be-closed}
+### ResourceResolver オブジェクトは常に閉じる必要がある {#resourceresolver-objects-should-always-be-closed}
 
 * **キー**：CQRules:CQBP-72
 * **タイプ**：コードスメル
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-`ResourceResolver` ～から得られる物体 `ResourceResolverFactory` システムリソースを消費します。 ただし、 `ResourceResolver` は使用されなくなったので、開いているすべてのを明示的に閉じるほうが効率的です `ResourceResolver` オブジェクトを `close()` メソッド。
+`ResourceResolverFactory` から取得された `ResourceResolver` オブジェクトは、システムリソースを使用します。`ResourceResolver` が使用されなくなった場合に、これらのリソースを再利用する指標がありますが、`close()` メソッドを呼び出し、開いている `ResourceResolver` オブジェクトを明示的に閉じるほうが効率的です。
 
-一つの比較的一般的な誤解は `ResourceResolver` 既存の JCR セッションを使用して作成されたオブジェクトは、明示的に閉じないでください。閉じると、基になる JCR セッションが閉じられます。 そうではありません。 どのように `ResourceResolver` が開いている場合は、使用されなくなったら閉じる必要があります。 次以降 `ResourceResolver` を実装する `Closeable` インターフェイス、 `try-with-resources` 明示的にを呼び出す代わりの構文 `close()`.
+一つの比較的一般的な誤解は `ResourceResolver` 既存の JCR セッションを使用して作成されたオブジェクトは、明示的に閉じないでください。閉じると、基になる JCR セッションが閉じられます。 これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
 
 #### 準拠していないコード {#non-compliant-code-4}
 
@@ -218,7 +218,7 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### Sling サーブレットパスを使用してサーブレットを登録しない {#do-not-use-sling-servlet-paths-to-register-servlets}
+### サーブレットの登録に Sling サーブレットパスを使用しない {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **キー**：CQRules:CQBP-75
 * **タイプ**：コードスメル
@@ -306,7 +306,7 @@ public void doThis() throws Exception {
 }
 ```
 
-### GETまたはHEAD要求を処理する際の INFO でのログの回避 {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### GET または HEAD 要求を処理する際は INFO でログに記録しない {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **キー**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
 * **タイプ**：コードスメル
@@ -334,14 +334,14 @@ public void doGet() throws Exception {
 }
 ```
 
-### Logging ステートメントの最初のパラメーターとして Exception.getMessage() を使用しない {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### Exception.getMessage() をログステートメントの最初のパラメーターとして使用しない {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **キー**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-ベストプラクティスとして、ログメッセージは、アプリケーション内での問題の発生場所に関するコンテキスト情報を提供する必要があります。また、スタックトレースを使用してコンテキストを判断することもできます。これにより、一般的にログメッセージが読みやすく、わかりやすくなります。その結果、例外をログに記録する場合、例外のメッセージをログメッセージとして使用するのは悪い方法です。例外メッセージには、何が起こったかが含まれますが、ログメッセージは、例外が発生したときにアプリケーションが何を実行したかをログリーダーに伝えるために使用する必要があります。 例外メッセージは、引き続きログに記録されます。独自のメッセージを指定すると、ログがわかりやすくなります。
+ベストプラクティスとして、ログメッセージは、アプリケーション内での問題の発生場所に関するコンテキスト情報を提供する必要があります。また、スタックトレースを使用してコンテキストを判断することもできます。これにより、一般的にログメッセージが読みやすく、わかりやすくなります。結果として、例外をログに記録する場合、例外のメッセージをログメッセージとして使用するのは望ましくありません。例外メッセージには発生した問題の説明を含めるのに対して、ログメッセージでは、例外が発生したときにアプリケーションが何を実行していたかを示す必要があります。例外メッセージは、引き続きログに記録されます。独自のメッセージを指定すると、ログがわかりやすくなります。
 
 #### 準拠していないコード {#non-compliant-code-9}
 
@@ -367,14 +367,14 @@ public void doThis() {
 }
 ```
 
-### Catch ブロックのログは WARN または ERROR レベルにする {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### catch ブロックのログは、WARN または ERROR レベルにする必要がある {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **キー**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-名前が示すように、Java の例外は常に例外的な状況で使用する必要があります。その結果、例外がキャッチされた場合、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。 これにより、これらのメッセージがログに正しく表示されます。
+その名のとおり、Java の例外は常に例外的な状況で使用する必要があります。その結果、例外がキャッチされた場合、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。 これにより、これらのメッセージがログに正しく表示されます。
 
 #### 準拠していないコード {#non-compliant-code-10}
 
@@ -400,14 +400,14 @@ public void doThis() {
 }
 ```
 
-### コンソールにスタックトレースを印刷しない {#do-not-print-stack-traces-to-the-console}
+### コンソールにスタックトレースを出力しない {#do-not-print-stack-traces-to-the-console}
 
 * **キー**：CQRules:CQBP-44---ExceptionPrintStackTrace
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-既に述べたように、コンテキストはログメッセージを理解する場合に重要です。使用 `Exception.printStackTrace()` を指定すると、スタックトレースのみが標準エラーストリームに出力されるので、すべてのコンテキストが失われます。 さらに、AEMのようなマルチスレッドアプリケーションでは、このメソッドを同時に使用して複数の例外が印刷される場合、スタックトレースが重なり、大きな混乱を招く可能性があります。 例外は、ログフレームワークによってのみ記録される必要があります。
+既に述べたように、コンテキストはログメッセージを理解する場合に重要です。`Exception.printStackTrace()` を使用すると、スタックトレースのみが標準エラーストリームに出力されるので、すべてのコンテキストが失われます。さらに、AEMのようなマルチスレッドアプリケーションでは、このメソッドを同時に使用して複数の例外が印刷される場合、スタックトレースが重なり、大きな混乱を招く可能性があります。 例外は、ログフレームワークによってのみ記録される必要があります。
 
 #### 準拠していないコード {#non-compliant-code-11}
 
@@ -473,7 +473,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-一般に、 `/libs` および `/apps` を参照するパスは、Sling 検索パスに対する相対パスとして最も一般的に保存されるので、ハードコードしないでください。このパスは、次のように設定されます。 `/libs,/apps` デフォルトでは。 絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れるわかりにくい不具合が生じる可能性があります。
+一般に、 `/libs` および `/apps` を参照するパスは、Sling 検索パスに対する相対パスとして最も一般的に保存されるので、ハードコードしないでください。このパスは、次のように設定されます。 `/libs,/apps` デフォルトでは。 絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れる、わかりにくい不具合が生じる可能性があります。
 
 #### 準拠していないコード {#non-compliant-code-13}
 
@@ -518,13 +518,13 @@ AEM API の表面は、使用が推奨されず非推奨と見なされる API �
 
 ## OakPAL コンテンツルール {#oakpal-rules}
 
-以下の節では、Cloud Manager で実行される OakPAL チェックについて詳しく説明します。
+以下の節では、Cloud Manager が実行する OakPAL チェックについて説明します。
 
 >[!NOTE]
 >
 >OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。 2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
 
-### @ProviderTypeの注釈が付いた製品 API は、お客様による実装または拡張はできない {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### @ProviderType の注釈が付いた Product API は、お客様による実装または拡張はできない  {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **キー**：CQBP-84
 * **タイプ**：バグ
@@ -535,7 +535,7 @@ AEM API には、カスタムコードによる使用のみ（ただし実装は
 
 これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、後方互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを実装する場合、そのカスタムコードによってお客様に後方互換性のリスクがもたらされます。
 
-AEMでの実装のみを意図したインターフェイスおよびクラスには、 `org.osgi.annotation.versioning.ProviderType` または、場合によっては、従来の注釈と同様の注釈 `aQute.bnd.annotation.ProviderType`. このルールは、このようなインターフェイスが実装されている場合、またはクラスがカスタムコードで拡張されている場合を識別します。
+AEMでの実装のみを意図したインターフェイスおよびクラスには、 `org.osgi.annotation.versioning.ProviderType` または、場合によっては、従来の注釈と同様の注釈 `aQute.bnd.annotation.ProviderType`. このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
 
 #### 準拠していないコード {#non-compliant-code-3}
 
@@ -666,12 +666,12 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 
 ### 顧客パッケージでは /libs 下のノードを作成／変更しない {#oakpal-customer-package}
 
-* **キー**:BannedPath
+* **キー**：BannedPath
 * **タイプ**：バグ
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-これは長い間のベストプラクティスでした `/libs` AEMコンテンツリポジトリーのコンテンツツリーは、顧客は読み取り専用と見なす必要があります。 以下のノードおよびプロパティの変更 `/libs` は、メジャーアップデートとマイナーアップデートの際に重大なリスクを引き起こします。 変更先 `/libs` は、公式チャネルを通じてのみAdobeによって作成される必要があります。
+AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読み取り専用と見なすことは長年のベストプラクティスとなっています。`/libs` 下のノードやプロパティを変更すると、メジャーアップデートおよびマイナーアップデートの際に重大な問題が発生する可能性があります。`/libs` への変更は、アドビの公式チャネルを通じてのみ行うことができます。
 
 ### パッケージには重複する OSGi 設定を含めない {#oakpal-package-osgi}
 
@@ -680,7 +680,7 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。これにより、どの設定が適用されるかがあいまいになります。 このルールは「実行モード対応」です。つまり、同じ実行モードまたは実行モードの組み合わせで同じコンポーネントが複数回設定される問題のみを識別します。
+複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。これにより、どの設定が適用されるかがあいまいになります。 このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
 
 >[!NOTE]
 >
@@ -688,7 +688,7 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 >
 >例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.ui.apps` が `com.myco:com.myco.all` に組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
 >
->これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)」を選択します。この例では、パッケージ `com.myco:com.myco.ui.apps` が見つからない `<cloudManagerTarget>none</cloudManagerTarget>` プロパティ。
+>これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。この例では、パッケージ `com.myco:com.myco.ui.apps` が見つからない `<cloudManagerTarget>none</cloudManagerTarget>` プロパティ。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
@@ -718,7 +718,7 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-セキュリティ上の理由から、パスには `/config/` および `/install/` は、AEMの管理者ユーザーのみが読み取り可能で、OSGi 設定および OSGi バンドルにのみ使用してください。 これらのセグメントを含むパスの下に他のタイプのコンテンツを配置すると、アプリケーションの動作が管理者ユーザーと非管理者ユーザーとで意図せず異なることになります。
+セキュリティ上の理由から、`/config/` と `/install/` を含むパスを判読できるのは AEM の管理者ユーザーのみで、これらは OSGi 設定と OSGi バンドルにのみ使用する必要があります。これらのセグメントを含むパスの下に他のタイプのコンテンツを配置すると、アプリケーションの動作が管理者ユーザーと非管理者ユーザーとで意図せず異なることになります。
 
 よくある問題としては、コンポーネントダイアログ内や、インライン編集にリッチテキストエディター設定を指定する際に、`config` というノードを使用するケースがあります。これを解決するには、問題のあるノードを適切な名前に変更する必要があります。リッチテキストエディター設定については、`cq:inplaceEditing` ノードの `configPath` プロパティを使用して新しい場所を指定します。
 
@@ -748,7 +748,7 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-次に類似 [パッケージには重複する OSGi 設定ルールを含めない、](#oakpal-package-osgi) これは、同じノードパスが複数の個別のコンテンツパッケージによって書き込まれる複雑なプロジェクトでの一般的な問題です。 コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
+[パッケージには重複する OSGi 設定を含めない](#oakpal-package-osgi)と同様に、これも複雑なプロジェクトでよく発生する問題です。複数の異なるコンテンツパッケージに同じノードパスが書き込まれるケースです。コンテンツパッケージの依存関係を使用すると、一貫性のある結果を得ることができますが、その際には、パッケージがまったく重複しないようにすることをお勧めします。
 
 ### デフォルトのオーサリングモードをクラシック UI にしない {#oakpal-default-authoring}
 
@@ -757,7 +757,7 @@ AEM Assets でアセット検索が正しく機能するようにするには、
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。理由： [クラシック UI は、AEM 6.4 以降、非推奨（廃止予定）となりました。](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
+OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内でデフォルトのオーサリングモードを定義します。[AEM 6.4 以降、クラシック UI は非推奨となった](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)ため、デフォルトのオーサリングモードがクラシック UI に設定されている場合、問題が発生するようになりました。
 
 ### タッチ UI ダイアログが必要なダイアログを持つコンポーネント {#oakpal-components-dialogs}
 
@@ -768,8 +768,8 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 
 最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされていないCloud Serviceデプロイメントモデルとの互換性を保つために、クラシック UI ダイアログを持つAEMコンポーネントには常に対応するタッチ UI ダイアログを持つ必要があります。 このルールは、次のシナリオを検証します。
 
-* クラシック UI ダイアログ ( `dialog` 子ノード ) には、対応するタッチ UI ダイアログ ( つまり、 `cq:dialog` 子ノード ) です。
-* クラシック UI デザインダイアログを含むコンポーネント ( `design_dialog` ノード ) には、対応するタッチ UI デザインダイアログ ( つまり、 `cq:design_dialog` 子ノード ) です。
+* クラシック UI ダイアログ（`dialog` 子ノード）を持つコンポーネントには、対応するタッチ UI ダイアログ（`cq:dialog` 子ノード）が必要です。
+* クラシック UI デザインダイアログ（`design_dialog` ノード）を使用しているコンポーネントには、対応するタッチ UI デザインダイアログ（`cq:design_dialog` 子ノード）が必要です。
 * クラシック UI ダイアログとクラシック UI デザインダイアログの両方を持つコンポーネントには、対応するタッチ UI ダイアログと対応するタッチ UI デザインダイアログの両方が必要です。
 
 AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、 [AEM Modernization Tools ドキュメント](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) を参照してください。
@@ -781,11 +781,11 @@ AEM 最新化ツールのドキュメントには、コンポーネントをク�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-Cloud Serviceデプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域 ( つまり、 `/apps` および `/libs`) または可変領域 ( つまり、 `/apps` または `/libs`) ですが、両方ではありません。 例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
+Cloud Service デプロイメントモデルとの互換性を保つには、個々のコンテンツパッケージに、リポジトリの不変領域（`/apps` および `/libs`）または可変領域（`/apps` または `/libs`）のいずれかのコンテンツが含まれている必要がありますが、両方が含まれている必要はありません。例えば、`/apps/myco/components/text and /etc/clientlibs/myco` の両方を含むパッケージは Cloud Service と互換性がなく、問題が報告されます。
 
 >[!NOTE]
 >
->ルール [顧客パッケージでは/libs 下のノードを作成または変更しない](#oakpal-customer-package) 常に適用されます。
+>[顧客パッケージでは /libs 下のノードを作成／変更しない](#oakpal-customer-package)のルールが常に適用されます。
 
 詳しくは、[AEM プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)を参照してください。
 
@@ -840,7 +840,7 @@ AEM クライアントライブラリには、画像やフォントなどの静�
 
 AEM as a Cloud Service上でのアセット処理用のアセットマイクロサービスに移行すると、オンプレミスおよび AMS バージョンのAEMで使用されていたいくつかのワークフロープロセスが、サポート対象外または不要になります。
 
-移行ツール ( [AEM Assetsas a Cloud ServiceGitHub リポジトリ](https://github.com/adobe/aem-cloud-migration) は、AEM as a Cloud Serviceへの移行中にワークフローモデルを更新するために使用できます。
+[AEM Assets as a Cloud Service GitHub リポジトリ](https://github.com/adobe/aem-cloud-migration)の移行ツールを使用すると、AEM as a Cloud Service への移行中にワークフローモデルを更新できます。
 
 ### 静的なテンプレートより編集可能なテンプレートを使用する {#oakpal-static-template}
 
@@ -851,7 +851,7 @@ AEM as a Cloud Service上でのアセット処理用のアセットマイクロ�
 
 従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、 [ページテンプレート。](/help/implementing/developing/components/templates.md)
 
-静的テンプレートから編集可能テンプレートへの移行は、 [AEM Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+静的なテンプレートから編集可能なテンプレートへの移行は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
 ### 従来の基盤コンポーネントの使用は推奨されない {#oakpal-usage-legacy}
 
@@ -860,9 +860,9 @@ AEM as a Cloud Service上でのアセット処理用のアセットマイクロ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来の基盤コンポーネント（例：下のコンポーネント） `/libs/foundation`) は [一部のAEMリリースで非推奨（廃止予定）](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) コアコンポーネントに優先して カスタムコンポーネントの基礎としての基盤コンポーネントの使用（オーバーレイによる場合も継承による場合も）は推奨されず、対応するコアコンポーネントに変換する必要があります。
+一部の AEM リリースでは、従来の基盤コンポーネント（`/libs/foundation`[ 下のコンポーネントなど）は廃止され、コアコンポーネントに置き換わりました。](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)カスタムコンポーネントの基礎としての基盤コンポーネントの使用（オーバーレイによる場合も継承による場合も）は推奨されず、対応するコアコンポーネントに変換する必要があります。
 
-この変換は、 [AEM Modernization Tools.](https://opensource.adobe.com/aem-modernize-tools/)
+この変換は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 
 ### サポートされている実行モード名および順序のみを使用する {#oakpal-supported-runmodes}
 
@@ -873,7 +873,7 @@ AEM as a Cloud Service上でのアセット処理用のアセットマイクロ�
 
 AEM as a Cloud Serviceでは、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を指定します。 サポートされている実行モードのリストは、このドキュメントに記載されています [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md#runmodes) これから逸脱した場合は、問題として識別されます。
 
-### カスタム検索インデックス定義ノードは、/oak:index の直接の子にする {#oakpal-custom-search}
+### カスタム検索インデックス定義ノードは、/oak:index の直接の子にする必要がある {#oakpal-custom-search}
 
 * **キー**：OakIndexLocation
 * **タイプ**：コードスメル
@@ -907,7 +907,7 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-適切に定義されたカスタム検索インデックス定義ノードには、という名前の子ノードが含まれている必要があります。 `indexRules` その子は、次に少なくとも一人の子を持つ必要がある。 詳しくは、 [Oak ドキュメント。](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+適切に定義されたカスタム検索インデックス定義ノードには、という名前の子ノードが含まれている必要があります。 `indexRules` その子は、次に少なくとも一人の子を持つ必要がある。 詳しくは、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
 
 ### カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
@@ -918,7 +918,7 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 
 AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) には、ドキュメントで説明されている特定のパターンに従って名前を付ける必要があります [コンテンツの検索とインデックス作成。](/help/operations/indexing.md)
 
-### カスタム検索インデックス定義ノードは、インデックスタイプ lucene を使用する必要があります  {#oakpal-index-type-lucene}
+### カスタム検索インデックス定義ノードでは lucene 型のインデックスを使用する  {#oakpal-index-type-lucene}
 
 * **キー**：IndexType
 * **タイプ**：バグ

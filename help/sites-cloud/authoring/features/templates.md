@@ -3,7 +3,7 @@ title: ページテンプレートの作成
 description: テンプレートは、作成されるページの構造を定義し、テンプレートエディターにより、テンプレートの作成および維持は、もはや開発者のみのタスクではなくなります。
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4596'
 ht-degree: 100%
 
@@ -270,7 +270,7 @@ ht-degree: 100%
 
 #### レイアウト {#template-layout}
 
-[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードにはページオーサリングの&#x200B;[**レイアウト**&#x200B;モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
+[レイアウト](#editing-a-template-layout-template-author)では、必要なデバイスの形式に合わせたテンプレートのレイアウトを事前定義できます。テンプレートオーサリングの&#x200B;**レイアウト**&#x200B;モードには、ページオーサリングの&#x200B;[**レイアウト**&#x200B;モードと同じ機能があります](/help/sites-cloud/authoring/features/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### ページポリシー {#template-page-policies}
 
@@ -532,7 +532,7 @@ ht-degree: 100%
 >
 >初期コンテンツは、コンテンツを作成するための出発点となるコンポーネントおよびページレイアウトを準備するためのものです。そのまま残す実際のコンテンツとなるものではありません。そのため、初期コンテンツは変換できません。
 >
->ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=ja)を使用できます。
+>ヘッダーやフッターなど、翻訳可能なテキストをテンプレートに含める必要がある場合は、[コアコンポーネントのローカライゼーション機能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)を使用できます。
 
 ### テンプレートの編集 - レイアウト - テンプレート作成者 {#editing-a-template-layout-template-author}
 
@@ -607,7 +607,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->テンプレート作成者が、テンプレートにページポリシーを指定できる一方、その作成者は開発者から適切なクライアントサイドライブラリの詳細を得る必要があります。
+>テンプレート作成者は、テンプレートにページポリシーを指定できるますが、開発者から適切なクライアントサイドライブラリの詳細を得る必要があります。
 
 ### テンプレートの編集 - 最初のページのプロパティ - 作成者 {#editing-a-template-initial-page-properties-author}
 

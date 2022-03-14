@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のオンボーディング
 description: Adobe Experience Manager as a Cloud Service のオンボーディングに関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、AEMas a Cloud Serviceの基本について概要を説明します。
+landing-page-description: このガイドでは、アクセス方法、データ保護に関する重要な情報など、AEM as a Cloud Service の基本について概要を説明します。
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

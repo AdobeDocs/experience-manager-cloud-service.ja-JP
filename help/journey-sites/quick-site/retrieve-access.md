@@ -1,13 +1,13 @@
 ---
 title: Git リポジトリのアクセス情報の取得
 description: フロントエンド開発者が Cloud Manager を使用して Git リポジトリ情報にアクセスする方法について説明します。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Git リポジトリのアクセス情報の取得 {#retrieve-access}
 
@@ -74,7 +74,7 @@ Cloud Manager 管理者から Cloud Manager ユーザーとしてオンボーデ
 
 この電子メールをまだ受け取っていない場合は、Cloud Manager 管理者にお問い合わせください。
 
-## Cloud Manager にアクセス {#access-cloud-manager}
+## Cloud Manager へのアクセス {#access-cloud-manager}
 
 1. Adobe Experience Cloud( ) にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) または「ようこそ」の電子メールに記載されているリンクをクリックします。
 
@@ -104,7 +104,7 @@ Cloud Manager 管理者から Cloud Manager ユーザーとしてオンボーデ
 
 1. タップまたはクリック **閉じる**.
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Quick Site Creation ジャーニーのこの部分が完了し、次の作業をおこなう必要があります。
 

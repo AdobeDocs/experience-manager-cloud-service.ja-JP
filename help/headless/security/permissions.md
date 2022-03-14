@@ -1,14 +1,14 @@
 ---
-title: 'ヘッドレスコンテンツの権限に関する考慮事項 '
+title: ヘッドレスコンテンツの権限に関する考慮事項
 description: Adobe Experience Managerを使用したヘッドレス実装に関する様々な権限と ACL の考慮事項について説明します。 オーサー環境とパブリッシュ環境の両方で必要となる、様々なペルソナおよび潜在的な権限レベルを理解します。
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # ヘッドレスコンテンツの権限に関する考慮事項
 
@@ -98,4 +98,3 @@ CUG は、GraphQL API を介して公開されるコンテンツを含むアセ�
 ### GraphQL API へのアクセス
 
 HTTP リクエスト [適切な認証資格情報](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) AEM パブリッシュサービスの GraphQL API エンドポイントには、読み取る権限を持つコンテンツや匿名でアクセス可能なコンテンツが含まれます。 GraphQL API の他のコンシューマーは、CUG で保護されたフォルダー内のコンテンツを読み取ることができません。
-

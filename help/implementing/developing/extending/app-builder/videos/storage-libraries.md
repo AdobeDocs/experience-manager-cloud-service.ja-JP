@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
-
 
 # App Builder ストレージライブラリ
 

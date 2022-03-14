@@ -2,12 +2,12 @@
 title: メタデータスキーマによるメタデータプロパティページのレイアウトの定義
 description: メタデータスキーマを使用することで、プロパティページのレイアウトと、アセットに関して表示されるメタデータプロパティを定義します。カスタムメタデータスキーマを作成する方法、メタデータスキーマを編集する方法およびメタデータスキーマをアセットに適用する方法を学習します。
 contentOwner: AG
-feature: メタデータ
+feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
-workflow-type: ht
-source-wordcount: '2593'
+workflow-type: tm+mt
+source-wordcount: '2592'
 ht-degree: 100%
 
 ---

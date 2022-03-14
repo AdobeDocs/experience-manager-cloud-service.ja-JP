@@ -4,20 +4,20 @@ description: ソースコードリポジトリ —Cloud Services
 source-git-commit: 23349f3350631f61f80b54b69104e5a19841272f
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 23%
+ht-degree: 94%
 
 ---
 
 
-# ソースコードリポジトリ {#source-code-repository}
+# ソースコードリポジトリー {#source-code-repository}
 
-Cloud Managerプログラムには、独自のGitリポジトリが自動プロビジョニングされます。
+Cloud Manager プログラムには、独自の Git リポジトリーが自動プロビジョニングされます。
 
-ユーザーがCloud ManagerのGitリポジトリにアクセスするには、コマンドラインツール、スタンドアロンのビジュアルGitクライアント、またはEclipse、IntelliJ、NetBeansなどのユーザーのIDEを使用する必要があります。
+ユーザーが Cloud Manager の Git リポジトリーにアクセスするには、コマンドラインツール、スタンドアロンのビジュアル Git クライアント、または Eclipse、IntelliJ、NetBeans などの IDE を使用する必要があります。
 
-Gitクライアントを設定したら、Cloud Manager UIからGitリポジトリを管理できます。 Cloud Manager UIを使用してGitを管理する方法については、[Git](/help/implementing/cloud-manager/accessing-git.md)へのアクセスを参照してください。
+Git クライアントを設定すると、Cloud Manager UI から Git リポジトリーを管理できます。Cloud Manager UI を使用して Git を管理する方法については、「[Git へのアクセス](/help/implementing/cloud-manager/accessing-git.md)」を参照してください。
 
-AEM Cloudアプリケーションの開発を開始するには、 Cloud Managerリポジトリーから、リポジトリを作成するローカルコンピューター上の場所にアプリケーションコードのローカルコピーをチェックアウトして、作成する必要があります。
+AEM Cloud アプリケーションの開発を開始するには、 Cloud Manager リポジトリーから、リポジトリーを作成するローカルコンピューター上の場所にアプリケーションコードのローカルコピーをチェックアウトして、作成する必要があります。
 
 ```java
 $ git clone {URL}
@@ -25,4 +25,4 @@ $ git clone {URL}
 
 >[!NOTE]
 >
->ユーザーは、自分のコードのコピーをチェックアウトし、ローカルコードリポジトリで変更をおこなうことができます。準備ができたら、ユーザーはコードの変更内容を Cloud Manager のリモートコードリポジトリにコミットして戻すことができます。
+>ユーザーは、自分のコードのコピーをチェックアウトし、ローカルコードリポジトリーで変更を行うことができます。準備ができたら、ユーザーはコードの変更内容を Cloud Manager のリモートコードリポジトリーにコミットして戻すことができます。

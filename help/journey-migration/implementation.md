@@ -1,7 +1,8 @@
 ---
 title: 実装段階
 description: クラウドに移行するためのコードとコンテンツの準備が整っていることを確認します。
-source-git-commit: b6667e19ae111685ab4832a1859a62164b4e31c5
+exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 10%
@@ -248,6 +249,6 @@ Cloud Manager パイプラインは、ステージ環境に対するテストの
    * 1 週間に追加されるコンテンツの量を把握する
    * 移行の証明から測定された時間を推定し、 [移行計画](#migration-plan).
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEMのインストールをクラウドに移行する準備ができているかどうかを評価する方法を完全に理解したら、準備に必要なツールの使用方法を学ぶため、次に [運用開始段階](/help/journey-migration/go-live.md).

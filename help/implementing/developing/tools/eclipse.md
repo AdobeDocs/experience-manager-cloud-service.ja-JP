@@ -3,7 +3,7 @@ title: 'AEM Developer Tools for Eclipse '
 description: 'AEM Developer Tools for Eclipse '
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 100%
 

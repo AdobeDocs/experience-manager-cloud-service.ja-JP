@@ -1,12 +1,12 @@
 ---
 title: 検索ファセット。
 description: この記事では、Adobe Experience Manager で検索ファセットを作成、変更および使用する方法について説明します。
-feature: 検索、メタデータ
+feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '2362'
+workflow-type: tm+mt
+source-wordcount: '2360'
 ht-degree: 100%
 
 ---

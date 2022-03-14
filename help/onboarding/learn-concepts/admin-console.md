@@ -3,7 +3,7 @@ title: Admin Console の概要を説明します
 description: ここでは、Admin Console の概要を説明します。
 exl-id: e3aa59c3-2f92-42b9-8d6a-e91b656f0d7e
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 100%
 

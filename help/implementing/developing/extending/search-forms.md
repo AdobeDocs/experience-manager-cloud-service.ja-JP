@@ -3,7 +3,7 @@ title: 検索フォームの設定
 description: Adobe Experience Manager as a Cloud Service の検索フォームの設定。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 100%
 
@@ -599,7 +599,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 1. プレビューを&#x200B;**閉じて**&#x200B;戻り、設定を完了します。
 
-### 述語フィールドの削除{#deleting-a-predicate-field}
+### 述語フィールドの削除 {#deleting-a-predicate-field}
 
 1. 更新する[カスタマイズ設定を開きます](#creating-opening-a-customized-configuration)。
 1. 述語フィールド（右側）を選択し、「**設定**」タブを開いて、**削除**&#x200B;アイコン（左下）を選択します。
@@ -610,7 +610,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 1. 「**完了**」ボタンで削除およびその他の変更を確認します。
 
-### 設定の削除（デフォルト復帰のため）{#deleting-a-configuration-to-reinstate-the-default}
+### 設定の削除（デフォルト復帰のため） {#deleting-a-configuration-to-reinstate-the-default}
 
 設定のカスタマイズが完了すると、デフォルトが上書きされます。カスタマイズした設定を削除することにより、デフォルトの設定を復帰させることができます。
 
@@ -626,7 +626,7 @@ Sites 専用の述語の、公開およびライブコピーのチェックボ�
 
 1. カスタマイズした設定が削除され、デフォルトが復帰します（このことは、コンソールに鍵アイコンが再度表示されることで確認できます）。
 
-### オプションの述語の追加{#adding-options-predicates}
+### オプションの述語の追加 {#adding-options-predicates}
 
 オプションの述語（オプション、オプションプロパティ）を使用すると、検索対象の項目を設定できます。通常は、ページノード上のプロパティなど、ページの直下にあるものを検索するために使用します。
 

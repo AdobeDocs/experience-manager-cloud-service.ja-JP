@@ -3,7 +3,7 @@ title: オーサー層の保護
 description: オーサー層の保護
 exl-id: f5be90a4-266a-4d23-8e8b-94156f0264d5
 source-git-commit: b2b319cf06bbad07add092059d3f093ce7336d4e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 

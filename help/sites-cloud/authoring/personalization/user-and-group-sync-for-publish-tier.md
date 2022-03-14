@@ -3,7 +3,7 @@ title: '登録、ログイン、ユーザープロファイル '
 description: AEM as a Cloud Service の登録、ログイン、ユーザーデータおよびグループ同期について説明します
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Web アプリケーションは、多くの場合、Web サイトへの登録用
    1. Authorizable インターフェイスの `setProperty()` メソッドを使用して、キャプチャされたプロファイルデータを永続化します。
 1. ユーザーに電子メールの検証を求めるなどの、オプションのフロー。
 
-### 外部 Web アプリケーション {#external-managed-registration}
+### 外部 web アプリケーション {#external-managed-registration}
 
 場合によっては、AEM 以外のインフラストラクチャで登録やユーザーの作成が既に行われています。このシナリオでは、ログイン時に AEM にユーザーレコードが作成されます。
 
@@ -102,7 +102,7 @@ AEM as a Cloud Service では cookie ベースのスティッキーセッショ�
 
 サードパーティのサービスにリアルタイムでアクセスしてプロファイル属性を取得することはできますが、これが実質的に AEM のリクエスト処理に影響を与えないようにすることが重要です。
 
-## 権限（クローズドユーザーグループ）{#permissions-closed-user-groups}
+## 権限（クローズドユーザーグループ） {#permissions-closed-user-groups}
 
 パブリッシュ層アクセスポリシー（クローズドユーザーグループ（CUG）
 とも呼ばれる）は、AEM オーサーでは[ここ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=ja#applying-your-closed-user-group-to-content-pages)で説明されているとおりに定義されています。一部のユーザーから Web サイトの特定のセクションまたはページを制限するには、ここで説明されているように AEM オーサーを使用して、必要に応じて CUG を適用し、パブリッシュ層に複製します。

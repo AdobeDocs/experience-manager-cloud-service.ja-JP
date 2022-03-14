@@ -1,5 +1,5 @@
 ---
-title: プロジェクトワークフローの操作
+title: 'プロジェクトワークフローの操作 '
 description: すぐに使用可能な様々なプロジェクトワークフローが用意されています。
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# プロジェクトワークフローの操作 {#working-with-project-workflows}
+# プロジェクトワークフローの操作  {#working-with-project-workflows}
 
 すぐに使用可能なプロジェクトワークフローには、次のものがあります。
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 AEM でのワークフローの操作について詳しくは、以下を参照してください。
 
 * [ワークフローへの参加](/help/sites-cloud/authoring/workflows/participating.md)
-* [ページへのワークフローの適用](/help/sites-cloud/authoring/workflows/applying.md)
+* [ページへのワークフローの適用 ](/help/sites-cloud/authoring/workflows/applying.md)
 * [ワークフローの設定](/help/sites-cloud/administering/workflows-administering.md)
 
 この節では、プロジェクトに使用可能なワークフローについて説明します。

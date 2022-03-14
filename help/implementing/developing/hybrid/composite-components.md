@@ -3,13 +3,13 @@ title: SPA の複合コンポーネント
 description: AEM 単一ページアプリケーション（SPA）エディターで動作する独自の複合コンポーネント（他のコンポーネントで構成されるコンポーネント）を作成する方法を説明します。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
 
 ---
 
-# SPA の複合コンポーネント{#composite-components-in-spas}
+# SPA の複合コンポーネント {#composite-components-in-spas}
 
 複合コンポーネントは、AEM コンポーネントのモジュラー性を活用して、複数のベースコンポーネントを 1 つのコンポーネントに組み合わせるます。一般的な複合コンポーネントの使用例は、画像コンポーネントとテキストコンポーネントの組み合わせで構成されるカードコンポーネントです。
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * [AEM で編集可能な](editing-external-spa.md)、動作する外部 React アプリがある。
 * React アプリは、[RemotePage コンポーネントを使用して](remote-page.md) AEM エディターに読み込まれている。
 
-## 複合コンポーネントを SPA に追加する{#adding-composite-components}
+## 複合コンポーネントを SPA に追加する {#adding-composite-components}
 
 AEM 内の SPA 実装に応じて、複合コンポーネントを実装するためのモデルは 3 つあります。
 
@@ -39,7 +39,7 @@ AEM 内の SPA 実装に応じて、複合コンポーネントを実装する�
 
 以下の節では、カードコンポーネントを使用して各ケースを実装する例を示します。
 
-### コンポーネントが AEM プロジェクトに存在しない。{#component-does-not-exist}
+### コンポーネントが AEM プロジェクトに存在しない。 {#component-does-not-exist}
 
 まず、合成コンポーネントを構成するコンポーネント（画像コンポーネントとテキストコンポーネント）を作成します。
 
@@ -122,7 +122,7 @@ function Home() {
 
 ![エディター内の複合カードコンポーネント](assets/composite-card.png)
 
-### コンポーネントは AEM プロジェクトに存在するが、必要なコンテンツが存在しない。{#content-does-not-exist}
+### コンポーネントは AEM プロジェクトに存在するが、必要なコンテンツが存在しない。 {#content-does-not-exist}
 
 この場合、カードコンポーネントは、タイトルと画像ノードを含む AEM プロジェクトに作成済みです。子ノード（テキストと画像）は、対応するリソースタイプを持っています。
 
@@ -162,7 +162,7 @@ function Home() {
 
 ![エディター内のコンポジットカード](assets/composite-card.gif)
 
-### コンポーネントと必要なコンテンツが両方とも AEM プロジェクトに存在する。{#both-exist}
+### コンポーネントと必要なコンテンツが両方とも AEM プロジェクトに存在する。 {#both-exist}
 
 コンテンツが AEM に存在する場合は、コンテンツへのパスを指定して、SPA に直接含めることができます。
 

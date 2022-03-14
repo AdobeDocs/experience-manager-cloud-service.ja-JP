@@ -1,12 +1,12 @@
 ---
 title: ライブコピーの同期の設定
 description: 使用できる強力なライブコピー同期オプションと、それらをプロジェクトのニーズに合わせて設定およびカスタマイズする方法について説明します。
-feature: マルチサイトマネージャー
+feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '2339'
+workflow-type: tm+mt
+source-wordcount: '2336'
 ht-degree: 100%
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: ビデオアセットのスマートタグ
 description: Adobe Experience Manager では、 [!DNL Adobe Sensei] を使用して、状況に応じた説明的なスマートタグをビデオに自動的に追加します。
-feature: スマートタグ、タグ付け
+feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: b59043c5-5df3-49a7-b4fc-da34c03649d7
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
-workflow-type: ht
-source-wordcount: '1186'
+workflow-type: tm+mt
+source-wordcount: '1183'
 ht-degree: 100%
 
 ---

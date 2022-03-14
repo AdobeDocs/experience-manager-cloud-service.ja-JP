@@ -3,7 +3,7 @@ title: Screens as a Cloud Service でのディスプレイの作成と管理
 description: このページでは、Screens as a Cloud Service でディスプレイを作成および管理する方法について説明します。
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 100%
 

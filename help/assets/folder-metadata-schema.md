@@ -2,12 +2,12 @@
 title: フォルダーメタデータスキーマ
 description: '  [!DNL Experience Manager Assets] のアセットフォルダーのメタデータスキーマを作成する方法について説明します。'
 contentOwner: AG
-feature: メタデータ
+feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
-workflow-type: ht
-source-wordcount: '1061'
+workflow-type: tm+mt
+source-wordcount: '1060'
 ht-degree: 100%
 
 ---

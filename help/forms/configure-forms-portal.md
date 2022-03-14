@@ -1,13 +1,13 @@
 ---
 title: Experience Manager SitesページでForms Portal を作成する方法
 description: Forms Portal を作成し、標準搭載のコアコンポーネントをAEM Sitesページで使用する方法を説明します。
-source-git-commit: 50eeb2c1e6925b39b03bbbdd627169453ea1c1d8
+exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1784'
 ht-degree: 26%
 
 ---
-
 
 # ポータル上のアダプティブFormsのリスト {#publish-forms-on-portal}
 

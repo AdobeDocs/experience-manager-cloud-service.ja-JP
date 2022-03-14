@@ -1,14 +1,13 @@
 ---
 title: 汎用 Lucene インデックスの削除
 description: 汎用 Lucene インデックスの計画的な削除と、影響を受ける可能性のある方法について説明します。
-exl-id: fe0e00ac-f9c8-43cf-83c2-5a353f5eaeab
-source-git-commit: 7a3c8b59a5a642ffc335fc80898fb956221cfcc2
+exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
 
 ---
-
 
 # 汎用 Lucene インデックスの削除 {#generic-lucene-index-removal}
 

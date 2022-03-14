@@ -2,13 +2,13 @@
 title: AEM Headless を使用した Referrer Filter の設定
 description: Adobe Experience Managerのリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。 ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
+exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 58%
 
 ---
-
 
 # リファラーフィルター {#referrer-filter}
 

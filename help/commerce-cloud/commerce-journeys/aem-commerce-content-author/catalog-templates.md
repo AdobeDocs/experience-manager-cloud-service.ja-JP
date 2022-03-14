@@ -1,7 +1,8 @@
 ---
 title: 製品カタログのページとテンプレートを管理
 description: 製品カタログのページとテンプレートの管理方法を説明します
-source-git-commit: b84896e70df0c22aea1581d8d0d0561e8bc4b24d
+exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 3%
@@ -98,7 +99,7 @@ CIF は、数回のクリックで複数のテンプレートをサポートし�
 
 同じワークフローを適用して、個々の製品テンプレートを作成できます。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、ジャーニーのこの部分が完了しました。次の手順を実行します。
 

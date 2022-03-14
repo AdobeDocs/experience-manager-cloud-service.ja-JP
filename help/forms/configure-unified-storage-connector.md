@@ -1,13 +1,13 @@
 ---
 title: AEM Forms 用の統合ストレージコネクタの設定方法
 description: AEM Forms 用の統合ストレージコネクタの管理方法を説明します。統合ストレージコネクタを使用すると、AEM Forms を外部データストレージに接続できます。
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 86%
 
 ---
-
 
 # AEM Forms 用の統合ストレージコネクタの管理 {#manage-unified-storage-connector}
 

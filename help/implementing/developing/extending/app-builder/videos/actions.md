@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Beginner
 kt: 9456, 9475, 9476, 9477
 thumbnail: 327313.jpg
-source-git-commit: 9e29904775ee0ecd17ab075230e532583bbccd53
+exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
 
 ---
-
 
 # App Builder のアクション
 

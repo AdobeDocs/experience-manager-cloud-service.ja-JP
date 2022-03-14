@@ -2,12 +2,12 @@
 title: 画質最適化のベストプラクティス
 description: Dynamic Media を使用して画像アセットの品質を最適化するためのベストプラクティスについて説明します。
 contentOwner: Rick Brough
-feature: アセット管理
+feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '1480'
+workflow-type: tm+mt
+source-wordcount: '1478'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Experience Manager を使用すれば、取得時、配信時またはその両�
 
       * ベストプラクティスに関するホワイトペーパー『[Adobe Dynamic Media Classic の画質とシャープ処理のベストプラクティス](/help/assets/dynamic-media/assets/sharpening_images.pdf)』は Experience Manager にも当てはまります。
 
-      * [Experience Manager - Dynamic Media で画像シャープ処理を使用する](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=ja#dynamic-media)を見る。
+      * [Experience Manager - Dynamic Media で画像シャープ処理を使用する](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media)を見る。
 
       * Experience Manager では第 4 パラメーターの monochrome (0,1) も制御できます。このパラメーターでは、アンシャープマスクをそれぞれの色成分に個別に適用するか（値が 0 の場合）、または画像の明るさ／明度に対して適用するか（値が 1 の場合）を指定します。
 

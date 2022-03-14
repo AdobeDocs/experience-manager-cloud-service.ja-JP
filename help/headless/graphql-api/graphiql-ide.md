@@ -2,13 +2,13 @@
 title: AEMでの GraphiQL IDE の使用
 description: Adobe Experience Managerでの GraphiQL IDE の使用方法を説明します。
 feature: Content Fragments,GraphQL API
-source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
+exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 24%
 
 ---
-
 
 # GraphiQL IDE の使用 {#graphiql-ide}
 
@@ -37,4 +37,3 @@ GraphiQL IDE は開発ツールで、開発インスタンスやローカルイ�
 1. 最新の **GraphiQL コンテンツパッケージ v.x.x.x**
 1. 次の **AEM Start** メニュー移動先 **ツール** > **導入** > **パッケージ**.
 1. クリック **パッケージをアップロード** 前の手順でダウンロードしたパッケージを選択します。 クリック **インストール** をクリックしてパッケージをインストールします。
-

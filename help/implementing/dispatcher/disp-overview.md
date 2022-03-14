@@ -4,8 +4,8 @@ description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '917'
+workflow-type: tm+mt
+source-wordcount: '916'
 ht-degree: 100%
 
 ---

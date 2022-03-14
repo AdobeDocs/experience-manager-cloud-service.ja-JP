@@ -2,13 +2,13 @@
 title: AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート
 description: AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 25%
 
 ---
-
 
 # AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート {#release-notes}
 

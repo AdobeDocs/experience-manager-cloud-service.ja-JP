@@ -4,7 +4,7 @@ description: Dynamic Media でルールセットをデプロイして、URL を�
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 100%
 

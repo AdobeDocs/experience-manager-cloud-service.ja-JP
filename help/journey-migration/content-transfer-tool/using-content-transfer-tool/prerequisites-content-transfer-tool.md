@@ -1,10 +1,11 @@
 ---
 title: コンテンツ転送ツールの前提条件
 description: コンテンツ転送ツールの前提条件
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 67%
+ht-degree: 88%
 
 ---
 
@@ -29,8 +30,8 @@ ht-degree: 67%
 | 合計 Lucene インデックスサイズ | 現在、最大 25GB の Lucene インデックスの合計サイズがサポートされています。 この制限を超えるインデックスサイズのオプションについては、Adobe カスタマーケアでサポートチケットを作成してご相談ください。 |
 | ノード名の長さ | ノード名の長さは 150 バイト以下にする必要があります。150 バイトを超えるノード名を AEM as a Cloud Service のドキュメントノードストアでサポートするには、150 バイト以下に短縮する必要があります。長いノード名が修正されていない場合、取り込みは失敗します。 |
 | 不変パスのコンテンツ | コンテンツ転送ツールを使用して不変パスのコンテンツを移行することはできません。コンテンツを `/etc` から転送するには、特定の `/etc` パスのみを選択できますが、これは [AEM Forms から AEM Forms as Cloud Service をへの移行をサポート](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/migrate-to-forms-as-a-cloud-service.html?lang=ja#paths-of-various-aem-forms-specific-assets)するためのものです。その他の使用例については、[一般的なリポジトリーの再構築](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=ja#restructuring)を参照して、リポジトリー再構築の詳細を確認してください。 |
-| MongoDB のノードプロパティ値 | MongoDB に保存するノードプロパティの値は 16MB を超えることはできません。 これは、MongoDB によって適用されます。 この制限を超えるプロパティ値がある場合、取り込みは失敗します。 抽出を実行する前に、次を実行します。 [oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) スクリプト 大きなプロパティ値をすべて確認し、必要に応じて検証します。 16MB を超える値は、バイナリ値に変換する必要があります。 |
+| MongoDB のノードプロパティ値 | MongoDB に保存されるノードプロパティの値は 16 MB を超えることはできません。これは、MongoDB によって強制されるものです。この制限を超えるプロパティ値がある場合、取り込みは失敗します。抽出を実行する前に、[oak-run](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/1.38.0/oak-run-1.38.0.jar) スクリプトを実行します。大きなプロパティ値をすべて確認し、必要に応じて検証します。16 MB を超える値は、バイナリ値に変換する必要があります。 |
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、 [コンテンツ転送ツール使用のガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en).
+前提条件を確認し、移行プロジェクトでコンテンツ転送ツールを使用できるかどうかを判断したら、[コンテンツ転送ツール使用のガイドラインとベストプラクティス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=ja)を参照してください。

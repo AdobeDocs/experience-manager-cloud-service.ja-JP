@@ -1,13 +1,13 @@
 ---
 title: サイトのクイック作成とフロントエンドのカスタマイズ
 description: クイックサイト作成ツールでサイトテンプレート、テーマ、フロントエンドパイプラインを使用して、新しいサイトの迅速なデプロイを可能にし、フロントエンド開発を切り離す方法について説明します。
-source-git-commit: 9a3e9e959f0cfb6ee5426190e2afd6894e76f964
+exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
 
 ---
-
 
 # サイトのクイック作成とフロントエンドのカスタマイズ {#quick-site-creation}
 

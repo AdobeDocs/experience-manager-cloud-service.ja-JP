@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media ビデオビューアまたは画像ビューアを Web ページに埋め込む
 description: Web ページに Dynamic Media ビデオまたは画像アセットを埋め込む方法を説明します。
-feature: アセット管理
+feature: Asset Management
 role: User
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
-source-wordcount: '377'
+workflow-type: tm+mt
+source-wordcount: '375'
 ht-degree: 100%
 
 ---

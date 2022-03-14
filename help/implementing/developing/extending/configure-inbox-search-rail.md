@@ -3,7 +3,7 @@ title: インボックスの検索フィルターを設定する方法
 description: インボックス項目の検索フィルターを設定する方法を説明します。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

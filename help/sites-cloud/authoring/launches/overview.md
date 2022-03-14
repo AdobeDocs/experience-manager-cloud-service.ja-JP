@@ -3,13 +3,13 @@ title: ローンチ
 description: ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。現在のページを維持しながら、今後のパブリケーションに合わせて変更を加えることができます。
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 100%
 
 ---
 
-# ローンチ {#launches}
+# ローンチ  {#launches}
 
 ローンチを使用すると、今後のリリース用にコンテンツを効率的に開発できます。
 
@@ -88,7 +88,7 @@ ht-degree: 100%
 >
 >問題が発生している場合は、システム管理者にお問い合わせください。
 
-## 「参照」のローンチ（サイトコンソール）{#launches-in-references-sites-console}
+## 「参照」のローンチ（サイトコンソール） {#launches-in-references-sites-console}
 
 1. **サイト**&#x200B;コンソールで、ローンチのソースに移動します。
 1. **参照**&#x200B;レールを開き、ソースページを選択します。

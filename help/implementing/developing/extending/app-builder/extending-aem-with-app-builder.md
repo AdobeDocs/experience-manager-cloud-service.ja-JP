@@ -1,68 +1,68 @@
 ---
-title: 拡張ガイド [!DNL Adobe Experience Manager] App Builder のAdobeを使用したas a Cloud Service
-description: 拡張ガイド [!DNL Adobe Experience Manager] App Builder のAdobeを使用したas a Cloud Service
-source-git-commit: 528abc0938a71746c2c8b69382c961686cc42634
+title: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
+description: Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張
+exl-id: 50d82745-5deb-4bfa-961b-714842403601
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Adobe Developer App Builder を使用した [!DNL Adobe Experience Manager] as a Cloud Service の拡張 {#extend-using-app-builder}
 
-# 拡張ガイド [!DNL Adobe Experience Manager] App Builder のAdobeを使用したas a Cloud Service {#extend-using-app-builder}
+## AEM as a Cloud Service の App Builder とは {#project-firefly}
 
-## AEM as a Cloud Serviceの App Builder とは {#project-firefly}
+新しい Adobe Developer App Builder は、AEM as a Cloud Service の機能を開発者が容易に拡張できる拡張フレームワークを提供します。
 
-新しいAdobe開発者アプリビルダーは、AEMas a Cloud Serviceの機能を簡単に拡張できる、開発者向けの拡張フレームワークを提供します。
+App Builder は、Adobe Experience Manager を拡張したカスタムエクスペリエンスを統合および作成するための統一サードパーティ拡張フレームワークを提供します。アドビのインフラストラクチャに基づいて構築されたこの包括的な拡張フレームワークにより、開発者は、あらゆるアドビソリューションおよびそれ以外の IT スタックにわたって、カスタムマイクロサービスを構築し、Adobe Experience Manager を拡張および統合できます。
 
-App Builder は、Adobe Experience Managerを拡張するカスタムエクスペリエンスを統合および作成するための、統合されたサードパーティの拡張フレームワークを提供します。 Adobeのインフラストラクチャに基づいて構築されたこの完全な拡張フレームワークを使用すると、開発者は、Adobeソリューションとその他の IT スタックをまたいで、カスタムマイクロサービスを構築し、Adobe Experience Managerを拡張し、統合できます。
+App Builder を使用すると、次のような様々なユースケースで Adobe Experience Manager を容易に拡張できます。
 
-App Builder を使用すると、様々な用途でAdobe Experience Managerを簡単に拡張できます。
+* ミドルウェア拡張 - カスタムコネクタを構築するか、事前に構築された統合のスイートを活用して、外部システムとアドビアプリケーションを接続します。
+* コアサービス拡張 - カスタム機能およびビジネスロジックを使用してデフォルトの動作を拡張することで、コアアプリケーション機能を拡張します。
+* ユーザーエクスペリエンス拡張 - コアエクスペリエンスを拡張してビジネス要件をサポートするか、顧客固有のデジタルプロパティ、ストアフロントおよびバックオフィスアプリを構築します。
 
-* ミドルウェア拡張機能 — 外部システムとAdobeアプリケーションとを接続し、カスタムコネクタを構築するか、事前に構築された統合のスイートを活用します。
-* コアサービス拡張機能 — カスタム機能とビジネスロジックを使用してデフォルトの動作を拡張し、コアアプリケーション機能を拡張します。
-* ユーザーエクスペリエンス拡張機能 — コアエクスペリエンスを拡張して、ビジネス要件をサポートしたり、顧客固有のデジタルプロパティ、ストアフロント、バックオフィスアプリを構築したりできます。
-
-App Builder（旧称 Project Firefly）は、2020 年夏以降、デベロッパープレビューを通じて、エンタープライズのお客様やパートナーが利用できるようになりました。 App Builder の一般リリース (GA) は 2021 年 12 月に予定されています。 開発者が [体験版プログラム](http://adobe.ly/appbuilder-trial).
+App Builder（旧称 Project Firefly）は、2020年夏以降、開発者プレビューを通じて、法人のお客様やパートナーが利用できるようになりました。App Builder の一般リリース（GA）は 2021年12月に予定されています。アドビの[体験版プログラム](http://adobe.ly/appbuilder-trial)を通じて開発者が App Builder を試すことを歓迎します。
 
 >[!NOTE]
 >
-> AEM 6.5 のお客様が App Builder を利用する場合は、 [Adobe Experience Manager 6.5 の拡張 (Adobe開発者アプリビルダーを使用 )](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
+> AEM 6.5 のお客様が App Builder を利用する場合は、[Adobe Developer App Builder を使用した Adobe Experience Manager 6.5 の拡張](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=ja)を参照してください。
 
 ## アーキテクチャ {#architecture}
 
-標準のソリューションの代わりに、Adobe開発者アプリビルダーは、AEMなどのAdobeクラウドソリューションを拡張するための、共通の、一貫性のある、標準化された開発プラットフォームを提供します。
+標準のソリューションではなく、Adobe Developer App Builder では、AEM などのアドビクラウドソリューションを拡張するための、一貫性のある標準化された共通の開発プラットフォームを提供します。例えば、次のようなものがありす。
 
-* Adobe開発者コンソール — カスタムマイクロサービスおよび拡張機能の開発の場合、開発者は、プラグインおよび統合を作成するために必要なすべてのツールと API にアクセスしながら、プロジェクトを構築および管理できます。
-* 開発者ツール — 開発者がカスタム拡張機能や統合を簡単に構築できるオープンソースツール、SDK、ライブラリ。 React Spectrum(Adobeの UI ツールキット ) を使用して、すべてのAdobeアプリに共通の UI を 1 つ用意します。
-* サービス — サーバーレスプラットフォーム上のインフラストラクチャをホスティングするための I/O Runtime と、イベントベースの統合のための I/O Events。 また、データとファイルの保存も標準でサポートされています。
-* Adobe Experience Cloud — 開発者は、拡張機能や統合を送信し、Experience Cloud組織内で公開できます。その後、システム管理者は、これらの拡張機能を確認、管理および承認できます。 公開すると、カスタムの App Builder 拡張機能とツールが他のAdobe Experience Cloudアプリと共に見つかります。
+* アドビ開発者コンソール - カスタムマイクロサービスおよび拡張機能の開発の場合、開発者は、プラグインや統合の作成に必要なすべてのツールと API にアクセスしながら、プロジェクトを構築および管理できます。
+* 開発者ツール - 開発者がカスタムの拡張機能や統合を容易に構築できるオープンソースのツール、SDK およびライブラリです。React Spectrum（アドビの UI ツールキット）を使用すれば、すべてのアドビアプリに共通の UI を 1 つ用意できます。
+* サービス - サーバーレスプラットフォーム上でインフラストラクチャをホスティングするための I/O Runtime や、イベントベースの統合のための I/O Events があります。また、データやファイルの保存も標準でサポートされています。
+* Adobe Experience Cloud - 開発者は、拡張機能や統合を送信して Experience Cloud 組織内で公開できます。その後、システム管理者がこれらの拡張機能を審査、管理および承認できます。App Builder のカスタム拡張機能およびツールは、公開されると、他の Adobe Experience Cloud アプリと一緒に表示されます。
 
-次の図は、App Builder 上で構築された標準アプリケーションがこれらの機能をどのように利用するかを示しています。
+次の図は、App Builder 上で構築された標準アプリケーションでこれらの機能がどのように利用されているかを示しています。
 
 ![アーキテクチャ](/help/implementing/developing/extending/assets/firefly-architecture.jpg)
 
-App Builder のアーキテクチャについて詳しくは、 [アーキテクチャの概要](https://www.adobe.io/app-builder/docs/guides/).
+App Builder のアーキテクチャについて詳しくは、[アーキテクチャの概要](https://www.adobe.io/app-builder/docs/guides/)を参照してください。
 
-## App Builder の概要 {#additional-resources}
+## App Builder の基本を学ぶ {#additional-resources}
 
-App Builder を使い始めるのに役立つ一連のドキュメントを作成しました。
+App Builder を使い始める際に役立つように、参考になる一連のドキュメントを作成しました。
 
-* [App Builder はじめに](https://www.adobe.io/app-builder/docs/getting_started/)
+* [App Builder の基礎知識](https://www.adobe.io/app-builder/docs/getting_started/)
 
-## ドキュメントを使用して学習を続ける {#appbuilder-documentation}
+## ドキュメントを利用した学習の続行 {#appbuilder-documentation}
 
-App Builder には、開発者向けのビデオおよびドキュメント（ガイドを含む）、および独自のカスタムアプリケーションの開発を開始するのに役立つリファレンスドキュメントが用意されています。
+App Builder には、開発者向けのビデオとドキュメントが用意されています。ガイドや、独自のカスタムアプリケーションの開発を開始する際に役立つリファレンスドキュメントなどです。
 
 * [App Builder ドキュメント](https://www.adobe.io/app-builder/docs/overview/)
 * [App Builder ビデオ](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
-## サンプルアプリケーションの 1 つを試してみます。 {#appbuilder-codesamples}
+## サンプルアプリケーションの試用 {#appbuilder-codesamples}
 
-開発を開始する準備はできていますか？ 迅速に作業を進めるのに役立つサンプルアプリケーションが多数用意されています。
+開発を開始する準備はできていますか？迅速に作業を進めるのに役立つサンプルアプリケーションが多数用意されています。
 
-* [App Builder コードラボ (Adobe開発者向け Web サイト )](https://www.adobe.io/app-builder/docs/resources/)
+* [Adobe Developer Web サイトの App Builder コードラボ](https://www.adobe.io/app-builder/docs/resources/)
 
 ## サポート {#support}
 
-開発者サポートのタイプのリクエストについては、開発者が [Experience Leagueフォーラム](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).
+開発者サポートに類するリクエストについては、開発者が [Experience League フォーラム](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly)を使用することをお勧めします。

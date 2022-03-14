@@ -1,13 +1,13 @@
 ---
 title: デモサイトの管理
 description: デモサイトの管理に役立つツールと、それらを削除する方法について説明します。
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 6%
 
 ---
-
 
 # デモサイトの管理 {#manage-demo-sites}
 

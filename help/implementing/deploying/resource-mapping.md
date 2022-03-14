@@ -5,7 +5,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 feature: Configuring
-source-git-commit: b537a22cbac0c4a83c931bfe0991ab16bb6c11d0
+exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 61%

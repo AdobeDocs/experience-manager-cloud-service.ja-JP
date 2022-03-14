@@ -3,7 +3,7 @@ title: ページ編集用のキーボードショートカット
 description: AEM ではページ編集用を含む様々なキーボードショートカットを使用できます
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 

@@ -2,12 +2,12 @@
 title: XMP メタデータ
 description: メタデータ管理のための XMP（Extensible Metadata Platform）メタデータ規格について説明します。メタデータの作成、処理、交換のための標準化された形式として Experience Manager で使用されます。
 contentOwner: AG
-feature: メタデータ
+feature: Metadata
 role: User,Admin
 exl-id: fd9af408-d2a3-4c7a-9423-c4b69166f873
 source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
-workflow-type: ht
-source-wordcount: '1012'
+workflow-type: tm+mt
+source-wordcount: '1011'
 ht-degree: 100%
 
 ---

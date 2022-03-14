@@ -3,7 +3,7 @@ title: リリースノート（2020.3.0）
 description: リリースノート（2020.3.0）
 exl-id: 0393c789-3999-4e51-be83-269d6eabd3f3
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ AEM as a Cloud Service リリース 2020.3.0 の Cloud Manager の新機能と�
 * ビルドステップのログを、ビルドステップの実行中に使用できるようになりました。
 * パイプライン実行の詳細ページの一部のメッセージを編集し、わかりやすくしました。
 
-### バグ修正 {#bug-fixes}
+### バグ修正  {#bug-fixes}
 
 * カスタムおよび製品の機能テスト手順のログファイルを UI からダウンロードできなかった。
 * Cloud Services プログラムの Git リポジトリーを作成できなかった場合、Deployment Manager の役割を持つユーザーが、このエラーから回復できないことがありました。

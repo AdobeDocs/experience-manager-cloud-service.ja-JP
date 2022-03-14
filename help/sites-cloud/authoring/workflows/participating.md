@@ -1,15 +1,15 @@
 ---
-title: ワークフローへの参加
+title: 'ワークフローへの参加 '
 description: ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 100%
 
 ---
 
-# ワークフローへの参加 {#participating-in-workflows}
+# ワークフローへの参加  {#participating-in-workflows}
 
 ワークフローには通常、ページまたはアセットでユーザーがアクティビティを実行する必要があるステップが含まれています。ワークフローでアクティビティを実行するユーザーまたはグループを選択し、その人物やグループに作業項目を割り当てます。ユーザーは通知を受け取り、次の適切なアクションを取ることができます。
 
@@ -103,7 +103,7 @@ ht-degree: 100%
 
    ![次のステップの選択](/help/sites-cloud/authoring/assets/workflows-next-step.png)
 
-1. 「**次へ**」を選択してアクションを確定します。
+1. 「**次へ**」を選択して、アクションを確定します。
 
 ### 参加者ステップの委任 {#delegating-a-participant-step}
 
@@ -211,7 +211,7 @@ ht-degree: 100%
 
 1. 「**ロールバック**」を選択して、アクションを確定します。
 
-### ワークフロー項目を開いて詳細を表示（およびアクションを実行）{#opening-a-workflow-item-to-view-details-and-take-actions}
+### ワークフロー項目を開いて詳細を表示（およびアクションを実行） {#opening-a-workflow-item-to-view-details-and-take-actions}
 
 ワークフロー作業項目の詳細を表示して、適切なアクションを実行します。
 
@@ -257,7 +257,7 @@ ht-degree: 100%
 1. 必要に応じて、適切なアクションを選択し、詳細を入力して「**OK**」（または「**キャンセル**」）で確認します。
 1. 「**保存**」または「**キャンセル**」を使用して終了します。
 
-### ワークフローペイロード（複数リソース）の表示 {#viewing-the-workflow-payload-multiple-resources}
+### ワークフローペイロード（複数リソース）の表示  {#viewing-the-workflow-payload-multiple-resources}
 
 ワークフローインスタンスに関連付けられたペイロードの詳細を表示できます。最初にパッケージの中のリソースが表示されるので、ドリルダウンして、個別のページを表示できます。
 

@@ -1,5 +1,5 @@
 ---
-title: ページプロパティの編集
+title: 'ページプロパティの編集 '
 description: ページに必要なプロパティを定義します
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# ページプロパティの編集 {#editing-page-properties}
+# ページプロパティの編集  {#editing-page-properties}
 
 ページに必要なプロパティを定義できます。これらはページの特性に応じて異なることがあります。例えば、ページによってはライブコピーに接続されていたり、接続されずにライブコピー情報が必要に応じて利用可能な場合があります。
 
@@ -102,8 +102,8 @@ ht-degree: 100%
    * **デザイン** - 結果のサイトのページナビゲーションにページが表示されるかどうかを示します
    * **エイリアス** - このページで使用されるエイリアスを指定します
       * 例えば、`/content/wknd/us/en/magazine/members-only` ページに `private` というエイリアスを定義した場合、このページは `/content/wknd/us/en/magazine/private` からもアクセスできます。
-      * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定されます。このプロパティはリソースにのみ影響し、リポジトリーパスには影響しません。
-      * エディターからエイリアスでアクセスしたページは公開できません。エディターでは、実際のパスでアクセスしたページにのみ、[公開オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)が使用可能です。
+      * エイリアスを作成すると、ページノードに `sling:alias` プロパティが設定されます。これは、リポジトリパスではなく、リソースにのみ影響を与えます。
+      * エディターでエイリアスによってアクセスされたページは公開できません。エディターでは、実際のパスでアクセスしたページにのみ、[公開オプション](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)が使用可能です。
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).

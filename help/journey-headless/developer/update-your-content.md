@@ -3,7 +3,7 @@ title: AEM Assets API を使用してコンテンツをアップデートする�
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 100%
 

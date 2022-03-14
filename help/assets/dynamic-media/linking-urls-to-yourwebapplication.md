@@ -4,7 +4,7 @@ description: Dynamic Media で Web アプリケーションに URL をリンク�
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 100%
 
@@ -38,9 +38,9 @@ Web ページやアプリケーションにこれらの URL 文字列を配置�
 >
 >URL は、選択したアセットを公開するまではコピーできません。また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
 >
->[アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
+>[アセットを公開する](publishing-dynamicmedia-assets.md)を参照してください。
 >
->[ビューアプリセットの公開](managing-viewer-presets.md#publishing-viewer-presets)を参照してください。
+>[ビューアプリセットを公開する](managing-viewer-presets.md#publishing-viewer-presets)を参照してください。
 >
 >[画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 
@@ -52,9 +52,9 @@ URL 文字列を取得するには複数の方法があります。以下の手�
 
    URL をコピーするには、その&#x200B;*前に*&#x200B;アセットを&#x200B;*公開*&#x200B;しておく必要があります。また、ビューアプリセットまたは画像プリセットを公開する必要もあります。
 
-   [アセットの公開](publishing-dynamicmedia-assets.md)を参照してください。
+   [アセットを公開する](publishing-dynamicmedia-assets.md)を参照してください。
 
-   [ビューアプリセットの公開](managing-viewer-presets.md#publishing-viewer-presets)を参照してください。
+   [ビューアプリセットを公開する](managing-viewer-presets.md#publishing-viewer-presets)を参照してください。
 
    [画像プリセットの公開](managing-image-presets.md#publishing-image-presets)を参照してください。
 

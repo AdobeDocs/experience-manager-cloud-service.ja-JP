@@ -1,13 +1,13 @@
 ---
 title: パイプラインの設定
 description: フロントエンドパイプラインを作成して、サイトのテーマのカスタマイズを管理します。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 2%
 
 ---
-
 
 # パイプラインの設定 {#set-up-your-pipeline}
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 >
 >フロントエンドパイプラインでデプロイできるのは、AEMサイトのスタイルを設定する JavaScript、CSS、静的リソースのみです。 ページやアセットなどのサイトコンテンツは、パイプラインにデプロイできません。
 
-## Cloud Manager にアクセス {#login}
+## Cloud Manager へのアクセス {#login}
 
 1. 次の場所にあるAdobeCloud Manager にログインします。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -104,7 +104,7 @@ URL にアクセスまたはコピーしたプログラムの名前をメモし�
 >
 >AEMaaCS のパイプラインに既に精通しており、フロントエンドパイプラインの詳細を含む様々なタイプのパイプラインの違いについて詳しくは、 CI/CD パイプラインの設定 — でリンクされたCloud Servicesを参照してください [その他のリソース](#additional-resources) 」の節を参照してください。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Quick Site Creation ジャーニーのこの部分が完了し、次の作業をおこなう必要があります。
 

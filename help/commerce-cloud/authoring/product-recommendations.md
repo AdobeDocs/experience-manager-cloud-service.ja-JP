@@ -9,7 +9,8 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 9649
 thumbnail: 340130.jpg
-source-git-commit: f7d6ec7241296c3eb42e7d30d2a85892de61edea
+exl-id: ee6f3423-175d-4a13-a587-63c285b6075f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 7%

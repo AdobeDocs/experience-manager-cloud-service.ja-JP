@@ -3,7 +3,7 @@ title: オプション - AEM で単一ページアプリケーション（SPA）
 description: AEM ヘッドレスデベロッパージャーニーの続編であるこのオプションパートでは、AEM でヘッドレス配信と従来のフルスタック CMS 機能を組み合わせる方法について説明します。また、AEM の SPA Editor フレームワークを使用して編集可能な SPA を作成する方法についても説明します。
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 100%
 

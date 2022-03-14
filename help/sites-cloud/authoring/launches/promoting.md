@@ -3,13 +3,13 @@ title: ローンチの昇格
 description: コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 100%
 
 ---
 
-# ローンチの昇格 {#promoting-launches}
+# ローンチのプロモーション {#promoting-launches}
 
 コンテンツを公開する前にソース（実稼動）に戻すには、ローンチページを昇格させる必要があります。ローンチページが昇格されると、ソースページの対応するページが、昇格済みのページのコンテンツに置き換わります。ローンチページを昇格させるときには、次のオプションを使用できます。
 
@@ -41,10 +41,9 @@ ht-degree: 100%
 >
 
 
-
 ローンチは、**サイト**&#x200B;コンソールまたは&#x200B;**ローンチ**&#x200B;コンソールを使用して昇格させることができます。
 
-1. 次のファイルを開きます。
+1. 次を開きます。
    * **サイト**&#x200B;コンソール（ソースページのナビゲーション時）：
       1. [参照レール](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references)を開き、[選択モード](/help/sites-cloud/authoring/getting-started/basic-handling.md)を使用して必要なソースページを選択します（または参照レールを選択して開きます。順序はどちらでもかまいません）。すべての参照が表示されます。
       1. **ローンチ**（例：ローンチ（1））を選択して特定のローンチのリストを表示します。
@@ -80,7 +79,7 @@ ht-degree: 100%
 
 1. 「**昇格**」を選択します。
 
-## 編集中のローンチページの昇格{#promoting-launch-pages-when-editing}
+## 編集中のローンチページの昇格 {#promoting-launch-pages-when-editing}
 
 ローンチページの編集中、**ローンチを昇格**&#x200B;アクションは「**ページ情報**」からも実行できます。これによりウィザードが開き、必要な情報が収集されます。
 
@@ -90,7 +89,7 @@ ht-degree: 100%
 >
 >これは単一および[ネストされたローンチ](#promoting-a-nested-launch)で使用できます。
 
-## ネストされたローンチの昇格{#promoting-a-nested-launch}
+## ネストされたローンチの昇格 {#promoting-a-nested-launch}
 
 ネストされたローンチを作成後、任意のソース（ルートソース（実稼動）を含む）に戻して昇格させることができます。
 

@@ -2,12 +2,12 @@
 title: Dynamic Media アセットの公開
 description: Dynamic Media アセットの公開方法を学習します。
 contentOwner: Rick Brough
-feature: アセット管理
+feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
-source-wordcount: '464'
+workflow-type: tm+mt
+source-wordcount: '462'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,6 @@ Dynamic Media アセットを公開するには、既にアップロード済み
 >* アセットの URL を使用するには、そのアセットを公開する必要があります。アセットが公開されていない場合、URL をコピーして Web ブラウザーに貼り付けても機能しません。
 >* ライブ配信をするには、画像プリセットおよびビューアプリセットをアクティベートして公開する必要があります。
 >
-
 
 
 一連のアセットを公開する方法について詳しくは、[アセットの公開](/help/assets/manage-digital-assets.md)を参照してください。

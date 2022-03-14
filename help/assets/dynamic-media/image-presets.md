@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media 画像プリセットの適用
 description: Dynamic Media での画像プリセットの適用方法を説明します.
-feature: 画像プリセット、ビューア、レンディション
+feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
 source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: ht
-source-wordcount: '306'
+workflow-type: tm+mt
+source-wordcount: '302'
 ht-degree: 100%
 
 ---

@@ -3,7 +3,7 @@ title: ターゲットモードを使用したターゲットコンテンツの�
 description: ターゲットモードとターゲットコンポーネントには、エクスペリエンス用のコンテンツを作成するためのツールが用意されています。
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5342'
 ht-degree: 100%
 
@@ -502,13 +502,13 @@ Adobe Target を使用する場合に目標と設定を構成するには：
 
    ![レポートソース](../assets/targeted-reporting-source.png)
 
-1. 「**目標指標**」領域の「**主な目標**」で、コンバージョン、売上高、エンゲージメントなど追跡する成功指標を選択し、その指標の測定方法（または目標に達したことを示すためにオーディエンスが取るアクション）を入力します。成功指標については、前の表の目標指標の定義および [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
+1. 「**目標指標**」領域の「**主な目標**」で、コンバージョン、売上高、エンゲージメントなど追跡する成功指標を選択し、その指標の測定方法（または目標に達したことを示すためにオーディエンスが取るアクション）を入力します。成功指標については、前の表の目標指標の定義および [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)を参照してください。
 
    右上隅の 3 つのドットをクリックし、「**名前を変更**」を選択して、目標の名前を変更できます。
 
    すべてのフィールドをクリアする必要がある場合は、右上隅の 3 つのドットをクリックし、「**すべてのフィールドをクリア**」を選択します。
 
-   どの指標にも定義可能な詳細設定があります。この設定にアクセスするには、「**詳細設定**」を選択します。前の表の成功指標のカウント方法の定義と [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=ja)を参照してください。
+   どの指標にも定義可能な詳細設定があります。この設定にアクセスするには、「**詳細設定**」を選択します。前の表の成功指標のカウント方法の定義と [Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)を参照してください。
 
    >[!NOTE]
    >
@@ -571,7 +571,7 @@ Adobe Target を使用する場合に目標と設定を構成するには：
 
 ## ターゲットコンポーネントオプションの設定 {#configuring-target-component-options}
 
-ターゲットコンポーネントをカスタマイズするには、次の 2 つの方法のどちらかでコンポーネントのオプションにアクセスします。
+Target コンポーネントをカスタマイズするには、次の 2 つの方法のどちらかでコンポーネントのオプションにアクセスします。
 
 1. ターゲットコンポーネント内のコンポーネントをターゲット設定した後に、コンポーネント、設定アイコン（歯車アイコン）の順にクリックまたはタップします。
 

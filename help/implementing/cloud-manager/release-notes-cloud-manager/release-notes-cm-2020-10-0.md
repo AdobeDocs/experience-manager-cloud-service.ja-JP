@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2020.10.0 Cloud Manager のリリースノート
-feature: リリース情報
+feature: Release Information
 exl-id: 129d0dd8-3d6e-4cf0-b42e-5526f5cf0836
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '302'
+workflow-type: tm+mt
+source-wordcount: '300'
 ht-degree: 100%
 
 ---

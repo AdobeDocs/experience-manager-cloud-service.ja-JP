@@ -1,13 +1,13 @@
 ---
 title: Screens as a Cloud Service でのチャネルの公開
 description: ここでは、Screens as a Cloud Service でチャネルを公開する方法について説明します。
-source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
-workflow-type: ht
+exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
 
 ---
-
 
 # Screens as a Cloud Service でのチャネルの公開 {#publish-channel-screens-cloud}
 

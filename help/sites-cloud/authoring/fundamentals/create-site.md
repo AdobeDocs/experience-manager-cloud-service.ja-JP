@@ -3,13 +3,13 @@ title: 新しいサイトの作成
 description: 管理者がAEMを使用して、サイトテンプレートを使用して新しいサイトを作成し、サイトのスタイルと構造を定義する方法を説明します。
 feature: Administering
 role: Admin
-source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
+exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 6%
 
 ---
-
 
 # 新しいサイトの作成 {#new-site}
 

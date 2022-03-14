@@ -1,10 +1,11 @@
 ---
 title: AEM as a Cloud Serviceへの移行ジャーニーの概要
-description: AEM as a Cloud Serviceへの移行の基本事項を把握して、移行ジャーニーを開始します。
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+description: AEM as a Cloud Service への移行の基本を理解して、移行ジャーニーを開始します。
+exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '568'
-ht-degree: 24%
+ht-degree: 27%
 
 ---
 
@@ -51,6 +52,6 @@ AEM as a Cloud Service を使用すると、チームは製品アップグレー
 
 以下を参照してください： [Cloud Acceleration Manager のドキュメント](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) または [紹介ビデオ](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) をクリックして、移行ジャーニーを開始します。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEM Cloud Service移行ジャーニーを始めていただき、ありがとうございます。 このドキュメントを読んだら、 [準備フェーズ](/help/journey-migration/readiness.md)：デプロイメントをAEM as a Cloud Serviceに移動する準備ができているかどうかを判断するのに役立ちます。

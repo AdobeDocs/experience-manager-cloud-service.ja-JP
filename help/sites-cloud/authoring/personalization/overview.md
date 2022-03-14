@@ -3,7 +3,7 @@ title: パーソナライズとコンテンツのターゲティング
 description: パーソナライズされたコンテンツを AEM で作成する方法を説明します。
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 
@@ -11,11 +11,11 @@ ht-degree: 100%
 
 # パーソナライズとコンテンツのターゲティング {#personalization}
 
-## パーソナライズとコンテンツのターゲティング {#personalization-and-content-targeting}
+## パーソナライゼーションとコンテンツのターゲティング {#personalization-and-content-targeting}
 
 AEM には、ターゲットとなるコンテンツをオーサリングして、パーソナライズされたエクスペリエンスを提供するためのツールのフレームワークが用意されています。
 
-## ターゲットモード {#targeting-mode}
+## ターゲティングモード {#targeting-mode}
 
 [AEM のターゲットモードを使用してターゲットコンテンツをオーサリングします。](/help/sites-cloud/authoring/personalization/targeted-content.md)ターゲットモードと Target コンポーネントは、マーケティングアクティビティのエクスペリエンス用コンテンツを作成するためのツールを提供します。
 
@@ -27,7 +27,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 アクティビティは、ページが使用する[ターゲティングエンジン](#targeting-engine)も識別します。
 
-ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md)を使用します。[ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)するときに、アクティビティを作成することもできます。
+ブランドのアクティビティを作成および管理するには、[アクティビティコンソール](/help/sites-cloud/authoring/personalization/activities.md)を使用します。[ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)する際に、アクティビティを作成することもできます。
 
 ## エクスペリエンス {#experiences}
 
@@ -47,7 +47,7 @@ AEM には、ターゲットとなるコンテンツをオーサリングして�
 
 複数のエクスペリエンスで使用できるオファーを作成するには、[オファーコンソール](/help/sites-cloud/authoring/personalization/offers.md)を使用します。[ターゲットコンテンツをオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)するときは、単一エクスペリエンス用のオファーを作成するか、オファーライブラリからオファーを追加します。
 
-## ターゲティングエンジン{#targeting-engine}
+## ターゲティングエンジン {#targeting-engine}
 
 ターゲティングエンジンは、ターゲットコンテンツ用のロジックを動かすメカニズムです。使用可能なターゲティングエンジンには AEM と Adobe Target の 2 種類があり、どちらを使用するかは[アクティビティ](/help/sites-cloud/authoring/personalization/activities.md)で設定します。
 

@@ -3,7 +3,7 @@ title: SPA ブループリント
 description: このドキュメントでは、AEM 内に編集可能な SPA コンポーネントを実装するために SPA フレームワークが満たす必要がある、フレームワークに依存しない一般的な契約について説明します。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 100%
 
@@ -174,7 +174,6 @@ SPA コンポーネントは、レスポンシブグリッドなどのグラフ�
 >* `"new section"`：現在の要素がコンテナのプレースホルダーであることを示します
 >* `"aem-Grid-newComponent"`：レイアウトのオーサリング用にコンポーネントを正規化します
 >
-
 
 
 #### コンポーネントのマッピング {#component-mapping}

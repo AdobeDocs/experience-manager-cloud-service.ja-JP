@@ -2,13 +2,13 @@
 title: AEMヘッドレスのアーキテクチャ
 description: ヘッドレスデプロイメントと関連する、Adobe Experience Managerの高レベルアーキテクチャについて説明します。 AEM オーサーサービス、プレビューサービス、パブリッシュサービスの役割、およびヘッドレスアプリケーションで推奨されるデプロイメントパターンについて説明します。
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 18%
 
 ---
-
 
 # AEMヘッドレスのアーキテクチャ
 
@@ -49,4 +49,3 @@ AEM ヘッドレスアプリケーションで最も一般的なデプロイメ�
 1. Preview サービスに接続するアプリケーションのプレビューバージョンを設定できます。
 1. コンテンツをレビューおよび承認したら、AEM パブリッシュサービスに公開できます。
 1. エンドユーザーは、アプリケーションの実稼動版を操作します。 実稼動アプリケーションは、Dispatcher を介してパブリッシュサービスに接続し、GraphQL API を使用してコンテンツを要求し、使用します。
-

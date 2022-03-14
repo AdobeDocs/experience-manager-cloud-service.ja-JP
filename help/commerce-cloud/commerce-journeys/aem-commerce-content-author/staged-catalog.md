@@ -1,10 +1,11 @@
 ---
 title: ステージングされた製品カタログエクスペリエンスを管理
 description: ステージングされた製品カタログエクスペリエンスを管理する方法を説明します。
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -56,17 +57,17 @@ AEMローンチを使用すると、ステージングされた製品データ�
 
 ![ステージピッカー](assets/staged-picker.png)
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、ジャーニーのこの部分が完了しました。次の手順を実行します。
 
 * ステージング済みの製品カタログとローンチを使用したコンテンツの概念を理解する
 * 製品コックピットとエディターを通じて、段階別の製品カタログデータにアクセスできる
 
-これで、を管理する準備が整いました。 [製品エクスペリエンス](product-experience-management.md). ただし、AEM Content と Commerce には、他にも多くのオプションが用意されています。 その他のリソースについては、 [「その他のリソース」セクション](#additional-resources) このジャーニーで確認した機能の詳細を確認するには、以下を参照してください。
+これで、を管理する準備が整いました。 [製品エクスペリエンス](product-experience-management.md). ただし、AEM Content と Commerce には、他にも多くのオプションが用意されています。 このジャーニーで説明した機能について詳しくは、[その他のリソース](#additional-resources)の節で紹介しているその他のリソースを参照してください。
 
 ## その他のリソース {#additional-resources}
 
 * [製品コックピット](/help/commerce-cloud/authoring/product-cockpit.md)
 * [はじめに](/help/commerce-cloud/getting-started.md)
-* [ローンチ](/help/sites-cloud/authoring/launches/overview.md)
+* [ローンチ ](/help/sites-cloud/authoring/launches/overview.md)

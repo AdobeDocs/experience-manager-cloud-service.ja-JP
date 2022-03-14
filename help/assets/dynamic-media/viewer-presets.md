@@ -1,12 +1,12 @@
 ---
 title: Dynamic Media ビューアプリセットの適用
 description: Dynamic Media でのビューアプリセットの適用方法について説明します.
-feature: ビューアプリセット、ビューア
+feature: Viewer Presets,Viewers
 role: User
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
-source-wordcount: '221'
+workflow-type: tm+mt
+source-wordcount: '218'
 ht-degree: 100%
 
 ---

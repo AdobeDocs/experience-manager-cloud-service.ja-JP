@@ -1,13 +1,13 @@
 ---
 title: ユーザーマッピングツールの概要
 description: ユーザーマッピングツールの概要
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
-
 
 # ユーザーマッピングツールの概要 {#overview-user-mapping-tool}
 
@@ -30,4 +30,4 @@ AEM as a Cloud Service の重要な変更の 1 つは、Adobe ID を使用した
 
 ### 次の手順 {#whats-next}
 
-ユーザーマッピングツールの概要を学習したら、ユーザーマッピングツールを使用する前に、重要な考慮事項や例外事例を確認する準備が整いました。 詳しくは、 [ユーザーマッピングツールに関する重要な考慮事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md) を参照してください。
+ユーザーマッピングツールの概要を理解したら、ユーザーマッピングツールを使用する前に、重要な考慮事項や例外的状況を確認する準備が整いました。詳しくは、[ユーザーマッピングツールの重要な考慮事項](/help/journey-migration/content-transfer-tool/user-mapping-tool/considerations-user-mapping-tool.md)を参照してください。

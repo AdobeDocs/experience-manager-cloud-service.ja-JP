@@ -1,12 +1,12 @@
 ---
 title: ライブコピーの作成と同期
 description: ライブコピーを作成および同期して、サイト全体でコンテンツを再利用する方法を説明します。
-feature: マルチサイトマネージャー
+feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '4277'
+workflow-type: tm+mt
+source-wordcount: '4274'
 ht-degree: 100%
 
 ---

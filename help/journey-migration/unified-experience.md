@@ -1,7 +1,8 @@
 ---
 title: コードリファクタリングツール用 Unified Experience
 description: コードリファクタリングツール用 Unified Experience
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: daee0e2d-1e2b-41a3-acab-fc59142d0e05
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%

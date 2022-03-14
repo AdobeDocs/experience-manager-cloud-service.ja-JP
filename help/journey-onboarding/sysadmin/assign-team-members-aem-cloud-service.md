@@ -5,7 +5,7 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 100%
 
@@ -47,9 +47,9 @@ ht-degree: 100%
    >[!IMPORTANT]
    >AEM as a Cloud Service 製品プロファイルにチームメンバーを割り当てる手順を確認する前に、必ず次の 2 つの手順に従ってください。
    >
-   >1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=ja) にログインします。詳しくは、「Admin Console へのログイン」を参照してください。
+   >1. [Adobe Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/admin-console.html?lang=en) にログインします。詳しくは、「Admin Console へのログイン」を参照してください。
    >
-   >1. [AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)を確認します。
+   >1. [AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)を確認します。
 
 
 Adobe Admin Console で Cloud Manager プロファイルのリストを表示するには、次の手順に従います。
@@ -66,7 +66,7 @@ Adobe Admin Console で Cloud Manager プロファイルのリストを表示す
 1. 役割に基づいてユーザーに割り当てる必要がある AEM as a Cloud Service 製品プロファイルのリストが表示されます。
 
    >[!NOTE]
-   >詳しくは、[AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)を参照してください。
+   >詳しくは、[AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)を参照してください。
 
    ![](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service へのアクセス権が付与されるには、インス
 
    ![](/help/journey-onboarding/assets/add-team1.png)
 
-1. 新しいタブで Adobe Admin Console が表示されます。ここから、環境のオーサーインスタンスにアクセスできます。ユーザーに付与すべき権限に基づいて、「**AEM 管理者**」または「**AEM ユーザー**」を選択します。詳しくは、[AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=ja#aem-product-profiles)を参照してください。
+1. 新しいタブで Adobe Admin Console が表示されます。ここから、環境のオーサーインスタンスにアクセスできます。ユーザーに付与すべき権限に基づいて、「**AEM 管理者**」または「**AEM ユーザー**」を選択します。詳しくは、[AEM as a Cloud Service 製品プロファイル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/aem-cs-team-product-profiles.html?lang=en#aem-product-profiles)を参照してください。
 
    ![](/help/journey-onboarding/assets/add-team2.png)
 

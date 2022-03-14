@@ -1,11 +1,11 @@
 ---
 title: AEM バージョンのアップデート
 description: 'AEM バージョンのアップデート '
-feature: デプロイ
+feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
-source-wordcount: '395'
+workflow-type: tm+mt
+source-wordcount: '394'
 ht-degree: 100%
 
 ---

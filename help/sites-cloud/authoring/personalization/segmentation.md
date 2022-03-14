@@ -1,15 +1,15 @@
 ---
-title: セグメント化について
+title: 'セグメント化について '
 description: セグメント化は、キャンペーンを作成するときの主要な考慮事項です。
 exl-id: 36a9623a-bb19-498a-a0e9-ef80582b1fcf
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 100%
 
 ---
 
-# セグメント化について {#understanding-segmentation}
+# セグメント化について  {#understanding-segmentation}
 
 キャンペーンを作成する場合、セグメント化を考えることが重要になります。ほとんどの場合、キャンペーンを開始する前にセグメントをあらかじめ定義しておく必要があります。
 

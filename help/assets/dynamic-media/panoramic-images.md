@@ -1,12 +1,12 @@
 ---
 title: パノラマ画像
 description: Dynamic Media でのパノラマ画像の使用方法を学習します。
-feature: パノラマ画像
+feature: Panoramic Images
 role: User
 exl-id: bdc5d00e-fa92-4db5-a3b2-4dd5885eec0b
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
-source-wordcount: '149'
+workflow-type: tm+mt
+source-wordcount: '147'
 ht-degree: 100%
 
 ---

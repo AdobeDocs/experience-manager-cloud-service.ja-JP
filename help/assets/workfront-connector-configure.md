@@ -3,13 +3,13 @@ title: ' [!DNL Workfront for Experience Manager enhanced connector] の設定'
 description: ' [!DNL Workfront for Experience Manager enhanced connector] の設定'
 role: Admin
 feature: Integrations
-source-git-commit: 6923f3d63bf9b1c24f70e50548b4fb0c13f0cd88
+exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
+source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Workfront for Experience Manager enhanced connector] の設定 {#assets-integration-overview}
 

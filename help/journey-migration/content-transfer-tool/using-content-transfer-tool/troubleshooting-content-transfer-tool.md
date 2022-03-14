@@ -1,13 +1,13 @@
 ---
 title: コンテンツ転送ツールのトラブルシューティング
 description: コンテンツ転送ツールのトラブルシューティング
-source-git-commit: 9e290ac1b62bdaa2a0aaee109ef959af549aa5bd
+exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
-
 
 # コンテンツ転送ツールのトラブルシューティング {#troubleshoot-content-transfer-tool}
 

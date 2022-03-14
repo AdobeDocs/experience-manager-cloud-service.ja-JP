@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 131b17f53b364138d2cea7648d4c23a8480740bf
 workflow-type: tm+mt
 source-wordcount: '2647'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 >[!NOTE]
 >
 > Microsoft Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
-> AEM Forms as a Cloud Serviceを使用して、Tranquil、Urbane、Ultramarine のテーマを取得し、使用するには、AEM Archetype バージョン 32 以降をセットアップします。
+> Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
 
@@ -246,7 +246,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成する：**[!DNL Experience Manager Forms]AEM アーキタイプ 32[ 以降に基づいて ] as a [Cloud Service](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つサンプルのテーマとテンプレートも含まれています。
+1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成する：**[AEM アーキタイプ 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つサンプルのテーマとテンプレートも含まれています。
 
    コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。[!DNL Forms] に特有の設定、テーマおよびテンプレートを含めるには、`includeFormsenrollment=y` を設定します。
 

@@ -1,13 +1,13 @@
 ---
 title: フロントエンド開発者へのアクセス権の付与
 description: フロントエンドデベロッパーを Cloud Manager にオンボーディングして、AEMサイトの Git リポジトリーとパイプラインにアクセスできるようにします。
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 4%
 
 ---
-
 
 # フロントエンド開発者へのアクセス権の付与 {#grant-fed-access}
 
@@ -91,7 +91,7 @@ Cloud Manager へのアクセス権を付与し、ユーザーにユーザーロ
 * プログラムの名前またはその URL [Cloud Manager からコピー](pipeline-setup.md#login)
 * フロントエンドの設計要件
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 これで、AEM Quick Site Creation ジャーニーのこの部分が完了しました。知っておく必要があります。
 
@@ -105,5 +105,3 @@ Cloud Manager へのアクセス権を付与し、ユーザーにユーザーロ
 クイックサイト作成ジャーニーの次の部分に進むことをお勧めしますが、ドキュメントを確認してください [フロントエンド開発者資格情報の取得](retrieve-access.md) 以下に、このドキュメントで取り上げたいくつかの概念について詳しく説明する、その他のオプションのリソースを示します。ただし、このジャーニーを続行する必要はありません。
 
 * [オンボーディングジャーニー](/help/journey-onboarding/home.md)  — このガイドは、チームが確実に設定され、AEM as a Cloud Serviceにアクセスできるようにするための出発点となります。
-
-

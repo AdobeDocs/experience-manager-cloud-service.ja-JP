@@ -1,10 +1,11 @@
 ---
 title: 大規模なコンテンツリポジトリーの処理
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 60%
+ht-degree: 66%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_precopy"
 >title="大規模なコンテンツリポジトリーの処理"
->abstract="コンテンツを AEM as a Cloud Service に移動するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮するために、CTT は、オプションのコピー前手順として AzCopy を活用できます。この前段階が設定されたら、AzCopy は 、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
+>abstract="コンテンツを AEM as a Cloud Service に移動するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮するために、CTT は、オプションのコピー前手順として AzCopy を活用できます。この前段階が設定されたら、AzCopy は、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step" text="AzCopy をコピー前手順として使用する"
 
 コンテンツ転送ツール（CTT）で大量の BLOB をコピーするには、数日かかる場合があります。
@@ -81,7 +82,7 @@ Azure ポータルのコンテナプロパティページで、「**サイズを
 #### ファイルデータストア {#file-data-store-determine-size}
 
 * mac の場合、UNIX システムの場合、データストアディレクトリで du コマンドを実行してサイズを取得します。
-   `du -sh [path to datastore on the instance]`」を選択します。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore`を指定しない場合、次のコマンドを使用してサイズを取得できます。 `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+   `du -sh [path to datastore on the instance]`。例えば、データストアが `/mnt/author/crx-quickstart/repository/datastore`を指定しない場合、次のコマンドを使用してサイズを取得できます。 `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
 * Windows の場合、データストアディレクトリの dir コマンドを使用してサイズを取得します。
    `dir /a/s [location of datastore]`
@@ -159,7 +160,7 @@ If `repository.home` プロパティが azcopy.config から見つからず、�
 >AzCopy が正しく設定されていない場合は、次のメッセージがログに表示されます。
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`。
 
-1. CTT UI から抽出を開始します。参照： [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) そして [抽出プロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) を参照してください。
+1. CTT UI から抽出を開始します。詳しくは、[コンテンツ転送ツールの基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)と[抽出プロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=ja)を参照してください。
 
 1. 抽出ログに次の行が出力されていることを確認します。
 
@@ -202,7 +203,7 @@ AzCopy がソースファイル dataStore に対して実行されている場�
 
 取り込み中に AzCopy を利用するには、少なくともバージョン 2021.6.5561 の AEM as a Cloud Service バージョンを使用する必要があります。
 
-オーサーの取り込みを CTT UI から開始します。詳しくは、[取り込みプロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en)を参照してください。AzCopy のログエントリが取り込みログに表示されます。次のようになります。
+オーサーの取り込みを CTT UI から開始します。詳しくは、[取り込みプロセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja)を参照してください。AzCopy のログエントリが取り込みログに表示されます。次のようになります。
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************
@@ -239,6 +240,6 @@ AzCopy を無効にするには、 `azcopy.config` ファイル。
 
 例えば、azcopy の抽出を無効にするには、次のオプションを使用します。 `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
-大きなコンテンツリポジトリの処理を学習し、コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツをAEM as a Cloud Serviceに移動する方法を学習したら、コンテンツ転送ツールで抽出プロセスを学ぶ準備が整いました。 詳しくは、 [コンテンツ転送ツールでのソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) を参照して、コンテンツ転送ツールから移行セットを抽出する方法を確認してください。
+コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮するための大規模コンテンツリポジトリー処理を理解したら、コンテンツ転送ツールでの抽出プロセスを学ぶ準備が整いました。コンテンツ転送ツールで移行セットを抽出する方法について詳しくは、[ソースからのコンテンツの抽出](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)を参照してください。

@@ -1,13 +1,13 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 リリースのリリースノート。'
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 100%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
 
@@ -191,4 +191,3 @@ AEM as a Cloud Service 2021.4.0 Cloud Manager のリリース日は 2021 年 4 �
 
 * BPA で行が重複していました。この問題が修正されました。
 * AEM バージョン 6.4.2 の BPA UI で、「レポートの生成」ボタンが無効になる JS エラーが発生していました。この問題が修正されました。
-

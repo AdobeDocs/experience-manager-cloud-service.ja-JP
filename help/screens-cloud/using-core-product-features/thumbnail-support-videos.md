@@ -4,7 +4,7 @@ description: このページでは、Screens as a Cloud Service にビデオの�
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
 

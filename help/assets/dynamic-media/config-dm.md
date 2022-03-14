@@ -222,7 +222,7 @@ Dynamic Mediaの公開設定ページでは、AdobeDynamic Mediaサーバーか�
 
 Dynamic Mediaの設定 **[!UICONTROL 公開サーバ名]** URL と **[!UICONTROL オリジンサーバー名]** URL。 また、 **[!UICONTROL アプリケーションにアップロード]** 設定と **[!UICONTROL デフォルトのアップロードオプション]** すべて、特定の使用例に基づいておこないます。
 
-詳しくは、 [Dynamic Mediaの一般設定](/help/assets/dynamic-media/dm-general-settings.md).
+詳しくは、[Dynamic Media の一般設定](/help/assets/dynamic-media/dm-general-settings.md)を参照してください。
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 

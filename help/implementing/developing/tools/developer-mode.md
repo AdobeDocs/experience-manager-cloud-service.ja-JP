@@ -3,13 +3,13 @@ title: 開発者モード
 seo-title: Developer Mode
 description: 開発者モードで開かれるサイドパネルのタブには、現在のページに関する開発者向けの情報が表示されます
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
-source-git-commit: b80aaa799e1652f7a981006925b50ffef43d7ab3
-workflow-type: ht
+exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
 ---
-
 
 # 開発者モード {#developer-mode}
 

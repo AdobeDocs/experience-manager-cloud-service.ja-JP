@@ -3,13 +3,13 @@ title: ローンチの編集
 description: ページ（またはページのセット）にローンチを作成したら、ページのローンチコピーのコンテンツを編集できます。
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 100%
 
 ---
 
-# ローンチの編集 {#editing-launches}
+# ローンチの編集  {#editing-launches}
 
 ## ローンチページの編集 {#editing-launch-pages}
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 
 ## ローンチページとそのソースページの比較 {#comparing-a-launch-page-to-its-source-page}
 
-おこなった変更を追跡するために、ローンチを&#x200B;**参照**&#x200B;で表示して、ローンチページをそのソースページと比較することができます。
+行った変更を追跡するために、ローンチを&#x200B;**参照**&#x200B;で表示して、ローンチページをそのソースページと比較することができます。
 
 1. **Sites** コンソールで、[ローンチのソースページに移動してそれを選択します](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)。
 1. **[参照](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)**&#x200B;パネルを開いて、「**ローンチ**」を選択します。
@@ -75,7 +75,7 @@ ht-degree: 100%
 >
 >ローンチにページを追加するには、ページが共通の言語ルートの下（単一のサイト内）にある必要があります。
 
-## ローンチの設定の編集{#editing-a-launch-configuration}
+## ローンチの設定の編集 {#editing-a-launch-configuration}
 
 ローンチのプロパティは、任意のタイミングで編集できます。
 
@@ -86,10 +86,10 @@ ht-degree: 100%
       * 「**プロパティを編集**」を選択します。
       * 詳細が表示されます。
 1. 必要な変更を加え、「**保存**」で確定します。
-   * 「**ローンチ日**」フィールドと「**実稼動準備完了**」フィールドの目的とインタラクションについて詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください。
+   * 「**ローンチ日**」フィールドと「**実稼働準備完了**」フィールドの目的とインタラクションについて詳しくは、[ローンチ - イベントの順序](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)を参照してください。
 
-## ページのローンチステータスの確認{#discovering-the-launch-status-of-a-page}
+## ページのローンチステータスの確認 {#discovering-the-launch-status-of-a-page}
 
-「参照」タブから特定のローンチを選択すると、ステータスが表示されます（[「参照」のローンチ（Sites コンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)を参照）。
+「参照」タブから特定のローンチを選択すると、ステータスが表示されます（[「参照」のローンチ（サイトコンソール）](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)を参照）。
 
 ![ローンチステータスの確認](/help/sites-cloud/authoring/assets/launches-status.png)

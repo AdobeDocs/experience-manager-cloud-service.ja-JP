@@ -3,7 +3,7 @@ title: レスポンシブレイアウト
 description: AEM では、ページにレスポンシブレイアウトを作成できます
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
    * フォールドは、作成者の利便性のために表示されます。公開されたページには表示されません。
 
 
-## レイアウトコンテナとそのコンテンツの追加（編集モード）{#adding-a-layout-container-and-its-content-edit-mode}
+## レイアウトコンテナとそのコンテンツの追加（編集モード） {#adding-a-layout-container-and-its-content-edit-mode}
 
 **レイアウトコンテナ**&#x200B;は、次の特徴を持つ段落システムです。
 
@@ -142,7 +142,7 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
 
    ![レイアウトコンテナ](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
-## レイアウトコンテナでの選択およびアクションの実行（編集モード）{#selecting-and-taking-action-on-a-layout-container-edit-mode}
+## レイアウトコンテナでの選択およびアクションの実行（編集モード） {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
 他のコンポーネントと同様に、レイアウトコンテナは、選択してからアクション（切り取り、コピー、削除）を実行できます（**編集**&#x200B;モードのとき）。
 
@@ -169,7 +169,7 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
 
 1. グリッド全体が、コンテンツも含めて強調表示されます。アクションツールバーが表示され、ここから、「**削除**」などのアクションを選択できます。
 
-## レイアウトの定義（レイアウトモード）{#defining-layouts-layout-mode}
+## レイアウトの定義（レイアウトモード） {#defining-layouts-layout-mode}
 
 >[!NOTE]
 >
@@ -231,7 +231,7 @@ AEM では、デバイスの幅に依存するレイアウトを定義できま�
    >上記の例では、フロートと非表示のアクションが使用可能になっています。これは、このレイアウトコンテナが親レイアウトコンテナ内にネストされているからです。
 
    * **コンポーネントを表示**&#x200B;親コンポーネントを選択して、「 
-**非表示のコンポーネントを表示**」オプションを含むアクションツールバーを表示します。この例では、2 つのコンポーネントが非表示にされています。
+**非表示のコンポーネントを表示**」オプションを含むアクションツールバーを表示します。この例では、2 つのコンポーネントが非表示になっています。
 
       ![コンポーネントの再表示](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
    「**非表示のコンポーネントを表示**」オプションを選択すると、現在非表示のコンポーネントが元の場所で青色で表示されます。

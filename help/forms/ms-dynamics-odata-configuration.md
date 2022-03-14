@@ -1,14 +1,14 @@
 ---
 title: ' [!DNL Microsoft Dynamics] OData の設定方法'
-description: ' [!DNL Microsoft Dynamics] service. The Form Data Model can be used to create Adaptive Forms that interact with [!DNL Microsoft Dynamics]  サーバーで定義されたエンティティ、属性、サービスに基づいてフォームデータモデルを作成し、ビジネスワークフローを有効にする方法を学びます。'
+description: で定義されたエンティティ、属性、サービスに基づいてフォームデータモデルを作成する方法を説明します。 [!DNL Microsoft Dynamics] サービス。 フォームデータモデルを使用して、 [!DNL Microsoft Dynamics]  サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。
 feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
+source-wordcount: '948'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
    * [!DNL Microsoft Dynamics] 365 オンプレミス
    * [!DNL Microsoft Dynamics] 2016 オンプレミス
 
-* [アプリケーションが  [!DNL Microsoft Dynamics] online service with [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録済みであること。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
+* [ [!DNL Microsoft Dynamics]  [!DNL Microsoft Azure]  オンラインサービスのアプリケーションを Active Directory に登録したこと](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory)。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
 
 ## 登録された [!DNL Microsoft Dynamics] アプリケーションの応答 URL を設定 {#set-reply-url-for-registered-microsoft-dynamics-application}
 

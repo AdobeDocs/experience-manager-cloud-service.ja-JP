@@ -3,13 +3,13 @@ title: 検索
 description: 包括的な検索を使用して、よりすばやくコンテンツを見つけます
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 100%
 
 ---
 
-# 検索 {#search-feature}
+# 検索  {#search-feature}
 
 AEM のオーサー環境は、リソースタイプに応じて、コンテンツを検索するための様々なメカニズムを提供します。
 

@@ -1,7 +1,8 @@
 ---
 title: Cloud Acceleration Manager の基本を学ぶ
 description: ここでは、Cloud Acceleration Manager の使用方法と基本事項の概要を説明します。
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 100%
@@ -94,6 +95,6 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 
 1. 「**削除**」をクリックして、手順を確定します。
 
-## 次の手順 {#whats-next}
+## 次のステップ {#whats-next}
 
 Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を理解したら、次のステップの[準備フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja)に進みます。

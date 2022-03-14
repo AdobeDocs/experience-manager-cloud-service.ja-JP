@@ -3,7 +3,7 @@ title: AEM タグ付けフレームワーク
 description: コンテンツへのタグ付けと AEM タグ付けインフラストラクチャの利用によるコンテンツの分類と整理について説明します。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ AEM の基本パスは `/content/cq:tags` であり、ルートノードのタ�
 >* `jcr:content/metadata` ノードに常に `cq:Taggable` Mixin があるアセット（`cq:Asset`）。
 
 
-### ノードタイプの表記（CND）{#node-type-notation-cnd}
+### ノードタイプの表記（CND） {#node-type-notation-cnd}
 
 ノードタイプの定義は、リポジトリー内に CND ファイルとして存在します。CND 表記は、[JCR ドキュメント](https://jackrabbit.apache.org/node-type-notation.html)の一部として定義されています。
 
@@ -178,7 +178,6 @@ AEM に含まれるノードタイプの基本的な定義は、次のように�
       >
       > 1. タグがコンテンツで使用されている（つまり、参照が含まれている）。または
       > 1. タグが、既に移動された子を持っている。
-
 
 * タグ B が作成され（移動の場合）、`cq:backlinks` プロパティを取得します。
    * `cq:backlinks` は、それ以外を指す参照を保持します。つまり、タグ B に移動または結合されたすべてのタグのリストを保持します。

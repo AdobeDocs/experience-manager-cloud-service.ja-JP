@@ -3,7 +3,7 @@ title: Adobe Target との統合
 description: Adobe Target との統合
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: 65e1ede4cdc8035657e8b37fe206ebed4ab7bb24
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Target に統合するには、次のタスクを実行します。
 AEM as a Cloud Service と Adobe Target を統合するには、Adobe Target、AEM アクティビティの管理、AEM オーディエンスの管理に関する知識が必要です。以下を十分理解している必要があります。
 
 * Adobe Target（[Adobe Target のドキュメント](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ja)を参照）
-* AEM アクティビティコンソール（[アクティビティの管理](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=ja)を参照）
+* AEM アクティビティコンソール（[アクティビティの管理](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)を参照）
 * AEM オーディエンス（[オーディエンスの管理](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=ja)を参照）
 
 >[!NOTE]

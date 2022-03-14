@@ -3,7 +3,7 @@ title: Adobe ID について
 description: ここでは、Adobe ID について説明します。
 exl-id: 55f66f24-d523-4f8f-9cb6-337bd31fc315
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%
 

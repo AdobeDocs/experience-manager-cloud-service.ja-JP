@@ -4,7 +4,7 @@ description: Dynamic Media でインタラクティブ画像、インタラク�
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
 

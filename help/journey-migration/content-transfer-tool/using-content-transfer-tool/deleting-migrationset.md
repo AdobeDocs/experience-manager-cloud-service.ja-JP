@@ -1,24 +1,23 @@
 ---
 title: コンテンツ転送ツールでの移行セットの削除
 description: コンテンツ転送ツールでの移行セットの削除
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
-
 # 移行セットの削除 {#delete-migration-set}
 
-*概要*ページで移行セットを削除できます。
+*概要*&#x200B;ページで移行セットを削除できます。
 
-
-## コンテンツ転送ツールから移行セットを削除する手順 {#deleting-migration-set}
+## コンテンツ転送ツールで移行セットを削除する手順 {#deleting-migration-set}
 
 次の手順に従います。
 
-1. 次に移動： **コンテンツ転送** ウィザードを開き、削除する移行セットを選択し、 **削除** をクリックします。
+1. **コンテンツ転送**&#x200B;ウィザードに移動し、削除する移行セットを選択して、アクションバーの「**削除**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

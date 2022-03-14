@@ -3,7 +3,7 @@ title: 非同期ジョブ
 description: Adobe Experience Manager では、リソースを集中的に消費する一部のタスクを非同期的に処理することでパフォーマンスを最適化します。
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 100%
 
@@ -143,6 +143,6 @@ AEM は、毎日午前 1 時にパージジョブを実行して、1 日以上�
 >[!MORELIKETHIS]
 >
 >* [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
-* [アセットメタデータの一括読み込みおよび書き出し](/help/assets/metadata-import-export.md)
-* [Connected Assets を使用したリモートデプロイメントからの DAM アセットの共有](/help/assets/use-assets-across-connected-assets-instances.md)
+>* [アセットメタデータの一括読み込みおよび書き出し](/help/assets/metadata-import-export.md)
+>* [Connected Assets を使用したリモートデプロイメントからの DAM アセットの共有](/help/assets/use-assets-across-connected-assets-instances.md)
 

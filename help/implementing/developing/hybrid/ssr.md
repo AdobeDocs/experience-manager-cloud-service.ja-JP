@@ -3,13 +3,13 @@ title: SPA およびサーバーサイドレンダリング
 description: SPA でサーバーサイドレンダリング（SSR）を使用すると、ページの初期読み込みが高速化し、その後、クライアントにさらにレンダリングを渡すことができます。
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 100%
 
 ---
 
-# SPA およびサーバーサイドレンダリング {#spa-and-server-side-rendering}
+# SPA およびサーバーサイドレンダリング{#spa-and-server-side-rendering}
 
 単一ページアプリケーション（SPA）では、使い慣れたネイティブアプリケーションと同様に反応して動作するリッチで動的なエクスペリエンスを提供できます。[これは、コンテンツを事前に読み込こんでからユーザーとのやり取りを処理するという負荷のかかる作業をクライアントにまかせることで](introduction.md#how-does-a-spa-work)、クライアントとサーバーの間で必要な通信量を最小限に抑え、アプリケーションの反応を良くすることで達成できます。
 

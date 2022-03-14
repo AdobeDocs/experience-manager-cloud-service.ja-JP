@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 
@@ -275,7 +275,7 @@ AEM の翻訳フレームワークは、翻訳コネクタから翻訳を受け�
 これで、AEM Sites 翻訳ジャーニーのこのステップが完了し、以下を達成できました。
 
 * 翻訳プロジェクトの概要を理解する
-* 新しい翻訳プロジェクトを作成する
+* 新しい翻訳プロジェクトを作成できる
 * 翻訳プロジェクトを使用してコンテンツを翻訳する
 
 この知識を基に、AEM Sites 翻訳ジャーニーを続けてください。次に、[翻訳済みコンテンツの公開](publish-content.md)のドキュメントを参照しながら、翻訳済みコンテンツを公開する方法と、言語ルートコンテンツの変更に合わせて翻訳を更新する方法について説明します。

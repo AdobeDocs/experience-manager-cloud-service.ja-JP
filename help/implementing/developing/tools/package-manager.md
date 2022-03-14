@@ -3,13 +3,13 @@ title: パッケージマネージャー
 description: AE の基本を学ぶ。パッケージマネージャーを使用したパッケージ管理。
 feature: Administering
 role: Admin
-source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
+exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '3584'
 ht-degree: 14%
 
 ---
-
 
 # パッケージマネージャー {#working-with-packages}
 
@@ -27,7 +27,7 @@ ht-degree: 14%
 >
 >パッケージは、そのパッケージを作成した時点におけるコンテンツの現在のバージョンを表しています。AEM がリポジトリに保持している以前のバージョンのコンテンツは含まれません。
 
-## Packages in AEM as a Cloud Service {#aemaacs-packages}
+## AEMでのパッケージas a Cloud Service {#aemaacs-packages}
 
 AEMas a Cloud Serviceのアプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。 したがって、パッケージマネージャーは、コンテンツを含むパッケージの管理にのみ使用できます。 任意のコードは、Cloud Manager を使用してデプロイする必要があります。
 
@@ -47,14 +47,14 @@ AEMaaCS 用のパッケージを管理する方法の詳細については、こ
 
 ## パッケージマネージャー {#package-manager}
 
-Package Manager manages the packages on your AEM installation. [](#permissions-needed-for-using-the-package-manager)
+パッケージマネージャーは、AEMのインストール上のパッケージを管理します。 次の条件が満たされた後 [必要な権限を割り当て](#permissions-needed-for-using-the-package-manager) パッケージマネージャーは、パッケージの設定、構築、ダウンロード、インストールなど、様々なアクションに使用できます。
 
 ### 必要な権限 {#required-permissions}
 
 パッケージを作成、変更、アップロード、インストールするには、次のノードに対する適切な権限が必要です。
 
 * 削除を除く完全な権限 `/etc/packages`
-* The node that contains the package contents
+* パッケージコンテンツを含むノード
 
 >[!CAUTION]
 >
@@ -77,7 +77,7 @@ Package Manager manages the packages on your AEM installation. [](#permissions-n
 * **左ナビゲーションパネル**  — このパネルでは、パッケージのリストをフィルタリングおよび並べ替えることができます。
 * **パッケージリスト**  — これは、左側のナビゲーションパネルでの選択に従ってフィルタリングおよび並べ替えられた、インスタンス上のパッケージのリストです。
 * **アクティビティログ**  — このパネルは最初は最小化され、パッケージのビルド時やインストール時など、パッケージマネージャーのアクティビティの詳細を表示するように拡張されます。 「アクティビティログ」タブには、次の操作を行うための追加のボタンがあります。
-   * ****
+   * **ログを消去**
    * **表示／非表示**
 * **ツールバー**  — ツールバーには、左側のナビゲーションパネルとパッケージリスト用の更新ボタン、およびパッケージを検索、作成、アップロードするためのボタンが含まれています。
 
@@ -104,7 +104,7 @@ Package Manager manages the packages on your AEM installation. [](#permissions-n
 * [再折り返し](#rewrapping-a-package)
 * [その他のバージョン](#other-versions)
 * [アンインストール](#uninstalling-packages)
-* [Test Install](#viewing-package-contents-and-testing-installation)
+* [インストールをテスト](#viewing-package-contents-and-testing-installation)
 * [Validate（検証）](#validating-packages)
 * [レプリケーション](#replicating-packages)
 
@@ -128,7 +128,7 @@ Package Manager manages the packages on your AEM installation. [](#permissions-n
 
 ### 一般設定 {#general-settings}
 
-You can edit a variety of package settings to define information such as the package description, dependencies, and provider details.
+様々なパッケージ設定を編集して、パッケージの説明、依存関係、プロバイダーの詳細などの情報を定義できます。
 
 この **パッケージ設定** ダイアログは、 **編集** ボタンを [作成中](#creating-a-new-package) または [編集中](#viewing-and-editing-package-information) パッケージ。 変更が完了したら、「 **保存**.
 
@@ -136,41 +136,41 @@ You can edit a variety of package settings to define information such as the pac
 
 | フィールド | 説明 |
 |---|---|
-| 名前 | The name of the package |
+| 名前 | パッケージの名前 |
 | グループ | パッケージを整理するために、新しいグループの名前を入力するか、既存のグループを選択できます |
-| バージョン | Text to use for the version |
+| バージョン | バージョンに使用するテキスト |
 | 説明 | 書式設定用のHTMLマークアップを許可するパッケージの簡単な説明 |
 | サムネール | パッケージリストと共に表示されるアイコン |
 
 ### パッケージフィルター {#package-filters}
 
-****
+フィルターは、パッケージに含めるリポジトリノードを識別します。A **フィルター定義** 次の情報を指定します。
 
-* ****
-* ****
+* この **ルートパス** 含めるコンテンツの
+* **ルール** ルートパスの下の特定のノードを含める、または除外する
 
 を使用してルールを追加する **+** 」ボタンをクリックします。 次を使用してルールを削除： **-** 」ボタンをクリックします。
 
 ルールは順序に従って適用され、必要に応じて **上** および **下** 矢印ボタン
 
-Filters can include zero or more rules. When no rules are defined, the package contains all content below the root path.
+フィルターには、0 個以上のルールを含めることができます。ルールが定義されていない場合、パッケージのルートパスの下にすべてのコンテンツが含まれます。
 
-You can define one or more filter definitions for a package. Use more than one filter to include content from multiple root paths.
+パッケージには、1 つ以上のフィルター定義を定義できます。複数のルートパスのコンテンツを含めるには、複数のフィルターを使用します。
 
 ![「フィルター」タブ](assets/edit-filter.png)
 
 フィルターを作成する際に、パスを定義するか、正規表現を使用して、含めるまたは除外するすべてのノードを指定できます。
 
-| Rule Type | 説明 |
+| ルールタイプ | 説明 |
 |---|---|
-| include | **** |
-| exclude | Excluding a directory will exclude that directory and all files and folders in that directory (i.e. the entire subtree). |
+| include | ディレクトリを含めると、そのディレクトリと、そのディレクトリ内のすべてのファイルとフォルダ（サブツリー全体）が含まれますが、 **次の条件を満たさない** 指定したルートパスの下に、の他のファイルまたはフォルダを含めます。 |
+| exclude | ディレクトリを除外すると、そのディレクトリと、そのディレクトリ内のすべてのファイルとフォルダー（つまりサブツリー全体）が除外されます。 |
 
 パッケージフィルターは、最初に [パッケージを作成します。](#creating-a-new-package) ただし、後で編集することもでき、その後、パッケージを再構築して、新しいフィルター定義に基づいてその内容を更新する必要があります。
 
 >[!TIP]
 >
->One package can contain multiple filter definitions so that nodes from different locations can easily be combined into one package.
+>1 つのパッケージに複数のフィルター定義を含めることができるので、異なる場所のノードを 1 つのパッケージに簡単に組み合わせることができます。
 
 ### 依存関係 {#dependencies}
 
@@ -178,7 +178,7 @@ You can define one or more filter definitions for a package. Use more than one f
 
 | フィールド | 説明 | 例/詳細 |
 |---|---|---|
-| Tested with | このパッケージのターゲットまたは互換性のある製品名およびバージョン。 | `AEMaaCS` |
+| でテスト済み | このパッケージのターゲットまたは互換性のある製品名およびバージョン。 | `AEMaaCS` |
 | 修正された問題 | このパッケージで修正されたバグの詳細をリストするテキストフィールド。1 行に 1 つのバグが表示されます。 | - |
 | 依存 | 現在のパッケージがインストール時に期待どおりに実行されるように、必要なその他のパッケージをリストします | `groupId:name:version` |
 | 置き換え | このパッケージで置き換えられる、廃止されたパッケージのリスト | `groupId:name:version` |
@@ -190,10 +190,10 @@ You can define one or more filter definitions for a package. Use more than one f
 | フィールド | 説明 | 例/詳細 |
 |---|---|---|
 | 名前 | パッケージのプロバイダーの名前 | `WKND Media Group` |
-| URL | URL of the provider | `https://wknd.site` |
-| リンク | Package-specific link to a provider page | `https://wknd.site/package/` |
+| URL | プロバイダーの URL | `https://wknd.site` |
+| リンク | プロバイダーページへのパッケージ固有のリンク | `https://wknd.site/package/` |
 | 次を必要とする | パッケージのインストール時に制限があるかどうかを定義します | **管理者**  — パッケージは管理者権限でのみインストールする必要があります&#x200B;<br>**再起動** - AEMはパッケージのインストール後に再起動する必要があります |
-| AC の処理 | Specifies how the access control information defined in the package is handled when the package is imported | **無視**  — リポジトリ内の ACL を保持&#x200B;<br>**上書き**  — リポジトリ内の ACL を上書き&#x200B;<br>**結合**  — 両方の ACL セットをマージする&#x200B;<br>**MergePreserve**  — コンテンツ内に存在しないプリンシパルのアクセス制御エントリを追加して、コンテンツ内のアクセス制御をパッケージに付属するエントリと結合します&#x200B;<br>**クリア** - ACL をクリア |
+| AC の処理 | パッケージがインポートされたときの、パッケージで定義されたアクセス制御情報の処理方法を指定します | **無視**  — リポジトリ内の ACL を保持&#x200B;<br>**上書き**  — リポジトリ内の ACL を上書き&#x200B;<br>**結合**  — 両方の ACL セットをマージする&#x200B;<br>**MergePreserve**  — コンテンツ内に存在しないプリンシパルのアクセス制御エントリを追加して、コンテンツ内のアクセス制御をパッケージに付属するエントリと結合します&#x200B;<br>**クリア** - ACL をクリア |
 
 ### パッケージスクリーンショット {#package-screenshots}
 
@@ -205,7 +205,7 @@ You can define one or more filter definitions for a package. Use more than one f
 
 1 つのパッケージで実行できるアクションは多数あります。
 
-### Creating a Package {#creating-a-new-package}
+### パッケージの作成 {#creating-a-new-package}
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -229,9 +229,9 @@ You can define one or more filter definitions for a package. Use more than one f
 
 1. AEMでは、新しいパッケージがパッケージのリストの最上部に表示されます。
 
-   ![](assets/new-package.png)
+   ![新しいパッケージ](assets/new-package.png)
 
-1. クリック **編集** を定義するには、 [パッケージの内容。](#package-contents)****
+1. クリック **編集** を定義するには、 [パッケージの内容。](#package-contents) クリック **保存** 設定の編集が終了したら、次の手順に従います。
 
 1. これで、パッケージを[ビルド](#building-a-package)できます。
 
@@ -245,7 +245,7 @@ You can define one or more filter definitions for a package. Use more than one f
 
 1. パッケージ名をクリックして、パッケージリストからパッケージの詳細を開きます。
 
-1. ****&#x200B;既存のパッケージの内容が上書きされるので、パッケージをビルドするかどうかを確認するダイアログが表示されます。
+1. クリック **ビルド**. 既存のパッケージの内容が上書きされるので、パッケージをビルドするかどうかを確認するダイアログが表示されます。
 
 1. 「**OK**」をクリックします。AEMがパッケージをビルドし、パッケージに追加されたすべてのコンテンツがアクティビティリストに表示されます。 パッケージの構築が完了すると、パッケージが構築されたことを示すダイアログが表示されます。また、（このダイアログを閉じると）パッケージリストの内容が更新されます。
 
@@ -259,13 +259,13 @@ You can define one or more filter definitions for a package. Use more than one f
 
 1. クリック **編集** を更新し、 **[パッケージ設定](#package-settings)** 必要に応じて。
 
-1. ****
+1. クリック **保存** 保存します。
 
 必要に応じて、 [パッケージを再構築します。](#building-a-package) をクリックして、変更に基づいてコンテンツを更新します。
 
 ### パッケージを再度含める {#rewrapping-a-package}
 
-Once a package has been built, it can be rewrapped. 再ラップは、パッケージのコンテンツを変更せずに、サムネール、説明などを含まずにパッケージ情報を変更します。
+パッケージを構築したら、再ラップできます。 再ラップは、パッケージのコンテンツを変更せずに、サムネール、説明などを含まずにパッケージ情報を変更します。
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -275,7 +275,7 @@ Once a package has been built, it can be rewrapped. 再ラップは、パッケ�
 
 1. クリック **保存** 保存します。
 
-1. ********
+1. クリック **詳細** -> **再折り返し** そして、確認を求めるダイアログが表示されます。
 
 ### 他のパッケージバージョンの表示 {#other-versions}
 
@@ -289,7 +289,7 @@ Once a package has been built, it can be rewrapped. 再ラップは、パッケ�
 
 ### パッケージコンテンツの表示とインストールのテスト {#viewing-package-contents-and-testing-installation}
 
-After a package has been built, you can view the contents.
+パッケージが構築されたら、コンテンツを表示できます。
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -352,19 +352,19 @@ After a package has been built, you can view the contents.
 
 **チェック内容**
 
-`manifest.xml`
+この検証は、すべての JAR ファイル（OSGi バンドル）のパッケージを検証し、それらを抽出します `manifest.xml` （これには、その OSGi バンドルが依存するバージョン管理された依存関係が含まれます）。また、AEMインスタンスが、その依存関係を正しいバージョンでエクスポートしたことを検証します。
 
 **レポート方法**
 
-Any versioned dependencies that cannot be satisfied by the AEM instance are listed in the Activity Log of Package Manager.
+AEMインスタンスで満たされないバージョン管理された依存関係は、パッケージマネージャーのアクティビティログに表示されます。
 
 **エラーの状態**
 
-未解決の依存関係がある場合、それらの依存関係を持つパッケージ内の OSGi バンドルは開始しません。This results in a broken application deployment as anything relying on the unstarted OSGi bundle will in turn not function properly.
+未解決の依存関係がある場合、それらの依存関係を持つパッケージ内の OSGi バンドルは開始しません。これにより、起動されていない OSGi バンドルに依存するものはすべて正しく機能しなくなるので、アプリケーションのデプロイメントが壊れます。
 
 **エラーの解決**
 
-To resolve errors due to unsatisfied OSGi bundles, the dependency version in the bundle with unsatisfied imports must be adjusted.
+未満の OSGi バンドルによるエラーを解決するには、未満の読み込みを含むバンドルの依存バージョンを調整する必要があります。
 
 ##### オーバーレイを検証 {#overlays}
 
@@ -372,39 +372,39 @@ To resolve errors due to unsatisfied OSGi bundles, the dependency version in the
 >
 >AEMaaCS でのコードのデプロイにパッケージを使用できないので、 **オーバーレイ** 検証は不要です。
 
-**確認内容**
+**チェック内容**
 
 この検証では、インストールするパッケージに、宛先の AEM インスタンスにすでにオーバーレイされているファイルが含まれているかどうかを確認します。
 
-`/apps/sling/servlet/errorhandler/404.jsp``/libs/sling/servlet/errorhandler/404.jsp``/libs/sling/servlet/errorhandler/404.jsp`
+例えば、既存のオーバーレイが `/apps/sling/servlet/errorhandler/404.jsp`、を含むパッケージ `/libs/sling/servlet/errorhandler/404.jsp`に設定し、 `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**レポートの内容**
+**レポート方法**
 
-Any such overlays are described in the Activity Log of Package Manager.
+このようなオーバーレイは、パッケージマネージャーのアクティビティログに記述されます。
 
-**エラー状態**
+**エラーの状態**
 
 パッケージがすでにオーバーレイされているファイルをデプロイしようとしています。したがって、パッケージ内の変更はオーバーレイによって上書きされ（つまり「非表示」となり）、有効になりません。
 
 **エラーの解決**
 
-`/apps``/libs``/apps`
+この問題を解決するには、 `/apps` は、 `/libs` 必要に応じて変更をオーバーレイ ( `/apps`) をクリックし、オーバーレイされたファイルを再デプロイします。
 
 >[!NOTE]
 >
->The validation mechanism has no way to reconcile if the overlaid content has been properly incorporated into the overlay file. したがって、この検証では、必要な変更が加えられた後も競合についてレポートし続けます。
+>検証メカニズムでは、オーバーレイされたコンテンツがオーバーレイファイルに適切に組み込まれた場合、紐付けをおこなうことはできません。 したがって、この検証では、必要な変更が加えられた後も競合についてレポートし続けます。
 
 ##### ACL を検証 {#acls}
 
-**確認内容**
+**チェック内容**
 
 この検証では、どの権限が追加されるか、それらがどのように処理されるか（マージ／置換）、および現在の権限が影響を受けるかどうかを確認します。
 
-**レポートの内容**
+**レポート方法**
 
-The permissions are described in the Activity Log of Package Manager.
+権限については、パッケージマネージャーのアクティビティログで説明します。
 
-**エラー状態**
+**エラーの状態**
 
 明示的なエラーはありません。この検証は、パッケージをインストールすることで新しい ACL 権限が追加されるか、または影響があるかどうかを示すだけです。
 
@@ -414,7 +414,7 @@ The permissions are described in the Activity Log of Package Manager.
 
 >[!CAUTION]
 >
->As best practice it is recommended that packages should not affect AEM-provided ACLs as this may result in unexpected behavior.
+>ベストプラクティスとして、パッケージはAEMが提供する ACL に影響を与えないようにすることをお勧めします。その場合、予期しない動作が発生する可能性があります。
 
 #### 検証の実行 {#performing-validation}
 
@@ -425,7 +425,7 @@ The permissions are described in the Activity Log of Package Manager.
 
 検証は、パッケージをアップロードした後で、インストールする前に必ず行う必要があります。
 
-##### Package Validation Via Package Manager {#via-package-manager}
+##### パッケージマネージャーを使用したパッケージの検証 {#via-package-manager}
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -445,15 +445,15 @@ POST リクエストの形式は以下のとおりです。
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
-`type`
+この `type` パラメーターは、次の要素で構成される、任意のコンマ区切りの順不同リストにすることができます。
 
 * `osgiPackageImports`
 * `overlays`
 * `acls`
 
-`type``osgiPackageImports`
+の値 `type` デフォルト： `osgiPackageImports` 明示的に渡されない場合は。
 
-When using cURL, execute a statement similar to the following:
+cURL を使用する場合は、次のようなステートメントを実行します。
 
 ```shell
 curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'http://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
@@ -481,7 +481,7 @@ POSTリクエストを介して検証する場合、応答は JSON オブジェ�
 >
 >パッケージをインストールすると、既存のコンテンツが上書きまたは削除される可能性があります。必要なコンテンツが削除または上書きされないと確認できる場合にのみ、パッケージをアップロードしてください。
 
-パッケージをインストールする前に、上書きされるコンテンツを含むスナップショットパッケージがパッケージマネージャーによって自動的に作成されます。 This snapshot will be reinstalled if you uninstall your package.
+パッケージをインストールする前に、上書きされるコンテンツを含むスナップショットパッケージがパッケージマネージャーによって自動的に作成されます。 このスナップショットは、パッケージをアンインストールすると再インストールされます。
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -492,7 +492,7 @@ POSTリクエストを介して検証する場合、応答は JSON オブジェ�
 1. 確認を求めるダイアログが表示され、追加のオプションを指定できます。
 
    * **抽出のみ**  — スナップショットが作成されず、アンインストールができないように、パッケージのみを抽出します
-   * ****
+   * **しきい値を保存**  — 自動保存がトリガーされるまでの一時的なノード数（同時変更の例外が発生した場合は増加）
    * **サブパッケージを抽出**  — サブパッケージの自動抽出を有効にする
    * **アクセス制御の処理**  — パッケージのインストール時に、パッケージで定義されたアクセス制御情報を処理する方法を指定します ( オプションは [詳細パッケージ設定](#advanced-settings))
    * **依存関係の処理**  — インストール中の依存関係の処理方法を指定します
@@ -535,21 +535,21 @@ POSTリクエストを介して検証する場合、応答は JSON オブジェ�
 
 1. パッケージが削除され、スナップショットが適用されます。 処理の進行状況がアクティビティログに表示されます。
 
-### Deleting Packages {#deleting-packages}
+### パッケージの削除 {#deleting-packages}
 
-パッケージを削除すると、その詳細のみがパッケージマネージャーから削除されます。 If this package was already installed, then the installed content will not be deleted.
+パッケージを削除すると、その詳細のみがパッケージマネージャーから削除されます。 このパッケージが既にインストールされている場合は、インストール済みのコンテンツは削除されません。
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
 1. パッケージ名をクリックして、削除するパッケージのパッケージ詳細をパッケージリストから開きます。
 
-1. AEM asks for confirmation that you want to delete the package. 「**OK**」をクリックして削除を確認します。
+1. AEMは、パッケージを削除するかどうかを確認するメッセージを表示します。 「**OK**」をクリックして削除を確認します。
 
 1. パッケージ情報が削除され、詳細がアクティビティログに報告されます。
 
 ### パッケージのレプリケーション {#replicating-packages}
 
-Replicate the contents of a package to install it on the publish instance.
+パッケージのコンテンツをレプリケートして、パブリッシュインスタンスにインストールします。
 
 1. [パッケージマネージャーにアクセスします。](#accessing)
 
@@ -559,7 +559,7 @@ Replicate the contents of a package to install it on the publish instance.
 
 1. パッケージがレプリケートされ、詳細がアクティビティログにレポートされます。
 
-## Software Distribution {#software-distribution}
+## ソフトウェア配布 {#software-distribution}
 
 AEMパッケージを使用して、AEMaaCS 環境全体でコンテンツを作成および共有できます。
 

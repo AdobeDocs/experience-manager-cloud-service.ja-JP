@@ -3,7 +3,7 @@ title: カスタムドメイン名の取得
 description: カスタムドメイン名の取得
 exl-id: c4d2ad8e-06fc-4591-af92-8edc96d04e44
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%
 

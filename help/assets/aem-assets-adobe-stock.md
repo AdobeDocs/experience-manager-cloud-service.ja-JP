@@ -14,7 +14,7 @@ ht-degree: 44%
 
 # [!DNL Adobe Stock] での [!DNL Adobe Experience Manager Assets] アセットの使用  {#use-adobe-stock-assets-in-aem-assets}
 
-[!DNL Adobe Stock] サービスは、あらゆるクリエイティブプロジェクトに使用できる、適切にキュレーションされ、著作権使用料が不要で質の高い何百万点もの写真、ベクター、イラスト、ビデオ、テンプレートおよび 3D アセットを提供します。
+[!DNL Adobe Stock] サービスは、あらゆるクリエイティブプロジェクトに使用できる、何百万点もの質の高い選ばれた著作権使用料不要の写真、ベクター、イラスト、ビデオ、テンプレートおよび 3D アセットを提供します。
 
 [!DNL Adobe Stock] エンタープライズ版の場合は、デフォルトで、組織全体での共有権限が含まれます。 組織のユーザーがアセットのライセンスを取得すると、組織の他のユーザーがこのアセットを識別、ダウンロード、使用できるようになります。再度ライセンスを取得する必要はありません。 アセットが組織でライセンスされると、そのアセットを使用する権限は永続的に有効になります。
 
@@ -315,7 +315,7 @@ Adobe Stockアセットの検索とライセンス取得に必要な権限は次
 | --- | --- | --- | --- | --- | --- |
 | admin | 該当なし | すべて | 該当なし | はい | はい |
 | test-doc1 | DAM ユーザー | /conf/global/settings/stock/cloud-config | はい | 可 | はい |
-| test-doc1 | DAM ユーザー | /conf/global/settings/stock/cloud-config | 不可 | エラー：データの読み込みに失敗しました | 不可 |
+| test-doc1 | DAM ユーザー | /conf/global/settings/stock/cloud-config | いいえ | エラー：データの読み込みに失敗しました | いいえ |
 | test-doc1 | DAM ユーザー | **許可**:/conf/global/settings/stock **拒否**:/cloud-config | 在庫設定が表示されません | 可 | 不可 |
 
 ## [!DNL Adobe Stock] での [!DNL Experience Manager] アセットの使用と管理  {#usemanage}

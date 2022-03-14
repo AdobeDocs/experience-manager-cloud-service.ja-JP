@@ -3,7 +3,7 @@ title: Adobe Experience Manager as a Cloud Service 2020.5.0 のリリースノ�
 description: Experience Manager 2020.5.0 のリリースノート
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
@@ -40,9 +40,9 @@ AEM as a Cloud Service リリース 2020.5.0 の Cloud Manager の新機能と�
 * アクティビティページとパイプライン実行リスト API のパフォーマンスが向上しました。
 * コード品質ログに、例外の完全なスタックトレースが含まれるようになりました。
 
-### バグ修正 {#bug-fixes}
+### バグ修正  {#bug-fixes}
 
-* 実稼働パイプラインの実行中に、誤解を招くおそれのあるカードが概要ページに表示されていました。
+* 実稼動パイプラインの実行中に、誤解を招くカードが概要ページに表示されていました。
 * *DontImplementOrExtendProviderTypesPomCheck* コード品質ルールでヌルポインター例外が発生する場合がありました。
 * 概要ページの一部のドキュメントリンクが正しく機能していませんでした。
 * Safari で、環境を作成ダイアログが正しくレンダリングされていませんでした。

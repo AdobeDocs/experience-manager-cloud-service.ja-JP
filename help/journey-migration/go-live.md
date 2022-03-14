@@ -1,13 +1,13 @@
 ---
 title: 運用開始
 description: コードとコンテンツがクラウドに対応したら、移行を実行する方法を説明します
-source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
+exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 4%
 
 ---
-
 
 # 運用開始 {#go-live}
 
@@ -63,7 +63,7 @@ ht-degree: 4%
 
 さらに、最終的なコンテンツ追加がスケジュールされたときにコンテンツをフリーズするよう計画する必要があります。
 
-## ベストプラクティス {#best-practices}
+## ベストプラクティス  {#best-practices}
 
 移行を計画または実行する際は、次のガイドラインを考慮する必要があります。
 
@@ -123,6 +123,6 @@ ht-degree: 4%
 
 移行の実行中にタスクを再調整する必要がある場合は、いつでもリストを参照できます。
 
-## 次の手順 {#what-is-next}
+## 次のステップ {#what-is-next}
 
 AEM as a Cloud Serviceへの移行の実行方法を理解したら、 [運用開始後](/help/journey-migration/post-go-live.md) ページを開いて、インスタンスのスムーズな実行を維持できます。

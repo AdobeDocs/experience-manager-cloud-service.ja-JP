@@ -3,7 +3,7 @@ title: SPA の動的モデルとコンポーネントのマッピング
 description: この記事では、AEM 用 JavaScript SPA SDK で動的モデルとコンポーネントとのマッピングがどのようにおこなわれるかを説明します。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 100%
 

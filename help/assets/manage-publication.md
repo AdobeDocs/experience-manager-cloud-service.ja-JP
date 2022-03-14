@@ -1,17 +1,17 @@
 ---
-title: '公開を管理 '
+title: 公開を管理
 description: Experience Manager Assets、Dynamic MediaおよびBrand Portalへのアセットの公開または非公開
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 14%
 
 ---
-
 
 # Experience Manager Assetsで公開を管理 {#manage-publication-in-aem}
 
@@ -46,7 +46,7 @@ As a [!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセ
    * `Publish`:選択した宛先へのアセットおよびフォルダーの公開
    * `Unpublish`:アセットおよびフォルダーを宛先から非公開にする
 
-* [!UICONTROL 保存先]
+* [!UICONTROL 移動先]
    * `Publish`:へのアセットおよびフォルダーの公開 [!DNL Experience Manager Assets] (`AEM`)
    * `Dynamic Media`:へのアセットの公開 [!DNL Dynamic Media]
    * `Brand Portal`:へのアセットおよびフォルダーの公開 [!DNL Brand Portal]
@@ -108,7 +108,7 @@ Only the selected folder content and references are published.
 
 次の表で、定義した **[!UICONTROL 宛先]** および **[!UICONTROL Dynamic Media公開モード]**:
 
-| [!UICONTROL 保存先] | [!UICONTROL Dynamic Media 公開モード] | [!UICONTROL 公開ターゲット] | 許可されたコンテンツ |
+| [!UICONTROL 移動先] | [!UICONTROL Dynamic Media 公開モード] | [!UICONTROL 公開ターゲット] | 許可されたコンテンツ |
 | --- | --- | --- | --- |
 | 公開 | 選択的公開 | `AEM` | アセットおよびフォルダー |
 | 公開 | 即時 | `AEM` および `Dynamic Media` | アセットおよびフォルダー |
@@ -191,4 +191,3 @@ Only the selected folder content and references are published.
 * 空のフォルダーは公開されません。
 * 処理中のアセットを公開した場合は、オリジナルのコンテンツのみが公開されます。処理中のレンディションは失われます。処理が完了するのを待ち、処理が完了したら、アセットを公開または再公開します。
 * 複雑なアセットを非公開にする場合は、アセットだけを非公開にします。参照は他の公開済みアセットによって参照される可能性があるので、非公開にしないでください。
-
