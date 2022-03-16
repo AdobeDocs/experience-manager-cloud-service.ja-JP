@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 925f451b11e599691ad7dcec27c88913ca6efcdd
+source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 89%
+source-wordcount: '2356'
+ht-degree: 85%
 
 ---
 
@@ -55,15 +55,19 @@ Sling Commons Scheduler は実行を保証できないので、スケジュー�
 
 ## 送信 HTTP 接続 {#outgoing-http-connections}
 
-送信 HTTP 接続では、接続および読み取りの妥当なタイムアウトを設定することを強くお勧めします。これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Service 上で動作している AEM インスタンスは、グローバルタイムアウトを強制的に適用します。一般的な次の Java ライブラリで使用される接続の場合、これらのタイムアウト値は、接続呼び出しについては 10 秒、読み取り呼び出しについては 60 秒です。
+送信 HTTP 接続では、適切な接続および読み取りタイムアウトを設定することを強くお勧めします。推奨値は、接続タイムアウトの場合は 1 秒、読み取りタイムアウトの場合は 5 秒です。 正確な数は、これらのリクエストを処理するバックエンドシステムのパフォーマンスに基づいて決定する必要があります。
+
+これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Service 上で動作している AEM インスタンスは、グローバルタイムアウトを強制的に適用します。接続呼び出しの場合、これらのタイムアウト値は 10 秒で、接続の場合、読み取り呼び出しの場合は 60 秒です。
 
 HTTP 接続を行う場合は、提供されている [Apache HttpComponents Client 4.x ライブラリ](https://hc.apache.org/httpcomponents-client-ga/)を使用することをお勧めします。
 
 次の代替手段は、動作することはわかっていますが、依存関係を自分で指定しなければならない可能性があります。
 
-* [java.net.URL](https://docs.oracle.com/javase/7/docs/api/java/net/URL.html) と [java.net.URLConnection](https://docs.oracle.com/javase/7/docs/api/java/net/URLConnection.html)（AEM で提供）のいずれか一方または両方
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html) と [java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html)（AEM で提供）のいずれか一方または両方
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)（古くなり、バージョン 4.x に代わっているので、お勧めしません）
 * [OK Http](https://square.github.io/okhttp/)（AEM では提供されません）
+
+タイムアウトの提供の横には、そのようなタイムアウトの適切な処理と、予期しない HTTP ステータスコードも実装する必要があります。
 
 ## クラシック UI のカスタマイズがない {#no-classic-ui-customizations}
 
