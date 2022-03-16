@@ -2,7 +2,7 @@
 title: 概要 - SSL 証明書の管理
 description: 概要 - SSL 証明書の管理
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 09a2c24b848364954dc5621995d0d0dc24059011
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 93%
@@ -31,7 +31,7 @@ Cloud Manager では、セルフサービス機能を使用して、Cloud Manage
 
 * AEM as a Cloud Service は、ドメインのワイルドカード SSL 証明書を受け入れます。
 
-* Cloud Manager では、1 つ以上の環境に関連付けることができる SSL 証明書は、証明書の有効期限が切れている場合でも、プログラム全体で常に最大 20 個まで許可されます。ただし、Cloud Manager UI では、最大 50 個までの SSL 証明書をプログラムにインストールできます。通常、証明書は複数のドメイン（最大 100 個の SAN）に対応できるので、この制限内に収まるように、複数のドメインを同じ証明書でグループ化することを検討してください。
+* Cloud Manager では、1 つ以上の環境に関連付けることができる SSL 証明書は、証明書の有効期限が切れている場合でも、プログラム全体で常に最大 50 個まで許可されます。ただし、Cloud Manager UI では、最大 50 個までの SSL 証明書をプログラムにインストールできます。通常、証明書は複数のドメイン（最大 100 個の SAN）に対応できるので、この制限内に収まるように、複数のドメインを同じ証明書でグループ化することを検討してください。
 
 Cloud Manager では、次の顧客向け SSL 証明書の要件をサポートしています。
 
