@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 26%
+source-wordcount: '1188'
+ht-degree: 25%
 
 ---
 
@@ -135,15 +135,17 @@ AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年
 
 ### リリース日 {#release-date-bpa}
 
-ベストプラクティスアナライザー v2.1.24 のリリース日は 2022 年 2 月 01 日です。
+ベストプラクティスアナライザー v2.1.26 のリリース日は 2022 年 3 月 16 日です。
 
 ### 新機能 {#what-is-new-bpa}
 
-* スマートタグを使用するアセットの数、およびスマートタグを使用しないアセットの数を検出してレポートする機能。
-* 使用されているコアコンポーネントのバージョンを検出してレポートする機能。
-* BPA が実行されたソース層（オーサー層またはパブリッシュ層）の種類を検出し、レポートする機能。
+* 未処理のアセットを検出する機能。 未処理のアセットが検出された場合は、コンテンツの取り込み中に問題が発生するのを避けるために、これらのアセットを処理済みに設定するか、コンテンツの転送中に移行セットから削除する必要があります。
+* コンテンツに 1,000 個を超えるバニティー URL があるかどうかを検出する機能。 バニティー URL の数を多く指定することは、Dispatcher およびパブリッシュサーバーに負荷がかかるので、ベストプラクティスではありません。
+* Oak インデックスの定義に関連する問題を特定し、AEM as a Cloud Serviceとの非互換性を検出する機能。
+* Externalizer 設定の使用方法を検出し、レポートする機能。 AEMas a Cloud Serviceの Externalizer 設定は Cloud Manager で設定されるので、互換性を維持するには、既存の Externalizer 設定をリファクタリングする必要があります。
 
 ### バグ修正 {#bug-fixes-bpa}
 
-* BPA サイズ設定ロジックがより高速で効率的になりました。
-* BPA は、実行時に分析済みのカウントを増分しないことがありました。 この問題が修正されました。
+* 一部のシナリオでは、FormsSelectiveFeaturesAnalysis がアサーションエラーをスローしたため、BPA が実行に失敗しました。 この問題が修正されました。
+* BPA は、WRK パターンに関連する結果を CRITICAL ではなく MAJOR として報告していました。 この問題が修正されました。
+* BPA は、ui.apps の OAK インデックス定義に関連する結果を誤って「重大」としてレポートしていました。 この問題が修正されました。
