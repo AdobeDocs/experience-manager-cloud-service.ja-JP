@@ -1,11 +1,11 @@
 ---
-title: 翻訳済みコンテンツの公開
+title: 翻訳済みコンテンツを公開 (AEMヘッドレス )
 description: 翻訳済みコンテンツを公開し、コンテンツの更新に合わせて翻訳を更新する方法を説明します。
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 100%
+source-wordcount: '1391'
+ht-degree: 99%
 
 ---
 

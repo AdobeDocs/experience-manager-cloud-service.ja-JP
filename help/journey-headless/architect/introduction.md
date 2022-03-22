@@ -1,11 +1,11 @@
 ---
-title: AEM ヘッドレスコンテンツアーキテクトジャーニー
+title: ヘッドレス向けのコンテンツモデリング (AEMの概要 )
 description: Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法を紹介します。
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 100%
+source-wordcount: '716'
+ht-degree: 99%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: 翻訳コネクタの設定
+title: 翻訳コネクタの設定 (AEM Sites)
 description: AEM を翻訳サービスに接続する方法を説明します。
 index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 100%
+source-wordcount: '1168'
+ht-degree: 99%
 
 ---
 

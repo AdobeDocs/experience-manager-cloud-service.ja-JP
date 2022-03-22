@@ -1,11 +1,11 @@
 ---
-title: ブランチの作成
-description: ここでは、Cloud Manager で Screens as a Cloud Service 用にブランチを作成する方法について説明します。
+title: 環境の作成
+description: ここでは、Screens as a Cloud Service用 Cloud Manager での環境の作成について説明します。
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: コンテンツの翻訳
+title: コンテンツを翻訳 (AEMヘッドレス )
 description: 翻訳コネクタおよびルールを使用して、ヘッドレスコンテンツを翻訳します。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '2174'
-ht-degree: 100%
+source-wordcount: '2176'
+ht-degree: 99%
 
 ---
 

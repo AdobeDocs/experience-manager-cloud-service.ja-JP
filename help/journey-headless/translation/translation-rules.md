@@ -1,11 +1,11 @@
 ---
-title: 翻訳ルールの設定
+title: 翻訳ルールの設定 (AEMヘッドレス )
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 100%
+source-wordcount: '874'
+ht-degree: 99%
 
 ---
 

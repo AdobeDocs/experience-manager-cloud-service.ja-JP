@@ -1,10 +1,10 @@
 ---
-title: AEM Screens as a Cloud Service
+title: AEM Screens as a Cloud Service の概要
 description: このページでは、AEM Screens as a Cloud Service の概要ついて説明します。
 exl-id: b1cc0a63-ecd3-4d89-ac49-f384cc610cdc
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '382'
 ht-degree: 100%
 
 ---
