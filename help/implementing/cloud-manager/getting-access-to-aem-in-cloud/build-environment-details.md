@@ -2,10 +2,10 @@
 title: ビルド環境
 description: Cloud Manager のビルド環境と、Cloud Manager がコードをビルドおよびテストする方法について説明します。
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3bf8764500d2b0068b808a42ecfd1400f78b1d13
+source-git-commit: 5f344682aa0427d46dc6ca75fe83b0071348ad83
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 59%
+source-wordcount: '831'
+ht-degree: 50%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 
 * ビルド環境は Linux ベースで、Ubuntu 18.04 から派生しています。
 * Apache Maven 3.6.0 がインストールされています。
-* インストールされる Java のバージョンは、Oracle JDK 8u202、Azul Zulu 8u292、Oracle JDK 11.0.2 および Azul Zulu 11.0.11 です。
+* インストールされる Java のバージョンは、OracleJDK 8u202 およびOracleJDK 11.0.2 です。
 * デフォルトでは、`JAVA_HOME` 環境変数は `/usr/lib/jvm/jdk1.8.0_202` に設定されています。これには、Oracle JDK 8u202 が含まれています。詳しくは、[Maven 実行の代替 JDK バージョン](#alternate-maven-jdk-version)の節を参照してください。
 * 必要な追加のシステムパッケージがいくつかインストールされています。
 
@@ -90,15 +90,10 @@ Cloud Manager では、専用のビルド環境を使用して、コードのビ
 | `sun` | `1.8` |
 | `sun` | `1.11` |
 | `sun` | `11` |
-| `azul` | `1.8` |
-| `azul` | `1.11` |
-| `azul` | `8` |
 
-#### Maven 実行の代替 JDK バージョン {#alternate-maven-jdk-version}
-
-また、Maven 実行全体の JDK として Azul 8 または Azul 11 を選択することもできます。この場合は、ツールチェーンオプションとは異なり、ツールチェーン設定も指定される場合を除き、すべてのプラグインに使用される JDK が変更されます。ツールチェーン設定が指定される場合は、そのツールチェーン設定が引き続きツールチェーン対応 Maven プラグインに適用されます。その結果、[Apache Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) を使用して Java バージョンを確認および強制することができます。
-
-それには、パイプラインで使用される Git リポジトリーブランチに `.cloudmanager/java-version` というファイルを作成します。このファイルの内容は 11 か 8 のどちらかにすることができます。その他の値は無視されます。11 を指定した場合、Azul 11 が使用され、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk-11.0.11`. 8 を指定した場合、Azul 8 が使用され、 `JAVA_HOME` 環境変数はに設定されます。 `/usr/lib/jvm/jdk-8.0.292`.
+>[!NOTE]
+>
+>2022 年 4 月以降、OracleJDK は、AEMアプリケーションの開発と操作のためのデフォルト JDK になります。 Cloud Manager のビルドプロセスは、Maven ツールチェーンで代替オプションが明示的に選択されている場合でも、OracleJDK を使用してに自動的に切り替わります。 詳しくは、公開後の 4 月のリリースノートを参照してください。
 
 ## 環境変数 {#environment-variables}
 
