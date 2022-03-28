@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
-
-2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は以下のように動作します。
-
-### 機能の使用 {#feature-usage}
+## 機能の使用 {#feature-usage}
 
 この機能は、プロキシ設定に標準の Java システムプロパティを使用する場合、送信トラフィックを発生させる Java コードまたはライブラリと互換性があります。実際には、これには最も一般的なライブラリが含まれる必要があります。
 
@@ -349,11 +345,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 同じ専用 IP が、Adobe 組織内のすべての顧客プログラムと、各プログラム内のすべての環境に適用されます。オーサーサービスとパブリッシュサービスの両方に適用されます。
 
-HTTP ポートと HTTPS ポートのみがサポートされます。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。
-
 ### デバッグの考慮事項 {#debugging-considerations}
 
 想定される専用 IP アドレスでトラフィックが実際に送信されていることを検証するには、送信先のサービスでログを確認します（可能な場合）。それ以外の場合は、呼び出し元の IP アドレスを返す [https://ifconfig.me/IP](https://ifconfig.me/IP) などのデバッグサービスを呼び出すと便利です。
+
+## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
+
+2021.09.30より前に、専用のエグレス IP がプロビジョニングされている場合、専用のエグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。
+これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
