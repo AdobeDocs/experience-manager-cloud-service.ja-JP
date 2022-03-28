@@ -4,9 +4,9 @@ description: コンテンツ配信ネットワーク（CDN）にキャッシュ�
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: c9944b1ac561b54ad2e2870ab0da967c005f105f
+source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1313'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ Dynamic Media アセットは、顧客との配信を高速化するために、
 >
 >この機能を使用するには、Adobe Experience Manager Dynamic Media にバンドルされている標準搭載の CDN を使用する必要があります。この機能では、その他のカスタム CDN はサポートされません。
 
-[Dynamic Media のキャッシュの概要](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)も参照してください。
+<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **Dynamic Media を使用して CDN キャッシュを無効にするには:**
 
