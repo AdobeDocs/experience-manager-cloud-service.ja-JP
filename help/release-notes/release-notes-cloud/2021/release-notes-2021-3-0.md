@@ -2,7 +2,7 @@
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.3.0."'
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 99%
@@ -89,7 +89,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 ### 新機能 {#what-is-new-march}
 
-* [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/check-status-ssl-certificate.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージが表示され、UI を使用してセルフサービス方式で操作できるようになります。
+* [IP 許可リスト](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)、[SSL 証明書](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)、[カスタムドメイン名](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)に既存のカスタムドメイン名がある環境のユーザーは、既存の設定に関するメッセージが表示され、UI を使用してセルフサービス方式で操作できるようになります。
 
 * 必要な権限を持つユーザーがプログラムを編集して、セルフサービス方式で以下を行えるようになりました。
 
