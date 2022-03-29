@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 29%
+ht-degree: 33%
 
 ---
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service は、セキュリティで保護された `https` サイ
 
 ## 要件 {#requirements}
 
-* AEM as a Cloud Serviceは、OV（組織の検証）または EV（拡張検証）ポリシーに準拠する証明書のみを受け付けます。
+* AEM as a Cloud Service では、OV（組織検証）ポリシーまたは EV（拡張検証）ポリシーに準拠する証明書のみを受け付けます。
 * 証明書は、2048 ビットの RSA 秘密鍵と一致する、信頼された証明機関 (CA) の X.509 TLS 証明書である必要があります。
 * DV（ドメイン検証）ポリシーが受け入れられません。
 * 自己署名証明書は受け付けられません。

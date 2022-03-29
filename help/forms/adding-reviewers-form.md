@@ -1,5 +1,5 @@
 ---
-title: 送信レビュー担当者のフォームへの関連付け
+title: 送信レビュー担当者とフォームの関連付け
 seo-title: Associating submission reviewers with a form
 description: ' [!DNL AEM Forms] のフォームへ送信レビュー担当者を関連付ける方法を説明します。関連付けられたレビュー担当者は、送信されたフォームをフォームポータル経由でレビューします。'
 seo-description: Learn how to associate submission reviewers with a form in [!DNL AEM Forms]. Associated reviewers review a form submitted via forms portal.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# 送信レビュー担当者のフォームへの関連付け {#associating-submission-reviewers-with-a-form}
+# 送信レビュー担当者とフォームの関連付け {#associating-submission-reviewers-with-a-form}
 
 フォーム作成時に、フォームポータル経由で送信されたフォームのレビューおよびフィードバックを行うユーザーを指定できます。組織はフィードバックを収集し、送信済みフォームに対して再作業を行うことができます。
 
@@ -26,13 +26,13 @@ ht-degree: 100%
 
 ## 前提条件 {#prerequisite}
 
-### メタデータスキーマエディターを使用した、アダプティブフォームの送信レビュー担当者グループプロパティの有効化 {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
+### メタデータスキーマエディターを使用してアダプティブフォームの送信レビュー担当者グループのプロパティを有効化 {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
 レビュー担当者グループをフォームに関連付けるには、アダプティブフォームのメタデータスキーマを編集します。デフォルトでは、送信されたフォームにレビュー担当者グループを追加できません。
 
 メタデータスキーマを編集するには、以下の手順に従います。
 
-1. オーサーモードで、Experience Manager の&#x200B;**ツール**／**アセット**／**メタデータスキーマ**&#x200B;をクリックします。
+1. オーサーモードで、Experience Manager の **ツール**／**アセット**／**メタデータスキーマ** をクリックします。
 1. スキーマフォームページで、「**フォーム**／**AEM で作成されたフォーム**」に移動します。
 
    ページの URL は以下のとおりです。
@@ -51,7 +51,7 @@ ht-degree: 100%
 
    アダプティブフォームの詳細属性の送信レビュー担当者グループフィールドが、フィールドラベルで指定した名前で有効化されます。
 
-## 送信レビュー担当者のフォームへの関連付け {#associating-submission-reviewers-with-a-form-1}
+## 送信レビュー担当者とフォームの関連付け {#associating-submission-reviewers-with-a-form-1}
 
 アダプティブフォームに送信レビュー担当者を関連付けるには、レビュー担当者グループを作成し、そこにユーザーを追加します。フォームの詳細属性内のフォーム送信レビュー担当者のフィールドに、作成したレビュー担当者グループを追加します。ユーザーグループを使用することで、アダプティブフォームごとに異なる送信レビュー担当者のグループを関連付けることができます。この機能によって、権限のないユーザーによる送信レビューを避けることができます。
 

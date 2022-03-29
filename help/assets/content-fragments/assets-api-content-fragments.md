@@ -43,7 +43,7 @@ AEM ヘッドレス配信機能の重要な部分である、Assets HTTP API で
 
 Assets REST API は、
 
-* [HATEOAS の原則](https://en.wikipedia.org/wiki/HATEOAS)に従っています。
+* [HATEOAS の原則](https://ja.wikipedia.org/wiki/HATEOAS)に従っています。
 
 * [SIREN 形式](https://github.com/kevinswiber/siren)を実装しています。
 

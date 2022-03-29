@@ -46,7 +46,7 @@ ht-degree: 100%
 
 アダプティブフォームで [!DNL Adobe Sign] を使用する前に、以下の点を確認してください。
 
-* [!DNL AEM Forms] as a Cloud Service が Adobe Sign を使用するように設定されていること。詳細については、[Adobe Sign の  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) への統合を参照してください。
+* [!DNL AEM Forms] as a Cloud Service が Adobe Sign を使用するように設定されていること。詳細については、 [Adobe Sign の [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) への統合を参照してください。
 * 受信者のリストが準備されていること。少なくとも、各受信者のメールアドレスが必要になります。
 
 ## アダプティブフォームへの [!DNL Adobe Sign] の設定 {#configure-adobe-sign-for-an-adaptive-form}
@@ -67,7 +67,7 @@ ht-degree: 100%
 既存のアダプティブフォーム用に [!DNL Adobe Sign] を有効にするか、[!DNL Adobe Sign] 対応アダプティブフォームを作成できます。次のいずれかの操作を行います。
 
 * [ [!DNL Adobe Sign]  対応のアダプティブフォームを作成する](#create-an-adaptive-form-for-adobe-sign)
-* [既存のアダプティブフォームで  [!DNL Adobe Sign]  を有効にする](#editafsign)
+* [既存のアダプティブフォームで [!DNL Adobe Sign] を有効にする](#editafsign)
 
 #### Adobe Sign 対応のアダプティブフォームを作成する {#create-an-adaptive-form-for-adobe-sign}
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 
    1. アダプティブフォームの&#x200B;**[!UICONTROL 名前]**&#x200B;と&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
 
-   1. [ [!DNL Adobe Sign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した[設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)を選択します。
+   1. [ [!DNL Adobe Sign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
    設定コンテナには、お使いの環境用に設定された [!DNL Adobe Sign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームエディターで選択できます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。
@@ -96,7 +96,7 @@ ht-degree: 100%
 
 1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]**&#x200B;アイコンをタップします。
-1. 「**[!UICONTROL 基本]**」タブで、[!DNL Adobe Sign] を [!DNL AEM Forms] と統合するときに作成した[設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)を選択します。
+1. 「**[!UICONTROL 基本]**」タブで、[!DNL Adobe Sign] を [!DNL AEM Forms] と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 1. 「**[!UICONTROL フォームモード]**」タブで、次のいずれかのオプションを選択します。
 
    * カスタムフォームテンプレートがあり、そのフォームテンプレートに基づいてレコードのドキュメントが必要な場合は、「**[!UICONTROL フォームテンプレートをレコードのドキュメントテンプレートとして関連付ける]**」オプションを選択し、「レコードのドキュメントテンプレート」を選択します。このオプションを使用すると、署名用に送信されたドキュメントには、関連付けられたフォームテンプレートに基づくフィールドのみが表示されます。アダプティブフォームのすべてのフィールドは表示されません。
@@ -132,7 +132,7 @@ ht-degree: 100%
 
 1. **[!UICONTROL Adobe Sign]** フィールド ![Adobe Sign](assets/adobesign.png) アイコンをタップします。[!DNL Adobe Sign] フィールドの選択オプションと追加オプションが表示されます。
 
-   「**[!UICONTROL タイプ]**」ドロップダウンフィールドを展開して [!DNL Adobe Sign] フィールドを選択し、完了アイコン（![保存](assets/save_icon.svg)）をタップして、選択したフィールドを [!DNL Adobe Sign] ブロックに追加します。「**[!UICONTROL タイプ]**」ドロップダウンフィールドには、「署名」タイプ、「受信者の情報」タイプ、「データフィールド」タイプが表示されます。[!DNL Adobe Sign] が AEM に統合されている場合、[!DNL Forms] は「[!UICONTROL タイプ]」ドロップダウンボックスに表示されているフィールドのみサポートします。[!DNL Adobe Sign] フィールドについて詳しくは、[Adobe Sign のドキュメント](https://helpx.adobe.com/jp/sign/using/field-types.html)を参照してください。
+   「**[!UICONTROL タイプ]**」ドロップダウンフィールドを展開して [!DNL Adobe Sign] フィールドを選択し、完了アイコン（![保存](assets/save_icon.svg)）をタップして、選択したフィールドを [!DNL Adobe Sign] ブロックに追加します。「**[!UICONTROL タイプ]**」ドロップダウンフィールドには、「署名」タイプ、「受信者の情報」タイプ、「データフィールド」タイプが表示されます。[!DNL Adobe Sign] が AEM に統合されている場合、[!DNL Forms] は「[!UICONTROL タイプ]」ドロップダウンボックスに表示されているフィールドのみサポートします。[!DNL Adobe Sign] フィールドについて詳しくは、 [Adobe Sign のドキュメント](https://helpx.adobe.com/jp/sign/using/field-types.html) を参照してください。
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -335,7 +335,7 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
 **Q：**&#x200B;拡張テンプレートを使用してアダプティブフォームを作成し、そのフォームを編集用として開くと、「電子サインまたは受信者が正しく設定されていません」というエラーメッセージが表示されます。このエラーメッセージを解決するにはどうすればよいですか？**A：**&#x200B;拡張テンプレートを使用して作成されたアダプティブフォームは、[!DNL Adobe Sign] を使用するように設定されています。このエラーを修正するには、[!DNL Adobe Sign] のクラウド設定を作成して選択し、アダプティブフォーム用の [!DNL Adobe Sign] 受信者を設定してください。
 
-**Q：**&#x200B;アダプティブフォームの静的テキストコンポーネントで [!DNL Adobe Sign] のテキストタグを使用することはできますか？**A：**&#x200B;はい。テキストコンポーネントでテキストタグを使用して、[!DNL Adobe Sign] フィールドをレコードのドキュメント（「自動生成されたレコードのドキュメント」オプションのみ）が有効になっているアダプティブフォームに追加できます。テキストタグを作成する手順とルールについては、[Adobe Sign のドキュメント](https://helpx.adobe.com/jp/sign/using/text-tag.html)を参照してください。アダプティブフォームでは、テキストタグを使用する場合に制限があることにも注意してください。テキストタグを使用して作成できるのは、[Adobe Sign ブロック](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)がサポートされているフィールドだけです。
+**Q：**&#x200B;アダプティブフォームの静的テキストコンポーネントで [!DNL Adobe Sign] のテキストタグを使用することはできますか？**A：**&#x200B;はい。テキストコンポーネントでテキストタグを使用して、[!DNL Adobe Sign] フィールドをレコードのドキュメント（「自動生成されたレコードのドキュメント」オプションのみ）が有効になっているアダプティブフォームに追加できます。テキストタグを作成する手順とルールについては、 [Adobe Sign のドキュメント](https://helpx.adobe.com/jp/sign/using/text-tag.html) を参照してください。アダプティブフォームでは、テキストタグを使用する場合に制限があることにも注意してください。テキストタグを使用して作成できるのは、[Adobe Sign ブロック](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)がサポートされているフィールドだけです。
 
 ## トラブルシューティング {#troubleshoot}
 
@@ -354,5 +354,5 @@ Adobe Sign 契約 ID（agreementId）は、アダプティブフォームの送�
 
 ## 関連記事 {#related-articles}
 
-* [ [!DNL Adobe Sign]  と  [!DNL AEM Forms] の統合](adobe-sign-integration-adaptive-forms.md)
-* [アダプティブフォームでの  [!DNL Adobe Sign]  使用に関するベストプラクティス](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
+* [ [!DNL Adobe Sign] と [!DNL AEM Forms]の統合](adobe-sign-integration-adaptive-forms.md)
+* [アダプティブフォームでの [!DNL Adobe Sign] 使用に関するベストプラクティス](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)

@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -175,7 +175,7 @@ OSGi バンドルとその関連設定を管理する Web コンソール（以�
 
 >[!NOTE]
 >
->[OSGi 設定](/help/implementing/deploying/overview.md#osgi-configuration)も参照してください。
+>[OSGi 設定](/help/implementing/deploying/overview.md#osgi-configuration) も参照してください。
 
 開発者にとって、もう 1 つの共通の要件は、様々な環境のログファイルにすばやくアクセスできることです。AEM as a Cloud Service では、オーサーノードとパブリッシュノードに含まれる様々なノードのログファイルが、ダウンロード可能なファイルの形式または API 経由で Cloud Manager を通じて利用できるようになっています。
 
@@ -264,7 +264,7 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 詳しくは、次のセクションを参照してください。
 
 * [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
-* [Adobe Experience Manager as a Cloud Service のアーキテクチャ](/help/overview/architecture.md)
+* Adobe Experience Manager as a Cloud Service [のアーキテクチャ](/help/overview/architecture.md)
 * [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
 * [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
@@ -273,6 +273,6 @@ Assets が提供する機能には、クラウドでの次世代アセット処�
 
 >[!TIP]
 >
->AEM as a Cloud Serviceの概要を把握したら、 [オンボーディングジャーニー。](/help/journey-onboarding/home.md)
+>AEM as a Cloud Service の概要を把握したら、 [オンボーディングジャーニー](/help/journey-onboarding/home.md) を確認して、すばやくオンボードできます。
 >
->AEMの機能のテストを既にオンボーディング済みか、準備はできているか。 のインストール [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) 豊富な例を使用してAEMの強力な機能を調べる
+>すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。

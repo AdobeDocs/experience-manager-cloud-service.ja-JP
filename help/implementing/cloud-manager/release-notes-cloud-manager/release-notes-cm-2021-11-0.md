@@ -1,42 +1,42 @@
 ---
-title: AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Serviceリリース2021.11.0の Cloud Manager のリリースノートです
+title: AEM as a Cloud Service リリース 2021.11.0 の Cloud Manager のリリースノート
+description: AEM as a Cloud Service リリース 2021.11.0 の Cloud Manager のリリースノートです
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 2021.11.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service Release 2021.11.0 Cloud Manager のリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリースノートを大まかに説明しています。
 
 >[!NOTE]
 >
->参照： [このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) (Adobe Experience Manager as a Cloud Serviceの最新のリリースノート )
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートについては、[このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) を参照してください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2021.11.0の Cloud Manager のリリース日は 2021 年 11 月 4 日です。
-次回のリリースは 2021 年 12 月 16 日に予定されています。
+AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年11月4日（PT）です。
+次回のリリースは 2021年12月16日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
 
    >[!IMPORTANT]
-   >AEM版である必要があります `2021.10.5933.20211012T154732Z` を使用して、新しいフロントエンドパイプラインを活用します。
+   >新しいフロントエンドパイプラインを活用するには、AEM バージョン `2021.10.5933.20211012T154732Z` を使用している必要があります。
 
-* AEM画像全体を構築する必要なく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。 この変更は、リリース後の数週間で徐々に適用される予定です。
+* AEM 画像全体を作成する必要がなく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。この変更は、リリース後の数週間で徐々に適用される予定です。
 
-* パイプライン実行の詳細に Git Commit ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
+* パイプライン実行の詳細に Git コミット ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
 
 * プログラムの作成は、公開されている API を通じて利用できるようになりました。
 
-* 環境の作成は、公開されている API を介して使用できるようになりました。
+* 環境の作成は、公開されている API を介して利用できるようになりました。
 
 * この `x-request-id` 応答ヘッダーが、[www.adobe.io](https://www.adobe.io/) の API Playground に表示されるようになりました。このヘッダーは、トラブルシューティングのためにカスタマーケアに関する問題を送信する際に役立ちます。
 
@@ -52,7 +52,7 @@ AEM as a Cloud Service 2021.11.0の Cloud Manager のリリース日は 2021 年
 
 * 品質問題の CSV ファイルに、品質問題ごとのタイムスタンプが含まれるようになりました。
 
-## バグ修正 {#bug-fixes}
+## バグの修正 {#bug-fixes}
 
 * 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
 

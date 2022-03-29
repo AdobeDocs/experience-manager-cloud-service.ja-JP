@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 このドキュメントは、開発者とデプロイメントマネージャーを対象に、Cloud Manager にアクセスする方法と学習パスの準備方法を説明します。
 
-読み終えると、以下を達成できます。
+読み終えると、次のことができるようになります。
 
 * 開発者として Cloud Manager Git へのアクセスと管理の方法を理解できる
 * デプロイメントマネージャーとして Cloud Manager でのパイプラインのセットアップ方法とコードのデプロイ方法を理解できる
@@ -55,7 +55,7 @@ Cloud Manager UI で、実稼動パイプラインまたは実稼動以外のパ
 
 >[!TIP]
 >
->オンボーディングされた後は、次の操作を実行できます。 [AEM Reference Demos アドオンを簡単に追加する方法を学ぶ](/help/journey-sites/demos-add-on/overview.md) AEMの設定を最小限に抑え、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできます。
+>オンボーディングした後は、最小限の AEM 構成でサンドボックス環境に [AEM Reference Demos Add-On を簡単に追加する方法を学ぶ](/help/journey-sites/demos-add-on/overview.md) ことができ、ベストプラクティスに基づいた豊富な例を使用して AEM の強力な機能をテストできます。
 
 ## その他のリソース {#additional-resources}
 

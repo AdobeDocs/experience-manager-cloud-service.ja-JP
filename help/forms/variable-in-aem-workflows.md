@@ -15,7 +15,7 @@ ht-degree: 100%
 
 AEM ワークフローモデルでは、次のことができます。
 
-* 保存する情報タイプに基づいて、データタイプの[変数を作成します](variable-in-aem-workflows.md#create-a-variable)。
+* 保存する情報タイプに基づいて、データタイプの [変数を作成します](variable-in-aem-workflows.md#create-a-variable)。
 * [変数の値を設定する](variable-in-aem-workflows.md#set-a-variable)には、「変数を設定する」ワークフローステップを使用します。
 * すべての [!DNL AEM Forms] ワークフローステップで[変数を使用して](variable-in-aem-workflows.md#use-a-variable)格納された値を取得し、OR 分割ステップおよび移動ステップでルーティング式を定義します。
 
@@ -89,11 +89,11 @@ ArrayList データタイプを使用して、変数コレクションを作成�
 
 1. ワークフローの編集ページで、ワークフローモデルのサイドキックにある「ステップ」アイコンをタップします。
 1. 「**[!UICONTROL 変数を設定]**」ステップをワークフローエディターにドラッグ&amp;ドロップし、手順をタップして ![configure_icon](assets/Smock_Wrench_18_N.svg) （設定）を選択します。
-1. 「変数を設定」ダイアログで、**[!UICONTROL マッピング]**／**[!UICONTROL マッピングを追加]**&#x200B;を選択します。
+1. 「変数を設定」ダイアログで、 **[!UICONTROL マッピング]**／**[!UICONTROL マッピングを追加]** を選択します。
 1. 「**変数のマップ**」セクションで、データを格納する変数を選択し、マッピングモードを選択して、変数に格納する値を指定します。マッピングモードは、変数のタイプによって異なります。
 1. より多くの変数をマップして、意味のある式を作成します。「![done_icon](assets/Smock_Checkmark_18_N.svg)」をタップして、変更内容を保存します。
 
-### 例 1：XML 変数をクエリして、文字列変数の値を設定 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
+### 例 1：XML 変数をクエリして文字列変数の値を設定 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
 XML タイプの変数を選択し、XML ファイルを格納します。XML 変数をクエリして、XML ファイルで使用可能なプロパティの文字列変数の値を設定します。「**XML 変数に XPATH を指定**」フィールドを使用して、文字列変数に格納するプロパティを定義します。
 
@@ -142,9 +142,9 @@ XML タイプの変数を選択し、XML ファイルを格納します。XML �
 
 ### 変数をサポートするワークフローステップ {#workflow-steps-with-support-for-variables}
 
-移動ステップ、OR 分割ステップ、すべての [!DNL AEM Forms] ワークフローステップは変数をサポートします。
+移動ステップ、OR 分岐ステップおよびすべての [!DNL AEM Forms] ワークフローステップは変数をサポートしています。
 
-#### OR 分割ステップ {#or-split-step}
+#### OR 分岐ステップ {#or-split-step}
 
 OR 分割は、ワークフロー内に分割を作成し、以降は 1 つの分岐だけがアクティブになります。これを使用すると、ワークフローに条件付き処理パスを導入できます。必要に応じて、各分岐にワークフローステップを追加できます。
 
@@ -176,11 +176,11 @@ OR 分割ステップと同様に、ルール定義、ECMA スクリプト、ま
 
 #### Forms 中心のワークフローステップ {#forms-workflow-centric-workflow-steps}
 
-すべての [!DNL AEM Forms] ワークフローステップは、変数をサポートします。詳しくは、[OSGi での Forms 中心のワークフローを参照してください](aem-forms-workflow-step-reference.md)。
+すべての [!DNL AEM Forms] ワークフローステップは、変数をサポートします。詳しくは、 [OSGi での Forms 中心のワークフロー](aem-forms-workflow-step-reference.md) を参照してください。
 
 ### 変数をサポートしないワークフローステップ {#workflow-steps-without-support-for-variables}
 
-[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしないワークフロー手順の変数にアクセスできます。
+[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) インターフェイスを使用して、変数をサポートしていないワークフローステップの変数にアクセスできます。
 
 #### 変数値の取得 {#retrieve-the-variable-value}
 
@@ -223,9 +223,9 @@ workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 
 API を使用して変数を設定し、それらを渡してワークフローインスタンスを呼び出すことができます。
 
-[workflowSession.startWorkflows](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-?lang=ja) は、モデル、wfData、metaData を引数として使用します。MetaDataMap を使用して変数の値を設定します。
+[workflowSession.startWorkflows](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) は、モデル、wfData、metaData を引数として使用します。MetaDataMap を使用して変数の値を設定します。
 
-この API では、**variableName** 変数は metaData.put(variableName, value) を使用して **value** に設定されます。
+この API では、 **variableName** 変数は metaData.put(variableName, value) を使用して **value** に設定されます。
 
 ```javascript
 import com.adobe.granite.workflow.model.WorkflowModel;

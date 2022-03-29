@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: ddc79a163e328d560912550900242cc089df3958
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 67%
+ht-degree: 87%
 
 ---
 
@@ -35,9 +35,9 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 ## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード  {#download-assets}
 
-非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。100 GB を超えるダウンロードアーカイブは、それぞれ最大サイズが 100 GB の複数の zip アーカイブに分割されます。 これらは個別にダウンロードできます。 小さいファイルは、ユーザーインターフェイスからリアルタイムでダウンロードされます。 [!DNL Experience Manager] は、元のファイルがダウンロードされた単一アセットのダウンロードをアーカイブしません。この機能により、より高速なダウンロードが可能になります。
+非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。100GB を超えるダウンロードアーカイブは、それぞれ最大 100GB の複数の zip アーカイブに分割されます。これらは個別にダウンロードできます。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、オリジナルファイルをダウンロードした単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。
 
-デフォルトでは、 [!DNL Experience Manager] トリガー：ダウンロードワークフローの完了時に通知します。 ダウンロード通知が  [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md).
+デフォルトでは、[!DNL Experience Manager] はダウンロードワークフローの完了時に通知をトリガーします。ダウンロード通知が [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md) に表示されます。
 
 ![インボックス通知](assets/inbox-notification-for-large-downloads.png)
 
@@ -46,7 +46,7 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 >[!NOTE]
 >
->この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 」を参照してください。
+>この機能は、プレリリースチャネルで使用できます。 お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
 
 非同期ダウンロードは、次のいずれかの場合にトリガーされます。
 
@@ -61,7 +61,7 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 電子メール通知を有効にするには：
 
 1. [!DNL Experience Manager Assets] にログインします。
-1. 右上隅のユーザーアイコンをクリックし、 **[!UICONTROL 環境設定]**. 「ユーザー・プリファレンス」ウィンドウが開きます。
+1. 右上隅にあるユーザーアイコンをクリックしてから、「**[!UICONTROL 環境設定]**」をクリックします。ユーザーの環境設定 ウィンドウが開きます。
 1. を選択します。 **[!UICONTROL アセットのダウンロードの電子メール通知]** チェックボックスをオンにして、 **[!UICONTROL 確定]**.
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
@@ -79,29 +79,29 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
    | ダウンロードオプション | 説明 |
    |---|---|
    | **[!UICONTROL アセットごとに別のフォルダーを作成]** | このオプションを選択すると、ダウンロードした各アセット（アセットの親フォルダーの下にネストされた子フォルダー内のアセットを含む）が、ローカルコンピューター上の 1 つのフォルダーに含まれます。このオプションを&#x200B;*選択しない場合*、デフォルトでは、フォルダー階層は無視され、すべてのアセットがローカルコンピューターの 1 つのフォルダーにダウンロードされます。 |
-   | **[!UICONTROL 電子メール]** | （ダウンロードへのリンクを含む）電子メール通知を別のユーザーに送信する場合は、このオプションを選択します。 受信者ユーザーは、 `dam-users` グループ化します。 次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 電子メール]** | （ダウンロードへのリンクを含む）メール通知を別のユーザーに送信する場合は、このオプションを選択します。受信者ユーザーは `dam-users` グループのメンバーである必要があります。次の場所にある標準の電子メールテンプレートを利用できます。<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> デプロイメント時にカスタマイズしたテンプレートは、次の場所で利用できます。 <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>テナント固有のカスタムテンプレートは、次の場所に保存できます。<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL アセット]** | レンディションを含めずに、元の形式でアセットをダウンロードする場合に、このオプションを選択します。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
    | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマート切り抜きレンディションが Adobe [!DNL Experience Manager] 内からダウンロードされます。スマート切り抜きレンディションを含む zip ファイルが作成され、ローカルコンピューターにダウンロードされます。 |
-   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを[画像プリセット](/help/assets/dynamic-media/image-presets.md)リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
+   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを [画像プリセット](/help/assets/dynamic-media/image-presets.md) リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-   大量のダウンロードに対する電子メール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を含む電子メールがインボックスに表示されます。 電子メールからダウンロードリンクをクリックして、zip フォルダーをダウンロードします。
+   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。 メールからダウンロードリンクをクリックして、zip フォルダーをダウンロードします。
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
-   また、 [!DNL Experience Manager] インボックス。
+   また、[!DNL Experience Manager] インボックスで通知を表示することもできます。
 
    ![inbox-notifications-for-large-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## リンク共有を使用して共有されたアセットのダウンロード {#link-share-download}
 
-リンクを使用したアセットの共有は、にログインしなくても、関心のあるユーザーが利用できるようにする便利な方法です。 [!DNL Assets]. 詳しくは、 [リンク共有機能](/help/assets/share-assets.md#sharelink).
+リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。[リンク共有機能](/help/assets/share-assets.md#sharelink) を参照してください。
 
-ユーザーが共有リンクからアセットをダウンロードする場合、 [!DNL Assets] では、非同期サービスを使用することで、より迅速で途切れることのないダウンロードを実現します。 ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
+ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、高速で途切れないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
 
-この [!UICONTROL ダウンロードインボックス] 各アーカイブの処理ステータスを表示します。 処理が完了したら、インボックスからアーカイブをダウンロードできます。
+[!UICONTROL ダウンロードインボックス] には、各アーカイブの処理ステータスが表示されます。処理が完了したら、インボックスからアーカイブをダウンロードできます。
 
 ![ダウンロードインボックス](assets/link-sharing-download-inbox.png)
 
@@ -133,7 +133,7 @@ Adobe [!DNL Experience Manager] のデフォルトサーブレットを使用す
 
 ## ヒントと制限事項 {#tips-limitations}
 
-* 空のフォルダーをダウンロードする場合、 [!DNL Experience Manager] は、ZIP アーカイブの作成に関する成功メッセージを伝えますが、アーカイブは作成されません。
+* 空のフォルダーをダウンロードすると、 [!DNL Experience Manager] は、ZIP アーカイブの作成に関する成功メッセージを伝えますが、アーカイブは作成されません。
 
 >[!MORELIKETHIS]
 >

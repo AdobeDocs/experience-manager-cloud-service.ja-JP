@@ -35,6 +35,6 @@ ht-degree: 100%
 カテゴリに関する追加情報、およびこれらのカテゴリに関連する示唆と解決策に関する情報は、ベストプラクティスアナライザーレポート内からリンクを介して提供されます。
 
 >[!NOTE]
->ベストプラクティスアナライザーレポートは、これがなければ手動で収集および評価する必要がある情報を提供するので、AEM as a Cloud Service の移行に必要な時間とコストの見積もりを迅速におこなえるようになります。
+>ベストプラクティスアナライザーレポートを使用すれば、情報を手動で収集および評価する必要がなくなるので、AEM as a Cloud Service の移行にかかる時間とコストをすばやく見積もれるようになります。
 
-ベストプラクティスアナライザーレポートは、AEM インスタンスからダウンロードすることもできます。詳しくは、[ベストプラクティスアナライザーレポートの表示](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report)を参照してください。
+ベストプラクティスアナライザーレポートは、AEM インスタンスからダウンロードすることもできます。詳しくは、 [ベストプラクティスアナライザーレポートの表示](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) を参照してください。

@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -47,7 +47,7 @@ Dispatcher には、価格や在庫などの動的データはキャッシュさ
 
 ## 9. AEM Dispatcher のキャッシュ無効化は、AEM とコマースでどのように機能しますか。
 
-Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、データをクライアントサイドでレンダリングすることをお勧めします。 TTL ベースのキャッシュの無効化について詳しくは、「[AEM Dispatcher](https://helpx.adobe.com/jp/experience-manager/kb/optimizing-the-dispatcher-cache.html)」を参照してください。
+Dispatcher にキャッシュされたページに対しては、TTL ベースのキャッシュ無効化を設定することをお勧めします。価格や在庫などの動的な情報については、クライアントサイドで日付を処理することをお勧めします。TTL ベースのキャッシュの無効化について詳しくは、[AEM Dispatcher](https://helpx.adobe.com/jp/experience-manager/kb/optimizing-the-dispatcher-cache.html) を参照してください。
 
 ## 10. コマースでの、AEM コンテンツをまたぐ統合検索に関して推奨事項はありますか。
 

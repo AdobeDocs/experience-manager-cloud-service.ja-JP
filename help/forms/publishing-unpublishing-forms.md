@@ -22,7 +22,7 @@ ht-degree: 100%
 
 [!DNL AEM Forms] では、フォームを簡単に作成、公開、および非公開できます。[!DNL AEM Forms] サーバーは 2 つのインスタンス（オーサーとパブリッシュ）を提供します。オーサーインスタンスは、フォームのアセットとリソースを作成し管理するためのものです。パブリッシュインスタンスは、エンドユーザーに対して使用可能なアセットや関連リソースを保持するためのものです。
 
-## サポートされているアセットタイプ  {#supported-assets-nbsp}
+## サポートされているアセットタイプ {#supported-assets-nbsp}
 
 [!DNL AEM Forms] では、次のアセットタイプをサポートしています。
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 * 編集可能なアダプティブフォームテンプレート
 * Adobe Sign、Typekit、reCAPTCHA、フォームデータモデルのクラウドサービス設定
 * その他のクラウドサービスの設定は、ユーザーが管理者権限を保有している場合にのみアクティブ化されます。
-* カスタマイズ。以下のようなものが含まれます。
+* カスタマイズ. 以下のようなものが含まれます。
 
    * カスタムレイアウト
    * カスタム外観
@@ -98,7 +98,7 @@ ht-degree: 100%
 
    <!-- After publishing an asset, you can use the Forms Portal to display all the assets on a web page. For more information, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md).-->
 
-## すべての Correspondence Management アセットを公開する {#publish-all-the-correspondence-management-assets}
+## すべての Correspondence Management アセットの公開 {#publish-all-the-correspondence-management-assets}
 
 [!DNL AEM Forms] では、サーバー上のすべての Correspondence Management アセットを 1 度で公開します。公開済みのアセットには、すべての Correspondence Management アセットと関連する依存性が含まれます。
 
@@ -155,7 +155,7 @@ ht-degree: 100%
    >
    >選択されているアセットだけが非公開になり、子アセットと参照されているアセットは非公開にはなりません。
 
-## アセットまたはレターを以前に公開したバージョンに戻す {#revert-an-asset-or-letter-to-the-previously-published-version}
+## 以前公開したバージョンへのアセットまたはレターの復帰 {#revert-an-asset-or-letter-to-the-previously-published-version}
 
 アセットまたはレターを編集して公開するたびに、アセットまたはレターのバージョンが作成されます。アセットまたはレターを、以前に公開したバージョンに戻すことができます。アセットまたはドキュメントの現在のバージョンに対して誰かが誤った操作をした場合、バージョンの巻き戻しが必要になることがあります。
 
@@ -184,7 +184,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >選択されているアセットだけが削除され、従属アセットは削除されません。アセットの参照を確認するには、![参照](assets/references.png) をタップしてからアセットを選択します。
+   >選択されているアセットだけが削除され、従属アセットは削除されません。アセットの参照を確認するには、 ![参照](assets/references.png) をタップしてからアセットを選択します。
    >
    >
    >削除しようとしているアセットが別のアセットの子アセットである場合、削除されません。そのようなアセットを削除するには、別のアセットからのそのアセットへの参照を削除してから再度実行します。

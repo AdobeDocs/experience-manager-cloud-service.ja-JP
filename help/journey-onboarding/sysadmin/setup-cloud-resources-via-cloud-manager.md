@@ -1,16 +1,16 @@
 ---
-title: Cloud Manager を使用したクラウドリソースのセットアップ
+title: Cloud Manager を使用したクラウドリソースの設定
 description: Cloud Manager を使用して独自のクラウドリソースを設定および管理する方法について説明します。
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
-# Cloud Manager を使用したクラウドリソースのセットアップ {#setup-cloud-resources}
+# Cloud Manager を使用したクラウドリソースの設定 {#setup-cloud-resources}
 
 Cloud Manager を使用して独自のクラウドリソースを設定および管理する方法について説明します。
 
@@ -25,7 +25,7 @@ Cloud Manager を使用して独自のクラウドリソースを設定および
 
 クラウドリソースの追加は、Cloud Manager を通じて、 **ビジネスオーナー** 製品プロファイル。 通常、このユーザーは、ビジネスニーズを理解し、Cloud Manager の初期設定を完了するユーザーです。
 
-以下の節では、 [クラウドサービスプログラム](#create-cloud-service-program) および [環境。](#create-cloud-environments)
+以下の節では、 [クラウドサービスプログラム](#create-cloud-service-program) と [環境](#create-cloud-environments) の作成方法について説明します。
 
 ### 前提条件 {#prerequisites}
 
@@ -53,7 +53,7 @@ Cloud Manager を使用して独自のクラウドリソースを設定および
 
 を使用して Cloud Manager にシステム管理者としてログインするまで、 **ビジネスオーナー** 役割、 **ビジネスオーナー** ロールは、適切なロールが割り当てられている場合でも、Cloud Manager でプログラムを作成できません。
 
-## Cloud Manager への移動 {#navigate-cloud-manager}
+## Cloud Manager に移動 {#navigate-cloud-manager}
 
 ユーザーの **ビジネスオーナー** の役割には、開始するためのリンクが記載された「ようこそ」の電子メールが届きます。 このようこそメールを使用して Cloud Manager に移動するには、以下の手順に従います。
 
@@ -66,7 +66,7 @@ Cloud Manager を使用して独自のクラウドリソースを設定および
    >
    >また、次の場所から Cloud Manager のログインページに直接移動することもできます。 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). 今後の参照用に、このページをブックマークに追加してください。
 
-1. Cloud Manager のランディングページに移動します。詳しくは、[Cloud Manager のプログラムの表示](#viewing-programs)の節を参照してください。
+1. Cloud Manager のランディングページに移動します。詳しくは、 [Cloud Manager のプログラムの表示](#viewing-programs) の節を参照してください。
 
 また、Cloud Manager の **プログラムと製品** 次の手順に従って、Adobe Experience Cloudホームページからページを開きます。
 
@@ -80,7 +80,7 @@ Cloud Manager を使用して独自のクラウドリソースを設定および
 
    ![AEMホームページ](/help/journey-onboarding/assets/setup-resources3.png)
 
-1. 正常にログインすると、Cloud Manager のランディングページが表示されます。詳しくは、[Cloud Manager のプログラムの表示](#viewing-programs)の節を参照してください。
+1. 正常にログインすると、Cloud Manager のランディングページが表示されます。詳しくは、 [Cloud Manager のプログラムの表示](#viewing-programs) の節を参照してください。
 
 Cloud Manager を使用してプログラムや製品にアクセスする方法はユーザー次第で、Cloud Manager の使用方法やプログラムの管理方法には影響しません。
 
@@ -141,7 +141,7 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 
    >[!TIP]
    >
-   >プログラムの追加ウィザードの使用方法に関する詳細な手順については、このドキュメントを参照してください [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) またはこれをご覧ください [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) AEM as a Cloud プログラムを作成する方法と、プログラムを作成する前に重要な考慮事項について学ぶには、以下を参照してください。
+   >プログラムの追加ウィザードの使用方法に関する詳細な手順については、このドキュメントを参照してください [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) またはこれをご覧ください [ビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=ja) AEM as a Cloud プログラムを作成する方法と、プログラムを作成する前に重要な考慮事項について学ぶには、以下を参照してください。
 
 
 1. クラウドプログラムが正常に作成されたら、 Cloud Manager のランディングページからプログラムに移動して、 **概要** ページを開きます。
@@ -166,7 +166,7 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 
    >[!TIP]
    >
-   >ドキュメントを参照します。 [環境の追加](/help/implementing/cloud-manager/manage-environments.md#adding-environments) 多くを学ぶ、または見る [このクイックビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) Cloud Manager 環境と、それらをプログラムに追加する方法について説明します。
+   >ドキュメントを参照します。 [環境の追加](/help/implementing/cloud-manager/manage-environments.md#adding-environments) 多くを学ぶ、または見る [このクイックビデオチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=ja) Cloud Manager 環境と、それらをプログラムに追加する方法について説明します。
 
 1. に割り当てられたメンバー **開発者** 製品プロファイルは、 Cloud Manager にログインして Cloud Manager の Git リポジトリーを管理できます。
 
@@ -185,4 +185,4 @@ Cloud Manager にビジネスオーナーとして正常にログインしまし
 * [プログラムタイプとプログラムの追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
 * [環境タイプと環境の追加](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
 * [Cloud Manager Git の管理](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-* [Admin Console からの AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
+* [Admin Console からの AEM as a Cloud Service へのアクセスの設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja#adobe-ims-users)

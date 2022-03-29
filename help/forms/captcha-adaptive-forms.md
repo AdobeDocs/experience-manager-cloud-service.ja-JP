@@ -42,7 +42,7 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 1. クラウドサービス用の設定コンテナを作成します。
 
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
-      * 詳しくは、[設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja#introduction)のドキュメントを参照してください。
+      * 詳しくは、 [設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja#introduction) のドキュメントを参照してください。
    1. 以下の手順を実行して、global フォルダーをクラウド設定用に有効にします。クラウドサービス設定用に別のフォルダーを作成する場合は、この手順をスキップしてください。
 
       1. 設定ブラウザーで、**[!UICONTROL global]** フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
@@ -63,7 +63,7 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 
    reCAPTCHA サービスを設定すると、アダプティブフォームで使用できるようになります。詳しくは、「[アダプティブフォームでの CAPTCHA の使用](#using-captcha)」を参照してください。
 
-## アダプティブフォームでの CAPTCHA の使用  {#using-captcha}
+## アダプティブフォームでの CAPTCHA の使用 {#using-captcha}
 
 アダプティブフォームで CAPTCHA を使用するには、以下を実行します。
 
@@ -151,7 +151,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 `ValidateCAPTCHA` API を使用してカスタム送信アクションを使用して CAPTCHA を検証するには、以下の手順を実行します。
 
 1. `ValidateCAPTCHA` API を含むスクリプトをカスタム送信アクションに追加します。カスタム送信アクションについて詳しくは、「[アダプティブフォーム用のカスタム送信アクションの作成](custom-submit-action-form.md)」を参照してください。
-1. アダプティブフォームの&#x200B;**[!UICONTROL 送信]**&#x200B;プロパティの&#x200B;**[!UICONTROL 送信アクション]**&#x200B;ドロップダウンリストから、カスタム送信アクションの名前を選択します。
+1. アダプティブフォームの **[!UICONTROL 送信]** プロパティの **[!UICONTROL 送信アクション]** ドロップダウンリストから、カスタム送信アクションの名前を選択します。
 1. 「**[!UICONTROL 送信]**」をタップします。CAPTCHA は、カスタム送信アクションの `ValidateCAPTCHA` API で定義された条件に基づいて検証されます。
 
 **オプション 2：フォームを送信する前に、[!DNL Experience Manager Forms] ValidateCAPTCHA API を使用してユーザーアクションに対する CAPTCHA の検証を行う**

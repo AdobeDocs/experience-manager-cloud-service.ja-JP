@@ -66,7 +66,7 @@ ht-degree: 100%
 
 次の手順に従います。
 
-1. **コンテンツ転送**&#x200B;ウィザードに移動し、追加抽出の実行対象となる移行セットを選択します。「**抽出**」をクリックして、追加抽出を開始します。
+1. **コンテンツ転送** ウィザードに移動し、追加抽出の実行対象となる移行セットを選択します。「**抽出**」をクリックして、追加抽出を開始します。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-05.png)
 
@@ -77,6 +77,6 @@ ht-degree: 100%
    >![画像](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-06.png)
 
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 コンテンツ転送ツールでソースからコンテンツを抽出する方法について理解したら、コンテンツ転送ツールでの取り込みプロセスについて学ぶ準備が整いました。コンテンツ転送ツールから移行セットを取り込む方法については、[Target へのコンテンツの取り込み](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)を参照してください。

@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ TXT レコードを作成する前に、次の手順に従う必要がありま�
 
 | ドメイン | 名前 | TXT 値 |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有です。 例：<br>*adobe-aem-verification=<br>example.com/[プログラム]/[env]/..* |
-| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有です。 例：<br>*adobe-aem-verification=<br>www.example.com/[プログラム]/[env]/..* |
+| `example.com` | `_aemverification.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有のものです。 例：<br>*adobe-aem-verification=<br>example.com/[program]/[env]/..* |
+| `www.example.com` | `_aemverification.www.example.com` | Cloud Manager UI に表示された値全体をコピーします。 これは、ドメインと環境に固有のものです。 例：<br>*adobe-aem-verification=<br>www.example.com/[program]/[env]/..* |
 
 完了したら、`dig _aemverification.[yourdomainname] -t txt` を実行して結果を確認できます。
 期待される結果には、Cloud Manager UI で指定された TXT 値が表示されます。

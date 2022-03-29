@@ -1,6 +1,6 @@
 ---
 title: App Builder のアクション
-description: App BuilderAdobeのランタイムアクションと使用について説明します。
+description: Adobe Runtime のアクションと、そのアクションを App Builder アプリケーションで使用する方法を説明します。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,7 +12,7 @@ exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -20,23 +20,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> _Adobeプロジェクト Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
+> _Adobe Project Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
 
 ## アクションの概要
 
-Adobe I/O Runtime、アクションおよびアクションの作成方法について説明します。
+Adobe I/O Runtime とアクションの概要、およびアクションの作成方法を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
 
 ## アクティベーション、シーケンス、トリガー、ルール
 
-アクティベーション、Web アクション、トリガー、ルールに関連するアクションについて説明します。
+アクティベーション、web アクション、トリガー、ルールに関連するアクションを説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
 
 ## App Builder アプリケーションのアクション
 
-App Builder アプリケーションとして使用できるアクションを作成する方法について説明します。
+App Builder アプリケーションとして使用できるアクションの作成方法を説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
 

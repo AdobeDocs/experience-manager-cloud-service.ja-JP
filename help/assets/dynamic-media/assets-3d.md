@@ -11,7 +11,7 @@ exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
 workflow-type: tm+mt
 source-wordcount: '2260'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Dynamic Media で 3D アセットを使用するときに、追加のインス�
 
 Dynamic Media は、次の 3D ファイル形式をサポートしています。
 
-関連トピック [Experience Manager Assetsでサポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats)
+[Experience Manager Assets でサポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats) も参照してください
 
 | 3D ファイル拡張子 | ファイル形式 | MIME タイプ | 備考 |
 |---|---|---|---|
@@ -101,7 +101,7 @@ Dynamic Media で 3D アセットを使用する前に、[!DNL Experience Manage
 
 ## アセットの詳細ページからの 3D アセットの表示とインタラクション {#viewing-three-d-assets-from-asset-details-page}
 
-[ソフトウェアインターフェイスを使用したアセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)も参照してください。
+[ソフトウェアインターフェイスを使用したアセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md) も参照してください。
 
 **アセットの詳細ページから 3D アセットの表示とインタラクションを行うには：**
 
@@ -134,7 +134,7 @@ Web ページが&#x200B;**[!UICONTROL 編集]**&#x200B;モードの場合、3D �
 >
 >このタスクは、3D メディアコンポーネントを Web ページに追加し、3D アセットをコンポーネントに割り当てた後にのみ実行できます。詳しくは、[Web ページへの 3D メディアコンポーネントの追加](#adding-the-three-d-media-component-to-a-web-page)および [3D メディアコンポーネントへの 3D アセットの割り当て](#assigning-a-three-d-asset-to-the-component)を参照してください。
 
-[ソフトウェアインターフェイスを使用したアセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)も参照してください。
+[ソフトウェアインターフェイスを使用したアセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md) も参照してください。
 
 **3D メディアコンポーネント内の 3D アセットの表示とインタラクションを行うには：**
 
@@ -175,7 +175,7 @@ Dynamic Media には、Dynamic Media 3D メディアコンポーネントが含�
 
    ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
-1. 空の領域を選択し、それに関連するツールバーを開くには、**[!UICONTROL レイアウトコンテナ]**&#x200B;領域で空の領域を選択します。
+1. 空の領域を選択し、それに関連するツールバーを開くには、 **[!UICONTROL レイアウトコンテナ]** 領域で空の領域を選択します。
 1. ツールバーで、**[!UICONTROL ポリシー]**&#x200B;アイコンを選択し、**[!UICONTROL ポリシーエディターを開きます]**。
 1. 「**[!UICONTROL プロパティ]**」セクションの「**[!UICONTROL 許可されたコンポーネント]**」タブで、「**[!UICONTROL Dynamic Media]**」までスクロールし、リストを展開して、「**[!UICONTROL 3D メディア]**」をチェックします。
 1. 「**[!UICONTROL 完了]**」をタップして変更を保存し、**[!UICONTROL ポリシーエディター]**&#x200B;を閉じます。
@@ -186,10 +186,10 @@ Dynamic Media には、Dynamic Media 3D メディアコンポーネントが含�
 
 [!DNL Experience Manager] を Web コンテンツ管理システムとして使用している場合は、3D メディアコンポーネントを使用して Web ページに 3D アセットを追加できます。
 
-[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)も参照してください。
+[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md) も参照してください。
 
 1. [!DNL Experience Manager Sites] を開き、Dynamic Media 3D メディアコンポーネントを追加する Web ページを選択します。
-1. ページをページエディターで開くには、**[!UICONTROL 編集]**（鉛筆）アイコンを選択します。ページの右上付近で&#x200B;**[!UICONTROL 編集]**&#x200B;モードが選択されていることを確認します。
+1. ページをページエディターで開くには、 **[!UICONTROL 編集]** （鉛筆）アイコンを選択します。ページの右上付近で&#x200B;**[!UICONTROL 編集]**&#x200B;モードが選択されていることを確認します。
 
    ![3d-media-component-add](/help/assets/dynamic-media/assets/3d-media-component-edita.png)
 
@@ -207,8 +207,8 @@ Dynamic Media には、Dynamic Media 3D メディアコンポーネントが含�
 
 ### オプション - 3D メディアコンポーネントの設定 {#configuring-the-three-d-component}
 
-1. [!DNL Experience Manager Sites] のページエディターで、前にページに追加した **[!UICONTROL 3D メディアビューア]**&#x200B;コンポーネントを選択します。
-1. コンポーネント設定ダイアログボックスを開くには、**[!UICONTROL 設定]**（レンチ）アイコンを選択します。
+1. [!DNL Experience Manager Sites] のページエディターで、前にページに追加した **[!UICONTROL 3D メディアビューア]** コンポーネントを選択します。
+1. コンポーネント設定ダイアログボックスを開くには、 **[!UICONTROL 設定]** （レンチ）アイコンを選択します。
 
    ![3d-media-component-config](/help/assets/dynamic-media/assets/3d-media-component-configa.png)
 
@@ -233,21 +233,21 @@ Web ページに 3D メディアコンポーネントを追加した後、3D ア
 
 >[!NOTE]
 >
->Web ページが [!DNL Experience Manager Sites]**[!UICONTROL 編集]**&#x200B;モードの場合、3D メディアコンポーネントは 3D アセットを表示しますが、アセットとのインタラクションはできません。アセットをインタラクティブにするには、**[!UICONTROL プレビュー]**&#x200B;機能を使用して、3D メディアコンポーネントの機能にフルアクセスできるページエディターで Web ページを表示します。
+>Web ページが [!DNL Experience Manager Sites] **[!UICONTROL 編集]** モードの場合、3D メディアコンポーネントは 3D アセットを表示しますが、アセットとのインタラクションはできません。アセットをインタラクティブにするには、**[!UICONTROL プレビュー]**&#x200B;機能を使用して、3D メディアコンポーネントの機能にフルアクセスできるページエディターで Web ページを表示します。
 
 ## 静的 Dynamic Media 3D アセットの公開 {#publishing-three-d-assets}
 
 Dynamic Media では、Dynamic Media で&#x200B;*静的コンテンツ*&#x200B;としてサポートされる様々な 3D ファイル形式を使用できます。静的コンテンツとは、3D アセットをアップロードして公開することはできますが、3D アセットに関連付けられた *Dynamic* Imaging や画像の再編集はサポートされていないことを意味します。これは、Dynamic Media Imaging サーバーが 3D 形式を認識しないためです。したがって、Dynamic Media で 3D アセットを公開すると、インスタント URL をコピーできます。3D アセットの URL は、通常の Dynamic Media の URL 構造に従います。ただし、Dynamic Media 内の従来の画像アセットとは異なり、アセットの URL 内のパラメーターは編集できません。
 
-[静的アセットの URL の取得](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)も参照してください。
+[静的アセットの URL の取得](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset) も参照してください。
 
 **[!UICONTROL カード表示]**&#x200B;で、アセット名のすぐ下、アセットが発行されたことを示す日時の左側に、小さな地球アイコンが表示されます。**[!UICONTROL リスト表示]**&#x200B;では、公開されたアセットと公開されていないアセットが「**[!UICONTROL 公開]**」列でわかります。
 
 [!DNL Experience Manager] を WCM として使用している場合は、この公開方法を使用して、Dynamic Media 3D アセットを Web ページに直接追加します。
 
-[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)も参照してください。
+[Dynamic Media アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) も参照してください。
 
-[ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)も参照してください。
+[ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) も参照してください。
 
 **静的 Dynamic Media 3D アセットを公開するには：**
 

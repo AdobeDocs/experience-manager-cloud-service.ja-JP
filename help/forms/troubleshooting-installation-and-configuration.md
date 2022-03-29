@@ -32,7 +32,7 @@ Cloud Service 環境の設定中に、次のような問題が発生する場合
    ![「フォーム」オプションを選択します](assets/installation-configuration-select-forms-option.png)
 1. 実稼働用パイプラインと非実稼働用パイプラインの両方を[作成](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=ja#how-to-use)して[実行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ja)します。
 
-パイプラインが構築およびデプロイされた後、**[!UICONTROL ナビゲーション]**&#x200B;ページに「**[!UICONTROL フォーム]**」オプションが表示されます。
+パイプラインが構築およびデプロイされた後、 **[!UICONTROL ナビゲーション]** ページに「**[!UICONTROL フォーム]**」オプションが表示されます。
 
 <!--  
 ## Environment creation fails {#environment-creation-fails}
@@ -48,7 +48,7 @@ A missing profile can lead to environment creation failure. Check that the profi
 
 If the profile exists and issues still persist, contact Adobe Support. -->
 
-## パイプラインの構築に失敗 {#build-pipeline-fails}
+## パイプラインの構築失敗 {#build-pipeline-fails}
 
 ユーザーは、ビルドパイプラインを実行できません。パイプラインは、しばらく実行した後に失敗します。
 

@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -61,6 +61,7 @@ AEM を初めて使用し、特定のビジネス事例を念頭に置いてい�
 
 ただし、AEMのユーザーには様々なタイプがいて、ニーズや期待も異なります。 次に例を示します。
 
+
 * 管理者
 * デベロッパー向け
 * コンテンツ作成者
@@ -90,9 +91,9 @@ AEM を初めて使用し、特定のビジネス事例を念頭に置いてい�
 | [ヘッドレスオーサリングジャーニー](/help/journey-headless/author/overview.md) | AEM の強力かつ柔軟なヘッドレス機能とその特長、および初めてのヘッドレス開発プロジェクトでコンテンツをモデル化する方法を紹介するガイド付きのジャーニーを、ここから始めましょう。 |
 | [ヘッドレスアーキテクトジャーニー](/help/journey-headless/architect/overview.md) | Adobe Experience Manager as a Cloud Service の強力で柔軟なヘッドレス機能と、プロジェクトのコンテンツをモデル化する方法の入門的解説が必要であれば、ここから始めてください。 |
 | [ヘッドレス翻訳ジャーニー](/help/journey-headless/translation/overview.md) | AEM でヘッドレス翻訳プロジェクトを設定および管理する方法については、ここから始めてください。 |
-| [AEM オンボーディングジャーニー](/help/journey-onboarding/home.md) | 新しいAEMas a Cloud Service環境をすぐに使い始めるには、ここから始めてください。 |
-| [AEMクイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | ここから始めて、使いやすいAEMクイックサイト作成ツールを使用し、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずにサイトをすばやくカスタマイズする、ガイド付きのジャーニーをご覧ください。 |
+| [AEM オンボーディングジャーニー](/help/journey-onboarding/home.md) | 新しい AEM as a Cloud Service 環境をすぐに使い始めるには、ここから始めてください。 |
+| [AEM クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | 使いやすい AEM クイックサイト作成ツールを使用して AEM サイトのフロントエンド開発を合理化し、AEM のバックエンドに関する知識がなくてもサイトをすばやくカスタマイズする、ガイド付きのジャーニーを参照するには、ここから始めてください。 |
 | AEM Commerce ジャーニー | 準備中 |
-| [AEMas a Cloud Service移行ジャーニー](/help/journey-migration/getting-started.md) | オンプレミスまたはAdobeが管理するAEMのインストールから完全なクラウドベースのAEMas a Cloud Serviceに移行し、その多くのメリットを紹介する手順を、ここから始めてください。 |
+| [AEM as a Cloud Service 移行ジャーニー](/help/journey-migration/getting-started.md) | オンプレミスまたはアドビが管理する AEM インストールから完全なクラウドベースの AEM as a Cloud Service に移行し、その多くのメリットを導入する方法について、ステップバイステップのジャーニーを参照するには、ここから始めてください。 |
 
-新しいジャーニーが利用可能になっていないか、定期的に確認してください。
+利用可能な新しいジャーニーがないか、定期的に確認してください。

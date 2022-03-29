@@ -1,18 +1,18 @@
 ---
-title: AEM as a Cloud Serviceリリース 2022.3.0 の移行ツールのリリースノート
-description: AEM as a Cloud Serviceリリース 2022.3.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service Release 2022.3.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service Release 2022.3.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+exl-id: ab43605d-d46e-43de-b71f-fab610609550
+source-git-commit: 59baf9c6f726580986d62da2805a8af1da9bb338
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 13%
+ht-degree: 27%
 
 ---
 
+# AEM as a Cloud Service Release 2022.3.0 の移行ツールのリリースノート {#release-notes}
 
-# AEM as a Cloud Serviceリリース 2022.3.0 の移行ツールのリリースノート {#release-notes}
-
-このページでは、AEM as a Cloud Service 2022.3.0 の移行ツールのリリースノートの概要を説明します。
+このページでは、AEM as a Cloud Service 2022.3.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
@@ -27,7 +27,7 @@ ht-degree: 13%
 * Oak インデックスの定義に関連する問題を特定し、AEM as a Cloud Serviceとの非互換性を検出する機能。
 * Externalizer 設定の使用方法を検出し、レポートする機能。 AEMas a Cloud Serviceの Externalizer 設定は Cloud Manager で設定されるので、互換性を維持するには、既存の Externalizer 設定をリファクタリングする必要があります。
 
-### バグ修正 {#bug-fixes-bpa}
+### バグの修正 {#bug-fixes-bpa}
 
 * 一部のシナリオでは、FormsSelectiveFeaturesAnalysis がアサーションエラーをスローしたため、BPA が実行に失敗しました。 この問題が修正されました。
 * BPA は、WRK パターンに関連する結果を CRITICAL ではなく MAJOR として報告していました。 この問題が修正されました。

@@ -1,6 +1,6 @@
 ---
 title: AEM 6.5 Forms と AEM 6.4 Forms から  [!DNL AEM Forms] as a Cloud Service 環境に移行する方法
-description: からの移行 [!DNL AEM Forms] オンプレミス環境から [!DNL AEM Forms] as a Cloud Service環境
+description: ' [!DNL AEM Forms] オンプレミス環境から [!DNL AEM Forms] as a Cloud Service 環境への移行'
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
@@ -10,7 +10,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 * クラウドの設定情報
 * コードエディターのスクリプトは再利用可能な関数に変換され、ビジュアルルールに適用されます。
 
-## 検討事項 {#consideration}
+## 考慮事項 {#consideration}
 
 * このサービスは、OSGi 環境上の [!DNL AEM Forms] のみからコンテンツを移行するのに役立ちます。JEE 上の [!DNL AEM Forms] からクラウドサービス環境へのコンテンツの移行はサポートされていません。
 
@@ -39,9 +39,9 @@ ht-degree: 97%
    * [ユーザーマッピングツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#cloud-migration)：ユーザーマッピングツールは、対応するアドビの IMS ユーザーアカウントでユーザーをマッピングするのに役立ちます。
    * [コンテンツ転送ツール](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration)：コンテンツ転送ツールは、コンテンツを準備して、既存の環境からクラウドサービス環境に転送するのに役立ちます。
 * [!DNL AEM Forms] as a Cloud Service およびローカル [!DNL AEM Forms] 環境の管理者権限を持つアカウント。
-* [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からベストプラクティスアナライザー、コンテンツ転送ツール、[!DNL AEM Forms] 移行ユーティリティをダウンロードしてインストールする
+* [ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) からベストプラクティスアナライザー、コンテンツ転送ツール、[!DNL AEM Forms] 移行ユーティリティをダウンロードしてインストールする
 
-* [ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja#cloud-migration)ツールを実行し、報告された問題を修正します。
+* [ベストプラクティスアナライザー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=ja#cloud-migration) ツールを実行し、報告された問題を修正します。
 
 <!-- * Download the latest [compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases) for your [!DNL AEM Forms] version. -->
 
@@ -49,7 +49,7 @@ ht-degree: 97%
 
 次の手順を実行して、[!DNL AEM Forms] アセットをクラウドサービスと互換性を持たせ、[!DNL AEM] as a Cloud Service 環境に転送します。
 
-1. 既存の [!DNL AEM Forms] 環境の[クローン](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487)を作成します。
+1. 既存の [!DNL AEM Forms] 環境の[クローン](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/td-p/363487?profile.language=ja)を作成します。
 
    コンテンツ転送ツールと移行ユーティリティを実行するには、必ずクローン環境を使用してください。コンテンツ転送ツールと移行ユーティリティで、コンテンツとアセットに変更をいくつか加えます。したがって、実稼働環境上でコンテンツ転送ツールと移行ユーティリティを実行しないでください。
 

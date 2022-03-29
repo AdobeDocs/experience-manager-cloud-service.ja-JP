@@ -55,7 +55,7 @@ ht-degree: 100%
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>アダプティブフォーム<!-- or interactive communications -->テンプレートの作成とプレビュー</li> 
+     <li>アダプティブフォーム <!-- or interactive communications --> テンプレートの作成とプレビュー</li> 
     </ul> </td> 
   </tr>
   <tr>

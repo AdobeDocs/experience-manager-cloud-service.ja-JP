@@ -5,13 +5,13 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # [!DNL Azure] ストレージの設定 {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] データ統合](data-integration.md)では、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデルを使用して、[!DNL Azure] サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。例えば、次の操作が可能です。
+[[!DNL Experience Manager Forms] データ統合](data-integration.md)では、フォームを [!DNL Azure] ストレージサービスと統合するための [!DNL Azure] ストレージ設定を提供します。フォームデータモデルを使用して、[!DNL Azure] サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。次に例を示します。
 
 * アダプティブフォームの送信時に、データを [!DNL Azure] に書き込む。
 * フォームデータモデル内で定義されているカスタムエンティティを使用して、データを [!DNL Azure] に書き込む（またはその逆の動作）。
@@ -97,4 +97,4 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->Azure では Blob 1 つにつき 10 個のタグのみが許可され、検索キーとしてマークされたプロパティ値はハッシュ後に Azure インデックスタグに保存されるので、Azure エンティティごとに 10 個の検索キーのみが許可されます。
+>Azure では BLOB ごとに 10 個のタグしか許可されておらず、検索キーとしてマークされたプロパティ値はハッシュ後に Azure インデックスタグに格納されるため、Azure エンティティごとに許可される検索キーは 10 個のみです。

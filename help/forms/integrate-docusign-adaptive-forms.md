@@ -38,7 +38,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
 標準のカスタム送信アクションと DocuSign Cloud Service を設定するには、次の手順を実行します。
 
-1. [AEM Forms as a Cloud Service プロジェクトのクローンを作成](setup-local-development-environment.md#forms-cloud-service-local-development-environment)するか、[AEM アーキタイプ 27](https://github.com/adobe/aem-project-archetype) 以降に基づいて [!DNL Experience Manager Forms] as a [!DNL Cloud Service] プロジェクトを作成します。AEM アーキタイプに基づいて [!DNL Experience Manager Forms] as a [!DNL Cloud Service] プロジェクトを作成するには：
+1. [AEM Forms as a Cloud Service プロジェクトのクローンを作成](setup-local-development-environment.md#forms-cloud-service-local-development-environment) するか、[AEM アーキタイプ 27](https://github.com/adobe/aem-project-archetype) 以降に基づいて [!DNL Experience Manager Forms] as a [!DNL Cloud Service] プロジェクトを作成します。AEM アーキタイプに基づいて [!DNL Experience Manager Forms] as a [!DNL Cloud Service] プロジェクトを作成するには：
    </br>コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。
 
    ```shell
@@ -124,7 +124,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
 上記の前提条件の準備が完了したら、以下の手順に従って、オーサーインスタンス上で [!DNL DocuSign] と [!DNL AEM Forms] を統合します。
 
-1. **[!UICONTROL ツール]**（![ハンマーアイコン](assets/hammer.png)）／**[!UICONTROL クラウドサービス]**／**[!UICONTROL DocuSign]** に移動し、設定をホストするフォルダーを選択します。
+1. **[!UICONTROL ツール]** （![ハンマーアイコン](assets/hammer.png)）／**[!UICONTROL クラウドサービス]**／**[!UICONTROL DocuSign]** に移動し、設定をホストするフォルダーを選択します。
 
 1. 設定ページで「**[!UICONTROL 作成]**」をタップして、AEM Forms 内に [!DNL DocuSign] の設定を作成します。
 1. **[!UICONTROL DocuSign 設定を作成]**&#x200B;ページの「**[!UICONTROL 一般]**」タブで、設定の「**[!UICONTROL 名前]**」を指定して「**[!UICONTROL 次へ]**」をタップします。オプションで、「**[!UICONTROL タイトル]**」も指定できます。
@@ -138,7 +138,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
    1. 上記の手順でコピーした URL を「**[!UICONTROL リダイレクト URL]**」ボックスに追加して、「**[!UICONTROL 保存]**」をクリックします。
    1. 統合キーと秘密鍵をメモしておきます。
 
-   [!DNL DocuSign] アプリケーションの OAuth 設定を指定しキーを取得するための手順について詳しくは、[アプリケーションの OAuth 設定の指定方法](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys)に関する開発者ドキュメントを参照してください。
+   [!DNL DocuSign] アプリケーションの OAuth 設定を指定しキーを取得するための手順について詳しくは、 [アプリケーションの OAuth 設定の指定方法](https://support.docusign.com/guides/ndse-admin-guide-api-and-keys) に関する開発者ドキュメントを参照してください。
 
 1. **[!UICONTROL DocuSign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL OAuth URL]**」フィールドに以下のデフォルトの URL が表示されます。
 
@@ -161,7 +161,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 既存のアダプティブフォーム用に [!DNL DocuSign] を有効にするか、[!DNL DocuSign] 対応アダプティブフォームを作成できます。次のいずれかの操作を行います。
 
 - [ [!DNL DocuSign]  対応のアダプティブフォームを作成する](#create-an-adaptive-form-for-docusign)
-- [既存のアダプティブフォームで  [!DNL DocuSign]  を有効にする](#editafsign)
+- [既存のアダプティブフォームで [!DNL DocuSign] を有効にする](#editafsign)
 
 #### DocuSign 対応のアダプティブフォームの作成 {#create-an-adaptive-form-for-docusign}
 
@@ -173,7 +173,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
    1. アダプティブフォームの&#x200B;**[!UICONTROL 名前]**&#x200B;と&#x200B;**[!UICONTROL タイトル]**&#x200B;を指定します。
 
-   1. [ [!DNL DocuSign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した[設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)を選択します。
+   1. [ [!DNL DocuSign]  を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
    設定コンテナには、お使いの環境用に設定された [!DNL DocuSign] クラウドサービスが含まれています。これらのサービスは、アダプティブフォームエディターで選択できます。
 
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。
@@ -199,7 +199,7 @@ AEM Forms as a Cloud Service には DocuSign 用のカスタム送信アクシ�
 
 1. **[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]**&#x200B;アイコンをタップします。
-1. 「**[!UICONTROL 基本]**」タブで、[!DNL DocuSign] を [!DNL AEM Forms] と統合するときに作成した[設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms)を選択します。
+1. 「**[!UICONTROL 基本]**」タブで、[!DNL DocuSign] を [!DNL AEM Forms] と統合するときに作成した [設定コンテナ](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) を選択します。
 1. 「**[!UICONTROL フォームモデル]**」タブで、次のいずれかのオプションを選択します。
 
    - カスタムフォームテンプレートがあり、そのフォームテンプレートに基づいてレコードのドキュメントが必要な場合は、「**[!UICONTROL フォームテンプレートをレコードのドキュメントテンプレートとして関連付ける]**」オプションを選択し、「レコードのドキュメントテンプレート」を選択します。このオプションを使用すると、署名用に送信されたドキュメントには、関連付けられたフォームテンプレートに基づくフィールドのみが表示されます。アダプティブフォームのすべてのフィールドは表示されません。

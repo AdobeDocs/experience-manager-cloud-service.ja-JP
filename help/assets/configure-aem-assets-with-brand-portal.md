@@ -8,32 +8,32 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: f1c95dd27857085a0a95a896efd2f66af346b75a
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Experience Manager Assets と Brand Portal の連携の設定 {#configure-aem-assets-with-brand-portal}
+# Brand Portal で Experience Manager Assets を設定 {#configure-aem-assets-with-brand-portal}
 
 Adobe Experience Manager Assets Brand Portal を設定すると、承認済みのブランドアセットを Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスから Brand Portal に公開し、Brand Portal ユーザーに配信できます。
 
 ## Cloud Manager を使用して Brand Portal をライセンス認証する {#activate-brand-portal}
 
-Cloud Manager ユーザーが Experience Manager Assets as a 用のBrand Portalをアクティベートします。 [!DNL Cloud Service] インスタンス。 アクティベーションワークフローは、バックエンドに必要な設定（認証トークン、IMS 設定および Brand Portal クラウドサービス）を作成し、Cloud Manager の Brand Portal テナントのステータスを反映します。Brand Portalをアクティベートすると、Experience Manager Assets ユーザーは、アセットをBrand Portalに公開し、Brand Portalユーザーに配布できます。
+Cloud Manager ユーザーは、Experience Manager Assets の Brand Portal を [!DNL Cloud Service] インスタンスとしてアクティブ化します。アクティブ化のワークフローを行うと、バックエンドで必要な設定（認証トークン、IMS 設定および Brand Portal クラウドサービス）が作成され、Cloud Manager の Brand Portal テナントのステータスが反映されます。Brand Portal をアクティブ化すると、Experience Manager Assets のユーザーが Brand Portal にアセットを公開して、Brand Portal ユーザーに配信できるようになります。
 
 **前提条件**
 
-Experience Manager Assets as a でBrand Portalをアクティベートするには、以下が必要です。 [!DNL Cloud Service] インスタンス：
+AEM Assets as a [!DNL Cloud Service] インスタンスで Brand Portal をアクティブ化するには、次のものが必要です。
 
-* Experience Manager Assets as a の起動および実行 [!DNL Cloud Service] インスタンス。
+* 稼働中の Experience Manager Assets as a [!DNL Cloud Service] インスタンス。
 * Cloud Manager 製品のプロファイルに割り当てられている、Cloud Manager にアクセスできるユーザー。詳しくは、[Cloud Manager へのアクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=ja#accessing-cloud-manager)を参照してください。
 
 >[!NOTE]
 >
->Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスは、1 つのBrand Portalテナントにのみ接続できる権利を持っています。 Experience Manager Assets as a 用に複数の環境（開発、実稼動、ステージ）を持つことができます [!DNL Cloud Service] インスタンス。Brand Portalは 1 つの環境でアクティブ化されます。
+>Experience Manager Assets as a [!DNL Cloud Service] インスタンスが接続できる Brand Portal テナントは 1 つだけです。Experience Manager Assets as [!DNL Cloud Service] インスタンスには複数の環境（開発、実稼働、ステージ）を設定できますが、その中で Brand Portal をアクティブ化できるのは 1 つの環境です。
 
-**Brand Portal のライセンス認証手順**
+**Brand Portal をアクティブ化する手順**
 
-Experience Manager Assets as a の環境を作成する際に、Brand Portalをアクティベートできます [!DNL Cloud Service] インスタンス、または個別に。 環境が既に作成され、Brand Portal をライセンス認証する必要があるとします。
+Brand Portal は、Experience Manager Assets as a [!DNL Cloud Service] インスタンスの環境を作成している間でも、個別でもアクティブ化できます。環境が既に作成され、Brand Portal をライセンス認証する必要があるとします。
 
 1. Adobe Cloud Manager にログインし、「**[!UICONTROL 環境]**」に移動します。
 
@@ -54,17 +54,17 @@ Experience Manager Assets as a の環境を作成する際に、Brand Portalを�
 
 >[!NOTE]
 >
->Brand Portalは、Experience Manager Assets as a と同じ IMS 組織でアクティブ化する必要があります [!DNL Cloud Service] インスタンス。
+>Brand Portal は、Experience Manager Assets as [!DNL Cloud Service] インスタンスと同じ IMS 組織でアクティブ化する必要があります。
 >
->既存のBrand Portalクラウド設定 ([Adobe開発者コンソールを使用して手動で設定](#manual-configuration)) を使用します。 [!DNL Cloud Service] インスタンスが別の IMS 組織 (org2-new) 用に設定されている場合、Cloud Manager からBrand Portalをアクティブ化すると、Brand Portal IMS 組織がにリセットされます。 `org2-new`. 手動で設定したクラウド設定は `org1-existing` は Experience Manager Assets オーサーインスタンスに表示されますが、Cloud Manager からBrand Portalをアクティベートした後は使用されなくなります。
+>Brand Portal のクラウド設定（[Adobe Developer Console を使用して手動で設定](#manual-configuration)）がすでに IMS 組織（org1-existing）にあり、Experience Manager Assets as a [!DNL Cloud Service] インスタンスが別の IMS 組織（org2-new）に設定されている場合、Cloud Manager から Brand Portal をアクティブ化すると Brand Portal の IMS 組織は `org2-new` に再設定されます。`org1-existing` で手動で設定したクラウド設定は、Experience Manager Assets のオーサーインスタンスに表示されますが、Cloud Manager で Brand Portal をアクティブ化すると使用されなくなります。
 >
->既存のBrand Portalクラウド設定および Experience Manager Assets as a [!DNL Cloud Service] インスタンスが同じ IMS 組織 (org1) を使用している場合は、Cloud Manager からBrand Portalをアクティベートする必要があります。
+>既存の Brand Portal クラウド設定と Experience Manager Assets as a [!DNL Cloud Service] インスタンスが同じ IMS 組織（org1）を使用している場合は、Cloud Manager から Brand Portal をアクティブ化するだけで済みます。
 >
 >自動生成された設定は変更しないでください。
 
-**関連トピック**:
+**関連トピック**：
 
-* [Experience Manager Assets でのユーザーと役割の追加as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)
+* [Experience Manager Assets as a Cloud Service にユーザーと役割を追加](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)
 
 * [Cloud Manager での環境の管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#adding-environments)
 
@@ -90,7 +90,7 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
 **接続をテストします。**
 
-次の手順を実行して、Experience Manager Assets as a 間の接続を検証します。 [!DNL Cloud Service] インスタンスとBrand Portalテナント：
+次の手順を実行して、Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの接続を検証します。
 
 1. Experience Manager Assets にログインします。
 
@@ -117,7 +117,7 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
 
    ![](assets/test-bpconfig3.png)
 
-1. Experience Manager Assets as a 間の接続を検証するには、以下を実行します。 [!DNL Cloud Service] Brand Portal、 **[!UICONTROL 接続をテスト]** アイコン
+1. Experience Manager Assets as a [!DNL Cloud Service] と Brand Portal の間の接続を確認するには、「**[!UICONTROL 接続をテスト]**」アイコンをクリックします。
 
    ![](assets/test-bpconfig4.png)
 
@@ -127,25 +127,25 @@ Brand Portal テナントのデフォルト URL は `https://<tenant-id>.brand-p
    >
    >配布エージェントを無効にしないでください。無効にすると、（実行中のキュー内の）アセットの配布が失敗する可能性があります。
 
-Adobe Experience Manager Assets as a 間の接続を検証するには、以下を実行します。 [!DNL Cloud Service] インスタンスとBrand Portalテナントで、Experience Manager Assets からBrand Portalにアセットを公開します。 接続に成功すると、公開されたアセットが Brand Portal インターフェイスに表示されます。
+Experience Manager Assets as a [!DNL Cloud Service] インスタンスと Brand Portal テナントの間の接続を検証するには、Experience Manager Assets から Brand Portal にアセットを公開します。接続に成功すると、公開されたアセットが Brand Portal インターフェイスに表示されます。
 
 
 次の操作が可能になっています。
 
-* [Experience Manager Assets からBrand Portalへのアセットの公開](publish-to-brand-portal.md)
-* [Experience Manager Assets からBrand Portalへのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
-* [Experience Manager Assets からBrand Portalへのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
-* [Brand Portalから Experience Manager Assets へのアセットの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja) - Brand Portalでのアセットソーシング
+* [Experience Manager Assets から Brand Portal へのアセットの公開](publish-to-brand-portal.md)
+* [Experience Manager Assets から Brand Portal へのフォルダーの公開](publish-to-brand-portal.md#publish-folders-to-brand-portal)
+* [Experience Manager Assets から Brand Portal へのコレクションの公開](publish-to-brand-portal.md#publish-collections-to-brand-portal)
+* [Brand Portal から Experience Manager Assets へのアセットの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=ja) - Brand Portal でのアセットソーシング
 * [Brand Portal へのプリセット、スキーマ、ファセットの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=ja)
 * [Brand Portal へのタグの公開](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=ja)
 
-詳しくは、[Brand Portal ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja)を参照してください。
+詳しくは、 [Brand Portal ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=ja) を参照してください。
 
 **配布ログ**
 
 配布エージェントのログで、アセット発行ワークフローを監視できます。
 
-次に、Experience Manager Assets からBrand Portalにアセットを公開し、ログを確認します。
+Experience Manager Assets から Brand Portal にアセットを公開し、ログを確認します。
 
 1. 「**設定のテスト**」節で示した手順（1 ～ 4）に従い、配布エージェントページに移動します。
 1. 「**[!UICONTROL ログ]** 」をクリックして、処理ログとエラーログを表示します。
@@ -162,54 +162,54 @@ Adobe Experience Manager Assets as a 間の接続を検証するには、以下�
 **配布エージェントの要求**：
 
 * DSTRQ2（リクエスト 2）：アセットの公開リクエストがトリガーされます。
-* DSTRQ3（リクエスト 3）:このシステムは、Experience Manager Assets フォルダー（アセットが存在する）の公開と、Brand Portalでのフォルダーの複製をトリガーします。
+* DSTRQ3（リクエスト 3）：システムは、アセットが存在する Experience Manager Assets フォルダーを公開する別の要求をトリガーし、そのフォルダーを Brand Portal に複製します。
 
 **配布エージェントの応答**：
 
 * queue-bpdistributionagent0（DSTRQ2）：アセットが Brand Portal に公開されます。
-* queue-bpdistributionagent0 (DSTRQ3):システムは、Brand Portalの Experience Manager Assets フォルダー（アセットを含む）を複製します。
+* queue-bpdistributionagent0（DSTRQ3）：システムは、アセットが存在する Experience Manager Assets フォルダーを Brand Portal に複製します。
 
-上記の例では、追加の要求と応答がトリガーされます。アセットが初めて発行されたので、Brand Portal で親フォルダー（追加パス）が見つからなかったため、アセットが発行された Brand Portal で同じ名前の親フォルダーを作成する追加の要求をトリガーします。
+上記の例では、追加の要求と応答がトリガーされます。アセットが初めて公開されたため、システムは Brand Portal で親フォルダー（パスの追加）を見つけることができず、アセットが公開されている Brand Portal で同じ名前の親フォルダーを作成する追加リクエストをトリガーしました。
 
 >[!NOTE]
 >
->親フォルダーがBrand Portalに存在しない場合や、Experience Manager Assets で変更された場合には、追加のリクエストが生成されます。
+>親フォルダーが Brand Portal に存在しない場合や Experience Manager Assets で変更された場合には、追加のリクエストが生成されます。
 
-Experience Manager Assets as a Brand Portalをアクティブ化する自動化ワークフロー [!DNL Cloud Service]を使用すると、Experience Manager Assets を as a として手動で設定する方法が別に存在します [!DNL Cloud Service] Brand Portalでは、Adobe開発者コンソールを使用します。これは、非推奨です。
+Experience Manager Assets as a [!DNL Cloud Service] で Brand Portal をアクティブ化する自動処理ワークフロー以外に、Adobe Developer Console を使用して Brand Portal で Experience Manager Assets as a [!DNL Cloud Service] を手動で設定する方法もありますが、こちらの方法はお勧めしません。
 
 >[!NOTE]
 >
 >Brand Portal テナントのライセンス認証中に問題が発生した場合は、カスタマーサポートにお問い合わせください。
 
-## Adobe 開発者コンソールを使用した手動設定 {#manual-configuration}
+## Adobe Developer Console を使用した手動設定 {#manual-configuration}
 
-次の節では、Experience Manager Assets as a を手動で設定する方法について説明します [!DNL Cloud Service] Brand Portalを使用して開発者コンソールをAdobeする場合
+次の節では、Adobe Developer Console を使用して、Brand Portal で Experience Manager Assets as a [!DNL Cloud Service] を手動で設定する方法について説明します。
 
-以前は、Experience Manager Assets as a [!DNL Cloud Service] は、Adobe開発者コンソールを通じてBrand Portalで手動で設定されました。開発者コンソールは、Brand Portalテナントの認証用のAdobeIdentity Managementサービス (IMS) アカウントトークンを取得します。 この機能を使用するには、Experience Manager Assets とAdobe開発者コンソールの両方の設定が必要です。
+以前は、Experience Manager Assets as a [!DNL Cloud Service] は、Brand Portal で Adobe Developer Console を介して手動で設定されており、Brand Portal テナントの認証のために Adobe Identity Management Services（IMS）アカウントトークンを入手していました。それには、Experience Manager Assets と Adobe Developer Console の両方で設定を行う必要があります。
 
-1. Experience Manager Assets で、IMS アカウントを作成し、公開鍵（証明書）を生成します。
+1. Experience Manager Assets で、IMS アカウントを作成して公開鍵（証明書）を生成します。
 1. Adobe 開発者コンソールで、Brand Portal テナント（組織）用のプロジェクトを作成します。
 1. そのプロジェクトで、公開鍵で API を設定して、サービスアカウント接続を作成します。
 1. サービスアカウント資格情報と JSON Web トーケン（JWT）ペイロード情報を取得します。
 1. Experience Manager Assets で、サービスアカウント資格情報と JWT ペイロードを使用して IMS アカウントを設定します。
-1. Experience Manager Assets で、IMS アカウントとBrand Portalエンドポイント（組織 URL）を使用してBrand Portal Cloud Service を設定します。
-1. Experience Manager Assets からBrand Portalにアセットを公開して、設定をテストします。
+1. Experience Manager Assets で、IMS アカウントと Brand Portal エンドポイント（組織 URL）を使用して Brand Portal クラウドサービスを設定します。
+1. Experience Manager Assets から Brand Portal にアセットを公開して、設定をテストします。
 
 >[!NOTE]
 >
->Adobe Experience Manager Assets as a [!DNL Cloud Service] インスタンスは、1 つのBrand Portalテナントでのみ設定する必要があります。
+>Experience Manager Assets as a [!DNL Cloud Service] インスタンスは、1 つの Brand Portal テナントでのみ設定される必要があります。
 
 **前提条件**
 
-Brand Portalで Experience Manager Assets を設定するには、以下が必要です。
+Brand Portal で Experience Manager Assets を設定するには、以下が必要です。
 
-* Experience Manager Assets as a の起動および実行 [!DNL Cloud Service] インスタンス
+* 稼働中の Experience Manager Assets as a [!DNL Cloud Service] インスタンス
 * Brand Portal テナント URL
 * Brand Portal テナントの IMS 組織に対するシステム管理者権限を持つユーザー
 
 ## 設定の作成 {#create-new-configuration}
 
-指定した順序で次の手順を実行して、Brand Portalと連携する Experience Manager Assets を設定します。
+指定した順序で次の手順を実行して、Brand Portal で Experience Manager Assets を設定します。
 
 1. [公開証明書の取得](#public-certificate)
 1. [サービスアカウント（JWT）接続の作成](#createnewintegration)
@@ -218,7 +218,7 @@ Brand Portalで Experience Manager Assets を設定するには、以下が必�
 
 ### IMS 設定の作成 {#create-ims-configuration}
 
-IMS 設定は、Experience Manager Assets as a を認証します [!DNL Cloud Service] Brand Portalテナントのインスタンス。
+IMS 設定では、Brand Portal テナントで Experience Manager as a [!DNL Cloud Service] インスタンスを認証します。
 
 IMS 設定には、次の 2 つの手順が含まれます。
 
@@ -233,14 +233,14 @@ IMS 設定には、次の 2 つの手順が含まれます。
 1. **ツール**&#x200B;パネルで、**[!UICONTROL セキュリティ]**／**[!UICONTROL Adobe IMS 設定]**&#x200B;に移動します。
 1. Adobe IMS 設定ページで、「**[!UICONTROL 作成]**」をクリックします。**[!UICONTROL Adobe IMS 技術アカウント設定]**&#x200B;ページにリダイレクトされます。デフォルトでは、「**証明書**」タブが開きます。
 1. 「**[!UICONTROL クラウドソリューション]**」ドロップダウンリストで「**[!UICONTROL Adobe Brand Portal]**」を選択します。
-1. 「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の&#x200B;**エイリアス**&#x200B;を指定します。ここで入力したエイリアスが、公開鍵になります。
+1. 「**[!UICONTROL 新しい証明書を作成]**」チェックボックスをオンにして、公開鍵の **エイリアス** を指定します。ここで入力したエイリアスが、公開鍵になります。
 1. 「**[!UICONTROL 証明書を作成]**」をクリックします。「**[!UICONTROL OK]**」をクリックして公開証明書を生成します。
 
    ![証明書を作成](assets/ims-config2.png)
 
-1. **[!UICONTROL 公開鍵をダウンロード]**&#x200B;アイコンをクリックして、公開鍵（CRT）ファイルをローカルマシンに保存します。
+1. **[!UICONTROL 公開鍵をダウンロード]** アイコンをクリックして、公開鍵（CRT）ファイルをローカルマシンに保存します。
 
-   この公開鍵を後で使用して、Brand Portal テナントの API を設定し、Adobe 開発者コンソールでサービスアカウント資格情報を生成が次の値である。
+   この公開鍵は、Brand Portal テナントの API を設定し、Adobe 開発者コンソールでサービスアカウント資格情報を生成するために後で使用します。
 
    ![証明書をダウンロード](assets/ims-config3.png)
 
@@ -248,11 +248,11 @@ IMS 設定には、次の 2 つの手順が含まれます。
 
    「**アカウント**」タブで、Adobe IMS アカウントが作成されます。このアカウントには、Adobe 開発者コンソールで生成されるサービスアカウント資格情報が必要です。このページは開いたままにしておきます。
 
-   新しいタブを開き、[Adobe 開発者コンソールでサービスアカウント（JWT）接続を作成](#createnewintegration)して、IMS アカウントを設定するための資格情報と JWT ペイロードを取得します。
+   新しいタブを開き、 [Adobe 開発者コンソールでサービスアカウント（JWT）接続を作成](#createnewintegration) して、IMS アカウントを設定するための資格情報と JWT ペイロードを取得します。
 
 ### サービスアカウント（JWT）接続の作成 {#createnewintegration}
 
-Adobe 開発者コンソールで、プロジェクトと API を Brand Portal テナント（組織）レベルで設定します。API を設定すると、サービスアカウント（JWT）接続が作成されます。API を設定するには、キーペア（秘密鍵と公開鍵）を生成する方法と、公開鍵をアップロードする方法の 2 とおりがあります。Brand Portalで Experience Manager Assets を設定するには、Experience Manager Assets で公開鍵（証明書）を生成し、その公開鍵をアップロードしてAdobe開発者コンソールで資格情報を作成する必要があります。 これらの資格情報は、Experience Manager Assets で IMS アカウントを設定するために必要です。 IMS アカウントを設定したら、Experience Manager Assets でBrand Portal Cloud Service を設定できます。
+Adobe 開発者コンソールで、プロジェクトと API を Brand Portal テナント（組織）レベルで設定します。API を設定すると、サービスアカウント（JWT）接続が作成されます。API を設定するには、キーペア（秘密鍵と公開鍵）を生成する方法と、公開鍵をアップロードする方法の 2 とおりがあります。Brand Portal で Experience Manager Assets を設定するには、Experience Manager Assets で公開鍵（証明書）を生成し、その公開鍵をアップロードして Adobe 開発者コンソールで資格情報を作成する必要があります。これらの資格情報は、Experience Manager Assets で IMS アカウントを設定するために必要です。IMS アカウントを設定したら、Experience Manager Assets に Brand Portal クラウドサービスを設定できます。
 
 サービスアカウント資格情報と JWT ペイロードを生成するには、次の手順を実行します。
 
@@ -271,7 +271,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 1. **[!UICONTROL API を追加]**&#x200B;ウィンドウで、「**[!UICONTROL AEM Brand Portal]**」を選択し、「**[!UICONTROL 次へ]**」をクリックします。
 
-   Experience Manager Brand Portalサービスにアクセスできることを確認します。
+   Experience Manager Brand Portal サービスにアクセスできることを確認します。
 
 1. **[!UICONTROL API を設定]**&#x200B;ウィンドウで、「**[!UICONTROL 公開鍵をアップロード]**」をクリックします。次に、「**[!UICONTROL ファイルを選択]**」をクリックし、[公開証明書の取得](#public-certificate)のセクションでダウンロードした公開鍵（.crt ファイル）をアップロードします。
 
@@ -299,7 +299,7 @@ Adobe 開発者コンソールで、プロジェクトと API を Brand Portal �
 
 1. 「**[!UICONTROL JWT を生成]**」タブに移動し、**[!UICONTROL JWT ペイロード]**&#x200B;情報をコピーします。
 
-これで、クライアント ID（API キー）、クライアントの秘密鍵、JWT ペイロードを [IMS アカウントの設定](#create-ims-account-configuration) （Experience Manager Assets の）
+これで、クライアント ID（API キー）、クライアントの秘密鍵、JWT ペイロードを使用して、Experience Manager Assets に [IMS アカウントを設定](#create-ims-account-configuration) できるようになりました。
 
 <!--
 1. Click **[!UICONTROL Create Integration]**.
@@ -386,7 +386,7 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 1. 設定の&#x200B;**[!UICONTROL タイトル]**&#x200B;を入力します。
 
-   [IMS アカウントの設定](#create-ims-account-configuration)時に作成した IMS 設定を選択します。
+   [IMS アカウントの設定](#create-ims-account-configuration) 時に作成した IMS 設定を選択します。
 
    「**[!UICONTROL サービス URL]**」に、Brand Portal テナント（組織）URL を入力します。
 
@@ -394,9 +394,9 @@ Brand Portal Cloud Service を設定するには、次の手順を実行しま�
 
 1. 「**[!UICONTROL 保存して閉じる]**」をクリックします。クラウド設定が作成されます。
 
-   Experience Manager Assets as a [!DNL Cloud Service] インスタンスがBrand Portalテナントで設定されました。
+   これで、Experience Manager Assets as [!DNL Cloud Service] インスタンスが Brand Portal で設定されました。
 
-これで、配布エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
+これで、配信エージェントを確認し、Brand Portal にアセットを公開することで、設定をテストできます。
 
 <!--
 ### Test configuration {#test-configuration}

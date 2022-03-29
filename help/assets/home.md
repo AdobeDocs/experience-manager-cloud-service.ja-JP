@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Assets] as a  [!DNL Cloud Service]  のガイド"'
-description: '"[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] セルフヘルプリソースおよびドキュメントリンク»'
+title: '"[!DNL Assets] as a [!DNL Cloud Service] のガイド"'
+description: '"[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] に関するセルフヘルプリソースおよびドキュメントリンク"'
 landing-page-description: Adobe Experience Manager Assets as a Cloud Service の使用および管理方法について説明します。
 feature: Asset Management
 role: User,Leader
@@ -8,7 +8,7 @@ exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,6 +47,6 @@ Adobe [!DNL Experience Manager Assets] as a [!DNL Cloud Service] には次のセ
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Adobe Experience Manager as a  [!DNL Cloud Service]  のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
+* [Adobe Experience Manager as a [!DNL Cloud Service] のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#recommended/solutions/experience-manager)
-* [[!DNL Experience Manager] コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=ja)
+* [[!DNL Experience Manager] コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)

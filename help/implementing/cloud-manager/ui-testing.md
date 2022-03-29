@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 49%
 
 >[!NOTE]
 > このページで説明する UI テストを、2021 年 2 月 10 日より前に作成されたステージパイプラインと実稼動パイプラインで使用するには更新が必要となります。
-> 詳しくは、 [Cloud Manager の CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) パイプラインの設定について詳しくは、を参照してください。
+> パイプラインの設定について詳しくは、 [Cloud Manager の CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
 
 ## 概要 {#custom-ui-testing}
 
@@ -165,7 +165,7 @@ Docker ビルドコンテキストを生成するには、次の処理を行う 
 
 Docker ビルドコンテキストを含むアーカイブは、Cloud Manager によって自動的に取得され、デプロイメントパイプライン中のテストを含む Docker イメージが作成されます。 最終的に、Cloud Manager は Docker イメージを実行して、アプリケーションに対する UI テストを実行します。
 
-ビルドでは、0 または 1 つのアーカイブが生成されます。 アーカイブがゼロの場合、テストステップはデフォルトで合格します。 ビルドで複数のアーカイブが生成される場合、どのアーカイブが非決定的に選択されます。
+ビルドでは、0 または 1 つのアーカイブが生成されます。アーカイブがゼロの場合、テストステップはデフォルトで合格します。 ビルドで複数のアーカイブが生成される場合、どのアーカイブが選択されるかは非決定的です。
 
 ## UI テストの書き込み {#writing-ui-tests}
 

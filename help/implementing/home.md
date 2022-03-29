@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の実装
 description: Adobe Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: 開発およびデプロイメントに関するトピックなど、AEM as a Cloud Service のデプロイメントをカスタマイズする方法について学習します。
+landing-page-description: AEM as a Cloud Service のデプロイメントをカスタマイズする方法を、開発とデプロイメントに関するトピックを交えて説明します。
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
@@ -22,7 +22,7 @@ ht-degree: 100%
 * [ヘッドレスデベロッパージャーニー](/help/journey-headless/developer/overview.md)
 * [AEM as a Cloud Service 上の Dispatcher](dispatcher/overview.md)
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience Manager as a Cloud Service のガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -48,5 +48,5 @@ ht-degree: 100%
 * [Cloud Manager のドキュメント](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#home)
+* [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)

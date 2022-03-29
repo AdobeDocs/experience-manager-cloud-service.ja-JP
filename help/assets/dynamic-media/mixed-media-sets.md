@@ -7,7 +7,7 @@ exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ ht-degree: 97%
 
 1. [アセットをアップロードします](#uploading-assets)。
 
-   まずは混在メディアセット用の画像およびビデオをアップロードします。必要に応じて、[画像セット](/help/assets/dynamic-media/image-sets.md)と[スピンセット](/help/assets/dynamic-media/spin-sets.md)を作成します。ユーザーは混在メディアセットビューアで画像をズームできるので、画像を選択する際には必ずズームを考慮してください。最大サイズで 2,000 ピクセル以上の画像を使用してください。
+   まずは混在メディアセット用の画像およびビデオをアップロードします。必要に応じて、 [画像セット](/help/assets/dynamic-media/image-sets.md) と [スピンセット](/help/assets/dynamic-media/spin-sets.md) を作成します。ユーザーは混在メディアセットビューアで画像をズームできるので、画像を選択する際には必ずズームを考慮してください。最大サイズで 2,000 ピクセル以上の画像を使用してください。
 
-   詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) 混在メディアセットでサポートされる形式のリスト
+   混在メディアセットでサポートされる形式のリストについては、 [Dynamic Media - サポートされているラスター画像形式](/help/assets/file-format-support.md#image-support-dynamic-media) を参照してください。
 
 1. [混在メディアセットを作成します](#creating-mixed-media-sets)。
 
-   アセットページで混在メディアセットを作成するには、**[!UICONTROL 作成]**／**[!UICONTROL 混在メディアセット]**&#x200B;に移動し、セットの名前を付け、アセットを選択し、さらに画像の表示順を選択します。
+   アセットページで混在メディアセットを作成するには、 **[!UICONTROL 作成]**／**[!UICONTROL 混在メディアセット]** に移動し、セットの名前を付け、アセットを選択し、さらに画像の表示順を選択します。
 
    [セレクターの操作](/help/assets/dynamic-media/working-with-selectors.md)を参照してください。
 
@@ -75,7 +75,7 @@ ht-degree: 97%
 
 また、混在メディアセットにスピンセットまたは画像セットを追加する場合は、それらのセットも作成します。
 
-詳しくは、 [Dynamic Media — サポートされるラスターイメージ形式](/help/assets/file-format-support.md#image-support-dynamic-media) 混在メディアセットでサポートされる形式のリスト
+混在メディアセットでサポートされる形式のリストについては、 [Dynamic Media - サポートされるラスター画像形式](/help/assets/file-format-support.md#image-support-dynamic-media) を参照してください。
 
 ## 混在メディアセットの作成 {#creating-mixed-media-sets}
 
@@ -85,7 +85,7 @@ ht-degree: 97%
 
 **混在メディアセットを作成するには：**
 
-1. Assets で、混在メディアセットを作成する場所に移動し、**[!UICONTROL 作成]**／**[!UICONTROL 混在メディアセット]**&#x200B;を選択します。アセットを格納しているフォルダー内からセットを作成することもできます。混在メディアセットエディターが表示されます。
+1. Assets で、混在メディアセットを作成する場所に移動し、 **[!UICONTROL 作成]**／**[!UICONTROL 混在メディアセット]** を選択します。アセットを格納しているフォルダー内からセットを作成することもできます。混在メディアセットエディターが表示されます。
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
@@ -133,8 +133,8 @@ ht-degree: 97%
 
 1. 次のいずれかの操作を行います。
 
-   * 混在メディアセットアセットの上にマウスポインターを置き、**[!UICONTROL 編集]**（鉛筆アイコン）を選択します。
-   * 混在メディアセットアセットの上にマウスポインターを置き、**[!UICONTROL 選択]**（チェックマークアイコン）を選択してからツールバーの「**[!UICONTROL 編集]**」を選択します。
+   * 混在メディアセットアセットの上にマウスポインターを置き、 **[!UICONTROL 編集]** （鉛筆アイコン）を選択します。
+   * 混在メディアセットアセットの上にマウスポインターを置き、 **[!UICONTROL 選択]** （チェックマークアイコン）を選択してからツールバーの「**[!UICONTROL 編集]**」を選択します。
 
    * 混在メディアセットアセットを選択し、ツールバーの「**[!UICONTROL 編集]**」（鉛筆アイコン）を選択します。
 

@@ -72,7 +72,7 @@ Adobe Experience Manager （AEM）as a Cloud Service では、AEM GraphQL API �
 
 つまり、アプリケーションで使用する構造化コンテンツのヘッドレス配信をプロジェクトで実現できることになります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 これで、概念と用語を説明したので、次のステップは [AEM でのヘッドレス向けコンテンツモデリングの基本について](basics.md)です。
 

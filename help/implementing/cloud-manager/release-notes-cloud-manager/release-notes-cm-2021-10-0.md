@@ -15,12 +15,11 @@ ht-degree: 100%
 このページでは、AEM as a Cloud Service Release 2021.10.0 Cloud Manager のリリースノートの概要を説明しています。
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、 [こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja) をクリックしてください。
 
 ## リリース日 {#release-date}
 
 AEM as a Cloud Service 2021.10.0 の Cloud Manager のリリース日は 2021年10月14日（PT）です。
-
 
 
 ### 新機能 {#what-is-new}
@@ -45,7 +44,7 @@ AEM as a Cloud Service 2021.10.0 の Cloud Manager のリリース日は 2021年
 
 * 「移動先」の選択オプションが無効になっている場合のプログラムカードのツールヒントがわかりやすくなりました。「実稼動環境が が存在しません。」と表示されるようになりました。
 
-### バグ修正 {#bug-fixes}
+### バグの修正 {#bug-fixes}
 
 * アドビスタッフがお客様の環境をリストアする場合に、環境が完全に動作可能になる前にリストアが完了したと見なされることが稀にありました。
 

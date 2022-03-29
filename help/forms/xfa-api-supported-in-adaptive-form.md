@@ -1,5 +1,5 @@
 ---
-title: XDP ベースのアダプティブフォームでの XFA のサポート
+title: XDP ベースのアダプティブフォームにおける XFA のサポート
 seo-title: XFA support in XDP-based Adaptive Forms
 description: アダプティブフォームでサポートされる XFA イベント、プロパティ、スクリプト、検証をリストします。
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# XDP ベースのアダプティブフォームでの XFA のサポート{#xfa-support-in-xdp-based-adaptive-forms}
+# XDP ベースのアダプティブフォームにおける XFA のサポート {#xfa-support-in-xdp-based-adaptive-forms}
 
 ## はじめに {#introduction}
 
@@ -30,7 +30,7 @@ XDP ファイルに基づいてアダプティブフォームが作成される�
 
 この記事では、アダプティブフォームでサポートされる XFA イベント、プロパティ、検証をリストし、アダプティブフォームでこれらを上書きする方法を説明します。
 
-## アダプティブフォームでサポートされる XFA 要素とそのマッピング {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## Adaptive Forms でサポートされる XFA 要素とそれらのマッピング {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### フィールド {#fields}
 
@@ -103,7 +103,7 @@ XDP ファイルを使用してアダプティブフォームを作成すると�
 
 ### プロパティ {#properties}
 
-以下の表に、XDF ファイルで定義された様々な XFA スクリプトがアダプティブフォームでどのように動作するかを示します。
+以下の表に、XDP ファイルで定義された様々な XFA スクリプトがアダプティブフォームでどのように動作するかを示します。
 
 <table>
  <tbody>
@@ -180,7 +180,7 @@ XDP ファイルを使用してアダプティブフォームを作成すると�
 
 ### スクリプト {#scripts}
 
-以下の表に、XDF ファイルで定義された様々な XFA スクリプトがアダプティブフォームでどのように動作するかを示します。
+以下の表に、XDP ファイルで定義された様々な XFA スクリプトがアダプティブフォームでどのように動作するかを示します。
 
 <table>
  <tbody>

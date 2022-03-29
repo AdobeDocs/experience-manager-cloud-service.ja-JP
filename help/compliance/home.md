@@ -1,7 +1,7 @@
 ---
 title: コンプライアンス
-description: ここでは、Experience Manageras a Cloud Service のコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
-landing-page-description: プライバシーやアクセシビリティなど、AEM as a Cloud Service のコンプライアンスの概要については、こちらをご覧ください。
+description: ここでは、Experience Manager as a Cloud Service のコンプライアンスに関する情報を提供するセルフヘルプリソースの一覧を示します。
+landing-page-description: プライバシーやアクセシビリティなど、AEM as a Cloud Service でのコンプライアンスの概要については、まずこちらを参照してください。
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -46,5 +46,5 @@ ht-degree: 100%
 * [コアコンポーネントのドキュメント](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ja)
 * [Cloud Manager のドキュメント](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#home)
+* [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)

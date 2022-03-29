@@ -8,7 +8,7 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 83%
 
 アセットマイクロサービスを使用したアセット変換のハイライトは次のとおりです。
 
-* アドビのアプリケーションおよびサービス（ または PDF など）で生成される主要な [Adobe ファイル形式](#adobe-formats)（[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]、および [!DNL Adobe Acrobat] または PDF。
+* アドビのアプリケーションおよびサービス（または PDF など）で生成される主要な [Adobe ファイル形式](#adobe-formats)（[!DNL Adobe Photoshop]、[!DNL Adobe InDesign]、[!DNL Adobe Illustrator]、[!DNL Adobe XD]、[!DNL Adobe Dimension]、および [!DNL Adobe Acrobat] または PDF。
 * 主要な[イメージングファイル形式](#image-formats)。
 * （Adobe Camera Raw を活用した）各種カメラ（キャノン、ニコン、富士フイルム、オリンパスなどのメーカー）に対応する [Camera Raw ファイル形式。](#camera-raw-formats)
 * Microsoft Office 形式や OpenDocument 形式などの一般的な[ドキュメント形式](#document-formats)。
@@ -71,7 +71,7 @@ ht-degree: 83%
 
 次の 3D 形式がサポートされています。
 
-関連トピック [Dynamic Mediaでの 3D アセットの操作](/help/assets/dynamic-media/assets-3d.md).
+[Dynamic Media での 3D アセット操作](/help/assets/dynamic-media/assets-3d.md) も参照してください。
 
 | 形式 | ストレージ | バージョン管理 | ワークフロー | 公開 | アクセス制御 | サムネールプレビュー | 3D プレビュー | Dynamic Media の配信 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -174,22 +174,22 @@ ht-degree: 83%
 
 ## オーディオおよびビデオの転写用にサポートされる入力形式 {#audio-video-transcription-formats}
 
-* FLV（H.264 および AAC コーデックを使用）(.flv)
-* MXF (.mxf)
-* MPEG2-PS、MPEG2-TS、3GP (.ts、.ps、.3gp、.3gpp、.mpg)
-* Windows Media ビデオ (WMV)/ASF (.wmv, .asf)
-* AVI（非圧縮 8 ビット/10 ビット）(.avi)
-* MP4 (.mp4、.m4a、.m4v)
-* Microsoftデジタルビデオ録画 (DVR-MS) (.dvr-ms)
-* Matroska/WebM (.mkv)
-* WAVE/WAV (.wav)
-* QuickTime (.mov)
+* FLV（H.264 および AAC コーデックを使用）（.flv）
+* MXF（.mxf）
+* MPEG2-PS、MPEG2-TS、3GP（.ts、.ps、.3gp、.3gpp、.mpg）
+* Windows メディアビデオ（WMV）／ASF（.wmv、 .asf）
+* AVI（非圧縮 8 ビット/10 ビット）（.avi）
+* MP4（.mp4、.m4a、.m4v）
+* Microsoft デジタルビデオ録画（DVR-MS）（.dvr-ms）
+* Matroska／WebM（.mkv）
+* WAVE／WAV（.wav）
+* QuickTime（.mov）
 
 ## ヒントと制限事項 {#limitations-and-tips}
 
 * 現在、メタデータ抽出のファイルサイズの上限は約 15 GB です。非常に大きなアセットをアップロードする場合は、メタデータの抽出操作に失敗することがあります。
 
-## Dynamic Media — トランスコードでサポートされる入力ビデオ形式 {#video-dynamic-media-transcoding}
+## Dynamic Media -トランスコードでサポートされる入力ビデオ形式 {#video-dynamic-media-transcoding}
 
 | ビデオファイル拡張子 | コンテナ | 推奨されるビデオコーデック | サポートされないビデオコーデック |
 | --- | --- | --- | --- |
@@ -205,9 +205,9 @@ ht-degree: 83%
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3（v9）、WMV2（v8）、WMV1（v7）、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen（MSS2）、Microsoft Photo Story（WVP2） |
 
-‡このビデオ形式は、Dynamic Mediaのインタラクティブビデオでの使用や、Experience Manager Assetsの Annotation での使用には、まだサポートされていません。
+‡ このビデオ形式は、Dynamic Media のインタラクティブビデオでの使用や、Experience Manager Assets の注釈での使用はまだサポートされていません。
 
-## Dynamic Media — サポートされるドキュメント形式 {#document-support-dynamic-media}
+## Dynamic Media - サポートされるドキュメント形式 {#document-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -215,24 +215,24 @@ ht-degree: 83%
 | INDD | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Dynamic Media — サポートされるラスターイメージ形式 {#image-support-dynamic-media}
+## Dynamic Media - サポートされるラスター画像形式 {#image-support-dynamic-media}
 
 | 形式 | アップロード（入力形式） | 画像プリセットの作成（出力形式） | 動的レンディションのプレビュー | 動的レンディションの配信 | 動的レンディションのダウンロード | この形式をサポートするタイプを設定 |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [画像](/help/assets/dynamic-media/image-sets.md)、 [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md) および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、 [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md) および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、 [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md) および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 | PSD   ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md), [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md)、および [スピン](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [画像](/help/assets/dynamic-media/image-sets.md)、 [混在メディア](/help/assets/dynamic-media/mixed-media-sets.md) および [スピン](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ 結合された画像は PSD ファイルから抽出されます。この画像は [!DNL Adobe Photoshop] によって生成され、PSD ファイルに含まれます。設定によって、結合された画像は実際の画像である場合とそうでない場合があります。
 
-## Dynamic Media — サポートされていないラスターイメージ形式 {#unsupported-raster-image-formats-dm}
+## Dynamic Media - サポートされていないラスター画像形式 {#unsupported-raster-image-formats-dm}
 
-次のラスターイメージファイル形式のサブタイプは、 *not* でサポート [!DNL Dynamic Media]:
+次のラスター画像ファイル形式のサブタイプは、 [!DNL Dynamic Media] でサポートされて *いません*。
 
 * 100 MB を超える IDAT チャンクサイズを持つ PNG ファイル。
 * PSB ファイル。
@@ -241,7 +241,7 @@ ht-degree: 83%
 * 浮動小数点データを持つ TIFF ファイル。
 * Lab カラースペースを持つ TIFF ファイル。
 
-## Dynamic Media — サポートされる 3D ファイル形式 {#support-3d-formats-dynamic-media}
+## Dynamic Media - サポートされる 3D ファイル形式 {#support-3d-formats-dynamic-media}
 
 [サポートされる 3D 形式](/help/assets/file-format-support.md#support-3d-formats)も参照
 

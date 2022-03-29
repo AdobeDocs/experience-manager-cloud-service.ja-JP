@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームのレイアウトの機能
+title: アダプティブフォームのレイアウト機能
 seo-title: Layout capabilities of Adaptive Forms
 description: 各種デバイスごとのアダプティブフォームのレイアウトと外観はレイアウト設定で管理できます。各種レイアウトとレイアウトの適用方法について説明します。
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# アダプティブフォームのレイアウトの機能 {#layout-capabilities-of-adaptive-forms}
+# アダプティブフォームのレイアウト機能 {#layout-capabilities-of-adaptive-forms}
 
 [!DNL Adobe Experience Manager]では、簡単に使用できるアダプティブフォームを作成でき、エンドユーザーに動的なエクスペリエンスを提供します。フォームのレイアウトは、アダプティブフォームでの各項目やコンポーネントの表示方法をコントロールします。
 
@@ -68,7 +68,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![アコーディオンレイアウトを使用したアダプティブフォームの繰り返し可能なパネル](assets/accordion-layout.png)
 
-### [!UICONTROL タブ付きレイアウト - タブを左側に表示 ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL タブ付きレイアウト - タブを左側に表示 ] {#tabbed-layout-tabs-appear-on-the-left}
 
 このレイアウトを使用すると、タブ付きナビゲーションのパネルに&#x200B;**[!UICONTROL アダプティブフォームのパネル]**&#x200B;コンポーネントを配置できます。タブはパネルコンテンツの左側に配置されます。
 
@@ -76,7 +76,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 パネルの左側にタブ表示
 
-### [!UICONTROL タブ付きレイアウト - タブを上に表示] {#tabbed-layout-tabs-appear-on-the-top}
+### [!UICONTROL タブ付きレイアウト - タブを上部に表示] {#tabbed-layout-tabs-appear-on-the-top}
 
 このレイアウトを使用すると、タブ付きナビゲーションのパネルに&#x200B;**[!UICONTROL アダプティブフォームのパネル]**&#x200B;コンポーネントを配置できます。タブはパネルコンテンツの上に配置されます。
 
@@ -96,13 +96,13 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 モバイルレイアウトを使用する場合、![aem6forms_form_menu](assets/rail-icon.svg) アイコンをタップすると、さまざまなフォームパネルにアクセスするためのフォームメニューを使用できます。
 
-### [!UICONTROL フォームのヘッダー部分にパネルタイトルを表示するレイアウト] {#layout-with-panel-titles-in-the-form-header}
+### [!UICONTROL フォームのヘッダーにパネルタイトルを表示するレイアウト] {#layout-with-panel-titles-in-the-form-header}
 
 レイアウトの名称の通り、このレイアウトはナビゲーションメニューおよびナビゲーションバーと併せてパネルのタイトルを表示します。また、このレイアウトではナビゲーションに「進む」アイコンと「戻る」アイコンを使用します。
 
 ![フォームのヘッダー部分にパネルタイトルを表示するモバイルレイアウト](assets/mobile-layout1.png)
 
-### [!UICONTROL フォームのヘッダー部分にパネルタイトルを表示しないレイアウト ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL フォームのヘッダー部分にパネルタイトルを表示しないレイアウト ] {#layout-without-panel-titles-in-the-form-header}
 
 レイアウトの名称の通り、このレイアウトはナビゲーションメニューおよびナビゲーションバーのみ表示し、パネルのタイトルは表示しません。また、このレイアウトではナビゲーションに「進む」アイコンと「戻る」アイコンを使用します。
 

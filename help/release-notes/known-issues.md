@@ -1,19 +1,19 @@
 ---
 title: 既知の問題
-description: Adobe Experience Manager as a Cloud Serviceの既知の問題
+description: Adobe Experience Manager as a Cloud Service の既知の問題
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # 既知の問題 {#known-issues}
 
-この記事では、 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 提供 このリストは、 [!DNL Experience Manager].
+この記事では、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] オファリングの既知の問題を掲載しています。このリストは、[!DNL Experience Manager] が継続的にリリースされるたびに改訂および更新されます。
 
-既知の問題について詳しくは、[サポートまでお問い合わせ](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support)ください。
+既知の問題について詳しくは、 [サポートまでお問い合わせ](https://experienceleague.adobe.com/?lang=ja&amp;support-solution=Experience+Manager#support) ください。
 
 <!-- 
 ## Platform {#platform}
@@ -25,13 +25,13 @@ ht-degree: 33%
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-の既知の問題 [!DNL Assets] 次の場合：
+[!DNL Assets] の既知の問題の一部は次のとおりです。
 
-* **ダウンロード**:空のフォルダーをダウンロードする場合、 [!DNL Experience Manager] は、ZIP アーカイブの作成に関する成功メッセージを伝えますが、アーカイブは作成されません。
+* **ダウンロード**：空のフォルダーをダウンロードする場合、[!DNL Experience Manager] は、ZIP アーカイブの作成に関する成功メッセージを伝えますが、アーカイブは作成されません。
 
 * **メタデータスキーマ**：アセット評価ウィジェットが JSP コンパイルエラーを引き起こしていました。メタデータスキーマから削除されました。 <!-- CQ-4282865, CQ-4284633 -->
 
-また、 [～の顕著な変化 [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
+また、 [注目すべき変更点 [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md) も参照してください。
 
 <!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 

@@ -51,7 +51,7 @@ ht-degree: 100%
 | AEM 管理者 | <ul> <li>[!DNL aem-administrators]、</li> <li>[!DNL fd-administrators] </li> </ul> | オーサーおよびパブリッシュインスタンス |
 | エンドユーザー | <ul> <li>ユーザーがアダプティブフォームを表示および送信するためにログインする必要がある場合は、[!DNL forms-users] グループに追加します。 </li> <li>アダプティブフォームへのアクセスにユーザー認証が必要ない場合は、グループを割り当てません。 </li> </ul> | オーサーおよびパブリッシュインスタンス |
 
-Forms 固有の AEM グループと対応する権限について詳しくは、[グループと権限](forms-groups-privileges-tasks.md)を参照してください。
+Forms 固有の AEM グループと対応する権限について詳しくは、 [グループと権限](forms-groups-privileges-tasks.md) を参照してください。
 
 <!-- You can also create  [user groups](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) specific  to your organization, assign policies, and [users](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) to the groups. The policies help control permissions of the users that are part of the group. For information a -->
 

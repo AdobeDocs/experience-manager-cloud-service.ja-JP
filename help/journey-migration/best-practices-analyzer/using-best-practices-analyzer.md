@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 99%
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_using"
 >title="ベストプラクティスアナライザーの使用"
->abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、一般的なアップグレードの準備状況を理解するために使用します。"
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>abstract="ベストプラクティスアナライザー（旧称 Cloud Readiness Analyzer）と生成されたレポートの使用に関するドキュメントを確認します。ベストプラクティスアナライザーレポートは、アップグレードの全般的な準備状況を大まかに理解するために使用します。"
+>additional-url=""
 
 ## ベストプラクティスアナライザーを使用する際の重要な検討事項 {#imp-considerations}
 
@@ -44,10 +44,10 @@ id="aemcloud_bpa_download"
 title="ベストプラクティスアナライザーのダウンロード"
 abstract="ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージマネージャーを使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。"
 
-ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) をソースAdobe Experience Manager(AEM) インスタンス上に置きます。
+ベストプラクティスアナライザーは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージを AEM（Adobe Experience Manager）ソースインスタンスにインストールできます。
 
 >[!NOTE]
-[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルからベストプラクティスアナライザーをダウンロードします。
+[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルからベストプラクティスアナライザーをダウンロードします。
 
 ## ベストプラクティスアナライザーレポートの表示 {#viewing-report}
 
@@ -55,7 +55,7 @@ abstract="ベストプラクティスアナライザーは、ソフトウェア�
 
 ベストプラクティスアナライザーレポートを表示するには、次のようにします。
 
-1. Adobe Experience Manager を選択し、ツール／**操作**／**ベストプラクティスアナライザー**&#x200B;に移動します。
+1. Adobe Experience Manager を選択し、ツール／**操作**／**ベストプラクティスアナライザー** に移動します。
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -126,7 +126,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 id="aemcloud_bpa_interpreting"
 title="ベストプラクティスアナライザーレポートの説明"
 abstract="BPA レポート出力は UI と CSV の 2 つのオプションで表示できます。ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果として UI レポートがツールウィンドウに表示されます。レポートの CSV 形式には、パターン検出の出力から生成され、カテゴリタイプ、サブタイプ、重要度レベルで並べ替え、整理された情報が含まれます。"
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#analysis-report" text="ベストプラクティスアナライザーレポートの確認"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#analysis-report" text="ベストプラクティス分析レポートの確認"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=ja" text="ベストプラクティスアナライザーレポートのカテゴリについて"
 
 ベストプラクティスアナライザーツールを AEM インスタンスで実行すると、結果としてレポートがツールウィンドウに表示されます。
@@ -245,7 +245,7 @@ BPA キャッシュのデフォルトの有効期間は 24 時間です。レポ
 
 BPA は、パターンディテクターの実行に `repository-reader-service` と名付けられたシステムサービスユーザーアカウントを使用します。このアカウントは、AEM 6.2 以降で使用できます。AEM 6.1 では、BPA をインストールする&#x200B;*前に*、次の手順でこのアカウントを作成する必要があります。
 
-1. [新しいサービスユーザーの作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=ja#creating-a-new-service-user)の手順に従って、ユーザーを作成します。UserID を `repository-reader-service` に設定し、中間パスを空のままにして、緑のチェックマークをクリックします。
+1. [新しいサービスユーザーの作成](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=ja#creating-a-new-service-user) の手順に従って、ユーザーを作成します。UserID を `repository-reader-service` に設定し、中間パスを空のままにして、緑のチェックマークをクリックします。
 
 2. [ユーザーとグループの管理の手順](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=ja#managing-users-and-groups)に従います。特に、`repository-reader-service` ユーザーを `administrators` グループに追加する手順については、ユーザーをグループに追加の手順を参照してください。
 

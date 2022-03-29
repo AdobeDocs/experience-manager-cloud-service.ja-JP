@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 環境を通常の（プレリリース以外の）チャネルの動作に戻す場合は、変数を削除するか、別の値に設定し直します。
 
-* または、 [Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md).
+* または、[Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md) から環境変数を設定することもできます。
 
 ### ローカル SDK {#local-sdk}
 

@@ -5,7 +5,7 @@ exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 99c37c941dfd285c63199aba4970a019b245f3b1
 workflow-type: tm+mt
 source-wordcount: '3787'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ AEM では、すべての Web ページが `/content/my-brand/my-content` に保
 
 #### バニティー URL {#vanity-urls}
 
-作成者が、プロモーション目的で別の場所からアクセス可能なページを作成する場合、ページごとに定義される AEM のバニティー URL が役立つことがあります。ページのバニティー URL を追加するには、**Sites** コンソールで該当するページに移動し、ページのプロパティを編集します。「**基本**」タブの下部に、バニティー URL を追加できるセクションが表示されます。複数の URL を使用してページにアクセスできるようにすると、ページの SEO 値が分断されるので、正規 URL タグをページに追加して、この問題を回避する必要があることに留意してください。
+作成者が、プロモーション目的で別の場所からアクセス可能なページを作成する場合、ページごとに定義される AEM のバニティー URL が役立つことがあります。ページのバニティー URL を追加するには、 **Sites** コンソールで該当するページに移動し、ページのプロパティを編集します。「**基本**」タブの下部に、バニティー URL を追加できるセクションが表示されます。複数の URL を使用してページにアクセスできるようにすると、ページの SEO 値が分断されるので、正規 URL タグをページに追加して、この問題を回避する必要があることに留意してください。
 
 #### ページ名のローカライズ {#localized-page-names}
 
@@ -377,18 +377,18 @@ XML サイトマップを生成するバックグラウンドジョブを有効�
 
 ![Apache Sling Sitemap - スケジューラー](assets/sling-sitemap-scheduler.png)
 
-サイトマップ生成ジョブは、オーサー層のインスタンスとパブリッシュ層のインスタンスの両方で実行できます。適切な正規 URL はそこでのみ生成できるので、ほとんどの場合はパブリッシュ層インスタンスで生成を実行することをお勧めします（通常、Sling リソースマッピングルールはパブリッシュ層インスタンスでのみ存在するので）。 ただし、 [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) インターフェイス。 カスタム実装で、オーサー層インスタンス上にサイトマップの正規 URL を生成できる場合、 `SitemapScheduler` オーサー実行モード用に設定でき、XML サイトマップ生成ワークロードをオーサーサービスクラスターのインスタンス全体に分散させることができます。 このシナリオでは、まだ公開されていない、変更されている、または制限されたユーザーグループにのみ表示されるコンテンツの処理に、特に注意が必要です。
+サイトマップ生成ジョブは、オーサー層のインスタンスとパブリッシュ層のインスタンスの両方で実行できます。ほとんどの場合、適切な正規 URL を生成できるのはパブリッシュ層インスタンスだけなので、パブリッシュ層インスタンスで生成を実行することをお勧めします（Sling リソースマッピングルールは一般にパブリッシュ層インスタンスにのみ存在するため）。ただし、[SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) インターフェイスを実装することにより、正規 URL の生成に使用される外部化メカニズムのカスタム実装をプラグインすることは可能です。カスタム実装が、オーサー層インスタンスでサイトマップの正規 URL を生成できる場合、`SitemapScheduler` をオーサー実行モードに設定して、XML サイトマップ生成ワークロードをオーサーサービスクラスターのインスタンス全体に分散させることができます。このシナリオでは、未公開のコンテンツ、変更済みのコンテンツ、限られたユーザーグループにのみ表示されるコンテンツの取り扱いには、特に注意が必要です。
 
-AEM Sitesには、 `SitemapGenerator` はページのツリーを横断してサイトマップを生成します。 サイトの正規 URL と代替言語（使用可能な場合）のみを出力するように事前設定されています。 また、必要に応じて、ページの最終変更日を含めるように設定することもできます。 その場合は、 _最終変更日を追加_ オプション _AdobeAEM SEO - Page Tree Sitemap Generator_ 設定および _最終変更ソース_. サイトマップがパブリッシュ層で生成される場合は、 `cq:lastModified` 日付。
+AEM Sites には、ページのツリーをトラバースしてサイトマップを生成する `SitemapGenerator` のデフォルトの実装が含まれています。サイトの正規 URL と（使用可能な場合は）代替言語のみを出力するように事前設定されています。また、必要に応じて、ページの最終変更日を含めるように設定することもできます。その場合は、 _Adobe AEM SEO - Page Tree Sitemap Generator_ 設定の _最終変更日を追加_ オプションを有効にし、 _最終変更ソース_ を選択します。サイトマップがパブリッシュ層で生成される場合は、`cq:lastModified` の日付を使用することをお勧めします。
 
-![AdobeAEM SEO - Page Tree Sitemap Generator の設定](assets/sling-sitemap-pagetreegenerator.png)
+![Adobe AEM SEO - Page Tree Sitemap Generator 設定](assets/sling-sitemap-pagetreegenerator.png)
 
-サイトマップの内容を制限するために、必要に応じて次のサービスインターフェイスを実装できます。
+サイトマップのコンテンツを制限するには、必要に応じて次のサービスインターフェイスを実装します。
 
-* の [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) を実装して、AEM Sites固有のサイトマップジェネレーターで生成された XML サイトマップからページを非表示にすることができます
-* a [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) または [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) を実装して、 [コマース統合フレームワーク](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=ja) 特定のサイトマップジェネレーター
+* [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) を実装することで、AEM Sites 固有のサイトマップジェネレーターで生成された XML サイトマップからページを非表示にすることができます。
+* [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) または [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) を実装して、[Commerce Integration Frameworks](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=ja) 固有のサイトマップジェネレーターで生成される XML サイトマップから製品やカテゴリをフィルタリングできます。
 
-特定の使用例でデフォルトの実装が機能しない場合、または拡張機能が十分に柔軟性を持たない場合は、カスタム `SitemapGenerator` は、生成されたサイトマップのコンテンツを完全に制御するために実装できます。 次の例は、AEM Sitesのデフォルトの実装のロジックを利用して、これをおこなう方法を示しています。 使用する [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) ページのツリーをトラバースするための開始点として、次の操作をおこないます。
+デフォルトの実装が特定のユースケースで機能しない場合、または拡張ポイントが十分に柔軟性を持たない場合、カスタム `SitemapGenerator` を実装して、生成されるサイトマップのコンテンツを完全に制御できます。次の例では、AEM Sites のデフォルトの実装ロジックを利用してこれを行う方法を示しています。 [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) を開始点として使用して、ページのツリーをトラバースします。
 
 ```
 import java.util.Optional;

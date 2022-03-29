@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
 source-wordcount: '3020'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->AEMでは、 Cloud Manager ユーザーインターフェイスを使用して、2021.12.0リリースで標準環境変数を設定する機能が導入されました。 詳しくは、ドキュメントを参照してください。 [ここ](/help/implementing/cloud-manager/environment-variables.md).
+>AEM では、2021.12.0 リリースで、Cloud Manager ユーザーインターフェイスを使用して標準の環境変数を設定できるようになりました。詳しくは、 [こちら](/help/implementing/cloud-manager/environment-variables.md) のドキュメントを参照してください。
 
 [OSGi](https://www.osgi.org/) は Adobe Experience Manager（AEM）のテクノロジースタックの基本要素です。AEM とその設定の複合バンドルを制御するために使用されます。
 
@@ -230,12 +230,12 @@ use $[secret:SECRET_VAR_NAME]
 >
 >変数名に特定のプレフィックスを使用することに関連するルールがあります。
 >
->1. プレフィックスが付いた変数名 `INTERNAL_`, `ADOBE_`または `CONST_` はAdobeで予約されています。 これらのプレフィックスで始まる顧客セット変数は無視されます。
+>1. `INTERNAL_`、`ADOBE_` または `CONST_` のプレフィックスが付いた変数名は、アドビによって予約されています。これらのプレフィックスで始まる顧客設定変数は無視されます。
 >
->1. のお客様は、 `INTERNAL_` または `ADOBE_` どちらかです。
+>1. お客様は、プレフィックスが `INTERNAL_` または `ADOBE_` の変数を参照しないでください。
 >
->1. プレフィックスが付く環境変数 `AEM_` は、製品でパブリック API として定義され、顧客が使用および設定します。
-   >   お客様はを使用し、プレフィックスで始まる環境変数を設定できますが、 `AEM_` 独自の変数をこのプレフィックスで定義することはできません。
+>1. `AEM_` のプレフィックスが付いた環境変数は、お客様が使用および設定するパブリック API として製品で定義されています。
+   >   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
 
 
 ### デフォルト値 {#default-values}

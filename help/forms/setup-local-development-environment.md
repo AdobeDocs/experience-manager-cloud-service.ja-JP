@@ -185,15 +185,14 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
    * （Apple macOS の場合）[Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) をインストールします。これには、Docker Engine、Docker CLI クライアント、Docker Compose、Docker Content Trust、Kubernetes、Credential Helper が含まれています。
 
    * （Linux の場合）[Docker Engine](https://docs.docker.com/engine/install/#server) と [Docker Compose](https://docs.docker.com/compose/install/) をお使いのマシンにインストールします。
-
    >[!NOTE]
    >
    > * Apple macOS の場合は、ローカルの AEM オーサーインスタンスを格納したフォルダーを許可リストに加えます。
    >
    > * Windows 用 Docker Desktop は、Hyper-V
-   > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
-   > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
-   > 使用している間に、ファイル共有を明示的に構成します。
+      > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
+      > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
+      > 使用している間に、ファイル共有を明示的に構成します。
 
 
 1. オーサーインスタンスとパブリッシュインスタンスに並行して、aem-sdk などのフォルダーを作成します。例：C:\aem-sdk
@@ -247,7 +246,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成する：**[AEM アーキタイプ 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つサンプルのテーマとテンプレートも含まれています。
+1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成する：**[AEM アーキタイプ 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
 
    コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。[!DNL Forms] に特有の設定、テーマおよびテンプレートを含めるには、`includeFormsenrollment=y` を設定します。
 
@@ -261,7 +260,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
    `mvn -PautoInstallPackage clean install`
 
-   コマンドの完全なリストについては、「[構築とインストール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing)」を参照してください
+   コマンドの完全なリストについては、 [構築とインストール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing) を参照してください
 
 1. [ [!DNL AEM Forms]  as a Cloud Service 環境にコードをデプロイします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#customer-releases)。
 
@@ -313,7 +312,7 @@ Dispatcher を設定する詳細な手順については、「[ローカル Disp
 
 * Dispatcher のキャッシュを使用すると、[!DNL AEM Forms] は、アダプティブフォームをクライアントで事前入力できます。キャッシュにより、事前入力されたフォームのレンダリング速度が向上します。
 * セキュリティで保護されたコンテンツのキャッシュ機能は、デフォルトで無効になっています。この機能を有効にするには、「[セキュリティで保護されたコンテンツのキャッシュ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=ja)」の記事に記載されている手順を実行します
-* Dispatcher は、アダプティブフォームと関連するアダプティブフォームの一部を無効にできない場合があります。このような問題を解決するには、トラブルシューティングの節の [[!DNL AEM Forms]  キャッシュ](troubleshooting-caching-performance.md)を参照してください。
+* Dispatcher は、アダプティブフォームと関連するアダプティブフォームの一部を無効にできない場合があります。このような問題を解決するには、トラブルシューティングの節の [[!DNL AEM Forms] キャッシュ](troubleshooting-caching-performance.md) を参照してください。
 * ローカライズされたアダプティブフォームのキャッシュ：
    * `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>` の代わりに `http://host:port/content/forms/af/<afName>.<locale>.html` の URL 形式を使用して、アダプティブフォームのローカライズ版をリクエストします。
    * 「ブラウザーロケール」オプションは、デフォルトで無効になっています。ブラウザーロケール設定を変更するには

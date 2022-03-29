@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: d55e2aec4718e752cfc0dfa610abf1a1d36a583f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 | 機能 | 非推奨（廃止予定）の機能 | 代替手段 |
 | ------------ | ------------------ | ----------- |
-| [!DNL Sites] | **ソーシャルメディアのステータス**&#x200B;のエクスペリエンスフラグメントのプロパティ。 | 機能は間もなく削除されます。 |
+| [!DNL Sites] | **ソーシャルメディアのステータス** のエクスペリエンスフラグメントのプロパティ。  | この機能は間もなく削除されます。 |
 | [!DNL Sites] | テンプレートベースのシンプルなコンテンツフラグメント。 | 現在は[モデルベースの構造化コンテンツフラグメント](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 取り込んだ画像を処理する `DAM Asset Update` ワークフロー | 現在は、アセットの取り込みで[アセットマイクロサービス](/help/assets/asset-microservices-overview.md)が使用されています。 |
 | [!DNL Assets] | [!DNL Experience Manager] へのアセットの直接アップロード。[非推奨（廃止予定）のアセットアップロード API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api) を参照してください。 | [直接バイナリアップロード](/help/assets/add-assets.md)を使用。技術的な詳細については、[直接アップロード API](/help/assets/developer-reference-material-apis.md#upload-binary) を参照してください。 |
@@ -48,14 +48,14 @@ ht-degree: 94%
 
 | 領域 | 機能 | 代替手段 | 削除予定日 |
 | ------------ | ------------------ | ----------- | ------------------- |
-| ユーザーインターフェイス | クラシック UI が製品ユーザーインターフェイスから削除されました。いくつかのクラシック UI ダイアログは、リンクチェッカー、バージョンパージ、一部の Cloud Service 設定など、いくつかの機能で使用できます。今後の[製品アップデート](/help/release-notes/home.md)により、クラシック UI の利用範囲がさらに狭まる可能性があります。 | 標準 UI | 削除 |
-| [!DNL Dynamic Media] | [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=ja#integration) および [Dynamic Media Hybrid モード](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=ja#dynamic)との従来の統合は、[!DNL Experience Manager] as a [!DNL Cloud Service] では使用できません。 | [!DNL Experience Manager] as a [!DNL Cloud Service] に用意されている [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 | 削除 |
-| [!DNL Sites] | Portal Director とポートレットコンポーネント | これらの機能は [!DNL Experience Manager] 6.4 で非推奨（廃止予定）となり、現在は [!DNL Experience Manager] から削除されています。 | 削除 |
-| [!DNL Sites] | デザインインポーター | 実行時に [!DNL Experience Manager] リポジトリーの不変セクションにアクセスできないので、この機能は削除されました。 | 削除 |
-| [!DNL Assets] | [!DNL Assets]Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの の共有は使用できません。 | [!DNL Adobe Creative Cloud] との統合には、[Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用します。 | 削除 |
-| [!DNL Foundation] | Apache Sling データソース（OSGi バンドル org.apache.sling.datasource）のサポート | 該当なし | 削除 |
-| [!DNL Foundation] | JST スクリプティングテンプレートのサポート（OSGi バンドル org.apache.sling.scripting.jst） | 該当なし | 削除 |
-| [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022 年 3 月 |
+| ユーザーインターフェイス | クラシック UI が製品ユーザーインターフェイスから削除されました。いくつかのクラシック UI ダイアログは、リンクチェッカー、バージョンパージ、一部の Cloud Service 設定など、いくつかの機能で使用できます。今後の[製品アップデート](/help/release-notes/home.md)により、クラシック UI の利用範囲がさらに狭まる可能性があります。 | 標準 UI | 削除済み |
+| [!DNL Dynamic Media] | [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=ja#integration) および [Dynamic Media Hybrid モード](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=ja#dynamic)との従来の統合は、[!DNL Experience Manager] as a [!DNL Cloud Service] では使用できません。 | [!DNL Experience Manager] as a [!DNL Cloud Service] に用意されている [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) を使用します。 | 削除済み |
+| [!DNL Sites] | Portal Director とポートレットコンポーネント | これらの機能は [!DNL Experience Manager] 6.4 で非推奨（廃止予定）となり、現在は [!DNL Experience Manager] から削除されています。 | 削除済み |
+| [!DNL Sites] | デザインインポーター | 実行時に [!DNL Experience Manager] リポジトリーの不変セクションにアクセスできないので、この機能は削除されました。 | 削除済み |
+| [!DNL Assets] | [!DNL Assets]Experience Cloud Assets コアサービスおよび Creative Cloud サービスとの の共有は使用できません。 | [!DNL Adobe Creative Cloud] との統合には、[Adobe Asset Link](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を使用します。 | 削除済み |
+| [!DNL Foundation] | Apache Sling データソースのサポート（OSGi バンドル org.apache.sling.datasource） | 該当なし | 削除済み |
+| [!DNL Foundation] | JST スクリプティングテンプレートのサポート（OSGi バンドル org.apache.sling.scripting.jst） | 該当なし | 削除済み |
+| [!DNL Foundation] | Apache Felix Http Whiteboard のサポート | OSGi Http Whiteboard | 2022年3月 |
 
 ## Java API {#java-api}
 
@@ -63,4 +63,4 @@ ht-degree: 94%
 
 ## OSGi 設定 {#osgi-configuration}
 
-OSGi プロパティの設定に関する制限事項（一部は将来的に導入される可能性もあります）については、[この記事](/help/implementing/deploying/osgi-configuration-api.md)を参照してください。
+OSGi プロパティの設定に関する制限事項（一部は将来的に導入される可能性もあります）については、 [この記事](/help/implementing/deploying/osgi-configuration-api.md) を参照してください。

@@ -1,6 +1,6 @@
 ---
 title: イベント駆動型 App Builder アプリケーション
-description: イベント駆動型の App Builder アプリケーションを構築する方法を説明します。
+description: イベント駆動型の App Builder アプリケーションを作成する方法を説明します。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,7 +12,7 @@ exl-id: 6cd06ddc-2ce3-4e59-bd62-baee44763591
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> _Adobeプロジェクト Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
+> _Adobe Project Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
 
 ## イベント駆動型 App Builder アプリケーションの概要
 
-イベント駆動型アーキテクチャ、Adobe I/Oイベント、カスタムイベントについて説明します。
+イベント駆動型アーキテクチャ、Adobe I/Oイベントおよびカスタムイベントについて説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/339244/?quality=12&learn=on)
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/339245/?quality=12&learn=on)
 
-公開をビルドして、App Builder アプリケーションでイベントを使用する方法を説明します。
+イベント駆動型の App Builder アプリケーションを作成および公開する方法を説明します。

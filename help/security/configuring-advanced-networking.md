@@ -4,8 +4,8 @@ description: AEM as a Cloud Service の高度なネットワーク機能（VPN �
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2976'
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->また、このページでは、高度なネットワークオプションのそれぞれについて説明する一連の記事を紹介します [場所](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>また、この [場所](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=ja) で高度なネットワークオプションのそれぞれを説明するように設計された一連の記事を見つけることができます。
 
 ## 概要 {#overview}
 
@@ -27,12 +27,12 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 この記事では、これらの各オプションについて、設定方法などを詳しく説明します。一般的な設定戦略としては、`/networkInfrastructures` API エンドポイントをプログラムレベルで呼び出して、目的のタイプの高度なネットワーク機能を宣言したあと、環境ごとに `/advancedNetworking` エンドポイントを呼び出して、インフラストラクチャを有効にし、環境固有のパラメーターを設定します。それぞれの形式的な構文とサンプルリクエストおよび応答については、Cloud Manager API ドキュメントの適切なエンドポイントを参照してください。
 
-プログラムは、単一の高度なネットワークバリエーションをプロビジョニングできます。 フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
+プログラムは、単一の高度なネットワークバリエーションをプロビジョニングできます。フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択することをお勧めします。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
 
 >[!INFO]
 >
 >サンドボックスプログラムでは、高度なネットワーク機能は使用できません。
->また、環境はAEMバージョン 5958 以降にアップグレードする必要があります。
+>また、環境は AEM バージョン 5958 以降にアップグレードする必要があります。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 高度なネットワーク機能を使用すると、デフォルトで開いている HTTP（ポート 80）と HTTPS（ポート 443）以外のポートからトラフィックを送信するように、AEM as a Cloud Service を設定することができます。
 
-### 検討事項 {#flexible-port-egress-considerations}
+### 考慮事項 {#flexible-port-egress-considerations}
 
 専用エグレスに依存しないトラフィックの方がスループットが高くなるので、VPN の必要がなく、専用エグレス IP アドレスも必要ない場合は、フレキシブルポートエグレスをお勧めします。
 
@@ -50,9 +50,9 @@ AEM as a Cloud Service には、複数のタイプの高度なネットワーク
 
 プログラムごとに 1 回、POST `/program/<programId>/networkInfrastructures` エンドポイントが呼び出され、`kind` パラメーターの `flexiblePortEgress` の値とリージョンが渡されます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの一覧と厳密な構文については、API ドキュメントを参照してください。
 
-呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャGETエンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) のステータスが「準備完了」になります。
+呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 15 分ほどかかります。Cloud Manager の [ネットワークインフラストラクチャ GET エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) の呼び出しで「準備完了」のステータスが表示されます。
 
-プログラムスコープのフレキシブルポートエグレス設定が準備できている場合、 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 環境レベルでネットワークを有効にし、必要に応じてポート転送規則を宣言するには、エンドポイントを環境ごとに呼び出す必要があります。 柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
+プログラムスコープのフレキシブルポートエグレス設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
 
 80 または 443 以外のポートに対しては、宛先ホストのセット（名前または IP アドレスとポート）を指定してポート転送ルールを宣言する必要があります。宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。
 
@@ -74,14 +74,14 @@ API が数秒以内に応答して「更新中」のステータスを返し、�
 
 特定の環境に対してフレキシブルポートエグレスを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
-詳しくは、[Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
+詳しくは、 [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
 
 ### トラフィックルーティング {#flexible-port-egress-traffic-routing}
 
 80 または 443 以外のポートに送信される http または https トラフィックの場合、次のホストおよびポート環境変数を使用してプロキシを設定する必要があります。
 
-* HTTP の場合： `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` ( デフォルトは `proxy.tunnel:3128` (AEMリリース 6094 未満 )
-* HTTPS の場合： `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` ( デフォルトは `proxy.tunnel:3128` (AEMリリース 6094 未満 )
+* HTTP の場合： `AEM_PROXY_HOST`／`AEM_HTTP_PROXY_PORT `（AEM リリース 6094 未満では、デフォルトは `proxy.tunnel:3128`）
+* HTTPS の場合： `AEM_PROXY_HOST`／`AEM_HTTPS_PROXY_PORT `（AEM リリース 6094 未満では、デフォルトは `proxy.tunnel:3128`）
 
 `www.example.com:8443` にリクエストを送信するサンプルコードを以下に示します。
 
@@ -99,7 +99,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 非標準の Java ネットワークライブラリを使用する場合は、上記のプロパティを使用して、すべてのトラフィックに対してプロキシを設定します。
 
-`portForwards` パラメーターで宣言したポートで宛先とやり取りする HTTP/HTTPS 以外のトラフィックは、マッピングされたポートと共に、`AEM_PROXY_HOST` というプロパティを参照する必要があります。例えば、次のように参照します。
+`portForwards` パラメーターで宣言したポートで宛先とやり取りする HTTP/HTTPS 以外のトラフィックは、マッピングされたポートと共に、`AEM_PROXY_HOST` というプロパティを参照する必要があります。次に例を示します。
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -127,9 +127,9 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>次の環境変数とプロキシポート番号を使用して設定された http プロキシを介した（80 または 443 以外の他のポートでの）非標準トラフィック。 Cloud Manager API 呼び出しの portForwards パラメーターで宛先ポートを宣言しないでください。<br><ul>
-     <li>AEM_PROXY_HOST(AEMリリースではデフォルトで「proxy.tunnel」に設定されています。6094 より前 )</li>
-     <li>AEM_HTTPS_PROXY_PORT(AEMリリースではデフォルトでポート 3128 に設定され、6094 より前 )</li>
+    <td>次の環境変数とプロキシポート番号を使用して設定された http プロキシを介した（80 または 443 以外の他のポートでの）非標準トラフィック。Cloud Manager API 呼び出しの portForwards パラメーターで宛先ポートを宣言しないでください。<br><ul>
+     <li>AEM_PROXY_HOST（AEM リリース 6094 未満では、デフォルトは `proxy.tunnel`）</li>
+     <li>AEM_HTTPS_PROXY_PORT（AEM リリース 6094 未満では、デフォルトはポート 3128）</li>
     </ul>
     <td>80 または 443 以外のポート</td>
     <td>許可</td>
@@ -229,7 +229,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 非標準の Java ネットワークライブラリを使用する場合は、上記のプロパティを使用して、すべてのトラフィックに対してプロキシを設定します。
 
-`portForwards` パラメーターで宣言したポートで宛先とやり取りする HTTP/HTTPS 以外のトラフィックは、マッピングされたポートと共に、`AEM_PROXY_HOST` というプロパティを参照する必要があります。例えば、次のように参照します。
+`portForwards` パラメーターで宣言したポートで宛先とやり取りする HTTP/HTTPS 以外のトラフィックは、マッピングされたポートと共に、`AEM_PROXY_HOST` というプロパティを参照する必要があります。次に例を示します。
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -369,13 +369,13 @@ IPSec 技術を搭載したほとんどの VPN デバイスがサポートされ
 
 ### 作成 {#vpn-creation}
 
-POST `/program/<programId>/networkInfrastructures` エンドポイントがプログラムごとに 1 回呼び出され、設定情報のペイロードが渡されます。この設定情報には、`kind` パラメーターの「vpn」の値、リージョン、アドレス空間（CIDR のリスト。これは後で変更できません）、DNS リゾルバー（顧客のネットワーク内で名前を解決するためのもの）、VPN 接続情報（ゲートウェイ設定、共有 VPN キー、IP セキュリティポリシーなど）などが含まれます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの一覧と厳密な構文については、[API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)を参照してください。
+POST `/program/<programId>/networkInfrastructures` エンドポイントがプログラムごとに 1 回呼び出され、設定情報のペイロードが渡されます。この設定情報には、`kind` パラメーターの「vpn」の値、リージョン、アドレス空間（CIDR のリスト。これは後で変更できません）、DNS リゾルバー（顧客のネットワーク内で名前を解決するためのもの）、VPN 接続情報（ゲートウェイ設定、共有 VPN キー、IP セキュリティポリシーなど）などが含まれます。エンドポイントは、応答として `network_id` の他に、ステータスなどの他の情報も返します。パラメーターの一覧と厳密な構文については、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) を参照してください。
 
 この呼び出しの後、ネットワークインフラストラクチャがプロビジョニングされるまで、通常は 45～60 分かかります。API の GET メソッドを呼び出して、現在のステータスを返すことができます。このステータスは、最終的に `creating` から `ready` に変わります。すべてのステータスについては、 API ドキュメントを参照してください。
 
 プログラムスコープの VPN 設定の準備ができている場合は、環境ごとに `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントを呼び出して、環境レベルでネットワーク機能を有効にすると共に、ポート転送ルールを必要に応じて宣言する必要があります。柔軟性を持たせるために、パラメーターは環境ごとに設定できます。
 
-詳しくは、[API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
+詳しくは、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
 
 VPN 経由でのルーティングが必要な HTTP またはHTTPS プロトコル以外の TCP トラフィックについては、宛先ホストのセット（名前または IP アドレスとポート）を指定して、ポート転送ルールを宣言する必要があります。宛先ホストごとに、宛先ポートを 30000～30999 のポートにマッピングする必要があります。この値は、プログラムのあらゆる環境で一意でなければなりません。また、一連の URL を `nonProxyHosts` パラメーターにリストすることもできます。このパラメーターは、どの URL のトラフィックが VPN ルーティングをバイパスして共有 IP 範囲を経由すべきかを宣言するものです。これらの URL は `example.com` または `*.example.com` のパターンに従います（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
 
@@ -395,7 +395,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
 
 ネットワークインフラストラクチャを削除するには、作成済みの内容と削除の理由を明記して、カスタマーサポートチケットを送信します。
 
-特定の環境で VPN を無効にするには、`DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` を呼び出します。詳しくは、[API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration)を参照してください。
+特定の環境で VPN を無効にするには、`DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` を呼び出します。詳しくは、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
 
 ### トラフィックルーティング {#vpn-traffic-routing}
 

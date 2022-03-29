@@ -95,7 +95,7 @@ RESTful サービス、SOAP サービス、OData サービスを設定するに�
 クラウドサービス設定用のフォルダーを構成するには、以下の手順を実行します。
 
 1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
-   * 詳しくは、[設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja)のドキュメントを参照してください。
+   * 詳しくは、 [設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja) のドキュメントを参照してください。
 1. 以下の手順を実行して、global フォルダーをクラウド設定用に有効にします。クラウドサービス設定用に別のフォルダーを作成する場合は、この手順をスキップしてください。
 
    1. **[!UICONTROL 設定ブラウザー]**&#x200B;で、「`global`」フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。

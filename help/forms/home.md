@@ -1,7 +1,7 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service の概要'
 description: Adobe Experience Manager Forms as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: AEM as a Cloud Serviceでのフォームの使用方法を理解します。
+landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
 source-git-commit: 231e7446708cd0240be73ee74897d2c58b47ce22
 workflow-type: tm+mt

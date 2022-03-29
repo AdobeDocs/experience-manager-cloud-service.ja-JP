@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Cloud Acceleration Manager の概要 {#overview-cam}
 
-Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームを導くように設計されたクラウドベースのアプリケーションです。AEM as a Cloud Service への移行プロセスの各フェーズで役に立つアドビ推奨のベストプラクティス、ヒント、ドキュメントおよびツールを利用して移行に成功するように、チームをセットアップします。
+Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームを導くように設計されたクラウドベースのアプリケーションです。AEM as a Cloud Service への移行プロセスの各段階で役に立つアドビ推奨のベストプラクティス、ヒント、ドキュメントおよびツールを利用して移行を成功へ導くよう、チームをセットアップします。
 
 Cloud Acceleration Manager の概要については、次のビデオをご覧ください。
 

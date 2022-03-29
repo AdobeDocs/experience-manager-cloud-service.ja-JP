@@ -1,5 +1,5 @@
 ---
-title: フォームのアセットのレビューの作成と管理
+title: 'フォーム内のアセットに対するレビューの作成と管理 '
 seo-title: Creating and managing reviews for assets in forms
 description: 'レビューとは、フォーム内のアセットに対し、1 人または複数のレビュー担当者にコメントを許可するメカニズムです。 '
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# フォームのアセットのレビューの作成と管理{#creating-and-managing-reviews-for-assets-in-forms}
+# フォーム内のアセットに対するレビューの作成と管理 {#creating-and-managing-reviews-for-assets-in-forms}
 
 ## レビュー {#review}
 
@@ -77,7 +77,7 @@ ht-degree: 100%
 
    ![タスクマネージャーでのレビューの更新された状態](assets/tskmgr.png)
 
-   タスクマネージャーでのレビューの更新された状態
+   タスクマネージャーで更新状態を確認
 
 1. レビューを終了するには、「終了」をクリックします。
 

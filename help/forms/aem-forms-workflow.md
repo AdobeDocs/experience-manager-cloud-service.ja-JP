@@ -1,7 +1,7 @@
 ---
 title: OSGi 上の Forms 中心のワークフロー
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: ' [!DNL AEM Forms]  ワークフローを使用して、レビューと承認を自動化して迅速に構築し、ドキュメントサービスを開始する'
+description: ' [!DNL AEM Forms]  ワークフローを使用して、レビューと承認を自動化および迅速に作成し、ドキュメントサービスを開始する'
 seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ OSGi での Forms 中心のワークフローを使用すると、JEE スタッ�
 
 OSGi 上の Forms 中心のワークフローは、[AEM インボックス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=ja#authoring)を拡張し、AEM ワークフローエディターに追加のコンポーネント（手順）を提供することで、[!DNL AEM Forms] 中心のワークフローをサポートします。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
-すべての [!DNL AEM Forms] ワークフロー手順で変数の使用が可能です。変数を使用すると、ワークフロー手順で、実行時に複数の手順にわたってメタデータを保持および渡すことができます。様々なタイプの変数を作成して、様々なタイプのデータを保存できます。変数コレクション（配列）を作成して、関連する同じタイプのデータのインスタンスを複数保存することもできます。一般に、変数または変数のコレクションを使用するのは、変数が保持する値に基づいて決定する必要がある場合、またはプロセスで後で必要になる情報を保存する場合です。これらの Forms 中心のワークフローコンポーネント（手順）で変数を使用する方法について詳しくは、[OSGi での Forms 中心のワークフロー - 手順リファレンス](aem-forms-workflow-step-reference.md)を参照してください。変数の作成と管理については、[AEM ワークフローの変数](variable-in-aem-workflows.md)を参照してください。
+すべての [!DNL AEM Forms] ワークフロー手順で変数の使用が可能です。変数を使用すると、ワークフロー手順で、実行時に複数の手順にわたってメタデータを保持および渡すことができます。様々なタイプの変数を作成して、様々なタイプのデータを保存できます。変数コレクション（配列）を作成して、関連する同じタイプのデータのインスタンスを複数保存することもできます。一般に、変数または変数のコレクションを使用するのは、変数が保持する値に基づいて決定する必要がある場合、またはプロセスで後で必要になる情報を保存する場合です。これらの Forms 中心のワークフローコンポーネント（手順）で変数を使用する方法について詳しくは、 [OSGi での Forms 中心のワークフロー - 手順リファレンス](aem-forms-workflow-step-reference.md) を参照してください。変数の作成と管理については、[AEM ワークフローの変数](variable-in-aem-workflows.md)を参照してください。
 
 次の図は、OSGi 上の Forms 中心のワークフローを作成、実行、監視するためのエンドツーエンドの手順を示します。
 
@@ -45,7 +45,7 @@ OSGi 上の Forms 中心のワークフローは、[AEM インボックス](http
 * ワークフローは、実世界のビジネスのプロセスを表すものです。実世界のビジネスプロセスを維持し、そのビジネスプロセスの参加者のリストを準備しましょう。また、ワークフローの作成を開始する前にコラテラル（アダプティブフォーム、PDF ドキュメントなど）を準備しましょう。
 * ワークフローには複数のステージが含まれることがあります。これらのステージは、AEM インボックスに表示され、ワークフローの進捗を分かりやすくします。ビジネスプロセスを論理ステージに分割します。
 * AEM ワークフローのタスクの割り当て手順で、電子メール通知をユーザーまたは担当者に送信するように設定することができます。これにより、[電子メール通知を有効にする](#configure-email-service)ことができます。
-* ワークフローでは、電子署名に Adobe Sign も使用することができます。ワークフローで Adobe Sign を使用する予定がある場合、ワークフローで使用する前に、[Adobe Sign の設定を  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) で行う必要があります。
+* ワークフローでは、電子署名に Adobe Sign も使用することができます。ワークフローで Adobe Sign を使用する予定がある場合、ワークフローで使用する前に、 [Adobe Sign の設定を [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) で行う必要があります。
 
 ## ワークフローモデルを作成する {#create-a-workflow-model}
 
@@ -162,15 +162,15 @@ AEM には、提供されているワークフロー手順を使用してワー�
   </tr>
   <tr>
    <td>アクセスグループ</td>
-   <td><p>グループを選択します。アプリケーションは、選択されたグループのメンバーにのみ AEM インボックスで表示されます。アクセスグループオプションを使用すると、 [!DNL workflow-users] グループを選択できます。 </p> <br /> </td>
+   <td><p>グループを選択します。アプリケーションは、選択されたグループのメンバーにのみ AEM インボックスで表示されます。アクセスグループオプションを使用すると、[!DNL workflow-users] グループのすべてのグループを選択することができます。 </p> <br /> </td>
   </tr>
   <tr>
    <td>事前入力サービス</td>
-   <td>アダプティブフォームの<a href="prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">事前入力サービス</a>を選択します。<br /> </td>
+   <td>アダプティブフォームの <a href="prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">事前入力サービス</a> を選択します。<br /> </td>
   </tr>
   <tr>
    <td>ワークフローモデル</td>
-   <td>アプリケーションの<a href="aem-forms-workflow.md#create-a-workflow-model">ワークフローモデル</a>を選択します。ワークフローモデルは、ビジネスプロセスのロジックとフローで構成されます。 </td>
+   <td>アプリケーションの <a href="aem-forms-workflow.md#create-a-workflow-model">ワークフローモデル</a> を選択します。ワークフローモデルは、ビジネスプロセスのロジックとフローで構成されます。 </td>
   </tr>
   <tr>
    <td>データファイルのパス</td>

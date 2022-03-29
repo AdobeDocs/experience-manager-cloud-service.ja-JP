@@ -6,7 +6,7 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bc
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 68%
+ht-degree: 78%
 
 ---
 
@@ -33,9 +33,9 @@ Experience ManagerとAdobe Commerceは、Commerce Integration Framework(CIF) を
 ![CIF アーキテクチャの概要](../assets/AEM_Magento_Architecture.png)
 
 CIF 内では、サーバーサイドとクライアントサイドの通信パターンがサポートされます。
-サーバー側 API 呼び出しは、組み込みの汎用 API を使用して実装されます [GraphQL クライアント](https://github.com/adobe/commerce-cif-graphql-client) ～と組み合わせて [生成されたデータモデルのセット](https://github.com/adobe/commerce-cif-magento-graphql) （コマース GraphQL スキーマ用） また、GraphQL クエリや GQL 形式のミューテーションも使用できます。
+サーバーサイド API 呼び出しは、組み込みの汎用的な [GraphQL クライアント](https://github.com/adobe/commerce-cif-graphql-client) と、コマース GraphQL スキーマ用に [生成された一連のデータモデル](https://github.com/adobe/commerce-cif-magento-graphql) を組み合わせたものを使用して実装されます。また、GraphQL クエリや GQL 形式のミューテーションも使用できます。
 
-クライアントサイドコンポーネント（を使用して構築） [React](https://reactjs.org/)、 [Apollo Client](https://www.apollographql.com/docs/react/) が使用されます。
+[React](https://reactjs.org/) を使用して作成されるクライアントサイドコンポーネントの場合は、[Apollo クライアント](https://www.apollographql.com/docs/react/) が使用されます。
 
 ## AEM CIF コアコンポーネントのアーキテクチャ {#cif-core-components}
 

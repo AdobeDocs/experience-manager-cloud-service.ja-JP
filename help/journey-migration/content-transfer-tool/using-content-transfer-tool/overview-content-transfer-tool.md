@@ -56,6 +56,6 @@ ht-degree: 100%
 
 インジェストフェーズで現在のコンテンツの上に差分コンテンツを適用するには、*ワイプ*&#x200B;オプションを無効にする必要があります。詳しくは、[追加インジェスト](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=ja#top-up-ingestion-process)を参照してください。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 コンテンツ転送ツールとその概要を理解したら、[コンテンツ転送ツールの前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja)を確認する必要があります。概要では、このツールを使用してソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM Cloud Service インスタンスに既存のコンテンツを移行できることを説明しました。

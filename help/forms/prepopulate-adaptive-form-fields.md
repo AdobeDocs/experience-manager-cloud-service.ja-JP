@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームのフィールドの事前入力
+title: アダプティブフォームフィールドに事前入力
 seo-title: Prefill Adaptive Form fields
 description: 既存データを使用して、アダプティブフォームのフィールドを事前入力します。
 seo-description: With Adaptive Forms, you users can prefill basic information in a form by logging in with their social profiles. This article describes how you can accomplish this.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# アダプティブフォームのフィールドの事前入力{#prefill-adaptive-form-fields}
+# アダプティブフォームフィールドに事前入力{#prefill-adaptive-form-fields}
 
 ## はじめに {#introduction}
 
@@ -267,9 +267,9 @@ JSON スキーマモデルを使用するフィールドの場合、以下の JS
 
 ## ユーザーデータの事前入力でサポートされるプロトコル {#supported-protocols-for-prefilling-user-data}
 
-以下のプロトコルを使用し、有効な正規表現で設定した場合、事前入力データフォーマットのユーザーデータをアダプティブフォームに事前入力できます。
+アダプティブフォームは、有効な正規表現で設定されている場合、次のプロトコルを介して事前入力データ形式のユーザーデータを事前入力できます。
 
-### The crx:// protocol {#the-crx-protocol}
+### crx:// プロトコル {#the-crx-protocol}
 
 ```javascript
 http
@@ -278,7 +278,7 @@ https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///t
 
 特定のノードには、`jcr:data` と呼ばれるプロパティがあり、データを保持していなければなりません。
 
-### The file:// protocol  {#the-file-protocol-nbsp}
+### file:// プロトコル {#the-file-protocol-nbsp}
 
 ```javascript
 https://`servername`/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
@@ -286,7 +286,7 @@ https://`servername`/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:
 
 参照元ファイルは、同じサーバー上になければなりません。
 
-### The https:// protocol {#the-http-protocol}
+### https:// プロトコル {#the-http-protocol}
 
 ```javascript
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://servername/somesamplexmlfile.xml

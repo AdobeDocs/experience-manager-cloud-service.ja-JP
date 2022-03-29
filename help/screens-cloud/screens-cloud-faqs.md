@@ -1,11 +1,11 @@
 ---
 title: Screens as a Cloud Service の FAQ
-description: ここでは、Screens に関するas a Cloud Service的な FAQ について説明します。
+description: このページでは、Screens as a Cloud Service に関する FAQ を説明します。
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 50%
 
 次の節では、Screens as a Cloud Service プロジェクトに関するよくある質問（FAQ）とそれに対する回答を示します。
 
-## Screens as a Cloud Serviceを指すAEM Screens Player が/etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css 形式のカスタム clientlib を選択しない場合は、どうすればよいですか？
+## Screens as a Cloud Service を指す AEM Screens Player が /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css 形式のカスタム clientlib を選択しない場合は、どうすればよいですか？
 
 AEM as a Cloud Service は、デプロイメントごとに長いキャッシュキーを変更します。AEM Screens では、Cloud Manager がデプロイメントを実行するときではなく、コンテンツが変更されたときに、オフラインキャッシュを生成します。マニフェスト内のこれらの長いキャッシュキーは無効なので、プレーヤーはこれらの *clientlibs* をダウンロードできません。
 
@@ -41,14 +41,14 @@ scripts=[
 最適なデジタルサイネージエクスペリエンスを実現するには、AEM Screens as a Cloud Service チャネルで `.png` および `.jpeg` 形式の画像を使用することをお勧めします。
 `*.tif` 形式の画像（Tag Image File 形式）は、AEM Screens as a Cloud Service ではサポートされていません。チャネルにこの形式の画像が含まれる場合、その画像はプレーヤー側ではレンダリングされません。
 
-## 開発者モード（オンライン）のチャネルがAEM Screens Player でレンダリングされない場合、管理者はどうすればよいですか？{#screens-cloud-online-channel-blank-iframe}
+## 開発者モード（オンライン）のチャネルが AEM Screens Player でレンダリングされない場合、どうすればよいですか？{#screens-cloud-online-channel-blank-iframe}
 
-AEM Screensのキャッシュ機能を活用することをお勧めしますが、チャネルを開発者モードで実行する必要があり、AEM Screens Player に空白の画面が表示される場合は、Player の開発者ツールを確認し、 `X-Frame-Options` または `frame-ancestors` エラー。 解決策は、iFrame で実行するコンテンツを許可するように Dispatcher を設定することです。 通常、次の設定が機能します。
+AEM Screens のキャッシュ機能を活用することをお勧めしますが、チャネルを開発者モードで実行する必要があり、AEM Screens Player に空白の画面が表示される場合は、Player の開発者ツールを確認し、`X-Frame-Options` エラーまたは `frame-ancestors` エラーを検索します。解決策は、コンテンツが iFrame で実行できるように Dispatcher を設定することです。通常、次の設定で動作します。
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
 
-## 登録コード制限の使用方法
+## 登録コード制限の用途は何ですか？
 
-ベストプラクティスとして、登録コードの使用を制限できます。 登録コードに問題が生じ、100 件の登録が制限されている場合、攻撃者はその数までしか登録できませんが、それ以上登録できません。 登録コードが作成され、顧客のプレーヤーの一部が既に登録されている場合は、いつでも使用制限を更新できます。 顧客が特定の登録コードに対して異常な登録アクティビティを観察した場合、調査中に制限をリアルタイムで下げ、既に登録されているプレーヤーに影響を与えることなく、誤報の場合は数を増やすことができます。
+ベストプラクティスとして、登録コードの使用を制限できます。登録コードが侵害を受けても、登録数が 100 件に制限されていると、攻撃者はその数までは登録できますが、それ以上は登録できません。登録コードが作成され、顧客のプレーヤーの一部が既に登録されている場合でも、いつでも使用制限を更新できます。特定の登録コードに対して異常な登録アクティビティがあることを顧客が観測した場合、既に登録されているプレーヤーに影響を与えることなく、リアルタイムで制限を下げつつ調査を行い、誤検知の場合は元通りに制限を増やすことができます。

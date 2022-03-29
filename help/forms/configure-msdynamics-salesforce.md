@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] クラウドサービスの設定 {#configure-azure-storage}
 
-[[!DNL Experience Manager Forms] データ統合](data-integration.md)では、アダプティブフォームを [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] の標準のフォームデータモデルに統合するためのクラウドサービスを提供しています。その結果、アダプティブフォームは、[!DNL Microsoft Dynamics 365] および [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。例えば、次の操作が可能です。
+[[!DNL Experience Manager Forms] データ統合](data-integration.md)では、アダプティブフォームを [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] の標準のフォームデータモデルに統合するためのクラウドサービスを提供しています。その結果、アダプティブフォームは、[!DNL Microsoft Dynamics 365] および [!DNL Salesforce] サーバーとやり取りして、ビジネスワークフローを有効にすることができます。次に例を示します。
 
 * アダプティブフォームの送信時にデータを [!DNL Microsoft Dynamics 365].および [!DNL Salesforce] に書き込む。
 * フォームデータモデルで定義されているカスタムエンティティを通じて、データを [!DNL Microsoft Dynamics 365] および [!DNL Salesforce] に書き込む（またはその逆の操作）。
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 [!DNL Salesforce] クラウドサービスを設定する前に、必ず次の作業を実行してください。
 
-* [OAuth 対応の接続された  [!DNL Salesforce]  アプリケーションを作成](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5)します。接続された [!DNL Salesforce] アプリケーションを作成する際に、次の形式でコールバック URL を指定します。
+* [OAuth 対応の接続された [!DNL Salesforce]  アプリケーションを作成](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5)します。接続された [!DNL Salesforce] アプリケーションを作成する際に、次の形式でコールバック URL を指定します。
 
    ```
    https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html

@@ -1,5 +1,5 @@
 ---
-title: Experience Manager  [!DNL Forms]  as a Cloud Service の通信バッチ処理
+title: Experience Manager [!DNL Forms] as a Cloud Service の通信バッチ処理
 description: ブランド志向のパーソナライズされたコミュニケーションを作成する方法は？
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
@@ -100,7 +100,7 @@ Microsoft Azure ストレージで、[コンテナ](https://docs.microsoft.com/j
 
 設定を作成するには：
 
-1. ツール/Forms/統合ストレージコネクタに移動します。
+1. ツール／Forms／統合ストレージコネクターに移動します。
 1. 設定をホストするフォルダーを開き、「作成」をクリックします。グローバルフォルダーを使用するか、フォルダーを作成します。
 1. 設定のタイトルと名前を指定します。ストレージで、「Microsoft Azure ストレージ」を選択します。
 1. 「ストレージ設定のパス」で、顧客が所有する Azure ストレージアカウントの資格情報を含むクラウド設定を参照して選択します。

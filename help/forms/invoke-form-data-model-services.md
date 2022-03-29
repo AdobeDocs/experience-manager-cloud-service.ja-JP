@@ -120,7 +120,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, c
 
 コールバック関数は、`success` および `failure` コールバック関数を持つことができます。
 
-### success コールバック関数と failure コールバック関数を持つサンプルスクリプト {#callback-function-success-failure}
+### 成功および失敗のコールバック関数を含むサンプルスクリプト {#callback-function-success-failure}
 
 以下のサンプルスクリプトでは、`guidelib.dataIntegrationUtils.executeOperation` API を使用して、`employeeOrder` フォームデータモデルで構成された `GETOrder` サービス操作を呼び出しています。
 

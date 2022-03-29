@@ -83,6 +83,6 @@ ht-degree: 94%
 
 * バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 コンテンツ転送ツールの使用に関するガイドライン、ベストプラクティス、重要な考慮事項を理解したら、ツールをインストールして使用する準備が整いました。まず、移行セットの作成から始めます。詳しくは、[コンテンツ転送ツールの基本を学ぶ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=ja)を参照してください。

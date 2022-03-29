@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 25%
+ht-degree: 48%
 
 ---
 
@@ -40,13 +40,13 @@ ht-degree: 25%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [!DNL Dynamic Media] - Dynamic Media Classicデスクトップアプリケーションを使用しなくても、AEM Dynamic Mediaインターフェイスを使用して、一般設定と公開設定を設定できるようになりました。
+* [!DNL Dynamic Media] - Dynamic Media Classic デスクトップアプリケーションを使用しなくても、AEM Dynamic Media インターフェイスを使用して、一般設定と公開設定を設定できるようになりました。
 
-* [!DNL Dynamic Media] MXF ビデオの取り込み、プレビュー、再生、公開をサポートするようになりました。 MXF ビデオの注釈とショッパブルビデオは、まだサポートされていません。
+* [!DNL Dynamic Media] は、MXF ビデオの取り込み、プレビュー、再生、公開をサポートするようになりました。MXF ビデオの注釈とショッパブルビデオは、まだサポートされていません。
 
-* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 これで、 [操作の更新、削除、名前変更、移動](/help/assets/use-assets-across-connected-assets-instances.md) リモートの DAM アセットまたはフォルダー上で 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。
+* リモート DAM と Sites デプロイメント間の接続を設定すると、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 これで、リモート DAM アセットまたはフォルダーに対して [更新、削除、名前変更、および移動操作](/help/assets/use-assets-across-connected-assets-instances.md) を実行できます。更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。
 
-### の新機能 [!DNL Assets] プレリリースチャネル {#assets-prerelease-features}
+### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
 * [!DNL AEM Dynamic Media] が次の柔軟性を提供 [1 つのエイリアスアカウントを設定](../../assets/dynamic-media/dm-alias-account.md) を使用すると、標準のDynamic Media URL とビューア埋め込みコードを確実に更新できます。 これは、SEO に良い影響を与え、リブランディングなどのビジネスコンテキストの更新を反映します。
 
@@ -61,7 +61,7 @@ ht-degree: 25%
 
 * この [公開を管理](/help/assets/manage-publication.md) の機能が強化され、ユーザーインターフェイスが改善されました。 ユーザーは、選択した宛先に対して、コンテンツを公開または非公開にできます。 [コンテンツを追加](/help/assets/manage-publication.md#add-content) を DAM リポジトリー全体の発行リストに追加する [フォルダ設定を含める](/help/assets/manage-publication.md#include-folder-settings) 選択したフォルダーのコンテンツを公開し、フィルターを適用するには、次の手順に従います。 [公開をスケジュール](/help/assets/manage-publication.md#publish-assets-later) を後の日時に変更する必要があります。
 
-### バグ修正 {#bug-fixes}
+### バグの修正 {#bug-fixes}
 
 * 元のレンディションがない未処理のアセットは、AEM On-premise から Cloud Services へのアセットの移行中に、Asset computeに送信されて処理されます。
 
@@ -69,14 +69,14 @@ ht-degree: 25%
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイルに XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式のフォームを生成する
    * XFA フォームの PDF ファイルから印刷用 PDF を生成する。
    * ソーステンプレートを用いて複数のデータセットを結合することにより、PDF、PostScript、PCL および ZPL の各種形式のドキュメントを一括生成する
 
-* **コミュニケーション API で作成されたレコードのドキュメントおよびPDFドキュメント用のカスタムフォント**:コミュニケーション API を使用して生成されたPDFドキュメントで、ブランド承認済みフォントを使用して、組織の要件に合わせることができるようになりました。
+* **Communications API で作成されたレコードのドキュメントおよび PDF ドキュメント用のカスタムフォント**：Communications API を使用して生成された PDF ドキュメントで、ブランド承認済みフォントを使用して、組織の要件に合わせることができるようになりました。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms}
 
@@ -101,21 +101,21 @@ ht-degree: 25%
 
 ### リリース日 {#release-date-cm}
 
-AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年 1 月 20 日です。 次回のリリースは 2022年2月10日（PT）の予定です。
+AEM as a Cloud Service 2022.01.0 における Cloud Manager のリリース日は 2022年1月20日（PT）です。次回のリリースは 2022年2月10日（PT）の予定です。
 
 ### 新機能 {#what-is-new-cm}
 
-* Cloud Manager では次の処理がおこなわれます。 [同じ git コミットが使用されたことを検出した場合は、コードベースを再構築しないでください](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) 複数のフルスタックパイプライン実行で実行する場合。
-* AEM環境ログにアクセスするには、 **デプロイメントマネージャー** 製品プロファイル。 このプロファイルを持たないユーザーには、ユーザーインターフェイスに無効なボタンが表示されます。
-* Sites がソリューションとして有効になっていないプログラムに対しては、UI ではフロントエンドパイプライン設定を許可しません。
+* Cloud Manager は、複数のフルスタックパイプライン実行で [同じ git コミットが使用されていることを検出した場合、コードベースの再ビルドを避けます](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)。
+* AEM 環境ログにアクセスするには、**Deployment Manager** 製品プロファイルが必要になりました。このプロファイルを持たないユーザーには、ユーザーインターフェイスに無効なボタンが表示されます。
+* UI は、Sites がソリューションとして有効化されていないプログラムのフロントエンドパイプライン設定を許可しません。
 * Git パスワードの生成時に、有効期限が表示されます。
 
-### バグ修正 {#bug-fixes-cm}
+### バグの修正 {#bug-fixes-cm}
 
-* 一部のフロントエンドパイプラインデプロイメントで発生した Null ポインターの例外が修正されました。
-* 環境で古いバージョンのAEMが実行されている場合に、環境変数を追加、更新および削除できるようになりました。
-* まれに、スケジュール済みステップを使用したパイプラインでは、イメージのビルドステップがエラーとしてマークされなくなりました。
-* リポジトリーが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリー名が表示されるようになりました。
+* 一部のフロントエンドパイプラインデプロイメントで発生した null ポインター例外が修正されました。
+* 古いバージョンの AEM が実行されている環境で、環境変数を追加、更新、削除できるようになりました。
+* まれに、スケジュールされたステップを使用したパイプラインでは、イメージのビルドステップが「エラー」としてマークされなくなりました。
+* リポジトリが 1 つだけのプログラムの場合、パイプライン実行画面にリポジトリ名が表示されるようになりました。
 
 ## コンテンツ転送ツール {#ctt-release}
 
@@ -127,7 +127,7 @@ AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年
 
 * コンテンツの検証 — コンテンツ転送ツールで抽出されたすべてのコンテンツがターゲットインスタンスに正常に取り込まれたかどうかを確実に判断できます。 この機能を使用するには、 `System Console` ソースAEM環境の 参照： [コンテンツ転送の検証 — はじめに](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) を参照してください。
 
-### バグ修正 {#bug-fixes-ctt}
+### バグの修正 {#bug-fixes-ctt}
 
 * ユーザーマッピングでは大文字と小文字が区別されるので、一部のユーザーがマッピングされませんでした。 この問題が修正されました。ユーザーマッピングでは、大文字と小文字が区別されなくなりました。
 
@@ -144,7 +144,7 @@ AEM as a Cloud Service 2022.01.0の Cloud Manager のリリース日は 2022 年
 * Oak インデックスの定義に関連する問題を特定し、AEM as a Cloud Serviceとの非互換性を検出する機能。
 * Externalizer 設定の使用方法を検出し、レポートする機能。 AEMas a Cloud Serviceの Externalizer 設定は Cloud Manager で設定されるので、互換性を維持するには、既存の Externalizer 設定をリファクタリングする必要があります。
 
-### バグ修正 {#bug-fixes-bpa}
+### バグの修正 {#bug-fixes-bpa}
 
 * 一部のシナリオでは、FormsSelectiveFeaturesAnalysis がアサーションエラーをスローしたため、BPA が実行に失敗しました。 この問題が修正されました。
 * BPA は、WRK パターンに関連する結果を CRITICAL ではなく MAJOR として報告していました。 この問題が修正されました。

@@ -1,17 +1,17 @@
 ---
 title: 3D アセットのプレビュー
-description: 3D アセットをプレビューする方法について、Experience Managerで説明します。
+description: Experience Manager で 3D アセットをプレビューする方法を説明します。
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Adobe Experience Manager での 3D アセットのプレビュー{#previewing-3d-assets}
+# Adobe Experience Manager での 3D アセットのプレビュー {#previewing-3d-assets}
 
 Adobe Experience Manager では、オーサリングプロセスの一環として、3D アセットのアップロード、配信、インタラクティブプレビューをサポートしています。
 

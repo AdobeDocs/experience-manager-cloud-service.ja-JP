@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備フ�
 
 ベストプラクティス分析カードを使用するには、次の手順に従います。
 
-1. **ベストプラクティス分析**&#x200B;カードの「**レビュー**」ボタンをクリックします。
+1. **ベストプラクティス分析** カードの「**レビュー**」ボタンをクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/readiness-2.png)
 
@@ -44,10 +44,10 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備フ�
    >[!NOTE]
    >ビジネスクリティカルなインスタンスへの影響を回避するために、カスタマイズ、設定、コンテンツ、ユーザーアプリケーションの領域で、実稼動環境にできる限り近いオーサー環境で BPA を実行することをお勧めします。または、実稼動版のオーサー環境のクローンで実行することもできます。
 
-   1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
+   1. [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) ポータルに移動し、ベストプラクティスアナライザーを zip ファイルとしてダウンロードします。
 
       >[!NOTE]
-      >BPA の実行方法については、[ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#imp-considerations)を参照してください。
+      >BPA の実行方法については、 [ベストプラクティスアナライザーの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja#imp-considerations) を参照してください。
 
    1. レポートを CSV 形式で書き出します。
 
@@ -62,7 +62,7 @@ Cloud Acceleration Manager でプロジェクトを作成したら、準備フ�
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. CAM のベストプラクティス分析ダッシュボードを確認し、表示内容を検討します。詳しくは、次の[ベストプラクティス分析レポートの確認](#analysis-report)の節を参照してください。
+1. CAM のベストプラクティス分析ダッシュボードを確認し、表示内容を検討します。詳しくは、次の [ベストプラクティス分析レポートの確認](#analysis-report) の節を参照してください。
 
    >[!NOTE]
    >新しいレポートをアップロードすると、すべての評価がリセットされます。
@@ -86,44 +86,44 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
    ![画像](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
-### 近似曲線の表示の使用 {#trendline-view-cam}
+### 「トレンドラインを表示」の使用 {#trendline-view-cam}
 
-1 つのプロジェクトに複数のベストプラクティスアナライザー (BPA) レポートをアップロードする場合、 **トレンドラインを表示** オプションを使用して、履歴 BPA レポートの結果を表示および比較できます。
+1 つのプロジェクトに複数のベストプラクティスアナライザー（BPA）レポートをアップロードする場合、「**トレンドラインを表示**」オプションを選択して、履歴 BPA レポートの結果を表示および比較できます。
 
 トレンドラインオプションからレポートを表示するには、次の手順に従います。
 
 >[!NOTE]
->1 つのプロジェクトに複数の BPA レポートをアップロードすると、 **...** アイコン
+>1 つのプロジェクトに複数の BPA レポートをアップロードすると、 「**...**」アイコンが表示されます。
 
-1. プロジェクトに移動し、をクリックします。 **レビュー** から **ベストプラクティス分析** カード **準備** フェーズ。
+1. プロジェクトに移動し、 **準備** 段階の **ベストプラクティス分析** カードから「**レビュー**」をクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. をクリックします。 **...** アイコンをクリックしてドロップダウンを表示します。
+1. 「**...**」アイコンをクリックしてドロップダウンを表示します。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >表示されるレポートは常に、最新のレポート日付を持つレポートです。
 
-1. クリック **トレンドラインを表示**（下の図を参照）。
+1. 「**トレンドラインを表示**」をクリックします（下図を参照）。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. クリック **トレンドラインを表示** 次の図に示すように、レポートのトレンドライン表示を開きます。
+1. 「**トレンドラインを表示**」をクリックすると、次の図に示すように、レポートのトレンドライン表示が開きます。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
-   >トレンドラインレポートは、履歴 BPA レポートの結果をグラフで表示します。
+   >トレンドラインレポートには、履歴 BPA レポートの結果がグラフで表示されます。
    >
-   >次の 2 つのグラフが表示され、
-   >1. **結果トレンドのレポート**
-   >1. **カスタムコンポーネントとテンプレートトレンド**
+   >次の項目のトレンドを示す 2 つのグラフが表示されます。
+   >1. **レポート結果のトレンド**
+   >1. **カスタムコンポーネントとテンプレートのトレンド**
 
    >
-   >次の図に示すように、ドロップダウンからグラフィカルビューを追加または変更できます。
+   >次の図に示すように、ドロップダウンからグラフィック表示を追加または変更できます。
    >![画像](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
@@ -161,7 +161,7 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 ![画像](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->結果カテゴリと重要度レベルについては、[ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja)を参照してください。
+>結果カテゴリと重要度レベルについては、 [ベストプラクティスアナライザーレポートの説明](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=ja) を参照してください。
 
 #### ベストプラクティス評価 {#best-practices-assessment}
 
@@ -199,31 +199,31 @@ Cloud Acceleration Manager で印刷プレビューオプションを選択し�
 
 ### ベストプラクティス分析レポートの削除 {#delete-trendline}
 
-トレンドラインビューからレポートを削除するには、次の手順に従います。
+トレンドライン表示からレポートを削除するには、次の手順に従います。
 
 >[!IMPORTANT]
->レポートは、プロジェクトに複数のレポートがアップロードされている場合にのみ削除できます。
+>レポートは、複数のレポートがプロジェクトにアップロードされている場合にのみ削除できます。
 
-1. プロジェクトに移動し、をクリックします。 **レビュー** から **ベストプラクティス分析** カード **準備** フェーズ。
+1. プロジェクトに移動し、 **準備** 段階の **ベストプラクティス分析** カードから「**レビュー**」をクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. をクリックします。 **...** アイコンをクリックしてドロップダウンを表示します。
+1. 「**...**」アイコンをクリックしてドロップダウンを表示します。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. クリック **トレンドラインを表示**（下の図を参照）。
+1. 「**トレンドラインを表示**」をクリックします（下図を参照）。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. 次から削除アイコンをクリックします。 **トレンドラインレポート** 画面
+1. **トレンドラインレポート** 画面の削除アイコンをクリックします。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
-1. クリック **削除** 削除を確定します。
+1. 「**削除**」をクリックして、削除を確認します。
 
    ![画像](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を理解したら、次のステップの[実装フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=ja)に進みます。

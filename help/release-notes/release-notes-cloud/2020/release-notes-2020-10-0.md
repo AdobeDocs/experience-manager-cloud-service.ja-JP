@@ -5,7 +5,7 @@ exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -46,17 +46,17 @@ ht-degree: 88%
 
 ### [!DNL Forms] の新機能  {#what-is-new-forms-oct-2021}
 
-* **Analytics for Adaptive Forms**:Adobe Analytics for Adaptive Formsでログイン済みとログインしていない（匿名）の両方の動作を取得および追跡して、エンドユーザーのインサイトを収集できるようになりました。 これにより、ビジネスユーザーは収集されたインサイトに基づいて、十分な情報に基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルに関する決定を下すことができます。
+* **Analytics for Adaptive Forms**：Adobe Analytics for Adaptive Forms を使用して、ログイン済みの場合と未ログイン（匿名）の場合の動作をキャプチャおよび追跡し、エンドユーザーのインサイトを収集できるようになりました。これにより、ビジネスユーザーは、収集されたインサイトに基づいて、アダプティブフォームのコンテンツ、レイアウトおよびスタイルについて、情報に基づいた意思決定を行えます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
-* **AEM Workflow データを外部化して処理を保護**:顧客が管理するリポジトリに、機密の個人データ (SPD) 要素を含むプロセス内のAEM Workflow 変数データを保存して、処理を安全に行うことができます。 ワークフローの処理中、ワークフロー変数に保存されたデータはAEMリポジトリに保持されません。 顧客が管理するリポジトリからオンデマンドで取得されます。
+* **安全な処理のための AEM ワークフローデータの外部化**：機密個人データ（SPD）要素を含んだインプロセス AEM ワークフロー変数データを、安全な処理のために、顧客が管理するリポジトリに保存できます。ワークフローの処理中、ワークフロー変数に保存されたデータは AEM リポジトリには保持されません。顧客が管理するリポジトリからオンデマンドで取得されます。
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ja) は、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成する場合に役立ちます。 このサービスを使用すると、同期モードとバッチモードでドキュメントを生成できます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=ja) を使用すると、テンプレートと XML データを組み合わせて、様々な形式のドキュメントを生成できます。このサービスでは、同期モードとバッチモードでドキュメントを生成できます。
 
-ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てに電子メールを送信します。
+ベータ版プログラムに新規登録するには、[!DNL formscsbeta@adobe.com] 宛てにメールを書きます。
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -66,7 +66,7 @@ ht-degree: 88%
 
 * CIF コアコンポーネント v1.4.0 をリリースしました。詳しくは、[CIF コアコンポーネント](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0)を参照してください。
 
-### バグ修正 {#bug-fixes-commerce}
+### バグの修正 {#bug-fixes-commerce}
 
 * 製品コンソールおよびピッカーでの GraphQL リクエストが、HTTP POST を使用して実行されていました。この問題は修正されて、Apollo GraphQL クライアントが GraphQL クライアント OSGi 設定に従って GET リクエストをサポートするようになりました（設定済みの場合）。
 
@@ -91,7 +91,7 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 * 概要ページの環境カードに最大 3 つの環境が表示されるようになりました。「**すべてを表示**」ボタンを選択して環境の概要ページに移動し、環境の完全なリストを含む表を表示できます。
 詳しくは、「[環境の表示](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)」を参照してください。
 
-### バグ修正 {#bug-fixes-cloud-manager}
+### バグの修正 {#bug-fixes-cloud-manager}
 
 * 環境が完全に作成される前に、Cloud Manager から開発者コンソールへのリンクが正しくアクティブになっていませんでした。
 
@@ -123,6 +123,6 @@ Experience Manager as a Cloud Service 2020.10.0 の Cloud Manager のリリー�
 
 * ログのユーザーエクスペリエンスが向上しました。抽出ログと取り込みログにタイムスタンプが追加されました。ログが空かどうかを知らせるメッセージが追加されました。
 
-### バグ修正 {#ctt-bug-fixes}
+### バグの修正 {#ctt-bug-fixes}
 
 * 移行セットに含まれているパスのファイル名が部分的に似ている場合、コンテンツ転送ツールがコンテンツファイルをスキップしていました。

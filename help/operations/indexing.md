@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
 source-wordcount: '2366'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -42,29 +42,29 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 ## 使用方法 {#how-to-use}
 
-インデックスの定義は、次の 3 つの使用例で構成できます。
+インデックスの定義は、以下の 3 つのユースケースで構成されます。
 
-1. 新しい顧客インデックス定義の追加.
+1. 新しい顧客インデックス定義の追加。
 1. 既存のインデックス定義の更新。これは、既存のインデックス定義の新しいバージョンを追加することを意味します。
 1. 冗長または古い既存のインデックスの削除。
 
-上記のポイント 1 と 2 の両方について、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。詳しくは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md)ドキュメントを参照してください。
+上記のポイント 1 と 2 の両方について、それぞれの Cloud Manager リリーススケジュールで、カスタムコードベースの一部として新しいインデックス定義を作成する必要があります。詳しくは、 [AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md) ドキュメントを参照してください。
 
 ## インデックス名 {#index-names}
 
-インデックス定義は、次のいずれかになります。
+インデックスの定義は、以下のいずれかになります。
 
-1. 標準提供のインデックス。 例として、 `/oak:index/cqPageLucene-2`.
-1. 標準提供のインデックスのカスタマイズ。 このようなカスタマイズは、顧客が定義します。 例として、 `/oak:index/cqPageLucene-2-custom-1`.
-1. 完全なカスタムインデックス。 例として、 `/oak:index/acme.product-1-custom-2`. 名前の競合を避けるために、完全なカスタムインデックスにはプレフィックスが必要です ( 例： `acme.`
+1. 標準提供のインデックス。例として、`/oak:index/cqPageLucene-2` があります。
+1. 標準提供のインデックスのカスタマイズ。お客様がカスタマイズを定義できます。例として、`/oak:index/cqPageLucene-2-custom-1` があります。
+1. 完全なカスタムインデックス。例として、`/oak:index/acme.product-1-custom-2` があります。名前の競合を避けるために、完全なカスタムインデックスには `acme.` のようなプレフィックスを付ける必要があります。
 
-標準提供のインデックスのカスタマイズと完全なカスタムインデックスの両方に、を含める必要があることに注意してください。 `-custom-`. 完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
+標準提供のインデックスのカスタマイズと完全なカスタムインデックスの両方に、`-custom-` を含める必要があることに注意してください。完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
 
 ### 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`、標準の最新のインデックス定義を *Cloud Service環境* カスタマイズを上に追加すると、必要な設定が誤って削除されるのを防ぐことができます。 例えば、`/oak:index/damAssetLucene-6/tika` の下の `tika` ノードは必須ノードで、カスタマイズしたインデックスにも含める必要があり、Cloud SDK には存在しません。
+>標準提供のインデックス（`damAssetLucene-6` など）をカスタマイズする場合は、 *Cloud Service 環境* から最新の標準提供インデックス定義をコピーして、上部にカスタマイズを追加します。これにより、必要な設定が誤って削除されるのを防ぐことができます。例えば、`/oak:index/damAssetLucene-6/tika` の下の `tika` ノードは必須ノードで、カスタマイズしたインデックスにも含める必要があり、Cloud SDK には存在しません。
 
 次の命名パターンに従って、実際のインデックス定義を含む新しいインデックス定義パッケージを準備する必要があります。
 
@@ -96,7 +96,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 >[!TIP]
 >
->AEM as a Cloud Service を使用する場合に必要なパッケージ構造の詳細については、[AEM プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)ドキュメントを参照してください。
+>AEM as a Cloud Service を使用する場合に必要なパッケージ構造の詳細については、 [AEM プロジェクト構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md) ドキュメントを参照してください。
 
 ## Blue-Green デプロイメントを使用したインデックス管理 {#index-management-using-blue-green-deployments}
 
@@ -142,11 +142,11 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 | 索引 | 標準提供インデックス | バージョン 1 で使用 | バージョン 2 で使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene | 可 | 可 | 不可 |
-| /oak:index/damAssetLucene-custom-1 | 可（カスタマイズ） | 不可 | 可 |
-| /oak:index/acme.product-custom-1 | 不可 | 可 | 不可 |
-| /oak:index/acme.product-custom-2 | 不可 | 不可 | 可 |
-| /oak:index/cqPageLucene | 可 | 可 | 可 |
+| /oak:index/damAssetLucene | はい | はい | いいえ |
+| /oak:index/damAssetLucene-custom-1 | 可（カスタマイズ） | いいえ | はい |
+| /oak:index/acme.product-custom-1 | いいえ | はい | いいえ |
+| /oak:index/acme.product-custom-2 | いいえ | いいえ | はい |
+| /oak:index/cqPageLucene | はい | はい | はい |
 
 バージョン番号は、インデックスが変更されるたびに増加します。製品自体のインデックス名と衝突するカスタムインデックス名を回避するには、カスタムインデックスと、標準提供のインデックスの変更を `-custom-<number>` で終える必要があります。
 
@@ -156,10 +156,10 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 | 索引 | 標準提供インデックス | バージョン 2 で使用 | バージョン 3 で使用 |
 |---|---|---|---|
-| /oak:index/damAssetLucene-custom-1 | 可（カスタマイズ） | 可 | 不可 |
-| /oak:index/damAssetLucene-2-custom-1 | 可（damAssetLucene-custom-1 および damAssetLucene-2 から自動的に結合） | 不可 | 可 |
-| /oak:index/cqPageLucene | 可 | 可 | 不可 |
-| /oak:index/cqPageLucene-2 | 可 | 不可 | 可 |
+| /oak:index/damAssetLucene-custom-1 | 可（カスタマイズ） | はい | いいえ |
+| /oak:index/damAssetLucene-2-custom-1 | 可（damAssetLucene-custom-1 および damAssetLucene-2 から自動的に結合） | いいえ | はい |
+| /oak:index/cqPageLucene | はい | はい | いいえ |
+| /oak:index/cqPageLucene-2 | はい | いいえ | はい |
 
 ### 現在の制限事項 {#current-limitations}
 
@@ -167,7 +167,7 @@ Blue-Green デプロイメントでは、ダウンタイムは発生しません
 
 ### インデックスの追加 {#adding-an-index}
 
-という名前の完全なカスタムインデックスを追加するには `/oak:index/acme.product-custom-1` 新しいバージョン以降のアプリケーションで使用するには、インデックスを次のように設定する必要があります。
+新しいバージョン以降のアプリケーションで使用する `/oak:index/acme.product-custom-1` という名前の完全カスタムインデックスを追加するには、インデックスを以下のように設定する必要があります。
 
 `acme.product-1-custom-1`
 

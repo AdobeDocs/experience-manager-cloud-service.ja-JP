@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームのローカリゼーション用に新しいロケールをサポート
+title: アダプティブフォームのローカライゼーション用に新しいロケールをサポート
 seo-title: Supporting new locales for Adaptive Forms localization
 description: AEM Forms は、アダプティブフォームのローカライズ用に新しくロケールを追加できます。デフォルトでサポートされているロケールは、英語、フランス語、ドイツ語、日本語です。
 seo-description: AEM Forms allows you to add new locales for localizing Adaptive Forms. The supported locales by default are English, French, German, and Japanese.
@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# アダプティブフォームのローカリゼーション用に新しいロケールをサポート{#supporting-new-locales-for-adaptive-forms-localization}
+# アダプティブフォームのローカライゼーション用に新しいロケールをサポート{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## ロケールの辞書について {#about-locale-dictionaries}
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 **グローバル辞書** 2 つのグローバル辞書があり、AEM クライアントライブラリで JSON オブジェクトの形で管理されています。これらの辞書にはデフォルトのエラーメッセージ、12 か月の名前、通貨シンボル、日付と時間のパターンなどが含まれます。これらの辞書は CRXDe Lite の /libs/fd/xfaforms/clientlibs/I18N にあります。これらの場所では、各ロケールごと別々のフォルダーが用意されています。グローバルの辞書は頻繁に更新されることはありません。各ロケールごとに別の JavaScript ファイルを保持することで、ブラウザーによりそれらがキャッシュされるため、同一サーバー上で異なるアダプティブフォームにアクセスする際に、ネットワーク帯域幅の使用量を減らすことができます。
 
-### アダプティブフォームのローカリゼーションの仕組み {#how-localization-of-adaptive-form-works}
+### アダプティブフォームのローカライゼーションの仕組み {#how-localization-of-adaptive-form-works}
 
 アダプティブフォームのロケールを識別する方法は 2 つあります。アダプティブフォームがレンダリングされると、リクエストされたロケールが次のように識別されます。
 
@@ -55,7 +55,7 @@ ht-degree: 100%
 
 リクエストされたロケールでクライアントライブラリが存在しない場合、ロケールに含まれる言語コードがクライアントライブラリに存在しないかチェックします。例えば、リクエストされたロケールが `en_ZA`（南アフリカ英語）で `en_ZA` 用のクライアントライブラリが存在しない場合、アダプティブフォームは、`en`（英語）言語が存在する場合、このクライアントライブラリを使用します。ただし、どちらも存在しない場合、アダプティブフォームでは `en` ロケールの辞書が使用されます。
 
-## サポートされていないロケールにローカリゼーションのサポートを追加する {#add-localization-support-for-non-supported-locales}
+## サポートされていないロケールにローカライゼーションのサポートを追加する {#add-localization-support-for-non-supported-locales}
 
 現在、[!DNL AEM Forms] がサポートしているアダプティブフォームコンテンツのロケールは、英語（en）、スペイン語（es）、フランス語（fr）、イタリア語（it）、ドイツ語（de）、日本語（ja）、ブラジルポルトガル語（pt-BR）、中国語（zh-CN）、台湾中国語（zh-TW）、韓国語（ko-KR）です。
 

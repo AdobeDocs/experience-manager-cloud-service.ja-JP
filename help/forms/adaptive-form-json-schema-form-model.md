@@ -334,7 +334,7 @@ JSON スキーマの例を示します。
 
 ## JSON スキーマ定義でのフィールドの事前設定 {#pre-configuring-fields-in-json-schema-definition}
 
-**aem:afProperties** プロパティを使用して JSON スキーマのフィールドを事前設定し、カスタムのアダプティブフォームコンポーネントにマップできます。以下に例を示します。
+**aem:afProperties** プロパティを使用して JSON スキーマのフィールドを事前設定し、カスタムのアダプティブフォームコンポーネントにマップできます。次に例を示します。
 
 ```json
 {

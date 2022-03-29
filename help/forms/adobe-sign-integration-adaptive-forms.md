@@ -8,7 +8,7 @@ exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 98%
 
    ![OAuth 設定](assets/oauthconfig_new.png)
 
-1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。内 **[!UICONTROL 設定]** タブ、 **[!UICONTROL OAuth URL]** 「 」フィールドには、デフォルトの URL が記述されます。 URL の形式は次のとおりです。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL OAuth URL]**」フィールドにデフォルトの URL が表示されます。URL は次のような形式になります。
 
    `https://<shard>/public/oAuth/v2`
 

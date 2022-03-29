@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1069'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 77%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="リリースノート"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。パッケージは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) をソースAdobe Experience Manager(AEM) インスタンス上に置きます。 最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
 
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
@@ -80,7 +80,7 @@ ht-degree: 77%
       >[!NOTE]
       >移行セット名には特殊文字を使用できません。
 
-   1. **クラウドサービス設定**：移行先の AEM as a Cloud Service オーサーの URL を入力します。
+   1. **Cloud Service 設定**：移行先の AEM as a Cloud Service オーサーの URL を入力します。
 
       >[!NOTE]
       >コンテンツ転送を行う際は、一度に最大 10 個の移行セットを作成し維持管理できます。
@@ -91,9 +91,9 @@ ht-degree: 77%
       >[!NOTE]
       >「**アクセストークンを開く**」ボタンを使用してアクセストークンを取得できます。ターゲットCloud Serviceインスタンスの「管理者」グループに属していることを確認する必要があります。
 
-   1. **パラメーター**：移行セットを作成するには、次のパラメータを選択します。
+   1. **パラメーター**： 移行セットを作成するには、次のパラメータを選択します。
 
-      1. **バージョンを含める**：必要に応じて選択します。バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
+      1. **バージョンを含める**： 必要に応じて選択します。バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
 
          ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
@@ -101,7 +101,7 @@ ht-degree: 77%
          >バージョンを移行セットの一部に含める予定で、`wipe=false` を指定して追加を行う場合、コンテンツ転送ツールの現在の制限事項により、バージョンのパージを無効にする必要があります。バージョンのパージを有効にしたまま、移行セットへの追加を行う場合は、`wipe=true` を指定して取り込みを実行する必要があります。
 
 
-      1. **含めるパス**：パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
+      1. **含めるパス**： パスブラウザーを使用して、移行する必要があるパスを選択します。パスピッカーは、キーボード入力または選択による入力を受け付けます。
 
          >[!IMPORTANT]
          >移行セットの作成時には、次のパスは制限されます。
@@ -166,6 +166,6 @@ ht-degree: 77%
 ![画像](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。

@@ -1,6 +1,6 @@
 ---
 title: アセットインサイト
-description: サードパーティの Web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡します。
+description: サードパーティの web サイト、マーケティングキャンペーン、アドビのクリエイティブソリューションで使用される画像のユーザー評価と使用状況統計を追跡します。
 contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
@@ -8,7 +8,7 @@ exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -97,11 +97,11 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. 「**[!UICONTROL インサイト設定]**」カードをクリックします。
+1. 「**[!UICONTROL Insights 設定]**」カードをクリックします。
 
-1. Analytics Web サービスにアクセスする情報については、 **[!UICONTROL Analytics]** > **[!UICONTROL 管理者]** > **[!UICONTROL 管理ツール]** > **[!UICONTROL カンパニー設定]** > **[!UICONTROL Web サービス]** をクリックし、 **[!UICONTROL 共有暗号鍵]** キー。
+1. Analytics web サービスのアクセス情報については、 **[!UICONTROL Analytics]**／**[!UICONTROL 管理]**／**[!UICONTROL 管理ツール]**／**[!UICONTROL 会社設定]**／**[!UICONTROL web サービス]** に移動し、 **[!UICONTROL 共有された秘密鍵]** をコピーします。
 
-   ウィザードで、 **[!UICONTROL データセンター]**&#x200B;をクリックし、 **[!UICONTROL 会社]**, Web サービス **[!UICONTROL ユーザー名]**&#x200B;をクリックし、 **[!UICONTROL 共有暗号鍵]** キー。
+   ウィザードで、 **[!UICONTROL データセンター]** を選択し、 **[!UICONTROL 会社]** の表示名、web サービスの **[!UICONTROL ユーザー名]** を入力して、 **[!UICONTROL 共有暗号鍵]** を貼り付けます。
 
    「**[!UICONTROL 認証]**」をクリックします。
 
@@ -109,11 +109,11 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *図：[!DNL Experience Manager]*&#x200B;のアセットインサイトに Adobe Analytics を設定する
 
-1. 認証が成功すると、ドロップダウンにレポートスイートが表示されます。 Adobe Analytics **[!UICONTROL レポートスイート]** アセットインサイトでデータを取得する場所から。 「**[!UICONTROL 追加]**」をクリックします。
+1. 認証が成功すると、ドロップダウンにレポートスイートが表示されます。Assets Insights でデータを取得する場所から Adobe Analytics **[!UICONTROL レポートスイート]** を選択します。「**[!UICONTROL 追加]**」をクリックします。
 
 1. [!DNL Experience Manager] でレポートスイートが設定されたら、「**[!UICONTROL 完了]**」をタップします。
 
-詳しくは、 [Adobe Analytics Web サービス](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
+詳しくは、 [Adobe Analytics web サービス](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=ja) を参照してください。
 
 ### ページトラッカー {#page-tracker}
 

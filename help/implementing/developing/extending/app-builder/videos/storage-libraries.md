@@ -1,6 +1,6 @@
 ---
 title: App Builder ストレージライブラリ
-description: App Builder アプリケーションの状態およびファイルストレージライブラリについて説明します。
+description: App Builder アプリケーションの状態ストレージライブラリおよびファイルストレージライブラリについて説明します。
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,7 +12,7 @@ exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> _Adobeプロジェクト Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
+> _Adobe Project Firefly は、このシリーズのビデオで言及されているように、現在は App Builder という名前になっています_
 
 ## ストレージライブラリの概要
 

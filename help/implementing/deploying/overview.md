@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ AEM as a Cloud Service でのコード開発の基本は、AEM On Premise や Ma
 
 ### Cloud Manager を使用したデプロイメント {#deployments-via-cloud-manager}
 
-お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) クラウド環境では、名前に「cp2fm」が含まれ、変換後のパッケージではすべてのメタデータが削除されます。 これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
+お客様は、Cloud Manager を使用してカスタムコードをクラウド環境にデプロイします。Cloud Manager は、ローカルに作成したコンテンツパッケージを Sling Feature Model に準拠したアーティファクトに変換することに注意してください（このモデルは、クラウド環境で動作する際の AEM as a Cloud Service アプリケーションを記述するものです）。その結果、クラウド環境の [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) でパッケージを調べると、名前に「cp2fm」が含まれており、変換後のパッケージはすべてのメタデータが削除されています。これらを操作することはできません。つまり、ダウンロードしたり、複製したり、開いたりすることはできません。コンバーターについて詳しくは、[こちら](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)を参照してください。
 
 AEM as a Cloud Service アプリケーション用に作成されたコンテンツパッケージでは、不変コンテンツと可変コンテンツを明確に分離する必要があります。Cloud Manager は可変コンテンツのみインストールし、次のようなメッセージも出力します。
 
@@ -104,12 +104,12 @@ Cloud Manager で可変リポジトリーにデプロイされるコンテンツ
    * フォルダー（追加、変更、削除）
    * 編集可能なテンプレート（追加、変更、削除）
    * コンテキスト対応の設定（`/conf` 配下のあらゆるもの）（追加、変更、削除）
-   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、[Jackrabbit FileVault のドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html)を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
+   * スクリプト（パッケージは、パッケージのインストールプロセスの様々な段階でインストールフックをトリガーできます）：インストールフックについては、 [Jackrabbit FileVault のドキュメント](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) を参照してください。AEM as a Cloud Service では現在、FileVault バージョン 3.4.0 を使用しています（インストールフックの使用は管理者ユーザー、システムユーザー、管理者グループのメンバーに限定されています）。
 
-`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、[AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja)を参照してください。
+`/apps` 配下の install.author フォルダーまたは install.publish フォルダーにパッケージを埋め込むことで、可変コンテンツのインストールをオーサーまたはパブリッシュのみに制限することができます。この分離を反映した再構築は AEM 6.5 で行われました。推奨されるプロジェクト再構築の詳細については、 [AEM 6.5 のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=ja) を参照してください。
 
 >[!NOTE]
->コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、を介して手動でインストールする必要があります。 [パッケージマネージャー。](/help/implementing/developing/tools/package-manager.md)
+>コンテンツパッケージは、すべての環境タイプ（開発、ステージ、実稼動）にデプロイされます。デプロイメントを特定の環境に限定することはできません。この制限があるのは、自動実行のテスト実行オプションが確実に適用されるようにするためです。環境に固有のコンテンツは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して手動でインストールする必要があります。
 
 また、可変コンテンツパッケージの変更を適用後にロールバックする仕組みはありません。問題を検出した場合は、次回のコードリリースで修正するか、最後の手段としてシステム全体をデプロイメント前の時点に復元するかを選択できます。
 
@@ -146,7 +146,7 @@ Cloud Manager がアプリケーションをデプロイすると、コンテン
 repoinit ステートメントを作成するには、次の手順に従います。
 
 1. ファクトリ PID の OSGi 設定 `org.apache.sling.jcr.repoinit.RepositoryInitializer` をプロジェクトの設定フォルダーに追加します。設定には、**org.apache.sling.jcr.repoint.RepositoryInitializer～initstructure** など、わかりやすい名前を付けます。
-1. 設定のスクリプトプロパティに repoinit ステートメントを追加します。構文とオプションについては、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/repository-initialization.html)を参照してください。なお、子フォルダーの前に親フォルダーを明示的に作成する必要があります。例えば、`/content` を明示的に作成してから `/content/myfolder` を作成し、その後に `/content/myfolder/mysubfolder` を作成します。ACL を下位レベルの構造に設定する場合は、ACL を上位レベルに設定し、`rep:glob` 制限を適用することをお勧めします。例えば、`(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))` のように指定します。
+1. 設定のスクリプトプロパティに repoinit ステートメントを追加します。構文とオプションについては、 [Sling のドキュメント](https://sling.apache.org/documentation/bundles/repository-initialization.html) を参照してください。なお、子フォルダーの前に親フォルダーを明示的に作成する必要があります。例えば、`/content` を明示的に作成してから `/content/myfolder` を作成し、その後に `/content/myfolder/mysubfolder` を作成します。ACL を下位レベルの構造に設定する場合は、ACL を上位レベルに設定し、`rep:glob` 制限を適用することをお勧めします。例えば、`(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))` のように指定します。
 1. 実行時にローカル開発環境で検証します。
 
 <!-- last statement in step 2 to be clarified with Brian -->
@@ -159,7 +159,7 @@ repoinit ステートメントを作成するには、次の手順に従いま�
 >
 >ACL の場合、深い構造の作成は面倒な作業になる可能性があるので、上位レベルで ACL を定義し、rep:glob 制限を使用して ACL の適用範囲を制約するほうが合理的です。
 
-repoinit について詳しくは、[Sling のドキュメント](https://sling.apache.org/documentation/bundles/repository-initialization.html)を参照してください。
+repoinit について詳しくは、 [Sling のドキュメント](https://sling.apache.org/documentation/bundles/repository-initialization.html) を参照してください。
 
 <!-- ### Packaging of Immutable and Mutable Packages {#packaging-of-immutable-and-mutable-packages}
 
@@ -173,17 +173,17 @@ above appears to be internal, to confirm with Brian -->
 >abstract="コンテンツパッケージを「1回限り」としてインストールするユースケースへのパッケージマネージャーの使用方法を参照します。このようなユースケースには、実稼動環境での問題をデバッグするために特定のコンテンツを実稼動環境からステージング環境に読み込む場合や、オンプレミス環境から AEM Cloud 環境に小規模なコンテンツパッケージを転送する場合などが含まれます。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja#cloud-migration" text="コンテンツ転送ツール"
 
-コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。次のシナリオでは、 [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) は、AEMas a Cloud Serviceの環境で使用できます。
+コンテンツパッケージを「1 回限りのもの」としてインストールする必要がある場合が考えられます。例えば、実稼動環境での問題をデバッグするために、実稼動環境からステージング環境に特定のコンテンツを読み込む場合などです。これらのシナリオでは、AEM as a Cloud Service 環境で [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用できます。
 
 パッケージマネージャーは実行時の概念なので、不変リポジトリーにコンテンツやコードをインストールすることはできません。そのため、これらのコンテンツパッケージは可変コンテンツ（主に `/content` または `/conf`）のみで構成する必要があります。コンテンツパッケージに混在コンテンツ（可変コンテンツと不変コンテンツの両方）が含まれている場合、可変コンテンツのみインストールされます。
 
 >[!IMPORTANT]
 >
->パッケージマネージャー UI で **未定義** パッケージのインストールに 10 分以上かかる場合のエラーメッセージ。
+>パッケージのインストールに 10 分以上かかる場合は、パッケージマネージャー UI で **未定義** のエラーメッセージが返される場合があります。
 >
->これは、インストールのエラーによるものではなく、すべての要求に対してCloud Serviceが持つタイムアウトのためです。
+>これは、インストールのエラーによるものではなく、すべての要求に対して Cloud Service が持つタイムアウトのためです。
 >
->このようなエラーが表示された場合は、インストールを再試行しないでください。 インストールはバックグラウンドで正しく進行しています。 インストールを再起動すると、複数の同時インポートプロセスによって競合が発生する可能性があります。
+>このようなエラーが表示された場合は、インストールを再試行しないでください。インストールはバックグラウンドで正しく進行しています。インストールを再開すると、複数の同時読み込みプロセスによって競合が発生する可能性があります。
 
 Cloud Manager を使用してインストールされたコンテンツパッケージ（可変および不変）は、AEM パッケージマネージャーのユーザーインターフェイスにフリーズ状態で表示されます。これらのパッケージは再インストールや再ビルド、さらにはダウンロードもできません。また、「**cp2fm**」というサフィックス付きで表示され、そのインストールが Cloud Manager で管理されていることを示します。
 
@@ -281,7 +281,7 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 
 ### インデックスの変更 {#index-changes}
 
-インデックスに変更を加えた場合、ブルーバージョンは終了するまで現在のインデックスを引き続き使用するのに対して、グリーンバージョンは自分自身の変更済みのインデックスセットを使用します。開発者は、[この記事](/help/operations/indexing.md)で説明しているインデックス管理手法に従う必要があります。
+インデックスに変更を加えた場合、ブルーバージョンは終了するまで現在のインデックスを引き続き使用するのに対して、グリーンバージョンは自分自身の変更済みのインデックスセットを使用します。開発者は、 [この記事](/help/operations/indexing.md) で説明しているインデックス管理手法に従う必要があります。
 
 ### ロールバックに備えた保守的なコーディング {#conservative-coding-for-rollbacks}
 
@@ -323,4 +323,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## ソース管理下のメンテナンスタスク設定 {#maintenance-tasks-configuration-in-source-control}
 
-**ツール／操作**&#x200B;画面はクラウド環境では使用できなくなったので、メンテナンスタスク設定をソース管理下に置く必要があります。これにより、変更が事後対応的に適用される（場合によっては忘れてしまう）のではなく、必ず意図的に保存されるというメリットがあります。詳しくは、[メンテナンスタスク](/help/operations/maintenance.md)の記事を参照してください。
+**ツール／操作**&#x200B;画面はクラウド環境では使用できなくなったので、メンテナンスタスク設定をソース管理下に置く必要があります。これにより、変更が事後対応的に適用される（場合によっては忘れてしまう）のではなく、必ず意図的に保存されるというメリットがあります。詳しくは、 [メンテナンスタスク](/help/operations/maintenance.md) の記事を参照してください。

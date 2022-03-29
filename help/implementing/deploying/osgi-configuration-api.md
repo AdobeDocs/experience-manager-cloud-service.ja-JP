@@ -6,7 +6,7 @@ exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ OSGI 設定に関する追加情報は、[この場所](/help/implementing/deplo
       * 型：boolean
    * `oauth.flow`
       * 型：boolean
-* **`org.apache.sling.commons.log.LogManager.factory.config`** ( 発表日：11/16/21、施行日：2/16/21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`**（発表日：21/11/16、施行日：21/2/16）
    * `org.apache.sling.commons.log.level`
       * タイプ：列挙
       * 必須範囲：情報、デバッグ、TRACE

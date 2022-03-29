@@ -1,13 +1,13 @@
 ---
 title: ビデオ（Dynamic Media 内）
-description: ビデオのエンコーディング、YouTubeへのビデオの公開、ビデオレポートの表示、ビデオへのクローズドキャプション、サブタイトル、チャプターマーカーの追加に関するベストプラクティスなど、Dynamic Mediaでビデオを操作する方法について説明します。
+description: ビデオのエンコード、YouTube へのビデオの公開、ビデオレポートの表示、ビデオへのクローズドキャプション、字幕、チャプターマーカーの追加など、Dynamic Media でビデオを操作する方法について説明します。
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '9349'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 1. 次の手順を実行して、**Dynamic Media ビデオをアップロード**&#x200B;します。
 
-   * 独自のビデオエンコーディングプロファイルを作成します。または、Dynamic Media に付属している事前定義済みの&#x200B;_アダプティブビデオエンコーディング_（AVE）プロファイルを使用してもかまいません。
+   * 独自のビデオエンコーディングプロファイルを作成します。または、Dynamic Media に付属している事前定義済みの _アダプティブビデオエンコーディング_ （AVE）プロファイルを使用してもかまいません。
 
       * [ビデオエンコーディングプロファイルを作成します](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
       * 詳しくは、[ビデオエンコーディングのベストプラクティス](#best-practices-for-encoding-videos)を参照してください。
@@ -39,7 +39,7 @@ ht-degree: 92%
       * 詳しくは、[デジタルアセットの整理](/help/assets/organize-assets.md)を参照してください。
    * フォルダーにプライマリソースビデオをアップロードします。フォルダーにビデオを追加すると、そのフォルダーに割り当てたビデオ処理プロファイルに従ってビデオがエンコードされます。
 
-      * Dynamic Mediaは主に、最大長が 30 分で、最小解像度が 25 x 25 を超える短形式のビデオをサポートします。
+      * Dynamic Media は主に、最大 30 分、最小解像度が 25 x 25 を超える短時間のビデオをサポートします。
       * 15 GB までのビデオファイルをアップロードできます。
       * [ビデオをアップロードします](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)。
       * 詳しくは、[サポートされる入力ファイル形式](/help/assets/file-format-support.md)を参照してください。
@@ -146,7 +146,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that suppor
 
 詳しくは、[動的なビデオ再生](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)の例を参照してください。
 
-[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja)の [Experience Manager Assets および Dynamic Media Classic のビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja#viewers-aem-assets-dmc)および [Experience Manager Assets 専用のビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=ja#viewers-for-aem-assets-only)も参照してください。
+[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=ja) の [Experience Manager Assets および Dynamic Media Classic のビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=ja#viewers-aem-assets-dmc) および [Experience Manager Assets 専用のビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=ja#viewers-for-aem-assets-only) も参照してください。
 
 ## ベストプラクティス：HTML5 ビデオビューアの使用 {#best-practice-using-the-html-video-viewer}
 
@@ -158,7 +158,7 @@ Dynamic Media の HTML5 ビデオビューアプリセットは堅牢なビデ�
 
 HTML5 と CSS を使用して再生コンポーネントを設計できる機能を 1 つのプレーヤーに統合できます。また、このプレーヤーでは埋め込み再生を行え、ブラウザーの機能に応じてアダプティブストリーミングまたはプログレッシブストリーミングを使用できます。これらの結果、リッチメディアコンテンツの配信範囲をデスクトップユーザーとモバイルユーザーの両方に拡大し、ビデオエクスペリエンスを確実に効率化することができます。
 
-[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)の [Experience Manager Assets 専用のビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)も参照してください。
+[Dynamic Media ビューアリファレンスガイド](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) の [Experience Manager Assets 専用のビューア](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) も参照してください。
 
 ### HTML5 ビデオビューアを使用した、デスクトップコンピューターおよびモバイルデバイス上でのビデオ再生 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -274,7 +274,7 @@ Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場�
 
 ビデオファイルをエンコードするときは、可能な限り最高品質のソースビデオファイルを使用します。以前にエンコードされたビデオファイルの使用は避けてください。そのようなファイルは既に圧縮済みで、さらにエンコードすると標準を下回る品質のビデオが作成されるからです。
 
-* Dynamic Mediaは主に、最大長が 30 分で、最小解像度が 25 x 25 を超える短形式のビデオをサポートします。
+* Dynamic Media は主に、最大 30 分、最小解像度が 25 x 25 を超える短時間のビデオをサポートします。
 * 15 GB までのプライマリソースビデオファイルをアップロードできます。
 
 次の表に、ソースビデオファイルのエンコード前の推奨サイズ、縦横比および最小ビットレートを示します。
@@ -322,7 +322,7 @@ Dynamic Media を有効にし、ビデオ Cloud Services を設定済みの場�
 
 ビットレートエンコーディングは 2 種類あり、そのどちらかを選択できます。
 
-* **[!UICONTROL 固定ビットレートエンコーディング]**（CBR）- CBR エンコーディングでは、ビットレートまたは 1 秒あたりのビット数が、エンコーディングプロセス全体で同じ数値に維持されます。CBR エンコーディングでは、設定されているデータレートが、ビデオ全体での設定値として使用されます。また、CBR エンコーディングでは、メディアファイルの品質は最適化されませんが、その分、空き容量の節約になります。ビデオ全体に同じようなモーションレベルが含まれている場合は、CBR を使用します。CBR は、ビデオコンテンツのストリーミングに最も一般的に使用されています。[カスタムで追加するビデオエンコーディングパラメーターの使用](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters)も参照してください。
+* **[!UICONTROL 固定ビットレートエンコーディング]**（CBR）- CBR エンコーディングでは、ビットレートまたは 1 秒あたりのビット数が、エンコーディングプロセス全体で同じ数値に維持されます。CBR エンコーディングでは、設定されているデータレートが、ビデオ全体での設定値として使用されます。また、CBR エンコーディングでは、メディアファイルの品質は最適化されませんが、その分、空き容量の節約になります。ビデオ全体に同じようなモーションレベルが含まれている場合は、CBR を使用します。CBR は、ビデオコンテンツのストリーミングに最も一般的に使用されています。[カスタムで追加するビデオエンコーディングパラメーターの使用](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters) も参照してください。
 
 * **[!UICONTROL 可変ビットレートエンコーディング]**（VBR）- VBR エンコーディングでは、圧縮形式で必要となるデータに基づいて、データのレートが設定した下限から上限の範囲内で調整されます。つまり、VBR エンコーディングプロセスでは、メディアファイルのビットレートが、そのニーズに応じて動的に増減します。VBR は、CBR よりエンコードに時間がかかりますが、生成されるメディアファイルは最高品質となります。VBR は、ビデオコンテンツの HTTP プログレッシブ配信に最も一般的に使用されます。
 
@@ -663,7 +663,7 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
 
 1. Experience Manager の左上隅にある Experience Manager ロゴを選択し、左パネルで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]**／**[!UICONTROL メタデータスキーマ]**&#x200B;に移動します。
 1. 「**[!UICONTROL デフォルト値]**」を選択します（「デフォルト値」の左側にある選択ボックスにチェックマークを追加しないでください）。
-1. **[!UICONTROL デフォルト値]**&#x200B;ページで、「**[!UICONTROL ビデオ]**」の左側にあるボックスをオンにし、「**[!UICONTROL 編集]**」を選択します。
+1. **[!UICONTROL デフォルト値]** ページで、「**[!UICONTROL ビデオ]**」の左側にあるボックスをオンにし、「**[!UICONTROL 編集]**」を選択します。
 1. メタデータスキーマエディターページで、「**[!UICONTROL 詳細]**」タブを選択します。
 1. 「YouTube への公開」の下で、「**[!UICONTROL YouTube カテゴリ]**」を選択します。
 1. ページの右側の「**[!UICONTROL 設定]**」タブで次の手順を実行します。
@@ -680,7 +680,7 @@ Experience Manager 6.4 以降では、Experience Manager で YouTube への公�
    * 「**[!UICONTROL 選択肢]**」の下で、使用するデフォルト値を選択してコピーします。選択肢は 2 つが 1 組になっています。1 組の下のフィールドは、コピーするデフォルト値（公開、非公開またはプライベート）です。コピーした値を、開いているテキストエディターに貼り付けます。後でメタデータ処理プロファイルを作成するときにこの値が必要になります。テキストエディターは開いたままにしておきます。
 
 1. メタデータスキーマエディターページの右上隅付近にある「**[!UICONTROL キャンセル]**」を選択します。
-1. Experience Manager の左上隅にある Experience Manager ロゴを選択し、左のレールで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]**／**[!UICONTROL メタデータプロファイル]**&#x200B;を選択します。
+1. Experience Manager の左上隅にある Experience Manager ロゴを選択し、左のレールで **[!UICONTROL ツール]** （ハンマーのアイコン）／**[!UICONTROL アセット]**／**[!UICONTROL メタデータプロファイル]** を選択します。
 
 1. メタデータプロファイルページの右上隅付近にある「**[!UICONTROL 作成]**」を選択します。
 1. メタデータプロファイルを追加ダイアログボックスの「**[!UICONTROL プロファイルのタイトル]**」テキストフィールドに、「`YouTube Video`」と入力した後、「**[!UICONTROL 作成]**」を選択します。
@@ -741,7 +741,7 @@ Experience Manager では、YouTube からのコンテンツの公開に **[!UIC
 1. ビデオのプロパティページの右上隅にある「**[!UICONTROL 保存して閉じる]**」を選択します。
 1. ツールバーの「**[!UICONTROL クイック公開]**」を選択します。
 
-   [Experience Manager Sites での公開管理の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ja#page-authoring)も参照してください。
+   [Experience Manager Sites での公開管理の使用](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=ja#page-authoring) も参照してください。
 
    オプションで、YouTube チャンネルで公開済みビデオを確認できます。
 
@@ -764,7 +764,7 @@ YouTube URL は、ビデオアセットを YouTube に公開するまではコ�
 
 Web アプリケーションに YouTube URL をリンクするには：
 
-1. URL のコピー先となる、*YouTube への公開済み*&#x200B;ビデオアセットの場所に移動して選択します。
+1. URL のコピー先となる、 *YouTube への公開済み* ビデオアセットの場所に移動して選択します。
 
    YouTube URL をコピーするには、*その前に*&#x200B;ビデオアセットを YouTube に&#x200B;*公開しておく*&#x200B;必要があります。
 
@@ -942,9 +942,9 @@ For YouTube publishing jobs, do the following:
 1. Experience Manager の左上隅にある Experience Manager ロゴを選択し、左パネルで&#x200B;**[!UICONTROL ツール]**（ハンマーのアイコン）／**[!UICONTROL アセット]**／**[!UICONTROL ビデオレポート]**&#x200B;に移動します。
 1. ビデオレポートページで、次のいずれかの操作を行います。
 
-   * 右上隅付近にある&#x200B;**[!UICONTROL ビデオレポートを更新]**&#x200B;アイコンを選択します。「更新」を使用するのは、レポートの最終日が今日の日付である場合のみです。この機能によって、前回のレポート実行以降に発生したビデオトラッキングを確認できます。
+   * 右上隅付近にある **[!UICONTROL ビデオレポートを更新]** アイコンを選択します。「更新」を使用するのは、レポートの最終日が今日の日付である場合のみです。この機能によって、前回のレポート実行以降に発生したビデオトラッキングを確認できます。
 
-   * 右上隅付近にある&#x200B;**[!UICONTROL 日付選択]**&#x200B;アイコンを選択します。ビデオデータを表示する開始日と終了日の範囲を指定し、「**[!UICONTROL レポートを実行]**」を選択します。
+   * 右上隅付近にある **[!UICONTROL 日付選択]** アイコンを選択します。ビデオデータを表示する開始日と終了日の範囲を指定し、「**[!UICONTROL レポートを実行]**」を選択します。
 
    「トップの指標」グループボックスに、サイト全体にわたるすべての公開済みビデオに関する様々な集計値が表示されます。**
 
@@ -1016,14 +1016,14 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## ビデオへのクローズドキャプションまたはサブタイトルの追加 {#adding-captions-to-video}
 
-クローズドキャプションを単一のビデオまたはアダプティブビデオセットに追加することで、ビデオのリーチをグローバル市場に拡大できます。 クローズドキャプションを追加することで、オーディオのダビングが不要になったり、ネイティブスピーカーを使用して異なる言語ごとにオーディオを再録音する必要がなくなります。 ビデオは録画された言語で再生されます。外国語のサブタイトルが表示されるので、違う言語の視聴者も音声部分を理解できます。
+クローズドキャプションを 1 つのビデオまたはアダプティブビデオセットに追加することにより、ビデオの提供先をグローバルマーケットまで広げることができます。クローズドキャプションを追加すると、言語ごとの音声の吹き替えの必要性、つまりネイティブスピーカーを使って音声を再録音する必要性がなくなります。ビデオは録画された言語で再生されます。外国語のサブタイトルが表示されるので、違う言語の視聴者も音声部分を理解できます。
 
 クローズドキャプションを使用すると、耳が聞こえない人や聞こえにくい人に対して、より高いアクセシビリティを提供できます。
 
 >[!NOTE]
-使用するビデオプレーヤーは、クローズドキャプションの表示に対応している必要があります。
+使用するビデオプレーヤーがクローズドキャプションの表示に対応する必要があります。
 
-関連トピック [Dynamic Mediaのアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md).
+詳しくは、 [Dynamic Media のアクセシビリティ](/help/assets/dynamic-media/accessibility-dm.md) を参照してください。
 
 Dynamic Media では、キャプションファイルを JSON（JavaScript Object Notation）形式に変換できます。このように変換できるので、JSON テキストを、ビデオの完全なトランスクリプトとして表示せずに Web ページに埋め込むことができます。この後、検索エンジンがコンテンツをクロールまたはインデックス作成できます。これにより、ビデオを検索しやすくなり、ビデオコンテンツの詳細がユーザーに提供されます。
 

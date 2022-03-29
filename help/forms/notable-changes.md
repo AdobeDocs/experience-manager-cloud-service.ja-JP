@@ -84,7 +84,7 @@ The following table lists the major features of Experience Manager 6.5 Forms and
 **フォームと Sign の間の安全で改善された情報フロー**
 Cloud Service での[アダプティブフォームと Adobe Sign の統合](working-with-adobe-sign.md)により、データの送信と署名アクティビティが同時に行われます。署名ステータスに依存せずにフォームを送信し、より高速な送信を実現します。その上、このサービスは Cloud Service インスタンスにデータを保存しないので、署名プロセスが非常に安全になります。
 
-**ベストプラクティスアナライザーと移行ツール**
+**ベストプラクティスアナライザーと移行ツール** 
 ベストプラクティスアナライザーは、現在の AEM の実装を評価します。[Forms as a Cloud Service に移行する](migrate-to-forms-as-a-cloud-service.md)前に、ツールを実行します。既存の Adobe Experience Manager（AEM）デプロイメントから AEM as a Cloud Service に移行する準備ができているかどうかを評価します。
 
 また、このサービスは、[改善された移行エクスペリエンス](migrate-to-forms-as-a-cloud-service.md)を提供し、[!DNL AEM 6.4 Forms] および [!DNL AEM 6.5 Forms] から [!DNL AEM Forms] as a Cloud Service に簡単に移行できるようにします。

@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Define DISABLE_DEFAULT_CACHING
 
 ### 明示的な Dispatcher キャッシュの無効化 {#explicit-invalidation}
 
-一般に、Dispatcher 内のコンテンツを手動で無効にする必要はありませんが、必要に応じて無効にすることもできます。
+一般的に、Dispatcher 内のコンテンツを手動で無効にする必要はありませんが、必要に応じて無効にすることができます。
 
 >[!NOTE]
 >AEM as a Cloud Service 以前は、Dispatcher キャッシュを無効にする方法が 2 通りありました。
@@ -133,9 +133,9 @@ Define DISABLE_DEFAULT_CACHING
 >2. `invalidate.cache` API を直接呼び出す（例：`POST /dispatcher/invalidate.cache`）
 
 >
->Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、[AEM からのキャッシュページの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja)ページで説明されている無効化手順は、AEM as a Cloud Service では無効になります。
+>Dispatcher の `invalidate.cache` API アプローチは、特定の Dispatcher ノードのみを指すので、今後サポートされなくなります。AEM as a Cloud Service は、個々のノードレベルではなくサービスレベルで動作するので、 [AEM からのキャッシュページの無効化](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=ja) ページで説明されている無効化手順は、AEM as a Cloud Service では無効になります。
 
-レプリケーションフラッシュエージェントを使用する必要があります。 これは、 [レプリケーション API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
+レプリケーションフラッシュエージェントを使用する必要があります。これは、[レプリケーション API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html) を使用して実行できます。フラッシュエージェントエンドポイントは設定できませんが、フラッシュエージェントを実行するパブリッシュサービスと一致する Dispatcher を指すように事前設定されています。フラッシュエージェントは、通常、OSGi のエージェントまたはイベントによってトリガーされます。
 
 <!-- Need to find a new link and/or example -->
 <!-- 

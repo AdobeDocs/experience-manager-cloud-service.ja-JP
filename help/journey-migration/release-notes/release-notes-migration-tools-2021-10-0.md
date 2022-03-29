@@ -1,31 +1,31 @@
 ---
-title: AEM as a Cloud Serviceリリース2021.10.0の移行ツールのリリースノート
-description: AEM as a Cloud Serviceリリース2021.11.0の移行ツールのリリースノート
+title: AEM as a Cloud Service リリース 2021.10.0 における移行ツールのリリースノート
+description: AEM as a Cloud Service リリース 2021.11.0 における移行ツールのリリースノート
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# AEM as a Cloud Serviceリリース2021.10.0の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service リリース 2021.10.0 における移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2021.10.0の移行ツールのリリースノートの概要を説明します。
+このページでは、AEM as a Cloud Service 2021.10.0 の移行ツールのリリースノートの概要を説明しています。
 
 >[!NOTE]
->Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、[こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)をクリックしてください。
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートを参照するには、 [こちら](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja) をクリックしてください。
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### リリース日 {#release-date-cam}
 
-Cloud Acceleration Manager のリリース日は 2021 年 10 月 25 日です。
+Cloud Acceleration Manager のリリース日は 2021年10月25日（PT）です。
 
 ### 新機能 {#what-is-new-cam}
 
-Cloud Acceleration Manager では、ユーザーがトレンドラインレポートで履歴 BPA レポートを表示できるようになりました。 このレポートを使用すると、ユーザーは進行状況をグラフで簡単に参照できます。 参照： [近似曲線の表示の使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) を参照してください。
+Cloud Acceleration Manager のトレンドラインレポートで、履歴 BPA レポートを表示できるようになりました。このレポートを使用すると、進行状況をグラフで簡単に参照できます。詳しくは、 [トレンドラインの表示の使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#trendline-view-cam) を参照してください。
 
 ### リリース日 {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis)の手順 6 および 7 を参照してください。
+Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis) の手順 6 および 7 を参照してください。
 
 
 ## コンテンツ転送ツール {#ctt-release}

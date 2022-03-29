@@ -1,20 +1,20 @@
 ---
-title: AEM Reference Demos Add-On
-description: AEMリファレンスデモアドオンは、最小限のAEM設定でサンドボックス環境に追加でき、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできます。
+title: AEM 参照デモのアドオン
+description: AEM 参照デモのアドオンは、最小限の AEM 設定でサンドボックス環境に追加でき、ベストプラクティスに基づく豊富な例を使用して AEM の強力な機能をテストできます。
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# AEM Reference Demos Add-On {#reference-demos-add-on}
+# AEM 参照デモのアドオン {#reference-demos-add-on}
 
-AEMリファレンスデモアドオンは、最小限のAEM設定でサンドボックス環境に追加でき、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできます。
+AEM 参照デモのアドオンは、最小限の AEM 設定でサンドボックス環境に追加でき、ベストプラクティスに基づく豊富な例を使用して AEM の強力な機能をテストできます。
 
 ## はじめに {#introduction}
 
-新しいAEM環境に完全にオンボーディングしたら、強力な機能のテストを開始するのは当然です。 それには、現実的で堅牢なサンプルコンテンツが役立ちます。
+新しい AEM 環境に完全にオンボーディングしたら、強力な機能をテストしたくなるのは当然です。それには、現実的で堅牢なサンプルコンテンツが役立ちます。
 
-AEM Reference Demo Add-On は、豊富な例を提供し、いくつかの手順と最小限のAEM設定で、サンドボックス内で有効にすることができます。 [「 AEM Reference Demos アドオンジャーニー」を参照してください。](/help/journey-sites/demos-add-on/overview.md) アドオンの使用方法と is の機能に関する詳しい手順を説明します。
+AEM 参照デモのアドオンにはサンプルが豊富に用意されており、わずかな手順と最小限の AEM 設定で、サンドボックス内で有効にすることができます。アドオンの使用方法と機能について詳しくは、 [AEM 参照デモアドオンジャーニー](/help/journey-sites/demos-add-on/overview.md) を参照してください。

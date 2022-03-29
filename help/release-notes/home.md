@@ -43,7 +43,7 @@ ht-degree: 100%
 * [新機能](what-is-new.md)
 * [主要な変更点](aem-cloud-changes.md)
 * [既知の問題](known-issues.md)
-* [非推奨（廃止予定）の機能と削除された機能](deprecated-removed-features.md)
+* [廃止される機能および削除された機能](deprecated-removed-features.md)
 
 ## Experience Manager as a Cloud Service のガイド {#aem-guides}
 
@@ -70,5 +70,5 @@ ht-degree: 100%
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=ja)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#home)
+* [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)

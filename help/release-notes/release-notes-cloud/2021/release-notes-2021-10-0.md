@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 リリースのリリースノート。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.10.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 77%
+ht-degree: 99%
 
 ---
 
@@ -23,30 +23,30 @@ ht-degree: 77%
 
 ## リリース日 {#release-date}
 
-のリリース日 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 現在のリリース (2021.10.0) は 2021 年 11 月 4 日です。
-次のリリース (2021.11.0) は 2021 年 12 月 2 日です。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] の最新リリース（2021.10.0）のリリース日は 2021年11月4日（PT）です。
+次回のリリース（2021.11.0）は 2021年12月2日（PT）です。
 
 ## リリースビデオ {#release-video}
 
-以下をご覧ください： [2021 年 10 月リリースの概要](https://video.tv.adobe.com/v/338253) 追加された機能の概要を示すビデオ。
+追加された機能の概要については、 [2021年10月リリースの概要](https://video.tv.adobe.com/v/338253) ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### の新機能 [!DNL Sites] {#sites-features}
+### [!DNL Sites] の新機能 {#sites-features}
 
-* コンテンツフラグメントモデルは、公開後、自動的に読み取り専用状態に設定されるようになりました。これにより、編集後のモデルの再公開後に、ライブ API クエリが意図せず壊れるのを防ぎます。 公開済みのモデルを編集しようとすると、警告が表示されます。警告を了承すれば、編集は可能です。
+* コンテンツフラグメントモデルは、公開後、自動的に読み取り専用状態に設定されるようになりました。これにより、編集したモデルの再公開後にライブ API クエリが意図せず機能しなくなることを回避できます。公開済みのモデルを編集しようとすると、警告が表示されます。警告を了承すれば、編集は可能です。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] が、サポート対象のオーディオおよびビデオアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。 [!DNL Azure Media Services]. この [サポートされているファイルタイプ](/help/assets/file-format-support.md#audio-video-transcription-formats) は自動的に書き込まれ、テキストは WebVTT 形式で保存されます。 WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。 また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
+* [!DNL Experience Manager] は、[!DNL Azure Media Services] への組み込みコネクタを使用して、サポート対象のオーディオとビデオのアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。[サポートされているファイルタイプ](/help/assets/file-format-support.md#audio-video-transcription-formats) は自動的に書き込まれ、テキストは WebVTT 形式で保存されます。WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが、最新のSenseiサービスによって強化され、改善された切り抜きとスウォッチが生成されます。 また、同じ縦横比で異なる解像度を持つ異なる切り抜きコンテンツを生成する機能が強化されました。 また、イメージプロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
+* [!DNL Dynamic Media] 画像のスマート切り抜きとスウォッチが最新の Sensei サービスによって強化され、改善された切り抜きとスウォッチが生成されるようになりました。また、同じ縦横比で解像度が異なる様々な切り抜きコンテンツを生成する機能が強化されました。さらに、画像プロファイルの幅と高さに変更がない場合、手動の編集は再処理時に保持されます。
 
-* スマートタグは、スマートコンテンツサービスの代わりに、アセットマイクロサービスを使用して、アセットに自動的に適用されます。 タグ付けの結果を改善し、バイアスを減らすために、基になるモデルが更新されます。 <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
+* スマートタグは、スマートコンテンツサービスの代わりに、アセットマイクロサービスを使用して、アセットに自動的に適用されます。タグ付けの結果を改善し、バイアスを減らすために、基になるモデルが更新されます。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
 <!-- Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] のベータ版機能 {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通信 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=ja) では、テンプレートと XML データを組み合わせて、様々な形式の印刷用ドキュメントを生成できます。このサービスを使用すると、同期および一括モードでドキュメントを生成できます。API により、以下のような機能を備えたアプリケーションを作成することができます。
 
    * テンプレートファイル（PDF および XDP）に XML データを格納することで、最終形式のドキュメントを生成します。
    * 非インタラクティブ PDF 印刷ストリームを含む様々な形式で出力フォームを生成します。
@@ -89,26 +89,27 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.10.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as a Cloud Service 2021.10.0 の Cloud Manager のリリースノートの概要を説明しています。
 
 ### リリース日 {#release-date-cm-nov}
 
-AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 年 11 月 04 日です。次回のリリースは 2021 年 12 月 09 日（PT）に予定されています。
+AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年11月4日（PT）です。
+次回のリリースは 2021年12月9日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-cm-nov}
 
-* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速に排他的にデプロイできるようになりました。 詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
 
    >[!IMPORTANT]
-   >AEM版である必要があります `2021.10.5933.20211012T154732Z` を使用して、新しいフロントエンドパイプラインを活用します。
+   >新しいフロントエンドパイプラインを活用するには、AEM バージョン `2021.10.5933.20211012T154732Z` を使用している必要があります。
 
-* AEM画像全体を構築する必要なく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。 この変更は、リリース後の数週間で徐々に適用される予定です。
+* AEM 画像全体を作成する必要がなく、より効率的にコード分析を実行することで、コード品質パイプラインの期間を大幅に短縮できます。この変更は、リリース後の数週間で徐々に適用される予定です。
 
-* パイプライン実行の詳細に Git Commit ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
+* パイプライン実行の詳細に Git コミット ID が表示されるようになり、ビルドされたコードの追跡が容易になりました。
 
 * プログラムの作成は、公開されている API を通じて利用できるようになりました。
 
-* 環境の作成は、公開されている API を介して使用できるようになりました。
+* 環境の作成は、公開されている API を介して利用できるようになりました。
 
 * この `x-request-id` 応答ヘッダーが、[www.adobe.io](https://www.adobe.io/) の API Playground に表示されるようになりました。このヘッダーは、トラブルシューティングのためにカスタマーケアに関する問題を送信する際に役立ちます。
 
@@ -124,7 +125,7 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 
 * 品質問題の CSV ファイルに、品質問題ごとのタイムスタンプが含まれるようになりました。
 
-### バグ修正 {#bug-fixes-nov}
+### バグの修正 {#bug-fixes-nov}
 
 * 正常でないビルド設定があると、パイプラインの Maven アーティファクトキャッシュに不要なファイルが保存され、ビルドコンテナの開始と停止時に不要なネットワーク I/O が発生していました。
 
@@ -140,7 +141,6 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021 �
 ## リリース日 {#release-date-cm-oct}
 
 AEM as a Cloud Service 2021.10.0 の Cloud Manager のリリース日は 2021年10月14日（PT）です。
-
 
 ### 新機能 {#what-is-new-cm-oct}
 
@@ -164,7 +164,7 @@ AEM as a Cloud Service 2021.10.0 の Cloud Manager のリリース日は 2021年
 
 * 「移動先」の選択オプションが無効になっている場合のプログラムカードのツールヒントがわかりやすくなりました。「実稼動環境が が存在しません。」と表示されるようになりました。
 
-### バグ修正 {#bug-fixes-cm-oct}
+### バグの修正 {#bug-fixes-cm-oct}
 
 * アドビスタッフがお客様の環境をリストアする場合に、環境が完全に動作可能になる前にリストアが完了したと見なされることが稀にありました。
 

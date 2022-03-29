@@ -13,7 +13,7 @@ ht-degree: 99%
 
 ## これまでの説明内容 {#story-so-far}
 
-[AEM ヘッドレスコンテンツ作成者ジャーニー](overview.md)の冒頭の [AEM でのヘッドレスのコンテンツモデリングの基本について](basics.md)で、ヘッドレスのオーサリングに関連する基本概念と用語について説明しました。
+[AEM ヘッドレスコンテンツ作成者ジャーニー](overview.md)の冒頭の [AEM でのヘッドレスのコンテンツモデリングの基本について](basics.md)で、ヘッドレス向けのオーサリングに関連する基本概念と用語について説明しました。
 
 この記事では、これらに基づいて、AEM ヘッドレスプロジェクト用に独自のコンテンツフラグメントモデルを作成する方法を説明します。
 
@@ -126,7 +126,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
       * [コンテンツフラグメントモデルの公開](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [コンテンツフラグメントモデルの非公開](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [コンテンツフラグメントモデルを非公開にする](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
       * [ロック済み（公開済み）コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 

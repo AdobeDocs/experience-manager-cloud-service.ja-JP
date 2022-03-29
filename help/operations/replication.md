@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 「後で公開する」オプションの対象にフォルダーの子を含めると、「コンテンツツリーを公開」ワークフローが呼び出されます（この記事で説明）。
 
-「公開を管理」について詳しくは、[公開の基本に関するドキュメント](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication)を参照してください。
+「公開を管理」について詳しくは、 [公開の基本に関するドキュメント](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#manage-publication) を参照してください。
 
 ### ツリーのアクティベーション {#tree-activation}
 
@@ -50,7 +50,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 ツリーのアクティベーションを実行するには：
 
 1. AEM 開始メニューで&#x200B;**ツール／デプロイメント／配布**&#x200B;に移動します。
-2. **公開**&#x200B;カードを選択します。
+2. **公開** カードを選択します。
 3. 公開 Web コンソール UI で「**配布**」を選択します。
 
    ![配布](assets/publish-distribute.png "配布")
@@ -135,7 +135,7 @@ Adobe Experience Manager as a Cloud Service では、[Sling コンテンツ配�
 
 AEM as a Cloud Service の特長となっているレプリケーション API を使用して、コンテンツを公開できます。
 
-詳しくは、[API のドキュメント](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html)を参照してください。
+詳しくは、 [API のドキュメント](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/day/cq/replication/package-summary.html) を参照してください。
 
 **API の基本的な使用法**
 

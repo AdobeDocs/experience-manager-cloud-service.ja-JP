@@ -80,4 +80,4 @@ AEM には、一部の一般的に使用される機能（編集、プロパテ�
 
 ## ページエディターのキーボードショートカット {#keyboard-shortcuts-for-the-page-editor}
 
-AEM 全体で様々なキーボードショートカットを利用できます。コンソールの使用時に適用されるものや、[ページ編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)に適用されるものなどがあります。
+AEM 全体で様々なキーボードショートカットを利用できます。ショートカットには、コンソールの使用時に適用されるものや、 [ページ編集](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md) に適用されるものなどがあります。

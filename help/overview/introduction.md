@@ -5,13 +5,13 @@ exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service の概要 {#an-introduction-to-adobe-experience-manager-as-a-cloud-service}
 
-[Adobe Experience Manager](https://www.adobe.com/marketing/experience-manager.html)（AEM）は as a Cloud Service として利用可能になりました。
+[Adobe Experience Manager](https://www.adobe.com/jp/marketing/experience-manager.html)（AEM）は as a Cloud Service として利用可能になりました。
 
 Adobe Experience Manager（AEM）as a Cloud Service は、AEM 製品ラインの最新製品です。お客様が、パーソナライズされたコンテンツ主導のエクスペリエンスを引き続き提供できるよう支援します。クラウドネイティブな俊敏性により、価値実現までの時間を短縮でき、それぞれのビジネス要件を満たすように拡張することができます。すべてのユースケースと機能を保持および拡張することで、過去の投資やイノベーションをベースに構築することができます。
 
@@ -69,7 +69,7 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 ## Adobe Experience Manager as a Cloud Service の理解 {#getting-to-know-aem-as-cloud-service}
 
 * Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
-* [Adobe Experience Manager as a Cloud Service のアーキテクチャ](/help/overview/architecture.md)
+* Adobe Experience Manager as a Cloud Service [のアーキテクチャ](/help/overview/architecture.md)
 * [AEM as a Cloud Service の主な変更点（リリースノート）](/help/release-notes/aem-cloud-changes.md)
 * [AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
@@ -78,6 +78,6 @@ AEM は、最新のクラウドサービスの主な特徴を取り入れるこ�
 
 >[!TIP]
 >
->AEM as a Cloud Serviceの概要を把握したら、 [オンボーディングジャーニー。](/help/journey-onboarding/home.md)
+>AEM as a Cloud Service の概要を把握したら、 [オンボーディングジャーニー](/help/journey-onboarding/home.md) を確認して、すばやくオンボードできます。
 >
->AEMの機能のテストを既にオンボーディング済みか、準備はできているか。 のインストール [AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) 豊富な例を使用してAEMの強力な機能を調べる
+>すでにオンボード済み、または AEM の機能のテストに取り掛かる準備できている場合[AEM Reference Demos Add-On](/help/journey-sites/demos-add-on/overview.md) をインストールし、豊富な例を使用して AEM の強力な機能を調べてみましょう。

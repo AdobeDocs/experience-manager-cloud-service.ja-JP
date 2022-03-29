@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager Sites as a Cloud Service
 description: Adobe Experience Manager Sites as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: AEM Sites as a Cloud Service を使用したオーサリングおよび管理方法について説明します。
+landing-page-description: AEM Sites as a Cloud Service を使用したオーサリング方法と AEM Sites as a Cloud Service の管理方法を説明します。
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
@@ -52,5 +52,5 @@ ht-degree: 100%
 * [Cloud Manager のドキュメント](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#home)
+* [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)

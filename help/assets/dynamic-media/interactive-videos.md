@@ -7,7 +7,7 @@ exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5966'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 ビデオが終了すると、コールトゥアクションを促すために、すべての商品の概要が視覚に訴えて表示されます。顧客は、ここで欲しい商品を選択することもできます。こうしたすぐに行動に移すことができる具体的なエクスペリエンスが顧客のエンゲージメントとコンバージョンを高めます。
 
-[インタラクティブ画像](/help/assets/dynamic-media/interactive-images.md)も参照してください。
+[インタラクティブ画像](/help/assets/dynamic-media/interactive-images.md) も参照してください。
 
 ## インタラクティブビデオの使用例 {#interactive-video-in-action}
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 
 * ビデオを一時停止して製品のクイックビューを開くには、サムネールを選択します。例えば、ビデオ内の KitchenAid のサムネール画像を選択すると、ミキサーの 360 度のスピンビューを見たり、細部を拡大表示したりすることができます。
 
-[Dynamic Media でのインタラクティブビデオの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=ja#dynamic-media)も参照してください。
+[Dynamic Media でのインタラクティブビデオの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html?lang=ja#dynamic-media) も参照してください。
 
 <!-- 
 
@@ -77,11 +77,11 @@ There was a link here that showed the video frame of an interactive video and wh
 
    >[!NOTE]
    >
-   >MXF ビデオ形式は、Dynamic Mediaのインタラクティブビデオでの使用は、まだサポートされていません。
+   >MXF ビデオ形式は、Dynamic Media のインタラクティブビデオでは、まだ使用できません。
 
 1. **ビデオへのインタラクティビティの追加** - ビデオに 1 つ以上の時間セグメントを追加します。次に、それらの時間セグメント内で画像サムネールを関連付けます。各画像サムネールを、ハイパーリンク、クイックビュー、エクスペリエンスフラグメントなどのアクションに割り当てます（インタラクティブコンテンツに相対 URL のリンク（特に Adobe Experience Manager Sites ページへのリンク）がある場合、URL ベースのリンク方法は使用できません）。インタラクティブビデオアセットを公開して作業は完了です。公開によって埋め込みコードまたは URL が生成されます。最終的には、このコードまたは URL をコピーして、Web サイトのランディングページに適用します。[ビデオへのインタラクティビティの追加](#adding-interactivity-to-your-video)を参照してください。[アセットの公開](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)を参照してください。
 
-1. **Adobe でのインタラクティブビデオの Web サイトへの追加** - Adobe Experience Manager Sites または Adobe Experience Manager eCommerce（あるいは両方）を使用している場合は、Adobe Experience Manager でインタラクティブビデオを Web ページに追加します。インタラクティブメディアのコンポーネントを Web ページにドラッグします。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。埋め込みコードまたは URL を使用して、インタラクティブビデオを Web サイトエクスペリエンスに統合します。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website)を参照してください。サードパーティの WCM（Web Content Manager）を使用している場合は、新しいインタラクティブビデオを、Web サイトで使用されている既存のクイックビュー実装に統合する必要があります。[インタラクティブビデオの既存のクイックビューへの統合](#integrating-an-interactive-video-with-an-existing-quickview)を参照してください。
+1. **Adobe でのインタラクティブビデオの Web サイトへの追加** - Adobe Experience Manager Sites または Adobe Experience Manager eCommerce（あるいは両方）を使用している場合は、Adobe Experience Manager でインタラクティブビデオを Web ページに追加します。インタラクティブメディアのコンポーネントを Web ページにドラッグします。[ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)を参照してください。埋め込みコードまたは URL を使用して、インタラクティブビデオを Web サイトエクスペリエンスに統合します。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website) を参照してください。サードパーティの WCM（Web Content Manager）を使用している場合は、新しいインタラクティブビデオを、Web サイトで使用されている既存のクイックビュー実装に統合する必要があります。[インタラクティブビデオの既存のクイックビューへの統合](#integrating-an-interactive-video-with-an-existing-quickview) を参照してください。
    [ページへの Dynamic Media アセットの追加](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 
 ## （オプション）クイックビュー変数の特定 {#optional-identifying-quickview-variables}
@@ -226,7 +226,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 ビューアプリセットを保存すると、ビューアプリセットページでそのプリセットのステータスが自動的にオンに設定されます。このステータスは、そのプリセットが Dynamic Media コンポーネントに表示され、ビデオのプレビュー時に必ず使用されることを意味します。また、新しいビューアプリセットも忘れずに手動で公開してください。
 
-[ビューアプリセットの作成](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset)を参照して、独自のインタラクティブビデオのビューアプリセットを作成します。
+[ビューアプリセットの作成](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) を参照して、独自のインタラクティブビデオのビューアプリセットを作成します。
 
 ## ビデオおよび関連するサムネールアセットのアップロード {#uploading-a-video-and-its-associated-thumbnail-assets}
 
@@ -234,7 +234,7 @@ There was a link here that showed the video frame of an interactive video and wh
 
 >[!NOTE]
 >
->MXF ビデオ形式は、Dynamic Mediaのインタラクティブビデオでの使用は、まだサポートされていません。
+>MXF ビデオ形式は、Dynamic Media のインタラクティブビデオでは、まだ使用できません。
 
 誤ったビデオや画像をアップロードした場合、または必要でなくなったアップロード済みビデオや画像を削除したい場合は、[アセットの削除](/help/assets/manage-digital-assets.md#delete-assets)を参照してください。
 
@@ -271,9 +271,9 @@ There was a link here that showed the video frame of an interactive video and wh
 1. Assets ビューで、インタラクティブにするアップロード済みのビデオに移動します。
 1. 次のいずれかの操作を行います。
 
-   * 画像の上にマウスポインターを置き、**[!UICONTROL 選択]**（チェックマークアイコン）を選択します。ツールバーの「**[!UICONTROL 編集]**」を選択します。
+   * 画像の上にマウスポインターを置き、 **[!UICONTROL 選択]** （チェックマークアイコン）を選択します。ツールバーの「**[!UICONTROL 編集]**」を選択します。
 
-   * 画像の上にマウスポインターを置き、**[!UICONTROL その他のアクション]**（3 つのドットのアイコン）／**[!UICONTROL 編集]**&#x200B;を選択します。
+   * 画像の上にマウスポインターを置き、 **[!UICONTROL その他のアクション]** （3 つのドットのアイコン）／**[!UICONTROL 編集]** を選択します。
 
    * 詳細表示ページで画像を開くには、画像を選択します。ツールバーの「**[!UICONTROL 編集]**」を選択します。
 
@@ -494,7 +494,7 @@ There was a link here that showed the video frame of an interactive video and wh
    >
    >クイックビューを含むショッパブルビデオを公開するには、ビデオに関連する各画像アセットをコマース領域から個別に公開してください。
 
-   タイムラインセグメントを追加し、インタラクティブビデオを公開したので、既存の Web サイトのランディングページにビデオを追加する準備が整いました。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website)を参照してください。
+   タイムラインセグメントを追加し、インタラクティブビデオを公開したので、既存の Web サイトのランディングページにビデオを追加する準備が整いました。[インタラクティブビデオの Web サイトへの統合](#integrating-an-interactive-video-with-your-website) を参照してください。
 
 ## インタラクティブビデオアセットの公開 {#publishing-interactive-video-assets}
 

@@ -65,4 +65,4 @@ App Builder には、開発者向けのビデオとドキュメントが用意�
 
 ## サポート {#support}
 
-開発者サポートに類するリクエストについては、開発者が [Experience League フォーラム](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly)を使用することをお勧めします。
+開発者サポートに類するリクエストについては、開発者が [Experience League フォーラム](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/project-firefly?profile.language=ja)を使用することをお勧めします。

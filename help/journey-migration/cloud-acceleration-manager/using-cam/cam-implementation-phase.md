@@ -115,6 +115,6 @@ AEM リポジトリーのサイズを推定するには、`http://HOST:PORT/etc/
 
 `path` パラメーターを使用して（例：`http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`）、特定のリポジトリーパスのサイズを推定することもできます。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Acceleration Manager へのログイン方法と実装フェーズの利用方法を理解したら、次のステップの[運用開始フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=ja)に進みます。

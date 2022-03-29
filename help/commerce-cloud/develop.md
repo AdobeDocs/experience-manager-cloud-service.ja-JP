@@ -11,7 +11,7 @@ exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -114,7 +114,7 @@ CIF を使い始めるために事前に設定されたプロジェクトをブ�
 
 >[!TIP]
 >
->常に最新バージョンの [AEM Project Archetype](https://github.com/adobe/aem-project-archetype/releases) プロジェクトを生成します。
+>常に最新バージョンの [AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype/releases) を使用して、プロジェクトを生成します。
 
 AEM プロジェクトの生成方法については、AEM プロジェクトのアーキタイプの「[使用手順](https://github.com/adobe/aem-project-archetype#usage)」を参照してください。プロジェクトに CIF を含めるには、`includeCommerce` オプションを使用します。
 

@@ -5,7 +5,7 @@ exl-id: a95caf5e-e6b2-463f-bebd-b791104fd25c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,4 +36,4 @@ ht-degree: 93%
 
 * **[!DNL Adobe I/O]CLI**：`aio-cli-plugin-aem-cloud-service-migration`（[!DNL Adobe I/O] CLI の [!DNL Experience Manager] as a [!DNL Cloud Service] コードリファクタリングプラグイン）を介してアセットワークフロー移行ツールを使用することをお勧 めします。このプラグインのインストールおよび使用方法については、[Git リソース：aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction) を参照してください。
 
-* **スタンドアロンユーティリティ**：アセットワークフロー移行ツールはスタンドアロンユーティリティとして実行することもできます。ソースからのコードのインストールと構築については、 [Git リソース： [!DNL Experience Manager Assets] as a [!DNL Cloud Service]  — ワークフローの移行](https://github.com/adobe/aem-cloud-migration).
+* **スタンドアロンユーティリティ**：アセットワークフロー移行ツールはスタンドアロンユーティリティとして実行することもできます。ソースからのコードのインストールとビルドについては、 [Git リソース： [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - ワークフローの移行](https://github.com/adobe/aem-cloud-migration) を参照してください。

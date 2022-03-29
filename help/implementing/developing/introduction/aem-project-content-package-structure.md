@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 >[!TIP]
 >
->AEM as a Cloud Service のインデックス作成について詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)ドキュメントを参照してください。
+>AEM as a Cloud Service のインデックス作成について詳しくは、 [コンテンツの検索とインデックス作成](/help/operations/indexing.md) ドキュメントを参照してください。
 
 ## 推奨されるパッケージ構造 {#recommended-package-structure}
 
@@ -79,10 +79,10 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 ### コンテンツパッケージ
 
-+ `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。コンテンツパッケージには、 `ui.apps` または `ui.config` パッケージ、つまり、 `/apps` または `/oak:index`. `ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
++ `ui.content` パッケージには、すべてのコンテンツと設定が含まれています。コンテンツパッケージには、`ui.apps` パッケージまたは `ui.config` パッケージに含まれないすべてのノード定義が含まれます。言い換えれば、`/apps` または `/oak:index` に含まれないすべてが含まれます。`ui.content` パッケージの共通要素には次のものがありますが、これらに限定されるわけではありません。
    + コンテキスト対応の設定
       + `/conf`
-   + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義された過去のベースラインコンテンツ構造に基づいて構築され、拡張されるコンテンツの構築。)
+   + 必須の、複雑なコンテンツの構造。すなわち、Repo Init で定義された過去のベースラインコンテンツの構造に基づいて構築され、拡張されるコンテンツの構築。）
       + `/content`、`/content/dam` など
    + 管理されるタグ付け分類
       + `/content/cq:tags`
@@ -110,8 +110,8 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
       + `site-b.ui.config`：サイト B に必要な OSGi 設定をデプロイします
       + `site-b.ui.content`：サイト B に必要なコンテンツと設定をデプロイします
 
-+ この `ui.config` パッケージにすべてを含む [OSGi 設定](/help/implementing/deploying/configuring-osgi.md):
-   + コードと見なされ、OSGi バンドルに属していますが、通常のコンテンツノードは含まれていません。 したがって、コンテナパッケージとしてマークされます
++ `ui.config` パッケージには、すべての [OSGi 設定](/help/implementing/deploying/configuring-osgi.md) が含まれています。
+   + コードと見なされ、OSGi バンドルに属していますが、通常のコンテンツノードは含まれていません。したがって、コンテナパッケージとしてマークされます
    + 実行モード固有の OSGi 構成定義を含む組織フォルダー
       + `/apps/my-app/osgiconfig`
    + すべてのターゲット AEM as a Cloud Service デプロイメントターゲットに適用されるデフォルトの OSGi 設定を含む、共通の OSGi 設定フォルダー
@@ -144,24 +144,24 @@ Oak インデックス（`/oak:index`）は、AEM as a Cloud Service のデプ�
 
 パッケージは、宣言済みのパッケージタイプでマークされる必要があります。パッケージタイプは、パッケージの目的とデプロイメントを明確にするのに役立ちます。
 
-+ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには通常のノードを含めることはできません。 OSGi バンドル、設定、サブパッケージのみを使用できます。 AEM as a Cloud Serviceのコンテナは、 [フックを取り付ける](http://jackrabbit.apache.org/filevault/installhooks.html).
++ コンテナパッケージでは、`packageType` を `container` に設定する必要があります。コンテナパッケージには通常のノードを含めることはできません。OSGi バンドル、設定、サブパッケージのみを使用できます。AEM as a Cloud Service のコンテナは、 [インストールフック](http://jackrabbit.apache.org/filevault/installhooks.html) を使用できません。
 + コード（不変）パッケージは、`packageType` を `application` に設定する必要があります。
 + コンテンツ（可変）パッケージは、`packageType` を `content` に設定する必要があります。
 
 
-詳しくは、 [Apache Jackrabbit FileVault - Package Maven Plugin ドキュメント](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Apache Jackrabbit パッケージタイプ](http://jackrabbit.apache.org/filevault/packagetypes.html)、および [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager) 下
+詳しくは、[Apache Jackrabbit FileVault - Package Maven プラグインのドキュメント](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType)、[Apache Jackrabbit パッケージタイプ](http://jackrabbit.apache.org/filevault/packagetypes.html)、以下の [FileVault Maven 設定スニペット](#marking-packages-for-deployment-by-adoube-cloud-manager) を参照してください。
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#xml-package-types)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-package-types) の節を参照してください。
 
 ## Adobe Cloud Manager によるデプロイメント用のパッケージのマーク {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-デフォルトでは、Adobe Cloud Manager は Maven ビルドで生成されたすべてのパッケージを組み込みますが、コンテナ（`all`）パッケージはすべてのコードパッケージおよびコンテンツパッケージを含んだ単一のデプロイメントアーティファクトなので、必ず、コンテナ（`all`）パッケージ&#x200B;**のみ**&#x200B;をデプロイします。これを確実に行うには、Maven ビルドで生成される他のパッケージを、`<properties><cloudManagerTarget>none</cloudManageTarget></properties>` という FileVault コンテンツパッケージ Maven プラグイン設定でマークする必要があります。
+デフォルトでは、Adobe Cloud Manager は Maven ビルドで生成されたすべてのパッケージを組み込みますが、コンテナ（`all`）パッケージはすべてのコードパッケージおよびコンテンツパッケージを含んだ単一のデプロイメントアーティファクトなので、必ず、コンテナ（`all`）パッケージ **のみ** をデプロイします。これを確実に行うには、Maven ビルドで生成される他のパッケージを、`<properties><cloudManagerTarget>none</cloudManageTarget></properties>` という FileVault コンテンツパッケージ Maven プラグイン設定でマークする必要があります。
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#pom-xml-snippets)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#pom-xml-snippets) の節を参照してください。
 
 ## Repo Init {#repo-init}
 
@@ -191,7 +191,7 @@ Repo Init スクリプトの全語彙は、[Apache Sling Repo Init ドキュメ�
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [Repo Init スニペット](#snippet-repo-init)の節を参照してください。
+>完全なスニペットについては、この後の [Repo Init スニペット](#snippet-repo-init) の節を参照してください。
 
 ## リポジトリー構造パッケージ {#repository-structure-package}
 
@@ -205,7 +205,7 @@ Repo Init スクリプトの全語彙は、[Apache Sling Repo Init ドキュメ�
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#xml-repository-structure-package)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-repository-structure-package) の節を参照してください。
 
 ## コンテナパッケージへのサブパッケージの埋め込み{#embeddeds}
 
@@ -256,7 +256,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#xml-embeddeds)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-embeddeds) の節を参照してください。
 
 ### コンテナパッケージのフィルター定義 {#container-package-filter-definition}
 
@@ -266,7 +266,7 @@ AEM オーサーか AEM パブリッシュまたはその両方をターゲッ�
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#xml-container-package-filters)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-container-package-filters) の節を参照してください。
 
 ## サードパーティパッケージの埋め込み {#embedding-3rd-party-packages}
 
@@ -282,7 +282,7 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#xml-3rd-party-maven-repositories)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-3rd-party-maven-repositories) の節を参照してください。
 
 ## `ui.apps` パッケージと `ui.content` パッケージの依存関係  {#package-dependencies}
 
@@ -290,11 +290,11 @@ Maven の依存関係を追加する場合は、Maven の標準的な手法に�
 
 一般的なルールとしては、可変コンテンツを格納したパッケージ（`ui.content`）は、可変コンテンツのレンダリングと使用をサポートする不変コード（`ui.apps`）に依存します。
 
-この一般的なルールの例外として重要なのは、不変コードパッケージ（`ui.apps` など）に OSGi バンドル&#x200B;__のみ__&#x200B;含まれている場合です。この場合、AEM パッケージでは不変コードパッケージへの依存関係を宣言する必要はありません。これは、不変コードパッケージが原因です __のみ__ を含む OSGi バンドルは、AEMに登録されていません [パッケージマネージャ](/help/implementing/developing/tools/package-manager.md) そのため、それに依存するAEMパッケージは、依存関係が満たされず、インストールに失敗します。
+この一般的なルールの例外として重要なのは、不変コードパッケージ（`ui.apps` など）に OSGi バンドル&#x200B;__のみ__&#x200B;含まれている場合です。この場合、AEM パッケージでは不変コードパッケージへの依存関係を宣言する必要はありません。その理由は、OSGi バンドル __のみ__ を含んだ不変コードパッケージは AEM [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) には登録されていないので、そのコードパッケージに依存するあらゆる AEM パッケージは依存関係の設定が十分でなく、インストールに失敗するからです。
 
 >[!TIP]
 >
->完全なスニペットについては、この後の [POM XML スニペット](#xml-package-dependencies)の節を参照してください。
+>完全なスニペットについては、この後の [POM XML スニペット](#xml-package-dependencies) の節を参照してください。
 
 コンテンツパッケージの依存関係の一般的なパターンは以下のとおりです。
 
@@ -537,13 +537,13 @@ scripts=["
 
 ### コンテナパッケージのフィルター定義 {#xml-container-package-filters}
 
-`all` プロジェクトの `filter.xml`（`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`）に、デプロイするサブパッケージを格納したすべての `-packages` フォルダーを&#x200B;**含めます**。
+`all` プロジェクトの `filter.xml`（`all/src/main/content/jcr_root/META-INF/vault/definition/filter.xml`）に、デプロイするサブパッケージを格納したすべての `-packages` フォルダーを **含めます**。
 
 ```xml
 <filter root="/apps/my-app-packages"/>
 ```
 
-複数の `/apps/*-packages` は、埋め込みターゲットで使用される場合、すべてをここに列挙する必要があります。
+埋め込まれるターゲットで複数の `/apps/*-packages` が使用されている場合は、それらをすべてここに列挙する必要があります。
 
 ### サードパーティ Maven リポジトリー {#xml-3rd-party-maven-repositories}
 

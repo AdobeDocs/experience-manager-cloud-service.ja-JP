@@ -1,27 +1,27 @@
 ---
 title: AEM Commerce コンテンツ作成者ジャーニー
-description: AEM Commerce Authoring を使用したガイド付きジャーニーについては、ここから始めてください
+description: AEM Commerce オーサリングを使用したガイド付きジャーニーについては、ここから開始してください
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
-# AEM Content and Commerce Content Authorジャーニー {#aem-commerce-author-journey}
+# AEM Content and Commerce コンテンツ作成者ジャーニー {#aem-commerce-author-journey}
 
-製品エクスペリエンスの管理方法については、AEMのコンテンツとコマースをガイド付きで参照できるジャーニーをご覧ください。
+製品エクスペリエンスの管理方法については、AEM Content and Commerce を使用したガイド付きジャーニーをここから始めてください。
 
 ## はじめに {#introduction}
 
-このガイドでは、AEMのコンテンツおよびコマースのオーサリングに関する最も重要なトピックを順を追って説明し、完了時に次の操作をおこないます。
+このガイドでは、AEM Content and Commerce のオーサリングに関する最も重要なトピックを順を追って説明します。完了時には次のことができるようになります。
 
-* AEMのコンテンツとコマースの基本について説明します。
+* AEM Content and Commerce の基本について説明します
 * AEM CIF オーサリングの基礎知識
-* 個々のテンプレートとコンテンツを使用した商品カタログエクスペリエンスの作成
+* 個々のテンプレートとコンテンツを使用した製品カタログエクスペリエンスの作成
 * ステージングされた製品カタログエクスペリエンスを管理
-* 製品エクスペリエンス管理ツールを使用した製品データとコンテンツの強化
+* 製品エクスペリエンス管理ツールを使用した製品データとコンテンツのエンリッチメント
 
 ## AEM ドキュメントジャーニー {#documentation-journeys}
 
@@ -33,25 +33,25 @@ AEM を使用してサイトのビジネスケースを解決する方法をア�
 
 ## 対象読者 {#audience}
 
-このジャーニーは、AEM Commerce コンテンツ作成者向けに設計されています。 このジャーニーは、カタログページ、テンプレート、完全な製品エクスペリエンスを開始および管理するための要件、手順およびアプローチをレイアウトします。
+このジャーニーは、AEM Commerce コンテンツ作成者向けに設計されています。このジャーニーは、カタログページ、テンプレート、完全な製品エクスペリエンスを開始および管理するための要件、手順およびアプローチを説明します。
 
 このジャーニーの情報は、もちろん他のペルソナにとっても役に立ちますが、特定のロールには必要ない情報も一部あります。その他のロールに対応するジャーニーが今後公開され次第、随時お知らせします。
 
 ## ジャーニー {#the-journey}
 
-このジャーニーでは、多くのトピックを参照します。以下の記事では、基本的な知識と詳細な技術ドキュメントへのリンクを示します。
+このジャーニーでは、多くのトピックを参照します。以下の記事では、基礎知識を提供し、詳細な技術ドキュメントへのリンクも示します。
 
 ジャーニーの特定の部分に直接移動することもできますが、多くの概念は、それまでの記事で紹介された概念に基づいています。したがって、AEM Content and Commerce を初めて使用する場合は、最初から順に進めることをお勧めします。
 
 | # | 記事 | 説明 |
 |---|---|---|
 | 0 | AEM Content and Commerce 開発者ジャーニー | このドキュメント |
-| 1 | [AEM Content and Commerce の詳細](/help/commerce-cloud/introduction.md) | AEMコンテンツとコマースの概念と基本について説明します。 |
+| 1 | [AEM Content and Commerce について](/help/commerce-cloud/introduction.md) | AEM Content and Commerce の概念と基本について説明します。 |
 | 2 | [AEM CIF オーサリングの基礎知識](getting-started.md) | オーサリングのユースケースで製品データにアクセスして使用する方法を説明します。 |
-| 3 | [商品カタログのページとテンプレートを管理](catalog-templates.md) | 一般的な製品カタログエクスペリエンスの作成方法を説明します。 |
-| 4 | [ステージングされた製品カタログエクスペリエンスを管理](staged-catalog.md) | ステージング済みデータとAEM Launches を使用して、将来の製品カタログエクスペリエンスを作成する方法を説明します。 |
-| 5 | [製品エクスペリエンスの構築](product-experience-management.md) | AEMで没入型コンテンツを使用して製品データを拡張する方法を説明します。 |
+| 3 | [製品カタログのページとテンプレートの管理](catalog-templates.md) | 一般的な製品カタログエクスペリエンスの作成方法を説明します。 |
+| 4 | [ステージングされた製品カタログエクスペリエンスの管理](staged-catalog.md) | ステージングされたデータと AEM ローンチを使用して将来の製品カタログエクスペリエンスを作成する方法を説明します。 |
+| 5 | [製品エクスペリエンスの作成](product-experience-management.md) | AEM で没入型コンテンツを使用して製品データを拡張する方法を説明します。 |
 
-## 次のステップ {#what-is-next}
+## 次の手順 {#what-is-next}
 
-これで、AEMコンテンツおよびコマース開発ジャーニーを開始する準備が整いました。 ジャーニーの次の部分に進み、記事を読むことをお勧めします。 [AEM Content and Commerce の詳細](/help/commerce-cloud/introduction.md).
+これで、AEM Content and Commerce 開発ジャーニーを開始する準備が整いました。このジャーニーの次のステップに進み、 [AEM Content and Commerce について](/help/commerce-cloud/introduction.md) を読むことをお勧めします。

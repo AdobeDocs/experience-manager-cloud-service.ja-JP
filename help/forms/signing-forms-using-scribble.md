@@ -1,5 +1,5 @@
 ---
-title: 手書き署名を使用したフォームへの電子署名の適用
+title: '手書き署名を使用したフォームへの電子サインの適用 '
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: 手書きでのフォームへの署名
 seo-description: Signing forms using scribble
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# 手書き署名を使用したフォームへの電子署名の適用{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# 手書き署名を使用したフォームへの電子サインの適用 {#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 **手書き署名**&#x200B;コンポーネントや&#x200B;**署名ステップ**&#x200B;コンポーネントを使用すると、アダプティブフォームに手書きで署名できます。署名ステップコンポーネントでは、アダプティブフォームの PDF バージョンが表示されます。署名ステップコンポーネントを使用するには、「レコードのドキュメント」オプションが有効なアダプティブフォームか、フォームテンプレートベースのアダプティブフォームが必要です。
 

@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Microsoft Dynamics] OData の設定方法'
-description: で定義されたエンティティ、属性、サービスに基づいてフォームデータモデルを作成する方法を説明します。 [!DNL Microsoft Dynamics] サービス。 フォームデータモデルを使用して、 [!DNL Microsoft Dynamics]  サーバーと連携するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。
+description: ' [!DNL Microsoft Dynamics]  サービスで定義したエンティティ、属性、サービスに基づいて、フォームデータモデルを作成する方法について説明します。フォームデータモデルを使用して、 [!DNL Microsoft Dynamics]  サーバーと連動するアダプティブフォームを作成することにより、ビジネスワークフローを使用できるようになります。'
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 98%
    * [!DNL Microsoft Dynamics] 365 オンプレミス
    * [!DNL Microsoft Dynamics] 2016 オンプレミス
 
-* [ [!DNL Microsoft Dynamics]  [!DNL Microsoft Azure]  オンラインサービスのアプリケーションを Active Directory に登録したこと](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory)。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
+* [ [!DNL Microsoft Dynamics] オンラインサービス用アプリケーションを [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/ja-jp/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory) に登録しました。登録済みサービスのクライアント ID（アプリケーション ID）とクライアントの秘密鍵の値を書き留めてください。これらの値は [ [!DNL Microsoft Dynamics]  サービス用にクラウドサービスを設定する時に使用します](#configure-cloud-service-for-your-microsoft-dynamics-service)。
 
 ## 登録された [!DNL Microsoft Dynamics] アプリケーションの応答 URL を設定 {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -91,7 +91,7 @@ OAuth クライアントを Active Directory Federation Services（AD FS）マ�
 
    `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   ここで、
+   各パラメーターの意味は次のとおりです。
 
    * `Client-ID` は、任意の GUID ジェネレーターを使用して生成できるクライアント ID です。
    * `redirect-uri` は、[!DNL Experience Manager Forms] 上の [!DNL Microsoft Dynamics] OData クラウドサービスに対する URL です。[!DNL Experience Manager Forms] と共にインストールされるデフォルトのクラウドサービスは、次の URL にデプロイされます。
@@ -101,7 +101,7 @@ OAuth クライアントを Active Directory Federation Services（AD FS）マ�
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
 
-   ここで、
+   各パラメーターの意味は次のとおりです。
 
    * `resource` は [!DNL Microsoft Dynamics] 組織の URL です。
 

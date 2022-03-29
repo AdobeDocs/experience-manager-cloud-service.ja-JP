@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームでの SOM 式の使用
+title: 'アダプティブフォームでの SOM 式の使用 '
 seo-title: Using SOM expressions in Adaptive Forms
 description: アダプティブフォームのパネルで SOM 式を抽出する方法を説明します。
 seo-description: Learn how to extract SOM expressions of a panel of an Adaptive Form.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# アダプティブフォームでの SOM 式の使用{#using-som-expressions-in-adaptive-forms}
+# アダプティブフォームでの SOM 式の使用 {#using-som-expressions-in-adaptive-forms}
 
 アダプティブフォームは AEM ページとしてモデル化され、AEM リポジトリーで JCR コンテンツ構造で表示されます。コンテンツ構造のキー要素は guideContainer ノードです。guideContainer の下にある rootPanel にはネストされたパネルやフィールドが含まれる場合があります。
 

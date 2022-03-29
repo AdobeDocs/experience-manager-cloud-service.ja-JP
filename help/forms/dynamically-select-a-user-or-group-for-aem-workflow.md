@@ -1,7 +1,7 @@
 ---
 title: AEM Forms 中心のワークフローステップのためのユーザーまたはグループの動的な選択
 seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
-description: '実行時に  [!DNL AEM Forms]  ワークフローのユーザーまたはグループを選択する方法について説明します。 '
+description: '実行時に [!DNL AEM Forms] ワークフローのユーザーまたはグループを選択する方法について説明します。 '
 seo-description: Learn how to select a user or group for an [!DNL AEM Forms] workflow at the runtime.
 uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
@@ -116,7 +116,7 @@ function getAdobeSignRecipients() {
 
 ## ユーザーまたはグループを動的に選択するための Java インターフェイスの使用 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-[RecipientInfoSpecifier](https://helpx.adobe.com/jp/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用して、[!DNL Adobe Sign] やタスクの割り当て手順にユーザーまたはグループを動的に選択できます。[RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用する OSGi バンドルを作成して、[!DNL AEM Forms] サーバーにデプロイできます。これにより、AEM ワークフローのタスクの割り当ておよび [!DNL Adobe Sign] コンポーネントで、オプションを選択できるようになります。
+[RecipientInfoSpecifier](https://helpx.adobe.com/jp/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用すると、[!DNL Adobe Sign] 手順やタスクの割り当て手順でユーザーまたはグループを動的に選択できます。[RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java インターフェイスを使用する OSGi バンドルを作成して、[!DNL AEM Forms] サーバーにデプロイできます。これにより、AEM ワークフローのタスクの割り当ておよび [!DNL Adobe Sign] コンポーネントで、オプションを選択できるようになります。
 
 以下のコードサンプルをコンパイルするには、[[!DNL AEM Forms] Client SDK](https://helpx.adobe.com/jp/aem-forms/kb/aem-forms-releases.html) jar および [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) ファイルが必要です。これらの jar ファイルを、外部依存として OSGi バンドルプロジェクトに追加します。OSGi バンドルの作成には、任意の Java IDE を使用できます。以下の手順では、Eclipse を使用して OSGi バンドルを作成します。
 
@@ -232,7 +232,7 @@ function getAdobeSignRecipients() {
 
 1. バンドルを [!DNL AEM Forms] サーバーにアップロードします。AEM パッケージマネージャーを使用して、バンドルを [!DNL AEM Forms] サーバーに読み込むことができます。
 
-バンドルを読み込むと、Adobe Sign やタスクの割り当て手順で、ユーザーまたはグループを動的に選択する Java オプションを使用できるようになります。
+バンドルをインポートすると、Adobe Sign 手順やタスクの割り当て手順で、ユーザーまたはグループを動的に選択する Java インターフェイスを選択できるようになります。
 
 ### ユーザーまたはグループを動的に選択するためのサンプル Java コード {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 

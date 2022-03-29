@@ -1,12 +1,12 @@
 ---
-title: 入門と概要
+title: 概要
 description: AEM Content and Commerce の入門と概要。Experience ManagerCommerce Integration Framework(CIF) は、Adobe Commerceおよび他のサードパーティのコマースソリューションのコマースサービスをExperience Cloudと統合し、拡張するためのAdobeの推奨パターンです。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ CIF は、常に最新のアドオンを使用した継続的なイノベーシ�
 
 CIF は、ベストプラクティスに基づく標準化された統合パターンで顧客をサポートします。顧客の現在の成功に役立つほか、顧客と共に成長し将来の要件にも対応できる柔軟性を備えています。具体的には次のとおりです。
 
-* 製品カタログの統合に関して発生する可能性のある典型的な問題を排除します。例えば、次のような問題です。
+* 製品カタログの統合に関して発生する可能性のある典型的な問題を排除します。例：
    * カタログの量や複雑さの増大に伴ってパフォーマンスが低下
    * ステージング済みデータにアクセスできない
    * リアルタイムの製品データおよびエクスペリエンスが必要
@@ -79,6 +79,6 @@ CIF は、ベストプラクティスに基づく標準化された統合パタ�
 
 ## ジャーニー {#journey}
 
-コマースジャーニーを使用している場合は、次の手順に進んでください。
+コマースジャーニーを続けている場合は、次の手順に進んでください。
 
-* この [AEM Content Author ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+* [AEM コンテンツ作成者ジャーニー](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

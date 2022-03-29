@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **特殊 FPO レンディション**：クリエイティブ作業でサイズの大きいアセットを [!DNL Experience Manager] から [!DNL Adobe InDesign] ドキュメントに配置する際、[アセットを配置](https://helpx.adobe.com/jp/indesign/using/placing-graphics.html)した後、かなりの時間を待つ必要があります。その間ユーザーは [!DNL InDesign] の使用をブロックされます。これにより、クリエイティブの流れが中断され、ユーザーエクスペリエンスに悪影響が出ます。[!DNL InDesign] ドキュメントでは、最初に小さいサイズのレンディションを一時的に配置して、後からオンデマンドでフル解像度のアセットに置き換えることができます。[!DNL Experience Manager] には、配置専用（FPO）のレンディションが用意されています。これらの FPO レンディションは、ファイルサイズは小さいですが、縦横比は同じです。
 
-処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、 [!DNL Adobe Asset Link] [ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、[Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html)を参照してください。
+処理プロファイルには、FPO（配置専用）レンディションを含めることができます。これを処理プロファイルで有効にする必要がある場合は、 [!DNL Adobe Asset Link] [ドキュメント](https://helpx.adobe.com/jp/enterprise/using/manage-assets-using-adobe-asset-link.html)を参照してください。詳しくは、 [Adobe Asset Link の完全なドキュメント](https://helpx.adobe.com/jp/enterprise/using/adobe-asset-link.html) を参照してください。
 
 ### 標準プロファイルの作成 {#create-standard-profile}
 
@@ -160,7 +160,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 次のいずれかの方法を使用して、処理プロファイルをフォルダーに適用します。
 
 * 管理者が、**[!UICONTROL ツール]**／**[!UICONTROL アセット]**／**[!UICONTROL 処理プロファイル]**&#x200B;で処理プロファイルの定義を選択し、「**[!UICONTROL プロファイルをフォルダーに適用]**」アクションを使用します。コンテンツブラウザーが開き、そこで特定のフォルダーに移動したり、フォルダーを選択したり、プロファイルの適用を確定したりできます。
-* Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL アセット処理]**」タブをクリックし、[!UICONTROL 処理プロファイル]リストでそのフォルダーに適した処理プロファイルを選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
+* Assets ユーザーインターフェイスでフォルダーを選択し、「**[!UICONTROL プロパティ]**」アクションを使用してフォルダーのプロパティ画面を開き、「**[!UICONTROL アセット処理]**」タブをクリックし、 [!UICONTROL 処理プロファイル] リストでそのフォルダーに適した処理プロファイルを選択します。変更を保存するには、「**[!UICONTROL 保存して閉じる]**」をクリックします。
    ![「アセットのプロパティ」タブからのフォルダーへの処理プロファイルの適用](assets/folder-properties-processing-profile.png)
 
 * Assets ユーザーインターフェイスでフォルダーまたは特定のアセットを選択して処理プロファイルを適用し、上部にあるオプションから![アセット再処理アイコン](assets/do-not-localize/reprocess-assets-icon.png)「**[!UICONTROL アセットを再処理]**」オプションを選択できます。
@@ -169,7 +169,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 >
 >1 つのフォルダーに適用できる処理プロファイルは 1 つだけです。さらにレンディションを生成するには、既存の処理プロファイルにレンディションの定義を追加します。
 
-処理プロファイルをフォルダーに適用すると、このフォルダーまたはそのサブフォルダー内の新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます（または更新）。 この処理は、標準のデフォルトプロファイルによる処理に加えて行われます。
+処理プロファイルがフォルダーに適用されると、このフォルダーまたはその任意のサブフォルダー内でアップロード（または更新）された新しいアセットはすべて、設定された追加の処理プロファイルを使用して処理されます。この処理は、標準のデフォルトプロファイルによる処理に加えて行われます。
 
 >[!NOTE]
 >

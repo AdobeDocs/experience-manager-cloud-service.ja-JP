@@ -17,10 +17,10 @@ ht-degree: 100%
 
 Dynamic Media では、2 種類のプロファイルを作成できます。次のリンク先では、それらのプロファイルについて詳しく説明しています。
 
-* [Dynamic Media イメージプロファイル](/help/assets/dynamic-media/image-profiles.md)
+* [Dynamic Media 画像プロファイル](/help/assets/dynamic-media/image-profiles.md)
 * [Dynamic Media ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)
 
-[メタデータプロファイル](/help/assets/metadata-profiles.md)も参照してください。
+[メタデータプロファイル](/help/assets/metadata-profiles.md) も参照してください。
 
 Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプロファイルを作成、編集および削除するには、管理者権限が必要です。
 
@@ -50,6 +50,7 @@ Dynamic Media イメージプロファイルまたは Dynamic Media ビデオプ
 >[!NOTE]
 >
 >Dynamic Media Classic から [!DNL Experience Manager] へのアセットの一括移行を実行する場合は、Dynamic Media サーバー上で移行レプリケーションエージェントを有効にします。移行が完了したら、このエージェントを必ず無効にします。
+
 >
 >再処理ワークフローが期待どおりに動作するように、Dynamic Media サーバー上で移行公開エージェントを無効にする必要があります。
 
@@ -84,7 +85,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. 「**[!UICONTROL 開始]**」を選択したあと、「**[!UICONTROL 確認]**」を選択します。
 
-   ワークフローを監視したり、進行状況を確認したりするには、[!DNL Experience Manager] のメインコンソールページで&#x200B;**[!UICONTROL ツール／ワークフロー]**&#x200B;を選択します。ワークフローインスタンスページで、ワークフローを選択します。メニューバーの「**[!UICONTROL 履歴を開く]**」を選択します。同じワークフローインスタンスページで、選択したワークフローの終了、休止、名前変更を行うこともできます。
+   ワークフローを監視したり、進行状況を確認したりするには、 [!DNL Experience Manager] のメインコンソールページで **[!UICONTROL ツール／ワークフロー]** を選択します。ワークフローインスタンスページで、ワークフローを選択します。メニューバーの「**[!UICONTROL 履歴を開く]**」を選択します。同じワークフローインスタンスページで、選択したワークフローの終了、休止、名前変更を行うこともできます。
 
 ### 再処理ワークフローのバッチサイズの調整（オプション） {#adjusting-load}
 
@@ -113,7 +114,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
    ![プロパティダイアログボックス](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
-1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]**&#x200B;ダイアログボックスの右上隅にある「**[!UICONTROL 完了]**」を選択します。
+1. **[!UICONTROL Scene7 へのバッチアップロード - ステップのプロパティ]** ダイアログボックスの右上隅にある「**[!UICONTROL 完了]**」を選択します。
 
 1. 「Scene7：アセットを再処理」ワークフローモデルページの右上隅にある「**[!UICONTROL 同期]**」を選択します。「**[!UICONTROL 同期済み]**」と表示された場合、ワークフローランタイムモデルは正常に同期されており、フォルダー内のアセットを再処理する準備が整います。
 

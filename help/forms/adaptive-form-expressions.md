@@ -64,7 +64,7 @@ ht-degree: 100%
 
 ### 式の計算 {#calculate-expression}
 
-式の計算は、式を使用してフィールドの値を自動計算するのに使用されます。通常、この式には、他のフィールドの value プロパティを使用します。例えば、`field2.value + field3.value` のようになります。`field2` または `field3` の値が変わるたびに、式が再トリガーされ、値が再計算されます。
+式の計算は、式を使用してフィールドの値を自動計算するのに使用されます。通常、この式には、他のフィールドの value プロパティを使用します。例えば、`field2.value + field3.value` のようになります。`field2` または `field3`の値が変わるたびに、式が再トリガーされ、値が再計算されます。
 
 **適用先**：フィールド
 
@@ -175,7 +175,7 @@ ht-degree: 100%
 
 **例**：様々なパネルに表示されるフォームでは、次のパネルに移動する前に、現在のパネルが検証されます。このような場合は、ステップ完了の式を使用します。一般的に、これらの式には GuideBridge 検証 API が使用されます。ステップ完了の式の一例：`window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
-## アダプティブフォームでの検証 {#validations-in-adaptive-form}
+## アダプティブフォームにおける検証 {#validations-in-adaptive-form}
 
 アダプティブフォームにフィールド検証を追加するには、複数の方法があります。検証チェックがフィールドに追加された場合、**True** はフィールドに入力された値が有効であることを示します。**False** は値が無効であることを示します。フィールドの中および外にタブを設定すると、エラーメッセージは生成されません。
 
@@ -183,11 +183,11 @@ ht-degree: 100%
 
 ### 必須 {#required}
 
-コンポーネントを必須にするには、コンポーネントの&#x200B;**編集**&#x200B;ダイアログで、**タイトルとテキスト／必須**&#x200B;オプションを選択します。また、適切な必須メッセージも追加できます（オプション）。
+コンポーネントを必須にするには、コンポーネントの **編集** ダイアログで、 **タイトルとテキスト／必須** オプションを選択します。また、適切な必須メッセージも追加できます（オプション）。
 
 ### 検証パターン {#validation-patterns}
 
-フィールドに利用可能な、すぐに使用できる検証パターンが複数あります。検証パターンを選択するには、コンポーネントの&#x200B;**編集**&#x200B;ダイアログで、「**パターン**」セクションを見つけて、「**パターン**」を選択します。**パターン**&#x200B;テキストボックスで、独自のカスタム検証パターンを作成できます。検証ステータスは、入力されたデータが検証パターンに準拠している場合にのみ **True** を返し、それ以外の場合は **False** を返します。<!-- To write your own custom validation pattern, see [Picture clause support for HTML5 forms](picture-clause-support.md). -->
+フィールドに利用可能な、すぐに使用できる検証パターンが複数あります。検証パターンを選択するには、コンポーネントの **編集** ダイアログで、「**パターン**」セクションを見つけて、「**パターン**」を選択します。**パターン**&#x200B;テキストボックスで、独自のカスタム検証パターンを作成できます。検証ステータスは、入力されたデータが検証パターンに準拠している場合にのみ **True** を返し、それ以外の場合は **False** を返します。<!-- To write your own custom validation pattern, see [Picture clause support for HTML5 forms](picture-clause-support.md). -->
 
 ### 検証式 {#validation-expressions}
 
@@ -195,7 +195,7 @@ ht-degree: 100%
 
 ## 追加情報 {#additional-information}
 
-### フィールドの表示形式の使用 {#using-field-display-format}
+### フィールド表示形式の使用 {#using-field-display-format}
 
 表示形式は、異なる形式でデータを表示するのに使用できます。例えば、ハイフンを使用した電話番号、郵便番号または日付選択を表示するための表示形式を使用できます。表示形式は、コンポーネントの編集ダイアログにある「**パターン**」セクションから選択できます。前述の検証パターンに類似したカスタム表示パターンを記述することもできます。
 
@@ -215,7 +215,7 @@ GuideBridge は、ブラウザーのメモリーモデルでアダプティブ�
 
 * アダプティブフォームやその特定のパネルを検証するには、`guideBridge.validate(errorList, somExpression).` を使用します。
 
-#### 式外での GuideBridge の使用  {#using-guidebridge-outside-expressions-nbsp}
+#### 式外での GuideBridge の使用 {#using-guidebridge-outside-expressions-nbsp}
 
 GuideBridge API を式の外で使用することもできます。例えば、GuideBridge API を使用して、アダプティブフォームをホストしているページ HTML とフォームモデルの間の通信を設定できます。また、フォームをホストしている Iframe の親から取得した値を設定することもできます。
 

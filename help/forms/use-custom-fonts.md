@@ -5,28 +5,28 @@ exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 0%
+ht-degree: 32%
 
 ---
 
 # カスタムフォントを使用
 
-**Cloud Service通信のドキュメントはベータ版です**
+**Cloud Service 通信のドキュメントはベータ版です**
 
-Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP ベースのテンプレートドキュメント、またはAcrobatフォーム (AcroForms) を XML データと組み合わせてPDFドキュメントを生成できます。 コミュニケーションを使用して、PDFドキュメントと XDP ドキュメントを組み合わせ、並べ替え、拡大し、PDFドキュメントに関する情報を取得することもできます。
+Forms as a Cloud Service 通信を使用すると、XDP テンプレート、XDP ベースの PDF ドキュメント、または Acrobat フォーム（AcroForms）を XML データと組み合わせて PDF ドキュメントを生成できます。コミュニケーションを使用して、PDFドキュメントと XDP ドキュメントを組み合わせ、並べ替え、拡大し、PDFドキュメントに関する情報を取得することもできます。
 
-前述の操作と共に、Cloud Serviceまたはカスタムフォント（組織の承認済みフォント）に含まれるフォントを使用して、生成されたPDFドキュメントをレンダリングできます。 Cloud Service開発プロジェクトを使用して、カスタムフォントをCloud Service環境に追加できます。
+前述の操作と共に、Cloud Serviceまたはカスタムフォント（組織の承認済みフォント）に含まれるフォントを使用して、生成されたPDFドキュメントをレンダリングできます。 Cloud Service 開発プロジェクトを使用して、カスタムフォントを Cloud Service 環境に追加できます。
 
-## PDF文書の動作
+## PDF ドキュメントの動作
 
-以下が可能です。 [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) をPDF文書に フォントが埋め込まれると、PDFドキュメントはすべてのプラットフォームで同じように表示されます（外観は同じ）。 埋め込みフォントを使用して、外観と操作性を一貫させます。 フォントが埋め込まれていない場合のフォントのレンダリングは、AcrobatやAcrobat ReaderなどのPDFビューアクライアントのレンダリング設定に依存します。 フォントがクライアントマシンで使用可能な場合、PDFは指定されたフォントを使用します。使用しない場合、PDFはデフォルトのフォールバックフォントでレンダリングされます。
+PDF ドキュメントに [フォントを埋め込む](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) ことができます。フォントが埋め込まれると、PDFドキュメントはすべてのプラットフォームで同じように表示されます（外観は同じ）。 埋め込みフォントを使用して、外観と操作性を一貫させます。 フォントが埋め込まれていない場合のフォントのレンダリングは、AcrobatやAcrobat ReaderなどのPDFビューアクライアントのレンダリング設定に依存します。 フォントがクライアントマシンで使用可能な場合、PDFは指定されたフォントを使用します。使用しない場合、PDFはデフォルトのフォールバックフォントでレンダリングされます。
 
-## Formsas a Cloud Service環境へのカスタムフォントの追加 {#custom-fonts-cloud-service}
+## Forms as a Cloud Service 環境へのカスタムフォントの追加 {#custom-fonts-cloud-service}
 
-カスタムフォントをCloud Service環境に追加するには：
+カスタムフォントを Cloud Service 環境に追加するには：
 
 1. を設定して、 [ローカル開発計画](setup-local-development-environment.md). 任意の IDE を使用できます。
-1. プロジェクトの最上位のフォルダー構造で、カスタムフォントを保存し、そのフォルダーにカスタムフォントを追加するフォルダー（モジュール）を作成します。 例： fonts/src/main/resources
+1. プロジェクトの最上位のフォルダー構造で、カスタムフォントを保存し、そのフォルダーにカスタムフォントを追加するフォルダー（モジュール）を作成します。 例：fonts/src/main/resources
    ![フォントフォルダー](assets/fonts.png)
 
 1. 開発プロジェクトのフォントモジュールの pom.xml ファイルを開きます。
@@ -71,7 +71,7 @@ Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP
    </plugin>
    ```
 
-1. フォントフォルダーの追加先 `<modules>` pom ファイルに一覧表示されます。 次に例を示します。
+1. フォントフォルダーを pom ファイルにリストされている `<modules>` に追加します。次に例を示します。
 
    ```xml
    <modules>
@@ -93,7 +93,7 @@ Formsas a Cloud Serviceコミュニケーションを使用して、XDPPDF、XDP
 
    fonts フォルダーには、すべてのカスタムフォントが含まれています。
 
-1. 更新されたコードを確認し、 [パイプラインを実行](/help/implementing/cloud-manager/deploy-code.md) フォントを環境にデプロイする場合は、Cloud Serviceを使用します。
+1. 更新されたコードをチェックインして [パイプラインを実行](/help/implementing/cloud-manager/deploy-code.md) し、フォントを Cloud Service 環境にデプロイします。
 
 1. （オプション）コマンドプロンプトを開き、ローカルプロジェクトフォルダに移動して、次のコマンドを実行します。 このコマンドは、フォントを関連情報と共に.jar ファイルにパッケージ化します。 .jar ファイルを使用して、FormsCloud Serviceローカル開発環境にカスタムフォントを追加できます。
 

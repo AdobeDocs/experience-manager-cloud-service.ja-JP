@@ -1,5 +1,5 @@
 ---
-title: フォームのフィールドのための文脈依存ヘルプの作成
+title: フォームのフィールド用文脈依存ヘルプの作成
 seo-title: Authoring in-context help for form fields
 description: AEM Forms では、文脈依存ヘルプをテキストまたはビデオなどのリッチメディアの形でアダプティブフォームフィールドやパネルに追加することができます。
 seo-description: AEM Forms allows you to add in-context help to Adaptive Form fields and panels, as text or rich media, including videos.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# フォームのフィールドのための文脈依存ヘルプの作成{#authoring-in-context-help-for-form-fields}
+# フォームのフィールド用文脈依存ヘルプの作成 {#authoring-in-context-help-for-form-fields}
 
 ## はじめに {#introduction}
 

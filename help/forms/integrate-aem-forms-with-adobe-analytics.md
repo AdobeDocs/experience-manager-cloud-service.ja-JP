@@ -207,9 +207,9 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. 「[関連付けられている Adobe IMS 設定](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html)」を選択します。
 
-1. [Adobe Analytics の設定](#Configure-adobe-analytics)時に使用した会社の名前を選択します。
+1. [Adobe Analytics の設定](#Configure-adobe-analytics) 時に使用した会社の名前を選択します。
 
-1. [Adobe Analytics の設定](#install-extensions)時に作成したプロパティの名前を選択します。
+1. [Adobe Analytics の設定](#install-extensions) 時に作成したプロパティの名前を選択します。
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップします。
 
@@ -221,7 +221,7 @@ Adobe Launch 設定を作成するには、次の手順を実行します。
 
 1. AEM Forms オーサーインスタンスで、**[!UICONTROL Adobe Experience Manager]**／**[!UICONTROL Forms]**／**[!UICONTROL フォームとドキュメント]**&#x200B;に移動します。
 1. アダプティブフォームを選択し、**[!UICONTROL プロパティ]**&#x200B;アイコンをタップします。
-1. 「**[!UICONTROL 基本]**」タブで、Adobe Launch 設定の作成時に使用した[設定コンテナ](#create-adobe-launch-configuration)を選択します。
+1. 「**[!UICONTROL 基本]**」タブで、Adobe Launch 設定の作成時に使用した [設定コンテナ](#create-adobe-launch-configuration) を選択します。
 1. 「**[!UICONTROL 保存して閉じる]**」をタップします。アダプティブフォームは [!DNL Adobe Analytics] に対して有効になっています。
 1. フォームを公開します。
 

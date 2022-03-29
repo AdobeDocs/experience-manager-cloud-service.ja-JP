@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
 source-wordcount: '2512'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->クラウド内の Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、 [クラウド内の Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページ。 Dispatcher 設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
+>クラウドの Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウドの Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページを参照してください。Dispatcher 設定がレガシーモードの場合は、 [レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md) を参照してください。
 
 以降の節では、フレキシブルモードのファイル構造、ローカル検証、デバッグ、レガシーモードからフレキシブルモードへの移行について説明します。
 

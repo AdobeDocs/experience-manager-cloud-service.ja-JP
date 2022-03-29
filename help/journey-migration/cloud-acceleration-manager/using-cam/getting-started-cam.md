@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Cloud Acceleration Manager の基本を学ぶ {#get-started-cam}
 
-Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームを導くように設計されたクラウドベースのアプリケーションです。AEM as a Cloud Service への移行プロセスの各フェーズで役に立つアドビ推奨のベストプラクティス、ヒント、ドキュメントおよびツールを利用して移行に成功するように、チームをセットアップします。
+Cloud Acceleration Manager は、Cloud Service の計画から運用開始まで、移行プロセス全体を通じて IT チームを導くように設計されたクラウドベースのアプリケーションです。AEM as a Cloud Service への移行プロセスの各段階で役に立つアドビ推奨のベストプラクティス、ヒント、ドキュメントおよびツールを利用して移行を成功へ導くよう、チームをセットアップします。
 
 ## 目的 {#objective}
 
@@ -95,6 +95,6 @@ Cloud Acceleration Manager（CAM）のランディングページを使用する
 
 1. 「**削除**」をクリックして、手順を確定します。
 
-## 次のステップ {#whats-next}
+## 次の手順 {#whats-next}
 
 Cloud Acceleration Manager へのログイン方法とプロジェクトの作成方法を理解したら、次のステップの[準備フェーズ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja)に進みます。

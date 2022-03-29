@@ -330,7 +330,7 @@ Sling モデルは Java として実装され、生成されたプロジェク�
 
 ## 製品ティーザーのマークアップのカスタマイズ {#customize-markup-product-teaser}
 
-AEM コンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。これは、コンポーネントがマークアップのレンダリングに使用する [HTL スクリプト](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)を上書きすることでおこなわれます 。HTML Template Language（HTL）は、AEM コンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。例えば、製品ティーザーを何度も繰り返し使用すれば、異なる製品を表示できます。
+AEM コンポーネントの一般的な拡張機能は、コンポーネントによって生成されたマークアップを変更することです。これは、コンポーネントがマークアップのレンダリングに使用する [HTL スクリプト](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=ja)を上書きすることでおこなわれます。HTML Template Language（HTL）は、AEM コンポーネントがオーサリングされたコンテンツに基づいて動的にマークアップをレンダリングし、コンポーネントを再利用する際に使用する、軽量なテンプレート言語です。例えば、製品ティーザーを何度も繰り返し使用すれば、異なる製品を表示できます。
 
 この例では、ティーザーの上にバナーをレンダリングして、カスタム属性に基づいて製品が「エコフレンドリー」であることを示します。コンポーネントの[マークアップをカスタマイズ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=ja#customizing-the-markup)するデザインパターンは、AEM CIF コアコンポーネントだけでなく、すべての AEM コンポーネントに対して実際に標準です。
 
@@ -436,7 +436,7 @@ AEM コンポーネントの一般的な拡張機能は、コンポーネント�
 
 この時点で、**エコフレンドリー**&#x200B;バッジを表示するタイミングのロジックは機能していますが、プレーンテキストなのでスタイルを設定できます。次に、`ui.frontend` モジュールにアイコンとスタイルを追加し、実装を完了します。
 
-1. [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) ファイルをダウンロードします 。これは、**エコフレンドリー**&#x200B;バッジとして使用されます。
+1. [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) ファイルをダウンロードします。これは、**エコフレンドリー**&#x200B;バッジとして使用されます。
 1. IDE に戻り、`ui.frontend` フォルダーに移動します。
 1. `eco_friendly.svg` ファイルを `ui.frontend/src/main/resources/images` フォルダーに格納します。
 

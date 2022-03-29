@@ -1,15 +1,15 @@
 ---
-title: Screens 用カスタムコンポーネントの開発as a Cloud Service
+title: Screens as a Cloud Service 用カスタムコンポーネントの開発
 description: 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# AEM Screens as a Cloud Service用カスタムコンポーネントの開発{#developing-a-custom-component-for-aem-screens}
+# AEM Screens as a Cloud Service 用カスタムコンポーネントの開発{#developing-a-custom-component-for-aem-screens}
 
 以下のチュートリアルでは、AEM Screens 用のカスタムコンポーネントを作成する手順について説明します。AEM Screens では、他の AEM 製品の様々な既存のデザインパターンやテクノロジーを再利用しています。このチュートリアルでは、AEM Screens 用に開発する際の相違点と特別な考慮事項について重点的に説明します。
 
@@ -92,8 +92,8 @@ Hello World コンポーネントは、スクリーンに表示されるメッ�
 AEM Screens には、従来の WCM Sites コンポーネントには必ずしも当てはまらない興味深い制約がいくつかあります。
 
 * ほとんどの Screens コンポーネントは、ターゲットのデジタルサイネージデバイス上でフルスクリーンで動作する必要があります
-* スライドショーを生成するには、ほとんどの Screens コンポーネントをシーケンスチャネルに埋め込む必要があります
-* オーサリングでは、シーケンスチャネル内の個々のコンポーネントを編集できる必要があるので、フルスクリーンでのレンダリングは問題になりません
+* スライドショーを生成するには、ほとんどの Screens コンポーネントをシーケンスチャネルに埋め込める必要があります
+* オーサリングでは、シーケンスチャンネル内の個々のコンポーネントを編集できるようにする必要があるため、フルスクリーンでレンダリングすることは問題外です
 
 1. **CRXDE Lite** `http://localhost:4502/crx/de/index.jsp`（または任意の IDE）で、`/apps/weretail-run/components/content/helloworld.` に移動します。
 
@@ -398,7 +398,7 @@ We.Retail Run プロジェクトに固有のすべての設定を保存する We
 
 Hello World コンポーネントは、シーケンスチャネルで使用するためのものです。このコンポーネントをテストするために、新しいシーケンスチャネルを作成します。
 
-1. AEM のスタートメニューで、**Screens**／**We.Retail Run** に移動し、「**チャネル**」を選択します。
+1. AEM のスタートメニューで、 **Screens**／**We.Retail Run** に移動し、「**チャネル**」を選択します。
 
 1. 「**作成**」ボタンをクリックします。
 

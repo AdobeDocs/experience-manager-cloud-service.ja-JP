@@ -158,5 +158,5 @@ Forms 中心の AEM ワークフローおよび機能について詳しくは、
 
 * [AEM JCR へのプログラムからのアクセス方法](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=ja#platform)
 * [ノードおよびプロパティの削除](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API リファレンス](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API リファレンス](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=ja)
 

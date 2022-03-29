@@ -1,5 +1,5 @@
 ---
-title: コンポーネントを使用する場合のベストプラクティス
+title: 'コンポーネントを使用する場合のベストプラクティス '
 seo-title: Best practices for working with components
 description: アダプティブフォームの各種コンポーネントを使用する場合のベストプラクティスと重要事項
 seo-description: Some best practices and key points to remember when working with Adaptive Form components
@@ -11,7 +11,7 @@ ht-degree: 100%
 ---
 
 
-# コンポーネントを使用する場合のベストプラクティス{#best-practices-for-working-with-components}
+# コンポーネントを使用する場合のベストプラクティス {#best-practices-for-working-with-components}
 
 ここでは、アダプティブフォームの各種コンポーネントを使用する場合のベストプラクティスと重要事項について説明します。
 

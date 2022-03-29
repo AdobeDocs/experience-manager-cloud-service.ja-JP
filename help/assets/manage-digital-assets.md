@@ -1,6 +1,6 @@
 ---
 title: デジタルアセットの管理
-description: 様々なアセット管理および編集方法について説明します
+description: 様々なアセット管理および編集方法について
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
@@ -9,13 +9,13 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
 source-wordcount: '4356'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
 # アセットの管理 {#manage-assets}
 
-この記事では、 [!DNL Adobe Experience Manager Assets]. 管理するには [!DNL Content Fragments]を参照してください。 [[!DNL Content Fragments]](content-fragments/content-fragments.md) アセット。
+ここでは、[!DNL Adobe Experience Manager Assets] でアセットを管理および編集する方法を説明します。[!DNL Content Fragments] を管理するには、[[!DNL Content Fragments]](content-fragments/content-fragments.md) アセットを参照してください。
 
 ## フォルダーの作成 {#creating-folders}
 
@@ -48,7 +48,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 
 >[!NOTE]
 >
->この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 」を参照してください。
+>この機能は、プレリリースチャネルで使用できます。 お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 この機能を有効にするには：
 
@@ -75,7 +75,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 
 >[!NOTE]
 >
->アセットをリポジトリーにアップロードすると、Experience Managerは重複を検出し、最初の 100 個の重複アセットについて通知します。
+>アセットをリポジトリにアップロードすると、Experience Manager は重複を検出し、最初の 100 個の重複アセットについて通知します。
 
 ## アセットのプレビュー {#previewing-assets}
 
@@ -94,15 +94,15 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 
 1. メタデータを編集するアセットの場所に移動します。
 
-1. アセットを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をタップまたはクリックして、アセットのプロパティを表示します。または、アセットカードで&#x200B;**[!UICONTROL プロパティ]**&#x200B;クイックアクションを選択します。
+1. アセットを選択し、ツールバーの「**[!UICONTROL プロパティ]**」をタップまたはクリックして、アセットのプロパティを表示します。または、アセットカードで **[!UICONTROL プロパティ]** クイックアクションを選択します。
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. [!UICONTROL プロパティ]ページの様々なタブで、メタデータのプロパティを編集します。例えば、「**[!UICONTROL 基本]**」タブでは、タイトルや説明などを編集します。
+1. [!UICONTROL プロパティ] ページの様々なタブで、メタデータのプロパティを編集します。例えば、「**[!UICONTROL 基本]**」タブでは、タイトルや説明などを編集します。
 
    >[!NOTE]
    >
-   >[!UICONTROL プロパティ]ページのレイアウトと編集できるメタデータのプロパティは、基になるメタデータスキーマによって変わります。[!UICONTROL プロパティ]ページのレイアウトを変更する方法については、[メタデータスキーマ](/help/assets/metadata-schemas.md)を参照してください。
+   >[!UICONTROL プロパティ] ページのレイアウトと編集できるメタデータのプロパティは、基になるメタデータスキーマによって変わります。[!UICONTROL プロパティ] ページのレイアウトを変更する方法については、 [メタデータスキーマ](/help/assets/metadata-schemas.md) を参照してください。
 
 1. アセットをアクティベートする特定の日付と時間をスケジュールするには、「**[!UICONTROL オンタイム]**」フィールドの横にある日付選択を使用します。
 
@@ -176,7 +176,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 移動するアセットの場所に移動します。
 
-1. アセットを選択し、ツールバーの&#x200B;**[!UICONTROL 移動]**&#x200B;アイコン ![move_icon](assets/move_icon.png) をタップまたはクリックします。
+1. アセットを選択し、ツールバーの **[!UICONTROL 移動]** アイコン ![move_icon](assets/move_icon.png) をタップまたはクリックします。
 
 1. アセットを移動ウィザードで、次のいずれかの操作を行います。
 
@@ -258,7 +258,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。また、ブラウザーによってサポートされるビデオ形式が異なります。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
+   >ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。また、サポートされるビデオ形式はブラウザーによって異なります。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
 
 ## アセットの削除 {#delete-assets}
 
@@ -420,11 +420,11 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >タイムラインには、[コンテンツフラグメントに固有のオプション](content-fragments/content-fragments.md)がいくつか含まれています。
 
-## アセットに注釈を付ける {#annotating}
+## アセットへの注釈の追加 {#annotating}
 
 注釈とは、画像やビデオに追加するコメントまたは注記です。マーケティング担当者は、注釈により、アセットについてコラボレーションし、フィードバックを残すことができます。
 
-ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。Assets がサポートするビデオの形式は、ブラウザーによって異なります。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
+ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。Assets がサポートするビデオ形式は、ブラウザーによって異なります。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
 
 >[!NOTE]
 >
@@ -465,7 +465,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    >[!NOTE]
    >
-   >注釈はビデオアセットにも追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。詳しくは、[ビデオアセットの管理](manage-video-assets.md)を参照してください。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
+   >注釈はビデオアセットにも追加できます。ビデオに注釈を追加する際は、ユーザーがフレームに注釈を追加できるようにプレーヤーが一時停止します。詳しくは、 [ビデオアセットの管理](manage-video-assets.md) を参照してください。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
 
 1. 別の色を選択してユーザーを区別できるようにするには、プロファイルアイコンをクリックまたはタップし、「**[!UICONTROL 環境設定]**」をクリックまたはタップします。
 

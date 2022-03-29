@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
 source-wordcount: '2954'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 * [グローバルナビゲーション](#global-navigation)
 
-   コンソール間を移動するには、**Adobe Experience Manager** リンクを選択します。
+   コンソール間を移動するには、 **Adobe Experience Manager** リンクを選択します。
 
    ![グローバルナビゲーション](/help/sites-cloud/authoring/assets/global-navigation.png)
 
@@ -186,7 +186,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
    コンソールに最初にアクセスしたときの[製品ナビゲーションの概要](#product-navigation)と同様に、この概要をナビゲートします。
 
-   このスライドをもう一度表示するには、[**ページ情報**&#x200B;メニューの「**ヘルプ**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)」を選択します。
+   このスライドをもう一度表示するには、 [**ページ情報** メニューの「**ヘルプ**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help)」を選択します。
 
 * **ツールコンソール**
 
@@ -201,7 +201,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
    >
    >すべてのキーボードショートカットの概要については、次のドキュメントを参照してください。
    >
-   >* [ページ編集時のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+   >* [ページ編集のキーボードショートカット](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    >* [コンソールのキーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
@@ -391,7 +391,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ![展開されたパネルセレクター](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-例えば、 **サイト** コンソールコンテンツのみ（デフォルト）、コンテンツツリー、タイムライン、参照、サイトの詳細またはフィルターのサイドパネルを選択できます。
+例えば、**Sites** コンソールでは、コンテンツのみ（デフォルト）、コンテンツツリー、タイムライン、参照、サイト詳細またはフィルターのサイドパネルを選択できます。
 
 コンテンツのみが選択されている場合は、パネルアイコンのみが表示されます。他のオプションが選択されている場合は、パネルアイコンの隣にオプション名が表示されます。
 
@@ -461,7 +461,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ### サイト {#site}
 
-**サイト** サイトの詳細を表示 [サイトテンプレートを使用して作成された。](/help/sites-cloud/administering/site-creation/create-site.md)
+**サイト** には、 [サイトテンプレートを使用して作成された](/help/sites-cloud/administering/site-creation/create-site.md) サイトの詳細が表示されます。
 
 ![サイトレール](../assets/site-rail.png)
 
@@ -469,7 +469,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 >[!TIP]
 >
->テンプレートから新しいサイトを作成し、そのテーマをカスタマイズするプロセスに関するエンドツーエンドの説明は、 [クイックサイト作成ジャーニー。](/help/journey-sites/quick-site/overview.md)
+>テンプレートから新しいサイトを作成し、そのテーマをカスタマイズするプロセスのエンドツーエンドの説明は、 [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) にあります。
 
 ### フィルター {#filter}
 

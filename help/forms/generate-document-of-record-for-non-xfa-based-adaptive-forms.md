@@ -5,7 +5,7 @@ exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
 source-wordcount: '3678'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -109,7 +109,7 @@ In the following video Adaptive Form components are binded with corresponding Ac
 
 ![オリジナルのテンプレート](assets/we-retail-invoice.png)
 
-このテンプレートをしばらく使用した後、組織は `invoice-number` フィールドの名前を `bill-number` フィールドに変更し、購入者のメールアドレスを取り込むことにします。開発者は `invoice-number` フィールドの名前を更新し、テンプレートに「Email」フィールドを追加します。また、*we-retail-invoice-v2.pdf* という新しいバージョンのテンプレートも作成します。
+このテンプレートをしばらく使用した後、組織は `invoice-number` フィールドの名前を `bill-number` フィールドに変更し、購入者のメールアドレスを取り込むことにします。開発者は `invoice-number` フィールドの名前を更新し、テンプレートに「Email」フィールドを追加します。また、 *we-retail-invoice-v2.pdf* という新しいバージョンのテンプレートも作成します。
 
 ![更新されたテンプレート](assets/we-retail-new-invoice.png)
 
@@ -405,7 +405,7 @@ When you select a form model, configure Document of Record using options availab
 
 >[!NOTE]
 >
-> この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) 」を参照してください。
+> この機能は、プレリリースチャネルで使用できます。 お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) を参照してください。
 
 XCI ファイルは、ドキュメントの様々なプロパティを設定する場合に役立ちます。 Forms as a Cloud Serviceにはマスター XCI ファイルがあります。 カスタム XCI ファイルを使用して、マスター XCI ファイルで指定された 1 つ以上のデフォルトのプロパティを上書きできます。 例えば、ドキュメントにフォントを埋め込むか、すべてのドキュメントに対してタグ付きプロパティを有効にするかを選択できます。 次の表に、XCI オプションの説明を示します。
 

@@ -69,7 +69,7 @@ AEM を Adobe I/O CLI を介してコマースソリューションに接続す�
 
 1. Cloud Manager プラグインと Adobe I/O CLI を取得します。
 
-   [Cloud Manager CLI プラグイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)で [Adobe I/O CLI](https://github.com/adobe/aio-cli) をダウンロード、設定、使用する方法については、[Adobe Cloud Manager のドキュメント](https://github.com/adobe/aio-cli-plugin-cloudmanager)を参照してください。
+   [Cloud Manager CLI プラグイン](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja) で [Adobe I/O CLI](https://github.com/adobe/aio-cli) をダウンロード、設定、使用する方法については、 [Adobe Cloud Manager のドキュメント](https://github.com/adobe/aio-cli-plugin-cloudmanager) を参照してください。
 
 2. Adobe I/O CLI を AEM as a Cloud Service で認証します。
 
@@ -79,7 +79,7 @@ AEM を Adobe I/O CLI を介してコマースソリューションに接続す�
    aio cloudmanager:set-environment-variables ENVIRONMENT_ID --variable COMMERCE_ENDPOINT "<Magento GraphQL endpoint URL>"
    ```
 
-   詳細は、[CLI ドキュメント](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)を参照してください。
+   詳細は、 [CLI ドキュメント](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) を参照してください。
 
    コマース GraphQL エンドポイント URL は、コマースの GraphQL サービスを指し、安全な HTTPS 接続を使用する必要があります。例：`https://<yourcommercesystem>/graphql`
 

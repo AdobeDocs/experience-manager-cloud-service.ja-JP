@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager as a Cloud Service コネクタ
 description: Adobe Experience Manager as a Cloud Service コネクタに関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: AEM as a Cloud Service にコネクタを統合する方法を学習します。
+landing-page-description: AEM as a Cloud Service にコネクタを統合する方法を説明します。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ ht-degree: 100%
 * [コネクタの登録](submit.md)
 * [コネクタの保守](maintain.md)
 
-## Adobe Experience Manager as a Cloud Service に関するガイド {#aem-guides}
+## Experience Manager as a Cloud Service のガイド {#aem-guides}
 
 | ユーザーガイド | 説明 |
 |---|---|
@@ -45,5 +45,5 @@ ht-degree: 100%
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ja)
 * [GDPR 対応](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Adobe Experience Manager as a Cloud Service のチュートリアル](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=ja)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM コミュニティフォーラム](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=ja#home)
+* [AEM コミュニティフォーラム](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)

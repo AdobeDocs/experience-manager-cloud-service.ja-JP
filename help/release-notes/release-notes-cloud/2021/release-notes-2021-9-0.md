@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 リリースのリリースノート。'
-description: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.9.0 リリースのリリースノート。'
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.9.0 リリースのリリースノート。'
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 90%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要[ビデオをご覧ください。
+追加された機能の概要については、 ](https://video.tv.adobe.com/v/337381)2021年9月リリースの概要[ ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -45,7 +45,7 @@ ht-degree: 90%
    ![[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）](/help/assets/assets/sort-searched-assets.png)
    *図：[!DNL Assets] での検索結果の並べ替え（列表示とカード表示）*
 
-* アセットマイクロサービスを使用してプログラムによって処理を呼び出すために、新しい API が導入されました。 開発者は、フォルダー内の 1 つ以上の特定のアセットに、既存のフォルダーレベルの処理プロファイルを適用できるようになりました。 処理プロファイルは、カスタムメタデータプロパティの更新に基づいて適用されます。 詳しくは、 `AssetProcessor` 内 [[!DNL Experience Manager] API リファレンス](https://www.adobe.io/experience-manager/reference-materials/). 以前と同様に、 [ユーザーインターフェイスからのアセットマイクロサービスの使用](/help/assets/asset-microservices-configure-and-use.md).
+* アセットマイクロサービスを使用してプログラムで処理を呼び出すために、新しい API が導入されています。開発者は、フォルダー内の 1 つ以上の特定のアセットに、既存のフォルダーレベルの処理プロファイルを適用できるようになりました。処理プロファイルは、カスタムメタデータプロパティの更新に基づいて適用されます。[[!DNL Experience Manager] API リファレンス](https://www.adobe.io/experience-manager/reference-materials/) の `AssetProcessor` を参照してください。以前と同様に、 [ユーザーインターフェイスからアセットマイクロサービスを使用](/help/assets/asset-microservices-configure-and-use.md) できます。
 
 <!-- Leave this commented.
 
@@ -99,7 +99,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * ナビゲーションコンポーネントの「include_in_menu」プロパティに従います
 
-### バグ修正 {#bug-fixes-cif}
+### バグの修正 {#bug-fixes-cif}
 
 * メニューキャッシュのフラッシュが正常に機能しませんでした
 
@@ -117,7 +117,7 @@ CQ-4328183 was not reported on CS so not documented here.
 * ビデオのサムネールが Screens as a Cloud Service でサポートされるようになりました。コンテンツ作成者は、ビデオのサムネールを定義して、その画像をプレースホルダーとして使用できるようにし、実際のビデオを該当チームが仕上げている間に、コンテンツの再生とターゲティングを適切にテストすることができます。その画像は、ビデオの再生に失敗した場合でも使用できます。
 詳しくは、[ビデオのサムネールサポート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/core-product-features/thumbnail-support-videos.html?lang=ja)を参照してください。
 
-### バグ修正 {#bug-fixes-screens}
+### バグの修正 {#bug-fixes-screens}
 
 * プレーヤーで埋め込みページのコンテンツを表示できませんでしたが、この問題が修正されました。
 
@@ -141,19 +141,20 @@ CQ-4328183 was not reported on CS so not documented here.
 * AEM as a Cloud Service で一意の IP アドレスからトラフィックを出力するための専用エグレス IP アドレスが、すべてのポートをサポートするようになりました。
 * お使いのインフラストラクチャと AEM as a Cloud Service の間でやり取りされるトラフィックのセキュリティを確保する VPN。
 
-Cloud Manager API を使用して高度なネットワーク機能をセルフサービス方式でプロビジョニングする方法など、詳細については、[このドキュメント](/help/security/configuring-advanced-networking.md)を参照してください。
+Cloud Manager API を使用して高度なネットワーク機能をセルフサービス方式でプロビジョニングする方法など、詳細については、 [このドキュメント](/help/security/configuring-advanced-networking.md) を参照してください。
 
 **インデックスの最適化**
 
-検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEM のお客様の要件に従って AEM 環境でこのフルテキストインデックスを削除するために、アドビのエンジニアリングチームは、問題が発生する前にお客様と個別に協力して、Lucene フルテキストインデックスの正常かつ持続可能な削除に対応しています。詳しくは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations)を参照してください。また、ご質問がある場合は、アドビサポートにお問い合わせください。
+検索クエリとインデックス作成のパフォーマンスを向上させるために、このリリース以降、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、フルテキストインデックス lucene-2 は標準では使用されなくなりました。AEM のお客様の要件に従って AEM 環境でこのフルテキストインデックスを削除するために、アドビのエンジニアリングチームは、問題が発生する前にお客様と個別に協力して、Lucene フルテキストインデックスの正常かつ持続可能な削除に対応しています。詳しくは、[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [ドキュメント](/help/operations/indexing.md#index-optimizations) を参照してください。また、ご質問がある場合は、アドビサポートにお問い合わせください。
 
 ## Cloud Manager {#cloud-manager}
 
-この節では、AEM as a Cloud Service 2021.9.0 および 2021.8.0 に含まれている Cloud Manager のリリースノートの概要を説明しています。
+この節では、AEM as a Cloud Service 2021.9.0 および 2021.8.0 における Cloud Manager のリリースノートの概要を説明します。
 
 ## リリース日 {#release-date-cm-sept}
 
-AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021年9月09日（PT）です。次回のリリースは 2021 年 10 月 7 日（PT）に予定されています。
+AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021年9月9日（PT）です。
+次回のリリースは 2021 年 10 月 7 日（PT）に予定されています。
 
 ### 新機能 {#what-is-new-cm-sept}
 
@@ -167,7 +168,7 @@ AEM as a Cloud Service 2021.9.0 の Cloud Manager のリリース日は 2021年9
 
 * 「プログラム」カードを直接クリックすると、Cloud Manager の概要ページに移動するようになりました。
 
-### バグ修正 {#bug-fixes-sept}
+### バグの修正 {#bug-fixes-sept}
 
 * 設定可能な IP 許可リストの最大数に達したプログラムに新しい IP 許可リストを追加しようとしたときに表示されるメッセージがわかりやすくなりました。
 
@@ -181,7 +182,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-cam}
 
-* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis)の手順 6 および 7 を参照してください。
+* Cloud Acceleration Manager では、BPA レポートを印刷可能なプレビューで表示できるようになり、印刷や PDF へのエクスポートが簡単になりました。これにより、共有が容易になりました。[ベストプラクティス分析カードの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=ja#best-practices-analysis) の手順 6 および 7 を参照してください。
 
 ## コンテンツ転送ツール {#content-transfer-tool}
 
@@ -191,12 +192,12 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### 新機能 {#what-is-new-ctt}
 
-* ユーザーマッピングが改善され、以下の機能を含むシンプルなユーザーエクスペリエンスが提供されました。 詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#using-user-mapping-tool)を参照してください。
+* 以下に一覧表示されている機能を含め、ユーザーエクスペリエンスがシンプルになり、ユーザーマッピングが改善されました。詳しくは、[ユーザーマッピングツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=ja#using-user-mapping-tool)を参照してください。
    * ユーザーマッピングを実行する前に、User Management API への接続をテストできます
    * エラーを適切にスキップし、「ユーザーマッピング」アクティビティを続行できます
-   * アクセストークンの有効期限が 24 時間後に切れた場合、ユーザーマッピングが失敗しなくなりました。 最後に停止した位置からユーザーマッピングを再実行できます。
+   * アクセストークンの有効期限が 24 時間後に切れても、ユーザーマッピングが失敗することはなくなりました。最後に停止した位置からユーザーマッピングを再実行できます。
 
-* CTT の堅牢性を高めるために、コンテンツは一度にオーサーインスタンスまたはパブリッシュインスタンスに取り込むことができます。
+* CTT の堅牢性を高めるため、コンテンツは一度にオーサーインスタンスまたはパブリッシュインスタンスのいずれかに取り込むことができます。
 
 * バージョンが含まれる場合は、監査イベントを移行するために、パス `/var/audit` が自動的に含まれます。
 
@@ -204,7 +205,7 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 ### リリース日 {#release-date-bpa-latest}
 
-ベストプラクティスアナライザー v2.1.18 のリリース日は 2021 年 9 月 2 日です。
+ベストプラクティスアナライザー v2.1.18 のリリース日は 2021年9月2日（PT）です。
 
 ### 新機能 {#what-is-new}
 
@@ -212,6 +213,6 @@ Cloud Acceleration Manager のリリース日は 2021年10月4日です。
 
 * ノードストアのタイプとサイズを検出し、レポートする機能。
 
-### バグ修正 {#bug-fixes-bpa}
+### バグの修正 {#bug-fixes-bpa}
 
-* BPA は、コマース統合フレームワークの存在を誤って検出しました。
+* BPA は、コマース統合フレームワークの存在を誤って検出していました。

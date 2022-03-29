@@ -85,7 +85,7 @@ Adobe Experience Manager as a Cloud Service 内では、エクスペリエンス
 
 WKND プロジェクトでは、`Contributors` に従って一部のエクスペリエンスフラグメントを構造化します。また、使用される構造は、マルチサイト管理（言語コピーを含む）などの他の機能の使用方法の例も示します。
 
-参照先：
+以下を参照してください。
 
 `http://localhost:4502/aem/experience-fragments.html/content/experience-fragments/wknd/language-masters/en/contributors/kumar-selveraj/master`
 
@@ -95,7 +95,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 エクスペリエンスフラグメントのフォルダーを作成および設定するには、次の操作をお勧めします。
 
-1. [フォルダーを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder)します。
+1. [フォルダーを作成](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-folder) します。
 
 1. [そのフォルダーに使用できるエクスペリエンスフラグメントテンプレートを設定](#configure-allowed-templates-folder)します。
 
@@ -115,10 +115,10 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 1. 必要なテンプレートを取得するための正規表現を「**許可されたテンプレート**」フィールドに指定します。
 
-   例：
+   次に例を示します。
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
-   参照先：
+   以下を参照してください。
    `http://localhost:4502/mnt/overlay/cq/experience-fragments/content/experience-fragments/folderproperties.html/content/experience-fragments/wknd`
 
    ![エクスペリエンスフラグメントのプロパティ - 許可されたテンプレート](/help/sites-cloud/authoring/assets/xf-folders-templates.png)
@@ -265,7 +265,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 ## 構築ブロック {#building-blocks}
 
-1 つまたは複数のコンポーネントを選択して、フラグメント内で再利用するための構築ブロックを作成できます。
+1 つ以上のコンポーネントを選択して、フラグメント内で再利用するための構築ブロックを作成できます。
 
 ### 構築ブロックの作成 {#creating-a-building-block}
 
@@ -359,7 +359,7 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 
 デフォルトでは、エクスペリエンスフラグメントは HTML 形式で配信され、AEM とサードパーティチャネルのどちらでも同じように使用できます。
 
-Adobe Target への書き出しには、JSON も使用できます。次のページを参照してください。
+Adobe Target への書き出しには、JSON も使用できます。以下を参照してください。
 
 * [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
 * [エクスペリエンスフラグメントのAdobe Targetへの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)

@@ -5,7 +5,7 @@ exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -39,8 +39,8 @@ AEM Sites のトピックに関するドキュメントジャーニーは次の�
 
 | タイトル | 説明 | 主な対象読者 |
 |---|---|---|
-| [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | ここから始めて、使いやすいAEMクイックサイト作成ツールを使用し、AEMサイトのフロントエンド開発を合理化し、AEMのバックエンドに関する知識を持たずにサイトをすばやくカスタマイズするガイド付きのジャーニーを実現します。 | フロントエンド開発者 |
-| [参照デモアドオンジャーニー](/help/journey-sites/demos-add-on/overview.md) | 最小限のAEM設定でAEM Reference Demos Add-On をサンドボックス環境に簡単に追加し、ベストプラクティスに基づく豊富な例を使用してAEMの強力な機能をテストできる方法を、ガイド付きのジャーニーで開始します。 | システム管理者 |
+| [クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md) | 使いやすい AEM クイックサイト作成ツールを使用し、AEM サイトのフロントエンド開発を合理化し、AEM のバックエンドに関する知識を持たずにサイトをすばやくカスタマイズするための、ガイド付きのジャーニーを参照するには、ここから始めてください。 | フロントエンド開発者 |
+| [Reference Demos Add-On ジャーニー](/help/journey-sites/demos-add-on/overview.md) | 最小限の AEM 設定でサンドボックス環境に AEM Reference Demos Add-On を簡単に追加し、ベストプラクティスに基づいた豊富な例を使用して AEM の強力な機能をテストできるようにするための、ガイド付きのジャーニーを参照するには、ここから始めてください。 | システム管理者 |
 | [サイト翻訳ジャーニー](/help/journey-sites/translation/overview.md) | AEM Sites テクノロジー、それらをプロジェクトで使用する方法および AEM で初めから終わりまで翻訳プロジェクトを作成および更新する方法について説明します。 | 翻訳担当者 |
 
 [その他の役割に対応するジャーニーが今後公開](/help/journey-documentation/documentation-journeys.md#journeys)され次第、随時お知らせします。

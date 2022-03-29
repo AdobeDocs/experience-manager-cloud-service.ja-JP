@@ -1,5 +1,5 @@
 ---
-title: アダプティブフォームにおけるセパレーターコンポーネント
+title: 'アダプティブフォームにおけるセパレーターコンポーネント '
 seo-title: Separator component in Adaptive Forms
 description: セパレーターコンポーネントを使用して、フォームのセクションを視覚的に区別することができます。
 seo-description: You can use the separator component to visually segregate sections of a form.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# アダプティブフォームにおけるセパレーターコンポーネント{#separator-component-in-adaptive-forms}
+# アダプティブフォームにおけるセパレーターコンポーネント {#separator-component-in-adaptive-forms}
 
 セパレーターコンポーネントを使用して、フォームのパネルを視覚的に区別することができます。セパレーターコンポーネントの全体的な外観やスタイルは、次のセパレーターコンポーネントのプロパティを指定することによって定義することができます。
 

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
 source-wordcount: '2356'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 85%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="AEM as a Cloud Service の開発ガイドライン"
->abstract="このタブでは、AEM as a Cloud Serviceでのコーディングに関して推奨されるベストプラクティスを確認できます。 コーディングは、AMS やオンプレミスデプロイメントとは大きく異なる場合があります。"
+>abstract="このタブでは、AEM as a Cloud Service でのコーディングに関して推奨されるベストプラクティスを確認できます。コーディングは、AMS やオンプレミスデプロイメントとは大きく異なる場合があります。"
 >additional-url="https://video.tv.adobe.com/v/330555/" text="パッケージ構造のデモ"
 
 AEM as a Cloud Service で実行するコードは、常にクラスター内で実行されていることを認識している必要があります。つまり、常に複数のインスタンスが実行されています。インスタンスはいつ停止するかわからないので、コードには特に回復力が必要です。
@@ -45,9 +45,9 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 ## バックグラウンドタスクと長時間実行ジョブ {#background-tasks-and-long-running-jobs}
 
-バックグラウンドタスクとして実行するコードでは、コードを実行しているインスタンスが突然機能しなくなる可能性があることを前提にする必要があります。したがって、コードは回復力が高く、最も重要な点として再開可能である必要があります。 つまり、コードが再実行された場合は、再び最初から始めるのではなく、実行が中断された箇所に近い位置から始める必要があります。これはこの種のコードにとって新しい要件ではありませんが、AEM as a Cloud Service では、インスタンスの停止が起こる可能性が高くなります。
+バックグラウンドタスクとして実行するコードでは、コードを実行しているインスタンスが突然機能しなくなる可能性があることを前提にする必要があります。そのため、コードは回復力がある必要があり、最も重要なのは再開可能であることです。つまり、コードが再実行された場合は、再び最初から始めるのではなく、実行が中断された箇所に近い位置から始める必要があります。これはこの種のコードにとって新しい要件ではありませんが、AEM as a Cloud Service では、インスタンスの停止が起こる可能性が高くなります。
 
-トラブルを最小限に抑えるために、長時間実行ジョブは可能な限り避け、少なくとも再開可能な状態になっている必要があります。このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを再度使用すると、少なくとも 1 回は実行されるようになります。
+トラブルを最小限に抑えるために、長時間実行ジョブは可能な限り避け、少なくとも再開可能な状態になっている必要があります。このようなジョブを実行するには、少なくとも 1 回は実行されることが保証されている Sling ジョブを使用します。したがって、ジョブが中断された場合、ジョブはできるだけ早く再実行されます。ただし、最初からやり直すべきではないでしょう。このようなジョブをスケジュールする場合は、 [Sling ジョブ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) スケジューラーを使用することをお勧めします。やはり、少なくとも 1 回は実行されることが保証されているからです。
 
 Sling Commons Scheduler は実行を保証できないので、スケジュール設定には使用しないでください（スケジュール設定される可能性のほうが高いというだけで、保証されるものではありません）。
 
@@ -190,7 +190,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプに「Cloud Manager - Developer Role」が必要で、両方のサービスのデータを表示するには、オーサーサービスとパブリッシュサービスのAEM Users またはAEM Administrators Product Profile でもユーザーを定義する必要があります。 ユーザー権限の設定について詳しくは、[Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja)を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプに「Cloud Manager - Developer Role」が必要で、両方のサービスのデータを表示するには、オーサーサービスとパブリッシュサービスのAEM Users またはAEM Administrators Product Profile でもユーザーを定義する必要があります。 ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
 
 ### パフォーマンスの監視 {#performance-monitoring}
 
@@ -220,9 +220,9 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service) サービスを使用して送信する必要があります。
 
-電子メールの設定について詳しくは、[AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja)を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
+電子メールの設定について詳しくは、 [AEM 6.5 ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=ja) を参照してください。AEM as a Cloud Service の場合は、`com.day.cq.mailer.DefaultMailService OSGI` サービスへの次のような調整が必要になります。
 
-* SMTP サーバーのホスト名は$に設定する必要があります[env:AEM_PROXY_HOST;default=proxy.tunnel]
+* SMTP サーバーのホスト名を $[env:AEM_PROXY_HOST;default=proxy.tunnel] に設定する必要があります
 * SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
 
 また、ポート 465 がリクエストされた場合は、次のことをお勧めします。

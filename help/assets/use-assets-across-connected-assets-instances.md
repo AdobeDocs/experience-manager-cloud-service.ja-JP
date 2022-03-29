@@ -1,6 +1,6 @@
 ---
 title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの共有
-description: リモートで使用可能なアセットを使用 [!DNL Adobe Experience Manager Assets] 別のページで web ページを作成する際のデプロイメント [!DNL Adobe Experience Manager Sites] デプロイメント。
+description: ' [!DNL Adobe Experience Manager Assets] 別のデプロイメントで web ページを作成する場合は [!DNL Adobe Experience Manager Sites] 、リモートデプロイメントで使用できるアセットを使用します。'
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
@@ -9,7 +9,7 @@ exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
 workflow-type: tm+mt
 source-wordcount: '3770'
-ht-degree: 68%
+ht-degree: 77%
 
 ---
 
@@ -41,7 +41,7 @@ Connected Assets の機能は、 [!DNL Experience Manager Sites] および [!DNL
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | サポート対象 | サポート対象 | サポート対象 |
    | AMS 上の **[!DNL Experience Manager]6.5 [!DNL Assets]** | サポート対象 | サポート対象 | サポート対象 |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | サポートなし | サポートなし | サポートなし |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | サポート対象外 | サポート対象外 | サポート対象外 |
 
 ### サポートされているファイル形式 {#mimetypes}
 
@@ -72,7 +72,7 @@ Experience Managerを使用すると、リモート DAM デプロイメントを
 
 ![Connected Assets のアーキテクチャ](assets/connected-assets-architecture.png)
 
-次の図は、サポートされていないシナリオを示しています。
+次の図に、サポートされていないシナリオを示します。
 
 ![Connected Assets のアーキテクチャ](assets/connected-assets-architecture-unsupported.png)
 
@@ -158,7 +158,7 @@ Connected Assets では、 [!DNL Dynamic Media] Sites ページのリモート D
 1. ローカル [!DNL Sites] およびリモート [!DNL Assets] デプロイメントに [!DNL Dynamic Media] を設定します。[設定 [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)の指示に従います。
 
    * すべての設定で同じ会社名を使用します。
-   * ローカルの [!DNL Sites] の [!UICONTROL Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。この [!DNL Sites] デプロイメントは、 [!DNL Dynamic Media] アカウント
+   * ローカルの [!DNL Sites] の [!UICONTROL Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで無効]**」を選択します。[!DNL Sites] デプロイメントでは、[!DNL Dynamic Media] アカウントに対する読み取り専用アクセスが必要です。
    * ローカルの [!DNL Sites] の「**[!UICONTROL アセットを公開]**」オプションで、「**[!UICONTROL 選択的公開]**」を選択します。「**[!UICONTROL すべてのコンテンツを同期]**」は選択しないでください。
    * リモート [!DNL Assets] デプロイメントの [!UICONTROL  Dynamic Media 同期モード]で、「**[!UICONTROL デフォルトで有効]**」を選択します。
 
@@ -233,19 +233,19 @@ Web サイト作成者は、コンテンツファインダーを使用して DAM
 
 ### リモート DAM でアセットの更新を管理 {#handling-updates-to-remote-assets}
 
-後 [接続の設定](#configure-a-connection-between-sites-and-assets-deployments) リモート DAM と Sites のデプロイメントの間で、リモート DAM 上のアセットが Sites デプロイメントで使用できるようになります。 その後、リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更および移動の操作を実行できます。 更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。 また、リモート DAM 上のアセットがローカルのExperience Manager Sitesページで使用されている場合、リモート DAM 上のアセットの更新がサイトページに表示されます。
+リモート DAM と Sites のデプロイメントの間で [接続の設定](#configure-a-connection-between-sites-and-assets-deployments) を行うと、リモート DAM のアセットが Sites デプロイメントで利用できるようになります。その後、リモート DAM のアセットまたはフォルダーに対して、更新、削除、名前変更および移動の操作を実行できます。更新は、Sites デプロイメントで自動的に利用できます（少し遅れて）。 また、リモート DAM 上のアセットがローカルの Experience Manager Sites ページで使用されている場合、リモート DAM 上のアセットの更新が Sites ページに表示されます。
 
-アセットを別の場所に移動する際に、次の点を確認します。 [参照を調整](manage-digital-assets.md) アセットがサイトページに表示されるようにします。 ローカルの Sites デプロイメントからアクセスできない場所にアセットを移動すると、そのアセットは Sites デプロイメントに表示されません。
+アセットをある場所から別の場所に移動する際は、アセットが Sites ページに表示されるように [参照を調整](manage-digital-assets.md) してください。ローカルの Sites デプロイメントからアクセスできない場所にアセットを移動した場合、そのアセットは Sites デプロイメントに表示されません。
 
 また、リモート DAM 上のアセットのメタデータプロパティを更新し、変更をローカルの Sites デプロイメントで利用できるようにします。
 
-Sites 作成者は、Sites デプロイメントで利用可能な更新をプレビューし、変更を再公開して、AEMパブリッシュインスタンスで利用できるようにします。
+Sites 作成者は、Sites デプロイメントで利用可能な更新をプレビューし、変更を再公開して、AEM パブリッシュインスタンスで利用できるようにします。
 
-Experience Managerに `expired` リモートアセットコンテンツファインダー内のアセットのステータス視覚的インジケーター。サイト作成者がサイトページでアセットを使用できないようにします。 アセットを `expired` のステータスが「サイト」ページに表示されている場合、そのアセットはExperience Manager発行インスタンスに表示されません。
+Experience Manager は、リモートアセットコンテンツファインダーのアセットに `expired` ステータス可視インジケーターを表示して、サイト作成者が Sites ページでアセットを使用できないようにします。Sites ページで `expired` ステータスのアセットを使用すると、そのアセットは Experience Manager パブリッシュインスタンスに表示されません。
 
 >[!NOTE]
 >
->リモート DAM 内のアセットに対する更新は、リモート DAM および Sites デプロイメントがExperience Manageras a Cloud Service上にある場合にのみ、 Sites デプロイメントで利用できます。
+>リモート DAM 内のアセットに対する更新は、リモート DAM および Sites デプロイメントが Experience Manager as a Cloud Service 上にある場合にのみ、 Sites デプロイメントで利用できます。
 
 ## よくある質問 {#frequently-asked-questions}
 
