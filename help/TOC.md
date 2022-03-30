@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c1012469db3e8a947634d5995eaee09a632e7f8
+source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
 workflow-type: tm+mt
-source-wordcount: '3417'
+source-wordcount: '3397'
 ht-degree: 95%
 
 ---
@@ -679,15 +679,12 @@ ht-degree: 95%
          + [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + カスタムドメイン名の管理 {#custom-domain-names}
          + [はじめに](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-         + [カスタムドメイン名の取得](/help/implementing/cloud-manager/custom-domain-names/get-custom-domain-name.md)
          + [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [TXT レコードの追加](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [カスタムドメイン名ステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
          + [DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [DNS レコードのステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
-         + [カスタムドメイン名の表示、更新、置換](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-         + [カスタムドメイン名の SSL 証明書の更新](/help/implementing/cloud-manager/custom-domain-names/update-cdn-ssl-certificate.md)
-         + [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+         + [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + IP 許可リストの管理 {#ip-allow-lists}
          + [はじめに](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

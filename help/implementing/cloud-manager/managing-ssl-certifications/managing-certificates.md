@@ -1,13 +1,13 @@
 ---
 title: SSL 証明書の管理
 description: Cloud Manager を使用して SSL 証明書のステータスを確認する方法、および SSL 証明書の編集、置換、更新、削除の方法について説明します。
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
+source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '637'
 ht-degree: 30%
 
 ---
-
 
 # SSL 証明書の管理 {#managing-ssl-certificates}
 
@@ -57,7 +57,7 @@ SSL 証明書は、の節で説明している手順と同じ手順に従って�
 
 Cloud Manager からの証明書の削除は、取り消すことができない永続的な操作です。 ベストプラクティスとして、Adobeでは、SSL ファイルをローカルに保存してから、Cloud Manager で削除することをお勧めします。
 
-Cloud Manager では、1 つ以上のドメインが関連付けられている SSL 証明書を削除できません。SSL 証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。ドキュメントを参照してください [カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) を参照してください。
+Cloud Manager では、1 つ以上のドメインが関連付けられている SSL 証明書を削除できません。SSL 証明書を削除する前に、関連付けられているドメインをすべて削除する必要があります。ドキュメントを参照してください [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) を参照してください。
 
 SSL 証明書を削除するには、次の手順に従います。
 

@@ -1,53 +1,61 @@
 ---
 title: ドメイン名ステータスの確認
-description: ドメイン名ステータスの確認
+description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '388'
+ht-degree: 17%
 
 ---
 
+
 # ドメイン名ステータスの確認 {#check-status}
 
-ドメイン名が正常に検証されたかどうかを確認するには、ドメイン設定ページの「環境」の表にあるドメイン名ステータスアイコンをクリックします。
+Cloud Manager 内でカスタムドメイン名のステータスを決定できます。
 
->[!NOTE]
->Cloud Manager では、カスタムドメイン追加ウィザードの検証手順で「保存」を選択すると、TXT 検証が自動的にトリガーされます。それ以降の検証では、ステータスの横にある&#x200B;**再検証**&#x200B;アイコンをアクティブに選択する必要があります。
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) で Cloud Manager にログインし、適切な組織とプログラムを選択します。
 
-Cloud Manager は、TXT 値を使用してドメインの所有権を検証し、次のいずれかのステータスメッセージを表示します。
+1. 次に移動： **環境** 画面から **概要** ページ。
 
-* **ドメイン検証失敗**
-TXT 値が見つからないか、エラーが検出されました。手順に従って、再試行します。準備が整ったら、 
-ステータスの横にある&#x200B;*再検証*&#x200B;アイコンを選択します。
+1. クリック **ドメイン設定** をクリックします。
 
-* **ドメイン検証中**
-検証が進行中です。このステータスは、通常、 
-ステータスの横にある&#x200B;*再検証*&#x200B;アイコンを選択します。
+1. 次をクリック： **ステータス** ドメイン名のアイコン。
 
-* **検証済み、デプロイメント失敗**
-TXT の検証に成功しました。ただし、CDN のデプロイメントは失敗しました。アドビ担当者にお問い合わせください。
+Cloud Manager は、ドメインの所有権を TXT 値で検証し、次のいずれかのステータスメッセージを表示します。
 
-* **ドメインが検証済みでデプロイ済み**
-このステータスは、カスタムドメイン名が使用できる状態であることを示します。
-   >[!NOTE]
-   >この時点で、カスタムドメイン名はテストの準備ができており、Cloud Manager のドメイン名を指すようになっています。詳細については、「[DNS 設定の指定](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)」を参照してください。
+* **ドメインの検証に失敗しました** - TXT 値が見つからないか、エラーが検出されました。
 
-* **削除**
-カスタムドメイン名の削除を実行中です。
+   * 指示に従って問題を解決します。
+   * 準備が整ったら、 **再検証** ステータスの横のアイコン
 
-* **削除失敗**
-カスタムドメイン名の削除に失敗しました。再試行する必要があります。詳しくは、「[カスタムドメイン名の削除](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)」を参照してください。
+* **ドメインを検証中です**  — 検証が進行中です。
 
+   * このステータスは、通常、 **再検証** ステータスの横のアイコン
+
+* **検証済み、デプロイメントに失敗しました** - TXT 検証は成功しましたが、CDN のデプロイメントに失敗しました。
+
+   * このような場合は、Adobe担当者にお問い合わせください。
+
+* **ドメインの検証と導入**  — このステータスは、カスタムドメイン名を使用する準備ができていることを示します。
+
+   * この時点で、カスタムドメイン名はテストの準備ができており、Cloud Manager のドメイン名を指すようになっています。
+   * ドキュメントを参照してください [DNS 設定の構成](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) を参照してください。
+
+* **削除中**  — カスタムドメイン名を削除中です。
+
+* **削除に失敗しました**  — カスタムドメイン名の削除に失敗しました。再試行する必要があります。
+
+   * ドキュメントを参照してください [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) を参照してください。
+
+「 」を選択すると、Cloud Manager は TXT 検証を自動的にトリガーします **保存** ～の検証段階で **カスタムドメインの追加** ウィザード。 それ以降の検証では、ステータスの横にある再検証アイコンをアクティブに選択する必要があります。
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-IP 許可リスト、SSL 証明書、カスタムドメイン名のいずれかについて CDN 設定が既に存在している環境のユーザーの場合、**IP 許可リスト**&#x200B;および&#x200B;**環境**&#x200B;の詳細ページに以下のメッセージが表示されます。UI に表示されるメッセージは、顧客が UI から既存の環境設定をすべて移行した後に消えます。メッセージが消えるまでに 1～2 営業日かかる場合があります。
+カスタムドメイン名用の既存の CDN 設定がある場合、 **IP許可リスト** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
 
->[!NOTE]
->既存の設定を表示および管理するには、UI を使用して設定を追加する必要があります。詳しくは、[カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)を参照してください。
+UI を使用して既存のすべての環境設定を移行すると、メッセージは消えます。 メッセージが表示されなくなるまでに 1 ～ 2 営業日かかる場合があります。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
+ドキュメントを参照してください [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
+![既存の CDN 設定メッセージ](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
