@@ -3,19 +3,23 @@ title: リポジトリブラウザ
 seo-title: Repository Browser
 description: リポジトリブラウザーは、オーサー層、パブリッシュ層、プレビュー層のすべての環境に対して、リポジトリへの読み取り専用ビューを提供します。
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
-source-git-commit: 76e28ca5628fb985df21f53d1c3e9898985dc736
+exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
+source-git-commit: db70857458722f870dad37ac2bee6a19ef54171e
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '814'
 ht-degree: 3%
 
 ---
-
 
 # リポジトリブラウザ {#repository-browser}
 
 >[!NOTE]
 >
 >リポジトリブラウザーは、AEMバージョン 6582 以降で使用できます。
+
+>[!INFO]
+>
+>また、 [このクリップ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) リポジトリブラウザーを使用してAEM as a Cloud Serviceをデバッグする方法に関する概要ビデオをご覧ください。
 
 ## はじめに {#introduction}
 
