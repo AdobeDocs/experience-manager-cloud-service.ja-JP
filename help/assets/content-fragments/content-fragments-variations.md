@@ -215,12 +215,12 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-英語版は標準で提供されています。
-他の言語版は、ソフトウェア配布から言語モデルパッケージとして使用できます。
-* [フランス語（fr）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [ドイツ語（de）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [イタリア語（it）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [スペイン語（es）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>英語版は標準で提供されています。
+>他の言語版は、ソフトウェア配布から言語モデルパッケージとして使用できます。
+>* [フランス語（fr）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [ドイツ語（de）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [イタリア語（it）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [スペイン語（es）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=ja?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -289,7 +289,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 * エディターの全画面表示モードと通常モードのどちらの場合も、注釈はテキストのハイライトとして示されます。注釈の完全な詳細を表示、編集および削除するには、ハイライト表示されたテキストをクリックします。するとダイアログが再度開きます。
 
    >[!NOTE]
-   1 つのテキストに複数の注釈が適用されている場合は、ドロップダウンセレクターが表示されます。
+   >1 つのテキストに複数の注釈が適用されている場合は、ドロップダウンセレクターが表示されます。
 
 * 注釈が適用されたテキスト全体を削除すると、注釈も削除されます。
 
@@ -306,11 +306,11 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 アセットは書式設定なしでフラグメントの段落シーケンスに追加されます。[ページでフラグメントを利用、参照](/help/sites-cloud/authoring/fundamentals/content-fragments.md)する際に書式を設定できます。
 
 >[!CAUTION]
-参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
-ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
+>参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
+>ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
 >[!NOTE]
-[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
+>[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
 
 1. 画像を追加したい位置にカーソルを置きます。
 1. **アセットを挿入** アイコンを使用して、検索ダイアログを開きます。
@@ -327,9 +327,9 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 1. 「**選択**」を使用して、コンテンツフラグメント段落システムの現在の位置にアセットを追加します。
 
    >[!CAUTION]
-   アセットを追加後に形式を変更すると次のようになります。
-   * **プレーンテキスト**：アセットはフラグメントから完全に失われます。
-   * **Markdown**：アセットは表示されなくなりますが、**リッチテキスト**&#x200B;に戻すとアセットがまた表示されます。
+   >アセットを追加後に形式を変更すると次のようになります。
+   >* **プレーンテキスト**：アセットはフラグメントから完全に失われます。
+   >* **Markdown**：アセットは表示されなくなりますが、**リッチテキスト**&#x200B;に戻すとアセットがまた表示されます。
 
 
 ### コンテンツフラグメントのフラグメントへの挿入 {#inserting-content-fragment-into-your-fragment}
@@ -339,14 +339,14 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 これらは参照として、フラグメント内の現在の場所に追加されます。
 
 >[!NOTE]
-このオプションは、「**複数行テキスト**」が「**フラグメント参照を許可**」に設定されている場合に使用できます。
+>このオプションは、「**複数行テキスト**」が「**フラグメント参照を許可**」に設定されている場合に使用できます。
 
 >[!CAUTION]
-参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
-ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
+>参照ページではこれらのアセットの移動や削除はできません。移動や削除にはフラグメントエディターを使用する必要があります。
+>ただし、アセットの書式設定（サイズなど）は、[ページエディター](/help/sites-cloud/authoring/fundamentals/content-fragments.md)で行う必要があります。フラグメントエディターでのアセットの表示は、純粋にコンテンツフローのオーサリング用です。
 
 >[!NOTE]
-[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
+>[画像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)は様々な方法でフラグメントやページに追加できます。
 
 1. フラグメントを追加したい位置にカーソルを置きます。
 1. **コンテンツフラグメントを挿入** アイコンを使用して、検索ダイアログを開きます。
@@ -363,9 +363,9 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 1. 「**選択**」を使用して、選択したコンテンツフラグメントへの参照を現在のコンテンツフラグメント（現在の場所）に追加します。
 
    >[!CAUTION]
-   別のフラグメントへの参照を追加した後に、次の形式に変更する場合：
-   * **プレーンテキスト**：参照はフラグメントから完全に失われます。
-   * **Markdown**：参照は残ります。
+   >別のフラグメントへの参照を追加した後に、次の形式に変更する場合：
+   >* **プレーンテキスト**：参照はフラグメントから完全に失われます。
+   >* **Markdown**：参照は残ります。
 
 
 ## バリエーションの管理 {#managing-variations}
@@ -383,7 +383,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 1. 「**追加**」を選択します。フラグメントの **プライマリ** が新しいバリエーションにコピーされ、 [編集](#editing-a-variation) 用に開かれます。
 
    >[!NOTE]
-   新しいバリエーションを作成すると、常に&#x200B;**プライマリ**&#x200B;がコピーされます（現在開いているバリエーションではありません）。
+   >新しいバリエーションを作成すると、常に&#x200B;**プライマリ**&#x200B;がコピーされます（現在開いているバリエーションではありません）。
 
 ### バリエーションの編集 {#editing-a-variation}
 
@@ -407,7 +407,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 1. 「**名前を変更**」アクションを確認します。
 
 >[!NOTE]
-この手順はバリエーションの&#x200B;**タイトル**&#x200B;にのみ影響を与えます。
+>この手順はバリエーションの&#x200B;**タイトル**&#x200B;にのみ影響を与えます。
 
 ### バリエーションの削除 {#deleting-a-variation}
 
@@ -420,7 +420,7 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 1. ダイアログで「**削除**」アクションを確認します。
 
 >[!NOTE]
-**プライマリ**&#x200B;は削除できません。
+>**プライマリ**&#x200B;は削除できません。
 
 ### プライマリとの同期 {#synchronizing-with-master}
 
@@ -429,10 +429,10 @@ Markdown を使用してテキストの形式を設定できます。次を定�
 バリエーションの編集時には、バリエーションの現在の要素をプライマリと同期させるアクションにアクセスできます。これにより、プライマリに行われた変更内容を必要なバリエーションに自動的にコピーできます。
 
 >[!CAUTION]
-同期を使用できるのは、変更内容を&#x200B;***プライマリ**からバリエーションに*&#x200B;コピーする場合のみです。
-バリエーションの現在の要素のみが同期されます。
-同期は、**複数行テキスト**&#x200B;データタイプに対してのみ機能します。
-*バリエーションから&#x200B;**プライマリ***へ変更内容を転送することはできません。
+>同期を使用できるのは、変更内容を&#x200B;***プライマリ**からバリエーションに*&#x200B;コピーする場合のみです。
+>バリエーションの現在の要素のみが同期されます。
+>同期は、**複数行テキスト**&#x200B;データタイプに対してのみ機能します。
+>*バリエーションから&#x200B;**プライマリ***へ変更内容を転送することはできません。
 
 1. フラグメントエディターでコンテンツフラグメントを開きます。**プライマリ**&#x200B;が編集されていることを確認します。
 

@@ -235,7 +235,7 @@ use $[secret:SECRET_VAR_NAME]
 >1. お客様は、プレフィックスが `INTERNAL_` または `ADOBE_` の変数を参照しないでください。
 >
 >1. `AEM_` のプレフィックスが付いた環境変数は、お客様が使用および設定するパブリック API として製品で定義されています。
-   >   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
+>   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
 
 
 ### デフォルト値 {#default-values}
@@ -273,6 +273,7 @@ OSGi プロパティで、作成者とパブリッシュで異なる値が必要
 * [実行モードの解決](#runmode-resolution)の節で説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
    * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
+
       `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
