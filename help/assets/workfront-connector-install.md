@@ -4,9 +4,9 @@ description: インストール [!DNL Workfront for Experience Manager enhanced 
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
+source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 67%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 67%
 
 アドオンを [!DNL Experience Manager] に [!DNL Cloud Service] としてインストールするには、次の手順に従います。
 
-1. から拡張コネクタをダウンロード [Adobeソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. から拡張コネクタをダウンロード [Adobeソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
 1. [アクセス](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) Cloud Manager からAEM as a Cloud Serviceリポジトリのクローンを作成します。
 
