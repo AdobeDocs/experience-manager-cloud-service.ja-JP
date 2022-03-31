@@ -3,7 +3,7 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
 workflow-type: tm+mt
 source-wordcount: '2569'
 ht-degree: 99%
@@ -211,7 +211,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
 | 複数行テキスト | 文字列 |  記事の本文などのテキストを出力するために使用します |
 | 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
-| ブール型 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
+| ブール値 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します。選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
@@ -331,7 +331,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ## GraphQL 変数 {#graphql-variables}
 
-GraphQL では、クエリに変数を含めることができます。詳しくは、[GraphQL の変数に関するドキュメント](https://graphql.org/learn/queries/#variables)を参照してください。
+GraphQL では、クエリに変数を含めることができます。詳しくは、 [GraphQL の変数に関するドキュメント](https://graphql.org/learn/queries/#variables) を参照してください。
 
 例えば、特定のバリエーションを持つ `Article` タイプのコンテンツフラグメントをすべて取得するには、次のように、GraphiQL で変数 `variation` を指定します。
 
@@ -350,7 +350,7 @@ query GetArticlesByVariation($variation: String!) {
  
 ### in query variables
 {
-    "variation": "uk"
+    "variation": "Introduction"
 }
 ```
 

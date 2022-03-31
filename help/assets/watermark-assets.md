@@ -5,20 +5,16 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 55%
+source-wordcount: '246'
+ht-degree: 62%
 
 ---
 
 # アセットの透かしの設定 {#watermark-assets}
 
 [!DNL Adobe Experience Manager Assets] では、画像に電子透かしを追加できます。[!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態も示せます。
-
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) 」を参照してください。
 
 を設定するには、以下を実行します。 [!DNL Experience Manager] アセットに透かしを追加するには：
 

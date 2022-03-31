@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 14%
+source-wordcount: '1435'
+ht-degree: 15%
 
 ---
 
@@ -61,10 +61,6 @@ As a [!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセ
 
 ### コンテンツの追加 {#add-content}
 
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 」を参照してください。
-
 への公開 [!DNL Experience Manager Assets] 発行リストにコンテンツ（アセットやフォルダー）をさらに追加できます。 dam リポジトリー全体で、リストにさらにアセットやフォルダーを追加できます。 クリック **[!UICONTROL コンテンツを追加]** ボタンをクリックして、コンテンツを追加します。
 
 1 つのフォルダーから複数のアセットを追加したり、一度に複数のフォルダーを追加したりできます。 ただし、一度に複数のフォルダーからアセットを追加することはできません。
@@ -72,10 +68,6 @@ As a [!DNL Adobe Experience Manager Assets] 管理者は、アセットやアセ
 ![コンテンツの追加](assets/manage-publication-add-content.png)
 
 ### フォルダー設定を含む {#include-folder-settings}
-
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) 」を参照してください。
 
 デフォルトでは、へのフォルダーの公開 [!DNL Experience Manager Assets] は、すべてのアセット、サブフォルダーおよびその参照を公開します。
 
@@ -113,7 +105,7 @@ Only the selected folder content and references are published.
 | 公開 | 選択的公開 | `AEM` | アセットおよびフォルダー |
 | 公開 | 即時 | `AEM` および `Dynamic Media` | アセットおよびフォルダー |
 | 公開 | アクティベーション時 | `AEM` および `Dynamic Media` | アセットおよびフォルダー |
-| Dynamic Media | 選択的公開 | `Dynamic Media` | Assets |
+| Dynamic Media | 選択的公開 | `Dynamic Media` | アセット |
 | Dynamic Media | 即時 | `None` | アセットを公開できません |
 | Dynamic Media | アクティベーション時 | `None` | アセットを公開できません |
 

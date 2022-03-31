@@ -2,10 +2,10 @@
 title: API リクエストの作成 — ヘッドレス設定
 description: コンテンツフラグメントコンテンツとAEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 69%
+source-wordcount: '670'
+ht-degree: 65%
 
 ---
 
@@ -13,12 +13,12 @@ ht-degree: 69%
 
 コンテンツフラグメントコンテンツとAEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 
-## GraphQL API と Assets REST API とは何ですか  {#what-are-the-apis}
+## GraphQL API および Assets REST API とは何ですか {#what-are-the-apis}
 
 [コンテンツフラグメントはいくつか作成したので、AEM API](create-content-fragment.md) を使用してそれらをヘッドレスで配信できます。
 
 * [GraphQL](/help/headless/graphql-api/content-fragments.md) API を使用すると、コンテンツフラグメントにアクセスして配信するリクエストを作成できます。この API は、コンテンツフラグメントコンテンツのクエリと使用に最も堅牢な機能セットを提供します。
-   * これを使用するには、 [エンドポイントは、AEMで定義して有効にする必要があります](/help/headless/graphql-api/graphql-endpoint.md)、および必要に応じて [GraphiQL インターフェイスがインストールされています](/help/headless/graphql-api/graphiql-ide.md).
+   * これを使用するには、[エンドポイントを AEM で定義して有効にする必要があり](/help/headless/graphql-api/graphql-endpoint.md)、必要に応じて [GraphiQL インターフェイスをインストールします](/help/headless/graphql-api/graphiql-ide.md)。
 * [アセット REST API](/help/assets/content-fragments/assets-api-content-fragments.md) を使用すると、コンテンツフラグメント（およびその他のアセット）を作成および変更できます。
 
 このガイドの残りの部分では、GraphQL へのアクセスとコンテンツフラグメントの配信について説明します。
@@ -27,9 +27,9 @@ ht-degree: 69%
 
 GraphQL API を使用する前に、GraphQL エンドポイントを作成する必要があります。
 
-1. **ツール**／**Assets**&#x200B;に移動し、「**GraphQL**」を選択します。
+1. **ツール**／**Assets** に移動し、「**GraphQL**」を選択します。
 1. 「**作成**」を選択します。
-1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログが開きます。以下を指定します。
+1. **新しい GraphQL エンドポイントを作成** ダイアログが開きます。以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
    * **次によって提供される GraphQL スキーマを使用**:ドロップダウンを使用して、必要な設定を選択します。
 1. 「**作成**」で確定します。
@@ -48,13 +48,16 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 GraphiQL は、AEM環境にインストールできる IDE です。 次の手順に従います。 [GraphiQL IDE の使用](/help/headless/graphql-api/graphiql-ide.md) をAEM環境にインストールする場合。
 
 1. AEM as a Cloud Service にログインし、GraphiQL インターフェイスにアクセスします。
-   * 例：`https://<host>:<port>/content/graphiql.html`
+   * 例：`https://<host>:<port>/aem/graphiql.html`
 
-1. GraphiQL IDE は、GraphQL 用のブラウザー内クエリエディターです。 クエリを構築して、コンテンツフラグメントを取得し、それらを JSON としてヘッドレスに配信できます。
-   * 左側のパネルでは、クエリを作成できます。
-   * 右側のパネルに結果が表示されます。
+1. GraphiQL IDE は、GraphQL 用のブラウザー内クエリエディターです。 これを使用してクエリを作成し、コンテンツフラグメントを取得して JSON としてヘッドレスに配信できます。
+   * 右上のドロップダウンを使用すると、エンドポイントを選択できます。
+   * 左端のパネルには、永続化されたクエリが表示されます（使用可能な場合）
+   * 中央の左側のパネルを使用すると、クエリを作成できます。
+   * 右中央のパネルに結果が表示されます。
    * クエリエディターは、コード補完機能とホットキーを備えており、クエリを簡単に実行できます。
-      ![GraphiQL エディター](../assets/graphiql.png)
+
+   ![GraphiQL エディター](../assets/graphiql.png)
 
 1. 作成したモデルが `person` で `firstName`、`lastName`、`position` の各フィールドを持つ場合は、単純なクエリを構築して、コンテンツフラグメントのコンテンツを取得できます。
 

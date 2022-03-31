@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
-ht-degree: 95%
+source-wordcount: '3409'
+ht-degree: 94%
 
 ---
 
@@ -32,6 +32,8 @@ ht-degree: 95%
    + [リリース情報](/help/release-notes/home.md)
    + リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 年 {#2022}
+         + [リリースノート（2022.1.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [リリースノート（2021.11.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -104,7 +106,7 @@ ht-degree: 95%
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
    + 移行ツールのリリースノート {#release-notes-migration-tools}
       + [最新のリリースノート（2022.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [リリースノート (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [リリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [リリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 年 {#2021}
          + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -263,7 +265,9 @@ ht-degree: 95%
    + AEM as a Cloud Service との統合 {#integrations}
       + [Adobe Analytics との統合](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Adobe Analytics との統合自動セットアップ](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Adobe Analyticsとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [エクスペリエンスフラグメントのAdobe Targetへの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
 + アセット {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 80%
 
 ---
 
@@ -74,14 +74,45 @@ Date24/08/2021
 
 ## タグを使用したアセットの整理 {#use-tags-to-organize-assets}
 
-タグをメタデータとして使用すると、アセットの検索、検索結果を使用したコレクションの作成、一部のアセットの検索ランキングの上昇、アセット検出への Adobe Sensei の AI アルゴリズムの適用を簡単に行えます。
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe Sensei、人工知能および機械学習フレームワークを使用します。これらは、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。スマートタグでは、コンテンツ、個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+アセットにタグを追加すると、検索中に取得しやすくなり、検索結果を使用してコレクションを作成し、一部のアセットの検索ランキングを上げ、アセット検出用にAdobe Senseiの AI アルゴリズムを適用できます。
+
+[!DNL Adobe Experience Manager Assets] では、自己学習アルゴリズムを使用して、非常にわかりやすいタグが作成されるので、ユーザーは数回クリックするだけで適切なアセットを見つけることができます。スマートタグでは、Adobe Sensei、人工知能および機械学習フレームワークを使用します。これらは、標準タグとビジネス固有のタグの両方を認識して画像に適用するようにトレーニングできます。スマートタグでは、コンテンツ、個々の単語またはフレーズを識別して、わかりやすいタグをアセットに自動的に適用することもできます。。
+
+アセットにタグを追加する手順は次のとおりです。
+
+1. [!DNL Experience Manager Assets] にログインします。
+1. クリック **[!UICONTROL Assets]** > **[!UICONTROL ファイル]**、アセットを選択し、 **[!UICONTROL プロパティ]** をクリックして、アセットのプロパティを開きます。
+1. 内 **[!UICONTROL 基本]** 」タブで、 **[!UICONTROL タグ]** メタデータ。 ポップアップウィンドウが開きます。
+1. を検索するか、 `cq-tags`. アセットには複数のタグを割り当てることができます。
+
+   タグ構造を、 **[!UICONTROL 名前]** （アルファベット順）、 **[!UICONTROL 作成済み]** 日付、または **[!UICONTROL 変更済み]** 日付。 次の図では、タグ構造は、 **[!UICONTROL 名前]**.
+
+   ![add-tags](assets/add-tags-to-asset.png)
+
+1. クリック **保存** アセットメタデータの変更を更新する場合。
+
+>[!NOTE]
+>
+>タグ構造は、スマートタグを作成する際に、またタグの述語を使用して検索フィルターを適用する際に、並べ替えることができます。
+>
+>並べ替えタグ機能は、プレリリースチャネルで使用できます。 お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) を参照してください。
 
 詳しくは、次の記事を参照してください。
 
 * [アセットメタデータの編集](meta-edit.md)
 * [アセットのスマートタグ](smart-tags.md)
+* [検索パネルへのタグ用述語の追加](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## コレクションとして整理する {#organize-as-collections}
 

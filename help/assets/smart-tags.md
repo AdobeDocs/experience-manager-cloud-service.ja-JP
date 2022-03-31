@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 632bcb3406fc4bc856e7fcf11cb9826a03e6a5d2
+source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 100%
+source-wordcount: '2411'
+ht-degree: 97%
 
 ---
 
@@ -118,7 +118,13 @@ ht-degree: 100%
 1. 必要なタグと適切なタグ構造を作成します。DAM リポジトリーに関連する画像をアップロードします。
 1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL Assets]**／**[!UICONTROL スマートタグトレーニング]**&#x200B;にアクセスします。
 1. 「**[!UICONTROL 作成]**」をクリックします。「**[!UICONTROL タイトル]**」、「**[!UICONTROL 説明]**」を入力します。
-1. モデルをトレーニングする既存のタグを `cq:tags` から参照して選択します。「**[!UICONTROL 次へ]**」をクリックします。
+1. のフォルダーアイコンをクリックします。 **[!UICONTROL タグ]** フィールドに入力します。 ポップアップウィンドウが開きます。
+1. を検索するか、 `cq-tags` を選択します。 「**[!UICONTROL 次へ]**」をクリックします。
+
+   >[!NOTE]
+   >
+   >タグ構造を、 **[!UICONTROL 名前]** （アルファベット順）、 **[!UICONTROL 作成済み]** 日付、または **[!UICONTROL 変更済み]** 日付。
+
 1. **[!UICONTROL アセットを選択]**&#x200B;ダイアログで、各タグに対して「**[!UICONTROL アセットを追加]**」をクリックします。DAM リポジトリー内を検索するか、リポジトリーを参照して、画像を 10 個以上、最大で 50 個選択します。フォルダーではなくアセットを選択します。画像を選択したら、「**[!UICONTROL 選択]**」をクリックします。
 
    ![トレーニング状況を表示](assets/smart-tags-training-status.png)

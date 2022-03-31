@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
+source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
-source-wordcount: '4356'
+source-wordcount: '4326'
 ht-degree: 98%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->* `sling:OrderedFolder` タイプの Assets フォルダーの共有は、Experience Cloud との共有時はサポートされません。フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
+>* タイプの Assets フォルダーの共有 `sling:OrderedFolder`は、Experience Cloudとの共有時はサポートされません。 フォルダーを共有する場合は、フォルダーを作成するときに [!UICONTROL Ordered] を選択しないでください。
 >* Experience Manager では、`subassets` をフォルダーの名前として使用することはできません。これは、複合アセットのサブアセットを含むノード用に予約されているキーワードです
 
 
@@ -45,10 +45,6 @@ ht-degree: 98%
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
 DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
-
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。 お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 この機能を有効にするには：
 
