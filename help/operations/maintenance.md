@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service のメンテナンスタスク
 description: AEM as a Cloud Service のメンテナンスタスク
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 75%
+source-wordcount: '1020'
+ht-degree: 76%
 
 ---
 
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>30 日より前のバージョンは削除されます</li>
        <li>過去 30 日間の最新の 5 つのバージョンが保持されます</li>
        <li>上記のルールに関係なく、最新バージョンが保持されます。</li>
-     </ol><br>注意：上記の動作は、2022 年 3 月 14 日現在の新しい環境に対して適用され、2022 年 4 月 21 日に既存の環境（2022 年 3 月 14 日以前に作成された環境）に対して適用されます。</td>
+     </ol><br>注意：上記の動作は、2022 年 3 月 15 日以降に作成された新しい環境に対して、デフォルトで適用されます。 別の設定が必要な場合は、カスタマーサポートチケットを送信してください。</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>レプリケーション監査の場合、3 日より古い監査ログは削除されます</li>
        <li>DAM（アセット）監査の場合、30 日より古い監査ログは削除されます</li>
        <li>ページ監査の場合、3 日より古いログは削除されます。</li>
-     </ol><br>注意：上記の動作は、2022 年 3 月 14 日現在の新しい環境に対して適用され、2022 年 4 月 21 日に既存の環境（2022 年 3 月 14 日以前に作成された環境）に対して適用されます。</td>
+     </ol><br>注意：上記の動作は、2022 年 3 月 15 日以降に作成された新しい環境に対して、デフォルトで適用されます。 別の設定が必要な場合は、カスタマーサポートチケットを送信してください。</td>
    </td>
   </tr>
   <tr>
