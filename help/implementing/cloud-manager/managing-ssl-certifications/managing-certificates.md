@@ -2,7 +2,7 @@
 title: SSL 証明書の管理
 description: Cloud Manager を使用して SSL 証明書のステータスを確認する方法、および SSL 証明書の編集、置換、更新、削除の方法について説明します。
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 30%
@@ -24,16 +24,6 @@ SSL 証明書のステータスは、SSL 証明書ページから一目で確認
    * 証明書の有効期限が間もなく切れることを警告する通知が Cloud Manager の UI に定期的に表示されます。
 
 * **赤**  — このステータスは、SSL 証明書の有効期限が切れたことを示します。
-
-## 既存の CDN 設定 {#pre-existing-cdn}
-
-SSL 証明書用の既存の CDN 設定がある場合、 **SSL 証明書** UI を使用してこれらの設定を追加し、Cloud Manager で表示して設定できるようにすることを促すページ
-
-UI を使用して既存のすべての環境設定を移行すると、メッセージは消えます。 メッセージが表示されなくなるまでに 1 ～ 2 営業日かかる場合があります。
-
-ドキュメントを参照してください [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
-
-同様のメッセージが **IP許可リスト** そして **環境** IP ドメインまたはカスタムドメイン名用の既存の CDN 設定を持つ許可リスト向けのページ。
 
 ## SSL 証明書の更新 {#update-ssl-certificate}
 
@@ -70,3 +60,13 @@ SSL 証明書を削除するには、次の手順に従います。
 >[!NOTE]
 >
 >ユーザーは、 **ビジネスオーナー** または **デプロイメントマネージャー** ロールを使用して、Cloud Manager で SSL 証明書を削除する必要があります。
+
+## 既存の CDN 設定 {#pre-existing-cdn}
+
+SSL 証明書用の既存の CDN 設定がある場合、 **SSL 証明書** UI を使用してこれらの設定を追加し、Cloud Manager で表示して設定できるようにすることを促すページ
+
+UI を使用して既存のすべての環境設定を移行すると、メッセージは消えます。 メッセージが表示されなくなるまでに 1 ～ 2 営業日かかる場合があります。
+
+ドキュメントを参照してください [SSL 証明書の追加](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) を参照してください。
+
+同様のメッセージが **IP許可リスト** そして **環境** IP ドメインまたはカスタムドメイン名用の既存の CDN 設定を持つ許可リスト向けのページ。

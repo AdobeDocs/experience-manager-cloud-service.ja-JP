@@ -1,38 +1,32 @@
 ---
-title: 概要 - Cloud Manager での IP 許可リスト
-description: 概要 - Cloud Manager での IP 許可リスト
+title: IP許可リストの概要
+description: IP許可リストが、ユーザーがAEMのas a Cloud Serviceドメインにアクセスできるアドレスを制限する方法を説明します。
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
+source-git-commit: 8d1680fa8dbaaefa297cf8c6698097b3c7acc48d
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 11%
 
 ---
 
-# はじめに {#introduction}
+
+# IP許可リストの概要 {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="IP 許可リストの管理"
->abstract="AEM as a Cloud Service はインターネットに公開されており、そのセキュリティはユーザー認証および承認を通じて処理されます。IP 許可リストは Cloud Manager の機能で、アクセスを制御して信頼できるユーザーのみに制限するために使用されます。この機能を使用すると、権限を持つユーザーは、サイトユーザーが AEM ドメインにアクセスできる信頼できる IP アドレスの許可リストを作成できます。"
+>abstract="AEM as a cloud service は、インターネットを介してアクセスでき、ユーザー認証と承認を通じて保護されます。 Cloud Manager の IP許可リストは、信頼済み IP アドレスへのアクセスのみを制限および制御するために使用できます。 適切な権限を持つ Cloud Manager ユーザーは、信頼済み IP アドレスの許可リストを作成し、そこから、サイトのユーザーがAEMドメインにアクセスできるようにします。"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=ja" text="IP 許可リストの追加"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=ja" text="IP 許可リストの表示および更新"
 
-AEM as a Cloud Service はインターネットに公開されており、そのセキュリティはユーザー認証および承認を通じて処理されます。IP 許可リストは Cloud Manager の機能で、アクセスを制御して信頼できるユーザーのみに制限するために使用されます。この機能を使用すると、権限を持つユーザーは、サイトユーザーが AEM ドメインにアクセスできる信頼できる IP アドレスの許可リストを作成できます。
+AEM as a cloud service は、インターネットを介してアクセスでき、ユーザー認証と承認を通じて保護されます。 Cloud Manager の IP許可リストは、信頼済み IP アドレスへのアクセスのみを制限および制御するために使用できます。 適切な権限を持つ Cloud Manager ユーザーは、信頼済み IP アドレスの許可リストを作成し、そこから、サイトのユーザーがAEMドメインにアクセスできるようにします。
 
->[!NOTE]
->プログラムには最大 50 個の IP 許可リストを追加でき、各 IP 許可リストには最大 50 個の IP／CIDR アドレスを追加できます。
+IP許可リストは、環境内のオーサーサービスやパブリッシャーサービスに対して、1 つの単位またはエンティティとして 1 回だけ追加したり、複数回適用または適用解除したりできます。
 
-IP 許可リストを一度追加すると、環境のオーサーサービスやパブリッシュサービスに 1 つのユニットまたはエンティティとして何度でも適用または適用解除できます。
+## 制限事項 {#limitations}
 
->[!NOTE]
->環境のオーサー／パブリッシュサービスに対応する IP 許可リストの名前は、Cloud Manager でサポートされています。
+IP には、リストに留意できる数多くの制限があります。
 
-権限を持つユーザーは、Cloud Manager UI の IP 許可リストページまたは環境詳細ページを使用して、環境の IP 許可リストを管理するための次のようなタスクを実行できます。
-
-* [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-   >[!NOTE]
-   > ルールを一度追加すれば、プログラム内のすべての環境サービスで何度でも再利用したり適用したりできます。
-* [IP 許可リストの表示または更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-* [IP 許可リストの適用または適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [IP 許可リストの削除](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* プログラムに追加できる IP許可リストは最大 50 個です
+* 各 IP アドレスには、最大で 50 個の IP/CIDR アドレスを追加できます。許可リスト
+* IP許可リスト名は、環境内のオーサーサービスやパブリッシュサービスで Cloud Manager でサポートされています。

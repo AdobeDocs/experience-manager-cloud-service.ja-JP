@@ -2,10 +2,10 @@
 title: 環境の管理
 description: 作成できる環境のタイプと、Cloud Manager プロジェクト用に環境を作成する方法について説明します。
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 7%
+source-wordcount: '1745'
+ht-degree: 6%
 
 ---
 
@@ -105,9 +105,9 @@ Cloud Manager は、各AEMas a Cloud Service環境に（追加のパブリッシ
 
 1. 適切な IP許可リストを作成し、プレビューサービスに適用して、すぐに IP アドレスの適用を解除します `Preview Default [<envId>]` 許可リスト。
 
-   * 参照： [IP許可リストの適用解除](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) を参照してください。
+   * ドキュメントを参照してください [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) を参照してください。
 
-1. 更新を使用 **IP許可リスト** デフォルトの IP を削除し、必要に応じて IP を追加するワークフロー。 詳しくは、[IP 許可リストの表示と更新](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)を参照してください。
+1. 更新を使用 **IP許可リスト** デフォルトの IP を削除し、必要に応じて IP を追加するワークフロー。 詳しくは、「[IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)」を参照してください。
 
 プレビューサービスへのアクセスをロック解除すると、プレビューサービス名の前にあるロックアイコンは表示されなくなります。
 
@@ -220,7 +220,7 @@ Cloud Manager では、公開サービスとプレビューサービスの両方
 
 * [カスタムドメイン名のステータスの確認](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn)または [SSL 証明書のステータスの確認](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn)
 
-* [IP 許可リストのステータスの確認](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## IP 許可リストの管理 {#manage-ip-allow-lists}

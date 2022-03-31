@@ -2,9 +2,9 @@
 title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 17%
 
 ---
@@ -52,10 +52,8 @@ Cloud Manager は、ドメインの所有権を TXT 値で検証し、次のい�
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
-カスタムドメイン名用の既存の CDN 設定がある場合、 **IP許可リスト** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
+カスタムドメイン名用の既存の CDN 設定がある場合、 **カスタムドメイン名** および **環境** ページに表示され、Cloud Manager で設定できるように、UI を使用してこれらの設定を追加するよう促す。
 
 UI を使用して既存のすべての環境設定を移行すると、メッセージは消えます。 メッセージが表示されなくなるまでに 1 ～ 2 営業日かかる場合があります。
 
 ドキュメントを参照してください [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) を参照してください。
-
-![既存の CDN 設定メッセージ](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)

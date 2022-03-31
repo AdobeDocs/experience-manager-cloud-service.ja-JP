@@ -1,13 +1,13 @@
 ---
 title: カスタムドメイン名の管理
 description: Cloud Manager を使用して、カスタムドメイン名を表示、更新、置換、削除する方法について説明します。
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 32%
+source-wordcount: '338'
+ht-degree: 31%
 
 ---
-
 
 # カスタムドメイン名の管理 {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Cloud Manager では、カスタムドメイン名の表示、更新、置換、
 1. 行の右端にある省略記号ボタンをクリックします。
 
 1. 「**削除**」を選択します。
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![カスタムドメイン名の削除](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. 送信を確認します。
 
