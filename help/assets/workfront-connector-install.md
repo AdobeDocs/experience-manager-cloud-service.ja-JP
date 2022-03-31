@@ -4,10 +4,10 @@ description: インストール [!DNL Workfront for Experience Manager enhanced 
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 34f3cf925a3ea58de176521be459a61f4317eec3
+source-git-commit: 7ffac94eace3eaa276f0ad1705e0b32c886c795c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 67%
+source-wordcount: '564'
+ht-degree: 65%
 
 ---
 
@@ -110,6 +110,8 @@ ht-degree: 67%
 1. 次の場所にパイプラインを実行 [Cloud Manager に変更をデプロイします。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 1. システムユーザー設定を作成するには、[!DNL Experience Manager] ユーザーグループに `wf-workfront-users` を作成し、権限 `jcr:all` を `/content/dam` に割り当てます。システムユーザー `workfront-tools` が自動的に作成され、必要な権限が自動的に管理されます。拡張コネクタを使用する [!DNL Workfront] のすべてのユーザーは、このグループの一員として自動的に追加されます。
+
+を更新するための情報 [!DNL Workfront for Experience Manager enhanced connector] 以前のバージョンから最新のバージョンに、 [ここ](update-workfront-enhanced-connector.md).
 
 ## [!DNL Experience Manager] 間の接続を [!DNL Cloud Service] と [!DNL Workfront] のように設定します。 {#configure-connection}
 
