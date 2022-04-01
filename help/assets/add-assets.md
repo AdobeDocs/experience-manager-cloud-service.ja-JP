@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 98%
+source-wordcount: '2943'
+ht-degree: 89%
 
 ---
 
@@ -114,12 +114,12 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### ファイル名の処理と禁止文字 {#filename-handling}
 
-[!DNL Experience Manager Assets] は、ファイル名に禁止文字が含まれるアセットのアップロードの阻止を試みます。ファイル名に禁止文字が含まれるアセットをアップロードしようとすると、[!DNL Assets] に警告メッセージが表示され、これらの文字を削除するか使用可能な名前でアップロードするまでアップロードが停止されます。
+[!DNL Experience Manager Assets] では、ファイル名に禁止文字が含まれるアセットをアップロードできません。ファイル名に禁止文字が含まれるアセットをアップロードしようとすると、 [!DNL Assets] に警告メッセージが表示され、これらの文字を削除するか使用可能な名前でアップロードするまでアップロードが停止されます。
 
 組織固有のファイル命名規則に合うように、[!UICONTROL アセットをアップロード]ダイアログでは、アップロードするファイルに長い名前を指定できます。以下の文字（スペース区切りリスト）はサポートされません。
 
-* アセットファイル名で無効な文字 `* / : [ \\ ] | # % { } ? &` 
-* アセットフォルダー名で無効な文字 `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t` 
+* アセット名に無効な文字： `* / : [ \\ ] | # % { } ? &`
+* アセットフォルダー名に無効な文字： `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## アセットの一括アップロード {#bulk-upload}
 
@@ -145,7 +145,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ![一括取り込みツール](assets/bulk-ingestion.png)
 
-#### 前提条件 {#prerequisites-bulk-ingestion}
+**前提条件**
 
 この機能を使用するには、Azure またはAWSの外部ストレージアカウントまたはバケットが必要です。
 
@@ -153,7 +153,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 >
 >ストレージアカウントコンテナまたはバケットをプライベートとして作成し、許可されたリクエストからのみ接続を受け入れます。 ただし、入力ネットワーク接続に関する追加の制限はサポートされていません。
 
-#### 一括読み込みツールを設定 {#configure-bulk-ingestor-tool}
+### 一括読み込みツールを設定 {#configure-bulk-ingestor-tool}
 
 一括読み込みツールを設定するには、次の手順に従います。
 
@@ -185,31 +185,108 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. **[!UICONTROL 保存]** をクリックして、設定を保存します。
 
-#### 一括読み込みツールの設定を管理 {#manage-bulk-import-configuration}
+### 一括読み込みツールの設定を管理 {#manage-bulk-import-configuration}
 
 一括読み込みツールの設定を作成した後は、Experience Manager インスタンスにアセットを一括取り込みする前に、設定を評価するタスクを実行できます。**[!UICONTROL ツール]**／**[!UICONTROL Assets]**／**[!UICONTROL 一括読み込み]** で使用可能な設定を選択して、一括読み込みの設定を管理するための使用可能なオプションを表示します。
 
-##### 設定を編集します。 {#edit-configuration}
+### 設定を編集します。 {#edit-configuration}
 
 設定を選択し、 **[!UICONTROL 編集]** をクリックして設定の詳細を変更します。編集操作の実行中は、設定のタイトルとデータソースの読み込みを編集することはできません。
 
-##### 設定を削除 {#delete-configuration}
+### 設定を削除 {#delete-configuration}
 
 設定を選択し、 **[!UICONTROL 削除]** をクリックして一括読み込み設定を削除します。
 
-##### データソースへの接続を検証 {#validate-connection}
+### データソースへの接続を検証 {#validate-connection}
 
 設定を選択し、 **[!UICONTROL チェック]** をクリックして、データソースへの接続を検証します。接続が成功した場合、Experience Manager には次のメッセージが表示されます。
 
 ![一括読み込み成功メッセージ](assets/bulk-import-success-message.png)
 
-##### 一括読み込みジョブのテスト実行を呼び出す {#invoke-test-run-bulk-import}
+### 一括読み込みジョブのテスト実行を呼び出す {#invoke-test-run-bulk-import}
 
 設定を選択し、 **[!UICONTROL ドライラン]** をクリックして、一括読み込みジョブのテスト実行を呼び出します。Experience Manager には、一括読み込みジョブに関する次の詳細が表示されます。
 
 ![ドライランの結果](assets/dry-assets-result.png)
 
-##### 1 回限りの一括読み込みまたは繰り返しの一括読み込みのスケジュール設定 {#schedule-bulk-import}
+### 一括インポート中のファイル名の処理 {#filename-handling-bulkimport}
+
+アセットまたはフォルダーを一括で読み込む場合は、 [!DNL Experience Manager Assets] は、インポートソースに存在するの構造全体をインポートします。 [!DNL Experience Manager] は、アセット名とフォルダー名に含まれる特殊文字に対する組み込みのルールに従うので、これらのファイル名の変更が必要になります。 フォルダー名とアセット名の両方について、ユーザーが定義したタイトルは変更されず、に保存されます。 `jcr:title`.
+
+一括インポート中は、 [!DNL Experience Manager] アセットやフォルダーの再読み込みを避けるために既存のフォルダーを探し、読み込みがおこなわれる親フォルダーに適用されるサニタイズルールを検証します。 親フォルダーにサニタイズルールが適用されている場合、インポートソースにも同じルールが適用されます。 新しい読み込みの場合、アセットおよびフォルダーのファイル名を管理するために、次のサナライゼーションルールが適用されます。
+
+**一括読み込みでのアセット名の処理**
+
+アセットのファイル名の場合、Jcr の名前とパスは次の API を使用して不要部分が削除されます。 `JcrUtil.escapeIllegalJcrChars`.
+
+* Unicode をそのまま保持
+* 特殊文字を URL エスケープコードに置き換えます（例： ）。 `new*asset.png` が `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**一括読み込みでのフォルダー名の処理**
+
+フォルダー名の場合、Jcr の名前とパスは API を使用して不要部分が削除されます。 `JcrUtil.createValidName`.
+
+* 大文字を小文字に変換
+* Unicode をそのまま保持
+* 特殊文字をダッシュ (「 — 」) に置き換えます。例： `new*asset.png` が `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### 1 回限りの一括読み込みまたは繰り返しの一括読み込みのスケジュール設定 {#schedule-bulk-import}
 
 1 回限りの一括読み込みまたは繰り返しの一括読み込みをスケジュール設定するには、次の手順に従います。
 
@@ -220,7 +297,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    ![一括取得ジョブのスケジュール](assets/bulk-ingest-schedule1.png)
 
 
-##### Assets のターゲットフォルダーを表示 {#view-assets-target-folder}
+#### Assets のターゲットフォルダーを表示 {#view-assets-target-folder}
 
 設定を選択し、 **[!UICONTROL アセットを表示]** をクリックして、一括読み込みジョブの実行後にアセットが読み込まれる Assets のターゲット場所を表示します。
 

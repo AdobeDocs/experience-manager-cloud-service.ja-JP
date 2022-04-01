@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 80%
@@ -73,17 +73,6 @@ Date24/08/2021
 * 公開済みのアセットを、[!DNL Experience Manager] を使用して別のフォルダーに移動し、新しい場所から再度公開するとします。こうすると、新しく再公開したアセットと共に、最初に公開したアセットの場所も引き続き使用できます。ただし、最初に公開したアセットは [!DNL Experience Manager] にとっては&#x200B;*消失*&#x200B;しているので、非公開にすることができません。したがって、ベストプラクティスとしては、まずアセットを非公開にしてから、別のフォルダーに移動します。
 
 ## タグを使用したアセットの整理 {#use-tags-to-organize-assets}
-
-<!--
-Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
-
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
-
-For more information, see the following articles:
-
-* [Edit asset metadata](meta-edit.md)
-* [Smart Tags in Assets](smart-tags.md)
--->
 
 アセットにタグを追加すると、検索中に取得しやすくなり、検索結果を使用してコレクションを作成し、一部のアセットの検索ランキングを上げ、アセット検出用にAdobe Senseiの AI アルゴリズムを適用できます。
 
