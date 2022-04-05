@@ -2,12 +2,13 @@
 title: コンテンツを翻訳 (AEMヘッドレス )
 description: 翻訳コネクタおよびルールを使用して、ヘッドレスコンテンツを翻訳します。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
-ht-degree: 99%
+source-wordcount: '2215'
+ht-degree: 98%
 
 ---
+
 
 # コンテンツの翻訳 {#translate-content}
 
@@ -21,6 +22,10 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳
 * 独自の翻訳ルールを定義できる
 
 コネクタと翻訳のルールがセットアップされたので、この記事では、ヘッドレスコンテンツ翻訳の次のステップについて説明します。
+
+>[!NOTE]
+>
+>をスキップした場合 [翻訳ルールを設定](translation-rules.md) AEM as a Cloud Serviceのプレリリースチャネルを使用しているので、このジャーニーの手順では、このドキュメントで説明する翻訳ルールに従って操作する必要はありません。
 
 ## 目的 {#objective}
 

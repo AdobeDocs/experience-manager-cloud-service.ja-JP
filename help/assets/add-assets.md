@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] への�
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 89%
 
 ---
@@ -217,36 +217,37 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 **一括読み込みでのアセット名の処理**
 
-アセットのファイル名の場合、Jcr の名前とパスは次の API を使用して不要部分が削除されます。 `JcrUtil.escapeIllegalJcrChars`.
+アセットのファイル名の場合、JCR の名前とパスは、次の API を使用して不要部分が削除されます。 `JcrUtil.escapeIllegalJcrChars`.
 
-* Unicode をそのまま保持
-* 特殊文字を URL エスケープコードに置き換えます（例： ）。 `new*asset.png` が `new%2Aasset.png`:
+* Unicode 文字は変更されません
+* 特殊文字を URL エスケープコードに置き換えます（例： ）。 `new asset.png` が `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **一括読み込みでのフォルダー名の処理**
 
-フォルダー名の場合、Jcr の名前とパスは API を使用して不要部分が削除されます。 `JcrUtil.createValidName`.
+フォルダーのファイル名の場合、JCR の名前とパスは、次の API を使用して不要部分が削除されます。 `JcrUtil.createValidName`.
 
-* 大文字を小文字に変換
-* Unicode をそのまま保持
-* 特殊文字をダッシュ (「 — 」) に置き換えます。例： `new*asset.png` が `new-asset.png`:
+* 大文字は小文字に変換されます
+* Unicode 文字は変更されません
+* 特殊文字をダッシュ (「 — 」) に置き換えます。例： `new asset.png` が `new-asset.png`:
 
    ```
    "                           
@@ -265,9 +266,10 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

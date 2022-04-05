@@ -2,10 +2,10 @@
 title: Forms as a Cloud Service の通信の概要
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: 09452aa799fc59bfc08c59d69820aa22daf07e9f
 workflow-type: tm+mt
-source-wordcount: '1129'
-ht-degree: 44%
+source-wordcount: '1138'
+ht-degree: 43%
 
 ---
 
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## ドキュメントの操作
 
-通信ドキュメント操作 API は、通信ドキュメントの組み合わせ、並べ替え、検証に役立ちますPDF。 通常、DDX を作成し、ドキュメント操作 API に送信して、ドキュメントを組み立てたり、並べ替えたりします。 DDX ドキュメントには、ソースドキュメントを使用して一連の必須ドキュメントを作成する方法に関する手順が記載されています。 DDX リファレンスドキュメントでは、サポートされるすべての操作に関する詳細情報を提供します。 ドキュメント操作の例を以下に示します。
+通信ドキュメント操作 API は、通信ドキュメントの組み合わせ、並べ替え、検証に役立ちますPDF。 通常、DDX を作成し、ドキュメント操作 API に送信して、ドキュメントを組み立てたり、並べ替えたりします。 この [DDX ドキュメント](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) では、ソースドキュメントを使用して一連の必須ドキュメントを作成する方法について説明しています。 DDX リファレンスドキュメントでは、サポートされるすべての操作に関する詳細情報を提供します。 ドキュメント操作の例を以下に示します。
 
 ### PDF ドキュメントのアセンブリ
 

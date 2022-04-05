@@ -3,7 +3,7 @@ title: AEMでの GraphiQL IDE の使用
 description: Adobe Experience Managerでの GraphiQL IDE の使用方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 2%
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 次に例を示します。
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 

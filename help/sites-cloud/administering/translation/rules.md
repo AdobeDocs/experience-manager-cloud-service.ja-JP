@@ -4,10 +4,10 @@ description: 翻訳が必要なコンテンツを翻訳ルールで特定する�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 100%
+source-wordcount: '1292'
+ht-degree: 90%
 
 ---
 
@@ -18,6 +18,22 @@ ht-degree: 100%
 >[!TIP]
 >
 >コンテンツの翻訳を初めて行う場合は、[AEM Sites 翻訳ジャーニー](/help/journey-sites/translation/overview.md)を参照してください。これは、AEM の強力な翻訳ツールを使用して AEM Sites コンテンツを翻訳する手順を示すガイドです。AEM や翻訳の経験がないユーザーに最適です。
+
+## コンテンツフラグメントと翻訳ルール {#content-fragments}
+
+このドキュメントで説明する翻訳ルールは、 **翻訳するコンテンツモデルフィールドの有効化** オプションは、 [翻訳統合フレームワークの設定レベル。](integration-framework.md#assets-configuration-properties)
+
+この **翻訳するコンテンツモデルフィールドの有効化** オプションがアクティブな場合、AEMは **翻訳可能** ～に関して [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#properties) を使用して、フィールドを翻訳するかどうかを決定します。 この場合、 [翻訳ルール](rules.md) が置き換えられます。
+
+翻訳ルールを使用してコンテンツフラグメントを翻訳する場合は、 **翻訳するコンテンツモデルフィールドの有効化** 翻訳統合フレームワーク設定のオプションを無効にする必要があります。
+
+>[!NOTE]
+>
+>この機能は、プレリリースチャネルで使用できます。
+> 
+>詳しくは、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) を参照してください。
+
+## 概要 {#overview}
 
 ページとアセットは、JCR リポジトリー内のノードとして表されます。抽出されるコンテンツはノードの 1 つ以上のプロパティ値です。抽出するコンテンツを格納するプロパティは翻訳ルールで特定されます。
 

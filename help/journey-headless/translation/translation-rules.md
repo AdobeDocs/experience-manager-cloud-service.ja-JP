@@ -2,10 +2,10 @@
 title: 翻訳ルールの設定 (AEMヘッドレス )
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 99%
+source-wordcount: '968'
+ht-degree: 89%
 
 ---
 
@@ -21,6 +21,15 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳
 * 翻訳サービスへの独自の接続をセットアップできる
 
 コネクタがセットアップされたので、この記事では次のステップとして、翻訳が必要なコンテンツを特定する方法について説明します。
+
+>[!CAUTION]
+>
+>ドキュメントジャーニーのこの手順は、AEM as a Cloud Serviceのプレリリースチャネルにない場合にのみ必要です。
+>
+>* プレリリースチャネルの場合は、次のジャーニーステップに進んでください [コンテンツを翻訳します。](translate-content.md)
+>* プレリリースチャネルを使用していない場合は、このドキュメントを引き続きお読みください。
+>
+>詳しくは、 [「その他のリソース」セクション](#additional-resources) プレリリースチャネルについて詳しくは、を参照してください。
 
 ## 目的 {#objective}
 
@@ -99,3 +108,4 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳
 [コンテンツの翻訳](translate-content.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
 * [翻訳対象コンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。
+* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - AEM as a Cloud Serviceのプレリリースチャネルをオプトインして、新機能や今後予定されている機能を試す方法を説明します。

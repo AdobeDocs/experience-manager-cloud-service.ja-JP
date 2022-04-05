@@ -4,10 +4,10 @@ description: 'Adobe Analytics との統合 '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: acd44bd7ff211466acc425148cab18dc7ae6d44c
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 100%
+source-wordcount: '835'
+ht-degree: 75%
 
 ---
 
@@ -19,6 +19,9 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
 * [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja)を参照してください。
 
 旧バージョンの AEM と比較して、フレームワークのサポートは、AEM as a Cloud Service の Analytics 設定では提供されません。代わりに、AEM サイトに Analytics 機能（JS ライブラリ）を実装するデファクトツールである Adobe Launch によって実行されます。Adobe Launch では、Adobe Analytics の拡張を設定できるプロパティが作成され、Adobe Analytics にデータを送信するルールが作成されます。Adobe Launch は、SiteCatalyst が提供する解析のタスクに代わるものです。
+
+>[!NOTE]
+>Adobe AnalyticsとAEM as a Cloud Serviceを統合するための IMS 認証の要件がプレリリースチャネルに追加されました。 詳しくは、 [IMS 認証を使用したAdobe Analyticsの設定（プレリリースチャネル）](#configuration-parameters-ims) の節を参照してください。 プレリリースチャネルを参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
 
 >[!NOTE]
 >
@@ -45,6 +48,23 @@ Adobe Analytics 設定ウインドウで表示される設定フィールドは�
 | パスワード | 認証に使用される Adobe Analytics パスワード |
 | データセンター | アカウントが関連付けられている Adobe Analytics データセンター（サンノゼやロンドンなどのサーバー） |
 | セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
+| レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
+
+### IMS 認証を使用したAdobe Analyticsの設定（プレリリースチャネル） {#configuration-parameters-ims}
+
+Adobe AnalyticsとAEM as a Cloud Serviceを統合するための IMS 認証の要件がプレリリースチャネルに追加されました。 プレリリースチャネルを参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。 つまり、Analytics をAEMおよび Launch と適切に統合するには、Launch と Analytics の両方の IMS 設定が必要です。 Launch の IMS 設定はAEM as a Cloud Serviceで事前に設定されていますが、Analytics IMS 設定を作成する必要があります。
+
+詳しくは、 [ページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) を参照してください。
+
+の手順を実行した後 [Adobe Analytics設定の作成](#configuration-parameters) 設定ウィンドウに表示されるフィールドは次のとおりです。
+
+![設定パラメーター](assets/properties_field2.png "設定パラメーター")
+
+| プロパティ | 説明 |
+|---|---|
+| タイトル | 設定名 |
+| IMS 設定 | IMS 設定を選択します（上記の説明を参照）。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
 
 ### サイトへの設定の追加 {#add-configuration}

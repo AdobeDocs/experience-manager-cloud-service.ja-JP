@@ -2,19 +2,20 @@
 title: AEM Forms as a Cloud Service - 通信
 description: データを XDP および PDF テンプレートと自動的に結合するか、出力を PCL、ZPL および PostScript 形式で生成します
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 39%
+source-wordcount: '735'
+ht-degree: 48%
 
 ---
 
 
 # 同期処理を使用 {#sync-processing-introduction}
 
-コミュニケーション機能により、ブランド承認、パーソナライズ、標準化されたドキュメント（ビジネス通信、明細書、請求処理レター、特典通知、月々の請求、ウェルカムキットなど）を作成できます。
+通信サービスでは、ビジネス通信、ドキュメント、声明書、請求処理レター、給付通知、請求処理レター、月次請求書、ウェルカムキットなど、ブランド志向でパーソナライズされたコミュニケーションを作成、組み立て、提供できます。通信 API を使用して、テンプレート（XFA または PDF）と顧客データを組み合わせ、PDF、PS、PCL、DPL、IPL、ZPL 形式のドキュメントを生成できます。
 
-この機能は、ドキュメントを生成および操作するための API を提供します。 ドキュメントをオンデマンドで生成または操作したり、バッチジョブを作成して、定義した間隔で複数のドキュメントを生成することができます。
+例えば、1 つ以上のテンプレートが存在しており、各テンプレートには XML データの複数のレコードがあるシナリオを考えてみましょう。通信 API を使用して、各レコードの印刷用ドキュメントを生成できます。<!-- You can also combine the records into a single document. -->結果は非インタラクティブ PDF ドキュメントになります。非インタラクティブ PDF ドキュメントのフィールドには、ユーザーがデータを入力することはできません。
+
 
 通信サービスは、オンデマンドおよびスケジュールされたドキュメント生成用に API を提供します。オンデマンドに同期 API を、スケジュールされたドキュメント生成にバッチ API（非同期 API）を使用できます。
 
@@ -24,7 +25,19 @@ ht-degree: 39%
 
 ## 同期操作を使用 {#batch-operations}
 
-同期操作とは、ドキュメントを線形的に生成または操作するプロセスです。 次の 2 種類の認証をサポートしています。
+同期操作とは、ドキュメントを線形的に生成するプロセスです。 別の API を使用できるようになりました。
+
+* テンプレートからPDFドキュメントを生成し、そのドキュメントにデータを結合します。
+* XDP ファイルまたはPDFドキュメントから PostScript(PS)、Printer Command Language(PCL)、Zebra Printing Language(ZPL) ドキュメントを生成します。
+* PDF ドキュメントのアセンブリ
+* PDF ドキュメントのディスアセンブリ
+* 文書をPDF/A 準拠文書に変換する
+* PDF/A 準拠のドキュメントの検証
+
+
+### API 呼び出しの認証
+
+同期操作は、次の 2 種類の認証をサポートします。
 
 * **基本認証**:基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。 クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。 例えば、管理者/管理者として認証するために、クライアントが基本を送信する [base64 エンコードされた文字列ユーザー名]: [base64 でエンコードされた文字列パスワード].
 
@@ -40,16 +53,17 @@ ht-degree: 39%
    >
    >Adobeでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
 
-### （ドキュメント生成 API のみ）前提条件 {#pre-requisites}
 
-ドキュメント生成に同期 API を使用するには、次の操作が必要です。
+### （ドキュメント生成 API の場合のみ）アセットと権限の設定
+
+同期 API を使用するには、次が必要です。
 
 * PDF または XDP テンプレート
 * [テンプレートと結合するデータ](#form-data)
 * Experience Manager 管理者権限を持つユーザー
 * テンプレートおよびその他のアセットの Experience Manager Forms Cloud Service インスタンスへのアップロード
 
-#### テンプレートおよびその他のアセットの Experience Manager インスタンスへのアップロード
+### （ドキュメント生成 API の場合のみ）テンプレートおよび他のアセットをExperience Managerインスタンスにアップロード
 
 通常、組織には複数のテンプレートがあります。例えば、クレジットカード明細、福利厚生明細、請求申込用にそれぞれ 1 つずつテンプレートがあります。このような XDP および PDF テンプレートをすべて Experience Manager インスタンスにアップロードします。テンプレートをアップロードするには：
 
@@ -58,14 +72,10 @@ ht-degree: 39%
 1. 作成／フォルダーをクリックし、フォルダーを作成します。フォルダーを開きます。
 1. 作成／ファイルをアップロードをクリックし、テンプレートをアップロードします。
 
-### 同期 API を使用したドキュメントの生成
 
-別の API を使用できるようになりました。
+### API を呼び出す
 
-* テンプレートからPDFドキュメントを生成し、そのドキュメントにデータを結合します。
-* XDP ファイルまたはPDFドキュメントから PostScript(PS)、Printer Command Language(PCL)、Zebra Printing Language(ZPL) ドキュメントを生成します。
-
-API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services)を参照してください。API リファレンスドキュメントは、.yaml 形式でも入手できます。の.yaml をダウンロードできます。 [同期 API](assets/sync.yaml) API の機能を確認するには、postman にアップロードします。
+API から提供されるすべてのパラメーター、認証方法および各種サービスの詳細については、[API リファレンスドキュメント](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services)を参照してください。また、API リファレンスドキュメントでは、API 定義ファイルを.yaml 形式で提供しています。 .yaml ファイルをダウンロードし、Postman にアップロードして API の機能を確認できます。
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

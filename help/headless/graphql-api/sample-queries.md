@@ -3,10 +3,10 @@ title: AEM での GraphQL の使用方法 - サンプルコンテンツとサン
 description: GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを調べて、コンテンツをヘッドレスに提供する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 6d5cdc4b606692f059fe3a6b7a29544f5bc0fa11
+source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,15 +32,15 @@ GraphQL クエリの基本と、AEM コンテンツフラグメントとの連�
 * サンプルコンテンツフラグメント構造（コンテンツフラグメントモデルと関連するコンテンツフラグメント）に基づくいくつかの[サンプル GraphQL クエリ](#graphql-sample-queries)
 
 
-## GraphQL - サンプルコンテンツフラグメント構造を使用したサンプルクエリ {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - サンプルのコンテンツフラグメント構造を使用したサンプルクエリ {#graphql-sample-queries-sample-content-fragment-structure}
 
 クエリの作成とサンプル結果については、これらのサンプルクエリを参照してください。
 
 >[!NOTE]
 >
->インスタンスに応じて、 [AEM GraphQL API に含まれる GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md) クエリの送信とテストに使用します。
+>インスタンスによっては、 [AEM GraphQL API に付属している GraphiQL インターフェイス](/help/headless/graphql-api/graphiql-ide.md) に直接アクセスして、クエリの送信とテストを行うことができます。
 >
->例：`http://localhost:4502/content/graphiql.html`
+>例：`http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
 >
@@ -484,7 +484,7 @@ query {
 }
 ```
 
-### サンプルクエリ - 「Jobs」または「Smith」という名前を持つすべての人物  {#sample-all-persons-jobs-smith}
+### サンプルクエリ - 「Jobs」または「Smith」という名前のすべてのユーザー {#sample-all-persons-jobs-smith}
 
 `Jobs` または `Smith` という名前を持つすべての `persons` が抜き出されます。
 
@@ -538,7 +538,7 @@ query {
 }
 ```
 
-### サンプルクエリ - 「Jobs」という名前を持たないすべての人物  {#sample-all-persons-not-jobs}
+### サンプルクエリ - 「Jobs」という名前でないすべてのユーザー {#sample-all-persons-not-jobs}
 
 `Jobs` または `Smith` という名前を持つすべての `persons` が抜き出されます。
 
@@ -650,7 +650,7 @@ query {
 }
 ```
 
-### サンプルクエリ - ドイツまたはスイスにあり、人口が 400000 から 999999 範囲にあるすべての都市 {#sample-all-cities-d-ch-population}
+### サンプルクエリ - ドイツまたはスイスにあり、人口が 40 万人以上 100 万人未満のすべての都市 {#sample-all-cities-d-ch-population}
 
 ここでは、フィールドの組み合わせに基づいてフィルタリングされます。`AND`（暗黙的）を使用して `population` の範囲を選択しつつ、`OR`（明示的）を使用して必要な都市を選択しています。
 
@@ -713,7 +713,7 @@ query {
 }
 ```
 
-### サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない場合） {#sample-all-cities-san-ignore-case}
+### サンプルクエリ - 名前に SAN が含まれるすべての都市（大文字と小文字を区別しない） {#sample-all-cities-san-ignore-case}
 
 このクエリでは、名前に `SAN` が含まれるすべての都市を、大文字と小文字を区別せずに検索します。
 
@@ -822,7 +822,7 @@ query {
 }
 ```
 
-### サンプルクエリ - 配列値が正確に一致するものだけをフィルタリング {#sample-array-exact-value}
+### サンプルクエリ - 配列の値が正確に一致するものだけをフィルタリング {#sample-array-exact-value}
 
 このクエリでは、配列値が正確に一致するものだけを抜き出します。
 
@@ -874,7 +874,7 @@ query {
 }
 ```
 
-### ネストされたコンテンツフラグメントのサンプルクエリ - 「Smith」という名前を持つ従業員が少なくとも 1 人いるすべての会社  {#sample-companies-employee-smith}
+### ネストされたコンテンツフラグメントのサンプルクエリ - 「Smith」という名前の従業員が少なくとも 1 人いるすべての会社 {#sample-companies-employee-smith}
 
 このクエリでは、「Smith」という `name` の `person` をフィルタリングし、ネストされた 2 つのフラグメント（`company` と `employee`）から取得した情報を返します。
 
@@ -1106,7 +1106,7 @@ query {
 >
 >結果は膨大な量になる可能性があるので、ここでは再現されていません。
 
-### 特定モデルのコンテンツフラグメントのうち指定のプロパティを持つものをすべて取得するサンプルクエリ {#sample-wknd-all-model-properties}
+### 指定されたプロパティを持つ、特定モデルのすべてのコンテンツフラグメントのサンプルクエリ {#sample-wknd-all-model-properties}
 
 このサンプルクエリでは次のものを検索します。
 
@@ -1269,7 +1269,7 @@ query {
 }
 ```
 
-### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ {#sample-wknd-nested-fragment-multiple-model}
+### ネストされたコンテンツフラグメントのサンプルクエリ - 複数モデルタイプ{#sample-wknd-nested-fragment-multiple-model}
 
 このクエリでは次のものを検索します。
 
@@ -1299,7 +1299,7 @@ query {
 }
 ```
 
-### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ {#sample-wknd-fragment-specific-model-content-reference}
+### 特定モデルのコンテンツフラグメントのうちコンテンツ参照を含んだものを取得するサンプルクエリ{#sample-wknd-fragment-specific-model-content-reference}
 
 このクエリには次の 2 種類があります。
 
@@ -1532,27 +1532,27 @@ query {
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| name（会社名） | 1 行のテキスト |  |
-| ceo（最高経営責任者） | フラグメント参照（1 つ） | [Person](#model-person) |
-| employees（従業員） | フラグメント参照（複数フィールド） | [人物](#model-person) |
+| 会社名 | 1 行のテキスト |  |
+| CEO | フラグメント参照（1 つ） | [Person](#model-person) |
+| 従業員数 | フラグメント参照（複数フィールド） | [人物](#model-person) |
 
-#### Person（人物） {#model-person}
+#### Person（ユーザー） {#model-person}
 
 人物（従業員になることも可能）を定義するフィールドは次のとおりです。
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
 | name（氏名） | 1 行のテキスト |  |
-| firstName（名） | 1 行のテキスト |  |
-| awards（受賞歴） | フラグメント参照（複数フィールド） | [Award](#model-award) |
+| 名 | 1 行のテキスト |  |
+| 授賞歴 | フラグメント参照（複数フィールド） | [Award](#model-award) |
 
-#### Award {#model-award}
+#### 賞 {#model-award}
 
 賞を定義するフィールドは次のとおりです。
 
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
-| id（賞の ID） | 1 行のテキスト |  |
+| ショートカット／ID | 1 行のテキスト |  |
 | title（タイトル） | 1 行のテキスト |  |
 
 #### City（市区町村） {#model-city}
@@ -1562,25 +1562,25 @@ query {
 | フィールド名 | データタイプ | 参照 |
 |--- |--- |--- |
 | name（氏名） | 1 行のテキスト |  |
-| country（国） | 1 行のテキスト |  |
-| population（人口） | 数値 |  |
-| categories（カテゴリ） | タグ |  |
+| 国名 | 1 行のテキスト |  |
+| 人口 | 数値 |  |
+| カテゴリ | タグ |  |
 
 ### サンプルコンテンツフラグメント {#sample-content-fragments}
 
 適切なモデルでは次のフラグメントが使用されます。
 
-#### Company（会社） {#fragment-company}
+####   会社 {#fragment-company}
 
-| name | ceo | employees |
+| 会社名 | CEO | 従業員数 |
 |--- |--- |--- |
 | Apple Inc. | Steve Jobs | Duke Marsh<br>Max Caulfield |
 |  Little Pony, Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### Person（人物） {#fragment-person}
+#### Person（ユーザー） {#fragment-person}
 
-| name | firstName | awards |
+| name | 名 | 授賞歴 |
 |--- |--- |--- |
 | Lincoln |  Abe |  |
 | Smith | Adam |   |
@@ -1593,7 +1593,7 @@ query {
 
 #### 賞 {#fragment-award}
 
-| id | title |
+| ショートカット／ID | title |
 |--- |--- |
 | GB | Gameblitz |
 |  GS | 配偶星 |
@@ -1601,7 +1601,7 @@ query {
 
 #### City（市区町村） {#fragment-city}
 
-| name | country | population | categories |
+| name | 国名 | 人口 | カテゴリ |
 |--- |--- |--- |--- |
 | Basel | Switzerland | 172258 | city:emea |
 | Berlin | Germany | 3669491 | city:capital<br>city:emea |
