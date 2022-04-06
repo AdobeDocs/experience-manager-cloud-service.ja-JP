@@ -2,10 +2,10 @@
 title: UI テスト
 description: カスタム UI テストは、カスタムアプリケーションの UI テストを作成して自動的に実行できるオプションの機能です
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 51%
+source-wordcount: '1338'
+ht-degree: 45%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 51%
 >abstract="カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプションの機能です。 UI テストは、言語とフレームワークの幅広い選択肢（Java と Maven、Node と WebDriver.io、Selenium に基づいて構築されたその他のフレームワークとテクノロジーなど）を可能にするために Docker イメージにパッケージ化された Selenium ベースのテストです。"
 
 カスタム UI テストは、アプリケーションの UI テストを作成して自動的に実行できるオプションの機能です。
-
->[!NOTE]
-> このページで説明する UI テストを、2021 年 2 月 10 日より前に作成されたステージパイプラインと実稼動パイプラインで使用するには更新が必要となります。
-> パイプラインの設定について詳しくは、 [Cloud Manager の CI/CD パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) を参照してください。
 
 ## 概要 {#custom-ui-testing}
 
@@ -63,12 +59,9 @@ Cloud Manager で UI テストを作成して実行するには、リポジト�
 
 >[!NOTE]
 >
->プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、このファイルを編集する必要があります。 ファイルに編集しないように指示する行がある場合は、そのアドバイスを無視してください。
-
->[!NOTE]
+>プロジェクトにこの行が含まれていない場合、UI テストをオプトインするには、ファイルを編集する必要があります。
 >
->2021 年 2 月 10 日より前に作成された実稼動用パイプラインの場合、ここで説明した UI テストを使用するには、更新が必要となります。つまり、変更がない場合でも、実稼動パイプラインを編集し、UI から「**保存**」をクリックする必要があります。
->様々なタイプのパイプライン設定の詳細については、[CI/CD パイプラインの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=ja#using-cloud-manager)を参照してください。
+>ファイルには、編集しないように指示する行が含まれている場合があります。 これは、オプトイン UI テストが導入される前にプロジェクトに導入され、クライアントがファイルを編集する意図がなかったためです。 これは無視しても問題ありません。
 
 ## UI テストの作成 {#building-ui-tests}
 
@@ -178,7 +171,7 @@ Docker ビルドコンテキストを含むアーカイブは、Cloud Manager �
 | 変数 | 例 | 説明 |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | Selenium サーバーの URL |
-| `SELENIUM_BROWSER` | `chrome`、`firefox` | Selenium サーバーで使用されるブラウザー実装 |
+| `SELENIUM_BROWSER` | `chrome` | Selenium サーバーで使用されるブラウザー実装 |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | AEM オーサーインスタンスの URL |
 | `AEM_AUTHOR_USERNAME` | `admin` | AEMオーサーインスタンスにログインするためのユーザー名 |
 | `AEM_AUTHOR_PASSWORD` | `admin` | AEM オーサーインスタンスにログインするためのパスワード |
@@ -199,7 +192,7 @@ Selenium のステータスエンドポイントが肯定的な応答で応答�
 
 ### テストレポートの生成 {#generate-test-reports}
 
-Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テストの結果を報告するために広く使用されている形式です。 Docker イメージで Java と Maven が使用される場合、[Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/)と [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/)の両方が使用されます。
+Docker イメージは、テストレポートを JUnit XML 形式で生成して、環境変数 `REPORTS_PATH` で指定されたパスに保存する必要があります。JUnit XML 形式は、テストの結果を報告するために広く使用されている形式です。 Docker イメージで Java と Maven を使用する場合、次のような標準のテストモジュールがあります。 [Maven Surefire プラグイン](https://maven.apache.org/surefire/maven-surefire-plugin/) および [Maven Failsafe プラグイン](https://maven.apache.org/surefire/maven-failsafe-plugin/) では、すぐに使用できるレポートを生成できます。
 
 Docker イメージが他のプログラミング言語やテストランナーで実装されている場合は、JUnit XML レポートの生成方法に関して、選択したツールのドキュメントを参照してください。
 
