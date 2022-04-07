@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
+source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 99%
+source-wordcount: '1536'
+ht-degree: 87%
 
 ---
 
@@ -135,6 +135,28 @@ RESTful サービスを設定するには、以下の手順を実行します。
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. 「**[!UICONTROL 作成]**」をタップして、RESTful サービス用のクラウド設定を作成します。
+
+### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
+
+[!DNL Experience Manager Forms] フォームデータモデルを使用して、データソースとして RESTful Web サービスとの統合時に、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
+フォームデータモデルの HTTP クライアントを設定するには、次の手順を実行します。
+
+1. にログインします。 [!DNL Experience Manager Forms] 管理者としてのオーサーインスタンスの次の場所に移動します。 [!DNL Experience Manager] web コンソールバンドル。 デフォルトの URL は [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. タップ **[!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定]**.
+
+1. 内 [!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定] ダイアログ：
+
+   * フォームデータモデルと、 **[!UICONTROL 接続の制限（合計）]** フィールドに入力します。 デフォルト値は 20 接続です。
+
+   * 内の各ルートに対して許可される最大接続数を指定します **[!UICONTROL ルート単位の接続制限]** フィールドに入力します。 デフォルト値は 2 接続です。
+
+   * 永続的な HTTP 接続が有効に保たれる期間を、 **[!UICONTROL 生き続ける]** フィールドに入力します。 デフォルト値は 15 秒です。
+
+   * 期間を指定します。 [!DNL Experience Manager Forms] サーバは、 **[!UICONTROL 接続タイムアウト]** フィールドに入力します。 デフォルト値は 10 秒です。
+
+   * 内の 2 つのデータパケットの間の無操作状態の最大期間を指定します。 **[!UICONTROL ソケットタイムアウト]** フィールドに入力します。 デフォルト値は 30 秒です。
+
 
 ## SOAP Web サービスの設定 {#configure-soap-web-services}
 
