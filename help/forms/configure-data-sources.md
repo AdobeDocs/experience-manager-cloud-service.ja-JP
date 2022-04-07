@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: a6268415217894dae5d3aae77256855717798d3c
+source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1326'
 ht-degree: 99%
 
 ---
@@ -180,7 +180,7 @@ OData サービスは、そのサービスのルート URL によって識別さ
 
 >[!NOTE]
 >
-> フォームデータモデルがサポートする [OData バージョン 4.0](https://www.odata.org/documentation/) 後で。
+> フォームデータモデルがサポートする [OData バージョン 4](https://www.odata.org/documentation/).
 >オンライン環境またはオンプレミス環境で [!DNL Microsoft Dynamics 365] を設定する詳しい手順については、[[!DNL Microsoft Dynamics] OData 設定](ms-dynamics-odata-configuration.md)を参照してください。
 
 1. **[!UICONTROL ツール／Cloud Services／データソース]**&#x200B;に移動します。クラウド設定の作成対象となるフォルダーをタップして選択します。
