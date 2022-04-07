@@ -1,18 +1,18 @@
 ---
 title: AEM ヘッドレスデベロッパージャーニー
-description: AEM ヘッドレス CMS のドキュメント。AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を示すガイド付きのジャーニーを参照するには、ここから始めてください。
+description: ヘッドレスコンテンツ管理システム (CMS) として使用されている場合は、Adobe Experience Manager(AEM)as a Cloud Serviceのガイド付きジャーニーをここから開始してください。 このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なすべての情報を提供します。
 landing-page-description: AEM のヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を示すガイド付きのジャーニーを参照するには、ここから始めてください。
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 91%
 
 ---
 
 # AEM ヘッドレスデベロッパージャーニー {#aem-headless-developer-journey}
 
-AEM の強力で柔軟なヘッドレス機能とその能力、および初めての開発プロジェクトでの活用方法を示すガイド付きのジャーニーを参照するには、ここから始めてください。このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なすべての AEM ヘッドレスドキュメントを提供します。
+ヘッドレスコンテンツ管理システム (CMS) として使用されている場合は、Adobe Experience Manager(AEM)as a Cloud Serviceのガイド付きジャーニーをここから開始してください。 強力で柔軟なヘッドレス機能、その機能、初めてのヘッドレス開発プロジェクトでの活用方法について説明します。 このジャーニーでは、最初のヘッドレスアプリケーションの開発に必要なすべての情報を提供します。
 
 ## はじめに {#introduction}
 
