@@ -3,10 +3,10 @@ title: 実稼動パイプラインの設定
 description: コードをビルドして実稼動環境にデプロイするための実稼動パイプラインを設定する方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 31%
+source-wordcount: '1442'
+ht-degree: 29%
 
 ---
 
@@ -77,6 +77,7 @@ ht-degree: 31%
    >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリのブランチ内のパスを定義します。
    * **実稼動にデプロイする前に一時停止します**  — このオプションは、実稼動環境にデプロイする前にパイプラインを一時停止します。
 
@@ -104,6 +105,7 @@ ht-degree: 31%
    >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリのブランチ内のパスを定義します。
    * **実稼動にデプロイする前に一時停止します**  — このオプションは、実稼動環境にデプロイする前にパイプラインを一時停止します。
    * **スケジュール設定** - このオプションを使用すると、ユーザーはスケジュールされた実稼動デプロイメントを有効にできます。
@@ -150,6 +152,7 @@ Web 層設定パイプラインは、HTTPD/Dispatcher 設定をデプロイし�
    >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリのブランチ内のパスを定義します。
       * Web 層設定パイプラインの場合、通常は次を含むパスになります。 `conf.d`, `conf.dispatcher.d`、および `opt-in` ディレクトリ。
       * 例えば、プロジェクト構造が [AEMプロジェクトアーキタイプ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) パスは次のようになります。 `/dispatcher/src`.

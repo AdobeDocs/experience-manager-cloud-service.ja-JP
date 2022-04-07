@@ -3,10 +3,10 @@ title: 実稼動以外のパイプラインの設定
 description: 実稼動環境にデプロイする前にコードの品質をテストするための非実稼動パイプラインを設定する方法を説明します。
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 33%
+source-wordcount: '1119'
+ht-degree: 31%
 
 ---
 
@@ -74,6 +74,7 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
    * **コードの場所** - このオプションは、パイプラインがコードを取得する必要がある、選択したリポジトリのブランチ内のパスを定義します。
 
    ![フロントエンドパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -102,7 +103,8 @@ Cloud Manager UI を使用してプログラムを設定し、1 つ以上の環�
    >ドキュメントを参照 [リポジトリの追加と管理](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) Cloud Manager でリポジトリーを追加および管理する方法について説明します。
 
    * **Git ブランチ** - このオプションは、選択したパイプラインのどのブランチからコードを取得するかを定義します。
-   * **Web 階層設定を無視** -
+      * ブランチ名の最初の数文字を入力すると、このフィールドのオートコンプリート機能により、一致するブランチが検索され、選択に役立ちます。
+   * **Web 層の構成を無視**  — オンにすると、パイプラインは Web 層設定をデプロイしません。
 
    ![フルスタックパイプライン](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
