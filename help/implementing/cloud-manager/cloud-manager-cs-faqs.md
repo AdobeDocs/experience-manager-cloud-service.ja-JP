@@ -2,10 +2,10 @@
 title: Cloud Manager に関する FAQ
 description: AEM as a Cloud Serviceの Cloud Manager に関するよくある質問への回答を見つけます。
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 5f4bbedaa5c4630d6f955bb0986e8b32444d6aa3
+source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 21%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,8 +18,9 @@ ht-degree: 21%
 
 はい。次の項目を追加する必要があります： `maven-toolchains-plugin` Java 11 用の適切な設定を使用して、
 
-* これについては、 [ここ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
-* 例えば、 [wknd プロジェクトのサンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+このプロセスはドキュメントに記載されています [ここ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+
+例えば、 [wknd プロジェクトのサンプルプロジェクトコード](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Java 8 から Java 11 に切り替えた後、maven-scr-plugin に関するエラーでビルドが失敗します。 何ができる？ {#build-fails-maven-scr-plugin}
 
@@ -33,7 +34,7 @@ ht-degree: 21%
 
 ## Java 8 から Java 11 に切り替えた後、RequireJavaVersion に関するエラーでビルドが失敗しました。 何ができる？ {#build-fails-requirejavaversion}
 
-Cloud Manager ビルドの場合、 `maven-enforcer-plugin` は失敗し、このエラーが表示されます。
+Cloud Manager ビルドの場合、 `maven-enforcer-plugin` はこのエラーで失敗する場合があります。
 
 ```text
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
@@ -55,7 +56,9 @@ Cloud Manager ビルドの場合、 `maven-enforcer-plugin` は失敗し、こ�
 
 また、バージョンを `-SNAPSHOT` ステージング環境および実稼動環境のビルドまたはデプロイメントの場合。 Cloud Manager は適切なバージョン番号を自動的に設定し、Git でタグを作成します。 このタグは、必要に応じて後で参照できます。
 
-## パッケージとバンドルのバージョン管理は、ステージング環境および実稼動環境でのデプロイメントでどのように機能しますか？ {#snapshot-version}
+バージョン処理の詳細は次のとおりです。 [ここで説明します。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+
+## パッケージとバンドルのバージョン管理は、ステージング環境と実稼動環境のデプロイメントでどのように機能しますか？ {#snapshot-version}
 
 ステージおよび実稼動環境でのデプロイメントでは、自動バージョンは [ここで説明します。](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -86,12 +89,11 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 前の例のエラーでは、パッケージ `myapp-base.ui.content-*.zip` 次のコンテンツを含む `/conf` および `/var/workflow`. デプロイメントを成功させるには、 `sling-distribution-importer` その下に必要なパスがあります。
 
- ユーザーの権限を追加するこのような OSGi 設定の例として、[org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) を紹介します。`sling-distribution-importer`この設定により、 `/var`.  [1] の下にあるこの xml ファイルを `/apps/myapp/config` の下のアプリケーションパッケージに追加する必要があります（myapp はアプリケーションコードが格納されているフォルダー）。
-org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
+次に例を示します [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 設定で、 `sling-distribution-importer` ユーザー。  この設定により、 `/var`.  このような設定は、以下のアプリケーションパッケージに追加する必要があります。 `/apps/myapp/config` （ここで、myapp はアプリケーションコードが保存されるフォルダーです）。
 
-## AEM as a Cloud Serviceのデプロイ手順で Cloud Manager のデプロイメントが失敗し、既に RepositoryInitializer OSGi 設定になっています。 他に何ができる？ {#build-failures}
+## AEM as a Cloud Serviceのデプロイ手順で Cloud Manager のデプロイメントが失敗し、既に RepositoryInitializer OSGi 設定を追加しています。 他に何ができる？ {#build-failures}
 
-If [RepositoryInitializer OSGi 設定の追加](##cloud-manager-deployment-cloud-service) がエラーを解決しなかった場合は、これらの追加の問題の 1 つが原因である可能性があります。
+If [RepositoryInitializer OSGi 設定の追加](#cloud-manager-deployment-cloud-service) がエラーを解決しなかった場合は、これらの追加の問題の 1 つが原因である可能性があります。
 
 * 標準のサービスを中断する無効な OSGi 設定が原因で、デプロイメントが失敗する可能性があります。
    * デプロイ時のログを調べて、明らかなエラーがないかどうかを確認します。
@@ -127,6 +129,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-この場合、これらのコマンドを実行するユーザーを **デプロイメント管理** Admin Consoleの
+この場合、これらのコマンドを実行するユーザーを **デプロイメントマネージャー** Admin Consoleの
 
 詳しくは、[API の権限](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)を参照してください。
