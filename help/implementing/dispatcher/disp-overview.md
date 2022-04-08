@@ -3,10 +3,10 @@ title: クラウド内の Dispatcher
 description: 'クラウド内の Dispatcher '
 feature: Dispatcher
 exl-id: 6d78026b-687e-434e-b59d-9d101349a707
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
-ここでは、Dispatcher ツールとそのダウンロードおよび抽出方法、サポートされている Apache モジュール、レガシーモードとフレキシブルモードの概要について説明します。さらに、検証とデバッグ、AMS から AEM as a Cloud Service への Dispatcher 設定の移行についても説明します。
+ここでは、Dispatcher ツールとそのダウンロードおよび抽出方法、サポートされている Apache モジュール、レガシーモードとフレキシブルモードの概要について説明します。さらに、検証とデバッグ、AMS から AEM as a Cloud Service への Dispatcher 設定の移行についても説明します。。また、 [このビデオ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) を参照してください。
 
 ## Dispatcher ツール {#dispatcher-sdk}
 
