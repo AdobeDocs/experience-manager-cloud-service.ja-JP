@@ -2,10 +2,10 @@
 title: コマースエクスペリエンスのオーサリング
 description: コマースエクスペリエンスの作業
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 100%
+source-wordcount: '702'
+ht-degree: 98%
 
 ---
 
@@ -101,4 +101,4 @@ CIF 製品カタログページは、その場でレンダリングされる仮�
 
 >[!NOTE]
 >
->オムニサーチの全文検索では、関連するコンテンツフラグメントはサポートされません。SKU または UID を使用して、関連するコンテンツフラグメントを検索します。
+> オムニサーチの全文検索では、関連するコンテンツフラグメントはサポートされません。 SKU または UID を使用して、関連するコンテンツフラグメントを検索します。
