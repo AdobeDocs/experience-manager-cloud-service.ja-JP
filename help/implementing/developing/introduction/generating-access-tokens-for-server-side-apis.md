@@ -2,10 +2,10 @@
 title: サーバー側 API のアクセストークンの生成
 description: セキュアな JWT トークンを生成してサードパーティサーバーと AEM as a Cloud Service の間の通信を容易にする方法について説明します。
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
+source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 78%
+source-wordcount: '1430'
+ht-degree: 75%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->このドキュメントに加えて、[AEM as a Cloud Service に対するトークンベースの認証](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication)に関するチュートリアルも参照してください。
+>このドキュメントに加えて、 [AEMas a Cloud Service用のトークンベース認証](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=ja#authentication) および [統合用のログイントークンの取得](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
 
 ## サーバー間フロー {#the-server-to-server-flow}
 
