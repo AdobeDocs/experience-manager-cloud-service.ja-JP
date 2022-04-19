@@ -3,9 +3,9 @@ title: CI／CD パイプライン
 description: Cloud Manager の CI/CD パイプラインと、それらを使用してコードを効率的にデプロイする方法について説明します。
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1377'
 ht-degree: 7%
 
 ---
@@ -30,6 +30,12 @@ Cloud Manager には、次の 2 種類のパイプラインが用意されてい
 * [実稼動以外のパイプライン](#non-prod-pipeline)
 
 ![パイプラインのタイプ](/help/implementing/cloud-manager/assets/configure-pipeline/ci-cd-config1.png)
+
+## ビデオの概要 {#video}
+
+パイプラインタイプの概要については、この短いビデオを参照してください。
+
+>[!VIDEO](https://video.tv.adobe.com/v/342363)
 
 ## 実稼動パイプライン {#prod-pipeline}
 
