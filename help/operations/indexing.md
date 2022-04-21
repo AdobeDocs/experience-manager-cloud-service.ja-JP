@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
+source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
 workflow-type: tm+mt
-source-wordcount: '2366'
-ht-degree: 89%
+source-wordcount: '2442'
+ht-degree: 83%
 
 ---
 
@@ -60,17 +60,19 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 標準提供のインデックスのカスタマイズと完全なカスタムインデックスの両方に、`-custom-` を含める必要があることに注意してください。完全なカスタムインデックスのみ、プレフィックスで始める必要があります。
 
-### 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
+## 新しいインデックス定義の準備 {#preparing-the-new-index-definition}
 
 >[!NOTE]
 >
->標準提供のインデックス（`damAssetLucene-6` など）をカスタマイズする場合は、 *Cloud Service 環境* から最新の標準提供インデックス定義をコピーして、上部にカスタマイズを追加します。これにより、必要な設定が誤って削除されるのを防ぐことができます。例えば、`/oak:index/damAssetLucene-6/tika` の下の `tika` ノードは必須ノードで、カスタマイズしたインデックスにも含める必要があり、Cloud SDK には存在しません。
+>標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`、標準の最新のインデックス定義を *Cloud Service環境* CRX DE Package Manager (`/crx/packmgr/`) ) をクリックします。 次に、設定の名前を（例： ）に変更します。 `damAssetLucene-6-custom-1`をクリックし、カスタマイズを上に追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、 `tika` 下のノード `/oak:index/damAssetLucene-6/tika` は、クラウドサービスのカスタマイズされたインデックスに必要です。 Cloud SDK には存在しません。
 
 次の命名パターンに従って、実際のインデックス定義を含む新しいインデックス定義パッケージを準備する必要があります。
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
 それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。現在、サブルートフォルダーはサポートされていません。
+
+パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 これをおこなう方法は 2 つあります。いずれの場合も、フィルターは `<filter root="/oak:index/" mode="merge"/>` ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`または、各カスタム（またはカスタマイズ）インデックスをフィルターセクションに個別にリストする必要があります。例： `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 後でバージョンを変更する場合は、バージョンを変更するたびに、フィルターを調整する必要があります。
 
 上記のサンプルのパッケージは、`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` としてビルドされます。
 
@@ -80,7 +82,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 >
 >`noIntermediateSaves=true`
 
-### 索引定義のデプロイ {#deploying-index-definitions}
+## 索引定義のデプロイ {#deploying-index-definitions}
 
 >[!NOTE]
 >
