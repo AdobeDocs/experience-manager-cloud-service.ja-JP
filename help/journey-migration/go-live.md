@@ -2,10 +2,10 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 100%
+source-wordcount: '1644'
+ht-degree: 76%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 実稼働環境からの最初の移行を行ったら、クラウドインスタンス上でコンテンツを最新の状態にするために、増分追加を実行する必要があります。このため、次のベストプラクティスに従うことをお勧めします。
 
 * コンテンツの量に関するデータを収集します。例：1 週間ごと、2 週間ごと、1 か月ごと。
-* 48 時間を超えるコンテンツ抽出および取り込みを避けるように、追加を計画します。この方法は、コンテンツ追加が週末の時間枠に収まるようにするために推奨されます。
+* 48 時間を超えるコンテンツ抽出および取り込みを避けるように、追加を計画します。この方法は、コンテンツの追加が週末の時間枠に収まるようにすることをお勧めします。
 * 必要な追加数を計画し、それらの見積もりを使用して開始日を計画します。
 
 ## 移行にともなうコードおよびコンテンツの凍結タイムラインの特定 {#code-content-freeze}
@@ -82,7 +82,7 @@ ht-degree: 100%
 実稼動環境の移行を実行する場合は、次の理由により、コンテンツ転送ツールをクローンから実行しないでください。
 
 * 顧客が追加移行時にコンテンツバージョンを移行する必要がある場合、クローンからコンテンツ転送ツールを実行しても、バージョンは移行されません。クローンがライブ作成者から頻繁に再作成された場合でも、クローンが作成されるたびに、差分の計算にコンテンツ転送ツールで使用されるチェックポイントがリセットされます。
-* クローン全体を更新することはできないので、ACL クエリパッケージを使用して、追加または編集するコンテンツをパッケージ化して実稼動環境からクローンにインストールする必要があります。このアプローチの問題は、ソースインスタンス上の削除されたコンテンツは、ソースとクローンの両方から手動で削除しない限り、クローンに到達しないことです。これにより、実稼動環境で削除されたコンテンツがクローンや AEM as a Cloud Service 上で削除されない可能性が生じます。
+* クローン全体を更新することはできないので、ACL クエリパッケージを使用して、追加または編集するコンテンツをパッケージ化して実稼動環境からクローンにインストールする必要があります。このアプローチの問題は、ソースインスタンス上の削除されたコンテンツは、ソースとクローンの両方から手動で削除しない限り、クローンに到達しないことです。これにより、実稼動環境で削除されたコンテンツがクローンやAEM as a Cloud Service上で削除されない可能性が生じます。
 
 **コンテンツ移行中の AEM ソースの負荷の最適化**
 
@@ -113,13 +113,45 @@ ht-degree: 100%
 
 ## 運用開始チェックリスト {#Go-Live-Checklist}
 
-以下に示すアクティビティのリストを確認して、移行をスムーズかつ正常に実行します。
+このアクティビティリストを確認し、スムーズで正常な移行を実行できるようにしてください。
 
-* コードとコンテンツの凍結期間のスケジュール設定。[移行に必要なコードおよびコンテンツの凍結タイムライン](#code-content-freeze) も参照してください。
-* 最終コンテンツの追加
-* 反復テストの完了
-* パフォーマンステストとセキュリティテストの実行
-* カットオーバーおよび実稼動インスタンスでの移行の実行
+* 機能と UI テストを使用してエンドツーエンドの実稼動パイプラインを実行し、 **常に最新** AEM製品エクスペリエンス。 次のリソースを参照してください。
+   * [AEM バージョンのアップデート](/help/implementing/deploying/aem-version-updates.md)
+   * [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
+* コンテンツを実稼動環境に移行し、関連するサブセットがステージング環境でテストに使用できることを確認します。
+   * AEMの DevOps ベストプラクティスは、コードが開発環境から実稼動環境に移行したことを意味していますが、 [コンテンツを実稼動環境から下に移動します。](/help/overview/enterprise-devops.md#code-movement)
+* コードとコンテンツの凍結期間のスケジュール設定。
+   * 関連トピック [移行のためのコードとコンテンツのフリーズタイムライン](#code-content-freeze)
+* 最終コンテンツの追加.
+* Dispatcher 設定を検証します。
+   * Dispatcher をローカルで設定、検証、シミュレーションする、ローカルの Dispatcher バリデーターを使用します
+      * [ローカルの Dispatcher ツールを設定します。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=ja#prerequisites)
+   * 仮想ホストの構成を慎重に確認します。
+      * 最も簡単な（デフォルトの）解決策は、次のものです。 `ServerAlias *` 仮想ホストファイルの `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * これにより、製品機能テスト、Dispatcher キャッシュの無効化、クローンで使用されるホストエイリアスが機能するようになります。
+      * ただし、 `ServerAlias *` は、少なくとも次の条件を満たすことはできません `ServerAlias` カスタムドメインに加えて、エントリも許可する必要があります。
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* CDN、SSL および DNS を設定します。
+   * 独自の CDN を使用している場合は、適切なルーティングを設定するためのサポートチケットを入力します。
+      * の節を参照してください。 [顧客 CDN がAEM管理 CDN を指す](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) （ CDN ドキュメント）を参照してください。
+      * CDN ベンダーのドキュメントに従って、SSL および DNS を設定する必要があります。
+   * 追加の CDN を使用しない場合は、次のドキュメントに従って、SSL と DNS を管理します。
+      * SSL 証明書の管理
+         * [SSL 証明書管理の概要](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [SSL 証明書の管理](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * カスタムドメイン名 (DNS) の管理
+         * [カスタムドメイン名の概要](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [カスタムドメイン名の追加](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * DNS レコードの TTL 設定を必ず検証してください。
+      * TTL は、DNS レコードがキャッシュに残ってから、サーバーに更新を要求するまでの時間です。
+      * TTL が非常に高い場合、DNS レコードの更新が反映されるまでに時間がかかります。
+* ビジネス要件と目標を満たすパフォーマンスとセキュリティのテストを実行します。
+* 切り替えて、新しいデプロイメントやコンテンツの更新を行わずに、実際の運用開始が実行されるようにします。
 
 移行の実行中にタスクを再調整する必要がある場合は、いつでもリストを参照できます。
 

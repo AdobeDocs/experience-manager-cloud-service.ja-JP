@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 437be8c82a4dee6c9e56af09afa7e9048c8cb3c0
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3421'
 ht-degree: 94%
 
 ---
@@ -268,7 +268,7 @@ ht-degree: 94%
       + [Adobe Analyticsとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [エクスペリエンスフラグメントのAdobe Targetへの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
 + アセット {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概要と新機能](/help/assets/overview.md)
@@ -390,9 +390,9 @@ ht-degree: 94%
    + Adobe Workfrontとの統合 {#integrations}
       + [Workfront向けリリースノート (Experience Manager拡張コネクタ )](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
-      + [ [!DNL Workfront]用の [!DNL enhanced connector] のインストール](/help/assets/workfront-connector-install.md)
+      + [ [!DNL Workfront] への  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [既存のインストールの外部依存関係を削除](/help/assets/remove-external-dependencies.md)
-      + [ [!DNL Workfront]用の [!DNL enhanced connector] の設定](/help/assets/workfront-connector-configure.md)
+      + [ [!DNL Workfront] への  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [はじめに](/help/forms/home.md)
@@ -555,7 +555,7 @@ ht-degree: 94%
    + コンテンツフラグメント {#content-fragments}
       + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ja)
       + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ja)
-      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
+      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
       + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja)
          + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ja)
@@ -704,6 +704,7 @@ ht-degree: 94%
       + [AEM プロジェクトリポジトリーの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
+      + [Enterprise DevOps](/help/overview/enterprise-devops.md)
       + [ログ](/help/implementing/developing/introduction/logging.md)
       + [設定と設定ブラウザー](/help/implementing/developing/introduction/configurations.md)
       + [AEM 技術基盤](/help/implementing/developing/introduction/aem-technologies.md)
