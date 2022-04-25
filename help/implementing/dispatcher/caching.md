@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b490d581532576bc526f9bd166003df7f2489495
+source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 97%
+source-wordcount: '1878'
+ht-degree: 79%
 
 ---
 
@@ -31,14 +31,18 @@ Define DISABLE_DEFAULT_CACHING
 これは、例えば、デフォルトで年齢ヘッダーが 0 に設定されているので、ビジネスロジックで（カレンダー日に基づいた値による）年齢ヘッダーの微調整が必要な場合に便利です。ただし、**デフォルトのキャッシュをオフにする場合は注意が必要です。**
 
 * AEM as a Cloud Service の SDK Dispatcher ツールを使用して、`global.vars` の `EXPIRATION_TIME` 変数を定義することにより、すべての HTML/Text コンテンツに対して上書きできます。
-* 次の apache mod_headers ディレクティブを使用して、より詳細なレベルで上書きできます。
+* 次の apache mod_headers ディレクティブを使用して、CDN とブラウザーキャッシュを独立に制御するなど、より詳細なレベルで上書きできます。
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
         Header set Cache-Control "max-age=200"
+        Header set Surrogate-Control "max-age=3600"
         Header set Age 0
    </LocationMatch>
    ```
+
+   >[!NOTE]
+   >サロゲート制御ヘッダーは、管理されるAdobeCDN に適用されます。 を使用している場合、 [顧客管理 CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN)の場合、CDN プロバイダーに応じて異なるヘッダーが必要になる場合があります。
 
    グローバルキャッシュコントロールヘッダーや、広い範囲の正規表現に一致するヘッダーを設定する場合は、非公開にするコンテンツに適用されないように注意が必要です。複数のディレクティブを使用して、ルールをきめ細かく適用することを検討してください。ただし、ディスパッチャーのドキュメントに記載されているように、ディスパッチャーが検出したキャッシュヘッダーにキャッシュを適用できないことが検出された場合、AEM as a Cloud Service によってキャッシュヘッダーが削除されます。AEM で常にキャッシュヘッダーを適用するように強制するには、次のように **always** オプションを追加します。
 
@@ -72,7 +76,7 @@ Define DISABLE_DEFAULT_CACHING
    >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
 
    >[!NOTE]
-   >しかし、それでも Dispatcher は、独自の[キャッシュルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html)に従ってコンテンツをキャッシュする可能性があります。コンテンツを本当にプライベートにするには、Dispatcher によってキャッシュされないようにする必要があります。
+   >しかし、それでも Dispatcher は、独自の[キャッシュルール](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=ja)に従ってコンテンツをキャッシュする可能性があります。コンテンツを本当にプライベートにするには、Dispatcher によってキャッシュされないようにする必要があります。
 
 ### クライアントサイドライブラリ（js、css） {#client-side-libraries}
 
@@ -110,6 +114,73 @@ Define DISABLE_DEFAULT_CACHING
 * デフォルトのキャッシュなし
 * HTML／Text ファイルタイプに使用する `EXPIRATION_TIME` 変数はデフォルトに設定できません
 * キャッシュの有効期限は、HTML/Text の節で説明したのと同じ LocationMatch 方法で、適切な正規表現を指定することで設定できます
+
+### 今後の最適化
+
+* を使用しない `User-Agent` の一部として `Vary` ヘッダー。 デフォルトの Dispatcher 設定（アーキタイプバージョン 28 以前）の古いバージョンには、これが含まれていました。次の手順を使用して削除することをお勧めします。
+   * で vhost ファイルを見つけます。 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
+   * 次の行を削除またはコメントアウトします。 `Header append Vary User-Agent env=!dont-vary` すべての vhost ファイルから、default.vhost を除き、読み取り専用です。
+* 以下を使用： `Surrogate-Control` ブラウザーのキャッシュとは無関係に CDN キャッシュを制御するヘッダー
+* 適用を検討 [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) および [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) ディレクティブを使用して、バックグラウンドでの更新を許可し、キャッシュのミスを回避し、ユーザーのコンテンツを迅速かつ新しく保ちます。
+   * これらのディレクティブを適用する方法は多数ありますが、30 分を追加します。 `stale-while-revalidate` すべてのキャッシュ制御ヘッダーへの接続は、出発点として適切です。
+* 様々なコンテンツタイプの例が次に示されています。独自のキャッシュルールを設定する際に、ガイドとして使用できます。 具体的な設定と要件を慎重に検討し、テストしてください。
+
+   * 12 時間後に可変クライアントライブラリリソースをキャッシュし、12 時間後にバックグラウンド更新をおこないます。
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200,public" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * MISS を避けるために、不変のクライアントライブラリリソースをバックグラウンド更新で長期（30 日）にキャッシュします。
+
+      ```
+      <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * HTMLページを 5 分間キャッシュし、バックグラウンド更新をおこなうと、ブラウザーでは 1 時間、CDN では 12 時間をキャッシュします。 Cache-Control ヘッダーは常に追加されるので、/content/*の下の一致する html ページが公開されるようにすることが重要です。 そうでない場合は、より具体的な正規表現を使用することを検討してください。
+
+      ```
+      <LocationMatch "^/content/.*\.html$">
+         Header unset Cache-Control
+         Header always set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header always set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * ブラウザーではバックグラウンド更新 1 時間、CDN では 12 時間で、コンテンツサービス/Sling モデルエクスポーターの json 応答を 5 分間キャッシュします。
+
+      ```
+      <LocationMatch "^/content/.*\.model\.json$">
+         Header set Cache-Control "max-age=300,stale-while-revalidate=3600" "expr=%{REQUEST_STATUS} < 400"
+         Header set Surrogate-Control "stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * MISS を避けるために、コア画像コンポーネントからの不変 URL をバックグラウンド更新で長期（30 日）にキャッシュします。
+
+      ```
+      <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
+         Header set Cache-Control "max-age=2592000,stale-while-revalidate=43200,stale-if-error=43200,public,immutable" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
+
+   * MISS を避けるために、24 時間の画像やビデオなど、DAM の可変リソースをキャッシュし、12 時間後にバックグラウンド更新をおこないます
+
+      ```
+      <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
+         Header set Cache-Control "max-age=43200,stale-while-revalidate=43200,stale-if-error=43200" "expr=%{REQUEST_STATUS} < 400"
+         Header set Age 0
+      </LocationMatch>
+      ```
 
 ## Dispatcher キャッシュの無効化 {#disp}
 
