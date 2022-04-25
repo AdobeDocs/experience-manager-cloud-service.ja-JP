@@ -2,10 +2,10 @@
 title: コードのデプロイ
 description: AEM as a Cloud Serviceの Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 23%
+source-wordcount: '704'
+ht-degree: 27%
 
 ---
 
@@ -94,6 +94,19 @@ AEM as a Cloud Serviceの Cloud Manager パイプラインを使用してコー�
 このプロセスは、デプロイメントがトポロジのすべてのパブリッシャーおよび Dispatcher に到達するまで続行されます。
 
 ![実稼動のデプロイメントフェーズ](assets/production-deployment.png)
+
+## タイムアウト {#timeouts}
+
+ユーザーのフィードバックを待機したままにすると、次の手順はタイムアウトします。
+
+| ステップ | タイムアウト |
+|--- |--- |
+| コード品質テスト | 14 日 |
+| セキュリティテスト | 14 日 |
+| パフォーマンステスト | 14 日 |
+| アプリケーションの承認 | 14 日 |
+| 実稼動デプロイメントをスケジュール | 14 日 |
+| CSE サポート | 14 日 |
 
 ## デプロイメントプロセス {#deployment-process}
 
