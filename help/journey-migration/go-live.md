@@ -2,7 +2,7 @@
 title: 運用開始
 description: コードとコンテンツがクラウドに対応した後に移行を実行する方法について
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 76%
@@ -120,7 +120,7 @@ ht-degree: 76%
    * [カスタム機能テスト](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [UI テスト](/help/implementing/cloud-manager/ui-testing.md)
 * コンテンツを実稼動環境に移行し、関連するサブセットがステージング環境でテストに使用できることを確認します。
-   * AEMの DevOps ベストプラクティスは、コードが開発環境から実稼動環境に移行したことを意味していますが、 [コンテンツを実稼動環境から下に移動します。](/help/overview/enterprise-devops.md#code-movement)
+   * AEMの DevOps ベストプラクティスは、コードが開発環境から実稼動環境に移行し、コンテンツが実稼動環境から移行することを意味していることに注意してください。
 * コードとコンテンツの凍結期間のスケジュール設定。
    * 関連トピック [移行のためのコードとコンテンツのフリーズタイムライン](#code-content-freeze)
 * 最終コンテンツの追加.
