@@ -2,10 +2,10 @@
 title: AEM 内での外部 SPA の編集
 description: このドキュメントでは、スタンドアロン SPA を AEM インスタンスにアップロードし、編集可能なコンテンツのセクションを追加し、オーサリングを有効にするための推奨手順について説明します。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
-ht-degree: 100%
+source-wordcount: '2401'
+ht-degree: 88%
 
 ---
 
@@ -258,6 +258,42 @@ mvn clean install -PautoInstallSinglePackage
    * この例では、新しいノード `text_20` を作成できるように、`root/responsivegrid` が存在する必要があります。
 * リーフコンポーネントの作成のみがサポートされます。仮想コンテナと仮想ページは、今後のバージョンでサポートされる予定です。
 
+### 仮想コンテナ {#virtual-containers}
+
+対応するコンテナがAEMでまだ作成されていない場合でも、コンテナを追加する機能がサポートされています。 概念とアプローチは、 [バーチャルリーフコンポーネント。](#virtual-leaf-components)
+
+フロントエンド開発者は、SPA内の適切な場所にコンテナコンポーネントを追加できます。これらのコンポーネントをAEMのエディターで開くと、プレースホルダーが表示されます。 作成者は、コンポーネントとそのコンテンツをコンテナに追加し、JCR 構造内に必要なノードを作成できます。
+
+例えば、コンテナが既に `/root/responsivegrid` 開発者は、新しい子コンテナを追加します。
+
+![コンテナの場所](assets/container-location.png)
+
+`newContainer` は、まだAEMに存在しません。
+
+このコンポーネントを含むページをAEMで編集すると、コンテナの空のプレースホルダーが表示され、作成者はこのプレースホルダーにコンテンツを追加できます。
+
+![コンテナプレースホルダー](assets/container-placeholder.png)
+
+![JCR 内のコンテナの場所](assets/container-jcr-structure.png)
+
+作成者がコンテナに子コンポーネントを追加すると、JCR 構造内の対応する名前で新しいコンテナノードが作成されます。
+
+![コンテンツを含むコンテナ](assets/container-with-content.png)
+
+![JCR 内のコンテンツを含むコンテナ](assets/container-with-content-jcr.png)
+
+作成者が必要とする場合は、コンポーネントとコンテンツを今すぐコンテナに追加できます。変更内容は保持されます。
+
+#### 要件と制限 {#container-limitations}
+
+仮想コンテナを追加するには、いくつかの要件があります。
+
+* 追加できるコンポーネントを決定するポリシーは、親コンテナから継承されます。
+* 作成するコンテナの直近の親が既にAEMに存在している必要があります。
+   * コンテナ `root/responsivegrid` が既にAEMコンテナに存在する場合は、パスを指定して新しいコンテナを作成できます。 `root/responsivegrid/newContainer`.
+   * ただし、 `root/responsivegrid/newContainer/secondNewContainer` は使用できません。
+* 一度に 1 つの新しいレベルのコンポーネントのみ作成できます。
+
 ## 追加のカスタマイズ {#additional-customizations}
 
 前の例に従った場合、外部 SPA は AEM 内で編集できるようになります。ただし、外部 SPA には、他にもカスタマイズできる要素があります。
@@ -286,7 +322,7 @@ mvn clean install -PautoInstallSinglePackage
 
    ![Body.html へのルート要素の追加](assets/external-spa-add-root.png)
 
-### ルーティングを使用したリアクション SPA の編集   {#editing-react-spa-with-routing}
+### ルーティングを使用したリアクション SPA の編集  {#editing-react-spa-with-routing}
 
 外部 React SPA アプリケーションに複数のページがある場合、[レンダリングするページ／コンポーネントを決定する際にルーティングを使用できます。](/help/implementing/developing/hybrid/routing.md)基本的な使用例は、現在アクティブな URL とルートに指定されたパスを一致させることです。このようなルーティング対応アプリケーションでの編集を可能にするには、対応するパスを AEM 固有の情報に合わせて変換する必要があります。
 
