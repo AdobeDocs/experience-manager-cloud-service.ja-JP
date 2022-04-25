@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の開発ガイドライン
 description: AEM as a Cloud Service の開発ガイドライン
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 88%
+source-wordcount: '2444'
+ht-degree: 84%
 
 ---
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 **デバッグログレベルのアクティベート**
 
-デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、次のプロパティを debug モードに更新します。
+デフォルトのログレベルは情報（INFO）であるため、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、次のプロパティを debug モードに更新します。
 
 `/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
@@ -128,7 +128,7 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 DEBUG ログレベルのログを必要以上に長く残さないでください。この場合、多数のエントリが生成されます。
 
-常に次の場所にログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、異なるAEM環境に個別のログレベルを設定できます。 `DEBUG` 開発中に 次に例を示します。
+常に次の場所にログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、異なるAEM環境に個別のログレベルを設定できます。 `DEBUG` 開発中に 次は例です。
 
 |環境 |実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 | | - | - | - | |開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | |ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | |実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | ERROR |
 
@@ -225,14 +225,16 @@ AEM 内の電子メールは、[Day CQ Mail Service OSGi](https://experienceleag
 * SMTP サーバーのホスト名を $[env:AEM_PROXY_HOST;default=proxy.tunnel] に設定する必要があります
 * SMTP サーバーポートは、高度なネットワーク機能を設定する際に、API 呼び出しで使用される portForwards パラメーターに設定された元のプロキシポートの値に設定してください。例えば、（465 ではなく）30465 などとします。
 
-また、ポート 465 がリクエストされた場合は、次のことをお勧めします。
+SMTP サーバーポートは、 `portDest` API 呼び出しで使用される portForwards パラメーターに設定された値。アドバンスドネットワーク設定時に `portOrig` 値は、30000 ～ 30999の必要な範囲内の意味のある値である必要があります。 例えば、SMTP サーバーポートが 465 の場合、ポート30465を `portOrig` の値です。
 
-* `smtp.port` を `465` に設定
+この場合、SSL を有効にする必要があると仮定した場合、 **Day CQ Mail Service OSGI** サービス：
+
+* `smtp.port` を `30465` に設定
 * `smtp.ssl` を `true` に設定
 
-さらに、ポート 587 がリクエストされた場合は、
+または、宛先ポートが 587 の場合、 `portOrig` 値30587を使用する必要があります。 また、SSL を無効にする必要がある場合、Day CQ Mail Service OSGi サービスの設定は次のようになります。
 
-* `smtp.port` を `587` に設定
+* `smtp.port` を `30587` に設定
 * `smtp.ssl` を `false` に設定
 
 `smtp.starttls` プロパティは、実行時に AEM as a Cloud Service によって適切な値に自動的に設定されます。したがって、`smtp.ssl` が true に設定されている場合、`smtp.startls` は無視されます。`smtp.ssl` が false に設定されている場合、`smtp.starttls` は true に設定されます。これは、OSGI 構成で設定されている `smtp.starttls` 値には関係ありません。
