@@ -4,10 +4,10 @@ description: 翻訳が必要なコンテンツを翻訳ルールで特定する�
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 89%
 
 ---
 
@@ -23,15 +23,9 @@ ht-degree: 90%
 
 このドキュメントで説明する翻訳ルールは、 **翻訳するコンテンツモデルフィールドの有効化** オプションは、 [翻訳統合フレームワークの設定レベル。](integration-framework.md#assets-configuration-properties)
 
-この **翻訳するコンテンツモデルフィールドの有効化** オプションがアクティブな場合、AEMは **翻訳可能** ～に関して [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#properties) を使用して、フィールドを翻訳するかどうかを決定します。 この場合、 [翻訳ルール](rules.md) が置き換えられます。
+この **翻訳するコンテンツモデルフィールドの有効化** オプションがアクティブな場合、AEMは **翻訳可能** ～に関して [コンテンツフラグメントモデル](/help/assets/content-fragments/content-fragments-models.md#properties) を使用して、フィールドを翻訳するかどうかを決定し、それに応じて自動的に翻訳ルールを作成します。 このオプションは、作成済みの翻訳ルールより優先され、介入や追加の手順は必要ありません。
 
-翻訳ルールを使用してコンテンツフラグメントを翻訳する場合は、 **翻訳するコンテンツモデルフィールドの有効化** 翻訳統合フレームワーク設定のオプションを無効にする必要があります。
-
->[!NOTE]
->
->この機能は、プレリリースチャネルで使用できます。
-> 
->詳しくは、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) を参照してください。
+翻訳ルールを使用してコンテンツフラグメントを翻訳する場合は、 **翻訳するコンテンツモデルフィールドの有効化** 翻訳統合フレームワーク設定のオプションを無効にする必要があります。また、ルールを作成するには、以下の手順に従う必要があります。
 
 ## 概要 {#overview}
 

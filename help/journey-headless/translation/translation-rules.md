@@ -1,11 +1,11 @@
 ---
-title: 翻訳ルールの設定 (AEMヘッドレス )
+title: ヘッドレスコンテンツの翻訳ルールの設定
 description: 翻訳するコンテンツを特定するための翻訳ルールを定義する方法を説明します。
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 89%
+source-wordcount: '942'
+ht-degree: 92%
 
 ---
 
@@ -24,12 +24,12 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳
 
 >[!CAUTION]
 >
->ドキュメントジャーニーのこの手順は、AEM as a Cloud Serviceのプレリリースチャネルにない場合にのみ必要です。
+>ドキュメントジャーニーのこの手順は、 **翻訳可能** フラグを設定します。
 >
->* プレリリースチャネルの場合は、次のジャーニーステップに進んでください [コンテンツを翻訳します。](translate-content.md)
->* プレリリースチャネルを使用していない場合は、このドキュメントを引き続きお読みください。
->
->詳しくは、 [「その他のリソース」セクション](#additional-resources) プレリリースチャネルについて詳しくは、を参照してください。
+>* この **翻訳可能** 「 」フラグを指定すると、翻訳ルールが自動的に作成され、操作は必要ありません。
+>* この **翻訳可能** フラグは、翻訳統合フレームワーク設定が **[翻訳するコンテンツモデルフィールドを有効にします。](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* TIF 設定でこのオプションを有効にすると、手動で作成した翻訳ルールが置き換えられます。|
+
 
 ## 目的 {#objective}
 
@@ -108,4 +108,3 @@ AEM ヘッドレス翻訳ジャーニーの以前のドキュメント（[翻訳
 [コンテンツの翻訳](translate-content.md)のドキュメントを確認して、ヘッドレス翻訳ジャーニーの次のステップに進むことをお勧めします。ヘッドレスジャーニーの続行に必須ではありませんが、この記事で取り上げたいくつかの概念について詳しく説明している追加のオプションリソースを以下に挙げておきます。
 
 * [翻訳対象コンテンツの特定](/help/sites-cloud/administering/translation/rules.md) - 翻訳が必要なコンテンツを翻訳ルールで特定する方法について説明します。
-* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - AEM as a Cloud Serviceのプレリリースチャネルをオプトインして、新機能や今後予定されている機能を試す方法を説明します。

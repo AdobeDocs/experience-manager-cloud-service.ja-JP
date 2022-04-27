@@ -1,11 +1,11 @@
 ---
-title: 翻訳コネクタの設定 (AEMヘッドレス )
+title: ヘッドレスコンテンツ用の翻訳コネクタの設定
 description: AEM を翻訳サービスに接続する方法を説明します。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 89%
+source-wordcount: '1234'
+ht-degree: 91%
 
 ---
 
@@ -101,9 +101,6 @@ AEM の翻訳統合フレームワーク（TIF）は、AEM コンテンツの翻
    1. **翻訳を自動実行** - 翻訳を翻訳サービスに自動的に送信する場合は、これをオンにします。
    1. **更新のみの翻訳を無効にする**  — このオプションをオンにすると、翻訳プロジェクトを更新すると、前回の翻訳以降に変更されたフィールドだけでなく、翻訳用のすべての翻訳可能なフィールドが送信されます。 翻訳プロジェクトの更新については、ジャーニーの後半で説明します。
    1. **翻訳するコンテンツモデルフィールドの有効化**  — 翻訳設定で、 **翻訳可能** フラグ。
-      * 翻訳プロセスを簡略化するには、このオプションをオンにする必要があります。
-      * このオプションは、AEM as a Cloud Serviceのプレリリースチャネルでのみ使用できます。
-      * 詳しくは、 [「その他のリソース」セクション](#additional-resources) プレリリースチャネルについて詳しくは、を参照してください。
 
 1. 「**保存して閉じる**」をタップまたはクリックします。
 
@@ -135,7 +132,7 @@ AEM は柔軟かつ強力なツールで、複数のコネクタと複数の設�
 * AEM の翻訳統合フレームワークの重要なパラメーターを理解する
 * 翻訳サービスへの独自の接続をセットアップできる
 
-この知識を基に、AEM ヘッドレス翻訳ジャーニーを続けてください。次に、[翻訳ルールの設定](translation-rules.md)のドキュメントを参照しながら、翻訳するコンテンツを定義する方法について説明します。
+この知識に基づいてドキュメントを次に確認し、AEMヘッドレス翻訳ジャーニーを継続します [コンテンツを翻訳](translation-rules.md) ここでは、設定を使用してコンテンツを実際に翻訳する方法を学びます。
 
 ## その他のリソース {#additional-resources}
 
@@ -143,4 +140,3 @@ AEM は柔軟かつ強力なツールで、複数のコネクタと複数の設�
 
 * [翻訳統合フレームワークの設定](/help/sites-cloud/administering/translation/integration-framework.md) - 選択した翻訳コネクタのリストを示し、サードパーティの翻訳サービスと統合できるように翻訳統合フレームワークを設定する方法について説明します。
 * [Microsoft Translator への接続](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM には、テスト用に Microsoft Translation の体験版アカウントが用意されています。
-* [AEM as a Cloud Service Prerelease Channel](/help/release-notes/prerelease.md#enable-prerelease) - AEM as a Cloud Serviceのプレリリースチャネルをオプトインして、新機能や今後予定されている機能を試す方法を説明します。
