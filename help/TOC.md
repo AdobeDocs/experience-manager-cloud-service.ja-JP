@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 277da5aaf1703b549f5697fb708333abc9df1664
 workflow-type: tm+mt
-source-wordcount: '3422'
+source-wordcount: '3433'
 ht-degree: 94%
 
 ---
@@ -340,6 +340,9 @@ ht-degree: 94%
       + [構造ツリー](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
+      + Dynamic Mediaジャーニー {#dm-journey}
+         + [基本、第 1 部](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [基本第 2 部](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 提供の Dynamic Media ニュースレターアーカイブ](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media を使用する](/help/assets/dynamic-media/dynamic-media.md)

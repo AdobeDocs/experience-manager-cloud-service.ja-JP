@@ -1,5 +1,5 @@
 ---
-title: Dynamic Mediaジャーニー
+title: Dynamic Mediaジャーニー、第 I 部
 description: 'Dynamic Mediaジャーニーでは、Dynamic Mediaの基本、仕組み、ユーザーにとって何ができるか、およびユーザーや顧客にとっての価値について説明します。 '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Dynamic Mediaジャーニーへようこそ。
 * 画像セット、スピンセットおよび混在メディアセット
 
 **_対象ユーザ_**
-このジャーニーの読者に最適なオーディエンスは、Experience ManagerでDynamic Mediaを初めて利用する人を以下のとおりです。
+このジャーニーの読者に最適なオーディエンスは、以下のようなユーザーで、Experience Manager上でDynamic Mediaを初めて使用するユーザーです。
 
 * 管理者
 * ビジネスアナリスト
@@ -73,7 +73,8 @@ Dynamic Mediaは、メディアを配信する際に使用するので、基本�
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![AdobeDynamic Mediaは、同じプライマリイメージを異なるメディアに異なるサイズと形式で配信します。](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![AdobeDynamic Mediaは、同じプライマリイメージを異なるメディアに異なるサイズと形式で配信します。](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *AdobeDynamic Mediaは、サイズや帯域幅に関係なく、一貫性のある高品質なエクスペリエンスをあらゆる画面に提供します。*
 
 ここでは、「1 つのプライマリアセットファイル、無限の可能性」という概念が重要な理由について詳しく説明します。
@@ -104,7 +105,7 @@ Dynamic Mediaは既に、アセットを最適化し、CDN を介してモバイ
 
 スマートイメージングを使用すると、既存の画像プリセット設定やエンドユーザーの具体的な特性に応じて、全体として 22%～47%のパフォーマンス向上を期待できます。 画質を保ちながら、まるで触れたことのないもののように。
 
-![スマートイメージング](/help/assets/assets-dm/dm-smart-imaging.png)
+![スマートイメージング](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *スマートイメージングは、顧客のブラウザー機能とネットワーク速度に基づいて、画像の形式とファイルサイズを自動的に最適化します。*
 
 スマートイメージングは、Dynamic Mediaテクニカルサポートとの連携が必要なので、デフォルトではオンになっていません。Adobe また、スマートイメージングを有効にするには、CDN キャッシュを完全にクリアして、時間を費やして再入力する必要があります。 スマートイメージングの使用に興味がある場合は、テクニカルサポートチケットを送信して、Adobeと協力し、スマートイメージングを有効にすることができます。 テクニカルサポートには、事前にスマートイメージングを試すための URL パラメーターが用意されています。 どの Web ページや画像でも試してみて、得られるパフォーマンスと節約額を確認できます。 その後、フルサイトでスマートイメージングを有効にすることができます。
@@ -117,7 +118,7 @@ Dynamic Mediaは既に、アセットを最適化し、CDN を介してモバイ
 
 この問題を解決するために、Dynamic Mediaでは *アダプティブビデオセット*.
 
-![アダプティブビデオセット](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![アダプティブビデオセット](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *アダプティブビデオセットは、異なるビットレートおよび形式でエンコードされた、同じビデオのバージョンをグループ化します。*
 
 最初に、システムにアップロードするオリジナルのプライマリビデオを使用します。 Dynamic Mediaが自動的にサイズを変更する、または *トランスコード*、そのビデオを複数のビデオに分割します。 次に、配信時に、どのビデオ画面、どの画質、どの形式を使用するかをインテリジェントに決定し、携帯電話、タブレット、またはデスクトップコンピュータに配信します。
