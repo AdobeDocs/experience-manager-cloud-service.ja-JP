@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 83%
+source-wordcount: '2420'
+ht-degree: 84%
 
 ---
 
@@ -72,7 +72,7 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。現在、サブルートフォルダーはサポートされていません。
 
-パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 これをおこなう方法は 2 つあります。いずれの場合も、フィルターは `<filter root="/oak:index/" mode="merge"/>` ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`または、各カスタム（またはカスタマイズ）インデックスをフィルターセクションに個別にリストする必要があります。例： `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. 後でバージョンを変更する場合は、バージョンを変更するたびに、フィルターを調整する必要があります。
+パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`に設定する場合、各カスタム（またはカスタマイズ）インデックスを次のようにリストする必要があります。 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
 
 上記のサンプルのパッケージは、`com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT` としてビルドされます。
 
