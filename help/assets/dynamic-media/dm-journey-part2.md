@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 69d2121323d8a8ab54db3fb0a56195a1271e6112
+source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 1%
@@ -224,3 +224,5 @@ _Dynamic Mediaチュートリアル_
 _Dynamic Mediaビューア_
 
 * [ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+
+<!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
