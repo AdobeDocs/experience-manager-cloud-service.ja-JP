@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 >
 >* [Adobe Experience Manager as a Cloud Service の概要](/help/overview/introduction.md)
 >* Adobe Experience Manager as a Cloud Service と以前のバージョンとの[新機能と相違点](/help/overview/what-is-new-and-different.md)
->* Adobe Experience Manager as a Cloud Service の[アーキテクチャ](/help/overview/architecture.md)
+>* Adobe Experience Manager as a Cloud Service [のアーキテクチャ](/help/overview/architecture.md)
 >* [ AEM Sites as a Cloud Service の主な変更点](/help/sites-cloud/sites-cloud-changes.md)
 >* [AEM Assets as a Cloud Service の主な変更点](/help/assets/assets-cloud-changes.md)
 
@@ -34,7 +34,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 * [/apps と /libs が実行時に不変](#apps-libs-immutable)
 
-* [OSGi バンドルおよび設定はリポジトリーベース](#osgi)
+* [OSGi バンドルおよび設定は、コードとして扱う必要があります](#osgi)
 
 * [パブリッシュリポジトリーに対する変更は禁止](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 * `/libs` では変更は一切できません。
    * これは新しいルールではありませんが、以前のオンプレミスバージョンの AEM では適用されていませんでした。
-* `/libs` 内のオーバーレイ可能な領域のオーバーレイについては、`/apps` 内では引き続き可能です。
+* の領域のオーバーレイ `/libs` オーバーレイが許可されているは、 `/apps`.
    * このようなオーバーレイは、CI/CD パイプラインを通じて Git から取得する必要があります。
 * `/apps` に保存されている静的テンプレートデザイン情報は、UI では編集できません。
    * 代わりに、編集可能なテンプレートを利用することをお勧めします。
@@ -62,12 +62,14 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 * MSM ブループリントおよびカスタム MSM ロールアウト設定は、CI/CD パイプラインを通じて Git からインストールする必要があります。
 * 多言語翻訳の変更は、CI/CD パイプラインを通じて Git から提供される必要があります。
 
-## OSGi バンドルおよび設定はリポジトリーベース {#osgi}
+## OSGi バンドルおよび設定は、コードとして扱う必要があります {#osgi}
 
-以前のバージョンの AEM で OSGi 設定の変更に使用されていた Web コンソールは、AEM as a Cloud Service では使用できません。したがって、OSGi の変更は CI/CD パイプラインを通じて導入する必要があります。
+OSGi バンドルおよび設定の変更は、CI/CD パイプラインを通じて導入する必要があります。
 
-* OSGi 設定の変更は、JCR ベースの OSGi 設定として Git 永続性機能を通じてのみ取得できます。
-* 新規または更新済みの OSGi バンドルは、CI/CD パイプラインのビルドプロセスの一環として Git を通じて導入する必要があります。
+* 新規または更新された OSGi バンドルは、CI/CD パイプラインを通じて Git を通じて導入する必要があります。
+* OSGi 設定に対する変更は、CI/CD パイプラインを通じて Git からのみ取得できます。
+
+AEMの以前のバージョンで OSGi バンドルおよび設定を変更するために使用されていた Web コンソールは、AEM Cloud Serviceでは使用できません。
 
 ## パブリッシュリポジトリーに対する変更は禁止 {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ AMS 上やオンプレミスでのインストールからプロジェクトを�
 
 ## アセットの操作と配信 {#asset-handling}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] では、アセットのアップロード、処理、ダウンロードが最適化されています。[!DNL Assets] がより効率的かつスケーラブルになり、アップロードとダウンロードが大幅に高速化されました。また、既存のカスタムコードや一部の操作にも影響します。変更点のリストと[!DNL Experience Manager] 6.5 の機能と同等性については、[ [!DNL Assets]](/help/assets/assets-cloud-changes.md) の変更点を参照してください。
+アセットのアップロード、処理、ダウンロードは、 [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] がより効率的かつスケーラブルになり、アップロードとダウンロードが大幅に高速化されました。また、既存のカスタムコードや一部の操作にも影響します。変更点のリストと[!DNL Experience Manager] 6.5 の機能と同等性については、[ [!DNL Assets]](/help/assets/assets-cloud-changes.md) の変更点を参照してください。
