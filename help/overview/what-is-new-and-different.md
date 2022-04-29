@@ -2,10 +2,10 @@
 title: 相違点と新機能 - Adobe Experience Manager as a Cloud Service
 description: 相違点と新機能 - Adobe Experience Manager（AEM）as a Cloud Service。
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: b74a0dbb1c9fdb74941f7b71bed9215853b63666
+source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 100%
+source-wordcount: '1897'
+ht-degree: 96%
 
 ---
 
@@ -171,7 +171,7 @@ AEM as a Cloud Service をサポートする新しいアーキテクチャには
 
 このプロセスは一般にクラウドファースト開発と呼ばれます。所要時間は全体で数 10 分（アプリケーションの複雑さに応じて 20～50 分）と見込まれるので、保留中のコードや設定変更がクラウドで試行される前に、迅速な開発手法を採用する必要があります。
 
-OSGi バンドルとその関連設定を管理する Web コンソール（以前は AEM QuickStart の一部）は、AEM as a Cloud Service 環境のユーザーからは直接アクセスできなくなりました。新しい開発者コンソールを使用すれば、このインターフェイスに読み取り専用モードで引き続きアクセスできます。このコンソールを使用すると、開発者はオーサーサービスまたはパブリッシュサービスの特定のノードを直接選択してログインし、デフォルトでブロックされている領域にアクセスできます。
+OSGi バンドルとそれに関連する設定を管理する Web コンソール ( 以前はAEM QuickStart の一部 ) は、AEM as a Cloud Serviceでは使用できなくなりました。 新しい開発者コンソールには、ほとんどのランタイム情報に対する読み取り専用のインターフェイスが用意されています。 このコンソールを使用すると、開発者はオーサーサービスまたはパブリッシュサービスの特定のノードを直接選択してログインし、関連情報を表示できます。
 
 >[!NOTE]
 >
