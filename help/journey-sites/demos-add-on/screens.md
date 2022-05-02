@@ -2,10 +2,10 @@
 title: デモサイトにAEM Screensを有効にする
 description: デモサイトでAEM Screensのas a Cloud Service的なエクスペリエンスを完全に有効にする手順を説明します。
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 2%
+source-wordcount: '2671'
+ht-degree: 4%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 2%
 
 前のドキュメントのAEM Reference Demos Add-On ジャーニーでは、 [デモサイトの作成、](create-site.md) 参照デモアドオンのテンプレートに基づいて新しいデモサイトを作成しました。 その結果、以下を達成できました。
 
-* AEMオーサリング環境へのアクセス方法を説明します。
-* テンプレートに基づくサイトの作成方法を理解する。
-* サイト構造内を移動し、ページを編集する際の基本事項を理解します。
+* AEM オーサリング環境へのアクセス方法を理解する。
+* テンプレートに基づくサイトの作成方法を理解します。
+* サイト構造内を移動し、ページを編集する際の基本事項を理解する。
 
 デモサイトを管理するのに役立つツールを参照および理解できる独自のデモサイトを用意したので、デモサイトでAEM Screensのas a Cloud Service的なエクスペリエンスをフルに活用できます。
 
 ## 目的 {#objective}
 
-AEM Reference Demos Add-On には、コーヒーショップのビジネスバーティカルである We.Cafe のAEM Screensコンテンツが含まれています。 このドキュメントでは、AEM Screensのコンテキストで We.Cafe デモ設定を実行する方法を説明します。 ドキュメントを読めば、以下が可能です。
+AEM Reference Demos Add-On には、コーヒーショップのビジネスバーティカルである We.Cafe のAEM Screensコンテンツが含まれています。 このドキュメントでは、AEM Screensのコンテキストで We.Cafe デモ設定を実行する方法を説明します。 読み終えると、次のことができるようになります。
 
 * AEM Screensの基本を知る。
 * We.Cafe デモコンテンツを理解します。
@@ -133,7 +133,7 @@ AEM Sitesと同様に、AEM Screensもコンテキストに基づいて動的に
 
 1. API とサービスウィンドウの左側のパネルで、 **資格情報** ウィンドウの上部で、「 **資格情報を作成** および **API キー**.
 
-   ![秘密鍵証明書](assets/credentials.png)
+   ![資格情報](assets/credentials.png)
 
 1. ダイアログで、新しい API キーをコピーし、後で使用するために保存します。 クリック **閉じる** をクリックしてダイアログを閉じます。
 
@@ -170,7 +170,7 @@ API キーを使用してGoogle Sheets のデータを交換できるように�
 1. シート ID を探します。
 
    * シート ID は、シートリンクの後にコピーした文字のランダムな文字列です `d/` 以前 `/edit`.
-   * 次に例を示します。
+   * 次は例です。
       * URL が `https://docs.google.com/spreadsheets/d/1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30/edit#gid=0`
       * シート ID はです。 `1cNM7j1B52HgMdsjf8frCQrXpnypIb8NkJ98YcxqaEP30`.
 
@@ -296,7 +296,7 @@ AEM Screensは、コンテキストに基づいて動的にコンテンツを変
 
    ![表示を作成](assets/create-display.png)
 
-1. チャネルを作成したら、そのチャネルをクリックして詳細を表示します。 デモサイトから同期されたチャネルがディスプレイに割り当てられている必要があります。 クリック **チャネルを割り当て** をクリックします。
+1. ディスプレイが作成されたら、ディスプレイの名前をクリックしてディスプレイの詳細画面を開きます。 デモサイトから同期されたチャネルがディスプレイに割り当てられている必要があります。 クリック **チャネルを割り当て** をクリックします。
 
    ![チャネルの詳細](assets/channel-detail.png)
 
@@ -375,9 +375,9 @@ AEMaaCS のチャネルエディターで簡単にデモをプレビューでき
 
 ![入口の風景](assets/entrance-landscape.jpg)
 
-## 次のステップ {#what-is-next}
+## 次の手順 {#what-is-next}
 
-これで、AEM Reference Demo Add-On ジャーニーのこの部分が完了し、以下をおこなう必要があります。
+これで、AEM Reference Demo Add-On ジャーニーのこのステップが完了しました。ここで、次のことを行う必要があります。
 
 * AEM Screensの基本を知る。
 * We.Cafe デモコンテンツを理解します。
