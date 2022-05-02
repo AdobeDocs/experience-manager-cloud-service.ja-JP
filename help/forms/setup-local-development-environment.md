@@ -185,14 +185,15 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
    * （Apple macOS の場合）[Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) をインストールします。これには、Docker Engine、Docker CLI クライアント、Docker Compose、Docker Content Trust、Kubernetes、Credential Helper が含まれています。
 
    * （Linux の場合）[Docker Engine](https://docs.docker.com/engine/install/#server) と [Docker Compose](https://docs.docker.com/compose/install/) をお使いのマシンにインストールします。
+
    >[!NOTE]
    >
    > * Apple macOS の場合は、ローカルの AEM オーサーインスタンスを格納したフォルダーを許可リストに加えます。
    >
    > * Windows 用 Docker Desktop は、Hyper-V
-      > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
-      > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
-      > 使用している間に、ファイル共有を明示的に構成します。
+   > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
+   > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
+   > 使用している間に、ファイル共有を明示的に構成します。
 
 
 1. オーサーインスタンスとパブリッシュインスタンスに並行して、aem-sdk などのフォルダーを作成します。例：C:\aem-sdk
