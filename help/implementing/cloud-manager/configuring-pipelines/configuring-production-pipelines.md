@@ -3,16 +3,16 @@ title: 実稼動パイプラインの設定
 description: コードをビルドして実稼動環境にデプロイするための実稼動パイプラインを設定する方法について説明します。
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1462'
 ht-degree: 29%
 
 ---
 
 # 実稼動パイプラインの設定 {#configure-production-pipeline}
 
-コードをビルドして実稼動環境にデプロイするための実稼動パイプラインを設定する方法について説明します。
+実稼動パイプラインを設定して、コードを実稼動環境にビルドおよびデプロイする方法について説明します。 実稼動パイプラインは最初にコードをステージング環境にデプロイし、承認があると同じコードを実稼動環境にデプロイします。
 
 ユーザーが **[デプロイメントマネージャー](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** 実稼動パイプラインを設定するためのロール。
 

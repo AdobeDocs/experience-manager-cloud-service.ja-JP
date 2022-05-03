@@ -2,17 +2,28 @@
 title: コードのデプロイ
 description: AEM as a Cloud Serviceの Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 27%
+source-wordcount: '806'
+ht-degree: 23%
 
 ---
 
 
 # コードのデプロイ {#deploy-your-code}
 
-AEM as a Cloud Serviceの Cloud Manager パイプラインを使用してコードをデプロイする方法を説明します。
+AEM as a Cloud Serviceの Cloud Manager パイプラインを使用して、コードを実稼動環境にデプロイする方法を説明します。
+
+![実稼動パイプライン図](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+コードをステージング環境にシームレスにデプロイし、実稼動環境にデプロイするには、実稼動パイプラインを使用します。 実稼動パイプラインの実行は、2 つの論理フェーズに分類されます。
+
+1. ステージ環境へのデプロイメント
+   * コードは、自動化された機能テスト、UI テスト、エクスペリエンス監査、ユーザー受け入れテスト (UAT) のために、ステージング環境に構築およびデプロイされます。
+1. 実稼動環境へのデプロイメント
+   * ステージ上でビルドの検証がおこなわれ、実稼動環境へのプロモーションが承認されると、同じビルドアーティファクトが実稼動環境にデプロイされます。
+
+_コードスキャン、関数テスト、UI テスト、エクスペリエンス監査をサポートするのは、フルスタックコードパイプラインタイプのみです。_
 
 ## AEM as a Cloud Serviceでの Cloud Manager でのコードのデプロイ {#deploying-code-with-cloud-manager}
 
