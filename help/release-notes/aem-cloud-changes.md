@@ -2,10 +2,10 @@
 title: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 description: Adobe Experience Manager（AEM）as a Cloud Service の主な変更点
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 86%
+source-wordcount: '846'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
 
 * [カスタム実行モードは禁止](#custom-runmodes)
 
-* [レプリケーションエージェントの削除](#replication-agents)
+* [レプリケーションエージェントの削除 および関連する変更](#replication-agents)
 
 * [クラシック UI の削除](#classic-ui)
 
@@ -96,13 +96,15 @@ AEM as a Cloud Service には、次の実行モードが標準で用意されて
 
 AEM as a Cloud Service では、追加またはカスタムの実行モードは使用できません。
 
-## レプリケーションエージェントの削除 {#replication-agents}
+## レプリケーションエージェントの削除 および関連する変更 {#replication-agents}
 
 AEM as a Cloud Service では、[Sling コンテンツ配布](https://sling.apache.org/documentation/bundles/content-distribution.html)を使用してコンテンツが公開されます。以前のバージョンの AEM で使用されていたレプリケーションエージェントは、使用も提供もされなくなりました。その結果、既存の AEM プロジェクトの次の領域に影響が出る可能性があります。
 
 * 例えば、プレビューサーバーのレプリケーションエージェントにコンテンツをプッシュするカスタムワークフロー。
 * レプリケーションエージェントのカスタマイズによるコンテンツの変換
 * リバースレプリケーションを使用した、パブリッシュからオーサーへのコンテンツの返却
+
+また、一時停止ボタンと無効ボタンがレプリケーションエージェント管理コンソールから削除されました。
 
 ## クラシック UI の削除 {#classic-ui}
 
