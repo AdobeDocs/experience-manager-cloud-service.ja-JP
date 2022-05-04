@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
+source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 100%
+source-wordcount: '2899'
+ht-degree: 92%
 
 ---
 
@@ -185,7 +185,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 処理プロファイルを使用して実現できない追加のアセット処理が必要な状況では、追加の後処理ワークフローを設定に追加できます。後処理では、アセットマイクロサービスを使用して、設定可能な処理の上に、完全にカスタマイズされた処理を追加できます。
 
-後処理ワークフローが設定されている場合は、マイクロサービスの処理が終了した後に、[!DNL Experience Manager] で後処理ワークフローが自動的に実行されます。ワークフローランチャーを手動で追加してワークフローをトリガーする必要はありません。次に例を示します。
+後処理ワークフロー、または [ワークフローの自動開始](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html)（設定されている場合）は、によって自動的に実行されます。 [!DNL Experience Manager] マイクロサービスの処理が終了した後。 ワークフローランチャーを手動で追加してワークフローをトリガーする必要はありません。次に例を示します。
 
 * アセットを処理するためのカスタムワークフロー手順。
 * 外部システムから提供されるアセット（製品やプロセスの情報など）にメタデータやプロパティを追加するための統合機能。
@@ -233,6 +233,32 @@ The following video demonstrates the usefulness and usage of standard profile.
 * 式による後処理ワークフローの設定（`postProcWorkflowsByExpression`）：異なる正規表現に基づいて、複数のワークフローモデルをリストアップできます。式とモデルはコロンで区切る必要があります。正規表現は、レンディションやファイルの 1 つではなく、アセットノードを直接指すものでなければなりません。例：`/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`
 
 OSGi 設定のデプロイ方法については、[ [!DNL Experience Manager]](/help/implementing/deploying/overview.md)へのデプロイを参照してください。
+
+#### 後処理ワークフローの実行を無効にする
+
+後処理が必要ない場合は、「空の」ワークフローモデルを __ワークフローの自動開始__ 選択。
+
+##### 無効な自動開始ワークフローモデルの作成
+
+1. に移動します。 __ツール/ワークフロー/モデル__
+1. 選択 __作成/モデルを作成__ 上部のアクションバーを形成する
+1. 新しいワークフローモデルのタイトルと名前を指定します。例：
+   * タイトル：自動開始ワークフローを無効にする
+   * 名前：disable-auto-start-workflow
+1. 選択 __完了__ ワークフローモデルを作成するには
+1. __選択__ および __編集__ 新しく作成されたワークフローモデル
+1. ワークフローモデルエディターで、「 」を選択します。 __手順 1__ をモデル定義から削除します。
+1. を開きます。 __サイドパネル__&#x200B;を選択し、 __手順__
+1. 次をドラッグ： __DAM アセットの更新ワークフローの完了__ モデル定義にステップインする
+1. を選択します。 __ページ情報__ ボタン ( __サイドパネル__ 切り替え )、「 __プロパティを開く__
+1. 以下 __基本__ タブ、選択 __一時的なワークフロー__
+1. 選択 __保存して閉じる__ 上部のアクションバーから
+1. 選択 __同期__ 上部のアクションバー
+1. ワークフローモデルエディターを閉じる
+
+##### 無効な自動開始ワークフローモデルを適用
+
+次に示す手順に従います。 [フォルダーへのワークフローモデルの適用](#apply-workflow-model-to-folder) そして、 __自動開始ワークフローを無効にする__ を __ワークフローの自動開始__ フォルダーの場合、アセットを後処理する必要はありません。
 
 ## ベストプラクティスと制限事項 {#best-practices-limitations-tips}
 
