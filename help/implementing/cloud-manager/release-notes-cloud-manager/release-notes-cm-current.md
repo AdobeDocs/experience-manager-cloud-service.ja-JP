@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.5.0 の
 description: AEM as a Cloud Serviceの Cloud Manager 2022.5.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 48f645d43779a40aaa58b92bb3c8fd8020e32640
+source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 23%
+source-wordcount: '177'
+ht-degree: 16%
 
 ---
 
@@ -21,8 +21,17 @@ ht-degree: 23%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 5 2022 年 5 月 5 日にリリースされた Cloud Manager リリース 2022.5.0 のリリース日です。 次回のリリースは 2022 年 6 月 9 日に予定されています。
+AEM as a Cloud Service 2022 年 5 月 5 日にリリースされた Cloud Manager リリース 2022.5.0 のリリース日です。 次回のリリースは 2022 年 6 月 9 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
+* 環境ページには、環境のAEMバージョンを表示する列があります。
+* パイプラインの実行で、UI の最上位エラーが実行画面に表示されるようになりました。
+* Cloud Manager UI を使用して、実稼動デプロイ手順を再実行します。
+* 実稼動デプロイステップを再実行するために、ビルドイメージを再利用します。
+* ネットワークインフラストラクチャのセルフサービス削除を可能にする新しい API。
+
 ## バグの修正 {#bug-fixes}
+
+* UI テストステップログの「ログをダウンロード」ボタンがログをダウンロードしなかった問題を修正しました。
+* 一部の実行は、コミットの承認とキャンセルの承認ステップのトリガーで停止していました。
