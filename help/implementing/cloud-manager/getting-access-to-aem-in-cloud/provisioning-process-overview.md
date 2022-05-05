@@ -1,7 +1,7 @@
 ---
 title: プロビジョニングプロセス - 概要
 description: プロビジョニングプロセス - 概要
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -31,7 +31,7 @@ ht-degree: 100%
 * 管理者は、Admin Console を使用して、追加のチームメンバーにユーザーと役割を追加できる
 * 役割に基づいたユーザーの権限を確認し、Cloud Manager で権限の割り当てを決定する
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 詳しくは、Experience Leagueue の [Experience Manager as a Cloud Service へのオンボーディング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=ja)を参照してください。
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 ### 2. Adobe Admin Console への組織がオンボーディングされます。
 
-![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * システム管理者：
    * AEM プログラムと環境をプロビジョニングします。
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 ### 3. Admin Console でユーザーをオンボーディングし、アクセスを管理します。
 
-![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 サイズと環境に応じて、3 つの方法でユーザーをオンボードします。
 * Admin Console から手動でユーザーを作成する

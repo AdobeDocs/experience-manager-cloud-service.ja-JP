@@ -3,10 +3,10 @@ title: AEMでの GraphQL エンドポイントの管理
 description: ヘッドレスコンテンツ配信のためにAdobe Experience Manager as a Cloud Serviceの GraphQL エンドポイントを管理する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -60,11 +60,11 @@ GraphQL エンドポイントを有効にするには、まず適切な設定が
 
 対応するエンドポイントを有効にするには、以下を行います。
 
-1. **ツール**／**Assets**&#x200B;に移動し、「**GraphQL**」を選択します。
+1. に移動します。 **ツール**, **一般**&#x200B;を選択し、「 **GraphQL**.
 1. 「**作成**」を選択します。
-1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログが開きます。以下を指定します。
+1. **新しい GraphQL エンドポイントを作成** ダイアログが開きます。以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
-   * **使用する GraphQL スキーマの提供元**：ドロップダウンを使用して、必要なサイト／プロジェクトを選択します。
+   * **使用する GraphQL スキーマの提供元**： ドロップダウンを使用して、必要なサイト／プロジェクトを選択します。
 
    >[!NOTE]
    >

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 80%
+source-wordcount: '879'
+ht-degree: 83%
 
 ---
 
@@ -90,12 +90,6 @@ Date24/08/2021
    ![add-tags](assets/add-tags-to-asset.png)
 
 1. クリック **保存** アセットメタデータの変更を更新する場合。
-
->[!NOTE]
->
->タグ構造は、スマートタグを作成する際に、またタグの述語を使用して検索フィルターを適用する際に、並べ替えることができます。
->
->並べ替えタグ機能は、プレリリースチャネルで使用できます。 お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](/help/release-notes/prerelease.md#enable-prerelease) を参照してください。
 
 詳しくは、次の記事を参照してください。
 

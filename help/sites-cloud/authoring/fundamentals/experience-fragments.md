@@ -2,10 +2,10 @@
 title: エクスペリエンスフラグメント
 description: Adobe Experience Manager as a Cloud Service のエクスペリエンスフラグメントを使用すると、エクスペリエンスの再利用性と柔軟性を高めることができます。
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 95%
+source-wordcount: '1560'
+ht-degree: 93%
 
 ---
 
@@ -186,7 +186,7 @@ WKND プロジェクトでは、`Contributors` に従って一部のエクスペ
 
 1. 「**作成**」をクリックします。
 
-   メッセージが表示されます。以下から選択します。
+   メッセージが表示されます。選択:
 
    * 「**完了**」を選択すると、コンソールに戻ります。
    * 「**開く**」を選択すると、フラグメントエディターを開きます。
@@ -355,11 +355,17 @@ URL の `.plain.` セレクターを使用すると、ブラウザーからプ�
 >
 >ブラウザーから直接利用することもできますが、[主な目的は、他のアプリケーション（例えば、サードパーティ Web アプリ、カスタムモバイル実装など）が、URL のみを使用して、エクスペリエンスフラグメントのコンテンツに直接アクセスできるようにすることです。](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition)
 
+## エクスペリエンスフラグメントの公開 {#publishing-experience-fragments}
+
+エクスペリエンスフラグメントの公開は、基本的に [ページの公開](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) （エクスペリエンスフラグメントコンソールまたはエディターから）。
+
+または、 [プレビューに公開](/help/sites-cloud/authoring/fundamentals/previewing-content.md) （エクスペリエンスフラグメントコンソールまたはエディターから）。
+
 ## エクスペリエンスフラグメントの書き出し {#exporting-experience-fragments}
 
 デフォルトでは、エクスペリエンスフラグメントは HTML 形式で配信され、AEM とサードパーティチャネルのどちらでも同じように使用できます。
 
-Adobe Target への書き出しには、JSON も使用できます。以下を参照してください。
+Adobe Target への書き出しには、JSON も使用できます。次を参照してください。
 
 * [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [エクスペリエンスフラグメントのAdobe Targetへの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
+* [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)

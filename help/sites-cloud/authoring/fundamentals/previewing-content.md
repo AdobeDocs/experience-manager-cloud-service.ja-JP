@@ -2,10 +2,10 @@
 title: コンテンツのプレビュー
 description: AEMプレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 30%
+source-wordcount: '372'
+ht-degree: 28%
 
 ---
 
@@ -17,6 +17,10 @@ AEMオファーの Sites プレビューサービスを使用すると、開発�
 ページトランジションや他のパブリッシュ側のみのコンテンツなど、オーサー環境からは表示されないページエクスペリエンスのプレビューを容易にします。
 
 プレビュー環境について詳しくは、ドキュメントを参照してください。 [環境の管理。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>エクスペリエンスフラグメントをプレビューに公開する手順は、エクスペリエンスフラグメントコンソールまたはエディターからですが、基本的にはページの場合と同じです。
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 

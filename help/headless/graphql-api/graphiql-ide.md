@@ -3,10 +3,10 @@ title: AEMでの GraphiQL IDE の使用
 description: Adobe Experience Managerでの GraphiQL IDE の使用方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 1%
 
 ---
 
@@ -39,9 +39,10 @@ ht-degree: 2%
 * 参照 **履歴** 以前のクエリの
 * を使用します。 **ドキュメントエクスプローラ** ドキュメントにアクセスするには、以下を実行します。使用可能な方法を学び理解するのに役立ちます。
 
-次に例を示します。
+クエリエディターには、次のいずれかからアクセスできます。
 
-* `http://localhost:4502/aem/graphiql.html`
+* **ツール** -> **一般** -> **GraphQL クエリエディター**
+* 直接例： `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
@@ -95,7 +96,7 @@ ht-degree: 2%
 
 また、GraphiQL IDE では、 [クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
-次に例を示します。
+次は例です。
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
@@ -145,7 +146,7 @@ curl -X PUT \
   >The target environment might need adjusting, depending on your requirements.
 -->
 
-次に例を示します。
+次は例です。
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 

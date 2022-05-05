@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 description: Adobe Experience Manager Forms as a Cloud Service 用のローカル開発環境の設定
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 921975034035f9b6a07ae2b76f433cef30f307a3
+source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
 workflow-type: tm+mt
-source-wordcount: '2647'
-ht-degree: 100%
+source-wordcount: '2704'
+ht-degree: 86%
 
 ---
 
@@ -13,7 +13,13 @@ ht-degree: 100%
 
 [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service] 環境を設定する場合は、開発環境、ステージング環境および実稼動環境をクラウドに設定します。また、ローカル開発環境を設定および構成することもできます。
 
-ローカル開発環境を使用すると、フォームや関連アセット（テーマ、テンプレート、カスタム送信アクションなど）を作成したり、[PDF forms をアダプティブフォームに変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)したりできます。アダプティブフォームまたは関連アセットの準備ができたら、アダプティブフォームおよび関連アセットをローカル開発環境から Cloud Service 環境に書き出し、さらなるテストと公開を行うことができます。
+ローカル開発環境を使用すると、クラウド開発環境にログインせずに次の操作を実行できます。
+
+* [フォームの作成](creating-adaptive-form.md) および関連アセット（テーマ、テンプレート、カスタム送信アクションなど）
+* [PDF forms のアダプティブフォームへの変換](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=ja)
+* 生成するアプリケーションの構築 [顧客とのコミュニケーション](aem-forms-cloud-service-communications-introduction.md) オンデマンドまたはバッチモード。
+
+アダプティブフォームまたは関連アセットがローカル開発インスタンスまたはアプリケーションで生成する準備が整ったら、 [顧客とのコミュニケーション] の準備が整ったら、アダプティブフォームまたはカスタマーコミュニケーションアプリケーションをローカル開発環境からCloud Service環境に書き出して、さらにテストを実施したり、実稼動環境に移行したりできます。
 
 また、カスタムコンポーネントや事前入力サービスなどのカスタムコードを、ローカル開発環境上で開発し、テストすることもできます。カスタムコードがテストされ、準備が整ったら、Cloud Service 開発環境の Git リポジトリーを使用して、カスタムコードをデプロイできます。
 
@@ -61,20 +67,20 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 ## 前提条件
 
-ローカル開発環境を設定するには、以下のソフトウェアが必要です。ローカル開発環境の設定を開始する前に、以下をダウンロードしてください。
+ローカル開発環境を設定するには、以下のソフトウェアが必要です。環境環境の設定を開始する前に、次の情報をダウンロードしてローカル開発します。
 
 | ソフトウェア | 説明 | ダウンロードリンク |
 |---|---|---|
 | Adobe Experience Manager as a Cloud Service SDK | SDK には、[!DNL Adobe Experience Manager] QuickStart ツールと Dispatcher ツールが含まれています | [ソフトウェア配布](#software-distribution)から最新の SDK をダウンロード |  |
-| Adobe Experience Manager Forms 機能アーカイブ（AEM Forms アドオン） | アダプティブフォームおよびその他の Adobe Experience Manager Forms 機能を作成、スタイル設定、最適化するためのツール | [ソフトウェア配布](#software-distribution)からダウンロード |
-| （オプション）Adobe Experience Manager Forms 参照コンテンツ | アダプティブフォームおよびその他の Adobe Experience Manager Forms 機能を作成、スタイル設定、最適化するためのツール | [ソフトウェア配布](#software-distribution)からダウンロード |
-| （オプション）Adobe Experience Manager Forms Designer | アダプティブフォームおよびその他の Adobe Experience Manager Forms 機能を作成、スタイル設定、最適化するためのツール | [ソフトウェア配布](#software-distribution)からダウンロード |
+| Adobe Experience Manager Forms 機能アーカイブ（AEM Forms アドオン） | アダプティブFormsおよびその他のAdobe Experience Manager Forms機能を作成、スタイル設定、最適化するためのツール | [ソフトウェア配布](#software-distribution)からダウンロード |
+| （オプション）Adobe Experience Manager Forms 参照コンテンツ | アダプティブFormsおよびその他のAdobe Experience Manager Forms機能を作成、スタイル設定、最適化するためのツール | [ソフトウェア配布](#software-distribution)からダウンロード |
+| （オプション）Adobe Experience Manager Forms Designer | アダプティブFormsおよびその他のAdobe Experience Manager Forms機能を作成、スタイル設定、最適化するためのツール | [ソフトウェア配布](#software-distribution)からダウンロード |
 
 ### ソフトウェア配布から最新バージョンのソフトウェアをダウンロード {#software-distribution}
 
-最新バージョンの Adobe Experience Manager as a Cloud Service SDK、Experience Manager Forms 機能アーカイブ（AEM Forms アドオン）、Forms 参照アセット、Forms Designer を[ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からダウンロードするには：
+最新バージョンのAdobe Experience Manager as a Cloud Service SDK、Experience Manager Forms機能アーカイブ (AEM Formsアドオン )、フォームリファレンスアセット、またはForms Designer を [ソフトウェア配布](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html):
 
-1. Adobe ID を使用して、https://experience.adobe.com/#/downloads にログイン
+1. にログインします。 <https://experience.adobe.com/#/downloads> Adobe ID
 
    >[!NOTE]
    >
@@ -89,7 +95,7 @@ You can use the [development tools](https://experienceleague.adobe.com/docs/expe
 
 Adobe Experience Manager Forms プロジェクトはカスタムコードベースです。Cloud Manager を介して [!DNL Adobe Experience Manager] as a Cloud Service にデプロイされるコード、設定およびコンテンツが含まれます。[AEM プロジェクトの Maven アーキタイプ](https://github.com/adobe/aem-project-archetype)は、プロジェクトのベースライン構造を提供します。
 
-[!DNL Adobe Experience Manager] プロジェクトに使用する以下の開発ツールを設定します。
+次の開発ツールを設定して、 [!DNL Adobe Experience Manager] 開発用プロジェクト：
 
 * [Java™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#local-development-environment-set-up)
 * [Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=ja#install-git)
@@ -176,24 +182,23 @@ Use this project to update configurations, create overlays, develop custom Adapt
 
 ## レコードのドキュメント用のローカル開発環境の設定（DoR）{#docker-microservices}
 
-AEM Forms as a Cloud Services は、レコードのドキュメントの開発を容易にし、その他の microservices を使用するための、Docker ベースの SDK 環境を提供します。これにより、プラットフォーム固有のバイナリやアダプテーションを手動で設定する必要がなくなります。環境を設定する手順は以下のとおりです。
+AEM Forms as a Cloud Services は、レコードのドキュメントの開発を容易にし、その他の microservices を使用するための、Docker ベースの SDK 環境を提供します。プラットフォーム固有のバイナリや適応を手動で設定する必要がなくなります。 環境を設定するには：
 
 1. Docker のインストールおよび設定：
 
-   * （Microsoft Windows の場合）[Docker Desktop](https://www.docker.com/products/docker-desktop) をインストールします。お使いのマシン上で Docker Engine と Docker-compose が設定されます。
+   * (Microsoft® Windows の場合 ) インストール [Docker Desktop](https://www.docker.com/products/docker-desktop). を設定します。 `Docker Engine` および `docker-compose` を設定します。
 
    * （Apple macOS の場合）[Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac) をインストールします。これには、Docker Engine、Docker CLI クライアント、Docker Compose、Docker Content Trust、Kubernetes、Credential Helper が含まれています。
 
-   * （Linux の場合）[Docker Engine](https://docs.docker.com/engine/install/#server) と [Docker Compose](https://docs.docker.com/compose/install/) をお使いのマシンにインストールします。
-
+   * (Linux®の場合 ) インストール [Docker Engine](https://docs.docker.com/engine/install/#server) および [Docker Compose](https://docs.docker.com/compose/install/) を設定します。
    >[!NOTE]
    >
-   > * Apple macOS の場合は、ローカルの AEM オーサーインスタンスを格納したフォルダーを許可リストに加えます。
+   > * Apple macOSの場合は、ローカルの AEM オーサーインスタンスを含むフォルダーをします。
    >
    > * Windows 用 Docker Desktop は、Hyper-V
-   > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
-   > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
-   > 使用している間に、ファイル共有を明示的に構成します。
+      > （レガシー）と WSL2（最新）という 2 つのバックエンドをサポートします。ファイル共有は、WSL2（最新）を使用する場合、
+      > 自動的に Docker によって管理されます。Hyper-V（レガシー）を
+      > 使用している間に、ファイル共有を明示的に構成します。
 
 
 1. オーサーインスタンスとパブリッシュインスタンスに並行して、aem-sdk などのフォルダーを作成します。例：C:\aem-sdk
@@ -210,8 +215,8 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 1. ローカルの AEM オーサーインスタンスが稼働中であることを確認します。次のコマンドを実行して SDK を開始します。
 
-   * （Microsoft Windows の場合）`sdk.bat start`
-   * （Linux または Apple Mac OS の場合）`AEM_HOME=[local AEM Author installation] ./sdk.sh start`
+   * (Microsoft® Windows の場合 ) `sdk.bat start`
+   * (Linux®またはApple macOSの場合 ) `AEM_HOME=[local AEM Author installation] ./sdk.sh start`
 
    >[!NOTE]
    >
@@ -219,7 +224,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
    ![start-sdk-command](assets/start-sdk.png)
 
-これで、ローカル開発環境を使用して、レコードのドキュメントをレンダリングできるようになりました。テストするには、XDP ファイルをお使いの環境にアップロードしてレンダリングします。例えば、http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/cheque-request.xdp は、XDP ファイルを PDF ドキュメントに変換します。
+これで、ローカル開発環境を使用して、レコードのドキュメントをレンダリングできるようになりました。テストするには、XDP ファイルをお使いの環境にアップロードしてレンダリングします。例： <http://localhost:4502/libs/xfaforms/profiles/default.print.pdf?template=crx:///content/dam/formsanddocuments/cheque-request.xdp> XDP ファイルを変換ドキュメントにPDFします。
 
 ## Experience Manager アーキタイプに基づいた Forms の開発プロジェクトの設定 {#forms-cloud-service-local-development-environment}
 
@@ -227,7 +232,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 | テーマ | テンプレート | フォームデータモデル |
 ---------|----------|---------
-| Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
+| Canvas 3.0 | 基本 | Microsoft® Dynamics 365 |
 | Tranquil | 空白 | Salesforce |
 | Urbane |  |  |
 | Ultramarine |  |  |
@@ -235,7 +240,7 @@ AEM Forms as a Cloud Services は、レコードのドキュメントの開発�
 
 >[!NOTE]
 >
-> Microsoft Dynamics 365 および Salesforce フォームデータモデルを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 30 以降に基づくプロジェクトをセットアップします。
+> AEM Forms as a Cloud Serviceを使用してMicrosoft® Dynamics 365 および Salesforce フォームデータモデルを取得し、使用するには、AEM Archetype バージョン 30 以降をセットアップします。
 > Tranquil、Urbane、Ultramarine テーマを AEM Forms as a Cloud Service で取得および使用するには、AEM アーキタイプバージョン 32 以降に基づくプロジェクトをセットアップします。
 
 プロジェクトを設定するには、以下を実行します。
@@ -249,13 +254,17 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 1. **[!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成する：**[AEM アーキタイプ 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) 以降に基づいて [!DNL Experience Manager Forms] as a [Cloud Service] プロジェクトを作成します。このアーキタイプは、開発者が [!DNL AEM Forms] as a Cloud Service の開発を容易に開始するのに役立ちます。また、すぐに使い始めるのに役立つテーマとテンプレートのサンプルも含まれています。
 
-   コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。[!DNL Forms] に特有の設定、テーマおよびテンプレートを含めるには、`includeFormsenrollment=y` を設定します。
+   コマンドプロンプトを開き、以下のコマンドを実行して [!DNL Experience Manager Forms] as a Cloud Service プロジェクトを作成します。
 
    ```shell
-   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y"
+   mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype-DarchetypeVersion=32 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeFormsenrollment="y" -DincludeFormscommunications="y" -DincludeExamples="y"
    ```
 
-   また、上記のコマンドで `appTitle`、`appId`、`groupId` を変更し、環境に反映します。
+   を `appTitle`, `appId`、および `groupId` 上記のコマンドを使用して、環境を反映します。
+
+   * 以下を使用： `includeFormsenrollment=y` アダプティブFormsの作成に必要なForms固有の設定、テーマ、テンプレート、コアコンポーネント、依存関係を含めるオプションが追加されました。 Forms Portal を使用している場合、 `includeExamples=y` オプション。 これにより、Forms Portal のコアコンポーネントがプロジェクトに追加されます。
+
+   * 以下を使用： `includeFormscommunications=y` オプションには、 Formsコアコンポーネントと、顧客コミュニケーション機能を組み込むために必要な依存関係が含まれます。
 
 1. プロジェクトをローカル開発環境にデプロイします。以下のコマンドを使用して、ローカル開発環境にデプロイできます
 
@@ -264,8 +273,6 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
    コマンドの完全なリストについては、 [構築とインストール](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ja#building-and-installing) を参照してください
 
 1. [ [!DNL AEM Forms]  as a Cloud Service 環境にコードをデプロイします](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=ja#customer-releases)。
-
-
 
 ## ローカル Dispatcher ツールの設定 {#setup-local-dispatcher-tools}
 
