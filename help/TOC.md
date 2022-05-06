@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
 workflow-type: tm+mt
-source-wordcount: '3439'
+source-wordcount: '3447'
 ht-degree: 94%
 
 ---
@@ -462,6 +462,7 @@ ht-degree: 94%
    + [DocuSign との統合](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Sites との統合](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Adobe Analytics との統合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+   + [アダプティブフォームとMicrosoft Power Automate の統合](/help/forms/forms-microsoft-power-automate-integration.md)
    + ワークフローの作成と使用 {#create-form-centric-workflows}
       + [ワークフローでの Forms 中心のステップの使用 + ステップリファレンス](/help/forms/aem-forms-workflow-step-reference.md)
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
@@ -477,7 +478,7 @@ ht-degree: 94%
    + [既知の問題](/help/forms/known-issues.md)
    + トラブルシューティング {#troubleshooting-aem-forms-cloud-service}
       + [インストールと設定](/help/forms/troubleshooting-installation-and-configuration.md)
-      + [Dispatcher と CDN のキャッシュ ](/help/forms/troubleshooting-caching-performance.md)
+      + [Dispatcher と CDN のキャッシュ](/help/forms/troubleshooting-caching-performance.md)
 + スクリーン {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Screens as a Cloud Service の概要 {#overview}
