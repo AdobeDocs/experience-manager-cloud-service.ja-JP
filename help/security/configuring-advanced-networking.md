@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
+source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2964'
 ht-degree: 98%
 
 ---
@@ -70,11 +70,11 @@ API が数秒以内に応答して「更新中」のステータスを返し、�
 
 ### フレキシブルポートエグレスの削除または無効化 {#deleting-disabling-flexible-port-egress-provision}
 
-宛先 **削除** プログラムのネットワークインフラストラクチャ、を呼び出す *DELETE/program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* 詳しくは、 Cloud Manager API のドキュメントを参照してください。
+宛先 **削除** プログラムのネットワークインフラストラクチャ、を呼び出す `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
 
 特定の環境に対してフレキシブルポートエグレスを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
-詳しくは、 [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
+API について詳しくは、 [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### トラフィックルーティング {#flexible-port-egress-traffic-routing}
 
