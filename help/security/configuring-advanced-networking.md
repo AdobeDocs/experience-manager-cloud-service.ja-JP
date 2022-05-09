@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
+source-git-commit: 906c8aed146724c1bb18e8031e5dd97f4cf68d25
 workflow-type: tm+mt
 source-wordcount: '2976'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ API が数秒以内に応答して「更新中」のステータスを返し、�
 
 ### フレキシブルポートエグレスの削除または無効化 {#deleting-disabling-flexible-port-egress-provision}
 
-ネットワークインフラストラクチャを&#x200B;**削除**&#x200B;するには、作成済みの内容と削除の理由を明記して、カスタマーサポートチケットを送信します。
+宛先 **削除** プログラムのネットワークインフラストラクチャ、を呼び出す *DELETE/program/{program ID}/ networkinfrastructure/{networkinfrastructureID}* 詳しくは、 Cloud Manager API のドキュメントを参照してください。
 
 特定の環境に対してフレキシブルポートエグレスを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
