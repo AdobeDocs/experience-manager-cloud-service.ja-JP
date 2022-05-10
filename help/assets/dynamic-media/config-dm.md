@@ -3,10 +3,10 @@ title: Dynamic Media Cloud Service の設定
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media を設定する方法を説明します。
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
-ht-degree: 97%
+source-wordcount: '3449'
+ht-degree: 94%
 
 ---
 
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Experience Manager as a Cloud Service で、Experience Manager as a Cloud Service ロゴを選択し、グローバルナビゲーションコンソールにアクセスします。
 1. コンソールの左側にあるツールアイコンを選択したあと、**[!UICONTROL Cloud Services／Dynamic Media 設定]**&#x200B;に移動します。
 1. Dynamic Media 設定ブラウザーページの左側のパネルで、「**[!UICONTROL グローバル]**」を選択します（「**[!UICONTROL グローバル]**」の左側にあるフォルダーアイコンを選択しないでください）。次に、「**[!UICONTROL 作成]**」を選択します。
-1. **[!UICONTROL Dynamic Media 設定を作成]**&#x200B;ページで、タイトル、Dynamic Media アカウントの電子メールアドレス、パスワードを入力し、地域を選択します。この情報は、プロビジョニングの電子メールでアドビから提供されます。この電子メールを受け取っていない場合は、アドビカスタマーサポートにお問い合せください。
+1. の **[!UICONTROL Dynamic Media設定を作成]** ページで、Dynamic Mediaアカウントのタイトル、Dynamic Mediaアカウントの電子メールアドレスおよび会社管理者のパスワードを入力し、地域を選択します。 この情報は、プロビジョニングの電子メールでアドビから提供されます。この電子メールを受け取っていない場合は、アドビカスタマーサポートにお問い合せください。
 1. 「**[!UICONTROL Dynamic Media に接続]**」をクリックします。
 1. **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスの「**[!UICONTROL 新しいパスワード]**」フィールドに、8～25 文字の新しいパスワードを入力します。パスワードには、次のうち少なくとも 1 つを含める必要があります。
 
@@ -216,13 +216,13 @@ Dynamic Media Classic のユーザーインターフェイスを使用し、Dyna
 
 Dynamic Media の公開設定ページでは、Adobe Dynamic Media サーバーから web サイトやアプリケーションにアセットを配信する方法を決定するデフォルト設定を指定します。
 
-[Image Server 用の Dynamic Media 公開設定](/help/assets/dynamic-media/dm-publish-settings.md) を参照してください。
+詳しくは、[Image Server 用の Dynamic Media の公開設定](/help/assets/dynamic-media/dm-publish-settings.md)を参照してください。
 
 #### Dynamic Media の一般設定 {#configuring-application-general-settings}
 
-Dynamic Media **[!UICONTROL 公開先サーバー名]** の URL と **[!UICONTROL 公開元サーバー名]** の URL を設定します。特定の使用例に基づいて、 **[!UICONTROL アプリケーションへのアップロード]** 設定と **[!UICONTROL デフォルトのアップロードオプション]** をすべて指定することもできます。
+Dynamic Media の&#x200B;**[!UICONTROL 公開サーバー名]**&#x200B;の URL と&#x200B;**[!UICONTROL オリジンサーバー名]**&#x200B;の URL を設定します。また、**[!UICONTROL アプリケーションにアップロード]**&#x200B;設定と&#x200B;**[!UICONTROL デフォルトのアップロードオプション]**&#x200B;はすべて、特定のユースケースに基づいて指定できます。
 
-[Dynamic Media の一般設定](/help/assets/dynamic-media/dm-general-settings.md) を参照してください。
+詳しくは、[Dynamic Media の一般設定](/help/assets/dynamic-media/dm-general-settings.md)を参照してください。
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
@@ -235,7 +235,7 @@ Dynamic Media カラーマネジメントを使用すると、アセットをカ
 1. [Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、プロビジョニング時に提供された資格情報を使用してアカウントにログインします。
 1. **[!UICONTROL 設定／アプリケーション設定]**&#x200B;に移動します。
 1. 「**[!UICONTROL 公開設定]**」領域を展開して、「**[!UICONTROL Image Server]**」を選択します。パブリッシュインスタンスのデフォルトを設定する際に、「**[!UICONTROL 公開コンテキスト]**」を「**[!UICONTROL 画像サービング]**」に設定します。
-1. 例えば「**[!UICONTROL カラーマネジメント属性]**」領域のプロパティなど、変更が必要なプロパティにスクロールします。
+1. 例えば、 **[!UICONTROL カラーマネジメント属性]** 領域
 次のカラー補正プロパティを設定できます。
 
    | プロパティ | 説明 |
@@ -282,7 +282,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
    * 「**[!UICONTROL 有効]**」フィールドをダブルタップします。デフォルトでは、すべてのアセットの MIME タイプが有効になって（**[!UICONTROL true]** に設定されて）います。これは、処理に関してアセットが Dynamic Media に同期されることを意味します。このアセットの MIME タイプを処理から除外する場合、この設定を **[!UICONTROL false]** に変更します。
 
-   * **[!UICONTROL jobParam]** をダブルタップして、関連するテキストフィールドを開きます。特定の MIME タイプに使用可能な、許容される処理パラメーター値のリストについては、[サポートされる MIME タイプ](/help/assets/file-format-support.md)を参照してください。
+   * **[!UICONTROL jobParam]** をダブルタップして、関連するテキストフィールドを開きます。詳しくは、 [サポートされる MIME タイプ](/help/assets/file-format-support.md) を参照してください。
 
 1. 次のいずれかの操作を行います。
    * 手順 3～4 を繰り返して、その他の MIME タイプを編集します。
@@ -292,7 +292,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 
 #### サポートされていない形式の MIME タイプの追加 {#adding-mime-types-for-unsupported-formats}
 
-Experience Manager Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Lite に追加した新しいノードが Experience Manager によって削除されないようにするには、MIME タイプを `image_` の前に移動します。また、有効な値が **[!UICONTROL false]** に設定されていることを確認します。
+Experience Manager Assets でサポートされていない形式のカスタム MIME タイプを追加できます。CRXDE Liteに追加した新しいノードがExperience Managerによって削除されないようにするには、MIME タイプをの前に移動します。 `image_`. また、有効な値が **[!UICONTROL false]** に設定されていることを確認します。
 
 **サポートされていない形式のカスタム MIME タイプを追加するには:**
 
