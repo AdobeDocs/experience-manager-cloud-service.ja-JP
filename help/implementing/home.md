@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service の実装
 description: Adobe Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: AEM as a Cloud Service のデプロイメントをカスタマイズする方法を、開発とデプロイメントに関するトピックを交えて説明します。
+landing-page-description: 'Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。AEM クラウドサービスのドキュメントを参照し、アプリケーションの開発と実装を行います。 '
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '413'
+ht-degree: 94%
 
 ---
 
 # AEM as a Cloud Service のアプリケーションの実装 {#aem-implementation-guide}
 
-ここでは、Adobe Experience Manager as a Cloud Service の実装に関するセルフヘルプリソースの一覧を示します。Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
+実装に関するセルフヘルプリソースを見つける (Experience Manageras a Cloud Service)。 Adobe Experience Manager as a Cloud Service のデプロイメントをカスタマイズする方法を説明します。
 
 ## 実装に関する主要な記事 {#key-articles}
 

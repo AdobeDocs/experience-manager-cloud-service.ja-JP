@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の概要
-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
+title: はじめに —Experience Manageras a Cloud Service
+description: Experience Manageras a Cloud Serviceの仕組みと、ソフトウェアがユーザーに与える機能を説明します。
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service の概要  {#aem-overview-guide}
 
-ここでは、Adobe Experience Manager as a Cloud Service の概要を紹介するセルフヘルプリソースの一覧を示します。
+ここから、Experience Managerのas a Cloud Service的な動作の仕組みと、ソフトウェアがユーザーに与える機能を学びます。
 
 ## 概要に関する主要な記事 {#key-articles}
 

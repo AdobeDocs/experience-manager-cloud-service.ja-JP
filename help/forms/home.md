@@ -1,18 +1,18 @@
 ---
 title: ' [!DNL AEM Forms] as a Cloud Service の概要'
-description: この Platform-as-a-S(PaaS) を使用して、エンタープライズクラスのデジタルフォームとビジネスプロセスの作成、管理、公開、およびフォームと現在のデータソースとの接続を行います。
+description: AEM Formsを理解し、ビジネスに適したドキュメントを作成してコンテンツを形成する方法を学びます。 Platform-as-a-Service(PaaS) の概要と、エンタープライズクラスのデジタルフォームとビジネスプロセスを管理する方法、およびFormsを現在のデータソースに接続する方法について説明します。
 landing-page-description: AEM as a Cloud Service でのフォームの使用方法を理解します。
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: fe2f0743d8efaaf9b3fcfc9e20264cca627db6c8
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 91%
+source-wordcount: '296'
+ht-degree: 87%
 
 ---
 
 # はじめに {#introduction}
 
-Adobe Experience Manager Forms as a Cloud Service は、複雑なデジタルフォームを作成、管理、公開、更新しながら、送信データをバックエンドプロセス、ビジネスルール、外部データストアに保存する、クラウドネイティブのサービスとしてのプラットフォーム（PaaS）ソリューションを提供します。このサービスは常に最新で、常に利用可能で、常に学習可能です。
+Adobe [!DNL Experience Manager Forms as a Cloud Service]  は、複雑なデジタルフォームを作成、管理、公開、更新しながら、送信データをバックエンドプロセス、ビジネスルール、外部データストアに保存する、クラウドネイティブのサービスとしてのプラットフォーム（PaaS）ソリューションを提供します。このサービスは常に最新で、常に利用可能で、常に学習可能です。
 
 このサービスを使用して、インタラクティブで魅力的なデジタルフォームを作成し、展開できます。例えば、顧客登録ジャーニーのデジタル化を検討している組織について考えてみます。既存の顧客データを持つ複数のデータソースがあります。フォームに事前入力したり、フォームの電子サインを追加したり、入力済みのフォームを PDF ファイルとしてアーカイブしたりすることを検討しています。さらに、組織には複数の印刷フォーム（PDF フォーム）があり、すべての印刷フォームをデジタルフォームに変換することも検討しています。
 

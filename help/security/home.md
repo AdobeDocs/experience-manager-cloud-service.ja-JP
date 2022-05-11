@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service のセキュリティ
-description: Adobe Experience Manager as a Cloud Service のセキュリティに関するセルフヘルプリソースおよびドキュメントリンク
+description: 'Adobe Experience Manager as a Cloud Serviceのセキュリティ機能の詳細 '
 landing-page-description: Adobe Experience Manager as a Cloud Service のセキュリティに関する重要なトピックについて説明します。
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 100%
+source-wordcount: '382'
+ht-degree: 92%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service のセキュリティ  {#aem-security-guide}
 
-ここでは、Adobe Experience Manager as a Cloud Service のセキュリティに関するセルフヘルプリソースの一覧を示します。
+Adobe Experience Manager as a Cloud Serviceのセキュリティ機能の詳細
 
 ## セキュリティに関する主要な記事 {#key-articles}
 

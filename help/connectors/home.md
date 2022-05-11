@@ -1,18 +1,18 @@
 ---
 title: Adobe Experience Manager as a Cloud Service コネクタ
-description: Adobe Experience Manager as a Cloud Service コネクタに関するセルフヘルプリソースおよびドキュメントリンク
-landing-page-description: AEM as a Cloud Service にコネクタを統合する方法を説明します。
+description: コネクタ、コネクタで実行できる操作、およびExperience Managerでこれらの役立つツールを実装する方法について説明します。
+landing-page-description: コネクタ、コネクタで実行できる操作、およびExperience Managerでこれらの役立つツールを実装する方法について説明します。
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 85%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service のコネクタの実装 {#aem-connectors-guide}
 
-ここでは、Adobe Experience Manager as a Cloud Service のコネクタに関するセルフヘルプリソースの一覧を示します。
+Experience Manageras a Cloud Service用のコネクタ、その機能、およびExperience Managerでこれらの役立つツールを実装する方法について説明します。
 
 ## Adobe Experience Manager as a Cloud Service コネクタに関する主要な記事 {#key-articles}
 

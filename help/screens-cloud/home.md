@@ -1,18 +1,18 @@
 ---
 title: AEM Screens as a Cloud Service
-description: Adobe Experience Manager Screens as a Cloud Service に関するセルフヘルプリソースおよびドキュメントリンク
+description: AEM Screensと、このデジタルサイネージソリューションの仕組みについて詳しく説明します。
 landing-page-description: AEM Screens as a Cloud Service について説明します。
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 100%
+source-wordcount: '418'
+ht-degree: 91%
 
 ---
 
 # AEM Screensas a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-このページでは、AEM Screens as a Cloud Service に関するセルフヘルプリソースの一覧を示します。
+このページでは、AEM Screensと、このデジタルサイネージソリューションの仕組みについて詳しく説明します。 セルフヘルプのリソースを入手し、新機能を確認します。
 
 >[!NOTE]
 >AEM 6.5 を使用した AEM Screens については、『[AEM Screens ユーザーガイド](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=ja)』を参照してください。
