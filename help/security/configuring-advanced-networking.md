@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
+source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
 workflow-type: tm+mt
-source-wordcount: '2977'
-ht-degree: 98%
+source-wordcount: '2981'
+ht-degree: 97%
 
 ---
 
@@ -518,7 +518,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
   <tr>
     <td><code>p{PROGRAM_ID}.inner.adobeaemcloud.net</code></td>
     <td>VPN の AEM 側から顧客側に送信されるトラフィックの IP。これを顧客の設定で許可リストに登録して、AEM からのみ接続できるようにすることが可能です。</td>
-    <td>AEM への VPN アクセスのみを許可する場合は、<code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> と <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> の両方またはどちらか一方をこれにマッピングするように、CNAME DNS エントリを設定する必要があります。</td>
+    <td>お客様がAEMへの VPN アクセスを許可したい場合は、CNAME DNS エントリを設定して、カスタムドメインをマッピングする必要があります。 <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> および/または <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> をこの値に設定します。</td>
   </tr>
 </tbody>
 </table>
