@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service への移行ジャーニーの概要
 description: AEM as a Cloud Service への移行の基本事項を把握して、移行ジャーニーを開始します。
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '587'
+ht-degree: 93%
 
 ---
 
@@ -35,9 +35,13 @@ Cloud Service への移行ジャーニーには、次の段階が含まれます
 * すべてが整ったら、[運用開始段階](/help/journey-migration/go-live.md)で移行を実行できます。
 * 最後に、[運用開始後段階](/help/journey-migration/post-go-live.md)で、問題を監視し、パフォーマンスを向上させます。
 
-次の図は AEM as a Cloud Service への推奨移行プロセスを示しています。
+次の図に、AEM as a Cloud Serviceへの推奨されるトランジションジャーニーの概要を示します。
 
 ![画像](/help/journey-migration/assets/move-aemcloud-process.png)
+
+移行ジャーニーのより詳細で詳細なビューについては、以下の図も参照してください。
+
+![画像](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 
