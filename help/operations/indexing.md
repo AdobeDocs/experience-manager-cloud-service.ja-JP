@@ -2,10 +2,10 @@
 title: コンテンツの検索とインデックス作成
 description: コンテンツの検索とインデックス作成
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
+source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 84%
+source-wordcount: '2535'
+ht-degree: 77%
 
 ---
 
@@ -64,13 +64,13 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 >[!NOTE]
 >
->標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`、標準の最新のインデックス定義を *Cloud Service環境* CRX DE Package Manager (`/crx/packmgr/`) ) をクリックします。 次に、設定の名前を（例： ）に変更します。 `damAssetLucene-6-custom-1`をクリックし、カスタマイズを上に追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、 `tika` 下のノード `/oak:index/damAssetLucene-6/tika` は、クラウドサービスのカスタマイズされたインデックスに必要です。 Cloud SDK には存在しません。
+>標準提供のインデックスをカスタマイズする場合（例： ） `damAssetLucene-6`、標準の最新のインデックス定義を *Cloud Service環境* CRX DE パッケージマネージャー (`/crx/packmgr/`) ) をクリックします。 次に、設定の名前を（例： ）に変更します。 `damAssetLucene-6-custom-1`をクリックし、カスタマイズを上に追加します。 これにより、必要な設定が誤って削除されるのを防ぐことができます。 例えば、 `tika` 下のノード `/oak:index/damAssetLucene-6/tika` は、クラウドサービスのカスタマイズされたインデックスに必要です。 Cloud SDK には存在しません。
 
 次の命名パターンに従って、実際のインデックス定義を含む新しいインデックス定義パッケージを準備する必要があります。
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。現在、サブルートフォルダーはサポートされていません。
+それらは `ui.apps/src/main/content/jcr_root` の下に置く必要があります。カスタマイズされたカスタムインデックス定義は、すべて以下に保存する必要があります。 `/oak:index`.
 
 パッケージのフィルターは、（標準提供のインデックス）既存のインデックスが保持されるように設定する必要があります。 ファイル内 `ui.apps/src/main/content/META-INF/vault/filter.xml`に設定する場合、各カスタム（またはカスタマイズ）インデックスを次のようにリストする必要があります。 `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. インデックスのバージョンを後で変更する場合は、フィルターを調整する必要があります。
 
@@ -84,15 +84,69 @@ AEM 6.5 以前のバージョンと比較した主な変更点のリストを以
 
 ## 索引定義のデプロイ {#deploying-index-definitions}
 
->[!NOTE]
->
->Jackrabbit Filevault Maven パッケージプラグインバージョン **1.1.0** には既知の問題があり、`<packageType>application</packageType>` のモジュール `oak:index` に追加できません。そのプラグインのより新しいバージョンに更新してください。
-
-インデックス定義は、カスタムおよびバージョン付きとしてマークされるようになりました。
+インデックス定義は、カスタムおよびバージョン付きとしてマークされます。
 
 * インデックス定義自体（例 `/oak:index/ntBaseLucene-custom-1`）
 
-したがって、インデックスをデプロイするには、インデックス定義（`/oak:index/definitionname`）を Git および Cloud Manager のデプロイメントプロセスを使用して `ui.apps` 経由で配信する必要があります。
+カスタムインデックスまたはカスタマイズされたインデックスを展開するには、インデックス定義 (`/oak:index/definitionname`) は、 `ui.apps` Git と Cloud Manager のデプロイメントプロセスを使用する。 FileVault フィルタでは、次のようになります。 `ui.apps/src/main/content/META-INF/vault/filter.xml`、例えば、カスタムおよびカスタマイズされた各インデックスを個別にリストします。 `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. カスタムまたはカスタマイズされたインデックス定義自体がファイルに保存されます `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`、次のようにします。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="[async,nrt]"
+        compatVersion="{Long}2"
+        ...
+        </indexRules>
+        <tika jcr:primaryType="nt:unstructured">
+            <config.xml jcr:primaryType="nt:file"/>
+        </tika>
+</jcr:root>
+```
+
+上記の例には、Apache Tika の設定が含まれています。 Tika 設定ファイルは、次の場所に保存されます。 `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+
+### プロジェクト設定
+
+Jackrabbit Filevault Maven Package Plugin を使用するバージョンに応じて、プロジェクトでさらに設定が必要になります。 Jackrabbit Filevault Maven パッケージプラグインバージョンの使用時 **1.1.6** またはそれ以降の場合は、ファイル `pom.xml` 次のセクションを `filevault-package-maven-plugin`、 `configuration/validatorsSettings` ( `jackrabbit-nodetypes`):
+
+```xml
+<jackrabbit-packagetype>
+    <options>
+        <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+    </options>
+</jackrabbit-packagetype>
+```
+
+また、この場合、 `vault-validation` バージョンは、新しいバージョンにアップグレードする必要があります：
+
+```xml
+<dependency>
+    <groupId>org.apache.jackrabbit.vault</groupId>
+    <artifactId>vault-validation</artifactId>
+    <version>3.5.6</version>
+</dependency>
+```
+
+次に、 `ui.apps.structure/pom.xml` および `ui.apps/pom.xml`、 `filevault-package-maven-plugin` 必要な `allowIndexDefinitions` 同様に `noIntermediateSaves` 有効。 オプション `noIntermediateSaves` は、インデックス設定が自動的に追加されるようにします。
+
+```xml
+<groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <properties>
+            <cloudManagerTarget>none</cloudManagerTarget>
+            <noIntermediateSaves>true</noIntermediateSaves>
+        </properties>
+    ...
+```
+
+In `ui.apps.structure/pom.xml`、 `filters` このプラグインのセクションには、次のようにフィルタールートを含める必要があります。
+
+```xml
+<filter><root>/oak:index</root></filter>
+```
 
 新しいインデックス定義を追加したら、Cloud Manager を使用して新しいアプリケーションをデプロイする必要があります。デプロイメントを開始すると、2 つのジョブが開始され、それぞれ MongoDB と Azure Segment Store にオーサー用とパブリッシュ用のインデックス定義を追加（また必要に応じて結合）します。Blue-Green スイッチが起こる前に、基になるリポジトリーのインデックスが新しいインデックス定義で再作成されています。
 
