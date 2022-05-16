@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7ee2e43ab8a5726b2ecf7f157f67b5f3cc73fcff
+source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -85,24 +85,6 @@ AEM as a Cloud Service の SDK ビルドアナライザー Maven プラグイン
 
 Cloud Manager の毎月のリリースの完全なリストを確認できます [ここ](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## ベストプラクティスアナライザー {#bpa-release}
+## 移行ツール {#migration-tools}
 
-### リリース日 {#release-date-bpa}
-
-ベストプラクティスアナライザー v2.1.28 のリリース日は 2022 年 4 月 22 日です。
-
-### 新機能 {#what-is-new-bpa}
-
-* サポートされていない Asset Manager API の使用状況を検出し、レポートする機能。 AEM as a Cloud Serviceではサポートされなくなった API は 4 つあります。 お客様は、これらの API を使用しなくなり、新しいアセットアップロード方法を使用する必要があります。
-
-* コンテンツフラグメントテンプレートの使用を検出する機能。 AEM as a Cloud Serviceでの新しいコンテンツフラグメントの作成で、コンテンツフラグメントテンプレートがサポートされなくなりました。 コンテンツフラグメントテンプレートを置き換えるには、コンテンツフラグメントモデルを作成する必要があります。
-
-* リポジトリ内のアセットの metadate ノードの下に 100 を超える子孫を持つアセットを検出できます。 このようなアセットで構成されるフォルダーを読み込む際に、パフォーマンスを向上させるために必要でないメタデータノードを削除することをお勧めします。
-
-* 使用されるデータストアのタイプを検出し、レポートする機能。
-
-* AEM Form Portal のパターンが更新されました。
-
-### バグの修正 {#bug-fixes-bpa}
-
-* BPA は、お客様のコンポーネントに対してのみレポートするのではなく、コアコンポーネントの結果をレポートしていました。 この問題が修正されました。
+移行ツールのリリースの完全なリストはこちらで確認できます [ここ](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

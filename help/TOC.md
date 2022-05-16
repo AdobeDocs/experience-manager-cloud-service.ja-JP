@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
+source-git-commit: ee92bfcf4ed00d8b508f1b6f7d21f73fb4c9029e
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
    + [ドキュメントジャーニー](/help/journey-documentation/documentation-journeys.md)
 + リリースノート {#release-notes}
    + [リリース情報](/help/release-notes/home.md)
-   + リリースノート {#release-notes}
+   + AEMaaCS の一般リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 年 {#2022}
          + [リリースノート（2022.3.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -59,6 +59,47 @@ ht-degree: 94%
          + [リリースノート（2020.4.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [リリースノート（2020.3.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [リリースノート（2020.2.0）](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + Cloud Manager のリリースノート {#cloud-manager}
+      + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2022 年 {#2022}
+         + [リリースノート（2022.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+         + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+      + 2021 年 {#2021}
+         + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
+         + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+         + [リリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
+         + [リリースノート（2021.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
+         + [リリースノート（2021.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
+         + [リリースノート（2021.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [リリースノート（2021.5.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [リリースノート（2021.4.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [リリースノート（2021.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [リリースノート（2021.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [リリースノート（2021.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020 年 {#2020}
+         + [リリースノート（2020.12.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [リリースノート（2020.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [リリースノート（2020.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [リリースノート（2020.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [リリースノート（2020.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [リリースノート（2020.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [リリースノート（2020.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [リリースノート（2020.5.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [リリースノート（2020.4.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [リリースノート（2020.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [リリースノート（2020.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + 移行ツールのリリースノート {#migration-tools}
+      + [最新のリリースノート（2022.4.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2022 年 {#2022}
+         + [リリースノート（2022.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+         + [リリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+         + [リリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + 2021 年 {#2021}
+         + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+   + Workfront向けリリースノート (Experience Manager拡張コネクタ ){#workfront}
+      + [Experience Manager拡張コネクタに関するWorkfrontの最新のリリースノート](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [新機能](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service の主要な変更点](/help/release-notes/aem-cloud-changes.md)
    + [既知の問題](/help/release-notes/known-issues.md)
@@ -105,15 +146,6 @@ ht-degree: 94%
    + [運用開始](/help/journey-migration/go-live.md)
    + [運用開始後](/help/journey-migration/post-go-live.md)
    + [Experience Manager as a Cloud Service への移行ガイド（パートナー向け）](/help/journey-migration/getting-started-partners.md)
-   + 移行ツールのリリースノート {#release-notes-migration-tools}
-      + [最新のリリースノート（2022.4.0）](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [リリースノート（2022.3.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
-      + [リリースノート（2022.2.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-      + [リリースノート（2022.1.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021 年 {#2021}
-         + [リリースノート（2021.12.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-         + [リリースノート（2021.11.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [リリースノート（2021.10.0）](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Cloud Acceleration Manager{#introduction-cam} の概要
          + [概要](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
@@ -393,7 +425,6 @@ ht-degree: 94%
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Adobe Workfrontとの統合 {#integrations}
-      + [Workfront向けリリースノート (Experience Manager拡張コネクタ )](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
       + [ [!DNL Workfront] への  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
       + [既存のインストールの外部依存関係を削除](/help/assets/remove-external-dependencies.md)
@@ -619,37 +650,6 @@ ht-degree: 94%
 + 実装 {#implementing}
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
-      + Cloud Manager のリリースノート {#release-notes-cloud-manager}
-         + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022 年 {#2022}
-            + [リリースノート（2022.4.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-            + [リリースノート（2022.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-            + [リリースノート（2022.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-            + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021 年 {#2021}
-            + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-            + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-            + [リリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-            + [リリースノート（2021.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-            + [リリースノート（2021.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-            + [リリースノート（2021.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-            + [リリースノート（2021.5.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-            + [リリースノート（2021.4.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-            + [リリースノート（2021.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-            + [リリースノート（2021.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-            + [リリースノート（2021.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020 年 {#2020}
-            + [リリースノート（2020.12.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-            + [リリースノート（2020.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-            + [リリースノート（2020.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-            + [リリースノート（2020.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-            + [リリースノート（2020.8.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-            + [リリースノート（2020.7.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-            + [リリースノート（2020.6.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-            + [リリースノート（2020.5.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-            + [リリースノート（2020.4.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-            + [リリースノート（2020.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-            + [リリースノート（2020.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
       + プログラム {#programs}
          + [プログラムとプログラムの種類](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)

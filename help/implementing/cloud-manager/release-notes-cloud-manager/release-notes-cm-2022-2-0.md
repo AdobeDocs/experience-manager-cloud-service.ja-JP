@@ -1,26 +1,26 @@
 ---
-title: AEM as a Cloud Service Release 2022.02.0 Cloud Manager のリリースノート
-description: AEM as a Cloud Serviceリリース2022.02.0の Cloud Manager のリリースノートです。
+title: AEM as a Cloud Service リリース 2022.02.0 の Cloud Manager のリリースノート
+description: AEM as a Cloud Service リリース 2022.02.0 の Cloud Manager のリリースノートです.
 feature: Release Information
 exl-id: da0643a0-78f8-4e9d-9cc9-a1a17067a08c
-source-git-commit: 8162d1d6ddeff867507f749f223c0111b6856122
+source-git-commit: 0c4a42595800f7f1d0869bf647c3ec99023b12c5
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager as a Cloud Service 2022.02.0 の Cloud Manager のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.02.0の Cloud Manager のリリースノートの概要を説明します。
+このページでは、AEM as a Cloud Service 2022.02.0 における Cloud Manager のリリースノートの概要を説明します。
 
 >[!NOTE]
 >
->参照： [このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) (Adobe Experience Manager as a Cloud Serviceの最新のリリースノート )
+>Adobe Experience Manager as a Cloud Service の最新のリリースノートについては、[このページ](/help/release-notes/release-notes-cloud/release-notes-current.md) を参照してください。
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年 2 月 10 日です。 次回のリリースは 2022年3月10日（PT）の予定です。
+AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年 2 月 10 日です。 次回のリリースは 2022 年 3 月 10 日に予定されています。
 
 ## 新機能 {#what-is-new}
 
@@ -33,7 +33,7 @@ AEM as a Cloud Service 2022.02.0の Cloud Manager のリリース日は 2022 年
 * の重大度 `BannedPath` [品質ルール](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules) がブロッカーから重大に変更されました。
 * パイプラインウィザードでは、AEM環境の更新が必要になった場合に、 [Web 層設定パイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) 関連付けられています。
 
-## バグ修正 {#bug-fixes}
+## バグの修正 {#bug-fixes}
 
 * 古い Git リポジトリのパスワードが、新しいパスワードの生成時に毎回無効化されるようになりました。
 * API で環境変数を更新しても、まれにパイプラインの実行に干渉しなくなりました。
