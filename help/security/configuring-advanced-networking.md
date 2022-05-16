@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service の高度なネットワーク機能の設定
 description: AEM as a Cloud Service の高度なネットワーク機能（VPN やフレキシブルエグレス IP アドレスまたは専用エグレス IP アドレスなど）を設定する方法を説明します
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 290f75af3da5fb10fadc578163568913be4878df
+source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
-source-wordcount: '2981'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 93%
 
 ---
 
@@ -68,13 +68,7 @@ API が数秒以内に応答して「更新中」のステータスを返し、�
 
 環境ごとのポート転送ルールを更新するには、`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントを再度呼び出します。その際に、設定パラメーターは一部ではなく、必ず全部を含めてください。
 
-### フレキシブルポートエグレスの削除または無効化 {#deleting-disabling-flexible-port-egress-provision}
-
-宛先 **削除** プログラムのネットワークインフラストラクチャ、を呼び出す `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
-
->[!NOTE]
->
-> インフラストラクチャを使用する環境がある場合、削除してもインフラストラクチャは削除されません。
+### フレキシブルポートエグレスの無効化 {#disabling-flexible-port-egress-provision}
 
 特定の環境に対してフレキシブルポートエグレスを&#x200B;**無効**&#x200B;にするには、`DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()` を呼び出します。
 
@@ -206,6 +200,12 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` エンドポイントのフレキシブルポートエグレスでサポートされているルーティングルールに加えて、専用エグレス IP アドレスでは `nonProxyHosts` パラメーターもサポートしています。これにより、専用 IP ではなく共有 IP アドレス範囲を経由してルーティングされる一連のホストを宣言できます。これは、共有 IP から出ていくトラフィックがさらに最適化される可能性があるので、役に立つことがあります。`nonProxyHost` URL は `example.com` または `*.example.com` のパターンに従う場合があります（このパターンでは、ワイルドカードはドメインの先頭でのみ使用できます）。
 
 フレキシブルポートエグレス IP アドレスと専用エグレス IP アドレスのどちらかを選択する場合は、特定の IP アドレスが必要なければ、フレキシブルポートエグレスを選択してください。アドビ側でフレキシブルポートエグレストラフィックのパフォーマンスを最適化できるからです。
+
+### 出力専用 IP アドレスの無効化 {#disabling-dedicated-egress-IP-address}
+
+次に対して **無効** 特定の環境からの出力専用 IP アドレス、を呼び出す `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
+
+API について詳しくは、 [Cloud Manager API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration).
 
 ### トラフィックルーティング {#dedcated-egress-ip-traffic-routing}
 
@@ -395,9 +395,7 @@ API が数秒以内に応答して「`updating`」のステータスを返し、
 
 環境ごとのルーティングルールを更新するには、`PUT /program/{programId}/environment/{environmentId}/advancedNetworking` エンドポイントを再度呼び出します。その際に、設定パラメーターは一部ではなく、必ず全部を含めてください。環境のアップデートは適用されるまでに通常 5～10 分かかります。
 
-### VPN の削除または無効化 {#deleting-or-disabling-the-vpn}
-
-ネットワークインフラストラクチャを削除するには、作成済みの内容と削除の理由を明記して、カスタマーサポートチケットを送信します。
+### VPN の無効化 {#disabling-the-vpn}
 
 特定の環境で VPN を無効にするには、`DELETE /program/{programId}/environment/{environmentId}/advancedNetworking` を呼び出します。詳しくは、 [API ドキュメント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/disableEnvironmentAdvancedNetworkingConfiguration) を参照してください。
 
@@ -538,6 +536,25 @@ Allow from 192.168.0.1
 Header always set Cache-Control private
 ```
 
+## プログラムのネットワークインフラストラクチャの削除 {#deleting-network-infrastructure}
+
+宛先 **削除** プログラムのネットワークインフラストラクチャ、を呼び出す `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> 削除では、すべての環境の高度なネットワークが無効になっている場合にのみ、インフラストラクチャが削除されます。
+
 ## 高度なネットワーク機能タイプ間の移行 {#transitioning-between-advanced-networking-types}
 
-`kind` パラメーターは変更できないので、サポートが必要な場合は、作成済みの内容と変更の理由を明記して、カスタマーサポートに問い合わせてください。
+次の手順に従って、高度なネットワークタイプ間を移行できます。
+
+* すべての環境で詳細ネットワークを無効にする
+* 高度なネットワークインフラストラクチャを削除する
+* 正しい値で高度なネットワークインフラストラクチャを再作成する
+* 環境レベルの高度なネットワークを再度有効にする
+
+>[!WARNING]
+>
+> この手順を実行すると、削除と再作成の間に高度なネットワークサービスのダウンタイムが発生します
+
+ダウンタイムがビジネスに大きな影響を与える場合は、カスタマーサポートにお問い合わせください。既に作成された内容と変更の理由を説明します。
