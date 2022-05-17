@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '3585'
+source-wordcount: '3708'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ _第 2 部_
 
 >[!TIP]
 >
->最も良い結果を得るには、Adobeは、デスクトップコンピューターでDynamic Mediaジャーニーを読み取り、表示することをお勧めします。
+>最良の結果を得るには、Adobeは、デスクトップコンピューターでこのDynamic Mediaジャーニーを読み、表示することをお勧めします。
 
 ## Dynamic Mediaとは何ですか？また、どのように役立ちますか？ {#dm-journey-a}
 
@@ -249,44 +249,50 @@ Adobeでは、アセットを可逆形式でアップロードすることをお
 
 アセットを手動で公開する以外にも、Dynamic Mediaを設定して、アップロード時にユーザーの操作なしで即座にアセットを公開できます。
 
-アップロード後、Dynamic Mediaでアセットのレンディションをプレビューする方法は異なります。 レンディションのプレビューは、顧客に表示される内容を知るのに役立ちます。 一般的なプレビュー方法は、アセットを選択し、そのレンディションを表示する場合に、 *画像プリセット* 以下に示すように。
+アップロード後、Dynamic Mediaでアセットのレンディションをプレビューする方法は異なります。 レンディションのプレビューは、顧客に表示される内容を知るのに役立ちます。 一般的なプレビュー方法は、アセットを選択し、そのレンディションを表示する場合に、 _画像プリセット_ 以下に示すように。
 
 ![大きい画像プリセットに基づくアセットのレンディションのプレビュー](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _選択した「大」画像プリセットに基づく、アセットのレンディションのプレビュー。 「URL」ボタンがクリックされました。 結果の URL パスには「大」の画像プリセット名が含まれ、Web ページで使用できます。_
 
 上記の URL はライブです。 [所要時間](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
 
-アセットをプレビューする別の方法は、画像アセットを選択し、 *ビューア* プリセットを設定します。
+アセットをプレビューする別の方法は、画像アセットを選択し、 _ビューア_ プリセットを設定します。
 
 ![ズーム垂直光ビューアプリセットに基づくアセットのプレビュー](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _選択した「ZoomVertical_light」ビューアプリセットに基づくアセットのプレビュー マウスポインタ (`+`) は、ズームインするためにウォッチ上を移動しました。 「 URL 」ボタンと「埋め込み」ボタンに注意してください。_
 
 上記のレンディションはライブです。 [所要時間](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
 
-これらの URL をもう少し詳しく調べて、状況をより深く理解してみましょう。 移動 [Dynamic Mediaジャーニー:基本学第 2 部](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+## オプション — 詳細
 
-## 詳細情報
+このジャーニーの第 1 部では、様々なDynamic Mediaトピックの基本を説明しました。 今読んだ内容の詳細を知りたい場合は、以下の資料を使用して概念を詳細に検討してください。 そうでない場合は、ジャーニーの第 2 部を続行できます。 詳しくは、 [このDynamic Mediaジャーニーの次の機能](#whats-next).
 
-_Dynamic Media_
+_Dynamic Mediaヘルプトピック_
 
-* [Dynamic Media を操作する ](/help/assets/dynamic-media/dynamic-media.md)
-* [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
-* [アダプティブビデオセット](/help/assets/dynamic-media/video.md)
+* [Experience ManagerでのDynamic Mediaの操作](/help/assets/dynamic-media/dynamic-media.md)
+* [スマートイメージングについて](/help/assets/dynamic-media/imaging-faq.md)
+* [アダプティブビデオセットの作成方法](/help/assets/dynamic-media/video.md)
 * [画質最適化のベストプラクティス](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
-* [アセットのアップロード](/help/assets/add-assets.md#upload-assets)
-* [アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)
-* [3D アセットのプレビュー](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Dynamic Media アセットの配信](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
-* [アセットを公開します。](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+* [アセットのアップロード方法](/help/assets/add-assets.md#upload-assets)
+* [アセットのプレビュー方法](/help/assets/dynamic-media/previewing-assets.md)
+* [3D アセットのプレビュー方法](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Dynamic Media Assets の配信方法](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [アセットの公開方法](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Dynamic Media で選択的公開を使用する](/help/assets/dynamic-media/selective-publishing.md)
 
 _Dynamic Mediaチュートリアル_
 
 * [Experience Manager AssetsでのDynamic Mediaの使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Adobe Experience Manager Content Library](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) ( 検索 *Dynamic Media*)
+* [Adobe Experience Manager Content Library](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) ( 検索 _Dynamic Media_)
 
 _Dynamic Mediaビューア_
 
-* [ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) 各ビューアの
+
+## このDynamic Mediaジャーニーの次の機能 {#whats-next}
+
+第 2 部では、このジャーニーでDynamic Mediaの URL を少し詳しく調べ、アセットが配信された際の動作をより深く理解します。 また、アセットをレンダリングするための画像プリセットの作成に関する基本、画像セット、スピンセット、混在メディアセットの作成方法についても説明します。
+
+移動 [Dynamic Mediaジャーニー:基本学第 2 部](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

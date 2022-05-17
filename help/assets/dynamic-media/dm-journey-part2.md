@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
-ht-degree: 1%
+source-wordcount: '2877'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Dynamic Mediaジャーニーへようこそ：基礎知識第 II 部では、次
 
 >[!TIP]
 >
->最も良い結果を得るには、Adobeは、デスクトップコンピューターでDynamic Mediaジャーニーを読み取り、表示することをお勧めします。
+>最良の結果を得るには、Adobeは、デスクトップコンピューターでこのDynamic Mediaジャーニーを読み、表示することをお勧めします。
 
 ## Dynamic Media URL の詳細とDynamic Mediaがコンテンツを配信する方法 {#dm-journey-d}
 
@@ -43,7 +43,7 @@ URL の最初の部分（赤）は、サーバードメイン自体を参照し�
 
 アカウント名は紫色の部分です。 この場合、アカウントはと呼ばれます。 `jpearldemo`.
 
-アセット ID または名前 `AdobeStock_28563982` は緑色です。 アセットには *いいえ* ファイル拡張子： `.png` または `.jpg`. アセットがDynamic Mediaに取り込まれると、ファイル拡張子が削除され、別の種類のファイルが作成されます。ピラミッドTIFFファイル ピラミッドTIFFを使用すると、Dynamic Mediaは即座にレンディションを作成できます。
+アセット ID または名前 `AdobeStock_28563982` は緑色です。 アセットには _いいえ_ ファイル拡張子： `.png` または `.jpg`. アセットがDynamic Mediaに取り込まれると、ファイル拡張子が削除され、別の種類のファイルが作成されます。ピラミッドTIFFファイル ピラミッドTIFFを使用すると、Dynamic Mediaは即座にレンディションを作成できます。
 
 最後に、いくつかの画像処理パラメータがあります。 `?wid=1000&fmt=jpeg&qlt=85`（末尾が黄色で表示）
 
@@ -68,7 +68,7 @@ Dynamic Mediaには、Web ページ上の画像アセットを微調整するた
 
 時計はまだ左に少し歪んでいます。 の回転値を変更する `90` から `92`をクリックし、 **[!UICONTROL 入力]**. [所要時間](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-再び、 **[!UICONTROL 入力]**&#x200B;に設定すると、ほぼ瞬時に新しいレンディションの腕時計が生成されます。 取得したパフォーマンスの種類を確認できるので、Dynamic Mediaが 80 万件を超えるイメージリクエストを配信できる理由がわかります。 *秒*&#x200B;忙しい週末や大きな休日。
+再び、 **[!UICONTROL 入力]**&#x200B;に設定すると、ほぼ瞬時に新しいレンディションの腕時計が生成されます。 取得したパフォーマンスの種類を確認できるので、Dynamic Mediaが 80 万件を超えるイメージリクエストを配信できる理由がわかります。 _秒_&#x200B;忙しい週末や大きな休日。
 
 画像ごとに URL 内の画像処理パラメータを変更できますが、Web サイトを構成する画像が数万個ある場合などは特に効率的な方法ではありません。 画像プリセットを使用する方法がはるかに優れています。
 
@@ -204,17 +204,19 @@ _この `Running` フライアウトビューアを適用した画像セット_
 * `ZoomVertical_dark` 画像アセットに適用されたビューア [所要時間](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` 画像に適用されたビューア [所要時間](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## 詳細情報
+## オプション — 詳細
 
-_Dynamic Media_
+今読んだ内容の詳細を知りたい場合は、以下の資料を使用して概念を詳細に検討してください。 そうしないと、Dynamic Mediaジャーニーが完了します。
 
-* [画像プリセットの作成](/help/assets/dynamic-media/image-presets.md)
+_Dynamic Mediaヘルプトピック_
+
+* [画像プリセットの作成方法](/help/assets/dynamic-media/image-presets.md)
 * リスト [画像処理パラメータ](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=ja) 画像プリセットを作成する際に「画像の修飾子」フィールドで使用できる
-* [アセットのプレビュー](/help/assets/dynamic-media/previewing-assets.md)
-* [3D アセットのプレビュー](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [画像セット](/help/assets/dynamic-media/image-sets.md)
-* [スピンセット](/help/assets/dynamic-media/spin-sets.md)
-* [混在メディアセット](/help/assets/dynamic-media/mixed-media-sets.md)
+* [アセットのプレビュー方法](/help/assets/dynamic-media/previewing-assets.md)
+* [3D アセットのプレビュー方法](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [画像セットの作成方法](/help/assets/dynamic-media/image-sets.md)
+* [スピンセットの作成方法](/help/assets/dynamic-media/spin-sets.md)
+* [混在メディアセットの作成方法](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Dynamic Mediaチュートリアル_
 
@@ -223,6 +225,6 @@ _Dynamic Mediaチュートリアル_
 
 _Dynamic Mediaビューア_
 
-* [ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [ライブデモ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) 各ビューアの
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
