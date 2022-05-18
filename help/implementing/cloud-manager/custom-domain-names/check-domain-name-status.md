@@ -2,10 +2,10 @@
 title: ドメイン名ステータスの確認
 description: Cloud Manager でカスタムドメイン名が正常に検証されたかどうかを判断する方法について説明します。
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 17%
+source-wordcount: '637'
+ht-degree: 10%
 
 ---
 
@@ -49,6 +49,24 @@ Cloud Manager は、ドメインの所有権を TXT 値で検証し、次のい�
    * ドキュメントを参照してください [カスタムドメイン名の管理](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) を参照してください。
 
 「 」を選択すると、Cloud Manager は TXT 検証を自動的にトリガーします **保存** ～の検証段階で **カスタムドメインの追加** ウィザード。 それ以降の検証では、ステータスの横にある再検証アイコンをアクティブに選択する必要があります。
+
+## ドメイン名エラー {#domain-error}
+
+この節では、表示される可能性のあるエラーと、その解決方法について説明します。
+
+**ドメインがインストールされていません**  — レコードが適切に更新されたことを確認した後でも、TXT レコードのドメイン検証中にこのエラーが表示されます。
+
+**エラーの説明**  — ドメインを登録した初期アカウントに Fastly がロックし、許可を求めずに他のアカウントがサブドメインを登録することはできません。 さらに、Fastly では、apex ドメインと関連するサブドメインを 1 つの Fastly サービスおよびアカウントに割り当てることができます。 AEM Cloud Serviceドメインで使用されるのと同じ apex およびサブドメインをリンクする既存の Fastly アカウントがある場合、このエラーが表示されます。
+
+**エラーの解決**  — エラーは次のように修正されました。
+
+* Cloud Manager にドメインをインストールする前に、既存のアカウントから apex とサブドメインを削除します。 apex ドメインとすべてのサブドメインをAEMas a Cloud ServiceFastly アカウントにリンクするには、このオプションを使用します。 詳しくは、 [Fastly ドキュメントのドメインの使用](https://docs.fastly.com/en/guides/working-with-domains) を参照してください。
+
+* 異なる Fastly アカウントにリンクするAEMas a Cloud Serviceおよび非AEMas a Cloud Serviceサイトの複数のサブドメインが apex ドメインにある場合は、Cloud Manager にドメインをインストールしてみます。ドメインのインストールに失敗した場合は、Fastly でカスタマーサポートチケットを作成し、代理で Fastly をフォローできます。
+
+>[!NOTE]
+>
+>注意：ドメインが正常にインストールされなかった場合は、サイトの DNS をAEMas a Cloud ServiceIP にルーティングしないでください。
 
 ## カスタムドメイン名の既存の CDN 設定 {#pre-existing-cdn}
 
