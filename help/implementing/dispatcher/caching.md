@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 79%
+source-wordcount: '1960'
+ht-degree: 76%
 
 ---
 
@@ -181,6 +181,10 @@ Define DISABLE_DEFAULT_CACHING
          Header set Age 0
       </LocationMatch>
       ```
+
+### HEADリクエスト動作 {#request-behavior}
+
+AdobeCDN で、以下のHEADに関するリソースリクエストを受信したとき **not** キャッシュされた場合、リクエストは、Dispatcher インスタンスやAEMインスタンスによってGETリクエストとして変換され、受け取られます。 応答がキャッシュ可能な場合、以降のHEADリクエストは CDN から提供されます。 応答がキャッシュできない場合、後続のHEAD要求は、 `Cache-Control` TTL。
 
 ## Dispatcher キャッシュの無効化 {#disp}
 
