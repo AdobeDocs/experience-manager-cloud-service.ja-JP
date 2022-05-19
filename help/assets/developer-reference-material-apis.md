@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 75%
+source-wordcount: '1795'
+ht-degree: 73%
 
 ---
 
@@ -167,6 +167,8 @@ CDN エッジノードを使用すると、要求されたバイナリアップ�
 | `versionLabel` | 文字列 | オプション | 新しいバージョンが作成される場合、アセットの新しいバージョンに関連付けられるラベル。 |
 | `versionComment` | 文字列 | オプション | 新しいバージョンが作成される場合、そのバージョンに関連付けられたコメント。 |
 | `replace` | ブール値 | オプション | これが `True` で指定した名前のアセットが存在する場合、Adobe [!DNL Experience Manager] はそのアセットを削除し、再作成します。 |
+| `uploadDuration` | 番号 | オプション | ファイル全体がアップロードされるまでの合計時間（ミリ秒）。 指定した場合、アップロード時間は転送レート分析用にシステムのログファイルに記録されます。 |
+| `fileSize` | 番号 | オプション | ファイルのサイズ（バイト単位）。 指定した場合、転送レート分析用に、ファイルサイズがシステムのログファイルに含まれます。 |
 
 >[!NOTE]
 アセットが存在し、`createVersion` も `replace` も指定されていない場合、Adobe [!DNL Experience Manager] はアセットの現在のバージョンを新しいバイナリで更新します。
