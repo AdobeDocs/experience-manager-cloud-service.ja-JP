@@ -1,14 +1,14 @@
 ---
 title: Connected Assets を使用した  [!DNL Sites] での DAM アセットの共有
-description: ' [!DNL Adobe Experience Manager Assets] 別のデプロイメントで web ページを作成する場合は [!DNL Adobe Experience Manager Sites] 、リモートデプロイメントで使用できるアセットを使用します。'
+description: 別の  [!DNL Adobe Experience Manager Sites]  デプロイメントで web ページを作成する場合、リモートの  [!DNL Adobe Experience Manager Assets]  デプロイメントで使用できるアセットを使用します。
 contentOwner: AK
 mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 77%
 
 ---
@@ -47,7 +47,7 @@ Connected Assets の機能は、 [!DNL Experience Manager Sites] および [!DNL
 
 作成者は、コンテンツファインダーで画像や次のタイプのドキュメントを検索し、検索したアセットをページエディターにドラッグします。 ドキュメントが `Download` コンポーネントに追加され、画像が `Image` コンポーネントに追加されます。作成者は、任意のカスタム [!DNL Experience Manager] デフォルトの `Download` または `Image` コンポーネント。 サポートされる形式は以下の通りです。
 
-* **画像形式**：[画像コンポーネント](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)がサポートする形式。
+* **画像形式**：[画像コンポーネント](file-format-support.md#image-formats)がサポートする形式。
 * **ドキュメント形式**：詳しくは、[サポートされるドキュメント形式](file-format-support.md#document-formats)を参照してください。
 
 ### 関連するユーザーとグループ {#users-and-groups-involved}
