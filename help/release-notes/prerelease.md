@@ -2,10 +2,10 @@
 title: '"[!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル"'
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service プレリリースチャネル"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
+source-wordcount: '805'
+ht-degree: 84%
 
 ---
 
@@ -29,28 +29,42 @@ ht-degree: 100%
 
 ### クラウド環境 {#cloud-environments}
 
-クラウド開発環境でのサイトコンソールの新機能と、プロジェクトのカスタマイズの結果を確認するには：
+プレリリースを使用するようにクラウド環境を更新するには、新しい [環境変数](../implementing/cloud-manager/environment-variables.md) Cloud Manager で環境設定 UI を使用して、次の操作を実行します。
 
-* [Cloud Manager API の環境変数エンドポイント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)を使用して、**AEM_RELEASE_CHANNEL** 環境変数を **prerelease** という値に設定します。
+1. 次に移動： **プログラム** > **環境** > **環境設定** を更新します。
+1. 新しい [環境変数](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | 名前 | 値 | 適用されるサービス | タイプ |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | すべて | 変数 |
 
-[https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) に記載の手順に従って、次のように、Cloud Manager CLI も使用できます。
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. 変更を保存すると、プレリリース機能の切り替えが有効になった状態で環境が更新されます。
+
+   ![新しい環境変数](assets/env-configuration-prerelease.png)
 
 
-環境を通常の（プレリリース以外の）チャネルの動作に戻す場合は、変数を削除するか、別の値に設定し直します。
+**または** Cloud Manager API と CLI を使用して、環境変数を更新できます。
 
-* または、[Cloud Manager UI](/help/implementing/cloud-manager/environment-variables.md) から環境変数を設定することもできます。
+* 用途 [Cloud Manager API の環境変数エンドポイント](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables)、 **AEM_RELEASE_CHANNEL** 環境変数を値に **プレリリース**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) に記載の手順に従って、次のように、Cloud Manager CLI も使用できます。
+
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+
+
+通常の（プレリリース以外の）チャネルの動作に環境を復元したい場合は、変数を削除するか、別の値に設定できます。
 
 ### ローカル SDK {#local-sdk}
 
