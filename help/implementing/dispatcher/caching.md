@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 76%
+source-wordcount: '2183'
+ht-degree: 63%
 
 ---
 
@@ -83,31 +83,42 @@ Define DISABLE_DEFAULT_CACHING
 * AEM のクライアントサイドライブラリフレームワークを使用すると、変更が新しいファイルとして一意のパスで表示されるので、JavaScript と CSS コードは、ブラウザーで無期限にキャッシュできるように生成されます。つまり、クライアントライブラリを参照する HTML は必要に応じて作成されるので、顧客は公開時に新しいコンテンツを体験できます。「immutable」値を考慮しない古いブラウザーでは、cache-control は「immutable」または 30 日に設定されます。
 * 詳しくは、[クライアントサイドライブラリとバージョンの整合性](#content-consistency)を参照してください。
 
-### BLOB ストレージに格納されるほど大きい画像とコンテンツ {#images}
+### BLOB ストレージに格納できるほど大きい画像とコンテンツ {#images}
 
-* デフォルトではキャッシュされません。
-* 次の Apache `mod_headers` ディレクティブを使用して、より詳細なレベルに設定できます。
+2022 年 5 月中旬以降に作成されたプログラム ( 特に、65000より大きいプログラム ID の場合 ) のデフォルトの動作は、デフォルトでキャッシュされると同時に、リクエストの認証コンテキストも考慮されます。 古いプログラム ( プログラム ID が65000以下 ) は、デフォルトでは BLOB コンテンツをキャッシュしません。
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+どちらの場合も、Apache/Dispatcher レイヤーでキャッシュヘッダーをより詳細なレベルで上書きするには、Apache を使用します `mod_headers` ディレクティブ。次に例を示します。
 
-   広範囲にキャッシュしすぎないように注意し、AEM に「always」オプションを指定して常にキャッシュを適用させる方法については、上記の html/text セクションの説明を参照してください。
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   `src/conf.dispatcher.d/` cache の下のファイルに、次のルール（デフォルト設定）があることを確認する必要があります。
+Dispatcher レイヤーのキャッシュヘッダーを変更する場合は、あまり広くキャッシュしないように注意してください。HTML/テキストの節の説明を参照してください [上](#html-text)) をクリックします。 また、（キャッシュではなく）非公開にするアセットが、 `LocationMatch` ディレクティブフィルター。
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### 新しいデフォルトのキャッシュ動作 {#new-caching-behavior}
 
-   キャッシュせずに非公開にするアセットが、LocationMatch ディレクティブフィルターの一部ではないことを確認します。
+AEMレイヤーは、キャッシュヘッダーが既に設定されているかどうかと、リクエストタイプの値に応じて、キャッシュヘッダーを設定します。 キャッシュ制御ヘッダーが設定されていない場合、パブリックコンテンツはキャッシュされ、認証済みトラフィックはプライベートに設定されます。 キャッシュ制御ヘッダーが設定されている場合、キャッシュヘッダーは変更されません。
 
-   >[!NOTE]
-   >[dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)を含む他のメソッドでは、値は上書きされません。
+| キャッシュ制御ヘッダーが存在しますか？ | 要求のタイプ | AEMがキャッシュヘッダーを |
+|------------------------------|---------------|------------------------------------------------|
+| 不可 | 公開 | Cache-Control:public, max-age=600, immutable |
+| 不可 | 認証済み | Cache-Control:private, max-age=600, immutable |
+| 対応 | 任意 | 変更せずそのままにする必要があります |
+
+お勧めしませんが、 Cloud Manager 環境変数を設定することで、新しいデフォルトの動作を変更して、古い動作 ( プログラム ID が65000以下 ) に従うようにすることができます `AEM_BLOB_ENABLE_CACHING_HEADERS` を false に設定します。
+
+#### 以前のデフォルトのキャッシュ動作 {#old-caching-behavior}
+
+AEMレイヤーは、デフォルトでは BLOB コンテンツをキャッシュしません。
+
+>[!NOTE]
+>Cloud Manager 環境変数AEM_BLOB_ENABLE_CACHING_HEADERS を true に設定して、古いデフォルトの動作を、新しい動作 (65000より大きいプログラム ID) と一致するように変更することをお勧めします。 プログラムが既にライブになっている場合は、変更後に、コンテンツが期待どおりに動作することを確認してください。
+
+>[!NOTE]
+>その他のメソッド ( [dispatcher-ttl AEM ACS Commons プロジェクト](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/)が値を上書きすることはありません。
 
 ### ノードストア内の他のコンテンツファイルタイプ {#other-content}
 
@@ -115,7 +126,7 @@ Define DISABLE_DEFAULT_CACHING
 * HTML／Text ファイルタイプに使用する `EXPIRATION_TIME` 変数はデフォルトに設定できません
 * キャッシュの有効期限は、HTML/Text の節で説明したのと同じ LocationMatch 方法で、適切な正規表現を指定することで設定できます
 
-### 今後の最適化
+### その他の最適化 {#further-optimizations}
 
 * を使用しない `User-Agent` の一部として `Vary` ヘッダー。 デフォルトの Dispatcher 設定（アーキタイプバージョン 28 以前）の古いバージョンには、これが含まれていました。次の手順を使用して削除することをお勧めします。
    * で vhost ファイルを見つけます。 `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
