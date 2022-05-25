@@ -2,12 +2,13 @@
 title: Cloud Manager 環境変数
 description: 標準環境変数は、Cloud Manager を介して設定および管理でき、ランタイム環境に提供され、OSGi 設定で使用できます。
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 93%
 
 ---
+
 
 # Cloud Manager 環境変数 {#environment-variables}
 
@@ -90,3 +91,14 @@ ht-degree: 100%
 >[!TIP]
 >
 >複数の変数を更新する場合は、**環境設定**&#x200B;ダイアログを使用して、必要なすべての変数を一度に更新してから、「**保存**」をタップまたはクリックすることをお勧めします。これにより、1 回の更新で環境に追加できます。
+
+## 環境変数の使用 {#using}
+
+環境変数を使用すると、 `pom.xml` 設定の安全性と柔軟性が向上しました。 例えば、パスワードをハードコードする必要はなく、環境変数の値に基づいて設定を適応させることができます。
+
+次のように、XML を使用して環境変数とシークレットにアクセスできます。
+
+* `${env.VARIABLE_NAME}`
+* `${env.SECRET_NAME}`
+
+ドキュメントを参照 [プロジェクトの設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) 例えば、 `pom.xml` ファイル。
