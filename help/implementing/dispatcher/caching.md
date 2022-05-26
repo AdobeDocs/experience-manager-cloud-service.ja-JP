@@ -3,10 +3,10 @@ title: AEM as a Cloud Service でのキャッシュ
 description: 'AEM as a Cloud Service でのキャッシュ '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 63%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,7 +96,7 @@ Define DISABLE_DEFAULT_CACHING
    </LocationMatch>
 ```
 
-Dispatcher レイヤーのキャッシュヘッダーを変更する場合は、あまり広くキャッシュしないように注意してください。HTML/テキストの節の説明を参照してください [上](#html-text)) をクリックします。 また、（キャッシュではなく）非公開にするアセットが、 `LocationMatch` ディレクティブフィルター。
+Dispatcher レイヤーのキャッシュヘッダーを変更する場合は、あまり広くキャッシュしないように注意してください。HTML/テキストの節の説明を参照してください [上](#html-text). また、（キャッシュではなく）非公開にするアセットが、 `LocationMatch` ディレクティブフィルター。
 
 #### 新しいデフォルトのキャッシュ動作 {#new-caching-behavior}
 
