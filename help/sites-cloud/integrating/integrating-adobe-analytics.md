@@ -4,10 +4,10 @@ description: 'Adobe Analytics との統合 '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: acd44bd7ff211466acc425148cab18dc7ae6d44c
+source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 75%
+source-wordcount: '570'
+ht-degree: 84%
 
 ---
 
@@ -15,13 +15,10 @@ ht-degree: 75%
 
 Adobe Analytics と AEM as a Cloud Service の統合により、Web ページのアクティビティを追跡できます。統合には次の要件が必要です。
 
-* AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できること
+* AEM as a Cloud Service で Analytics 設定を作成するためのタッチ UI を使用できることAdobe AnalyticsをAEM as a Cloud Serviceと統合するには、IMS 認証が必要です。
 * [Adobe Launch](#analytics-launch) の拡張機能として Adobe Analytics を追加し、設定できることAdobe Launch について詳しくは、[このページ](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=ja)を参照してください。
 
 旧バージョンの AEM と比較して、フレームワークのサポートは、AEM as a Cloud Service の Analytics 設定では提供されません。代わりに、AEM サイトに Analytics 機能（JS ライブラリ）を実装するデファクトツールである Adobe Launch によって実行されます。Adobe Launch では、Adobe Analytics の拡張を設定できるプロパティが作成され、Adobe Analytics にデータを送信するルールが作成されます。Adobe Launch は、SiteCatalyst が提供する解析のタスクに代わるものです。
-
->[!NOTE]
->Adobe AnalyticsとAEM as a Cloud Serviceを統合するための IMS 認証の要件がプレリリースチャネルに追加されました。 詳しくは、 [IMS 認証を使用したAdobe Analyticsの設定（プレリリースチャネル）](#configuration-parameters-ims) の節を参照してください。 プレリリースチャネルを参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
 
 >[!NOTE]
 >
@@ -37,35 +34,20 @@ Adobe Analytics と AEM as a Cloud Service の統合により、Web ページの
 
 ### 設定パラメーター {#configuration-parameters}
 
-Adobe Analytics 設定ウインドウで表示される設定フィールドは次のとおりです。
-
-![設定パラメーター](assets/properties_field1.png "設定パラメーター")
-
-| プロパティ | 説明 |
-|---|---|
-| 会社情報 | Adobe Analytics ログイン会社情報 |
-| ユーザー名 | Adobe Analytics API ユーザー |
-| パスワード | 認証に使用される Adobe Analytics パスワード |
-| データセンター | アカウントが関連付けられている Adobe Analytics データセンター（サンノゼやロンドンなどのサーバー） |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
-| レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
-
-### IMS 認証を使用したAdobe Analyticsの設定（プレリリースチャネル） {#configuration-parameters-ims}
-
-Adobe AnalyticsとAEM as a Cloud Serviceを統合するための IMS 認証の要件がプレリリースチャネルに追加されました。 プレリリースチャネルを参照してください。 [ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。 つまり、Analytics をAEMおよび Launch と適切に統合するには、Launch と Analytics の両方の IMS 設定が必要です。 Launch の IMS 設定はAEM as a Cloud Serviceで事前に設定されていますが、Analytics IMS 設定を作成する必要があります。
-
-詳しくは、 [ページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) を参照してください。
-
-の手順を実行した後 [Adobe Analytics設定の作成](#configuration-parameters) 設定ウィンドウに表示されるフィールドは次のとおりです。
+設定ウィンドウに表示されるフィールドを次に示します。
 
 ![設定パラメーター](assets/properties_field2.png "設定パラメーター")
 
 | プロパティ | 説明 |
 |---|---|
 | タイトル | 設定名 |
-| IMS 設定 | IMS 設定を選択します（上記の説明を参照）。 |
-| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html)を参照してください。 |
+| IMS 設定 | IMS 設定を選択します（以下の章を参照）。 |
+| セグメント | 現在のレポートスイートで定義されている Analytics セグメントを使用するオプション。Analytics レポートは、セグメントに基づいてフィルタリングされます。詳細は、[このページ](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=ja)を参照してください。 |
 | レポートスイート | データを送信し、レポートを取り込むリポジトリー。レポートスイートでは、選択した Web サイト、Web サイト群、または Web サイトページのサブセットに関する完全な独立したレポートが定義されます。単一のレポートスイートから取得したレポートを表示し、必要に応じて、いつでも設定でこのフィールドを編集できます。 |
+
+### Adobe Analyticsと IMS 認証 {#configuration-parameters-ims}
+
+Adobe AnalyticsをAEM as a Cloud Serviceと適切に統合するには、IMS 設定が必要です。 この設定を作成する必要があります。詳しくは、こちらを参照してください。 [ページ](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) を参照してください。
 
 ### サイトへの設定の追加 {#add-configuration}
 
@@ -81,8 +63,8 @@ Adobe Analytics は、Launch プロパティで拡張機能として追加でき
 
 >[!NOTE]
 >
->既存の（レガシー）フレームワークは引き続き機能しますが、タッチ操作対応 UI では設定できません。Launch で変数マッピング設定を再構築することをお勧めします。
+>Launch の IMS 設定（技術アカウント）は、AEM as a Cloud Service に事前に設定されています。この設定を作成する必要はありません。
 
 >[!NOTE]
 >
->Launch の IMS 設定（技術アカウント）は、AEM as a Cloud Service に事前に設定されています。ユーザーはこの設定を作成する必要はありません。
+>既存の（レガシー）フレームワークは引き続き機能しますが、タッチ操作対応 UI では設定できません。Launch で変数マッピング設定を再構築することをお勧めします。
