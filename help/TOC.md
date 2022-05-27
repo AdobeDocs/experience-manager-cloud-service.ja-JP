@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
+source-git-commit: 20118fd9226a7b3ca92cdf3fc78071457d965a77
 workflow-type: tm+mt
-source-wordcount: '3484'
-ht-degree: 93%
+source-wordcount: '3491'
+ht-degree: 92%
 
 ---
 
@@ -398,6 +398,7 @@ ht-degree: 93%
       + [Dynamic Media を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Dynamic Media Classic を使用して CDN キャッシュを無効化する](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [スマートイメージング](/help/assets/dynamic-media/imaging-faq.md)
+      + [クライアントサイドデバイスのピクセル比によるスマートイメージング](/help/assets/dynamic-media/client-side-dpr.md)
       + [Dynamic Media アセットを配信する](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Dynamic Media でホットリンク保護を有効化する](/help/assets/dynamic-media/hotlink-protection.md)
       + [3D サポート](/help/assets/dynamic-media/assets-3d.md)

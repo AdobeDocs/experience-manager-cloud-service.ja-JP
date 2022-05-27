@@ -5,10 +5,10 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 70d472776b5530cbb1048b7284780408326df604
+source-git-commit: 86a223231aacb4c7159e695d3ce731ff35fc469d
 workflow-type: tm+mt
-source-wordcount: '3480'
-ht-degree: 49%
+source-wordcount: '3524'
+ht-degree: 48%
 
 ---
 
@@ -104,7 +104,7 @@ Device Pixel Ratio(DPR)（CSS ピクセル比とも呼ばれます）は、デ�
 |---|---|
 | `network=off` | 個々の画像 URL レベルでネットワーク帯域幅の最適化をオフにします。 |
 
-DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、iPhone5 と DPR=2、iPhone12 と `dpr=3`、両方表示 `dpr=2`. 高解像度デバイスの場合は、送信 `dpr=2` 送信するよりも効果が高い `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->.
+DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、iPhone5 と DPR=2、iPhone12 と `dpr=3`、両方表示 `dpr=2`. 高解像度デバイスの場合は、送信 `dpr=2` 送信するよりも効果が高い `dpr=1`. ただし、この不正確さを克服する最善の方法は、クライアント側の DPR を使用して 100%の正確な値を得ることです。 また、起動された任意のデバイス (Appleか他のデバイスかに関わらず ) で機能します。 詳しくは、 [クライアント側デバイスのピクセル比でのスマートイメージングの使用](/help/assets/dynamic-media/client-side-dpr.md).
 
 ### スマートイメージングのその他の主なメリット
 
