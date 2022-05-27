@@ -4,10 +4,10 @@ description: Adobe Sensei AI を活用したスマートイメージングが、
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
-ht-degree: 100%
+source-wordcount: '2629'
+ht-degree: 98%
 
 ---
 
@@ -78,9 +78,10 @@ ht-degree: 100%
 |---|---|
 | `network=off` | 個々の画像 URL レベルでネットワーク帯域幅の最適化をオフにします。 |
 
->[!NOTE]
->
->DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、DPR=2 の iPhone5 と DPR=3 の iPhone12 では、どちらも DPR=2 と表示されます。それでも、高解像度デバイスの場合は、DPR=1 を送信するより DPR=2 を送信する方が適切です。準備中：アドビでは、エンドユーザーの DPR を正確に判断するクライアント側コードを鋭意開発中です。
+DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、iPhone5 と DPR=2、iPhone12 と `dpr=3`、両方表示 `dpr=2`. 高解像度デバイスの場合は、送信 `dpr=2` 送信するよりも効果が高い `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+クライアント側の DPR では、100%の正確な値が提供され、Appleか、今起動された他の新しいデバイスかに関わらず、あらゆるデバイスで機能します。
 
 ## 最新のスマートイメージングの主要なメリットとは  {#what-are-the-key-benefits-of-smart-imaging}
 

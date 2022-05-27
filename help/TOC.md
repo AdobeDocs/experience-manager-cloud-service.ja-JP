@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 06b98a0613b860e4192391c5c0d29079bec82b1e
+source-git-commit: 8f75eb16718bba38bc6a12d5558f50335fd647aa
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3484'
 ht-degree: 93%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 93%
    + [リリース情報](/help/release-notes/home.md)
    + AEMaaCS の一般リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
-      + 2022 年 {#2022}
+      + 2022 {#2022}
          + [リリースノート（2022.3.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [リリースノート（2022.1.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -375,8 +375,8 @@ ht-degree: 93%
       + [プレビュー - JSON 表現](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
       + Dynamic Mediaジャーニー:基本 {#dm-journey}
-         + [基本事項：第 1 部](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [基本事項：第 2 部](/help/assets/dynamic-media/dm-journey-part2.md)
+         + [第 1 部：Dynamic Mediaとは — 使用例 — アセットがシステム内をどのようにフローするか](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [第 2 部：Dynamic Media URL の解剖学 — 画像プリセットの基本 — 画像セット、スピンセットおよび混在メディアセットについて](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Experience League 提供の Dynamic Media ニュースレターアーカイブ](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Dynamic Media をセットアップする](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Dynamic Media を使用する](/help/assets/dynamic-media/dynamic-media.md)
