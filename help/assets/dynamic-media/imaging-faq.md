@@ -4,10 +4,10 @@ description: Adobe Sensei AI を活用したスマートイメージングが、
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
+source-git-commit: e52e0d99bb9b19a74b938a703089159b5caaa3da
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 98%
+source-wordcount: '3480'
+ht-degree: 49%
 
 ---
 
@@ -17,60 +17,85 @@ ht-degree: 98%
 
 スマートイメージングテクノロジーは、Adobe Sensei AI 機能を使用し、既存の「画像プリセット」と連携して動作します。クライアントのブラウザー機能に基づいて画像形式、サイズ、および画質を自動的に最適化し、画像配信のパフォーマンスを向上させます。
 
+さて、AVIF と WebP の両方のサポートに付属している、改善されたスマートイメージングで、LCP(Largest Contentful Paint) のためのより優れたGoogle Core Web Vital スコアを取得します。
+
 >[!IMPORTANT]
 >
 >スマートイメージングを使用するには、Adobe Experience Manager - Dynamic Media にバンドルされている標準搭載の CDN（コンテンツ配信ネットワーク）を使用する必要があります。この機能では、その他のカスタム CDN はサポートされません。
 
-また、スマートイメージングをアドビのクラス最高のプレミアム CDN（ココンテンツ配信ネットワーク）サービスと完全に統合することで、パフォーマンスを大幅にアップさせることもできます。このサービスは、サーバー、ネットワーク、およびピアリングポイント間の最適なインターネットルートを見つけます。インターネットのデフォルトのルートを使用する代わりに、待ち時間が最も短く、パケット損失率が最も低いルートを見つけます。
+スマートイメージングをAdobeのクラス最高のプレミアム CDN（コンテンツ配信ネットワーク）サービスと完全に統合することで、パフォーマンスを大幅にアップさせることができます。 このサービスは、サーバー、ネットワーク、およびピアリングポイント間の最適なインターネットルートを見つけます。インターネットのデフォルトのルートを使用する代わりに、待ち時間が最も短く、パケット損失率が最も低いルートを見つけます。
 
 次の画像アセットの例は、追加されたスマートイメージングの最適化を示しています。
 
-| 画像 <br>（URL） | サムネール | サイズ<br>（JPEG） | サイズ（WebP）<br>（スマートイメージングを使用） | 削減 % |
-|---|---|---|---|---|
-| [画像 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [画像 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
-| [画像 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
-| [画像 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
-|  |  |  |  | 平均 = 51% |
+| 画像 （URL） | サムネール | サイズ（JPEG） | スマートイメージングを使用したサイズ (WebP) | スマートイメージングを使用したサイズ (AVIF) | WebP による削減率 | AVIF による%削減 |
+|---|---|---|---|---|---|---|
+| [画像 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
+| [画像 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
+| [画像 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
+| [画像 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
 
-上記と同様に、アドビでもライブ顧客サイトの 7,009 件の URL でテストを実施しました。JPEG 用のファイルサイズの最適化は、平均で 38%も向上しました。WebP 形式の PNG の場合、ファイルサイズの最適化を平均で 31%向上させることができました。このような最適化は、スマートイメージングの機能によって可能となります。
+上記と同様に、Adobeでも、より大きなサンプルセットを持つテストを実行しました。 AVIF は WebP に対して 20 %の追加サイズ削減を提供し、JPEGに対して 27 %の削減を提供した。 すべて同じ視覚品質です。 AVIF は、JPEGに比べ、平均で最大 41%のサイズ削減を実現しました。
 
-モバイル Web では、次の 2 つの要因によって課題が生じます。
+WebP と AVIF を PNG と比較すると、WebP で 84%のサイズ縮小、AVIF で 87%のサイズ縮小が実現します。 また、WebP 形式と AVIF 形式の両方が透明な画像と複数の画像アニメーションをサポートするので、透明な PNG ファイルやGIFファイルの代わりに適しています。
 
-* 様々なフォームファクターと高解像度ディスプレイを備えた多様なデバイス
-* ネットワーク帯域幅の制約
+関連トピック [次世代画像形式による画像の最適化（WebP および AVIF）](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
-画像に関しては、できるだけ効率的に最高品質の画像を提供することが目標になります。
+<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
-### デバイスピクセル比の最適化について {#dpr}
+* Large variety of devices with different form factors and high-resolution displays.
+* Constrained network bandwidth.
 
-デバイスピクセル比（DPR）（CSS ピクセル比とも呼ばれます）は、デバイスの物理ピクセルと論理ピクセルの関係です。特に、Retina 画面の出現に伴い、最新のモバイルデバイスのピクセル解像度が急速に増加しています。
+In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-デバイスピクセル比の最適化を有効にすると、画像が画面のネイティブ解像度でレンダリングされるので、画面が鮮明に見えます。
+## 最新のスマートイメージングの主要なメリットとは  {#what-are-the-key-benefits-of-smart-imaging}
 
-スマートイメージングの DPR 設定をオンにすると、要求元となるディスプレイのピクセル密度に基づいて、要求された画像が自動的に調整されます。現在、ディスプレイのピクセル密度は Akamai CDN ヘッダー値から得られます。
+スマートイメージングは、使用中のクライアントブラウザー、デバイスの表示、ネットワーク条件に基づいて画像ファイルサイズを自動的に最適化することで、より優れた画像配信パフォーマンスを提供します。 ページの読み込み時間の大部分は画像によって構成されるので、パフォーマンスの向上は、ビジネス KPI（コンバージョン率の高さ、サイトでの滞在時間の短さ、サイトの直帰率の低さなど）に大きな影響を与えます。
 
-| 画像の URL で使用できる値 | 説明 |
+最新のスマートイメージングの最新の主なメリットには、次のようなものがあります。
+
+* 次世代の AVIF 形式をサポートするようになりました。
+* PNG から WebP、AVIF への変換で可逆変換がサポートされるようになりました。 PNG は可逆形式なので、以前に配信された WebP および AVIF は可逆形式でした。
+* ブラウザー形式の変換 (`bfc`)
+* デバイスのピクセル比 (`dpr`)
+* ネットワーク帯域幅 (`network`)
+
+### ブラウザー形式の変換 (bfc) について {#bfc}
+
+次を追加してブラウザフォーマット変換を有効にする `bfc=on` を画像 URL に自動的に変換すると、JPEGと PNG が可逆 AVIF、可逆 WebP、可逆 JPEGXR、可逆JPEG2000（異なるブラウザー向け）に変換されます。 これらの形式をサポートしていないブラウザーでは、スマートイメージングは引き続きJPEGまたは PNG を提供します。 形式と共に、新しい形式の品質はスマートイメージングによって再計算されます。
+
+スマートイメージングは、 `bfc=off` を画像の URL に追加します。
+
+関連トピック [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) (Dynamic Media Image Serving and Rendering API の )
+
+### デバイスのピクセル比 (dpr) の最適化について {#dpr}
+
+Device Pixel Ratio(DPR)（CSS ピクセル比とも呼ばれます）は、デバイスの物理ピクセルと論理ピクセルとの関係です。 特に、Retina 画面の出現に伴い、最新のモバイルデバイスのピクセル解像度が急速に増加しています。
+
+デバイスのピクセル比の最適化を有効にすると、画像が画面のネイティブ解像度でレンダリングされ、画面が鮮明に表示されます。
+
+現在、ディスプレイのピクセル密度は Akamai CDN ヘッダー値から得られます。
+
+| 画像の URL で許可されている値 | 説明 |
 |---|---|
 | `dpr=off` | 個々の画像 URL レベルで DPR の最適化をオフにします。 |
-| `dpr=on,dprValue` | スマートイメージングで検出された DPR 値を、カスタム値（クライアント側のロジックまたはその他の手段で検出された値）でオーバーライドします。`dprValue` に指定可能な値は、0 より大きい任意の数です。一般に、1.5、2、3 のいずれかの値が指定されます。 |
+| `dpr=on,dprValue` | スマートイメージングで検出された DPR 値を、カスタム値（クライアント側のロジックまたはその他の手段で検出された値）でオーバーライドします。`dprValue` に指定可能な値は、0 より大きい任意の数です。 |
 
 >[!NOTE]
 >
 >* 全社レベルの DPR 設定がオフの場合でも、`dpr=on,dprValue` を使用できます。
->* DPR の最適化により、結果の画像が Dynamic Media の MaxPix 設定より大きくなる場合、画像の縦横比を維持することで MaxPix の幅が常に認識されます。
+>* DPR の最適化により、結果の画像が Dynamic Media の MaxPix 設定より大きくなる場合、画像の縦横比を維持することで MaxPix の幅が常に認識されます。-->
 
 
-| 要求された画像サイズ | DPR 値 | 配信される画像サイズ |
+| 要求された画像サイズ | デバイスのピクセル比 (dpr) 値 | 配信される画像サイズ |
 |---|---|---|
 | 816 x 500 | 1 | 816 x 500 |
 | 816 x 500 | 2 | 1632 x 1000 |
 
 [画像を操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)および[スマート切り抜きを操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)も参照してください。
 
-### ネットワーク帯域幅の最適化について {#network-bandwidth-optimization}
+### ネットワーク帯域幅の最適化について {#network}
 
-「ネットワーク帯域幅」をオンにすると、提供される画質が、実際のネットワーク帯域幅に基づいて自動的に調整されます。ネットワーク帯域幅が不十分な場合は、DPR の最適化がオンになっていても、自動的にオフになります。
+「ネットワーク帯域幅」をオンにすると、提供される画質が、実際のネットワーク帯域幅に基づいて自動的に調整されます。ネットワーク帯域幅が不十分な場合、既にオンになっている場合でも、DPR(Device Pixel Ratio) 最適化は自動的にオフになります。
 
 必要に応じて、画像の URL に `network=off` を付けて、個々の画像レベルでネットワーク帯域幅の最適化をオプトアウトできます。
 
@@ -78,21 +103,13 @@ ht-degree: 98%
 |---|---|
 | `network=off` | 個々の画像 URL レベルでネットワーク帯域幅の最適化をオフにします。 |
 
-DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、iPhone5 と DPR=2、iPhone12 と `dpr=3`、両方表示 `dpr=2`. 高解像度デバイスの場合は、送信 `dpr=2` 送信するよりも効果が高い `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+DPR とネットワーク帯域幅の値は、バンドルされた CDN のクライアント側の検出値に基づいています。これらの値は不正確な場合があります。例えば、iPhone5 と DPR=2、iPhone12 と `dpr=3`、両方表示 `dpr=2`. 高解像度デバイスの場合は、送信 `dpr=2` 送信するよりも効果が高い `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->.
 
-
-クライアント側の DPR では、100%の正確な値が提供され、Appleか、今起動された他の新しいデバイスかに関わらず、あらゆるデバイスで機能します。
-
-## 最新のスマートイメージングの主要なメリットとは  {#what-are-the-key-benefits-of-smart-imaging}
-
-画像は、ページの読み込み時間の大部分を占めます。したがって、パフォーマンスの向上は、コンバージョン率の増加、サイトでの滞在時間、サイトの直帰率の低下に大きな影響を与える可能性があります。
-
-最新バージョンのスマートイメージングの機能強化：
+### スマートイメージングのその他の主なメリット
 
 * 最新のスマートイメージングを使用する Web ページの Google SEO ランキングを改善しました。
 * 最適化されたコンテンツをすぐに提供（実行時）
 * Adobe Sensei テクノロジーを使用して、イメージリクエストで指定された品質（`qlt`）に従って変換します。
-* スマートイメージングは、「`bfc`」 URL パラメーターを使用してオフにできます。
 * TTL（Time To Live）独立。以前は、スマートイメージングを機能させるには、最小 TTL 値 12 時間が必要でした。
 * 以前は、元の画像と派生画像の両方がキャッシュされていて、キャッシュを無効にする 2 つの手順がありました。最新のスマートイメージングでは、派生画像のみがキャッシュされ、1 ステップのキャッシュ無効化プロセスが可能です。
 * ルールセットでカスタムヘッダーを使用しているユーザーは、以前のバージョンのスマートイメージングとは異なってこれらのヘッダーがブロックされないので、最新のスマートイメージングのメリットが得られます。例えば、「[画像応答へのカスタム接触チャネル値の追加 | Dynamic Media Classic](https://helpx.adobe.com/jp/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)」で推奨される「Timing Allow Header」、「X-Robot」などは、最新のスマートイメージングによるメリットを享受できます。
@@ -109,23 +126,11 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 
 画像が消費者から要求されると、スマートイメージングがそのユーザーの特性を確認し、使用中のブラウザーに基づいて適切な画像形式に変換します。これらの形式変換は、視覚的忠実性を低下させない方法で行われます。スマートイメージングは、次のような方法で、ブラウザーの機能に基づいて、自動的に画像を別の形式に変換します。
 
-<!--   * Safari 14.0 +
-    * Safari 14 only with iOS 14.0 and above and macOS BigSur and above -->
-
-* 次のブラウザー用に WebP に自動的に変換：
-   * Chrome
-   * Firefox
-   * Microsoft® Edge
-   * Safari（iOS、macOS、iPadOS をまたぐ）で提供されるブラウザーと OS バージョンは WebP をサポートします。
-   * Android™
-   * Opera
-* 以下のレガシーブラウザーでのサポート：
-
-   | ブラウザー | ブラウザー／OS のバージョン | 形式 |
-   | --- | --- | --- |
-   | Safari | iOS/iPad 14.0 または macOS BigSur 以前 | JPEG2000 |
-   | Edge | 18 以前 | JPEGXR |
-   | Internet Explorer | 9+ | JPEGXR |
+* ブラウザーがこの形式をサポートしている場合、AVIF に自動的に変換
+* AVIF 変換が有益でなかった場合、またはブラウザーが AVIF をサポートしていない場合は、WebP に自動的に変換します
+* Safari が WebP をサポートしていない場合は、JPEG2000 に自動的に変換
+* IE 9 以降で JPEGXR に自動的に変換するか、Edge が WebP をサポートしていない場合\
+   |画像形式 |サポートされているブラウザー | |—|—| | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) | | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) | |JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) | | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 * 上記形式をサポートしていないブラウザーの場合は、元々要求された画像形式が提供されます。
 
 元の画像サイズがスマートイメージングの生成するサイズより小さい場合は、元の画像が提供されます。
@@ -137,28 +142,25 @@ DPR とネットワーク帯域幅の値は、バンドルされた CDN のク�
 * JPEG
 * PNG
 
-<!-- For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
+JPEG画像ファイル形式の場合、新しい形式の品質はスマートイメージングによって再計算されます。
 
-* Use a ruleset if the `fmt` modifier is mentioned in the URL. 
-* Append in URL modifiers field of the presets concerned.
+PNG などの透明性をサポートする画像ファイル形式の場合、可逆性の高い AVIF および WebP を提供するようにスマートイメージングを設定できます。 可逆形式変換の場合、スマートイメージングは画像の URL に記載されている画質を使用します。非可逆形式変換の場合は、Dynamic Mediaの会社アカウントで設定されている画質を使用します。
 
-Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
+## スマートイメージングは、使用中の既存の画像プリセットとどのように連携しますか？ {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-## スマートイメージングは、使用中の既存の画像プリセットとどのように連携しますか？  {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
+スマートイメージングは既存の画像プリセットと連携し、すべての画像設定を監視します。 変更は、画像形式、画質設定、またはその両方です。 形式変換の場合、スマートイメージングは画像プリセットの設定で定義されているとおりの完全な視覚的忠実性を維持しますが、ファイルサイズは小さくなります。
 
-スマートイメージングは、既存の「画像プリセット」と連携して動作します。要求されたファイル形式が JPEG または PNG の場合は、画質（`qlt`）および形式（`fmt`）を除くすべての画像設定が監視されます。形式変換の場合、画像プリセットの設定で定義されているとおりの完全な視覚的忠実性が維持されますが、ファイルサイズは小さくなります。元の画像サイズがスマートイメージングの生成するサイズより小さい場合は、元の画像が提供されます。
-
-<!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
+例えば、JPEGフォーマット、サイズ 500 x 500、画質=85、アンシャープマスク=0.1,1,5 を使用して画像プリセットが定義されているとします。 スマートイメージングがJPEGが Chrome ブラウザー上にあることを検出すると、画像は WebP 形式に変換され、サイズは 500 x 500、アンシャープマスク= 0.1,1,5(WebP) の画質で、可能な限り 85 の画質に一致します。 その WebP 変換のフットプリントがJPEGと比較され、2 つのうち小さい方が返されます。
 
 ## スマートイメージングを使用する場合、URL の変更や、画像プリセットの変更、サイトへの新しいコードのデプロイなどは必要ですか？  {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-既存のカスタムドメインで設定する場合、スマートイメージングは既存の画像 URL や画像プリセットとシームレスに連携します。また、スマートイメージングでは、ユーザーのブラウザーを検出するために Web サイトにコードを追加する必要はありません。処理はすべて自動です。
+いいえ。スマートイメージングは既存の画像 URL や画像プリセットとシームレスに連携します。また、スマートイメージングでは、ユーザーのブラウザーを検出するために Web サイトにコードを追加する必要はありません。 これらの機能はすべて自動的に処理されます。
 
-スマートイメージングを使用するために新しいカスタムドメインを設定する必要がある場合は、このカスタムドメインを反映するように URL を更新する必要があります。
+<!-- Smart Imaging works seamlessly with your existing image URLs and image presets if you configure Smart Imaging on your existing custom domain. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. It is all handled automatically.
 
-スマートイメージングの前提条件については、「[スマートイメージングを使用するための資格を私は満たしていますか？](#am-i-eligible-to-use-smart-imaging)」を参照してください。
+In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-<!-- OLD No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -175,44 +177,55 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=ja#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
 
-**[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在汎用ドメインを使用している場合は、独自のカスタムドメインに移動するようにリクエストできます。技術サポートチケットを送信したら、このトランジションリクエストを作成します。
+**[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在汎用ドメインを使用している場合は、独自のカスタムドメインに移動するようにリクエストできます。サポートケースを送信する際には、この移行リクエストを実行してください。
 
 最初のカスタムドメインは、Dynamic Media ライセンスを使用する場合、追加費用はかかりません。
 
 ## 自分のアカウントでスマートイメージングを有効にするには、どうすればいいですか？  {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-スマートイメージングを使用するためのリクエストを開始する必要があります。自動的には有効になりません。
+スマートイメージングを使用するリクエストを開始します。自動的には有効になりません。
 
-Dynamic Media の会社アカウントの場合、スマートイメージングの DPR と ネットワーク帯域幅の最適化はデフォルトで無効（オフ）になっています。これら標準の機能強化のどちらか一方または両方を有効（オン）にする場合は、以下の説明に従って、サポートケースを作成します。
+以下の説明に従って、サポートケースを作成します。 サポートケースでは、アカウントで有効にする次のスマートイメージング機能（1 つ以上）を指定してください。
 
-<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is available in North as follows:
+* WebP
+* AVIF
+* DPR とネットワーク帯域幅の最適化
+* PNG から可逆 AVIF または非可逆 WebP
 
-| Region | Target date |
-|---|---|
-| North America | Live | 
-| Europe, Middle East, Africa | 13 August 2021 | 
-| Asia-Pacific | 22 July 2021 | -->
+WebP で既にスマートイメージングを有効にしているが、上記のような他の新機能を希望する場合は、サポートケースを作成する必要があります。
 
-1. [Admin Console を使用して、サポートケースを作成します。](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html)
+**お使いのアカウントでスマートイメージングを有効にするサポートケースを作成するには、次の手順を実行します。**
+
+1. [Admin Consoleを使用して、新しいサポートケースの作成を開始します](https://helpx.adobe.com/jp/enterprise/using/support-for-experience-cloud.html).
 1. サポートケースには、次の情報を記入してください。
 
-   1. 主要連絡先の氏名、電子メールアドレス、電話番号。
-   1. スマートイメージングを有効にするすべてのドメイン（`images.company.com` や `mycompany.scene7.com`）。
+   * 主要連絡先の氏名、電子メールアドレス、電話番号。
+
+   * アカウントで有効にする次のスマートイメージング機能（1 つ以上）の一覧を示します。
+      * WebP
+      * AVIF
+      * DPR とネットワーク帯域幅の最適化
+      * PNG から可逆 AVIF または非可逆 WebP
+   * スマートイメージングを有効にするすべてのドメイン（`images.company.com` や `mycompany.scene7.com`）。
 
       ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
 
       **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
 
       「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。
-   1. 直接的な関係で管理されているのではなく、アドビを通じて CDN を使用していることを確認します。
-   1. `s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` などの汎用ドメインではなく、`images.company.com` や `mycompany.scene7.com` などの専用ドメインを使用していることを確認します。
+
+   * 直接的な関係で管理されているのではなく、アドビを通じて CDN を使用していることを確認します。
+
+   * `s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com` などの汎用ドメインではなく、`images.company.com` や `mycompany.scene7.com` などの専用ドメインを使用していることを確認します。
 
       ドメインを探すには、[Dynamic Media Classic デスクトップアプリケーション](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)を開き、会社情報アカウントまたはアカウントにログインします。
 
       **[!UICONTROL 設定]**／**[!UICONTROL アプリケーション設定]**／**[!UICONTROL 一般設定]**&#x200B;に移動します。
 
       「**[!UICONTROL 公開先サーバー名]**」というラベルの付いたフィールドを見つけます。現在、汎用の Dynamic Media Classic ドメインを使用している場合は、この切り替えの一環として独自のカスタムドメインへの移行をリクエストできます。
-   1. HTTP/2 で動作させるかどうかを指定します。
+
+   * HTTP/2 で動作させるかどうかを指定します。
+
 
 1. アドビカスタマーサポートでは、要求が送信された順序に基づいて、スマートイメージングカスタマー待ちリストに貴社を追加します。
 1. リクエストを処理する準備が整った時点で、カスタマーサポートから連絡を差し上げ、調整と日取り設定を行います。
@@ -247,7 +260,7 @@ Dynamic Media の会社アカウントの場合、スマートイメージング
    * Windows® では、デベロッパーツールパネルの設定に移動してから、「**[!UICONTROL キャッシュを無効にする（devtools が開いている間）]**」チェックボックスを選択します。
    * macOS では、デベロッパーパネルの「**[!UICONTROL ネットワーク]**」タブで、「**[!UICONTROL キャッシュを無効にする]**」を選択します。
 
-1. コンテンツタイプが適切な形式に変換されるのを監視します。次のスクリーンショットは、Chrome 上で PNG 画像が動的に WebP に変換されているのを示しています。
+1. コンテンツタイプが適切な形式に変換されるのを監視します。次のスクリーンショットは、Chrome 上で PNG 画像が動的に WebP に変換されているのを示しています。ドメインで AVIF が有効になっている場合は、コンテンツタイプに AVIF が表示されることを期待できます。
 1. このテストを、様々なブラウザーやユーザー条件で繰り返します。
 
 >[!NOTE]
@@ -256,36 +269,146 @@ Dynamic Media の会社アカウントの場合、スマートイメージング
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
+## パフォーマンスの向上を把握する方法 スマートイメージングのメリットを知る方法はありますか？ {#benefits}
+
+スマートイメージングヘッダーは、スマートイメージングのメリットを決定します。 スマートイメージングが有効な場合、画像を要求した後、 **[!UICONTROL 応答ヘッダー]** 見出し、 `-X-Adobe-Smart-Imaging` 次のハイライトされた例に示すように、
+
+![スマートイメージングヘッダー](/help/assets/dynamic-media/assets/smartimagingheader.png)
+
+このヘッダーは次の内容を示します。
+
+* スマートイメージングは、会社で機能しています。
+* 正の値は、変換が成功したことを意味します。 この場合、新しい WebP イメージが返されます。
+* 負の値は、変換処理が成功しなかったことを示します。 この場合、元の要求された画像が返されます ( 指定されていない場合は、デフォルトのJPEG)。
+* 正の値は、要求された画像と新しい画像のバイト数の違いを示します。 上記の例では、保存されるバイトはです。 `75048` 1 つの画像の場合は約 75 KB です。
+* 負の値は、要求された画像が新しい画像より小さいことを意味します。 負のサイズの差が表示されますが、提供される画像は元の要求された画像のみです。
+
+>[!NOTE]
+>
+>**X-Adobe — スマートイメージング= -1 （WebP を配信中）**
+>
+>値が `X-Adobe-Smart-Imaging` が —1 で WebP はまだ配信中です。これは、スマートイメージングが機能しているが、古いキャッシュが原因でサイズのメリットが計算されなかったことを意味します。 以下を使用できます。 `cache=update` （1 回のみ）を画像の URL に追加して、この問題を修正します。
+>修飾子の使用例を次に示します。
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>キャッシュ全体を無効にするには、サポートケースを作成する必要があります。
+
+## スマートイメージングで AVIF の最適化を無効にするにはどうすればよいですか？{#disable-avif}
+
+デフォルトで WebP の提供に戻す場合は、同じサポートケースを作成します。 通常どおり、パラメーター `bfc=off` を画像の URL に追加します。 ただし、スマートイメージングの URL 修飾子で WebP または AVIF を選択することはできません。 この機能は、会社のアカウントレベルで維持されます。
+
 ## 要求に対してスマートイメージングをオフにできますか？ {#turning-off-smart-imaging}
 
-はい。URL に `bfc=off` 修飾子を追加して、スマートイメージングをオフにできます。
+はい。次のいずれかの修飾子を追加して、スマートイメージングをオフにできます。
 
-## DPR と ネットワーク帯域幅の最適化を全社レベルでオフにするように依頼できますか？ {#dpr-companylevel-turnoff}
-
-はい。会社で DPRとネットワーク帯域幅の最適化を無効にするには、このトピックで前述したとおりにサポートケースを作成します。
+* `bfc=off` をオフにして、ブラウザフォーマット変換をオフにします。 関連トピック [ブラウザー形式の変換](#bfc).
+* `dpr=off` をオフにして、 Device Pixel Ratio をオフにします。 関連トピック [デバイスのピクセル比](#dpr).
+* `network=off` ネットワーク帯域幅をオフにする。 関連トピック [ネットワーク帯域幅](#network).
 
 ## どの「チューニング」が使用できますか。定義できる設定やビヘイビアーはありますか。 {#tuning-settings}
 
-現在、オプションでスマートイメージングを有効または無効にできます。他のチューニングは使用できません。
+スマートイメージングには、有効または無効にできる 3 つのオプションがあります。
 
-## スマートイメージングが画質設定を管理する場合、設定できる最小値と最大値はありますか。例えば、「60 以上」や「80 以下」というクォリティを設定できますか。 {#minimum-maximum}
+* [ブラウザー形式の変換](#bfc)
+* [デバイスのピクセル比](#dpr)
+* [ネットワーク帯域幅](#network)
 
-現在のスマートイメージングには、このようなプロビジョニング機能はありません。
+## Chrome Web ブラウザーで fmt=tif の URL をお持ちです。 ただし、要求が ImageServer エラーで失敗します。 使用する理由 {#fmt-tif}
 
-## 場合によっては、WebP 画像ではなく JPEG 画像が Chrome に返されます。その変更が行われる理由はなぜですか。 {#jpeg-webp}
+お使いのアカウントでスマートイメージングが有効になっていない場合、このエラーは発生しません。 スマートイメージングは、JPEG形式または PNG 形式でのみ機能します。
 
-スマートイメージングは、変換が有益かどうかを判断します。変換結果のファイルサイズが同等の画質で小さくなる場合にのみ、新しい画像が返されます。
+このエラーを回避するには、次のいずれかを実行します。
 
-スマートイメージングの DPR 最適化は、Adobe Experience Manager Sites コンポーネントや Dynamic Media ビューアでどのように機能しますか？
+* JPEG、PNG、または
+* 次を使用しない `fmt` 修飾子、または
+* スマートイメージングで定義されているブラウザー設定の形式を使用します。 例えば、Chrome Web ブラウザー用の WebP を使用できます。
 
-* Experience Manager Sites コアコンポーネントは、DPR 最適化に対応するようにデフォルトで設定されています。サーバー側のスマートイメージング DPR 最適化による画像サイズの超過を避けるために、Experience Manager Sites コアコンポーネントの Dynamic Media 画像には常に `dpr=off` が追加されます。
-* Dynamic Media 基盤コンポーネントは、DPR 最適化に対応するようにデフォルトで設定されていることを考慮して、サーバー側のスマートイメージング DPR 最適化による画像サイズの超過を避けるため、Dynamic Media 基盤コンポーネントの画像には常に `dpr=off` が追加されます。ユーザーが DM 基盤コンポーネントで DPR 最適化の選択を解除しても、サーバー側のスマートイメージング DPR 最適化は有効にはなりません。つまり、DM 基盤コンポーネントでは、DPR 最適化は、DM 基盤コンポーネントレベルの設定にのみ基づいて有効になります。
-* ビューア側の DPR 最適化は、サーバ側のスマートイメージング DPR 最適化と連携して機能するので、画像サイズの超過が発生することはありません。つまり、ズーム対応ビューアのみのメインビューなど、ビューアで DPR が処理される場合は、サーバー側のスマートイメージング DPR 値はトリガーされません。同様に、スウォッチやサムネールなどのビューア要素で DPR 処理が行われない場合は、サーバー側のスマートイメージング DPR 値がトリガーされます。
+## 画像の URL からTIFF画像をダウンロードしたい。 どうやって？ {#download-tif}
 
-[画像を操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images)および[スマート切り抜きを操作する場合](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop)も参照してください。
+追加 `fmt=tif` および `bfc=off` を画像の URL パスに追加します。
+
+## スマートイメージングは画像形式のみを管理しますか？または、最適な結果を得るために画質設定も管理しますか？
+
+スマートイメージングは、形式と画質の両方を使用します。 画像の URL で要求された場合、残りのパラメーターは同じままです。
+
+## スマートイメージングが画質設定を管理する場合、設定できる最小値と最大値はありますか？ つまり 60 以上 80 以下の品質？ {#quality-setting}
+
+現在、そのようなプロビジョニングはありません。
+
+## スマートイメージングは画質の割合の出力設定を自動的に調整しますか？それとも、手動で調整した設定で、すべての画像に適用されますか？ どの範囲で？ {#percent-quality}
+
+スマートイメージングは、画質の割合を自動的に調整します。 この品質の割合は、Adobeで開発された機械学習アルゴリズムを使用して決定されます。 この割合は、範囲に固有ではありません。
+
+## スマートイメージングでは、サポートまたは無視される画像サービングコマンドはどれですか？ {#support-ignore}
+
+無視されるコマンドは次のとおりです。 `fmt` および `qlt`. 残りのコマンドはすべてサポートされています。
+
+## スマートイメージングに置き換えられるのはJPEG画像のみですか？ WebP や PNG などを要求した場合はどうなりますか？ {#replace-request}
+
+この機能は、JPEGと PNG でのみ機能します。
+
+## JPEG画像が WebP ではなく Chrome に返されることがあるのはなぜですか。 {#jpeg-returned}
+
+スマートイメージングは、変換が有益かどうかを判断します。新しい画像を返すのは、変換のみが有益です。
+
+## デバイスのピクセル比 (dpr) 機能が複合画像で期待どおりに動作しないのはなぜですか？ {#composite-images}
+
+合成イメージに含まれるレイヤーが多すぎると、位置修飾子の使用中に dpr 機能に影響が及ぶ場合があります。 この問題は既知で、スマートイメージングの今後のリリースで修正される予定です。 他のスマートイメージング機能が期待どおりに動作しない場合は、問題を報告するサポートケースを作成できます。
+
+## スマートイメージング PNG が可逆 WebP/AVIF に変換されるのはなぜですか？ {#convert-to-lossless}
+
+PNG は可逆形式なので、以前の WebP および AVIF の配信は可逆形式なので、予想よりも大きなサイズになりました。 スマートイメージングで可逆変換がサポートされるようになりました。 修飾子を使用できます `cache=update` （1 回のみ）をイメージリクエストに含めて、この問題を修正します。 この修飾子の使用例を次に示します。
+
+`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+
+キャッシュ全体を無効にするには、そのような作業をリクエストするサポートケースを作成する必要があります。
+
+## スマートイメージングで PNG を使用して可逆変換を続行するにはどうすればよいですか？ {#continue-using}
+
+スマートイメージングで、品質レベルに基づく非可逆変換がサポートされるようになりました。 ロスレス変換を引き続き使用するには、会社の設定に基づいて設定された 100 品質を使用するか、画像の URL を使用してを使用します。 `qlt=100` パスに含まれています。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ## If Smart Imaging manages the quality settings, are there minimums and maximums I can set? For example, is it possible to set "no lower than 60" and "no greater than 80 quality"? {#minimum-maximum}
+
+There is no such provisioning ability in the current Smart Imaging. -->
+
+<!-- ## Sometimes a JPEG image is returned to Chrome instead of a WebP image. Why does that change happen? {#jpeg-webp}
+
+Smart Imaging determines if the conversion is beneficial or not. It returns the new image only if the conversion results in a smaller file size with comparable quality.
+
+How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites components and Dynamic Media viewers?
+
+* Experience Manager Sites Core Components are configured by default for DPR optimization. To avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Experience Manager Sites Core Components Dynamic Media images.
+* Given Dynamic Media Foundation Component is configured by default for DPR optimization, to avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Dynamic Media Foundation Component images. Even if customer deselects DPR optimization in DM Foundation Component, server-side Smart Imaging DPR does not kick in. In summary, in the DM Foundation Component, DPR optimization comes into effect based on DM Foundation Component level setting only.
+* Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
+
+See also [When working with images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
 >[!MORELIKETHIS]
 >
->* [次世代の画像形式 WebP および AVIF による画像の最適化](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4) -->
 >
-
