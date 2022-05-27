@@ -3,8 +3,9 @@ title: スマートイメージング
 description: Adobe Sensei AI を活用したスマートイメージングが、各ユーザー固有の閲覧特性を適用して、ユーザーのエクスペリエンスに最適化された適切な画像を自動的に提供することで、パフォーマンスとエンゲージメントの向上を実現している仕組みを説明します。
 feature: Asset Management,Renditions
 role: User
+mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: e52e0d99bb9b19a74b938a703089159b5caaa3da
+source-git-commit: 70d472776b5530cbb1048b7284780408326df604
 workflow-type: tm+mt
 source-wordcount: '3480'
 ht-degree: 49%
