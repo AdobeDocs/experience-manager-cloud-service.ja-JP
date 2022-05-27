@@ -2,10 +2,10 @@
 title: AEM Assets API を使用してコンテンツをアップデートする方法
 description: AEM ヘッドレスデベロッパージャーニーのこの部分では、REST API を使用してコンテンツフラグメントのコンテンツにアクセスし、アップデートする方法について説明します。
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
-source-git-commit: 335d7760886fe8dc489335a050d3cb6d0d2652a1
+source-git-commit: 83248913929f196b2f84913f0fe761f291f68d8f
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 95%
 
 ---
 
@@ -318,7 +318,7 @@ AEM Assets REST API の使用の詳細については、次を参照してくだ
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-次に、「[実際に AEM ヘッドレスプロジェクトをライブにする方法](go-live.md)」のドキュメントを確認して、AEM ヘッドレスジャーニーを続けてください。
+次にドキュメントを確認して、AEMヘッドレスジャーニーを続ける必要があります [すべてを組み合わせる方法 — アプリとコンテンツをAEMヘッドレスに組み込む](put-it-all-together.md) ここでは、AEMアーキテクチャの基本と、アプリケーションを統合するために使用する必要があるツールについて説明します。
 
 ## その他のリソース {#additional-resources}
 
