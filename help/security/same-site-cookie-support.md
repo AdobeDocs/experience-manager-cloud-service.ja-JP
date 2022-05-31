@@ -2,10 +2,10 @@
 title: Adobe Experience Manager as a Cloud Service に対する Same Site Cookie の のサポート
 description: Adobe Experience Manager as a Cloud Service に対する Same Site Cookie の のサポート
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '287'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,15 @@ ht-degree: 100%
 
 これを回避するには、ログイントークンの SameSite cookie 属性を `None` に設定する必要があります。
 
-これは、次の手順でおこなえます。
+>[!CAUTION]
+>
+>この `SameSite=None` の設定は、プロトコルがセキュア (HTTPS) の場合にのみ適用されます。
+>
+>プロトコルがセキュアでない場合 (HTTP)、設定は無視され、サーバーは次の WARN メッセージを表示します。
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+次の手順に従って、設定を追加できます。
 
 1. AEM SDK クイックスタートのバージョンをローカルにインストールする
 1. Web コンソール（`http://serveraddress:serverport/system/console/configMgr`）にアクセスします。
