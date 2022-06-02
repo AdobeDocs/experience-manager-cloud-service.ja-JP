@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4bfd1c144642f5c2f3b2bf4cd7469b0a7ce8f8fe
+source-git-commit: 333653e42de895fdd2097ad52ed3904192c57437
 workflow-type: tm+mt
-source-wordcount: '3497'
+source-wordcount: '3502'
 ht-degree: 92%
 
 ---
@@ -437,6 +437,7 @@ ht-degree: 92%
    + [はじめに](/help/forms/home.md)
    + [主な機能](/help/forms/key-features.md)
    + [主要な変更点](/help/forms/notable-changes.md)
+   + [アーキテクチャ](/help/forms/aem-forms-cloud-service-architecture.md)
    + サービスのセットアップと設定 {#setup-environment}
       + [Cloud Service 環境へのオンボード](/help/forms/setup-forms-cloud-service.md)
       + [ローカル開発環境のセットアップ](/help/forms/setup-local-development-environment.md)
@@ -477,6 +478,7 @@ ht-degree: 92%
          + [リダイレクトページの設定](/help/forms/configuring-redirect-page.md)
          + [アダプティブフォームの非同期送信を設定](/help/forms/asynchronous-submissions-adaptive-forms.md)
          + [カスタム送信アクションの作成](/help/forms/custom-submit-action-form.md)
+      + [アダプティブフォームフィールドに事前入力](/help/forms/prepopulate-adaptive-form-fields.md)
       + [レコードのドキュメントを生成](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + メタデータの追加または向上 {#manage-metadata}
          + [アダプティブフォームのメタデータの追加、削除、編集](/help/forms/manage-form-metadata.md)

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1e2b58015453c194af02fdae62c3735727981da1
+source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 62%
+source-wordcount: '1531'
+ht-degree: 61%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 62%
 
    * フォームデータモデルの名前を指定します。
    * （**任意**）フォームデータモデルのタイトル、説明、タグを指定します。
-   * （**任意、データソースが既に設定されている場合のみ**）「**[!UICONTROL データソース設定]**」の横にあるチェックマークアイコンをタップし、使用するデータソース用のクラウドサービスが存在する設定ノードを選択します。この操作により、選択した設定ノード内の有効なデータソースだけが、以下のページに選択可能なデータソースとして表示されます。ただし、JDBC データベースと [!DNL Experience Manager] ユーザープロファイルのデータソースは、デフォルトで表示されます。設定ノードを選択しなかった場合、すべての設定ノード内のデータソースが表示されます。
+   * （**任意、データソースが既に設定されている場合のみ**）「**[!UICONTROL データソース設定]**」の横にあるチェックマークアイコンをタップし、使用するデータソース用のクラウドサービスが存在する設定ノードを選択します。この操作により、選択した設定ノード内の有効なデータソースだけが、以下のページに選択可能なデータソースとして表示されます。ただし、 [!DNL Experience Manager] ユーザープロファイルデータソースは、デフォルトで一覧表示されます。 設定ノードを選択しなかった場合、すべての設定ノード内のデータソースが表示されます。
 
 1. 「**[!UICONTROL 次へ]**」をタップします。
 
@@ -109,7 +109,7 @@ ht-degree: 62%
 1. Apache Sling のコンテキスト対応設定を作成します。 OSGi 設定を作成するには：
    1. **での OSGi 設定ファイルのセットアップ [!DNL Experience Manager] アーキタイププロジェクト。**
 PID を使用した OSGi Factory Configuration ファイルの作成 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。 詳しくは、 [の OSGi の設定 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider` で使用される様々なキャッシュに配分されます。実行モードごとに値を変更する必要がある各実行モードフォルダーの下に、同じ名前のファイルを作成します。 詳しくは、 [の OSGi の設定 [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **OSGI 設定 json を設定します。** Apache Sling Context-Aware Configuration Override Provider を使用するには：
       1. ローカル開発インスタンス `/system/console/configMgr`、という名前でファクトリ OSGi 設定を選択します。 **[!UICONTROL Apache Sling Context-Aware Configuration Override Provider:OSGi 設定]**.

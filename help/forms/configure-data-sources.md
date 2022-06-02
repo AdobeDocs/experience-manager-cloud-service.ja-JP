@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
+source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
-source-wordcount: '1536'
-ht-degree: 87%
+source-wordcount: '1716'
+ht-degree: 89%
 
 ---
 
@@ -16,13 +16,16 @@ ht-degree: 87%
 
 ![データ統合](do-not-localize/data-integeration.png)
 
-[!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。以下のタイプがサポートされています。これらのタイプは、すぐに使用することができます。ただし、これらの機能を少しカスタマイズするだけで、他のデータソースを統合することもできます。
+[!DNL Experience Manager Forms] のデータ統合機能により、複数の異なるデータソースを設定して接続することができます。次のタイプが標準でサポートされています。
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * RESTful Web サービス
 * SOAP ベース Web サービス
-* OData サービス
+* OData サービス （バージョン 4.0）
+* Microsoft Dynamics
+* SalesForce
+* Microsoft Azure Blob Storage
 
 データ統合では、すぐに使用できる認証タイプとして、OAuth2.0 認証、基本認証、API キー認証がサポートされています。また、Web サービスにアクセスするためのカスタムの認証タイプを実装することもできます。RESTful、SOAP ベース、OData の各サービスは [!DNL Experience Manager] as a Cloud Service<!--, JDBC for relational databases --> で設定されますが、[!DNL Experience Manager] ユーザープロファイル用のコネクタは [!DNL Experience Manager] web コンソールで設定されます。
 
@@ -88,7 +91,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 ## クラウドサービス設定用フォルダーの構成 {#cloud-folder}
 
-RESTful サービス、SOAP サービス、OData サービスを設定するには、クラウドサービス用のフォルダーを設定する必要があります。
+RESTful サービス、SOAP サービス、OData サービスのクラウドサービスを設定するには、クラウドサービス用のフォルダーを設定する必要があります。
 
 [!DNL Experience Manager] のすべてのクラウドサービス設定は、[!DNL Experience Manager] リポジトリーの `/conf` フォルダー内に保存されます。デフォルトの場合、`conf` フォルダーには `global` フォルダーが含まれています。このフォルダーで、クラウドサービスの設定を作成することができます。ただし、このフォルダーを手動でクラウド設定用に有効にする必要があります。追加のフォルダーを `conf` フォルダー内に作成して、クラウドサービスの作成と編集を行うこともできます。
 
@@ -110,7 +113,7 @@ RESTful サービス、SOAP サービス、OData サービスを設定するに�
 
 ## RESTful Web サービスの設定 {#configure-restful-web-services}
 
-RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/)内に記述できます。[!DNL Experience Manager] as a Cloud Service で RESTful web サービスを設定するには、ファイルシステムに [!DNL Swagger] ファイルが存在しているか、Swagger ファイルがホストされる URL を指定する必要があります。
+RESTful Web サービスは、[!DNL Swagger] の仕様に従い、JSON 形式または YAML 形式で [Swagger 定義ファイル](https://swagger.io/specification/v2/)内に記述できます。で RESTful Web サービスを設定するには、以下を実行します。 [!DNL Experience Manager] as a Cloud Service [!DNL Swagger] ファイル ([Swagger バージョン 2.0](https://swagger.io/specification/v2/)) をファイルシステムまたはファイルがホストされている URL に設定する必要があります。
 
 RESTful サービスを設定するには、以下の手順を実行します。
 
@@ -138,29 +141,58 @@ RESTful サービスを設定するには、以下の手順を実行します。
 
 ### パフォーマンスを最適化するためのフォームデータモデル HTTP クライアント設定 {#fdm-http-client-configuration}
 
-[!DNL Experience Manager Forms] フォームデータモデルを使用して、データソースとして RESTful Web サービスとの統合時に、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
-フォームデータモデルの HTTP クライアントを設定するには、次の手順を実行します。
+データソースとして RESTful web サービスと統合する場合の [!DNL Experience Manager Forms] フォームデータモデルには、パフォーマンス最適化のための HTTP クライアント設定が含まれています。
 
-1. にログインします。 [!DNL Experience Manager Forms] 管理者としてのオーサーインスタンスの次の場所に移動します。 [!DNL Experience Manager] web コンソールバンドル。 デフォルトの URL は [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+次の **[!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定]** 正規表現を指定する設定：
+
+* 以下を使用： `http.connection.max.per.route` フォームデータモデルと RESTful Web サービス間で許可される最大接続数を設定するプロパティです。 デフォルト値は 20 接続です。
+
+* 以下を使用： `http.connection.max` プロパティを使用して、各ルートに許可される最大接続数を指定します。 デフォルト値は 40 接続です。
+
+* 以下を使用： `http.connection.keep.alive.duration` 永続的な HTTP 接続が有効に保たれる期間を指定するプロパティです。 デフォルト値は 15 秒です。
+
+* 以下を使用： `http.connection.timeout` 期間を指定するプロパティ ( [!DNL Experience Manager Forms] サーバは接続を確立するのを待ちます。 デフォルト値は 10 秒です。
+
+* 以下を使用： `http.socket.timeout` プロパティを使用して、2 つのデータパケットの間の無操作状態の最大期間を指定します。 デフォルト値は 30 秒です。
+
+以下の JSON ファイルにサンプルが表示されています。
+
+```json
+{   
+   "http.connection.keep.alive.duration":"15",   
+   "http.connection.max.per.route":"20",   
+   "http.connection.timeout":"10",   
+   "http.socket.timeout":"30",   
+   "http.connection.idle.connection.timeout":"15",   
+   "http.connection.max":"40" 
+} 
+```
+
+設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
+
+
+フォームデータモデルの HTTP クライアントを設定するには、以下の手順を実行します。
+
+1. [!DNL Experience Manager Forms] オーサーインスタンスに管理者としてログインし、[!DNL Experience Manager] web コンソールバンドルに移動します。デフォルトの URL は [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) です。
 
 1. タップ **[!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定]**.
 
 1. 内 [!UICONTROL REST データソース用のフォームデータモデル HTTP クライアント設定] ダイアログ：
 
-   * フォームデータモデルと、 **[!UICONTROL 接続の制限（合計）]** フィールドに入力します。 デフォルト値は 20 接続です。
+   * **[!UICONTROL 接続制限（合計）]**&#x200B;フィールドに、フォームデータモデルと RESTful web サービス間の接続許可数の上限を指定します。デフォルト値は 20 接続です。
 
-   * 内の各ルートに対して許可される最大接続数を指定します **[!UICONTROL ルート単位の接続制限]** フィールドに入力します。 デフォルト値は 2 接続です。
+   * **[!UICONTROL ルートごとの接続制限]**&#x200B;フィールドで、各ルートに許可される最大接続数を指定します。デフォルト値は 2 接続です。
 
-   * 永続的な HTTP 接続が有効に保たれる期間を、 **[!UICONTROL 生き続ける]** フィールドに入力します。 デフォルト値は 15 秒です。
+   * **[!UICONTROL Keep Alive]** フィールドで、持続的な HTTP 接続を維持する期間を指定します。デフォルト値は 15 秒です。
 
-   * 期間を指定します。 [!DNL Experience Manager Forms] サーバは、 **[!UICONTROL 接続タイムアウト]** フィールドに入力します。 デフォルト値は 10 秒です。
+   * **[!UICONTROL 接続タイムアウト]**&#x200B;フィールドで、[!DNL Experience Manager Forms] サーバーが接続を確立するまでの待ち時間を指定します。デフォルト値は 10 秒です。
 
-   * 内の 2 つのデータパケットの間の無操作状態の最大期間を指定します。 **[!UICONTROL ソケットタイムアウト]** フィールドに入力します。 デフォルト値は 30 秒です。
-
+   * **[!UICONTROL ソケットタイムアウト]**&#x200B;フィールドに、2 つのデータパケット間の非アクティブの最大時間を指定します。デフォルト値は 30 秒です。
 
 ## SOAP Web サービスの設定 {#configure-soap-web-services}
 
-SOAP ベースの Web サービスは、[Web Services Description Language（WSDL）の仕様](https://www.w3.org/TR/wsdl)に従って記述します。[!DNL Experience Manager Forms] は RPC スタイルの WSDL モデルをサポートしません。
+SOAP ベースの web サービスは、[Web Services Description Language（WSDL）の仕様](https://www.w3.org/TR/wsdl)に従って記述します。[!DNL Experience Manager Forms] は RPC スタイルの WSDL モデルをサポートしません。
 
 [!DNL Experience Manager] as a Cloud Service で SOAP ベースの web サービスを設定するには、その web サービスの WSDL URL を確認して、以下の手順を実行します。
 
@@ -194,7 +226,7 @@ SOAP Web サービス WSDL のインポート文として許可される絶対 U
 }
 ```
 
-設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=ja#deployment-process)します。
+設定の値をセットするには、[AEM SDK を使用して OSGi 設定を生成](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)し、Cloud Service インスタンスに[設定をデプロイ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)します。
 
 ## OData サービスの設定 {#config-odata}
 
