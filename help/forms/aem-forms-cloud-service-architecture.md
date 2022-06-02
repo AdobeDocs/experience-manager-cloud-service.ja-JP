@@ -1,7 +1,7 @@
 ---
 title: Experience Manager [!DNL AEM Forms] as a Cloud Service のアーキテクチャ
 description: ' [!DNL AEM Forms] a s a Cloud Service のアーキテクチャを理解し、プラットフォームの拡張性、回復性、パフォーマンスの側面について学習します。'
-source-git-commit: 494e37b24ab1c8432613d6a62a4c3a1d48d216ee
+source-git-commit: cb7b417b9b4898b0656e79d6f699e8d5cd611e76
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 25%
@@ -17,10 +17,13 @@ AEM Forms as a Cloud Serviceは、主に次の 2 つの使用例をサポート�
 
 ## アーキテクチャ図とフロー図
 
-|  |  |
-|---|---|
-| **Forms Digital Enrollment** | ![Forms — デジタル登録](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg) |
-| **Forms Communications** | ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg) |
+**Forms Digital Enrollment**
+
+![Forms — デジタル登録](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
+
+**Forms Communications**
+
+![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## コンポーネント
 
