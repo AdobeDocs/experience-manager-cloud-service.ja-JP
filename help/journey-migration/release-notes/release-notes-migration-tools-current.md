@@ -1,17 +1,17 @@
 ---
-title: AEM as a Cloud Service Release 2022.6.0 の移行ツールのリリースノート
-description: AEM as a Cloud Service Release 2022.6.0 の移行ツールのリリースノート
+title: AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリースノート
+description: AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
+source-git-commit: 48dd6b3184cdde06b902eae35fac42515f606e77
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 23%
 
 ---
 
-# AEM as a Cloud Service Release 2022.6.0 の移行ツールのリリースノート {#release-notes}
+# AEM as a Cloud Service Release 2022.5.0 の移行ツールのリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Service 2022.6.0 の移行ツールのリリースノートの概要を説明しています。
+このページでは、AEM as a Cloud Service 2022.5.0 の移行ツールのリリースノートの概要を説明しています。
 
 ## ベストプラクティスアナライザー {#bpa-release}
 
