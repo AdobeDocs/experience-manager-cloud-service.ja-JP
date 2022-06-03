@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの概要
 description: コンテンツ転送ツールの概要
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 72%
@@ -36,7 +36,7 @@ ht-degree: 72%
 * 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました。
 * 取り込みログは保持され、常にトラブルシューティングに使用できます
 
-新しいバージョンの使用を開始するには (Vxx) <!-- update when version is available --> このツールでは、アーキテクチャが大きく変更されたので、古いバージョンのコンテンツ転送ツールをアンインストールする必要があります。
+新しいバージョン (v2.0.10) の使用を開始するには、以下を実行します。 <!-- update when version is available --> このツールでは、アーキテクチャが大きく変更されたので、古いバージョンのコンテンツ転送ツールをアンインストールする必要があります。
 
 >[!NOTE]
 >

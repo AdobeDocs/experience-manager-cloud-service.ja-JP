@@ -2,7 +2,7 @@
 title: コンテンツ転送ツールの基本を学ぶ
 description: コンテンツ転送ツールの基本を学ぶ
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 43%
@@ -102,7 +102,7 @@ ht-degree: 43%
 
 Cloud Acceleration Manager で作成した移行セットを入力するには、最新バージョンのコンテンツ転送ツールをソースAdobe Experience Manager(AEM) インスタンスにインストールする必要があります。 移行セットの入力方法については、この節を参照してください。
 
-1. ソースAdobe Experience Managerインスタンスに最新バージョン (Vxxx) のコンテンツ転送ツールをインストールしたら、に移動します。 **運用 — コンテンツ移行**
+1. ソースAdobe Experience Managerインスタンスに最新バージョン (v2.0.10) のコンテンツ転送ツールをインストールしたら、に移動します。 **運用 — コンテンツ移行**
 
 1. クリック **移行セットを作成**
 
