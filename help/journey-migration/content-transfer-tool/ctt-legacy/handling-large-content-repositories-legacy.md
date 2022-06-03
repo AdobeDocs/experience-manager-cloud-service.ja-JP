@@ -1,26 +1,21 @@
 ---
-title: 大規模なコンテンツリポジトリーの処理
+title: 大規模なコンテンツリポジトリの処理（レガシー）
 description: この節では、大規模なコンテンツリポジトリーの処理について説明します
-exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 97%
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
-# 大規模なコンテンツリポジトリーの処理 {#handling-large-content-repositories}
+# 大規模なコンテンツリポジトリーの処理 (レガシー) {#handling-large-content-repositories}
 
 ## 概要 {#overview}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_precopy"
->title="大規模なコンテンツリポジトリーの処理"
->abstract="コンテンツを AEM as a Cloud Service に移動するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮するために、CTT は、オプションのコピー前手順として AzCopy を活用できます。この前段階が設定されたら、AzCopy は、抽出段階で Amazon S3 または Azure Blob Storage から移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja#setting-up-pre-copy-step" text="AzCopy をコピー前手順として使用する"
-
 コンテンツ転送ツール（CTT）で大量の BLOB をコピーするには、数日かかる場合があります。
-コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツを AEM as a Cloud Service に移動するために、CTT では、オプションのコピー前手順として [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を活用できます。この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  事前コピー手順は、最初の完全な抽出および取り込みに最も効果的です。 ただし、後続のトップアップに対して事前コピーを使用することは推奨されません（トップアップのサイズが 200GB 未満の場合）。プロセス全体に時間がかかる可能性があるからです。 この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。
+コンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮して、コンテンツを AEM as a Cloud Service に移動するために、CTT では、オプションのコピー前手順として [AzCopy](https://docs.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-v10) を活用できます。この事前コピー手順を使用できるのは、ソース AEM インスタンスが Amazon S3、Azure Blob Storage データストアまたはファイルデータストアを使用するように設定されている場合です。  この事前手順が設定されたら、AzCopy は、抽出段階で Amazon S3、Azure Blob Storage またはファイルデータストアから移行セット BLOB ストアに BLOB をコピーします。取り込み段階では、AzCopy は、移行セットの BLOB ストアから宛先の AEM as a Cloud Service BLOB ストアに BLOB をコピーします。
 
 >[!NOTE]
 > この機能は、CTT 1.5.4 リリースで導入されました。

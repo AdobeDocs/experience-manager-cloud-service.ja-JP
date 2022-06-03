@@ -1,15 +1,16 @@
 ---
-title: コンテンツ転送の検証
+title: コンテンツ転送の検証（レガシー）
 description: コンテンツ転送ツールを使用して、コンテンツ転送を検証します
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
 
-# コンテンツ転送の検証 {#validating-content-transfers}
+# コンテンツ転送の検証（レガシー） {#validating-content-transfers}
 
 ## はじめに {#getting-started}
 
@@ -44,11 +45,11 @@ If **抽出時にステージングコンテナを上書き** が有効になっ
 
 * **抽出（上書き）**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **取り込み（ワイプ）**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **備考**
 
@@ -58,11 +59,11 @@ If **抽出時にステージングコンテナを上書き** が有効になっ
 
 * **抽出**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **取り込み**
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **備考**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 上記の失敗例は、取り込みを実行し、取り込み中にノードが関与しないように、取り込みを無効にして同じ取り込みを再実行することで達成されました。すべてはターゲット上に既に存在していました。
 
-検証レポートは、取り込みログに含まれる以外に、 **取り込みジョブ** Cloud Acceleration Manager のユーザーインターフェイス。 それには、3 つのドット (**...**) をクリックしてから、 **検証レポート** をクリックして、検証レポートを表示します。
+検証レポートは、取り込みログに含まれるだけでなく、コンテンツ転送ツールのユーザーインターフェイスからもアクセスできます。 それには、移行セットを選択し、 **検証** ボタンをクリックします。
 
 
-![画像](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![画像](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+検証ログダイアログが開きます。
+
+![画像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+以下を使用： **発行/作成者の検証レポート** ボタンを使用して、ターゲット環境の特定の層に対する最新の取り込みの検証レポートを表示します。 小規模なパブリッシュ取り込みの例を以下に示します。
+
+![画像](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>この **発行/作成者の検証レポート** リンクは、取り込みが完了すると表示されます。 また、検証レポートは持続されるので、取り込みログと同様に、取り込みが完了した後で期限切れになることはありません。
 
 ## トラブルシューティング {#troubleshooting}
 

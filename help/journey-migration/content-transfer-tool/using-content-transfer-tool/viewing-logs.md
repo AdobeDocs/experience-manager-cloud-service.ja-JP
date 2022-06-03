@@ -2,10 +2,10 @@
 title: コンテンツ転送ツールにおける移行セットのログの表示
 description: コンテンツ転送ツールにおける移行セットのログの表示
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '238'
+ht-degree: 59%
 
 ---
 
@@ -23,19 +23,17 @@ ht-degree: 100%
 
 ## ログを表示する手順 {#viewing-logs}
 
-既存の移行セットのログを&#x200B;*概要*&#x200B;ページから表示できます。次の手順に従います。
+抽出ログを表示するには、ソースAdobe Experience Managerインスタンスに移動し、必要な移行セットを選択します。
 
-1. *概要*&#x200B;ページに移動し、ログを表示する移行セットを選択し、アクションバーの「**ログを表示**」をクリックします。
+次に、次の手順に従います。
 
-   ![画像](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. 移行セットを選択し、 **ログを表示** をクリックします。 ログダイアログが表示されます。 クリック **抽出ログ** ログを新しいタブに表示します。
 
-1. **ログ**&#x200B;ダイアログボックスが表示されます。「**抽出ログ**」をクリックすると、ログが新しいタブに表示されます。
-
-   ![画像](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-または、
-
-   *概要*&#x200B;画面から移行セットのログを直接表示することもできます。移行セットを選択し、「**抽出**」フィールド内のステータスをクリックします。下図の場合は、「**完了**」をクリックすると、ログが新しいタブに表示されます。
-
-   ![画像](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   または、 **完了** ステータスを使用して、ログを新しいタブに表示できます。
 
 1. ユーザーインターフェイスを使用せずにログの末尾を表示するには、ソース AEM 環境に SSH で接続し、`crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`で tail コマンドを実行します。
+
+1. 取り込みログを表示するには、Cloud Acceleration Manager の取り込みジョブリストに移動し、3 つのドット (**...**) をクリックします。 次の項目をクリックすると、 **ログをダウンロード** ログをダウンロードします。
+
+   ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

@@ -1,46 +1,20 @@
 ---
-title: コンテンツ転送ツールの概要
+title: コンテンツ転送ツールの概要（レガシー）
 description: コンテンツ転送ツールの概要
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 72%
+source-wordcount: '476'
+ht-degree: 97%
 
 ---
 
-# 概要 {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="概要"
->abstract="コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。プリンシパル（ユーザーやグループ）も自動的に転送されます。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="ガイドラインとベストプラクティス"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# コンテンツ転送ツールの概要（レガシー） {#overview-content-transfer-tool}
 
 コンテンツ転送ツールは、アドビが開発したツールで、既存のコンテンツをソース AEM インスタンス（オンプレミスまたは AMS）からターゲット AEM as a Cloud Service インスタンスに移動するためのものです。
 
 プリンシパル（ユーザーやグループ）も自動的に転送されます。
-
-コンテンツ転送ツールの新しいバージョンが利用でき、コンテンツ転送プロセスと Cloud Acceleration Manager が統合されています。 次の利点をすべて活用するには、この新しいバージョンに切り替えることを強くお勧めします。
-
-* 移行セットを 1 回抽出し、同時に複数の環境に取り込むセルフサービス方法
-* 読み込み状態、ガードレール、エラー処理が改善され、ユーザーエクスペリエンスが向上しました。
-* 取り込みログは保持され、常にトラブルシューティングに使用できます
-
-新しいバージョンの使用を開始するには (Vxx) <!-- update when version is available --> このツールでは、アーキテクチャが大きく変更されたので、古いバージョンのコンテンツ転送ツールをアンインストールする必要があります。
-
->[!NOTE]
->
-> 移行が既に進行中の場合は、移行が完了するまで以前のバージョンの CTT を使用し続けることができます。 以前のバージョンの CTT に関連するドキュメントについては、 [レガシードキュメント](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## コンテンツ転送ツールの諸段階 {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ ht-degree: 72%
 
 移行セットには次の特性があります。
 
-* 新しいバージョンでは、Cloud Acceleration Manager で作成したプロジェクト内に最大 5 つの移行セットを作成できます。
+* コンテンツ転送時に一度に作成および維持管理できる移行セットは最大 10 個です。
 * 各移行セットには、一意の名前を付ける必要があります。
+* 移行セットが 30 日以上非アクティブになっている場合は、自動的に削除されます。
+* 移行セットは、作成すると常に特定の環境に関連付けられます。同じ環境のオーサーまたはパブリッシュインスタンスにのみ取り込むことができます。
+
 
 コンテンツ転送ツールには、差分コンテンツ追加をサポートする機能があります。差分追加では、前回のコンテンツ転送アクティビティ以降に加えられた変更のみを転送できます。
 

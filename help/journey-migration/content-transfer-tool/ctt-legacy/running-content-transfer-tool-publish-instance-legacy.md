@@ -1,15 +1,16 @@
 ---
-title: パブリッシュインスタンスでのコンテンツ転送ツールの実行
+title: パブリッシュインスタンスでのコンテンツ転送ツールの実行（レガシー）
 description: パブリッシュインスタンスでのコンテンツ転送ツールの実行
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
 
-# パブリッシュインスタンスでのコンテンツ転送ツールの実行 {#run-content-transfer-tool-publish-instance}
+# パブリッシュインスタンスでのコンテンツ転送ツールの実行 (レガシー) {#run-content-transfer-tool-publish-instance}
 
 ## はじめに {#introduction}
 
@@ -25,6 +26,8 @@ ht-degree: 100%
 * オーサーインスタンスで使用したバージョンと同じバージョンのコンテンツ転送ツールを使用します。
 
 * 移行する必要があるのは 1 つのパブリッシュノードのみです。抽出を開始する前に、それをロードバランサーから削除してください。
+
+* 移行セットを作成する場合は、AEM as a Cloud Service 環境のオーサー層の URL を使用します。
 
 * パブリッシュへの取り込み時に、パブリッシュ層は（オーサー層とは異なり）スケールダウンされません。
 

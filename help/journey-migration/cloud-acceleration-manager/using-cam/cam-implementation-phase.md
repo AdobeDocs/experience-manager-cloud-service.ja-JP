@@ -2,10 +2,10 @@
 title: Cloud Acceleration Manager での実装フェーズ
 description: このページでは、Cloud Acceleration Manager における実装フェーズの概要について説明します。
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f2cad442ba85d1d889eda669502e120406a4380b
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '793'
+ht-degree: 75%
 
 ---
 
@@ -89,24 +89,32 @@ AEM as a Cloud Service デプロイメントカードには、コードを AEM a
 
 ## コンテンツ転送カードの使用 {#content-transfer}
 
-「コンテンツ転送」アクティビティカードには、コンテンツ転送ツールを使用して現在の AEM インスタンスから AEM as a Cloud Service にコンテンツを移動する際に確認する必要があるガイダンスと考慮事項が表示されます。
+「コンテンツ転送」カードを使用すると、現在のAEMインスタンスからAEM as a Cloud Serviceへのコンテンツ転送を開始および管理できます。
 
 この節では、「コンテンツ転送」アクティビティカードについて説明します。
 
-1. **コンテンツ転送**&#x200B;アクティビティカードの「**表示**」ボタンをクリックします。
+1. をクリックします。 **レビュー** ボタン **コンテンツ転送** アクティビティカード。
 
-   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
-1. コンテンツカルーセルには、移行ジャーニーのこのフェーズに関係のある情報が表示されます。
+1. コンテンツの転送を開始するには、移行セットを作成する必要があります。 クリック **移行セットを作成**. 移行セットを使用すると、コンテンツをAEM as a Cloud Serviceに転送できます。
 
-   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
    >コンテンツ転送ツールを使用する前に、[前提条件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=ja)および[ベストプラクティスとガイドライン](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=ja)を確認してください。
 
+1. 移行セットに入力し、コンテンツ転送の抽出段階を完了するには、コンテンツ転送ツールをダウンロードしてインストールする必要があります。 レビュー [コンテンツ転送ツールの概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) を参照して、コンテンツ転送ツールの使用方法を確認してください。
+
+1. 移行セットからAEM as a Cloud Service上の環境にコンテンツを取り込むには、取り込みを開始する必要があります。 に移動します。 **取り込みジョブ** をクリックし、 **新しい取り込み**. レビュー [Target へのコンテンツの取り込み](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en) を参照して、コンテンツ転送のインジェスト段階を完了する方法を確認してください。
+
+   ![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
+
 ### コンテンツ転送時間の推定 {#calculating}
 
-コンテンツ転送アクティビティの完了に要する時間を推定するための新しいコンテンツ転送計算ツールが用意されました。コンテンツリポジトリーのサイズスライダーを使用して、プロジェクトに当てはまるサイズを選択できます。転送時間は、抽出段階と取り込み段階で異なります。
+コンテンツ転送ツールの計算ツールが提供され、コンテンツ転送アクティビティの完了に要する時間を見積もることができます。 コンテンツリポジトリーのサイズスライダーを使用して、プロジェクトに当てはまるサイズを選択できます。転送時間は、抽出段階と取り込み段階で異なります。
+
+![画像](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-4.png)
 
 >[!NOTE]
 >この時間は推定値に過ぎません。ネットワーク速度やインスタンスの規模拡大に要する時間などの要因は、これらの推定では考慮されていません。
