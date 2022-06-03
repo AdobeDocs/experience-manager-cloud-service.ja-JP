@@ -2,7 +2,7 @@
 title: AEM as a Cloud Service Release 2022.6.0 の移行ツールのリリースノート
 description: AEM as a Cloud Service Release 2022.6.0 の移行ツールのリリースノート
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 23%
@@ -22,11 +22,8 @@ ht-degree: 23%
 ### 新機能 {#what-is-new-bpa}
 
 * CoralUI およびクラシックダイアログウィジェットを使用したカスタムダイアログウィジェットの使用状況を検出し、レポートする機能。 カスタムのクラシックダイアログウィジェットを ExtJS から CoralUI に変換することをお勧めします。 カスタム Coral ダイアログウィジェットを CoralUI3 に更新する必要があります。
-
 * Assets Share Commons の使用状況とバージョンを検出し、レポートする機能。 Asset Share Commons 1.x はAEM as a Cloud Serviceではサポートされていないので、2.x にアップグレードする必要があります。
-
 * バージョンのノード数を検出し、レポートする機能。
-
 * カスタムレプリケーションエージェントまたは変更された標準のレプリケーションエージェントを検出してレポートする機能。
 
 ### バグの修正 {#bug-fixes-bpa}
