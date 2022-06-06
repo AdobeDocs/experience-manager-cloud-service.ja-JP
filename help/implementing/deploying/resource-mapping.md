@@ -7,9 +7,9 @@ content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 61%
 
 例えば、これらのマッピングを使用すると次のことが可能です。
 
-* すべてのリクエストの先頭にプレフィックスを付けます。 `/content` 内部構造は、Web サイトの訪問者に対して非表示になります。
-* リダイレクトを定義して、 `/content/en/gateway` Web サイトのページがにリダイレクトされます。 `https://gbiv.com/`.
+* すべてのリクエストに `/content` というプレフィックスを付けて、web サイトの訪問者に内部構造が表示されないようにする。
+* Web サイトの `/content/en/gateway` ページへのリクエストがすべて `https://gbiv.com/` にリダイレクトされるように、リダイレクトを定義する。
 
-1 つの可能な HTTP マッピングでは、すべての要求が `localhost:4503` と `/content`. このようなマッピングを使用すると、Web サイトの訪問者に対して内部構造を非表示にすることができます。例えば、次のページにアクセスできます。
+HTTP マッピングの一例として、`localhost:4503` に対するすべてのリクエストに `/content` というプレフィックスを指定します。このようなマッピングを使用すると、Web サイトの訪問者に対して内部構造を非表示にすることができます。例えば、次のページの場合は、
 
 `localhost:4503/content/we-retail/en/products.html`
 
-マッピング前のページは次のとおりです。
+次の URL を使用してアクセスできます。
 
 `localhost:4503/we-retail/en/products.html`
 
-マッピングによってプレフィックスが自動的に追加されるので `/content` から `/we-retail/en/products.html`.
+マッピングによって、`/content` というプレフィックスが `/we-retail/en/products.html` に自動的に追加されるからです。
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ ht-degree: 61%
 
 マッピングでは 2 つのリストが作成されます。JCR Resource Resolver は、これらのリストを（トップダウン）評価して一致項目を探します。
 
-これらのリストは、（設定情報と共に） **JCR ResourceResolver** Felix コンソールのオプション例： `https://<*host*>:<*port*>/system/console/jcrresolver`:
+これらのリストは、Felix コンソールの **JCR ResourceResolver** オプション（例：`https://<*host*>:<*port*>/system/console/jcrresolver`）で（設定情報と一緒に）確認できます。
 
 * Configuration
 （[Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) 用に定義された）現在の設定を表示します。
@@ -68,11 +68,11 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 
 このパターンは次のリプレースメントを呼び出します。
 
-**代替機能** `/libs/cq/core/content/welcome.html`.
+**リプレースメント** `/libs/cq/core/content/welcome.html`.
 
-これにより、次の要求がリダイレクトされます。
+これにより、次のリクエストがリダイレクトされます。
 
-`https://localhost:4503/welcome` &quot;
+`https://localhost:4503/welcome` ``
 
 リダイレクト先は次のとおりです。
 
@@ -82,7 +82,7 @@ URL をリソースにマップするために ResourceResolver.resolve メソ�
 
 >[!NOTE]
 >
->正規表現の定義方法を説明するリソースが多数あります。例： [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>正規表現の定義方法について説明したリソースは多数あります（例：[https://www.regular-expressions.info/](https://www.regular-expressions.info/)）。
 
 ### AEM でのマッピング定義の作成 {#creating-mapping-definitions-in-aem}
 
@@ -90,13 +90,13 @@ AEM の標準インストールには、次のフォルダーがあります。
 
 `/etc/map/http`
 
-これは、HTTP プロトコル用のマッピングを定義する場合に使用する構造です。その他のフォルダー ( `sling:Folder`) は以下に作成できます。 `/etc/map` マッピングする他のプロトコルに対して。
+これは、HTTP プロトコル用のマッピングを定義する場合に使用する構造です。マッピングするその他のプロトコル用に別のフォルダー（`sling:Folder`）を `/etc/map` の下に作成できます。
 
 #### /content への内部リダイレクトの設定 {#configuring-an-internal-redirect-to-content}
 
-https://localhost:4503/への要求の先頭に「 `/content`:
+https://localhost:4503/ に対するリクエストに `/content` というプレフィックスを指定するマッピングを作成するには：
 
-1. CRXDE を使用して、に移動します。 `/etc/map/http`.
+1. CRXDE を使用して `/etc/map/http` に移動します。
 
 1. 新しいノードを作成します。
 
@@ -122,17 +122,13 @@ https://localhost:4503/への要求の先頭に「 `/content`:
 
 1. 「**すべて保存**」をクリックします。
 
-これは、次のようなリクエストを処理します。
-`localhost:4503/geometrixx/en/products.html`
-次のように：
-`localhost:4503/content/geometrixx/en/products.html`
-が要求されていた
+これにより、例えば `localhost:4503/geometrixx/en/products.html` というリクエストは、`localhost:4503/content/geometrixx/en/products.html` がリクエストされたものとして処理されます。
 
 >[!NOTE]
 >
 >使用可能な sling のプロパティとその設定方法について詳しくは、Sling のドキュメントの「[Resources](https://sling.apache.org/site/mappings-for-resource-resolution.html)」を参照してください。
->例： [文字列補間](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap) は、環境変数を通じて環境値ごとに取得するマッピングを設定できるので、非常に役に立ちます。
+>例えば、[文字列補間](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html#string-interpolation-for-etcmap)は、環境変数から環境ごとに値を取得するマッピングを設定できるので、非常に役に立ちます。
 
 >[!NOTE]
 >
->以下を使用できます。 `/etc/map.publish` パブリッシュ環境の設定を保持する。 次に、これらを複製し、新しい場所 ( `/etc/map.publish`) が **マッピング場所** の [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) パブリッシュ環境の
+>`/etc/map.publish` を使用して、パブリッシュ環境用の設定を保持できます。これらの設定をレプリケートして、パブリッシュ環境の [Apache Sling Resource Resolver](/help/overview/seo-and-url-management.md#etc-map) の「**Mapping Location**」用に新しい場所（`/etc/map.publish`）を設定する必要があります。
