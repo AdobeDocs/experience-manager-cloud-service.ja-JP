@@ -3,9 +3,9 @@ title: Cloud Manager とクイックサイト作成ワークフローについ�
 description: Cloud Manager と、新しいクイックサイト作成プロセスとの結び付けを説明します。
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -76,23 +76,23 @@ Cloud Manager と、新しいクイックサイト作成プロセスとの結び
 
 Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであり、プラットフォームへの単一のエントリポイントとして機能します。
 
-エンタープライズ開発の設定をおこなうお客様をサポートするために、AEM as a Cloud Service は Cloud Manager およびその専用 CI/CD パイプラインと完全に統合されています。クイックサイト作成ツールは、専用のフロントエンド開発パイプラインをサポートするために、これらの機能を拡張します。
+エンタープライズ開発の設定を行うお客様をサポートするために、AEM as a Cloud Service は Cloud Manager およびその専用 CI/CD パイプラインと完全に統合されています。クイックサイト作成ツールは、専用のフロントエンド開発パイプラインをサポートするために、これらの機能を拡張します。
 
 このジャーニーのために、Cloud Manager を完全に理解する必要ありません。大まかに言えば、Cloud Manager は、複数のレベルの構造で構成されています。
 
 ![Cloud Manager の構造](assets/cloud-manager-structure.png)
 
 * **テナント** - すべての顧客にテナントがプロビジョニングされます。
-* **プログラム**  — 各テナントには 1 つ以上のプログラムがあり、多くの場合、お客様がライセンスを受けたソリューションを反映しています。
-* **環境**  — 各プログラムには、実稼動コンテンツ用、ステージング用、開発用など、複数の環境があります。
+* **プログラム** - 各テナントには 1 つ以上のプログラムがあります。これらは、多くの場合、顧客がライセンスを取得したソリューションを反映しています。
+* **環境** - 各プログラムには複数の環境があります。ライブコンテンツ用の実稼働環境、ステージングの環境、開発目的の環境などです。
 * **リポジトリ** - 環境には Git リポジトリがあり、アプリケーションとフロントエンドコードが維持されています。
 * **ツールとワークフロー** - パイプラインは、リポジトリから環境へのコードのデプロイメントを管理します。
 
-例は、多くの場合、この階層を文脈化する際に役立ちます。
+多くの場合、この階層を具体的に説明するうえで例が役に立ちます。
 
-* WKND Travel and Adventure Enterprises は、 **テナント** 旅行関連のメディアに焦点を当てています。
-* WKND Travel and Adventure Enterprises テナントは、2 つの **プログラム**:WKND Magazine 向けの 1 つの Sites プログラムと WKND Media 向けの 1 つの Assets プログラムです。
-* WKND Magazine と WKND Media の両方のプログラムには、開発、ステージ、実稼動が含まれます **環境**.
+* WKND Travel and Adventure Enterprises は、旅行関連のメディアに重点を置いた&#x200B;**テナント**&#x200B;とします。
+* WKND Travel and Adventure Enterprises テナントには、2 つの **プログラム**&#x200B;があるとします。WKND Magazine 用の 1 つの Sites プログラムと WKND Media 用の 1 つの Assets プログラムです。
+* WKND Magazine プログラムにも WKND Media プログラムにも、開発、ステージング、実稼動の各&#x200B;**環境**&#x200B;があります。
 
 ## クイックサイト作成フロントエンド開発フロー {#flow}
 
@@ -108,7 +108,7 @@ Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであ�
 
 ![クイックサイト作成フロー](assets/qsc-flow.png)
 
-クイックサイト作成ツールを使用する主な利点は、純粋なフロントエンド開発者が実際のカスタマイズのみを担当することです。 フロントエンド開発者は、AEM とのやり取りがなく、AEM の知識は必要ありません。
+クイックサイト作成ツールを使用する主な利点は、純粋なフロントエンド開発者が実際のカスタマイズのみを担当することです。フロントエンド開発者は、AEM とのやり取りがなく、AEM の知識は必要ありません。
 
 ## 次の手順 {#what-is-next}
 
@@ -125,5 +125,5 @@ Cloud Manager は、AEM as a Cloud Service の必須コンポーネントであ�
 
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=ja) - Cloud Manager には、適切な権限を持つ役割が事前に設定されています。これらの役割の詳細と管理方法については、このドキュメントを参照してください。
-* [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマは、npm に基づいています。
-* [webpack](https://webpack.js.org) - AEM テーマを使用してサイトをすばやく作成する場合は、webpack に依存します。
+* [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマが npm に基づいている場合。
+* [webpack](https://webpack.js.org) - サイトをすばやく作成するために使用される AEM テーマが webpack に基づいている場合。
