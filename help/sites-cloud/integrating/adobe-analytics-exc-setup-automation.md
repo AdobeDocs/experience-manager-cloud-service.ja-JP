@@ -8,7 +8,7 @@ hidefromtoc: true
 index: false
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Adobe Analytics と AEM Sites の統合は、かつてないほどシンプル�
 1. 「**Analytics の統合** 」ボタンをタップします。
 1. 表示されたダイアログで、**レポートスイート ID** の名前を入力します。
 
-   この文字列は、選択した AEM サイトの分析データのデータストアとして、Adobe Analytics に新しい [レポートスイート ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja) を作成するために使用されます。 提供された文字列には、一意性を確保するために環境および層の識別子が追加されます。
+   この文字列は、選択した AEM サイトの分析データのデータストアとして、Adobe Analytics に新しい [レポートスイート ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=ja) を作成するために使用されます。提供された文字列には、一意性を確保するために環境および層の識別子が追加されます。
 
 1. ページとパネルを更新し、 **統合ステータスの確認** をタップして、自動化のステータスを確認します。
 
