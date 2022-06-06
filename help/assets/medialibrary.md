@@ -1,14 +1,14 @@
 ---
 title: 基本的なデジタルアセット管理での Media Library の使用
-description: '"[!DNL Experience Manager Assets] とMedia Library（アセット管理）'
+description: '"[!DNL Experience Manager Assets] とアセット管理用の Media Library。"'
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Define what is not included
 
 # 基本的なアセット管理での Media Library の使用 {#manage-assets-using-media-library}
 
-[!DNL Adobe Experience Manager] プラットフォームには、アセットを管理するための様々な機能が用意されています。Media Library を使用すると、少数のアセットをリポジトリーにアップロードし、Web ページで検索して使用し、アセットに対して簡単なアセット管理タスクを実行できます。
+[!DNL Adobe Experience Manager] プラットフォームには、アセットを管理するための様々な機能が用意されています。Media Library を使用すると、少数のアセットをリポジトリにアップロードし、Web ページで検索して使用し、アセットに対して簡単なアセット管理タスクを実行できます。
 
 Media Library は、[!DNL Adobe Experience Manager Sites] ライセンスを補完する軽量のデジタルアセット管理（DAM）ソリューションです。[!DNL Sites] は、Web コンテンツ管理（WCM）ソリューションです。Media Library は、Experience Manager のすべての機能と連携します。
 
@@ -72,7 +72,7 @@ Media Library 機能を使用するには、デフォルトの [!DNL Experience 
 * コンテンツファインダーを使用した [!DNL Sites] ページへのアセットの追加
 * [!DNL Content Fragments] の使用
 * [!DNL Content Fragments] と参照先のメディアアセットに対する HTTP REST および GraphQL API の使用（Sites ライセンスの下で）
-* Marketing Cloud との統合
+* Experience Cloud との統合
 * アセット管理ユーザーインターフェイスのカスタマイズと拡張
 * クエリビルダー（API）にアクセスして検索機能を拡張
 * 静的タグの作成
