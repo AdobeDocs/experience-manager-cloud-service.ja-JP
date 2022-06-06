@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.9.0 リリースのリリースノート。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2020.9.0."'
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 のリリースノート。"'
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
 
 * [!DNL Dynamic Media] の機能強化 
 
-   * 選択的公開 - マーケティングチームは、販促用のマテリアルを作成するために、 [!DNL Dynamic Media] に同期する [!DNL Dynamic Media] スマート切り抜き画像と動的レンディションにアクセスできるようになりました。すべて、グローバル配信用にアセットを [!DNL Dynamic Media] に公開する必要はありません。[!DNL Experience Manager] および [!DNL Dynamic Media] の公開は分離されており、別々におこなうことができます。「[選択的公開](/help/assets/dynamic-media/selective-publishing.md)」を参照してください。
+   * 選択的公開 - マーケティングチームは、販促用のマテリアルを作成するために、 [!DNL Dynamic Media] に同期する [!DNL Dynamic Media] スマート切り抜き画像と動的レンディションにアクセスできるようになりました。すべて、グローバル配信用にアセットを [!DNL Dynamic Media] に公開する必要はありません。[!DNL Experience Manager] および [!DNL Dynamic Media] の公開は分離されており、別々に行うことができます。「[選択的公開](/help/assets/dynamic-media/selective-publishing.md)」を参照してください。
    * 管理者は、プロビジョニング時に受け取った [!DNL Dynamic Media] Cloud Service パスワードをリセットできるようになりました。リセットは、[!DNL Dynamic Media Classic] デスクトップアプリケーションを使用せずに、 [!DNL Experience Manager] ユーザーインターフェイスで実行できます。
 
 * 以下の機能強化について詳しくは、「[AEM Assets Brand Portal の新機能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=ja)」を参照してください。
@@ -60,7 +60,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 製品コンソールに製品検索機能が追加されました。
 
-### バグ修正 {#bug-fixes-commerce}
+### バグの修正 {#bug-fixes-commerce}
 
 * Commerce Cloud 構成は継承を尊重しませんでした。この問題は、設定に値が継承されるように修正されました。
 
@@ -74,9 +74,9 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 * 「コンテンツ監査」の名称が「エクスペリエンス監査」に変更されました。
 * ビルドプロセスは、3 つの Maven コマンドに分けられました。
-* git リポジトリーをクローンできない場合は、最大 3 回再試行されます。
+* git リポジトリをクローンできない場合は、最大 3 回再試行されます。
 
-### バグ修正 {#bug-fixes-cm}
+### バグの修正 {#bug-fixes-cm}
 
 * 「コンテンツ監査」タブで、ベース URL がパブリッシュドメインではなくオーサードメインを使用していて、正しく表示されませんでした。
 
@@ -92,7 +92,7 @@ Cloud Readiness Analyzer リリース v1.1.0 の新機能と更新点につい�
 
 * CRA レポートには、結果のタイプと重要度レベル別に整理された表形式で、結果の概要と数が表示されます。結果の数をクリックすると、自動的にレポート内のその検索結果の場所にスクロールします。
 
-### バグ修正 {#cra-bug-fixes}
+### バグの修正 {#cra-bug-fixes}
 
 * 場合によっては、更新を強制した後に CRA レポートがアップデートされないことがありました。このバージョンでは修正されました。
 
