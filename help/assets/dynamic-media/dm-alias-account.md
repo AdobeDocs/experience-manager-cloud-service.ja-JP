@@ -9,9 +9,9 @@ role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
 source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->Dynamic Mediaの会社エイリアスアカウントを作成するこの機能は、2022 年 1 月のプレリリースチャネルにあります。 詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。 この機能は 2022年2月リリースで一般公開される予定です。
+>2022年1月のプレリリースチャネルには、Dynamic Media の会社エイリアスアカウントを作成する機能があります。お使いの環境でこの機能を有効にする方法については、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。この機能は 2022年2月リリースで一般公開される予定です。
 
 Dynamic Media の URL とビューアの埋め込みコードには、会社のアカウント名が含まれます。このアカウント名は、Dynamic Media のプロビジョニング時に作成されました。ビジネスが買収やブランド変更を受けた、あるいは単にもっと記憶に残る名前を使用したいというシナリオがあるかもしれません。このようなシナリオでは、すべての URL とビューアの埋め込みコード（標準搭載）で会社のアカウント名を手動で更新するのは簡単ではありません。さらに、既存の Dynamic Media リポジトリに影響を与えたり、ライブコンテンツに影響を与えたりする可能性があります。この問題を解決するには、Dynamic Media の会社エイリアスアカウントを設定します。
 
