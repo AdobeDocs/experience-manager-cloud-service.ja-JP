@@ -1,11 +1,11 @@
 ---
-title: '基本操作 '
+title: 基本操作
 description: AEM のナビゲーションとその基本的な使用方法を習得します
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2954'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ## ツールパネル {#tools-panel}
 
-ツールパネルには、同様のツールコンソールをグループ化した様々なカテゴリを含むサイドパネルがあります。ツールコンソールを使用して、Web サイト、デジタルアセット、およびコンテンツリポジトリーのその他の要素の管理に役立つ、数多くの専用ツールおよびコンソールにアクセスできます。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+ツールパネルには、同様のツールコンソールをグループ化した様々なカテゴリを含むサイドパネルがあります。ツールコンソールを使用して、Web サイト、デジタルアセット、およびコンテンツリポジトリのその他の要素の管理に役立つ、数多くの専用ツールおよびコンソールにアクセスできます。<!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to a number of specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
 
 ![ツールパネル](/help/sites-cloud/authoring/assets/tools-panel.png)
 
@@ -461,11 +461,11 @@ AEM の基本的な使用方法を適切に理解できるように、このド�
 
 ### サイト {#site}
 
-**サイト** には、 [サイトテンプレートを使用して作成された](/help/sites-cloud/administering/site-creation/create-site.md) サイトの詳細が表示されます。
+**サイト**&#x200B;には、[サイトテンプレートを使用して作成された](/help/sites-cloud/administering/site-creation/create-site.md)サイトの詳細が表示されます。
 
-![サイトレール](../assets/site-rail.png)
+![サイトパネル](../assets/site-rail.png)
 
-ドキュメントを参照 [サイトレールを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md) パネルを使用して [サイトのテーマ。](/help/sites-cloud/administering/site-creation/site-themes.md)
+サイトパネルを使用して[サイトのテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)を管理する方法について詳しくは、[サイトパネルを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md)のドキュメントを参照してください。
 
 >[!TIP]
 >
