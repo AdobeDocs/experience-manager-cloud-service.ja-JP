@@ -3,7 +3,7 @@ title: パブリッシュインスタンスでのコンテンツ転送ツール�
 description: パブリッシュインスタンスでのコンテンツ転送ツールの実行
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
 ht-degree: 100%
 
