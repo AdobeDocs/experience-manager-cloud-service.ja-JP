@@ -1,9 +1,9 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service の 2020.8.0 リリースのリリースノート。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート."'
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 のリリースノート。"'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1046'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * Google Lighthouse を活用したエクスペリエンスチェックをページに対して実行できます。Cloud Manager パイプラインの一環として、最大 25 ページをエクスペリエンス KPI に照らしてチェックおよび検証でき、そのスコアが Cloud Manager UI に表示されます。
 
-### バグ修正 {#bug-fixes-cm}
+### バグの修正 {#bug-fixes-cm}
 
 * 不要で望ましくない一部の SonarQube プラグインが、コード品質スキャンの一部として実行されていました。
 
@@ -100,7 +100,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * 内部通信の問題が原因で、パイプラインの実行が&#x200B;*停止*&#x200B;することがあります。
 
-* 新しい組織をプロビジョニングするときに、システム管理者以外の管理者ロールを持つ一部のユーザーに、Cloud Manager へのアクセス権が誤って付与されていました。
+* 新しい組織をプロビジョニングするときに、システム管理者以外で管理者の役割を持つ一部のユーザーに、Cloud Manager へのアクセス権が誤って付与されていました。
 
 * 特定の条件下で、インデックス更新ジョブが複数回並行して開始された結果、デプロイメントエラーが発生していました。
 
@@ -126,7 +126,7 @@ Experience Manager as a Cloud Service 2020.8.0 の一般的なリリースノー
 
 * コンテンツ転送ツールで共有 S3 データストアがサポートされるようになりました。
 
-### バグ修正 {#ctt-bug-fixes}
+### バグの修正 {#ctt-bug-fixes}
 
 * ツールがアクションを完了するためのタイムアウトが追加されました。
 
