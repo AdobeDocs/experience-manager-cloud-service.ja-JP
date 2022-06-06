@@ -1,15 +1,15 @@
 ---
-title: コンテンツフラグメントの作成 — ヘッドレス設定
+title: コンテンツフラグメントの作成 - ヘッドレスセットアップ
 description: AEM のコンテンツフラグメントを使用して、ページに依存しないヘッドレス配信用コンテンツを設計、作成、キュレーションおよび使用する方法を説明します。
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# コンテンツフラグメントの作成 — ヘッドレス設定 {#creating-content-fragments}
+# コンテンツフラグメントの作成 - ヘッドレスセットアップ {#creating-content-fragments}
 
 AEM のコンテンツフラグメントを使用して、ページに依存しないヘッドレス配信用コンテンツを設計、作成、キュレーションおよび使用する方法を説明します。
 
