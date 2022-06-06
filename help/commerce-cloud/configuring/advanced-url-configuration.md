@@ -11,9 +11,9 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
 source-git-commit: af07bce8618c7b13b4dc5e287c7218316029f565
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2039'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -92,28 +92,28 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 >
 > URL 形式のストア固有の設定には、 [CIF コアコンポーネント 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) と最新バージョンの Adobe Experience Manager コンテンツおよび Commerce アドオンが必要です。
 
-## カテゴリ対応製品ページの URL {#context-aware-pdps}
+## カテゴリ対応の製品ページ URL {#context-aware-pdps}
 
 製品 URL にカテゴリ情報をエンコードできるので、複数のカテゴリに属する製品に対しても、複数の製品 URL でアドレス指定できます。
 
-デフォルトの URL 形式では、次のスキームを使用して、考えられる代替方法の 1 つを選択します。
+デフォルトの URL 形式では、次のスキームを使用した代替値の 1 つが選択されます。
 
 * `url_path` が e コマースバックエンドによって定義されている場合は、それを使用します（非推奨）
 * `url_rewrites` から、製品の `url_key` で終わる URL を代替値として使用します
 * これらの代替値から、パスセグメントが最も多いものを使用します
 * 複数ある場合は、e コマースバックエンドで指定された順序で最初の 1 つを使用します
 
-このスキームは、 `url_path` 子カテゴリが親カテゴリよりも具体的であるという前提に基づいて、上位カテゴリと共に使用されます。 選択した `url_path` 考慮される _標準_ とは、常に製品ページの正規リンクまたは製品サイトマップで使用されます。
+このスキームは、子カテゴリが親カテゴリよりも具体的であるという前提に基づいて上位カテゴリが最も上位にある `url_path` を選択します。そのように選択された `url_path` は _正規_ と見なされ製品ページまたは製品サイトマップの正規リンクに常に使用されます。
 
 ただし、買い物客がカテゴリページから製品ページに移動する場合、またはある製品ページから同じカテゴリ内の別の関連製品ページに移動する場合は、現在のカテゴリのコンテキストを維持することをお勧めします。この場合、`url_path` の選択は、上記の _正規_ の選択よりも現在のカテゴリのコンテキスト内にある代替値を優先する必要があります。
 
 
 この機能は、 _CIF URL プロバイダーの設定_ に組み込まれている必要があります。有効にすると、次の場合に、選択により代替値のスコアが高くなります。
 
-* 特定のカテゴリの一部と一致する `url_path` 先頭から（ファジープレフィックスの一致）
-* または指定されたカテゴリの `url_key` anywhere （完全な部分一致）
+* 最初から特定のカテゴリの `url_path` の一部に一致する（ファジープレフィックスの一致）
+* または、任意の場所で特定のカテゴリの `url_key` と一致する（完全な部分一致）
 
-例えば、以下の [製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) に対する応答について考えてみます。ユーザーが「New Products / New in Summer 2022」カテゴリページに移動し、ストアがデフォルトのカテゴリページ URL 形式を使用している場合、代替「new-products/new-in-summer-2022/gold-cirque-earrings.html」は、最初からのコンテキストのパスセグメントの 2 と一致します。「new-products」と「new-in-summer-2022」の 2 つのリストが追加されました。 ストアが、カテゴリのみを含むカテゴリページの URL 形式を使用している場合 `url_key`の場合、同じ代替案が、コンテキストの `url_key` どこでも どちらの場合も、製品ページの URL は「new-products/new-in-summer-2022/gold-cirque-earrings.html」の `url_path` に対して作成されます。
+例えば、以下の [製品クエリ](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) に対する応答について考えてみます。ユーザーが「New Products / New in Summer 2022」カテゴリページを表示していて、ストアがデフォルトのカテゴリページの URL 形式を使用している場合、代替値の「new-products/new-in-summer-2022/gold-cirque-earrings.html」は、最初の「new-products」と「new-in-summer-2022」からのコンテキストのパスセグメントの 2 つと一致します。ストアがカテゴリ `url_key` のみを含んだカテゴリページ URL 形式を使用している場合でも、コンテキストの `url_key` と一致するため、同じ代替値が選択されます。どちらの場合も、製品ページの URL は「new-products/new-in-summer-2022/gold-cirque-earrings.html」の `url_path` に対して作成されます。
 
 ```
 {
@@ -182,13 +182,13 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 `UrlProvider` は、特定のカテゴリおよび製品ページへのディープリンクをオーサー層インスタンスで生成するように事前に設定されています。これは、編集者がプレビューモードでサイトを閲覧し、特定の製品ページまたはカテゴリページに移動したあと編集モードに切り替えてページを編集する場合に便利な機能です。
 
-一方、パブリッシュ層インスタンスでは、例えば検索エンジンのランキングを落とさないように、カタログページの URL を安定した状態に保つ必要があります。そのため、パブリッシュ層インスタンスは、デフォルトでは特定のカタログページへのディープリンクをレンダリングしません。 この動作を変更するには、常に特定のページの URL を生成するように _CIF URL プロバイダー固有のページ戦略_ を設定します。
+一方、パブリッシュ層インスタンスでは、例えば検索エンジンのランキングを落とさないように、カタログページの URL を安定した状態に保つ必要があります。そのため、パブリッシュ層インスタンスは、デフォルトでは特定のカタログページへのディープリンクをレンダリングしません。この動作を変更するには、常に特定のページの URL を生成するように _CIF URL プロバイダー固有のページ戦略_ を設定します。
 
 ## カスタマイズ {#customization}
 
 ### カスタム URL 形式 {#custom-url-format}
 
-カスタム URL 形式を指定するには、プロジェクトで [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) または [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) サービスインターフェイスを実装し、その実装を OSGi サービスとして登録します。 これらの実装が用意されている場合は、設定されている事前定義済み形式の代わりに、その実装が使用されます。 複数の実装が登録されている場合は、サービスランキングの高い実装が、サービスランキングの低い実装と入れ替わります。
+カスタム URL 形式を指定するには、プロジェクトで [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) または [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) サービスインターフェイスを実装し、その実装を OSGi サービスとして登録します。これらの実装が用意されている場合は、設定されている事前定義済み形式の代わりに、その実装が使用されます。複数の実装が登録されている場合は、サービスランキングの高い実装が、サービスランキングの低い実装と入れ替わります。
 
 カスタム URL 形式の実装では、指定されたパラメーターから URL を作成するメソッドと URL を解析して同じパラメーターを返すメソッドのペアを実装する必要があります。
 
@@ -198,27 +198,27 @@ CIF 設定では、エディターが別の製品またはカテゴリページ�
 
 ### AEM Dispatcher との統合 {#dispatcher}
 
-URL の書き換えは、`mod_rewrite` モジュールを備えた AEM Dispatcher HTTP サーバーを使用して実行することもできます。[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype) は、すでに生成されたサイズに対する基本的な [書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) が含まれている、参照用 AEM Dispatcher 設定を提供します。
+URL の書き換えは、`mod_rewrite` モジュールを備えた AEM Dispatcher HTTP サーバーを使用して実行することもできます。[AEM プロジェクトアーキタイプ](https://github.com/adobe/aem-project-archetype) は、既に生成されたサイズに対する基本的な [書き換えルール](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) が含まれている、参照用 AEM Dispatcher 設定を提供します。
 
 ## ベストプラクティス {#best-practices}
 
 ### 最適な URL 形式を選択 {#choose-url-format}
 
-使用可能なデフォルトの形式の 1 つを選択する前に述べたように、カスタム形式を実装する場合も、ストアのニーズと要件に大きく依存します。 次の提案は、知識に基づいた決定を下すのに役立つ場合があります。
+前述したように、使用可能なデフォルト形式の 1 つを選択するか、カスタム形式を実装するかさえ、ストアのニーズと要件に大きく依存します。次の提案は、知識に基づいた決定を下すのに役立つ場合があります。
 
 _**SKU を含む製品ページの URL 形式を使用します。**_
 
-CIF コアコンポーネントでは、すべてのコンポーネントで SKU をプライマリ識別子として使用します。製品ページの URL 形式に sku が含まれていない場合、それを解決するには GraphQL クエリが必要です。 これは、最初のバイトまでの時間に影響を与える可能性があります。 また、買い物客が検索エンジンを使用して sku で製品を見つけることが望ましい場合もあります。
+CIF コアコンポーネントでは、すべてのコンポーネントで SKU をプライマリ識別子として使用します。製品ページの URL 形式に SKU が含まれていない場合、URL を解決するには GraphQL クエリが必要です。これは、最初のバイトを取得するまでの時間に影響を及ぼす可能性があります。また、買い物客が検索エンジンを使用して SKU で製品を見つけることができる方が望ましい場合もあります。
 
 _**カテゴリコンテキストを含む製品ページの URL 形式を使用します。**_
 
-CIF URL プロバイダーの一部の機能は、カテゴリなど、カテゴリコンテキストをエンコードする製品 URL 形式を使用する場合にのみ使用できます `url_key` またはカテゴリ `url_path`. 新しいストアでこれらの機能が必要でない場合でも、最初にこれらの URL 形式のいずれかを使用すると、将来の移行作業を減らすことができます。
+CIF URL プロバイダーの一部の機能は、カテゴリ `url_key` やカテゴリ `url_path` など、カテゴリコンテキストをエンコードする製品 URL 形式を使用する場合にのみ使用できます。これらの機能が新しいストアに必要ない可能性がある場合でも、最初にこれらの URL 形式のいずれかを使用すると、将来の移行作業を軽減するのに役立ちます。
 
 _**URL の長さとエンコードされた情報のバランス。**_
 
-カタログのサイズ、特にカテゴリツリーのサイズと深さによっては、カテゴリの完全な `url_path` を URL にエンコードすることが合理的でない場合があります。その場合、カテゴリの `url_key` 代わりに、 これは、カテゴリを使用する際に使用できる機能のほとんどをサポートします `url_path`.
+カタログのサイズ、特にカテゴリツリーのサイズと深さによっては、カテゴリの完全な `url_path` を URL にエンコードすることが合理的でない場合があります。その場合、代わりにカテゴリの `url_key` のみを含めることで、URL の長さを短くすることができます。これにより、カテゴリ `url_path` を使用する際に利用できるほとんどの機能がサポートされるようになります。
 
-さらに、 [Sling マッピング](#sling-mapping) を使用して、SKU を製品 `url_key` と組み合わせます。ほとんどの e コマースシステムでは、sku は特定の形式に従い、sku を `url_key` を使用すると、受信リクエストが簡単に可能になります。 そのことを念頭に置くと、製品ページの URL を `/p/{{category}}/{{sku}}-{{url_key}}.html` に、カテゴリ URL を `/c/{{url_key}}.html` にそれぞれ書き換えることができます。`/p` および `/c` プレフィックスは、製品ページとカテゴリページを他のコンテンツページと区別するために、引き続き必要です。
+さらに、 [Sling マッピング](#sling-mapping) を使用して、SKU を製品 `url_key` と組み合わせます。ほとんどの e コマースシステムでは、SKU は特定の形式に従っており、受信リクエストのために SKU と `url_key` を分離することは簡単にできます。そのことを念頭に置くと、製品ページの URL を `/p/{{category}}/{{sku}}-{{url_key}}.html` に、カテゴリ URL を `/c/{{url_key}}.html` にそれぞれ書き換えることができます。`/p` および `/c` プレフィックスは、製品ページとカテゴリページを他のコンテンツページと区別するために、引き続き必要です。
 
 ### 新しい URL 形式への移行 {#migrate-url-formats}
 
@@ -226,7 +226,7 @@ _**URL の長さとエンコードされた情報のバランス。**_
 
 一方、検索エンジンでは、すべてのカタログページを新しい URL 形式で再度クロールするのにしばらく時間が必要になります。このプロセスをサポートし、エンドユーザーエクスペリエンスを向上させるために、古い URL から新しい URL にユーザーを転送するリダイレクトを提供することをお勧めします。
 
-その 1 つのアプローチは、ステージ環境を実稼動 e コマースバックエンドに接続し、新しい URL 形式を使用するように設定することです。 その後、 [CIF 製品サイトマップジェネレーターで生成された製品サイトマップ](../../overview/seo-and-url-management.md) ステージ環境と実稼動環境の両方で使用し、 [Apache httpd 書き換えマップ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). この書き換えマップは、新しい URL 形式のロールアウトと共に Dispatcher にデプロイすることはできません。
+その 1 つのアプローチとして考えられるのは、ステージング環境を実稼動 e コマースバックエンドに接続し、新しい URL 形式を使用するように設定することです。その後、ステージング環境と実稼動環境の両方で [CIF 製品サイトマップジェネレーターで生成された製品サイトマップ](../../overview/seo-and-url-management.md) を取得し、それらを使用して [Apache httpd 書き換えマップ](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) を作成します。この書き換えマップは、新しい URL 形式のロールアウトと共に Dispatcher にデプロイすることはできません。
 
 ## 例 {#example}
 
