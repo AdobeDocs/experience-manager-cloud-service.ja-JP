@@ -3,13 +3,13 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリー
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 リリースのリリースノート。'
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1439'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 
 ## リリースビデオ {#release-video}
 
-追加された機能の概要については、 [2021年10月リリースの概要](https://video.tv.adobe.com/v/338253) ビデオをご覧ください。
+追加された機能の概要については、[2021年10月リリースの概要](https://video.tv.adobe.com/v/338253)ビデオをご覧ください。
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 ### の新機能[!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] は、[!DNL Azure Media Services] への組み込みコネクタを使用して、サポート対象のオーディオとビデオのアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。[サポートされているファイルタイプ](/help/assets/file-format-support.md#audio-video-transcription-formats) は自動的に書き込まれ、テキストは WebVTT 形式で保存されます。WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
+* [!DNL Experience Manager] は、[!DNL Azure Media Services] への組み込みコネクタを使用して、サポート対象のオーディオとビデオのアセットからのテキストトランスクリプトの自動生成をサポートするようになりました。[サポートされているファイルタイプ](/help/assets/file-format-support.md#audio-video-transcription-formats)は自動的に書き込まれ、テキストは WebVTT 形式で保存されます。WebVTT キャプションは、より効果的な検索、キャプション、翻訳に使用されます。また、この機能により、アセットのアクセシビリティ、検出性およびローカライゼーションが向上します。
 
 ### [!DNL Assets] プレリリースチャネルの新機能 {#assets-prerelease-features}
 
@@ -62,7 +62,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
-* **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリーに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
+* **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
 
 ### [!DNL Forms] のベータ版機能 {#what-is-new-forms-oct2021-beta}
 
@@ -79,11 +79,11 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * CIF アドオンでは、新しい GraphQL API とスキーマを備えた最新の Commerce v2.4.3 をサポートしています
 
-* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。 RTE ツールバーに追加された CIF アイコンをクリックすると、ピッカーが開いて、コンテキストを離れることなく製品やカテゴリをすばやく検索および選択できるようになりました。
+* 作成者は、リッチテキストエディター（RTE）を使用して、製品ページやカタログページへのリンクをテキストフィールドに追加できます。RTE ツールバーに追加された CIF アイコンをクリックすると、ピッカーが開いて、コンテキストを離れることなく製品やカテゴリをすばやく検索および選択できるようになりました。
 
-* 既存のポップアップ買い物かごとチェックアウトは、AEM 専用の買い物かごとチェックアウトページに置き換えられました。 これらのページ上のコンポーネントは、Adobe Commerceの拡張可能な Peregrine コンポーネントを使用して構築されます
+* 既存のポップアップ買い物かごとチェックアウトは、AEM 専用の買い物かごとチェックアウトページに置き換えられました。これらのページ上のコンポーネントは、Adobe Commerce の拡張可能な Peregrine コンポーネントを使用して構築されています
 
-* マーチャントは、Commerce のバックエンドを使用して、ナビゲーション時に特定の製品カタログカテゴリを非表示にできます。 CIF ナビゲーションのコアコンポーネントは、Commerce のバックエンド設定の「メニューに含める」に従って、ナビゲーション時にカテゴリを表示／非表示にします
+* マーチャントは、Commerce のバックエンドを使用して、ナビゲーション時に特定の製品カタログカテゴリを非表示にできます。CIF ナビゲーションのコアコンポーネントは、Commerce のバックエンド設定の「メニューに含める」に従って、ナビゲーション時にカテゴリを表示／非表示にします
 
 * カテゴリまたは商品ページが見つからない場合、AEM ストアフロント Venia は HTTP 404 エラーを返します
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年
 
 ### 新機能 {#what-is-new-cm-nov}
 
-* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、 [Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) を参照してください。
+* ユーザーは、新しいフロントエンドパイプラインを活用して、フロントエンドコードを迅速かつ排他的にデプロイできるようになりました。詳しくは、[Cloud Manager フロントエンドパイプライン](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)を参照してください。
 
    >[!IMPORTANT]
    >新しいフロントエンドパイプラインを活用するには、AEM バージョン `2021.10.5933.20211012T154732Z` を使用している必要があります。
@@ -133,7 +133,7 @@ AEM as a Cloud Service 2021.11.0 の Cloud Manager のリリース日は 2021年
 
 * 共通の基本パスを持つクライアントライブラリがある場合、`ClientlibProxyResourceCheck` 品質ルールで偽陽性の問題が発生していました。
 
-* リポジトリーの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
+* リポジトリの最大数に達したエラーメッセージで、エラーの理由が明記されていませんでした。
 
 * まれに、特定の応答コードの不適切な再試行処理が原因でパイプラインが失敗することがありました。
 
@@ -156,13 +156,13 @@ AEM as a Cloud Service 2021.10.0 の Cloud Manager のリリース日は 2021年
 
 * 年別の SLA グラフを Cloud Manager のユーザーインターフェイスからダウンロードできるようになりました。
 
-* コード品質パイプラインと実稼動以外のパイプラインの実行で、より効率的なシャロー（浅い）クローン作成プロセスがビルドステップ中に使用されるようになりました。これにより、特に大きな Git リポジトリーを使用しているお客様の場合、ビルド時間が短縮されます。
+* コード品質パイプラインと実稼動以外のパイプラインの実行で、より効率的なシャロー（浅い）クローン作成プロセスがビルドステップ中に使用されるようになりました。これにより、特に大きな Git リポジトリを使用しているお客様の場合、ビルド時間が短縮されます。
 
 * IP 許可リストを追加ウィザードで、設定可能な IP 許可リストの最大数に達した場合、ユーザーに通知されるようになりました。
 
 * ログインしたユーザーがブラウザーで API を試すことができるインタラクティブなプレイグラウンドに関する説明が、Cloud Manager API ドキュメントに含まれるようになりました。詳しくは、[Cloud Manager API Playground](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) を参照してください。
 
-* 「移動先」の選択オプションが無効になっている場合のプログラムカードのツールヒントがわかりやすくなりました。「実稼動環境が が存在しません。」と表示されるようになりました。
+* 「移動先」の選択オプションが無効になっている場合のプログラムカードのツールヒントがわかりやすくなりました。「実稼動環境が存在しません。」と表示されるようになりました。
 
 ### バグの修正 {#bug-fixes-cm-oct}
 
