@@ -11,13 +11,13 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# アダプティブフォームでの CAPTCHA の使用 {#using-captcha-in-adaptive-forms}
+# アダプティブフォームでの CAPTCHA の使用{#using-captcha-in-adaptive-forms}
 
 CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans Apart）は、オンライントランザクションにおいて人間と自動プログラムやボットとを区別するために一般的に使用されるプログラムです。テストを行ってユーザーの反応を評価し、サイトを使用しているのが人間かボットかを判断します。これにより、テストに失敗した場合ユーザーは続行できないため、ボットによるスパムの投稿や悪意のある目的を防止し、オンライントランザクションを安全に保ちます。
 
@@ -42,7 +42,7 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 1. クラウドサービス用の設定コンテナを作成します。
 
    1. **[!UICONTROL ツール／一般／設定ブラウザー]**&#x200B;に移動します。
-      * 詳しくは、 [設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja#introduction) のドキュメントを参照してください。
+      * 詳しくは、[設定ブラウザー](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=ja#introduction)のドキュメントを参照してください。
    1. 以下の手順を実行して、global フォルダーをクラウド設定用に有効にします。クラウドサービス設定用に別のフォルダーを作成する場合は、この手順をスキップしてください。
 
       1. 設定ブラウザーで、**[!UICONTROL global]** フォルダーを選択して「**[!UICONTROL プロパティ]**」をタップします。
@@ -56,7 +56,7 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 
 1. reCAPTCHA のクラウドサービスを設定します。
 
-   1. Experience Managerオーサーインスタンスで、に移動します。 ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Experience Manager オーサーインスタンスで、![tools-1](assets/tools-1.png)／**[!UICONTROL クラウドサービス]**&#x200B;に移動します。
    1. 「**[!UICONTROL reCAPTCHA]**」をタップします。設定ページが表示されます。上記の手順で作成した設定コンテナを選択し、「**[!UICONTROL 作成]**」をタップします。
    1. reCAPTCHA サービスの名前、サイトキー、秘密鍵を指定し、「**[!UICONTROL 作成]**」をタップして、クラウドサービスの設定を作成します。
    1. コンポーネントを編集ダイアログで、サイトおよび手順 1 で取得した秘密鍵を指定します。「**[!UICONTROL 設定を保存]**」をタップしてから、「**[!UICONTROL OK]**」をタップして設定を完了します。
@@ -86,13 +86,13 @@ CAPTCHA（Completely Automated Public Turing test to tell Computers and Humans A
 1. 追加した Captcha コンポーネントを選択して、![cmppr](assets/configure-icon.svg) をタップし、プロパティを編集します。
 1. CAPTCHA ウィジェットのタイトルを指定します。デフォルト値は **[!UICONTROL Captcha]** です。タイトルを表示しない場合は、「**[!UICONTROL タイトルを非表示にする]**」を選択します。
 1. **[!UICONTROL Captcha サービス]**&#x200B;ドロップダウンで「**[!UICONTROL reCaptcha]**」を選択して、reCAPTCHA サービスを有効にします（「[Google による reCAPTCHA サービス](#google-recaptcha)」に記載されている手順に従って reCAPTCHA サービスが設定されている場合）。設定ドロップダウンから設定を選択します。
-1. タイプをとして選択します。 **[!UICONTROL 標準]** または **[!UICONTROL コンパクト]** reCAPTCHA ウィジェット用。 また、 **[!UICONTROL 非表示]** オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。 以下に示す reCAPTCHA バッジによって保護されたが、保護されたフォームに表示されます。
+1. reCAPTCHA ウィジェットのタイプを「**[!UICONTROL 標準]**」または「**[!UICONTROL コンパクト]**」から選択します。また、「**[!UICONTROL 非表示]**」オプションを使用して、疑わしいアクティビティの場合にのみ CAPTCHA チャレンジを表示できます。以下に示す reCAPTCHA バッジによって保護されたが、保護されたフォームに表示されます。
 
-   ![reCAPTCHA バッジによって処理されたGoogle](assets/google-recaptcha-v2.png)
+   ![reCAPTCHA バッジによって処理された Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >選択しない **[!UICONTROL デフォルト]** を「 Captcha サービス」ドロップダウンから選択します。これは、デフォルトのExperience ManagerCAPTCHA サービスが非推奨（廃止予定）になったためです。
+   >デフォルトの Experience Manager CAPTCHA サービスは非推奨なので、Captcha サービスドロップダウンで「**[!UICONTROL デフォルト]**」を選択しないでください。
 
 1. 各プロパティを保存します。
 
@@ -151,7 +151,7 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
 `ValidateCAPTCHA` API を使用してカスタム送信アクションを使用して CAPTCHA を検証するには、以下の手順を実行します。
 
 1. `ValidateCAPTCHA` API を含むスクリプトをカスタム送信アクションに追加します。カスタム送信アクションについて詳しくは、「[アダプティブフォーム用のカスタム送信アクションの作成](custom-submit-action-form.md)」を参照してください。
-1. アダプティブフォームの **[!UICONTROL 送信]** プロパティの **[!UICONTROL 送信アクション]** ドロップダウンリストから、カスタム送信アクションの名前を選択します。
+1. アダプティブフォームの&#x200B;**[!UICONTROL 送信]**&#x200B;プロパティの「**[!UICONTROL 送信アクション]**」ドロップダウンリストから、カスタム送信アクションの名前を選択します。
 1. 「**[!UICONTROL 送信]**」をタップします。CAPTCHA は、カスタム送信アクションの `ValidateCAPTCHA` API で定義された条件に基づいて検証されます。
 
 **オプション 2：フォームを送信する前に、[!DNL Experience Manager Forms] ValidateCAPTCHA API を使用してユーザーアクションに対する CAPTCHA の検証を行う**
@@ -202,7 +202,7 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` は、Sling リポジトリー内の CAPTCHA コンポーネントのリソースパスを参照します。CAPTCHA コンポーネントに特有の詳細を含めるには、このプロパティを使用します。例えば、`captchaPropertyNodePath` には、CAPTCHA コンポーネントで設定された reCAPTCHA クラウド設定に関する情報が含まれます。クラウド設定情報は、reCAPTCHA サービスを実装するための&#x200B;**[!UICONTROL サイトキー]**&#x200B;と&#x200B;**[!UICONTROL 秘密鍵]**&#x200B;の設定を提供します。
+`captchaPropertyNodePath` は、Sling リポジトリ内の CAPTCHA コンポーネントのリソースパスを参照します。CAPTCHA コンポーネントに特有の詳細を含めるには、このプロパティを使用します。例えば、`captchaPropertyNodePath` には、CAPTCHA コンポーネントで設定された reCAPTCHA クラウド設定に関する情報が含まれます。クラウド設定情報は、reCAPTCHA サービスを実装するための&#x200B;**[!UICONTROL サイトキー]**&#x200B;と&#x200B;**[!UICONTROL 秘密鍵]**&#x200B;の設定を提供します。
 
 `userResponseToken` は、フォームで CAPTCHA を解決した後に生成される `g_recaptcha_response` を指します。
 
