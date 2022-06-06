@@ -3,9 +3,9 @@ title: カスタマイズしたテーマのデプロイ
 description: パイプラインを使用してサイトテーマをデプロイする方法を説明します。
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1027'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
 ## 目的 {#objective}
 
-このドキュメントでは、パイプラインを使用してテーマをデプロイする方法を説明します。 読み終えると、次のことができるようになります。
+このドキュメントでは、パイプラインを使用してテーマをデプロイする方法を説明します。読み終えると、次のことができるようになります。
 
 * パイプラインデプロイメントのトリガー方法を理解する。
 * デプロイメントのステータスを確認する方法を参照する。
@@ -72,7 +72,7 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
 ## デプロイ済みのカスタマイズの検証 {#view-customizations}
 
-パイプラインが完了したら、管理者に変更を検証するように通知できます。 管理者は次の操作を実行します。
+パイプラインが完了したら、管理者に変更を検証するように通知できます。管理者は次の操作を実行します。
 
 1. AEM オーサリング環境を開きます。
 1. [管理者が以前作成したサイト](create-site.md) に移動します。
@@ -83,7 +83,7 @@ AEM クイックサイト作成ジャーニーの以前のドキュメントで�
 
 ## ジャーニーの終了 {#end-of-journey}
 
-おめでとうございます。AEM クイックサイト作成ジャーニーを完了しました。 その結果、以下を達成できました。
+おめでとうございます。AEM クイックサイト作成ジャーニーを完了しました。その結果、以下を達成できました。
 
 * Cloud Manager とフロントエンドパイプラインがフロントエンドカスタマイズの管理とデプロイのためにどのように機能するかを理解する。
 * テンプレートに基づいて AEM サイトを作成する方法と、サイトテーマをダウンロードする方法を理解する。
@@ -102,7 +102,7 @@ AEM は強力なツールであり、その他にも使用可能なオプショ�
 
 以下の追加リソースでは、このドキュメントで言及したいくつかの概念について詳しく説明しています。
 
-* [サイトレールを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md)  — サイトパネルの強力な機能を学び、テーマソースのダウンロードやテーマバージョンの管理など、サイトテーマを簡単にカスタマイズして管理するのに役立ちます。
+* [サイトパネルを使用したサイトテーマの管理](/help/sites-cloud/administering/site-creation/site-rail.md) - テーマソースのダウンロードやテーマバージョンの管理など、サイトテーマを簡単にカスタマイズおよび管理できるサイトパネルの強力な機能について説明します。
 * [AEM as a Cloud Service 技術ドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=ja) - AEM を既にしっかり理解している場合は、詳細な技術ドキュメントを直接参照してください。
 * [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=ja) - Cloud Manager の機能について詳しくは、詳細な技術ドキュメントを直接参照してください。
 * [役割に基づく権限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=ja) - Cloud Manager には、適切な権限を持つ役割が事前に設定されています。これらの役割の詳細と管理方法については、このドキュメントを参照してください。
@@ -110,8 +110,8 @@ AEM は強力なツールであり、その他にも使用可能なオプショ�
 * [CI／CD パイプラインの設定 - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - フルスタックとフロントエンドの両方のパイプラインのセットアップについて詳しくは、このドキュメントを参照してください。
 * [AEM 標準サイトテンプレート](https://github.com/adobe/aem-site-template-standard) - これは AEM 標準サイトのテンプレートの GitHub リポジトリです。
 * [AEM サイトテーマ](https://github.com/adobe/aem-site-template-standard-theme-e2e) - これは AEM サイトテーマの GitHub リポジトリです。
-* [npm](https://www.npmjs.com) - npm に基づいたサイトをすばやく作成するために使用される AEM テーマ。
-* [webpack](https://webpack.js.org) - webpack に依存するサイトをすばやく作成するために使用される AEM テーマ。
+* [npm](https://www.npmjs.com) - サイトをすばやく作成するために使用される AEM テーマが npm に基づいている場合。
+* [webpack](https://webpack.js.org) - サイトをすばやく作成するために使用される AEM テーマが webpack に基づいている場合。
 * [ページの作成と整理](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - このガイドでは、テンプレートから作成した後にさらにカスタマイズする場合の、AEM サイトのページの管理方法について詳しく説明します。
 * [パッケージの操作方法](/help/implementing/developing/tools/package-manager.md) - パッケージを使用すると、リポジトリコンテンツの読み込みと書き出しが可能になります。このドキュメントでは、AEM 6.5 でのパッケージの操作方法を説明します（AEMaaCS にも適用）。
 * [オンボーディングジャーニー](/help/journey-onboarding/home.md) - このガイドは、チームが確実に設定され、AEM as a Cloud Service にアクセスできるようにするための出発点となります。
