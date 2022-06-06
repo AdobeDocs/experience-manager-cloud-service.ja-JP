@@ -1,15 +1,15 @@
 ---
-title: 設定の作成 — ヘッドレスセットアップ
+title: 設定の作成 - ヘッドレスセットアップ
 description: AEM as a Cloud Service でヘッドレスを使い始めるための最初の手順として設定を作成します。
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 設定の作成 — ヘッドレスセットアップ {#creating-configuration}
+# 設定の作成 - ヘッドレスセットアップ {#creating-configuration}
 
 AEM as a Cloud Service でヘッドレス機能を使い始めるには、まず設定を作成する必要があります。
 
@@ -28,7 +28,7 @@ AEM のヘッドレスなコンテンツ管理に関しては、AEM 内でコン
 1. AEM as a Cloud Service にログインし、メインメニューで&#x200B;**ツール／一般／設定ブラウザー**&#x200B;を選択します。
 1. 設定に&#x200B;**タイトル**&#x200B;と&#x200B;**名前**&#x200B;を指定します。
    * **タイトル**&#x200B;は内容がわかるように付けます。
-   * **名前**&#x200B;はリポジトリーのノード名になります。
+   * **名前**&#x200B;はリポジトリのノード名になります。
       * タイトルに基づいて自動的に生成され、[AEM の命名規則](/help/implementing/developing/introduction/naming-conventions.md)に従って調整されます。
       * 必要に応じて調整できます。
 1. 次のオプションを確認します。
