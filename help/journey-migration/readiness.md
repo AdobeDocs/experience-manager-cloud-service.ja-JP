@@ -3,9 +3,9 @@ title: 準備段階
 description: AEM インストールをクラウドに移動する準備ができていることを確認するために必要な手順を説明します。
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2078'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -115,11 +115,11 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   <tr>
     <td>ワークフローランチャー</td>
     <td></td>
-    <td>OOTB、またはカスタム DAM アセットの更新ワークフローのいずれかをトリガーしているワークフローランチャーをコードから削除します。</br>AEM as a Cloud Service にアップロードされたアセットはすべて、アセット処理サービスによって処理されます。カスタム手順については、 <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> 後処理ワークフロー</a> 後処理ワークフローの設定方法を説明します。</td>
+    <td>OOTB、またはカスタム DAM アセットの更新ワークフローのいずれかをトリガーしているワークフローランチャーをコードから削除します。</br>AEM as a Cloud Service にアップロードされたアセットはすべて、アセット処理サービスによって処理されます。カスタム手順については、<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=ja#post-processing-workflows">後処理ワークフロー</a>で後処理ワークフローのセットアップおよび設定方法を参照してください。</td>
   </tr>
   <tr>
     <td>カスタムレンディション手順</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en#manage">処理プロファイル</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja#manage">処理プロファイル</a></td>
     <td>カスタムレンディション生成、画像変換、ビデオエンコーディングは、対応する処理プロファイルを作成して、アセット処理サービスにオフロードする必要があります。</td>
   </tr>
   <tr>
@@ -149,8 +149,8 @@ AEM as a Cloud Service は、AEM プロジェクトを管理するための様�
   </tr>
   <tr>
     <td>認証の変更</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">AEM as a Cloud Service の IMS サポート</td>
-    <td>Cloud Serviceに移行する前に、オーサーとパブリッシュの両方で SAML 2.0 統合を使用していた場合、主な変更点は、AEM as a Cloud ServiceオーサーがAdobe IMSとのみ統合される点です。 ただし、AEMas a Cloud Serviceのパブリッシュ層では、SAML や他の認証統合を引き続き利用できます。 AEM as a Cloud Service では、作成者、管理者および開発者ユーザーに対してのみ IMS 認証をサポートしています。IMS 認証では、サイト訪問者などの顧客サイトの外部エンドユーザーに対してはサポートされません。</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ja">AEM as a Cloud Service の IMS サポート</td>
+    <td>Cloud Service に移行する前に、オーサーとパブリッシュの両方で SAML 2.0 統合を使用していた場合、主な変更点は、AEM as a Cloud Service オーサーが Adobe IMS のみと統合される点です。ただし、AEM as a Cloud Service パブリッシュ層では、SAML や他の認証統合を引き続き利用できます。AEM as a Cloud Service では、作成者、管理者および開発者ユーザーに対してのみ IMS 認証をサポートしています。IMS 認証では、サイト訪問者など、顧客サイトの外部エンドユーザーに対してはサポートしていません。</td>
   </tr>
 </tbody>
 </table>
