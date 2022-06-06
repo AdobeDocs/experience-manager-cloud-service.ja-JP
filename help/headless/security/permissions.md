@@ -1,100 +1,100 @@
 ---
 title: ヘッドレスコンテンツの権限に関する考慮事項
-description: Adobe Experience Managerを使用したヘッドレス実装に関する様々な権限と ACL の考慮事項について説明します。 オーサー環境とパブリッシュ環境の両方で必要となる、様々なペルソナおよび潜在的な権限レベルを理解します。
+description: Adobe Experience Manager を使用したヘッドレス実装の権限や ACL に関する様々な考慮事項について説明します。オーサー環境とパブリッシュ環境の両方で必要となる様々なペルソナや考えられる権限レベルを理解します。
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # ヘッドレスコンテンツの権限に関する考慮事項
 
-ヘッドレス実装では、対処する必要のあるセキュリティおよび権限の領域がいくつかあります。 権限とペルソナは、AEM環境に基づいて幅広く考慮できます **作成者** または **公開**. 各環境には、様々なペルソナが含まれ、様々なニーズを持ちます。
+ヘッドレス実装では、対処が必要なセキュリティおよび権限の領域がいくつかあります。権限とペルソナは、概ね、**オーサー**&#x200B;または&#x200B;**パブリッシュ**&#x200B;の AEM 環境に基づいていると考えることができます。各環境には、様々なペルソナが含まれており、ニーズも異なります。
 
 ## オーサーサービスに関する考慮事項
 
-オーサーサービスは、内部ユーザーがコンテンツを作成、管理および公開する場所です。 権限は、コンテンツを管理する様々なペルソナを中心に展開されます。
+オーサーサービスでは、内部ユーザーがコンテンツの作成、管理および公開を行います。権限は、コンテンツを管理する様々なペルソナを中心に展開されます。
 
-### グループレベルで権限を管理
+### グループレベルでの権限の管理
 
-ベストプラクティスとして、権限はAEMのグループに設定する必要があります。 ローカルグループとも呼ばれ、これらのグループはAEMオーサー環境内で管理できます。
+ベストプラクティスとして、権限は AEM のグループに設定してください。これらのグループはローカルグループとも呼ばれ、AEM オーサー環境内で管理できます。
 
-グループメンバーシップを管理する最も簡単な方法は、AdobeIdentity Management System(IMS) グループを使用して割り当てることです [IMS グループからローカルAEMグループ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en#managing-permissions-in-aem).
+グループメンバーシップを管理する最も簡単な方法は、Adobe Identity Management System（IMS）グループを使用し、[IMS グループをローカル AEM グループに割り当てる](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=ja#managing-permissions-in-aem)ことです。
 
-![Admin Console 権限フロー](assets/admin-console-aem-group-permissions.png)
+![Admin Console の権限フロー](assets/admin-console-aem-group-permissions.png)
 
 プロセスの概要は次のとおりです。
 
-1. を使用して、IMS ユーザーを新規または既存の IMS ユーザーグループに追加します。 [Admin Console](https://adminconsole.adobe.com/)
-1. IMS グループは、ユーザーがログインするとAEMと同期されます。
-1. IMS グループをAEM Groups に割り当てます。
-1. AEM Groups に権限を設定します。
-1. ユーザーがAEMにログインし、IMS で認証されると、AEMグループの権限が継承されます。
+1. [Admin Console](https://adminconsole.adobe.com/) を使用して、IMS ユーザーを新規または既存の IMS ユーザーグループに追加します。
+1. ユーザーがログインすると、IMS グループは AEM と同期されます。
+1. IMS グループを AEM グループに割り当てます。
+1. AEM グループに権限を設定します。
+1. ユーザーは、AEM にログインして IMS で認証されると、AEM グループの権限を継承します。
 
 >[!TIP]
 >
-> IMS およびAEMのユーザーとグループの管理に関する詳細なビデオチュートリアルが参照できます [ここ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html).
+> IMS および AEM ユーザー／グループの管理に関する詳細なビデオチュートリアルを[ここ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=ja)で参照できます。
 
-管理するには **グループ** AEMで、に移動します。 **ツール** > **セキュリティ** > **グループ**.
+AEM で&#x200B;**グループ**&#x200B;を管理するには、**ツール**／**セキュリティ**／**グループ**&#x200B;に移動します。
 
-AEMでグループの権限を管理するには、次に移動します。 **ツール** > **セキュリティ** > **権限**.
+AEM でグループの権限を管理するには、**ツール**／**セキュリティ**／**権限**&#x200B;に移動します。
 
 ### DAM ユーザー
 
-このコンテキストでは、「DAM」は、デジタルアセット管理を表します。 この **DAM ユーザー** は、デジタルアセットやコンテンツフラグメントを管理する「毎日」のユーザーに使用できる、AEMの標準のグループです。 このグループは、 **表示**, **追加**, **更新**, **削除**、および **公開** コンテンツフラグメントと、AEM Assets内のその他すべてのファイル。
+このコンテキストでは、「DAM」はデジタルアセット管理を表します。**DAM ユーザー**&#x200B;は AEM の標準グループで、デジタルアセットやコンテンツフラグメントを管理する「日常業務」ユーザーに使用できます。このグループは、コンテンツフラグメントや AEM Assets 内のその他すべてのファイルを&#x200B;**表示**、**追加**、**更新**、**削除**&#x200B;および&#x200B;**公開**&#x200B;する権限を提供します。
 
-グループメンバーシップに IMS を使用する場合は、適切な IMS グループをのメンバーとして追加します。 **DAM ユーザー** グループ化します。 IMS グループのメンバーは、AEM環境にログインする際に、 DAM ユーザーグループの権限を継承します。
+グループメンバーシップに IMS を使用する場合は、適切な IMS グループを **DAM ユーザー**&#x200B;グループのメンバーとして追加します。IMS グループのメンバーは、AEM 環境にログインする際に DAM ユーザーグループの権限を継承します。
 
 #### DAM ユーザーグループのカスタマイズ
 
-標準のグループの権限を直接変更しないことをお勧めします。 代わりに、 **DAM ユーザー** グループ権限とアクセスをさらに制限 **フォルダー** AEM Assetsの
+標準で用意されているグループの権限を直接変更しないことをお勧めします。代わりに、**DAM ユーザー**&#x200B;グループ権限に倣って独自のグループを作成し、さらにアクセスの範囲を AEM Assets 内の異なる&#x200B;**フォルダー**&#x200B;に制限することもできます。
 
-より詳細な権限については、 **権限** AEMのコンソールと、 `/content/dam` をより具体的なパスに追加すると、 `/content/dam/mycontentfragments`.
+権限をよりきめ細かく制御するには、AEM の&#x200B;**権限**&#x200B;コンソールを使用して、パスを `/content/dam` からより具体的なパス（例：`/content/dam/mycontentfragments`）に更新します。
 
-コンテンツフラグメントの作成と編集をおこなう権限をユーザーグループに与え、削除はしない方が望ましい場合があります。 編集用の権限を確認して割り当て（削除は除く）するには、 [コンテンツフラグメント — 削除に関する考慮事項](/help/assets/content-fragments/content-fragments-delete.md).
+このユーザーグループには、コンテンツフラグメントを作成および編集する権限を付与し、削除する権限は付与しない方が望ましい場合があります。削除の権限を除いて編集の権限を確認し割り当てる場合は、[コンテンツフラグメント - 削除に関する考慮事項](/help/assets/content-fragments/content-fragments-delete.md)を参照してください。
 
 ### モデルエディター
 
-変更する機能 **コンテンツフラグメントモデル** 管理者または **小集団** 管理者権限を持つユーザーのみを対象としています。 コンテンツフラグメントモデルを変更すると、多くのダウンストリーム効果が生じます。
+**コンテンツフラグメントモデル**&#x200B;を変更する権限は、管理者のみに付与するか、管理者権限を持つ&#x200B;**少数のユーザーから成るグループ**&#x200B;に付与してください。コンテンツフラグメントモデルを変更すると、下流に対する多くの影響が生じます。
 
 >[!CAUTION]
 >
->コンテンツフラグメントモデルを変更すると、ヘッドレスアプリケーションが依存する基盤となる GraphQL API が変更されます。
+>コンテンツフラグメントモデルを変更すると、ヘッドレスアプリケーションの基盤となっている GraphQL API が変更されます。
 
-コンテンツフラグメントモデルを管理するが、完全な管理者アクセス権を持たないグループを作成する場合は、次のアクセス制御エントリを持つグループを作成できます。
+コンテンツフラグメントモデルを管理はするものの、完全な管理者アクセス権を持たないグループを作成する場合は、次のアクセス制御エントリを持つグループを作成できます。
 
-| パス | 権限 | 権限 |
+| パス | 可否 | 権限 |
 |-----| -------------| ---------|
 | `/conf` | **許可** | `jcr:read` |
 | `/conf/<config-name>/settings/dam/cfm` | **許可** | `rep:write`、`crx:replicate` |
 
-## 公開サービスの権限
+## パブリッシュサービスの権限
 
-パブリッシュサービスは「ライブ」環境と見なされ、通常、GraphQL API コンシューマーとのやり取りがおこなわれます。 コンテンツは、Author サービスで編集および承認された後、Publish サービスに公開されます。 ヘッドレスアプリケーションは、GraphQL API を介して公開サービスから承認済みコンテンツを使用します。
+パブリッシュサービスは「ライブ」環境と見なされ、通常は GraphQL API ユーザーがやり取りする相手になります。コンテンツは、オーサーサービスで編集および承認された後、パブリッシュサービスに公開されます。この場合、ヘッドレスアプリケーションは、GraphQL API を介してパブリッシュサービスから提供される承認済みコンテンツを消費します。
 
-AEM パブリッシュサービスの GraphQL エンドポイントで公開されたデフォルトのコンテンツは、未認証ユーザーを含め、すべてのユーザーがアクセスできます。
+AEM パブリッシュサービスの GraphQL エンドポイントを介して公開されるコンテンツは、デフォルトで、未認証ユーザーを含むすべてのユーザーからアクセスできます。
 
 ### コンテンツの権限
 
-AEM GraphQL API を使用して公開されるコンテンツは、 [閉じられたユーザーグループ (CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html) アセットフォルダーに対して設定します。このフォルダーは、AEMのユーザーグループ（およびそのメンバー）が Assets フォルダーのコンテンツにアクセスできるように指定します。
+AEM の GraphQL API を使用して公開されるコンテンツは、アセットフォルダーに設定された[閉じられたユーザーグループ（CUG）](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=ja)を使用して制限できます。これは、アセットフォルダーのコンテンツにアクセスできる AEM ユーザーグループ（およびそのメンバー）を指定するものです。
 
-アセット CUG は次の方法で動作します。
+アセット CUG は次のように動作します。
 
 * まず、フォルダーおよびサブフォルダーへのすべてのアクセスを拒否します。
-* 次に、CUG のリストに一覧表示されているすべてのAEMユーザーグループのフォルダーとサブフォルダーへの読み取りアクセスを許可します
+* 次に、CUG のリストに含まれているすべての AEM ユーザーグループのフォルダーとサブフォルダーへの読み取りアクセスを許可します。
 
-CUG は、GraphQL API を介して公開されるコンテンツを含むアセットフォルダーに設定できます。 AEM Publish 上のアセットフォルダーへのアクセスは、ユーザーが直接アクセスするのではなく、ユーザーグループを通じて制御する必要があります。 GraphQL API で公開されるコンテンツを含むアセットフォルダーへのアクセス権を付与するAEMユーザーグループを作成（または再利用）します。
+CUG を設定できるのは、GraphQL API を使用して公開されるコンテンツを含んだアセットフォルダーです。AEM パブリッシュ上のアセットフォルダーに対するアクセスは、ユーザーごとに直接制御するのではなく、ユーザーグループを介して制御する必要があります。GraphQL API で公開されるコンテンツを含んだアセットフォルダーへのアクセス権を付与する AEM ユーザーグループを作成（または再利用）します。
 
-#### 認証スキームを選択{#publish-permissions-users}
+#### 認証スキームの選択{#publish-permissions-users}
 
-この [AEMヘッドレス SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) は、次の 2 種類の認証をサポートしています。
+[AEM ヘッドレス SDK](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) では、次の 2 種類の認証をサポートしています。
 
-* [トークンベースの認証](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) 単一のテクニカルアカウントにバインドされたサービス資格情報を使用する。
-* AEMユーザーを使用した基本認証。
+* [トークンベースの認証](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)（単一のテクニカルアカウントにバインドされたサービス資格情報を使用）
+* 基本認証（AEM ユーザーを使用）
 
 ### GraphQL API へのアクセス
 
-HTTP リクエスト [適切な認証資格情報](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) AEM パブリッシュサービスの GraphQL API エンドポイントには、読み取る権限を持つコンテンツや匿名でアクセス可能なコンテンツが含まれます。 GraphQL API の他のコンシューマーは、CUG で保護されたフォルダー内のコンテンツを読み取ることができません。
+AEM パブリッシュサービスの GraphQL API エンドポイントに[適した認証資格情報](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client)を提供する HTTP リクエストには、資格情報を持つユーザーだけが読み取りを許可されたコンテンツや、匿名でアクセス可能なコンテンツが含まれます。GraphQL API の他のコンシューマーは、CUG で保護されたフォルダー内のコンテンツを読み取ることができません。
