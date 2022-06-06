@@ -9,9 +9,9 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1004'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
    CIF アドオンの zip ファイルには、2 つの Sling 機能アーカイブ `.far` ファイルが含まれています。ローカル AEM as a Cloud Service SDK を実行する方法に応じて、AEM オーサーまたは AEM パブリッシュに対して正しいものを使用してください。
 
-1. という名前のローカル OS 環境変数を作成します。 `COMMERCE_ENDPOINT` Adobe Commerce GraphQL エンドポイントを保持している。
+1. Adobe Commerce GraphQL エンドポイントを保持する `COMMERCE_ENDPOINT` という名前のローカル OS 環境変数を作成します。
 
    Mac OS X の例：
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
 
    この変数は、AEM as a Cloud Service 環境に対しても設定する必要があります。変数について詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
-1. （オプション）ステージング済みカタログ機能を有効にするには、Adobe Commerceインスタンスの統合トークンを作成する必要があります。 [概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
+1. （オプション）ステージング済みカタログ機能を有効にするには、Adobe Commerce インスタンスの統合トークンを作成する必要があります。[概要](./getting-started.md#staging)の手順に従ってトークンを作成してください。
 
    `COMMERCE_AUTH_HEADER` という名前の OSGi シークレットを次の値に設定します。
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service SDK を使用するローカル CIF アドオン開発の
    Authorization: Bearer <Access Token>
    ```
 
-   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development)を参照してください。
+   シークレットについて詳しくは、[AEM as a Cloud Service の OSGi の設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=ja#local-development)を参照してください。
 
 1. AEM as a Cloud Service SDK を開始します。
 
@@ -167,7 +167,7 @@ CIF コアコンポーネントは、提供されている `all` パッケージ
 
 CIF プロジェクトを開始する 2 つ目の方法は、[AEM Venia 参照用ストア](https://github.com/adobe/aem-cif-guides-venia)をコピーして使用する方法です。AEM Venia 参照用ストアは、AEM 用の CIF コアコンポーネントの使用方法を示すサンプルのストアフロントアプリケーションです。これは、ベストプラクティス例として意図されていて、独自機能を開発するための有望な出発点としての役割も果たします。
 
-Venia 参照用ストアを使い始めるには、Git リポジトリーをコピーし、必要に応じてプロジェクトをカスタマイズする開始を作成します。
+Venia 参照用ストアを使い始めるには、Git リポジトリをコピーし、必要に応じてプロジェクトをカスタマイズする開始を作成します。
 
 >[!NOTE]
 >
