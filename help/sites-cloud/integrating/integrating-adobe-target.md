@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1035'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Target 設定を編集するには、次の手順に従います。
 
 ## Adobe Launch を使用して、AEM サイトに Adobe Target を統合する {#integrate-target-launch}
 
-AEM は、Experience Platform Launch との標準の統合を提供します。Adobe Target 拡張機能を Experience Platform Launch に追加すると、AEM Web ページで Adobe Target の機能を使用できます。Target ライブラリは、Launch を使用してのみレンダリングされます。
+AEM は、Experience Platform Launch との標準の統合を提供します。Adobe Target 拡張機能を Experience Platform Launch に追加すると、AEM web ページで Adobe Target の機能を使用できます。Target ライブラリは、Launch を使用してのみレンダリングされます。
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ AEM は、Experience Platform Launch との標準の統合を提供します。A
 
 ### 必要な拡張機能の追加 {#add-extension}
 
-**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の Web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target** と **Adobe ContextHub** の両方の拡張機能を追加する必要があります。
+**拡張機能**&#x200B;は、コアライブラリ設定を管理するコンテナです。Adobe Target 拡張機能は at.js（最新の web 用 Target JavaScript SDK）によるクライアントサイド実装をサポートしています。**Adobe Target** と **Adobe ContextHub** の両方の拡張機能を追加する必要があります。
 
 1. 「拡張機能カタログ」オプションを選択し、フィルターで Target を検索します。
 2. 「**Adobe Target** at.js」を選択し、「インストール」オプションをクリックします。
