@@ -6,15 +6,15 @@ feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # AEM Extension for PWA Studio の概要 {#getting-started-pwa}
 
-PWA Studioは GraphQL により初期設定で Adobe Commerce とシームレスに統合されており、革新的で魅力的なストアフロントやその他のデジタルエクスペリエンスを作成するためのオプションを無制限に提供します。
+PWA Studio は GraphQL により初期設定で Adobe Commerce とシームレスに統合されており、革新的で魅力的なストアフロントやその他のデジタルエクスペリエンスを作成するためのオプションを無制限に提供します。
 
 コンテンツフラグメントは、構造が事前に定義されたコンテンツの断片です。この構造により、GraphQL を API として使用して、様々な形式（JSON や Markdown など）のコンテンツフラグメントをヘッドレス方式で利用し、独立してレンダリングすることができます。コンテンツフラグメントには、GraphQL に必要なすべてのデータタイプとフィールドが含まれているので、アプリケーションは利用可能な情報のみをリクエストして、期待する情報だけを受け取ることができます。コンテンツフラグメントの構造は柔軟なので、複数の場所や複数のチャネルでの使用にも適しています。
 
@@ -30,7 +30,7 @@ PWA Studio アプリをセットアップするには、Adobe Commerce の [PWA 
 
 PWA Studio を AEM の GraphQL エンドポイントに接続するには、[AEM Extension for PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions) を使用します。
 
-1. リポジトリーをチェックアウトします。
+1. リポジトリをチェックアウトします。
 
 1. PWA Studio アプリケーションで、この拡張機能を開発依存コンポーネントとして追加します。
 
@@ -90,7 +90,7 @@ a. AEM_CFM_GRAPHQL 変数を pwa-root/.env に追加し、AEM コンテンツフ
 
 ## AEM のセットアップ {#setup-aem}
 
-AEM コンテンツフラグメントのドキュメントに従って、 AEM プロジェクトの GraphQL エンドポイントをセットアップします。さらに、AEM プロジェクトに次の設定を追加して、PWA Studio アプリケーションから GraphQL エンドポイントにアクセスできるようにします。
+AEM コンテンツフラグメントのドキュメントに従って、AEM プロジェクトの GraphQL エンドポイントをセットアップします。さらに、AEM プロジェクトに次の設定を追加して、PWA Studio アプリケーションから GraphQL エンドポイントにアクセスできるようにします。
 
 * Adobe Granite クロスオリジンリソース共有ポリシー（com.adobe.granite.cors.impl.CORSPolicyImpl）
 
@@ -112,11 +112,11 @@ GraphQL エンドポイントを紹介するために、サンプルコンテン
 
 この拡張機能は、PWA Studio アプリケーションを AEM に接続して、GraphQL でコンテンツを取得し、レンダリングする方法の実装例と考えることができます。
 
-ユースケースに応じて、独自のカスタムコンテンツフラグメントモデルを作成します。このモデルが、独自の React コンポーネントで利用できる カスタム GraphQL スキーマになります。
+ユースケースに応じて、独自のカスタムコンテンツフラグメントモデルを作成します。このモデルが、独自の React コンポーネントで利用できるカスタム GraphQL スキーマになります。
 
 実稼動のセットアップは、様々な点で異なるものになる可能性があります。
 
-* Apollo クライアントをカスタマイズする代わりに、AEMとAdobe Commerce GraphQL のデータを組み合わせた単一のフェデレーテッド GraphQL エンドポイントを使用できます。
+* Apollo クライアントをカスタマイズする代わりに、AEM と Adobe Commerce GraphQL データを組み合わせて、単一のフェデレーテッド GraphQL エンドポイントにできます。
 * PWA Studio アプリケーションでは、UPWARD 設定のプロキシを介さずに、AEM GraphQL エンドポイント URL を直接使用することもできます。このプロキシは別のレイヤー（CDN など）に移動することもできます。
 * どのアプローチが最適かは、エンドユーザーへの PWA Studio アプリケーションの提供方法によっても大きく異なります。
 
