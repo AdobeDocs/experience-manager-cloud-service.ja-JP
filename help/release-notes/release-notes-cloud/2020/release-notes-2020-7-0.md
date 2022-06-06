@@ -3,19 +3,19 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 リリー�
 description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート."'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1038'
 ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 のリリースノート {#release-notes}
 
 Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノートの概要を次に説明します。
 
 ## リリース日 {#release-date}
 
-[!DNL Experience Manager] as a Cloud Service 2020.7.0 のリリース日は 2020 年 7 月 30 日です。
+[!DNL Experience Manager] as a Cloud Service 2020.7.0 のリリース日は 2020年7月30日です。
 
 ## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
@@ -25,15 +25,15 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 * 新しいユーザーインターフェイスの実装は、クラシック UI に基づく実装に代わるものです。
 
-* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。「[Adobe Analytics の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=ja)」および「[Adobe Target の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=ja)」を参照してください。
+* ユーザーインターフェイスダイアログの簡素化。変数マッピングおよび他の設定用のフレームワークの作成は [!DNL Adobe Launch] に残ります。[Adobe Analytics の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=ja)および [Adobe Target の統合](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=ja)を参照してください。
 
-* 設定は、Experience Manager リポジトリーの `/etc/cloudsettings` ではなく、`/conf` に保存されるようになりました。
+* 設定は、Experience Manager リポジトリの `/etc/cloudsettings` ではなく、`/conf` に保存されるようになりました。
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-### [!DNL Assets] の新機能  {#what-is-new-assets}
+### [!DNL Assets] の新機能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] は、アセットを処理するための拡張性に優れたサービスです。管理者は、[!DNL Asset Compute Service] を使用して作成したカスタムアプリケーションを呼び出すように [!DNL Experience Manager] を設定できます。デベロッパーはこのサービスを使用して、複雑な使用例に対応する特殊なカスタムアプリケーションを作成できます。この Web サービスでは、様々なファイルタイプのサムネールを生成したり、アドビファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前段階としてのフルテキストの抽出を行ったり、利用可能なすべての [!DNL Sensei] サービスでアセットを実行できます。詳しくは、「[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md)」を参照してください。
+* [!DNL Asset Compute Service] は、アセットを処理するための拡張性に優れたサービスです。管理者は、[!DNL Asset Compute Service] を使用して作成したカスタムアプリケーションを呼び出すように [!DNL Experience Manager] を設定できます。デベロッパーはこのサービスを使用して、複雑な使用例に対応する特殊なカスタムアプリケーションを作成できます。この web サービスでは、様々なファイルタイプのサムネールを生成したり、アドビファイル形式から高品質な画像レンダリングを生成したり、ビデオのエンコード（将来）、メタデータの抽出、インデックス作成の前段階としてのフルテキストの抽出を行ったり、利用可能なすべての [!DNL Sensei] サービスでアセットを実行できます。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](/help/assets/asset-microservices-configure-and-use.md)を参照してください。
 
 * [!DNL Experience Manager] as a Cloud Service の [!DNL Dynamic Media] の初期設定が改善され、より堅牢になりました。管理者にプロセスの進行状況が提供されます。
 
@@ -55,7 +55,7 @@ Experience Manager as a Cloud Service 2020.7.0 の一般的なリリースノー
 
 AEM Commerce が Cloud Service で利用できるようになりました。
 
-詳しくは、「[Cloud ServiceとしてのAEMコマースの使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja)」を参照してください。
+詳しくは、[AEM Commerce as a Cloud Service の使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=ja)を参照してください。
 
 ## コアコンポーネント {#core-components}
 
@@ -67,7 +67,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * コアコンポーネントの Accelerated Mobile Pages（AMP）
 サポートが利用できるようになりました。Google のモバイル検索結果からサイトに入るときにページトランジションを瞬時に入れるので、より迅速な顧客体験を作成でき、ユーザーエンゲージメントと SEO が向上します。
-詳しくは、「[コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)」を参照してください。
+詳しくは、[コアコンポーネントの AMP サポート](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=ja)を参照してください。
 
 * [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=ja) のバージョン 1.0.2 との互換性。
 
@@ -77,7 +77,7 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 ### リリース日 {#release-date-cm}
 
-[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020 年 7 月 9 日（PT）です。
+[!UICONTROL Cloud Manager] バージョン 2020.7.0 のリリース日は 2020年7月9日（PT）です。
 
 ### 新機能 {#what-is-new-cloud-manager}
 
@@ -89,14 +89,13 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * Cloud Manager のパイプラインで、顧客が設定した変数とシークレットがサポートされるようになりました。
 
-
    詳細は、「パイプライン変数」を参照してください。
 
-* 認証バウンドのプライベート Maven リポジトリーがサポートされるようになりました。
+* 認証バウンドのプライベート Maven リポジトリがサポートされるようになりました。
 
 * Cloud Manager ビルドコンテナで、Java 8 と Java 11 の両方がサポートされるようになりました。詳細は、「Java 11 サポートの使用」を参照してください。
 
-### バグ修正 {#bug-fixes-cm}
+### バグの修正 {#bug-fixes-cm}
 
 * 環境が完全に作成される前に、Cloud Manager から開発者コンソールへのリンクが正しくアクティブになっていませんでした。
 
@@ -126,15 +125,15 @@ AEM Commerce が Cloud Service で利用できるようになりました。
 
 * [静的な専用 egress IP アドレス](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address)は、Java コードでプログラムされたアウトバウンドトラフィックに割り当てることができます。これは、一部の統合で役立つ場合があります。
 
-* AEM Analytics Cloud Service UI をクラシック UI から新しい AEM UI に移行しました。また、AEM リポジトリー内の Analytics クラウドサービスの場所を、他の AEM クラウドサービスと連携するために、 `/etc` から `/conf` に移動しました。
+* AEM Analytics Cloud Service UI をクラシック UI から新しい AEM UI に移行しました。また、AEM リポジトリ内の Analytics クラウドサービスの場所を、他の AEM クラウドサービスと連携するために、`/etc` から `/conf` に移動しました。
 
-* AEM Target Cloud Service UI をクラシック UI から新しい AEM UI に移行しました。また、AEM リポジトリー内の Target Cloud Service の場所を、他の AEM クラウドサービスと連携させるために、`/etc` から `/conf` に移動しました。
+* AEM Target Cloud Service UI をクラシック UI から新しい AEM UI に移行しました。また、AEM リポジトリ内の Target Cloud Service の場所を、他の AEM クラウドサービスと連携させるために、`/etc` から `/conf` に移動しました。
 
 ## Cloud Readiness Analyzer {#cloud-readiness-analyzer}
 
 Cloud Readiness Analyzer リリース v1.0.2 の新機能と更新点については、このセクションを参照してください。
 
-### バグ修正 {#cra-bug-fixes}
+### バグの修正 {#cra-bug-fixes}
 
 * 以前のバージョンの CRA を Adobe Experience Manager（AEM）6.1 で実行できませんでした。管理者グループのユーザーに対する明示的なサポートが追加されました。
 
