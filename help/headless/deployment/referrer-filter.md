@@ -1,25 +1,25 @@
 ---
-title: AEM Headless を使用した Referrer Filter の設定
-description: Adobe Experience Managerのリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。 ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
+title: AEM ヘッドレスを使用したリファラーフィルターの設定
+description: Adobe Experience Manager のリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # リファラーフィルター {#referrer-filter}
 
-Adobe Experience Managerのリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。 ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
+Adobe Experience Manager のリファラーフィルターを使用すると、サードパーティのホストからアクセスできます。ヘッドレスアプリケーションの GraphQL エンドポイントへのアクセスを有効にするには、リファラーフィルターの OSGi 設定が必要です。
 
-これは、リファラーフィルターに次の適切な OSGi 設定を追加することでおこなわれます。
+これを行うには、リファラーフィルターに次の適切な OSGi 設定を追加します。
 
-* 信頼できる Web サイトのホスト名（`allow.hosts` または `allow.hosts.regexp`）を指定する。
+* 信頼できる web サイトのホスト名（`allow.hosts` または `allow.hosts.regexp`）を指定する。
 * この名前のホストに対するアクセスを許可する。
 
-ファイルの名前は次のように指定する必要があります。 `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
+ファイル名は、`org.apache.sling.security.impl.ReferrerFilter.cfg.json`.のように指定する必要があります。
 
 例えば、リファラー `my.domain` を持つリクエストにアクセスを許可するには、次の操作を行います。
 
