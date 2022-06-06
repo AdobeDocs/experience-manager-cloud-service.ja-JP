@@ -4,9 +4,9 @@ description: Dispatcher ツールを使用した検証とデバッグ
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 ## はじめに {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->クラウドの Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウドの Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページを参照してください。Dispatcher 設定がレガシーモードの場合は、 [レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md) を参照してください。
+>クラウドの Dispatcher と Dispatcher ツールのダウンロード方法について詳しくは、[クラウドの Dispatcher](/help/implementing/dispatcher/disp-overview.md) ページを参照してください。Dispatcher 設定がレガシーモードの場合は、[レガシーモードのドキュメント](/help/implementing/dispatcher/validation-debug-legacy.md)を参照してください。
 
 以降の節では、フレキシブルモードのファイル構造、ローカル検証、デバッグ、レガシーモードからフレキシブルモードへの移行について説明します。
 
@@ -127,7 +127,7 @@ ht-degree: 96%
 
 仮想ホストのサンプルが含まれています。お使いの仮想ホストに対して、このファイルのコピーを作成し、カスタマイズしてから `conf.d/enabled_vhosts` に移動し、カスタマイズしたコピーのシンボリックリンクを作成します。
 
-ServerAlias に一致する仮想ホストが常に使用可能であることを確認する `\*.local` 内部Adobeプロセスに必要な localhost も含まれます。
+ServerAlias `\*.local` と、アドビの内部処理に必要な localhost に一致する仮想ホストを常に使用できるようにします。
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -221,7 +221,7 @@ Phase 3 finished
 
 1. バリデーターを実行します。設定が有効でない場合、スクリプトは失敗します。
 2. Apache httpd を起動できるように、`httpd -t` コマンドを実行して、構文が正しいかどうかをテストします。テストが成功した場合は、設定をデプロイする準備が整っています.
-3. 「[ファイル構造](##flexible-mode-file-structure)」節で説明されているようにで不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。
+3. 「[ファイル構造](##flexible-mode-file-structure)」節で説明されているように不変であることが意図されている、Dispatcher SDK 設定ファイルのサブセットが変更されていないことを確認します。
 
 Cloud Manager によるデプロイ中に、`httpd -t` の構文チェックも実行され、エラーは Cloud Manager の `Build Images step failure` ログに記録されます。
 
@@ -440,7 +440,7 @@ Dispatcher 設定では、同じ環境変数が使用できます。さらにロ
 }
 ```
 
-または、Cloud Manager 環境変数を httpd/dispatcher 設定で使用できますが、環境シークレットを使用することはできません。 このメソッドは、プログラムに複数の開発環境があり、それらの開発環境の一部が httpd/dispatcher 設定の値が異なる場合に特に重要です。 上の例と同じ${VIRTUALHOST} 構文が使用されますが、上の変数ファイル内の Define 宣言は使用されません。 詳しくは、 [Cloud Manager のドキュメント](/help/implementing/cloud-manager/environment-variables.md) を参照してください。
+または、環境シークレットを使用することはできませんが、Cloud Manager 環境変数を httpd/dispatcher 設定で使用できます。このメソッドは、プログラムに複数の開発環境があり、それらの開発環境の一部が httpd/dispatcher 設定の値が異なる場合に特に重要です。上の例と同じ ${VIRTUALHOST} 構文が使用されますが、上の変数ファイル内の Define 宣言は使用されません。Cloud Manager の環境変数の設定方法については、[Cloud Manager のドキュメント](/help/implementing/cloud-manager/environment-variables.md)を参照してください。
 
 設定をローカルでテストする場合、`DISP_RUN_MODE` 変数を `docker_run.sh` スクリプトに直接渡すことで、様々な環境タイプをシミュレートできます。
 
@@ -478,7 +478,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 Cloud Manager 2021.7.0 リリースでは、新しい Cloud Manager プログラムは、[AEM アーキタイプ 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=ja) 以降を使用した Maven プロジェクト構造を生成します。これには **opt-in/USE_SOURCES_DIRECTLY** ファイルが含まれています。これにより、ファイルの数とサイズに関する[レガシーモード](/help/implementing/dispatcher/validation-debug-legacy.md)の以前の制限事項がなくなるので、SDK とランタイムによる設定の検証とデプロイも改善されます。Dispatcher 設定にこのファイルがない場合は、移行することを強くお勧めします。安全な移行を確実に行うには、次の手順に従います。
 
-1. **ローカルテスト：**&#x200B;最新の Dispatcher ツール SDKを使用して、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。この記事の「ローカル検証」の手順に従って、Dispatcher がローカルで動作するかどうかをテストします。
+1. **ローカルテスト：**&#x200B;最新の Dispatcher ツール SDK を使用して、フォルダーおよびファイル `opt-in/USE_SOURCES_DIRECTLY` を追加します。この記事の「ローカル検証」の手順に従って、Dispatcher がローカルで動作するかどうかをテストします。
 2. **クラウド開発テスト：**
    * 実稼動以外のパイプラインでクラウドの開発環境にデプロイされたファイル `opt-in/USE_SOURCES_DIRECTLY` を Git ブランチにコミットします。
    * Cloud Manager を使用して、クラウド開発環境にデプロイします。
