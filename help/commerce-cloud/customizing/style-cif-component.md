@@ -12,9 +12,9 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 ## 前提条件 {#prerequisites}
 
-このチュートリアルを完了するには、ローカルの開発環境が必要です。これには、Adobe Commerceインスタンスに設定および接続されたAEMの実行インスタンスが含まれます。 [AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。
+このチュートリアルを完了するには、ローカルの開発環境が必要です。これには、Adobe Commerce インスタンスに設定および接続された AEM の実行インスタンスが含まれます。[AEM as a Cloud Service SDK を使用してローカル開発をセットアップする](../develop.md)ための要件と手順を確認します。
 
 ## Venia プロジェクトのクローン {#clone-venia-project}
 
@@ -57,11 +57,11 @@ Venia プロジェクト[のクローンを作成して](https://github.com/adob
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. AEMインスタンスをAdobe Commerceインスタンスに接続するために必要な OSGi 設定を追加するか、新しく作成されたプロジェクトに設定を追加します。
+1. AEM インスタンスを Adobe Commerce インスタンスに接続するために必要な OSGi 構成を追加するか、新しく作成されたプロジェクトに構成を追加します。
 
-1. この時点で、Adobe Commerceインスタンスに接続されたストアフロントの作業用バージョンが必要です。 `US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
+1. この時点で、Adobe Commerce インスタンスに接続されたストアフロントの作業用のバージョンが必要です。`US`／`Home` ページ（[http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)）にアクセスします。
 
-   ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、Adobe Commerceへの接続が機能していることが示されます。
+   ストアフロントは現在 Venia テーマを使用しています。ストアフロントのメインメニューを展開すると、様々なカテゴリが表示され、Adobe Commerce への接続が機能していることが示されます。
 
    ![Venia テーマで構成されたストアフロント](../assets/style-cif-component/venia-store-configured.png)
 
@@ -473,7 +473,7 @@ IDE と生成されたプロジェクトに戻ります。
 
 ## ボーナスチャレンジ {#bonus-challenge}
 
-[AEM スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用して 、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。「[スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=ja)」では、この作業をおこなう方法に関する詳細な手順と情報が説明されています。
+[AEM スタイルシステム](/help/sites-cloud/authoring/features/style-system.md)を使用して 、コンテンツ作成者がオン／オフを切り替えることのできる 2 つのスタイルを作成します。「[スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=ja)」では、この作業を行う方法に関する詳細な手順と情報が説明されています。
 
 ![ボーナスチャレンジ - スタイルシステム](../assets/style-cif-component/bonus-challenge.png)
 
@@ -484,4 +484,4 @@ IDE と生成されたプロジェクトに戻ります。
 * [ローカル AEM 開発環境の設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=ja)
 * [クライアントサイドライブラリ](/help/implementing/developing/introduction/clientlibs.md)
 * [AEM Sites 使用の手引き](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=ja)
-* [スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [スタイルシステムを使用した開発](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=ja)
