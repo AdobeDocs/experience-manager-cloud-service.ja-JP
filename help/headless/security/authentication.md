@@ -4,9 +4,9 @@ description: ヘッドレスコンテンツ配信を保護するためにリモ�
 feature: Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 source-git-commit: 4e37db128aa31d6e8e950be0d077eae921a27468
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,4 +40,4 @@ Authorization: Bearer <access_token>
 
 つまり、GraphQL クエリの実行に必要な権限がアカウントにあることを確認する必要があります。
 
-この確認は、ローカルインスタンスで GraphiQL を使用して行えます。詳細： [権限はこちらから参照できます。](/help/headless/security/permissions.md).
+この確認は、ローカルインスタンスで GraphiQL を使用して行えます。権限について詳しくは、[こちら](/help/headless/security/permissions.md)を参照してください。
