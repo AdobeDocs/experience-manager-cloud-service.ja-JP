@@ -3,9 +3,9 @@ title: AEM でのコンテンツフラグメントモデルの作成について
 description: コンテンツフラグメントモデルを使用したヘッドレス CMS のコンテンツモデリングの概念と仕組みについて説明します。
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -132,4 +132,4 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * はじめる前に
 
-   * [コンテンツフラグメントモデルヘッドレス設定の作成](/help/headless/setup/create-content-model.md)
+   * [コンテンツフラグメントモデルの作成 - ヘッドレスセットアップ](/help/headless/setup/create-content-model.md)
