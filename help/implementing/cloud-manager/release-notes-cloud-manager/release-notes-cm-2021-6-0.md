@@ -1,10 +1,10 @@
 ---
-title: AEM as a Cloud Service Release 2021.6.0 Cloud Manager のリリースノート
+title: AEM as a Cloud Service リリース 2021.6.0 の Cloud Manager のリリースノート
 description: AEM as a Cloud Service Release 2021.5.0 Cloud Manager のリリースノート
 feature: Release Information
 exl-id: 9a0a53d3-31d4-493d-ba2e-b4bb22f60351
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service 2021.6.0 の Cloud Manager のリリース日は 2021 年
 
 * 環境の詳細ページに、公開サービスとプレビューサービスの複数のドメイン名が表示されるようになりました（該当する場合）。詳しくは、[環境の詳細](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ja#viewing-environment)を参照してください。
 
-### バグ修正 {#bug-fixes}
+### バグの修正 {#bug-fixes}
 
 * ルート要素名の後に改行を含む JCR ノード定義が正しく解析されなかった問題を修正しました。
 
