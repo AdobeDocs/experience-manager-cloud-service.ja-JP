@@ -1,18 +1,18 @@
 ---
-title: ページへのDynamic Media Assets の追加
+title: ページへの Dynamic Media アセットの追加
 description: Adobe Experience Manager as a Cloud Service で Dynamic Media コンポーネントをページに追加する方法を説明します。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3216'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# ページへのDynamic Media Assets の追加{#adding-dynamic-media-assets-to-pages}
+# ページへの Dynamic Media アセットの追加{#adding-dynamic-media-assets-to-pages}
 
 Web サイトで使用するアセットに Dynamic Media 機能を追加するには、**Dynamic Media**、**インタラクティブメディア**、**パノラマメディア**、**ビデオ 360 メディア**&#x200B;のいずれかのコンポーネントをページに直接追加します。レイアウトモードに入り、Dynamic Media コンポーネントを有効にします。次に、これらのコンポーネントをページに追加し、そのコンポーネントにアセットを追加します。Dynamic Media コンポーネントはスマートです。追加しようとしているアセットが画像、ビデオのどちらなのかが検出され、それに応じて利用可能なオプションが変わります。
 
@@ -330,7 +330,7 @@ Dynamic Media コンポーネントを使用して、スマート切り抜き画
 
 * **[!UICONTROL ビューアプリセット]** - 「ビューアプリセット」ドロップダウンリストから既存のビューアを選択します。
 
-探しているビューアプリセットが表示されない場合は、そのビューアプリセットが公開されていることを確認してください。ビューアプリセットは、公開してから使用してください。詳しくは、[ビューアプリセットを管理する](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
+探しているビューアプリセットが表示されない場合は、そのビューアプリセットが公開されていることを確認してください。ビューアプリセットは、公開してから使用してください。詳しくは、[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 
 ### コンポーネント：ビデオ 360 メディア {#video-media-component}
 
@@ -346,7 +346,7 @@ Web ページ上でエクイレクタングラー形式のビデオをレンダ�
 
 * **[!UICONTROL ビューアプリセット]** - 「ビューアプリセット」ドロップダウンリストから既存のビューアを選択します。バーチャルリアリティグラスを使用するエンドユーザーには、Video360VR を使用します。基本的なビデオ再生コントロールとソーシャルメディア機能を含んでいます。基本的なビデオ再生コントロールを含む Video360_social を使用します。ビデオのレンダリングはステレオモードで行われます。視点の手動制御はオフになり、ジャイロスコープ制御がオンになります。ソーシャルメディア機能はありません。
 
-探しているビューアプリセットが表示されない場合は、そのビューアプリセットが公開されていることを確認してください。ビューアプリセットは、公開してから使用してください。詳しくは、[ビューアプリセットを管理する](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
+探しているビューアプリセットが表示されない場合は、そのビューアプリセットが公開されていることを確認してください。ビューアプリセットは、公開してから使用してください。詳しくは、[ビューアプリセットの管理](/help/assets/dynamic-media/managing-viewer-presets.md)を参照してください。
 
 ### HTTP/2 を使用して Dynamic Media アセットを配信する {#using-http-to-delivery-dynamic-media-assets}
 
