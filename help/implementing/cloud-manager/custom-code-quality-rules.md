@@ -1,11 +1,11 @@
 ---
 title: カスタムコード品質ルール
-description: このページでは、[ コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。 これらは、AEM Engineering のベストプラクティスに基づいています。
+description: このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、AEM Engineering のベストプラクティスに基づいています。
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 source-git-commit: ee45ba3a03f9ab5461a09188888694ca22a11b20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 72%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="カスタムコード品質ルール"
->abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。 これらは、AEM Engineering のベストプラクティスに基づいています。"
+>abstract="このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて説明します。これらは、AEM Engineering のベストプラクティスに基づいています。"
 
 このページでは、コード品質テストの一環として Cloud Manager で実行されるカスタムコード品質ルールについて[説明します。](/help/implementing/cloud-manager/code-quality-testing.md) これらは、AEM Engineering のベストプラクティスに基づいています。
 
 >[!NOTE]
 >
->ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQube を参照してください。 [概念ドキュメント](https://docs.sonarqube.org/7.4/user-guide/concepts/) を参照して、SonarQube の概念と品質ルールについて学んでください。
+>ここで提供されるコードサンプルは、例としてのみ使用されています。SonarQube の概念と品質ルールについて詳しくは、SonarQube の[概念に関するドキュメント](https://docs.sonarqube.org/7.4/user-guide/concepts/)を参照してください。
 
 ## SonarQube ルール {#sonarqube-rules}
 
@@ -108,7 +108,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **深刻度**：致命的
 * **最初の対象バージョン**：バージョン 2018.6.0
 
-AEM アプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を防ぐために、適切なタイムアウトが設定されていることを確認することが重要です。残念ながら、Java のデフォルト HTTP クライアント (`java.net.HttpUrlConnection`) と一般的に使用される Apache HTTP Components クライアントはタイムアウトしないので、タイムアウトを明示的に設定する必要があります。 また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内にする必要があります。
+AEM アプリケーション内から HTTP 要求を実行する場合、不要なスレッドの使用を防ぐために、適切なタイムアウトが設定されていることを確認することが重要です。ただし、Java のデフォルト HTTP クライアント（`java.net.HttpUrlConnection`）および一般的に使用される Apache HTTP コンポーネントクライアントのデフォルトの動作はタイムアウトしないので、タイムアウトを明示的に設定する必要があります。また、ベストプラクティスとして、これらのタイムアウトは 60 秒以内にする必要があります。
 
 #### 準拠していないコード {#non-compliant-code-2}
 
@@ -185,7 +185,7 @@ public void orDoThis() {
 
 `ResourceResolverFactory` から取得された `ResourceResolver` オブジェクトは、システムリソースを使用します。`ResourceResolver` が使用されなくなった場合に、これらのリソースを再利用する指標がありますが、`close()` メソッドを呼び出し、開いている `ResourceResolver` オブジェクトを明示的に閉じるほうが効率的です。
 
-一つの比較的一般的な誤解は `ResourceResolver` 既存の JCR セッションを使用して作成されたオブジェクトは、明示的に閉じないでください。閉じると、基になる JCR セッションが閉じられます。 これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
+比較的一般的な誤解として、既存の JCR セッションを使用して作成された `ResourceResolver` オブジェクトは明示的に閉じることはできず、そうすると基になる JCR セッションを閉じてしまうというものがあります。これは該当しません。どの方法で `ResourceResolver` を開いても、使用しなくなったら閉じる必要があります。`ResourceResolver` は閉じることのできる `Closeable` インターフェイスを実装するので、`close()` を明示的に呼び出す代わりに、`try-with-resources` 構文を使用することもできます。
 
 #### 準拠していないコード {#non-compliant-code-4}
 
@@ -225,7 +225,7 @@ public void orDoThis(Session session) throws Exception {
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリーにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
+[Sling ドキュメント](http://sling.apache.org/documentation/the-sling-engine/servlets.html)で説明されているように、パスによってサーブレットをバインドすることは推奨されません。パスバインドサーブレットでは、標準 JCR アクセス制御を使用できないので、追加のセキュリティをより厳格にする必要があります。パスバインドサーブレットを使用する代わりに、リポジトリにノードを作成し、リソースタイプによってサーブレットを登録することをお勧めします。
 
 #### 準拠していないコード {#non-compliant-code-5}
 
@@ -238,7 +238,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### キャッチされた例外は、ログまたはスローする必要がある（両方ではない） {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### キャッチされた例外は、ログに記録またはスローする必要があるが、両方は行わない {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **キー**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
 * **タイプ**：コードスメル
@@ -316,7 +316,7 @@ public void doThis() throws Exception {
 
 >[!NOTE]
 >
->これは、 `access.log`各リクエストの —type ログ。
+>これは、各要求の `access.log`-type ログには適用されません。
 
 #### 準拠していないコード {#non-compliant-code-8}
 
@@ -374,7 +374,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-その名のとおり、Java の例外は常に例外的な状況で使用する必要があります。その結果、例外がキャッチされた場合、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。 これにより、これらのメッセージがログに正しく表示されます。
+その名のとおり、Java の例外は常に例外的な状況で使用する必要があります。結果として、例外が検出されたときには、ログメッセージが適切なレベル（WARN または ERROR）で記録されるようにすることが重要です。これにより、これらのメッセージがログに正しく表示されます。
 
 #### 準拠していないコード {#non-compliant-code-10}
 
@@ -407,7 +407,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-既に述べたように、コンテキストはログメッセージを理解する場合に重要です。`Exception.printStackTrace()` を使用すると、スタックトレースのみが標準エラーストリームに出力されるので、すべてのコンテキストが失われます。さらに、AEMのようなマルチスレッドアプリケーションでは、このメソッドを同時に使用して複数の例外が印刷される場合、スタックトレースが重なり、大きな混乱を招く可能性があります。 例外は、ログフレームワークによってのみ記録される必要があります。
+既に述べたように、コンテキストはログメッセージを理解する場合に重要です。`Exception.printStackTrace()` を使用すると、スタックトレースのみが標準エラーストリームに出力されるので、すべてのコンテキストが失われます。さらに、AEM などのマルチスレッドアプリケーションで、このメソッドを同時に使用して複数の例外がプリントされる場合、スタックトレースが重なって大きな混乱を招くことがあります。例外は、ログフレームワークによってのみ記録される必要があります。
 
 #### 準拠していないコード {#non-compliant-code-11}
 
@@ -473,7 +473,7 @@ public void doThis() {
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2018.4.0
 
-一般に、 `/libs` および `/apps` を参照するパスは、Sling 検索パスに対する相対パスとして最も一般的に保存されるので、ハードコードしないでください。このパスは、次のように設定されます。 `/libs,/apps` デフォルトでは。 絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れる、わかりにくい不具合が生じる可能性があります。
+一般に、`/libs` および `/apps` で始まるパスは、参照元としてハードコーディングせず、Sling 検索パス（デフォルトで `/libs,/apps` に設定されている）に対する相対パスで格納する必要があります。絶対パスを使用すると、プロジェクトライフサイクルの後になって初めて現れる、わかりにくい不具合が生じる可能性があります。
 
 #### 準拠していないコード {#non-compliant-code-13}
 
@@ -502,7 +502,7 @@ Sling スケジューラーは、確実な実行を必要とするタスクに�
 
 Sling ジョブがクラスター環境で処理される方法について詳しくは、[Apache Sling Eventing and Job Handling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) を参照してください。
 
-### AEMの非推奨 API は使用しない {#sonarqube-aem-deprecated}
+### AEM の非推奨 API は使用しない {#sonarqube-aem-deprecated}
 
 * **キー**：AMSCORE-553
 * **タイプ**：コードスメル／Cloud Service との互換性
@@ -511,7 +511,7 @@ Sling ジョブがクラスター環境で処理される方法について詳�
 
 AEM API の表面は、使用が推奨されず非推奨と見なされる API を識別するために継続的に見直しされます。
 
-多くの場合、これらの API は、標準の Java を使用して非推奨（廃止予定）となっています `@Deprecated` 注釈と、 `squid:CallToDeprecatedMethod`.
+多くの場合、これらの API は、標準の Java `@Deprecated` 注釈を使用して非推奨とされ、その結果、`squid:CallToDeprecatedMethod` によって識別されます。
 
 ただし、API が AEM のコンテキストで非推奨となるものの、他のコンテキストでは非推奨とならない場合があります。このルールは、この 2 番目のクラスを識別します。
 
@@ -522,7 +522,7 @@ AEM API の表面は、使用が推奨されず非推奨と見なされる API �
 
 >[!NOTE]
 >
->OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。 2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
+>OakPAL は、スタンドアロンの Oak リポジトリを使用してコンテンツパッケージを検証するフレームワークです。2019 AEM Rockstar North America 賞を受賞したAEM Partner が開発しました。
 
 ### @ProviderType の注釈が付いた Product API は、お客様による実装または拡張はできない  {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
@@ -535,7 +535,7 @@ AEM API には、カスタムコードによる使用のみ（ただし実装は
 
 これらのインターフェイスに新しいメソッドが追加される場合、それらの追加メソッドは、これらのインターフェイスを使用する既存のコードには影響しません。その結果、これらのインターフェイスへの新しいメソッドの追加は、後方互換性があると見なされます。ただし、カスタムコードがこれらのインターフェイスのいずれかを実装する場合、そのカスタムコードによってお客様に後方互換性のリスクがもたらされます。
 
-AEMでの実装のみを意図したインターフェイスおよびクラスには、 `org.osgi.annotation.versioning.ProviderType` または、場合によっては、従来の注釈と同様の注釈 `aQute.bnd.annotation.ProviderType`. このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
+AEM でのみ実装されることを意図されたインターフェイスおよびクラスは、`org.osgi.annotation.versioning.ProviderType`（場合によっては、従来の類似の注釈の `aQute.bnd.annotation.ProviderType`）で注釈が付けられます。このルールは、カスタムコードによってこのようなインターフェイスが実装されている（またはクラスが拡張されている）場合を特定します。
 
 #### 準拠していないコード {#non-compliant-code-3}
 
@@ -547,16 +547,16 @@ public class DontDoThis implements Page {
 }
 ```
 
-### カスタム Lucene Oak インデックスには Tika 設定が必要 {#oakpal-indextikanode}
+### カスタム Lucene Oak インデックスには tika 設定が必要 {#oakpal-indextikanode}
 
 * **キー**：IndexTikaNode
 * **タイプ**：バグ
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.8.0
 
-標準搭載の複数のAEM Oak インデックスには tika 設定が含まれ、これらのインデックスのカスタマイズには tika 設定が含まれている必要があります。 このルールは、 `damAssetLucene`、 `lucene`、`graphqlConfig` インデックスのカスタマイズを確認し、 `tika` ノードがない場合、または `tika` ノードに `config.xml` という名前の子ノードがない場合には問題を報告します。
+標準提供の複数の AEM Oak インデックスには tika 設定が含まれており、これらのインデックスをカスタマイズする場合は tika 設定を含める必要があります。このルールは、 `damAssetLucene`、 `lucene`、`graphqlConfig` インデックスのカスタマイズを確認し、 `tika` ノードがない場合、または `tika` ノードに `config.xml` という名前の子ノードがない場合には問題を報告します。
 
-詳しくは、 [インデックス作成ドキュメント](/help/operations/indexing.md#preparing-the-new-index-definition) インデックス定義のカスタマイズの詳細については、を参照してください。
+インデックス定義のカスタマイズについて詳しくは、[インデックス作成に関するドキュメント](/help/operations/indexing.md#preparing-the-new-index-definition)を参照してください。
 
 #### 準拠していないコード {#non-compliant-code-indextikanode}
 
@@ -586,14 +586,14 @@ public class DontDoThis implements Page {
         + config.xml
 ```
 
-### カスタム Lucene Oak インデックスは同期にできません {#oakpal-indexasync}
+### カスタム Lucene Oak インデックスは同期してはいけない {#oakpal-indexasync}
 
 * **キー**：IndexAsyncProperty
 * **タイプ**：バグ
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.8.0
 
-タイプの Oak インデックス `lucene` は常に非同期でインデックスを作成する必要があります。 これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造について詳しくは、 [Oak ドキュメント。](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)
+`lucene` タイプの Oak インデックスは常に非同期でインデックスを作成する必要があります。これに従わないと、システムが不安定になる可能性があります。Lucene インデックスの構造について詳しくは、[Oak のドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition)を参照してください。
 
 #### 準拠していないコード {#non-compliant-code-indexasync}
 
@@ -633,7 +633,7 @@ public class DontDoThis implements Page {
 * **重大度**：ブロッカー
 * **開始バージョン**：2021.6.0
 
-AEM Assets でアセット検索が正しく機能するようにするには、`damAssetLucene` Oak インデックスのカスタマイズはこのインデックスに固有の一連のガイドラインに従う必要があります。このルールは、インデックス定義に、という名前の複数の値を持つプロパティが必要かどうかをチェックします。 `tags` 値を含む `visualSimilaritySearch`.
+AEM Assets でアセット検索が正しく機能するようにするには、`damAssetLucene` Oak インデックスのカスタマイズはこのインデックスに固有の一連のガイドラインに従う必要があります。このルールは、インデックス定義に `tags` という複数の値を持つプロパティがあり `visualSimilaritySearch` という値を含むかどうかを確認します。
 
 #### 準拠していないコード {#non-compliant-code-damAssetLucene}
 
@@ -680,7 +680,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2019.6.0
 
-複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。これにより、どの設定が適用されるかがあいまいになります。 このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
+複雑なプロジェクトでよく発生する問題は、同じ OSGi コンポーネントが複数回設定されることです。その結果、どの設定が適用可能かがあいまいになります。このルールは「実行モード対応」です。つまり、同じコンポーネントが同じ実行モード（または実行モードの組み合わせ）で複数回設定されている問題のみを特定します。
 
 >[!NOTE]
 >
@@ -688,7 +688,7 @@ AEM コンテンツリポジトリ内の `/libs` コンテンツツリーを読�
 >
 >例えば、ビルドで `com.myco:com.myco.ui.apps` と `com.myco:com.myco.all` というパッケージが生成され、`com.myco:com.myco.ui.apps` が `com.myco:com.myco.all` に組み込まれている場合、`com.myco:com.myco.ui.apps` 内のすべての設定が重複としてレポートされます。
 >
->これは、通常、 [コンテンツパッケージ構造のガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。この例では、パッケージ `com.myco:com.myco.ui.apps` が見つからない `<cloudManagerTarget>none</cloudManagerTarget>` プロパティ。
+>これは一般に、[コンテンツパッケージ構造ガイドライン](/help/implementing/developing/introduction/aem-project-content-package-structure.md)に従っていない場合に発生します。この例では、パッケージ `com.myco:com.myco.ui.apps` に `<cloudManagerTarget>none</cloudManagerTarget>` プロパティがありません。
 
 #### 準拠していないコード {#non-compliant-code-osgi}
 
@@ -766,13 +766,13 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` は、AEM 内�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされていないCloud Serviceデプロイメントモデルとの互換性を保つために、クラシック UI ダイアログを持つAEMコンポーネントには常に対応するタッチ UI ダイアログを持つ必要があります。 このルールは、次のシナリオを検証します。
+最適なオーサリングエクスペリエンスを提供し、クラシック UI がサポートされない Cloud Service デプロイメントモデルとの互換性を維持するために、クラシック UI ダイアログを含む AEM コンポーネントには、常にタッチ UI ダイアログが必要です。このルールは、次のシナリオを検証します。
 
 * クラシック UI ダイアログ（`dialog` 子ノード）を持つコンポーネントには、対応するタッチ UI ダイアログ（`cq:dialog` 子ノード）が必要です。
 * クラシック UI デザインダイアログ（`design_dialog` ノード）を使用しているコンポーネントには、対応するタッチ UI デザインダイアログ（`cq:design_dialog` 子ノード）が必要です。
 * クラシック UI ダイアログとクラシック UI デザインダイアログの両方を持つコンポーネントには、対応するタッチ UI ダイアログと対応するタッチ UI デザインダイアログの両方が必要です。
 
-AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、 [AEM Modernization Tools ドキュメント](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) を参照してください。
+AEM 最新化ツールのドキュメントには、コンポーネントをクラシック UI からタッチ UI に変換する方法に関するドキュメントとツールが記載されています。詳しくは、[AEM 最新化ツールのドキュメント](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html)を参照してください。
 
 ### 可変コンテンツと不変コンテンツをパッケージに混在させない {#oakpal-packages-immutable}
 
@@ -796,18 +796,18 @@ Cloud Service デプロイメントモデルとの互換性を保つには、個
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2020.5.0
 
-AEM as a Cloud Serviceの [リリースノート。](/help/release-notes/aem-cloud-changes.md#replication-agents)
+AEM as a Cloud Service の[リリースノート](/help/release-notes/aem-cloud-changes.md#replication-agents)で説明されているように、リバースレプリケーションは Cloud Service デプロイメントではサポートされません。
 
 リバースレプリケーションを使用するお客様は、アドビに問い合わせて、代替ソリューションをご利用ください。
 
-### プロキシが有効なクライアントライブラリに含まれるリソースは、 Resources という名前のフォルダーに格納する必要があります {#oakpal-resources-proxy}
+### プロキシ対応のクライアントライブラリに含まれるリソースは resources という名前のフォルダーに格納する {#oakpal-resources-proxy}
 
 * **キー**：ClientlibProxyResource
 * **タイプ**：バグ
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM クライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。このドキュメントの説明に従って [プリプロセッサの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) プロキシ化されたクライアントライブラリを使用する場合、これらの静的リソースは、 `resources` パブリッシュインスタンスで効果的に参照するために。
+AEM クライアントライブラリには、画像やフォントなどの静的なリソースが含まれる場合があります。[プリプロセッサーの使用](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors)のドキュメントで説明しているように、プロキシ化されたクライアントライブラリを使用する場合、パブリッシュインスタンスで効果的に参照するために、これらの静的リソースを という名前の子フォルダーに格納する必要があります。`resources`
 
 #### 準拠していないコード {#non-compliant-proxy-enabled}
 
@@ -838,7 +838,7 @@ AEM クライアントライブラリには、画像やフォントなどの静�
 * **深刻度**：重大
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM as a Cloud Service上でのアセット処理用のアセットマイクロサービスに移行すると、オンプレミスおよび AMS バージョンのAEMで使用されていたいくつかのワークフロープロセスが、サポート対象外または不要になります。
+AEM as a Cloud Service 上でアセット処理を行うためにアセットマイクロサービスに移行すると、AEM のオンプレミスバージョンと AMS バージョンで使用されていたワークフロープロセスが、サポートされなくなる、または不要になります。
 
 [AEM Assets as a Cloud Service GitHub リポジトリ](https://github.com/adobe/aem-cloud-migration)の移行ツールを使用すると、AEM as a Cloud Service への移行中にワークフローモデルを更新できます。
 
@@ -849,7 +849,7 @@ AEM as a Cloud Service上でのアセット処理用のアセットマイクロ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、 [ページテンプレート。](/help/implementing/developing/components/templates.md)
+従来、AEM プロジェクトは静的テンプレートを使用することが一般的でしたが、編集可能なテンプレートは最も柔軟性が高く、静的なテンプレートにはない追加機能をサポートしているため、このテンプレートの使用を強くお勧めします。詳しくは、[ページテンプレート](/help/implementing/developing/components/templates.md)のドキュメントを参照してください。
 
 静的なテンプレートから編集可能なテンプレートへの移行は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/) を使用して、ほとんど自動化することができます。
 
@@ -860,7 +860,7 @@ AEM as a Cloud Service上でのアセット処理用のアセットマイクロ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-一部の AEM リリースでは、従来の基盤コンポーネント（`/libs/foundation`[ 下のコンポーネントなど）は廃止され、コアコンポーネントに置き換わりました。](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)カスタムコンポーネントの基礎としての基盤コンポーネントの使用（オーバーレイによる場合も継承による場合も）は推奨されず、対応するコアコンポーネントに変換する必要があります。
+[一部の AEM リリースでは](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=ja)、従来の基盤コンポーネント（`/libs/foundation` 下のコンポーネントなど）は廃止され、コアコンポーネントに置き換わりました。使用する方法がオーバーレイであろうと継承であろうと、基盤コンポーネントに基づいてカスタムコンポーネントを作成することは、お勧めしません。対応するコアコンポーネントに移行してください。
 
 この変換は、[AEM 最新化ツール](https://opensource.adobe.com/aem-modernize-tools/)で容易に行うことができます。
 
@@ -871,7 +871,7 @@ AEM as a Cloud Service上でのアセット処理用のアセットマイクロ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM as a Cloud Serviceでは、実行モード名に対して厳密な命名ポリシーを適用し、それらの実行モードに対して厳密な順序を指定します。 サポートされている実行モードのリストは、このドキュメントに記載されています [AEMへのデプロイ (as a Cloud Service)](/help/implementing/deploying/overview.md#runmodes) これから逸脱した場合は、問題として識別されます。
+AEM as a Cloud Service では、実行モード名には厳密な命名ポリシーと実行モードな厳密な順序が適用されます。サポートされている実行モードのリストは、[AEM as a Cloud Service へのデプロイ](/help/implementing/deploying/overview.md#runmodes)のドキュメントで確認でき、このリストからの逸脱は問題として特定されます。
 
 ### カスタム検索インデックス定義ノードは、/oak:index の直接の子にする必要がある {#oakpal-custom-search}
 
@@ -880,7 +880,7 @@ AEM as a Cloud Serviceでは、実行モード名に対して厳密な命名ポ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) の直接の子ノード `/oak:index`. 他の場所のインデックスは、AEM as a Cloud Serviceとの互換性を保つために移動する必要があります。 検索インデックスの詳細については、ドキュメントを参照してください。 [コンテンツの検索とインデックス作成。](/help/operations/indexing.md)
+AEM as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）が `/oak:index` の直接の子ノードである必要があります。AEM as a Cloud Service と互換性を持たせるため、他の場所にあるインデックスは移動する必要があります。検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)のドキュメントを参照してください。
 
 ### カスタム検索インデックス定義ノードの compatVersion は 2 にする {#oakpal-custom-search-compatVersion}
 
@@ -889,7 +889,7 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) には、 `compatVersion` プロパティを `2`. その他の値は、AEM as a Cloud Serviceではサポートされません。 検索インデックスの詳細については、 [コンテンツの検索とインデックス作成。](/help/operations/indexing.md)
+AEM as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）の `compatVersion` プロパティを `2` に設定する必要があります。その他の値は、AEM as a Cloud Service ではサポートされていません。検索インデックスの詳細については、[コンテンツの検索とインデックス作成](/help/operations/indexing.md)を参照してください。
 
 ### カスタム検索インデックス定義ノードの子孫ノードのタイプは、nt:unstructured にする {#oakpal-descendent-nodes}
 
@@ -898,16 +898,16 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-カスタムの検索インデックス定義ノードに、順序が指定されていない子ノードがある場合、問題のトラブルシューティングが難しくなる可能性があります。この状況を回避するには、 `oak:QueryIndexDefinition` ノードのタイプは `nt:unstructured`.
+カスタムの検索インデックス定義ノードに、順序が指定されていない子ノードがある場合、問題のトラブルシューティングが難しくなる可能性があります。このような状況を避けるために、`oak:QueryIndexDefinition` ノードのすべての子孫ノードは、タイプを `nt:unstructured` にすることをお勧めします。
 
-### カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードが含まれている必要があります {#oakpal-custom-search-index}
+### カスタム検索インデックス定義ノードには、子を持つ indexRules という名前の子ノードを含める {#oakpal-custom-search-index}
 
 * **キー**：IndexRulesNode
 * **タイプ**：コードスメル
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-適切に定義されたカスタム検索インデックス定義ノードには、という名前の子ノードが含まれている必要があります。 `indexRules` その子は、次に少なくとも一人の子を持つ必要がある。 詳しくは、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
+適切に定義されたカスタム検索インデックス定義ノードには、`indexRules` という名前の子ノードが含まれている必要があり、今度は、この子ノードに少なくとも 1 つの子が必要です。詳しくは、[Oak ドキュメント](https://jackrabbit.apache.org/oak/docs/query/lucene.html)を参照してください。
 
 ### カスタム検索インデックス定義ノードは命名規則に従う {#oakpal-custom-search-definitions}
 
@@ -916,7 +916,7 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) には、ドキュメントで説明されている特定のパターンに従って名前を付ける必要があります [コンテンツの検索とインデックス作成。](/help/operations/indexing.md)
+AEM as a Cloud Service では、`oak:QueryIndexDefinition`コンテンツの検索とインデックス作成[のドキュメントで説明されている特定のパターンに従ってカスタム検索インデックス定義（](/help/operations/indexing.md) タイプのノード）に名前を付ける必要があります。
 
 ### カスタム検索インデックス定義ノードでは lucene 型のインデックスを使用する  {#oakpal-index-type-lucene}
 
@@ -925,7 +925,7 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **重大度**：ブロッカー
 * **最初の対象バージョン**：バージョン2021.2.0（2021.8.0でタイプと重大度が変更されました）
 
-AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプのノード）が必要です。 `oak:QueryIndexDefinition`) が `type` プロパティの値を次に設定 `lucene`. 従来のインデックスタイプを使用するインデックス作成は、AEM as a Cloud Serviceに移行する前に更新する必要があります。 ドキュメントを参照 [コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use) を参照してください。
+AEM as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に、値が `type` に設定された `lucene` プロパティが必要です。AEM as a Cloud Service に移行する前に、従来のインデックスタイプを使用したインデックス作成を更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
 
 ### カスタム検索インデックス定義ノードに seed という名前のプロパティを含めない {#oakpal-property-name-seed}
 
@@ -934,7 +934,7 @@ AEM as a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMas a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプがのノード）は禁止されています `oak:QueryIndexDefinition`) に、 `seed`. AEM as a Cloud Serviceに移行する前に、このプロパティを使用するインデックス作成を更新する必要があります。 ドキュメントを参照 [コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use) を参照してください。
+AEM as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に `seed` という名前のプロパティを含めることが禁止されています。AEM as a Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
 
 ### カスタム検索インデックス定義ノードに reindex という名前のプロパティを含めない {#oakpal-reindex-property}
 
@@ -943,4 +943,4 @@ AEMas a Cloud Serviceでは、カスタム検索インデックス定義（つ�
 * **深刻度**：軽度
 * **最初の対象バージョン**：バージョン 2021.2.0
 
-AEMas a Cloud Serviceでは、カスタム検索インデックス定義（つまり、タイプがのノード）は禁止されています `oak:QueryIndexDefinition`) に、 `reindex`. AEM as a Cloud Serviceに移行する前に、このプロパティを使用するインデックス作成を更新する必要があります。 ドキュメントを参照 [コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use) を参照してください。
+AEM as a Cloud Service では、カスタム検索インデックス定義（`oak:QueryIndexDefinition` タイプのノード）に `reindex` という名前のプロパティを含めることが禁止されています。AEM as a Cloud Service に移行する前に、このプロパティを使用しているインデックスを更新する必要があります。詳しくは、[コンテンツの検索とインデックス作成](/help/operations/indexing.md#how-to-use)のドキュメントを参照してください。
