@@ -3,7 +3,7 @@ title: '"[!DNL AEM Forms] as a Cloud Service リリースノート"'
 description: '"[!DNL AEM Forms] as a Cloud Service リリースノート"'
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2024'
 ht-degree: 100%
 
@@ -31,11 +31,11 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] の新機能 {#what-is-new-forms-oct-2021}
 
-- **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics を使用して、ログイン済みとログインしていない（匿名）状態の両方の動作を取得および追跡して、エンドユーザーのインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **Analytics for Adaptive Forms**：ログイン済みの場合と未ログイン（匿名）の場合の行動を Adobe Analytics for Adaptive Forms で捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 ### [!DNL Forms] プレリリースチャネルで利用できる新機能 {#prerelease-features-forms-oct-2021}
 
-- **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリーに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
+- **AEM ワークフローデータを外部化して処理を保護**：顧客が管理するリポジトリに、機密の個人データ（SPD）要素を含むプロセス内の AEM ワークフローデータ（AEM ワークフロー変数データ）を保存して、安全に処理できます。データ要素とワークフロー変数は、AEM リポジトリに格納されず、ワークフローの処理中に顧客が管理するリポジトリからオンデマンドで取得されます。
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-oct-prerelease}
 
@@ -52,7 +52,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](working-with-adobe-sign.md#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
-- **アダプティブフォーム用の Analytics**：[アダプティブフォーム用の Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) でエンドユーザーの行動を捉えて追跡し、エンドユーザーのインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **Analytics for Adaptive Forms**：[Adobe Analytics for Adaptive Forms](integrate-aem-forms-with-adobe-analytics.md) でエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 - **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](configure-msdynamics-salesforce.md)ようになりました。
 
@@ -60,7 +60,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] のベータ版機能 {#sep-what-is-new-forms-prerelease}
 
-- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を顧客側で管理されるリポジトリーに格納できます。
+- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を顧客側で管理されるリポジトリに格納できます。
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
@@ -109,7 +109,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 ### [!DNL Forms] のベータ版機能 {#aug-what-is-new-forms-prerelease}
 
-- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリー内の処理中のデータを外部化することができます。例えば、次のことができます。
+- **統合ストレージコネクタ：**&#x200B;統合ストレージコネクタを使用すると、顧客側で管理されるリポジトリ内の処理中のデータを外部化することができます。例えば、次のことができます。
 
    - Forms ポータルの保存および再開機能を有効にし、顧客側で管理されるデータリポジトリにアダプティブフォームのドラフトを格納する
    - 個人の機密情報（SPD）を含んだ処理中の AEM ワークフローデータ（AEM ワークフロー変数データ）を、顧客側で管理されるリポジトリに格納する
@@ -125,7 +125,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service は継続的に改�
 
 - **アダプティブフォームでの Adobe Sign の役割の使用**：ビジネスおよびエンタープライズサービスレベルの Adobe Sign では、ワークフロー要件に適切に合致するように、契約書受信者の役割を署名者以外にも拡大できます。[契約書の受信者ごとに、アダプティブフォームでの自分の役割を設定できる](working-with-adobe-sign.md#addsignerstoanadaptiveform)ようになりました。デフォルトの役割は署名者です。
 
-- **アダプティブフォーム用の Analytics**：アダプティブフォーム用の Adobe Analytics でエンドユーザーの行動を捉えて追跡し、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
+- **Analytics for Adaptive Forms**：Adobe Analytics for Adaptive Forms でエンドユーザーの行動を捉え追跡して、エンドユーザーに関するインサイトを収集できるようになりました。十分な情報に基づいて決定を行い、エンドユーザーのエクスペリエンスを向上させることができます。
 
 - **AEM Forms と Microsoft Dynamics および Salesforce との簡単な接続**：Microsoft Dynamics と Salesforce のデータソース設定およびデータモデルが標準で提供されるので、[開発者が Microsoft Dynamics と Salesforce をアダプティブフォームのデータソースとしてより迅速かつ簡単に設定できる](configure-msdynamics-salesforce.md)ようになりました。
 
