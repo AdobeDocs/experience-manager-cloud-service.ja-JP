@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
-ht-degree: 43%
+ht-degree: 57%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 43%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="リリースノート"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="ソフトウェア配布ポータル"
 
-コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md) を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
+コンテンツ転送ツールは、ソフトウェア配布ポータルから zip ファイルとしてダウンロードできます。[パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)を使用して、このパッケージをソース AEM（Adobe Experience Manager）インスタンスにインストールできます。最新バージョンをダウンロードしてください。最新バージョンの詳細については、「[リリースノート](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=ja)」を参照してください。
 
 >[!NOTE]
 >[ソフトウェア配布ポータル](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)からコンテンツ転送ツールをダウンロードします。
@@ -154,30 +154,29 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
 ### 移行セットのサイズの決定 {#migration-set-size}
 
-移行セットを作成した後、抽出プロセスを開始する前に、移行セットに対してサイズチェックを実行することを強くお勧めします。
-移行セットでサイズチェックを実行すると、次の操作を実行できます。
-* に十分なディスク容量があるかどうかを確認します。 `crx-quickstart` サブディレクトリの抽出が正常に完了しました。
-* 移行セットのサイズがサポート対象の製品の制限内に収まるかどうかを判断し、コンテンツの取り込みに失敗しないようにします。
+移行セットを作成した後、抽出プロセスを開始する前に、移行セットに対してサイズ確認を実行することを強くお勧めします。移行セットに対してサイズ確認を実行すると、以下が可能になります。
+* 抽出を正常に完了できるだけの十分なディスク容量が `crx-quickstart` サブディレクトリにあるかどうかを確認します。
+* 移行セットのサイズが製品の制限内に収まるかどうかを判断し、コンテンツの取り込みに失敗しないようにします。
 
-サイズチェックを実行するには、次の手順に従います。
+サイズ確認を実行するには、次の手順に従います。
 
-1. 移行セットを選択し、「 」をクリックします。 **サイズを確認**.
+1. 移行セットを選択し、「**サイズを確認**」をクリックします。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. これにより、 **サイズを確認** ダイアログ。
+1. **移行セットサイズを確認**&#x200B;ダイアログが開きます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. クリック **サイズを確認** をクリックしてプロセスを開始します。 移行セットのリストビューに戻り、次のことを示すメッセージが表示されます。 **サイズを確認** が実行中です。
+1. 「**サイズを確認**」をクリックして、プロセスを開始します。移行セットリスト表示に戻り、**サイズ確認**&#x200B;が実行中であることを示すメッセージが表示されます。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. 1 回 **サイズを確認** 処理が完了した場合、ステータスは **完了**. 同じ移行セットを選択し、「 」をクリックします。 **サイズを確認** をクリックして結果を表示します。 以下は **サイズを確認** の結果は警告を含みません。
+1. 1 回 **サイズを確認** 処理が完了した場合、ステータスは **完了**. 同じ移行セットを選択し、「**サイズを確認**」をクリックして結果を表示します。以下は、警告を含まない&#x200B;**サイズ確認**&#x200B;結果の例です。
 
    ![画像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. この **サイズを確認** 結果は、ディスク容量が不足しているか、移行セットが製品の制限を超えているかを示します。 **警告** ステータスが表示されます。
+1. **サイズ確認**&#x200B;の結果、空きディスク容量が不足しているか、移行セットが製品の制限を超えていることがわかった場合は、**警告**&#x200B;ステータスが表示されます。
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
@@ -188,4 +187,4 @@ Cloud Acceleration Manager で作成した移行セットを入力するには�
 
 ## 次の手順 {#whats-next}
 
-移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリーの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。
+移行セットの作成方法を理解したら、コンテンツ転送ツールでの抽出プロセスと取り込みプロセスについて学ぶ準備が整います。これらのプロセスを学ぶ前に、コンテンツを AEM as a Cloud Service に移行するコンテンツ転送アクティビティの抽出段階と取り込み段階を大幅に短縮する[大規模なコンテンツリポジトリの処理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=ja)を参照する必要があります。

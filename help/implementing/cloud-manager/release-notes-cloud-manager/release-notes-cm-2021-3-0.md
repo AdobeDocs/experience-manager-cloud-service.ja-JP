@@ -46,7 +46,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 * Cloud Manager の実稼働パイプラインに[カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)機能が追加されました。
 
-### バグ修正  {#bug-fixes}
+### バグの修正  {#bug-fixes}
 
 * AEM プッシュアップグレード時に、パッケージバージョン管理がスキップされる場合がありました。
 

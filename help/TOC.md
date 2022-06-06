@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 9a4e50f56b4b1c9dd7634475e418b4301820efaa
 workflow-type: tm+mt
 source-wordcount: '3568'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -211,7 +211,7 @@ ht-degree: 92%
          + [アカウント環境の設定 ](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [インボックス ](/help/sites-cloud/authoring/getting-started/inbox.md)
          + [キーボードショートカット](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-      + [ヘッドレスコンテンツ作成者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html)
+      + [ヘッドレスコンテンツ作成者ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=ja)
       + オーサリングの基本事項 {#fundamentals}
          + [環境とツール](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [ページ注釈の追加](/help/sites-cloud/authoring/fundamentals/annotations.md)
@@ -238,7 +238,7 @@ ht-degree: 92%
          + [コンポーネントコンソール](/help/sites-cloud/authoring/features/components-console.md)
          + [レスポンシブレイアウト](/help/sites-cloud/authoring/features/responsive-layout.md)
          + [タグの使用](/help/sites-cloud/authoring/features/tags.md)
-         + [プログレッシブ Web アプリケーション機能の有効化](/help/sites-cloud/authoring/features/enable-pwa.md)
+         + [プログレッシブ web アプリケーション機能の有効化](/help/sites-cloud/authoring/features/enable-pwa.md)
       + プロジェクト {#projects}
          + [プロジェクトの操作](/help/sites-cloud/authoring/projects/overview.md)
          + [プロジェクトの管理](/help/sites-cloud/authoring/projects/managing.md)
@@ -261,9 +261,9 @@ ht-degree: 92%
          + [ターゲットモードを使用したターゲットコンテンツのオーサリング](/help/sites-cloud/authoring/personalization/targeted-content.md)
          + [マルチサイトでのターゲットコンテンツの操作](/help/sites-cloud/authoring/personalization/multisite-targeted-content.md)
          + [ターゲットコンテンツ用マルチサイト管理の構造](/help/sites-cloud/authoring/personalization/multisite-structure.md)
-         + [アクティビティの管理 ](/help/sites-cloud/authoring/personalization/activities.md)
-         + [オーディエンスの管理 ](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [オファーの作成と管理 ](/help/sites-cloud/authoring/personalization/offers.md)
+         + [アクティビティの管理](/help/sites-cloud/authoring/personalization/activities.md)
+         + [オーディエンスの管理](/help/sites-cloud/authoring/personalization/audiences.md)
+         + [オファーの作成と管理](/help/sites-cloud/authoring/personalization/offers.md)
          + [セグメント化について](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [ContextHub でのセグメント化の設定](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [登録、ログイン、ユーザープロファイル](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -271,7 +271,7 @@ ht-degree: 92%
       + サイト作成 {#site-creation}
          + [新しいサイトの作成](/help/sites-cloud/administering/site-creation/create-site.md)
          + [フロントエンドパイプラインの有効化](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
-         + [サイトレールの使用](/help/sites-cloud/administering/site-creation/site-rail.md)
+         + [サイトパネルの使用](/help/sites-cloud/administering/site-creation/site-rail.md)
          + [サイトテンプレート](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [サイトテーマ](/help/sites-cloud/administering/site-creation/site-themes.md)
          + AEM クイックサイト作成ジャーニー {#quick-site}
@@ -303,7 +303,7 @@ ht-degree: 92%
                + [翻訳ルールの設定](/help/journey-sites/translation/translation-rules.md)
                + [コンテンツの翻訳](/help/journey-sites/translation/translate-content.md)
                + [翻訳済みコンテンツの公開](/help/journey-sites/translation/publish-content.md)
-            + [ヘッドレス翻訳ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
+            + [ヘッドレス翻訳ジャーニー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=ja)
             + [多言語サイトのコンテンツの翻訳](/help/sites-cloud/administering/translation/overview.md)
             + [翻訳するコンテンツの準備](/help/sites-cloud/administering/translation/preparation.md)
             + [翻訳プロジェクトの管理](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -318,7 +318,7 @@ ht-degree: 92%
       + [Adobe Analyticsとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Adobe Target との統合](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Adobe Targetとの統合時に使用する IMS 設定](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Adobe Target へのエクスペリエンスフラグメントの書き出し](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [エクスペリエンスフラグメントの Adobe Target へのエクスポート](/help/sites-cloud/integrating/experience-fragments-target.md)
 + アセット {#assets}
    + [[!DNL Assets] as a [!DNL Cloud Service]](/help/assets/home.md)
    + [概要と新機能](/help/assets/overview.md)
@@ -432,7 +432,7 @@ ht-degree: 92%
       + [レスポンシブサイトに最適化された画像を配信する](/help/assets/dynamic-media/responsive-site.md)
       + [Dynamic Media アセットをプレビューする](/help/assets/dynamic-media/previewing-assets.md)
       + [ページに Dynamic Media アセットを追加する](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-      + [Dynamic ビデオビューアまたは画像ビューアを Web ページに埋め込む](/help/assets/dynamic-media/embed-code.md)
+      + [Dynamic ビデオビューアまたは画像ビューアを web ページに埋め込む](/help/assets/dynamic-media/embed-code.md)
       + [Web アプリケーションに URL をリンクする](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
       + [ルールセットを使用して URL を変換する](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
       + [Dynamic Media アセットを公開する](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
@@ -441,11 +441,11 @@ ht-degree: 92%
       + [コンテンツの HTTP/2 配信の FAQ](/help/assets/dynamic-media/http2faq.md)
       + [Flash ビューアの提供終了](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [DHTML ビューアの提供終了](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
-   + Adobe Workfrontとの統合 {#integrations}
+   + Adobe Workfront との統合 {#integrations}
       + [ [!DNL Adobe Workfront] との統合](/help/assets/workfront-integrations.md)
-      + [ [!DNL Workfront] への  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
-      + [既存のインストールの外部依存関係を削除](/help/assets/remove-external-dependencies.md)
-      + [ [!DNL Workfront] への  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  のインストール](/help/assets/workfront-connector-install.md)
+      + [既存のインストールの外部依存関係の削除](/help/assets/remove-external-dependencies.md)
+      + [ [!DNL Workfront] 用の  [!DNL enhanced connector]  の設定](/help/assets/workfront-connector-configure.md)
       + [更新 [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [はじめに](/help/forms/home.md)
@@ -518,8 +518,8 @@ ht-degree: 92%
       + [Forms 中心のワークフローでの変数の使用](/help/forms/variable-in-aem-workflows.md)
       + [「不在」オプションの使用](/help/forms/configure-out-of-office-settings.md)
    + Communications の使用 {#using-communications}
-      + [はじめに 通信 API へ](/help/forms/aem-forms-cloud-service-communications-introduction.md)
-      + [通信 API — 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
+      + [はじめに通信 API](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [通信 API - 同期処理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通信 API - バッチ処理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
       + [PDF ドキュメントでのカスタムフォントの使用](/help/forms/use-custom-fonts.md)
       + [既知の問題、ベストプラクティス、よくある質問](/help/forms/communications-known-issues-limitations.md)
@@ -600,26 +600,26 @@ ht-degree: 92%
    + [移行](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + ヘッドレス {#headless}
-   + [AEMヘッドレスの概要](/help/headless/introduction.md)
+   + [AEM ヘッドレスの概要](/help/headless/introduction.md)
    + セットアップ {#setup}
       + [はじめに](/help/headless/setup/introduction.md)
       + [設定](/help/headless/setup/create-configuration.md)
       + [コンテンツフラグメントモデル](/help/headless/setup/create-content-model.md)
-      + [アセットフォルダー](/help/headless/setup/create-assets-folder.md)
+      + [Assets フォルダー](/help/headless/setup/create-assets-folder.md)
       + [コンテンツフラグメント](/help/headless/setup/create-content-fragment.md)
       + [GraphQL エンドポイント](/help/headless/setup/create-api-request.md)
    + コンテンツフラグメント {#content-fragments}
       + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ja)
       + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ja)
-      + [管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
+      + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
       + オーサリング{#authoring}
          + [オーサリング](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja)
          + [テキストエディター](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=ja)
          + [関連コンテンツ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=ja)
-         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html#managing-variations)
-      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html)
-      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html)
-      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html)
+         + [バリエーション](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=ja#managing-variations)
+      + [メタデータ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=ja)
+      + [構造ツリー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=ja)
+      + [JSON プレビュー](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=ja)
    + GraphQL API {#graphql-api}
       + [コンテンツフラグメント用 GraphQL API](/help/headless/graphql-api/content-fragments.md)
       + [GraphQL エンドポイントを管理](/help/headless/graphql-api/graphql-endpoint.md)
@@ -642,7 +642,7 @@ ht-degree: 92%
          + [AEM Headless as a Cloud Service - はじめに](/help/journey-headless/developer/getting-started.md)
          + [AEM ヘッドレス機能を使用した初めてのエクスペリエンスへの道筋](/help/journey-headless/developer/path-to-first-experience.md)
          + [コンテンツを AEM コンテンツモデルとしてモデル化する方法](/help/journey-headless/developer/model-your-content.md)
-         + [AEM Delivery APIを使用してコンテンツにアクセスする方法](/help/journey-headless/developer/access-your-content.md)
+         + [AEM Delivery API を使用してコンテンツにアクセスする方法](/help/journey-headless/developer/access-your-content.md)
          + [AEM Assets API を使用してコンテンツを更新する方法](/help/journey-headless/developer/update-your-content.md)
          + [アプリとコンテンツをすべて AEM ヘッドレスにまとめる方法](/help/journey-headless/developer/put-it-all-together.md)
          + [ヘッドレスアプリケーションの運用開始方法](/help/journey-headless/developer/go-live.md)
@@ -670,7 +670,7 @@ ht-degree: 92%
    + [AEM as a Cloud Service のアプリケーションの実装](/help/implementing/home.md)
    + Cloud Manager の使用 {#using-cloud-manager}
       + プログラム {#programs}
-         + [プログラムとプログラムの種類](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+         + [プログラムとプログラムのタイプ](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [実稼動プログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
          + [実稼働プログラムの作成](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
          + [サンドボックスプログラム](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
@@ -684,8 +684,8 @@ ht-degree: 92%
       + [環境の管理](/help/implementing/cloud-manager/manage-environments.md)
       + コードの管理 {#managing-code}
          + [Maven プロジェクトバージョンの処理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [Cloud Manager のリポジトリー](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
-         + [リポジトリーへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+         + [Cloud Manager のリポジトリ](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)
+         + [リポジトリへのアクセス](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Cloud Manager での git の使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [複数のリポジトリの使用](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [エンタープライズ開発チームのセットアップ](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
@@ -727,7 +727,7 @@ ht-degree: 92%
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
-      + [AEM プロジェクトリポジトリーの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
+      + [AEM プロジェクトリポジトリの構造パッケージ](/help/implementing/developing/introduction/repository-structure-package.md)
       + [AEM as a Cloud Service の SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM as a Cloud Service の開発ガイドライン](/help/implementing/developing/introduction/development-guidelines.md)
       + [ログ](/help/implementing/developing/introduction/logging.md)
@@ -769,7 +769,7 @@ ht-degree: 92%
             + [カスタム述語評価基準の実装](/help/implementing/developing/introduction/query-builder-custom-predicate.md)
          + [カスタムエラーページ](/help/implementing/developing/introduction/custom-error-page.md)
          + [AEM ノードタイプ](/help/implementing/developing/introduction/node-types.md)
-      + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html)
+      + [ヘッドレスエクスペリエンス管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ja)
       + ハイブリッドおよび SPA 開発 {#hybrid}
          + [AEM でのハイブリッドと SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [コンポーネントの JSON 書き出しの有効化](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=ja)
@@ -799,7 +799,7 @@ ht-degree: 92%
       + [CRXDE Lite の使用](/help/implementing/developing/tools/crxde.md)
       + [パッケージマネージャー](/help/implementing/developing/tools/package-manager.md)
       + [Link Externalizer](/help/implementing/developing/tools/externalizer.md)
-      + [リポジトリブラウザ](/help/implementing/developing/tools/repository-browser.md)
+      + [リポジトリブラウザー](/help/implementing/developing/tools/repository-browser.md)
    + パーソナライズ機能 {#personalization}
       + [ContextHub](/help/implementing/developing/personalization/contexthub.md)
       + [ContextHub の設定](/help/implementing/developing/personalization/configuring-contexthub.md)
@@ -870,5 +870,5 @@ ht-degree: 92%
       + [データ保護およびデータプライバシーに関する規制に対する AEM Foundation の対応](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
       + [データ保護およびデータプライバシーに関する規制に対する AEM Sites の対応](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
    + アクセシビリティ {#accessibility}
-      + [AEM as a Cloud Service と Web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
+      + [AEM as a Cloud Service と web アクセシビリティのガイドライン](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 クイックガイド](/help/compliance/accessibility/quick-guide-wcag.md)

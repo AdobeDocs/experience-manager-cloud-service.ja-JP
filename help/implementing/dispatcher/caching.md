@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -106,7 +106,7 @@ AEMレイヤーは、キャッシュヘッダーが既に設定されている�
 |------------------------------|---------------|------------------------------------------------|
 | 不可 | 公開 | Cache-Control:public, max-age=600, immutable |
 | 不可 | 認証済み | Cache-Control:private, max-age=600, immutable |
-| 対応 | 任意 | 変更せずそのままにする必要があります |
+| はい | 任意 | 変更せずそのままにする必要があります |
 
 お勧めしませんが、 Cloud Manager 環境変数を設定することで、新しいデフォルトの動作を変更して、古い動作 ( プログラム ID が65000以下 ) に従うようにすることができます `AEM_BLOB_ENABLE_CACHING_HEADERS` を false に設定します。
 
@@ -203,7 +203,7 @@ AdobeCDN で、以下のHEADに関するリソースリクエストを受信し�
 
 ### アクティベーション／非アクティベーション中の Dispatcher キャッシュの無効化 {#cache-activation-deactivation}
 
-以前のバージョンの AEM と同様に、ページの公開または非公開では、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュの問題の疑いがある場合は、問題のページを再公開し、ServerAlias localhost（Dispatcher キャッシュの無効化に必要）に一致する仮想ホストが使用可能であることを確認する必要があります。
+以前のバージョンの AEM と同様に、ページの公開または非公開では、Dispatcher のキャッシュからコンテンツがクリアされます。キャッシュに問題があると疑われる場合は、該当するページを再度公開し、ServerAlias localhost に一致する仮想ホスト（Dispatcher キャッシュの無効化に必要）が使用可能であることを確認する必要があります。
 
 
 パブリッシュインスタンスは、オーサーから新しいバージョンのページまたはアセットを受け取ると、フラッシュエージェントを使用して Dispatcher 上の適切なパスを無効にします。更新されたパスは、親と共に、Dispatcher キャッシュから削除されます ( これを [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=ja#invalidating-files-by-folder-level)) をクリックします。

@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service を更新する間、古いコードと新しいコード
 
 ## メモリ内の状態 {#state-in-memory}
 
-状態はメモリ内ではなく、リポジトリー内に保持する必要があります。そうしないと、インスタンスが停止した場合に、状態が失われる可能性があります。
+状態はメモリ内ではなく、リポジトリ内に保持する必要があります。そうしないと、インスタンスが停止した場合に、状態が失われる可能性があります。
 
 ## ファイルシステムの状態 {#state-on-the-filesystem}
 
@@ -55,9 +55,9 @@ Sling Commons Scheduler は実行を保証できないので、スケジュー�
 
 ## 送信 HTTP 接続 {#outgoing-http-connections}
 
-送信 HTTP 接続では、適切な接続および読み取りタイムアウトを設定することを強くお勧めします。推奨値は、接続タイムアウトの場合は 1 秒、読み取りタイムアウトの場合は 5 秒です。 正確な数は、これらのリクエストを処理するバックエンドシステムのパフォーマンスに基づいて決定する必要があります。
+送信 HTTP 接続では、接続および読み取りの妥当なタイムアウトを設定することを強くお勧めします。推奨値は、接続タイムアウトの場合は 1 秒、読み取りタイムアウトの場合は 5 秒です。正確な数値は、これらのリクエストを処理するバックエンドシステムのパフォーマンスに基づいて決定する必要があります。
 
-これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Service 上で動作している AEM インスタンスは、グローバルタイムアウトを強制的に適用します。接続呼び出しの場合、これらのタイムアウト値は 10 秒で、接続の場合、読み取り呼び出しの場合は 60 秒です。
+これらのタイムアウトを適用しないコードの場合、AEM as a Cloud Service 上で動作している AEM インスタンスは、グローバルタイムアウトを強制的に適用します。接続の場合、これらのタイムアウト値は、接続呼び出しについては 10 秒、読み取り呼び出しについては 60 秒です。
 
 HTTP 接続を行う場合は、提供されている [Apache HttpComponents Client 4.x ライブラリ](https://hc.apache.org/httpcomponents-client-ga/)を使用することをお勧めします。
 
@@ -67,7 +67,7 @@ HTTP 接続を行う場合は、提供されている [Apache HttpComponents Cli
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/)（古くなり、バージョン 4.x に代わっているので、お勧めしません）
 * [OK Http](https://square.github.io/okhttp/)（AEM では提供されません）
 
-タイムアウトの提供の横には、そのようなタイムアウトの適切な処理と、予期しない HTTP ステータスコードも実装する必要があります。
+タイムアウトの指定の次に、そのようなタイムアウトと予期しない HTTP ステータスコードの適切な処理も実装する必要があります。
 
 ## クラシック UI のカスタマイズがない {#no-classic-ui-customizations}
 
@@ -109,11 +109,11 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 
 **デバッグログレベルのアクティベート**
 
-デフォルトのログレベルは情報（INFO）であるため、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、次のプロパティを debug モードに更新します。
+デフォルトのログレベルは情報（INFO）なので、デバッグ（DEBUG）メッセージはログに記録されません。DEBUG ログレベルをアクティブにするには、次のプロパティをデバッグモードに更新します。
 
 `/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-例えば、 `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` を次の値に設定します。
+例えば、`/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` に次の値を設定します。
 
 ```json
 {
@@ -126,11 +126,15 @@ AEM as a Cloud Service は、サードパーティの顧客コードのタッチ
 }
 ```
 
-DEBUG ログレベルのログを必要以上に長く残さないでください。この場合、多数のエントリが生成されます。
+この結果、多くのエントリが生成されるので、ログを不必要に長くデバッグログレベルのままにしないでください。
 
-常に次の場所にログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、異なるAEM環境に個別のログレベルを設定できます。 `DEBUG` 開発中に 次は例です。
+開発時に常に `DEBUG` レベルでログを記録するのが望ましい場合は、実行モードベースの OSGi 設定ターゲティングを使用して、AEM 環境ごとに個別にログレベルを設定できます。次に例を示します。
 
-|環境 |実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 | | - | - | - | |開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | |ステージ | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | |実稼動 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config～example.cfg.json | ERROR |
+| 環境 | 実行モード別の OSGi 設定の場所 | `org.apache.sling.commons.log.level` プロパティ値 |
+| - | - | - |
+|  開発 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+|  ステージング | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+|  実稼働 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
 デバッグファイルの行は、通常は DEBUG で始まり、その後にログレベル、インストーラーのアクション、ログメッセージが示されます。次に例を示します。
 
@@ -160,9 +164,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### AEM as a Cloud Service の開発ツール {#aem-as-a-cloud-service-development-tools}
 
-ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリー（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
+ユーザーはオーサー層の開発環境では CRXDE Lite にアクセスできますが、ステージ環境や実稼動環境ではアクセスできません。不変リポジトリ（`/libs`、`/apps`）に実行時に書き込むことはできないので、書き込もうとするとエラーが発生します。
 
-代わりに、開発者コンソールからリポジトリブラウザーを起動して、オーサー層、パブリッシュ層、プレビュー層のすべての環境のリポジトリに対する読み取り専用ビューを提供できます。 リポジトリブラウザの詳細を表示 [ここ](/help/implementing/developing/tools/repository-browser.md).
+代わりに、開発者コンソールからリポジトリブラウザーを起動して、オーサー層、パブリッシュ層およびプレビュー層にあるすべての環境のリポジトリに対して読み取り専用ビューを提供できます。リポジトリブラウザーについて詳しくは、[こちら](/help/implementing/developing/tools/repository-browser.md)を参照してください。
 
 AEM as a Cloud Service 開発者環境でデバッグするためのツールセットが開発環境、ステージ環境、実稼動環境の開発者コンソールで利用できます。URL は、次のようにオーサーサービス URL またはパブリッシュサービス URL を調整して決定できます。
 
@@ -190,7 +194,7 @@ AEM as a Cloud Service 開発者環境でデバッグするためのツールセ
 
 ![開発者コンソール 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプに「Cloud Manager - Developer Role」が必要で、両方のサービスのデータを表示するには、オーサーサービスとパブリッシュサービスのAEM Users またはAEM Administrators Product Profile でもユーザーを定義する必要があります。 ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
+実稼動プログラムの場合、開発者コンソールへのアクセスは Admin Console の「Cloud Manager - デベロッパーロール」で定義されます。一方、サンドボックスプログラムの場合、開発者コンソールは、AEM as a Cloud Service へのアクセスを可能にする製品プロファイルを持つすべてのユーザーが使用できます。すべてのプログラムで、ステータスダンプとリポジトリブラウザーには「Cloud Manager - デベロッパーロール」が必要です。また、オーサーサービスとパブリッシュサービスの両方のデータを表示するには、ユーザーがそれら両方のサービスで「AEM ユーザー」または「AEM 管理者」製品プロファイルにも定義されている必要があります。ユーザー権限の設定について詳しくは、 [Cloud Manager のドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=ja) を参照してください。
 
 ### パフォーマンスの監視 {#performance-monitoring}
 

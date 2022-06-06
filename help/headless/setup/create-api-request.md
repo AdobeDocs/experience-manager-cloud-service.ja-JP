@@ -1,23 +1,23 @@
 ---
-title: API リクエストの作成 — ヘッドレス設定
-description: コンテンツフラグメントコンテンツとAEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
+title: API リクエストの作成 - ヘッドレス設定
+description: コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
 source-wordcount: '728'
-ht-degree: 59%
+ht-degree: 85%
 
 ---
 
-# API リクエストの作成 — ヘッドレス設定 {#accessing-delivering-content-fragments}
+# API リクエストの作成 - ヘッドレス設定 {#accessing-delivering-content-fragments}
 
-コンテンツフラグメントコンテンツとAEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
+コンテンツフラグメントコンテンツと AEM Assets REST API のヘッドレス配信に GraphQL API を使用して、コンテンツフラグメントを管理する方法を説明します。
 
 >[!NOTE]
 >
 >この機能の一部はプレリリースチャネルで利用できます。 特に、持続クエリに関連する機能です。
 > 
->詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
+>詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 ## GraphQL API と Assets REST API とは {#what-are-the-apis}
 
@@ -35,23 +35,23 @@ GraphQL API を使用する前に、GraphQL エンドポイントを作成する
 
 1. に移動します。 **ツール**, **一般**&#x200B;を選択し、「 **GraphQL**.
 1. 「**作成**」を選択します。
-1. **新しい GraphQL エンドポイントを作成** ダイアログが開きます。以下を指定します。
+1. **新しい GraphQL エンドポイントを作成**&#x200B;ダイアログが開きます。以下を指定します。
    * **名前**：エンドポイントの名前。任意のテキストを入力できます。
-   * **次によって提供される GraphQL スキーマを使用**:ドロップダウンを使用して、必要な設定を選択します。
-1. 「**作成**」で確認します。
-1. コンソールで、 **パス** これで、前に作成した設定に基づいてが表示されます。 GraphQL クエリの実行に使用されるパスです。
+   * **使用する GraphQL スキーマの提供元**：ドロップダウンを使用して、必要な設定を選択します。
+1. 「**作成**」で確定します。
+1. コンソールで、前に作成した設定に基づいて、**パス**&#x200B;が表示されます。これは、GraphQL クエリの実行に使用されるパスです。
 
    ```
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-有効化の詳細 [GraphQL エンドポイントは、こちらを参照してください](/help/headless/graphql-api/graphql-endpoint.md).
+[GraphQL エンドポイントの有効化について詳しくは、こちらを参照してください](/help/headless/graphql-api/graphql-endpoint.md)。
 
 ## GraphQL と GraphiQL を使用したクエリコンテンツ
 
 情報アーキテクトは、コンテンツを配信するために、チャネルエンドポイント用のクエリを設計する必要があります。一般に、これらのクエリは、モデルやエンドポイントごとに 1 回だけ作成する必要があります。この「はじめる前に」ガイドの目的上、1 つだけ作成します。
 
-GraphiQL は、AEM環境にインストールできる IDE です。 次の手順に従います。 [GraphiQL IDE の使用](/help/headless/graphql-api/graphiql-ide.md) をAEM環境にインストールする場合。
+GraphiQL は、AEM 環境にインストールできる IDE です。AEM 環境にインストールするには、[GraphiQL IDE の使用](/help/headless/graphql-api/graphiql-ide.md)の手順に従います。
 
 1. AEM as a Cloud Service にログインし、GraphiQL インターフェイスにアクセスします。
 
@@ -60,7 +60,7 @@ GraphiQL は、AEM環境にインストールできる IDE です。 次の手�
    * **ツール** -> **一般** -> **GraphQL クエリエディター**
    * 直接例： `http://localhost:4502/aem/graphiql.html`
 
-1. GraphiQL IDE は、GraphQL 用のブラウザー内クエリエディターです。 これを使用してクエリを作成し、コンテンツフラグメントを取得して JSON としてヘッドレスに配信できます。
+1. GraphiQL は、GraphQL のブラウザー内のクエリエディターです。これを使用してクエリを作成し、コンテンツフラグメントを取得して JSON としてヘッドレスに配信できます。
    * 右上のドロップダウンを使用すると、エンドポイントを選択できます。
    * 左端のパネルには、永続化されたクエリが表示されます（使用可能な場合）
    * 中央の左側のパネルを使用すると、クエリを作成できます。
@@ -100,7 +100,7 @@ GraphQL では、反復的な API リクエストと過剰な配信を回避で�
 
 ## 次の手順 {#next-steps}
 
-これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。もちろん、利用可能な機能の包括的な理解を深めるためのリソースは他にもたくさんあります。 
+これで作業は完了です。AEM のヘッドレスコンテンツ管理に関する基本的な内容を説明しました。もちろん、利用可能な機能の包括的な理解を深めるためのリソースは他にもたくさんあります。
 
 * **[コンテンツフラグメント](/help/assets/content-fragments/content-fragments.md)** - コンテンツフラグメントの作成と管理に関する詳細
 * **[AEM Assets HTTP API でサポートされるコンテンツフラグメント](/help/assets/content-fragments/assets-api-content-fragments.md)** - CRUD 操作（作成、読み取り、更新、削除）を介して HTTP API 経由で直接 AEM コンテンツにアクセスする方法の詳細

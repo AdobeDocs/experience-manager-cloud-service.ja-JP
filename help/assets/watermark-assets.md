@@ -8,7 +8,7 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 62%
 
 [!DNL Adobe Experience Manager Assets] では、画像に電子透かしを追加できます。[!DNL Assets] は、他の画像ファイルへの透かしとしての画像の適用をサポートしています。透かしは、アセットの信頼性と著作権の所有権を確認するのに役立ちます。また、透かしを使用して、機密、ドラフト、有効性などのドキュメントの状態も示せます。
 
-を設定するには、以下を実行します。 [!DNL Experience Manager] アセットに透かしを追加するには：
+アセットに透かしを適用するように [!DNL Experience Manager] を設定するには：
 
 1. 透かしとして PNG ファイルが適用されます。このファイルを DAM リポジトリにアップロードします。
 
-1. に移動します。 **[!UICONTROL ツール/アセット/アセット設定]**.
+1. **[!UICONTROL ツール／アセット／アセット設定]**&#x200B;に移動します。
 
-1. クリック **[!UICONTROL システム透かしプロファイル]**.
+1. 「**[!UICONTROL システム透かしプロファイル]**」をクリックします。
 
-1. の [!UICONTROL システム透かしプロファイルページ]で、手順 1 で DAM リポジトリーにアップロードする画像のパスを指定します。
+1. [!UICONTROL システム透かしプロファイル]ページで、手順 1 で DAM リポジトリにアップロードした画像のパスを指定します。
 
-1. 透かしの尺度を、レンディションの幅を基準に 0.0 ～ 1.0 の範囲で指定します ( **[!UICONTROL 拡大・縮小]** フィールドに入力します。
+1. 「**[!UICONTROL スケール]**」フィールドで、レンディションの幅を基準に 0.0～1.0 の範囲で透かしの倍率を指定します。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -34,14 +34,14 @@ ht-degree: 62%
 
    >[!NOTE]
    >
-   >を使用してシステム透かしプロファイルを設定した場合 `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定ファイル（OSGi 設定）を使用する場合は引き続き使用できますが、Adobeでは新しいメソッドを使用することをお勧めします。
+   >`com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` 設定ファイル（OSGi 設定）を使用してシステム透かしプロファイルを設定してある場合は、それを引き続き使用できますが、アドビでは新しい手段を使用することをお勧めします。
 
 
 1. 透かしを適用する際にアセットマイクロサービスを利用する[処理プロファイルを作成します](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile)。
 
    ![透かしを作成するアセット処理プロファイル](assets/watermark-processing-profile.png)
 
-   必ず **[!UICONTROL 透かし]** 処理プロファイルの作成時に切り替えます。
+   処理プロファイルの作成時には、「**[!UICONTROL 透かし]**」トグルを必ずオンに切り替えます。
 
 1. [フォルダーに処理プロファイルを適用して](/help/assets/asset-microservices-configure-and-use.md#use-profiles)、透かし付きのアセットを作成します。
 

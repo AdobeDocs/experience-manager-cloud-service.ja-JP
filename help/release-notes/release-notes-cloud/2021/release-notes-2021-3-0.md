@@ -1,15 +1,15 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 リリースのリリースノート。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.3.0."'
+description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 のリリースノート」
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
 source-wordcount: '1319'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート {#release-notes}
 
 以下では、[!DNL Experience Manager] as a Cloud Service の現在（最新）のバージョンのリリースノート全般の概要を説明します。
 
@@ -26,13 +26,13 @@ ht-degree: 99%
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* 簡単な設定で、[プログレッシブ Web アプリ（PWA）版のサイト](/help/sites-cloud/authoring/features/enable-pwa.md)がプロジェクトレベルで有効化できるようになりました。
+* 簡単な設定で、[プログレッシブ web アプリ（PWA）版のサイト](/help/sites-cloud/authoring/features/enable-pwa.md)がプロジェクトレベルで有効化できるようになりました。
 * コンテンツフラグメントモデルの拡張 - 複数行テキストデータタイプを複数フィールドリストとして定義できるようになりました。
 * コンテンツフラグメントエディターの UX の強化 - パンくずリストにネストされた子フラグメントが表示され、公開、保存、保存および終了のアクションの表示が改善されました。
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### [!DNL Assets] の新機能  {#what-is-new-assets}
+### [!DNL Assets] の新機能 {#what-is-new-assets}
 
 <!-- TBD: refine this list of features and enh. for Feb release.
 
@@ -54,7 +54,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * PDF レンディションには、InDesign テンプレートの最後のページのみが含まれます。（CQ-4317305）
 * ピッカーが複雑なメタデータスキーマに含まれている場合、タグピッカーが開くのに時間がかかります。（CQ-4316426）
 * 既存のファイル名と同じファイル名を持つアセットをアップロードする場合、名前の競合ダイアログが表示されず、バージョンを作成するように求められます。（CQ-4315424）
-* フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。選択内容はリポジトリーに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
+* フォルダーメタデータのプロパティは、フォルダーのプロパティページのポップアップメニューから設定および保存できます。選択内容はリポジトリに保存されている間、フォルダーメタデータプロパティを再度開いても表示されません。（CQ-4314429）
 * スペースや特殊文字を含むファイル名を持つアセットは、ブラウザーを使用してアップロードされます。（CQ-4318381）
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -113,7 +113,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 * Cloud Manager の実稼働パイプラインに[カスタム UI テスト](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)機能が追加されました。
 
-### バグ修正 {#bug-fixes-cm-march}
+### バグの修正 {#bug-fixes-cm-march}
 
 * AEM プッシュアップグレード時に、パッケージバージョン管理がスキップされる場合がありました。
 
@@ -135,7 +135,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 
 コンテンツ転送ツール v1.3.4 のリリース日は 2021 年 3 月 19 日です。
 
-### バグ修正 {#bug-fixes-ctt}
+### バグの修正 {#bug-fixes-ctt}
 
 * CTT が、名前が同じでも、名前にハイフンを含むフォルダーのコンテンツをスキップしていた問題を修正しました。この問題が修正されました。
 
@@ -148,7 +148,7 @@ AEM as a Cloud Service 2021.3.0 の Cloud Manager のリリース日は 2021 年
 * コンテンツ転送ツール（CTT）は、`/libs` ではなく `/apps` にインストールされるようになりました。特定のページへのブラウザーブックマークが無効になる可能性があります。
 * CTT がインストールされている場合、ユーザーはコンテンツ転送ページにアクセスするために、さらにレベルを移動する必要があります。詳しくは、[コンテンツ転送ツールの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=ja)を参照してください。
 
-### バグ修正 {#bug-fixes-ctt-march}
+### バグの修正 {#bug-fixes-ctt-march}
 
 * 特定のパスからコンテンツを移行する際に、CTT が無関係なリソースを取り込んでいました。この問題が修正されました。
 

@@ -1,12 +1,12 @@
 ---
-title: AEMでの GraphiQL IDE の使用
-description: Adobe Experience Managerでの GraphiQL IDE の使用方法を説明します。
+title: AEM での GraphiQL IDE の使用
+description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 >
 >この機能の一部はプレリリースチャネルで利用できます。 特に、持続クエリに関連する機能です。
 > 
->詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
+>詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 1%
 * **ツール** -> **一般** -> **GraphQL クエリエディター**
 * 直接例： `http://localhost:4502/aem/graphiql.html`
 
-![GraphiQL インターフェイス](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
+![GraphiQL インターフェイス ](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
 開発オーサーシステムで GraphiQL を使用して、GETリクエストと公開クエリを使用してクライアントアプリケーションから要求できるようにすることができます。 実稼動環境で使用する場合は、次の操作を行う必要があります [クエリを実稼動環境に移動する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初は、実稼動作成者に対して、クエリを使用して新しく作成したコンテンツを検証し、最後に実稼動公開でライブ消費を検証します。
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 また、GraphiQL IDE では、 [クエリ変数](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
-次は例です。
+次に例を示します。
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
@@ -146,7 +146,7 @@ curl -X PUT \
   >The target environment might need adjusting, depending on your requirements.
 -->
 
-次は例です。
+次に例を示します。
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 

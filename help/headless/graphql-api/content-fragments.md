@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
 workflow-type: tm+mt
 source-wordcount: '2569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 * オーサー環境の使用目的：
    * 「コンテンツ管理用」のデータのクエリ：
       * AEM as a Cloud Service の GraphQL は現在読み取り専用の API です。
-      * CR（U）D 操作には REST API を使用できます。
+      * REST API は、CR(U)D の操作に使用できます。
 
 ## 権限 {#permission}
 
@@ -209,11 +209,11 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | コンテンツフラグメントモデル - データ型 | GraphQL の型 | 説明 |
 |--- |--- |--- |
 | 1 行のテキスト | String、[String] |  作成者名、場所名などの単純な文字列に使用します。 |
-| 複数行テキスト | 文字列 |  記事の本文などのテキストを出力するために使用します |
-| 数値 |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
-| ブール値 |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
+| 複数行テキスト | String |  記事の本文などのテキストを出力するために使用します |
+| Number |  Float、[Float] | 浮動小数点数と整数を表示するために使用します |
+| Boolean |  Boolean |  チェックボックスを表示するために使用します（単純な真／偽のステートメント） |
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します。選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
-| 列挙 |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
+| 定義済みリスト |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
 | コンテンツ参照 |  文字列 |  AEM 内の別のアセットへのパスを表示するために使用します |
 | フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
@@ -224,7 +224,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 #### パス {#path}
 
-パスフィールドは、GraphQL で識別子として使用されます。これは、AEM リポジトリー内のコンテンツフラグメントアセットのパスを表します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
+パスフィールドは、GraphQL で識別子として使用されます。これは、AEM リポジトリ内のコンテンツフラグメントアセットのパスを表します。これをコンテンツフラグメントの識別子として選択した理由は次のとおりです。
 
 * AEM 内で一意である
 * 取得しやすい
@@ -303,9 +303,9 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 >[!NOTE]
 >
 >**標準メタデータと配列メタデータの違い**：
->`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリーに格納されているものについての指定であり、その取得手段についての指定ではありません。
+>`StringMetadata` と `StringArrayMetadata` はどちらも、リポジトリに格納されているものについての指定であり、その取得手段についての指定ではありません。
 >
->例えば、`stringMetadata` フィールドを呼び出すと、リポジトリーに `String` として格納されているすべてのメタデータの配列を受け取ることになります。一方、`stringArrayMetadata` を呼び出すと、リポジトリーに `String[]` として格納されているすべてのメタデータの配列を受け取ります。
+>例えば、`stringMetadata` フィールドを呼び出すと、リポジトリに `String` として格納されているすべてのメタデータの配列を受け取ることになります。一方、`stringArrayMetadata` を呼び出すと、リポジトリに `String[]` として格納されているすべてのメタデータの配列を受け取ります。
 
 詳しくは、[メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)を参照してください。
 
@@ -331,7 +331,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 
 ## GraphQL 変数 {#graphql-variables}
 
-GraphQL では、クエリに変数を含めることができます。詳しくは、 [GraphQL の変数に関するドキュメント](https://graphql.org/learn/queries/#variables) を参照してください。
+GraphQL では、クエリに変数を含めることができます。詳しくは、[GraphQL の変数に関するドキュメント](https://graphql.org/learn/queries/#variables)を参照してください。
 
 例えば、特定のバリエーションを持つ `Article` タイプのコンテンツフラグメントをすべて取得するには、次のように、GraphiQL で変数 `variation` を指定します。
 
@@ -450,7 +450,7 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
          * [メタデータのサンプルクエリ - 「GB」という賞のメタデータのリスト](#sample-metadata-awards-gb)を参照してください
       * `_model`：コンテンツフラグメントモデル（パスとタイトル）のクエリを許可します
          * [モデルからのコンテンツフラグメントモデルのサンプルクエリ](#sample-wknd-content-fragment-model-from-model)を参照してください
-      * `_path`：リポジトリー内のコンテンツフラグメントへのパス
+      * `_path`：リポジトリ内のコンテンツフラグメントへのパス
          * [サンプルクエリ - 1 つの特定の都市フラグメント](#sample-single-specific-city-fragment)を参照してください
       * `_reference`：参照（リッチテキストエディターでのインライン参照など）を表示します
          * [プリフェッチされた参照を含んだ複数のコンテンツフラグメントのサンプルクエリ](#sample-wknd-multiple-fragments-prefetched-references)を参照してください
@@ -481,11 +481,11 @@ AEM 用の GraphQL でのクエリの基本操作は、標準の GraphQL 仕様�
 
 * ネストされたフラグメントに対するクエリ時のフォールバック：
 
-   * ネストされたフラグメントに特定のバリエーションが存在しない場合、 **マスター** バリエーションが返されます。
+   * 任意のバリエーションがネストされたフラグメントに存在しない場合、**マスター**&#x200B;バリエーションが返されます。
 
-## 外部 Web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
+## 外部 web サイトからの GraphQL エンドポイントのクエリ {#query-graphql-endpoint-from-external-website}
 
-外部 Web サイトから GraphQL エンドポイントにアクセスするには、次の項目を設定する必要があります。
+外部 web サイトから GraphQL エンドポイントにアクセスするには、次の項目を設定する必要があります。
 
 * [CORS フィルター](/help/headless/deployment/cross-origin-resource-sharing.md)
 * [リファラーフィルター](/help/headless/deployment/referrer-filter.md)

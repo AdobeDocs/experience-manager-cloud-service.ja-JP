@@ -1,22 +1,22 @@
 ---
 title: コンテンツのプレビュー
-description: AEMプレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
+description: AEM プレビューサービスを使用して、運用を開始する前にコンテンツをプレビューする方法を説明します。
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 28%
+ht-degree: 93%
 
 ---
 
 
 # コンテンツのプレビュー {#previewing-content}
 
-AEMオファーの Sites プレビューサービスを使用すると、開発者やコンテンツ作成者は、Web サイトがパブリッシュ環境に到達する前に Web サイトの最終的なエクスペリエンスをプレビューし、公開できます。
+AEM は、web サイトがパブリッシュ環境になって一般公開される前に、開発者とコンテンツ作成者が web サイトの最終的なエクスペリエンスをプレビューできるサイトプレビューサービスを提供しています。
 
-ページトランジションや他のパブリッシュ側のみのコンテンツなど、オーサー環境からは表示されないページエクスペリエンスのプレビューを容易にします。
+これにより、ページトランジションやその他のパブリッシュ側のコンテンツなど、オーサー環境からは見えないページエクスペリエンスのプレビューが容易になります。
 
-プレビュー環境について詳しくは、ドキュメントを参照してください。 [環境の管理。](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+プレビュー環境について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)のドキュメントを参照してください。
 
 >[!NOTE]
 >
@@ -24,31 +24,31 @@ AEMオファーの Sites プレビューサービスを使用すると、開発�
 
 ## プレビュー用のコンテンツの公開 {#publishing-content-to-preview}
 
-コンテンツをプレビューサービスに公開するには、 **管理された公開** UI
+プレビューサービスにコンテンツを公開するには、**公開を管理** UI を使用します。
 
-1. サイトコンソールで、プレビュー用に送信する 1 つ以上のページを選択し、 **公開を管理** ボタン
+1. Sites コンソールで、プレビュー用に送信する 1 つ以上のページを選択し、「**公開を管理**」ボタンをクリックします。
 1. 次のウィザードで、宛先として「**プレビュー**」を選択します
 
    ![管理対象公開](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
 1. 「**次へ**」をクリックし、「**公開**」をクリックして確定します。
 
-1. プレビュー環境でコンテンツにアクセスするための URL がダイアログに表示されます。
+1. プレビュー環境のコンテンツにアクセスするための URL がダイアログに表示されます。
 
 
-また、ウィザードに表示される URL を使用してプレビューコンテンツを確認する場合は、の前にを追加することもできます `preview-` を実稼動インスタンスのパブリッシュ URL に追加します。
+また、ウィザードに表示される URL を使用してプレビューコンテンツを確認する代わりに、実稼動インスタンスのパブリッシュ URL の先頭に `preview-` を付加することもできます。
 
 ```
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-ドキュメントを参照 [環境の管理](/help/implementing/cloud-manager/manage-environments.md) 環境の URL を取得する方法に関する詳細。
+お使いの環境の URL を取得する方法について詳しくは、[環境の管理](/help/implementing/cloud-manager/manage-environments.md)のドキュメントを参照してください。
 
-また、 [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow) と `agentId` パラメータをに設定 `preview` または、 [レプリケーション API](/help/operations/replication.md#replication-api) と `AgentFilter` プレビュー用に設定されました。
+コンテンツをプレビューに公開するには、`agentId` パラメーターを `preview` に設定した[コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow)を使用するか、`AgentFilter` をプレビュー用に設定した[レプリケーション API](/help/operations/replication.md#replication-api) を使用することもできます。
 
 ## プレビュー層の OSGi 設定の指定 {#configuring-osgi-settings-for-the-preview-tier}
 
-プレビュー層の OSGi プロパティ値は、パブリッシュ層から継承されます。 ただし、 `service` 値に対するパラメータ `preview`. 次の OSGi プロパティの例では、統合エンドポイントの URL を決定します。
+プレビュー層の OSGi プロパティ値は、パブリッシュ層から継承されます。ただし、`service` パラメーターを `preview` 値に設定することで、プレビュー層の値をパブリッシュ層と区別することができます。次の OSGi プロパティの例では、統合エンドポイントの URL を決定しています。
 
 ```
 [

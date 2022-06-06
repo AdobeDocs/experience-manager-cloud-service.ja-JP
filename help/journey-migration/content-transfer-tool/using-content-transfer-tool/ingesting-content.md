@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
 workflow-type: tm+mt
 source-wordcount: '701'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 40%
 
 コンテンツ転送ツールで移行セットを取り込むには、次の手順に従います。
 >[!NOTE]
->オプションのプリコピー手順を実行して、取り込み段階を大幅に高速化できます。 事前コピー手順は、最初の完全な抽出および取り込みに最も効果的です。 詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
+>オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。事前コピー手順は、最初の完全な抽出および取り込みに最も効果的です。 詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
 
 1. Cloud Acceleration Manager に移動します。 プロジェクトカードをクリックし、「コンテンツ転送」カードをクリックします。 に移動します。 **取り込みジョブ** をクリックし、 **新しい取り込み**
 
@@ -38,7 +38,7 @@ ht-degree: 40%
 
    >[!NOTE]
    >
-   >オプションのプリコピー手順を実行して、取り込み段階を大幅に高速化できます。 詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
+   >オプションの事前コピー手順を実行して、取り込み段階を大幅に高速化できます。詳しくは、[AzCopy を使用した取得](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy)を参照してください。
    > 
    >事前コピーを使用した取得を（S3 または Azure データストアに対して）使用する場合は、最初にオーサーの取得を単独で実行することをお勧めします。これにより、後で実行する際に、パブリッシュの取り込みが高速化されます。
 

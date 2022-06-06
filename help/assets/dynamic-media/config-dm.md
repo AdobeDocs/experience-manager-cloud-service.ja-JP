@@ -6,7 +6,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
 source-wordcount: '3449'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 94%
 
 開発、ステージング、実稼動など、様々な環境で Adobe Experience Manager を使用する場合は、環境ごとに Dynamic Media Cloud Services を設定します。
 
-関連トピック [Dynamic Media会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)
+また、[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。
 
 ## Dynamic Media のアーキテクチャ図 {#architecture-diagram-of-dynamic-media}
 
@@ -73,7 +73,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    * 大文字
    * 小文字
-   * 数値
+   * Number
    * 特殊文字：`# $ & . - _ : { }`
 
    「**[!UICONTROL 現在のパスワード]**」フィールドは意図的に事前入力されており、操作時には非表示になっています。
@@ -86,17 +86,17 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    **[!UICONTROL パスワードを変更]**&#x200B;ダイアログボックスで「**[!UICONTROL キャンセル]**」を選択した場合でも、新規作成の Dynamic Media 設定を保存する際に、新しいパスワードを入力する必要があります。
 
-   [Dynamic Media のパスワードの変更](#change-dm-password) も参照してください。
+   [Dynamic Media のパスワードの変更](#change-dm-password)も参照してください。
 
 1. 接続に成功したら、次のように設定できます。
 
    | プロパティ | 説明 |
    |---|---|
-   | 会社 | Dynamic Media アカウントの名前です。異なるサブブランドや部門、またはステージングや実稼動環境のために、複数の Dynamic Media アカウントを持っている場合があります。<br>関連トピック [Dynamic Media会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md). |
+   | 会社 | Dynamic Media アカウントの名前です。異なるサブブランドや部門、またはステージングや実稼動環境のために、複数の Dynamic Media アカウントを持っている場合があります。<br>[Dynamic Media の会社エイリアスアカウントの設定](/help/assets/dynamic-media/dm-alias-account.md)も参照してください。 |
    | 会社のルートフォルダーのパス | 会社のルートフォルダーパスです。 |
    | アセットの公開 | 次の 3 つのオプションから選択できます。<br>**[!UICONTROL 即時&#x200B;]**：アセットがアップロードされると、システムによってアセットが取り込まれ、URL／埋め込みがすぐに提供されます。アセットを公開するためにユーザーが操作する必要はありません。<br>**[!UICONTROL アクティベーション時]**：URL／埋め込みリンクの提供の前に、最初にアセットを明示的に公開する必要があります。<br>**[!UICONTROL 選択的公開&#x200B;]**：アセットは、セキュリティで保護されたプレビューのみを目的として自動公開されます。また、パブリックドメインでの配信用に DMS7 に公開することなく、Experience Manager as a Cloud Service に明示的に公開することもできます。将来的には、このオプションでアセットを相互排他的に Experience Manager as a Cloud Service に公開したり、Dynamic Media に公開したりするようになります。つまり、アセットを DMS7 に公開して、スマート切り抜きや動的レンディションなどの機能を使用できます。または、アセットを、プレビュー用に Experience Manager as a Cloud Service でのみ公開し、パブリックドメイン配信用の DMS7 で公開しないようにすることもできます。 |
    | プレビューサーバーを保護 | セキュアなレンディションプレビューサーバーへの URL パスを指定できます。つまり、レンディションが生成されると、Experience Manager as a Cloud Service は、リモート Dynamic Media レンディションに安全にアクセスしてプレビューできます（バイナリが Experience Manager as a Cloud Service インスタンスに送り返されることはありません）。<br>自社のサーバーまたは特別なサーバーを使用する特別な取り決めがない限り、アドビでは、この設定を指定されたとおりにしておくことをお勧めします。 |
-   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**- フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。 <br>選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーを選択した後、ツールバーで「**[!UICONTROL プロパティ]**」を選択します。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」を選択します。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。*[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md) も参照してください。<br>**[!UICONTROL 継承&#x200B;]**- フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つまたはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップで表示されます。<br>**[!UICONTROL サブフォルダーで有効にする]** - このサブツリー内のすべての項目を Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーで無効にする&#x200B;]**- このサブツリー内のすべての項目を Dynamic Media との同期から除外します。 |
+   | すべてのコンテンツを同期 | デフォルトで選択されています。Dynamic Media との同期で、アセットを選択して含めるまたは除外する場合は、このオプションの選択を解除します。このオプションの選択を解除すると、次の 2 つの Dynamic Media 同期モードから選択できるようになります。<br>**[!UICONTROL Dynamic Media 同期モード]**<br>**[!UICONTROL デフォルトで有効&#x200B;]**- フォルダーを特別に除外するようにマークしない限り、設定はすべてのフォルダーにデフォルトで適用されます。<!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL デフォルトで無効]** - 選択したフォルダーを Dynamic Media と同期するように明示的にマークしない限り、設定はどのフォルダーにも適用されません。<br>選択したフォルダーを Dynamic Media と同期するようにマークするには、アセットフォルダーを選択した後、ツールバーで「**[!UICONTROL プロパティ]**」を選択します。「**[!UICONTROL 詳細]**」タブの **[!UICONTROL Dynamic Media 同期モード]**&#x200B;ドロップダウンリストで、次の 3 つのオプションから選択します。完了したら、「**[!UICONTROL 保存]**」を選択します。*注意：以前に「**すべてのコンテンツを同期**」を選択した場合、これら 3 つのオプションは使用できません。*[Dynamic Media のフォルダーレベルでの選択的公開の設定](/help/assets/dynamic-media/selective-publishing.md)も参照してください。<br>**[!UICONTROL 継承&#x200B;]**- フォルダーに明示的な同期値はなく、代わりに、上位フォルダーの 1 つまたはクラウド設定のデフォルトモードから同期値を継承します。継承された詳細なステータスは、ツールチップで表示されます。<br>**[!UICONTROL サブフォルダーで有効にする]** - このサブツリー内のすべての項目を Dynamic Media との同期に含めます。フォルダー固有の設定は、クラウド設定内のデフォルトモードよりも優先されます。<br>**[!UICONTROL サブフォルダーで無効にする&#x200B;]**- このサブツリー内のすべての項目を Dynamic Media との同期から除外します。 |
 
    >[!NOTE]
    >
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >このインボックス通知は、設定が成功したかどうかを知らせるものです。
    > 詳しくは、[新しい Dynamic Media 設定のトラブルシューティング](#troubleshoot-dm-config)と[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)を参照してください。
 
-1. 公開前にDynamic Mediaコンテンツを安全にプレビューするには、Experience Manageras a Cloud Serviceではトークンベースの検証が使用されるので、Experience Manager作成者は、Dynamic Mediaコンテンツをデフォルトでプレビューできます。 ただし、次の操作は可能です。 *許可リスト* コンテンツを安全にプレビューするためのアクセスをユーザーに提供する IP の数が増えました。 このアクションをas a Cloud ServiceのExperience Managerで設定するには [Image Server 用のDynamic Media公開設定の指定 — 「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 公開前に Dynamic Media コンテンツを安全にプレビューするには、Experience Manageras a Cloud Service ではトークンベースの検証が使用されるので、Experience Manager オーサーは、Dynamic Media コンテンツをデフォルトでプレビューできます。IP を&#x200B;*許可リスト*&#x200B;に登録して、ユーザーがコンテンツを安全にプレビューできるようにすることができます。このアクションを Experience Manager as a Cloud Service で設定するには、[Image Server 用の Dynamic Media 公開設定 -「セキュリティ」タブ](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)を参照してください。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -139,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ![Experience Manager インボックス失敗](/help/assets/dynamic-media/assets/dmconfig-inbox-failure.png)
 
-[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md) も参照してください。
+[インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)も参照してください。
 
 **新しい Dynamic Media 設定のトラブルシューティングを行うには：**
 
@@ -196,7 +196,7 @@ Dynamic Media のセットアップと設定をさらにカスタマイズした
 
 -->
 
-### （オプション）Dynamic Media 設定のセットアップと設定  {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
+### （オプション）Dynamic Media 設定のセットアップと設定 {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings}
 
 Dynamic Media Classic のユーザーインターフェイスを使用し、Dynamic Media の設定を変更します。
 
@@ -216,13 +216,13 @@ Dynamic Media Classic のユーザーインターフェイスを使用し、Dyna
 
 Dynamic Media の公開設定ページでは、Adobe Dynamic Media サーバーから web サイトやアプリケーションにアセットを配信する方法を決定するデフォルト設定を指定します。
 
-詳しくは、[Image Server 用の Dynamic Media の公開設定](/help/assets/dynamic-media/dm-publish-settings.md)を参照してください。
+[Image Server 用の Dynamic Media 公開設定](/help/assets/dynamic-media/dm-publish-settings.md)を参照してください。
 
 #### Dynamic Media の一般設定 {#configuring-application-general-settings}
 
-Dynamic Media の&#x200B;**[!UICONTROL 公開サーバー名]**&#x200B;の URL と&#x200B;**[!UICONTROL オリジンサーバー名]**&#x200B;の URL を設定します。また、**[!UICONTROL アプリケーションにアップロード]**&#x200B;設定と&#x200B;**[!UICONTROL デフォルトのアップロードオプション]**&#x200B;はすべて、特定のユースケースに基づいて指定できます。
+Dynamic Media **[!UICONTROL 公開先サーバー名]**&#x200B;の URL と&#x200B;**[!UICONTROL 公開元サーバー名]**&#x200B;の URL を設定します。特定の使用例に基づいて、**[!UICONTROL アプリケーションへのアップロード]**&#x200B;設定と&#x200B;**[!UICONTROL デフォルトのアップロードオプション]**&#x200B;をすべて指定することもできます。
 
-詳しくは、[Dynamic Media の一般設定](/help/assets/dynamic-media/dm-general-settings.md)を参照してください。
+[Dynamic Media の一般設定](/help/assets/dynamic-media/dm-general-settings.md)を参照してください。
 
 #### カラーマネジメントの設定 {#configuring-color-management}
 
@@ -264,7 +264,7 @@ Dynamic Media によって処理されるアセットタイプを定義して、
 * Adobe PDF を eCatalog アセットに変換する。
 * Adobe Photoshop ドキュメント（.PSD）をパーソナライズ用のバナーテンプレートアセットに変換する。
 * Adobe Illustrator ファイル（.AI）または Adobe Photoshop Encapsulated PostScript® ファイル（.EPS）をラスタライズする。
-* [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md) および [イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md) は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
+* [ビデオプロファイル](/help/assets/dynamic-media/video-profiles.md)および[イメージングプロファイル](/help/assets/dynamic-media/image-profiles.md)は、それぞれ、ビデオおよび画像の処理を定義するのに使用できます。
 
 [アセットのアップロード](/help/assets/add-assets.md)を参照してください。
 
@@ -320,7 +320,7 @@ Experience Manager Assets でサポートされていない形式のカスタム
 
 1. ページの右下隅にある「**[!UICONTROL 保存]**」を選択します。
 
-   この時点で、Adobe Experience Manager Web コンソール設定ページが開いているブラウザータブを閉じることができます。
+   この時点で、Adobe Experience Manager web コンソール設定ページが開いているブラウザータブを閉じることができます。
 
 1. Experience Manager as a Cloud Service のコンソールを開いているブラウザータブに戻ります。
 1. Experience Manager as a Cloud Service で、**[!UICONTROL ツール／一般／CRXDE Lite]** に移動します。
@@ -397,11 +397,11 @@ Granite のワークフローキューは、一時的でないワークフロー
 
 #### 事前定義済みの Granite の一時的なワークフローキューワーカースレッドの更新 {#update-granite-transient-workflow-queue-worker-threads-images}
 
-Granite の一時的なワークフローキューは、 **[!UICONTROL DAM アセットの更新]** ワークフローに使用されます。Dynamic Media では、画像および非ビデオアセットの取り込みおよび処理に使用されます。
+Granite の一時的なワークフローキューは、**[!UICONTROL DAM アセットの更新]**&#x200B;ワークフローに使用されます。Dynamic Media では、画像および非ビデオアセットの取り込みおよび処理に使用されます。
 
 **事前定義済みの Granite の一時的なワークフローキューワーカースレッドを更新するには：**
 
-1. **Adobe Experience Manager Web Console Configuration**（`http://<host>:<port>/system/console/configMgr`）に移動します。
+1. **Adobe Experience Manager Web コンソール設定**（`http://<host>:<port>/system/console/configMgr`）に移動します。
 1. **キュー：Granite 一時的なワークフローキュー**&#x200B;を検索します。
 
    >[!NOTE]

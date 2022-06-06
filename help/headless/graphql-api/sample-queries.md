@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ GraphQL を AEM と共に使用し、サンプルコンテンツとクエリを�
 >
 >この機能の一部はプレリリースチャネルで利用できます。 特に、持続クエリに関連する機能です。
 > 
->詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
+>詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 >[!NOTE]
 >

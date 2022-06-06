@@ -5,7 +5,7 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 48%
+ht-degree: 88%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 48%
 
 ## 同期操作を使用 {#batch-operations}
 
-同期操作とは、ドキュメントを線形的に生成するプロセスです。 別の API を使用できるようになりました。
+同期操作とは、ドキュメントを線形的に生成するプロセスです。別個の API は次の場合に使用可能です。
 
-* テンプレートからPDFドキュメントを生成し、そのドキュメントにデータを結合します。
-* XDP ファイルまたはPDFドキュメントから PostScript(PS)、Printer Command Language(PCL)、Zebra Printing Language(ZPL) ドキュメントを生成します。
+* テンプレートから PDF ドキュメントを生成し、そのドキュメントにデータを結合する。
+* XDP ファイルまたは PDF ドキュメントから PostScript（PS）、Printer Command Language（PCL）、Zebra Printing Language（ZPL）ドキュメントを生成する。
 * PDF ドキュメントのアセンブリ
 * PDF ドキュメントのディスアセンブリ
 * 文書をPDF/A 準拠文書に変換する
@@ -39,24 +39,24 @@ ht-degree: 48%
 
 同期操作は、次の 2 種類の認証をサポートします。
 
-* **基本認証**:基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。 クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。 例えば、管理者/管理者として認証するために、クライアントが基本を送信する [base64 エンコードされた文字列ユーザー名]: [base64 でエンコードされた文字列パスワード].
+* **基本認証**：基本認証は、HTTP プロトコルに組み込まれたシンプルな認証スキームです。クライアントは、Basic という単語に続いてスペースと、base64 でエンコードされた文字列 username:password を含む Authorization ヘッダーを含む HTTP リクエストを送信します。例えば、管理者／管理者として認証するために、クライアントは Basic [base64 エンコードされたユーザー名文字列]: [base64 でエンコードされたパスワード文字列]を送信します。
 
-* **トークンベースの認証：** トークンベースの認証では、アクセストークン（Bearer 認証トークン）を使用して、as a Cloud ServiceのExperience Managerにリクエストを送信します。 AEM Forms as a Cloud Serviceは、アクセストークンを安全に取得する API を提供します。 トークンを取得して使用し、要求を認証するには、次の手順を実行します。
+* **トークンベースの認証：**&#x200B;トークンベースの認証では、アクセストークン（Bearer 認証トークン）を使用して、Experience Manager as a Cloud Service にリクエストを送信します。AEM Forms as a Cloud Service は、アクセストークンを安全に取得する API を提供します。トークンを取得して使用し、要求を認証するには、次の手順を実行します。
 
-   1. [開発者コンソールからExperience Managerのas a Cloud Serviceの資格情報を取得します。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [環境にExperience Manageras a Cloud Serviceの資格情報をインストールする](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). クラウドサービスにリクエストを送信（呼び出しをおこなう）ように設定された (AEM Server、Web サーバーまたはその他の非アプリケーションサーバー )。
-   1. [JWT トークンを生成し、アクセストークン用のAdobe IMSAPI と交換しました](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. アクセストークンを BearerExperience Managerトークンとして使用して認証 API を実行します。
-   1. [テクニカルアカウントユーザーに対して、Experience Manager環境で適切な権限を設定する](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. [Developer Console から Experience Manager as a Cloud Service の資格情報を取得します](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja)。
+   1. [環境に Experience Manageras a Cloud Service の資格情報をインストールします](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。Cloud Service にリクエストを送信する（呼び出しを行う）ように設定された（AEM Server、web サーバーまたはその他の非アプリケーションサーバー）。
+   1. [JWT トークンを生成し、アクセストークン用の Adobe IMSAPI と交換します](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
+   1. アクセストークンを Bearer 認証トークンとして使用して Experience Manager API を実行します。
+   1. [Experience Manager 環境のテクニカルアカウントユーザーに適切な権限を設定します](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=ja#aemでのアクセスの設定)。
 
    >[!NOTE]
    >
-   >Adobeでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
+   >アドビでは、実稼動環境でトークンベースの認証を使用することをお勧めします。
 
 
 ### （ドキュメント生成 API の場合のみ）アセットと権限の設定
 
-同期 API を使用するには、次が必要です。
+API を使用するために必要なものは、次のとおりです。
 
 * PDF または XDP テンプレート
 * [テンプレートと結合するデータ](#form-data)

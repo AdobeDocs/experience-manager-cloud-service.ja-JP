@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
 source-wordcount: '1410'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 >
 >この機能の一部はプレリリースチャネルで利用できます。 特に、持続クエリに関連する機能です。
 > 
->詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) を参照してください。
+>詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -281,7 +281,7 @@ AEM GraphQL API をクエリで実際に使用するにあたって、次のよ�
 * **ツール** -> **一般** -> **GraphQL クエリエディター**
 * 直接例： `http://localhost:4502/aem/graphiql.html`
 
-![GraphiQL インターフェイス](assets/graphiql-interface.png "GraphiQL インターフェイス")
+![GraphiQL インターフェイス ](assets/graphiql-interface.png "GraphiQL インターフェイス")
 
 ### クエリの概要 {#getting-Started-with-queries}
 

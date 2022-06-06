@@ -11,7 +11,7 @@ ht-degree: 96%
 
 # 新機能と相違点 {#what-is-new-and-what-is-different}
 
-長年にわたって、AEM の利用形態は次の 2 とおりでした。
+長年にわたって、AEM の利用形態は次の 2 通りでした。
 
 * オンプレミス
 

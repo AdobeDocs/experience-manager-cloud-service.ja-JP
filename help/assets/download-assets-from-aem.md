@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -33,16 +33,16 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=ja)
 * [デスクトップアプリケーション](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=ja#download-assets)
 
-## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード  {#download-assets}
+## [!DNL Experience Manager] インターフェイスを使用したアセットのダウンロード {#download-assets}
 
 非同期ダウンロードサービスは、大規模なアセットをシームレスにダウンロードするためのフレームワークとなります。100GB を超えるダウンロードアーカイブは、それぞれ最大 100GB の複数の zip アーカイブに分割されます。これらは個別にダウンロードできます。サイズの小さいファイルはユーザーインターフェイスからリアルタイムでダウンロードされます。[!DNL Experience Manager] は、オリジナルファイルをダウンロードした単一アセットのダウンロードをアーカイブしません。この機能により、ダウンロードを高速化できます。
 
-デフォルトでは、[!DNL Experience Manager] はダウンロードワークフローの完了時に通知をトリガーします。ダウンロード通知が [[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md) に表示されます。
+デフォルトでは、[!DNL Experience Manager] はダウンロードワークフローの完了時に通知をトリガーします。ダウンロード通知が[[!DNL Experience Manager] インボックス](/help/sites-cloud/authoring/getting-started/inbox.md)に表示されます。
 
 ![インボックス通知](assets/inbox-notification-for-large-downloads.png)
 
 
-### 大量のダウンロードに対する電子メール通知を有効にする {#enable-emails-for-large-downloads}
+### 大量のダウンロードに対するメール通知を有効にする {#enable-emails-for-large-downloads}
 
 非同期ダウンロードは、次のいずれかの場合にトリガーされます。
 
@@ -50,22 +50,22 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 * ダウンロードサイズが 100 MB を超える場合
 * ダウンロードの準備に 30 秒以上かかる場合
 
-非同期ダウンロードがバックエンドで実行される間、ユーザーは引き続き調査をおこない、Experience Managerでさらに作業をおこなうことができます。 ダウンロードプロセスの完了時にユーザーに通知するには、あらかじめ用意されているメカニズムが必要です。 この目的を達成するために、管理者は SMTP サーバーを設定して電子メールサービスを設定できます。 詳しくは、 [メールサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+非同期ダウンロードがバックエンドで実行される間、ユーザーは Experience Manager で調査を続行し、さらに作業できます。ダウンロードプロセスの完了時にユーザーに通知するには、あらかじめ用意されているメカニズムが必要です。この目的を達成するために、管理者は SMTP サーバーを設定してメールサービスを設定できます。詳しくは、[メールサービスの設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=ja#sending-email)を参照してください。
 
-電子メールサービスを設定すると、管理者とユーザーは、ユーザーインターフェイスから電子メール通知をExperience Managerできます。
+メールサービスを設定すると、管理者とユーザーは、Experience Manager インターフェイスからメール通知を行えます。
 
-電子メール通知を有効にするには：
+メール通知を有効にする手順は次のとおりです。
 
 1. [!DNL Experience Manager Assets] にログインします。
-1. 右上隅にあるユーザーアイコンをクリックしてから、「**[!UICONTROL 環境設定]**」をクリックします。ユーザーの環境設定 ウィンドウが開きます。
-1. を選択します。 **[!UICONTROL アセットのダウンロードの電子メール通知]** チェックボックスをオンにして、 **[!UICONTROL 確定]**.
+1. 右上隅のユーザーアイコンをクリックし、「**[!UICONTROL 環境設定]**」をクリックします。ユーザーの環境設定ウィンドウが開きます。
+1. 「**[!UICONTROL アセットのダウンロードのメール通知]**」チェックボックスをオンにして、「**[!UICONTROL 確定]**」をクリックします。
 
    ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
 
 アセットをダウンロードするには、次の手順に従います。
 
-1. Adobe [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;をクリックします。
+1. [!DNL Experience Manager] ユーザーインターフェイスで、**[!UICONTROL アセット]**／**[!UICONTROL ファイル]**&#x200B;をクリックします。
 1. ダウンロードするアセットに移動します。フォルダーを選択するか、フォルダー内の 1 つ以上のアセットを選択します。ツールバーの「**[!UICONTROL ダウンロード]**」をクリックします。
 
    ![ からアセットをダウンロードする際に使用できるオプション[!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)
@@ -79,11 +79,11 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
    | **[!UICONTROL アセット]** | レンディションを含めずに、元の形式でアセットをダウンロードする場合に、このオプションを選択します。<br>オリジナルアセットにサブアセットがある場合は、サブアセットオプションを使用できます。 |
    | **[!UICONTROL レンディション]** | レンディションは、アセットのバイナリ表現です。アセットは、（アップロードされたファイルの）一次表現を持ちます。アセットは任意の数の追加の表現を持つことができます。<br>このオプションを選択すると、ダウンロードするレンディションを選択できます。使用できるレンディションは、選択したアセットによって異なります。 |
    | **[!UICONTROL スマート切り抜き]** | このオプションを選択すると、選択したアセットのすべてのスマート切り抜きレンディションが Adobe [!DNL Experience Manager] 内からダウンロードされます。スマート切り抜きレンディションを含む zip ファイルが作成され、ローカルコンピューターにダウンロードされます。 |
-   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを [画像プリセット](/help/assets/dynamic-media/image-presets.md) リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
+   | **[!UICONTROL 動的レンディション]** | 一連の代替レンディションをリアルタイムで生成するには、このオプションを選択します。また、このオプションを選択すると、動的に作成するレンディションを[画像プリセット](/help/assets/dynamic-media/image-presets.md)リストから選択します。<br>さらに、サイズ、測定単位、形式、カラースペース、解像度および、画像の反転用などのオプションの画像修飾子を選択できます。このオプションは、[!DNL Dynamic Media] を有効にしている場合にのみ使用できます。 |
 
 1. ダイアログボックスで、「**[!UICONTROL ダウンロード]**」をクリックします。
 
-   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。 メールからダウンロードリンクをクリックして、zip フォルダーをダウンロードします。
+   大量のダウンロードに対するメール通知が有効になっている場合は、アーカイブされた zip フォルダーのダウンロード URL を記載したメールがインボックスに表示されます。メールからダウンロードリンクをクリックして、zip フォルダーをダウンロードします。
 
    ![email-notifications-for-large-downloads](/help/assets/assets/email-for-large-notification.png)
 
@@ -93,11 +93,11 @@ Adobe Experience Manager アセットをダウンロードするには、次の�
 
 ## リンク共有を使用して共有されたアセットのダウンロード {#link-share-download}
 
-リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。[リンク共有機能](/help/assets/share-assets.md#sharelink) を参照してください。
+リンクを使用したアセットの共有は、関心のあるユーザーが [!DNL Assets] にログインしなくてもアセットを利用できるようにするための便利な方法です。[リンク共有機能](/help/assets/share-assets.md#sharelink)を参照してください。
 
 ユーザーが共有リンクからアセットをダウンロードする場合、[!DNL Assets] では、高速で途切れないダウンロードを可能にする非同期サービスを使用します。ダウンロードされるアセットは、バックグラウンドで、扱いやすいファイルサイズの ZIP アーカイブにまとめられてインボックスのキューに入れられます。非常に大きなダウンロードファイルの場合は、最大 100 GB の複数のファイルに分割されます。
 
-[!UICONTROL ダウンロードインボックス] には、各アーカイブの処理ステータスが表示されます。処理が完了したら、インボックスからアーカイブをダウンロードできます。
+[!UICONTROL ダウンロードインボックス]には、各アーカイブの処理ステータスが表示されます。処理が完了したら、インボックスからアーカイブをダウンロードできます。
 
 ![ダウンロードインボックス](assets/link-sharing-download-inbox.png)
 

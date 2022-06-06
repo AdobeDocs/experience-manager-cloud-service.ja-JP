@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 13537eef0aa222b943e7d6f86a8acb8f98dc669b
 workflow-type: tm+mt
 source-wordcount: '4326'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -44,17 +44,17 @@ ht-degree: 98%
 
 <!-- TBD: This feature may not work as documented. See CQ-4283718. Get PM review done. -->
 
-DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリーのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
+DAM ユーザーがリポジトリに既に存在する 1 つ以上のアセットをアップロードした場合、[!DNL Experience Manager] は重複を検出し、ユーザーに通知します。重複の検出は、リポジトリのサイズとアップロードされたアセットの数に応じてパフォーマンスに影響を与える可能性があるので、デフォルトで無効になっています。
 
 この機能を有効にするには：
 
-1. に移動します。 **[!UICONTROL ツール/アセット/アセット設定]**.
+1. **[!UICONTROL ツール／アセット／アセット設定]**&#x200B;に移動します。
 
-1. クリック **[!UICONTROL Asset Duplication Detector]**.
+1. 「**[!UICONTROL Asset Duplication Detector]**」をクリックします。
 
-1. の [!UICONTROL アセット重複検出ページ]をクリックし、 **[!UICONTROL 有効]**.
+1. [!UICONTROL Asset Duplication Detector] ページで「**[!UICONTROL 有効]**」をクリックします。
 
-   `dam:sha1` 「メタデータを検出」フィールドの値を指定すると、ファイル名が異なる場合でも重複アセットが検出されます。
+   「メタデータフィールドを検出」の値を `dam:sha1` に指定すると、ファイル名が異なる場合でも重複アセットが確実に検出されます。
 
 1. 「**[!UICONTROL 保存]**」をクリックします。
 
@@ -62,7 +62,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 
 >[!NOTE]
 >
->を使用して複製検出を設定した場合 `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定ファイル（OSGi 設定）を使用する場合は引き続き使用できますが、Adobeでは新しいメソッドを使用することをお勧めします。
+>`/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` 設定ファイル（OSGi 設定）を使用して Duplication Detector を設定してある場合は、それを引き続き使用できますが、アドビでは新しい手段を使用することをお勧めします。
 
 
 有効にすると、Experience Manager は重複アセットの通知を Experience Manager インボックスに送信します。これは、複数の重複の集計結果です。ユーザーは、結果に基づいてアセットを削除することを選択できます。
@@ -114,7 +114,7 @@ DAM ユーザーがリポジトリーに既に存在する 1 つ以上のアセ�
 
    >[!NOTE]
    >
-   >タグを作成するには、CRX リポジトリーの `/content/cq:tags/default` パスでの書き込み権限が必要です。
+   >タグを作成するには、CRX リポジトリの `/content/cq:tags/default` パスでの書き込み権限が必要です。
 
 1. 「**[!UICONTROL 保存して閉じる]**」をタップまたはクリックします。
 
@@ -250,11 +250,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリー内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
+   ビデオアセットのレンディションサイズを設定するには、CRX リポジトリ内の `videopicker` ノード（`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`）に移動し、ノードをオーバーレイし、該当するプロパティを編集します。
 
    >[!NOTE]
    >
-   >ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。また、サポートされるビデオ形式はブラウザーによって異なります。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
+   >ビデオの注釈は、HTML5 互換のビデオ形式に対応したブラウザーでのみサポートされます。また、ブラウザーによってサポートされるビデオ形式が異なります。ただし、MXF ビデオ形式は、ビデオの注釈ではまだサポートされていません。
 
 ## アセットの削除 {#delete-assets}
 
@@ -290,7 +290,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 公開するアセットまたはアセットフォルダーの場所、またはパブリッシュ環境から削除する（非公開にする）アセットフォルダーに移動します。
 
-1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]**![「公開を管理」オプション](assets/do-not-localize/globe-publication.png)」オプションを選択します。また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
+1. 公開または非公開にするアセットまたはフォルダーを選択し、ツールバーの「**[!UICONTROL 公開を管理]** ![公開を管理」オプション](assets/do-not-localize/globe-publication.png)オプションを選択します。また、すばやく公開するには、ツールバーの「**[!UICONTROL クイック公開]**」オプションを選択します。公開したいフォルダーに空のフォルダーが含まれる場合、空のフォルダーは公開されません。
 
 1. 必要に応じて「**[!UICONTROL 公開]**」オプションまたは「**[!UICONTROL 非公開]**」オプションを選択します。
 
@@ -416,7 +416,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 >
 >タイムラインには、[コンテンツフラグメントに固有のオプション](content-fragments/content-fragments.md)がいくつか含まれています。
 
-## アセットへの注釈の追加 {#annotating}
+## アセットに注釈を付ける {#annotating}
 
 注釈とは、画像やビデオに追加するコメントまたは注記です。マーケティング担当者は、注釈により、アセットについてコラボレーションし、フィードバックを残すことができます。
 
@@ -645,7 +645,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 ## デスクトップアプリケーションまたは Adobe Asset Link で期限切れアセットを表示しない {#hide-expired-assets-via-acp-api}
 
-[!DNL Experience Manager] デスクトップアプリケーションを使用すると、Windows または Mac デスクトップから DAM リポジトリーにアクセスできます。Adobe Asset Link を使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
+[!DNL Experience Manager] デスクトップアプリケーションを使用すると、Windows または Mac デスクトップから DAM リポジトリにアクセスできます。Adobe Asset Link を使用すると、サポートされている[!DNL Creative Cloud]デスクトップアプリケーション内からアセットにアクセスできます。
 
 [!DNL Experience Manager] ユーザーインターフェイス内からアセットを参照すると、期限切れのアセットは表示されません。デスクトップアプリと Assets リンクからアセットを参照する際に、期限切れのアセットが表示、検索、および取得される防ぐために、管理者は次の設定を行うことができます。この設定は、管理者権限に関係なく、すべてのユーザーで機能します。
 

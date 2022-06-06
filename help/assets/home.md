@@ -1,6 +1,6 @@
 ---
 title: Assetsas a Cloud Serviceガイド
-description: Assets のas a Cloud Serviceについて学び、新機能を入手します。
+description: Assets as a Cloud Service について学び、新機能に関する最新情報をご確認ください。
 landing-page-description: Adobe Experience Manager Assets as a Cloud Service の使用および管理方法について説明します。
 feature: Asset Management
 role: User,Leader
@@ -8,7 +8,7 @@ exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 90%
 
 * [概要と新機能](overview.md)
 * [主要な変更点](/help/assets/assets-cloud-changes.md)
-* [ [!DNL Assets] AEM as a [!DNL Cloud Service] のアーキテクチャ](architecture.md)
+* [ [!DNL Assets]  as a  [!DNL Cloud Service] のアーキテクチャ](architecture.md)
 * [アセットマイクロサービスの概要](/help/assets/asset-microservices-overview.md)
 
 ## [!DNL Experience Manager] ガイド {#aem-guides}

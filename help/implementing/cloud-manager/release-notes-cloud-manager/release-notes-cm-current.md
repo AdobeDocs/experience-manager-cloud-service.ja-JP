@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.5.0 のリリースノート
-description: AEM as a Cloud Serviceの Cloud Manager 2022.5.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.5.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2022.5.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 16%
+ht-degree: 48%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Serviceの Cloud Manager 2022.5.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.5.0 のリリースノート {#release-notes}
 
-このページでは、AEM as a Cloud Serviceの Cloud Manager 2022.5.0 のリリースノートについて説明します。
+このページは、AEM as a Cloud Service の Cloud Manager 2022.5.0 のリリースノートです。
 
 >[!NOTE]
 >

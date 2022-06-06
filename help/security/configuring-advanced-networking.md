@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
 source-wordcount: '3053'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -355,8 +355,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ## 従来の専用エグレスアドレスを使用する場合 {#legacy-dedicated-egress-address-customers}
 
-2021.09.30より前に、専用のエグレス IP がプロビジョニングされている場合、専用のエグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。
-これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。
+2021年9月30日以前に専用エグレス IP がプロビジョニングされている場合、専用エグレス IP 機能は HTTP ポートと HTTPS ポートのみをサポートします。これには、HTTP/1.1 と HTTP/2（暗号化時）が含まれます。
 
 ## 仮想プライベートネットワーク（VPN） {#vpn}
 
