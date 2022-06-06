@@ -3,9 +3,9 @@ title: AEM as a Cloud Service 向けのログ
 description: AEM as a Cloud Service のログを使用して一元的なログサービスのグローバルパラメーターを設定する方法、個々のサービスに特有の設定またはデータのログ記録をリクエストする方法について説明します。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2316'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ AEM ログレベルは、OSGi 設定を介して環境の種類ごとに設定�
 </tr>
 <tr>
 <td>ログレベル</td>
-<td>デバッグ</td>
+<td>DEBUG</td>
 </tr>
 <tr>
 <td>スレッド</td>
@@ -262,7 +262,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | プロトコル | HTTP/1.1 |
 | HTTP レスポンスステータス | 200 |
-| 応答本文のサイズ（バイト単位） | 1141 |
+| レスポンス本文のサイズ（バイト単位） | 1141 |
 | リファラー | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | ユーザーエージェント | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
@@ -309,7 +309,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>ユーザー</td>
+<td>User</td>
 <td>-</td>
 </tr>
 <tr>
