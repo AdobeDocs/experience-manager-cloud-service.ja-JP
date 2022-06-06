@@ -1,16 +1,16 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 リリースのリリースノート。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.2.0."'
+description: 「[!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 のリリースノート」
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1237'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート  {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service のリリースノート {#release-notes}
 
 [!DNL Experience Manager] as a Cloud Service の一般的なリリースノートの概要を次に説明します。
 
@@ -106,7 +106,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 * Cloud Service の互換性の問題に対応するため、コード品質ルールが追加されました。
 
-### バグ修正 {#bug-fixes-cloud-manager}
+### バグの修正 {#bug-fixes-cloud-manager}
 
 * ドメイン名に対する SSL 証明書の照合で、大文字と小文字が区別されなくなりました。
 
@@ -124,7 +124,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 
 コンテンツ転送ツール v1.2.4 のリリース日は 2021 年 2 月 10 日です。
 
-### バグ修正 {#bug-fixes-ctt}
+### バグの修正 {#bug-fixes-ctt}
 
 * 複数のユーザーをマッピングする際に、一部のユーザーの IMS ID が正しくマッピングされていませんでした。この問題が修正されました。
 
@@ -159,7 +159,7 @@ AEM as a Cloud Service 2021.2.0 Cloud Manager のリリース日は 2021 年 2 �
 * AIO-CLI プラグインの新しいバージョンがリリースされました。このプラグインの最新バージョンでは、Repository Modernizer のいくつかのバグが修正されています。
 このプラグインの詳細については、[Unified Experience](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=ja#benefits) を参照してください。
 
-### バグ修正 {#bug-fixes-crt}
+### バグの修正 {#bug-fixes-crt}
 
 * Repository Modernizer で行われたいくつかのバグ修正。
 詳しくは、[GitHub リソース：aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
