@@ -1,11 +1,11 @@
 ---
-title: 'Adobe Experience Manager (AEM) Forms as a Cloud Service の主な機能と特徴 '
-description: '"[!DNL AEM Forms] as a Cloud Serviceは、エンタープライズクラスのフォームとビジネスプロセスを作成、管理、公開するためのプラットフォームです。」'
+title: 'Adobe Experience Manager（AEM）Forms as a Cloud Service の主な機能と特徴 '
+description: '"[!DNL AEM Forms] as a Cloud Service は、エンタープライズクラスのフォームとビジネスプロセスを作成、管理、公開するためのプラットフォームです。"'
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '410'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 上記に加えて、[!DNL AEM Forms] as a Cloud Service は次の機能を提供します。
 
-* 使いやすいグラフィカルユーザーインターフェースにより、ビジネスユーザーは簡単にフォームのインポート、管理、プレビュー、および発行が可能
+* 使いやすいグラフィカルユーザーインターフェイスにより、ビジネスユーザーは簡単にフォームのインポート、管理、プレビュー、および公開が可能
 * キーワード、タグ、およびメタデータをサポートする、強力な検索機能を備えたレスポンシブなフォームディレクトリ
 * ユーザーのデバイスや場所を動的に検出することにより、web チャネルやモバイルチャネルに最適化されたフォーム描画を実現
 * [Adobe Sign サービスや Scribble との統合](adobe-sign-integration-adaptive-forms.md)により、機密情報を含むドキュメントへの電子署名に対応
