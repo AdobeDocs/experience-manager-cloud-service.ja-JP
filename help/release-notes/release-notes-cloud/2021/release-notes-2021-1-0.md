@@ -1,11 +1,11 @@
 ---
 title: ' [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 リリースのリリースノート。'
-description: '"[!DNL Adobe Experience Manager] as a Cloud Service Release Notes for 2021.1.0."'
+description: '"[!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 のリリースノート。"'
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 99%
 
 AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 月 14 日です。
 
-### バグ修正 {#bug-fixes-cloud-manager}
+### バグの修正 {#bug-fixes-cloud-manager}
 
 * アセット実稼動インスタンスでは、**環境**&#x200B;の詳細ページに Brand Portal のステータスが&#x200B;*保留中*&#x200B;と表示され、ユーザーがアクションを実行できない場合があります。
 
@@ -80,7 +80,7 @@ AEM as a Cloud Service 2021.1.0 Cloud Manager のリリース日は 2021 年 1 �
 
 * [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) にすべての OSGi 設定を含む個別のパッケージ `ui.config` を作成する新機能が追加されました。
 
-### バグ修正 {#crt-bug-fixes}
+### バグの修正 {#crt-bug-fixes}
 
 * AEM Dispatcher コンバーターおよび Repository Modenizer ツールでいくつかのバグ修正が行われました。[AEM Dispatcher コンバーター](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)および [Repository Modenizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) を参照してください。
 
