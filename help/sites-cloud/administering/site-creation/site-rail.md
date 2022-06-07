@@ -30,7 +30,7 @@ ht-degree: 100%
 >
 >クイックサイト作成ツールや、サイトテーマを容易にカスタマイズするためのフロントエンドパイプラインに習熟するには、[クイックサイト作成ジャーニー](/help/journey-sites/quick-site/overview.md)を確認します。
 
-##  テーマソースのダウンロード {#downloading-theme-sources}
+## テーマソースのダウンロード {#downloading-theme-sources}
 
 AEMで[サイトテンプレート](site-templates.md)に基づいてサイトを作成する場合は、サイトパネルを使用して[サイトテーマ](site-themes.md)をダウンロードできます。
 
@@ -40,7 +40,7 @@ Sites コンソールにサイトパネルが表示された状態で、サイ�
 
 「**テーマソースをダウンロード**」をタップまたはクリックして、カスタマイズ目的でサイトテーマのローカルコピーを `.zip` ファイルとしてダウンロードします。
 
-##  テンプレートリソースのダウンロード {#downloading-template-resources}
+## テンプレートリソースのダウンロード {#downloading-template-resources}
 
 [サイトテンプレート](site-templates.md)には、サイトコンテンツ構造や[サイトテーマ](site-themes.md)に加えて、ワイヤフレーム設計やその他のサイト関連ファイルなどの情報を含めることができます。
 
