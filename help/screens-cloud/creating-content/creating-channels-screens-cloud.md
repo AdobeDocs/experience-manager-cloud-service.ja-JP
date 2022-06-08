@@ -2,10 +2,10 @@
 title: Screens as a Cloud Service でのチャネルの作成と管理
 description: ここでは、Screens as a Cloud Service でチャネルを作成および管理する方法について説明します。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
+source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 50%
+source-wordcount: '1107'
+ht-degree: 49%
 
 ---
 
@@ -174,4 +174,4 @@ AEM Screensプロジェクトを作成したら、チャネルを作成する必
 
 ## 次のステップ {#whats-next}
 
-プロジェクトで AEM Screens チャネルを設定したら、チャネルを公開する必要があります。Screens サービスプロバイダーからプレーヤーを管理する前に、[Screens as a Cloud Service でのチャネルの公開](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=ja)を参照してください。
+プロジェクトで AEM Screens チャネルを設定したら、チャネルを公開する必要があります。Screens サービスプロバイダーからプレーヤーを管理する前に、[Screens as a Cloud Service でのチャネルの公開](manage-publish.md)を参照してください。

@@ -2,7 +2,7 @@
 title: Screens as a Cloud Service でのチャネルの公開
 description: ここでは、Screens as a Cloud Service でチャネルを公開する方法について説明します。
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
@@ -49,4 +49,4 @@ AEM Screens からコンテンツを公開できます。公開管理機能を�
 
 ## 次の手順 {#whats-next}
 
-これで、プロジェクトのチャネルを公開したので、次に [Screens as a Cloud Service でのプレーヤーのインストールと設定](/help/screens-cloud/creating-content/manage-publish.md)を参照して、Screens as a Cloud Service のジャーニーを続行してください。
+これで、プロジェクトのチャネルを公開したので、次に [Screens as a Cloud Service でのプレーヤーのインストールと設定](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)を参照して、Screens as a Cloud Service のジャーニーを続行してください。
