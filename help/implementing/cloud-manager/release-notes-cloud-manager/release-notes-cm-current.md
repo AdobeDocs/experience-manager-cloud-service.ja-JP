@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.5.0 のリリースノート
-description: AEM as a Cloud Service の Cloud Manager 2022.5.0 のリリースノートです。
+title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.6.0 のリリースノート
+description: AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
+source-git-commit: af1ab1602506cc174e0226a7572ccb12d8ff527a
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 48%
+source-wordcount: '300'
+ht-degree: 28%
 
 ---
 
 
-# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.5.0 のリリースノート {#release-notes}
+# Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.6.0 のリリースノート {#release-notes}
 
-このページは、AEM as a Cloud Service の Cloud Manager 2022.5.0 のリリースノートです。
+このページは、AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリースノートです。
 
 >[!NOTE]
 >
@@ -21,17 +21,20 @@ ht-degree: 48%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2022 年 5 月 5 日にリリースされた Cloud Manager リリース 2022.5.0 のリリース日です。 次回のリリースは 2022 年 6 月 9 日（PT）に予定されています。
+AEM as a Cloud Service 2022 年 6 月 9 日にリリースされた Cloud Manager リリース 2022.6.0 のリリース日です。 次回のリリースは 2022 年 6 月 30 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 
-* 環境ページには、環境のAEMバージョンを表示する列があります。
-* パイプラインの実行で、UI の最上位エラーが実行画面に表示されるようになりました。
-* Cloud Manager UI を使用して、実稼動デプロイ手順を再実行します。
-* 実稼動デプロイステップを再実行するために、ビルドイメージを再利用します。
-* ネットワークインフラストラクチャのセルフサービス削除を可能にする新しい API。
+* Cloud Manager UI で、 [セルフサービスコンテンツの復元](/help/operations/backup.md) をAEMクラウド環境の正常な既知の状態に変更する。
+   * この機能は、2022.06.0リリース以降の数週間にわたって段階的なアプローチで展開されます。
+* Cloud Manager ランディングページの新しいウェルカムカードでは、テナントに関連するオンボーディングチュートリアルや進行状況指標にすばやくアクセスできます。
+   * この機能は、2022.06.0リリース以降の週にわたって段階的なアプローチで展開されます。
+* 必要な権限を持つユーザーが新しい [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md) Cloud Manager ランディングページで、テナントが使用できる権利の詳細を表示できます。
+   * AEM Sitesは、Cloud Manager ダッシュボードから可用性と使用状況の消費を提供する最初のソリューションです。
+   * この機能は、2022.06.0リリース以降の数週間にわたって段階的なアプローチで展開されます。
+* [New Relic サブアカウントおよびセルフサービスのユーザー管理](/help/implementing/cloud-manager/user-access-new-relic.md) は、Cloud Manager UI から使用できるようになりました。
+   * この機能は、2022.06.0リリース以降の数週間にわたって段階的なアプローチで展開されます。
+* Cloud Service制作プログラムのホームページ上にある新しい Go Live ウィジェットが、Go Live を成功に導くためのガイダンスを提供するようになりました。
+* [ビルドアーティファクトを再利用できるようになりました](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) git ミラーリングを使用する場合。
 
-## バグの修正 {#bug-fixes}
-
-* UI テストステップログの「ログをダウンロード」ボタンがログをダウンロードしなかった問題を修正しました。
-* 一部の実行は、コミットの承認とキャンセルの承認ステップのトリガーで停止していました。
+## バグ修正 {#bug-fixes}

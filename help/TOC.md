@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: dec3dc0f310b24f37f37b45636b17e08e1bb5edf
+source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3576'
 ht-degree: 96%
 
 ---
@@ -62,11 +62,13 @@ ht-degree: 96%
    + Cloud Manager のリリースノート {#cloud-manager}
       + [最新のリリースノート](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 年 {#2022}
+         + [リリースノート（2022.5.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-5-0.md)
          + [リリースノート（2022.4.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
          + [リリースノート（2022.3.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
          + [リリースノート（2022.2.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
          + [リリースノート（2022.1.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
       + 2021 年 {#2021}
+         + [リリースノート（202.12.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-12-0.md)
          + [リリースノート（2021.11.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
          + [リリースノート（2021.10.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
          + [リリースノート（2021.9.0）](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
@@ -724,6 +726,7 @@ ht-degree: 96%
          + [IP 許可リストの追加](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
          + [IP許可リストの適用と適用解除](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
          + [IP 許可リストの管理](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+      + [ライセンスダッシュボード](/help/implementing/cloud-manager/license-dashboard.md)
       + [Cloud Manager FAQ](/help/implementing/cloud-manager/cloud-manager-cs-faqs.md)
    + AEM as a Cloud Service 向けの開発 {#developing}
       + [AEM プロジェクトの構造](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
