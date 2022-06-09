@@ -2,10 +2,10 @@
 title: コンテンツ配信フローの概要
 description: コンテンツ配信フローの概要
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 94%
 
 ---
 
@@ -29,6 +29,9 @@ ht-degree: 100%
 
 デフォルトでは、HTML／テキストのコンテンツタイプは、Dispatcher レイヤーで 300 秒（5 分）後に期限切れになるように設定されます。この期限は、Dispatcher キャッシュと CDN の両方が考慮するしきい値です。パブリッシュサービスの再デプロイメント中に、Dispatcher のキャッシュがクリアされ、その後、新しいパブリッシュノードがトラフィックを受け入れる前にウォームアップされます。
 
-以下の節では、CDN の設定やキャッシュを含む、コンテンツ配信に関する詳細を説明します。
+以下の節では、コンテンツ配信に関する詳細情報を提供します。
+* [CDN 設定](/help/implementing/dispatcher/cdn.md)
+* [キャッシュ](/help/implementing/dispatcher/caching.md)
+
 
 オーサーサービスからパブリッシュサービスへのレプリケーションに関する情報は、[こちら](/help/operations/replication.md)を参照してください。
