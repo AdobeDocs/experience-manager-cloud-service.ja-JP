@@ -3,10 +3,10 @@ title: AEM as a Cloud Service へのデプロイ
 description: 'AEM as a Cloud Service へのデプロイ '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
-ht-degree: 100%
+source-wordcount: '3360'
+ht-degree: 98%
 
 ---
 
@@ -191,7 +191,7 @@ Cloud Manager を使用してインストールされたコンテンツパッケ
 
 アドビの翻訳パートナーを始めとするソフトウェアベンダーなどのサードパーティから提供される事前ビルド済みパッケージを組み込むことがよくあります。これらのパッケージをリモートリポジトリーでホストし、それらを `pom.xml` で参照することをお勧めします。これは、パブリックリポジトリーと、[パスワード保護 Maven リポジトリー](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories)で説明されているパスワード保護を持つプライベートリポジトリーに対しても可能です。
 
-パッケージをリモートリポジトリーに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリーに保存できます。このリポジトリーは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。このリポジトリーは、プロジェクトの POM で次の例のように宣言されます。
+パッケージをリモートリポジトリーに格納できない場合は、ファイルシステムベースのローカルの Maven リポジトリーに保存できます。このリポジトリーは、プロジェクトの一環として SCM にコミットされ、利用元から参照されます。リポジトリは、次の図に示すように、プロジェクト POM 内で宣言されます。
 
 
 ```
@@ -309,13 +309,17 @@ AEM のアップデートと同様に、お客様向けリリースも、適切�
 * **config.publish.dev**（*開発環境の AEM パブリッシュサービスに適用*）
 * **config.publish.stage**（*ステージング環境の AEM パブリッシュサービスに適用*）
 * **config.publish.prod**（*実稼動環境の AEM パブリッシュサービスに適用*）
-* **config.dev**（開発環境の AEM サービスに適用）
-* **config.stage**（ステージング環境の AEM サービスに適用）
-* **config.prod**（実稼動環境の AEM サービスに適用）
+* **config.dev** (*AEM Dev サービスに適用*)
+* **config.stage** (*AEM Staging Services に適用*)
+* **config.prod** (*AEM Production Services に適用されます*)
 
 最も一致する実行モードを持つ OSGi 設定が使用されます。
 
-ローカルで開発する場合は、実行モード起動パラメーターを渡して、使用する実行モード OSGi 設定を指定できます。
+ローカルで開発する場合、実行モード起動パラメータ `-r`を使用して、実行モード OSGi 設定を指定します。
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 

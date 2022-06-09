@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service の OSGi の設定
 description: 'シークレット値と環境固有の値を使用する OSGi 設定 '
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
+source-git-commit: 69fa35f55617746bfd9e8bdf6e1a0490c341ae90
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 100%
+source-wordcount: '3240'
+ht-degree: 87%
 
 ---
 
@@ -38,13 +38,17 @@ OSGi 設定ファイルは次の場所で定義されます。
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-cfg.json OSGi 設定形式に従います。
+次の `cfg.json` OSGi 設定形式。
 
 >[!NOTE]
 >
->以前のバージョンの AEM は、.cfg、.config、XML sling:OsgiConfig リソース定義など、様々なファイル形式の OSGi 設定ファイルをサポートしていました。これらの形式は、cfg.json OSGi 設定形式に置き換えられます。
+>以前のバージョンのAEMでは、次のような様々なファイル形式を使用して OSGi 設定ファイルがサポートされていました。 `.cfg`, `.config` XML として `sling:OsgiConfig` リソースの定義。 これらの形式は、 `.cfg.json` OSGi 設定形式。
 
 ## 実行モードの解決 {#runmode-resolution}
+
+>[!TIP]
+>
+>AEM 6.x はカスタム実行モードをサポートしていますが、AEM as a Cloud Serviceはサポートしていません。 AEMas a Cloud Serviceサポート [実行モードの正確なセット](./overview.md#runmodes). OSGi 設定のAEMas a Cloud Service環境間でのバリエーションは、を使用して処理する必要があります。 [OSGi 設定の環境変数](#environment-specific-configuration-values).
 
 実行モードを使用すると、特定の OSGi 設定を特定の AEM インスタンスにターゲット設定できます。実行モードを使用するには、次の形式で、`/apps/example`（「example」はプロジェクト名）の下に config フォルダーを作成します。
 
@@ -60,9 +64,35 @@ config フォルダー名で定義された実行モードが AEM で使用さ�
 
 >[!NOTE]
 >
->`config.preview` OSGI 設定フォルダーは、`config.publish` を宣言する場合と同じようには宣言&#x200B;**できません**。代わりに、プレビュー層はパブリッシュ層の値から OSGI 設定を継承します。
+>A `config.preview` OSGi 設定フォルダー **できません** 同じように宣言される `config.publish` は宣言されたフォルダーです。 代わりに、プレビュー層はパブリッシュ層の値から OSGi 設定を継承します。
 
-ローカルで開発する場合は、実行モード起動パラメーターを渡して、使用する実行モード OSGi 設定を指定できます。
+ローカルで開発する場合、実行モード起動パラメータ `-r`を使用して、実行モード OSGi 設定を指定します。
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
+
+### 実行モードの検証
+
+AEMas a Cloud Serviceの実行モードは、環境タイプとサービスに基づいて適切に定義されています。 以下を確認します。 [使用可能なAEMas a Cloud Service実行モードの完全なリスト](./overview.md#runmodes).
+
+実行モードで指定された OSGi 設定値は、次の方法で検証できます。
+
+1. AEM as a Cloud Services環境の [開発者コンソール](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=ja)
+1. 検査するサービス層を、 __ポッド__ ドロップダウン
+1. の選択 __ステータス__ タブ
+1. 選択 __設定__ から __ステータスダンプ__ ドロップダウン
+1. の選択 __ステータスの取得__ ボタン
+
+結果表示には、選択した層のすべての OSGi コンポーネント設定と、該当する OSGi 設定値が表示されます。 これらの値は、AEMプロジェクトのソースコード内の OSGi 設定値と相互参照できます ( `/apps/example/osgiconfig/config.<runmode(s)>`.
+
+
+適切な OSGi 設定値が適用されていることを確認するには：
+
+1. 開発者コンソールの設定出力内
+1. を `pid` 検証する OSGi 設定を表します。AEMプロジェクトのソースコード内の OSGi 設定ファイルの名前です。
+1. Inspect `properties` リスト `pid` キーと値が、検証する実行モードのAEMプロジェクトソースコードの OSGi 設定ファイルと一致することを確認します。=
+
 
 ## OSGi 設定値のタイプ {#types-of-osgi-configuration-values}
 
@@ -200,7 +230,7 @@ OSGi 設定では、環境ごとに定義する変数にプレースホルダー
 use $[env:ENV_VAR_NAME]
 ```
 
-顧客は、カスタムコードに関連する OSGi 設定プロパティに対してのみ、この手法を使用する必要があります。アドビ定義の OSGi 設定を上書きする場合は使用しないでください。
+この方法は、カスタムコードに関連する OSGi 設定プロパティにのみ使用する必要があります。Adobe定義の OSGi 設定を上書きする場合は使用しないでください。
 
 >[!NOTE]
 >
@@ -235,7 +265,7 @@ use $[secret:SECRET_VAR_NAME]
 >1. お客様は、プレフィックスが `INTERNAL_` または `ADOBE_` の変数を参照しないでください。
 >
 >1. `AEM_` のプレフィックスが付いた環境変数は、お客様が使用および設定するパブリック API として製品で定義されています。
->   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
+   >   お客様はプレフィックスが `AEM_` で始まる環境変数を使用および設定できますが、このプレフィックスを使用して独自の変数を定義しないでください。
 
 
 ### デフォルト値 {#default-values}
@@ -268,13 +298,12 @@ export ENV_VAR_NAME=my_value
 
 ### オーサーとパブリッシュの設定 {#author-vs-publish-configuration}
 
-OSGi プロパティで、作成者とパブリッシュで異なる値が必要な場合：
+OSGi プロパティで、オーサーとパブリッシュで異なる値が必要な場合：
 
 * [実行モードの解決](#runmode-resolution)の節で説明したように、`config.author` と `config.publish` の別個の OSGi フォルダーを使用する必要があります。
 * 独立した変数名を作成する場合、次の 2 つのオプションを使用できます。
-   * 最初のオプション（推奨）：異なる値を定義するように宣言されたすべての OSGI フォルダー（`config.author` と `config.publish` など）で、同じ変数名を使用します。例：
-
-      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGI 層にバインドします。「author」、「publish」、「preview」のいずれかです。
+   * 1 つ目のオプション（推奨）:すべての OSGi フォルダー ( `config.author` および `config.publish`) を宣言して異なる値を定義する場合は、同じ変数名を使用します。 例：
+      `$[env:ENV_VAR_NAME;default=<value>]`：デフォルトは、その層（オーサーまたはパブリッシュ）のデフォルト値です。環境変数を [Cloud Manager API](#cloud-manager-api-format-for-setting-properties) またはクライアントを使用して設定する場合は、この [API リファレンスドキュメント](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables)で説明されているように、「service」パラメーターを使用して層を区別します。「service」パラメーターは、変数の値を適切な OSGi 層にバインドします。 「author」、「publish」、「preview」のいずれかです。
    * 2 つ目のオプション：`author_<samevariablename>` や `publish_<samevariablename>` などのプレフィックスを使用して個別の変数を宣言します。
 
 ### 設定例 {#configuration-examples}
@@ -283,7 +312,7 @@ OSGi プロパティで、作成者とパブリッシュで異なる値が必要
 
 **例 1**
 
-OSGi プロパティ `my_var1` の値を、ステージング環境と実稼働環境では同じ値に、3 つの開発環境ではそれぞれ異なる値にします。
+目的は OSGi プロパティの値です。 `my_var1` は、ステージと実稼動で同じにし、3 つの開発環境ではそれぞれ異なります。
 
 <table>
 <tr>
@@ -326,7 +355,7 @@ config.dev
 
 **例 2**
 
-OSGi プロパティ `my_var1` の値をステージング環境、実稼働環境、3 つの開発環境でそれぞれ異なる値にします。したがって、開発環境ごとに `my_var1` の値を設定するには、Cloud Manager API を呼び出す必要があります。
+目的は OSGi プロパティの値です。 `my_var1` を、ステージ、実稼動、および 3 つの開発環境でそれぞれ異なる値に設定します。 したがって、開発環境ごとに `my_var1` の値を設定するには、Cloud Manager API を呼び出す必要があります。
 
 <table>
 <tr>
