@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service の Cloud Manager 2022.6.0 �
 description: AEM as a Cloud Service の Cloud Manager 2022.6.0 のリリースノートです。
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: af1ab1602506cc174e0226a7572ccb12d8ff527a
+source-git-commit: 2ba6858feefb22b5caf26000f5ee17779f3661c4
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '301'
 ht-degree: 28%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 28%
 
 ## リリース日 {#release-date}
 
-AEM as a Cloud Service 2022 年 6 月 9 日にリリースされた Cloud Manager リリース 2022.6.0 のリリース日です。 次回のリリースは 2022 年 6 月 30 日（PT）に予定されています。
+AEM as a Cloud Serviceの Cloud Manager リリース 2022.6.0 のリリース日は 2022 年 6 月 9 日です。 次回のリリースは 2022 年 6 月 30 日（PT）に予定されています。
 
 ## 新機能 {#what-is-new}
 

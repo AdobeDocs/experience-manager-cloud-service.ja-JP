@@ -3,9 +3,9 @@ title: AEM での GraphiQL IDE の使用
 description: Adobe Experience Manager で GraphiQL IDE を使用する方法について説明します。
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '960'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,9 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->この機能の一部はプレリリースチャネルで利用できます。 特に、持続クエリに関連する機能です。
-> 
->詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
-
->[!NOTE]
+>GraphiQL はAEMのすべての環境に含まれています（ただし、エンドポイントを設定した場合にのみアクセス/表示できます）。
 >
->GraphiQL はAEMに含まれますが、デフォルトでは、 `dev-authors` 環境。
+>以前のリリースでは、GraphiQL IDE をインストールするためにパッケージが必要でした。 これをインストール済みの場合は、削除できます。
 
 >[!NOTE]
 >必ず [エンドポイントを設定済み](/help/headless/graphql-api/graphql-endpoint.md) 内 [設定ブラウザー](/help/assets/content-fragments/content-fragments-configuration-browser.md) GraphiQL IDE を使用する前に。
@@ -35,7 +31,7 @@ ht-degree: 4%
 * クエリを実行して結果をすぐに確認する
 * 管理 **クエリ変数**
 * 保存し、管理する **永続クエリ**
-* 公開または非公開 **永続クエリ** ( 宛先/差出人 `dev-publish`)
+* 公開または非公開 **永続クエリ** （例：から/から） `dev-publish`)
 * 参照 **履歴** 以前のクエリの
 * を使用します。 **ドキュメントエクスプローラ** ドキュメントにアクセスするには、以下を実行します。使用可能な方法を学び理解するのに役立ちます。
 
@@ -46,7 +42,7 @@ ht-degree: 4%
 
 ![GraphiQL インターフェイス ](assets/cfm-graphiql-interface.png "GraphiQL インターフェイス")
 
-開発オーサーシステムで GraphiQL を使用して、GETリクエストと公開クエリを使用してクライアントアプリケーションから要求できるようにすることができます。 実稼動環境で使用する場合は、次の操作を行う必要があります [クエリを実稼動環境に移動する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初は、実稼動作成者に対して、クエリを使用して新しく作成したコンテンツを検証し、最後に実稼動公開でライブ消費を検証します。
+システムで GraphiQL を使用して、GETリクエストを使用してクライアントアプリケーションからクエリをリクエストできるようにし、クエリの公開に使用できます。 実稼動環境では、次の操作を実行できます。 [クエリを実稼動環境に移動する](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). 最初は、実稼動作成者に対して、クエリを使用して新しく作成したコンテンツを検証し、最後に実稼動公開でライブ消費を検証します。
 
 ## エンドポイントの選択 {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ ht-degree: 4%
 
 ![GraphQL 変数](assets/cfm-graphqlapi-03.png "GraphQL 変数")
 
-## 永続化されたクエリの公開 (dev-publish) {#publishing-persisted-queries}
+## 永続的なクエリの公開 {#publishing-persisted-queries}
 
-リスト（左パネル）から永続化されたクエリを選択したら、 **公開** および **非公開** アクション。 これにより、開発パブリッシュ環境 (`dev-publish`) 環境を使用して、テスト時にアプリケーションから簡単にアクセスできます。
+リスト（左パネル）から永続化されたクエリを選択したら、 **公開** および **非公開** アクション。 これにより、パブリッシュ環境に対してアクティベートされます ( 例： `dev-publish`) を使用すると、テスト時にアプリケーションから簡単にアクセスできます。
 
 >[!NOTE]
 >

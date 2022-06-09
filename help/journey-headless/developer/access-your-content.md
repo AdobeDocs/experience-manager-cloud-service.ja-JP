@@ -2,22 +2,16 @@
 title: AEM Delivery API を使用してコンテンツにアクセスする方法
 description: AEM ヘッドレスデベロッパージャーニーのこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスする方法を説明します。
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '1410'
-ht-degree: 95%
+source-wordcount: '1359'
+ht-degree: 97%
 
 ---
 
 # AEM Delivery API を使用してコンテンツにアクセスする方法 {#access-your-content}
 
 [AEM ヘッドレスデベロッパージャーニー](overview.md)のこのパートでは、GraphQL クエリを使用してコンテンツフラグメントのコンテンツにアクセスし、アプリにコンテンツをフィードする方法（ヘッドレス配信）について説明します。
-
->[!NOTE]
->
->この機能の一部はプレリリースチャネルで利用できます。 特に、持続クエリに関連する機能です。
-> 
->詳しくは、 [プレリリースチャネルドキュメント](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=ja#enable-prerelease) を参照してください。
 
 ## これまでの説明内容 {#story-so-far}
 
@@ -250,10 +244,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 * エンドポイントの有効化
    * ツール/一般/ GraphQL を使用します。
    * [GraphQL エンドポイントの有効化](/help/headless/graphql-api/graphql-endpoint.md)
-
-* GraphiQL のインストール（必要な場合）
-   * 専用パッケージとしてインストール
-   * [AEM GraphiQL インターフェイスのインストール](/help/headless/graphql-api/graphiql-ide.md)
+      * これにより、GraphiQL IDE も有効になります。
 
 ### サンプル構造 {#sample-structure}
 

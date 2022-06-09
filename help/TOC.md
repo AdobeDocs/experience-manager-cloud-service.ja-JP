@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Adobe Experience Manager as a Cloud Service の概要に関するセルフヘルプリソースおよびドキュメントリンク
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3594'
 ht-degree: 96%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 96%
    + [用語 - AEM as a Cloud Service 関連の新しい用語](/help/overview/terminology.md)
    + [AEM as a Cloud Service のアーキテクチャの概要](/help/overview/architecture.md)
    + [SEO と URL の管理](/help/overview/seo-and-url-management.md)
+   + [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [KPI の評価](/help/overview/assessing-kpis.md)
    + [KPI の調整](/help/overview/aligning-kpis.md)
    + [適切なチームの選択](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 96%
    + AEMaaCS の一般リリースノート {#release-notes}
       + [最新のリリースノート](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [リリースノート（2022.4.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [リリースノート（2022.3.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [リリースノート（2022.1.0）](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 96%
       + [アセットのデジタル著作権管理](/help/assets/drm.md)
       + [アセットへの透かしの適用](/help/assets/watermark-assets.md)
       + [ [!DNL Creative Cloud] API を使用してアセットを処理する](/help/assets/cc-api-integration.md)
+      + [画像のカラータグ](/help/assets/color-tag-images.md)
    + [!DNL Assets] の設定、管理、拡張 {#admin}
       + [開発者向けドキュメントと API リファレンス](/help/assets/developer-reference-material-apis.md)
       + [フォルダーメタデータスキーマ](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 96%
       + [GraphQL エンドポイント](/help/headless/setup/create-api-request.md)
    + コンテンツフラグメント {#content-fragments}
       + [概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=ja)
+      + [コンテンツフラグメントコンソール](/help/headless/content-fragments/content-fragment-console.md)
       + [コンテンツフラグメントモデル](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=ja)
       + [プロジェクト管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=ja)
       + オーサリング{#authoring}
