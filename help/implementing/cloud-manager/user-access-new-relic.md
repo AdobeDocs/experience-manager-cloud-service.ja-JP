@@ -2,10 +2,10 @@
 title: New Relic One
 description: AEM as a Cloud Serviceの New Relic One Application performance Monitoring(APM) サービスと、そのアクセス方法について説明します。
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 9%
+source-wordcount: '1612'
+ht-degree: 10%
 
 ---
 
@@ -46,13 +46,11 @@ New Relic One APM for AEM as a Cloud Serviceには、多くの機能がありま
 
 1. New Relic One ユーザーを管理するプログラムをクリックします。
 
-1. 次に切り替え： **環境** から **プログラムの概要** ページを開くには、 **環境** 」タブをクリックします。
-
-1. の **環境** 画面で、画面上部の「 **環境を追加** 」ボタンをクリックします。
-
-1. 省略記号メニューで、 **ユーザーを管理**.
+1. の下部に **環境** 「プログラムの概要」ページで、省略記号ボタンをクリックし、「 **ユーザーを管理**.
 
    ![ユーザーを管理](assets/newrelic-manage-users.png)
+
+   * また、 **ユーザーを管理** オプション ( **環境** 画面に表示されます。
 
 1. 内 **New Relic ユーザーの管理** ダイアログで、追加するユーザーの姓名を入力し、 **追加** 」ボタンをクリックします。 追加するすべてのユーザに対して、この手順を繰り返します。
 
@@ -98,11 +96,11 @@ Cloud Manager を使用して New Relic One にアクセスするには：
 
 1. New Relic One にアクセスするプログラムをクリックします。
 
-1. 次に切り替え： **環境** から **プログラムの概要** ページを開くには、 **環境** 」タブをクリックします。
+1. の下部に **環境** 「プログラムの概要」ページで、省略記号ボタンをクリックし、「 **New Relic を開く**.
 
-1. の **環境** 画面で、画面上部の「 **環境を追加** 」ボタンをクリックします。
+   ![ユーザーを管理](assets/newrelic-access.png)
 
-1. 省略記号メニューで、 **New Relic を開く**.
+   * また、 **環境** 画面に表示されます。
 
 1. 開いた新しいブラウザータブで、New Relic One にログインします。
 
