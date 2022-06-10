@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリ�
 description: ' [!DNL Adobe Experience Manager] as a Cloud Service の最新のリリースノート'
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a2cdc7c4e9d3dfd52ca76afcf951fa67b279918a
+source-git-commit: e5b0bee3e2e4a10b3015f115d5193c43a1e15c1b
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 22%
+source-wordcount: '821'
+ht-degree: 21%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 22%
 ### [!DNL Sites] プレリリースチャネルで利用できる新機能 {#prerelease-features-sites}
 
 * 様々な GraphQL 機能
-* コンテンツフラグメントのヘッドレス使用に最適化された新しいコンソール
+* A [新しいコンソール](/help/headless/content-fragments/content-fragment-console.md) コンテンツフラグメントのヘッドレス使用に最適化
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -89,6 +89,10 @@ Experience Manager AssetsはAdobe Sensei AI 機能を今まで使用 [画像内�
 * レプリケーションエージェント管理画面の「ツリーを追加」オプション **「分布」タブ**&#x200B;は、以前に非推奨と発表されていましたが、2022 年 6 月 20 日以降に削除されます。 代わりに、コンテンツのツリー階層を持つパッケージは、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow).
 
 * 10 MB（バイナリを含まないプロパティを持つノード）を超えるコンテンツパッケージを配布するためのレプリケーションエージェント管理画面またはレプリケーション API の使用は非推奨となり、2022 年 9 月 12 日以降に適用されます。 代わりに、 [公開を管理](/help/operations/replication.md#manage-publication) または [コンテンツツリーの公開ワークフロー](/help/operations/replication.md#publish-content-tree-workflow) これらの大規模なコンテンツパッケージのレプリケートに使用する必要があります。 7 月に、レプリケーションエージェントの管理画面の **「分布」タブ** レプリケーション API を使用してこれらの大きなコンテンツパッケージをレプリケートする場合は常に、これらの大きなコンテンツパッケージとAEMエラーログにもレプリケートします。 9 月には、警告はエラーに置き換えられます。 プロセスを適宜調整してください。
+
+### [!DNL Experience Manager] プレリリースチャネルで利用できる新機能 {#prerelease-features-foundation}
+
+* AEM as a Cloud Serviceが統合シェルと統合され、ユーザーエクスペリエンスが向上し、他のすべてのExperience Cloudアプリケーションと統合されました。 参照： [統合シェルでas a Cloud ServiceのAEMを使用](/help/overview/aem-cloud-service-on-unified-shell.md) を参照してください。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation セキュリティ {#foundation-security}
 
