@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 100%
@@ -65,7 +65,7 @@ ht-degree: 100%
 
    ![OAuth 設定](assets/oauthconfig_new.png)
 
-1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL OAuth URL]**」フィールドにデフォルトの URL が表示されます。URL は次のような形式になります。
+1. **[!UICONTROL Adobe Sign 設定を作成]**&#x200B;ページに戻ります。「**[!UICONTROL 設定]**」タブで、「**[!UICONTROL OAuth URL]**」フィールドに以下のデフォルトの URL が表示されます。URL の形式は次の通りです。
 
    `https://<shard>/public/oAuth/v2`
 
