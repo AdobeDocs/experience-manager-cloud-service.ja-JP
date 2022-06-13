@@ -3,16 +3,20 @@ title: 永続的な GraphQL クエリ
 description: Adobe Experience Manager as a Cloud Serviceで GraphQL クエリを保持してパフォーマンスを最適化する方法を説明します。 クライアントアプリケーションで HTTP GET メソッドを使用して永続的クエリをリクエストでき、応答を Dispatcher および CDN レイヤーにキャッシュできるので、最終的にクライアントアプリケーションのパフォーマンスが向上します。
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 54%
+source-wordcount: '783'
+ht-degree: 53%
 
 ---
 
 # 永続的な GraphQL クエリ {#persisted-queries-caching}
 
 永続的なクエリは、Adobe Experience Manager(AEM)as a Cloud Serviceサーバーで作成および保存される GraphQL クエリです。 クライアントアプリケーションは、GETリクエストを使用してリクエストできます。 GET リクエストの応答は、Dispatcher および CDN レイヤーでキャッシュできるので、最終的には、要求元のクライアントアプリケーションのパフォーマンスが向上します。これは、標準の GraphQL クエリとは異なります。標準クエリは、応答を簡単にキャッシュできないPOSTリクエストを使用して実行されます。
+
+>[!NOTE]
+>
+>永続化されたクエリをお勧めします。 詳しくは、 [GraphQL クエリのベストプラクティス (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) を参照してください。
 
 この [GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md) は、以前にAEMで GraphQL クエリを開発、テスト、永続化できます。 [実稼動環境への移行](#transfer-persisted-query-production). カスタマイズが必要な場合 ( 例： [キャッシュのカスタマイズ](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) を使用すると、API を使用できます。次に示す curl の例を参照してください： [GraphQL クエリを保持する方法](#how-to-persist-query).
 

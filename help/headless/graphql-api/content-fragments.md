@@ -3,10 +3,10 @@ title: コンテンツフラグメントと共に使用する AEM GraphQL API
 description: Adobe Experience Manager（AEM）as a Cloud Service のコンテンツフラグメントを AEM GraphQL API と共に使用してヘッドレスコンテンツ配信を実現する方法を説明します。
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
-workflow-type: ht
-source-wordcount: '2569'
-ht-degree: 100%
+source-git-commit: 71dc0f18dfea348ab291ac1a32f38d6b03ac577c
+workflow-type: tm+mt
+source-wordcount: '2664'
+ht-degree: 96%
 
 ---
 
@@ -104,6 +104,27 @@ GraphQL では、次のいずれかを返すクエリを実行できます。
 また、次の操作も実行できます。
 
 * [（キャッシュされる）永続的クエリ](/help/headless/graphql-api/persisted-queries.md)
+
+### GraphQL クエリのベストプラクティス (Dispatcher) {#graphql-query-best-practices}
+
+この [永続クエリ](/help/headless/graphql-api/persisted-queries.md) は、次のようにお勧めします。
+
+* キャッシュされます
+* AEM as a Cloud Serviceで一元的に管理
+
+直接、またはPOST、クエリはキャッシュされないので、お勧めしません。そのため、デフォルトインスタンスでは、Dispatcher は、このようなクエリをブロックするように設定されます。
+
+>[!NOTE]
+>
+>Dispatcher での直接またはPOSTのクエリを許可するには、システム管理者に次の操作を依頼できます。
+>
+>* Cloud Manager の環境変数で、 `ENABLE_GRAPHQL_ENDPOINT`
+>* 値 `true`
+
+
+>[!NOTE]
+>
+>直接クエリを実行する機能は、将来、廃止される可能性があります。
 
 ### GraphiQL IDE {#graphiql-ide}
 
@@ -215,7 +236,7 @@ AEM 用 GraphQL では一連のタイプをサポートしています。サポ�
 | 日時 | Calendar |  日時を ISO 8086 形式で表示するために使用します。選択したタイプに応じて、AEM GraphQL で使用できるフレーバーは、`onlyDate`、`onlyTime`、`dateTime` の 3 つです。 |
 | 定義済みリスト |  String |  モデルの作成時に定義されたオプションのリストに含まれるオプションを表示するために使用します |
 |  タグ |  [String] |  AEM で使用されているタグを表す文字列のリストを表示するために使用します |
-| コンテンツ参照 |  String |  AEM 内の別のアセットへのパスを表示するために使用します |
+| コンテンツ参照 |  文字列 |  AEM 内の別のアセットへのパスを表示するために使用します |
 | フラグメント参照 |  *モデルタイプ* |  特定のモデルタイプの別のコンテンツフラグメントを参照するために使用します（モデルの作成時に定義されます） |
 
 ### ヘルパーフィールド {#helper-fields}
