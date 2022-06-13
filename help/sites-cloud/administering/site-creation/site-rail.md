@@ -4,8 +4,8 @@ description: サイトテーマを簡単にカスタマイズおよび管理で�
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+source-git-commit: 3e4c6fce54fe336c145d533c05e68e3a1f64c144
+workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 100%
 
