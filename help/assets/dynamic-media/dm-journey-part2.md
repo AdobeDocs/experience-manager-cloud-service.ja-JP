@@ -1,5 +1,5 @@
 ---
-title: Dynamic Mediaジャーニー第 2 部
+title: Dynamic Mediaへのジャーニー、第 2 部
 description: Dynamic Mediaジャーニーでは、Dynamic Mediaの基本、仕組み、ユーザーにとって何ができるか、およびユーザーや顧客にとっての価値について説明します。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
 workflow-type: tm+mt
-source-wordcount: '2877'
+source-wordcount: '2878'
 ht-degree: 0%
 
 ---
